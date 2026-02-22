@@ -1,0 +1,11 @@
+{
+  "name": "eventlive-sa",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-data.mjs",
+    "build": "node scripts/generate-site.mjs",
+    "pipeline": "npm run validate && npm run build"
+  }
+}

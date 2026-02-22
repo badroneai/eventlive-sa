@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EventLive MVP</title>
+  <style>
+    body { font-family: Tahoma, Arial, sans-serif; margin: 24px; background:#0b1020; color:#e9eefc; }
+    .meta { color:#9fb2db; margin-bottom:16px; }
+    .row { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px; }
+    input, select { padding:10px; border-radius:8px; border:1px solid #3b4f79; background:#111a33; color:#fff; }
+    table { width:100%; border-collapse: collapse; background:#101a36; border-radius:12px; overflow:hidden; }
+    th, td { padding:12px; border-bottom:1px solid #24335d; text-align:right; font-size:14px; }
+    th { background:#1a2850; position:sticky; top:0; }
+    tr:hover { background:#14224a; }
+    .pill { padding:4px 8px; border-radius:999px; background:#24407f; font-size:12px; }
+  </style>
+</head>
+<body>
+  <h1>EventLive — نسخة MVP</h1>
+  <div class="meta">آخر تحديث: <span id="buildAt">2026-02-22T23:40:25.976Z</span> | عدد السجلات: <span id="count"></span></div>
+
+  <div class="row">
+    <input id="search" placeholder="ابحث بالعنوان أو الموقع..." />
+    <select id="category"><option value="">كل التصنيفات</option></select>
+    <select id="status">
+      <option value="">كل الحالات</option>
+      <option value="scheduled">scheduled</option>
+      <option value="live">live</option>
+      <option value="completed">completed</option>
+      <option value="cancelled">cancelled</option>
+      <option value="draft">draft</option>
+    </select>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>العنوان</th><th>التصنيف</th><th>الوقت</th><th>الموقع</th><th>السعر</th><th>المقاعد</th><th>الحالة</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+
+  <script>
+    const data = [{"id":"EV-2026-001","source":"ocr_batch_2026_02_19","title":"ملتقى الابتكار التقني","category":"business","start_at":"2026-02-25T16:00:00+03:00","end_at":"2026-02-25T20:00:00+03:00","location":"مركز الرياض الدولي للمؤتمرات","city":"Riyadh","status":"scheduled","price_sar":120,"capacity":300,"available_seats":144,"tags":["تقنية","شركات ناشئة"],"updated_at":"2026-02-22T23:40:00+03:00"},{"id":"EV-2026-002","source":"ocr_batch_2026_02_19","title":"ليلة موسيقية كلاسيكية","category":"music","start_at":"2026-02-27T19:30:00+03:00","end_at":"2026-02-27T22:00:00+03:00","location":"مسرح جامعة الملك سعود","city":"Riyadh","status":"scheduled","price_sar":85,"capacity":500,"available_seats":310,"tags":["موسيقى","ثقافة"],"updated_at":"2026-02-22T23:40:00+03:00"},{"id":"EV-2026-003","source":"ocr_batch_2026_02_19","title":"سباق مجتمع الدراجين","category":"sports","start_at":"2026-03-01T06:30:00+03:00","end_at":"2026-03-01T10:00:00+03:00","location":"وادي حنيفة","city":"Riyadh","status":"scheduled","price_sar":0,"capacity":220,"available_seats":60,"tags":["رياضة","مجتمع"],"updated_at":"2026-02-22T23:40:00+03:00"}];
+    const tbody = document.getElementById('tbody');
+    const search = document.getElementById('search');
+    const category = document.getElementById('category');
+    const status = document.getElementById('status');
+    document.getElementById('count').textContent = data.length;
+
+    [...new Set(data.map(r => r.category))].forEach(c => {
+      const o = document.createElement('option'); o.value = c; o.textContent = c; category.appendChild(o);
+    });
+
+    function fmtDate(iso){
+      const d = new Date(iso);
+      return d.toLocaleString('ar-SA', { dateStyle:'medium', timeStyle:'short' });
+    }
+
+    function render(){
+      const q = search.value.trim().toLowerCase();
+      const c = category.value;
+      const s = status.value;
+      const rows = data.filter(r => {
+        const matchQ = !q || r.title.toLowerCase().includes(q) || r.location.toLowerCase().includes(q);
+        const matchC = !c || r.category === c;
+        const matchS = !s || r.status === s;
+        return matchQ && matchC && matchS;
+      });
+      tbody.innerHTML = rows.map(function(r){
+        return '<tr>' +
+          '<td>' + r.title + '</td>' +
+          '<td><span class="pill">' + r.category + '</span></td>' +
+          '<td>' + fmtDate(r.start_at) + ' → ' + fmtDate(r.end_at) + '</td>' +
+          '<td>' + r.location + '</td>' +
+          '<td>' + r.price_sar + ' ر.س</td>' +
+          '<td>' + (r.available_seats ?? '-') + ' / ' + r.capacity + '</td>' +
+          '<td>' + r.status + '</td>' +
+        '</tr>';
+      }).join('');
+      document.getElementById('count').textContent = rows.length;
+    }
+
+    [search, category, status].forEach(el => el.addEventListener('input', render));
+    render();
+  </script>
+</body>
+</html>

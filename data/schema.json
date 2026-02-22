@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EventLive Unified Table Row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "source",
+    "title",
+    "category",
+    "start_at",
+    "end_at",
+    "location",
+    "status",
+    "price_sar",
+    "capacity",
+    "updated_at"
+  ],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "source": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "category": {
+      "type": "string",
+      "enum": ["music", "sports", "business", "culture", "community", "other"]
+    },
+    "start_at": { "type": "string", "format": "date-time" },
+    "end_at": { "type": "string", "format": "date-time" },
+    "location": { "type": "string", "minLength": 1 },
+    "city": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "scheduled", "live", "completed", "cancelled"]
+    },
+    "price_sar": { "type": "number", "minimum": 0 },
+    "capacity": { "type": "integer", "minimum": 0 },
+    "available_seats": { "type": "integer", "minimum": 0 },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "updated_at": { "type": "string", "format": "date-time" }
+  }
+}
