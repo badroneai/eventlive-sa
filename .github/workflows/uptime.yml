@@ -1,0 +1,22 @@
+name: EventLive Uptime Check
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+jobs:
+  uptime:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run uptime check
+        env:
+          EVENTLIVE_URL: https://badroneai.github.io/eventlive-sa/
+          EVENTLIVE_MARKER: EventLive
+        run: npm run uptime:check

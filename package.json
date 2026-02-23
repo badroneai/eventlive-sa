@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "validate": "node scripts/validate-data.mjs",
+    "validate:gate": "npm run validate && node scripts/check-validation-threshold.mjs",
     "build": "node scripts/generate-site.mjs",
-    "pipeline": "npm run validate && npm run build",
-    "qa:day2": "node scripts/data-qa-day2.mjs"
+    "pipeline": "npm run validate:gate && npm run build",
+    "qa:day2": "node scripts/data-qa-day2.mjs",
+    "uptime:check": "node scripts/uptime-check.mjs"
   }
 }

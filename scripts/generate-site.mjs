@@ -31,6 +31,8 @@ const html = `<!doctype html>
     .state-now { background:#1f7a3f; }
     .state-next { background:#7a5a1f; }
     .state-ended { background:#5b5b5b; }
+    .pager { margin-top:12px; display:flex; gap:8px; align-items:center; }
+    button { padding:8px 12px; border-radius:8px; border:1px solid #3b4f79; background:#111a33; color:#fff; }
   </style>
 </head>
 <body>
@@ -58,6 +60,11 @@ const html = `<!doctype html>
     </thead>
     <tbody id="tbody"></tbody>
   </table>
+  <div class="pager">
+    <button id="prevBtn">السابق</button>
+    <span id="pageInfo"></span>
+    <button id="nextBtn">التالي</button>
+  </div>
 
   <script>
     const data = ${JSON.stringify(rows)};
@@ -65,6 +72,11 @@ const html = `<!doctype html>
     const search = document.getElementById('search');
     const category = document.getElementById('category');
     const status = document.getElementById('status');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const pageInfo = document.getElementById('pageInfo');
+    const pageSize = 50;
+    let currentPage = 1;
     document.getElementById('count').textContent = data.length;
 
     [...new Set(data.map(r => r.category))].forEach(c => {
@@ -95,7 +107,7 @@ const html = `<!doctype html>
       const q = search.value.trim().toLowerCase();
       const c = category.value;
       const s = status.value;
-      const rows = data.filter(r => {
+      const filtered = data.filter(r => {
         const matchQ = !q || r.title.toLowerCase().includes(q) || r.location.toLowerCase().includes(q);
         const matchC = !c || r.category === c;
         const matchS = !s || r.status === s;
@@ -107,6 +119,11 @@ const html = `<!doctype html>
         if (w !== 0) return w;
         return new Date(a.start_at).getTime() - new Date(b.start_at).getTime();
       });
+
+      const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
+      if (currentPage > totalPages) currentPage = totalPages;
+      const start = (currentPage - 1) * pageSize;
+      const rows = filtered.slice(start, start + pageSize);
 
       tbody.innerHTML = rows.map(function(r){
         const st = sessionState(r);
@@ -121,10 +138,15 @@ const html = `<!doctype html>
           '<td>' + r.status + '</td>' +
         '</tr>';
       }).join('');
-      document.getElementById('count').textContent = rows.length;
+      document.getElementById('count').textContent = filtered.length;
+      pageInfo.textContent = 'صفحة ' + currentPage + ' / ' + totalPages;
+      prevBtn.disabled = currentPage <= 1;
+      nextBtn.disabled = currentPage >= totalPages;
     }
 
-    [search, category, status].forEach(el => el.addEventListener('input', render));
+    [search, category, status].forEach(el => el.addEventListener('input', function(){ currentPage = 1; render(); }));
+    prevBtn.addEventListener('click', function(){ if (currentPage > 1) { currentPage--; render(); } });
+    nextBtn.addEventListener('click', function(){ currentPage++; render(); });
     render();
   </script>
 </body>

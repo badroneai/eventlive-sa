@@ -18,11 +18,13 @@
     .state-now { background:#1f7a3f; }
     .state-next { background:#7a5a1f; }
     .state-ended { background:#5b5b5b; }
+    .pager { margin-top:12px; display:flex; gap:8px; align-items:center; }
+    button { padding:8px 12px; border-radius:8px; border:1px solid #3b4f79; background:#111a33; color:#fff; }
   </style>
 </head>
 <body>
   <h1>EventLive — نسخة MVP</h1>
-  <div class="meta">آخر تحديث: <span id="buildAt">2026-02-23T00:52:33.407Z</span> | عدد السجلات: <span id="count"></span></div>
+  <div class="meta">آخر تحديث: <span id="buildAt">2026-02-23T00:55:36.491Z</span> | عدد السجلات: <span id="count"></span></div>
 
   <div class="row">
     <input id="search" placeholder="ابحث بالعنوان أو الموقع..." />
@@ -45,6 +47,11 @@
     </thead>
     <tbody id="tbody"></tbody>
   </table>
+  <div class="pager">
+    <button id="prevBtn">السابق</button>
+    <span id="pageInfo"></span>
+    <button id="nextBtn">التالي</button>
+  </div>
 
   <script>
     const data = [{"id":"EV-2026-001","source":"ocr_batch_2026_02_19","title":"ملتقى الابتكار التقني","category":"business","start_at":"2026-02-25T16:00:00+03:00","end_at":"2026-02-25T20:00:00+03:00","location":"مركز الرياض الدولي للمؤتمرات","city":"Riyadh","status":"scheduled","price_sar":120,"capacity":300,"available_seats":144,"tags":["تقنية","شركات ناشئة"],"updated_at":"2026-02-22T23:40:00+03:00"},{"id":"EV-2026-002","source":"ocr_batch_2026_02_19","title":"ليلة موسيقية كلاسيكية","category":"music","start_at":"2026-02-27T19:30:00+03:00","end_at":"2026-02-27T22:00:00+03:00","location":"مسرح جامعة الملك سعود","city":"Riyadh","status":"scheduled","price_sar":85,"capacity":500,"available_seats":310,"tags":["موسيقى","ثقافة"],"updated_at":"2026-02-22T23:40:00+03:00"},{"id":"EV-2026-003","source":"ocr_batch_2026_02_19","title":"سباق مجتمع الدراجين","category":"sports","start_at":"2026-03-01T06:30:00+03:00","end_at":"2026-03-01T10:00:00+03:00","location":"وادي حنيفة","city":"Riyadh","status":"scheduled","price_sar":0,"capacity":220,"available_seats":60,"tags":["رياضة","مجتمع"],"updated_at":"2026-02-22T23:40:00+03:00"}];
@@ -52,6 +59,11 @@
     const search = document.getElementById('search');
     const category = document.getElementById('category');
     const status = document.getElementById('status');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const pageInfo = document.getElementById('pageInfo');
+    const pageSize = 50;
+    let currentPage = 1;
     document.getElementById('count').textContent = data.length;
 
     [...new Set(data.map(r => r.category))].forEach(c => {
@@ -82,7 +94,7 @@
       const q = search.value.trim().toLowerCase();
       const c = category.value;
       const s = status.value;
-      const rows = data.filter(r => {
+      const filtered = data.filter(r => {
         const matchQ = !q || r.title.toLowerCase().includes(q) || r.location.toLowerCase().includes(q);
         const matchC = !c || r.category === c;
         const matchS = !s || r.status === s;
@@ -94,6 +106,11 @@
         if (w !== 0) return w;
         return new Date(a.start_at).getTime() - new Date(b.start_at).getTime();
       });
+
+      const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
+      if (currentPage > totalPages) currentPage = totalPages;
+      const start = (currentPage - 1) * pageSize;
+      const rows = filtered.slice(start, start + pageSize);
 
       tbody.innerHTML = rows.map(function(r){
         const st = sessionState(r);
@@ -108,10 +125,15 @@
           '<td>' + r.status + '</td>' +
         '</tr>';
       }).join('');
-      document.getElementById('count').textContent = rows.length;
+      document.getElementById('count').textContent = filtered.length;
+      pageInfo.textContent = 'صفحة ' + currentPage + ' / ' + totalPages;
+      prevBtn.disabled = currentPage <= 1;
+      nextBtn.disabled = currentPage >= totalPages;
     }
 
-    [search, category, status].forEach(el => el.addEventListener('input', render));
+    [search, category, status].forEach(el => el.addEventListener('input', function(){ currentPage = 1; render(); }));
+    prevBtn.addEventListener('click', function(){ if (currentPage > 1) { currentPage--; render(); } });
+    nextBtn.addEventListener('click', function(){ currentPage++; render(); });
     render();
   </script>
 </body>
