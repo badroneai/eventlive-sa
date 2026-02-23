@@ -19,6 +19,8 @@ jobs:
         env:
           EVENTLIVE_URL: https://badroneai.github.io/eventlive-sa/
           EVENTLIVE_MARKER: EventLive
+          LATENCY_WARN_MS: 1200
+          LATENCY_FAIL_MS: 2500
         run: node scripts/stability-check.mjs
       - name: Status summary
         run: |

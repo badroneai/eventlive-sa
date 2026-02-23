@@ -19,6 +19,13 @@ const html = `<!doctype html>
   <title>EventLive MVP</title>
   <style>
     body { font-family: Tahoma, Arial, sans-serif; margin: 24px; background:#0b1020; color:#e9eefc; }
+    @media (max-width: 768px) {
+      body { margin: 12px; }
+      th, td { padding: 8px; font-size: 12px; }
+      input, select, button { font-size: 12px; padding: 8px; }
+      .legend { font-size: 12px; }
+      .meta { font-size: 12px; }
+    }
     .meta { color:#9fb2db; margin-bottom:16px; }
     .row { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px; }
     input, select { padding:10px; border-radius:8px; border:1px solid #3b4f79; background:#111a33; color:#fff; }
