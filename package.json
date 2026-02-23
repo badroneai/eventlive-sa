@@ -6,6 +6,7 @@
   "scripts": {
     "validate": "node scripts/validate-data.mjs",
     "build": "node scripts/generate-site.mjs",
-    "pipeline": "npm run validate && npm run build"
+    "pipeline": "npm run validate && npm run build",
+    "qa:day2": "node scripts/data-qa-day2.mjs"
   }
 }

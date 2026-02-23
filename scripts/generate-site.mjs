@@ -27,6 +27,10 @@ const html = `<!doctype html>
     th { background:#1a2850; position:sticky; top:0; }
     tr:hover { background:#14224a; }
     .pill { padding:4px 8px; border-radius:999px; background:#24407f; font-size:12px; }
+    .state { padding:4px 8px; border-radius:999px; font-size:12px; font-weight:700; }
+    .state-now { background:#1f7a3f; }
+    .state-next { background:#7a5a1f; }
+    .state-ended { background:#5b5b5b; }
   </style>
 </head>
 <body>
@@ -49,7 +53,7 @@ const html = `<!doctype html>
   <table>
     <thead>
       <tr>
-        <th>العنوان</th><th>التصنيف</th><th>الوقت</th><th>الموقع</th><th>السعر</th><th>المقاعد</th><th>الحالة</th>
+        <th>العنوان</th><th>التصنيف</th><th>حالة الجلسة</th><th>الوقت</th><th>الموقع</th><th>السعر</th><th>المقاعد</th><th>الحالة</th>
       </tr>
     </thead>
     <tbody id="tbody"></tbody>
@@ -72,6 +76,21 @@ const html = `<!doctype html>
       return d.toLocaleString('ar-SA', { dateStyle:'medium', timeStyle:'short' });
     }
 
+    function sessionState(r){
+      const now = Date.now();
+      const start = new Date(r.start_at).getTime();
+      const end = new Date(r.end_at).getTime();
+      if (now >= start && now <= end) return { key: 'now', label: 'الآن' };
+      if (now < start) return { key: 'next', label: 'التالي' };
+      return { key: 'ended', label: 'منتهية' };
+    }
+
+    function stateWeight(key){
+      if (key === 'now') return 0;
+      if (key === 'next') return 1;
+      return 2;
+    }
+
     function render(){
       const q = search.value.trim().toLowerCase();
       const c = category.value;
@@ -81,11 +100,20 @@ const html = `<!doctype html>
         const matchC = !c || r.category === c;
         const matchS = !s || r.status === s;
         return matchQ && matchC && matchS;
+      }).sort((a,b) => {
+        const sa = sessionState(a);
+        const sb = sessionState(b);
+        const w = stateWeight(sa.key) - stateWeight(sb.key);
+        if (w !== 0) return w;
+        return new Date(a.start_at).getTime() - new Date(b.start_at).getTime();
       });
+
       tbody.innerHTML = rows.map(function(r){
+        const st = sessionState(r);
         return '<tr>' +
           '<td>' + r.title + '</td>' +
           '<td><span class="pill">' + r.category + '</span></td>' +
+          '<td><span class="state state-' + st.key + '">' + st.label + '</span></td>' +
           '<td>' + fmtDate(r.start_at) + ' → ' + fmtDate(r.end_at) + '</td>' +
           '<td>' + r.location + '</td>' +
           '<td>' + r.price_sar + ' ر.س</td>' +
