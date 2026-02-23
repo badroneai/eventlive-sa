@@ -28,9 +28,11 @@ const html = `<!doctype html>
     tr:hover { background:#14224a; }
     .pill { padding:4px 8px; border-radius:999px; background:#24407f; font-size:12px; }
     .state { padding:4px 8px; border-radius:999px; font-size:12px; font-weight:700; }
-    .state-now { background:#1f7a3f; }
-    .state-next { background:#7a5a1f; }
-    .state-ended { background:#5b5b5b; }
+    .state-now { background:#0f8a4a; color:#fff; }
+    .state-next { background:#a86d00; color:#fff; }
+    .state-ended { background:#4b5563; color:#fff; }
+    .legend { margin:10px 0 14px; font-size:13px; color:#c4d2f3; }
+    .legend span { margin-left:8px; }
     .pager { margin-top:12px; display:flex; gap:8px; align-items:center; }
     button { padding:8px 12px; border-radius:8px; border:1px solid #3b4f79; background:#111a33; color:#fff; }
   </style>
@@ -50,6 +52,11 @@ const html = `<!doctype html>
       <option value="cancelled">cancelled</option>
       <option value="draft">draft</option>
     </select>
+  </div>
+  <div class="legend">
+    <span><span class="state state-now">الآن</span></span>
+    <span><span class="state state-next">التالي</span></span>
+    <span><span class="state state-ended">منتهية</span></span>
   </div>
 
   <table>

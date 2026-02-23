@@ -9,6 +9,7 @@
     "build": "node scripts/generate-site.mjs",
     "pipeline": "npm run validate:gate && npm run build",
     "qa:day2": "node scripts/data-qa-day2.mjs",
-    "uptime:check": "node scripts/uptime-check.mjs"
+    "uptime:check": "node scripts/uptime-check.mjs",
+    "stability:check": "node scripts/stability-check.mjs"
   }
 }
