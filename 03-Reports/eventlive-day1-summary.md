@@ -2,14 +2,15 @@
 
 ## Final Status
 - Result: ✅ **SUCCESS**
-- Scope delivered: Schema Lock + Validation, Generator Data → Interactive HTML, CI/CD workflow draft.
+- Scope delivered: Schema Lock + Validation, Generator Data → Interactive HTML, CI/CD workflow active.
 
 ## Deployment Confirmation (GitHub Pages)
 - Deployment workflow status: **completed / success**
-- Deployed commit (MVP): `a34d631`
-- Run URL: https://github.com/badroneai/eventlive-sa/actions/runs/22288069756
+- Final deployed commit: `d3d89c9`
+- Run URL: https://github.com/badroneai/eventlive-sa/actions/runs/22289029547
 - Final preview URL (approved): https://badroneai.github.io/eventlive-sa/
 
-## Notes
-- Current repository default branch is `master`.
-- CI workflow file is ready at `.github/workflows/deploy.yml`; branch trigger should be aligned to `master` for guaranteed auto-runs.
+## Artifacts
+- Validation report: `reports/validation-report.md`
+- Build report: `reports/build-report.md`
+- Day 2 plan: `03-Reports/eventlive-day2-plan.md`
