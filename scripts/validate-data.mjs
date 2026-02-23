@@ -7,10 +7,12 @@ const reportsDir = path.join(root, 'reports');
 fs.mkdirSync(reportsDir, { recursive: true });
 
 const schema = JSON.parse(fs.readFileSync(path.join(dataDir, 'schema.json'), 'utf8'));
-const samplePath = path.join(dataDir, 'sample_clean.json');
-const csvPath = path.join(dataDir, 'sample_clean.csv');
+const configuredSource = process.env.EVENTLIVE_SOURCE_FILE;
+const samplePath = configuredSource ? path.join(root, configuredSource) : path.join(dataDir, 'sample_clean.json');
+const csvPath = configuredSource ? '' : path.join(dataDir, 'sample_clean.csv');
 
 function exists(p) {
+  if (!p) return false;
   try {
     fs.accessSync(p);
     return true;
@@ -36,7 +38,7 @@ function parseCsv(content) {
 function castRowTypes(row) {
   const next = { ...row };
   ['price_sar'].forEach((k) => {
-    if (next[k] !== undefined) next[k] = Number(next[k]);
+    if (next[k] !== undefined && next[k] !== '') next[k] = Number(next[k]);
   });
   ['capacity', 'available_seats'].forEach((k) => {
     if (next[k] !== undefined && next[k] !== '') next[k] = Number.parseInt(next[k], 10);
@@ -104,6 +106,18 @@ function validateRow(row, index) {
     }
   }
 
+  if (
+    Number.isInteger(row.capacity) &&
+    Number.isInteger(row.available_seats) &&
+    row.available_seats > row.capacity
+  ) {
+    errors.push(`row ${index + 1}: available_seats cannot exceed capacity`);
+  }
+
+  if (typeof row.title === 'string' && row.title.trim() !== row.title) {
+    errors.push(`row ${index + 1}: title has leading/trailing whitespace`);
+  }
+
   return errors;
 }
 
@@ -111,7 +125,7 @@ let rows = [];
 let sourceFile = '';
 if (exists(samplePath)) {
   rows = JSON.parse(fs.readFileSync(samplePath, 'utf8'));
-  sourceFile = 'data/sample_clean.json';
+  sourceFile = path.relative(root, samplePath).replace(/\\/g, '/');
 } else if (exists(csvPath)) {
   rows = parseCsv(fs.readFileSync(csvPath, 'utf8')).map(castRowTypes);
   sourceFile = 'data/sample_clean.csv';
@@ -122,18 +136,40 @@ if (exists(samplePath)) {
 const allErrors = [];
 rows.forEach((row, idx) => allErrors.push(...validateRow(row, idx)));
 
+const ids = new Set();
+rows.forEach((row, idx) => {
+  if (ids.has(row.id)) {
+    allErrors.push(`row ${idx + 1}: duplicate id '${row.id}'`);
+  }
+  ids.add(row.id);
+});
+
+const allWarnings = [];
+rows.forEach((row, idx) => {
+  if (typeof row.tags === 'object' && Array.isArray(row.tags) && row.tags.length > 8) {
+    allWarnings.push(`row ${idx + 1}: tags count is unusually high (${row.tags.length})`);
+  }
+});
+
 const reportLines = [
   '# EventLive Validation Report',
   `- Source: ${sourceFile}`,
   `- Total rows: ${rows.length}`,
   `- Total errors: ${allErrors.length}`,
+  `- Total warnings: ${allWarnings.length}`,
   '',
   allErrors.length ? '## Errors' : '## Status',
   allErrors.length ? allErrors.map((e) => `- ${e}`).join('\n') : '- PASS: schema validation successful.'
-].join('\n');
+];
 
-fs.writeFileSync(path.join(reportsDir, 'validation-report.md'), reportLines, 'utf8');
-console.log(reportLines);
+if (allWarnings.length) {
+  reportLines.push('', '## Warnings', allWarnings.map((w) => `- ${w}`).join('\n'));
+}
+
+const reportText = reportLines.join('\n');
+
+fs.writeFileSync(path.join(reportsDir, 'validation-report.md'), reportText, 'utf8');
+console.log(reportText);
 
 if (allErrors.length) {
   process.exit(1);

@@ -19,19 +19,12 @@ const html = `<!doctype html>
   <title>EventLive MVP</title>
   <style>
     body { font-family: Tahoma, Arial, sans-serif; margin: 24px; background:#0b1020; color:#e9eefc; }
-    @media (max-width: 768px) {
-      body { margin: 12px; }
-      th, td { padding: 8px; font-size: 12px; }
-      input, select, button { font-size: 12px; padding: 8px; }
-      .legend { font-size: 12px; }
-      .meta { font-size: 12px; }
-    }
     .meta { color:#9fb2db; margin-bottom:16px; }
     .row { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px; }
-    input, select { padding:10px; border-radius:8px; border:1px solid #3b4f79; background:#111a33; color:#fff; }
+    input, select { padding:10px; border-radius:8px; border:1px solid #3b4f79; background:#111a33; color:#fff; min-height:40px; }
     table { width:100%; border-collapse: collapse; background:#101a36; border-radius:12px; overflow:hidden; }
     th, td { padding:12px; border-bottom:1px solid #24335d; text-align:right; font-size:14px; }
-    th { background:#1a2850; position:sticky; top:0; }
+    th { background:#1a2850; position:sticky; top:0; z-index:1; }
     tr:hover { background:#14224a; }
     .pill { padding:4px 8px; border-radius:999px; background:#24407f; font-size:12px; }
     .state { padding:4px 8px; border-radius:999px; font-size:12px; font-weight:700; }
@@ -41,7 +34,43 @@ const html = `<!doctype html>
     .legend { margin:10px 0 14px; font-size:13px; color:#c4d2f3; }
     .legend span { margin-left:8px; }
     .pager { margin-top:12px; display:flex; gap:8px; align-items:center; }
-    button { padding:8px 12px; border-radius:8px; border:1px solid #3b4f79; background:#111a33; color:#fff; }
+    button { padding:10px 14px; border-radius:8px; border:1px solid #3b4f79; background:#111a33; color:#fff; min-height:40px; }
+
+    @media (max-width: 768px) {
+      body { margin: 10px; }
+      .row { position: sticky; top: 0; background:#0b1020; z-index: 2; padding-bottom:8px; }
+      input, select, button { width: 100%; font-size: 14px; }
+      .legend { font-size: 12px; }
+      .meta { font-size: 12px; }
+
+      table, thead, tbody, tr, td { display: block; width: 100%; }
+      thead { display: none; }
+      tr {
+        margin-bottom: 10px;
+        border: 1px solid #24335d;
+        border-radius: 10px;
+        background: #101a36;
+        padding: 6px 8px;
+      }
+      td {
+        border: none;
+        border-bottom: 1px dashed #24335d;
+        padding: 8px 6px;
+        font-size: 13px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      td:last-child { border-bottom: none; }
+      td::before {
+        content: attr(data-label);
+        color: #9fb2db;
+        font-weight: 700;
+        flex: 0 0 40%;
+      }
+      .pager { display:grid; grid-template-columns: 1fr 1fr; }
+      #pageInfo { grid-column: 1 / -1; text-align:center; padding: 6px 0; }
+    }
   </style>
 </head>
 <body>
@@ -142,14 +171,14 @@ const html = `<!doctype html>
       tbody.innerHTML = rows.map(function(r){
         const st = sessionState(r);
         return '<tr>' +
-          '<td>' + r.title + '</td>' +
-          '<td><span class="pill">' + r.category + '</span></td>' +
-          '<td><span class="state state-' + st.key + '">' + st.label + '</span></td>' +
-          '<td>' + fmtDate(r.start_at) + ' → ' + fmtDate(r.end_at) + '</td>' +
-          '<td>' + r.location + '</td>' +
-          '<td>' + r.price_sar + ' ر.س</td>' +
-          '<td>' + (r.available_seats ?? '-') + ' / ' + r.capacity + '</td>' +
-          '<td>' + r.status + '</td>' +
+          '<td data-label="العنوان">' + r.title + '</td>' +
+          '<td data-label="التصنيف"><span class="pill">' + r.category + '</span></td>' +
+          '<td data-label="حالة الجلسة"><span class="state state-' + st.key + '">' + st.label + '</span></td>' +
+          '<td data-label="الوقت">' + fmtDate(r.start_at) + ' → ' + fmtDate(r.end_at) + '</td>' +
+          '<td data-label="الموقع">' + r.location + '</td>' +
+          '<td data-label="السعر">' + r.price_sar + ' ر.س</td>' +
+          '<td data-label="المقاعد">' + (r.available_seats ?? '-') + ' / ' + r.capacity + '</td>' +
+          '<td data-label="الحالة">' + r.status + '</td>' +
         '</tr>';
       }).join('');
       document.getElementById('count').textContent = filtered.length;

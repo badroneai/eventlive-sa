@@ -11,6 +11,7 @@
     "qa:day2": "node scripts/data-qa-day2.mjs",
     "uptime:check": "node scripts/uptime-check.mjs",
     "stability:check": "node scripts/stability-check.mjs",
-    "qa:prod": "node scripts/qa-production.mjs"
+    "qa:prod": "node scripts/qa-production.mjs",
+    "test:validation": "node scripts/validation-regression-test.mjs"
   }
 }
