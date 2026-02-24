@@ -1,0 +1,5 @@
+id,source,title,category,start_at,end_at,location,city,status,price_sar,capacity,available_seats,tags,updated_at
+ev-csv-001,ocr,"Big Expo, Riyadh",business,2026-03-01T10:00:00Z,2026-03-01T12:00:00Z,"Riyadh Front, Hall A",Riyadh,scheduled,150,500,320,b2b|expo,2026-02-24T00:00:00Z
+ev-csv-002,ocr,"Poetry Night
+Special Session",culture,2026-03-02T18:30:00Z,2026-03-02T20:00:00Z,"King Fahd Library",Riyadh,scheduled,0,120,80,poetry|community,2026-02-24T00:00:00Z
+ev-csv-003,ocr,"He said ""Welcome""",community,2026-03-03T16:00:00Z,2026-03-03T18:00:00Z,"Jeddah, Waterfront",Jeddah,live,50,200,150,meetup|talk,2026-02-24T00:00:00Z

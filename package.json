@@ -12,6 +12,7 @@
     "uptime:check": "node scripts/uptime-check.mjs",
     "stability:check": "node scripts/stability-check.mjs",
     "qa:prod": "node scripts/qa-production.mjs",
-    "test:validation": "node scripts/validation-regression-test.mjs"
+    "test:validation": "node scripts/validation-regression-test.mjs",
+    "test:csv": "node scripts/csv-parser-regression-test.mjs"
   }
 }

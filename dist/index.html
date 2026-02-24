@@ -62,7 +62,7 @@
 </head>
 <body>
   <h1>EventLive — نسخة MVP</h1>
-  <div class="meta">آخر تحديث: <span id="buildAt">2026-02-23T21:55:07.390Z</span> | عدد السجلات: <span id="count"></span></div>
+  <div class="meta">آخر تحديث: <span id="buildAt">2026-02-24T00:36:57.153Z</span> | عدد السجلات: <span id="count"></span></div>
 
   <div class="row">
     <input id="search" placeholder="ابحث بالعنوان أو الموقع..." />
@@ -133,6 +133,15 @@
       return 2;
     }
 
+    function escapeHTML(value){
+      return String(value ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
     function render(){
       const q = search.value.trim().toLowerCase();
       const c = category.value;
@@ -158,14 +167,14 @@
       tbody.innerHTML = rows.map(function(r){
         const st = sessionState(r);
         return '<tr>' +
-          '<td data-label="العنوان">' + r.title + '</td>' +
-          '<td data-label="التصنيف"><span class="pill">' + r.category + '</span></td>' +
+          '<td data-label="العنوان">' + escapeHTML(r.title) + '</td>' +
+          '<td data-label="التصنيف"><span class="pill">' + escapeHTML(r.category) + '</span></td>' +
           '<td data-label="حالة الجلسة"><span class="state state-' + st.key + '">' + st.label + '</span></td>' +
-          '<td data-label="الوقت">' + fmtDate(r.start_at) + ' → ' + fmtDate(r.end_at) + '</td>' +
-          '<td data-label="الموقع">' + r.location + '</td>' +
-          '<td data-label="السعر">' + r.price_sar + ' ر.س</td>' +
-          '<td data-label="المقاعد">' + (r.available_seats ?? '-') + ' / ' + r.capacity + '</td>' +
-          '<td data-label="الحالة">' + r.status + '</td>' +
+          '<td data-label="الوقت">' + escapeHTML(fmtDate(r.start_at)) + ' → ' + escapeHTML(fmtDate(r.end_at)) + '</td>' +
+          '<td data-label="الموقع">' + escapeHTML(r.location) + '</td>' +
+          '<td data-label="السعر">' + escapeHTML(r.price_sar) + ' ر.س</td>' +
+          '<td data-label="المقاعد">' + escapeHTML(r.available_seats ?? '-') + ' / ' + escapeHTML(r.capacity) + '</td>' +
+          '<td data-label="الحالة">' + escapeHTML(r.status) + '</td>' +
         '</tr>';
       }).join('');
       document.getElementById('count').textContent = filtered.length;

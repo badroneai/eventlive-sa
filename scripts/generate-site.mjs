@@ -11,6 +11,15 @@ fs.mkdirSync(reportsDir, { recursive: true });
 const rows = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 const buildAt = new Date().toISOString();
 
+function serializeForInlineScript(value) {
+  return JSON.stringify(value)
+    .replace(/</g, '\\u003c')
+    .replace(/>/g, '\\u003e')
+    .replace(/&/g, '\\u0026')
+    .replace(/\u2028/g, '\\u2028')
+    .replace(/\u2029/g, '\\u2029');
+}
+
 const html = `<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
@@ -110,7 +119,7 @@ const html = `<!doctype html>
   </div>
 
   <script>
-    const data = ${JSON.stringify(rows)};
+    const data = ${serializeForInlineScript(rows)};
     const tbody = document.getElementById('tbody');
     const search = document.getElementById('search');
     const category = document.getElementById('category');
@@ -146,6 +155,15 @@ const html = `<!doctype html>
       return 2;
     }
 
+    function escapeHTML(value){
+      return String(value ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/\"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
     function render(){
       const q = search.value.trim().toLowerCase();
       const c = category.value;
@@ -171,14 +189,14 @@ const html = `<!doctype html>
       tbody.innerHTML = rows.map(function(r){
         const st = sessionState(r);
         return '<tr>' +
-          '<td data-label="العنوان">' + r.title + '</td>' +
-          '<td data-label="التصنيف"><span class="pill">' + r.category + '</span></td>' +
+          '<td data-label="العنوان">' + escapeHTML(r.title) + '</td>' +
+          '<td data-label="التصنيف"><span class="pill">' + escapeHTML(r.category) + '</span></td>' +
           '<td data-label="حالة الجلسة"><span class="state state-' + st.key + '">' + st.label + '</span></td>' +
-          '<td data-label="الوقت">' + fmtDate(r.start_at) + ' → ' + fmtDate(r.end_at) + '</td>' +
-          '<td data-label="الموقع">' + r.location + '</td>' +
-          '<td data-label="السعر">' + r.price_sar + ' ر.س</td>' +
-          '<td data-label="المقاعد">' + (r.available_seats ?? '-') + ' / ' + r.capacity + '</td>' +
-          '<td data-label="الحالة">' + r.status + '</td>' +
+          '<td data-label="الوقت">' + escapeHTML(fmtDate(r.start_at)) + ' → ' + escapeHTML(fmtDate(r.end_at)) + '</td>' +
+          '<td data-label="الموقع">' + escapeHTML(r.location) + '</td>' +
+          '<td data-label="السعر">' + escapeHTML(r.price_sar) + ' ر.س</td>' +
+          '<td data-label="المقاعد">' + escapeHTML(r.available_seats ?? '-') + ' / ' + escapeHTML(r.capacity) + '</td>' +
+          '<td data-label="الحالة">' + escapeHTML(r.status) + '</td>' +
         '</tr>';
       }).join('');
       document.getElementById('count').textContent = filtered.length;

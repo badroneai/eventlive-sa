@@ -22,11 +22,59 @@ function exists(p) {
 }
 
 function parseCsv(content) {
-  const lines = content.trim().split(/\r?\n/).filter(Boolean);
-  if (lines.length < 2) return [];
-  const headers = lines[0].split(',').map((h) => h.trim());
-  return lines.slice(1).map((line) => {
-    const cols = line.split(',').map((c) => c.trim());
+  const rows = [];
+  let currentRow = [];
+  let currentField = '';
+  let inQuotes = false;
+
+  for (let i = 0; i < content.length; i += 1) {
+    const ch = content[i];
+    const next = content[i + 1];
+
+    if (ch === '"') {
+      if (inQuotes && next === '"') {
+        currentField += '"';
+        i += 1;
+      } else {
+        inQuotes = !inQuotes;
+      }
+      continue;
+    }
+
+    if (ch === ',' && !inQuotes) {
+      currentRow.push(currentField.trim());
+      currentField = '';
+      continue;
+    }
+
+    if ((ch === '\n' || ch === '\r') && !inQuotes) {
+      if (ch === '\r' && next === '\n') i += 1;
+      currentRow.push(currentField.trim());
+      currentField = '';
+
+      const nonEmpty = currentRow.some((field) => field !== '');
+      if (nonEmpty) rows.push(currentRow);
+      currentRow = [];
+      continue;
+    }
+
+    currentField += ch;
+  }
+
+  if (inQuotes) {
+    throw new Error('Invalid CSV: unclosed quoted field');
+  }
+
+  if (currentField.length > 0 || currentRow.length > 0) {
+    currentRow.push(currentField.trim());
+    const nonEmpty = currentRow.some((field) => field !== '');
+    if (nonEmpty) rows.push(currentRow);
+  }
+
+  if (rows.length < 2) return [];
+
+  const headers = rows[0].map((h) => h.trim());
+  return rows.slice(1).map((cols) => {
     const row = {};
     headers.forEach((h, i) => {
       row[h] = cols[i] ?? '';
@@ -124,7 +172,12 @@ function validateRow(row, index) {
 let rows = [];
 let sourceFile = '';
 if (exists(samplePath)) {
-  rows = JSON.parse(fs.readFileSync(samplePath, 'utf8'));
+  const ext = path.extname(samplePath).toLowerCase();
+  if (ext === '.csv') {
+    rows = parseCsv(fs.readFileSync(samplePath, 'utf8')).map(castRowTypes);
+  } else {
+    rows = JSON.parse(fs.readFileSync(samplePath, 'utf8'));
+  }
   sourceFile = path.relative(root, samplePath).replace(/\\/g, '/');
 } else if (exists(csvPath)) {
   rows = parseCsv(fs.readFileSync(csvPath, 'utf8')).map(castRowTypes);
