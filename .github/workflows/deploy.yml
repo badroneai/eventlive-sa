@@ -36,6 +36,9 @@ jobs:
       - name: Run CSV parser regression tests
         run: npm run test:csv
 
+      - name: Run release verdict regression tests
+        run: npm run test:release-verdict
+
       - name: Validate data (with gate)
         run: npm run validate:gate
 
