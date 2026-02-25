@@ -87,6 +87,40 @@ for (const testCase of cases) {
     process.exit(1);
   }
 
+  const allowedVerdicts = new Set(['PASS', 'ATTENTION', 'HOLD']);
+  const allowedEnforcementStates = new Set(['ACTIVE', 'INACTIVE', 'N/A']);
+
+  if (!allowedVerdicts.has(parsed.verdict)) {
+    console.error(`TEST_FAIL ${testCase.name}: invalid verdict enum`);
+    console.error(`actual verdict: ${parsed.verdict}`);
+    process.exit(1);
+  }
+
+  if (typeof parsed.reason !== 'string' || parsed.reason.length === 0) {
+    console.error(`TEST_FAIL ${testCase.name}: reason must be a non-empty string`);
+    console.error(`actual reason: ${parsed.reason}`);
+    process.exit(1);
+  }
+
+  if (!parsed.inputs || typeof parsed.inputs !== 'object') {
+    console.error(`TEST_FAIL ${testCase.name}: inputs object missing`);
+    process.exit(1);
+  }
+
+  const requiredInputKeys = ['uptimeOutcome', 'stabilityOutcome', 'sloOutcome', 'sloEnforcementState'];
+  for (const key of requiredInputKeys) {
+    if (!(key in parsed.inputs)) {
+      console.error(`TEST_FAIL ${testCase.name}: inputs.${key} missing`);
+      process.exit(1);
+    }
+  }
+
+  if (!allowedEnforcementStates.has(parsed.inputs.sloEnforcementState)) {
+    console.error(`TEST_FAIL ${testCase.name}: invalid inputs.sloEnforcementState enum`);
+    console.error(`actual value: ${parsed.inputs.sloEnforcementState}`);
+    process.exit(1);
+  }
+
   if (parsed.verdict !== testCase.expectedVerdict) {
     console.error(`TEST_FAIL ${testCase.name}: verdict mismatch`);
     console.error(`expected verdict: ${testCase.expectedVerdict}`);
