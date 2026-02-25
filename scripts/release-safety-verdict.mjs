@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 
 const outputPath = process.env.GITHUB_OUTPUT;
+const outputMode = (process.env.RELEASE_VERDICT_OUTPUT_MODE || 'text').toLowerCase();
 
 const uptimeOutcome = (process.env.UPTIME_OUTCOME || '').toLowerCase();
 const stabilityOutcome = (process.env.STABILITY_OUTCOME || '').toLowerCase();
@@ -32,4 +33,19 @@ if (uptimeOutcome !== 'success' || stabilityOutcome !== 'success') {
 setOutput('verdict', verdict);
 setOutput('verdict_reason', reason);
 
-console.log(`RELEASE_VERDICT ${verdict} reason=${reason}`);
+if (outputMode === 'json') {
+  console.log(
+    JSON.stringify({
+      verdict,
+      reason,
+      inputs: {
+        uptimeOutcome,
+        stabilityOutcome,
+        sloOutcome,
+        sloEnforcementState
+      }
+    })
+  );
+} else {
+  console.log(`RELEASE_VERDICT ${verdict} reason=${reason}`);
+}

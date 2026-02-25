@@ -63,24 +63,41 @@ for (const testCase of cases) {
     encoding: 'utf8',
     env: {
       ...process.env,
-      ...testCase.env
+      ...testCase.env,
+      RELEASE_VERDICT_OUTPUT_MODE: 'json'
     }
   });
 
-  const out = `${run.stdout || ''}\n${run.stderr || ''}`;
+  const out = `${run.stdout || ''}`.trim();
+  const err = `${run.stderr || ''}`.trim();
 
   if (run.status !== 0) {
     console.error(`TEST_FAIL ${testCase.name}: script exited with status ${run.status}`);
-    console.error(out);
+    if (out) console.error(out);
+    if (err) console.error(err);
     process.exit(1);
   }
 
-  const expectedLine = `RELEASE_VERDICT ${testCase.expectedVerdict} reason=${testCase.expectedReason}`;
-  if (!out.includes(expectedLine)) {
-    console.error(`TEST_FAIL ${testCase.name}: expected line not found`);
-    console.error(`expected: ${expectedLine}`);
-    console.error('actual output:');
-    console.error(out);
+  let parsed;
+  try {
+    parsed = JSON.parse(out);
+  } catch {
+    console.error(`TEST_FAIL ${testCase.name}: invalid JSON output`);
+    console.error(out || err);
+    process.exit(1);
+  }
+
+  if (parsed.verdict !== testCase.expectedVerdict) {
+    console.error(`TEST_FAIL ${testCase.name}: verdict mismatch`);
+    console.error(`expected verdict: ${testCase.expectedVerdict}`);
+    console.error(`actual verdict: ${parsed.verdict}`);
+    process.exit(1);
+  }
+
+  if (parsed.reason !== testCase.expectedReason) {
+    console.error(`TEST_FAIL ${testCase.name}: reason mismatch`);
+    console.error(`expected reason: ${testCase.expectedReason}`);
+    console.error(`actual reason: ${parsed.reason}`);
     process.exit(1);
   }
 }
