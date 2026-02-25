@@ -196,9 +196,32 @@ jobs:
 
       - name: Create release scorecard summary
         if: always()
+        env:
+          UPTIME_OUTCOME: ${{ steps.uptime.outcome }}
+          STABILITY_OUTCOME: ${{ steps.stability.outcome }}
+          SLO_OUTCOME: ${{ steps.slo_gate.outcome }}
+          SLO_ENFORCEMENT_STATE: ${{ steps.slo_gate.outputs.enforcement_state || 'n/a' }}
         run: |
+          verdict="PASS"
+          verdict_reason="all active release checks passed"
+
+          if [ "$UPTIME_OUTCOME" != "success" ] || [ "$STABILITY_OUTCOME" != "success" ]; then
+            verdict="HOLD"
+            verdict_reason="uptime/stability verification failed"
+          elif [ "$SLO_ENFORCEMENT_STATE" = "ACTIVE" ] && [ "$SLO_OUTCOME" != "success" ]; then
+            verdict="HOLD"
+            verdict_reason="active SLO policy gate failed"
+          elif [ "$SLO_ENFORCEMENT_STATE" = "INACTIVE" ]; then
+            verdict="ATTENTION"
+            verdict_reason="SLO gate in warm-up mode (non-blocking until sample minimum)"
+          elif [ "$SLO_ENFORCEMENT_STATE" = "n/a" ]; then
+            verdict="ATTENTION"
+            verdict_reason="SLO enforcement state unavailable"
+          fi
+
           echo "## EventLive Release Scorecard" >> $GITHUB_STEP_SUMMARY
           echo "- Deploy URL: https://${{ github.repository_owner }}.github.io/eventlive-sa/" >> $GITHUB_STEP_SUMMARY
+          echo "- Release safety verdict: ${verdict} (${verdict_reason})" >> $GITHUB_STEP_SUMMARY
           echo "- Uptime check outcome: ${{ steps.uptime.outcome }}" >> $GITHUB_STEP_SUMMARY
           echo "- Uptime attempts used: ${{ steps.uptime.outputs.attempts_used || 'n/a' }}" >> $GITHUB_STEP_SUMMARY
           echo "- Uptime result mode: ${{ steps.uptime.outputs.result_mode || 'n/a' }}" >> $GITHUB_STEP_SUMMARY
