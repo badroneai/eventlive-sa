@@ -1,4 +1,9 @@
+import fs from 'node:fs';
 import { spawnSync } from 'node:child_process';
+
+const schema = JSON.parse(
+  fs.readFileSync(new URL('../data/release-verdict.schema.json', import.meta.url), 'utf8')
+);
 
 const cases = [
   {
@@ -58,6 +63,59 @@ const cases = [
   }
 ];
 
+function fail(testName, message, detail) {
+  console.error(`TEST_FAIL ${testName}: ${message}`);
+  if (detail) console.error(detail);
+  process.exit(1);
+}
+
+function validateBySchema(value, currentSchema, path, testName) {
+  if (currentSchema.type === 'object') {
+    if (!value || typeof value !== 'object' || Array.isArray(value)) {
+      fail(testName, `${path} must be an object`);
+    }
+
+    const required = currentSchema.required || [];
+    for (const key of required) {
+      if (!(key in value)) {
+        fail(testName, `${path}.${key} missing`);
+      }
+    }
+
+    if (currentSchema.additionalProperties === false && currentSchema.properties) {
+      for (const key of Object.keys(value)) {
+        if (!(key in currentSchema.properties)) {
+          fail(testName, `${path}.${key} is not allowed by schema`);
+        }
+      }
+    }
+
+    if (currentSchema.properties) {
+      for (const [key, childSchema] of Object.entries(currentSchema.properties)) {
+        if (key in value) {
+          validateBySchema(value[key], childSchema, `${path}.${key}`, testName);
+        }
+      }
+    }
+
+    return;
+  }
+
+  if (currentSchema.type === 'string') {
+    if (typeof value !== 'string') {
+      fail(testName, `${path} must be a string`);
+    }
+
+    if (typeof currentSchema.minLength === 'number' && value.length < currentSchema.minLength) {
+      fail(testName, `${path} length must be >= ${currentSchema.minLength}`);
+    }
+
+    if (Array.isArray(currentSchema.enum) && !currentSchema.enum.includes(value)) {
+      fail(testName, `${path} must be one of: ${currentSchema.enum.join(', ')}`, `actual value: ${value}`);
+    }
+  }
+}
+
 for (const testCase of cases) {
   const run = spawnSync(process.execPath, ['scripts/release-safety-verdict.mjs'], {
     encoding: 'utf8',
@@ -72,67 +130,32 @@ for (const testCase of cases) {
   const err = `${run.stderr || ''}`.trim();
 
   if (run.status !== 0) {
-    console.error(`TEST_FAIL ${testCase.name}: script exited with status ${run.status}`);
-    if (out) console.error(out);
-    if (err) console.error(err);
-    process.exit(1);
+    fail(testCase.name, `script exited with status ${run.status}`, out || err);
   }
 
   let parsed;
   try {
     parsed = JSON.parse(out);
   } catch {
-    console.error(`TEST_FAIL ${testCase.name}: invalid JSON output`);
-    console.error(out || err);
-    process.exit(1);
+    fail(testCase.name, 'invalid JSON output', out || err);
   }
 
-  const allowedVerdicts = new Set(['PASS', 'ATTENTION', 'HOLD']);
-  const allowedEnforcementStates = new Set(['ACTIVE', 'INACTIVE', 'N/A']);
-
-  if (!allowedVerdicts.has(parsed.verdict)) {
-    console.error(`TEST_FAIL ${testCase.name}: invalid verdict enum`);
-    console.error(`actual verdict: ${parsed.verdict}`);
-    process.exit(1);
-  }
-
-  if (typeof parsed.reason !== 'string' || parsed.reason.length === 0) {
-    console.error(`TEST_FAIL ${testCase.name}: reason must be a non-empty string`);
-    console.error(`actual reason: ${parsed.reason}`);
-    process.exit(1);
-  }
-
-  if (!parsed.inputs || typeof parsed.inputs !== 'object') {
-    console.error(`TEST_FAIL ${testCase.name}: inputs object missing`);
-    process.exit(1);
-  }
-
-  const requiredInputKeys = ['uptimeOutcome', 'stabilityOutcome', 'sloOutcome', 'sloEnforcementState'];
-  for (const key of requiredInputKeys) {
-    if (!(key in parsed.inputs)) {
-      console.error(`TEST_FAIL ${testCase.name}: inputs.${key} missing`);
-      process.exit(1);
-    }
-  }
-
-  if (!allowedEnforcementStates.has(parsed.inputs.sloEnforcementState)) {
-    console.error(`TEST_FAIL ${testCase.name}: invalid inputs.sloEnforcementState enum`);
-    console.error(`actual value: ${parsed.inputs.sloEnforcementState}`);
-    process.exit(1);
-  }
+  validateBySchema(parsed, schema, 'payload', testCase.name);
 
   if (parsed.verdict !== testCase.expectedVerdict) {
-    console.error(`TEST_FAIL ${testCase.name}: verdict mismatch`);
-    console.error(`expected verdict: ${testCase.expectedVerdict}`);
-    console.error(`actual verdict: ${parsed.verdict}`);
-    process.exit(1);
+    fail(
+      testCase.name,
+      'verdict mismatch',
+      `expected verdict: ${testCase.expectedVerdict}\nactual verdict: ${parsed.verdict}`
+    );
   }
 
   if (parsed.reason !== testCase.expectedReason) {
-    console.error(`TEST_FAIL ${testCase.name}: reason mismatch`);
-    console.error(`expected reason: ${testCase.expectedReason}`);
-    console.error(`actual reason: ${parsed.reason}`);
-    process.exit(1);
+    fail(
+      testCase.name,
+      'reason mismatch',
+      `expected reason: ${testCase.expectedReason}\nactual reason: ${parsed.reason}`
+    );
   }
 }
 

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eventlive.sa/schemas/release-verdict.schema.json",
+  "title": "Release Safety Verdict Output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["verdict", "reason", "inputs"],
+  "properties": {
+    "verdict": {
+      "type": "string",
+      "enum": ["PASS", "ATTENTION", "HOLD"]
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "inputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["uptimeOutcome", "stabilityOutcome", "sloOutcome", "sloEnforcementState"],
+      "properties": {
+        "uptimeOutcome": { "type": "string" },
+        "stabilityOutcome": { "type": "string" },
+        "sloOutcome": { "type": "string" },
+        "sloEnforcementState": {
+          "type": "string",
+          "enum": ["ACTIVE", "INACTIVE", "N/A"]
+        }
+      }
+    }
+  }
+}
