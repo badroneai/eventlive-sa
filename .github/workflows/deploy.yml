@@ -205,6 +205,7 @@ jobs:
           STABILITY_OUTCOME: ${{ steps.stability.outcome }}
           SLO_OUTCOME: ${{ steps.slo_gate.outcome }}
           SLO_ENFORCEMENT_STATE: ${{ steps.slo_gate.outputs.enforcement_state || 'n/a' }}
+          RELEASE_VERDICT_VALIDATE_SCHEMA: '1'
         run: npm run release:verdict
 
       - name: Create release scorecard summary

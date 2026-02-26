@@ -15,6 +15,7 @@
 - [ ] تحذيرات الجودة ضمن الحد المسموح (`EVENTLIVE_MAX_WARNINGS`)
 - [ ] لا توجد بيانات حساسة داخل `dist/index.html`
 - [ ] فحص الحقول النصية لتفادي whitespace/duplicates
+- [ ] تفعيل تحقق schema لحكم الإطلاق (`RELEASE_VERDICT_VALIDATE_SCHEMA=1`) داخل CI (workflow: `deploy.yml`)
 
 ## 3) UX Mobile Validation
 - [ ] التأكد من عرض mobile cards تحت 768px
