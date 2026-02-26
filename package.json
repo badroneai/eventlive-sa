@@ -15,6 +15,7 @@
     "test:validation": "node scripts/validation-regression-test.mjs",
     "test:csv": "node scripts/csv-parser-regression-test.mjs",
     "test:release-verdict": "node scripts/release-verdict-regression-test.mjs",
+    "test:release-verdict-schema-ci": "node scripts/release-verdict-schema-ci-check.mjs",
     "reliability:rollup": "node scripts/reliability-rollup.mjs",
     "reliability:slo-gate": "node scripts/check-reliability-slo.mjs",
     "release:verdict": "node scripts/release-safety-verdict.mjs"

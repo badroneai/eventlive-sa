@@ -39,6 +39,9 @@ jobs:
       - name: Run release verdict regression tests
         run: npm run test:release-verdict
 
+      - name: Run release verdict schema CI gate test
+        run: npm run test:release-verdict-schema-ci
+
       - name: Validate data (with gate)
         run: npm run validate:gate
 
