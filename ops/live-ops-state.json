@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-02-27T21:06:46.284Z",
+  "active_cycle_id": "cycle-2026-02-27T21-06-46-284Z",
+  "service_status": {
+    "gateway": "up",
+    "telegram": "up",
+    "n8n": "down"
+  },
+  "last_ok_at": null,
+  "last_fail_at": "2026-02-27T21:06:46.284Z",
+  "last_report_commit": "d732170",
+  "alerts_active_count": 3,
+  "blockers": [
+    "n8n is not running"
+  ],
+  "trusted_proxies_enabled": false
+}
