@@ -100,6 +100,10 @@ if (['1', 'true', 'yes', 'on'].includes((process.env.RELEASE_VERDICT_INJECT_MISS
   delete payload.reason;
 }
 
+if (['1', 'true', 'yes', 'on'].includes((process.env.RELEASE_VERDICT_INJECT_EXTRA_PAYLOAD_KEY || '').toLowerCase())) {
+  payload.debugExtra = 'unexpected';
+}
+
 if (validateSchema) {
   const schema = JSON.parse(
     fs.readFileSync(new URL('../data/release-verdict.schema.json', import.meta.url), 'utf8')
