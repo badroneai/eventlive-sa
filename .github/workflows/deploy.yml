@@ -42,6 +42,9 @@ jobs:
       - name: Run release verdict schema CI gate test
         run: npm run test:release-verdict-schema-ci
 
+      - name: Run release verdict schema negative-path gate test
+        run: npm run test:release-verdict-schema-negative-ci
+
       - name: Validate data (with gate)
         run: npm run validate:gate
 
