@@ -45,6 +45,9 @@ jobs:
       - name: Run release verdict schema negative-path gate test
         run: npm run test:release-verdict-schema-negative-ci
 
+      - name: Run release verdict schema missing-required negative-path gate test
+        run: npm run test:release-verdict-schema-negative-missing-required-ci
+
       - name: Validate data (with gate)
         run: npm run validate:gate
 

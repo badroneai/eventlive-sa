@@ -17,6 +17,7 @@
     "test:release-verdict": "node scripts/release-verdict-regression-test.mjs",
     "test:release-verdict-schema-ci": "node scripts/release-verdict-schema-ci-check.mjs",
     "test:release-verdict-schema-negative-ci": "node scripts/release-verdict-schema-negative-ci-check.mjs",
+    "test:release-verdict-schema-negative-missing-required-ci": "node scripts/release-verdict-schema-negative-missing-required-ci-check.mjs",
     "reliability:rollup": "node scripts/reliability-rollup.mjs",
     "reliability:slo-gate": "node scripts/check-reliability-slo.mjs",
     "release:verdict": "node scripts/release-safety-verdict.mjs"

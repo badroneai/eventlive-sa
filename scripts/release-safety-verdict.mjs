@@ -96,6 +96,10 @@ const payload = {
   }
 };
 
+if (['1', 'true', 'yes', 'on'].includes((process.env.RELEASE_VERDICT_INJECT_MISSING_REASON || '').toLowerCase())) {
+  delete payload.reason;
+}
+
 if (validateSchema) {
   const schema = JSON.parse(
     fs.readFileSync(new URL('../data/release-verdict.schema.json', import.meta.url), 'utf8')
