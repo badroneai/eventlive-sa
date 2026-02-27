@@ -39,20 +39,8 @@ jobs:
       - name: Run release verdict regression tests
         run: npm run test:release-verdict
 
-      - name: Run release verdict schema CI gate test
-        run: npm run test:release-verdict-schema-ci
-
-      - name: Run release verdict schema negative-path gate test
-        run: npm run test:release-verdict-schema-negative-ci
-
-      - name: Run release verdict schema missing-required negative-path gate test
-        run: npm run test:release-verdict-schema-negative-missing-required-ci
-
-      - name: Run release verdict schema additional-property negative-path gate test
-        run: npm run test:release-verdict-schema-negative-additional-property-ci
-
-      - name: Run release verdict schema nested-type negative-path gate test
-        run: npm run test:release-verdict-schema-negative-nested-type-ci
+      - name: Run release verdict schema suite (positive + fail-closed negatives)
+        run: npm run test:release-verdict-schema-suite
 
       - name: Validate data (with gate)
         run: npm run validate:gate
