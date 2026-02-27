@@ -20,7 +20,7 @@
     "test:release-verdict-schema-negative-missing-required-ci": "node scripts/release-verdict-schema-negative-missing-required-ci-check.mjs",
     "test:release-verdict-schema-negative-additional-property-ci": "node scripts/release-verdict-schema-negative-additional-property-ci-check.mjs",
     "test:release-verdict-schema-negative-nested-type-ci": "node scripts/release-verdict-schema-negative-nested-type-ci-check.mjs",
-    "test:release-verdict-schema-suite": "npm run test:release-verdict-schema-ci && npm run test:release-verdict-schema-negative-ci && npm run test:release-verdict-schema-negative-missing-required-ci && npm run test:release-verdict-schema-negative-additional-property-ci && npm run test:release-verdict-schema-negative-nested-type-ci",
+    "test:release-verdict-schema-suite": "node scripts/release-verdict-schema-suite.mjs",
     "reliability:rollup": "node scripts/reliability-rollup.mjs",
     "reliability:slo-gate": "node scripts/check-reliability-slo.mjs",
     "release:verdict": "node scripts/release-safety-verdict.mjs"
