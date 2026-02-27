@@ -104,6 +104,10 @@ if (['1', 'true', 'yes', 'on'].includes((process.env.RELEASE_VERDICT_INJECT_EXTR
   payload.debugExtra = 'unexpected';
 }
 
+if (['1', 'true', 'yes', 'on'].includes((process.env.RELEASE_VERDICT_INJECT_UPTIME_NON_STRING || '').toLowerCase())) {
+  payload.inputs.uptimeOutcome = 123;
+}
+
 if (validateSchema) {
   const schema = JSON.parse(
     fs.readFileSync(new URL('../data/release-verdict.schema.json', import.meta.url), 'utf8')

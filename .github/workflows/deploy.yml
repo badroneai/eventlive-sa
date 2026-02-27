@@ -51,6 +51,9 @@ jobs:
       - name: Run release verdict schema additional-property negative-path gate test
         run: npm run test:release-verdict-schema-negative-additional-property-ci
 
+      - name: Run release verdict schema nested-type negative-path gate test
+        run: npm run test:release-verdict-schema-negative-nested-type-ci
+
       - name: Validate data (with gate)
         run: npm run validate:gate
 
