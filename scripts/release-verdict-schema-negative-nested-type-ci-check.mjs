@@ -1,16 +1,10 @@
 import { spawnSync } from 'node:child_process';
 
-const run = spawnSync(process.execPath, ['scripts/release-safety-verdict.mjs'], {
+const run = spawnSync(process.execPath, ['scripts/release-verdict-schema-negative-fixture-runner.mjs'], {
   encoding: 'utf8',
   env: {
     ...process.env,
-    RELEASE_VERDICT_VALIDATE_SCHEMA: '1',
-    RELEASE_VERDICT_OUTPUT_MODE: 'json',
-    RELEASE_VERDICT_INJECT_UPTIME_NON_STRING: '1',
-    UPTIME_OUTCOME: 'success',
-    STABILITY_OUTCOME: 'success',
-    SLO_OUTCOME: 'success',
-    SLO_ENFORCEMENT_STATE: 'ACTIVE'
+    RELEASE_VERDICT_SCHEMA_NEGATIVE_FIXTURE: 'nested-type'
   }
 });
 

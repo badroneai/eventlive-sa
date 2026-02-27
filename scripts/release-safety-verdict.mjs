@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import { validateReleaseVerdictPayload } from './release-verdict-schema-validator.mjs';
 
 const outputPath = process.env.GITHUB_OUTPUT;
 const outputMode = (process.env.RELEASE_VERDICT_OUTPUT_MODE || 'text').toLowerCase();
@@ -14,58 +15,6 @@ const sloEnforcementState = (process.env.SLO_ENFORCEMENT_STATE || 'n/a').toUpper
 function setOutput(key, value) {
   if (!outputPath) return;
   fs.appendFileSync(outputPath, `${key}=${value}\n`, 'utf8');
-}
-
-function failSchemaValidation(message) {
-  console.error(`RELEASE_VERDICT_SCHEMA_FAIL ${message}`);
-  process.exit(2);
-}
-
-function validateBySchema(value, schema, path = 'payload') {
-  if (schema.type === 'object') {
-    if (!value || typeof value !== 'object' || Array.isArray(value)) {
-      failSchemaValidation(`${path} must be an object`);
-    }
-
-    const required = schema.required || [];
-    for (const key of required) {
-      if (!(key in value)) {
-        failSchemaValidation(`${path}.${key} missing`);
-      }
-    }
-
-    if (schema.additionalProperties === false && schema.properties) {
-      for (const key of Object.keys(value)) {
-        if (!(key in schema.properties)) {
-          failSchemaValidation(`${path}.${key} is not allowed by schema`);
-        }
-      }
-    }
-
-    if (schema.properties) {
-      for (const [key, childSchema] of Object.entries(schema.properties)) {
-        if (key in value) {
-          validateBySchema(value[key], childSchema, `${path}.${key}`);
-        }
-      }
-    }
-
-    return;
-  }
-
-  if (schema.type === 'string') {
-    if (typeof value !== 'string') {
-      failSchemaValidation(`${path} must be a string`);
-    }
-
-    if (typeof schema.minLength === 'number' && value.length < schema.minLength) {
-      failSchemaValidation(`${path} length must be >= ${schema.minLength}`);
-    }
-
-    if (Array.isArray(schema.enum) && !schema.enum.includes(value)) {
-      failSchemaValidation(`${path} must be one of: ${schema.enum.join(', ')} (actual: ${value})`);
-    }
-  }
 }
 
 let verdict = 'PASS';
@@ -96,23 +45,13 @@ const payload = {
   }
 };
 
-if (['1', 'true', 'yes', 'on'].includes((process.env.RELEASE_VERDICT_INJECT_MISSING_REASON || '').toLowerCase())) {
-  delete payload.reason;
-}
-
-if (['1', 'true', 'yes', 'on'].includes((process.env.RELEASE_VERDICT_INJECT_EXTRA_PAYLOAD_KEY || '').toLowerCase())) {
-  payload.debugExtra = 'unexpected';
-}
-
-if (['1', 'true', 'yes', 'on'].includes((process.env.RELEASE_VERDICT_INJECT_UPTIME_NON_STRING || '').toLowerCase())) {
-  payload.inputs.uptimeOutcome = 123;
-}
-
 if (validateSchema) {
-  const schema = JSON.parse(
-    fs.readFileSync(new URL('../data/release-verdict.schema.json', import.meta.url), 'utf8')
-  );
-  validateBySchema(payload, schema, 'payload');
+  try {
+    validateReleaseVerdictPayload(payload);
+  } catch (error) {
+    console.error(`RELEASE_VERDICT_SCHEMA_FAIL ${error.message}`);
+    process.exit(2);
+  }
 }
 
 setOutput('verdict', verdict);
