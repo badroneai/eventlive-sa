@@ -85,6 +85,11 @@ const html = `<!doctype html>
 <body>
   <h1>EventLive — نسخة MVP</h1>
   <div class="meta">آخر تحديث: <span id="buildAt">${buildAt}</span> | عدد السجلات: <span id="count"></span></div>
+  <div class="row" style="margin-bottom:14px">
+    <a href="./live-ops.html" style="color:#7dd3fc">Live Ops</a>
+    <a href="./alerts.html" style="color:#7dd3fc">Alerts</a>
+    <a href="./incidents.html" style="color:#7dd3fc">Incidents</a>
+  </div>
 
   <div class="row">
     <input id="search" placeholder="ابحث بالعنوان أو الموقع..." />
@@ -215,11 +220,68 @@ const html = `<!doctype html>
 
 fs.writeFileSync(path.join(distDir, 'index.html'), html, 'utf8');
 
+function writeDist(name, content){
+  fs.writeFileSync(path.join(distDir, name), content, 'utf8');
+}
+
+function copyIfExists(srcRel, dstRel){
+  const src = path.join(root, srcRel);
+  if (!fs.existsSync(src)) return false;
+  const dst = path.join(distDir, dstRel);
+  fs.mkdirSync(path.dirname(dst), { recursive: true });
+  fs.copyFileSync(src, dst);
+  return true;
+}
+
+// Build incidents index (for incidents page)
+const incidentsDir = path.join(root, '04-Incidents');
+const incidents = [];
+if (fs.existsSync(incidentsDir)) {
+  for (const name of fs.readdirSync(incidentsDir)) {
+    if (!name.startsWith('INC-') || !name.endsWith('.md')) continue;
+    const full = path.join(incidentsDir, name);
+    const raw = fs.readFileSync(full, 'utf8');
+    const titleLine = raw.split(/\r?\n/).find(l => l.startsWith('# ')) || name;
+    const openedLine = raw.split(/\r?\n/).find(l => l.toLowerCase().startsWith('opened at:')) || '';
+    incidents.push({
+      id: name.replace(/\.md$/, ''),
+      title: titleLine.replace(/^#\s*/, '').trim(),
+      opened_at: openedLine.replace(/^opened at:\s*/i, '').trim() || null,
+      file: `04-Incidents/${name}`
+    });
+  }
+}
+incidents.sort((a,b) => String(b.opened_at || '').localeCompare(String(a.opened_at || '')));
+const incidentsIndex = { generated_at: new Date().toISOString(), count: incidents.length, incidents };
+fs.mkdirSync(path.join(root, 'reports'), { recursive: true });
+fs.writeFileSync(path.join(root, 'reports', 'incidents-index.json'), JSON.stringify(incidentsIndex, null, 2), 'utf8');
+
+// Copy static product pages to dist
+copyIfExists('live-ops.html', 'live-ops.html');
+copyIfExists('alerts.html', 'alerts.html');
+copyIfExists('incidents.html', 'incidents.html');
+
+copyIfExists('ops/live-ops-state.json', 'ops/live-ops-state.json');
+copyIfExists('reports/alerts-status.json', 'reports/alerts-status.json');
+copyIfExists('reports/alerts-status.md', 'reports/alerts-status.md');
+copyIfExists('reports/incidents-index.json', 'reports/incidents-index.json');
+if (fs.existsSync(incidentsDir)) {
+  for (const name of fs.readdirSync(incidentsDir)) {
+    if (name.endsWith('.md') && name.startsWith('INC-')) {
+      copyIfExists(`04-Incidents/${name}`, `04-Incidents/${name}`);
+    }
+  }
+}
+
 const report = [
   '# EventLive Build Report',
   `- Built at: ${buildAt}`,
   `- Input records: ${rows.length}`,
-  '- Output: dist/index.html'
+  '- Output: dist/index.html',
+  `- Output: dist/live-ops.html`,
+  `- Output: dist/alerts.html`,
+  `- Output: dist/incidents.html`,
+  `- Incidents indexed: ${incidents.length}`
 ].join('\n');
 fs.writeFileSync(path.join(reportsDir, 'build-report.md'), report, 'utf8');
 console.log(report);

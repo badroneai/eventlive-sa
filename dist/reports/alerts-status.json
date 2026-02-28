@@ -1,0 +1,11 @@
+{
+  "evaluated_at": "2026-02-28T16:21:11.763Z",
+  "status": "WARN",
+  "reasons": [
+    "n8n is not active (scheduler fallback required).",
+    "Blockers detected: n8n is not running",
+    "trusted_proxies_enabled=false"
+  ],
+  "active_alerts": 3,
+  "source_state": "ops/live-ops-state.json"
+}
