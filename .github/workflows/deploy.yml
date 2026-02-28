@@ -89,6 +89,10 @@ jobs:
           echo "- Result: ✅ Success" >> $GITHUB_STEP_SUMMARY
           echo "- Commit: $GITHUB_SHA" >> $GITHUB_STEP_SUMMARY
           echo "- Site (after deploy): https://${{ github.repository_owner }}.github.io/eventlive-sa/" >> $GITHUB_STEP_SUMMARY
+          echo "- Schema regression status: ${{ steps.schema_regression_summary.outputs.schema_regression_status || 'n/a' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Schema regression policy: ${{ steps.schema_regression_summary.outputs.schema_regression_policy_mode || 'n/a' }} (branch: ${{ steps.schema_regression_summary.outputs.schema_regression_branch_name || 'n/a' }})" >> $GITHUB_STEP_SUMMARY
+          echo "- Schema regression samples: ${{ steps.schema_regression_summary.outputs.schema_regression_samples_progress || 'n/a' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Schema regression consecutive: ${{ steps.schema_regression_summary.outputs.schema_regression_consecutive || 'n/a' }}" >> $GITHUB_STEP_SUMMARY
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
