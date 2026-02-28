@@ -1,3 +1,4 @@
+import fs from 'node:fs';
 import { spawnSync } from 'node:child_process';
 
 const checks = [
@@ -51,9 +52,32 @@ console.log(`SCHEMA_SUITE_TOTAL_DURATION_MS ${suiteDurationMs}`);
 console.log('SCHEMA_SUITE_SUMMARY_END');
 
 const failed = results.find((r) => r.status.startsWith('FAIL'));
+const incomplete = results.length !== checks.length;
+const suiteStatus = failed || incomplete ? 'FAIL' : 'PASS';
+
+const nowIso = new Date().toISOString();
+const reportLines = [
+  '# Schema Suite Timing Report',
+  '',
+  `- generated_at: ${nowIso}`,
+  `- status: ${suiteStatus}`,
+  `- total_duration_ms: ${suiteDurationMs}`,
+  '',
+  '## Check Results',
+  ...results.map((r) => `- ${r.name}: ${r.status} (duration_ms=${r.durationMs})`),
+  ''
+];
+
+fs.mkdirSync(new URL('../reports/', import.meta.url), { recursive: true });
+fs.writeFileSync(
+  new URL('../reports/schema-suite-timing.md', import.meta.url),
+  `${reportLines.join('\n')}\n`,
+  'utf8'
+);
+
 if (failed) process.exit(1);
 
-if (results.length !== checks.length) {
+if (incomplete) {
   console.error('SCHEMA_SUITE_FAIL incomplete run');
   process.exit(1);
 }
