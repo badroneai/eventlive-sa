@@ -11,6 +11,8 @@ if (!existsSync(STATUS_PATH)) {
 const status = JSON.parse(await fs.readFile(STATUS_PATH, 'utf8'));
 
 const summaryStatus = status.status || 'UNKNOWN';
+const policyMode = status.policy_mode || 'STANDARD';
+const branchName = status.branch_name || 'n/a';
 const baseline = status.baseline_duration_ms ?? 'n/a';
 const threshold = status.threshold_duration_ms ?? 'n/a';
 const latest = status.latest_sample?.total_duration_ms ?? 'n/a';
@@ -18,13 +20,15 @@ const samplesProgress = `${status.baseline_sample_count ?? 0}/${status.baseline_
 const consecutive = `${status.consecutive_regression_count ?? 0}/${status.consecutive_limit ?? 'n/a'}`;
 
 console.log(
-  `SCHEMA_SUITE_REGRESSION_SUMMARY status=${summaryStatus} latest_ms=${latest} baseline_ms=${baseline} threshold_ms=${threshold} samples=${samplesProgress} consecutive=${consecutive}`
+  `SCHEMA_SUITE_REGRESSION_SUMMARY status=${summaryStatus} policy=${policyMode} branch=${branchName} latest_ms=${latest} baseline_ms=${baseline} threshold_ms=${threshold} samples=${samplesProgress} consecutive=${consecutive}`
 );
 
 const githubOutput = process.env.GITHUB_OUTPUT;
 if (githubOutput) {
   const out = [
     `schema_regression_status=${summaryStatus}`,
+    `schema_regression_policy_mode=${policyMode}`,
+    `schema_regression_branch_name=${branchName}`,
     `schema_regression_latest_ms=${latest}`,
     `schema_regression_baseline_ms=${baseline}`,
     `schema_regression_threshold_ms=${threshold}`,
@@ -39,6 +43,7 @@ if (githubStepSummary) {
   const lines = [
     '## Schema Runtime Regression Trend',
     `- Status: ${summaryStatus}`,
+    `- Policy mode: ${policyMode} (branch: ${branchName})`,
     `- Latest total duration: ${latest} ms`,
     `- Baseline (rolling median): ${baseline} ms`,
     `- Threshold (${status.regression_factor ?? 'n/a'}x): ${threshold} ms`,

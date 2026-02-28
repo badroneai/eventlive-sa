@@ -6,12 +6,20 @@ const HISTORY_PATH = process.env.SCHEMA_SUITE_HISTORY_PATH || 'ops/schema-suite-
 const STATUS_JSON_PATH = process.env.SCHEMA_SUITE_REGRESSION_STATUS_JSON || 'reports/schema-suite-regression-status.json';
 const STATUS_MD_PATH = process.env.SCHEMA_SUITE_REGRESSION_STATUS_MD || 'reports/schema-suite-regression-status.md';
 
-const REGRESSION_FACTOR = Number(process.env.SCHEMA_SUITE_REGRESSION_FACTOR || 1.5); // 50% slower than baseline
-const CONSECUTIVE_LIMIT = Number(process.env.SCHEMA_SUITE_REGRESSION_CONSECUTIVE || 3);
+const DEFAULT_REGRESSION_FACTOR = Number(process.env.SCHEMA_SUITE_REGRESSION_FACTOR || 1.5); // 50% slower than baseline
+const DEFAULT_CONSECUTIVE_LIMIT = Number(process.env.SCHEMA_SUITE_REGRESSION_CONSECUTIVE || 3);
+const MASTER_REGRESSION_FACTOR = Number(process.env.SCHEMA_SUITE_MASTER_REGRESSION_FACTOR || 1.35);
+const MASTER_CONSECUTIVE_LIMIT = Number(process.env.SCHEMA_SUITE_MASTER_REGRESSION_CONSECUTIVE || 2);
 const FAIL_ON_DETECTED = process.env.SCHEMA_SUITE_REGRESSION_FAIL_ON_DETECTED === '1';
 const MAX_HISTORY = Number(process.env.SCHEMA_SUITE_REGRESSION_MAX_HISTORY || 40);
 const BASELINE_WINDOW = Number(process.env.SCHEMA_SUITE_BASELINE_WINDOW || 10);
 const BASELINE_MIN_SAMPLES = Number(process.env.SCHEMA_SUITE_BASELINE_MIN_SAMPLES || 5);
+
+const branchName = process.env.GITHUB_REF_NAME || process.env.BRANCH_NAME || 'local';
+const isProtectedBranch = ['master', 'main'].includes(branchName);
+const policyMode = isProtectedBranch ? 'STRICT_PROTECTED' : 'STANDARD';
+const REGRESSION_FACTOR = isProtectedBranch ? MASTER_REGRESSION_FACTOR : DEFAULT_REGRESSION_FACTOR;
+const CONSECUTIVE_LIMIT = isProtectedBranch ? MASTER_CONSECUTIVE_LIMIT : DEFAULT_CONSECUTIVE_LIMIT;
 
 const nowIso = new Date().toISOString();
 
@@ -90,6 +98,8 @@ const status = baselineReady ? (regressionDetected ? 'WARN' : 'OK') : 'WARMUP';
 const summary = {
   evaluated_at: nowIso,
   timing_report_path: TIMING_REPORT_PATH,
+  branch_name: branchName,
+  policy_mode: policyMode,
   latest_sample: sample,
   baseline_source: 'rolling_median',
   baseline_window: BASELINE_WINDOW,
@@ -114,6 +124,8 @@ const md = [
   `- evaluated_at: ${summary.evaluated_at}`,
   `- latest_total_duration_ms: ${summary.latest_sample.total_duration_ms}`,
   `- latest_suite_status: ${summary.latest_sample.suite_status}`,
+  `- branch_name: ${summary.branch_name}`,
+  `- policy_mode: ${summary.policy_mode}`,
   `- baseline_source: ${summary.baseline_source}`,
   `- baseline_window: ${summary.baseline_window}`,
   `- baseline_min_samples: ${summary.baseline_min_samples}`,
