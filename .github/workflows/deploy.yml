@@ -42,8 +42,23 @@ jobs:
       - name: Run release verdict schema suite (positive + fail-closed negatives)
         run: npm run test:release-verdict-schema-suite
 
+      - name: Restore schema suite runtime history cache
+        uses: actions/cache/restore@v4
+        with:
+          path: ops/schema-suite-runtime-history.json
+          key: schema-suite-history-${{ github.ref_name }}-${{ github.run_id }}
+          restore-keys: |
+            schema-suite-history-${{ github.ref_name }}-
+
       - name: Evaluate schema suite runtime regression trend (consecutive-run warning)
         run: npm run test:release-verdict-schema-regression
+
+      - name: Save schema suite runtime history cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: ops/schema-suite-runtime-history.json
+          key: schema-suite-history-${{ github.ref_name }}-${{ github.run_id }}
 
       - name: Validate data (with gate)
         run: npm run validate:gate
@@ -59,8 +74,10 @@ jobs:
           if-no-files-found: error
           path: |
             reports/*.md
+            reports/*.json
             dist/index.html
             data/schema.json
+            ops/schema-suite-runtime-history.json
 
       - name: Create status summary
         run: |
