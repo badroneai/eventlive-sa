@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-02-28T16:27:18.946Z",
+  "count": 1,
+  "incidents": [
+    {
+      "id": "INC-001-core-relay-service-is-down-gatewaytelegram",
+      "title": "INC-001 — Core relay service is down (gateway/telegram).",
+      "opened_at": "2026-02-27T21:06:38.338Z",
+      "file": "04-Incidents/INC-001-core-relay-service-is-down-gatewaytelegram.md"
+    }
+  ]
+}

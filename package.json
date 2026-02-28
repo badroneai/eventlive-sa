@@ -29,6 +29,7 @@
     "env:matrix": "node scripts/environment-matrix-check.mjs",
     "ops:state": "node scripts/live-ops-state.mjs",
     "ops:alerts": "node scripts/alert-rules-eval.mjs",
-    "sprint2:tick": "node scripts/sprint2-tick.mjs"
+    "sprint2:tick": "node scripts/sprint2-tick.mjs",
+    "ops:incidents:index": "node scripts/build-incidents-index.mjs"
   }
 }
