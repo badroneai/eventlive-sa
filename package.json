@@ -22,6 +22,7 @@
     "test:release-verdict-schema-negative-nested-type-ci": "node scripts/release-verdict-schema-negative-nested-type-ci-check.mjs",
     "test:release-verdict-schema-suite": "node scripts/release-verdict-schema-suite.mjs",
     "test:release-verdict-schema-regression": "node scripts/schema-suite-regression-check.mjs",
+    "report:release-verdict-schema-regression": "node scripts/schema-suite-regression-summary.mjs",
     "reliability:rollup": "node scripts/reliability-rollup.mjs",
     "reliability:slo-gate": "node scripts/check-reliability-slo.mjs",
     "release:verdict": "node scripts/release-safety-verdict.mjs",

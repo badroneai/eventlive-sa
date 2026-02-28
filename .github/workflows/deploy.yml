@@ -53,6 +53,10 @@ jobs:
       - name: Evaluate schema suite runtime regression trend (consecutive-run warning)
         run: npm run test:release-verdict-schema-regression
 
+      - name: Publish schema runtime regression summary
+        id: schema_regression_summary
+        run: npm run report:release-verdict-schema-regression
+
       - name: Save schema suite runtime history cache
         if: always()
         uses: actions/cache/save@v4
