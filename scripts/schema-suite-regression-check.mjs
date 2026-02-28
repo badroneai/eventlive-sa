@@ -10,6 +10,8 @@ const REGRESSION_FACTOR = Number(process.env.SCHEMA_SUITE_REGRESSION_FACTOR || 1
 const CONSECUTIVE_LIMIT = Number(process.env.SCHEMA_SUITE_REGRESSION_CONSECUTIVE || 3);
 const FAIL_ON_DETECTED = process.env.SCHEMA_SUITE_REGRESSION_FAIL_ON_DETECTED === '1';
 const MAX_HISTORY = Number(process.env.SCHEMA_SUITE_REGRESSION_MAX_HISTORY || 40);
+const BASELINE_WINDOW = Number(process.env.SCHEMA_SUITE_BASELINE_WINDOW || 10);
+const BASELINE_MIN_SAMPLES = Number(process.env.SCHEMA_SUITE_BASELINE_MIN_SAMPLES || 5);
 
 const nowIso = new Date().toISOString();
 
@@ -18,13 +20,21 @@ const parseField = (content, key) => {
   return m ? m[1].trim() : null;
 };
 
+const median = (arr) => {
+  if (!arr.length) return null;
+  const sorted = [...arr].sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  if (sorted.length % 2 === 0) return Math.round((sorted[mid - 1] + sorted[mid]) / 2);
+  return sorted[mid];
+};
+
 if (!existsSync(TIMING_REPORT_PATH)) {
   console.error(`SCHEMA_SUITE_REGRESSION_FAIL missing timing report at ${TIMING_REPORT_PATH}`);
   process.exit(1);
 }
 
 const timingMd = await fs.readFile(TIMING_REPORT_PATH, 'utf8');
-const status = parseField(timingMd, 'status');
+const suiteStatus = parseField(timingMd, 'status');
 const totalDurationRaw = parseField(timingMd, 'total_duration_ms');
 const generatedAt = parseField(timingMd, 'generated_at') || nowIso;
 const totalDurationMs = Number(totalDurationRaw);
@@ -39,13 +49,13 @@ await fs.mkdir('reports', { recursive: true });
 
 const history = existsSync(HISTORY_PATH)
   ? JSON.parse(await fs.readFile(HISTORY_PATH, 'utf8'))
-  : { created_at: nowIso, samples: [], baseline_duration_ms: null };
+  : { created_at: nowIso, samples: [] };
 
 history.samples ??= [];
 
 const sample = {
   observed_at: generatedAt,
-  suite_status: status || 'UNKNOWN',
+  suite_status: suiteStatus || 'UNKNOWN',
   total_duration_ms: totalDurationMs
 };
 
@@ -54,12 +64,13 @@ if (history.samples.length > MAX_HISTORY) {
   history.samples = history.samples.slice(history.samples.length - MAX_HISTORY);
 }
 
-const passSamples = history.samples.filter((s) => s.suite_status === 'PASS');
-if (!Number.isFinite(history.baseline_duration_ms) && passSamples.length > 0) {
-  history.baseline_duration_ms = passSamples[0].total_duration_ms;
-}
+const passDurations = history.samples
+  .filter((s) => s.suite_status === 'PASS')
+  .map((s) => s.total_duration_ms);
 
-const baseline = Number(history.baseline_duration_ms);
+const windowDurations = passDurations.slice(-BASELINE_WINDOW);
+const baselineReady = windowDurations.length >= BASELINE_MIN_SAMPLES;
+const baseline = baselineReady ? median(windowDurations) : null;
 const thresholdMs = Number.isFinite(baseline) ? Math.ceil(baseline * REGRESSION_FACTOR) : null;
 
 let consecutiveRegression = 0;
@@ -74,17 +85,24 @@ const regressionDetected = Number.isFinite(thresholdMs)
   ? consecutiveRegression >= CONSECUTIVE_LIMIT
   : false;
 
+const status = baselineReady ? (regressionDetected ? 'WARN' : 'OK') : 'WARMUP';
+
 const summary = {
   evaluated_at: nowIso,
   timing_report_path: TIMING_REPORT_PATH,
   latest_sample: sample,
+  baseline_source: 'rolling_median',
+  baseline_window: BASELINE_WINDOW,
+  baseline_min_samples: BASELINE_MIN_SAMPLES,
+  baseline_ready: baselineReady,
+  baseline_sample_count: windowDurations.length,
   baseline_duration_ms: Number.isFinite(baseline) ? baseline : null,
   regression_factor: REGRESSION_FACTOR,
   threshold_duration_ms: thresholdMs,
   consecutive_regression_count: consecutiveRegression,
   consecutive_limit: CONSECUTIVE_LIMIT,
   regression_detected: regressionDetected,
-  status: regressionDetected ? 'WARN' : 'OK'
+  status
 };
 
 await fs.writeFile(HISTORY_PATH, JSON.stringify(history, null, 2), 'utf8');
@@ -96,6 +114,11 @@ const md = [
   `- evaluated_at: ${summary.evaluated_at}`,
   `- latest_total_duration_ms: ${summary.latest_sample.total_duration_ms}`,
   `- latest_suite_status: ${summary.latest_sample.suite_status}`,
+  `- baseline_source: ${summary.baseline_source}`,
+  `- baseline_window: ${summary.baseline_window}`,
+  `- baseline_min_samples: ${summary.baseline_min_samples}`,
+  `- baseline_ready: ${summary.baseline_ready}`,
+  `- baseline_sample_count: ${summary.baseline_sample_count}`,
   `- baseline_duration_ms: ${summary.baseline_duration_ms ?? 'n/a'}`,
   `- regression_factor: ${summary.regression_factor}`,
   `- threshold_duration_ms: ${summary.threshold_duration_ms ?? 'n/a'}`,
@@ -111,7 +134,7 @@ const md = [
 await fs.writeFile(STATUS_MD_PATH, `${md}\n`, 'utf8');
 
 console.log(
-  `SCHEMA_SUITE_REGRESSION_STATUS ${summary.status} baseline_ms=${summary.baseline_duration_ms ?? 'n/a'} threshold_ms=${summary.threshold_duration_ms ?? 'n/a'} consecutive=${summary.consecutive_regression_count}/${summary.consecutive_limit}`
+  `SCHEMA_SUITE_REGRESSION_STATUS ${summary.status} baseline_ms=${summary.baseline_duration_ms ?? 'n/a'} threshold_ms=${summary.threshold_duration_ms ?? 'n/a'} consecutive=${summary.consecutive_regression_count}/${summary.consecutive_limit} baseline_samples=${summary.baseline_sample_count}/${summary.baseline_min_samples}`
 );
 
 if (regressionDetected && FAIL_ON_DETECTED) {
