@@ -241,6 +241,29 @@ jobs:
           SLO_MIN_SAMPLES: 8
         run: npm run reliability:slo-gate
 
+      - name: Enforce protected-branch schema regression gate
+        id: schema_regression_gate
+        continue-on-error: true
+        env:
+          SCHEMA_REGRESSION_STATUS: ${{ steps.schema_regression_summary_verify.outputs.schema_regression_status || 'n/a' }}
+          SCHEMA_REGRESSION_POLICY_MODE: ${{ steps.schema_regression_summary_verify.outputs.schema_regression_policy_mode || 'n/a' }}
+          SCHEMA_REGRESSION_BRANCH_NAME: ${{ steps.schema_regression_summary_verify.outputs.schema_regression_branch_name || 'n/a' }}
+          SCHEMA_REGRESSION_OVERRIDE: ${{ vars.SCHEMA_REGRESSION_OVERRIDE || '0' }}
+        run: |
+          echo "policy=${SCHEMA_REGRESSION_POLICY_MODE} branch=${SCHEMA_REGRESSION_BRANCH_NAME} status=${SCHEMA_REGRESSION_STATUS} override=${SCHEMA_REGRESSION_OVERRIDE}"
+          if [ "${SCHEMA_REGRESSION_POLICY_MODE}" = "STRICT_PROTECTED" ] && [ "${SCHEMA_REGRESSION_STATUS}" = "WARN" ] && [ "${SCHEMA_REGRESSION_OVERRIDE}" != "1" ]; then
+            echo "decision=BLOCK" >> "$GITHUB_OUTPUT"
+            echo "SCHEMA_REGRESSION_GATE_BLOCK protected-branch regression warning without override"
+            exit 1
+          fi
+          if [ "${SCHEMA_REGRESSION_POLICY_MODE}" = "STRICT_PROTECTED" ] && [ "${SCHEMA_REGRESSION_STATUS}" = "WARN" ] && [ "${SCHEMA_REGRESSION_OVERRIDE}" = "1" ]; then
+            echo "decision=OVERRIDDEN" >> "$GITHUB_OUTPUT"
+            echo "SCHEMA_REGRESSION_GATE_OVERRIDE active"
+            exit 0
+          fi
+          echo "decision=PASS" >> "$GITHUB_OUTPUT"
+          echo "SCHEMA_REGRESSION_GATE_PASS"
+
       - name: Upload release verification evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -285,6 +308,8 @@ jobs:
           echo "- Schema regression policy: ${{ steps.schema_regression_summary_verify.outputs.schema_regression_policy_mode || 'n/a' }} (branch: ${{ steps.schema_regression_summary_verify.outputs.schema_regression_branch_name || 'n/a' }})" >> $GITHUB_STEP_SUMMARY
           echo "- Schema regression samples: ${{ steps.schema_regression_summary_verify.outputs.schema_regression_samples_progress || 'n/a' }}" >> $GITHUB_STEP_SUMMARY
           echo "- Schema regression consecutive: ${{ steps.schema_regression_summary_verify.outputs.schema_regression_consecutive || 'n/a' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Schema regression gate decision: ${{ steps.schema_regression_gate.outputs.decision || 'n/a' }} (outcome: ${{ steps.schema_regression_gate.outcome || 'n/a' }})" >> $GITHUB_STEP_SUMMARY
+          echo "- Schema regression override flag: ${{ vars.SCHEMA_REGRESSION_OVERRIDE || '0' }}" >> $GITHUB_STEP_SUMMARY
           echo "- SLO policy gate outcome: ${{ steps.slo_gate.outputs.policy_state || steps.slo_gate.outcome }}" >> $GITHUB_STEP_SUMMARY
           echo "- SLO enforcement mode: ${{ steps.slo_gate.outputs.enforcement_state || 'n/a' }}" >> $GITHUB_STEP_SUMMARY
           echo "- SLO policy hint: ${{ steps.slo_gate.outputs.enforcement_state == 'ACTIVE' && 'blocking gate active' || 'warm-up mode (non-blocking until sample minimum)' }}" >> $GITHUB_STEP_SUMMARY
@@ -292,7 +317,7 @@ jobs:
           echo "- Evidence artifact: release-verification-${{ github.run_id }} (14 days)" >> $GITHUB_STEP_SUMMARY
 
       - name: Fail if release verification checks failed
-        if: ${{ steps.uptime.outcome != 'success' || steps.stability.outcome != 'success' || steps.slo_gate.outcome != 'success' }}
+        if: ${{ steps.uptime.outcome != 'success' || steps.stability.outcome != 'success' || steps.slo_gate.outcome != 'success' || steps.schema_regression_gate.outcome != 'success' }}
         run: |
-          echo "Release verification failed (uptime=${{ steps.uptime.outcome }}, stability=${{ steps.stability.outcome }}, slo_gate=${{ steps.slo_gate.outcome }})"
+          echo "Release verification failed (uptime=${{ steps.uptime.outcome }}, stability=${{ steps.stability.outcome }}, slo_gate=${{ steps.slo_gate.outcome }}, schema_regression_gate=${{ steps.schema_regression_gate.outcome }})"
           exit 1
