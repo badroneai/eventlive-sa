@@ -33,6 +33,7 @@
 - [ ] لا يُستخدم override إلا في حالة طارئة موثقة (production blocker) على `master`/protected branch.
 - [ ] المصرّح لهم: Release Manager أو Incident Commander فقط.
 - [ ] يجب توثيق السبب قبل التفعيل في تذكرة/incident وربطها في وصف التشغيل.
+- [ ] عند التفعيل يجب ضبط متغير CI: `SCHEMA_REGRESSION_OVERRIDE_INCIDENT=INC-###` (صيغة إلزامية).
 - [ ] عند التفعيل، أنشئ/حدّث ملف incident داخل `04-Incidents/` مع:
   - سبب التجاوز
   - نطاق المخاطرة
