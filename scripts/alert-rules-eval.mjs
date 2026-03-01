@@ -28,9 +28,12 @@ if (ageMin >= STALE_CRIT_MIN) {
   reasons.push(`State is stale (${ageMin}m >= ${STALE_CRIT_MIN}m).`);
 }
 
-if (level !== 'CRIT' && state.service_status?.n8n !== 'up') {
+const requireN8n = state.policy?.require_n8n === true;
+const requireTrustedProxies = state.policy?.require_trusted_proxies === true;
+
+if (level !== 'CRIT' && requireN8n && state.service_status?.n8n !== 'up') {
   level = 'WARN';
-  reasons.push('n8n is not active (scheduler fallback required).');
+  reasons.push('n8n is required by policy but not active.');
 }
 
 if (level !== 'CRIT' && Array.isArray(state.blockers) && state.blockers.length > 0) {
@@ -38,9 +41,9 @@ if (level !== 'CRIT' && Array.isArray(state.blockers) && state.blockers.length >
   reasons.push(`Blockers detected: ${state.blockers.join('; ')}`);
 }
 
-if (level !== 'CRIT' && state.trusted_proxies_enabled !== true) {
+if (level !== 'CRIT' && requireTrustedProxies && state.trusted_proxies_enabled !== true) {
   level = 'WARN';
-  reasons.push('trusted_proxies_enabled=false');
+  reasons.push('trusted_proxies_enabled=false while required by policy');
 }
 
 if (reasons.length === 0) reasons.push('All operational checks are healthy.');

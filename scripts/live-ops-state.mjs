@@ -49,11 +49,14 @@ const n8nStatus = (process.env.N8N_STATUS || detectN8n()).toLowerCase();
 const trustedProxiesEnabled = ['1', 'true', 'yes', 'on'].includes(
   (process.env.TRUSTED_PROXIES_ENABLED || 'false').toLowerCase()
 );
+const requireN8n = ['1', 'true', 'yes', 'on'].includes(
+  (process.env.REQUIRE_N8N || 'false').toLowerCase()
+);
 
 const blockers = [];
 if (gatewayStatus === 'down') blockers.push('Gateway is down');
 if (telegramStatus === 'down') blockers.push('Telegram relay is down');
-if (n8nStatus === 'down') blockers.push('n8n is not running');
+if (requireN8n && n8nStatus === 'down') blockers.push('n8n is not running');
 
 const lastOkAt = blockers.length === 0 ? now.toISOString() : previous?.last_ok_at || null;
 const lastFailAt = blockers.length > 0 ? now.toISOString() : previous?.last_fail_at || null;
@@ -71,7 +74,11 @@ const state = {
   last_report_commit: getCommit(),
   alerts_active_count: 0,
   blockers,
-  trusted_proxies_enabled: trustedProxiesEnabled
+  trusted_proxies_enabled: trustedProxiesEnabled,
+  policy: {
+    require_n8n: requireN8n,
+    require_trusted_proxies: ['1', 'true', 'yes', 'on'].includes((process.env.REQUIRE_TRUSTED_PROXIES || 'false').toLowerCase())
+  }
 };
 
 await fs.mkdir('ops', { recursive: true });
