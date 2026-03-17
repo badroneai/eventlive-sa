@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EventLive - Arabic/Saudi event-program publishing pipeline للمؤتمرات والملتقيات وورش العمل" />
+  <meta name="keywords" content="برامج المؤتمرات, جداول الجلسات, ملتقيات, ورش عمل, EventLive" />
+  <title>EventLive - منصة نشر برامج المؤتمرات والملتقيات</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --primary-color: #1a472a;
+      --secondary-color: #2d5f3f;
+      --accent-color: #667eea;
+      --text-color: #2c3e50;
+      --light-bg: #f8f9fa;
+      --white: #ffffff;
+    }
+    body {
+      font-family: 'Cairo', system-ui, -apple-system, "Segoe UI", Tahoma, Arial, sans-serif;
+      line-height: 1.7;
+      color: var(--text-color);
+      overflow-x: hidden;
+    }
+
+    /* Animated Background */
+    .animated-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      z-index: -1;
+    }
+    .animated-bg::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.06" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,106.7C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+      animation: wave 10s linear infinite;
+    }
+    @keyframes wave { 0% { background-position: 0 0; } 100% { background-position: 1440px 0; } }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 20px;
+      position: relative;
+    }
+    .hero-content {
+      background: rgba(255, 255, 255, 0.98);
+      padding: 56px 46px;
+      border-radius: 28px;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+      max-width: 900px;
+      animation: fadeInUp 0.8s ease;
+    }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+    .logo {
+      font-size: 3.4em;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 16px;
+      letter-spacing: -1px;
+    }
+    .logo-icon { display: inline-block; font-size: 1.1em; margin-left: 12px; animation: bounce 2s infinite; }
+    @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+
+    .hero-tagline { font-size: 1.8em; font-weight: 800; color: var(--primary-color); margin-bottom: 10px; }
+    .hero-subtitle { font-size: 1.15em; color: #555; margin-bottom: 6px; }
+
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      color: white;
+      padding: 10px 22px;
+      border-radius: 999px;
+      font-size: 1.02em;
+      font-weight: 700;
+      margin: 18px 0 6px;
+      box-shadow: 0 6px 20px rgba(26, 71, 42, 0.25);
+    }
+
+    .hero-description {
+      font-size: 1.08em;
+      line-height: 1.9;
+      color: #444;
+      margin: 18px auto 0;
+      max-width: 720px;
+    }
+
+    /* Notice */
+    .notice {
+      margin: 18px auto 0;
+      text-align: right;
+      max-width: 760px;
+      background: #f6f7ff;
+      border: 1px solid rgba(102,126,234,.25);
+      border-radius: 16px;
+      padding: 14px 16px;
+      color: #2f3560;
+      font-size: 0.98em;
+    }
+    .notice b { color: #1f2460; }
+
+    /* CTA */
+    .cta-buttons { display: flex; gap: 14px; justify-content: center; margin-top: 26px; flex-wrap: wrap; }
+    .btn {
+      padding: 16px 38px;
+      font-size: 1.05em;
+      font-weight: 800;
+      border: none;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.14);
+    }
+    .btn-primary { background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); color: white; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(26, 71, 42, 0.28); }
+    .btn-secondary { background: white; color: var(--primary-color); border: 2px solid var(--primary-color); }
+    .btn-secondary:hover { background: var(--primary-color); color: white; transform: translateY(-2px); }
+
+    /* Sections */
+    .section { padding: 72px 0; background: white; }
+    .section:nth-child(even) { background: var(--light-bg); }
+    .section-header { text-align: center; margin-bottom: 44px; }
+    .section-title { font-size: 2.2em; font-weight: 900; color: var(--primary-color); margin-bottom: 12px; }
+    .section-subtitle { font-size: 1.1em; color: #666; max-width: 760px; margin: 0 auto; line-height: 1.9; }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+      margin-top: 42px;
+    }
+    .feature-card {
+      background: white;
+      padding: 34px 26px;
+      border-radius: 20px;
+      text-align: center;
+      transition: all 0.25s ease;
+      border: 2px solid transparent;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+    .feature-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(45, 95, 63, 0.55);
+      box-shadow: 0 15px 40px rgba(45, 95, 63, 0.18);
+    }
+    .feature-icon { font-size: 3.3em; margin-bottom: 16px; display: block; }
+    .feature-title { font-size: 1.25em; font-weight: 800; color: var(--primary-color); margin-bottom: 10px; }
+    .feature-desc { font-size: 1em; color: #666; line-height: 1.8; }
+
+    /* Audience */
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      margin-top: 42px;
+    }
+    .audience-card {
+      background: linear-gradient(135deg, var(--accent-color) 0%, #764ba2 100%);
+      color: white;
+      padding: 24px;
+      border-radius: 16px;
+      text-align: center;
+      transition: all 0.25s ease;
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.25);
+    }
+    .audience-card:hover { transform: scale(1.03); box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4); }
+    .audience-icon { font-size: 2.7em; margin-bottom: 10px; }
+    .audience-title { font-size: 1.1em; font-weight: 800; }
+
+    /* Contact */
+    .contact-section {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 88px 0;
+      text-align: center;
+    }
+    .contact-title { font-size: 2.4em; font-weight: 900; margin-bottom: 14px; }
+    .contact-desc {
+      font-size: 1.15em;
+      margin: 0 auto 28px;
+      opacity: 0.95;
+      max-width: 720px;
+      line-height: 1.9;
+    }
+
+    .contact-card {
+      max-width: 780px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.98);
+      color: #233;
+      padding: 28px;
+      border-radius: 18px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+      text-align: right;
+    }
+    .contact-card h3 { color: var(--primary-color); font-size: 1.3em; margin-bottom: 10px; }
+    .contact-card p { color: #455; }
+
+    .contact-actions { display:flex; gap:12px; flex-wrap:wrap; margin-top: 16px; }
+    .chip {
+      display:inline-flex; align-items:center; gap:10px;
+      padding: 12px 14px;
+      background: #f3f4ff;
+      border: 1px solid rgba(102,126,234,.25);
+      border-radius: 999px;
+      color: #232a55;
+      text-decoration:none;
+      font-weight: 800;
+    }
+
+    /* Footer */
+    .footer { background: #1d2a33; color: white; padding: 44px 0 24px; }
+    .footer-bottom { text-align: center; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, 0.14); opacity: 0.85; }
+
+    /* Scroll to Top */
+    .scroll-top {
+      position: fixed;
+      bottom: 26px;
+      left: 26px;
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      color: white;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4em;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.25s ease;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+    .scroll-top.visible { opacity: 1; visibility: visible; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .logo { font-size: 2.6em; }
+      .hero-tagline { font-size: 1.45em; }
+      .section-title { font-size: 1.9em; }
+      .cta-buttons { flex-direction: column; }
+      .btn { width: 100%; }
+      .hero-content { padding: 40px 28px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="animated-bg"></div>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="logo"><span class="logo-icon">📅</span> EventLive</div>
+      <h1 class="hero-tagline">منصة نشر برامج المؤتمرات والملتقيات</h1>
+      <p class="hero-subtitle">حوّل جدول الجلسات إلى صفحة ويب تفاعلية واضحة وسهلة المشاركة لزوار الحدث</p>
+
+      <div class="badge">خدمة مقدمة من مؤسسة سميرة محمد السلمان للاتصالات وتقنية المعلومات</div>
+
+      <p class="hero-description">
+        EventLive هو Arabic/Saudi event-program publishing pipeline يساعد الجهات المنظمة للمؤتمرات
+        والملتقيات وورش العمل على تحويل برامج الجلسات إلى صفحات ويب تفاعلية تعمل على الجوال
+        وتوضح للزائر ما يحدث الآن وما الجلسة التالية وأين تُعقد.
+      </p>
+
+      <div class="cta-buttons">
+        <a href="#features" class="btn btn-primary">استعرض المزايا</a>
+        <a href="#contact" class="btn btn-secondary">تواصل معنا</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">ما الذي نقدمه؟</h2>
+        <p class="section-subtitle">
+          نركز على نشر برنامج الحدث بوضوح وسرعة، مع تجربة مناسبة لزوار المؤتمر أثناء اليوم الفعلي.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <span class="feature-icon">🔄</span>
+          <h3 class="feature-title">تحويل الجداول إلى صفحة تفاعلية</h3>
+          <p class="feature-desc">نحوّل برنامج المؤتمر أو الملتقى من صيغة تشغيل داخلية إلى صفحة ويب سهلة القراءة على الجوال.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">⏱️</span>
+          <h3 class="feature-title">الآن / التالي / انتهى</h3>
+          <p class="feature-desc">تمييز تلقائي للجلسة الحالية والقادمة والمنتهية حسب الوقت المحلي.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">📱</span>
+          <h3 class="feature-title">تصميم متجاوب للجوال</h3>
+          <p class="feature-desc">واجهة محسّنة للاستخدام السريع أثناء الفعالية.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🎨</span>
+          <h3 class="feature-title">تخصيص الهوية</h3>
+          <p class="feature-desc">إضافة هوية الجهة المنظمة على صفحة البرنامج عند الحاجة.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔗</span>
+          <h3 class="feature-title">رابط واحد للمشاركة</h3>
+          <p class="feature-desc">رابط واحد واضح لمشاركة برنامج الجلسات عبر QR أو البريد أو وسائل التواصل.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🗂️</span>
+          <h3 class="feature-title">أرشفة الفعاليات</h3>
+          <p class="feature-desc">إمكانية حفظ الإصدارات اللاحقة من البرنامج وأرشفة الصفحات عند الحاجة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="audience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">من نخدم؟</h2>
+        <p class="section-subtitle">موجه للجهات المنظمة للمؤتمرات والملتقيات وورش العمل في المملكة العربية السعودية.</p>
+      </div>
+
+      <div class="audience-grid">
+        <div class="audience-card"><div class="audience-icon">🏛️</div><div class="audience-title">الجهات الحكومية</div></div>
+        <div class="audience-card"><div class="audience-icon">🎓</div><div class="audience-title">الجامعات والتعليم</div></div>
+        <div class="audience-card"><div class="audience-icon">🎤</div><div class="audience-title">منظمو المؤتمرات</div></div>
+        <div class="audience-card"><div class="audience-icon">🏢</div><div class="audience-title">القطاع الخاص</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="contact-title">تواصل معنا</h2>
+      <p class="contact-desc">للاستفسارات أو طلب نموذج تجريبي لبرنامج مؤتمر أو ملتقى، تواصل عبر البريد الإلكتروني.</p>
+
+      <div class="contact-card">
+        <h3>بيانات التواصل</h3>
+        <p>
+          البريد الإلكتروني: <b>info@eventlive.sa</b> (سيتم تفعيله عند اكتمال النطاق)
+        </p>
+        <div class="contact-actions">
+          <a class="chip" href="mailto:info@eventlive.sa?subject=EventLive%20Inquiry">✉️ مراسلة البريد</a>
+          <a class="chip" href="#features">📌 العودة للمزايا</a>
+        </div>
+        <p style="margin-top:14px; font-size:0.98em; color:#566">
+          ملاحظة: هذه صفحة تعريفية للمنتج ولا تتضمن بوابة رفع أو حسابات استخدام في الوقت الحالي.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 EventLive — صفحة تعريفية لنشر برامج المؤتمرات</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="scroll-top" id="scrollTop" title="أعلى الصفحة">↑</div>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const href = a.getAttribute('href');
+        if (!href || href === '#') return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Scroll to top
+    const scrollTop = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) scrollTop.classList.add('visible');
+      else scrollTop.classList.remove('visible');
+    });
+    scrollTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // Reveal on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -90px 0px' });
+
+    document.querySelectorAll('.feature-card, .audience-card').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      el.style.transition = 'all 0.6s ease';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

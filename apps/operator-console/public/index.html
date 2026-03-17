@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EventLive Operator Console</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <div class="brand">
+          <div class="brand-mark">EL</div>
+          <div>
+            <div class="eyebrow" data-i18n="brandEyebrow">Internal Operator Console</div>
+            <h1>EventLive</h1>
+          </div>
+        </div>
+        <div class="language-switcher" role="group" aria-label="Language switcher">
+          <button id="languageEnButton" class="secondary language-button is-active" type="button">EN</button>
+          <button id="languageArButton" class="secondary language-button" type="button">ع</button>
+        </div>
+      </div>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2 data-i18n="programsHome">Programs Home</h2>
+          <button id="refreshWorkspacesButton" class="secondary" data-i18n="refresh">Refresh</button>
+        </div>
+        <div id="workspaceList" class="workspace-list empty-state" data-i18n="noWorkspaces">No workspaces yet.</div>
+      </section>
+
+      <section class="panel">
+        <h2 data-i18n="createWorkspace">Create Workspace</h2>
+        <form id="createWorkspaceForm" class="stack">
+          <label>
+            <span data-i18n="programTitle">Program Title</span>
+            <input id="programTitleInput" name="programTitle" required />
+          </label>
+          <label>
+            <span data-i18n="organizerName">Organizer Name</span>
+            <input id="organizerNameInput" name="organizerName" required />
+          </label>
+          <label>
+            <span data-i18n="optionalWorkspaceId">Optional Workspace ID</span>
+            <input id="workspaceIdInput" name="workspaceId" />
+          </label>
+          <button type="submit" data-i18n="createWorkspace">Create Workspace</button>
+        </form>
+      </section>
+    </aside>
+
+    <main class="main">
+      <section id="workspaceEmptyState" class="hero">
+        <div class="eyebrow" data-i18n="milestoneOne">Milestone 1</div>
+        <h2 data-i18n="programWorkspace">Program Workspace</h2>
+        <p data-i18n="workspaceEmptyState">Select a workspace from the left or create a new one to start editing the working draft.</p>
+      </section>
+
+      <section id="workspaceView" class="workspace-view hidden">
+        <div class="workspace-header">
+          <div>
+            <div class="eyebrow" data-i18n="programWorkspace">Program Workspace</div>
+            <h2 id="workspaceTitle">Workspace</h2>
+            <p id="workspaceMeta" class="muted"></p>
+          </div>
+          <div class="actions">
+            <button id="reloadWorkspaceButton" class="secondary" data-i18n="reload">Reload</button>
+            <button id="validateDraftButton" class="secondary" data-i18n="validate">Validate</button>
+            <button id="previewDraftButton" class="secondary" data-i18n="preview">Preview</button>
+            <button id="saveDraftButton" data-i18n="saveDraft">Save Draft</button>
+          </div>
+        </div>
+
+        <div class="summary-grid">
+          <div class="summary-card">
+            <div class="summary-label" data-i18n="status">Status</div>
+            <div id="workspaceStatusValue" class="summary-value">-</div>
+          </div>
+          <div class="summary-card">
+            <div class="summary-label" data-i18n="validation">Validation</div>
+            <div id="workspaceValidationValue" class="summary-value">-</div>
+          </div>
+          <div class="summary-card">
+            <div class="summary-label" data-i18n="previewReady">Preview Ready</div>
+            <div id="workspacePreviewValue" class="summary-value">-</div>
+          </div>
+          <div class="summary-card">
+            <div class="summary-label" data-i18n="sessions">Sessions</div>
+            <div id="workspaceSessionsValue" class="summary-value">0</div>
+          </div>
+        </div>
+
+        <section class="panel workflow-panel">
+          <div class="panel-head">
+            <div>
+              <h3 data-i18n="workflowTracker">Workflow Tracker</h3>
+              <p id="workflowSummary" class="muted" data-i18n="workflowSummaryEmpty">Workflow guidance will appear after the workspace loads.</p>
+            </div>
+            <button id="nextActionButton" class="secondary" type="button" data-i18n="nextAction">Next Action</button>
+          </div>
+          <div id="workflowRail" class="workflow-rail"></div>
+          <div id="workflowNextAction" class="workflow-next-action small-text"></div>
+        </section>
+
+        <nav class="workspace-tabs" aria-label="Workspace sections">
+          <button id="tabIntakeButton" class="workspace-tab" data-workspace-tab-button="intake" type="button" data-i18n="tabIntake">Intake</button>
+          <button id="tabEditorButton" class="workspace-tab is-active" data-workspace-tab-button="editor" type="button" data-i18n="tabEditor">Editor</button>
+          <button id="tabValidationButton" class="workspace-tab" data-workspace-tab-button="validation" type="button" data-i18n="tabValidation">Validation</button>
+          <button id="tabPreviewButton" class="workspace-tab" data-workspace-tab-button="preview" type="button" data-i18n="tabPreview">Preview</button>
+          <button id="tabDiffButton" class="workspace-tab" data-workspace-tab-button="diff" type="button" data-i18n="tabDiff">Diff</button>
+          <button id="tabReleaseButton" class="workspace-tab" data-workspace-tab-button="release" type="button" data-i18n="tabRelease">Release</button>
+          <button id="tabHistoryButton" class="workspace-tab" data-workspace-tab-button="history" type="button" data-i18n="tabHistory">History</button>
+          <button id="tabHandoffButton" class="workspace-tab" data-workspace-tab-button="handoff" type="button" data-i18n="tabHandoff">Handoff</button>
+        </nav>
+
+        <section class="panel workspace-section" data-workspace-tab="intake">
+          <div class="panel-head">
+            <div>
+              <h3 data-i18n="intakeNormalize">Intake & Normalize</h3>
+              <p class="muted" data-i18n="intakeNormalizeHelp">Paste intake CSV, load a reference preset, then normalize it directly into the active workspace draft.</p>
+            </div>
+            <div class="actions">
+              <button id="loadTemplatePresetButton" class="secondary" type="button" data-i18n="loadTemplate">Load template</button>
+              <button id="loadBaselinePresetButton" class="secondary" type="button" data-i18n="loadBaseline">Load baseline</button>
+              <button id="loadUpdatedPresetButton" class="secondary" type="button" data-i18n="loadUpdated">Load updated</button>
+            </div>
+          </div>
+          <div class="stack">
+            <label class="file-picker">
+              <span data-i18n="uploadCsvFile">Attach Organizer File</span>
+              <input id="intakeFileInput" type="file" accept=".csv,.xlsx,.xls,.pdf,.png,.jpg,.jpeg,.webp,.heic,text/csv,application/pdf,image/*" />
+            </label>
+            <label>
+              <span data-i18n="intakeSourceLabel">Intake Source Label</span>
+              <input id="intakeSourceLabelInput" placeholder="client_sheet_v1" />
+            </label>
+            <label>
+              <span data-i18n="intakeCsvContent">CSV Intake Content</span>
+              <textarea id="intakeCsvTextarea" rows="12" placeholder="program_title,organizer_name,..."></textarea>
+            </label>
+            <div class="actions">
+              <button id="analyzeIntakeButton" class="secondary" type="button" data-i18n="analyzeIntake">Analyze Intake</button>
+              <button id="normalizeWorkspaceButton" type="button" data-i18n="normalizeIntoDraft">Normalize Into Draft</button>
+            </div>
+            <div id="intakePanel" class="stack small-text">
+              <div class="empty-state" data-i18n="intakeNotLoaded">Load a template or paste intake CSV to normalize it into this workspace.</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel workspace-section" data-workspace-tab="editor">
+          <div class="panel-head">
+            <div>
+              <h3 data-i18n="metadataEditor">Metadata Editor</h3>
+              <p class="muted" data-i18n="metadataEditorHelp">Edit the program-level fields for the active workspace draft.</p>
+            </div>
+            <span id="dirtyStateBadge" class="badge badge-muted" data-i18n="clean">Clean</span>
+          </div>
+          <form id="workspaceDraftForm" class="grid-form">
+            <label>
+              <span data-i18n="programTitle">Program Title</span>
+              <input id="draftProgramTitle" name="program_title" />
+            </label>
+            <label>
+              <span data-i18n="organizerName">Organizer Name</span>
+              <input id="draftOrganizerName" name="organizer_name" />
+            </label>
+            <label>
+              <span data-i18n="organizerDisplayName">Organizer Display Name</span>
+              <input id="draftOrganizerDisplayName" name="organizer_display_name" />
+            </label>
+            <label>
+              <span data-i18n="logoText">Logo Text</span>
+              <input id="draftLogoText" name="logo_text" />
+            </label>
+            <label>
+              <span data-i18n="primaryLabel">Primary Label</span>
+              <input id="draftPrimaryLabel" name="primary_label" />
+            </label>
+            <label>
+              <span data-i18n="supportContact">Support Contact</span>
+              <input id="draftSupportContact" name="support_contact" />
+            </label>
+            <label>
+              <span data-i18n="city">City</span>
+              <input id="draftCity" name="city" />
+            </label>
+            <label>
+              <span data-i18n="venue">Venue</span>
+              <input id="draftVenue" name="venue" />
+            </label>
+            <label>
+              <span data-i18n="eventStart">Event Start</span>
+              <input id="draftEventStart" name="event_start" placeholder="2026-05-11T08:30:00+03:00" />
+            </label>
+            <label>
+              <span data-i18n="eventEnd">Event End</span>
+              <input id="draftEventEnd" name="event_end" placeholder="2026-05-11T16:00:00+03:00" />
+            </label>
+            <label>
+              <span data-i18n="updatedAt">Updated At</span>
+              <input id="draftUpdatedAt" name="updated_at" placeholder="2026-03-09T20:00:00+03:00" />
+            </label>
+            <label class="field-span-full">
+              <span data-i18n="footerNote">Footer Note</span>
+              <textarea id="draftFooterNote" name="footer_note" rows="3"></textarea>
+            </label>
+          </form>
+        </section>
+
+        <section class="panel workspace-section" data-workspace-tab="editor">
+          <div class="panel-head">
+            <div>
+              <h3 data-i18n="sessionsEditor">Sessions Editor</h3>
+              <p class="muted" data-i18n="sessionsEditorHelp">Manage working draft sessions without editing JSON manually.</p>
+            </div>
+            <button id="addSessionButton" class="secondary" type="button" data-i18n="addSession">Add Session</button>
+          </div>
+          <div id="sessionsEmptyState" class="empty-state hidden" data-i18n="noSessions">No sessions yet. Add the first session to make the draft valid.</div>
+          <div id="sessionsEditor" class="stack"></div>
+        </section>
+
+        <section class="panel workspace-section" data-workspace-tab="validation">
+          <div class="panel-head">
+            <div>
+              <h3 data-i18n="validationIssues">Validation Issues</h3>
+              <p class="muted" data-i18n="validationHelp">Run the existing validator on the active workspace draft.</p>
+            </div>
+            <span id="validationBadge" class="badge badge-muted" data-i18n="notRun">Not run</span>
+          </div>
+          <div id="validationPanel" class="stack small-text">
+            <div class="empty-state" data-i18n="validationNotRun">Validation has not been run for this workspace yet.</div>
+          </div>
+        </section>
+
+        <section class="panel workspace-section" data-workspace-tab="preview">
+          <div class="panel-head">
+            <div>
+              <h3 data-i18n="previewOutput">Preview Output</h3>
+              <p class="muted" data-i18n="previewHelp">Generate the current public preview pages from the working draft.</p>
+            </div>
+            <span id="previewBadge" class="badge badge-muted" data-i18n="notReady">Not ready</span>
+          </div>
+          <div id="previewPanel" class="stack small-text">
+            <div class="empty-state" data-i18n="previewNotRun">Preview has not been generated for this workspace yet.</div>
+          </div>
+        </section>
+
+        <section class="panel workspace-section" data-workspace-tab="diff">
+          <div class="panel-head">
+            <div>
+              <h3 data-i18n="diffAndApproval">Diff & Approval</h3>
+              <p class="muted" data-i18n="diffApprovalHelp">Compare the current draft against the approved baseline, then mark it ready for release operations.</p>
+            </div>
+            <div class="actions">
+              <button id="diffDraftButton" class="secondary" data-i18n="runDiff">Run Diff</button>
+              <button id="approveDraftButton" class="secondary" data-i18n="approveDraft">Approve Draft</button>
+            </div>
+          </div>
+          <label>
+            <span data-i18n="approvalNote">Approval Note</span>
+            <textarea id="approvalNoteInput" rows="3"></textarea>
+          </label>
+          <div id="diffPanel" class="stack small-text">
+            <div class="empty-state" data-i18n="diffNotRun">Diff has not been run for this workspace yet.</div>
+          </div>
+        </section>
+
+        <section class="panel workspace-section" data-workspace-tab="release">
+          <div class="panel-head">
+            <div>
+              <h3 data-i18n="guidedPublishFlow">Guided Publish Flow</h3>
+              <p class="muted" data-i18n="publishFlowHelp">Move from approved candidate to live release through a short guided flow.</p>
+            </div>
+            <div class="actions">
+              <button id="publishWorkspaceButton" class="secondary" data-i18n="publish">Publish</button>
+              <button id="archiveWorkspaceButton" class="secondary" data-i18n="archive">Archive</button>
+            </div>
+          </div>
+          <label>
+            <span data-i18n="releaseNote">Release Note</span>
+            <textarea id="releaseNoteInput" rows="3"></textarea>
+          </label>
+          <div class="muted small-text" data-i18n="releaseNoteHint">Summarize what changed in this release for the team and organizer.</div>
+          <div id="releasePanel" class="stack small-text">
+            <div class="empty-state" data-i18n="releaseNotPublished">No published release is linked to this workspace yet.</div>
+          </div>
+        </section>
+
+        <section class="panel workspace-section" data-workspace-tab="history">
+          <div class="panel-head">
+            <div>
+              <h3 data-i18n="releaseHistory">Release History</h3>
+              <p class="muted" data-i18n="releaseHistoryHelp">Review the current linked release and archived versions associated with this workspace.</p>
+            </div>
+            <button id="refreshHistoryButton" class="secondary" data-i18n="refreshHistory">Refresh History</button>
+          </div>
+          <div id="historyPanel" class="stack small-text">
+            <div class="empty-state" data-i18n="historyNotLoaded">Release history has not been loaded for this workspace yet.</div>
+          </div>
+        </section>
+
+        <section class="panel workspace-section" data-workspace-tab="handoff">
+          <div class="panel-head">
+            <div>
+              <h3 data-i18n="handoffView">Handoff View</h3>
+              <p class="muted" data-i18n="handoffHelp">Open the latest delivery package, manifest, handoff notes, and archive browser from one place.</p>
+            </div>
+            <div class="actions">
+              <button id="goToHandoffHistoryButton" class="secondary" type="button" data-i18n="goToHistory">Go to history</button>
+            </div>
+          </div>
+          <div id="handoffPanel" class="stack small-text">
+            <div class="empty-state" data-i18n="handoffNotReady">Handoff artifacts will appear after the first successful publish.</div>
+          </div>
+        </section>
+
+        <section class="panel workspace-section" data-workspace-tab="handoff">
+          <h3 data-i18n="storedPaths">Stored Paths</h3>
+          <div id="workspacePaths" class="stack small-text"></div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "release_id": "release-20260310T063000Z",
+  "generated_at": "2026-03-09T20:23:32.507Z",
+  "program_title": "الملتقى السعودي لتجربة المستفيد 2026",
+  "organizer_display_name": "جمعية التحول المؤسسي",
+  "primary_label": "البرنامج الرسمي",
+  "support_contact": null,
+  "footer_note": null,
+  "share_title": "الملتقى السعودي لتجربة المستفيد 2026 | جمعية التحول المؤسسي",
+  "share_description": "برنامج جلسات تفاعلي مخصص للزوار. الموقع: فندق كراون بلازا المدينة الرقمية - Riyadh.",
+  "share_url": "https://example.test/eventlive-sa/share.html",
+  "qr_handoff_placeholder": "QR placeholder for release-20260310T063000Z: generate a QR that points to https://example.test/eventlive-sa/share.html.",
+  "public_base_url": "https://example.test/eventlive-sa/",
+  "latest_program_html_file": "dist/index.html",
+  "latest_print_html_file": "dist/print.html",
+  "latest_share_html_file": "dist/share.html",
+  "release_program_html_file": "reports/releases/release-20260310T063000Z.program.html",
+  "release_print_html_file": "reports/releases/release-20260310T063000Z.print.html",
+  "release_share_html_file": "reports/releases/release-20260310T063000Z.share.html",
+  "print_share_notes": [
+    "شارك الرابط النهائي أو رمز QR بعد اعتماد النشر فقط.",
+    "استخدم هذه النسخة في الطباعة السريعة أو لوحات الاستقبال بعد التأكد من latest approved release.",
+    "عند أي تحديث يوم الحدث، أعد توليد الـ share kit من الإصدار الجديد فقط."
+  ],
+  "release_summary": "Approved publishable release created from concierge workflow."
+}

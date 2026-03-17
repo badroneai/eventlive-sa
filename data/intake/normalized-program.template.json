@@ -1,0 +1,36 @@
+{
+  "program": {
+    "program_title": "اسم البرنامج",
+    "organizer_name": "اسم الجهة المنظمة",
+    "logo_text": "EL",
+    "organizer_display_name": "اسم الجهة المعروض",
+    "primary_label": "البرنامج الرسمي",
+    "support_contact": "info@example.com",
+    "footer_note": "ملاحظة تنظيمية أو معلومات مشاركة",
+    "venue": "اسم الموقع",
+    "city": "Riyadh",
+    "event_start": "2026-04-14T09:00:00+03:00",
+    "event_end": "2026-04-14T17:00:00+03:00",
+    "updated_at": "2026-03-09T10:00:00+03:00"
+  },
+  "sessions": [
+    {
+      "id": "SESS-2026-001",
+      "source": "client_intake_2026_03_09",
+      "day_label": "اليوم الأول",
+      "session_title": "اسم الجلسة",
+      "session_type": "keynote",
+      "track": "المسار الرئيسي",
+      "speaker": "اسم المتحدث",
+      "moderator": "اسم مدير الجلسة",
+      "start_at": "2026-04-14T09:00:00+03:00",
+      "end_at": "2026-04-14T09:30:00+03:00",
+      "room": "القاعة الكبرى",
+      "status": "scheduled",
+      "language": "ar",
+      "audience": "الفئة المستهدفة",
+      "tags": ["وسم 1", "وسم 2"],
+      "updated_at": "2026-03-09T10:00:00+03:00"
+    }
+  ]
+}

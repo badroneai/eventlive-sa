@@ -1,0 +1,131 @@
+{
+  "release_id": "release-20260310T063000Z",
+  "status": "approved_current",
+  "latest_indicator": "current_latest_approved",
+  "archived_indicator": false,
+  "program_title": "الملتقى السعودي لتجربة المستفيد 2026",
+  "organizer_name": "جمعية التحول المؤسسي",
+  "organizer_display_name": "جمعية التحول المؤسسي",
+  "city": "Riyadh",
+  "venue": "فندق كراون بلازا المدينة الرقمية",
+  "event_start": "2026-05-11T08:30:00+03:00",
+  "event_end": "2026-05-11T16:00:00+03:00",
+  "updated_at": "2026-03-10T09:30:00+03:00",
+  "published_at": "2026-03-09T20:23:32.507Z",
+  "release_note": "Approved publishable release created from concierge workflow.",
+  "canonical_paths": {
+    "latest_program_page": "dist/index.html",
+    "latest_print_view": "dist/print.html",
+    "latest_share_landing": "dist/share.html",
+    "latest_release_bundle": "dist/current-release-bundle.json",
+    "latest_delivery_manifest_json": "dist/current-delivery-manifest.json",
+    "latest_delivery_manifest_md": "dist/current-delivery-manifest.md",
+    "latest_share_kit_json": "dist/share-kit.json",
+    "latest_share_kit_md": "dist/share-kit.md",
+    "latest_handoff_notes": "dist/handoff-notes.md",
+    "latest_archive_browser": "dist/archive-browser.html",
+    "latest_live_site_json": "dist/current-live-site.json",
+    "release_package_dir": "reports/releases/packages/release-20260310T063000Z",
+    "release_program_page": "reports/releases/release-20260310T063000Z.program.html",
+    "release_print_view": "reports/releases/release-20260310T063000Z.print.html",
+    "release_share_landing": "reports/releases/release-20260310T063000Z.share.html",
+    "release_manifest_json": "reports/releases/release-20260310T063000Z.delivery-manifest.json",
+    "release_manifest_md": "reports/releases/release-20260310T063000Z.delivery-manifest.md",
+    "release_handoff_notes": "reports/releases/release-20260310T063000Z.handoff-notes.md",
+    "archive_index": "reports/releases/archive-index.json"
+  },
+  "share_assets": {
+    "share_landing": "dist/share.html",
+    "live_share_url": "https://example.test/eventlive-sa/share.html",
+    "share_kit_json": "reports/releases/release-20260310T063000Z.share-kit.json",
+    "share_kit_md": "reports/releases/release-20260310T063000Z.share-kit.md",
+    "qr_placeholder": "reports/releases/release-20260310T063000Z.qr-placeholder.txt"
+  },
+  "print_assets": {
+    "latest_print_view": "dist/print.html",
+    "live_print_url": "https://example.test/eventlive-sa/print.html",
+    "release_print_view": "reports/releases/release-20260310T063000Z.print.html"
+  },
+  "public_urls": {
+    "base_url": "https://example.test/eventlive-sa/",
+    "program_url": "https://example.test/eventlive-sa/",
+    "print_url": "https://example.test/eventlive-sa/print.html",
+    "share_url": "https://example.test/eventlive-sa/share.html",
+    "archive_browser_url": "https://example.test/eventlive-sa/archive-browser.html"
+  },
+  "archive_linkage": {
+    "latest_approved_manifest": "reports/releases/latest-approved.json",
+    "archive_index": "reports/releases/archive-index.json",
+    "archive_browser": "dist/archive-browser.html",
+    "archive_source_dir": "data/archive/releases/release-20260310T063000Z",
+    "archive_status_note": "This release is current now and will appear in archive after archive step runs."
+  },
+  "handoff_notes_reference": "reports/releases/release-20260310T063000Z.handoff-notes.md",
+  "included_delivery_files": [
+    {
+      "label": "program_page",
+      "path": "dist/index.html",
+      "category": "current_live"
+    },
+    {
+      "label": "print_view",
+      "path": "dist/print.html",
+      "category": "current_live"
+    },
+    {
+      "label": "share_landing",
+      "path": "dist/share.html",
+      "category": "current_live"
+    },
+    {
+      "label": "release_bundle",
+      "path": "dist/current-release-bundle.json",
+      "category": "current_live"
+    },
+    {
+      "label": "share_kit_json",
+      "path": "dist/share-kit.json",
+      "category": "current_live"
+    },
+    {
+      "label": "share_kit_md",
+      "path": "dist/share-kit.md",
+      "category": "current_live"
+    },
+    {
+      "label": "qr_placeholder",
+      "path": "dist/qr-placeholder.txt",
+      "category": "current_live"
+    },
+    {
+      "label": "delivery_manifest_json",
+      "path": "dist/current-delivery-manifest.json",
+      "category": "current_live"
+    },
+    {
+      "label": "delivery_manifest_md",
+      "path": "dist/current-delivery-manifest.md",
+      "category": "current_live"
+    },
+    {
+      "label": "handoff_notes",
+      "path": "dist/handoff-notes.md",
+      "category": "current_live"
+    },
+    {
+      "label": "live_site_json",
+      "path": "dist/current-live-site.json",
+      "category": "current_live"
+    },
+    {
+      "label": "archive_browser",
+      "path": "dist/archive-browser.html",
+      "category": "current_live"
+    },
+    {
+      "label": "release_package_dir",
+      "path": "reports/releases/packages/release-20260310T063000Z",
+      "category": "release_specific"
+    }
+  ]
+}

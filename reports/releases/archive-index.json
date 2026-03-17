@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-03-09T17:19:37.563Z",
+  "archived_releases": [
+    {
+      "release_id": "release-20260310T063000Z",
+      "archived_at": "2026-03-09T01:52:50.904Z",
+      "program_title": "الملتقى السعودي لتجربة المستفيد 2026",
+      "organizer_name": "جمعية التحول المؤسسي",
+      "organizer_display_name": "جمعية التحول المؤسسي",
+      "primary_label": "دليل الزوار",
+      "published_program_file": "data/published/current-program.json",
+      "archive_program_file": "data/archive/releases/release-20260310T063000Z/program.json",
+      "archive_release_notes_file": "data/archive/releases/release-20260310T063000Z/release-notes.md",
+      "release_program_html_file": "reports/releases/release-20260310T063000Z.program.html",
+      "release_print_html_file": "reports/releases/release-20260310T063000Z.print.html",
+      "release_share_html_file": "reports/releases/release-20260310T063000Z.share.html",
+      "release_delivery_manifest_json_file": "reports/releases/release-20260310T063000Z.delivery-manifest.json",
+      "release_delivery_manifest_md_file": "reports/releases/release-20260310T063000Z.delivery-manifest.md",
+      "release_handoff_notes_file": "reports/releases/release-20260310T063000Z.handoff-notes.md",
+      "release_package_dir": "reports/releases/packages/release-20260310T063000Z",
+      "program_updated_at": "2026-03-10T09:30:00+03:00",
+      "sessions_count": 5
+    },
+    {
+      "release_id": "release-20260309T090000Z",
+      "archived_at": "2026-03-09T00:34:01.316Z",
+      "program_title": "الملتقى السعودي لتجربة المستفيد 2026",
+      "organizer_name": "جمعية التحول المؤسسي",
+      "published_program_file": "data/published/current-program.json",
+      "archive_program_file": "data/archive/releases/release-20260309T090000Z/program.json",
+      "archive_release_notes_file": "data/archive/releases/release-20260309T090000Z/release-notes.md",
+      "program_updated_at": "2026-03-09T12:00:00+03:00",
+      "sessions_count": 4
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "evaluated_at": "2026-03-01T09:04:12.822Z",
+  "status": "OK",
+  "reasons": [
+    "All operational checks are healthy."
+  ],
+  "active_alerts": 0,
+  "source_state": "ops/live-ops-state.json"
+}

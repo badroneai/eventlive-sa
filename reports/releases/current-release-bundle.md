@@ -1,0 +1,29 @@
+# Current Release Bundle
+- Release ID: release-20260310T063000Z
+- Generated at: 2026-03-09T20:23:32.507Z
+- Program title: الملتقى السعودي لتجربة المستفيد 2026
+- Organizer: جمعية التحول المؤسسي
+- Source file: data/intake/current-program.json
+- Published program: data/published/current-program.json
+- Output site: dist/index.html
+- Validation report: reports/validation-report.md
+- Build report: reports/build-report.md
+- Release notes: reports/releases/release-20260310T063000Z.md
+- Latest approved manifest: reports/releases/latest-approved.json
+- Archive index: reports/releases/archive-index.json
+- Latest diff JSON: reports/diffs/latest-diff.json
+- Latest diff Markdown: reports/diffs/latest-diff.md
+- Latest diff HTML: reports/diffs/latest-diff.html
+- Latest program HTML: dist/index.html
+- Latest print HTML: dist/print.html
+- Latest share HTML: dist/share.html
+- Release program HTML: reports/releases/release-20260310T063000Z.program.html
+- Release print HTML: reports/releases/release-20260310T063000Z.print.html
+- Release share HTML: reports/releases/release-20260310T063000Z.share.html
+- Share kit JSON: reports/releases/release-20260310T063000Z.share-kit.json
+- Share kit Markdown: reports/releases/release-20260310T063000Z.share-kit.md
+- QR placeholder: reports/releases/release-20260310T063000Z.qr-placeholder.txt
+- Delivery manifest JSON: reports/releases/release-20260310T063000Z.delivery-manifest.json
+- Delivery manifest Markdown: reports/releases/release-20260310T063000Z.delivery-manifest.md
+- Handoff notes: reports/releases/release-20260310T063000Z.handoff-notes.md
+- Release package dir: reports/releases/packages/release-20260310T063000Z

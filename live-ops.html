@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EventLive | Live Ops</title>
+  <style>body{font-family:Cairo,Arial,sans-serif;background:#0f172a;color:#e2e8f0;margin:0} .wrap{max-width:980px;margin:24px auto;padding:0 16px} .card{background:#111827;border:1px solid #334155;border-radius:14px;padding:16px;margin-bottom:14px} .k{color:#93c5fd} .v{font-weight:700} a{color:#7dd3fc}</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>لوحة التشغيل الحية (Live Ops)</h1>
+    <p><a href="./index.html">العودة للرئيسية</a> · <a href="./alerts.html">التنبيهات</a> · <a href="./incidents.html">الحوادث</a></p>
+    <div id="content" class="card">جاري التحميل...</div>
+  </div>
+  <script>
+    fetch('./ops/live-ops-state.json', {cache:'no-store'})
+      .then(r=>r.json())
+      .then(s=>{
+        document.getElementById('content').innerHTML = `
+          <div><span class='k'>generated_at:</span> <span class='v'>${s.generated_at||'-'}</span></div>
+          <div><span class='k'>active_cycle_id:</span> <span class='v'>${s.active_cycle_id||'-'}</span></div>
+          <div><span class='k'>gateway:</span> <span class='v'>${s.service_status?.gateway||'-'}</span></div>
+          <div><span class='k'>telegram:</span> <span class='v'>${s.service_status?.telegram||'-'}</span></div>
+          <div><span class='k'>n8n:</span> <span class='v'>${s.service_status?.n8n||'-'}</span></div>
+          <div><span class='k'>last_ok_at:</span> <span class='v'>${s.last_ok_at||'-'}</span></div>
+          <div><span class='k'>last_fail_at:</span> <span class='v'>${s.last_fail_at||'-'}</span></div>
+          <div><span class='k'>last_report_commit:</span> <span class='v'>${s.last_report_commit||'-'}</span></div>
+          <div><span class='k'>alerts_active_count:</span> <span class='v'>${s.alerts_active_count??'-'}</span></div>
+          <div><span class='k'>trusted_proxies_enabled:</span> <span class='v'>${s.trusted_proxies_enabled}</span></div>
+          <div><span class='k'>blockers:</span> <span class='v'>${(s.blockers||[]).join(' | ') || 'none'}</span></div>`;
+      })
+      .catch(e=>document.getElementById('content').textContent='تعذر قراءة ops/live-ops-state.json: '+e.message)
+  </script>
+</body>
+</html>

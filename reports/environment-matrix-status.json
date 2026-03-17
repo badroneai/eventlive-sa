@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-02-27T19:02:31.918Z",
+  "timeoutMs": 15000,
+  "environments": [
+    {
+      "id": "001",
+      "url": "https://badroneai.github.io/eventlive-sa/",
+      "status": "OK",
+      "httpStatus": 200,
+      "latencyMs": 562,
+      "markerFound": true,
+      "note": "Healthy"
+    },
+    {
+      "id": "002",
+      "url": "(not configured)",
+      "status": "NOT_CONFIGURED",
+      "httpStatus": "n/a",
+      "latencyMs": "n/a",
+      "markerFound": false,
+      "note": "Missing URL env variable"
+    },
+    {
+      "id": "003",
+      "url": "(not configured)",
+      "status": "NOT_CONFIGURED",
+      "httpStatus": "n/a",
+      "latencyMs": "n/a",
+      "markerFound": false,
+      "note": "Missing URL env variable"
+    }
+  ]
+}

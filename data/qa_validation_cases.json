@@ -1,0 +1,49 @@
+{
+  "program": {
+    "program_title": "حزمة اختبار التحقق",
+    "organizer_name": "فريق الجودة",
+    "venue": "مركز الاختبارات",
+    "city": "Riyadh",
+    "event_start": "2026-05-01T09:00:00+03:00",
+    "event_end": "2026-05-01T12:00:00+03:00",
+    "updated_at": "2026-03-09T14:00:00+03:00"
+  },
+  "sessions": [
+    {
+      "id": "QA-001",
+      "source": "qa_case",
+      "day_label": "اليوم الأول",
+      "session_title": "جلسة صحيحة",
+      "session_type": "talk",
+      "track": "المسار الرئيسي",
+      "speaker": "متحدث 1",
+      "moderator": "مدير 1",
+      "start_at": "2026-05-01T09:15:00+03:00",
+      "end_at": "2026-05-01T10:00:00+03:00",
+      "room": "قاعة 1",
+      "status": "scheduled",
+      "language": "ar",
+      "audience": "عام",
+      "tags": ["qa"],
+      "updated_at": "2026-03-09T14:00:00+03:00"
+    },
+    {
+      "id": "QA-001",
+      "source": "qa_case",
+      "day_label": "اليوم الأول",
+      "session_title": "  جلسة مكررة  ",
+      "session_type": "panel",
+      "track": "المسار الرئيسي",
+      "speaker": "متحدث 2",
+      "moderator": "مدير 2",
+      "start_at": "2026-05-01T08:00:00+03:00",
+      "end_at": "2026-05-01T07:30:00+03:00",
+      "room": "قاعة 2",
+      "status": "scheduled",
+      "language": "ar",
+      "audience": "عام",
+      "tags": ["qa"],
+      "updated_at": "2026-03-09T14:00:00+03:00"
+    }
+  ]
+}

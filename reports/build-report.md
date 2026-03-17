@@ -1,0 +1,17 @@
+# EventLive Build Report
+- Built at: 2026-03-09T20:23:32.489Z
+- Program title: الملتقى السعودي لتجربة المستفيد 2026
+- Organizer: جمعية التحول المؤسسي
+- Organizer display: جمعية التحول المؤسسي
+- Primary label: البرنامج الرسمي
+- Support contact: يرجى التواصل مع الجهة المنظمة
+- Venue: فندق كراون بلازا المدينة الرقمية
+- City: Riyadh
+- Event start: 2026-05-11T08:30:00+03:00
+- Event end: 2026-05-11T16:00:00+03:00
+- Input sessions: 5
+- Output: dist/index.html
+- Output: dist/print.html
+- Output: dist/share.html
+- Client-facing page only: yes
+- Internal ops pages excluded from dist build

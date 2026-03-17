@@ -1,0 +1,102 @@
+{
+  "generated_at": "2026-03-09T19:05:53.603Z",
+  "base_file": "data/published/current-program.json",
+  "candidate_file": "workspaces/visual-review-smoke/draft/current-program.json",
+  "metadata_changes": [
+    {
+      "field": "venue",
+      "before": "فندق كراون بلازا المدينة الرقمية",
+      "after": "Updated Venue"
+    },
+    {
+      "field": "event_end",
+      "before": "2026-05-11T16:00:00+03:00",
+      "after": "2026-05-11T15:30:00+03:00"
+    },
+    {
+      "field": "updated_at",
+      "before": "2026-03-10T09:30:00+03:00",
+      "after": "2026-03-09T12:00:00+03:00"
+    }
+  ],
+  "added_sessions": [],
+  "removed_sessions": [
+    {
+      "id": "CXP-2026-005",
+      "session_title": "الجلسة الختامية: أولويات 2027",
+      "start_at": "2026-05-11T15:15:00+03:00",
+      "room": "قاعة النخبة"
+    }
+  ],
+  "modified_sessions": [
+    {
+      "id": "CXP-2026-001",
+      "session_title_before": "تسجيل الحضور واستقبال المشاركين",
+      "session_title_after": "تسجيل الحضور واستقبال المشاركين",
+      "changes": [
+        {
+          "field": "speaker",
+          "before": "فريق التنظيم",
+          "after": "Updated Speaker"
+        },
+        {
+          "field": "start_at",
+          "before": "2026-05-11T08:30:00+03:00",
+          "after": "2026-05-11T09:15:00+03:00"
+        },
+        {
+          "field": "end_at",
+          "before": "2026-05-11T09:00:00+03:00",
+          "after": "2026-05-11T10:00:00+03:00"
+        },
+        {
+          "field": "room",
+          "before": "منطقة الاستقبال",
+          "after": "Hall B"
+        }
+      ]
+    },
+    {
+      "id": "CXP-2026-003",
+      "session_title_before": "ورشة: قياس رضا المستفيد عبر نقاط الرحلة",
+      "session_title_after": "ورشة: قياس رضا المستفيد عبر نقاط الرحلة",
+      "changes": [
+        {
+          "field": "room",
+          "before": "قاعة الورش 3",
+          "after": "قاعة الورش 2"
+        },
+        {
+          "field": "tags",
+          "before": [
+            "ورشة",
+            "قياس",
+            "تحديث"
+          ],
+          "after": [
+            "ورشة",
+            "قياس"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CXP-2026-004",
+      "session_title_before": "جلسة تواصل وشراكات",
+      "session_title_after": "جلسة تواصل وشراكات",
+      "changes": [
+        {
+          "field": "end_at",
+          "before": "2026-05-11T15:15:00+03:00",
+          "after": "2026-05-11T15:30:00+03:00"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "metadata_changes": 3,
+    "added_sessions": 0,
+    "removed_sessions": 1,
+    "modified_sessions": 3
+  }
+}

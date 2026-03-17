@@ -1,0 +1,51 @@
+{
+  "program": {
+    "program_title": "حزمة QA اليومية",
+    "organizer_name": "",
+    "venue": "مركز الجودة",
+    "city": "Riyadh",
+    "event_start": "2026-05-03T09:00:00+03:00",
+    "event_end": "invalid-date",
+    "updated_at": "2026-03-09T15:00:00+03:00",
+    "unexpected": "x"
+  },
+  "sessions": [
+    {
+      "id": "",
+      "source": "qa_day2",
+      "day_label": "اليوم الأول",
+      "session_title": "جلسة بدون معرف",
+      "session_type": "other",
+      "track": "المسار 1",
+      "speaker": "متحدث",
+      "moderator": "مدير",
+      "start_at": "2026-05-03T10:00:00+03:00",
+      "end_at": "2026-05-03T09:00:00+03:00",
+      "room": "قاعة 1",
+      "status": "scheduled",
+      "language": "ar",
+      "audience": "عام",
+      "tags": [],
+      "updated_at": "invalid-date"
+    },
+    {
+      "id": "QA-DAY2-002",
+      "source": "qa_day2",
+      "day_label": "اليوم الأول",
+      "session_title": "جلسة بحالة غير معروفة",
+      "session_type": "other",
+      "track": "المسار 2",
+      "speaker": "متحدث 2",
+      "moderator": "مدير 2",
+      "start_at": "2026-05-03T11:00:00+03:00",
+      "end_at": "2026-05-03T11:30:00+03:00",
+      "room": "قاعة 2",
+      "status": "running",
+      "language": "ar",
+      "audience": "عام",
+      "tags": ["qa"],
+      "updated_at": "2026-03-09T15:00:00+03:00",
+      "unexpected_field": "x"
+    }
+  ]
+}

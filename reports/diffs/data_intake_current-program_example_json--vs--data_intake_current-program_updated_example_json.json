@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-03-09T00:40:50.173Z",
+  "base_file": "data/intake/current-program.example.json",
+  "candidate_file": "data/intake/current-program.updated.example.json",
+  "metadata_changes": [
+    {
+      "field": "event_end",
+      "before": "2026-05-11T15:30:00+03:00",
+      "after": "2026-05-11T16:00:00+03:00"
+    },
+    {
+      "field": "updated_at",
+      "before": "2026-03-09T12:00:00+03:00",
+      "after": "2026-03-10T09:30:00+03:00"
+    }
+  ],
+  "added_sessions": [
+    {
+      "id": "CXP-2026-005",
+      "session_title": "الجلسة الختامية: أولويات 2027",
+      "start_at": "2026-05-11T15:15:00+03:00",
+      "room": "قاعة النخبة"
+    }
+  ],
+  "removed_sessions": [],
+  "modified_sessions": [
+    {
+      "id": "CXP-2026-003",
+      "session_title_before": "ورشة: قياس رضا المستفيد عبر نقاط الرحلة",
+      "session_title_after": "ورشة: قياس رضا المستفيد عبر نقاط الرحلة",
+      "changes": [
+        {
+          "field": "room",
+          "before": "قاعة الورش 2",
+          "after": "قاعة الورش 3"
+        },
+        {
+          "field": "tags",
+          "before": [
+            "ورشة",
+            "قياس"
+          ],
+          "after": [
+            "ورشة",
+            "قياس",
+            "تحديث"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CXP-2026-004",
+      "session_title_before": "جلسة تواصل وشراكات",
+      "session_title_after": "جلسة تواصل وشراكات",
+      "changes": [
+        {
+          "field": "end_at",
+          "before": "2026-05-11T15:30:00+03:00",
+          "after": "2026-05-11T15:15:00+03:00"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "metadata_changes": 2,
+    "added_sessions": 1,
+    "removed_sessions": 0,
+    "modified_sessions": 2
+  }
+}
