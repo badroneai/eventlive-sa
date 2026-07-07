@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-07T23:05:30.937Z",
+  "generated_at": "2026-07-07T23:31:04.157Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "cities_count": 19,
   "totals": {
-    "events": 430,
-    "upcoming_or_active": 136,
+    "events": 429,
+    "upcoming_or_active": 135,
     "ended": 294,
     "live_ready": 51
   },
@@ -90,8 +90,8 @@
       "slug": "online",
       "label": "عن بعد",
       "url": "./cities/online.html",
-      "total_events": 34,
-      "upcoming_or_active": 11,
+      "total_events": 33,
+      "upcoming_or_active": 10,
       "ended": 23,
       "live_ready": 6,
       "sources": [

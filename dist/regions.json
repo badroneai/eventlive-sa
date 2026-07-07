@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T23:05:30.937Z",
+  "generated_at": "2026-07-07T23:31:04.157Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-saudi-region-coverage",
@@ -8,8 +8,8 @@
     "weak_regions": 9,
     "active_regions": 4,
     "uncovered_regions": 6,
-    "events": 430,
-    "active_events": 136,
+    "events": 429,
+    "active_events": 135,
     "ended_events": 294
   },
   "regions": [

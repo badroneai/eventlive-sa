@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-07-07T23:05:30.937Z",
+  "generated_at": "2026-07-07T23:31:04.157Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "public-trust-and-source-evidence",
   "totals": {
-    "events": 430,
-    "trusted": 430,
+    "events": 429,
+    "trusted": 429,
     "review": 0,
     "evidence_needed": 0,
-    "approved_or_published": 430,
+    "approved_or_published": 429,
     "live_schedule_ready": 51,
-    "attendance_windows": 430,
-    "basic_windows": 379,
+    "attendance_windows": 429,
+    "basic_windows": 378,
     "stale_or_missing_update": 0,
-    "with_evidence_gaps": 379
+    "with_evidence_gaps": 378
   },
   "source_confidence": {
     "official": 290,
-    "approved-source": 140
+    "approved-source": 139
   },
   "events": [
     {
@@ -4436,73 +4436,6 @@
       "action": {
         "label": "فتح بطاقة الفعالية",
         "url": "./events/event-دورة-comptia-a.html"
-      },
-      "readiness_score": 67
-    },
-    {
-      "id": "event-comptia-a",
-      "title": "دورة +CompTIA A",
-      "organizer": "Ministry of Communications and Information Technology",
-      "city": "عن بعد",
-      "venue": "تفاعلية مباشرة",
-      "category": "تدريب تقني",
-      "starts_at": "2026-07-12T09:00:00+03:00",
-      "ends_at": "2026-07-16T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:57.647Z",
-      "status": "upcoming",
-      "status_label": "قادمة",
-      "live_schedule_ready": false,
-      "attendance_window_ready": true,
-      "attendance_window": {
-        "title": "نافذة الحضور",
-        "starts_at": "2026-07-12T09:00:00+03:00",
-        "ends_at": "2026-07-16T18:00:00+03:00",
-        "room": "تفاعلية مباشرة",
-        "track": "الفعالية الرئيسية",
-        "session_type": "attendance-window",
-        "inferred": true,
-        "source": "event-start-end"
-      },
-      "schedule_quality": "basic-window",
-      "sessions_count": 1,
-      "detail_url": "./events/event-comptia-a.html",
-      "live_url": "./events/event-comptia-a.html",
-      "calendar_url": "./events/event-comptia-a.ics",
-      "source_label": "Future Skills MCIT Catalogue",
-      "source_url": "https://futureskills.mcit.gov.sa/ar/group/13039",
-      "evidence_url": "https://futureskills.mcit.gov.sa/ar/group/13039",
-      "source_confidence": "approved-source",
-      "source_confidence_label": "مصدر معتمد",
-      "approval_status": "published",
-      "approval_status_label": "منشور",
-      "published_by": "EventLive Auto Publisher",
-      "trust": {
-        "key": "trusted",
-        "label": "ثقة عالية",
-        "score": 95,
-        "freshness": {
-          "key": "fresh",
-          "label": "محدث خلال أسبوع",
-          "days": 0,
-          "score": 15
-        }
-      },
-      "trust_score": 95,
-      "trust_label": "ثقة عالية",
-      "evidence_gaps": [
-        "الجدول التفصيلي لم يفعل بعد"
-      ],
-      "activation_blockers": [
-        "الجدول التفصيلي لم يفعل بعد"
-      ],
-      "stage": {
-        "key": "basic-window",
-        "label": "نافذة حضور أساسية",
-        "rank": 3
-      },
-      "action": {
-        "label": "فتح بطاقة الفعالية",
-        "url": "./events/event-comptia-a.html"
       },
       "readiness_score": 67
     },
@@ -25186,7 +25119,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 0,
+          "days": 1,
           "score": 15
         }
       },

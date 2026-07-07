@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-07T23:05:30.937Z",
+  "generated_at": "2026-07-07T23:31:04.157Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "audiences_count": 12,
   "totals": {
-    "events": 430,
-    "upcoming_or_active": 136,
+    "events": 429,
+    "upcoming_or_active": 135,
     "ended": 294,
     "live_ready": 51
   },
@@ -153,8 +153,8 @@
       "slug": "tech",
       "label": "تقنيون",
       "url": "./for/tech.html",
-      "total_events": 69,
-      "upcoming_or_active": 43,
+      "total_events": 68,
+      "upcoming_or_active": 42,
       "ended": 26,
       "live_ready": 1,
       "sources": [
@@ -200,7 +200,7 @@
         "status": "ongoing",
         "url": "./events/event-world-cup-2026-fan-zone-at-kimpton-kafd.html"
       },
-      "count": 69,
+      "count": 68,
       "sources_count": 13,
       "cities_count": 7,
       "categories_count": 11
@@ -305,8 +305,8 @@
       "slug": "skilled-trades",
       "label": "مهاريون وحرفيون",
       "url": "./for/skilled-trades.html",
-      "total_events": 69,
-      "upcoming_or_active": 31,
+      "total_events": 68,
+      "upcoming_or_active": 30,
       "ended": 38,
       "live_ready": 10,
       "sources": [
@@ -353,7 +353,7 @@
         "status": "ongoing",
         "url": "./events/event-misk-local-traineeship-program.html"
       },
-      "count": 69,
+      "count": 68,
       "sources_count": 13,
       "cities_count": 9,
       "categories_count": 10

@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-07T23:05:30.937Z",
+  "generated_at": "2026-07-07T23:31:04.157Z",
   "platform": "EventLive",
   "feeds": [
     {
       "slug": "all",
       "title": "كل فعاليات السعودية | EventLive",
       "description": "تغذية دورية للفعاليات القادمة والجارية في السعودية من EventLive.",
-      "count": 136,
+      "count": 135,
       "ics_url": "./feeds/all.ics",
       "rss_url": "./feeds/all.xml",
       "json_url": "./feeds/all.json"
@@ -69,7 +69,7 @@
       "slug": "city-online",
       "title": "فعاليات عن بعد | EventLive",
       "description": "تغذية فعاليات عن بعد القادمة والجارية من EventLive.",
-      "count": 11,
+      "count": 10,
       "ics_url": "./feeds/city-online.ics",
       "rss_url": "./feeds/city-online.xml",
       "json_url": "./feeds/city-online.json"
@@ -231,7 +231,7 @@
       "slug": "category-technology-training",
       "title": "تدريب تقني | EventLive",
       "description": "تغذية فعاليات تصنيف تدريب تقني القادمة والجارية من EventLive.",
-      "count": 13,
+      "count": 12,
       "ics_url": "./feeds/category-technology-training.ics",
       "rss_url": "./feeds/category-technology-training.xml",
       "json_url": "./feeds/category-technology-training.json"
@@ -321,7 +321,7 @@
       "slug": "for-tech",
       "title": "تقنيون | EventLive",
       "description": "تغذية فعاليات مناسبة لفئة تقنيون من EventLive.",
-      "count": 43,
+      "count": 42,
       "ics_url": "./feeds/for-tech.ics",
       "rss_url": "./feeds/for-tech.xml",
       "json_url": "./feeds/for-tech.json"
@@ -330,7 +330,7 @@
       "slug": "for-skilled-trades",
       "title": "مهاريون وحرفيون | EventLive",
       "description": "تغذية فعاليات مناسبة لفئة مهاريون وحرفيون من EventLive.",
-      "count": 31,
+      "count": 30,
       "ics_url": "./feeds/for-skilled-trades.ics",
       "rss_url": "./feeds/for-skilled-trades.xml",
       "json_url": "./feeds/for-skilled-trades.json"

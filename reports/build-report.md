@@ -1,10 +1,10 @@
 # EventLive Build Report
-- Built at: 2026-07-07T23:05:30.937Z
+- Built at: 2026-07-07T23:31:04.157Z
 - Mode: data-driven catalog + static brand refresh
 - Public domain: eventme.live
-- Events generated: 430
+- Events generated: 429
 - Draft/sample records excluded: 3
-- Event detail pages: 430
+- Event detail pages: 429
 - Cities generated: 19
 - Stale event image references patched: 0
 - Missing local event image references patched: 0
@@ -18,7 +18,7 @@
 - Category links normalized: 0
 - Category fallback pages created: 0
 - Excluded-record references patched: 3
-- Patched files: 511
+- Patched files: 510
 - Brand: EventLive
 - Live mark: red pulsing i-dot
 - Domain preserved: yes

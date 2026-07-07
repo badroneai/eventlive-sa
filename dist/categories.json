@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-07T23:05:30.937Z",
+  "generated_at": "2026-07-07T23:31:04.157Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "categories_count": 12,
   "totals": {
-    "events": 430,
-    "upcoming_or_active": 136,
+    "events": 429,
+    "upcoming_or_active": 135,
     "ended": 294,
     "live_ready": 51
   },
@@ -165,44 +165,6 @@
       "audiences_count": 9
     },
     {
-      "slug": "technology-training",
-      "label": "تدريب تقني",
-      "url": "./categories/technology-training.html",
-      "total_events": 27,
-      "upcoming_or_active": 13,
-      "ended": 14,
-      "live_ready": 0,
-      "sources": [
-        "Future Skills MCIT Catalogue",
-        "Misk Hub Events",
-        "Misk Hub Programs",
-        "Monsha'at All Events"
-      ],
-      "cities": [
-        "الرياض",
-        "السعودية",
-        "عن بعد"
-      ],
-      "audiences": [
-        "باحثون عن عمل",
-        "تقنيون",
-        "رواد أعمال",
-        "طلاب وخريجون",
-        "مبدعون وفنون",
-        "مهاريون وحرفيون",
-        "موظفون ومهنيون"
-      ],
-      "next_event": {
-        "title": "Misk Local Traineeship Program",
-        "starts_at": "2026-04-01T09:00:00+03:00",
-        "status": "ongoing",
-        "url": "./events/event-misk-local-traineeship-program.html"
-      },
-      "sources_count": 4,
-      "cities_count": 3,
-      "audiences_count": 7
-    },
-    {
       "slug": "sports",
       "label": "رياضة وفعاليات جماهيرية",
       "url": "./categories/sports.html",
@@ -249,6 +211,44 @@
       },
       "sources_count": 8,
       "cities_count": 10,
+      "audiences_count": 7
+    },
+    {
+      "slug": "technology-training",
+      "label": "تدريب تقني",
+      "url": "./categories/technology-training.html",
+      "total_events": 26,
+      "upcoming_or_active": 12,
+      "ended": 14,
+      "live_ready": 0,
+      "sources": [
+        "Future Skills MCIT Catalogue",
+        "Misk Hub Events",
+        "Misk Hub Programs",
+        "Monsha'at All Events"
+      ],
+      "cities": [
+        "الرياض",
+        "السعودية",
+        "عن بعد"
+      ],
+      "audiences": [
+        "باحثون عن عمل",
+        "تقنيون",
+        "رواد أعمال",
+        "طلاب وخريجون",
+        "مبدعون وفنون",
+        "مهاريون وحرفيون",
+        "موظفون ومهنيون"
+      ],
+      "next_event": {
+        "title": "Misk Local Traineeship Program",
+        "starts_at": "2026-04-01T09:00:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-misk-local-traineeship-program.html"
+      },
+      "sources_count": 4,
+      "cities_count": 3,
       "audiences_count": 7
     },
     {

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-07T23:05:30.937Z",
+  "generated_at": "2026-07-07T23:31:04.157Z",
   "platform": "EventLive",
   "scope": "this-week",
   "window_hours": 168,
-  "count": 23,
+  "count": 22,
   "events": [
     {
       "id": "event-لقاءات-مراكز-دعم-المنشآت",
@@ -129,16 +129,6 @@
       "id": "event-دورة-comptia-a",
       "title": "دورة +CompTIA A",
       "url": "./events/event-دورة-comptia-a.html",
-      "city": "عن بعد",
-      "starts_at": "2026-07-12T09:00:00+03:00",
-      "ends_at": "2026-07-16T18:00:00+03:00",
-      "status": "upcoming",
-      "live_schedule_ready": false
-    },
-    {
-      "id": "event-comptia-a",
-      "title": "دورة +CompTIA A",
-      "url": "./events/event-comptia-a.html",
       "city": "عن بعد",
       "starts_at": "2026-07-12T09:00:00+03:00",
       "ends_at": "2026-07-16T18:00:00+03:00",
