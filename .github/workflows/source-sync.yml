@@ -79,7 +79,6 @@ jobs:
             echo "No catalog state changes to persist."
           else
             git commit -m "chore(sync): persist daily source sync state [skip ci]"
-            git pull --rebase origin "${GITHUB_REF_NAME}"
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
 
