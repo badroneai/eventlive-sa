@@ -45,7 +45,7 @@ jobs:
 
       - name: Regression checks
         run: |
-          npm run test:validation
+          npm run validate:gate
           npm run test:csv
           npm run test:source-auto-publish
           npm run test:source-sync-pipeline
