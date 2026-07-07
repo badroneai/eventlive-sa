@@ -25,6 +25,16 @@ assert.match(html, /function applyInitialSearchQuery\(\)/, 'events.html must sup
 assert.match(html, /new URLSearchParams\(window\.location\.search\)/, 'events.html must read q/search/query URL parameters');
 assert.match(html, /params\.get\('q'\).*params\.get\('search'\).*params\.get\('query'\)/s, 'events.html must accept q, search, and query parameters');
 assert.match(html, /setupFilters\(\);\s*applyInitialSearchQuery\(\);\s*renderStatusCenter\(\);/s, 'events.html must apply URL search before rendering results');
-assert.match(serviceWorker, /"\.\/events\.json"/, 'service worker must precache events.json for the async catalog shell');
+assert.match(html, /id="sortFilter"/, 'events.html must expose explicit result sorting');
+assert.match(html, /id="loadMoreEvents"/, 'events.html must progressively reveal the catalog instead of rendering every card at once');
+assert.match(html, /let visibleLimit = 24/, 'events.html must start with a bounded first page of results');
+assert.match(html, /const pageSize = 24/, 'events.html must use a stable catalog page size');
+assert.match(html, /categoryGroups = new Map/, 'events.html must deduplicate raw category labels in the category filter');
+assert.match(html, /visibleRows = rows\.slice\(0, visibleLimit\)/, 'events.html must render only the visible slice of filtered rows');
+assert.match(html, /controls\.loadMore\.addEventListener\('click'/, 'events.html must let users load more matching events');
+assert.match(html, /id="catalogMetricEvents"/, 'events.html must expose data-driven catalog metrics');
+assert.match(html, /function updateCatalogMetrics\(\)/, 'events.html must refresh catalog metrics from events.json');
+assert.match(html, /updateCatalogMetrics\(\);\s*setupFilters\(\);/s, 'events.html must refresh metrics before rendering filters');
+assert.doesNotMatch(serviceWorker, /"\.\/events\.json"/, 'service worker must not promote owner-only events.json through public precache');
 
 console.log('events-page-shell-regression-test: ok');

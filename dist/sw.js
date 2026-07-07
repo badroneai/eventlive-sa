@@ -1,9 +1,8 @@
-const CACHE_NAME = 'eventlive-static-1783453093895';
+const CACHE_NAME = 'eventlive-static-1783465537158';
 const PRECACHE = [
   "./",
   "./index.html",
   "./events.html",
-  "./events.json",
   "./llms.txt",
   "./ai-policy.txt",
   "./robots.txt",
@@ -30,16 +29,13 @@ const PRECACHE = [
   "./source-coverage-gaps.json",
   "./source-health.html",
   "./source-health.json",
-  "./sources.html",
   "./sources.json",
-  "./methodology.html",
   "./methodology.json",
   "./organizer-intake.html",
   "./organizer-intake.json",
   "./activation.json",
   "./readiness.html",
   "./readiness.json",
-  "./trust.html",
   "./trust.json",
   "./events.ics",
   "./feeds/all.ics",

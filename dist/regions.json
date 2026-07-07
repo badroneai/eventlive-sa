@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T19:38:07.442Z",
+  "generated_at": "2026-07-07T23:05:30.937Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-saudi-region-coverage",
@@ -8,9 +8,9 @@
     "weak_regions": 9,
     "active_regions": 4,
     "uncovered_regions": 6,
-    "events": 416,
+    "events": 430,
     "active_events": 136,
-    "ended_events": 280
+    "ended_events": 294
   },
   "regions": [
     {
@@ -854,16 +854,16 @@
           "label": "Shaqra"
         }
       ],
-      "total": 190,
+      "total": 196,
       "active": 90,
       "upcoming": 67,
       "ongoing": 23,
       "live": 0,
-      "ended": 100,
+      "ended": 106,
       "live_ready": 22,
       "source_count": 15,
-      "source_images": 86,
-      "generated_covers": 104,
+      "source_images": 91,
+      "generated_covers": 105,
       "registered_source_count": 32,
       "registered_sources": [
         {
@@ -1154,15 +1154,15 @@
           "label": "Rabigh"
         }
       ],
-      "total": 69,
+      "total": 70,
       "active": 8,
       "upcoming": 7,
       "ongoing": 1,
       "live": 0,
-      "ended": 61,
+      "ended": 62,
       "live_ready": 6,
       "source_count": 8,
-      "source_images": 13,
+      "source_images": 14,
       "generated_covers": 56,
       "registered_source_count": 19,
       "registered_sources": [

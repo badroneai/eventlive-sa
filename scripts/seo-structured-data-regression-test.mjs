@@ -6,7 +6,7 @@ const root = process.cwd();
 const distDir = path.join(root, 'dist');
 
 const pages = [
-  { file: 'events.html', minBlocks: 3, types: ['WebPage', 'Dataset', 'ItemList'], datasetUrl: 'https://eventme.live/events.json', minItems: 20 },
+  { file: 'events.html', minBlocks: 3, types: ['WebPage', 'Dataset', 'ItemList'], datasetUrl: 'https://eventme.live/events.html', minItems: 20 },
   { file: 'activation.html', minBlocks: 2, types: ['WebPage', 'Dataset'], datasetUrl: 'https://eventme.live/activation.json' },
   { file: 'trust.html', minBlocks: 2, types: ['WebPage', 'Dataset'], datasetUrl: 'https://eventme.live/trust.json' },
   { file: 'readiness.html', minBlocks: 2, types: ['WebPage', 'Dataset'], datasetUrl: 'https://eventme.live/readiness.json' },

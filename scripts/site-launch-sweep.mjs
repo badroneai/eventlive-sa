@@ -47,6 +47,7 @@ const launchPages = [
   'updates.html',
   'weekend.html'
 ];
+const ownerOnlyPages = new Set(['sources.html', 'methodology.html', 'trust.html']);
 
 const forbiddenDistPaths = [
   'archive-browser.html',
@@ -147,6 +148,7 @@ const requiredFiles = ['sitemap.xml', 'robots.txt', 'manifest.webmanifest', 'sw.
 const missingRequiredFiles = requiredFiles.filter((relativePath) => !fs.existsSync(path.join(distDir, relativePath)));
 const sitemap = fs.existsSync(path.join(distDir, 'sitemap.xml')) ? readDist('sitemap.xml') : '';
 const sitemapMissing = launchPages
+  .filter((relativePath) => !ownerOnlyPages.has(relativePath))
   .filter((relativePath) => !sitemap.includes(`https://eventme.live/${relativePath === 'index.html' ? '' : relativePath}`));
 
 const failedPages = pageChecks.filter((check) => !check.ok);

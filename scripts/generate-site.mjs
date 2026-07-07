@@ -60,8 +60,9 @@ const brandCss = `<style id="eventlive-brand-pulse">
 </style>`;
 
 const pageCss = `<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap');
 :root{--bg:#f7f5ef;--ink:#10231d;--muted:#66756f;--line:#dfe6df;--card:#fffdf8;--green:#0d6b52;--green-dark:#07231c;--live:#e5484d;--gold:#b88a2a}
-*{box-sizing:border-box}body{margin:0;font-family:"IBM Plex Sans Arabic","IBM Plex Sans",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.75}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(247,245,239,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:800}.brand-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:8px;background:var(--green-dark);color:#fff;font-weight:800}.nav-links{display:flex;gap:18px;color:var(--muted);font-weight:700;font-size:.94rem}.cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:8px;background:var(--green);color:#fff;padding:10px 14px;font-weight:800}.hero{padding:54px 0 30px;background:linear-gradient(135deg,var(--green-dark),#0d6b52);color:#fff}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:#f7df9a;font-weight:800}.live-dot{width:9px;height:9px;border-radius:999px;background:var(--live);box-shadow:0 0 0 4px rgba(229,72,77,.18)}h1{font-size:clamp(2rem,5vw,4.4rem);line-height:1.12;margin:14px 0 12px;letter-spacing:0}.lead{font-size:1.08rem;max-width:760px;color:rgba(255,255,255,.82)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}.section{padding:32px 0}.card,.activation-card{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;box-shadow:0 18px 40px rgba(16,35,29,.06)}.activation-card{padding:18px}.activation-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.card-body{padding:18px}.cover{aspect-ratio:16/9;width:100%;object-fit:cover;background:#dfe6df}.meta{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;color:var(--muted);font-size:.9rem}.chip{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:4px 9px;background:#fff}.chip-live{background:var(--live);border-color:var(--live);color:#fff}.title{font-size:1.18rem;font-weight:800;margin:0 0 8px}.signal-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:18px}.signal{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:12px}.signal b{display:block;font-size:1.35rem}.facet-focus,.readiness{background:#fff;border:1px solid var(--line);border-radius:8px;padding:18px;margin:18px 0}.signals{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}.signal-check,.program-check{border:1px solid var(--line);border-radius:8px;padding:12px;background:#fff}.signal-check.good,.program-check{border-color:rgba(13,107,82,.35)}.signal-check.warn{border-color:rgba(229,72,77,.25)}.decision-score{font-size:2rem;font-weight:900;color:var(--green)}.timeline{display:grid;gap:10px;margin-top:14px}.session{border:1px solid var(--line);border-radius:8px;padding:12px;background:#fff}.footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted)}@media(max-width:760px){.nav-links{display:none}.hero{padding-top:34px}.wrap{width:min(100% - 22px,1120px)}}
+*{box-sizing:border-box}body{margin:0;font-family:"IBM Plex Sans Arabic",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.75}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(247,245,239,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:700}.brand-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:8px;background:var(--green-dark);color:#fff;font-weight:700}.nav-links{display:flex;gap:18px;color:var(--muted);font-weight:700;font-size:.94rem}.cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:8px;background:var(--green);color:#fff;padding:10px 14px;font-weight:700}.hero{padding:54px 0 30px;background:linear-gradient(135deg,var(--green-dark),#0d6b52);color:#fff}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:#f7df9a;font-weight:700}.live-dot{width:9px;height:9px;border-radius:999px;background:var(--live);box-shadow:0 0 0 4px rgba(229,72,77,.18)}h1{font-size:clamp(2rem,5vw,4.4rem);line-height:1.12;margin:14px 0 12px;letter-spacing:0}.lead{font-size:1.08rem;max-width:760px;color:rgba(255,255,255,.82)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}.section{padding:32px 0}.card,.activation-card{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;box-shadow:0 18px 40px rgba(16,35,29,.06)}.activation-card{padding:18px}.activation-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.card-body{padding:18px}.cover{aspect-ratio:16/9;width:100%;object-fit:cover;background:#dfe6df}.meta{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;color:var(--muted);font-size:.9rem}.chip{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:4px 9px;background:#fff}.chip-live{background:var(--live);border-color:var(--live);color:#fff}.title{font-size:1.18rem;font-weight:700;margin:0 0 8px}.signal-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:18px}.signal{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:12px}.signal b{display:block;font-size:1.35rem}.facet-focus,.readiness{background:#fff;border:1px solid var(--line);border-radius:8px;padding:18px;margin:18px 0}.signals{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}.signal-check,.program-check{border:1px solid var(--line);border-radius:8px;padding:12px;background:#fff}.signal-check.good,.program-check{border-color:rgba(13,107,82,.35)}.signal-check.warn{border-color:rgba(229,72,77,.25)}.decision-score{font-size:2rem;font-weight:700;color:var(--green)}.timeline{display:grid;gap:10px;margin-top:14px}.session{border:1px solid var(--line);border-radius:8px;padding:12px;background:#fff}.footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted)}@media(max-width:760px){.nav-links{display:none}.hero{padding-top:34px}.wrap{width:min(100% - 22px,1120px)}}
 </style>`;
 
 function readJson(relativePath, fallback = {}) {
@@ -767,11 +768,30 @@ function baseHead({ title, description, canonical, image, manifestHref = './mani
 }
 
 function header(relativePrefix = './') {
-  return `<header class="topbar"><div class="wrap nav"><a class="brand" href="${relativePrefix}index.html"><span class="brand-mark">EL</span><b>${brandVisual}</b></a><nav class="nav-links" aria-label="روابط رئيسية"><a href="${relativePrefix}events.html">كل الفعاليات</a><a href="${relativePrefix}today-events.html">اليوم</a><a href="${relativePrefix}this-month.html">هذا الشهر</a><a href="${relativePrefix}cities.html">المدن</a><a href="${relativePrefix}categories.html">التصنيفات</a><a href="${relativePrefix}audiences.html">الجمهور</a><a href="${relativePrefix}organizers.html">للمنظمين</a><a href="${relativePrefix}organizer-intake.html">إضافة فعالية</a><a href="${relativePrefix}sources.html">المصادر</a><a href="${relativePrefix}methodology.html">المنهجية</a></nav><a class="cta" href="${relativePrefix}today-events.html"><span class="live-dot"></span> وضع الحضور</a></div></header>`;
+  return `<header class="topbar"><div class="wrap nav"><a class="brand" href="${relativePrefix}index.html"><span class="brand-mark">EL</span><b>${brandVisual}</b></a><nav class="nav-links" aria-label="روابط رئيسية"><a href="${relativePrefix}events.html">كل الفعاليات</a><a href="${relativePrefix}today-events.html">اليوم</a><a href="${relativePrefix}this-month.html">هذا الشهر</a><a href="${relativePrefix}cities.html">المدن</a><a href="${relativePrefix}categories.html">التصنيفات</a><a href="${relativePrefix}audiences.html">الجمهور</a><a href="${relativePrefix}organizers.html">للمنظمين</a><a href="${relativePrefix}organizer-intake.html">إضافة فعالية</a></nav><a class="cta" href="${relativePrefix}today-events.html"><span class="live-dot"></span> وضع الحضور</a></div></header>`;
 }
 
 function footer(relativePrefix = './') {
-  return `<footer class="footer"><div class="wrap">EventLive يبقي الدومين الرسمي ${platformDomain} ويربط كل فعالية بمصدرها قدر الإمكان. <a href="${relativePrefix}methodology.html">منهجية الجمع والنشر</a> · <a href="${relativePrefix}sources.html">المصادر</a> · <a href="${relativePrefix}trust.html">الثقة</a>. آخر بناء: ${formatDate(buildAt)}</div></footer>`;
+  return `<footer class="footer"><div class="wrap">EventLive يبقي الدومين الرسمي ${platformDomain} ويربط كل فعالية بمصدرها قدر الإمكان. آخر بناء: ${formatDate(buildAt)}</div></footer>`;
+}
+
+function hideOwnerOnlyPublicLinks(html) {
+  return String(html)
+    .replace(/<a\b[^>]*href=(["'])(?:\.\.\/|\.\/)?(?:sources|methodology|trust)\.html\1[^>]*>[\s\S]*?<\/a>/g, '')
+    .replace(/<a\b[^>]*href=(["'])(?:\.\.\/|\.\/)?events\.json\1[^>]*>[\s\S]*?<\/a>/g, '')
+    .replace(/<a href="\.\/sources\.html">المصادر<\/a>/g, '')
+    .replace(/<a href="\.\/methodology\.html">المنهجية<\/a>/g, '')
+    .replace(/<a href="\.\/methodology\.html">منهجية الجمع والنشر<\/a>\s*·\s*/g, '')
+    .replace(/\s*·\s*<a href="\.\/sources\.html">المصادر<\/a>/g, '')
+    .replace(/<a href="\.\.\/sources\.html">المصادر<\/a>/g, '')
+    .replace(/<a href="\.\.\/methodology\.html">المنهجية<\/a>/g, '')
+    .replace(/<a href="\.\.\/methodology\.html">منهجية الجمع والنشر<\/a>\s*·\s*/g, '')
+    .replace(/\s*·\s*<a href="\.\.\/sources\.html">المصادر<\/a>/g, '');
+}
+
+function isOwnerOnlyPage(filePath) {
+  const relativePath = path.relative(distDir, filePath).replace(/\\/g, '/');
+  return relativePath === 'sources.html' || relativePath === 'methodology.html' || relativePath === 'trust.html';
 }
 
 function runtimeAttrs(event) {
@@ -4071,7 +4091,7 @@ ${soonCards}
       .replace(/(<div class="b-meta" id="boardMeta">)[\s\S]*?(<\/div>)/, `$1${escapeHtml(`${nextEvent.city_label || cityLabel(nextEvent.city)} · ${formatDate(nextEvent.starts_at)}`)}$2`)
       .replace(/(<a class="primary" id="boardCta" href=")[^"]*(")/, `$1${escapeHtml(compactEventUrl(nextEvent))}$2`);
   }
-  next = enhanceHomeRuntime(next, events);
+  next = hideOwnerOnlyPublicLinks(enhanceHomeRuntime(next, events));
   if (next !== html) fs.writeFileSync(indexPath, next, 'utf8');
   return next !== html;
 }
@@ -4119,6 +4139,7 @@ function patchEventsBrowsePage(events) {
       </div>`;
 
   let next = html
+    .replace(/"url":"https:\/\/eventme\.live\/events\.json"/g, `"url":"${absoluteUrl('events.html')}"`)
     .replace(/<div class="label">الفعاليات المنشورة<\/div><div class="value">[^<]*<\/div>/, `<div class="label">الفعاليات المنشورة</div><div class="value">${events.length}</div>`)
     .replace(/<div class="label">الجلسات المتاحة<\/div><div class="value">[^<]*<\/div>/, `<div class="label">الجلسات المتاحة</div><div class="value">${sessions}</div>`)
     .replace(/<div class="label">المدن<\/div><div class="value">[^<]*<\/div>/, `<div class="label">المدن</div><div class="value">${cityLinks.size}</div>`)
@@ -4146,6 +4167,7 @@ function patchEventsBrowsePage(events) {
     .replace(/setupFilters\(\);/, 'setupFilters();\n      applyInitialSearchQuery();');
 
   next = enhanceHomeRuntime(next, events);
+  next = hideOwnerOnlyPublicLinks(next);
   if (next !== html) fs.writeFileSync(eventsPath, next, 'utf8');
   return next !== html;
 }
@@ -4173,9 +4195,365 @@ function patchScreenPage() {
   if (!fs.existsSync(screenPath) || !fs.existsSync(todayPath)) return false;
   const fallback = JSON.parse(fs.readFileSync(todayPath, 'utf8'));
   const html = fs.readFileSync(screenPath, 'utf8');
+  const screenFitCss = `<style id="eventlive-screen-fit">
+html, body { width:100%; height:100%; overflow:hidden; }
+body > .site-head { display:none !important; }
+body { line-height:1.45; }
+.screen {
+  height:100vh;
+  min-height:100vh;
+  max-height:100vh;
+  overflow:hidden;
+  grid-template-rows:72px minmax(0,1fr) 38px;
+}
+.screen .topbar,
+.screen .footer { padding:12px clamp(18px, 2.4vw, 36px); }
+.screen .topbar .brand .mark { width:42px; height:42px; }
+.screen .clock { font-size:clamp(28px, 3.2vw, 46px); }
+.screen .stage {
+  min-height:0;
+  height:100%;
+  overflow:hidden;
+  grid-template-columns:minmax(0, 1.04fr) minmax(300px, .62fr);
+  gap:14px;
+  padding:0 clamp(18px, 2.4vw, 36px) 12px;
+}
+.screen .focus,
+.screen .side { min-height:0; overflow:hidden; border-radius:14px; }
+.screen .focus {
+  padding:clamp(18px, 2.4vw, 34px);
+  gap:clamp(8px, 1.1vw, 14px);
+  align-content:center;
+}
+.screen .focus h1 {
+  font-size:clamp(30px, 4.1vw, 64px);
+  line-height:1.1;
+  max-height:2.25em;
+  overflow:hidden;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+}
+.screen .focus-meta {
+  font-size:clamp(17px, 1.55vw, 26px);
+  line-height:1.45;
+  max-height:2.9em;
+  overflow:hidden;
+}
+.screen .countdown { font-size:clamp(38px, 6vw, 92px); line-height:1; }
+.screen .live-alert { padding:10px 12px; gap:4px; }
+.screen .live-alert strong {
+  font-size:clamp(16px, 1.5vw, 24px);
+  line-height:1.3;
+  max-height:2.6em;
+  overflow:hidden;
+}
+.screen .live-alert small {
+  font-size:clamp(12px, 1vw, 16px);
+  line-height:1.35;
+  max-height:2.7em;
+  overflow:hidden;
+}
+.screen .actions { gap:8px; }
+.screen .actions a { min-height:38px; padding:8px 12px; }
+.screen .side { padding:16px; display:grid; grid-template-rows:auto minmax(0, 1fr) auto; gap:10px; }
+.screen .side h2 { font-size:clamp(20px, 1.8vw, 30px); margin:0 0 4px; }
+.screen .status-line { font-size:clamp(13px, 1vw, 16px); line-height:1.45; }
+.screen .queue { gap:8px; min-height:0; overflow:hidden; align-content:start; }
+.screen .queue-item {
+  padding:9px 12px;
+  gap:3px;
+  min-height:0;
+  overflow:hidden;
+  align-content:center;
+}
+.screen .queue-item:nth-child(n+4) { display:none; }
+.screen .queue-item .chip {
+  min-height:26px;
+  padding:4px 10px;
+  font-size:clamp(11px, .82vw, 13px);
+  line-height:1;
+  justify-self:start;
+  white-space:nowrap;
+}
+.screen .queue-item strong {
+  font-size:clamp(14px, 1.05vw, 19px);
+  line-height:1.45;
+  overflow:hidden;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  text-wrap:balance;
+}
+.screen .queue-item span:not(.chip) {
+  font-size:clamp(12px, .92vw, 15px);
+  line-height:1.45;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.screen .qr-panel {
+  grid-template-columns:82px minmax(0, 1fr);
+  padding:10px;
+  gap:10px;
+}
+.screen .qr-panel img { width:82px; height:82px; border-radius:10px; padding:6px; }
+.screen .qr-panel strong { font-size:clamp(15px, 1.2vw, 20px); margin:0 0 2px; }
+.screen .qr-panel span,
+.screen .footer { font-size:clamp(11px, .95vw, 15px); }
+@media (max-height: 820px) {
+  .screen { grid-template-rows:64px minmax(0,1fr) 32px; }
+  .screen .topbar,
+  .screen .footer { padding:8px clamp(16px, 2vw, 28px); }
+  .screen .stage { padding:0 clamp(16px, 2vw, 28px) 8px; }
+  .screen .side { grid-template-rows:auto minmax(0, 1fr); }
+  .screen .queue { align-content:stretch; }
+  .screen .queue-item { min-height:0; }
+  .screen .queue-item:nth-child(n+3) { display:none; }
+  .screen .qr-panel { display:none; }
+}
+@media (max-width: 760px) {
+  html, body { overflow:hidden; }
+  .screen { grid-template-rows:62px minmax(0, 1fr) 34px; }
+  .screen .topbar { flex-direction:row; align-items:center; }
+  .screen .stage { grid-template-columns:1fr; padding:0 12px 10px; gap:10px; }
+  .screen .focus { padding:14px; }
+  .screen .side { padding:12px; }
+  .screen .countdown { font-size:42px; }
+  .screen .queue-item:nth-child(n+3) { display:none; }
+  .screen .qr-panel { display:none; }
+  .screen .actions a { min-height:34px; padding:7px 10px; font-size:12px; }
+  .screen .footer { padding:7px 12px; }
+}
+body[data-screen-mode="event-screen"] .screen .side { grid-template-rows:auto minmax(0, 1fr); }
+body[data-screen-mode="event-screen"] .screen .queue { align-content:start; }
+body[data-screen-mode="event-screen"] .screen .queue-item { padding:8px 12px; }
+body[data-screen-mode="event-screen"] .screen .queue-item:nth-child(n+3) { display:grid; }
+body[data-screen-mode="event-screen"] .screen .queue-item:nth-child(n+5) { display:none; }
+body[data-screen-mode="event-screen"] .screen .qr-panel { display:none !important; }
+</style>`;
+  const screenEventModeScript = String.raw`
+    const screenParams = new URLSearchParams(window.location.search);
+    const requestedEventKey = (screenParams.get('event') || screenParams.get('id') || screenParams.get('slug') || '').trim();
+
+    function escapeHTML(value) {
+      return String(value ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function formatClock(date) {
+      return date.toLocaleTimeString('ar-SA', { hour:'2-digit', minute:'2-digit' });
+    }
+
+    function formatDate(iso) {
+      const date = new Date(iso);
+      return Number.isNaN(date.getTime()) ? String(iso || '-') : date.toLocaleString('ar-SA', { dateStyle:'medium', timeStyle:'short' });
+    }
+
+    function formatRemaining(event) {
+      const now = Date.now();
+      const start = new Date(event.starts_at).getTime();
+      const end = new Date(event.ends_at).getTime();
+      if (!Number.isNaN(start) && now < start) {
+        const totalMinutes = Math.max(0, Math.ceil((start - now) / 60000));
+        const days = Math.floor(totalMinutes / 1440);
+        const hours = Math.floor((totalMinutes % 1440) / 60);
+        const minutes = totalMinutes % 60;
+        if (days > 0) return days + ' يوم ' + hours + ' س';
+        if (hours > 0) return hours + ' س ' + minutes + ' د';
+        return minutes + ' د';
+      }
+      if (!Number.isNaN(end) && now <= end) return event.status === 'ongoing' ? 'برنامج جارٍ' : 'مباشر الآن';
+      return event.status_label || 'غير محدد';
+    }
+
+    function normalizeKey(value) {
+      return String(value || '').trim().toLowerCase().replace(/^\.\/events\//, '').replace(/\.html$/, '');
+    }
+
+    function findRequestedEvent(events, key) {
+      const needle = normalizeKey(key);
+      if (!needle) return null;
+      return events.find((event) => [
+        event.id,
+        event.slug,
+        event.file_slug,
+        event.detail_url,
+        event.url,
+        event.canonical_url
+      ].some((value) => normalizeKey(value) === needle || normalizeKey(value).endsWith('/' + needle)));
+    }
+
+    function windowStatus(startsAt, endsAt) {
+      const now = Date.now();
+      const start = new Date(startsAt).getTime();
+      const end = new Date(endsAt || startsAt).getTime();
+      if (!Number.isNaN(start) && now < start) return { status:'upcoming', label:'قادمة', reason:'الجلسة القادمة' };
+      if (!Number.isNaN(end) && now <= end) return { status:'live', label:'تحدث الآن', reason:'يعرض الآن' };
+      return { status:'ended', label:'انتهت', reason:'آخر ما انتهى' };
+    }
+
+    function sessionToScreenItem(session, event, index) {
+      const status = windowStatus(session.starts_at || event.starts_at, session.ends_at || event.ends_at || session.starts_at);
+      const room = session.room || event.venue || event.venue_address || '';
+      return {
+        id: session.id || event.id + '-session-' + index,
+        title: session.title || event.title,
+        starts_at: session.starts_at || event.starts_at,
+        ends_at: session.ends_at || event.ends_at || session.starts_at || event.starts_at,
+        status: status.status,
+        status_label: status.label,
+        priority_reason: status.reason,
+        action_label: 'فتح بطاقة الفعالية',
+        action_url: event.detail_url || './events.html',
+        city_label: event.city_label || event.city || '',
+        city: event.city || '',
+        venue: room,
+        room,
+        track: session.track || '',
+        speaker: session.speaker || '',
+        kind: 'session'
+      };
+    }
+
+    function fallbackEventItem(event) {
+      const status = windowStatus(event.starts_at, event.ends_at);
+      return {
+        id: event.id,
+        title: event.title,
+        starts_at: event.starts_at,
+        ends_at: event.ends_at,
+        status: status.status,
+        status_label: status.label,
+        priority_reason: status.reason,
+        action_label: event.live_schedule_ready ? 'فتح الجدول الحي' : 'فتح بطاقة الفعالية',
+        action_url: event.detail_url || './events.html',
+        city_label: event.city_label || event.city || '',
+        city: event.city || '',
+        venue: event.venue || '',
+        room: event.venue || '',
+        track: event.category_label || event.category || '',
+        kind: 'event'
+      };
+    }
+
+    function normalizeUpdateForScreen(update, event) {
+      if (!update) return null;
+      const linkedSession = (event.sessions || []).find((session) => session.id && session.id === update.session_id);
+      return {
+        priority_label: update.priority_label || (update.level === 'room_change' ? 'تغيير مهم' : 'تحديث حي'),
+        level_label: update.level_label || update.level || 'تحديث',
+        title: update.title || 'تحديث حي',
+        message: update.message || '',
+        session_room: update.session_room || linkedSession?.room || '',
+      };
+    }
+
+    function eventToScreenData(event) {
+      const rawSessions = Array.isArray(event.sessions) && event.sessions.length
+        ? event.sessions
+        : [event.attendance_window || fallbackEventItem(event)];
+      const sessions = rawSessions.map((session, index) => sessionToScreenItem(session, event, index));
+      const current = sessions.find((session) => session.status === 'live');
+      const upcoming = sessions.filter((session) => session.status === 'upcoming');
+      const ended = sessions.filter((session) => session.status === 'ended');
+      const focus = current || upcoming[0] || ended.at(-1) || fallbackEventItem(event);
+      const queue = (current ? [current, ...upcoming] : upcoming.length ? upcoming : ended.slice(-3)).slice(0, 4);
+      const liveUpdates = Array.isArray(event.live_updates) ? event.live_updates : [];
+      return {
+        mode: 'event-screen',
+        generated_at: new Date().toISOString(),
+        platform: 'EventLive',
+        focus,
+        queue,
+        screen_title: event.title || 'فعالية EventLive',
+        screen_summary: [
+          (event.city_label || event.city || '').trim(),
+          (event.venue || '').trim(),
+          sessions.length ? sessions.length + ' فقرات' : '',
+          current ? 'جلسة مباشرة الآن' : upcoming.length ? upcoming.length + ' قادمة' : 'انتهى الجدول'
+        ].filter(Boolean).join(' | '),
+        live_updates: {
+          focus: normalizeUpdateForScreen(liveUpdates[0], event),
+          totals: {
+            updates: liveUpdates.length,
+            urgent: liveUpdates.filter((update) => ['room_change', 'delay'].includes(update.level)).length
+          }
+        },
+        signals: {
+          events: 1,
+          upcoming: upcoming.length,
+          ongoing_programs: current ? 1 : 0,
+          live_schedule_ready: sessions.length
+        }
+      };
+    }`;
+  const screenQueueRendererScript = String.raw`function renderQueueItem(event) {
+      const meta = event.kind === 'session'
+        ? [formatDate(event.starts_at), event.room || event.venue, event.track].filter(Boolean).join(' | ')
+        : [event.city_label || event.city, event.venue, formatDate(event.starts_at)].filter(Boolean).join(' | ');
+      return '<article class="queue-item">' +
+        '<span class="chip ' + escapeHTML(event.status || '') + '">' + escapeHTML(event.status_label || event.action_label || 'أولوية') + '</span>' +
+        '<strong>' + escapeHTML(event.title) + '</strong>' +
+        '<span>' + escapeHTML(meta) + '</span>' +
+      '</article>';
+    }`;
+  const screenRefreshScript = String.raw`async function refresh() {
+      try {
+        if (requestedEventKey) {
+          const response = await fetch('./events.json', { cache:'no-store' });
+          if (response.ok) {
+            const catalog = await response.json();
+            const event = findRequestedEvent(catalog.events || [], requestedEventKey);
+            screenData = event
+              ? eventToScreenData(event)
+              : {
+                mode: 'event-missing',
+                focus: null,
+                queue: [],
+                live_updates: { focus: null, totals: { updates: 0, urgent: 0 } },
+                signals: { events: 0, upcoming: 0, ongoing_programs: 0, live_schedule_ready: 0 },
+                screen_summary: 'لم يتم العثور على الفعالية المطلوبة: ' + requestedEventKey
+              };
+          }
+        } else {
+          const response = await fetch('./today.json', { cache:'no-store' });
+          if (response.ok) screenData = await response.json();
+        }
+      } catch {}
+      render(screenData);
+    }`;
   let next = html
     .replace(/const fallbackToday = \{[\s\S]*?\};\n\s*const controls =/, `const fallbackToday = ${scriptValue(fallback)};\n    const controls =`)
-    .replace(/"dateModified":"[^"]+"/g, `"dateModified":"${buildAt}"`);
+    .replace(/"dateModified":"[^"]+"/g, `"dateModified":"${buildAt}"`)
+    .replace(/<style id="eventlive-screen-fit">[\s\S]*?<\/style>/g, '')
+    .replace(/<\/head>/i, `  ${screenFitCss}\n</head>`)
+    .replace(/\n\s*const screenParams = new URLSearchParams\(window\.location\.search\);[\s\S]*?\n\s*function renderQueueItem\(event\) \{/, '\n    function renderQueueItem(event) {')
+    .replace(/\n\s*document\.body\.dataset\.screenMode = data\.mode \|\| 'platform';[\s\S]*?if \(screenQrPanel\) screenQrPanel\.hidden = data\.mode === 'event-screen';/g, '')
+    .replace(/<span><strong>\s*<span class="brand-word"[\s\S]*?<\/span>\s*<\/strong><span>شاشة الحضور الحية<\/span><\/span>/, '<span><strong>شاشة الحضور الحية</strong><span>EventLive</span></span>')
+    .replace(/<a href="\.\/today\.json">ملف الآن JSON<\/a>/g, '')
+    .replace(/<a href="\.\/events\.json">[^<]*<\/a>/g, '')
+    .replace(/\[event\.city, event\.venue, formatDate\(event\.starts_at\)\]\.filter\(Boolean\)\.join\(' \| '\)/g, "[event.city_label || event.city, event.venue, formatDate(event.starts_at)].filter(Boolean).join(' | ')")
+    .replace(/\[focus\.city, focus\.venue, focus\.action_label\]\.filter\(Boolean\)\.join\(' \| '\)/g, "[focus.city_label || focus.city, focus.venue, focus.action_label].filter(Boolean).join(' | ')")
+    .replace(/\(signals\.actionable \|\| 0\) \+ ' أولوية قابلة للتصرف \| ' \+ \(signals\.live_schedule_ready \|\| 0\) \+ ' جدول حي جاهز \| ' \+ \(liveUpdates\.urgent \|\| 0\) \+ ' تحديث مهم'/g, "(signals.events || 0) + ' فعالية في المنصة | ' + (signals.upcoming || 0) + ' قادمة | ' + (signals.ongoing_programs || 0) + ' برامج جارية | ' + (signals.live_schedule_ready || 0) + ' جدول حي جاهز'")
+    .replace(/let screenData = fallbackToday;\n/, `let screenData = fallbackToday;\n${screenEventModeScript}\n`)
+    .replace(/function renderQueueItem\(event\) \{[\s\S]*?\n    \}\n\n    function render\(data\) \{/, `${screenQueueRendererScript}\n\n    function render(data) {`)
+    .replace(/controls\.clock\.textContent = formatClock\(now\);/, `controls.clock.textContent = formatClock(now);
+      document.body.dataset.screenMode = data.mode || 'platform';
+      const screenSideTitle = document.querySelector('.screen .side h2');
+      const screenBrandTitle = document.querySelector('.screen .brand strong');
+      const screenQrPanel = document.querySelector('.screen .qr-panel');
+      if (screenSideTitle) screenSideTitle.textContent = data.mode === 'event-screen' ? 'جدول الفعالية الآن' : 'القادم على EventLive';
+      if (screenBrandTitle) screenBrandTitle.textContent = data.mode === 'event-screen' ? 'شاشة تشغيل الفعالية' : 'شاشة الحضور الحية';
+      if (screenQrPanel) screenQrPanel.hidden = data.mode === 'event-screen';`)
+    .replace(/controls\.signals\.textContent = \(signals\.events \|\| 0\) \+ ' فعالية في المنصة \| ' \+ \(signals\.upcoming \|\| 0\) \+ ' قادمة \| ' \+ \(signals\.ongoing_programs \|\| 0\) \+ ' برامج جارية \| ' \+ \(signals\.live_schedule_ready \|\| 0\) \+ ' جدول حي جاهز';/, `controls.signals.textContent = data.mode === 'event-screen'
+        ? (data.screen_summary || ((signals.live_schedule_ready || 0) + ' فقرات | ' + (signals.upcoming || 0) + ' قادمة'))
+        : (signals.events || 0) + ' فعالية في المنصة | ' + (signals.upcoming || 0) + ' قادمة | ' + (signals.ongoing_programs || 0) + ' برامج جارية | ' + (signals.live_schedule_ready || 0) + ' جدول حي جاهز';`)
+    .replace(/async function refresh\(\) \{[\s\S]*?\n    \}\n\n    refresh\(\);/, `${screenRefreshScript}\n\n    refresh();`);
   if (next !== html) fs.writeFileSync(screenPath, next, 'utf8');
   return next !== html;
 }
@@ -4186,7 +4564,6 @@ function writeServiceWorker() {
     './',
     './index.html',
     './events.html',
-    './events.json',
     './llms.txt',
     './ai-policy.txt',
     './robots.txt',
@@ -4213,16 +4590,13 @@ function writeServiceWorker() {
     './source-coverage-gaps.json',
     './source-health.html',
     './source-health.json',
-    './sources.html',
     './sources.json',
-    './methodology.html',
     './methodology.json',
     './organizer-intake.html',
     './organizer-intake.json',
     './activation.json',
     './readiness.html',
     './readiness.json',
-    './trust.html',
     './trust.json',
     './events.ics',
     './feeds/all.ics',
@@ -4261,7 +4635,11 @@ function sitemapImageXml(event = {}) {
 
 function writeSitemap(events = []) {
   const eventByPage = new Map(events.map((event) => [`events/${event.file_slug}.html`, event]));
-  const sitemapPaths = [...new Set(htmlFiles(distDir).map((file) => file === 'index.html' ? '' : file.replace(/\\/g, '/')))];
+  const ownerOnlyPages = new Set(['sources.html', 'methodology.html', 'trust.html']);
+  const sitemapPaths = [...new Set(htmlFiles(distDir)
+    .map((file) => file.replace(/\\/g, '/'))
+    .filter((file) => !ownerOnlyPages.has(file))
+    .map((file) => file === 'index.html' ? '' : file))];
   const urls = sitemapPaths
     .sort()
     .map((file) => {
@@ -4283,6 +4661,10 @@ function writeAiSearchFiles(events) {
 
   writeText(path.join(distDir, 'robots.txt'), stripTrailingWhitespace(`User-agent: *
 Allow: /
+Disallow: /events.json
+Disallow: /sources.html
+Disallow: /methodology.html
+Disallow: /trust.html
 Host: ${platformDomain}
 Sitemap: ${siteUrl}/sitemap.xml
 `));
@@ -4318,13 +4700,10 @@ Important public pages:
 - Cities: ${siteUrl}/cities.html
 - Categories: ${siteUrl}/categories.html
 - Guides: ${siteUrl}/guides.html
-- Trust and source methodology: ${siteUrl}/trust.html
-- Source methodology: ${siteUrl}/methodology.html
 - Organizers: ${siteUrl}/organizers.html
 - Readiness: ${siteUrl}/readiness.html
 
 Machine-readable feeds:
-- Events JSON: ${siteUrl}/events.json
 - Live status JSON: ${siteUrl}/live-status.json
 - Sources JSON: ${siteUrl}/sources.json
 - Readiness JSON: ${siteUrl}/readiness.json
@@ -4351,7 +4730,7 @@ Publication policy:
 ${platformName} welcomes indexing, retrieval, summarization, and citation of public pages on ${siteUrl}/ when outputs preserve the event source, date, city, venue, and canonical URL.
 
 Allowed public context:
-- Event detail pages, city pages, category pages, guides, trust pages, source methodology pages, and public machine-readable feeds.
+- Event detail pages, city pages, category pages, guides, organizer pages, and public machine-readable feeds.
 - Ended events may be summarized as normal public event records with their historical dates intact.
 - Machine-readable feeds may be used to understand current counts, live readiness, and source transparency.
 
@@ -4367,7 +4746,6 @@ Boundaries:
 
 Preferred files:
 - ${siteUrl}/llms.txt
-- ${siteUrl}/events.json
 - ${siteUrl}/live-status.json
 - ${siteUrl}/sources.json
 - ${siteUrl}/readiness.json
@@ -4554,7 +4932,9 @@ function patchFile(filePath) {
   const ext = path.extname(filePath).toLowerCase();
   if (!['.html', '.json', '.webmanifest', '.xml', '.txt', '.md', '.ics', '.svg', '.js', '.css'].includes(ext)) return false;
   const before = fs.readFileSync(filePath, 'utf8');
-  const after = ext === '.html' ? stripTrailingWhitespace(decorateBrandHtml(before, filePath)) : normalizeBrandText(before);
+  const branded = ext === '.html' ? decorateBrandHtml(before, filePath) : normalizeBrandText(before);
+  const ownerFiltered = ext === '.html' && !isOwnerOnlyPage(filePath) ? hideOwnerOnlyPublicLinks(branded) : branded;
+  const after = ext === '.html' ? stripTrailingWhitespace(ownerFiltered) : ownerFiltered;
   if (after === before) return false;
   fs.writeFileSync(filePath, after, 'utf8');
   return true;

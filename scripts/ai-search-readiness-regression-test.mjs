@@ -57,7 +57,6 @@ assert.match(llms, new RegExp(`Categories: ${counts.categories}\\b`), 'llms.txt 
 assert.match(llms, new RegExp(`Events with source images: ${counts.sourceImages}\\b`), 'llms.txt must publish source-image count');
 
 for (const expectedUrl of [
-  `${siteUrl}/events.json`,
   `${siteUrl}/live-status.json`,
   `${siteUrl}/sources.json`,
   `${siteUrl}/readiness.json`,
@@ -65,10 +64,18 @@ for (const expectedUrl of [
   `${siteUrl}/methodology.json`,
   `${siteUrl}/events.ics`,
   `${siteUrl}/sitemap.xml`,
-  `${siteUrl}/trust.html`,
   `${siteUrl}/organizers.html`
 ]) {
   assert.match(llms, new RegExp(expectedUrl.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `llms.txt must include ${expectedUrl}`);
+}
+
+for (const ownerOnlyUrl of [
+  `${siteUrl}/events.json`,
+  `${siteUrl}/trust.html`,
+  `${siteUrl}/sources.html`,
+  `${siteUrl}/methodology.html`
+]) {
+  assert.doesNotMatch(llms, new RegExp(ownerOnlyUrl.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `llms.txt must not promote owner-only ${ownerOnlyUrl}`);
 }
 
 assert.match(llms, /Prefer canonical event detail pages/i, 'llms.txt must guide AI systems to event detail pages');
@@ -91,6 +98,8 @@ assert.match(sitemap, /https:\/\/eventme\.live\//, 'sitemap must keep production
 assert.match(serviceWorker, /\.\/llms\.txt/, 'service worker must precache llms.txt');
 assert.match(serviceWorker, /\.\/ai-policy\.txt/, 'service worker must precache ai-policy.txt');
 assert.match(serviceWorker, /\.\/robots\.txt/, 'service worker must precache robots.txt');
+assert.doesNotMatch(serviceWorker, /\.\/events\.json/, 'service worker must not precache owner-only events.json');
+assert.doesNotMatch(serviceWorker, /\.\/trust\.html/, 'service worker must not precache owner-only trust.html');
 
 if (liveStatus.totals) {
   assert.equal(liveStatus.totals.events, counts.events, 'live-status totals must match events.json count');

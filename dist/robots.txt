@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /events.json
+Disallow: /sources.html
+Disallow: /methodology.html
+Disallow: /trust.html
 Host: eventme.live
 Sitemap: https://eventme.live/sitemap.xml

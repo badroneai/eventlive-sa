@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-07T19:38:07.442Z",
+  "generated_at": "2026-07-07T23:05:30.937Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "cities_count": 19,
   "totals": {
-    "events": 416,
+    "events": 430,
     "upcoming_or_active": 136,
-    "ended": 280,
+    "ended": 294,
     "live_ready": 51
   },
   "cities": [
@@ -14,9 +14,9 @@
       "slug": "riyadh",
       "label": "الرياض",
       "url": "./cities/riyadh.html",
-      "total_events": 189,
+      "total_events": 195,
       "upcoming_or_active": 89,
-      "ended": 100,
+      "ended": 106,
       "live_ready": 22,
       "sources": [
         "CODE MCIT Programs",
@@ -121,9 +121,9 @@
       "slug": "jeddah",
       "label": "جدة",
       "url": "./cities/jeddah.html",
-      "total_events": 52,
+      "total_events": 53,
       "upcoming_or_active": 4,
-      "ended": 48,
+      "ended": 49,
       "live_ready": 0,
       "sources": [
         "Jeddah Chamber Exhibitions and Events Center",
@@ -156,9 +156,9 @@
       "slug": "saudi-arabia",
       "label": "السعودية",
       "url": "./cities/saudi-arabia.html",
-      "total_events": 9,
+      "total_events": 10,
       "upcoming_or_active": 4,
-      "ended": 5,
+      "ended": 6,
       "live_ready": 0,
       "sources": [
         "CODE MCIT Programs",
@@ -232,9 +232,9 @@
       "slug": "global",
       "label": "دولي",
       "url": "./cities/global.html",
-      "total_events": 9,
+      "total_events": 15,
       "upcoming_or_active": 1,
-      "ended": 8,
+      "ended": 14,
       "live_ready": 0,
       "sources": [
         "Invest Saudi Events",

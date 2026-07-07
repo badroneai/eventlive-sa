@@ -10,7 +10,10 @@
 - Source candidates total: 185
 - Source registry total: 66
 - Total errors: 0
-- Total warnings: 0
+- Total warnings: 1
 
 ## Status
 - PASS: schema validation successful.
+
+## Warnings
+- source candidate 51: possible duplicate of catalog event 'event-comptia-a'

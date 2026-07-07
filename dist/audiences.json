@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-07T19:38:07.442Z",
+  "generated_at": "2026-07-07T23:05:30.937Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "audiences_count": 12,
   "totals": {
-    "events": 416,
+    "events": 430,
     "upcoming_or_active": 136,
-    "ended": 280,
+    "ended": 294,
     "live_ready": 51
   },
   "audiences": [
@@ -14,9 +14,9 @@
       "slug": "professionals",
       "label": "موظفون ومهنيون",
       "url": "./for/professionals.html",
-      "total_events": 208,
+      "total_events": 222,
       "upcoming_or_active": 77,
-      "ended": 131,
+      "ended": 145,
       "live_ready": 45,
       "sources": [
         "Abha Chamber Events",
@@ -77,7 +77,7 @@
         "status": "ongoing",
         "url": "./events/event-horses-and-equestrian-heritage-exhibition.html"
       },
-      "count": 208,
+      "count": 222,
       "sources_count": 23,
       "cities_count": 14,
       "categories_count": 10
@@ -86,9 +86,9 @@
       "slug": "creatives",
       "label": "مبدعون وفنون",
       "url": "./for/creatives.html",
-      "total_events": 134,
+      "total_events": 139,
       "upcoming_or_active": 65,
-      "ended": 69,
+      "ended": 74,
       "live_ready": 4,
       "sources": [
         "Asharqia Chamber Events",
@@ -144,7 +144,7 @@
         "status": "ongoing",
         "url": "./events/event-riyadh-season-blvd-city.html"
       },
-      "count": 134,
+      "count": 139,
       "sources_count": 18,
       "cities_count": 12,
       "categories_count": 12
@@ -153,9 +153,9 @@
       "slug": "tech",
       "label": "تقنيون",
       "url": "./for/tech.html",
-      "total_events": 68,
+      "total_events": 69,
       "upcoming_or_active": 43,
-      "ended": 25,
+      "ended": 26,
       "live_ready": 1,
       "sources": [
         "CODE MCIT Programs",
@@ -200,7 +200,7 @@
         "status": "ongoing",
         "url": "./events/event-world-cup-2026-fan-zone-at-kimpton-kafd.html"
       },
-      "count": 68,
+      "count": 69,
       "sources_count": 13,
       "cities_count": 7,
       "categories_count": 11
@@ -252,6 +252,54 @@
       "sources_count": 8,
       "cities_count": 8,
       "categories_count": 7
+    },
+    {
+      "slug": "researchers",
+      "label": "باحثون وأكاديميون",
+      "url": "./for/researchers.html",
+      "total_events": 75,
+      "upcoming_or_active": 31,
+      "ended": 44,
+      "live_ready": 7,
+      "sources": [
+        "Dhahran Expo Calendar",
+        "Jazan Chamber Events",
+        "Riyadh City Events",
+        "Saudi Space Agency Events",
+        "Saudi Universities and Technical Colleges",
+        "Saudi Water Authority Events",
+        "Tuwaiq Academy Bootcamps and Programs"
+      ],
+      "cities": [
+        "الرياض",
+        "السعودية",
+        "الظهران",
+        "ثول",
+        "جازان",
+        "جدة",
+        "دولي"
+      ],
+      "categories": [
+        "ثقافة وفنون",
+        "جامعات ومجتمع",
+        "جوائز وتكريم",
+        "رياضة وفعاليات جماهيرية",
+        "علوم وفضاء",
+        "فعاليات الغرف التجارية",
+        "مؤتمرات ومنتديات",
+        "معارض وتجارية",
+        "ورش تنظيمية وصحية"
+      ],
+      "next_event": {
+        "title": "Prince Faisal Bin Fahd Art Exhibition: Summer 2026",
+        "starts_at": "2026-07-01T16:00:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-prince-faisal-bin-fahd-art-exhibition-summer-2026.html"
+      },
+      "count": 75,
+      "sources_count": 7,
+      "cities_count": 7,
+      "categories_count": 9
     },
     {
       "slug": "skilled-trades",
@@ -309,54 +357,6 @@
       "sources_count": 13,
       "cities_count": 9,
       "categories_count": 10
-    },
-    {
-      "slug": "researchers",
-      "label": "باحثون وأكاديميون",
-      "url": "./for/researchers.html",
-      "total_events": 61,
-      "upcoming_or_active": 31,
-      "ended": 30,
-      "live_ready": 7,
-      "sources": [
-        "Dhahran Expo Calendar",
-        "Jazan Chamber Events",
-        "Riyadh City Events",
-        "Saudi Space Agency Events",
-        "Saudi Universities and Technical Colleges",
-        "Saudi Water Authority Events",
-        "Tuwaiq Academy Bootcamps and Programs"
-      ],
-      "cities": [
-        "الرياض",
-        "السعودية",
-        "الظهران",
-        "ثول",
-        "جازان",
-        "جدة",
-        "دولي"
-      ],
-      "categories": [
-        "ثقافة وفنون",
-        "جامعات ومجتمع",
-        "جوائز وتكريم",
-        "رياضة وفعاليات جماهيرية",
-        "علوم وفضاء",
-        "فعاليات الغرف التجارية",
-        "مؤتمرات ومنتديات",
-        "معارض وتجارية",
-        "ورش تنظيمية وصحية"
-      ],
-      "next_event": {
-        "title": "Prince Faisal Bin Fahd Art Exhibition: Summer 2026",
-        "starts_at": "2026-07-01T16:00:00+03:00",
-        "status": "ongoing",
-        "url": "./events/event-prince-faisal-bin-fahd-art-exhibition-summer-2026.html"
-      },
-      "count": 61,
-      "sources_count": 7,
-      "cities_count": 7,
-      "categories_count": 9
     },
     {
       "slug": "students",

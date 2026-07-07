@@ -21,6 +21,7 @@ function extractJsonLd(html) {
 const htmlFiles = walkFiles(distDir)
   .filter((filePath) => filePath.endsWith('.html'))
   .sort((a, b) => a.localeCompare(b));
+const ownerOnlyPages = new Set(['sources.html', 'methodology.html', 'trust.html']);
 
 assert.ok(htmlFiles.length >= 100, 'site design coverage must inspect the generated static site, not just a few pages');
 
@@ -38,6 +39,13 @@ for (const filePath of htmlFiles) {
   if (/\bEventMe\b/.test(html) || /Event Life|eventlife|eventlive\.sa/i.test(html)) errors.push('legacy brand/domain text visible');
   if (/Users\/baderalsalman|\/Users\//i.test(html)) errors.push('local filesystem path leaked');
   if (!/EventLive/.test(html)) errors.push('missing EventLive brand surface');
+  if (!/IBM Plex Sans Arabic/.test(html)) errors.push('missing EventLive Arabic font');
+  if (!ownerOnlyPages.has(relativePath) && /<a\b[^>]*href=(["'])(?:\.\.\/|\.\/)?(?:sources|methodology|trust)\.html\1/i.test(html)) {
+    errors.push('public page links to owner-only sources/methodology pages');
+  }
+  if (!ownerOnlyPages.has(relativePath) && /<a\b[^>]*href=(["'])(?:\.\.\/|\.\/)?events\.json\1/i.test(html)) {
+    errors.push('public page links to owner-only events.json');
+  }
 
   let jsonLd = [];
   try {

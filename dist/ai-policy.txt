@@ -3,7 +3,7 @@
 EventLive welcomes indexing, retrieval, summarization, and citation of public pages on https://eventme.live/ when outputs preserve the event source, date, city, venue, and canonical URL.
 
 Allowed public context:
-- Event detail pages, city pages, category pages, guides, trust pages, source methodology pages, and public machine-readable feeds.
+- Event detail pages, city pages, category pages, guides, organizer pages, and public machine-readable feeds.
 - Ended events may be summarized as normal public event records with their historical dates intact.
 - Machine-readable feeds may be used to understand current counts, live readiness, and source transparency.
 
@@ -19,7 +19,6 @@ Boundaries:
 
 Preferred files:
 - https://eventme.live/llms.txt
-- https://eventme.live/events.json
 - https://eventme.live/live-status.json
 - https://eventme.live/sources.json
 - https://eventme.live/readiness.json

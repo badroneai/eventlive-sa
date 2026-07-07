@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-07T19:38:07.442Z",
+  "generated_at": "2026-07-07T23:05:30.937Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "categories_count": 12,
   "totals": {
-    "events": 416,
+    "events": 430,
     "upcoming_or_active": 136,
-    "ended": 280,
+    "ended": 294,
     "live_ready": 51
   },
   "categories": [
@@ -294,9 +294,9 @@
       "slug": "awards-ceremonies",
       "label": "جوائز وتكريم",
       "url": "./categories/awards-ceremonies.html",
-      "total_events": 10,
+      "total_events": 11,
       "upcoming_or_active": 8,
-      "ended": 2,
+      "ended": 3,
       "live_ready": 1,
       "sources": [
         "Dhahran Expo Calendar",
@@ -450,9 +450,9 @@
       "slug": "science-space",
       "label": "علوم وفضاء",
       "url": "./categories/science-space.html",
-      "total_events": 15,
+      "total_events": 28,
       "upcoming_or_active": 2,
-      "ended": 13,
+      "ended": 26,
       "live_ready": 0,
       "sources": [
         "Riyadh City Events",

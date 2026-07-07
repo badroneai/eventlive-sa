@@ -50,5 +50,23 @@ for (const forbidden of [
 
 assert.match(screen, /"dateModified":"[^"]+"/, 'screen structured data must expose dateModified');
 assert.match(screen, new RegExp(`"dateModified":"${events.generated_at.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}"`), 'screen structured data dateModified must match build time');
+assert.doesNotMatch(screen, /<a\b[^>]*href=["']\.\/events\.json["']/i, 'screen.html must not expose owner-only events.json as a public link');
+assert.doesNotMatch(screen, /<a\b[^>]*href=["']\.\/today\.json["']/i, 'screen.html must not expose operational JSON as a screen action');
+assert.doesNotMatch(screen, /<strong>\s*<span class="brand-word"[\s\S]*?شاشة الحضور الحية/, 'screen.html must not duplicate the EventLive brand in the screen header');
+assert.match(screen, /event\.city_label \|\| event\.city/, 'screen queue must prefer Arabic city labels');
+assert.match(screen, /focus\.city_label \|\| focus\.city/, 'screen focus meta must prefer Arabic city labels');
+assert.match(screen, /فعالية في المنصة/, 'screen signals must explain platform totals clearly');
+assert.match(screen, /id="eventlive-screen-fit"/, 'screen.html must include the no-scroll screen layout patch');
+assert.match(screen, /body > \.site-head \{ display:none !important; \}/, 'screen.html must hide the public site header in screen mode');
+assert.match(screen, /max-height:100vh/, 'screen.html must fit the screen viewport without page scroll');
+assert.match(screen, /\.screen \.queue-item span:not\(\.chip\)/, 'screen queue metadata must not squeeze the status chip');
+assert.match(screen, /-webkit-line-clamp:2/, 'screen queue titles must clamp cleanly instead of clipping glyphs');
+assert.match(screen, /@media \(max-height: 820px\)/, 'screen mode must handle browser-height constrained displays');
+assert.match(screen, /\.screen \.qr-panel \{ display:none; \}/, 'screen mode must prioritize readable queue cards over QR on short displays');
+assert.match(screen, /requestedEventKey/, 'screen.html must support event-specific screen links');
+assert.match(screen, /eventToScreenData/, 'screen.html must transform an event schedule into screen data');
+assert.match(screen, /fetch\('\.\/events\.json'/, 'screen event mode must load the catalog only when an event key is requested');
+assert.match(screen, /شاشة تشغيل الفعالية/, 'screen event mode must clearly identify the event signage purpose');
+assert.match(screen, /جدول الفعالية الآن/, 'screen event mode must label the side queue as the event schedule');
 
 console.log(`screen-fallback-regression-test: ok events=${events.events.length} queue=${today.queue.length} updates=${updates.totals.updates}`);
