@@ -36,6 +36,9 @@ jobs:
       - name: Install
         run: npm ci || npm install
 
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
       - name: Collect trusted sources and publish catalog
         run: npm run sources:sync
 
