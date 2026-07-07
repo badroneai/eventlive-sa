@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Summer Splash Running event | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-summer-splash-running-event@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260725T020000Z
+DTEND:20260725T040000Z
+SUMMARY:Summer Splash Running event
+DESCRIPTION:Summer Splash is a family-friendly running event taking place at ROSHN Front in Riyadh\, featuring 2 km and 5 km run and walk categories. Organized by Race Arabia\, the event combines fitness and entertainment with splash zones\, water activities\, and a lively community atmosphere\, offering participants of all ages a unique summer running experience. Register Now
+LOCATION:Roshn Front\, Riyadh
+URL:https://eventme.live/events/event-summer-splash-running-event.html
+END:VEVENT
+END:VCALENDAR

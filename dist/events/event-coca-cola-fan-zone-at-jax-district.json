@@ -1,0 +1,121 @@
+{
+  "id": "event-coca-cola-fan-zone-at-jax-district",
+  "title": "Coca-Cola Fan Zone at JAX District",
+  "summary": "JAX District in Diriyah will host the Coca-Cola Fan Zone from June 11 to July 19. The fan zone is a dedicated destination for football fans, bringing together live match screenings, entertainment activities, and interactive experiences in an atmosphere suitable for all ages. The venue gives visitors the opportunity to enjoy the excitement of the tournament beyond the stadiums, with spaces designed to make every match a shared experience filled with energy and support.",
+  "canonical_url": "https://eventme.live/events/event-coca-cola-fan-zone-at-jax-district.html",
+  "detail_url": "./events/event-coca-cola-fan-zone-at-jax-district.html",
+  "calendar_url": "./events/event-coca-cola-fan-zone-at-jax-district.ics",
+  "source_label": "Visit Saudi Seasons",
+  "source_url": "https://www.visitsaudi.com/en/diriyah/events/coca-cola-fan-zone",
+  "evidence_url": "https://www.visitsaudi.com/en/diriyah/events/coca-cola-fan-zone",
+  "city": "الدرعية",
+  "venue": "Diriyah",
+  "venue_address": "Diriyah",
+  "starts_at": "2026-06-11T19:30:00+03:00",
+  "ends_at": "2026-07-19T00:00:00+03:00",
+  "status": "ongoing",
+  "status_label": "برنامج جارٍ",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/coca-cola-fan-zone-at-jax-district-3fe0a1326d.webp",
+  "image_alt": "Coca-Cola Fan Zone at JAX District",
+  "category": "رياضة وفعاليات جماهيرية",
+  "category_url": "./categories/sports.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    },
+    {
+      "slug": "sports",
+      "label": "رياضة ولياقة"
+    }
+  ],
+  "keywords": [
+    "Coca-Cola Fan Zone at JAX District",
+    "رياضة وفعاليات جماهيرية",
+    "Sports / Families",
+    "برنامج ممتد",
+    "برنامج جارٍ",
+    "الدرعية",
+    "Diriyah",
+    "Visit Saudi Seasons",
+    "seasons",
+    "tourism",
+    "culture",
+    "entertainment",
+    "destinations",
+    "sauditourism:audience/all",
+    "Sports",
+    "Families",
+    "Friends",
+    "عائلات وأطفال",
+    "مبدعون وفنون",
+    "رياضة ولياقة"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-06-11T19:30:00+03:00",
+      "ends_at": "2026-07-19T00:00:00+03:00",
+      "room": "Diriyah",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Coca-Cola Fan Zone at JAX District",
+    "startDate": "2026-06-11T19:30:00+03:00",
+    "endDate": "2026-07-19T00:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Diriyah",
+      "address": "Diriyah"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Saudi Tourism Authority"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/coca-cola-fan-zone-at-jax-district-3fe0a1326d.webp"
+    ],
+    "description": "JAX District in Diriyah will host the Coca-Cola Fan Zone from June 11 to July 19. The fan zone is a dedicated destination for football fans, bringing together live match screenings, entertainment activities, and interactive experiences in an atmosphere suitable for all ages. The venue gives visitors the opportunity to enjoy the excitement of the tournament beyond the stadiums, with spaces designed to make every match a shared experience filled with energy and support.",
+    "url": "https://eventme.live/events/event-coca-cola-fan-zone-at-jax-district.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-coca-cola-fan-zone-at-jax-district.html",
+    "isAccessibleForFree": false,
+    "keywords": "Coca-Cola Fan Zone at JAX District, رياضة وفعاليات جماهيرية, Sports / Families, برنامج ممتد, برنامج جارٍ, الدرعية, Diriyah, Visit Saudi Seasons, seasons, tourism, culture, entertainment, destinations, sauditourism:audience/all, Sports, Families, Friends, عائلات وأطفال, مبدعون وفنون, رياضة ولياقة",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رياضة ولياقة"
+      }
+    ],
+    "sameAs": [
+      "https://www.visitsaudi.com/en/diriyah/events/coca-cola-fan-zone"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.visitsaudi.com/en/diriyah/events/coca-cola-fan-zone",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

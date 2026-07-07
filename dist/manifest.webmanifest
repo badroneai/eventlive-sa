@@ -1,0 +1,226 @@
+{
+  "name": "EventLive - فعاليات السعودية مباشرة",
+  "short_name": "EventLive",
+  "description": "مرجع حي للفعاليات والجداول أثناء الحضور.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f8f8",
+  "theme_color": "#00877f",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "أقرب جدول حي",
+      "short_name": "الجدول الحي",
+      "url": "./event.html",
+      "icons": [
+        {
+          "src": "./icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "الآن",
+      "short_name": "الآن",
+      "url": "./today.html",
+      "icons": [
+        {
+          "src": "./icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "التحديثات الحية",
+      "short_name": "التحديثات",
+      "url": "./updates.html",
+      "icons": [
+        {
+          "src": "./icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "شاشة الحضور",
+      "short_name": "الشاشة",
+      "url": "./screen.html",
+      "icons": [
+        {
+          "src": "./icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "تفعيل الجداول",
+      "short_name": "التفعيل",
+      "url": "./activation.html",
+      "icons": [
+        {
+          "src": "./icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "مركز الثقة",
+      "short_name": "الثقة",
+      "url": "./trust.html",
+      "icons": [
+        {
+          "src": "./icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "جاهزية التشغيل",
+      "short_name": "الجاهزية",
+      "url": "./readiness.html",
+      "icons": [
+        {
+          "src": "./icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "مصادر الفعاليات",
+      "short_name": "المصادر",
+      "url": "./sources.html",
+      "icons": [
+        {
+          "src": "./icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "مرشحو المصادر",
+      "short_name": "المرشحون",
+      "url": "./candidates.html",
+      "icons": [
+        {
+          "src": "./icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "المطابقة الرسمية",
+      "short_name": "المطابقة",
+      "url": "./resolver.html",
+      "icons": [
+        {
+          "src": "./icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "صحة المصادر",
+      "short_name": "الصحة",
+      "url": "./source-health.html",
+      "icons": [
+        {
+          "src": "./icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "فجوات تغطية المصادر",
+      "short_name": "الفجوات",
+      "url": "./source-coverage-gaps.html",
+      "icons": [
+        {
+          "src": "./icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "تغطية مناطق المملكة",
+      "short_name": "المناطق",
+      "url": "./regions.html",
+      "icons": [
+        {
+          "src": "./icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "الفعاليات",
+      "short_name": "الفعاليات",
+      "url": "./events.html",
+      "icons": [
+        {
+          "src": "./icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "فعالياتي",
+      "short_name": "فعالياتي",
+      "url": "./my-events.html",
+      "icons": [
+        {
+          "src": "./icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "لافتة QR",
+      "short_name": "QR",
+      "url": "./signage.html",
+      "icons": [
+        {
+          "src": "./icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "للمنظمين",
+      "short_name": "منظمين",
+      "url": "./organizers.html",
+      "icons": [
+        {
+          "src": "./icon.svg",
+          "sizes": "any",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ]
+}

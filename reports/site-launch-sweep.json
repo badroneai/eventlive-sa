@@ -1,0 +1,285 @@
+{
+  "generated_at": "2026-07-07T19:31:44.175Z",
+  "intent": "eventlive-launch-sweep",
+  "ok": true,
+  "totals": {
+    "pages_checked": 38,
+    "pages_failed": 0,
+    "forbidden_artifacts": 0,
+    "forbidden_public_content": 0,
+    "missing_required_files": 0,
+    "sitemap_missing": 0
+  },
+  "page_checks": [
+    {
+      "page": "activation.html",
+      "ok": true,
+      "title": "تفعيل الجداول الحية | EventLive",
+      "json_ld_blocks": 4,
+      "errors": []
+    },
+    {
+      "page": "audiences.html",
+      "ok": true,
+      "title": "فعاليات حسب الجمهور | EventLive",
+      "json_ld_blocks": 5,
+      "errors": []
+    },
+    {
+      "page": "candidates.html",
+      "ok": true,
+      "title": "EventLive | مرشحو المصادر",
+      "json_ld_blocks": 2,
+      "errors": []
+    },
+    {
+      "page": "categories.html",
+      "ok": true,
+      "title": "تصنيفات فعاليات السعودية | EventLive",
+      "json_ld_blocks": 5,
+      "errors": []
+    },
+    {
+      "page": "cities.html",
+      "ok": true,
+      "title": "فعاليات مدن السعودية | EventLive",
+      "json_ld_blocks": 5,
+      "errors": []
+    },
+    {
+      "page": "event.html",
+      "ok": true,
+      "title": "EventLive | ملتقى التحول الرقمي في القطاع الحكومي 2026",
+      "json_ld_blocks": 2,
+      "errors": []
+    },
+    {
+      "page": "events.html",
+      "ok": true,
+      "title": "EventLive | فعاليات السعودية مباشرة",
+      "json_ld_blocks": 4,
+      "errors": []
+    },
+    {
+      "page": "guide-ended-events-value.html",
+      "ok": true,
+      "title": "EventLive | لماذا يعرض EventLive الفعاليات المنتهية؟",
+      "json_ld_blocks": 4,
+      "errors": []
+    },
+    {
+      "page": "guide-event-sources-methodology.html",
+      "ok": true,
+      "title": "EventLive | منهجية مصادر EventLive والتحقق",
+      "json_ld_blocks": 4,
+      "errors": []
+    },
+    {
+      "page": "guide-live-events-saudi.html",
+      "ok": true,
+      "title": "EventLive | كيف تستخدم EventLive وقت الفعالية؟",
+      "json_ld_blocks": 4,
+      "errors": []
+    },
+    {
+      "page": "guide-online-tech-courses-saudi.html",
+      "ok": true,
+      "title": "EventLive | دليل الدورات التقنية والأونلاين في السعودية",
+      "json_ld_blocks": 4,
+      "errors": []
+    },
+    {
+      "page": "guide-organizers-live-schedule.html",
+      "ok": true,
+      "title": "EventLive | دليل المنظمين لتحويل الفعالية إلى جدول حي",
+      "json_ld_blocks": 4,
+      "errors": []
+    },
+    {
+      "page": "guide-riyadh-events-live.html",
+      "ok": true,
+      "title": "EventLive | دليل فعاليات الرياض الحية عبر EventLive",
+      "json_ld_blocks": 4,
+      "errors": []
+    },
+    {
+      "page": "guide-saudi-events-data.html",
+      "ok": true,
+      "title": "EventLive | دليل بيانات الفعاليات السعودية في EventLive",
+      "json_ld_blocks": 4,
+      "errors": []
+    },
+    {
+      "page": "guide-summer-events-saudi.html",
+      "ok": true,
+      "title": "EventLive | دليل فعاليات الصيف في مناطق السعودية",
+      "json_ld_blocks": 4,
+      "errors": []
+    },
+    {
+      "page": "guides.html",
+      "ok": true,
+      "title": "EventLive | أدلة EventLive لفعاليات السعودية",
+      "json_ld_blocks": 4,
+      "errors": []
+    },
+    {
+      "page": "index.html",
+      "ok": true,
+      "title": "EventLive | فعاليات السعودية الآن",
+      "json_ld_blocks": 3,
+      "errors": []
+    },
+    {
+      "page": "my-events.html",
+      "ok": true,
+      "title": "EventLive | فعالياتي",
+      "json_ld_blocks": 2,
+      "errors": []
+    },
+    {
+      "page": "methodology.html",
+      "ok": true,
+      "title": "منهجية جمع ونشر الفعاليات | EventLive",
+      "json_ld_blocks": 5,
+      "errors": []
+    },
+    {
+      "page": "organizer-intake.html",
+      "ok": true,
+      "title": "إضافة فعالية أو جدول حي | EventLive",
+      "json_ld_blocks": 4,
+      "errors": []
+    },
+    {
+      "page": "organizers.html",
+      "ok": true,
+      "title": "EventLive | للمنظمين",
+      "json_ld_blocks": 4,
+      "errors": []
+    },
+    {
+      "page": "print.html",
+      "ok": true,
+      "title": "نسخة طباعة الفعالية | EventLive",
+      "json_ld_blocks": 2,
+      "errors": []
+    },
+    {
+      "page": "readiness.html",
+      "ok": true,
+      "title": "جاهزية التشغيل | EventLive",
+      "json_ld_blocks": 4,
+      "errors": []
+    },
+    {
+      "page": "regions.html",
+      "ok": true,
+      "title": "تغطية مناطق المملكة | EventLive",
+      "json_ld_blocks": 4,
+      "errors": []
+    },
+    {
+      "page": "resolver.html",
+      "ok": true,
+      "title": "EventLive | المطابقة الرسمية",
+      "json_ld_blocks": 2,
+      "errors": []
+    },
+    {
+      "page": "screen.html",
+      "ok": true,
+      "title": "EventLive | شاشة الحضور",
+      "json_ld_blocks": 2,
+      "errors": []
+    },
+    {
+      "page": "share.html",
+      "ok": true,
+      "title": "مشاركة الفعالية | EventLive",
+      "json_ld_blocks": 2,
+      "errors": []
+    },
+    {
+      "page": "signage.html",
+      "ok": true,
+      "title": "لافتة QR للفعالية | EventLive",
+      "json_ld_blocks": 2,
+      "errors": []
+    },
+    {
+      "page": "sources.html",
+      "ok": true,
+      "title": "مصادر الفعاليات | EventLive",
+      "json_ld_blocks": 3,
+      "errors": []
+    },
+    {
+      "page": "source-health.html",
+      "ok": true,
+      "title": "EventLive | صحة المصادر",
+      "json_ld_blocks": 4,
+      "errors": []
+    },
+    {
+      "page": "source-coverage-gaps.html",
+      "ok": true,
+      "title": "فجوات تغطية المصادر | EventLive",
+      "json_ld_blocks": 2,
+      "errors": []
+    },
+    {
+      "page": "this-month.html",
+      "ok": true,
+      "title": "فعاليات هذا الشهر | EventLive",
+      "json_ld_blocks": 3,
+      "errors": []
+    },
+    {
+      "page": "this-week.html",
+      "ok": true,
+      "title": "فعاليات هذا الأسبوع | EventLive",
+      "json_ld_blocks": 3,
+      "errors": []
+    },
+    {
+      "page": "today-events.html",
+      "ok": true,
+      "title": "فعاليات اليوم | EventLive",
+      "json_ld_blocks": 3,
+      "errors": []
+    },
+    {
+      "page": "today.html",
+      "ok": true,
+      "title": "EventLive | الآن",
+      "json_ld_blocks": 2,
+      "errors": []
+    },
+    {
+      "page": "trust.html",
+      "ok": true,
+      "title": "مركز الثقة | EventLive",
+      "json_ld_blocks": 4,
+      "errors": []
+    },
+    {
+      "page": "updates.html",
+      "ok": true,
+      "title": "التحديثات الحية | EventLive",
+      "json_ld_blocks": 2,
+      "errors": []
+    },
+    {
+      "page": "weekend.html",
+      "ok": true,
+      "title": "EventLive | فعاليات الويكند",
+      "json_ld_blocks": 3,
+      "errors": []
+    }
+  ],
+  "forbidden": [],
+  "forbidden_public_content": [],
+  "missing_required_files": [],
+  "sitemap_missing": []
+}

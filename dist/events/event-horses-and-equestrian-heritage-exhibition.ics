@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Horses and Equestrian Heritage Exhibition | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-horses-and-equestrian-heritage-exhibition@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260224T183000Z
+DTEND:20260830T205500Z
+SUMMARY:Horses and Equestrian Heritage Exhibition
+DESCRIPTION:The King Abdulaziz Public Library is hosting a specialized exhibition on horses and equestrian heritage in celebration of Saudi Founding Day. The exhibition showcases a rich collection of manuscripts\, rare books\, photographs\, historical documents\, Islamic miniatures\, and illustrated works highlighting the deep-rooted equestrian legacy of the Kingdom. Marking four decades of preserving cultural heritage\, the library also presents selections from its dedicated Equestrian Center\, which houses more than 12\,000 rare Arabic and international references on horses\, alongside historic photographs captured by Princess Alice of Britain during her 1938 visit to Saudi Arabia.
+LOCATION:King Abdulaziz Public Library (Khurais Branch)\, Riyadh
+URL:https://eventme.live/events/event-horses-and-equestrian-heritage-exhibition.html
+END:VEVENT
+END:VCALENDAR

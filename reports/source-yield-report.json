@@ -1,0 +1,1883 @@
+{
+  "generated_at": "2026-07-07T19:13:07.079Z",
+  "sources_attempted": 34,
+  "productive_sources": 20,
+  "zero_yield_sources": 14,
+  "sources": [
+    {
+      "id": "visit-saudi-calendar",
+      "name": "Visit Saudi Calendar",
+      "url": "https://www.visitsaudi.com/en/saudi-calendar",
+      "collector_url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/visit-saudi-calendar-2026-07-07T19-13-07-079Z.json",
+      "signals": {
+        "bytes": 38431,
+        "json_rows": 10,
+        "links": 0,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 0
+      },
+      "extracted_raw": 10,
+      "future_complete": 10,
+      "capped_future_complete": 10,
+      "last_written": 0,
+      "drop_reasons": {
+        "future-complete": 10
+      },
+      "dropped_samples": [],
+      "sample_titles": [
+        "The Groves",
+        "Arabic Language Exhibition for kids",
+        "Arabic Language Exhibition 28",
+        "Coca-Cola Fan Zone at JAX District",
+        "International Falcon Breeders Auction"
+      ],
+      "zero_yield_reason": "",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "moc-cultural-calendar",
+      "name": "Ministry of Culture Cultural Calendar",
+      "url": "https://www.moc.gov.sa/en/Modules/Pages/Cultural-Calendar",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/moc-cultural-calendar-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 76160,
+        "json_rows": 0,
+        "links": 0,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 1,
+        "date_like_tokens": 0
+      },
+      "extracted_raw": 13,
+      "future_complete": 13,
+      "capped_future_complete": 13,
+      "last_written": 0,
+      "drop_reasons": {
+        "future-complete": 13
+      },
+      "dropped_samples": [],
+      "sample_titles": [
+        "Skill Development Initiative",
+        "SITAR",
+        "The Architecture and Design Café",
+        "Jusoor Program",
+        "Urban transformation Initiative"
+      ],
+      "zero_yield_reason": "",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "mos-events",
+      "name": "Ministry of Sport Events",
+      "url": "https://www.mos.gov.sa/en/media/events",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/mos-events-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 81794,
+        "json_rows": 0,
+        "links": 32,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 1,
+        "date_like_tokens": 26
+      },
+      "extracted_raw": 3,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "drop_reasons": {
+        "past-date": 3
+      },
+      "dropped_samples": [
+        {
+          "title": "Spanish Super Cup",
+          "reason": "past-date",
+          "raw_date_text": "2024-01-10T00:00:00Z - 2024-01-10T00:00:00Z",
+          "converted_date": "2024-01-10T03:00:00+03:00 - 2024-01-10T03:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://www.mos.gov.sa/en/media/events/2024/10/03/spanish-super-cup"
+        },
+        {
+          "title": "Extreme E",
+          "reason": "past-date",
+          "raw_date_text": "2024-02-17T00:00:00Z - 2024-02-17T00:00:00Z",
+          "converted_date": "2024-02-17T03:00:00+03:00 - 2024-02-17T03:00:00+03:00",
+          "city": "Jeddah",
+          "url": "https://www.mos.gov.sa/en/media/events/2024/10/03/extreme-e"
+        },
+        {
+          "title": "Saudi Tour",
+          "reason": "past-date",
+          "raw_date_text": "2024-01-29T00:00:00Z - 2024-01-29T00:00:00Z",
+          "converted_date": "2024-01-29T03:00:00+03:00 - 2024-01-29T03:00:00+03:00",
+          "city": "AlUla",
+          "url": "https://www.mos.gov.sa/en/media/events/2024/10/03/saudi-tour"
+        }
+      ],
+      "sample_titles": [],
+      "zero_yield_reason": "past-date:3",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "experience-alula-events",
+      "name": "Experience AlUla Events",
+      "url": "https://www.experiencealula.com/en/whats-on/events",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/experience-alula-events-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 568668,
+        "json_rows": 0,
+        "links": 316,
+        "json_ld_blocks": 1,
+        "next_data_blocks": 0,
+        "date_like_tokens": 1
+      },
+      "extracted_raw": 1,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "drop_reasons": {
+        "past-date": 1
+      },
+      "dropped_samples": [
+        {
+          "title": "AlFursan Endurance AlUla",
+          "reason": "past-date",
+          "raw_date_text": "7 and 8 February 2026",
+          "converted_date": "2026-02-07T09:00:00+03:00 - 2026-02-08T18:00:00+03:00",
+          "city": "AlUla",
+          "url": "https://www.experiencealula.com/en/whats-on/events/alfursan-endurance-alula"
+        }
+      ],
+      "sample_titles": [],
+      "zero_yield_reason": "past-date:1",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "mdlbeast-events",
+      "name": "MDLBEAST Events",
+      "url": "https://mdlbeast.com/events",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/mdlbeast-events-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 395643,
+        "json_rows": 0,
+        "links": 71,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 1,
+        "date_like_tokens": 83
+      },
+      "extracted_raw": 41,
+      "future_complete": 5,
+      "capped_future_complete": 5,
+      "last_written": 0,
+      "drop_reasons": {
+        "future-complete": 5,
+        "past-date": 36
+      },
+      "dropped_samples": [
+        {
+          "title": "MDLBEAST Radio MixTape",
+          "reason": "past-date",
+          "raw_date_text": "2026-06-18T21:00:00+00:00 - 2026-06-18T21:00:00+00:00",
+          "converted_date": "2026-06-19T00:00:00+03:00 - 2026-06-19T00:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://mdlbeast.com/events/mdlbeast-radio-mixtape"
+        },
+        {
+          "title": "Balad Beast 2026",
+          "reason": "past-date",
+          "raw_date_text": "2026-02-04T21:00:00+00:00 - 2026-02-05T21:00:00+00:00",
+          "converted_date": "2026-02-05T00:00:00+03:00 - 2026-02-06T00:00:00+03:00",
+          "city": "Jeddah",
+          "url": "https://mdlbeast.com/events/balad-beast-2026"
+        },
+        {
+          "title": "SOUNDSTORM 25 ",
+          "reason": "past-date",
+          "raw_date_text": "2025-12-10T21:00:00+00:00 - 2025-12-12T21:00:00+00:00",
+          "converted_date": "2025-12-11T00:00:00+03:00 - 2025-12-13T00:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://mdlbeast.com/events/soundstorm-25"
+        },
+        {
+          "title": "XP Music Futures 2025",
+          "reason": "past-date",
+          "raw_date_text": "2025-12-03T21:00:00+00:00 - 2025-12-05T21:00:00+00:00",
+          "converted_date": "2025-12-04T00:00:00+03:00 - 2025-12-06T00:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://mdlbeast.com/events/xp-music-futures-25"
+        },
+        {
+          "title": "Azimuth 2025",
+          "reason": "past-date",
+          "raw_date_text": "2025-09-24T21:00:00+00:00 - 2025-09-25T21:00:00+00:00",
+          "converted_date": "2025-09-25T00:00:00+03:00 - 2025-09-26T00:00:00+03:00",
+          "city": "AlUla",
+          "url": "https://mdlbeast.com/events/azimuth-2025"
+        }
+      ],
+      "sample_titles": [
+        "Unstable",
+        "Beast House",
+        "A Thousand and One",
+        "XP Music Futures 2026",
+        "SOUNDSTORM 26  "
+      ],
+      "zero_yield_reason": "",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "monshaat-events",
+      "name": "Monsha'at All Events",
+      "url": "https://www.monshaat.gov.sa/en/events-list",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/monshaat-events-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 189053,
+        "json_rows": 0,
+        "links": 157,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 2
+      },
+      "extracted_raw": 15,
+      "future_complete": 3,
+      "capped_future_complete": 3,
+      "last_written": 0,
+      "drop_reasons": {
+        "past-date": 12,
+        "future-complete": 3
+      },
+      "dropped_samples": [
+        {
+          "title": "E- Commerce Event",
+          "reason": "past-date",
+          "raw_date_text": "05 - 12 2018 March",
+          "converted_date": "2018-03-05T09:00:00+03:00 - 2018-03-12T17:00:00+03:00",
+          "city": "Saudi Arabia",
+          "url": "https://www.monshaat.gov.sa/en/node/3610"
+        },
+        {
+          "title": "Hackathon - The Saudi Digital Machines ",
+          "reason": "past-date",
+          "raw_date_text": "21 - 24 2018 March",
+          "converted_date": "2018-03-21T09:00:00+03:00 - 2018-03-24T17:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://www.monshaat.gov.sa/en/node/3613"
+        },
+        {
+          "title": "Cisco Connect",
+          "reason": "past-date",
+          "raw_date_text": "27 - 28 2018 March",
+          "converted_date": "2018-03-27T09:00:00+03:00 - 2018-03-28T17:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://www.monshaat.gov.sa/en/node/3619"
+        },
+        {
+          "title": "The 2nd Entrepreneurship Forum",
+          "reason": "past-date",
+          "raw_date_text": "01 - 03 2018 April",
+          "converted_date": "2018-04-01T09:00:00+03:00 - 2018-04-03T17:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://www.monshaat.gov.sa/en/node/3616"
+        },
+        {
+          "title": "Biban - Al Qassim",
+          "reason": "past-date",
+          "raw_date_text": "19 - 21 2018 April",
+          "converted_date": "2018-04-19T09:00:00+03:00 - 2018-04-21T17:00:00+03:00",
+          "city": "Saudi Arabia",
+          "url": "https://www.monshaat.gov.sa/en/node/3622"
+        }
+      ],
+      "sample_titles": [
+        "أسبوع العقار والمقاولات 12- 16 يوليو 2026م",
+        "لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)",
+        "لقاءات مراكز دعم المنشآت | شهر يوليو 2026م"
+      ],
+      "zero_yield_reason": "",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "invest-saudi-events",
+      "name": "Invest Saudi Events",
+      "url": "https://www.investsaudi.sa/events",
+      "collector_url": "https://investsaudi.sa/backend/wp-json/v3/events?time_frame=all",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/invest-saudi-events-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 7022,
+        "json_rows": 9,
+        "links": 0,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 0
+      },
+      "extracted_raw": 8,
+      "future_complete": 3,
+      "capped_future_complete": 3,
+      "last_written": 0,
+      "drop_reasons": {
+        "past-date": 5,
+        "future-complete": 3
+      },
+      "dropped_samples": [
+        {
+          "title": "INNOPROM. Saudi Arabia 2026",
+          "reason": "past-date",
+          "raw_date_text": "08/02/2026 - 10/02/2026",
+          "converted_date": "2026-02-08T09:00:00+03:00 - 2026-02-10T18:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://ksa.biwexpo.com/en/registration-visitor?utm_source=misa&utm_medium=email&utm_campaign=ksa26"
+        },
+        {
+          "title": "Viva Technology",
+          "reason": "past-date",
+          "raw_date_text": "17/06/2026 - 20/06/2026",
+          "converted_date": "2026-06-17T09:00:00+03:00 - 2026-06-20T18:00:00+03:00",
+          "city": "Global",
+          "url": "https://vivatech.com/"
+        },
+        {
+          "title": "Real Estate Future Forum",
+          "reason": "past-date",
+          "raw_date_text": "26/01/2026 - 28/01/2026",
+          "converted_date": "2026-01-26T09:00:00+03:00 - 2026-01-28T18:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://www.investsaudi.sa/events"
+        },
+        {
+          "title": "PIF Private Sector Forum 2026",
+          "reason": "past-date",
+          "raw_date_text": "09/02/2026 - 10/02/2026",
+          "converted_date": "2026-02-09T09:00:00+03:00 - 2026-02-10T18:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://www.pif.gov.sa/en/events/psf-2026"
+        },
+        {
+          "title": "World Economic Forum 2026 (WEF)",
+          "reason": "past-date",
+          "raw_date_text": "19/01/2026 - 23/01/2026",
+          "converted_date": "2026-01-19T09:00:00+03:00 - 2026-01-23T18:00:00+03:00",
+          "city": "Global",
+          "url": "https://www.investsaudi.sa/events"
+        }
+      ],
+      "sample_titles": [
+        "Web Summit Lisbon 2026",
+        "Cityscape Global 2026",
+        "Future Investment Initiative (FII 10)"
+      ],
+      "zero_yield_reason": "",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "rfecc-whats-on",
+      "name": "RFECC What's On",
+      "url": "https://rfecc.sa/whats-on/",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/rfecc-whats-on-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 146647,
+        "json_rows": 0,
+        "links": 81,
+        "json_ld_blocks": 1,
+        "next_data_blocks": 0,
+        "date_like_tokens": 3
+      },
+      "extracted_raw": 20,
+      "future_complete": 6,
+      "capped_future_complete": 6,
+      "last_written": 0,
+      "drop_reasons": {
+        "past-date": 14,
+        "future-complete": 6
+      },
+      "dropped_samples": [
+        {
+          "title": "Global Sources Saudi Arabia Expo",
+          "reason": "past-date",
+          "raw_date_text": "",
+          "converted_date": "2026-06-23T09:00:00+03:00 - 2026-06-25T18:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://rfecc.sa/events/global-sources-saudi-arabia-expo/"
+        },
+        {
+          "title": "BIG 5",
+          "reason": "past-date",
+          "raw_date_text": "",
+          "converted_date": "2026-01-18T09:00:00+03:00 - 2026-01-21T18:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://rfecc.sa/events/big-5-2/"
+        },
+        {
+          "title": "Saudi Food Show",
+          "reason": "past-date",
+          "raw_date_text": "",
+          "converted_date": "2026-06-15T09:00:00+03:00 - 2026-06-17T18:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://rfecc.sa/events/saudi-food-show/"
+        },
+        {
+          "title": "Saudi Food Manufacturing",
+          "reason": "past-date",
+          "raw_date_text": "",
+          "converted_date": "2026-06-08T09:00:00+03:00 - 2026-06-10T18:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://rfecc.sa/events/saudi-food-manufacturing/"
+        },
+        {
+          "title": "SLS EXPO",
+          "reason": "past-date",
+          "raw_date_text": "",
+          "converted_date": "2026-05-19T09:00:00+03:00 - 2026-05-21T18:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://rfecc.sa/events/sls-expo/"
+        }
+      ],
+      "sample_titles": [
+        "Inter Aviation Arabia",
+        "Natrual Expo",
+        "China Homelife Saudi Arabia 2026",
+        "FIBO 2026",
+        "WTM Spotlight Riyadh"
+      ],
+      "zero_yield_reason": "",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "eye-of-riyadh-events",
+      "name": "Eye of Riyadh Events",
+      "url": "https://www.eyeofriyadh.com/events/",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/eye-of-riyadh-events-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 100780,
+        "json_rows": 0,
+        "links": 348,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 1
+      },
+      "extracted_raw": 16,
+      "future_complete": 16,
+      "capped_future_complete": 16,
+      "last_written": 0,
+      "drop_reasons": {
+        "future-complete": 16
+      },
+      "dropped_samples": [],
+      "sample_titles": [
+        "Real Estate Future Forum",
+        "Real Estate Excellence Award 2026 (REA 2026) ",
+        "Oxford Future of Real Estate Programme",
+        "Global Proptech Summit 2026",
+        " Real Estate Supply Chain Forum"
+      ],
+      "zero_yield_reason": "",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "eventbrite-saudi",
+      "name": "Eventbrite Saudi Arabia",
+      "url": "https://www.eventbrite.com/d/saudi-arabia/events/",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/eventbrite-saudi-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 832840,
+        "json_rows": 0,
+        "links": 274,
+        "json_ld_blocks": 1,
+        "next_data_blocks": 0,
+        "date_like_tokens": 234
+      },
+      "extracted_raw": 17,
+      "future_complete": 17,
+      "capped_future_complete": 17,
+      "last_written": 0,
+      "drop_reasons": {
+        "future-complete": 17
+      },
+      "dropped_samples": [],
+      "sample_titles": [
+        "Dubai Property Expo in Al Khobar | 17th - 18th July,  2026 | Danube",
+        "Family Office Investment  - Riyadh, Saudi Arabia",
+        "Family Office Investment Summit | B2B Networking | For Investors & Founders",
+        "Family Office Investment Meeting | Riyadh | Registration Fee USD 580",
+        "Jeddah Fintech Week 2026"
+      ],
+      "zero_yield_reason": "",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "tuwaiq-academy-bootcamps",
+      "name": "Tuwaiq Academy Bootcamps and Programs",
+      "url": "https://tuwaiq.edu.sa/bootcamps",
+      "collector_url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/tuwaiq-academy-bootcamps-2026-07-07T19-13-07-079Z.json",
+      "signals": {
+        "bytes": 10660,
+        "json_rows": 12,
+        "links": 0,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 0
+      },
+      "extracted_raw": 12,
+      "future_complete": 12,
+      "capped_future_complete": 12,
+      "last_written": 0,
+      "drop_reasons": {
+        "future-complete": 12
+      },
+      "dropped_samples": [],
+      "sample_titles": [
+        "معسكر تصميم وتصنيع الحلول الهندسية",
+        "معسكر تطوير مواقع الويب باستخدام Java ودمج تقنيات الذكاء الاصطناعي ",
+        "معسكر تطوير البرمجيات السحابية الاحترافية لسحابة قوقل",
+        "معسكر طويق للقطاع الأمني: تطوير البرمجيات",
+        "معسكر طويق للقطاع الأمني: البنية التحتية "
+      ],
+      "zero_yield_reason": "",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "future-skills-catalog",
+      "name": "Future Skills MCIT Catalogue",
+      "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/future-skills-catalog-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 169820,
+        "json_rows": 0,
+        "links": 66,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 2
+      },
+      "extracted_raw": 12,
+      "future_complete": 4,
+      "capped_future_complete": 4,
+      "last_written": 0,
+      "drop_reasons": {
+        "future-complete": 4,
+        "past-date": 8
+      },
+      "dropped_samples": [
+        {
+          "title": "أساسيات الحوسبة السحابية - Cloud Computing Fundamentals",
+          "reason": "past-date",
+          "raw_date_text": "تبدأ 08-12-2025 إلى 11-12-2025 لمدة 16 ساعات",
+          "converted_date": "2025-12-08T09:00:00+03:00 - 2025-12-11T18:00:00+03:00",
+          "city": "Online",
+          "url": "https://futureskills.mcit.gov.sa/ar/group/13034"
+        },
+        {
+          "title": "لغة السي ++C",
+          "reason": "past-date",
+          "raw_date_text": "تبدأ 07-12-2025 إلى 11-12-2025 لمدة 20 ساعات",
+          "converted_date": "2025-12-07T09:00:00+03:00 - 2025-12-11T18:00:00+03:00",
+          "city": "Online",
+          "url": "https://futureskills.mcit.gov.sa/ar/group/13031"
+        },
+        {
+          "title": "Web Development with HTML & CSS - تطوير الويب باستخدام HTML و CSS",
+          "reason": "past-date",
+          "raw_date_text": "تبدأ 01-12-2025 إلى 05-12-2025 لمدة 20 ساعات",
+          "converted_date": "2025-12-01T09:00:00+03:00 - 2025-12-05T18:00:00+03:00",
+          "city": "Online",
+          "url": "https://futureskills.mcit.gov.sa/ar/group/13023"
+        },
+        {
+          "title": "Deep Learning - التعلم العميق",
+          "reason": "past-date",
+          "raw_date_text": "تبدأ 30-11-2025 إلى 04-12-2025 لمدة 20 ساعات",
+          "converted_date": "2025-11-30T09:00:00+03:00 - 2025-12-04T18:00:00+03:00",
+          "city": "Online",
+          "url": "https://futureskills.mcit.gov.sa/ar/group/13020"
+        },
+        {
+          "title": "Artificial intelligence - الذكاء الاصطناعي",
+          "reason": "past-date",
+          "raw_date_text": "تبدأ 24-11-2025 إلى 27-11-2025 لمدة 16 ساعات",
+          "converted_date": "2025-11-24T09:00:00+03:00 - 2025-11-27T18:00:00+03:00",
+          "city": "Online",
+          "url": "https://futureskills.mcit.gov.sa/ar/group/13026"
+        }
+      ],
+      "sample_titles": [
+        "أساسيات الحوسبة السحابية - Cloud Computing Essentials",
+        "⁠Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
+        "دورة +CompTIA A",
+        "⁠Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث"
+      ],
+      "zero_yield_reason": "",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "visit-saudi-seasons",
+      "name": "Visit Saudi Seasons",
+      "url": "https://www.visitsaudi.com/en/seasons",
+      "collector_url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/visit-saudi-seasons-2026-07-07T19-13-07-079Z.json",
+      "signals": {
+        "bytes": 38431,
+        "json_rows": 10,
+        "links": 0,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 0
+      },
+      "extracted_raw": 4,
+      "future_complete": 4,
+      "capped_future_complete": 4,
+      "last_written": 0,
+      "drop_reasons": {
+        "future-complete": 4
+      },
+      "dropped_samples": [],
+      "sample_titles": [
+        "The Groves",
+        "Coca-Cola Fan Zone at JAX District",
+        "Saudi Falcons Club Auction",
+        "Saudi International Falcons & Hunting Exhibition"
+      ],
+      "zero_yield_reason": "",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "code-mcit-programs",
+      "name": "CODE MCIT Programs",
+      "url": "https://code.mcit.gov.sa/en/our-programs",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/code-mcit-programs-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 42936,
+        "json_rows": 0,
+        "links": 0,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 0
+      },
+      "extracted_raw": 4,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "drop_reasons": {
+        "past-date": 4
+      },
+      "dropped_samples": [
+        {
+          "title": "Saudi Game Champions 2",
+          "reason": "past-date",
+          "raw_date_text": "October 2025 - April 2026",
+          "converted_date": "2025-10-01T09:00:00+03:00 - 2026-04-30T18:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://code.mcit.gov.sa/en/saudi-game-champions-2"
+        },
+        {
+          "title": "GAME BY CODE",
+          "reason": "past-date",
+          "raw_date_text": "October 2025 - January 2026",
+          "converted_date": "2025-10-01T09:00:00+03:00 - 2026-01-31T18:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://code.mcit.gov.sa/en/incubator/game-by-code"
+        },
+        {
+          "title": "PropTech Experts Series",
+          "reason": "past-date",
+          "raw_date_text": "21 – 24 Sep 2025",
+          "converted_date": "2025-09-21T09:00:00+03:00 - 2025-09-24T18:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://code.mcit.gov.sa/en/bootcamp/proptech-series"
+        },
+        {
+          "title": "CODE AI incubator",
+          "reason": "past-date",
+          "raw_date_text": "20 April 2025 - 12 OCT 2025",
+          "converted_date": "2025-04-20T09:00:00+03:00 - 2025-10-12T18:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://code.mcit.gov.sa/en/code-ai-incubator"
+        }
+      ],
+      "sample_titles": [],
+      "zero_yield_reason": "past-date:4",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "misk-hub-programs",
+      "name": "Misk Hub Programs",
+      "url": "https://hub.misk.org.sa/programs/",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/misk-hub-programs-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 213482,
+        "json_rows": 0,
+        "links": 94,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 0
+      },
+      "extracted_raw": 5,
+      "future_complete": 5,
+      "capped_future_complete": 5,
+      "last_written": 0,
+      "drop_reasons": {
+        "future-complete": 5
+      },
+      "dropped_samples": [],
+      "sample_titles": [
+        "The Innovation Diwan",
+        "Nonprofit Sector Skills Program",
+        "Entrepreneur Leadership Excellence Program",
+        "Application deadline: 2030 Leaders",
+        "Misk Local Traineeship Program"
+      ],
+      "zero_yield_reason": "",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "dhahran-expo-calendar",
+      "name": "Dhahran Expo Calendar",
+      "url": "https://dhahranexpo.com.sa",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/dhahran-expo-calendar-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 490854,
+        "json_rows": 0,
+        "links": 160,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 0
+      },
+      "extracted_raw": 22,
+      "future_complete": 15,
+      "capped_future_complete": 15,
+      "last_written": 0,
+      "drop_reasons": {
+        "past-date": 7,
+        "future-complete": 15
+      },
+      "dropped_samples": [
+        {
+          "title": "Offer Home Expo",
+          "reason": "past-date",
+          "raw_date_text": "",
+          "converted_date": "2026-01-08T09:00:00+03:00 - 2026-01-11T18:00:00+03:00",
+          "city": "Dhahran",
+          "url": "https://dhahranexpo.com.sa"
+        },
+        {
+          "title": "Heavy Equipment Connect",
+          "reason": "past-date",
+          "raw_date_text": "",
+          "converted_date": "2026-02-02T09:00:00+03:00 - 2026-02-04T18:00:00+03:00",
+          "city": "Dhahran",
+          "url": "https://dhahranexpo.com.sa"
+        },
+        {
+          "title": "Real Estate Auction",
+          "reason": "past-date",
+          "raw_date_text": "",
+          "converted_date": "2026-02-02T09:00:00+03:00 - 2026-02-02T18:00:00+03:00",
+          "city": "Dhahran",
+          "url": "https://dhahranexpo.com.sa"
+        },
+        {
+          "title": "Hala February Shopping Exhibition",
+          "reason": "past-date",
+          "raw_date_text": "",
+          "converted_date": "2026-02-06T09:00:00+03:00 - 2026-02-15T18:00:00+03:00",
+          "city": "Dhahran",
+          "url": "https://dhahranexpo.com.sa"
+        },
+        {
+          "title": "Lamatna Expo",
+          "reason": "past-date",
+          "raw_date_text": "",
+          "converted_date": "2026-02-26T09:00:00+03:00 - 2026-03-04T18:00:00+03:00",
+          "city": "Dhahran",
+          "url": "https://dhahranexpo.com.sa"
+        }
+      ],
+      "sample_titles": [
+        "Offshore Technology & Innovation Technical Conference & Expo - OFFSHORE ARABIA 2026”",
+        "Crafts & Handicrafts Exhibition",
+        "Arabian and International Industries Exhibition",
+        "Static Equipment Engineering & Maintenance Technical Conference & Expo - STATEC Arabia",
+        "Gulf Steel, Storage Tank & Refinery Expo"
+      ],
+      "zero_yield_reason": "",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "ithra-events",
+      "name": "Ithra Events",
+      "url": "https://www.ithra.com",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/ithra-events-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 174296,
+        "json_rows": 0,
+        "links": 189,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 7
+      },
+      "extracted_raw": 0,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "drop_reasons": {},
+      "dropped_samples": [],
+      "sample_titles": [],
+      "zero_yield_reason": "date/content signals exist but extractor returned no complete future rows",
+      "attempts_documented": 2,
+      "attempt_notes": [
+        {
+          "attempted_at": "2026-07-05T00:10:00+03:00",
+          "method": "homepage snapshot hidden JSON/card inspection",
+          "result": "Homepage exposes programme links and date filters, but visible cards carry CTA labels only; no date-complete event rows in listing HTML."
+        },
+        {
+          "attempted_at": "2026-07-05T00:11:00+03:00",
+          "method": "official detail pages via fetch and curl HTTP/1.1",
+          "result": "Detail pages failed from this runtime with HTTP2 stream errors or timeout. No bot bypass attempted."
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "sdaia-academy-programs",
+      "name": "SDAIA Academy Programs",
+      "url": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/sdaia-academy-programs-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 35254,
+        "json_rows": 0,
+        "links": 8,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 1
+      },
+      "extracted_raw": 0,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "drop_reasons": {},
+      "dropped_samples": [],
+      "sample_titles": [],
+      "zero_yield_reason": "date/content signals exist but extractor returned no complete future rows",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "misk-hub-events",
+      "name": "Misk Hub Events",
+      "url": "https://hub.misk.org.sa/en/events/",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/misk-hub-events-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 229636,
+        "json_rows": 0,
+        "links": 114,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 22
+      },
+      "extracted_raw": 5,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "drop_reasons": {
+        "past-date": 5
+      },
+      "dropped_samples": [
+        {
+          "title": "Cybersecurity in the Workplace",
+          "reason": "past-date",
+          "raw_date_text": "01 Jul 2026",
+          "converted_date": "2026-07-01T19:00:00+03:00 - 2026-07-01T20:00:00+03:00",
+          "city": "Online",
+          "url": "https://hub.misk.org.sa/en/events/skills/cybersecurity-in-the-workplace/"
+        },
+        {
+          "title": "How to Choose Your Career Path and Keep Up with Labor Market Changes",
+          "reason": "past-date",
+          "raw_date_text": "08 May 2026",
+          "converted_date": "2026-05-08T20:00:00+03:00 - 2026-05-08T21:00:00+03:00",
+          "city": "Saudi Arabia",
+          "url": "https://hub.misk.org.sa/en/events/skills/how-to-choose-your-career-path-and-keep-up-with-labor-market-change/"
+        },
+        {
+          "title": "Enhancing Efficiency and Productivity in the Workplace Using Artificial Intelligence",
+          "reason": "past-date",
+          "raw_date_text": "08 May 2026",
+          "converted_date": "2026-05-08T21:00:00+03:00 - 2026-05-08T22:00:00+03:00",
+          "city": "Online",
+          "url": "https://hub.misk.org.sa/en/events/skills/enhancing-efficiency-and-productivity-in-the-workplace/"
+        },
+        {
+          "title": "Misk Tour - Hail",
+          "reason": "past-date",
+          "raw_date_text": "24 - 25 Dec 2024",
+          "converted_date": "2024-12-24T16:00:00+03:00 - 2024-12-25T22:00:00+03:00",
+          "city": "Saudi Arabia",
+          "url": "https://hub.misk.org.sa/en/events/roadshow/misk-tour-hail/"
+        },
+        {
+          "title": "Misk Tour - Jazan",
+          "reason": "past-date",
+          "raw_date_text": "16 - 17 Dec 2025",
+          "converted_date": "2025-12-16T16:00:00+03:00 - 2025-12-17T22:00:00+03:00",
+          "city": "Saudi Arabia",
+          "url": "https://hub.misk.org.sa/en/events/roadshow/misk-tour-jazan/"
+        }
+      ],
+      "sample_titles": [],
+      "zero_yield_reason": "past-date:5",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "jcci-events-center",
+      "name": "Jeddah Chamber Exhibitions and Events Center",
+      "url": "https://www.jcci.org.sa/en/المعارض-والفعاليات",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/jcci-events-center-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 1370105,
+        "json_rows": 0,
+        "links": 284,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 0
+      },
+      "extracted_raw": 13,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "drop_reasons": {
+        "past-date": 13
+      },
+      "dropped_samples": [
+        {
+          "title": "Saudi Real Estate Development and Ownership Exhibition",
+          "reason": "past-date",
+          "raw_date_text": "5/14/24",
+          "converted_date": "2024-05-14T09:00:00+03:00 - 2024-05-14T18:00:00+03:00",
+          "city": "Jeddah",
+          "url": "https://www.jcci.org.sa/en/المعارض-والفعاليات"
+        },
+        {
+          "title": "Jeddah International Building Exhibition",
+          "reason": "past-date",
+          "raw_date_text": "5/7/24",
+          "converted_date": "2024-05-07T09:00:00+03:00 - 2024-05-07T18:00:00+03:00",
+          "city": "Jeddah",
+          "url": "https://www.jcci.org.sa/en/المعارض-والفعاليات"
+        },
+        {
+          "title": "Jeddah International Construction Exhibition",
+          "reason": "past-date",
+          "raw_date_text": "5/7/24",
+          "converted_date": "2024-05-07T09:00:00+03:00 - 2024-05-07T18:00:00+03:00",
+          "city": "Jeddah",
+          "url": "https://www.jcci.org.sa/en/المعارض-والفعاليات"
+        },
+        {
+          "title": "Ramadan Nights Events",
+          "reason": "past-date",
+          "raw_date_text": "3/17/24",
+          "converted_date": "2024-03-17T09:00:00+03:00 - 2024-03-17T18:00:00+03:00",
+          "city": "Jeddah",
+          "url": "https://www.jcci.org.sa/en/المعارض-والفعاليات"
+        },
+        {
+          "title": "National Consumer Industries Exhibition",
+          "reason": "past-date",
+          "raw_date_text": "2/27/24",
+          "converted_date": "2024-02-27T09:00:00+03:00 - 2024-02-27T18:00:00+03:00",
+          "city": "Jeddah",
+          "url": "https://www.jcci.org.sa/en/المعارض-والفعاليات"
+        }
+      ],
+      "sample_titles": [],
+      "zero_yield_reason": "past-date:13",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "saudi-pro-league-fixtures",
+      "name": "Saudi Pro League Fixtures",
+      "url": "https://www.spl.com.sa/en",
+      "collector_url": "https://api.saudi-pro-league.pulselive.com/football/fixtures?comps=215&compSeasons=859&pageSize=100&statuses=C,U,L&sort=asc",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/saudi-pro-league-fixtures-2026-07-07T19-13-07-079Z.json",
+      "signals": {
+        "bytes": 162264,
+        "json_rows": 100,
+        "links": 0,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 200
+      },
+      "extracted_raw": 100,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "drop_reasons": {
+        "past-date": 100
+      },
+      "dropped_samples": [
+        {
+          "title": "Damac vs Al Hazem",
+          "reason": "past-date",
+          "raw_date_text": "Thu 28 Aug 2025, 17:05 BST",
+          "converted_date": "2025-08-28T19:05:00+03:00 - 2025-08-28T21:05:00+03:00",
+          "city": "Khamis Mushait",
+          "url": "https://webook.com/ar/events/saudi-pro-league-week-1-damac-vs-al-hazem-spl-685149"
+        },
+        {
+          "title": "Al Ahli vs Neom S.C.",
+          "reason": "past-date",
+          "raw_date_text": "Thu 28 Aug 2025, 19:00 BST",
+          "converted_date": "2025-08-28T21:00:00+03:00 - 2025-08-28T23:00:00+03:00",
+          "city": "Jeddah",
+          "url": "https://webook.com/ar/events/3354-spl-25-26-al-ahli-vs-neom-week-1-45435"
+        },
+        {
+          "title": "Al Ettifaq vs Al Kholood",
+          "reason": "past-date",
+          "raw_date_text": "Thu 28 Aug 2025, 19:00 BST",
+          "converted_date": "2025-08-28T21:00:00+03:00 - 2025-08-28T23:00:00+03:00",
+          "city": "Dammam",
+          "url": "https://webook.com/ar/events/99al-ettifaq-vs-al-kholood-25-26-745673"
+        },
+        {
+          "title": "Al Hilal vs Al Riyadh",
+          "reason": "past-date",
+          "raw_date_text": "Fri 29 Aug 2025, 16:50 BST",
+          "converted_date": "2025-08-29T18:50:00+03:00 - 2025-08-29T20:50:00+03:00",
+          "city": "Riyadh",
+          "url": "https://webook.com/ar/events/match1-hilal-09213461"
+        },
+        {
+          "title": "Al Shabab vs Al Khaleej",
+          "reason": "past-date",
+          "raw_date_text": "Fri 29 Aug 2025, 19:00 BST",
+          "converted_date": "2025-08-29T21:00:00+03:00 - 2025-08-29T23:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://webook.com/ar/events/al-shabab-vs-al-khaleej-week-1-spl-9349-0-44"
+        }
+      ],
+      "sample_titles": [],
+      "zero_yield_reason": "past-date:100",
+      "attempts_documented": 2,
+      "attempt_notes": [
+        {
+          "attempted_at": "2026-07-05T00:12:00+03:00",
+          "method": "official Pulselive fixture API compSeason 859",
+          "result": "API works but all returned fixtures are past relative to 2026-07-05."
+        },
+        {
+          "attempted_at": "2026-07-05T00:13:00+03:00",
+          "method": "official Pulselive competition compseasons and adjacent IDs 860-872",
+          "result": "Only 2025/26 is published for competition 215; adjacent future compSeason IDs return zero fixtures."
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "saudi-space-agency-events",
+      "name": "Saudi Space Agency Events",
+      "url": "https://ssa.gov.sa/en/events/?path=/events/",
+      "collector_url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/saudi-space-agency-events-2026-07-07T19-13-07-079Z.json",
+      "signals": {
+        "bytes": 146085,
+        "json_rows": 0,
+        "links": 0,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 1
+      },
+      "extracted_raw": 14,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "drop_reasons": {
+        "past-date": 14
+      },
+      "dropped_samples": [
+        {
+          "title": "Participates in the 69th session of the United Nations Committee on the Peaceful Uses of Outer Space (COPUOS)",
+          "reason": "past-date",
+          "raw_date_text": "2026-06-10T06:00:00Z - 2026-06-18T13:00:00Z - Vienna",
+          "converted_date": "2026-06-10T09:00:00+03:00 - 2026-06-18T16:00:00+03:00",
+          "city": "Global",
+          "url": "https://ssa.gov.sa/en/events/69th-session-copuos/"
+        },
+        {
+          "title": "Artemis II Mission Launch Side Exhibitions",
+          "reason": "past-date",
+          "raw_date_text": "2026-03-28T06:00:00Z - 2026-03-31T14:00:00Z - USA",
+          "converted_date": "2026-03-28T09:00:00+03:00 - 2026-03-31T17:00:00+03:00",
+          "city": "Global",
+          "url": "https://ssa.gov.sa/en/events/artemis-ii-mission-launch-side-exhibitions/"
+        },
+        {
+          "title": "\"Abaad\" Competition Closing Ceremony",
+          "reason": "past-date",
+          "raw_date_text": "2026-02-05T08:00:00Z - 2026-02-05T12:00:00Z - Riyadh",
+          "converted_date": "2026-02-05T11:00:00+03:00 - 2026-02-05T15:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://ssa.gov.sa/en/events/abad-competition-closing-ceremony/"
+        },
+        {
+          "title": "Space Debris Conference 2026",
+          "reason": "past-date",
+          "raw_date_text": "2026-01-26T07:00:00Z - 2026-01-27T15:00:00Z - Riyadh, Saudi Arabia",
+          "converted_date": "2026-01-26T10:00:00+03:00 - 2026-01-27T18:00:00+03:00",
+          "city": "Riyadh",
+          "url": "https://ssa.gov.sa/en/events/spacedebris2026/"
+        },
+        {
+          "title": "The Saudi Arabia participated in the 64th session of the Legal Subcommittee of the United Nations Committee on the Peaceful Uses of Outer Space (COPUOS)",
+          "reason": "past-date",
+          "raw_date_text": "2025-06-15T09:00:00Z - 2025-06-15T14:00:00Z - Vienna International Centre",
+          "converted_date": "2025-06-15T12:00:00+03:00 - 2025-06-15T17:00:00+03:00",
+          "city": "Global",
+          "url": "https://ssa.gov.sa/en/events/64th-session-of-the-legal-subcommittee-of-the-united-nations-committee-on-the-peaceful-uses-of-outer-space-copuos/"
+        }
+      ],
+      "sample_titles": [],
+      "zero_yield_reason": "past-date:14",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "moc-cultural-subportals",
+      "name": "Ministry of Culture Commission Calendars",
+      "url": "https://music.moc.gov.sa/Cultural-Calendar",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/moc-cultural-subportals-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 71386,
+        "json_rows": 0,
+        "links": 16,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 1,
+        "date_like_tokens": 1
+      },
+      "extracted_raw": 13,
+      "future_complete": 13,
+      "capped_future_complete": 13,
+      "last_written": 0,
+      "drop_reasons": {
+        "future-complete": 13
+      },
+      "dropped_samples": [],
+      "sample_titles": [
+        "Skill Development Initiative",
+        "SITAR",
+        "The Architecture and Design Café",
+        "Jusoor Program",
+        "Urban transformation Initiative"
+      ],
+      "zero_yield_reason": "",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "discover-aseer-events",
+      "name": "Discover Aseer Events",
+      "url": "https://discoveraseer.com/en/events",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/discover-aseer-events-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 138076,
+        "json_rows": 0,
+        "links": 168,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 2
+      },
+      "extracted_raw": 1,
+      "future_complete": 1,
+      "capped_future_complete": 1,
+      "last_written": 0,
+      "drop_reasons": {
+        "future-complete": 1
+      },
+      "dropped_samples": [],
+      "sample_titles": [
+        "Summer Season 2026"
+      ],
+      "zero_yield_reason": "",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "saudi-water-authority-events",
+      "name": "Saudi Water Authority Events",
+      "url": "https://www.swa.gov.sa/en/events",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/saudi-water-authority-events-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 176734,
+        "json_rows": 0,
+        "links": 90,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 21
+      },
+      "extracted_raw": 9,
+      "future_complete": 8,
+      "capped_future_complete": 8,
+      "last_written": 0,
+      "drop_reasons": {
+        "future-complete": 8,
+        "past-date": 1
+      },
+      "dropped_samples": [
+        {
+          "title": "Saudi Water Week",
+          "reason": "past-date",
+          "raw_date_text": "",
+          "converted_date": "2026-06-28T09:00:00+03:00 - 2026-07-02T04:00:00+03:00",
+          "city": "Jeddah",
+          "url": "https://www.swa.gov.sa/en/events/Event-639148555832355516"
+        }
+      ],
+      "sample_titles": [
+        "Global Prize for Innovation in Water",
+        "The Global Water Sustainability Conference 2026",
+        "Saudi Water Partnerships Company Forum and Awards Ceremony",
+        "Saudi National Day",
+        "Saudi Flag Day"
+      ],
+      "zero_yield_reason": "",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "saudi-university-events",
+      "name": "Saudi Universities and Technical Colleges",
+      "url": "https://www.kaust.edu.sa/",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/saudi-university-events-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 85738,
+        "json_rows": 0,
+        "links": 185,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 0
+      },
+      "extracted_raw": 15,
+      "future_complete": 6,
+      "capped_future_complete": 6,
+      "last_written": 0,
+      "drop_reasons": {
+        "past-date": 9,
+        "future-complete": 6
+      },
+      "dropped_samples": [
+        {
+          "title": "Egypt Vs Argentina | Join the Celebration at the FIFA Fan Zone",
+          "reason": "past-date",
+          "raw_date_text": "2026-07-07 18:00:00 2026-07-07 21:00:00",
+          "converted_date": "2026-07-07T18:00:00+03:00 - 2026-07-07T21:00:00+03:00",
+          "city": "Thuwal",
+          "url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/517"
+        },
+        {
+          "title": "Research Beacons Program, Season 3, 2026",
+          "reason": "past-date",
+          "raw_date_text": "17 May 2026 - 20 May 2026",
+          "converted_date": "2026-05-17T09:00:00+03:00 - 2026-05-20T18:00:00+03:00",
+          "city": "Jeddah",
+          "url": "https://kau.edu.sa/en/event/research-beacons-program-season-3-2026"
+        },
+        {
+          "title": "Panel Discussions for the International Day of Families",
+          "reason": "past-date",
+          "raw_date_text": "14 May 2026 - 14 May 2026",
+          "converted_date": "2026-05-14T09:00:00+03:00 - 2026-05-14T18:00:00+03:00",
+          "city": "Jeddah",
+          "url": "https://kau.edu.sa/en/event/panel-discussions-for-the-international-day-of-families"
+        },
+        {
+          "title": "International Day of Families",
+          "reason": "past-date",
+          "raw_date_text": "14 May 2026 - 14 May 2026",
+          "converted_date": "2026-05-14T09:00:00+03:00 - 2026-05-14T18:00:00+03:00",
+          "city": "Jeddah",
+          "url": "https://kau.edu.sa/en/event/international-day-of-families"
+        },
+        {
+          "title": "Family Hackathon",
+          "reason": "past-date",
+          "raw_date_text": "13 May 2026 - 13 May 2026",
+          "converted_date": "2026-05-13T09:00:00+03:00 - 2026-05-13T18:00:00+03:00",
+          "city": "Jeddah",
+          "url": "https://kau.edu.sa/en/event/family-hackathon"
+        }
+      ],
+      "sample_titles": [
+        "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+        "Join us at KAUST Health for Respiratory Health Day",
+        "Semi-Finals: Join the Celebration at the FIFA Fan Zone",
+        "FIFA World Cup 2026 Final: Celebrate Football's Biggest Night at the KAUST Fan Zone",
+        "Future Frontiers for Businesses: Catalysts for Growth in a Transformational Economy"
+      ],
+      "zero_yield_reason": "",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "sfda-events",
+      "name": "Saudi Food and Drug Authority Events",
+      "url": "https://www.sfda.gov.sa/",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/sfda-events-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 185821,
+        "json_rows": 0,
+        "links": 483,
+        "json_ld_blocks": 1,
+        "next_data_blocks": 0,
+        "date_like_tokens": 22
+      },
+      "extracted_raw": 9,
+      "future_complete": 4,
+      "capped_future_complete": 4,
+      "last_written": 0,
+      "drop_reasons": {
+        "future-complete": 4,
+        "past-date": 5
+      },
+      "dropped_samples": [
+        {
+          "title": "نقل مبيدات آفات الصحة العامة",
+          "reason": "past-date",
+          "raw_date_text": "2026-07-06 - 2026-07-06 نقل مبيدات آفات الصحة العامة",
+          "converted_date": "2026-07-06T09:00:00+03:00 - 2026-07-06T18:00:00+03:00",
+          "city": "Online",
+          "url": "https://www.sfda.gov.sa/ar/workshop/5521944"
+        },
+        {
+          "title": "آلية تقديم طلبات اذونات استيراد مواد التصوير الطبي في النظام الالكتروني ومتطلباتها",
+          "reason": "past-date",
+          "raw_date_text": "2026-07-06 - 2026-07-06 آلية تقديم طلبات اذونات استيراد مواد التصوير الطبي في النظام الالكتروني ومتطلباتها",
+          "converted_date": "2026-07-06T09:00:00+03:00 - 2026-07-06T18:00:00+03:00",
+          "city": "Online",
+          "url": "https://www.sfda.gov.sa/ar/workshop/5521972"
+        },
+        {
+          "title": "Risk Management File for Medical Devices",
+          "reason": "past-date",
+          "raw_date_text": "2026-07-01 - 2026-07-01 Risk Management File for Medical Devices",
+          "converted_date": "2026-07-01T09:00:00+03:00 - 2026-07-01T18:00:00+03:00",
+          "city": "Online",
+          "url": "https://www.sfda.gov.sa/ar/workshop/5521971"
+        },
+        {
+          "title": "التعريف بالتحديثات على نظام الأجهزة والمستلزمات الطبية",
+          "reason": "past-date",
+          "raw_date_text": "2026-06-29 - 2026-06-29 التعريف بالتحديثات على نظام الأجهزة والمستلزمات الطبية",
+          "converted_date": "2026-06-29T09:00:00+03:00 - 2026-06-29T18:00:00+03:00",
+          "city": "Online",
+          "url": "https://www.sfda.gov.sa/ar/workshop/5521982"
+        },
+        {
+          "title": "رقابة ما بعد التسويق للأجهزة والمستلزمات الطبية ومتطلبات والتزامات مقدمي خدمات الصيانة الطبية",
+          "reason": "past-date",
+          "raw_date_text": "2026-06-29 - 2026-06-29 رقابة ما بعد التسويق للأجهزة والمستلزمات الطبية ومتطلبات والتزامات مقدمي خدمات الصيانة الطبية",
+          "converted_date": "2026-06-29T09:00:00+03:00 - 2026-06-29T18:00:00+03:00",
+          "city": "Online",
+          "url": "https://www.sfda.gov.sa/ar/workshop/5521911"
+        }
+      ],
+      "sample_titles": [
+        "احتياطات الأمان عند استخدام مبيدات آفات الصحة العامة",
+        "الإدراج في خطوات",
+        "دور مقدمي الرعاية الصحية وضباط الاتصال في التعامل مع انذارات السلامة الصادرة من المركز الوطني لبلاغات الأجهزة والمستلزمات الطبية",
+        "متطلبات الاستخدام الآمن للأجهزة والمستلزمات الطبية لمراكز الأسنان"
+      ],
+      "zero_yield_reason": "",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "riyadh-city-events",
+      "name": "Riyadh City Events",
+      "url": "https://riyadh.sa/en/events/all",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/riyadh-city-events-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 3129,
+        "json_rows": 0,
+        "links": 0,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 0
+      },
+      "extracted_raw": 91,
+      "future_complete": 91,
+      "capped_future_complete": 40,
+      "last_written": 0,
+      "drop_reasons": {
+        "future-complete": 91
+      },
+      "dropped_samples": [],
+      "sample_titles": [
+        "Poppy Playtime",
+        "Riyadh Season: BLVD City",
+        "Immersive Experience: Flying Over Saudi",
+        "Horses and Equestrian Heritage Exhibition",
+        "Solo Art Exhibition Series"
+      ],
+      "zero_yield_reason": "",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "sdaia-calendar-events",
+      "name": "SDAIA Calendar and Events",
+      "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/sdaia-calendar-events-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 40975,
+        "json_rows": 0,
+        "links": 7,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 1
+      },
+      "extracted_raw": 0,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "drop_reasons": {},
+      "dropped_samples": [],
+      "sample_titles": [],
+      "zero_yield_reason": "date/content signals exist but extractor returned no complete future rows",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "makkah-chamber-events",
+      "name": "Makkah Chamber Events",
+      "url": "https://makkahcci.org.sa/events",
+      "collector_url": "https://makkahcci.org.sa/event/page/2?category=all&country=all&date=old&type=all",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/makkah-chamber-events-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 67438,
+        "json_rows": 0,
+        "links": 73,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 14
+      },
+      "extracted_raw": 10,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "drop_reasons": {
+        "past-date": 10
+      },
+      "dropped_samples": [
+        {
+          "title": "التوسع الذكي: متى وكيف تكبر مشروعك؟",
+          "reason": "past-date",
+          "raw_date_text": "01/03/2026 إلى 02/03/2026 23:3 0:3",
+          "converted_date": "2026-03-01T23:03:00+03:00 - 2026-03-02T00:03:00+03:00",
+          "city": "Makkah",
+          "url": "https://makkahcci.org.sa/event/2026-03-01-2026-03-02-566/register"
+        },
+        {
+          "title": "الذكاء العاطفي وبناء علاقات قوية في عالم الأعمال",
+          "reason": "past-date",
+          "raw_date_text": "01/03/2026 إلى 01/03/2026 22:3 23:3",
+          "converted_date": "2026-03-01T22:03:00+03:00 - 2026-03-01T23:03:00+03:00",
+          "city": "Makkah",
+          "url": "https://makkahcci.org.sa/event/2026-03-01-565/register"
+        },
+        {
+          "title": "ذكاء الأعمال: من البيانات إلى القرار",
+          "reason": "past-date",
+          "raw_date_text": "28/02/2026 إلى 01/03/2026 23:2 0:3",
+          "converted_date": "2026-02-28T23:02:00+03:00 - 2026-03-01T00:03:00+03:00",
+          "city": "Makkah",
+          "url": "https://makkahcci.org.sa/event/2026-02-28-2026-03-01-564/register"
+        },
+        {
+          "title": "كيف تبني البراند باستخدام الذكاء الاصطناعي",
+          "reason": "past-date",
+          "raw_date_text": "28/02/2026 إلى 28/02/2026 22:2 23:2",
+          "converted_date": "2026-02-28T22:02:00+03:00 - 2026-02-28T23:02:00+03:00",
+          "city": "Makkah",
+          "url": "https://makkahcci.org.sa/event/2026-02-28-563/register"
+        },
+        {
+          "title": "الانطلاقة القانونية الآمنة للمشاريع الريادية",
+          "reason": "past-date",
+          "raw_date_text": "27/02/2026 إلى 28/02/2026 23:2 0:2",
+          "converted_date": "2026-02-27T23:02:00+03:00 - 2026-02-28T00:02:00+03:00",
+          "city": "Makkah",
+          "url": "https://makkahcci.org.sa/event/2026-02-27-2026-02-28-562/register"
+        }
+      ],
+      "sample_titles": [],
+      "zero_yield_reason": "past-date:10",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "asharqia-chamber-events",
+      "name": "Asharqia Chamber Events",
+      "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/asharqia-chamber-events-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 103207,
+        "json_rows": 0,
+        "links": 52,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 3
+      },
+      "extracted_raw": 15,
+      "future_complete": 2,
+      "capped_future_complete": 2,
+      "last_written": 0,
+      "drop_reasons": {
+        "future-complete": 2,
+        "past-date": 13
+      },
+      "dropped_samples": [
+        {
+          "title": "حفل الاستقبال السنوي لقطاع الاعمال 2025م",
+          "reason": "past-date",
+          "raw_date_text": "16/12/2025 16/12/2025 07:00 PM 07:00 PM",
+          "converted_date": "2025-12-16T19:00:00+03:00 - 2025-12-16T19:00:00+03:00",
+          "city": "Dhahran",
+          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=340"
+        },
+        {
+          "title": "ملتقى ومعرض ريادة الأعمال 2025م",
+          "reason": "past-date",
+          "raw_date_text": "24/11/2025 26/11/2025 04:00 PM 04:00 PM",
+          "converted_date": "2025-11-24T16:00:00+03:00 - 2025-11-26T16:00:00+03:00",
+          "city": "Dhahran",
+          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=338"
+        },
+        {
+          "title": "منتدى القطيف الاستثماري 2025م",
+          "reason": "past-date",
+          "raw_date_text": "29/10/2025 29/10/2025 09:00 AM 09:00 AM",
+          "converted_date": "2025-10-29T09:00:00+03:00 - 2025-10-29T09:00:00+03:00",
+          "city": "Qatif",
+          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=341"
+        },
+        {
+          "title": "معرض وظائف 2025م",
+          "reason": "past-date",
+          "raw_date_text": "26/10/2025 28/10/2025 12:00 AM 12:00 AM",
+          "converted_date": "2025-10-26T09:00:00+03:00 - 2025-10-28T18:00:00+03:00",
+          "city": "Dhahran",
+          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=342"
+        },
+        {
+          "title": "معرض الحرف والأعمال اليدوية 2025",
+          "reason": "past-date",
+          "raw_date_text": "08/10/2025 11/10/2025 04:00 PM 04:00 PM",
+          "converted_date": "2025-10-08T16:00:00+03:00 - 2025-10-11T16:00:00+03:00",
+          "city": "Dhahran",
+          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=339"
+        }
+      ],
+      "sample_titles": [
+        "معرض الحرف والأعمال اليدوية 2026",
+        "معرض وظائف 2026"
+      ],
+      "zero_yield_reason": "",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "qassim-chamber-events",
+      "name": "Qassim Chamber Events",
+      "url": "https://qcc.org.sa/events-list",
+      "collector_url": "https://tc.qcc.org.sa/",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/qassim-chamber-events-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 12736,
+        "json_rows": 0,
+        "links": 22,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 3
+      },
+      "extracted_raw": 3,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "drop_reasons": {
+        "past-date": 3
+      },
+      "dropped_samples": [
+        {
+          "title": "عمليات إدارة الموارد البشرية",
+          "reason": "past-date",
+          "raw_date_text": "الاثنين, يوليو 6 2026, 16:30",
+          "converted_date": "2026-07-06T16:30:00+03:00 - 2026-07-06T18:30:00+03:00",
+          "city": "Buraydah",
+          "url": "https://tc.qcc.org.sa/events/204"
+        },
+        {
+          "title": "أساسيات إدارة التأمين في المنشآت والشركات",
+          "reason": "past-date",
+          "raw_date_text": "الاثنين, يونيو 22 2026, 16:30",
+          "converted_date": "2026-06-22T16:30:00+03:00 - 2026-06-22T18:30:00+03:00",
+          "city": "Buraydah",
+          "url": "https://tc.qcc.org.sa/events/203"
+        },
+        {
+          "title": "إدارة الأداء المؤسسي وتقييم الموظفين وفق مؤشرات KPI",
+          "reason": "past-date",
+          "raw_date_text": "الاثنين, يونيو 8 2026, 16:30",
+          "converted_date": "2026-06-08T16:30:00+03:00 - 2026-06-08T18:30:00+03:00",
+          "city": "Buraydah",
+          "url": "https://tc.qcc.org.sa/events/202"
+        }
+      ],
+      "sample_titles": [],
+      "zero_yield_reason": "past-date:3",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "abha-chamber-events",
+      "name": "Abha Chamber Events",
+      "url": "https://abhacci.org.sa/Events",
+      "collector_url": "",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/abha-chamber-events-2026-07-07T19-13-07-079Z.html",
+      "signals": {
+        "bytes": 38904,
+        "json_rows": 0,
+        "links": 55,
+        "json_ld_blocks": 1,
+        "next_data_blocks": 0,
+        "date_like_tokens": 0
+      },
+      "extracted_raw": 5,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "drop_reasons": {
+        "past-date": 5
+      },
+      "dropped_samples": [
+        {
+          "title": "ورشة عمل الرقابة على منتجات التجميل",
+          "reason": "past-date",
+          "raw_date_text": "05/12/2024",
+          "converted_date": "2024-12-05T09:00:00+03:00 - 2024-12-05T18:00:00+03:00",
+          "city": "Abha",
+          "url": "https://abhacci.org.sa/Events/Details/3"
+        },
+        {
+          "title": "غرفة أبها تدعو شباب عسير للتطوع السياحي لتطوير القطاع وتعزيز العمل المجتمعي",
+          "reason": "past-date",
+          "raw_date_text": "20/02/2025",
+          "converted_date": "2025-02-20T09:00:00+03:00 - 2025-02-20T18:00:00+03:00",
+          "city": "Abha",
+          "url": "https://abhacci.org.sa/Events/Details/2"
+        },
+        {
+          "title": "الدورة التدريبية الجماهيرية \" انطلاقة العظماء\"",
+          "reason": "past-date",
+          "raw_date_text": "14/01/2025",
+          "converted_date": "2025-01-14T09:00:00+03:00 - 2025-01-14T18:00:00+03:00",
+          "city": "Abha",
+          "url": "https://abhacci.org.sa/Events/Details/1"
+        },
+        {
+          "title": "ورشة عمل تراخيص مرافق الضيافة والأنشطة السياحية والرقابة في القطاع السياحي",
+          "reason": "past-date",
+          "raw_date_text": "05/02/2025",
+          "converted_date": "2025-02-05T09:00:00+03:00 - 2025-02-05T18:00:00+03:00",
+          "city": "Abha",
+          "url": "https://abhacci.org.sa/Events/Details/7"
+        },
+        {
+          "title": "ورشة عمل \"مدخل إلى عالم العطور \"بغرفة أبها",
+          "reason": "past-date",
+          "raw_date_text": "05/08/2025",
+          "converted_date": "2025-08-05T09:00:00+03:00 - 2025-08-05T18:00:00+03:00",
+          "city": "Abha",
+          "url": "https://abhacci.org.sa/Events/Details/8"
+        }
+      ],
+      "sample_titles": [],
+      "zero_yield_reason": "past-date:5",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    },
+    {
+      "id": "jazan-chamber-events",
+      "name": "Jazan Chamber Events",
+      "url": "https://jazancci.org.sa/",
+      "collector_url": "https://www.jazancci.org.sa/api/events/calendar/7/2026",
+      "status": "ok",
+      "snapshot_path": "data/raw/source-yield-snapshots/jazan-chamber-events-2026-07-07T19-13-07-079Z.json",
+      "signals": {
+        "bytes": 2,
+        "json_rows": 0,
+        "links": 0,
+        "json_ld_blocks": 0,
+        "next_data_blocks": 0,
+        "date_like_tokens": 0
+      },
+      "extracted_raw": 11,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "drop_reasons": {
+        "past-date": 11
+      },
+      "dropped_samples": [
+        {
+          "title": "ورشة تعريفية عن نظام الشركات",
+          "reason": "past-date",
+          "raw_date_text": "2025-01-26T21:00:00.000Z - 2025-01-26T21:00:00.000Z",
+          "converted_date": "2025-01-27T00:00:00+03:00 - 2025-01-27T00:00:00+03:00",
+          "city": "Jazan",
+          "url": "https://events.jazancci.org.sa/index.php/ar/%D8%A7%D9%84%D8%AA%D8%B5%D9%86%D9%8A%D9%81%D8%A7%D8%AA/%D9%86%D8%AF%D9%88%D8%A7%D8%AA-%D9%88%D9%88%D8%B1%D8%B4-%D8%B9%D9%85%D9%84/240-%D9%88%D8%B1%D8%B4%D8%A9-%D8%AA%D8%B9%D8%B1%D9%8A%D9%81%D9%8A%D8%A9-%D8%B9%D9"
+        },
+        {
+          "title": "تحسين تجارب تجربة العميل",
+          "reason": "past-date",
+          "raw_date_text": "2025-02-02T21:00:00.000Z - 2025-02-02T21:00:00.000Z",
+          "converted_date": "2025-02-03T00:00:00+03:00 - 2025-02-03T00:00:00+03:00",
+          "city": "Jazan",
+          "url": "https://events.jazancci.org.sa/index.php/ar/%D8%A7%D9%84%D8%AA%D8%B5%D9%86%D9%8A%D9%81%D8%A7%D8%AA/%D9%86%D8%AF%D9%88%D8%A7%D8%AA-%D9%88%D9%88%D8%B1%D8%B4-%D8%B9%D9%85%D9%84/242-%D8%AA%D8%AD%D8%B3%D9%8A%D9%86-%D8%AA%D8%AC%D8%A7%D8%B1%D8%A8-%D8%AA%D8%AC%D8"
+        },
+        {
+          "title": "ورشة عمل الفرص والتحديات في الخدمات الصناعية",
+          "reason": "past-date",
+          "raw_date_text": "2025-02-04T21:00:00.000Z - 2025-02-04T21:00:00.000Z",
+          "converted_date": "2025-02-05T00:00:00+03:00 - 2025-02-05T00:00:00+03:00",
+          "city": "Jazan",
+          "url": "https://events.jazancci.org.sa/index.php/ar/%D8%A7%D9%84%D8%AA%D8%B5%D9%86%D9%8A%D9%81%D8%A7%D8%AA/%D9%86%D8%AF%D9%88%D8%A7%D8%AA-%D9%88%D9%88%D8%B1%D8%B4-%D8%B9%D9%85%D9%84/243-%D9%88%D8%B1%D8%B4%D8%A9-%D8%B9%D9%85%D9%84-%D8%A7%D9%84%D9%81%D8%B1%D8%B5-%D"
+        },
+        {
+          "title": "التعريف بخدمات بنك التنمية الاجتماعية المالية والغير مالية",
+          "reason": "past-date",
+          "raw_date_text": "2025-02-10T21:00:00.000Z - 2025-02-10T21:00:00.000Z",
+          "converted_date": "2025-02-11T00:00:00+03:00 - 2025-02-11T00:00:00+03:00",
+          "city": "Jazan",
+          "url": "https://events.jazancci.org.sa/index.php/ar/%D8%A7%D9%84%D8%AA%D8%B5%D9%86%D9%8A%D9%81%D8%A7%D8%AA/%D9%86%D8%AF%D9%88%D8%A7%D8%AA-%D9%88%D9%88%D8%B1%D8%B4-%D8%B9%D9%85%D9%84/244-%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D9%8A%D9%81-%D8%A8%D8%AE%D8%AF%D9%85%D8%A7%D8%"
+        },
+        {
+          "title": "معايير وآلية التقييم والسياسات المنظمة للاعتماد الوطني",
+          "reason": "past-date",
+          "raw_date_text": "2025-02-11T21:00:00.000Z - 2025-02-11T21:00:00.000Z",
+          "converted_date": "2025-02-12T00:00:00+03:00 - 2025-02-12T00:00:00+03:00",
+          "city": "Jazan",
+          "url": "https://events.jazancci.org.sa/index.php/ar/%D8%A7%D9%84%D8%AA%D8%B5%D9%86%D9%8A%D9%81%D8%A7%D8%AA/%D9%86%D8%AF%D9%88%D8%A7%D8%AA-%D9%88%D9%88%D8%B1%D8%B4-%D8%B9%D9%85%D9%84/245-%D9%86%D8%B8%D8%B1%D8%A9-%D8%B4%D8%A7%D9%85%D9%84%D8%A9-%D8%B9%D9%84%D9%89-%D"
+        }
+      ],
+      "sample_titles": [],
+      "zero_yield_reason": "past-date:11",
+      "attempts_documented": 0,
+      "attempt_notes": [],
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "id": "event-sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026",
+  "title": "Sikkat Al-Atimah (Street Food) Fan Zone – FIFA World Cup 2026",
+  "summary": "Sikkat Al-Atimah (Street Food) Fan Zone offers a unique FIFA World Cup 2026 viewing experience in the heart of Historic Riyadh, within the Qasr Al-Hukm District near Souq Al Zal. Combining the excitement of live matches with the charm of one of the city's most iconic heritage destinations, the fan zone features dedicated viewing areas, a giant screen, immersive audio-visual experiences, and family-friendly entertainment. Visitors can also enjoy a variety of food and beverage offerings, photo opportunities, and convenient access via Riyadh's public transport and metro network.",
+  "canonical_url": "https://eventme.live/events/event-sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026.html",
+  "detail_url": "./events/event-sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026.html",
+  "calendar_url": "./events/event-sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026.ics",
+  "source_label": "Riyadh City Events",
+  "source_url": "https://riyadh.sa/en/moment/events/item/event/31094",
+  "evidence_url": "https://riyadh.sa/en/moment/events/item/event/31094",
+  "city": "الرياض",
+  "venue": "Riyadh Street Food",
+  "venue_address": "Riyadh Street Food",
+  "starts_at": "2026-06-11T19:00:00+03:00",
+  "ends_at": "2026-07-19T01:00:00+03:00",
+  "status": "ongoing",
+  "status_label": "برنامج جارٍ",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026-2a9242bf45.jpg",
+  "image_alt": "Sikkat Al-Atimah (Street Food) Fan Zone – FIFA World Cup 2026",
+  "category": "رياضة وفعاليات جماهيرية",
+  "category_url": "./categories/sports.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    },
+    {
+      "slug": "sports",
+      "label": "رياضة ولياقة"
+    }
+  ],
+  "keywords": [
+    "Sikkat Al-Atimah (Street Food) Fan Zone – FIFA World Cup 2026",
+    "رياضة وفعاليات جماهيرية",
+    "Entertainment & Sports",
+    "برنامج ممتد",
+    "برنامج جارٍ",
+    "الرياض",
+    "Riyadh Street Food",
+    "Riyadh City Events",
+    "city events",
+    "culture",
+    "sports",
+    "community",
+    "camps",
+    "tourism",
+    "10173",
+    "عائلات وأطفال",
+    "مبدعون وفنون",
+    "رياضة ولياقة"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-06-11T19:00:00+03:00",
+      "ends_at": "2026-07-19T01:00:00+03:00",
+      "room": "Riyadh Street Food",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Sikkat Al-Atimah (Street Food) Fan Zone – FIFA World Cup 2026",
+    "startDate": "2026-06-11T19:00:00+03:00",
+    "endDate": "2026-07-19T01:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Riyadh Street Food",
+      "address": "Riyadh Street Food"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Royal Commission for Riyadh City"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026-2a9242bf45.jpg"
+    ],
+    "description": "Sikkat Al-Atimah (Street Food) Fan Zone offers a unique FIFA World Cup 2026 viewing experience in the heart of Historic Riyadh, within the Qasr Al-Hukm District near Souq Al Zal. Combining the excitement of live matches with the charm of one of the city's most iconic heritage destinations, the fan zone features dedicated viewing areas, a giant screen, immersive audio-visual experiences, and family-friendly entertainment. Visitors can also enjoy a variety of food and beverage offerings, photo opportunities, and convenient access via Riyadh's public transport and metro network.",
+    "url": "https://eventme.live/events/event-sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026.html",
+    "isAccessibleForFree": false,
+    "keywords": "Sikkat Al-Atimah (Street Food) Fan Zone – FIFA World Cup 2026, رياضة وفعاليات جماهيرية, Entertainment & Sports, برنامج ممتد, برنامج جارٍ, الرياض, Riyadh Street Food, Riyadh City Events, city events, culture, sports, community, camps, tourism, 10173, عائلات وأطفال, مبدعون وفنون, رياضة ولياقة",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رياضة ولياقة"
+      }
+    ],
+    "sameAs": [
+      "https://riyadh.sa/en/moment/events/item/event/31094"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://riyadh.sa/en/moment/events/item/event/31094",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

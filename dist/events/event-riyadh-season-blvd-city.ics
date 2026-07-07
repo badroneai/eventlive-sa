@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Riyadh Season: BLVD City | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-riyadh-season-blvd-city@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20251010T130000Z
+DTEND:20261008T230000Z
+SUMMARY:Riyadh Season: BLVD City
+DESCRIPTION:Boulevard City is one of Riyadh Season’s most iconic entertainment hubs\, offering a vibrant mix of attractions\, from the dazzling dancing fountain to upscale dining\, shopping\, theaters\, and immersive experiences for all ages. Visitors can explore OLULOU\, where a towering dinosaur skeleton offers the perfect photo op\, and let kids dive into four imaginative zones at PLAY-TOPIA. For thrill-seekers\, Poppy Playtime delivers suspense inside an abandoned toy factory\, A Lot Like Life challenges your bravery in a zombie outbreak\, and The Conjuring opens October 15 with spine-chilling scenes from the haunted universe of Annabelle. Families can brave the haunted farm at Zeela House\, while pop culture lovers enjoy FUNKO (from Nov 15)\, with giant figures and collectibles\, and gamers embark on a real-world adventure inside MINECRAFT (also from Nov 15). Launching December 18\, Flying Over Saudi offers a groundbreaking 5D flight experience that takes you on a 7-minute immersive ride above Saudi Arabia’s most iconic landmarks.
+LOCATION:Boulevard City\, Riyadh
+URL:https://eventme.live/events/event-riyadh-season-blvd-city.html
+END:VEVENT
+END:VCALENDAR

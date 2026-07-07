@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Gulf Steel\, Storage Tank & Refinery Expo | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-gulf-steel-storage-tank-refinery-expo@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260920T060000Z
+DTEND:20260922T150000Z
+SUMMARY:Gulf Steel\, Storage Tank & Refinery Expo
+DESCRIPTION:فعالية مدرجة في التقويم الرسمي لـ Dhahran Expo. الموعد: ٢٠ سبتمبر ٢٠٢٦ في ٠٩:٠٠ ص إلى ٢٢ سبتمبر ٢٠٢٦ في ٠٦:٠٠ م. المنظم: Spartans and Knights Events Management.
+LOCATION:Dhahran Expo
+URL:https://eventme.live/events/event-gulf-steel-storage-tank-refinery-expo.html
+END:VEVENT
+END:VCALENDAR

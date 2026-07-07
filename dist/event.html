@@ -1,0 +1,1425 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23131f24'/%3E%3Ctext x='32' y='39' font-family='Arial' font-size='20' font-weight='800' text-anchor='middle' fill='%23ffffff'%3EEM%3C/text%3E%3C/svg%3E" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="alternate" type="application/json" href="./today.json" />
+  <meta name="theme-color" content="#00877f" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="EventLive" />
+
+  <link rel="canonical" href="https://eventme.live/event.html" />
+  <meta name="description" content="جدول حي لفعالية ملتقى التحول الرقمي في القطاع الحكومي 2026: الحالة الحالية، الجلسة القادمة، الاتجاهات، والتنبيهات التشغيلية." />
+  <meta property="og:locale" content="ar_SA" />
+  <meta property="og:site_name" content="EventLive" />
+  <meta property="og:type" content="event" />
+  <meta property="og:title" content="EventLive | ملتقى التحول الرقمي في القطاع الحكومي 2026" />
+  <meta property="og:description" content="جدول حي لفعالية ملتقى التحول الرقمي في القطاع الحكومي 2026: الحالة الحالية، الجلسة القادمة، الاتجاهات، والتنبيهات التشغيلية." />
+  <meta property="og:url" content="https://eventme.live/event.html" />
+  <meta property="og:image" content="https://eventme.live/assets/eventlive-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="EventLive | ملتقى التحول الرقمي في القطاع الحكومي 2026" />
+  <meta name="twitter:description" content="جدول حي لفعالية ملتقى التحول الرقمي في القطاع الحكومي 2026: الحالة الحالية، الجلسة القادمة، الاتجاهات، والتنبيهات التشغيلية." />
+  <meta name="twitter:image" content="https://eventme.live/assets/eventlive-hero.png" />
+  <title>EventLive | ملتقى التحول الرقمي في القطاع الحكومي 2026</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Event","@id":"https://eventme.live/event.html#event","name":"ملتقى التحول الرقمي في القطاع الحكومي 2026","description":"جدول حي لفعالية ملتقى التحول الرقمي في القطاع الحكومي 2026: الحالة الحالية، الجلسة القادمة، الاتجاهات، والتنبيهات التشغيلية.","startDate":"2026-07-10T09:00:00+03:00","endDate":"2026-07-10T14:00:00+03:00","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","image":["https://eventme.live/assets/eventlive-hero.png"],"inLanguage":"ar-SA","mainEntityOfPage":"https://eventme.live/event.html","location":{"@type":"Place","name":"مركز الرياض الدولي للمؤتمرات","address":{"@type":"PostalAddress","streetAddress":"طريق الملك عبد الله، الرياض","addressLocality":"Riyadh","addressCountry":"SA"}},"organizer":{"@type":"Organization","name":"EventLive","url":"https://eventme.live/"},"url":"https://eventme.live/event.html"}</script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700;800&display=swap');
+    :root {
+      --paper:#f4f8f8;
+      --surface:#f8fbfa;
+      --surface-strong:#ffffff;
+      --ink:#142126;
+      --muted:#65777d;
+      --line:#d8e2e1;
+      --teal:#00877f;
+      --teal-dark:#00645f;
+      --amber:#c99124;
+      --rose:#b94b4b;
+      --night:#131f24;
+      --soft:#eaf4f2;
+      --shadow:0 20px 60px rgba(20,33,38,.12);
+      --soft-shadow:0 10px 32px rgba(20,33,38,.08);
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:"IBM Plex Sans Arabic", Tahoma, Arial, sans-serif; background:var(--paper); color:var(--ink); text-rendering:optimizeLegibility; }
+    a { color:inherit; }
+    button, input, select { font:inherit; }
+    button { cursor:pointer; }
+    .app-shell { min-height:100vh; }
+    .hero {
+      min-height: 74vh;
+      display:grid;
+      align-items:end;
+      background:
+        linear-gradient(90deg, rgba(244,248,248,.98) 0%, rgba(244,248,248,.9) 44%, rgba(244,248,248,.22) 78%),
+        url("./assets/eventlive-hero.png") center/cover no-repeat;
+      border-bottom:1px solid var(--line);
+    }
+    .hero-inner { width:min(1200px, calc(100% - 36px)); margin:0 auto; padding:28px 0 36px; }
+    .topbar { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:38px; }
+    .brand { display:flex; align-items:center; gap:12px; }
+    .brand-mark {
+      width:48px; height:48px; border-radius:12px; display:grid; place-items:center;
+      background:var(--night); color:#fff; font-weight:900;
+      box-shadow:0 12px 24px rgba(19,31,36,.18);
+    }
+    .brand-name { font-size:25px; font-weight:800; letter-spacing:0; }
+    .brand-sub { color:var(--muted); font-size:13px; margin-top:2px; }
+    .nav-links { display:flex; gap:8px; flex-wrap:wrap; }
+    .nav-links a, .ghost-btn, .primary-btn {
+      min-height:42px; padding:10px 14px; border-radius:10px; border:1px solid rgba(216,226,225,.9);
+      text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:8px;
+      background:rgba(255,255,255,.78); color:var(--ink); font-weight:700;
+      box-shadow:0 8px 20px rgba(20,33,38,.06);
+    }
+    .primary-btn { background:var(--teal); color:#fff; border-color:var(--teal); }
+    .hero-grid { display:grid; grid-template-columns:minmax(0, 1.06fr) minmax(330px, .72fr); gap:22px; align-items:end; }
+    .headline { max-width:720px; }
+    .eyebrow { display:inline-flex; border:1px solid rgba(0,135,127,.22); color:var(--teal-dark); background:rgba(255,255,255,.72); padding:8px 12px; border-radius:10px; font-weight:800; font-size:13px; margin-bottom:14px; }
+    h1 { font-size:clamp(34px, 4.8vw, 64px); line-height:1.12; margin:0 0 14px; letter-spacing:0; font-weight:800; max-width:820px; }
+    .hero-copy { color:#334449; line-height:1.9; font-size:17px; max-width:680px; margin:0 0 20px; }
+    .meta-strip { display:grid; grid-template-columns:repeat(4, minmax(0, 1fr)); gap:10px; margin-top:22px; }
+    .metric, .live-panel, .section, .schedule-card {
+      background:rgba(255,255,255,.9); border:1px solid rgba(216,226,225,.95); border-radius:12px; box-shadow:var(--shadow);
+    }
+    .metric { padding:14px; min-height:88px; backdrop-filter:blur(10px); }
+    .label { color:var(--muted); font-size:12px; margin-bottom:6px; font-weight:600; }
+    .value { font-weight:800; line-height:1.5; }
+    .live-panel { padding:18px; background:rgba(255,255,255,.92); backdrop-filter:blur(12px); }
+    .panel-title { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:14px; }
+    .status-dot { width:10px; height:10px; border-radius:50%; background:var(--teal); display:inline-block; margin-left:7px; }
+    .live-row { border-top:1px solid var(--line); padding:12px 0; }
+    .live-row:first-of-type { border-top:0; padding-top:0; }
+    .live-row h2 { margin:0 0 8px; font-size:18px; line-height:1.5; font-weight:800; }
+    .live-row p { margin:0; color:var(--muted); line-height:1.7; }
+    .main { width:min(1200px, calc(100% - 36px)); margin:24px auto 48px; }
+    .section { padding:16px; margin-bottom:14px; box-shadow:var(--soft-shadow); background:var(--surface-strong); }
+    .toolbar { display:grid; grid-template-columns:minmax(240px, 2fr) repeat(4, minmax(140px, 1fr)); gap:10px; align-items:center; }
+    input, select {
+      width:100%; min-height:46px; border:1px solid var(--line); border-radius:10px; padding:10px 12px;
+      background:#fff; color:var(--ink);
+    }
+    input:focus, select:focus, button:focus-visible { outline:3px solid rgba(0,135,127,.18); outline-offset:2px; border-color:var(--teal); }
+    .action-row { display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; margin-top:12px; }
+    .segmented { display:flex; gap:6px; flex-wrap:wrap; }
+    .segmented button, .save-btn, .ics-btn {
+      min-height:42px; border:1px solid var(--line); border-radius:10px; background:#fff; color:var(--ink); padding:9px 12px; font-weight:800;
+    }
+    .segmented button.active, .save-btn.saved { background:var(--night); color:#fff; border-color:var(--night); }
+    .ics-btn { color:var(--teal-dark); }
+    .summary-line { color:var(--muted); font-size:13px; }
+    .schedule-list { display:grid; gap:12px; }
+    .schedule-card {
+      display:grid; grid-template-columns:150px minmax(0, 1fr) 170px; gap:12px; align-items:stretch;
+      padding:14px; box-shadow:var(--soft-shadow); background:var(--surface-strong);
+      transition:transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+    }
+    .schedule-card:hover { transform:translateY(-1px); box-shadow:0 18px 42px rgba(20,33,38,.11); border-color:#bfd0ce; }
+    .time-block { border-left:1px solid var(--line); padding-left:12px; }
+    .time-range { font-size:22px; font-weight:800; color:var(--night); }
+    .duration { color:var(--muted); font-size:12px; margin-top:6px; }
+    .session-main h3 { margin:0 0 8px; font-size:21px; line-height:1.55; font-weight:800; }
+    .session-meta { display:flex; flex-wrap:wrap; gap:6px; color:var(--muted); font-size:13px; line-height:1.6; }
+    .pill { display:inline-flex; align-items:center; min-height:26px; padding:5px 8px; border-radius:9px; background:var(--soft); color:#34464b; font-size:12px; font-weight:800; }
+    .state { display:inline-flex; min-height:28px; align-items:center; padding:5px 8px; border-radius:8px; font-size:12px; font-weight:900; }
+    .state-now { background:rgba(0,135,127,.13); color:var(--teal-dark); }
+    .state-next { background:rgba(201,145,36,.16); color:#76530e; }
+    .state-ended { background:#eef3f2; color:#5c6970; }
+    .state-cancelled { background:rgba(185,75,75,.14); color:#8b3030; }
+    .session-side { display:flex; flex-direction:column; justify-content:space-between; gap:10px; align-items:stretch; }
+    .source-line { color:var(--muted); font-size:12px; line-height:1.6; }
+    .empty { padding:28px; text-align:center; border:1px dashed var(--line); border-radius:8px; color:var(--muted); background:rgba(255,255,255,.6); }
+    .live-command { display:grid; grid-template-columns:minmax(280px, .9fr) minmax(0, 1.1fr); gap:14px; margin-bottom:14px; }
+    .countdown-card, .arrival-card, .updates-card {
+      background:#fff; border:1px solid var(--line); border-radius:14px; padding:16px; box-shadow:var(--soft-shadow);
+    }
+    .updates-card { grid-column:1 / -1; }
+    .kicker { color:var(--teal-dark); font-size:12px; font-weight:800; margin-bottom:6px; }
+    .phase-title { font-size:24px; line-height:1.45; font-weight:800; margin:0 0 6px; }
+    .countdown-number { font-size:clamp(36px, 7vw, 62px); font-weight:800; line-height:1; margin:14px 0 10px; color:var(--night); }
+    .countdown-number small { font-size:16px; color:var(--muted); margin-right:6px; }
+    .progress-track { height:10px; border-radius:999px; background:#e5eeed; overflow:hidden; margin:14px 0 8px; }
+    .progress-bar { height:100%; width:0%; background:linear-gradient(90deg, var(--teal), #31b7a9); border-radius:999px; transition:width .3s ease; }
+    .phase-note, .tiny-note { color:var(--muted); line-height:1.8; margin:0; }
+    .arrival-grid { display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:10px; margin-top:12px; }
+    .arrival-item { border:1px solid var(--line); border-radius:12px; background:var(--surface); padding:12px; min-height:92px; }
+    .arrival-actions { display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; }
+    .arrival-actions a, .arrival-actions button {
+      min-height:42px; border-radius:10px; padding:10px 13px; border:1px solid var(--line); background:#fff; text-decoration:none; color:var(--ink); font-weight:800;
+    }
+    .arrival-actions a.primary-action { background:var(--teal); color:#fff; border-color:var(--teal); }
+    .offline-status {
+      display:inline-flex; align-items:center; min-height:34px; border-radius:999px; padding:7px 10px;
+      background:var(--soft); border:1px solid var(--line); color:var(--teal-dark); font-size:12px; font-weight:800;
+      margin-top:10px;
+    }
+    .updates-list { display:grid; gap:8px; margin-top:12px; }
+    .update-item { border:1px solid var(--line); background:var(--surface); border-radius:12px; padding:12px; }
+    .update-item.update-delay, .update-item.update-room_change { border-color:rgba(201,145,36,.45); background:rgba(201,145,36,.07); }
+    .update-item.update-cancelled { border-color:rgba(185,75,75,.4); background:rgba(185,75,75,.07); }
+    .update-item strong { display:block; margin-bottom:4px; }
+    .update-item p { margin:0; color:var(--muted); line-height:1.75; }
+    .update-chip, .session-update-badge {
+      display:inline-flex; align-items:center; width:max-content; border-radius:999px; padding:4px 8px;
+      background:rgba(201,145,36,.14); color:#76530e; font-size:11px; font-weight:900; margin:2px 0 6px;
+    }
+    .trust-card {
+      grid-column:1 / -1; background:#fff; border:1px solid var(--line); border-radius:14px; padding:16px;
+      box-shadow:var(--soft-shadow);
+    }
+    .trust-grid { display:grid; grid-template-columns:repeat(4, minmax(0, 1fr)); gap:10px; margin-top:12px; }
+    .trust-box { border:1px solid var(--line); background:var(--surface); border-radius:12px; padding:12px; min-height:82px; }
+    .trust-box strong { display:block; line-height:1.55; }
+    .live-timeline-board {
+      background:#fff; border:1px solid var(--line); border-radius:14px; padding:16px; margin-bottom:14px;
+      box-shadow:var(--soft-shadow);
+    }
+    .timeline-toolbar { display:flex; justify-content:space-between; align-items:flex-start; gap:14px; margin-bottom:14px; }
+    .timeline-toolbar h2 { margin:0 0 6px; font-size:24px; line-height:1.4; }
+    .timeline-toolbar p { margin:0; color:var(--muted); line-height:1.8; }
+    .timeline-actions { display:flex; align-items:center; gap:8px; flex-wrap:wrap; justify-content:flex-end; min-width:310px; }
+    .live-clock {
+      display:inline-flex; align-items:center; min-height:42px; padding:9px 12px; border:1px solid var(--line);
+      border-radius:10px; background:var(--surface); color:var(--night); font-weight:800; direction:ltr;
+    }
+    .jump-btn {
+      min-height:42px; border:1px solid var(--night); border-radius:10px; background:var(--night); color:#fff;
+      padding:10px 13px; font-weight:800;
+    }
+    .timeline-rail { display:grid; gap:8px; max-height:420px; overflow:auto; padding-inline-start:2px; }
+    .timeline-item {
+      width:100%; display:grid; grid-template-columns:112px minmax(0, 1fr) auto; align-items:center; gap:10px;
+      border:1px solid var(--line); border-radius:12px; background:var(--surface-strong); padding:10px 12px;
+      text-align:right; color:var(--ink); position:relative;
+    }
+    .timeline-item:hover { border-color:#b8cac8; }
+    .timeline-time { direction:ltr; text-align:right; font-weight:900; color:var(--night); font-variant-numeric:tabular-nums; }
+    .timeline-title { min-width:0; }
+    .timeline-title strong { display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .timeline-title span { display:block; color:var(--muted); font-size:12px; margin-top:3px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .timeline-chip { border-radius:999px; padding:5px 8px; font-size:11px; font-weight:900; background:#eef3f2; color:#5c6970; }
+    @keyframes livePulse {
+      0% { box-shadow:0 0 0 0 rgba(0,135,127,.28); }
+      70% { box-shadow:0 0 0 9px rgba(0,135,127,0); }
+      100% { box-shadow:0 0 0 0 rgba(0,135,127,0); }
+    }
+    .timeline-item.state-now, .schedule-card.state-now {
+      border-color:rgba(0,135,127,.58); background:linear-gradient(90deg, rgba(0,135,127,.09), #fff 44%);
+    }
+    .timeline-item.state-now::before, .schedule-card.state-now::before {
+      content:""; width:10px; height:10px; border-radius:999px; background:var(--teal); position:absolute;
+      inset-block-start:14px; inset-inline-end:14px; animation:livePulse 1.6s ease-out infinite;
+    }
+    .timeline-item.state-next, .schedule-card.state-next { border-color:rgba(201,145,36,.5); background:linear-gradient(90deg, rgba(201,145,36,.1), #fff 44%); }
+    .timeline-item.state-ended, .schedule-card.state-ended { opacity:.74; }
+    .timeline-item.state-cancelled, .schedule-card.state-cancelled { border-color:rgba(185,75,75,.38); background:rgba(185,75,75,.06); }
+    .timeline-item.state-now .timeline-chip, .state-now .state { background:rgba(0,135,127,.16); color:var(--teal-dark); }
+    .timeline-item.state-next .timeline-chip, .state-next .state { background:rgba(201,145,36,.16); color:#76530e; }
+    .schedule-card { position:relative; }
+    .session-details {
+      display:none; grid-column:1 / -1; border-top:1px solid var(--line); margin-top:4px; padding-top:12px;
+    }
+    .schedule-card.expanded .session-details { display:block; }
+    .detail-grid { display:grid; grid-template-columns:repeat(4, minmax(0, 1fr)); gap:8px; margin-top:10px; }
+    .detail-item { border:1px solid var(--line); border-radius:10px; background:var(--surface); padding:10px; }
+    .detail-item strong { display:block; margin-bottom:4px; font-size:12px; color:var(--muted); }
+    .detail-status { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+    .detail-status span { display:inline-flex; border:1px solid var(--line); background:#fff; border-radius:999px; padding:6px 9px; font-size:12px; font-weight:800; color:var(--ink); }
+    .sticky-live-bar {
+      position:sticky; top:0; z-index:5; display:none; margin:0 -10px 12px; padding:9px 10px;
+      background:rgba(244,248,248,.95); backdrop-filter:blur(10px); border-bottom:1px solid var(--line);
+    }
+    .sticky-live-inner { display:flex; align-items:center; justify-content:space-between; gap:8px; background:var(--night); color:#fff; border-radius:12px; padding:10px 12px; }
+    .sticky-live-inner a { color:#fff; text-decoration:none; font-weight:800; white-space:nowrap; }
+    .footer-note { color:var(--muted); line-height:1.8; padding:18px 0 32px; }
+    @media (max-width: 900px) {
+      .hero { min-height:auto; background:linear-gradient(180deg, rgba(244,248,248,.98), rgba(244,248,248,.86)), url("./assets/eventlive-hero.png") center/cover no-repeat; }
+      .hero-grid, .meta-strip, .toolbar, .schedule-card, .live-command, .arrival-grid { grid-template-columns:1fr; }
+      .topbar { align-items:flex-start; }
+      .nav-links { justify-content:flex-start; }
+      .time-block { border-left:0; border-bottom:1px solid var(--line); padding:0 0 10px; }
+      .timeline-toolbar { flex-direction:column; }
+      .timeline-actions { width:100%; min-width:0; justify-content:stretch; }
+      .timeline-actions > * { flex:1 1 160px; }
+      .detail-grid, .trust-grid { grid-template-columns:repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 560px) {
+      .hero-inner, .main { width:min(100% - 20px, 1200px); }
+      .topbar { flex-direction:column; margin-bottom:24px; }
+      .nav-links a { flex:1 1 calc(50% - 6px); }
+      .brand-name { font-size:21px; }
+      .hero-copy { font-size:15px; }
+      h1 { font-size:34px; }
+      .metric { min-height:auto; }
+      .action-row { align-items:stretch; }
+      .segmented, .ghost-btn, .primary-btn, .ics-btn { width:100%; }
+      .segmented button { flex:1; }
+      .schedule-card { padding:12px; }
+      .session-main h3 { font-size:19px; }
+      .sticky-live-bar { display:block; }
+      .countdown-card, .arrival-card, .updates-card { padding:14px; }
+      .timeline-item { grid-template-columns:1fr; align-items:flex-start; }
+      .timeline-chip { width:max-content; }
+      .detail-grid, .trust-grid { grid-template-columns:1fr; }
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap');
+    :root {
+      --brand:#0d6b52; --brand-deep:#07231c; --brand-mid:#0e3a2e; --brand-soft:#e7f2ee;
+      --live:#e5484d; --gold:#c99124; --ink:#13201b; --muted:#5d6f68; --line:#dde7e2;
+      --paper:#f6f8f7; --card:#ffffff; --r:14px; --shadow:0 10px 30px rgba(7,35,28,.08);
+    }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:'IBM Plex Sans Arabic', Tahoma, Arial, sans-serif; background:var(--paper); color:var(--ink); font-size:15px; line-height:1.7; }
+    a { color:inherit; text-decoration:none; }
+    button, input, select { font:inherit; }
+    img { max-width:100%; display:block; }
+    .wrap, .shell { width:min(1180px, calc(100% - 32px)); margin-inline:auto; }
+    .site-head { position:sticky; top:0; z-index:50; background:rgba(246,248,247,.9); backdrop-filter:blur(14px); border-bottom:1px solid var(--line); }
+    .head-in { display:flex; align-items:center; gap:16px; min-height:64px; }
+    .brand { display:flex; align-items:center; gap:10px; margin-inline-end:8px; text-decoration:none; }
+    .brand .mark, .mark { width:38px; height:38px; border-radius:11px; background:var(--brand-deep); color:#fff; display:grid; place-items:center; font-weight:700; font-size:14px; letter-spacing:.5px; }
+    .brand b, .brand strong { font-size:19px; font-weight:700; color:var(--ink); }
+    .brand small, .brand span span { display:block; color:var(--muted); font-size:11px; line-height:1; margin-top:2px; }
+    .head-nav { display:flex; gap:2px; margin-inline-start:auto; }
+    .head-nav a, details.more > summary { padding:8px 14px; border-radius:9px; font-weight:500; color:#31443c; font-size:14px; }
+    .head-nav a:hover, .head-nav a.active, details.more[open] > summary { background:var(--brand-soft); color:var(--brand); }
+    .cta-now { display:inline-flex; align-items:center; gap:8px; background:var(--brand); color:#fff; font-weight:700; padding:9px 18px; border-radius:11px; font-size:14px; box-shadow:0 4px 14px rgba(13,107,82,.28); white-space:nowrap; }
+    .cta-now .dot { width:8px; height:8px; border-radius:50%; background:#7cf2c8; animation:pulse 1.6s infinite; }
+    details.more { position:relative; }
+    details.more > summary { list-style:none; cursor:pointer; border:1px solid transparent; }
+    details.more > summary::-webkit-details-marker { display:none; }
+    .more-panel { position:absolute; top:calc(100% + 8px); inset-inline-end:0; background:#fff; border:1px solid var(--line); border-radius:14px; box-shadow:var(--shadow); padding:10px; display:grid; grid-template-columns:1fr 1fr; gap:2px; width:320px; z-index:80; }
+    .more-panel a { padding:9px 12px; border-radius:9px; font-size:13.5px; color:#31443c; }
+    .more-panel a:hover { background:var(--brand-soft); }
+    .more-panel .grp { grid-column:1/-1; font-size:11px; color:var(--muted); padding:8px 12px 2px; font-weight:700; }
+    .burger { display:none; }
+    .hero, .hero-lite { background:linear-gradient(135deg, var(--brand-deep) 0%, var(--brand-mid) 58%, #14503e 100%); color:#eef6f2; position:relative; overflow:hidden; border-bottom:1px solid rgba(255,255,255,.08); }
+    .hero::before, .hero-lite::before { content:''; position:absolute; inset:0; opacity:.07; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cpath d='M28 4l24 24-24 24L4 28z' fill='none' stroke='%23ffffff' stroke-width='1'/%3E%3Cpath d='M28 16l12 12-12 12-12-12z' fill='none' stroke='%23ffffff' stroke-width='1'/%3E%3C/svg%3E"); }
+    .hero-inner, .hero-grid { position:relative; padding:42px 0 46px; }
+    .hero-grid { display:grid; grid-template-columns:minmax(0,1.05fr) minmax(300px,.95fr); gap:32px; align-items:center; }
+    .eyebrow { display:inline-flex; align-items:center; gap:8px; font-size:12.5px; font-weight:500; color:#9fd8c3; border:1px solid rgba(159,216,195,.3); padding:6px 12px; border-radius:999px; margin-bottom:16px; background:rgba(255,255,255,.04); }
+    h1 { margin:0 0 12px; font-size:clamp(28px, 4vw, 44px); line-height:1.25; font-weight:700; color:#fff; letter-spacing:0; }
+    .lead { margin:0; color:#b9d6cb; font-size:15.5px; max-width:680px; line-height:1.9; }
+    .metrics, .facts { display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:10px; margin-top:18px; }
+    .metric, .fact, .panel, .info, .trust, .related-panel, .section-card { background:var(--card); border:1px solid var(--line); border-radius:var(--r); padding:16px; box-shadow:var(--shadow); color:var(--ink); }
+    .hero .metric, .hero-lite .metric, .hero .fact { background:rgba(255,255,255,.08); border-color:rgba(255,255,255,.12); color:#fff; box-shadow:none; }
+    .label, .meta { color:var(--muted); font-size:12.5px; line-height:1.75; }
+    .hero .label, .hero-lite .label { color:#9fd8c3; }
+    .value { font-weight:700; line-height:1.55; }
+    .main { padding:28px 0 58px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:18px; }
+    .actions, .stats, .related, .tags { display:flex; gap:8px; flex-wrap:wrap; }
+    .actions a, .actions button, .related a, .stats a, .stats span, .tags span, .btn-sm { min-height:38px; display:inline-flex; align-items:center; justify-content:center; border-radius:9px; padding:8px 12px; text-decoration:none; font-weight:700; border:1px solid var(--line); background:#fff; color:#31443c; font-size:13px; }
+    .actions .primary, .actions a.primary, .btn-sm.primary, .related a.primary { background:var(--brand); border-color:var(--brand); color:#fff; }
+    .status { display:inline-flex; align-items:center; min-height:30px; border-radius:999px; padding:6px 10px; font-size:12px; font-weight:700; white-space:nowrap; }
+    .status-live { background:var(--live); color:#fff; }
+    .status-ongoing { background:rgba(84,58,181,.13); color:#543ab5; }
+    .status-upcoming { background:rgba(201,145,36,.16); color:#76530e; }
+    .status-ended { background:#eef3f2; color:#5c6970; }
+    .status-draft { background:rgba(185,75,75,.14); color:#8b3030; }
+    .event-card { background:var(--card); border:1px solid var(--line); border-radius:var(--r); overflow:hidden; display:flex; flex-direction:column; transition:box-shadow .2s, transform .2s; box-shadow:none; padding:0; }
+    .event-card:hover { box-shadow:var(--shadow); transform:translateY(-2px); }
+    .event-cover { position:relative; aspect-ratio:16/8.5; display:block; overflow:hidden; background:linear-gradient(135deg, var(--c1,#0d4f3f), var(--c2,#1b7a5e)); }
+    .event-cover img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+    .event-cover.noimg::after { content:''; position:absolute; inset:0; opacity:.14; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44'%3E%3Cpath d='M22 3l19 19-19 19L3 22z' fill='none' stroke='%23ffffff' stroke-width='1.2'/%3E%3C/svg%3E"); }
+    .cover-cat { position:absolute; bottom:10px; inset-inline-start:12px; color:#fff; font-size:12px; font-weight:500; background:rgba(0,0,0,.35); padding:4px 10px; border-radius:999px; backdrop-filter:blur(4px); }
+    .date-tab { position:absolute; top:10px; inset-inline-start:12px; background:#fff; border-radius:10px; padding:6px 10px 5px; text-align:center; line-height:1.15; box-shadow:0 4px 12px rgba(0,0,0,.18); }
+    .date-tab b { display:block; font-size:17px; color:var(--ink); }
+    .date-tab span { font-size:10.5px; color:var(--muted); }
+    .chips { position:absolute; top:10px; inset-inline-end:12px; display:flex; gap:6px; }
+    .chip { font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; backdrop-filter:blur(4px); }
+    .chip-live { background:var(--live); color:#fff; display:inline-flex; align-items:center; gap:5px; }
+    .chip-live i { width:6px; height:6px; border-radius:50%; background:#fff; animation:pulse 1.4s infinite; }
+    .chip-ready { background:rgba(255,255,255,.9); color:var(--brand); }
+    .chip-free { background:rgba(201,145,36,.92); color:#fff; }
+    .card-body { padding:14px 16px 16px; display:flex; flex-direction:column; gap:8px; flex:1; }
+    .card-body h2, .card-body h3, .event-card h2, .event-card h3 { margin:0; font-size:17px; line-height:1.5; font-weight:700; color:var(--ink); display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+    .card-when { color:var(--brand); font-size:13px; font-weight:500; }
+    .card-foot { display:flex; align-items:center; gap:8px; margin-top:auto; padding-top:8px; flex-wrap:wrap; }
+    .event-media { width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,.14); background:var(--brand-mid); }
+    .event-media-fallback { width:100%; aspect-ratio:16/9; border-radius:14px; border:1px solid rgba(255,255,255,.14); background:linear-gradient(135deg, var(--c1,#0d4f3f), var(--c2,#1b7a5e)); position:relative; overflow:hidden; }
+    .event-media-fallback::after { content:''; position:absolute; inset:0; opacity:.14; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44'%3E%3Cpath d='M22 3l19 19-19 19L3 22z' fill='none' stroke='%23ffffff' stroke-width='1.2'/%3E%3C/svg%3E"); }
+    .event-media-fallback span { position:absolute; inset:auto 18px 18px; color:#fff; font-weight:700; font-size:18px; line-height:1.5; }
+    .live-card { margin-top:16px; border-top:1px solid var(--line); padding-top:16px; }
+    .countdown { font-size:clamp(30px, 4vw, 44px); line-height:1.1; font-weight:700; color:var(--brand-deep); margin:4px 0 8px; direction:ltr; text-align:right; }
+    .phase-note, .info p, .trust p, .event-card p { margin:0; color:var(--muted); line-height:1.85; }
+    .progress-track { height:10px; border-radius:999px; background:var(--brand-soft); border:1px solid var(--line); overflow:hidden; }
+    .progress-bar { display:block; width:0%; height:100%; background:var(--brand); transition:width .3s ease; }
+    .micro-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:12px; }
+    .micro { border:1px solid var(--line); border-radius:10px; padding:10px; background:rgba(246,248,247,.72); }
+    .detail-updates, .section-stack { display:grid; gap:12px; margin-bottom:16px; }
+    .detail-updates-head { display:flex; align-items:flex-end; justify-content:space-between; gap:12px; background:linear-gradient(90deg, rgba(201,145,36,.12), #fff 54%); border:1px solid rgba(201,145,36,.42); border-radius:var(--r); padding:16px; box-shadow:var(--shadow); }
+    .detail-updates-head h2, .info h2, .trust h2, .related-panel h2 { margin:0 0 8px; font-size:22px; color:var(--ink); line-height:1.4; }
+    .detail-update { background:#fff; border:1px solid var(--line); border-radius:var(--r); padding:16px; box-shadow:var(--shadow); display:grid; gap:10px; }
+    @keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(229,72,77,.45)} 70%{box-shadow:0 0 0 8px rgba(229,72,77,0)} 100%{box-shadow:0 0 0 0 rgba(229,72,77,0)} }
+    @media (max-width: 920px) {
+      .head-nav { display:none; }
+      details.desktop-more { display:none; }
+      .burger { display:block; margin-inline-start:auto; }
+      .head-in { gap:10px; min-height:60px; }
+      .brand b { font-size:18px; }
+      .cta-now { padding:8px 12px; font-size:13px; }
+      .more-panel { position:fixed; top:64px; inset-inline:12px; width:auto; max-height:70vh; overflow:auto; }
+      .hero-grid { grid-template-columns:1fr; gap:20px; padding:30px 0 34px; }
+      .metrics, .facts, .grid { grid-template-columns:1fr; }
+      .hero-inner { padding:30px 0 34px; }
+      h1 { font-size:29px; }
+      .lead { font-size:14.5px; }
+      .main { padding-top:18px; }
+      .detail-updates-head { flex-direction:column; align-items:flex-start; }
+      .micro-grid { grid-template-columns:1fr; }
+    }
+    .site-head + .hero { border-top:0; }
+    .site-head + main { margin-top:0; }
+    table { max-width:100%; border-collapse:collapse; }
+    pre, code, table, th, td { overflow-wrap:anywhere; word-break:break-word; }
+    .table-wrap, .table-scroll, .health-table { width:100%; max-width:100%; overflow-x:auto; }
+    @media (max-width: 860px) {
+      .table-wrap table, .table-scroll table, .health-table table { width:100% !important; min-width:0 !important; max-width:100% !important; table-layout:fixed; white-space:normal; }
+      .table-wrap th, .table-wrap td, .table-scroll th, .table-scroll td, .health-table th, .health-table td { padding:8px; font-size:11px; line-height:1.55; }
+      .actions, .nav, .chips { max-width:100%; }
+    }
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"EventLive","alternateName":["EventLive Saudi Events","فعاليات السعودية الحية"],"url":"https://eventme.live","inLanguage":"ar-SA","publisher":{"@type":"Organization","name":"EventLive","url":"https://eventme.live"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://eventme.live/events.html?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
+  <link rel="alternate" type="text/calendar" title="EventLive - تقويم الفعاليات" href="./events.ics" />
+  <link rel="alternate" type="application/rss+xml" title="EventLive - RSS" href="./feeds/all.xml" />
+  <link rel="alternate" type="application/feed+json" title="EventLive - JSON Feed" href="./feeds/all.json" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <style id="eventlive-brand-pulse">
+@keyframes eventliveLiveDotPulse {
+  0%, 100% { opacity: .92; transform: translateX(-50%) scale(1); box-shadow: 0 0 0 0 rgba(229, 72, 77, .2); }
+  58% { opacity: .7; transform: translateX(-50%) scale(.94); box-shadow: 0 0 0 5px rgba(229, 72, 77, 0); }
+  82% { opacity: .9; transform: translateX(-50%) scale(1.01); box-shadow: 0 0 0 1px rgba(229, 72, 77, .08); }
+}
+.brand-word { display: inline-flex; align-items: baseline; white-space: nowrap; letter-spacing: 0; }
+.brand-word .live-i { position: relative; display: inline-block; font-style: normal; line-height: .95; min-width: .18em; margin-inline: .01em; }
+.brand-word .live-i::after { content: ""; position: absolute; width: .24em; height: .24em; border-radius: 999px; background: #e5484d; top: -.16em; left: 50%; transform: translateX(-50%); animation: eventliveLiveDotPulse 5.6s ease-in-out infinite; }
+.brand-sr { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; clip-path: inset(50%); }
+.card h3 { text-align: center; -webkit-line-clamp: 3; min-height: auto; }
+.card h3 a { unicode-bidi: plaintext; }
+.breadcrumbs { display: flex; align-items: center; gap: 8px; padding: 18px 0 0; color: #66756f; font-size: .92rem; font-weight: 700; }
+.breadcrumbs a { color: #0d6b52; }
+.breadcrumbs strong { color: #10231d; font-weight: 800; max-width: 46ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.session { scroll-margin-top: 88px; }
+@media (prefers-reduced-motion: reduce) {
+  .brand-word .live-i::after { animation: none; opacity: 1; box-shadow: 0 0 0 3px rgba(229, 72, 77, .18); }
+}
+@media (max-width: 760px) {
+  .breadcrumbs strong { max-width: 24ch; }
+}
+</style>
+</head>
+<body>
+
+  <header class="site-head">
+    <div class="wrap head-in">
+      <a class="brand" href="./index.html">
+        <span class="mark">EL</span>
+        <span><b><span class="brand-word" aria-label="EventLive"><span class="brand-sr">EventLive</span><span aria-hidden="true">EventL<span class="live-i">ı</span>ve</span></span></b><small>فعاليات السعودية الحية</small></span>
+      </a>
+      <nav class="head-nav" aria-label="التنقل الرئيسي">
+        <a class="" href="./events.html">كل الفعاليات</a><a class="" href="./this-week.html">هذا الأسبوع</a><a class="active" href="./today-events.html">فعاليات اليوم</a><a class="" href="./my-events.html">فعالياتي</a>
+      </nav>
+      <details class="more desktop-more">
+        <summary>المزيد</summary>
+        <div class="more-panel">
+          <span class="grp">اكتشف</span>
+          <a href="./weekend.html">نهاية الأسبوع</a><a href="./updates.html">التحديثات الحية</a><a href="./guides.html">الأدلة والشروحات</a><a href="./trust.html">مركز الثقة</a><a href="./sources.html">المصادر</a><a href="./organizers.html">للمنظمين</a><a href="./events.ics">اشتراك التقويم</a>
+          <span class="grp">المنصة</span>
+          <a href="./screen.html">شاشة القاعة</a>
+          <a href="./source-health.html">حالة الجلب</a>
+          <a href="./source-coverage-gaps.html">فجوات التغطية</a>
+          <a href="./regions.html">تغطية المناطق</a>
+        </div>
+      </details>
+      <details class="more burger">
+        <summary aria-label="القائمة">☰</summary>
+        <div class="more-panel">
+          <a href="./events.html">كل الفعاليات</a><a href="./this-week.html">هذا الأسبوع</a><a href="./today-events.html">فعاليات اليوم</a><a href="./my-events.html">فعالياتي</a>
+          <a href="./weekend.html">نهاية الأسبوع</a><a href="./updates.html">التحديثات الحية</a><a href="./guides.html">الأدلة والشروحات</a><a href="./trust.html">مركز الثقة</a><a href="./sources.html">المصادر</a><a href="./organizers.html">للمنظمين</a><a href="./events.ics">اشتراك التقويم</a>
+        </div>
+      </details>
+      <a class="cta-now" href="./today.html"><span class="dot"></span>وضع الحضور</a>
+    </div>
+  </header>
+  <div class="app-shell">
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="topbar">
+          <div class="brand">
+            <div class="brand-mark">EL</div>
+            <div>
+              <div class="brand-name"><span class="brand-word" aria-label="EventLive"><span class="brand-sr">EventLive</span><span aria-hidden="true">EventL<span class="live-i">ı</span>ve</span></span></div>
+              <div class="brand-sub">مرجع الجدول الحي للفعاليات</div>
+            </div>
+          </div>
+          <nav class="nav-links" aria-label="روابط البرنامج">
+            <a href="./index.html">الرئيسية</a>
+            <a href="./events.html">الفعاليات</a>
+            <a href="./updates.html">التحديثات</a>
+            <a href="./trust.html">الثقة</a>
+            <a href="./readiness.html">الجاهزية</a>
+            <a href="./sources.html">المصادر</a>
+            <a href="./share.html">المشاركة</a>
+            <a href="./signage.html">لافتة QR</a>
+            <a href="./organizers.html">للمنظمين</a>
+            <a href="./print.html">الطباعة</a>
+
+          </nav>
+        </div>
+        <div class="hero-grid">
+          <div class="headline">
+            <div class="eyebrow">البرنامج الرسمي | EventLive</div>
+            <h1>ملتقى التحول الرقمي في القطاع الحكومي 2026</h1>
+            <p class="hero-copy">جدول ذكي ومباشر للفعاليات: اعرف ما يحدث الآن، ما هو القادم، وأين تتجه داخل المكان. احفظ جلساتك المفضلة وخذ جدولك معك.</p>
+            <div class="meta-strip">
+              <div class="metric"><div class="label">الموقع</div><div class="value">مركز الرياض الدولي للمؤتمرات</div></div>
+              <div class="metric"><div class="label">المدينة</div><div class="value">Riyadh</div></div>
+              <div class="metric"><div class="label">الجلسات</div><div class="value">5 جلسة</div></div>
+              <div class="metric"><div class="label">مدة المحتوى</div><div class="value">230 دقيقة</div></div>
+            </div>
+          </div>
+          <aside class="live-panel" aria-label="ملخص مباشر">
+            <div class="panel-title">
+              <strong><span class="status-dot"></span>حالة البرنامج</strong>
+              <span class="pill">آخر تحديث: ٠٣‏/٠٧‏/٢٠٢٦، ٥:٠٠ ص</span>
+            </div>
+            <div class="live-row">
+              <div class="label">الجلسة الحالية</div>
+              <h2>لا توجد جلسة نشطة الآن</h2>
+              <p>سيظهر هنا أي تحديث حي عند دخول وقت الجلسة.</p>
+            </div>
+            <div class="live-row">
+              <div class="label">القادمة</div>
+              <h2>الافتتاح الرسمي وكلمة الجهة المنظمة</h2>
+              <p>القاعة الكبرى | ٠٩:٠٠ ص - ٠٩:٣٠ ص</p>
+            </div>
+            <div class="live-row">
+              <div class="label">نافذة الفعالية</div>
+              <p>١٠‏/٠٧‏/٢٠٢٦، ٩:٠٠ ص - ١٠‏/٠٧‏/٢٠٢٦، ٢:٠٠ م</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="sticky-live-bar" aria-label="ملخص حي سريع">
+        <div class="sticky-live-inner">
+          <span id="stickyPhase">جاري حساب حالة الفعالية...</span>
+          <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Riyadh%20International%20Convention%20and%20Exhibition%20Center" target="_blank" rel="noopener">الاتجاهات</a>
+        </div>
+      </div>
+
+      <section class="live-command" aria-label="مركز الحضور المباشر">
+        <div class="countdown-card">
+          <div class="kicker">مركز الحضور المباشر</div>
+          <h2 class="phase-title" id="phaseTitle">جاري حساب حالة الفعالية...</h2>
+          <div class="countdown-number" id="countdownNumber">--</div>
+          <p class="phase-note" id="phaseNote">افتح الصفحة قبل الوصول لمعرفة الجلسة الحالية والقادمة وأقرب قاعة.</p>
+          <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="eventProgress"></div></div>
+          <p class="tiny-note" id="progressLabel">نافذة الفعالية: ١٠‏/٠٧‏/٢٠٢٦، ٩:٠٠ ص - ١٠‏/٠٧‏/٢٠٢٦، ٢:٠٠ م</p>
+          <div class="arrival-actions">
+            <a class="primary-action" href="https://www.google.com/maps/dir/?api=1&amp;destination=Riyadh%20International%20Convention%20and%20Exhibition%20Center" target="_blank" rel="noopener">افتح الاتجاهات</a>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Riyadh%20International%20Convention%20and%20Exhibition%20Center" target="_blank" rel="noopener">الموقع على الخريطة</a>
+            <a href="mailto:hello@eventme.live">تواصل</a>
+            <button type="button" id="copyEventLink">نسخ الرابط</button>
+            <button type="button" id="nativeShare">مشاركة</button>
+            <a href="https://wa.me/?text=EventLive%3A%20%D9%85%D9%84%D8%AA%D9%82%D9%89%20%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%84%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%82%D8%B7%D8%A7%D8%B9%20%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A%202026%20-%20%D8%A7%D9%84%D8%AC%D8%AF%D9%88%D9%84%20%D8%A7%D9%84%D8%AD%D9%8A%20https%3A%2F%2Feventme.live%2Fevent.html" target="_blank" rel="noopener">واتساب</a>
+          </div>
+          <div class="offline-status" id="offlineStatus">جاري تجهيز الاستخدام دون اتصال...</div>
+        </div>
+
+        <div class="arrival-card">
+          <div class="kicker">قبل الوصول وداخل المكان</div>
+          <div class="arrival-grid">
+            <div class="arrival-item"><div class="label">العنوان</div><div class="value">طريق الملك عبد الله، الرياض</div></div>
+            <div class="arrival-item"><div class="label">الدخول</div><div class="value">بوابة الدخول: البوابة الشرقية</div></div>
+            <div class="arrival-item"><div class="label">التسجيل</div><div class="value">التحقق من التسجيل يبدأ 08:15 ص عند مكتب الاستقبال.</div></div>
+            <div class="arrival-item"><div class="label">المواقف والوصول</div><div class="value">المواقف المتاحة: P2 و P3. يفضل الوصول قبل 45 دقيقة.</div><p class="tiny-note">تتوفر منطقة إنزال للسيارات أمام البوابة الشرقية.</p></div>
+          </div>
+        </div>
+
+        <div class="updates-card">
+          <div class="kicker">آخر التحديثات</div>
+          <div class="updates-list">
+            <div class="update-item update-info">
+              <strong>فتح التسجيل المبكر</strong>
+              <span class="update-chip">معلومة</span>
+              <p>يفتح مكتب التسجيل عند 08:15 ص. جهّز رمز التسجيل قبل الوصول.</p>
+              <p class="tiny-note">٠٣‏/٠٧‏/٢٠٢٦، ٥:٠٠ ص | فريق التنظيم | تحقق: EventLive Operations</p>
+            </div>
+            <div class="update-item update-traffic">
+              <strong>نصيحة وصول</strong>
+              <span class="update-chip">وصول</span>
+              <p>استخدم مواقف P2 أو P3، واتجه للبوابة الشرقية.</p>
+              <p class="tiny-note">٠٣‏/٠٧‏/٢٠٢٦، ٥:٠٥ ص | إدارة المكان | تحقق: EventLive Operations</p>
+            </div>
+            <div class="update-item update-room_change">
+              <strong>تأكيد قاعة ورشة رحلة المستفيد</strong>
+              <span class="update-chip">تغيير قاعة | مرتبط بجلسة</span>
+              <p>تم تأكيد إقامة الورشة في قاعة الورش 1 بدلا من قاعة الورش 2.</p>
+              <p class="tiny-note">٠٣‏/٠٧‏/٢٠٢٦، ٥:٢٠ ص | مشرف القاعات | تحقق: EventLive Operations</p>
+            </div>
+            <div class="update-item update-delay">
+              <strong>تنبيه وقت الجلسة الرئيسية</strong>
+              <span class="update-chip">تنبيه وقت | مرتبط بجلسة</span>
+              <p>قد يبدأ الدخول للقاعة الكبرى قبل الجلسة الرئيسية بعشر دقائق بسبب كثافة الحضور.</p>
+              <p class="tiny-note">٠٣‏/٠٧‏/٢٠٢٦، ٥:٢٥ ص | فريق المسرح الرئيسي | تحقق: EventLive Operations</p>
+            </div></div>
+        </div>
+
+        <div class="trust-card" aria-label="موثوقية الجدول">
+          <div class="kicker">موثوقية الجدول</div>
+          <div class="trust-grid">
+            <div class="trust-box"><div class="label">المصدر</div><strong>ملف البرنامج المعتمد من الجهة المنظمة</strong></div>
+            <div class="trust-box"><div class="label">حالة الاعتماد</div><strong>منشور</strong></div>
+            <div class="trust-box"><div class="label">الناشر</div><strong>EventLive Operations</strong></div>
+            <div class="trust-box"><div class="label">تنبيهات مرتبطة بجلسات</div><strong>2 من 4</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="live-timeline-board" aria-label="الخط الزمني المباشر">
+        <div class="timeline-toolbar">
+          <div>
+            <div class="kicker">الخط الزمني المباشر</div>
+            <h2>أين نحن الآن في الفعالية؟</h2>
+            <p id="timelineStatus">يتم تحديث الحالة تلقائيا كل نصف دقيقة مع تمييز الجاري الآن والتالي.</p>
+          </div>
+          <div class="timeline-actions">
+            <span class="live-clock" id="nowText">--:--</span>
+            <select id="dayMode" aria-label="عرض اليوم">
+              <option value="auto">تلقائي حسب اليوم</option>
+              <option value="all">كل الأيام</option>
+              <option value="اليوم الأول">اليوم الأول</option>
+            </select>
+            <button type="button" class="jump-btn" id="jumpCurrent">انتقل للحدث الحالي</button>
+          </div>
+        </div>
+        <div class="timeline-rail" id="timelineRail"></div>
+      </section>
+
+      <section class="section" aria-label="أدوات الجدول">
+        <div class="toolbar">
+          <input id="search" type="search" placeholder="ابحث باسم الجلسة أو المتحدث أو القاعة" autocomplete="off" />
+          <select id="day"><option value="">كل الأيام</option><option value="اليوم الأول">اليوم الأول</option></select>
+          <select id="track"><option value="">كل المسارات</option><option value="المسرح الرئيسي">المسرح الرئيسي</option><option value="مسار الذكاء الاصطناعي">مسار الذكاء الاصطناعي</option><option value="مسار تجربة المستفيد">مسار تجربة المستفيد</option><option value="منطقة المعرض">منطقة المعرض</option></select>
+          <select id="room"><option value="">كل القاعات</option><option value="البهو الرئيسي">البهو الرئيسي</option><option value="القاعة الكبرى">القاعة الكبرى</option><option value="قاعة 2">قاعة 2</option><option value="قاعة الورش 1">قاعة الورش 1</option></select>
+          <select id="sessionType"><option value="">كل الأنواع</option><option value="ceremony">ceremony</option><option value="keynote">keynote</option><option value="networking">networking</option><option value="panel">panel</option><option value="workshop">workshop</option></select>
+        </div>
+        <div class="action-row">
+          <div class="segmented" role="tablist" aria-label="عرض الجدول">
+            <button type="button" id="viewAll" class="active">كل الجدول</button>
+            <button type="button" id="viewLive">الآن والقادم</button>
+            <button type="button" id="viewSaved">محفوظاتي</button>
+          </div>
+          <div class="summary-line" id="summaryLine"></div>
+          <button type="button" class="ics-btn" id="downloadAgenda">تنزيل تقويمي</button>
+        </div>
+      </section>
+
+      <section class="schedule-list" id="scheduleList" aria-live="polite"></section>
+      <div class="footer-note">
+        <strong>المصدر:</strong> data/demo_program.json | <strong>التواصل:</strong> hello@eventme.live<br />
+        هذه النسخة مخصصة للمشاركة مع الزوار عبر الرابط المباشر أو رمز QR.
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const sessions = [{"id":"SESS-2026-001","source":"demo_program_2026_03_09","day_label":"اليوم الأول","session_title":"الافتتاح الرسمي وكلمة الجهة المنظمة","session_type":"ceremony","track":"المسرح الرئيسي","speaker":"أ. نورة السبيعي","moderator":"م. خالد الدوسري","start_at":"2026-07-10T09:00:00+03:00","end_at":"2026-07-10T09:30:00+03:00","room":"القاعة الكبرى","status":"scheduled","language":"ar","audience":"عام","tags":["افتتاح","حكومي"],"updated_at":"2026-07-03T05:00:00+03:00"},{"id":"SESS-2026-002","source":"demo_program_2026_03_09","day_label":"اليوم الأول","session_title":"جلسة رئيسية: بناء الخدمات الحكومية الرقمية","session_type":"keynote","track":"المسرح الرئيسي","speaker":"د. فيصل الحربي","moderator":"م. خالد الدوسري","start_at":"2026-07-10T09:45:00+03:00","end_at":"2026-07-10T10:30:00+03:00","room":"القاعة الكبرى","status":"scheduled","language":"ar","audience":"قيادات التحول الرقمي","tags":["خدمات رقمية","تحول"],"updated_at":"2026-07-03T05:00:00+03:00"},{"id":"SESS-2026-003","source":"demo_program_2026_03_09","day_label":"اليوم الأول","session_title":"حلقة نقاش: جاهزية الجهات للذكاء الاصطناعي","session_type":"panel","track":"مسار الذكاء الاصطناعي","speaker":"أ. ريم العتيبي، م. تركي القحطاني، د. سارة العبدالله","moderator":"أ. فهد الغانم","start_at":"2026-07-10T11:00:00+03:00","end_at":"2026-07-10T11:50:00+03:00","room":"قاعة 2","status":"scheduled","language":"bilingual","audience":"مختصون وتقنيون","tags":["ذكاء اصطناعي","نقاش"],"updated_at":"2026-07-03T05:00:00+03:00"},{"id":"SESS-2026-004","source":"demo_program_2026_03_09","day_label":"اليوم الأول","session_title":"ورشة عمل: تصميم رحلة المستفيد في الخدمات الحكومية","session_type":"workshop","track":"مسار تجربة المستفيد","speaker":"م. لينا المطيري","moderator":"م. حصة الزهراني","start_at":"2026-07-10T12:15:00+03:00","end_at":"2026-07-10T13:15:00+03:00","room":"قاعة الورش 1","status":"scheduled","language":"ar","audience":"فرق المنتجات والخدمات","tags":["ورشة","تجربة المستفيد"],"updated_at":"2026-07-03T05:00:00+03:00"},{"id":"SESS-2026-005","source":"demo_program_2026_03_09","day_label":"اليوم الأول","session_title":"جلسة تواصل وبناء شراكات","session_type":"networking","track":"منطقة المعرض","speaker":"فريق الملتقى","moderator":"فريق التنظيم","start_at":"2026-07-10T13:15:00+03:00","end_at":"2026-07-10T14:00:00+03:00","room":"البهو الرئيسي","status":"scheduled","language":"bilingual","audience":"المشاركون والرعاة","tags":["تواصل","شراكات"],"updated_at":"2026-07-03T05:00:00+03:00"}];
+    const liveUpdates = [{"id":"UPD-001","level":"info","title":"فتح التسجيل المبكر","message":"يفتح مكتب التسجيل عند 08:15 ص. جهّز رمز التسجيل قبل الوصول.","action":"arrival","source_label":"فريق التنظيم","verified_by":"EventLive Operations","updated_at":"2026-07-03T05:00:00+03:00"},{"id":"UPD-002","level":"traffic","title":"نصيحة وصول","message":"استخدم مواقف P2 أو P3، واتجه للبوابة الشرقية.","action":"arrival","source_label":"إدارة المكان","verified_by":"EventLive Operations","updated_at":"2026-07-03T05:05:00+03:00"},{"id":"UPD-003","level":"room_change","title":"تأكيد قاعة ورشة رحلة المستفيد","message":"تم تأكيد إقامة الورشة في قاعة الورش 1 بدلا من قاعة الورش 2.","session_id":"SESS-2026-004","action":"room_change","effective_at":"2026-07-10T12:15:00+03:00","source_label":"مشرف القاعات","verified_by":"EventLive Operations","updated_at":"2026-07-03T05:20:00+03:00"},{"id":"UPD-004","level":"delay","title":"تنبيه وقت الجلسة الرئيسية","message":"قد يبدأ الدخول للقاعة الكبرى قبل الجلسة الرئيسية بعشر دقائق بسبب كثافة الحضور.","session_id":"SESS-2026-002","action":"reminder","effective_at":"2026-07-10T09:35:00+03:00","source_label":"فريق المسرح الرئيسي","verified_by":"EventLive Operations","updated_at":"2026-07-03T05:25:00+03:00"}];
+    const program = {"title":"ملتقى التحول الرقمي في القطاع الحكومي 2026","venue":"مركز الرياض الدولي للمؤتمرات","city":"Riyadh","startsAt":"2026-07-10T09:00:00+03:00","endsAt":"2026-07-10T14:00:00+03:00","mapsUrl":"https://www.google.com/maps/search/?api=1\u0026query=Riyadh%20International%20Convention%20and%20Exhibition%20Center","directionsUrl":"https://www.google.com/maps/dir/?api=1\u0026destination=Riyadh%20International%20Convention%20and%20Exhibition%20Center","sourceFile":"data/demo_program.json","sourceLabel":"ملف البرنامج المعتمد من الجهة المنظمة","approvalStatus":"منشور","publishedBy":"EventLive Operations"};
+    const storageKey = 'eventlive-saved-session-ids:' + program.title;
+    const savedIds = new Set(JSON.parse(localStorage.getItem(storageKey) || '[]'));
+    const controls = {
+      search: document.getElementById('search'),
+      day: document.getElementById('day'),
+      track: document.getElementById('track'),
+      room: document.getElementById('room'),
+      sessionType: document.getElementById('sessionType'),
+      viewAll: document.getElementById('viewAll'),
+      viewLive: document.getElementById('viewLive'),
+      viewSaved: document.getElementById('viewSaved'),
+      downloadAgenda: document.getElementById('downloadAgenda'),
+      phaseTitle: document.getElementById('phaseTitle'),
+      phaseNote: document.getElementById('phaseNote'),
+      countdownNumber: document.getElementById('countdownNumber'),
+      eventProgress: document.getElementById('eventProgress'),
+      progressLabel: document.getElementById('progressLabel'),
+      stickyPhase: document.getElementById('stickyPhase'),
+      nowText: document.getElementById('nowText'),
+      dayMode: document.getElementById('dayMode'),
+      jumpCurrent: document.getElementById('jumpCurrent'),
+      timelineStatus: document.getElementById('timelineStatus'),
+      copyEventLink: document.getElementById('copyEventLink'),
+      nativeShare: document.getElementById('nativeShare'),
+      offlineStatus: document.getElementById('offlineStatus')
+    };
+    const scheduleList = document.getElementById('scheduleList');
+    const timelineRail = document.getElementById('timelineRail');
+    const summaryLine = document.getElementById('summaryLine');
+    let activeView = 'all';
+    let timelineAnchorId = '';
+
+    function escapeHTML(value) {
+      return String(value ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function fmtDate(iso) {
+      const date = new Date(iso);
+      return Number.isNaN(date.getTime())
+        ? String(iso || '-')
+        : date.toLocaleString('ar-SA', { dateStyle:'medium', timeStyle:'short' });
+    }
+
+    function fmtTime(iso) {
+      const date = new Date(iso);
+      return Number.isNaN(date.getTime())
+        ? String(iso || '-')
+        : date.toLocaleTimeString('ar-SA', { hour:'2-digit', minute:'2-digit' });
+    }
+
+    function formatRemaining(ms) {
+      const totalMinutes = Math.max(0, Math.ceil(ms / 60000));
+      const days = Math.floor(totalMinutes / 1440);
+      const hours = Math.floor((totalMinutes % 1440) / 60);
+      const minutes = totalMinutes % 60;
+      if (days > 0) return days + ' يوم ' + hours + ' س';
+      if (hours > 0) return hours + ' س ' + minutes + ' د';
+      return minutes + ' دقيقة';
+    }
+
+    function getSessionWindow(session) {
+      return {
+        start: new Date(session.start_at).getTime(),
+        end: new Date(session.end_at).getTime()
+      };
+    }
+
+    function findLiveSession(now = Date.now()) {
+      const overlapping = sessions.filter((session) => {
+        const window = getSessionWindow(session);
+        return !Number.isNaN(window.start) && !Number.isNaN(window.end) && now >= window.start && now < window.end;
+      });
+      if (!overlapping.length) return null;
+      return overlapping.reduce((best, session) => {
+        if (!best) return session;
+        const bestWindow = getSessionWindow(best);
+        const sessionWindow = getSessionWindow(session);
+        const bestDuration = bestWindow.end - bestWindow.start;
+        const sessionDuration = sessionWindow.end - sessionWindow.start;
+        if (sessionDuration !== bestDuration) return sessionDuration < bestDuration ? session : best;
+        return sessionWindow.start > bestWindow.start ? session : best;
+      }, null);
+    }
+
+    function findNextSession(now = Date.now()) {
+      return sessions.find((session) => new Date(session.start_at).getTime() > now) || null;
+    }
+
+    function getTimelineAnchor(now = Date.now()) {
+      return findLiveSession(now) || findNextSession(now);
+    }
+
+    function renderNowText(now = new Date()) {
+      controls.nowText.textContent = now.toLocaleString('ar-SA', {
+        hour:'2-digit',
+        minute:'2-digit',
+        second:'2-digit',
+        year:'numeric',
+        month:'2-digit',
+        day:'2-digit'
+      });
+    }
+
+    function getEventPhase(now = Date.now()) {
+      const start = new Date(program.startsAt).getTime();
+      const end = new Date(program.endsAt).getTime();
+      if (Number.isNaN(start) || Number.isNaN(end)) {
+        return { key:'unknown', title:'وقت الفعالية غير مكتمل', countdown:'--', note:'سيتم تحديث الوقت عند اعتماد بيانات الفعالية.', progress:0 };
+      }
+      if (now < start) {
+        const remaining = start - now;
+        return {
+          key:'before',
+          title:'باقي على بداية الفعالية',
+          countdown: formatRemaining(remaining),
+          note:'افتح الاتجاهات الآن، وتابع هذه الصفحة قبل الوصول لمعرفة أي تحديث في الدخول أو القاعات.',
+          progress:0
+        };
+      }
+      if (now >= start && now <= end) {
+        const progress = Math.min(100, Math.max(0, ((now - start) / (end - start)) * 100));
+        const current = sessions.find((session) => {
+          const sessionStart = new Date(session.start_at).getTime();
+          const sessionEnd = new Date(session.end_at).getTime();
+          return now >= sessionStart && now <= sessionEnd;
+        });
+        const next = sessions.find((session) => new Date(session.start_at).getTime() > now);
+        return {
+          key:'live',
+          title: current ? 'تجري الآن: ' + current.session_title : 'الفعالية مباشرة الآن',
+          countdown: current ? fmtTime(current.end_at) : formatRemaining(end - now),
+          note: current ? 'تنتهي هذه الجلسة عند ' + fmtTime(current.end_at) + (next ? '، والقادمة: ' + next.session_title : '.') : 'تابع الجدول لمعرفة الجلسة الحالية والقادمة.',
+          progress
+        };
+      }
+      return {
+        key:'ended',
+        title:'انتهت الفعالية',
+        countdown:'اكتملت',
+        note:'يمكنك الرجوع للجدول، حفظ الجلسات، أو مشاركة الصفحة كسجل للفعالية.',
+        progress:100
+      };
+    }
+
+    function renderLiveCommand() {
+      const phase = getEventPhase();
+      controls.phaseTitle.textContent = phase.title;
+      controls.countdownNumber.innerHTML = escapeHTML(phase.countdown);
+      controls.phaseNote.textContent = phase.note;
+      controls.eventProgress.style.width = phase.progress + '%';
+      controls.progressLabel.textContent = phase.key === 'live'
+        ? 'تقدم الفعالية: ' + Math.round(phase.progress) + '%'
+        : 'نافذة الفعالية: ' + fmtDate(program.startsAt) + ' - ' + fmtDate(program.endsAt);
+      controls.stickyPhase.textContent = phase.title + ' | ' + phase.countdown;
+    }
+
+    function durationMinutes(session) {
+      const start = new Date(session.start_at).getTime();
+      const end = new Date(session.end_at).getTime();
+      if (Number.isNaN(start) || Number.isNaN(end) || end <= start) return 0;
+      return Math.round((end - start) / 60000);
+    }
+
+    function updateLevelLabel(value) {
+      return {
+        info:'معلومة',
+        traffic:'وصول',
+        delay:'تنبيه وقت',
+        room_change:'تغيير قاعة',
+        cancelled:'إلغاء',
+        reminder:'تذكير'
+      }[value] || 'تحديث';
+    }
+
+    function updatesForSession(sessionId) {
+      return liveUpdates.filter((update) => update.session_id === sessionId);
+    }
+
+    function renderSessionUpdateBadges(sessionId) {
+      const updates = updatesForSession(sessionId);
+      if (!updates.length) return '';
+      return updates.slice(0, 2).map((update) => '<span class="session-update-badge">' + escapeHTML(updateLevelLabel(update.level)) + '</span>').join('');
+    }
+
+    function renderSessionUpdateDetails(sessionId) {
+      const updates = updatesForSession(sessionId);
+      if (!updates.length) return '';
+      return '<div class="detail-grid">' + updates.map((update) =>
+        '<div class="detail-item"><strong>' + escapeHTML(update.title) + '</strong>' +
+        escapeHTML(update.message) +
+        '<div class="tiny-note">' + escapeHTML([fmtDate(update.updated_at), update.source_label, update.verified_by ? 'تحقق: ' + update.verified_by : ''].filter(Boolean).join(' | ')) + '</div></div>'
+      ).join('') + '</div>';
+    }
+
+    function sessionState(session) {
+      if (session.status === 'cancelled') return { key:'cancelled', label:'ملغاة' };
+      const now = Date.now();
+      const start = new Date(session.start_at).getTime();
+      const end = new Date(session.end_at).getTime();
+      if (now >= start && now < end) return { key:'now', label:'الآن' };
+      if (now < start) return { key:'next', label:'قادمة' };
+      return { key:'ended', label:'منتهية' };
+    }
+
+    function stateWeight(key) {
+      if (key === 'now') return 0;
+      if (key === 'next') return 1;
+      if (key === 'cancelled') return 3;
+      return 2;
+    }
+
+    function persistSaved() {
+      localStorage.setItem(storageKey, JSON.stringify([...savedIds]));
+    }
+
+    function matchesQuery(session, query) {
+      if (!query) return true;
+      return [
+        session.session_title,
+        session.speaker,
+        session.moderator,
+        session.room,
+        session.track,
+        session.audience,
+        ...(Array.isArray(session.tags) ? session.tags : [])
+      ].some((value) => String(value || '').toLowerCase().includes(query));
+    }
+
+    function getFilteredSessions() {
+      const query = controls.search.value.trim().toLowerCase();
+      const now = Date.now();
+      return sessions.filter((session) => {
+        const state = sessionState(session);
+        const liveWindow = state.key === 'now' || (state.key === 'next' && new Date(session.start_at).getTime() >= now);
+        if (activeView === 'saved' && !savedIds.has(session.id)) return false;
+        if (activeView === 'live' && !liveWindow) return false;
+        if (controls.day.value && session.day_label !== controls.day.value) return false;
+        if (controls.track.value && session.track !== controls.track.value) return false;
+        if (controls.room.value && session.room !== controls.room.value) return false;
+        if (controls.sessionType.value && session.session_type !== controls.sessionType.value) return false;
+        return matchesQuery(session, query);
+      }).sort((a, b) => {
+        const stateDiff = stateWeight(sessionState(a).key) - stateWeight(sessionState(b).key);
+        if (activeView !== 'all' && stateDiff !== 0) return stateDiff;
+        return new Date(a.start_at).getTime() - new Date(b.start_at).getTime();
+      });
+    }
+
+    function applyTimelineDayMode(mode) {
+      if (mode === 'all') {
+        controls.day.value = '';
+        return;
+      }
+      if (mode && mode !== 'auto') {
+        controls.day.value = mode;
+        return;
+      }
+      const anchor = getTimelineAnchor();
+      controls.day.value = anchor?.day_label || '';
+    }
+
+    function renderTimeline() {
+      const now = Date.now();
+      const anchor = getTimelineAnchor(now);
+      timelineAnchorId = anchor?.id || '';
+      const visibleDay = controls.day.value;
+      const timelineRows = sessions.filter((session) => !visibleDay || session.day_label === visibleDay);
+      const current = findLiveSession(now);
+      const next = findNextSession(now);
+      const statusText = current
+        ? 'الجاري الآن: ' + current.session_title + ' | ينتهي عند ' + fmtTime(current.end_at)
+        : next
+          ? 'لا توجد جلسة جارية الآن | القادمة: ' + next.session_title + ' بعد ' + formatRemaining(new Date(next.start_at).getTime() - now)
+          : 'انتهت جميع الجلسات المنشورة في هذا البرنامج.';
+      controls.timelineStatus.textContent = statusText;
+      if (!timelineRows.length) {
+        timelineRail.innerHTML = '<div class="empty">لا توجد عناصر في هذا اليوم.</div>';
+        return;
+      }
+      timelineRail.innerHTML = timelineRows.map((session) => {
+        const state = sessionState(session);
+        const updateBadges = renderSessionUpdateBadges(session.id);
+        const remaining = state.key === 'now'
+          ? 'المتبقي ' + formatRemaining(new Date(session.end_at).getTime() - now)
+          : state.key === 'next'
+            ? 'تبدأ بعد ' + formatRemaining(new Date(session.start_at).getTime() - now)
+            : state.label;
+        return '<button type="button" class="timeline-item state-' + state.key + '" data-jump-id="' + escapeHTML(session.id) + '">' +
+          '<span class="timeline-time">' + escapeHTML(fmtTime(session.start_at)) + ' - ' + escapeHTML(fmtTime(session.end_at)) + '</span>' +
+          '<span class="timeline-title"><strong>' + escapeHTML(session.session_title) + '</strong><span>' + escapeHTML(session.room) + ' | ' + escapeHTML(session.track) + '</span>' + updateBadges + '</span>' +
+          '<span class="timeline-chip">' + escapeHTML(remaining) + '</span>' +
+        '</button>';
+      }).join('');
+    }
+
+    function renderTags(tags) {
+      if (!Array.isArray(tags) || !tags.length) return '';
+      return tags.slice(0, 4).map((tag) => '<span class="pill">' + escapeHTML(tag) + '</span>').join('');
+    }
+
+    function render() {
+      renderNowText();
+      renderTimeline();
+      const rows = getFilteredSessions();
+      controls.viewAll.classList.toggle('active', activeView === 'all');
+      controls.viewLive.classList.toggle('active', activeView === 'live');
+      controls.viewSaved.classList.toggle('active', activeView === 'saved');
+      controls.downloadAgenda.disabled = savedIds.size === 0;
+      summaryLine.textContent = rows.length + ' جلسة ظاهرة | ' + savedIds.size + ' محفوظة';
+
+      if (!rows.length) {
+        scheduleList.innerHTML = '<div class="empty">لا توجد جلسات مطابقة الآن.</div>';
+        return;
+      }
+
+      scheduleList.innerHTML = rows.map((session) => {
+        const state = sessionState(session);
+        const isSaved = savedIds.has(session.id);
+        const updateBadges = renderSessionUpdateBadges(session.id);
+        const updateDetails = renderSessionUpdateDetails(session.id);
+        const detailStatus = state.key === 'now'
+          ? 'تنتهي بعد ' + formatRemaining(new Date(session.end_at).getTime() - Date.now())
+          : state.key === 'next'
+            ? 'تبدأ بعد ' + formatRemaining(new Date(session.start_at).getTime() - Date.now())
+            : state.label;
+        return '<article class="schedule-card state-' + state.key + '" id="session-' + escapeHTML(session.id) + '" data-id="' + escapeHTML(session.id) + '">' +
+          '<div class="time-block">' +
+            '<div class="label">' + escapeHTML(session.day_label) + '</div>' +
+            '<div class="time-range">' + escapeHTML(fmtTime(session.start_at)) + '</div>' +
+            '<div class="duration">' + escapeHTML(fmtTime(session.end_at)) + ' | ' + durationMinutes(session) + ' دقيقة</div>' +
+          '</div>' +
+          '<div class="session-main">' +
+            '<div class="session-meta"><span class="state state-' + state.key + '">' + state.label + '</span><span class="pill">' + escapeHTML(session.session_type) + '</span><span class="pill">' + escapeHTML(session.language || 'ar') + '</span>' + renderTags(session.tags) + updateBadges + '</div>' +
+            '<h3>' + escapeHTML(session.session_title) + '</h3>' +
+            '<div class="session-meta">' +
+              '<span>' + escapeHTML(session.speaker) + '</span>' +
+              (session.moderator ? '<span>إدارة: ' + escapeHTML(session.moderator) + '</span>' : '') +
+              '<span>' + escapeHTML(session.audience || 'عام') + '</span>' +
+            '</div>' +
+          '</div>' +
+          '<div class="session-side">' +
+            '<div>' +
+              '<div class="label">المكان</div>' +
+              '<div class="value">' + escapeHTML(session.room) + '</div>' +
+              '<div class="source-line">' + escapeHTML(session.track) + '<br />' + escapeHTML(fmtDate(session.updated_at)) + '</div>' +
+            '</div>' +
+            '<button type="button" class="save-btn ' + (isSaved ? 'saved' : '') + '" data-save-id="' + escapeHTML(session.id) + '">' + (isSaved ? 'محفوظة' : 'حفظ الجلسة') + '</button>' +
+          '</div>' +
+          '<div class="session-details">' +
+            '<div class="detail-status"><span>الحالة: ' + escapeHTML(state.label) + '</span><span>' + escapeHTML(detailStatus) + '</span><span>المدة: ' + durationMinutes(session) + ' دقيقة</span></div>' +
+            '<div class="detail-grid">' +
+              '<div class="detail-item"><strong>البداية</strong>' + escapeHTML(fmtDate(session.start_at)) + '</div>' +
+              '<div class="detail-item"><strong>النهاية</strong>' + escapeHTML(fmtDate(session.end_at)) + '</div>' +
+              '<div class="detail-item"><strong>القاعة</strong>' + escapeHTML(session.room) + '</div>' +
+              '<div class="detail-item"><strong>الجمهور</strong>' + escapeHTML(session.audience || 'عام') + '</div>' +
+            '</div>' +
+            updateDetails +
+          '</div>' +
+        '</article>';
+      }).join('');
+    }
+
+    function jumpToSession(id = timelineAnchorId, retried = false) {
+      if (!id) return;
+      const card = document.getElementById('session-' + CSS.escape(id));
+      if (!card) {
+        if (retried) return;
+        const target = sessions.find((session) => session.id === id);
+        activeView = 'all';
+        controls.search.value = '';
+        controls.track.value = '';
+        controls.room.value = '';
+        controls.sessionType.value = '';
+        controls.day.value = target?.day_label || '';
+        render();
+        requestAnimationFrame(() => jumpToSession(id, true));
+        return;
+      }
+      document.querySelectorAll('.schedule-card.expanded').forEach((item) => item.classList.remove('expanded'));
+      card.classList.add('expanded');
+      card.scrollIntoView({ behavior:'smooth', block:'center' });
+    }
+
+    function formatIcsDate(iso) {
+      const date = new Date(iso);
+      if (Number.isNaN(date.getTime())) return '';
+      return date.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z');
+    }
+
+    function escapeIcs(value) {
+      return String(value || '')
+        .replace(/\\/g, '\\\\')
+        .replace(/;/g, '\\;')
+        .replace(/,/g, '\\,')
+        .replace(/\n/g, '\\n');
+    }
+
+    function downloadSavedAgenda() {
+      const selected = sessions.filter((session) => savedIds.has(session.id));
+      if (!selected.length) return;
+      const lines = [
+        'BEGIN:VCALENDAR',
+        'VERSION:2.0',
+        'PRODID:-//EventLive//Live Agenda//AR'
+      ];
+      selected.forEach((session) => {
+        lines.push(
+          'BEGIN:VEVENT',
+          'UID:' + escapeIcs(session.id) + '@eventme.live',
+          'DTSTAMP:' + formatIcsDate(new Date().toISOString()),
+          'DTSTART:' + formatIcsDate(session.start_at),
+          'DTEND:' + formatIcsDate(session.end_at),
+          'SUMMARY:' + escapeIcs(session.session_title),
+          'LOCATION:' + escapeIcs(program.venue + ' - ' + session.room),
+          'DESCRIPTION:' + escapeIcs([session.speaker, session.track, session.audience].filter(Boolean).join(' | ')),
+          'END:VEVENT'
+        );
+      });
+      lines.push('END:VCALENDAR');
+      const blob = new Blob([lines.join('\r\n')], { type:'text/calendar;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'eventlive-agenda.ics';
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+    }
+
+    async function copyEventLink() {
+      const url = window.location.href;
+      try {
+        await navigator.clipboard.writeText(url);
+        controls.copyEventLink.textContent = 'تم النسخ';
+      } catch {
+        controls.copyEventLink.textContent = 'انسخ من المتصفح';
+      }
+      setTimeout(() => { controls.copyEventLink.textContent = 'نسخ الرابط'; }, 2200);
+    }
+
+    async function shareEvent() {
+      const payload = {
+        title: program.title,
+        text: 'جدول حي للفعالية عبر EventLive',
+        url: window.location.href
+      };
+      if (navigator.share) {
+        await navigator.share(payload).catch(() => {});
+        return;
+      }
+      await copyEventLink();
+    }
+
+    function updateOfflineStatus(message) {
+      if (!controls.offlineStatus) return;
+      const online = navigator.onLine;
+      controls.offlineStatus.textContent = message || (online
+        ? 'جاهز للحفظ على الجوال والعمل عند ضعف الشبكة'
+        : 'أنت دون اتصال، ويتم عرض النسخة المحفوظة');
+    }
+
+    function registerOfflineSupport() {
+      updateOfflineStatus();
+      window.addEventListener('online', () => updateOfflineStatus('عاد الاتصال، سيتم تحديث البيانات عند إعادة التحميل'));
+      window.addEventListener('offline', () => updateOfflineStatus('أنت دون اتصال، ويتم عرض النسخة المحفوظة'));
+      if (!('serviceWorker' in navigator)) {
+        updateOfflineStatus('المتصفح لا يدعم الحفظ دون اتصال');
+        return;
+      }
+      navigator.serviceWorker.register('./sw.js')
+        .then(() => updateOfflineStatus('تم تجهيز الصفحة للعمل عند ضعف الشبكة'))
+        .catch(() => updateOfflineStatus('تعذر تجهيز وضع دون اتصال في هذا المتصفح'));
+    }
+
+    scheduleList.addEventListener('click', (event) => {
+      const button = event.target.closest('[data-save-id]');
+      if (button) {
+        const id = button.getAttribute('data-save-id');
+        if (savedIds.has(id)) savedIds.delete(id);
+        else savedIds.add(id);
+        persistSaved();
+        render();
+        return;
+      }
+      const card = event.target.closest('.schedule-card');
+      if (!card) return;
+      const wasExpanded = card.classList.contains('expanded');
+      document.querySelectorAll('.schedule-card.expanded').forEach((item) => item.classList.remove('expanded'));
+      if (!wasExpanded) card.classList.add('expanded');
+    });
+
+    timelineRail.addEventListener('click', (event) => {
+      const button = event.target.closest('[data-jump-id]');
+      if (!button) return;
+      jumpToSession(button.getAttribute('data-jump-id'));
+    });
+
+    [controls.search, controls.day, controls.track, controls.room, controls.sessionType].forEach((control) => {
+      control.addEventListener('input', render);
+    });
+    controls.dayMode.addEventListener('change', () => {
+      applyTimelineDayMode(controls.dayMode.value);
+      render();
+    });
+    controls.jumpCurrent.addEventListener('click', () => jumpToSession());
+    controls.viewAll.addEventListener('click', () => { activeView = 'all'; render(); });
+    controls.viewLive.addEventListener('click', () => { activeView = 'live'; render(); });
+    controls.viewSaved.addEventListener('click', () => { activeView = 'saved'; render(); });
+    controls.downloadAgenda.addEventListener('click', downloadSavedAgenda);
+    controls.copyEventLink.addEventListener('click', copyEventLink);
+    controls.nativeShare.addEventListener('click', shareEvent);
+    applyTimelineDayMode('auto');
+    registerOfflineSupport();
+    renderLiveCommand();
+    setInterval(() => {
+      renderLiveCommand();
+      render();
+    }, 30000);
+    render();
+  </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Saudi Falcons Club Auction | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-saudi-falcons-club-auction@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20261001T160000Z
+DTEND:20261130T200000Z
+SUMMARY:Saudi Falcons Club Auction
+DESCRIPTION:The Saudi Falcons Club organizes an annual auction dedicated to locally caught falcons\, known as “Al Tarh falcons\,” which are captured during the hunting season. The auction is a structured platform that brings falconers together to showcase their falcons in a competitive live bidding environment\, enabling reliable buying and selling. The event is broadcast on television channels and digital platforms. The club also provides integrated services for falcon owners\, including transportation to the auction venue\, along with facilities that organize and enhance the participation experience\, all within a framework aimed at developing falcon auctions in Saudi. The auction also contributes to raising awareness about preserving falcon breeds by regulating sales and emphasizing the protection of endangered species.
+LOCATION:Riyadh
+URL:https://eventme.live/events/event-saudi-falcons-club-auction.html
+END:VEVENT
+END:VCALENDAR

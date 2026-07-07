@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EventLive Source Registry",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "generated_for": { "type": "string" },
+    "researched_at": { "type": "string", "format": "date-time" },
+    "notes": { "type": "string" },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "url",
+          "owner",
+          "source_type",
+          "trust_level",
+          "priority",
+          "coverage",
+          "fetch_method",
+          "intake_policy",
+          "evidence_required"
+        ],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 },
+          "url": { "type": "string", "minLength": 1 },
+          "collector_url": { "type": "string", "minLength": 1 },
+          "collector_pages": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "collector_method": {
+            "type": "string",
+            "enum": ["GET", "POST"]
+          },
+          "collector_body": { "type": "object" },
+          "owner": { "type": "string", "minLength": 1 },
+          "source_type": {
+            "type": "string",
+            "enum": ["national-calendar", "government-calendar", "destination-calendar", "ticketing-marketplace", "venue-calendar", "organizer-calendar", "industry-directory", "conference-organizer", "community-platform"]
+          },
+          "trust_level": {
+            "type": "string",
+            "enum": ["official", "official-marketplace", "venue-official", "partner", "aggregator", "community"]
+          },
+          "priority": { "type": "integer", "minimum": 1 },
+          "coverage": { "type": "string", "minLength": 1 },
+          "cities": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "categories": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "fetch_method": {
+            "type": "string",
+            "enum": ["html-calendar", "html-listing", "json-api", "search-page", "manual-review", "partnership-api", "newsletter-monitor", "sitemap-pages"]
+          },
+          "intake_policy": {
+            "type": "string",
+            "enum": ["official-feed-preferred", "candidate-only", "partnership-needed", "manual-review-required", "monitor-public"]
+          },
+          "evidence_required": { "type": "string", "minLength": 1 },
+          "candidate_gate": {
+            "type": "string",
+            "enum": ["source-evidence", "duplicate-review", "extraction", "human-review", "catalog-review", "blocked"]
+          },
+          "notes": { "type": "string" }
+        }
+      }
+    }
+  },
+  "required": ["sources"]
+}

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:BIG5 | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-rfecc-whats-on-big5-20260510-72930243@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260510T060000Z
+DTEND:20260513T150000Z
+SUMMARY:BIG5
+DESCRIPTION:فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات. BIG5 ضمن معارض وتجارية في الرياض. تبدأ الفعالية ١٠‏/٠٥‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ١٣‏/٠٥‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تتوفر لها صفحة جدول حي تساعد الزائر على متابعة الحالة والوقت أثناء الحضور. المصدر: RFECC What's On.
+LOCATION:Riyadh Front Exhibition & Conference Center
+URL:https://eventme.live/events/ended-rfecc-whats-on-big5-20260510-72930243.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:دورة +CompTIA A | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-دورة-comptia-a@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260712T060000Z
+DTEND:20260716T150000Z
+SUMMARY:دورة +CompTIA A
+DESCRIPTION:تعتبر هذه الدورة المدخل الأساسي للاحتراف في عالم تقنية المعلومات. المصدر الرسمي: بوابة مهارات المستقبل. دورة +CompTIA A ضمن تدريب تقني في عن بعد. تبدأ الفعالية ١٢‏/٠٧‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ١٦‏/٠٧‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Future Skills MCIT Catalogue.
+LOCATION:تفاعلية مباشرة
+URL:https://eventme.live/events/event-دورة-comptia-a.html
+END:VEVENT
+END:VCALENDAR

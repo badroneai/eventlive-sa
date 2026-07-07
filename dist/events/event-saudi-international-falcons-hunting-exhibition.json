@@ -1,0 +1,112 @@
+{
+  "id": "event-saudi-international-falcons-hunting-exhibition",
+  "title": "Saudi International Falcons & Hunting Exhibition",
+  "summary": "The Saudi International Falcons and Hunting Exhibition is one of the largest events dedicated to falconry and hunting in Saudi and globally. It brings together everything related to falconry and outdoor excursions, from falcons and hunting tools to equipment and gear associated with hunting trips, all within a comprehensive space that allows visitors to explore this field in one place. The exhibition also features platforms showcasing a wide range of brands, alongside accompanying activities and events suitable for families, creating an experience that blends cultural and entertainment elements. The event plays an important role in preserving falconry heritage and raising awareness by offering content that introduces visitors to its history and significance within Saudi’s cultural identity.",
+  "canonical_url": "https://eventme.live/events/event-saudi-international-falcons-hunting-exhibition.html",
+  "detail_url": "./events/event-saudi-international-falcons-hunting-exhibition.html",
+  "calendar_url": "./events/event-saudi-international-falcons-hunting-exhibition.ics",
+  "source_label": "Visit Saudi Seasons",
+  "source_url": "https://www.visitsaudi.com/en/riyadh/events/international-saudi-falcons-hunting-exhibition",
+  "evidence_url": "https://www.visitsaudi.com/en/riyadh/events/international-saudi-falcons-hunting-exhibition",
+  "city": "الرياض",
+  "venue": "Riyadh",
+  "venue_address": "Riyadh",
+  "starts_at": "2026-10-01T14:00:00+03:00",
+  "ends_at": "2026-10-10T22:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/saudi-international-falcons-hunting-exhibition-a3a57b6f46.webp",
+  "image_alt": "Saudi International Falcons & Hunting Exhibition",
+  "category": "ترفيه وعائلات",
+  "category_url": "./categories/entertainment-families.html",
+  "audiences": [
+    {
+      "slug": "skilled-trades",
+      "label": "مهاريون وحرفيون"
+    },
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    }
+  ],
+  "keywords": [
+    "Saudi International Falcons & Hunting Exhibition",
+    "ترفيه وعائلات",
+    "Exhibition / Families",
+    "فعالية",
+    "قادمة",
+    "الرياض",
+    "Riyadh",
+    "Visit Saudi Seasons",
+    "seasons",
+    "tourism",
+    "culture",
+    "entertainment",
+    "destinations",
+    "sauditourism:audience/all",
+    "Exhibition",
+    "Families",
+    "Friends",
+    "مهاريون وحرفيون",
+    "عائلات وأطفال"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-10-01T14:00:00+03:00",
+      "ends_at": "2026-10-10T22:00:00+03:00",
+      "room": "Riyadh",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Saudi International Falcons & Hunting Exhibition",
+    "startDate": "2026-10-01T14:00:00+03:00",
+    "endDate": "2026-10-10T22:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Riyadh",
+      "address": "Riyadh"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Saudi Tourism Authority"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/saudi-international-falcons-hunting-exhibition-a3a57b6f46.webp"
+    ],
+    "description": "The Saudi International Falcons and Hunting Exhibition is one of the largest events dedicated to falconry and hunting in Saudi and globally. It brings together everything related to falconry and outdoor excursions, from falcons and hunting tools to equipment and gear associated with hunting trips, all within a comprehensive space that allows visitors to explore this field in one place. The exhibition also features platforms showcasing a wide range of brands, alongside accompanying activities and events suitable for families, creating an experience that blends cultural and entertainment elements. The event plays an important role in preserving falconry heritage and raising awareness by offering content that introduces visitors to its history and significance within Saudi’s cultural identity.",
+    "url": "https://eventme.live/events/event-saudi-international-falcons-hunting-exhibition.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-saudi-international-falcons-hunting-exhibition.html",
+    "isAccessibleForFree": false,
+    "keywords": "Saudi International Falcons & Hunting Exhibition, ترفيه وعائلات, Exhibition / Families, فعالية, قادمة, الرياض, Riyadh, Visit Saudi Seasons, seasons, tourism, culture, entertainment, destinations, sauditourism:audience/all, Exhibition, Families, Friends, مهاريون وحرفيون, عائلات وأطفال",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "مهاريون وحرفيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      }
+    ],
+    "sameAs": [
+      "https://www.visitsaudi.com/en/riyadh/events/international-saudi-falcons-hunting-exhibition"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.visitsaudi.com/en/riyadh/events/international-saudi-falcons-hunting-exhibition",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

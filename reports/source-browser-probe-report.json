@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-07-07T19:14:31.809Z",
+  "source_registry": "data/source_registry.json",
+  "collection_report": "reports/source-collection-report.json",
+  "output_dir": "data/raw/browser-probes",
+  "selection": {
+    "selected_ids": [],
+    "scope": "priority",
+    "limit": 8,
+    "wait_ms": 4500,
+    "timeout_ms": 60000
+  },
+  "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
+  "totals": {
+    "probed": 1,
+    "browser_network_api": 0,
+    "browser_hydration_payload": 0,
+    "rendered_html_candidates": 0,
+    "blocked_or_protected": 1,
+    "policy_skipped": 0
+  },
+  "sources": [
+    {
+      "id": "sdaia-academy-programs",
+      "name": "SDAIA Academy Programs",
+      "priority": 25,
+      "url": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx",
+      "final_url": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 5248,
+      "classification": "blocked-or-protected",
+      "next_action": "لا تلتف على الحماية؛ صنف المصدر partnership/API أو ابحث عن مسار رسمي.",
+      "title": "Request Rejected",
+      "text_bytes": 126,
+      "html_bytes": 255,
+      "html_snapshot": "data/raw/browser-probes/sdaia-academy-programs-2026-07-07T19-14-31-809Z.html",
+      "screenshot": "data/raw/browser-probes/sdaia-academy-programs-2026-07-07T19-14-31-809Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    }
+  ]
+}

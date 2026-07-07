@@ -1,0 +1,184 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "فعاليات عن بعد | EventLive",
+  "home_page_url": "https://eventme.live",
+  "feed_url": "https://eventme.live/feeds/city-online.json",
+  "description": "تغذية فعاليات عن بعد القادمة والجارية من EventLive.",
+  "language": "ar-SA",
+  "authors": [
+    {
+      "name": "EventLive",
+      "url": "https://eventme.live"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://eventme.live/events/event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي.html",
+      "url": "https://eventme.live/events/event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي.html",
+      "title": "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
+      "content_text": "تعد هذه الدورة مدخلاً تقنياً وعملياً لأحد أكثر المجالات ثورية في التكنولوجيا الحديثة. المصدر الرسمي: بوابة مهارات المستقبل.",
+      "date_published": "2026-07-12T09:00:00+03:00",
+      "date_modified": "2026-07-07T19:30:16.476Z",
+      "tags": [
+        "عن بعد",
+        "تدريب تقني",
+        "تقنيون",
+        "مهاريون وحرفيون"
+      ],
+      "external_url": "https://futureskills.mcit.gov.sa/ar/group/13037"
+    },
+    {
+      "id": "https://eventme.live/events/event-دورة-comptia-a.html",
+      "url": "https://eventme.live/events/event-دورة-comptia-a.html",
+      "title": "دورة +CompTIA A",
+      "content_text": "تعتبر هذه الدورة المدخل الأساسي للاحتراف في عالم تقنية المعلومات. المصدر الرسمي: بوابة مهارات المستقبل. دورة +CompTIA A ضمن تدريب تقني في عن بعد. تبدأ الفعالية ١٢‏/٠٧‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ١٦‏/٠٧‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Future Skills MCIT Catalogue.",
+      "date_published": "2026-07-12T09:00:00+03:00",
+      "date_modified": "2026-07-07T19:30:16.476Z",
+      "tags": [
+        "عن بعد",
+        "تدريب تقني",
+        "تقنيون",
+        "مهاريون وحرفيون"
+      ],
+      "external_url": "https://futureskills.mcit.gov.sa/ar/group/13039"
+    },
+    {
+      "id": "https://eventme.live/events/event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي.html",
+      "url": "https://eventme.live/events/event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي.html",
+      "title": "Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث",
+      "content_text": "تقدم هذه الدورة فهماً عملياً لعمليات الأمن السيبراني اليومية داخل مراكز عمليات الأمن ( SOC)، مع التركيز على اكتشاف التهديدات والاستجابة للحوادث الأمنية. المصدر الرسمي: بوابة مهارات المستقبل.",
+      "date_published": "2026-07-12T09:00:00+03:00",
+      "date_modified": "2026-07-07T19:30:16.476Z",
+      "tags": [
+        "عن بعد",
+        "تدريب تقني",
+        "تقنيون",
+        "مهاريون وحرفيون"
+      ],
+      "external_url": "https://futureskills.mcit.gov.sa/ar/group/13040"
+    },
+    {
+      "id": "https://eventme.live/events/event-comptia-a.html",
+      "url": "https://eventme.live/events/event-comptia-a.html",
+      "title": "CompTIA A+",
+      "content_text": "دورة معرفية، تفاعلية مباشرة. تبدأ 12-07-2026 إلى 16-07-2026 لمدة 30 ساعات CompTIA A+ ضمن تدريب تقني في عن بعد. تبدأ الفعالية ١٢‏/٠٧‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ١٦‏/٠٧‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Future Skills MCIT Catalogue.",
+      "date_published": "2026-07-12T09:00:00+03:00",
+      "date_modified": "2026-07-07T19:30:39.441Z",
+      "tags": [
+        "عن بعد",
+        "تدريب تقني",
+        "تقنيون",
+        "مهاريون وحرفيون"
+      ],
+      "external_url": "https://futureskills.mcit.gov.sa/ar/group/13039"
+    },
+    {
+      "id": "https://eventme.live/events/event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials.html",
+      "url": "https://eventme.live/events/event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials.html",
+      "title": "أساسيات الحوسبة السحابية - Cloud Computing Essentials",
+      "content_text": "تقدم هذه الدورة فهماً شاملاً للبنية التحتية السحابية وكيفية استبدال مراكز البيانات التقليدية بخدمات مرنة وقابلة للتوسع. المصدر الرسمي: بوابة مهارات المستقبل.",
+      "date_published": "2026-07-13T09:00:00+03:00",
+      "date_modified": "2026-07-07T19:30:16.476Z",
+      "tags": [
+        "عن بعد",
+        "تدريب تقني",
+        "تقنيون",
+        "مهاريون وحرفيون"
+      ],
+      "external_url": "https://futureskills.mcit.gov.sa/ar/group/13035"
+    },
+    {
+      "id": "https://eventme.live/events/event-samsung-innovation-campus-ai-program.html",
+      "url": "https://eventme.live/events/event-samsung-innovation-campus-ai-program.html",
+      "title": "Samsung Innovation Campus AI Program",
+      "content_text": "A program designed to equip aspiring data scientists and AI professionals with skills to excel in artificial intelligence المصدر الرسمي: Misk Hub.",
+      "date_published": "2026-07-13T09:00:00+03:00",
+      "date_modified": "2026-07-07T19:30:16.476Z",
+      "tags": [
+        "عن بعد",
+        "تدريب تقني",
+        "باحثون عن عمل",
+        "موظفون ومهنيون",
+        "تقنيون",
+        "مهاريون وحرفيون",
+        "رواد أعمال",
+        "مبدعون وفنون"
+      ],
+      "external_url": "https://hub.misk.org.sa/programs/skills/samsung-innovation-campus-ai-program/"
+    },
+    {
+      "id": "https://eventme.live/events/event-متطلبات-الاستخدام-الآمن-للأجهزة-والمستلزمات-الطبية-لمراكز-الأسنان.html",
+      "url": "https://eventme.live/events/event-متطلبات-الاستخدام-الآمن-للأجهزة-والمستلزمات-الطبية-لمراكز-الأسنان.html",
+      "title": "متطلبات الاستخدام الآمن للأجهزة والمستلزمات الطبية لمراكز الأسنان",
+      "content_text": "متطلبات الاستخدام الآمن للأجهزة والمستلزمات الطبية لمراكز الأسنان. طريقة الحضور: عن بعد. نوع الورشة: عامة. لغة العرض: العربية. المصدر الرسمي: الهيئة العامة للغذاء والدواء.",
+      "date_published": "2026-07-15T10:00:00+03:00",
+      "date_modified": "2026-07-07T19:30:16.476Z",
+      "tags": [
+        "عن بعد",
+        "ورش تنظيمية وصحية",
+        "موظفون ومهنيون"
+      ],
+      "external_url": "https://www.sfda.gov.sa/ar/workshop/5521990"
+    },
+    {
+      "id": "https://eventme.live/events/event-دور-مقدمي-الرعاية-الصحية-وضباط-الاتصال-في-التعامل-مع-انذارات-السلامة-الص.html",
+      "url": "https://eventme.live/events/event-دور-مقدمي-الرعاية-الصحية-وضباط-الاتصال-في-التعامل-مع-انذارات-السلامة-الص.html",
+      "title": "دور مقدمي الرعاية الصحية وضباط الاتصال في التعامل مع انذارات السلامة الصادرة من المركز الوطني لبلاغات الأجهزة والمستلزمات الطبية",
+      "content_text": "دور مقدمي الرعاية الصحية وضباط الاتصال في التعامل مع انذارات السلامة الصادرة من المركز الوطني لبلاغات الأجهزة والمستلزمات الطبية. طريقة الحضور: عن بعد. نوع الورشة: عامة. لغة العرض: العربية. المصدر الرسمي: الهيئة العامة للغذاء والدواء.",
+      "date_published": "2026-07-21T10:00:00+03:00",
+      "date_modified": "2026-07-07T19:30:16.476Z",
+      "tags": [
+        "عن بعد",
+        "ورش تنظيمية وصحية",
+        "موظفون ومهنيون"
+      ],
+      "external_url": "https://www.sfda.gov.sa/ar/workshop/5521991"
+    },
+    {
+      "id": "https://eventme.live/events/event-nonprofit-sector-skills-program.html",
+      "url": "https://eventme.live/events/event-nonprofit-sector-skills-program.html",
+      "title": "Nonprofit Sector Skills Program",
+      "content_text": "Is a unique initiative designed to both enhance and develop the capabilities of professionals already working in the nonprofit sector, and to empower those aspiring to join this field. المصدر الرسمي: Misk Hub.",
+      "date_published": "2026-08-03T09:00:00+03:00",
+      "date_modified": "2026-07-07T19:30:16.476Z",
+      "tags": [
+        "عن بعد",
+        "تدريب تقني",
+        "باحثون عن عمل",
+        "موظفون ومهنيون",
+        "مهاريون وحرفيون",
+        "رواد أعمال",
+        "مبدعون وفنون"
+      ],
+      "external_url": "https://hub.misk.org.sa/programs/skills/nonprofit-sector-skills-program/"
+    },
+    {
+      "id": "https://eventme.live/events/event-الإدراج-في-خطوات.html",
+      "url": "https://eventme.live/events/event-الإدراج-في-خطوات.html",
+      "title": "الإدراج في خطوات",
+      "content_text": "الإدراج في خطوات. طريقة الحضور: عن بعد. نوع الورشة: عامة. لغة العرض: العربية. المصدر الرسمي: الهيئة العامة للغذاء والدواء.",
+      "date_published": "2026-08-12T10:00:00+03:00",
+      "date_modified": "2026-07-07T19:30:16.476Z",
+      "tags": [
+        "عن بعد",
+        "ورش تنظيمية وصحية",
+        "موظفون ومهنيون"
+      ],
+      "external_url": "https://www.sfda.gov.sa/ar/workshop/5521993"
+    },
+    {
+      "id": "https://eventme.live/events/event-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة.html",
+      "url": "https://eventme.live/events/event-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة.html",
+      "title": "احتياطات الأمان عند استخدام مبيدات آفات الصحة العامة",
+      "content_text": "احتياطات الأمان عند استخدام مبيدات آفات الصحة العامة. طريقة الحضور: عن بعد. نوع الورشة: عامة. لغة العرض: العربية. المصدر الرسمي: الهيئة العامة للغذاء والدواء.",
+      "date_published": "2026-08-18T10:00:00+03:00",
+      "date_modified": "2026-07-07T19:30:16.476Z",
+      "tags": [
+        "عن بعد",
+        "ورش تنظيمية وصحية",
+        "موظفون ومهنيون"
+      ],
+      "external_url": "https://www.sfda.gov.sa/ar/workshop/5521983"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Poppy Playtime | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-poppy-playtime@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20251010T130000Z
+DTEND:20261208T205900Z
+SUMMARY:Poppy Playtime
+DESCRIPTION:At Boulevard City\, step into the eerie world of Poppy Playtime\, where an abandoned toy factory hides sinister secrets. This immersive hide-and-seek horror challenge keeps you on edge as every shadow and corner could be a safe haven—or a trap. Combining suspense\, mystery\, and thrilling interactive gameplay\, Poppy Playtime delivers one of most unforgettable and spine-tingling adventures. Book Now
+LOCATION:Boulevard City\, Riyadh
+URL:https://eventme.live/events/event-poppy-playtime.html
+END:VEVENT
+END:VCALENDAR

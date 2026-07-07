@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-07-07T19:23:52.992Z",
+  "catalog": "data/events_catalog.json",
+  "source": "MDLBEAST Events",
+  "totals": {
+    "targets": 5,
+    "candidates": 5,
+    "enriched": 5,
+    "fetched": 5,
+    "images": 5,
+    "fetch_failures": 0
+  },
+  "enriched": [
+    {
+      "id": "event-unstable",
+      "title": "Unstable",
+      "source_method": "official-next-data",
+      "image_url": "https://www.datocms-assets.com/66357/1779102205-1.jpg?auto=format&fit=max&w=2048&q=90",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-beast-house",
+      "title": "Beast House",
+      "source_method": "official-next-data",
+      "image_url": "https://www.datocms-assets.com/66357/1753608398-1-aug-event-banners-01.webp?auto=format&fit=max&w=2048&q=90",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-a-thousand-and-one",
+      "title": "A Thousand and One",
+      "source_method": "official-next-data",
+      "image_url": "https://www.datocms-assets.com/66357/1782304250-1001-v3-web.webp?auto=format&fit=max&w=2048&q=90",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-xp-music-futures-2026",
+      "title": "XP Music Futures 2026",
+      "source_method": "official-next-data",
+      "image_url": "https://www.datocms-assets.com/66357/1726742373-about-xp-page_xp-music-futures-conference-1-2.jpg?auto=format&fit=max&w=2048&q=90",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-soundstorm-26",
+      "title": "SOUNDSTORM 26",
+      "source_method": "official-next-data",
+      "image_url": "https://www.datocms-assets.com/66357/1779098389-80-lowres.jpg?auto=format&fit=max&w=2048&q=90",
+      "fetched": true,
+      "features": 8
+    }
+  ],
+  "failed": []
+}

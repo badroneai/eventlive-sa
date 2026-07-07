@@ -1,0 +1,129 @@
+{
+  "id": "event-saudi-food-manufacturing-show",
+  "title": "Saudi Food Manufacturing show",
+  "summary": "Saudi Food Manufacturing returns to Riyadh as the Kingdom’s hub for next-generation food technology, automation, and global partnerships supporting industrial growth and Vision 2030 economic diversification. The show brings together international exhibitors, leading manufacturers, and senior decision-makers to explore smart factories, advanced processing, sustainable solutions, funding and investment opportunities, and the latest innovations shaping the future of F&B manufacturing. Alongside the exhibition, the Food Forward Summit features expert-led insights on innovation economics, greener production, and smarter manufacturing, while the “Get Connected” B2B programme matches exhibitors with selected factory owners and top buyers for focused, high-value meetings on the show floor. Register Now",
+  "canonical_url": "https://eventme.live/events/event-saudi-food-manufacturing-show.html",
+  "detail_url": "./events/event-saudi-food-manufacturing-show.html",
+  "calendar_url": "./events/event-saudi-food-manufacturing-show.ics",
+  "source_label": "Riyadh City Events",
+  "source_url": "https://riyadh.sa/en/moment/events/item/event/30155",
+  "evidence_url": "https://riyadh.sa/en/moment/events/item/event/30155",
+  "city": "الرياض",
+  "venue": "Riyadh Front Exhibition & Conference Center",
+  "venue_address": "Riyadh Front Exhibition & Conference Center",
+  "starts_at": "2026-09-05T14:00:00+03:00",
+  "ends_at": "2026-09-07T22:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/saudi-food-manufacturing-show-d1f5873cb5.jpg",
+  "image_alt": "Saudi Food Manufacturing show",
+  "category": "مؤتمرات ومنتديات",
+  "category_url": "./categories/conference-forum.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "skilled-trades",
+      "label": "مهاريون وحرفيون"
+    },
+    {
+      "slug": "entrepreneurs",
+      "label": "رواد أعمال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Saudi Food Manufacturing show",
+    "مؤتمرات ومنتديات",
+    "Exhibitions & Conferences",
+    "فعالية",
+    "قادمة",
+    "الرياض",
+    "Riyadh Front Exhibition & Conference Center",
+    "Riyadh City Events",
+    "city events",
+    "culture",
+    "sports",
+    "community",
+    "camps",
+    "tourism",
+    "7972",
+    "9909",
+    "موظفون ومهنيون",
+    "مهاريون وحرفيون",
+    "رواد أعمال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-09-05T14:00:00+03:00",
+      "ends_at": "2026-09-07T22:00:00+03:00",
+      "room": "Riyadh Front Exhibition & Conference Center",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Saudi Food Manufacturing show",
+    "startDate": "2026-09-05T14:00:00+03:00",
+    "endDate": "2026-09-07T22:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Riyadh Front Exhibition & Conference Center",
+      "address": "Riyadh Front Exhibition & Conference Center"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "DMG Events  ||  KAOUN"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/saudi-food-manufacturing-show-d1f5873cb5.jpg"
+    ],
+    "description": "Saudi Food Manufacturing returns to Riyadh as the Kingdom’s hub for next-generation food technology, automation, and global partnerships supporting industrial growth and Vision 2030 economic diversification. The show brings together international exhibitors, leading manufacturers, and senior decision-makers to explore smart factories, advanced processing, sustainable solutions, funding and investment opportunities, and the latest innovations shaping the future of F&B manufacturing. Alongside the exhibition, the Food Forward Summit features expert-led insights on innovation economics, greener production, and smarter manufacturing, while the “Get Connected” B2B programme matches exhibitors with selected factory owners and top buyers for focused, high-value meetings on the show floor. Register Now",
+    "url": "https://eventme.live/events/event-saudi-food-manufacturing-show.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-saudi-food-manufacturing-show.html",
+    "isAccessibleForFree": false,
+    "keywords": "Saudi Food Manufacturing show, مؤتمرات ومنتديات, Exhibitions & Conferences, فعالية, قادمة, الرياض, Riyadh Front Exhibition & Conference Center, Riyadh City Events, city events, culture, sports, community, camps, tourism, 7972, 9909, موظفون ومهنيون, مهاريون وحرفيون, رواد أعمال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مهاريون وحرفيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رواد أعمال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://riyadh.sa/en/moment/events/item/event/30155"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://riyadh.sa/en/moment/events/item/event/30155",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

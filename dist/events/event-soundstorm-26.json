@@ -1,0 +1,115 @@
+{
+  "id": "event-soundstorm-26",
+  "title": "SOUNDSTORM 26",
+  "summary": "Soundstorm ‘26 was one for the books! المصدر الرسمي: MDLBEAST. SOUNDSTORM 26 ضمن ترفيه وعائلات في الرياض. تبدأ الفعالية ٠٣‏/١٢‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ٠٤‏/١٢‏/٢٠٢٦، ١٢:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: MDLBEAST Events.",
+  "canonical_url": "https://eventme.live/events/event-soundstorm-26.html",
+  "detail_url": "./events/event-soundstorm-26.html",
+  "calendar_url": "./events/event-soundstorm-26.ics",
+  "source_label": "MDLBEAST Events",
+  "source_url": "https://mdlbeast.com/events/soundstorm-26",
+  "evidence_url": "https://mdlbeast.com/events/soundstorm-26",
+  "city": "الرياض",
+  "venue": "Riyadh",
+  "venue_address": "Riyadh",
+  "starts_at": "2026-12-03T00:00:00+03:00",
+  "ends_at": "2026-12-04T00:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-covers/event-soundstorm-26.svg",
+  "image_alt": "غلاف EventLive لفعالية SOUNDSTORM 26",
+  "category": "ترفيه وعائلات",
+  "category_url": "./categories/entertainment-families.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "SOUNDSTORM 26",
+    "ترفيه وعائلات",
+    "music",
+    "فعالية",
+    "قادمة",
+    "الرياض",
+    "Riyadh",
+    "MDLBEAST Events",
+    "festivals",
+    "conferences",
+    "entertainment",
+    "موظفون ومهنيون",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-12-03T00:00:00+03:00",
+      "ends_at": "2026-12-04T00:00:00+03:00",
+      "room": "Riyadh",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "SOUNDSTORM 26",
+    "startDate": "2026-12-03T00:00:00+03:00",
+    "endDate": "2026-12-04T00:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Riyadh",
+      "address": "Riyadh"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "MDLBEAST"
+    },
+    "image": [
+      "https://eventme.live/assets/event-covers/event-soundstorm-26.svg"
+    ],
+    "description": "Soundstorm ‘26 was one for the books! المصدر الرسمي: MDLBEAST. SOUNDSTORM 26 ضمن ترفيه وعائلات في الرياض. تبدأ الفعالية ٠٣‏/١٢‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ٠٤‏/١٢‏/٢٠٢٦، ١٢:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: MDLBEAST Events.",
+    "url": "https://eventme.live/events/event-soundstorm-26.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-soundstorm-26.html",
+    "isAccessibleForFree": false,
+    "keywords": "SOUNDSTORM 26, ترفيه وعائلات, music, فعالية, قادمة, الرياض, Riyadh, MDLBEAST Events, festivals, conferences, entertainment, موظفون ومهنيون, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://mdlbeast.com/events/soundstorm-26"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://nofomo.com/events/soundstorm-26/cart",
+      "availability": "https://schema.org/InStock",
+      "category": "Registration"
+    }
+  }
+}

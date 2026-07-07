@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:AFT_r | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-mdlbeast-events-aft-r-20250718-43c244be@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20250718T180000Z
+DTEND:20250806T230000Z
+SUMMARY:AFT_r
+DESCRIPTION:فعالية من تقويم MDLBEAST. المدينة: Riyadh. AFT_r ضمن ترفيه وعائلات في الرياض. تبدأ الفعالية ١٨‏/٠٧‏/٢٠٢٥، ٩:٠٠ م وتنتهي ٠٧‏/٠٨‏/٢٠٢٥، ٢:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: MDLBEAST Events.
+LOCATION:Riyadh
+URL:https://eventme.live/events/ended-mdlbeast-events-aft-r-20250718-43c244be.html
+END:VEVENT
+END:VCALENDAR

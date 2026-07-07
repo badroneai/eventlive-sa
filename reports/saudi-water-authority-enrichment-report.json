@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-07-07T19:29:46.971Z",
+  "catalog": "data/events_catalog.json",
+  "source": "Saudi Water Authority Events",
+  "totals": {
+    "targets": 7,
+    "candidates": 8,
+    "enriched": 7,
+    "fetched": 7,
+    "images": 7,
+    "fetch_failures": 0
+  },
+  "enriched": [
+    {
+      "id": "event-global-infrastructure-expo",
+      "title": "Global Infrastructure Expo",
+      "source_method": "official-page-html",
+      "image_url": "https://swa-cdn.swa.gov.sa/Events/b4fed1f10c414a39a5c49cd9fda6a63d_2026_05_20_07_35_20_655.png",
+      "fetched": true,
+      "features": 8
+    },
+    {
+      "id": "event-world-conference-on-desalination-and-water-reuse",
+      "title": "World Conference on Desalination and Water Reuse",
+      "source_method": "official-page-html",
+      "image_url": "https://swa-cdn.swa.gov.sa/Events/a8b384622a1d4281b64b6fd75c82bd5e_2026_05_25_07_44_38_769.jpg",
+      "fetched": true,
+      "features": 8
+    },
+    {
+      "id": "event-saudi-water-partnerships-company-forum-and-awards-ceremony",
+      "title": "Saudi Water Partnerships Company Forum and Awards Ceremony",
+      "source_method": "official-page-html",
+      "image_url": "https://swa-cdn.swa.gov.sa/Events/de29a012e4fd4f33bae4d98c28e9d8e2_2026_06_04_11_43_33_780.jpg",
+      "fetched": true,
+      "features": 8
+    },
+    {
+      "id": "event-global-prize-for-innovation-in-water",
+      "title": "Global Prize for Innovation in Water",
+      "source_method": "official-page-html",
+      "image_url": "https://swa-cdn.swa.gov.sa/Events/a4ae75a0b5914231a232796f3b7fd47a_2026_06_11_11_02_35_109.png",
+      "fetched": true,
+      "features": 8
+    },
+    {
+      "id": "event-the-global-water-sustainability-conference-2026",
+      "title": "The Global Water Sustainability Conference 2026",
+      "source_method": "official-page-html",
+      "image_url": "https://swa-cdn.swa.gov.sa/Events/a1b3becf671a43428fe8aefe050dcd10_2026_06_10_11_37_54_033.png",
+      "fetched": true,
+      "features": 8
+    },
+    {
+      "id": "event-foundation-day",
+      "title": "Foundation Day",
+      "source_method": "official-page-html",
+      "image_url": "https://swa-cdn.swa.gov.sa/Events/8ca9c4254c334d8d90c85b0c4f5f275c_2026_05_25_08_13_47_482.jpg",
+      "fetched": true,
+      "features": 8
+    },
+    {
+      "id": "event-saudi-flag-day",
+      "title": "Saudi Flag Day",
+      "source_method": "official-page-html",
+      "image_url": "https://swa-cdn.swa.gov.sa/Events/f168ba04d30d4fec96ca03600421bd99_2026_05_25_08_24_48_478.png",
+      "fetched": true,
+      "features": 8
+    }
+  ],
+  "failed": []
+}

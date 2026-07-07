@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Hotel & Hospitality Expo | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-hotel-hospitality-expo@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260913T130000Z
+DTEND:20260915T190000Z
+SUMMARY:Hotel & Hospitality Expo
+DESCRIPTION:Hotel & Hospitality Expo Saudi Arabia takes place in Riyadh from 13–15 September 2026 at the Riyadh Front Exhibition & Conference Center\, bringing together leading local and international brands with some of the Kingdom’s most influential buyers across the hotel and hospitality sector. As Saudi Arabia’s tourism and travel growth accelerates in line with Vision 2030\, the expo offers a prime platform to build partnerships\, discover the latest trends and technologies\, and connect with global exhibitors and designers. Visitors can explore a comprehensive range of solutions covering hospitality interiors\, operating supplies and equipment\, HoReCa and food services\, cleaning and hygiene\, hospitality technology\, hotel services\, and wellness (gyms\, recreation\, spa\, and sports). Inquire Now
+LOCATION:Riyadh Front Exhibition & Conference Center
+URL:https://eventme.live/events/event-hotel-hospitality-expo.html
+END:VEVENT
+END:VCALENDAR

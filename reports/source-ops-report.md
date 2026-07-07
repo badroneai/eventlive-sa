@@ -1,0 +1,129 @@
+# EventLive Source Ops Report
+
+- generated_at: 2026-07-07T19:34:13.449Z
+- registry: data/source_registry.json
+- candidates: data/source_candidates.json
+- catalog: data/events_catalog.json
+- run_state: data/source_run_state.json
+- collection_basis: source_collection_report
+- collection_freshness: fresh
+
+## Executive Summary
+
+- Sources in registry: 66
+- Sources attempted in latest collection: 34
+- Collection coverage: 52%
+- Healthy sources: 20
+- Zero-yield sources: 14
+- High-priority unattempted sources: 3
+- Candidates: 185
+- Actionable candidates: 0
+- Ready for review: 0
+- Ready for catalog promotion: 0
+- Linked to catalog from candidates: 140
+- Stale unpublished candidates: 0
+- Duplicate risk: 0
+- Recommendation: استخدم أقوى مرشحي الاكتشاف لبناء مطابقة آلية مع مصادر رسمية؛ لا تنشر مصدر اكتشاف منفرداً.
+
+## Candidate Funnel
+
+- review_status.evidence-captured: 27
+- review_status.approved-for-catalog: 140
+- review_status.new: 18
+- publication_gate.source-evidence: 30
+- publication_gate.catalog-review: 140
+- publication_gate.duplicate-review: 15
+- discovery_quality.strong-lead: 28
+- discovery_quality.weak-lead: 1
+- discovery_quality.watch-lead: 3
+
+## Focus Queue
+
+| Candidate | Source | Status | Next action |
+|---|---|---|---|
+
+## Discovery Leads
+
+| Candidate | Source | City | Quality | Score | Signals | Official match |
+|---|---|---|---|---:|---|---|
+| Saudi Wood Expo 2026 | Eye of Riyadh Events | Riyadh | strong-lead | 70 | directory-source, saudi-location-signal, large-event-topic | Saudi Wood Expo (Riyadh City Events, 115) |
+| Saudi Industrial Series | Eye of Riyadh Events | Riyadh | strong-lead | 70 | directory-source, saudi-location-signal, large-event-topic | Saudi Industrial Series (Riyadh City Events, 115) |
+| Global Proptech Summit 2026 | Eye of Riyadh Events | Riyadh | strong-lead | 70 | directory-source, saudi-location-signal, large-event-topic | Global AI Summit (SDAIA Calendar and Events, 82) |
+| The Architecture and Design Café | Ministry of Culture Commission Calendars | Saudi Arabia | - | 0 | - | Academic Excellence in Architecture and Design Education (Ministry of Culture Commission Calendars, 80) |
+| Academic Excellence in Architecture and Design Education | Ministry of Culture Commission Calendars | Saudi Arabia | - | 0 | - | The Architecture and Design Café (Ministry of Culture Commission Calendars, 80) |
+| Skill Development Initiative | Ministry of Culture Commission Calendars | Riyadh | - | 0 | - | The Continuing Professional Development Initiative (Ministry of Culture Commission Calendars, 75) |
+| The Continuing Professional Development Initiative | Ministry of Culture Commission Calendars | Saudi Arabia | - | 0 | - | Skill Development Initiative (Ministry of Culture Commission Calendars, 75) |
+| Riyadh Social and Language Exchange (Make New Friends) ✨ | Eventbrite Saudi Arabia | Riyadh | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
+| Dubai Property Expo in Al Khobar | Eventbrite Saudi Arabia | Khobar | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
+| Smart Data & AI Summit | Eye of Riyadh Events | Riyadh | strong-lead | 70 | directory-source, saudi-location-signal, large-event-topic | - |
+
+## Source Health
+
+| Priority | Source | Status | Extracted | Candidates | Next action |
+|---:|---|---|---:|---:|---|
+| 1 | National Events Center / Saudi Events | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
+| 2 | Visit Saudi Calendar | healthy | 10 | 11 | استمر بالمراجعة والتكرار قبل النشر. |
+| 3 | Ministry of Culture Cultural Calendar | healthy | 13 | 0 | استمر بالمراجعة والتكرار قبل النشر. |
+| 4 | Ministry of Sport Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
+| 5 | webook Explore | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 6 | Hala Yalla | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 7 | Experience AlUla Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
+| 8 | MDLBEAST Events | healthy | 5 | 5 | استمر بالمراجعة والتكرار قبل النشر. |
+| 9 | Monsha'at All Events | healthy | 3 | 3 | استمر بالمراجعة والتكرار قبل النشر. |
+| 10 | Invest Saudi Events | healthy | 3 | 3 | استمر بالمراجعة والتكرار قبل النشر. |
+| 11 | RFECC What's On | healthy | 6 | 6 | استمر بالمراجعة والتكرار قبل النشر. |
+| 12 | Eye of Riyadh Events | healthy | 16 | 15 | استمر بالمراجعة والتكرار قبل النشر. |
+| 13 | 10times Saudi Arabia | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 14 | Eventbrite Saudi Arabia | healthy | 17 | 17 | استمر بالمراجعة والتكرار قبل النشر. |
+| 15 | Platinumlist Jeddah Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 16 | Tuwaiq Academy Bootcamps and Programs | healthy | 12 | 18 | استمر بالمراجعة والتكرار قبل النشر. |
+| 17 | Future Skills MCIT Catalogue | healthy | 4 | 6 | استمر بالمراجعة والتكرار قبل النشر. |
+| 18 | Riyadh Season Official | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 19 | Visit Saudi Seasons | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |
+| 20 | CODE MCIT Programs | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
+| 21 | Misk Hub Programs | healthy | 5 | 7 | استمر بالمراجعة والتكرار قبل النشر. |
+| 22 | Dhahran Expo Calendar | healthy | 15 | 15 | استمر بالمراجعة والتكرار قبل النشر. |
+| 23 | Ithra Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
+| 24 | Saudi Digital Academy | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 25 | SDAIA Academy Programs | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
+| 26 | Saudi Events App | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
+| 27 | Enjoy Saudi Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 28 | Misk Hub Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
+| 29 | Jeddah Chamber Exhibitions and Events Center | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
+| 30 | Saudi Pro League Fixtures | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
+| 31 | NEOM Newsroom Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 32 | Saudi Space Agency Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
+| 33 | CST Events and News | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 34 | Visit Saudi Calendar PDF | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 35 | Qiddiya Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 36 | Sela and Saudi Entertainment Expo | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 37 | Ministry of Culture Commission Calendars | healthy | 13 | 12 | استمر بالمراجعة والتكرار قبل النشر. |
+| 38 | Visit AlBalad / Historic Jeddah | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 39 | Discover Aseer Events | healthy | 1 | 1 | استمر بالمراجعة والتكرار قبل النشر. |
+| 40 | Diriyah Season | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 41 | Riyadh International Convention and Exhibition Center | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 42 | Aseer Season / Asir Development Authority | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 43 | Jeddah Season | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 44 | Saudi Water Authority Events | healthy | 8 | 8 | استمر بالمراجعة والتكرار قبل النشر. |
+| 45 | Saudi Universities and Technical Colleges | healthy | 6 | 6 | استمر بالمراجعة والتكرار قبل النشر. |
+| 46 | ExpoFP and Eventseye Saudi Trade Shows | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 47 | Meetup and Facebook Events Saudi Arabia | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 48 | Saudi Food and Drug Authority Events | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |
+| 49 | Saudi Contractors Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 50 | Saudi Winter Events Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 51 | Riyadh City Events | healthy | 40 | 40 | استمر بالمراجعة والتكرار قبل النشر. |
+| 52 | Monsha'at Academy Programs | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
+| 53 | General Entertainment Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 54 | SDAIA Calendar and Events | zero-yield | 0 | 2 | No future date-complete candidates found by the conservative extractor. |
+| 55 | Makkah Chamber Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
+| 59 | Asharqia Chamber Events | healthy | 2 | 2 | استمر بالمراجعة والتكرار قبل النشر. |
+| 60 | Qassim Chamber Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
+| 61 | Abha Chamber Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
+| 62 | Baha Municipality Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 63 | Baha Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 64 | Jouf Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 65 | Northern Borders Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 66 | Tabuk Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 67 | Jazan Chamber Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
+| 68 | Hail Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 69 | Najran Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |

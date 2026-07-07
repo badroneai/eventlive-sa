@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Global AI Summit (GAIN) | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-global-ai-summit-gain@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260915T060000Z
+DTEND:20260917T150000Z
+SUMMARY:Global AI Summit (GAIN)
+DESCRIPTION:Under the patronage of His Royal Highness Prince Mohammed bin Salman bin Abdulaziz Al-Saud\, Crown Prince and Prime Minister\, the Global AI Summit (GAIN 2026) takes place at King Abdulaziz International Convention Centre in Riyadh\, bringing together global leaders\, innovators\, and decision-makers to explore how generative AI can move from ambitious theory to real-world outcomes. Through keynotes\, discussions\, showcases\, and immersive experiences\, the summit focuses on the big questions shaping AI’s future—responsible development\, practical adoption\, and collaboration—highlighting breakthroughs that can accelerate progress\, strengthen resilience\, and create measurable benefits for people and communities worldwide. Live Stream of GAIN
+LOCATION:King Abdulaziz International Conference Center (KAICC)\, Riyadh
+URL:https://eventme.live/events/event-global-ai-summit-gain.html
+END:VEVENT
+END:VCALENDAR

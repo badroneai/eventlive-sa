@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:معسكر تطوير البرمجيات السحابية الاحترافية لسحابة قوقل | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260726T140000Z
+DTEND:20260820T180000Z
+SUMMARY:معسكر تطوير البرمجيات السحابية الاحترافية لسحابة قوقل
+DESCRIPTION:معسكر تدريبي مصمم لتزويد المطورين بالمهارات والمعرفة اللازمة لتصميم، وبناء، ونشر، وإدارة برمجيات عالية الأداء، قابلة للتطوير، وموثوقة على Google Cloud Platform\, موجهة للمطورين الذين يمتلكون خبرة أساسية في البرمجة ويرغبون في الانتقال إلى ... المصدر الرسمي: أكاديمية طويق.
+LOCATION:الرياض - المقر الرئيسي
+URL:https://eventme.live/events/event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل.html
+END:VEVENT
+END:VCALENDAR

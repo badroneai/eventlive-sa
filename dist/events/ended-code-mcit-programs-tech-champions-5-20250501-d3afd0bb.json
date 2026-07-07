@@ -1,0 +1,138 @@
+{
+  "id": "ended-code-mcit-programs-tech-champions-5-20250501-d3afd0bb",
+  "title": "Tech Champions 5",
+  "summary": "The 5th edition of the program consists of two startup incubators in the sector of Financial Solution Technologies that utilize AI. The program targets innovative entrepreneurs with digital business and scalable models. The program participants will be provided with the necessary tools and support in the technical, administrative, and financial aspects, in addition to supporting digital perks, with the aim of contributing to reaching the market and investors.",
+  "canonical_url": "https://eventme.live/events/ended-code-mcit-programs-tech-champions-5-20250501-d3afd0bb.html",
+  "detail_url": "./events/ended-code-mcit-programs-tech-champions-5-20250501-d3afd0bb.html",
+  "calendar_url": "./events/ended-code-mcit-programs-tech-champions-5-20250501-d3afd0bb.ics",
+  "source_label": "CODE MCIT Programs",
+  "source_url": "https://code.mcit.gov.sa/en/incubators/tech-champions-5",
+  "evidence_url": "https://code.mcit.gov.sa/en/incubators/tech-champions-5",
+  "city": "السعودية",
+  "venue": "CODE branches",
+  "venue_address": "CODE branches",
+  "starts_at": "2025-05-01T09:00:00+03:00",
+  "ends_at": "2025-12-31T18:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/daman-proptech-challenge-2eea8247e5.png",
+  "image_alt": "Tech Champions 5",
+  "category": "ألعاب ورياضات إلكترونية",
+  "category_url": "./categories/gaming-esports.html",
+  "audiences": [
+    {
+      "slug": "students",
+      "label": "طلاب وخريجون"
+    },
+    {
+      "slug": "tech",
+      "label": "تقنيون"
+    },
+    {
+      "slug": "skilled-trades",
+      "label": "مهاريون وحرفيون"
+    },
+    {
+      "slug": "entrepreneurs",
+      "label": "رواد أعمال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Tech Champions 5",
+    "ألعاب ورياضات إلكترونية",
+    "technology bootcamp",
+    "برنامج ممتد",
+    "منتهية",
+    "السعودية",
+    "CODE branches",
+    "CODE MCIT Programs",
+    "technology",
+    "entrepreneurship",
+    "incubators",
+    "accelerators",
+    "bootcamps",
+    "gaming",
+    "Accelerator",
+    "ended-event",
+    "طلاب وخريجون",
+    "تقنيون",
+    "مهاريون وحرفيون",
+    "رواد أعمال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2025-05-01T09:00:00+03:00",
+      "ends_at": "2025-12-31T18:00:00+03:00",
+      "room": "CODE branches",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Tech Champions 5",
+    "startDate": "2025-05-01T09:00:00+03:00",
+    "endDate": "2025-12-31T18:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "CODE branches",
+      "address": "CODE branches"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Ministry of Communications and Information Technology / CODE"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/daman-proptech-challenge-2eea8247e5.png"
+    ],
+    "description": "The 5th edition of the program consists of two startup incubators in the sector of Financial Solution Technologies that utilize AI. The program targets innovative entrepreneurs with digital business and scalable models. The program participants will be provided with the necessary tools and support in the technical, administrative, and financial aspects, in addition to supporting digital perks, with the aim of contributing to reaching the market and investors.",
+    "url": "https://eventme.live/events/ended-code-mcit-programs-tech-champions-5-20250501-d3afd0bb.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-code-mcit-programs-tech-champions-5-20250501-d3afd0bb.html",
+    "isAccessibleForFree": false,
+    "keywords": "Tech Champions 5, ألعاب ورياضات إلكترونية, technology bootcamp, برنامج ممتد, منتهية, السعودية, CODE branches, CODE MCIT Programs, technology, entrepreneurship, incubators, accelerators, bootcamps, gaming, Accelerator, ended-event, طلاب وخريجون, تقنيون, مهاريون وحرفيون, رواد أعمال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "طلاب وخريجون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "تقنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مهاريون وحرفيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رواد أعمال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://code.mcit.gov.sa/en/incubators/tech-champions-5"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://code.mcit.gov.sa/en/user/register",
+      "availability": "https://schema.org/InStock",
+      "category": "Registration"
+    }
+  }
+}

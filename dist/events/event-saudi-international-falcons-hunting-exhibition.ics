@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Saudi International Falcons & Hunting Exhibition | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-saudi-international-falcons-hunting-exhibition@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20261001T110000Z
+DTEND:20261010T190000Z
+SUMMARY:Saudi International Falcons & Hunting Exhibition
+DESCRIPTION:The Saudi International Falcons and Hunting Exhibition is one of the largest events dedicated to falconry and hunting in Saudi and globally. It brings together everything related to falconry and outdoor excursions\, from falcons and hunting tools to equipment and gear associated with hunting trips\, all within a comprehensive space that allows visitors to explore this field in one place. The exhibition also features platforms showcasing a wide range of brands\, alongside accompanying activities and events suitable for families\, creating an experience that blends cultural and entertainment elements. The event plays an important role in preserving falconry heritage and raising awareness by offering content that introduces visitors to its history and significance within Saudi’s cultural identity.
+LOCATION:Riyadh
+URL:https://eventme.live/events/event-saudi-international-falcons-hunting-exhibition.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Foundation Day | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-foundation-day@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20270222T050000Z
+DTEND:20270223T000000Z
+SUMMARY:Foundation Day
+DESCRIPTION:A national occasion commemorating the early beginnings of glory and deeply rooted heritage of the foundation of the Saudi State\, while celebrating the national… المصدر الرسمي: الهيئة السعودية للمياه.
+LOCATION:Riyadh
+URL:https://eventme.live/events/event-foundation-day.html
+END:VEVENT
+END:VCALENDAR

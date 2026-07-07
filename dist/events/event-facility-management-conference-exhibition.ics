@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Facility Management Conference & Exhibition | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-facility-management-conference-exhibition@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260920T060000Z
+DTEND:20260922T160000Z
+SUMMARY:Facility Management Conference & Exhibition
+DESCRIPTION:The International Conference & Exhibition for Facility Management 2026 returns to Riyadh for its third edition from 20–22 September 2026 at the Riyadh International Convention & Exhibition Center\, under the theme “Smart Facilities – Smart Cities.” Bringing together sector leaders\, local and international experts\, and innovators\, the event highlights the latest technologies and solutions shaping smarter\, more sustainable urban environments—showcasing the integration of facility management with digital transformation\, IoT\, and artificial intelligence. With a focus on global and local best practices\, knowledge exchange\, and future-ready solutions that enhance efficiency\, sustainability\, and quality of life\, the conference supports Saudi Vision 2030 and the Kingdom’s journey toward smart infrastructure and advanced resource management. Register Now
+LOCATION:Riyadh International Convention & Exhibition Center
+URL:https://eventme.live/events/event-facility-management-conference-exhibition.html
+END:VEVENT
+END:VCALENDAR

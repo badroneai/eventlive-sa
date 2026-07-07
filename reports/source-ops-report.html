@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EventLive Source Ops Report</title>
+  <style>
+    :root { color-scheme: light; --ink:#17201d; --muted:#63706b; --line:#dde8e2; --bg:#f8fbf8; --card:#fff; --accent:#00877f; }
+    body { margin:0; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background:var(--bg); color:var(--ink); }
+    main { width:min(1120px, calc(100% - 32px)); margin:0 auto; padding:32px 0; display:grid; gap:18px; }
+    h1, h2 { margin:0; line-height:1.35; }
+    p { color:var(--muted); line-height:1.8; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:12px; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; }
+    .label { color:var(--muted); font-size:13px; }
+    .value { font-size:30px; font-weight:800; margin-top:6px; }
+    table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+    th, td { padding:12px; border-bottom:1px solid var(--line); text-align:right; vertical-align:top; }
+    th { color:var(--muted); font-size:13px; }
+    tr:last-child td { border-bottom:0; }
+    a { color:var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>EventLive Source Ops Report</h1>
+      <p>تقرير تشغيل موحد لمصادر الفعاليات، المرشحين، صحة الجلب، وبوابة النشر. تم التوليد: 2026-07-07T19:34:13.449Z</p>
+    </header>
+    <section class="grid">
+      <div class="card"><div class="label">مصادر السجل</div><div class="value">66</div></div>
+      <div class="card"><div class="label">مصادر مجمعة</div><div class="value">34</div></div>
+      <div class="card"><div class="label">مرشحون</div><div class="value">185</div></div>
+      <div class="card"><div class="label">يحتاج فعل الآن</div><div class="value">0</div></div>
+      <div class="card"><div class="label">منشور ومرتبط</div><div class="value">140</div></div>
+      <div class="card"><div class="label">نسبة تغطية الجلب</div><div class="value">52%</div></div>
+    </section>
+    <section>
+      <h2>الأولوية الآن</h2>
+      <p>استخدم أقوى مرشحي الاكتشاف لبناء مطابقة آلية مع مصادر رسمية؛ لا تنشر مصدر اكتشاف منفرداً.</p>
+    </section>
+    <section>
+      <h2>طابور المرشحين</h2>
+      <table><thead><tr><th>الفعالية</th><th>المصدر</th><th>الحالة</th><th>الإجراء التالي</th></tr></thead><tbody></tbody></table>
+    </section>
+    <section>
+      <h2>أقوى مرشحي الاكتشاف</h2>
+      <table><thead><tr><th>الفعالية</th><th>المصدر</th><th>المدينة</th><th>الجودة / الدرجة</th><th>الإشارات</th><th>أقرب دليل رسمي</th></tr></thead><tbody>
+    <tr>
+      <td>Saudi Wood Expo 2026</td>
+      <td>Eye of Riyadh Events</td>
+      <td>Riyadh</td>
+      <td>strong-lead / 70</td>
+      <td>directory-source, saudi-location-signal, large-event-topic</td>
+      <td>Saudi Wood Expo (Riyadh City Events, 115)</td>
+    </tr>
+    <tr>
+      <td>Saudi Industrial Series</td>
+      <td>Eye of Riyadh Events</td>
+      <td>Riyadh</td>
+      <td>strong-lead / 70</td>
+      <td>directory-source, saudi-location-signal, large-event-topic</td>
+      <td>Saudi Industrial Series (Riyadh City Events, 115)</td>
+    </tr>
+    <tr>
+      <td>Global Proptech Summit 2026</td>
+      <td>Eye of Riyadh Events</td>
+      <td>Riyadh</td>
+      <td>strong-lead / 70</td>
+      <td>directory-source, saudi-location-signal, large-event-topic</td>
+      <td>Global AI Summit (SDAIA Calendar and Events, 82)</td>
+    </tr>
+    <tr>
+      <td>The Architecture and Design Café</td>
+      <td>Ministry of Culture Commission Calendars</td>
+      <td>Saudi Arabia</td>
+      <td>- / 0</td>
+      <td>-</td>
+      <td>Academic Excellence in Architecture and Design Education (Ministry of Culture Commission Calendars, 80)</td>
+    </tr>
+    <tr>
+      <td>Academic Excellence in Architecture and Design Education</td>
+      <td>Ministry of Culture Commission Calendars</td>
+      <td>Saudi Arabia</td>
+      <td>- / 0</td>
+      <td>-</td>
+      <td>The Architecture and Design Café (Ministry of Culture Commission Calendars, 80)</td>
+    </tr>
+    <tr>
+      <td>Skill Development Initiative</td>
+      <td>Ministry of Culture Commission Calendars</td>
+      <td>Riyadh</td>
+      <td>- / 0</td>
+      <td>-</td>
+      <td>The Continuing Professional Development Initiative (Ministry of Culture Commission Calendars, 75)</td>
+    </tr>
+    <tr>
+      <td>The Continuing Professional Development Initiative</td>
+      <td>Ministry of Culture Commission Calendars</td>
+      <td>Saudi Arabia</td>
+      <td>- / 0</td>
+      <td>-</td>
+      <td>Skill Development Initiative (Ministry of Culture Commission Calendars, 75)</td>
+    </tr>
+    <tr>
+      <td>Riyadh Social and Language Exchange (Make New Friends) ✨</td>
+      <td>Eventbrite Saudi Arabia</td>
+      <td>Riyadh</td>
+      <td>strong-lead / 70</td>
+      <td>saudi-location-signal, specific-venue, event-topic-fit</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Dubai Property Expo in Al Khobar</td>
+      <td>Eventbrite Saudi Arabia</td>
+      <td>Khobar</td>
+      <td>strong-lead / 70</td>
+      <td>saudi-location-signal, specific-venue, event-topic-fit</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Smart Data &amp; AI Summit</td>
+      <td>Eye of Riyadh Events</td>
+      <td>Riyadh</td>
+      <td>strong-lead / 70</td>
+      <td>directory-source, saudi-location-signal, large-event-topic</td>
+      <td>-</td>
+    </tr></tbody></table>
+    </section>
+    <section>
+      <h2>صحة المصادر</h2>
+      <table><thead><tr><th>الأولوية</th><th>المصدر</th><th>الحالة</th><th>مستخرج</th><th>مرشحون</th><th>الإجراء التالي</th></tr></thead><tbody>
+    <tr>
+      <td>1</td>
+      <td>National Events Center / Saudi Events</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>افتح مسار شراكة أو تغذية رسمية قبل الأتمتة.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Visit Saudi Calendar</td>
+      <td>healthy</td>
+      <td>10</td>
+      <td>11</td>
+      <td>استمر بالمراجعة والتكرار قبل النشر.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Ministry of Culture Cultural Calendar</td>
+      <td>healthy</td>
+      <td>13</td>
+      <td>0</td>
+      <td>استمر بالمراجعة والتكرار قبل النشر.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Ministry of Sport Events</td>
+      <td>zero-yield</td>
+      <td>0</td>
+      <td>0</td>
+      <td>No future date-complete candidates found by the conservative extractor.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>webook Explore</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Hala Yalla</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Experience AlUla Events</td>
+      <td>zero-yield</td>
+      <td>0</td>
+      <td>0</td>
+      <td>No future date-complete candidates found by the conservative extractor.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>MDLBEAST Events</td>
+      <td>healthy</td>
+      <td>5</td>
+      <td>5</td>
+      <td>استمر بالمراجعة والتكرار قبل النشر.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Monsha'at All Events</td>
+      <td>healthy</td>
+      <td>3</td>
+      <td>3</td>
+      <td>استمر بالمراجعة والتكرار قبل النشر.</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Invest Saudi Events</td>
+      <td>healthy</td>
+      <td>3</td>
+      <td>3</td>
+      <td>استمر بالمراجعة والتكرار قبل النشر.</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>RFECC What's On</td>
+      <td>healthy</td>
+      <td>6</td>
+      <td>6</td>
+      <td>استمر بالمراجعة والتكرار قبل النشر.</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Eye of Riyadh Events</td>
+      <td>healthy</td>
+      <td>16</td>
+      <td>15</td>
+      <td>استمر بالمراجعة والتكرار قبل النشر.</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>10times Saudi Arabia</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Eventbrite Saudi Arabia</td>
+      <td>healthy</td>
+      <td>17</td>
+      <td>17</td>
+      <td>استمر بالمراجعة والتكرار قبل النشر.</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Platinumlist Jeddah Calendar</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Tuwaiq Academy Bootcamps and Programs</td>
+      <td>healthy</td>
+      <td>12</td>
+      <td>18</td>
+      <td>استمر بالمراجعة والتكرار قبل النشر.</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Future Skills MCIT Catalogue</td>
+      <td>healthy</td>
+      <td>4</td>
+      <td>6</td>
+      <td>استمر بالمراجعة والتكرار قبل النشر.</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Riyadh Season Official</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Visit Saudi Seasons</td>
+      <td>healthy</td>
+      <td>4</td>
+      <td>4</td>
+      <td>استمر بالمراجعة والتكرار قبل النشر.</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>CODE MCIT Programs</td>
+      <td>zero-yield</td>
+      <td>0</td>
+      <td>0</td>
+      <td>No future date-complete candidates found by the conservative extractor.</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Misk Hub Programs</td>
+      <td>healthy</td>
+      <td>5</td>
+      <td>7</td>
+      <td>استمر بالمراجعة والتكرار قبل النشر.</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Dhahran Expo Calendar</td>
+      <td>healthy</td>
+      <td>15</td>
+      <td>15</td>
+      <td>استمر بالمراجعة والتكرار قبل النشر.</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Ithra Events</td>
+      <td>zero-yield</td>
+      <td>0</td>
+      <td>0</td>
+      <td>No future date-complete candidates found by the conservative extractor.</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Saudi Digital Academy</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>SDAIA Academy Programs</td>
+      <td>zero-yield</td>
+      <td>0</td>
+      <td>0</td>
+      <td>No future date-complete candidates found by the conservative extractor.</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Saudi Events App</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>افتح مسار شراكة أو تغذية رسمية قبل الأتمتة.</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>Enjoy Saudi Events</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>Misk Hub Events</td>
+      <td>zero-yield</td>
+      <td>0</td>
+      <td>0</td>
+      <td>No future date-complete candidates found by the conservative extractor.</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>Jeddah Chamber Exhibitions and Events Center</td>
+      <td>zero-yield</td>
+      <td>0</td>
+      <td>0</td>
+      <td>No future date-complete candidates found by the conservative extractor.</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>Saudi Pro League Fixtures</td>
+      <td>zero-yield</td>
+      <td>0</td>
+      <td>0</td>
+      <td>No future date-complete candidates found by the conservative extractor.</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>NEOM Newsroom Events</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>Saudi Space Agency Events</td>
+      <td>zero-yield</td>
+      <td>0</td>
+      <td>0</td>
+      <td>No future date-complete candidates found by the conservative extractor.</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>CST Events and News</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>Visit Saudi Calendar PDF</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>Qiddiya Events</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>Sela and Saudi Entertainment Expo</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>Ministry of Culture Commission Calendars</td>
+      <td>healthy</td>
+      <td>13</td>
+      <td>12</td>
+      <td>استمر بالمراجعة والتكرار قبل النشر.</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>Visit AlBalad / Historic Jeddah</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>Discover Aseer Events</td>
+      <td>healthy</td>
+      <td>1</td>
+      <td>1</td>
+      <td>استمر بالمراجعة والتكرار قبل النشر.</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>Diriyah Season</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>Riyadh International Convention and Exhibition Center</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>Aseer Season / Asir Development Authority</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>Jeddah Season</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>Saudi Water Authority Events</td>
+      <td>healthy</td>
+      <td>8</td>
+      <td>8</td>
+      <td>استمر بالمراجعة والتكرار قبل النشر.</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>Saudi Universities and Technical Colleges</td>
+      <td>healthy</td>
+      <td>6</td>
+      <td>6</td>
+      <td>استمر بالمراجعة والتكرار قبل النشر.</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>ExpoFP and Eventseye Saudi Trade Shows</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>Meetup and Facebook Events Saudi Arabia</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>Saudi Food and Drug Authority Events</td>
+      <td>healthy</td>
+      <td>4</td>
+      <td>4</td>
+      <td>استمر بالمراجعة والتكرار قبل النشر.</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>Saudi Contractors Authority Events</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>Saudi Winter Events Calendar</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>Riyadh City Events</td>
+      <td>healthy</td>
+      <td>40</td>
+      <td>40</td>
+      <td>استمر بالمراجعة والتكرار قبل النشر.</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>Monsha'at Academy Programs</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>افتح مسار شراكة أو تغذية رسمية قبل الأتمتة.</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>General Entertainment Authority Events</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>SDAIA Calendar and Events</td>
+      <td>zero-yield</td>
+      <td>0</td>
+      <td>2</td>
+      <td>No future date-complete candidates found by the conservative extractor.</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>Makkah Chamber Events</td>
+      <td>zero-yield</td>
+      <td>0</td>
+      <td>0</td>
+      <td>No future date-complete candidates found by the conservative extractor.</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>Asharqia Chamber Events</td>
+      <td>healthy</td>
+      <td>2</td>
+      <td>2</td>
+      <td>استمر بالمراجعة والتكرار قبل النشر.</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>Qassim Chamber Events</td>
+      <td>zero-yield</td>
+      <td>0</td>
+      <td>0</td>
+      <td>No future date-complete candidates found by the conservative extractor.</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>Abha Chamber Events</td>
+      <td>zero-yield</td>
+      <td>0</td>
+      <td>0</td>
+      <td>No future date-complete candidates found by the conservative extractor.</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>Baha Municipality Events</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>Baha Chamber Events</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>Jouf Chamber Events</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>Northern Borders Chamber Events</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>Tabuk Chamber Events</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>Jazan Chamber Events</td>
+      <td>zero-yield</td>
+      <td>0</td>
+      <td>0</td>
+      <td>No future date-complete candidates found by the conservative extractor.</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>Hail Chamber Events</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>Najran Chamber Events</td>
+      <td>not-collected</td>
+      <td>0</td>
+      <td>0</td>
+      <td>أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.</td>
+    </tr></tbody></table>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,4268 @@
+{
+  "generated_at": "2026-07-07T19:33:54.863Z",
+  "intent": "eventlive-site-visual-sweep",
+  "base_url": "http://127.0.0.1:4187",
+  "ok": true,
+  "totals": {
+    "pages": 41,
+    "viewports": 2,
+    "checks": 82,
+    "failed": 0,
+    "screenshots": 82
+  },
+  "checks": [
+    {
+      "page": "home",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/home-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | فعاليات السعودية الآن",
+        "h1": "ماذا يحدث الآن في السعودية؟",
+        "bodyTextLength": 3649,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 3,
+        "visibleImages": 13,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "ماذا يحدث الآن في السعودية؟",
+          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+          "يبدأ قريبًا",
+          "دورات وبرامج للتقنيين والباحثين عن فرصة",
+          "برامج ممتدة نوافذها مفتوحة الآن"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 3671
+        }
+      }
+    },
+    {
+      "page": "home",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/home-mobile.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | فعاليات السعودية الآن",
+        "h1": "ماذا يحدث الآن في السعودية؟",
+        "bodyTextLength": 3610,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 3,
+        "visibleImages": 13,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "ماذا يحدث الآن في السعودية؟",
+          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+          "يبدأ قريبًا",
+          "دورات وبرامج للتقنيين والباحثين عن فرصة",
+          "برامج ممتدة نوافذها مفتوحة الآن"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "article",
+            "className": "card",
+            "text": "عائلات وأطفال ٦يوليو الرياض · Boulevard City, Riyadh · الاثنين Esports World Cup",
+            "width": 262
+          },
+          {
+            "tag": "a",
+            "className": "cover",
+            "text": "عائلات وأطفال ٦يوليو",
+            "width": 260
+          },
+          {
+            "tag": "img",
+            "className": "",
+            "text": "",
+            "width": 260
+          },
+          {
+            "tag": "span",
+            "className": "chips",
+            "text": "",
+            "width": 0
+          },
+          {
+            "tag": "div",
+            "className": "card-body",
+            "text": "الرياض · Boulevard City, Riyadh · الاثنين Esports World Cup نافذة البرنامج مفتوح",
+            "width": 260
+          },
+          {
+            "tag": "div",
+            "className": "card-meta",
+            "text": "الرياض · Boulevard City, Riyadh · الاثنين",
+            "width": 228
+          },
+          {
+            "tag": "h3",
+            "className": "",
+            "text": "Esports World Cup",
+            "width": 228
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "Esports World Cup",
+            "width": 140
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 3211
+        }
+      }
+    },
+    {
+      "page": "events",
+      "path": "/events.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/events-desktop.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "EventLive | فعاليات السعودية مباشرة",
+        "h1": "كل الفعاليات",
+        "bodyTextLength": 280366,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 416,
+        "brokenImages": [],
+        "pendingImages": 401,
+        "headings": [
+          "كل الفعاليات",
+          "تأكيد قاعة ورشة رحلة المستفيد",
+          "مركز الحالة الحية",
+          "سجل فعالياتي",
+          "الفعاليات المتاحة"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 136662
+        }
+      }
+    },
+    {
+      "page": "events",
+      "path": "/events.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/events-mobile.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "EventLive | فعاليات السعودية مباشرة",
+        "h1": "كل الفعاليات",
+        "bodyTextLength": 280313,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 416,
+        "brokenImages": [],
+        "pendingImages": 412,
+        "headings": [
+          "كل الفعاليات",
+          "تأكيد قاعة ورشة رحلة المستفيد",
+          "مركز الحالة الحية",
+          "سجل فعالياتي",
+          "الفعاليات المتاحة"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "هذا الأسبوع",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعالياتي",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "التحديثات الحية",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "مركز الثقة",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "للمنظمين",
+            "width": 74
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 394194
+        }
+      }
+    },
+    {
+      "page": "event-shell",
+      "path": "/event.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/event-shell-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | ملتقى التحول الرقمي في القطاع الحكومي 2026",
+        "h1": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+        "bodyTextLength": 4632,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+          "لا توجد جلسة نشطة الآن",
+          "الافتتاح الرسمي وكلمة الجهة المنظمة",
+          "باقي على بداية الفعالية",
+          "أين نحن الآن في الفعالية؟"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 4020
+        }
+      }
+    },
+    {
+      "page": "event-shell",
+      "path": "/event.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/event-shell-mobile.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "EventLive | ملتقى التحول الرقمي في القطاع الحكومي 2026",
+        "h1": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+        "bodyTextLength": 4626,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+          "لا توجد جلسة نشطة الآن",
+          "الافتتاح الرسمي وكلمة الجهة المنظمة",
+          "باقي على بداية الفعالية",
+          "أين نحن الآن في الفعالية؟"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "هذا الأسبوع",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعالياتي",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "التحديثات الحية",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "مركز الثقة",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "للمنظمين",
+            "width": 74
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 7538
+        }
+      }
+    },
+    {
+      "page": "today",
+      "path": "/today.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/today-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | الآن",
+        "h1": "الآن",
+        "bodyTextLength": 2355,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "الآن",
+          "تأكيد قاعة ورشة رحلة المستفيد",
+          "أقرب خطوة مفيدة",
+          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+          "كل الأولويات القادمة",
+          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+          "Unstable",
+          "ملتقى التحول الرقمي في القطاع الحكومي 2026"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 1750
+        }
+      }
+    },
+    {
+      "page": "today",
+      "path": "/today.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/today-mobile.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | الآن",
+        "h1": "الآن",
+        "bodyTextLength": 2302,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "الآن",
+          "تأكيد قاعة ورشة رحلة المستفيد",
+          "أقرب خطوة مفيدة",
+          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+          "كل الأولويات القادمة",
+          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+          "Unstable",
+          "ملتقى التحول الرقمي في القطاع الحكومي 2026"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "هذا الأسبوع",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعالياتي",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "التحديثات الحية",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "مركز الثقة",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "للمنظمين",
+            "width": 74
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 3408
+        }
+      }
+    },
+    {
+      "page": "today-events",
+      "path": "/today-events.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/today-events-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "فعاليات اليوم | EventLive",
+        "h1": "فعاليات اليوم",
+        "bodyTextLength": 5027,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 3,
+        "visibleImages": 7,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "فعاليات اليوم",
+          "تابع فعاليات اليوم",
+          "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
+          "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
+          "Esports World Cup",
+          "Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH",
+          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+          "Unstable"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 3470
+        }
+      }
+    },
+    {
+      "page": "today-events",
+      "path": "/today-events.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/today-events-mobile.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "فعاليات اليوم | EventLive",
+        "h1": "فعاليات اليوم",
+        "bodyTextLength": 4935,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 3,
+        "visibleImages": 7,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "فعاليات اليوم",
+          "تابع فعاليات اليوم",
+          "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
+          "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
+          "Esports World Cup",
+          "Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH",
+          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+          "Unstable"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 7367
+        }
+      }
+    },
+    {
+      "page": "my-events",
+      "path": "/my-events.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/my-events-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | فعالياتي",
+        "h1": "فعالياتي",
+        "bodyTextLength": 435,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "فعالياتي",
+          "إدارة السجل"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 900
+        }
+      }
+    },
+    {
+      "page": "my-events",
+      "path": "/my-events.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/my-events-mobile.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | فعالياتي",
+        "h1": "فعالياتي",
+        "bodyTextLength": 382,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "فعالياتي",
+          "إدارة السجل"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "هذا الأسبوع",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعالياتي",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "التحديثات الحية",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "مركز الثقة",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "للمنظمين",
+            "width": 74
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 1168
+        }
+      }
+    },
+    {
+      "page": "updates",
+      "path": "/updates.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/updates-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "التحديثات الحية | EventLive",
+        "h1": "التحديثات الحية",
+        "bodyTextLength": 1366,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "التحديثات الحية",
+          "تأكيد قاعة ورشة رحلة المستفيد",
+          "تنبيه وقت الجلسة الرئيسية",
+          "نصيحة وصول",
+          "فتح التسجيل المبكر",
+          "ملف التحديثات"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 1337
+        }
+      }
+    },
+    {
+      "page": "updates",
+      "path": "/updates.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/updates-mobile.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "التحديثات الحية | EventLive",
+        "h1": "التحديثات الحية",
+        "bodyTextLength": 1274,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "التحديثات الحية",
+          "تأكيد قاعة ورشة رحلة المستفيد",
+          "تنبيه وقت الجلسة الرئيسية",
+          "نصيحة وصول",
+          "فتح التسجيل المبكر",
+          "ملف التحديثات"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 2506
+        }
+      }
+    },
+    {
+      "page": "screen",
+      "path": "/screen.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/screen-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | شاشة الحضور",
+        "h1": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+        "bodyTextLength": 1061,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 1,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+          "القادم على EventLive"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 1239
+        }
+      }
+    },
+    {
+      "page": "screen",
+      "path": "/screen.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/screen-mobile.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | شاشة الحضور",
+        "h1": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+        "bodyTextLength": 1008,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 1,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+          "القادم على EventLive"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 444,
+          "height": 961,
+          "scrollWidth": 444,
+          "scrollHeight": 1879
+        }
+      }
+    },
+    {
+      "page": "activation",
+      "path": "/activation.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/activation-desktop.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "تفعيل الجداول الحية | EventLive",
+        "h1": "تفعيل الجداول الحية",
+        "bodyTextLength": 14671,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "تفعيل الجداول الحية",
+          "مصادر التفعيل الأعلى أثرًا",
+          "Riyadh City Events",
+          "Tuwaiq Academy Bootcamps and Programs",
+          "Visit Saudi Calendar",
+          "Future Skills MCIT Catalogue",
+          "Misk Hub Programs",
+          "Saudi Water Authority Events"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 11154
+        }
+      }
+    },
+    {
+      "page": "activation",
+      "path": "/activation.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/activation-mobile.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "تفعيل الجداول الحية | EventLive",
+        "h1": "تفعيل الجداول الحية",
+        "bodyTextLength": 14579,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "تفعيل الجداول الحية",
+          "مصادر التفعيل الأعلى أثرًا",
+          "Riyadh City Events",
+          "Tuwaiq Academy Bootcamps and Programs",
+          "Visit Saudi Calendar",
+          "Future Skills MCIT Catalogue",
+          "Misk Hub Programs",
+          "Saudi Water Authority Events"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "table",
+            "className": "",
+            "text": "الفعاليةالأولويةالمصدرمسار الاستخراجالنقصPoppy Playtimeالرياض · 2025-10-10T16:00",
+            "width": 780
+          },
+          {
+            "tag": "thead",
+            "className": "",
+            "text": "الفعاليةالأولويةالمصدرمسار الاستخراجالنقص",
+            "width": 780
+          },
+          {
+            "tag": "tr",
+            "className": "",
+            "text": "الفعاليةالأولويةالمصدرمسار الاستخراجالنقص",
+            "width": 780
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "الأولوية",
+            "width": 76
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "المصدر",
+            "width": 142
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "مسار الاستخراج",
+            "width": 115
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "النقص",
+            "width": 110
+          },
+          {
+            "tag": "tbody",
+            "className": "",
+            "text": "Poppy Playtimeالرياض · 2025-10-10T16:00:00+03:00عاجل الآنRiyadh City Eventsفحص ص",
+            "width": 780
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 16462
+        }
+      }
+    },
+    {
+      "page": "print",
+      "path": "/print.html?event=event-the-groves",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/print-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "نسخة طباعة الفعالية | EventLive",
+        "h1": "The Groves",
+        "bodyTextLength": 976,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 1,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "The Groves",
+          "بيانات الحضور",
+          "الجدول الحي"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 1317
+        }
+      }
+    },
+    {
+      "page": "print",
+      "path": "/print.html?event=event-the-groves",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/print-mobile.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "نسخة طباعة الفعالية | EventLive",
+        "h1": "The Groves",
+        "bodyTextLength": 884,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 1,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "The Groves",
+          "بيانات الحضور",
+          "الجدول الحي"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 1811
+        }
+      }
+    },
+    {
+      "page": "share",
+      "path": "/share.html?event=event-the-groves",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/share-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "مشاركة الفعالية | EventLive",
+        "h1": "The Groves",
+        "bodyTextLength": 1340,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 2,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "The Groves",
+          "The Groves",
+          "QR المشاركة"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 1391
+        }
+      }
+    },
+    {
+      "page": "share",
+      "path": "/share.html?event=event-the-groves",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/share-mobile.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "مشاركة الفعالية | EventLive",
+        "h1": "The Groves",
+        "bodyTextLength": 1248,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 2,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "The Groves",
+          "The Groves",
+          "QR المشاركة"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 2339
+        }
+      }
+    },
+    {
+      "page": "signage",
+      "path": "/signage.html?event=event-the-groves",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/signage-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "لافتة QR للفعالية | EventLive",
+        "h1": "The Groves",
+        "bodyTextLength": 1261,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 1,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "The Groves",
+          "The Groves",
+          "امسح للوصول إلى EventLive"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 1349
+        }
+      }
+    },
+    {
+      "page": "signage",
+      "path": "/signage.html?event=event-the-groves",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/signage-mobile.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "لافتة QR للفعالية | EventLive",
+        "h1": "The Groves",
+        "bodyTextLength": 1169,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 1,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "The Groves",
+          "The Groves",
+          "امسح للوصول إلى EventLive"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 2317
+        }
+      }
+    },
+    {
+      "page": "this-week",
+      "path": "/this-week.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/this-week-desktop.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "فعاليات هذا الأسبوع | EventLive",
+        "h1": "فعاليات هذا الأسبوع",
+        "bodyTextLength": 10811,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 3,
+        "visibleImages": 18,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "فعاليات هذا الأسبوع",
+          "تابع فعاليات هذا الأسبوع",
+          "لقاءات مراكز دعم المنشآت",
+          "لقاءات مراكز دعم المنشآت",
+          "لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)",
+          "Prince Faisal Bin Fahd Art Exhibition: Summer 2026",
+          "Registration for International Research Competition on Non-Terrestrial Networks",
+          "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 6611
+        }
+      }
+    },
+    {
+      "page": "this-week",
+      "path": "/this-week.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/this-week-mobile.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "فعاليات هذا الأسبوع | EventLive",
+        "h1": "فعاليات هذا الأسبوع",
+        "bodyTextLength": 10719,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 3,
+        "visibleImages": 18,
+        "brokenImages": [],
+        "pendingImages": 8,
+        "headings": [
+          "فعاليات هذا الأسبوع",
+          "تابع فعاليات هذا الأسبوع",
+          "لقاءات مراكز دعم المنشآت",
+          "لقاءات مراكز دعم المنشآت",
+          "لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)",
+          "Prince Faisal Bin Fahd Art Exhibition: Summer 2026",
+          "Registration for International Research Competition on Non-Terrestrial Networks",
+          "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 16048
+        }
+      }
+    },
+    {
+      "page": "this-month",
+      "path": "/this-month.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/this-month-desktop.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "فعاليات هذا الشهر | EventLive",
+        "h1": "فعاليات هذا الشهر",
+        "bodyTextLength": 13324,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 3,
+        "visibleImages": 18,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "فعاليات هذا الشهر",
+          "تابع فعاليات هذا الشهر",
+          "Poppy Playtime",
+          "Poppy Playtime",
+          "Riyadh Season: BLVD City",
+          "The Groves",
+          "Immersive Experience: Flying Over Saudi",
+          "Arabic Language Exhibition 28"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 8046
+        }
+      }
+    },
+    {
+      "page": "this-month",
+      "path": "/this-month.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/this-month-mobile.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "فعاليات هذا الشهر | EventLive",
+        "h1": "فعاليات هذا الشهر",
+        "bodyTextLength": 13232,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 3,
+        "visibleImages": 18,
+        "brokenImages": [],
+        "pendingImages": 8,
+        "headings": [
+          "فعاليات هذا الشهر",
+          "تابع فعاليات هذا الشهر",
+          "Poppy Playtime",
+          "Poppy Playtime",
+          "Riyadh Season: BLVD City",
+          "The Groves",
+          "Immersive Experience: Flying Over Saudi",
+          "Arabic Language Exhibition 28"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 17425
+        }
+      }
+    },
+    {
+      "page": "weekend",
+      "path": "/weekend.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/weekend-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | فعاليات الويكند",
+        "h1": "الويكند",
+        "bodyTextLength": 6063,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 3,
+        "visibleImages": 11,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "الويكند",
+          "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
+          "فعاليات الويكند",
+          "مدن ضمن هذا التصنيف",
+          "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
+          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+          "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+          "The Groves"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 3752
+        }
+      }
+    },
+    {
+      "page": "weekend",
+      "path": "/weekend.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/weekend-mobile.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "EventLive | فعاليات الويكند",
+        "h1": "الويكند",
+        "bodyTextLength": 6010,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 3,
+        "visibleImages": 11,
+        "brokenImages": [],
+        "pendingImages": 3,
+        "headings": [
+          "الويكند",
+          "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
+          "فعاليات الويكند",
+          "مدن ضمن هذا التصنيف",
+          "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
+          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+          "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+          "The Groves"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "هذا الأسبوع",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعالياتي",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "التحديثات الحية",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "مركز الثقة",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "للمنظمين",
+            "width": 74
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 8832
+        }
+      }
+    },
+    {
+      "page": "cities",
+      "path": "/cities.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/cities-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "فعاليات مدن السعودية | EventLive",
+        "h1": "فعاليات مدن السعودية",
+        "bodyTextLength": 3255,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 5,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "فعاليات مدن السعودية",
+          "الرياض",
+          "الظهران",
+          "عن بعد",
+          "جدة",
+          "السعودية",
+          "ثول",
+          "على مستوى المملكة"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 3688
+        }
+      }
+    },
+    {
+      "page": "cities",
+      "path": "/cities.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/cities-mobile.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "فعاليات مدن السعودية | EventLive",
+        "h1": "فعاليات مدن السعودية",
+        "bodyTextLength": 3163,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 5,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "فعاليات مدن السعودية",
+          "الرياض",
+          "الظهران",
+          "عن بعد",
+          "جدة",
+          "السعودية",
+          "ثول",
+          "على مستوى المملكة"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 10581
+        }
+      }
+    },
+    {
+      "page": "categories",
+      "path": "/categories.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/categories-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "تصنيفات فعاليات السعودية | EventLive",
+        "h1": "تصنيفات فعاليات السعودية",
+        "bodyTextLength": 3146,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 5,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "تصنيفات فعاليات السعودية",
+          "معارض وتجارية",
+          "ورش تنظيمية وصحية",
+          "ترفيه وعائلات",
+          "مؤتمرات ومنتديات",
+          "تدريب تقني",
+          "رياضة وفعاليات جماهيرية",
+          "جامعات ومجتمع"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 2921
+        }
+      }
+    },
+    {
+      "page": "categories",
+      "path": "/categories.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/categories-mobile.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "تصنيفات فعاليات السعودية | EventLive",
+        "h1": "تصنيفات فعاليات السعودية",
+        "bodyTextLength": 3054,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 5,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "تصنيفات فعاليات السعودية",
+          "معارض وتجارية",
+          "ورش تنظيمية وصحية",
+          "ترفيه وعائلات",
+          "مؤتمرات ومنتديات",
+          "تدريب تقني",
+          "رياضة وفعاليات جماهيرية",
+          "جامعات ومجتمع"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 8106
+        }
+      }
+    },
+    {
+      "page": "audiences",
+      "path": "/audiences.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/audiences-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "فعاليات حسب الجمهور | EventLive",
+        "h1": "فعاليات حسب الجمهور",
+        "bodyTextLength": 3131,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 5,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "فعاليات حسب الجمهور",
+          "موظفون ومهنيون",
+          "مبدعون وفنون",
+          "تقنيون",
+          "عائلات وأطفال",
+          "مهاريون وحرفيون",
+          "باحثون وأكاديميون",
+          "طلاب وخريجون"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 2781
+        }
+      }
+    },
+    {
+      "page": "audiences",
+      "path": "/audiences.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/audiences-mobile.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "فعاليات حسب الجمهور | EventLive",
+        "h1": "فعاليات حسب الجمهور",
+        "bodyTextLength": 3039,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 5,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "فعاليات حسب الجمهور",
+          "موظفون ومهنيون",
+          "مبدعون وفنون",
+          "تقنيون",
+          "عائلات وأطفال",
+          "مهاريون وحرفيون",
+          "باحثون وأكاديميون",
+          "طلاب وخريجون"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 7935
+        }
+      }
+    },
+    {
+      "page": "organizers",
+      "path": "/organizers.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/organizers-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | للمنظمين",
+        "h1": "اجعل فعاليتك مفهومة لحظة الحضور",
+        "bodyTextLength": 4082,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "اجعل فعاليتك مفهومة لحظة الحضور",
+          "ما الذي نستلمه؟",
+          "متى تكون EventLive مناسبة؟",
+          "مسار العمل",
+          "مخرجات EventLive للمنظم",
+          "معايير النشر والثقة",
+          "اتفاق البيانات قبل التفعيل",
+          "روابط الثقة والتشغيل"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 3584
+        }
+      }
+    },
+    {
+      "page": "organizers",
+      "path": "/organizers.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/organizers-mobile.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "EventLive | للمنظمين",
+        "h1": "اجعل فعاليتك مفهومة لحظة الحضور",
+        "bodyTextLength": 4001,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "اجعل فعاليتك مفهومة لحظة الحضور",
+          "ما الذي نستلمه؟",
+          "متى تكون EventLive مناسبة؟",
+          "مسار العمل",
+          "مخرجات EventLive للمنظم",
+          "معايير النشر والثقة",
+          "اتفاق البيانات قبل التفعيل",
+          "روابط الثقة والتشغيل"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "هذا الأسبوع",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعالياتي",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "التحديثات الحية",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "مركز الثقة",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "للمنظمين",
+            "width": 74
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 6532
+        }
+      }
+    },
+    {
+      "page": "organizer-intake",
+      "path": "/organizer-intake.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/organizer-intake-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "إضافة فعالية أو جدول حي | EventLive",
+        "h1": "إضافة فعالية أو جدول حي",
+        "bodyTextLength": 1610,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "إضافة فعالية أو جدول حي",
+          "بيانات الفعالية",
+          "المعاينة المنظمة",
+          "معايير قبول الطلب"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 2575
+        }
+      }
+    },
+    {
+      "page": "organizer-intake",
+      "path": "/organizer-intake.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/organizer-intake-mobile.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "إضافة فعالية أو جدول حي | EventLive",
+        "h1": "إضافة فعالية أو جدول حي",
+        "bodyTextLength": 1518,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "إضافة فعالية أو جدول حي",
+          "بيانات الفعالية",
+          "المعاينة المنظمة",
+          "معايير قبول الطلب"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 3721
+        }
+      }
+    },
+    {
+      "page": "methodology",
+      "path": "/methodology.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/methodology-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "منهجية جمع ونشر الفعاليات | EventLive",
+        "h1": "منهجية جمع ونشر الفعاليات",
+        "bodyTextLength": 1898,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 5,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "منهجية جمع ونشر الفعاليات",
+          "ما ننشره تلقائيًا",
+          "ما لا ننشره مباشرة",
+          "كيف تعمل الدورة الدورية",
+          "الفعاليات المنتهية",
+          "الصور والإثراء",
+          "التكرار وتعدد المصادر",
+          "مؤشرات المنهجية الحالية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 1703
+        }
+      }
+    },
+    {
+      "page": "methodology",
+      "path": "/methodology.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/methodology-mobile.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "منهجية جمع ونشر الفعاليات | EventLive",
+        "h1": "منهجية جمع ونشر الفعاليات",
+        "bodyTextLength": 1806,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 5,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "منهجية جمع ونشر الفعاليات",
+          "ما ننشره تلقائيًا",
+          "ما لا ننشره مباشرة",
+          "كيف تعمل الدورة الدورية",
+          "الفعاليات المنتهية",
+          "الصور والإثراء",
+          "التكرار وتعدد المصادر",
+          "مؤشرات المنهجية الحالية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 3033
+        }
+      }
+    },
+    {
+      "page": "guides",
+      "path": "/guides.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/guides-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | أدلة EventLive لفعاليات السعودية",
+        "h1": "أدلة EventLive لفعاليات السعودية",
+        "bodyTextLength": 1433,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "أدلة EventLive لفعاليات السعودية",
+          "ابدأ من الدليل المناسب",
+          "لماذا هذه الصفحات مهمة؟",
+          "أسئلة شائعة",
+          "انتقل للمنصة الحية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 1520
+        }
+      }
+    },
+    {
+      "page": "guides",
+      "path": "/guides.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/guides-mobile.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | أدلة EventLive لفعاليات السعودية",
+        "h1": "أدلة EventLive لفعاليات السعودية",
+        "bodyTextLength": 1380,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "أدلة EventLive لفعاليات السعودية",
+          "ابدأ من الدليل المناسب",
+          "لماذا هذه الصفحات مهمة؟",
+          "أسئلة شائعة",
+          "انتقل للمنصة الحية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "هذا الأسبوع",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعالياتي",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "التحديثات الحية",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "مركز الثقة",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "للمنظمين",
+            "width": 74
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 2101
+        }
+      }
+    },
+    {
+      "page": "live-guide",
+      "path": "/guide-live-events-saudi.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/live-guide-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | كيف تستخدم EventLive وقت الفعالية؟",
+        "h1": "كيف تستخدم EventLive وقت الفعالية؟",
+        "bodyTextLength": 1407,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "كيف تستخدم EventLive وقت الفعالية؟",
+          "السيناريو الأساسي: أنت في الطريق",
+          "ماذا يعني الجدول الحي؟",
+          "أسئلة شائعة",
+          "انتقل للمنصة الحية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 1489
+        }
+      }
+    },
+    {
+      "page": "live-guide",
+      "path": "/guide-live-events-saudi.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/live-guide-mobile.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | كيف تستخدم EventLive وقت الفعالية؟",
+        "h1": "كيف تستخدم EventLive وقت الفعالية؟",
+        "bodyTextLength": 1354,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "كيف تستخدم EventLive وقت الفعالية؟",
+          "السيناريو الأساسي: أنت في الطريق",
+          "ماذا يعني الجدول الحي؟",
+          "أسئلة شائعة",
+          "انتقل للمنصة الحية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "هذا الأسبوع",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعالياتي",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "التحديثات الحية",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "مركز الثقة",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "للمنظمين",
+            "width": 74
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 1891
+        }
+      }
+    },
+    {
+      "page": "data-guide",
+      "path": "/guide-saudi-events-data.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/data-guide-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | دليل بيانات الفعاليات السعودية في EventLive",
+        "h1": "دليل بيانات الفعاليات السعودية في EventLive",
+        "bodyTextLength": 1258,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "دليل بيانات الفعاليات السعودية في EventLive",
+          "ما الذي يجعل البيانات مفيدة؟",
+          "كيف نخدم الذكاءات ومحركات البحث؟",
+          "أسئلة شائعة",
+          "انتقل للمنصة الحية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 1369
+        }
+      }
+    },
+    {
+      "page": "data-guide",
+      "path": "/guide-saudi-events-data.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/data-guide-mobile.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | دليل بيانات الفعاليات السعودية في EventLive",
+        "h1": "دليل بيانات الفعاليات السعودية في EventLive",
+        "bodyTextLength": 1205,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "دليل بيانات الفعاليات السعودية في EventLive",
+          "ما الذي يجعل البيانات مفيدة؟",
+          "كيف نخدم الذكاءات ومحركات البحث؟",
+          "أسئلة شائعة",
+          "انتقل للمنصة الحية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "هذا الأسبوع",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعالياتي",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "التحديثات الحية",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "مركز الثقة",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "للمنظمين",
+            "width": 74
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 1774
+        }
+      }
+    },
+    {
+      "page": "summer-guide",
+      "path": "/guide-summer-events-saudi.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/summer-guide-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | دليل فعاليات الصيف في مناطق السعودية",
+        "h1": "دليل فعاليات الصيف في مناطق السعودية",
+        "bodyTextLength": 1344,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "دليل فعاليات الصيف في مناطق السعودية",
+          "الصيف يعني قرارات سريعة حسب المدينة والوقت",
+          "كيف نتعامل مع المواسم الطويلة؟",
+          "أسئلة شائعة",
+          "انتقل للمنصة الحية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 1413
+        }
+      }
+    },
+    {
+      "page": "summer-guide",
+      "path": "/guide-summer-events-saudi.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/summer-guide-mobile.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | دليل فعاليات الصيف في مناطق السعودية",
+        "h1": "دليل فعاليات الصيف في مناطق السعودية",
+        "bodyTextLength": 1291,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "دليل فعاليات الصيف في مناطق السعودية",
+          "الصيف يعني قرارات سريعة حسب المدينة والوقت",
+          "كيف نتعامل مع المواسم الطويلة؟",
+          "أسئلة شائعة",
+          "انتقل للمنصة الحية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "هذا الأسبوع",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعالياتي",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "التحديثات الحية",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "مركز الثقة",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "للمنظمين",
+            "width": 74
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 1929
+        }
+      }
+    },
+    {
+      "page": "organizer-guide",
+      "path": "/guide-organizers-live-schedule.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/organizer-guide-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | دليل المنظمين لتحويل الفعالية إلى جدول حي",
+        "h1": "دليل المنظمين لتحويل الفعالية إلى جدول حي",
+        "bodyTextLength": 1379,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "دليل المنظمين لتحويل الفعالية إلى جدول حي",
+          "ما الذي يرسله المنظم؟",
+          "ماذا يحصل عليه المنظم؟",
+          "أسئلة شائعة",
+          "انتقل للمنصة الحية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 1519
+        }
+      }
+    },
+    {
+      "page": "organizer-guide",
+      "path": "/guide-organizers-live-schedule.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/organizer-guide-mobile.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | دليل المنظمين لتحويل الفعالية إلى جدول حي",
+        "h1": "دليل المنظمين لتحويل الفعالية إلى جدول حي",
+        "bodyTextLength": 1326,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "دليل المنظمين لتحويل الفعالية إلى جدول حي",
+          "ما الذي يرسله المنظم؟",
+          "ماذا يحصل عليه المنظم؟",
+          "أسئلة شائعة",
+          "انتقل للمنصة الحية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "هذا الأسبوع",
+            "width": 78
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعالياتي",
+            "width": 78
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "التحديثات الحية",
+            "width": 78
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "مركز الثقة",
+            "width": 78
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "للمنظمين",
+            "width": 78
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 2010
+        }
+      }
+    },
+    {
+      "page": "ended-guide",
+      "path": "/guide-ended-events-value.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/ended-guide-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | لماذا يعرض EventLive الفعاليات المنتهية؟",
+        "h1": "لماذا يعرض EventLive الفعاليات المنتهية؟",
+        "bodyTextLength": 1447,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "لماذا يعرض EventLive الفعاليات المنتهية؟",
+          "الفعالية التي انتهت أمس ما زالت معلومة مفيدة",
+          "ليست صفحة أرشيف منفصلة",
+          "أسئلة شائعة",
+          "انتقل للمنصة الحية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 1503
+        }
+      }
+    },
+    {
+      "page": "ended-guide",
+      "path": "/guide-ended-events-value.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/ended-guide-mobile.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | لماذا يعرض EventLive الفعاليات المنتهية؟",
+        "h1": "لماذا يعرض EventLive الفعاليات المنتهية؟",
+        "bodyTextLength": 1394,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "لماذا يعرض EventLive الفعاليات المنتهية؟",
+          "الفعالية التي انتهت أمس ما زالت معلومة مفيدة",
+          "ليست صفحة أرشيف منفصلة",
+          "أسئلة شائعة",
+          "انتقل للمنصة الحية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "هذا الأسبوع",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعالياتي",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "التحديثات الحية",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "مركز الثقة",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "للمنظمين",
+            "width": 74
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 1991
+        }
+      }
+    },
+    {
+      "page": "sources-guide",
+      "path": "/guide-event-sources-methodology.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/sources-guide-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | منهجية مصادر EventLive والتحقق",
+        "h1": "منهجية مصادر EventLive والتحقق",
+        "bodyTextLength": 1400,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "منهجية مصادر EventLive والتحقق",
+          "ثلاث طبقات للمصادر",
+          "ما الذي نتحقق منه؟",
+          "أسئلة شائعة",
+          "انتقل للمنصة الحية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 1459
+        }
+      }
+    },
+    {
+      "page": "sources-guide",
+      "path": "/guide-event-sources-methodology.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/sources-guide-mobile.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | منهجية مصادر EventLive والتحقق",
+        "h1": "منهجية مصادر EventLive والتحقق",
+        "bodyTextLength": 1347,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "منهجية مصادر EventLive والتحقق",
+          "ثلاث طبقات للمصادر",
+          "ما الذي نتحقق منه؟",
+          "أسئلة شائعة",
+          "انتقل للمنصة الحية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "هذا الأسبوع",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعالياتي",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "التحديثات الحية",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "مركز الثقة",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "للمنظمين",
+            "width": 74
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 1858
+        }
+      }
+    },
+    {
+      "page": "online-tech-guide",
+      "path": "/guide-online-tech-courses-saudi.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/online-tech-guide-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | دليل الدورات التقنية والأونلاين في السعودية",
+        "h1": "دليل الدورات التقنية والأونلاين في السعودية",
+        "bodyTextLength": 1430,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "دليل الدورات التقنية والأونلاين في السعودية",
+          "الدورات تحتاج سياقًا مختلفًا عن الفعاليات القصيرة",
+          "كيف نمنع الخلط بين التسجيل والحضور؟",
+          "أسئلة شائعة",
+          "انتقل للمنصة الحية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 1517
+        }
+      }
+    },
+    {
+      "page": "online-tech-guide",
+      "path": "/guide-online-tech-courses-saudi.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/online-tech-guide-mobile.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | دليل الدورات التقنية والأونلاين في السعودية",
+        "h1": "دليل الدورات التقنية والأونلاين في السعودية",
+        "bodyTextLength": 1377,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "دليل الدورات التقنية والأونلاين في السعودية",
+          "الدورات تحتاج سياقًا مختلفًا عن الفعاليات القصيرة",
+          "كيف نمنع الخلط بين التسجيل والحضور؟",
+          "أسئلة شائعة",
+          "انتقل للمنصة الحية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "هذا الأسبوع",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعالياتي",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "التحديثات الحية",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "مركز الثقة",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "للمنظمين",
+            "width": 74
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 1953
+        }
+      }
+    },
+    {
+      "page": "riyadh-guide",
+      "path": "/guide-riyadh-events-live.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/riyadh-guide-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | دليل فعاليات الرياض الحية عبر EventLive",
+        "h1": "دليل فعاليات الرياض الحية عبر EventLive",
+        "bodyTextLength": 1419,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "دليل فعاليات الرياض الحية عبر EventLive",
+          "ماذا يحتاج زائر الرياض؟",
+          "لماذا الصفحة الحية أهم من بطاقة الفعالية؟",
+          "أسئلة شائعة",
+          "انتقل للمنصة الحية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 1517
+        }
+      }
+    },
+    {
+      "page": "riyadh-guide",
+      "path": "/guide-riyadh-events-live.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/riyadh-guide-mobile.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | دليل فعاليات الرياض الحية عبر EventLive",
+        "h1": "دليل فعاليات الرياض الحية عبر EventLive",
+        "bodyTextLength": 1366,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "دليل فعاليات الرياض الحية عبر EventLive",
+          "ماذا يحتاج زائر الرياض؟",
+          "لماذا الصفحة الحية أهم من بطاقة الفعالية؟",
+          "أسئلة شائعة",
+          "انتقل للمنصة الحية"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "هذا الأسبوع",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعالياتي",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "التحديثات الحية",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "مركز الثقة",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "للمنظمين",
+            "width": 74
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 1974
+        }
+      }
+    },
+    {
+      "page": "sources",
+      "path": "/sources.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/sources-desktop.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "مصادر الفعاليات | EventLive",
+        "h1": "مصادر الفعاليات",
+        "bodyTextLength": 11326,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 3,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "مصادر الفعاليات",
+          "حدود النشر الآلي",
+          "أولويات المصادر"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 9406
+        }
+      }
+    },
+    {
+      "page": "sources",
+      "path": "/sources.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/sources-mobile.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "مصادر الفعاليات | EventLive",
+        "h1": "مصادر الفعاليات",
+        "bodyTextLength": 11234,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 3,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "مصادر الفعاليات",
+          "حدود النشر الآلي",
+          "أولويات المصادر"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "table",
+            "className": "",
+            "text": "الفعاليةالمدينةالمصدرالحاجةالثقةQuarter-Finals: Join the Celebration at the FIFA",
+            "width": 780
+          },
+          {
+            "tag": "thead",
+            "className": "",
+            "text": "الفعاليةالمدينةالمصدرالحاجةالثقة",
+            "width": 780
+          },
+          {
+            "tag": "tr",
+            "className": "",
+            "text": "الفعاليةالمدينةالمصدرالحاجةالثقة",
+            "width": 780
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "المدينة",
+            "width": 74
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "المصدر",
+            "width": 169
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "الحاجة",
+            "width": 112
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "الثقة",
+            "width": 65
+          },
+          {
+            "tag": "tbody",
+            "className": "",
+            "text": "Quarter-Finals: Join the Celebration at the FIFA Fan ZoneSaudi universities and ",
+            "width": 780
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 9728
+        }
+      }
+    },
+    {
+      "page": "source-health",
+      "path": "/source-health.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/source-health-desktop.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "EventLive | صحة المصادر",
+        "h1": "صحة المصادر",
+        "bodyTextLength": 18525,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "صحة المصادر",
+          "قرار التشغيل",
+          "سجل النشر الآلي",
+          "0",
+          "80",
+          "45",
+          "قائمة التطوير التالية",
+          "Riyadh City Events"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 10720
+        }
+      }
+    },
+    {
+      "page": "source-health",
+      "path": "/source-health.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/source-health-mobile.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "EventLive | صحة المصادر",
+        "h1": "صحة المصادر",
+        "bodyTextLength": 18472,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "صحة المصادر",
+          "قرار التشغيل",
+          "سجل النشر الآلي",
+          "0",
+          "80",
+          "45",
+          "قائمة التطوير التالية",
+          "Riyadh City Events"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "هذا الأسبوع",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعالياتي",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "التحديثات الحية",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "مركز الثقة",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "للمنظمين",
+            "width": 74
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 26602
+        }
+      }
+    },
+    {
+      "page": "source-coverage-gaps",
+      "path": "/source-coverage-gaps.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/source-coverage-gaps-desktop.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "فجوات تغطية المصادر | EventLive",
+        "h1": "فجوات تغطية المصادر",
+        "bodyTextLength": 11887,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "فجوات تغطية المصادر",
+          "طابور الأولويات",
+          "فجوات الصور النشطة",
+          "أضعف المدن",
+          "أضعف الفئات",
+          "ملف البيانات"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 9690
+        }
+      }
+    },
+    {
+      "page": "source-coverage-gaps",
+      "path": "/source-coverage-gaps.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/source-coverage-gaps-mobile.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "فجوات تغطية المصادر | EventLive",
+        "h1": "فجوات تغطية المصادر",
+        "bodyTextLength": 11795,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "فجوات تغطية المصادر",
+          "طابور الأولويات",
+          "فجوات الصور النشطة",
+          "أضعف المدن",
+          "أضعف الفئات",
+          "ملف البيانات"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "table",
+            "className": "",
+            "text": "الفعاليةالمدينةالمصدرالسببالإجراءاحتياطات الأمان عند استخدام مبيدات آفات الصحة ا",
+            "width": 780
+          },
+          {
+            "tag": "thead",
+            "className": "",
+            "text": "الفعاليةالمدينةالمصدرالسببالإجراء",
+            "width": 780
+          },
+          {
+            "tag": "tr",
+            "className": "",
+            "text": "الفعاليةالمدينةالمصدرالسببالإجراء",
+            "width": 780
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "المصدر",
+            "width": 353
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "السبب",
+            "width": 95
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "الإجراء",
+            "width": 96
+          },
+          {
+            "tag": "tbody",
+            "className": "",
+            "text": "احتياطات الأمان عند استخدام مبيدات آفات الصحة العامةعن بعدSaudi Food and Drug Au",
+            "width": 780
+          },
+          {
+            "tag": "tr",
+            "className": "",
+            "text": "احتياطات الأمان عند استخدام مبيدات آفات الصحة العامةعن بعدSaudi Food and Drug Au",
+            "width": 780
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 17383
+        }
+      }
+    },
+    {
+      "page": "candidates",
+      "path": "/candidates.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/candidates-desktop.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "EventLive | مرشحو المصادر",
+        "h1": "مرشحو المصادر",
+        "bodyTextLength": 129015,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "مرشحو المصادر",
+          "قاعدة التشغيل",
+          "طابور المراجعة",
+          "Skill Development Initiative",
+          "SITAR",
+          "The Architecture and Design Café",
+          "Jusoor Program",
+          "Urban transformation Initiative"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 42482
+        }
+      }
+    },
+    {
+      "page": "candidates",
+      "path": "/candidates.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/candidates-mobile.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "EventLive | مرشحو المصادر",
+        "h1": "مرشحو المصادر",
+        "bodyTextLength": 128962,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "مرشحو المصادر",
+          "قاعدة التشغيل",
+          "طابور المراجعة",
+          "Skill Development Initiative",
+          "SITAR",
+          "The Architecture and Design Café",
+          "Jusoor Program",
+          "Urban transformation Initiative"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "هذا الأسبوع",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعالياتي",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "التحديثات الحية",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "مركز الثقة",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "للمنظمين",
+            "width": 74
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 126661
+        }
+      }
+    },
+    {
+      "page": "resolver",
+      "path": "/resolver.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/resolver-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "EventLive | المطابقة الرسمية",
+        "h1": "المطابقة الرسمية",
+        "bodyTextLength": 5119,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "المطابقة الرسمية",
+          "قاعدة المطابقة",
+          "مهام التحويل للمصدر الرسمي",
+          "Esports World Cup",
+          "Dubai Property Expo in Al Khobar",
+          "Global Proptech Summit 2026",
+          "Smart Data & AI Summit",
+          "Riyadh Social and Language Exchange (Make New Friends) ✨"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 2426
+        }
+      }
+    },
+    {
+      "page": "resolver",
+      "path": "/resolver.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/resolver-mobile.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "EventLive | المطابقة الرسمية",
+        "h1": "المطابقة الرسمية",
+        "bodyTextLength": 5066,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 2,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "المطابقة الرسمية",
+          "قاعدة المطابقة",
+          "مهام التحويل للمصدر الرسمي",
+          "Esports World Cup",
+          "Dubai Property Expo in Al Khobar",
+          "Global Proptech Summit 2026",
+          "Smart Data & AI Summit",
+          "Riyadh Social and Language Exchange (Make New Friends) ✨"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "هذا الأسبوع",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعالياتي",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "التحديثات الحية",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "مركز الثقة",
+            "width": 74
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "للمنظمين",
+            "width": 74
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 6171
+        }
+      }
+    },
+    {
+      "page": "regions",
+      "path": "/regions.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/regions-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "تغطية مناطق المملكة | EventLive",
+        "h1": "تغطية مناطق المملكة",
+        "bodyTextLength": 3391,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "تغطية مناطق المملكة",
+          "طابور المناطق",
+          "كل المناطق",
+          "ملف البيانات"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 3781
+        }
+      }
+    },
+    {
+      "page": "regions",
+      "path": "/regions.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/regions-mobile.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "تغطية مناطق المملكة | EventLive",
+        "h1": "تغطية مناطق المملكة",
+        "bodyTextLength": 3299,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "تغطية مناطق المملكة",
+          "طابور المناطق",
+          "كل المناطق",
+          "ملف البيانات"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "table",
+            "className": "",
+            "text": "المنطقةالكلنشطةمنتهيةجداول حيةصورأغلفةالدرجةالإجراءمنطقة الجوفgap0000003المصادر ",
+            "width": 780
+          },
+          {
+            "tag": "thead",
+            "className": "",
+            "text": "المنطقةالكلنشطةمنتهيةجداول حيةصورأغلفةالدرجةالإجراء",
+            "width": 780
+          },
+          {
+            "tag": "tr",
+            "className": "",
+            "text": "المنطقةالكلنشطةمنتهيةجداول حيةصورأغلفةالدرجةالإجراء",
+            "width": 780
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "صور",
+            "width": 51
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "أغلفة",
+            "width": 60
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "الدرجة",
+            "width": 67
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "الإجراء",
+            "width": 241
+          },
+          {
+            "tag": "tbody",
+            "className": "",
+            "text": "منطقة الجوفgap0000003المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط ",
+            "width": 780
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 5208
+        }
+      }
+    },
+    {
+      "page": "readiness",
+      "path": "/readiness.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/readiness-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "جاهزية التشغيل | EventLive",
+        "h1": "جاهزية التشغيل",
+        "bodyTextLength": 5061,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "جاهزية التشغيل",
+          "جاهزة للزوار",
+          "نوافذ حضور",
+          "نوافذ أساسية",
+          "جاهزة للتفعيل الآن",
+          "تحتاج مصدرًا",
+          "تحتاج اعتمادًا",
+          "تحتاج برنامجًا"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 4543
+        }
+      }
+    },
+    {
+      "page": "readiness",
+      "path": "/readiness.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/readiness-mobile.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "جاهزية التشغيل | EventLive",
+        "h1": "جاهزية التشغيل",
+        "bodyTextLength": 4969,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "جاهزية التشغيل",
+          "جاهزة للزوار",
+          "نوافذ حضور",
+          "نوافذ أساسية",
+          "جاهزة للتفعيل الآن",
+          "تحتاج مصدرًا",
+          "تحتاج اعتمادًا",
+          "تحتاج برنامجًا"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "table",
+            "className": "",
+            "text": "الفعاليةالحالةالثقةالجلساتالإجراءمتطلبات الاستخدام الآمن للأجهزة والمستلزمات الط",
+            "width": 780
+          },
+          {
+            "tag": "thead",
+            "className": "",
+            "text": "الفعاليةالحالةالثقةالجلساتالإجراء",
+            "width": 780
+          },
+          {
+            "tag": "tr",
+            "className": "",
+            "text": "الفعاليةالحالةالثقةالجلساتالإجراء",
+            "width": 780
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "الفعالية",
+            "width": 468
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "الحالة",
+            "width": 76
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "الثقة",
+            "width": 55
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "الجلسات",
+            "width": 82
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "الإجراء",
+            "width": 99
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 5883
+        }
+      }
+    },
+    {
+      "page": "trust",
+      "path": "/trust.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/trust-desktop.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "مركز الثقة | EventLive",
+        "h1": "مركز الثقة",
+        "bodyTextLength": 4973,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "مركز الثقة",
+          "منشورة أو مراجعة",
+          "جداول حية",
+          "نوافذ حضور",
+          "فجوات دليل",
+          "أعلى الفعاليات ثقة",
+          "ملف البيانات"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 5430
+        }
+      }
+    },
+    {
+      "page": "trust",
+      "path": "/trust.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/trust-mobile.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "مركز الثقة | EventLive",
+        "h1": "مركز الثقة",
+        "bodyTextLength": 4881,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 0,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "مركز الثقة",
+          "منشورة أو مراجعة",
+          "جداول حية",
+          "نوافذ حضور",
+          "فجوات دليل",
+          "أعلى الفعاليات ثقة",
+          "ملف البيانات"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [
+          {
+            "tag": "table",
+            "className": "",
+            "text": "الفعاليةالثقةالمصدرالاعتمادفجوات الدليل25th WPC Petrolium Congressالرياض100ثقة ع",
+            "width": 780
+          },
+          {
+            "tag": "thead",
+            "className": "",
+            "text": "الفعاليةالثقةالمصدرالاعتمادفجوات الدليل",
+            "width": 780
+          },
+          {
+            "tag": "tr",
+            "className": "",
+            "text": "الفعاليةالثقةالمصدرالاعتمادفجوات الدليل",
+            "width": 780
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "الثقة",
+            "width": 66
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "المصدر",
+            "width": 167
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "الاعتماد",
+            "width": 90
+          },
+          {
+            "tag": "th",
+            "className": "",
+            "text": "فجوات الدليل",
+            "width": 91
+          },
+          {
+            "tag": "tbody",
+            "className": "",
+            "text": "25th WPC Petrolium Congressالرياض100ثقة عاليةRFECC What's Onتمت المراجعةلا توجد ",
+            "width": 780
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 6242
+        }
+      }
+    },
+    {
+      "page": "riyadh-city",
+      "path": "/cities/riyadh.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/riyadh-city-desktop.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "فعاليات الرياض | EventLive",
+        "h1": "فعاليات الرياض",
+        "bodyTextLength": 14723,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 3,
+        "visibleImages": 18,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "فعاليات الرياض",
+          "تابع فعاليات الرياض",
+          "Poppy Playtime",
+          "Poppy Playtime",
+          "Riyadh Season: BLVD City",
+          "The Groves",
+          "Immersive Experience: Flying Over Saudi",
+          "Arabic Language Exhibition 28"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 8652
+        }
+      }
+    },
+    {
+      "page": "riyadh-city",
+      "path": "/cities/riyadh.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/riyadh-city-mobile.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "فعاليات الرياض | EventLive",
+        "h1": "فعاليات الرياض",
+        "bodyTextLength": 14631,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 3,
+        "visibleImages": 18,
+        "brokenImages": [],
+        "pendingImages": 8,
+        "headings": [
+          "فعاليات الرياض",
+          "تابع فعاليات الرياض",
+          "Poppy Playtime",
+          "Poppy Playtime",
+          "Riyadh Season: BLVD City",
+          "The Groves",
+          "Immersive Experience: Flying Over Saudi",
+          "Arabic Language Exhibition 28"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 18357
+        }
+      }
+    },
+    {
+      "page": "technology-category",
+      "path": "/categories/technology-training.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/technology-category-desktop.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "تدريب تقني | EventLive",
+        "h1": "تدريب تقني",
+        "bodyTextLength": 8276,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 3,
+        "visibleImages": 18,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "تدريب تقني",
+          "تابع تدريب تقني",
+          "Misk Local Traineeship Program",
+          "Misk Local Traineeship Program",
+          "لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)",
+          "لقاءات مراكز دعم المنشآت",
+          "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
+          "أسبوع العقار والمقاولات 12- 16 يوليو 2026م"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 5588
+        }
+      }
+    },
+    {
+      "page": "technology-category",
+      "path": "/categories/technology-training.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/technology-category-mobile.png",
+      "screenshot_mode": "viewport",
+      "metrics": {
+        "title": "تدريب تقني | EventLive",
+        "h1": "تدريب تقني",
+        "bodyTextLength": 8184,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 3,
+        "visibleImages": 18,
+        "brokenImages": [],
+        "pendingImages": 6,
+        "headings": [
+          "تدريب تقني",
+          "تابع تدريب تقني",
+          "Misk Local Traineeship Program",
+          "Misk Local Traineeship Program",
+          "لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)",
+          "لقاءات مراكز دعم المنشآت",
+          "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
+          "أسبوع العقار والمقاولات 12- 16 يوليو 2026م"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 14464
+        }
+      }
+    },
+    {
+      "page": "demo-event",
+      "path": "/events/demo-event.html",
+      "viewport": "desktop",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/demo-event-desktop.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "ملتقى التحول الرقمي في القطاع الحكومي 2026 | EventLive",
+        "h1": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+        "bodyTextLength": 1473,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 1,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+          "الجدول الحي"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 1366,
+          "height": 900,
+          "scrollWidth": 1366,
+          "scrollHeight": 1969
+        }
+      }
+    },
+    {
+      "page": "demo-event",
+      "path": "/events/demo-event.html",
+      "viewport": "mobile",
+      "ok": true,
+      "errors": [],
+      "screenshot": "output/playwright/visual-sweep/demo-event-mobile.png",
+      "screenshot_mode": "full-page",
+      "metrics": {
+        "title": "ملتقى التحول الرقمي في القطاع الحكومي 2026 | EventLive",
+        "h1": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+        "bodyTextLength": 1381,
+        "requiredFound": true,
+        "legacyBrandVisible": false,
+        "localPathVisible": false,
+        "hasCanonical": true,
+        "hasDescription": true,
+        "hasManifest": true,
+        "jsonLdBlocks": 4,
+        "visibleImages": 1,
+        "brokenImages": [],
+        "pendingImages": 0,
+        "headings": [
+          "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+          "الجدول الحي"
+        ],
+        "horizontalOverflow": false,
+        "overflowBy": 0,
+        "overflowingNodes": [],
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 2858
+        }
+      }
+    }
+  ]
+}

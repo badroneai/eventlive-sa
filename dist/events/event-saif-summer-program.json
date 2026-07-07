@@ -1,0 +1,121 @@
+{
+  "id": "event-saif-summer-program",
+  "title": "SAIF Summer Program",
+  "summary": "SAIF 2026 is a summer creative program presented by SAMoCA at JAX, offering a diverse range of workshops, film screenings, and interactive activities for children, teenagers, and young audiences. The program features hands-on experiences in ceramics, fashion and tailoring, papermaking, photography, writing, voiceover, and other creative disciplines. Developed in collaboration with cultural and educational partners, SAIF encourages artistic expression, creativity, and cultural discovery through engaging learning experiences. Hosted at SAMoCA at JAX in the JAX District, Diriyah, the program provides an inspiring environment where visitors can explore Saudi creativity, develop new skills, and participate in a vibrant community of art and culture.",
+  "canonical_url": "https://eventme.live/events/event-saif-summer-program.html",
+  "detail_url": "./events/event-saif-summer-program.html",
+  "calendar_url": "./events/event-saif-summer-program.ics",
+  "source_label": "Riyadh City Events",
+  "source_url": "https://riyadh.sa/en/moment/events/item/event/31135",
+  "evidence_url": "https://riyadh.sa/en/moment/events/item/event/31135",
+  "city": "الرياض",
+  "venue": "SAMoCA (Saudi Arabia Museum of Contemporary Art), Jax District, Diriyah",
+  "venue_address": "SAMoCA (Saudi Arabia Museum of Contemporary Art), Jax District, Diriyah",
+  "starts_at": "2026-07-12T17:00:00+03:00",
+  "ends_at": "2026-08-29T21:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/saif-summer-program-f3f95cd64f.jpg",
+  "image_alt": "SAIF Summer Program",
+  "category": "ثقافة وفنون",
+  "category_url": "./categories/culture-arts.html",
+  "audiences": [
+    {
+      "slug": "skilled-trades",
+      "label": "مهاريون وحرفيون"
+    },
+    {
+      "slug": "researchers",
+      "label": "باحثون وأكاديميون"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "SAIF Summer Program",
+    "ثقافة وفنون",
+    "Culture & Community",
+    "برنامج ممتد",
+    "قادمة",
+    "الرياض",
+    "SAMoCA (Saudi Arabia Museum of Contemporary Art), Jax District, Diriyah",
+    "Riyadh City Events",
+    "city events",
+    "culture",
+    "sports",
+    "community",
+    "camps",
+    "tourism",
+    "7332",
+    "9716",
+    "9365",
+    "مهاريون وحرفيون",
+    "باحثون وأكاديميون",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-07-12T17:00:00+03:00",
+      "ends_at": "2026-08-29T21:00:00+03:00",
+      "room": "SAMoCA (Saudi Arabia Museum of Contemporary Art), Jax District, Diriyah",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "SAIF Summer Program",
+    "startDate": "2026-07-12T17:00:00+03:00",
+    "endDate": "2026-08-29T21:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "SAMoCA (Saudi Arabia Museum of Contemporary Art), Jax District, Diriyah",
+      "address": "SAMoCA (Saudi Arabia Museum of Contemporary Art), Jax District, Diriyah"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "SAMoCA "
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/saif-summer-program-f3f95cd64f.jpg"
+    ],
+    "description": "SAIF 2026 is a summer creative program presented by SAMoCA at JAX, offering a diverse range of workshops, film screenings, and interactive activities for children, teenagers, and young audiences. The program features hands-on experiences in ceramics, fashion and tailoring, papermaking, photography, writing, voiceover, and other creative disciplines. Developed in collaboration with cultural and educational partners, SAIF encourages artistic expression, creativity, and cultural discovery through engaging learning experiences. Hosted at SAMoCA at JAX in the JAX District, Diriyah, the program provides an inspiring environment where visitors can explore Saudi creativity, develop new skills, and participate in a vibrant community of art and culture.",
+    "url": "https://eventme.live/events/event-saif-summer-program.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-saif-summer-program.html",
+    "isAccessibleForFree": false,
+    "keywords": "SAIF Summer Program, ثقافة وفنون, Culture & Community, برنامج ممتد, قادمة, الرياض, SAMoCA (Saudi Arabia Museum of Contemporary Art), Jax District, Diriyah, Riyadh City Events, city events, culture, sports, community, camps, tourism, 7332, 9716, 9365, مهاريون وحرفيون, باحثون وأكاديميون, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "مهاريون وحرفيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "باحثون وأكاديميون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://riyadh.sa/en/moment/events/item/event/31135"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://riyadh.sa/en/moment/events/item/event/31135",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

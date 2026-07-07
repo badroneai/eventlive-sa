@@ -25,6 +25,20 @@
         "primary_label": { "type": "string" },
         "support_contact": { "type": "string" },
         "footer_note": { "type": "string" },
+        "venue_address": { "type": "string" },
+        "maps_url": { "type": "string" },
+        "directions_url": { "type": "string" },
+        "parking_note": { "type": "string" },
+        "gate_label": { "type": "string" },
+        "check_in_note": { "type": "string" },
+        "arrival_note": { "type": "string" },
+        "public_transport_note": { "type": "string" },
+        "source_label": { "type": "string" },
+        "approval_status": {
+          "type": "string",
+          "enum": ["draft", "reviewed", "approved", "published"]
+        },
+        "published_by": { "type": "string" },
         "venue": { "type": "string", "minLength": 1 },
         "city": { "type": "string", "minLength": 1 },
         "event_start": { "type": "string", "format": "date-time" },
@@ -81,6 +95,33 @@
             "items": { "type": "string" },
             "default": []
           },
+          "updated_at": { "type": "string", "format": "date-time" }
+        }
+      }
+    },
+    "live_updates": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "level", "title", "message", "updated_at"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "level": {
+            "type": "string",
+            "enum": ["info", "traffic", "delay", "room_change", "cancelled", "reminder"]
+          },
+          "title": { "type": "string", "minLength": 1 },
+          "message": { "type": "string", "minLength": 1 },
+          "session_id": { "type": "string" },
+          "action": {
+            "type": "string",
+            "enum": ["note", "delay", "room_change", "cancelled", "arrival", "reminder"]
+          },
+          "effective_at": { "type": "string", "format": "date-time" },
+          "source_label": { "type": "string" },
+          "verified_by": { "type": "string" },
           "updated_at": { "type": "string", "format": "date-time" }
         }
       }

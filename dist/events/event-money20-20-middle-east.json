@@ -1,0 +1,121 @@
+{
+  "id": "event-money20-20-middle-east",
+  "title": "Money20/20 Middle East",
+  "summary": "Money20/20 Middle East is the region’s definitive fintech event, bringing together over 38,500 visitors, 450+ global brands, 350+ speakers, 400+ investors, and 150+ startups to shape the future of money, finance, and technology. As the most influential gathering in the Middle East, it offers world-class thought leadership, groundbreaking innovations, and high-impact networking that fuels business growth and positions Saudi Arabia at the heart of the global fintech revolution. Book Now",
+  "canonical_url": "https://eventme.live/events/event-money20-20-middle-east.html",
+  "detail_url": "./events/event-money20-20-middle-east.html",
+  "calendar_url": "./events/event-money20-20-middle-east.ics",
+  "source_label": "Riyadh City Events",
+  "source_url": "https://riyadh.sa/en/moment/events/item/event/29339",
+  "evidence_url": "https://riyadh.sa/en/moment/events/item/event/29339",
+  "city": "الرياض",
+  "venue": "Riyadh Exhibition & Convention Center - Malham",
+  "venue_address": "Riyadh Exhibition & Convention Center - Malham",
+  "starts_at": "2026-09-14T09:00:00+03:00",
+  "ends_at": "2026-09-16T17:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/money20-20-middle-east-5ccc78e6d8.png",
+  "image_alt": "Money20/20 Middle East",
+  "category": "جامعات ومجتمع",
+  "category_url": "./categories/education-community.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "entrepreneurs",
+      "label": "رواد أعمال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Money20/20 Middle East",
+    "جامعات ومجتمع",
+    "Exhibitions & Conferences",
+    "فعالية",
+    "قادمة",
+    "الرياض",
+    "Riyadh Exhibition & Convention Center - Malham",
+    "Riyadh City Events",
+    "city events",
+    "culture",
+    "sports",
+    "community",
+    "camps",
+    "tourism",
+    "6275",
+    "9336",
+    "9601",
+    "موظفون ومهنيون",
+    "رواد أعمال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-09-14T09:00:00+03:00",
+      "ends_at": "2026-09-16T17:00:00+03:00",
+      "room": "Riyadh Exhibition & Convention Center - Malham",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Money20/20 Middle East",
+    "startDate": "2026-09-14T09:00:00+03:00",
+    "endDate": "2026-09-16T17:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Riyadh Exhibition & Convention Center - Malham",
+      "address": "Riyadh Exhibition & Convention Center - Malham"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Tahaluf Co."
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/money20-20-middle-east-5ccc78e6d8.png"
+    ],
+    "description": "Money20/20 Middle East is the region’s definitive fintech event, bringing together over 38,500 visitors, 450+ global brands, 350+ speakers, 400+ investors, and 150+ startups to shape the future of money, finance, and technology. As the most influential gathering in the Middle East, it offers world-class thought leadership, groundbreaking innovations, and high-impact networking that fuels business growth and positions Saudi Arabia at the heart of the global fintech revolution. Book Now",
+    "url": "https://eventme.live/events/event-money20-20-middle-east.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-money20-20-middle-east.html",
+    "isAccessibleForFree": false,
+    "keywords": "Money20/20 Middle East, جامعات ومجتمع, Exhibitions & Conferences, فعالية, قادمة, الرياض, Riyadh Exhibition & Convention Center - Malham, Riyadh City Events, city events, culture, sports, community, camps, tourism, 6275, 9336, 9601, موظفون ومهنيون, رواد أعمال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رواد أعمال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://riyadh.sa/en/moment/events/item/event/29339"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://riyadh.sa/en/moment/events/item/event/29339",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

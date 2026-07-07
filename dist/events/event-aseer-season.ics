@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Aseer Season | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-aseer-season@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260625T060000Z
+DTEND:20260901T150000Z
+SUMMARY:Aseer Season
+DESCRIPTION:A season filled with culture\, events\, and diverse experiences المصدر الرسمي: Visit Saudi. Aseer Season ضمن رياضة وفعاليات جماهيرية في عسير. تبدأ الفعالية ٢٥‏/٠٦‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٠١‏/٠٩‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Calendar.
+LOCATION:Aseer
+URL:https://eventme.live/events/event-aseer-season.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,123 @@
+{
+  "id": "event-offshore-technology-innovation-technical-conference-expo-offshore-arabia",
+  "title": "Offshore Technology & Innovation Technical Conference & Expo - OFFSHORE ARABIA 2026”",
+  "summary": "فعالية مدرجة في التقويم الرسمي لـ Dhahran Expo. الموعد: ٢٤ أغسطس ٢٠٢٦ في ٠٩:٠٠ ص إلى ٢٦ أغسطس ٢٠٢٦ في ٠٦:٠٠ م. المنظم: Aldrich International L.L.C..",
+  "canonical_url": "https://eventme.live/events/event-offshore-technology-innovation-technical-conference-expo-offshore-arabia.html",
+  "detail_url": "./events/event-offshore-technology-innovation-technical-conference-expo-offshore-arabia.html",
+  "calendar_url": "./events/event-offshore-technology-innovation-technical-conference-expo-offshore-arabia.ics",
+  "source_label": "Dhahran Expo Calendar",
+  "source_url": "https://dhahranexpo.com.sa",
+  "evidence_url": "https://dhahranexpo.com.sa",
+  "city": "الظهران",
+  "venue": "Dhahran Expo",
+  "venue_address": "Dhahran Expo",
+  "starts_at": "2026-08-24T09:00:00+03:00",
+  "ends_at": "2026-08-26T18:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/offshore-technology-innovation-technical-conference-expo-offshore-arab-46911ebc89.jpg",
+  "image_alt": "Offshore Technology & Innovation Technical Conference & Expo - OFFSHORE ARABIA 2026”",
+  "category": "مؤتمرات ومنتديات",
+  "category_url": "./categories/conference-forum.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "skilled-trades",
+      "label": "مهاريون وحرفيون"
+    }
+  ],
+  "keywords": [
+    "Offshore Technology & Innovation Technical Conference & Expo - OFFSHORE ARABIA 2026”",
+    "مؤتمرات ومنتديات",
+    "conference",
+    "فعالية",
+    "قادمة",
+    "الظهران",
+    "Dhahran Expo",
+    "Dhahran Expo Calendar",
+    "exhibitions",
+    "conferences",
+    "trade shows",
+    "venue",
+    "business",
+    "dhahran-expo",
+    "موظفون ومهنيون",
+    "مهاريون وحرفيون"
+  ],
+  "sessions": [
+    {
+      "title": "ساعات الزيارة",
+      "starts_at": "2026-08-24T16:00:00+03:00",
+      "ends_at": "2026-08-24T22:00:00+03:00",
+      "room": "Dhahran Expo",
+      "anchor": "#session-event-offshore-technology-innovation-technical-conference-expo-offshore-arabia-opening-hours-1"
+    },
+    {
+      "title": "ساعات الزيارة",
+      "starts_at": "2026-08-25T16:00:00+03:00",
+      "ends_at": "2026-08-25T22:00:00+03:00",
+      "room": "Dhahran Expo",
+      "anchor": "#session-event-offshore-technology-innovation-technical-conference-expo-offshore-arabia-opening-hours-2"
+    },
+    {
+      "title": "ساعات الزيارة",
+      "starts_at": "2026-08-26T16:00:00+03:00",
+      "ends_at": "2026-08-26T22:00:00+03:00",
+      "room": "Dhahran Expo",
+      "anchor": "#session-event-offshore-technology-innovation-technical-conference-expo-offshore-arabia-opening-hours-3"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Offshore Technology & Innovation Technical Conference & Expo - OFFSHORE ARABIA 2026”",
+    "startDate": "2026-08-24T09:00:00+03:00",
+    "endDate": "2026-08-26T18:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Dhahran Expo",
+      "address": "Dhahran Expo"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Aldrich International L.L.C."
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/offshore-technology-innovation-technical-conference-expo-offshore-arab-46911ebc89.jpg"
+    ],
+    "description": "فعالية مدرجة في التقويم الرسمي لـ Dhahran Expo. الموعد: ٢٤ أغسطس ٢٠٢٦ في ٠٩:٠٠ ص إلى ٢٦ أغسطس ٢٠٢٦ في ٠٦:٠٠ م. المنظم: Aldrich International L.L.C..",
+    "url": "https://eventme.live/events/event-offshore-technology-innovation-technical-conference-expo-offshore-arabia.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-offshore-technology-innovation-technical-conference-expo-offshore-arabia.html",
+    "isAccessibleForFree": false,
+    "keywords": "Offshore Technology & Innovation Technical Conference & Expo - OFFSHORE ARABIA 2026”, مؤتمرات ومنتديات, conference, فعالية, قادمة, الظهران, Dhahran Expo, Dhahran Expo Calendar, exhibitions, conferences, trade shows, venue, business, dhahran-expo, موظفون ومهنيون, مهاريون وحرفيون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مهاريون وحرفيون"
+      }
+    ],
+    "sameAs": [
+      "https://dhahranexpo.com.sa"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://dhahranexpo.com.sa",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

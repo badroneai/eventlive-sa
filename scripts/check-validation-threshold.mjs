@@ -7,7 +7,7 @@ if (!fs.existsSync(p)) {
 }
 
 const txt = fs.readFileSync(p, 'utf8');
-const mRows = txt.match(/Total rows:\s*(\d+)/i);
+const mRows = txt.match(/Total (?:rows|sessions):\s*(\d+)/i);
 const mErr = txt.match(/Total errors:\s*(\d+)/i);
 const mWarn = txt.match(/Total warnings:\s*(\d+)/i);
 

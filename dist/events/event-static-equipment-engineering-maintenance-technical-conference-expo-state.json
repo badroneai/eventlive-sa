@@ -1,0 +1,123 @@
+{
+  "id": "event-static-equipment-engineering-maintenance-technical-conference-expo-state",
+  "title": "Static Equipment Engineering & Maintenance Technical Conference & Expo - STATEC Arabia",
+  "summary": "فعالية مدرجة في التقويم الرسمي لـ Dhahran Expo. الموعد: ٨ سبتمبر ٢٠٢٦ في ٠٩:٠٠ ص إلى ١٠ سبتمبر ٢٠٢٦ في ٠٦:٠٠ م. المنظم: Aldrich Int’l LLC.",
+  "canonical_url": "https://eventme.live/events/event-static-equipment-engineering-maintenance-technical-conference-expo-state.html",
+  "detail_url": "./events/event-static-equipment-engineering-maintenance-technical-conference-expo-state.html",
+  "calendar_url": "./events/event-static-equipment-engineering-maintenance-technical-conference-expo-state.ics",
+  "source_label": "Dhahran Expo Calendar",
+  "source_url": "https://dhahranexpo.com.sa",
+  "evidence_url": "https://dhahranexpo.com.sa",
+  "city": "الظهران",
+  "venue": "Dhahran Expo",
+  "venue_address": "Dhahran Expo",
+  "starts_at": "2026-09-08T09:00:00+03:00",
+  "ends_at": "2026-09-10T18:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/offshore-technology-innovation-technical-conference-expo-offshore-arab-46911ebc89.jpg",
+  "image_alt": "Static Equipment Engineering & Maintenance Technical Conference & Expo - STATEC Arabia",
+  "category": "مؤتمرات ومنتديات",
+  "category_url": "./categories/conference-forum.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "skilled-trades",
+      "label": "مهاريون وحرفيون"
+    }
+  ],
+  "keywords": [
+    "Static Equipment Engineering & Maintenance Technical Conference & Expo - STATEC Arabia",
+    "مؤتمرات ومنتديات",
+    "conference",
+    "فعالية",
+    "قادمة",
+    "الظهران",
+    "Dhahran Expo",
+    "Dhahran Expo Calendar",
+    "exhibitions",
+    "conferences",
+    "trade shows",
+    "venue",
+    "business",
+    "dhahran-expo",
+    "موظفون ومهنيون",
+    "مهاريون وحرفيون"
+  ],
+  "sessions": [
+    {
+      "title": "ساعات الزيارة",
+      "starts_at": "2026-09-08T16:00:00+03:00",
+      "ends_at": "2026-09-08T22:00:00+03:00",
+      "room": "Dhahran Expo",
+      "anchor": "#session-event-static-equipment-engineering-maintenance-technical-conference-expo-state-opening-hours-1"
+    },
+    {
+      "title": "ساعات الزيارة",
+      "starts_at": "2026-09-09T16:00:00+03:00",
+      "ends_at": "2026-09-09T22:00:00+03:00",
+      "room": "Dhahran Expo",
+      "anchor": "#session-event-static-equipment-engineering-maintenance-technical-conference-expo-state-opening-hours-2"
+    },
+    {
+      "title": "ساعات الزيارة",
+      "starts_at": "2026-09-10T16:00:00+03:00",
+      "ends_at": "2026-09-10T22:00:00+03:00",
+      "room": "Dhahran Expo",
+      "anchor": "#session-event-static-equipment-engineering-maintenance-technical-conference-expo-state-opening-hours-3"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Static Equipment Engineering & Maintenance Technical Conference & Expo - STATEC Arabia",
+    "startDate": "2026-09-08T09:00:00+03:00",
+    "endDate": "2026-09-10T18:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Dhahran Expo",
+      "address": "Dhahran Expo"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Aldrich Int’l LLC"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/offshore-technology-innovation-technical-conference-expo-offshore-arab-46911ebc89.jpg"
+    ],
+    "description": "فعالية مدرجة في التقويم الرسمي لـ Dhahran Expo. الموعد: ٨ سبتمبر ٢٠٢٦ في ٠٩:٠٠ ص إلى ١٠ سبتمبر ٢٠٢٦ في ٠٦:٠٠ م. المنظم: Aldrich Int’l LLC.",
+    "url": "https://eventme.live/events/event-static-equipment-engineering-maintenance-technical-conference-expo-state.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-static-equipment-engineering-maintenance-technical-conference-expo-state.html",
+    "isAccessibleForFree": false,
+    "keywords": "Static Equipment Engineering & Maintenance Technical Conference & Expo - STATEC Arabia, مؤتمرات ومنتديات, conference, فعالية, قادمة, الظهران, Dhahran Expo, Dhahran Expo Calendar, exhibitions, conferences, trade shows, venue, business, dhahran-expo, موظفون ومهنيون, مهاريون وحرفيون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مهاريون وحرفيون"
+      }
+    ],
+    "sameAs": [
+      "https://dhahranexpo.com.sa"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://dhahranexpo.com.sa",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

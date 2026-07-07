@@ -1,0 +1,109 @@
+{
+  "id": "event-the-global-water-sustainability-conference-2026",
+  "title": "The Global Water Sustainability Conference 2026",
+  "summary": "With a broader international reach and distinguished participation from around the world, the Innovation Driven Water Sustainability Conference 2026 serves as a… المصدر الرسمي: الهيئة السعودية للمياه.",
+  "canonical_url": "https://eventme.live/events/event-the-global-water-sustainability-conference-2026.html",
+  "detail_url": "./events/event-the-global-water-sustainability-conference-2026.html",
+  "calendar_url": "./events/event-the-global-water-sustainability-conference-2026.ics",
+  "source_label": "Saudi Water Authority Events",
+  "source_url": "https://www.swa.gov.sa/en/events/Event-639166882740331066",
+  "evidence_url": "https://www.swa.gov.sa/en/events/Event-639166882740331066",
+  "city": "جدة",
+  "venue": "Jeddah-The Ritz-Carlton",
+  "venue_address": "Jeddah-The Ritz-Carlton",
+  "starts_at": "2026-12-07T09:00:00+03:00",
+  "ends_at": "2026-12-09T16:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/the-global-water-sustainability-conference-2026-1ff7fb4855.png",
+  "image_alt": "The Global Water Sustainability Conference 2026",
+  "category": "جوائز وتكريم",
+  "category_url": "./categories/awards-ceremonies.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "The Global Water Sustainability Conference 2026",
+    "جوائز وتكريم",
+    "conference",
+    "فعالية",
+    "قادمة",
+    "جدة",
+    "Jeddah-The Ritz-Carlton",
+    "Saudi Water Authority Events",
+    "water",
+    "sustainability",
+    "conferences",
+    "government",
+    "awards",
+    "workshops",
+    "موظفون ومهنيون",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-12-07T09:00:00+03:00",
+      "ends_at": "2026-12-09T16:00:00+03:00",
+      "room": "Jeddah-The Ritz-Carlton",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "The Global Water Sustainability Conference 2026",
+    "startDate": "2026-12-07T09:00:00+03:00",
+    "endDate": "2026-12-09T16:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Jeddah-The Ritz-Carlton",
+      "address": "Jeddah-The Ritz-Carlton"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Saudi Water Authority"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/the-global-water-sustainability-conference-2026-1ff7fb4855.png"
+    ],
+    "description": "With a broader international reach and distinguished participation from around the world, the Innovation Driven Water Sustainability Conference 2026 serves as a… المصدر الرسمي: الهيئة السعودية للمياه.",
+    "url": "https://eventme.live/events/event-the-global-water-sustainability-conference-2026.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-the-global-water-sustainability-conference-2026.html",
+    "isAccessibleForFree": false,
+    "keywords": "The Global Water Sustainability Conference 2026, جوائز وتكريم, conference, فعالية, قادمة, جدة, Jeddah-The Ritz-Carlton, Saudi Water Authority Events, water, sustainability, conferences, government, awards, workshops, موظفون ومهنيون, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.swa.gov.sa/en/events/Event-639166882740331066"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.swa.gov.sa/en/events/Event-639166882740331066",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

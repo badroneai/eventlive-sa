@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:معسكر اختبار البرمجيات والأتمتة | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-معسكر-اختبار-البرمجيات-والأتمتة@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260823T150000Z
+DTEND:20261015T190000Z
+SUMMARY:معسكر اختبار البرمجيات والأتمتة
+DESCRIPTION:يهدف المعسكر إلى تمكين المشاركين من فهم أساسيات اختبار البرمجيات والتعرف على أفضل الممارسات لضمان جودة التطبيقات واستقرارها قبل الإطلاق، كما يغطي المعسكر مفاهيم الاختبار الشامل، مع التركيز على المهارات العملية اللازمة لتنفيذ اختبارات فعا... المصدر الرسمي: أكاديمية طويق.
+LOCATION:الرياض - المقر الرئيسي
+URL:https://eventme.live/events/event-معسكر-اختبار-البرمجيات-والأتمتة.html
+END:VEVENT
+END:VCALENDAR

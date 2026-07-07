@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:معسكر طويق للقطاع الأمني: تطوير البرمجيات | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260802T060000Z
+DTEND:20261008T120000Z
+SUMMARY:معسكر طويق للقطاع الأمني: تطوير البرمجيات
+DESCRIPTION:معسكر مكثف مُصمَّم لتأهيل الخريجين وإعدادهم لسوق العمل التقني عبر ثلاثة مسارات احترافية: اختبار التطبيقات وإصدارها، وDevOps، وتطوير الخدمات الخلفية باستخدام .NET Core، يجمع المعسكر بين الجانب النظري والتطبيق العملي على أحدث التقنيات كـ D... المصدر الرسمي: أكاديمية طويق.
+LOCATION:الرياض - المقر الرئيسي
+URL:https://eventme.live/events/event-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات.html
+END:VEVENT
+END:VCALENDAR

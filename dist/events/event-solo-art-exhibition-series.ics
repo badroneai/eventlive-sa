@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Solo Art Exhibition Series | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-solo-art-exhibition-series@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260506T130000Z
+DTEND:20260801T190000Z
+SUMMARY:Solo Art Exhibition Series
+DESCRIPTION:Misk Art Institute presents the third edition of the Solo Series\, spotlighting established Saudi artists Fouad Mougharbel and Saad Almasari\, whose work has contributed significantly to the Kingdom’s evolving visual culture. Through two individual exhibitions—“Taibah: Remnants and Solace” by Dr. Fouad Mougharbel and “Geometry as Thought” by Saad Almasari—the series offers insight into their artistic journeys and practices\, reflecting their sustained engagement with the local art scene. Together\, the exhibitions highlight diverse perspectives and approaches that contribute to shaping Saudi Arabia’s contemporary artistic identity. Alongside the exhibitions\, a curated public program provides opportunities for deeper engagement: Exhibition Program: May 6: Artist Signing with Dr. Fouad Mougharbel & Saad Almasari | 7 PM May 7: Curator-Led Tour | 6 – 7 PM Artist Talk with Dr. Fouad Mougharbel | 8 – 8:45 PM Artist Talk with Saad Almasari | 9 – 9:45 PM May 9 Workshop: Exhibition Design | 7 – 9 PM May 9 – 11 Intensive Workshop: Pattern Design (Inspired by Saad Almasari) | 7 – 9 PM. May 16: Artist in Focus: Saad Almasari | 7 – 9 PM June 3: Curator-Led Virtual Tour | 7 – 8 PM For the latest updates and announcements\, follow their official X account @MiskArtInst
+LOCATION:Prince Faisal Bin Fahd Arts Hall\, Riyadh
+URL:https://eventme.live/events/event-solo-art-exhibition-series.html
+END:VEVENT
+END:VCALENDAR

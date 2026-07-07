@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Fowg | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-mdlbeast-events-fowg-20240307-5533fae1@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20240307T190000Z
+DTEND:20240307T230000Z
+SUMMARY:Fowg
+DESCRIPTION:فعالية من تقويم MDLBEAST. المدينة: Riyadh. Fowg ضمن ترفيه وعائلات في الرياض. تبدأ الفعالية ٠٧‏/٠٣‏/٢٠٢٤، ١٠:٠٠ م وتنتهي ٠٨‏/٠٣‏/٢٠٢٤، ٢:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: MDLBEAST Events.
+LOCATION:Riyadh
+URL:https://eventme.live/events/ended-mdlbeast-events-fowg-20240307-5533fae1.html
+END:VEVENT
+END:VCALENDAR

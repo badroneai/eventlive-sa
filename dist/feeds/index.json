@@ -1,0 +1,402 @@
+{
+  "generated_at": "2026-07-07T19:38:07.442Z",
+  "platform": "EventLive",
+  "feeds": [
+    {
+      "slug": "all",
+      "title": "كل فعاليات السعودية | EventLive",
+      "description": "تغذية دورية للفعاليات القادمة والجارية في السعودية من EventLive.",
+      "count": 136,
+      "ics_url": "./feeds/all.ics",
+      "rss_url": "./feeds/all.xml",
+      "json_url": "./feeds/all.json"
+    },
+    {
+      "slug": "city-riyadh",
+      "title": "فعاليات الرياض | EventLive",
+      "description": "تغذية فعاليات الرياض القادمة والجارية من EventLive.",
+      "count": 89,
+      "ics_url": "./feeds/city-riyadh.ics",
+      "rss_url": "./feeds/city-riyadh.xml",
+      "json_url": "./feeds/city-riyadh.json"
+    },
+    {
+      "slug": "city-diriyah",
+      "title": "فعاليات الدرعية | EventLive",
+      "description": "تغذية فعاليات الدرعية القادمة والجارية من EventLive.",
+      "count": 1,
+      "ics_url": "./feeds/city-diriyah.ics",
+      "rss_url": "./feeds/city-diriyah.xml",
+      "json_url": "./feeds/city-diriyah.json"
+    },
+    {
+      "slug": "city-aseer",
+      "title": "فعاليات عسير | EventLive",
+      "description": "تغذية فعاليات عسير القادمة والجارية من EventLive.",
+      "count": 1,
+      "ics_url": "./feeds/city-aseer.ics",
+      "rss_url": "./feeds/city-aseer.xml",
+      "json_url": "./feeds/city-aseer.json"
+    },
+    {
+      "slug": "city-saudi-arabia",
+      "title": "فعاليات السعودية | EventLive",
+      "description": "تغذية فعاليات السعودية القادمة والجارية من EventLive.",
+      "count": 4,
+      "ics_url": "./feeds/city-saudi-arabia.ics",
+      "rss_url": "./feeds/city-saudi-arabia.xml",
+      "json_url": "./feeds/city-saudi-arabia.json"
+    },
+    {
+      "slug": "city-jeddah",
+      "title": "فعاليات جدة | EventLive",
+      "description": "تغذية فعاليات جدة القادمة والجارية من EventLive.",
+      "count": 4,
+      "ics_url": "./feeds/city-jeddah.ics",
+      "rss_url": "./feeds/city-jeddah.xml",
+      "json_url": "./feeds/city-jeddah.json"
+    },
+    {
+      "slug": "city-thuwal",
+      "title": "فعاليات ثول | EventLive",
+      "description": "تغذية فعاليات ثول القادمة والجارية من EventLive.",
+      "count": 4,
+      "ics_url": "./feeds/city-thuwal.ics",
+      "rss_url": "./feeds/city-thuwal.xml",
+      "json_url": "./feeds/city-thuwal.json"
+    },
+    {
+      "slug": "city-online",
+      "title": "فعاليات عن بعد | EventLive",
+      "description": "تغذية فعاليات عن بعد القادمة والجارية من EventLive.",
+      "count": 11,
+      "ics_url": "./feeds/city-online.ics",
+      "rss_url": "./feeds/city-online.xml",
+      "json_url": "./feeds/city-online.json"
+    },
+    {
+      "slug": "city-dhahran",
+      "title": "فعاليات الظهران | EventLive",
+      "description": "تغذية فعاليات الظهران القادمة والجارية من EventLive.",
+      "count": 17,
+      "ics_url": "./feeds/city-dhahran.ics",
+      "rss_url": "./feeds/city-dhahran.xml",
+      "json_url": "./feeds/city-dhahran.json"
+    },
+    {
+      "slug": "city-nationwide",
+      "title": "فعاليات على مستوى المملكة | EventLive",
+      "description": "تغذية فعاليات على مستوى المملكة القادمة والجارية من EventLive.",
+      "count": 4,
+      "ics_url": "./feeds/city-nationwide.ics",
+      "rss_url": "./feeds/city-nationwide.xml",
+      "json_url": "./feeds/city-nationwide.json"
+    },
+    {
+      "slug": "city-global",
+      "title": "فعاليات دولي | EventLive",
+      "description": "تغذية فعاليات دولي القادمة والجارية من EventLive.",
+      "count": 1,
+      "ics_url": "./feeds/city-global.ics",
+      "rss_url": "./feeds/city-global.xml",
+      "json_url": "./feeds/city-global.json"
+    },
+    {
+      "slug": "city-buraydah",
+      "title": "فعاليات بريدة | EventLive",
+      "description": "تغذية فعاليات بريدة القادمة والجارية من EventLive.",
+      "count": 0,
+      "ics_url": "./feeds/city-buraydah.ics",
+      "rss_url": "./feeds/city-buraydah.xml",
+      "json_url": "./feeds/city-buraydah.json"
+    },
+    {
+      "slug": "city-jazan",
+      "title": "فعاليات جازان | EventLive",
+      "description": "تغذية فعاليات جازان القادمة والجارية من EventLive.",
+      "count": 0,
+      "ics_url": "./feeds/city-jazan.ics",
+      "rss_url": "./feeds/city-jazan.xml",
+      "json_url": "./feeds/city-jazan.json"
+    },
+    {
+      "slug": "city-makkah",
+      "title": "فعاليات مكة | EventLive",
+      "description": "تغذية فعاليات مكة القادمة والجارية من EventLive.",
+      "count": 0,
+      "ics_url": "./feeds/city-makkah.ics",
+      "rss_url": "./feeds/city-makkah.xml",
+      "json_url": "./feeds/city-makkah.json"
+    },
+    {
+      "slug": "city-alula",
+      "title": "فعاليات العلا | EventLive",
+      "description": "تغذية فعاليات العلا القادمة والجارية من EventLive.",
+      "count": 0,
+      "ics_url": "./feeds/city-alula.ics",
+      "rss_url": "./feeds/city-alula.xml",
+      "json_url": "./feeds/city-alula.json"
+    },
+    {
+      "slug": "city-dammam",
+      "title": "فعاليات الدمام | EventLive",
+      "description": "تغذية فعاليات الدمام القادمة والجارية من EventLive.",
+      "count": 0,
+      "ics_url": "./feeds/city-dammam.ics",
+      "rss_url": "./feeds/city-dammam.xml",
+      "json_url": "./feeds/city-dammam.json"
+    },
+    {
+      "slug": "city-khamis-mushait",
+      "title": "فعاليات خميس مشيط | EventLive",
+      "description": "تغذية فعاليات خميس مشيط القادمة والجارية من EventLive.",
+      "count": 0,
+      "ics_url": "./feeds/city-khamis-mushait.ics",
+      "rss_url": "./feeds/city-khamis-mushait.xml",
+      "json_url": "./feeds/city-khamis-mushait.json"
+    },
+    {
+      "slug": "city-qatif",
+      "title": "فعاليات القطيف | EventLive",
+      "description": "تغذية فعاليات القطيف القادمة والجارية من EventLive.",
+      "count": 0,
+      "ics_url": "./feeds/city-qatif.ics",
+      "rss_url": "./feeds/city-qatif.xml",
+      "json_url": "./feeds/city-qatif.json"
+    },
+    {
+      "slug": "city-abha",
+      "title": "فعاليات أبها | EventLive",
+      "description": "تغذية فعاليات أبها القادمة والجارية من EventLive.",
+      "count": 0,
+      "ics_url": "./feeds/city-abha.ics",
+      "rss_url": "./feeds/city-abha.xml",
+      "json_url": "./feeds/city-abha.json"
+    },
+    {
+      "slug": "city-jubail",
+      "title": "فعاليات الجبيل | EventLive",
+      "description": "تغذية فعاليات الجبيل القادمة والجارية من EventLive.",
+      "count": 0,
+      "ics_url": "./feeds/city-jubail.ics",
+      "rss_url": "./feeds/city-jubail.xml",
+      "json_url": "./feeds/city-jubail.json"
+    },
+    {
+      "slug": "category-entertainment-families",
+      "title": "ترفيه وعائلات | EventLive",
+      "description": "تغذية فعاليات تصنيف ترفيه وعائلات القادمة والجارية من EventLive.",
+      "count": 18,
+      "ics_url": "./feeds/category-entertainment-families.ics",
+      "rss_url": "./feeds/category-entertainment-families.xml",
+      "json_url": "./feeds/category-entertainment-families.json"
+    },
+    {
+      "slug": "category-gaming-esports",
+      "title": "ألعاب ورياضات إلكترونية | EventLive",
+      "description": "تغذية فعاليات تصنيف ألعاب ورياضات إلكترونية القادمة والجارية من EventLive.",
+      "count": 5,
+      "ics_url": "./feeds/category-gaming-esports.ics",
+      "rss_url": "./feeds/category-gaming-esports.xml",
+      "json_url": "./feeds/category-gaming-esports.json"
+    },
+    {
+      "slug": "category-sports",
+      "title": "رياضة وفعاليات جماهيرية | EventLive",
+      "description": "تغذية فعاليات تصنيف رياضة وفعاليات جماهيرية القادمة والجارية من EventLive.",
+      "count": 12,
+      "ics_url": "./feeds/category-sports.ics",
+      "rss_url": "./feeds/category-sports.xml",
+      "json_url": "./feeds/category-sports.json"
+    },
+    {
+      "slug": "category-culture-arts",
+      "title": "ثقافة وفنون | EventLive",
+      "description": "تغذية فعاليات تصنيف ثقافة وفنون القادمة والجارية من EventLive.",
+      "count": 5,
+      "ics_url": "./feeds/category-culture-arts.ics",
+      "rss_url": "./feeds/category-culture-arts.xml",
+      "json_url": "./feeds/category-culture-arts.json"
+    },
+    {
+      "slug": "category-exhibition-trade",
+      "title": "معارض وتجارية | EventLive",
+      "description": "تغذية فعاليات تصنيف معارض وتجارية القادمة والجارية من EventLive.",
+      "count": 22,
+      "ics_url": "./feeds/category-exhibition-trade.ics",
+      "rss_url": "./feeds/category-exhibition-trade.xml",
+      "json_url": "./feeds/category-exhibition-trade.json"
+    },
+    {
+      "slug": "category-technology-training",
+      "title": "تدريب تقني | EventLive",
+      "description": "تغذية فعاليات تصنيف تدريب تقني القادمة والجارية من EventLive.",
+      "count": 13,
+      "ics_url": "./feeds/category-technology-training.ics",
+      "rss_url": "./feeds/category-technology-training.xml",
+      "json_url": "./feeds/category-technology-training.json"
+    },
+    {
+      "slug": "category-science-space",
+      "title": "علوم وفضاء | EventLive",
+      "description": "تغذية فعاليات تصنيف علوم وفضاء القادمة والجارية من EventLive.",
+      "count": 2,
+      "ics_url": "./feeds/category-science-space.ics",
+      "rss_url": "./feeds/category-science-space.xml",
+      "json_url": "./feeds/category-science-space.json"
+    },
+    {
+      "slug": "category-regulatory-workshop",
+      "title": "ورش تنظيمية وصحية | EventLive",
+      "description": "تغذية فعاليات تصنيف ورش تنظيمية وصحية القادمة والجارية من EventLive.",
+      "count": 20,
+      "ics_url": "./feeds/category-regulatory-workshop.ics",
+      "rss_url": "./feeds/category-regulatory-workshop.xml",
+      "json_url": "./feeds/category-regulatory-workshop.json"
+    },
+    {
+      "slug": "category-education-community",
+      "title": "جامعات ومجتمع | EventLive",
+      "description": "تغذية فعاليات تصنيف جامعات ومجتمع القادمة والجارية من EventLive.",
+      "count": 8,
+      "ics_url": "./feeds/category-education-community.ics",
+      "rss_url": "./feeds/category-education-community.xml",
+      "json_url": "./feeds/category-education-community.json"
+    },
+    {
+      "slug": "category-conference-forum",
+      "title": "مؤتمرات ومنتديات | EventLive",
+      "description": "تغذية فعاليات تصنيف مؤتمرات ومنتديات القادمة والجارية من EventLive.",
+      "count": 16,
+      "ics_url": "./feeds/category-conference-forum.ics",
+      "rss_url": "./feeds/category-conference-forum.xml",
+      "json_url": "./feeds/category-conference-forum.json"
+    },
+    {
+      "slug": "category-chamber-event",
+      "title": "فعاليات الغرف التجارية | EventLive",
+      "description": "تغذية فعاليات تصنيف فعاليات الغرف التجارية القادمة والجارية من EventLive.",
+      "count": 7,
+      "ics_url": "./feeds/category-chamber-event.ics",
+      "rss_url": "./feeds/category-chamber-event.xml",
+      "json_url": "./feeds/category-chamber-event.json"
+    },
+    {
+      "slug": "category-awards-ceremonies",
+      "title": "جوائز وتكريم | EventLive",
+      "description": "تغذية فعاليات تصنيف جوائز وتكريم القادمة والجارية من EventLive.",
+      "count": 8,
+      "ics_url": "./feeds/category-awards-ceremonies.ics",
+      "rss_url": "./feeds/category-awards-ceremonies.xml",
+      "json_url": "./feeds/category-awards-ceremonies.json"
+    },
+    {
+      "slug": "for-students",
+      "title": "طلاب وخريجون | EventLive",
+      "description": "تغذية فعاليات مناسبة لفئة طلاب وخريجون من EventLive.",
+      "count": 26,
+      "ics_url": "./feeds/for-students.ics",
+      "rss_url": "./feeds/for-students.xml",
+      "json_url": "./feeds/for-students.json"
+    },
+    {
+      "slug": "for-job-seekers",
+      "title": "باحثون عن عمل | EventLive",
+      "description": "تغذية فعاليات مناسبة لفئة باحثون عن عمل من EventLive.",
+      "count": 9,
+      "ics_url": "./feeds/for-job-seekers.ics",
+      "rss_url": "./feeds/for-job-seekers.xml",
+      "json_url": "./feeds/for-job-seekers.json"
+    },
+    {
+      "slug": "for-professionals",
+      "title": "موظفون ومهنيون | EventLive",
+      "description": "تغذية فعاليات مناسبة لفئة موظفون ومهنيون من EventLive.",
+      "count": 77,
+      "ics_url": "./feeds/for-professionals.ics",
+      "rss_url": "./feeds/for-professionals.xml",
+      "json_url": "./feeds/for-professionals.json"
+    },
+    {
+      "slug": "for-tech",
+      "title": "تقنيون | EventLive",
+      "description": "تغذية فعاليات مناسبة لفئة تقنيون من EventLive.",
+      "count": 43,
+      "ics_url": "./feeds/for-tech.ics",
+      "rss_url": "./feeds/for-tech.xml",
+      "json_url": "./feeds/for-tech.json"
+    },
+    {
+      "slug": "for-skilled-trades",
+      "title": "مهاريون وحرفيون | EventLive",
+      "description": "تغذية فعاليات مناسبة لفئة مهاريون وحرفيون من EventLive.",
+      "count": 31,
+      "ics_url": "./feeds/for-skilled-trades.ics",
+      "rss_url": "./feeds/for-skilled-trades.xml",
+      "json_url": "./feeds/for-skilled-trades.json"
+    },
+    {
+      "slug": "for-entrepreneurs",
+      "title": "رواد أعمال | EventLive",
+      "description": "تغذية فعاليات مناسبة لفئة رواد أعمال من EventLive.",
+      "count": 21,
+      "ics_url": "./feeds/for-entrepreneurs.ics",
+      "rss_url": "./feeds/for-entrepreneurs.xml",
+      "json_url": "./feeds/for-entrepreneurs.json"
+    },
+    {
+      "slug": "for-researchers",
+      "title": "باحثون وأكاديميون | EventLive",
+      "description": "تغذية فعاليات مناسبة لفئة باحثون وأكاديميون من EventLive.",
+      "count": 31,
+      "ics_url": "./feeds/for-researchers.ics",
+      "rss_url": "./feeds/for-researchers.xml",
+      "json_url": "./feeds/for-researchers.json"
+    },
+    {
+      "slug": "for-families",
+      "title": "عائلات وأطفال | EventLive",
+      "description": "تغذية فعاليات مناسبة لفئة عائلات وأطفال من EventLive.",
+      "count": 34,
+      "ics_url": "./feeds/for-families.ics",
+      "rss_url": "./feeds/for-families.xml",
+      "json_url": "./feeds/for-families.json"
+    },
+    {
+      "slug": "for-women",
+      "title": "فعاليات نسائية | EventLive",
+      "description": "تغذية فعاليات مناسبة لفئة فعاليات نسائية من EventLive.",
+      "count": 0,
+      "ics_url": "./feeds/for-women.ics",
+      "rss_url": "./feeds/for-women.xml",
+      "json_url": "./feeds/for-women.json"
+    },
+    {
+      "slug": "for-creatives",
+      "title": "مبدعون وفنون | EventLive",
+      "description": "تغذية فعاليات مناسبة لفئة مبدعون وفنون من EventLive.",
+      "count": 65,
+      "ics_url": "./feeds/for-creatives.ics",
+      "rss_url": "./feeds/for-creatives.xml",
+      "json_url": "./feeds/for-creatives.json"
+    },
+    {
+      "slug": "for-sports",
+      "title": "رياضة ولياقة | EventLive",
+      "description": "تغذية فعاليات مناسبة لفئة رياضة ولياقة من EventLive.",
+      "count": 21,
+      "ics_url": "./feeds/for-sports.ics",
+      "rss_url": "./feeds/for-sports.xml",
+      "json_url": "./feeds/for-sports.json"
+    },
+    {
+      "slug": "for-general",
+      "title": "عموم الجمهور | EventLive",
+      "description": "تغذية فعاليات مناسبة لفئة عموم الجمهور من EventLive.",
+      "count": 0,
+      "ics_url": "./feeds/for-general.ics",
+      "rss_url": "./feeds/for-general.xml",
+      "json_url": "./feeds/for-general.json"
+    }
+  ]
+}

@@ -3,16 +3,73 @@
     "program_title": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
     "organizer_name": "مؤسسة سميرة محمد السلمان للاتصالات وتقنية المعلومات",
     "logo_text": "EL",
-    "organizer_display_name": "EventLive Saudi",
+    "organizer_display_name": "EventLive",
     "primary_label": "البرنامج الرسمي",
-    "support_contact": "info@eventlive.sa",
+    "support_contact": "hello@eventme.live",
     "footer_note": "هذه النسخة مخصصة للمشاركة مع الزوار عبر الرابط المباشر أو رمز QR.",
     "venue": "مركز الرياض الدولي للمؤتمرات",
+    "venue_address": "طريق الملك عبد الله، الرياض",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Riyadh%20International%20Convention%20and%20Exhibition%20Center",
+    "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Riyadh%20International%20Convention%20and%20Exhibition%20Center",
+    "parking_note": "المواقف المتاحة: P2 و P3. يفضل الوصول قبل 45 دقيقة.",
+    "gate_label": "بوابة الدخول: البوابة الشرقية",
+    "check_in_note": "التحقق من التسجيل يبدأ 08:15 ص عند مكتب الاستقبال.",
+    "arrival_note": "افتح الصفحة قبل الوصول لمعرفة الجلسة الحالية والقادمة وأقرب قاعة.",
+    "public_transport_note": "تتوفر منطقة إنزال للسيارات أمام البوابة الشرقية.",
+    "source_label": "ملف البرنامج المعتمد من الجهة المنظمة",
+    "approval_status": "published",
+    "published_by": "EventLive Operations",
     "city": "Riyadh",
-    "event_start": "2026-04-14T09:00:00+03:00",
-    "event_end": "2026-04-14T14:00:00+03:00",
-    "updated_at": "2026-03-09T10:00:00+03:00"
+    "event_start": "2026-07-10T09:00:00+03:00",
+    "event_end": "2026-07-10T14:00:00+03:00",
+    "updated_at": "2026-07-03T05:00:00+03:00"
   },
+  "live_updates": [
+    {
+      "id": "UPD-001",
+      "level": "info",
+      "title": "فتح التسجيل المبكر",
+      "message": "يفتح مكتب التسجيل عند 08:15 ص. جهّز رمز التسجيل قبل الوصول.",
+      "action": "arrival",
+      "source_label": "فريق التنظيم",
+      "verified_by": "EventLive Operations",
+      "updated_at": "2026-07-03T05:00:00+03:00"
+    },
+    {
+      "id": "UPD-002",
+      "level": "traffic",
+      "title": "نصيحة وصول",
+      "message": "استخدم مواقف P2 أو P3، واتجه للبوابة الشرقية.",
+      "action": "arrival",
+      "source_label": "إدارة المكان",
+      "verified_by": "EventLive Operations",
+      "updated_at": "2026-07-03T05:05:00+03:00"
+    },
+    {
+      "id": "UPD-003",
+      "level": "room_change",
+      "title": "تأكيد قاعة ورشة رحلة المستفيد",
+      "message": "تم تأكيد إقامة الورشة في قاعة الورش 1 بدلا من قاعة الورش 2.",
+      "session_id": "SESS-2026-004",
+      "action": "room_change",
+      "effective_at": "2026-07-10T12:15:00+03:00",
+      "source_label": "مشرف القاعات",
+      "verified_by": "EventLive Operations",
+      "updated_at": "2026-07-03T05:20:00+03:00"
+    },
+    {
+      "id": "UPD-004",
+      "level": "delay",
+      "title": "تنبيه وقت الجلسة الرئيسية",
+      "message": "قد يبدأ الدخول للقاعة الكبرى قبل الجلسة الرئيسية بعشر دقائق بسبب كثافة الحضور.",
+      "session_id": "SESS-2026-002",
+      "action": "reminder",
+      "effective_at": "2026-07-10T09:35:00+03:00",
+      "source_label": "فريق المسرح الرئيسي",
+      "verified_by": "EventLive Operations",
+      "updated_at": "2026-07-03T05:25:00+03:00"
+    }
+  ],
   "sessions": [
     {
       "id": "SESS-2026-001",
@@ -23,14 +80,14 @@
       "track": "المسرح الرئيسي",
       "speaker": "أ. نورة السبيعي",
       "moderator": "م. خالد الدوسري",
-      "start_at": "2026-04-14T09:00:00+03:00",
-      "end_at": "2026-04-14T09:30:00+03:00",
+      "start_at": "2026-07-10T09:00:00+03:00",
+      "end_at": "2026-07-10T09:30:00+03:00",
       "room": "القاعة الكبرى",
       "status": "scheduled",
       "language": "ar",
       "audience": "عام",
       "tags": ["افتتاح", "حكومي"],
-      "updated_at": "2026-03-09T10:00:00+03:00"
+      "updated_at": "2026-07-03T05:00:00+03:00"
     },
     {
       "id": "SESS-2026-002",
@@ -41,14 +98,14 @@
       "track": "المسرح الرئيسي",
       "speaker": "د. فيصل الحربي",
       "moderator": "م. خالد الدوسري",
-      "start_at": "2026-04-14T09:45:00+03:00",
-      "end_at": "2026-04-14T10:30:00+03:00",
+      "start_at": "2026-07-10T09:45:00+03:00",
+      "end_at": "2026-07-10T10:30:00+03:00",
       "room": "القاعة الكبرى",
       "status": "scheduled",
       "language": "ar",
       "audience": "قيادات التحول الرقمي",
       "tags": ["خدمات رقمية", "تحول"],
-      "updated_at": "2026-03-09T10:00:00+03:00"
+      "updated_at": "2026-07-03T05:00:00+03:00"
     },
     {
       "id": "SESS-2026-003",
@@ -59,14 +116,14 @@
       "track": "مسار الذكاء الاصطناعي",
       "speaker": "أ. ريم العتيبي، م. تركي القحطاني، د. سارة العبدالله",
       "moderator": "أ. فهد الغانم",
-      "start_at": "2026-04-14T11:00:00+03:00",
-      "end_at": "2026-04-14T11:50:00+03:00",
+      "start_at": "2026-07-10T11:00:00+03:00",
+      "end_at": "2026-07-10T11:50:00+03:00",
       "room": "قاعة 2",
       "status": "scheduled",
       "language": "bilingual",
       "audience": "مختصون وتقنيون",
       "tags": ["ذكاء اصطناعي", "نقاش"],
-      "updated_at": "2026-03-09T10:00:00+03:00"
+      "updated_at": "2026-07-03T05:00:00+03:00"
     },
     {
       "id": "SESS-2026-004",
@@ -77,14 +134,14 @@
       "track": "مسار تجربة المستفيد",
       "speaker": "م. لينا المطيري",
       "moderator": "م. حصة الزهراني",
-      "start_at": "2026-04-14T12:15:00+03:00",
-      "end_at": "2026-04-14T13:15:00+03:00",
+      "start_at": "2026-07-10T12:15:00+03:00",
+      "end_at": "2026-07-10T13:15:00+03:00",
       "room": "قاعة الورش 1",
       "status": "scheduled",
       "language": "ar",
       "audience": "فرق المنتجات والخدمات",
       "tags": ["ورشة", "تجربة المستفيد"],
-      "updated_at": "2026-03-09T10:00:00+03:00"
+      "updated_at": "2026-07-03T05:00:00+03:00"
     },
     {
       "id": "SESS-2026-005",
@@ -95,14 +152,14 @@
       "track": "منطقة المعرض",
       "speaker": "فريق الملتقى",
       "moderator": "فريق التنظيم",
-      "start_at": "2026-04-14T13:15:00+03:00",
-      "end_at": "2026-04-14T14:00:00+03:00",
+      "start_at": "2026-07-10T13:15:00+03:00",
+      "end_at": "2026-07-10T14:00:00+03:00",
       "room": "البهو الرئيسي",
       "status": "scheduled",
       "language": "bilingual",
       "audience": "المشاركون والرعاة",
       "tags": ["تواصل", "شراكات"],
-      "updated_at": "2026-03-09T10:00:00+03:00"
+      "updated_at": "2026-07-03T05:00:00+03:00"
     }
   ]
 }

@@ -1,0 +1,107 @@
+{
+  "id": "ended-mos-events-saudi-tour-20240129-58aa752e",
+  "title": "Saudi Tour",
+  "summary": "Annual professional road bicycle racing stage race Saudi Tour ضمن رياضة وفعاليات جماهيرية في العلا. تبدأ الفعالية ٢٩‏/٠١‏/٢٠٢٤، ٣:٠٠ ص وتنتهي ٢٩‏/٠١‏/٢٠٢٤، ٣:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Ministry of Sport Events.",
+  "canonical_url": "https://eventme.live/events/ended-mos-events-saudi-tour-20240129-58aa752e.html",
+  "detail_url": "./events/ended-mos-events-saudi-tour-20240129-58aa752e.html",
+  "calendar_url": "./events/ended-mos-events-saudi-tour-20240129-58aa752e.ics",
+  "source_label": "Ministry of Sport Events",
+  "source_url": "https://www.mos.gov.sa/en/media/events/2024/10/03/saudi-tour",
+  "evidence_url": "https://www.mos.gov.sa/en/media/events/2024/10/03/saudi-tour",
+  "city": "العلا",
+  "venue": "AlUla",
+  "venue_address": "AlUla",
+  "starts_at": "2024-01-29T03:00:00+03:00",
+  "ends_at": "2024-01-29T03:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-covers/ended-mos-events-saudi-tour-20240129-58aa752e.svg",
+  "image_alt": "غلاف EventLive لفعالية Saudi Tour",
+  "category": "رياضة وفعاليات جماهيرية",
+  "category_url": "./categories/sports.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "sports",
+      "label": "رياضة ولياقة"
+    }
+  ],
+  "keywords": [
+    "Saudi Tour",
+    "رياضة وفعاليات جماهيرية",
+    "sports championship",
+    "فعالية",
+    "منتهية",
+    "العلا",
+    "AlUla",
+    "Ministry of Sport Events",
+    "sports",
+    "championships",
+    "tournaments",
+    "ended-event",
+    "موظفون ومهنيون",
+    "رياضة ولياقة"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2024-01-29T03:00:00+03:00",
+      "ends_at": "2024-01-29T03:00:00+03:00",
+      "room": "AlUla",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Saudi Tour",
+    "startDate": "2024-01-29T03:00:00+03:00",
+    "endDate": "2024-01-29T03:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "AlUla",
+      "address": "AlUla"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Ministry of Sport"
+    },
+    "image": [
+      "https://eventme.live/assets/event-covers/ended-mos-events-saudi-tour-20240129-58aa752e.svg"
+    ],
+    "description": "Annual professional road bicycle racing stage race Saudi Tour ضمن رياضة وفعاليات جماهيرية في العلا. تبدأ الفعالية ٢٩‏/٠١‏/٢٠٢٤، ٣:٠٠ ص وتنتهي ٢٩‏/٠١‏/٢٠٢٤، ٣:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Ministry of Sport Events.",
+    "url": "https://eventme.live/events/ended-mos-events-saudi-tour-20240129-58aa752e.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-mos-events-saudi-tour-20240129-58aa752e.html",
+    "isAccessibleForFree": false,
+    "keywords": "Saudi Tour, رياضة وفعاليات جماهيرية, sports championship, فعالية, منتهية, العلا, AlUla, Ministry of Sport Events, sports, championships, tournaments, ended-event, موظفون ومهنيون, رياضة ولياقة",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رياضة ولياقة"
+      }
+    ],
+    "sameAs": [
+      "https://www.mos.gov.sa/en/media/events/2024/10/03/saudi-tour"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.mos.gov.sa/en/media/events/2024/10/03/saudi-tour",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

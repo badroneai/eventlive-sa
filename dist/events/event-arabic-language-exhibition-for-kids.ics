@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Arabic Language Exhibition for kids | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-arabic-language-exhibition-for-kids@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260101T050000Z
+DTEND:20261231T130000Z
+SUMMARY:Arabic Language Exhibition for kids
+DESCRIPTION:This exhibition is one of its kind in the Arab world to be developed by a language institution\, focuses on developing children's linguistic awareness of the Arabic language. المصدر الرسمي: Visit Saudi.
+LOCATION:Riyadh
+URL:https://eventme.live/events/event-arabic-language-exhibition-for-kids.html
+END:VEVENT
+END:VCALENDAR

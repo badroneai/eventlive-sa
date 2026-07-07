@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:A Thousand and One | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-a-thousand-and-one@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20261028T210000Z
+DTEND:20261029T210000Z
+SUMMARY:A Thousand and One
+DESCRIPTION:And the stories continue... المصدر الرسمي: MDLBEAST. A Thousand and One ضمن ترفيه وعائلات في الرياض. تبدأ الفعالية ٢٩‏/١٠‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ٣٠‏/١٠‏/٢٠٢٦، ١٢:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: MDLBEAST Events.
+LOCATION:Riyadh
+URL:https://eventme.live/events/event-a-thousand-and-one.html
+END:VEVENT
+END:VCALENDAR

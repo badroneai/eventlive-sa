@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Misk Local Traineeship Program | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-misk-local-traineeship-program@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260401T060000Z
+DTEND:20261231T150000Z
+SUMMARY:Misk Local Traineeship Program
+DESCRIPTION:The Misk Local Traineeship Program connects promising Saudi talent with employers\, providing hands-on experience\, career mentorship\, and high-quality opportunities that enhance job readiness and support a confident transition into the workforce. المصدر الرسمي: Misk Hub.
+LOCATION:In-Person
+URL:https://eventme.live/events/event-misk-local-traineeship-program.html
+END:VEVENT
+END:VCALENDAR

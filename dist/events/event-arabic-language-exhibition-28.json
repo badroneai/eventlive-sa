@@ -1,0 +1,111 @@
+{
+  "id": "event-arabic-language-exhibition-28",
+  "title": "Arabic Language Exhibition 28",
+  "summary": "From the heart of Riyadh, we were greeted by the light of a unique, inspiring exhibition exploring the depths of the Arabic language, showcasing its deep roots, mature stages of growth, and vast reach, as well as the pride its people hold in it.The Arabic L... المصدر الرسمي: Visit Saudi.",
+  "canonical_url": "https://eventme.live/events/event-arabic-language-exhibition-28.html",
+  "detail_url": "./events/event-arabic-language-exhibition-28.html",
+  "calendar_url": "./events/event-arabic-language-exhibition-28.ics",
+  "source_label": "Visit Saudi Calendar",
+  "source_url": "https://www.visitsaudi.com/en/riyadh/events/arabic-language-exhibition",
+  "evidence_url": "https://www.visitsaudi.com/en/riyadh/events/arabic-language-exhibition",
+  "city": "الرياض",
+  "venue": "Riyadh",
+  "venue_address": "Riyadh",
+  "starts_at": "2026-01-01T08:00:00+03:00",
+  "ends_at": "2026-12-31T16:00:00+03:00",
+  "status": "ongoing",
+  "status_label": "برنامج جارٍ",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/arabic-language-exhibition-28-da59bfbf64.webp",
+  "image_alt": "Arabic Language Exhibition 28",
+  "category": "ثقافة وفنون",
+  "category_url": "./categories/culture-arts.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Arabic Language Exhibition 28",
+    "ثقافة وفنون",
+    "Culture & History / Families",
+    "برنامج ممتد",
+    "برنامج جارٍ",
+    "الرياض",
+    "Riyadh",
+    "Visit Saudi Calendar",
+    "tourism",
+    "culture",
+    "entertainment",
+    "sports",
+    "sauditourism:audience/all",
+    "Culture & History",
+    "Families",
+    "Friends",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-01-01T08:00:00+03:00",
+      "ends_at": "2026-12-31T16:00:00+03:00",
+      "room": "Riyadh",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Arabic Language Exhibition 28",
+    "startDate": "2026-01-01T08:00:00+03:00",
+    "endDate": "2026-12-31T16:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Riyadh",
+      "address": "Riyadh"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Saudi Tourism Authority"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/arabic-language-exhibition-28-da59bfbf64.webp"
+    ],
+    "description": "From the heart of Riyadh, we were greeted by the light of a unique, inspiring exhibition exploring the depths of the Arabic language, showcasing its deep roots, mature stages of growth, and vast reach, as well as the pride its people hold in it.The Arabic L... المصدر الرسمي: Visit Saudi.",
+    "url": "https://eventme.live/events/event-arabic-language-exhibition-28.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-arabic-language-exhibition-28.html",
+    "isAccessibleForFree": false,
+    "keywords": "Arabic Language Exhibition 28, ثقافة وفنون, Culture & History / Families, برنامج ممتد, برنامج جارٍ, الرياض, Riyadh, Visit Saudi Calendar, tourism, culture, entertainment, sports, sauditourism:audience/all, Culture & History, Families, Friends, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.visitsaudi.com/en/riyadh/events/arabic-language-exhibition"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.visitsaudi.com/en/riyadh/events/arabic-language-exhibition",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

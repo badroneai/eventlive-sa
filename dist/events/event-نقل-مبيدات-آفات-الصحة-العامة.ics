@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:نقل مبيدات آفات الصحة العامة | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-نقل-مبيدات-آفات-الصحة-العامة@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260706T070000Z
+DTEND:20260706T080000Z
+SUMMARY:نقل مبيدات آفات الصحة العامة
+DESCRIPTION:نقل مبيدات آفات الصحة العامة. طريقة الحضور: عن بعد. نوع الورشة: عامة. لغة العرض: العربية انتهى وقت ورشة العمل. المصدر الرسمي: الهيئة العامة للغذاء والدواء.
+LOCATION:عن بعد
+URL:https://eventme.live/events/event-نقل-مبيدات-آفات-الصحة-العامة.html
+END:VEVENT
+END:VCALENDAR

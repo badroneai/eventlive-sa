@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:World Firefighters Challenge | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-world-firefighters-challenge@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20261105T060000Z
+DTEND:20261113T150000Z
+SUMMARY:World Firefighters Challenge
+DESCRIPTION:فعالية مدرجة في التقويم الرسمي لـ Dhahran Expo. الموعد: ٥ نوفمبر ٢٠٢٦ في ٠٩:٠٠ ص إلى ١٣ نوفمبر ٢٠٢٦ في ٠٦:٠٠ م. المنظم: Saudi Aramco.
+LOCATION:Dhahran Expo
+URL:https://eventme.live/events/event-world-firefighters-challenge.html
+END:VEVENT
+END:VCALENDAR

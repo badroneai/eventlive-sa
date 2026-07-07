@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Spanish Super Cup | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-mos-events-spanish-super-cup-20240110-04f0e4b4@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20240110T000000Z
+DTEND:20240110T000000Z
+SUMMARY:Spanish Super Cup
+DESCRIPTION:A super cup tournament in Spanish football involves four teams\; the winners and runners-up of the Copa del Rey and La Liga.
+LOCATION:Riyadh
+URL:https://eventme.live/events/ended-mos-events-spanish-super-cup-20240110-04f0e4b4.html
+END:VEVENT
+END:VCALENDAR

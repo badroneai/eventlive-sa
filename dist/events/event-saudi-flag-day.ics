@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Saudi Flag Day | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-saudi-flag-day@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20270311T050000Z
+DTEND:20270312T010000Z
+SUMMARY:Saudi Flag Day
+DESCRIPTION:A national occasion that reflects the profound meaning of the Kingdom’s waving flag and all that it symbolizes from strength to growth and unity as it stands as… المصدر الرسمي: الهيئة السعودية للمياه.
+LOCATION:Riyadh
+URL:https://eventme.live/events/event-saudi-flag-day.html
+END:VEVENT
+END:VCALENDAR

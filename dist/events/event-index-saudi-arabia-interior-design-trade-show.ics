@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:INDEX Saudi Arabia (Interior Design Trade Show) | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-index-saudi-arabia-interior-design-trade-show@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260906T130000Z
+DTEND:20260908T190000Z
+SUMMARY:INDEX Saudi Arabia (Interior Design Trade Show)
+DESCRIPTION:INDEX Saudi Arabia takes place 6–8 September 2026 at Riyadh Front Exhibition & Conference Center\, bringing together global interior design and fit-out brands with thousands of buyers and decision-makers shaping the Kingdom’s fast-growing design sector. Co-located with Lighting Design & Technology Expo\, the event offers a key meeting point for interior designers\, architects\, developers\, hotel owners and operators\, fit-out specialists\, and distributors to source the latest solutions across furniture\, kitchen and bathroom\, surfaces and flooring\, décor\, textiles\, lighting\, home automation\, building materials\, and architectural hardware—supported by inspiring conferences and expert speakers.
+LOCATION:Riyadh Front Exhibition & Conference Center
+URL:https://eventme.live/events/event-index-saudi-arabia-interior-design-trade-show.html
+END:VEVENT
+END:VCALENDAR

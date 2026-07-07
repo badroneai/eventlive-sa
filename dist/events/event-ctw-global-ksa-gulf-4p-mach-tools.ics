@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:CTW Global KSA\, Gulf 4P & Mach Tools | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-ctw-global-ksa-gulf-4p-mach-tools@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20261214T060000Z
+DTEND:20261217T150000Z
+SUMMARY:CTW Global KSA\, Gulf 4P & Mach Tools
+DESCRIPTION:فعالية مدرجة في التقويم الرسمي لـ Dhahran Expo. الموعد: ١٤ ديسمبر ٢٠٢٦ في ٠٩:٠٠ ص إلى ١٧ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م. المنظم: MIE Events DMCC Branch.
+LOCATION:Dhahran Expo
+URL:https://eventme.live/events/event-ctw-global-ksa-gulf-4p-mach-tools.html
+END:VEVENT
+END:VCALENDAR

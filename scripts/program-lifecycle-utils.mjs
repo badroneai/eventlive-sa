@@ -71,7 +71,7 @@ export function resolvePublicBaseUrl() {
   const configured = process.env.EVENTLIVE_PUBLIC_BASE_URL
     || process.env.EVENTLIVE_DEPLOY_URL
     || process.env.EVENTLIVE_URL
-    || 'https://badroneai.github.io/eventlive-sa/';
+    || 'https://eventme.live/';
 
   if (!configured) return '';
   return configured.endsWith('/') ? configured : `${configured}/`;

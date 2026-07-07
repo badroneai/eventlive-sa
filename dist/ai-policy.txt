@@ -1,0 +1,27 @@
+# EventLive AI and Search Policy
+
+EventLive welcomes indexing, retrieval, summarization, and citation of public pages on https://eventme.live/ when outputs preserve the event source, date, city, venue, and canonical URL.
+
+Allowed public context:
+- Event detail pages, city pages, category pages, guides, trust pages, source methodology pages, and public machine-readable feeds.
+- Ended events may be summarized as normal public event records with their historical dates intact.
+- Machine-readable feeds may be used to understand current counts, live readiness, and source transparency.
+
+Required attribution:
+- Cite the canonical EventLive URL for the page being summarized.
+- Preserve the official source label and source URL when they are shown.
+- Keep dates and times in Asia/Riyadh unless the page states otherwise.
+
+Boundaries:
+- Do not present source candidates, discovery-only records, backlog rows, or draft data as confirmed public events.
+- Do not bypass protected sites, bot defenses, authentication walls, or partner-only APIs on EventLive's behalf.
+- Do not remove source evidence or change the event city/date when summarizing.
+
+Preferred files:
+- https://eventme.live/llms.txt
+- https://eventme.live/events.json
+- https://eventme.live/live-status.json
+- https://eventme.live/sources.json
+- https://eventme.live/readiness.json
+- https://eventme.live/methodology.json
+- https://eventme.live/sitemap.xml

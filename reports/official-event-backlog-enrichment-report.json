@@ -1,0 +1,858 @@
+{
+  "generated_at": "2026-07-07T19:30:39.441Z",
+  "totals": {
+    "targets": 61,
+    "enriched": 61,
+    "fetched": 22,
+    "images": 46,
+    "fetch_failures": 39
+  },
+  "enriched": [
+    {
+      "id": "event-poppy-playtime",
+      "title": "Poppy Playtime",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/29515",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-riyadh-season-blvd-city",
+      "title": "Riyadh Season: BLVD City",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/29387",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-the-groves",
+      "title": "The Groves",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/riyadh/events/the-groves",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-immersive-experience-flying-over-saudi",
+      "title": "Immersive Experience: Flying Over Saudi",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30004",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-horses-and-equestrian-heritage-exhibition",
+      "title": "Horses and Equestrian Heritage Exhibition",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30355",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-solo-art-exhibition-series",
+      "title": "Solo Art Exhibition Series",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30894",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-eishha-live-it-fan-zone-for-fifa-world-cup-2026",
+      "title": "Eishha (Live It) Fan Zone For FIFA World Cup 2026",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31073",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-coca-cola-fan-zone-for-fifa-world-cup-2026",
+      "title": "Coca-Cola Fan Zone For FIFA World Cup 2026",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31040",
+      "fetched": false,
+      "image": false,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026",
+      "title": "Sikkat Al-Atimah (Street Food) Fan Zone – FIFA World Cup 2026",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31094",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-world-cup-2026-fan-zone-at-kimpton-kafd",
+      "title": "World Cup 2026 Fan Zone at Kimpton KAFD",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31091",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-solitaire-fan-zone-fifa-world-cup-2026",
+      "title": "Solitaire Fan Zone – FIFA World Cup 2026",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31089",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-coca-cola-fan-zone-at-jax-district",
+      "title": "Coca-Cola Fan Zone at JAX District",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/diriyah/events/coca-cola-fan-zone",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-ruh-space",
+      "title": "Ruh Space",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31088",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-laysen-fan-zone-fifa-world-cup-2026",
+      "title": "Laysen Fan Zone – FIFA World Cup 2026",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31090",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-summer-camp-at-the-national-museum-summer-wonders",
+      "title": "Summer Camp at the National Museum: Summer Wonders",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31137",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-art-futures-camp-2026-diriyah-art-futures",
+      "title": "Art Futures Camp 2026 – Diriyah Art Futures",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31032",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-لقاءات-مراكز-دعم-المنشآت-شهر-يوليو-2026م-مغلقة",
+      "title": "لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)",
+      "source_label": "Monsha'at All Events",
+      "source_method": "approved-source-row",
+      "source_url": "http://www.monshaat.gov.sa/ar/node/487360",
+      "fetched": false,
+      "image": false,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-لقاءات-مراكز-دعم-المنشآت",
+      "title": "لقاءات مراكز دعم المنشآت",
+      "source_label": "Monsha'at All Events",
+      "source_method": "official-page-meta",
+      "source_url": "http://www.monshaat.gov.sa/ar/node/487334",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-prince-faisal-bin-fahd-art-exhibition-summer-2026",
+      "title": "Prince Faisal Bin Fahd Art Exhibition: Summer 2026",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30758",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-registration-for-international-research-competition-on-non-terrestrial-n",
+      "title": "Registration for International Research Competition on Non-Terrestrial Networks",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31160",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-عمليات-إدارة-الموارد-البشرية",
+      "title": "عمليات إدارة الموارد البشرية",
+      "source_label": "Qassim Chamber Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://tc.qcc.org.sa/events/204",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-esports-world-cup",
+      "title": "Esports World Cup",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30169",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-registration-now-open-for-children-at-the-childhood-studies-center-for-t",
+      "title": "Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kau.edu.sa/en/event/registration-now-open-for-children-at-the-childhood-studies-center-for-t",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-egypt-vs-argentina",
+      "title": "Egypt Vs Argentina",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/517",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone",
+      "title": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/512",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م",
+      "title": "أسبوع العقار والمقاولات 12- 16 يوليو 2026م",
+      "source_label": "Monsha'at All Events",
+      "source_method": "official-page-meta",
+      "source_url": "http://www.monshaat.gov.sa/ar/node/489022",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-comptia-a",
+      "title": "CompTIA A+",
+      "source_label": "Future Skills MCIT Catalogue",
+      "source_method": "official-page-meta",
+      "source_url": "https://futureskills.mcit.gov.sa/ar/group/13039",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-join-us-at-kaust-health-for-respiratory-health-day",
+      "title": "Join us at KAUST Health for Respiratory Health Day",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/515",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-saif-summer-program",
+      "title": "SAIF Summer Program",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31135",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-semi-finals-join-the-celebration-at-the-fifa-fan-zone",
+      "title": "Semi-Finals: Join the Celebration at the FIFA Fan Zone",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/513",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-3",
+      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
+      "source_label": "Tuwaiq Academy Bootcamps and Programs",
+      "source_method": "official-page-meta",
+      "source_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-fifa-world-cup-2026-final-celebrate-footballs-biggest-night-at-the-kaust",
+      "title": "FIFA World Cup 2026 Final: Celebrate Football's Biggest Night at the KAUST Fan Zone",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/514",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-summer-splash-running-event",
+      "title": "Summer Splash Running event",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31163",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-merath-middle-east-museums-heritage-expo",
+      "title": "Merath – Middle East Museums & Heritage Expo",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30502",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-saudi-light-and-sound-sls-expo",
+      "title": "Saudi Light and Sound (SLS) Expo",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/29320",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-saudi-entertainment-and-amusement-expo",
+      "title": "Saudi Entertainment and Amusement Expo",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/29307",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-saudi-warehousing-logistics-expo",
+      "title": "Saudi Warehousing & Logistics Expo",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30083",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-saudi-woodshow",
+      "title": "Saudi WoodShow",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30053",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-معرض-الحرف-والأعمال-اليدوية-2026",
+      "title": "معرض الحرف والأعمال اليدوية 2026",
+      "source_label": "Asharqia Chamber Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=343",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-saudi-food-manufacturing-show",
+      "title": "Saudi Food Manufacturing show",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30155",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-index-saudi-arabia-interior-design-trade-show",
+      "title": "INDEX Saudi Arabia (Interior Design Trade Show)",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30052",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-lighting-design-technology-expo",
+      "title": "Lighting Design & Technology Expo",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30051",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-saudi-wood-expo",
+      "title": "Saudi Wood Expo",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30050",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-saudi-industrial-series",
+      "title": "Saudi Industrial Series",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30049",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-hotel-hospitality-expo",
+      "title": "Hotel & Hospitality Expo",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30026",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-global-forum-on-the-ethics-of-ai",
+      "title": "Global Forum on the Ethics of AI",
+      "source_label": "SDAIA Calendar and Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=122",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-money20-20-middle-east",
+      "title": "Money20/20 Middle East",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/29339",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-riyadh-global-medical-biotechnology-summit",
+      "title": "Riyadh Global Medical Biotechnology Summit",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30261",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-global-ai-summit",
+      "title": "Global AI Summit",
+      "source_label": "SDAIA Calendar and Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=123",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-global-ai-summit-gain",
+      "title": "Global AI Summit (GAIN)",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30168",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-kingdom-business-luxury-travel-congress",
+      "title": "Kingdom Business Luxury Travel Congress",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30022",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-smart-cities-saudi-expo",
+      "title": "Smart Cities Saudi Expo",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30023",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-facility-management-conference-exhibition",
+      "title": "Facility Management Conference & Exhibition",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30021",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-the-saudi-food-show",
+      "title": "The Saudi Food Show",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30094",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-saudi-international-falcons-hunting-exhibition",
+      "title": "Saudi International Falcons & Hunting Exhibition",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/riyadh/events/international-saudi-falcons-hunting-exhibition",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-saudi-falcons-club-auction",
+      "title": "Saudi Falcons Club Auction",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/riyadh/events/saudi-falcons-club-auction",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-future-investment-initiative-fii-10",
+      "title": "Future Investment Initiative (FII 10)",
+      "source_label": "Invest Saudi Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://fii-institute.org/conference/fii-10th-edition",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-web-summit-lisbon-2026",
+      "title": "Web Summit Lisbon 2026",
+      "source_label": "Invest Saudi Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.investsaudi.sa/events",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-cityscape-global-2026",
+      "title": "Cityscape Global 2026",
+      "source_label": "Invest Saudi Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://cityscapeglobal.com/",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "HTTP 403"
+    },
+    {
+      "id": "event-future-frontiers-for-businesses-catalysts-for-growth-in-a-transformation",
+      "title": "Future Frontiers for Businesses: Catalysts for Growth in a Transformational Economy",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kau.edu.sa/en/event/future-frontiers-for-businesses-catalysts-for-growth-in-a-transformation",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-معرض-وظائف-2026",
+      "title": "معرض وظائف 2026",
+      "source_label": "Asharqia Chamber Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=344",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    }
+  ],
+  "failed": [
+    {
+      "id": "event-poppy-playtime",
+      "title": "Poppy Playtime",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/29515",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-riyadh-season-blvd-city",
+      "title": "Riyadh Season: BLVD City",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/29387",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-immersive-experience-flying-over-saudi",
+      "title": "Immersive Experience: Flying Over Saudi",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30004",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-horses-and-equestrian-heritage-exhibition",
+      "title": "Horses and Equestrian Heritage Exhibition",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30355",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-solo-art-exhibition-series",
+      "title": "Solo Art Exhibition Series",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30894",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-eishha-live-it-fan-zone-for-fifa-world-cup-2026",
+      "title": "Eishha (Live It) Fan Zone For FIFA World Cup 2026",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31073",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-coca-cola-fan-zone-for-fifa-world-cup-2026",
+      "title": "Coca-Cola Fan Zone For FIFA World Cup 2026",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31040",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026",
+      "title": "Sikkat Al-Atimah (Street Food) Fan Zone – FIFA World Cup 2026",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31094",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-world-cup-2026-fan-zone-at-kimpton-kafd",
+      "title": "World Cup 2026 Fan Zone at Kimpton KAFD",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31091",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-solitaire-fan-zone-fifa-world-cup-2026",
+      "title": "Solitaire Fan Zone – FIFA World Cup 2026",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31089",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-ruh-space",
+      "title": "Ruh Space",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31088",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-laysen-fan-zone-fifa-world-cup-2026",
+      "title": "Laysen Fan Zone – FIFA World Cup 2026",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31090",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-summer-camp-at-the-national-museum-summer-wonders",
+      "title": "Summer Camp at the National Museum: Summer Wonders",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31137",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-art-futures-camp-2026-diriyah-art-futures",
+      "title": "Art Futures Camp 2026 – Diriyah Art Futures",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31032",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-لقاءات-مراكز-دعم-المنشآت-شهر-يوليو-2026م-مغلقة",
+      "title": "لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)",
+      "source_url": "http://www.monshaat.gov.sa/ar/node/487360",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-prince-faisal-bin-fahd-art-exhibition-summer-2026",
+      "title": "Prince Faisal Bin Fahd Art Exhibition: Summer 2026",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30758",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-registration-for-international-research-competition-on-non-terrestrial-n",
+      "title": "Registration for International Research Competition on Non-Terrestrial Networks",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31160",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-esports-world-cup",
+      "title": "Esports World Cup",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30169",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-saif-summer-program",
+      "title": "SAIF Summer Program",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31135",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-summer-splash-running-event",
+      "title": "Summer Splash Running event",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31163",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-merath-middle-east-museums-heritage-expo",
+      "title": "Merath – Middle East Museums & Heritage Expo",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30502",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-saudi-light-and-sound-sls-expo",
+      "title": "Saudi Light and Sound (SLS) Expo",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/29320",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-saudi-entertainment-and-amusement-expo",
+      "title": "Saudi Entertainment and Amusement Expo",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/29307",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-saudi-warehousing-logistics-expo",
+      "title": "Saudi Warehousing & Logistics Expo",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30083",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-saudi-woodshow",
+      "title": "Saudi WoodShow",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30053",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-saudi-food-manufacturing-show",
+      "title": "Saudi Food Manufacturing show",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30155",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-index-saudi-arabia-interior-design-trade-show",
+      "title": "INDEX Saudi Arabia (Interior Design Trade Show)",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30052",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-lighting-design-technology-expo",
+      "title": "Lighting Design & Technology Expo",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30051",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-saudi-wood-expo",
+      "title": "Saudi Wood Expo",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30050",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-saudi-industrial-series",
+      "title": "Saudi Industrial Series",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30049",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-hotel-hospitality-expo",
+      "title": "Hotel & Hospitality Expo",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30026",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-money20-20-middle-east",
+      "title": "Money20/20 Middle East",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/29339",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-riyadh-global-medical-biotechnology-summit",
+      "title": "Riyadh Global Medical Biotechnology Summit",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30261",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-global-ai-summit-gain",
+      "title": "Global AI Summit (GAIN)",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30168",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-kingdom-business-luxury-travel-congress",
+      "title": "Kingdom Business Luxury Travel Congress",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30022",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-smart-cities-saudi-expo",
+      "title": "Smart Cities Saudi Expo",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30023",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-facility-management-conference-exhibition",
+      "title": "Facility Management Conference & Exhibition",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30021",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-the-saudi-food-show",
+      "title": "The Saudi Food Show",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30094",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-cityscape-global-2026",
+      "title": "Cityscape Global 2026",
+      "source_url": "https://cityscapeglobal.com/",
+      "reason": "HTTP 403"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "ended-saudi-pro-league-fixtures-al-kholood-vs-neom-s-c-20251030-1f85d978",
+  "title": "Al Kholood vs Neom S.C.",
+  "summary": "مباراة رسمية من جدول Saudi Pro League. الملعب: King Abdullah Sport City Stadium. الجولة: 7. Al Kholood vs Neom S.C. ضمن رياضة وفعاليات جماهيرية في بريدة. تبدأ الفعالية ٣٠‏/١٠‏/٢٠٢٥، ٨:٣٠ م وتنتهي ٣٠‏/١٠‏/٢٠٢٥، ١٠:٣٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Saudi Pro League Fixtures.",
+  "canonical_url": "https://eventme.live/events/ended-saudi-pro-league-fixtures-al-kholood-vs-neom-s-c-20251030-1f85d978.html",
+  "detail_url": "./events/ended-saudi-pro-league-fixtures-al-kholood-vs-neom-s-c-20251030-1f85d978.html",
+  "calendar_url": "./events/ended-saudi-pro-league-fixtures-al-kholood-vs-neom-s-c-20251030-1f85d978.ics",
+  "source_label": "Saudi Pro League Fixtures",
+  "source_url": "https://webook.com/ar/events/saudi-pro-league-week-7-al-kholood-vs-neom-spl-9467",
+  "evidence_url": "https://webook.com/ar/events/saudi-pro-league-week-7-al-kholood-vs-neom-spl-9467",
+  "city": "بريدة",
+  "venue": "King Abdullah Sport City Stadium",
+  "venue_address": "King Abdullah Sport City Stadium",
+  "starts_at": "2025-10-30T20:30:00+03:00",
+  "ends_at": "2025-10-30T22:30:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-covers/ended-saudi-pro-league-fixtures-al-kholood-vs-neom-s-c-20251030-1f85d978.svg",
+  "image_alt": "غلاف EventLive لفعالية Al Kholood vs Neom S.C.",
+  "category": "رياضة وفعاليات جماهيرية",
+  "category_url": "./categories/sports.html",
+  "audiences": [
+    {
+      "slug": "sports",
+      "label": "رياضة ولياقة"
+    }
+  ],
+  "keywords": [
+    "Al Kholood vs Neom S.C.",
+    "رياضة وفعاليات جماهيرية",
+    "football match",
+    "فعالية",
+    "منتهية",
+    "بريدة",
+    "King Abdullah Sport City Stadium",
+    "Saudi Pro League Fixtures",
+    "sports",
+    "football",
+    "fixtures",
+    "matches",
+    "2025/26",
+    "ended-event",
+    "رياضة ولياقة"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2025-10-30T20:30:00+03:00",
+      "ends_at": "2025-10-30T22:30:00+03:00",
+      "room": "King Abdullah Sport City Stadium",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Al Kholood vs Neom S.C.",
+    "startDate": "2025-10-30T20:30:00+03:00",
+    "endDate": "2025-10-30T22:30:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "King Abdullah Sport City Stadium",
+      "address": "King Abdullah Sport City Stadium"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Saudi Pro League"
+    },
+    "image": [
+      "https://eventme.live/assets/event-covers/ended-saudi-pro-league-fixtures-al-kholood-vs-neom-s-c-20251030-1f85d978.svg"
+    ],
+    "description": "مباراة رسمية من جدول Saudi Pro League. الملعب: King Abdullah Sport City Stadium. الجولة: 7. Al Kholood vs Neom S.C. ضمن رياضة وفعاليات جماهيرية في بريدة. تبدأ الفعالية ٣٠‏/١٠‏/٢٠٢٥، ٨:٣٠ م وتنتهي ٣٠‏/١٠‏/٢٠٢٥، ١٠:٣٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Saudi Pro League Fixtures.",
+    "url": "https://eventme.live/events/ended-saudi-pro-league-fixtures-al-kholood-vs-neom-s-c-20251030-1f85d978.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-saudi-pro-league-fixtures-al-kholood-vs-neom-s-c-20251030-1f85d978.html",
+    "isAccessibleForFree": false,
+    "keywords": "Al Kholood vs Neom S.C., رياضة وفعاليات جماهيرية, football match, فعالية, منتهية, بريدة, King Abdullah Sport City Stadium, Saudi Pro League Fixtures, sports, football, fixtures, matches, 2025/26, ended-event, رياضة ولياقة",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "رياضة ولياقة"
+      }
+    ],
+    "sameAs": [
+      "https://webook.com/ar/events/saudi-pro-league-week-7-al-kholood-vs-neom-spl-9467"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://webook.com/ar/events/saudi-pro-league-week-7-al-kholood-vs-neom-spl-9467",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

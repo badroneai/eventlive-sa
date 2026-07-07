@@ -1,0 +1,844 @@
+{
+  "generated_at": "2026-07-07T19:24:20.955Z",
+  "events_file": "dist/events.json",
+  "manifest": "data/event_image_cache_manifest.json",
+  "image_dir": "dist/assets/event-images",
+  "totals": {
+    "targets": 151,
+    "cached_total": 161,
+    "fetched": 0,
+    "reused": 145,
+    "failed": 6,
+    "skipped_recent_failures": 6,
+    "remembered_failures": 9
+  },
+  "fetched": [],
+  "reused": [
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-10/1poppy-play-time-en-1759832539-mobile_poster.jpg?itok=v_08Nc5u",
+      "file": "dist/assets/event-images/poppy-playtime-54412e4113.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-10/Page_Cover_1920_x_1280_compressed%20%281%29.jpg?itok=OlSYPNEB",
+      "file": "dist/assets/event-images/riyadh-season-blvd-city-50daa0702a.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/groves-riyadh-25-1?wid=1600&hei=900&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/the-groves-96ba05146f.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/Ticket_Banner_Feature_Event_1280_x_426%20%281%29.jpeg?itok=BUlz6ZWx",
+      "file": "dist/assets/event-images/immersive-experience-flying-over-saudi-19838df22a.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/arabic-language-exhibition-in-riyadh?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/arabic-language-exhibition-28-c5db04ab7b.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/arabic-language-exhibition-for-kids?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/arabic-language-exhibition-for-kids-32b2d59ca2.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/Screenshot%202026-02-26%20133648.png?itok=xy0_45S_",
+      "file": "dist/assets/event-images/horses-and-equestrian-heritage-exhibition-7b885e70c4.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://hub.misk.org.sa/media/pqpeputs/local_550x340-1.png",
+      "file": "dist/assets/event-images/misk-local-traineeship-program-493c69ca91.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-05/WEAAGLms.jpg?itok=npqEN3WI",
+      "file": "dist/assets/event-images/solo-art-exhibition-series-f598b7387f.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-06/DWsAAHYgY.jpg?itok=VMVFP40z",
+      "file": "dist/assets/event-images/eishha-live-it-fan-zone-for-fifa-world-cup-2026-83614e7eb5.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-06/HKhndxnW4AAKcrD_0.jpg?itok=B-oTlk0O",
+      "file": "dist/assets/event-images/sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026-2a9242bf45.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-06/world-cup-2026-fan-zone-at-kimpton-kafd-en-1781102942-mobile_poster%20%281%29.jpg?itok=LQrDAEu0",
+      "file": "dist/assets/event-images/world-cup-2026-fan-zone-at-kimpton-kafd-f0192c76fd.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-06/Solitaire-Riyadh-001-scaled-1.jpeg?itok=48ZD6EkJ",
+      "file": "dist/assets/event-images/solitaire-fan-zone-fifa-world-cup-2026-bd40260df2.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/coca-cola-zone?wid=1600&hei=900&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/coca-cola-fan-zone-at-jax-district-3fe0a1326d.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-06/ce-en-1781185240-mobile_poster.jpg?itok=PlVHUtN4",
+      "file": "dist/assets/event-images/ruh-space-1a44cb6e2d.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-06/Laysen.jpg?itok=ujOgMbWP",
+      "file": "dist/assets/event-images/laysen-fan-zone-fifa-world-cup-2026-6e5e57a76d.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/private-aseeri-home-visit?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/aseer-season-10dd866183.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-06/%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D9%85%D8%B1%D9%83%D8%B2%20%D8%A7%D9%84%D9%85%D9%84%D9%83%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%20%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A7.jpg?itok=phFP2x9m",
+      "file": "dist/assets/event-images/summer-camp-at-the-national-museum-summer-wonders-553f661e8d.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-06/%D9%85%D8%B1%D9%83%D8%B2%20%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9%20%D9%84%D9%81%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84%20%282%29.jpg?itok=MFDuPeWM",
+      "file": "dist/assets/event-images/art-futures-camp-2026-diriyah-art-futures-c45bf701d0.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/GyN7i2hWYAEFU3X.jpeg?itok=of7aIuP0",
+      "file": "dist/assets/event-images/prince-faisal-bin-fahd-art-exhibition-summer-2026-8216b3ee07.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/NTN%202.png?itok=NcFLmn-3",
+      "file": "dist/assets/event-images/registration-for-international-research-competition-on-non-terrestrial-edd16ffe75.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/awj5ovgr.utk.webp",
+      "file": "dist/assets/event-images/معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية-b03efbb17c.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/Screenshot%202025-05-02%20110732.png?itok=Dh5mqTSv",
+      "file": "dist/assets/event-images/esports-world-cup-82c085857f.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
+      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
+      "events": 5
+    },
+    {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-07/4ccd79f559dca331acf56758ce175f5d.jpeg?itok=TQBocw19",
+      "file": "dist/assets/event-images/artificial-intelligence-الذكاء-الاصطناعي-6a65108527.jpg",
+      "events": 9
+    },
+    {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-07/7.jpg?itok=HnrYjVdd",
+      "file": "dist/assets/event-images/دورة-comptia-a-2358801bb0.jpg",
+      "events": 2
+    },
+    {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/2022-06/WhatsApp%20Image%202021-12-08%20at%201.25.06%20PM_3.jpeg",
+      "file": "dist/assets/event-images/aws-security-essential-fb6d62a41b.jpg",
+      "events": 4
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/5elosms3.yqj.jpg",
+      "file": "dist/assets/event-images/معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي-0252685fd5.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-06/Event.jpg?itok=piscDT1i",
+      "file": "dist/assets/event-images/saif-summer-program-f3f95cd64f.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/b1zmfxcj.3ft.webp",
+      "file": "dist/assets/event-images/معسكر-هندسة-الدرونز-التطبيقي-f9a6074a8e.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2022-08/types-of-cloud-computing.png?itok=OuG9_dIR",
+      "file": "dist/assets/event-images/أساسيات-الحوسبة-السحابية-cloud-computing-essentials-d84b80a7c2.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://hub.misk.org.sa/media/ovkjtk3x/artificial-intelligence.png",
+      "file": "dist/assets/event-images/samsung-innovation-campus-ai-program-fc29fbad73.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-06/%D9%88%D8%B1%D8%B4%D8%A9%20%D8%B9%D9%85%D9%84%20-%2029%20%D9%8A%D9%88%D9%86%D9%8A%D9%88%20v3.jpg",
+      "file": "dist/assets/event-images/متطلبات-الاستخدام-الآمن-للأجهزة-والمستلزمات-الطبية-لمراكز-الأسنان-874dbfc9bf.jpg",
+      "events": 3
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/psvxh1jc.vwh.png",
+      "file": "dist/assets/event-images/معسكر-تصميم-وتصنيع-الحلول-الهندسية-a59ff44dd2.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/%282%29%20%281%29.png?itok=BEC7XaXW",
+      "file": "dist/assets/event-images/summer-splash-running-event-b09009b157.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/hym412o4.xrm.webp",
+      "file": "dist/assets/event-images/معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي-1a7ddcd5eb.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/ygp2yueh.re2.webp",
+      "file": "dist/assets/event-images/معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل-77da0c92d7.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/emzgfcby.aiz.webp",
+      "file": "dist/assets/event-images/معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-8b9b4fc037.webp",
+      "events": 3
+    },
+    {
+      "source_url": "https://hub.misk.org.sa/media/eoxb5tmh/ec-founder-leadership-excellence_en.png",
+      "file": "dist/assets/event-images/entrepreneur-leadership-excellence-program-01356b9cea.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/4ilqvrk1.uuc.webp",
+      "file": "dist/assets/event-images/معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات-4ae6ec31c9.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/p5imxiwx.1ub.webp",
+      "file": "dist/assets/event-images/معسكر-طويق-للقطاع-الأمني-البنية-التحتية-19aa89653a.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://hub.misk.org.sa/media/e3pjton2/web.png",
+      "file": "dist/assets/event-images/nonprofit-sector-skills-program-09aadbec00.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/international-falcon-breeders-auction-in-riyadh?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/international-falcon-breeders-auction-40c948e3c1.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/pvg2c15v.k3e.webp",
+      "file": "dist/assets/event-images/معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-8e8c650509.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/4imooj3a.lm4.webp",
+      "file": "dist/assets/event-images/معسكر-الأنظمة-الذاتية-للدرونز-7b0d0348ca.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/1ihbc14l.iun.webp",
+      "file": "dist/assets/event-images/معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine-73a0badd44.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/2ejwj522.h15.webp",
+      "file": "dist/assets/event-images/معسكر-تصميم-تجربة-المستخدم-ux-ui-6d00714e43.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/uxkkl54r.3ng.webp",
+      "file": "dist/assets/event-images/معسكر-طويق-السيبراني-00da1b33f9.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/p33x3n31.rj4.webp",
+      "file": "dist/assets/event-images/معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud-ac3f34923b.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/kkmcxyvk.wju.webp",
+      "file": "dist/assets/event-images/معسكر-اختبار-البرمجيات-والأتمتة-b3b8f8afec.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/4jaiuua2.tw3.webp",
+      "file": "dist/assets/event-images/معسكر-أساسيات-الأمن-السيبراني-bff0c3d784.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://dhahranexpo.com.sa/userfiles/clients/G3_24052026142116.jpg",
+      "file": "dist/assets/event-images/offshore-technology-innovation-technical-conference-expo-offshore-arab-46911ebc89.jpg",
+      "events": 15
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/merath-hero-3.jpg?itok=5PW5QruA",
+      "file": "dist/assets/event-images/merath-middle-east-museums-heritage-expo-eac8f5b86e.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-09/Untitled-1905-x-976-px-1910-x-980-px-ezgif.com-png-to-jpg-converter.jpg?itok=HnFYNsrJ",
+      "file": "dist/assets/event-images/saudi-light-and-sound-sls-expo-c9125a14f8.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-09/Gre_nPTXsAADuqy.jpeg?itok=kvhfR4wV",
+      "file": "dist/assets/event-images/saudi-entertainment-and-amusement-expo-057df33351.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/rpowwrnx.tnw.jpg",
+      "file": "dist/assets/event-images/معسكر-هندسة-تطبيقات-الذكاء-الاصطناعي-التوليدي-باستخدام-النماذج-اللغوية-8d170d1b9c.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/GsCAI5HW8AAJ4iz.jpeg?itok=_Q-EZrLo",
+      "file": "dist/assets/event-images/saudi-warehousing-logistics-expo-a6feb9468b.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/leap-event-in-riyadh?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/leap-2026-00c83b2b08.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/w%204%20%281%29.png?itok=SQmH5o7e",
+      "file": "dist/assets/event-images/saudi-woodshow-eb44c59f8f.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://hub.misk.org.sa/media/duyhwegb/intagram.svg",
+      "file": "dist/assets/event-images/the-innovation-diwan-f02f359761.svg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/GxP8b3NaIAIaKWE.jpeg?itok=4qip45e1",
+      "file": "dist/assets/event-images/saudi-food-manufacturing-show-d1f5873cb5.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://hub.misk.org.sa/media/awcbpjiq/lp-hub-image_en.jpg",
+      "file": "dist/assets/event-images/misk-launchpad-2f5fb7ba18.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/index-saudi-hero-web.jpg?itok=nbS37yWL",
+      "file": "dist/assets/event-images/index-saudi-arabia-interior-design-trade-show-621d6b0d3b.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/1500x500%20%2897%29.jpeg?itok=hcCt8NlN",
+      "file": "dist/assets/event-images/lighting-design-technology-expo-61efabc7e3.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/fibo-arabia?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/fibo-arabia-2026-5a9221f06b.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/Wood%20Show%20m%20%281%29.png?itok=Pc6kv-K1",
+      "file": "dist/assets/event-images/saudi-wood-expo-5d2c61e1bf.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/1%20Gz8L7L6WEAAvJTa.jpeg?itok=9GKGn5Tc",
+      "file": "dist/assets/event-images/saudi-industrial-series-78216d6a2f.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/hospitality%20GzwL_uhXIAE-ADv.jpeg?itok=mEuQUu0G",
+      "file": "dist/assets/event-images/hotel-hospitality-expo-91b835ceaf.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-10/Fin%20Tech%20event.png?itok=9q_7S02l",
+      "file": "dist/assets/event-images/money20-20-middle-east-5ccc78e6d8.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/HAEdfmHXwAA_2WL.jpeg?itok=-azjYn5n",
+      "file": "dist/assets/event-images/riyadh-global-medical-biotechnology-summit-4152a7b9e8.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/GAIN.jpg?itok=pcTvnIls",
+      "file": "dist/assets/event-images/global-ai-summit-gain-b83a8ce082.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/ezgif.com-webp-to-jpg-converter%20%2810%29.jpg?itok=kDt3HQUx",
+      "file": "dist/assets/event-images/kingdom-business-luxury-travel-congress-ef0650a8b2.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/1%20G0_DaNaXUAABPHj.jpeg?itok=mWh47hzQ",
+      "file": "dist/assets/event-images/smart-cities-saudi-expo-f6371708aa.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://swa-cdn.swa.gov.sa/Events/b4fed1f10c414a39a5c49cd9fda6a63d_2026_05_20_07_35_20_655.png",
+      "file": "dist/assets/event-images/global-infrastructure-expo-1935b0ae77.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/Cover-Banner.png?itok=KT7YvNG-",
+      "file": "dist/assets/event-images/facility-management-conference-exhibition-4d4d574dbb.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/saudi-national-day-new?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/saudi-national-day-3f78cd3279.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/F%20Gu_yE-xWIAAqBvu.jpeg?itok=tEBuPjK9",
+      "file": "dist/assets/event-images/the-saudi-food-show-05498df4f1.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/saudi-international-saudi-falcons-hunting-exhibition?wid=1600&hei=900&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/saudi-international-falcons-hunting-exhibition-a3a57b6f46.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/saudi-falcons-auction?wid=1600&hei=900&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/saudi-falcons-club-auction-00c8106902.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/almelwah-racing?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/al-milwah-falcon-race-7e43d044fe.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://fii-institute.org/wp-content/uploads/2026/01/IMG_5042-1024x576.webp",
+      "file": "dist/assets/event-images/future-investment-initiative-fii-10-071b9100b3.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://swa-cdn.swa.gov.sa/Events/a8b384622a1d4281b64b6fd75c82bd5e_2026_05_25_07_44_38_769.jpg",
+      "file": "dist/assets/event-images/world-conference-on-desalination-and-water-reuse-814d26eb30.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://investsaudi.sa//Hero/Hero.webp",
+      "file": "dist/assets/event-images/web-summit-lisbon-2026-b9e840051d.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://investsaudi.sa/backend/wp-content/uploads/2025/12/cityscape-1-1.png",
+      "file": "dist/assets/event-images/cityscape-global-2026-8d09170c9a.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://swa-cdn.swa.gov.sa/Events/de29a012e4fd4f33bae4d98c28e9d8e2_2026_06_04_11_43_33_780.jpg",
+      "file": "dist/assets/event-images/saudi-water-partnerships-company-forum-and-awards-ceremony-5e9d653040.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://swa-cdn.swa.gov.sa/Events/a4ae75a0b5914231a232796f3b7fd47a_2026_06_11_11_02_35_109.png",
+      "file": "dist/assets/event-images/global-prize-for-innovation-in-water-74b654cfd4.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://swa-cdn.swa.gov.sa/Events/a1b3becf671a43428fe8aefe050dcd10_2026_06_10_11_37_54_033.png",
+      "file": "dist/assets/event-images/the-global-water-sustainability-conference-2026-1ff7fb4855.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://swa-cdn.swa.gov.sa/Events/8ca9c4254c334d8d90c85b0c4f5f275c_2026_05_25_08_13_47_482.jpg",
+      "file": "dist/assets/event-images/foundation-day-4fc69bec98.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/founding-day-hero-banner?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/founding-day-ce0ba125be.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://swa-cdn.swa.gov.sa/Events/f168ba04d30d4fec96ca03600421bd99_2026_05_25_08_24_48_478.png",
+      "file": "dist/assets/event-images/saudi-flag-day-4d97254065.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://tc.qcc.org.sa/storage/260/6a4649f72c2c4_%D8%A7%D9%95%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B1%D8%AF-%D8%A7%D9%84%D8%A8%D8%B4%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%86.jpg",
+      "file": "dist/assets/event-images/عمليات-إدارة-الموارد-البشرية-44fab3c9d8.jpg",
+      "events": 2
+    },
+    {
+      "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-06/%D9%88%D8%B1%D8%B4%D8%A9%20%D8%B9%D9%85%D9%84%20-%20%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D9%8A%D9%81%20%D8%A8%D8%A7%D9%84%D8%AA%D8%AD%D8%AF%D9%8A%D8%AB%D8%A7%D8%AA%20%D8%B9%D9%84%D9%89%20%D9%86%D8%B8%D8%A7%D9%85%20%D8%A7%D9%84%D8%A7%D8%AC%D9%87%D8%B2%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%84%D8%B2%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%A9.jpg",
+      "file": "dist/assets/event-images/التعريف-بالتحديثات-على-نظام-الأجهزة-والمستلزمات-الطبية-cce891ebbd.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://firebasestorage.googleapis.com/v0/b/event-jcci/o/media%2FERP-1781778109664-umt7icl2kl.jpeg?alt=media&token=49adfc5e-5641-4e5d-8cea-3a586ee89f8b",
+      "file": "dist/assets/event-images/دور-أنظمة-تخطيط-موارد-المنشآت-erp-في-تطوير-الشركات-ورفع-كفاءة-أعمالها-3102d22858.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://firebasestorage.googleapis.com/v0/b/event-jcci/o/media%2FHeavy_2-1782040812965-mafvkkzp2hs.jpeg?alt=media&token=3c49894a-9218-4604-b6a0-2cac0969d2be",
+      "file": "dist/assets/event-images/التعريف-بمركز-تنظيم-المعدات-الثقيلة-وخدماته-وطرق-الامتثال-له-4ea2370369.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://tc.qcc.org.sa/storage/258/6a2f8ea226a73_%D8%A7%D9%95%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%AA%D8%A7%D9%94%D9%85%D9%8A%D9%86_%D8%A7%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%86.jpg",
+      "file": "dist/assets/event-images/أساسيات-إدارة-التأمين-في-المنشآت-والشركات-a7f66cbfea.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://investsaudi.sa/backend/wp-content/uploads/2025/12/viva-Techno-1-scaled.jpg",
+      "file": "dist/assets/event-images/viva-technology-69f9655709.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://firebasestorage.googleapis.com/v0/b/event-jcci/o/media%2F________________________copy_jpg-1780904503389-wm3jl7fjk6p.jpeg?alt=media&token=ff6d1681-de90-4a24-9a6e-2a9ac4c2e9cc",
+      "file": "dist/assets/event-images/ورشة-عمل-دليل-الإستيراد-من-الصين-d04119574c.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://ssa.gov.sa/media/g33c2ixb/copuosssa2.webp?width=1400&height=788&rnd=134271233838400000",
+      "file": "dist/assets/event-images/participates-in-the-69th-session-of-the-united-nations-committee-on-th-1ffef05233.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://tc.qcc.org.sa/storage/257/6a1d99d4711e8_%D9%85%D9%88%D9%94%D8%B4%D8%B1%D8%A7%D8%AA-kpi_%D8%A7%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%86.jpg",
+      "file": "dist/assets/event-images/إدارة-الأداء-المؤسسي-وتقييم-الموظفين-وفق-مؤشرات-kpi-9fabb57f63.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://firebasestorage.googleapis.com/v0/b/event-jcci/o/media%2Fevent-22-04-2026-1776868526993-hv5i81e4mju.jpeg?alt=media&token=26801ccb-3fae-4f56-a265-a7602f8d87ae",
+      "file": "dist/assets/event-images/حلول-التمويل-للشركات-الصغيرة-والمتوسطة-15ec906ba0.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://ssa.gov.sa/media/ylmbmp4p/artemis-iin.webp?width=1400&height=788&rnd=134271268002030000",
+      "file": "dist/assets/event-images/artemis-ii-mission-launch-side-exhibitions-a6374ca1d6.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://makkahcci.org.sa/web/image/event.event/566/image?unique=3166b23",
+      "file": "dist/assets/event-images/التوسع-الذكي-متى-وكيف-تكبر-مشروعك؟-ac57f60578.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://makkahcci.org.sa/web/image/event.event/565/image?unique=040488a",
+      "file": "dist/assets/event-images/الذكاء-العاطفي-وبناء-علاقات-قوية-في-عالم-الأعمال-6bf9fa9c45.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://makkahcci.org.sa/web/image/event.event/564/image?unique=214108c",
+      "file": "dist/assets/event-images/ذكاء-الأعمال-من-البيانات-إلى-القرار-279afc78f0.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://makkahcci.org.sa/web/image/event.event/563/image?unique=a2d54e5",
+      "file": "dist/assets/event-images/كيف-تبني-البراند-باستخدام-الذكاء-الاصطناعي-a2dcf14e62.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://makkahcci.org.sa/web/image/event.event/562/image?unique=707ccb3",
+      "file": "dist/assets/event-images/الانطلاقة-القانونية-الآمنة-للمشاريع-الريادية-cd375c12f5.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://makkahcci.org.sa/web/image/event.event/560/image?unique=2d571d4",
+      "file": "dist/assets/event-images/كيف-تبرز-حضورك-وتترك-أثرًا-في-عالم-الأعمال-f13bcf47bb.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://investsaudi.sa/backend/wp-content/uploads/2025/12/PINF-1-e1767256510748.png",
+      "file": "dist/assets/event-images/pif-private-sector-forum-2026-cf342ead39.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://makkahcci.org.sa/web/image/event.event/550/image?unique=c53d5c2",
+      "file": "dist/assets/event-images/التخطيط-الاستراتيجي-والتشغيلي-المؤسسي-ab4684d863.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://investsaudi.sa/backend/wp-content/uploads/2026/02/innoprom-logos-01-scaled.png",
+      "file": "dist/assets/event-images/innoprom-saudi-arabia-2026-a277cf02de.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://ssa.gov.sa/media/nznchxiv/gjdr6ftwaae2ebp.webp?width=1400&height=788&rnd=134268726627000000",
+      "file": "dist/assets/event-images/abaad-competition-closing-ceremony-eb7a237680.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://makkahcci.org.sa/web/image/event.event/549/image?unique=6ad1d55",
+      "file": "dist/assets/event-images/دورة-مقدمة-في-الأمن-السيبراني-80f174bf09.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://ssa.gov.sa/media/uh1azmeq/sdcevent26.webp?width=1400&height=788&rnd=133752762668230000",
+      "file": "dist/assets/event-images/space-debris-conference-2026-b117de86b4.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://investsaudi.sa/backend/wp-content/uploads/2026/01/yo2FsHTl_400x400-1_1.jpg",
+      "file": "dist/assets/event-images/real-estate-future-forum-cb1b504d21.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://makkahcci.org.sa/web/image/event.event/548/image?unique=76a30cf",
+      "file": "dist/assets/event-images/كيف-توظفين-الذكاء-الاصطناعي-في-مشروعك-576977d16c.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://makkahcci.org.sa/web/image/event.event/546/image?unique=c40c85a",
+      "file": "dist/assets/event-images/مفاتيح-نجاح-المقابلة-الوظيفية-للعمل-الموسمي-21a37efe7a.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://investsaudi.sa/backend/wp-content/uploads/2025/12/Worl-Eco-Fourm-1.png",
+      "file": "dist/assets/event-images/world-economic-forum-2026-wef-e46a1a7363.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/2022-08/WhatsApp%20Image%202021-12-08%20at%201.25.06%20PM.jpeg",
+      "file": "dist/assets/event-images/أساسيات-الحوسبة-السحابية-cloud-computing-fundamentals-fb1e60a8ef.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/2022-10/WhatsApp%20Image%202021-12-08%20at%201.25.06%20PM_2.jpeg",
+      "file": "dist/assets/event-images/web-development-with-html-css-تطوير-الويب-باستخدام-html-و-css-3f9541506f.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://code.mcit.gov.sa/sites/default/files/styles/3_elements/public/2025-04/phase_one_resized_640x497.jpg?itok=jFOG8JvK",
+      "file": "dist/assets/event-images/multiverse-tech-founders-4th-edition-3efcc9c8f1.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2022-07/machine_learning_746x419.jpg?itok=BLecwk3F",
+      "file": "dist/assets/event-images/deep-learning-التعلم-العميق-bc71cdf51c.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2022-08/Ethical-Problem-of-Artificial-Intelligence-4_0.jpg?itok=kn4NacNT",
+      "file": "dist/assets/event-images/duplicate-of-artificial-intelligence-الذكاء-الاصطناعي-a12d985b4d.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2022-06/power-bi-to-quickbooks-time-integration.png?itok=-Z5CPqSG",
+      "file": "dist/assets/event-images/تصور-البيانات-بأستخدام-power-bi-a572a08dc3.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://code.mcit.gov.sa/sites/default/files/inline-images/digital.png",
+      "file": "dist/assets/event-images/daman-proptech-challenge-2eea8247e5.png",
+      "events": 5
+    },
+    {
+      "source_url": "https://abhacci.org.sa/files/images/126.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-مدخل-إلى-عالم-العطور-بغرفة-أبها-3a08e1ba47.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://storage.googleapis.com/download/storage/v1/b/jcci/o/events%2F1753180672606-ce159605-beb3-4fa2-884b-0ee3abf11c46.jpg?generation=1753180674394863&alt=media",
+      "file": "dist/assets/event-images/ورشة-فن-التعامل-مع-كبار-الشخصيات-والمشاهير-2c606f48d9.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://ssa.gov.sa/media/nipon1fn/15june-1.webp?width=1400&height=788&rnd=134268819563230000",
+      "file": "dist/assets/event-images/the-saudi-arabia-participated-in-the-64th-session-of-the-legal-subcomm-4dcf7050f6.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://code.mcit.gov.sa/sites/default/files/2025-07/WhatsApp%20Image%202025-07-17%20at%2012.33.20%20PM.jpeg",
+      "file": "dist/assets/event-images/code-ai-incubator-18c132425f.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://abhacci.org.sa/Files/Images/workshop12.jpeg",
+      "file": "dist/assets/event-images/غرفة-أبها-تدعو-شباب-عسير-للتطوع-السياحي-لتطوير-القطاع-وتعزيز-العمل-الم-0a95e69d24.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://storage.googleapis.com/download/storage/v1/b/jcci/o/events%2F1753721732576-4fba7b71-0f6d-4ed0-b9ce-145f4626eb9b.jpeg?generation=1753721733625638&alt=media",
+      "file": "dist/assets/event-images/تطوير-الخطة-الاستراتيجية-لجامعة-جازان-وفقا-لاحتياجات-سوق-العمل-a1d5d07e4f.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://ssa.gov.sa/media/sw3oacbp/gjnxh7ow0aauzcw.webp?width=1400&height=788&rnd=134268818555530000",
+      "file": "dist/assets/event-images/leap25-3492dc970d.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://storage.googleapis.com/download/storage/v1/b/jcci/o/events%2F1753721233159-8d180dca-1df7-40da-9e3e-a2c11971904e.jpg?generation=1753721235043820&alt=media",
+      "file": "dist/assets/event-images/معايير-وآلية-التقييم-والسياسات-المنظمة-للاعتماد-الوطني-07ca1c9f5a.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://abhacci.org.sa/Files/Images/IMG_2448.JPG",
+      "file": "dist/assets/event-images/ورشة-عمل-تراخيص-مرافق-الضيافة-والأنشطة-السياحية-والرقابة-في-القطاع-الس-91823408e2.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://storage.googleapis.com/download/storage/v1/b/jcci/o/events%2F1753720797015-7e00cc11-34c6-4b8f-97f9-612237f5964f.jpg?generation=1753720799140125&alt=media",
+      "file": "dist/assets/event-images/ورشة-عمل-الفرص-والتحديات-في-الخدمات-الصناعية-c96b1c9304.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://storage.googleapis.com/download/storage/v1/b/jcci/o/events%2F1753719950219-ce9f1624-0b2d-4eff-9c3c-fe032067bd7f.png?generation=1753719952076458&alt=media",
+      "file": "dist/assets/event-images/ورشة-تعريفية-عن-نظام-الشركات-de87d5fb80.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://abhacci.org.sa/Files/Images/news226m.jpg",
+      "file": "dist/assets/event-images/الدورة-التدريبية-الجماهيرية-انطلاقة-العظماء-66b508b881.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://ssa.gov.sa/media/rfknif0i/ghfos_uxiaagjzn.webp?width=1400&height=788&rnd=134268706261130000",
+      "file": "dist/assets/event-images/astronomy-night-52218fb748.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://abhacci.org.sa/Files/Images/fa3.JPG",
+      "file": "dist/assets/event-images/ورشة-عمل-الرقابة-على-منتجات-التجميل-987f205186.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://ssa.gov.sa/media/hgyloqwa/sdc-event-header.webp?width=1400&height=788&rnd=133504631959500000",
+      "file": "dist/assets/event-images/space-debris-13970bb0ec.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://ssa.gov.sa/media/nvsaqfhz/iac2023.webp?width=1400&height=788&rnd=133431021296230000",
+      "file": "dist/assets/event-images/international-astronautical-conference-iac2023-in-baku-8a09e6fab9.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://ssa.gov.sa/media/upnoas2r/img-20231030-wa0008.webp?width=1400&height=788&rnd=133431128302130000",
+      "file": "dist/assets/event-images/the-kingdom-s-participation-in-the-g20-space-economy-leaders-meeting-2b3e836358.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://ssa.gov.sa/media/mm2heimx/space.webp?width=1400&height=788&rnd=133492254180630000",
+      "file": "dist/assets/event-images/saudi-space-exhibitions-3cf4817744.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://ssa.gov.sa/media/4pyhjdal/iac2022.webp?width=1400&height=788&rnd=133492252309270000",
+      "file": "dist/assets/event-images/international-astronautical-congress-iac2022-in-paris-795d13acaf.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://ssa.gov.sa/media/oahm3dev/general-photos-11.webp?width=1400&height=788&rnd=133548586078130000",
+      "file": "dist/assets/event-images/saudi-space-commission-launches-madar-training-program-9b31794226.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://ssa.gov.sa/media/xixebxn0/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%AF%D9%81%D8%A7%D8%B9.webp?width=1400&height=788&rnd=133492254989230000",
+      "file": "dist/assets/event-images/world-defense-show-2022-8e60dabcc1.webp",
+      "events": 1
+    }
+  ],
+  "rejected_removed": [],
+  "skipped_recent_failures": [
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122220/images-5.jpg",
+      "events": 1,
+      "reason": "certificate has expired",
+      "failure_kind": "tls-certificate",
+      "retry_after": "2026-07-08T18:40:19.841Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/03/12031444/inter-aviation-Arabia-HP-PR-logo.png",
+      "events": 1,
+      "reason": "certificate has expired",
+      "failure_kind": "tls-certificate",
+      "retry_after": "2026-07-08T18:40:19.841Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122706/fibo_arabia_logo_10431.webp",
+      "events": 1,
+      "reason": "certificate has expired",
+      "failure_kind": "tls-certificate",
+      "retry_after": "2026-07-08T18:40:19.841Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122431/WMT-Spotlight-Riyadh-Dates-1200x675-1-1024x576-1.jpg",
+      "events": 1,
+      "reason": "certificate has expired",
+      "failure_kind": "tls-certificate",
+      "retry_after": "2026-07-08T18:40:19.841Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06123740/GqbqdoDWMAAm16R.jpg",
+      "events": 1,
+      "reason": "certificate has expired",
+      "failure_kind": "tls-certificate",
+      "retry_after": "2026-07-08T18:40:19.841Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2025/02/26113050/images-4.png",
+      "events": 1,
+      "reason": "certificate has expired",
+      "failure_kind": "tls-certificate",
+      "retry_after": "2026-07-08T18:40:19.841Z",
+      "skipped": true
+    }
+  ],
+  "failed": [
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122220/images-5.jpg",
+      "events": 1,
+      "reason": "certificate has expired",
+      "failure_kind": "tls-certificate",
+      "retry_after": "2026-07-08T18:40:19.841Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/03/12031444/inter-aviation-Arabia-HP-PR-logo.png",
+      "events": 1,
+      "reason": "certificate has expired",
+      "failure_kind": "tls-certificate",
+      "retry_after": "2026-07-08T18:40:19.841Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122706/fibo_arabia_logo_10431.webp",
+      "events": 1,
+      "reason": "certificate has expired",
+      "failure_kind": "tls-certificate",
+      "retry_after": "2026-07-08T18:40:19.841Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122431/WMT-Spotlight-Riyadh-Dates-1200x675-1-1024x576-1.jpg",
+      "events": 1,
+      "reason": "certificate has expired",
+      "failure_kind": "tls-certificate",
+      "retry_after": "2026-07-08T18:40:19.841Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06123740/GqbqdoDWMAAm16R.jpg",
+      "events": 1,
+      "reason": "certificate has expired",
+      "failure_kind": "tls-certificate",
+      "retry_after": "2026-07-08T18:40:19.841Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2025/02/26113050/images-4.png",
+      "events": 1,
+      "reason": "certificate has expired",
+      "failure_kind": "tls-certificate",
+      "retry_after": "2026-07-08T18:40:19.841Z",
+      "skipped": true
+    }
+  ]
+}

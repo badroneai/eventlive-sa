@@ -1,0 +1,112 @@
+{
+  "id": "event-the-groves",
+  "title": "The Groves",
+  "summary": "The Groves offers a multi-sensory experience that transforms with each season. Every chapter brighter, richer, and more captivating than the last. From immersive dining concepts to live entertainment, art, and nature-inspired design, The Groves Chapter IV unveils new moments of wonder designed to excite, delight, and inspire.",
+  "canonical_url": "https://eventme.live/events/event-the-groves.html",
+  "detail_url": "./events/event-the-groves.html",
+  "calendar_url": "./events/event-the-groves.ics",
+  "source_label": "Visit Saudi Seasons",
+  "source_url": "https://www.visitsaudi.com/en/riyadh/events/the-groves",
+  "evidence_url": "https://www.visitsaudi.com/en/riyadh/events/the-groves",
+  "city": "الرياض",
+  "venue": "Riyadh",
+  "venue_address": "Riyadh",
+  "starts_at": "2025-11-05T16:00:00+03:00",
+  "ends_at": "2026-07-19T02:00:00+03:00",
+  "status": "ongoing",
+  "status_label": "برنامج جارٍ",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/the-groves-96ba05146f.webp",
+  "image_alt": "The Groves",
+  "category": "ترفيه وعائلات",
+  "category_url": "./categories/entertainment-families.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "The Groves",
+    "ترفيه وعائلات",
+    "Entertainment / Families",
+    "برنامج ممتد",
+    "برنامج جارٍ",
+    "الرياض",
+    "Riyadh",
+    "Visit Saudi Seasons",
+    "seasons",
+    "tourism",
+    "culture",
+    "entertainment",
+    "destinations",
+    "Experience Riyadh Season",
+    "riyadh-season",
+    "sauditourism:audience/adults",
+    "Entertainment",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2025-11-05T16:00:00+03:00",
+      "ends_at": "2026-07-19T02:00:00+03:00",
+      "room": "Riyadh",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "The Groves",
+    "startDate": "2025-11-05T16:00:00+03:00",
+    "endDate": "2026-07-19T02:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Riyadh",
+      "address": "Riyadh"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Saudi Tourism Authority"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/the-groves-96ba05146f.webp"
+    ],
+    "description": "The Groves offers a multi-sensory experience that transforms with each season. Every chapter brighter, richer, and more captivating than the last. From immersive dining concepts to live entertainment, art, and nature-inspired design, The Groves Chapter IV unveils new moments of wonder designed to excite, delight, and inspire.",
+    "url": "https://eventme.live/events/event-the-groves.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-the-groves.html",
+    "isAccessibleForFree": false,
+    "keywords": "The Groves, ترفيه وعائلات, Entertainment / Families, برنامج ممتد, برنامج جارٍ, الرياض, Riyadh, Visit Saudi Seasons, seasons, tourism, culture, entertainment, destinations, Experience Riyadh Season, riyadh-season, sauditourism:audience/adults, Entertainment, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.visitsaudi.com/en/riyadh/events/the-groves"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.visitsaudi.com/en/riyadh/events/the-groves",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

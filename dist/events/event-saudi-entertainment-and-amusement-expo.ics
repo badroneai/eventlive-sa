@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Saudi Entertainment and Amusement Expo | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-saudi-entertainment-and-amusement-expo@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260830T120000Z
+DTEND:20260901T180000Z
+SUMMARY:Saudi Entertainment and Amusement Expo
+DESCRIPTION:The Saudi Entertainment and Amusement (SEA) Expo\, running for over 8 years in Riyadh\, is the Kingdom’s premier platform for the global entertainment and attractions industry. Bringing together innovators\, suppliers\, and decision-makers from across the Middle East and Africa\, the expo showcases the latest technologies and solutions shaping the future of leisure and attractions. More than just an exhibition\, SEA Expo offers opportunities to connect with like-minded industry experts\, foster collaboration\, and take businesses to new heights in Saudi Arabia’s rapidly growing entertainment sector. Register Now
+LOCATION:Riyadh Front Exhibition & Conference Center
+URL:https://eventme.live/events/event-saudi-entertainment-and-amusement-expo.html
+END:VEVENT
+END:VCALENDAR

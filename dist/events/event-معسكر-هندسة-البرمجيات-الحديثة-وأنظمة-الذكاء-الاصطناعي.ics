@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:معسكر هندسة البرمجيات الحديثة وأنظمة الذكاء الاصطناعي | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260712T070000Z
+DTEND:20260903T120000Z
+SUMMARY:معسكر هندسة البرمجيات الحديثة وأنظمة الذكاء الاصطناعي
+DESCRIPTION:يهدف معسكر الهندسة إلى إعداد مهندسين قادرين على بناء تطبيقات برمجية متكاملة وتطوير أنظمة AI متقدمة وتشغيلها في بيئات الإنتاج باستخدام أحدث الممارسات الهندسية، يركّز المعسكر على دمج مبادئ Software Engineering مع تقنيات AI الحديثة مثل: LLM... المصدر الرسمي: أكاديمية طويق.
+LOCATION:الرياض - المقر الرئيسي
+URL:https://eventme.live/events/event-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي.html
+END:VEVENT
+END:VCALENDAR

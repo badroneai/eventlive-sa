@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:متطلبات الاستخدام الآمن للأجهزة والمستلزمات الطبية لمراكز الأسنان | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-متطلبات-الاستخدام-الآمن-للأجهزة-والمستلزمات-الطبية-لمراكز-الأسنان@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260715T070000Z
+DTEND:20260715T080000Z
+SUMMARY:متطلبات الاستخدام الآمن للأجهزة والمستلزمات الطبية لمراكز الأسنان
+DESCRIPTION:متطلبات الاستخدام الآمن للأجهزة والمستلزمات الطبية لمراكز الأسنان. طريقة الحضور: عن بعد. نوع الورشة: عامة. لغة العرض: العربية. المصدر الرسمي: الهيئة العامة للغذاء والدواء.
+LOCATION:عن بعد
+URL:https://eventme.live/events/event-متطلبات-الاستخدام-الآمن-للأجهزة-والمستلزمات-الطبية-لمراكز-الأسنان.html
+END:VEVENT
+END:VCALENDAR

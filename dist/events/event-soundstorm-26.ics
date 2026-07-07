@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:SOUNDSTORM 26 | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-soundstorm-26@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20261202T210000Z
+DTEND:20261203T210000Z
+SUMMARY:SOUNDSTORM 26
+DESCRIPTION:Soundstorm ‘26 was one for the books! المصدر الرسمي: MDLBEAST. SOUNDSTORM 26 ضمن ترفيه وعائلات في الرياض. تبدأ الفعالية ٠٣‏/١٢‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ٠٤‏/١٢‏/٢٠٢٦، ١٢:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: MDLBEAST Events.
+LOCATION:Riyadh
+URL:https://eventme.live/events/event-soundstorm-26.html
+END:VEVENT
+END:VCALENDAR

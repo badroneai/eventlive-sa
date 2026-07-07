@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:World Conference on Desalination and Water Reuse | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-world-conference-on-desalination-and-water-reuse@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20261101T050000Z
+DTEND:20261105T010000Z
+SUMMARY:World Conference on Desalination and Water Reuse
+DESCRIPTION:An international specialized conference that discusses the latest technologies and practices in water desalination and reuse\, supporting the Saudi Water Authori… المصدر الرسمي: الهيئة السعودية للمياه.
+LOCATION:Riyadh
+URL:https://eventme.live/events/event-world-conference-on-desalination-and-water-reuse.html
+END:VEVENT
+END:VCALENDAR

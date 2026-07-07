@@ -1,0 +1,100 @@
+{
+  "id": "ended-saudi-pro-league-fixtures-al-hilal-vs-al-okhdood-20250925-c24b04b5",
+  "title": "Al Hilal vs Al Okhdood",
+  "summary": "مباراة رسمية من جدول Saudi Pro League. الملعب: Kingdom Arena. الجولة: 4. Al Hilal vs Al Okhdood ضمن رياضة وفعاليات جماهيرية في الرياض. تبدأ الفعالية ٢٥‏/٠٩‏/٢٠٢٥، ٩:٠٠ م وتنتهي ٢٥‏/٠٩‏/٢٠٢٥، ١١:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Saudi Pro League Fixtures.",
+  "canonical_url": "https://eventme.live/events/ended-saudi-pro-league-fixtures-al-hilal-vs-al-okhdood-20250925-c24b04b5.html",
+  "detail_url": "./events/ended-saudi-pro-league-fixtures-al-hilal-vs-al-okhdood-20250925-c24b04b5.html",
+  "calendar_url": "./events/ended-saudi-pro-league-fixtures-al-hilal-vs-al-okhdood-20250925-c24b04b5.ics",
+  "source_label": "Saudi Pro League Fixtures",
+  "source_url": "https://www.spl.com.sa/en/match/84355",
+  "evidence_url": "https://www.spl.com.sa/en/match/84355",
+  "city": "الرياض",
+  "venue": "Kingdom Arena",
+  "venue_address": "Kingdom Arena",
+  "starts_at": "2025-09-25T21:00:00+03:00",
+  "ends_at": "2025-09-25T23:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-covers/ended-saudi-pro-league-fixtures-al-hilal-vs-al-okhdood-20250925-c24b04b5.svg",
+  "image_alt": "غلاف EventLive لفعالية Al Hilal vs Al Okhdood",
+  "category": "رياضة وفعاليات جماهيرية",
+  "category_url": "./categories/sports.html",
+  "audiences": [
+    {
+      "slug": "sports",
+      "label": "رياضة ولياقة"
+    }
+  ],
+  "keywords": [
+    "Al Hilal vs Al Okhdood",
+    "رياضة وفعاليات جماهيرية",
+    "football match",
+    "فعالية",
+    "منتهية",
+    "الرياض",
+    "Kingdom Arena",
+    "Saudi Pro League Fixtures",
+    "sports",
+    "football",
+    "fixtures",
+    "matches",
+    "2025/26",
+    "ended-event",
+    "رياضة ولياقة"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2025-09-25T21:00:00+03:00",
+      "ends_at": "2025-09-25T23:00:00+03:00",
+      "room": "Kingdom Arena",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Al Hilal vs Al Okhdood",
+    "startDate": "2025-09-25T21:00:00+03:00",
+    "endDate": "2025-09-25T23:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Kingdom Arena",
+      "address": "Kingdom Arena"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Saudi Pro League"
+    },
+    "image": [
+      "https://eventme.live/assets/event-covers/ended-saudi-pro-league-fixtures-al-hilal-vs-al-okhdood-20250925-c24b04b5.svg"
+    ],
+    "description": "مباراة رسمية من جدول Saudi Pro League. الملعب: Kingdom Arena. الجولة: 4. Al Hilal vs Al Okhdood ضمن رياضة وفعاليات جماهيرية في الرياض. تبدأ الفعالية ٢٥‏/٠٩‏/٢٠٢٥، ٩:٠٠ م وتنتهي ٢٥‏/٠٩‏/٢٠٢٥، ١١:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Saudi Pro League Fixtures.",
+    "url": "https://eventme.live/events/ended-saudi-pro-league-fixtures-al-hilal-vs-al-okhdood-20250925-c24b04b5.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-saudi-pro-league-fixtures-al-hilal-vs-al-okhdood-20250925-c24b04b5.html",
+    "isAccessibleForFree": false,
+    "keywords": "Al Hilal vs Al Okhdood, رياضة وفعاليات جماهيرية, football match, فعالية, منتهية, الرياض, Kingdom Arena, Saudi Pro League Fixtures, sports, football, fixtures, matches, 2025/26, ended-event, رياضة ولياقة",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "رياضة ولياقة"
+      }
+    ],
+    "sameAs": [
+      "https://www.spl.com.sa/en/match/84355"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.spl.com.sa/en/match/84355",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

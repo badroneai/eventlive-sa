@@ -1,0 +1,26 @@
+{
+  "ithra-events": [
+    {
+      "attempted_at": "2026-07-05T00:10:00+03:00",
+      "method": "homepage snapshot hidden JSON/card inspection",
+      "result": "Homepage exposes programme links and date filters, but visible cards carry CTA labels only; no date-complete event rows in listing HTML."
+    },
+    {
+      "attempted_at": "2026-07-05T00:11:00+03:00",
+      "method": "official detail pages via fetch and curl HTTP/1.1",
+      "result": "Detail pages failed from this runtime with HTTP2 stream errors or timeout. No bot bypass attempted."
+    }
+  ],
+  "saudi-pro-league-fixtures": [
+    {
+      "attempted_at": "2026-07-05T00:12:00+03:00",
+      "method": "official Pulselive fixture API compSeason 859",
+      "result": "API works but all returned fixtures are past relative to 2026-07-05."
+    },
+    {
+      "attempted_at": "2026-07-05T00:13:00+03:00",
+      "method": "official Pulselive competition compseasons and adjacent IDs 860-872",
+      "result": "Only 2025/26 is published for competition 215; adjacent future compSeason IDs return zero fixtures."
+    }
+  ]
+}

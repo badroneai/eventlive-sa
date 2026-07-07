@@ -1,0 +1,361 @@
+{
+  "catalog_raw": 65,
+  "catalog_dist": 66,
+  "candidates": 97,
+  "moment_count": 42,
+  "moment_share_pct": 63.6,
+  "city_count": 8,
+  "city_counts": {
+    "Riyadh": 36,
+    "Dhahran": 15,
+    "Online": 5,
+    "Nationwide": 4,
+    "Jeddah": 3,
+    "Diriyah": 1,
+    "Aseer": 1,
+    "Dammam": 1
+  },
+  "placeholder_saudi_arabia": 0,
+  "live_ready_count": 1,
+  "live_ready": [
+    {
+      "id": "demo-event",
+      "title": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+      "city": "Riyadh",
+      "sessions": 5
+    }
+  ],
+  "yield": {
+    "attempted": 24,
+    "productive": 11,
+    "zero": 13
+  },
+  "source_rows": [
+    {
+      "id": "visit-saudi-calendar",
+      "name": "Visit Saudi Calendar",
+      "extracted_raw": 9,
+      "future_complete": 9,
+      "capped_future_complete": 9,
+      "last_written": 9,
+      "zero_yield_reason": "",
+      "attempts": 0
+    },
+    {
+      "id": "moc-cultural-calendar",
+      "name": "Ministry of Culture Cultural Calendar",
+      "extracted_raw": 0,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "zero_yield_reason": "no rows detected by extractor",
+      "attempts": 0
+    },
+    {
+      "id": "mos-events",
+      "name": "Ministry of Sport Events",
+      "extracted_raw": 3,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "zero_yield_reason": "past-date:3",
+      "attempts": 0
+    },
+    {
+      "id": "experience-alula-events",
+      "name": "Experience AlUla Events",
+      "extracted_raw": 1,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "zero_yield_reason": "past-date:1",
+      "attempts": 0
+    },
+    {
+      "id": "mdlbeast-events",
+      "name": "MDLBEAST Events",
+      "extracted_raw": 0,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "zero_yield_reason": "date/content signals exist but extractor returned no complete future rows",
+      "attempts": 0
+    },
+    {
+      "id": "monshaat-events",
+      "name": "Monsha'at All Events",
+      "extracted_raw": 12,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "zero_yield_reason": "past-date:12",
+      "attempts": 0
+    },
+    {
+      "id": "rfecc-whats-on",
+      "name": "RFECC What's On",
+      "extracted_raw": 20,
+      "future_complete": 6,
+      "capped_future_complete": 6,
+      "last_written": 6,
+      "zero_yield_reason": "",
+      "attempts": 0
+    },
+    {
+      "id": "eye-of-riyadh-events",
+      "name": "Eye of Riyadh Events",
+      "extracted_raw": 16,
+      "future_complete": 16,
+      "capped_future_complete": 16,
+      "last_written": 16,
+      "zero_yield_reason": "",
+      "attempts": 0
+    },
+    {
+      "id": "eventbrite-saudi",
+      "name": "Eventbrite Saudi Arabia",
+      "extracted_raw": 16,
+      "future_complete": 16,
+      "capped_future_complete": 16,
+      "last_written": 16,
+      "zero_yield_reason": "",
+      "attempts": 0
+    },
+    {
+      "id": "tuwaiq-academy-bootcamps",
+      "name": "Tuwaiq Academy Bootcamps and Programs",
+      "extracted_raw": 12,
+      "future_complete": 12,
+      "capped_future_complete": 12,
+      "last_written": 12,
+      "zero_yield_reason": "",
+      "attempts": 0
+    },
+    {
+      "id": "future-skills-catalog",
+      "name": "Future Skills MCIT Catalogue",
+      "extracted_raw": 12,
+      "future_complete": 4,
+      "capped_future_complete": 4,
+      "last_written": 4,
+      "zero_yield_reason": "",
+      "attempts": 0
+    },
+    {
+      "id": "visit-saudi-seasons",
+      "name": "Visit Saudi Seasons",
+      "extracted_raw": 4,
+      "future_complete": 4,
+      "capped_future_complete": 4,
+      "last_written": 4,
+      "zero_yield_reason": "",
+      "attempts": 0
+    },
+    {
+      "id": "code-mcit-programs",
+      "name": "CODE MCIT Programs",
+      "extracted_raw": 0,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "zero_yield_reason": "no rows detected by extractor",
+      "attempts": 0
+    },
+    {
+      "id": "misk-hub-programs",
+      "name": "Misk Hub Programs",
+      "extracted_raw": 5,
+      "future_complete": 5,
+      "capped_future_complete": 5,
+      "last_written": 5,
+      "zero_yield_reason": "",
+      "attempts": 0
+    },
+    {
+      "id": "dhahran-expo-calendar",
+      "name": "Dhahran Expo Calendar",
+      "extracted_raw": 22,
+      "future_complete": 15,
+      "capped_future_complete": 15,
+      "last_written": 15,
+      "zero_yield_reason": "",
+      "attempts": 0
+    },
+    {
+      "id": "ithra-events",
+      "name": "Ithra Events",
+      "extracted_raw": 0,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "zero_yield_reason": "date/content signals exist but extractor returned no complete future rows",
+      "attempts": 2
+    },
+    {
+      "id": "sdaia-academy-programs",
+      "name": "SDAIA Academy Programs",
+      "extracted_raw": 0,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "zero_yield_reason": "date/content signals exist but extractor returned no complete future rows",
+      "attempts": 0
+    },
+    {
+      "id": "misk-hub-events",
+      "name": "Misk Hub Events",
+      "extracted_raw": 5,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "zero_yield_reason": "past-date:5",
+      "attempts": 0
+    },
+    {
+      "id": "jcci-events-center",
+      "name": "Jeddah Chamber Exhibitions and Events Center",
+      "extracted_raw": 1,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "zero_yield_reason": "past-date:1",
+      "attempts": 0
+    },
+    {
+      "id": "saudi-pro-league-fixtures",
+      "name": "Saudi Pro League Fixtures",
+      "extracted_raw": 100,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "zero_yield_reason": "past-date:100",
+      "attempts": 2
+    },
+    {
+      "id": "moc-cultural-subportals",
+      "name": "Ministry of Culture Commission Calendars",
+      "extracted_raw": 0,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "zero_yield_reason": "date/content signals exist but extractor returned no complete future rows",
+      "attempts": 0
+    },
+    {
+      "id": "discover-aseer-events",
+      "name": "Discover Aseer Events",
+      "extracted_raw": 1,
+      "future_complete": 1,
+      "capped_future_complete": 1,
+      "last_written": 1,
+      "zero_yield_reason": "",
+      "attempts": 0
+    },
+    {
+      "id": "saudi-water-authority-events",
+      "name": "Saudi Water Authority Events",
+      "extracted_raw": 9,
+      "future_complete": 8,
+      "capped_future_complete": 8,
+      "last_written": 8,
+      "zero_yield_reason": "",
+      "attempts": 0
+    },
+    {
+      "id": "sdaia-calendar-events",
+      "name": "SDAIA Calendar and Events",
+      "extracted_raw": 0,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "last_written": 0,
+      "zero_yield_reason": "date/content signals exist but extractor returned no complete future rows",
+      "attempts": 0
+    }
+  ],
+  "candidate_by_source": {
+    "Dhahran Expo Calendar": {
+      "total": 15,
+      "approved": 15,
+      "cities": [
+        "Dhahran"
+      ]
+    },
+    "Discover Aseer Events": {
+      "total": 1,
+      "approved": 1,
+      "cities": [
+        "Aseer"
+      ]
+    },
+    "Eventbrite Saudi Arabia": {
+      "total": 16,
+      "approved": 0,
+      "cities": [
+        "Jeddah",
+        "Riyadh"
+      ]
+    },
+    "Eye of Riyadh Events": {
+      "total": 15,
+      "approved": 0,
+      "cities": [
+        "Riyadh",
+        "Saudi Arabia"
+      ]
+    },
+    "Future Skills MCIT Catalogue": {
+      "total": 4,
+      "approved": 4,
+      "cities": [
+        "Online"
+      ]
+    },
+    "Misk Hub Programs": {
+      "total": 6,
+      "approved": 5,
+      "cities": [
+        "Online",
+        "Saudi Arabia"
+      ]
+    },
+    "RFECC What's On": {
+      "total": 6,
+      "approved": 6,
+      "cities": [
+        "Riyadh"
+      ]
+    },
+    "Saudi Water Authority Events": {
+      "total": 8,
+      "approved": 8,
+      "cities": [
+        "Jeddah",
+        "Riyadh"
+      ]
+    },
+    "Tuwaiq Academy Bootcamps and Programs": {
+      "total": 12,
+      "approved": 12,
+      "cities": [
+        "Riyadh"
+      ]
+    },
+    "Visit Saudi Calendar": {
+      "total": 10,
+      "approved": 10,
+      "cities": [
+        "Aseer",
+        "Riyadh",
+        "Saudi Arabia"
+      ]
+    },
+    "Visit Saudi Seasons": {
+      "total": 4,
+      "approved": 4,
+      "cities": [
+        "Diriyah",
+        "Riyadh"
+      ]
+    }
+  }
+}

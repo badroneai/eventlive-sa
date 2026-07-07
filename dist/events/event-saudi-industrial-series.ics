@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Saudi Industrial Series | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-saudi-industrial-series@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260908T120000Z
+DTEND:20260910T180000Z
+SUMMARY:Saudi Industrial Series
+DESCRIPTION:Running from 8 to 10 September 2026 at the Riyadh International Convention & Exhibition Center (RICEC) from 3:00 PM to 9:00 PM\, this dedicated industry event returns for its second edition as a platform focused on Saudi Arabia’s industrial expansion. Co-located with Saudi Wood Expo\, it brings together thousands of professionals\, industry leaders\, and decision-makers to explore solutions\, suppliers\, and partnerships that support growth across key industrial sectors.
+LOCATION:Riyadh International Convention & Exhibition Center
+URL:https://eventme.live/events/event-saudi-industrial-series.html
+END:VEVENT
+END:VCALENDAR

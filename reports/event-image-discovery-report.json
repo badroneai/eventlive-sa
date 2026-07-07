@@ -1,0 +1,668 @@
+{
+  "generated_at": "2026-07-06T02:08:59.019Z",
+  "dry_run": false,
+  "catalog_file": "data/events_catalog.json",
+  "targets": 64,
+  "enriched": 44,
+  "cleared": 0,
+  "failed": 20,
+  "enriched_events": [
+    {
+      "id": "event-misk-local-traineeship-program",
+      "title": "Misk Local Traineeship Program",
+      "source_label": "Misk Hub Programs",
+      "source_url": "https://hub.misk.org.sa/programs/skills/misk-local-traineeship-program/",
+      "image_url": "https://hub.misk.org.sa/media/pqpeputs/local_550x340-1.png",
+      "method": "meta",
+      "alternatives": [
+        "https://hub.misk.org.sa/media/tiibzuvi/kpmg_logo-svg.png",
+        "https://hub.misk.org.sa/media/as4bwcup/the-saudi-national-events-center.png",
+        "https://hub.misk.org.sa/media/rqwdz22r/nupco.png"
+      ]
+    },
+    {
+      "id": "event-unstable",
+      "title": "Unstable",
+      "source_label": "MDLBEAST Events",
+      "source_url": "https://mdlbeast.com/events/unstable",
+      "image_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
+      "method": "meta",
+      "alternatives": [
+        "https://www.datocms-assets.com/66357/1734959190-26dec-event-banners-01.webp?ar64=MTY6OQ&crop=focalpoint&fit=crop&auto=format&w=3840&q=75",
+        "https://www.datocms-assets.com/66357/1734959190-26dec-event-banners-01.webp?auto=format&fit=max&w=3840&q=75",
+        "https://www.datocms-assets.com/66357/1779097333-whatsapp-image-2026-05-18-at-12-37-36-pm.jpeg?auto=format&fit=max&w=3840&q=75"
+      ]
+    },
+    {
+      "id": "event-beast-house",
+      "title": "Beast House",
+      "source_label": "MDLBEAST Events",
+      "source_url": "https://mdlbeast.com/events/beast-house",
+      "image_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
+      "method": "meta",
+      "alternatives": [
+        "https://www.datocms-assets.com/66357/1712146808-12th-of-april-event-banners-03.webp?auto=format&fit=max&w=3840&q=75",
+        "https://www.datocms-assets.com/66357/1753608398-1-aug-event-banners-01.webp?auto=format&fit=max&w=3840&q=75",
+        "https://www.datocms-assets.com/66357/1734959190-26dec-event-banners-01.webp?ar64=MTY6OQ&crop=focalpoint&fit=crop&auto=format&w=3840&q=75"
+      ]
+    },
+    {
+      "id": "event-دورة-comptia-a",
+      "title": "دورة +CompTIA A",
+      "source_label": "Future Skills MCIT Catalogue",
+      "source_url": "https://futureskills.mcit.gov.sa/ar/group/13039",
+      "image_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-07/7.jpg?itok=HnrYjVdd",
+      "method": "img",
+      "alternatives": [
+        "https://futureskills.mcit.gov.sa/sites/default/files/2026-07/Learning%20Space%20logo-05.png"
+      ]
+    },
+    {
+      "id": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي",
+      "title": "⁠Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
+      "source_label": "Future Skills MCIT Catalogue",
+      "source_url": "https://futureskills.mcit.gov.sa/ar/group/13037",
+      "image_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-07/4ccd79f559dca331acf56758ce175f5d.jpeg?itok=TQBocw19",
+      "method": "img",
+      "alternatives": [
+        "https://futureskills.mcit.gov.sa/sites/default/files/2023-05/Learning%20Space%20logo%20.png"
+      ]
+    },
+    {
+      "id": "event-comptia-a",
+      "title": "CompTIA A+",
+      "source_label": "Future Skills MCIT Catalogue",
+      "source_url": "https://futureskills.mcit.gov.sa/ar/group/13039",
+      "image_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-07/7.jpg?itok=HnrYjVdd",
+      "method": "img",
+      "alternatives": [
+        "https://futureskills.mcit.gov.sa/sites/default/files/2026-07/Learning%20Space%20logo-05.png"
+      ]
+    },
+    {
+      "id": "event-samsung-innovation-campus-ai-program",
+      "title": "Samsung Innovation Campus AI Program",
+      "source_label": "Misk Hub Programs",
+      "source_url": "https://hub.misk.org.sa/programs/skills/samsung-innovation-campus-ai-program/",
+      "image_url": "https://hub.misk.org.sa/media/ovkjtk3x/artificial-intelligence.png",
+      "method": "meta",
+      "alternatives": [
+        "https://hub.misk.org.sa/media/fohh2ub5/chatgpt-image-jun-11-2026-11_02_34-am.png?rmode=max&width=302&height=163",
+        "https://hub.misk.org.sa/media/pzobpggi/blob.png?rmode=max&width=150&height=150",
+        "https://hub.misk.org.sa/media/dwamawuj/briefing-1.png"
+      ]
+    },
+    {
+      "id": "event-entrepreneur-leadership-excellence-program",
+      "title": "Entrepreneur Leadership Excellence Program",
+      "source_label": "Misk Hub Programs",
+      "source_url": "https://hub.misk.org.sa/programs/entrepreneurship/entrepreneur-leadership-excellence-program/",
+      "image_url": "https://hub.misk.org.sa/media/eoxb5tmh/ec-founder-leadership-excellence_en.png",
+      "method": "meta",
+      "alternatives": [
+        "https://hub.misk.org.sa/media/pu1j4fay/user-1.png",
+        "https://hub.misk.org.sa/media/j3ylaccx/lightbulb.png",
+        "https://hub.misk.org.sa/media/uk3jmvqh/user-2.png"
+      ]
+    },
+    {
+      "id": "event-nonprofit-sector-skills-program",
+      "title": "Nonprofit Sector Skills Program",
+      "source_label": "Misk Hub Programs",
+      "source_url": "https://hub.misk.org.sa/programs/skills/nonprofit-sector-skills-program/",
+      "image_url": "https://hub.misk.org.sa/media/e3pjton2/web.png",
+      "method": "img",
+      "alternatives": [
+        "https://hub.misk.org.sa/media/3qmnzx00/chat-1.png",
+        "https://hub.misk.org.sa/media/odhnxqv3/certificate-of-completion.png",
+        "https://hub.misk.org.sa/media/bjedu3cl/workshop.png"
+      ]
+    },
+    {
+      "id": "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي",
+      "title": "⁠Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث",
+      "source_label": "Future Skills MCIT Catalogue",
+      "source_url": "https://futureskills.mcit.gov.sa/ar/group/13040",
+      "image_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-07/4ccd79f559dca331acf56758ce175f5d.jpeg?itok=TQBocw19",
+      "method": "img",
+      "alternatives": [
+        "https://futureskills.mcit.gov.sa/sites/default/files/2023-05/Learning%20Space%20logo%20.png"
+      ]
+    },
+    {
+      "id": "event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials",
+      "title": "أساسيات الحوسبة السحابية - Cloud Computing Essentials",
+      "source_label": "Future Skills MCIT Catalogue",
+      "source_url": "https://futureskills.mcit.gov.sa/ar/group/13035",
+      "image_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2022-08/types-of-cloud-computing.png?itok=OuG9_dIR",
+      "method": "img",
+      "alternatives": [
+        "https://futureskills.mcit.gov.sa/sites/default/files/2026-06/Learning%20Space%20logo-05.png"
+      ]
+    },
+    {
+      "id": "event-saudi-logistic-038-warehousing-expo",
+      "title": "Saudi Logistic & Warehousing Expo",
+      "source_label": "RFECC What's On",
+      "source_url": "https://rfecc.sa/events/saudi-logistic-warehousing-expo/",
+      "image_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122220/images-5.jpg",
+      "method": "meta",
+      "alternatives": [
+        "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_daaf2f515d1e8af96fee520f9c6f2a56.png",
+        "https://cdn.rfecc.sa/wp-content/uploads/2022/07/04172518/element-4.svg",
+        "https://cdn.rfecc.sa/wp-content/uploads/2022/07/04172518/element-2.svg"
+      ]
+    },
+    {
+      "id": "event-offshore-technology-innovation-technical-conference-expo-offshore-arabia",
+      "title": "Offshore Technology & Innovation Technical Conference & Expo - OFFSHORE ARABIA 2026”",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa/",
+      "image_url": "https://dhahranexpo.com.sa/userfiles/clients/G3_24052026142116.jpg",
+      "method": "img",
+      "alternatives": [
+        "https://dhahranexpo.com.sa/assets/img/venue-facilities/media-center/home.jpg",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-1.mp4",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-2.mp4"
+      ]
+    },
+    {
+      "id": "event-crafts-handicrafts-exhibition",
+      "title": "Crafts & Handicrafts Exhibition",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa/",
+      "image_url": "https://dhahranexpo.com.sa/userfiles/clients/G3_24052026142116.jpg",
+      "method": "img",
+      "alternatives": [
+        "https://dhahranexpo.com.sa/assets/img/venue-facilities/media-center/home.jpg",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-1.mp4",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-2.mp4"
+      ]
+    },
+    {
+      "id": "event-the-innovation-diwan",
+      "title": "The Innovation Diwan",
+      "source_label": "Misk Hub Programs",
+      "source_url": "https://hub.misk.org.sa/programs/community/the-innovation-diwan/",
+      "image_url": "https://hub.misk.org.sa/media/duyhwegb/intagram.svg",
+      "method": "img",
+      "alternatives": [
+        "https://hub.misk.org.sa/media/1s5mxdvp/snapchat.svg",
+        "https://hub.misk.org.sa/media/k2slb4mi/youtube.svg",
+        "https://hub.misk.org.sa/media/2aynps1e/facebook.svg"
+      ]
+    },
+    {
+      "id": "event-misk-launchpad",
+      "title": "Misk Launchpad",
+      "source_label": "Misk Hub Programs",
+      "source_url": "https://hub.misk.org.sa/programs/entrepreneurship/misk-launchpad/",
+      "image_url": "https://hub.misk.org.sa/media/awcbpjiq/lp-hub-image_en.jpg",
+      "method": "meta",
+      "alternatives": [
+        "https://hub.misk.org.sa/media/ip5jthak/ministry_sport.svg",
+        "https://hub.misk.org.sa/media/5enhwdsk/ministry_invesment-1.svg",
+        "https://hub.misk.org.sa/media/mojow3zz/&#x634;&#x639;&#x627;&#x631;-&#x628;&#x646;&#x643;-&#x627;&#x644;&#x631;&#x64A;&#x627;&#x636;-&#x627;&#x644;&#x62C;&#x62F;&#x64A;&#x62F;-svg-png.svg"
+      ]
+    },
+    {
+      "id": "event-arabian-and-international-industries-exhibition",
+      "title": "Arabian and International Industries Exhibition",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa/",
+      "image_url": "https://dhahranexpo.com.sa/userfiles/clients/G3_24052026142116.jpg",
+      "method": "img",
+      "alternatives": [
+        "https://dhahranexpo.com.sa/assets/img/venue-facilities/media-center/home.jpg",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-1.mp4",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-2.mp4"
+      ]
+    },
+    {
+      "id": "event-inter-aviation-arabia",
+      "title": "Inter Aviation Arabia",
+      "source_label": "RFECC What's On",
+      "source_url": "https://rfecc.sa/events/inter-aviation-arabia/",
+      "image_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/03/12031444/inter-aviation-Arabia-HP-PR-logo.png",
+      "method": "meta",
+      "alternatives": [
+        "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_bf51c07b204131ed6826c6b41ee0a62d.png",
+        "https://cdn.rfecc.sa/wp-content/uploads/2022/07/04172518/element-4.svg",
+        "https://cdn.rfecc.sa/wp-content/uploads/2022/07/04172518/element-2.svg"
+      ]
+    },
+    {
+      "id": "event-wtm-spotlight-riyadh",
+      "title": "WTM Spotlight Riyadh",
+      "source_label": "RFECC What's On",
+      "source_url": "https://rfecc.sa/events/wtm-2026/",
+      "image_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122431/WMT-Spotlight-Riyadh-Dates-1200x675-1-1024x576-1.jpg",
+      "method": "meta",
+      "alternatives": [
+        "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_22f030f83f63a31d67d187ebb5ab65f9.png",
+        "https://cdn.rfecc.sa/wp-content/uploads/2022/07/04172518/element-4.svg",
+        "https://cdn.rfecc.sa/wp-content/uploads/2022/07/04172518/element-2.svg"
+      ]
+    },
+    {
+      "id": "event-static-equipment-engineering-maintenance-technical-conference-expo-state",
+      "title": "Static Equipment Engineering & Maintenance Technical Conference & Expo - STATEC Arabia",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa/",
+      "image_url": "https://dhahranexpo.com.sa/userfiles/clients/G3_24052026142116.jpg",
+      "method": "img",
+      "alternatives": [
+        "https://dhahranexpo.com.sa/assets/img/venue-facilities/media-center/home.jpg",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-1.mp4",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-2.mp4"
+      ]
+    },
+    {
+      "id": "event-fibo-2026",
+      "title": "FIBO 2026",
+      "source_label": "RFECC What's On",
+      "source_url": "https://rfecc.sa/events/fibo-2026/",
+      "image_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122706/fibo_arabia_logo_10431.webp",
+      "method": "meta",
+      "alternatives": [
+        "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
+        "https://cdn.rfecc.sa/wp-content/uploads/2022/07/04172518/element-4.svg",
+        "https://cdn.rfecc.sa/wp-content/uploads/2022/07/04172518/element-2.svg"
+      ]
+    },
+    {
+      "id": "event-gulf-steel-storage-tank-refinery-expo",
+      "title": "Gulf Steel, Storage Tank & Refinery Expo",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa/",
+      "image_url": "https://dhahranexpo.com.sa/userfiles/clients/G3_24052026142116.jpg",
+      "method": "img",
+      "alternatives": [
+        "https://dhahranexpo.com.sa/assets/img/venue-facilities/media-center/home.jpg",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-1.mp4",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-2.mp4"
+      ]
+    },
+    {
+      "id": "event-the-egyptian-products-exhibition",
+      "title": "The Egyptian Products Exhibition",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa/",
+      "image_url": "https://dhahranexpo.com.sa/userfiles/clients/G3_24052026142116.jpg",
+      "method": "img",
+      "alternatives": [
+        "https://dhahranexpo.com.sa/assets/img/venue-facilities/media-center/home.jpg",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-1.mp4",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-2.mp4"
+      ]
+    },
+    {
+      "id": "event-global-infrastructure-expo",
+      "title": "Global Infrastructure Expo",
+      "source_label": "Saudi Water Authority Events",
+      "source_url": "https://www.swa.gov.sa/en/events/Event-639148593206554999",
+      "image_url": "https://swa-cdn.swa.gov.sa/Events/b4fed1f10c414a39a5c49cd9fda6a63d_2026_05_20_07_35_20_655.png",
+      "method": "img",
+      "alternatives": []
+    },
+    {
+      "id": "event-natrual-expo",
+      "title": "Natrual Expo",
+      "source_label": "RFECC What's On",
+      "source_url": "https://rfecc.sa/events/natrual-expo/",
+      "image_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06123740/GqbqdoDWMAAm16R.jpg",
+      "method": "meta",
+      "alternatives": [
+        "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_2257b58b4b7113964aac55f6728dc169.png",
+        "https://cdn.rfecc.sa/wp-content/uploads/2022/07/04172518/element-4.svg",
+        "https://cdn.rfecc.sa/wp-content/uploads/2022/07/04172518/element-2.svg"
+      ]
+    },
+    {
+      "id": "event-a-thousand-and-one",
+      "title": "A Thousand and One",
+      "source_label": "MDLBEAST Events",
+      "source_url": "https://mdlbeast.com/events/a-thousand-and-one-2026",
+      "image_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
+      "method": "meta",
+      "alternatives": [
+        "https://www.datocms-assets.com/66357/1772462523-a-thousand-and-one-26-and-the-stories-continue-combined-2.webp?auto=format&fit=max&w=3840&q=75",
+        "https://www.datocms-assets.com/66357/1772105587-429.webp?auto=format&fit=max&w=3840&q=75",
+        "https://www.datocms-assets.com/66357/1772462577-inside-the-world-of-1001-2.png?auto=format&fit=max&w=3840&q=75"
+      ]
+    },
+    {
+      "id": "event-wadaef-exhibition",
+      "title": "Wadaef Exhibition",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa/",
+      "image_url": "https://dhahranexpo.com.sa/userfiles/clients/G3_24052026142116.jpg",
+      "method": "img",
+      "alternatives": [
+        "https://dhahranexpo.com.sa/assets/img/venue-facilities/media-center/home.jpg",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-1.mp4",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-2.mp4"
+      ]
+    },
+    {
+      "id": "event-xp-music-futures-2026",
+      "title": "XP Music Futures 2026",
+      "source_label": "MDLBEAST Events",
+      "source_url": "https://mdlbeast.com/events/xp-music-futures-2026",
+      "image_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
+      "method": "meta",
+      "alternatives": [
+        "https://www.datocms-assets.com/66357/1724940410-home-page_past-events-xp-23.webp?auto=format&fit=max&w=3840&q=75",
+        "https://www.datocms-assets.com/66357/1724940465-home-page_past-events-xp-22.webp?auto=format&fit=max&w=3840&q=75",
+        "https://www.datocms-assets.com/66357/1724940493-home-page_past-events-xp-21.webp?auto=format&fit=max&w=3840&q=75"
+      ]
+    },
+    {
+      "id": "event-world-firefighters-challenge",
+      "title": "World Firefighters Challenge",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa/",
+      "image_url": "https://dhahranexpo.com.sa/userfiles/clients/G3_24052026142116.jpg",
+      "method": "img",
+      "alternatives": [
+        "https://dhahranexpo.com.sa/assets/img/venue-facilities/media-center/home.jpg",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-1.mp4",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-2.mp4"
+      ]
+    },
+    {
+      "id": "event-business-sector-annual-reception",
+      "title": "Business Sector Annual Reception.",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa/",
+      "image_url": "https://dhahranexpo.com.sa/userfiles/clients/G3_24052026142116.jpg",
+      "method": "img",
+      "alternatives": [
+        "https://dhahranexpo.com.sa/assets/img/venue-facilities/media-center/home.jpg",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-1.mp4",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-2.mp4"
+      ]
+    },
+    {
+      "id": "event-soundstorm-26",
+      "title": "SOUNDSTORM 26",
+      "source_label": "MDLBEAST Events",
+      "source_url": "https://mdlbeast.com/events/soundstorm-26",
+      "image_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
+      "method": "meta",
+      "alternatives": [
+        "https://www.datocms-assets.com/66357/1757863991-web-banner-background.webp?auto=format&fit=max&w=3840&q=75",
+        "https://www.datocms-assets.com/66357/1779098389-80-lowres.jpg?auto=format&fit=max&w=3840&q=75",
+        "https://www.datocms-assets.com/66357/1770107580-white.png?auto=format&fit=max&w=3840&q=75"
+      ]
+    },
+    {
+      "id": "event-consumer-trade-fair",
+      "title": "Consumer Trade Fair",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa/",
+      "image_url": "https://dhahranexpo.com.sa/userfiles/clients/G3_24052026142116.jpg",
+      "method": "img",
+      "alternatives": [
+        "https://dhahranexpo.com.sa/assets/img/venue-facilities/media-center/home.jpg",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-1.mp4",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-2.mp4"
+      ]
+    },
+    {
+      "id": "event-world-conference-on-desalination-and-water-reuse",
+      "title": "World Conference on Desalination and Water Reuse",
+      "source_label": "Saudi Water Authority Events",
+      "source_url": "https://www.swa.gov.sa/en/events/Event-639152055712272031",
+      "image_url": "https://swa-cdn.swa.gov.sa/Events/a8b384622a1d4281b64b6fd75c82bd5e_2026_05_25_07_44_38_769.jpg",
+      "method": "img",
+      "alternatives": []
+    },
+    {
+      "id": "event-dirayah-forum",
+      "title": "Dirayah Forum",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa/",
+      "image_url": "https://dhahranexpo.com.sa/userfiles/clients/G3_24052026142116.jpg",
+      "method": "img",
+      "alternatives": [
+        "https://dhahranexpo.com.sa/assets/img/venue-facilities/media-center/home.jpg",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-1.mp4",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-2.mp4"
+      ]
+    },
+    {
+      "id": "event-emtec-the-environmental-management-technology-exhibitions-conference",
+      "title": "EMTEC – The Environmental Management & Technology Exhibitions & Conference",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa/",
+      "image_url": "https://dhahranexpo.com.sa/userfiles/clients/G3_24052026142116.jpg",
+      "method": "img",
+      "alternatives": [
+        "https://dhahranexpo.com.sa/assets/img/venue-facilities/media-center/home.jpg",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-1.mp4",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-2.mp4"
+      ]
+    },
+    {
+      "id": "event-saudi-water-partnerships-company-forum-and-awards-ceremony",
+      "title": "Saudi Water Partnerships Company Forum and Awards Ceremony",
+      "source_label": "Saudi Water Authority Events",
+      "source_url": "https://www.swa.gov.sa/en/events/Event-639161702137808713",
+      "image_url": "https://swa-cdn.swa.gov.sa/Events/de29a012e4fd4f33bae4d98c28e9d8e2_2026_06_04_11_43_33_780.jpg",
+      "method": "img",
+      "alternatives": []
+    },
+    {
+      "id": "event-pfl-mena-final",
+      "title": "PFL Mena Final",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa/",
+      "image_url": "https://dhahranexpo.com.sa/userfiles/clients/G3_24052026142116.jpg",
+      "method": "img",
+      "alternatives": [
+        "https://dhahranexpo.com.sa/assets/img/venue-facilities/media-center/home.jpg",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-1.mp4",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-2.mp4"
+      ]
+    },
+    {
+      "id": "event-saudi-intl-construction-interior-design-cidex-2026",
+      "title": "Saudi Int’l Construction & Interior Design CIDEX 2026",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa/",
+      "image_url": "https://dhahranexpo.com.sa/userfiles/clients/G3_24052026142116.jpg",
+      "method": "img",
+      "alternatives": [
+        "https://dhahranexpo.com.sa/assets/img/venue-facilities/media-center/home.jpg",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-1.mp4",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-2.mp4"
+      ]
+    },
+    {
+      "id": "event-global-prize-for-innovation-in-water",
+      "title": "Global Prize for Innovation in Water",
+      "source_label": "Saudi Water Authority Events",
+      "source_url": "https://www.swa.gov.sa/en/events/Event-639167725551054643",
+      "image_url": "https://swa-cdn.swa.gov.sa/Events/a4ae75a0b5914231a232796f3b7fd47a_2026_06_11_11_02_35_109.png",
+      "method": "img",
+      "alternatives": []
+    },
+    {
+      "id": "event-china-homelife-saudi-arabia-2026",
+      "title": "China Homelife Saudi Arabia 2026",
+      "source_label": "RFECC What's On",
+      "source_url": "https://rfecc.sa/events/china-homelife-saudi-arabia-2026/",
+      "image_url": "https://cdn.rfecc.sa/wp-content/uploads/2025/02/26113050/images-4.png",
+      "method": "meta",
+      "alternatives": [
+        "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_7fc8ee4b5f97ff36c54178c1b6de91fc.png",
+        "https://cdn.rfecc.sa/wp-content/uploads/2022/07/04172518/element-4.svg",
+        "https://cdn.rfecc.sa/wp-content/uploads/2022/07/04172518/element-2.svg"
+      ]
+    },
+    {
+      "id": "event-ctw-global-ksa-gulf-4p-mach-tools",
+      "title": "CTW Global KSA, Gulf 4P & Mach Tools",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa/",
+      "image_url": "https://dhahranexpo.com.sa/userfiles/clients/G3_24052026142116.jpg",
+      "method": "img",
+      "alternatives": [
+        "https://dhahranexpo.com.sa/assets/img/venue-facilities/media-center/home.jpg",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-1.mp4",
+        "https://dhahranexpo.com.sa/assets/video/video-gallery-2.mp4"
+      ]
+    },
+    {
+      "id": "event-the-global-water-sustainability-conference-2026",
+      "title": "The Global Water Sustainability Conference 2026",
+      "source_label": "Saudi Water Authority Events",
+      "source_url": "https://www.swa.gov.sa/en/events/Event-639166882740331066",
+      "image_url": "https://swa-cdn.swa.gov.sa/Events/a1b3becf671a43428fe8aefe050dcd10_2026_06_10_11_37_54_033.png",
+      "method": "img",
+      "alternatives": []
+    },
+    {
+      "id": "event-foundation-day",
+      "title": "Foundation Day",
+      "source_label": "Saudi Water Authority Events",
+      "source_url": "https://www.swa.gov.sa/en/events/Event-639152936274801348",
+      "image_url": "https://swa-cdn.swa.gov.sa/Events/8ca9c4254c334d8d90c85b0c4f5f275c_2026_05_25_08_13_47_482.jpg",
+      "method": "img",
+      "alternatives": []
+    },
+    {
+      "id": "event-saudi-flag-day",
+      "title": "Saudi Flag Day",
+      "source_label": "Saudi Water Authority Events",
+      "source_url": "https://www.swa.gov.sa/en/events/Event-639152942884779740",
+      "image_url": "https://swa-cdn.swa.gov.sa/Events/f168ba04d30d4fec96ca03600421bd99_2026_05_25_08_24_48_478.png",
+      "method": "img",
+      "alternatives": []
+    }
+  ],
+  "cleared_events": [],
+  "failed_events": [
+    {
+      "id": "event-aseer-season",
+      "title": "Aseer Season",
+      "source_url": "https://www.visitsaudi.com/en/seasons/aseer-season",
+      "reason": "no image candidate"
+    },
+    {
+      "id": "event-لقاءات-مراكز-دعم-المنشآت",
+      "title": "لقاءات مراكز دعم المنشآت",
+      "source_url": "http://www.monshaat.gov.sa/ar/node/487334",
+      "reason": "no image candidate"
+    },
+    {
+      "id": "event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone",
+      "title": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/512",
+      "reason": "no image candidate"
+    },
+    {
+      "id": "event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م",
+      "title": "أسبوع العقار والمقاولات 12- 16 يوليو 2026م",
+      "source_url": "http://www.monshaat.gov.sa/ar/node/489022",
+      "reason": "no image candidate"
+    },
+    {
+      "id": "event-join-us-at-kaust-health-for-respiratory-health-day",
+      "title": "Join us at KAUST Health for Respiratory Health Day",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/515",
+      "reason": "no image candidate"
+    },
+    {
+      "id": "event-semi-finals-join-the-celebration-at-the-fifa-fan-zone",
+      "title": "Semi-Finals: Join the Celebration at the FIFA Fan Zone",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/513",
+      "reason": "no image candidate"
+    },
+    {
+      "id": "event-fifa-world-cup-2026-final-celebrate-footballs-biggest-night-at-the-kaust",
+      "title": "FIFA World Cup 2026 Final: Celebrate Football's Biggest Night at the KAUST Fan Zone",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/514",
+      "reason": "no image candidate"
+    },
+    {
+      "id": "event-لقاءات-مراكز-دعم-المنشآت-شهر-يوليو-2026م-مغلقة",
+      "title": "لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)",
+      "source_url": "http://www.monshaat.gov.sa/ar/node/487360",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-معرض-الحرف-والأعمال-اليدوية-2026",
+      "title": "معرض الحرف والأعمال اليدوية 2026",
+      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=343",
+      "reason": "no image candidate"
+    },
+    {
+      "id": "event-global-forum-on-the-ethics-of-ai",
+      "title": "Global Forum on the Ethics of AI",
+      "source_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=122",
+      "reason": "no image candidate"
+    },
+    {
+      "id": "event-global-ai-summit",
+      "title": "Global AI Summit",
+      "source_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=123",
+      "reason": "no image candidate"
+    },
+    {
+      "id": "event-نقل-مبيدات-آفات-الصحة-العامة",
+      "title": "نقل مبيدات آفات الصحة العامة",
+      "source_url": "https://www.sfda.gov.sa/ar/workshop/5521944",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-آلية-تقديم-طلبات-اذونات-استيراد-مواد-التصوير-الطبي-في-النظام-الالكتروني-",
+      "title": "آلية تقديم طلبات اذونات استيراد مواد التصوير الطبي في النظام الالكتروني ومتطلباتها",
+      "source_url": "https://www.sfda.gov.sa/ar/workshop/5521972",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-saudi-national-day",
+      "title": "Saudi National Day",
+      "source_url": "https://www.visitsaudi.com/en/saudi-calendar/saudi-national-day",
+      "reason": "no image candidate"
+    },
+    {
+      "id": "event-معرض-وظائف-2026",
+      "title": "معرض وظائف 2026",
+      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=344",
+      "reason": "no image candidate"
+    },
+    {
+      "id": "event-founding-day",
+      "title": "Founding Day",
+      "source_url": "https://www.visitsaudi.com/en/saudi-calendar/founding-day",
+      "reason": "no image candidate"
+    },
+    {
+      "id": "event-eid-al-fitr",
+      "title": "Eid Al-Fitr",
+      "source_url": "https://www.visitsaudi.com/en/saudi-calendar/eid-al-fitr",
+      "reason": "no image candidate"
+    },
+    {
+      "id": "event-eid-al-adha",
+      "title": "Eid Al-Adha",
+      "source_url": "https://www.visitsaudi.com/en/saudi-calendar/eid-al-adha",
+      "reason": "no image candidate"
+    },
+    {
+      "id": "event-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة",
+      "title": "احتياطات الأمان عند استخدام مبيدات آفات الصحة العامة",
+      "source_url": "https://www.sfda.gov.sa/ar/workshop/5521983",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-future-frontiers-for-businesses-catalysts-for-growth-in-a-transformation",
+      "title": "Future Frontiers for Businesses: Catalysts for Growth in a Transformational Economy",
+      "source_url": "https://kau.edu.sa/en/event/future-frontiers-for-businesses-catalysts-for-growth-in-a-transformation",
+      "reason": "The operation was aborted due to timeout"
+    }
+  ]
+}

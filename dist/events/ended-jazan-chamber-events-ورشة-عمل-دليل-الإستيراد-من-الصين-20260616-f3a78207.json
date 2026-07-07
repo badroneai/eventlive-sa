@@ -1,0 +1,101 @@
+{
+  "id": "ended-jazan-chamber-events-ورشة-عمل-دليل-الإستيراد-من-الصين-20260616-f3a78207",
+  "title": "ورشة عمل دليل الإستيراد من الصين",
+  "summary": "دليل الاستيراد من الصين محـــــــــــاور الورشـــــــــة: - مفهــوم الاستيــــــــــــراد. - مقدمــــــة عـــن التجـــارة الإلكترونية. - معايير اختيار المنتـــج. - أمثلة واقعيـــــة لمتاجـــر قائمة. الفئـــــــــــــة المستهدفة: رواد ورائدات الأعمال.",
+  "canonical_url": "https://eventme.live/events/ended-jazan-chamber-events-ورشة-عمل-دليل-الإستيراد-من-الصين-20260616-f3a78207.html",
+  "detail_url": "./events/ended-jazan-chamber-events-ورشة-عمل-دليل-الإستيراد-من-الصين-20260616-f3a78207.html",
+  "calendar_url": "./events/ended-jazan-chamber-events-ورشة-عمل-دليل-الإستيراد-من-الصين-20260616-f3a78207.ics",
+  "source_label": "Jazan Chamber Events",
+  "source_url": "https://events.jazancci.org.sa/ar/events/wrshh-aml-dlyl-alistyrad-mn-alsyn-",
+  "evidence_url": "https://events.jazancci.org.sa/ar/events/wrshh-aml-dlyl-alistyrad-mn-alsyn-",
+  "city": "عن بعد",
+  "venue": "أكاديمية غرفة جازان",
+  "venue_address": "أكاديمية غرفة جازان",
+  "starts_at": "2026-06-16T18:00:00+03:00",
+  "ends_at": "2026-06-16T20:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "online",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/ورشة-عمل-دليل-الإستيراد-من-الصين-d04119574c.jpg",
+  "image_alt": "ورشة عمل دليل الإستيراد من الصين",
+  "category": "فعاليات الغرف التجارية",
+  "category_url": "./categories/chamber-event.html",
+  "audiences": [
+    {
+      "slug": "entrepreneurs",
+      "label": "رواد أعمال"
+    }
+  ],
+  "keywords": [
+    "ورشة عمل دليل الإستيراد من الصين",
+    "فعاليات الغرف التجارية",
+    "workshop",
+    "فعالية",
+    "منتهية",
+    "عن بعد",
+    "أكاديمية غرفة جازان",
+    "Jazan Chamber Events",
+    "business",
+    "training",
+    "workshops",
+    "chamber",
+    "tourism",
+    "community",
+    "ended-event",
+    "رواد أعمال"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-06-16T18:00:00+03:00",
+      "ends_at": "2026-06-16T20:00:00+03:00",
+      "room": "أكاديمية غرفة جازان",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "ورشة عمل دليل الإستيراد من الصين",
+    "startDate": "2026-06-16T18:00:00+03:00",
+    "endDate": "2026-06-16T20:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "name": "أكاديمية غرفة جازان",
+      "url": "https://events.jazancci.org.sa/ar/events/wrshh-aml-dlyl-alistyrad-mn-alsyn-"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Jazan Chamber of Commerce"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/ورشة-عمل-دليل-الإستيراد-من-الصين-d04119574c.jpg"
+    ],
+    "description": "دليل الاستيراد من الصين محـــــــــــاور الورشـــــــــة: - مفهــوم الاستيــــــــــــراد. - مقدمــــــة عـــن التجـــارة الإلكترونية. - معايير اختيار المنتـــج. - أمثلة واقعيـــــة لمتاجـــر قائمة. الفئـــــــــــــة المستهدفة: رواد ورائدات الأعمال.",
+    "url": "https://eventme.live/events/ended-jazan-chamber-events-ورشة-عمل-دليل-الإستيراد-من-الصين-20260616-f3a78207.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-jazan-chamber-events-ورشة-عمل-دليل-الإستيراد-من-الصين-20260616-f3a78207.html",
+    "isAccessibleForFree": false,
+    "keywords": "ورشة عمل دليل الإستيراد من الصين, فعاليات الغرف التجارية, workshop, فعالية, منتهية, عن بعد, أكاديمية غرفة جازان, Jazan Chamber Events, business, training, workshops, chamber, tourism, community, ended-event, رواد أعمال",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "رواد أعمال"
+      }
+    ],
+    "sameAs": [
+      "https://events.jazancci.org.sa/ar/events/wrshh-aml-dlyl-alistyrad-mn-alsyn-"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://events.jazancci.org.sa/ar/events/wrshh-aml-dlyl-alistyrad-mn-alsyn-",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

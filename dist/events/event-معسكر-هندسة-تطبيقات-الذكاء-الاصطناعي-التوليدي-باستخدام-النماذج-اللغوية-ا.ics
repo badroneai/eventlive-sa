@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:معسكر هندسة تطبيقات الذكاء الاصطناعي التوليدي باستخدام النماذج اللغوية الضخمة | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-معسكر-هندسة-تطبيقات-الذكاء-الاصطناعي-التوليدي-باستخدام-النماذج-اللغوية-ا@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260830T130000Z
+DTEND:20261008T170000Z
+SUMMARY:معسكر هندسة تطبيقات الذكاء الاصطناعي التوليدي باستخدام النماذج اللغوية الضخمة
+DESCRIPTION:يهدف المعسكر إلى تمكين المشاركين من اكتساب مهارات الذكاء الاصطناعي التوليدي والنماذج اللغوية الكبيرة (LLMs)، من خلال تعلّم أساسيات النماذج الحديثة، هندسة التوجيه (Prompt Engineering)، وبناء تطبيقات ذكية باستخدام أدوات مثل Python وPyTorch... المصدر الرسمي: أكاديمية طويق.
+LOCATION:الرياض - المقر الرئيسي
+URL:https://eventme.live/events/event-معسكر-هندسة-تطبيقات-الذكاء-الاصطناعي-التوليدي-باستخدام-النماذج-اللغوية-ا.html
+END:VEVENT
+END:VCALENDAR

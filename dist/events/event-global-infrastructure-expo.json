@@ -1,0 +1,100 @@
+{
+  "id": "event-global-infrastructure-expo",
+  "title": "Global Infrastructure Expo",
+  "summary": "An international specialized event showcasing the latest solutions and technologies in infrastructure projects, supporting the Saudi Water Authority’s direction… المصدر الرسمي: الهيئة السعودية للمياه.",
+  "canonical_url": "https://eventme.live/events/event-global-infrastructure-expo.html",
+  "detail_url": "./events/event-global-infrastructure-expo.html",
+  "calendar_url": "./events/event-global-infrastructure-expo.ics",
+  "source_label": "Saudi Water Authority Events",
+  "source_url": "https://www.swa.gov.sa/en/events/Event-639148593206554999",
+  "evidence_url": "https://www.swa.gov.sa/en/events/Event-639148593206554999",
+  "city": "الرياض",
+  "venue": "Riyadh Intl. Convention & Exhibition Center",
+  "venue_address": "Riyadh Intl. Convention & Exhibition Center",
+  "starts_at": "2026-09-15T04:00:00+03:00",
+  "ends_at": "2026-09-17T10:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/global-infrastructure-expo-1935b0ae77.png",
+  "image_alt": "Global Infrastructure Expo",
+  "category": "جوائز وتكريم",
+  "category_url": "./categories/awards-ceremonies.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    }
+  ],
+  "keywords": [
+    "Global Infrastructure Expo",
+    "جوائز وتكريم",
+    "exhibition",
+    "فعالية",
+    "قادمة",
+    "الرياض",
+    "Riyadh Intl. Convention & Exhibition Center",
+    "Saudi Water Authority Events",
+    "water",
+    "sustainability",
+    "conferences",
+    "government",
+    "awards",
+    "workshops",
+    "موظفون ومهنيون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-09-15T04:00:00+03:00",
+      "ends_at": "2026-09-17T10:00:00+03:00",
+      "room": "Riyadh Intl. Convention & Exhibition Center",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Global Infrastructure Expo",
+    "startDate": "2026-09-15T04:00:00+03:00",
+    "endDate": "2026-09-17T10:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Riyadh Intl. Convention & Exhibition Center",
+      "address": "Riyadh Intl. Convention & Exhibition Center"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Saudi Water Authority"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/global-infrastructure-expo-1935b0ae77.png"
+    ],
+    "description": "An international specialized event showcasing the latest solutions and technologies in infrastructure projects, supporting the Saudi Water Authority’s direction… المصدر الرسمي: الهيئة السعودية للمياه.",
+    "url": "https://eventme.live/events/event-global-infrastructure-expo.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-global-infrastructure-expo.html",
+    "isAccessibleForFree": false,
+    "keywords": "Global Infrastructure Expo, جوائز وتكريم, exhibition, فعالية, قادمة, الرياض, Riyadh Intl. Convention & Exhibition Center, Saudi Water Authority Events, water, sustainability, conferences, government, awards, workshops, موظفون ومهنيون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      }
+    ],
+    "sameAs": [
+      "https://www.swa.gov.sa/en/events/Event-639148593206554999"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.swa.gov.sa/en/events/Event-639148593206554999",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

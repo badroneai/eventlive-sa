@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:EMTEC – The Environmental Management & Technology Exhibitions & Conference | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-emtec-the-environmental-management-technology-exhibitions-conference@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20261207T060000Z
+DTEND:20261209T150000Z
+SUMMARY:EMTEC – The Environmental Management & Technology Exhibitions & Conference
+DESCRIPTION:فعالية مدرجة في التقويم الرسمي لـ Dhahran Expo. الموعد: ٧ ديسمبر ٢٠٢٦ في ٠٩:٠٠ ص إلى ٩ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م. المنظم: AYM Events.
+LOCATION:Dhahran Expo
+URL:https://eventme.live/events/event-emtec-the-environmental-management-technology-exhibitions-conference.html
+END:VEVENT
+END:VCALENDAR

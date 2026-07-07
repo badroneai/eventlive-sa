@@ -1,0 +1,88 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:جوائز وتكريم | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-global-infrastructure-expo@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260915T010000Z
+DTEND:20260917T070000Z
+SUMMARY:Global Infrastructure Expo
+DESCRIPTION:An international specialized event showcasing the latest solutions and technologies in infrastructure projects\, supporting the Saudi Water Authority’s direction… المصدر الرسمي: الهيئة السعودية للمياه.
+LOCATION:Riyadh Intl. Convention & Exhibition Center
+URL:https://eventme.live/events/event-global-infrastructure-expo.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-world-conference-on-desalination-and-water-reuse@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20261101T050000Z
+DTEND:20261105T010000Z
+SUMMARY:World Conference on Desalination and Water Reuse
+DESCRIPTION:An international specialized conference that discusses the latest technologies and practices in water desalination and reuse\, supporting the Saudi Water Authori… المصدر الرسمي: الهيئة السعودية للمياه.
+LOCATION:Riyadh
+URL:https://eventme.live/events/event-world-conference-on-desalination-and-water-reuse.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-saudi-water-partnerships-company-forum-and-awards-ceremony@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20261201T062000Z
+DTEND:20261201T173000Z
+SUMMARY:Saudi Water Partnerships Company Forum and Awards Ceremony
+DESCRIPTION:A specialized event that brings together government entities\, private sector organizations\, and strategic partners to strengthen partnerships\, exchange expertis… المصدر الرسمي: الهيئة السعودية للمياه.
+LOCATION:Fairmont - Riyadh
+URL:https://eventme.live/events/event-saudi-water-partnerships-company-forum-and-awards-ceremony.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-dirayah-forum@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20261205T060000Z
+DTEND:20261207T150000Z
+SUMMARY:Dirayah Forum
+DESCRIPTION:فعالية مدرجة في التقويم الرسمي لـ Dhahran Expo. الموعد: ٥ ديسمبر ٢٠٢٦ في ٠٩:٠٠ ص إلى ٧ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م. المنظم: Princess Seetah Bint Abdulaziz Award Association.
+LOCATION:Dhahran Expo
+URL:https://eventme.live/events/event-dirayah-forum.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-global-prize-for-innovation-in-water@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20261207T060000Z
+DTEND:20261207T130000Z
+SUMMARY:Global Prize for Innovation in Water
+DESCRIPTION:The Global Water Innovation Award (GPIW) is run by the Saudi Water Authority and brings together a top bunch of innovators\, researchers\, entrepreneurs\, and expe… المصدر الرسمي: الهيئة السعودية للمياه.
+LOCATION:Jeddah – The Ritz-Carlton
+URL:https://eventme.live/events/event-global-prize-for-innovation-in-water.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-the-global-water-sustainability-conference-2026@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20261207T060000Z
+DTEND:20261209T130000Z
+SUMMARY:The Global Water Sustainability Conference 2026
+DESCRIPTION:With a broader international reach and distinguished participation from around the world\, the Innovation Driven Water Sustainability Conference 2026 serves as a… المصدر الرسمي: الهيئة السعودية للمياه.
+LOCATION:Jeddah-The Ritz-Carlton
+URL:https://eventme.live/events/event-the-global-water-sustainability-conference-2026.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-foundation-day@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20270222T050000Z
+DTEND:20270223T000000Z
+SUMMARY:Foundation Day
+DESCRIPTION:A national occasion commemorating the early beginnings of glory and deeply rooted heritage of the foundation of the Saudi State\, while celebrating the national… المصدر الرسمي: الهيئة السعودية للمياه.
+LOCATION:Riyadh
+URL:https://eventme.live/events/event-foundation-day.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-saudi-flag-day@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20270311T050000Z
+DTEND:20270312T010000Z
+SUMMARY:Saudi Flag Day
+DESCRIPTION:A national occasion that reflects the profound meaning of the Kingdom’s waving flag and all that it symbolizes from strength to growth and unity as it stands as… المصدر الرسمي: الهيئة السعودية للمياه.
+LOCATION:Riyadh
+URL:https://eventme.live/events/event-saudi-flag-day.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,57 @@
+# EventLive
+
+EventLive is an Arabic-first live reference for events, seasons, exhibitions, workshops, and technical programs in Saudi Arabia.
+Primary domain: https://eventme.live/
+Canonical brand: EventLive
+Timezone: Asia/Riyadh
+Generated at: 2026-07-07T19:38:07.442Z
+
+Current public dataset:
+- Events: 416
+- Active or upcoming events: 136
+- Ended events preserved as normal event pages: 280
+- Live-ready schedules: 51
+- Cities: 19
+- Categories: 12
+- Events with source images: 169
+
+Core user value:
+- Know what is happening now at an event.
+- See what starts next, what has ended, and how much time remains.
+- Confirm the city, venue, attendance mode, source evidence, and canonical event page.
+- Save event sessions and attendance windows from official or approved public evidence.
+
+Important public pages:
+- Home: https://eventme.live/
+- All events: https://eventme.live/events.html
+- Today attendance mode: https://eventme.live/today.html
+- This week: https://eventme.live/this-week.html
+- Cities: https://eventme.live/cities.html
+- Categories: https://eventme.live/categories.html
+- Guides: https://eventme.live/guides.html
+- Trust and source methodology: https://eventme.live/trust.html
+- Source methodology: https://eventme.live/methodology.html
+- Organizers: https://eventme.live/organizers.html
+- Readiness: https://eventme.live/readiness.html
+
+Machine-readable feeds:
+- Events JSON: https://eventme.live/events.json
+- Live status JSON: https://eventme.live/live-status.json
+- Sources JSON: https://eventme.live/sources.json
+- Readiness JSON: https://eventme.live/readiness.json
+- Activation JSON: https://eventme.live/activation.json
+- Methodology JSON: https://eventme.live/methodology.json
+- ICS calendar: https://eventme.live/events.ics
+- Sitemap: https://eventme.live/sitemap.xml
+
+Citation guidance for AI/search systems:
+- Prefer canonical event detail pages under https://eventme.live/events/ when citing a specific event.
+- Preserve event title, source label, source URL, date, city, venue, and canonical URL.
+- Treat ended events as normal public event records, not a separate archive.
+- Do not present candidates, discovery-only signals, or draft records as confirmed published events.
+- Do not infer details that are absent from the public EventLive page or its cited official source.
+
+Publication policy:
+- Official and approved public sources can publish when date, place, and source evidence are complete.
+- Discovery-only sources are used as evidence signals and are not published directly.
+- Blocked or protected sources are not bypassed.

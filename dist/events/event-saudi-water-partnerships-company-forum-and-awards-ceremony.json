@@ -1,0 +1,109 @@
+{
+  "id": "event-saudi-water-partnerships-company-forum-and-awards-ceremony",
+  "title": "Saudi Water Partnerships Company Forum and Awards Ceremony",
+  "summary": "A specialized event that brings together government entities, private sector organizations, and strategic partners to strengthen partnerships, exchange expertis… المصدر الرسمي: الهيئة السعودية للمياه.",
+  "canonical_url": "https://eventme.live/events/event-saudi-water-partnerships-company-forum-and-awards-ceremony.html",
+  "detail_url": "./events/event-saudi-water-partnerships-company-forum-and-awards-ceremony.html",
+  "calendar_url": "./events/event-saudi-water-partnerships-company-forum-and-awards-ceremony.ics",
+  "source_label": "Saudi Water Authority Events",
+  "source_url": "https://www.swa.gov.sa/en/events/Event-639161702137808713",
+  "evidence_url": "https://www.swa.gov.sa/en/events/Event-639161702137808713",
+  "city": "الرياض",
+  "venue": "Fairmont - Riyadh",
+  "venue_address": "Fairmont - Riyadh",
+  "starts_at": "2026-12-01T09:20:00+03:00",
+  "ends_at": "2026-12-01T20:30:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/saudi-water-partnerships-company-forum-and-awards-ceremony-5e9d653040.jpg",
+  "image_alt": "Saudi Water Partnerships Company Forum and Awards Ceremony",
+  "category": "جوائز وتكريم",
+  "category_url": "./categories/awards-ceremonies.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Saudi Water Partnerships Company Forum and Awards Ceremony",
+    "جوائز وتكريم",
+    "conference",
+    "فعالية",
+    "قادمة",
+    "الرياض",
+    "Fairmont - Riyadh",
+    "Saudi Water Authority Events",
+    "water",
+    "sustainability",
+    "conferences",
+    "government",
+    "awards",
+    "workshops",
+    "موظفون ومهنيون",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-12-01T09:20:00+03:00",
+      "ends_at": "2026-12-01T20:30:00+03:00",
+      "room": "Fairmont - Riyadh",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Saudi Water Partnerships Company Forum and Awards Ceremony",
+    "startDate": "2026-12-01T09:20:00+03:00",
+    "endDate": "2026-12-01T20:30:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Fairmont - Riyadh",
+      "address": "Fairmont - Riyadh"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Saudi Water Authority"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/saudi-water-partnerships-company-forum-and-awards-ceremony-5e9d653040.jpg"
+    ],
+    "description": "A specialized event that brings together government entities, private sector organizations, and strategic partners to strengthen partnerships, exchange expertis… المصدر الرسمي: الهيئة السعودية للمياه.",
+    "url": "https://eventme.live/events/event-saudi-water-partnerships-company-forum-and-awards-ceremony.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-saudi-water-partnerships-company-forum-and-awards-ceremony.html",
+    "isAccessibleForFree": false,
+    "keywords": "Saudi Water Partnerships Company Forum and Awards Ceremony, جوائز وتكريم, conference, فعالية, قادمة, الرياض, Fairmont - Riyadh, Saudi Water Authority Events, water, sustainability, conferences, government, awards, workshops, موظفون ومهنيون, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.swa.gov.sa/en/events/Event-639161702137808713"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.swa.gov.sa/en/events/Event-639161702137808713",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

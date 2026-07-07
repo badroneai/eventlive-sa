@@ -1,0 +1,145 @@
+{
+  "id": "event-samsung-innovation-campus-ai-program",
+  "title": "Samsung Innovation Campus AI Program",
+  "summary": "A program designed to equip aspiring data scientists and AI professionals with skills to excel in artificial intelligence المصدر الرسمي: Misk Hub.",
+  "canonical_url": "https://eventme.live/events/event-samsung-innovation-campus-ai-program.html",
+  "detail_url": "./events/event-samsung-innovation-campus-ai-program.html",
+  "calendar_url": "./events/event-samsung-innovation-campus-ai-program.ics",
+  "source_label": "Misk Hub Programs",
+  "source_url": "https://hub.misk.org.sa/programs/skills/samsung-innovation-campus-ai-program/",
+  "evidence_url": "https://hub.misk.org.sa/programs/skills/samsung-innovation-campus-ai-program/",
+  "city": "عن بعد",
+  "venue": "Online",
+  "venue_address": "Online",
+  "starts_at": "2026-07-13T09:00:00+03:00",
+  "ends_at": "2026-09-12T18:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "online",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/samsung-innovation-campus-ai-program-fc29fbad73.png",
+  "image_alt": "Samsung Innovation Campus AI Program",
+  "category": "تدريب تقني",
+  "category_url": "./categories/technology-training.html",
+  "audiences": [
+    {
+      "slug": "job-seekers",
+      "label": "باحثون عن عمل"
+    },
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "tech",
+      "label": "تقنيون"
+    },
+    {
+      "slug": "skilled-trades",
+      "label": "مهاريون وحرفيون"
+    },
+    {
+      "slug": "entrepreneurs",
+      "label": "رواد أعمال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Samsung Innovation Campus AI Program",
+    "تدريب تقني",
+    "skills program",
+    "برنامج ممتد",
+    "قادمة",
+    "عن بعد",
+    "Online",
+    "Misk Hub Programs",
+    "skills",
+    "training",
+    "entrepreneurship",
+    "leadership",
+    "online learning",
+    "career readiness",
+    "باحثون عن عمل",
+    "موظفون ومهنيون",
+    "تقنيون",
+    "مهاريون وحرفيون",
+    "رواد أعمال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-07-13T09:00:00+03:00",
+      "ends_at": "2026-09-12T18:00:00+03:00",
+      "room": "Online",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Samsung Innovation Campus AI Program",
+    "startDate": "2026-07-13T09:00:00+03:00",
+    "endDate": "2026-09-12T18:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "name": "Online",
+      "url": "https://hub.misk.org.sa/programs/skills/samsung-innovation-campus-ai-program/"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Mohammed Bin Salman Foundation / Misk Hub"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/samsung-innovation-campus-ai-program-fc29fbad73.png"
+    ],
+    "description": "A program designed to equip aspiring data scientists and AI professionals with skills to excel in artificial intelligence المصدر الرسمي: Misk Hub.",
+    "url": "https://eventme.live/events/event-samsung-innovation-campus-ai-program.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-samsung-innovation-campus-ai-program.html",
+    "isAccessibleForFree": false,
+    "keywords": "Samsung Innovation Campus AI Program, تدريب تقني, skills program, برنامج ممتد, قادمة, عن بعد, Online, Misk Hub Programs, skills, training, entrepreneurship, leadership, online learning, career readiness, باحثون عن عمل, موظفون ومهنيون, تقنيون, مهاريون وحرفيون, رواد أعمال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "باحثون عن عمل"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "تقنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مهاريون وحرفيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رواد أعمال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://hub.misk.org.sa/programs/skills/samsung-innovation-campus-ai-program/"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://hub.misk.org.sa/programs/skills/samsung-innovation-campus-ai-program/",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

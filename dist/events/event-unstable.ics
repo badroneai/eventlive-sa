@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Unstable | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-unstable@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260709T210000Z
+DTEND:20260710T210000Z
+SUMMARY:Unstable
+DESCRIPTION:Diplomatic Quarter\, Riyadh This is where moments turn iconic. المصدر الرسمي: MDLBEAST. Unstable ضمن ترفيه وعائلات في الرياض. تبدأ الفعالية ١٠‏/٠٧‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ١١‏/٠٧‏/٢٠٢٦، ١٢:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: MDLBEAST Events.
+LOCATION:Riyadh
+URL:https://eventme.live/events/event-unstable.html
+END:VEVENT
+END:VCALENDAR

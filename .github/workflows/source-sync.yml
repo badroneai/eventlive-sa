@@ -1,0 +1,115 @@
+name: EventLive Source Sync
+
+on:
+  schedule:
+    # Every 6 hours to keep upcoming and ended-event discovery fresh for Saudi visitors.
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  # contents: write is required to persist the synced catalog/candidates back to the repo;
+  # without it every published event lives only until the next sync run.
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: eventme-source-sync
+  cancel-in-progress: false
+
+jobs:
+  sync-build-deploy:
+    runs-on: ubuntu-latest
+    env:
+      EVENTLIVE_PUBLIC_BASE_URL: https://eventme.live/
+      EVENTLIVE_SOURCE_ENDED_MIN_YEAR: "2022"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install
+        run: npm ci || npm install
+
+      - name: Collect trusted sources and publish catalog
+        run: npm run sources:sync
+
+      - name: Regression checks
+        run: |
+          npm run test:validation
+          npm run test:csv
+          npm run test:source-auto-publish
+          npm run test:source-sync-pipeline
+          npm run test:backlog-enrichment
+          npm run test:single-session-activation
+          npm run test:live-operational-feeds
+          npm run test:image-cache
+          npm run test:public-assets
+          npm run test:event-kind
+
+      - name: Persist sync state back to the repository
+        run: |
+          git config user.name "eventme-sync-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add \
+            data/events_catalog.json \
+            data/source_candidates.json \
+            data/source_ended_events.json \
+            data/source_registry.json \
+            data/source_run_state.json \
+            data/event_image_cache_manifest.json \
+            reports/source-*.json \
+            reports/source-*.md \
+            reports/event-image-cache-report.json \
+            reports/event-image-cache-report.md \
+            reports/*-enrichment-report.json \
+            reports/*-enrichment-report.md \
+            reports/official-single-session-activation-report.json \
+            reports/official-single-session-activation-report.md
+          if git diff --cached --quiet; then
+            echo "No catalog state changes to persist."
+          else
+            git commit -m "chore(sync): persist daily source sync state [skip ci]"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - name: Upload source sync evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: eventme-source-sync-${{ github.run_id }}
+          retention-days: 14
+          if-no-files-found: warn
+          path: |
+            reports/source-*.md
+            reports/source-*.json
+            reports/source-*.html
+            data/source_candidates.json
+            data/source_run_state.json
+            data/events_catalog.json
+            data/event_image_cache_manifest.json
+            dist/**
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Summary
+        run: |
+          echo "## EventLive Source Sync" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Site: https://eventme.live/" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Source ops: reports/source-ops-report.md" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Deployment: ${{ steps.deployment.outputs.page_url }}" >> "$GITHUB_STEP_SUMMARY"

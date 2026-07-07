@@ -1,0 +1,80 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "فعاليات جدة | EventLive",
+  "home_page_url": "https://eventme.live",
+  "feed_url": "https://eventme.live/feeds/city-jeddah.json",
+  "description": "تغذية فعاليات جدة القادمة والجارية من EventLive.",
+  "language": "ar-SA",
+  "authors": [
+    {
+      "name": "EventLive",
+      "url": "https://eventme.live"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://eventme.live/events/event-registration-now-open-for-children-at-the-childhood-studies-center-for-t.html",
+      "url": "https://eventme.live/events/event-registration-now-open-for-children-at-the-childhood-studies-center-for-t.html",
+      "title": "Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH",
+      "content_text": "فعالية رسمية من تقويم جامعة الملك عبدالعزيز. التاريخ المعلن: 07 Jul 2026 - 29 Jul 2026. Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH ضمن جامعات ومجتمع في جدة. تبدأ الفعالية ٠٧‏/٠٧‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٢٩‏/٠٧‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Saudi Universities and Technical Colleges.",
+      "date_published": "2026-07-07T09:00:00+03:00",
+      "date_modified": "2026-07-07T19:30:39.441Z",
+      "tags": [
+        "جدة",
+        "جامعات ومجتمع",
+        "طلاب وخريجون",
+        "مهاريون وحرفيون",
+        "باحثون وأكاديميون"
+      ],
+      "external_url": "https://kau.edu.sa/en/event/registration-now-open-for-children-at-the-childhood-studies-center-for-t"
+    },
+    {
+      "id": "https://eventme.live/events/event-future-frontiers-for-businesses-catalysts-for-growth-in-a-transformation.html",
+      "url": "https://eventme.live/events/event-future-frontiers-for-businesses-catalysts-for-growth-in-a-transformation.html",
+      "title": "Future Frontiers for Businesses: Catalysts for Growth in a Transformational Economy",
+      "content_text": "فعالية رسمية من تقويم جامعة الملك عبدالعزيز. التاريخ المعلن: 01 Dec 2026 - 02 Dec 2026. Future Frontiers for Businesses: Catalysts for Growth in a Transformational Economy ضمن مؤتمرات ومنتديات في جدة. تبدأ الفعالية ٠١‏/١٢‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٠٢‏/١٢‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Saudi Universities and Technical Colleges.",
+      "date_published": "2026-12-01T09:00:00+03:00",
+      "date_modified": "2026-07-07T19:30:39.441Z",
+      "tags": [
+        "جدة",
+        "مؤتمرات ومنتديات",
+        "طلاب وخريجون",
+        "موظفون ومهنيون",
+        "مهاريون وحرفيون",
+        "باحثون وأكاديميون"
+      ],
+      "external_url": "https://kau.edu.sa/en/event/future-frontiers-for-businesses-catalysts-for-growth-in-a-transformation"
+    },
+    {
+      "id": "https://eventme.live/events/event-global-prize-for-innovation-in-water.html",
+      "url": "https://eventme.live/events/event-global-prize-for-innovation-in-water.html",
+      "title": "Global Prize for Innovation in Water",
+      "content_text": "The Global Water Innovation Award (GPIW) is run by the Saudi Water Authority and brings together a top bunch of innovators, researchers, entrepreneurs, and expe… المصدر الرسمي: الهيئة السعودية للمياه.",
+      "date_published": "2026-12-07T09:00:00+03:00",
+      "date_modified": "2026-07-07T19:30:16.476Z",
+      "tags": [
+        "جدة",
+        "جوائز وتكريم",
+        "موظفون ومهنيون",
+        "رواد أعمال",
+        "باحثون وأكاديميون"
+      ],
+      "external_url": "https://www.swa.gov.sa/en/events/Event-639167725551054643"
+    },
+    {
+      "id": "https://eventme.live/events/event-the-global-water-sustainability-conference-2026.html",
+      "url": "https://eventme.live/events/event-the-global-water-sustainability-conference-2026.html",
+      "title": "The Global Water Sustainability Conference 2026",
+      "content_text": "With a broader international reach and distinguished participation from around the world, the Innovation Driven Water Sustainability Conference 2026 serves as a… المصدر الرسمي: الهيئة السعودية للمياه.",
+      "date_published": "2026-12-07T09:00:00+03:00",
+      "date_modified": "2026-07-07T19:30:16.476Z",
+      "tags": [
+        "جدة",
+        "جوائز وتكريم",
+        "موظفون ومهنيون",
+        "مبدعون وفنون"
+      ],
+      "external_url": "https://www.swa.gov.sa/en/events/Event-639166882740331066"
+    }
+  ]
+}

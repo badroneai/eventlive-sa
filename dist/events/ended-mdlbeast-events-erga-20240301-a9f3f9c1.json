@@ -1,0 +1,116 @@
+{
+  "id": "ended-mdlbeast-events-erga-20240301-a9f3f9c1",
+  "title": "Erga",
+  "summary": "فعالية من تقويم MDLBEAST. المدينة: Riyadh. Erga ضمن ترفيه وعائلات في الرياض. تبدأ الفعالية ٠١‏/٠٣‏/٢٠٢٤، ٩:٠٠ م وتنتهي ٠٢‏/٠٣‏/٢٠٢٤، ٢:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: MDLBEAST Events.",
+  "canonical_url": "https://eventme.live/events/ended-mdlbeast-events-erga-20240301-a9f3f9c1.html",
+  "detail_url": "./events/ended-mdlbeast-events-erga-20240301-a9f3f9c1.html",
+  "calendar_url": "./events/ended-mdlbeast-events-erga-20240301-a9f3f9c1.ics",
+  "source_label": "MDLBEAST Events",
+  "source_url": "https://mdlbeast.com/events/erga",
+  "evidence_url": "https://mdlbeast.com/events/erga",
+  "city": "الرياض",
+  "venue": "Riyadh",
+  "venue_address": "Riyadh",
+  "starts_at": "2024-03-01T21:00:00+03:00",
+  "ends_at": "2024-03-02T02:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-covers/ended-mdlbeast-events-erga-20240301-a9f3f9c1.svg",
+  "image_alt": "غلاف EventLive لفعالية Erga",
+  "category": "ترفيه وعائلات",
+  "category_url": "./categories/entertainment-families.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Erga",
+    "ترفيه وعائلات",
+    "music",
+    "فعالية",
+    "منتهية",
+    "الرياض",
+    "Riyadh",
+    "MDLBEAST Events",
+    "festivals",
+    "conferences",
+    "entertainment",
+    "ended-event",
+    "موظفون ومهنيون",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2024-03-01T21:00:00+03:00",
+      "ends_at": "2024-03-02T02:00:00+03:00",
+      "room": "Riyadh",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Erga",
+    "startDate": "2024-03-01T21:00:00+03:00",
+    "endDate": "2024-03-02T02:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Riyadh",
+      "address": "Riyadh"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "MDLBEAST"
+    },
+    "image": [
+      "https://eventme.live/assets/event-covers/ended-mdlbeast-events-erga-20240301-a9f3f9c1.svg"
+    ],
+    "description": "فعالية من تقويم MDLBEAST. المدينة: Riyadh. Erga ضمن ترفيه وعائلات في الرياض. تبدأ الفعالية ٠١‏/٠٣‏/٢٠٢٤، ٩:٠٠ م وتنتهي ٠٢‏/٠٣‏/٢٠٢٤، ٢:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: MDLBEAST Events.",
+    "url": "https://eventme.live/events/ended-mdlbeast-events-erga-20240301-a9f3f9c1.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-mdlbeast-events-erga-20240301-a9f3f9c1.html",
+    "isAccessibleForFree": false,
+    "keywords": "Erga, ترفيه وعائلات, music, فعالية, منتهية, الرياض, Riyadh, MDLBEAST Events, festivals, conferences, entertainment, ended-event, موظفون ومهنيون, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://mdlbeast.com/events/erga"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://mdlbeast.com/events/erga",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

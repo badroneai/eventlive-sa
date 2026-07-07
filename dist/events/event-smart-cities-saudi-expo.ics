@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Smart Cities Saudi Expo | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-smart-cities-saudi-expo@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260915T110000Z
+DTEND:20260917T190000Z
+SUMMARY:Smart Cities Saudi Expo
+DESCRIPTION:The Smart Cities Saudi Expo takes place in Riyadh from 15–17 September 2026 at the Riyadh International Convention & Exhibition Center\, showcasing innovative technologies and solutions that support smarter\, more connected communities across the Kingdom. Co-located with the Global Infrastructure Expo\, the event brings together the full ecosystem of smart city technologies\, urban planning\, and digital infrastructure—offering visitors and industry professionals a prime opportunity to explore leading suppliers for smart city projects\, gain the latest insights\, and network with peers and decision-makers shaping the future of cognitive urban living in Saudi Arabia. Inquire Now
+LOCATION:Riyadh International Convention & Exhibition Center
+URL:https://eventme.live/events/event-smart-cities-saudi-expo.html
+END:VEVENT
+END:VCALENDAR

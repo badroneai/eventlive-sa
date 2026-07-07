@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Global Infrastructure Expo | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-global-infrastructure-expo@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260915T010000Z
+DTEND:20260917T070000Z
+SUMMARY:Global Infrastructure Expo
+DESCRIPTION:An international specialized event showcasing the latest solutions and technologies in infrastructure projects\, supporting the Saudi Water Authority’s direction… المصدر الرسمي: الهيئة السعودية للمياه.
+LOCATION:Riyadh Intl. Convention & Exhibition Center
+URL:https://eventme.live/events/event-global-infrastructure-expo.html
+END:VEVENT
+END:VCALENDAR

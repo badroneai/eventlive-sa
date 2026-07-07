@@ -1,0 +1,140 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+
+const root = process.cwd();
+const distDir = path.join(root, 'dist');
+const eventsJsonPath = path.join(distDir, 'events.json');
+
+assert.equal(fs.existsSync(eventsJsonPath), true, 'dist/events.json must exist; run npm run build first');
+
+const eventsIndex = JSON.parse(fs.readFileSync(eventsJsonPath, 'utf8'));
+const events = Array.isArray(eventsIndex.events) ? eventsIndex.events : [];
+assert.ok(events.length > 0, 'events.json must include events');
+
+const samples = [
+  events.find((event) => event.live_schedule_ready),
+  events.find((event) => event.schedule_quality === 'basic-window' && event.detail_url),
+  events.find((event) => !event.live_schedule_ready && event.detail_url),
+  events.find((event) => event.status === 'ended' && !event.live_schedule_ready && event.detail_url),
+  events.find((event) => isOnlineEvent(event) && event.detail_url)
+].filter(Boolean).filter((event, index, list) => list.findIndex((item) => item.id === event.id) === index);
+
+assert.ok(samples.length >= 1, 'must have at least one event detail sample');
+
+function jsonLdScripts(html) {
+  return [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
+    .map((match) => JSON.parse(match[1]));
+}
+
+function publicUrl(value = '') {
+  const text = String(value || '');
+  if (/^https?:\/\//i.test(text)) return text;
+  return `https://eventme.live/${text.replace(/^\.\//, '').replace(/^\//, '')}`;
+}
+
+function metaContent(html, name) {
+  const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const propertyMatch = html.match(new RegExp(`<meta\\s+property="${escaped}"\\s+content="([^"]+)"\\s*/?>`, 'i'));
+  const nameMatch = html.match(new RegExp(`<meta\\s+name="${escaped}"\\s+content="([^"]+)"\\s*/?>`, 'i'));
+  return propertyMatch?.[1] || nameMatch?.[1] || '';
+}
+
+function isOnlineEvent(event = {}) {
+  const text = [
+    event.city,
+    event.city_label,
+    event.venue,
+    event.venue_address,
+    event.training_delivery,
+    event.delivery_mode,
+    event.attendance_mode
+  ].filter(Boolean).join(' ');
+  return /\bOnline\b|عن بعد|افتراضي|افتراضية|تفاعلية مباشرة|أونلاين|اونلاين/i.test(text);
+}
+
+for (const event of samples) {
+  const detailPath = path.join(distDir, event.detail_url.replace(/^\.\//, ''));
+  assert.equal(fs.existsSync(detailPath), true, `${event.detail_url} must be generated`);
+
+  const html = fs.readFileSync(detailPath, 'utf8');
+  const charsetCount = (html.match(/<meta charset="UTF-8" \/>/g) || []).length;
+  assert.equal(charsetCount, 1, `${event.detail_url} must include exactly one charset meta tag`);
+
+  assert.match(html, /aria-label="ملخص جاهزية الحضور"/, `${event.detail_url} must include the attendance readiness panel`);
+  assert.match(html, /decision-score/, `${event.detail_url} must show an attendance readiness score`);
+  assert.match(html, /وقت واضح/, `${event.detail_url} must show time readiness signal`);
+  assert.match(html, /مصدر موثوق/, `${event.detail_url} must show source readiness signal`);
+  assert.match(html, /جدول حي/, `${event.detail_url} must show live schedule readiness signal`);
+  assert.doesNotMatch(html, /href="\.\/events\/[^"]+\.ics"/, `${event.detail_url} must not link to a nested events/events calendar path`);
+  assert.match(html, /href="\.\/[^"]+\.ics"/, `${event.detail_url} must link to its sibling calendar file`);
+  for (const rawTag of ['bootcamps', 'accelerators', 'incubators', 'ended-event', 'open', 'gaming', 'technology']) {
+    const rawVisiblePattern = new RegExp(`>\\s*${rawTag.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*<`, 'i');
+    assert.doesNotMatch(html, rawVisiblePattern, `${event.detail_url} must not expose raw tag "${rawTag}" as visible chip text`);
+  }
+  if (event.status === 'ended' && !event.live_schedule_ready) {
+    assert.doesNotMatch(html, />\s*تفعيل الجدول الحي\s*</, `${event.detail_url} must not ask visitors to activate a live schedule after the event ended`);
+    assert.match(html, /اكتملت هذه الفعالية|فعالية مكتملة محفوظة/, `${event.detail_url} must explain ended events as retained records`);
+  }
+
+  const signalCount = (html.match(/class="signal-check /g) || []).length;
+  assert.equal(signalCount, 8, `${event.detail_url} must render all attendance readiness signals`);
+
+  const ld = jsonLdScripts(html);
+  const eventLd = ld.find((item) => item['@type'] === 'Event');
+  const breadcrumbLd = ld.find((item) => item['@type'] === 'BreadcrumbList');
+  assert.ok(eventLd, `${event.detail_url} must include Event JSON-LD`);
+  assert.ok(breadcrumbLd, `${event.detail_url} must include BreadcrumbList JSON-LD`);
+  assert.equal(breadcrumbLd.itemListElement?.length, 4, `${event.detail_url} breadcrumb must include home, catalog, category, and event`);
+  assert.equal(breadcrumbLd.itemListElement?.[0]?.name, 'EventLive', `${event.detail_url} breadcrumb must start with EventLive`);
+  assert.equal(breadcrumbLd.itemListElement?.[1]?.item, 'https://eventme.live/events.html', `${event.detail_url} breadcrumb must include all events page`);
+  assert.equal(breadcrumbLd.itemListElement?.[3]?.item, `https://eventme.live/${event.detail_url.replace(/^\.\//, '')}`, `${event.detail_url} breadcrumb must end at the current canonical page`);
+  assert.match(html, /aria-label="مسار التنقل"/, `${event.detail_url} must include a visible breadcrumb`);
+  assert.equal(eventLd.url, `https://eventme.live/${event.detail_url.replace(/^\.\//, '')}`, `${event.detail_url} must keep eventme.live canonical URL`);
+  assert.ok(eventLd.mainEntityOfPage?.startsWith('https://eventme.live/'), `${event.detail_url} must have canonical mainEntityOfPage`);
+  const expectedImage = publicUrl(event.image_url);
+  assert.deepEqual(eventLd.image, [expectedImage], `${event.detail_url} must expose its event image in Event JSON-LD`);
+  assert.equal(metaContent(html, 'og:type'), 'event', `${event.detail_url} must expose event OpenGraph type`);
+  assert.equal(metaContent(html, 'og:url'), `https://eventme.live/${event.detail_url.replace(/^\.\//, '')}`, `${event.detail_url} must expose canonical OpenGraph URL`);
+  assert.equal(metaContent(html, 'og:locale'), 'ar_SA', `${event.detail_url} must expose Arabic Saudi OpenGraph locale`);
+  assert.equal(metaContent(html, 'og:image'), expectedImage, `${event.detail_url} must expose its event image in OpenGraph`);
+  assert.ok(metaContent(html, 'og:image:alt').length > 0, `${event.detail_url} must expose OpenGraph image alt text`);
+  assert.equal(metaContent(html, 'twitter:card'), 'summary_large_image', `${event.detail_url} must expose a large Twitter/X preview card`);
+  assert.ok(metaContent(html, 'twitter:title').includes(event.title), `${event.detail_url} must expose Twitter/X title`);
+  assert.ok(metaContent(html, 'twitter:description').length >= 80, `${event.detail_url} must expose Twitter/X description`);
+  assert.equal(metaContent(html, 'twitter:image'), expectedImage, `${event.detail_url} must expose its event image for social previews`);
+  assert.ok(metaContent(html, 'twitter:image:alt').length > 0, `${event.detail_url} must expose Twitter/X image alt text`);
+  assert.equal(metaContent(html, 'theme-color'), '#0d6b52', `${event.detail_url} must expose EventLive theme color`);
+  if (isOnlineEvent(event)) {
+    assert.equal(eventLd.eventAttendanceMode, 'https://schema.org/OnlineEventAttendanceMode', `${event.detail_url} must use OnlineEventAttendanceMode`);
+    assert.equal(eventLd.location?.['@type'], 'VirtualLocation', `${event.detail_url} must use VirtualLocation for online events`);
+    assert.ok(eventLd.location?.url?.startsWith('http'), `${event.detail_url} online location must include a public URL`);
+    assert.doesNotMatch(html, />\s*الاتجاهات\s*</, `${event.detail_url} must not show map directions for online events`);
+    assert.doesNotMatch(html, /google\.com\/maps\/dir/i, `${event.detail_url} must not link to Google Maps directions for online events`);
+    assert.match(html, />\s*الدخول أو التسجيل\s*</, `${event.detail_url} must expose a useful online attendance action`);
+  } else {
+    assert.equal(eventLd.eventAttendanceMode, 'https://schema.org/OfflineEventAttendanceMode', `${event.detail_url} must use OfflineEventAttendanceMode`);
+    assert.equal(eventLd.location?.['@type'], 'Place', `${event.detail_url} must use Place for in-person events`);
+  }
+  if (Array.isArray(event.sessions) && event.sessions.length) {
+    assert.ok(Array.isArray(eventLd.subEvent), `${event.detail_url} live schedules must expose subEvent JSON-LD`);
+    assert.equal(eventLd.subEvent.length, Math.min(20, event.sessions.length), `${event.detail_url} subEvent count must follow the live schedule sample`);
+    if (event.schedule_quality === 'basic-window') {
+      assert.equal(event.live_schedule_ready, false, `${event.detail_url} basic attendance windows must not inflate live_schedule_ready`);
+      assert.match(html, />\s*نافذة الحضور\s*</, `${event.detail_url} must label inferred schedules as an attendance window`);
+      assert.match(html, /نافذة حضور أساسية مستنتجة/, `${event.detail_url} must explain inferred attendance windows`);
+      assert.ok(event.attendance_window_ready, `${event.detail_url} must expose attendance_window_ready`);
+      assert.equal(event.attendance_window?.session_type, 'attendance-window', `${event.detail_url} must expose structured attendance window metadata`);
+    }
+    for (const subEvent of eventLd.subEvent) {
+      assert.equal(subEvent['@type'], 'Event', `${event.detail_url} each subEvent must be an Event`);
+      assert.ok(subEvent.url?.startsWith(`https://eventme.live/${event.detail_url.replace(/^\.\//, '')}#session-`), `${event.detail_url} subEvent URLs must point to visible session anchors`);
+      const anchor = subEvent.url.split('#')[1];
+      assert.match(html, new RegExp(`id="${anchor.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}"`), `${event.detail_url} must render a matching session anchor for ${anchor}`);
+    }
+  } else {
+    assert.equal(eventLd.subEvent, undefined, `${event.detail_url} must not claim subEvents without a live schedule`);
+  }
+}
+
+console.log('event-detail-page-regression-test: ok');

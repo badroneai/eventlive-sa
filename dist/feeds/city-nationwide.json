@@ -1,0 +1,84 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "فعاليات على مستوى المملكة | EventLive",
+  "home_page_url": "https://eventme.live",
+  "feed_url": "https://eventme.live/feeds/city-nationwide.json",
+  "description": "تغذية فعاليات على مستوى المملكة القادمة والجارية من EventLive.",
+  "language": "ar-SA",
+  "authors": [
+    {
+      "name": "EventLive",
+      "url": "https://eventme.live"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://eventme.live/events/event-saudi-national-day.html",
+      "url": "https://eventme.live/events/event-saudi-national-day.html",
+      "title": "Saudi National Day",
+      "content_text": "Everything you need to know about Saudi National Day المصدر الرسمي: Visit Saudi. Saudi National Day ضمن ترفيه وعائلات في على مستوى المملكة. تبدأ الفعالية ٢٣‏/٠٩‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٢٣‏/٠٩‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Calendar.",
+      "date_published": "2026-09-23T09:00:00+03:00",
+      "date_modified": "2026-07-07T19:30:16.476Z",
+      "tags": [
+        "على مستوى المملكة",
+        "ترفيه وعائلات",
+        "تقنيون",
+        "عائلات وأطفال",
+        "مبدعون وفنون",
+        "رياضة ولياقة"
+      ],
+      "external_url": "https://www.visitsaudi.com/en/saudi-calendar/saudi-national-day"
+    },
+    {
+      "id": "https://eventme.live/events/event-founding-day.html",
+      "url": "https://eventme.live/events/event-founding-day.html",
+      "title": "Founding Day",
+      "content_text": "Honoring History. المصدر الرسمي: Visit Saudi. Founding Day ضمن ترفيه وعائلات في على مستوى المملكة. تبدأ الفعالية ٢٢‏/٠٢‏/٢٠٢٧، ٩:٠٠ ص وتنتهي ٢٢‏/٠٢‏/٢٠٢٧، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Calendar.",
+      "date_published": "2027-02-22T09:00:00+03:00",
+      "date_modified": "2026-07-07T19:30:16.476Z",
+      "tags": [
+        "على مستوى المملكة",
+        "ترفيه وعائلات",
+        "تقنيون",
+        "عائلات وأطفال",
+        "مبدعون وفنون",
+        "رياضة ولياقة"
+      ],
+      "external_url": "https://www.visitsaudi.com/en/saudi-calendar/founding-day"
+    },
+    {
+      "id": "https://eventme.live/events/event-eid-al-fitr.html",
+      "url": "https://eventme.live/events/event-eid-al-fitr.html",
+      "title": "Eid Al-Fitr",
+      "content_text": "Eid Al Fitr: A Sweet Celebration of Faith and Community المصدر الرسمي: Visit Saudi. Eid Al-Fitr ضمن ترفيه وعائلات في على مستوى المملكة. تبدأ الفعالية ٣٠‏/٠٣‏/٢٠٢٧، ٩:٠٠ ص وتنتهي ٣٠‏/٠٣‏/٢٠٢٧، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Calendar.",
+      "date_published": "2027-03-30T09:00:00+03:00",
+      "date_modified": "2026-07-07T19:30:16.476Z",
+      "tags": [
+        "على مستوى المملكة",
+        "ترفيه وعائلات",
+        "تقنيون",
+        "عائلات وأطفال",
+        "مبدعون وفنون",
+        "رياضة ولياقة"
+      ],
+      "external_url": "https://www.visitsaudi.com/en/saudi-calendar/eid-al-fitr"
+    },
+    {
+      "id": "https://eventme.live/events/event-eid-al-adha.html",
+      "url": "https://eventme.live/events/event-eid-al-adha.html",
+      "title": "Eid Al-Adha",
+      "content_text": "مرشح من Visit Saudi Calendar ضمن Public Holidays. المصدر الرسمي: Visit Saudi. Eid Al-Adha ضمن ترفيه وعائلات في على مستوى المملكة. تبدأ الفعالية ٠٦‏/٠٦‏/٢٠٢٧، ٩:٠٠ ص وتنتهي ١٠‏/٠٦‏/٢٠٢٧، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Calendar.",
+      "date_published": "2027-06-06T09:00:00+03:00",
+      "date_modified": "2026-07-07T19:30:16.476Z",
+      "tags": [
+        "على مستوى المملكة",
+        "ترفيه وعائلات",
+        "تقنيون",
+        "عائلات وأطفال",
+        "مبدعون وفنون",
+        "رياضة ولياقة"
+      ],
+      "external_url": "https://www.visitsaudi.com/en/saudi-calendar/eid-al-adha"
+    }
+  ]
+}

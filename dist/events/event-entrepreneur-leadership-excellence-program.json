@@ -1,0 +1,136 @@
+{
+  "id": "event-entrepreneur-leadership-excellence-program",
+  "title": "Entrepreneur Leadership Excellence Program",
+  "summary": "Program Objectives Program Information Program Achievements FAQs Program Format In-Person Program Type Instructor Paced Language English Entrepreneur Leadership Excellence Program Cohort Program Start/End Date 27 Jul - 29 Jul 2026 Applications open 17 May 2... المصدر الرسمي: Misk Hub.",
+  "canonical_url": "https://eventme.live/events/event-entrepreneur-leadership-excellence-program.html",
+  "detail_url": "./events/event-entrepreneur-leadership-excellence-program.html",
+  "calendar_url": "./events/event-entrepreneur-leadership-excellence-program.ics",
+  "source_label": "Misk Hub Programs",
+  "source_url": "https://hub.misk.org.sa/programs/entrepreneurship/entrepreneur-leadership-excellence-program/",
+  "evidence_url": "https://hub.misk.org.sa/programs/entrepreneurship/entrepreneur-leadership-excellence-program/",
+  "city": "السعودية",
+  "venue": "In-Person",
+  "venue_address": "In-Person",
+  "starts_at": "2026-07-27T09:00:00+03:00",
+  "ends_at": "2026-07-29T18:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/entrepreneur-leadership-excellence-program-01356b9cea.png",
+  "image_alt": "Entrepreneur Leadership Excellence Program",
+  "category": "تدريب تقني",
+  "category_url": "./categories/technology-training.html",
+  "audiences": [
+    {
+      "slug": "job-seekers",
+      "label": "باحثون عن عمل"
+    },
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "skilled-trades",
+      "label": "مهاريون وحرفيون"
+    },
+    {
+      "slug": "entrepreneurs",
+      "label": "رواد أعمال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Entrepreneur Leadership Excellence Program",
+    "تدريب تقني",
+    "skills program",
+    "فعالية",
+    "قادمة",
+    "السعودية",
+    "In-Person",
+    "Misk Hub Programs",
+    "skills",
+    "training",
+    "entrepreneurship",
+    "leadership",
+    "online learning",
+    "career readiness",
+    "باحثون عن عمل",
+    "موظفون ومهنيون",
+    "مهاريون وحرفيون",
+    "رواد أعمال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-07-27T09:00:00+03:00",
+      "ends_at": "2026-07-29T18:00:00+03:00",
+      "room": "In-Person",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Entrepreneur Leadership Excellence Program",
+    "startDate": "2026-07-27T09:00:00+03:00",
+    "endDate": "2026-07-29T18:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "In-Person",
+      "address": "In-Person"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Mohammed Bin Salman Foundation / Misk Hub"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/entrepreneur-leadership-excellence-program-01356b9cea.png"
+    ],
+    "description": "Program Objectives Program Information Program Achievements FAQs Program Format In-Person Program Type Instructor Paced Language English Entrepreneur Leadership Excellence Program Cohort Program Start/End Date 27 Jul - 29 Jul 2026 Applications open 17 May 2... المصدر الرسمي: Misk Hub.",
+    "url": "https://eventme.live/events/event-entrepreneur-leadership-excellence-program.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-entrepreneur-leadership-excellence-program.html",
+    "isAccessibleForFree": false,
+    "keywords": "Entrepreneur Leadership Excellence Program, تدريب تقني, skills program, فعالية, قادمة, السعودية, In-Person, Misk Hub Programs, skills, training, entrepreneurship, leadership, online learning, career readiness, باحثون عن عمل, موظفون ومهنيون, مهاريون وحرفيون, رواد أعمال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "باحثون عن عمل"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مهاريون وحرفيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رواد أعمال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://hub.misk.org.sa/programs/entrepreneurship/entrepreneur-leadership-excellence-program/"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://hub.misk.org.sa/programs/entrepreneurship/entrepreneur-leadership-excellence-program/",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

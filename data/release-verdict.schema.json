@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://eventlive.sa/schemas/release-verdict.schema.json",
+  "$id": "https://eventme.live/schemas/release-verdict.schema.json",
   "title": "Release Safety Verdict Output",
   "type": "object",
   "additionalProperties": false,

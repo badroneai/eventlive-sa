@@ -1,0 +1,116 @@
+{
+  "id": "ended-mdlbeast-events-mdlbeast-presents-keinemusik-20250404-45c24c1e",
+  "title": "MDLBEAST Presents: KEINEMUSIK",
+  "summary": "فعالية من تقويم MDLBEAST. المدينة: AlUla. MDLBEAST Presents: KEINEMUSIK ضمن ترفيه وعائلات في العلا. تبدأ الفعالية ٠٤‏/٠٤‏/٢٠٢٥، ٧:٠٠ م وتنتهي ٠٥‏/٠٤‏/٢٠٢٥، ٧:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: MDLBEAST Events.",
+  "canonical_url": "https://eventme.live/events/ended-mdlbeast-events-mdlbeast-presents-keinemusik-20250404-45c24c1e.html",
+  "detail_url": "./events/ended-mdlbeast-events-mdlbeast-presents-keinemusik-20250404-45c24c1e.html",
+  "calendar_url": "./events/ended-mdlbeast-events-mdlbeast-presents-keinemusik-20250404-45c24c1e.ics",
+  "source_label": "MDLBEAST Events",
+  "source_url": "https://mdlbeast.com/events/mdlbeast-presents-keinemusik",
+  "evidence_url": "https://mdlbeast.com/events/mdlbeast-presents-keinemusik",
+  "city": "العلا",
+  "venue": "AlUla",
+  "venue_address": "AlUla",
+  "starts_at": "2025-04-04T19:00:00+03:00",
+  "ends_at": "2025-04-05T07:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-covers/ended-mdlbeast-events-mdlbeast-presents-keinemusik-20250404-45c24c1e.svg",
+  "image_alt": "غلاف EventLive لفعالية MDLBEAST Presents: KEINEMUSIK",
+  "category": "ترفيه وعائلات",
+  "category_url": "./categories/entertainment-families.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "MDLBEAST Presents: KEINEMUSIK",
+    "ترفيه وعائلات",
+    "music",
+    "فعالية",
+    "منتهية",
+    "العلا",
+    "AlUla",
+    "MDLBEAST Events",
+    "festivals",
+    "conferences",
+    "entertainment",
+    "ended-event",
+    "موظفون ومهنيون",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2025-04-04T19:00:00+03:00",
+      "ends_at": "2025-04-05T07:00:00+03:00",
+      "room": "AlUla",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "MDLBEAST Presents: KEINEMUSIK",
+    "startDate": "2025-04-04T19:00:00+03:00",
+    "endDate": "2025-04-05T07:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "AlUla",
+      "address": "AlUla"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "MDLBEAST"
+    },
+    "image": [
+      "https://eventme.live/assets/event-covers/ended-mdlbeast-events-mdlbeast-presents-keinemusik-20250404-45c24c1e.svg"
+    ],
+    "description": "فعالية من تقويم MDLBEAST. المدينة: AlUla. MDLBEAST Presents: KEINEMUSIK ضمن ترفيه وعائلات في العلا. تبدأ الفعالية ٠٤‏/٠٤‏/٢٠٢٥، ٧:٠٠ م وتنتهي ٠٥‏/٠٤‏/٢٠٢٥، ٧:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: MDLBEAST Events.",
+    "url": "https://eventme.live/events/ended-mdlbeast-events-mdlbeast-presents-keinemusik-20250404-45c24c1e.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-mdlbeast-events-mdlbeast-presents-keinemusik-20250404-45c24c1e.html",
+    "isAccessibleForFree": false,
+    "keywords": "MDLBEAST Presents: KEINEMUSIK, ترفيه وعائلات, music, فعالية, منتهية, العلا, AlUla, MDLBEAST Events, festivals, conferences, entertainment, ended-event, موظفون ومهنيون, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://mdlbeast.com/events/mdlbeast-presents-keinemusik"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://mdlbeast.com/events/mdlbeast-presents-keinemusik",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

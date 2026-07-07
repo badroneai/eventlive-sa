@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:PFL Mena Final | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-pfl-mena-final@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20261211T060000Z
+DTEND:20261211T150000Z
+SUMMARY:PFL Mena Final
+DESCRIPTION:فعالية مدرجة في التقويم الرسمي لـ Dhahran Expo. الموعد: ١١ ديسمبر ٢٠٢٦ في ٠٩:٠٠ ص إلى ١١ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م. المنظم: PFL Mena.
+LOCATION:Dhahran Expo
+URL:https://eventme.live/events/event-pfl-mena-final.html
+END:VEVENT
+END:VCALENDAR

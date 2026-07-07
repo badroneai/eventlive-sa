@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:The Saudi Food Show | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-the-saudi-food-show@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260927T130000Z
+DTEND:20260929T200000Z
+SUMMARY:The Saudi Food Show
+DESCRIPTION:The Saudi Food Show returns to Riyadh Front Exhibition & Convention Center\, bringing together global food and beverage leaders to showcase the latest trends\, products\, and innovations shaping the Kingdom’s fast-growing F&B sector. Alongside the exhibition floor\, the Elite Lounge serves as the heart of the Tawasul Meetings—a premium space where top buyers meet top brands and conversations turn into real business impact. Visitors can also catch the excitement at Top Table Saudi\, featuring chef-led masterclasses\, bold flavours\, and standout culinary moments from global icons and local talent\, while the Saudi Food Summit delivers interactive sessions on everything from branding strategy to industrial incentives\, helping shape the future of F&B. For coffee lovers\, Coffee World adds another layer of energy with hands-on masterclasses blending flavour\, technique\, and passion. Book Now
+LOCATION:Riyadh Front Exhibition & Conference Center
+URL:https://eventme.live/events/event-the-saudi-food-show.html
+END:VEVENT
+END:VCALENDAR

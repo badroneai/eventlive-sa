@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-07-07T19:38:07.442Z",
+  "platform": "EventLive",
+  "canonical_domain": "eventme.live",
+  "public_events": 416,
+  "upcoming_or_active": 136,
+  "ended_events": 280,
+  "live_ready_events": 51,
+  "registered_sources": 66,
+  "official_or_government_sources": 60,
+  "discovery_only_sources": 34,
+  "partnership_needed_sources": 4,
+  "source_trust_levels": {
+    "official": 52,
+    "official-marketplace": 3,
+    "venue-official": 5,
+    "aggregator": 3,
+    "community": 2,
+    "partner": 1
+  },
+  "intake_policies": {
+    "partnership-needed": 3,
+    "official-feed-preferred": 29,
+    "candidate-only": 8,
+    "monitor-public": 26
+  },
+  "candidate_publication_gates": {
+    "source-evidence": 30,
+    "catalog-review": 140,
+    "duplicate-review": 15
+  }
+}

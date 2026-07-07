@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260712T060000Z
+DTEND:20260714T150000Z
+SUMMARY:Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي
+DESCRIPTION:تعد هذه الدورة مدخلاً تقنياً وعملياً لأحد أكثر المجالات ثورية في التكنولوجيا الحديثة. المصدر الرسمي: بوابة مهارات المستقبل.
+LOCATION:تفاعلية مباشرة
+URL:https://eventme.live/events/event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي.html
+END:VEVENT
+END:VCALENDAR

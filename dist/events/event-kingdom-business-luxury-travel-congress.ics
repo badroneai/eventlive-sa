@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Kingdom Business Luxury Travel Congress | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-kingdom-business-luxury-travel-congress@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260915T060000Z
+DTEND:20260916T140000Z
+SUMMARY:Kingdom Business Luxury Travel Congress
+DESCRIPTION:The 5th Annual Kingdom Business Luxury Travel Congress 2026 (KBLT) takes place in Riyadh on 15–16 September 2026\, offering a boutique\, content-led platform designed for high-level discussions and real business outcomes. Under the theme “The Saudi Connection – Outbound Travel Meets Global Opportunities\,” the event connects global luxury travel and hospitality suppliers with Saudi Arabia’s budget-holding buyers through an invitation-only\, pre-qualified audience and structured one-to-one meetings. With a tailored agenda focused matchmaking and networking\, KBLT provides targeted access to the Kingdom’s fast-growing outbound luxury travel segment while spotlighting Saudi change-makers shaping the future of travel\, hospitality\, and premium experiences in line with Vision 2030. Register Now
+LOCATION:Riyadh
+URL:https://eventme.live/events/event-kingdom-business-luxury-travel-congress.html
+END:VEVENT
+END:VCALENDAR

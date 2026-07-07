@@ -4,6 +4,16 @@
   - Latest validation result for the last executed source.
 - `reports/build-report.md`
   - Latest build result for the last executed source.
+- `reports/source-collection-report.*`
+  - Latest source collector run, attempted sources, extracted candidate counts, and raw snapshot paths.
+- `reports/source-auto-publish-report.*`
+  - Latest automated trusted-source publication run, including published catalog events and blocked candidates.
+- `reports/source-review-report.*`
+  - Latest candidate review action, before/after gate state, reviewer metadata, and warnings.
+- `reports/source-promotion-report.*`
+  - Latest controlled promotion run from approved source candidates into the discovery catalog.
+- `reports/source-ops-report.*`
+  - Unified source operations board covering collection coverage, source health, candidate funnel, focus queue, and next executive action.
 - `reports/diffs/`
   - Candidate vs baseline or latest-approved change reports.
   - `latest-diff.*` always points to the newest diff output.

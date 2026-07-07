@@ -1,0 +1,163 @@
+{
+  "id": "event-arabian-and-international-industries-exhibition",
+  "title": "Arabian and International Industries Exhibition",
+  "summary": "فعالية مدرجة في التقويم الرسمي لـ Dhahran Expo. الموعد: ٢ سبتمبر ٢٠٢٦ في ٠٩:٠٠ ص إلى ١١ سبتمبر ٢٠٢٦ في ٠٦:٠٠ م. المنظم: Ibrahim Mohammed Saad Al-Awad Establishment for Organizing Exhibitions and Conferences.",
+  "canonical_url": "https://eventme.live/events/event-arabian-and-international-industries-exhibition.html",
+  "detail_url": "./events/event-arabian-and-international-industries-exhibition.html",
+  "calendar_url": "./events/event-arabian-and-international-industries-exhibition.ics",
+  "source_label": "Dhahran Expo Calendar",
+  "source_url": "https://dhahranexpo.com.sa",
+  "evidence_url": "https://dhahranexpo.com.sa",
+  "city": "الظهران",
+  "venue": "Dhahran Expo",
+  "venue_address": "Dhahran Expo",
+  "starts_at": "2026-09-02T09:00:00+03:00",
+  "ends_at": "2026-09-11T18:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/offshore-technology-innovation-technical-conference-expo-offshore-arab-46911ebc89.jpg",
+  "image_alt": "Arabian and International Industries Exhibition",
+  "category": "معارض وتجارية",
+  "category_url": "./categories/exhibition-trade.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    }
+  ],
+  "keywords": [
+    "Arabian and International Industries Exhibition",
+    "معارض وتجارية",
+    "exhibition",
+    "فعالية",
+    "قادمة",
+    "الظهران",
+    "Dhahran Expo",
+    "Dhahran Expo Calendar",
+    "exhibitions",
+    "conferences",
+    "trade shows",
+    "venue",
+    "business",
+    "dhahran-expo",
+    "موظفون ومهنيون"
+  ],
+  "sessions": [
+    {
+      "title": "ساعات الزيارة",
+      "starts_at": "2026-09-02T16:00:00+03:00",
+      "ends_at": "2026-09-02T22:00:00+03:00",
+      "room": "Dhahran Expo",
+      "anchor": "#session-event-arabian-and-international-industries-exhibition-opening-hours-1"
+    },
+    {
+      "title": "ساعات الزيارة",
+      "starts_at": "2026-09-03T16:00:00+03:00",
+      "ends_at": "2026-09-03T22:00:00+03:00",
+      "room": "Dhahran Expo",
+      "anchor": "#session-event-arabian-and-international-industries-exhibition-opening-hours-2"
+    },
+    {
+      "title": "ساعات الزيارة",
+      "starts_at": "2026-09-04T16:00:00+03:00",
+      "ends_at": "2026-09-04T22:00:00+03:00",
+      "room": "Dhahran Expo",
+      "anchor": "#session-event-arabian-and-international-industries-exhibition-opening-hours-3"
+    },
+    {
+      "title": "ساعات الزيارة",
+      "starts_at": "2026-09-05T16:00:00+03:00",
+      "ends_at": "2026-09-05T22:00:00+03:00",
+      "room": "Dhahran Expo",
+      "anchor": "#session-event-arabian-and-international-industries-exhibition-opening-hours-4"
+    },
+    {
+      "title": "ساعات الزيارة",
+      "starts_at": "2026-09-06T16:00:00+03:00",
+      "ends_at": "2026-09-06T22:00:00+03:00",
+      "room": "Dhahran Expo",
+      "anchor": "#session-event-arabian-and-international-industries-exhibition-opening-hours-5"
+    },
+    {
+      "title": "ساعات الزيارة",
+      "starts_at": "2026-09-07T16:00:00+03:00",
+      "ends_at": "2026-09-07T22:00:00+03:00",
+      "room": "Dhahran Expo",
+      "anchor": "#session-event-arabian-and-international-industries-exhibition-opening-hours-6"
+    },
+    {
+      "title": "ساعات الزيارة",
+      "starts_at": "2026-09-08T16:00:00+03:00",
+      "ends_at": "2026-09-08T22:00:00+03:00",
+      "room": "Dhahran Expo",
+      "anchor": "#session-event-arabian-and-international-industries-exhibition-opening-hours-7"
+    },
+    {
+      "title": "ساعات الزيارة",
+      "starts_at": "2026-09-09T16:00:00+03:00",
+      "ends_at": "2026-09-09T22:00:00+03:00",
+      "room": "Dhahran Expo",
+      "anchor": "#session-event-arabian-and-international-industries-exhibition-opening-hours-8"
+    },
+    {
+      "title": "ساعات الزيارة",
+      "starts_at": "2026-09-10T16:00:00+03:00",
+      "ends_at": "2026-09-10T22:00:00+03:00",
+      "room": "Dhahran Expo",
+      "anchor": "#session-event-arabian-and-international-industries-exhibition-opening-hours-9"
+    },
+    {
+      "title": "ساعات الزيارة",
+      "starts_at": "2026-09-11T16:00:00+03:00",
+      "ends_at": "2026-09-11T22:00:00+03:00",
+      "room": "Dhahran Expo",
+      "anchor": "#session-event-arabian-and-international-industries-exhibition-opening-hours-10"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Arabian and International Industries Exhibition",
+    "startDate": "2026-09-02T09:00:00+03:00",
+    "endDate": "2026-09-11T18:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Dhahran Expo",
+      "address": "Dhahran Expo"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Ibrahim Mohammed Saad Al-Awad Establishment for Organizing Exhibitions and Conferences"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/offshore-technology-innovation-technical-conference-expo-offshore-arab-46911ebc89.jpg"
+    ],
+    "description": "فعالية مدرجة في التقويم الرسمي لـ Dhahran Expo. الموعد: ٢ سبتمبر ٢٠٢٦ في ٠٩:٠٠ ص إلى ١١ سبتمبر ٢٠٢٦ في ٠٦:٠٠ م. المنظم: Ibrahim Mohammed Saad Al-Awad Establishment for Organizing Exhibitions and Conferences.",
+    "url": "https://eventme.live/events/event-arabian-and-international-industries-exhibition.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-arabian-and-international-industries-exhibition.html",
+    "isAccessibleForFree": false,
+    "keywords": "Arabian and International Industries Exhibition, معارض وتجارية, exhibition, فعالية, قادمة, الظهران, Dhahran Expo, Dhahran Expo Calendar, exhibitions, conferences, trade shows, venue, business, dhahran-expo, موظفون ومهنيون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      }
+    ],
+    "sameAs": [
+      "https://dhahranexpo.com.sa"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://dhahranexpo.com.sa",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

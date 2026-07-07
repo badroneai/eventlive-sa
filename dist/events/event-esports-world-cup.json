@@ -1,0 +1,111 @@
+{
+  "id": "event-esports-world-cup",
+  "title": "Esports World Cup",
+  "summary": "The Esports World Cup 2026 returns to Riyadh from 6 July to 23 August, delivering a summer-long celebration of elite competition and live entertainment as top clubs and players battle across multiple genres and platforms. With a lineup spanning tactical shooters, MOBAs, fighting games, strategy, racing, and even chess—including global favourites such as League of Legends, Counter-Strike 2, Fortnite, and Rocket League—the festival reinforces Riyadh’s role as a leading hub for international esports. New for 2026, Trackmania joins the programme, bringing high-precision racing where competitors chase the fastest times on one of esports’ most skill-intensive stages. The Esports World Cup, a multi-game global esports tournament and festival, will unite the global e-gaming community, including players, fans, game producers, and publishers, with a focus on fostering connections and collaborations.",
+  "canonical_url": "https://eventme.live/events/event-esports-world-cup.html",
+  "detail_url": "./events/event-esports-world-cup.html",
+  "calendar_url": "./events/event-esports-world-cup.ics",
+  "source_label": "Riyadh City Events",
+  "source_url": "https://riyadh.sa/en/moment/events/item/event/30169",
+  "evidence_url": "https://riyadh.sa/en/moment/events/item/event/30169",
+  "city": "الرياض",
+  "venue": "Boulevard City, Riyadh",
+  "venue_address": "Boulevard City, Riyadh",
+  "starts_at": "2026-07-06T17:00:00+03:00",
+  "ends_at": "2026-08-23T22:00:00+03:00",
+  "status": "ongoing",
+  "status_label": "برنامج جارٍ",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/esports-world-cup-82c085857f.png",
+  "image_alt": "Esports World Cup",
+  "category": "ألعاب ورياضات إلكترونية",
+  "category_url": "./categories/gaming-esports.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "sports",
+      "label": "رياضة ولياقة"
+    }
+  ],
+  "keywords": [
+    "Esports World Cup",
+    "ألعاب ورياضات إلكترونية",
+    "Entertainment & Sports",
+    "برنامج ممتد",
+    "برنامج جارٍ",
+    "الرياض",
+    "Boulevard City, Riyadh",
+    "Riyadh City Events",
+    "city events",
+    "culture",
+    "sports",
+    "community",
+    "camps",
+    "tourism",
+    "5498",
+    "7618",
+    "عائلات وأطفال",
+    "رياضة ولياقة"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-07-06T17:00:00+03:00",
+      "ends_at": "2026-08-23T22:00:00+03:00",
+      "room": "Boulevard City, Riyadh",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Esports World Cup",
+    "startDate": "2026-07-06T17:00:00+03:00",
+    "endDate": "2026-08-23T22:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Boulevard City, Riyadh",
+      "address": "Boulevard City, Riyadh"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Esports World Cup Foundation"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/esports-world-cup-82c085857f.png"
+    ],
+    "description": "The Esports World Cup 2026 returns to Riyadh from 6 July to 23 August, delivering a summer-long celebration of elite competition and live entertainment as top clubs and players battle across multiple genres and platforms. With a lineup spanning tactical shooters, MOBAs, fighting games, strategy, racing, and even chess—including global favourites such as League of Legends, Counter-Strike 2, Fortnite, and Rocket League—the festival reinforces Riyadh’s role as a leading hub for international esports. New for 2026, Trackmania joins the programme, bringing high-precision racing where competitors chase the fastest times on one of esports’ most skill-intensive stages. The Esports World Cup, a multi-game global esports tournament and festival, will unite the global e-gaming community, including players, fans, game producers, and publishers, with a focus on fostering connections and collaborations.",
+    "url": "https://eventme.live/events/event-esports-world-cup.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-esports-world-cup.html",
+    "isAccessibleForFree": false,
+    "keywords": "Esports World Cup, ألعاب ورياضات إلكترونية, Entertainment & Sports, برنامج ممتد, برنامج جارٍ, الرياض, Boulevard City, Riyadh, Riyadh City Events, city events, culture, sports, community, camps, tourism, 5498, 7618, عائلات وأطفال, رياضة ولياقة",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رياضة ولياقة"
+      }
+    ],
+    "sameAs": [
+      "https://riyadh.sa/en/moment/events/item/event/30169"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://riyadh.sa/en/moment/events/item/event/30169",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

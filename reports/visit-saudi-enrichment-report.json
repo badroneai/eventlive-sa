@@ -1,0 +1,111 @@
+{
+  "generated_at": "2026-07-07T19:23:40.951Z",
+  "catalog": "data/events_catalog.json",
+  "source": "Visit Saudi Calendar",
+  "totals": {
+    "targets": 11,
+    "candidates": 11,
+    "enriched": 11,
+    "fetched": 10,
+    "images": 9,
+    "fetch_failures": 1
+  },
+  "enriched": [
+    {
+      "id": "event-arabic-language-exhibition-28",
+      "title": "Arabic Language Exhibition 28",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/arabic-language-exhibition-in-riyadh?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-arabic-language-exhibition-for-kids",
+      "title": "Arabic Language Exhibition for kids",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/arabic-language-exhibition-for-kids?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-aseer-season",
+      "title": "Aseer Season",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/private-aseeri-home-visit?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-international-falcon-breeders-auction",
+      "title": "International Falcon Breeders Auction",
+      "source_method": "approved-catalog-row",
+      "image_url": "https://scth.scene7.com/is/image/scth/international-falcon-breeders-auction-in-riyadh?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": false,
+      "features": 6
+    },
+    {
+      "id": "event-leap-2026",
+      "title": "LEAP 2026",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/leap-event-in-riyadh?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-fibo-arabia-2026",
+      "title": "FIBO Arabia 2026",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/fibo-arabia?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-saudi-national-day",
+      "title": "Saudi National Day",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/saudi-national-day-new?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-al-milwah-falcon-race",
+      "title": "Al Milwah Falcon Race",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/almelwah-racing?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-founding-day",
+      "title": "Founding Day",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/founding-day-hero-banner?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-eid-al-fitr",
+      "title": "Eid Al-Fitr",
+      "source_method": "official-page-html",
+      "image_url": "",
+      "fetched": true,
+      "features": 6
+    },
+    {
+      "id": "event-eid-al-adha",
+      "title": "Eid Al-Adha",
+      "source_method": "official-page-html",
+      "image_url": "",
+      "fetched": true,
+      "features": 6
+    }
+  ],
+  "failed": [
+    {
+      "id": "event-international-falcon-breeders-auction",
+      "title": "International Falcon Breeders Auction",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30838",
+      "reason": "fetch failed"
+    }
+  ]
+}

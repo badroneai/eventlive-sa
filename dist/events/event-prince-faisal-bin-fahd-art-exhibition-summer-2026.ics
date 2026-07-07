@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Prince Faisal Bin Fahd Art Exhibition: Summer 2026 | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-prince-faisal-bin-fahd-art-exhibition-summer-2026@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260701T130000Z
+DTEND:20260801T190000Z
+SUMMARY:Prince Faisal Bin Fahd Art Exhibition: Summer 2026
+DESCRIPTION:The Prince Faisal Bin Fahd Art Exhibition: Summer 2026 returns in its fourth edition\, bringing together a diverse group of Saudi and resident artists under a unifying theme 'Ways of Knowing: Art as Interdisciplinary Research\,' that explores societal transformation across generations. The exhibition presents a rich collection of works across multiple mediums—including abstract painting\, photography\, multimedia installations\, and conceptual art—offering contemporary perspectives on Saudi cultural identity and evolving social values. Through creative expression\, the exhibition highlights the dialogue between past\, present\, and future\, reflecting the dynamic role of art in shaping and interpreting social change.
+LOCATION:Prince Faisal Bin Fahd Arts Hall\, Riyadh
+URL:https://eventme.live/events/event-prince-faisal-bin-fahd-art-exhibition-summer-2026.html
+END:VEVENT
+END:VCALENDAR

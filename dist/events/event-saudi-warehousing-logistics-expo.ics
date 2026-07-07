@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Saudi Warehousing & Logistics Expo | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-saudi-warehousing-logistics-expo@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260830T133000Z
+DTEND:20260901T180000Z
+SUMMARY:Saudi Warehousing & Logistics Expo
+DESCRIPTION:Saudi Warehousing & Logistics Expo runs from 30 August to 1 September 2026 at Riyadh Front Exhibition & Conference Center\, bringing together the Kingdom’s most influential supply chain leaders and solution providers to drive smarter\, more efficient logistics. Focused on empowering efficiency across warehousing\, transport\, and end-to-end supply chains\, the expo offers exhibitors direct access to key decision-makers\, a high-visibility platform to showcase and launch innovations\, and targeted networking that supports business growth aligned with Vision 2030’s logistics transformation goals. Register Now
+LOCATION:Riyadh Front Exhibition & Conference Center
+URL:https://eventme.live/events/event-saudi-warehousing-logistics-expo.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Merath – Middle East Museums & Heritage Expo | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-merath-middle-east-museums-heritage-expo@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260830T120000Z
+DTEND:20260901T180000Z
+SUMMARY:Merath – Middle East Museums & Heritage Expo
+DESCRIPTION:Taking place at the Riyadh Front Exhibition & Convention Center\, Merath – Middle East Museums & Heritage Expo is the Kingdom’s first dedicated trade event for museums\, heritage\, and cultural development. The three-day exhibition brings together more than 100 exhibiting companies and over 3\,000 visitors\, including museums\, galleries\, science centers\, cultural institutions\, government entities\, private collectors\, and heritage developers. Co-located with the Saudi Entertainment and Amusement Expo (SEA Expo) and the Saudi Light and Sound Expo (SLS Expo)\, Merath provides a strategic platform to connect with decision-makers and explore opportunities within Saudi Arabia’s rapidly expanding $67 billion heritage and museum market\, reinforcing Riyadh’s role as a growing hub for cultural innovation and investment.
+LOCATION:Riyadh Front Exhibition & Conference Center
+URL:https://eventme.live/events/event-merath-middle-east-museums-heritage-expo.html
+END:VEVENT
+END:VCALENDAR

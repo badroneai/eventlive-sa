@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Misk Launchpad | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-misk-launchpad@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260906T060000Z
+DTEND:20270102T150000Z
+SUMMARY:Misk Launchpad
+DESCRIPTION:A 10-week hybrid pre-accelerator program supporting entrepreneurs to validate ideas\, build MVPs\, and prepare startups for launch through structured\, comprehensive support. المصدر الرسمي: Misk Hub.
+LOCATION:Hybrid
+URL:https://eventme.live/events/event-misk-launchpad.html
+END:VEVENT
+END:VCALENDAR

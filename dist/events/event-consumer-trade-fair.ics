@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Consumer Trade Fair | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-consumer-trade-fair@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20261202T060000Z
+DTEND:20261209T150000Z
+SUMMARY:Consumer Trade Fair
+DESCRIPTION:فعالية مدرجة في التقويم الرسمي لـ Dhahran Expo. الموعد: ٢ ديسمبر ٢٠٢٦ في ٠٩:٠٠ ص إلى ٩ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م. المنظم: Al-Baraa Muhammed Bin Abdullah Al-Duaij Establishment for Organizing Exhibitions & Conferences.
+LOCATION:Dhahran Expo
+URL:https://eventme.live/events/event-consumer-trade-fair.html
+END:VEVENT
+END:VCALENDAR

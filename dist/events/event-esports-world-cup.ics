@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Esports World Cup | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-esports-world-cup@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260706T140000Z
+DTEND:20260823T190000Z
+SUMMARY:Esports World Cup
+DESCRIPTION:The Esports World Cup 2026 returns to Riyadh from 6 July to 23 August\, delivering a summer-long celebration of elite competition and live entertainment as top clubs and players battle across multiple genres and platforms. With a lineup spanning tactical shooters\, MOBAs\, fighting games\, strategy\, racing\, and even chess—including global favourites such as League of Legends\, Counter-Strike 2\, Fortnite\, and Rocket League—the festival reinforces Riyadh’s role as a leading hub for international esports. New for 2026\, Trackmania joins the programme\, bringing high-precision racing where competitors chase the fastest times on one of esports’ most skill-intensive stages. The Esports World Cup\, a multi-game global esports tournament and festival\, will unite the global e-gaming community\, including players\, fans\, game producers\, and publishers\, with a focus on fostering connections and collaborations.
+LOCATION:Boulevard City\, Riyadh
+URL:https://eventme.live/events/event-esports-world-cup.html
+END:VEVENT
+END:VCALENDAR

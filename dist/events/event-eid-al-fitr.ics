@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Eid Al-Fitr | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-eid-al-fitr@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20270330T060000Z
+DTEND:20270330T150000Z
+SUMMARY:Eid Al-Fitr
+DESCRIPTION:Eid Al Fitr: A Sweet Celebration of Faith and Community المصدر الرسمي: Visit Saudi. Eid Al-Fitr ضمن ترفيه وعائلات في على مستوى المملكة. تبدأ الفعالية ٣٠‏/٠٣‏/٢٠٢٧، ٩:٠٠ ص وتنتهي ٣٠‏/٠٣‏/٢٠٢٧، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Calendar.
+LOCATION:Saudi Arabia
+URL:https://eventme.live/events/event-eid-al-fitr.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,116 @@
+{
+  "id": "ended-mdlbeast-events-soundstorm-24-20241212-4a91127e",
+  "title": "SOUNDSTORM 24",
+  "summary": "فعالية من تقويم MDLBEAST. المدينة: Riyadh. SOUNDSTORM 24 ضمن ترفيه وعائلات في الرياض. تبدأ الفعالية ١٢‏/١٢‏/٢٠٢٤، ١٢:٠٠ ص وتنتهي ١٤‏/١٢‏/٢٠٢٤، ١٢:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: MDLBEAST Events.",
+  "canonical_url": "https://eventme.live/events/ended-mdlbeast-events-soundstorm-24-20241212-4a91127e.html",
+  "detail_url": "./events/ended-mdlbeast-events-soundstorm-24-20241212-4a91127e.html",
+  "calendar_url": "./events/ended-mdlbeast-events-soundstorm-24-20241212-4a91127e.ics",
+  "source_label": "MDLBEAST Events",
+  "source_url": "https://mdlbeast.com/events/soundstorm-2024",
+  "evidence_url": "https://mdlbeast.com/events/soundstorm-2024",
+  "city": "الرياض",
+  "venue": "Riyadh",
+  "venue_address": "Riyadh",
+  "starts_at": "2024-12-12T00:00:00+03:00",
+  "ends_at": "2024-12-14T00:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-covers/ended-mdlbeast-events-soundstorm-24-20241212-4a91127e.svg",
+  "image_alt": "غلاف EventLive لفعالية SOUNDSTORM 24",
+  "category": "ترفيه وعائلات",
+  "category_url": "./categories/entertainment-families.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "SOUNDSTORM 24",
+    "ترفيه وعائلات",
+    "music",
+    "فعالية",
+    "منتهية",
+    "الرياض",
+    "Riyadh",
+    "MDLBEAST Events",
+    "festivals",
+    "conferences",
+    "entertainment",
+    "ended-event",
+    "موظفون ومهنيون",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2024-12-12T00:00:00+03:00",
+      "ends_at": "2024-12-14T00:00:00+03:00",
+      "room": "Riyadh",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "SOUNDSTORM 24",
+    "startDate": "2024-12-12T00:00:00+03:00",
+    "endDate": "2024-12-14T00:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Riyadh",
+      "address": "Riyadh"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "MDLBEAST"
+    },
+    "image": [
+      "https://eventme.live/assets/event-covers/ended-mdlbeast-events-soundstorm-24-20241212-4a91127e.svg"
+    ],
+    "description": "فعالية من تقويم MDLBEAST. المدينة: Riyadh. SOUNDSTORM 24 ضمن ترفيه وعائلات في الرياض. تبدأ الفعالية ١٢‏/١٢‏/٢٠٢٤، ١٢:٠٠ ص وتنتهي ١٤‏/١٢‏/٢٠٢٤، ١٢:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: MDLBEAST Events.",
+    "url": "https://eventme.live/events/ended-mdlbeast-events-soundstorm-24-20241212-4a91127e.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-mdlbeast-events-soundstorm-24-20241212-4a91127e.html",
+    "isAccessibleForFree": false,
+    "keywords": "SOUNDSTORM 24, ترفيه وعائلات, music, فعالية, منتهية, الرياض, Riyadh, MDLBEAST Events, festivals, conferences, entertainment, ended-event, موظفون ومهنيون, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://mdlbeast.com/events/soundstorm-2024"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://mdlbeast.com/events/soundstorm-2024",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

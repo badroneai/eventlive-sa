@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:احتياطات الأمان عند استخدام مبيدات آفات الصحة العامة | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260818T070000Z
+DTEND:20260818T080000Z
+SUMMARY:احتياطات الأمان عند استخدام مبيدات آفات الصحة العامة
+DESCRIPTION:احتياطات الأمان عند استخدام مبيدات آفات الصحة العامة. طريقة الحضور: عن بعد. نوع الورشة: عامة. لغة العرض: العربية. المصدر الرسمي: الهيئة العامة للغذاء والدواء.
+LOCATION:عن بعد
+URL:https://eventme.live/events/event-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة.html
+END:VEVENT
+END:VCALENDAR

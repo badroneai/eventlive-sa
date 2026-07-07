@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Business Sector Annual Reception. | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-business-sector-annual-reception@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20261201T060000Z
+DTEND:20261201T150000Z
+SUMMARY:Business Sector Annual Reception.
+DESCRIPTION:فعالية مدرجة في التقويم الرسمي لـ Dhahran Expo. الموعد: ١ ديسمبر ٢٠٢٦ في ٠٩:٠٠ ص إلى ١ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م. المنظم: Sharqia Chamber.
+LOCATION:Dhahran Expo
+URL:https://eventme.live/events/event-business-sector-annual-reception.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Saudi Wood Expo | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-saudi-wood-expo@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260908T120000Z
+DTEND:20260910T180000Z
+SUMMARY:Saudi Wood Expo
+DESCRIPTION:The Saudi Wood Expo is the Kingdom’s leading exhibition for the wood and woodworking sector\, bringing together suppliers\, buyers\, and specifiers to discover the latest industry trends\, sustainable wood products\, and innovative design solutions. Exhibitors and visitors can connect directly with decision-makers\, explore new product launches\, and build partnerships aligned with the growing demand driven by Saudi Arabia’s Vision 2030 projects. The event is co-located with the Saudi Industrial Series\, creating a wider platform for cross-sector networking and business opportunities.
+LOCATION:Riyadh International Convention and Exhibition Center
+URL:https://eventme.live/events/event-saudi-wood-expo.html
+END:VEVENT
+END:VCALENDAR

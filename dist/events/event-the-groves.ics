@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:The Groves | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-the-groves@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20251105T130000Z
+DTEND:20260718T230000Z
+SUMMARY:The Groves
+DESCRIPTION:The Groves offers a multi-sensory experience that transforms with each season. Every chapter brighter\, richer\, and more captivating than the last. From immersive dining concepts to live entertainment\, art\, and nature-inspired design\, The Groves Chapter IV unveils new moments of wonder designed to excite\, delight\, and inspire.
+LOCATION:Riyadh
+URL:https://eventme.live/events/event-the-groves.html
+END:VEVENT
+END:VCALENDAR

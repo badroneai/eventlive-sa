@@ -1,17 +1,24 @@
 # EventLive Build Report
-- Built at: 2026-03-09T20:23:32.489Z
-- Program title: الملتقى السعودي لتجربة المستفيد 2026
-- Organizer: جمعية التحول المؤسسي
-- Organizer display: جمعية التحول المؤسسي
-- Primary label: البرنامج الرسمي
-- Support contact: يرجى التواصل مع الجهة المنظمة
-- Venue: فندق كراون بلازا المدينة الرقمية
-- City: Riyadh
-- Event start: 2026-05-11T08:30:00+03:00
-- Event end: 2026-05-11T16:00:00+03:00
-- Input sessions: 5
-- Output: dist/index.html
-- Output: dist/print.html
-- Output: dist/share.html
-- Client-facing page only: yes
-- Internal ops pages excluded from dist build
+- Built at: 2026-07-07T19:38:07.442Z
+- Mode: data-driven catalog + static brand refresh
+- Public domain: eventme.live
+- Events generated: 416
+- Draft/sample records excluded: 3
+- Event detail pages: 416
+- Cities generated: 19
+- Stale event image references patched: 0
+- Missing local event image references patched: 0
+- Categories generated: 12
+- Live-ready events: 51
+- Ended events: 280
+- Home page data refreshed: yes
+- Browse page data refreshed: yes
+- Organizer intake linked: already current
+- Screen fallback refreshed: yes
+- Category links normalized: 0
+- Category fallback pages created: 0
+- Excluded-record references patched: 3
+- Patched files: 497
+- Brand: EventLive
+- Live mark: red pulsing i-dot
+- Domain preserved: yes

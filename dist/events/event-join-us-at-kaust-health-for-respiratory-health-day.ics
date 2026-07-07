@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Join us at KAUST Health for Respiratory Health Day | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-join-us-at-kaust-health-for-respiratory-health-day@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260712T080000Z
+DTEND:20260712T100000Z
+SUMMARY:Join us at KAUST Health for Respiratory Health Day
+DESCRIPTION:فعالية صحية ومجتمعية في كاوست ضمن برنامج الحرم والمجتمع، تركز على التوعية بصحة الجهاز التنفسي وخدمات الحضور داخل مجتمع الجامعة.
+LOCATION:KAUST
+URL:https://eventme.live/events/event-join-us-at-kaust-health-for-respiratory-health-day.html
+END:VEVENT
+END:VCALENDAR

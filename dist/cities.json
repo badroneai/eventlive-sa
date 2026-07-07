@@ -1,0 +1,464 @@
+{
+  "generated_at": "2026-07-07T19:38:07.442Z",
+  "platform": "EventLive",
+  "canonical_domain": "eventme.live",
+  "cities_count": 19,
+  "totals": {
+    "events": 416,
+    "upcoming_or_active": 136,
+    "ended": 280,
+    "live_ready": 51
+  },
+  "cities": [
+    {
+      "slug": "riyadh",
+      "label": "الرياض",
+      "url": "./cities/riyadh.html",
+      "total_events": 189,
+      "upcoming_or_active": 89,
+      "ended": 100,
+      "live_ready": 22,
+      "sources": [
+        "CODE MCIT Programs",
+        "Invest Saudi Events",
+        "MDLBEAST Events",
+        "Ministry of Sport Events",
+        "Misk Hub Programs",
+        "RFECC What's On",
+        "Riyadh City Events",
+        "SDAIA Calendar and Events",
+        "Saudi Pro League Fixtures",
+        "Saudi Space Agency Events",
+        "Saudi Water Authority Events",
+        "Tuwaiq Academy Bootcamps and Programs",
+        "Visit Saudi Calendar",
+        "Visit Saudi Seasons",
+        "ملف البرنامج المعتمد من الجهة المنظمة"
+      ],
+      "categories": [
+        "ألعاب ورياضات إلكترونية",
+        "تدريب تقني",
+        "ترفيه وعائلات",
+        "ثقافة وفنون",
+        "جامعات ومجتمع",
+        "جوائز وتكريم",
+        "رياضة وفعاليات جماهيرية",
+        "علوم وفضاء",
+        "فعاليات الغرف التجارية",
+        "مؤتمرات ومنتديات",
+        "معارض وتجارية",
+        "ورش تنظيمية وصحية"
+      ],
+      "next_event": {
+        "title": "Poppy Playtime",
+        "starts_at": "2025-10-10T16:00:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-poppy-playtime.html"
+      },
+      "sources_count": 15,
+      "categories_count": 12
+    },
+    {
+      "slug": "dhahran",
+      "label": "الظهران",
+      "url": "./cities/dhahran.html",
+      "total_events": 28,
+      "upcoming_or_active": 17,
+      "ended": 11,
+      "live_ready": 15,
+      "sources": [
+        "Asharqia Chamber Events",
+        "Dhahran Expo Calendar"
+      ],
+      "categories": [
+        "جوائز وتكريم",
+        "رياضة وفعاليات جماهيرية",
+        "فعاليات الغرف التجارية",
+        "مؤتمرات ومنتديات",
+        "معارض وتجارية"
+      ],
+      "next_event": {
+        "title": "Offshore Technology & Innovation Technical Conference & Expo - OFFSHORE ARABIA 2026”",
+        "starts_at": "2026-08-24T09:00:00+03:00",
+        "status": "upcoming",
+        "url": "./events/event-offshore-technology-innovation-technical-conference-expo-offshore-arabia.html"
+      },
+      "sources_count": 2,
+      "categories_count": 5
+    },
+    {
+      "slug": "online",
+      "label": "عن بعد",
+      "url": "./cities/online.html",
+      "total_events": 34,
+      "upcoming_or_active": 11,
+      "ended": 23,
+      "live_ready": 6,
+      "sources": [
+        "CODE MCIT Programs",
+        "Future Skills MCIT Catalogue",
+        "Jazan Chamber Events",
+        "Misk Hub Events",
+        "Misk Hub Programs",
+        "Saudi Food and Drug Authority Events"
+      ],
+      "categories": [
+        "ألعاب ورياضات إلكترونية",
+        "تدريب تقني",
+        "فعاليات الغرف التجارية",
+        "ورش تنظيمية وصحية"
+      ],
+      "next_event": {
+        "title": "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
+        "starts_at": "2026-07-12T09:00:00+03:00",
+        "status": "upcoming",
+        "url": "./events/event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي.html"
+      },
+      "sources_count": 6,
+      "categories_count": 4
+    },
+    {
+      "slug": "jeddah",
+      "label": "جدة",
+      "url": "./cities/jeddah.html",
+      "total_events": 52,
+      "upcoming_or_active": 4,
+      "ended": 48,
+      "live_ready": 0,
+      "sources": [
+        "Jeddah Chamber Exhibitions and Events Center",
+        "MDLBEAST Events",
+        "Ministry of Sport Events",
+        "Saudi Pro League Fixtures",
+        "Saudi Space Agency Events",
+        "Saudi Universities and Technical Colleges",
+        "Saudi Water Authority Events"
+      ],
+      "categories": [
+        "ترفيه وعائلات",
+        "جامعات ومجتمع",
+        "جوائز وتكريم",
+        "رياضة وفعاليات جماهيرية",
+        "علوم وفضاء",
+        "فعاليات الغرف التجارية",
+        "مؤتمرات ومنتديات"
+      ],
+      "next_event": {
+        "title": "Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH",
+        "starts_at": "2026-07-07T09:00:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-registration-now-open-for-children-at-the-childhood-studies-center-for-t.html"
+      },
+      "sources_count": 7,
+      "categories_count": 7
+    },
+    {
+      "slug": "saudi-arabia",
+      "label": "السعودية",
+      "url": "./cities/saudi-arabia.html",
+      "total_events": 9,
+      "upcoming_or_active": 4,
+      "ended": 5,
+      "live_ready": 0,
+      "sources": [
+        "CODE MCIT Programs",
+        "Misk Hub Events",
+        "Misk Hub Programs",
+        "Monsha'at All Events",
+        "Saudi Space Agency Events"
+      ],
+      "categories": [
+        "ألعاب ورياضات إلكترونية",
+        "تدريب تقني",
+        "علوم وفضاء"
+      ],
+      "next_event": {
+        "title": "لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)",
+        "starts_at": "2026-07-01T09:00:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-لقاءات-مراكز-دعم-المنشآت-شهر-يوليو-2026م-مغلقة.html"
+      },
+      "sources_count": 5,
+      "categories_count": 3
+    },
+    {
+      "slug": "thuwal",
+      "label": "ثول",
+      "url": "./cities/thuwal.html",
+      "total_events": 7,
+      "upcoming_or_active": 4,
+      "ended": 3,
+      "live_ready": 6,
+      "sources": [
+        "Saudi Universities and Technical Colleges"
+      ],
+      "categories": [
+        "رياضة وفعاليات جماهيرية",
+        "ورش تنظيمية وصحية"
+      ],
+      "next_event": {
+        "title": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+        "starts_at": "2026-07-09T19:30:00+03:00",
+        "status": "upcoming",
+        "url": "./events/event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone.html"
+      },
+      "sources_count": 1,
+      "categories_count": 2
+    },
+    {
+      "slug": "nationwide",
+      "label": "على مستوى المملكة",
+      "url": "./cities/nationwide.html",
+      "total_events": 4,
+      "upcoming_or_active": 4,
+      "ended": 0,
+      "live_ready": 0,
+      "sources": [
+        "Visit Saudi Calendar"
+      ],
+      "categories": [
+        "ترفيه وعائلات"
+      ],
+      "next_event": {
+        "title": "Saudi National Day",
+        "starts_at": "2026-09-23T09:00:00+03:00",
+        "status": "upcoming",
+        "url": "./events/event-saudi-national-day.html"
+      },
+      "sources_count": 1,
+      "categories_count": 1
+    },
+    {
+      "slug": "global",
+      "label": "دولي",
+      "url": "./cities/global.html",
+      "total_events": 9,
+      "upcoming_or_active": 1,
+      "ended": 8,
+      "live_ready": 0,
+      "sources": [
+        "Invest Saudi Events",
+        "Saudi Space Agency Events"
+      ],
+      "categories": [
+        "علوم وفضاء",
+        "فعاليات الغرف التجارية",
+        "مؤتمرات ومنتديات"
+      ],
+      "next_event": {
+        "title": "Web Summit Lisbon 2026",
+        "starts_at": "2026-11-09T09:00:00+03:00",
+        "status": "upcoming",
+        "url": "./events/event-web-summit-lisbon-2026.html"
+      },
+      "sources_count": 2,
+      "categories_count": 3
+    },
+    {
+      "slug": "diriyah",
+      "label": "الدرعية",
+      "url": "./cities/diriyah.html",
+      "total_events": 1,
+      "upcoming_or_active": 1,
+      "ended": 0,
+      "live_ready": 0,
+      "sources": [
+        "Visit Saudi Seasons"
+      ],
+      "categories": [
+        "رياضة وفعاليات جماهيرية"
+      ],
+      "next_event": {
+        "title": "Coca-Cola Fan Zone at JAX District",
+        "starts_at": "2026-06-11T19:30:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-coca-cola-fan-zone-at-jax-district.html"
+      },
+      "sources_count": 1,
+      "categories_count": 1
+    },
+    {
+      "slug": "aseer",
+      "label": "عسير",
+      "url": "./cities/aseer.html",
+      "total_events": 1,
+      "upcoming_or_active": 1,
+      "ended": 0,
+      "live_ready": 0,
+      "sources": [
+        "Visit Saudi Calendar"
+      ],
+      "categories": [
+        "رياضة وفعاليات جماهيرية"
+      ],
+      "next_event": {
+        "title": "Aseer Season",
+        "starts_at": "2026-06-25T09:00:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-aseer-season.html"
+      },
+      "sources_count": 1,
+      "categories_count": 1
+    },
+    {
+      "slug": "dammam",
+      "label": "الدمام",
+      "url": "./cities/dammam.html",
+      "total_events": 23,
+      "upcoming_or_active": 0,
+      "ended": 23,
+      "live_ready": 0,
+      "sources": [
+        "Asharqia Chamber Events",
+        "Saudi Pro League Fixtures"
+      ],
+      "categories": [
+        "رياضة وفعاليات جماهيرية",
+        "فعاليات الغرف التجارية"
+      ],
+      "sources_count": 2,
+      "categories_count": 2
+    },
+    {
+      "slug": "buraydah",
+      "label": "بريدة",
+      "url": "./cities/buraydah.html",
+      "total_events": 21,
+      "upcoming_or_active": 0,
+      "ended": 21,
+      "live_ready": 2,
+      "sources": [
+        "Qassim Chamber Events",
+        "Saudi Pro League Fixtures"
+      ],
+      "categories": [
+        "رياضة وفعاليات جماهيرية",
+        "فعاليات الغرف التجارية"
+      ],
+      "sources_count": 2,
+      "categories_count": 2
+    },
+    {
+      "slug": "jazan",
+      "label": "جازان",
+      "url": "./cities/jazan.html",
+      "total_events": 10,
+      "upcoming_or_active": 0,
+      "ended": 10,
+      "live_ready": 0,
+      "sources": [
+        "Jazan Chamber Events"
+      ],
+      "categories": [
+        "فعاليات الغرف التجارية"
+      ],
+      "sources_count": 1,
+      "categories_count": 1
+    },
+    {
+      "slug": "makkah",
+      "label": "مكة",
+      "url": "./cities/makkah.html",
+      "total_events": 10,
+      "upcoming_or_active": 0,
+      "ended": 10,
+      "live_ready": 0,
+      "sources": [
+        "Makkah Chamber Events"
+      ],
+      "categories": [
+        "فعاليات الغرف التجارية"
+      ],
+      "sources_count": 1,
+      "categories_count": 1
+    },
+    {
+      "slug": "alula",
+      "label": "العلا",
+      "url": "./cities/alula.html",
+      "total_events": 7,
+      "upcoming_or_active": 0,
+      "ended": 7,
+      "live_ready": 0,
+      "sources": [
+        "Experience AlUla Events",
+        "MDLBEAST Events",
+        "Ministry of Sport Events"
+      ],
+      "categories": [
+        "ترفيه وعائلات",
+        "رياضة وفعاليات جماهيرية"
+      ],
+      "sources_count": 3,
+      "categories_count": 2
+    },
+    {
+      "slug": "abha",
+      "label": "أبها",
+      "url": "./cities/abha.html",
+      "total_events": 5,
+      "upcoming_or_active": 0,
+      "ended": 5,
+      "live_ready": 0,
+      "sources": [
+        "Abha Chamber Events"
+      ],
+      "categories": [
+        "فعاليات الغرف التجارية"
+      ],
+      "sources_count": 1,
+      "categories_count": 1
+    },
+    {
+      "slug": "khamis-mushait",
+      "label": "خميس مشيط",
+      "url": "./cities/khamis-mushait.html",
+      "total_events": 4,
+      "upcoming_or_active": 0,
+      "ended": 4,
+      "live_ready": 0,
+      "sources": [
+        "Saudi Pro League Fixtures"
+      ],
+      "categories": [
+        "رياضة وفعاليات جماهيرية"
+      ],
+      "sources_count": 1,
+      "categories_count": 1
+    },
+    {
+      "slug": "jubail",
+      "label": "الجبيل",
+      "url": "./cities/jubail.html",
+      "total_events": 1,
+      "upcoming_or_active": 0,
+      "ended": 1,
+      "live_ready": 0,
+      "sources": [
+        "Asharqia Chamber Events"
+      ],
+      "categories": [
+        "فعاليات الغرف التجارية"
+      ],
+      "sources_count": 1,
+      "categories_count": 1
+    },
+    {
+      "slug": "qatif",
+      "label": "القطيف",
+      "url": "./cities/qatif.html",
+      "total_events": 1,
+      "upcoming_or_active": 0,
+      "ended": 1,
+      "live_ready": 0,
+      "sources": [
+        "Asharqia Chamber Events"
+      ],
+      "categories": [
+        "فعاليات الغرف التجارية"
+      ],
+      "sources_count": 1,
+      "categories_count": 1
+    }
+  ]
+}

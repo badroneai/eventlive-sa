@@ -1,0 +1,1385 @@
+{
+  "generated_at": "2026-07-07T19:38:07.442Z",
+  "platform": "EventLive",
+  "canonical_domain": "eventme.live",
+  "intent": "eventlive-saudi-region-coverage",
+  "totals": {
+    "regions": 13,
+    "weak_regions": 9,
+    "active_regions": 4,
+    "uncovered_regions": 6,
+    "events": 416,
+    "active_events": 136,
+    "ended_events": 280
+  },
+  "regions": [
+    {
+      "key": "al-jawf-region",
+      "label": "منطقة الجوف",
+      "target_cities": [
+        {
+          "key": "Sakaka",
+          "label": "Sakaka"
+        },
+        {
+          "key": "Dumat Al Jandal",
+          "label": "Dumat Al Jandal"
+        }
+      ],
+      "covered_cities": [],
+      "active_cities": [],
+      "missing_target_cities": [
+        {
+          "key": "Sakaka",
+          "label": "Sakaka"
+        },
+        {
+          "key": "Dumat Al Jandal",
+          "label": "Dumat Al Jandal"
+        }
+      ],
+      "total": 0,
+      "active": 0,
+      "upcoming": 0,
+      "ongoing": 0,
+      "live": 0,
+      "ended": 0,
+      "live_ready": 0,
+      "source_count": 0,
+      "source_images": 0,
+      "generated_covers": 0,
+      "registered_source_count": 1,
+      "registered_sources": [
+        {
+          "id": "jouf-chamber-events",
+          "name": "Jouf Chamber Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://ajcci.org.sa/event/"
+        }
+      ],
+      "coverage_score": 3,
+      "severity": "gap",
+      "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
+    },
+    {
+      "key": "najran-region",
+      "label": "منطقة نجران",
+      "target_cities": [
+        {
+          "key": "Najran",
+          "label": "نجران"
+        }
+      ],
+      "covered_cities": [],
+      "active_cities": [],
+      "missing_target_cities": [
+        {
+          "key": "Najran",
+          "label": "نجران"
+        }
+      ],
+      "total": 0,
+      "active": 0,
+      "upcoming": 0,
+      "ongoing": 0,
+      "live": 0,
+      "ended": 0,
+      "live_ready": 0,
+      "source_count": 0,
+      "source_images": 0,
+      "generated_covers": 0,
+      "registered_source_count": 1,
+      "registered_sources": [
+        {
+          "id": "najran-chamber-events",
+          "name": "Najran Chamber Events",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://najcci.org.sa/ar"
+        }
+      ],
+      "coverage_score": 3,
+      "severity": "gap",
+      "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
+    },
+    {
+      "key": "al-baha-region",
+      "label": "منطقة الباحة",
+      "target_cities": [
+        {
+          "key": "Al Baha",
+          "label": "Al Baha"
+        }
+      ],
+      "covered_cities": [],
+      "active_cities": [],
+      "missing_target_cities": [
+        {
+          "key": "Al Baha",
+          "label": "Al Baha"
+        }
+      ],
+      "total": 0,
+      "active": 0,
+      "upcoming": 0,
+      "ongoing": 0,
+      "live": 0,
+      "ended": 0,
+      "live_ready": 0,
+      "source_count": 0,
+      "source_images": 0,
+      "generated_covers": 0,
+      "registered_source_count": 2,
+      "registered_sources": [
+        {
+          "id": "baha-amanah-events",
+          "name": "Baha Municipality Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://baha.gov.sa/ar/Events"
+        },
+        {
+          "id": "baha-chamber-events",
+          "name": "Baha Chamber Events",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://bcci.org.sa/"
+        }
+      ],
+      "coverage_score": 6,
+      "severity": "gap",
+      "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
+    },
+    {
+      "key": "northern-borders-region",
+      "label": "منطقة الحدود الشمالية",
+      "target_cities": [
+        {
+          "key": "Arar",
+          "label": "Arar"
+        },
+        {
+          "key": "Rafha",
+          "label": "Rafha"
+        },
+        {
+          "key": "Turaif",
+          "label": "Turaif"
+        }
+      ],
+      "covered_cities": [],
+      "active_cities": [],
+      "missing_target_cities": [
+        {
+          "key": "Arar",
+          "label": "Arar"
+        },
+        {
+          "key": "Rafha",
+          "label": "Rafha"
+        },
+        {
+          "key": "Turaif",
+          "label": "Turaif"
+        }
+      ],
+      "total": 0,
+      "active": 0,
+      "upcoming": 0,
+      "ongoing": 0,
+      "live": 0,
+      "ended": 0,
+      "live_ready": 0,
+      "source_count": 0,
+      "source_images": 0,
+      "generated_covers": 0,
+      "registered_source_count": 2,
+      "registered_sources": [
+        {
+          "id": "misk-hub-events",
+          "name": "Misk Hub Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://hub.misk.org.sa/en/events/"
+        },
+        {
+          "id": "northern-borders-chamber-events",
+          "name": "Northern Borders Chamber Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://ncci.org.sa/category/events/"
+        }
+      ],
+      "coverage_score": 6,
+      "severity": "gap",
+      "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
+    },
+    {
+      "key": "tabuk-region",
+      "label": "منطقة تبوك",
+      "target_cities": [
+        {
+          "key": "Tabuk",
+          "label": "تبوك"
+        },
+        {
+          "key": "NEOM",
+          "label": "NEOM"
+        }
+      ],
+      "covered_cities": [],
+      "active_cities": [],
+      "missing_target_cities": [
+        {
+          "key": "Tabuk",
+          "label": "تبوك"
+        },
+        {
+          "key": "NEOM",
+          "label": "NEOM"
+        }
+      ],
+      "total": 0,
+      "active": 0,
+      "upcoming": 0,
+      "ongoing": 0,
+      "live": 0,
+      "ended": 0,
+      "live_ready": 0,
+      "source_count": 0,
+      "source_images": 0,
+      "generated_covers": 0,
+      "registered_source_count": 2,
+      "registered_sources": [
+        {
+          "id": "neom-newsroom-events",
+          "name": "NEOM Newsroom Events",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://www.neom.com/en-us/newsroom/events"
+        },
+        {
+          "id": "tabuk-chamber-events",
+          "name": "Tabuk Chamber Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://www.tabukchamber.sa/"
+        }
+      ],
+      "coverage_score": 6,
+      "severity": "gap",
+      "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
+    },
+    {
+      "key": "hail-region",
+      "label": "منطقة حائل",
+      "target_cities": [
+        {
+          "key": "Hail",
+          "label": "حائل"
+        }
+      ],
+      "covered_cities": [],
+      "active_cities": [],
+      "missing_target_cities": [
+        {
+          "key": "Hail",
+          "label": "حائل"
+        }
+      ],
+      "total": 0,
+      "active": 0,
+      "upcoming": 0,
+      "ongoing": 0,
+      "live": 0,
+      "ended": 0,
+      "live_ready": 0,
+      "source_count": 0,
+      "source_images": 0,
+      "generated_covers": 0,
+      "registered_source_count": 3,
+      "registered_sources": [
+        {
+          "id": "misk-hub-events",
+          "name": "Misk Hub Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://hub.misk.org.sa/en/events/"
+        },
+        {
+          "id": "saudi-winter-calendar-spa",
+          "name": "Saudi Winter Events Calendar",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://www.spa.gov.sa/en/N2183027"
+        },
+        {
+          "id": "hail-chamber-events",
+          "name": "Hail Chamber Events",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://www.hc.org.sa/"
+        }
+      ],
+      "coverage_score": 9,
+      "severity": "gap",
+      "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
+    },
+    {
+      "key": "jazan-region",
+      "label": "منطقة جازان",
+      "target_cities": [
+        {
+          "key": "Jazan",
+          "label": "جازان"
+        }
+      ],
+      "covered_cities": [
+        {
+          "key": "Jazan",
+          "label": "جازان"
+        }
+      ],
+      "active_cities": [],
+      "missing_target_cities": [],
+      "total": 10,
+      "active": 0,
+      "upcoming": 0,
+      "ongoing": 0,
+      "live": 0,
+      "ended": 10,
+      "live_ready": 0,
+      "source_count": 1,
+      "source_images": 8,
+      "generated_covers": 2,
+      "registered_source_count": 2,
+      "registered_sources": [
+        {
+          "id": "misk-hub-events",
+          "name": "Misk Hub Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://hub.misk.org.sa/en/events/"
+        },
+        {
+          "id": "jazan-chamber-events",
+          "name": "Jazan Chamber Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://jazancci.org.sa/"
+        }
+      ],
+      "coverage_score": 34,
+      "severity": "gap",
+      "next_action": "ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/منصة محلية مساندة."
+    },
+    {
+      "key": "madinah-region",
+      "label": "منطقة المدينة المنورة",
+      "target_cities": [
+        {
+          "key": "Madinah",
+          "label": "المدينة المنورة"
+        },
+        {
+          "key": "Yanbu",
+          "label": "ينبع"
+        },
+        {
+          "key": "AlUla",
+          "label": "العلا"
+        }
+      ],
+      "covered_cities": [
+        {
+          "key": "AlUla",
+          "label": "العلا"
+        }
+      ],
+      "active_cities": [],
+      "missing_target_cities": [
+        {
+          "key": "Madinah",
+          "label": "المدينة المنورة"
+        },
+        {
+          "key": "Yanbu",
+          "label": "ينبع"
+        }
+      ],
+      "total": 7,
+      "active": 0,
+      "upcoming": 0,
+      "ongoing": 0,
+      "live": 0,
+      "ended": 7,
+      "live_ready": 0,
+      "source_count": 3,
+      "source_images": 0,
+      "generated_covers": 7,
+      "registered_source_count": 5,
+      "registered_sources": [
+        {
+          "id": "eye-of-riyadh-events",
+          "name": "Eye of Riyadh Events",
+          "ring": "candidate-only",
+          "status": "aggregator",
+          "url": "https://www.eyeofriyadh.com/events/"
+        },
+        {
+          "id": "saudi-winter-calendar-spa",
+          "name": "Saudi Winter Events Calendar",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://www.spa.gov.sa/en/N2183027"
+        },
+        {
+          "id": "hala-yalla",
+          "name": "Hala Yalla",
+          "ring": "candidate-only",
+          "status": "official-marketplace",
+          "url": "https://halayalla.com/sa-en/ticketing"
+        },
+        {
+          "id": "experience-alula-events",
+          "name": "Experience AlUla Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://www.experiencealula.com/en/whats-on/events"
+        },
+        {
+          "id": "mdlbeast-events",
+          "name": "MDLBEAST Events",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://mdlbeast.com/events"
+        }
+      ],
+      "coverage_score": 35,
+      "severity": "watch",
+      "next_action": "ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/منصة محلية مساندة."
+    },
+    {
+      "key": "qassim-region",
+      "label": "منطقة القصيم",
+      "target_cities": [
+        {
+          "key": "Buraydah",
+          "label": "بريدة"
+        },
+        {
+          "key": "Unaizah",
+          "label": "Unaizah"
+        },
+        {
+          "key": "Rass",
+          "label": "Rass"
+        }
+      ],
+      "covered_cities": [
+        {
+          "key": "Buraydah",
+          "label": "بريدة"
+        }
+      ],
+      "active_cities": [],
+      "missing_target_cities": [
+        {
+          "key": "Unaizah",
+          "label": "Unaizah"
+        },
+        {
+          "key": "Rass",
+          "label": "Rass"
+        }
+      ],
+      "total": 21,
+      "active": 0,
+      "upcoming": 0,
+      "ongoing": 0,
+      "live": 0,
+      "ended": 21,
+      "live_ready": 2,
+      "source_count": 2,
+      "source_images": 4,
+      "generated_covers": 17,
+      "registered_source_count": 2,
+      "registered_sources": [
+        {
+          "id": "saudi-pro-league-fixtures",
+          "name": "Saudi Pro League Fixtures",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://www.spl.com.sa/en"
+        },
+        {
+          "id": "qassim-chamber-events",
+          "name": "Qassim Chamber Events",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://qcc.org.sa/events-list"
+        }
+      ],
+      "coverage_score": 56,
+      "severity": "watch",
+      "next_action": "ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/منصة محلية مساندة."
+    },
+    {
+      "key": "aseer-region",
+      "label": "منطقة عسير",
+      "target_cities": [
+        {
+          "key": "Aseer",
+          "label": "عسير"
+        },
+        {
+          "key": "Abha",
+          "label": "أبها"
+        },
+        {
+          "key": "Khamis Mushait",
+          "label": "خميس مشيط"
+        }
+      ],
+      "covered_cities": [
+        {
+          "key": "Aseer",
+          "label": "عسير"
+        },
+        {
+          "key": "Abha",
+          "label": "أبها"
+        },
+        {
+          "key": "Khamis Mushait",
+          "label": "خميس مشيط"
+        }
+      ],
+      "active_cities": [
+        {
+          "key": "Aseer",
+          "label": "عسير"
+        }
+      ],
+      "missing_target_cities": [],
+      "total": 10,
+      "active": 1,
+      "upcoming": 0,
+      "ongoing": 1,
+      "live": 0,
+      "ended": 9,
+      "live_ready": 0,
+      "source_count": 3,
+      "source_images": 6,
+      "generated_covers": 4,
+      "registered_source_count": 5,
+      "registered_sources": [
+        {
+          "id": "misk-hub-events",
+          "name": "Misk Hub Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://hub.misk.org.sa/en/events/"
+        },
+        {
+          "id": "discover-aseer-events",
+          "name": "Discover Aseer Events",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://discoveraseer.com/en/events"
+        },
+        {
+          "id": "aseer-season-asda",
+          "name": "Aseer Season / Asir Development Authority",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://www.asda.gov.sa/"
+        },
+        {
+          "id": "abha-chamber-events",
+          "name": "Abha Chamber Events",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://abhacci.org.sa/Events"
+        },
+        {
+          "id": "saudi-university-events",
+          "name": "Saudi Universities and Technical Colleges",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://www.kaust.edu.sa/"
+        }
+      ],
+      "coverage_score": 82,
+      "severity": "healthy",
+      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
+    },
+    {
+      "key": "eastern-region",
+      "label": "المنطقة الشرقية",
+      "target_cities": [
+        {
+          "key": "Dammam",
+          "label": "الدمام"
+        },
+        {
+          "key": "Khobar",
+          "label": "الخبر"
+        },
+        {
+          "key": "Dhahran",
+          "label": "الظهران"
+        },
+        {
+          "key": "Jubail",
+          "label": "الجبيل"
+        },
+        {
+          "key": "Qatif",
+          "label": "القطيف"
+        },
+        {
+          "key": "Al Ahsa",
+          "label": "الأحساء"
+        },
+        {
+          "key": "Hafar Al Batin",
+          "label": "Hafar Al Batin"
+        }
+      ],
+      "covered_cities": [
+        {
+          "key": "Dammam",
+          "label": "الدمام"
+        },
+        {
+          "key": "Dhahran",
+          "label": "الظهران"
+        },
+        {
+          "key": "Jubail",
+          "label": "الجبيل"
+        },
+        {
+          "key": "Qatif",
+          "label": "القطيف"
+        }
+      ],
+      "active_cities": [
+        {
+          "key": "Dhahran",
+          "label": "الظهران"
+        }
+      ],
+      "missing_target_cities": [
+        {
+          "key": "Khobar",
+          "label": "الخبر"
+        },
+        {
+          "key": "Al Ahsa",
+          "label": "الأحساء"
+        },
+        {
+          "key": "Hafar Al Batin",
+          "label": "Hafar Al Batin"
+        }
+      ],
+      "total": 53,
+      "active": 17,
+      "upcoming": 17,
+      "ongoing": 0,
+      "live": 0,
+      "ended": 36,
+      "live_ready": 15,
+      "source_count": 3,
+      "source_images": 15,
+      "generated_covers": 38,
+      "registered_source_count": 12,
+      "registered_sources": [
+        {
+          "id": "webook-explore",
+          "name": "webook Explore",
+          "ring": "candidate-only",
+          "status": "official-marketplace",
+          "url": "https://webook.com/en/explore"
+        },
+        {
+          "id": "ten-times-saudi",
+          "name": "10times Saudi Arabia",
+          "ring": "candidate-only",
+          "status": "aggregator",
+          "url": "https://10times.com/saudiarabia"
+        },
+        {
+          "id": "dhahran-expo-calendar",
+          "name": "Dhahran Expo Calendar",
+          "ring": "monitor-public",
+          "status": "venue-official",
+          "url": "https://dhahranexpo.com.sa"
+        },
+        {
+          "id": "saudi-pro-league-fixtures",
+          "name": "Saudi Pro League Fixtures",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://www.spl.com.sa/en"
+        },
+        {
+          "id": "asharqia-chamber-events",
+          "name": "Asharqia Chamber Events",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx"
+        },
+        {
+          "id": "expofp-eventseye-saudi",
+          "name": "ExpoFP and Eventseye Saudi Trade Shows",
+          "ring": "candidate-only",
+          "status": "aggregator",
+          "url": "https://expofp.com/"
+        },
+        {
+          "id": "meetup-facebook-saudi-events",
+          "name": "Meetup and Facebook Events Saudi Arabia",
+          "ring": "candidate-only",
+          "status": "community",
+          "url": "https://www.meetup.com/"
+        },
+        {
+          "id": "hala-yalla",
+          "name": "Hala Yalla",
+          "ring": "candidate-only",
+          "status": "official-marketplace",
+          "url": "https://halayalla.com/sa-en/ticketing"
+        },
+        {
+          "id": "eye-of-riyadh-events",
+          "name": "Eye of Riyadh Events",
+          "ring": "candidate-only",
+          "status": "aggregator",
+          "url": "https://www.eyeofriyadh.com/events/"
+        },
+        {
+          "id": "ithra-events",
+          "name": "Ithra Events",
+          "ring": "official-feed-preferred",
+          "status": "venue-official",
+          "url": "https://www.ithra.com"
+        },
+        {
+          "id": "saudi-university-events",
+          "name": "Saudi Universities and Technical Colleges",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://www.kaust.edu.sa/"
+        },
+        {
+          "id": "misk-hub-events",
+          "name": "Misk Hub Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://hub.misk.org.sa/en/events/"
+        }
+      ],
+      "coverage_score": 100,
+      "severity": "healthy",
+      "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
+    },
+    {
+      "key": "riyadh-region",
+      "label": "منطقة الرياض",
+      "target_cities": [
+        {
+          "key": "Riyadh",
+          "label": "الرياض"
+        },
+        {
+          "key": "Diriyah",
+          "label": "الدرعية"
+        },
+        {
+          "key": "Al Kharj",
+          "label": "Al Kharj"
+        },
+        {
+          "key": "Dawadmi",
+          "label": "Dawadmi"
+        },
+        {
+          "key": "Majmaah",
+          "label": "Majmaah"
+        },
+        {
+          "key": "Shaqra",
+          "label": "Shaqra"
+        }
+      ],
+      "covered_cities": [
+        {
+          "key": "Riyadh",
+          "label": "الرياض"
+        },
+        {
+          "key": "Diriyah",
+          "label": "الدرعية"
+        }
+      ],
+      "active_cities": [
+        {
+          "key": "Riyadh",
+          "label": "الرياض"
+        },
+        {
+          "key": "Diriyah",
+          "label": "الدرعية"
+        }
+      ],
+      "missing_target_cities": [
+        {
+          "key": "Al Kharj",
+          "label": "Al Kharj"
+        },
+        {
+          "key": "Dawadmi",
+          "label": "Dawadmi"
+        },
+        {
+          "key": "Majmaah",
+          "label": "Majmaah"
+        },
+        {
+          "key": "Shaqra",
+          "label": "Shaqra"
+        }
+      ],
+      "total": 190,
+      "active": 90,
+      "upcoming": 67,
+      "ongoing": 23,
+      "live": 0,
+      "ended": 100,
+      "live_ready": 22,
+      "source_count": 15,
+      "source_images": 86,
+      "generated_covers": 104,
+      "registered_source_count": 32,
+      "registered_sources": [
+        {
+          "id": "webook-explore",
+          "name": "webook Explore",
+          "ring": "candidate-only",
+          "status": "official-marketplace",
+          "url": "https://webook.com/en/explore"
+        },
+        {
+          "id": "hala-yalla",
+          "name": "Hala Yalla",
+          "ring": "candidate-only",
+          "status": "official-marketplace",
+          "url": "https://halayalla.com/sa-en/ticketing"
+        },
+        {
+          "id": "mdlbeast-events",
+          "name": "MDLBEAST Events",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://mdlbeast.com/events"
+        },
+        {
+          "id": "rfecc-whats-on",
+          "name": "RFECC What's On",
+          "ring": "monitor-public",
+          "status": "venue-official",
+          "url": "https://rfecc.sa/whats-on/"
+        },
+        {
+          "id": "eye-of-riyadh-events",
+          "name": "Eye of Riyadh Events",
+          "ring": "candidate-only",
+          "status": "aggregator",
+          "url": "https://www.eyeofriyadh.com/events/"
+        },
+        {
+          "id": "ten-times-saudi",
+          "name": "10times Saudi Arabia",
+          "ring": "candidate-only",
+          "status": "aggregator",
+          "url": "https://10times.com/saudiarabia"
+        },
+        {
+          "id": "tuwaiq-academy-bootcamps",
+          "name": "Tuwaiq Academy Bootcamps and Programs",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://tuwaiq.edu.sa/bootcamps"
+        },
+        {
+          "id": "future-skills-catalog",
+          "name": "Future Skills MCIT Catalogue",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All"
+        },
+        {
+          "id": "riyadh-season",
+          "name": "Riyadh Season Official",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://riyadhseason.com/en/explore"
+        },
+        {
+          "id": "code-mcit-programs",
+          "name": "CODE MCIT Programs",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://code.mcit.gov.sa/en/our-programs"
+        },
+        {
+          "id": "misk-hub-programs",
+          "name": "Misk Hub Programs",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://hub.misk.org.sa/programs/"
+        },
+        {
+          "id": "saudi-digital-academy",
+          "name": "Saudi Digital Academy",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://sda.edu.sa/ar"
+        },
+        {
+          "id": "sdaia-academy-programs",
+          "name": "SDAIA Academy Programs",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx"
+        },
+        {
+          "id": "enjoy-saudi-events",
+          "name": "Enjoy Saudi Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://enjoy.sa/en/events"
+        },
+        {
+          "id": "misk-hub-events",
+          "name": "Misk Hub Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://hub.misk.org.sa/en/events/"
+        },
+        {
+          "id": "saudi-pro-league-fixtures",
+          "name": "Saudi Pro League Fixtures",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://www.spl.com.sa/en"
+        },
+        {
+          "id": "saudi-space-agency-events",
+          "name": "Saudi Space Agency Events",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://ssa.gov.sa/en/events/?path=/events/"
+        },
+        {
+          "id": "cst-events-news",
+          "name": "CST Events and News",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://www.cst.gov.sa/en"
+        },
+        {
+          "id": "qiddiya-events",
+          "name": "Qiddiya Events",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://qiddiya.com/"
+        },
+        {
+          "id": "sela-sea-expo",
+          "name": "Sela and Saudi Entertainment Expo",
+          "ring": "monitor-public",
+          "status": "partner",
+          "url": "https://sela.sa/"
+        },
+        {
+          "id": "diriyah-season",
+          "name": "Diriyah Season",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://diriyahseason.sa/en"
+        },
+        {
+          "id": "ricec-events",
+          "name": "Riyadh International Convention and Exhibition Center",
+          "ring": "monitor-public",
+          "status": "venue-official",
+          "url": "https://www.ricec.com/"
+        },
+        {
+          "id": "saudi-water-authority-events",
+          "name": "Saudi Water Authority Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://www.swa.gov.sa/en/events"
+        },
+        {
+          "id": "saudi-university-events",
+          "name": "Saudi Universities and Technical Colleges",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://www.kaust.edu.sa/"
+        },
+        {
+          "id": "expofp-eventseye-saudi",
+          "name": "ExpoFP and Eventseye Saudi Trade Shows",
+          "ring": "candidate-only",
+          "status": "aggregator",
+          "url": "https://expofp.com/"
+        },
+        {
+          "id": "meetup-facebook-saudi-events",
+          "name": "Meetup and Facebook Events Saudi Arabia",
+          "ring": "candidate-only",
+          "status": "community",
+          "url": "https://www.meetup.com/"
+        },
+        {
+          "id": "sfda-events",
+          "name": "Saudi Food and Drug Authority Events",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://www.sfda.gov.sa/"
+        },
+        {
+          "id": "saudi-contractors-authority-events",
+          "name": "Saudi Contractors Authority Events",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://www.sca.gov.sa/"
+        },
+        {
+          "id": "saudi-winter-calendar-spa",
+          "name": "Saudi Winter Events Calendar",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://www.spa.gov.sa/en/N2183027"
+        },
+        {
+          "id": "riyadh-city-events",
+          "name": "Riyadh City Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://riyadh.sa/en/events/all"
+        },
+        {
+          "id": "gea-entertainment-events",
+          "name": "General Entertainment Authority Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://gea.gov.sa/en/events/"
+        },
+        {
+          "id": "sdaia-calendar-events",
+          "name": "SDAIA Calendar and Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx"
+        }
+      ],
+      "coverage_score": 100,
+      "severity": "healthy",
+      "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
+    },
+    {
+      "key": "makkah-region",
+      "label": "منطقة مكة المكرمة",
+      "target_cities": [
+        {
+          "key": "Jeddah",
+          "label": "جدة"
+        },
+        {
+          "key": "Makkah",
+          "label": "مكة"
+        },
+        {
+          "key": "Taif",
+          "label": "الطائف"
+        },
+        {
+          "key": "Thuwal",
+          "label": "ثول"
+        },
+        {
+          "key": "Rabigh",
+          "label": "Rabigh"
+        }
+      ],
+      "covered_cities": [
+        {
+          "key": "Jeddah",
+          "label": "جدة"
+        },
+        {
+          "key": "Makkah",
+          "label": "مكة"
+        },
+        {
+          "key": "Thuwal",
+          "label": "ثول"
+        }
+      ],
+      "active_cities": [
+        {
+          "key": "Jeddah",
+          "label": "جدة"
+        },
+        {
+          "key": "Thuwal",
+          "label": "ثول"
+        }
+      ],
+      "missing_target_cities": [
+        {
+          "key": "Taif",
+          "label": "الطائف"
+        },
+        {
+          "key": "Rabigh",
+          "label": "Rabigh"
+        }
+      ],
+      "total": 69,
+      "active": 8,
+      "upcoming": 7,
+      "ongoing": 1,
+      "live": 0,
+      "ended": 61,
+      "live_ready": 6,
+      "source_count": 8,
+      "source_images": 13,
+      "generated_covers": 56,
+      "registered_source_count": 19,
+      "registered_sources": [
+        {
+          "id": "webook-explore",
+          "name": "webook Explore",
+          "ring": "candidate-only",
+          "status": "official-marketplace",
+          "url": "https://webook.com/en/explore"
+        },
+        {
+          "id": "hala-yalla",
+          "name": "Hala Yalla",
+          "ring": "candidate-only",
+          "status": "official-marketplace",
+          "url": "https://halayalla.com/sa-en/ticketing"
+        },
+        {
+          "id": "mdlbeast-events",
+          "name": "MDLBEAST Events",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://mdlbeast.com/events"
+        },
+        {
+          "id": "eye-of-riyadh-events",
+          "name": "Eye of Riyadh Events",
+          "ring": "candidate-only",
+          "status": "aggregator",
+          "url": "https://www.eyeofriyadh.com/events/"
+        },
+        {
+          "id": "ten-times-saudi",
+          "name": "10times Saudi Arabia",
+          "ring": "candidate-only",
+          "status": "aggregator",
+          "url": "https://10times.com/saudiarabia"
+        },
+        {
+          "id": "platinumlist-jeddah",
+          "name": "Platinumlist Jeddah Calendar",
+          "ring": "candidate-only",
+          "status": "official-marketplace",
+          "url": "https://jeddah.platinumlist.net/calendar/this-weekend"
+        },
+        {
+          "id": "enjoy-saudi-events",
+          "name": "Enjoy Saudi Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://enjoy.sa/en/events"
+        },
+        {
+          "id": "jcci-events-center",
+          "name": "Jeddah Chamber Exhibitions and Events Center",
+          "ring": "monitor-public",
+          "status": "venue-official",
+          "url": "https://www.jcci.org.sa/en/المعارض-والفعاليات"
+        },
+        {
+          "id": "saudi-pro-league-fixtures",
+          "name": "Saudi Pro League Fixtures",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://www.spl.com.sa/en"
+        },
+        {
+          "id": "historic-jeddah-albalad",
+          "name": "Visit AlBalad / Historic Jeddah",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://visitalbalad.com/"
+        },
+        {
+          "id": "jeddah-season",
+          "name": "Jeddah Season",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://jeddahseason.sa/"
+        },
+        {
+          "id": "saudi-water-authority-events",
+          "name": "Saudi Water Authority Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://www.swa.gov.sa/en/events"
+        },
+        {
+          "id": "saudi-university-events",
+          "name": "Saudi Universities and Technical Colleges",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://www.kaust.edu.sa/"
+        },
+        {
+          "id": "expofp-eventseye-saudi",
+          "name": "ExpoFP and Eventseye Saudi Trade Shows",
+          "ring": "candidate-only",
+          "status": "aggregator",
+          "url": "https://expofp.com/"
+        },
+        {
+          "id": "meetup-facebook-saudi-events",
+          "name": "Meetup and Facebook Events Saudi Arabia",
+          "ring": "candidate-only",
+          "status": "community",
+          "url": "https://www.meetup.com/"
+        },
+        {
+          "id": "sfda-events",
+          "name": "Saudi Food and Drug Authority Events",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://www.sfda.gov.sa/"
+        },
+        {
+          "id": "saudi-winter-calendar-spa",
+          "name": "Saudi Winter Events Calendar",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://www.spa.gov.sa/en/N2183027"
+        },
+        {
+          "id": "gea-entertainment-events",
+          "name": "General Entertainment Authority Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://gea.gov.sa/en/events/"
+        },
+        {
+          "id": "makkah-chamber-events",
+          "name": "Makkah Chamber Events",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://makkahcci.org.sa/events"
+        }
+      ],
+      "coverage_score": 100,
+      "severity": "healthy",
+      "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
+    }
+  ],
+  "priority_queue": [
+    {
+      "key": "al-jawf-region",
+      "label": "منطقة الجوف",
+      "coverage_score": 3,
+      "reason": "لا توجد فعاليات قادمة/جارية في المنطقة",
+      "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
+    },
+    {
+      "key": "najran-region",
+      "label": "منطقة نجران",
+      "coverage_score": 3,
+      "reason": "لا توجد فعاليات قادمة/جارية في المنطقة",
+      "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
+    },
+    {
+      "key": "al-baha-region",
+      "label": "منطقة الباحة",
+      "coverage_score": 6,
+      "reason": "لا توجد فعاليات قادمة/جارية في المنطقة",
+      "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
+    },
+    {
+      "key": "northern-borders-region",
+      "label": "منطقة الحدود الشمالية",
+      "coverage_score": 6,
+      "reason": "لا توجد فعاليات قادمة/جارية في المنطقة",
+      "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
+    },
+    {
+      "key": "tabuk-region",
+      "label": "منطقة تبوك",
+      "coverage_score": 6,
+      "reason": "لا توجد فعاليات قادمة/جارية في المنطقة",
+      "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
+    },
+    {
+      "key": "hail-region",
+      "label": "منطقة حائل",
+      "coverage_score": 9,
+      "reason": "لا توجد فعاليات قادمة/جارية في المنطقة",
+      "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
+    },
+    {
+      "key": "jazan-region",
+      "label": "منطقة جازان",
+      "coverage_score": 34,
+      "reason": "لا توجد فعاليات قادمة/جارية في المنطقة",
+      "next_action": "ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/منصة محلية مساندة."
+    },
+    {
+      "key": "madinah-region",
+      "label": "منطقة المدينة المنورة",
+      "coverage_score": 35,
+      "reason": "لا توجد فعاليات قادمة/جارية في المنطقة",
+      "next_action": "ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/منصة محلية مساندة."
+    },
+    {
+      "key": "qassim-region",
+      "label": "منطقة القصيم",
+      "coverage_score": 56,
+      "reason": "لا توجد فعاليات قادمة/جارية في المنطقة",
+      "next_action": "ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/منصة محلية مساندة."
+    },
+    {
+      "key": "aseer-region",
+      "label": "منطقة عسير",
+      "coverage_score": 82,
+      "reason": "تحتاج عمقًا أكبر في المدن المستهدفة",
+      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
+    }
+  ],
+  "links": {
+    "events": "https://eventme.live/events.json",
+    "source_coverage_gaps": "https://eventme.live/source-coverage-gaps.json"
+  },
+  "operating_rule": "Region coverage is generated from the current public event catalog on every build."
+}

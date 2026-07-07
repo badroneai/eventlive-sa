@@ -1,0 +1,100 @@
+{
+  "id": "ended-saudi-pro-league-fixtures-al-shabab-vs-al-kholood-20250925-81c8a48c",
+  "title": "Al Shabab vs Al Kholood",
+  "summary": "مباراة رسمية من جدول Saudi Pro League. الملعب: SHG Arena. الجولة: 4. Al Shabab vs Al Kholood ضمن رياضة وفعاليات جماهيرية في الرياض. تبدأ الفعالية ٢٥‏/٠٩‏/٢٠٢٥، ٦:٢٥ م وتنتهي ٢٥‏/٠٩‏/٢٠٢٥، ٨:٢٥ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Saudi Pro League Fixtures.",
+  "canonical_url": "https://eventme.live/events/ended-saudi-pro-league-fixtures-al-shabab-vs-al-kholood-20250925-81c8a48c.html",
+  "detail_url": "./events/ended-saudi-pro-league-fixtures-al-shabab-vs-al-kholood-20250925-81c8a48c.html",
+  "calendar_url": "./events/ended-saudi-pro-league-fixtures-al-shabab-vs-al-kholood-20250925-81c8a48c.ics",
+  "source_label": "Saudi Pro League Fixtures",
+  "source_url": "https://webook.com/ar/events/rsl-al-shabab-vs-al-kholood-748563",
+  "evidence_url": "https://webook.com/ar/events/rsl-al-shabab-vs-al-kholood-748563",
+  "city": "الرياض",
+  "venue": "SHG Arena",
+  "venue_address": "SHG Arena",
+  "starts_at": "2025-09-25T18:25:00+03:00",
+  "ends_at": "2025-09-25T20:25:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-covers/ended-saudi-pro-league-fixtures-al-shabab-vs-al-kholood-20250925-81c8a48c.svg",
+  "image_alt": "غلاف EventLive لفعالية Al Shabab vs Al Kholood",
+  "category": "رياضة وفعاليات جماهيرية",
+  "category_url": "./categories/sports.html",
+  "audiences": [
+    {
+      "slug": "sports",
+      "label": "رياضة ولياقة"
+    }
+  ],
+  "keywords": [
+    "Al Shabab vs Al Kholood",
+    "رياضة وفعاليات جماهيرية",
+    "football match",
+    "فعالية",
+    "منتهية",
+    "الرياض",
+    "SHG Arena",
+    "Saudi Pro League Fixtures",
+    "sports",
+    "football",
+    "fixtures",
+    "matches",
+    "2025/26",
+    "ended-event",
+    "رياضة ولياقة"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2025-09-25T18:25:00+03:00",
+      "ends_at": "2025-09-25T20:25:00+03:00",
+      "room": "SHG Arena",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Al Shabab vs Al Kholood",
+    "startDate": "2025-09-25T18:25:00+03:00",
+    "endDate": "2025-09-25T20:25:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "SHG Arena",
+      "address": "SHG Arena"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Saudi Pro League"
+    },
+    "image": [
+      "https://eventme.live/assets/event-covers/ended-saudi-pro-league-fixtures-al-shabab-vs-al-kholood-20250925-81c8a48c.svg"
+    ],
+    "description": "مباراة رسمية من جدول Saudi Pro League. الملعب: SHG Arena. الجولة: 4. Al Shabab vs Al Kholood ضمن رياضة وفعاليات جماهيرية في الرياض. تبدأ الفعالية ٢٥‏/٠٩‏/٢٠٢٥، ٦:٢٥ م وتنتهي ٢٥‏/٠٩‏/٢٠٢٥، ٨:٢٥ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Saudi Pro League Fixtures.",
+    "url": "https://eventme.live/events/ended-saudi-pro-league-fixtures-al-shabab-vs-al-kholood-20250925-81c8a48c.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-saudi-pro-league-fixtures-al-shabab-vs-al-kholood-20250925-81c8a48c.html",
+    "isAccessibleForFree": false,
+    "keywords": "Al Shabab vs Al Kholood, رياضة وفعاليات جماهيرية, football match, فعالية, منتهية, الرياض, SHG Arena, Saudi Pro League Fixtures, sports, football, fixtures, matches, 2025/26, ended-event, رياضة ولياقة",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "رياضة ولياقة"
+      }
+    ],
+    "sameAs": [
+      "https://webook.com/ar/events/rsl-al-shabab-vs-al-kholood-748563"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://webook.com/ar/events/rsl-al-shabab-vs-al-kholood-748563",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

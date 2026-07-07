@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Future Investment Initiative (FII 10) | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-future-investment-initiative-fii-10@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20261027T060000Z
+DTEND:20261030T150000Z
+SUMMARY:Future Investment Initiative (FII 10)
+DESCRIPTION:The 10th Edition of the Future Investment Initiative (FII) convenes global leaders\, investors\, innovators\, and policymakers to shape future economic growth\, focusing on technology\, capital markets\, AI\, sustainability\, and global opportunity.
+LOCATION:Riyadh\, Saudi Arabia.
+URL:https://eventme.live/events/event-future-investment-initiative-fii-10.html
+END:VEVENT
+END:VCALENDAR

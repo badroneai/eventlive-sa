@@ -1,0 +1,111 @@
+{
+  "id": "event-saudi-entertainment-and-amusement-expo",
+  "title": "Saudi Entertainment and Amusement Expo",
+  "summary": "The Saudi Entertainment and Amusement (SEA) Expo, running for over 8 years in Riyadh, is the Kingdom’s premier platform for the global entertainment and attractions industry. Bringing together innovators, suppliers, and decision-makers from across the Middle East and Africa, the expo showcases the latest technologies and solutions shaping the future of leisure and attractions. More than just an exhibition, SEA Expo offers opportunities to connect with like-minded industry experts, foster collaboration, and take businesses to new heights in Saudi Arabia’s rapidly growing entertainment sector. Register Now",
+  "canonical_url": "https://eventme.live/events/event-saudi-entertainment-and-amusement-expo.html",
+  "detail_url": "./events/event-saudi-entertainment-and-amusement-expo.html",
+  "calendar_url": "./events/event-saudi-entertainment-and-amusement-expo.ics",
+  "source_label": "Riyadh City Events",
+  "source_url": "https://riyadh.sa/en/moment/events/item/event/29307",
+  "evidence_url": "https://riyadh.sa/en/moment/events/item/event/29307",
+  "city": "الرياض",
+  "venue": "Riyadh Front Exhibition & Conference Center",
+  "venue_address": "Riyadh Front Exhibition & Conference Center",
+  "starts_at": "2026-08-30T15:00:00+03:00",
+  "ends_at": "2026-09-01T21:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/saudi-entertainment-and-amusement-expo-057df33351.jpg",
+  "image_alt": "Saudi Entertainment and Amusement Expo",
+  "category": "معارض وتجارية",
+  "category_url": "./categories/exhibition-trade.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    }
+  ],
+  "keywords": [
+    "Saudi Entertainment and Amusement Expo",
+    "معارض وتجارية",
+    "Exhibitions & Conferences",
+    "فعالية",
+    "قادمة",
+    "الرياض",
+    "Riyadh Front Exhibition & Conference Center",
+    "Riyadh City Events",
+    "city events",
+    "culture",
+    "sports",
+    "community",
+    "camps",
+    "tourism",
+    "8104",
+    "9601",
+    "موظفون ومهنيون",
+    "عائلات وأطفال"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-08-30T15:00:00+03:00",
+      "ends_at": "2026-09-01T21:00:00+03:00",
+      "room": "Riyadh Front Exhibition & Conference Center",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Saudi Entertainment and Amusement Expo",
+    "startDate": "2026-08-30T15:00:00+03:00",
+    "endDate": "2026-09-01T21:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Riyadh Front Exhibition & Conference Center",
+      "address": "Riyadh Front Exhibition & Conference Center"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "DMG Events LLC Ltd"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/saudi-entertainment-and-amusement-expo-057df33351.jpg"
+    ],
+    "description": "The Saudi Entertainment and Amusement (SEA) Expo, running for over 8 years in Riyadh, is the Kingdom’s premier platform for the global entertainment and attractions industry. Bringing together innovators, suppliers, and decision-makers from across the Middle East and Africa, the expo showcases the latest technologies and solutions shaping the future of leisure and attractions. More than just an exhibition, SEA Expo offers opportunities to connect with like-minded industry experts, foster collaboration, and take businesses to new heights in Saudi Arabia’s rapidly growing entertainment sector. Register Now",
+    "url": "https://eventme.live/events/event-saudi-entertainment-and-amusement-expo.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-saudi-entertainment-and-amusement-expo.html",
+    "isAccessibleForFree": false,
+    "keywords": "Saudi Entertainment and Amusement Expo, معارض وتجارية, Exhibitions & Conferences, فعالية, قادمة, الرياض, Riyadh Front Exhibition & Conference Center, Riyadh City Events, city events, culture, sports, community, camps, tourism, 8104, 9601, موظفون ومهنيون, عائلات وأطفال",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      }
+    ],
+    "sameAs": [
+      "https://riyadh.sa/en/moment/events/item/event/29307"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://riyadh.sa/en/moment/events/item/event/29307",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:CODE AI incubator | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-code-mcit-programs-code-ai-incubator-20250420-94fb5914@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20250420T060000Z
+DTEND:20251012T150000Z
+SUMMARY:CODE AI incubator
+DESCRIPTION:A specialized incubator to support the growth of startups in the field of artificial intelligence. The program aims to empower innovators and entrepreneurs to transform their ideas into viable tech solutions by providing an integrated environment that includes mentorship\, advanced technical resources\, funding\, and strategic partnerships. The vision is to strengthen AI's position as a key driver of economic and social development.
+LOCATION:CODE Riyadh
+URL:https://eventme.live/events/ended-code-mcit-programs-code-ai-incubator-20250420-94fb5914.html
+END:VEVENT
+END:VCALENDAR

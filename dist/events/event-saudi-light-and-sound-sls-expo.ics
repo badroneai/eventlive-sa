@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Saudi Light and Sound (SLS) Expo | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-saudi-light-and-sound-sls-expo@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260830T120000Z
+DTEND:20260901T180000Z
+SUMMARY:Saudi Light and Sound (SLS) Expo
+DESCRIPTION:Discover the future of Saudi Arabia’s professional light and sound industry at the Saudi Light & Sound (SLS) Exhibition\, the premier platform for event technology\, lighting design\, and audio innovations. The exhibition offers a rare opportunity to present AV and lighting solutions at the heart of a fast-evolving market\, with the Pro AV segment valued at $30.5 million in 2024 and projected to reach $40.5 million by 2033\, fueled by smart city investments and immersive event infrastructure. Visitors can connect with decision-makers driving billion-dollar projects\, explore cutting-edge solutions across pro lighting\, audio equipment\, stage technology\, digital signage\, laser effects\, and theatrical systems\, and position their brand at the forefront of the region’s pro light and sound transformation. Register Now
+LOCATION:Riyadh Front Exhibition & Convention Center
+URL:https://eventme.live/events/event-saudi-light-and-sound-sls-expo.html
+END:VEVENT
+END:VCALENDAR

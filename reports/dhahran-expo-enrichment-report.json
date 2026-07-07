@@ -1,0 +1,149 @@
+{
+  "generated_at": "2026-07-07T19:23:40.673Z",
+  "catalog": "data/events_catalog.json",
+  "source": "Dhahran Expo Calendar",
+  "totals": {
+    "targets": 15,
+    "candidates": 15,
+    "enriched": 15,
+    "skipped": 0
+  },
+  "enriched": [
+    {
+      "id": "event-offshore-technology-innovation-technical-conference-expo-offshore-arabia",
+      "title": "Offshore Technology & Innovation Technical Conference & Expo - OFFSHORE ARABIA 2026”",
+      "starts_at": "2026-08-24T09:00:00+03:00",
+      "ends_at": "2026-08-26T18:00:00+03:00",
+      "organizer": "Aldrich International L.L.C.",
+      "category": "conference",
+      "features": 6
+    },
+    {
+      "id": "event-crafts-handicrafts-exhibition",
+      "title": "Crafts & Handicrafts Exhibition",
+      "starts_at": "2026-09-01T09:00:00+03:00",
+      "ends_at": "2026-09-04T18:00:00+03:00",
+      "organizer": "Sharqia Chamber",
+      "category": "exhibition",
+      "features": 6
+    },
+    {
+      "id": "event-arabian-and-international-industries-exhibition",
+      "title": "Arabian and International Industries Exhibition",
+      "starts_at": "2026-09-02T09:00:00+03:00",
+      "ends_at": "2026-09-11T18:00:00+03:00",
+      "organizer": "Ibrahim Mohammed Saad Al-Awad Establishment for Organizing Exhibitions and Conferences",
+      "category": "exhibition",
+      "features": 6
+    },
+    {
+      "id": "event-static-equipment-engineering-maintenance-technical-conference-expo-state",
+      "title": "Static Equipment Engineering & Maintenance Technical Conference & Expo - STATEC Arabia",
+      "starts_at": "2026-09-08T09:00:00+03:00",
+      "ends_at": "2026-09-10T18:00:00+03:00",
+      "organizer": "Aldrich Int’l LLC",
+      "category": "conference",
+      "features": 6
+    },
+    {
+      "id": "event-gulf-steel-storage-tank-refinery-expo",
+      "title": "Gulf Steel, Storage Tank & Refinery Expo",
+      "starts_at": "2026-09-20T09:00:00+03:00",
+      "ends_at": "2026-09-22T18:00:00+03:00",
+      "organizer": "Spartans and Knights Events Management",
+      "category": "exhibition",
+      "features": 6
+    },
+    {
+      "id": "event-the-egyptian-products-exhibition",
+      "title": "The Egyptian Products Exhibition",
+      "starts_at": "2026-09-24T09:00:00+03:00",
+      "ends_at": "2026-09-29T18:00:00+03:00",
+      "organizer": "Al-Baraa Muhammed Bin Abdullah Al-Duaij Establishment for Organizing Exhibitions & Conferences",
+      "category": "exhibition",
+      "features": 6
+    },
+    {
+      "id": "event-wadaef-exhibition",
+      "title": "Wadaef Exhibition",
+      "starts_at": "2026-09-27T09:00:00+03:00",
+      "ends_at": "2026-09-29T18:00:00+03:00",
+      "organizer": "Sharqia Chamber",
+      "category": "exhibition",
+      "features": 6
+    },
+    {
+      "id": "event-world-firefighters-challenge",
+      "title": "World Firefighters Challenge",
+      "starts_at": "2026-11-05T09:00:00+03:00",
+      "ends_at": "2026-11-13T18:00:00+03:00",
+      "organizer": "Saudi Aramco",
+      "category": "sports",
+      "features": 6
+    },
+    {
+      "id": "event-business-sector-annual-reception",
+      "title": "Business Sector Annual Reception.",
+      "starts_at": "2026-12-01T09:00:00+03:00",
+      "ends_at": "2026-12-01T18:00:00+03:00",
+      "organizer": "Sharqia Chamber",
+      "category": "venue event",
+      "features": 6
+    },
+    {
+      "id": "event-consumer-trade-fair",
+      "title": "Consumer Trade Fair",
+      "starts_at": "2026-12-02T09:00:00+03:00",
+      "ends_at": "2026-12-09T18:00:00+03:00",
+      "organizer": "Al-Baraa Muhammed Bin Abdullah Al-Duaij Establishment for Organizing Exhibitions & Conferences",
+      "category": "exhibition",
+      "features": 6
+    },
+    {
+      "id": "event-dirayah-forum",
+      "title": "Dirayah Forum",
+      "starts_at": "2026-12-05T09:00:00+03:00",
+      "ends_at": "2026-12-07T18:00:00+03:00",
+      "organizer": "Princess Seetah Bint Abdulaziz Award Association",
+      "category": "conference",
+      "features": 6
+    },
+    {
+      "id": "event-emtec-the-environmental-management-technology-exhibitions-conference",
+      "title": "EMTEC – The Environmental Management & Technology Exhibitions & Conference",
+      "starts_at": "2026-12-07T09:00:00+03:00",
+      "ends_at": "2026-12-09T18:00:00+03:00",
+      "organizer": "AYM Events",
+      "category": "conference",
+      "features": 6
+    },
+    {
+      "id": "event-pfl-mena-final",
+      "title": "PFL Mena Final",
+      "starts_at": "2026-12-11T09:00:00+03:00",
+      "ends_at": "2026-12-11T18:00:00+03:00",
+      "organizer": "PFL Mena",
+      "category": "venue event",
+      "features": 6
+    },
+    {
+      "id": "event-saudi-intl-construction-interior-design-cidex-2026",
+      "title": "Saudi Int’l Construction & Interior Design CIDEX 2026",
+      "starts_at": "2026-12-14T09:00:00+03:00",
+      "ends_at": "2026-12-17T18:00:00+03:00",
+      "organizer": "Creative XP",
+      "category": "exhibition",
+      "features": 6
+    },
+    {
+      "id": "event-ctw-global-ksa-gulf-4p-mach-tools",
+      "title": "CTW Global KSA, Gulf 4P & Mach Tools",
+      "starts_at": "2026-12-14T09:00:00+03:00",
+      "ends_at": "2026-12-17T18:00:00+03:00",
+      "organizer": "MIE Events DMCC Branch",
+      "category": "venue event",
+      "features": 6
+    }
+  ],
+  "skipped": []
+}

@@ -1,0 +1,102 @@
+{
+  "id": "event-horses-and-equestrian-heritage-exhibition",
+  "title": "Horses and Equestrian Heritage Exhibition",
+  "summary": "The King Abdulaziz Public Library is hosting a specialized exhibition on horses and equestrian heritage in celebration of Saudi Founding Day. The exhibition showcases a rich collection of manuscripts, rare books, photographs, historical documents, Islamic miniatures, and illustrated works highlighting the deep-rooted equestrian legacy of the Kingdom. Marking four decades of preserving cultural heritage, the library also presents selections from its dedicated Equestrian Center, which houses more than 12,000 rare Arabic and international references on horses, alongside historic photographs captured by Princess Alice of Britain during her 1938 visit to Saudi Arabia.",
+  "canonical_url": "https://eventme.live/events/event-horses-and-equestrian-heritage-exhibition.html",
+  "detail_url": "./events/event-horses-and-equestrian-heritage-exhibition.html",
+  "calendar_url": "./events/event-horses-and-equestrian-heritage-exhibition.ics",
+  "source_label": "Riyadh City Events",
+  "source_url": "https://riyadh.sa/en/moment/events/item/event/30355",
+  "evidence_url": "https://riyadh.sa/en/moment/events/item/event/30355",
+  "city": "الرياض",
+  "venue": "King Abdulaziz Public Library (Khurais Branch), Riyadh",
+  "venue_address": "King Abdulaziz Public Library (Khurais Branch), Riyadh",
+  "starts_at": "2026-02-24T21:30:00+03:00",
+  "ends_at": "2026-08-30T23:55:00+03:00",
+  "status": "ongoing",
+  "status_label": "برنامج جارٍ",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/horses-and-equestrian-heritage-exhibition-7b885e70c4.png",
+  "image_alt": "Horses and Equestrian Heritage Exhibition",
+  "category": "معارض وتجارية",
+  "category_url": "./categories/exhibition-trade.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    }
+  ],
+  "keywords": [
+    "Horses and Equestrian Heritage Exhibition",
+    "معارض وتجارية",
+    "Exhibitions & Conferences",
+    "برنامج ممتد",
+    "برنامج جارٍ",
+    "الرياض",
+    "King Abdulaziz Public Library (Khurais Branch), Riyadh",
+    "Riyadh City Events",
+    "city events",
+    "culture",
+    "sports",
+    "community",
+    "camps",
+    "tourism",
+    "6678",
+    "2940",
+    "موظفون ومهنيون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-02-24T21:30:00+03:00",
+      "ends_at": "2026-08-30T23:55:00+03:00",
+      "room": "King Abdulaziz Public Library (Khurais Branch), Riyadh",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Horses and Equestrian Heritage Exhibition",
+    "startDate": "2026-02-24T21:30:00+03:00",
+    "endDate": "2026-08-30T23:55:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "King Abdulaziz Public Library (Khurais Branch), Riyadh",
+      "address": "King Abdulaziz Public Library (Khurais Branch), Riyadh"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Public Library "
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/horses-and-equestrian-heritage-exhibition-7b885e70c4.png"
+    ],
+    "description": "The King Abdulaziz Public Library is hosting a specialized exhibition on horses and equestrian heritage in celebration of Saudi Founding Day. The exhibition showcases a rich collection of manuscripts, rare books, photographs, historical documents, Islamic miniatures, and illustrated works highlighting the deep-rooted equestrian legacy of the Kingdom. Marking four decades of preserving cultural heritage, the library also presents selections from its dedicated Equestrian Center, which houses more than 12,000 rare Arabic and international references on horses, alongside historic photographs captured by Princess Alice of Britain during her 1938 visit to Saudi Arabia.",
+    "url": "https://eventme.live/events/event-horses-and-equestrian-heritage-exhibition.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-horses-and-equestrian-heritage-exhibition.html",
+    "isAccessibleForFree": false,
+    "keywords": "Horses and Equestrian Heritage Exhibition, معارض وتجارية, Exhibitions & Conferences, برنامج ممتد, برنامج جارٍ, الرياض, King Abdulaziz Public Library (Khurais Branch), Riyadh, Riyadh City Events, city events, culture, sports, community, camps, tourism, 6678, 2940, موظفون ومهنيون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      }
+    ],
+    "sameAs": [
+      "https://riyadh.sa/en/moment/events/item/event/30355"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://riyadh.sa/en/moment/events/item/event/30355",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

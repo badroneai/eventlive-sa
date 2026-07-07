@@ -1,0 +1,116 @@
+{
+  "id": "ended-mdlbeast-events-soundstorm-2023-20231214-becf981e",
+  "title": "SOUNDSTORM 2023",
+  "summary": "فعالية من تقويم MDLBEAST. المدينة: Riyadh. SOUNDSTORM 2023 ضمن ترفيه وعائلات في الرياض. تبدأ الفعالية ١٤‏/١٢‏/٢٠٢٣، ٣:٣٠ م وتنتهي ١٧‏/١٢‏/٢٠٢٣، ٤:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: MDLBEAST Events.",
+  "canonical_url": "https://eventme.live/events/ended-mdlbeast-events-soundstorm-2023-20231214-becf981e.html",
+  "detail_url": "./events/ended-mdlbeast-events-soundstorm-2023-20231214-becf981e.html",
+  "calendar_url": "./events/ended-mdlbeast-events-soundstorm-2023-20231214-becf981e.ics",
+  "source_label": "MDLBEAST Events",
+  "source_url": "https://mdlbeast.com/events/soundstorm-2023",
+  "evidence_url": "https://mdlbeast.com/events/soundstorm-2023",
+  "city": "الرياض",
+  "venue": "Riyadh",
+  "venue_address": "Riyadh",
+  "starts_at": "2023-12-14T15:30:00+03:00",
+  "ends_at": "2023-12-17T04:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-covers/ended-mdlbeast-events-soundstorm-2023-20231214-becf981e.svg",
+  "image_alt": "غلاف EventLive لفعالية SOUNDSTORM 2023",
+  "category": "ترفيه وعائلات",
+  "category_url": "./categories/entertainment-families.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "SOUNDSTORM 2023",
+    "ترفيه وعائلات",
+    "music",
+    "فعالية",
+    "منتهية",
+    "الرياض",
+    "Riyadh",
+    "MDLBEAST Events",
+    "festivals",
+    "conferences",
+    "entertainment",
+    "ended-event",
+    "موظفون ومهنيون",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2023-12-14T15:30:00+03:00",
+      "ends_at": "2023-12-17T04:00:00+03:00",
+      "room": "Riyadh",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "SOUNDSTORM 2023",
+    "startDate": "2023-12-14T15:30:00+03:00",
+    "endDate": "2023-12-17T04:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Riyadh",
+      "address": "Riyadh"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "MDLBEAST"
+    },
+    "image": [
+      "https://eventme.live/assets/event-covers/ended-mdlbeast-events-soundstorm-2023-20231214-becf981e.svg"
+    ],
+    "description": "فعالية من تقويم MDLBEAST. المدينة: Riyadh. SOUNDSTORM 2023 ضمن ترفيه وعائلات في الرياض. تبدأ الفعالية ١٤‏/١٢‏/٢٠٢٣، ٣:٣٠ م وتنتهي ١٧‏/١٢‏/٢٠٢٣، ٤:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: MDLBEAST Events.",
+    "url": "https://eventme.live/events/ended-mdlbeast-events-soundstorm-2023-20231214-becf981e.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-mdlbeast-events-soundstorm-2023-20231214-becf981e.html",
+    "isAccessibleForFree": false,
+    "keywords": "SOUNDSTORM 2023, ترفيه وعائلات, music, فعالية, منتهية, الرياض, Riyadh, MDLBEAST Events, festivals, conferences, entertainment, ended-event, موظفون ومهنيون, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://mdlbeast.com/events/soundstorm-2023"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://mdlbeast.com/events/soundstorm-2023",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

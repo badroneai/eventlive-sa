@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:معسكر تطوير مواقع الويب باستخدام Java ودمج تقنيات الذكاء الاصطناعي | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260726T070000Z
+DTEND:20261015T120000Z
+SUMMARY:معسكر تطوير مواقع الويب باستخدام Java ودمج تقنيات الذكاء الاصطناعي
+DESCRIPTION:يهدف المعسكر إلى تزويد المتدربين بمهارات متكاملة تبدأ من تعلم أساسيات لغة Java وصولًا إلى بناء تطبيقات ويب احترافية و متقدمة باستخدام Spring Boot Framework، كما يعتمد المعسكر على التعلم العملي عبر مشاريع تحاكي الواقع، مع التركيز على التك... المصدر الرسمي: أكاديمية طويق.
+LOCATION:الرياض - المقر الرئيسي
+URL:https://eventme.live/events/event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي.html
+END:VEVENT
+END:VCALENDAR

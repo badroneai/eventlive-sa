@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:معسكر هندسة الحوسبة السحابية باستخدام Google Cloud | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260823T080000Z
+DTEND:20260917T120000Z
+SUMMARY:معسكر هندسة الحوسبة السحابية باستخدام Google Cloud
+DESCRIPTION:يهدف المعسكر إلى تأهيل المتدربين بالمهارات العملية لتصميم وتنفيذ الحلول السحابية على Google Cloud بكفاءة. المصدر الرسمي: أكاديمية طويق.
+LOCATION:الرياض - المقر الرئيسي
+URL:https://eventme.live/events/event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud.html
+END:VEVENT
+END:VCALENDAR

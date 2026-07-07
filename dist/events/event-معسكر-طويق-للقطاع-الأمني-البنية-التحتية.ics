@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:معسكر طويق للقطاع الأمني: البنية التحتية | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-معسكر-طويق-للقطاع-الأمني-البنية-التحتية@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260802T060000Z
+DTEND:20261001T120000Z
+SUMMARY:معسكر طويق للقطاع الأمني: البنية التحتية
+DESCRIPTION:يهدف المعسكر إلى تأهيل المشاركين بأساسيات البنية التحتية وأنظمة التشغيل من خلال أنشطة عملية تشمل الشبكات، أنظمة Windows وLinux، الافتراضية، الحوسبة السحابية، والأمن الأساسي، ويركز المعسكر على التطبيقات العملية وإدارة البيئات التقنية باست... المصدر الرسمي: أكاديمية طويق.
+LOCATION:الرياض - المقر الرئيسي
+URL:https://eventme.live/events/event-معسكر-طويق-للقطاع-الأمني-البنية-التحتية.html
+END:VEVENT
+END:VCALENDAR

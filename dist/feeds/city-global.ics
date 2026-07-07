@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:فعاليات دولي | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-web-summit-lisbon-2026@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20261109T060000Z
+DTEND:20261112T150000Z
+SUMMARY:Web Summit Lisbon 2026
+DESCRIPTION:Web Summit is one of the world’s largest technology conferences\, bringing together founders\, startups\, investors\, and tech leaders for networking\, insights\, and industry-leading sessions covering tech innovation\, startup growth\, and digital trends.
+LOCATION:Lisbon\, Portugal.
+URL:https://eventme.live/events/event-web-summit-lisbon-2026.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Viva Technology | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-invest-saudi-events-viva-technology-20260617-af6a9a6a@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260617T060000Z
+DTEND:20260620T150000Z
+SUMMARY:Viva Technology
+DESCRIPTION:VivaTech (Viva Technology) is Europe’s leading innovation and technology event — a global gathering of startups\, leaders\, investors\, and tech community members celebrating innovation and collaboration.
+LOCATION:Paris\, France.
+URL:https://eventme.live/events/ended-invest-saudi-events-viva-technology-20260617-af6a9a6a.html
+END:VEVENT
+END:VCALENDAR

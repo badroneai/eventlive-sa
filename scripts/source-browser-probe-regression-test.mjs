@@ -1,0 +1,107 @@
+import assert from 'node:assert/strict';
+import {
+  classifyProbe,
+  extractEndpointCandidates,
+  isLikelyApiUrl,
+  renderMarkdown,
+  shouldCaptureNetwork
+} from './source-browser-probe.mjs';
+
+const apiNetwork = [
+  {
+    method: 'POST',
+    status: 200,
+    url: 'https://example.gov.sa/s-core/api/OtherEvents/CulturalCalendar',
+    content_type: 'application/json',
+    resource_type: 'fetch',
+    response_shape: 'json-object:Events'
+  },
+  {
+    method: 'GET',
+    status: 200,
+    url: 'https://www.google-analytics.com/g/collect',
+    content_type: 'text/plain',
+    resource_type: 'fetch'
+  }
+];
+
+assert.equal(isLikelyApiUrl('https://example.gov.sa/internal/content/events/list/202607'), true);
+assert.equal(shouldCaptureNetwork('https://example.gov.sa/s-core/api/OtherEvents/CulturalCalendar', 'application/json', 'fetch'), true);
+assert.equal(shouldCaptureNetwork('https://www.google-analytics.com/g/collect', 'text/plain', 'fetch'), false);
+
+const endpoints = extractEndpointCandidates(apiNetwork);
+assert.equal(endpoints.length, 1);
+assert.equal(endpoints[0].method, 'POST');
+
+assert.equal(classifyProbe({
+  status: 200,
+  html: '<html><body>Events</body></html>',
+  pageText: 'Events',
+  links: [],
+  network: apiNetwork
+}), 'browser-network-api');
+
+assert.equal(classifyProbe({
+  status: 200,
+  html: '<script id="__NEXT_DATA__">{"props":{"pageProps":{}}}</script>',
+  pageText: 'Calendar',
+  links: [],
+  network: []
+}), 'browser-hydration-payload');
+
+assert.equal(classifyProbe({
+  status: 200,
+  html: '<html><body><a href="/events/future">Future event</a></body></html>',
+  pageText: 'Future event starts 2026-07-12',
+  links: [{ href: 'https://example.gov.sa/events/future', text: 'Future event' }],
+  network: []
+}), 'rendered-html-candidates');
+
+assert.equal(classifyProbe({
+  status: 403,
+  html: '<title>Just a moment...</title>',
+  pageText: 'Checking your browser',
+  links: [],
+  network: []
+}), 'blocked-or-protected');
+
+assert.equal(classifyProbe({ policy_skipped: true }), 'policy-skipped-partnership');
+
+const markdown = renderMarkdown({
+  generated_at: '2026-07-05T00:00:00.000Z',
+  totals: {
+    probed: 1,
+    browser_network_api: 1,
+    browser_hydration_payload: 0,
+    rendered_html_candidates: 0,
+    blocked_or_protected: 0,
+    policy_skipped: 0
+  },
+  sources: [
+    {
+      id: 'sample-chamber-events',
+      priority: 10,
+      status: 'ok',
+      http_status: 200,
+      classification: 'browser-network-api',
+      network_endpoints: [{
+        method: 'GET',
+        status: 200,
+        url: 'https://example.gov.sa/api/events/calendar/7/2026',
+        response_shape: 'json-array:2',
+        preview: '[{"title":"Future forum"}]'
+      }],
+      signals: {
+        date_snippets: ['Future forum 12 July 2026 - Riyadh'],
+        event_like_links: [{ text: 'Future forum', href: 'https://example.gov.sa/events/future-forum' }]
+      },
+      next_action: 'ثبت endpoint مرشحًا كجامع مباشر.'
+    }
+  ]
+});
+
+assert.match(markdown, /## Actionable Samples/);
+assert.match(markdown, /Future forum 12 July 2026/);
+assert.match(markdown, /https:\/\/example\.gov\.sa\/api\/events\/calendar\/7\/2026/);
+
+console.log('TEST_OK source browser probe regression checks passed');

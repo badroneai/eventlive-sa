@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Saudi Food Manufacturing show | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-saudi-food-manufacturing-show@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260905T110000Z
+DTEND:20260907T190000Z
+SUMMARY:Saudi Food Manufacturing show
+DESCRIPTION:Saudi Food Manufacturing returns to Riyadh as the Kingdom’s hub for next-generation food technology\, automation\, and global partnerships supporting industrial growth and Vision 2030 economic diversification. The show brings together international exhibitors\, leading manufacturers\, and senior decision-makers to explore smart factories\, advanced processing\, sustainable solutions\, funding and investment opportunities\, and the latest innovations shaping the future of F&B manufacturing. Alongside the exhibition\, the Food Forward Summit features expert-led insights on innovation economics\, greener production\, and smarter manufacturing\, while the “Get Connected” B2B programme matches exhibitors with selected factory owners and top buyers for focused\, high-value meetings on the show floor. Register Now
+LOCATION:Riyadh Front Exhibition & Conference Center
+URL:https://eventme.live/events/event-saudi-food-manufacturing-show.html
+END:VEVENT
+END:VCALENDAR

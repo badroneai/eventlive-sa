@@ -1,0 +1,129 @@
+{
+  "id": "ended-code-mcit-programs-daman-proptech-challenge-20250925-83ba4bef",
+  "title": "Daman PropTech Challenge",
+  "summary": "A digital challenge focused on empowering PropTech startups that have surpassed the idea and MVP stage, aiming to support their journey of growth, product development, and enhancing their readiness for partnerships and investment.",
+  "canonical_url": "https://eventme.live/events/ended-code-mcit-programs-daman-proptech-challenge-20250925-83ba4bef.html",
+  "detail_url": "./events/ended-code-mcit-programs-daman-proptech-challenge-20250925-83ba4bef.html",
+  "calendar_url": "./events/ended-code-mcit-programs-daman-proptech-challenge-20250925-83ba4bef.ics",
+  "source_label": "CODE MCIT Programs",
+  "source_url": "https://code.mcit.gov.sa/en/bootcamp/proptech-challenge",
+  "evidence_url": "https://code.mcit.gov.sa/en/bootcamp/proptech-challenge",
+  "city": "عن بعد",
+  "venue": "Online",
+  "venue_address": "Online",
+  "starts_at": "2025-09-25T09:00:00+03:00",
+  "ends_at": "2025-11-20T18:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "online",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/daman-proptech-challenge-2eea8247e5.png",
+  "image_alt": "Daman PropTech Challenge",
+  "category": "ألعاب ورياضات إلكترونية",
+  "category_url": "./categories/gaming-esports.html",
+  "audiences": [
+    {
+      "slug": "students",
+      "label": "طلاب وخريجون"
+    },
+    {
+      "slug": "tech",
+      "label": "تقنيون"
+    },
+    {
+      "slug": "entrepreneurs",
+      "label": "رواد أعمال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Daman PropTech Challenge",
+    "ألعاب ورياضات إلكترونية",
+    "technology bootcamp",
+    "برنامج ممتد",
+    "منتهية",
+    "عن بعد",
+    "Online",
+    "CODE MCIT Programs",
+    "technology",
+    "entrepreneurship",
+    "incubators",
+    "accelerators",
+    "bootcamps",
+    "gaming",
+    "Digital challenge",
+    "ended-event",
+    "طلاب وخريجون",
+    "تقنيون",
+    "رواد أعمال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2025-09-25T09:00:00+03:00",
+      "ends_at": "2025-11-20T18:00:00+03:00",
+      "room": "Online",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Daman PropTech Challenge",
+    "startDate": "2025-09-25T09:00:00+03:00",
+    "endDate": "2025-11-20T18:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "name": "Online",
+      "url": "https://code.mcit.gov.sa/en/bootcamp/proptech-challenge"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Ministry of Communications and Information Technology / CODE"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/daman-proptech-challenge-2eea8247e5.png"
+    ],
+    "description": "A digital challenge focused on empowering PropTech startups that have surpassed the idea and MVP stage, aiming to support their journey of growth, product development, and enhancing their readiness for partnerships and investment.",
+    "url": "https://eventme.live/events/ended-code-mcit-programs-daman-proptech-challenge-20250925-83ba4bef.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-code-mcit-programs-daman-proptech-challenge-20250925-83ba4bef.html",
+    "isAccessibleForFree": false,
+    "keywords": "Daman PropTech Challenge, ألعاب ورياضات إلكترونية, technology bootcamp, برنامج ممتد, منتهية, عن بعد, Online, CODE MCIT Programs, technology, entrepreneurship, incubators, accelerators, bootcamps, gaming, Digital challenge, ended-event, طلاب وخريجون, تقنيون, رواد أعمال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "طلاب وخريجون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "تقنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رواد أعمال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://code.mcit.gov.sa/en/bootcamp/proptech-challenge"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://code.mcit.gov.sa/en/user/register",
+      "availability": "https://schema.org/InStock",
+      "category": "Registration"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Daman PropTech Challenge | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-code-mcit-programs-daman-proptech-challenge-20250925-83ba4bef@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20250925T060000Z
+DTEND:20251120T150000Z
+SUMMARY:Daman PropTech Challenge
+DESCRIPTION:A digital challenge focused on empowering PropTech startups that have surpassed the idea and MVP stage\, aiming to support their journey of growth\, product development\, and enhancing their readiness for partnerships and investment.
+LOCATION:Online
+URL:https://eventme.live/events/ended-code-mcit-programs-daman-proptech-challenge-20250925-83ba4bef.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Host Arabia | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-rfecc-whats-on-host-arabia-20251215-031b6bd6@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20251215T060000Z
+DTEND:20251217T150000Z
+SUMMARY:Host Arabia
+DESCRIPTION:فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات. Host Arabia ضمن معارض وتجارية في الرياض. تبدأ الفعالية ١٥‏/١٢‏/٢٠٢٥، ٩:٠٠ ص وتنتهي ١٧‏/١٢‏/٢٠٢٥، ٦:٠٠ م حسب البيانات المتاحة. تتوفر لها صفحة جدول حي تساعد الزائر على متابعة الحالة والوقت أثناء الحضور. المصدر: RFECC What's On.
+LOCATION:Riyadh Front Exhibition & Conference Center
+URL:https://eventme.live/events/ended-rfecc-whats-on-host-arabia-20251215-031b6bd6.html
+END:VEVENT
+END:VCALENDAR

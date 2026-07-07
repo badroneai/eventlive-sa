@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:معسكر تطوير تطبيقات الويب باستخدام لغة Python | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-3@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260719T143000Z
+DTEND:20261008T183000Z
+SUMMARY:معسكر تطوير تطبيقات الويب باستخدام لغة Python
+DESCRIPTION:برنامج تقني من أكاديمية طويق ضمن معسكر - تطوير البرمجيات والتطبيقات. ينتهي التسجيل في 2026-06-28. معسكر تطوير تطبيقات الويب باستخدام لغة Python ضمن ورش تنظيمية وصحية في الرياض. تبدأ الفعالية ١٩‏/٠٧‏/٢٠٢٦، ٥:٣٠ م وتنتهي ٠٨‏/١٠‏/٢٠٢٦، ٩:٣٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Tuwaiq Academy Bootcamps and Programs.
+LOCATION:الرياض - المقر الرئيسي
+URL:https://eventme.live/events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-3.html
+END:VEVENT
+END:VCALENDAR

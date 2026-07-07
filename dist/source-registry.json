@@ -1,0 +1,1826 @@
+{
+  "generated_for": "EventLive source acquisition",
+  "researched_at": "2026-07-03T18:20:00+03:00",
+  "notes": "Registry of Saudi event sources to monitor before creating source candidates. Public sources are used for discovery and evidence; EventLive should not republish unverified details directly into the public catalog.",
+  "sources": [
+    {
+      "id": "nec-saudi-events",
+      "name": "National Events Center / Saudi Events",
+      "url": "https://nec.gov.sa/en",
+      "owner": "National Events Center",
+      "source_type": "national-calendar",
+      "trust_level": "official",
+      "priority": 1,
+      "coverage": "National events and seasons reference point; highest strategic source for partnership or official-feed access.",
+      "cities": [
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "national calendar",
+        "seasons",
+        "public events"
+      ],
+      "fetch_method": "partnership-api",
+      "intake_policy": "partnership-needed",
+      "evidence_required": "Official event page, app listing, or approved feed from NEC/Saudi Events.",
+      "candidate_gate": "human-review",
+      "notes": "Treat as the preferred long-term source of truth. Use public website for evidence only until a feed or permission path exists."
+    },
+    {
+      "id": "visit-saudi-calendar",
+      "name": "Visit Saudi Calendar",
+      "url": "https://www.visitsaudi.com/en/saudi-calendar",
+      "collector_url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
+      "owner": "Saudi Tourism Authority",
+      "source_type": "national-calendar",
+      "trust_level": "official",
+      "priority": 2,
+      "coverage": "Tourism-facing national calendar, key dates, seasons, and destination events.",
+      "cities": [
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "tourism",
+        "culture",
+        "entertainment",
+        "sports"
+      ],
+      "fetch_method": "html-calendar",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Visit Saudi event/calendar URL and captured timestamp.",
+      "candidate_gate": "human-review",
+      "notes": "Good discovery source for public visitor-facing events; details should still be verified against event or organizer pages."
+    },
+    {
+      "id": "moc-cultural-calendar",
+      "name": "Ministry of Culture Cultural Calendar",
+      "url": "https://www.moc.gov.sa/en/Modules/Pages/Cultural-Calendar",
+      "owner": "Ministry of Culture",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 3,
+      "coverage": "Cultural events, initiatives, competitions, and international cultural programming.",
+      "cities": [
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "culture",
+        "arts",
+        "heritage",
+        "literature",
+        "museums"
+      ],
+      "fetch_method": "html-calendar",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Ministry or commission cultural-calendar URL plus event detail page when available.",
+      "candidate_gate": "human-review",
+      "notes": "Use ministry and commission calendars as official evidence for cultural events."
+    },
+    {
+      "id": "mos-events",
+      "name": "Ministry of Sport Events",
+      "url": "https://www.mos.gov.sa/en/media/events",
+      "owner": "Ministry of Sport",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 4,
+      "coverage": "Major sport events hosted or promoted in Saudi Arabia.",
+      "cities": [
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "sports",
+        "championships",
+        "tournaments"
+      ],
+      "fetch_method": "html-calendar",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Ministry event page or linked official organizer page.",
+      "candidate_gate": "human-review",
+      "notes": "Sport details may appear on separate federation, venue, or ticketing pages; use those as secondary evidence."
+    },
+    {
+      "id": "webook-explore",
+      "name": "webook Explore",
+      "url": "https://webook.com/en/explore",
+      "owner": "webook.com",
+      "source_type": "ticketing-marketplace",
+      "trust_level": "official-marketplace",
+      "priority": 5,
+      "coverage": "Ticketed entertainment, sports, concerts, shows, experiences, and season events.",
+      "cities": [
+        "Riyadh",
+        "Jeddah",
+        "Dammam",
+        "Khobar",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "tickets",
+        "entertainment",
+        "sports",
+        "concerts",
+        "experiences"
+      ],
+      "fetch_method": "search-page",
+      "intake_policy": "candidate-only",
+      "evidence_required": "webook event URL plus official organizer/season URL when available.",
+      "candidate_gate": "duplicate-review",
+      "notes": "High event volume. Use for discovery and ticket links, but avoid copying ticketing-only content without source review."
+    },
+    {
+      "id": "hala-yalla",
+      "name": "Hala Yalla",
+      "url": "https://halayalla.com/sa-en/ticketing",
+      "owner": "Hala Yalla",
+      "source_type": "ticketing-marketplace",
+      "trust_level": "official-marketplace",
+      "priority": 6,
+      "coverage": "Experiences, tourism, entertainment, sports, classes, exhibitions, conferences, and organizer ticketing services.",
+      "cities": [
+        "Riyadh",
+        "Jeddah",
+        "Al Khobar",
+        "Al Ahsa",
+        "AlUla",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "tickets",
+        "experiences",
+        "tourism",
+        "sports",
+        "exhibitions",
+        "conferences"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "candidate-only",
+      "evidence_required": "Hala Yalla listing URL and any linked organizer/source page.",
+      "candidate_gate": "duplicate-review",
+      "notes": "Strong source for paid experiences and local activities; candidate queue should dedupe against webook and official sources. Batch 6 frames Hala Yalla primarily as the B2B ticketing partnership channel for organizer-submitted event data."
+    },
+    {
+      "id": "experience-alula-events",
+      "name": "Experience AlUla Events",
+      "url": "https://www.experiencealula.com/en/whats-on/events",
+      "owner": "Royal Commission for AlUla / Experience AlUla",
+      "source_type": "destination-calendar",
+      "trust_level": "official",
+      "priority": 7,
+      "coverage": "AlUla events, festivals, concerts, endurance races, exhibitions, pop-ups, and seasonal programs.",
+      "cities": [
+        "AlUla"
+      ],
+      "categories": [
+        "destination",
+        "culture",
+        "heritage",
+        "music",
+        "sports",
+        "festivals"
+      ],
+      "fetch_method": "html-calendar",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Experience AlUla event URL and booking/detail page.",
+      "candidate_gate": "human-review",
+      "notes": "Useful for destination-specific schedules with strong visitor intent."
+    },
+    {
+      "id": "mdlbeast-events",
+      "name": "MDLBEAST Events",
+      "url": "https://mdlbeast.com/events",
+      "owner": "MDLBEAST",
+      "source_type": "organizer-calendar",
+      "trust_level": "official",
+      "priority": 8,
+      "coverage": "Music events, festivals, XP Music Futures, Soundstorm, Balad Beast, Azimuth, and related shows.",
+      "cities": [
+        "Riyadh",
+        "Jeddah",
+        "AlUla"
+      ],
+      "categories": [
+        "music",
+        "festivals",
+        "conferences",
+        "entertainment"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "monitor-public",
+      "evidence_required": "MDLBEAST event URL and ticketing/detail URL.",
+      "candidate_gate": "human-review",
+      "notes": "Good source for music and festival events; many events also appear in Visit Saudi or ticketing marketplaces."
+    },
+    {
+      "id": "monshaat-events",
+      "name": "Monsha'at All Events",
+      "url": "https://www.monshaat.gov.sa/en/events-list",
+      "owner": "Monsha'at",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 9,
+      "coverage": "SME support events, Biban, themed weeks, forums, online sessions, competitions, and exhibitions.",
+      "cities": [
+        "Saudi Arabia",
+        "Online"
+      ],
+      "categories": [
+        "entrepreneurship",
+        "SMEs",
+        "business",
+        "forums",
+        "training"
+      ],
+      "fetch_method": "html-calendar",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Monsha'at event detail URL with explicit start/end datetime and date/category fields.",
+      "candidate_gate": "human-review",
+      "notes": "High-fit source for EventLive's business and entrepreneurship category. Batch 6 identified /en/events-list as the stronger listing path with explicit start/end datetime cards."
+    },
+    {
+      "id": "invest-saudi-events",
+      "name": "Invest Saudi Events",
+      "url": "https://www.investsaudi.sa/events",
+      "collector_url": "https://investsaudi.sa/backend/wp-json/v3/events?time_frame=all",
+      "owner": "Ministry of Investment / Invest Saudi",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 10,
+      "coverage": "Investment, trade, sector, and global business events connected to Saudi opportunities.",
+      "cities": [
+        "Saudi Arabia",
+        "Global"
+      ],
+      "categories": [
+        "investment",
+        "business",
+        "trade",
+        "real estate",
+        "technology"
+      ],
+      "fetch_method": "html-calendar",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Invest Saudi event URL and organizer/source detail page.",
+      "candidate_gate": "human-review",
+      "notes": "Use for business-facing events and outbound Saudi investment showcases. Browser probe confirmed the official Invest Saudi WordPress JSON endpoint under /backend/wp-json/v3/events?time_frame=all; publish only date-complete rows and keep non-Saudi venues labeled Global."
+    },
+    {
+      "id": "rfecc-whats-on",
+      "name": "RFECC What's On",
+      "url": "https://rfecc.sa/whats-on/",
+      "owner": "Riyadh Front Exhibition & Conference Center",
+      "source_type": "venue-calendar",
+      "trust_level": "venue-official",
+      "priority": 11,
+      "coverage": "Riyadh Front venue calendar and exhibition highlights.",
+      "cities": [
+        "Riyadh"
+      ],
+      "categories": [
+        "exhibitions",
+        "conferences",
+        "trade shows",
+        "venue"
+      ],
+      "fetch_method": "html-calendar",
+      "intake_policy": "monitor-public",
+      "evidence_required": "Venue event URL plus official organizer page when available.",
+      "candidate_gate": "duplicate-review",
+      "notes": "Venue calendars are useful for discovery but usually need organizer page confirmation for schedule details. Batch 6 identified /whats-on/ as the month-by-month calendar path."
+    },
+    {
+      "id": "eye-of-riyadh-events",
+      "name": "Eye of Riyadh Events",
+      "url": "https://www.eyeofriyadh.com/events/",
+      "owner": "Eye of Riyadh",
+      "source_type": "industry-directory",
+      "trust_level": "aggregator",
+      "priority": 12,
+      "coverage": "Saudi and regional business, conference, exhibition, forum, summit, training, and webinar listings.",
+      "cities": [
+        "Riyadh",
+        "Jeddah",
+        "Medina",
+        "Dhahran",
+        "Al-Khobar",
+        "Online"
+      ],
+      "categories": [
+        "business",
+        "conferences",
+        "exhibitions",
+        "forums",
+        "summits",
+        "training"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "candidate-only",
+      "evidence_required": "Directory listing URL plus organizer/venue official confirmation.",
+      "candidate_gate": "duplicate-review",
+      "notes": "Strong discovery breadth, but should not be treated as final source of truth."
+    },
+    {
+      "id": "ten-times-saudi",
+      "name": "10times Saudi Arabia",
+      "url": "https://10times.com/saudiarabia",
+      "owner": "10times",
+      "source_type": "industry-directory",
+      "trust_level": "aggregator",
+      "priority": 13,
+      "coverage": "Broad conference, trade show, exhibition, and business events across Saudi Arabia.",
+      "cities": [
+        "Riyadh",
+        "Jeddah",
+        "Dammam",
+        "Khobar",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "conferences",
+        "exhibitions",
+        "trade shows",
+        "business"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "candidate-only",
+      "evidence_required": "10times event URL plus official organizer or venue page.",
+      "candidate_gate": "duplicate-review",
+      "notes": "Use to discover events missed by official feeds; verify every candidate before catalog entry."
+    },
+    {
+      "id": "eventbrite-saudi",
+      "name": "Eventbrite Saudi Arabia",
+      "url": "https://www.eventbrite.com/d/saudi-arabia/events/",
+      "owner": "Eventbrite",
+      "source_type": "community-platform",
+      "trust_level": "community",
+      "priority": 14,
+      "coverage": "Community, meetup, workshop, business, and smaller public events.",
+      "cities": [
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "community",
+        "workshops",
+        "business",
+        "meetups"
+      ],
+      "fetch_method": "search-page",
+      "intake_policy": "candidate-only",
+      "evidence_required": "Eventbrite event URL plus organizer profile and public detail fields.",
+      "candidate_gate": "source-evidence",
+      "notes": "Useful for long-tail events, but lower trust than official calendars and should remain candidate-only until verified."
+    },
+    {
+      "id": "platinumlist-jeddah",
+      "name": "Platinumlist Jeddah Calendar",
+      "url": "https://jeddah.platinumlist.net/calendar/this-weekend",
+      "owner": "Platinumlist",
+      "source_type": "ticketing-marketplace",
+      "trust_level": "official-marketplace",
+      "priority": 15,
+      "coverage": "Jeddah ticketed events, nightlife, entertainment, sports, and local activities.",
+      "cities": [
+        "Jeddah"
+      ],
+      "categories": [
+        "tickets",
+        "entertainment",
+        "sports",
+        "experiences"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "candidate-only",
+      "evidence_required": "Platinumlist event URL and organizer/venue confirmation when available.",
+      "candidate_gate": "duplicate-review",
+      "notes": "Useful Jeddah-specific supplement; dedupe against webook, Hala Yalla, and official pages."
+    },
+    {
+      "id": "tuwaiq-academy-bootcamps",
+      "name": "Tuwaiq Academy Bootcamps and Programs",
+      "url": "https://tuwaiq.edu.sa/bootcamps",
+      "collector_url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
+      "owner": "Tuwaiq Academy",
+      "source_type": "organizer-calendar",
+      "trust_level": "official",
+      "priority": 16,
+      "coverage": "Technology bootcamps, intensive programs, professional training, and emerging-technology courses across Riyadh and online delivery.",
+      "cities": [
+        "Riyadh",
+        "Online",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "technology",
+        "bootcamps",
+        "training",
+        "AI",
+        "software development",
+        "cybersecurity"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Tuwaiq program URL and captured start/end dates from the official public initiatives endpoint.",
+      "candidate_gate": "human-review",
+      "notes": "Strategic source for Saudi technology training supply. The collector uses the public Tuwaiq initiatives endpoint and publishes only date-complete future programs."
+    },
+    {
+      "id": "future-skills-catalog",
+      "name": "Future Skills MCIT Catalogue",
+      "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
+      "owner": "Ministry of Communications and Information Technology",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 17,
+      "coverage": "Future Skills technology courses, live interactive training, online learning, and professional digital-skills programs.",
+      "cities": [
+        "Online",
+        "Riyadh",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "technology",
+        "future skills",
+        "online training",
+        "courses",
+        "MCIT"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Future Skills course detail URL and captured course date range.",
+      "candidate_gate": "human-review",
+      "notes": "Official government source for digital-skills courses. Strong fit for online and technology training discovery. Keep this catalogue URL for the current extractor; batch 6 also identified https://futureskills.mcit.gov.sa/en/calendar as a structured calendar path to evaluate next."
+    },
+    {
+      "id": "riyadh-season",
+      "name": "Riyadh Season Official",
+      "url": "https://riyadhseason.com/en/explore",
+      "owner": "Riyadh Season",
+      "source_type": "organizer-calendar",
+      "trust_level": "official",
+      "priority": 18,
+      "coverage": "Riyadh Season destinations, entertainment events, shows, concerts, attractions, and seasonal experiences.",
+      "cities": [
+        "Riyadh"
+      ],
+      "categories": [
+        "seasons",
+        "entertainment",
+        "shows",
+        "concerts",
+        "experiences"
+      ],
+      "fetch_method": "search-page",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Riyadh Season official event or destination URL with date/time evidence, or an approved season feed.",
+      "candidate_gate": "extraction",
+      "notes": "Official site is a JavaScript app in the current public HTML check. Batch 6 identified /en/explore as the better public entry point; full detailed schedules may still live in the app or webook, so prioritize a stable feed/API or page extractor before auto-publication."
+    },
+    {
+      "id": "visit-saudi-seasons",
+      "name": "Visit Saudi Seasons",
+      "url": "https://www.visitsaudi.com/en/seasons",
+      "collector_url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
+      "owner": "Saudi Tourism Authority",
+      "source_type": "national-calendar",
+      "trust_level": "official",
+      "priority": 19,
+      "coverage": "Saudi seasons, destination seasons, tourism campaigns, and seasonal visitor planning content.",
+      "cities": [
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "seasons",
+        "tourism",
+        "culture",
+        "entertainment",
+        "destinations"
+      ],
+      "fetch_method": "html-calendar",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Visit Saudi season or calendar URL with start/end dates or linked official season event pages.",
+      "candidate_gate": "extraction",
+      "notes": "Complements Visit Saudi Calendar. Use as a season-discovery and evidence source; avoid duplicating items already captured from the calendar."
+    },
+    {
+      "id": "code-mcit-programs",
+      "name": "CODE MCIT Programs",
+      "url": "https://code.mcit.gov.sa/en/our-programs",
+      "owner": "Ministry of Communications and Information Technology / CODE",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 20,
+      "coverage": "Digital entrepreneurship programs, incubators, accelerators, bootcamps, competitions, and technology startup programs.",
+      "cities": [
+        "Riyadh",
+        "Online",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "technology",
+        "entrepreneurship",
+        "incubators",
+        "accelerators",
+        "bootcamps",
+        "gaming"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "CODE program URL and date-complete program range from the official listing.",
+      "candidate_gate": "human-review",
+      "notes": "Official MCIT/CODE source. The collector publishes only open, date-complete, non-ended programs."
+    },
+    {
+      "id": "misk-hub-programs",
+      "name": "Misk Hub Programs",
+      "url": "https://hub.misk.org.sa/programs/",
+      "owner": "Mohammed Bin Salman Foundation / Misk Hub",
+      "source_type": "organizer-calendar",
+      "trust_level": "official",
+      "priority": 21,
+      "coverage": "Youth skills, career readiness, entrepreneurship, community, leadership, online learning, and professional development programs.",
+      "cities": [
+        "Online",
+        "Riyadh",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "skills",
+        "training",
+        "entrepreneurship",
+        "leadership",
+        "online learning",
+        "career readiness"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Misk program URL plus detail-page Program Start/End Date; application deadline alone is not enough for publication.",
+      "candidate_gate": "source-evidence",
+      "notes": "The collector follows program detail pages. Date-complete program windows can publish as official candidates; application deadlines remain source-evidence only."
+    },
+    {
+      "id": "dhahran-expo-calendar",
+      "name": "Dhahran Expo Calendar",
+      "url": "https://dhahranexpo.com.sa",
+      "owner": "Dhahran International Exhibitions Company",
+      "source_type": "venue-calendar",
+      "trust_level": "venue-official",
+      "priority": 22,
+      "coverage": "Eastern Province exhibitions, conferences, trade shows, public events, and venue-hosted business events.",
+      "cities": [
+        "Dhahran",
+        "Dammam",
+        "Khobar",
+        "Eastern Province"
+      ],
+      "categories": [
+        "exhibitions",
+        "conferences",
+        "trade shows",
+        "venue",
+        "business"
+      ],
+      "fetch_method": "html-calendar",
+      "intake_policy": "monitor-public",
+      "evidence_required": "Dhahran Expo event URL plus organizer confirmation when the venue page is not the event owner.",
+      "candidate_gate": "duplicate-review",
+      "notes": "Added from source-research batch 1. Treat as a venue-official discovery source; dedupe against organizer and ticketing pages."
+    },
+    {
+      "id": "ithra-events",
+      "name": "Ithra Events",
+      "url": "https://www.ithra.com",
+      "owner": "King Abdulaziz Center for World Culture / Ithra",
+      "source_type": "venue-calendar",
+      "trust_level": "venue-official",
+      "priority": 23,
+      "coverage": "Culture, arts, creativity, community, exhibitions, performances, and learning programs hosted by Ithra.",
+      "cities": [
+        "Dhahran",
+        "Eastern Province",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "culture",
+        "arts",
+        "creativity",
+        "community",
+        "exhibitions",
+        "learning"
+      ],
+      "fetch_method": "html-calendar",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Ithra event or program URL with date/time and location fields.",
+      "candidate_gate": "human-review",
+      "notes": "Added from source-research batch 1. Strong official cultural venue source; build extractor after confirming the current event-card structure."
+    },
+    {
+      "id": "saudi-digital-academy",
+      "name": "Saudi Digital Academy",
+      "url": "https://sda.edu.sa/ar",
+      "owner": "Saudi Digital Academy",
+      "source_type": "organizer-calendar",
+      "trust_level": "official",
+      "priority": 24,
+      "coverage": "Digital training programs, bootcamps, professional technology tracks, cybersecurity, AI, software, and game-development learning paths.",
+      "cities": [
+        "Riyadh",
+        "Online",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "technology",
+        "training",
+        "bootcamps",
+        "AI",
+        "cybersecurity",
+        "software development",
+        "games"
+      ],
+      "fetch_method": "manual-review",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "SDA bootcamp/program URL with start/end dates; application close dates alone are not enough.",
+      "candidate_gate": "extraction",
+      "notes": "Added from source-research batch 1. DNS resolution failed from the current collector environment, so keep registered and revisit with browser/API checks before automation."
+    },
+    {
+      "id": "sdaia-academy-programs",
+      "name": "SDAIA Academy Programs",
+      "url": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx",
+      "owner": "Saudi Data and AI Authority / SDAIA Academy",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 25,
+      "coverage": "Data, AI, emerging technology, quantum computing, generative AI, and applied AI bootcamps and professional programs.",
+      "cities": [
+        "Riyadh",
+        "Online",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "AI",
+        "data",
+        "training",
+        "bootcamps",
+        "emerging technology",
+        "quantum computing"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "SDAIA Academy bootcamp/program detail URL with date-complete schedule.",
+      "candidate_gate": "extraction",
+      "notes": "Added from source-research batch 1. Official high-value training source; needs extractor validation against current bootcamp cards."
+    },
+    {
+      "id": "saudi-events-app",
+      "name": "Saudi Events App",
+      "url": "https://play.google.com/store/apps/details?id=com.saudi.riyadh.seasons",
+      "owner": "National Events Center",
+      "source_type": "national-calendar",
+      "trust_level": "official",
+      "priority": 26,
+      "coverage": "Official Saudi Events mobile platform for seasons, major events, ticketing platform links, and nationwide event discovery.",
+      "cities": [
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "national calendar",
+        "seasons",
+        "entertainment",
+        "culture",
+        "sports",
+        "tickets"
+      ],
+      "fetch_method": "partnership-api",
+      "intake_policy": "partnership-needed",
+      "evidence_required": "Saudi Events official app/feed record with event start/end, city, venue, and official URL.",
+      "candidate_gate": "extraction",
+      "notes": "Added from source-research batch 2. The app is an official NEC destination, but automated ingestion needs a stable feed/API or app-backed endpoint before publication."
+    },
+    {
+      "id": "enjoy-saudi-events",
+      "name": "Enjoy Saudi Events",
+      "url": "https://enjoy.sa/en/events",
+      "owner": "General Entertainment Authority",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 27,
+      "coverage": "Licensed entertainment activities and events across Saudi Arabia, including live shows, venues, recreational experiences, and official entertainment calendar items.",
+      "cities": [
+        "Riyadh",
+        "Jeddah",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "entertainment",
+        "live shows",
+        "venues",
+        "recreational activities",
+        "music",
+        "family"
+      ],
+      "fetch_method": "html-calendar",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Enjoy event detail URL with date/time, city, venue, and organizer fields.",
+      "candidate_gate": "human-review",
+      "notes": "Added from source-research batch 2 after verifying Enjoy.sa is described as the official event site for the General Entertainment Authority. Build extractor after confirming current event-card pagination and stale-event filtering."
+    },
+    {
+      "id": "misk-hub-events",
+      "name": "Misk Hub Events",
+      "url": "https://hub.misk.org.sa/en/events/",
+      "owner": "Mohammed bin Salman Foundation / Misk",
+      "source_type": "organizer-calendar",
+      "trust_level": "official",
+      "priority": 28,
+      "coverage": "Youth programs, roadshows, career events, leadership sessions, skills events, and Misk-hosted training experiences.",
+      "cities": [
+        "Riyadh",
+        "Hail",
+        "Jazan",
+        "Aseer",
+        "Al Ahsa",
+        "Arar",
+        "Online",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "training",
+        "youth",
+        "leadership",
+        "skills",
+        "career",
+        "roadshows"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Misk event detail URL with start/end schedule, city or delivery mode, venue, and registration deadline kept separate from event end.",
+      "candidate_gate": "extraction",
+      "notes": "Added from source-research batch 3 as a separate lane from Misk Hub Programs. Applications closing dates must be stored as registration deadlines, not event end dates."
+    },
+    {
+      "id": "jcci-events-center",
+      "name": "Jeddah Chamber Exhibitions and Events Center",
+      "url": "https://www.jcci.org.sa/en/المعارض-والفعاليات",
+      "owner": "Jeddah Chamber of Commerce / JCCI",
+      "source_type": "venue-calendar",
+      "trust_level": "venue-official",
+      "priority": 29,
+      "coverage": "Jeddah exhibitions, forums, roadshows, business events, chamber activities, and community-facing venue events.",
+      "cities": [
+        "Jeddah",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "exhibitions",
+        "forums",
+        "business",
+        "community",
+        "roadshows"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "monitor-public",
+      "evidence_required": "JCCI event or center URL with title, date range, venue, and official chamber evidence.",
+      "candidate_gate": "duplicate-review",
+      "notes": "Added from source-research batch 3. Strong Jeddah venue source; dedupe against organizer, Visit Saudi, and ticketing pages before publication."
+    },
+    {
+      "id": "saudi-pro-league-fixtures",
+      "name": "Saudi Pro League Fixtures",
+      "url": "https://www.spl.com.sa/en",
+      "collector_url": "https://api.saudi-pro-league.pulselive.com/football/fixtures?comps=215&compSeasons=859&pageSize=100&statuses=C,U,L&sort=asc",
+      "owner": "Saudi Pro League",
+      "source_type": "organizer-calendar",
+      "trust_level": "official",
+      "priority": 30,
+      "coverage": "Roshn Saudi League fixtures, club-city sport events, match rounds, and official league schedule announcements.",
+      "cities": [
+        "Riyadh",
+        "Jeddah",
+        "Dammam",
+        "Buraydah",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "sports",
+        "football",
+        "fixtures",
+        "matches"
+      ],
+      "fetch_method": "html-calendar",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Official SPL fixture or announcement URL with match date/time, home and away clubs, stadium or city, and season context.",
+      "candidate_gate": "extraction",
+      "notes": "Added from source-research batch 3. Fixture route was not confirmed from the home page, so keep pending extractor discovery or SPL/SAFF data partnership."
+    },
+    {
+      "id": "neom-newsroom-events",
+      "name": "NEOM Newsroom Events",
+      "url": "https://www.neom.com/en-us/newsroom/events",
+      "owner": "NEOM",
+      "source_type": "organizer-calendar",
+      "trust_level": "official",
+      "priority": 31,
+      "coverage": "NEOM-hosted events, strategic appearances, conferences, and major future-city or innovation programming.",
+      "cities": [
+        "NEOM",
+        "Tabuk",
+        "Saudi Arabia",
+        "International"
+      ],
+      "categories": [
+        "innovation",
+        "business",
+        "future cities",
+        "conferences"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "monitor-public",
+      "evidence_required": "NEOM event URL plus location evidence; only Saudi-hosted or NEOM-hosted public events can publish.",
+      "candidate_gate": "source-evidence",
+      "notes": "Added from source-research batch 3. Global appearances are evidence-only; filter for Saudi-hosted or user-attendable NEOM events before any catalog promotion."
+    },
+    {
+      "id": "saudi-space-agency-events",
+      "name": "Saudi Space Agency Events",
+      "url": "https://ssa.gov.sa/en/events/?path=/events/",
+      "collector_url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
+      "collector_method": "POST",
+      "collector_body": {
+        "sort": "New",
+        "pageNumber": 1,
+        "pageSize": 100
+      },
+      "owner": "Saudi Space Agency",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 32,
+      "coverage": "Space, science, aerospace, SDC, SARI, STEM, and Saudi-hosted space sector events.",
+      "cities": [
+        "Riyadh",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "space",
+        "science",
+        "technology",
+        "conferences",
+        "STEM"
+      ],
+      "fetch_method": "json-api",
+      "intake_policy": "monitor-public",
+      "evidence_required": "Saudi Space Agency event or initiative URL with confirmed dates, venue or delivery mode, and attendance relevance.",
+      "candidate_gate": "extraction",
+      "notes": "Promoted after browser-network probe verified the official APIGW SearchEvents JSON feed. Saudi-hosted events can enter review; global Saudi Space Agency participations remain source-evidence unless attendee relevance is confirmed."
+    },
+    {
+      "id": "cst-events-news",
+      "name": "CST Events and News",
+      "url": "https://www.cst.gov.sa/en",
+      "owner": "Communications, Space and Technology Commission",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 33,
+      "coverage": "Communications, space, technology, satellite, regulatory, and sector events or official participation signals.",
+      "cities": [
+        "Riyadh",
+        "Saudi Arabia",
+        "International"
+      ],
+      "categories": [
+        "technology",
+        "telecom",
+        "space",
+        "regulation",
+        "satellite"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "monitor-public",
+      "evidence_required": "CST page with a dated public event or Saudi-hosted participation record; news-only posts stay as evidence.",
+      "candidate_gate": "source-evidence",
+      "notes": "Added from source-research batch 3. News-driven source; useful for discovery and sector evidence, but not enough alone for public event rows."
+    },
+    {
+      "id": "visit-saudi-calendar-pdf",
+      "name": "Visit Saudi Calendar PDF",
+      "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar.pdf",
+      "owner": "Saudi Tourism Authority",
+      "source_type": "national-calendar",
+      "trust_level": "official",
+      "priority": 34,
+      "coverage": "STA print/PDF calendar reference for Saudi national tourism events, seasons, and destination schedules.",
+      "cities": [
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "tourism",
+        "seasons",
+        "culture",
+        "entertainment",
+        "sports"
+      ],
+      "fetch_method": "manual-review",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Parsed PDF row plus canonical web page or organizer URL before public catalog publication.",
+      "candidate_gate": "extraction",
+      "notes": "Added from source-research batch 3 as a reference layer. Use PDF parsing for discovery, then reconcile against Visit Saudi web pages or organizer evidence."
+    },
+    {
+      "id": "qiddiya-events",
+      "name": "Qiddiya Events",
+      "url": "https://qiddiya.com/",
+      "owner": "Qiddiya Investment Company",
+      "source_type": "destination-calendar",
+      "trust_level": "official",
+      "priority": 35,
+      "coverage": "Qiddiya City, entertainment, sports, performing arts, motorsport, attractions, and launch-event evidence.",
+      "cities": [
+        "Riyadh",
+        "Qiddiya",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "entertainment",
+        "sports",
+        "performing arts",
+        "motorsport",
+        "attractions"
+      ],
+      "fetch_method": "manual-review",
+      "intake_policy": "monitor-public",
+      "evidence_required": "Qiddiya event or asset URL with event date, venue, public attendance path, and official organizer evidence.",
+      "candidate_gate": "source-evidence",
+      "notes": "Added from source-research batch 3. Strategic future source; keep evidence-only until live public event pages or a calendar endpoint exists."
+    },
+    {
+      "id": "sela-sea-expo",
+      "name": "Sela and Saudi Entertainment Expo",
+      "url": "https://sela.sa/",
+      "owner": "Sela / Saudi Entertainment Expo",
+      "source_type": "conference-organizer",
+      "trust_level": "partner",
+      "priority": 36,
+      "coverage": "Entertainment industry events, Sela-operated experiences, venues, exhibitions, and Saudi Entertainment Expo updates.",
+      "cities": [
+        "Riyadh",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "entertainment",
+        "exhibitions",
+        "industry",
+        "venues",
+        "conferences"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "monitor-public",
+      "evidence_required": "Sela or Saudi Entertainment Expo event URL with confirmed schedule, venue, and attendee relevance.",
+      "candidate_gate": "source-evidence",
+      "notes": "Added from source-research batch 3. Use as evidence and relationship target until per-event pages are stable enough for extraction."
+    },
+    {
+      "id": "moc-cultural-subportals",
+      "name": "Ministry of Culture Commission Calendars",
+      "url": "https://music.moc.gov.sa/Cultural-Calendar",
+      "owner": "Ministry of Culture commissions",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 37,
+      "coverage": "Commission-level cultural calendars for music, heritage, architecture and design, and other Ministry of Culture verticals.",
+      "cities": [
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "music",
+        "heritage",
+        "architecture",
+        "design",
+        "culture",
+        "arts"
+      ],
+      "fetch_method": "html-calendar",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Commission calendar or event URL with complete schedule and venue; reconcile with the main MoC Cultural Calendar.",
+      "candidate_gate": "extraction",
+      "notes": "Added from source-research batch 3. Initial URLs include music.moc.gov.sa, heritage.moc.gov.sa, and archdesign.moc.gov.sa; build commission-specific extractors after current structures are checked."
+    },
+    {
+      "id": "historic-jeddah-albalad",
+      "name": "Visit AlBalad / Historic Jeddah",
+      "url": "https://visitalbalad.com/",
+      "owner": "Ministry of Culture / Historic Jeddah Program",
+      "source_type": "destination-calendar",
+      "trust_level": "official",
+      "priority": 38,
+      "coverage": "Historic Jeddah and AlBalad heritage, cultural, food, visitor, and UNESCO-linked public events.",
+      "cities": [
+        "Jeddah",
+        "AlBalad",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "heritage",
+        "culture",
+        "food",
+        "visitor experiences"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "monitor-public",
+      "evidence_required": "Visit AlBalad or Historic Jeddah event URL with schedule, venue zone, and official evidence.",
+      "candidate_gate": "extraction",
+      "notes": "Added from source-research batch 3. Strong heritage lane for Jeddah; use UNESCO and MoC ownership as evidence anchors, but publish only date-complete public events."
+    },
+    {
+      "id": "discover-aseer-events",
+      "name": "Discover Aseer Events",
+      "url": "https://discoveraseer.com/en/events",
+      "owner": "Asir Development Authority / Discover Aseer",
+      "source_type": "destination-calendar",
+      "trust_level": "official",
+      "priority": 39,
+      "coverage": "Aseer and Abha destination events, summer events, festivals, culture, nature, and southern Saudi experiences.",
+      "cities": [
+        "Abha",
+        "Aseer",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "heritage",
+        "summer",
+        "festival",
+        "nature",
+        "tourism"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "monitor-public",
+      "evidence_required": "Discover Aseer event URL with current schedule, city or venue, and official destination evidence.",
+      "candidate_gate": "human-review",
+      "notes": "Added from source-research batch 3. Promoted after deep probe: /en/events exposes current and previous seasons with date-complete official cards; keep experience/tag pages as supporting evidence only."
+    },
+    {
+      "id": "asharqia-chamber-events",
+      "name": "Asharqia Chamber Events",
+      "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
+      "owner": "Asharqia Chamber",
+      "source_type": "venue-calendar",
+      "trust_level": "official",
+      "priority": 59,
+      "coverage": "Eastern Province exhibitions, job fairs, business forums, annual receptions, and chamber-hosted public/private-sector events.",
+      "cities": [
+        "Dammam",
+        "Dhahran",
+        "Khobar",
+        "Jubail",
+        "Qatif",
+        "Eastern Province",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "business",
+        "exhibitions",
+        "career fairs",
+        "forums",
+        "chamber events"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "monitor-public",
+      "evidence_required": "Asharqia Chamber event detail URL with date range, venue, and duplicate check against venue or organizer pages when the event is an exhibition.",
+      "candidate_gate": "duplicate-review",
+      "notes": "Added during B1.3 after probe/search confirmed public SharePoint event cards with date-complete official rows. Parse only ChamberEvents cards; homepage slideshow remains evidence-only."
+    },
+    {
+      "id": "diriyah-season",
+      "name": "Diriyah Season",
+      "url": "https://diriyahseason.sa/en",
+      "owner": "Diriyah Season / General Entertainment Authority",
+      "source_type": "organizer-calendar",
+      "trust_level": "official",
+      "priority": 40,
+      "coverage": "Diriyah cultural, heritage, music, dining, and season events.",
+      "cities": [
+        "Diriyah",
+        "Riyadh",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "culture",
+        "music",
+        "heritage",
+        "dining",
+        "season"
+      ],
+      "fetch_method": "manual-review",
+      "intake_policy": "monitor-public",
+      "evidence_required": "Live Diriyah Season event URL with current schedule and venue; coming-soon pages do not create candidates.",
+      "candidate_gate": "source-evidence",
+      "notes": "Added from source-research batch 3. Prepare ingestion now, but do not publish until the site exposes real event pages again."
+    },
+    {
+      "id": "ricec-events",
+      "name": "Riyadh International Convention and Exhibition Center",
+      "url": "https://www.ricec.com/",
+      "owner": "Riyadh International Convention and Exhibition Center",
+      "source_type": "venue-calendar",
+      "trust_level": "venue-official",
+      "priority": 41,
+      "coverage": "Riyadh exhibitions, conferences, trade shows, sector events, venue-hosted public events, and organizer-linked event pages.",
+      "cities": [
+        "Riyadh",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "exhibitions",
+        "conferences",
+        "trade shows",
+        "venue",
+        "business"
+      ],
+      "fetch_method": "html-calendar",
+      "intake_policy": "monitor-public",
+      "evidence_required": "RICEC event URL plus organizer confirmation when the venue page does not carry the full program schedule.",
+      "candidate_gate": "duplicate-review",
+      "notes": "Added from source-research batch 4. High-value Riyadh venue source; dedupe against RFECC, Eye of Riyadh, 10times, webook, and organizer pages."
+    },
+    {
+      "id": "aseer-season-asda",
+      "name": "Aseer Season / Asir Development Authority",
+      "url": "https://www.asda.gov.sa/",
+      "owner": "Asir Development Authority",
+      "source_type": "destination-calendar",
+      "trust_level": "official",
+      "priority": 42,
+      "coverage": "Aseer Season, Abha summer events, festivals, cultural activations, mountain/nature experiences, and southern Saudi tourism programming.",
+      "cities": [
+        "Abha",
+        "Aseer",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "season",
+        "tourism",
+        "heritage",
+        "festival",
+        "nature",
+        "entertainment"
+      ],
+      "fetch_method": "manual-review",
+      "intake_policy": "monitor-public",
+      "evidence_required": "ASDA or official Aseer Season page with current event dates, city or venue, and public attendance details.",
+      "candidate_gate": "source-evidence",
+      "notes": "Added from source-research batch 4. Complements Discover Aseer; keep as official authority evidence until a stable season calendar is verified."
+    },
+    {
+      "id": "jeddah-season",
+      "name": "Jeddah Season",
+      "url": "https://jeddahseason.sa/",
+      "owner": "Jeddah Season / National Events Center",
+      "source_type": "organizer-calendar",
+      "trust_level": "official",
+      "priority": 43,
+      "coverage": "Jeddah Season entertainment, waterfront, historic district, family, culture, dining, and visitor experiences.",
+      "cities": [
+        "Jeddah",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "season",
+        "entertainment",
+        "culture",
+        "family",
+        "tourism",
+        "waterfront"
+      ],
+      "fetch_method": "manual-review",
+      "intake_policy": "monitor-public",
+      "evidence_required": "Live Jeddah Season event or zone URL with schedule, venue, and official ticket or organizer link.",
+      "candidate_gate": "source-evidence",
+      "notes": "Added from source-research batch 4. Register now as a major season lane, but do not publish archived or inactive season pages."
+    },
+    {
+      "id": "saudi-water-authority-events",
+      "name": "Saudi Water Authority Events",
+      "url": "https://www.swa.gov.sa/en/events",
+      "owner": "Saudi Water Authority",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 44,
+      "coverage": "Water-sector conferences, sustainability events, awards, exhibitions, workshops, and official authority activities.",
+      "cities": [
+        "Riyadh",
+        "Jeddah",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "water",
+        "sustainability",
+        "conferences",
+        "government",
+        "awards",
+        "workshops"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Saudi Water Authority event URL with date, venue or delivery mode, official description, and public attendance relevance.",
+      "candidate_gate": "extraction",
+      "notes": "Added from source-research batch 4. Sector-government source with strong official trust; extractor should filter national-day/news posts from actual public events."
+    },
+    {
+      "id": "saudi-university-events",
+      "name": "Saudi Universities and Technical Colleges",
+      "url": "https://www.kaust.edu.sa/",
+      "owner": "Saudi universities and technical colleges",
+      "source_type": "organizer-calendar",
+      "trust_level": "official",
+      "priority": 45,
+      "coverage": "Academic conferences, public lectures, research workshops, student events, innovation programs, and technical-college activities.",
+      "cities": [
+        "Riyadh",
+        "Jeddah",
+        "Dhahran",
+        "Thuwal",
+        "Abha",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "education",
+        "academic",
+        "research",
+        "workshops",
+        "technology",
+        "public lectures"
+      ],
+      "fetch_method": "manual-review",
+      "intake_policy": "monitor-public",
+      "evidence_required": "Individual university or college event URL with complete schedule and public attendance path; no unified calendar should be assumed.",
+      "candidate_gate": "source-evidence",
+      "notes": "Added from source-research batch 4. This is a discovery lane, not a single extractor; split into KAUST, KFUPM, KSU, PNU, and other institution-specific sources when each page pattern is verified."
+    },
+    {
+      "id": "expofp-eventseye-saudi",
+      "name": "ExpoFP and Eventseye Saudi Trade Shows",
+      "url": "https://expofp.com/",
+      "owner": "ExpoFP / Eventseye",
+      "source_type": "industry-directory",
+      "trust_level": "aggregator",
+      "priority": 46,
+      "coverage": "Saudi trade shows, exhibitions, venue calendars, and international business-event discovery signals.",
+      "cities": [
+        "Riyadh",
+        "Jeddah",
+        "Dhahran",
+        "Dammam",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "trade shows",
+        "exhibitions",
+        "business",
+        "conferences",
+        "venue discovery"
+      ],
+      "fetch_method": "search-page",
+      "intake_policy": "candidate-only",
+      "evidence_required": "Aggregator listing plus matching official venue or organizer page before any catalog promotion.",
+      "candidate_gate": "duplicate-review",
+      "notes": "Added from source-research batch 4. Useful for discovering missed exhibitions, but never final proof on its own."
+    },
+    {
+      "id": "meetup-facebook-saudi-events",
+      "name": "Meetup and Facebook Events Saudi Arabia",
+      "url": "https://www.meetup.com/",
+      "owner": "Meetup / Meta community event organizers",
+      "source_type": "community-platform",
+      "trust_level": "community",
+      "priority": 47,
+      "coverage": "Grassroots meetups, social events, tech gatherings, language exchanges, professional communities, and informal public events.",
+      "cities": [
+        "Riyadh",
+        "Jeddah",
+        "Dammam",
+        "Khobar",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "community",
+        "meetups",
+        "technology",
+        "networking",
+        "social",
+        "workshops"
+      ],
+      "fetch_method": "manual-review",
+      "intake_policy": "candidate-only",
+      "evidence_required": "Community event URL plus organizer profile, public attendance details, and secondary verification when possible.",
+      "candidate_gate": "source-evidence",
+      "notes": "Added from source-research batch 4. Discovery-only lane; user-generated events should remain source-evidence until independently verified."
+    },
+    {
+      "id": "sfda-events",
+      "name": "Saudi Food and Drug Authority Events",
+      "url": "https://www.sfda.gov.sa/",
+      "collector_pages": [
+        "https://www.sfda.gov.sa/ar/workshop",
+        "https://www.sfda.gov.sa/ar/calendar"
+      ],
+      "owner": "Saudi Food and Drug Authority",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 48,
+      "coverage": "Healthcare, food, pharma, medical devices, regulatory workshops, awareness campaigns, and sector events.",
+      "cities": [
+        "Riyadh",
+        "Jeddah",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "healthcare",
+        "food",
+        "pharma",
+        "regulation",
+        "workshops",
+        "conferences"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "monitor-public",
+      "evidence_required": "SFDA event, workshop, or official announcement URL with complete schedule and public or professional attendance relevance.",
+      "candidate_gate": "extraction",
+      "notes": "Added from source-research batch 4. Sector source for healthcare and regulatory events; avoid publishing general news without event fields."
+    },
+    {
+      "id": "saudi-contractors-authority-events",
+      "name": "Saudi Contractors Authority Events",
+      "url": "https://www.sca.gov.sa/",
+      "owner": "Saudi Contractors Authority",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 49,
+      "coverage": "Construction, contracting, infrastructure, Future Projects Forum, workshops, sector meetings, and Vision 2030 project events.",
+      "cities": [
+        "Riyadh",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "construction",
+        "infrastructure",
+        "business",
+        "forums",
+        "workshops",
+        "government"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "monitor-public",
+      "evidence_required": "Saudi Contractors Authority event URL with date, venue, organizer context, and registration or attendance details.",
+      "candidate_gate": "extraction",
+      "notes": "Added from source-research batch 4. High-fit business and infrastructure sector source; reconcile major events against venue and organizer pages."
+    },
+    {
+      "id": "saudi-winter-calendar-spa",
+      "name": "Saudi Winter Events Calendar",
+      "url": "https://www.spa.gov.sa/en/N2183027",
+      "owner": "Saudi Tourism Authority / Saudi Press Agency",
+      "source_type": "national-calendar",
+      "trust_level": "official",
+      "priority": 50,
+      "coverage": "Saudi winter season context across Riyadh, Jeddah, AlUla, Red Sea, Eastern Region, Madinah, Hail, and related national destination campaigns.",
+      "cities": [
+        "Riyadh",
+        "Jeddah",
+        "AlUla",
+        "Red Sea",
+        "Eastern Province",
+        "Madinah",
+        "Hail",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "winter",
+        "seasons",
+        "tourism",
+        "festivals",
+        "sports",
+        "culture"
+      ],
+      "fetch_method": "manual-review",
+      "intake_policy": "monitor-public",
+      "evidence_required": "SPA or STA calendar announcement plus canonical Visit Saudi, organizer, or venue event URL before candidate creation.",
+      "candidate_gate": "source-evidence",
+      "notes": "Added from source-research batch 5. Use as contextual evidence for season coverage, not as a direct event feed because press releases summarize campaigns rather than date-complete event rows."
+    },
+    {
+      "id": "riyadh-city-events",
+      "name": "Riyadh City Events",
+      "url": "https://riyadh.sa/en/events/all",
+      "owner": "Royal Commission for Riyadh City",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 51,
+      "coverage": "City-level Riyadh events, festivals, camps, cultural programs, community activities, and destination-facing public events.",
+      "cities": [
+        "Riyadh",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "city events",
+        "culture",
+        "sports",
+        "community",
+        "camps",
+        "tourism"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Riyadh.sa event detail URL with date range, city or venue, public attendance details, and duplicate check against Visit Saudi and Riyadh Season.",
+      "candidate_gate": "extraction",
+      "notes": "Added from source-research batch 5. Batch 6 identified /en/events/all as the better listing route. Strong official city-level lane; dynamic listing requires extractor validation and deduplication against season and national calendars."
+    },
+    {
+      "id": "monshaat-academy-programs",
+      "name": "Monsha'at Academy Programs",
+      "url": "https://www.monshaat.gov.sa/en/academy",
+      "owner": "General Authority for Small and Medium Enterprises / Monsha'at",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 52,
+      "coverage": "Entrepreneurship, SME training, business skills programs, online and offline workshops, and academy learning paths.",
+      "cities": [
+        "Saudi Arabia",
+        "Online"
+      ],
+      "categories": [
+        "entrepreneurship",
+        "SMEs",
+        "training",
+        "business skills",
+        "workshops",
+        "online learning"
+      ],
+      "fetch_method": "partnership-api",
+      "intake_policy": "partnership-needed",
+      "evidence_required": "Monsha'at Academy program URL with complete training schedule; registration pages or partner feed required when public pages are incomplete.",
+      "candidate_gate": "extraction",
+      "notes": "Added from source-research batch 5 as a training lane separate from Monsha'at public events. Public academy pages may require login or partnership before reliable automation."
+    },
+    {
+      "id": "gea-entertainment-events",
+      "name": "General Entertainment Authority Events",
+      "url": "https://gea.gov.sa/en/events/",
+      "owner": "General Entertainment Authority",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 53,
+      "coverage": "Entertainment activities, licensed public events, Saudi seasons, GEA initiatives, and authority-level evidence for Riyadh and Jeddah entertainment programming.",
+      "cities": [
+        "Riyadh",
+        "Jeddah",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "entertainment",
+        "seasons",
+        "live shows",
+        "family",
+        "music",
+        "licensed events"
+      ],
+      "fetch_method": "html-calendar",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "GEA event page with title, start/end date or event window, city or venue, and duplicate check against Enjoy, Riyadh Season, Visit Saudi, and webook.",
+      "candidate_gate": "extraction",
+      "notes": "Added from source-research batch 6. Treat as authority-of-record for entertainment verification; keep separate from Enjoy Saudi because gea.gov.sa is the regulator/parent source."
+    },
+    {
+      "id": "sdaia-calendar-events",
+      "name": "SDAIA Calendar and Events",
+      "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
+      "owner": "Saudi Data and AI Authority",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 54,
+      "coverage": "SDAIA AI, data, technology, conferences, exhibitions, workshops, and authority-hosted public events with stable EventID detail pages.",
+      "cities": [
+        "Riyadh",
+        "Online",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "AI",
+        "data",
+        "technology",
+        "conferences",
+        "workshops",
+        "training"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "SDAIA MediaCenter event detail URL, preferably EventsDetails.aspx?EventID=..., with complete date and venue or delivery mode.",
+      "candidate_gate": "extraction",
+      "notes": "Added from source-research batch 6 as a general SDAIA event lane separate from SDAIA Academy bootcamps. Stable EventID pages should help dedupe and evidence retention."
+    },
+    {
+      "id": "makkah-chamber-events",
+      "name": "Makkah Chamber Events",
+      "url": "https://makkahcci.org.sa/events",
+      "collector_url": "https://makkahcci.org.sa/event/page/2?category=all&country=all&date=old&type=all",
+      "owner": "Makkah Chamber of Commerce",
+      "source_type": "venue-calendar",
+      "trust_level": "official",
+      "priority": 55,
+      "coverage": "Makkah Chamber events, workshops, training, business events, and past/future chamber activities.",
+      "cities": [
+        "Makkah",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "business",
+        "training",
+        "workshops",
+        "chamber",
+        "SMEs",
+        "community"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "monitor-public",
+      "evidence_required": "Makkah Chamber event URL with title, date range, time, attendance mode, and category before candidate creation.",
+      "candidate_gate": "duplicate-review",
+      "notes": "Added 2026-07-05 from official chamber event pages. Search evidence showed future and historical pages under /events and /event/page/... with date-complete rows; build a source-specific extractor before automatic candidates."
+    },
+    {
+      "id": "qassim-chamber-events",
+      "name": "Qassim Chamber Events",
+      "url": "https://qcc.org.sa/events-list",
+      "collector_url": "https://tc.qcc.org.sa/",
+      "owner": "Qassim Chamber of Commerce",
+      "source_type": "venue-calendar",
+      "trust_level": "official",
+      "priority": 60,
+      "coverage": "Qassim chamber events, training courses, business workshops, community campaigns, and Buraydah regional activities.",
+      "cities": [
+        "Buraydah",
+        "Qassim",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "business",
+        "training",
+        "workshops",
+        "chamber",
+        "SMEs",
+        "community"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "monitor-public",
+      "evidence_required": "Qassim Chamber event detail or listing row with title, date, location, and chamber context.",
+      "candidate_gate": "duplicate-review",
+      "notes": "Added 2026-07-05 from the official /events-list page. The public list may reject automated HTML requests, so the collector uses the official tc.qcc.org.sa training/events surface while keeping qcc.org.sa as the canonical source lane."
+    },
+    {
+      "id": "abha-chamber-events",
+      "name": "Abha Chamber Events",
+      "url": "https://abhacci.org.sa/Events",
+      "owner": "Abha Chamber of Commerce",
+      "source_type": "venue-calendar",
+      "trust_level": "official",
+      "priority": 61,
+      "coverage": "Abha and Aseer chamber events, tourism/business workshops, training announcements, and regional private-sector programs.",
+      "cities": [
+        "Abha",
+        "Aseer",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "business",
+        "tourism",
+        "training",
+        "workshops",
+        "chamber",
+        "SMEs"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "monitor-public",
+      "evidence_required": "Abha Chamber event URL or official media-center event page with date, title, and venue or delivery context.",
+      "candidate_gate": "duplicate-review",
+      "notes": "Added 2026-07-05 from official /Events and chamber media pages. Treat media-center posts as event evidence only when date-complete."
+    },
+    {
+      "id": "baha-amanah-events",
+      "name": "Baha Municipality Events",
+      "url": "https://baha.gov.sa/ar/Events",
+      "owner": "Baha Municipality",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 62,
+      "coverage": "Al Baha municipality and community events, quality-of-life activities, public participation programs, and region-level civic event evidence.",
+      "cities": [
+        "Al Baha",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "municipality",
+        "community",
+        "sports",
+        "families",
+        "quality of life",
+        "regional events"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Baha Municipality event or news URL with title, published date, event date when available, venue or city, and official municipality context.",
+      "candidate_gate": "extraction",
+      "notes": "Added 2026-07-05 after web verification of the official /ar/Events surface. Use for Al Baha region coverage; do not publish civic news unless it describes a date-complete public event."
+    },
+    {
+      "id": "baha-chamber-events",
+      "name": "Baha Chamber Events",
+      "url": "https://bcci.org.sa/",
+      "owner": "Baha Chamber of Commerce",
+      "source_type": "venue-calendar",
+      "trust_level": "official",
+      "priority": 63,
+      "coverage": "Al Baha chamber activities, business workshops, training announcements, SME events, and private-sector regional programs.",
+      "cities": [
+        "Al Baha",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "business",
+        "training",
+        "workshops",
+        "chamber",
+        "SMEs",
+        "regional events"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "monitor-public",
+      "evidence_required": "Baha Chamber event/news URL with title, date, venue or delivery mode, and chamber context before candidate promotion.",
+      "candidate_gate": "source-evidence",
+      "notes": "Added 2026-07-05 as an official chamber evidence lane for a currently uncovered region. Treat homepage/news cards as leads until date-complete details are captured."
+    },
+    {
+      "id": "jouf-chamber-events",
+      "name": "Jouf Chamber Events",
+      "url": "https://ajcci.org.sa/event/",
+      "owner": "Jouf Chamber of Commerce",
+      "source_type": "venue-calendar",
+      "trust_level": "official",
+      "priority": 64,
+      "coverage": "Al Jouf chamber events, energy forums, business workshops, training activities, entrepreneurship programs, and regional economic events.",
+      "cities": [
+        "Sakaka",
+        "Al Jouf",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "business",
+        "training",
+        "workshops",
+        "chamber",
+        "energy",
+        "entrepreneurship"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Jouf Chamber event detail or listing row with title, month/date, registration link, venue or delivery mode, and official chamber context.",
+      "candidate_gate": "extraction",
+      "notes": "Added 2026-07-05 after web verification of the official /event/ page showing chamber events and past/future forum-style records."
+    },
+    {
+      "id": "northern-borders-chamber-events",
+      "name": "Northern Borders Chamber Events",
+      "url": "https://ncci.org.sa/category/events/",
+      "owner": "Northern Borders Chamber of Commerce",
+      "source_type": "venue-calendar",
+      "trust_level": "official",
+      "priority": 65,
+      "coverage": "Northern Borders chamber events, workshops, hospitality and mining-related activities, Arar/Rafha/Turaif regional business and community events.",
+      "cities": [
+        "Arar",
+        "Rafha",
+        "Turaif",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "business",
+        "training",
+        "workshops",
+        "chamber",
+        "community",
+        "regional events"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Northern Borders Chamber event post with title, event/published date, location or city, and official chamber context.",
+      "candidate_gate": "extraction",
+      "notes": "Added 2026-07-05 after web verification of the official events category. It appears WordPress-like and suitable for conservative date extraction."
+    },
+    {
+      "id": "tabuk-chamber-events",
+      "name": "Tabuk Chamber Events",
+      "url": "https://www.tabukchamber.sa/",
+      "owner": "Tabuk Chamber of Commerce",
+      "source_type": "venue-calendar",
+      "trust_level": "official",
+      "priority": 66,
+      "coverage": "Tabuk chamber events, workshops, business meetings, training programs, regional investment activities, and Tabuk/NEOM-adjacent private-sector events.",
+      "cities": [
+        "Tabuk",
+        "NEOM",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "business",
+        "training",
+        "workshops",
+        "chamber",
+        "investment",
+        "regional events"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Tabuk Chamber event row or detail with title, date, venue or virtual link, and official chamber context.",
+      "candidate_gate": "extraction",
+      "notes": "Added 2026-07-05 after web verification of the official site showing a dated chamber events schedule."
+    },
+    {
+      "id": "jazan-chamber-events",
+      "name": "Jazan Chamber Events",
+      "url": "https://jazancci.org.sa/",
+      "collector_url": "https://jazancci.org.sa/api/events/calendar/7/2026",
+      "owner": "Jazan Chamber of Commerce",
+      "source_type": "venue-calendar",
+      "trust_level": "official",
+      "priority": 67,
+      "coverage": "Jazan chamber events, tourism/entertainment committee activity, business workshops, volunteer/community sessions, and regional private-sector programs.",
+      "cities": [
+        "Jazan",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "business",
+        "training",
+        "workshops",
+        "chamber",
+        "tourism",
+        "community"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Jazan Chamber calendar API row or official event detail URL with title, start/end datetime, location or delivery mode, and chamber context before candidate promotion.",
+      "candidate_gate": "duplicate-review",
+      "notes": "Added 2026-07-05 after web verification of the official chamber site and public activity signals. Browser probe confirmed a stable monthly calendar API under /api/events/calendar/{month}/{year}; the collector sweeps official monthly API rows from 2022 onward and publishes only date-complete rows."
+    },
+    {
+      "id": "hail-chamber-events",
+      "name": "Hail Chamber Events",
+      "url": "https://www.hc.org.sa/",
+      "owner": "Hail Chamber of Commerce",
+      "source_type": "venue-calendar",
+      "trust_level": "official",
+      "priority": 68,
+      "coverage": "Hail chamber events, delegations, SME programs, training courses, employment activities, and regional economic/community events.",
+      "cities": [
+        "Hail",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "business",
+        "training",
+        "workshops",
+        "chamber",
+        "SMEs",
+        "regional events"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "monitor-public",
+      "evidence_required": "Hail Chamber official event/activity page with title, date, venue or delivery mode, and chamber context before candidate promotion.",
+      "candidate_gate": "source-evidence",
+      "notes": "Added 2026-07-05 after web verification of the official chamber site listing events/delegations and training surfaces. Probe structure before extractor build."
+    },
+    {
+      "id": "najran-chamber-events",
+      "name": "Najran Chamber Events",
+      "url": "https://najcci.org.sa/ar",
+      "owner": "Najran Chamber of Commerce",
+      "source_type": "venue-calendar",
+      "trust_level": "official",
+      "priority": 69,
+      "coverage": "Najran chamber events, remote workshops, business training, local bazaars, committee activities, and regional private-sector programs.",
+      "cities": [
+        "Najran",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "business",
+        "training",
+        "workshops",
+        "chamber",
+        "SMEs",
+        "regional events"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "monitor-public",
+      "evidence_required": "Najran Chamber official event/news record with title, date, venue or remote link, and chamber context before candidate promotion.",
+      "candidate_gate": "source-evidence",
+      "notes": "Added 2026-07-05 after web verification of the official site showing dated workshop/news cards. Start as evidence monitor and build extractor only after stable detail routes are identified."
+    }
+  ]
+}

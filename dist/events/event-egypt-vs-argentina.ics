@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Egypt Vs Argentina | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-egypt-vs-argentina@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260707T150000Z
+DTEND:20260707T180000Z
+SUMMARY:Egypt Vs Argentina
+DESCRIPTION:Join us to watch one of the most anticipated upcoming matches in the FIFA World Cup 2026 in the round of 16. Egypt Vs Argentina ضمن رياضة وفعاليات جماهيرية في ثول. تبدأ الفعالية ٠٧‏/٠٧‏/٢٠٢٦، ٦:٠٠ م وتنتهي ٠٧‏/٠٧‏/٢٠٢٦، ٩:٠٠ م حسب البيانات المتاحة. تتوفر لها صفحة جدول حي تساعد الزائر على متابعة الحالة والوقت أثناء الحضور. المصدر: Saudi Universities and Technical Colleges.
+LOCATION:Discovery Square
+URL:https://eventme.live/events/event-egypt-vs-argentina.html
+END:VEVENT
+END:VCALENDAR

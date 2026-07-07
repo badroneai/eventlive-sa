@@ -1,0 +1,116 @@
+{
+  "id": "ended-mdlbeast-events-boris-brejcha-20241031-884138af",
+  "title": "BORIS BREJCHA",
+  "summary": "فعالية من تقويم MDLBEAST. المدينة: Jeddah. BORIS BREJCHA ضمن ترفيه وعائلات في جدة. تبدأ الفعالية ٣١‏/١٠‏/٢٠٢٤، ٩:٠٠ م وتنتهي ٠١‏/١١‏/٢٠٢٤، ١:٣٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: MDLBEAST Events.",
+  "canonical_url": "https://eventme.live/events/ended-mdlbeast-events-boris-brejcha-20241031-884138af.html",
+  "detail_url": "./events/ended-mdlbeast-events-boris-brejcha-20241031-884138af.html",
+  "calendar_url": "./events/ended-mdlbeast-events-boris-brejcha-20241031-884138af.ics",
+  "source_label": "MDLBEAST Events",
+  "source_url": "https://mdlbeast.com/events/mdlbeast-presents-boris-brejcha",
+  "evidence_url": "https://mdlbeast.com/events/mdlbeast-presents-boris-brejcha",
+  "city": "جدة",
+  "venue": "Jeddah",
+  "venue_address": "Jeddah",
+  "starts_at": "2024-10-31T21:00:00+03:00",
+  "ends_at": "2024-11-01T01:30:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-covers/ended-mdlbeast-events-boris-brejcha-20241031-884138af.svg",
+  "image_alt": "غلاف EventLive لفعالية BORIS BREJCHA",
+  "category": "ترفيه وعائلات",
+  "category_url": "./categories/entertainment-families.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "BORIS BREJCHA",
+    "ترفيه وعائلات",
+    "music",
+    "فعالية",
+    "منتهية",
+    "جدة",
+    "Jeddah",
+    "MDLBEAST Events",
+    "festivals",
+    "conferences",
+    "entertainment",
+    "ended-event",
+    "موظفون ومهنيون",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2024-10-31T21:00:00+03:00",
+      "ends_at": "2024-11-01T01:30:00+03:00",
+      "room": "Jeddah",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "BORIS BREJCHA",
+    "startDate": "2024-10-31T21:00:00+03:00",
+    "endDate": "2024-11-01T01:30:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Jeddah",
+      "address": "Jeddah"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "MDLBEAST"
+    },
+    "image": [
+      "https://eventme.live/assets/event-covers/ended-mdlbeast-events-boris-brejcha-20241031-884138af.svg"
+    ],
+    "description": "فعالية من تقويم MDLBEAST. المدينة: Jeddah. BORIS BREJCHA ضمن ترفيه وعائلات في جدة. تبدأ الفعالية ٣١‏/١٠‏/٢٠٢٤، ٩:٠٠ م وتنتهي ٠١‏/١١‏/٢٠٢٤، ١:٣٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: MDLBEAST Events.",
+    "url": "https://eventme.live/events/ended-mdlbeast-events-boris-brejcha-20241031-884138af.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-mdlbeast-events-boris-brejcha-20241031-884138af.html",
+    "isAccessibleForFree": false,
+    "keywords": "BORIS BREJCHA, ترفيه وعائلات, music, فعالية, منتهية, جدة, Jeddah, MDLBEAST Events, festivals, conferences, entertainment, ended-event, موظفون ومهنيون, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://mdlbeast.com/events/mdlbeast-presents-boris-brejcha"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://mdlbeast.com/events/mdlbeast-presents-boris-brejcha",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

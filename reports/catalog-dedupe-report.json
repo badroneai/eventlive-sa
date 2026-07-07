@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-07-07T19:26:46.227Z",
+  "duplicate_groups": 4,
+  "removed_events": 12,
+  "groups": [
+    {
+      "keep": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي",
+      "removed": [
+        "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي-3",
+        "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي-2",
+        "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي-4"
+      ],
+      "title": "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
+      "starts_at": "2026-07-12T09:00:00+03:00",
+      "source_url": "https://futureskills.mcit.gov.sa/ar/group/13037"
+    },
+    {
+      "keep": "event-دورة-comptia-a",
+      "removed": [
+        "event-comptia-a",
+        "event-comptia-a-3",
+        "event-comptia-a-2",
+        "event-comptia-a-4"
+      ],
+      "title": "دورة +CompTIA A",
+      "starts_at": "2026-07-12T09:00:00+03:00",
+      "source_url": "https://futureskills.mcit.gov.sa/ar/group/13039"
+    },
+    {
+      "keep": "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي",
+      "removed": [
+        "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي-3",
+        "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي-2",
+        "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي-4"
+      ],
+      "title": "Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث",
+      "starts_at": "2026-07-12T09:00:00+03:00",
+      "source_url": "https://futureskills.mcit.gov.sa/ar/group/13040"
+    },
+    {
+      "keep": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python",
+      "removed": [
+        "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-3",
+        "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-4"
+      ],
+      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
+      "starts_at": "2026-07-26T17:30:00+03:00",
+      "source_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "id": "event-semi-finals-join-the-celebration-at-the-fifa-fan-zone",
+  "title": "Semi-Finals: Join the Celebration at the FIFA Fan Zone",
+  "summary": "The FIFA World Cup 2026 is down to the final four teams. Semi-Finals: Join the Celebration at the FIFA Fan Zone ضمن رياضة وفعاليات جماهيرية في ثول. تبدأ الفعالية ١٤‏/٠٧‏/٢٠٢٦، ٩:٠٠ م وتنتهي ١٤‏/٠٧‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تتوفر لها صفحة جدول حي تساعد الزائر على متابعة الحالة والوقت أثناء الحضور. المصدر: Saudi Universities and Technical Colleges.",
+  "canonical_url": "https://eventme.live/events/event-semi-finals-join-the-celebration-at-the-fifa-fan-zone.html",
+  "detail_url": "./events/event-semi-finals-join-the-celebration-at-the-fifa-fan-zone.html",
+  "calendar_url": "./events/event-semi-finals-join-the-celebration-at-the-fifa-fan-zone.ics",
+  "source_label": "Saudi Universities and Technical Colleges",
+  "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/513",
+  "evidence_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/513",
+  "city": "ثول",
+  "venue": "Discovery Square",
+  "venue_address": "Discovery Square",
+  "starts_at": "2026-07-14T21:00:00+03:00",
+  "ends_at": "2026-07-14T23:59:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-covers/event-semi-finals-join-the-celebration-at-the-fifa-fan-zone.svg",
+  "image_alt": "غلاف EventLive لفعالية Semi-Finals: Join the Celebration at the FIFA Fan Zone",
+  "category": "رياضة وفعاليات جماهيرية",
+  "category_url": "./categories/sports.html",
+  "audiences": [
+    {
+      "slug": "skilled-trades",
+      "label": "مهاريون وحرفيون"
+    },
+    {
+      "slug": "researchers",
+      "label": "باحثون وأكاديميون"
+    },
+    {
+      "slug": "sports",
+      "label": "رياضة ولياقة"
+    }
+  ],
+  "keywords": [
+    "Semi-Finals: Join the Celebration at the FIFA Fan Zone",
+    "رياضة وفعاليات جماهيرية",
+    "sports and community",
+    "فعالية",
+    "قادمة",
+    "ثول",
+    "Discovery Square",
+    "Saudi Universities and Technical Colleges",
+    "education",
+    "academic",
+    "research",
+    "workshops",
+    "technology",
+    "public lectures",
+    "مهاريون وحرفيون",
+    "باحثون وأكاديميون",
+    "رياضة ولياقة"
+  ],
+  "sessions": [
+    {
+      "title": "Semi-Finals: Join the Celebration at the FIFA Fan Zone",
+      "starts_at": "2026-07-14T21:00:00+03:00",
+      "ends_at": "2026-07-14T23:59:00+03:00",
+      "room": "Discovery Square",
+      "anchor": "#session-event-semi-finals-join-the-celebration-at-the-fifa-fan-zone-official-session-1"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Semi-Finals: Join the Celebration at the FIFA Fan Zone",
+    "startDate": "2026-07-14T21:00:00+03:00",
+    "endDate": "2026-07-14T23:59:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Discovery Square",
+      "address": "Discovery Square"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Saudi universities and technical colleges"
+    },
+    "image": [
+      "https://eventme.live/assets/event-covers/event-semi-finals-join-the-celebration-at-the-fifa-fan-zone.svg"
+    ],
+    "description": "The FIFA World Cup 2026 is down to the final four teams. Semi-Finals: Join the Celebration at the FIFA Fan Zone ضمن رياضة وفعاليات جماهيرية في ثول. تبدأ الفعالية ١٤‏/٠٧‏/٢٠٢٦، ٩:٠٠ م وتنتهي ١٤‏/٠٧‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تتوفر لها صفحة جدول حي تساعد الزائر على متابعة الحالة والوقت أثناء الحضور. المصدر: Saudi Universities and Technical Colleges.",
+    "url": "https://eventme.live/events/event-semi-finals-join-the-celebration-at-the-fifa-fan-zone.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-semi-finals-join-the-celebration-at-the-fifa-fan-zone.html",
+    "isAccessibleForFree": false,
+    "keywords": "Semi-Finals: Join the Celebration at the FIFA Fan Zone, رياضة وفعاليات جماهيرية, sports and community, فعالية, قادمة, ثول, Discovery Square, Saudi Universities and Technical Colleges, education, academic, research, workshops, technology, public lectures, مهاريون وحرفيون, باحثون وأكاديميون, رياضة ولياقة",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "مهاريون وحرفيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "باحثون وأكاديميون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رياضة ولياقة"
+      }
+    ],
+    "sameAs": [
+      "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/513"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/513",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

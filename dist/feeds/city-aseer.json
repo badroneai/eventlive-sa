@@ -1,0 +1,30 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "فعاليات عسير | EventLive",
+  "home_page_url": "https://eventme.live",
+  "feed_url": "https://eventme.live/feeds/city-aseer.json",
+  "description": "تغذية فعاليات عسير القادمة والجارية من EventLive.",
+  "language": "ar-SA",
+  "authors": [
+    {
+      "name": "EventLive",
+      "url": "https://eventme.live"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://eventme.live/events/event-aseer-season.html",
+      "url": "https://eventme.live/events/event-aseer-season.html",
+      "title": "Aseer Season",
+      "content_text": "A season filled with culture, events, and diverse experiences المصدر الرسمي: Visit Saudi. Aseer Season ضمن رياضة وفعاليات جماهيرية في عسير. تبدأ الفعالية ٢٥‏/٠٦‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٠١‏/٠٩‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Calendar.",
+      "date_published": "2026-06-25T09:00:00+03:00",
+      "date_modified": "2026-07-07T19:30:16.476Z",
+      "tags": [
+        "عسير",
+        "رياضة وفعاليات جماهيرية",
+        "عائلات وأطفال"
+      ],
+      "external_url": "https://www.visitsaudi.com/en/seasons/aseer-season"
+    }
+  ]
+}

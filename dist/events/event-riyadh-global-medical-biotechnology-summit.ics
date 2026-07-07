@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Riyadh Global Medical Biotechnology Summit | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-riyadh-global-medical-biotechnology-summit@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260914T063000Z
+DTEND:20260916T120000Z
+SUMMARY:Riyadh Global Medical Biotechnology Summit
+DESCRIPTION:Under the patronage of His Royal Highness the Crown Prince\, the Riyadh Global Medical Biotechnology Summit returns for its fourth edition on 14–16 September 2026\, organized by the Ministry of the National Guard (NGHA) in strategic partnership with the Ministry of Investment (MISA). The summit is a leading international platform bringing together government leaders\, decision-makers\, pharmaceutical executives\, innovators\, and investors to explore advances in medical biotechnology\, cell and gene technologies\, and AI in life sciences—supporting Saudi Vision 2030 through innovation\, bioeconomy development\, and high-quality investment\, while reinforcing the Kingdom’s role in biomedical research and future public health solutions. Register Now
+LOCATION:Sofitel Riyadh Hotel & Convention Centre
+URL:https://eventme.live/events/event-riyadh-global-medical-biotechnology-summit.html
+END:VEVENT
+END:VCALENDAR

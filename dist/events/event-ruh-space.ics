@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Ruh Space | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-ruh-space@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260613T160000Z
+DTEND:20260718T230000Z
+SUMMARY:Ruh Space
+DESCRIPTION:Experience the FIFA World Cup 2026 at Ruh Space\, a premium fan destination located in VIA Riyadh. Designed for football enthusiasts\, the venue offers live match screenings in an upscale setting that combines the excitement of the tournament with exceptional hospitality. Guests can enjoy curated dining experiences from renowned restaurants\, including Madeo and Ferdi\, alongside a range of tailored experiences that create a memorable World Cup atmosphere in the heart of Riyadh. Book Now
+LOCATION:VIA Riyadh
+URL:https://eventme.live/events/event-ruh-space.html
+END:VEVENT
+END:VCALENDAR

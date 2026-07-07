@@ -1,0 +1,23 @@
+{
+  "evaluated_at": "2026-07-07T19:37:11.933Z",
+  "timing_report_path": "reports/schema-suite-timing.md",
+  "branch_name": "local",
+  "policy_mode": "STANDARD",
+  "latest_sample": {
+    "observed_at": "2026-07-07T19:37:11.732Z",
+    "suite_status": "PASS",
+    "total_duration_ms": 651
+  },
+  "baseline_source": "rolling_median",
+  "baseline_window": 10,
+  "baseline_min_samples": 5,
+  "baseline_ready": false,
+  "baseline_sample_count": 1,
+  "baseline_duration_ms": null,
+  "regression_factor": 1.5,
+  "threshold_duration_ms": null,
+  "consecutive_regression_count": 0,
+  "consecutive_limit": 3,
+  "regression_detected": false,
+  "status": "WARMUP"
+}

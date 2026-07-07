@@ -1,0 +1,540 @@
+{
+  "generated_at": "2026-07-07T19:38:07.442Z",
+  "platform": "EventLive",
+  "scope": "this-month",
+  "starts_at": "2026-07-01T00:00:00.000Z",
+  "ends_before": "2026-08-01T00:00:00.000Z",
+  "count": 53,
+  "events": [
+    {
+      "id": "event-poppy-playtime",
+      "title": "Poppy Playtime",
+      "url": "./events/event-poppy-playtime.html",
+      "city": "الرياض",
+      "starts_at": "2025-10-10T16:00:00+03:00",
+      "ends_at": "2026-12-08T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-riyadh-season-blvd-city",
+      "title": "Riyadh Season: BLVD City",
+      "url": "./events/event-riyadh-season-blvd-city.html",
+      "city": "الرياض",
+      "starts_at": "2025-10-10T16:00:00+03:00",
+      "ends_at": "2026-10-09T02:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-the-groves",
+      "title": "The Groves",
+      "url": "./events/event-the-groves.html",
+      "city": "الرياض",
+      "starts_at": "2025-11-05T16:00:00+03:00",
+      "ends_at": "2026-07-19T02:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-immersive-experience-flying-over-saudi",
+      "title": "Immersive Experience: Flying Over Saudi",
+      "url": "./events/event-immersive-experience-flying-over-saudi.html",
+      "city": "الرياض",
+      "starts_at": "2025-12-24T16:20:00+03:00",
+      "ends_at": "2026-12-24T23:20:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-arabic-language-exhibition-28",
+      "title": "Arabic Language Exhibition 28",
+      "url": "./events/event-arabic-language-exhibition-28.html",
+      "city": "الرياض",
+      "starts_at": "2026-01-01T08:00:00+03:00",
+      "ends_at": "2026-12-31T16:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-arabic-language-exhibition-for-kids",
+      "title": "Arabic Language Exhibition for kids",
+      "url": "./events/event-arabic-language-exhibition-for-kids.html",
+      "city": "الرياض",
+      "starts_at": "2026-01-01T08:00:00+03:00",
+      "ends_at": "2026-12-31T16:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-horses-and-equestrian-heritage-exhibition",
+      "title": "Horses and Equestrian Heritage Exhibition",
+      "url": "./events/event-horses-and-equestrian-heritage-exhibition.html",
+      "city": "الرياض",
+      "starts_at": "2026-02-24T21:30:00+03:00",
+      "ends_at": "2026-08-30T23:55:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-misk-local-traineeship-program",
+      "title": "Misk Local Traineeship Program",
+      "url": "./events/event-misk-local-traineeship-program.html",
+      "city": "الرياض",
+      "starts_at": "2026-04-01T09:00:00+03:00",
+      "ends_at": "2026-12-31T18:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-solo-art-exhibition-series",
+      "title": "Solo Art Exhibition Series",
+      "url": "./events/event-solo-art-exhibition-series.html",
+      "city": "الرياض",
+      "starts_at": "2026-05-06T16:00:00+03:00",
+      "ends_at": "2026-08-01T22:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-eishha-live-it-fan-zone-for-fifa-world-cup-2026",
+      "title": "Eishha (Live It) Fan Zone For FIFA World Cup 2026",
+      "url": "./events/event-eishha-live-it-fan-zone-for-fifa-world-cup-2026.html",
+      "city": "الرياض",
+      "starts_at": "2026-06-11T18:00:00+03:00",
+      "ends_at": "2026-07-19T23:55:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-coca-cola-fan-zone-for-fifa-world-cup-2026",
+      "title": "Coca-Cola Fan Zone For FIFA World Cup 2026",
+      "url": "./events/event-coca-cola-fan-zone-for-fifa-world-cup-2026.html",
+      "city": "الرياض",
+      "starts_at": "2026-06-11T18:00:00+03:00",
+      "ends_at": "2026-07-19T03:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026",
+      "title": "Sikkat Al-Atimah (Street Food) Fan Zone – FIFA World Cup 2026",
+      "url": "./events/event-sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026.html",
+      "city": "الرياض",
+      "starts_at": "2026-06-11T19:00:00+03:00",
+      "ends_at": "2026-07-19T01:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-world-cup-2026-fan-zone-at-kimpton-kafd",
+      "title": "World Cup 2026 Fan Zone at Kimpton KAFD",
+      "url": "./events/event-world-cup-2026-fan-zone-at-kimpton-kafd.html",
+      "city": "الرياض",
+      "starts_at": "2026-06-11T19:00:00+03:00",
+      "ends_at": "2026-08-10T01:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-solitaire-fan-zone-fifa-world-cup-2026",
+      "title": "Solitaire Fan Zone – FIFA World Cup 2026",
+      "url": "./events/event-solitaire-fan-zone-fifa-world-cup-2026.html",
+      "city": "الرياض",
+      "starts_at": "2026-06-11T19:00:00+03:00",
+      "ends_at": "2026-07-19T02:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-coca-cola-fan-zone-at-jax-district",
+      "title": "Coca-Cola Fan Zone at JAX District",
+      "url": "./events/event-coca-cola-fan-zone-at-jax-district.html",
+      "city": "الدرعية",
+      "starts_at": "2026-06-11T19:30:00+03:00",
+      "ends_at": "2026-07-19T00:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-ruh-space",
+      "title": "Ruh Space",
+      "url": "./events/event-ruh-space.html",
+      "city": "الرياض",
+      "starts_at": "2026-06-13T19:00:00+03:00",
+      "ends_at": "2026-07-19T02:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-laysen-fan-zone-fifa-world-cup-2026",
+      "title": "Laysen Fan Zone – FIFA World Cup 2026",
+      "url": "./events/event-laysen-fan-zone-fifa-world-cup-2026.html",
+      "city": "الرياض",
+      "starts_at": "2026-06-14T19:00:00+03:00",
+      "ends_at": "2026-07-19T01:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-aseer-season",
+      "title": "Aseer Season",
+      "url": "./events/event-aseer-season.html",
+      "city": "عسير",
+      "starts_at": "2026-06-25T09:00:00+03:00",
+      "ends_at": "2026-09-01T18:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-summer-camp-at-the-national-museum-summer-wonders",
+      "title": "Summer Camp at the National Museum: Summer Wonders",
+      "url": "./events/event-summer-camp-at-the-national-museum-summer-wonders.html",
+      "city": "الرياض",
+      "starts_at": "2026-06-25T14:30:00+03:00",
+      "ends_at": "2026-08-22T20:30:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-art-futures-camp-2026-diriyah-art-futures",
+      "title": "Art Futures Camp 2026 – Diriyah Art Futures",
+      "url": "./events/event-art-futures-camp-2026-diriyah-art-futures.html",
+      "city": "الرياض",
+      "starts_at": "2026-06-28T10:00:00+03:00",
+      "ends_at": "2026-07-16T17:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-لقاءات-مراكز-دعم-المنشآت-شهر-يوليو-2026م-مغلقة",
+      "title": "لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)",
+      "url": "./events/event-لقاءات-مراكز-دعم-المنشآت-شهر-يوليو-2026م-مغلقة.html",
+      "city": "السعودية",
+      "starts_at": "2026-07-01T09:00:00+03:00",
+      "ends_at": "2026-07-30T18:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-لقاءات-مراكز-دعم-المنشآت",
+      "title": "لقاءات مراكز دعم المنشآت",
+      "url": "./events/event-لقاءات-مراكز-دعم-المنشآت.html",
+      "city": "السعودية",
+      "starts_at": "2026-07-01T09:00:00+03:00",
+      "ends_at": "2026-07-30T18:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-prince-faisal-bin-fahd-art-exhibition-summer-2026",
+      "title": "Prince Faisal Bin Fahd Art Exhibition: Summer 2026",
+      "url": "./events/event-prince-faisal-bin-fahd-art-exhibition-summer-2026.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-01T16:00:00+03:00",
+      "ends_at": "2026-08-01T22:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-registration-for-international-research-competition-on-non-terrestrial-n",
+      "title": "Registration for International Research Competition on Non-Terrestrial Networks",
+      "url": "./events/event-registration-for-international-research-competition-on-non-terrestrial-n.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-04T00:01:00+03:00",
+      "ends_at": "2026-08-10T23:55:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية",
+      "title": "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
+      "url": "./events/event-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-05T18:00:00+03:00",
+      "ends_at": "2026-08-20T21:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-esports-world-cup",
+      "title": "Esports World Cup",
+      "url": "./events/event-esports-world-cup.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-06T17:00:00+03:00",
+      "ends_at": "2026-08-23T22:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-registration-now-open-for-children-at-the-childhood-studies-center-for-t",
+      "title": "Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH",
+      "url": "./events/event-registration-now-open-for-children-at-the-childhood-studies-center-for-t.html",
+      "city": "جدة",
+      "starts_at": "2026-07-07T09:00:00+03:00",
+      "ends_at": "2026-07-29T18:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone",
+      "title": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+      "url": "./events/event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone.html",
+      "city": "ثول",
+      "starts_at": "2026-07-09T19:30:00+03:00",
+      "ends_at": "2026-07-09T23:59:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-unstable",
+      "title": "Unstable",
+      "url": "./events/event-unstable.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-10T00:00:00+03:00",
+      "ends_at": "2026-07-11T00:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "demo-event",
+      "title": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+      "url": "./events/demo-event.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-10T09:00:00+03:00",
+      "ends_at": "2026-07-10T14:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-beast-house",
+      "title": "Beast House",
+      "url": "./events/event-beast-house.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-10T21:00:00+03:00",
+      "ends_at": "2026-07-11T03:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي",
+      "title": "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
+      "url": "./events/event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي.html",
+      "city": "عن بعد",
+      "starts_at": "2026-07-12T09:00:00+03:00",
+      "ends_at": "2026-07-14T18:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م",
+      "title": "أسبوع العقار والمقاولات 12- 16 يوليو 2026م",
+      "url": "./events/event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م.html",
+      "city": "السعودية",
+      "starts_at": "2026-07-12T09:00:00+03:00",
+      "ends_at": "2026-07-16T18:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-دورة-comptia-a",
+      "title": "دورة +CompTIA A",
+      "url": "./events/event-دورة-comptia-a.html",
+      "city": "عن بعد",
+      "starts_at": "2026-07-12T09:00:00+03:00",
+      "ends_at": "2026-07-16T18:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي",
+      "title": "Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث",
+      "url": "./events/event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي.html",
+      "city": "عن بعد",
+      "starts_at": "2026-07-12T09:00:00+03:00",
+      "ends_at": "2026-07-14T18:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-comptia-a",
+      "title": "CompTIA A+",
+      "url": "./events/event-comptia-a.html",
+      "city": "عن بعد",
+      "starts_at": "2026-07-12T09:00:00+03:00",
+      "ends_at": "2026-07-16T18:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي",
+      "title": "معسكر هندسة البرمجيات الحديثة وأنظمة الذكاء الاصطناعي",
+      "url": "./events/event-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-12T10:00:00+03:00",
+      "ends_at": "2026-09-03T15:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-join-us-at-kaust-health-for-respiratory-health-day",
+      "title": "Join us at KAUST Health for Respiratory Health Day",
+      "url": "./events/event-join-us-at-kaust-health-for-respiratory-health-day.html",
+      "city": "ثول",
+      "starts_at": "2026-07-12T11:00:00+03:00",
+      "ends_at": "2026-07-12T13:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-saif-summer-program",
+      "title": "SAIF Summer Program",
+      "url": "./events/event-saif-summer-program.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-12T17:00:00+03:00",
+      "ends_at": "2026-08-29T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-معسكر-هندسة-الدرونز-التطبيقي",
+      "title": "معسكر هندسة الدرونز التطبيقي",
+      "url": "./events/event-معسكر-هندسة-الدرونز-التطبيقي.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-12T18:00:00+03:00",
+      "ends_at": "2026-08-20T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials",
+      "title": "أساسيات الحوسبة السحابية - Cloud Computing Essentials",
+      "url": "./events/event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials.html",
+      "city": "عن بعد",
+      "starts_at": "2026-07-13T09:00:00+03:00",
+      "ends_at": "2026-07-15T18:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-samsung-innovation-campus-ai-program",
+      "title": "Samsung Innovation Campus AI Program",
+      "url": "./events/event-samsung-innovation-campus-ai-program.html",
+      "city": "عن بعد",
+      "starts_at": "2026-07-13T09:00:00+03:00",
+      "ends_at": "2026-09-12T18:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-semi-finals-join-the-celebration-at-the-fifa-fan-zone",
+      "title": "Semi-Finals: Join the Celebration at the FIFA Fan Zone",
+      "url": "./events/event-semi-finals-join-the-celebration-at-the-fifa-fan-zone.html",
+      "city": "ثول",
+      "starts_at": "2026-07-14T21:00:00+03:00",
+      "ends_at": "2026-07-14T23:59:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-متطلبات-الاستخدام-الآمن-للأجهزة-والمستلزمات-الطبية-لمراكز-الأسنان",
+      "title": "متطلبات الاستخدام الآمن للأجهزة والمستلزمات الطبية لمراكز الأسنان",
+      "url": "./events/event-متطلبات-الاستخدام-الآمن-للأجهزة-والمستلزمات-الطبية-لمراكز-الأسنان.html",
+      "city": "عن بعد",
+      "starts_at": "2026-07-15T10:00:00+03:00",
+      "ends_at": "2026-07-15T11:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-معسكر-تصميم-وتصنيع-الحلول-الهندسية",
+      "title": "معسكر تصميم وتصنيع الحلول الهندسية",
+      "url": "./events/event-معسكر-تصميم-وتصنيع-الحلول-الهندسية.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-19T17:00:00+03:00",
+      "ends_at": "2026-10-15T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-3",
+      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
+      "url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-3.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-19T17:30:00+03:00",
+      "ends_at": "2026-10-08T21:30:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-fifa-world-cup-2026-final-celebrate-footballs-biggest-night-at-the-kaust",
+      "title": "FIFA World Cup 2026 Final: Celebrate Football's Biggest Night at the KAUST Fan Zone",
+      "url": "./events/event-fifa-world-cup-2026-final-celebrate-footballs-biggest-night-at-the-kaust.html",
+      "city": "ثول",
+      "starts_at": "2026-07-19T18:00:00+03:00",
+      "ends_at": "2026-07-19T23:59:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-دور-مقدمي-الرعاية-الصحية-وضباط-الاتصال-في-التعامل-مع-انذارات-السلامة-الص",
+      "title": "دور مقدمي الرعاية الصحية وضباط الاتصال في التعامل مع انذارات السلامة الصادرة من المركز الوطني لبلاغات الأجهزة والمستلزمات الطبية",
+      "url": "./events/event-دور-مقدمي-الرعاية-الصحية-وضباط-الاتصال-في-التعامل-مع-انذارات-السلامة-الص.html",
+      "city": "عن بعد",
+      "starts_at": "2026-07-21T10:00:00+03:00",
+      "ends_at": "2026-07-21T11:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-summer-splash-running-event",
+      "title": "Summer Splash Running event",
+      "url": "./events/event-summer-splash-running-event.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-25T05:00:00+03:00",
+      "ends_at": "2026-07-25T07:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي",
+      "title": "معسكر تطوير مواقع الويب باستخدام Java ودمج تقنيات الذكاء الاصطناعي",
+      "url": "./events/event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-26T10:00:00+03:00",
+      "ends_at": "2026-10-15T15:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل",
+      "title": "معسكر تطوير البرمجيات السحابية الاحترافية لسحابة قوقل",
+      "url": "./events/event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-26T17:00:00+03:00",
+      "ends_at": "2026-08-20T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python",
+      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
+      "url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-26T17:30:00+03:00",
+      "ends_at": "2026-10-15T21:30:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-entrepreneur-leadership-excellence-program",
+      "title": "Entrepreneur Leadership Excellence Program",
+      "url": "./events/event-entrepreneur-leadership-excellence-program.html",
+      "city": "السعودية",
+      "starts_at": "2026-07-27T09:00:00+03:00",
+      "ends_at": "2026-07-29T18:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    }
+  ]
+}

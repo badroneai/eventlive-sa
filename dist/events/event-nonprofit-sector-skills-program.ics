@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Nonprofit Sector Skills Program | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-nonprofit-sector-skills-program@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260803T060000Z
+DTEND:20260916T150000Z
+SUMMARY:Nonprofit Sector Skills Program
+DESCRIPTION:Is a unique initiative designed to both enhance and develop the capabilities of professionals already working in the nonprofit sector\, and to empower those aspiring to join this field. المصدر الرسمي: Misk Hub.
+LOCATION:Online
+URL:https://eventme.live/events/event-nonprofit-sector-skills-program.html
+END:VEVENT
+END:VCALENDAR

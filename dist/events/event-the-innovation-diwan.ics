@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:The Innovation Diwan | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-the-innovation-diwan@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20260905T060000Z
+DTEND:20270131T150000Z
+SUMMARY:The Innovation Diwan
+DESCRIPTION:A national initiative aimed at enhancing creativity and innovation among young Saudi youth by providing youth with the opportunity to present solutions to community challenges. المصدر الرسمي: Misk Hub.
+LOCATION:Hybrid
+URL:https://eventme.live/events/event-the-innovation-diwan.html
+END:VEVENT
+END:VCALENDAR

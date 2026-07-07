@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Dirayah Forum | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-dirayah-forum@eventme.live
+DTSTAMP:20260707T193807Z
+DTSTART:20261205T060000Z
+DTEND:20261207T150000Z
+SUMMARY:Dirayah Forum
+DESCRIPTION:فعالية مدرجة في التقويم الرسمي لـ Dhahran Expo. الموعد: ٥ ديسمبر ٢٠٢٦ في ٠٩:٠٠ ص إلى ٧ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م. المنظم: Princess Seetah Bint Abdulaziz Award Association.
+LOCATION:Dhahran Expo
+URL:https://eventme.live/events/event-dirayah-forum.html
+END:VEVENT
+END:VCALENDAR

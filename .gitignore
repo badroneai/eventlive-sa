@@ -1,0 +1,9 @@
+node_modules/
+.playwright-cli/
+.codebase-memory/
+output/
+workspaces/
+tmp-*.js
+workspaces/_csv-parser-regression/
+# Raw source snapshots are CI evidence (170MB+, 800+ files) — kept as workflow artifacts, never in git.
+data/raw/

@@ -1,0 +1,138 @@
+{
+  "generated_at": "2026-07-07T19:23:20.892Z",
+  "catalog": "data/events_catalog.json",
+  "totals": {
+    "targets": 14,
+    "enriched": 14,
+    "failed": 0
+  },
+  "enriched": [
+    {
+      "id": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي",
+      "title": "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
+      "group_id": "13037",
+      "goals": 1,
+      "features": 3,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-comptia-a",
+      "title": "دورة +CompTIA A",
+      "group_id": "13039",
+      "goals": 5,
+      "features": 15,
+      "requirements": 5,
+      "metadata": 8
+    },
+    {
+      "id": "event-دورة-comptia-a",
+      "title": "دورة +CompTIA A",
+      "group_id": "13039",
+      "goals": 5,
+      "features": 15,
+      "requirements": 5,
+      "metadata": 8
+    },
+    {
+      "id": "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي",
+      "title": "Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث",
+      "group_id": "13040",
+      "goals": 1,
+      "features": 3,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي-2",
+      "title": "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
+      "group_id": "13037",
+      "goals": 1,
+      "features": 3,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-comptia-a-2",
+      "title": "دورة +CompTIA A",
+      "group_id": "13039",
+      "goals": 5,
+      "features": 15,
+      "requirements": 5,
+      "metadata": 8
+    },
+    {
+      "id": "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي-2",
+      "title": "Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث",
+      "group_id": "13040",
+      "goals": 1,
+      "features": 3,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي-3",
+      "title": "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
+      "group_id": "13037",
+      "goals": 1,
+      "features": 3,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-comptia-a-3",
+      "title": "دورة +CompTIA A",
+      "group_id": "13039",
+      "goals": 5,
+      "features": 15,
+      "requirements": 5,
+      "metadata": 8
+    },
+    {
+      "id": "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي-3",
+      "title": "Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث",
+      "group_id": "13040",
+      "goals": 1,
+      "features": 3,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي-4",
+      "title": "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
+      "group_id": "13037",
+      "goals": 1,
+      "features": 3,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-comptia-a-4",
+      "title": "دورة +CompTIA A",
+      "group_id": "13039",
+      "goals": 5,
+      "features": 15,
+      "requirements": 5,
+      "metadata": 8
+    },
+    {
+      "id": "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي-4",
+      "title": "Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث",
+      "group_id": "13040",
+      "goals": 1,
+      "features": 3,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials",
+      "title": "أساسيات الحوسبة السحابية - Cloud Computing Essentials",
+      "group_id": "13035",
+      "goals": 6,
+      "features": 13,
+      "requirements": 3,
+      "metadata": 8
+    }
+  ],
+  "failed": []
+}

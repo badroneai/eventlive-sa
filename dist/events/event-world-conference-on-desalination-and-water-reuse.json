@@ -1,0 +1,100 @@
+{
+  "id": "event-world-conference-on-desalination-and-water-reuse",
+  "title": "World Conference on Desalination and Water Reuse",
+  "summary": "An international specialized conference that discusses the latest technologies and practices in water desalination and reuse, supporting the Saudi Water Authori… المصدر الرسمي: الهيئة السعودية للمياه.",
+  "canonical_url": "https://eventme.live/events/event-world-conference-on-desalination-and-water-reuse.html",
+  "detail_url": "./events/event-world-conference-on-desalination-and-water-reuse.html",
+  "calendar_url": "./events/event-world-conference-on-desalination-and-water-reuse.ics",
+  "source_label": "Saudi Water Authority Events",
+  "source_url": "https://www.swa.gov.sa/en/events/Event-639152055712272031",
+  "evidence_url": "https://www.swa.gov.sa/en/events/Event-639152055712272031",
+  "city": "الرياض",
+  "venue": "Riyadh",
+  "venue_address": "Riyadh",
+  "starts_at": "2026-11-01T08:00:00+03:00",
+  "ends_at": "2026-11-05T04:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/world-conference-on-desalination-and-water-reuse-814d26eb30.jpg",
+  "image_alt": "World Conference on Desalination and Water Reuse",
+  "category": "جوائز وتكريم",
+  "category_url": "./categories/awards-ceremonies.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    }
+  ],
+  "keywords": [
+    "World Conference on Desalination and Water Reuse",
+    "جوائز وتكريم",
+    "conference",
+    "فعالية",
+    "قادمة",
+    "الرياض",
+    "Riyadh",
+    "Saudi Water Authority Events",
+    "water",
+    "sustainability",
+    "conferences",
+    "government",
+    "awards",
+    "workshops",
+    "موظفون ومهنيون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-11-01T08:00:00+03:00",
+      "ends_at": "2026-11-05T04:00:00+03:00",
+      "room": "Riyadh",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "World Conference on Desalination and Water Reuse",
+    "startDate": "2026-11-01T08:00:00+03:00",
+    "endDate": "2026-11-05T04:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Riyadh",
+      "address": "Riyadh"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Saudi Water Authority"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/world-conference-on-desalination-and-water-reuse-814d26eb30.jpg"
+    ],
+    "description": "An international specialized conference that discusses the latest technologies and practices in water desalination and reuse, supporting the Saudi Water Authori… المصدر الرسمي: الهيئة السعودية للمياه.",
+    "url": "https://eventme.live/events/event-world-conference-on-desalination-and-water-reuse.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-world-conference-on-desalination-and-water-reuse.html",
+    "isAccessibleForFree": false,
+    "keywords": "World Conference on Desalination and Water Reuse, جوائز وتكريم, conference, فعالية, قادمة, الرياض, Riyadh, Saudi Water Authority Events, water, sustainability, conferences, government, awards, workshops, موظفون ومهنيون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      }
+    ],
+    "sameAs": [
+      "https://www.swa.gov.sa/en/events/Event-639152055712272031"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.swa.gov.sa/en/events/Event-639152055712272031",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

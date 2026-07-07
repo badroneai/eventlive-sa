@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EventLive Source Candidates",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "generated_for": { "type": "string" },
+    "notes": { "type": "string" },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "city",
+          "starts_at",
+          "ends_at",
+          "source_type",
+          "source_url",
+          "source_label",
+          "source_owner",
+          "discovered_at",
+          "discovery_method",
+          "confidence",
+          "review_status",
+          "publication_gate"
+        ],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "title": { "type": "string", "minLength": 1 },
+          "organizer": { "type": "string" },
+          "city": { "type": "string", "minLength": 1 },
+          "venue": { "type": "string" },
+          "category": { "type": "string" },
+          "summary": { "type": "string" },
+          "rich_summary": { "type": "string" },
+          "image_url": { "type": "string" },
+          "image_alt": { "type": "string" },
+          "image_source_url": { "type": "string" },
+          "registration_url": { "type": "string" },
+          "ticket_url": { "type": "string" },
+          "attendance_mode": {
+            "type": "string",
+            "enum": ["online", "in-person", "hybrid"]
+          },
+          "price_label": { "type": "string" },
+          "language": { "type": "string" },
+          "registration_deadline": { "type": "string" },
+          "richness_score": { "type": "integer", "minimum": 0 },
+          "highlights": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "starts_at": { "type": "string", "format": "date-time" },
+          "ends_at": { "type": "string", "format": "date-time" },
+          "source_type": {
+            "type": "string",
+            "enum": ["official-site", "organizer-file", "ticketing-page", "government-calendar", "social-post", "partner-feed", "manual-lead"]
+          },
+          "source_url": { "type": "string", "minLength": 1 },
+          "source_label": { "type": "string", "minLength": 1 },
+          "source_owner": { "type": "string", "minLength": 1 },
+          "evidence_url": { "type": "string" },
+          "raw_snapshot_path": { "type": "string" },
+          "discovered_at": { "type": "string", "format": "date-time" },
+          "discovery_method": {
+            "type": "string",
+            "enum": ["manual-research", "official-calendar", "search-result", "partner-submission", "organizer-submission", "social-monitoring"]
+          },
+          "confidence": {
+            "type": "string",
+            "enum": ["official", "partner", "public-listing", "social-signal", "unverified"]
+          },
+          "review_status": {
+            "type": "string",
+            "enum": ["new", "evidence-captured", "extraction-needed", "ready-for-review", "approved-for-catalog", "rejected"]
+          },
+          "publication_gate": {
+            "type": "string",
+            "enum": ["source-evidence", "duplicate-review", "extraction", "human-review", "catalog-review", "blocked"]
+          },
+          "discovery_quality": {
+            "type": "string",
+            "enum": ["strong-lead", "watch-lead", "weak-lead", "blocked-noise"]
+          },
+          "discovery_score": { "type": "integer", "minimum": 0 },
+          "discovery_notes": { "type": "string" },
+          "extracted_sessions_count": { "type": "integer", "minimum": 0 },
+          "sessions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["title", "starts_at", "ends_at"],
+              "properties": {
+                "id": { "type": "string" },
+                "title": { "type": "string", "minLength": 1 },
+                "starts_at": { "type": "string", "format": "date-time" },
+                "ends_at": { "type": "string", "format": "date-time" },
+                "session_type": { "type": "string" },
+                "room": { "type": "string" },
+                "speaker": { "type": "string" }
+              }
+            }
+          },
+          "matched_catalog_event_id": { "type": "string" },
+          "reviewed_at": { "type": "string", "format": "date-time" },
+          "reviewed_by": { "type": "string" },
+          "reviewer_notes": { "type": "string" },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "audiences": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "students",
+                "job-seekers",
+                "professionals",
+                "tech",
+                "skilled-trades",
+                "entrepreneurs",
+                "researchers",
+                "families",
+                "women",
+                "creatives",
+                "sports",
+                "general"
+              ]
+            },
+            "uniqueItems": true
+          }
+        }
+      }
+    }
+  },
+  "required": ["candidates"]
+}

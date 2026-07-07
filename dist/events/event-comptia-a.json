@@ -1,0 +1,108 @@
+{
+  "id": "event-comptia-a",
+  "title": "CompTIA A+",
+  "summary": "دورة معرفية، تفاعلية مباشرة. تبدأ 12-07-2026 إلى 16-07-2026 لمدة 30 ساعات CompTIA A+ ضمن تدريب تقني في عن بعد. تبدأ الفعالية ١٢‏/٠٧‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ١٦‏/٠٧‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Future Skills MCIT Catalogue.",
+  "canonical_url": "https://eventme.live/events/event-comptia-a.html",
+  "detail_url": "./events/event-comptia-a.html",
+  "calendar_url": "./events/event-comptia-a.ics",
+  "source_label": "Future Skills MCIT Catalogue",
+  "source_url": "https://futureskills.mcit.gov.sa/ar/group/13039",
+  "evidence_url": "https://futureskills.mcit.gov.sa/ar/group/13039",
+  "city": "عن بعد",
+  "venue": "تفاعلية مباشرة",
+  "venue_address": "تفاعلية مباشرة",
+  "starts_at": "2026-07-12T09:00:00+03:00",
+  "ends_at": "2026-07-16T18:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "online",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/aws-security-essential-fb6d62a41b.jpg",
+  "image_alt": "CompTIA A+ | بوابة مهارات المستقبل",
+  "category": "تدريب تقني",
+  "category_url": "./categories/technology-training.html",
+  "audiences": [
+    {
+      "slug": "tech",
+      "label": "تقنيون"
+    },
+    {
+      "slug": "skilled-trades",
+      "label": "مهاريون وحرفيون"
+    }
+  ],
+  "keywords": [
+    "CompTIA A+",
+    "تدريب تقني",
+    "technology training",
+    "فعالية",
+    "قادمة",
+    "عن بعد",
+    "تفاعلية مباشرة",
+    "Future Skills MCIT Catalogue",
+    "technology",
+    "future skills",
+    "online training",
+    "courses",
+    "MCIT",
+    "تقنيون",
+    "مهاريون وحرفيون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-07-12T09:00:00+03:00",
+      "ends_at": "2026-07-16T18:00:00+03:00",
+      "room": "تفاعلية مباشرة",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "CompTIA A+",
+    "startDate": "2026-07-12T09:00:00+03:00",
+    "endDate": "2026-07-16T18:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "name": "تفاعلية مباشرة",
+      "url": "https://futureskills.mcit.gov.sa/ar/group/13039"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Ministry of Communications and Information Technology"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/aws-security-essential-fb6d62a41b.jpg"
+    ],
+    "description": "دورة معرفية، تفاعلية مباشرة. تبدأ 12-07-2026 إلى 16-07-2026 لمدة 30 ساعات CompTIA A+ ضمن تدريب تقني في عن بعد. تبدأ الفعالية ١٢‏/٠٧‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ١٦‏/٠٧‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Future Skills MCIT Catalogue.",
+    "url": "https://eventme.live/events/event-comptia-a.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-comptia-a.html",
+    "isAccessibleForFree": false,
+    "keywords": "CompTIA A+, تدريب تقني, technology training, فعالية, قادمة, عن بعد, تفاعلية مباشرة, Future Skills MCIT Catalogue, technology, future skills, online training, courses, MCIT, تقنيون, مهاريون وحرفيون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "تقنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مهاريون وحرفيون"
+      }
+    ],
+    "sameAs": [
+      "https://futureskills.mcit.gov.sa/ar/group/13039"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "http://futureskills.mcit.gov.sa/ar/user/login",
+      "availability": "https://schema.org/InStock",
+      "category": "Registration"
+    }
+  }
+}

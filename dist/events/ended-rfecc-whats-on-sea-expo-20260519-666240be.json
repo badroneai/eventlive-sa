@@ -1,0 +1,113 @@
+{
+  "id": "ended-rfecc-whats-on-sea-expo-20260519-666240be",
+  "title": "SEA EXPO",
+  "summary": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات. SEA EXPO ضمن معارض وتجارية في الرياض. تبدأ الفعالية ١٩‏/٠٥‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٢١‏/٠٥‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تتوفر لها صفحة جدول حي تساعد الزائر على متابعة الحالة والوقت أثناء الحضور. المصدر: RFECC What's On.",
+  "canonical_url": "https://eventme.live/events/ended-rfecc-whats-on-sea-expo-20260519-666240be.html",
+  "detail_url": "./events/ended-rfecc-whats-on-sea-expo-20260519-666240be.html",
+  "calendar_url": "./events/ended-rfecc-whats-on-sea-expo-20260519-666240be.ics",
+  "source_label": "RFECC What's On",
+  "source_url": "https://rfecc.sa/events/sea-expo/",
+  "evidence_url": "https://rfecc.sa/events/sea-expo/",
+  "city": "الرياض",
+  "venue": "Riyadh Front Exhibition & Conference Center",
+  "venue_address": "Riyadh Front Exhibition & Conference Center",
+  "starts_at": "2026-05-19T09:00:00+03:00",
+  "ends_at": "2026-05-21T18:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-covers/ended-rfecc-whats-on-sea-expo-20260519-666240be.svg",
+  "image_alt": "غلاف EventLive لفعالية SEA EXPO",
+  "category": "معارض وتجارية",
+  "category_url": "./categories/exhibition-trade.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    }
+  ],
+  "keywords": [
+    "SEA EXPO",
+    "معارض وتجارية",
+    "exhibition",
+    "فعالية",
+    "منتهية",
+    "الرياض",
+    "Riyadh Front Exhibition & Conference Center",
+    "RFECC What's On",
+    "exhibitions",
+    "conferences",
+    "trade shows",
+    "venue",
+    "ended-event",
+    "موظفون ومهنيون"
+  ],
+  "sessions": [
+    {
+      "title": "ساعات الزيارة",
+      "starts_at": "2026-05-19T16:00:00+03:00",
+      "ends_at": "2026-05-19T22:00:00+03:00",
+      "room": "Riyadh Front Exhibition & Conference Center",
+      "anchor": "#session-ended-rfecc-whats-on-sea-expo-20260519-666240be-opening-hours-1"
+    },
+    {
+      "title": "ساعات الزيارة",
+      "starts_at": "2026-05-20T16:00:00+03:00",
+      "ends_at": "2026-05-20T22:00:00+03:00",
+      "room": "Riyadh Front Exhibition & Conference Center",
+      "anchor": "#session-ended-rfecc-whats-on-sea-expo-20260519-666240be-opening-hours-2"
+    },
+    {
+      "title": "ساعات الزيارة",
+      "starts_at": "2026-05-21T16:00:00+03:00",
+      "ends_at": "2026-05-21T22:00:00+03:00",
+      "room": "Riyadh Front Exhibition & Conference Center",
+      "anchor": "#session-ended-rfecc-whats-on-sea-expo-20260519-666240be-opening-hours-3"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "SEA EXPO",
+    "startDate": "2026-05-19T09:00:00+03:00",
+    "endDate": "2026-05-21T18:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Riyadh Front Exhibition & Conference Center",
+      "address": "Riyadh Front Exhibition & Conference Center"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Riyadh Front Exhibition & Conference Center"
+    },
+    "image": [
+      "https://eventme.live/assets/event-covers/ended-rfecc-whats-on-sea-expo-20260519-666240be.svg"
+    ],
+    "description": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات. SEA EXPO ضمن معارض وتجارية في الرياض. تبدأ الفعالية ١٩‏/٠٥‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٢١‏/٠٥‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تتوفر لها صفحة جدول حي تساعد الزائر على متابعة الحالة والوقت أثناء الحضور. المصدر: RFECC What's On.",
+    "url": "https://eventme.live/events/ended-rfecc-whats-on-sea-expo-20260519-666240be.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-rfecc-whats-on-sea-expo-20260519-666240be.html",
+    "isAccessibleForFree": false,
+    "keywords": "SEA EXPO, معارض وتجارية, exhibition, فعالية, منتهية, الرياض, Riyadh Front Exhibition & Conference Center, RFECC What's On, exhibitions, conferences, trade shows, venue, ended-event, موظفون ومهنيون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      }
+    ],
+    "sameAs": [
+      "https://rfecc.sa/events/sea-expo/"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://rfecc.sa/events/sea-expo/",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}
