@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-07T19:23:40.951Z",
+  "generated_at": "2026-07-07T20:50:14.957Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
     "targets": 11,
     "candidates": 11,
     "enriched": 11,
-    "fetched": 10,
+    "fetched": 11,
     "images": 9,
-    "fetch_failures": 1
+    "fetch_failures": 0
   },
   "enriched": [
     {
@@ -38,10 +38,10 @@
     {
       "id": "event-international-falcon-breeders-auction",
       "title": "International Falcon Breeders Auction",
-      "source_method": "approved-catalog-row",
+      "source_method": "official-page-html",
       "image_url": "https://scth.scene7.com/is/image/scth/international-falcon-breeders-auction-in-riyadh?wid=1920&hei=1080&fit=constrain&fmt=webp",
-      "fetched": false,
-      "features": 6
+      "fetched": true,
+      "features": 7
     },
     {
       "id": "event-leap-2026",
@@ -100,12 +100,5 @@
       "features": 6
     }
   ],
-  "failed": [
-    {
-      "id": "event-international-falcon-breeders-auction",
-      "title": "International Falcon Breeders Auction",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/30838",
-      "reason": "fetch failed"
-    }
-  ]
+  "failed": []
 }

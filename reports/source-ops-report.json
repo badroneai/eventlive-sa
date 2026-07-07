@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T19:34:13.449Z",
+  "generated_at": "2026-07-07T20:52:04.214Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,18 +11,18 @@
   },
   "collection": {
     "basis": "source_collection_report",
-    "collected_at": "2026-07-07T19:14:38.221Z",
+    "collected_at": "2026-07-07T20:45:48.196Z",
     "freshness": "fresh",
-    "discovered": 187,
+    "discovered": 121,
     "written": 185
   },
   "sources": {
     "total": 66,
     "attempted": 34,
     "collection_coverage_pct": 52,
-    "healthy": 20,
-    "zero_yield": 14,
-    "errors": 0,
+    "healthy": 14,
+    "zero_yield": 9,
+    "errors": 11,
     "not_collected": 32,
     "unattempted_high_priority": 3,
     "health": [
@@ -48,19 +48,19 @@
         "id": "moc-cultural-calendar",
         "name": "Ministry of Culture Cultural Calendar",
         "priority": 3,
-        "status": "healthy",
-        "extracted": 13,
+        "status": "collection-error",
+        "extracted": 0,
         "candidates": 0,
-        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
+        "next_action": "fetch failed"
       },
       {
         "id": "mos-events",
         "name": "Ministry of Sport Events",
         "priority": 4,
-        "status": "zero-yield",
+        "status": "collection-error",
         "extracted": 0,
         "candidates": 0,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "next_action": "fetch failed"
       },
       {
         "id": "webook-explore",
@@ -94,7 +94,7 @@
         "name": "MDLBEAST Events",
         "priority": 8,
         "status": "healthy",
-        "extracted": 5,
+        "extracted": 3,
         "candidates": 5,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
@@ -102,10 +102,10 @@
         "id": "monshaat-events",
         "name": "Monsha'at All Events",
         "priority": 9,
-        "status": "healthy",
-        "extracted": 3,
+        "status": "collection-error",
+        "extracted": 0,
         "candidates": 3,
-        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
+        "next_action": "fetch failed"
       },
       {
         "id": "invest-saudi-events",
@@ -129,10 +129,10 @@
         "id": "eye-of-riyadh-events",
         "name": "Eye of Riyadh Events",
         "priority": 12,
-        "status": "healthy",
-        "extracted": 16,
+        "status": "collection-error",
+        "extracted": 0,
         "candidates": 15,
-        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
+        "next_action": "Discovery-only source unavailable in this run: HTTP 403"
       },
       {
         "id": "ten-times-saudi",
@@ -147,10 +147,10 @@
         "id": "eventbrite-saudi",
         "name": "Eventbrite Saudi Arabia",
         "priority": 14,
-        "status": "healthy",
-        "extracted": 17,
+        "status": "collection-error",
+        "extracted": 0,
         "candidates": 17,
-        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
+        "next_action": "Discovery-only source unavailable in this run: HTTP 405"
       },
       {
         "id": "platinumlist-jeddah",
@@ -246,10 +246,10 @@
         "id": "sdaia-academy-programs",
         "name": "SDAIA Academy Programs",
         "priority": 25,
-        "status": "zero-yield",
+        "status": "collection-error",
         "extracted": 0,
         "candidates": 0,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "next_action": "fetch failed"
       },
       {
         "id": "saudi-events-app",
@@ -354,10 +354,10 @@
         "id": "moc-cultural-subportals",
         "name": "Ministry of Culture Commission Calendars",
         "priority": 37,
-        "status": "healthy",
-        "extracted": 13,
+        "status": "collection-error",
+        "extracted": 0,
         "candidates": 12,
-        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
+        "next_action": "fetch failed"
       },
       {
         "id": "historic-jeddah-albalad",
@@ -507,10 +507,10 @@
         "id": "sdaia-calendar-events",
         "name": "SDAIA Calendar and Events",
         "priority": 54,
-        "status": "zero-yield",
+        "status": "collection-error",
         "extracted": 0,
         "candidates": 2,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "next_action": "fetch failed"
       },
       {
         "id": "makkah-chamber-events",
@@ -525,19 +525,19 @@
         "id": "asharqia-chamber-events",
         "name": "Asharqia Chamber Events",
         "priority": 59,
-        "status": "healthy",
-        "extracted": 2,
+        "status": "collection-error",
+        "extracted": 0,
         "candidates": 2,
-        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
+        "next_action": "fetch failed"
       },
       {
         "id": "qassim-chamber-events",
         "name": "Qassim Chamber Events",
         "priority": 60,
-        "status": "zero-yield",
+        "status": "collection-error",
         "extracted": 0,
         "candidates": 0,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "next_action": "HTTP 403"
       },
       {
         "id": "abha-chamber-events",
@@ -597,10 +597,10 @@
         "id": "jazan-chamber-events",
         "name": "Jazan Chamber Events",
         "priority": 67,
-        "status": "zero-yield",
+        "status": "collection-error",
         "extracted": 0,
         "candidates": 0,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "next_action": "fetch failed"
       },
       {
         "id": "hail-chamber-events",

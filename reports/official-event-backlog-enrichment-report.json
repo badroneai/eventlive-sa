@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-07T19:30:39.441Z",
+  "generated_at": "2026-07-07T20:50:24.686Z",
   "totals": {
-    "targets": 61,
-    "enriched": 61,
-    "fetched": 22,
-    "images": 46,
-    "fetch_failures": 39
+    "targets": 59,
+    "enriched": 59,
+    "fetched": 13,
+    "images": 44,
+    "fetch_failures": 46
   },
   "enriched": [
     {
@@ -182,11 +182,11 @@
       "id": "event-لقاءات-مراكز-دعم-المنشآت",
       "title": "لقاءات مراكز دعم المنشآت",
       "source_label": "Monsha'at All Events",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "http://www.monshaat.gov.sa/ar/node/487334",
-      "fetched": true,
+      "fetched": false,
       "image": false,
-      "fetch_reason": ""
+      "fetch_reason": "fetch failed"
     },
     {
       "id": "event-prince-faisal-bin-fahd-art-exhibition-summer-2026",
@@ -212,11 +212,11 @@
       "id": "event-عمليات-إدارة-الموارد-البشرية",
       "title": "عمليات إدارة الموارد البشرية",
       "source_label": "Qassim Chamber Events",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://tc.qcc.org.sa/events/204",
-      "fetched": true,
+      "fetched": false,
       "image": true,
-      "fetch_reason": ""
+      "fetch_reason": "HTTP 403"
     },
     {
       "id": "event-esports-world-cup",
@@ -262,21 +262,11 @@
       "id": "event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م",
       "title": "أسبوع العقار والمقاولات 12- 16 يوليو 2026م",
       "source_label": "Monsha'at All Events",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "http://www.monshaat.gov.sa/ar/node/489022",
-      "fetched": true,
+      "fetched": false,
       "image": false,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-comptia-a",
-      "title": "CompTIA A+",
-      "source_label": "Future Skills MCIT Catalogue",
-      "source_method": "official-page-meta",
-      "source_url": "https://futureskills.mcit.gov.sa/ar/group/13039",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
+      "fetch_reason": "fetch failed"
     },
     {
       "id": "event-join-us-at-kaust-health-for-respiratory-health-day",
@@ -306,16 +296,6 @@
       "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/513",
       "fetched": true,
       "image": false,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-3",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
-      "source_label": "Tuwaiq Academy Bootcamps and Programs",
-      "source_method": "official-page-meta",
-      "source_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
-      "fetched": true,
-      "image": true,
       "fetch_reason": ""
     },
     {
@@ -392,11 +372,11 @@
       "id": "event-معرض-الحرف-والأعمال-اليدوية-2026",
       "title": "معرض الحرف والأعمال اليدوية 2026",
       "source_label": "Asharqia Chamber Events",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=343",
-      "fetched": true,
+      "fetched": false,
       "image": false,
-      "fetch_reason": ""
+      "fetch_reason": "fetch failed"
     },
     {
       "id": "event-saudi-food-manufacturing-show",
@@ -462,11 +442,11 @@
       "id": "event-global-forum-on-the-ethics-of-ai",
       "title": "Global Forum on the Ethics of AI",
       "source_label": "SDAIA Calendar and Events",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=122",
-      "fetched": true,
+      "fetched": false,
       "image": false,
-      "fetch_reason": ""
+      "fetch_reason": "fetch failed"
     },
     {
       "id": "event-money20-20-middle-east",
@@ -492,11 +472,11 @@
       "id": "event-global-ai-summit",
       "title": "Global AI Summit",
       "source_label": "SDAIA Calendar and Events",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=123",
-      "fetched": true,
+      "fetched": false,
       "image": false,
-      "fetch_reason": ""
+      "fetch_reason": "fetch failed"
     },
     {
       "id": "event-global-ai-summit-gain",
@@ -612,11 +592,11 @@
       "id": "event-معرض-وظائف-2026",
       "title": "معرض وظائف 2026",
       "source_label": "Asharqia Chamber Events",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=344",
-      "fetched": true,
+      "fetched": false,
       "image": false,
-      "fetch_reason": ""
+      "fetch_reason": "fetch failed"
     }
   ],
   "failed": [
@@ -711,6 +691,12 @@
       "reason": "fetch failed"
     },
     {
+      "id": "event-لقاءات-مراكز-دعم-المنشآت",
+      "title": "لقاءات مراكز دعم المنشآت",
+      "source_url": "http://www.monshaat.gov.sa/ar/node/487334",
+      "reason": "fetch failed"
+    },
+    {
       "id": "event-prince-faisal-bin-fahd-art-exhibition-summer-2026",
       "title": "Prince Faisal Bin Fahd Art Exhibition: Summer 2026",
       "source_url": "https://riyadh.sa/en/moment/events/item/event/30758",
@@ -723,9 +709,21 @@
       "reason": "fetch failed"
     },
     {
+      "id": "event-عمليات-إدارة-الموارد-البشرية",
+      "title": "عمليات إدارة الموارد البشرية",
+      "source_url": "https://tc.qcc.org.sa/events/204",
+      "reason": "HTTP 403"
+    },
+    {
       "id": "event-esports-world-cup",
       "title": "Esports World Cup",
       "source_url": "https://riyadh.sa/en/moment/events/item/event/30169",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م",
+      "title": "أسبوع العقار والمقاولات 12- 16 يوليو 2026م",
+      "source_url": "http://www.monshaat.gov.sa/ar/node/489022",
       "reason": "fetch failed"
     },
     {
@@ -771,6 +769,12 @@
       "reason": "fetch failed"
     },
     {
+      "id": "event-معرض-الحرف-والأعمال-اليدوية-2026",
+      "title": "معرض الحرف والأعمال اليدوية 2026",
+      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=343",
+      "reason": "fetch failed"
+    },
+    {
       "id": "event-saudi-food-manufacturing-show",
       "title": "Saudi Food Manufacturing show",
       "source_url": "https://riyadh.sa/en/moment/events/item/event/30155",
@@ -807,6 +811,12 @@
       "reason": "fetch failed"
     },
     {
+      "id": "event-global-forum-on-the-ethics-of-ai",
+      "title": "Global Forum on the Ethics of AI",
+      "source_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=122",
+      "reason": "fetch failed"
+    },
+    {
       "id": "event-money20-20-middle-east",
       "title": "Money20/20 Middle East",
       "source_url": "https://riyadh.sa/en/moment/events/item/event/29339",
@@ -816,6 +826,12 @@
       "id": "event-riyadh-global-medical-biotechnology-summit",
       "title": "Riyadh Global Medical Biotechnology Summit",
       "source_url": "https://riyadh.sa/en/moment/events/item/event/30261",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-global-ai-summit",
+      "title": "Global AI Summit",
+      "source_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=123",
       "reason": "fetch failed"
     },
     {
@@ -853,6 +869,12 @@
       "title": "Cityscape Global 2026",
       "source_url": "https://cityscapeglobal.com/",
       "reason": "HTTP 403"
+    },
+    {
+      "id": "event-معرض-وظائف-2026",
+      "title": "معرض وظائف 2026",
+      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=344",
+      "reason": "fetch failed"
     }
   ]
 }

@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-07T19:12:20.139Z",
+  "generated_at": "2026-07-07T20:39:55.786Z",
   "registry": "data/source_registry.json",
   "source_ingestion_plan": "reports/source-ingestion-plan.json",
   "probe_limit": 28,
   "timeout_ms": 12000,
   "totals": {
     "probed": 22,
-    "extractor_ready": 9,
-    "blocked": 13,
+    "extractor_ready": 11,
+    "blocked": 11,
     "partnership": 0,
     "watch": 0
   },
@@ -60,7 +60,7 @@
         "status": 200,
         "final_url": "https://ncci.org.sa/category/events/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 118136,
+        "bytes": 118116,
         "title": "الفعاليات – الغرفة التجارية بعرعر | غرفة الحدود الشمالية",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -183,6 +183,40 @@
       "recommendation": "probe-hidden-api-or-html-table"
     },
     {
+      "id": "visit-saudi-calendar-pdf",
+      "name": "Visit Saudi Calendar PDF",
+      "priority": 34,
+      "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar.pdf",
+      "trust_level": "official",
+      "fetch_method": "manual-review",
+      "candidate_gate": "extraction",
+      "intake_policy": "official-feed-preferred",
+      "signals": {
+        "http_ok": true,
+        "status": 200,
+        "final_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar.pdf",
+        "content_type": "application/pdf",
+        "bytes": 51429115,
+        "title": "",
+        "blocked_reason": "",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 3,
+        "date_snippets": [
+          "2019/10/01",
+          "2026-06-17",
+          "calendarpdf",
+          "calendarpdf",
+          "2026-06-17",
+          "2026-06-17"
+        ]
+      },
+      "extraction_score": 46,
+      "recommendation": "probe-hidden-api-or-html-table"
+    },
+    {
       "id": "sela-sea-expo",
       "name": "Sela and Saudi Entertainment Expo",
       "priority": 36,
@@ -298,7 +332,7 @@
         "status": 200,
         "final_url": "https://www.kaust.edu.sa/en/",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 85490,
+        "bytes": 85623,
         "title": "KAUST | A top research university in the Middle East",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -313,6 +347,40 @@
           "date' : 'default', { 'ad_storage': consentValue, 'ad_user_data': consentValu",
           "Date(\"2023-02-28T10:09:21.5155972Z\") - new Date(), siteClientTag: \"472$$15.0.5519.10",
           "Date()); gtag('config', 'G-VGNT1HSSCZ');"
+        ]
+      },
+      "extraction_score": 36,
+      "recommendation": "probe-hidden-api-or-html-table"
+    },
+    {
+      "id": "saudi-winter-calendar-spa",
+      "name": "Saudi Winter Events Calendar",
+      "priority": 50,
+      "url": "https://www.spa.gov.sa/en/N2183027",
+      "trust_level": "official",
+      "fetch_method": "manual-review",
+      "candidate_gate": "source-evidence",
+      "intake_policy": "monitor-public",
+      "signals": {
+        "http_ok": true,
+        "status": 200,
+        "final_url": "https://www.spa.gov.sa/en/N2183027",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 142279,
+        "title": "STA Launches&#x27; Saudi Winter&#x27; Events Calendar",
+        "blocked_reason": "",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 1,
+        "date_snippets": [
+          "Calendar",
+          "Calendar\"/>",
+          "calendar, which includes various activities and seasons set to take place in seven desti",
+          "calendar is part of the Saudi Winter Program 2024-2025, which features over 1,000 touris",
+          "calendar includes notable seasons and events such as Riyadh Season, Diriyah Season, AlUl",
+          "Calendar, as well as major events like the Dakar Rally, MDL Beast, Saudi Cruise, and the"
         ]
       },
       "extraction_score": 36,
@@ -420,7 +488,7 @@
         "status": 403,
         "final_url": "https://visitalbalad.com/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 5791,
+        "bytes": 5812,
         "title": "Just a moment...",
         "blocked_reason": "http-403",
         "structured_scripts": 0,
@@ -569,33 +637,6 @@
       "recommendation": "blocked-or-protected:fetch failed"
     },
     {
-      "id": "visit-saudi-calendar-pdf",
-      "name": "Visit Saudi Calendar PDF",
-      "priority": 34,
-      "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar.pdf",
-      "trust_level": "official",
-      "fetch_method": "manual-review",
-      "candidate_gate": "extraction",
-      "intake_policy": "official-feed-preferred",
-      "signals": {
-        "http_ok": false,
-        "status": 0,
-        "final_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar.pdf",
-        "content_type": "",
-        "bytes": 0,
-        "title": "",
-        "blocked_reason": "timeout",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 0,
-        "date_snippets": []
-      },
-      "extraction_score": -35,
-      "recommendation": "blocked-or-protected:timeout"
-    },
-    {
       "id": "qiddiya-events",
       "name": "Qiddiya Events",
       "priority": 35,
@@ -609,7 +650,7 @@
         "status": 403,
         "final_url": "https://qiddiya.com/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 5965,
+        "bytes": 5963,
         "title": "Attention Required! | Cloudflare",
         "blocked_reason": "http-403",
         "structured_scripts": 0,
@@ -648,33 +689,6 @@
       },
       "extraction_score": -35,
       "recommendation": "blocked-or-protected:fetch failed"
-    },
-    {
-      "id": "saudi-winter-calendar-spa",
-      "name": "Saudi Winter Events Calendar",
-      "priority": 50,
-      "url": "https://www.spa.gov.sa/en/N2183027",
-      "trust_level": "official",
-      "fetch_method": "manual-review",
-      "candidate_gate": "source-evidence",
-      "intake_policy": "monitor-public",
-      "signals": {
-        "http_ok": false,
-        "status": 0,
-        "final_url": "https://www.spa.gov.sa/en/N2183027",
-        "content_type": "",
-        "bytes": 0,
-        "title": "",
-        "blocked_reason": "timeout",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 0,
-        "date_snippets": []
-      },
-      "extraction_score": -35,
-      "recommendation": "blocked-or-protected:timeout"
     }
   ],
   "next_actions": [
@@ -704,6 +718,11 @@
       "reason": "score=48, gcal=0, structured=0, links=0"
     },
     {
+      "id": "visit-saudi-calendar-pdf",
+      "recommendation": "probe-hidden-api-or-html-table",
+      "reason": "score=46, gcal=0, structured=0, links=0"
+    },
+    {
       "id": "sela-sea-expo",
       "recommendation": "probe-hidden-api-or-html-table",
       "reason": "score=46, gcal=0, structured=0, links=0"
@@ -712,11 +731,6 @@
       "id": "aseer-season-asda",
       "recommendation": "probe-hidden-api-or-html-table",
       "reason": "score=46, gcal=0, structured=0, links=0"
-    },
-    {
-      "id": "diriyah-season",
-      "recommendation": "probe-hidden-api-or-html-table",
-      "reason": "score=36, gcal=0, structured=0, links=0"
     }
   ]
 }

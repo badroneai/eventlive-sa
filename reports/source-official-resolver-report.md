@@ -1,6 +1,6 @@
 # EventLive Official Resolver Report
 
-- generated_at: 2026-07-07T19:17:18.847Z
+- generated_at: 2026-07-07T20:51:45.343Z
 - source_ops_report: reports/source-ops-report.json
 - leads_seen: 10
 - resolver_tasks: 6
@@ -84,3 +84,4 @@
 - ["Riyadh Social and Language Exchange (Make New Friends) ✨" "Riyadh" official](https://www.google.com/search?q=%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22%20official)
 - ["Riyadh Social and Language Exchange (Make New Friends) ✨" "Riyadh" organizer](https://www.google.com/search?q=%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22%20organizer)
 - ["Riyadh Social and Language Exchange (Make New Friends) ✨" "Riyadh" tickets](https://www.google.com/search?q=%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22%20tickets)
+
