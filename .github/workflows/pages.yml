@@ -1,12 +1,9 @@
-# نشر صفحة البرنامج (dist/index.html) إلى GitHub Pages فقط — بدون اختبارات.
-# بعد الـ push: Settings → Pages → Source = GitHub Actions.
+# نشر يدوي احتياطي فقط. خط الإنتاج الرسمي هو deploy.yml لأنه يشغل بوابات الجودة.
 # الرابط بعد النشر: https://eventme.live/
 
-name: Deploy to GitHub Pages
+name: Manual GitHub Pages Deploy
 
 on:
-  push:
-    branches: [ main, master ]
   workflow_dispatch:
 
 permissions:
@@ -28,7 +25,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
 
       - name: Install
