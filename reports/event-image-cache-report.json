@@ -1,110 +1,82 @@
 {
-  "generated_at": "2026-07-08T10:10:14.540Z",
+  "generated_at": "2026-07-08T14:51:05.357Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
-    "targets": 166,
-    "cached_total": 176,
-    "fetched": 15,
-    "reused": 145,
+    "targets": 167,
+    "cached_total": 178,
+    "fetched": 2,
+    "reused": 159,
     "failed": 6,
     "skipped_recent_failures": 6,
     "remembered_failures": 9
   },
   "fetched": [
     {
-      "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Music-events/saudi-music-center.jpg",
-      "file": "dist/assets/event-images/the-saudi-music-hub-6c72f1eef7.jpg",
-      "bytes": 46169,
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/fadgxp3x.sdb.webp",
+      "file": "dist/assets/event-images/معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي-242280a557.webp",
+      "bytes": 12092,
       "events": 1
     },
     {
-      "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/ADC-events/test17.png",
-      "file": "dist/assets/event-images/design-for-good-initiative-7a0c95a2ec.png",
-      "bytes": 587809,
+      "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-07/wrr12.jpg",
+      "file": "dist/assets/event-images/نقل-مبيدات-آفات-الصحة-العامة-dfaa164635.jpg",
+      "bytes": 158942,
+      "events": 9
+    }
+  ],
+  "reused": [
+    {
+      "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
+      "file": "dist/assets/event-images/skill-development-initiative-1b526025b5.png",
       "events": 1
     },
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/TPA-events/jjjjj.png",
       "file": "dist/assets/event-images/sitar-7eda68541c.png",
-      "bytes": 1325535,
-      "events": 1
-    },
-    {
-      "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/ADC-events/test31.png",
-      "file": "dist/assets/event-images/academic-excellence-in-architecture-and-design-education-59f0427e3a.png",
-      "bytes": 1387865,
-      "events": 1
-    },
-    {
-      "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/ADC-events/test11.png",
-      "file": "dist/assets/event-images/jusoor-program-ab6b2a0d63.png",
-      "bytes": 2792040,
-      "events": 1
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/766.png?itok=fW0JAe0G",
-      "file": "dist/assets/event-images/pfl-mena-fight-night-f80f0d3758.png",
-      "bytes": 373852,
-      "events": 1
-    },
-    {
-      "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Culinary-Arts/CMH.png",
-      "file": "dist/assets/event-images/culinary-manufacturing-hubs-b74246d22a.png",
-      "bytes": 2006126,
-      "events": 1
-    },
-    {
-      "source_url": "https://www.eyeofriyadh.com/events/events_images/2025/05/698ca2e9c30d.jpg",
-      "file": "dist/assets/event-images/saudi-wood-expo-2026-ed2844c75e.jpg",
-      "bytes": 11833,
-      "events": 1
-    },
-    {
-      "source_url": "https://www.eyeofriyadh.com/events/events_images/2025/07/11d6e748d9637.jpg",
-      "file": "dist/assets/event-images/saudi-industrial-series-ad12d8e532.jpg",
-      "bytes": 45213,
-      "events": 1
-    },
-    {
-      "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
-      "file": "dist/assets/event-images/skill-development-initiative-1b526025b5.png",
-      "bytes": 4423350,
-      "events": 1
-    },
-    {
-      "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/ADC-events/test14.png",
-      "file": "dist/assets/event-images/urban-transformation-initiative-a34e77a79f.png",
-      "bytes": 6434913,
       "events": 1
     },
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/ADC-events/test32.png",
       "file": "dist/assets/event-images/the-architecture-and-design-caf-adeabf4e32.png",
-      "bytes": 5399307,
+      "events": 1
+    },
+    {
+      "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/ADC-events/test11.png",
+      "file": "dist/assets/event-images/jusoor-program-ab6b2a0d63.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/ADC-events/test14.png",
+      "file": "dist/assets/event-images/urban-transformation-initiative-a34e77a79f.png",
       "events": 1
     },
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/ADC-events/test23.png",
       "file": "dist/assets/event-images/the-continuing-professional-development-initiative-f16f907a63.png",
-      "bytes": 4545356,
       "events": 1
     },
     {
-      "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Commission/film/Film-acc/About-Accelerator/About-us.png",
-      "file": "dist/assets/event-images/film-business-accelerator-175d809332.png",
-      "bytes": 3658383,
+      "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/ADC-events/test17.png",
+      "file": "dist/assets/event-images/design-for-good-initiative-7a0c95a2ec.png",
       "events": 1
     },
     {
-      "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/CAIPS/caips-cover-en.svg",
-      "file": "dist/assets/event-images/the-guidelines-for-culture-and-arts-in-the-public-realm-19b78aae09.svg",
-      "bytes": 5263427,
+      "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Music-events/saudi-music-center.jpg",
+      "file": "dist/assets/event-images/the-saudi-music-hub-6c72f1eef7.jpg",
       "events": 1
-    }
-  ],
-  "reused": [
+    },
+    {
+      "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/ADC-events/test31.png",
+      "file": "dist/assets/event-images/academic-excellence-in-architecture-and-design-education-59f0427e3a.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Culinary-Arts/CMH.png",
+      "file": "dist/assets/event-images/culinary-manufacturing-hubs-b74246d22a.png",
+      "events": 1
+    },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-10/1poppy-play-time-en-1759832539-mobile_poster.jpg?itok=v_08Nc5u",
       "file": "dist/assets/event-images/poppy-playtime-54412e4113.jpg",
@@ -133,6 +105,16 @@
     {
       "source_url": "https://scth.scene7.com/is/image/scth/arabic-language-exhibition-for-kids?wid=1920&hei=1080&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/arabic-language-exhibition-for-kids-32b2d59ca2.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Commission/film/Film-acc/About-Accelerator/About-us.png",
+      "file": "dist/assets/event-images/film-business-accelerator-175d809332.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/CAIPS/caips-cover-en.svg",
+      "file": "dist/assets/event-images/the-guidelines-for-culture-and-arts-in-the-public-realm-19b78aae09.svg",
       "events": 1
     },
     {
@@ -226,6 +208,11 @@
       "events": 5
     },
     {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/766.png?itok=fW0JAe0G",
+      "file": "dist/assets/event-images/pfl-mena-fight-night-f80f0d3758.png",
+      "events": 1
+    },
+    {
       "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-07/4ccd79f559dca331acf56758ce175f5d.jpeg?itok=TQBocw19",
       "file": "dist/assets/event-images/artificial-intelligence-الذكاء-الاصطناعي-6a65108527.jpg",
       "events": 3
@@ -261,11 +248,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-06/%D9%88%D8%B1%D8%B4%D8%A9%20%D8%B9%D9%85%D9%84%20-%2029%20%D9%8A%D9%88%D9%86%D9%8A%D9%88%20v3.jpg",
-      "file": "dist/assets/event-images/متطلبات-الاستخدام-الآمن-للأجهزة-والمستلزمات-الطبية-لمراكز-الأسنان-874dbfc9bf.jpg",
-      "events": 3
-    },
-    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/psvxh1jc.vwh.png",
       "file": "dist/assets/event-images/معسكر-تصميم-وتصنيع-الحلول-الهندسية-a59ff44dd2.png",
       "events": 1
@@ -288,7 +270,7 @@
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/emzgfcby.aiz.webp",
       "file": "dist/assets/event-images/معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-8b9b4fc037.webp",
-      "events": 5
+      "events": 6
     },
     {
       "source_url": "https://hub.misk.org.sa/media/eoxb5tmh/ec-founder-leadership-excellence_en.png",
@@ -359,6 +341,16 @@
       "source_url": "https://dhahranexpo.com.sa/userfiles/clients/G3_24052026142116.jpg",
       "file": "dist/assets/event-images/offshore-technology-innovation-technical-conference-expo-offshore-arab-46911ebc89.jpg",
       "events": 15
+    },
+    {
+      "source_url": "https://www.eyeofriyadh.com/events/events_images/2025/05/698ca2e9c30d.jpg",
+      "file": "dist/assets/event-images/saudi-wood-expo-2026-ed2844c75e.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.eyeofriyadh.com/events/events_images/2025/07/11d6e748d9637.jpg",
+      "file": "dist/assets/event-images/saudi-industrial-series-ad12d8e532.jpg",
+      "events": 1
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/merath-hero-3.jpg?itok=5PW5QruA",

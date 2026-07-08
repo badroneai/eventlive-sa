@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-08T10:07:57.123Z
+- published_at: 2026-07-08T14:48:46.118Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 184
-- published_new: 16
-- linked_existing: 139
+- candidates_seen: 187
+- published_new: 4
+- linked_existing: 154
 - blocked_remaining: 29
 
 ## Blocked summary
@@ -17,28 +17,28 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | published | event-skill-development-initiative | Skill Development Initiative |
-| candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | published | event-sitar | SITAR |
-| candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | published | event-the-architecture-and-design-caf | The Architecture and Design Café |
-| candidate-moc-cultural-subportals-jusoor-program-20240818-22e2fb74 | published | event-jusoor-program | Jusoor Program |
-| candidate-moc-cultural-subportals-urban-transformation-initiative-20241031-7a933cab | published | event-urban-transformation-initiative | Urban transformation Initiative |
-| candidate-moc-cultural-subportals-the-continuing-professional-development-initiative-20241116-a7cef8e2 | published | event-the-continuing-professional-development-initiative | The Continuing Professional Development Initiative |
-| candidate-moc-cultural-subportals-design-for-good-initiative-20241205-3788803e | published | event-design-for-good-initiative | Design for Good Initiative |
-| candidate-moc-cultural-subportals-the-saudi-music-hub-20250101-10d8a675 | published | event-the-saudi-music-hub | The Saudi Music Hub |
-| candidate-moc-cultural-subportals-academic-excellence-in-architecture-and-design-education-20250309-a4072111 | published | event-academic-excellence-in-architecture-and-design-education | Academic Excellence in Architecture and Design Education |
-| candidate-moc-cultural-subportals-culinary-manufacturing-hubs-20250811-d7214bd9 | published | event-culinary-manufacturing-hubs | Culinary Manufacturing Hubs |
-| candidate-moc-cultural-subportals-film-business-accelerator-20260119-254dca29 | published | event-film-business-accelerator | Film Business Accelerator |
-| candidate-moc-cultural-subportals-the-guidelines-for-culture-and-arts-in-the-public-realm-20260205-fbf08244 | published | event-the-guidelines-for-culture-and-arts-in-the-public-realm | The Guidelines for Culture and Arts in the Public Realm |
-| candidate-misk-hub-programs-application-deadline-2030-leaders-20260708-68dd4c4c | published | event-application-deadline-2030-leaders | Application deadline: 2030 Leaders |
-| candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45 | published | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-6 | معسكر تطوير تطبيقات الويب باستخدام لغة Python |
-| candidate-eye-of-riyadh-events-saudi-wood-expo-2026-20260830-b4d44be4 | published | event-saudi-wood-expo-2026 | Saudi Wood Expo 2026 |
-| candidate-eye-of-riyadh-events-saudi-industrial-series-20260830-c10ad399 | published | event-saudi-industrial-series-2 | Saudi Industrial Series |
+| candidate-sfda-events-نقل-مبيدات-آفات-الصحة-العامة-20260713-8bb9663d | published | event-نقل-مبيدات-آفات-الصحة-العامة-2 | نقل مبيدات آفات الصحة العامة |
+| candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45 | published | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-7 | معسكر تطوير تطبيقات الويب باستخدام لغة Python |
+| candidate-sfda-events-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج-20260721-9858e813 | published | event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج | تقييم سلامة المنتج التجميلي وملف معلومات المنتج |
+| candidate-tuwaiq-academy-bootcamps-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي-20260906-c8b1323c | published | event-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي | معسكر بناء وتطوير نماذج الذكاء الاصطناعي |
+| candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
+| candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
+| candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
+| candidate-moc-cultural-subportals-jusoor-program-20240818-22e2fb74 | linked-existing | event-jusoor-program | already linked to catalog event |
+| candidate-moc-cultural-subportals-urban-transformation-initiative-20241031-7a933cab | linked-existing | event-urban-transformation-initiative | already linked to catalog event |
+| candidate-moc-cultural-subportals-the-continuing-professional-development-initiative-20241116-a7cef8e2 | linked-existing | event-the-continuing-professional-development-initiative | already linked to catalog event |
+| candidate-moc-cultural-subportals-design-for-good-initiative-20241205-3788803e | linked-existing | event-design-for-good-initiative | already linked to catalog event |
+| candidate-moc-cultural-subportals-the-saudi-music-hub-20250101-10d8a675 | linked-existing | event-the-saudi-music-hub | already linked to catalog event |
+| candidate-moc-cultural-subportals-academic-excellence-in-architecture-and-design-education-20250309-a4072111 | linked-existing | event-academic-excellence-in-architecture-and-design-education | already linked to catalog event |
+| candidate-moc-cultural-subportals-culinary-manufacturing-hubs-20250811-d7214bd9 | linked-existing | event-culinary-manufacturing-hubs | already linked to catalog event |
 | candidate-riyadh-city-events-poppy-playtime-20251010-b96ed7bc | linked-existing | event-poppy-playtime | already linked to catalog event |
 | candidate-riyadh-city-events-riyadh-season-blvd-city-20251010-d23bcbe8 | linked-existing | event-riyadh-season-blvd-city | already linked to catalog event |
 | candidate-visit-saudi-seasons-the-groves-20251105-b7362f59 | linked-existing | event-the-groves | already linked to catalog event |
 | candidate-riyadh-city-events-immersive-experience-flying-over-saudi-20251224-5f459910 | linked-existing | event-immersive-experience-flying-over-saudi | already linked to catalog event |
 | candidate-visit-saudi-calendar-arabic-language-exhibition-28-20260101-d1f2da19 | linked-existing | event-arabic-language-exhibition-28 | already linked to catalog event |
 | candidate-visit-saudi-calendar-arabic-language-exhibition-for-kids-20260101-36979634 | linked-existing | event-arabic-language-exhibition-for-kids | already linked to catalog event |
+| candidate-moc-cultural-subportals-film-business-accelerator-20260119-254dca29 | linked-existing | event-film-business-accelerator | already linked to catalog event |
+| candidate-moc-cultural-subportals-the-guidelines-for-culture-and-arts-in-the-public-realm-20260205-fbf08244 | linked-existing | event-the-guidelines-for-culture-and-arts-in-the-public-realm | already linked to catalog event |
 | candidate-riyadh-city-events-horses-and-equestrian-heritage-exhibition-20260224-95102e69 | linked-existing | event-horses-and-equestrian-heritage-exhibition | already linked to catalog event |
 | candidate-misk-hub-programs-misk-local-traineeship-program-20260401-200b6490 | linked-existing | event-misk-local-traineeship-program | already linked to catalog event |
 | candidate-riyadh-city-events-solo-art-exhibition-series-20260506-1e56ae74 | linked-existing | event-solo-art-exhibition-series | already linked to catalog event |
@@ -61,6 +61,7 @@
 | candidate-tuwaiq-academy-bootcamps-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية-20260705-60b7f94b | linked-existing | event-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية | already linked to catalog event |
 | candidate-riyadh-city-events-esports-world-cup-20260706-b4b860e9 | linked-existing | event-esports-world-cup | already linked to catalog event |
 | candidate-saudi-university-events-registration-now-open-for-children-at-the-childhood-studies-center-for-t-20260707-a2624927 | linked-existing | event-registration-now-open-for-children-at-the-childhood-studies-center-for-t | already linked to catalog event |
+| candidate-misk-hub-programs-application-deadline-2030-leaders-20260708-68dd4c4c | linked-existing | event-application-deadline-2030-leaders | already linked to catalog event |
 | candidate-saudi-university-events-quarter-finals-join-the-celebration-at-the-fifa-fan-zone-20260709-ce09a5c4 | linked-existing | event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone | already linked to catalog event |
 | candidate-mdlbeast-events-unstable-20260710-5647df2e | linked-existing | event-unstable | already linked to catalog event |
 | candidate-riyadh-city-events-pfl-mena-fight-night-20260710-0eafa4d0 | linked-existing | event-pfl-mena-fight-night | already linked to catalog event |
@@ -101,6 +102,8 @@
 | candidate-tuwaiq-academy-bootcamps-معسكر-أساسيات-الأمن-السيبراني-20260823-da0b3686 | linked-existing | event-معسكر-أساسيات-الأمن-السيبراني | already linked to catalog event |
 | candidate-dhahran-expo-calendar-offshore-technology-innovation-technical-conference-expo-offshore-arabia-20260824-18d15b29 | linked-existing | event-offshore-technology-innovation-technical-conference-expo-offshore-arabia | already linked to catalog event |
 | candidate-rfecc-whats-on-saudi-logistic-warehousing-expo-20260830-ff3565ba | linked-existing | event-saudi-logistic-038-warehousing-expo | already linked to catalog event |
+| candidate-eye-of-riyadh-events-saudi-wood-expo-2026-20260830-b4d44be4 | linked-existing | event-saudi-wood-expo-2026 | already linked to catalog event |
+| candidate-eye-of-riyadh-events-saudi-industrial-series-20260830-c10ad399 | linked-existing | event-saudi-industrial-series-2 | already linked to catalog event |
 | candidate-riyadh-city-events-merath-middle-east-museums-heritage-expo-20260830-822a8145 | linked-existing | event-merath-middle-east-museums-heritage-expo | already linked to catalog event |
 | candidate-riyadh-city-events-saudi-light-and-sound-sls-expo-20260830-5ef5389b | linked-existing | event-saudi-light-and-sound-sls-expo | already linked to catalog event |
 | candidate-riyadh-city-events-saudi-entertainment-and-amusement-expo-20260830-9a81c6d8 | linked-existing | event-saudi-entertainment-and-amusement-expo | already linked to catalog event |

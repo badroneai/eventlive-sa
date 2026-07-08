@@ -1,8 +1,8 @@
 # EventLive Official Single-Session Activation
-- Generated at: 2026-07-08T10:09:04.052Z
+- Generated at: 2026-07-08T14:50:54.002Z
 - Max duration hours: 8
-- Activated: 14
-- Skipped long events: 6
+- Activated: 15
+- Skipped long events: 7
 
 | Source | Event | Duration | Type |
 |---|---|---:|---|
@@ -13,6 +13,7 @@
 | Saudi Universities and Technical Colleges | Quarter-Finals: Join the Celebration at the FIFA Fan Zone | 4.48h | official-community-session |
 | MDLBEAST Events | Beast House | 6h | official-entertainment-session |
 | Saudi Universities and Technical Colleges | Join us at KAUST Health for Respiratory Health Day | 2h | official-community-session |
+| Saudi Food and Drug Authority Events | نقل مبيدات آفات الصحة العامة | 1h | official-online-workshop |
 | Saudi Universities and Technical Colleges | Semi-Finals: Join the Celebration at the FIFA Fan Zone | 2.98h | official-community-session |
 | Saudi Food and Drug Authority Events | متطلبات الاستخدام الآمن للأجهزة والمستلزمات الطبية لمراكز الأسنان | 1h | official-online-workshop |
 | Saudi Universities and Technical Colleges | FIFA World Cup 2026 Final: Celebrate Football's Biggest Night at the KAUST Fan Zone | 5.98h | official-community-session |
