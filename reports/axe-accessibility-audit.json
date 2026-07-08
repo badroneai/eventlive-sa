@@ -1,0 +1,50 @@
+{
+  "schema": "eventlive.axe-accessibility-audit.v1",
+  "generated_at": "2026-07-08T01:39:39.373Z",
+  "status": "PASS",
+  "summary": {
+    "pages": 6,
+    "score": 100,
+    "violations": 0,
+    "serious_violations": 0,
+    "threshold": 95
+  },
+  "pages": [
+    {
+      "page": "/index.html",
+      "violations": [],
+      "passes": 22,
+      "incomplete": 1
+    },
+    {
+      "page": "/events.html",
+      "violations": [],
+      "passes": 24,
+      "incomplete": 1
+    },
+    {
+      "page": "/today-events.html",
+      "violations": [],
+      "passes": 16,
+      "incomplete": 1
+    },
+    {
+      "page": "/screen.html",
+      "violations": [],
+      "passes": 14,
+      "incomplete": 1
+    },
+    {
+      "page": "/organizers.html",
+      "violations": [],
+      "passes": 20,
+      "incomplete": 2
+    },
+    {
+      "page": "/events/demo-event.html",
+      "violations": [],
+      "passes": 16,
+      "incomplete": 1
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": "eventlive.release-deploy-rollback.v1",
+  "generated_at": "2026-07-08T01:39:49.319Z",
+  "status": "PARTIAL",
+  "release": {
+    "commit": "686d61efb0e19383fa2f9e71f575f2a2e971c5cd",
+    "branch": "main",
+    "remote": "https://github.com/badroneai/eventlive-sa.git",
+    "workflow_status": "pending",
+    "workflow_url": null,
+    "public_url": "https://eventme.live/",
+    "public_verify_status": "pending",
+    "rollback_drill_status": "pending",
+    "rollback_drill_reference": "ROLLBACK-RUNBOOK.md"
+  },
+  "checks": [
+    {
+      "id": "git_commit",
+      "label": "Current git commit is known",
+      "ok": true,
+      "evidence": "686d61efb0e19383fa2f9e71f575f2a2e971c5cd"
+    },
+    {
+      "id": "deploy_workflow",
+      "label": "GitHub Pages deployment workflow exists",
+      "ok": true,
+      "evidence": ".github/workflows/deploy.yml"
+    },
+    {
+      "id": "launch_preflight",
+      "label": "Launch preflight is passing before release",
+      "ok": true,
+      "evidence": "reports/launch-preflight-status.json status=PASS"
+    },
+    {
+      "id": "readiness_gate_scope",
+      "label": "Delivery standard exists with only release/owner-reserved completion remaining",
+      "ok": true,
+      "evidence": "reports/delivery-readiness-standard-status.json verdict=NOT_READY"
+    },
+    {
+      "id": "workflow_success",
+      "label": "Deployment workflow succeeded after push",
+      "ok": false,
+      "evidence": "pending external GitHub Actions evidence"
+    },
+    {
+      "id": "public_verify",
+      "label": "Public production URL was verified after deploy",
+      "ok": false,
+      "evidence": "https://eventme.live/"
+    },
+    {
+      "id": "rollback_drill",
+      "label": "Rollback drill/runbook is documented for this release",
+      "ok": false,
+      "evidence": "ROLLBACK-RUNBOOK.md"
+    }
+  ],
+  "remaining": [
+    "Deployment workflow succeeded after push",
+    "Public production URL was verified after deploy",
+    "Rollback drill/runbook is documented for this release"
+  ]
+}

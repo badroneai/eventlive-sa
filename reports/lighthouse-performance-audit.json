@@ -1,0 +1,66 @@
+{
+  "schema": "eventlive.lighthouse-performance-audit.v1",
+  "generated_at": "2026-07-08T01:37:42.712Z",
+  "status": "PASS",
+  "summary": {
+    "pages": 4,
+    "min_performance": 94,
+    "min_accessibility": 98,
+    "performance_threshold": 90,
+    "accessibility_threshold": 95
+  },
+  "pages": [
+    {
+      "page": "/index.html",
+      "performance": 100,
+      "accessibility": 98,
+      "audits": {
+        "first-contentful-paint": "0.4 s",
+        "largest-contentful-paint": "0.4 s",
+        "speed-index": "0.5 s",
+        "interactive": "0.4 s",
+        "total-blocking-time": "0 ms",
+        "cumulative-layout-shift": "0.043"
+      }
+    },
+    {
+      "page": "/events.html",
+      "performance": 100,
+      "accessibility": 100,
+      "audits": {
+        "first-contentful-paint": "0.2 s",
+        "largest-contentful-paint": "0.4 s",
+        "speed-index": "0.5 s",
+        "interactive": "0.2 s",
+        "total-blocking-time": "0 ms",
+        "cumulative-layout-shift": "0"
+      }
+    },
+    {
+      "page": "/screen.html",
+      "performance": 94,
+      "accessibility": 100,
+      "audits": {
+        "first-contentful-paint": "0.2 s",
+        "largest-contentful-paint": "0.4 s",
+        "speed-index": "0.4 s",
+        "interactive": "0.2 s",
+        "total-blocking-time": "0 ms",
+        "cumulative-layout-shift": "0.152"
+      }
+    },
+    {
+      "page": "/events/demo-event.html",
+      "performance": 99,
+      "accessibility": 100,
+      "audits": {
+        "first-contentful-paint": "0.3 s",
+        "largest-contentful-paint": "0.3 s",
+        "speed-index": "0.5 s",
+        "interactive": "0.3 s",
+        "total-blocking-time": "0 ms",
+        "cumulative-layout-shift": "0.061"
+      }
+    }
+  ]
+}

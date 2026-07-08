@@ -51,8 +51,11 @@ assert.match(updatesHtml, new RegExp(`<b>${expectedUpdates}</b>`), 'updates.html
 assert.match(updatesHtml, /updates\.json/, 'updates.html must link updates.json');
 assert.match(updatesHtml, /application\/ld\+json/, 'updates.html must include structured data');
 
-for (const asset of ['./sources.html', './sources.json', './updates.html', './updates.json']) {
+for (const asset of ['./updates.html', './updates.json']) {
   assert.ok(serviceWorker.includes(JSON.stringify(asset)), `${asset} must be precached`);
+}
+for (const ownerOnlyAsset of ['./sources.html', './sources.json']) {
+  assert.equal(serviceWorker.includes(JSON.stringify(ownerOnlyAsset)), false, `${ownerOnlyAsset} is owner-only and must not be precached`);
 }
 
 console.log(`public-transparency-feeds-regression-test: ok events=${publicEvents.length} updates=${expectedUpdates}`);

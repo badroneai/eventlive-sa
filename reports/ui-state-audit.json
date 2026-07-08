@@ -1,0 +1,73 @@
+{
+  "schema": "eventlive.ui-state-audit.v1",
+  "generated_at": "2026-07-08T01:37:33.312Z",
+  "status": "PASS",
+  "summary": {
+    "pages_checked": 4,
+    "states_checked": 10,
+    "findings": 0
+  },
+  "pages": [
+    {
+      "page": "events.html",
+      "states": [
+        {
+          "id": "search-input",
+          "ok": true
+        },
+        {
+          "id": "empty-results",
+          "ok": true
+        },
+        {
+          "id": "filter-success-path",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "page": "today-events.html",
+      "states": [
+        {
+          "id": "live-status",
+          "ok": true
+        },
+        {
+          "id": "calendar-success-path",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "page": "screen.html",
+      "states": [
+        {
+          "id": "fallback-ready",
+          "ok": true
+        },
+        {
+          "id": "live-clock",
+          "ok": true
+        },
+        {
+          "id": "mobile-follow-up",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "page": "organizers.html",
+      "states": [
+        {
+          "id": "owner-contact",
+          "ok": true
+        },
+        {
+          "id": "success-path",
+          "ok": true
+        }
+      ]
+    }
+  ],
+  "findings": []
+}

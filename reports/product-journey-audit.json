@@ -1,0 +1,131 @@
+{
+  "schema": "eventlive.product-journey-audit.v1",
+  "generated_at": "2026-07-08T01:37:33.080Z",
+  "status": "PASS",
+  "summary": {
+    "journeys_checked": 4,
+    "public_pages_dead_end_checked": 7,
+    "findings": 0
+  },
+  "journeys": [
+    {
+      "role": "visitor",
+      "name": "اكتشاف فعالية قادمة",
+      "start": "index.html",
+      "steps": [
+        "index.html",
+        "events.html",
+        "today-events.html"
+      ],
+      "end": "event-detail-or-calendar",
+      "requiredMarkers": [
+        "ابحث",
+        "كل الفعاليات",
+        "التقويم"
+      ],
+      "has_start": true,
+      "has_end": true,
+      "missing_steps": [],
+      "missing_markers": [],
+      "status": "PASS"
+    },
+    {
+      "role": "visitor",
+      "name": "وضع الحضور وقت الفعالية",
+      "start": "index.html",
+      "steps": [
+        "today-events.html",
+        "screen.html"
+      ],
+      "end": "live-attendance-screen",
+      "requiredMarkers": [
+        "وضع الحضور",
+        "الجدول الحي",
+        "آخر تحديث"
+      ],
+      "has_start": true,
+      "has_end": true,
+      "missing_steps": [],
+      "missing_markers": [],
+      "status": "PASS"
+    },
+    {
+      "role": "organizer",
+      "name": "فهم قيمة المنصة للمنظم",
+      "start": "organizers.html",
+      "steps": [
+        "organizers.html",
+        "organizer-intake.html"
+      ],
+      "end": "organizer-contact-or-intake",
+      "requiredMarkers": [
+        "للمنظمين",
+        "إضافة فعالية",
+        "hello@eventme.live"
+      ],
+      "has_start": true,
+      "has_end": true,
+      "missing_steps": [],
+      "missing_markers": [],
+      "status": "PASS"
+    },
+    {
+      "role": "owner",
+      "name": "تشغيل ومراقبة المنصة",
+      "start": "readiness.html",
+      "steps": [
+        "readiness.html",
+        "activation.html"
+      ],
+      "end": "owner-readiness-decision",
+      "requiredMarkers": [
+        "جاهزية التشغيل",
+        "تفعيل",
+        "readiness.json"
+      ],
+      "has_start": true,
+      "has_end": true,
+      "missing_steps": [],
+      "missing_markers": [],
+      "status": "PASS"
+    }
+  ],
+  "dead_end_checks": [
+    {
+      "page": "index.html",
+      "internal_links": 98,
+      "status": "PASS"
+    },
+    {
+      "page": "events.html",
+      "internal_links": 73,
+      "status": "PASS"
+    },
+    {
+      "page": "today-events.html",
+      "internal_links": 32,
+      "status": "PASS"
+    },
+    {
+      "page": "screen.html",
+      "internal_links": 31,
+      "status": "PASS"
+    },
+    {
+      "page": "organizers.html",
+      "internal_links": 30,
+      "status": "PASS"
+    },
+    {
+      "page": "organizer-intake.html",
+      "internal_links": 15,
+      "status": "PASS"
+    },
+    {
+      "page": "readiness.html",
+      "internal_links": 14,
+      "status": "PASS"
+    }
+  ],
+  "findings": []
+}

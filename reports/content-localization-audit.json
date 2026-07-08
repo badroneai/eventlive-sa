@@ -1,0 +1,69 @@
+{
+  "schema": "eventlive.content-localization-audit.v1",
+  "generated_at": "2026-07-08T01:37:33.558Z",
+  "status": "PASS",
+  "summary": {
+    "pages_checked": 8,
+    "findings": 0,
+    "glossary": "docs/EVENTLIVE_TERMINOLOGY_GLOSSARY.md"
+  },
+  "checks": [
+    {
+      "page": "index.html",
+      "html_lang_dir": true,
+      "visible_eventme_brand_refs": 0,
+      "owner_links_visible": [],
+      "visible_text_chars": 3712
+    },
+    {
+      "page": "events.html",
+      "html_lang_dir": true,
+      "visible_eventme_brand_refs": 0,
+      "owner_links_visible": [],
+      "visible_text_chars": 1990
+    },
+    {
+      "page": "today-events.html",
+      "html_lang_dir": true,
+      "visible_eventme_brand_refs": 0,
+      "owner_links_visible": [],
+      "visible_text_chars": 4909
+    },
+    {
+      "page": "screen.html",
+      "html_lang_dir": true,
+      "visible_eventme_brand_refs": 0,
+      "owner_links_visible": [],
+      "visible_text_chars": 746
+    },
+    {
+      "page": "organizers.html",
+      "html_lang_dir": true,
+      "visible_eventme_brand_refs": 0,
+      "owner_links_visible": [],
+      "visible_text_chars": 4295
+    },
+    {
+      "page": "cities.html",
+      "html_lang_dir": true,
+      "visible_eventme_brand_refs": 0,
+      "owner_links_visible": [],
+      "visible_text_chars": 3262
+    },
+    {
+      "page": "categories.html",
+      "html_lang_dir": true,
+      "visible_eventme_brand_refs": 0,
+      "owner_links_visible": [],
+      "visible_text_chars": 3113
+    },
+    {
+      "page": "audiences.html",
+      "html_lang_dir": true,
+      "visible_eventme_brand_refs": 0,
+      "owner_links_visible": [],
+      "visible_text_chars": 3090
+    }
+  ],
+  "findings": []
+}

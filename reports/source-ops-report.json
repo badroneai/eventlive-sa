@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T20:52:04.214Z",
+  "generated_at": "2026-07-08T01:40:12.933Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -176,7 +176,7 @@
         "priority": 17,
         "status": "healthy",
         "extracted": 4,
-        "candidates": 6,
+        "candidates": 4,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -623,10 +623,10 @@
     ]
   },
   "queue": {
-    "total": 185,
+    "total": 183,
     "ready_for_review": 0,
     "approved_for_catalog": 0,
-    "published_from_candidates": 140,
+    "published_from_candidates": 138,
     "actionable": 0,
     "stale_unpublished": 0,
     "duplicate_risk": 0,
@@ -634,16 +634,16 @@
     "needs_evidence": 30,
     "by_review_status": {
       "evidence-captured": 27,
-      "approved-for-catalog": 140,
+      "approved-for-catalog": 138,
       "new": 18
     },
     "by_publication_gate": {
       "source-evidence": 30,
-      "catalog-review": 140,
+      "catalog-review": 138,
       "duplicate-review": 15
     },
     "by_confidence": {
-      "official": 153,
+      "official": 151,
       "public-listing": 15,
       "unverified": 17
     },
@@ -665,7 +665,7 @@
       "Saudi Universities and Technical Colleges": 6,
       "MDLBEAST Events": 5,
       "Eventbrite Saudi Arabia": 17,
-      "Future Skills MCIT Catalogue": 6,
+      "Future Skills MCIT Catalogue": 4,
       "Saudi Food and Drug Authority Events": 4,
       "Dhahran Expo Calendar": 15,
       "RFECC What's On": 6,
@@ -775,7 +775,7 @@
         "discovery_notes": "",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": -801,
+        "days_to_start": -802,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",
@@ -803,7 +803,7 @@
         "discovery_notes": "",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": -485,
+        "days_to_start": -486,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",
@@ -831,7 +831,7 @@
         "discovery_notes": "",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": -1819,
+        "days_to_start": -1820,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",
@@ -859,7 +859,7 @@
         "discovery_notes": "",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": -598,
+        "days_to_start": -599,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",

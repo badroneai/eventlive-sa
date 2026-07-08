@@ -24,7 +24,14 @@ function walkHtml(directory) {
   return files;
 }
 
-const ownerOnlyPages = new Set(['sources.html', 'methodology.html', 'trust.html']);
+const ownerOnlyPages = new Set([
+  'sources.html',
+  'methodology.html',
+  'trust.html',
+  'candidates.html',
+  'resolver.html',
+  'source-health.html'
+]);
 const htmlFiles = walkHtml(distDir)
   .filter((file) => !ownerOnlyPages.has(file))
   .sort();
@@ -52,7 +59,7 @@ assert.deepEqual(staleUrls, [], `sitemap contains URLs without generated files:\
 
 assert.doesNotMatch(sitemap, /Users\/baderalsalman|\/Users\//, 'sitemap must not leak local filesystem paths');
 assert.doesNotMatch(sitemap, /eventlive\.sa|eventlife/i, 'sitemap must not include legacy domains or spellings');
-assert.doesNotMatch(sitemap, /\/(?:sources|methodology|trust)\.html</, 'sitemap must not include owner-only pages');
+assert.doesNotMatch(sitemap, /\/(?:sources|methodology|trust|candidates|resolver|source-health)\.html</, 'sitemap must not include owner-only pages');
 
 assert.match(sitemap, /xmlns:image="http:\/\/www\.google\.com\/schemas\/sitemap-image\/1\.1"/, 'sitemap must include the Google image sitemap namespace');
 

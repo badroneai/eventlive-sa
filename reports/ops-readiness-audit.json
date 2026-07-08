@@ -1,0 +1,262 @@
+{
+  "schema": "eventlive.ops-readiness-audit.v1",
+  "generated_at": "2026-07-08T01:39:49.027Z",
+  "status": "PASS",
+  "summary": {
+    "critical_paths": 7,
+    "load_checks": 35,
+    "max_latency_ms": 30,
+    "avg_latency_ms": 9,
+    "findings": 0,
+    "reliability_status": "PASS",
+    "observability_status": "PASS"
+  },
+  "load_results": [
+    {
+      "path": "/index.html",
+      "round": 1,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 27
+    },
+    {
+      "path": "/events.html",
+      "round": 1,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 22
+    },
+    {
+      "path": "/today-events.html",
+      "round": 1,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 20
+    },
+    {
+      "path": "/screen.html",
+      "round": 1,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 30
+    },
+    {
+      "path": "/live-status.json",
+      "round": 1,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 30
+    },
+    {
+      "path": "/events.ics",
+      "round": 1,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 25
+    },
+    {
+      "path": "/readiness.html",
+      "round": 1,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 24
+    },
+    {
+      "path": "/index.html",
+      "round": 2,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 7
+    },
+    {
+      "path": "/events.html",
+      "round": 2,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 7
+    },
+    {
+      "path": "/today-events.html",
+      "round": 2,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 4
+    },
+    {
+      "path": "/screen.html",
+      "round": 2,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 9
+    },
+    {
+      "path": "/live-status.json",
+      "round": 2,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 9
+    },
+    {
+      "path": "/events.ics",
+      "round": 2,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 8
+    },
+    {
+      "path": "/readiness.html",
+      "round": 2,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 6
+    },
+    {
+      "path": "/index.html",
+      "round": 3,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 5
+    },
+    {
+      "path": "/events.html",
+      "round": 3,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 5
+    },
+    {
+      "path": "/today-events.html",
+      "round": 3,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 4
+    },
+    {
+      "path": "/screen.html",
+      "round": 3,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 7
+    },
+    {
+      "path": "/live-status.json",
+      "round": 3,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 7
+    },
+    {
+      "path": "/events.ics",
+      "round": 3,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 5
+    },
+    {
+      "path": "/readiness.html",
+      "round": 3,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 4
+    },
+    {
+      "path": "/index.html",
+      "round": 4,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 3
+    },
+    {
+      "path": "/events.html",
+      "round": 4,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 4
+    },
+    {
+      "path": "/today-events.html",
+      "round": 4,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 2
+    },
+    {
+      "path": "/screen.html",
+      "round": 4,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 5
+    },
+    {
+      "path": "/live-status.json",
+      "round": 4,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 5
+    },
+    {
+      "path": "/events.ics",
+      "round": 4,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 4
+    },
+    {
+      "path": "/readiness.html",
+      "round": 4,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 1
+    },
+    {
+      "path": "/index.html",
+      "round": 5,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 7
+    },
+    {
+      "path": "/events.html",
+      "round": 5,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 5
+    },
+    {
+      "path": "/today-events.html",
+      "round": 5,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 2
+    },
+    {
+      "path": "/screen.html",
+      "round": 5,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 7
+    },
+    {
+      "path": "/live-status.json",
+      "round": 5,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 8
+    },
+    {
+      "path": "/events.ics",
+      "round": 5,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 7
+    },
+    {
+      "path": "/readiness.html",
+      "round": 5,
+      "status": 200,
+      "ok": true,
+      "latency_ms": 7
+    }
+  ],
+  "findings": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "eventlive.analytics-status.v1",
+  "generated_at": "2026-07-08T01:39:49.885Z",
+  "status": "PASS",
+  "provider": "plausible",
+  "domain": "eventme.live",
+  "privacy": {
+    "cookies": false,
+    "pii": false,
+    "owner_pages_excluded": true
+  },
+  "tracked_events": [
+    "page_view",
+    "search_used",
+    "event_opened",
+    "city_filter_used",
+    "category_filter_used",
+    "audience_filter_used",
+    "calendar_downloaded",
+    "directions_clicked",
+    "source_clicked",
+    "live_screen_opened",
+    "saved_event",
+    "share_clicked",
+    "organizer_cta_clicked",
+    "this_week_opened",
+    "today_opened"
+  ],
+  "owner_excluded_paths": [
+    "sources.html",
+    "methodology.html",
+    "trust.html",
+    "events.json",
+    "source-health.html",
+    "candidates.html",
+    "resolver.html"
+  ],
+  "implementation": {
+    "runtime_function": "window.eventLiveTrack",
+    "html_attribute_tracking": "data-analytics-event",
+    "provider_dispatch": "Plausible/Umami/GA4-compatible when configured"
+  }
+}

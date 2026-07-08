@@ -47,7 +47,14 @@ const launchPages = [
   'updates.html',
   'weekend.html'
 ];
-const ownerOnlyPages = new Set(['sources.html', 'methodology.html', 'trust.html']);
+const ownerOnlyPages = new Set([
+  'sources.html',
+  'methodology.html',
+  'trust.html',
+  'candidates.html',
+  'resolver.html',
+  'source-health.html'
+]);
 
 const forbiddenDistPaths = [
   'archive-browser.html',

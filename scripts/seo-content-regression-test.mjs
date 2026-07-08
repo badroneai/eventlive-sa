@@ -18,6 +18,7 @@ const expectedPages = [
   'guide-summer-events-saudi.html',
   'guide-ended-events-value.html'
 ];
+const ownerOnlyPages = new Set(['methodology.html', 'sources.html', 'trust.html']);
 
 function jsonLdScripts(html) {
   return [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
@@ -27,7 +28,12 @@ function jsonLdScripts(html) {
 for (const page of expectedPages) {
   const filePath = path.join(distDir, page);
   assert.equal(fs.existsSync(filePath), true, `${page} must be generated`);
-  assert.match(sitemap, new RegExp(`https://eventme\\.live/${page.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`), `${page} must be in sitemap`);
+  const sitemapPattern = new RegExp(`https://eventme\\.live/${page.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`);
+  if (ownerOnlyPages.has(page)) {
+    assert.doesNotMatch(sitemap, sitemapPattern, `${page} is owner-only and must not be in sitemap`);
+  } else {
+    assert.match(sitemap, sitemapPattern, `${page} must be in sitemap`);
+  }
 
   const html = fs.readFileSync(filePath, 'utf8');
   assert.match(html, /<nav class="breadcrumbs"/, `${page} must render visible breadcrumbs`);

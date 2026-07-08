@@ -19,8 +19,8 @@ const manifest = fs.readFileSync(manifestPath, 'utf8');
 const serviceWorker = fs.readFileSync(serviceWorkerPath, 'utf8');
 
 for (const page of [
-  { base: 'readiness', intent: 'eventlive-operational-readiness', title: /جاهزية التشغيل/ },
-  { base: 'trust', intent: 'public-trust-and-source-evidence', title: /مركز الثقة/ }
+  { base: 'readiness', intent: 'eventlive-operational-readiness', title: /جاهزية التشغيل/, ownerOnly: false },
+  { base: 'trust', intent: 'public-trust-and-source-evidence', title: /مركز الثقة/, ownerOnly: true }
 ]) {
   const jsonPath = path.join(distDir, `${page.base}.json`);
   const htmlPath = path.join(distDir, `${page.base}.html`);
@@ -45,10 +45,17 @@ for (const page of [
   assert.match(html, page.title, `${page.base}.html must render its Arabic title`);
   assert.match(html, new RegExp(`${page.base}\\.json`), `${page.base}.html must link its JSON feed`);
   assert.match(html, /application\/ld\+json/, `${page.base}.html must include structured data`);
-  assert.match(sitemap, new RegExp(`https://eventme\\.live/${page.base}\\.html`), `${page.base}.html must be in sitemap`);
-  assert.match(manifest, new RegExp(`${page.base}\\.html`), `${page.base}.html must be available from the PWA manifest`);
-  assert.match(serviceWorker, new RegExp(`"\\./${page.base}\\.html"`), `${page.base}.html must be precached`);
-  assert.match(serviceWorker, new RegExp(`"\\./${page.base}\\.json"`), `${page.base}.json must be precached`);
+  if (page.ownerOnly) {
+    assert.doesNotMatch(sitemap, new RegExp(`https://eventme\\.live/${page.base}\\.html`), `${page.base}.html is owner-only and must not be in sitemap`);
+    assert.doesNotMatch(manifest, new RegExp(`${page.base}\\.html`), `${page.base}.html is owner-only and must not be in the PWA manifest`);
+    assert.doesNotMatch(serviceWorker, new RegExp(`"\\./${page.base}\\.html"`), `${page.base}.html is owner-only and must not be precached`);
+    assert.doesNotMatch(serviceWorker, new RegExp(`"\\./${page.base}\\.json"`), `${page.base}.json is owner-only and must not be precached`);
+  } else {
+    assert.match(sitemap, new RegExp(`https://eventme\\.live/${page.base}\\.html`), `${page.base}.html must be in sitemap`);
+    assert.match(manifest, new RegExp(`${page.base}\\.html`), `${page.base}.html must be available from the PWA manifest`);
+    assert.match(serviceWorker, new RegExp(`"\\./${page.base}\\.html"`), `${page.base}.html must be precached`);
+    assert.match(serviceWorker, new RegExp(`"\\./${page.base}\\.json"`), `${page.base}.json must be precached`);
+  }
 }
 
 console.log('readiness-trust-regression-test: ok');

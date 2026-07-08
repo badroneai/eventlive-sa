@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-07-07T20:52:04.214Z
+- generated_at: 2026-07-08T01:40:12.933Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -16,11 +16,11 @@
 - Healthy sources: 14
 - Zero-yield sources: 9
 - High-priority unattempted sources: 3
-- Candidates: 185
+- Candidates: 183
 - Actionable candidates: 0
 - Ready for review: 0
 - Ready for catalog promotion: 0
-- Linked to catalog from candidates: 140
+- Linked to catalog from candidates: 138
 - Stale unpublished candidates: 0
 - Duplicate risk: 0
 - Recommendation: استخدم أقوى مرشحي الاكتشاف لبناء مطابقة آلية مع مصادر رسمية؛ لا تنشر مصدر اكتشاف منفرداً.
@@ -28,10 +28,10 @@
 ## Candidate Funnel
 
 - review_status.evidence-captured: 27
-- review_status.approved-for-catalog: 140
+- review_status.approved-for-catalog: 138
 - review_status.new: 18
 - publication_gate.source-evidence: 30
-- publication_gate.catalog-review: 140
+- publication_gate.catalog-review: 138
 - publication_gate.duplicate-review: 15
 - discovery_quality.strong-lead: 28
 - discovery_quality.weak-lead: 1
@@ -77,7 +77,7 @@
 | 14 | Eventbrite Saudi Arabia | collection-error | 0 | 17 | Discovery-only source unavailable in this run: HTTP 405 |
 | 15 | Platinumlist Jeddah Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 16 | Tuwaiq Academy Bootcamps and Programs | healthy | 12 | 18 | استمر بالمراجعة والتكرار قبل النشر. |
-| 17 | Future Skills MCIT Catalogue | healthy | 4 | 6 | استمر بالمراجعة والتكرار قبل النشر. |
+| 17 | Future Skills MCIT Catalogue | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |
 | 18 | Riyadh Season Official | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 19 | Visit Saudi Seasons | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |
 | 20 | CODE MCIT Programs | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |

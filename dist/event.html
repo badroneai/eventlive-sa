@@ -662,6 +662,81 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <style id="eventlive-brand-pulse">
 @keyframes eventliveLiveDotPulse {
   0%, 100% { opacity: .92; transform: translateX(-50%) scale(1); box-shadow: 0 0 0 0 rgba(229, 72, 77, .2); }
@@ -672,6 +747,12 @@
 .brand-word .live-i { position: relative; display: inline-block; font-style: normal; line-height: .95; min-width: .18em; margin-inline: .01em; }
 .brand-word .live-i::after { content: ""; position: absolute; width: .24em; height: .24em; border-radius: 999px; background: #e5484d; top: -.16em; left: 50%; transform: translateX(-50%); animation: eventliveLiveDotPulse 5.6s ease-in-out infinite; }
 .brand-sr { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; clip-path: inset(50%); }
+.footer-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-weight: 700; }
+.footer-links a { color: #0d6b52; }
+.footer { color: #566960 !important; }
+.trust { color: #48635a !important; }
+.primary, .btn.primary, .status-card.primary a { background: #006f67 !important; color: #fff !important; }
+.status-card.primary .label, .status-card.primary .meta { color: rgba(255,255,255,.92) !important; }
 .card h3 { text-align: center; -webkit-line-clamp: 3; min-height: auto; }
 .card h3 a { unicode-bidi: plaintext; }
 .breadcrumbs { display: flex; align-items: center; gap: 8px; padding: 18px 0 0; color: #66756f; font-size: .92rem; font-weight: 700; }
@@ -685,6 +766,7 @@
   .breadcrumbs strong { max-width: 24ch; }
 }
 </style>
+  <script defer data-domain="eventme.live" src="https://plausible.io/js/script.tagged-events.js"></script>
 </head>
 <body>
 
@@ -784,7 +866,7 @@
       <div class="sticky-live-bar" aria-label="ملخص حي سريع">
         <div class="sticky-live-inner">
           <span id="stickyPhase">جاري حساب حالة الفعالية...</span>
-          <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Riyadh%20International%20Convention%20and%20Exhibition%20Center" target="_blank" rel="noopener">الاتجاهات</a>
+          <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Riyadh%20International%20Convention%20and%20Exhibition%20Center" target="_blank" rel="noopener noreferrer">الاتجاهات</a>
         </div>
       </div>
 
@@ -797,12 +879,12 @@
           <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="eventProgress"></div></div>
           <p class="tiny-note" id="progressLabel">نافذة الفعالية: ١٠‏/٠٧‏/٢٠٢٦، ٩:٠٠ ص - ١٠‏/٠٧‏/٢٠٢٦، ٢:٠٠ م</p>
           <div class="arrival-actions">
-            <a class="primary-action" href="https://www.google.com/maps/dir/?api=1&amp;destination=Riyadh%20International%20Convention%20and%20Exhibition%20Center" target="_blank" rel="noopener">افتح الاتجاهات</a>
-            <a href="https://www.google.com/maps/search/?api=1&amp;query=Riyadh%20International%20Convention%20and%20Exhibition%20Center" target="_blank" rel="noopener">الموقع على الخريطة</a>
+            <a class="primary-action" href="https://www.google.com/maps/dir/?api=1&amp;destination=Riyadh%20International%20Convention%20and%20Exhibition%20Center" target="_blank" rel="noopener noreferrer">افتح الاتجاهات</a>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Riyadh%20International%20Convention%20and%20Exhibition%20Center" target="_blank" rel="noopener noreferrer">الموقع على الخريطة</a>
             <a href="mailto:hello@eventme.live">تواصل</a>
             <button type="button" id="copyEventLink">نسخ الرابط</button>
             <button type="button" id="nativeShare">مشاركة</button>
-            <a href="https://wa.me/?text=EventLive%3A%20%D9%85%D9%84%D8%AA%D9%82%D9%89%20%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%84%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%82%D8%B7%D8%A7%D8%B9%20%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A%202026%20-%20%D8%A7%D9%84%D8%AC%D8%AF%D9%88%D9%84%20%D8%A7%D9%84%D8%AD%D9%8A%20https%3A%2F%2Feventme.live%2Fevent.html" target="_blank" rel="noopener">واتساب</a>
+            <a href="https://wa.me/?text=EventLive%3A%20%D9%85%D9%84%D8%AA%D9%82%D9%89%20%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%84%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%82%D8%B7%D8%A7%D8%B9%20%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A%202026%20-%20%D8%A7%D9%84%D8%AC%D8%AF%D9%88%D9%84%20%D8%A7%D9%84%D8%AD%D9%8A%20https%3A%2F%2Feventme.live%2Fevent.html" target="_blank" rel="noopener noreferrer">واتساب</a>
           </div>
           <div class="offline-status" id="offlineStatus">جاري تجهيز الاستخدام دون اتصال...</div>
         </div>
@@ -1434,5 +1516,128 @@
     }, 30000);
     render();
   </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="eventlive-analytics-runtime">
+(function () {
+  var ownerOnlyPattern = /\/(sources|methodology|trust|source-health|candidates|resolver)\.html$|\/(events|sources|trust|methodology|readiness|source-coverage-gaps|regions)\.json$/;
+  var path = window.location.pathname || '';
+  if (ownerOnlyPattern.test(path)) {
+    window.eventLiveTrack = function () {};
+    return;
+  }
+
+  function clean(value) {
+    return String(value || '').replace(/\s+/g, ' ').trim().slice(0, 160);
+  }
+
+  function payload(extra) {
+    return Object.assign({
+      path: path,
+      title: clean(document.title),
+      referrer_host: document.referrer ? (new URL(document.referrer, window.location.href)).host : ''
+    }, extra || {});
+  }
+
+  window.eventLiveTrack = function (name, props) {
+    var eventName = clean(name || '');
+    if (!eventName) return;
+    var eventProps = payload(props);
+    try {
+      if (typeof window.plausible === 'function') {
+        window.plausible(eventName, { props: eventProps });
+        return;
+      }
+      if (typeof window.umami === 'object' && typeof window.umami.track === 'function') {
+        window.umami.track(eventName, eventProps);
+        return;
+      }
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', eventName, eventProps);
+      }
+    } catch (error) {
+      if (window.console && window.console.debug) window.console.debug('EventLive analytics skipped', error);
+    }
+  };
+
+  window.eventLiveTrack('page_view', {
+    page_kind: document.body?.dataset?.pageKind || path.split('/').filter(Boolean).pop() || 'home'
+  });
+
+  document.addEventListener('click', function (event) {
+    var target = event.target && event.target.closest ? event.target.closest('a,button,[data-analytics-event]') : null;
+    if (!target) return;
+    var explicit = target.getAttribute('data-analytics-event');
+    var href = target.getAttribute('href') || '';
+    var text = clean(target.textContent);
+    var name = explicit || '';
+    if (!name && /\.ics(?:$|\?)/.test(href)) name = 'calendar_downloaded';
+    if (!name && /google\.com\/maps|maps\.apple\.com|directions/i.test(href)) name = 'directions_clicked';
+    if (!name && /\/events\//.test(href)) name = 'event_opened';
+    if (!name && /\/cities\//.test(href)) name = 'city_filter_used';
+    if (!name && /\/categories\//.test(href)) name = 'category_filter_used';
+    if (!name && /\/for\//.test(href)) name = 'audience_filter_used';
+    if (!name && /screen\.html/.test(href)) name = 'live_screen_opened';
+    if (!name && /share\.html/.test(href)) name = 'share_clicked';
+    if (!name && /organizer/.test(href + ' ' + text)) name = 'organizer_cta_clicked';
+    if (!name && /today/.test(href)) name = 'today_opened';
+    if (!name && /this-week/.test(href)) name = 'this_week_opened';
+    if (!name && /source|evidence|visitsaudi|gea|moc|tuwaiq|mcit|mdlbeast|experiencealula/i.test(href)) name = 'source_clicked';
+    if (!name) return;
+    window.eventLiveTrack(name, { href: href, label: text });
+  }, { capture: true });
+
+  var searchTimer = null;
+  document.addEventListener('input', function (event) {
+    var target = event.target;
+    if (!target || !/search|q|query/i.test(target.getAttribute('type') || target.getAttribute('name') || target.getAttribute('placeholder') || '')) return;
+    window.clearTimeout(searchTimer);
+    searchTimer = window.setTimeout(function () {
+      window.eventLiveTrack('search_used', { query_length: clean(target.value).length });
+    }, 700);
+  }, { passive: true });
+
+  window.addEventListener('storage', function (event) {
+    if (/saved|eventlive-saved-events/i.test(event.key || '')) {
+      window.eventLiveTrack('saved_event', { storage_key: event.key || '' });
+    }
+  });
+})();
+</script>
 </body>
 </html>

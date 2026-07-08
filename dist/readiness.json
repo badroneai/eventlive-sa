@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T23:31:04.157Z",
+  "generated_at": "2026-07-08T01:40:00.463Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-operational-readiness",
@@ -15605,7 +15605,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },

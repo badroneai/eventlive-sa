@@ -1,0 +1,1724 @@
+{
+  "schema": "eventlive.static-analysis-audit.v1",
+  "generated_at": "2026-07-08T01:37:23.426Z",
+  "status": "PASS",
+  "summary": {
+    "script_files_checked": 165,
+    "syntax_failures": 0,
+    "package_script_references": 155,
+    "missing_package_script_references": 0,
+    "risky_findings": 15,
+    "high_risk_findings": 0
+  },
+  "syntax_checks": [
+    {
+      "file": "scripts/activate-official-single-session-events.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/ai-search-readiness-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/alert-rules-eval.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/analytics-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/arabic-normalize.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/archive-program.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/audience-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/audience-utils.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/audiences-index-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/auto-publish-source-candidates.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/axe-accessibility-audit.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/axe-accessibility-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/brand-consistency-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/browser-matrix-audit.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/browser-matrix-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/build-incidents-index.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/cache-event-images.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/card-cover-layout-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/catalog-image-sync-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/categories-index-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/category-label-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/check-reliability-slo.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/check-validation-threshold.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/cities-index-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/city-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/city-utils.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/collect-source-candidates.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/compliance-source-rights-audit.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/compliance-source-rights-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/content-localization-audit.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/content-localization-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/csv-parser-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/data-qa-day2.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/date-parse-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/date-parse-utils.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/dedupe-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/delivery-readiness-standard-audit.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/delivery-readiness-standard-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/dhahran-expo-enrichment-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/diff-programs.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/discover-event-images-from-pages.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/documentation-audit.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/documentation-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/embedded-json-utils.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/enrich-dhahran-expo-calendar-details.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/enrich-future-skills-program-details.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/enrich-mdlbeast-events-details.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/enrich-misk-program-details.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/enrich-official-event-backlog-details.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/enrich-rfecc-events-details.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/enrich-saudi-water-authority-details.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/enrich-sfda-workshop-details.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/enrich-tuwaiq-program-details.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/enrich-visit-saudi-calendar-details.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/environment-matrix-check.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/event-detail-page-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/event-image-cache-failure-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/event-image-cache-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/event-image-discovery-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/event-kind-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/event-kind-utils.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/events-page-shell-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/facet-pages-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/feeds-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/future-skills-program-enrichment-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/generate-site.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/home-page-data-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/image-asset-utils.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/launch-preflight-report.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/lighthouse-performance-audit.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/lighthouse-performance-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/live-operational-feeds-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/live-ops-state.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/live-ready-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/live-ready-utils.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/live-runtime-clock-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/mdlbeast-enrichment-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/misk-program-enrichment-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/normalize-program.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/official-event-backlog-enrichment-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/official-single-session-activation-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/ops-readiness-audit.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/ops-readiness-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/organizers-page-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/owner-command-center-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/owner-command-center.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/prelaunch-data-quality-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/preview-program.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/product-journey-audit.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/product-journey-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/production-domain-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/program-lifecycle-utils.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/promote-source-candidates.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/public-asset-links-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/public-transparency-feeds-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/publish-program.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/qa-production.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/readiness-trust-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/regional-source-seeds-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/regions-coverage-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/release-deploy-rollback-audit.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/release-deploy-rollback-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/release-safety-verdict.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/release-verdict-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/release-verdict-schema-ci-check.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/release-verdict-schema-negative-additional-property-ci-check.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/release-verdict-schema-negative-ci-check.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/release-verdict-schema-negative-fixture-runner.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/release-verdict-schema-negative-missing-required-ci-check.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/release-verdict-schema-negative-nested-type-ci-check.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/release-verdict-schema-suite.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/release-verdict-schema-validator.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/reliability-rollup.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/review-source-candidate.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/rfecc-enrichment-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/saudi-water-authority-enrichment-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/schema-suite-regression-check.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/schema-suite-regression-summary.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/screen-fallback-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/search-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/secret-env-audit.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/secret-env-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/security-review-audit.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/security-review-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/seo-content-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/seo-structured-data-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/sfda-workshop-enrichment-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/site-design-coverage-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/site-launch-sweep.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/site-visual-sweep.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/sitemap-coverage-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-auto-publish-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-browser-probe-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-browser-probe.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-collection-delta-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-coverage-gaps-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-deep-probe.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-extractor-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-health-gate-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-health-gate.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-ingestion-plan.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-official-resolver.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-ops-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-ops-report.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-plan-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-run-state-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-run-state.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-sync-pipeline-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-sync-workflow-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-yield-report.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/sprint2-tick.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/stability-check.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/static-analysis-audit.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/static-analysis-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/sync-catalog-images-from-candidates.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/tmp-sdaia-playwright.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/tuwaiq-program-enrichment-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/ui-state-audit.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/ui-state-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/uptime-check.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/validate-data.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/validation-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/visit-saudi-enrichment-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/web-quality-audit-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/web-quality-audit.mjs",
+      "ok": true,
+      "stderr": ""
+    }
+  ],
+  "package_script_references": [
+    {
+      "npm_script": "validate",
+      "reference": "scripts/validate-data.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "validate:gate",
+      "reference": "scripts/check-validation-threshold.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "build",
+      "reference": "scripts/generate-site.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:collect",
+      "reference": "scripts/collect-source-candidates.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:review",
+      "reference": "scripts/review-source-candidate.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:promote",
+      "reference": "scripts/promote-source-candidates.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:auto-publish",
+      "reference": "scripts/auto-publish-source-candidates.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:plan",
+      "reference": "scripts/source-ingestion-plan.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:probe",
+      "reference": "scripts/source-deep-probe.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:yield",
+      "reference": "scripts/source-yield-report.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:browser-probe",
+      "reference": "scripts/source-browser-probe.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:resolve",
+      "reference": "scripts/source-official-resolver.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:health-gate",
+      "reference": "scripts/source-health-gate.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:state",
+      "reference": "scripts/source-run-state.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:tuwaiq:details",
+      "reference": "scripts/enrich-tuwaiq-program-details.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:future-skills:details",
+      "reference": "scripts/enrich-future-skills-program-details.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:sfda:details",
+      "reference": "scripts/enrich-sfda-workshop-details.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:misk:details",
+      "reference": "scripts/enrich-misk-program-details.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:dhahran:details",
+      "reference": "scripts/enrich-dhahran-expo-calendar-details.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:visit-saudi:details",
+      "reference": "scripts/enrich-visit-saudi-calendar-details.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:swa:details",
+      "reference": "scripts/enrich-saudi-water-authority-details.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:rfecc:details",
+      "reference": "scripts/enrich-rfecc-events-details.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:mdlbeast:details",
+      "reference": "scripts/enrich-mdlbeast-events-details.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:backlog:details",
+      "reference": "scripts/enrich-official-event-backlog-details.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:single-session:activate",
+      "reference": "scripts/activate-official-single-session-events.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:ops",
+      "reference": "scripts/source-ops-report.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "images:cache",
+      "reference": "scripts/cache-event-images.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "images:discover",
+      "reference": "scripts/discover-event-images-from-pages.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "images:sync-catalog",
+      "reference": "scripts/sync-catalog-images-from-candidates.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "normalize",
+      "reference": "scripts/normalize-program.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "operator:console",
+      "reference": "apps/operator-console/server.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "preview",
+      "reference": "scripts/preview-program.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "diff",
+      "reference": "scripts/diff-programs.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "publish",
+      "reference": "scripts/publish-program.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "archive",
+      "reference": "scripts/archive-program.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "launch:preflight",
+      "reference": "scripts/launch-preflight-report.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "qa:day2",
+      "reference": "scripts/data-qa-day2.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "uptime:check",
+      "reference": "scripts/uptime-check.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "stability:check",
+      "reference": "scripts/stability-check.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "reliability:rollup",
+      "reference": "scripts/reliability-rollup.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "qa:prod",
+      "reference": "scripts/qa-production.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "qa:prod:noisy",
+      "reference": "scripts/qa-production.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:validation",
+      "reference": "scripts/validation-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:event-kind",
+      "reference": "scripts/event-kind-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:audience",
+      "reference": "scripts/audience-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:source-extractors",
+      "reference": "scripts/source-extractor-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:source-plan",
+      "reference": "scripts/source-plan-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:date-parse",
+      "reference": "scripts/date-parse-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:city",
+      "reference": "scripts/city-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:category-labels",
+      "reference": "scripts/category-label-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:facet-pages",
+      "reference": "scripts/facet-pages-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:live-ready",
+      "reference": "scripts/live-ready-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:search",
+      "reference": "scripts/search-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:seo-content",
+      "reference": "scripts/seo-content-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:production-domain",
+      "reference": "scripts/production-domain-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:ai-search-readiness",
+      "reference": "scripts/ai-search-readiness-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:home-data",
+      "reference": "scripts/home-page-data-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:card-covers",
+      "reference": "scripts/card-cover-layout-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:brand",
+      "reference": "scripts/brand-consistency-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:site-design-coverage",
+      "reference": "scripts/site-design-coverage-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:public-assets",
+      "reference": "scripts/public-asset-links-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:sitemap",
+      "reference": "scripts/sitemap-coverage-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:cities-index",
+      "reference": "scripts/cities-index-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:categories-index",
+      "reference": "scripts/categories-index-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:audiences-index",
+      "reference": "scripts/audiences-index-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:organizers",
+      "reference": "scripts/organizers-page-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:events-shell",
+      "reference": "scripts/events-page-shell-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:event-detail",
+      "reference": "scripts/event-detail-page-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:image-cache",
+      "reference": "scripts/event-image-cache-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:image-cache-failures",
+      "reference": "scripts/event-image-cache-failure-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:image-discovery",
+      "reference": "scripts/event-image-discovery-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:catalog-image-sync",
+      "reference": "scripts/catalog-image-sync-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:dedupe",
+      "reference": "scripts/dedupe-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:feeds",
+      "reference": "scripts/feeds-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:live-runtime-clock",
+      "reference": "scripts/live-runtime-clock-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:prelaunch-data-quality",
+      "reference": "scripts/prelaunch-data-quality-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:csv",
+      "reference": "scripts/csv-parser-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:source-auto-publish",
+      "reference": "scripts/source-auto-publish-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:source-ops",
+      "reference": "scripts/source-ops-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:source-collection-delta",
+      "reference": "scripts/source-collection-delta-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:source-browser-probe",
+      "reference": "scripts/source-browser-probe-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:source-health-gate",
+      "reference": "scripts/source-health-gate-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:source-coverage-gaps",
+      "reference": "scripts/source-coverage-gaps-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:source-run-state",
+      "reference": "scripts/source-run-state-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:source-sync-pipeline",
+      "reference": "scripts/source-sync-pipeline-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:source-sync-workflow",
+      "reference": "scripts/source-sync-workflow-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:tuwaiq-program-enrichment",
+      "reference": "scripts/tuwaiq-program-enrichment-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:future-skills-program-enrichment",
+      "reference": "scripts/future-skills-program-enrichment-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:sfda-workshop-enrichment",
+      "reference": "scripts/sfda-workshop-enrichment-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:misk-program-enrichment",
+      "reference": "scripts/misk-program-enrichment-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:dhahran-expo-enrichment",
+      "reference": "scripts/dhahran-expo-enrichment-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:visit-saudi-enrichment",
+      "reference": "scripts/visit-saudi-enrichment-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:swa-enrichment",
+      "reference": "scripts/saudi-water-authority-enrichment-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:rfecc-enrichment",
+      "reference": "scripts/rfecc-enrichment-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:mdlbeast-enrichment",
+      "reference": "scripts/mdlbeast-enrichment-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:backlog-enrichment",
+      "reference": "scripts/official-event-backlog-enrichment-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:single-session-activation",
+      "reference": "scripts/official-single-session-activation-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:site-launch-sweep",
+      "reference": "scripts/site-launch-sweep.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:site-visual-sweep",
+      "reference": "scripts/site-visual-sweep.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:seo-structured-data",
+      "reference": "scripts/seo-structured-data-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:regions-coverage",
+      "reference": "scripts/regions-coverage-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:regional-source-seeds",
+      "reference": "scripts/regional-source-seeds-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:release-verdict",
+      "reference": "scripts/release-verdict-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:release-verdict-schema-ci",
+      "reference": "scripts/release-verdict-schema-ci-check.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:release-verdict-schema-negative-ci",
+      "reference": "scripts/release-verdict-schema-negative-ci-check.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:release-verdict-schema-negative-missing-required-ci",
+      "reference": "scripts/release-verdict-schema-negative-missing-required-ci-check.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:release-verdict-schema-negative-additional-property-ci",
+      "reference": "scripts/release-verdict-schema-negative-additional-property-ci-check.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:release-verdict-schema-negative-nested-type-ci",
+      "reference": "scripts/release-verdict-schema-negative-nested-type-ci-check.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:release-verdict-schema-suite",
+      "reference": "scripts/release-verdict-schema-suite.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:release-verdict-schema-regression",
+      "reference": "scripts/schema-suite-regression-check.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "report:release-verdict-schema-regression",
+      "reference": "scripts/schema-suite-regression-summary.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "owner:command-center",
+      "reference": "scripts/owner-command-center.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:owner-command-center",
+      "reference": "scripts/owner-command-center-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:analytics",
+      "reference": "scripts/analytics-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "audit:static",
+      "reference": "scripts/static-analysis-audit.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:static",
+      "reference": "scripts/static-analysis-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "audit:product-journeys",
+      "reference": "scripts/product-journey-audit.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:product-journeys",
+      "reference": "scripts/product-journey-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "audit:ui-states",
+      "reference": "scripts/ui-state-audit.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:ui-states",
+      "reference": "scripts/ui-state-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "audit:content-localization",
+      "reference": "scripts/content-localization-audit.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:content-localization",
+      "reference": "scripts/content-localization-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "audit:secret-env",
+      "reference": "scripts/secret-env-audit.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:secret-env",
+      "reference": "scripts/secret-env-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "audit:compliance-source-rights",
+      "reference": "scripts/compliance-source-rights-audit.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:compliance-source-rights",
+      "reference": "scripts/compliance-source-rights-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "audit:documentation",
+      "reference": "scripts/documentation-audit.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:documentation",
+      "reference": "scripts/documentation-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "audit:security-review",
+      "reference": "scripts/security-review-audit.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:security-review",
+      "reference": "scripts/security-review-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "audit:ops-readiness",
+      "reference": "scripts/ops-readiness-audit.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:ops-readiness",
+      "reference": "scripts/ops-readiness-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "audit:release-deploy-rollback",
+      "reference": "scripts/release-deploy-rollback-audit.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:release-deploy-rollback",
+      "reference": "scripts/release-deploy-rollback-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "audit:web-quality",
+      "reference": "scripts/web-quality-audit.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:web-quality",
+      "reference": "scripts/web-quality-audit-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "audit:browser-matrix",
+      "reference": "scripts/browser-matrix-audit.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:browser-matrix",
+      "reference": "scripts/browser-matrix-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "audit:axe",
+      "reference": "scripts/axe-accessibility-audit.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:axe",
+      "reference": "scripts/axe-accessibility-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "audit:lighthouse",
+      "reference": "scripts/lighthouse-performance-audit.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:lighthouse",
+      "reference": "scripts/lighthouse-performance-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "readiness:standard",
+      "reference": "scripts/delivery-readiness-standard-audit.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:readiness-standard",
+      "reference": "scripts/delivery-readiness-standard-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "reliability:slo-gate",
+      "reference": "scripts/check-reliability-slo.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "release:verdict",
+      "reference": "scripts/release-safety-verdict.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "env:matrix",
+      "reference": "scripts/environment-matrix-check.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "ops:state",
+      "reference": "scripts/live-ops-state.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "ops:alerts",
+      "reference": "scripts/alert-rules-eval.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sprint2:tick",
+      "reference": "scripts/sprint2-tick.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "ops:incidents:index",
+      "reference": "scripts/build-incidents-index.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:readiness-trust",
+      "reference": "scripts/readiness-trust-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:live-operational-feeds",
+      "reference": "scripts/live-operational-feeds-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:public-transparency-feeds",
+      "reference": "scripts/public-transparency-feeds-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:screen-fallback",
+      "reference": "scripts/screen-fallback-regression-test.mjs",
+      "exists": true
+    }
+  ],
+  "risky_findings": [
+    {
+      "rule": "hardcoded-localhost-production-link",
+      "severity": "medium",
+      "file": "scripts/axe-accessibility-audit.mjs",
+      "line": 35,
+      "description": "Localhost URLs should not leak into production-facing source files."
+    },
+    {
+      "rule": "hardcoded-localhost-production-link",
+      "severity": "medium",
+      "file": "scripts/axe-accessibility-audit.mjs",
+      "line": 48,
+      "description": "Localhost URLs should not leak into production-facing source files."
+    },
+    {
+      "rule": "hardcoded-localhost-production-link",
+      "severity": "medium",
+      "file": "scripts/browser-matrix-audit.mjs",
+      "line": 45,
+      "description": "Localhost URLs should not leak into production-facing source files."
+    },
+    {
+      "rule": "hardcoded-localhost-production-link",
+      "severity": "medium",
+      "file": "scripts/browser-matrix-audit.mjs",
+      "line": 59,
+      "description": "Localhost URLs should not leak into production-facing source files."
+    },
+    {
+      "rule": "hardcoded-localhost-production-link",
+      "severity": "medium",
+      "file": "scripts/event-image-cache-failure-regression-test.mjs",
+      "line": 30,
+      "description": "Localhost URLs should not leak into production-facing source files."
+    },
+    {
+      "rule": "hardcoded-localhost-production-link",
+      "severity": "medium",
+      "file": "scripts/lighthouse-performance-audit.mjs",
+      "line": 34,
+      "description": "Localhost URLs should not leak into production-facing source files."
+    },
+    {
+      "rule": "hardcoded-localhost-production-link",
+      "severity": "medium",
+      "file": "scripts/lighthouse-performance-audit.mjs",
+      "line": 47,
+      "description": "Localhost URLs should not leak into production-facing source files."
+    },
+    {
+      "rule": "hardcoded-localhost-production-link",
+      "severity": "medium",
+      "file": "scripts/ops-readiness-audit.mjs",
+      "line": 30,
+      "description": "Localhost URLs should not leak into production-facing source files."
+    },
+    {
+      "rule": "hardcoded-localhost-production-link",
+      "severity": "medium",
+      "file": "scripts/ops-readiness-audit.mjs",
+      "line": 43,
+      "description": "Localhost URLs should not leak into production-facing source files."
+    },
+    {
+      "rule": "hardcoded-localhost-production-link",
+      "severity": "medium",
+      "file": "scripts/site-visual-sweep.mjs",
+      "line": 88,
+      "description": "Localhost URLs should not leak into production-facing source files."
+    },
+    {
+      "rule": "hardcoded-localhost-production-link",
+      "severity": "medium",
+      "file": "scripts/site-visual-sweep.mjs",
+      "line": 124,
+      "description": "Localhost URLs should not leak into production-facing source files."
+    },
+    {
+      "rule": "hardcoded-localhost-production-link",
+      "severity": "medium",
+      "file": "scripts/site-visual-sweep.mjs",
+      "line": 265,
+      "description": "Localhost URLs should not leak into production-facing source files."
+    },
+    {
+      "rule": "eval-constructor",
+      "severity": "medium",
+      "file": "scripts/tmp-sdaia-playwright.mjs",
+      "line": 14,
+      "description": "Dynamic code execution needs explicit review."
+    },
+    {
+      "rule": "hardcoded-localhost-production-link",
+      "severity": "medium",
+      "file": "scripts/web-quality-audit.mjs",
+      "line": 38,
+      "description": "Localhost URLs should not leak into production-facing source files."
+    },
+    {
+      "rule": "hardcoded-localhost-production-link",
+      "severity": "medium",
+      "file": "scripts/web-quality-audit.mjs",
+      "line": 53,
+      "description": "Localhost URLs should not leak into production-facing source files."
+    }
+  ]
+}

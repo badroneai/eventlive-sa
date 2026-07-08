@@ -1,0 +1,48 @@
+{
+  "schema": "eventlive.documentation-audit.v1",
+  "generated_at": "2026-07-08T01:37:34.072Z",
+  "status": "PASS",
+  "summary": {
+    "documents_checked": 6,
+    "findings": 0
+  },
+  "documents": [
+    {
+      "file": "docs/VISITOR_GUIDE.md",
+      "exists": true,
+      "missing_markers": [],
+      "status": "PASS"
+    },
+    {
+      "file": "docs/ORGANIZER_GUIDE.md",
+      "exists": true,
+      "missing_markers": [],
+      "status": "PASS"
+    },
+    {
+      "file": "docs/OWNER_OPERATIONS_GUIDE.md",
+      "exists": true,
+      "missing_markers": [],
+      "status": "PASS"
+    },
+    {
+      "file": "docs/INCIDENT_RUNBOOK.md",
+      "exists": true,
+      "missing_markers": [],
+      "status": "PASS"
+    },
+    {
+      "file": "docs/DELIVERY_READINESS_PLAYBOOK.md",
+      "exists": true,
+      "missing_markers": [],
+      "status": "PASS"
+    },
+    {
+      "file": "docs/EVENTLIVE_TERMINOLOGY_GLOSSARY.md",
+      "exists": true,
+      "missing_markers": [],
+      "status": "PASS"
+    }
+  ],
+  "findings": []
+}

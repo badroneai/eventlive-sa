@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T20:52:03.911Z",
+  "generated_at": "2026-07-08T01:40:14.506Z",
   "source_registry": "data/source_registry.json",
   "source_collection_report": "reports/source-collection-report.json",
   "totals": {
@@ -697,7 +697,7 @@
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 6,
+      "known_candidates": 4,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {

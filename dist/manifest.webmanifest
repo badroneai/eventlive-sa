@@ -79,69 +79,9 @@
       ]
     },
     {
-      "name": "مركز الثقة",
-      "short_name": "الثقة",
-      "url": "./trust.html",
-      "icons": [
-        {
-          "src": "./icon.svg",
-          "sizes": "any",
-          "type": "image/svg+xml"
-        }
-      ]
-    },
-    {
       "name": "جاهزية التشغيل",
       "short_name": "الجاهزية",
       "url": "./readiness.html",
-      "icons": [
-        {
-          "src": "./icon.svg",
-          "sizes": "any",
-          "type": "image/svg+xml"
-        }
-      ]
-    },
-    {
-      "name": "مصادر الفعاليات",
-      "short_name": "المصادر",
-      "url": "./sources.html",
-      "icons": [
-        {
-          "src": "./icon.svg",
-          "sizes": "any",
-          "type": "image/svg+xml"
-        }
-      ]
-    },
-    {
-      "name": "مرشحو المصادر",
-      "short_name": "المرشحون",
-      "url": "./candidates.html",
-      "icons": [
-        {
-          "src": "./icon.svg",
-          "sizes": "any",
-          "type": "image/svg+xml"
-        }
-      ]
-    },
-    {
-      "name": "المطابقة الرسمية",
-      "short_name": "المطابقة",
-      "url": "./resolver.html",
-      "icons": [
-        {
-          "src": "./icon.svg",
-          "sizes": "any",
-          "type": "image/svg+xml"
-        }
-      ]
-    },
-    {
-      "name": "صحة المصادر",
-      "short_name": "الصحة",
-      "url": "./source-health.html",
       "icons": [
         {
           "src": "./icon.svg",

@@ -1,0 +1,217 @@
+{
+  "schema": "eventlive.web-quality-audit.v1",
+  "generated_at": "2026-07-08T01:37:35.874Z",
+  "scope": "mobile browser baseline for accessibility, responsive behavior, performance budgets, and static security hygiene",
+  "summary": {
+    "pages": 6,
+    "console_errors": 0,
+    "accessibility_violations": 0,
+    "responsive_violations": 0,
+    "performance_violations": 0,
+    "security_violations": 0,
+    "accessibility_status": "PASS",
+    "responsive_status": "PASS",
+    "performance_status": "PASS",
+    "security_status": "PASS"
+  },
+  "pages": [
+    {
+      "page": "/index.html",
+      "http_status": 200,
+      "console_errors": [],
+      "metrics": {
+        "lang": "ar",
+        "dir": "rtl",
+        "title": "EventLive | فعاليات السعودية الآن",
+        "h1Count": 1,
+        "imagesMissingAlt": 0,
+        "unnamedButtons": 0,
+        "unlabeledInputs": 0,
+        "focusableWithoutText": 0,
+        "horizontalOverflow": false,
+        "httpLinks": [],
+        "targetBlankMissingRel": 0,
+        "domContentLoadedMs": 432,
+        "loadMs": 1114,
+        "pageSize": 179853
+      },
+      "accessibility": {
+        "violations": []
+      },
+      "responsive": {
+        "violations": []
+      },
+      "performance": {
+        "violations": []
+      },
+      "security": {
+        "violations": []
+      }
+    },
+    {
+      "page": "/events.html",
+      "http_status": 200,
+      "console_errors": [],
+      "metrics": {
+        "lang": "ar",
+        "dir": "rtl",
+        "title": "EventLive | فعاليات السعودية مباشرة",
+        "h1Count": 1,
+        "imagesMissingAlt": 0,
+        "unnamedButtons": 0,
+        "unlabeledInputs": 0,
+        "focusableWithoutText": 0,
+        "horizontalOverflow": false,
+        "httpLinks": [],
+        "targetBlankMissingRel": 0,
+        "domContentLoadedMs": 149,
+        "loadMs": 149,
+        "pageSize": 93082
+      },
+      "accessibility": {
+        "violations": []
+      },
+      "responsive": {
+        "violations": []
+      },
+      "performance": {
+        "violations": []
+      },
+      "security": {
+        "violations": []
+      }
+    },
+    {
+      "page": "/today-events.html",
+      "http_status": 200,
+      "console_errors": [],
+      "metrics": {
+        "lang": "ar",
+        "dir": "rtl",
+        "title": "فعاليات اليوم | EventLive",
+        "h1Count": 1,
+        "imagesMissingAlt": 0,
+        "unnamedButtons": 0,
+        "unlabeledInputs": 0,
+        "focusableWithoutText": 0,
+        "horizontalOverflow": false,
+        "httpLinks": [],
+        "targetBlankMissingRel": 0,
+        "domContentLoadedMs": 23,
+        "loadMs": 23,
+        "pageSize": 35545
+      },
+      "accessibility": {
+        "violations": []
+      },
+      "responsive": {
+        "violations": []
+      },
+      "performance": {
+        "violations": []
+      },
+      "security": {
+        "violations": []
+      }
+    },
+    {
+      "page": "/screen.html",
+      "http_status": 200,
+      "console_errors": [],
+      "metrics": {
+        "lang": "ar",
+        "dir": "rtl",
+        "title": "EventLive | شاشة الحضور",
+        "h1Count": 1,
+        "imagesMissingAlt": 0,
+        "unnamedButtons": 0,
+        "unlabeledInputs": 0,
+        "focusableWithoutText": 0,
+        "horizontalOverflow": false,
+        "httpLinks": [],
+        "targetBlankMissingRel": 0,
+        "domContentLoadedMs": 28,
+        "loadMs": 28,
+        "pageSize": 474808
+      },
+      "accessibility": {
+        "violations": []
+      },
+      "responsive": {
+        "violations": []
+      },
+      "performance": {
+        "violations": []
+      },
+      "security": {
+        "violations": []
+      }
+    },
+    {
+      "page": "/organizers.html",
+      "http_status": 200,
+      "console_errors": [],
+      "metrics": {
+        "lang": "ar",
+        "dir": "rtl",
+        "title": "EventLive | للمنظمين",
+        "h1Count": 1,
+        "imagesMissingAlt": 0,
+        "unnamedButtons": 0,
+        "unlabeledInputs": 0,
+        "focusableWithoutText": 0,
+        "horizontalOverflow": false,
+        "httpLinks": [],
+        "targetBlankMissingRel": 0,
+        "domContentLoadedMs": 483,
+        "loadMs": 483,
+        "pageSize": 60959
+      },
+      "accessibility": {
+        "violations": []
+      },
+      "responsive": {
+        "violations": []
+      },
+      "performance": {
+        "violations": []
+      },
+      "security": {
+        "violations": []
+      }
+    },
+    {
+      "page": "/events/demo-event.html",
+      "http_status": 200,
+      "console_errors": [],
+      "metrics": {
+        "lang": "ar",
+        "dir": "rtl",
+        "title": "ملتقى التحول الرقمي في القطاع الحكومي 2026 | EventLive",
+        "h1Count": 1,
+        "imagesMissingAlt": 0,
+        "unnamedButtons": 0,
+        "unlabeledInputs": 0,
+        "focusableWithoutText": 0,
+        "horizontalOverflow": false,
+        "httpLinks": [],
+        "targetBlankMissingRel": 0,
+        "domContentLoadedMs": 24,
+        "loadMs": 24,
+        "pageSize": 30679
+      },
+      "accessibility": {
+        "violations": []
+      },
+      "responsive": {
+        "violations": []
+      },
+      "performance": {
+        "violations": []
+      },
+      "security": {
+        "violations": []
+      }
+    }
+  ]
+}

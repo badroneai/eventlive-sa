@@ -1,0 +1,51 @@
+{
+  "schema": "eventlive.delivery-readiness.v1",
+  "generated_at": "2026-07-08T01:39:49.885Z",
+  "status": "PASS",
+  "totals": {
+    "catalog_events": 141,
+    "public_events": 429,
+    "live_ready": 51,
+    "with_source_evidence": 429,
+    "gates": 6,
+    "gates_passed": 6
+  },
+  "gates": [
+    {
+      "id": "data_validation",
+      "name": "سلامة البيانات",
+      "status": "PASS",
+      "evidence": "0 errors / 0 warnings"
+    },
+    {
+      "id": "build",
+      "name": "البناء",
+      "status": "PASS",
+      "evidence": "build report حاضر ومحدث"
+    },
+    {
+      "id": "launch_sweep",
+      "name": "مسح الإطلاق",
+      "status": "PASS",
+      "evidence": "site-launch-sweep PASS"
+    },
+    {
+      "id": "visual_sweep",
+      "name": "المسح البصري",
+      "status": "PASS",
+      "evidence": "site-visual-sweep PASS"
+    },
+    {
+      "id": "source_evidence",
+      "name": "أدلة المصادر",
+      "status": "PASS",
+      "evidence": "429/429 فعالية لديها مصدر أو دليل"
+    },
+    {
+      "id": "live_ready",
+      "name": "الجداول الحية",
+      "status": "PASS",
+      "evidence": "51 جداول حية جاهزة"
+    }
+  ]
+}

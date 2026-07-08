@@ -1,0 +1,257 @@
+{
+  "schema": "eventlive.delivery-readiness-standard.v1",
+  "generated_at": "2026-07-08T01:39:49.638Z",
+  "standard_source": "93_DELIVERY_READINESS_STANDARD_V1.md",
+  "project": {
+    "name": "EventLive",
+    "domain": "eventme.live",
+    "type": "public Saudi live-events static platform plus harvest pipeline"
+  },
+  "release_verdict": "NOT_READY",
+  "totals": {
+    "PASS": 20,
+    "PARTIAL": 1,
+    "NOT_STARTED": 0,
+    "OWNER_RESERVED": 1,
+    "N/A": 1,
+    "FAIL": 0
+  },
+  "metrics": {
+    "public_events": 429,
+    "live_ready_events": 51,
+    "launch_sweep_ok": true,
+    "visual_sweep_ok": true,
+    "validation_clean": true,
+    "build_current": true,
+    "command_center_ok": false,
+    "delivery_short_ok": true,
+    "launch_preflight_ok": true,
+    "npm_audit_clean": true,
+    "axe_accessibility": "PASS",
+    "lighthouse_performance": "PASS",
+    "browser_matrix": "PASS",
+    "security_review": "PASS",
+    "ops_readiness": "PASS",
+    "static_analysis": "PASS",
+    "product_journey_audit": "PASS",
+    "ui_state_audit": "PASS",
+    "secret_env_audit": "PASS",
+    "content_localization_audit": "PASS",
+    "compliance_source_rights_audit": "PASS",
+    "documentation_audit": "PASS",
+    "release_deploy_rollback_audit": "PARTIAL",
+    "web_quality_accessibility_baseline": "PASS",
+    "web_quality_performance_baseline": "PASS",
+    "web_quality_responsive_baseline": "PASS",
+    "web_quality_security_baseline": "PASS"
+  },
+  "gates": [
+    {
+      "id": "01",
+      "family": "Product",
+      "name": "Feature & CRUD Completeness",
+      "role": "Product manager / business analyst",
+      "status": "PASS",
+      "evidence": "Product journey audit PASS: visitor, organizer, and owner flows have verified starts, steps, and end states.",
+      "remaining": ""
+    },
+    {
+      "id": "02",
+      "family": "Product",
+      "name": "UX Flows & IA",
+      "role": "UX designer",
+      "status": "PASS",
+      "evidence": "Role-based journey map and dead-end audit PASS, with launch and visual sweeps covering public routes.",
+      "remaining": ""
+    },
+    {
+      "id": "03",
+      "family": "Product",
+      "name": "Design-System Consistency",
+      "role": "Design-system engineer",
+      "status": "PASS",
+      "evidence": "Design OS report plus 41-page / 82-screenshot visual sweep.",
+      "remaining": ""
+    },
+    {
+      "id": "04",
+      "family": "Engineering",
+      "name": "Code Review & Static Analysis",
+      "role": "Senior engineer",
+      "status": "PASS",
+      "evidence": "Static analysis audit PASS: script syntax, package script references, and high-risk automation patterns checked.",
+      "remaining": ""
+    },
+    {
+      "id": "05",
+      "family": "Engineering",
+      "name": "Tests & Coverage",
+      "role": "QA engineer",
+      "status": "PASS",
+      "evidence": "`npm run launch:preflight` PASS recorded in reports/launch-preflight-status.md.",
+      "remaining": ""
+    },
+    {
+      "id": "06",
+      "family": "Engineering",
+      "name": "Error / Empty / Loading / Success States",
+      "role": "Frontend engineer",
+      "status": "PASS",
+      "evidence": "UI state audit PASS across browse, today, live screen, and organizer surfaces.",
+      "remaining": ""
+    },
+    {
+      "id": "07",
+      "family": "Engineering",
+      "name": "Dependency & Supply-Chain Health",
+      "role": "Supply-chain security engineer",
+      "status": "PASS",
+      "evidence": "`npm audit --omit=dev` is clean for high/critical production vulnerabilities; lockfile exists.",
+      "remaining": ""
+    },
+    {
+      "id": "08",
+      "family": "Non-Functional",
+      "name": "Accessibility WCAG 2.1 AA + RTL",
+      "role": "Accessibility specialist",
+      "status": "PASS",
+      "evidence": "Axe accessibility audit PASS with score >=95 and Lighthouse accessibility minimum >=95 across critical pages.",
+      "remaining": ""
+    },
+    {
+      "id": "09",
+      "family": "Non-Functional",
+      "name": "Performance / Core Web Vitals",
+      "role": "Performance engineer",
+      "status": "PASS",
+      "evidence": "Lighthouse performance audit PASS with minimum score >=90 across home, browse, live screen, and event detail.",
+      "remaining": ""
+    },
+    {
+      "id": "10",
+      "family": "Non-Functional",
+      "name": "Responsive & Device Matrix",
+      "role": "QA engineer",
+      "status": "PASS",
+      "evidence": "Browser matrix PASS across Chromium/WebKit and mobile/tablet/desktop, with horizontal overflow and console checks.",
+      "remaining": ""
+    },
+    {
+      "id": "11",
+      "family": "Non-Functional",
+      "name": "Reliability, Capacity & Failure Modes",
+      "role": "SRE",
+      "status": "PASS",
+      "evidence": "Operations readiness PASS: local critical-path load check, source failure-mode matrix, browser matrix, and reliability scripts verified.",
+      "remaining": ""
+    },
+    {
+      "id": "12",
+      "family": "Security & Data",
+      "name": "Security Review",
+      "role": "Security engineer",
+      "status": "PASS",
+      "evidence": "Security review audit PASS across static site, CI security steps, owner-only exposure, robots/sitemap/manifest, external links, secrets, and compliance controls.",
+      "remaining": ""
+    },
+    {
+      "id": "13",
+      "family": "Security & Data",
+      "name": "Config, Secrets & Env Parity",
+      "role": "Platform engineer",
+      "status": "PASS",
+      "evidence": "Secret/env audit PASS: repository scan clean, env matrix script present, deployment workflow present, and git-history policy documented.",
+      "remaining": ""
+    },
+    {
+      "id": "14",
+      "family": "Security & Data",
+      "name": "Data Integrity & Migrations",
+      "role": "Data engineer",
+      "status": "PASS",
+      "evidence": "Validation clean; dedupe regression exists; public events=429. Static project has no DB migrations.",
+      "remaining": ""
+    },
+    {
+      "id": "15",
+      "family": "Content",
+      "name": "Content & Localization",
+      "role": "Content editor",
+      "status": "PASS",
+      "evidence": "Content/localization audit PASS and terminology glossary published.",
+      "remaining": ""
+    },
+    {
+      "id": "16",
+      "family": "Content",
+      "name": "Compliance / Privacy / Source Rights",
+      "role": "Compliance owner",
+      "status": "PASS",
+      "evidence": "Privacy, terms, and source-rights pages PASS and source harvest policy is classified.",
+      "remaining": ""
+    },
+    {
+      "id": "17",
+      "family": "Discovery & Ops",
+      "name": "SEO & Discoverability",
+      "role": "SEO specialist",
+      "status": "PASS",
+      "evidence": "Launch preflight includes sitemap, structured data, SEO content, production domain, AI search readiness, and launch sweep checks.",
+      "remaining": ""
+    },
+    {
+      "id": "18",
+      "family": "Discovery & Ops",
+      "name": "Observability & Monitoring",
+      "role": "SRE",
+      "status": "PASS",
+      "evidence": "Operations readiness PASS: analytics, owner command center, alert scripts, monitoring plan, and incident runbook verified.",
+      "remaining": ""
+    },
+    {
+      "id": "19",
+      "family": "Discovery & Ops",
+      "name": "Analytics & Instrumentation",
+      "role": "Analytics engineer",
+      "status": "PASS",
+      "evidence": "Analytics status PASS; regression excludes owner pages and tracks critical events.",
+      "remaining": ""
+    },
+    {
+      "id": "20",
+      "family": "Discovery & Ops",
+      "name": "Notifications & Deliverability",
+      "role": "Communications engineer",
+      "status": "N/A",
+      "evidence": "Current public static product does not send transactional email/SMS/WhatsApp.",
+      "remaining": "Reopen when organizer accounts, reminders, or submissions send messages."
+    },
+    {
+      "id": "21",
+      "family": "Release",
+      "name": "Release / Deploy / Rollback / DR",
+      "role": "Release manager / DevOps",
+      "status": "PARTIAL",
+      "evidence": "Release/deploy/rollback audit is PARTIAL and lists remaining external deployment evidence.",
+      "remaining": "Perform owner-approved staging/commit/push, verify GitHub Actions, verify eventme.live publicly, and record rollback drill evidence."
+    },
+    {
+      "id": "22",
+      "family": "Release",
+      "name": "Documentation",
+      "role": "Technical writer",
+      "status": "PASS",
+      "evidence": "Documentation audit PASS: visitor, organizer, owner operations, incident runbook, readiness playbook, and terminology glossary are present.",
+      "remaining": ""
+    },
+    {
+      "id": "23",
+      "family": "Release",
+      "name": "Final Sign-offs",
+      "role": "Release owner",
+      "status": "OWNER_RESERVED",
+      "evidence": "Requires owner approval after all non-reserved gates are PASS or explicitly accepted.",
+      "remaining": "Owner sign-off is intentionally not automated."
+    }
+  ]
+}

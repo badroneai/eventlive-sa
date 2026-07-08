@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T23:31:04.157Z",
+  "generated_at": "2026-07-08T01:40:00.463Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "timezone": "Asia/Riyadh",
@@ -73,8 +73,8 @@
       "category_url": "./categories/sports.html",
       "city_url": "./cities/thuwal.html",
       "canonical_url": "https://eventme.live/events/event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone.html",
-      "minutes_to_start": 2459,
-      "minutes_to_end": 2728
+      "minutes_to_start": 2330,
+      "minutes_to_end": 2599
     },
     "ongoing_program": {
       "id": "event-poppy-playtime",
@@ -134,8 +134,8 @@
       "category_url": "./categories/entertainment-families.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-poppy-playtime.html",
-      "minutes_to_start": -389431,
-      "minutes_to_end": 221608
+      "minutes_to_start": -389560,
+      "minutes_to_end": 221479
     },
     "next_ready_event": {
       "id": "event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone",
@@ -195,8 +195,8 @@
       "category_url": "./categories/sports.html",
       "city_url": "./cities/thuwal.html",
       "canonical_url": "https://eventme.live/events/event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone.html",
-      "minutes_to_start": 2459,
-      "minutes_to_end": 2728
+      "minutes_to_start": 2330,
+      "minutes_to_end": 2599
     }
   },
   "events": [
@@ -258,12 +258,12 @@
       "category_url": "./categories/sports.html",
       "city_url": "./cities/thuwal.html",
       "canonical_url": "https://eventme.live/events/event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone.html",
-      "minutes_to_start": 2459,
-      "minutes_to_end": 2728,
+      "minutes_to_start": 2330,
+      "minutes_to_end": 2599,
       "action_url": "./events/event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80995082
+      "priority_score": 80995340
     },
     {
       "id": "demo-event",
@@ -347,12 +347,12 @@
       "category_url": "./categories/conference-forum.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/demo-event.html",
-      "minutes_to_start": 3269,
-      "minutes_to_end": 3569,
+      "minutes_to_start": 3140,
+      "minutes_to_end": 3440,
       "action_url": "./events/demo-event.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80993462
+      "priority_score": 80993720
     },
     {
       "id": "event-beast-house",
@@ -412,12 +412,12 @@
       "category_url": "./categories/entertainment-families.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-beast-house.html",
-      "minutes_to_start": 3989,
-      "minutes_to_end": 4349,
+      "minutes_to_start": 3860,
+      "minutes_to_end": 4220,
       "action_url": "./events/event-beast-house.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80992022
+      "priority_score": 80992280
     },
     {
       "id": "event-join-us-at-kaust-health-for-respiratory-health-day",
@@ -477,12 +477,12 @@
       "category_url": "./categories/regulatory-workshop.html",
       "city_url": "./cities/thuwal.html",
       "canonical_url": "https://eventme.live/events/event-join-us-at-kaust-health-for-respiratory-health-day.html",
-      "minutes_to_start": 6269,
-      "minutes_to_end": 6389,
+      "minutes_to_start": 6140,
+      "minutes_to_end": 6260,
       "action_url": "./events/event-join-us-at-kaust-health-for-respiratory-health-day.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80987462
+      "priority_score": 80987720
     },
     {
       "id": "event-semi-finals-join-the-celebration-at-the-fifa-fan-zone",
@@ -542,12 +542,12 @@
       "category_url": "./categories/sports.html",
       "city_url": "./cities/thuwal.html",
       "canonical_url": "https://eventme.live/events/event-semi-finals-join-the-celebration-at-the-fifa-fan-zone.html",
-      "minutes_to_start": 9749,
-      "minutes_to_end": 9928,
+      "minutes_to_start": 9620,
+      "minutes_to_end": 9799,
       "action_url": "./events/event-semi-finals-join-the-celebration-at-the-fifa-fan-zone.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80980502
+      "priority_score": 80980760
     },
     {
       "id": "event-متطلبات-الاستخدام-الآمن-للأجهزة-والمستلزمات-الطبية-لمراكز-الأسنان",
@@ -607,12 +607,12 @@
       "category_url": "./categories/regulatory-workshop.html",
       "city_url": "./cities/online.html",
       "canonical_url": "https://eventme.live/events/event-متطلبات-الاستخدام-الآمن-للأجهزة-والمستلزمات-الطبية-لمراكز-الأسنان.html",
-      "minutes_to_start": 10529,
-      "minutes_to_end": 10589,
+      "minutes_to_start": 10400,
+      "minutes_to_end": 10460,
       "action_url": "./events/event-متطلبات-الاستخدام-الآمن-للأجهزة-والمستلزمات-الطبية-لمراكز-الأسنان.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80978942
+      "priority_score": 80979200
     },
     {
       "id": "event-fifa-world-cup-2026-final-celebrate-footballs-biggest-night-at-the-kaust",
@@ -672,12 +672,12 @@
       "category_url": "./categories/sports.html",
       "city_url": "./cities/thuwal.html",
       "canonical_url": "https://eventme.live/events/event-fifa-world-cup-2026-final-celebrate-footballs-biggest-night-at-the-kaust.html",
-      "minutes_to_start": 16769,
-      "minutes_to_end": 17128,
+      "minutes_to_start": 16640,
+      "minutes_to_end": 16999,
       "action_url": "./events/event-fifa-world-cup-2026-final-celebrate-footballs-biggest-night-at-the-kaust.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80966462
+      "priority_score": 80966720
     },
     {
       "id": "event-دور-مقدمي-الرعاية-الصحية-وضباط-الاتصال-في-التعامل-مع-انذارات-السلامة-الص",
@@ -737,12 +737,12 @@
       "category_url": "./categories/regulatory-workshop.html",
       "city_url": "./cities/online.html",
       "canonical_url": "https://eventme.live/events/event-دور-مقدمي-الرعاية-الصحية-وضباط-الاتصال-في-التعامل-مع-انذارات-السلامة-الص.html",
-      "minutes_to_start": 19169,
-      "minutes_to_end": 19229,
+      "minutes_to_start": 19040,
+      "minutes_to_end": 19100,
       "action_url": "./events/event-دور-مقدمي-الرعاية-الصحية-وضباط-الاتصال-في-التعامل-مع-انذارات-السلامة-الص.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80961662
+      "priority_score": 80961920
     },
     {
       "id": "event-الإدراج-في-خطوات",
@@ -802,12 +802,12 @@
       "category_url": "./categories/regulatory-workshop.html",
       "city_url": "./cities/online.html",
       "canonical_url": "https://eventme.live/events/event-الإدراج-في-خطوات.html",
-      "minutes_to_start": 50849,
-      "minutes_to_end": 50969,
+      "minutes_to_start": 50720,
+      "minutes_to_end": 50840,
       "action_url": "./events/event-الإدراج-في-خطوات.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80898302
+      "priority_score": 80898560
     },
     {
       "id": "event-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة",
@@ -867,12 +867,12 @@
       "category_url": "./categories/regulatory-workshop.html",
       "city_url": "./cities/online.html",
       "canonical_url": "https://eventme.live/events/event-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة.html",
-      "minutes_to_start": 59489,
-      "minutes_to_end": 59549,
+      "minutes_to_start": 59360,
+      "minutes_to_end": 59420,
       "action_url": "./events/event-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80881022
+      "priority_score": 80881280
     },
     {
       "id": "event-offshore-technology-innovation-technical-conference-expo-offshore-arabia",
@@ -944,12 +944,12 @@
       "category_url": "./categories/conference-forum.html",
       "city_url": "./cities/dhahran.html",
       "canonical_url": "https://eventme.live/events/event-offshore-technology-innovation-technical-conference-expo-offshore-arabia.html",
-      "minutes_to_start": 68069,
-      "minutes_to_end": 71489,
+      "minutes_to_start": 67940,
+      "minutes_to_end": 71360,
       "action_url": "./events/event-offshore-technology-innovation-technical-conference-expo-offshore-arabia.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80863862
+      "priority_score": 80864120
     },
     {
       "id": "event-saudi-logistic-038-warehousing-expo",
@@ -1021,12 +1021,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-saudi-logistic-038-warehousing-expo.html",
-      "minutes_to_start": 76709,
-      "minutes_to_end": 80129,
+      "minutes_to_start": 76580,
+      "minutes_to_end": 80000,
       "action_url": "./events/event-saudi-logistic-038-warehousing-expo.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80846582
+      "priority_score": 80846840
     },
     {
       "id": "event-crafts-handicrafts-exhibition",
@@ -1104,12 +1104,12 @@
       "category_url": "./categories/chamber-event.html",
       "city_url": "./cities/dhahran.html",
       "canonical_url": "https://eventme.live/events/event-crafts-handicrafts-exhibition.html",
-      "minutes_to_start": 79589,
-      "minutes_to_end": 84449,
+      "minutes_to_start": 79460,
+      "minutes_to_end": 84320,
       "action_url": "./events/event-crafts-handicrafts-exhibition.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80840822
+      "priority_score": 80841080
     },
     {
       "id": "event-arabian-and-international-industries-exhibition",
@@ -1223,12 +1223,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/dhahran.html",
       "canonical_url": "https://eventme.live/events/event-arabian-and-international-industries-exhibition.html",
-      "minutes_to_start": 81029,
-      "minutes_to_end": 94529,
+      "minutes_to_start": 80900,
+      "minutes_to_end": 94400,
       "action_url": "./events/event-arabian-and-international-industries-exhibition.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80837942
+      "priority_score": 80838200
     },
     {
       "id": "event-inter-aviation-arabia",
@@ -1300,12 +1300,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-inter-aviation-arabia.html",
-      "minutes_to_start": 89669,
-      "minutes_to_end": 93089,
+      "minutes_to_start": 89540,
+      "minutes_to_end": 92960,
       "action_url": "./events/event-inter-aviation-arabia.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80820662
+      "priority_score": 80820920
     },
     {
       "id": "event-fibo-2026",
@@ -1377,12 +1377,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-fibo-2026.html",
-      "minutes_to_start": 89669,
-      "minutes_to_end": 93089,
+      "minutes_to_start": 89540,
+      "minutes_to_end": 92960,
       "action_url": "./events/event-fibo-2026.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80820662
+      "priority_score": 80820920
     },
     {
       "id": "event-static-equipment-engineering-maintenance-technical-conference-expo-state",
@@ -1454,12 +1454,12 @@
       "category_url": "./categories/conference-forum.html",
       "city_url": "./cities/dhahran.html",
       "canonical_url": "https://eventme.live/events/event-static-equipment-engineering-maintenance-technical-conference-expo-state.html",
-      "minutes_to_start": 89669,
-      "minutes_to_end": 93089,
+      "minutes_to_start": 89540,
+      "minutes_to_end": 92960,
       "action_url": "./events/event-static-equipment-engineering-maintenance-technical-conference-expo-state.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80820662
+      "priority_score": 80820920
     },
     {
       "id": "event-wtm-spotlight-riyadh",
@@ -1531,12 +1531,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-wtm-spotlight-riyadh.html",
-      "minutes_to_start": 89669,
-      "minutes_to_end": 93089,
+      "minutes_to_start": 89540,
+      "minutes_to_end": 92960,
       "action_url": "./events/event-wtm-spotlight-riyadh.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80820662
+      "priority_score": 80820920
     },
     {
       "id": "event-gulf-steel-storage-tank-refinery-expo",
@@ -1608,12 +1608,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/dhahran.html",
       "canonical_url": "https://eventme.live/events/event-gulf-steel-storage-tank-refinery-expo.html",
-      "minutes_to_start": 106949,
-      "minutes_to_end": 110369,
+      "minutes_to_start": 106820,
+      "minutes_to_end": 110240,
       "action_url": "./events/event-gulf-steel-storage-tank-refinery-expo.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80786102
+      "priority_score": 80786360
     },
     {
       "id": "event-the-egyptian-products-exhibition",
@@ -1703,12 +1703,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/dhahran.html",
       "canonical_url": "https://eventme.live/events/event-the-egyptian-products-exhibition.html",
-      "minutes_to_start": 112709,
-      "minutes_to_end": 120449,
+      "minutes_to_start": 112580,
+      "minutes_to_end": 120320,
       "action_url": "./events/event-the-egyptian-products-exhibition.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80774582
+      "priority_score": 80774840
     },
     {
       "id": "event-wadaef-exhibition",
@@ -1780,12 +1780,12 @@
       "category_url": "./categories/chamber-event.html",
       "city_url": "./cities/dhahran.html",
       "canonical_url": "https://eventme.live/events/event-wadaef-exhibition.html",
-      "minutes_to_start": 117029,
-      "minutes_to_end": 120449,
+      "minutes_to_start": 116900,
+      "minutes_to_end": 120320,
       "action_url": "./events/event-wadaef-exhibition.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80765942
+      "priority_score": 80766200
     },
     {
       "id": "event-natrual-expo",
@@ -1863,12 +1863,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-natrual-expo.html",
-      "minutes_to_start": 158789,
-      "minutes_to_end": 163649,
+      "minutes_to_start": 158660,
+      "minutes_to_end": 163520,
       "action_url": "./events/event-natrual-expo.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80682422
+      "priority_score": 80682680
     },
     {
       "id": "event-consumer-trade-fair",
@@ -1970,12 +1970,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/dhahran.html",
       "canonical_url": "https://eventme.live/events/event-consumer-trade-fair.html",
-      "minutes_to_start": 212069,
-      "minutes_to_end": 222689,
+      "minutes_to_start": 211940,
+      "minutes_to_end": 222560,
       "action_url": "./events/event-consumer-trade-fair.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80575862
+      "priority_score": 80576120
     },
     {
       "id": "event-dirayah-forum",
@@ -2047,12 +2047,12 @@
       "category_url": "./categories/awards-ceremonies.html",
       "city_url": "./cities/dhahran.html",
       "canonical_url": "https://eventme.live/events/event-dirayah-forum.html",
-      "minutes_to_start": 216389,
-      "minutes_to_end": 219809,
+      "minutes_to_start": 216260,
+      "minutes_to_end": 219680,
       "action_url": "./events/event-dirayah-forum.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80567222
+      "priority_score": 80567480
     },
     {
       "id": "event-emtec-the-environmental-management-technology-exhibitions-conference",
@@ -2124,12 +2124,12 @@
       "category_url": "./categories/conference-forum.html",
       "city_url": "./cities/dhahran.html",
       "canonical_url": "https://eventme.live/events/event-emtec-the-environmental-management-technology-exhibitions-conference.html",
-      "minutes_to_start": 219269,
-      "minutes_to_end": 222689,
+      "minutes_to_start": 219140,
+      "minutes_to_end": 222560,
       "action_url": "./events/event-emtec-the-environmental-management-technology-exhibitions-conference.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80561462
+      "priority_score": 80561720
     },
     {
       "id": "event-saudi-intl-construction-interior-design-cidex-2026",
@@ -2207,12 +2207,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/dhahran.html",
       "canonical_url": "https://eventme.live/events/event-saudi-intl-construction-interior-design-cidex-2026.html",
-      "minutes_to_start": 229349,
-      "minutes_to_end": 234209,
+      "minutes_to_start": 229220,
+      "minutes_to_end": 234080,
       "action_url": "./events/event-saudi-intl-construction-interior-design-cidex-2026.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80541302
+      "priority_score": 80541560
     },
     {
       "id": "event-china-homelife-saudi-arabia-2026",
@@ -2284,12 +2284,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-china-homelife-saudi-arabia-2026.html",
-      "minutes_to_start": 237989,
-      "minutes_to_end": 241409,
+      "minutes_to_start": 237860,
+      "minutes_to_end": 241280,
       "action_url": "./events/event-china-homelife-saudi-arabia-2026.html",
       "action_label": "فتح الجدول الحي",
       "priority_reason": "أقرب جدول حي جاهز",
-      "priority_score": 80524022
+      "priority_score": 80524280
     },
     {
       "id": "event-registration-now-open-for-children-at-the-childhood-studies-center-for-t",
@@ -2349,12 +2349,12 @@
       "category_url": "./categories/education-community.html",
       "city_url": "./cities/jeddah.html",
       "canonical_url": "https://eventme.live/events/event-registration-now-open-for-children-at-the-childhood-studies-center-for-t.html",
-      "minutes_to_start": -1051,
-      "minutes_to_end": 31169,
+      "minutes_to_start": -1180,
+      "minutes_to_end": 31040,
       "action_url": "./events/event-registration-now-open-for-children-at-the-childhood-studies-center-for-t.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70998949
+      "priority_score": 70998820
     },
     {
       "id": "event-esports-world-cup",
@@ -2414,12 +2414,12 @@
       "category_url": "./categories/gaming-esports.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-esports-world-cup.html",
-      "minutes_to_start": -2011,
-      "minutes_to_end": 67409,
+      "minutes_to_start": -2140,
+      "minutes_to_end": 67280,
       "action_url": "./events/event-esports-world-cup.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70997989
+      "priority_score": 70997860
     },
     {
       "id": "event-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية",
@@ -2479,12 +2479,12 @@
       "category_url": "./categories/regulatory-workshop.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية.html",
-      "minutes_to_start": -3391,
-      "minutes_to_end": 63029,
+      "minutes_to_start": -3520,
+      "minutes_to_end": 62900,
       "action_url": "./events/event-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70996609
+      "priority_score": 70996480
     },
     {
       "id": "event-registration-for-international-research-competition-on-non-terrestrial-n",
@@ -2544,12 +2544,12 @@
       "category_url": "./categories/science-space.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-registration-for-international-research-competition-on-non-terrestrial-n.html",
-      "minutes_to_start": -5910,
-      "minutes_to_end": 48804,
+      "minutes_to_start": -6039,
+      "minutes_to_end": 48675,
       "action_url": "./events/event-registration-for-international-research-competition-on-non-terrestrial-n.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70994090
+      "priority_score": 70993961
     },
     {
       "id": "event-prince-faisal-bin-fahd-art-exhibition-summer-2026",
@@ -2609,12 +2609,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-prince-faisal-bin-fahd-art-exhibition-summer-2026.html",
-      "minutes_to_start": -9271,
-      "minutes_to_end": 35729,
+      "minutes_to_start": -9400,
+      "minutes_to_end": 35600,
       "action_url": "./events/event-prince-faisal-bin-fahd-art-exhibition-summer-2026.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70990729
+      "priority_score": 70990600
     },
     {
       "id": "event-لقاءات-مراكز-دعم-المنشآت-شهر-يوليو-2026م-مغلقة",
@@ -2674,12 +2674,12 @@
       "category_url": "./categories/technology-training.html",
       "city_url": "./cities/saudi-arabia.html",
       "canonical_url": "https://eventme.live/events/event-لقاءات-مراكز-دعم-المنشآت-شهر-يوليو-2026م-مغلقة.html",
-      "minutes_to_start": -9691,
-      "minutes_to_end": 32609,
+      "minutes_to_start": -9820,
+      "minutes_to_end": 32480,
       "action_url": "./events/event-لقاءات-مراكز-دعم-المنشآت-شهر-يوليو-2026م-مغلقة.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70990309
+      "priority_score": 70990180
     },
     {
       "id": "event-لقاءات-مراكز-دعم-المنشآت",
@@ -2739,12 +2739,12 @@
       "category_url": "./categories/technology-training.html",
       "city_url": "./cities/saudi-arabia.html",
       "canonical_url": "https://eventme.live/events/event-لقاءات-مراكز-دعم-المنشآت.html",
-      "minutes_to_start": -9691,
-      "minutes_to_end": 32609,
+      "minutes_to_start": -9820,
+      "minutes_to_end": 32480,
       "action_url": "./events/event-لقاءات-مراكز-دعم-المنشآت.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70990309
+      "priority_score": 70990180
     },
     {
       "id": "event-art-futures-camp-2026-diriyah-art-futures",
@@ -2804,12 +2804,12 @@
       "category_url": "./categories/culture-arts.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-art-futures-camp-2026-diriyah-art-futures.html",
-      "minutes_to_start": -13951,
-      "minutes_to_end": 12389,
+      "minutes_to_start": -14080,
+      "minutes_to_end": 12260,
       "action_url": "./events/event-art-futures-camp-2026-diriyah-art-futures.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70986049
+      "priority_score": 70985920
     },
     {
       "id": "event-summer-camp-at-the-national-museum-summer-wonders",
@@ -2869,12 +2869,12 @@
       "category_url": "./categories/entertainment-families.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-summer-camp-at-the-national-museum-summer-wonders.html",
-      "minutes_to_start": -18001,
-      "minutes_to_end": 65879,
+      "minutes_to_start": -18130,
+      "minutes_to_end": 65750,
       "action_url": "./events/event-summer-camp-at-the-national-museum-summer-wonders.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70981999
+      "priority_score": 70981870
     },
     {
       "id": "event-aseer-season",
@@ -2934,12 +2934,12 @@
       "category_url": "./categories/sports.html",
       "city_url": "./cities/aseer.html",
       "canonical_url": "https://eventme.live/events/event-aseer-season.html",
-      "minutes_to_start": -18331,
-      "minutes_to_end": 80129,
+      "minutes_to_start": -18460,
+      "minutes_to_end": 80000,
       "action_url": "./events/event-aseer-season.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70981669
+      "priority_score": 70981540
     },
     {
       "id": "event-laysen-fan-zone-fifa-world-cup-2026",
@@ -2999,12 +2999,12 @@
       "category_url": "./categories/sports.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-laysen-fan-zone-fifa-world-cup-2026.html",
-      "minutes_to_start": -33571,
-      "minutes_to_end": 15749,
+      "minutes_to_start": -33700,
+      "minutes_to_end": 15620,
       "action_url": "./events/event-laysen-fan-zone-fifa-world-cup-2026.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70966429
+      "priority_score": 70966300
     },
     {
       "id": "event-ruh-space",
@@ -3064,12 +3064,12 @@
       "category_url": "./categories/sports.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-ruh-space.html",
-      "minutes_to_start": -35011,
-      "minutes_to_end": 15809,
+      "minutes_to_start": -35140,
+      "minutes_to_end": 15680,
       "action_url": "./events/event-ruh-space.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70964989
+      "priority_score": 70964860
     },
     {
       "id": "event-coca-cola-fan-zone-at-jax-district",
@@ -3129,12 +3129,12 @@
       "category_url": "./categories/sports.html",
       "city_url": "./cities/diriyah.html",
       "canonical_url": "https://eventme.live/events/event-coca-cola-fan-zone-at-jax-district.html",
-      "minutes_to_start": -37861,
-      "minutes_to_end": 15689,
+      "minutes_to_start": -37990,
+      "minutes_to_end": 15560,
       "action_url": "./events/event-coca-cola-fan-zone-at-jax-district.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70962139
+      "priority_score": 70962010
     },
     {
       "id": "event-sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026",
@@ -3194,12 +3194,12 @@
       "category_url": "./categories/sports.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026.html",
-      "minutes_to_start": -37891,
-      "minutes_to_end": 15749,
+      "minutes_to_start": -38020,
+      "minutes_to_end": 15620,
       "action_url": "./events/event-sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70962109
+      "priority_score": 70961980
     },
     {
       "id": "event-world-cup-2026-fan-zone-at-kimpton-kafd",
@@ -3259,12 +3259,12 @@
       "category_url": "./categories/sports.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-world-cup-2026-fan-zone-at-kimpton-kafd.html",
-      "minutes_to_start": -37891,
-      "minutes_to_end": 47429,
+      "minutes_to_start": -38020,
+      "minutes_to_end": 47300,
       "action_url": "./events/event-world-cup-2026-fan-zone-at-kimpton-kafd.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70962109
+      "priority_score": 70961980
     },
     {
       "id": "event-solitaire-fan-zone-fifa-world-cup-2026",
@@ -3324,12 +3324,12 @@
       "category_url": "./categories/gaming-esports.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-solitaire-fan-zone-fifa-world-cup-2026.html",
-      "minutes_to_start": -37891,
-      "minutes_to_end": 15809,
+      "minutes_to_start": -38020,
+      "minutes_to_end": 15680,
       "action_url": "./events/event-solitaire-fan-zone-fifa-world-cup-2026.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70962109
+      "priority_score": 70961980
     },
     {
       "id": "event-eishha-live-it-fan-zone-for-fifa-world-cup-2026",
@@ -3389,12 +3389,12 @@
       "category_url": "./categories/gaming-esports.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-eishha-live-it-fan-zone-for-fifa-world-cup-2026.html",
-      "minutes_to_start": -37951,
-      "minutes_to_end": 17124,
+      "minutes_to_start": -38080,
+      "minutes_to_end": 16995,
       "action_url": "./events/event-eishha-live-it-fan-zone-for-fifa-world-cup-2026.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70962049
+      "priority_score": 70961920
     },
     {
       "id": "event-coca-cola-fan-zone-for-fifa-world-cup-2026",
@@ -3454,12 +3454,12 @@
       "category_url": "./categories/gaming-esports.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-coca-cola-fan-zone-for-fifa-world-cup-2026.html",
-      "minutes_to_start": -37951,
-      "minutes_to_end": 15869,
+      "minutes_to_start": -38080,
+      "minutes_to_end": 15740,
       "action_url": "./events/event-coca-cola-fan-zone-for-fifa-world-cup-2026.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70962049
+      "priority_score": 70961920
     },
     {
       "id": "event-solo-art-exhibition-series",
@@ -3519,12 +3519,12 @@
       "category_url": "./categories/culture-arts.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-solo-art-exhibition-series.html",
-      "minutes_to_start": -89911,
-      "minutes_to_end": 35729,
+      "minutes_to_start": -90040,
+      "minutes_to_end": 35600,
       "action_url": "./events/event-solo-art-exhibition-series.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70910089
+      "priority_score": 70909960
     },
     {
       "id": "event-misk-local-traineeship-program",
@@ -3584,12 +3584,12 @@
       "category_url": "./categories/technology-training.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-misk-local-traineeship-program.html",
-      "minutes_to_start": -140731,
-      "minutes_to_end": 254369,
+      "minutes_to_start": -140860,
+      "minutes_to_end": 254240,
       "action_url": "./events/event-misk-local-traineeship-program.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70859269
+      "priority_score": 70859140
     },
     {
       "id": "event-horses-and-equestrian-heritage-exhibition",
@@ -3649,12 +3649,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-horses-and-equestrian-heritage-exhibition.html",
-      "minutes_to_start": -191821,
-      "minutes_to_end": 77604,
+      "minutes_to_start": -191950,
+      "minutes_to_end": 77475,
       "action_url": "./events/event-horses-and-equestrian-heritage-exhibition.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70808179
+      "priority_score": 70808050
     },
     {
       "id": "event-arabic-language-exhibition-28",
@@ -3714,12 +3714,12 @@
       "category_url": "./categories/culture-arts.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-arabic-language-exhibition-28.html",
-      "minutes_to_start": -270391,
-      "minutes_to_end": 254249,
+      "minutes_to_start": -270520,
+      "minutes_to_end": 254120,
       "action_url": "./events/event-arabic-language-exhibition-28.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70729609
+      "priority_score": 70729480
     },
     {
       "id": "event-arabic-language-exhibition-for-kids",
@@ -3779,12 +3779,12 @@
       "category_url": "./categories/culture-arts.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-arabic-language-exhibition-for-kids.html",
-      "minutes_to_start": -270391,
-      "minutes_to_end": 254249,
+      "minutes_to_start": -270520,
+      "minutes_to_end": 254120,
       "action_url": "./events/event-arabic-language-exhibition-for-kids.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70729609
+      "priority_score": 70729480
     },
     {
       "id": "event-immersive-experience-flying-over-saudi",
@@ -3844,12 +3844,12 @@
       "category_url": "./categories/sports.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-immersive-experience-flying-over-saudi.html",
-      "minutes_to_start": -281411,
-      "minutes_to_end": 244609,
+      "minutes_to_start": -281540,
+      "minutes_to_end": 244480,
       "action_url": "./events/event-immersive-experience-flying-over-saudi.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70718589
+      "priority_score": 70718460
     },
     {
       "id": "event-the-groves",
@@ -3909,12 +3909,12 @@
       "category_url": "./categories/entertainment-families.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-the-groves.html",
-      "minutes_to_start": -351991,
-      "minutes_to_end": 15809,
+      "minutes_to_start": -352120,
+      "minutes_to_end": 15680,
       "action_url": "./events/event-the-groves.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70648009
+      "priority_score": 70647880
     },
     {
       "id": "event-poppy-playtime",
@@ -3974,12 +3974,12 @@
       "category_url": "./categories/entertainment-families.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-poppy-playtime.html",
-      "minutes_to_start": -389431,
-      "minutes_to_end": 221608,
+      "minutes_to_start": -389560,
+      "minutes_to_end": 221479,
       "action_url": "./events/event-poppy-playtime.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70610569
+      "priority_score": 70610440
     },
     {
       "id": "event-riyadh-season-blvd-city",
@@ -4039,12 +4039,12 @@
       "category_url": "./categories/gaming-esports.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-riyadh-season-blvd-city.html",
-      "minutes_to_start": -389431,
-      "minutes_to_end": 133889,
+      "minutes_to_start": -389560,
+      "minutes_to_end": 133760,
       "action_url": "./events/event-riyadh-season-blvd-city.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 70610569
+      "priority_score": 70610440
     },
     {
       "id": "event-unstable",
@@ -4104,12 +4104,12 @@
       "category_url": "./categories/entertainment-families.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-unstable.html",
-      "minutes_to_start": 2729,
-      "minutes_to_end": 4169,
+      "minutes_to_start": 2600,
+      "minutes_to_end": 4040,
       "action_url": "./events/event-unstable.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30994542
+      "priority_score": 30994800
     },
     {
       "id": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي",
@@ -4169,12 +4169,12 @@
       "category_url": "./categories/technology-training.html",
       "city_url": "./cities/online.html",
       "canonical_url": "https://eventme.live/events/event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي.html",
-      "minutes_to_start": 6149,
-      "minutes_to_end": 9569,
+      "minutes_to_start": 6020,
+      "minutes_to_end": 9440,
       "action_url": "./events/event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30987702
+      "priority_score": 30987960
     },
     {
       "id": "event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م",
@@ -4234,12 +4234,12 @@
       "category_url": "./categories/technology-training.html",
       "city_url": "./cities/saudi-arabia.html",
       "canonical_url": "https://eventme.live/events/event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م.html",
-      "minutes_to_start": 6149,
-      "minutes_to_end": 12449,
+      "minutes_to_start": 6020,
+      "minutes_to_end": 12320,
       "action_url": "./events/event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30987702
+      "priority_score": 30987960
     },
     {
       "id": "event-دورة-comptia-a",
@@ -4299,12 +4299,12 @@
       "category_url": "./categories/technology-training.html",
       "city_url": "./cities/online.html",
       "canonical_url": "https://eventme.live/events/event-دورة-comptia-a.html",
-      "minutes_to_start": 6149,
-      "minutes_to_end": 12449,
+      "minutes_to_start": 6020,
+      "minutes_to_end": 12320,
       "action_url": "./events/event-دورة-comptia-a.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30987702
+      "priority_score": 30987960
     },
     {
       "id": "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي",
@@ -4364,12 +4364,12 @@
       "category_url": "./categories/technology-training.html",
       "city_url": "./cities/online.html",
       "canonical_url": "https://eventme.live/events/event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي.html",
-      "minutes_to_start": 6149,
-      "minutes_to_end": 9569,
+      "minutes_to_start": 6020,
+      "minutes_to_end": 9440,
       "action_url": "./events/event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30987702
+      "priority_score": 30987960
     },
     {
       "id": "event-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي",
@@ -4429,12 +4429,12 @@
       "category_url": "./categories/regulatory-workshop.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي.html",
-      "minutes_to_start": 6209,
-      "minutes_to_end": 82829,
+      "minutes_to_start": 6080,
+      "minutes_to_end": 82700,
       "action_url": "./events/event-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30987582
+      "priority_score": 30987840
     },
     {
       "id": "event-saif-summer-program",
@@ -4494,12 +4494,12 @@
       "category_url": "./categories/culture-arts.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-saif-summer-program.html",
-      "minutes_to_start": 6629,
-      "minutes_to_end": 75989,
+      "minutes_to_start": 6500,
+      "minutes_to_end": 75860,
       "action_url": "./events/event-saif-summer-program.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30986742
+      "priority_score": 30987000
     },
     {
       "id": "event-معسكر-هندسة-الدرونز-التطبيقي",
@@ -4559,12 +4559,12 @@
       "category_url": "./categories/regulatory-workshop.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-معسكر-هندسة-الدرونز-التطبيقي.html",
-      "minutes_to_start": 6689,
-      "minutes_to_end": 63029,
+      "minutes_to_start": 6560,
+      "minutes_to_end": 62900,
       "action_url": "./events/event-معسكر-هندسة-الدرونز-التطبيقي.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30986622
+      "priority_score": 30986880
     },
     {
       "id": "event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials",
@@ -4624,12 +4624,12 @@
       "category_url": "./categories/technology-training.html",
       "city_url": "./cities/online.html",
       "canonical_url": "https://eventme.live/events/event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials.html",
-      "minutes_to_start": 7589,
-      "minutes_to_end": 11009,
+      "minutes_to_start": 7460,
+      "minutes_to_end": 10880,
       "action_url": "./events/event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30984822
+      "priority_score": 30985080
     },
     {
       "id": "event-samsung-innovation-campus-ai-program",
@@ -4689,12 +4689,12 @@
       "category_url": "./categories/technology-training.html",
       "city_url": "./cities/online.html",
       "canonical_url": "https://eventme.live/events/event-samsung-innovation-campus-ai-program.html",
-      "minutes_to_start": 7589,
-      "minutes_to_end": 95969,
+      "minutes_to_start": 7460,
+      "minutes_to_end": 95840,
       "action_url": "./events/event-samsung-innovation-campus-ai-program.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30984822
+      "priority_score": 30985080
     },
     {
       "id": "event-معسكر-تصميم-وتصنيع-الحلول-الهندسية",
@@ -4754,12 +4754,12 @@
       "category_url": "./categories/regulatory-workshop.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-معسكر-تصميم-وتصنيع-الحلول-الهندسية.html",
-      "minutes_to_start": 16709,
-      "minutes_to_end": 143669,
+      "minutes_to_start": 16580,
+      "minutes_to_end": 143540,
       "action_url": "./events/event-معسكر-تصميم-وتصنيع-الحلول-الهندسية.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30966582
+      "priority_score": 30966840
     },
     {
       "id": "event-summer-splash-running-event",
@@ -4819,12 +4819,12 @@
       "category_url": "./categories/sports.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-summer-splash-running-event.html",
-      "minutes_to_start": 24629,
-      "minutes_to_end": 24749,
+      "minutes_to_start": 24500,
+      "minutes_to_end": 24620,
       "action_url": "./events/event-summer-splash-running-event.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30950742
+      "priority_score": 30951000
     },
     {
       "id": "event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي",
@@ -4884,12 +4884,12 @@
       "category_url": "./categories/regulatory-workshop.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي.html",
-      "minutes_to_start": 26369,
-      "minutes_to_end": 143309,
+      "minutes_to_start": 26240,
+      "minutes_to_end": 143180,
       "action_url": "./events/event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30947262
+      "priority_score": 30947520
     },
     {
       "id": "event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل",
@@ -4949,12 +4949,12 @@
       "category_url": "./categories/education-community.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل.html",
-      "minutes_to_start": 26789,
-      "minutes_to_end": 63029,
+      "minutes_to_start": 26660,
+      "minutes_to_end": 62900,
       "action_url": "./events/event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30946422
+      "priority_score": 30946680
     },
     {
       "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-3",
@@ -5014,12 +5014,12 @@
       "category_url": "./categories/regulatory-workshop.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-3.html",
-      "minutes_to_start": 26819,
-      "minutes_to_end": 143699,
+      "minutes_to_start": 26690,
+      "minutes_to_end": 143570,
       "action_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-3.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30946362
+      "priority_score": 30946620
     },
     {
       "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python",
@@ -5079,12 +5079,12 @@
       "category_url": "./categories/regulatory-workshop.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python.html",
-      "minutes_to_start": 26819,
-      "minutes_to_end": 143699,
+      "minutes_to_start": 26690,
+      "minutes_to_end": 143570,
       "action_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30946362
+      "priority_score": 30946620
     },
     {
       "id": "event-entrepreneur-leadership-excellence-program",
@@ -5144,12 +5144,12 @@
       "category_url": "./categories/technology-training.html",
       "city_url": "./cities/saudi-arabia.html",
       "canonical_url": "https://eventme.live/events/event-entrepreneur-leadership-excellence-program.html",
-      "minutes_to_start": 27749,
-      "minutes_to_end": 31169,
+      "minutes_to_start": 27620,
+      "minutes_to_end": 31040,
       "action_url": "./events/event-entrepreneur-leadership-excellence-program.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30944502
+      "priority_score": 30944760
     },
     {
       "id": "event-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات",
@@ -5209,12 +5209,12 @@
       "category_url": "./categories/regulatory-workshop.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات.html",
-      "minutes_to_start": 36389,
-      "minutes_to_end": 133229,
+      "minutes_to_start": 36260,
+      "minutes_to_end": 133100,
       "action_url": "./events/event-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30927222
+      "priority_score": 30927480
     },
     {
       "id": "event-معسكر-طويق-للقطاع-الأمني-البنية-التحتية",
@@ -5274,12 +5274,12 @@
       "category_url": "./categories/regulatory-workshop.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-معسكر-طويق-للقطاع-الأمني-البنية-التحتية.html",
-      "minutes_to_start": 36389,
-      "minutes_to_end": 123149,
+      "minutes_to_start": 36260,
+      "minutes_to_end": 123020,
       "action_url": "./events/event-معسكر-طويق-للقطاع-الأمني-البنية-التحتية.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30927222
+      "priority_score": 30927480
     },
     {
       "id": "event-nonprofit-sector-skills-program",
@@ -5339,12 +5339,12 @@
       "category_url": "./categories/technology-training.html",
       "city_url": "./cities/online.html",
       "canonical_url": "https://eventme.live/events/event-nonprofit-sector-skills-program.html",
-      "minutes_to_start": 37829,
-      "minutes_to_end": 101729,
+      "minutes_to_start": 37700,
+      "minutes_to_end": 101600,
       "action_url": "./events/event-nonprofit-sector-skills-program.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30924342
+      "priority_score": 30924600
     },
     {
       "id": "event-international-falcon-breeders-auction",
@@ -5404,12 +5404,12 @@
       "category_url": "./categories/entertainment-families.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-international-falcon-breeders-auction.html",
-      "minutes_to_start": 41129,
-      "minutes_to_end": 70349,
+      "minutes_to_start": 41000,
+      "minutes_to_end": 70220,
       "action_url": "./events/event-international-falcon-breeders-auction.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30917742
+      "priority_score": 30918000
     },
     {
       "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-2",
@@ -5469,12 +5469,12 @@
       "category_url": "./categories/regulatory-workshop.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-2.html",
-      "minutes_to_start": 46409,
-      "minutes_to_end": 183449,
+      "minutes_to_start": 46280,
+      "minutes_to_end": 183320,
       "action_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-2.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30907182
+      "priority_score": 30907440
     },
     {
       "id": "event-معسكر-الأنظمة-الذاتية-للدرونز",
@@ -5534,12 +5534,12 @@
       "category_url": "./categories/education-community.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-معسكر-الأنظمة-الذاتية-للدرونز.html",
-      "minutes_to_start": 47009,
-      "minutes_to_end": 93269,
+      "minutes_to_start": 46880,
+      "minutes_to_end": 93140,
       "action_url": "./events/event-معسكر-الأنظمة-الذاتية-للدرونز.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30905982
+      "priority_score": 30906240
     },
     {
       "id": "event-معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine",
@@ -5599,12 +5599,12 @@
       "category_url": "./categories/regulatory-workshop.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine.html",
-      "minutes_to_start": 56969,
-      "minutes_to_end": 173909,
+      "minutes_to_start": 56840,
+      "minutes_to_end": 173780,
       "action_url": "./events/event-معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30886062
+      "priority_score": 30886320
     },
     {
       "id": "event-معسكر-تصميم-تجربة-المستخدم-ux-ui",
@@ -5664,12 +5664,12 @@
       "category_url": "./categories/regulatory-workshop.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-معسكر-تصميم-تجربة-المستخدم-ux-ui.html",
-      "minutes_to_start": 66689,
-      "minutes_to_end": 143309,
+      "minutes_to_start": 66560,
+      "minutes_to_end": 143180,
       "action_url": "./events/event-معسكر-تصميم-تجربة-المستخدم-ux-ui.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30866622
+      "priority_score": 30866880
     },
     {
       "id": "event-معسكر-طويق-السيبراني",
@@ -5729,12 +5729,12 @@
       "category_url": "./categories/education-community.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-معسكر-طويق-السيبراني.html",
-      "minutes_to_start": 66689,
-      "minutes_to_end": 264269,
+      "minutes_to_start": 66560,
+      "minutes_to_end": 264140,
       "action_url": "./events/event-معسكر-طويق-السيبراني.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30866622
+      "priority_score": 30866880
     },
     {
       "id": "event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud",
@@ -5794,12 +5794,12 @@
       "category_url": "./categories/education-community.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud.html",
-      "minutes_to_start": 66749,
-      "minutes_to_end": 102989,
+      "minutes_to_start": 66620,
+      "minutes_to_end": 102860,
       "action_url": "./events/event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30866502
+      "priority_score": 30866760
     },
     {
       "id": "event-معسكر-اختبار-البرمجيات-والأتمتة",
@@ -5859,12 +5859,12 @@
       "category_url": "./categories/regulatory-workshop.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-معسكر-اختبار-البرمجيات-والأتمتة.html",
-      "minutes_to_start": 67169,
-      "minutes_to_end": 143729,
+      "minutes_to_start": 67040,
+      "minutes_to_end": 143600,
       "action_url": "./events/event-معسكر-اختبار-البرمجيات-والأتمتة.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30865662
+      "priority_score": 30865920
     },
     {
       "id": "event-معسكر-أساسيات-الأمن-السيبراني",
@@ -5924,12 +5924,12 @@
       "category_url": "./categories/regulatory-workshop.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-معسكر-أساسيات-الأمن-السيبراني.html",
-      "minutes_to_start": 67169,
-      "minutes_to_end": 103349,
+      "minutes_to_start": 67040,
+      "minutes_to_end": 103220,
       "action_url": "./events/event-معسكر-أساسيات-الأمن-السيبراني.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30865662
+      "priority_score": 30865920
     },
     {
       "id": "event-merath-middle-east-museums-heritage-expo",
@@ -5989,12 +5989,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-merath-middle-east-museums-heritage-expo.html",
-      "minutes_to_start": 77069,
-      "minutes_to_end": 80309,
+      "minutes_to_start": 76940,
+      "minutes_to_end": 80180,
       "action_url": "./events/event-merath-middle-east-museums-heritage-expo.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30845862
+      "priority_score": 30846120
     },
     {
       "id": "event-saudi-light-and-sound-sls-expo",
@@ -6054,12 +6054,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-saudi-light-and-sound-sls-expo.html",
-      "minutes_to_start": 77069,
-      "minutes_to_end": 80309,
+      "minutes_to_start": 76940,
+      "minutes_to_end": 80180,
       "action_url": "./events/event-saudi-light-and-sound-sls-expo.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30845862
+      "priority_score": 30846120
     },
     {
       "id": "event-saudi-entertainment-and-amusement-expo",
@@ -6119,12 +6119,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-saudi-entertainment-and-amusement-expo.html",
-      "minutes_to_start": 77069,
-      "minutes_to_end": 80309,
+      "minutes_to_start": 76940,
+      "minutes_to_end": 80180,
       "action_url": "./events/event-saudi-entertainment-and-amusement-expo.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30845862
+      "priority_score": 30846120
     },
     {
       "id": "event-معسكر-هندسة-تطبيقات-الذكاء-الاصطناعي-التوليدي-باستخدام-النماذج-اللغوية-ا",
@@ -6184,12 +6184,12 @@
       "category_url": "./categories/regulatory-workshop.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-معسكر-هندسة-تطبيقات-الذكاء-الاصطناعي-التوليدي-باستخدام-النماذج-اللغوية-ا.html",
-      "minutes_to_start": 77129,
-      "minutes_to_end": 133529,
+      "minutes_to_start": 77000,
+      "minutes_to_end": 133400,
       "action_url": "./events/event-معسكر-هندسة-تطبيقات-الذكاء-الاصطناعي-التوليدي-باستخدام-النماذج-اللغوية-ا.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30845742
+      "priority_score": 30846000
     },
     {
       "id": "event-saudi-warehousing-logistics-expo",
@@ -6249,12 +6249,12 @@
       "category_url": "./categories/conference-forum.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-saudi-warehousing-logistics-expo.html",
-      "minutes_to_start": 77159,
-      "minutes_to_end": 80309,
+      "minutes_to_start": 77030,
+      "minutes_to_end": 80180,
       "action_url": "./events/event-saudi-warehousing-logistics-expo.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30845682
+      "priority_score": 30845940
     },
     {
       "id": "event-leap-2026",
@@ -6314,12 +6314,12 @@
       "category_url": "./categories/entertainment-families.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-leap-2026.html",
-      "minutes_to_start": 78149,
-      "minutes_to_end": 82949,
+      "minutes_to_start": 78020,
+      "minutes_to_end": 82820,
       "action_url": "./events/event-leap-2026.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30843702
+      "priority_score": 30843960
     },
     {
       "id": "event-saudi-woodshow",
@@ -6379,12 +6379,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-saudi-woodshow.html",
-      "minutes_to_start": 79829,
-      "minutes_to_end": 83249,
+      "minutes_to_start": 79700,
+      "minutes_to_end": 83120,
       "action_url": "./events/event-saudi-woodshow.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30840342
+      "priority_score": 30840600
     },
     {
       "id": "event-معرض-الحرف-والأعمال-اليدوية-2026",
@@ -6444,12 +6444,12 @@
       "category_url": "./categories/chamber-event.html",
       "city_url": "./cities/dhahran.html",
       "canonical_url": "https://eventme.live/events/event-معرض-الحرف-والأعمال-اليدوية-2026.html",
-      "minutes_to_start": 80009,
-      "minutes_to_end": 84329,
+      "minutes_to_start": 79880,
+      "minutes_to_end": 84200,
       "action_url": "./events/event-معرض-الحرف-والأعمال-اليدوية-2026.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30839982
+      "priority_score": 30840240
     },
     {
       "id": "event-the-innovation-diwan",
@@ -6509,12 +6509,12 @@
       "category_url": "./categories/education-community.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-the-innovation-diwan.html",
-      "minutes_to_start": 85349,
-      "minutes_to_end": 299009,
+      "minutes_to_start": 85220,
+      "minutes_to_end": 298880,
       "action_url": "./events/event-the-innovation-diwan.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30829302
+      "priority_score": 30829560
     },
     {
       "id": "event-saudi-food-manufacturing-show",
@@ -6574,12 +6574,12 @@
       "category_url": "./categories/conference-forum.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-saudi-food-manufacturing-show.html",
-      "minutes_to_start": 85649,
-      "minutes_to_end": 89009,
+      "minutes_to_start": 85520,
+      "minutes_to_end": 88880,
       "action_url": "./events/event-saudi-food-manufacturing-show.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30828702
+      "priority_score": 30828960
     },
     {
       "id": "event-misk-launchpad",
@@ -6639,12 +6639,12 @@
       "category_url": "./categories/technology-training.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-misk-launchpad.html",
-      "minutes_to_start": 86789,
-      "minutes_to_end": 257249,
+      "minutes_to_start": 86660,
+      "minutes_to_end": 257120,
       "action_url": "./events/event-misk-launchpad.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30826422
+      "priority_score": 30826680
     },
     {
       "id": "event-index-saudi-arabia-interior-design-trade-show",
@@ -6704,12 +6704,12 @@
       "category_url": "./categories/conference-forum.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-index-saudi-arabia-interior-design-trade-show.html",
-      "minutes_to_start": 87209,
-      "minutes_to_end": 90449,
+      "minutes_to_start": 87080,
+      "minutes_to_end": 90320,
       "action_url": "./events/event-index-saudi-arabia-interior-design-trade-show.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30825582
+      "priority_score": 30825840
     },
     {
       "id": "event-lighting-design-technology-expo",
@@ -6769,12 +6769,12 @@
       "category_url": "./categories/conference-forum.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-lighting-design-technology-expo.html",
-      "minutes_to_start": 87209,
-      "minutes_to_end": 90449,
+      "minutes_to_start": 87080,
+      "minutes_to_end": 90320,
       "action_url": "./events/event-lighting-design-technology-expo.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30825582
+      "priority_score": 30825840
     },
     {
       "id": "event-fibo-arabia-2026",
@@ -6834,12 +6834,12 @@
       "category_url": "./categories/entertainment-families.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-fibo-arabia-2026.html",
-      "minutes_to_start": 89909,
-      "minutes_to_end": 93329,
+      "minutes_to_start": 89780,
+      "minutes_to_end": 93200,
       "action_url": "./events/event-fibo-arabia-2026.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30820182
+      "priority_score": 30820440
     },
     {
       "id": "event-saudi-wood-expo",
@@ -6899,12 +6899,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-saudi-wood-expo.html",
-      "minutes_to_start": 90029,
-      "minutes_to_end": 93269,
+      "minutes_to_start": 89900,
+      "minutes_to_end": 93140,
       "action_url": "./events/event-saudi-wood-expo.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30819942
+      "priority_score": 30820200
     },
     {
       "id": "event-saudi-industrial-series",
@@ -6964,12 +6964,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-saudi-industrial-series.html",
-      "minutes_to_start": 90029,
-      "minutes_to_end": 93269,
+      "minutes_to_start": 89900,
+      "minutes_to_end": 93140,
       "action_url": "./events/event-saudi-industrial-series.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30819942
+      "priority_score": 30820200
     },
     {
       "id": "event-hotel-hospitality-expo",
@@ -7029,12 +7029,12 @@
       "category_url": "./categories/conference-forum.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-hotel-hospitality-expo.html",
-      "minutes_to_start": 97289,
-      "minutes_to_end": 100529,
+      "minutes_to_start": 97160,
+      "minutes_to_end": 100400,
       "action_url": "./events/event-hotel-hospitality-expo.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30805422
+      "priority_score": 30805680
     },
     {
       "id": "event-global-forum-on-the-ethics-of-ai",
@@ -7094,12 +7094,12 @@
       "category_url": "./categories/conference-forum.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-global-forum-on-the-ethics-of-ai.html",
-      "minutes_to_start": 98309,
-      "minutes_to_end": 103169,
+      "minutes_to_start": 98180,
+      "minutes_to_end": 103040,
       "action_url": "./events/event-global-forum-on-the-ethics-of-ai.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30803382
+      "priority_score": 30803640
     },
     {
       "id": "event-money20-20-middle-east",
@@ -7159,12 +7159,12 @@
       "category_url": "./categories/education-community.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-money20-20-middle-east.html",
-      "minutes_to_start": 98309,
-      "minutes_to_end": 101669,
+      "minutes_to_start": 98180,
+      "minutes_to_end": 101540,
       "action_url": "./events/event-money20-20-middle-east.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30803382
+      "priority_score": 30803640
     },
     {
       "id": "event-riyadh-global-medical-biotechnology-summit",
@@ -7224,12 +7224,12 @@
       "category_url": "./categories/conference-forum.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-riyadh-global-medical-biotechnology-summit.html",
-      "minutes_to_start": 98339,
-      "minutes_to_end": 101549,
+      "minutes_to_start": 98210,
+      "minutes_to_end": 101420,
       "action_url": "./events/event-riyadh-global-medical-biotechnology-summit.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30803322
+      "priority_score": 30803580
     },
     {
       "id": "event-global-infrastructure-expo",
@@ -7289,12 +7289,12 @@
       "category_url": "./categories/awards-ceremonies.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-global-infrastructure-expo.html",
-      "minutes_to_start": 99449,
-      "minutes_to_end": 102689,
+      "minutes_to_start": 99320,
+      "minutes_to_end": 102560,
       "action_url": "./events/event-global-infrastructure-expo.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30801102
+      "priority_score": 30801360
     },
     {
       "id": "event-global-ai-summit",
@@ -7354,12 +7354,12 @@
       "category_url": "./categories/conference-forum.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-global-ai-summit.html",
-      "minutes_to_start": 99749,
-      "minutes_to_end": 103169,
+      "minutes_to_start": 99620,
+      "minutes_to_end": 103040,
       "action_url": "./events/event-global-ai-summit.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30800502
+      "priority_score": 30800760
     },
     {
       "id": "event-global-ai-summit-gain",
@@ -7419,12 +7419,12 @@
       "category_url": "./categories/conference-forum.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-global-ai-summit-gain.html",
-      "minutes_to_start": 99749,
-      "minutes_to_end": 103169,
+      "minutes_to_start": 99620,
+      "minutes_to_end": 103040,
       "action_url": "./events/event-global-ai-summit-gain.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30800502
+      "priority_score": 30800760
     },
     {
       "id": "event-kingdom-business-luxury-travel-congress",
@@ -7484,12 +7484,12 @@
       "category_url": "./categories/education-community.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-kingdom-business-luxury-travel-congress.html",
-      "minutes_to_start": 99749,
-      "minutes_to_end": 101669,
+      "minutes_to_start": 99620,
+      "minutes_to_end": 101540,
       "action_url": "./events/event-kingdom-business-luxury-travel-congress.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30800502
+      "priority_score": 30800760
     },
     {
       "id": "event-smart-cities-saudi-expo",
@@ -7549,12 +7549,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-smart-cities-saudi-expo.html",
-      "minutes_to_start": 100049,
-      "minutes_to_end": 103409,
+      "minutes_to_start": 99920,
+      "minutes_to_end": 103280,
       "action_url": "./events/event-smart-cities-saudi-expo.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30799902
+      "priority_score": 30800160
     },
     {
       "id": "event-facility-management-conference-exhibition",
@@ -7614,12 +7614,12 @@
       "category_url": "./categories/conference-forum.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-facility-management-conference-exhibition.html",
-      "minutes_to_start": 106949,
-      "minutes_to_end": 110429,
+      "minutes_to_start": 106820,
+      "minutes_to_end": 110300,
       "action_url": "./events/event-facility-management-conference-exhibition.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30786102
+      "priority_score": 30786360
     },
     {
       "id": "event-saudi-national-day",
@@ -7679,12 +7679,12 @@
       "category_url": "./categories/entertainment-families.html",
       "city_url": "./cities/nationwide.html",
       "canonical_url": "https://eventme.live/events/event-saudi-national-day.html",
-      "minutes_to_start": 111269,
-      "minutes_to_end": 111809,
+      "minutes_to_start": 111140,
+      "minutes_to_end": 111680,
       "action_url": "./events/event-saudi-national-day.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30777462
+      "priority_score": 30777720
     },
     {
       "id": "event-the-saudi-food-show",
@@ -7744,12 +7744,12 @@
       "category_url": "./categories/science-space.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-the-saudi-food-show.html",
-      "minutes_to_start": 117449,
-      "minutes_to_end": 120749,
+      "minutes_to_start": 117320,
+      "minutes_to_end": 120620,
       "action_url": "./events/event-the-saudi-food-show.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30765102
+      "priority_score": 30765360
     },
     {
       "id": "event-saudi-international-falcons-hunting-exhibition",
@@ -7809,12 +7809,12 @@
       "category_url": "./categories/entertainment-families.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-saudi-international-falcons-hunting-exhibition.html",
-      "minutes_to_start": 123089,
-      "minutes_to_end": 136529,
+      "minutes_to_start": 122960,
+      "minutes_to_end": 136400,
       "action_url": "./events/event-saudi-international-falcons-hunting-exhibition.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30753822
+      "priority_score": 30754080
     },
     {
       "id": "event-saudi-falcons-club-auction",
@@ -7874,12 +7874,12 @@
       "category_url": "./categories/entertainment-families.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-saudi-falcons-club-auction.html",
-      "minutes_to_start": 123389,
-      "minutes_to_end": 210029,
+      "minutes_to_start": 123260,
+      "minutes_to_end": 209900,
       "action_url": "./events/event-saudi-falcons-club-auction.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30753222
+      "priority_score": 30753480
     },
     {
       "id": "event-al-milwah-falcon-race",
@@ -7939,12 +7939,12 @@
       "category_url": "./categories/entertainment-families.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-al-milwah-falcon-race.html",
-      "minutes_to_start": 127709,
-      "minutes_to_end": 133769,
+      "minutes_to_start": 127580,
+      "minutes_to_end": 133640,
       "action_url": "./events/event-al-milwah-falcon-race.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30744582
+      "priority_score": 30744840
     },
     {
       "id": "event-future-investment-initiative-fii-10",
@@ -8004,12 +8004,12 @@
       "category_url": "./categories/chamber-event.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-future-investment-initiative-fii-10.html",
-      "minutes_to_start": 160229,
-      "minutes_to_end": 165089,
+      "minutes_to_start": 160100,
+      "minutes_to_end": 164960,
       "action_url": "./events/event-future-investment-initiative-fii-10.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30679542
+      "priority_score": 30679800
     },
     {
       "id": "event-a-thousand-and-one",
@@ -8069,12 +8069,12 @@
       "category_url": "./categories/entertainment-families.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-a-thousand-and-one.html",
-      "minutes_to_start": 162569,
-      "minutes_to_end": 164009,
+      "minutes_to_start": 162440,
+      "minutes_to_end": 163880,
       "action_url": "./events/event-a-thousand-and-one.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30674862
+      "priority_score": 30675120
     },
     {
       "id": "event-world-conference-on-desalination-and-water-reuse",
@@ -8134,12 +8134,12 @@
       "category_url": "./categories/awards-ceremonies.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-world-conference-on-desalination-and-water-reuse.html",
-      "minutes_to_start": 167369,
-      "minutes_to_end": 172889,
+      "minutes_to_start": 167240,
+      "minutes_to_end": 172760,
       "action_url": "./events/event-world-conference-on-desalination-and-water-reuse.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30665262
+      "priority_score": 30665520
     },
     {
       "id": "event-world-firefighters-challenge",
@@ -8199,12 +8199,12 @@
       "category_url": "./categories/sports.html",
       "city_url": "./cities/dhahran.html",
       "canonical_url": "https://eventme.live/events/event-world-firefighters-challenge.html",
-      "minutes_to_start": 173189,
-      "minutes_to_end": 185249,
+      "minutes_to_start": 173060,
+      "minutes_to_end": 185120,
       "action_url": "./events/event-world-firefighters-challenge.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30653622
+      "priority_score": 30653880
     },
     {
       "id": "event-web-summit-lisbon-2026",
@@ -8264,12 +8264,12 @@
       "category_url": "./categories/conference-forum.html",
       "city_url": "./cities/global.html",
       "canonical_url": "https://eventme.live/events/event-web-summit-lisbon-2026.html",
-      "minutes_to_start": 178949,
-      "minutes_to_end": 183809,
+      "minutes_to_start": 178820,
+      "minutes_to_end": 183680,
       "action_url": "./events/event-web-summit-lisbon-2026.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30642102
+      "priority_score": 30642360
     },
     {
       "id": "event-cityscape-global-2026",
@@ -8329,12 +8329,12 @@
       "category_url": "./categories/chamber-event.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-cityscape-global-2026.html",
-      "minutes_to_start": 189029,
-      "minutes_to_end": 193889,
+      "minutes_to_start": 188900,
+      "minutes_to_end": 193760,
       "action_url": "./events/event-cityscape-global-2026.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30621942
+      "priority_score": 30622200
     },
     {
       "id": "event-xp-music-futures-2026",
@@ -8394,12 +8394,12 @@
       "category_url": "./categories/entertainment-families.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-xp-music-futures-2026.html",
-      "minutes_to_start": 202889,
-      "minutes_to_end": 205769,
+      "minutes_to_start": 202760,
+      "minutes_to_end": 205640,
       "action_url": "./events/event-xp-music-futures-2026.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30594222
+      "priority_score": 30594480
     },
     {
       "id": "event-business-sector-annual-reception",
@@ -8459,12 +8459,12 @@
       "category_url": "./categories/chamber-event.html",
       "city_url": "./cities/dhahran.html",
       "canonical_url": "https://eventme.live/events/event-business-sector-annual-reception.html",
-      "minutes_to_start": 210629,
-      "minutes_to_end": 211169,
+      "minutes_to_start": 210500,
+      "minutes_to_end": 211040,
       "action_url": "./events/event-business-sector-annual-reception.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30578742
+      "priority_score": 30579000
     },
     {
       "id": "event-future-frontiers-for-businesses-catalysts-for-growth-in-a-transformation",
@@ -8524,12 +8524,12 @@
       "category_url": "./categories/conference-forum.html",
       "city_url": "./cities/jeddah.html",
       "canonical_url": "https://eventme.live/events/event-future-frontiers-for-businesses-catalysts-for-growth-in-a-transformation.html",
-      "minutes_to_start": 210629,
-      "minutes_to_end": 212609,
+      "minutes_to_start": 210500,
+      "minutes_to_end": 212480,
       "action_url": "./events/event-future-frontiers-for-businesses-catalysts-for-growth-in-a-transformation.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30578742
+      "priority_score": 30579000
     },
     {
       "id": "event-saudi-water-partnerships-company-forum-and-awards-ceremony",
@@ -8589,12 +8589,12 @@
       "category_url": "./categories/awards-ceremonies.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-saudi-water-partnerships-company-forum-and-awards-ceremony.html",
-      "minutes_to_start": 210649,
-      "minutes_to_end": 211319,
+      "minutes_to_start": 210520,
+      "minutes_to_end": 211190,
       "action_url": "./events/event-saudi-water-partnerships-company-forum-and-awards-ceremony.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30578702
+      "priority_score": 30578960
     },
     {
       "id": "event-soundstorm-26",
@@ -8654,12 +8654,12 @@
       "category_url": "./categories/entertainment-families.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-soundstorm-26.html",
-      "minutes_to_start": 212969,
-      "minutes_to_end": 214409,
+      "minutes_to_start": 212840,
+      "minutes_to_end": 214280,
       "action_url": "./events/event-soundstorm-26.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30574062
+      "priority_score": 30574320
     },
     {
       "id": "event-global-prize-for-innovation-in-water",
@@ -8719,12 +8719,12 @@
       "category_url": "./categories/awards-ceremonies.html",
       "city_url": "./cities/jeddah.html",
       "canonical_url": "https://eventme.live/events/event-global-prize-for-innovation-in-water.html",
-      "minutes_to_start": 219269,
-      "minutes_to_end": 219689,
+      "minutes_to_start": 219140,
+      "minutes_to_end": 219560,
       "action_url": "./events/event-global-prize-for-innovation-in-water.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30561462
+      "priority_score": 30561720
     },
     {
       "id": "event-the-global-water-sustainability-conference-2026",
@@ -8784,12 +8784,12 @@
       "category_url": "./categories/awards-ceremonies.html",
       "city_url": "./cities/jeddah.html",
       "canonical_url": "https://eventme.live/events/event-the-global-water-sustainability-conference-2026.html",
-      "minutes_to_start": 219269,
-      "minutes_to_end": 222569,
+      "minutes_to_start": 219140,
+      "minutes_to_end": 222440,
       "action_url": "./events/event-the-global-water-sustainability-conference-2026.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30561462
+      "priority_score": 30561720
     },
     {
       "id": "event-pfl-mena-final",
@@ -8849,12 +8849,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/dhahran.html",
       "canonical_url": "https://eventme.live/events/event-pfl-mena-final.html",
-      "minutes_to_start": 225029,
-      "minutes_to_end": 225569,
+      "minutes_to_start": 224900,
+      "minutes_to_end": 225440,
       "action_url": "./events/event-pfl-mena-final.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30549942
+      "priority_score": 30550200
     },
     {
       "id": "event-ctw-global-ksa-gulf-4p-mach-tools",
@@ -8914,12 +8914,12 @@
       "category_url": "./categories/exhibition-trade.html",
       "city_url": "./cities/dhahran.html",
       "canonical_url": "https://eventme.live/events/event-ctw-global-ksa-gulf-4p-mach-tools.html",
-      "minutes_to_start": 229349,
-      "minutes_to_end": 234209,
+      "minutes_to_start": 229220,
+      "minutes_to_end": 234080,
       "action_url": "./events/event-ctw-global-ksa-gulf-4p-mach-tools.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30541302
+      "priority_score": 30541560
     },
     {
       "id": "event-معرض-وظائف-2026",
@@ -8979,12 +8979,12 @@
       "category_url": "./categories/chamber-event.html",
       "city_url": "./cities/dhahran.html",
       "canonical_url": "https://eventme.live/events/event-معرض-وظائف-2026.html",
-      "minutes_to_start": 248489,
-      "minutes_to_end": 251369,
+      "minutes_to_start": 248360,
+      "minutes_to_end": 251240,
       "action_url": "./events/event-معرض-وظائف-2026.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30503022
+      "priority_score": 30503280
     },
     {
       "id": "event-foundation-day",
@@ -9044,12 +9044,12 @@
       "category_url": "./categories/awards-ceremonies.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-foundation-day.html",
-      "minutes_to_start": 330089,
-      "minutes_to_end": 331229,
+      "minutes_to_start": 329960,
+      "minutes_to_end": 331100,
       "action_url": "./events/event-foundation-day.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30339822
+      "priority_score": 30340080
     },
     {
       "id": "event-founding-day",
@@ -9109,12 +9109,12 @@
       "category_url": "./categories/entertainment-families.html",
       "city_url": "./cities/nationwide.html",
       "canonical_url": "https://eventme.live/events/event-founding-day.html",
-      "minutes_to_start": 330149,
-      "minutes_to_end": 330689,
+      "minutes_to_start": 330020,
+      "minutes_to_end": 330560,
       "action_url": "./events/event-founding-day.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30339702
+      "priority_score": 30339960
     },
     {
       "id": "event-saudi-flag-day",
@@ -9174,12 +9174,12 @@
       "category_url": "./categories/awards-ceremonies.html",
       "city_url": "./cities/riyadh.html",
       "canonical_url": "https://eventme.live/events/event-saudi-flag-day.html",
-      "minutes_to_start": 354569,
-      "minutes_to_end": 355769,
+      "minutes_to_start": 354440,
+      "minutes_to_end": 355640,
       "action_url": "./events/event-saudi-flag-day.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30290862
+      "priority_score": 30291120
     },
     {
       "id": "event-eid-al-fitr",
@@ -9239,12 +9239,12 @@
       "category_url": "./categories/entertainment-families.html",
       "city_url": "./cities/nationwide.html",
       "canonical_url": "https://eventme.live/events/event-eid-al-fitr.html",
-      "minutes_to_start": 381989,
-      "minutes_to_end": 382529,
+      "minutes_to_start": 381860,
+      "minutes_to_end": 382400,
       "action_url": "./events/event-eid-al-fitr.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30236022
+      "priority_score": 30236280
     },
     {
       "id": "event-eid-al-adha",
@@ -9304,12 +9304,12 @@
       "category_url": "./categories/entertainment-families.html",
       "city_url": "./cities/nationwide.html",
       "canonical_url": "https://eventme.live/events/event-eid-al-adha.html",
-      "minutes_to_start": 479909,
-      "minutes_to_end": 486209,
+      "minutes_to_start": 479780,
+      "minutes_to_end": 486080,
       "action_url": "./events/event-eid-al-adha.html",
       "action_label": "فتح بطاقة الفعالية",
       "priority_reason": "فعالية قادمة تحتاج متابعة",
-      "priority_score": 30040182
+      "priority_score": 30040440
     }
   ]
 }

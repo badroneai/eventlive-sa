@@ -1,0 +1,23 @@
+{
+  "schema": "eventlive.launch-preflight.v1",
+  "generated_at": "2026-07-08T01:43:26.972Z",
+  "status": "PASS",
+  "command": "npm run launch:preflight",
+  "evidence": {
+    "build_ok": true,
+    "validation_clean": true,
+    "launch_sweep_ok": true,
+    "launch_pages": 38,
+    "visual_sweep_ok": true,
+    "visual_pages": null,
+    "visual_screenshots": null
+  },
+  "scope": [
+    "build",
+    "validate",
+    "launch:product-gates",
+    "launch:source-gates",
+    "launch:site-gates",
+    "test:site-visual-sweep"
+  ]
+}

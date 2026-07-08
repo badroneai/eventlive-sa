@@ -1,5 +1,5 @@
 # EventLive Site Visual Sweep
-- Generated at: 2026-07-07T19:33:54.863Z
+- Generated at: 2026-07-08T01:43:25.548Z
 - Status: PASS
 - Pages: 41
 - Viewports: 2
@@ -10,8 +10,8 @@
 |---|---|---:|---:|---:|---|
 | /index.html | desktop | PASS | 13 | 3 | output/playwright/visual-sweep/home-desktop.png (full-page) |
 | /index.html | mobile | PASS | 13 | 3 | output/playwright/visual-sweep/home-mobile.png (full-page) |
-| /events.html | desktop | PASS | 416 | 4 | output/playwright/visual-sweep/events-desktop.png (viewport) |
-| /events.html | mobile | PASS | 416 | 4 | output/playwright/visual-sweep/events-mobile.png (viewport) |
+| /events.html | desktop | PASS | 24 | 4 | output/playwright/visual-sweep/events-desktop.png (viewport) |
+| /events.html | mobile | PASS | 24 | 4 | output/playwright/visual-sweep/events-mobile.png (viewport) |
 | /event.html | desktop | PASS | 0 | 2 | output/playwright/visual-sweep/event-shell-desktop.png (full-page) |
 | /event.html | mobile | PASS | 0 | 2 | output/playwright/visual-sweep/event-shell-mobile.png (viewport) |
 | /today.html | desktop | PASS | 0 | 2 | output/playwright/visual-sweep/today-desktop.png (full-page) |
@@ -23,7 +23,7 @@
 | /updates.html | desktop | PASS | 0 | 2 | output/playwright/visual-sweep/updates-desktop.png (full-page) |
 | /updates.html | mobile | PASS | 0 | 2 | output/playwright/visual-sweep/updates-mobile.png (full-page) |
 | /screen.html | desktop | PASS | 1 | 2 | output/playwright/visual-sweep/screen-desktop.png (full-page) |
-| /screen.html | mobile | PASS | 1 | 2 | output/playwright/visual-sweep/screen-mobile.png (full-page) |
+| /screen.html | mobile | PASS | 0 | 2 | output/playwright/visual-sweep/screen-mobile.png (full-page) |
 | /activation.html | desktop | PASS | 0 | 4 | output/playwright/visual-sweep/activation-desktop.png (viewport) |
 | /activation.html | mobile | PASS | 0 | 4 | output/playwright/visual-sweep/activation-mobile.png (viewport) |
 | /print.html?event=event-the-groves | desktop | PASS | 1 | 2 | output/playwright/visual-sweep/print-desktop.png (full-page) |
@@ -79,7 +79,7 @@
 | /resolver.html | desktop | PASS | 0 | 2 | output/playwright/visual-sweep/resolver-desktop.png (full-page) |
 | /resolver.html | mobile | PASS | 0 | 2 | output/playwright/visual-sweep/resolver-mobile.png (viewport) |
 | /regions.html | desktop | PASS | 0 | 4 | output/playwright/visual-sweep/regions-desktop.png (full-page) |
-| /regions.html | mobile | PASS | 0 | 4 | output/playwright/visual-sweep/regions-mobile.png (viewport) |
+| /regions.html | mobile | PASS | 0 | 4 | output/playwright/visual-sweep/regions-mobile.png (full-page) |
 | /readiness.html | desktop | PASS | 0 | 4 | output/playwright/visual-sweep/readiness-desktop.png (full-page) |
 | /readiness.html | mobile | PASS | 0 | 4 | output/playwright/visual-sweep/readiness-mobile.png (viewport) |
 | /trust.html | desktop | PASS | 0 | 4 | output/playwright/visual-sweep/trust-desktop.png (viewport) |

@@ -1,0 +1,97 @@
+{
+  "schema": "eventlive.command-center.v1",
+  "generated_at": "2026-07-08T01:39:49.885Z",
+  "project": {
+    "name": "EventLive",
+    "domain": "eventme.live",
+    "live_url": "https://eventme.live/",
+    "type": "static Saudi live-events platform + periodic harvest pipeline",
+    "lifecycle": "pre-professional-launch hardening",
+    "owner": "Bader / EventLive",
+    "technology": [
+      "Node.js ESM",
+      "GitHub Pages",
+      "PWA",
+      "JSON",
+      "ICS",
+      "RSS"
+    ]
+  },
+  "totals": {
+    "catalog_events": 141,
+    "public_events": 429,
+    "source_candidates": 183,
+    "registered_sources": 66,
+    "live_ready": 51,
+    "ended_events": 294,
+    "delivery_standard_pass": 20,
+    "delivery_standard_partial": 1,
+    "delivery_standard_not_started": 0
+  },
+  "gates": [
+    {
+      "name": "Delivery Readiness",
+      "status": "PASS",
+      "evidence": "reports/delivery-readiness-status.md"
+    },
+    {
+      "name": "23-Gate Delivery Standard",
+      "status": "PARTIAL",
+      "evidence": "reports/delivery-readiness-standard-status.md"
+    },
+    {
+      "name": "Command Center",
+      "status": "PASS",
+      "evidence": "reports/eventlive-command-center.md"
+    },
+    {
+      "name": "Design OS",
+      "status": "PASS",
+      "evidence": "reports/design-os-status.md"
+    },
+    {
+      "name": "Harvest OS",
+      "status": "PASS",
+      "evidence": "reports/source-harvest-os-status.md"
+    },
+    {
+      "name": "Analytics",
+      "status": "PASS",
+      "evidence": "reports/analytics-status.md"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "analytics_provider",
+      "title": "اختيار/تفعيل حساب Analytics فعلي",
+      "note": "Plausible مبدئيا"
+    },
+    {
+      "id": "eventlive_domain",
+      "title": "حسم شراء نطاق EventLive إضافي لاحقا",
+      "note": "الدومين الحالي المعتمد eventme.live"
+    },
+    {
+      "id": "owner_pages_policy",
+      "title": "اعتماد سياسة صفحات المالك المخفية",
+      "note": "مخفية من التنقل العام وتبقى noindex عند تحويلها HTML"
+    },
+    {
+      "id": "organizers_product",
+      "title": "متى تفتح صفحة المنظمين كمنتج تجاري",
+      "note": "تحتاج قرار منتجي لاحق"
+    }
+  ],
+  "documents": [
+    "EVENTLIVE-ANALYTICS-MEASUREMENT-PLAN.md",
+    "EVENTLIVE-DELIVERY-READINESS-PLAYBOOK.md",
+    "EVENTLIVE-DESIGN-OS-ADOPTION-PLAN.md",
+    "EVENTLIVE-HARVEST-OS-ADOPTION-PLAN.md",
+    "EVENTLIVE-COMMAND-CENTER-ADOPTION-PLAN.md",
+    "EVENTME-MASTER-DEVELOPMENT-PLAN.md",
+    "EVENTME-PRODUCT-STRATEGY.md",
+    "EVENTME-SOURCE-ACQUISITION.md",
+    "RELEASE-CHECKLIST.md",
+    "TECH-DEBT.md"
+  ]
+}

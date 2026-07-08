@@ -1,0 +1,627 @@
+{
+  "schema": "eventlive.browser-matrix-audit.v1",
+  "generated_at": "2026-07-08T01:38:59.587Z",
+  "status": "PASS",
+  "summary": {
+    "engines": 2,
+    "viewports": 3,
+    "pages": 6,
+    "checks": 36,
+    "findings": 0
+  },
+  "results": [
+    {
+      "engine": "chromium",
+      "viewport": "mobile",
+      "page": "/index.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "bodyHeight": 3175,
+        "h1Text": "ماذا يحدث الآن في السعودية؟",
+        "h1Visible": true,
+        "domContentLoadedMs": 377,
+        "loadMs": 1087
+      },
+      "violations": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "mobile",
+      "page": "/events.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "bodyHeight": 20959,
+        "h1Text": "كل الفعاليات",
+        "h1Visible": true,
+        "domContentLoadedMs": 154,
+        "loadMs": 154
+      },
+      "violations": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "mobile",
+      "page": "/today-events.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "bodyHeight": 7082,
+        "h1Text": "فعاليات اليوم",
+        "h1Visible": true,
+        "domContentLoadedMs": 16,
+        "loadMs": 16
+      },
+      "violations": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "mobile",
+      "page": "/screen.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "bodyHeight": 844,
+        "h1Text": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+        "h1Visible": true,
+        "domContentLoadedMs": 28,
+        "loadMs": 28
+      },
+      "violations": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "mobile",
+      "page": "/organizers.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "bodyHeight": 6430,
+        "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
+        "h1Visible": true,
+        "domContentLoadedMs": 152,
+        "loadMs": 152
+      },
+      "violations": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "mobile",
+      "page": "/events/demo-event.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "bodyHeight": 2774,
+        "h1Text": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+        "h1Visible": true,
+        "domContentLoadedMs": 27,
+        "loadMs": 27
+      },
+      "violations": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "tablet",
+      "page": "/index.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 820,
+        "clientWidth": 820,
+        "bodyHeight": 2777,
+        "h1Text": "ماذا يحدث الآن في السعودية؟",
+        "h1Visible": true,
+        "domContentLoadedMs": 379,
+        "loadMs": 1066
+      },
+      "violations": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "tablet",
+      "page": "/events.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 820,
+        "clientWidth": 820,
+        "bodyHeight": 11238,
+        "h1Text": "كل الفعاليات",
+        "h1Visible": true,
+        "domContentLoadedMs": 164,
+        "loadMs": 164
+      },
+      "violations": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "tablet",
+      "page": "/today-events.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 820,
+        "clientWidth": 820,
+        "bodyHeight": 4541,
+        "h1Text": "فعاليات اليوم",
+        "h1Visible": true,
+        "domContentLoadedMs": 23,
+        "loadMs": 23
+      },
+      "violations": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "tablet",
+      "page": "/screen.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 820,
+        "clientWidth": 820,
+        "bodyHeight": 1180,
+        "h1Text": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+        "h1Visible": true,
+        "domContentLoadedMs": 27,
+        "loadMs": 28
+      },
+      "violations": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "tablet",
+      "page": "/organizers.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 820,
+        "clientWidth": 820,
+        "bodyHeight": 5516,
+        "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
+        "h1Visible": true,
+        "domContentLoadedMs": 143,
+        "loadMs": 143
+      },
+      "violations": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "tablet",
+      "page": "/events/demo-event.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 820,
+        "clientWidth": 820,
+        "bodyHeight": 2193,
+        "h1Text": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+        "h1Visible": true,
+        "domContentLoadedMs": 27,
+        "loadMs": 27
+      },
+      "violations": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "desktop",
+      "page": "/index.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "bodyHeight": 3707,
+        "h1Text": "ماذا يحدث الآن في السعودية؟",
+        "h1Visible": true,
+        "domContentLoadedMs": 316,
+        "loadMs": 1080
+      },
+      "violations": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "desktop",
+      "page": "/events.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "bodyHeight": 7775,
+        "h1Text": "كل الفعاليات",
+        "h1Visible": true,
+        "domContentLoadedMs": 124,
+        "loadMs": 124
+      },
+      "violations": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "desktop",
+      "page": "/today-events.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "bodyHeight": 3435,
+        "h1Text": "فعاليات اليوم",
+        "h1Visible": true,
+        "domContentLoadedMs": 16,
+        "loadMs": 16
+      },
+      "violations": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "desktop",
+      "page": "/screen.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "bodyHeight": 900,
+        "h1Text": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+        "h1Visible": true,
+        "domContentLoadedMs": 28,
+        "loadMs": 29
+      },
+      "violations": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "desktop",
+      "page": "/organizers.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "bodyHeight": 3584,
+        "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
+        "h1Visible": true,
+        "domContentLoadedMs": 194,
+        "loadMs": 194
+      },
+      "violations": []
+    },
+    {
+      "engine": "chromium",
+      "viewport": "desktop",
+      "page": "/events/demo-event.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "bodyHeight": 2011,
+        "h1Text": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+        "h1Visible": true,
+        "domContentLoadedMs": 25,
+        "loadMs": 25
+      },
+      "violations": []
+    },
+    {
+      "engine": "webkit",
+      "viewport": "mobile",
+      "page": "/index.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "bodyHeight": 3175,
+        "h1Text": "ماذا يحدث الآن في السعودية؟",
+        "h1Visible": true,
+        "domContentLoadedMs": 426,
+        "loadMs": 976
+      },
+      "violations": []
+    },
+    {
+      "engine": "webkit",
+      "viewport": "mobile",
+      "page": "/events.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "bodyHeight": 20962,
+        "h1Text": "كل الفعاليات",
+        "h1Visible": true,
+        "domContentLoadedMs": 132,
+        "loadMs": 412
+      },
+      "violations": []
+    },
+    {
+      "engine": "webkit",
+      "viewport": "mobile",
+      "page": "/today-events.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "bodyHeight": 7079,
+        "h1Text": "فعاليات اليوم",
+        "h1Visible": true,
+        "domContentLoadedMs": 118,
+        "loadMs": 223
+      },
+      "violations": []
+    },
+    {
+      "engine": "webkit",
+      "viewport": "mobile",
+      "page": "/screen.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "bodyHeight": 844,
+        "h1Text": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+        "h1Visible": true,
+        "domContentLoadedMs": 114,
+        "loadMs": 230
+      },
+      "violations": []
+    },
+    {
+      "engine": "webkit",
+      "viewport": "mobile",
+      "page": "/organizers.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "bodyHeight": 6429,
+        "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
+        "h1Visible": true,
+        "domContentLoadedMs": 136,
+        "loadMs": 283
+      },
+      "violations": []
+    },
+    {
+      "engine": "webkit",
+      "viewport": "mobile",
+      "page": "/events/demo-event.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "bodyHeight": 2773,
+        "h1Text": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+        "h1Visible": true,
+        "domContentLoadedMs": 201,
+        "loadMs": 303
+      },
+      "violations": []
+    },
+    {
+      "engine": "webkit",
+      "viewport": "tablet",
+      "page": "/index.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 820,
+        "clientWidth": 820,
+        "bodyHeight": 2777,
+        "h1Text": "ماذا يحدث الآن في السعودية؟",
+        "h1Visible": true,
+        "domContentLoadedMs": 351,
+        "loadMs": 886
+      },
+      "violations": []
+    },
+    {
+      "engine": "webkit",
+      "viewport": "tablet",
+      "page": "/events.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 820,
+        "clientWidth": 820,
+        "bodyHeight": 11328,
+        "h1Text": "كل الفعاليات",
+        "h1Visible": true,
+        "domContentLoadedMs": 132,
+        "loadMs": 347
+      },
+      "violations": []
+    },
+    {
+      "engine": "webkit",
+      "viewport": "tablet",
+      "page": "/today-events.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 820,
+        "clientWidth": 820,
+        "bodyHeight": 4539,
+        "h1Text": "فعاليات اليوم",
+        "h1Visible": true,
+        "domContentLoadedMs": 119,
+        "loadMs": 297
+      },
+      "violations": []
+    },
+    {
+      "engine": "webkit",
+      "viewport": "tablet",
+      "page": "/screen.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 820,
+        "clientWidth": 820,
+        "bodyHeight": 1180,
+        "h1Text": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+        "h1Visible": true,
+        "domContentLoadedMs": 119,
+        "loadMs": 246
+      },
+      "violations": []
+    },
+    {
+      "engine": "webkit",
+      "viewport": "tablet",
+      "page": "/organizers.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 820,
+        "clientWidth": 820,
+        "bodyHeight": 5516,
+        "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
+        "h1Visible": true,
+        "domContentLoadedMs": 136,
+        "loadMs": 264
+      },
+      "violations": []
+    },
+    {
+      "engine": "webkit",
+      "viewport": "tablet",
+      "page": "/events/demo-event.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 820,
+        "clientWidth": 820,
+        "bodyHeight": 2193,
+        "h1Text": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+        "h1Visible": true,
+        "domContentLoadedMs": 116,
+        "loadMs": 213
+      },
+      "violations": []
+    },
+    {
+      "engine": "webkit",
+      "viewport": "desktop",
+      "page": "/index.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "bodyHeight": 3707,
+        "h1Text": "ماذا يحدث الآن في السعودية؟",
+        "h1Visible": true,
+        "domContentLoadedMs": 314,
+        "loadMs": 783
+      },
+      "violations": []
+    },
+    {
+      "engine": "webkit",
+      "viewport": "desktop",
+      "page": "/events.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "bodyHeight": 7780,
+        "h1Text": "كل الفعاليات",
+        "h1Visible": true,
+        "domContentLoadedMs": 124,
+        "loadMs": 281
+      },
+      "violations": []
+    },
+    {
+      "engine": "webkit",
+      "viewport": "desktop",
+      "page": "/today-events.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "bodyHeight": 3435,
+        "h1Text": "فعاليات اليوم",
+        "h1Visible": true,
+        "domContentLoadedMs": 190,
+        "loadMs": 300
+      },
+      "violations": []
+    },
+    {
+      "engine": "webkit",
+      "viewport": "desktop",
+      "page": "/screen.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "bodyHeight": 900,
+        "h1Text": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+        "h1Visible": true,
+        "domContentLoadedMs": 156,
+        "loadMs": 275
+      },
+      "violations": []
+    },
+    {
+      "engine": "webkit",
+      "viewport": "desktop",
+      "page": "/organizers.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "bodyHeight": 3584,
+        "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
+        "h1Visible": true,
+        "domContentLoadedMs": 136,
+        "loadMs": 262
+      },
+      "violations": []
+    },
+    {
+      "engine": "webkit",
+      "viewport": "desktop",
+      "page": "/events/demo-event.html",
+      "http_status": 200,
+      "console_errors": 0,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "bodyHeight": 2011,
+        "h1Text": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+        "h1Visible": true,
+        "domContentLoadedMs": 118,
+        "loadMs": 270
+      },
+      "violations": []
+    }
+  ],
+  "findings": []
+}

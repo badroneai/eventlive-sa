@@ -1,0 +1,24 @@
+{
+  "schema": "eventlive.security-review-audit.v1",
+  "generated_at": "2026-07-08T01:39:48.616Z",
+  "status": "PASS",
+  "summary": {
+    "public_html_files_scanned": 513,
+    "findings": 0,
+    "target_blank_issues": 0,
+    "http_resource_issues": 0
+  },
+  "controls": {
+    "web_quality_security": "PASS",
+    "secret_env_audit": "PASS",
+    "static_analysis": "PASS",
+    "compliance_source_rights": "PASS",
+    "ci_security_steps": [
+      "audit:dependencies",
+      "audit:secret-env",
+      "audit:static",
+      "audit:web-quality"
+    ]
+  },
+  "findings": []
+}

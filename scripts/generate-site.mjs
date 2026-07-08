@@ -45,6 +45,12 @@ const brandCss = `<style id="eventlive-brand-pulse">
 .brand-word .live-i { position: relative; display: inline-block; font-style: normal; line-height: .95; min-width: .18em; margin-inline: .01em; }
 .brand-word .live-i::after { content: ""; position: absolute; width: .24em; height: .24em; border-radius: 999px; background: #e5484d; top: -.16em; left: 50%; transform: translateX(-50%); animation: eventliveLiveDotPulse 5.6s ease-in-out infinite; }
 .brand-sr { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; clip-path: inset(50%); }
+.footer-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; font-weight: 700; }
+.footer-links a { color: #0d6b52; }
+.footer { color: #566960 !important; }
+.trust { color: #48635a !important; }
+.primary, .btn.primary, .status-card.primary a { background: #006f67 !important; color: #fff !important; }
+.status-card.primary .label, .status-card.primary .meta { color: rgba(255,255,255,.92) !important; }
 .card h3 { text-align: center; -webkit-line-clamp: 3; min-height: auto; }
 .card h3 a { unicode-bidi: plaintext; }
 .breadcrumbs { display: flex; align-items: center; gap: 8px; padding: 18px 0 0; color: #66756f; font-size: .92rem; font-weight: 700; }
@@ -62,7 +68,7 @@ const brandCss = `<style id="eventlive-brand-pulse">
 const pageCss = `<style>
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap');
 :root{--bg:#f7f5ef;--ink:#10231d;--muted:#66756f;--line:#dfe6df;--card:#fffdf8;--green:#0d6b52;--green-dark:#07231c;--live:#e5484d;--gold:#b88a2a}
-*{box-sizing:border-box}body{margin:0;font-family:"IBM Plex Sans Arabic",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.75}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(247,245,239,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:700}.brand-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:8px;background:var(--green-dark);color:#fff;font-weight:700}.nav-links{display:flex;gap:18px;color:var(--muted);font-weight:700;font-size:.94rem}.cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:8px;background:var(--green);color:#fff;padding:10px 14px;font-weight:700}.hero{padding:54px 0 30px;background:linear-gradient(135deg,var(--green-dark),#0d6b52);color:#fff}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:#f7df9a;font-weight:700}.live-dot{width:9px;height:9px;border-radius:999px;background:var(--live);box-shadow:0 0 0 4px rgba(229,72,77,.18)}h1{font-size:clamp(2rem,5vw,4.4rem);line-height:1.12;margin:14px 0 12px;letter-spacing:0}.lead{font-size:1.08rem;max-width:760px;color:rgba(255,255,255,.82)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}.section{padding:32px 0}.card,.activation-card{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;box-shadow:0 18px 40px rgba(16,35,29,.06)}.activation-card{padding:18px}.activation-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.card-body{padding:18px}.cover{aspect-ratio:16/9;width:100%;object-fit:cover;background:#dfe6df}.meta{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;color:var(--muted);font-size:.9rem}.chip{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:4px 9px;background:#fff}.chip-live{background:var(--live);border-color:var(--live);color:#fff}.title{font-size:1.18rem;font-weight:700;margin:0 0 8px}.signal-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:18px}.signal{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:12px}.signal b{display:block;font-size:1.35rem}.facet-focus,.readiness{background:#fff;border:1px solid var(--line);border-radius:8px;padding:18px;margin:18px 0}.signals{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}.signal-check,.program-check{border:1px solid var(--line);border-radius:8px;padding:12px;background:#fff}.signal-check.good,.program-check{border-color:rgba(13,107,82,.35)}.signal-check.warn{border-color:rgba(229,72,77,.25)}.decision-score{font-size:2rem;font-weight:700;color:var(--green)}.timeline{display:grid;gap:10px;margin-top:14px}.session{border:1px solid var(--line);border-radius:8px;padding:12px;background:#fff}.footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted)}@media(max-width:760px){.nav-links{display:none}.hero{padding-top:34px}.wrap{width:min(100% - 22px,1120px)}}
+*{box-sizing:border-box}body{margin:0;font-family:"IBM Plex Sans Arabic",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.75}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(247,245,239,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:700}.brand-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:8px;background:var(--green-dark);color:#fff;font-weight:700}.nav-links{display:flex;gap:18px;color:var(--muted);font-weight:700;font-size:.94rem}.cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:8px;background:var(--green);color:#fff;padding:10px 14px;font-weight:700}.hero{padding:54px 0 30px;background:linear-gradient(135deg,var(--green-dark),#0d6b52);color:#fff}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:#f7df9a;font-weight:700}.live-dot{width:9px;height:9px;border-radius:999px;background:var(--live);box-shadow:0 0 0 4px rgba(229,72,77,.18)}h1{font-size:clamp(2rem,5vw,4.4rem);line-height:1.12;margin:14px 0 12px;letter-spacing:0}.lead{font-size:1.08rem;max-width:760px;color:rgba(255,255,255,.82)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}.section{padding:32px 0}.card,.activation-card{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;box-shadow:0 18px 40px rgba(16,35,29,.06)}.activation-card{padding:18px}.activation-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.card-body{padding:18px}.cover{aspect-ratio:16/9;width:100%;object-fit:cover;background:#dfe6df}.meta{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;color:var(--muted);font-size:.9rem}.chip{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:4px 9px;background:#fff}.chip-live{background:var(--live);border-color:var(--live);color:#fff}.title{font-size:1.18rem;font-weight:700;margin:0 0 8px}.signal-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:18px}.signal{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:12px}.signal b{display:block;font-size:1.35rem}.facet-focus,.readiness{background:#fff;border:1px solid var(--line);border-radius:8px;padding:18px;margin:18px 0}.signals{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}.signal-check,.program-check{border:1px solid var(--line);border-radius:8px;padding:12px;background:#fff}.signal-check.good,.program-check{border-color:rgba(13,107,82,.35)}.signal-check.warn{border-color:rgba(229,72,77,.25)}.decision-score{font-size:2rem;font-weight:700;color:var(--green)}.timeline{display:grid;gap:10px;margin-top:14px}.session{border:1px solid var(--line);border-radius:8px;padding:12px;background:#fff}.footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted)}.footer-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px;font-weight:700}.footer-links a{color:var(--green)}@media(max-width:760px){.nav-links{display:none}.hero{padding-top:34px}.wrap{width:min(100% - 22px,1120px)}}
 </style>`;
 
 function readJson(relativePath, fallback = {}) {
@@ -767,12 +773,105 @@ function baseHead({ title, description, canonical, image, manifestHref = './mani
   ${platformWebSiteJsonLd()}`;
 }
 
+function analyticsHeadSnippet() {
+  return `<script defer data-domain="${platformDomain}" src="https://plausible.io/js/script.tagged-events.js"></script>`;
+}
+
+function analyticsRuntimeScript() {
+  return `<script id="eventlive-analytics-runtime">
+(function () {
+  var ownerOnlyPattern = /\\/(sources|methodology|trust|source-health|candidates|resolver)\\.html$|\\/(events|sources|trust|methodology|readiness|source-coverage-gaps|regions)\\.json$/;
+  var path = window.location.pathname || '';
+  if (ownerOnlyPattern.test(path)) {
+    window.eventLiveTrack = function () {};
+    return;
+  }
+
+  function clean(value) {
+    return String(value || '').replace(/\\s+/g, ' ').trim().slice(0, 160);
+  }
+
+  function payload(extra) {
+    return Object.assign({
+      path: path,
+      title: clean(document.title),
+      referrer_host: document.referrer ? (new URL(document.referrer, window.location.href)).host : ''
+    }, extra || {});
+  }
+
+  window.eventLiveTrack = function (name, props) {
+    var eventName = clean(name || '');
+    if (!eventName) return;
+    var eventProps = payload(props);
+    try {
+      if (typeof window.plausible === 'function') {
+        window.plausible(eventName, { props: eventProps });
+        return;
+      }
+      if (typeof window.umami === 'object' && typeof window.umami.track === 'function') {
+        window.umami.track(eventName, eventProps);
+        return;
+      }
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', eventName, eventProps);
+      }
+    } catch (error) {
+      if (window.console && window.console.debug) window.console.debug('EventLive analytics skipped', error);
+    }
+  };
+
+  window.eventLiveTrack('page_view', {
+    page_kind: document.body?.dataset?.pageKind || path.split('/').filter(Boolean).pop() || 'home'
+  });
+
+  document.addEventListener('click', function (event) {
+    var target = event.target && event.target.closest ? event.target.closest('a,button,[data-analytics-event]') : null;
+    if (!target) return;
+    var explicit = target.getAttribute('data-analytics-event');
+    var href = target.getAttribute('href') || '';
+    var text = clean(target.textContent);
+    var name = explicit || '';
+    if (!name && /\\.ics(?:$|\\?)/.test(href)) name = 'calendar_downloaded';
+    if (!name && /google\\.com\\/maps|maps\\.apple\\.com|directions/i.test(href)) name = 'directions_clicked';
+    if (!name && /\\/events\\//.test(href)) name = 'event_opened';
+    if (!name && /\\/cities\\//.test(href)) name = 'city_filter_used';
+    if (!name && /\\/categories\\//.test(href)) name = 'category_filter_used';
+    if (!name && /\\/for\\//.test(href)) name = 'audience_filter_used';
+    if (!name && /screen\\.html/.test(href)) name = 'live_screen_opened';
+    if (!name && /share\\.html/.test(href)) name = 'share_clicked';
+    if (!name && /organizer/.test(href + ' ' + text)) name = 'organizer_cta_clicked';
+    if (!name && /today/.test(href)) name = 'today_opened';
+    if (!name && /this-week/.test(href)) name = 'this_week_opened';
+    if (!name && /source|evidence|visitsaudi|gea|moc|tuwaiq|mcit|mdlbeast|experiencealula/i.test(href)) name = 'source_clicked';
+    if (!name) return;
+    window.eventLiveTrack(name, { href: href, label: text });
+  }, { capture: true });
+
+  var searchTimer = null;
+  document.addEventListener('input', function (event) {
+    var target = event.target;
+    if (!target || !/search|q|query/i.test(target.getAttribute('type') || target.getAttribute('name') || target.getAttribute('placeholder') || '')) return;
+    window.clearTimeout(searchTimer);
+    searchTimer = window.setTimeout(function () {
+      window.eventLiveTrack('search_used', { query_length: clean(target.value).length });
+    }, 700);
+  }, { passive: true });
+
+  window.addEventListener('storage', function (event) {
+    if (/saved|eventlive-saved-events/i.test(event.key || '')) {
+      window.eventLiveTrack('saved_event', { storage_key: event.key || '' });
+    }
+  });
+})();
+</script>`;
+}
+
 function header(relativePrefix = './') {
   return `<header class="topbar"><div class="wrap nav"><a class="brand" href="${relativePrefix}index.html"><span class="brand-mark">EL</span><b>${brandVisual}</b></a><nav class="nav-links" aria-label="روابط رئيسية"><a href="${relativePrefix}events.html">كل الفعاليات</a><a href="${relativePrefix}today-events.html">اليوم</a><a href="${relativePrefix}this-month.html">هذا الشهر</a><a href="${relativePrefix}cities.html">المدن</a><a href="${relativePrefix}categories.html">التصنيفات</a><a href="${relativePrefix}audiences.html">الجمهور</a><a href="${relativePrefix}organizers.html">للمنظمين</a><a href="${relativePrefix}organizer-intake.html">إضافة فعالية</a></nav><a class="cta" href="${relativePrefix}today-events.html"><span class="live-dot"></span> وضع الحضور</a></div></header>`;
 }
 
 function footer(relativePrefix = './') {
-  return `<footer class="footer"><div class="wrap">EventLive يبقي الدومين الرسمي ${platformDomain} ويربط كل فعالية بمصدرها قدر الإمكان. آخر بناء: ${formatDate(buildAt)}</div></footer>`;
+  return `<footer class="footer"><div class="wrap">EventLive يبقي الدومين الرسمي ${platformDomain} ويربط كل فعالية بمصدرها قدر الإمكان. آخر بناء: ${formatDate(buildAt)}<div class="footer-links"><a href="${relativePrefix}privacy.html">الخصوصية</a><a href="${relativePrefix}terms.html">الشروط</a><a href="${relativePrefix}source-rights.html">حقوق المصادر</a></div></div></footer>`;
 }
 
 function hideOwnerOnlyPublicLinks(html) {
@@ -1959,9 +2058,22 @@ ${liveRuntimeScript()}
 
 function reconcileStaleEventRefs(events) {
   const byHash = new Map();
+  const byLegacySlug = new Map();
   for (const event of events) {
     const hash = String(event.file_slug || '').match(/-([a-f0-9]{8})$/i)?.[1];
     if (hash) byHash.set(hash, event.file_slug);
+    const currentSlug = String(event.file_slug || '').trim();
+    if (!currentSlug) continue;
+    for (const candidate of [
+      event.id,
+      event.slug,
+      currentSlug,
+      `event-${slugify(event.title || '')}`,
+      `event-${slugify(String(event.title || '').replace(/[\u0600-\u06ff]+/g, ' '))}`
+    ]) {
+      const legacy = String(candidate || '').trim();
+      if (legacy && legacy !== currentSlug) byLegacySlug.set(legacy, currentSlug);
+    }
   }
   const files = walkFiles(distDir).filter((filePath) => ['.html', '.json', '.js', '.css'].includes(path.extname(filePath).toLowerCase()));
   for (const filePath of files) {
@@ -1971,6 +2083,13 @@ function reconcileStaleEventRefs(events) {
       .replace(/events\/([^"'?#/]+?)-([a-f0-9]{8})\.(html|ics)/gi, (match, prefix, hash, ext) => {
         const currentSlug = byHash.get(hash);
         return currentSlug ? `events/${currentSlug}.${ext}` : match;
+      })
+      .replace(/events\/([^"'?#/]+?)\.(html|ics)/gi, (match, legacySlug, ext) => {
+        const currentSlug = byLegacySlug.get(legacySlug);
+        if (!currentSlug) return match;
+        const currentPath = path.join(distDir, 'events', `${currentSlug}.${ext}`);
+        const legacyPath = path.join(distDir, 'events', `${legacySlug}.${ext}`);
+        return fs.existsSync(currentPath) && !fs.existsSync(legacyPath) ? `events/${currentSlug}.${ext}` : match;
       })
       .replace(/assets\/event-covers\/([^"'?#/]+?)-([a-f0-9]{8})\.svg/gi, (match, prefix, hash) => {
         const currentSlug = byHash.get(hash);
@@ -2928,6 +3047,66 @@ ${footer('./')}
 </body>
 </html>`;
   writeText(path.join(distDir, 'readiness.html'), html);
+}
+
+function writeCompliancePolicyPages() {
+  const pages = [
+    {
+      file: 'privacy.html',
+      title: 'سياسة الخصوصية',
+      description: 'سياسة EventLive لقياس الاستخدام وحماية بيانات الزوار والمنظمين على eventme.live.',
+      sections: [
+        ['ما الذي نجمعه؟', 'نجمع قياسات استخدام عامة تساعدنا على فهم الصفحات الأكثر فائدة، مثل فتح صفحة فعالية أو استخدام البحث أو الانتقال لوضع الحضور. لا نطلب من الزائر إنشاء حساب في النسخة الحالية.'],
+        ['بيانات المنظم', 'عندما يتواصل منظم أو يطلب إضافة فعالية، نستخدم معلومات التواصل والفعالية لغرض التحقق والنشر والتواصل التشغيلي فقط.'],
+        ['التحليلات', 'التحليلات يجب أن تستبعد صفحات المالك والملفات الخام، وتركز على الرحلات العامة للزائر والمنظم.'],
+        ['الدومين', `الدومين الرسمي هو ${platformDomain}. أي إشارات كتابية للمنتج تستخدم EventLive بينما يبقى الدومين كما هو.`]
+      ]
+    },
+    {
+      file: 'terms.html',
+      title: 'شروط الاستخدام',
+      description: 'شروط استخدام EventLive كموقع مرجعي للفعاليات الحية في السعودية.',
+      sections: [
+        ['طبيعة الخدمة', 'EventLive مرجع تنظيمي ومعلوماتي للفعاليات، وليس بديلا عن شروط الجهة المنظمة أو منصة التذاكر أو المصدر الرسمي.'],
+        ['دقة المعلومات', 'نربط الفعالية بمصدرها قدر الإمكان ونحدث البيانات دوريًا، لكن قد تتغير المواعيد والقاعات من الجهة المنظمة. يعتمد المستخدم على المصدر الرسمي عند الحضور أو الحجز.'],
+        ['الاستخدام المقبول', 'لا يجوز إساءة استخدام البيانات، أو محاولة الوصول لصفحات المالك، أو إعادة نشر بيانات المصدر بشكل يخالف حقوق الجهة الأصلية.'],
+        ['التحديثات', 'قد تتغير هذه الشروط مع تطور المنصة، ويعد تاريخ البناء الظاهر في التذييل مرجعًا لآخر نسخة منشورة.']
+      ]
+    },
+    {
+      file: 'source-rights.html',
+      title: 'حقوق وسياسة المصادر',
+      description: 'منهج EventLive في جلب الفعاليات من المصادر الرسمية وشبه الرسمية دون تجاوز الحماية أو النشر من مصادر اكتشافية.',
+      sections: [
+        ['مصادر موثوقة', 'ننشر من مصادر رسمية أو مصادر عامة موثوقة عندما تتوفر بيانات كافية: العنوان، التاريخ، المدينة أو المكان، ورابط المصدر.'],
+        ['مصادر اكتشافية', 'منصات الاكتشاف أو المحتوى ذاتي النشر تستخدم كإشارة بحث فقط، ولا تنشر تلقائيًا كفعالية مؤكدة.'],
+        ['المصادر المحمية', 'لا نتجاوز حماية bot أو الجدران الخاصة أو البيانات التي تتطلب شراكة. هذه المصادر تصنف للشراكة أو المراجعة التشغيلية.'],
+        ['الصور والوسائط', 'نحاول استخدام صور المصدر عند توفرها بشكل عام ومناسب، وإلا نستخدم غلافًا مولدًا يحافظ على جودة البطاقة دون ادعاء ملكية صورة غير متاحة.'],
+        ['التصحيح والإزالة', 'يمكن للجهة المنظمة طلب تصحيح، تحديث، أو إزالة صفحة فعالية عبر البريد hello@eventme.live.']
+      ]
+    }
+  ];
+
+  for (const page of pages) {
+    const canonical = absoluteUrl(page.file);
+    const html = `<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  ${baseHead({ title: `${page.title} | ${platformName}`, description: page.description, canonical })}
+  ${pageCss}
+  ${jsonLd({ '@context': 'https://schema.org', '@type': 'WebPage', inLanguage: 'ar-SA', name: page.title, description: page.description, url: canonical, isPartOf: { '@type': 'WebSite', name: platformName, url: siteUrl }, dateModified: buildAt })}
+</head>
+<body>
+${header('./')}
+<main>
+  <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span>صفحة ثقة</span><h1>${escapeHtml(page.title)}</h1><p class="lead">${escapeHtml(page.description)}</p></div></section>
+  <section class="section"><div class="wrap grid">${page.sections.map(([title, body]) => `<article class="activation-card"><h2>${escapeHtml(title)}</h2><p>${escapeHtml(body)}</p></article>`).join('')}</div></section>
+</main>
+${footer('./')}
+</body>
+</html>`;
+    writeText(path.join(distDir, page.file), html);
+  }
 }
 
 function writeTrustPage(events) {
@@ -4151,6 +4330,14 @@ function patchEventsBrowsePage(events) {
     .replace(/const CITY_AR = \{[\s\S]*?\};/, `const CITY_AR = ${scriptValue(cityMap)};`)
     .replace(/const CATEGORY_AR = \{[\s\S]*?\};/, `const CATEGORY_AR = ${scriptValue(categoryMap)};`);
 
+  next = next
+    .replace('<input id="eventSearch" type="search"', '<input id="eventSearch" aria-label="بحث في الفعاليات" type="search"')
+    .replace('<select id="cityFilter">', '<select id="cityFilter" aria-label="تصفية حسب المدينة">')
+    .replace('<select id="categoryFilter">', '<select id="categoryFilter" aria-label="تصفية حسب التصنيف">')
+    .replace('<select id="audienceFilter">', '<select id="audienceFilter" aria-label="تصفية حسب فئة الجمهور">')
+    .replace('<select id="statusFilter">', '<select id="statusFilter" aria-label="تصفية حسب حالة الفعالية">')
+    .replace(/target="_blank" rel="noopener"/g, 'target="_blank" rel="noopener noreferrer"');
+
   const initialSearchBlock = `
     function applyInitialSearchQuery() {
       const params = new URLSearchParams(window.location.search);
@@ -4316,10 +4503,20 @@ body { line-height:1.45; }
   html, body { overflow:hidden; }
   .screen { grid-template-rows:62px minmax(0, 1fr) 34px; }
   .screen .topbar { flex-direction:row; align-items:center; }
-  .screen .stage { grid-template-columns:1fr; padding:0 12px 10px; gap:10px; }
-  .screen .focus { padding:14px; }
-  .screen .side { padding:12px; }
-  .screen .countdown { font-size:42px; }
+  .screen .stage {
+    grid-template-columns:1fr;
+    grid-template-rows:minmax(0, 54%) minmax(0, 46%);
+    height:calc(100vh - 96px);
+    padding:0 12px 10px;
+    gap:10px;
+  }
+  .screen .focus { padding:14px; height:100%; min-height:0; }
+  .screen .side { padding:12px; height:100%; min-height:0; }
+  .screen .focus h1 { min-height:2.2em; }
+  .screen .focus-meta { min-height:2.9em; }
+  .screen .countdown { font-size:42px; min-height:1em; }
+  .screen .live-alert { min-height:78px; }
+  .screen .queue { min-height:160px; }
   .screen .queue-item:nth-child(n+3) { display:none; }
   .screen .qr-panel { display:none; }
   .screen .actions a { min-height:34px; padding:7px 10px; font-size:12px; }
@@ -4590,14 +4787,11 @@ function writeServiceWorker() {
     './source-coverage-gaps.json',
     './source-health.html',
     './source-health.json',
-    './sources.json',
-    './methodology.json',
     './organizer-intake.html',
     './organizer-intake.json',
     './activation.json',
     './readiness.html',
     './readiness.json',
-    './trust.json',
     './events.ics',
     './feeds/all.ics',
     './feeds/all.xml',
@@ -4635,7 +4829,7 @@ function sitemapImageXml(event = {}) {
 
 function writeSitemap(events = []) {
   const eventByPage = new Map(events.map((event) => [`events/${event.file_slug}.html`, event]));
-  const ownerOnlyPages = new Set(['sources.html', 'methodology.html', 'trust.html']);
+  const ownerOnlyPages = new Set(['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html']);
   const sitemapPaths = [...new Set(htmlFiles(distDir)
     .map((file) => file.replace(/\\/g, '/'))
     .filter((file) => !ownerOnlyPages.has(file))
@@ -4840,6 +5034,17 @@ function injectGlobalFeedAlternates(html, filePath) {
   return html.replace(/<\/head>/i, `  ${links}\n</head>`);
 }
 
+function protectTargetBlankLinks(html) {
+  return html.replace(/<a\b([^>]*\btarget=["']_blank["'][^>]*)>/gi, (tag, attrs) => {
+    const relMatch = attrs.match(/\brel=["']([^"']*)["']/i);
+    if (!relMatch) return `<a${attrs} rel="noopener noreferrer">`;
+    const relValues = new Set(relMatch[1].split(/\s+/).filter(Boolean));
+    relValues.add('noopener');
+    relValues.add('noreferrer');
+    return tag.replace(/\brel=["'][^"']*["']/i, `rel="${[...relValues].join(' ')}"`);
+  });
+}
+
 function containsExcludedSlug(value, excludedSlugs) {
   const text = String(value || '');
   return excludedSlugs.some((slug) => text.includes(slug));
@@ -4920,11 +5125,21 @@ function pruneExcludedPublicArtifacts(events) {
 function decorateBrandHtml(html, filePath) {
   let next = injectGlobalFeedAlternates(injectPlatformWebSiteJsonLd(injectFallbackJsonLd(normalizeSeoMetaDescription(normalizeBrandText(html)))), filePath);
   next = next.replace(/<style id="eventlive-brand-pulse">[\s\S]*?<\/style>/g, '');
+  next = next.replace(/<script defer data-domain="eventme\.live" src="https:\/\/plausible\.io\/js\/script\.tagged-events\.js"><\/script>/g, '');
+  next = next.replace(/<script id="eventlive-analytics-runtime">[\s\S]*?<\/script>/g, '');
   next = next.replace(/<\/head>/i, `  ${brandCss}\n</head>`);
+  if (!isOwnerOnlyPage(filePath)) {
+    next = next.replace(/<\/head>/i, `  ${analyticsHeadSnippet()}\n</head>`);
+    next = next.replace(/<\/body>/i, `${analyticsRuntimeScript()}\n</body>`);
+  }
   next = next.replace(/<(b|strong)([^>]*)>EventLive<\/\1>/g, `<$1$2>${brandVisual}</$1>`);
   next = next.replace(/<div class="brand-name">EventLive<\/div>/g, `<div class="brand-name">${brandVisual}</div>`);
   next = next.replace(/<div class="brand">EventLive<\/div>/g, `<div class="brand brand-word-wrap">${brandVisual}</div>`);
   next = next.replace(/<a\b[^>]+href=["']\.\/current-release-bundle\.json["'][\s\S]*?<\/a>/g, '');
+  next = protectTargetBlankLinks(next);
+  if (!isOwnerOnlyPage(filePath) && !/privacy\.html/.test(next) && /<\/footer>/i.test(next)) {
+    next = next.replace(/<\/footer>/i, `<nav class="footer-links" aria-label="روابط الثقة"><a href="./privacy.html">الخصوصية</a><a href="./terms.html">الشروط</a><a href="./source-rights.html">حقوق المصادر</a></nav></footer>`);
+  }
   return next;
 }
 
@@ -4937,6 +5152,33 @@ function patchFile(filePath) {
   const after = ext === '.html' ? stripTrailingWhitespace(ownerFiltered) : ownerFiltered;
   if (after === before) return false;
   fs.writeFileSync(filePath, after, 'utf8');
+  return true;
+}
+
+function hideOwnerOnlyManifestShortcuts() {
+  const manifestPath = path.join(distDir, 'manifest.webmanifest');
+  if (!fs.existsSync(manifestPath)) return false;
+  const before = fs.readFileSync(manifestPath, 'utf8');
+  let manifest;
+  try {
+    manifest = JSON.parse(before);
+  } catch {
+    return false;
+  }
+  const ownerOnlyTargets = new Set([
+    './sources.html',
+    './methodology.html',
+    './trust.html',
+    './candidates.html',
+    './resolver.html',
+    './source-health.html'
+  ]);
+  if (Array.isArray(manifest.shortcuts)) {
+    manifest.shortcuts = manifest.shortcuts.filter((shortcut) => !ownerOnlyTargets.has(shortcut.url));
+  }
+  const after = `${JSON.stringify(manifest, null, 2)}\n`;
+  if (after === before) return false;
+  fs.writeFileSync(manifestPath, after, 'utf8');
   return true;
 }
 
@@ -4985,6 +5227,7 @@ const categoryFallback = writeLinkedCategoryFallbackPages(events);
 writeSourceCoverageGapsPage(events);
 writeRegionsCoveragePage(events);
 writeReadinessPage(events);
+writeCompliancePolicyPages();
 writeTrustPage(events);
 writePublicSourcesPage(events);
 writeLiveUpdatesPage(events);
@@ -4999,6 +5242,7 @@ writeSitemap(events);
 writeAiSearchFiles(events);
 
 const patched = walkFiles(distDir).filter(patchFile);
+hideOwnerOnlyManifestShortcuts();
 const report = [
   `# ${platformName} Build Report`,
   `- Built at: ${buildAt}`,

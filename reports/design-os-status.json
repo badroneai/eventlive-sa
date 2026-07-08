@@ -1,0 +1,89 @@
+{
+  "schema": "eventlive.design-os-status.v1",
+  "generated_at": "2026-07-08T01:39:49.885Z",
+  "status": "PASS",
+  "identity": {
+    "brand": "EventLive",
+    "domain": "eventme.live",
+    "font": "IBM Plex Sans Arabic",
+    "live_mark": "red pulsing i-dot"
+  },
+  "totals": {
+    "required_surfaces": 10,
+    "surfaces_passed": 9,
+    "launch_pages_checked": 38,
+    "visual_pages_checked": 0
+  },
+  "surfaces": [
+    {
+      "id": "home",
+      "name": "الرئيسية",
+      "url": "/index.html",
+      "status": "PASS",
+      "evidence": "EventLive | فعاليات السعودية الآن"
+    },
+    {
+      "id": "events",
+      "name": "كل الفعاليات",
+      "url": "/events.html",
+      "status": "PASS",
+      "evidence": "EventLive | فعاليات السعودية مباشرة"
+    },
+    {
+      "id": "event-detail",
+      "name": "صفحة فعالية",
+      "url": "/events/demo-event.html",
+      "status": "NOT_STARTED",
+      "evidence": "pending visual/design sweep"
+    },
+    {
+      "id": "today",
+      "name": "اليوم",
+      "url": "/today.html",
+      "status": "PASS",
+      "evidence": "EventLive | الآن"
+    },
+    {
+      "id": "week",
+      "name": "هذا الأسبوع",
+      "url": "/this-week.html",
+      "status": "PASS",
+      "evidence": "فعاليات هذا الأسبوع | EventLive"
+    },
+    {
+      "id": "screen",
+      "name": "شاشة الحضور",
+      "url": "/screen.html",
+      "status": "PASS",
+      "evidence": "EventLive | شاشة الحضور"
+    },
+    {
+      "id": "organizers",
+      "name": "المنظمين",
+      "url": "/organizers.html",
+      "status": "PASS",
+      "evidence": "EventLive | للمنظمين"
+    },
+    {
+      "id": "cities",
+      "name": "المدن",
+      "url": "/cities.html",
+      "status": "PASS",
+      "evidence": "فعاليات مدن السعودية | EventLive"
+    },
+    {
+      "id": "categories",
+      "name": "التصنيفات",
+      "url": "/categories.html",
+      "status": "PASS",
+      "evidence": "تصنيفات فعاليات السعودية | EventLive"
+    },
+    {
+      "id": "guides",
+      "name": "الأدلة",
+      "url": "/guides.html",
+      "status": "PASS",
+      "evidence": "EventLive | أدلة EventLive لفعاليات السعودية"
+    }
+  ]
+}
