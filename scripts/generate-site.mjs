@@ -775,7 +775,12 @@ function baseHead({ title, description, canonical, image, manifestHref = './mani
 }
 
 function analyticsHeadSnippet() {
-  return `<script defer data-domain="${platformDomain}" src="https://plausible.io/js/script.tagged-events.js"></script>`;
+  return `<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-BwvEgusGCTTM9Ak8D0dKB.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>`;
 }
 
 function analyticsRuntimeScript() {
@@ -5228,6 +5233,9 @@ function decorateBrandHtml(html, filePath) {
   let next = injectGlobalFeedAlternates(injectPlatformWebSiteJsonLd(injectFallbackJsonLd(normalizeSeoMetaDescription(normalizeBrandText(html)))), filePath);
   next = next.replace(/<style id="eventlive-brand-pulse">[\s\S]*?<\/style>/g, '');
   next = next.replace(/<script defer data-domain="eventme\.live" src="https:\/\/plausible\.io\/js\/script\.tagged-events\.js"><\/script>/g, '');
+  next = next.replace(/<!-- Privacy-friendly analytics by Plausible -->\s*/g, '');
+  next = next.replace(/<script async src="https:\/\/plausible\.io\/js\/pa-[^"]+\.js"><\/script>\s*/g, '');
+  next = next.replace(/<script>\s*window\.plausible=window\.plausible\|\|function\(\)\{[\s\S]*?plausible\.init\(\)\s*<\/script>\s*/g, '');
   next = next.replace(/<script id="eventlive-analytics-runtime">[\s\S]*?<\/script>/g, '');
   next = next.replace(/<\/head>/i, `  ${brandCss}\n</head>`);
   if (!isOwnerOnlyPage(filePath)) {
