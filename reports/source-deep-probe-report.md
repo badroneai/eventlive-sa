@@ -1,14 +1,14 @@
 # EventLive Source Deep Probe
 
-Generated at: 2026-07-07T20:39:55.786Z
+Generated at: 2026-07-08T03:43:06.934Z
 
 ## Summary
 
 - Probed sources: 22
-- Extractor-ready: 11
+- Extractor-ready: 10
 - Blocked/protected: 11
 - Partnership lanes: 0
-- Watch/evidence-only: 0
+- Watch/evidence-only: 1
 
 ## Ranked Sources
 
@@ -21,11 +21,11 @@ Generated at: 2026-07-07T20:39:55.786Z
 | 66 | tabuk-chamber-events | 200 | 48 | probe-hidden-api-or-html-table | 0 | 0 | 0 | الغرفة التجارية بتبوك | TABUK CHAMBER |
 | 34 | visit-saudi-calendar-pdf | 200 | 46 | probe-hidden-api-or-html-table | 0 | 0 | 0 | - |
 | 36 | sela-sea-expo | 200 | 46 | probe-hidden-api-or-html-table | 0 | 0 | 0 | Sela | Spectacular Everyday |
-| 42 | aseer-season-asda | 200 | 46 | probe-hidden-api-or-html-table | 0 | 0 | 0 | Aseer Development Authority | Qimam wa Shiyam Strategy |
 | 40 | diriyah-season | 200 | 36 | probe-hidden-api-or-html-table | 0 | 0 | 0 | Diriyah Season – Coming Soon |
 | 45 | saudi-university-events | 200 | 36 | probe-hidden-api-or-html-table | 0 | 0 | 2 | KAUST | A top research university in the Middle East |
 | 50 | saudi-winter-calendar-spa | 200 | 36 | probe-hidden-api-or-html-table | 0 | 0 | 0 | STA Launches&#x27; Saudi Winter&#x27; Events Calendar |
 | 62 | baha-amanah-events | 200 | 23 | blocked-or-protected:bot-protection | 0 | 0 | 19 | فعاليات الباحة |
+| 42 | aseer-season-asda | 404 | 0 | watch-or-evidence-only | 0 | 0 | 0 | - |
 | 18 | riyadh-season | 200 | -23 | blocked-or-protected:bot-protection | 0 | 0 | 0 | - |
 | 27 | enjoy-saudi-events | 403 | -23 | blocked-or-protected:http-403 | 0 | 0 | 0 | تعذر الوصول إلى الصفحة | Access Unavailable |
 | 38 | historic-jeddah-albalad | 403 | -23 | blocked-or-protected:http-403 | 0 | 0 | 0 | Just a moment... |
@@ -46,4 +46,4 @@ Generated at: 2026-07-07T20:39:55.786Z
 - tabuk-chamber-events: probe-hidden-api-or-html-table (score=48, gcal=0, structured=0, links=0)
 - visit-saudi-calendar-pdf: probe-hidden-api-or-html-table (score=46, gcal=0, structured=0, links=0)
 - sela-sea-expo: probe-hidden-api-or-html-table (score=46, gcal=0, structured=0, links=0)
-- aseer-season-asda: probe-hidden-api-or-html-table (score=46, gcal=0, structured=0, links=0)
+- diriyah-season: probe-hidden-api-or-html-table (score=36, gcal=0, structured=0, links=0)

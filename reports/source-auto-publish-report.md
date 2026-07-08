@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-07T20:49:51.286Z
+- published_at: 2026-07-08T03:51:04.426Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 185
-- published_new: 0
-- linked_existing: 140
+- candidates_seen: 183
+- published_new: 1
+- linked_existing: 137
 - blocked_remaining: 45
 
 ## Blocked summary
@@ -17,6 +17,7 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
+| candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45 | published | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-4 | معسكر تطوير تطبيقات الويب باستخدام لغة Python |
 | candidate-riyadh-city-events-poppy-playtime-20251010-b96ed7bc | linked-existing | event-poppy-playtime | already linked to catalog event |
 | candidate-riyadh-city-events-riyadh-season-blvd-city-20251010-d23bcbe8 | linked-existing | event-riyadh-season-blvd-city | already linked to catalog event |
 | candidate-visit-saudi-seasons-the-groves-20251105-b7362f59 | linked-existing | event-the-groves | already linked to catalog event |
@@ -49,8 +50,6 @@
 | candidate-mdlbeast-events-unstable-20260710-5647df2e | linked-existing | event-unstable | already linked to catalog event |
 | candidate-mdlbeast-events-beast-house-20260710-83049a2a | linked-existing | event-beast-house | already linked to catalog event |
 | candidate-future-skills-catalog-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي-20260712-ed2ad6f2 | linked-existing | event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي | already linked to catalog event |
-| candidate-future-skills-catalog-comptia-a-20260712-0744599d | linked-existing | event-comptia-a | already linked to catalog event |
-| candidate-future-skills-catalog-comptia-a-20260712-dd4c25aa | linked-existing | event-comptia-a | already linked to catalog event |
 | candidate-monshaat-events-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م-20260712-1d4a3074 | linked-existing | event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م | already linked to catalog event |
 | candidate-future-skills-catalog-دورة-comptia-a-20260712-dd4c25aa | linked-existing | event-دورة-comptia-a | already linked to catalog event |
 | candidate-future-skills-catalog-security-operations-threat-detection-incident-response-عمليات-الأمن-السي-20260712-c94b7135 | linked-existing | event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي | already linked to catalog event |
@@ -63,7 +62,6 @@
 | candidate-saudi-university-events-semi-finals-join-the-celebration-at-the-fifa-fan-zone-20260714-c377ce4a | linked-existing | event-semi-finals-join-the-celebration-at-the-fifa-fan-zone | already linked to catalog event |
 | candidate-sfda-events-متطلبات-الاستخدام-الآمن-للأجهزة-والمستلزمات-الطبية-لمراكز-الأسنان-20260715-228461a9 | linked-existing | event-متطلبات-الاستخدام-الآمن-للأجهزة-والمستلزمات-الطبية-لمراكز-الأسنان | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-وتصنيع-الحلول-الهندسية-20260719-944bbe1b | linked-existing | event-معسكر-تصميم-وتصنيع-الحلول-الهندسية | already linked to catalog event |
-| candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45 | linked-existing | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-3 | already linked to catalog event |
 | candidate-saudi-university-events-fifa-world-cup-2026-final-celebrate-footballs-biggest-night-at-the-kaust-20260719-c9d0e20a | linked-existing | event-fifa-world-cup-2026-final-celebrate-footballs-biggest-night-at-the-kaust | already linked to catalog event |
 | candidate-sfda-events-دور-مقدمي-الرعاية-الصحية-وضباط-الاتصال-في-التعامل-مع-انذارات-السلامة-الص-20260721-56cf21b4 | linked-existing | event-دور-مقدمي-الرعاية-الصحية-وضباط-الاتصال-في-التعامل-مع-انذارات-السلامة-الص | already linked to catalog event |
 | candidate-riyadh-city-events-summer-splash-running-event-20260725-0b63acb2 | linked-existing | event-summer-splash-running-event | already linked to catalog event |

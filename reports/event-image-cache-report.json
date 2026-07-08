@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T20:51:54.599Z",
+  "generated_at": "2026-07-08T03:53:01.109Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -145,11 +145,6 @@
       "events": 1
     },
     {
-      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/2022-06/WhatsApp%20Image%202021-12-08%20at%201.25.06%20PM_3.jpeg",
-      "file": "dist/assets/event-images/aws-security-essential-fb6d62a41b.jpg",
-      "events": 2
-    },
-    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/5elosms3.yqj.jpg",
       "file": "dist/assets/event-images/معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي-0252685fd5.jpg",
       "events": 1
@@ -202,7 +197,7 @@
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/emzgfcby.aiz.webp",
       "file": "dist/assets/event-images/معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-8b9b4fc037.webp",
-      "events": 2
+      "events": 3
     },
     {
       "source_url": "https://hub.misk.org.sa/media/eoxb5tmh/ec-founder-leadership-excellence_en.png",
@@ -627,6 +622,11 @@
     {
       "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2022-06/power-bi-to-quickbooks-time-integration.png?itok=-Z5CPqSG",
       "file": "dist/assets/event-images/تصور-البيانات-بأستخدام-power-bi-a572a08dc3.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/2022-06/WhatsApp%20Image%202021-12-08%20at%201.25.06%20PM_3.jpeg",
+      "file": "dist/assets/event-images/aws-security-essential-fb6d62a41b.jpg",
       "events": 1
     },
     {

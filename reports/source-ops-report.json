@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T01:40:12.933Z",
+  "generated_at": "2026-07-08T03:53:10.988Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,18 +11,18 @@
   },
   "collection": {
     "basis": "source_collection_report",
-    "collected_at": "2026-07-07T20:45:48.196Z",
+    "collected_at": "2026-07-08T03:47:19.542Z",
     "freshness": "fresh",
-    "discovered": 121,
-    "written": 185
+    "discovered": 125,
+    "written": 183
   },
   "sources": {
     "total": 66,
     "attempted": 34,
     "collection_coverage_pct": 52,
-    "healthy": 14,
+    "healthy": 15,
     "zero_yield": 9,
-    "errors": 11,
+    "errors": 10,
     "not_collected": 32,
     "unattempted_high_priority": 3,
     "health": [
@@ -94,7 +94,7 @@
         "name": "MDLBEAST Events",
         "priority": 8,
         "status": "healthy",
-        "extracted": 3,
+        "extracted": 5,
         "candidates": 5,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
@@ -525,10 +525,10 @@
         "id": "asharqia-chamber-events",
         "name": "Asharqia Chamber Events",
         "priority": 59,
-        "status": "collection-error",
-        "extracted": 0,
+        "status": "healthy",
+        "extracted": 2,
         "candidates": 2,
-        "next_action": "fetch failed"
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "qassim-chamber-events",

@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-07-08T01:40:12.933Z
+- generated_at: 2026-07-08T03:53:10.988Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -13,7 +13,7 @@
 - Sources in registry: 66
 - Sources attempted in latest collection: 34
 - Collection coverage: 52%
-- Healthy sources: 14
+- Healthy sources: 15
 - Zero-yield sources: 9
 - High-priority unattempted sources: 3
 - Candidates: 183
@@ -68,7 +68,7 @@
 | 5 | webook Explore | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 6 | Hala Yalla | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 7 | Experience AlUla Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
-| 8 | MDLBEAST Events | healthy | 3 | 5 | استمر بالمراجعة والتكرار قبل النشر. |
+| 8 | MDLBEAST Events | healthy | 5 | 5 | استمر بالمراجعة والتكرار قبل النشر. |
 | 9 | Monsha'at All Events | collection-error | 0 | 3 | fetch failed |
 | 10 | Invest Saudi Events | healthy | 3 | 3 | استمر بالمراجعة والتكرار قبل النشر. |
 | 11 | RFECC What's On | healthy | 6 | 6 | استمر بالمراجعة والتكرار قبل النشر. |
@@ -116,7 +116,7 @@
 | 53 | General Entertainment Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 54 | SDAIA Calendar and Events | collection-error | 0 | 2 | fetch failed |
 | 55 | Makkah Chamber Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
-| 59 | Asharqia Chamber Events | collection-error | 0 | 2 | fetch failed |
+| 59 | Asharqia Chamber Events | healthy | 2 | 2 | استمر بالمراجعة والتكرار قبل النشر. |
 | 60 | Qassim Chamber Events | collection-error | 0 | 0 | HTTP 403 |
 | 61 | Abha Chamber Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
 | 62 | Baha Municipality Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |

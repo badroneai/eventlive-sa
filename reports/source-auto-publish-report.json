@@ -1,18 +1,24 @@
 {
-  "published_at": "2026-07-07T20:49:51.286Z",
+  "published_at": "2026-07-08T03:51:04.426Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 185,
+  "candidates_seen": 183,
   "totals": {
-    "candidates_seen": 185,
-    "published": 0,
-    "linked_existing": 140,
+    "candidates_seen": 183,
+    "published": 1,
+    "linked_existing": 137,
     "blocked": 45,
-    "reconciled": 140
+    "reconciled": 138
   },
-  "published": [],
+  "published": [
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45",
+      "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-4",
+      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python"
+    }
+  ],
   "linked_existing": [
     {
       "candidate_id": "candidate-riyadh-city-events-poppy-playtime-20251010-b96ed7bc",
@@ -207,18 +213,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-future-skills-catalog-comptia-a-20260712-0744599d",
-      "event_id": "event-comptia-a",
-      "title": "CompTIA A+",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-future-skills-catalog-comptia-a-20260712-dd4c25aa",
-      "event_id": "event-comptia-a",
-      "title": "CompTIA A+",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-monshaat-events-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م-20260712-1d4a3074",
       "event_id": "event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م",
       "title": "أسبوع العقار والمقاولات 12- 16 يوليو 2026م",
@@ -288,12 +282,6 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-وتصنيع-الحلول-الهندسية-20260719-944bbe1b",
       "event_id": "event-معسكر-تصميم-وتصنيع-الحلول-الهندسية",
       "title": "معسكر تصميم وتصنيع الحلول الهندسية",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45",
-      "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-3",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
       "reason": "already linked to catalog event"
     },
     {
