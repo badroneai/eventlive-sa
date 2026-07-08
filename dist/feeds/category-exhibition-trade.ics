@@ -7,7 +7,7 @@ X-WR-CALNAME:معارض وتجارية | EventLive
 X-WR-TIMEZONE:Asia/Riyadh
 BEGIN:VEVENT
 UID:event-horses-and-equestrian-heritage-exhibition@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20260224T183000Z
 DTEND:20260830T205500Z
 SUMMARY:Horses and Equestrian Heritage Exhibition
@@ -17,7 +17,7 @@ URL:https://eventme.live/events/event-horses-and-equestrian-heritage-exhibition.
 END:VEVENT
 BEGIN:VEVENT
 UID:event-prince-faisal-bin-fahd-art-exhibition-summer-2026@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20260701T130000Z
 DTEND:20260801T190000Z
 SUMMARY:Prince Faisal Bin Fahd Art Exhibition: Summer 2026
@@ -27,7 +27,7 @@ URL:https://eventme.live/events/event-prince-faisal-bin-fahd-art-exhibition-summ
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-logistic-038-warehousing-expo@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20260830T060000Z
 DTEND:20260901T150000Z
 SUMMARY:Saudi Logistic & Warehousing Expo
@@ -36,8 +36,18 @@ LOCATION:Riyadh Front Exhibition & Conference Center
 URL:https://eventme.live/events/event-saudi-logistic-038-warehousing-expo.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-saudi-wood-expo-2026@eventme.live
+DTSTAMP:20260708T101026Z
+DTSTART:20260830T060000Z
+DTEND:20260901T150000Z
+SUMMARY:Saudi Wood Expo 2026
+DESCRIPTION:Witness the staggering growth of Saudi Arabia's woodworking industry\, projected to... Saudi Wood Expo 2026 ضمن معارض وتجارية في الرياض. تبدأ الفعالية ٣٠‏/٠٨‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٠١‏/٠٩‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Eye of Riyadh Events.
+LOCATION:Riyadh International Convention & Exhibition Center \, Riyadh
+URL:https://eventme.live/events/event-saudi-wood-expo-2026.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-merath-middle-east-museums-heritage-expo@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20260830T120000Z
 DTEND:20260901T180000Z
 SUMMARY:Merath – Middle East Museums & Heritage Expo
@@ -47,7 +57,7 @@ URL:https://eventme.live/events/event-merath-middle-east-museums-heritage-expo.h
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-light-and-sound-sls-expo@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20260830T120000Z
 DTEND:20260901T180000Z
 SUMMARY:Saudi Light and Sound (SLS) Expo
@@ -57,7 +67,7 @@ URL:https://eventme.live/events/event-saudi-light-and-sound-sls-expo.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-entertainment-and-amusement-expo@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20260830T120000Z
 DTEND:20260901T180000Z
 SUMMARY:Saudi Entertainment and Amusement Expo
@@ -67,7 +77,7 @@ URL:https://eventme.live/events/event-saudi-entertainment-and-amusement-expo.htm
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-woodshow@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20260901T100000Z
 DTEND:20260903T190000Z
 SUMMARY:Saudi WoodShow
@@ -77,7 +87,7 @@ URL:https://eventme.live/events/event-saudi-woodshow.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-arabian-and-international-industries-exhibition@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20260902T060000Z
 DTEND:20260911T150000Z
 SUMMARY:Arabian and International Industries Exhibition
@@ -87,7 +97,7 @@ URL:https://eventme.live/events/event-arabian-and-international-industries-exhib
 END:VEVENT
 BEGIN:VEVENT
 UID:event-inter-aviation-arabia@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20260908T060000Z
 DTEND:20260910T150000Z
 SUMMARY:Inter Aviation Arabia
@@ -97,7 +107,7 @@ URL:https://eventme.live/events/event-inter-aviation-arabia.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-fibo-2026@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20260908T060000Z
 DTEND:20260910T150000Z
 SUMMARY:FIBO 2026
@@ -107,7 +117,7 @@ URL:https://eventme.live/events/event-fibo-2026.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-wtm-spotlight-riyadh@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20260908T060000Z
 DTEND:20260910T150000Z
 SUMMARY:WTM Spotlight Riyadh
@@ -117,7 +127,7 @@ URL:https://eventme.live/events/event-wtm-spotlight-riyadh.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-wood-expo@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20260908T120000Z
 DTEND:20260910T180000Z
 SUMMARY:Saudi Wood Expo
@@ -127,7 +137,7 @@ URL:https://eventme.live/events/event-saudi-wood-expo.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-industrial-series@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20260908T120000Z
 DTEND:20260910T180000Z
 SUMMARY:Saudi Industrial Series
@@ -137,7 +147,7 @@ URL:https://eventme.live/events/event-saudi-industrial-series.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-smart-cities-saudi-expo@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20260915T110000Z
 DTEND:20260917T190000Z
 SUMMARY:Smart Cities Saudi Expo
@@ -147,7 +157,7 @@ URL:https://eventme.live/events/event-smart-cities-saudi-expo.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-gulf-steel-storage-tank-refinery-expo@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20260920T060000Z
 DTEND:20260922T150000Z
 SUMMARY:Gulf Steel\, Storage Tank & Refinery Expo
@@ -157,7 +167,7 @@ URL:https://eventme.live/events/event-gulf-steel-storage-tank-refinery-expo.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-the-egyptian-products-exhibition@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20260924T060000Z
 DTEND:20260929T150000Z
 SUMMARY:The Egyptian Products Exhibition
@@ -167,7 +177,7 @@ URL:https://eventme.live/events/event-the-egyptian-products-exhibition.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-natrual-expo@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20261026T060000Z
 DTEND:20261029T150000Z
 SUMMARY:Natrual Expo
@@ -177,7 +187,7 @@ URL:https://eventme.live/events/event-natrual-expo.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-consumer-trade-fair@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20261202T060000Z
 DTEND:20261209T150000Z
 SUMMARY:Consumer Trade Fair
@@ -187,7 +197,7 @@ URL:https://eventme.live/events/event-consumer-trade-fair.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-pfl-mena-final@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20261211T060000Z
 DTEND:20261211T150000Z
 SUMMARY:PFL Mena Final
@@ -197,7 +207,7 @@ URL:https://eventme.live/events/event-pfl-mena-final.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-intl-construction-interior-design-cidex-2026@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20261214T060000Z
 DTEND:20261217T150000Z
 SUMMARY:Saudi Int’l Construction & Interior Design CIDEX 2026
@@ -207,7 +217,7 @@ URL:https://eventme.live/events/event-saudi-intl-construction-interior-design-ci
 END:VEVENT
 BEGIN:VEVENT
 UID:event-ctw-global-ksa-gulf-4p-mach-tools@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20261214T060000Z
 DTEND:20261217T150000Z
 SUMMARY:CTW Global KSA\, Gulf 4P & Mach Tools
@@ -217,7 +227,7 @@ URL:https://eventme.live/events/event-ctw-global-ksa-gulf-4p-mach-tools.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-china-homelife-saudi-arabia-2026@eventme.live
-DTSTAMP:20260708T014000Z
+DTSTAMP:20260708T101026Z
 DTSTART:20261220T060000Z
 DTEND:20261222T150000Z
 SUMMARY:China Homelife Saudi Arabia 2026

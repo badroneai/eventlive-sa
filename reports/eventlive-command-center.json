@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.command-center.v1",
-  "generated_at": "2026-07-08T01:39:49.885Z",
+  "generated_at": "2026-07-08T10:10:06.437Z",
   "project": {
     "name": "EventLive",
     "domain": "eventme.live",
@@ -18,14 +18,14 @@
     ]
   },
   "totals": {
-    "catalog_events": 141,
+    "catalog_events": 161,
     "public_events": 429,
-    "source_candidates": 183,
+    "source_candidates": 184,
     "registered_sources": 66,
     "live_ready": 51,
     "ended_events": 294,
-    "delivery_standard_pass": 20,
-    "delivery_standard_partial": 1,
+    "delivery_standard_pass": 21,
+    "delivery_standard_partial": 0,
     "delivery_standard_not_started": 0
   },
   "gates": [
@@ -36,7 +36,7 @@
     },
     {
       "name": "23-Gate Delivery Standard",
-      "status": "PARTIAL",
+      "status": "PASS",
       "evidence": "reports/delivery-readiness-standard-status.md"
     },
     {

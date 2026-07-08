@@ -1,14 +1,14 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-07-08T01:39:49.885Z
+- Generated at: 2026-07-08T10:10:06.437Z
 - Status: PASS
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 66
-- Candidates: 183
-- Matched candidates: 140
+- Candidates: 184
+- Matched candidates: 157
 - Auto-publish sources: 13
 - Candidate-only sources: 8
 - Partnership-required sources: 3

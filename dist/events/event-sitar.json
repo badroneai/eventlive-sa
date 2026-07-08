@@ -1,0 +1,102 @@
+{
+  "id": "event-sitar",
+  "title": "SITAR",
+  "summary": "برنامج أو مبادرة ثقافية رسمية من تقويم وزارة الثقافة. المدة طويلة لذلك تحفظ كدليل مصدر ولا تنشر تلقائياً كفعالية لحظية. SITAR ضمن ثقافة وفنون في الرياض. تبدأ الفعالية ٢١‏/٠٩‏/٢٠٢٢، ٣:٠٠ ص وتنتهي ٣١‏/١٢‏/٢٠٣٠، ٣:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Ministry of Culture Commission Calendars.",
+  "canonical_url": "https://eventme.live/events/event-sitar.html",
+  "detail_url": "./events/event-sitar.html",
+  "calendar_url": "./events/event-sitar.ics",
+  "source_label": "Ministry of Culture Commission Calendars",
+  "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Production%20Support%20Program%20in%20the%20Theater%20and%20Performing%20Arts%20Sector/EventDetail",
+  "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Production%20Support%20Program%20in%20the%20Theater%20and%20Performing%20Arts%20Sector/EventDetail",
+  "city": "الرياض",
+  "venue": "Riyadh",
+  "venue_address": "Riyadh",
+  "starts_at": "2022-09-21T03:00:00+03:00",
+  "ends_at": "2030-12-31T03:00:00+03:00",
+  "status": "ongoing",
+  "status_label": "برنامج جارٍ",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/sitar-7eda68541c.png",
+  "image_alt": "SITAR",
+  "category": "ثقافة وفنون",
+  "category_url": "./categories/culture-arts.html",
+  "audiences": [
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "SITAR",
+    "ثقافة وفنون",
+    "cultural initiative",
+    "برنامج ممتد",
+    "برنامج جارٍ",
+    "الرياض",
+    "Riyadh",
+    "Ministry of Culture Commission Calendars",
+    "music",
+    "heritage",
+    "architecture",
+    "design",
+    "culture",
+    "arts",
+    "Initiative",
+    "long-running cultural initiative",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2022-09-21T03:00:00+03:00",
+      "ends_at": "2030-12-31T03:00:00+03:00",
+      "room": "Riyadh",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "SITAR",
+    "startDate": "2022-09-21T03:00:00+03:00",
+    "endDate": "2030-12-31T03:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Riyadh",
+      "address": "Riyadh"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Ministry of Culture commissions"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/sitar-7eda68541c.png"
+    ],
+    "description": "برنامج أو مبادرة ثقافية رسمية من تقويم وزارة الثقافة. المدة طويلة لذلك تحفظ كدليل مصدر ولا تنشر تلقائياً كفعالية لحظية. SITAR ضمن ثقافة وفنون في الرياض. تبدأ الفعالية ٢١‏/٠٩‏/٢٠٢٢، ٣:٠٠ ص وتنتهي ٣١‏/١٢‏/٢٠٣٠، ٣:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Ministry of Culture Commission Calendars.",
+    "url": "https://eventme.live/events/event-sitar.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-sitar.html",
+    "isAccessibleForFree": false,
+    "keywords": "SITAR, ثقافة وفنون, cultural initiative, برنامج ممتد, برنامج جارٍ, الرياض, Riyadh, Ministry of Culture Commission Calendars, music, heritage, architecture, design, culture, arts, Initiative, long-running cultural initiative, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Production%20Support%20Program%20in%20the%20Theater%20and%20Performing%20Arts%20Sector/EventDetail"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Production%20Support%20Program%20in%20the%20Theater%20and%20Performing%20Arts%20Sector/EventDetail",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

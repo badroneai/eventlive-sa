@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-07-08T01:40:00.463Z",
+  "generated_at": "2026-07-08T10:10:26.415Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-operational-readiness",
   "totals": {
-    "events": 429,
-    "live_ready": 51,
-    "attendance_windows": 429,
-    "basic_windows": 378,
-    "ready_to_activate": 27,
+    "events": 449,
+    "live_ready": 52,
+    "attendance_windows": 449,
+    "basic_windows": 397,
+    "ready_to_activate": 28,
     "needs_source": 0,
     "needs_approval": 0,
-    "basic_window_stage": 378,
+    "basic_window_stage": 397,
     "needs_program": 0,
-    "needs_work": 378
+    "needs_work": 397
   },
   "stages": {
-    "live-ready": 51,
-    "basic-window": 378
+    "live-ready": 52,
+    "basic-window": 397
   },
   "events": [
     {
@@ -29,7 +29,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-07-15T10:00:00+03:00",
       "ends_at": "2026-07-15T11:00:00+03:00",
-      "updated_at": "2026-07-07T20:51:44.578Z",
+      "updated_at": "2026-07-08T10:09:04.052Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -92,7 +92,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-07-21T10:00:00+03:00",
       "ends_at": "2026-07-21T11:00:00+03:00",
-      "updated_at": "2026-07-07T20:51:44.578Z",
+      "updated_at": "2026-07-08T10:09:04.052Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -155,7 +155,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-08-12T10:00:00+03:00",
       "ends_at": "2026-08-12T12:00:00+03:00",
-      "updated_at": "2026-07-07T20:51:44.578Z",
+      "updated_at": "2026-07-08T10:09:04.052Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -218,7 +218,7 @@
       "category": "مؤتمرات ومنتديات",
       "starts_at": "2026-08-24T09:00:00+03:00",
       "ends_at": "2026-08-26T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.771Z",
+      "updated_at": "2026-07-08T10:08:26.421Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -281,7 +281,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-09-01T09:00:00+03:00",
       "ends_at": "2026-09-04T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.771Z",
+      "updated_at": "2026-07-08T10:08:26.421Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -344,7 +344,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-09-02T09:00:00+03:00",
       "ends_at": "2026-09-11T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.771Z",
+      "updated_at": "2026-07-08T10:08:26.421Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -407,7 +407,7 @@
       "category": "مؤتمرات ومنتديات",
       "starts_at": "2026-09-08T09:00:00+03:00",
       "ends_at": "2026-09-10T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.771Z",
+      "updated_at": "2026-07-08T10:08:26.421Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -470,7 +470,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-09-20T09:00:00+03:00",
       "ends_at": "2026-09-22T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.771Z",
+      "updated_at": "2026-07-08T10:08:26.421Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -533,7 +533,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-09-24T09:00:00+03:00",
       "ends_at": "2026-09-29T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.771Z",
+      "updated_at": "2026-07-08T10:08:26.421Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -596,7 +596,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-09-27T09:00:00+03:00",
       "ends_at": "2026-09-29T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.771Z",
+      "updated_at": "2026-07-08T10:08:26.421Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -659,7 +659,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-12-02T09:00:00+03:00",
       "ends_at": "2026-12-09T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.771Z",
+      "updated_at": "2026-07-08T10:08:26.421Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -722,7 +722,7 @@
       "category": "جوائز وتكريم",
       "starts_at": "2026-12-05T09:00:00+03:00",
       "ends_at": "2026-12-07T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.771Z",
+      "updated_at": "2026-07-08T10:08:26.421Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -785,7 +785,7 @@
       "category": "مؤتمرات ومنتديات",
       "starts_at": "2026-12-07T09:00:00+03:00",
       "ends_at": "2026-12-09T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.771Z",
+      "updated_at": "2026-07-08T10:08:26.421Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -848,7 +848,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-12-14T09:00:00+03:00",
       "ends_at": "2026-12-17T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.771Z",
+      "updated_at": "2026-07-08T10:08:26.421Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -974,7 +974,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-07-06T16:30:00+03:00",
       "ends_at": "2026-07-06T18:30:00+03:00",
-      "updated_at": "2026-07-07T20:51:44.578Z",
+      "updated_at": "2026-07-08T10:09:04.052Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -1037,7 +1037,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2026-07-09T19:30:00+03:00",
       "ends_at": "2026-07-09T23:59:00+03:00",
-      "updated_at": "2026-07-07T20:51:44.578Z",
+      "updated_at": "2026-07-08T10:09:04.052Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -1135,7 +1135,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 4,
+          "days": 5,
           "score": 15
         }
       },
@@ -1163,7 +1163,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2026-07-10T21:00:00+03:00",
       "ends_at": "2026-07-11T03:00:00+03:00",
-      "updated_at": "2026-07-07T20:51:44.578Z",
+      "updated_at": "2026-07-08T10:09:04.052Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -1226,7 +1226,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-07-12T11:00:00+03:00",
       "ends_at": "2026-07-12T13:00:00+03:00",
-      "updated_at": "2026-07-07T20:51:44.578Z",
+      "updated_at": "2026-07-08T10:09:04.052Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -1289,7 +1289,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2026-07-14T21:00:00+03:00",
       "ends_at": "2026-07-14T23:59:00+03:00",
-      "updated_at": "2026-07-07T20:51:44.578Z",
+      "updated_at": "2026-07-08T10:09:04.052Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -1352,7 +1352,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2026-07-19T18:00:00+03:00",
       "ends_at": "2026-07-19T23:59:00+03:00",
-      "updated_at": "2026-07-07T20:51:44.578Z",
+      "updated_at": "2026-07-08T10:09:04.052Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -1415,7 +1415,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-08-18T10:00:00+03:00",
       "ends_at": "2026-08-18T11:00:00+03:00",
-      "updated_at": "2026-07-07T20:51:44.578Z",
+      "updated_at": "2026-07-08T10:09:04.052Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -1478,7 +1478,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-08-30T09:00:00+03:00",
       "ends_at": "2026-09-01T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:22.434Z",
+      "updated_at": "2026-07-08T10:08:35.416Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -1541,7 +1541,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-09-08T09:00:00+03:00",
       "ends_at": "2026-09-10T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:22.434Z",
+      "updated_at": "2026-07-08T10:08:35.416Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -1604,7 +1604,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-09-08T09:00:00+03:00",
       "ends_at": "2026-09-10T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:22.434Z",
+      "updated_at": "2026-07-08T10:08:35.416Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -1667,7 +1667,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-09-08T09:00:00+03:00",
       "ends_at": "2026-09-10T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:22.434Z",
+      "updated_at": "2026-07-08T10:08:35.416Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -1722,6 +1722,69 @@
       "readiness_score": 95
     },
     {
+      "id": "event-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال",
+      "title": "دور الهيئة العامة للغذاء و الدواء في ضمان سلامة الاستخدام الامن لجهاز الماموجرام",
+      "organizer": "Saudi Food and Drug Authority",
+      "city": "عن بعد",
+      "venue": "عن بعد",
+      "category": "ورش تنظيمية وصحية",
+      "starts_at": "2026-10-05T10:00:00+03:00",
+      "ends_at": "2026-10-05T11:00:00+03:00",
+      "updated_at": "2026-07-08T10:09:04.052Z",
+      "status": "upcoming",
+      "status_label": "قادمة",
+      "live_schedule_ready": true,
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-10-05T10:00:00+03:00",
+        "ends_at": "2026-10-05T11:00:00+03:00",
+        "room": "عن بعد",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "detailed",
+      "sessions_count": 1,
+      "detail_url": "./events/event-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال.html",
+      "live_url": "./events/event-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال.html",
+      "calendar_url": "./events/event-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال.ics",
+      "source_label": "Saudi Food and Drug Authority Events",
+      "source_url": "https://www.sfda.gov.sa/ar/workshop/5522010",
+      "evidence_url": "https://www.sfda.gov.sa/ar/workshop/5522010",
+      "source_confidence": "approved-source",
+      "source_confidence_label": "مصدر معتمد",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "published_by": "EventLive Auto Publisher",
+      "trust": {
+        "key": "trusted",
+        "label": "ثقة عالية",
+        "score": 100,
+        "freshness": {
+          "key": "fresh",
+          "label": "محدث خلال أسبوع",
+          "days": 0,
+          "score": 15
+        }
+      },
+      "trust_score": 100,
+      "trust_label": "ثقة عالية",
+      "evidence_gaps": [],
+      "activation_blockers": [],
+      "stage": {
+        "key": "live-ready",
+        "label": "جاهز للزوار",
+        "rank": 0
+      },
+      "action": {
+        "label": "فتح الجدول الحي",
+        "url": "./events/event-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال.html"
+      },
+      "readiness_score": 95
+    },
+    {
       "id": "event-natrual-expo",
       "title": "Natrual Expo",
       "organizer": "Riyadh Front Exhibition & Conference Center",
@@ -1730,7 +1793,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-10-26T09:00:00+03:00",
       "ends_at": "2026-10-29T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:22.434Z",
+      "updated_at": "2026-07-08T10:08:35.416Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -1793,7 +1856,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-12-20T09:00:00+03:00",
       "ends_at": "2026-12-22T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:22.434Z",
+      "updated_at": "2026-07-08T10:08:35.416Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": true,
@@ -1919,7 +1982,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2026-07-07T18:00:00+03:00",
       "ends_at": "2026-07-07T21:00:00+03:00",
-      "updated_at": "2026-07-07T20:51:44.578Z",
+      "updated_at": "2026-07-08T10:09:04.052Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -1982,7 +2045,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-07-06T10:00:00+03:00",
       "ends_at": "2026-07-06T11:00:00+03:00",
-      "updated_at": "2026-07-07T20:51:44.578Z",
+      "updated_at": "2026-07-08T10:09:04.052Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -2045,7 +2108,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-07-06T10:00:00+03:00",
       "ends_at": "2026-07-06T11:00:00+03:00",
-      "updated_at": "2026-07-07T20:51:44.578Z",
+      "updated_at": "2026-07-08T10:09:04.052Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -2108,7 +2171,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-06-23T09:00:00+03:00",
       "ends_at": "2026-06-25T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -2171,7 +2234,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-06-15T09:00:00+03:00",
       "ends_at": "2026-06-17T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -2234,7 +2297,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-06-08T09:00:00+03:00",
       "ends_at": "2026-06-10T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -2297,7 +2360,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-05-19T09:00:00+03:00",
       "ends_at": "2026-05-21T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -2360,7 +2423,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-05-19T09:00:00+03:00",
       "ends_at": "2026-05-21T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -2423,7 +2486,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-05-10T09:00:00+03:00",
       "ends_at": "2026-05-13T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -2486,7 +2549,7 @@
       "category": "مؤتمرات ومنتديات",
       "starts_at": "2026-04-30T09:00:00+03:00",
       "ends_at": "2026-05-02T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -2549,7 +2612,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-04-26T09:00:00+03:00",
       "ends_at": "2026-04-30T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -2612,7 +2675,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-02-26T09:00:00+03:00",
       "ends_at": "2026-03-04T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -2675,7 +2738,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-02-15T09:00:00+03:00",
       "ends_at": "2026-02-17T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -2738,7 +2801,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-02-06T09:00:00+03:00",
       "ends_at": "2026-02-15T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -2801,7 +2864,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-02-05T09:00:00+03:00",
       "ends_at": "2026-02-07T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -2864,7 +2927,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-01-26T09:00:00+03:00",
       "ends_at": "2026-01-28T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -2927,7 +2990,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-01-18T09:00:00+03:00",
       "ends_at": "2026-01-21T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -2990,7 +3053,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-01-08T09:00:00+03:00",
       "ends_at": "2026-01-11T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -3053,7 +3116,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2025-12-15T09:00:00+03:00",
       "ends_at": "2025-12-17T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -3116,7 +3179,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2025-12-15T09:00:00+03:00",
       "ends_at": "2025-12-17T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -3179,7 +3242,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2025-11-05T09:00:00+03:00",
       "ends_at": "2025-11-08T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": true,
@@ -3234,6 +3297,676 @@
       "readiness_score": 95
     },
     {
+      "id": "event-skill-development-initiative",
+      "title": "Skill Development Initiative",
+      "organizer": "Ministry of Culture commissions",
+      "city": "الرياض",
+      "venue": "Riyadh",
+      "category": "ثقافة وفنون",
+      "starts_at": "2021-07-14T03:00:00+03:00",
+      "ends_at": "2030-12-31T03:00:00+03:00",
+      "updated_at": "2026-07-08T10:08:42.469Z",
+      "status": "ongoing",
+      "status_label": "برنامج جارٍ",
+      "live_schedule_ready": false,
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2021-07-14T03:00:00+03:00",
+        "ends_at": "2030-12-31T03:00:00+03:00",
+        "room": "Riyadh",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "detail_url": "./events/event-skill-development-initiative.html",
+      "live_url": "./events/event-skill-development-initiative.html",
+      "calendar_url": "./events/event-skill-development-initiative.ics",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Skills%20development/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Skills%20development/EventDetail",
+      "source_confidence": "approved-source",
+      "source_confidence_label": "مصدر معتمد",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "published_by": "EventLive Auto Publisher",
+      "trust": {
+        "key": "trusted",
+        "label": "ثقة عالية",
+        "score": 95,
+        "freshness": {
+          "key": "fresh",
+          "label": "محدث خلال أسبوع",
+          "days": 0,
+          "score": 15
+        }
+      },
+      "trust_score": 95,
+      "trust_label": "ثقة عالية",
+      "evidence_gaps": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "activation_blockers": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "stage": {
+        "key": "basic-window",
+        "label": "نافذة حضور أساسية",
+        "rank": 3
+      },
+      "action": {
+        "label": "فتح بطاقة الفعالية",
+        "url": "./events/event-skill-development-initiative.html"
+      },
+      "readiness_score": 67
+    },
+    {
+      "id": "event-sitar",
+      "title": "SITAR",
+      "organizer": "Ministry of Culture commissions",
+      "city": "الرياض",
+      "venue": "Riyadh",
+      "category": "ثقافة وفنون",
+      "starts_at": "2022-09-21T03:00:00+03:00",
+      "ends_at": "2030-12-31T03:00:00+03:00",
+      "updated_at": "2026-07-08T10:08:42.469Z",
+      "status": "ongoing",
+      "status_label": "برنامج جارٍ",
+      "live_schedule_ready": false,
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2022-09-21T03:00:00+03:00",
+        "ends_at": "2030-12-31T03:00:00+03:00",
+        "room": "Riyadh",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "detail_url": "./events/event-sitar.html",
+      "live_url": "./events/event-sitar.html",
+      "calendar_url": "./events/event-sitar.ics",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Production%20Support%20Program%20in%20the%20Theater%20and%20Performing%20Arts%20Sector/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Production%20Support%20Program%20in%20the%20Theater%20and%20Performing%20Arts%20Sector/EventDetail",
+      "source_confidence": "approved-source",
+      "source_confidence_label": "مصدر معتمد",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "published_by": "EventLive Auto Publisher",
+      "trust": {
+        "key": "trusted",
+        "label": "ثقة عالية",
+        "score": 95,
+        "freshness": {
+          "key": "fresh",
+          "label": "محدث خلال أسبوع",
+          "days": 0,
+          "score": 15
+        }
+      },
+      "trust_score": 95,
+      "trust_label": "ثقة عالية",
+      "evidence_gaps": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "activation_blockers": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "stage": {
+        "key": "basic-window",
+        "label": "نافذة حضور أساسية",
+        "rank": 3
+      },
+      "action": {
+        "label": "فتح بطاقة الفعالية",
+        "url": "./events/event-sitar.html"
+      },
+      "readiness_score": 67
+    },
+    {
+      "id": "event-the-architecture-and-design-caf",
+      "title": "The Architecture and Design Café",
+      "organizer": "Ministry of Culture commissions",
+      "city": "السعودية",
+      "venue": "Saudi Arabia",
+      "category": "ثقافة وفنون",
+      "starts_at": "2024-04-27T00:00:00+03:00",
+      "ends_at": "2026-09-27T00:00:00+03:00",
+      "updated_at": "2026-07-08T10:08:42.469Z",
+      "status": "ongoing",
+      "status_label": "برنامج جارٍ",
+      "live_schedule_ready": false,
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2024-04-27T00:00:00+03:00",
+        "ends_at": "2026-09-27T00:00:00+03:00",
+        "room": "Saudi Arabia",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "detail_url": "./events/event-the-architecture-and-design-caf.html",
+      "live_url": "./events/event-the-architecture-and-design-caf.html",
+      "calendar_url": "./events/event-the-architecture-and-design-caf.ics",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/The%20Architecture%20And%20Design%20Cafe/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/The%20Architecture%20And%20Design%20Cafe/EventDetail",
+      "source_confidence": "approved-source",
+      "source_confidence_label": "مصدر معتمد",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "published_by": "EventLive Auto Publisher",
+      "trust": {
+        "key": "trusted",
+        "label": "ثقة عالية",
+        "score": 95,
+        "freshness": {
+          "key": "fresh",
+          "label": "محدث خلال أسبوع",
+          "days": 0,
+          "score": 15
+        }
+      },
+      "trust_score": 95,
+      "trust_label": "ثقة عالية",
+      "evidence_gaps": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "activation_blockers": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "stage": {
+        "key": "basic-window",
+        "label": "نافذة حضور أساسية",
+        "rank": 3
+      },
+      "action": {
+        "label": "فتح بطاقة الفعالية",
+        "url": "./events/event-the-architecture-and-design-caf.html"
+      },
+      "readiness_score": 67
+    },
+    {
+      "id": "event-jusoor-program",
+      "title": "Jusoor Program",
+      "organizer": "Ministry of Culture commissions",
+      "city": "السعودية",
+      "venue": "Saudi Arabia",
+      "category": "ثقافة وفنون",
+      "starts_at": "2024-08-18T00:00:00+03:00",
+      "ends_at": "2026-08-18T00:00:00+03:00",
+      "updated_at": "2026-07-08T10:08:42.469Z",
+      "status": "ongoing",
+      "status_label": "برنامج جارٍ",
+      "live_schedule_ready": false,
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2024-08-18T00:00:00+03:00",
+        "ends_at": "2026-08-18T00:00:00+03:00",
+        "room": "Saudi Arabia",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "detail_url": "./events/event-jusoor-program.html",
+      "live_url": "./events/event-jusoor-program.html",
+      "calendar_url": "./events/event-jusoor-program.ics",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/jusoor%20competition/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/jusoor%20competition/EventDetail",
+      "source_confidence": "approved-source",
+      "source_confidence_label": "مصدر معتمد",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "published_by": "EventLive Auto Publisher",
+      "trust": {
+        "key": "trusted",
+        "label": "ثقة عالية",
+        "score": 95,
+        "freshness": {
+          "key": "fresh",
+          "label": "محدث خلال أسبوع",
+          "days": 0,
+          "score": 15
+        }
+      },
+      "trust_score": 95,
+      "trust_label": "ثقة عالية",
+      "evidence_gaps": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "activation_blockers": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "stage": {
+        "key": "basic-window",
+        "label": "نافذة حضور أساسية",
+        "rank": 3
+      },
+      "action": {
+        "label": "فتح بطاقة الفعالية",
+        "url": "./events/event-jusoor-program.html"
+      },
+      "readiness_score": 67
+    },
+    {
+      "id": "event-urban-transformation-initiative",
+      "title": "Urban transformation Initiative",
+      "organizer": "Ministry of Culture commissions",
+      "city": "السعودية",
+      "venue": "Saudi Arabia",
+      "category": "ثقافة وفنون",
+      "starts_at": "2024-10-31T00:00:00+03:00",
+      "ends_at": "2026-11-01T00:00:00+03:00",
+      "updated_at": "2026-07-08T10:08:42.469Z",
+      "status": "ongoing",
+      "status_label": "برنامج جارٍ",
+      "live_schedule_ready": false,
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2024-10-31T00:00:00+03:00",
+        "ends_at": "2026-11-01T00:00:00+03:00",
+        "room": "Saudi Arabia",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "detail_url": "./events/event-urban-transformation-initiative.html",
+      "live_url": "./events/event-urban-transformation-initiative.html",
+      "calendar_url": "./events/event-urban-transformation-initiative.ics",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Urban%20transformation%20Initiative/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Urban%20transformation%20Initiative/EventDetail",
+      "source_confidence": "approved-source",
+      "source_confidence_label": "مصدر معتمد",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "published_by": "EventLive Auto Publisher",
+      "trust": {
+        "key": "trusted",
+        "label": "ثقة عالية",
+        "score": 95,
+        "freshness": {
+          "key": "fresh",
+          "label": "محدث خلال أسبوع",
+          "days": 0,
+          "score": 15
+        }
+      },
+      "trust_score": 95,
+      "trust_label": "ثقة عالية",
+      "evidence_gaps": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "activation_blockers": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "stage": {
+        "key": "basic-window",
+        "label": "نافذة حضور أساسية",
+        "rank": 3
+      },
+      "action": {
+        "label": "فتح بطاقة الفعالية",
+        "url": "./events/event-urban-transformation-initiative.html"
+      },
+      "readiness_score": 67
+    },
+    {
+      "id": "event-the-continuing-professional-development-initiative",
+      "title": "The Continuing Professional Development Initiative",
+      "organizer": "Ministry of Culture commissions",
+      "city": "السعودية",
+      "venue": "Saudi Arabia",
+      "category": "ثقافة وفنون",
+      "starts_at": "2024-11-16T00:00:00+03:00",
+      "ends_at": "2026-10-10T00:00:00+03:00",
+      "updated_at": "2026-07-08T10:08:42.469Z",
+      "status": "ongoing",
+      "status_label": "برنامج جارٍ",
+      "live_schedule_ready": false,
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2024-11-16T00:00:00+03:00",
+        "ends_at": "2026-10-10T00:00:00+03:00",
+        "room": "Saudi Arabia",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "detail_url": "./events/event-the-continuing-professional-development-initiative.html",
+      "live_url": "./events/event-the-continuing-professional-development-initiative.html",
+      "calendar_url": "./events/event-the-continuing-professional-development-initiative.ics",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Continuous%20Professional%20Development%20Initiative/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Continuous%20Professional%20Development%20Initiative/EventDetail",
+      "source_confidence": "approved-source",
+      "source_confidence_label": "مصدر معتمد",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "published_by": "EventLive Auto Publisher",
+      "trust": {
+        "key": "trusted",
+        "label": "ثقة عالية",
+        "score": 95,
+        "freshness": {
+          "key": "fresh",
+          "label": "محدث خلال أسبوع",
+          "days": 0,
+          "score": 15
+        }
+      },
+      "trust_score": 95,
+      "trust_label": "ثقة عالية",
+      "evidence_gaps": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "activation_blockers": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "stage": {
+        "key": "basic-window",
+        "label": "نافذة حضور أساسية",
+        "rank": 3
+      },
+      "action": {
+        "label": "فتح بطاقة الفعالية",
+        "url": "./events/event-the-continuing-professional-development-initiative.html"
+      },
+      "readiness_score": 67
+    },
+    {
+      "id": "event-design-for-good-initiative",
+      "title": "Design for Good Initiative",
+      "organizer": "Ministry of Culture commissions",
+      "city": "السعودية",
+      "venue": "Saudi Arabia",
+      "category": "ثقافة وفنون",
+      "starts_at": "2024-12-05T00:00:00+03:00",
+      "ends_at": "2026-11-14T00:00:00+03:00",
+      "updated_at": "2026-07-08T10:08:42.469Z",
+      "status": "ongoing",
+      "status_label": "برنامج جارٍ",
+      "live_schedule_ready": false,
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2024-12-05T00:00:00+03:00",
+        "ends_at": "2026-11-14T00:00:00+03:00",
+        "room": "Saudi Arabia",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "detail_url": "./events/event-design-for-good-initiative.html",
+      "live_url": "./events/event-design-for-good-initiative.html",
+      "calendar_url": "./events/event-design-for-good-initiative.ics",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/design%20for%20good/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/design%20for%20good/EventDetail",
+      "source_confidence": "approved-source",
+      "source_confidence_label": "مصدر معتمد",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "published_by": "EventLive Auto Publisher",
+      "trust": {
+        "key": "trusted",
+        "label": "ثقة عالية",
+        "score": 95,
+        "freshness": {
+          "key": "fresh",
+          "label": "محدث خلال أسبوع",
+          "days": 0,
+          "score": 15
+        }
+      },
+      "trust_score": 95,
+      "trust_label": "ثقة عالية",
+      "evidence_gaps": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "activation_blockers": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "stage": {
+        "key": "basic-window",
+        "label": "نافذة حضور أساسية",
+        "rank": 3
+      },
+      "action": {
+        "label": "فتح بطاقة الفعالية",
+        "url": "./events/event-design-for-good-initiative.html"
+      },
+      "readiness_score": 67
+    },
+    {
+      "id": "event-the-saudi-music-hub",
+      "title": "The Saudi Music Hub",
+      "organizer": "Ministry of Culture commissions",
+      "city": "السعودية",
+      "venue": "Saudi Arabia",
+      "category": "ثقافة وفنون",
+      "starts_at": "2025-01-01T00:00:00+03:00",
+      "ends_at": "2027-04-03T00:00:00+03:00",
+      "updated_at": "2026-07-08T10:08:42.469Z",
+      "status": "ongoing",
+      "status_label": "برنامج جارٍ",
+      "live_schedule_ready": false,
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2025-01-01T00:00:00+03:00",
+        "ends_at": "2027-04-03T00:00:00+03:00",
+        "room": "Saudi Arabia",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "detail_url": "./events/event-the-saudi-music-hub.html",
+      "live_url": "./events/event-the-saudi-music-hub.html",
+      "calendar_url": "./events/event-the-saudi-music-hub.ics",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Saudi%20Music%20Center/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Saudi%20Music%20Center/EventDetail",
+      "source_confidence": "approved-source",
+      "source_confidence_label": "مصدر معتمد",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "published_by": "EventLive Auto Publisher",
+      "trust": {
+        "key": "trusted",
+        "label": "ثقة عالية",
+        "score": 95,
+        "freshness": {
+          "key": "fresh",
+          "label": "محدث خلال أسبوع",
+          "days": 0,
+          "score": 15
+        }
+      },
+      "trust_score": 95,
+      "trust_label": "ثقة عالية",
+      "evidence_gaps": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "activation_blockers": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "stage": {
+        "key": "basic-window",
+        "label": "نافذة حضور أساسية",
+        "rank": 3
+      },
+      "action": {
+        "label": "فتح بطاقة الفعالية",
+        "url": "./events/event-the-saudi-music-hub.html"
+      },
+      "readiness_score": 67
+    },
+    {
+      "id": "event-academic-excellence-in-architecture-and-design-education",
+      "title": "Academic Excellence in Architecture and Design Education",
+      "organizer": "Ministry of Culture commissions",
+      "city": "السعودية",
+      "venue": "Saudi Arabia",
+      "category": "ثقافة وفنون",
+      "starts_at": "2025-03-09T00:00:00+03:00",
+      "ends_at": "2026-09-09T00:00:00+03:00",
+      "updated_at": "2026-07-08T10:08:42.469Z",
+      "status": "ongoing",
+      "status_label": "برنامج جارٍ",
+      "live_schedule_ready": false,
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2025-03-09T00:00:00+03:00",
+        "ends_at": "2026-09-09T00:00:00+03:00",
+        "room": "Saudi Arabia",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "detail_url": "./events/event-academic-excellence-in-architecture-and-design-education.html",
+      "live_url": "./events/event-academic-excellence-in-architecture-and-design-education.html",
+      "calendar_url": "./events/event-academic-excellence-in-architecture-and-design-education.ics",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Academic%20Excellence%20in%20Architectural%20and%20Design%20Education/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Academic%20Excellence%20in%20Architectural%20and%20Design%20Education/EventDetail",
+      "source_confidence": "approved-source",
+      "source_confidence_label": "مصدر معتمد",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "published_by": "EventLive Auto Publisher",
+      "trust": {
+        "key": "trusted",
+        "label": "ثقة عالية",
+        "score": 95,
+        "freshness": {
+          "key": "fresh",
+          "label": "محدث خلال أسبوع",
+          "days": 0,
+          "score": 15
+        }
+      },
+      "trust_score": 95,
+      "trust_label": "ثقة عالية",
+      "evidence_gaps": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "activation_blockers": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "stage": {
+        "key": "basic-window",
+        "label": "نافذة حضور أساسية",
+        "rank": 3
+      },
+      "action": {
+        "label": "فتح بطاقة الفعالية",
+        "url": "./events/event-academic-excellence-in-architecture-and-design-education.html"
+      },
+      "readiness_score": 67
+    },
+    {
+      "id": "event-culinary-manufacturing-hubs",
+      "title": "Culinary Manufacturing Hubs",
+      "organizer": "Ministry of Culture commissions",
+      "city": "السعودية",
+      "venue": "Saudi Arabia",
+      "category": "ثقافة وفنون",
+      "starts_at": "2025-08-11T00:00:00+03:00",
+      "ends_at": "2029-12-31T00:00:00+03:00",
+      "updated_at": "2026-07-08T10:08:42.469Z",
+      "status": "ongoing",
+      "status_label": "برنامج جارٍ",
+      "live_schedule_ready": false,
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2025-08-11T00:00:00+03:00",
+        "ends_at": "2029-12-31T00:00:00+03:00",
+        "room": "Saudi Arabia",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "detail_url": "./events/event-culinary-manufacturing-hubs.html",
+      "live_url": "./events/event-culinary-manufacturing-hubs.html",
+      "calendar_url": "./events/event-culinary-manufacturing-hubs.ics",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Culinary%20Manufacturing%20Hubs/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Culinary%20Manufacturing%20Hubs/EventDetail",
+      "source_confidence": "approved-source",
+      "source_confidence_label": "مصدر معتمد",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "published_by": "EventLive Auto Publisher",
+      "trust": {
+        "key": "trusted",
+        "label": "ثقة عالية",
+        "score": 95,
+        "freshness": {
+          "key": "fresh",
+          "label": "محدث خلال أسبوع",
+          "days": 0,
+          "score": 15
+        }
+      },
+      "trust_score": 95,
+      "trust_label": "ثقة عالية",
+      "evidence_gaps": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "activation_blockers": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "stage": {
+        "key": "basic-window",
+        "label": "نافذة حضور أساسية",
+        "rank": 3
+      },
+      "action": {
+        "label": "فتح بطاقة الفعالية",
+        "url": "./events/event-culinary-manufacturing-hubs.html"
+      },
+      "readiness_score": 67
+    },
+    {
       "id": "event-poppy-playtime",
       "title": "Poppy Playtime",
       "organizer": "General Entertainment Authority || Riyadh Season",
@@ -3242,7 +3975,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2025-10-10T16:00:00+03:00",
       "ends_at": "2026-12-08T23:59:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -3309,7 +4042,7 @@
       "category": "ألعاب ورياضات إلكترونية",
       "starts_at": "2025-10-10T16:00:00+03:00",
       "ends_at": "2026-10-09T02:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -3376,7 +4109,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2025-11-05T16:00:00+03:00",
       "ends_at": "2026-07-19T02:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -3443,7 +4176,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-12-24T16:20:00+03:00",
       "ends_at": "2026-12-24T23:20:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -3510,7 +4243,7 @@
       "category": "ثقافة وفنون",
       "starts_at": "2026-01-01T08:00:00+03:00",
       "ends_at": "2026-12-31T16:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.957Z",
+      "updated_at": "2026-07-08T10:08:26.758Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -3577,7 +4310,7 @@
       "category": "ثقافة وفنون",
       "starts_at": "2026-01-01T08:00:00+03:00",
       "ends_at": "2026-12-31T16:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.957Z",
+      "updated_at": "2026-07-08T10:08:26.758Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -3636,6 +4369,140 @@
       "readiness_score": 67
     },
     {
+      "id": "event-film-business-accelerator",
+      "title": "Film Business Accelerator",
+      "organizer": "Ministry of Culture commissions",
+      "city": "السعودية",
+      "venue": "Saudi Arabia",
+      "category": "ثقافة وفنون",
+      "starts_at": "2026-01-19T00:00:00+03:00",
+      "ends_at": "2026-12-31T00:00:00+03:00",
+      "updated_at": "2026-07-08T10:08:42.469Z",
+      "status": "ongoing",
+      "status_label": "برنامج جارٍ",
+      "live_schedule_ready": false,
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-01-19T00:00:00+03:00",
+        "ends_at": "2026-12-31T00:00:00+03:00",
+        "room": "Saudi Arabia",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "detail_url": "./events/event-film-business-accelerator.html",
+      "live_url": "./events/event-film-business-accelerator.html",
+      "calendar_url": "./events/event-film-business-accelerator.ics",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Film_Accelerator/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Film_Accelerator/EventDetail",
+      "source_confidence": "approved-source",
+      "source_confidence_label": "مصدر معتمد",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "published_by": "EventLive Auto Publisher",
+      "trust": {
+        "key": "trusted",
+        "label": "ثقة عالية",
+        "score": 95,
+        "freshness": {
+          "key": "fresh",
+          "label": "محدث خلال أسبوع",
+          "days": 0,
+          "score": 15
+        }
+      },
+      "trust_score": 95,
+      "trust_label": "ثقة عالية",
+      "evidence_gaps": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "activation_blockers": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "stage": {
+        "key": "basic-window",
+        "label": "نافذة حضور أساسية",
+        "rank": 3
+      },
+      "action": {
+        "label": "فتح بطاقة الفعالية",
+        "url": "./events/event-film-business-accelerator.html"
+      },
+      "readiness_score": 67
+    },
+    {
+      "id": "event-the-guidelines-for-culture-and-arts-in-the-public-realm",
+      "title": "The Guidelines for Culture and Arts in the Public Realm",
+      "organizer": "Ministry of Culture commissions",
+      "city": "السعودية",
+      "venue": "Saudi Arabia",
+      "category": "ثقافة وفنون",
+      "starts_at": "2026-02-05T00:00:00+03:00",
+      "ends_at": "2030-02-05T00:00:00+03:00",
+      "updated_at": "2026-07-08T10:08:42.469Z",
+      "status": "ongoing",
+      "status_label": "برنامج جارٍ",
+      "live_schedule_ready": false,
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-02-05T00:00:00+03:00",
+        "ends_at": "2030-02-05T00:00:00+03:00",
+        "room": "Saudi Arabia",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "detail_url": "./events/event-the-guidelines-for-culture-and-arts-in-the-public-realm.html",
+      "live_url": "./events/event-the-guidelines-for-culture-and-arts-in-the-public-realm.html",
+      "calendar_url": "./events/event-the-guidelines-for-culture-and-arts-in-the-public-realm.ics",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/CAIPS_1/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/CAIPS_1/EventDetail",
+      "source_confidence": "approved-source",
+      "source_confidence_label": "مصدر معتمد",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "published_by": "EventLive Auto Publisher",
+      "trust": {
+        "key": "trusted",
+        "label": "ثقة عالية",
+        "score": 95,
+        "freshness": {
+          "key": "fresh",
+          "label": "محدث خلال أسبوع",
+          "days": 0,
+          "score": 15
+        }
+      },
+      "trust_score": 95,
+      "trust_label": "ثقة عالية",
+      "evidence_gaps": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "activation_blockers": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "stage": {
+        "key": "basic-window",
+        "label": "نافذة حضور أساسية",
+        "rank": 3
+      },
+      "action": {
+        "label": "فتح بطاقة الفعالية",
+        "url": "./events/event-the-guidelines-for-culture-and-arts-in-the-public-realm.html"
+      },
+      "readiness_score": 67
+    },
+    {
       "id": "event-horses-and-equestrian-heritage-exhibition",
       "title": "Horses and Equestrian Heritage Exhibition",
       "organizer": "King Abdulaziz Public Library ",
@@ -3644,7 +4511,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-02-24T21:30:00+03:00",
       "ends_at": "2026-08-30T23:55:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -3711,7 +4578,7 @@
       "category": "تدريب تقني",
       "starts_at": "2026-04-01T09:00:00+03:00",
       "ends_at": "2026-12-31T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:09.342Z",
+      "updated_at": "2026-07-08T10:08:25.508Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -3778,7 +4645,7 @@
       "category": "ثقافة وفنون",
       "starts_at": "2026-05-06T16:00:00+03:00",
       "ends_at": "2026-08-01T22:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -3845,7 +4712,7 @@
       "category": "ألعاب ورياضات إلكترونية",
       "starts_at": "2026-06-11T18:00:00+03:00",
       "ends_at": "2026-07-19T23:55:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -3912,7 +4779,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2026-06-11T19:00:00+03:00",
       "ends_at": "2026-07-19T01:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -3979,7 +4846,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2026-06-11T19:00:00+03:00",
       "ends_at": "2026-08-10T01:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -4046,7 +4913,7 @@
       "category": "ألعاب ورياضات إلكترونية",
       "starts_at": "2026-06-11T19:00:00+03:00",
       "ends_at": "2026-07-19T02:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -4113,7 +4980,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2026-06-11T19:30:00+03:00",
       "ends_at": "2026-07-19T00:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -4180,7 +5047,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2026-06-13T19:00:00+03:00",
       "ends_at": "2026-07-19T02:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -4247,7 +5114,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2026-06-14T19:00:00+03:00",
       "ends_at": "2026-07-19T01:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -4314,7 +5181,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2026-06-25T09:00:00+03:00",
       "ends_at": "2026-09-01T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.957Z",
+      "updated_at": "2026-07-08T10:08:26.758Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -4381,7 +5248,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2026-06-25T14:30:00+03:00",
       "ends_at": "2026-08-22T20:30:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -4448,7 +5315,7 @@
       "category": "ثقافة وفنون",
       "starts_at": "2026-06-28T10:00:00+03:00",
       "ends_at": "2026-07-16T17:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -4515,7 +5382,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-07-01T16:00:00+03:00",
       "ends_at": "2026-08-01T22:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -4582,7 +5449,7 @@
       "category": "علوم وفضاء",
       "starts_at": "2026-07-04T00:01:00+03:00",
       "ends_at": "2026-08-10T23:55:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -4649,7 +5516,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-07-05T18:00:00+03:00",
       "ends_at": "2026-08-20T21:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:51.733Z",
+      "updated_at": "2026-07-08T10:08:12.726Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -4716,7 +5583,7 @@
       "category": "ألعاب ورياضات إلكترونية",
       "starts_at": "2026-07-06T17:00:00+03:00",
       "ends_at": "2026-08-23T22:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -4775,6 +5642,73 @@
       "readiness_score": 67
     },
     {
+      "id": "event-pfl-mena-fight-night",
+      "title": "PFL MENA Fight Night",
+      "organizer": "PFL",
+      "city": "الرياض",
+      "venue": "Global Theater, Boulevard City, Riyadh",
+      "category": "رياضة وفعاليات جماهيرية",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-10T22:00:00+03:00",
+      "updated_at": "2026-07-08T10:08:42.469Z",
+      "status": "upcoming",
+      "status_label": "قادمة",
+      "live_schedule_ready": false,
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-07-10T16:00:00+03:00",
+        "ends_at": "2026-07-10T22:00:00+03:00",
+        "room": "Global Theater, Boulevard City, Riyadh",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "detail_url": "./events/event-pfl-mena-fight-night.html",
+      "live_url": "./events/event-pfl-mena-fight-night.html",
+      "calendar_url": "./events/event-pfl-mena-fight-night.ics",
+      "source_label": "Riyadh City Events",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31170",
+      "evidence_url": "https://riyadh.sa/en/moment/events/item/event/31170",
+      "source_confidence": "approved-source",
+      "source_confidence_label": "مصدر معتمد",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "published_by": "EventLive Auto Publisher",
+      "trust": {
+        "key": "trusted",
+        "label": "ثقة عالية",
+        "score": 95,
+        "freshness": {
+          "key": "fresh",
+          "label": "محدث خلال أسبوع",
+          "days": 0,
+          "score": 15
+        }
+      },
+      "trust_score": 95,
+      "trust_label": "ثقة عالية",
+      "evidence_gaps": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "activation_blockers": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "stage": {
+        "key": "basic-window",
+        "label": "نافذة حضور أساسية",
+        "rank": 3
+      },
+      "action": {
+        "label": "فتح بطاقة الفعالية",
+        "url": "./events/event-pfl-mena-fight-night.html"
+      },
+      "readiness_score": 67
+    },
+    {
       "id": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي",
       "title": "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
       "organizer": "Ministry of Communications and Information Technology",
@@ -4783,7 +5717,7 @@
       "category": "تدريب تقني",
       "starts_at": "2026-07-12T09:00:00+03:00",
       "ends_at": "2026-07-14T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:57.647Z",
+      "updated_at": "2026-07-08T10:08:17.876Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -4850,7 +5784,7 @@
       "category": "تدريب تقني",
       "starts_at": "2026-07-12T09:00:00+03:00",
       "ends_at": "2026-07-16T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:57.647Z",
+      "updated_at": "2026-07-08T10:08:17.876Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -4917,7 +5851,7 @@
       "category": "تدريب تقني",
       "starts_at": "2026-07-12T09:00:00+03:00",
       "ends_at": "2026-07-14T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:57.647Z",
+      "updated_at": "2026-07-08T10:08:17.876Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -4984,7 +5918,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-07-12T10:00:00+03:00",
       "ends_at": "2026-09-03T15:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:51.733Z",
+      "updated_at": "2026-07-08T10:08:12.726Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -5051,7 +5985,7 @@
       "category": "ثقافة وفنون",
       "starts_at": "2026-07-12T17:00:00+03:00",
       "ends_at": "2026-08-29T21:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -5118,7 +6052,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-07-12T18:00:00+03:00",
       "ends_at": "2026-08-20T21:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:51.733Z",
+      "updated_at": "2026-07-08T10:08:12.726Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -5185,7 +6119,7 @@
       "category": "تدريب تقني",
       "starts_at": "2026-07-13T09:00:00+03:00",
       "ends_at": "2026-07-15T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:57.647Z",
+      "updated_at": "2026-07-08T10:08:17.876Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -5252,7 +6186,7 @@
       "category": "تدريب تقني",
       "starts_at": "2026-07-13T09:00:00+03:00",
       "ends_at": "2026-09-12T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:09.342Z",
+      "updated_at": "2026-07-08T10:08:25.508Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -5319,7 +6253,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-07-19T17:00:00+03:00",
       "ends_at": "2026-10-15T21:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:51.733Z",
+      "updated_at": "2026-07-08T10:08:12.726Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -5386,7 +6320,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2026-07-25T05:00:00+03:00",
       "ends_at": "2026-07-25T07:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -5453,7 +6387,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-07-26T10:00:00+03:00",
       "ends_at": "2026-10-15T15:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:51.733Z",
+      "updated_at": "2026-07-08T10:08:12.726Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -5520,7 +6454,7 @@
       "category": "جامعات ومجتمع",
       "starts_at": "2026-07-26T17:00:00+03:00",
       "ends_at": "2026-08-20T21:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:51.733Z",
+      "updated_at": "2026-07-08T10:08:12.726Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -5579,6 +6513,207 @@
       "readiness_score": 67
     },
     {
+      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-6",
+      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
+      "organizer": "Tuwaiq Academy",
+      "city": "الرياض",
+      "venue": "الرياض - المقر الرئيسي",
+      "category": "ورش تنظيمية وصحية",
+      "starts_at": "2026-07-26T17:30:00+03:00",
+      "ends_at": "2026-10-15T21:30:00+03:00",
+      "updated_at": "2026-07-08T10:08:12.726Z",
+      "status": "upcoming",
+      "status_label": "قادمة",
+      "live_schedule_ready": false,
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-07-26T17:30:00+03:00",
+        "ends_at": "2026-10-15T21:30:00+03:00",
+        "room": "الرياض - المقر الرئيسي",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "detail_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-6.html",
+      "live_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-6.html",
+      "calendar_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-6.ics",
+      "source_label": "Tuwaiq Academy Bootcamps and Programs",
+      "source_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
+      "evidence_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
+      "source_confidence": "approved-source",
+      "source_confidence_label": "مصدر معتمد",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "published_by": "EventLive Auto Publisher",
+      "trust": {
+        "key": "trusted",
+        "label": "ثقة عالية",
+        "score": 95,
+        "freshness": {
+          "key": "fresh",
+          "label": "محدث خلال أسبوع",
+          "days": 0,
+          "score": 15
+        }
+      },
+      "trust_score": 95,
+      "trust_label": "ثقة عالية",
+      "evidence_gaps": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "activation_blockers": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "stage": {
+        "key": "basic-window",
+        "label": "نافذة حضور أساسية",
+        "rank": 3
+      },
+      "action": {
+        "label": "فتح بطاقة الفعالية",
+        "url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-6.html"
+      },
+      "readiness_score": 67
+    },
+    {
+      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-5",
+      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
+      "organizer": "Tuwaiq Academy",
+      "city": "الرياض",
+      "venue": "الرياض - المقر الرئيسي",
+      "category": "ورش تنظيمية وصحية",
+      "starts_at": "2026-07-26T17:30:00+03:00",
+      "ends_at": "2026-10-15T21:30:00+03:00",
+      "updated_at": "2026-07-08T10:08:12.726Z",
+      "status": "upcoming",
+      "status_label": "قادمة",
+      "live_schedule_ready": false,
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-07-26T17:30:00+03:00",
+        "ends_at": "2026-10-15T21:30:00+03:00",
+        "room": "الرياض - المقر الرئيسي",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "detail_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-5.html",
+      "live_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-5.html",
+      "calendar_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-5.ics",
+      "source_label": "Tuwaiq Academy Bootcamps and Programs",
+      "source_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
+      "evidence_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
+      "source_confidence": "approved-source",
+      "source_confidence_label": "مصدر معتمد",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "published_by": "EventLive Auto Publisher",
+      "trust": {
+        "key": "trusted",
+        "label": "ثقة عالية",
+        "score": 95,
+        "freshness": {
+          "key": "fresh",
+          "label": "محدث خلال أسبوع",
+          "days": 0,
+          "score": 15
+        }
+      },
+      "trust_score": 95,
+      "trust_label": "ثقة عالية",
+      "evidence_gaps": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "activation_blockers": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "stage": {
+        "key": "basic-window",
+        "label": "نافذة حضور أساسية",
+        "rank": 3
+      },
+      "action": {
+        "label": "فتح بطاقة الفعالية",
+        "url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-5.html"
+      },
+      "readiness_score": 67
+    },
+    {
+      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-4",
+      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
+      "organizer": "Tuwaiq Academy",
+      "city": "الرياض",
+      "venue": "الرياض - المقر الرئيسي",
+      "category": "ورش تنظيمية وصحية",
+      "starts_at": "2026-07-26T17:30:00+03:00",
+      "ends_at": "2026-10-15T21:30:00+03:00",
+      "updated_at": "2026-07-08T10:08:12.726Z",
+      "status": "upcoming",
+      "status_label": "قادمة",
+      "live_schedule_ready": false,
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-07-26T17:30:00+03:00",
+        "ends_at": "2026-10-15T21:30:00+03:00",
+        "room": "الرياض - المقر الرئيسي",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "detail_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-4.html",
+      "live_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-4.html",
+      "calendar_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-4.ics",
+      "source_label": "Tuwaiq Academy Bootcamps and Programs",
+      "source_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
+      "evidence_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
+      "source_confidence": "approved-source",
+      "source_confidence_label": "مصدر معتمد",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "published_by": "EventLive Auto Publisher",
+      "trust": {
+        "key": "trusted",
+        "label": "ثقة عالية",
+        "score": 95,
+        "freshness": {
+          "key": "fresh",
+          "label": "محدث خلال أسبوع",
+          "days": 0,
+          "score": 15
+        }
+      },
+      "trust_score": 95,
+      "trust_label": "ثقة عالية",
+      "evidence_gaps": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "activation_blockers": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "stage": {
+        "key": "basic-window",
+        "label": "نافذة حضور أساسية",
+        "rank": 3
+      },
+      "action": {
+        "label": "فتح بطاقة الفعالية",
+        "url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-4.html"
+      },
+      "readiness_score": 67
+    },
+    {
       "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-3",
       "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
       "organizer": "Tuwaiq Academy",
@@ -5587,7 +6722,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-07-26T17:30:00+03:00",
       "ends_at": "2026-10-15T21:30:00+03:00",
-      "updated_at": "2026-07-07T20:49:51.733Z",
+      "updated_at": "2026-07-08T10:08:12.726Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -5654,7 +6789,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-07-26T17:30:00+03:00",
       "ends_at": "2026-10-15T21:30:00+03:00",
-      "updated_at": "2026-07-07T20:49:51.733Z",
+      "updated_at": "2026-07-08T10:08:12.726Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -5721,7 +6856,7 @@
       "category": "تدريب تقني",
       "starts_at": "2026-07-27T09:00:00+03:00",
       "ends_at": "2026-07-29T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:09.342Z",
+      "updated_at": "2026-07-08T10:08:25.508Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -5788,7 +6923,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-08-02T09:00:00+03:00",
       "ends_at": "2026-10-08T15:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:51.733Z",
+      "updated_at": "2026-07-08T10:08:12.726Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -5855,7 +6990,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-08-02T09:00:00+03:00",
       "ends_at": "2026-10-01T15:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:51.733Z",
+      "updated_at": "2026-07-08T10:08:12.726Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -5922,7 +7057,7 @@
       "category": "تدريب تقني",
       "starts_at": "2026-08-03T09:00:00+03:00",
       "ends_at": "2026-09-16T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:09.342Z",
+      "updated_at": "2026-07-08T10:08:25.508Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -5989,7 +7124,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2026-08-05T16:00:00+03:00",
       "ends_at": "2026-08-25T23:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.957Z",
+      "updated_at": "2026-07-08T10:08:26.758Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -6056,7 +7191,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-08-09T08:00:00+03:00",
       "ends_at": "2026-11-12T12:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:51.733Z",
+      "updated_at": "2026-07-08T10:08:12.726Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -6123,7 +7258,7 @@
       "category": "جامعات ومجتمع",
       "starts_at": "2026-08-09T18:00:00+03:00",
       "ends_at": "2026-09-10T21:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:51.733Z",
+      "updated_at": "2026-07-08T10:08:12.726Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -6190,7 +7325,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-08-16T16:00:00+03:00",
       "ends_at": "2026-11-05T21:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:51.733Z",
+      "updated_at": "2026-07-08T10:08:12.726Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -6257,7 +7392,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-08-23T10:00:00+03:00",
       "ends_at": "2026-10-15T15:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:51.733Z",
+      "updated_at": "2026-07-08T10:08:12.726Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -6324,7 +7459,7 @@
       "category": "جامعات ومجتمع",
       "starts_at": "2026-08-23T10:00:00+03:00",
       "ends_at": "2027-01-07T15:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:51.733Z",
+      "updated_at": "2026-07-08T10:08:12.726Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -6391,7 +7526,7 @@
       "category": "جامعات ومجتمع",
       "starts_at": "2026-08-23T11:00:00+03:00",
       "ends_at": "2026-09-17T15:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:51.733Z",
+      "updated_at": "2026-07-08T10:08:12.726Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -6458,7 +7593,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-08-23T18:00:00+03:00",
       "ends_at": "2026-10-15T22:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:51.733Z",
+      "updated_at": "2026-07-08T10:08:12.726Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -6525,7 +7660,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-08-23T18:00:00+03:00",
       "ends_at": "2026-09-17T21:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:51.733Z",
+      "updated_at": "2026-07-08T10:08:12.726Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -6592,7 +7727,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-08-30T15:00:00+03:00",
       "ends_at": "2026-09-01T21:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -6659,7 +7794,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-08-30T15:00:00+03:00",
       "ends_at": "2026-09-01T21:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -6726,7 +7861,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-08-30T15:00:00+03:00",
       "ends_at": "2026-09-01T21:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -6793,7 +7928,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-08-30T16:00:00+03:00",
       "ends_at": "2026-10-08T20:00:00+03:00",
-      "updated_at": "2026-07-07T20:49:51.733Z",
+      "updated_at": "2026-07-08T10:08:12.726Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -6860,7 +7995,7 @@
       "category": "مؤتمرات ومنتديات",
       "starts_at": "2026-08-30T16:30:00+03:00",
       "ends_at": "2026-09-01T21:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -6927,7 +8062,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2026-08-31T09:00:00+03:00",
       "ends_at": "2026-09-03T17:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.957Z",
+      "updated_at": "2026-07-08T10:08:26.758Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -6994,7 +8129,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-09-01T13:00:00+03:00",
       "ends_at": "2026-09-03T22:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -7061,7 +8196,7 @@
       "category": "جامعات ومجتمع",
       "starts_at": "2026-09-05T09:00:00+03:00",
       "ends_at": "2027-01-31T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:09.342Z",
+      "updated_at": "2026-07-08T10:08:25.508Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -7128,7 +8263,7 @@
       "category": "مؤتمرات ومنتديات",
       "starts_at": "2026-09-05T14:00:00+03:00",
       "ends_at": "2026-09-07T22:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -7195,7 +8330,7 @@
       "category": "تدريب تقني",
       "starts_at": "2026-09-06T09:00:00+03:00",
       "ends_at": "2027-01-02T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:09.342Z",
+      "updated_at": "2026-07-08T10:08:25.508Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -7262,7 +8397,7 @@
       "category": "مؤتمرات ومنتديات",
       "starts_at": "2026-09-06T16:00:00+03:00",
       "ends_at": "2026-09-08T22:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -7329,7 +8464,7 @@
       "category": "مؤتمرات ومنتديات",
       "starts_at": "2026-09-06T16:00:00+03:00",
       "ends_at": "2026-09-08T22:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -7396,7 +8531,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2026-09-08T13:00:00+03:00",
       "ends_at": "2026-09-10T22:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.957Z",
+      "updated_at": "2026-07-08T10:08:26.758Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -7463,7 +8598,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-09-08T15:00:00+03:00",
       "ends_at": "2026-09-10T21:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -7530,7 +8665,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-09-08T15:00:00+03:00",
       "ends_at": "2026-09-10T21:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -7597,7 +8732,7 @@
       "category": "مؤتمرات ومنتديات",
       "starts_at": "2026-09-13T16:00:00+03:00",
       "ends_at": "2026-09-15T22:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -7664,7 +8799,7 @@
       "category": "جامعات ومجتمع",
       "starts_at": "2026-09-14T09:00:00+03:00",
       "ends_at": "2026-09-16T17:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -7731,7 +8866,7 @@
       "category": "مؤتمرات ومنتديات",
       "starts_at": "2026-09-14T09:30:00+03:00",
       "ends_at": "2026-09-16T15:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -7798,7 +8933,7 @@
       "category": "جوائز وتكريم",
       "starts_at": "2026-09-15T04:00:00+03:00",
       "ends_at": "2026-09-17T10:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:16.464Z",
+      "updated_at": "2026-07-08T10:08:29.798Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -7865,7 +9000,7 @@
       "category": "مؤتمرات ومنتديات",
       "starts_at": "2026-09-15T09:00:00+03:00",
       "ends_at": "2026-09-17T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -7932,7 +9067,7 @@
       "category": "جامعات ومجتمع",
       "starts_at": "2026-09-15T09:00:00+03:00",
       "ends_at": "2026-09-16T17:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -7999,7 +9134,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-09-15T14:00:00+03:00",
       "ends_at": "2026-09-17T22:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -8066,7 +9201,7 @@
       "category": "مؤتمرات ومنتديات",
       "starts_at": "2026-09-20T09:00:00+03:00",
       "ends_at": "2026-09-22T19:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -8133,7 +9268,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2026-09-23T09:00:00+03:00",
       "ends_at": "2026-09-23T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.957Z",
+      "updated_at": "2026-07-08T10:08:26.758Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -8200,7 +9335,7 @@
       "category": "علوم وفضاء",
       "starts_at": "2026-09-27T16:00:00+03:00",
       "ends_at": "2026-09-29T23:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -8267,7 +9402,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2026-10-01T14:00:00+03:00",
       "ends_at": "2026-10-10T22:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -8334,7 +9469,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2026-10-01T19:00:00+03:00",
       "ends_at": "2026-11-30T23:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -8401,7 +9536,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-10-27T09:00:00+03:00",
       "ends_at": "2026-10-30T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -8468,7 +9603,7 @@
       "category": "جوائز وتكريم",
       "starts_at": "2026-11-01T08:00:00+03:00",
       "ends_at": "2026-11-05T04:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:16.464Z",
+      "updated_at": "2026-07-08T10:08:29.798Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -8535,7 +9670,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2026-11-05T09:00:00+03:00",
       "ends_at": "2026-11-13T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.771Z",
+      "updated_at": "2026-07-08T10:08:26.421Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -8602,7 +9737,7 @@
       "category": "مؤتمرات ومنتديات",
       "starts_at": "2026-11-09T09:00:00+03:00",
       "ends_at": "2026-11-12T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -8669,7 +9804,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-11-16T09:00:00+03:00",
       "ends_at": "2026-11-19T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -8736,7 +9871,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-12-01T09:00:00+03:00",
       "ends_at": "2026-12-01T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.771Z",
+      "updated_at": "2026-07-08T10:08:26.421Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -8803,7 +9938,7 @@
       "category": "جوائز وتكريم",
       "starts_at": "2026-12-01T09:20:00+03:00",
       "ends_at": "2026-12-01T20:30:00+03:00",
-      "updated_at": "2026-07-07T20:50:16.464Z",
+      "updated_at": "2026-07-08T10:08:29.798Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -8870,7 +10005,7 @@
       "category": "جوائز وتكريم",
       "starts_at": "2026-12-07T09:00:00+03:00",
       "ends_at": "2026-12-07T16:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:16.464Z",
+      "updated_at": "2026-07-08T10:08:29.798Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -8937,7 +10072,7 @@
       "category": "جوائز وتكريم",
       "starts_at": "2026-12-07T09:00:00+03:00",
       "ends_at": "2026-12-09T16:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:16.464Z",
+      "updated_at": "2026-07-08T10:08:29.798Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -9004,7 +10139,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-12-11T09:00:00+03:00",
       "ends_at": "2026-12-11T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.771Z",
+      "updated_at": "2026-07-08T10:08:26.421Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -9071,7 +10206,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-12-14T09:00:00+03:00",
       "ends_at": "2026-12-17T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.771Z",
+      "updated_at": "2026-07-08T10:08:26.421Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -9138,7 +10273,7 @@
       "category": "جوائز وتكريم",
       "starts_at": "2027-02-22T08:00:00+03:00",
       "ends_at": "2027-02-23T03:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:16.464Z",
+      "updated_at": "2026-07-08T10:08:29.798Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -9205,7 +10340,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2027-02-22T09:00:00+03:00",
       "ends_at": "2027-02-22T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.957Z",
+      "updated_at": "2026-07-08T10:08:26.758Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -9272,7 +10407,7 @@
       "category": "جوائز وتكريم",
       "starts_at": "2027-03-11T08:00:00+03:00",
       "ends_at": "2027-03-12T04:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:16.464Z",
+      "updated_at": "2026-07-08T10:08:29.798Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -9339,7 +10474,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-06-29T09:00:00+03:00",
       "ends_at": "2026-06-29T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -9607,7 +10742,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-06-17T09:00:00+03:00",
       "ends_at": "2026-06-20T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -9741,7 +10876,7 @@
       "category": "علوم وفضاء",
       "starts_at": "2026-06-10T09:00:00+03:00",
       "ends_at": "2026-06-18T16:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -10009,7 +11144,7 @@
       "category": "علوم وفضاء",
       "starts_at": "2026-03-28T09:00:00+03:00",
       "ends_at": "2026-03-31T17:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -10143,7 +11278,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-03-01T23:03:00+03:00",
       "ends_at": "2026-03-02T00:03:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -10210,7 +11345,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-03-01T22:03:00+03:00",
       "ends_at": "2026-03-01T23:03:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -10277,7 +11412,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-02-28T23:02:00+03:00",
       "ends_at": "2026-03-01T00:03:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -10344,7 +11479,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-02-28T22:02:00+03:00",
       "ends_at": "2026-02-28T23:02:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -10411,7 +11546,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-02-27T23:02:00+03:00",
       "ends_at": "2026-02-28T00:02:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -10478,7 +11613,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-02-27T22:02:00+03:00",
       "ends_at": "2026-02-27T23:02:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -10545,7 +11680,7 @@
       "category": "مؤتمرات ومنتديات",
       "starts_at": "2026-02-09T09:00:00+03:00",
       "ends_at": "2026-02-10T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -10612,7 +11747,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-02-09T05:02:00+03:00",
       "ends_at": "2026-02-09T08:02:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -10679,7 +11814,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-02-08T09:00:00+03:00",
       "ends_at": "2026-02-10T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -10746,7 +11881,7 @@
       "category": "جوائز وتكريم",
       "starts_at": "2026-02-05T11:00:00+03:00",
       "ends_at": "2026-02-05T15:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -10880,7 +12015,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-01-27T04:01:00+03:00",
       "ends_at": "2026-01-28T20:01:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -10947,7 +12082,7 @@
       "category": "علوم وفضاء",
       "starts_at": "2026-01-26T10:00:00+03:00",
       "ends_at": "2026-01-27T18:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -11081,7 +12216,7 @@
       "category": "مؤتمرات ومنتديات",
       "starts_at": "2026-01-26T09:00:00+03:00",
       "ends_at": "2026-01-28T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -11148,7 +12283,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-01-21T18:01:00+03:00",
       "ends_at": "2026-01-21T18:01:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -11215,7 +12350,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-01-19T12:01:00+03:00",
       "ends_at": "2026-01-19T13:01:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -11282,7 +12417,7 @@
       "category": "مؤتمرات ومنتديات",
       "starts_at": "2026-01-19T09:00:00+03:00",
       "ends_at": "2026-01-23T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -11349,7 +12484,7 @@
       "category": "تدريب تقني",
       "starts_at": "2025-12-08T09:00:00+03:00",
       "ends_at": "2025-12-11T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -11416,7 +12551,7 @@
       "category": "تدريب تقني",
       "starts_at": "2025-12-01T09:00:00+03:00",
       "ends_at": "2025-12-05T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -11550,7 +12685,7 @@
       "category": "تدريب تقني",
       "starts_at": "2025-11-30T09:00:00+03:00",
       "ends_at": "2025-12-04T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -11617,7 +12752,7 @@
       "category": "تدريب تقني",
       "starts_at": "2025-11-24T09:00:00+03:00",
       "ends_at": "2025-11-27T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -11719,7 +12854,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -11751,7 +12886,7 @@
       "category": "تدريب تقني",
       "starts_at": "2025-11-19T09:00:00+03:00",
       "ends_at": "2025-11-20T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -11818,7 +12953,7 @@
       "category": "تدريب تقني",
       "starts_at": "2025-11-18T09:00:00+03:00",
       "ends_at": "2025-11-20T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -11952,7 +13087,7 @@
       "category": "ألعاب ورياضات إلكترونية",
       "starts_at": "2025-09-21T09:00:00+03:00",
       "ends_at": "2025-09-24T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -12086,7 +13221,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2025-08-05T09:00:00+03:00",
       "ends_at": "2025-08-05T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -12220,7 +13355,7 @@
       "category": "علوم وفضاء",
       "starts_at": "2025-06-15T12:00:00+03:00",
       "ends_at": "2025-06-15T17:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -12421,7 +13556,7 @@
       "category": "ألعاب ورياضات إلكترونية",
       "starts_at": "2025-04-20T09:00:00+03:00",
       "ends_at": "2025-10-12T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -12488,7 +13623,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2025-02-20T09:00:00+03:00",
       "ends_at": "2025-02-20T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -12622,7 +13757,7 @@
       "category": "علوم وفضاء",
       "starts_at": "2025-02-12T10:00:00+03:00",
       "ends_at": "2025-02-12T17:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -12823,7 +13958,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2025-02-05T09:00:00+03:00",
       "ends_at": "2025-02-05T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -13024,7 +14159,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2025-01-14T09:00:00+03:00",
       "ends_at": "2025-01-14T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -13091,7 +14226,7 @@
       "category": "علوم وفضاء",
       "starts_at": "2025-01-10T18:00:00+03:00",
       "ends_at": "2025-01-11T23:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -13225,7 +14360,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2024-12-05T09:00:00+03:00",
       "ends_at": "2024-12-05T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -13292,7 +14427,7 @@
       "category": "علوم وفضاء",
       "starts_at": "2024-02-11T10:00:00+03:00",
       "ends_at": "2024-02-12T18:30:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -13426,7 +14561,7 @@
       "category": "علوم وفضاء",
       "starts_at": "2023-10-02T10:00:00+03:00",
       "ends_at": "2024-01-06T18:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -13627,7 +14762,7 @@
       "category": "علوم وفضاء",
       "starts_at": "2023-07-06T12:00:00+03:00",
       "ends_at": "2023-07-10T17:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -13761,7 +14896,7 @@
       "category": "علوم وفضاء",
       "starts_at": "2023-05-21T09:00:00+03:00",
       "ends_at": "2023-05-24T12:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -13895,7 +15030,7 @@
       "category": "علوم وفضاء",
       "starts_at": "2022-09-22T12:00:00+03:00",
       "ends_at": "2022-09-22T22:30:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -14029,7 +15164,7 @@
       "category": "علوم وفضاء",
       "starts_at": "2022-06-03T14:10:00+03:00",
       "ends_at": "2023-06-06T12:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -14163,7 +15298,7 @@
       "category": "علوم وفضاء",
       "starts_at": "2022-03-09T08:00:00+03:00",
       "ends_at": "2023-03-06T12:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -14297,7 +15432,7 @@
       "category": "ألعاب ورياضات إلكترونية",
       "starts_at": "2026-06-11T18:00:00+03:00",
       "ends_at": "2026-07-19T03:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -14364,7 +15499,7 @@
       "category": "تدريب تقني",
       "starts_at": "2026-07-01T09:00:00+03:00",
       "ends_at": "2026-07-30T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -14431,7 +15566,7 @@
       "category": "تدريب تقني",
       "starts_at": "2026-07-01T09:00:00+03:00",
       "ends_at": "2026-07-30T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -14498,7 +15633,7 @@
       "category": "جامعات ومجتمع",
       "starts_at": "2026-07-07T09:00:00+03:00",
       "ends_at": "2026-07-29T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "ongoing",
       "status_label": "برنامج جارٍ",
       "live_schedule_ready": false,
@@ -14557,6 +15692,73 @@
       "readiness_score": 60
     },
     {
+      "id": "event-application-deadline-2030-leaders",
+      "title": "2030 Leaders",
+      "organizer": "Mohammed Bin Salman Foundation / Misk Hub",
+      "city": "السعودية",
+      "venue": "Hybrid",
+      "category": "تدريب تقني",
+      "starts_at": "2026-07-08T09:00:00+03:00",
+      "ends_at": "2026-07-08T23:59:00+03:00",
+      "updated_at": "2026-07-08T10:08:25.508Z",
+      "status": "live",
+      "status_label": "مباشرة الآن",
+      "live_schedule_ready": false,
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-07-08T09:00:00+03:00",
+        "ends_at": "2026-07-08T23:59:00+03:00",
+        "room": "Hybrid",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "detail_url": "./events/event-application-deadline-2030-leaders.html",
+      "live_url": "./events/event-application-deadline-2030-leaders.html",
+      "calendar_url": "./events/event-application-deadline-2030-leaders.ics",
+      "source_label": "Misk Hub Programs",
+      "source_url": "https://hub.misk.org.sa/programs/leadership/2030-leaders/",
+      "evidence_url": "https://hub.misk.org.sa/programs/leadership/2030-leaders/",
+      "source_confidence": "approved-source",
+      "source_confidence_label": "مصدر معتمد",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "published_by": "EventLive Auto Publisher",
+      "trust": {
+        "key": "trusted",
+        "label": "ثقة عالية",
+        "score": 90,
+        "freshness": {
+          "key": "fresh",
+          "label": "محدث خلال أسبوع",
+          "days": 0,
+          "score": 15
+        }
+      },
+      "trust_score": 90,
+      "trust_label": "ثقة عالية",
+      "evidence_gaps": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "activation_blockers": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "stage": {
+        "key": "basic-window",
+        "label": "نافذة حضور أساسية",
+        "rank": 3
+      },
+      "action": {
+        "label": "فتح بطاقة الفعالية",
+        "url": "./events/event-application-deadline-2030-leaders.html"
+      },
+      "readiness_score": 60
+    },
+    {
       "id": "event-unstable",
       "title": "Unstable",
       "organizer": "MDLBEAST",
@@ -14565,7 +15767,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2026-07-10T00:00:00+03:00",
       "ends_at": "2026-07-11T00:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.330Z",
+      "updated_at": "2026-07-08T10:08:41.650Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -14632,7 +15834,7 @@
       "category": "تدريب تقني",
       "starts_at": "2026-07-12T09:00:00+03:00",
       "ends_at": "2026-07-16T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -14699,7 +15901,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-09-01T16:00:00+03:00",
       "ends_at": "2026-09-04T16:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -14766,7 +15968,7 @@
       "category": "مؤتمرات ومنتديات",
       "starts_at": "2026-09-14T09:00:00+03:00",
       "ends_at": "2026-09-17T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -14833,7 +16035,7 @@
       "category": "مؤتمرات ومنتديات",
       "starts_at": "2026-09-15T09:00:00+03:00",
       "ends_at": "2026-09-17T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -14900,7 +16102,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2026-10-04T19:00:00+03:00",
       "ends_at": "2026-10-09T00:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.957Z",
+      "updated_at": "2026-07-08T10:08:26.758Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -14967,7 +16169,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2026-10-29T00:00:00+03:00",
       "ends_at": "2026-10-30T00:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.330Z",
+      "updated_at": "2026-07-08T10:08:41.650Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -15034,7 +16236,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2026-11-26T00:00:00+03:00",
       "ends_at": "2026-11-28T00:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.330Z",
+      "updated_at": "2026-07-08T10:08:41.650Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -15101,7 +16303,7 @@
       "category": "مؤتمرات ومنتديات",
       "starts_at": "2026-12-01T09:00:00+03:00",
       "ends_at": "2026-12-02T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -15168,7 +16370,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2026-12-03T00:00:00+03:00",
       "ends_at": "2026-12-04T00:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.330Z",
+      "updated_at": "2026-07-08T10:08:41.650Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -15235,7 +16437,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-12-27T16:00:00+03:00",
       "ends_at": "2026-12-29T16:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:24.686Z",
+      "updated_at": "2026-07-08T10:08:42.469Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -15302,7 +16504,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2027-03-30T09:00:00+03:00",
       "ends_at": "2027-03-30T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.957Z",
+      "updated_at": "2026-07-08T10:08:26.758Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -15369,7 +16571,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2027-06-06T09:00:00+03:00",
       "ends_at": "2027-06-10T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:50:14.957Z",
+      "updated_at": "2026-07-08T10:08:26.758Z",
       "status": "upcoming",
       "status_label": "قادمة",
       "live_schedule_ready": false,
@@ -15436,7 +16638,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-07-06T09:00:00+03:00",
       "ends_at": "2026-07-06T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -15503,7 +16705,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-07-06T09:00:00+03:00",
       "ends_at": "2026-07-06T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -15771,7 +16973,7 @@
       "category": "تدريب تقني",
       "starts_at": "2026-07-01T19:00:00+03:00",
       "ends_at": "2026-07-01T20:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -15838,7 +17040,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-07-01T09:00:00+03:00",
       "ends_at": "2026-07-01T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -15905,7 +17107,7 @@
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-06-29T09:00:00+03:00",
       "ends_at": "2026-06-29T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T03:47:19.542Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -15972,7 +17174,7 @@
       "category": "جوائز وتكريم",
       "starts_at": "2026-06-28T09:00:00+03:00",
       "ends_at": "2026-07-02T04:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -16039,7 +17241,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-06-23T09:00:00+03:00",
       "ends_at": "2026-06-26T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -16106,7 +17308,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2026-06-19T00:00:00+03:00",
       "ends_at": "2026-06-19T00:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -16173,7 +17375,7 @@
       "category": "جامعات ومجتمع",
       "starts_at": "2026-05-17T09:00:00+03:00",
       "ends_at": "2026-05-20T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -16240,7 +17442,7 @@
       "category": "جامعات ومجتمع",
       "starts_at": "2026-05-14T09:00:00+03:00",
       "ends_at": "2026-05-14T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -16307,7 +17509,7 @@
       "category": "جامعات ومجتمع",
       "starts_at": "2026-05-14T09:00:00+03:00",
       "ends_at": "2026-05-14T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -16374,7 +17576,7 @@
       "category": "جامعات ومجتمع",
       "starts_at": "2026-05-13T09:00:00+03:00",
       "ends_at": "2026-05-13T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -16441,7 +17643,7 @@
       "category": "تدريب تقني",
       "starts_at": "2026-05-08T21:00:00+03:00",
       "ends_at": "2026-05-08T22:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -16508,7 +17710,7 @@
       "category": "تدريب تقني",
       "starts_at": "2026-05-08T20:00:00+03:00",
       "ends_at": "2026-05-08T21:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -16575,7 +17777,7 @@
       "category": "جامعات ومجتمع",
       "starts_at": "2026-04-30T09:00:00+03:00",
       "ends_at": "2026-04-30T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -16642,7 +17844,7 @@
       "category": "جامعات ومجتمع",
       "starts_at": "2026-04-25T09:00:00+03:00",
       "ends_at": "2026-04-30T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -16709,7 +17911,7 @@
       "category": "مؤتمرات ومنتديات",
       "starts_at": "2026-04-06T09:00:00+03:00",
       "ends_at": "2026-04-08T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -16776,7 +17978,7 @@
       "category": "جامعات ومجتمع",
       "starts_at": "2026-04-01T09:00:00+03:00",
       "ends_at": "2026-05-18T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -16910,7 +18112,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2026-02-07T09:00:00+03:00",
       "ends_at": "2026-02-08T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -16977,7 +18179,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2026-02-05T00:00:00+03:00",
       "ends_at": "2026-02-06T00:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -17044,7 +18246,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-02-02T09:00:00+03:00",
       "ends_at": "2026-02-04T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -17111,7 +18313,7 @@
       "category": "معارض وتجارية",
       "starts_at": "2026-02-02T09:00:00+03:00",
       "ends_at": "2026-02-02T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -17245,7 +18447,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2026-01-02T16:30:00+03:00",
       "ends_at": "2026-01-02T18:30:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -17312,7 +18514,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-12-31T20:30:00+03:00",
       "ends_at": "2025-12-31T22:30:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -17379,7 +18581,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-12-31T20:30:00+03:00",
       "ends_at": "2025-12-31T22:30:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -17446,7 +18648,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-12-31T18:25:00+03:00",
       "ends_at": "2025-12-31T20:25:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -17513,7 +18715,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-12-30T20:30:00+03:00",
       "ends_at": "2025-12-30T22:30:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -17580,7 +18782,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-12-30T20:30:00+03:00",
       "ends_at": "2025-12-30T22:30:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -17647,7 +18849,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-12-30T18:30:00+03:00",
       "ends_at": "2025-12-30T20:30:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -17714,7 +18916,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-12-29T20:30:00+03:00",
       "ends_at": "2025-12-29T22:30:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -17781,7 +18983,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-12-29T20:30:00+03:00",
       "ends_at": "2025-12-29T22:30:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -17848,7 +19050,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-12-29T17:35:00+03:00",
       "ends_at": "2025-12-29T19:35:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -17915,7 +19117,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-12-27T20:30:00+03:00",
       "ends_at": "2025-12-27T22:30:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -17982,7 +19184,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-12-27T17:50:00+03:00",
       "ends_at": "2025-12-27T19:50:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -18049,7 +19251,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-12-27T16:00:00+03:00",
       "ends_at": "2025-12-27T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -18116,7 +19318,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-12-26T20:30:00+03:00",
       "ends_at": "2025-12-26T22:30:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -18183,7 +19385,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-12-26T18:00:00+03:00",
       "ends_at": "2025-12-26T20:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -18250,7 +19452,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-12-26T16:05:00+03:00",
       "ends_at": "2025-12-26T18:05:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -18317,7 +19519,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-12-25T20:30:00+03:00",
       "ends_at": "2025-12-25T22:30:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -18384,7 +19586,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-12-25T20:30:00+03:00",
       "ends_at": "2025-12-25T22:30:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -18451,7 +19653,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-12-25T17:50:00+03:00",
       "ends_at": "2025-12-25T19:50:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -18518,7 +19720,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2025-12-16T19:00:00+03:00",
       "ends_at": "2025-12-16T19:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -18585,7 +19787,7 @@
       "category": "تدريب تقني",
       "starts_at": "2025-12-16T16:00:00+03:00",
       "ends_at": "2025-12-17T22:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -18652,7 +19854,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2025-12-11T00:00:00+03:00",
       "ends_at": "2025-12-13T00:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -18719,7 +19921,7 @@
       "category": "تدريب تقني",
       "starts_at": "2025-12-07T09:00:00+03:00",
       "ends_at": "2025-12-11T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -18786,7 +19988,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2025-12-04T00:00:00+03:00",
       "ends_at": "2025-12-06T00:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -18853,7 +20055,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2025-11-24T16:00:00+03:00",
       "ends_at": "2025-11-26T16:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -18920,7 +20122,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-11-23T20:30:00+03:00",
       "ends_at": "2025-11-23T22:30:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -18987,7 +20189,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-11-23T20:30:00+03:00",
       "ends_at": "2025-11-23T22:30:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -19054,7 +20256,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-11-23T18:05:00+03:00",
       "ends_at": "2025-11-23T20:05:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -19121,7 +20323,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-11-22T17:40:00+03:00",
       "ends_at": "2025-11-22T19:40:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -19188,7 +20390,7 @@
       "category": "رياضة وفعاليات جماهيرية",
       "starts_at": "2025-11-22T17:25:00+03:00",
       "ends_at": "2025-11-22T19:25:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -19290,7 +20492,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -19357,7 +20559,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -19424,7 +20626,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -19491,7 +20693,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -19523,7 +20725,7 @@
       "category": "تدريب تقني",
       "starts_at": "2025-11-16T09:00:00+03:00",
       "ends_at": "2025-11-20T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -19625,7 +20827,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -19692,7 +20894,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -19759,7 +20961,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -19826,7 +21028,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -19893,7 +21095,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -19960,7 +21162,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -20027,7 +21229,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -20094,7 +21296,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -20161,7 +21363,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -20228,7 +21430,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -20295,7 +21497,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -20362,7 +21564,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -20429,7 +21631,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -20496,7 +21698,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -20563,7 +21765,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -20630,7 +21832,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -20697,7 +21899,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -20764,7 +21966,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -20796,7 +21998,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2025-10-29T09:00:00+03:00",
       "ends_at": "2025-10-29T09:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -20863,7 +22065,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2025-10-26T09:00:00+03:00",
       "ends_at": "2025-10-28T18:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -20965,7 +22167,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -21032,7 +22234,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -21099,7 +22301,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -21166,7 +22368,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -21233,7 +22435,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -21300,7 +22502,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -21367,7 +22569,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -21434,7 +22636,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -21501,7 +22703,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -21568,7 +22770,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -21635,7 +22837,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -21702,7 +22904,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -21769,7 +22971,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -21836,7 +23038,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -21903,7 +23105,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -21970,7 +23172,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -22037,7 +23239,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -22104,7 +23306,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -22136,7 +23338,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2025-10-08T16:00:00+03:00",
       "ends_at": "2025-10-11T16:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -22203,7 +23405,7 @@
       "category": "ألعاب ورياضات إلكترونية",
       "starts_at": "2025-10-01T09:00:00+03:00",
       "ends_at": "2026-04-30T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -22270,7 +23472,7 @@
       "category": "ألعاب ورياضات إلكترونية",
       "starts_at": "2025-10-01T09:00:00+03:00",
       "ends_at": "2026-01-31T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -22372,7 +23574,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -22439,7 +23641,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -22506,7 +23708,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -22573,7 +23775,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -22640,7 +23842,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -22707,7 +23909,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -22774,7 +23976,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -22841,7 +24043,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -22908,7 +24110,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -22940,7 +24142,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2025-09-25T00:00:00+03:00",
       "ends_at": "2025-09-26T00:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -23007,7 +24209,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2025-09-25T00:00:00+03:00",
       "ends_at": "2025-09-26T00:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -23109,7 +24311,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -23176,7 +24378,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -23243,7 +24445,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -23310,7 +24512,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -23377,7 +24579,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -23444,7 +24646,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -23511,7 +24713,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -23578,7 +24780,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -23645,7 +24847,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -23712,7 +24914,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -23779,7 +24981,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -23846,7 +25048,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -23913,7 +25115,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -23980,7 +25182,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -24047,7 +25249,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -24114,7 +25316,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -24181,7 +25383,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -24248,7 +25450,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -24315,7 +25517,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -24382,7 +25584,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -24449,7 +25651,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -24516,7 +25718,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -24583,7 +25785,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -24650,7 +25852,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -24717,7 +25919,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -24784,7 +25986,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -24851,7 +26053,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -24883,7 +26085,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2025-08-04T20:30:00+03:00",
       "ends_at": "2025-08-04T23:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -24950,7 +26152,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2025-07-18T21:00:00+03:00",
       "ends_at": "2025-08-07T02:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -25017,7 +26219,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2025-07-17T21:00:00+03:00",
       "ends_at": "2025-08-08T02:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -25084,7 +26286,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2025-05-23T00:00:00+03:00",
       "ends_at": "2025-05-23T00:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -25151,7 +26353,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2025-05-17T00:00:00+03:00",
       "ends_at": "2025-05-18T00:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -25218,7 +26420,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2025-04-27T15:00:00+03:00",
       "ends_at": "2025-04-28T15:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -25285,7 +26487,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2025-04-24T00:00:00+03:00",
       "ends_at": "2025-04-25T00:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -25352,7 +26554,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2025-04-18T00:16:00+03:00",
       "ends_at": "2025-04-20T00:23:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -25419,7 +26621,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2025-04-04T21:00:00+03:00",
       "ends_at": "2025-04-05T02:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -25486,7 +26688,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2025-04-04T19:00:00+03:00",
       "ends_at": "2025-04-05T07:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -25553,7 +26755,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2025-02-21T00:00:00+03:00",
       "ends_at": "2025-02-23T00:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -25620,7 +26822,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2025-02-18T15:00:00+03:00",
       "ends_at": "2025-02-18T15:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -25821,7 +27023,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2025-01-30T00:00:00+03:00",
       "ends_at": "2025-01-31T00:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -25888,7 +27090,7 @@
       "category": "تدريب تقني",
       "starts_at": "2024-12-24T16:00:00+03:00",
       "ends_at": "2024-12-25T22:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -25955,7 +27157,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2024-12-12T00:00:00+03:00",
       "ends_at": "2024-12-14T00:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -26022,7 +27224,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2024-12-05T00:00:00+03:00",
       "ends_at": "2024-12-07T00:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -26089,7 +27291,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2024-12-03T18:30:00+03:00",
       "ends_at": "2024-12-03T18:30:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -26156,7 +27358,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2024-11-24T09:00:00+03:00",
       "ends_at": "2024-11-24T09:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -26223,7 +27425,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2024-11-19T09:45:00+03:00",
       "ends_at": "2024-11-20T09:45:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -26290,7 +27492,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2024-10-31T21:00:00+03:00",
       "ends_at": "2024-11-01T01:30:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -26357,7 +27559,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2024-10-14T01:00:00+03:00",
       "ends_at": "2024-10-16T01:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -26424,7 +27626,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2024-09-25T09:00:00+03:00",
       "ends_at": "2024-09-29T18:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -26491,7 +27693,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2024-06-03T09:00:00+03:00",
       "ends_at": "2024-06-04T18:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -26558,7 +27760,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2024-05-14T09:00:00+03:00",
       "ends_at": "2024-05-14T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -26625,7 +27827,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2024-05-07T09:00:00+03:00",
       "ends_at": "2024-05-07T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -26692,7 +27894,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2024-05-07T09:00:00+03:00",
       "ends_at": "2024-05-07T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -26759,7 +27961,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2024-03-17T09:00:00+03:00",
       "ends_at": "2024-03-17T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -26826,7 +28028,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2024-03-07T22:00:00+03:00",
       "ends_at": "2024-03-08T02:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -26893,7 +28095,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2024-03-07T00:00:00+03:00",
       "ends_at": "2024-03-09T00:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -26960,7 +28162,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2024-03-01T21:00:00+03:00",
       "ends_at": "2024-03-02T02:00:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -27027,7 +28229,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2024-02-27T09:00:00+03:00",
       "ends_at": "2024-02-27T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -27228,7 +28430,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2024-01-28T09:00:00+03:00",
       "ends_at": "2024-01-28T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -27295,7 +28497,7 @@
       "category": "ترفيه وعائلات",
       "starts_at": "2024-01-18T15:00:00+03:00",
       "ends_at": "2024-01-20T02:30:00+03:00",
-      "updated_at": "2026-07-07T19:14:38.221Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -27429,7 +28631,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2024-01-01T09:00:00+03:00",
       "ends_at": "2024-01-01T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -27531,7 +28733,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -27598,7 +28800,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -27630,7 +28832,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2023-12-13T09:00:00+03:00",
       "ends_at": "2023-12-13T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -27697,7 +28899,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2023-12-05T09:00:00+03:00",
       "ends_at": "2023-12-05T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -27764,7 +28966,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2023-11-30T09:00:00+03:00",
       "ends_at": "2023-11-30T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -27831,7 +29033,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2023-11-23T09:00:00+03:00",
       "ends_at": "2023-11-23T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -27898,7 +29100,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2023-10-09T09:00:00+03:00",
       "ends_at": "2023-10-09T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -27965,7 +29167,7 @@
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2023-09-28T09:00:00+03:00",
       "ends_at": "2023-09-28T18:00:00+03:00",
-      "updated_at": "2026-07-07T20:45:48.196Z",
+      "updated_at": "2026-07-08T08:48:20.585Z",
       "status": "ended",
       "status_label": "منتهية",
       "live_schedule_ready": false,
@@ -28067,7 +29269,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -28134,7 +29336,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -28201,7 +29403,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -28268,7 +29470,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -28335,7 +29537,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -28402,7 +29604,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -28469,7 +29671,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -28536,7 +29738,7 @@
         "freshness": {
           "key": "fresh",
           "label": "محدث خلال أسبوع",
-          "days": 2,
+          "days": 3,
           "score": 15
         }
       },
@@ -28558,6 +29760,140 @@
         "url": "./events/ended-mdlbeast-events-azimuth-2022-20220922-aa1fdd5b.html"
       },
       "readiness_score": 60
+    },
+    {
+      "id": "event-saudi-wood-expo-2026",
+      "title": "Saudi Wood Expo 2026",
+      "organizer": "Eye of Riyadh",
+      "city": "الرياض",
+      "venue": "Riyadh International Convention & Exhibition Center , Riyadh",
+      "category": "معارض وتجارية",
+      "starts_at": "2026-08-30T09:00:00+03:00",
+      "ends_at": "2026-09-01T18:00:00+03:00",
+      "updated_at": "2026-07-08T10:08:42.469Z",
+      "status": "upcoming",
+      "status_label": "قادمة",
+      "live_schedule_ready": false,
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-08-30T09:00:00+03:00",
+        "ends_at": "2026-09-01T18:00:00+03:00",
+        "room": "Riyadh International Convention & Exhibition Center , Riyadh",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "detail_url": "./events/event-saudi-wood-expo-2026.html",
+      "live_url": "./events/event-saudi-wood-expo-2026.html",
+      "calendar_url": "./events/event-saudi-wood-expo-2026.ics",
+      "source_label": "Eye of Riyadh Events",
+      "source_url": "https://www.eyeofriyadh.com/events/details/saudi-wood-expo-2026",
+      "evidence_url": "https://www.eyeofriyadh.com/events/details/saudi-wood-expo-2026",
+      "source_confidence": "organizer-confirmed",
+      "source_confidence_label": "مصدر يحتاج متابعة",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "published_by": "EventLive Auto Publisher",
+      "trust": {
+        "key": "review",
+        "label": "قابل للنشر مع مراجعة",
+        "score": 65,
+        "freshness": {
+          "key": "fresh",
+          "label": "محدث خلال أسبوع",
+          "days": 0,
+          "score": 15
+        }
+      },
+      "trust_score": 65,
+      "trust_label": "قابل للنشر مع مراجعة",
+      "evidence_gaps": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "activation_blockers": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "stage": {
+        "key": "basic-window",
+        "label": "نافذة حضور أساسية",
+        "rank": 3
+      },
+      "action": {
+        "label": "فتح بطاقة الفعالية",
+        "url": "./events/event-saudi-wood-expo-2026.html"
+      },
+      "readiness_score": 51
+    },
+    {
+      "id": "event-saudi-industrial-series-2",
+      "title": "Saudi Industrial Series",
+      "organizer": "Eye of Riyadh",
+      "city": "الرياض",
+      "venue": "Riyadh International Convention & Exhibition Center (RICEC) , Riyadh",
+      "category": "مؤتمرات ومنتديات",
+      "starts_at": "2026-08-30T09:00:00+03:00",
+      "ends_at": "2026-09-01T18:00:00+03:00",
+      "updated_at": "2026-07-08T10:08:42.469Z",
+      "status": "upcoming",
+      "status_label": "قادمة",
+      "live_schedule_ready": false,
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-08-30T09:00:00+03:00",
+        "ends_at": "2026-09-01T18:00:00+03:00",
+        "room": "Riyadh International Convention & Exhibition Center (RICEC) , Riyadh",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "detail_url": "./events/event-saudi-industrial-series-2.html",
+      "live_url": "./events/event-saudi-industrial-series-2.html",
+      "calendar_url": "./events/event-saudi-industrial-series-2.ics",
+      "source_label": "Eye of Riyadh Events",
+      "source_url": "https://www.eyeofriyadh.com/events/details/saudi-industrial-series-1764288598",
+      "evidence_url": "https://www.eyeofriyadh.com/events/details/saudi-industrial-series-1764288598",
+      "source_confidence": "organizer-confirmed",
+      "source_confidence_label": "مصدر يحتاج متابعة",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "published_by": "EventLive Auto Publisher",
+      "trust": {
+        "key": "review",
+        "label": "قابل للنشر مع مراجعة",
+        "score": 65,
+        "freshness": {
+          "key": "fresh",
+          "label": "محدث خلال أسبوع",
+          "days": 0,
+          "score": 15
+        }
+      },
+      "trust_score": 65,
+      "trust_label": "قابل للنشر مع مراجعة",
+      "evidence_gaps": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "activation_blockers": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "stage": {
+        "key": "basic-window",
+        "label": "نافذة حضور أساسية",
+        "rank": 3
+      },
+      "action": {
+        "label": "فتح بطاقة الفعالية",
+        "url": "./events/event-saudi-industrial-series-2.html"
+      },
+      "readiness_score": 51
     }
   ],
   "links": {

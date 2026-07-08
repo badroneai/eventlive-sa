@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Skill Development Initiative | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-skill-development-initiative@eventme.live
+DTSTAMP:20260708T101026Z
+DTSTART:20210714T000000Z
+DTEND:20301231T000000Z
+SUMMARY:Skill Development Initiative
+DESCRIPTION:برنامج أو مبادرة ثقافية رسمية من تقويم وزارة الثقافة. المدة طويلة لذلك تحفظ كدليل مصدر ولا تنشر تلقائياً كفعالية لحظية. Skill Development Initiative ضمن ثقافة وفنون في الرياض. تبدأ الفعالية ١٤‏/٠٧‏/٢٠٢١، ٣:٠٠ ص وتنتهي ٣١‏/١٢‏/٢٠٣٠، ٣:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Ministry of Culture Commission Calendars.
+LOCATION:Riyadh
+URL:https://eventme.live/events/event-skill-development-initiative.html
+END:VEVENT
+END:VCALENDAR

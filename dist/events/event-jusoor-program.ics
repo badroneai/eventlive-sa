@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Jusoor Program | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-jusoor-program@eventme.live
+DTSTAMP:20260708T101026Z
+DTSTART:20240817T210000Z
+DTEND:20260817T210000Z
+SUMMARY:Jusoor Program
+DESCRIPTION:برنامج أو مبادرة ثقافية رسمية من تقويم وزارة الثقافة. المدة طويلة لذلك تحفظ كدليل مصدر ولا تنشر تلقائياً كفعالية لحظية. Jusoor Program ضمن ثقافة وفنون في السعودية. تبدأ الفعالية ١٨‏/٠٨‏/٢٠٢٤، ١٢:٠٠ ص وتنتهي ١٨‏/٠٨‏/٢٠٢٦، ١٢:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Ministry of Culture Commission Calendars.
+LOCATION:Saudi Arabia
+URL:https://eventme.live/events/event-jusoor-program.html
+END:VEVENT
+END:VCALENDAR

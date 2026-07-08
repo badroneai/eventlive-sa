@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:SITAR | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-sitar@eventme.live
+DTSTAMP:20260708T101026Z
+DTSTART:20220921T000000Z
+DTEND:20301231T000000Z
+SUMMARY:SITAR
+DESCRIPTION:برنامج أو مبادرة ثقافية رسمية من تقويم وزارة الثقافة. المدة طويلة لذلك تحفظ كدليل مصدر ولا تنشر تلقائياً كفعالية لحظية. SITAR ضمن ثقافة وفنون في الرياض. تبدأ الفعالية ٢١‏/٠٩‏/٢٠٢٢، ٣:٠٠ ص وتنتهي ٣١‏/١٢‏/٢٠٣٠، ٣:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Ministry of Culture Commission Calendars.
+LOCATION:Riyadh
+URL:https://eventme.live/events/event-sitar.html
+END:VEVENT
+END:VCALENDAR

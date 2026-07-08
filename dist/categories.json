@@ -1,59 +1,23 @@
 {
-  "generated_at": "2026-07-08T01:40:00.463Z",
+  "generated_at": "2026-07-08T10:10:26.415Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "categories_count": 12,
   "totals": {
-    "events": 429,
-    "upcoming_or_active": 135,
+    "events": 449,
+    "upcoming_or_active": 155,
     "ended": 294,
-    "live_ready": 51
+    "live_ready": 52
   },
   "categories": [
-    {
-      "slug": "exhibition-trade",
-      "label": "معارض وتجارية",
-      "url": "./categories/exhibition-trade.html",
-      "total_events": 42,
-      "upcoming_or_active": 22,
-      "ended": 20,
-      "live_ready": 28,
-      "sources": [
-        "Dhahran Expo Calendar",
-        "RFECC What's On",
-        "Riyadh City Events"
-      ],
-      "cities": [
-        "الرياض",
-        "الظهران"
-      ],
-      "audiences": [
-        "باحثون وأكاديميون",
-        "تقنيون",
-        "رواد أعمال",
-        "عائلات وأطفال",
-        "مبدعون وفنون",
-        "مهاريون وحرفيون",
-        "موظفون ومهنيون"
-      ],
-      "next_event": {
-        "title": "Horses and Equestrian Heritage Exhibition",
-        "starts_at": "2026-02-24T21:30:00+03:00",
-        "status": "ongoing",
-        "url": "./events/event-horses-and-equestrian-heritage-exhibition.html"
-      },
-      "sources_count": 3,
-      "cities_count": 2,
-      "audiences_count": 7
-    },
     {
       "slug": "regulatory-workshop",
       "label": "ورش تنظيمية وصحية",
       "url": "./categories/regulatory-workshop.html",
-      "total_events": 27,
-      "upcoming_or_active": 20,
+      "total_events": 31,
+      "upcoming_or_active": 24,
       "ended": 7,
-      "live_ready": 7,
+      "live_ready": 8,
       "sources": [
         "Saudi Food and Drug Authority Events",
         "Saudi Universities and Technical Colleges",
@@ -81,6 +45,43 @@
       "sources_count": 3,
       "cities_count": 3,
       "audiences_count": 6
+    },
+    {
+      "slug": "exhibition-trade",
+      "label": "معارض وتجارية",
+      "url": "./categories/exhibition-trade.html",
+      "total_events": 43,
+      "upcoming_or_active": 23,
+      "ended": 20,
+      "live_ready": 28,
+      "sources": [
+        "Dhahran Expo Calendar",
+        "Eye of Riyadh Events",
+        "RFECC What's On",
+        "Riyadh City Events"
+      ],
+      "cities": [
+        "الرياض",
+        "الظهران"
+      ],
+      "audiences": [
+        "باحثون وأكاديميون",
+        "تقنيون",
+        "رواد أعمال",
+        "عائلات وأطفال",
+        "مبدعون وفنون",
+        "مهاريون وحرفيون",
+        "موظفون ومهنيون"
+      ],
+      "next_event": {
+        "title": "Horses and Equestrian Heritage Exhibition",
+        "starts_at": "2026-02-24T21:30:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-horses-and-equestrian-heritage-exhibition.html"
+      },
+      "sources_count": 4,
+      "cities_count": 2,
+      "audiences_count": 7
     },
     {
       "slug": "entertainment-families",
@@ -125,12 +126,13 @@
       "slug": "conference-forum",
       "label": "مؤتمرات ومنتديات",
       "url": "./categories/conference-forum.html",
-      "total_events": 23,
-      "upcoming_or_active": 16,
+      "total_events": 24,
+      "upcoming_or_active": 17,
       "ended": 7,
       "live_ready": 5,
       "sources": [
         "Dhahran Expo Calendar",
+        "Eye of Riyadh Events",
         "Invest Saudi Events",
         "Riyadh City Events",
         "SDAIA Calendar and Events",
@@ -160,16 +162,51 @@
         "status": "upcoming",
         "url": "./events/demo-event.html"
       },
-      "sources_count": 6,
+      "sources_count": 7,
       "cities_count": 4,
       "audiences_count": 9
+    },
+    {
+      "slug": "culture-arts",
+      "label": "ثقافة وفنون",
+      "url": "./categories/culture-arts.html",
+      "total_events": 17,
+      "upcoming_or_active": 17,
+      "ended": 0,
+      "live_ready": 0,
+      "sources": [
+        "Ministry of Culture Commission Calendars",
+        "Riyadh City Events",
+        "Visit Saudi Calendar"
+      ],
+      "cities": [
+        "الرياض",
+        "السعودية"
+      ],
+      "audiences": [
+        "باحثون وأكاديميون",
+        "تقنيون",
+        "عائلات وأطفال",
+        "مبدعون وفنون",
+        "مهاريون وحرفيون",
+        "موظفون ومهنيون"
+      ],
+      "next_event": {
+        "title": "Skill Development Initiative",
+        "starts_at": "2021-07-14T03:00:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-skill-development-initiative.html"
+      },
+      "sources_count": 3,
+      "cities_count": 2,
+      "audiences_count": 6
     },
     {
       "slug": "sports",
       "label": "رياضة وفعاليات جماهيرية",
       "url": "./categories/sports.html",
-      "total_events": 119,
-      "upcoming_or_active": 12,
+      "total_events": 120,
+      "upcoming_or_active": 13,
       "ended": 107,
       "live_ready": 5,
       "sources": [
@@ -217,8 +254,8 @@
       "slug": "technology-training",
       "label": "تدريب تقني",
       "url": "./categories/technology-training.html",
-      "total_events": 26,
-      "upcoming_or_active": 12,
+      "total_events": 27,
+      "upcoming_or_active": 13,
       "ended": 14,
       "live_ready": 0,
       "sources": [
@@ -413,38 +450,6 @@
       "sources_count": 2,
       "cities_count": 3,
       "audiences_count": 7
-    },
-    {
-      "slug": "culture-arts",
-      "label": "ثقافة وفنون",
-      "url": "./categories/culture-arts.html",
-      "total_events": 5,
-      "upcoming_or_active": 5,
-      "ended": 0,
-      "live_ready": 0,
-      "sources": [
-        "Riyadh City Events",
-        "Visit Saudi Calendar"
-      ],
-      "cities": [
-        "الرياض"
-      ],
-      "audiences": [
-        "باحثون وأكاديميون",
-        "تقنيون",
-        "عائلات وأطفال",
-        "مبدعون وفنون",
-        "مهاريون وحرفيون"
-      ],
-      "next_event": {
-        "title": "Arabic Language Exhibition 28",
-        "starts_at": "2026-01-01T08:00:00+03:00",
-        "status": "ongoing",
-        "url": "./events/event-arabic-language-exhibition-28.html"
-      },
-      "sources_count": 2,
-      "cities_count": 1,
-      "audiences_count": 5
     },
     {
       "slug": "science-space",

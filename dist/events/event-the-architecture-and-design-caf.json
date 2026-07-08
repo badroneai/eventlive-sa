@@ -1,0 +1,102 @@
+{
+  "id": "event-the-architecture-and-design-caf",
+  "title": "The Architecture and Design Café",
+  "summary": "برنامج أو مبادرة ثقافية رسمية من تقويم وزارة الثقافة. المدة طويلة لذلك تحفظ كدليل مصدر ولا تنشر تلقائياً كفعالية لحظية. The Architecture and Design Café ضمن ثقافة وفنون في السعودية. تبدأ الفعالية ٢٧‏/٠٤‏/٢٠٢٤، ١٢:٠٠ ص وتنتهي ٢٧‏/٠٩‏/٢٠٢٦، ١٢:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Ministry of Culture Commission Calendars.",
+  "canonical_url": "https://eventme.live/events/event-the-architecture-and-design-caf.html",
+  "detail_url": "./events/event-the-architecture-and-design-caf.html",
+  "calendar_url": "./events/event-the-architecture-and-design-caf.ics",
+  "source_label": "Ministry of Culture Commission Calendars",
+  "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/The%20Architecture%20And%20Design%20Cafe/EventDetail",
+  "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/The%20Architecture%20And%20Design%20Cafe/EventDetail",
+  "city": "السعودية",
+  "venue": "Saudi Arabia",
+  "venue_address": "Saudi Arabia",
+  "starts_at": "2024-04-27T00:00:00+03:00",
+  "ends_at": "2026-09-27T00:00:00+03:00",
+  "status": "ongoing",
+  "status_label": "برنامج جارٍ",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/the-architecture-and-design-caf-adeabf4e32.png",
+  "image_alt": "The Architecture and Design Café",
+  "category": "ثقافة وفنون",
+  "category_url": "./categories/culture-arts.html",
+  "audiences": [
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "The Architecture and Design Café",
+    "ثقافة وفنون",
+    "cultural initiative",
+    "برنامج ممتد",
+    "برنامج جارٍ",
+    "السعودية",
+    "Saudi Arabia",
+    "Ministry of Culture Commission Calendars",
+    "music",
+    "heritage",
+    "architecture",
+    "design",
+    "culture",
+    "arts",
+    "Initiative",
+    "long-running cultural initiative",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2024-04-27T00:00:00+03:00",
+      "ends_at": "2026-09-27T00:00:00+03:00",
+      "room": "Saudi Arabia",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "The Architecture and Design Café",
+    "startDate": "2024-04-27T00:00:00+03:00",
+    "endDate": "2026-09-27T00:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Saudi Arabia",
+      "address": "Saudi Arabia"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Ministry of Culture commissions"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/the-architecture-and-design-caf-adeabf4e32.png"
+    ],
+    "description": "برنامج أو مبادرة ثقافية رسمية من تقويم وزارة الثقافة. المدة طويلة لذلك تحفظ كدليل مصدر ولا تنشر تلقائياً كفعالية لحظية. The Architecture and Design Café ضمن ثقافة وفنون في السعودية. تبدأ الفعالية ٢٧‏/٠٤‏/٢٠٢٤، ١٢:٠٠ ص وتنتهي ٢٧‏/٠٩‏/٢٠٢٦، ١٢:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Ministry of Culture Commission Calendars.",
+    "url": "https://eventme.live/events/event-the-architecture-and-design-caf.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-the-architecture-and-design-caf.html",
+    "isAccessibleForFree": false,
+    "keywords": "The Architecture and Design Café, ثقافة وفنون, cultural initiative, برنامج ممتد, برنامج جارٍ, السعودية, Saudi Arabia, Ministry of Culture Commission Calendars, music, heritage, architecture, design, culture, arts, Initiative, long-running cultural initiative, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.moc.gov.sa/en/Modules/Pages/Initiative/The%20Architecture%20And%20Design%20Cafe/EventDetail"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/The%20Architecture%20And%20Design%20Cafe/EventDetail",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

@@ -1,25 +1,25 @@
 # EventLive Command Center
 
-- Generated at: 2026-07-08T01:39:49.885Z
+- Generated at: 2026-07-08T10:10:06.437Z
 - Live site: https://eventme.live/
 - Lifecycle: pre-professional-launch hardening
 
 ## Totals
 
-- Catalog events: 141
+- Catalog events: 161
 - Public events: 429
-- Source candidates: 183
+- Source candidates: 184
 - Registered sources: 66
 - Live-ready events: 51
 - Ended events: 294
-- Delivery standard PASS/PARTIAL/NOT_STARTED: 20/1/0
+- Delivery standard PASS/PARTIAL/NOT_STARTED: 21/0/0
 
 ## Gates
 
 | Gate | Status | Evidence |
 | --- | --- | --- |
 | Delivery Readiness | PASS | reports/delivery-readiness-status.md |
-| 23-Gate Delivery Standard | PARTIAL | reports/delivery-readiness-standard-status.md |
+| 23-Gate Delivery Standard | PASS | reports/delivery-readiness-standard-status.md |
 | Command Center | PASS | reports/eventlive-command-center.md |
 | Design OS | PASS | reports/design-os-status.md |
 | Harvest OS | PASS | reports/source-harvest-os-status.md |

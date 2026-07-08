@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-07-08T08:54:27.019Z
+- generated_at: 2026-07-08T10:10:43.981Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -20,19 +20,19 @@
 - Actionable candidates: 0
 - Ready for review: 0
 - Ready for catalog promotion: 0
-- Linked to catalog from candidates: 140
+- Linked to catalog from candidates: 155
 - Stale unpublished candidates: 0
 - Duplicate risk: 0
 - Recommendation: استخدم أقوى مرشحي الاكتشاف لبناء مطابقة آلية مع مصادر رسمية؛ لا تنشر مصدر اكتشاف منفرداً.
 
 ## Candidate Funnel
 
-- review_status.evidence-captured: 27
-- review_status.approved-for-catalog: 140
-- review_status.new: 17
-- publication_gate.source-evidence: 29
-- publication_gate.catalog-review: 140
-- publication_gate.duplicate-review: 15
+- review_status.approved-for-catalog: 155
+- review_status.evidence-captured: 13
+- review_status.new: 16
+- publication_gate.catalog-review: 155
+- publication_gate.duplicate-review: 13
+- publication_gate.source-evidence: 16
 - discovery_quality.strong-lead: 27
 - discovery_quality.weak-lead: 1
 - discovery_quality.watch-lead: 3
@@ -46,16 +46,16 @@
 
 | Candidate | Source | City | Quality | Score | Signals | Official match |
 |---|---|---|---|---:|---|---|
-| Saudi Wood Expo 2026 | Eye of Riyadh Events | Riyadh | strong-lead | 70 | directory-source, saudi-location-signal, large-event-topic | Saudi Wood Expo (Riyadh City Events, 115) |
-| Saudi Industrial Series | Eye of Riyadh Events | Riyadh | strong-lead | 70 | directory-source, saudi-location-signal, large-event-topic | Saudi Industrial Series (Riyadh City Events, 115) |
 | Global Proptech Summit 2026 | Eye of Riyadh Events | Riyadh | strong-lead | 70 | directory-source, saudi-location-signal, large-event-topic | Global AI Summit (SDAIA Calendar and Events, 82) |
-| The Architecture and Design Café | Ministry of Culture Commission Calendars | Saudi Arabia | - | 0 | - | Academic Excellence in Architecture and Design Education (Ministry of Culture Commission Calendars, 80) |
-| Academic Excellence in Architecture and Design Education | Ministry of Culture Commission Calendars | Saudi Arabia | - | 0 | - | The Architecture and Design Café (Ministry of Culture Commission Calendars, 80) |
-| Skill Development Initiative | Ministry of Culture Commission Calendars | Riyadh | - | 0 | - | The Continuing Professional Development Initiative (Ministry of Culture Commission Calendars, 75) |
-| The Continuing Professional Development Initiative | Ministry of Culture Commission Calendars | Saudi Arabia | - | 0 | - | Skill Development Initiative (Ministry of Culture Commission Calendars, 75) |
 | Dubai Property Expo in Al Khobar | Eventbrite Saudi Arabia | Khobar | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
 | Smart Data & AI Summit | Eye of Riyadh Events | Riyadh | strong-lead | 70 | directory-source, saudi-location-signal, large-event-topic | - |
 | HRSE KSA | Eye of Riyadh Events | Riyadh | strong-lead | 70 | directory-source, saudi-location-signal, large-event-topic | - |
+| Big 5 Construct Saudi | Eye of Riyadh Events | Riyadh | strong-lead | 70 | directory-source, saudi-location-signal, large-event-topic | - |
+| HVAC R Saudi Arabia | Eye of Riyadh Events | Riyadh | strong-lead | 70 | directory-source, saudi-location-signal, large-event-topic | - |
+| Saudi FM & Clean | Eye of Riyadh Events | Riyadh | strong-lead | 70 | directory-source, saudi-location-signal, large-event-topic | - |
+| Family Office Investment Meeting | Eventbrite Saudi Arabia | Riyadh | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
+| Family Office Investment Summit | Eventbrite Saudi Arabia | Riyadh | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
+| Sucession Planning Program | Eventbrite Saudi Arabia | Riyadh | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
 
 ## Source Health
 

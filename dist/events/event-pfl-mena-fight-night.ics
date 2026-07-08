@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:PFL MENA Fight Night | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-pfl-mena-fight-night@eventme.live
+DTSTAMP:20260708T101026Z
+DTSTART:20260710T130000Z
+DTEND:20260710T190000Z
+SUMMARY:PFL MENA Fight Night
+DESCRIPTION:Riyadh is hosting PFL MENA Fight Week\, bringing together some of the region's top mixed martial arts (MMA) athletes for an exciting week of competition and fan engagement. The main Professional Fighters League MENA Fight Night will take place on Friday\, 10 July\, at the Global Theater in Boulevard City. Fighters will share their preparations before completing the official weigh-in ahead of the tournament. Held under the Professional Fighters League (PFL) MENA\, the event follows the league's signature "win-and-advance" format\, providing Arab athletes with a pathway to compete for championship titles while supporting the growth of mixed martial arts across the Middle East and North Africa. Book Now
+LOCATION:Global Theater\, Boulevard City\, Riyadh
+URL:https://eventme.live/events/event-pfl-mena-fight-night.html
+END:VEVENT
+END:VCALENDAR

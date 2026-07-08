@@ -1,9 +1,9 @@
 {
   "schema": "eventlive.delivery-readiness.v1",
-  "generated_at": "2026-07-08T01:39:49.885Z",
+  "generated_at": "2026-07-08T10:10:06.437Z",
   "status": "PASS",
   "totals": {
-    "catalog_events": 141,
+    "catalog_events": 161,
     "public_events": 429,
     "live_ready": 51,
     "with_source_evidence": 429,

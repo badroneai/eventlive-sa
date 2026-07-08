@@ -23,7 +23,7 @@ for (const page of publicPages) {
   assert(/window\.eventLiveTrack/.test(html), `${page} missing tracker function`);
 }
 
-const ownerPages = ['sources.html', 'methodology.html', 'trust.html'];
+const ownerPages = ['sources.html', 'methodology.html', 'trust.html', 'source-health.html', 'owner-status.html'];
 for (const page of ownerPages) {
   const html = read(page);
   assert(!/plausible\.io\/js\/script\.tagged-events\.js/.test(html), `${page} should not load public analytics`);

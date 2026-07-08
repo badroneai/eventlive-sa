@@ -1,25 +1,38 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-08T08:52:16.913Z
+- published_at: 2026-07-08T10:07:57.123Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 184
-- published_new: 3
-- linked_existing: 137
-- blocked_remaining: 44
+- published_new: 16
+- linked_existing: 139
+- blocked_remaining: 29
 
 ## Blocked summary
 
-- publication gate source-evidence is not auto-publishable: 29
 - possible duplicate already exists: event-esports-world-cup: 1
-- confidence public-listing is not auto-publishable: 13
+- publication gate source-evidence is not auto-publishable: 16
+- confidence public-listing is not auto-publishable: 11
 - possible duplicate already exists: event-leap-2026: 1
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-riyadh-city-events-pfl-mena-fight-night-20260710-0eafa4d0 | published | event-pfl-mena-fight-night | PFL MENA Fight Night |
-| candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45 | published | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-5 | معسكر تطوير تطبيقات الويب باستخدام لغة Python |
-| candidate-sfda-events-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال-20261005-34d08b48 | published | event-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال | دور الهيئة العامة للغذاء و الدواء في ضمان سلامة الاستخدام الامن لجهاز الماموجرام |
+| candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | published | event-skill-development-initiative | Skill Development Initiative |
+| candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | published | event-sitar | SITAR |
+| candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | published | event-the-architecture-and-design-caf | The Architecture and Design Café |
+| candidate-moc-cultural-subportals-jusoor-program-20240818-22e2fb74 | published | event-jusoor-program | Jusoor Program |
+| candidate-moc-cultural-subportals-urban-transformation-initiative-20241031-7a933cab | published | event-urban-transformation-initiative | Urban transformation Initiative |
+| candidate-moc-cultural-subportals-the-continuing-professional-development-initiative-20241116-a7cef8e2 | published | event-the-continuing-professional-development-initiative | The Continuing Professional Development Initiative |
+| candidate-moc-cultural-subportals-design-for-good-initiative-20241205-3788803e | published | event-design-for-good-initiative | Design for Good Initiative |
+| candidate-moc-cultural-subportals-the-saudi-music-hub-20250101-10d8a675 | published | event-the-saudi-music-hub | The Saudi Music Hub |
+| candidate-moc-cultural-subportals-academic-excellence-in-architecture-and-design-education-20250309-a4072111 | published | event-academic-excellence-in-architecture-and-design-education | Academic Excellence in Architecture and Design Education |
+| candidate-moc-cultural-subportals-culinary-manufacturing-hubs-20250811-d7214bd9 | published | event-culinary-manufacturing-hubs | Culinary Manufacturing Hubs |
+| candidate-moc-cultural-subportals-film-business-accelerator-20260119-254dca29 | published | event-film-business-accelerator | Film Business Accelerator |
+| candidate-moc-cultural-subportals-the-guidelines-for-culture-and-arts-in-the-public-realm-20260205-fbf08244 | published | event-the-guidelines-for-culture-and-arts-in-the-public-realm | The Guidelines for Culture and Arts in the Public Realm |
+| candidate-misk-hub-programs-application-deadline-2030-leaders-20260708-68dd4c4c | published | event-application-deadline-2030-leaders | Application deadline: 2030 Leaders |
+| candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45 | published | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-6 | معسكر تطوير تطبيقات الويب باستخدام لغة Python |
+| candidate-eye-of-riyadh-events-saudi-wood-expo-2026-20260830-b4d44be4 | published | event-saudi-wood-expo-2026 | Saudi Wood Expo 2026 |
+| candidate-eye-of-riyadh-events-saudi-industrial-series-20260830-c10ad399 | published | event-saudi-industrial-series-2 | Saudi Industrial Series |
 | candidate-riyadh-city-events-poppy-playtime-20251010-b96ed7bc | linked-existing | event-poppy-playtime | already linked to catalog event |
 | candidate-riyadh-city-events-riyadh-season-blvd-city-20251010-d23bcbe8 | linked-existing | event-riyadh-season-blvd-city | already linked to catalog event |
 | candidate-visit-saudi-seasons-the-groves-20251105-b7362f59 | linked-existing | event-the-groves | already linked to catalog event |
@@ -50,6 +63,7 @@
 | candidate-saudi-university-events-registration-now-open-for-children-at-the-childhood-studies-center-for-t-20260707-a2624927 | linked-existing | event-registration-now-open-for-children-at-the-childhood-studies-center-for-t | already linked to catalog event |
 | candidate-saudi-university-events-quarter-finals-join-the-celebration-at-the-fifa-fan-zone-20260709-ce09a5c4 | linked-existing | event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone | already linked to catalog event |
 | candidate-mdlbeast-events-unstable-20260710-5647df2e | linked-existing | event-unstable | already linked to catalog event |
+| candidate-riyadh-city-events-pfl-mena-fight-night-20260710-0eafa4d0 | linked-existing | event-pfl-mena-fight-night | already linked to catalog event |
 | candidate-mdlbeast-events-beast-house-20260710-83049a2a | linked-existing | event-beast-house | already linked to catalog event |
 | candidate-future-skills-catalog-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي-20260712-ed2ad6f2 | linked-existing | event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي | already linked to catalog event |
 | candidate-monshaat-events-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م-20260712-1d4a3074 | linked-existing | event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م | already linked to catalog event |
@@ -130,6 +144,7 @@
 | candidate-visit-saudi-seasons-saudi-international-falcons-hunting-exhibition-20261001-a4f29b73 | linked-existing | event-saudi-international-falcons-hunting-exhibition | already linked to catalog event |
 | candidate-visit-saudi-seasons-saudi-falcons-club-auction-20261001-4e016ab8 | linked-existing | event-saudi-falcons-club-auction | already linked to catalog event |
 | candidate-visit-saudi-calendar-al-milwah-falcon-race-20261004-1e16b7f0 | linked-existing | event-al-milwah-falcon-race | already linked to catalog event |
+| candidate-sfda-events-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال-20261005-34d08b48 | linked-existing | event-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال | already linked to catalog event |
 | candidate-rfecc-whats-on-natrual-expo-20261026-a7983dd2 | linked-existing | event-natrual-expo | already linked to catalog event |
 | candidate-invest-saudi-events-future-investment-initiative-fii-10-20261027-a7444334 | linked-existing | event-future-investment-initiative-fii-10 | already linked to catalog event |
 | candidate-mdlbeast-events-a-thousand-and-one-20261029-05573173 | linked-existing | event-a-thousand-and-one | already linked to catalog event |
@@ -157,28 +172,13 @@
 | candidate-saudi-water-authority-events-saudi-flag-day-20270311-f93a4bef | linked-existing | event-saudi-flag-day | already linked to catalog event |
 | candidate-visit-saudi-calendar-eid-al-fitr-20270330-64dfe211 | linked-existing | event-eid-al-fitr | already linked to catalog event |
 | candidate-visit-saudi-calendar-eid-al-adha-20270606-f67747fe | linked-existing | event-eid-al-adha | already linked to catalog event |
-| candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-moc-cultural-subportals-jusoor-program-20240818-22e2fb74 | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-moc-cultural-subportals-urban-transformation-initiative-20241031-7a933cab | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-moc-cultural-subportals-the-continuing-professional-development-initiative-20241116-a7cef8e2 | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-moc-cultural-subportals-design-for-good-initiative-20241205-3788803e | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-moc-cultural-subportals-the-saudi-music-hub-20250101-10d8a675 | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-moc-cultural-subportals-academic-excellence-in-architecture-and-design-education-20250309-a4072111 | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-moc-cultural-subportals-culinary-manufacturing-hubs-20250811-d7214bd9 | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-moc-cultural-subportals-film-business-accelerator-20260119-254dca29 | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-moc-cultural-subportals-the-guidelines-for-culture-and-arts-in-the-public-realm-20260205-fbf08244 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eye-of-riyadh-events-esports-world-cup-20260706-13ed17c1 | blocked | - | possible duplicate already exists: event-esports-world-cup |
-| candidate-misk-hub-programs-application-deadline-2030-leaders-20260708-68dd4c4c | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-dubai-property-expo-in-al-khobar-17th-18th-july-2026-danube-20260717-2dd8b8b7 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eye-of-riyadh-events-oxford-future-of-real-estate-programme-20260805-7c9ee195 | blocked | - | confidence public-listing is not auto-publishable |
 | candidate-eye-of-riyadh-events-smart-data-ai-summit-20260826-f9946ea8 | blocked | - | confidence public-listing is not auto-publishable |
 | candidate-eye-of-riyadh-events-hrse-ksa-20260830-6945a87a | blocked | - | confidence public-listing is not auto-publishable |
-| candidate-eye-of-riyadh-events-saudi-wood-expo-2026-20260830-b4d44be4 | blocked | - | confidence public-listing is not auto-publishable |
 | candidate-eye-of-riyadh-events-big-5-construct-saudi-20260830-2238e3a0 | blocked | - | confidence public-listing is not auto-publishable |
 | candidate-eye-of-riyadh-events-hvac-r-saudi-arabia-20260830-857b2f5b | blocked | - | confidence public-listing is not auto-publishable |
-| candidate-eye-of-riyadh-events-saudi-industrial-series-20260830-c10ad399 | blocked | - | confidence public-listing is not auto-publishable |
 | candidate-eye-of-riyadh-events-saudi-fm-clean-20260830-cbe48152 | blocked | - | confidence public-listing is not auto-publishable |
 | candidate-eye-of-riyadh-events-leap-2026-20260831-44ae74ee | blocked | - | possible duplicate already exists: event-leap-2026 |
 | candidate-eventbrite-saudi-family-office-investment-meeting-riyadh-registration-fee-usd-580-20260902-82923462 | blocked | - | publication gate source-evidence is not auto-publishable |

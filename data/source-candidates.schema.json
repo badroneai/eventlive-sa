@@ -79,7 +79,12 @@
           },
           "publication_gate": {
             "type": "string",
-            "enum": ["source-evidence", "duplicate-review", "extraction", "human-review", "catalog-review", "blocked"]
+            "enum": ["source-evidence", "duplicate-review", "extraction", "human-review", "catalog-review", "secondary-verified", "blocked"]
+          },
+          "secondary_verified_at": { "type": "string", "format": "date-time" },
+          "secondary_verification_kind": {
+            "type": "string",
+            "enum": ["official-source-evidence", "official-program-evidence", "official-catalog-match"]
           },
           "discovery_quality": {
             "type": "string",

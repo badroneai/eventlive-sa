@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.delivery-readiness-standard.v1",
-  "generated_at": "2026-07-08T01:52:44.155Z",
+  "generated_at": "2026-07-08T10:11:03.773Z",
   "standard_source": "93_DELIVERY_READINESS_STANDARD_V1.md",
   "project": {
     "name": "EventLive",
@@ -17,8 +17,8 @@
     "FAIL": 0
   },
   "metrics": {
-    "public_events": 429,
-    "live_ready_events": 51,
+    "public_events": 449,
+    "live_ready_events": 52,
     "launch_sweep_ok": true,
     "visual_sweep_ok": true,
     "validation_clean": true,
@@ -169,7 +169,7 @@
       "name": "Data Integrity & Migrations",
       "role": "Data engineer",
       "status": "PASS",
-      "evidence": "Validation clean; dedupe regression exists; public events=429. Static project has no DB migrations.",
+      "evidence": "Validation clean; dedupe regression exists; public events=449. Static project has no DB migrations.",
       "remaining": ""
     },
     {

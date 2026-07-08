@@ -8,6 +8,7 @@
   <meta name="application-name" content="EventLive" />
   <meta name="theme-color" content="#0d6b52" />
   <meta name="color-scheme" content="light" />
+
   <link rel="canonical" href="https://eventme.live/organizer-intake.html" />
   <link rel="manifest" href="./manifest.webmanifest" />
   <link rel="alternate" type="text/calendar" title="EventLive - تقويم الفعاليات" href="./events.ics" />
@@ -40,7 +41,7 @@
     .intake-preview{direction:ltr;text-align:left;white-space:pre-wrap;overflow:auto;max-height:520px;background:#10231d;color:#f7f5ef;border-radius:8px;padding:16px;font-size:.88rem;line-height:1.55}
   </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"ContactPage","inLanguage":"ar-SA","name":"إضافة فعالية أو جدول حي","url":"https://eventme.live/organizer-intake.html","isPartOf":{"@type":"WebSite","name":"EventLive","url":"https://eventme.live"},"about":{"@type":"Service","name":"EventLive live schedule intake","provider":{"@type":"Organization","name":"EventLive","url":"https://eventme.live"}}}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"EventLive organizer intake contract","url":"https://eventme.live/organizer-intake.json","creator":{"@type":"Organization","name":"EventLive"},"dateModified":"2026-07-08T01:40:00.463Z","variableMeasured":["event_title","organizer_name","city","venue","starts_at","ends_at","source_url_or_program_file","contact_name","contact_email_or_mobile"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"EventLive organizer intake contract","url":"https://eventme.live/organizer-intake.json","creator":{"@type":"Organization","name":"EventLive"},"dateModified":"2026-07-08T10:10:26.415Z","variableMeasured":["event_title","organizer_name","city","venue","starts_at","ends_at","source_url_or_program_file","contact_name","contact_email_or_mobile"]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://eventme.live"},{"@type":"ListItem","position":2,"name":"للمنظمين","item":"https://eventme.live/organizers.html"},{"@type":"ListItem","position":3,"name":"إضافة فعالية","item":"https://eventme.live/organizer-intake.html"}]}</script>
   <style id="eventlive-brand-pulse">
 @keyframes eventliveLiveDotPulse {
@@ -106,7 +107,7 @@
   </div></section>
   <section class="section"><div class="wrap"><article class="readiness"><h2>معايير قبول الطلب</h2><div class="signals"><div class="signal-check good"><b>مصدر</b><span>رابط رسمي أو ملف برنامج قابل للفحص.</span></div><div class="signal-check good"><b>وقت</b><span>بداية ونهاية واضحة بتوقيت السعودية.</span></div><div class="signal-check good"><b>مكان</b><span>مدينة وموقع أو رابط حضور عن بعد.</span></div><div class="signal-check good"><b>جلسات</b><span>كلما زادت الجلسات المكتملة زادت فرصة الجدول الحي.</span></div></div></article></div></section>
 </main>
-<footer class="footer"><div class="wrap">EventLive يبقي الدومين الرسمي eventme.live ويربط كل فعالية بمصدرها قدر الإمكان. آخر بناء: ٠٨‏/٠٧‏/٢٠٢٦، ٤:٤٠ ص<div class="footer-links"><a href="./privacy.html">الخصوصية</a><a href="./terms.html">الشروط</a><a href="./source-rights.html">حقوق المصادر</a></div></div></footer>
+<footer class="footer"><div class="wrap">EventLive يبقي الدومين الرسمي eventme.live ويربط كل فعالية بمصدرها قدر الإمكان. آخر بناء: ٠٨‏/٠٧‏/٢٠٢٦، ١:١٠ م<div class="footer-links"><a href="./privacy.html">الخصوصية</a><a href="./terms.html">الشروط</a><a href="./source-rights.html">حقوق المصادر</a></div></div></footer>
 <script>
 (function () {
   var form = document.querySelector('[data-organizer-intake-form]');
@@ -184,7 +185,7 @@
 </script>
 <script id="eventlive-analytics-runtime">
 (function () {
-  var ownerOnlyPattern = /\/(sources|methodology|trust|source-health|candidates|resolver)\.html$|\/(events|sources|trust|methodology|readiness|source-coverage-gaps|regions)\.json$/;
+  var ownerOnlyPattern = /\/(sources|methodology|trust|source-health|candidates|resolver|owner-status)\.html$|\/(events|sources|trust|methodology|readiness|source-coverage-gaps|regions|owner-status)\.json$/;
   var path = window.location.pathname || '';
   if (ownerOnlyPattern.test(path)) {
     window.eventLiveTrack = function () {};

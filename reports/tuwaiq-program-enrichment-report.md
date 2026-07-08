@@ -1,8 +1,8 @@
 # Tuwaiq Program Enrichment Report
 
-- generated_at: 2026-07-08T08:52:17.360Z
-- targets: 21
-- enriched: 21
+- generated_at: 2026-07-08T10:08:12.726Z
+- targets: 22
+- enriched: 22
 - failed: 0
 
 ## Enriched
@@ -14,6 +14,7 @@
 - معسكر تطوير تطبيقات الويب باستخدام لغة Python (4yOEV7Qq) - goals=12, features=6, requirements=11
 - معسكر تطوير مواقع الويب باستخدام Java ودمج تقنيات الذكاء الاصطناعي (B5R0wKJk) - goals=10, features=7, requirements=8
 - معسكر تطوير البرمجيات السحابية الاحترافية لسحابة قوقل (VY3lkzLD) - goals=8, features=6, requirements=10
+- معسكر تطوير تطبيقات الويب باستخدام لغة Python (4yOEV7Qq) - goals=12, features=6, requirements=11
 - معسكر تطوير تطبيقات الويب باستخدام لغة Python (4yOEV7Qq) - goals=12, features=6, requirements=11
 - معسكر تطوير تطبيقات الويب باستخدام لغة Python (4yOEV7Qq) - goals=12, features=6, requirements=11
 - معسكر تطوير تطبيقات الويب باستخدام لغة Python (4yOEV7Qq) - goals=12, features=6, requirements=11

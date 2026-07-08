@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-08T01:40:00.463Z",
+  "generated_at": "2026-07-08T10:10:26.415Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
-  "public_events": 429,
-  "upcoming_or_active": 135,
+  "public_events": 449,
+  "upcoming_or_active": 155,
   "ended_events": 294,
-  "live_ready_events": 51,
+  "live_ready_events": 52,
   "registered_sources": 66,
   "official_or_government_sources": 60,
   "discovery_only_sources": 34,
@@ -25,8 +25,8 @@
     "monitor-public": 26
   },
   "candidate_publication_gates": {
-    "source-evidence": 30,
-    "catalog-review": 138,
-    "duplicate-review": 15
+    "catalog-review": 155,
+    "duplicate-review": 13,
+    "source-evidence": 16
   }
 }

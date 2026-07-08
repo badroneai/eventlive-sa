@@ -740,7 +740,7 @@ function platformWebSiteJsonLd() {
   });
 }
 
-function baseHead({ title, description, canonical, image, manifestHref = './manifest.webmanifest', type = 'website', imageAlt = '' }) {
+function baseHead({ title, description, canonical, image, manifestHref = './manifest.webmanifest', type = 'website', imageAlt = '', noindex = false }) {
   const shareImage = image || publicAssetUrl('/assets/eventlive-hero.png');
   const metaDescription = seoDescription(description);
   const safeImageAlt = imageAlt || title;
@@ -752,6 +752,7 @@ function baseHead({ title, description, canonical, image, manifestHref = './mani
   <meta name="application-name" content="${platformName}" />
   <meta name="theme-color" content="#0d6b52" />
   <meta name="color-scheme" content="light" />
+  ${noindex ? '<meta name="robots" content="noindex,nofollow" />' : ''}
   <link rel="canonical" href="${canonical}" />
   <link rel="manifest" href="${escapeHtml(manifestHref)}" />
   <link rel="alternate" type="text/calendar" title="EventLive - تقويم الفعاليات" href="${escapeHtml(`${resourcePrefix}events.ics`)}" />
@@ -780,7 +781,7 @@ function analyticsHeadSnippet() {
 function analyticsRuntimeScript() {
   return `<script id="eventlive-analytics-runtime">
 (function () {
-  var ownerOnlyPattern = /\\/(sources|methodology|trust|source-health|candidates|resolver)\\.html$|\\/(events|sources|trust|methodology|readiness|source-coverage-gaps|regions)\\.json$/;
+  var ownerOnlyPattern = /\\/(sources|methodology|trust|source-health|candidates|resolver|owner-status)\\.html$|\\/(events|sources|trust|methodology|readiness|source-coverage-gaps|regions|owner-status)\\.json$/;
   var path = window.location.pathname || '';
   if (ownerOnlyPattern.test(path)) {
     window.eventLiveTrack = function () {};
@@ -890,7 +891,7 @@ function hideOwnerOnlyPublicLinks(html) {
 
 function isOwnerOnlyPage(filePath) {
   const relativePath = path.relative(distDir, filePath).replace(/\\/g, '/');
-  return relativePath === 'sources.html' || relativePath === 'methodology.html' || relativePath === 'trust.html';
+  return ['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html', 'owner-status.html'].includes(relativePath);
 }
 
 function runtimeAttrs(event) {
@@ -2523,6 +2524,91 @@ ${footer('./')}
 </body>
 </html>`;
   writeText(path.join(distDir, 'source-coverage-gaps.html'), html);
+}
+
+function readReport(relativePath, fallback = {}) {
+  try {
+    return readJson(relativePath, fallback);
+  } catch {
+    return fallback;
+  }
+}
+
+function writeOwnerStatusPage(events) {
+  const analytics = readReport('reports/analytics-status.json', {});
+  const runState = readReport('reports/source-run-state-report.json', {});
+  const autoPublish = readReport('reports/source-auto-publish-report.json', {});
+  const secondary = readReport('reports/source-secondary-verification-report.json', {});
+  const sourceOps = readReport('reports/source-ops-report.json', {});
+  const status = {
+    generated_at: buildAt,
+    platform: platformName,
+    domain: platformDomain,
+    intent: 'eventlive-owner-status',
+    analytics: {
+      provider: analytics.provider || 'plausible',
+      domain: analytics.domain || platformDomain,
+      status: analytics.status || 'INSTRUMENTED',
+      dashboard_url: analytics.dashboard_url || `https://plausible.io/${analytics.domain || platformDomain}`,
+      tracked_events: analytics.tracked_events || [],
+      privacy: analytics.privacy || { cookies: false, pii: false },
+      note: 'أرقام الزوار الحقيقية تقرأ من لوحة مزود التحليلات. هذه الصفحة تثبت أن التتبع مزروع وتعرض الرابط التشغيلي.'
+    },
+    source_sync: {
+      last_run_at: runState.generated_at || sourceOps.generated_at || '',
+      registered_sources: runState.totals?.sources || sourceOps.sources?.length || 0,
+      attempted_sources: runState.totals?.attempted || sourceOps.collection?.attempted_sources || 0,
+      productive_sources: runState.totals?.productive || 0,
+      collector_errors: runState.totals?.collector_errors || 0,
+      zero_yield: runState.totals?.zero_yield || 0,
+      candidates_seen: autoPublish.totals?.candidates_seen || sourceOps.queue?.total || 0,
+      published_new: autoPublish.totals?.published || 0,
+      linked_existing: autoPublish.totals?.linked_existing || 0,
+      blocked_remaining: autoPublish.totals?.blocked || 0,
+      secondary_promoted: secondary.totals?.promoted || 0,
+      secondary_still_blocked: secondary.totals?.still_blocked || 0
+    },
+    catalog: {
+      public_events: events.length,
+      live_ready: events.filter((event) => event.live_schedule_ready).length,
+      ended_events: events.filter((event) => event.status === 'ended').length,
+      upcoming_or_ongoing: events.filter((event) => event.status !== 'ended').length
+    },
+    links: {
+      analytics_dashboard: analytics.dashboard_url || `https://plausible.io/${analytics.domain || platformDomain}`,
+      source_health: './source-health.html',
+      source_coverage: './source-coverage-gaps.html',
+      events_json: './events.json'
+    }
+  };
+  writeJson('owner-status.json', status);
+  const canonical = absoluteUrl('owner-status.html');
+  const html = `<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  ${baseHead({ title: `حالة المالك | ${platformName}`, description: 'صفحة مخفية للمالك تعرض حالة الجلب الدوري والقياس التشغيلي في EventLive.', canonical, noindex: true })}
+  ${operationalPageCss()}
+  ${jsonLd({ '@context': 'https://schema.org', '@type': 'WebPage', inLanguage: 'ar-SA', name: 'حالة مالك EventLive', url: canonical, isPartOf: { '@type': 'WebSite', name: platformName, url: siteUrl }, dateModified: buildAt })}
+</head>
+<body>
+${header('./')}
+<main>
+  <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span>للمالك فقط</span><h1>حالة التشغيل والقياس</h1><p class="lead">افتح هذه الصفحة بعد النشر لمعرفة آخر جلب دوري، كم نشر، كم بقي محجوبًا، وهل القياس مزروع. أرقام الزوار التفصيلية تظهر في لوحة Plausible.</p><div class="signal-strip"><div class="signal"><span>فعاليات منشورة</span><b>${status.catalog.public_events}</b></div><div class="signal"><span>نشر جديد آخر دورة</span><b>${status.source_sync.published_new}</b></div><div class="signal"><span>ترقية ثانوية</span><b>${status.source_sync.secondary_promoted}</b></div><div class="signal"><span>جداول حية</span><b>${status.catalog.live_ready}</b></div></div></div></section>
+  <section class="section"><div class="wrap grid">
+    <article class="activation-card"><h2>الزيارات والتحليلات</h2><p>المزود: <strong>${escapeHtml(status.analytics.provider)}</strong></p><p>الدومين: <strong>${escapeHtml(status.analytics.domain)}</strong></p><p>الخصوصية: بدون كوكيز وبدون بيانات شخصية حسب إعدادات التقرير.</p><div class="activation-actions"><a class="cta" href="${escapeHtml(status.analytics.dashboard_url)}" target="_blank" rel="noopener">فتح لوحة الزيارات</a><a class="cta" href="./owner-status.json">بيانات الصفحة JSON</a></div></article>
+    <article class="activation-card"><h2>آخر جلب دوري</h2><p>آخر تقرير: <strong>${escapeHtml(status.source_sync.last_run_at || 'غير متاح')}</strong></p><p>مصادر منتجة: <strong>${status.source_sync.productive_sources}</strong> · أخطاء: <strong>${status.source_sync.collector_errors}</strong> · صفرية: <strong>${status.source_sync.zero_yield}</strong></p><p>مرشحون: <strong>${status.source_sync.candidates_seen}</strong> · منشور جديد: <strong>${status.source_sync.published_new}</strong> · مربوط بموجود: <strong>${status.source_sync.linked_existing}</strong></p><div class="activation-actions"><a class="cta" href="./source-health.html">صحة المصادر</a><a class="cta" href="./source-coverage-gaps.html">فجوات التغطية</a></div></article>
+  </div></section>
+  <section class="section"><div class="wrap"><h2>ماذا أراقب؟</h2>${operationalTable(['المؤشر', 'القيمة', 'متى أقلق؟'], [
+    ['blocked_remaining', status.source_sync.blocked_remaining, 'إذا بقي مرتفعًا لعدة دورات، نطوّر تحققًا ثانويًا أو مصادر رسمية بديلة.'],
+    ['secondary_promoted', status.source_sync.secondary_promoted, 'إذا كان صفرًا دائمًا، فالمطابقة الرسمية لا تعمل أو لا توجد أدلة كافية.'],
+    ['collector_errors', status.source_sync.collector_errors, 'إذا زادت الأخطاء، نصلح collectors أو نعيد تصنيف المصدر.'],
+    ['tracked_events', status.analytics.tracked_events.length, 'إذا صارت صفرًا، فالقياس غير مزروع في الصفحات العامة.']
+  ], (row) => `<tr><th>${escapeHtml(row[0])}</th><td>${escapeHtml(row[1])}</td><td>${escapeHtml(row[2])}</td></tr>`)}</div></section>
+</main>
+${footer('./')}
+</body>
+</html>`;
+  writeText(path.join(distDir, 'owner-status.html'), html);
 }
 
 function writeRegionsCoveragePage(events) {
@@ -4829,7 +4915,7 @@ function sitemapImageXml(event = {}) {
 
 function writeSitemap(events = []) {
   const eventByPage = new Map(events.map((event) => [`events/${event.file_slug}.html`, event]));
-  const ownerOnlyPages = new Set(['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html']);
+  const ownerOnlyPages = new Set(['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html', 'owner-status.html']);
   const sitemapPaths = [...new Set(htmlFiles(distDir)
     .map((file) => file.replace(/\\/g, '/'))
     .filter((file) => !ownerOnlyPages.has(file))
@@ -4853,12 +4939,15 @@ function writeAiSearchFiles(events) {
   const liveReady = events.filter((event) => event.live_schedule_ready).length;
   const sourceImageEvents = events.filter((event) => !event.generated_image && /\/assets\/event-images\//.test(event.image_url || '')).length;
 
-  writeText(path.join(distDir, 'robots.txt'), stripTrailingWhitespace(`User-agent: *
+writeText(path.join(distDir, 'robots.txt'), stripTrailingWhitespace(`User-agent: *
 Allow: /
 Disallow: /events.json
 Disallow: /sources.html
 Disallow: /methodology.html
 Disallow: /trust.html
+Disallow: /source-health.html
+Disallow: /owner-status.html
+Disallow: /owner-status.json
 Host: ${platformDomain}
 Sitemap: ${siteUrl}/sitemap.xml
 `));
@@ -5171,7 +5260,8 @@ function hideOwnerOnlyManifestShortcuts() {
     './trust.html',
     './candidates.html',
     './resolver.html',
-    './source-health.html'
+    './source-health.html',
+    './owner-status.html'
   ]);
   if (Array.isArray(manifest.shortcuts)) {
     manifest.shortcuts = manifest.shortcuts.filter((shortcut) => !ownerOnlyTargets.has(shortcut.url));
@@ -5225,6 +5315,7 @@ const browsePatched = patchEventsBrowsePage(events);
 const organizersPatched = patchOrganizersPage();
 const categoryFallback = writeLinkedCategoryFallbackPages(events);
 writeSourceCoverageGapsPage(events);
+writeOwnerStatusPage(events);
 writeRegionsCoveragePage(events);
 writeReadinessPage(events);
 writeCompliancePolicyPages();

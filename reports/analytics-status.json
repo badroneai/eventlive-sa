@@ -1,9 +1,10 @@
 {
   "schema": "eventlive.analytics-status.v1",
-  "generated_at": "2026-07-08T01:39:49.885Z",
+  "generated_at": "2026-07-08T10:10:06.437Z",
   "status": "PASS",
   "provider": "plausible",
   "domain": "eventme.live",
+  "dashboard_url": "https://plausible.io/eventme.live",
   "privacy": {
     "cookies": false,
     "pii": false,
@@ -33,11 +34,14 @@
     "events.json",
     "source-health.html",
     "candidates.html",
-    "resolver.html"
+    "resolver.html",
+    "owner-status.html",
+    "owner-status.json"
   ],
   "implementation": {
     "runtime_function": "window.eventLiveTrack",
     "html_attribute_tracking": "data-analytics-event",
-    "provider_dispatch": "Plausible/Umami/GA4-compatible when configured"
+    "provider_dispatch": "Plausible/Umami/GA4-compatible when configured",
+    "owner_status_page": "owner-status.html"
   }
 }

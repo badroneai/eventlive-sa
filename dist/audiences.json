@@ -1,32 +1,34 @@
 {
-  "generated_at": "2026-07-08T01:40:00.463Z",
+  "generated_at": "2026-07-08T10:10:26.415Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "audiences_count": 12,
   "totals": {
-    "events": 429,
-    "upcoming_or_active": 135,
+    "events": 449,
+    "upcoming_or_active": 155,
     "ended": 294,
-    "live_ready": 51
+    "live_ready": 52
   },
   "audiences": [
     {
       "slug": "professionals",
       "label": "موظفون ومهنيون",
       "url": "./for/professionals.html",
-      "total_events": 222,
-      "upcoming_or_active": 77,
+      "total_events": 228,
+      "upcoming_or_active": 83,
       "ended": 145,
-      "live_ready": 45,
+      "live_ready": 46,
       "sources": [
         "Abha Chamber Events",
         "Asharqia Chamber Events",
         "Dhahran Expo Calendar",
+        "Eye of Riyadh Events",
         "Invest Saudi Events",
         "Jazan Chamber Events",
         "Jeddah Chamber Exhibitions and Events Center",
         "MDLBEAST Events",
         "Makkah Chamber Events",
+        "Ministry of Culture Commission Calendars",
         "Ministry of Sport Events",
         "Misk Hub Events",
         "Misk Hub Programs",
@@ -62,6 +64,7 @@
       "categories": [
         "تدريب تقني",
         "ترفيه وعائلات",
+        "ثقافة وفنون",
         "جامعات ومجتمع",
         "جوائز وتكريم",
         "رياضة وفعاليات جماهيرية",
@@ -72,22 +75,22 @@
         "ورش تنظيمية وصحية"
       ],
       "next_event": {
-        "title": "Horses and Equestrian Heritage Exhibition",
-        "starts_at": "2026-02-24T21:30:00+03:00",
+        "title": "The Continuing Professional Development Initiative",
+        "starts_at": "2024-11-16T00:00:00+03:00",
         "status": "ongoing",
-        "url": "./events/event-horses-and-equestrian-heritage-exhibition.html"
+        "url": "./events/event-the-continuing-professional-development-initiative.html"
       },
-      "count": 222,
-      "sources_count": 23,
+      "count": 228,
+      "sources_count": 25,
       "cities_count": 14,
-      "categories_count": 10
+      "categories_count": 11
     },
     {
       "slug": "creatives",
       "label": "مبدعون وفنون",
       "url": "./for/creatives.html",
-      "total_events": 139,
-      "upcoming_or_active": 65,
+      "total_events": 152,
+      "upcoming_or_active": 78,
       "ended": 74,
       "live_ready": 4,
       "sources": [
@@ -99,6 +102,7 @@
         "Invest Saudi Events",
         "Jazan Chamber Events",
         "MDLBEAST Events",
+        "Ministry of Culture Commission Calendars",
         "Misk Hub Events",
         "Misk Hub Programs",
         "Riyadh City Events",
@@ -139,13 +143,13 @@
         "ورش تنظيمية وصحية"
       ],
       "next_event": {
-        "title": "Riyadh Season: BLVD City",
-        "starts_at": "2025-10-10T16:00:00+03:00",
+        "title": "Skill Development Initiative",
+        "starts_at": "2021-07-14T03:00:00+03:00",
         "status": "ongoing",
-        "url": "./events/event-riyadh-season-blvd-city.html"
+        "url": "./events/event-skill-development-initiative.html"
       },
-      "count": 139,
-      "sources_count": 18,
+      "count": 152,
+      "sources_count": 19,
       "cities_count": 12,
       "categories_count": 12
     },
@@ -153,8 +157,8 @@
       "slug": "tech",
       "label": "تقنيون",
       "url": "./for/tech.html",
-      "total_events": 68,
-      "upcoming_or_active": 42,
+      "total_events": 71,
+      "upcoming_or_active": 45,
       "ended": 26,
       "live_ready": 1,
       "sources": [
@@ -200,17 +204,66 @@
         "status": "ongoing",
         "url": "./events/event-world-cup-2026-fan-zone-at-kimpton-kafd.html"
       },
-      "count": 68,
+      "count": 71,
       "sources_count": 13,
       "cities_count": 7,
       "categories_count": 11
     },
     {
+      "slug": "researchers",
+      "label": "باحثون وأكاديميون",
+      "url": "./for/researchers.html",
+      "total_events": 79,
+      "upcoming_or_active": 35,
+      "ended": 44,
+      "live_ready": 7,
+      "sources": [
+        "Dhahran Expo Calendar",
+        "Jazan Chamber Events",
+        "Ministry of Culture Commission Calendars",
+        "Riyadh City Events",
+        "Saudi Space Agency Events",
+        "Saudi Universities and Technical Colleges",
+        "Saudi Water Authority Events",
+        "Tuwaiq Academy Bootcamps and Programs"
+      ],
+      "cities": [
+        "الرياض",
+        "السعودية",
+        "الظهران",
+        "ثول",
+        "جازان",
+        "جدة",
+        "دولي"
+      ],
+      "categories": [
+        "ثقافة وفنون",
+        "جامعات ومجتمع",
+        "جوائز وتكريم",
+        "رياضة وفعاليات جماهيرية",
+        "علوم وفضاء",
+        "فعاليات الغرف التجارية",
+        "مؤتمرات ومنتديات",
+        "معارض وتجارية",
+        "ورش تنظيمية وصحية"
+      ],
+      "next_event": {
+        "title": "Academic Excellence in Architecture and Design Education",
+        "starts_at": "2025-03-09T00:00:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-academic-excellence-in-architecture-and-design-education.html"
+      },
+      "count": 79,
+      "sources_count": 8,
+      "cities_count": 7,
+      "categories_count": 9
+    },
+    {
       "slug": "families",
       "label": "عائلات وأطفال",
       "url": "./for/families.html",
-      "total_events": 77,
-      "upcoming_or_active": 34,
+      "total_events": 78,
+      "upcoming_or_active": 35,
       "ended": 43,
       "live_ready": 1,
       "sources": [
@@ -248,65 +301,17 @@
         "status": "ongoing",
         "url": "./events/event-poppy-playtime.html"
       },
-      "count": 77,
+      "count": 78,
       "sources_count": 8,
       "cities_count": 8,
       "categories_count": 7
     },
     {
-      "slug": "researchers",
-      "label": "باحثون وأكاديميون",
-      "url": "./for/researchers.html",
-      "total_events": 75,
-      "upcoming_or_active": 31,
-      "ended": 44,
-      "live_ready": 7,
-      "sources": [
-        "Dhahran Expo Calendar",
-        "Jazan Chamber Events",
-        "Riyadh City Events",
-        "Saudi Space Agency Events",
-        "Saudi Universities and Technical Colleges",
-        "Saudi Water Authority Events",
-        "Tuwaiq Academy Bootcamps and Programs"
-      ],
-      "cities": [
-        "الرياض",
-        "السعودية",
-        "الظهران",
-        "ثول",
-        "جازان",
-        "جدة",
-        "دولي"
-      ],
-      "categories": [
-        "ثقافة وفنون",
-        "جامعات ومجتمع",
-        "جوائز وتكريم",
-        "رياضة وفعاليات جماهيرية",
-        "علوم وفضاء",
-        "فعاليات الغرف التجارية",
-        "مؤتمرات ومنتديات",
-        "معارض وتجارية",
-        "ورش تنظيمية وصحية"
-      ],
-      "next_event": {
-        "title": "Prince Faisal Bin Fahd Art Exhibition: Summer 2026",
-        "starts_at": "2026-07-01T16:00:00+03:00",
-        "status": "ongoing",
-        "url": "./events/event-prince-faisal-bin-fahd-art-exhibition-summer-2026.html"
-      },
-      "count": 75,
-      "sources_count": 7,
-      "cities_count": 7,
-      "categories_count": 9
-    },
-    {
       "slug": "skilled-trades",
       "label": "مهاريون وحرفيون",
       "url": "./for/skilled-trades.html",
-      "total_events": 68,
-      "upcoming_or_active": 30,
+      "total_events": 70,
+      "upcoming_or_active": 32,
       "ended": 38,
       "live_ready": 10,
       "sources": [
@@ -316,6 +321,7 @@
         "Future Skills MCIT Catalogue",
         "Jazan Chamber Events",
         "Makkah Chamber Events",
+        "Ministry of Culture Commission Calendars",
         "Misk Hub Events",
         "Misk Hub Programs",
         "RFECC What's On",
@@ -348,13 +354,13 @@
         "ورش تنظيمية وصحية"
       ],
       "next_event": {
-        "title": "Misk Local Traineeship Program",
-        "starts_at": "2026-04-01T09:00:00+03:00",
+        "title": "Culinary Manufacturing Hubs",
+        "starts_at": "2025-08-11T00:00:00+03:00",
         "status": "ongoing",
-        "url": "./events/event-misk-local-traineeship-program.html"
+        "url": "./events/event-culinary-manufacturing-hubs.html"
       },
-      "count": 68,
-      "sources_count": 13,
+      "count": 70,
+      "sources_count": 14,
       "cities_count": 9,
       "categories_count": 10
     },
@@ -362,8 +368,8 @@
       "slug": "students",
       "label": "طلاب وخريجون",
       "url": "./for/students.html",
-      "total_events": 49,
-      "upcoming_or_active": 26,
+      "total_events": 52,
+      "upcoming_or_active": 29,
       "ended": 23,
       "live_ready": 0,
       "sources": [
@@ -401,7 +407,7 @@
         "status": "ongoing",
         "url": "./events/event-misk-local-traineeship-program.html"
       },
-      "count": 49,
+      "count": 52,
       "sources_count": 9,
       "cities_count": 7,
       "categories_count": 7
@@ -410,8 +416,8 @@
       "slug": "sports",
       "label": "رياضة ولياقة",
       "url": "./for/sports.html",
-      "total_events": 128,
-      "upcoming_or_active": 21,
+      "total_events": 129,
+      "upcoming_or_active": 22,
       "ended": 107,
       "live_ready": 5,
       "sources": [
@@ -449,7 +455,7 @@
         "status": "ongoing",
         "url": "./events/event-immersive-experience-flying-over-saudi.html"
       },
-      "count": 128,
+      "count": 129,
       "sources_count": 8,
       "cities_count": 10,
       "categories_count": 5
@@ -458,8 +464,8 @@
       "slug": "entrepreneurs",
       "label": "رواد أعمال",
       "url": "./for/entrepreneurs.html",
-      "total_events": 65,
-      "upcoming_or_active": 21,
+      "total_events": 66,
+      "upcoming_or_active": 22,
       "ended": 44,
       "live_ready": 3,
       "sources": [
@@ -507,7 +513,7 @@
         "status": "ongoing",
         "url": "./events/event-poppy-playtime.html"
       },
-      "count": 65,
+      "count": 66,
       "sources_count": 13,
       "cities_count": 12,
       "categories_count": 8
@@ -516,8 +522,8 @@
       "slug": "job-seekers",
       "label": "باحثون عن عمل",
       "url": "./for/job-seekers.html",
-      "total_events": 30,
-      "upcoming_or_active": 9,
+      "total_events": 31,
+      "upcoming_or_active": 10,
       "ended": 21,
       "live_ready": 1,
       "sources": [
@@ -553,7 +559,7 @@
         "status": "ongoing",
         "url": "./events/event-misk-local-traineeship-program.html"
       },
-      "count": 30,
+      "count": 31,
       "sources_count": 7,
       "cities_count": 10,
       "categories_count": 4

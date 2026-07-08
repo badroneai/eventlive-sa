@@ -4,5 +4,8 @@ Disallow: /events.json
 Disallow: /sources.html
 Disallow: /methodology.html
 Disallow: /trust.html
+Disallow: /source-health.html
+Disallow: /owner-status.html
+Disallow: /owner-status.json
 Host: eventme.live
 Sitemap: https://eventme.live/sitemap.xml

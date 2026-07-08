@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-07-08T08:52:16.913Z",
+  "published_at": "2026-07-08T10:07:57.123Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -7,26 +7,91 @@
   "candidates_seen": 184,
   "totals": {
     "candidates_seen": 184,
-    "published": 3,
-    "linked_existing": 137,
-    "blocked": 44,
-    "reconciled": 140
+    "published": 16,
+    "linked_existing": 139,
+    "blocked": 29,
+    "reconciled": 155
   },
   "published": [
     {
-      "candidate_id": "candidate-riyadh-city-events-pfl-mena-fight-night-20260710-0eafa4d0",
-      "event_id": "event-pfl-mena-fight-night",
-      "title": "PFL MENA Fight Night"
+      "candidate_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c",
+      "event_id": "event-skill-development-initiative",
+      "title": "Skill Development Initiative"
+    },
+    {
+      "candidate_id": "candidate-moc-cultural-subportals-sitar-20220921-cda2e068",
+      "event_id": "event-sitar",
+      "title": "SITAR"
+    },
+    {
+      "candidate_id": "candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1",
+      "event_id": "event-the-architecture-and-design-caf",
+      "title": "The Architecture and Design Café"
+    },
+    {
+      "candidate_id": "candidate-moc-cultural-subportals-jusoor-program-20240818-22e2fb74",
+      "event_id": "event-jusoor-program",
+      "title": "Jusoor Program"
+    },
+    {
+      "candidate_id": "candidate-moc-cultural-subportals-urban-transformation-initiative-20241031-7a933cab",
+      "event_id": "event-urban-transformation-initiative",
+      "title": "Urban transformation Initiative"
+    },
+    {
+      "candidate_id": "candidate-moc-cultural-subportals-the-continuing-professional-development-initiative-20241116-a7cef8e2",
+      "event_id": "event-the-continuing-professional-development-initiative",
+      "title": "The Continuing Professional Development Initiative"
+    },
+    {
+      "candidate_id": "candidate-moc-cultural-subportals-design-for-good-initiative-20241205-3788803e",
+      "event_id": "event-design-for-good-initiative",
+      "title": "Design for Good Initiative"
+    },
+    {
+      "candidate_id": "candidate-moc-cultural-subportals-the-saudi-music-hub-20250101-10d8a675",
+      "event_id": "event-the-saudi-music-hub",
+      "title": "The Saudi Music Hub"
+    },
+    {
+      "candidate_id": "candidate-moc-cultural-subportals-academic-excellence-in-architecture-and-design-education-20250309-a4072111",
+      "event_id": "event-academic-excellence-in-architecture-and-design-education",
+      "title": "Academic Excellence in Architecture and Design Education"
+    },
+    {
+      "candidate_id": "candidate-moc-cultural-subportals-culinary-manufacturing-hubs-20250811-d7214bd9",
+      "event_id": "event-culinary-manufacturing-hubs",
+      "title": "Culinary Manufacturing Hubs"
+    },
+    {
+      "candidate_id": "candidate-moc-cultural-subportals-film-business-accelerator-20260119-254dca29",
+      "event_id": "event-film-business-accelerator",
+      "title": "Film Business Accelerator"
+    },
+    {
+      "candidate_id": "candidate-moc-cultural-subportals-the-guidelines-for-culture-and-arts-in-the-public-realm-20260205-fbf08244",
+      "event_id": "event-the-guidelines-for-culture-and-arts-in-the-public-realm",
+      "title": "The Guidelines for Culture and Arts in the Public Realm"
+    },
+    {
+      "candidate_id": "candidate-misk-hub-programs-application-deadline-2030-leaders-20260708-68dd4c4c",
+      "event_id": "event-application-deadline-2030-leaders",
+      "title": "Application deadline: 2030 Leaders"
     },
     {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45",
-      "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-5",
+      "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-6",
       "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python"
     },
     {
-      "candidate_id": "candidate-sfda-events-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال-20261005-34d08b48",
-      "event_id": "event-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال",
-      "title": "دور الهيئة العامة للغذاء و الدواء في ضمان سلامة الاستخدام الامن لجهاز الماموجرام"
+      "candidate_id": "candidate-eye-of-riyadh-events-saudi-wood-expo-2026-20260830-b4d44be4",
+      "event_id": "event-saudi-wood-expo-2026",
+      "title": "Saudi Wood Expo 2026"
+    },
+    {
+      "candidate_id": "candidate-eye-of-riyadh-events-saudi-industrial-series-20260830-c10ad399",
+      "event_id": "event-saudi-industrial-series-2",
+      "title": "Saudi Industrial Series"
     }
   ],
   "linked_existing": [
@@ -208,6 +273,12 @@
       "candidate_id": "candidate-mdlbeast-events-unstable-20260710-5647df2e",
       "event_id": "event-unstable",
       "title": "Unstable",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-riyadh-city-events-pfl-mena-fight-night-20260710-0eafa4d0",
+      "event_id": "event-pfl-mena-fight-night",
+      "title": "PFL MENA Fight Night",
       "reason": "already linked to catalog event"
     },
     {
@@ -691,6 +762,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-sfda-events-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال-20261005-34d08b48",
+      "event_id": "event-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال",
+      "title": "دور الهيئة العامة للغذاء و الدواء في ضمان سلامة الاستخدام الامن لجهاز الماموجرام",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-rfecc-whats-on-natrual-expo-20261026-a7983dd2",
       "event_id": "event-natrual-expo",
       "title": "Natrual Expo",
@@ -855,74 +932,9 @@
   ],
   "blocked": [
     {
-      "candidate_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c",
-      "title": "Skill Development Initiative",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-sitar-20220921-cda2e068",
-      "title": "SITAR",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1",
-      "title": "The Architecture and Design Café",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-jusoor-program-20240818-22e2fb74",
-      "title": "Jusoor Program",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-urban-transformation-initiative-20241031-7a933cab",
-      "title": "Urban transformation Initiative",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-the-continuing-professional-development-initiative-20241116-a7cef8e2",
-      "title": "The Continuing Professional Development Initiative",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-design-for-good-initiative-20241205-3788803e",
-      "title": "Design for Good Initiative",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-the-saudi-music-hub-20250101-10d8a675",
-      "title": "The Saudi Music Hub",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-academic-excellence-in-architecture-and-design-education-20250309-a4072111",
-      "title": "Academic Excellence in Architecture and Design Education",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-culinary-manufacturing-hubs-20250811-d7214bd9",
-      "title": "Culinary Manufacturing Hubs",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-film-business-accelerator-20260119-254dca29",
-      "title": "Film Business Accelerator",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-the-guidelines-for-culture-and-arts-in-the-public-realm-20260205-fbf08244",
-      "title": "The Guidelines for Culture and Arts in the Public Realm",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
       "candidate_id": "candidate-eye-of-riyadh-events-esports-world-cup-20260706-13ed17c1",
       "title": "Esports World Cup",
       "reason": "possible duplicate already exists: event-esports-world-cup"
-    },
-    {
-      "candidate_id": "candidate-misk-hub-programs-application-deadline-2030-leaders-20260708-68dd4c4c",
-      "title": "Application deadline: 2030 Leaders",
-      "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
       "candidate_id": "candidate-eventbrite-saudi-dubai-property-expo-in-al-khobar-17th-18th-july-2026-danube-20260717-2dd8b8b7",
@@ -945,11 +957,6 @@
       "reason": "confidence public-listing is not auto-publishable"
     },
     {
-      "candidate_id": "candidate-eye-of-riyadh-events-saudi-wood-expo-2026-20260830-b4d44be4",
-      "title": "Saudi Wood Expo 2026",
-      "reason": "confidence public-listing is not auto-publishable"
-    },
-    {
       "candidate_id": "candidate-eye-of-riyadh-events-big-5-construct-saudi-20260830-2238e3a0",
       "title": "Big 5 Construct Saudi",
       "reason": "confidence public-listing is not auto-publishable"
@@ -957,11 +964,6 @@
     {
       "candidate_id": "candidate-eye-of-riyadh-events-hvac-r-saudi-arabia-20260830-857b2f5b",
       "title": "HVAC R Saudi Arabia",
-      "reason": "confidence public-listing is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-saudi-industrial-series-20260830-c10ad399",
-      "title": "Saudi Industrial Series",
       "reason": "confidence public-listing is not auto-publishable"
     },
     {

@@ -547,6 +547,9 @@
 
 
 
+
+
+
   <style id="eventlive-brand-pulse">
 @keyframes eventliveLiveDotPulse {
   0%, 100% { opacity: .92; transform: translateX(-50%) scale(1); box-shadow: 0 0 0 0 rgba(229, 72, 77, .2); }
@@ -576,7 +579,6 @@
   .breadcrumbs strong { max-width: 24ch; }
 }
 </style>
-  <script defer data-domain="eventme.live" src="https://plausible.io/js/script.tagged-events.js"></script>
 </head>
 <body>
 
@@ -1401,91 +1403,6 @@
 
 
 
-<script id="eventlive-analytics-runtime">
-(function () {
-  var ownerOnlyPattern = /\/(sources|methodology|trust|source-health|candidates|resolver)\.html$|\/(events|sources|trust|methodology|readiness|source-coverage-gaps|regions)\.json$/;
-  var path = window.location.pathname || '';
-  if (ownerOnlyPattern.test(path)) {
-    window.eventLiveTrack = function () {};
-    return;
-  }
 
-  function clean(value) {
-    return String(value || '').replace(/\s+/g, ' ').trim().slice(0, 160);
-  }
-
-  function payload(extra) {
-    return Object.assign({
-      path: path,
-      title: clean(document.title),
-      referrer_host: document.referrer ? (new URL(document.referrer, window.location.href)).host : ''
-    }, extra || {});
-  }
-
-  window.eventLiveTrack = function (name, props) {
-    var eventName = clean(name || '');
-    if (!eventName) return;
-    var eventProps = payload(props);
-    try {
-      if (typeof window.plausible === 'function') {
-        window.plausible(eventName, { props: eventProps });
-        return;
-      }
-      if (typeof window.umami === 'object' && typeof window.umami.track === 'function') {
-        window.umami.track(eventName, eventProps);
-        return;
-      }
-      if (typeof window.gtag === 'function') {
-        window.gtag('event', eventName, eventProps);
-      }
-    } catch (error) {
-      if (window.console && window.console.debug) window.console.debug('EventLive analytics skipped', error);
-    }
-  };
-
-  window.eventLiveTrack('page_view', {
-    page_kind: document.body?.dataset?.pageKind || path.split('/').filter(Boolean).pop() || 'home'
-  });
-
-  document.addEventListener('click', function (event) {
-    var target = event.target && event.target.closest ? event.target.closest('a,button,[data-analytics-event]') : null;
-    if (!target) return;
-    var explicit = target.getAttribute('data-analytics-event');
-    var href = target.getAttribute('href') || '';
-    var text = clean(target.textContent);
-    var name = explicit || '';
-    if (!name && /\.ics(?:$|\?)/.test(href)) name = 'calendar_downloaded';
-    if (!name && /google\.com\/maps|maps\.apple\.com|directions/i.test(href)) name = 'directions_clicked';
-    if (!name && /\/events\//.test(href)) name = 'event_opened';
-    if (!name && /\/cities\//.test(href)) name = 'city_filter_used';
-    if (!name && /\/categories\//.test(href)) name = 'category_filter_used';
-    if (!name && /\/for\//.test(href)) name = 'audience_filter_used';
-    if (!name && /screen\.html/.test(href)) name = 'live_screen_opened';
-    if (!name && /share\.html/.test(href)) name = 'share_clicked';
-    if (!name && /organizer/.test(href + ' ' + text)) name = 'organizer_cta_clicked';
-    if (!name && /today/.test(href)) name = 'today_opened';
-    if (!name && /this-week/.test(href)) name = 'this_week_opened';
-    if (!name && /source|evidence|visitsaudi|gea|moc|tuwaiq|mcit|mdlbeast|experiencealula/i.test(href)) name = 'source_clicked';
-    if (!name) return;
-    window.eventLiveTrack(name, { href: href, label: text });
-  }, { capture: true });
-
-  var searchTimer = null;
-  document.addEventListener('input', function (event) {
-    var target = event.target;
-    if (!target || !/search|q|query/i.test(target.getAttribute('type') || target.getAttribute('name') || target.getAttribute('placeholder') || '')) return;
-    window.clearTimeout(searchTimer);
-    searchTimer = window.setTimeout(function () {
-      window.eventLiveTrack('search_used', { query_length: clean(target.value).length });
-    }, 700);
-  }, { passive: true });
-
-  window.addEventListener('storage', function (event) {
-    if (/saved|eventlive-saved-events/i.test(event.key || '')) {
-      window.eventLiveTrack('saved_event', { storage_key: event.key || '' });
-    }
-  });
-})();
-</script>
 </body>
 </html>

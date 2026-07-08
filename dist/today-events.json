@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-08T01:40:00.463Z",
+  "generated_at": "2026-07-08T10:10:26.415Z",
   "platform": "EventLive",
   "scope": "today-events",
   "window_hours": 72,
-  "count": 7,
+  "count": 9,
   "events": [
     {
       "id": "event-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية",
@@ -36,6 +36,16 @@
       "live_schedule_ready": false
     },
     {
+      "id": "event-application-deadline-2030-leaders",
+      "title": "2030 Leaders",
+      "url": "./events/event-application-deadline-2030-leaders.html",
+      "city": "السعودية",
+      "starts_at": "2026-07-08T09:00:00+03:00",
+      "ends_at": "2026-07-08T23:59:00+03:00",
+      "status": "live",
+      "live_schedule_ready": false
+    },
+    {
       "id": "event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone",
       "title": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
       "url": "./events/event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone.html",
@@ -64,6 +74,16 @@
       "ends_at": "2026-07-10T14:00:00+03:00",
       "status": "upcoming",
       "live_schedule_ready": true
+    },
+    {
+      "id": "event-pfl-mena-fight-night",
+      "title": "PFL MENA Fight Night",
+      "url": "./events/event-pfl-mena-fight-night.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-10T22:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
     },
     {
       "id": "event-beast-house",

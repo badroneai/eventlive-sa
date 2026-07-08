@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:2030 Leaders | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-application-deadline-2030-leaders@eventme.live
+DTSTAMP:20260708T101026Z
+DTSTART:20260708T060000Z
+DTEND:20260708T205900Z
+SUMMARY:2030 Leaders
+DESCRIPTION:Misk's 2030 Leaders program provides a bespoke leadership journey equipping experienced\, influential leaders\, to challenge convention\, lead the nation\, and realize Vision 2030 goals. المصدر الرسمي: Misk Hub.
+LOCATION:Hybrid
+URL:https://eventme.live/events/event-application-deadline-2030-leaders.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Saudi Industrial Series | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-saudi-industrial-series-2@eventme.live
+DTSTAMP:20260708T101026Z
+DTSTART:20260830T060000Z
+DTEND:20260901T150000Z
+SUMMARY:Saudi Industrial Series
+DESCRIPTION:As Saudi Arabia accelerates towards its ambitious Vision 2030\, powered by... Saudi Industrial Series ضمن مؤتمرات ومنتديات في الرياض. تبدأ الفعالية ٣٠‏/٠٨‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٠١‏/٠٩‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Eye of Riyadh Events.
+LOCATION:Riyadh International Convention & Exhibition Center (RICEC) \, Riyadh
+URL:https://eventme.live/events/event-saudi-industrial-series-2.html
+END:VEVENT
+END:VCALENDAR

@@ -279,6 +279,7 @@ function buildHarvestStatus(state) {
 function buildAnalyticsStatus() {
   const provider = process.env.EVENTLIVE_ANALYTICS_PROVIDER || 'plausible';
   const domain = process.env.EVENTLIVE_ANALYTICS_DOMAIN || 'eventme.live';
+  const dashboardUrl = process.env.EVENTLIVE_ANALYTICS_DASHBOARD_URL || `https://plausible.io/${domain}`;
   const trackedEvents = [
     'page_view',
     'search_used',
@@ -296,13 +297,14 @@ function buildAnalyticsStatus() {
     'this_week_opened',
     'today_opened'
   ];
-  const ownerExcluded = ['sources.html', 'methodology.html', 'trust.html', 'events.json', 'source-health.html', 'candidates.html', 'resolver.html'];
+  const ownerExcluded = ['sources.html', 'methodology.html', 'trust.html', 'events.json', 'source-health.html', 'candidates.html', 'resolver.html', 'owner-status.html', 'owner-status.json'];
   const report = {
     schema: 'eventlive.analytics-status.v1',
     generated_at: generatedAt,
     status: 'PASS',
     provider,
     domain,
+    dashboard_url: dashboardUrl,
     privacy: {
       cookies: false,
       pii: false,
@@ -313,7 +315,8 @@ function buildAnalyticsStatus() {
     implementation: {
       runtime_function: 'window.eventLiveTrack',
       html_attribute_tracking: 'data-analytics-event',
-      provider_dispatch: 'Plausible/Umami/GA4-compatible when configured'
+      provider_dispatch: 'Plausible/Umami/GA4-compatible when configured',
+      owner_status_page: 'owner-status.html'
     }
   };
   writeJson(path.join(reportsDir, 'analytics-status.json'), report);
@@ -324,6 +327,7 @@ function buildAnalyticsStatus() {
     `- Status: ${report.status}`,
     `- Provider: ${provider}`,
     `- Domain: ${domain}`,
+    `- Dashboard: ${dashboardUrl}`,
     `- Cookies: ${report.privacy.cookies ? 'yes' : 'no'}`,
     `- PII: ${report.privacy.pii ? 'yes' : 'no'}`,
     '',
@@ -334,6 +338,11 @@ function buildAnalyticsStatus() {
     '## Owner-Excluded Paths',
     '',
     ...ownerExcluded.map((item) => `- \`${item}\``),
+    '',
+    '## Owner Reading Path',
+    '',
+    '- افتح `owner-status.html` لمعرفة حالة الجلب والقياس من داخل الموقع.',
+    '- افتح لوحة المزود أعلاه لقراءة أرقام الزوار الفعلية والمصادر والصفحات.',
     ''
   ].join('\n'));
   return report;

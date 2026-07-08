@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:The Saudi Music Hub | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-the-saudi-music-hub@eventme.live
+DTSTAMP:20260708T101026Z
+DTSTART:20241231T210000Z
+DTEND:20270402T210000Z
+SUMMARY:The Saudi Music Hub
+DESCRIPTION:برنامج أو مبادرة ثقافية رسمية من تقويم وزارة الثقافة. المدة طويلة لذلك تحفظ كدليل مصدر ولا تنشر تلقائياً كفعالية لحظية. The Saudi Music Hub ضمن ثقافة وفنون في السعودية. تبدأ الفعالية ٠١‏/٠١‏/٢٠٢٥، ١٢:٠٠ ص وتنتهي ٠٣‏/٠٤‏/٢٠٢٧، ١٢:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Ministry of Culture Commission Calendars.
+LOCATION:Saudi Arabia
+URL:https://eventme.live/events/event-the-saudi-music-hub.html
+END:VEVENT
+END:VCALENDAR

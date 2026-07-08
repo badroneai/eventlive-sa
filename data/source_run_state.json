@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-run-state.v1",
-  "generated_at": "2026-07-08T08:54:26.873Z",
+  "generated_at": "2026-07-08T10:10:05.839Z",
   "operating_rule": "Raw collection is not publication. Every source run preserves evidence, separates discovery from production, and only official/venue active-collector lanes can reach auto-publish after candidate-level guards.",
   "inputs": {
     "registry": "data/source_registry.json",
@@ -103,7 +103,7 @@
       "last_zero_yield_reason": "collector-error: fetch failed",
       "dropped_samples_count": 0,
       "zero_yield_streak": 0,
-      "error_streak": 9,
+      "error_streak": 10,
       "auto_publish_eligible_by_source": true,
       "auto_publish_guard": "candidate must still pass evidence, duplicate, date, and confidence gates",
       "next_action": "Fix collector error: fetch failed"
@@ -132,7 +132,7 @@
       "last_zero_yield_reason": "collector-error: The operation was aborted due to timeout",
       "dropped_samples_count": 0,
       "zero_yield_streak": 0,
-      "error_streak": 9,
+      "error_streak": 10,
       "auto_publish_eligible_by_source": true,
       "auto_publish_guard": "candidate must still pass evidence, duplicate, date, and confidence gates",
       "next_action": "Fix collector error: fetch failed"
@@ -218,11 +218,11 @@
       "last_snapshot_path": "data/raw/source-snapshots/experience-alula-events-2026-07-08T08-48-20-585Z.html",
       "last_zero_yield_reason": "past-date:1",
       "dropped_samples_count": 1,
-      "zero_yield_streak": 30,
+      "zero_yield_streak": 31,
       "error_streak": 0,
       "auto_publish_eligible_by_source": true,
       "auto_publish_guard": "candidate must still pass evidence, duplicate, date, and confidence gates",
-      "next_action": "Zero-yield for 30 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 31 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "mdlbeast-events",
@@ -277,7 +277,7 @@
       "last_zero_yield_reason": "collector-error: The operation was aborted due to timeout",
       "dropped_samples_count": 0,
       "zero_yield_streak": 0,
-      "error_streak": 9,
+      "error_streak": 10,
       "auto_publish_eligible_by_source": true,
       "auto_publish_guard": "candidate must still pass evidence, duplicate, date, and confidence gates",
       "next_action": "Fix collector error: fetch failed"
@@ -595,11 +595,11 @@
       "last_snapshot_path": "data/raw/source-snapshots/code-mcit-programs-2026-07-08T08-48-20-585Z.html",
       "last_zero_yield_reason": "no rows detected by extractor",
       "dropped_samples_count": 0,
-      "zero_yield_streak": 30,
+      "zero_yield_streak": 31,
       "error_streak": 0,
       "auto_publish_eligible_by_source": true,
       "auto_publish_guard": "candidate must still pass evidence, duplicate, date, and confidence gates",
-      "next_action": "Zero-yield for 30 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 31 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "misk-hub-programs",
@@ -682,11 +682,11 @@
       "last_snapshot_path": "data/raw/source-snapshots/ithra-events-2026-07-08T08-48-20-585Z.html",
       "last_zero_yield_reason": "date/content signals exist but extractor returned no complete future rows",
       "dropped_samples_count": 0,
-      "zero_yield_streak": 30,
+      "zero_yield_streak": 31,
       "error_streak": 0,
       "auto_publish_eligible_by_source": true,
       "auto_publish_guard": "candidate must still pass evidence, duplicate, date, and confidence gates",
-      "next_action": "Zero-yield for 30 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 31 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "saudi-digital-academy",
@@ -741,7 +741,7 @@
       "last_zero_yield_reason": "collector-error: fetch failed",
       "dropped_samples_count": 0,
       "zero_yield_streak": 0,
-      "error_streak": 9,
+      "error_streak": 10,
       "auto_publish_eligible_by_source": false,
       "auto_publish_guard": "not a direct auto-publish source lane",
       "next_action": "Fix collector error: fetch failed"
@@ -827,11 +827,11 @@
       "last_snapshot_path": "data/raw/source-snapshots/misk-hub-events-2026-07-08T08-48-20-585Z.html",
       "last_zero_yield_reason": "past-date:5",
       "dropped_samples_count": 5,
-      "zero_yield_streak": 30,
+      "zero_yield_streak": 31,
       "error_streak": 0,
       "auto_publish_eligible_by_source": false,
       "auto_publish_guard": "not a direct auto-publish source lane",
-      "next_action": "Zero-yield for 30 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 31 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "jcci-events-center",
@@ -856,11 +856,11 @@
       "last_snapshot_path": "data/raw/source-snapshots/jcci-events-center-2026-07-08T08-48-20-585Z.html",
       "last_zero_yield_reason": "past-date:13",
       "dropped_samples_count": 5,
-      "zero_yield_streak": 30,
+      "zero_yield_streak": 31,
       "error_streak": 0,
       "auto_publish_eligible_by_source": false,
       "auto_publish_guard": "not a direct auto-publish source lane",
-      "next_action": "Zero-yield for 30 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 31 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "saudi-pro-league-fixtures",
@@ -885,11 +885,11 @@
       "last_snapshot_path": "data/raw/source-snapshots/saudi-pro-league-fixtures-2026-07-08T08-48-20-585Z.json",
       "last_zero_yield_reason": "past-date:100",
       "dropped_samples_count": 5,
-      "zero_yield_streak": 30,
+      "zero_yield_streak": 31,
       "error_streak": 0,
       "auto_publish_eligible_by_source": false,
       "auto_publish_guard": "not a direct auto-publish source lane",
-      "next_action": "Zero-yield for 30 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 31 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "neom-newsroom-events",
@@ -943,11 +943,11 @@
       "last_snapshot_path": "data/raw/source-snapshots/saudi-space-agency-events-2026-07-08T08-48-20-585Z.json",
       "last_zero_yield_reason": "past-date:14",
       "dropped_samples_count": 5,
-      "zero_yield_streak": 15,
+      "zero_yield_streak": 16,
       "error_streak": 0,
       "auto_publish_eligible_by_source": false,
       "auto_publish_guard": "not a direct auto-publish source lane",
-      "next_action": "Zero-yield for 15 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 16 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "cst-events-news",
@@ -1089,7 +1089,7 @@
       "last_zero_yield_reason": "collector-error: The operation was aborted due to timeout",
       "dropped_samples_count": 0,
       "zero_yield_streak": 0,
-      "error_streak": 9,
+      "error_streak": 10,
       "auto_publish_eligible_by_source": false,
       "auto_publish_guard": "not a direct auto-publish source lane",
       "next_action": "Fix collector error: fetch failed"
@@ -1582,7 +1582,7 @@
       "last_zero_yield_reason": "collector-error: fetch failed",
       "dropped_samples_count": 0,
       "zero_yield_streak": 0,
-      "error_streak": 9,
+      "error_streak": 10,
       "auto_publish_eligible_by_source": false,
       "auto_publish_guard": "not a direct auto-publish source lane",
       "next_action": "Fix collector error: fetch failed"
@@ -1610,11 +1610,11 @@
       "last_snapshot_path": "data/raw/source-snapshots/makkah-chamber-events-2026-07-08T08-48-20-585Z.html",
       "last_zero_yield_reason": "past-date:10",
       "dropped_samples_count": 5,
-      "zero_yield_streak": 24,
+      "zero_yield_streak": 25,
       "error_streak": 0,
       "auto_publish_eligible_by_source": false,
       "auto_publish_guard": "not a direct auto-publish source lane",
-      "next_action": "Zero-yield for 24 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 25 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "asharqia-chamber-events",
@@ -1669,7 +1669,7 @@
       "last_zero_yield_reason": "collector-error: HTTP 403",
       "dropped_samples_count": 0,
       "zero_yield_streak": 0,
-      "error_streak": 9,
+      "error_streak": 10,
       "auto_publish_eligible_by_source": false,
       "auto_publish_guard": "not a direct auto-publish source lane",
       "next_action": "Fix collector error: HTTP 403"
@@ -1697,11 +1697,11 @@
       "last_snapshot_path": "data/raw/source-snapshots/abha-chamber-events-2026-07-08T08-48-20-585Z.html",
       "last_zero_yield_reason": "past-date:5",
       "dropped_samples_count": 5,
-      "zero_yield_streak": 24,
+      "zero_yield_streak": 25,
       "error_streak": 0,
       "auto_publish_eligible_by_source": false,
       "auto_publish_guard": "not a direct auto-publish source lane",
-      "next_action": "Zero-yield for 24 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 25 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "baha-amanah-events",
@@ -1872,7 +1872,7 @@
       "last_zero_yield_reason": "collector-error: The operation was aborted due to timeout",
       "dropped_samples_count": 0,
       "zero_yield_streak": 0,
-      "error_streak": 9,
+      "error_streak": 10,
       "auto_publish_eligible_by_source": false,
       "auto_publish_guard": "not a direct auto-publish source lane",
       "next_action": "Fix collector error: fetch failed"

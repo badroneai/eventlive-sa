@@ -21,8 +21,8 @@
       "discovered_at": "2026-07-07T19:14:38.221Z",
       "discovery_method": "official-calendar",
       "confidence": "official",
-      "review_status": "evidence-captured",
-      "publication_gate": "source-evidence",
+      "review_status": "approved-for-catalog",
+      "publication_gate": "catalog-review",
       "image_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
       "image_alt": "Skill Development Initiative",
       "image_source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Skills%20development/EventDetail",
@@ -30,7 +30,7 @@
       "language": "en",
       "richness_score": 6,
       "extracted_sessions_count": 0,
-      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available.",
+      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available. تحقق ثانوي: مصدر رسمي طويل المدة؛ يرقى كبرنامج ممتد لا كجلسة يومية. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-08T10:07:57.123Z.",
       "tags": [
         "music",
         "heritage",
@@ -45,7 +45,12 @@
       ],
       "audiences": [
         "creatives"
-      ]
+      ],
+      "secondary_verified_at": "2026-07-08T10:07:56.900Z",
+      "secondary_verification_kind": "official-program-evidence",
+      "matched_catalog_event_id": "event-skill-development-initiative",
+      "reviewed_at": "2026-07-08T10:07:57.123Z",
+      "reviewed_by": "EventLive Auto Publisher"
     },
     {
       "id": "candidate-moc-cultural-subportals-sitar-20220921-cda2e068",
@@ -66,8 +71,8 @@
       "discovered_at": "2026-07-07T19:14:38.221Z",
       "discovery_method": "official-calendar",
       "confidence": "official",
-      "review_status": "evidence-captured",
-      "publication_gate": "source-evidence",
+      "review_status": "approved-for-catalog",
+      "publication_gate": "catalog-review",
       "image_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/TPA-events/jjjjj.png",
       "image_alt": "SITAR",
       "image_source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Production%20Support%20Program%20in%20the%20Theater%20and%20Performing%20Arts%20Sector/EventDetail",
@@ -75,7 +80,7 @@
       "language": "en",
       "richness_score": 6,
       "extracted_sessions_count": 0,
-      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available.",
+      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available. تحقق ثانوي: مصدر رسمي طويل المدة؛ يرقى كبرنامج ممتد لا كجلسة يومية. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-08T10:07:57.123Z.",
       "tags": [
         "music",
         "heritage",
@@ -90,7 +95,12 @@
       ],
       "audiences": [
         "creatives"
-      ]
+      ],
+      "secondary_verified_at": "2026-07-08T10:07:56.900Z",
+      "secondary_verification_kind": "official-program-evidence",
+      "matched_catalog_event_id": "event-sitar",
+      "reviewed_at": "2026-07-08T10:07:57.123Z",
+      "reviewed_by": "EventLive Auto Publisher"
     },
     {
       "id": "candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1",
@@ -111,8 +121,8 @@
       "discovered_at": "2026-07-07T19:14:38.221Z",
       "discovery_method": "official-calendar",
       "confidence": "official",
-      "review_status": "evidence-captured",
-      "publication_gate": "source-evidence",
+      "review_status": "approved-for-catalog",
+      "publication_gate": "catalog-review",
       "image_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/ADC-events/test32.png",
       "image_alt": "The Architecture and Design Café",
       "image_source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/The%20Architecture%20And%20Design%20Cafe/EventDetail",
@@ -120,7 +130,7 @@
       "language": "en",
       "richness_score": 6,
       "extracted_sessions_count": 0,
-      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available.",
+      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available. تحقق ثانوي: مصدر رسمي طويل المدة؛ يرقى كبرنامج ممتد لا كجلسة يومية. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-08T10:07:57.123Z.",
       "tags": [
         "music",
         "heritage",
@@ -135,7 +145,12 @@
       ],
       "audiences": [
         "creatives"
-      ]
+      ],
+      "secondary_verified_at": "2026-07-08T10:07:56.900Z",
+      "secondary_verification_kind": "official-program-evidence",
+      "matched_catalog_event_id": "event-the-architecture-and-design-caf",
+      "reviewed_at": "2026-07-08T10:07:57.123Z",
+      "reviewed_by": "EventLive Auto Publisher"
     },
     {
       "id": "candidate-moc-cultural-subportals-jusoor-program-20240818-22e2fb74",
@@ -156,8 +171,8 @@
       "discovered_at": "2026-07-07T19:14:38.221Z",
       "discovery_method": "official-calendar",
       "confidence": "official",
-      "review_status": "evidence-captured",
-      "publication_gate": "source-evidence",
+      "review_status": "approved-for-catalog",
+      "publication_gate": "catalog-review",
       "image_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/ADC-events/test11.png",
       "image_alt": "Jusoor Program",
       "image_source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/jusoor%20competition/EventDetail",
@@ -165,7 +180,7 @@
       "language": "en",
       "richness_score": 6,
       "extracted_sessions_count": 0,
-      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available.",
+      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available. تحقق ثانوي: مصدر رسمي طويل المدة؛ يرقى كبرنامج ممتد لا كجلسة يومية. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-08T10:07:57.123Z.",
       "tags": [
         "music",
         "heritage",
@@ -180,7 +195,12 @@
       ],
       "audiences": [
         "creatives"
-      ]
+      ],
+      "secondary_verified_at": "2026-07-08T10:07:56.900Z",
+      "secondary_verification_kind": "official-program-evidence",
+      "matched_catalog_event_id": "event-jusoor-program",
+      "reviewed_at": "2026-07-08T10:07:57.123Z",
+      "reviewed_by": "EventLive Auto Publisher"
     },
     {
       "id": "candidate-moc-cultural-subportals-urban-transformation-initiative-20241031-7a933cab",
@@ -201,8 +221,8 @@
       "discovered_at": "2026-07-07T19:14:38.221Z",
       "discovery_method": "official-calendar",
       "confidence": "official",
-      "review_status": "evidence-captured",
-      "publication_gate": "source-evidence",
+      "review_status": "approved-for-catalog",
+      "publication_gate": "catalog-review",
       "image_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/ADC-events/test14.png",
       "image_alt": "Urban transformation Initiative",
       "image_source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Urban%20transformation%20Initiative/EventDetail",
@@ -210,7 +230,7 @@
       "language": "en",
       "richness_score": 6,
       "extracted_sessions_count": 0,
-      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available.",
+      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available. تحقق ثانوي: مصدر رسمي طويل المدة؛ يرقى كبرنامج ممتد لا كجلسة يومية. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-08T10:07:57.123Z.",
       "tags": [
         "music",
         "heritage",
@@ -225,7 +245,12 @@
       ],
       "audiences": [
         "creatives"
-      ]
+      ],
+      "secondary_verified_at": "2026-07-08T10:07:56.900Z",
+      "secondary_verification_kind": "official-program-evidence",
+      "matched_catalog_event_id": "event-urban-transformation-initiative",
+      "reviewed_at": "2026-07-08T10:07:57.123Z",
+      "reviewed_by": "EventLive Auto Publisher"
     },
     {
       "id": "candidate-moc-cultural-subportals-the-continuing-professional-development-initiative-20241116-a7cef8e2",
@@ -246,8 +271,8 @@
       "discovered_at": "2026-07-07T19:14:38.221Z",
       "discovery_method": "official-calendar",
       "confidence": "official",
-      "review_status": "evidence-captured",
-      "publication_gate": "source-evidence",
+      "review_status": "approved-for-catalog",
+      "publication_gate": "catalog-review",
       "image_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/ADC-events/test23.png",
       "image_alt": "The Continuing Professional Development Initiative",
       "image_source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Continuous%20Professional%20Development%20Initiative/EventDetail",
@@ -255,7 +280,7 @@
       "language": "en",
       "richness_score": 6,
       "extracted_sessions_count": 0,
-      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available.",
+      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available. تحقق ثانوي: مصدر رسمي طويل المدة؛ يرقى كبرنامج ممتد لا كجلسة يومية. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-08T10:07:57.123Z.",
       "tags": [
         "music",
         "heritage",
@@ -271,7 +296,12 @@
       "audiences": [
         "professionals",
         "creatives"
-      ]
+      ],
+      "secondary_verified_at": "2026-07-08T10:07:56.900Z",
+      "secondary_verification_kind": "official-program-evidence",
+      "matched_catalog_event_id": "event-the-continuing-professional-development-initiative",
+      "reviewed_at": "2026-07-08T10:07:57.123Z",
+      "reviewed_by": "EventLive Auto Publisher"
     },
     {
       "id": "candidate-moc-cultural-subportals-design-for-good-initiative-20241205-3788803e",
@@ -292,8 +322,8 @@
       "discovered_at": "2026-07-07T19:14:38.221Z",
       "discovery_method": "official-calendar",
       "confidence": "official",
-      "review_status": "evidence-captured",
-      "publication_gate": "source-evidence",
+      "review_status": "approved-for-catalog",
+      "publication_gate": "catalog-review",
       "image_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/ADC-events/test17.png",
       "image_alt": "Design for Good Initiative",
       "image_source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/design%20for%20good/EventDetail",
@@ -301,7 +331,7 @@
       "language": "en",
       "richness_score": 6,
       "extracted_sessions_count": 0,
-      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available.",
+      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available. تحقق ثانوي: مصدر رسمي طويل المدة؛ يرقى كبرنامج ممتد لا كجلسة يومية. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-08T10:07:57.123Z.",
       "tags": [
         "music",
         "heritage",
@@ -316,7 +346,12 @@
       ],
       "audiences": [
         "creatives"
-      ]
+      ],
+      "secondary_verified_at": "2026-07-08T10:07:56.900Z",
+      "secondary_verification_kind": "official-program-evidence",
+      "matched_catalog_event_id": "event-design-for-good-initiative",
+      "reviewed_at": "2026-07-08T10:07:57.123Z",
+      "reviewed_by": "EventLive Auto Publisher"
     },
     {
       "id": "candidate-moc-cultural-subportals-the-saudi-music-hub-20250101-10d8a675",
@@ -337,8 +372,8 @@
       "discovered_at": "2026-07-07T19:14:38.221Z",
       "discovery_method": "official-calendar",
       "confidence": "official",
-      "review_status": "evidence-captured",
-      "publication_gate": "source-evidence",
+      "review_status": "approved-for-catalog",
+      "publication_gate": "catalog-review",
       "image_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Music-events/saudi-music-center.jpg",
       "image_alt": "The Saudi Music Hub",
       "image_source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Saudi%20Music%20Center/EventDetail",
@@ -346,7 +381,7 @@
       "language": "en",
       "richness_score": 6,
       "extracted_sessions_count": 0,
-      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available.",
+      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available. تحقق ثانوي: مصدر رسمي طويل المدة؛ يرقى كبرنامج ممتد لا كجلسة يومية. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-08T10:07:57.123Z.",
       "tags": [
         "music",
         "heritage",
@@ -361,7 +396,12 @@
       ],
       "audiences": [
         "creatives"
-      ]
+      ],
+      "secondary_verified_at": "2026-07-08T10:07:56.900Z",
+      "secondary_verification_kind": "official-program-evidence",
+      "matched_catalog_event_id": "event-the-saudi-music-hub",
+      "reviewed_at": "2026-07-08T10:07:57.123Z",
+      "reviewed_by": "EventLive Auto Publisher"
     },
     {
       "id": "candidate-moc-cultural-subportals-academic-excellence-in-architecture-and-design-education-20250309-a4072111",
@@ -382,8 +422,8 @@
       "discovered_at": "2026-07-07T19:14:38.221Z",
       "discovery_method": "official-calendar",
       "confidence": "official",
-      "review_status": "evidence-captured",
-      "publication_gate": "source-evidence",
+      "review_status": "approved-for-catalog",
+      "publication_gate": "catalog-review",
       "image_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/ADC-events/test31.png",
       "image_alt": "Academic Excellence in Architecture and Design Education",
       "image_source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Academic%20Excellence%20in%20Architectural%20and%20Design%20Education/EventDetail",
@@ -391,7 +431,7 @@
       "language": "en",
       "richness_score": 6,
       "extracted_sessions_count": 0,
-      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available.",
+      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available. تحقق ثانوي: مصدر رسمي طويل المدة؛ يرقى كبرنامج ممتد لا كجلسة يومية. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-08T10:07:57.123Z.",
       "tags": [
         "music",
         "heritage",
@@ -407,7 +447,12 @@
       "audiences": [
         "researchers",
         "creatives"
-      ]
+      ],
+      "secondary_verified_at": "2026-07-08T10:07:56.900Z",
+      "secondary_verification_kind": "official-program-evidence",
+      "matched_catalog_event_id": "event-academic-excellence-in-architecture-and-design-education",
+      "reviewed_at": "2026-07-08T10:07:57.123Z",
+      "reviewed_by": "EventLive Auto Publisher"
     },
     {
       "id": "candidate-moc-cultural-subportals-culinary-manufacturing-hubs-20250811-d7214bd9",
@@ -428,8 +473,8 @@
       "discovered_at": "2026-07-07T19:14:38.221Z",
       "discovery_method": "official-calendar",
       "confidence": "official",
-      "review_status": "evidence-captured",
-      "publication_gate": "source-evidence",
+      "review_status": "approved-for-catalog",
+      "publication_gate": "catalog-review",
       "image_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Culinary-Arts/CMH.png",
       "image_alt": "Culinary Manufacturing Hubs",
       "image_source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Culinary%20Manufacturing%20Hubs/EventDetail",
@@ -437,7 +482,7 @@
       "language": "en",
       "richness_score": 6,
       "extracted_sessions_count": 0,
-      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available.",
+      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available. تحقق ثانوي: مصدر رسمي طويل المدة؛ يرقى كبرنامج ممتد لا كجلسة يومية. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-08T10:07:57.123Z.",
       "tags": [
         "music",
         "heritage",
@@ -453,7 +498,12 @@
       "audiences": [
         "skilled-trades",
         "creatives"
-      ]
+      ],
+      "secondary_verified_at": "2026-07-08T10:07:56.900Z",
+      "secondary_verification_kind": "official-program-evidence",
+      "matched_catalog_event_id": "event-culinary-manufacturing-hubs",
+      "reviewed_at": "2026-07-08T10:07:57.123Z",
+      "reviewed_by": "EventLive Auto Publisher"
     },
     {
       "id": "candidate-riyadh-city-events-poppy-playtime-20251010-b96ed7bc",
@@ -758,8 +808,8 @@
       "discovered_at": "2026-07-07T19:14:38.221Z",
       "discovery_method": "official-calendar",
       "confidence": "official",
-      "review_status": "evidence-captured",
-      "publication_gate": "source-evidence",
+      "review_status": "approved-for-catalog",
+      "publication_gate": "catalog-review",
       "image_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Commission/film/Film-acc/About-Accelerator/About-us.png",
       "image_alt": "Film Business Accelerator",
       "image_source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Film_Accelerator/EventDetail",
@@ -767,7 +817,7 @@
       "language": "en",
       "richness_score": 6,
       "extracted_sessions_count": 0,
-      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available.",
+      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available. تحقق ثانوي: مصدر رسمي طويل المدة؛ يرقى كبرنامج ممتد لا كجلسة يومية. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-08T10:07:57.123Z.",
       "tags": [
         "music",
         "heritage",
@@ -782,7 +832,12 @@
       ],
       "audiences": [
         "creatives"
-      ]
+      ],
+      "secondary_verified_at": "2026-07-08T10:07:56.900Z",
+      "secondary_verification_kind": "official-program-evidence",
+      "matched_catalog_event_id": "event-film-business-accelerator",
+      "reviewed_at": "2026-07-08T10:07:57.123Z",
+      "reviewed_by": "EventLive Auto Publisher"
     },
     {
       "id": "candidate-moc-cultural-subportals-the-guidelines-for-culture-and-arts-in-the-public-realm-20260205-fbf08244",
@@ -803,8 +858,8 @@
       "discovered_at": "2026-07-07T19:14:38.221Z",
       "discovery_method": "official-calendar",
       "confidence": "official",
-      "review_status": "evidence-captured",
-      "publication_gate": "source-evidence",
+      "review_status": "approved-for-catalog",
+      "publication_gate": "catalog-review",
       "image_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/CAIPS/caips-cover-en.svg",
       "image_alt": "The Guidelines for Culture and Arts in the Public Realm",
       "image_source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/CAIPS_1/EventDetail",
@@ -812,7 +867,7 @@
       "language": "en",
       "richness_score": 6,
       "extracted_sessions_count": 0,
-      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available.",
+      "reviewer_notes": "تم جمعه آلياً من Ministry of Culture Cultural Calendar. Ministry or commission cultural-calendar URL plus event detail page when available. تحقق ثانوي: مصدر رسمي طويل المدة؛ يرقى كبرنامج ممتد لا كجلسة يومية. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-08T10:07:57.123Z.",
       "tags": [
         "music",
         "heritage",
@@ -827,7 +882,12 @@
       ],
       "audiences": [
         "creatives"
-      ]
+      ],
+      "secondary_verified_at": "2026-07-08T10:07:56.900Z",
+      "secondary_verification_kind": "official-program-evidence",
+      "matched_catalog_event_id": "event-the-guidelines-for-culture-and-arts-in-the-public-realm",
+      "reviewed_at": "2026-07-08T10:07:57.123Z",
+      "reviewed_by": "EventLive Auto Publisher"
     },
     {
       "id": "candidate-riyadh-city-events-horses-and-equestrian-heritage-exhibition-20260224-95102e69",
@@ -1920,11 +1980,11 @@
       "discovered_at": "2026-07-08T08:48:20.585Z",
       "discovery_method": "official-calendar",
       "confidence": "official",
-      "review_status": "new",
-      "publication_gate": "source-evidence",
+      "review_status": "approved-for-catalog",
+      "publication_gate": "catalog-review",
       "richness_score": 3,
       "extracted_sessions_count": 0,
-      "reviewer_notes": "تم جمعه آلياً من Misk Hub Programs. Misk program URL plus detail-page Program Start/End Date; application deadline alone is not enough for publication.",
+      "reviewer_notes": "تم جمعه آلياً من Misk Hub Programs. Misk program URL plus detail-page Program Start/End Date; application deadline alone is not enough for publication. تحقق ثانوي: مصدر رسمي مباشر مع دليل عام صالح من Misk Hub Programs. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-08T10:07:57.123Z.",
       "tags": [
         "skills",
         "training",
@@ -1932,14 +1992,20 @@
         "leadership",
         "online learning",
         "career readiness",
-        "application deadline"
+        "application deadline",
+        "تحقق ثانوي"
       ],
       "audiences": [
         "job-seekers",
         "professionals",
         "skilled-trades",
         "entrepreneurs"
-      ]
+      ],
+      "secondary_verified_at": "2026-07-08T10:07:56.900Z",
+      "secondary_verification_kind": "official-source-evidence",
+      "matched_catalog_event_id": "event-application-deadline-2030-leaders",
+      "reviewed_at": "2026-07-08T10:07:57.123Z",
+      "reviewed_by": "EventLive Auto Publisher"
     },
     {
       "id": "candidate-saudi-university-events-quarter-finals-join-the-celebration-at-the-fifa-fan-zone-20260709-ce09a5c4",
@@ -2795,7 +2861,7 @@
       "review_status": "approved-for-catalog",
       "publication_gate": "catalog-review",
       "extracted_sessions_count": 0,
-      "reviewer_notes": "تم جمعه آلياً من Tuwaiq Academy Bootcamps and Programs. Tuwaiq program URL and captured start/end dates from the official public initiatives endpoint. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-03T15:59:24.183Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T15:59:45.044Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T16:52:49.663Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T17:00:24.045Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T17:04:15.429Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T17:04:42.396Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T17:39:30.031Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T18:13:25.470Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T18:14:21.461Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T18:14:54.531Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T18:19:57.187Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T18:21:00.969Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T18:32:29.259Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T18:34:06.452Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T18:34:56.153Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T18:46:16.513Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T18:48:20.711Z. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-06T21:56:46.239Z. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-07T19:23:03.518Z. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-07T19:26:52.525Z. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-08T03:51:04.426Z. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-08T08:52:16.913Z.",
+      "reviewer_notes": "تم جمعه آلياً من Tuwaiq Academy Bootcamps and Programs. Tuwaiq program URL and captured start/end dates from the official public initiatives endpoint. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-03T15:59:24.183Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T15:59:45.044Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T16:52:49.663Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T17:00:24.045Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T17:04:15.429Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T17:04:42.396Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T17:39:30.031Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T18:13:25.470Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T18:14:21.461Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T18:14:54.531Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T18:19:57.187Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T18:21:00.969Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T18:32:29.259Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T18:34:06.452Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T18:34:56.153Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T18:46:16.513Z. مربوط تلقائياً بسجل كتالوج موجود في 2026-07-03T18:48:20.711Z. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-06T21:56:46.239Z. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-07T19:23:03.518Z. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-07T19:26:52.525Z. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-08T03:51:04.426Z. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-08T08:52:16.913Z. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-08T10:07:57.123Z.",
       "tags": [
         "technology",
         "bootcamps",
@@ -2805,9 +2871,9 @@
         "cybersecurity",
         "معسكر - تطوير البرمجيات والتطبيقات"
       ],
-      "reviewed_at": "2026-07-08T08:52:16.913Z",
+      "reviewed_at": "2026-07-08T10:07:57.123Z",
       "reviewed_by": "EventLive Auto Publisher",
-      "matched_catalog_event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-5",
+      "matched_catalog_event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-6",
       "audiences": [
         "students",
         "tech",
@@ -4169,11 +4235,11 @@
       "raw_snapshot_path": "data/raw/source-snapshots/eye-of-riyadh-events-2026-07-07T19-14-38-221Z.html",
       "discovered_at": "2026-07-07T19:14:38.221Z",
       "discovery_method": "search-result",
-      "confidence": "public-listing",
-      "review_status": "evidence-captured",
-      "publication_gate": "duplicate-review",
+      "confidence": "partner",
+      "review_status": "approved-for-catalog",
+      "publication_gate": "catalog-review",
       "extracted_sessions_count": 0,
-      "reviewer_notes": "تم جمعه آلياً من Eye of Riyadh Events. Directory listing URL plus organizer/venue official confirmation.",
+      "reviewer_notes": "تم جمعه آلياً من Eye of Riyadh Events. Directory listing URL plus organizer/venue official confirmation. تحقق ثانوي: مرشح من قائمة عامة طابق سجل كتالوج رسمي (Saudi Wood Expo / Riyadh City Events) بدرجة 115. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-08T10:07:57.123Z.",
       "tags": [
         "business",
         "conferences",
@@ -4181,7 +4247,8 @@
         "forums",
         "summits",
         "training",
-        "Exhibition"
+        "Exhibition",
+        "تحقق ثانوي"
       ],
       "discovery_quality": "strong-lead",
       "discovery_score": 70,
@@ -4197,7 +4264,12 @@
       "attendance_mode": "in-person",
       "language": "en",
       "rich_summary": "Witness the staggering growth of Saudi Arabia's woodworking industry, projected to reach new heights by 2030. Saudi Wood Expo offers you an unpara",
-      "richness_score": 7
+      "richness_score": 7,
+      "secondary_verified_at": "2026-07-08T10:07:56.900Z",
+      "secondary_verification_kind": "official-catalog-match",
+      "matched_catalog_event_id": "event-saudi-wood-expo-2026",
+      "reviewed_at": "2026-07-08T10:07:57.123Z",
+      "reviewed_by": "EventLive Auto Publisher"
     },
     {
       "id": "candidate-eye-of-riyadh-events-big-5-construct-saudi-20260830-2238e3a0",
@@ -4313,14 +4385,14 @@
       "raw_snapshot_path": "data/raw/source-snapshots/eye-of-riyadh-events-2026-07-07T19-14-38-221Z.html",
       "discovered_at": "2026-07-07T19:14:38.221Z",
       "discovery_method": "search-result",
-      "confidence": "public-listing",
-      "review_status": "evidence-captured",
-      "publication_gate": "duplicate-review",
+      "confidence": "partner",
+      "review_status": "approved-for-catalog",
+      "publication_gate": "catalog-review",
       "discovery_quality": "strong-lead",
       "discovery_score": 70,
       "discovery_notes": "directory-source, saudi-location-signal, large-event-topic",
       "extracted_sessions_count": 0,
-      "reviewer_notes": "تم جمعه آلياً من Eye of Riyadh Events. Directory listing URL plus organizer/venue official confirmation.",
+      "reviewer_notes": "تم جمعه آلياً من Eye of Riyadh Events. Directory listing URL plus organizer/venue official confirmation. تحقق ثانوي: مرشح من قائمة عامة طابق سجل كتالوج رسمي (Saudi Industrial Series / Riyadh City Events) بدرجة 115. نشر آلياً وفق سياسة المصادر الموثوقة في 2026-07-08T10:07:57.123Z.",
       "tags": [
         "business",
         "conferences",
@@ -4328,7 +4400,8 @@
         "forums",
         "summits",
         "training",
-        "Conference"
+        "Conference",
+        "تحقق ثانوي"
       ],
       "audiences": [
         "professionals"
@@ -4341,7 +4414,12 @@
       "attendance_mode": "in-person",
       "language": "en",
       "rich_summary": "As Saudi Arabia accelerates towards its ambitious Vision 2030, powered by transformational megaprojects and major investments, building the right conn",
-      "richness_score": 7
+      "richness_score": 7,
+      "secondary_verified_at": "2026-07-08T10:07:56.900Z",
+      "secondary_verification_kind": "official-catalog-match",
+      "matched_catalog_event_id": "event-saudi-industrial-series-2",
+      "reviewed_at": "2026-07-08T10:07:57.123Z",
+      "reviewed_by": "EventLive Auto Publisher"
     },
     {
       "id": "candidate-eye-of-riyadh-events-saudi-fm-clean-20260830-cbe48152",

@@ -1,13 +1,113 @@
 {
-  "generated_at": "2026-07-08T08:52:50.645Z",
+  "generated_at": "2026-07-08T10:08:42.469Z",
   "totals": {
-    "targets": 60,
-    "enriched": 60,
-    "fetched": 14,
-    "images": 45,
-    "fetch_failures": 46
+    "targets": 74,
+    "enriched": 74,
+    "fetched": 34,
+    "images": 59,
+    "fetch_failures": 40
   },
   "enriched": [
+    {
+      "id": "event-skill-development-initiative",
+      "title": "Skill Development Initiative",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Skills%20development/EventDetail",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-sitar",
+      "title": "SITAR",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Production%20Support%20Program%20in%20the%20Theater%20and%20Performing%20Arts%20Sector/EventDetail",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-the-architecture-and-design-caf",
+      "title": "The Architecture and Design Café",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/The%20Architecture%20And%20Design%20Cafe/EventDetail",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-jusoor-program",
+      "title": "Jusoor Program",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/jusoor%20competition/EventDetail",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-urban-transformation-initiative",
+      "title": "Urban transformation Initiative",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Urban%20transformation%20Initiative/EventDetail",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-the-continuing-professional-development-initiative",
+      "title": "The Continuing Professional Development Initiative",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Continuous%20Professional%20Development%20Initiative/EventDetail",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-design-for-good-initiative",
+      "title": "Design for Good Initiative",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/design%20for%20good/EventDetail",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-the-saudi-music-hub",
+      "title": "The Saudi Music Hub",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Saudi%20Music%20Center/EventDetail",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-academic-excellence-in-architecture-and-design-education",
+      "title": "Academic Excellence in Architecture and Design Education",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Academic%20Excellence%20in%20Architectural%20and%20Design%20Education/EventDetail",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-culinary-manufacturing-hubs",
+      "title": "Culinary Manufacturing Hubs",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Culinary%20Manufacturing%20Hubs/EventDetail",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
     {
       "id": "event-poppy-playtime",
       "title": "Poppy Playtime",
@@ -47,6 +147,26 @@
       "fetched": false,
       "image": true,
       "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-film-business-accelerator",
+      "title": "Film Business Accelerator",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Film_Accelerator/EventDetail",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-the-guidelines-for-culture-and-arts-in-the-public-realm",
+      "title": "The Guidelines for Culture and Arts in the Public Realm",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/CAIPS_1/EventDetail",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
     },
     {
       "id": "event-horses-and-equestrian-heritage-exhibition",
@@ -182,11 +302,11 @@
       "id": "event-لقاءات-مراكز-دعم-المنشآت",
       "title": "لقاءات مراكز دعم المنشآت",
       "source_label": "Monsha'at All Events",
-      "source_method": "approved-source-row",
+      "source_method": "official-page-meta",
       "source_url": "http://www.monshaat.gov.sa/ar/node/487334",
-      "fetched": false,
+      "fetched": true,
       "image": false,
-      "fetch_reason": "fetch failed"
+      "fetch_reason": ""
     },
     {
       "id": "event-prince-faisal-bin-fahd-art-exhibition-summer-2026",
@@ -212,11 +332,11 @@
       "id": "event-عمليات-إدارة-الموارد-البشرية",
       "title": "عمليات إدارة الموارد البشرية",
       "source_label": "Qassim Chamber Events",
-      "source_method": "approved-source-row",
+      "source_method": "official-page-meta",
       "source_url": "https://tc.qcc.org.sa/events/204",
-      "fetched": false,
+      "fetched": true,
       "image": true,
-      "fetch_reason": "HTTP 403"
+      "fetch_reason": ""
     },
     {
       "id": "event-esports-world-cup",
@@ -272,11 +392,11 @@
       "id": "event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م",
       "title": "أسبوع العقار والمقاولات 12- 16 يوليو 2026م",
       "source_label": "Monsha'at All Events",
-      "source_method": "approved-source-row",
+      "source_method": "official-page-meta",
       "source_url": "http://www.monshaat.gov.sa/ar/node/489022",
-      "fetched": false,
+      "fetched": true,
       "image": false,
-      "fetch_reason": "fetch failed"
+      "fetch_reason": ""
     },
     {
       "id": "event-join-us-at-kaust-health-for-respiratory-health-day",
@@ -327,6 +447,26 @@
       "fetched": false,
       "image": true,
       "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-saudi-wood-expo-2026",
+      "title": "Saudi Wood Expo 2026",
+      "source_label": "Eye of Riyadh Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.eyeofriyadh.com/events/details/saudi-wood-expo-2026",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-saudi-industrial-series-2",
+      "title": "Saudi Industrial Series",
+      "source_label": "Eye of Riyadh Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.eyeofriyadh.com/events/details/saudi-industrial-series-1764288598",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
     },
     {
       "id": "event-merath-middle-east-museums-heritage-expo",
@@ -452,11 +592,11 @@
       "id": "event-global-forum-on-the-ethics-of-ai",
       "title": "Global Forum on the Ethics of AI",
       "source_label": "SDAIA Calendar and Events",
-      "source_method": "approved-source-row",
+      "source_method": "official-page-meta",
       "source_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=122",
-      "fetched": false,
+      "fetched": true,
       "image": false,
-      "fetch_reason": "fetch failed"
+      "fetch_reason": ""
     },
     {
       "id": "event-money20-20-middle-east",
@@ -482,11 +622,11 @@
       "id": "event-global-ai-summit",
       "title": "Global AI Summit",
       "source_label": "SDAIA Calendar and Events",
-      "source_method": "approved-source-row",
+      "source_method": "official-page-meta",
       "source_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=123",
-      "fetched": false,
+      "fetched": true,
       "image": false,
-      "fetch_reason": "fetch failed"
+      "fetch_reason": ""
     },
     {
       "id": "event-global-ai-summit-gain",
@@ -602,11 +742,11 @@
       "id": "event-معرض-وظائف-2026",
       "title": "معرض وظائف 2026",
       "source_label": "Asharqia Chamber Events",
-      "source_method": "approved-source-row",
+      "source_method": "official-page-meta",
       "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=344",
-      "fetched": false,
+      "fetched": true,
       "image": false,
-      "fetch_reason": "fetch failed"
+      "fetch_reason": ""
     }
   ],
   "failed": [
@@ -701,12 +841,6 @@
       "reason": "fetch failed"
     },
     {
-      "id": "event-لقاءات-مراكز-دعم-المنشآت",
-      "title": "لقاءات مراكز دعم المنشآت",
-      "source_url": "http://www.monshaat.gov.sa/ar/node/487334",
-      "reason": "fetch failed"
-    },
-    {
       "id": "event-prince-faisal-bin-fahd-art-exhibition-summer-2026",
       "title": "Prince Faisal Bin Fahd Art Exhibition: Summer 2026",
       "source_url": "https://riyadh.sa/en/moment/events/item/event/30758",
@@ -719,12 +853,6 @@
       "reason": "fetch failed"
     },
     {
-      "id": "event-عمليات-إدارة-الموارد-البشرية",
-      "title": "عمليات إدارة الموارد البشرية",
-      "source_url": "https://tc.qcc.org.sa/events/204",
-      "reason": "HTTP 403"
-    },
-    {
       "id": "event-esports-world-cup",
       "title": "Esports World Cup",
       "source_url": "https://riyadh.sa/en/moment/events/item/event/30169",
@@ -734,12 +862,6 @@
       "id": "event-pfl-mena-fight-night",
       "title": "PFL MENA Fight Night",
       "source_url": "https://riyadh.sa/en/moment/events/item/event/31170",
-      "reason": "fetch failed"
-    },
-    {
-      "id": "event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م",
-      "title": "أسبوع العقار والمقاولات 12- 16 يوليو 2026م",
-      "source_url": "http://www.monshaat.gov.sa/ar/node/489022",
       "reason": "fetch failed"
     },
     {
@@ -821,12 +943,6 @@
       "reason": "fetch failed"
     },
     {
-      "id": "event-global-forum-on-the-ethics-of-ai",
-      "title": "Global Forum on the Ethics of AI",
-      "source_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=122",
-      "reason": "fetch failed"
-    },
-    {
       "id": "event-money20-20-middle-east",
       "title": "Money20/20 Middle East",
       "source_url": "https://riyadh.sa/en/moment/events/item/event/29339",
@@ -836,12 +952,6 @@
       "id": "event-riyadh-global-medical-biotechnology-summit",
       "title": "Riyadh Global Medical Biotechnology Summit",
       "source_url": "https://riyadh.sa/en/moment/events/item/event/30261",
-      "reason": "fetch failed"
-    },
-    {
-      "id": "event-global-ai-summit",
-      "title": "Global AI Summit",
-      "source_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=123",
       "reason": "fetch failed"
     },
     {
@@ -879,12 +989,6 @@
       "title": "Cityscape Global 2026",
       "source_url": "https://cityscapeglobal.com/",
       "reason": "HTTP 403"
-    },
-    {
-      "id": "event-معرض-وظائف-2026",
-      "title": "معرض وظائف 2026",
-      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=344",
-      "reason": "fetch failed"
     }
   ]
 }

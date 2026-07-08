@@ -1,6 +1,6 @@
 # EventLive Applied Delivery Readiness Standard
 
-- Generated at: 2026-07-08T01:52:44.155Z
+- Generated at: 2026-07-08T10:11:03.773Z
 - Standard source: 93_DELIVERY_READINESS_STANDARD_V1.md
 - Project: EventLive / eventme.live
 - Release verdict: **READY_WITH_RESERVED_ITEMS**
@@ -24,8 +24,8 @@ This file is the applied project status log. It does not redefine the delivery-r
 
 | Metric | Value |
 | --- | ---: |
-| Public events | 429 |
-| Live-ready events | 51 |
+| Public events | 449 |
+| Live-ready events | 52 |
 | Launch sweep ok | yes |
 | Visual sweep ok | yes |
 | Validation clean | yes |
@@ -67,7 +67,7 @@ This file is the applied project status log. It does not redefine the delivery-r
 | 11 | Non-Functional | Reliability, Capacity & Failure Modes | PASS | Operations readiness PASS: local critical-path load check, source failure-mode matrix, browser matrix, and reliability scripts verified. |  |
 | 12 | Security & Data | Security Review | PASS | Security review audit PASS across static site, CI security steps, owner-only exposure, robots/sitemap/manifest, external links, secrets, and compliance controls. |  |
 | 13 | Security & Data | Config, Secrets & Env Parity | PASS | Secret/env audit PASS: repository scan clean, env matrix script present, deployment workflow present, and git-history policy documented. |  |
-| 14 | Security & Data | Data Integrity & Migrations | PASS | Validation clean; dedupe regression exists; public events=429. Static project has no DB migrations. |  |
+| 14 | Security & Data | Data Integrity & Migrations | PASS | Validation clean; dedupe regression exists; public events=449. Static project has no DB migrations. |  |
 | 15 | Content | Content & Localization | PASS | Content/localization audit PASS and terminology glossary published. |  |
 | 16 | Content | Compliance / Privacy / Source Rights | PASS | Privacy, terms, and source-rights pages PASS and source harvest policy is classified. |  |
 | 17 | Discovery & Ops | SEO & Discoverability | PASS | Launch preflight includes sitemap, structured data, SEO content, production domain, AI search readiness, and launch sweep checks. |  |

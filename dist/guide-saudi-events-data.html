@@ -500,6 +500,10 @@
 
 
 
+
+
+
+
   <style id="eventlive-brand-pulse">
 @keyframes eventliveLiveDotPulse {
   0%, 100% { opacity: .92; transform: translateX(-50%) scale(1); box-shadow: 0 0 0 0 rgba(229, 72, 77, .2); }
@@ -639,9 +643,11 @@
 
 
 
+
+
 <script id="eventlive-analytics-runtime">
 (function () {
-  var ownerOnlyPattern = /\/(sources|methodology|trust|source-health|candidates|resolver)\.html$|\/(events|sources|trust|methodology|readiness|source-coverage-gaps|regions)\.json$/;
+  var ownerOnlyPattern = /\/(sources|methodology|trust|source-health|candidates|resolver|owner-status)\.html$|\/(events|sources|trust|methodology|readiness|source-coverage-gaps|regions|owner-status)\.json$/;
   var path = window.location.pathname || '';
   if (ownerOnlyPattern.test(path)) {
     window.eventLiveTrack = function () {};

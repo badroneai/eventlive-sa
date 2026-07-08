@@ -1,12 +1,12 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-07-08T01:39:49.885Z",
+  "generated_at": "2026-07-08T10:10:06.437Z",
   "status": "PASS",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 66,
-    "candidates": 183,
-    "matched_candidates": 140,
+    "candidates": 184,
+    "matched_candidates": 157,
     "auto_publish_sources": 13,
     "candidate_only_sources": 8,
     "partnership_required_sources": 3,
@@ -20,9 +20,9 @@
     "manual_review": 42
   },
   "candidates_by_gate": {
-    "source-evidence": 30,
-    "catalog-review": 138,
-    "duplicate-review": 15
+    "catalog-review": 155,
+    "duplicate-review": 13,
+    "source-evidence": 16
   },
   "sources": [
     {

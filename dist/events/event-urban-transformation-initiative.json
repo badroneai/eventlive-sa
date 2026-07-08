@@ -1,0 +1,102 @@
+{
+  "id": "event-urban-transformation-initiative",
+  "title": "Urban transformation Initiative",
+  "summary": "برنامج أو مبادرة ثقافية رسمية من تقويم وزارة الثقافة. المدة طويلة لذلك تحفظ كدليل مصدر ولا تنشر تلقائياً كفعالية لحظية. Urban transformation Initiative ضمن ثقافة وفنون في السعودية. تبدأ الفعالية ٣١‏/١٠‏/٢٠٢٤، ١٢:٠٠ ص وتنتهي ٠١‏/١١‏/٢٠٢٦، ١٢:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Ministry of Culture Commission Calendars.",
+  "canonical_url": "https://eventme.live/events/event-urban-transformation-initiative.html",
+  "detail_url": "./events/event-urban-transformation-initiative.html",
+  "calendar_url": "./events/event-urban-transformation-initiative.ics",
+  "source_label": "Ministry of Culture Commission Calendars",
+  "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Urban%20transformation%20Initiative/EventDetail",
+  "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Urban%20transformation%20Initiative/EventDetail",
+  "city": "السعودية",
+  "venue": "Saudi Arabia",
+  "venue_address": "Saudi Arabia",
+  "starts_at": "2024-10-31T00:00:00+03:00",
+  "ends_at": "2026-11-01T00:00:00+03:00",
+  "status": "ongoing",
+  "status_label": "برنامج جارٍ",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/urban-transformation-initiative-a34e77a79f.png",
+  "image_alt": "Urban transformation Initiative",
+  "category": "ثقافة وفنون",
+  "category_url": "./categories/culture-arts.html",
+  "audiences": [
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Urban transformation Initiative",
+    "ثقافة وفنون",
+    "cultural initiative",
+    "برنامج ممتد",
+    "برنامج جارٍ",
+    "السعودية",
+    "Saudi Arabia",
+    "Ministry of Culture Commission Calendars",
+    "music",
+    "heritage",
+    "architecture",
+    "design",
+    "culture",
+    "arts",
+    "Initiative",
+    "long-running cultural initiative",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2024-10-31T00:00:00+03:00",
+      "ends_at": "2026-11-01T00:00:00+03:00",
+      "room": "Saudi Arabia",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Urban transformation Initiative",
+    "startDate": "2024-10-31T00:00:00+03:00",
+    "endDate": "2026-11-01T00:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Saudi Arabia",
+      "address": "Saudi Arabia"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Ministry of Culture commissions"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/urban-transformation-initiative-a34e77a79f.png"
+    ],
+    "description": "برنامج أو مبادرة ثقافية رسمية من تقويم وزارة الثقافة. المدة طويلة لذلك تحفظ كدليل مصدر ولا تنشر تلقائياً كفعالية لحظية. Urban transformation Initiative ضمن ثقافة وفنون في السعودية. تبدأ الفعالية ٣١‏/١٠‏/٢٠٢٤، ١٢:٠٠ ص وتنتهي ٠١‏/١١‏/٢٠٢٦، ١٢:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Ministry of Culture Commission Calendars.",
+    "url": "https://eventme.live/events/event-urban-transformation-initiative.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-urban-transformation-initiative.html",
+    "isAccessibleForFree": false,
+    "keywords": "Urban transformation Initiative, ثقافة وفنون, cultural initiative, برنامج ممتد, برنامج جارٍ, السعودية, Saudi Arabia, Ministry of Culture Commission Calendars, music, heritage, architecture, design, culture, arts, Initiative, long-running cultural initiative, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Urban%20transformation%20Initiative/EventDetail"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Urban%20transformation%20Initiative/EventDetail",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-07-08T10:10:26.415Z",
+  "platform": "EventLive",
+  "domain": "eventme.live",
+  "intent": "eventlive-owner-status",
+  "analytics": {
+    "provider": "plausible",
+    "domain": "eventme.live",
+    "status": "PASS",
+    "dashboard_url": "https://plausible.io/eventme.live",
+    "tracked_events": [
+      "page_view",
+      "search_used",
+      "event_opened",
+      "city_filter_used",
+      "category_filter_used",
+      "audience_filter_used",
+      "calendar_downloaded",
+      "directions_clicked",
+      "source_clicked",
+      "live_screen_opened",
+      "saved_event",
+      "share_clicked",
+      "organizer_cta_clicked",
+      "this_week_opened",
+      "today_opened"
+    ],
+    "privacy": {
+      "cookies": false,
+      "pii": false,
+      "owner_pages_excluded": true
+    },
+    "note": "أرقام الزوار الحقيقية تقرأ من لوحة مزود التحليلات. هذه الصفحة تثبت أن التتبع مزروع وتعرض الرابط التشغيلي."
+  },
+  "source_sync": {
+    "last_run_at": "2026-07-08T10:10:05.839Z",
+    "registered_sources": 66,
+    "attempted_sources": 34,
+    "productive_sources": 15,
+    "collector_errors": 8,
+    "zero_yield": 9,
+    "candidates_seen": 184,
+    "published_new": 16,
+    "linked_existing": 139,
+    "blocked_remaining": 29,
+    "secondary_promoted": 15,
+    "secondary_still_blocked": 29
+  },
+  "catalog": {
+    "public_events": 449,
+    "live_ready": 52,
+    "ended_events": 294,
+    "upcoming_or_ongoing": 155
+  },
+  "links": {
+    "analytics_dashboard": "https://plausible.io/eventme.live",
+    "source_health": "./source-health.html",
+    "source_coverage": "./source-coverage-gaps.html",
+    "events_json": "./events.json"
+  }
+}

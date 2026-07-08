@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:The Architecture and Design Café | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-the-architecture-and-design-caf@eventme.live
+DTSTAMP:20260708T101026Z
+DTSTART:20240426T210000Z
+DTEND:20260926T210000Z
+SUMMARY:The Architecture and Design Café
+DESCRIPTION:برنامج أو مبادرة ثقافية رسمية من تقويم وزارة الثقافة. المدة طويلة لذلك تحفظ كدليل مصدر ولا تنشر تلقائياً كفعالية لحظية. The Architecture and Design Café ضمن ثقافة وفنون في السعودية. تبدأ الفعالية ٢٧‏/٠٤‏/٢٠٢٤، ١٢:٠٠ ص وتنتهي ٢٧‏/٠٩‏/٢٠٢٦، ١٢:٠٠ ص حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Ministry of Culture Commission Calendars.
+LOCATION:Saudi Arabia
+URL:https://eventme.live/events/event-the-architecture-and-design-caf.html
+END:VEVENT
+END:VCALENDAR

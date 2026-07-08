@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T01:40:00.463Z",
+  "generated_at": "2026-07-08T10:10:26.415Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-saudi-region-coverage",
@@ -8,8 +8,8 @@
     "weak_regions": 9,
     "active_regions": 4,
     "uncovered_regions": 6,
-    "events": 429,
-    "active_events": 135,
+    "events": 449,
+    "active_events": 155,
     "ended_events": 294
   },
   "regions": [
@@ -854,15 +854,15 @@
           "label": "Shaqra"
         }
       ],
-      "total": 196,
-      "active": 90,
-      "upcoming": 67,
-      "ongoing": 23,
+      "total": 204,
+      "active": 98,
+      "upcoming": 73,
+      "ongoing": 25,
       "live": 0,
       "ended": 106,
       "live_ready": 22,
-      "source_count": 15,
-      "source_images": 91,
+      "source_count": 17,
+      "source_images": 99,
       "generated_covers": 105,
       "registered_source_count": 32,
       "registered_sources": [

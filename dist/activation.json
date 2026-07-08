@@ -1,41 +1,41 @@
 {
-  "generated_at": "2026-07-08T01:40:00.463Z",
+  "generated_at": "2026-07-08T10:10:26.415Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "live-schedule-activation",
   "totals": {
-    "candidates": 108,
-    "urgent": 37,
-    "high": 11,
+    "candidates": 127,
+    "urgent": 51,
+    "high": 14,
     "needs_date": 0,
-    "source_groups": 14,
-    "basic_window_candidates": 108,
+    "source_groups": 16,
+    "basic_window_candidates": 127,
     "missing_window_candidates": 0
   },
   "focus": {
-    "id": "event-poppy-playtime",
-    "title": "Poppy Playtime",
+    "id": "event-skill-development-initiative",
+    "title": "Skill Development Initiative",
     "city": "الرياض",
-    "venue": "Boulevard City, Riyadh",
-    "organizer": "General Entertainment Authority || Riyadh Season",
-    "category": "ترفيه وعائلات",
-    "starts_at": "2025-10-10T16:00:00+03:00",
-    "ends_at": "2026-12-08T23:59:00+03:00",
-    "detail_url": "./events/event-poppy-playtime.html",
-    "calendar_url": "./events/event-poppy-playtime.ics",
-    "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Boulevard%20City%2C%20Riyadh%20Riyadh",
-    "source_label": "Riyadh City Events",
-    "source_url": "https://riyadh.sa/en/moment/events/item/event/29515",
-    "evidence_url": "https://riyadh.sa/en/moment/events/item/event/29515",
+    "venue": "Riyadh",
+    "organizer": "Ministry of Culture commissions",
+    "category": "ثقافة وفنون",
+    "starts_at": "2021-07-14T03:00:00+03:00",
+    "ends_at": "2030-12-31T03:00:00+03:00",
+    "detail_url": "./events/event-skill-development-initiative.html",
+    "calendar_url": "./events/event-skill-development-initiative.ics",
+    "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Riyadh%20Riyadh",
+    "source_label": "Ministry of Culture Commission Calendars",
+    "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Skills%20development/EventDetail",
+    "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Skills%20development/EventDetail",
     "source_confidence": "approved-source",
     "approval_status": "published",
     "approval_status_label": "منشورة",
     "attendance_window_ready": true,
     "attendance_window": {
       "title": "نافذة الحضور",
-      "starts_at": "2025-10-10T16:00:00+03:00",
-      "ends_at": "2026-12-08T23:59:00+03:00",
-      "room": "Boulevard City, Riyadh",
+      "starts_at": "2021-07-14T03:00:00+03:00",
+      "ends_at": "2030-12-31T03:00:00+03:00",
+      "room": "Riyadh",
       "track": "برنامج ممتد",
       "session_type": "attendance-window",
       "inferred": true,
@@ -56,7 +56,7 @@
     "blockers": [
       "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
     ],
-    "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Poppy%20Playtime&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Poppy%20Playtime%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Boulevard%20City%2C%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202025-10-10T16%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-poppy-playtime.html"
+    "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Skill%20Development%20Initiative&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Skill%20Development%20Initiative%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202021-07-14T03%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-skill-development-initiative.html"
   },
   "source_groups": [
     {
@@ -64,13 +64,13 @@
       "source_label": "Riyadh City Events",
       "source_url": "https://riyadh.sa/en/moment/events/item/event/29515",
       "source_host": "riyadh.sa",
-      "candidates": 37,
-      "urgent": 18,
+      "candidates": 38,
+      "urgent": 19,
       "high": 1,
-      "basic_windows": 37,
+      "basic_windows": 38,
       "missing_windows": 0,
       "route_counts": {
-        "source-detail-probe": 37
+        "source-detail-probe": 38
       },
       "next_event_starts_at": "2025-10-10T16:00:00+03:00",
       "example_events": [
@@ -140,20 +140,20 @@
         "label": "فحص صفحة المصدر",
         "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
       },
-      "impact_score": 555
+      "impact_score": 574
     },
     {
       "key": "Tuwaiq Academy Bootcamps and Programs",
       "source_label": "Tuwaiq Academy Bootcamps and Programs",
       "source_url": "https://tuwaiq.edu.sa/bootcamp/b64Yy4yX/view",
       "source_host": "tuwaiq.edu.sa",
-      "candidates": 19,
+      "candidates": 22,
       "urgent": 3,
-      "high": 7,
-      "basic_windows": 19,
+      "high": 10,
+      "basic_windows": 22,
       "missing_windows": 0,
       "route_counts": {
-        "training-program-parser": 19
+        "training-program-parser": 22
       },
       "next_event_starts_at": "2026-07-05T18:00:00+03:00",
       "example_events": [
@@ -223,7 +223,90 @@
         "label": "محلل برامج ودورات",
         "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
       },
-      "impact_score": 261
+      "impact_score": 306
+    },
+    {
+      "key": "Ministry of Culture Commission Calendars",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Skills%20development/EventDetail",
+      "source_host": "moc.gov.sa",
+      "candidates": 12,
+      "urgent": 12,
+      "high": 0,
+      "basic_windows": 12,
+      "missing_windows": 0,
+      "route_counts": {
+        "source-detail-probe": 12
+      },
+      "next_event_starts_at": "2021-07-14T03:00:00+03:00",
+      "example_events": [
+        {
+          "id": "event-skill-development-initiative",
+          "title": "Skill Development Initiative",
+          "city": "الرياض",
+          "starts_at": "2021-07-14T03:00:00+03:00",
+          "detail_url": "./events/event-skill-development-initiative.html",
+          "priority": {
+            "key": "urgent",
+            "label": "عاجل الآن",
+            "rank": 0
+          }
+        },
+        {
+          "id": "event-sitar",
+          "title": "SITAR",
+          "city": "الرياض",
+          "starts_at": "2022-09-21T03:00:00+03:00",
+          "detail_url": "./events/event-sitar.html",
+          "priority": {
+            "key": "urgent",
+            "label": "عاجل الآن",
+            "rank": 0
+          }
+        },
+        {
+          "id": "event-the-architecture-and-design-caf",
+          "title": "The Architecture and Design Café",
+          "city": "السعودية",
+          "starts_at": "2024-04-27T00:00:00+03:00",
+          "detail_url": "./events/event-the-architecture-and-design-caf.html",
+          "priority": {
+            "key": "urgent",
+            "label": "عاجل الآن",
+            "rank": 0
+          }
+        },
+        {
+          "id": "event-jusoor-program",
+          "title": "Jusoor Program",
+          "city": "السعودية",
+          "starts_at": "2024-08-18T00:00:00+03:00",
+          "detail_url": "./events/event-jusoor-program.html",
+          "priority": {
+            "key": "urgent",
+            "label": "عاجل الآن",
+            "rank": 0
+          }
+        },
+        {
+          "id": "event-urban-transformation-initiative",
+          "title": "Urban transformation Initiative",
+          "city": "السعودية",
+          "starts_at": "2024-10-31T00:00:00+03:00",
+          "detail_url": "./events/event-urban-transformation-initiative.html",
+          "priority": {
+            "key": "urgent",
+            "label": "عاجل الآن",
+            "rank": 0
+          }
+        }
+      ],
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "impact_score": 228
     },
     {
       "key": "Visit Saudi Calendar",
@@ -313,13 +396,13 @@
       "source_label": "Misk Hub Programs",
       "source_url": "https://hub.misk.org.sa/programs/skills/misk-local-traineeship-program/",
       "source_host": "hub.misk.org.sa",
-      "candidates": 6,
-      "urgent": 2,
+      "candidates": 7,
+      "urgent": 3,
       "high": 2,
-      "basic_windows": 6,
+      "basic_windows": 7,
       "missing_windows": 0,
       "route_counts": {
-        "training-program-parser": 6
+        "training-program-parser": 7
       },
       "next_event_starts_at": "2026-04-01T09:00:00+03:00",
       "example_events": [
@@ -329,6 +412,18 @@
           "city": "الرياض",
           "starts_at": "2026-04-01T09:00:00+03:00",
           "detail_url": "./events/event-misk-local-traineeship-program.html",
+          "priority": {
+            "key": "urgent",
+            "label": "عاجل الآن",
+            "rank": 0
+          }
+        },
+        {
+          "id": "event-application-deadline-2030-leaders",
+          "title": "2030 Leaders",
+          "city": "السعودية",
+          "starts_at": "2026-07-08T09:00:00+03:00",
+          "detail_url": "./events/event-application-deadline-2030-leaders.html",
           "priority": {
             "key": "urgent",
             "label": "عاجل الآن",
@@ -370,18 +465,6 @@
             "label": "أولوية عالية",
             "rank": 1
           }
-        },
-        {
-          "id": "event-the-innovation-diwan",
-          "title": "The Innovation Diwan",
-          "city": "الرياض",
-          "starts_at": "2026-09-05T09:00:00+03:00",
-          "detail_url": "./events/event-the-innovation-diwan.html",
-          "priority": {
-            "key": "normal",
-            "label": "متابعة دورية",
-            "rank": 2
-          }
         }
       ],
       "acquisition": {
@@ -389,7 +472,7 @@
         "label": "محلل برامج ودورات",
         "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
       },
-      "impact_score": 90
+      "impact_score": 109
     },
     {
       "key": "Saudi Water Authority Events",
@@ -971,6 +1054,54 @@
       "impact_score": 22
     },
     {
+      "key": "Eye of Riyadh Events",
+      "source_label": "Eye of Riyadh Events",
+      "source_url": "https://www.eyeofriyadh.com/events/details/saudi-wood-expo-2026",
+      "source_host": "eyeofriyadh.com",
+      "candidates": 2,
+      "urgent": 0,
+      "high": 0,
+      "basic_windows": 2,
+      "missing_windows": 0,
+      "route_counts": {
+        "expo-agenda-probe": 1,
+        "source-detail-probe": 1
+      },
+      "next_event_starts_at": "2026-08-30T09:00:00+03:00",
+      "example_events": [
+        {
+          "id": "event-saudi-wood-expo-2026",
+          "title": "Saudi Wood Expo 2026",
+          "city": "الرياض",
+          "starts_at": "2026-08-30T09:00:00+03:00",
+          "detail_url": "./events/event-saudi-wood-expo-2026.html",
+          "priority": {
+            "key": "normal",
+            "label": "متابعة دورية",
+            "rank": 2
+          }
+        },
+        {
+          "id": "event-saudi-industrial-series-2",
+          "title": "Saudi Industrial Series",
+          "city": "الرياض",
+          "starts_at": "2026-08-30T09:00:00+03:00",
+          "detail_url": "./events/event-saudi-industrial-series-2.html",
+          "priority": {
+            "key": "normal",
+            "label": "متابعة دورية",
+            "rank": 2
+          }
+        }
+      ],
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "expo-agenda-probe",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "impact_score": 22
+    },
+    {
       "key": "SDAIA Calendar and Events",
       "source_label": "SDAIA Calendar and Events",
       "source_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=122",
@@ -1019,6 +1150,466 @@
     }
   ],
   "events": [
+    {
+      "id": "event-skill-development-initiative",
+      "title": "Skill Development Initiative",
+      "city": "الرياض",
+      "venue": "Riyadh",
+      "organizer": "Ministry of Culture commissions",
+      "category": "ثقافة وفنون",
+      "starts_at": "2021-07-14T03:00:00+03:00",
+      "ends_at": "2030-12-31T03:00:00+03:00",
+      "detail_url": "./events/event-skill-development-initiative.html",
+      "calendar_url": "./events/event-skill-development-initiative.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Riyadh%20Riyadh",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Skills%20development/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Skills%20development/EventDetail",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2021-07-14T03:00:00+03:00",
+        "ends_at": "2030-12-31T03:00:00+03:00",
+        "room": "Riyadh",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "priority": {
+        "key": "urgent",
+        "label": "عاجل الآن",
+        "rank": 0
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Skill%20Development%20Initiative&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Skill%20Development%20Initiative%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202021-07-14T03%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-skill-development-initiative.html"
+    },
+    {
+      "id": "event-sitar",
+      "title": "SITAR",
+      "city": "الرياض",
+      "venue": "Riyadh",
+      "organizer": "Ministry of Culture commissions",
+      "category": "ثقافة وفنون",
+      "starts_at": "2022-09-21T03:00:00+03:00",
+      "ends_at": "2030-12-31T03:00:00+03:00",
+      "detail_url": "./events/event-sitar.html",
+      "calendar_url": "./events/event-sitar.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Riyadh%20Riyadh",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Production%20Support%20Program%20in%20the%20Theater%20and%20Performing%20Arts%20Sector/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Production%20Support%20Program%20in%20the%20Theater%20and%20Performing%20Arts%20Sector/EventDetail",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2022-09-21T03:00:00+03:00",
+        "ends_at": "2030-12-31T03:00:00+03:00",
+        "room": "Riyadh",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "priority": {
+        "key": "urgent",
+        "label": "عاجل الآن",
+        "rank": 0
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20SITAR&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20SITAR%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202022-09-21T03%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-sitar.html"
+    },
+    {
+      "id": "event-the-architecture-and-design-caf",
+      "title": "The Architecture and Design Café",
+      "city": "السعودية",
+      "venue": "Saudi Arabia",
+      "organizer": "Ministry of Culture commissions",
+      "category": "ثقافة وفنون",
+      "starts_at": "2024-04-27T00:00:00+03:00",
+      "ends_at": "2026-09-27T00:00:00+03:00",
+      "detail_url": "./events/event-the-architecture-and-design-caf.html",
+      "calendar_url": "./events/event-the-architecture-and-design-caf.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Saudi%20Arabia%20Saudi%20Arabia",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/The%20Architecture%20And%20Design%20Cafe/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/The%20Architecture%20And%20Design%20Cafe/EventDetail",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2024-04-27T00:00:00+03:00",
+        "ends_at": "2026-09-27T00:00:00+03:00",
+        "room": "Saudi Arabia",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "priority": {
+        "key": "urgent",
+        "label": "عاجل الآن",
+        "rank": 0
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20The%20Architecture%20and%20Design%20Caf%C3%A9&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20The%20Architecture%20and%20Design%20Caf%C3%A9%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Saudi%20Arabia%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202024-04-27T00%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-the-architecture-and-design-caf.html"
+    },
+    {
+      "id": "event-jusoor-program",
+      "title": "Jusoor Program",
+      "city": "السعودية",
+      "venue": "Saudi Arabia",
+      "organizer": "Ministry of Culture commissions",
+      "category": "ثقافة وفنون",
+      "starts_at": "2024-08-18T00:00:00+03:00",
+      "ends_at": "2026-08-18T00:00:00+03:00",
+      "detail_url": "./events/event-jusoor-program.html",
+      "calendar_url": "./events/event-jusoor-program.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Saudi%20Arabia%20Saudi%20Arabia",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/jusoor%20competition/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/jusoor%20competition/EventDetail",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2024-08-18T00:00:00+03:00",
+        "ends_at": "2026-08-18T00:00:00+03:00",
+        "room": "Saudi Arabia",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "priority": {
+        "key": "urgent",
+        "label": "عاجل الآن",
+        "rank": 0
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Jusoor%20Program&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Jusoor%20Program%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Saudi%20Arabia%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202024-08-18T00%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-jusoor-program.html"
+    },
+    {
+      "id": "event-urban-transformation-initiative",
+      "title": "Urban transformation Initiative",
+      "city": "السعودية",
+      "venue": "Saudi Arabia",
+      "organizer": "Ministry of Culture commissions",
+      "category": "ثقافة وفنون",
+      "starts_at": "2024-10-31T00:00:00+03:00",
+      "ends_at": "2026-11-01T00:00:00+03:00",
+      "detail_url": "./events/event-urban-transformation-initiative.html",
+      "calendar_url": "./events/event-urban-transformation-initiative.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Saudi%20Arabia%20Saudi%20Arabia",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Urban%20transformation%20Initiative/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Urban%20transformation%20Initiative/EventDetail",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2024-10-31T00:00:00+03:00",
+        "ends_at": "2026-11-01T00:00:00+03:00",
+        "room": "Saudi Arabia",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "priority": {
+        "key": "urgent",
+        "label": "عاجل الآن",
+        "rank": 0
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Urban%20transformation%20Initiative&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Urban%20transformation%20Initiative%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Saudi%20Arabia%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202024-10-31T00%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-urban-transformation-initiative.html"
+    },
+    {
+      "id": "event-the-continuing-professional-development-initiative",
+      "title": "The Continuing Professional Development Initiative",
+      "city": "السعودية",
+      "venue": "Saudi Arabia",
+      "organizer": "Ministry of Culture commissions",
+      "category": "ثقافة وفنون",
+      "starts_at": "2024-11-16T00:00:00+03:00",
+      "ends_at": "2026-10-10T00:00:00+03:00",
+      "detail_url": "./events/event-the-continuing-professional-development-initiative.html",
+      "calendar_url": "./events/event-the-continuing-professional-development-initiative.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Saudi%20Arabia%20Saudi%20Arabia",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Continuous%20Professional%20Development%20Initiative/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Continuous%20Professional%20Development%20Initiative/EventDetail",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2024-11-16T00:00:00+03:00",
+        "ends_at": "2026-10-10T00:00:00+03:00",
+        "room": "Saudi Arabia",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "priority": {
+        "key": "urgent",
+        "label": "عاجل الآن",
+        "rank": 0
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20The%20Continuing%20Professional%20Development%20Initiative&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20The%20Continuing%20Professional%20Development%20Initiative%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Saudi%20Arabia%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202024-11-16T00%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-the-continuing-professional-development-initiative.html"
+    },
+    {
+      "id": "event-design-for-good-initiative",
+      "title": "Design for Good Initiative",
+      "city": "السعودية",
+      "venue": "Saudi Arabia",
+      "organizer": "Ministry of Culture commissions",
+      "category": "ثقافة وفنون",
+      "starts_at": "2024-12-05T00:00:00+03:00",
+      "ends_at": "2026-11-14T00:00:00+03:00",
+      "detail_url": "./events/event-design-for-good-initiative.html",
+      "calendar_url": "./events/event-design-for-good-initiative.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Saudi%20Arabia%20Saudi%20Arabia",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/design%20for%20good/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/design%20for%20good/EventDetail",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2024-12-05T00:00:00+03:00",
+        "ends_at": "2026-11-14T00:00:00+03:00",
+        "room": "Saudi Arabia",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "priority": {
+        "key": "urgent",
+        "label": "عاجل الآن",
+        "rank": 0
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Design%20for%20Good%20Initiative&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Design%20for%20Good%20Initiative%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Saudi%20Arabia%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202024-12-05T00%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-design-for-good-initiative.html"
+    },
+    {
+      "id": "event-the-saudi-music-hub",
+      "title": "The Saudi Music Hub",
+      "city": "السعودية",
+      "venue": "Saudi Arabia",
+      "organizer": "Ministry of Culture commissions",
+      "category": "ثقافة وفنون",
+      "starts_at": "2025-01-01T00:00:00+03:00",
+      "ends_at": "2027-04-03T00:00:00+03:00",
+      "detail_url": "./events/event-the-saudi-music-hub.html",
+      "calendar_url": "./events/event-the-saudi-music-hub.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Saudi%20Arabia%20Saudi%20Arabia",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Saudi%20Music%20Center/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Saudi%20Music%20Center/EventDetail",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2025-01-01T00:00:00+03:00",
+        "ends_at": "2027-04-03T00:00:00+03:00",
+        "room": "Saudi Arabia",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "priority": {
+        "key": "urgent",
+        "label": "عاجل الآن",
+        "rank": 0
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20The%20Saudi%20Music%20Hub&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20The%20Saudi%20Music%20Hub%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Saudi%20Arabia%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202025-01-01T00%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-the-saudi-music-hub.html"
+    },
+    {
+      "id": "event-academic-excellence-in-architecture-and-design-education",
+      "title": "Academic Excellence in Architecture and Design Education",
+      "city": "السعودية",
+      "venue": "Saudi Arabia",
+      "organizer": "Ministry of Culture commissions",
+      "category": "ثقافة وفنون",
+      "starts_at": "2025-03-09T00:00:00+03:00",
+      "ends_at": "2026-09-09T00:00:00+03:00",
+      "detail_url": "./events/event-academic-excellence-in-architecture-and-design-education.html",
+      "calendar_url": "./events/event-academic-excellence-in-architecture-and-design-education.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Saudi%20Arabia%20Saudi%20Arabia",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Academic%20Excellence%20in%20Architectural%20and%20Design%20Education/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Academic%20Excellence%20in%20Architectural%20and%20Design%20Education/EventDetail",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2025-03-09T00:00:00+03:00",
+        "ends_at": "2026-09-09T00:00:00+03:00",
+        "room": "Saudi Arabia",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "priority": {
+        "key": "urgent",
+        "label": "عاجل الآن",
+        "rank": 0
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Academic%20Excellence%20in%20Architecture%20and%20Design%20Education&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Academic%20Excellence%20in%20Architecture%20and%20Design%20Education%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Saudi%20Arabia%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202025-03-09T00%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-academic-excellence-in-architecture-and-design-education.html"
+    },
+    {
+      "id": "event-culinary-manufacturing-hubs",
+      "title": "Culinary Manufacturing Hubs",
+      "city": "السعودية",
+      "venue": "Saudi Arabia",
+      "organizer": "Ministry of Culture commissions",
+      "category": "ثقافة وفنون",
+      "starts_at": "2025-08-11T00:00:00+03:00",
+      "ends_at": "2029-12-31T00:00:00+03:00",
+      "detail_url": "./events/event-culinary-manufacturing-hubs.html",
+      "calendar_url": "./events/event-culinary-manufacturing-hubs.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Saudi%20Arabia%20Saudi%20Arabia",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Culinary%20Manufacturing%20Hubs/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Culinary%20Manufacturing%20Hubs/EventDetail",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2025-08-11T00:00:00+03:00",
+        "ends_at": "2029-12-31T00:00:00+03:00",
+        "room": "Saudi Arabia",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "priority": {
+        "key": "urgent",
+        "label": "عاجل الآن",
+        "rank": 0
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Culinary%20Manufacturing%20Hubs&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Culinary%20Manufacturing%20Hubs%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Saudi%20Arabia%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202025-08-11T00%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-culinary-manufacturing-hubs.html"
+    },
     {
       "id": "event-poppy-playtime",
       "title": "Poppy Playtime",
@@ -1294,6 +1885,98 @@
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Arabic%20Language%20Exhibition%20for%20kids&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Arabic%20Language%20Exhibition%20for%20kids%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-01-01T08%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-arabic-language-exhibition-for-kids.html"
+    },
+    {
+      "id": "event-film-business-accelerator",
+      "title": "Film Business Accelerator",
+      "city": "السعودية",
+      "venue": "Saudi Arabia",
+      "organizer": "Ministry of Culture commissions",
+      "category": "ثقافة وفنون",
+      "starts_at": "2026-01-19T00:00:00+03:00",
+      "ends_at": "2026-12-31T00:00:00+03:00",
+      "detail_url": "./events/event-film-business-accelerator.html",
+      "calendar_url": "./events/event-film-business-accelerator.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Saudi%20Arabia%20Saudi%20Arabia",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Film_Accelerator/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Film_Accelerator/EventDetail",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-01-19T00:00:00+03:00",
+        "ends_at": "2026-12-31T00:00:00+03:00",
+        "room": "Saudi Arabia",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "priority": {
+        "key": "urgent",
+        "label": "عاجل الآن",
+        "rank": 0
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Film%20Business%20Accelerator&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Film%20Business%20Accelerator%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Saudi%20Arabia%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-01-19T00%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-film-business-accelerator.html"
+    },
+    {
+      "id": "event-the-guidelines-for-culture-and-arts-in-the-public-realm",
+      "title": "The Guidelines for Culture and Arts in the Public Realm",
+      "city": "السعودية",
+      "venue": "Saudi Arabia",
+      "organizer": "Ministry of Culture commissions",
+      "category": "ثقافة وفنون",
+      "starts_at": "2026-02-05T00:00:00+03:00",
+      "ends_at": "2030-02-05T00:00:00+03:00",
+      "detail_url": "./events/event-the-guidelines-for-culture-and-arts-in-the-public-realm.html",
+      "calendar_url": "./events/event-the-guidelines-for-culture-and-arts-in-the-public-realm.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Saudi%20Arabia%20Saudi%20Arabia",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/CAIPS_1/EventDetail",
+      "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/CAIPS_1/EventDetail",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-02-05T00:00:00+03:00",
+        "ends_at": "2030-02-05T00:00:00+03:00",
+        "room": "Saudi Arabia",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "priority": {
+        "key": "urgent",
+        "label": "عاجل الآن",
+        "rank": 0
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20The%20Guidelines%20for%20Culture%20and%20Arts%20in%20the%20Public%20Realm&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20The%20Guidelines%20for%20Culture%20and%20Arts%20in%20the%20Public%20Realm%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Saudi%20Arabia%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-02-05T00%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-the-guidelines-for-culture-and-arts-in-the-public-realm.html"
     },
     {
       "id": "event-horses-and-equestrian-heritage-exhibition",
@@ -2262,6 +2945,52 @@
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Registration%20Now%20Open%20for%20Children%20at%20the%20Childhood%20Studies%20Center%20for%20the%20Academic%20Year%201448%20AH&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Registration%20Now%20Open%20for%20Children%20at%20the%20Childhood%20Studies%20Center%20for%20the%20Academic%20Year%201448%20AH%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%AC%D8%AF%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20King%20Abdulaziz%20University%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-07T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-registration-now-open-for-children-at-the-childhood-studies-center-for-t.html"
     },
     {
+      "id": "event-application-deadline-2030-leaders",
+      "title": "2030 Leaders",
+      "city": "السعودية",
+      "venue": "Hybrid",
+      "organizer": "Mohammed Bin Salman Foundation / Misk Hub",
+      "category": "تدريب تقني",
+      "starts_at": "2026-07-08T09:00:00+03:00",
+      "ends_at": "2026-07-08T23:59:00+03:00",
+      "detail_url": "./events/event-application-deadline-2030-leaders.html",
+      "calendar_url": "./events/event-application-deadline-2030-leaders.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Hybrid%20Saudi%20Arabia",
+      "source_label": "Misk Hub Programs",
+      "source_url": "https://hub.misk.org.sa/programs/leadership/2030-leaders/",
+      "evidence_url": "https://hub.misk.org.sa/programs/leadership/2030-leaders/",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-07-08T09:00:00+03:00",
+        "ends_at": "2026-07-08T23:59:00+03:00",
+        "room": "Hybrid",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "training-program-parser",
+        "label": "محلل برامج ودورات",
+        "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
+      },
+      "priority": {
+        "key": "urgent",
+        "label": "عاجل الآن",
+        "rank": 0
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%202030%20Leaders&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%202030%20Leaders%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Hybrid%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-08T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-application-deadline-2030-leaders.html"
+    },
+    {
       "id": "event-unstable",
       "title": "Unstable",
       "city": "الرياض",
@@ -2306,6 +3035,52 @@
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Unstable&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Unstable%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-10T00%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-unstable.html"
+    },
+    {
+      "id": "event-pfl-mena-fight-night",
+      "title": "PFL MENA Fight Night",
+      "city": "الرياض",
+      "venue": "Global Theater, Boulevard City, Riyadh",
+      "organizer": "PFL",
+      "category": "رياضة وفعاليات جماهيرية",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-10T22:00:00+03:00",
+      "detail_url": "./events/event-pfl-mena-fight-night.html",
+      "calendar_url": "./events/event-pfl-mena-fight-night.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Global%20Theater%2C%20Boulevard%20City%2C%20Riyadh%20Riyadh",
+      "source_label": "Riyadh City Events",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31170",
+      "evidence_url": "https://riyadh.sa/en/moment/events/item/event/31170",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-07-10T16:00:00+03:00",
+        "ends_at": "2026-07-10T22:00:00+03:00",
+        "room": "Global Theater, Boulevard City, Riyadh",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "priority": {
+        "key": "urgent",
+        "label": "عاجل الآن",
+        "rank": 0
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20PFL%20MENA%20Fight%20Night&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20PFL%20MENA%20Fight%20Night%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Global%20Theater%2C%20Boulevard%20City%2C%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-10T16%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-pfl-mena-fight-night.html"
     },
     {
       "id": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي",
@@ -2904,6 +3679,144 @@
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B3%D8%AD%D8%A7%D8%A8%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9%20%D9%84%D8%B3%D8%AD%D8%A7%D8%A8%D8%A9%20%D9%82%D9%88%D9%82%D9%84&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B3%D8%AD%D8%A7%D8%A8%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9%20%D9%84%D8%B3%D8%AD%D8%A7%D8%A8%D8%A9%20%D9%82%D9%88%D9%82%D9%84%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-26T17%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%B9%D8%B3%D9%83%D8%B1-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B3%D8%AD%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%84%D8%B3%D8%AD%D8%A7%D8%A8%D8%A9-%D9%82%D9%88%D9%82%D9%84.html"
+    },
+    {
+      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-6",
+      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
+      "city": "الرياض",
+      "venue": "الرياض - المقر الرئيسي",
+      "organizer": "Tuwaiq Academy",
+      "category": "ورش تنظيمية وصحية",
+      "starts_at": "2026-07-26T17:30:00+03:00",
+      "ends_at": "2026-10-15T21:30:00+03:00",
+      "detail_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-6.html",
+      "calendar_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-6.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%20Riyadh",
+      "source_label": "Tuwaiq Academy Bootcamps and Programs",
+      "source_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
+      "evidence_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-07-26T17:30:00+03:00",
+        "ends_at": "2026-10-15T21:30:00+03:00",
+        "room": "الرياض - المقر الرئيسي",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "training-program-parser",
+        "label": "محلل برامج ودورات",
+        "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
+      },
+      "priority": {
+        "key": "high",
+        "label": "أولوية عالية",
+        "rank": 1
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D9%88%D9%8A%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85%20%D9%84%D8%BA%D8%A9%20Python&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D9%88%D9%8A%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85%20%D9%84%D8%BA%D8%A9%20Python%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-26T17%3A30%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%B9%D8%B3%D9%83%D8%B1-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D9%84%D8%BA%D8%A9-python-6.html"
+    },
+    {
+      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-5",
+      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
+      "city": "الرياض",
+      "venue": "الرياض - المقر الرئيسي",
+      "organizer": "Tuwaiq Academy",
+      "category": "ورش تنظيمية وصحية",
+      "starts_at": "2026-07-26T17:30:00+03:00",
+      "ends_at": "2026-10-15T21:30:00+03:00",
+      "detail_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-5.html",
+      "calendar_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-5.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%20Riyadh",
+      "source_label": "Tuwaiq Academy Bootcamps and Programs",
+      "source_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
+      "evidence_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-07-26T17:30:00+03:00",
+        "ends_at": "2026-10-15T21:30:00+03:00",
+        "room": "الرياض - المقر الرئيسي",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "training-program-parser",
+        "label": "محلل برامج ودورات",
+        "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
+      },
+      "priority": {
+        "key": "high",
+        "label": "أولوية عالية",
+        "rank": 1
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D9%88%D9%8A%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85%20%D9%84%D8%BA%D8%A9%20Python&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D9%88%D9%8A%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85%20%D9%84%D8%BA%D8%A9%20Python%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-26T17%3A30%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%B9%D8%B3%D9%83%D8%B1-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D9%84%D8%BA%D8%A9-python-5.html"
+    },
+    {
+      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-4",
+      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
+      "city": "الرياض",
+      "venue": "الرياض - المقر الرئيسي",
+      "organizer": "Tuwaiq Academy",
+      "category": "ورش تنظيمية وصحية",
+      "starts_at": "2026-07-26T17:30:00+03:00",
+      "ends_at": "2026-10-15T21:30:00+03:00",
+      "detail_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-4.html",
+      "calendar_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-4.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%20Riyadh",
+      "source_label": "Tuwaiq Academy Bootcamps and Programs",
+      "source_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
+      "evidence_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-07-26T17:30:00+03:00",
+        "ends_at": "2026-10-15T21:30:00+03:00",
+        "room": "الرياض - المقر الرئيسي",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "training-program-parser",
+        "label": "محلل برامج ودورات",
+        "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
+      },
+      "priority": {
+        "key": "high",
+        "label": "أولوية عالية",
+        "rank": 1
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D9%88%D9%8A%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85%20%D9%84%D8%BA%D8%A9%20Python&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D9%88%D9%8A%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85%20%D9%84%D8%BA%D8%A9%20Python%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-26T17%3A30%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%B9%D8%B3%D9%83%D8%B1-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D9%84%D8%BA%D8%A9-python-4.html"
     },
     {
       "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-3",
@@ -3594,6 +4507,98 @@
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A3%D9%85%D9%86%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A8%D8%B1%D8%A7%D9%86%D9%8A&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A3%D9%85%D9%86%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A8%D8%B1%D8%A7%D9%86%D9%8A%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-08-23T18%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%B9%D8%B3%D9%83%D8%B1-%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D8%B3%D9%8A%D8%A8%D8%B1%D8%A7%D9%86%D9%8A.html"
+    },
+    {
+      "id": "event-saudi-wood-expo-2026",
+      "title": "Saudi Wood Expo 2026",
+      "city": "الرياض",
+      "venue": "Riyadh International Convention & Exhibition Center , Riyadh",
+      "organizer": "Eye of Riyadh",
+      "category": "معارض وتجارية",
+      "starts_at": "2026-08-30T09:00:00+03:00",
+      "ends_at": "2026-09-01T18:00:00+03:00",
+      "detail_url": "./events/event-saudi-wood-expo-2026.html",
+      "calendar_url": "./events/event-saudi-wood-expo-2026.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Riyadh%20International%20Convention%20%26%20Exhibition%20Center%20%2C%20Riyadh%20Riyadh",
+      "source_label": "Eye of Riyadh Events",
+      "source_url": "https://www.eyeofriyadh.com/events/details/saudi-wood-expo-2026",
+      "evidence_url": "https://www.eyeofriyadh.com/events/details/saudi-wood-expo-2026",
+      "source_confidence": "organizer-confirmed",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-08-30T09:00:00+03:00",
+        "ends_at": "2026-09-01T18:00:00+03:00",
+        "room": "Riyadh International Convention & Exhibition Center , Riyadh",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Saudi%20Wood%20Expo%202026&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Saudi%20Wood%20Expo%202026%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%20International%20Convention%20%26%20Exhibition%20Center%20%2C%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-08-30T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-saudi-wood-expo-2026.html"
+    },
+    {
+      "id": "event-saudi-industrial-series-2",
+      "title": "Saudi Industrial Series",
+      "city": "الرياض",
+      "venue": "Riyadh International Convention & Exhibition Center (RICEC) , Riyadh",
+      "organizer": "Eye of Riyadh",
+      "category": "مؤتمرات ومنتديات",
+      "starts_at": "2026-08-30T09:00:00+03:00",
+      "ends_at": "2026-09-01T18:00:00+03:00",
+      "detail_url": "./events/event-saudi-industrial-series-2.html",
+      "calendar_url": "./events/event-saudi-industrial-series-2.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Riyadh%20International%20Convention%20%26%20Exhibition%20Center%20(RICEC)%20%2C%20Riyadh%20Riyadh",
+      "source_label": "Eye of Riyadh Events",
+      "source_url": "https://www.eyeofriyadh.com/events/details/saudi-industrial-series-1764288598",
+      "evidence_url": "https://www.eyeofriyadh.com/events/details/saudi-industrial-series-1764288598",
+      "source_confidence": "organizer-confirmed",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-08-30T09:00:00+03:00",
+        "ends_at": "2026-09-01T18:00:00+03:00",
+        "room": "Riyadh International Convention & Exhibition Center (RICEC) , Riyadh",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Saudi%20Industrial%20Series&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Saudi%20Industrial%20Series%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%20International%20Convention%20%26%20Exhibition%20Center%20(RICEC)%20%2C%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-08-30T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-saudi-industrial-series-2.html"
     },
     {
       "id": "event-merath-middle-east-museums-heritage-expo",
