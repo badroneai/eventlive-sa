@@ -1,10 +1,10 @@
 # EventLive Official Resolver Report
 
-- generated_at: 2026-07-08T03:52:51.438Z
+- generated_at: 2026-07-08T08:54:05.082Z
 - source_ops_report: reports/source-ops-report.json
 - leads_seen: 10
 - resolver_tasks: 6
-- high_priority: 4
+- high_priority: 5
 
 ## Resolver Tasks
 
@@ -12,10 +12,10 @@
 |---:|---|---|---|---|---|---|
 | 132 | Dubai Property Expo in Al Khobar | Eventbrite Saudi Arabia | Khobar | strong-lead/70 | dhahran-expo-calendar, ricec-events, sdaia-calendar-events, asharqia-chamber-events, abha-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 115 | Global Proptech Summit 2026 | Eye of Riyadh Events | Riyadh | strong-lead/70 | ricec-events, sdaia-calendar-events, dhahran-expo-calendar, rfecc-whats-on, abha-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 115 | HRSE KSA | Eye of Riyadh Events | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, saudi-water-authority-events, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 115 | Saudi Wood Expo 2026 | Eye of Riyadh Events | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, saudi-water-authority-events, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 115 | Smart Data & AI Summit | Eye of Riyadh Events | Riyadh | strong-lead/70 | ricec-events, sdaia-calendar-events, dhahran-expo-calendar, rfecc-whats-on, abha-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 105 | Saudi Industrial Series | Eye of Riyadh Events | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, saudi-water-authority-events, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 87 | Riyadh Social and Language Exchange (Make New Friends) ✨ | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | enjoy-saudi-events, misk-hub-events, riyadh-city-events, riyadh-season, aseer-season-asda | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 
 ## Search Pack
 
@@ -40,6 +40,17 @@
 - ["Global Proptech Summit 2026" "Riyadh" official](https://www.google.com/search?q=%22Global%20Proptech%20Summit%202026%22%20%22Riyadh%22%20official)
 - ["Global Proptech Summit 2026" "Riyadh" organizer](https://www.google.com/search?q=%22Global%20Proptech%20Summit%202026%22%20%22Riyadh%22%20organizer)
 - ["Global Proptech Summit 2026" "Riyadh" tickets](https://www.google.com/search?q=%22Global%20Proptech%20Summit%202026%22%20%22Riyadh%22%20tickets)
+
+### HRSE KSA
+
+- [site:rfecc.sa "HRSE KSA" "Riyadh"](https://www.google.com/search?q=site%3Arfecc.sa%20%22HRSE%20KSA%22%20%22Riyadh%22)
+- [site:ricec.com "HRSE KSA" "Riyadh"](https://www.google.com/search?q=site%3Aricec.com%20%22HRSE%20KSA%22%20%22Riyadh%22)
+- [site:dhahranexpo.com.sa "HRSE KSA" "Riyadh"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22HRSE%20KSA%22%20%22Riyadh%22)
+- [site:swa.gov.sa "HRSE KSA" "Riyadh"](https://www.google.com/search?q=site%3Aswa.gov.sa%20%22HRSE%20KSA%22%20%22Riyadh%22)
+- [site:sdaia.gov.sa "HRSE KSA" "Riyadh"](https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22HRSE%20KSA%22%20%22Riyadh%22)
+- ["HRSE KSA" "Riyadh" official](https://www.google.com/search?q=%22HRSE%20KSA%22%20%22Riyadh%22%20official)
+- ["HRSE KSA" "Riyadh" organizer](https://www.google.com/search?q=%22HRSE%20KSA%22%20%22Riyadh%22%20organizer)
+- ["HRSE KSA" "Riyadh" tickets](https://www.google.com/search?q=%22HRSE%20KSA%22%20%22Riyadh%22%20tickets)
 
 ### Saudi Wood Expo 2026
 
@@ -73,15 +84,4 @@
 - ["Saudi Industrial Series" "Riyadh" official](https://www.google.com/search?q=%22Saudi%20Industrial%20Series%22%20%22Riyadh%22%20official)
 - ["Saudi Industrial Series" "Riyadh" organizer](https://www.google.com/search?q=%22Saudi%20Industrial%20Series%22%20%22Riyadh%22%20organizer)
 - ["Saudi Industrial Series" "Riyadh" tickets](https://www.google.com/search?q=%22Saudi%20Industrial%20Series%22%20%22Riyadh%22%20tickets)
-
-### Riyadh Social and Language Exchange (Make New Friends) ✨
-
-- [site:enjoy.sa "Riyadh Social and Language Exchange (Make New Friends) ✨" "Riyadh"](https://www.google.com/search?q=site%3Aenjoy.sa%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22)
-- [site:hub.misk.org.sa "Riyadh Social and Language Exchange (Make New Friends) ✨" "Riyadh"](https://www.google.com/search?q=site%3Ahub.misk.org.sa%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22)
-- [site:riyadh.sa "Riyadh Social and Language Exchange (Make New Friends) ✨" "Riyadh"](https://www.google.com/search?q=site%3Ariyadh.sa%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22)
-- [site:riyadhseason.com "Riyadh Social and Language Exchange (Make New Friends) ✨" "Riyadh"](https://www.google.com/search?q=site%3Ariyadhseason.com%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22)
-- [site:asda.gov.sa "Riyadh Social and Language Exchange (Make New Friends) ✨" "Riyadh"](https://www.google.com/search?q=site%3Aasda.gov.sa%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22)
-- ["Riyadh Social and Language Exchange (Make New Friends) ✨" "Riyadh" official](https://www.google.com/search?q=%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22%20official)
-- ["Riyadh Social and Language Exchange (Make New Friends) ✨" "Riyadh" organizer](https://www.google.com/search?q=%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22%20organizer)
-- ["Riyadh Social and Language Exchange (Make New Friends) ✨" "Riyadh" tickets](https://www.google.com/search?q=%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22%20tickets)
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T03:53:10.691Z",
+  "generated_at": "2026-07-08T08:54:26.726Z",
   "source_registry": "data/source_registry.json",
   "source_collection_report": "reports/source-collection-report.json",
   "totals": {
@@ -120,7 +120,7 @@
       "last_probe_score": -23,
       "last_probe_recommendation": "blocked-or-protected:fetch failed",
       "last_probe_blocked_reason": "fetch failed",
-      "known_candidates": 40,
+      "known_candidates": 41,
       "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
     },
     {
@@ -622,13 +622,13 @@
       "cadence": "weekly-discovery",
       "score": 44,
       "has_active_collector": false,
-      "last_collection_status": "skipped",
-      "last_extracted": 0,
+      "last_collection_status": "ok",
+      "last_extracted": 16,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 17,
+      "known_candidates": 16,
       "next_action": "Use only to discover leads; require official confirmation before promotion."
     },
     {
@@ -1264,16 +1264,16 @@
       "fetch_method": "manual-review",
       "ring": "evidence-monitor",
       "cadence": "monthly-evidence-check",
-      "score": 40,
+      "score": 59,
       "has_active_collector": false,
       "last_collection_status": "",
       "last_extracted": 0,
-      "last_probe_status": 404,
-      "last_probe_score": 0,
-      "last_probe_recommendation": "watch-or-evidence-only",
+      "last_probe_status": 200,
+      "last_probe_score": 46,
+      "last_probe_recommendation": "probe-hidden-api-or-html-table",
       "last_probe_blocked_reason": "",
       "known_candidates": 0,
-      "next_action": "Monitor for live event/detail pages; do not create public rows from summary or coming-soon pages."
+      "next_action": "Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible."
     },
     {
       "id": "jeddah-season",
@@ -1405,12 +1405,12 @@
       "score": 82,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 4,
+      "last_extracted": 5,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 4,
+      "known_candidates": 5,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -1479,7 +1479,7 @@
       "last_probe_score": -23,
       "last_probe_recommendation": "blocked-or-protected:fetch failed",
       "last_probe_blocked_reason": "fetch failed",
-      "known_candidates": 40,
+      "known_candidates": 41,
       "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
     },
     {

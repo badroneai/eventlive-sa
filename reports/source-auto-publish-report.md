@@ -1,23 +1,25 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-08T03:51:04.426Z
+- published_at: 2026-07-08T08:52:16.913Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 183
-- published_new: 1
+- candidates_seen: 184
+- published_new: 3
 - linked_existing: 137
-- blocked_remaining: 45
+- blocked_remaining: 44
 
 ## Blocked summary
 
-- publication gate source-evidence is not auto-publishable: 30
+- publication gate source-evidence is not auto-publishable: 29
 - possible duplicate already exists: event-esports-world-cup: 1
 - confidence public-listing is not auto-publishable: 13
 - possible duplicate already exists: event-leap-2026: 1
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45 | published | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-4 | معسكر تطوير تطبيقات الويب باستخدام لغة Python |
+| candidate-riyadh-city-events-pfl-mena-fight-night-20260710-0eafa4d0 | published | event-pfl-mena-fight-night | PFL MENA Fight Night |
+| candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45 | published | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-5 | معسكر تطوير تطبيقات الويب باستخدام لغة Python |
+| candidate-sfda-events-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال-20261005-34d08b48 | published | event-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال | دور الهيئة العامة للغذاء و الدواء في ضمان سلامة الاستخدام الامن لجهاز الماموجرام |
 | candidate-riyadh-city-events-poppy-playtime-20251010-b96ed7bc | linked-existing | event-poppy-playtime | already linked to catalog event |
 | candidate-riyadh-city-events-riyadh-season-blvd-city-20251010-d23bcbe8 | linked-existing | event-riyadh-season-blvd-city | already linked to catalog event |
 | candidate-visit-saudi-seasons-the-groves-20251105-b7362f59 | linked-existing | event-the-groves | already linked to catalog event |
@@ -169,7 +171,6 @@
 | candidate-moc-cultural-subportals-the-guidelines-for-culture-and-arts-in-the-public-realm-20260205-fbf08244 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eye-of-riyadh-events-esports-world-cup-20260706-13ed17c1 | blocked | - | possible duplicate already exists: event-esports-world-cup |
 | candidate-misk-hub-programs-application-deadline-2030-leaders-20260708-68dd4c4c | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-eventbrite-saudi-riyadh-social-and-language-exchange-make-new-friends-20260710-59e87f75 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-dubai-property-expo-in-al-khobar-17th-18th-july-2026-danube-20260717-2dd8b8b7 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eye-of-riyadh-events-oxford-future-of-real-estate-programme-20260805-7c9ee195 | blocked | - | confidence public-listing is not auto-publishable |
 | candidate-eye-of-riyadh-events-smart-data-ai-summit-20260826-f9946ea8 | blocked | - | confidence public-listing is not auto-publishable |

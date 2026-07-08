@@ -1,22 +1,32 @@
 {
-  "published_at": "2026-07-08T03:51:04.426Z",
+  "published_at": "2026-07-08T08:52:16.913Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 183,
+  "candidates_seen": 184,
   "totals": {
-    "candidates_seen": 183,
-    "published": 1,
+    "candidates_seen": 184,
+    "published": 3,
     "linked_existing": 137,
-    "blocked": 45,
-    "reconciled": 138
+    "blocked": 44,
+    "reconciled": 140
   },
   "published": [
     {
+      "candidate_id": "candidate-riyadh-city-events-pfl-mena-fight-night-20260710-0eafa4d0",
+      "event_id": "event-pfl-mena-fight-night",
+      "title": "PFL MENA Fight Night"
+    },
+    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45",
-      "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-4",
+      "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-5",
       "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python"
+    },
+    {
+      "candidate_id": "candidate-sfda-events-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال-20261005-34d08b48",
+      "event_id": "event-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال",
+      "title": "دور الهيئة العامة للغذاء و الدواء في ضمان سلامة الاستخدام الامن لجهاز الماموجرام"
     }
   ],
   "linked_existing": [
@@ -912,11 +922,6 @@
     {
       "candidate_id": "candidate-misk-hub-programs-application-deadline-2030-leaders-20260708-68dd4c4c",
       "title": "Application deadline: 2030 Leaders",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-eventbrite-saudi-riyadh-social-and-language-exchange-make-new-friends-20260710-59e87f75",
-      "title": "Riyadh Social and Language Exchange (Make New Friends) ✨",
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {

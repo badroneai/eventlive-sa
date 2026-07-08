@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-08T03:51:39.072Z",
+  "generated_at": "2026-07-08T08:52:50.645Z",
   "totals": {
-    "targets": 59,
-    "enriched": 59,
+    "targets": 60,
+    "enriched": 60,
     "fetched": 14,
-    "images": 44,
-    "fetch_failures": 45
+    "images": 45,
+    "fetch_failures": 46
   },
   "enriched": [
     {
@@ -257,6 +257,16 @@
       "fetched": true,
       "image": false,
       "fetch_reason": ""
+    },
+    {
+      "id": "event-pfl-mena-fight-night",
+      "title": "PFL MENA Fight Night",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31170",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
     },
     {
       "id": "event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م",
@@ -718,6 +728,12 @@
       "id": "event-esports-world-cup",
       "title": "Esports World Cup",
       "source_url": "https://riyadh.sa/en/moment/events/item/event/30169",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-pfl-mena-fight-night",
+      "title": "PFL MENA Fight Night",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31170",
       "reason": "fetch failed"
     },
     {

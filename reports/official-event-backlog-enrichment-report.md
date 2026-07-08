@@ -1,10 +1,10 @@
 # EventLive Official Event Backlog Enrichment
-- Generated at: 2026-07-08T03:51:39.072Z
-- Targets: 59
-- Enriched: 59
+- Generated at: 2026-07-08T08:52:50.645Z
+- Targets: 60
+- Enriched: 60
 - Fetched: 14
-- Images: 44
-- Fetch failures: 45
+- Images: 45
+- Fetch failures: 46
 
 | Source | Event | Method | Image | Fetch |
 |---|---|---:|---:|---:|
@@ -33,6 +33,7 @@
 | Saudi Universities and Technical Colleges | Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH | official-page-meta | no | yes |
 | Saudi Universities and Technical Colleges | Egypt Vs Argentina | official-page-meta | no | yes |
 | Saudi Universities and Technical Colleges | Quarter-Finals: Join the Celebration at the FIFA Fan Zone | official-page-meta | no | yes |
+| Riyadh City Events | PFL MENA Fight Night | approved-source-row | yes | fetch failed |
 | Monsha'at All Events | أسبوع العقار والمقاولات 12- 16 يوليو 2026م | approved-source-row | no | fetch failed |
 | Saudi Universities and Technical Colleges | Join us at KAUST Health for Respiratory Health Day | official-page-meta | no | yes |
 | Riyadh City Events | SAIF Summer Program | approved-source-row | yes | fetch failed |

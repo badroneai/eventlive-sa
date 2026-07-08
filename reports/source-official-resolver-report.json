@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-08T03:52:51.438Z",
+  "generated_at": "2026-07-08T08:54:05.082Z",
   "source_ops_report": "reports/source-ops-report.json",
   "source_registry": "data/source_registry.json",
   "totals": {
     "leads_seen": 10,
     "tasks": 6,
-    "high_priority": 4
+    "high_priority": 5
   },
   "tasks": [
     {
@@ -190,6 +190,99 @@
         {
           "query": "\"Global Proptech Summit 2026\" \"Riyadh\" tickets",
           "url": "https://www.google.com/search?q=%22Global%20Proptech%20Summit%202026%22%20%22Riyadh%22%20tickets"
+        }
+      ],
+      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
+    },
+    {
+      "lead_id": "candidate-eye-of-riyadh-events-hrse-ksa-20260830-6945a87a",
+      "title": "HRSE KSA",
+      "city": "Riyadh",
+      "starts_at": "2026-08-30T09:00:00+03:00",
+      "source_label": "Eye of Riyadh Events",
+      "discovery_quality": "strong-lead",
+      "discovery_score": 70,
+      "discovery_notes": "directory-source, saudi-location-signal, large-event-topic",
+      "resolver_priority": 115,
+      "target_sources": [
+        {
+          "id": "rfecc-whats-on",
+          "name": "RFECC What's On",
+          "url": "https://rfecc.sa/whats-on/",
+          "domain": "rfecc.sa",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 76
+        },
+        {
+          "id": "ricec-events",
+          "name": "Riyadh International Convention and Exhibition Center",
+          "url": "https://www.ricec.com/",
+          "domain": "ricec.com",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 76
+        },
+        {
+          "id": "dhahran-expo-calendar",
+          "name": "Dhahran Expo Calendar",
+          "url": "https://dhahranexpo.com.sa",
+          "domain": "dhahranexpo.com.sa",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 68
+        },
+        {
+          "id": "saudi-water-authority-events",
+          "name": "Saudi Water Authority Events",
+          "url": "https://www.swa.gov.sa/en/events",
+          "domain": "swa.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 66
+        },
+        {
+          "id": "sdaia-calendar-events",
+          "name": "SDAIA Calendar and Events",
+          "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
+          "domain": "sdaia.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 66
+        }
+      ],
+      "searches": [
+        {
+          "query": "site:rfecc.sa \"HRSE KSA\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Arfecc.sa%20%22HRSE%20KSA%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:ricec.com \"HRSE KSA\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aricec.com%20%22HRSE%20KSA%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:dhahranexpo.com.sa \"HRSE KSA\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22HRSE%20KSA%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:swa.gov.sa \"HRSE KSA\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aswa.gov.sa%20%22HRSE%20KSA%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:sdaia.gov.sa \"HRSE KSA\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22HRSE%20KSA%22%20%22Riyadh%22"
+        },
+        {
+          "query": "\"HRSE KSA\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22HRSE%20KSA%22%20%22Riyadh%22%20official"
+        },
+        {
+          "query": "\"HRSE KSA\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22HRSE%20KSA%22%20%22Riyadh%22%20organizer"
+        },
+        {
+          "query": "\"HRSE KSA\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22HRSE%20KSA%22%20%22Riyadh%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
@@ -469,99 +562,6 @@
         {
           "query": "\"Saudi Industrial Series\" \"Riyadh\" tickets",
           "url": "https://www.google.com/search?q=%22Saudi%20Industrial%20Series%22%20%22Riyadh%22%20tickets"
-        }
-      ],
-      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
-    },
-    {
-      "lead_id": "candidate-eventbrite-saudi-riyadh-social-and-language-exchange-make-new-friends-20260710-59e87f75",
-      "title": "Riyadh Social and Language Exchange (Make New Friends) ✨",
-      "city": "Riyadh",
-      "starts_at": "2026-07-10T18:00:00+03:00",
-      "source_label": "Eventbrite Saudi Arabia",
-      "discovery_quality": "strong-lead",
-      "discovery_score": 70,
-      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 87,
-      "target_sources": [
-        {
-          "id": "enjoy-saudi-events",
-          "name": "Enjoy Saudi Events",
-          "url": "https://enjoy.sa/en/events",
-          "domain": "enjoy.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 38
-        },
-        {
-          "id": "misk-hub-events",
-          "name": "Misk Hub Events",
-          "url": "https://hub.misk.org.sa/en/events/",
-          "domain": "hub.misk.org.sa",
-          "trust_level": "official",
-          "source_type": "organizer-calendar",
-          "score": 38
-        },
-        {
-          "id": "riyadh-city-events",
-          "name": "Riyadh City Events",
-          "url": "https://riyadh.sa/en/events/all",
-          "domain": "riyadh.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 38
-        },
-        {
-          "id": "riyadh-season",
-          "name": "Riyadh Season Official",
-          "url": "https://riyadhseason.com/en/explore",
-          "domain": "riyadhseason.com",
-          "trust_level": "official",
-          "source_type": "organizer-calendar",
-          "score": 38
-        },
-        {
-          "id": "aseer-season-asda",
-          "name": "Aseer Season / Asir Development Authority",
-          "url": "https://www.asda.gov.sa/",
-          "domain": "asda.gov.sa",
-          "trust_level": "official",
-          "source_type": "destination-calendar",
-          "score": 30
-        }
-      ],
-      "searches": [
-        {
-          "query": "site:enjoy.sa \"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aenjoy.sa%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:hub.misk.org.sa \"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ahub.misk.org.sa%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:riyadh.sa \"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ariyadh.sa%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:riyadhseason.com \"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ariyadhseason.com%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:asda.gov.sa \"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aasda.gov.sa%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22"
-        },
-        {
-          "query": "\"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22%20official"
-        },
-        {
-          "query": "\"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22%20organizer"
-        },
-        {
-          "query": "\"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."

@@ -1,7 +1,7 @@
 # EventLive Official Single-Session Activation
-- Generated at: 2026-07-08T03:52:50.695Z
+- Generated at: 2026-07-08T08:54:04.353Z
 - Max duration hours: 8
-- Activated: 13
+- Activated: 14
 - Skipped long events: 6
 
 | Source | Event | Duration | Type |
@@ -19,3 +19,4 @@
 | Saudi Food and Drug Authority Events | دور مقدمي الرعاية الصحية وضباط الاتصال في التعامل مع انذارات السلامة الصادرة من المركز الوطني لبلاغات الأجهزة والمستلزمات الطبية | 1h | official-online-workshop |
 | Saudi Food and Drug Authority Events | الإدراج في خطوات | 2h | official-online-workshop |
 | Saudi Food and Drug Authority Events | احتياطات الأمان عند استخدام مبيدات آفات الصحة العامة | 1h | official-online-workshop |
+| Saudi Food and Drug Authority Events | دور الهيئة العامة للغذاء و الدواء في ضمان سلامة الاستخدام الامن لجهاز الماموجرام | 1h | official-online-workshop |

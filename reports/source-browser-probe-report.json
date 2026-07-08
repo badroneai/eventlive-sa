@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T03:45:53.123Z",
+  "generated_at": "2026-07-08T08:46:50.667Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -29,14 +29,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 7955,
+      "duration_ms": 8150,
       "classification": "browser-network-api",
       "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
       "title": "Events",
       "text_bytes": 2679,
-      "html_bytes": 816012,
-      "html_snapshot": "data/raw/browser-probes/experience-alula-events-2026-07-08T03-45-53-123Z.html",
-      "screenshot": "data/raw/browser-probes/experience-alula-events-2026-07-08T03-45-53-123Z.png",
+      "html_bytes": 816010,
+      "html_snapshot": "data/raw/browser-probes/experience-alula-events-2026-07-08T08-46-50-667Z.html",
+      "screenshot": "data/raw/browser-probes/experience-alula-events-2026-07-08T08-46-50-667Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -189,14 +189,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 18633,
+      "duration_ms": 22043,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "Our programs | CODE | MCIT",
       "text_bytes": 5509,
-      "html_bytes": 57073,
-      "html_snapshot": "data/raw/browser-probes/code-mcit-programs-2026-07-08T03-45-53-123Z.html",
-      "screenshot": "data/raw/browser-probes/code-mcit-programs-2026-07-08T03-45-53-123Z.png",
+      "html_bytes": 57071,
+      "html_snapshot": "data/raw/browser-probes/code-mcit-programs-2026-07-08T08-46-50-667Z.html",
+      "screenshot": "data/raw/browser-probes/code-mcit-programs-2026-07-08T08-46-50-667Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -276,8 +276,8 @@
       "title": "",
       "text_bytes": 0,
       "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/ithra-events-2026-07-08T03-45-53-123Z.html",
-      "screenshot": "data/raw/browser-probes/ithra-events-2026-07-08T03-45-53-123Z.png",
+      "html_snapshot": "data/raw/browser-probes/ithra-events-2026-07-08T08-46-50-667Z.html",
+      "screenshot": "data/raw/browser-probes/ithra-events-2026-07-08T08-46-50-667Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -305,14 +305,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 9471,
+      "duration_ms": 9912,
       "classification": "browser-network-api",
       "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
       "title": "Misk Hub Events",
       "text_bytes": 2610,
-      "html_bytes": 248284,
-      "html_snapshot": "data/raw/browser-probes/misk-hub-events-2026-07-08T03-45-53-123Z.html",
-      "screenshot": "data/raw/browser-probes/misk-hub-events-2026-07-08T03-45-53-123Z.png",
+      "html_bytes": 248293,
+      "html_snapshot": "data/raw/browser-probes/misk-hub-events-2026-07-08T08-46-50-667Z.html",
+      "screenshot": "data/raw/browser-probes/misk-hub-events-2026-07-08T08-46-50-667Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -422,6 +422,16 @@
         {
           "method": "POST",
           "status": 200,
+          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_8ae5a73fe8545f2b5e9ef9390b16d7cb3f78d7109609080eba6daa0a5804b299\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783500446465.476124592909217026\"}",
+          "response_shape": "empty",
+          "preview": ""
+        },
+        {
+          "method": "POST",
+          "status": 200,
           "url": "https://hub.misk.org.sa/api/events/RenderLazyLoadAllEventsOfSeries",
           "content_type": "application/json",
           "resource_type": "xhr",
@@ -432,28 +442,38 @@
         {
           "method": "POST",
           "status": 200,
-          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_e99b092f8a4653a48710e2c5a36c4574462e6555e7c7f47c943e13186264c9e8\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783482385373.349389539960923398\"}",
-          "response_shape": "empty",
-          "preview": ""
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/d2418031542743a6992b2e5ecd14e53d/items/?frontend_timestamp=1783482384&frontend_sign=f3a422e3c3b3eedb3ce1ae0fbc17fcf0a64fbd4c",
+          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/685307747eca4ed3aa3d3fda5cafa1f3/items/?frontend_timestamp=1783500446&frontend_sign=db110d780392bad67e714cea7e23319c833f306d",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
           "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
-          "preview": "{\"recommId\": \"8dbbfaac242c7becb7c76129c7ce2388\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
+          "preview": "{\"recommId\": \"45d1d0ae471a7b17f3a0933143bbdcdd\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
         }
       ],
       "network_sample": [
         {
           "method": "POST",
           "status": 200,
+          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_8ae5a73fe8545f2b5e9ef9390b16d7cb3f78d7109609080eba6daa0a5804b299\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783500446465.476124592909217026\"}",
+          "response_shape": "empty",
+          "preview": ""
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_5d7eca7d10c5ee242ab9c4722c12f059e700ad402bf99dee92126fdfada8f49d\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783500446465.476124592909217026\"}",
+          "response_shape": "empty",
+          "preview": ""
+        },
+        {
+          "method": "POST",
+          "status": 200,
           "url": "https://hub.misk.org.sa/api/events/RenderLazyLoadAllEventsOfSeries",
           "content_type": "application/json",
           "resource_type": "xhr",
@@ -464,32 +484,12 @@
         {
           "method": "POST",
           "status": 200,
-          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_e99b092f8a4653a48710e2c5a36c4574462e6555e7c7f47c943e13186264c9e8\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783482385373.349389539960923398\"}",
-          "response_shape": "empty",
-          "preview": ""
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/d2418031542743a6992b2e5ecd14e53d/items/?frontend_timestamp=1783482384&frontend_sign=f3a422e3c3b3eedb3ce1ae0fbc17fcf0a64fbd4c",
+          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/685307747eca4ed3aa3d3fda5cafa1f3/items/?frontend_timestamp=1783500446&frontend_sign=db110d780392bad67e714cea7e23319c833f306d",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
           "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
-          "preview": "{\"recommId\": \"8dbbfaac242c7becb7c76129c7ce2388\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_474fa1d294f5cd271bf30b5cf7e041568e539c745a54d365b4af2489b3b52e02\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783482385373.349389539960923398\"}",
-          "response_shape": "empty",
-          "preview": ""
+          "preview": "{\"recommId\": \"45d1d0ae471a7b17f3a0933143bbdcdd\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
         }
       ]
     },
@@ -502,14 +502,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 16841,
+      "duration_ms": 15965,
       "classification": "browser-network-api",
       "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
       "title": "المعارض والفعاليات - JCC - Jeddah Chamber",
-      "text_bytes": 2344,
-      "html_bytes": 1561532,
-      "html_snapshot": "data/raw/browser-probes/jcci-events-center-2026-07-08T03-45-53-123Z.html",
-      "screenshot": "data/raw/browser-probes/jcci-events-center-2026-07-08T03-45-53-123Z.png",
+      "text_bytes": 2257,
+      "html_bytes": 1561314,
+      "html_snapshot": "data/raw/browser-probes/jcci-events-center-2026-07-08T08-46-50-667Z.html",
+      "screenshot": "data/raw/browser-probes/jcci-events-center-2026-07-08T08-46-50-667Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -610,16 +610,6 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-collapse-support-web%402.0.12%2Findex",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
-        },
-        {
-          "method": "GET",
-          "status": 200,
           "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-spa-web%405.0.28%2Finit",
           "content_type": "application/json",
           "resource_type": "fetch",
@@ -630,7 +620,17 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-dropdown-support-web%402.0.9%2Findex",
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-collapse-support-web%402.0.12%2Findex",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-alert-support-web%402.0.9%2Findex",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
@@ -650,7 +650,7 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-alert-support-web%402.0.9%2Findex",
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-dropdown-support-web%402.0.9%2Findex",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
@@ -692,32 +692,12 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-collapse-support-web%402.0.12%2Findex",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
-        },
-        {
-          "method": "GET",
-          "status": 200,
           "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-spa-web%405.0.28%2Finit",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
           "response_shape": "json-like-invalid",
           "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-spa-web@5.0.28\\/route\\/Route\":\"\\/o\\/js\\/resolved-module\\/frontend-js-spa-web@5.0.28\\/route\\/Route\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-spa-web@5.0.28\\/screen\\/RenderURLScreen\":\"\\/o\\/js\\/resolved-module\\/frontend-js-spa-web@5.0.28\\/screen\\/RenderURLScreen\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_fie"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-dropdown-support-web%402.0.9%2Findex",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
         },
         {
           "method": "GET",
@@ -742,7 +722,7 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-tabs-support-web%402.0.11%2Findex",
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-collapse-support-web%402.0.12%2Findex",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
@@ -762,6 +742,26 @@
         {
           "method": "GET",
           "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-tabs-support-web%402.0.11%2Findex",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-dropdown-support-web%402.0.9%2Findex",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
+        },
+        {
+          "method": "GET",
+          "status": 200,
           "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=portal-template-react-renderer-impl%405.0.7%2Frender.es%2Cdynamic-data-mapping-form-web%404.0.101%2Fadmin%2Fjs%2FFormView",
           "content_type": "application/json",
           "resource_type": "fetch",
@@ -772,7 +772,7 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/dynamic-data-mapping-form-field-types?p_auth=SaGZCN",
+          "url": "https://www.jcci.org.sa/o/dynamic-data-mapping-form-field-types?p_auth=SZusy9",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
@@ -792,22 +792,22 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=dynamic-data-mapping-form-field-type%406.0.106%2FRichText%2FRichText.es",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"pathMap\":{\"data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\",\"data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\",\"frontend-editor-ckeditor-web@5.0.59\\/css\\/main.scss\":\"\\/o\\/js\\/resolved-module\\/frontend-editor-ckeditor-web@5.0.59\\/css\\/main.scss\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\":\"\\/o\\/js\\/resolved-module\\/frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRe"
-        },
-        {
-          "method": "GET",
-          "status": 200,
           "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=dynamic-data-mapping-form-field-type%406.0.106%2FText%2FText.es",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
           "response_shape": "json-like-invalid",
           "preview": "{\"pathMap\":{\"data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\",\"data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\":\"\\/o\\/js\\/resolved-module\\/frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/lifera"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=dynamic-data-mapping-form-field-type%406.0.106%2FRichText%2FRichText.es",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\",\"data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\",\"frontend-editor-ckeditor-web@5.0.59\\/css\\/main.scss\":\"\\/o\\/js\\/resolved-module\\/frontend-editor-ckeditor-web@5.0.59\\/css\\/main.scss\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\":\"\\/o\\/js\\/resolved-module\\/frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRe"
         },
         {
           "method": "GET",
@@ -840,14 +840,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 17017,
+      "duration_ms": 15973,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "",
       "text_bytes": 152819,
       "html_bytes": 152982,
-      "html_snapshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-07-08T03-45-53-123Z.html",
-      "screenshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-07-08T03-45-53-123Z.png",
+      "html_snapshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-07-08T08-46-50-667Z.html",
+      "screenshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-07-08T08-46-50-667Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -884,14 +884,14 @@
       "status": "ok",
       "http_status": 405,
       "navigation_error": "",
-      "duration_ms": 5824,
+      "duration_ms": 5906,
       "classification": "empty-or-shell",
       "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
       "title": "",
       "text_bytes": 536,
       "html_bytes": 687,
-      "html_snapshot": "data/raw/browser-probes/saudi-space-agency-events-2026-07-08T03-45-53-123Z.html",
-      "screenshot": "data/raw/browser-probes/saudi-space-agency-events-2026-07-08T03-45-53-123Z.png",
+      "html_snapshot": "data/raw/browser-probes/saudi-space-agency-events-2026-07-08T08-46-50-667Z.html",
+      "screenshot": "data/raw/browser-probes/saudi-space-agency-events-2026-07-08T08-46-50-667Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -930,14 +930,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 8461,
+      "duration_ms": 8996,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "Events | غرفة مكة المكرمة",
       "text_bytes": 4668,
-      "html_bytes": 73833,
-      "html_snapshot": "data/raw/browser-probes/makkah-chamber-events-2026-07-08T03-45-53-123Z.html",
-      "screenshot": "data/raw/browser-probes/makkah-chamber-events-2026-07-08T03-45-53-123Z.png",
+      "html_bytes": 73955,
+      "html_snapshot": "data/raw/browser-probes/makkah-chamber-events-2026-07-08T08-46-50-667Z.html",
+      "screenshot": "data/raw/browser-probes/makkah-chamber-events-2026-07-08T08-46-50-667Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -1042,9 +1042,9 @@
           "url": "https://makkahcci.org.sa/website/translations",
           "content_type": "application/json",
           "resource_type": "xhr",
-          "request_post_data": "{\"jsonrpc\":\"2.0\",\"method\":\"call\",\"params\":{\"mods\":[],\"lang\":null},\"id\":686323901}",
+          "request_post_data": "{\"jsonrpc\":\"2.0\",\"method\":\"call\",\"params\":{\"mods\":[],\"lang\":null},\"id\":333243376}",
           "response_shape": "json-like-invalid",
-          "preview": "{\"jsonrpc\": \"2.0\", \"id\": 686323901, \"result\": {\"lang_parameters\": {\"id\": 3, \"name\": \"Arabic / \\u0627\\u0644\\u0652\\u0639\\u064e\\u0631\\u064e\\u0628\\u064a\\u0651\\u0629\", \"direction\": \"rtl\", \"date_format\": \"%d %b, %Y\", \"time_format\": \"%H:%M:%S\", \"grouping\": \"[3,0]\", \"decimal_point\": \".\", \"thousands_sep\": \",\", \"week_start\": 6}, \"modules\": {\"im_livechat\": {\"messages\": [{\"id\": \"Visitor\", \"string\": \"\\u0627\\u0644\\u0632\\u0627\\u0626\\u0631\"}, {\"id\": \"Ask something ...\", \"string\": \"\\u0627\\u0633\\u0623\\u0644 \\u0639\\u0646 \\u0634\\u064a\\u0621...\"}, {\"id\": \"Chat with one of our collaborators\", \"string\": \"\\u062a\\u062d\\u062f\\u062b \\u0645\\u0639 \\u0623\\u062d\\u062f \\u0645\\u0645\\u062b\\u0644\\u064a\\u0646\\u0627\"}, {\"id\": \"Did we correctly answer your question ?\", \"string\": \"\\u0647\\u0644 \\u0623\\u062c\\u0628\\u0646\\u0627 \\u0639\\u0644\\u0649 \\u0633\\u0624\\u0627\\u0644\\u0643 \\u0628\\u0634\\u0643\\u0644 \\u0635\\u062d\\u064a\\u062d\\u061f\"}, {\"id\": \"Explain your note\", \"string\": \"\\u0634\\u0631\\u062d \\u0645\\u0644\\u0627\\u062d\\u0638\\u062a\\u0643\"}, {\"id\": \"How may I help you?\", \"string\": \"\\u0643\\u064a\\u0641 \\u064a\\u0645\\u0643\\u0646\\u0646\\u064a \\u0645\\u0633\\u0627\\u0639\\u062f\\u062a\\u0643\\u061f\"}, {\"id\": \"I don't want to rate this conversation\", \"string\": \"\\u0644\\u0627 \\u0623\\u0631\\u064a\\u062f \\u062a\\u0642\\u064a\\u064a\\u0645 \\u0647\\u0630\\u0647 \\u0627\\u0644\\u0645\\u062d\\u0627\\u062f\\u062b\\u0629\"}, {\"id\": \"Livechat\", \"string\": \"\\u0627\\u0644\\u062f\\u0631\\u062f\\u0634\\u0629 \\u0627\\u0644\\u062d\\u064a\\u0629\"}, {\"id\": \"None of our collaborators seems to be available, please try again later.\", \"string\": \"\\u064a\\u0628\\u062f\\u0648 \\u0623\\u0646 \\u062c\\u0645\\u064a\\u0639 \\u0645\\u0645\\u062b\\u0644\\u064a\\u0646\\u0627 \\u0645\\u0634\\u063a\\u0648\\u0644\\u0648\\u0646 \\u0627\\u0644\\u0622\\u0646\\u060c \\u0628\\u0631\\u062c\\u0627\\u0621 \\u0627\\u0644\\u0645\\u062d\\u062"
+          "preview": "{\"jsonrpc\": \"2.0\", \"id\": 333243376, \"result\": {\"lang_parameters\": {\"id\": 3, \"name\": \"Arabic / \\u0627\\u0644\\u0652\\u0639\\u064e\\u0631\\u064e\\u0628\\u064a\\u0651\\u0629\", \"direction\": \"rtl\", \"date_format\": \"%d %b, %Y\", \"time_format\": \"%H:%M:%S\", \"grouping\": \"[3,0]\", \"decimal_point\": \".\", \"thousands_sep\": \",\", \"week_start\": 6}, \"modules\": {\"im_livechat\": {\"messages\": [{\"id\": \"Visitor\", \"string\": \"\\u0627\\u0644\\u0632\\u0627\\u0626\\u0631\"}, {\"id\": \"Ask something ...\", \"string\": \"\\u0627\\u0633\\u0623\\u0644 \\u0639\\u0646 \\u0634\\u064a\\u0621...\"}, {\"id\": \"Chat with one of our collaborators\", \"string\": \"\\u062a\\u062d\\u062f\\u062b \\u0645\\u0639 \\u0623\\u062d\\u062f \\u0645\\u0645\\u062b\\u0644\\u064a\\u0646\\u0627\"}, {\"id\": \"Did we correctly answer your question ?\", \"string\": \"\\u0647\\u0644 \\u0623\\u062c\\u0628\\u0646\\u0627 \\u0639\\u0644\\u0649 \\u0633\\u0624\\u0627\\u0644\\u0643 \\u0628\\u0634\\u0643\\u0644 \\u0635\\u062d\\u064a\\u062d\\u061f\"}, {\"id\": \"Explain your note\", \"string\": \"\\u0634\\u0631\\u062d \\u0645\\u0644\\u0627\\u062d\\u0638\\u062a\\u0643\"}, {\"id\": \"How may I help you?\", \"string\": \"\\u0643\\u064a\\u0641 \\u064a\\u0645\\u0643\\u0646\\u0646\\u064a \\u0645\\u0633\\u0627\\u0639\\u062f\\u062a\\u0643\\u061f\"}, {\"id\": \"I don't want to rate this conversation\", \"string\": \"\\u0644\\u0627 \\u0623\\u0631\\u064a\\u062f \\u062a\\u0642\\u064a\\u064a\\u0645 \\u0647\\u0630\\u0647 \\u0627\\u0644\\u0645\\u062d\\u0627\\u062f\\u062b\\u0629\"}, {\"id\": \"Livechat\", \"string\": \"\\u0627\\u0644\\u062f\\u0631\\u062f\\u0634\\u0629 \\u0627\\u0644\\u062d\\u064a\\u0629\"}, {\"id\": \"None of our collaborators seems to be available, please try again later.\", \"string\": \"\\u064a\\u0628\\u062f\\u0648 \\u0623\\u0646 \\u062c\\u0645\\u064a\\u0639 \\u0645\\u0645\\u062b\\u0644\\u064a\\u0646\\u0627 \\u0645\\u0634\\u063a\\u0648\\u0644\\u0648\\u0646 \\u0627\\u0644\\u0622\\u0646\\u060c \\u0628\\u0631\\u062c\\u0627\\u0621 \\u0627\\u0644\\u0645\\u062d\\u062"
         }
       ]
     }

@@ -1,6 +1,6 @@
 # EventLive Source Ingestion Plan
 
-Generated at: 2026-07-08T03:53:10.691Z
+Generated at: 2026-07-08T08:54:26.726Z
 
 ## Executive Model
 
@@ -74,7 +74,7 @@ EventLive should not treat all registered sources equally. The operating model i
 | moc-cultural-subportals | error | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | discover-aseer-events | ok | 1 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | saudi-water-authority-events | ok | 8 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| sfda-events | ok | 4 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
+| sfda-events | ok | 5 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | sdaia-calendar-events | error | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | makkah-chamber-events | ok | 0 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | asharqia-chamber-events | ok | 2 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
@@ -127,7 +127,7 @@ EventLive should not treat all registered sources equally. The operating model i
 | 39 | discover-aseer-events | active-collector | daily | 91 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | 40 | diriyah-season | evidence-monitor | monthly-evidence-check | 59 | probe-hidden-api-or-html-table | Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible. |
 | 41 | ricec-events | venue-dedupe | weekly-dedupe-check | 31 | blocked-or-protected:fetch failed | Do not scrape now; latest probe is blocked-or-protected:fetch failed. Keep as partnership, browser/API investigation, or evidence lane. |
-| 42 | aseer-season-asda | evidence-monitor | monthly-evidence-check | 40 | watch-or-evidence-only | Monitor for live event/detail pages; do not create public rows from summary or coming-soon pages. |
+| 42 | aseer-season-asda | evidence-monitor | monthly-evidence-check | 59 | probe-hidden-api-or-html-table | Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible. |
 | 43 | jeddah-season | evidence-monitor | monthly-evidence-check | 9 | blocked-or-protected:fetch failed | Do not scrape now; latest probe is blocked-or-protected:fetch failed. Keep as partnership, browser/API investigation, or evidence lane. |
 | 44 | saudi-water-authority-events | active-collector | daily | 98 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | 45 | saudi-university-events | evidence-monitor | monthly-evidence-check | 54 | probe-hidden-api-or-html-table | Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible. |

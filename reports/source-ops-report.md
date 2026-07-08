@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-07-08T03:53:10.988Z
+- generated_at: 2026-07-08T08:54:27.019Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -13,14 +13,14 @@
 - Sources in registry: 66
 - Sources attempted in latest collection: 34
 - Collection coverage: 52%
-- Healthy sources: 15
+- Healthy sources: 16
 - Zero-yield sources: 9
 - High-priority unattempted sources: 3
-- Candidates: 183
+- Candidates: 184
 - Actionable candidates: 0
 - Ready for review: 0
 - Ready for catalog promotion: 0
-- Linked to catalog from candidates: 138
+- Linked to catalog from candidates: 140
 - Stale unpublished candidates: 0
 - Duplicate risk: 0
 - Recommendation: استخدم أقوى مرشحي الاكتشاف لبناء مطابقة آلية مع مصادر رسمية؛ لا تنشر مصدر اكتشاف منفرداً.
@@ -28,12 +28,12 @@
 ## Candidate Funnel
 
 - review_status.evidence-captured: 27
-- review_status.approved-for-catalog: 138
-- review_status.new: 18
-- publication_gate.source-evidence: 30
-- publication_gate.catalog-review: 138
+- review_status.approved-for-catalog: 140
+- review_status.new: 17
+- publication_gate.source-evidence: 29
+- publication_gate.catalog-review: 140
 - publication_gate.duplicate-review: 15
-- discovery_quality.strong-lead: 28
+- discovery_quality.strong-lead: 27
 - discovery_quality.weak-lead: 1
 - discovery_quality.watch-lead: 3
 
@@ -53,9 +53,9 @@
 | Academic Excellence in Architecture and Design Education | Ministry of Culture Commission Calendars | Saudi Arabia | - | 0 | - | The Architecture and Design Café (Ministry of Culture Commission Calendars, 80) |
 | Skill Development Initiative | Ministry of Culture Commission Calendars | Riyadh | - | 0 | - | The Continuing Professional Development Initiative (Ministry of Culture Commission Calendars, 75) |
 | The Continuing Professional Development Initiative | Ministry of Culture Commission Calendars | Saudi Arabia | - | 0 | - | Skill Development Initiative (Ministry of Culture Commission Calendars, 75) |
-| Riyadh Social and Language Exchange (Make New Friends) ✨ | Eventbrite Saudi Arabia | Riyadh | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
 | Dubai Property Expo in Al Khobar | Eventbrite Saudi Arabia | Khobar | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
 | Smart Data & AI Summit | Eye of Riyadh Events | Riyadh | strong-lead | 70 | directory-source, saudi-location-signal, large-event-topic | - |
+| HRSE KSA | Eye of Riyadh Events | Riyadh | strong-lead | 70 | directory-source, saudi-location-signal, large-event-topic | - |
 
 ## Source Health
 
@@ -74,7 +74,7 @@
 | 11 | RFECC What's On | healthy | 6 | 6 | استمر بالمراجعة والتكرار قبل النشر. |
 | 12 | Eye of Riyadh Events | collection-error | 0 | 15 | Discovery-only source unavailable in this run: HTTP 403 |
 | 13 | 10times Saudi Arabia | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 14 | Eventbrite Saudi Arabia | collection-error | 0 | 17 | Discovery-only source unavailable in this run: HTTP 405 |
+| 14 | Eventbrite Saudi Arabia | healthy | 16 | 16 | استمر بالمراجعة والتكرار قبل النشر. |
 | 15 | Platinumlist Jeddah Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 16 | Tuwaiq Academy Bootcamps and Programs | healthy | 12 | 18 | استمر بالمراجعة والتكرار قبل النشر. |
 | 17 | Future Skills MCIT Catalogue | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |
@@ -108,10 +108,10 @@
 | 45 | Saudi Universities and Technical Colleges | healthy | 6 | 6 | استمر بالمراجعة والتكرار قبل النشر. |
 | 46 | ExpoFP and Eventseye Saudi Trade Shows | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 47 | Meetup and Facebook Events Saudi Arabia | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 48 | Saudi Food and Drug Authority Events | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |
+| 48 | Saudi Food and Drug Authority Events | healthy | 5 | 5 | استمر بالمراجعة والتكرار قبل النشر. |
 | 49 | Saudi Contractors Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 50 | Saudi Winter Events Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 51 | Riyadh City Events | healthy | 40 | 40 | استمر بالمراجعة والتكرار قبل النشر. |
+| 51 | Riyadh City Events | healthy | 40 | 41 | استمر بالمراجعة والتكرار قبل النشر. |
 | 52 | Monsha'at Academy Programs | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 53 | General Entertainment Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 54 | SDAIA Calendar and Events | collection-error | 0 | 2 | fetch failed |
