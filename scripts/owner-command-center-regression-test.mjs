@@ -42,10 +42,15 @@ assert(commandCenter.gates.some((gate) => gate.name === 'Design OS'), 'design ga
 assert(commandCenter.gates.some((gate) => gate.name === '23-Gate Delivery Standard'), '23-gate delivery standard missing');
 
 const analytics = readJson('reports/analytics-status.json');
+const analyticsMd = fs.readFileSync(path.join(reportsDir, 'analytics-status.md'), 'utf8');
 assert(analytics.privacy?.cookies === false, 'analytics must remain cookieless');
 assert(analytics.privacy?.pii === false, 'analytics must not collect PII');
 assert(analytics.owner_excluded_paths?.includes('events.json'), 'owner/raw JSON exclusion missing');
 assert(analytics.tracked_events?.includes('directions_clicked'), 'directions event missing');
+assert(analytics.instrumentation_status === 'PASS', 'analytics instrumentation status missing');
+assert(['CONFIRMED', 'NEEDS_PROVIDER_SETUP'].includes(analytics.dashboard_status), 'analytics dashboard status missing');
+assert(typeof analytics.dashboard_setup_required === 'boolean', 'analytics dashboard setup flag missing');
+assert(/404/.test(analyticsMd), 'analytics owner note must explain Plausible 404');
 
 const harvest = readJson('reports/source-harvest-os-status.json');
 assert(harvest.operating_rule?.includes('Raw collection is not publication'), 'harvest operating rule missing');

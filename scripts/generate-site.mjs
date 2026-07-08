@@ -2549,10 +2549,15 @@ function writeOwnerStatusPage(events) {
       provider: analytics.provider || 'plausible',
       domain: analytics.domain || platformDomain,
       status: analytics.status || 'INSTRUMENTED',
+      instrumentation_status: analytics.instrumentation_status || analytics.status || 'INSTRUMENTED',
       dashboard_url: analytics.dashboard_url || `https://plausible.io/${analytics.domain || platformDomain}`,
+      dashboard_login_url: analytics.dashboard_login_url || `https://plausible.io/login?return_to=%2F${encodeURIComponent(analytics.domain || platformDomain)}`,
+      dashboard_status: analytics.dashboard_status || 'NEEDS_PROVIDER_SETUP',
+      dashboard_setup_required: analytics.dashboard_setup_required !== false,
+      dashboard_note: analytics.dashboard_note || 'إذا ظهرت صفحة 404 في Plausible فهذا يعني أن لوحة الدومين تحتاج إنشاء أو تسجيل دخول بحساب المالك.',
       tracked_events: analytics.tracked_events || [],
       privacy: analytics.privacy || { cookies: false, pii: false },
-      note: 'أرقام الزوار الحقيقية تقرأ من لوحة مزود التحليلات. هذه الصفحة تثبت أن التتبع مزروع وتعرض الرابط التشغيلي.'
+      note: 'هذه الصفحة تثبت أن التتبع مزروع في الصفحات العامة. أرقام الزوار الحقيقية تظهر بعد تفعيل لوحة مزود التحليلات للدومين.'
     },
     source_sync: {
       last_run_at: runState.generated_at || sourceOps.generated_at || '',
@@ -2581,6 +2586,12 @@ function writeOwnerStatusPage(events) {
       events_json: './events.json'
     }
   };
+  const analyticsDashboardReady = status.analytics.dashboard_status === 'CONFIRMED';
+  const analyticsDashboardHref = analyticsDashboardReady ? status.analytics.dashboard_url : status.analytics.dashboard_login_url;
+  const analyticsDashboardLabel = analyticsDashboardReady ? 'فتح لوحة الزيارات' : 'تسجيل الدخول/إعداد Plausible';
+  const analyticsStatusCopy = analyticsDashboardReady
+    ? 'لوحة الزيارات مؤكدة ومربوطة بالدومين.'
+    : 'التتبع مزروع في الصفحات العامة، لكن لوحة الأرقام لم تؤكد بعد. ظهور 404 في Plausible يعني إنشاء موقع eventme.live داخل Plausible أو الدخول بالحساب المالك.';
   writeJson('owner-status.json', status);
   const canonical = absoluteUrl('owner-status.html');
   const html = `<!doctype html>
@@ -2593,9 +2604,9 @@ function writeOwnerStatusPage(events) {
 <body>
 ${header('./')}
 <main>
-  <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span>للمالك فقط</span><h1>حالة التشغيل والقياس</h1><p class="lead">افتح هذه الصفحة بعد النشر لمعرفة آخر جلب دوري، كم نشر، كم بقي محجوبًا، وهل القياس مزروع. أرقام الزوار التفصيلية تظهر في لوحة Plausible.</p><div class="signal-strip"><div class="signal"><span>فعاليات منشورة</span><b>${status.catalog.public_events}</b></div><div class="signal"><span>نشر جديد آخر دورة</span><b>${status.source_sync.published_new}</b></div><div class="signal"><span>ترقية ثانوية</span><b>${status.source_sync.secondary_promoted}</b></div><div class="signal"><span>جداول حية</span><b>${status.catalog.live_ready}</b></div></div></div></section>
+  <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span>للمالك فقط</span><h1>حالة التشغيل والقياس</h1><p class="lead">افتح هذه الصفحة بعد النشر لمعرفة آخر جلب دوري، كم نشر، كم بقي محجوبًا، وهل القياس مزروع. أرقام الزوار التفصيلية لا تظهر إلا بعد تفعيل لوحة Plausible للدومين بحساب المالك.</p><div class="signal-strip"><div class="signal"><span>فعاليات منشورة</span><b>${status.catalog.public_events}</b></div><div class="signal"><span>نشر جديد آخر دورة</span><b>${status.source_sync.published_new}</b></div><div class="signal"><span>ترقية ثانوية</span><b>${status.source_sync.secondary_promoted}</b></div><div class="signal"><span>جداول حية</span><b>${status.catalog.live_ready}</b></div></div></div></section>
   <section class="section"><div class="wrap grid">
-    <article class="activation-card"><h2>الزيارات والتحليلات</h2><p>المزود: <strong>${escapeHtml(status.analytics.provider)}</strong></p><p>الدومين: <strong>${escapeHtml(status.analytics.domain)}</strong></p><p>الخصوصية: بدون كوكيز وبدون بيانات شخصية حسب إعدادات التقرير.</p><div class="activation-actions"><a class="cta" href="${escapeHtml(status.analytics.dashboard_url)}" target="_blank" rel="noopener">فتح لوحة الزيارات</a><a class="cta" href="./owner-status.json">بيانات الصفحة JSON</a></div></article>
+    <article class="activation-card"><h2>الزيارات والتحليلات</h2><p>حالة الزر: <strong>${escapeHtml(status.analytics.dashboard_status)}</strong></p><p>المزود: <strong>${escapeHtml(status.analytics.provider)}</strong></p><p>الدومين: <strong>${escapeHtml(status.analytics.domain)}</strong></p><p>الخصوصية: بدون كوكيز وبدون بيانات شخصية حسب إعدادات التقرير.</p><p><strong>${escapeHtml(analyticsStatusCopy)}</strong></p><div class="activation-actions"><a class="cta" href="${escapeHtml(analyticsDashboardHref)}" target="_blank" rel="noopener">${escapeHtml(analyticsDashboardLabel)}</a><a class="cta" href="./owner-status.json">بيانات الصفحة JSON</a></div></article>
     <article class="activation-card"><h2>آخر جلب دوري</h2><p>آخر تقرير: <strong>${escapeHtml(status.source_sync.last_run_at || 'غير متاح')}</strong></p><p>مصادر منتجة: <strong>${status.source_sync.productive_sources}</strong> · أخطاء: <strong>${status.source_sync.collector_errors}</strong> · صفرية: <strong>${status.source_sync.zero_yield}</strong></p><p>مرشحون: <strong>${status.source_sync.candidates_seen}</strong> · منشور جديد: <strong>${status.source_sync.published_new}</strong> · مربوط بموجود: <strong>${status.source_sync.linked_existing}</strong></p><div class="activation-actions"><a class="cta" href="./source-health.html">صحة المصادر</a><a class="cta" href="./source-coverage-gaps.html">فجوات التغطية</a></div></article>
   </div></section>
   <section class="section"><div class="wrap"><h2>ماذا أراقب؟</h2>${operationalTable(['المؤشر', 'القيمة', 'متى أقلق؟'], [

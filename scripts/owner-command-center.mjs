@@ -280,6 +280,9 @@ function buildAnalyticsStatus() {
   const provider = process.env.EVENTLIVE_ANALYTICS_PROVIDER || 'plausible';
   const domain = process.env.EVENTLIVE_ANALYTICS_DOMAIN || 'eventme.live';
   const dashboardUrl = process.env.EVENTLIVE_ANALYTICS_DASHBOARD_URL || `https://plausible.io/${domain}`;
+  const dashboardConfirmed = process.env.EVENTLIVE_ANALYTICS_CONFIRMED === 'true';
+  const dashboardStatus = dashboardConfirmed ? 'CONFIRMED' : 'NEEDS_PROVIDER_SETUP';
+  const dashboardLoginUrl = `https://plausible.io/login?return_to=%2F${encodeURIComponent(domain)}`;
   const trackedEvents = [
     'page_view',
     'search_used',
@@ -302,9 +305,16 @@ function buildAnalyticsStatus() {
     schema: 'eventlive.analytics-status.v1',
     generated_at: generatedAt,
     status: 'PASS',
+    instrumentation_status: 'PASS',
     provider,
     domain,
     dashboard_url: dashboardUrl,
+    dashboard_login_url: dashboardLoginUrl,
+    dashboard_status: dashboardStatus,
+    dashboard_setup_required: !dashboardConfirmed,
+    dashboard_note: dashboardConfirmed
+      ? 'لوحة Plausible مؤكدة ومربوطة بالدومين.'
+      : 'إذا ظهرت صفحة 404 في Plausible فهذا يعني غالبا أن موقع eventme.live لم يضف بعد داخل Plausible أو أنك لست داخل حساب مالك اللوحة. التتبع مزروع في الموقع، لكن أرقام الزيارات تحتاج تفعيل اللوحة من مزود التحليلات.',
     privacy: {
       cookies: false,
       pii: false,
@@ -325,11 +335,19 @@ function buildAnalyticsStatus() {
     '',
     `- Generated at: ${generatedAt}`,
     `- Status: ${report.status}`,
+    `- Instrumentation status: ${report.instrumentation_status}`,
     `- Provider: ${provider}`,
     `- Domain: ${domain}`,
     `- Dashboard: ${dashboardUrl}`,
+    `- Dashboard status: ${dashboardStatus}`,
+    `- Dashboard setup required: ${report.dashboard_setup_required ? 'yes' : 'no'}`,
     `- Cookies: ${report.privacy.cookies ? 'yes' : 'no'}`,
     `- PII: ${report.privacy.pii ? 'yes' : 'no'}`,
+    '',
+    '## Dashboard Activation Note',
+    '',
+    `- ${report.dashboard_note}`,
+    `- Login/setup link: ${dashboardLoginUrl}`,
     '',
     '## Tracked Events',
     '',
@@ -342,7 +360,7 @@ function buildAnalyticsStatus() {
     '## Owner Reading Path',
     '',
     '- افتح `owner-status.html` لمعرفة حالة الجلب والقياس من داخل الموقع.',
-    '- افتح لوحة المزود أعلاه لقراءة أرقام الزوار الفعلية والمصادر والصفحات.',
+    '- بعد إنشاء موقع `eventme.live` داخل Plausible أو الدخول بحساب المالك، افتح لوحة المزود أعلاه لقراءة أرقام الزوار الفعلية والمصادر والصفحات.',
     ''
   ].join('\n'));
   return report;
