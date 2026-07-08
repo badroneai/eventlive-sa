@@ -16,7 +16,12 @@ const expectedPages = [
   'guide-riyadh-events-live.html',
   'guide-online-tech-courses-saudi.html',
   'guide-summer-events-saudi.html',
-  'guide-ended-events-value.html'
+  'guide-ended-events-value.html',
+  'saudi-events-today.html',
+  'riyadh-events-today.html',
+  'jeddah-events.html',
+  'online-tech-courses.html',
+  'saudi-events-faq.html'
 ];
 const ownerOnlyPages = new Set(['methodology.html', 'sources.html', 'trust.html']);
 
@@ -36,7 +41,7 @@ for (const page of expectedPages) {
   }
 
   const html = fs.readFileSync(filePath, 'utf8');
-  assert.match(html, /<nav class="breadcrumbs"/, `${page} must render visible breadcrumbs`);
+  assert.match(html, /<nav\b[^>]*class="[^"]*\bbreadcrumbs\b[^"]*"/, `${page} must render visible breadcrumbs`);
   assert.match(html, /انتقل للمنصة الحية/, `${page} must keep the visitor action panel`);
 
   const ld = jsonLdScripts(html);
@@ -49,6 +54,13 @@ for (const page of expectedPages) {
   assert.ok(breadcrumb, `${page} must include BreadcrumbList JSON-LD`);
   assert.ok(Array.isArray(breadcrumb.itemListElement), `${page} breadcrumb must list items`);
   assert.equal(breadcrumb.itemListElement.at(-1)?.item, `https://eventme.live/${page}`, `${page} breadcrumb must end at the page URL`);
+
+  if (/^(saudi-events-today|riyadh-events-today|jeddah-events|online-tech-courses|saudi-events-faq)\.html$/.test(page)) {
+    assert.ok(ld.some((item) => item['@type'] === 'FAQPage'), `${page} must include FAQPage JSON-LD`);
+    const itemList = ld.find((item) => item['@type'] === 'ItemList');
+    assert.ok(itemList, `${page} must include ItemList JSON-LD`);
+    assert.ok(Array.isArray(itemList.itemListElement), `${page} ItemList must expose event links`);
+  }
 }
 
 console.log('seo-content-regression-test: ok');

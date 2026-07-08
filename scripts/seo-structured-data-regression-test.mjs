@@ -18,7 +18,12 @@ const pages = [
   { file: 'cities.html', minBlocks: 4, types: ['CollectionPage', 'Dataset', 'ItemList'], datasetUrl: 'https://eventme.live/cities.json' },
   { file: 'categories.html', minBlocks: 4, types: ['CollectionPage', 'Dataset', 'ItemList'], datasetUrl: 'https://eventme.live/categories.json' },
   { file: 'audiences.html', minBlocks: 4, types: ['CollectionPage', 'Dataset', 'ItemList'], datasetUrl: 'https://eventme.live/audiences.json' },
-  { file: 'source-coverage-gaps.html', minBlocks: 1, types: ['WebPage'] }
+  { file: 'source-coverage-gaps.html', minBlocks: 1, types: ['WebPage'] },
+  { file: 'saudi-events-today.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },
+  { file: 'riyadh-events-today.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 5 },
+  { file: 'jeddah-events.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },
+  { file: 'online-tech-courses.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 5 },
+  { file: 'saudi-events-faq.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 5 }
 ];
 
 function extractJsonLd(html) {
@@ -60,7 +65,7 @@ for (const page of pages) {
     assert.ok(jsonLd.some((entry) => typeOf(entry) === expectedType), `${page.file} must include ${expectedType} JSON-LD`);
   }
 
-  const webPage = jsonLd.find((entry) => ['WebPage', 'ContactPage'].includes(typeOf(entry)));
+  const webPage = jsonLd.find((entry) => ['WebPage', 'ContactPage', 'CollectionPage'].includes(typeOf(entry)));
   if (webPage) {
     assert.equal(webPage.inLanguage, 'ar-SA', `${page.file} WebPage language must be ar-SA`);
     assert.equal(webPage.isPartOf?.url, 'https://eventme.live', `${page.file} WebPage must belong to eventme.live`);
@@ -102,6 +107,7 @@ for (const event of eventSamples) {
   const json = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
   const jsonLd = extractJsonLd(html);
   const eventJsonLd = jsonLd.find((entry) => typeOf(entry) === 'Event');
+  const faqJsonLd = jsonLd.find((entry) => typeOf(entry) === 'FAQPage');
   const canonical = `https://eventme.live/events/${event.file_slug}.html`;
 
   assert.match(html, new RegExp(`<link rel="canonical" href="${canonical.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}"`), `${htmlFile} must use canonical event URL`);
@@ -118,6 +124,8 @@ for (const event of eventSamples) {
   assert.ok(Array.isArray(eventJsonLd?.audience) && eventJsonLd.audience.length > 0, `${htmlFile} Event JSON-LD must include audience`);
   assert.ok(Array.isArray(eventJsonLd?.sameAs) && eventJsonLd.sameAs.length > 0, `${htmlFile} Event JSON-LD must include source sameAs links`);
   assert.equal(eventJsonLd?.offers?.['@type'], 'Offer', `${htmlFile} Event JSON-LD must expose an access offer`);
+  assert.ok(Array.isArray(faqJsonLd?.mainEntity) && faqJsonLd.mainEntity.length >= 3, `${htmlFile} must expose visitor FAQ JSON-LD`);
+  assert.match(html, /ما يحتاجه الزائر بسرعة/, `${htmlFile} must render visible visitor FAQ content`);
 
   assert.equal(json.canonical_url, canonical, `${jsonFile} must expose canonical_url`);
   assert.equal(json.schema_org?.['@type'], 'Event', `${jsonFile} must expose Event schema`);

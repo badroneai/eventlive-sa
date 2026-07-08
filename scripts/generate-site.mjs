@@ -1210,6 +1210,51 @@ function eventBreadcrumbHtml(event, relative = '../') {
   return `<nav class="breadcrumbs wrap" aria-label="مسار التنقل"><a href="${relative}index.html">EventLive</a><span>/</span><a href="${relative}events.html">كل الفعاليات</a><span>/</span><a href="${escapeHtml(categoryHref)}">${escapeHtml(event.category_label || 'تصنيف الفعالية')}</a><span>/</span><strong>${escapeHtml(event.title)}</strong></nav>`;
 }
 
+function eventFaqItems(event) {
+  const city = event.city_label || cityLabel(event.city);
+  const source = event.source_label || event.organizer || 'المصدر الرسمي';
+  const liveSchedule = event.live_schedule_ready
+    ? 'نعم، تعرض الصفحة جدولًا حيًا أو جلسات قابلة للمتابعة حسب الوقت.'
+    : 'تعرض الصفحة نافذة الحضور الأساسية، ويضاف الجدول التفصيلي عند توفره من المصدر.';
+  return [
+    {
+      question: `متى تبدأ ${event.title}؟`,
+      answer: `تبدأ ${event.title} في ${formatDate(event.starts_at)} وتنتهي في ${formatDate(event.ends_at)} بتوقيت السعودية.`
+    },
+    {
+      question: `أين تقام ${event.title}؟`,
+      answer: isOnlineEvent(event)
+        ? `هذه فعالية عن بعد أو مرتبطة برابط حضور/تسجيل، وتعرض EventLive رابط المصدر عند توفره.`
+        : `تقام الفعالية في ${city}${event.venue ? `، ${event.venue}` : ''}.`
+    },
+    {
+      question: 'هل المعلومات موثوقة؟',
+      answer: `تعتمد EventLive على ${source} أو رابط دليل ظاهر في صفحة الفعالية، مع إبقاء رابط المصدر للمراجعة.`
+    },
+    {
+      question: 'هل يوجد جدول حي لهذه الفعالية؟',
+      answer: liveSchedule
+    }
+  ];
+}
+
+function faqJsonLd(items = []) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: { '@type': 'Answer', text: item.answer }
+    }))
+  };
+}
+
+function renderFaqSection(items = [], title = 'أسئلة سريعة') {
+  if (!items.length) return '';
+  return `<section class="section"><div class="wrap"><article class="readiness"><span>إجابات مختصرة</span><h2>${escapeHtml(title)}</h2><div class="grid">${items.map((item) => `<div class="program-check"><b>${escapeHtml(item.question)}</b><p>${escapeHtml(item.answer)}</p></div>`).join('')}</div></article></div></section>`;
+}
+
 function renderEventDetail(event) {
   const relative = '../';
   const description = `${event.title} في ${cityLabel(event.city)}: الوقت، الموقع، المصدر، وحالة الجدول الحي عبر EventLive.`;
@@ -1248,6 +1293,7 @@ function renderEventDetail(event) {
   const programOutline = (outline.official_description || outline.duration_text || registrationDeadline || outlineLists.length)
     ? `<section class="section"><div class="wrap"><article class="readiness" aria-label="محاور البرنامج الرسمية"><span>من المصدر الرسمي</span><h2>محاور البرنامج</h2>${outline.official_description ? `<p>${escapeHtml(outline.official_description)}</p>` : ''}<div class="signal-strip">${outline.duration_text ? `<div class="signal"><span>المدة</span><b>${escapeHtml(outline.duration_text)}</b></div>` : ''}${registrationDeadline ? `<div class="signal"><span>إغلاق التسجيل</span><b>${escapeHtml(formatDate(registrationDeadline))}</b></div>` : ''}${outline.provider ? `<div class="signal"><span>المزود</span><b>${escapeHtml(outline.provider)}</b></div>` : ''}</div><div class="grid">${outlineLists.map(([label, items]) => `<div class="program-check"><b>${escapeHtml(label)}</b><ul>${items.slice(0, 6).map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul></div>`).join('')}</div></article></div></section>`
     : '';
+  const eventFaq = eventFaqItems(event);
   const html = `<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
@@ -1285,6 +1331,7 @@ function renderEventDetail(event) {
     subEvent: event.sessions?.length ? event.sessions.slice(0, 20).map((session, index) => sessionJsonLd(session, event, index, canonical)) : undefined
   })}
   ${jsonLd(eventBreadcrumbJsonLd(event, canonical))}
+  ${jsonLd(faqJsonLd(eventFaq))}
 </head>
 <body>
 ${header(relative)}
@@ -1292,6 +1339,7 @@ ${header(relative)}
   ${eventBreadcrumbHtml(event, relative)}
   <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span><span data-runtime-status ${runtimeAttrs(event)}>${escapeHtml(event.status_label)}</span> · ${escapeHtml(event.event_kind_label)}</span><h1>${escapeHtml(event.title)}</h1><p class="lead">${escapeHtml(event.summary)}</p><div class="signal-strip"><div class="signal"><span>المدينة</span><b>${escapeHtml(cityLabel(event.city))}</b></div><div class="signal"><span>البداية</span><b>${escapeHtml(formatDate(event.starts_at))}</b></div><div class="signal"><span>النهاية</span><b>${escapeHtml(formatDate(event.ends_at))}</b></div><div class="signal"><span>الحالة الحية</span><b data-live-time ${runtimeAttrs(event)}>جاري حساب الوقت...</b></div></div></div></section>
   <section class="section"><div class="wrap grid"><article class="card"><img class="cover" src="${escapeHtml(image)}" alt="${escapeHtml(event.image_alt || event.title)}" /></article><article class="readiness" aria-label="ملخص جاهزية الحضور"><span>درجة جاهزية الحضور</span><div class="decision-score">${score}/8</div>${endedNote}<div class="signals">${readinessSignals(event)}</div><div class="meta">${eventDetailActions(event)}</div></article></div></section>
+  ${renderFaqSection(eventFaq, 'ما يحتاجه الزائر بسرعة')}
   ${programOutline}
   ${sessions}
 </main>
@@ -3585,6 +3633,147 @@ function compactEventUrl(event) {
   return event.detail_url || `./events/${event.file_slug}.html`;
 }
 
+function searchIntentPageConfigs(events) {
+  const now = Date.now();
+  const active = sortEventsByStart(events.filter((event) => event.status !== 'ended'));
+  const today = eventsForWindow(events, now, 24);
+  const cityMatches = (cityKey) => active.filter((event) => citySlug(event.city || '') === cityKey || event.city_slug === cityKey);
+  const categoryMatches = (pattern) => active.filter((event) => pattern.test(`${event.category || ''} ${event.category_label || ''} ${event.title || ''} ${event.summary || ''}`));
+  return [
+    {
+      file: 'saudi-events-today.html',
+      title: 'فعاليات السعودية اليوم',
+      eyebrow: 'نية بحث مباشرة',
+      h1: 'فعاليات السعودية اليوم',
+      description: 'صفحة سريعة لمعرفة فعاليات السعودية التي تبدأ قريبًا أو تجري اليوم، مع وقت البداية والمكان ورابط التفاصيل من EventLive.',
+      events: today.length ? today : active.slice(0, 24),
+      faq: [
+        ['كيف أعرف فعاليات السعودية اليوم؟', 'تعرض هذه الصفحة الفعاليات الجارية أو القريبة خلال اليوم، ثم تقترح أقرب الفعاليات القادمة عندما لا توجد فعالية اليوم.'],
+        ['هل الأوقات بتوقيت السعودية؟', 'نعم، تعرض EventLive الأوقات بتوقيت Asia/Riyadh ما لم يذكر المصدر خلاف ذلك.'],
+        ['هل يمكن إضافة الفعالية للتقويم؟', 'كل صفحة فعالية توفر رابط تقويم ICS عند توفر بيانات البداية والنهاية.']
+      ],
+      related: [['كل الفعاليات', './events.html'], ['هذا الأسبوع', './this-week.html'], ['فعاليات اليوم', './today-events.html']]
+    },
+    {
+      file: 'riyadh-events-today.html',
+      title: 'فعاليات الرياض اليوم والقادمة',
+      eyebrow: 'الرياض',
+      h1: 'فعاليات الرياض اليوم والقادمة',
+      description: 'أقرب فعاليات الرياض على EventLive: مؤتمرات، معارض، ورش، دورات وفعاليات عامة مع المصدر والوقت الحي.',
+      events: cityMatches('riyadh').slice(0, 36),
+      faq: [
+        ['ما أفضل صفحة لفعاليات الرياض؟', 'ابدأ بهذه الصفحة للفعاليات القريبة، أو افتح صفحة مدينة الرياض لرؤية كل السجل القادم والمنتهي.'],
+        ['هل تشمل الصفحة المعارض والمؤتمرات؟', 'نعم، تظهر الفعاليات حسب ما يتوفر في الكتالوج من مصادر رسمية أو موثوقة.'],
+        ['هل تعرض EventLive الاتجاهات؟', 'تعرض صفحة الفعالية رابط الاتجاهات عندما يتوفر موقع واضح أو رابط خرائط.']
+      ],
+      related: [['كل فعاليات الرياض', './cities/riyadh.html'], ['ماذا هذا الأسبوع؟', './this-week.html'], ['المؤتمرات والمعارض', './categories/conference-forum.html']]
+    },
+    {
+      file: 'jeddah-events.html',
+      title: 'فعاليات جدة القادمة',
+      eyebrow: 'جدة',
+      h1: 'فعاليات جدة القادمة',
+      description: 'دليل فعاليات جدة القادمة على EventLive، مع التاريخ والموقع والتصنيف وروابط المصدر والتقويم.',
+      events: cityMatches('jeddah').slice(0, 36),
+      faq: [
+        ['أين أجد فعاليات جدة القادمة؟', 'تعرض هذه الصفحة أقرب فعاليات جدة المنشورة في EventLive، وتربط بصفحة المدينة الكاملة.'],
+        ['هل توجد فعاليات منتهية لجدة؟', 'نعم، تبقى الفعاليات المكتملة كسجل طبيعي عند توفر مصدر وتاريخ واضحين.'],
+        ['هل تعرض الصفحة الدورات والملتقيات؟', 'نعم، تظهر الدورات والملتقيات إذا كانت ضمن مصادر EventLive المنشورة.']
+      ],
+      related: [['كل فعاليات جدة', './cities/jeddah.html'], ['فعاليات السعودية اليوم', './saudi-events-today.html'], ['كل المدن', './cities.html']]
+    },
+    {
+      file: 'online-tech-courses.html',
+      title: 'دورات تقنية أونلاين في السعودية',
+      eyebrow: 'تقنية وتدريب',
+      h1: 'دورات تقنية أونلاين في السعودية',
+      description: 'صفحة مخصصة للدورات التقنية والبرامج التدريبية عن بعد أو القابلة للتسجيل في السعودية، من مصادر مثل طويق والمهارات المستقبلية وغيرها.',
+      events: categoryMatches(/تقني|تدريب|دورة|bootcamp|course|program|academy|طويق|مهارات|برمجة|ذكاء/i).slice(0, 36),
+      faq: [
+        ['هل EventLive منصة تسجيل للدورات؟', 'لا، EventLive يعرض بيانات الدورة وروابط المصدر، ويتم التسجيل من خلال الجهة المنظمة أو المصدر الرسمي.'],
+        ['هل تشمل الدورات الحضورية؟', 'نعم، قد تظهر الدورات الحضورية وعن بعد إذا كانت ضمن مصادر موثوقة وببيانات تاريخ واضحة.'],
+        ['كيف أميز الدورة القادمة؟', 'تعرض البطاقة حالة الوقت وموعد البداية، وتعرض صفحة التفاصيل رابط التقويم والمصدر.']
+      ],
+      related: [['تصنيف التدريب التقني', './categories/technology-training.html'], ['للطلاب والخريجين', './for/students.html'], ['للتقنيين', './for/tech.html']]
+    },
+    {
+      file: 'saudi-events-faq.html',
+      title: 'أسئلة شائعة عن فعاليات السعودية',
+      eyebrow: 'دليل سريع',
+      h1: 'أسئلة شائعة عن فعاليات السعودية وEventLive',
+      description: 'إجابات مختصرة للباحثين والزوار والذكاءات عن طريقة العثور على فعاليات السعودية، التحقق من المصدر، الجداول الحية، والفعاليات المنتهية.',
+      events: active.slice(0, 18),
+      faq: [
+        ['ما هي EventLive؟', 'EventLive مرجع حي لفعاليات السعودية يعرض الوقت، المدينة، المكان، المصدر، وروابط التقويم والاتجاهات عندما تتوفر.'],
+        ['هل EventLive تنشر كل فعالية تجدها؟', 'لا، النشر العام يتطلب مصدرًا رسميًا أو دليلًا قابلًا للفحص، أما مصادر الاكتشاف فلا تنشر مباشرة.'],
+        ['لماذا توجد فعاليات منتهية؟', 'الفعاليات المنتهية تحفظ كسجل طبيعي مثل أي فعالية كانت منشورة ثم اكتملت، وهذا يساعد المستخدمين والبحث والتحليلات.'],
+        ['كيف تستفيد الذكاءات من EventLive؟', 'يمكن للذكاءات الاستشهاد بصفحات الفعاليات والمدينة والتصنيف مع الحفاظ على التاريخ والمصدر والرابط الرسمي.']
+      ],
+      related: [['منهجية المصادر', './guide-event-sources-methodology.html'], ['قيمة الفعاليات المنتهية', './guide-ended-events-value.html'], ['ملف الذكاءات', './llms.txt']]
+    }
+  ];
+}
+
+function renderIntentEventList(rows = []) {
+  if (!rows.length) return '<p class="empty-state">لا توجد فعاليات كافية لهذا المسار حاليًا. ستتحدث الصفحة تلقائيًا مع كل جلب جديد.</p>';
+  return rows.slice(0, 24).map((event) => eventCard(event, './')).join('\n');
+}
+
+function writeSearchIntentPages(events) {
+  const pages = searchIntentPageConfigs(events);
+  for (const page of pages) {
+    const canonical = absoluteUrl(page.file);
+    const faqs = page.faq.map(([question, answer]) => ({ question, answer }));
+    const itemList = {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: page.title,
+      numberOfItems: page.events.length,
+      itemListElement: page.events.slice(0, 24).map((event, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: event.title,
+        url: absoluteUrl(compactEventUrl(event).replace(/^\.\//, ''))
+      }))
+    };
+    const html = `<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  ${baseHead({ title: `${page.title} | ${platformName}`, description: page.description, canonical })}
+  ${pageCss}
+  ${jsonLd({ '@context': 'https://schema.org', '@type': 'CollectionPage', inLanguage: 'ar-SA', name: page.title, description: page.description, url: canonical, isPartOf: { '@type': 'WebSite', name: platformName, url: siteUrl }, dateModified: buildAt, mainEntityOfPage: canonical })}
+  ${jsonLd(itemList)}
+  ${jsonLd(faqJsonLd(faqs))}
+  ${jsonLd({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: platformName, item: `${siteUrl}/` }, { '@type': 'ListItem', position: 2, name: 'الأدلة', item: absoluteUrl('guides.html') }, { '@type': 'ListItem', position: 3, name: page.title, item: canonical }] })}
+</head>
+<body>
+${header('./')}
+<main>
+  <nav class="breadcrumbs wrap" aria-label="مسار التنقل"><a href="./index.html">EventLive</a><span>/</span><a href="./guides.html">الأدلة</a><span>/</span><strong>${escapeHtml(page.title)}</strong></nav>
+  <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span>${escapeHtml(page.eyebrow)}</span><h1>${escapeHtml(page.h1)}</h1><p class="lead">${escapeHtml(page.description)}</p><div class="signal-strip"><div class="signal"><span>فعاليات مطابقة</span><b>${page.events.length}</b></div><div class="signal"><span>آخر تحديث</span><b>${escapeHtml(formatDate(buildAt))}</b></div><div class="signal"><span>المنطقة الزمنية</span><b>Asia/Riyadh</b></div></div></div></section>
+  <section class="section"><div class="wrap"><h2>أقرب النتائج</h2><div class="grid">${renderIntentEventList(page.events)}</div></div></section>
+  ${renderFaqSection(faqs, 'أسئلة شائعة')}
+  <section class="section"><div class="wrap"><article class="readiness"><h2>روابط متابعة مفيدة</h2><div class="activation-actions"><a class="cta" href="./today.html">انتقل للمنصة الحية</a>${page.related.map(([label, href]) => `<a class="cta" href="${escapeHtml(href)}">${escapeHtml(label)}</a>`).join('')}</div></article></div></section>
+</main>
+${footer('./')}
+</body>
+</html>`;
+    writeText(path.join(distDir, page.file), html);
+  }
+  return pages;
+}
+
+function patchGuidesHubWithSearchIntentPages(pages = []) {
+  const guidesPath = path.join(distDir, 'guides.html');
+  if (!fs.existsSync(guidesPath) || !pages.length) return false;
+  const html = fs.readFileSync(guidesPath, 'utf8');
+  if (html.includes('seo-intent-pages')) return false;
+  const section = `<section class="section" id="seo-intent-pages"><div class="wrap"><h2>مسارات بحث مباشرة</h2><p class="lead">صفحات محدثة من الكتالوج تساعد الزائر ومحركات البحث والذكاءات على الوصول لعبارات البحث الأكثر شيوعًا.</p><div class="grid">${pages.map((page) => `<article class="event-card"><div class="card-body"><h3><a href="./${escapeHtml(page.file)}">${escapeHtml(page.title)}</a></h3><p>${escapeHtml(page.description)}</p><div class="card-foot"><a class="btn-sm primary" href="./${escapeHtml(page.file)}">فتح الصفحة</a></div></div></article>`).join('')}</div></div></section>`;
+  const next = html.replace(/<\/main>/i, `${section}\n</main>`);
+  fs.writeFileSync(guidesPath, next, 'utf8');
+  return true;
+}
+
 function formatShortDate(value) {
   const date = dateValue(value);
   if (!date) return '';
@@ -5001,6 +5190,11 @@ Important public pages:
 - Cities: ${siteUrl}/cities.html
 - Categories: ${siteUrl}/categories.html
 - Guides: ${siteUrl}/guides.html
+- Saudi events today: ${siteUrl}/saudi-events-today.html
+- Riyadh events today: ${siteUrl}/riyadh-events-today.html
+- Jeddah events: ${siteUrl}/jeddah-events.html
+- Online tech courses: ${siteUrl}/online-tech-courses.html
+- Saudi events FAQ: ${siteUrl}/saudi-events-faq.html
 - Organizers: ${siteUrl}/organizers.html
 - Readiness: ${siteUrl}/readiness.html
 
@@ -5348,6 +5542,8 @@ reconcileStaleEventRefs(events);
 const imageRefsPatched = reconcileStaleEventImages(events);
 const missingImageRefsPatched = reconcileMissingLocalEventImages(events);
 const excludedReferencePatched = pruneExcludedPublicArtifacts(events);
+const searchIntentPages = writeSearchIntentPages(events);
+const guidesIntentPatched = patchGuidesHubWithSearchIntentPages(searchIntentPages);
 writeServiceWorker();
 removeForbiddenArtifacts();
 writeSitemap(events);
@@ -5375,7 +5571,9 @@ const report = [
   `- Screen fallback refreshed: ${screenPatched ? 'yes' : 'already current'}`,
   `- Category links normalized: ${categoryFallback.categoryLinksPatched}`,
   `- Category fallback pages created: ${categoryFallback.fallbackPages}`,
-  `- Excluded-record references patched: ${excludedReferencePatched}`,
+`- Excluded-record references patched: ${excludedReferencePatched}`,
+  `- Search intent pages generated: ${searchIntentPages.length}`,
+  `- Guides search-intent links patched: ${guidesIntentPatched ? 'yes' : 'already current'}`,
   `- Patched files: ${patched.length}`,
   '- Brand: EventLive',
   '- Live mark: red pulsing i-dot',

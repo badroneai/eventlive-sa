@@ -64,7 +64,12 @@ for (const expectedUrl of [
   `${siteUrl}/methodology.json`,
   `${siteUrl}/events.ics`,
   `${siteUrl}/sitemap.xml`,
-  `${siteUrl}/organizers.html`
+  `${siteUrl}/organizers.html`,
+  `${siteUrl}/saudi-events-today.html`,
+  `${siteUrl}/riyadh-events-today.html`,
+  `${siteUrl}/jeddah-events.html`,
+  `${siteUrl}/online-tech-courses.html`,
+  `${siteUrl}/saudi-events-faq.html`
 ]) {
   assert.match(llms, new RegExp(expectedUrl.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `llms.txt must include ${expectedUrl}`);
 }
