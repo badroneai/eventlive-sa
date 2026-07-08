@@ -174,6 +174,9 @@ fs.writeFileSync(
 );
 
 if (status !== 'PASS') {
+  for (const finding of findings) {
+    console.error(`BROWSER_MATRIX_FINDING engine=${finding.engine} viewport=${finding.viewport} page=${finding.page} issue=${finding.issue}`);
+  }
   console.error(`BROWSER_MATRIX_FAIL findings=${findings.length}`);
   process.exit(1);
 }

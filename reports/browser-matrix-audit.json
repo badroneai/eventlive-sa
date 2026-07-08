@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.browser-matrix-audit.v1",
-  "generated_at": "2026-07-08T01:38:59.587Z",
+  "generated_at": "2026-07-08T01:47:16.558Z",
   "status": "PASS",
   "summary": {
     "engines": 2,
@@ -22,8 +22,8 @@
         "bodyHeight": 3175,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 377,
-        "loadMs": 1087
+        "domContentLoadedMs": 411,
+        "loadMs": 895
       },
       "violations": []
     },
@@ -39,8 +39,8 @@
         "bodyHeight": 20959,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 154,
-        "loadMs": 154
+        "domContentLoadedMs": 151,
+        "loadMs": 151
       },
       "violations": []
     },
@@ -56,8 +56,8 @@
         "bodyHeight": 7082,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 16,
-        "loadMs": 16
+        "domContentLoadedMs": 24,
+        "loadMs": 24
       },
       "violations": []
     },
@@ -73,8 +73,8 @@
         "bodyHeight": 844,
         "h1Text": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
         "h1Visible": true,
-        "domContentLoadedMs": 28,
-        "loadMs": 28
+        "domContentLoadedMs": 29,
+        "loadMs": 29
       },
       "violations": []
     },
@@ -90,8 +90,8 @@
         "bodyHeight": 6430,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 152,
-        "loadMs": 152
+        "domContentLoadedMs": 146,
+        "loadMs": 146
       },
       "violations": []
     },
@@ -107,8 +107,8 @@
         "bodyHeight": 2774,
         "h1Text": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
         "h1Visible": true,
-        "domContentLoadedMs": 27,
-        "loadMs": 27
+        "domContentLoadedMs": 26,
+        "loadMs": 26
       },
       "violations": []
     },
@@ -124,8 +124,8 @@
         "bodyHeight": 2777,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 379,
-        "loadMs": 1066
+        "domContentLoadedMs": 339,
+        "loadMs": 987
       },
       "violations": []
     },
@@ -141,8 +141,8 @@
         "bodyHeight": 11238,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 164,
-        "loadMs": 164
+        "domContentLoadedMs": 148,
+        "loadMs": 148
       },
       "violations": []
     },
@@ -158,8 +158,8 @@
         "bodyHeight": 4541,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 23,
-        "loadMs": 23
+        "domContentLoadedMs": 25,
+        "loadMs": 25
       },
       "violations": []
     },
@@ -176,7 +176,7 @@
         "h1Text": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
         "h1Visible": true,
         "domContentLoadedMs": 27,
-        "loadMs": 28
+        "loadMs": 27
       },
       "violations": []
     },
@@ -209,8 +209,8 @@
         "bodyHeight": 2193,
         "h1Text": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
         "h1Visible": true,
-        "domContentLoadedMs": 27,
-        "loadMs": 27
+        "domContentLoadedMs": 26,
+        "loadMs": 26
       },
       "violations": []
     },
@@ -226,8 +226,8 @@
         "bodyHeight": 3707,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 316,
-        "loadMs": 1080
+        "domContentLoadedMs": 349,
+        "loadMs": 1117
       },
       "violations": []
     },
@@ -243,8 +243,8 @@
         "bodyHeight": 7775,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 124,
-        "loadMs": 124
+        "domContentLoadedMs": 123,
+        "loadMs": 123
       },
       "violations": []
     },
@@ -260,8 +260,8 @@
         "bodyHeight": 3435,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 16,
-        "loadMs": 16
+        "domContentLoadedMs": 26,
+        "loadMs": 26
       },
       "violations": []
     },
@@ -277,8 +277,8 @@
         "bodyHeight": 900,
         "h1Text": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
         "h1Visible": true,
-        "domContentLoadedMs": 28,
-        "loadMs": 29
+        "domContentLoadedMs": 27,
+        "loadMs": 27
       },
       "violations": []
     },
@@ -294,8 +294,8 @@
         "bodyHeight": 3584,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 194,
-        "loadMs": 194
+        "domContentLoadedMs": 125,
+        "loadMs": 125
       },
       "violations": []
     },
@@ -311,8 +311,8 @@
         "bodyHeight": 2011,
         "h1Text": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
         "h1Visible": true,
-        "domContentLoadedMs": 25,
-        "loadMs": 25
+        "domContentLoadedMs": 18,
+        "loadMs": 18
       },
       "violations": []
     },
@@ -328,8 +328,8 @@
         "bodyHeight": 3175,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 426,
-        "loadMs": 976
+        "domContentLoadedMs": 716,
+        "loadMs": 1916
       },
       "violations": []
     },
@@ -346,7 +346,7 @@
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
         "domContentLoadedMs": 132,
-        "loadMs": 412
+        "loadMs": 360
       },
       "violations": []
     },
@@ -362,7 +362,7 @@
         "bodyHeight": 7079,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 118,
+        "domContentLoadedMs": 122,
         "loadMs": 223
       },
       "violations": []
@@ -379,8 +379,8 @@
         "bodyHeight": 844,
         "h1Text": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
         "h1Visible": true,
-        "domContentLoadedMs": 114,
-        "loadMs": 230
+        "domContentLoadedMs": 119,
+        "loadMs": 302
       },
       "violations": []
     },
@@ -396,8 +396,8 @@
         "bodyHeight": 6429,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 136,
-        "loadMs": 283
+        "domContentLoadedMs": 194,
+        "loadMs": 332
       },
       "violations": []
     },
@@ -413,8 +413,8 @@
         "bodyHeight": 2773,
         "h1Text": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
         "h1Visible": true,
-        "domContentLoadedMs": 201,
-        "loadMs": 303
+        "domContentLoadedMs": 120,
+        "loadMs": 227
       },
       "violations": []
     },
@@ -430,8 +430,8 @@
         "bodyHeight": 2777,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 351,
-        "loadMs": 886
+        "domContentLoadedMs": 699,
+        "loadMs": 1171
       },
       "violations": []
     },
@@ -447,8 +447,8 @@
         "bodyHeight": 11328,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 132,
-        "loadMs": 347
+        "domContentLoadedMs": 126,
+        "loadMs": 332
       },
       "violations": []
     },
@@ -464,8 +464,8 @@
         "bodyHeight": 4539,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 119,
-        "loadMs": 297
+        "domContentLoadedMs": 121,
+        "loadMs": 285
       },
       "violations": []
     },
@@ -481,8 +481,8 @@
         "bodyHeight": 1180,
         "h1Text": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
         "h1Visible": true,
-        "domContentLoadedMs": 119,
-        "loadMs": 246
+        "domContentLoadedMs": 115,
+        "loadMs": 255
       },
       "violations": []
     },
@@ -498,8 +498,8 @@
         "bodyHeight": 5516,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 136,
-        "loadMs": 264
+        "domContentLoadedMs": 198,
+        "loadMs": 361
       },
       "violations": []
     },
@@ -515,8 +515,8 @@
         "bodyHeight": 2193,
         "h1Text": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
         "h1Visible": true,
-        "domContentLoadedMs": 116,
-        "loadMs": 213
+        "domContentLoadedMs": 184,
+        "loadMs": 281
       },
       "violations": []
     },
@@ -532,8 +532,8 @@
         "bodyHeight": 3707,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 314,
-        "loadMs": 783
+        "domContentLoadedMs": 418,
+        "loadMs": 969
       },
       "violations": []
     },
@@ -549,8 +549,8 @@
         "bodyHeight": 7780,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 124,
-        "loadMs": 281
+        "domContentLoadedMs": 201,
+        "loadMs": 454
       },
       "violations": []
     },
@@ -566,8 +566,8 @@
         "bodyHeight": 3435,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 190,
-        "loadMs": 300
+        "domContentLoadedMs": 121,
+        "loadMs": 230
       },
       "violations": []
     },
@@ -583,8 +583,8 @@
         "bodyHeight": 900,
         "h1Text": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
         "h1Visible": true,
-        "domContentLoadedMs": 156,
-        "loadMs": 275
+        "domContentLoadedMs": 115,
+        "loadMs": 341
       },
       "violations": []
     },
@@ -600,8 +600,8 @@
         "bodyHeight": 3584,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 136,
-        "loadMs": 262
+        "domContentLoadedMs": 209,
+        "loadMs": 421
       },
       "violations": []
     },
@@ -617,8 +617,8 @@
         "bodyHeight": 2011,
         "h1Text": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
         "h1Visible": true,
-        "domContentLoadedMs": 118,
-        "loadMs": 270
+        "domContentLoadedMs": 150,
+        "loadMs": 246
       },
       "violations": []
     }
