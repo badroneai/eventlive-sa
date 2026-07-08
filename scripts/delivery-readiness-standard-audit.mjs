@@ -70,7 +70,11 @@ function countLiveReadyEvents() {
 
 function gate(id, family, name, role, status, evidence, remaining = '') {
   if (!STATUSES.has(status)) throw new Error(`Unknown status ${status} for gate ${id}`);
-  return { id, family, name, role, status, evidence, remaining };
+  const needsRemaining = status !== 'PASS' && status !== 'N/A';
+  const normalizedRemaining = needsRemaining && !remaining
+    ? `Complete the missing evidence for ${name}.`
+    : remaining;
+  return { id, family, name, role, status, evidence, remaining: normalizedRemaining };
 }
 
 const launchSweepOk = reportOk('reports/site-launch-sweep.json');
