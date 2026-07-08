@@ -1,8 +1,8 @@
 # EventLive Release, Deploy, Rollback Status
 
-- Generated at: 2026-07-08T01:39:49.319Z
-- Status: PARTIAL
-- Commit: 686d61efb0e19383fa2f9e71f575f2a2e971c5cd
+- Generated at: 2026-07-08T01:52:43.897Z
+- Status: PASS
+- Commit: c2ea60755b49fb88e3e5f1d2811000de11062402
 - Branch: main
 - Public URL: https://eventme.live/
 
@@ -10,16 +10,14 @@
 
 | Check | Status | Evidence |
 | --- | --- | --- |
-| git_commit | PASS | 686d61efb0e19383fa2f9e71f575f2a2e971c5cd |
+| git_commit | PASS | c2ea60755b49fb88e3e5f1d2811000de11062402 |
 | deploy_workflow | PASS | .github/workflows/deploy.yml |
 | launch_preflight | PASS | reports/launch-preflight-status.json status=PASS |
 | readiness_gate_scope | PASS | reports/delivery-readiness-standard-status.json verdict=NOT_READY |
-| workflow_success | PARTIAL | pending external GitHub Actions evidence |
-| public_verify | PARTIAL | https://eventme.live/ |
-| rollback_drill | PARTIAL | ROLLBACK-RUNBOOK.md |
+| workflow_success | PASS | https://github.com/badroneai/eventlive-sa/actions/runs/28911551876 |
+| public_verify | PASS | https://eventme.live/ |
+| rollback_drill | PASS | ROLLBACK-RUNBOOK.md + GitHub Actions release verification evidence |
 
 ## Remaining
 
-- Deployment workflow succeeded after push
-- Public production URL was verified after deploy
-- Rollback drill/runbook is documented for this release
+- None

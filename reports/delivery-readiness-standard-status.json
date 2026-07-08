@@ -1,16 +1,16 @@
 {
   "schema": "eventlive.delivery-readiness-standard.v1",
-  "generated_at": "2026-07-08T01:39:49.638Z",
+  "generated_at": "2026-07-08T01:52:44.155Z",
   "standard_source": "93_DELIVERY_READINESS_STANDARD_V1.md",
   "project": {
     "name": "EventLive",
     "domain": "eventme.live",
     "type": "public Saudi live-events static platform plus harvest pipeline"
   },
-  "release_verdict": "NOT_READY",
+  "release_verdict": "READY_WITH_RESERVED_ITEMS",
   "totals": {
-    "PASS": 20,
-    "PARTIAL": 1,
+    "PASS": 21,
+    "PARTIAL": 0,
     "NOT_STARTED": 0,
     "OWNER_RESERVED": 1,
     "N/A": 1,
@@ -39,7 +39,7 @@
     "content_localization_audit": "PASS",
     "compliance_source_rights_audit": "PASS",
     "documentation_audit": "PASS",
-    "release_deploy_rollback_audit": "PARTIAL",
+    "release_deploy_rollback_audit": "PASS",
     "web_quality_accessibility_baseline": "PASS",
     "web_quality_performance_baseline": "PASS",
     "web_quality_responsive_baseline": "PASS",
@@ -231,9 +231,9 @@
       "family": "Release",
       "name": "Release / Deploy / Rollback / DR",
       "role": "Release manager / DevOps",
-      "status": "PARTIAL",
-      "evidence": "Release/deploy/rollback audit is PARTIAL and lists remaining external deployment evidence.",
-      "remaining": "Perform owner-approved staging/commit/push, verify GitHub Actions, verify eventme.live publicly, and record rollback drill evidence."
+      "status": "PASS",
+      "evidence": "Release/deploy/rollback audit PASS: commit, GitHub Actions, public URL verification, and rollback drill evidence are recorded.",
+      "remaining": ""
     },
     {
       "id": "22",

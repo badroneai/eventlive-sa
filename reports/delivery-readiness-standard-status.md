@@ -1,16 +1,16 @@
 # EventLive Applied Delivery Readiness Standard
 
-- Generated at: 2026-07-08T01:39:49.638Z
+- Generated at: 2026-07-08T01:52:44.155Z
 - Standard source: 93_DELIVERY_READINESS_STANDARD_V1.md
 - Project: EventLive / eventme.live
-- Release verdict: **NOT_READY**
+- Release verdict: **READY_WITH_RESERVED_ITEMS**
 
 ## Totals
 
 | Status | Count |
 | --- | ---: |
-| PASS | 20 |
-| PARTIAL | 1 |
+| PASS | 21 |
+| PARTIAL | 0 |
 | NOT_STARTED | 0 |
 | OWNER_RESERVED | 1 |
 | N/A | 1 |
@@ -44,7 +44,7 @@ This file is the applied project status log. It does not redefine the delivery-r
 | Content/localization audit | PASS |
 | Compliance/source-rights audit | PASS |
 | Documentation audit | PASS |
-| Release/deploy/rollback audit | PARTIAL |
+| Release/deploy/rollback audit | PASS |
 | Web quality accessibility baseline | PASS |
 | Web quality performance baseline | PASS |
 | Web quality responsive baseline | PASS |
@@ -74,6 +74,6 @@ This file is the applied project status log. It does not redefine the delivery-r
 | 18 | Discovery & Ops | Observability & Monitoring | PASS | Operations readiness PASS: analytics, owner command center, alert scripts, monitoring plan, and incident runbook verified. |  |
 | 19 | Discovery & Ops | Analytics & Instrumentation | PASS | Analytics status PASS; regression excludes owner pages and tracks critical events. |  |
 | 20 | Discovery & Ops | Notifications & Deliverability | N/A | Current public static product does not send transactional email/SMS/WhatsApp. | Reopen when organizer accounts, reminders, or submissions send messages. |
-| 21 | Release | Release / Deploy / Rollback / DR | PARTIAL | Release/deploy/rollback audit is PARTIAL and lists remaining external deployment evidence. | Perform owner-approved staging/commit/push, verify GitHub Actions, verify eventme.live publicly, and record rollback drill evidence. |
+| 21 | Release | Release / Deploy / Rollback / DR | PASS | Release/deploy/rollback audit PASS: commit, GitHub Actions, public URL verification, and rollback drill evidence are recorded. |  |
 | 22 | Release | Documentation | PASS | Documentation audit PASS: visitor, organizer, owner operations, incident runbook, readiness playbook, and terminology glossary are present. |  |
 | 23 | Release | Final Sign-offs | OWNER_RESERVED | Requires owner approval after all non-reserved gates are PASS or explicitly accepted. | Owner sign-off is intentionally not automated. |

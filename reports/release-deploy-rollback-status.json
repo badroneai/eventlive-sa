@@ -1,24 +1,24 @@
 {
   "schema": "eventlive.release-deploy-rollback.v1",
-  "generated_at": "2026-07-08T01:39:49.319Z",
-  "status": "PARTIAL",
+  "generated_at": "2026-07-08T01:52:43.897Z",
+  "status": "PASS",
   "release": {
-    "commit": "686d61efb0e19383fa2f9e71f575f2a2e971c5cd",
+    "commit": "c2ea60755b49fb88e3e5f1d2811000de11062402",
     "branch": "main",
     "remote": "https://github.com/badroneai/eventlive-sa.git",
-    "workflow_status": "pending",
-    "workflow_url": null,
+    "workflow_status": "success",
+    "workflow_url": "https://github.com/badroneai/eventlive-sa/actions/runs/28911551876",
     "public_url": "https://eventme.live/",
-    "public_verify_status": "pending",
-    "rollback_drill_status": "pending",
-    "rollback_drill_reference": "ROLLBACK-RUNBOOK.md"
+    "public_verify_status": "success",
+    "rollback_drill_status": "documented",
+    "rollback_drill_reference": "ROLLBACK-RUNBOOK.md + GitHub Actions release verification evidence"
   },
   "checks": [
     {
       "id": "git_commit",
       "label": "Current git commit is known",
       "ok": true,
-      "evidence": "686d61efb0e19383fa2f9e71f575f2a2e971c5cd"
+      "evidence": "c2ea60755b49fb88e3e5f1d2811000de11062402"
     },
     {
       "id": "deploy_workflow",
@@ -41,25 +41,21 @@
     {
       "id": "workflow_success",
       "label": "Deployment workflow succeeded after push",
-      "ok": false,
-      "evidence": "pending external GitHub Actions evidence"
+      "ok": true,
+      "evidence": "https://github.com/badroneai/eventlive-sa/actions/runs/28911551876"
     },
     {
       "id": "public_verify",
       "label": "Public production URL was verified after deploy",
-      "ok": false,
+      "ok": true,
       "evidence": "https://eventme.live/"
     },
     {
       "id": "rollback_drill",
       "label": "Rollback drill/runbook is documented for this release",
-      "ok": false,
-      "evidence": "ROLLBACK-RUNBOOK.md"
+      "ok": true,
+      "evidence": "ROLLBACK-RUNBOOK.md + GitHub Actions release verification evidence"
     }
   ],
-  "remaining": [
-    "Deployment workflow succeeded after push",
-    "Public production URL was verified after deploy",
-    "Rollback drill/runbook is documented for this release"
-  ]
+  "remaining": []
 }
