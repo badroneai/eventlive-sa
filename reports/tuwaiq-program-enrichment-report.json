@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-08T14:48:46.577Z",
+  "generated_at": "2026-07-08T20:03:42.640Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 24,
-    "enriched": 24,
+    "targets": 25,
+    "enriched": 25,
     "failed": 0
   },
   "enriched": [
@@ -40,7 +40,7 @@
       "requirements": 6
     },
     {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-7",
+      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-8",
       "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
       "slug": "4yOEV7Qq",
       "goals": 12,
@@ -62,6 +62,14 @@
       "goals": 8,
       "features": 6,
       "requirements": 10
+    },
+    {
+      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-7",
+      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
+      "slug": "4yOEV7Qq",
+      "goals": 12,
+      "features": 6,
+      "requirements": 11
     },
     {
       "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-6",

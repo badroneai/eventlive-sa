@@ -1,10 +1,10 @@
 # EventLive Official Event Backlog Enrichment
-- Generated at: 2026-07-08T14:49:28.346Z
+- Generated at: 2026-07-08T20:04:21.660Z
 - Targets: 74
 - Enriched: 74
-- Fetched: 14
+- Fetched: 15
 - Images: 59
-- Fetch failures: 60
+- Fetch failures: 59
 
 | Source | Event | Method | Image | Fetch |
 |---|---|---:|---:|---:|
@@ -59,7 +59,7 @@
 | Riyadh City Events | Saudi Entertainment and Amusement Expo | approved-source-row | yes | fetch failed |
 | Riyadh City Events | Saudi Warehousing & Logistics Expo | approved-source-row | yes | fetch failed |
 | Riyadh City Events | Saudi WoodShow | approved-source-row | yes | fetch failed |
-| Asharqia Chamber Events | معرض الحرف والأعمال اليدوية 2026 | approved-source-row | no | fetch failed |
+| Asharqia Chamber Events | معرض الحرف والأعمال اليدوية 2026 | official-page-meta | no | yes |
 | Riyadh City Events | Saudi Food Manufacturing show | approved-source-row | yes | fetch failed |
 | Riyadh City Events | INDEX Saudi Arabia (Interior Design Trade Show) | approved-source-row | yes | fetch failed |
 | Riyadh City Events | Lighting Design & Technology Expo | approved-source-row | yes | fetch failed |

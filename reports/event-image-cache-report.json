@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T14:51:05.357Z",
+  "generated_at": "2026-07-08T20:05:54.660Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -9,7 +9,7 @@
     "fetched": 2,
     "reused": 159,
     "failed": 6,
-    "skipped_recent_failures": 6,
+    "skipped_recent_failures": 0,
     "remembered_failures": 9
   },
   "fetched": [
@@ -270,7 +270,7 @@
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/emzgfcby.aiz.webp",
       "file": "dist/assets/event-images/معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-8b9b4fc037.webp",
-      "events": 6
+      "events": 7
     },
     {
       "source_url": "https://hub.misk.org.sa/media/eoxb5tmh/ec-founder-leadership-excellence_en.png",
@@ -824,104 +824,49 @@
     }
   ],
   "rejected_removed": [],
-  "skipped_recent_failures": [
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122220/images-5.jpg",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-08T18:40:19.841Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/03/12031444/inter-aviation-Arabia-HP-PR-logo.png",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-08T18:40:19.841Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122706/fibo_arabia_logo_10431.webp",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-08T18:40:19.841Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122431/WMT-Spotlight-Riyadh-Dates-1200x675-1-1024x576-1.jpg",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-08T18:40:19.841Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06123740/GqbqdoDWMAAm16R.jpg",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-08T18:40:19.841Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2025/02/26113050/images-4.png",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-08T18:40:19.841Z",
-      "skipped": true
-    }
-  ],
+  "skipped_recent_failures": [],
   "failed": [
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122220/images-5.jpg",
       "events": 1,
       "reason": "certificate has expired",
       "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-08T18:40:19.841Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/03/12031444/inter-aviation-Arabia-HP-PR-logo.png",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-08T18:40:19.841Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122706/fibo_arabia_logo_10431.webp",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-08T18:40:19.841Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122431/WMT-Spotlight-Riyadh-Dates-1200x675-1-1024x576-1.jpg",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-08T18:40:19.841Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06123740/GqbqdoDWMAAm16R.jpg",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-08T18:40:19.841Z",
-      "skipped": true
+      "retry_after": "2026-07-09T20:05:54.660Z"
     },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2025/02/26113050/images-4.png",
       "events": 1,
       "reason": "certificate has expired",
       "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-08T18:40:19.841Z",
-      "skipped": true
+      "retry_after": "2026-07-09T20:05:54.660Z"
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122706/fibo_arabia_logo_10431.webp",
+      "events": 1,
+      "reason": "certificate has expired",
+      "failure_kind": "tls-certificate",
+      "retry_after": "2026-07-09T20:05:54.660Z"
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122431/WMT-Spotlight-Riyadh-Dates-1200x675-1-1024x576-1.jpg",
+      "events": 1,
+      "reason": "certificate has expired",
+      "failure_kind": "tls-certificate",
+      "retry_after": "2026-07-09T20:05:54.660Z"
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06123740/GqbqdoDWMAAm16R.jpg",
+      "events": 1,
+      "reason": "certificate has expired",
+      "failure_kind": "tls-certificate",
+      "retry_after": "2026-07-09T20:05:54.660Z"
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/03/12031444/inter-aviation-Arabia-HP-PR-logo.png",
+      "events": 1,
+      "reason": "certificate has expired",
+      "failure_kind": "tls-certificate",
+      "retry_after": "2026-07-09T20:05:54.660Z"
     }
   ]
 }

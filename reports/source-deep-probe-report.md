@@ -1,12 +1,12 @@
 # EventLive Source Deep Probe
 
-Generated at: 2026-07-08T14:40:05.905Z
+Generated at: 2026-07-08T19:55:10.398Z
 
 ## Summary
 
 - Probed sources: 22
-- Extractor-ready: 11
-- Blocked/protected: 11
+- Extractor-ready: 10
+- Blocked/protected: 12
 - Partnership lanes: 0
 - Watch/evidence-only: 0
 
@@ -24,7 +24,6 @@ Generated at: 2026-07-08T14:40:05.905Z
 | 42 | aseer-season-asda | 200 | 46 | probe-hidden-api-or-html-table | 0 | 0 | 0 | Aseer Development Authority | Qimam wa Shiyam Strategy |
 | 40 | diriyah-season | 200 | 36 | probe-hidden-api-or-html-table | 0 | 0 | 0 | Diriyah Season – Coming Soon |
 | 45 | saudi-university-events | 200 | 36 | probe-hidden-api-or-html-table | 0 | 0 | 2 | KAUST | A top research university in the Middle East |
-| 50 | saudi-winter-calendar-spa | 200 | 36 | probe-hidden-api-or-html-table | 0 | 0 | 0 | STA Launches&#x27; Saudi Winter&#x27; Events Calendar |
 | 62 | baha-amanah-events | 200 | 23 | blocked-or-protected:bot-protection | 0 | 0 | 19 | فعاليات الباحة |
 | 18 | riyadh-season | 200 | -23 | blocked-or-protected:bot-protection | 0 | 0 | 0 | - |
 | 27 | enjoy-saudi-events | 403 | -23 | blocked-or-protected:http-403 | 0 | 0 | 0 | تعذر الوصول إلى الصفحة | Access Unavailable |
@@ -36,6 +35,7 @@ Generated at: 2026-07-08T14:40:05.905Z
 | 24 | saudi-digital-academy | - | -35 | blocked-or-protected:fetch failed | 0 | 0 | 0 | - |
 | 35 | qiddiya-events | 403 | -35 | blocked-or-protected:http-403 | 0 | 0 | 0 | Attention Required! | Cloudflare |
 | 43 | jeddah-season | - | -35 | blocked-or-protected:fetch failed | 0 | 0 | 0 | - |
+| 50 | saudi-winter-calendar-spa | - | -35 | blocked-or-protected:timeout | 0 | 0 | 0 | - |
 
 ## Next Actions
 

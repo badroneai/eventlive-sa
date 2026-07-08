@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-08T14:49:28.346Z",
+  "generated_at": "2026-07-08T20:04:21.660Z",
   "totals": {
     "targets": 74,
     "enriched": 74,
-    "fetched": 14,
+    "fetched": 15,
     "images": 59,
-    "fetch_failures": 60
+    "fetch_failures": 59
   },
   "enriched": [
     {
@@ -522,11 +522,11 @@
       "id": "event-معرض-الحرف-والأعمال-اليدوية-2026",
       "title": "معرض الحرف والأعمال اليدوية 2026",
       "source_label": "Asharqia Chamber Events",
-      "source_method": "approved-source-row",
+      "source_method": "official-page-meta",
       "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=343",
-      "fetched": false,
+      "fetched": true,
       "image": false,
-      "fetch_reason": "fetch failed"
+      "fetch_reason": ""
     },
     {
       "id": "event-saudi-food-manufacturing-show",
@@ -1000,12 +1000,6 @@
       "id": "event-saudi-woodshow",
       "title": "Saudi WoodShow",
       "source_url": "https://riyadh.sa/en/moment/events/item/event/30053",
-      "reason": "fetch failed"
-    },
-    {
-      "id": "event-معرض-الحرف-والأعمال-اليدوية-2026",
-      "title": "معرض الحرف والأعمال اليدوية 2026",
-      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=343",
       "reason": "fetch failed"
     },
     {

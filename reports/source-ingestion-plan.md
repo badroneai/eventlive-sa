@@ -1,6 +1,6 @@
 # EventLive Source Ingestion Plan
 
-Generated at: 2026-07-08T14:51:18.857Z
+Generated at: 2026-07-08T20:06:07.558Z
 
 ## Executive Model
 
@@ -77,7 +77,7 @@ EventLive should not treat all registered sources equally. The operating model i
 | sfda-events | ok | 7 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | sdaia-calendar-events | error | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | makkah-chamber-events | ok | 0 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| asharqia-chamber-events | error | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| asharqia-chamber-events | ok | 2 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | qassim-chamber-events | error | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | abha-chamber-events | ok | 0 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | jazan-chamber-events | error | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
@@ -135,13 +135,13 @@ EventLive should not treat all registered sources equally. The operating model i
 | 47 | meetup-facebook-saudi-events | discovery-only | monthly-discovery | 11 | - | Use only to discover leads; require official confirmation before promotion. |
 | 48 | sfda-events | active-collector | daily | 82 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | 49 | saudi-contractors-authority-events | extractor-backlog | twice-weekly-extractor-probe | 36 | blocked-or-protected:fetch failed | Do not scrape now; latest probe is blocked-or-protected:fetch failed. Keep as partnership, browser/API investigation, or evidence lane. |
-| 50 | saudi-winter-calendar-spa | evidence-monitor | monthly-evidence-check | 49 | probe-hidden-api-or-html-table | Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible. |
+| 50 | saudi-winter-calendar-spa | evidence-monitor | monthly-evidence-check | 2 | blocked-or-protected:timeout | Do not scrape now; latest probe is blocked-or-protected:timeout. Keep as partnership, browser/API investigation, or evidence lane. |
 | 51 | riyadh-city-events | extractor-backlog | twice-weekly-extractor-probe | 91 | blocked-or-protected:fetch failed | Do not scrape now; latest probe is blocked-or-protected:fetch failed. Keep as partnership, browser/API investigation, or evidence lane. |
 | 52 | monshaat-academy-programs | partnership | monthly-partnership-check | 22 | - | Open a relationship/API path; keep out of automated scraping until a feed or permission path exists. |
 | 53 | gea-entertainment-events | extractor-backlog | twice-weekly-extractor-probe | 89 | blocked-or-protected:http-403 | Do not scrape now; latest probe is blocked-or-protected:http-403. Keep as partnership, browser/API investigation, or evidence lane. |
 | 54 | sdaia-calendar-events | active-collector | daily | 133 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | 55 | makkah-chamber-events | active-collector | daily | 75 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| 59 | asharqia-chamber-events | active-collector | daily | 71 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| 59 | asharqia-chamber-events | active-collector | daily | 71 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | 60 | qassim-chamber-events | active-collector | daily | 70 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | 61 | abha-chamber-events | active-collector | daily | 69 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | 62 | baha-amanah-events | extractor-backlog | twice-weekly-extractor-probe | 40 | blocked-or-protected:bot-protection | Do not scrape now; latest probe is blocked-or-protected:bot-protection. Keep as partnership, browser/API investigation, or evidence lane. |

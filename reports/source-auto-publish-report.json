@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-07-08T14:48:46.118Z",
+  "published_at": "2026-07-08T20:03:42.187Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -7,31 +7,16 @@
   "candidates_seen": 187,
   "totals": {
     "candidates_seen": 187,
-    "published": 4,
-    "linked_existing": 154,
+    "published": 1,
+    "linked_existing": 157,
     "blocked": 29,
     "reconciled": 158
   },
   "published": [
     {
-      "candidate_id": "candidate-sfda-events-نقل-مبيدات-آفات-الصحة-العامة-20260713-8bb9663d",
-      "event_id": "event-نقل-مبيدات-آفات-الصحة-العامة-2",
-      "title": "نقل مبيدات آفات الصحة العامة"
-    },
-    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45",
-      "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-7",
+      "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-8",
       "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python"
-    },
-    {
-      "candidate_id": "candidate-sfda-events-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج-20260721-9858e813",
-      "event_id": "event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج",
-      "title": "تقييم سلامة المنتج التجميلي وملف معلومات المنتج"
-    },
-    {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي-20260906-c8b1323c",
-      "event_id": "event-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي",
-      "title": "معسكر بناء وتطوير نماذج الذكاء الاصطناعي"
     }
   ],
   "linked_existing": [
@@ -366,6 +351,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-sfda-events-نقل-مبيدات-آفات-الصحة-العامة-20260713-8bb9663d",
+      "event_id": "event-نقل-مبيدات-آفات-الصحة-العامة-2",
+      "title": "نقل مبيدات آفات الصحة العامة",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-saudi-university-events-semi-finals-join-the-celebration-at-the-fifa-fan-zone-20260714-c377ce4a",
       "event_id": "event-semi-finals-join-the-celebration-at-the-fifa-fan-zone",
       "title": "Semi-Finals: Join the Celebration at the FIFA Fan Zone",
@@ -393,6 +384,12 @@
       "candidate_id": "candidate-sfda-events-دور-مقدمي-الرعاية-الصحية-وضباط-الاتصال-في-التعامل-مع-انذارات-السلامة-الص-20260721-56cf21b4",
       "event_id": "event-دور-مقدمي-الرعاية-الصحية-وضباط-الاتصال-في-التعامل-مع-انذارات-السلامة-الص",
       "title": "دور مقدمي الرعاية الصحية وضباط الاتصال في التعامل مع انذارات السلامة الصادرة من المركز الوطني لبلاغات الأجهزة والمستلزمات الطبية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-sfda-events-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج-20260721-9858e813",
+      "event_id": "event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج",
+      "title": "تقييم سلامة المنتج التجميلي وملف معلومات المنتج",
       "reason": "already linked to catalog event"
     },
     {
@@ -621,6 +618,12 @@
       "candidate_id": "candidate-riyadh-city-events-lighting-design-technology-expo-20260906-ded31051",
       "event_id": "event-lighting-design-technology-expo",
       "title": "Lighting Design & Technology Expo",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي-20260906-c8b1323c",
+      "event_id": "event-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي",
+      "title": "معسكر بناء وتطوير نماذج الذكاء الاصطناعي",
       "reason": "already linked to catalog event"
     },
     {
@@ -1032,6 +1035,11 @@
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
+      "candidate_id": "candidate-eventbrite-saudi-information-session-with-ie-university-saudi-arabia-in-riyadh-20260907-2b4929f1",
+      "title": "Information Session With IE University Saudi Arabia in Riyadh",
+      "reason": "publication gate source-evidence is not auto-publishable"
+    },
+    {
       "candidate_id": "candidate-eventbrite-saudi-25th-wpc-energy-congress-20261011-5909609b",
       "title": "25TH WPC Energy Congress",
       "reason": "publication gate source-evidence is not auto-publishable"
@@ -1100,11 +1108,6 @@
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-excellence-award-2026-rea-2026-20270126-5e55ea49",
       "title": "Real Estate Excellence Award 2026 (REA 2026)",
       "reason": "confidence public-listing is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-eventbrite-saudi-saudi-international-marine-exhibition-simec-6th-edition-2027-20270328-47e72c19",
-      "title": "Saudi International Marine Exhibition (SIMEC) 6th Edition 2027",
-      "reason": "publication gate source-evidence is not auto-publishable"
     }
   ]
 }

@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-08T14:40:05.905Z",
+  "generated_at": "2026-07-08T19:55:10.398Z",
   "registry": "data/source_registry.json",
   "source_ingestion_plan": "reports/source-ingestion-plan.json",
   "probe_limit": 28,
   "timeout_ms": 12000,
   "totals": {
     "probed": 22,
-    "extractor_ready": 11,
-    "blocked": 11,
+    "extractor_ready": 10,
+    "blocked": 12,
     "partnership": 0,
     "watch": 0
   },
@@ -60,7 +60,7 @@
         "status": 200,
         "final_url": "https://ncci.org.sa/category/events/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 118126,
+        "bytes": 118116,
         "title": "الفعاليات – الغرفة التجارية بعرعر | غرفة الحدود الشمالية",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -94,7 +94,7 @@
         "status": 200,
         "final_url": "https://www.neom.com/en-us/newsroom/events",
         "content_type": "text/html;charset=utf-8",
-        "bytes": 182004,
+        "bytes": 182023,
         "title": "Events",
         "blocked_reason": "",
         "structured_scripts": 1,
@@ -128,7 +128,7 @@
         "status": 200,
         "final_url": "https://www.cst.gov.sa/en",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 241776,
+        "bytes": 250420,
         "title": "Communications, Space & Technology Commission (CST)",
         "blocked_reason": "",
         "structured_scripts": 2,
@@ -332,7 +332,7 @@
         "status": 200,
         "final_url": "https://www.kaust.edu.sa/en/",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 85624,
+        "bytes": 85626,
         "title": "KAUST | A top research university in the Middle East",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -347,40 +347,6 @@
           "date' : 'default', { 'ad_storage': consentValue, 'ad_user_data': consentValu",
           "Date(\"2023-02-28T10:09:21.5155972Z\") - new Date(), siteClientTag: \"472$$15.0.5519.10",
           "Date()); gtag('config', 'G-VGNT1HSSCZ');"
-        ]
-      },
-      "extraction_score": 36,
-      "recommendation": "probe-hidden-api-or-html-table"
-    },
-    {
-      "id": "saudi-winter-calendar-spa",
-      "name": "Saudi Winter Events Calendar",
-      "priority": 50,
-      "url": "https://www.spa.gov.sa/en/N2183027",
-      "trust_level": "official",
-      "fetch_method": "manual-review",
-      "candidate_gate": "source-evidence",
-      "intake_policy": "monitor-public",
-      "signals": {
-        "http_ok": true,
-        "status": 200,
-        "final_url": "https://www.spa.gov.sa/en/N2183027",
-        "content_type": "text/html; charset=utf-8",
-        "bytes": 142279,
-        "title": "STA Launches&#x27; Saudi Winter&#x27; Events Calendar",
-        "blocked_reason": "",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 1,
-        "date_snippets": [
-          "Calendar",
-          "Calendar\"/>",
-          "calendar, which includes various activities and seasons set to take place in seven desti",
-          "calendar is part of the Saudi Winter Program 2024-2025, which features over 1,000 touris",
-          "calendar includes notable seasons and events such as Riyadh Season, Diriyah Season, AlUl",
-          "Calendar, as well as major events like the Dakar Rally, MDL Beast, Saudi Cruise, and the"
         ]
       },
       "extraction_score": 36,
@@ -689,6 +655,33 @@
       },
       "extraction_score": -35,
       "recommendation": "blocked-or-protected:fetch failed"
+    },
+    {
+      "id": "saudi-winter-calendar-spa",
+      "name": "Saudi Winter Events Calendar",
+      "priority": 50,
+      "url": "https://www.spa.gov.sa/en/N2183027",
+      "trust_level": "official",
+      "fetch_method": "manual-review",
+      "candidate_gate": "source-evidence",
+      "intake_policy": "monitor-public",
+      "signals": {
+        "http_ok": false,
+        "status": 0,
+        "final_url": "https://www.spa.gov.sa/en/N2183027",
+        "content_type": "",
+        "bytes": 0,
+        "title": "",
+        "blocked_reason": "timeout",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 0,
+        "date_snippets": []
+      },
+      "extraction_score": -35,
+      "recommendation": "blocked-or-protected:timeout"
     }
   ],
   "next_actions": [
