@@ -1,13 +1,13 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-07-09T12:41:11.256Z",
+  "generated_at": "2026-07-09T13:42:11.264Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
   },
   "totals": {
     "platforms": 8,
-    "reachable": 5,
+    "reachable": 3,
     "protected": 3,
     "active_collectors": 1
   },
@@ -130,50 +130,19 @@
       "url": "https://nec.gov.sa/ar",
       "decision": "partnership-api",
       "project_use": "Keep as the top strategic feed target; public site is evidence, while national-calendar export/API access is the real integration ask.",
-      "status": 200,
+      "status": 0,
       "final_url": "https://nec.gov.sa/ar",
-      "via": "fetch",
-      "content_type": "text/html; charset=utf-8",
-      "bytes": 84211,
-      "title": "المركز الوطني للفعاليات | المركز الوطني للفعاليات",
-      "classification": "reachable",
-      "error": "",
-      "page_hint_urls": [
-        "https://nec.gov.sa/ar",
-        "https://nec.gov.sa/en",
-        "https://nec.gov.sa/api/assets/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b",
-        "http://www.w3.org/2000/svg",
-        "https://enjz.nec.gov.sa/",
-        "https://nec.gov.sa/ar/join-us/event-pioneer",
-        "http://nec.sourcing.mn2.ariba.com/ad/selfRegistration/_c_/C2https://s1.mn2.ariba.com/Sourcing/Main/ad/loginPage/SSOActions?awsso_cc=cmVhbG06Ym1Wajthd3Nzb19ydTphSFIwY0hNNkx5OXpNUzV0YmpJdVlYSnBZbUV1WTI5dEwxTnZkWEpqYVc1bkwwMWhhVzR2WVdRdlpHVm1ZWFZzZEM5RWFYSmxZM1JCWTNScGIyNC9jbVZoYkcwOWJtVmo7YXdzc29fbHU6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFRHOW5iM1YwTDFOVFQwRmpkR2x2Ym5NPTthd3Nzb19hcDpRVU5OO2F3c3NvX2FyaWQ6TVRjek9EQTJOREUyTmpRNU53PT07YXdzc29fa3U6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFMyVmxjRUZzYVhabEwxTlRUMEZqZEdsdmJuTT07YXdzc29fZmw6TVE9PQ%3D%3D%3ARrUCV6K%2BXxtFtIJH7Rwdskb%2BHhc%3D&amp;awsso_ap=ACM&amp;realm=nec&amp;awsr=true",
-        "https://twitter.com/nec_saudi?s=21",
-        "https://www.instagram.com/nec.saudi/",
-        "https://www.linkedin.com/company/events-center-sa/",
-        "https://www.vision2030.gov.sa/ar/",
-        "https://sdaia.gov.sa/ar/MediaCenter/Pages/ai-year.aspx",
-        "http://www.w3.org/2000/svg\\",
-        "https://enjz.nec.gov.sa/\\",
-        "https://nec.gov.sa/ar/join-us/event-pioneer\\",
-        "http://nec.sourcing.mn2.ariba.com/ad/selfRegistration/_c_/C2https://s1.mn2.ariba.com/Sourcing/Main/ad/loginPage/SSOActions?awsso_cc=cmVhbG06Ym1Wajthd3Nzb19ydTphSFIwY0hNNkx5OXpNUzV0YmpJdVlYSnBZbUV1WTI5dEwxTnZkWEpqYVc1bkwwMWhhVzR2WVdRdlpHVm1ZWFZzZEM5RWFYSmxZM1JCWTNScGIyNC9jbVZoYkcwOWJtVmo7YXdzc29fbHU6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFRHOW5iM1YwTDFOVFQwRmpkR2x2Ym5NPTthd3Nzb19hcDpRVU5OO2F3c3NvX2FyaWQ6TVRjek9EQTJOREUyTmpRNU53PT07YXdzc29fa3U6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFMyVmxjRUZzYVhabEwxTlRUMEZqZEdsdmJuTT07YXdzc29fZmw6TVE9PQ%3D%3D%3ARrUCV6K%2BXxtFtIJH7Rwdskb%2BHhc%3D\\u0026awsso_ap=ACM\\u0026realm=nec\\u0026awsr=true\\",
-        "https://www.scega.gov.sa/ar/Pages/Home.aspx\\",
-        "https://mt.gov.sa/\\",
-        "https://mos.gov.sa/en/Pages/default.aspx\\",
-        "https://www.moc.gov.sa/en\\",
-        "https://www.gea.gov.sa/en/\\",
-        "https://www.asda.gov.sa/\\",
-        "https://www.dgda.gov.sa/home.aspx\\",
-        "https://nec.gov.sa/ar\\",
-        "https://nec.gov.sa/en\\",
-        "https://nec.gov.sa/api/assets/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b\\"
-      ],
-      "page_hint_words": [
-        "api",
-        "event",
-        "events"
-      ],
+      "via": "curl",
+      "content_type": "",
+      "bytes": 0,
+      "title": "",
+      "classification": "fetch-error",
+      "error": "fetch failed",
+      "page_hint_urls": [],
+      "page_hint_words": [],
       "asset_results": [],
       "api_results": [],
-      "text_sample": "المركز الوطني للفعاليات | المركز الوطني للفعاليات قطاع واعد لفعاليات المملكة لقطاع فعاليات واعد، ومواسم سعودية استثنائية، وتقويم وطني مزدهر وجاذب! من نحن أُسّس مركز الفعاليات بقرار من مجلس الوزراء بتاريخ 15 رجب 1441 هـ الموافق 10 مارس 2020م، ومقره الرياض، وهو يهدف إلى تعزيز الفعاليات في المملكة، والارتقاء بالخدمات المقدمة في المجال، ودعم مواسم السعودية والتقويم الوطني والفعاليات الكبرى، بناءً على ما يصدر من أوامر وقرارات، وفقًا للتوجهات والرؤى التي تضعها لجنة الفعاليات كما يتمتع المركز بالشخصية…"
+      "text_sample": ""
     },
     {
       "id": "visit-saudi-calendar",
@@ -244,17 +213,17 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 36585,
+          "bytes": 40100,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 10,
+            "item_count": 11,
             "sample_titles": [
               "ذا جروفز",
               "معرض اللغة العربية للطفل",
               "معرض اللغة العربية 28",
               "منطقة مشجعي كوكاكولا في جاكس",
-              "المزاد الدولي لمزارع إنتاج الصقور"
+              "كشتة "
             ]
           },
           "sample": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"فعالية\",\"title\":\"ذا جروفز\",\"subtitle\":\"عالم يتطور مع كل فصل جديد\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/groves-riyadh-25.jpg\",\"mobileImageReference\":\"/content/dam/wvs…"
@@ -262,17 +231,17 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 38405,
+          "bytes": 41968,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 10,
+            "item_count": 11,
             "sample_titles": [
               "The Groves",
               "Arabic Language Exhibition for kids",
               "Arabic Language Exhibition 28",
               "Coca-Cola Fan Zone at JAX District",
-              "International Falcon Breeders Auction"
+              "Kashtah"
             ]
           },
           "sample": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"EVENT\",\"title\":\"The Groves\",\"subtitle\":\"A World That Evolves With Every Chapter\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/groves-riyadh-25.jpg\",\"mobileImageReference\":\"/…"
@@ -324,7 +293,7 @@
         "https://wbk-assets.webook.com/0.6.7/assets/react-helmet-Ba2OUe2H.js",
         "https://wbk-assets.webook.com/0.6.7/assets/@wbk/cruises-k1arLWqV.js",
         "https://wbk-assets.webook.com/0.6.7/assets/@wbk/auction-DTScvEXF.js",
-        "https://webook.com/cdn-cgi/content?id=t5Ic5s6G4ERdm1YUNzd4Af9iX5RrF.xE9S8gnFxsxNI-1783600875.375537-1.2.1.1-6PZFm1XJUDehVXB2UODyU8dx98r8N0o.01X_pHpKnk0",
+        "https://webook.com/cdn-cgi/content?id=B4U4q1rjHHXvynyPrIOh4d8PzUvJrp760EgVMtJFRJQ-1783604574.146202-1.2.1.1-ZOhQEee1zFUFH6vduY3yTW21ouNfOJZdJG3s2iGE2Cc",
         "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496"
       ],
       "page_hint_words": [
@@ -549,66 +518,19 @@
       "url": "https://mc.gov.sa/ar/mediacenter/Events/UpcomingEvents/pages/default.aspx",
       "decision": "low-yield-official-monitor",
       "project_use": "Monitor as official evidence with low priority; page structure is SharePoint-style and may be stale or empty for upcoming events.",
-      "status": 200,
+      "status": 0,
       "final_url": "https://mc.gov.sa/ar/mediacenter/Events/UpcomingEvents/pages/default.aspx",
       "via": "curl",
-      "content_type": "text/html; charset=utf-8",
-      "bytes": 90112,
-      "title": "الفعاليات القادمة",
-      "classification": "reachable",
+      "content_type": "",
+      "bytes": 0,
+      "title": "",
+      "classification": "fetch-error",
       "error": "fetch failed",
-      "page_hint_urls": [
-        "https://mc.gov.sa:443/ar/mediacenter/Events/UpcomingEvents/Pages/default.aspx",
-        "https://mc.gov.sa/ar/PublishingImages/default-logo.jpg",
-        "https://www.google.com/chrome/",
-        "https://www.googletagmanager.com/ns.html?id=GTM-WZNJBGD",
-        "https://mc.gov.sa/ar/mediacenter/Events/UpcomingEvents",
-        "https://mc.gov.sa",
-        "https://raqmi.dga.gov.sa/platforms/platforms/1c92022b-5c76-49cd-16cf-08dcedd8a2b9/platform-license",
-        "https://www.vision2030.gov.sa/ar",
-        "https://efile.mc.gov.sa/ar/Account/Login?client_ID=B7C20385-85FC-434F-8031-5DD43A490718&landingPage=0&iam=0&returnurl=https://mc.gov.sa/ar/mediacenter/Events/UpcomingEvents/pages/default.aspx&referrer=mci",
-        "https://sso.mc.gov.sa/auth/realms/mci/account",
-        "https://mc.gov.sa/en/pages/default.aspx",
-        "https://mc.gov.sa/ar/mediacenter/News/Pages/default.aspx",
-        "https://mc.gov.sa/ar/Communityparticipation/Pages/default.aspx",
-        "https://mc.gov.sa/ar/OpenData/Pages/default.aspx",
-        "https://talent.mc.gov.sa/",
-        "https://mc.gov.sa/ar/About/CommunicateWithTheMinister/Pages/default.aspx",
-        "https://mc.gov.sa/ar/contactus/Pages/default.aspx",
-        "https://mc.gov.sa/ar/mediacenter/Pages/newslettes.aspx",
-        "https://mc.gov.sa/aamaly",
-        "https://mc.gov.sa/ar/mediacenter/Pages/bainah.aspx",
-        "https://mc.gov.sa/ar/Pages/Localization.aspx",
-        "https://mc.gov.sa/ar/mediacenter/Pages/newsletterc.aspx",
-        "https://mc.gov.sa/ar/mediacenter/Pages/cert.aspx",
-        "https://mc.gov.sa/ar/mediacenter/Pages/eert.aspx",
-        "https://mc.gov.sa/ar/mediacenter/Pages/esvt.aspx",
-        "https://cdn-me.readspeaker.com/script/8022/webReader/webReader.js?pids=wr",
-        "https://events.mc.gov.sa/Calendar/getEventListFromTpreview?start=2026-07-09&end=2027-07-09&category=0",
-        "https://twitter.com/mcgovsa",
-        "https://www.facebook.com/sharer.php?u=",
-        "https://twitter.com/intent/tweet?url=",
-        "https://api.whatsapp.com/send?phone=&text=",
-        "https://wa.me/?text=",
-        "https://www.linkedin.com/cws/share?url=",
-        "https://mc.gov.sa/ar/About/Pages/CustomerCharter.aspx",
-        "https://mc.gov.sa/ar/About/Pages/UseandDisclaimer.aspx",
-        "https://mc.gov.sa/ar/mediacenter/Pages/default.aspx",
-        "https://mc.gov.sa/ar/Pages/Subscribe.aspx",
-        "https://mc.gov.sa/ar/About/Pages/SLA.aspx",
-        "https://mc.gov.sa/ar/Pages/SiteMap.aspx",
-        "https://mc.gov.sa/ar/contactus/Pages/ContactForm.aspx"
-      ],
-      "page_hint_words": [
-        "Events",
-        "events",
-        "Calendar",
-        "api",
-        "event"
-      ],
+      "page_hint_urls": [],
+      "page_hint_words": [],
       "asset_results": [],
       "api_results": [],
-      "text_sample": "الفعاليات القادمة المتصفح الخاص بك قديم جداً يرجى إستخدام الرابط التالي لتنزيل متصف أحدث لكي تتمكن من تصفح هذا الموقع: تحميل متصفح جوجل كروم --> --> قد تحاول الوصول إلى هذا الموقع من مستعرض آمن موجود على الخادم. يرجى تمكين البرامج النصية وإعادة تحميل هذه الصفحة. موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق روابط المواقع الالكترونية الرسمية السعودية تنتهي بـ gov.sa جميع روابط المواقع الرسمية التعليمية في المملكة العربية السعودية تنتهي بـ sch.sa أو edu.sa المواقع الالكترونية الح…"
+      "text_sample": ""
     }
   ]
 }

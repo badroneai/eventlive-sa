@@ -1,100 +1,130 @@
 {
-  "published_at": "2026-07-08T10:07:57.123Z",
+  "published_at": "2026-07-09T13:51:25.722Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 184,
+  "candidates_seen": 192,
   "totals": {
-    "candidates_seen": 184,
-    "published": 16,
-    "linked_existing": 139,
+    "candidates_seen": 192,
+    "published": 10,
+    "linked_existing": 153,
     "blocked": 29,
-    "reconciled": 155
+    "reconciled": 163
   },
   "published": [
     {
+      "candidate_id": "candidate-visit-saudi-calendar-kashtah-20260627-0fa92e11",
+      "event_id": "event-kashtah",
+      "title": "Kashtah"
+    },
+    {
+      "candidate_id": "candidate-misk-hub-programs-application-deadline-2030-leaders-20260712-68dd4c4c",
+      "event_id": "event-application-deadline-2030-leaders-2",
+      "title": "Application deadline: 2030 Leaders"
+    },
+    {
+      "candidate_id": "candidate-riyadh-city-events-mishkat-summer-camp-20260712-704761b4",
+      "event_id": "event-mishkat-summer-camp",
+      "title": "Mishkat Summer Camp"
+    },
+    {
+      "candidate_id": "candidate-sfda-events-نقل-مبيدات-آفات-الصحة-العامة-20260713-8bb9663d",
+      "event_id": "event-نقل-مبيدات-آفات-الصحة-العامة-2",
+      "title": "نقل مبيدات آفات الصحة العامة"
+    },
+    {
+      "candidate_id": "candidate-riyadh-city-events-wrth-summer-art-craft-program-20260716-77021a48",
+      "event_id": "event-wrth-summer-art-craft-program",
+      "title": "Wrth Summer Art & Craft Program"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45",
+      "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-7",
+      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python"
+    },
+    {
+      "candidate_id": "candidate-sfda-events-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج-20260721-9858e813",
+      "event_id": "event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج",
+      "title": "تقييم سلامة المنتج التجميلي وملف معلومات المنتج"
+    },
+    {
+      "candidate_id": "candidate-misk-hub-programs-misk-x-unyo-youth-engagement-fellowship-20260901-2ab69839",
+      "event_id": "event-misk-x-unyo-youth-engagement-fellowship",
+      "title": "Misk X UNYO Youth Engagement Fellowship"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي-20260906-c8b1323c",
+      "event_id": "event-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي",
+      "title": "معسكر بناء وتطوير نماذج الذكاء الاصطناعي"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc-20260906-cb343b82",
+      "event_id": "event-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc",
+      "title": "معسكر إدارة الحوكمة والمخاطر والامتثال GRC"
+    }
+  ],
+  "linked_existing": [
+    {
       "candidate_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c",
       "event_id": "event-skill-development-initiative",
-      "title": "Skill Development Initiative"
+      "title": "Skill Development Initiative",
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-moc-cultural-subportals-sitar-20220921-cda2e068",
       "event_id": "event-sitar",
-      "title": "SITAR"
+      "title": "SITAR",
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1",
       "event_id": "event-the-architecture-and-design-caf",
-      "title": "The Architecture and Design Café"
+      "title": "The Architecture and Design Café",
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-moc-cultural-subportals-jusoor-program-20240818-22e2fb74",
       "event_id": "event-jusoor-program",
-      "title": "Jusoor Program"
+      "title": "Jusoor Program",
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-moc-cultural-subportals-urban-transformation-initiative-20241031-7a933cab",
       "event_id": "event-urban-transformation-initiative",
-      "title": "Urban transformation Initiative"
+      "title": "Urban transformation Initiative",
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-moc-cultural-subportals-the-continuing-professional-development-initiative-20241116-a7cef8e2",
       "event_id": "event-the-continuing-professional-development-initiative",
-      "title": "The Continuing Professional Development Initiative"
+      "title": "The Continuing Professional Development Initiative",
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-moc-cultural-subportals-design-for-good-initiative-20241205-3788803e",
       "event_id": "event-design-for-good-initiative",
-      "title": "Design for Good Initiative"
+      "title": "Design for Good Initiative",
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-moc-cultural-subportals-the-saudi-music-hub-20250101-10d8a675",
       "event_id": "event-the-saudi-music-hub",
-      "title": "The Saudi Music Hub"
+      "title": "The Saudi Music Hub",
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-moc-cultural-subportals-academic-excellence-in-architecture-and-design-education-20250309-a4072111",
       "event_id": "event-academic-excellence-in-architecture-and-design-education",
-      "title": "Academic Excellence in Architecture and Design Education"
+      "title": "Academic Excellence in Architecture and Design Education",
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-moc-cultural-subportals-culinary-manufacturing-hubs-20250811-d7214bd9",
       "event_id": "event-culinary-manufacturing-hubs",
-      "title": "Culinary Manufacturing Hubs"
+      "title": "Culinary Manufacturing Hubs",
+      "reason": "already linked to catalog event"
     },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-film-business-accelerator-20260119-254dca29",
-      "event_id": "event-film-business-accelerator",
-      "title": "Film Business Accelerator"
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-the-guidelines-for-culture-and-arts-in-the-public-realm-20260205-fbf08244",
-      "event_id": "event-the-guidelines-for-culture-and-arts-in-the-public-realm",
-      "title": "The Guidelines for Culture and Arts in the Public Realm"
-    },
-    {
-      "candidate_id": "candidate-misk-hub-programs-application-deadline-2030-leaders-20260708-68dd4c4c",
-      "event_id": "event-application-deadline-2030-leaders",
-      "title": "Application deadline: 2030 Leaders"
-    },
-    {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45",
-      "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-6",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-saudi-wood-expo-2026-20260830-b4d44be4",
-      "event_id": "event-saudi-wood-expo-2026",
-      "title": "Saudi Wood Expo 2026"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-saudi-industrial-series-20260830-c10ad399",
-      "event_id": "event-saudi-industrial-series-2",
-      "title": "Saudi Industrial Series"
-    }
-  ],
-  "linked_existing": [
     {
       "candidate_id": "candidate-riyadh-city-events-poppy-playtime-20251010-b96ed7bc",
       "event_id": "event-poppy-playtime",
@@ -129,6 +159,18 @@
       "candidate_id": "candidate-visit-saudi-calendar-arabic-language-exhibition-for-kids-20260101-36979634",
       "event_id": "event-arabic-language-exhibition-for-kids",
       "title": "Arabic Language Exhibition for kids",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-moc-cultural-subportals-film-business-accelerator-20260119-254dca29",
+      "event_id": "event-film-business-accelerator",
+      "title": "Film Business Accelerator",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-moc-cultural-subportals-the-guidelines-for-culture-and-arts-in-the-public-realm-20260205-fbf08244",
+      "event_id": "event-the-guidelines-for-culture-and-arts-in-the-public-realm",
+      "title": "The Guidelines for Culture and Arts in the Public Realm",
       "reason": "already linked to catalog event"
     },
     {
@@ -501,6 +543,18 @@
       "candidate_id": "candidate-rfecc-whats-on-saudi-logistic-warehousing-expo-20260830-ff3565ba",
       "event_id": "event-saudi-logistic-038-warehousing-expo",
       "title": "Saudi Logistic & Warehousing Expo",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-eye-of-riyadh-events-saudi-wood-expo-2026-20260830-b4d44be4",
+      "event_id": "event-saudi-wood-expo-2026",
+      "title": "Saudi Wood Expo 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-eye-of-riyadh-events-saudi-industrial-series-20260830-c10ad399",
+      "event_id": "event-saudi-industrial-series-2",
+      "title": "Saudi Industrial Series",
       "reason": "already linked to catalog event"
     },
     {

@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-07-09T12:41:11.256Z
+Generated at: 2026-07-09T13:42:11.264Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -9,13 +9,13 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 | Platform | Role | Reachability | HTTP | Decision | Title |
 | --- | --- | --- | --- | --- | --- |
 | SCEGA ePortal | Regulatory-market analyst for exhibitions and conferences | reachable | 200 | official-monitor | الهيئه العامه للمعارض و المؤتمرات |
-| National Events Center | Partnership and national-calendar access lead | reachable | 200 | partnership-api | المركز الوطني للفعاليات \| المركز الوطني للفعاليات |
+| National Events Center | Partnership and national-calendar access lead | fetch-error | 0 | partnership-api | - |
 | Visit Saudi Calendar | Production source operator | reachable | 200 | active-collector | تقويم السعودية \| تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية |
 | webook Explore | Ticketing-marketplace intelligence analyst | protected | 200 | candidate-discovery | - |
 | Enjoy Saudi | Entertainment public-interface reviewer | protected | 403 | official-evidence-protected | تعذر الوصول إلى الصفحة \| Access Unavailable |
 | General Entertainment Authority Events | Authority-of-record verifier | protected | 403 | official-evidence-protected | تعذر الوصول إلى الصفحة \| Access Unavailable |
 | Evento | Commercial app/API surface auditor | reachable | 200 | candidate-discovery | Evento \| إيفينتو |
-| Ministry of Commerce Upcoming Events | Government freshness and yield auditor | reachable | 200 | low-yield-official-monitor | الفعاليات القادمة |
+| Ministry of Commerce Upcoming Events | Government freshness and yield auditor | fetch-error | 0 | low-yield-official-monitor | - |
 
 ## Platform Details
 
@@ -38,10 +38,10 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 
 - Role lens: Partnership and national-calendar access lead
 - Decision: partnership-api
-- Classification: reachable (200, fetch)
+- Classification: fetch-error (0, curl)
 - Project use: Keep as the top strategic feed target; public site is evidence, while national-calendar export/API access is the real integration ask.
-- Title: المركز الوطني للفعاليات | المركز الوطني للفعاليات
-- Hint URLs: https://nec.gov.sa/ar, https://nec.gov.sa/en, https://nec.gov.sa/api/assets/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b, http://www.w3.org/2000/svg, https://enjz.nec.gov.sa/, https://nec.gov.sa/ar/join-us/event-pioneer, http://nec.sourcing.mn2.ariba.com/ad/selfRegistration/_c_/C2https://s1.mn2.ariba.com/Sourcing/Main/ad/loginPage/SSOActions?awsso_cc=cmVhbG06Ym1Wajthd3Nzb19ydTphSFIwY0hNNkx5OXpNUzV0YmpJdVlYSnBZbUV1WTI5dEwxTnZkWEpqYVc1bkwwMWhhVzR2WVdRdlpHVm1ZWFZzZEM5RWFYSmxZM1JCWTNScGIyNC9jbVZoYkcwOWJtVmo7YXdzc29fbHU6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFRHOW5iM1YwTDFOVFQwRmpkR2x2Ym5NPTthd3Nzb19hcDpRVU5OO2F3c3NvX2FyaWQ6TVRjek9EQTJOREUyTmpRNU53PT07YXdzc29fa3U6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFMyVmxjRUZzYVhabEwxTlRUMEZqZEdsdmJuTT07YXdzc29fZmw6TVE9PQ%3D%3D%3ARrUCV6K%2BXxtFtIJH7Rwdskb%2BHhc%3D&amp;awsso_ap=ACM&amp;realm=nec&amp;awsr=true, https://twitter.com/nec_saudi?s=21
+- Title: -
+- Hint URLs: -
 
 ### Visit Saudi Calendar
 
@@ -51,8 +51,8 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Project use: Keep in the 6-hour source ring; Arabic and English API payloads are reachable and useful for tourism-facing event discovery.
 - Title: تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية
 - Hint URLs: https://assets.adobedtm.com, https://connect.facebook.net/, https://tpc.googlesyndication.com, https://pagead2.googlesyndication.com, https://www.facebook.com, https://platform.twitter.com/, https://staticxx.facebook.com, https://scth.scene7.com
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 10 items; ذا جروفز, معرض اللغة العربية للطفل, معرض اللغة العربية 28, منطقة مشجعي كوكاكولا في جاكس, المزاد الدولي لمزارع إنتاج الصقور
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 10 items; The Groves, Arabic Language Exhibition for kids, Arabic Language Exhibition 28, Coca-Cola Fan Zone at JAX District, International Falcon Breeders Auction
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 11 items; ذا جروفز, معرض اللغة العربية للطفل, معرض اللغة العربية 28, منطقة مشجعي كوكاكولا في جاكس, كشتة 
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 11 items; The Groves, Arabic Language Exhibition for kids, Arabic Language Exhibition 28, Coca-Cola Fan Zone at JAX District, Kashtah
 
 ### webook Explore
 
@@ -98,7 +98,7 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 
 - Role lens: Government freshness and yield auditor
 - Decision: low-yield-official-monitor
-- Classification: reachable (200, curl)
+- Classification: fetch-error (0, curl)
 - Project use: Monitor as official evidence with low priority; page structure is SharePoint-style and may be stale or empty for upcoming events.
-- Title: الفعاليات القادمة
-- Hint URLs: https://mc.gov.sa:443/ar/mediacenter/Events/UpcomingEvents/Pages/default.aspx, https://mc.gov.sa/ar/PublishingImages/default-logo.jpg, https://www.google.com/chrome/, https://www.googletagmanager.com/ns.html?id=GTM-WZNJBGD, https://mc.gov.sa/ar/mediacenter/Events/UpcomingEvents, https://mc.gov.sa, https://raqmi.dga.gov.sa/platforms/platforms/1c92022b-5c76-49cd-16cf-08dcedd8a2b9/platform-license, https://www.vision2030.gov.sa/ar
+- Title: -
+- Hint URLs: -

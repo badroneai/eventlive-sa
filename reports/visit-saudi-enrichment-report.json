@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-08T10:08:26.758Z",
+  "generated_at": "2026-07-09T13:51:53.876Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
-    "targets": 11,
-    "candidates": 11,
-    "enriched": 11,
-    "fetched": 11,
-    "images": 9,
+    "targets": 12,
+    "candidates": 12,
+    "enriched": 12,
+    "fetched": 12,
+    "images": 10,
     "fetch_failures": 0
   },
   "enriched": [
@@ -32,6 +32,14 @@
       "title": "Aseer Season",
       "source_method": "official-page-html",
       "image_url": "https://scth.scene7.com/is/image/scth/private-aseeri-home-visit?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-kashtah",
+      "title": "Kashtah",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/kashtah?wid=1920&hei=1080&fit=constrain&fmt=webp",
       "fetched": true,
       "features": 7
     },

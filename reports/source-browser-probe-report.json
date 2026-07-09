@@ -1,417 +1,253 @@
 {
-  "generated_at": "2026-07-09T11:10:25.873Z",
+  "generated_at": "2026-07-09T13:45:43.250Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
   "selection": {
-    "selected_ids": [
-      "platinumlist-riyadh",
-      "platinumlist-jeddah"
-    ],
+    "selected_ids": [],
     "scope": "priority",
-    "limit": 2,
-    "wait_ms": 3500,
+    "limit": 8,
+    "wait_ms": 4500,
     "timeout_ms": 60000
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 2,
-    "browser_network_api": 2,
+    "probed": 8,
+    "browser_network_api": 3,
     "browser_hydration_payload": 0,
-    "rendered_html_candidates": 0,
+    "rendered_html_candidates": 3,
     "blocked_or_protected": 0,
     "policy_skipped": 0
   },
   "sources": [
     {
-      "id": "platinumlist-jeddah",
-      "name": "Platinumlist Jeddah Calendar",
-      "priority": 15,
-      "url": "https://jeddah.platinumlist.net/calendar/this-weekend",
-      "final_url": "https://jeddah.platinumlist.net/ar/calendar/this-weekend",
+      "id": "experience-alula-events",
+      "name": "Experience AlUla Events",
+      "priority": 7,
+      "url": "https://www.experiencealula.com/en/whats-on/events",
+      "final_url": "https://www.experiencealula.com/en/whats-on/events",
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 23507,
+      "duration_ms": 9449,
       "classification": "browser-network-api",
       "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
-      "title": "اكتشف أهم وأبرز فعاليات عطلة نهاية الأسبوع في مدينة جدة - دليل الفعاليات - Platinumlist.net",
-      "text_bytes": 7236,
-      "html_bytes": 1237870,
-      "html_snapshot": "data/raw/browser-probes/platinumlist-jeddah-2026-07-09T11-10-25-873Z.html",
-      "screenshot": "data/raw/browser-probes/platinumlist-jeddah-2026-07-09T11-10-25-873Z.png",
+      "title": "Events",
+      "text_bytes": 2679,
+      "html_bytes": 816010,
+      "html_snapshot": "data/raw/browser-probes/experience-alula-events-2026-07-09T13-45-43-250Z.html",
+      "screenshot": "data/raw/browser-probes/experience-alula-events-2026-07-09T13-45-43-250Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
-        "has_json_ld": false,
+        "has_json_ld": true,
         "has_event_schema": false,
         "date_snippets": [
-          "لة نهاية أسبوع جميلة في جدة خيارات أخرى يوليو 9 الخميس 10 الجمعة 11 السبت 12 الأحد 13 الاثنين 14 الثلاثاء 15 الأربعاء 16 الخم",
-          "الفعاليات الرياضية جميع الفئات الخميس 9 يوليو خصم 10% عمر الجمل - عرض كوميدي تفاعلي في جدة 200.00 SAR يُباع سريعًا الخميس 09",
-          "يوليو حصري BD House in Jeddah | 09 JUL 115.00 SAR تذاكر الحجز المسبق الخميس 09 يوليو",
-          "منتجع القرية في جدة 55.00 SAR الخميس 09 يوليو - الاثنين 31 أغسطس حصري مسرحية \"أحلام نجمة\" في جدة 40.00 SAR مُتعة للأطفال الخم",
-          "يس 09 يوليو جديد غرفة مشاهدة مباريات كأس العالم 2026 في منتزه توينا داهبان 100.00 SAR نضمن",
-          "لاجتماعي في جدة 150.00 SAR .. الخميس 09 يوليو - الاثنين 31 أغسطس الجمعة 10 يوليو جديد شاطئ منتجع القرية في جدة 55.00 SAR الخم",
-          "يس 09 يوليو - الاثنين 31 أغسطس جديد بي دي هاوس في جدة | 10 يوليو 115.00 SAR تذاكر الحجز المسبق الجمعة 10 يوليو",
-          "ند أب كوميدي في جدة 90.00 SAR الجمعة 10 يوليو جديد غرفة مشاهدة مباريات كأس العالم 2026 في منتزه توينا داهبان 100.00 SAR نضمن"
+          "ts AlFursan Endurance AlUla AlUla 7 and 8 February 2026 • 15 Hours World-class endurance racing returns to AlUla. From SAR 60 per perso"
         ],
         "event_like_links": [
           {
-            "text": "اليوم",
-            "href": "https://jeddah.platinumlist.net/ar/calendar/today"
+            "text": "Find Bookings",
+            "href": "https://www.experiencealula.com/en/whats-on/events#"
           },
           {
-            "text": "عطلة نهاية أسبوع جميلة",
-            "href": "https://jeddah.platinumlist.net/ar/calendar/this-weekend"
+            "text": "Englishen",
+            "href": "https://www.experiencealula.com/en/whats-on/events"
           },
           {
-            "text": "خلال هذا الشهر",
-            "href": "https://jeddah.platinumlist.net/ar/calendar/july"
+            "text": "العربيةar",
+            "href": "https://www.experiencealula.com/ar/whats-on/events"
           },
           {
-            "text": "كل الفعاليات",
-            "href": "https://jeddah.platinumlist.net/ar/event"
+            "text": "AlUla Calendar",
+            "href": "https://www.experiencealula.com/en/whats-on"
           },
           {
-            "text": "",
-            "href": "https://jeddah.platinumlist.net/ar/event-tickets/107015/viola-nights-presents-space-motion-in-jeddah"
+            "text": "AlUla Skies Festival 2026",
+            "href": "https://www.experiencealula.com/en/whats-on/festivals/alula-skies-festival"
           },
           {
-            "text": "فيولا نايتس تقدم سبيس موشن في جدة",
-            "href": "https://jeddah.platinumlist.net/ar/event-tickets/107015/viola-nights-presents-space-motion-in-jeddah"
+            "text": "Ultra Gobi AlUla",
+            "href": "https://www.experiencealula.com/en/whats-on/events/ultra-gobi-alula"
           },
           {
-            "text": "",
-            "href": "https://jeddah.platinumlist.net/ar/event-tickets/106988/saleh-el-nawawy-stand-up-comedy-show-in-jeddah"
+            "text": "Learn more about AlUla Calendar",
+            "href": "https://www.experiencealula.com/en/whats-on"
           },
           {
-            "text": "صالح النوّاوي - عرض ستاند أب كوميدي في جدة",
-            "href": "https://jeddah.platinumlist.net/ar/event-tickets/106988/saleh-el-nawawy-stand-up-comedy-show-in-jeddah"
+            "text": "AlUla Skies Festival 2026",
+            "href": "https://www.experiencealula.com/en/whats-on/festivals/alula-skies-festival"
           },
           {
-            "text": "",
-            "href": "https://jeddah.platinumlist.net/ar/event-tickets/107029/saad-eloud-in-jeddah"
+            "text": "View all Festivals",
+            "href": "https://www.experiencealula.com/en/whats-on/festivals"
           },
           {
-            "text": "سعد العود في جدة",
-            "href": "https://jeddah.platinumlist.net/ar/event-tickets/107029/saad-eloud-in-jeddah"
+            "text": "Ultra Gobi AlUla",
+            "href": "https://www.experiencealula.com/en/whats-on/events/ultra-gobi-alula"
           },
           {
-            "text": "",
-            "href": "https://jeddah.platinumlist.net/ar/event-tickets/106746/omar-el-gamal-stand-up-comedy-show-in-jeddah"
+            "text": "View all Events",
+            "href": "https://www.experiencealula.com/en/whats-on/events"
           },
           {
-            "text": "عمر الجمل - عرض كوميدي تفاعلي في جدة",
-            "href": "https://jeddah.platinumlist.net/ar/event-tickets/106746/omar-el-gamal-stand-up-comedy-show-in-jeddah"
+            "text": "Summer in AlUla",
+            "href": "https://www.experiencealula.com/en/whats-on/events/summer-in-alula"
           },
           {
-            "text": "",
-            "href": "https://jeddah.platinumlist.net/ar/event-tickets/la-playa-beach"
+            "text": "English\n                                EN",
+            "href": "https://www.experiencealula.com/en/whats-on/events"
           },
           {
-            "text": "شاطئ لابلايا في جدة",
-            "href": "https://jeddah.platinumlist.net/ar/event-tickets/la-playa-beach"
+            "text": "العربية\n                                AR",
+            "href": "https://www.experiencealula.com/ar/whats-on/events"
           },
           {
-            "text": "",
-            "href": "https://jeddah.platinumlist.net/ar/event-tickets/107065/bd-house-in-jeddah"
+            "text": "View all",
+            "href": "https://www.experiencealula.com/en/whats-on"
           },
           {
-            "text": "BD House in Jeddah | 09 JUL",
-            "href": "https://jeddah.platinumlist.net/ar/event-tickets/107065/bd-house-in-jeddah"
+            "text": "AlUla Skies Festival 2026",
+            "href": "https://www.experiencealula.com/en/whats-on/festivals/alula-skies-festival"
           },
           {
-            "text": "",
-            "href": "https://jeddah.platinumlist.net/ar/event-tickets/106810/world-cup-match-nights-at-rixos"
+            "text": "Ultra Gobi AlUla",
+            "href": "https://www.experiencealula.com/en/whats-on/events/ultra-gobi-alula"
           },
           {
-            "text": "ليالي مباريات كأس العالم في ريكسوس جدة",
-            "href": "https://jeddah.platinumlist.net/ar/event-tickets/106810/world-cup-match-nights-at-rixos"
+            "text": "View all",
+            "href": "https://www.experiencealula.com/en/whats-on/festivals"
           },
           {
-            "text": "",
-            "href": "https://jeddah.platinumlist.net/ar/event-tickets/107010/ons-night-presented-by-ahmed-altaghlabi-in-jeddah"
+            "text": "AlUla Skies Festival 2026",
+            "href": "https://www.experiencealula.com/en/whats-on/festivals/alula-skies-festival"
           },
           {
-            "text": "ليلة أُنس يقدمها أحمد التغلبي في جدة",
-            "href": "https://jeddah.platinumlist.net/ar/event-tickets/107010/ons-night-presented-by-ahmed-altaghlabi-in-jeddah"
+            "text": "View all",
+            "href": "https://www.experiencealula.com/en/whats-on/events"
           }
         ]
       },
       "script_signals": {
         "next_data_scripts": 0,
         "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 1
+        "json_ld_scripts": 1,
+        "large_inline_scripts": 2
       },
-      "network_total": 9,
+      "network_total": 2,
       "network_endpoints": [
         {
-          "method": "POST",
+          "method": "GET",
           "status": 200,
-          "url": "https://api-iam.intercom.io/messenger/web/launcher_settings",
+          "url": "https://www.experiencealula.com/bin/commerce/productsAvailabilityStatus.initiateProductStatusSync.json?experiencePath=/content/rcudxp/ea/en/data/all-experiences-detail",
           "content_type": "application/json",
           "resource_type": "xhr",
-          "request_post_data": "app_id=xbas31f3&v=3&g=9226209e0aff00bfd9ef68ea745d83276388a4f6&s=be922344-65e6-4370-b059-205eecd4927a&r=&platform=web&installation_type=js-snippet&installation_version=undefined&Idempotency-Key=5f43257dc1417746&internal=&is_intersection_booted=false&page_title=%D8%A7%D9%83%D8%AA%D8%B4%D9%81%20%D8%A3%D9%87%D9%85%20%D9%88%D8%A3%D8%A8%D8%B1%D8%B2%20%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA%20%D8%B9%D8%B7%D9%84%D8%A9%20%D9%86%D9%87%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A3%D8%B3%D8%A8%D9%88%D8%B9%20%D9%81%D9%8A%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%AC%D8%AF%D8%A9%20-%20%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA%20-%20Platinumlist.net&user_active_company_id=undefined&user_data=%7B%7D&referer=https%3A%2F%2Fjeddah.platinumlist.net%2Far%2Fcalendar%2Fthis-weekend",
-          "response_shape": "json-object:alignment,color,color_dark,has_required_features,horizontal_padding,instant_boot_enabled,launcher_logo_url,launcher_logo_dark_url",
-          "preview": "{\"alignment\":\"right\",\"color\":\"#E139F7\",\"color_dark\":\"#E139F7\",\"has_required_features\":true,\"horizontal_padding\":20,\"instant_boot_enabled\":true,\"launcher_logo_url\":null,\"launcher_logo_dark_url\":null,\"messenger_layout\":\"widget\",\"messenger_mode_switcher_enabled\":false,\"secondary_color\":\"#e139f7\",\"secondary_color_dark\":\"#e139f7\",\"show_launcher\":true,\"theme_mode\":\"light\",\"updated_at\":1783587754,\"vertical_padding\":20}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://api-iam.intercom.io/messenger/web/ping",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "app_id=xbas31f3&v=3&g=9226209e0aff00bfd9ef68ea745d83276388a4f6&s=98a0ac5a-16b8-455b-9b5e-403398659f3e&r=&platform=web&installation_type=js-snippet&installation_version=undefined&Idempotency-Key=8ffe203f213db3d5&internal=%7B%7D&is_intersection_booted=false&page_title=%D8%A7%D9%83%D8%AA%D8%B4%D9%81%20%D8%A3%D9%87%D9%85%20%D9%88%D8%A3%D8%A8%D8%B1%D8%B2%20%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA%20%D8%B9%D8%B7%D9%84%D8%A9%20%D9%86%D9%87%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A3%D8%B3%D8%A8%D9%88%D8%B9%20%D9%81%D9%8A%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%AC%D8%AF%D8%A9%20-%20%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA%20-%20Platinumlist.net&user_active_company_id=undefined&user_data=%7B%22language_override%22%3A%22ar%22%7D&source=apiBoot&sampling=false&referer=https%3A%2F%2Fjeddah.platinumlist.net%2Far%2Fcalendar%2Fthis-weekend",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"app\":{\"name\":\"Platinumlist\",\"audio_enabled\":true,\"show_powered_by\":true,\"team_intro\":null,\"team_greeting\":\"Hi there 👋\",\"messenger_background\":\"background-6\",\"expected_response_delay_translation_key\":\"a_few_minutes\",\"launcher_expected_response_delay_translation_key\":\"the_team_typically_replies_in_minutes\",\"sms_notifications_enabled\":true,\"inbound_conversations_disabled\":false,\"office_hours_response\":null,\"help_center_site_url\":\"http://helpcenter.platinumlist.net\",\"messenger_logo_url\":\"https://downloads.intercomcdn.com/i/o/xbas31f3/803395/f1dcb6671e9aa31d51f59e074c63/42f95a5b45239de479cefcfef27cf6e3.png\",\"user_conversation_gifs_enabled\":true,\"user_conversation_voice_notes_enabled\":true,\"developer_workspace\":false,\"upfront_email_collection_setting\":\"never\",\"temporary_expectations_message\":null,\"localized_expected_response_delay_short_text\":\"A few minutes\",\"localized_expected_response_delay_long_text\":\"We typically reply in a few minutes\",\"help_center_id\":null,\"article_auto_reaction_enabled\":false,\"conversation_history_ttl_days\":null,\"use_cache_for\":[]},\"user\":{\"id\":\"6a4f81b2b51ab99a63d85585\",\"role\":\"visitor_role\",\"locale\":\"en-us\",\"has_conversations\":false,\"anonymous_id\":\"78f0dda3-4fb8-4a9e-a973-d4c9dc266e0f\",\"country_code\":\"sa\",\"new_session\":true,\"help_center_require_search\":false,\"requires_cookie_consent\":false,\"prevent_multiple_inbound_conversation\":true,\"user_assignments\":{}},\"client_matches\":[],\"launcher_settings\":{\"alignment\":\"right\",\"color\":\"#E139F7\",\"color_dark\":\"#E139F7\",\"has_required_features\":true,\"horizontal_padding\":20,\"instant_boot_enabled\":true,\"launcher_logo_url\":null,\"launcher_logo_dark_url\":null,\"messenger_layout\":\"widget\",\"messenger_mode_switcher_enabled\":false,\"secondary_color\":\"#e139f7\",\"secondary_color_dark\":\"#e139f7\",\"show_launcher\":true,\"theme_mod"
+          "request_post_data": "",
+          "response_shape": "json-object:id,url",
+          "preview": "{\"id\":{\"1c3b7397-6a4b-f011-a908-005056b00240\":{\"isSoldOut\":\"false\",\"isExpired\":\"false\",\"almostFull\":\"false\",\"sellingFast\":\"false\",\"soldOutTagLabel\":\"\",\"expiredTagLabel\":\"Expired\",\"sellingFastTagLabel\":\"Selling fast\",\"almostFullTagLabel\":\"Almost full\",\"manualProductTagLabel\":\"\",\"soldOutTagColor\":\"grey\",\"expiredTagColor\":\"camel\",\"sellingFastTagColor\":\"yellow\",\"almostFullTagColor\":\"red\",\"manualProductTagColor\":\"\",\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/test-products/duathlon-form0.html\"}},\"url\":{\"/content/rcudxp/ea/en/things-to-do/test-products/duathlon-form0.html\":{\"isSoldOut\":\"false\",\"isExpired\":\"false\",\"almostFull\":\"false\",\"sellingFast\":\"false\",\"soldOutTagLabel\":\"\",\"expiredTagLabel\":\"Expired\",\"sellingFastTagLabel\":\"Selling fast\",\"almostFullTagLabel\":\"Almost full\",\"manualProductTagLabel\":\"\",\"soldOutTagColor\":\"grey\",\"expiredTagColor\":\"camel\",\"sellingFastTagColor\":\"yellow\",\"almostFullTagColor\":\"red\",\"manualProductTagColor\":\"\",\"productId\":\"1c3b7397-6a4b-f011-a908-005056b00240\"}}}"
         },
         {
           "method": "GET",
           "status": 200,
-          "url": "https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnT6ZUvKq85TntPICdOl6TtzMtpHIpmEfWd2hMQM-ubRIp5bNjRocdSv0VzAU-yBd8-vHaLeDCXZihj3eIxCSlc2MJkNC_cfe2M0rYs2-CW_HJaBZxoSn8HNlCOp4O89uCodfDcHqzOjSWWyzMenQ4KzG16iI9P5cZyk-O2UtJ7qNw__RpX_vt5nGGcp7vBEvsj6wUtssJlQoKeuApJ9wVxUUmNjcKQk4l1qX7xf9KAm-wQ_Gg7cP_gYgKL-UtDuq2T-KFYdnA_ywUP9coFrJuaz5CdY798ysvW0Ta8QL_WcjTE1glo&lib=MMFla1dbty4E2kC_A4Ps0p1yV9uYVTecs",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:fire,reason",
-          "preview": "{\"fire\":false,\"reason\":\"Missing or invalid event_id\"}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://firebaseremoteconfig.googleapis.com/v1/projects/platinumlist-1014/namespaces/fireperf:fetch?key=AIzaSyDaGP5AHnM-P1wNrGBR_2YR-7Mg_xGk09Y",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"app_instance_id\":\"cJMLc3mpUYGGuJRObNgdEb\",\"app_instance_id_token\":\"eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6ODg2MDU0MjcxNDcyOndlYjo4NDBmOWRmNGNiNjQxZGM4ZDYwNTM1IiwiZXhwIjoxNzg0MjAwMjQyLCJmaWQiOiJjSk1MYzNtcFVZR0d1SlJPYk5nZEViIiwicHJvamVjdE51bWJlciI6ODg2MDU0MjcxNDcyfQ.AB2LPV8wRQIhAO5R_TBpGViz-XKdwCw_W0F3iGHfo8nbwUWM5UyiG5mhAiAN26c18KDYCoIvPnLoA13pRpMRGNEbjxkyv_nLznHMMA\",\"app_id\":\"1:886054271472:web:840f9df4cb641dc8d60535\",\"app_version\":\"0.7.9\",\"sdk_version\":\"0.0.1\"}",
-          "response_shape": "json-object:entries,state,templateVersion",
-          "preview": "{ \"entries\": { \"fpr_disabled_android_versions\": \"\", \"fpr_disabled_ios_versions\": \"\", \"fpr_disabled_web_versions\": \"\", \"fpr_enabled\": \"true\", \"fpr_experiment_app_start_ttid\": \"true\", \"fpr_log_endpoint_url\": \"https://firebaselogging.googleapis.com/v0cc/log?format=json_proto\", \"fpr_log_source\": \"462\", \"fpr_log_transport_android_percent\": \"100.0\", \"fpr_log_transport_ios_percent\": \"100.0\", \"fpr_log_transport_key\": \"AIzaSyCx80ru6-RXeTi3GvqkFsMVyMf-vpgIoVw\", \"fpr_rl_network_request_event_count_bg\": \"70\", \"fpr_rl_network_request_event_count_fg\": \"700\", \"fpr_rl_time_limit_sec\": \"600\", \"fpr_rl_trace_event_count_bg\": \"30\", \"fpr_rl_trace_event_count_fg\": \"300\", \"fpr_session_gauge_cpu_capture_frequency_bg_ms\": \"0\", \"fpr_session_gauge_cpu_capture_frequency_fg_ms\": \"100\", \"fpr_session_gauge_memory_capture_frequency_bg_ms\": \"0\", \"fpr_session_gauge_memory_capture_frequency_fg_ms\": \"100\", \"fpr_session_max_length_min\": \"240\", \"fpr_vc_fragment_sampling_rate\": \"0.1\", \"fpr_vc_network_request_sampling_rate\": \"0.4018419628771518\", \"fpr_vc_session_sampling_rate\": \"0.25\", \"fpr_vc_trace_sampling_rate\": \"1.0\" }, \"state\": \"UPDATE\", \"templateVersion\": \"639\" }"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://bam.nr-data.net/1/b9f23f089a?a=7553806&v=1.317.0&to=MVNVZRMDCEJTAU0IDggZdEQSFglcHQdPBA8SGVRQDQcIVVMQFggPAlNP&rst=17388&ck=0&s=a7edfa2b8f4ae0a7&ref=https://jeddah.platinumlist.net/ar/calendar/this-weekend&ptid=e542fdd77537e3ac&ap=3121&be=12324&fe=4556&dc=1320&at=HRRCE1sZGx0QAxtbGhtL&fsh=1&perf=%7B%22timing%22:%7B%22of%22:1783595426599,%22n%22:0,%22f%22:3628,%22dn%22:3628,%22dne%22:3628,%22c%22:3628,%22s%22:3628,%22ce%22:3628,%22rq%22:3629,%22rp%22:12324,%22rpe%22:12328,%22di%22:13428,%22ds%22:13644,%22de%22:13644,%22dc%22:16841,%22l%22:16842,%22le%22:16880%7D,%22navigation%22:%7B%7D%7D&fp=13200&fcp=13200",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "{\"ja\":{\"webdriverDetected\":true}}",
-          "response_shape": "json-object:stn,err,ins,spa,sr,srs,st,sts",
-          "preview": "{\"stn\":0,\"err\":1,\"ins\":1,\"spa\":1,\"sr\":0,\"srs\":0,\"st\":1,\"sts\":0,\"log\":0,\"logapi\":0,\"app\":{\"agents\":[{\"entityGuid\":\"MzIzMDEyfEJST1dTRVJ8QVBQTElDQVRJT058ODA0MDY5Ng\"}],\"nrServerTime\":1783595444536}}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://jeddah.platinumlist.net/event/calendar/render-line-calendar?chunk=20&startDate=this-weekend&selectedDate=this-weekend",
+          "url": "https://www.experiencealula.com/bin/commerce/productPriceSync.initiateProductSync.json?experiencePath=/content/rcudxp/ea/en/data/all-experiences-detail",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "",
           "response_shape": "json-like-invalid",
-          "preview": "{\"html\":\"\\n<div class=\\\"more-dates\\\"><div class=\\\"more-dates__title\\\">\\u062e\\u064a\\u0627\\u0631\\u0627\\u062a \\u0623\\u062e\\u0631\\u0649<\\/div><div class=\\\"more-dates__btn\\\"><div class=\\\"dual-calendar-btn dual-calendar-btn--line-calendar\\\"\\n\\t\\t\\t data-calendar-btn\\n\\t\\t\\t data-calendar-btn-input=\\\"data-line-calendar-input\\\"\\n\\t\\t><svg class=\\\"icon icon-calendar-picker\\\"><use xlink:href=\\\"#svg-icon-calendar-picker\\\"><\\/use><\\/svg><\\/div><\\/div><div class=\\\"calendar-btn no-mobile\\\" data-require=\\\"date-time-picker\\\"><div class=\\\"date-picker\\\"><input type=\\\"text\\\" name=\\\"\\\" id=\\\"\\\" value=\\\"\\\" readonly=\\\"readonly\\\" class=\\\"calendar-btn__input\\\" placeholder=\\\"\\u0627\\u062e\\u062a\\u0631 \\u0627\\u0644\\u062a\\u0627\\u0631\\u064a\\u062e\\\" autocomplete=\\\"off\\\" data-date-picker=\\\"{&quot;dateFormat&quot;:&quot;yy-mm-dd&quot;,&quot;timeFormat&quot;:&quot;HH:mm&quot;,&quot;altFormat&quot;:&quot;yy-mm-dd&quot;,&quot;altTimeFormat&quot;:&quot;HH:mm&quot;,&quot;altSeparator&quot;:&quot; &quot;,&quot;firstDay&quot;:0,&quot;altFieldId&quot;:&quot;alternate-id-&quot;,&quot;altField&quot;:&quot;#alternate-id-&quot;,&quot;showButtonPanel&quot;:false,&quot;showOtherMonths&quot;:true,&quot;numberOfMonths&quot;:2,&quot;buttonText&quot;:&quot;&quot;,&quot;minDate&quot;:0}\\\" data-line-calendar-input=\\\"\\\" data-require=\\\"date-time-picker\\\" hiddenInput=\\\"&lt;input type=&quot;hidden&quot; name=&quot;&quot; value=&quot;&quot; id=&quot;alternate-id-&quot; \\/&gt;\\\" \\/><input type=\\\"hidden\\\" name=\\\"\\\" value=\\\"\\\" id=\\\"alternate-id-\\\" \\/><\\/div><\\/div><\\/div><div class=\\\"line-calendar\\\" data-line-calendar data-event-calendar=\\\"&#x7B;&quot;showHijri&quot;&#x3A;false,&quot;showDateRowExpanded&quot;&#x3A;false&#x7D;\\\"><ul class=\\\"line-calendar__months\\\" data-event-calendar-months-container><li data-tabbed-layout=\\\"2026-"
+          "preview": "{\"id\":{\"9bf8b85c-d478-ee11-a8fd-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":false,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences/hegra-wildlife-and-nature-tour\",\"authoredWebFromPrice\":\"150\",\"authoredMobileFromPrice\":\"\"},\"e06073e4-569d-ec11-a8eb-005056b00240\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":false,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences2/oasis-heritage-trail-tour\",\"authoredWebFromPrice\":\"35\",\"authoredMobileFromPrice\":\"\"},\"cb5a4872-ca47-ec11-a8e8-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":false,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences2/dadan-and-jabal-ikmah-premium-tour\",\"authoredWebFromPrice\":\"1000\",\"authoredMobileFromPrice\":\"\"},\"fad99c22-cb47-ec11-a8e8-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":true,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences/hegra-day-tour\",\"authoredWebFromPrice\":\"95\",\"authoredMobileFromPrice\":\"\"},\"ce23ba67-cb47-ec11-a8e8-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":false,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences2/hegra-premium-tour\",\"authoredWebFromPrice\":\"1000\",\"authoredMobileFromPrice\":\"\"},\"637135a6-cb47-ec11-a8e8-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":false,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences2/old-town-tourAB\",\"authoredWebFromPrice\":\"70\",\"authoredMobileFromPrice\":\"\"},\"0c4026e6-cb47-ec11-a8e8-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":true,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences2/dadan-jabal-ikmah-tour\",\"authoredWebFromPrice\":\"60\",\"authoredMobileFromPrice\":\"\"},\"d7e056be-9ead-f011-a90f-005056830069\":{\"basePrice\":\"\",\"fromPrice\""
         }
       ],
       "network_sample": [
         {
           "method": "GET",
           "status": 200,
-          "url": "https://firebase.googleapis.com/v1alpha/projects/-/apps/1:886054271472:web:840f9df4cb641dc8d60535/webConfig",
+          "url": "https://www.experiencealula.com/bin/commerce/productsAvailabilityStatus.initiateProductStatusSync.json?experiencePath=/content/rcudxp/ea/en/data/all-experiences-detail",
           "content_type": "application/json",
-          "resource_type": "fetch",
+          "resource_type": "xhr",
           "request_post_data": "",
-          "response_shape": "json-object:projectId,appId,databaseURL,storageBucket,locationId,authDomain,messagingSenderId,measurementId",
-          "preview": "{ \"projectId\": \"platinumlist-1014\", \"appId\": \"1:886054271472:web:840f9df4cb641dc8d60535\", \"databaseURL\": \"https://platinumlist-1014.firebaseio.com\", \"storageBucket\": \"platinumlist-1014.firebasestorage.app\", \"locationId\": \"us-central\", \"authDomain\": \"platinumlist-1014.firebaseapp.com\", \"messagingSenderId\": \"886054271472\", \"measurementId\": \"G-4719RTSNYZ\" }"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://api-iam.intercom.io/messenger/web/launcher_settings",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "app_id=xbas31f3&v=3&g=9226209e0aff00bfd9ef68ea745d83276388a4f6&s=be922344-65e6-4370-b059-205eecd4927a&r=&platform=web&installation_type=js-snippet&installation_version=undefined&Idempotency-Key=5f43257dc1417746&internal=&is_intersection_booted=false&page_title=%D8%A7%D9%83%D8%AA%D8%B4%D9%81%20%D8%A3%D9%87%D9%85%20%D9%88%D8%A3%D8%A8%D8%B1%D8%B2%20%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA%20%D8%B9%D8%B7%D9%84%D8%A9%20%D9%86%D9%87%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A3%D8%B3%D8%A8%D9%88%D8%B9%20%D9%81%D9%8A%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%AC%D8%AF%D8%A9%20-%20%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA%20-%20Platinumlist.net&user_active_company_id=undefined&user_data=%7B%7D&referer=https%3A%2F%2Fjeddah.platinumlist.net%2Far%2Fcalendar%2Fthis-weekend",
-          "response_shape": "json-object:alignment,color,color_dark,has_required_features,horizontal_padding,instant_boot_enabled,launcher_logo_url,launcher_logo_dark_url",
-          "preview": "{\"alignment\":\"right\",\"color\":\"#E139F7\",\"color_dark\":\"#E139F7\",\"has_required_features\":true,\"horizontal_padding\":20,\"instant_boot_enabled\":true,\"launcher_logo_url\":null,\"launcher_logo_dark_url\":null,\"messenger_layout\":\"widget\",\"messenger_mode_switcher_enabled\":false,\"secondary_color\":\"#e139f7\",\"secondary_color_dark\":\"#e139f7\",\"show_launcher\":true,\"theme_mode\":\"light\",\"updated_at\":1783587754,\"vertical_padding\":20}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://firebaseinstallations.googleapis.com/v1/projects/platinumlist-1014/installations",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"fid\":\"cJMLc3mpUYGGuJRObNgdEb\",\"authVersion\":\"FIS_v2\",\"appId\":\"1:886054271472:web:840f9df4cb641dc8d60535\",\"sdkVersion\":\"w:0.6.19\"}",
-          "response_shape": "json-object:name,fid,refreshToken,authToken",
-          "preview": "{ \"name\": \"projects/886054271472/installations/cJMLc3mpUYGGuJRObNgdEb\", \"fid\": \"cJMLc3mpUYGGuJRObNgdEb\", \"refreshToken\": \"3_AS3qfwKj0RYraD2zSs4OlMgNhfcam62o5ahVcD7JEIqN8Htzj_WODNA8CNTZ2--6QLvpe2y02mhqN3TsaxaltGa1mkq2k3021jNRHz562Yfo0Jg\", \"authToken\": { \"token\": \"eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6ODg2MDU0MjcxNDcyOndlYjo4NDBmOWRmNGNiNjQxZGM4ZDYwNTM1IiwiZXhwIjoxNzg0MjAwMjQyLCJmaWQiOiJjSk1MYzNtcFVZR0d1SlJPYk5nZEViIiwicHJvamVjdE51bWJlciI6ODg2MDU0MjcxNDcyfQ.AB2LPV8wRQIhAO5R_TBpGViz-XKdwCw_W0F3iGHfo8nbwUWM5UyiG5mhAiAN26c18KDYCoIvPnLoA13pRpMRGNEbjxkyv_nLznHMMA\", \"expiresIn\": \"604800s\" } }"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://api-iam.intercom.io/messenger/web/ping",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "app_id=xbas31f3&v=3&g=9226209e0aff00bfd9ef68ea745d83276388a4f6&s=98a0ac5a-16b8-455b-9b5e-403398659f3e&r=&platform=web&installation_type=js-snippet&installation_version=undefined&Idempotency-Key=8ffe203f213db3d5&internal=%7B%7D&is_intersection_booted=false&page_title=%D8%A7%D9%83%D8%AA%D8%B4%D9%81%20%D8%A3%D9%87%D9%85%20%D9%88%D8%A3%D8%A8%D8%B1%D8%B2%20%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA%20%D8%B9%D8%B7%D9%84%D8%A9%20%D9%86%D9%87%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A3%D8%B3%D8%A8%D9%88%D8%B9%20%D9%81%D9%8A%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%AC%D8%AF%D8%A9%20-%20%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA%20-%20Platinumlist.net&user_active_company_id=undefined&user_data=%7B%22language_override%22%3A%22ar%22%7D&source=apiBoot&sampling=false&referer=https%3A%2F%2Fjeddah.platinumlist.net%2Far%2Fcalendar%2Fthis-weekend",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"app\":{\"name\":\"Platinumlist\",\"audio_enabled\":true,\"show_powered_by\":true,\"team_intro\":null,\"team_greeting\":\"Hi there 👋\",\"messenger_background\":\"background-6\",\"expected_response_delay_translation_key\":\"a_few_minutes\",\"launcher_expected_response_delay_translation_key\":\"the_team_typically_replies_in_minutes\",\"sms_notifications_enabled\":true,\"inbound_conversations_disabled\":false,\"office_hours_response\":null,\"help_center_site_url\":\"http://helpcenter.platinumlist.net\",\"messenger_logo_url\":\"https://downloads.intercomcdn.com/i/o/xbas31f3/803395/f1dcb6671e9aa31d51f59e074c63/42f95a5b45239de479cefcfef27cf6e3.png\",\"user_conversation_gifs_enabled\":true,\"user_conversation_voice_notes_enabled\":true,\"developer_workspace\":false,\"upfront_email_collection_setting\":\"never\",\"temporary_expectations_message\":null,\"localized_expected_response_delay_short_text\":\"A few minutes\",\"localized_expected_response_delay_long_text\":\"We typically reply in a few minutes\",\"help_center_id\":null,\"article_auto_reaction_enabled\":false,\"conversation_history_ttl_days\":null,\"use_cache_for\":[]},\"user\":{\"id\":\"6a4f81b2b51ab99a63d85585\",\"role\":\"visitor_role\",\"locale\":\"en-us\",\"has_conversations\":false,\"anonymous_id\":\"78f0dda3-4fb8-4a9e-a973-d4c9dc266e0f\",\"country_code\":\"sa\",\"new_session\":true,\"help_center_require_search\":false,\"requires_cookie_consent\":false,\"prevent_multiple_inbound_conversation\":true,\"user_assignments\":{}},\"client_matches\":[],\"launcher_settings\":{\"alignment\":\"right\",\"color\":\"#E139F7\",\"color_dark\":\"#E139F7\",\"has_required_features\":true,\"horizontal_padding\":20,\"instant_boot_enabled\":true,\"launcher_logo_url\":null,\"launcher_logo_dark_url\":null,\"messenger_layout\":\"widget\",\"messenger_mode_switcher_enabled\":false,\"secondary_color\":\"#e139f7\",\"secondary_color_dark\":\"#e139f7\",\"show_launcher\":true,\"theme_mod"
+          "response_shape": "json-object:id,url",
+          "preview": "{\"id\":{\"1c3b7397-6a4b-f011-a908-005056b00240\":{\"isSoldOut\":\"false\",\"isExpired\":\"false\",\"almostFull\":\"false\",\"sellingFast\":\"false\",\"soldOutTagLabel\":\"\",\"expiredTagLabel\":\"Expired\",\"sellingFastTagLabel\":\"Selling fast\",\"almostFullTagLabel\":\"Almost full\",\"manualProductTagLabel\":\"\",\"soldOutTagColor\":\"grey\",\"expiredTagColor\":\"camel\",\"sellingFastTagColor\":\"yellow\",\"almostFullTagColor\":\"red\",\"manualProductTagColor\":\"\",\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/test-products/duathlon-form0.html\"}},\"url\":{\"/content/rcudxp/ea/en/things-to-do/test-products/duathlon-form0.html\":{\"isSoldOut\":\"false\",\"isExpired\":\"false\",\"almostFull\":\"false\",\"sellingFast\":\"false\",\"soldOutTagLabel\":\"\",\"expiredTagLabel\":\"Expired\",\"sellingFastTagLabel\":\"Selling fast\",\"almostFullTagLabel\":\"Almost full\",\"manualProductTagLabel\":\"\",\"soldOutTagColor\":\"grey\",\"expiredTagColor\":\"camel\",\"sellingFastTagColor\":\"yellow\",\"almostFullTagColor\":\"red\",\"manualProductTagColor\":\"\",\"productId\":\"1c3b7397-6a4b-f011-a908-005056b00240\"}}}"
         },
         {
           "method": "GET",
           "status": 200,
-          "url": "https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnT6ZUvKq85TntPICdOl6TtzMtpHIpmEfWd2hMQM-ubRIp5bNjRocdSv0VzAU-yBd8-vHaLeDCXZihj3eIxCSlc2MJkNC_cfe2M0rYs2-CW_HJaBZxoSn8HNlCOp4O89uCodfDcHqzOjSWWyzMenQ4KzG16iI9P5cZyk-O2UtJ7qNw__RpX_vt5nGGcp7vBEvsj6wUtssJlQoKeuApJ9wVxUUmNjcKQk4l1qX7xf9KAm-wQ_Gg7cP_gYgKL-UtDuq2T-KFYdnA_ywUP9coFrJuaz5CdY798ysvW0Ta8QL_WcjTE1glo&lib=MMFla1dbty4E2kC_A4Ps0p1yV9uYVTecs",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:fire,reason",
-          "preview": "{\"fire\":false,\"reason\":\"Missing or invalid event_id\"}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://api-iam.intercom.io/messenger/web/ping",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "app_id=xbas31f3&v=3&g=9226209e0aff00bfd9ef68ea745d83276388a4f6&s=98a0ac5a-16b8-455b-9b5e-403398659f3e&r=&platform=web&installation_type=js-snippet&installation_version=undefined&Idempotency-Key=52b3aeb1a9d6406e&internal=%7B%7D&is_intersection_booted=false&page_title=%D8%A7%D9%83%D8%AA%D8%B4%D9%81%20%D8%A3%D9%87%D9%85%20%D9%88%D8%A3%D8%A8%D8%B1%D8%B2%20%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA%20%D8%B9%D8%B7%D9%84%D8%A9%20%D9%86%D9%87%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A3%D8%B3%D8%A8%D9%88%D8%B9%20%D9%81%D9%8A%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%AC%D8%AF%D8%A9%20-%20%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA%20-%20Platinumlist.net&user_active_company_id=-1&user_data=%7B%22anonymous_id%22%3A%2278f0dda3-4fb8-4a9e-a973-d4c9dc266e0f%22%2C%22language_override%22%3A%22ar%22%7D&source=apiUpdate&sampling=false&referer=https%3A%2F%2Fjeddah.platinumlist.net%2Far%2Fcalendar%2Fthis-weekend&device_identifier=cba5861c-50c4-40f1-b589-767123355236",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"app\":{\"name\":\"Platinumlist\",\"audio_enabled\":true,\"show_powered_by\":true,\"team_intro\":null,\"team_greeting\":\"Hi there 👋\",\"messenger_background\":\"background-6\",\"expected_response_delay_translation_key\":\"a_few_minutes\",\"launcher_expected_response_delay_translation_key\":\"the_team_typically_replies_in_minutes\",\"sms_notifications_enabled\":true,\"inbound_conversations_disabled\":false,\"office_hours_response\":null,\"help_center_site_url\":\"http://helpcenter.platinumlist.net\",\"messenger_logo_url\":\"https://downloads.intercomcdn.com/i/o/xbas31f3/803395/f1dcb6671e9aa31d51f59e074c63/42f95a5b45239de479cefcfef27cf6e3.png\",\"user_conversation_gifs_enabled\":true,\"user_conversation_voice_notes_enabled\":true,\"developer_workspace\":false,\"upfront_email_collection_setting\":\"never\",\"temporary_expectations_message\":null,\"localized_expected_response_delay_short_text\":\"A few minutes\",\"localized_expected_response_delay_long_text\":\"We typically reply in a few minutes\",\"help_center_id\":null,\"article_auto_reaction_enabled\":false,\"conversation_history_ttl_days\":null,\"use_cache_for\":[]},\"user\":{\"id\":\"6a4f81b2b51ab99a63d85585\",\"role\":\"visitor_role\",\"locale\":\"en-us\",\"has_conversations\":false,\"anonymous_id\":\"78f0dda3-4fb8-4a9e-a973-d4c9dc266e0f\",\"country_code\":\"sa\",\"new_session\":false,\"help_center_require_search\":false,\"requires_cookie_consent\":false,\"prevent_multiple_inbound_conversation\":true,\"user_assignments\":{}},\"client_matches\":[],\"launcher_settings\":{\"alignment\":\"right\",\"color\":\"#E139F7\",\"color_dark\":\"#E139F7\",\"has_required_features\":true,\"horizontal_padding\":20,\"instant_boot_enabled\":true,\"launcher_logo_url\":null,\"launcher_logo_dark_url\":null,\"messenger_layout\":\"widget\",\"messenger_mode_switcher_enabled\":false,\"secondary_color\":\"#e139f7\",\"secondary_color_dark\":\"#e139f7\",\"show_launcher\":true,\"theme_mo"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://firebaseremoteconfig.googleapis.com/v1/projects/platinumlist-1014/namespaces/fireperf:fetch?key=AIzaSyDaGP5AHnM-P1wNrGBR_2YR-7Mg_xGk09Y",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"app_instance_id\":\"cJMLc3mpUYGGuJRObNgdEb\",\"app_instance_id_token\":\"eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6ODg2MDU0MjcxNDcyOndlYjo4NDBmOWRmNGNiNjQxZGM4ZDYwNTM1IiwiZXhwIjoxNzg0MjAwMjQyLCJmaWQiOiJjSk1MYzNtcFVZR0d1SlJPYk5nZEViIiwicHJvamVjdE51bWJlciI6ODg2MDU0MjcxNDcyfQ.AB2LPV8wRQIhAO5R_TBpGViz-XKdwCw_W0F3iGHfo8nbwUWM5UyiG5mhAiAN26c18KDYCoIvPnLoA13pRpMRGNEbjxkyv_nLznHMMA\",\"app_id\":\"1:886054271472:web:840f9df4cb641dc8d60535\",\"app_version\":\"0.7.9\",\"sdk_version\":\"0.0.1\"}",
-          "response_shape": "json-object:entries,state,templateVersion",
-          "preview": "{ \"entries\": { \"fpr_disabled_android_versions\": \"\", \"fpr_disabled_ios_versions\": \"\", \"fpr_disabled_web_versions\": \"\", \"fpr_enabled\": \"true\", \"fpr_experiment_app_start_ttid\": \"true\", \"fpr_log_endpoint_url\": \"https://firebaselogging.googleapis.com/v0cc/log?format=json_proto\", \"fpr_log_source\": \"462\", \"fpr_log_transport_android_percent\": \"100.0\", \"fpr_log_transport_ios_percent\": \"100.0\", \"fpr_log_transport_key\": \"AIzaSyCx80ru6-RXeTi3GvqkFsMVyMf-vpgIoVw\", \"fpr_rl_network_request_event_count_bg\": \"70\", \"fpr_rl_network_request_event_count_fg\": \"700\", \"fpr_rl_time_limit_sec\": \"600\", \"fpr_rl_trace_event_count_bg\": \"30\", \"fpr_rl_trace_event_count_fg\": \"300\", \"fpr_session_gauge_cpu_capture_frequency_bg_ms\": \"0\", \"fpr_session_gauge_cpu_capture_frequency_fg_ms\": \"100\", \"fpr_session_gauge_memory_capture_frequency_bg_ms\": \"0\", \"fpr_session_gauge_memory_capture_frequency_fg_ms\": \"100\", \"fpr_session_max_length_min\": \"240\", \"fpr_vc_fragment_sampling_rate\": \"0.1\", \"fpr_vc_network_request_sampling_rate\": \"0.4018419628771518\", \"fpr_vc_session_sampling_rate\": \"0.25\", \"fpr_vc_trace_sampling_rate\": \"1.0\" }, \"state\": \"UPDATE\", \"templateVersion\": \"639\" }"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://bam.nr-data.net/1/b9f23f089a?a=7553806&v=1.317.0&to=MVNVZRMDCEJTAU0IDggZdEQSFglcHQdPBA8SGVRQDQcIVVMQFggPAlNP&rst=17388&ck=0&s=a7edfa2b8f4ae0a7&ref=https://jeddah.platinumlist.net/ar/calendar/this-weekend&ptid=e542fdd77537e3ac&ap=3121&be=12324&fe=4556&dc=1320&at=HRRCE1sZGx0QAxtbGhtL&fsh=1&perf=%7B%22timing%22:%7B%22of%22:1783595426599,%22n%22:0,%22f%22:3628,%22dn%22:3628,%22dne%22:3628,%22c%22:3628,%22s%22:3628,%22ce%22:3628,%22rq%22:3629,%22rp%22:12324,%22rpe%22:12328,%22di%22:13428,%22ds%22:13644,%22de%22:13644,%22dc%22:16841,%22l%22:16842,%22le%22:16880%7D,%22navigation%22:%7B%7D%7D&fp=13200&fcp=13200",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "{\"ja\":{\"webdriverDetected\":true}}",
-          "response_shape": "json-object:stn,err,ins,spa,sr,srs,st,sts",
-          "preview": "{\"stn\":0,\"err\":1,\"ins\":1,\"spa\":1,\"sr\":0,\"srs\":0,\"st\":1,\"sts\":0,\"log\":0,\"logapi\":0,\"app\":{\"agents\":[{\"entityGuid\":\"MzIzMDEyfEJST1dTRVJ8QVBQTElDQVRJT058ODA0MDY5Ng\"}],\"nrServerTime\":1783595444536}}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://jeddah.platinumlist.net/event/calendar/render-line-calendar?chunk=20&startDate=this-weekend&selectedDate=this-weekend",
+          "url": "https://www.experiencealula.com/bin/commerce/productPriceSync.initiateProductSync.json?experiencePath=/content/rcudxp/ea/en/data/all-experiences-detail",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "",
           "response_shape": "json-like-invalid",
-          "preview": "{\"html\":\"\\n<div class=\\\"more-dates\\\"><div class=\\\"more-dates__title\\\">\\u062e\\u064a\\u0627\\u0631\\u0627\\u062a \\u0623\\u062e\\u0631\\u0649<\\/div><div class=\\\"more-dates__btn\\\"><div class=\\\"dual-calendar-btn dual-calendar-btn--line-calendar\\\"\\n\\t\\t\\t data-calendar-btn\\n\\t\\t\\t data-calendar-btn-input=\\\"data-line-calendar-input\\\"\\n\\t\\t><svg class=\\\"icon icon-calendar-picker\\\"><use xlink:href=\\\"#svg-icon-calendar-picker\\\"><\\/use><\\/svg><\\/div><\\/div><div class=\\\"calendar-btn no-mobile\\\" data-require=\\\"date-time-picker\\\"><div class=\\\"date-picker\\\"><input type=\\\"text\\\" name=\\\"\\\" id=\\\"\\\" value=\\\"\\\" readonly=\\\"readonly\\\" class=\\\"calendar-btn__input\\\" placeholder=\\\"\\u0627\\u062e\\u062a\\u0631 \\u0627\\u0644\\u062a\\u0627\\u0631\\u064a\\u062e\\\" autocomplete=\\\"off\\\" data-date-picker=\\\"{&quot;dateFormat&quot;:&quot;yy-mm-dd&quot;,&quot;timeFormat&quot;:&quot;HH:mm&quot;,&quot;altFormat&quot;:&quot;yy-mm-dd&quot;,&quot;altTimeFormat&quot;:&quot;HH:mm&quot;,&quot;altSeparator&quot;:&quot; &quot;,&quot;firstDay&quot;:0,&quot;altFieldId&quot;:&quot;alternate-id-&quot;,&quot;altField&quot;:&quot;#alternate-id-&quot;,&quot;showButtonPanel&quot;:false,&quot;showOtherMonths&quot;:true,&quot;numberOfMonths&quot;:2,&quot;buttonText&quot;:&quot;&quot;,&quot;minDate&quot;:0}\\\" data-line-calendar-input=\\\"\\\" data-require=\\\"date-time-picker\\\" hiddenInput=\\\"&lt;input type=&quot;hidden&quot; name=&quot;&quot; value=&quot;&quot; id=&quot;alternate-id-&quot; \\/&gt;\\\" \\/><input type=\\\"hidden\\\" name=\\\"\\\" value=\\\"\\\" id=\\\"alternate-id-\\\" \\/><\\/div><\\/div><\\/div><div class=\\\"line-calendar\\\" data-line-calendar data-event-calendar=\\\"&#x7B;&quot;showHijri&quot;&#x3A;false,&quot;showDateRowExpanded&quot;&#x3A;false&#x7D;\\\"><ul class=\\\"line-calendar__months\\\" data-event-calendar-months-container><li data-tabbed-layout=\\\"2026-"
+          "preview": "{\"id\":{\"9bf8b85c-d478-ee11-a8fd-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":false,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences/hegra-wildlife-and-nature-tour\",\"authoredWebFromPrice\":\"150\",\"authoredMobileFromPrice\":\"\"},\"e06073e4-569d-ec11-a8eb-005056b00240\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":false,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences2/oasis-heritage-trail-tour\",\"authoredWebFromPrice\":\"35\",\"authoredMobileFromPrice\":\"\"},\"cb5a4872-ca47-ec11-a8e8-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":false,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences2/dadan-and-jabal-ikmah-premium-tour\",\"authoredWebFromPrice\":\"1000\",\"authoredMobileFromPrice\":\"\"},\"fad99c22-cb47-ec11-a8e8-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":true,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences/hegra-day-tour\",\"authoredWebFromPrice\":\"95\",\"authoredMobileFromPrice\":\"\"},\"ce23ba67-cb47-ec11-a8e8-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":false,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences2/hegra-premium-tour\",\"authoredWebFromPrice\":\"1000\",\"authoredMobileFromPrice\":\"\"},\"637135a6-cb47-ec11-a8e8-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":false,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences2/old-town-tourAB\",\"authoredWebFromPrice\":\"70\",\"authoredMobileFromPrice\":\"\"},\"0c4026e6-cb47-ec11-a8e8-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":true,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences2/dadan-jabal-ikmah-tour\",\"authoredWebFromPrice\":\"60\",\"authoredMobileFromPrice\":\"\"},\"d7e056be-9ead-f011-a90f-005056830069\":{\"basePrice\":\"\",\"fromPrice\""
         }
       ]
     },
     {
-      "id": "platinumlist-riyadh",
-      "name": "Platinumlist Riyadh Calendar",
-      "priority": 70,
-      "url": "https://riyadh.platinumlist.net/ar/calendar/today",
-      "final_url": "https://riyadh.platinumlist.net/ar/calendar/today",
+      "id": "code-mcit-programs",
+      "name": "CODE MCIT Programs",
+      "priority": 20,
+      "url": "https://code.mcit.gov.sa/en/our-programs",
+      "final_url": "https://code.mcit.gov.sa/en/our-programs",
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 14645,
-      "classification": "browser-network-api",
-      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
-      "title": "أبرز الفعاليات في الرياض اليوم - Platinumlist.net",
-      "text_bytes": 6821,
-      "html_bytes": 1148328,
-      "html_snapshot": "data/raw/browser-probes/platinumlist-riyadh-2026-07-09T11-10-25-873Z.html",
-      "screenshot": "data/raw/browser-probes/platinumlist-riyadh-2026-07-09T11-10-25-873Z.png",
+      "duration_ms": 20839,
+      "classification": "rendered-html-candidates",
+      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
+      "title": "Our programs | CODE | MCIT",
+      "text_bytes": 5511,
+      "html_bytes": 57073,
+      "html_snapshot": "data/raw/browser-probes/code-mcit-programs-2026-07-09T13-45-43-250Z.html",
+      "screenshot": "data/raw/browser-probes/code-mcit-programs-2026-07-09T13-45-43-250Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
         "has_json_ld": false,
         "has_event_schema": false,
         "date_snippets": [
-          "ة الفعاليات اليوم في الرياض خيارات أخرى يوليو 9 الخميس 10 الجمعة 11 السبت 12 الأحد 13 الاثنين 14 الثلاثاء 15 الأربعاء 16 الخم",
-          "العروض والمسرحيات جميع الفئات الخميس 9 يوليو الأعلى مبيعًا ذا باك يارد – عرض مباريات كأس العالم في الرياض 50.00 SAR يُباع سر",
-          "يعًا الخميس 09 يوليو - الأربعاء 15 يوليو جديد ميلوتيك تقدم موجي في الرياض 250.00 SAR 200.00 SAR الخميس 09 يوليو تذاكر ال",
-          "ض 99.00 SAR نضمن أفضل الأسعار الجمعة 10 يوليو الأعلى مبيعًا PFL MENA 10 في الرياض 99.00 SAR يُباع سريعًا الجمعة 10 يوليو حصري",
-          "اسرعوا بالحجز! ستنفذ التذاكر الجمعة 10 يوليو الأعلى مبيعًا ذا باك يارد – عرض مباريات كأس العالم في الرياض 50.00 SAR يُباع سر",
-          "يعًا الخميس 09 يوليو - الأربعاء 15 يوليو حصري أمسية كوبليه في الرياض 129.00 SAR اسرعوا بالحجز! ستنفذ التذاكر الجمعة 10 ي",
-          "150.00 SAR أفضل المقاعد متاحة الجمعة 10 يوليو ليالي الكوميديا الطربية في الرياض 85.00 SAR منطقة مشجعين تراس مطعم توينا فرع ال",
-          "اض 99.00 SAR نضمن أفضل الأسعار السبت 11 يوليو باتل كارت يوم النساء - الرياض 79.00 SAR نضمن أفضل الأسعار السبت 11 يوليو - الاث"
+          "ompanies Read More Saudi Game Champions 2 October 2025 - April 2026 Incubator Closed Join us on a journey that begins with your playab",
+          "capital firms. Read More Tech Champions 5 May 2025 Accelerator Closed The 5th edition of the program consists of two startup incub",
+          "ment. Read More PropTech Experts Series 21 – 24 Sep 2025 Digital Series Closed The Technology Experts Meeting Series provides an op",
+          "ortunities. Read More CODE AI incubator 20 April 2025 - 12 OCT 2025 Incubators and Accelerators Closed A specialized incubator to sup"
         ],
         "event_like_links": [
           {
-            "text": "اليوم",
-            "href": "https://riyadh.platinumlist.net/ar/calendar/today"
+            "text": "Skip to main content",
+            "href": "https://code.mcit.gov.sa/en/our-programs#main-content"
           },
           {
-            "text": "عطلة نهاية أسبوع جميلة",
-            "href": "https://riyadh.platinumlist.net/ar/calendar/this-weekend"
+            "text": "En",
+            "href": "https://code.mcit.gov.sa/en/our-programs"
           },
           {
-            "text": "خلال هذا الشهر",
-            "href": "https://riyadh.platinumlist.net/ar/calendar/july"
+            "text": "عربي",
+            "href": "https://code.mcit.gov.sa/ar/our-programs"
           },
           {
-            "text": "فعاليات قطاع الأعمال",
-            "href": "https://riyadh.platinumlist.net/ar/business-events"
+            "text": "Programs",
+            "href": "https://code.mcit.gov.sa/en/our-programs"
           },
           {
-            "text": "كل الفعاليات",
-            "href": "https://riyadh.platinumlist.net/ar/event"
+            "text": "Daman PropTech Challenge",
+            "href": "https://code.mcit.gov.sa/en/bootcamp/proptech-challenge"
           },
           {
-            "text": "",
-            "href": "https://riyadh.platinumlist.net/ar/event-tickets/106989/saleh-el-nawawy-stand-up-comedy-show-in-riyadh"
+            "text": "Read More",
+            "href": "https://code.mcit.gov.sa/en/bootcamp/proptech-challenge"
           },
           {
-            "text": "صالح النواوي - عرض كوميدي ستاند أب في الرياض",
-            "href": "https://riyadh.platinumlist.net/ar/event-tickets/106989/saleh-el-nawawy-stand-up-comedy-show-in-riyadh"
+            "text": "PropTech Experts Series",
+            "href": "https://code.mcit.gov.sa/en/bootcamp/proptech-series"
           },
           {
-            "text": "",
-            "href": "https://riyadh.platinumlist.net/ar/event-tickets/107019/qaadet-saad-eloud-in-riyadh"
+            "text": "Read More",
+            "href": "https://code.mcit.gov.sa/en/bootcamp/proptech-series"
           },
           {
-            "text": "قعدة سعد العود في الرياض",
-            "href": "https://riyadh.platinumlist.net/ar/event-tickets/107019/qaadet-saad-eloud-in-riyadh"
+            "text": "Load More",
+            "href": "https://code.mcit.gov.sa/en/our-programs?title=&field_program_tages_target_id_1=All&field_status_value=All&field_program_active_years_value=All&page=1"
           },
           {
-            "text": "",
-            "href": "https://riyadh.platinumlist.net/ar/event-tickets/106990/pfl-mena-10"
-          },
-          {
-            "text": "PFL MENA 10 في الرياض",
-            "href": "https://riyadh.platinumlist.net/ar/event-tickets/106990/pfl-mena-10"
-          },
-          {
-            "text": "",
-            "href": "https://riyadh.platinumlist.net/ar/event-tickets/106464/cloud9-house-of-yanos-present-best-of-both-worlds-in-riyadh"
-          },
-          {
-            "text": "كلاود 9 وهاوس أوف يانوس يقدّمان: أفضل ما في العالمين في الرياض",
-            "href": "https://riyadh.platinumlist.net/ar/event-tickets/106464/cloud9-house-of-yanos-present-best-of-both-worlds-in-riyadh"
-          },
-          {
-            "text": "",
-            "href": "https://riyadh.platinumlist.net/ar/event-tickets/107073/yellowplus-presents-agents-of-time-son-of-son-in-riyadh"
-          },
-          {
-            "text": "Yellowplus presents Agents of Time & Son of Son in Riyadh",
-            "href": "https://riyadh.platinumlist.net/ar/event-tickets/107073/yellowplus-presents-agents-of-time-son-of-son-in-riyadh"
-          },
-          {
-            "text": "",
-            "href": "https://riyadh.platinumlist.net/ar/event-tickets/106073/feena-nehke-stand-up-comedy-by-john-achkar-in-riyadh"
-          },
-          {
-            "text": "FEENA NEHKE ? Stand Up Comedy",
-            "href": "https://riyadh.platinumlist.net/ar/event-tickets/106073/feena-nehke-stand-up-comedy-by-john-achkar-in-riyadh"
-          },
-          {
-            "text": "",
-            "href": "https://riyadh.platinumlist.net/ar/event-tickets/106740/the-backyard"
-          },
-          {
-            "text": "ذا باك يارد – عرض مباريات كأس العالم في الرياض",
-            "href": "https://riyadh.platinumlist.net/ar/event-tickets/106740/the-backyard"
-          },
-          {
-            "text": "",
-            "href": "https://riyadh.platinumlist.net/ar/event-tickets/couplet-sessions-in-riyadh"
+            "text": "Programs",
+            "href": "https://code.mcit.gov.sa/en/our-programs"
           }
         ]
       },
@@ -419,181 +255,796 @@
         "next_data_scripts": 0,
         "nuxt_scripts": 0,
         "json_ld_scripts": 0,
-        "large_inline_scripts": 1
+        "large_inline_scripts": 0
       },
-      "network_total": 10,
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "ithra-events",
+      "name": "Ithra Events",
+      "priority": 23,
+      "url": "https://www.ithra.com",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.ithra.com/\nCall log:\n  - navigating to \"https://www.ithra.com/\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 282,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/ithra-events-2026-07-09T13-45-43-250Z.html",
+      "screenshot": "data/raw/browser-probes/ithra-events-2026-07-09T13-45-43-250Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "misk-hub-events",
+      "name": "Misk Hub Events",
+      "priority": 28,
+      "url": "https://hub.misk.org.sa/en/events/",
+      "final_url": "https://hub.misk.org.sa/en/events/",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 11125,
+      "classification": "browser-network-api",
+      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
+      "title": "Misk Hub Events",
+      "text_bytes": 2610,
+      "html_bytes": 248291,
+      "html_snapshot": "data/raw/browser-probes/misk-hub-events-2026-07-09T13-45-43-250Z.html",
+      "screenshot": "data/raw/browser-probes/misk-hub-events-2026-07-09T13-45-43-250Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [
+          "Insights العربية Sign in Skills Online 01 Jul 2026 Cybersecurity in the Workplace Within the Misk Career Essentials Program, we pr",
+          "closing on 1st July 2026 Skills Offline 08 May 2026 How to Choose Your Career Path and Keep Up with Labor Market Changes The Misk C",
+          "d Cybersecurity in the Workplace Arabic 01 Jul 2026 7:00 pm : 8:00 pm More Details Hybrid Test Form Karachi English,Arabic 21 Jan -",
+          "31 Dec 2026 10:11 : 10:11 More Details Online This event has Passed Enhancing Efficiency an",
+          "ce Using Artificial Intelligence Arabic 08 May 2026 9:00 pm : 10:00 pm More Details Online This event has Passed How to Choose Your",
+          "eep Up with Labor Market Changes Arabic 08 May 2026 8:00 pm : 9:00 pm More Details Online This event has Passed Workforce Skills in",
+          "e Age of Artificial Intelligence Arabic 08 May 2026 7:00 pm : 8:00 pm More Details Online This event has Passed How do we build our",
+          "s and discover our career paths? Arabic 03 May 2026 8:00 pm : 9:00 pm More Details Online This event has Passed Lead Organizational"
+        ],
+        "event_like_links": [
+          {
+            "text": "Programs",
+            "href": "https://hub.misk.org.sa/en/programs/"
+          },
+          {
+            "text": "Events",
+            "href": "https://hub.misk.org.sa/en/events/"
+          },
+          {
+            "text": "العربية",
+            "href": "https://hub.misk.org.sa/ar/events/"
+          },
+          {
+            "text": "Sign in",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "Programs",
+            "href": "https://hub.misk.org.sa/en/programs/"
+          },
+          {
+            "text": "Events",
+            "href": "https://hub.misk.org.sa/en/events/"
+          },
+          {
+            "text": "العربية",
+            "href": "https://hub.misk.org.sa/ar/events/"
+          },
+          {
+            "text": "Skills",
+            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
+          },
+          {
+            "text": "Share",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "Skills",
+            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
+          },
+          {
+            "text": "Share",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "Skills",
+            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
+          },
+          {
+            "text": "Share",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "Roadshow",
+            "href": "https://hub.misk.org.sa/events/?category=Roadshow#event"
+          },
+          {
+            "text": "Share",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "Roadshow",
+            "href": "https://hub.misk.org.sa/events/?category=Roadshow#event"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 5
+      },
+      "network_total": 4,
       "network_endpoints": [
         {
           "method": "POST",
           "status": 200,
-          "url": "https://api-iam.intercom.io/messenger/web/launcher_settings",
+          "url": "https://hub.misk.org.sa/api/events/RenderLazyLoadAllEventsOfSeries",
           "content_type": "application/json",
           "resource_type": "xhr",
-          "request_post_data": "app_id=xbas31f3&v=3&g=9226209e0aff00bfd9ef68ea745d83276388a4f6&s=52a3b4f2-4f5d-4438-9ed0-f8d86d906632&r=&platform=web&installation_type=js-snippet&installation_version=undefined&Idempotency-Key=5b4865953bc93b00&internal=&is_intersection_booted=false&page_title=%D8%A3%D8%A8%D8%B1%D8%B2%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%A7%D9%84%D9%8A%D9%88%D9%85%20-%20Platinumlist.net&user_active_company_id=undefined&user_data=%7B%7D&referer=https%3A%2F%2Friyadh.platinumlist.net%2Far%2Fcalendar%2Ftoday",
-          "response_shape": "json-object:alignment,color,color_dark,has_required_features,horizontal_padding,instant_boot_enabled,launcher_logo_url,launcher_logo_dark_url",
-          "preview": "{\"alignment\":\"right\",\"color\":\"#E139F7\",\"color_dark\":\"#E139F7\",\"has_required_features\":true,\"horizontal_padding\":20,\"instant_boot_enabled\":true,\"launcher_logo_url\":null,\"launcher_logo_dark_url\":null,\"messenger_layout\":\"widget\",\"messenger_mode_switcher_enabled\":false,\"secondary_color\":\"#e139f7\",\"secondary_color_dark\":\"#e139f7\",\"show_launcher\":true,\"theme_mode\":\"light\",\"updated_at\":1783587754,\"vertical_padding\":20}"
+          "request_post_data": "{\"SkipCount\":0,\"CurrentCulture\":\"en-US\",\"CategoryId\":0,\"OrderBy\":\"\",\"EventTypeFilters\":[],\"LanguageFilters\":[],\"StatusFilters\":[],\"FromDate\":null,\"ToDate\":null,\"LocationId\":null,\"CurrentPageId\":\"4411\"}",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"nextSkippedValue\":8,\"stringObjectValues\":\"<div class=\\\"article-outer v3\\\"><div class=\\\" time-label\\\"><span>Online</span></div><div class=\\\"article-img\\\"><a href=\\\"/events/skills/cybersecurity-in-the-workplace/\\\"><img src=\\\"/media/c22hg1uz/_الأمن-السيبراني-في-بيئة-العمل_hub-en.png\\\" alt=\\\"logo\\\"></a></div><div class=\\\"article-content\\\"><div class=\\\"article-text-wrapper\\\"><div class=\\\"body-text-3 mgbx1 color-peach font-weight-200\\\" style=\\\"white-space:nowrap;\\\"><span class=\\\"color-peach mgafx1\\\"><i class=\\\"fas fa-circle\\\"></i></span>This event has Passed</div><div class=\\\"article-title\\\"><div class=\\\"article-title-inner 6 red\\\"><a href=/events/skills/cybersecurity-in-the-workplace/><b>Cybersecurity in the Workplace</b></a></div></div><div class=\\\"item-list\\\"><ul><li><i class=\\\"far fa-dxh-format font-weight-200\\\"></i><span>Arabic</span></li><li><i class=\\\"far fa-calendar font-weight-200\\\"></i><span>01 Jul 2026</span></li><li><i class=\\\"far fa-clock font-weight-200\\\"></i><span>7:00 pm : 8:00 pm</span></li></ul></div></div><div class=\\\"bottom-links-wrapper pdtx2 align-items-center event-item-card-wrapper\\\"><div class=\\\"card-btn-state-login d-none btn-bar-wrapper alone pdafx2\\\"><a href=\\\"/events/skills/cybersecurity-in-the-workplace/\\\" class=\\\"card-btn-state-login d-none btn small light-turquoise\\\">More Details\\n</a></div><div class=\\\"card-btn-state-logout d-none w-100 btn-bar-wrapper pdafx2 alone\\\"><a href=\\\"/events/skills/cybersecurity-in-the-workplace/\\\" class=\\\"card-btn-state-logout d-none btn small w-100 light-turquoise\\\">More Details\\n</a></div><div class=\\\"icon-link\\\"><a href=\\\"javascript:;\\\" data-recombee-id=\\\"9672\\\" data-id=\\\"9672\\\" class=\\\"btn-icon js-apply-now-show-sign-in btnBookmarkEventLogout\\\"><i class=\\\"far fa-bookmark\\\"></i></a><a id=\\\"\\\" href=\\\"javascr"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_a47fe19ab76610f6c115a0aa1ae941c620b3388e8bba82d520dc1292adf0efab\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783604781049.520083003823847880\"}",
+          "response_shape": "empty",
+          "preview": ""
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/6850f52e029b4d329a98ec11a68351ad/items/?frontend_timestamp=1783604780&frontend_sign=3f95b28e1a7c393ec972a342982c616309d37ac5",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
+          "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
+          "preview": "{\"recommId\": \"a32b5fcd775875770e878b0064b0511c\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
+        }
+      ],
+      "network_sample": [
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://hub.misk.org.sa/api/events/RenderLazyLoadAllEventsOfSeries",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"SkipCount\":0,\"CurrentCulture\":\"en-US\",\"CategoryId\":0,\"OrderBy\":\"\",\"EventTypeFilters\":[],\"LanguageFilters\":[],\"StatusFilters\":[],\"FromDate\":null,\"ToDate\":null,\"LocationId\":null,\"CurrentPageId\":\"4411\"}",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"nextSkippedValue\":8,\"stringObjectValues\":\"<div class=\\\"article-outer v3\\\"><div class=\\\" time-label\\\"><span>Online</span></div><div class=\\\"article-img\\\"><a href=\\\"/events/skills/cybersecurity-in-the-workplace/\\\"><img src=\\\"/media/c22hg1uz/_الأمن-السيبراني-في-بيئة-العمل_hub-en.png\\\" alt=\\\"logo\\\"></a></div><div class=\\\"article-content\\\"><div class=\\\"article-text-wrapper\\\"><div class=\\\"body-text-3 mgbx1 color-peach font-weight-200\\\" style=\\\"white-space:nowrap;\\\"><span class=\\\"color-peach mgafx1\\\"><i class=\\\"fas fa-circle\\\"></i></span>This event has Passed</div><div class=\\\"article-title\\\"><div class=\\\"article-title-inner 6 red\\\"><a href=/events/skills/cybersecurity-in-the-workplace/><b>Cybersecurity in the Workplace</b></a></div></div><div class=\\\"item-list\\\"><ul><li><i class=\\\"far fa-dxh-format font-weight-200\\\"></i><span>Arabic</span></li><li><i class=\\\"far fa-calendar font-weight-200\\\"></i><span>01 Jul 2026</span></li><li><i class=\\\"far fa-clock font-weight-200\\\"></i><span>7:00 pm : 8:00 pm</span></li></ul></div></div><div class=\\\"bottom-links-wrapper pdtx2 align-items-center event-item-card-wrapper\\\"><div class=\\\"card-btn-state-login d-none btn-bar-wrapper alone pdafx2\\\"><a href=\\\"/events/skills/cybersecurity-in-the-workplace/\\\" class=\\\"card-btn-state-login d-none btn small light-turquoise\\\">More Details\\n</a></div><div class=\\\"card-btn-state-logout d-none w-100 btn-bar-wrapper pdafx2 alone\\\"><a href=\\\"/events/skills/cybersecurity-in-the-workplace/\\\" class=\\\"card-btn-state-logout d-none btn small w-100 light-turquoise\\\">More Details\\n</a></div><div class=\\\"icon-link\\\"><a href=\\\"javascript:;\\\" data-recombee-id=\\\"9672\\\" data-id=\\\"9672\\\" class=\\\"btn-icon js-apply-now-show-sign-in btnBookmarkEventLogout\\\"><i class=\\\"far fa-bookmark\\\"></i></a><a id=\\\"\\\" href=\\\"javascr"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_a47fe19ab76610f6c115a0aa1ae941c620b3388e8bba82d520dc1292adf0efab\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783604781049.520083003823847880\"}",
+          "response_shape": "empty",
+          "preview": ""
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/6850f52e029b4d329a98ec11a68351ad/items/?frontend_timestamp=1783604780&frontend_sign=3f95b28e1a7c393ec972a342982c616309d37ac5",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
+          "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
+          "preview": "{\"recommId\": \"a32b5fcd775875770e878b0064b0511c\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_0c5e33e144708692e554d70dc8631a109d109041c16ccc82cbde7f5aaec3314e\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783604781049.520083003823847880\"}",
+          "response_shape": "empty",
+          "preview": ""
+        }
+      ]
+    },
+    {
+      "id": "jcci-events-center",
+      "name": "Jeddah Chamber Exhibitions and Events Center",
+      "priority": 29,
+      "url": "https://www.jcci.org.sa/en/المعارض-والفعاليات",
+      "final_url": "https://www.jcci.org.sa/en/%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D9%88%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 16186,
+      "classification": "browser-network-api",
+      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
+      "title": "المعارض والفعاليات - JCC - Jeddah Chamber",
+      "text_bytes": 2257,
+      "html_bytes": 1561481,
+      "html_snapshot": "data/raw/browser-probes/jcci-events-center-2026-07-09T13-45-43-250Z.html",
+      "screenshot": "data/raw/browser-probes/jcci-events-center-2026-07-09T13-45-43-250Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": [
+          {
+            "text": "Programs and Initiatives",
+            "href": "https://www.jcci.org.sa/en/programs-landing-page"
+          },
+          {
+            "text": "Community Development Center Programs at a Glance",
+            "href": "https://www.jcci.org.sa/en/community-development-landing-page"
+          },
+          {
+            "text": "Small and Medium Enterprises Support Center Programs at a Glance",
+            "href": "https://www.jcci.org.sa/en/%D8%A8%D8%B1%D8%A7%D9%85%D8%AC-%D8%AF%D8%B9%D9%85-%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A2%D8%AA-%D8%A7%D9%84%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9-%D9%88%D8%A7%D9%84%D9%85%D8%AA%D9%88%D8%B3%D8%B7%D8%A9"
+          },
+          {
+            "text": "Center Program Targets",
+            "href": "https://www.jcci.org.sa/en/%D9%85%D8%B3%D8%AA%D9%87%D8%AF%D9%81%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2"
+          },
+          {
+            "text": "Initiatives and Events",
+            "href": "https://www.jcci.org.sa/en/%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA"
+          },
+          {
+            "text": "Workshops and Meetings",
+            "href": "https://www.jcci.org.sa/en/%D8%A7%D9%84%D9%84%D9%82%D8%A7%D8%A1%D8%A7%D8%AA-%D9%88%D9%88%D8%B1%D8%B4-%D8%A7%D9%84%D8%B9%D9%85%D9%84-%D9%88%D8%A7%D9%84%D9%86%D8%AF%D9%88%D8%A7%D8%AA"
+          },
+          {
+            "text": "Exhibitions and Events",
+            "href": "https://www.jcci.org.sa/en/%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D9%88%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA"
+          },
+          {
+            "text": "Exhibition and Events Center at a Glance",
+            "href": "https://www.jcci.org.sa/en/%D9%85%D8%B1%D9%83%D8%B2-%D8%AC%D8%AF%D8%A9-%D9%84%D9%84%D9%85%D9%86%D8%AA%D8%AF%D9%8A%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA"
+          },
+          {
+            "text": "Programs and Initiatives",
+            "href": "https://www.jcci.org.sa/"
+          },
+          {
+            "text": "Programs and Initiatives",
+            "href": "https://www.jcci.org.sa/en/programs-landing-page"
+          },
+          {
+            "text": "Community Development Center Programs at a Glance",
+            "href": "https://www.jcci.org.sa/en/community-development-landing-page"
+          },
+          {
+            "text": "Small and Medium Enterprises Support Center Programs at a Glance",
+            "href": "https://www.jcci.org.sa/en/%D8%A8%D8%B1%D8%A7%D9%85%D8%AC-%D8%AF%D8%B9%D9%85-%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A2%D8%AA-%D8%A7%D9%84%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9-%D9%88%D8%A7%D9%84%D9%85%D8%AA%D9%88%D8%B3%D8%B7%D8%A9"
+          },
+          {
+            "text": "Center Program Targets",
+            "href": "https://www.jcci.org.sa/en/%D9%85%D8%B3%D8%AA%D9%87%D8%AF%D9%81%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2"
+          },
+          {
+            "text": "Initiatives and Events",
+            "href": "https://www.jcci.org.sa/en/%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA"
+          },
+          {
+            "text": "News and Events",
+            "href": "https://www.jcci.org.sa/"
+          },
+          {
+            "text": "Workshops and Meetings",
+            "href": "https://www.jcci.org.sa/en/%D8%A7%D9%84%D9%84%D9%82%D8%A7%D8%A1%D8%A7%D8%AA-%D9%88%D9%88%D8%B1%D8%B4-%D8%A7%D9%84%D8%B9%D9%85%D9%84-%D9%88%D8%A7%D9%84%D9%86%D8%AF%D9%88%D8%A7%D8%AA"
+          },
+          {
+            "text": "Exhibitions and Events",
+            "href": "https://www.jcci.org.sa/en/%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D9%88%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA"
+          },
+          {
+            "text": "Exhibition and Events Center at a Glance",
+            "href": "https://www.jcci.org.sa/en/%D9%85%D8%B1%D9%83%D8%B2-%D8%AC%D8%AF%D8%A9-%D9%84%D9%84%D9%85%D9%86%D8%AA%D8%AF%D9%8A%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA"
+          },
+          {
+            "text": "All Events",
+            "href": "https://www.jcci.org.sa/en/%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D9%88%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA"
+          },
+          {
+            "text": "Events",
+            "href": "https://www.jcci.org.sa/en/%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D9%88%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 3
+      },
+      "network_total": 17,
+      "network_endpoints": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-spa-web%405.0.28%2Finit",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-spa-web@5.0.28\\/route\\/Route\":\"\\/o\\/js\\/resolved-module\\/frontend-js-spa-web@5.0.28\\/route\\/Route\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-spa-web@5.0.28\\/screen\\/RenderURLScreen\":\"\\/o\\/js\\/resolved-module\\/frontend-js-spa-web@5.0.28\\/screen\\/RenderURLScreen\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_fie"
         },
         {
           "method": "GET",
           "status": 200,
-          "url": "https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnSBXAkFLZp8QTxFdt4cj45fJQkmBKJPqr5o8XZTLqjp5iU0MEyO3BSf9tIWOLybjUmdpsf5QPCjeWAm9Y7kuts6kyW0E2e_rFEyduDiXfkRvivu5GHJ156YYtbjjPY8gMfqU3J0Pt5L9f-GEfCcPiblVbARznMTd03YQabx96SxcvuyoOLXE0zsPSUXlSUwsU42_7vHYrgibXXZLy_6Opo6wkmhoNZBg1DHqgDqj2SwPBAMEdu5N8JfWplCNdWsHMAhaRtjJv1Ya3UcgXUtssYJyoV7LRzUQZ5ojK9Mr_oqWHIvH0U&lib=MMFla1dbty4E2kC_A4Ps0p1yV9uYVTecs",
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-collapse-support-web%402.0.12%2Findex",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
-          "response_shape": "json-object:fire,reason",
-          "preview": "{\"fire\":false,\"reason\":\"Missing or invalid event_id\"}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://api-iam.intercom.io/messenger/web/ping",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "app_id=xbas31f3&v=3&g=9226209e0aff00bfd9ef68ea745d83276388a4f6&s=2c786390-21a3-4957-80a0-a0fd05ded3ce&r=&platform=web&installation_type=js-snippet&installation_version=undefined&Idempotency-Key=6ca48d73e63be014&internal=%7B%7D&is_intersection_booted=false&page_title=%D8%A3%D8%A8%D8%B1%D8%B2%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%A7%D9%84%D9%8A%D9%88%D9%85%20-%20Platinumlist.net&user_active_company_id=undefined&user_data=%7B%22language_override%22%3A%22ar%22%7D&source=apiBoot&sampling=false&referer=https%3A%2F%2Friyadh.platinumlist.net%2Far%2Fcalendar%2Ftoday",
           "response_shape": "json-like-invalid",
-          "preview": "{\"app\":{\"name\":\"Platinumlist\",\"audio_enabled\":true,\"show_powered_by\":true,\"team_intro\":null,\"team_greeting\":\"Hi there 👋\",\"messenger_background\":\"background-6\",\"expected_response_delay_translation_key\":\"a_few_minutes\",\"launcher_expected_response_delay_translation_key\":\"the_team_typically_replies_in_minutes\",\"sms_notifications_enabled\":true,\"inbound_conversations_disabled\":false,\"office_hours_response\":null,\"help_center_site_url\":\"http://helpcenter.platinumlist.net\",\"messenger_logo_url\":\"https://downloads.intercomcdn.com/i/o/xbas31f3/803395/f1dcb6671e9aa31d51f59e074c63/42f95a5b45239de479cefcfef27cf6e3.png\",\"user_conversation_gifs_enabled\":true,\"user_conversation_voice_notes_enabled\":true,\"developer_workspace\":false,\"upfront_email_collection_setting\":\"never\",\"temporary_expectations_message\":null,\"localized_expected_response_delay_short_text\":\"A few minutes\",\"localized_expected_response_delay_long_text\":\"We typically reply in a few minutes\",\"help_center_id\":null,\"article_auto_reaction_enabled\":false,\"conversation_history_ttl_days\":null,\"use_cache_for\":[]},\"user\":{\"id\":\"6a4f81c10018af82d97407e1\",\"role\":\"visitor_role\",\"locale\":\"en-us\",\"has_conversations\":false,\"anonymous_id\":\"6b2f42e6-410b-48ef-b89a-514c672b100e\",\"country_code\":\"sa\",\"new_session\":true,\"help_center_require_search\":false,\"requires_cookie_consent\":false,\"prevent_multiple_inbound_conversation\":true,\"user_assignments\":{}},\"client_matches\":[],\"launcher_settings\":{\"alignment\":\"right\",\"color\":\"#E139F7\",\"color_dark\":\"#E139F7\",\"has_required_features\":true,\"horizontal_padding\":20,\"instant_boot_enabled\":true,\"launcher_logo_url\":null,\"launcher_logo_dark_url\":null,\"messenger_layout\":\"widget\",\"messenger_mode_switcher_enabled\":false,\"secondary_color\":\"#e139f7\",\"secondary_color_dark\":\"#e139f7\",\"show_launcher\":true,\"theme_mod"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://firebaseremoteconfig.googleapis.com/v1/projects/platinumlist-1014/namespaces/fireperf:fetch?key=AIzaSyDaGP5AHnM-P1wNrGBR_2YR-7Mg_xGk09Y",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"app_instance_id\":\"cCCTWNAF6W6XBaj2m4nZAp\",\"app_instance_id_token\":\"eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6ODg2MDU0MjcxNDcyOndlYjo4NDBmOWRmNGNiNjQxZGM4ZDYwNTM1IiwiZXhwIjoxNzg0MjAwMjU3LCJmaWQiOiJjQ0NUV05BRjZXNlhCYWoybTRuWkFwIiwicHJvamVjdE51bWJlciI6ODg2MDU0MjcxNDcyfQ.AB2LPV8wRAIgBH5gdiLe1NkpfEMXSL7Wwc-CyOGf0zk7xeWDbjce3CUCIGzTHsatEZOr_h4G35lZv0sbpnC3fe91BfaVCxbwEmoj\",\"app_id\":\"1:886054271472:web:840f9df4cb641dc8d60535\",\"app_version\":\"0.7.9\",\"sdk_version\":\"0.0.1\"}",
-          "response_shape": "json-object:entries,state,templateVersion",
-          "preview": "{ \"entries\": { \"fpr_disabled_android_versions\": \"\", \"fpr_disabled_ios_versions\": \"\", \"fpr_disabled_web_versions\": \"\", \"fpr_enabled\": \"true\", \"fpr_experiment_app_start_ttid\": \"true\", \"fpr_log_endpoint_url\": \"https://firebaselogging.googleapis.com/v0cc/log?format=json_proto\", \"fpr_log_source\": \"462\", \"fpr_log_transport_android_percent\": \"100.0\", \"fpr_log_transport_ios_percent\": \"100.0\", \"fpr_log_transport_key\": \"AIzaSyCx80ru6-RXeTi3GvqkFsMVyMf-vpgIoVw\", \"fpr_rl_network_request_event_count_bg\": \"70\", \"fpr_rl_network_request_event_count_fg\": \"700\", \"fpr_rl_time_limit_sec\": \"600\", \"fpr_rl_trace_event_count_bg\": \"30\", \"fpr_rl_trace_event_count_fg\": \"300\", \"fpr_session_gauge_cpu_capture_frequency_bg_ms\": \"0\", \"fpr_session_gauge_cpu_capture_frequency_fg_ms\": \"100\", \"fpr_session_gauge_memory_capture_frequency_bg_ms\": \"0\", \"fpr_session_gauge_memory_capture_frequency_fg_ms\": \"100\", \"fpr_session_max_length_min\": \"240\", \"fpr_vc_fragment_sampling_rate\": \"0.1\", \"fpr_vc_network_request_sampling_rate\": \"0.4018419628771518\", \"fpr_vc_session_sampling_rate\": \"0.25\", \"fpr_vc_trace_sampling_rate\": \"1.0\" }, \"state\": \"UPDATE\", \"templateVersion\": \"639\" }"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://bam.nr-data.net/1/b9f23f089a?a=7553806&v=1.317.0&to=MVNVZRMDCEJTAU0IDggZdEQSFglcHQdPBA8SGVRQDQcIVVMQFggPAlNP&rst=8140&ck=0&s=2c4df5bdaef9941c&ref=https://riyadh.platinumlist.net/ar/calendar/today&ptid=60e22a5816f1af58&ap=2292&be=3831&fe=3861&dc=1173&at=HRRCE1sZGx0QAxtbGhtL&fsh=1&perf=%7B%22timing%22:%7B%22of%22:1783595450152,%22n%22:0,%22f%22:977,%22dn%22:977,%22dne%22:977,%22c%22:977,%22s%22:977,%22ce%22:977,%22rq%22:978,%22rp%22:3832,%22rpe%22:3833,%22di%22:4762,%22ds%22:5004,%22de%22:5004,%22dc%22:7659,%22l%22:7659,%22le%22:7692%7D,%22navigation%22:%7B%7D%7D&fp=4700&fcp=4700",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "{\"ja\":{\"webdriverDetected\":true}}",
-          "response_shape": "json-object:stn,err,ins,spa,sr,srs,st,sts",
-          "preview": "{\"stn\":0,\"err\":1,\"ins\":1,\"spa\":1,\"sr\":0,\"srs\":0,\"st\":1,\"sts\":0,\"log\":0,\"logapi\":0,\"app\":{\"agents\":[{\"entityGuid\":\"MzIzMDEyfEJST1dTRVJ8QVBQTElDQVRJT058ODA0MDY5Ng\"}],\"nrServerTime\":1783595458832}}"
+          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
         },
         {
           "method": "GET",
           "status": 200,
-          "url": "https://riyadh.platinumlist.net/event/calendar/render-line-calendar?chunk=20&startDate=today&selectedDate=today",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"html\":\"\\n<div class=\\\"more-dates\\\"><div class=\\\"more-dates__title\\\">\\u062e\\u064a\\u0627\\u0631\\u0627\\u062a \\u0623\\u062e\\u0631\\u0649<\\/div><div class=\\\"more-dates__btn\\\"><div class=\\\"dual-calendar-btn dual-calendar-btn--line-calendar\\\"\\n\\t\\t\\t data-calendar-btn\\n\\t\\t\\t data-calendar-btn-input=\\\"data-line-calendar-input\\\"\\n\\t\\t><svg class=\\\"icon icon-calendar-picker\\\"><use xlink:href=\\\"#svg-icon-calendar-picker\\\"><\\/use><\\/svg><\\/div><\\/div><div class=\\\"calendar-btn no-mobile\\\" data-require=\\\"date-time-picker\\\"><div class=\\\"date-picker\\\"><input type=\\\"text\\\" name=\\\"\\\" id=\\\"\\\" value=\\\"\\\" readonly=\\\"readonly\\\" class=\\\"calendar-btn__input\\\" placeholder=\\\"\\u0627\\u062e\\u062a\\u0631 \\u0627\\u0644\\u062a\\u0627\\u0631\\u064a\\u062e\\\" autocomplete=\\\"off\\\" data-date-picker=\\\"{&quot;dateFormat&quot;:&quot;yy-mm-dd&quot;,&quot;timeFormat&quot;:&quot;HH:mm&quot;,&quot;altFormat&quot;:&quot;yy-mm-dd&quot;,&quot;altTimeFormat&quot;:&quot;HH:mm&quot;,&quot;altSeparator&quot;:&quot; &quot;,&quot;firstDay&quot;:0,&quot;altFieldId&quot;:&quot;alternate-id-&quot;,&quot;altField&quot;:&quot;#alternate-id-&quot;,&quot;showButtonPanel&quot;:false,&quot;showOtherMonths&quot;:true,&quot;numberOfMonths&quot;:2,&quot;buttonText&quot;:&quot;&quot;,&quot;minDate&quot;:0}\\\" data-line-calendar-input=\\\"\\\" data-require=\\\"date-time-picker\\\" hiddenInput=\\\"&lt;input type=&quot;hidden&quot; name=&quot;&quot; value=&quot;&quot; id=&quot;alternate-id-&quot; \\/&gt;\\\" \\/><input type=\\\"hidden\\\" name=\\\"\\\" value=\\\"\\\" id=\\\"alternate-id-\\\" \\/><\\/div><\\/div><\\/div><div class=\\\"line-calendar\\\" data-line-calendar data-event-calendar=\\\"&#x7B;&quot;showHijri&quot;&#x3A;false,&quot;showDateRowExpanded&quot;&#x3A;false&#x7D;\\\"><ul class=\\\"line-calendar__months\\\" data-event-calendar-months-container><li data-tabbed-layout=\\\"2026-"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://firebaselogging-pa.googleapis.com/v1/firelog/legacy/log?key=AIzaSyCx80ru6-RXeTi3GvqkFsMVyMf-vpgIoVw",
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-tabs-support-web%402.0.11%2Findex",
           "content_type": "application/json",
           "resource_type": "fetch",
-          "request_post_data": "{\"request_time_ms\":\"1783595461695\",\"client_info\":{\"client_type\":1,\"js_client_info\":{}},\"log_source\":462,\"log_event\":[{\"source_extension_json_proto3\":\"{\\\"application_info\\\":{\\\"google_app_id\\\":\\\"1:886054271472:web:840f9df4cb641dc8d60535\\\",\\\"app_instance_id\\\":\\\"cCCTWNAF6W6XBaj2m4nZAp\\\",\\\"web_app_info\\\":{\\\"sdk_version\\\":\\\"0.7.9\\\",\\\"page_url\\\":\\\"https://riyadh.platinumlist.net/ar/calendar/today\\\",\\\"service_worker_status\\\":3,\\\"visibility_state\\\":1,\\\"effective_connection_type\\\":4},\\\"application_process_state\\\":0},\\\"network_request_metric\\\":{\\\"url\\\":\\\"https://cdn.platinumlist.net/dist/v904/css-compiled/front.css\\\",\\\"http_method\\\":0,\\\"http_response_code\\\":200,\\\"response_payload_bytes\\\":0,\\\"client_start_time_us\\\":1783595453989200,\\\"time_to_response_completed_us\\\":578800}}\",\"event_time_ms\":\"1783595458294\"},{\"source_extension_json_proto3\":\"{\\\"application_info\\\":{\\\"google_app_id\\\":\\\"1:886054271472:web:840f9df4cb641dc8d60535\\\",\\\"app_instance_id\\\":\\\"cCCTWNAF6W6XBaj2m4nZAp\\\",\\\"web_app_info\\\":{\\\"sdk_version\\\":\\\"0.7.9\\\",\\\"page_url\\\":\\\"https://riyadh.platinumlist.net/ar/calendar/today\\\",\\\"service_worker_status\\\":3,\\\"visibility_state\\\":1,\\\"effective_connection_type\\\":4},\\\"application_process_state\\\":0",
-          "response_shape": "json-object:nextRequestWaitMillis,logResponseDetails",
-          "preview": "{ \"nextRequestWaitMillis\": \"10000\", \"logResponseDetails\": [ { \"responseAction\": \"DELETE_REQUEST\" } ] }"
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-dropdown-support-web%402.0.9%2Findex",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-alert-support-web%402.0.9%2Findex",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
         }
       ],
       "network_sample": [
         {
           "method": "GET",
           "status": 200,
-          "url": "https://firebase.googleapis.com/v1alpha/projects/-/apps/1:886054271472:web:840f9df4cb641dc8d60535/webConfig",
-          "content_type": "application/json",
-          "resource_type": "fetch",
+          "url": "https://maps.googleapis.com/maps/api/js",
+          "content_type": "text/javascript",
+          "resource_type": "script",
           "request_post_data": "",
-          "response_shape": "json-object:projectId,appId,databaseURL,storageBucket,locationId,authDomain,messagingSenderId,measurementId",
-          "preview": "{ \"projectId\": \"platinumlist-1014\", \"appId\": \"1:886054271472:web:840f9df4cb641dc8d60535\", \"databaseURL\": \"https://platinumlist-1014.firebaseio.com\", \"storageBucket\": \"platinumlist-1014.firebasestorage.app\", \"locationId\": \"us-central\", \"authDomain\": \"platinumlist-1014.firebaseapp.com\", \"messagingSenderId\": \"886054271472\", \"measurementId\": \"G-4719RTSNYZ\" }"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://api-iam.intercom.io/messenger/web/launcher_settings",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "app_id=xbas31f3&v=3&g=9226209e0aff00bfd9ef68ea745d83276388a4f6&s=52a3b4f2-4f5d-4438-9ed0-f8d86d906632&r=&platform=web&installation_type=js-snippet&installation_version=undefined&Idempotency-Key=5b4865953bc93b00&internal=&is_intersection_booted=false&page_title=%D8%A3%D8%A8%D8%B1%D8%B2%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%A7%D9%84%D9%8A%D9%88%D9%85%20-%20Platinumlist.net&user_active_company_id=undefined&user_data=%7B%7D&referer=https%3A%2F%2Friyadh.platinumlist.net%2Far%2Fcalendar%2Ftoday",
-          "response_shape": "json-object:alignment,color,color_dark,has_required_features,horizontal_padding,instant_boot_enabled,launcher_logo_url,launcher_logo_dark_url",
-          "preview": "{\"alignment\":\"right\",\"color\":\"#E139F7\",\"color_dark\":\"#E139F7\",\"has_required_features\":true,\"horizontal_padding\":20,\"instant_boot_enabled\":true,\"launcher_logo_url\":null,\"launcher_logo_dark_url\":null,\"messenger_layout\":\"widget\",\"messenger_mode_switcher_enabled\":false,\"secondary_color\":\"#e139f7\",\"secondary_color_dark\":\"#e139f7\",\"show_launcher\":true,\"theme_mode\":\"light\",\"updated_at\":1783587754,\"vertical_padding\":20}"
+          "response_shape": "text",
+          "preview": "window.google = window.google || {}; google.maps = google.maps || {}; (function() { var modules = google.maps.modules = {}; google.maps.__gjsload__ = function(name, text) { modules[name] = text; }; google.maps.Load = function(apiLoad) { delete google.maps.Load; apiLoad([0.009999999776482582,[null,[[\"https://khms0.googleapis.com/kh?v=1012\\u0026hl=ar-SA\\u0026gl=US\\u0026\",\"https://khms1.googleapis.com/kh?v=1012\\u0026hl=ar-SA\\u0026gl=US\\u0026\"],null,null,null,1,\"1012\",[\"https://khms0.google.com/kh?v=1012\\u0026hl=ar-SA\\u0026gl=US\\u0026\",\"https://khms1.google.com/kh?v=1012\\u0026hl=ar-SA\\u0026gl=US\\u0026\"]],null,null,null,null,[[\"https://cbks0.googleapis.com/cbk?\",\"https://cbks1.googleapis.com/cbk?\"]],[[\"https://khms0.googleapis.com/kh?v=169\\u0026hl=ar-SA\\u0026gl=US\\u0026\",\"https://khms1.googleapis.com/kh?v=169\\u0026hl=ar-SA\\u0026gl=US\\u0026\"],null,null,null,null,\"169\",[\"https://khms0.google.com/kh?v=169\\u0026hl=ar-SA\\u0026gl=US\\u0026\",\"https://khms1.google.com/kh?v=169\\u0026hl=ar-SA\\u0026gl=US\\u0026\"]],null,null,null,null,null,null,null,[[\"https://streetviewpixels-pa.googleapis.com/v1/thumbnail?hl=ar-SA\\u0026gl=US\\u0026\",\"https://streetviewpixels-pa.googleapis.com/v1/thumbnail?hl=ar-SA\\u0026gl=US\\u0026\"]]],[\"ar-SA\",\"US\",null,1,null,null,\"https://maps.gstatic.com/mapfiles/\",null,\"https://maps.googleapis.com\",\"https://maps.googleapis.com\",null,\"https://maps.google.com\",null,\"https://maps.gstatic.com/maps-api-v3/api/images/\",\"https://www.google.com/maps\",null,\"https://www.google.com\",1,\"https://maps.googleapis.com/maps_api_js_slo/log?hasfast=true\",0,1],[\"https://maps.googleapis.com/maps-api-v3/api/js/65/8c/intl/ar_ALL\",\"3.65.8c\"],[992223009],null,null,null,[112],null,null,\"\",null,null,1,\"https://khms.googleapis.com/mz?v=1012\\u0026\",null,\"https://earth"
         },
         {
           "method": "GET",
           "status": 200,
-          "url": "https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnSBXAkFLZp8QTxFdt4cj45fJQkmBKJPqr5o8XZTLqjp5iU0MEyO3BSf9tIWOLybjUmdpsf5QPCjeWAm9Y7kuts6kyW0E2e_rFEyduDiXfkRvivu5GHJ156YYtbjjPY8gMfqU3J0Pt5L9f-GEfCcPiblVbARznMTd03YQabx96SxcvuyoOLXE0zsPSUXlSUwsU42_7vHYrgibXXZLy_6Opo6wkmhoNZBg1DHqgDqj2SwPBAMEdu5N8JfWplCNdWsHMAhaRtjJv1Ya3UcgXUtssYJyoV7LRzUQZ5ojK9Mr_oqWHIvH0U&lib=MMFla1dbty4E2kC_A4Ps0p1yV9uYVTecs",
+          "url": "https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true",
           "content_type": "application/json",
-          "resource_type": "fetch",
+          "resource_type": "xhr",
           "request_post_data": "",
-          "response_shape": "json-object:fire,reason",
-          "preview": "{\"fire\":false,\"reason\":\"Missing or invalid event_id\"}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://firebaseinstallations.googleapis.com/v1/projects/platinumlist-1014/installations",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"fid\":\"cCCTWNAF6W6XBaj2m4nZAp\",\"authVersion\":\"FIS_v2\",\"appId\":\"1:886054271472:web:840f9df4cb641dc8d60535\",\"sdkVersion\":\"w:0.6.19\"}",
-          "response_shape": "json-object:name,fid,refreshToken,authToken",
-          "preview": "{ \"name\": \"projects/886054271472/installations/cCCTWNAF6W6XBaj2m4nZAp\", \"fid\": \"cCCTWNAF6W6XBaj2m4nZAp\", \"refreshToken\": \"3_AS3qfwKSCyHg9-_p8XnBb5Rj6pcW3pXPDSWag997mpIfOZV4Q9VbrN-XiawWIeU_sGPzzUZiPH7FVgEMDNcoPxF-uD2i8kUjGuIQTMxAhIkEXg\", \"authToken\": { \"token\": \"eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6ODg2MDU0MjcxNDcyOndlYjo4NDBmOWRmNGNiNjQxZGM4ZDYwNTM1IiwiZXhwIjoxNzg0MjAwMjU3LCJmaWQiOiJjQ0NUV05BRjZXNlhCYWoybTRuWkFwIiwicHJvamVjdE51bWJlciI6ODg2MDU0MjcxNDcyfQ.AB2LPV8wRAIgBH5gdiLe1NkpfEMXSL7Wwc-CyOGf0zk7xeWDbjce3CUCIGzTHsatEZOr_h4G35lZv0sbpnC3fe91BfaVCxbwEmoj\", \"expiresIn\": \"604800s\" } }"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://api-iam.intercom.io/messenger/web/ping",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "app_id=xbas31f3&v=3&g=9226209e0aff00bfd9ef68ea745d83276388a4f6&s=2c786390-21a3-4957-80a0-a0fd05ded3ce&r=&platform=web&installation_type=js-snippet&installation_version=undefined&Idempotency-Key=6ca48d73e63be014&internal=%7B%7D&is_intersection_booted=false&page_title=%D8%A3%D8%A8%D8%B1%D8%B2%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%A7%D9%84%D9%8A%D9%88%D9%85%20-%20Platinumlist.net&user_active_company_id=undefined&user_data=%7B%22language_override%22%3A%22ar%22%7D&source=apiBoot&sampling=false&referer=https%3A%2F%2Friyadh.platinumlist.net%2Far%2Fcalendar%2Ftoday",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"app\":{\"name\":\"Platinumlist\",\"audio_enabled\":true,\"show_powered_by\":true,\"team_intro\":null,\"team_greeting\":\"Hi there 👋\",\"messenger_background\":\"background-6\",\"expected_response_delay_translation_key\":\"a_few_minutes\",\"launcher_expected_response_delay_translation_key\":\"the_team_typically_replies_in_minutes\",\"sms_notifications_enabled\":true,\"inbound_conversations_disabled\":false,\"office_hours_response\":null,\"help_center_site_url\":\"http://helpcenter.platinumlist.net\",\"messenger_logo_url\":\"https://downloads.intercomcdn.com/i/o/xbas31f3/803395/f1dcb6671e9aa31d51f59e074c63/42f95a5b45239de479cefcfef27cf6e3.png\",\"user_conversation_gifs_enabled\":true,\"user_conversation_voice_notes_enabled\":true,\"developer_workspace\":false,\"upfront_email_collection_setting\":\"never\",\"temporary_expectations_message\":null,\"localized_expected_response_delay_short_text\":\"A few minutes\",\"localized_expected_response_delay_long_text\":\"We typically reply in a few minutes\",\"help_center_id\":null,\"article_auto_reaction_enabled\":false,\"conversation_history_ttl_days\":null,\"use_cache_for\":[]},\"user\":{\"id\":\"6a4f81c10018af82d97407e1\",\"role\":\"visitor_role\",\"locale\":\"en-us\",\"has_conversations\":false,\"anonymous_id\":\"6b2f42e6-410b-48ef-b89a-514c672b100e\",\"country_code\":\"sa\",\"new_session\":true,\"help_center_require_search\":false,\"requires_cookie_consent\":false,\"prevent_multiple_inbound_conversation\":true,\"user_assignments\":{}},\"client_matches\":[],\"launcher_settings\":{\"alignment\":\"right\",\"color\":\"#E139F7\",\"color_dark\":\"#E139F7\",\"has_required_features\":true,\"horizontal_padding\":20,\"instant_boot_enabled\":true,\"launcher_logo_url\":null,\"launcher_logo_dark_url\":null,\"messenger_layout\":\"widget\",\"messenger_mode_switcher_enabled\":false,\"secondary_color\":\"#e139f7\",\"secondary_color_dark\":\"#e139f7\",\"show_launcher\":true,\"theme_mod"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://api-iam.intercom.io/messenger/web/ping",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "app_id=xbas31f3&v=3&g=9226209e0aff00bfd9ef68ea745d83276388a4f6&s=2c786390-21a3-4957-80a0-a0fd05ded3ce&r=&platform=web&installation_type=js-snippet&installation_version=undefined&Idempotency-Key=b7217ecddf896357&internal=%7B%7D&is_intersection_booted=false&page_title=%D8%A3%D8%A8%D8%B1%D8%B2%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20%D8%A7%D9%84%D9%8A%D9%88%D9%85%20-%20Platinumlist.net&user_active_company_id=-1&user_data=%7B%22anonymous_id%22%3A%226b2f42e6-410b-48ef-b89a-514c672b100e%22%2C%22language_override%22%3A%22ar%22%7D&source=apiUpdate&sampling=false&referer=https%3A%2F%2Friyadh.platinumlist.net%2Far%2Fcalendar%2Ftoday&device_identifier=fa082bd3-88d9-4c5e-8e46-2c809c42f374",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"app\":{\"name\":\"Platinumlist\",\"audio_enabled\":true,\"show_powered_by\":true,\"team_intro\":null,\"team_greeting\":\"Hi there 👋\",\"messenger_background\":\"background-6\",\"expected_response_delay_translation_key\":\"a_few_minutes\",\"launcher_expected_response_delay_translation_key\":\"the_team_typically_replies_in_minutes\",\"sms_notifications_enabled\":true,\"inbound_conversations_disabled\":false,\"office_hours_response\":null,\"help_center_site_url\":\"http://helpcenter.platinumlist.net\",\"messenger_logo_url\":\"https://downloads.intercomcdn.com/i/o/xbas31f3/803395/f1dcb6671e9aa31d51f59e074c63/42f95a5b45239de479cefcfef27cf6e3.png\",\"user_conversation_gifs_enabled\":true,\"user_conversation_voice_notes_enabled\":true,\"developer_workspace\":false,\"upfront_email_collection_setting\":\"never\",\"temporary_expectations_message\":null,\"localized_expected_response_delay_short_text\":\"A few minutes\",\"localized_expected_response_delay_long_text\":\"We typically reply in a few minutes\",\"help_center_id\":null,\"article_auto_reaction_enabled\":false,\"conversation_history_ttl_days\":null,\"use_cache_for\":[]},\"user\":{\"id\":\"6a4f81c10018af82d97407e1\",\"role\":\"visitor_role\",\"locale\":\"en-us\",\"has_conversations\":false,\"anonymous_id\":\"6b2f42e6-410b-48ef-b89a-514c672b100e\",\"country_code\":\"sa\",\"new_session\":false,\"help_center_require_search\":false,\"requires_cookie_consent\":false,\"prevent_multiple_inbound_conversation\":true,\"user_assignments\":{}},\"client_matches\":[],\"launcher_settings\":{\"alignment\":\"right\",\"color\":\"#E139F7\",\"color_dark\":\"#E139F7\",\"has_required_features\":true,\"horizontal_padding\":20,\"instant_boot_enabled\":true,\"launcher_logo_url\":null,\"launcher_logo_dark_url\":null,\"messenger_layout\":\"widget\",\"messenger_mode_switcher_enabled\":false,\"secondary_color\":\"#e139f7\",\"secondary_color_dark\":\"#e139f7\",\"show_launcher\":true,\"theme_mo"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://firebaseremoteconfig.googleapis.com/v1/projects/platinumlist-1014/namespaces/fireperf:fetch?key=AIzaSyDaGP5AHnM-P1wNrGBR_2YR-7Mg_xGk09Y",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"app_instance_id\":\"cCCTWNAF6W6XBaj2m4nZAp\",\"app_instance_id_token\":\"eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6ODg2MDU0MjcxNDcyOndlYjo4NDBmOWRmNGNiNjQxZGM4ZDYwNTM1IiwiZXhwIjoxNzg0MjAwMjU3LCJmaWQiOiJjQ0NUV05BRjZXNlhCYWoybTRuWkFwIiwicHJvamVjdE51bWJlciI6ODg2MDU0MjcxNDcyfQ.AB2LPV8wRAIgBH5gdiLe1NkpfEMXSL7Wwc-CyOGf0zk7xeWDbjce3CUCIGzTHsatEZOr_h4G35lZv0sbpnC3fe91BfaVCxbwEmoj\",\"app_id\":\"1:886054271472:web:840f9df4cb641dc8d60535\",\"app_version\":\"0.7.9\",\"sdk_version\":\"0.0.1\"}",
-          "response_shape": "json-object:entries,state,templateVersion",
-          "preview": "{ \"entries\": { \"fpr_disabled_android_versions\": \"\", \"fpr_disabled_ios_versions\": \"\", \"fpr_disabled_web_versions\": \"\", \"fpr_enabled\": \"true\", \"fpr_experiment_app_start_ttid\": \"true\", \"fpr_log_endpoint_url\": \"https://firebaselogging.googleapis.com/v0cc/log?format=json_proto\", \"fpr_log_source\": \"462\", \"fpr_log_transport_android_percent\": \"100.0\", \"fpr_log_transport_ios_percent\": \"100.0\", \"fpr_log_transport_key\": \"AIzaSyCx80ru6-RXeTi3GvqkFsMVyMf-vpgIoVw\", \"fpr_rl_network_request_event_count_bg\": \"70\", \"fpr_rl_network_request_event_count_fg\": \"700\", \"fpr_rl_time_limit_sec\": \"600\", \"fpr_rl_trace_event_count_bg\": \"30\", \"fpr_rl_trace_event_count_fg\": \"300\", \"fpr_session_gauge_cpu_capture_frequency_bg_ms\": \"0\", \"fpr_session_gauge_cpu_capture_frequency_fg_ms\": \"100\", \"fpr_session_gauge_memory_capture_frequency_bg_ms\": \"0\", \"fpr_session_gauge_memory_capture_frequency_fg_ms\": \"100\", \"fpr_session_max_length_min\": \"240\", \"fpr_vc_fragment_sampling_rate\": \"0.1\", \"fpr_vc_network_request_sampling_rate\": \"0.4018419628771518\", \"fpr_vc_session_sampling_rate\": \"0.25\", \"fpr_vc_trace_sampling_rate\": \"1.0\" }, \"state\": \"UPDATE\", \"templateVersion\": \"639\" }"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://bam.nr-data.net/1/b9f23f089a?a=7553806&v=1.317.0&to=MVNVZRMDCEJTAU0IDggZdEQSFglcHQdPBA8SGVRQDQcIVVMQFggPAlNP&rst=8140&ck=0&s=2c4df5bdaef9941c&ref=https://riyadh.platinumlist.net/ar/calendar/today&ptid=60e22a5816f1af58&ap=2292&be=3831&fe=3861&dc=1173&at=HRRCE1sZGx0QAxtbGhtL&fsh=1&perf=%7B%22timing%22:%7B%22of%22:1783595450152,%22n%22:0,%22f%22:977,%22dn%22:977,%22dne%22:977,%22c%22:977,%22s%22:977,%22ce%22:977,%22rq%22:978,%22rp%22:3832,%22rpe%22:3833,%22di%22:4762,%22ds%22:5004,%22de%22:5004,%22dc%22:7659,%22l%22:7659,%22le%22:7692%7D,%22navigation%22:%7B%7D%7D&fp=4700&fcp=4700",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "{\"ja\":{\"webdriverDetected\":true}}",
-          "response_shape": "json-object:stn,err,ins,spa,sr,srs,st,sts",
-          "preview": "{\"stn\":0,\"err\":1,\"ins\":1,\"spa\":1,\"sr\":0,\"srs\":0,\"st\":1,\"sts\":0,\"log\":0,\"logapi\":0,\"app\":{\"agents\":[{\"entityGuid\":\"MzIzMDEyfEJST1dTRVJ8QVBQTElDQVRJT058ODA0MDY5Ng\"}],\"nrServerTime\":1783595458832}}"
+          "response_shape": "json-object:",
+          "preview": "{}"
         },
         {
           "method": "GET",
           "status": 200,
-          "url": "https://riyadh.platinumlist.net/event/calendar/render-line-calendar?chunk=20&startDate=today&selectedDate=today",
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=%40liferay%2Ffrontend-js-state-web%401.0.13",
           "content_type": "application/json",
-          "resource_type": "xhr",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:pathMap,configMap,resolvedModules,moduleMap,moduleFlags",
+          "preview": "{\"pathMap\":{\"@liferay\\/frontend-js-state-web@1.0.13\\/index\":\"\\/o\\/js\\/resolved-module\\/@liferay\\/frontend-js-state-web@1.0.13\\/index\"},\"configMap\":{\"@liferay\\/frontend-js-state-web@1.0.13\":{\"exactMatch\":true,\"value\":\"@liferay\\/frontend-js-state-web@1.0.13\\/index\"}},\"resolvedModules\":[\"@liferay\\/frontend-js-state-web@1.0.13\\/index\"],\"moduleMap\":{\"@liferay\\/frontend-js-state-web@1.0.13\\/index\":{}},\"moduleFlags\":{\"@liferay\\/frontend-js-state-web@1.0.13\\/index\":{\"useESM\":true,\"esModule\":true}}}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-spa-web%405.0.28%2Finit",
+          "content_type": "application/json",
+          "resource_type": "fetch",
           "request_post_data": "",
           "response_shape": "json-like-invalid",
-          "preview": "{\"html\":\"\\n<div class=\\\"more-dates\\\"><div class=\\\"more-dates__title\\\">\\u062e\\u064a\\u0627\\u0631\\u0627\\u062a \\u0623\\u062e\\u0631\\u0649<\\/div><div class=\\\"more-dates__btn\\\"><div class=\\\"dual-calendar-btn dual-calendar-btn--line-calendar\\\"\\n\\t\\t\\t data-calendar-btn\\n\\t\\t\\t data-calendar-btn-input=\\\"data-line-calendar-input\\\"\\n\\t\\t><svg class=\\\"icon icon-calendar-picker\\\"><use xlink:href=\\\"#svg-icon-calendar-picker\\\"><\\/use><\\/svg><\\/div><\\/div><div class=\\\"calendar-btn no-mobile\\\" data-require=\\\"date-time-picker\\\"><div class=\\\"date-picker\\\"><input type=\\\"text\\\" name=\\\"\\\" id=\\\"\\\" value=\\\"\\\" readonly=\\\"readonly\\\" class=\\\"calendar-btn__input\\\" placeholder=\\\"\\u0627\\u062e\\u062a\\u0631 \\u0627\\u0644\\u062a\\u0627\\u0631\\u064a\\u062e\\\" autocomplete=\\\"off\\\" data-date-picker=\\\"{&quot;dateFormat&quot;:&quot;yy-mm-dd&quot;,&quot;timeFormat&quot;:&quot;HH:mm&quot;,&quot;altFormat&quot;:&quot;yy-mm-dd&quot;,&quot;altTimeFormat&quot;:&quot;HH:mm&quot;,&quot;altSeparator&quot;:&quot; &quot;,&quot;firstDay&quot;:0,&quot;altFieldId&quot;:&quot;alternate-id-&quot;,&quot;altField&quot;:&quot;#alternate-id-&quot;,&quot;showButtonPanel&quot;:false,&quot;showOtherMonths&quot;:true,&quot;numberOfMonths&quot;:2,&quot;buttonText&quot;:&quot;&quot;,&quot;minDate&quot;:0}\\\" data-line-calendar-input=\\\"\\\" data-require=\\\"date-time-picker\\\" hiddenInput=\\\"&lt;input type=&quot;hidden&quot; name=&quot;&quot; value=&quot;&quot; id=&quot;alternate-id-&quot; \\/&gt;\\\" \\/><input type=\\\"hidden\\\" name=\\\"\\\" value=\\\"\\\" id=\\\"alternate-id-\\\" \\/><\\/div><\\/div><\\/div><div class=\\\"line-calendar\\\" data-line-calendar data-event-calendar=\\\"&#x7B;&quot;showHijri&quot;&#x3A;false,&quot;showDateRowExpanded&quot;&#x3A;false&#x7D;\\\"><ul class=\\\"line-calendar__months\\\" data-event-calendar-months-container><li data-tabbed-layout=\\\"2026-"
+          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-spa-web@5.0.28\\/route\\/Route\":\"\\/o\\/js\\/resolved-module\\/frontend-js-spa-web@5.0.28\\/route\\/Route\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-spa-web@5.0.28\\/screen\\/RenderURLScreen\":\"\\/o\\/js\\/resolved-module\\/frontend-js-spa-web@5.0.28\\/screen\\/RenderURLScreen\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_fie"
         },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=portal-template-react-renderer-impl%405.0.7%2Frender.es%2Cdynamic-data-mapping-form-web%404.0.101%2Fadmin%2Fjs%2Futil%2FShowPartialResultsAlert",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"dynamic-data-mapping-form-web@4.0.101\\/admin\\/js\\/util\\/ShowPartialResultsAlert.scss\":\"\\/o\\/js\\/resolved-module\\/dynamic-data-mapping-form-web@4.0.101\\/admin\\/js\\/util\\/ShowPartialResultsAlert.scss\",\"@frontend-taglib-clay$clayui\\/alert@3.65.1\\/index\":\"\\/o\\/js\\/resolved-module\\/@frontend-taglib-clay$clayui\\/alert@3.65.1\\/index\",\"dynamic-data-mapping-form-web@4.0.101\\/admin\\/js\\/util\\/ShowPartialResultsAlert\":\"\\/o\\/js\\/resolved-module\\/dynamic-data-mapping-form-web@4.0.101\\/admin\\/js\\/util\\/ShowPartialResultsAlert\",\"portal-template-react-renderer-impl@5.0.7\\/render.es\":\"\\/o\\/js\\/resolved-module\\/portal-template-react-renderer-impl@5.0.7\\/render.es\",\"@liferay\\/frontend-js-react-web@5.0.21\\/index\":\"\\/o\\/js\\/resolved-module\\/@liferay\\/frontend-js-react-web@5.0.21\\/index\",\"@frontend-taglib-clay$clayui\\/button@3.65.0\\/index\":\"\\/o\\/js\\/resolved-module\\/@frontend-taglib-clay$clayui\\/button@3.65.0\\/index\",\"liferay!frontend-js-react-web$classnames@2.3.1\\/index\":\"\\/o\\/js\\/resolved-module\\/liferay!frontend-js-react-web$classnames@2.3.1\\/index\",\"liferay!frontend-js-react-web$react@16.12.0\\/index\":\"\\/o\\/js\\/resolved-module\\/liferay!frontend-js-react-web$react@16.12.0\\/index\"},\"configMap\":{},\"resolvedModules\":[\"@liferay\\/frontend-js-react-web@5.0.21\\/index\",\"portal-template-react-renderer-impl@5.0.7\\/render.es\",\"@frontend-taglib-clay$clayui\\/alert@3.65.1\\/index\",\"@frontend-taglib-clay$clayui\\/button@3.65.0\\/index\",\"liferay!frontend-js-react-web$classnames@2.3.1\\/index\",\"liferay!frontend-js-react-web$react@16.12.0\\/index\",\"dynamic-data-mapping-form-web@4.0.101\\/admin\\/js\\/util\\/ShowPartialResultsAlert.scss\",\"dynamic-data-mapping-form-web@4.0.101\\/admin\\/js\\/util\\/ShowPartialResultsAlert\"],\"moduleMap\":{\"dynamic-data-mapping-form-web@4.0.101\\/admin\\/js\\/util\\/ShowPartialResul"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=portal-template-react-renderer-impl%405.0.7%2Frender.es%2Cdynamic-data-mapping-form-web%404.0.101%2Fadmin%2Fjs%2FFormView",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\",\"data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\":\"\\/o\\/js\\/resolved-module\\/frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/lifera"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-tooltip-support-web%404.0.16%2Findex",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:pathMap,configMap,resolvedModules,moduleMap,moduleFlags",
+          "preview": "{\"pathMap\":{\"frontend-js-tooltip-support-web@4.0.16\\/index\":\"\\/o\\/js\\/resolved-module\\/frontend-js-tooltip-support-web@4.0.16\\/index\",\"@liferay\\/frontend-js-react-web@5.0.21\\/index\":\"\\/o\\/js\\/resolved-module\\/@liferay\\/frontend-js-react-web@5.0.21\\/index\",\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\":\"\\/o\\/js\\/resolved-module\\/@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\"},\"configMap\":{},\"resolvedModules\":[\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\",\"@liferay\\/frontend-js-react-web@5.0.21\\/index\",\"frontend-js-tooltip-support-web@4.0.16\\/index\"],\"moduleMap\":{\"frontend-js-tooltip-support-web@4.0.16\\/index\":{\"@liferay\\/frontend-js-react-web\":\"@liferay\\/frontend-js-react-web@5.0.21\\/index\",\"@frontend-taglib-clay$clayui\\/tooltip\":\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\"},\"@liferay\\/frontend-js-react-web@5.0.21\\/index\":{},\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\":{}},\"moduleFlags\":{\"frontend-js-tooltip-support-web@4.0.16\\/index\":{\"esModule\":true},\"@liferay\\/frontend-js-react-web@5.0.21\\/index\":{\"useESM\":true,\"esModule\":true},\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\":{\"useESM\":true,\"esModule\":true}}}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-collapse-support-web%402.0.12%2Findex",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-tabs-support-web%402.0.11%2Findex",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-dropdown-support-web%402.0.9%2Findex",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-alert-support-web%402.0.9%2Findex",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/dynamic-data-mapping-form-field-types?p_auth=CNyepz",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "[{\"name\":\"date\",\"javaScriptModule\":\"dynamic-data-mapping-form-field-type@6.0.106/DatePicker/DatePicker.es\"},{\"name\":\"paragraph\",\"javaScriptModule\":\"dynamic-data-mapping-form-field-type@6.0.106/Paragraph/Paragraph.es\"},{\"name\":\"link_to_layout\",\"javaScriptModule\":\"layout-dynamic-data-mapping-form-field-type@2.0.24/LayoutSelector\"},{\"name\":\"select\",\"javaScriptModule\":\"dynamic-data-mapping-form-field-type@6.0.106/Select/Select.es\"},{\"name\":\"color\",\"javaScriptModule\":\"dynamic-data-mapping-form-field-type@6.0.106/ColorPicker/ColorPicker.es\"},{\"name\":\"ddm-image\",\"javaScriptModule\":\"\"},{\"name\":\"numeric_input_mask\",\"javaScriptModule\":\"dynamic-data-mapping-form-field-type@6.0.106/NumericInputMask/NumericInputMask\"},{\"name\":\"fieldset\",\"javaScriptModule\":\"dynamic-data-mapping-form-field-type@6.0.106/FieldSet/FieldSet.es\"},{\"name\":\"numeric\",\"javaScriptModule\":\"dynamic-data-mapping-form-field-type@6.0.106/Numeric/Numeric\"},{\"name\":\"otp-phone-verification\",\"javaScriptModule\":\"dynamic-data-mapping-form-field-type-otp-phone-number@1.0.0/OTP/PhoneVerification.es\"},{\"name\":\"checkbox_multiple\",\"javaScriptModule\":\"dynamic-data-mapping-form-field-type@6.0.106/CheckboxMultiple/CheckboxMultiple.es\"},{\"name\":\"radio\",\"javaScriptModule\":\"dynamic-data-mapping-form-field-type@6.0.106/Radio/Radio.es\"},{\"name\":\"journal_article\",\"javaScriptModule\":\"journal-article-dynamic-data-mapping-form-field-type@2.0.20/JournalArticleSelector\"},{\"name\":\"password\",\"javaScriptModule\":\"dynamic-data-mapping-form-field-type@6.0.106/Password/Password.es\"},{\"name\":\"date_time\",\"javaScriptModule\":\"dynamic-data-mapping-form-field-type@6.0.106/DatePicker/DatePicker.es\"},{\"name\":\"attachment\",\"javaScriptModule\":\"@liferay/object-dynamic-data-mapping-form-field-type@1.0.18/Attachment/Attachment\"},{\"name\":\"captcha\",\"javaScriptMod"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=dynamic-data-mapping-form-field-type%406.0.106%2FRichText%2FRichText.es",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\",\"data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\",\"frontend-editor-ckeditor-web@5.0.59\\/css\\/main.scss\":\"\\/o\\/js\\/resolved-module\\/frontend-editor-ckeditor-web@5.0.59\\/css\\/main.scss\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\":\"\\/o\\/js\\/resolved-module\\/frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRe"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=dynamic-data-mapping-form-field-type%406.0.106%2FText%2FText.es",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\",\"data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\":\"\\/o\\/js\\/resolved-module\\/frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/lifera"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=dynamic-data-mapping-form-field-type%406.0.106%2FCaptcha%2FCaptcha.es",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\",\"data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\":\"\\/o\\/js\\/resolved-module\\/frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/lifera"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://maps.googleapis.com/maps-api-v3/api/js/65/8c/intl/ar_ALL/common.js",
+          "content_type": "text/javascript",
+          "resource_type": "script",
+          "request_post_data": "",
+          "response_shape": "text",
+          "preview": "google.maps.__gjsload__('common', function(_){var uka,vka,wka,xka,Mu,zka,Aka,Bka,Ou,Xu,av,bv,cv,dv,Eka,Gka,Hka,Ika,Jka,jv,nv,Lka,Mka,Nka,Oka,Pka,Qka,Ska,sv,Tka,Uka,wv,Vka,Wka,Bv,Xka,ala,Sv,bla,cla,dla,ela,fla,gla,Vv,Uv,jla,ila,hla,bw,cw,dw,kla,lla,mla,nla,pla,qla,rla,sla,tla,ula,vla,xla,yla,Dla,Ela,Fla,Gla,jw,Hla,kw,Ila,lw,ow,qw,Kla,Lla,Mla,Ola,Qla,Qw,Wla,Uw,Zla,$la,lx,cma,dma,ema,fma,px,vx,ima,wx,zx,jma,Ax,kma,Dx,vma,Bma,Fma,Gma,Hma,Ima,Jma,sy,Nma,ty,Oma,Pma,Rma,Uma,Tma,Sma,Wma,Vma,Qma,Xma,$ma,ana,dna,fna,kna,Iy,My,mna,Ny,Oy,nna,qna,sna,rna, tna,una,vna,Ena,Cna,Gna,Hna,dz,ez,Jna,Kna,Lna,Mna,Ku,rka,Wu,Yu,fv,Kka,Rka,rv,Nna,Ona,yv,Ay,bna,cna,zv,Zka,Yka,By,Pna,Qna,Sna,Una,Vna,Xna,Yna,zz,Zna,$na,boa,doa,eoa,Ala,Cla,Oz,noa,ooa,poa;_.Iu=function(a,b){return _.lf(_.Tf(a,b))!=null};_.Ju=function(a){return!!a.handled};_.ska=function(){Ku||(Ku=new rka);return Ku}; _.Lu=function(a){var b=_.ska();b.qh.has(a);return new _.tka(()=>{performance.now()>=b.sh&&b.reset();var c=b.rh.has(a),d=b.th.has(a);c||d?c&&!d&&b.rh.set(a,\"over_ttl\"):(b.rh.set(a,_.fo()),b.th.add(a));return b.rh.get(a)})};uka=function(){var a=78;a%3?a=Math.floor(a):a-=2;var b=new Uint8Array(a),c=0;_.Rc(\"AGFzbQEAAAABBAFgAAADAgEABQMBAAEHBwEDbWVtAgAMAQEKDwENAEEAwEEAQQH8CAAACwsEAQEBeAAQBG5hbWUCAwEAAAkEAQABZA==\",function(d){b[c++]=d});return c!==a?b.subarray(0,c):b}; vka=function(a,b){var c=a.length;if(c!==b.length)return!1;for(let d=0;d<c;d++)if(a[d]!==b[d])return!1;return!0};wka=function(a,b){if(!a.qh||!b.qh||a.qh===b.qh)return a.qh===b.qh;if(typeof a.qh===\"string\"&&typeof b.qh===\"string\"){var c=a.qh;let d=b.qh;b.qh.length>a.qh.length&&(d=a.qh,c=b.qh);if(c.lastIndexOf(d,0)!==0)return!1;for(b=d.length;b<c.length;b++)if(c[b]!==\"=\")return!1;return!0}c=_.od(a);b=_.od(b);return vka(c,b)}; xka=function(a,b){if(typeof b===\"string"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://maps.googleapis.com/maps-api-v3/api/js/65/8c/intl/ar_ALL/util.js",
+          "content_type": "text/javascript",
+          "resource_type": "script",
+          "request_post_data": "",
+          "response_shape": "text",
+          "preview": "google.maps.__gjsload__('util', function(_){/* Copyright 2024 Google, Inc SPDX-License-Identifier: MIT */ /* Copyright 2022 Google LLC SPDX-License-Identifier: BSD-3-Clause */ var qya,sya,vya,wya,Bya,Cya,Fya,Kya,Lya,TE,Pya,Tya,WE,Vya,qF,cza,uF,iza,xF,jza,yF,kza,lza,mza,zF,oza,nza,pza,rza,tza,vza,zza,xza,Aza,yza,AF,BF,Dza,Eza,CF,DF,GF,HF,IF,Gza,KF,LF,Hza,MF,Iza,NF,OF,Jza,PF,QF,Kza,RF,Qza,Uza,Wza,Xza,Yza,TF,UF,VF,WF,XF,Zza,YF,ZF,$F,$za,aAa,bAa,aG,bG,cG,cAa,dAa,dG,eG,eAa,kAa,lAa,nAa,oAa,pAa,qAa,rAa,sAa,tAa,uAa,vAa,wAa,xAa,yAa,zAa,AAa,kG,mG,nG,oG,qG,rG,pG,sG,HAa,IAa,xG,yG,AG,LAa,BG,CG,MAa,NAa,DG,KAa,QAa,RAa,SAa,JG,TAa,KG,UAa,LG,MG,OG,PG,QG,WAa,RG,SG,YAa,XAa,WG,aBa,XG,TG,bBa, aH,cH,YG,eH,dBa,gBa,gH,ZAa,iH,jH,kH,hH,hBa,iBa,lH,pH,fH,eBa,jBa,nH,mH,cBa,$G,oH,VG,bH,ZG,lBa,oBa,$Aa,sH,rBa,wBa,xBa,uBa,vBa,yBa,qBa,ABa,zBa,GH,HH,MH,FBa,CBa,NH,LH,JBa,KBa,OH,LBa,QH,PH,OBa,mCa,hI,rCa,sCa,mI,wCa,BCa,ECa,HCa,GCa,JCa,pI,tI,VCa,aDa,cDa,dDa,eDa,gDa,hDa,LI,MI,NI,pDa,PI,SI,xDa,yDa,aza,ADa,Jya,Mya,Qya,Rya,Xya,Zya,Yya,$ya,CDa,dza,DDa,EDa,eza,bCa,FDa,PBa,YBa,GDa,WH,UH,TH,VBa,XBa,TBa,UBa,WBa,RBa,ZBa,NBa,SBa,QBa,aCa,$Ba,HDa,IDa,JDa,KDa,ZI,LDa,MDa,$I,NDa,ODa,PDa,gza; _.rE=function(a,b){var c=Array.prototype.slice.call(arguments,1);return function(){var d=c.slice();d.push.apply(d,arguments);return a.apply(this,d)}};_.sE=function(a,b){return _.Tf(a,b,void 0,void 0,_.Ae)!=null};_.tE=function(a){return(0,_.Nfa)(a)};_.uE=function(a,b){return(c,d)=>{{let f={EF:!0};d&&Object.assign(f,d);c=_.gv(c,void 0,void 0,f);try{let g=new a,h=g.Ii;_.vv(b)(h,c);var e=g}finally{c.Ri()}}return e}};qya=function(a){a&&typeof a.dispose==\"function\"&&a.dispose()}; _.rya=function(a,b){a.Mh?b():(a.Jh||(a.Jh=[]),a.Jh.push(b))};_.vE=function(a,b){_.rya(a,_.rE(qya,b))};sya=function(a,b,c,d,e,f){if(Array.isArray(c))for(let g=0;"
+        }
+      ]
+    },
+    {
+      "id": "saudi-pro-league-fixtures",
+      "name": "Saudi Pro League Fixtures",
+      "priority": 30,
+      "url": "https://api.saudi-pro-league.pulselive.com/football/fixtures?comps=215&compSeasons=859&pageSize=100&statuses=C,U,L&sort=asc",
+      "final_url": "https://api.saudi-pro-league.pulselive.com/football/fixtures?comps=215&compSeasons=859&pageSize=100&statuses=C,U,L&sort=asc",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 14163,
+      "classification": "rendered-html-candidates",
+      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
+      "title": "",
+      "text_bytes": 152819,
+      "html_bytes": 152982,
+      "html_snapshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-07-09T13-45-43-250Z.html",
+      "screenshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-07-09T13-45-43-250Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [
+          ":3.0,\"millis\":1.7563971E12,\"label\":\"Thu 28 Aug 2025, 17:05 BST\",\"gmtOffset\":1.0},\"provisionalKickoff\":{\"completeness\":3.0,\"millis\":",
+          "1.7563971E12,\"label\":\"Thu 28 Aug 2025, 17:05 BST\",\"gmtOffset\":1.0},\"teams\":[{\"team\":{\"name\":\"Damac\",\"club\":{\"name\":\"D",
+          "\":3.0,\"millis\":1.756404E12,\"label\":\"Thu 28 Aug 2025, 19:00 BST\",\"gmtOffset\":1.0},\"provisionalKickoff\":{\"completeness\":3.0,\"millis\":",
+          "1.756404E12,\"label\":\"Thu 28 Aug 2025, 19:00 BST\",\"gmtOffset\":1.0},\"teams\":[{\"team\":{\"name\":\"Al Ahli\",\"club\":{\"name\":",
+          "\":3.0,\"millis\":1.756404E12,\"label\":\"Thu 28 Aug 2025, 19:00 BST\",\"gmtOffset\":1.0},\"provisionalKickoff\":{\"completeness\":3.0,\"millis\":",
+          "1.756404E12,\"label\":\"Thu 28 Aug 2025, 19:00 BST\",\"gmtOffset\":1.0},\"teams\":[{\"team\":{\"name\":\"Al Ettifaq\",\"club\":{\"nam",
+          ":3.0,\"millis\":1.7564826E12,\"label\":\"Fri 29 Aug 2025, 16:50 BST\",\"gmtOffset\":1.0},\"provisionalKickoff\":{\"completeness\":3.0,\"millis\":",
+          "1.7564826E12,\"label\":\"Fri 29 Aug 2025, 16:50 BST\",\"gmtOffset\":1.0},\"teams\":[{\"team\":{\"name\":\"Al Hilal\",\"club\":{\"name\""
+        ],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "saudi-space-agency-events",
+      "name": "Saudi Space Agency Events",
+      "priority": 32,
+      "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
+      "final_url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
+      "status": "ok",
+      "http_status": 405,
+      "navigation_error": "",
+      "duration_ms": 6071,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 536,
+      "html_bytes": 687,
+      "html_snapshot": "data/raw/browser-probes/saudi-space-agency-events-2026-07-09T13-45-43-250Z.html",
+      "screenshot": "data/raw/browser-probes/saudi-space-agency-events-2026-07-09T13-45-43-250Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 1,
+      "network_endpoints": [],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 405,
+          "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
+          "content_type": "text/plain",
+          "resource_type": "document",
+          "request_post_data": "",
+          "response_shape": "text",
+          "preview": "Status Code: 405; Method Not Allowed"
+        }
+      ]
+    },
+    {
+      "id": "makkah-chamber-events",
+      "name": "Makkah Chamber Events",
+      "priority": 55,
+      "url": "https://makkahcci.org.sa/event/page/2?category=all&country=all&date=old&type=all",
+      "final_url": "https://makkahcci.org.sa/event/page/2?category=all&country=all&date=old&type=all",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 10277,
+      "classification": "rendered-html-candidates",
+      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
+      "title": "Events | غرفة مكة المكرمة",
+      "text_bytes": 4648,
+      "html_bytes": 73474,
+      "html_snapshot": "data/raw/browser-probes/makkah-chamber-events-2026-07-09T13-45-43-250Z.html",
+      "screenshot": "data/raw/browser-probes/makkah-chamber-events-2026-07-09T13-45-43-250Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": [
+          {
+            "text": "الخدمات الالكترونية",
+            "href": "https://makkahcci.org.sa/event/page/2?category=all&country=all&date=old&type=all#"
+          },
+          {
+            "text": "الأخبار",
+            "href": "https://makkahcci.org.sa/event/page/2?category=all&country=all&date=old&type=all#"
+          },
+          {
+            "text": "الخدمات الالكترونية",
+            "href": "https://makkahcci.org.sa/event/page/2?category=all&country=all&date=old&type=all#"
+          },
+          {
+            "text": "الأخبار",
+            "href": "https://makkahcci.org.sa/event/page/2?category=all&country=all&date=old&type=all#"
+          },
+          {
+            "text": "مناسبات غرفة مكة",
+            "href": "https://makkahcci.org.sa/event"
+          },
+          {
+            "text": "الفعاليات القادمة",
+            "href": "https://makkahcci.org.sa/event?date=all&country=all&type=all"
+          },
+          {
+            "text": "الفعاليات الماضية",
+            "href": "https://makkahcci.org.sa/event?date=old&country=all&type=all"
+          },
+          {
+            "text": "التوسع الذكي: متى وكيف تكبر مشروعك؟",
+            "href": "https://makkahcci.org.sa/event/2026-03-01-2026-03-02-566/register"
+          },
+          {
+            "text": "الذكاء العاطفي وبناء علاقات قوية في عالم الأعمال",
+            "href": "https://makkahcci.org.sa/event/2026-03-01-565/register"
+          },
+          {
+            "text": "ذكاء الأعمال: من البيانات إلى القرار",
+            "href": "https://makkahcci.org.sa/event/2026-02-28-2026-03-01-564/register"
+          },
+          {
+            "text": "كيف تبني البراند باستخدام الذكاء الاصطناعي",
+            "href": "https://makkahcci.org.sa/event/2026-02-28-563/register"
+          },
+          {
+            "text": "الانطلاقة القانونية الآمنة للمشاريع الريادية",
+            "href": "https://makkahcci.org.sa/event/2026-02-27-2026-02-28-562/register"
+          },
+          {
+            "text": "كيف تبرز حضورك وتترك أثرًا في عالم الأعمال",
+            "href": "https://makkahcci.org.sa/event/2026-02-27-560/register"
+          },
+          {
+            "text": "التخطيط الاستراتيجي والتشغيلي المؤسسي",
+            "href": "https://makkahcci.org.sa/event/2026-02-09-550/register"
+          },
+          {
+            "text": "دورة مقدمة في الأمن السيبراني",
+            "href": "https://makkahcci.org.sa/event/2026-01-27-2026-01-28-549/register"
+          },
+          {
+            "text": "كيف توظفين الذكاء الاصطناعي في مشروعك",
+            "href": "https://makkahcci.org.sa/event/2026-01-21-548/register"
+          },
+          {
+            "text": "مفاتيح نجاح المقابلة الوظيفية للعمل الموسمي",
+            "href": "https://makkahcci.org.sa/event/2026-01-19-546/register"
+          },
+          {
+            "text": "السابق",
+            "href": "https://makkahcci.org.sa/event?date=old&type=all&country=all&category=all"
+          },
+          {
+            "text": "1",
+            "href": "https://makkahcci.org.sa/event?date=old&type=all&country=all&category=all"
+          },
+          {
+            "text": "2",
+            "href": "https://makkahcci.org.sa/event/page/2?date=old&type=all&country=all&category=all"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 1,
+      "network_endpoints": [],
+      "network_sample": [
         {
           "method": "POST",
           "status": 200,
-          "url": "https://firebaselogging-pa.googleapis.com/v1/firelog/legacy/log?key=AIzaSyCx80ru6-RXeTi3GvqkFsMVyMf-vpgIoVw",
+          "url": "https://makkahcci.org.sa/website/translations",
           "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"request_time_ms\":\"1783595461695\",\"client_info\":{\"client_type\":1,\"js_client_info\":{}},\"log_source\":462,\"log_event\":[{\"source_extension_json_proto3\":\"{\\\"application_info\\\":{\\\"google_app_id\\\":\\\"1:886054271472:web:840f9df4cb641dc8d60535\\\",\\\"app_instance_id\\\":\\\"cCCTWNAF6W6XBaj2m4nZAp\\\",\\\"web_app_info\\\":{\\\"sdk_version\\\":\\\"0.7.9\\\",\\\"page_url\\\":\\\"https://riyadh.platinumlist.net/ar/calendar/today\\\",\\\"service_worker_status\\\":3,\\\"visibility_state\\\":1,\\\"effective_connection_type\\\":4},\\\"application_process_state\\\":0},\\\"network_request_metric\\\":{\\\"url\\\":\\\"https://cdn.platinumlist.net/dist/v904/css-compiled/front.css\\\",\\\"http_method\\\":0,\\\"http_response_code\\\":200,\\\"response_payload_bytes\\\":0,\\\"client_start_time_us\\\":1783595453989200,\\\"time_to_response_completed_us\\\":578800}}\",\"event_time_ms\":\"1783595458294\"},{\"source_extension_json_proto3\":\"{\\\"application_info\\\":{\\\"google_app_id\\\":\\\"1:886054271472:web:840f9df4cb641dc8d60535\\\",\\\"app_instance_id\\\":\\\"cCCTWNAF6W6XBaj2m4nZAp\\\",\\\"web_app_info\\\":{\\\"sdk_version\\\":\\\"0.7.9\\\",\\\"page_url\\\":\\\"https://riyadh.platinumlist.net/ar/calendar/today\\\",\\\"service_worker_status\\\":3,\\\"visibility_state\\\":1,\\\"effective_connection_type\\\":4},\\\"application_process_state\\\":0",
-          "response_shape": "json-object:nextRequestWaitMillis,logResponseDetails",
-          "preview": "{ \"nextRequestWaitMillis\": \"10000\", \"logResponseDetails\": [ { \"responseAction\": \"DELETE_REQUEST\" } ] }"
+          "resource_type": "xhr",
+          "request_post_data": "{\"jsonrpc\":\"2.0\",\"method\":\"call\",\"params\":{\"mods\":[],\"lang\":null},\"id\":457089238}",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"jsonrpc\": \"2.0\", \"id\": 457089238, \"result\": {\"lang_parameters\": {\"id\": 3, \"name\": \"Arabic / \\u0627\\u0644\\u0652\\u0639\\u064e\\u0631\\u064e\\u0628\\u064a\\u0651\\u0629\", \"direction\": \"rtl\", \"date_format\": \"%d %b, %Y\", \"time_format\": \"%H:%M:%S\", \"grouping\": \"[3,0]\", \"decimal_point\": \".\", \"thousands_sep\": \",\", \"week_start\": 6}, \"modules\": {\"im_livechat\": {\"messages\": [{\"id\": \"Visitor\", \"string\": \"\\u0627\\u0644\\u0632\\u0627\\u0626\\u0631\"}, {\"id\": \"Ask something ...\", \"string\": \"\\u0627\\u0633\\u0623\\u0644 \\u0639\\u0646 \\u0634\\u064a\\u0621...\"}, {\"id\": \"Chat with one of our collaborators\", \"string\": \"\\u062a\\u062d\\u062f\\u062b \\u0645\\u0639 \\u0623\\u062d\\u062f \\u0645\\u0645\\u062b\\u0644\\u064a\\u0646\\u0627\"}, {\"id\": \"Did we correctly answer your question ?\", \"string\": \"\\u0647\\u0644 \\u0623\\u062c\\u0628\\u0646\\u0627 \\u0639\\u0644\\u0649 \\u0633\\u0624\\u0627\\u0644\\u0643 \\u0628\\u0634\\u0643\\u0644 \\u0635\\u062d\\u064a\\u062d\\u061f\"}, {\"id\": \"Explain your note\", \"string\": \"\\u0634\\u0631\\u062d \\u0645\\u0644\\u0627\\u062d\\u0638\\u062a\\u0643\"}, {\"id\": \"How may I help you?\", \"string\": \"\\u0643\\u064a\\u0641 \\u064a\\u0645\\u0643\\u0646\\u0646\\u064a \\u0645\\u0633\\u0627\\u0639\\u062f\\u062a\\u0643\\u061f\"}, {\"id\": \"I don't want to rate this conversation\", \"string\": \"\\u0644\\u0627 \\u0623\\u0631\\u064a\\u062f \\u062a\\u0642\\u064a\\u064a\\u0645 \\u0647\\u0630\\u0647 \\u0627\\u0644\\u0645\\u062d\\u0627\\u062f\\u062b\\u0629\"}, {\"id\": \"Livechat\", \"string\": \"\\u0627\\u0644\\u062f\\u0631\\u062f\\u0634\\u0629 \\u0627\\u0644\\u062d\\u064a\\u0629\"}, {\"id\": \"None of our collaborators seems to be available, please try again later.\", \"string\": \"\\u064a\\u0628\\u062f\\u0648 \\u0623\\u0646 \\u062c\\u0645\\u064a\\u0639 \\u0645\\u0645\\u062b\\u0644\\u064a\\u0646\\u0627 \\u0645\\u0634\\u063a\\u0648\\u0644\\u0648\\u0646 \\u0627\\u0644\\u0622\\u0646\\u060c \\u0628\\u0631\\u062c\\u0627\\u0621 \\u0627\\u0644\\u0645\\u062d\\u062"
         }
       ]
     }

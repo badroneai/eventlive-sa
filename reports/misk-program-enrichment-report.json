@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-08T10:08:25.508Z",
+  "generated_at": "2026-07-09T13:51:48.904Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 7,
-    "enriched": 7,
+    "targets": 9,
+    "enriched": 9,
     "failed": 0
   },
   "enriched": [
@@ -21,7 +21,15 @@
       "goals": 1,
       "features": 4,
       "requirements": 0,
-      "registration_deadline": "2026-07-08T18:00:00+03:00"
+      "registration_deadline": "2026-07-12T18:00:00+03:00"
+    },
+    {
+      "id": "event-application-deadline-2030-leaders-2",
+      "title": "2030 Leaders",
+      "goals": 1,
+      "features": 4,
+      "requirements": 0,
+      "registration_deadline": "2026-07-12T18:00:00+03:00"
     },
     {
       "id": "event-samsung-innovation-campus-ai-program",
@@ -46,6 +54,14 @@
       "features": 3,
       "requirements": 2,
       "registration_deadline": "2026-07-15T18:00:00+03:00"
+    },
+    {
+      "id": "event-misk-x-unyo-youth-engagement-fellowship",
+      "title": "Misk X UNYO Youth Engagement Fellowship",
+      "goals": 1,
+      "features": 4,
+      "requirements": 0,
+      "registration_deadline": "2026-07-23T18:00:00+03:00"
     },
     {
       "id": "event-the-innovation-diwan",

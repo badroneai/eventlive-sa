@@ -1,125 +1,28 @@
 {
   "schema": "eventlive.source-secondary-verification.v1",
-  "generated_at": "2026-07-08T10:07:56.900Z",
+  "generated_at": "2026-07-09T13:51:25.605Z",
   "source_candidates": "data/source_candidates.json",
   "source_ops_report": "reports/source-ops-report.json",
   "totals": {
-    "candidates_seen": 184,
-    "candidates_considered": 44,
-    "promoted": 15,
+    "candidates_seen": 192,
+    "candidates_considered": 38,
+    "promoted": 1,
     "official_evidence_promoted": 1,
-    "official_programs_promoted": 12,
-    "official_catalog_matches_promoted": 2,
-    "still_blocked": 29
+    "official_programs_promoted": 0,
+    "official_catalog_matches_promoted": 0,
+    "still_blocked": 37
   },
   "promoted": [
     {
-      "candidate_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c",
-      "title": "Skill Development Initiative",
-      "kind": "official-program-evidence",
-      "evidence": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Skills%20development/EventDetail",
-      "matched_catalog_event_id": "candidate-moc-cultural-subportals-the-continuing-professional-development-initiative-20241116-a7cef8e2"
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-sitar-20220921-cda2e068",
-      "title": "SITAR",
-      "kind": "official-program-evidence",
-      "evidence": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Production%20Support%20Program%20in%20the%20Theater%20and%20Performing%20Arts%20Sector/EventDetail",
-      "matched_catalog_event_id": ""
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1",
-      "title": "The Architecture and Design Café",
-      "kind": "official-program-evidence",
-      "evidence": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/The%20Architecture%20And%20Design%20Cafe/EventDetail",
-      "matched_catalog_event_id": "candidate-moc-cultural-subportals-academic-excellence-in-architecture-and-design-education-20250309-a4072111"
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-jusoor-program-20240818-22e2fb74",
-      "title": "Jusoor Program",
-      "kind": "official-program-evidence",
-      "evidence": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/jusoor%20competition/EventDetail",
-      "matched_catalog_event_id": ""
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-urban-transformation-initiative-20241031-7a933cab",
-      "title": "Urban transformation Initiative",
-      "kind": "official-program-evidence",
-      "evidence": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Urban%20transformation%20Initiative/EventDetail",
-      "matched_catalog_event_id": ""
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-the-continuing-professional-development-initiative-20241116-a7cef8e2",
-      "title": "The Continuing Professional Development Initiative",
-      "kind": "official-program-evidence",
-      "evidence": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Continuous%20Professional%20Development%20Initiative/EventDetail",
-      "matched_catalog_event_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c"
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-design-for-good-initiative-20241205-3788803e",
-      "title": "Design for Good Initiative",
-      "kind": "official-program-evidence",
-      "evidence": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/design%20for%20good/EventDetail",
-      "matched_catalog_event_id": ""
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-the-saudi-music-hub-20250101-10d8a675",
-      "title": "The Saudi Music Hub",
-      "kind": "official-program-evidence",
-      "evidence": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Saudi%20Music%20Center/EventDetail",
-      "matched_catalog_event_id": ""
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-academic-excellence-in-architecture-and-design-education-20250309-a4072111",
-      "title": "Academic Excellence in Architecture and Design Education",
-      "kind": "official-program-evidence",
-      "evidence": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Academic%20Excellence%20in%20Architectural%20and%20Design%20Education/EventDetail",
-      "matched_catalog_event_id": "candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1"
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-culinary-manufacturing-hubs-20250811-d7214bd9",
-      "title": "Culinary Manufacturing Hubs",
-      "kind": "official-program-evidence",
-      "evidence": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Culinary%20Manufacturing%20Hubs/EventDetail",
-      "matched_catalog_event_id": ""
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-film-business-accelerator-20260119-254dca29",
-      "title": "Film Business Accelerator",
-      "kind": "official-program-evidence",
-      "evidence": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Film_Accelerator/EventDetail",
-      "matched_catalog_event_id": ""
-    },
-    {
-      "candidate_id": "candidate-moc-cultural-subportals-the-guidelines-for-culture-and-arts-in-the-public-realm-20260205-fbf08244",
-      "title": "The Guidelines for Culture and Arts in the Public Realm",
-      "kind": "official-program-evidence",
-      "evidence": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/CAIPS_1/EventDetail",
-      "matched_catalog_event_id": ""
-    },
-    {
-      "candidate_id": "candidate-misk-hub-programs-application-deadline-2030-leaders-20260708-68dd4c4c",
+      "candidate_id": "candidate-misk-hub-programs-application-deadline-2030-leaders-20260712-68dd4c4c",
       "title": "Application deadline: 2030 Leaders",
       "kind": "official-source-evidence",
       "evidence": "https://hub.misk.org.sa/programs/leadership/2030-leaders/",
-      "matched_catalog_event_id": ""
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-saudi-wood-expo-2026-20260830-b4d44be4",
-      "title": "Saudi Wood Expo 2026",
-      "kind": "official-catalog-match",
-      "evidence": "event-saudi-wood-expo (Riyadh City Events)",
-      "matched_catalog_event_id": "event-saudi-wood-expo"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-saudi-industrial-series-20260830-c10ad399",
-      "title": "Saudi Industrial Series",
-      "kind": "official-catalog-match",
-      "evidence": "event-saudi-industrial-series (Riyadh City Events)",
-      "matched_catalog_event_id": "event-saudi-industrial-series"
+      "matched_catalog_event_id": "event-application-deadline-2030-leaders"
     }
   ],
   "still_blocked_by_reason": {
+    "not-secondary-verifiable": 8,
     "public-listing-needs-official-match": 13,
     "needs-secondary-official-proof": 16
   }
