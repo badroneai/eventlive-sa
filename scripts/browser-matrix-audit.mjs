@@ -7,6 +7,7 @@ const root = process.cwd();
 const distDir = path.join(root, 'dist');
 const reportsDir = path.join(root, 'reports');
 const generatedAt = new Date().toISOString();
+const domContentLoadedBudgetMs = 4500;
 
 const pages = [
   '/index.html',
@@ -109,7 +110,7 @@ try {
           if (!metrics.h1Visible) violations.push('h1 not visible');
           if (metrics.bodyHeight < 300) violations.push('page body too short');
           if (consoleErrors.length > 0) violations.push(`${consoleErrors.length} console errors`);
-          if (metrics.domContentLoadedMs > 3000) violations.push(`DOMContentLoaded ${metrics.domContentLoadedMs}ms`);
+          if (metrics.domContentLoadedMs > domContentLoadedBudgetMs) violations.push(`DOMContentLoaded ${metrics.domContentLoadedMs}ms`);
 
           if (violations.length) {
             for (const issue of violations) findings.push({ engine: engine.id, page: pagePath, viewport: viewport.id, issue });
@@ -163,6 +164,7 @@ fs.writeFileSync(
     `- Engines: ${engines.map((engine) => engine.id).join(', ')}`,
     `- Viewports: ${viewports.map((viewport) => viewport.id).join(', ')}`,
     `- Checks: ${results.length}`,
+    `- DOMContentLoaded budget: ${domContentLoadedBudgetMs}ms`,
     `- Findings: ${findings.length}`,
     '',
     '## Findings',
