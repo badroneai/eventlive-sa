@@ -1,17 +1,17 @@
 {
   "generated_for": "EventLive source acquisition",
   "researched_at": "2026-07-03T18:20:00+03:00",
-  "notes": "Registry of Saudi event sources to monitor before creating source candidates. Public sources are used for discovery and evidence; EventLive should not republish unverified details directly into the public catalog.",
+  "notes": "Registry of Saudi event sources to monitor before creating source candidates. Public sources are used for discovery and evidence; EventLive should not republish unverified details directly into the public catalog. Strategic platform recon 2026-07-09: added a strategic platform radar layer for SCEGA, NEC, Visit Saudi, webook, Enjoy, GEA, Evento, and Ministry of Commerce; only Visit Saudi is active collection-grade today.",
   "sources": [
     {
       "id": "nec-saudi-events",
       "name": "National Events Center / Saudi Events",
-      "url": "https://nec.gov.sa/en",
+      "url": "https://nec.gov.sa/ar",
       "owner": "National Events Center",
       "source_type": "national-calendar",
       "trust_level": "official",
       "priority": 1,
-      "coverage": "National events and seasons reference point; highest strategic source for partnership or official-feed access.",
+      "coverage": "National events and seasons reference point; highest strategic source for partnership, official-feed, export, or national-calendar access.",
       "cities": [
         "Saudi Arabia"
       ],
@@ -22,20 +22,25 @@
       ],
       "fetch_method": "partnership-api",
       "intake_policy": "partnership-needed",
-      "evidence_required": "Official event page, app listing, or approved feed from NEC/Saudi Events.",
+      "evidence_required": "Official event page, Saudi Events/NEC app listing, or approved feed/export from NEC National Calendar.",
       "candidate_gate": "human-review",
-      "notes": "Treat as the preferred long-term source of truth. Use public website for evidence only until a feed or permission path exists."
+      "notes": "Treat as the preferred long-term source of truth. Use public website for evidence only until a feed or permission path exists. Strategic platform recon 2026-07-09: public NEC site is useful institutional evidence, but the strongest integration lane is authenticated/relationship-gated National Calendar view/export access.",
+      "collector_pages": [
+        "https://nec.gov.sa/en",
+        "https://login.nec.gov.sa/app/agreements",
+        "https://eservices-service.nec.gov.sa/"
+      ]
     },
     {
       "id": "visit-saudi-calendar",
       "name": "Visit Saudi Calendar",
-      "url": "https://www.visitsaudi.com/en/saudi-calendar",
+      "url": "https://www.visitsaudi.com/ar/saudi-calendar",
       "collector_url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
       "owner": "Saudi Tourism Authority",
       "source_type": "national-calendar",
       "trust_level": "official",
       "priority": 2,
-      "coverage": "Tourism-facing national calendar, key dates, seasons, and destination events.",
+      "coverage": "Tourism-facing national calendar, key dates, seasons, and destination events in Arabic and English.",
       "cities": [
         "Saudi Arabia"
       ],
@@ -45,11 +50,16 @@
         "entertainment",
         "sports"
       ],
-      "fetch_method": "html-calendar",
+      "fetch_method": "json-api",
       "intake_policy": "official-feed-preferred",
-      "evidence_required": "Visit Saudi event/calendar URL and captured timestamp.",
+      "evidence_required": "Visit Saudi event/calendar URL, API payload capture timestamp, and linked event/detail URL where available.",
       "candidate_gate": "human-review",
-      "notes": "Good discovery source for public visitor-facing events; details should still be verified against event or organizer pages."
+      "notes": "Good discovery source for public visitor-facing events; details should still be verified against event or organizer pages. Strategic platform recon 2026-07-09: Arabic and English /bin/api/v3/events payloads returned live event data; keep this source active in the 6-hour sync ring.",
+      "collector_pages": [
+        "https://www.visitsaudi.com/en/saudi-calendar",
+        "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
+        "https://www.visitsaudi.com/bin/api/v3/events?locale=en"
+      ]
     },
     {
       "id": "moc-cultural-calendar",
@@ -102,12 +112,12 @@
     {
       "id": "webook-explore",
       "name": "webook Explore",
-      "url": "https://webook.com/en/explore",
+      "url": "https://webook.com/ar/explore",
       "owner": "webook.com",
       "source_type": "ticketing-marketplace",
       "trust_level": "official-marketplace",
       "priority": 5,
-      "coverage": "Ticketed entertainment, sports, concerts, shows, experiences, and season events.",
+      "coverage": "Ticketed entertainment, sports, concerts, shows, experiences, season events, and marketplace booking links.",
       "cities": [
         "Riyadh",
         "Jeddah",
@@ -124,9 +134,12 @@
       ],
       "fetch_method": "search-page",
       "intake_policy": "candidate-only",
-      "evidence_required": "webook event URL plus official organizer/season URL when available.",
+      "evidence_required": "webook event URL plus official organizer, season, authority, or venue confirmation before promotion.",
       "candidate_gate": "duplicate-review",
-      "notes": "High event volume. Use for discovery and ticket links, but avoid copying ticketing-only content without source review."
+      "notes": "High event volume. Use for discovery and ticket links, but avoid copying ticketing-only content without source review. Strategic platform recon 2026-07-09: public app bundles expose event-detail and event API route hints, but Cloudflare/queue behavior and ticketing-content rights keep this as discovery/corroboration only, not auto-publish.",
+      "collector_pages": [
+        "https://webook.com/en/explore"
+      ]
     },
     {
       "id": "hala-yalla",
@@ -793,7 +806,7 @@
     {
       "id": "enjoy-saudi-events",
       "name": "Enjoy Saudi Events",
-      "url": "https://enjoy.sa/en/events",
+      "url": "https://enjoy.sa/ar/",
       "owner": "General Entertainment Authority",
       "source_type": "government-calendar",
       "trust_level": "official",
@@ -816,7 +829,10 @@
       "intake_policy": "official-feed-preferred",
       "evidence_required": "Enjoy event detail URL with date/time, city, venue, and organizer fields.",
       "candidate_gate": "human-review",
-      "notes": "Added from source-research batch 2 after verifying Enjoy.sa is described as the official event site for the General Entertainment Authority. Build extractor after confirming current event-card pagination and stale-event filtering."
+      "notes": "Added from source-research batch 2 after verifying Enjoy.sa is described as the official event site for the General Entertainment Authority. Build extractor after confirming current event-card pagination and stale-event filtering. Strategic platform recon 2026-07-09: Arabic homepage confirms Enjoy is an official GEA initiative and official events site; terminal fetch may return Cloudflare 403, so keep as protected evidence/partnership lane rather than scraper failure.",
+      "collector_pages": [
+        "https://enjoy.sa/en/events"
+      ]
     },
     {
       "id": "misk-hub-events",
@@ -1556,7 +1572,7 @@
     {
       "id": "gea-entertainment-events",
       "name": "General Entertainment Authority Events",
-      "url": "https://gea.gov.sa/en/events/",
+      "url": "https://gea.gov.sa/events/",
       "owner": "General Entertainment Authority",
       "source_type": "government-calendar",
       "trust_level": "official",
@@ -1578,8 +1594,90 @@
       "fetch_method": "html-calendar",
       "intake_policy": "official-feed-preferred",
       "evidence_required": "GEA event page with title, start/end date or event window, city or venue, and duplicate check against Enjoy, Riyadh Season, Visit Saudi, and webook.",
-      "candidate_gate": "extraction",
-      "notes": "Added from source-research batch 6. Treat as authority-of-record for entertainment verification; keep separate from Enjoy Saudi because gea.gov.sa is the regulator/parent source."
+      "candidate_gate": "source-evidence",
+      "notes": "Added from source-research batch 6. Treat as authority-of-record for entertainment verification; keep separate from Enjoy Saudi because gea.gov.sa is the regulator/parent source. Strategic platform recon 2026-07-09: Arabic GEA events page is authority-of-record evidence and shows long-window venue/event entries, but terminal fetch can be protected; use for confirmation and partnership/API path, not blind scraping.",
+      "collector_pages": [
+        "https://gea.gov.sa/en/events/"
+      ]
+    },
+    {
+      "id": "scega-exhibitions-conferences",
+      "name": "SCEGA ePortal Events",
+      "url": "https://eportal.scega.gov.sa/home",
+      "owner": "Saudi Conventions & Exhibitions General Authority",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 56,
+      "coverage": "Exhibitions, conferences, SCEGA-licensed event ecosystem signals, authority news, and official business-event evidence.",
+      "cities": [
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "exhibitions",
+        "conferences",
+        "business events",
+        "licenses"
+      ],
+      "fetch_method": "html-calendar",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "SCEGA event detail URL or licensed event record with title, date, venue/city, and organizer or authority evidence.",
+      "candidate_gate": "human-review",
+      "notes": "Strategic platform recon 2026-07-09: homepage and Angular bundle expose event-list/detail surfaces such as /h-events-list and events-details; keep in scheduled evidence radar and build extractor only after detail payload is verified.",
+      "collector_pages": [
+        "https://eservices.scega.gov.sa/login"
+      ]
+    },
+    {
+      "id": "ministry-commerce-events",
+      "name": "Ministry of Commerce Upcoming Events",
+      "url": "https://mc.gov.sa/ar/mediacenter/Events/UpcomingEvents/pages/default.aspx",
+      "owner": "Ministry of Commerce",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 57,
+      "coverage": "Official Ministry of Commerce public events, media-center events, and business/government event evidence when the page is maintained.",
+      "cities": [
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "commerce",
+        "government events",
+        "business events"
+      ],
+      "fetch_method": "html-calendar",
+      "intake_policy": "monitor-public",
+      "evidence_required": "Ministry event page or upcoming-event row with current date, title, and ministry URL.",
+      "candidate_gate": "source-evidence",
+      "notes": "Strategic platform recon 2026-07-09: SharePoint-style page is official but low-yield/stale in public view; monitor for freshness and use only as corroborating evidence unless active rows appear."
+    },
+    {
+      "id": "evento-sa-events",
+      "name": "Evento",
+      "url": "https://www.evento.sa/home",
+      "owner": "Evento",
+      "source_type": "ticketing-marketplace",
+      "trust_level": "official-marketplace",
+      "priority": 58,
+      "coverage": "Commercial ticketing/app marketplace signals, event pages, sports and registration surfaces, and mobile-app event leads.",
+      "cities": [
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "tickets",
+        "registration",
+        "sports",
+        "marketplace events"
+      ],
+      "fetch_method": "search-page",
+      "intake_policy": "candidate-only",
+      "evidence_required": "Evento event URL plus official organizer or authority confirmation before catalog promotion.",
+      "candidate_gate": "duplicate-review",
+      "notes": "Strategic platform recon 2026-07-09: Angular app bundle exposes api.evento.sa, auth.evento.sa, sport-api.evento.sa, registration and payment surfaces; use as discovery/partnership intelligence only until documented API permission exists.",
+      "collector_pages": [
+        "https://api.evento.sa",
+        "https://auth.evento.sa",
+        "https://sport-api.evento.sa"
+      ]
     },
     {
       "id": "sdaia-calendar-events",

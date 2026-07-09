@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T12:16:14.539Z",
+  "generated_at": "2026-07-09T12:41:50.110Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-saudi-region-coverage",
@@ -703,7 +703,7 @@
           "name": "webook Explore",
           "ring": "candidate-only",
           "status": "official-marketplace",
-          "url": "https://webook.com/en/explore"
+          "url": "https://webook.com/ar/explore"
         },
         {
           "id": "ten-times-saudi",
@@ -871,7 +871,7 @@
           "name": "webook Explore",
           "ring": "candidate-only",
           "status": "official-marketplace",
-          "url": "https://webook.com/en/explore"
+          "url": "https://webook.com/ar/explore"
         },
         {
           "id": "hala-yalla",
@@ -969,7 +969,7 @@
           "name": "Enjoy Saudi Events",
           "ring": "official-feed-preferred",
           "status": "official",
-          "url": "https://enjoy.sa/en/events"
+          "url": "https://enjoy.sa/ar/"
         },
         {
           "id": "misk-hub-events",
@@ -1088,7 +1088,7 @@
           "name": "General Entertainment Authority Events",
           "ring": "official-feed-preferred",
           "status": "official",
-          "url": "https://gea.gov.sa/en/events/"
+          "url": "https://gea.gov.sa/events/"
         },
         {
           "id": "sdaia-calendar-events",
@@ -1178,7 +1178,7 @@
           "name": "webook Explore",
           "ring": "candidate-only",
           "status": "official-marketplace",
-          "url": "https://webook.com/en/explore"
+          "url": "https://webook.com/ar/explore"
         },
         {
           "id": "hala-yalla",
@@ -1220,7 +1220,7 @@
           "name": "Enjoy Saudi Events",
           "ring": "official-feed-preferred",
           "status": "official",
-          "url": "https://enjoy.sa/en/events"
+          "url": "https://enjoy.sa/ar/"
         },
         {
           "id": "jcci-events-center",
@@ -1297,7 +1297,7 @@
           "name": "General Entertainment Authority Events",
           "ring": "official-feed-preferred",
           "status": "official",
-          "url": "https://gea.gov.sa/en/events/"
+          "url": "https://gea.gov.sa/events/"
         },
         {
           "id": "makkah-chamber-events",

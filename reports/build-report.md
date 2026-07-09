@@ -1,5 +1,5 @@
 # EventLive Build Report
-- Built at: 2026-07-09T12:16:14.539Z
+- Built at: 2026-07-09T12:41:50.110Z
 - Mode: data-driven catalog + static brand refresh
 - Public domain: eventme.live
 - Events generated: 449

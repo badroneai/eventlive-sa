@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T12:16:14.539Z",
+  "generated_at": "2026-07-09T12:41:50.110Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-source-coverage-gaps",
@@ -444,7 +444,7 @@
       "source_count": 6,
       "source_images": 14,
       "generated_covers": 7,
-      "registered_source_count": 61,
+      "registered_source_count": 64,
       "coverage_score": 82,
       "severity": "healthy",
       "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."

@@ -96,6 +96,22 @@ ensureDir(reportsDir);
 
 const radars = [
   {
+    id: 'strategic-platforms',
+    name: 'Strategic Platform Source Radar',
+    source_id: 'strategic-platform-watchlist',
+    policy: 'source-evidence; API-surface mapping; no auto-publish',
+    command: process.execPath,
+    args: ['scripts/source-strategic-platform-radar.mjs'],
+    timeout_ms: Number(process.env.EVENTLIVE_SOURCE_RADAR_TIMEOUT_MS || 120000),
+    env: {
+      EVENTLIVE_STRATEGIC_PLATFORM_RADAR_TIMEOUT_MS: String(process.env.EVENTLIVE_STRATEGIC_PLATFORM_RADAR_TIMEOUT_MS || 25000)
+    },
+    reports: [
+      'reports/source-strategic-platform-radar.json',
+      'reports/source-strategic-platform-radar.md'
+    ]
+  },
+  {
     id: 'mygov-wayback',
     name: 'GOV.SA / NEC Wayback Radar',
     source_id: 'my-gov-sa-events',
