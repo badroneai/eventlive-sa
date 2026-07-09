@@ -1,24 +1,25 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-09T04:20:46.096Z
+- published_at: 2026-07-09T10:10:03.103Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 187
-- published_new: 2
-- linked_existing: 156
-- blocked_remaining: 29
+- candidates_seen: 191
+- published_new: 3
+- linked_existing: 157
+- blocked_remaining: 31
 
 ## Blocked summary
 
 - possible duplicate already exists: event-esports-world-cup: 1
-- publication gate source-evidence is not auto-publishable: 16
+- publication gate source-evidence is not auto-publishable: 18
 - confidence public-listing is not auto-publishable: 11
 - possible duplicate already exists: event-leap-2026: 1
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-misk-hub-programs-application-deadline-2030-leaders-20260712-68dd4c4c | published | event-application-deadline-2030-leaders-2 | Application deadline: 2030 Leaders |
-| candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45 | published | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-9 | معسكر تطوير تطبيقات الويب باستخدام لغة Python |
+| candidate-riyadh-city-events-mishkat-summer-camp-20260712-704761b4 | published | event-mishkat-summer-camp | Mishkat Summer Camp |
+| candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45 | published | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-10 | معسكر تطوير تطبيقات الويب باستخدام لغة Python |
+| candidate-tuwaiq-academy-bootcamps-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc-20260906-cb343b82 | published | event-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc | معسكر إدارة الحوكمة والمخاطر والامتثال GRC |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -67,6 +68,7 @@
 | candidate-monshaat-events-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م-20260712-1d4a3074 | linked-existing | event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م | already linked to catalog event |
 | candidate-future-skills-catalog-دورة-comptia-a-20260712-dd4c25aa | linked-existing | event-دورة-comptia-a | already linked to catalog event |
 | candidate-future-skills-catalog-security-operations-threat-detection-incident-response-عمليات-الأمن-السي-20260712-c94b7135 | linked-existing | event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي | already linked to catalog event |
+| candidate-misk-hub-programs-application-deadline-2030-leaders-20260712-68dd4c4c | linked-existing | event-application-deadline-2030-leaders-2 | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي-20260712-fd68b684 | linked-existing | event-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي | already linked to catalog event |
 | candidate-saudi-university-events-join-us-at-kaust-health-for-respiratory-health-day-20260712-27bf6068 | linked-existing | event-join-us-at-kaust-health-for-respiratory-health-day | already linked to catalog event |
 | candidate-riyadh-city-events-saif-summer-program-20260712-c90d634d | linked-existing | event-saif-summer-program | already linked to catalog event |
@@ -192,6 +194,7 @@
 | candidate-eventbrite-saudi-information-session-with-ie-university-saudi-arabia-in-riyadh-20260907-2b4929f1 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-25th-wpc-energy-congress-20261011-5909609b | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-12th-middle-east-banking-ai-analytics-summit-2026-20261014-cec80e9d | blocked | - | publication gate source-evidence is not auto-publishable |
+| candidate-eventbrite-saudi-information-session-with-ie-university-saudi-arabia-in-riyadh-20261014-d14514bb | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-15th-middle-east-enterprise-ai-analytics-summit-20261015-b7493a97 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-15th-middle-east-enterprise-ai-analytics-summit-20261015-e0aad1e6 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-riyadh-2026-venture-capital-world-summit-20261020-a3f5a1b8 | blocked | - | publication gate source-evidence is not auto-publishable |
@@ -204,3 +207,4 @@
 | candidate-eventbrite-saudi-family-offices-vcs-investment-summit-riyadh-invite-only-20261124-e6c951a4 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eye-of-riyadh-events-real-estate-future-forum-20270125-d058344d | blocked | - | confidence public-listing is not auto-publishable |
 | candidate-eye-of-riyadh-events-real-estate-excellence-award-2026-rea-2026-20270126-5e55ea49 | blocked | - | confidence public-listing is not auto-publishable |
+| candidate-eventbrite-saudi-saudi-international-marine-exhibition-simec-6th-edition-2027-20270328-47e72c19 | blocked | - | publication gate source-evidence is not auto-publishable |

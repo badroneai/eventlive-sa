@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-09T04:21:30.532Z",
+  "generated_at": "2026-07-09T10:10:45.963Z",
   "totals": {
-    "targets": 74,
-    "enriched": 74,
+    "targets": 75,
+    "enriched": 75,
     "fetched": 15,
-    "images": 59,
-    "fetch_failures": 59
+    "images": 60,
+    "fetch_failures": 60
   },
   "enriched": [
     {
@@ -396,6 +396,16 @@
       "source_url": "http://www.monshaat.gov.sa/ar/node/489022",
       "fetched": false,
       "image": false,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-mishkat-summer-camp",
+      "title": "Mishkat Summer Camp",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31180",
+      "fetched": false,
+      "image": true,
       "fetch_reason": "fetch failed"
     },
     {
@@ -952,6 +962,12 @@
       "id": "event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م",
       "title": "أسبوع العقار والمقاولات 12- 16 يوليو 2026م",
       "source_url": "http://www.monshaat.gov.sa/ar/node/489022",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-mishkat-summer-camp",
+      "title": "Mishkat Summer Camp",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31180",
       "reason": "fetch failed"
     },
     {

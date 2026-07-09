@@ -1,6 +1,6 @@
 # EventLive Source Yield Report
 
-Generated at: 2026-07-09T04:13:07.324Z
+Generated at: 2026-07-09T10:02:24.278Z
 Sources attempted: 34
 
 | Source | Status | Signals | Extracted raw | Future complete | Written last run | Drop reasons | Note |
@@ -12,16 +12,16 @@ Sources attempted: 34
 | mdlbeast-events | ok | bytes 395643, rows 0, dates 83 | 41 | 5 | 5 | future-complete:5, past-date:36 |  |
 | monshaat-events | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | The operation was aborted due to timeout |
 | invest-saudi-events | ok | bytes 7022, rows 9, dates 0 | 8 | 3 | 3 | past-date:5, future-complete:3 |  |
-| rfecc-whats-on | ok | bytes 144324, rows 0, dates 3 | 0 | 0 | 6 | - |  |
+| rfecc-whats-on | ok | bytes 144312, rows 0, dates 3 | 0 | 0 | 6 | - |  |
 | eye-of-riyadh-events | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | HTTP 403 |
-| eventbrite-saudi | error | bytes 0, rows 0, dates 0 | 0 | 0 | 16 | - | HTTP 405 |
-| tuwaiq-academy-bootcamps | ok | bytes 10834, rows 12, dates 0 | 12 | 12 | 12 | future-complete:12 |  |
+| eventbrite-saudi | ok | bytes 839828, rows 0, dates 240 | 18 | 18 | 0 | future-complete:18 |  |
+| tuwaiq-academy-bootcamps | ok | bytes 10788, rows 12, dates 0 | 12 | 12 | 12 | future-complete:12 |  |
 | future-skills-catalog | ok | bytes 169748, rows 0, dates 2 | 12 | 4 | 4 | future-complete:4, past-date:8 |  |
 | visit-saudi-seasons | ok | bytes 38431, rows 10, dates 0 | 4 | 4 | 4 | future-complete:4 |  |
 | code-mcit-programs | ok | bytes 42936, rows 0, dates 0 | 0 | 0 | 0 | - |  |
 | misk-hub-programs | ok | bytes 213483, rows 0, dates 0 | 5 | 5 | 5 | future-complete:5 |  |
 | dhahran-expo-calendar | ok | bytes 490854, rows 0, dates 0 | 22 | 15 | 15 | past-date:7, future-complete:15 |  |
-| ithra-events | ok | bytes 174285, rows 0, dates 7 | 0 | 0 | 0 | - |  |
+| ithra-events | ok | bytes 174258, rows 0, dates 7 | 0 | 0 | 0 | - |  |
 | sdaia-academy-programs | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | fetch failed |
 | misk-hub-events | ok | bytes 229636, rows 0, dates 22 | 5 | 0 | 0 | past-date:5 |  |
 | jcci-events-center | ok | bytes 1370249, rows 0, dates 0 | 13 | 0 | 0 | past-date:13 |  |
@@ -30,9 +30,9 @@ Sources attempted: 34
 | moc-cultural-subportals | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | The operation was aborted due to timeout |
 | discover-aseer-events | ok | bytes 137972, rows 0, dates 2 | 1 | 1 | 1 | future-complete:1 |  |
 | saudi-water-authority-events | ok | bytes 176734, rows 0, dates 21 | 9 | 8 | 8 | future-complete:8, past-date:1 |  |
-| saudi-university-events | error | bytes 85873, rows 0, dates 0 | 0 | 0 | 6 | - | ENOENT: no such file or directory, open '/home/runner/work/eventlive-sa/eventlive-sa/data/raw/source-snapshots/saudi-university-events-kaustcentral-event-list-2026-07-09T04-13-07-355Z.json' |
+| saudi-university-events | error | bytes 85874, rows 0, dates 0 | 0 | 0 | 6 | - | ENOENT: no such file or directory, open '/home/runner/work/eventlive-sa/eventlive-sa/data/raw/source-snapshots/saudi-university-events-kaustcentral-event-list-2026-07-09T10-02-24-313Z.json' |
 | sfda-events | ok | bytes 127189, rows 0, dates 18 | 9 | 7 | 7 | future-complete:7, past-date:2 |  |
-| riyadh-city-events | ok | bytes 3129, rows 0, dates 0 | 92 | 92 | 40 | future-complete:92 |  |
+| riyadh-city-events | ok | bytes 3129, rows 0, dates 0 | 93 | 93 | 40 | future-complete:93 |  |
 | sdaia-calendar-events | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | fetch failed |
 | makkah-chamber-events | ok | bytes 67797, rows 0, dates 14 | 10 | 0 | 0 | past-date:10 |  |
 | asharqia-chamber-events | ok | bytes 103207, rows 0, dates 3 | 15 | 2 | 2 | future-complete:2, past-date:13 |  |
@@ -50,7 +50,6 @@ Sources attempted: 34
 | monshaat-events | collector-error: The operation was aborted due to timeout | 0 |
 | rfecc-whats-on | date/content signals exist but extractor returned no complete future rows | 0 |
 | eye-of-riyadh-events | collector-error: HTTP 403 | 0 |
-| eventbrite-saudi | collector-error: HTTP 405 | 0 |
 | code-mcit-programs | no rows detected by extractor | 0 |
 | ithra-events | date/content signals exist but extractor returned no complete future rows | 2 |
 | sdaia-academy-programs | collector-error: fetch failed | 0 |
@@ -59,7 +58,7 @@ Sources attempted: 34
 | saudi-pro-league-fixtures | past-date:100 | 2 |
 | saudi-space-agency-events | past-date:14 | 0 |
 | moc-cultural-subportals | collector-error: The operation was aborted due to timeout | 0 |
-| saudi-university-events | collector-error: ENOENT: no such file or directory, open '/home/runner/work/eventlive-sa/eventlive-sa/data/raw/source-snapshots/saudi-university-events-kaustcentral-event-list-2026-07-09T04-13-07-355Z.json' | 0 |
+| saudi-university-events | collector-error: ENOENT: no such file or directory, open '/home/runner/work/eventlive-sa/eventlive-sa/data/raw/source-snapshots/saudi-university-events-kaustcentral-event-list-2026-07-09T10-02-24-313Z.json' | 0 |
 | sdaia-calendar-events | collector-error: fetch failed | 0 |
 | makkah-chamber-events | past-date:10 | 0 |
 | qassim-chamber-events | collector-error: HTTP 403 | 0 |

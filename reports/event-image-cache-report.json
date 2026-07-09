@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-09T04:22:58.289Z",
+  "generated_at": "2026-07-09T10:12:19.506Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
-    "targets": 167,
-    "cached_total": 178,
-    "fetched": 2,
+    "targets": 169,
+    "cached_total": 180,
+    "fetched": 4,
     "reused": 159,
     "failed": 6,
     "skipped_recent_failures": 6,
@@ -14,9 +14,21 @@
   },
   "fetched": [
     {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/nadcywdn.tl5.webp",
+      "file": "dist/assets/event-images/معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc-88592b3651.webp",
+      "bytes": 12398,
+      "events": 1
+    },
+    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/fadgxp3x.sdb.webp",
       "file": "dist/assets/event-images/معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي-242280a557.webp",
       "bytes": 12092,
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/3.png?itok=7Upsv5tQ",
+      "file": "dist/assets/event-images/mishkat-summer-camp-4f41ae0160.png",
+      "bytes": 205664,
       "events": 1
     },
     {
@@ -270,7 +282,7 @@
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/emzgfcby.aiz.webp",
       "file": "dist/assets/event-images/معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-8b9b4fc037.webp",
-      "events": 8
+      "events": 9
     },
     {
       "source_url": "https://hub.misk.org.sa/media/eoxb5tmh/ec-founder-leadership-excellence_en.png",

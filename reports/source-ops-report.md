@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-07-09T04:23:11.531Z
+- generated_at: 2026-07-09T10:12:32.388Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -13,27 +13,27 @@
 - Sources in registry: 66
 - Sources attempted in latest collection: 34
 - Collection coverage: 52%
-- Healthy sources: 15
+- Healthy sources: 16
 - Zero-yield sources: 9
 - High-priority unattempted sources: 3
-- Candidates: 187
+- Candidates: 191
 - Actionable candidates: 0
 - Ready for review: 0
 - Ready for catalog promotion: 0
-- Linked to catalog from candidates: 158
+- Linked to catalog from candidates: 160
 - Stale unpublished candidates: 0
 - Duplicate risk: 0
 - Recommendation: استخدم أقوى مرشحي الاكتشاف لبناء مطابقة آلية مع مصادر رسمية؛ لا تنشر مصدر اكتشاف منفرداً.
 
 ## Candidate Funnel
 
-- review_status.approved-for-catalog: 158
+- review_status.approved-for-catalog: 160
 - review_status.evidence-captured: 13
-- review_status.new: 16
-- publication_gate.catalog-review: 158
+- review_status.new: 18
+- publication_gate.catalog-review: 160
 - publication_gate.duplicate-review: 13
-- publication_gate.source-evidence: 16
-- discovery_quality.strong-lead: 27
+- publication_gate.source-evidence: 18
+- discovery_quality.strong-lead: 29
 - discovery_quality.weak-lead: 1
 - discovery_quality.watch-lead: 3
 
@@ -74,9 +74,9 @@
 | 11 | RFECC What's On | healthy | 6 | 6 | استمر بالمراجعة والتكرار قبل النشر. |
 | 12 | Eye of Riyadh Events | collection-error | 0 | 15 | Discovery-only source unavailable in this run: HTTP 403 |
 | 13 | 10times Saudi Arabia | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 14 | Eventbrite Saudi Arabia | collection-error | 0 | 16 | Discovery-only source unavailable in this run: HTTP 405 |
+| 14 | Eventbrite Saudi Arabia | healthy | 18 | 18 | استمر بالمراجعة والتكرار قبل النشر. |
 | 15 | Platinumlist Jeddah Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 16 | Tuwaiq Academy Bootcamps and Programs | healthy | 12 | 19 | استمر بالمراجعة والتكرار قبل النشر. |
+| 16 | Tuwaiq Academy Bootcamps and Programs | healthy | 12 | 20 | استمر بالمراجعة والتكرار قبل النشر. |
 | 17 | Future Skills MCIT Catalogue | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |
 | 18 | Riyadh Season Official | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 19 | Visit Saudi Seasons | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |
@@ -111,7 +111,7 @@
 | 48 | Saudi Food and Drug Authority Events | healthy | 7 | 7 | استمر بالمراجعة والتكرار قبل النشر. |
 | 49 | Saudi Contractors Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 50 | Saudi Winter Events Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 51 | Riyadh City Events | healthy | 40 | 41 | استمر بالمراجعة والتكرار قبل النشر. |
+| 51 | Riyadh City Events | healthy | 40 | 42 | استمر بالمراجعة والتكرار قبل النشر. |
 | 52 | Monsha'at Academy Programs | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 53 | General Entertainment Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 54 | SDAIA Calendar and Events | collection-error | 0 | 2 | fetch failed |

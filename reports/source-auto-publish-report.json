@@ -1,27 +1,32 @@
 {
-  "published_at": "2026-07-09T04:20:46.096Z",
+  "published_at": "2026-07-09T10:10:03.103Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 187,
+  "candidates_seen": 191,
   "totals": {
-    "candidates_seen": 187,
-    "published": 2,
-    "linked_existing": 156,
-    "blocked": 29,
-    "reconciled": 158
+    "candidates_seen": 191,
+    "published": 3,
+    "linked_existing": 157,
+    "blocked": 31,
+    "reconciled": 160
   },
   "published": [
     {
-      "candidate_id": "candidate-misk-hub-programs-application-deadline-2030-leaders-20260712-68dd4c4c",
-      "event_id": "event-application-deadline-2030-leaders-2",
-      "title": "Application deadline: 2030 Leaders"
+      "candidate_id": "candidate-riyadh-city-events-mishkat-summer-camp-20260712-704761b4",
+      "event_id": "event-mishkat-summer-camp",
+      "title": "Mishkat Summer Camp"
     },
     {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45",
-      "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-9",
+      "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-10",
       "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc-20260906-cb343b82",
+      "event_id": "event-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc",
+      "title": "معسكر إدارة الحوكمة والمخاطر والامتثال GRC"
     }
   ],
   "linked_existing": [
@@ -311,6 +316,12 @@
       "candidate_id": "candidate-future-skills-catalog-security-operations-threat-detection-incident-response-عمليات-الأمن-السي-20260712-c94b7135",
       "event_id": "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي",
       "title": "⁠Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-misk-hub-programs-application-deadline-2030-leaders-20260712-68dd4c4c",
+      "event_id": "event-application-deadline-2030-leaders-2",
+      "title": "Application deadline: 2030 Leaders",
       "reason": "already linked to catalog event"
     },
     {
@@ -1049,6 +1060,11 @@
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
+      "candidate_id": "candidate-eventbrite-saudi-information-session-with-ie-university-saudi-arabia-in-riyadh-20261014-d14514bb",
+      "title": "Information Session With IE University Saudi Arabia in Riyadh",
+      "reason": "publication gate source-evidence is not auto-publishable"
+    },
+    {
       "candidate_id": "candidate-eventbrite-saudi-15th-middle-east-enterprise-ai-analytics-summit-20261015-b7493a97",
       "title": "15th Middle East Enterprise AI & Analytics Summit",
       "reason": "publication gate source-evidence is not auto-publishable"
@@ -1107,6 +1123,11 @@
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-excellence-award-2026-rea-2026-20270126-5e55ea49",
       "title": "Real Estate Excellence Award 2026 (REA 2026)",
       "reason": "confidence public-listing is not auto-publishable"
+    },
+    {
+      "candidate_id": "candidate-eventbrite-saudi-saudi-international-marine-exhibition-simec-6th-edition-2027-20270328-47e72c19",
+      "title": "Saudi International Marine Exhibition (SIMEC) 6th Edition 2027",
+      "reason": "publication gate source-evidence is not auto-publishable"
     }
   ]
 }

@@ -1,22 +1,22 @@
 # EventLive Source Secondary Verification Report
 
-- generated_at: 2026-07-09T04:20:45.944Z
-- candidates_seen: 187
-- candidates_considered: 30
-- promoted: 1
-- official_evidence_promoted: 1
+- generated_at: 2026-07-09T10:10:02.957Z
+- candidates_seen: 191
+- candidates_considered: 33
+- promoted: 0
+- official_evidence_promoted: 0
 - official_programs_promoted: 0
 - official_catalog_matches_promoted: 0
-- still_blocked: 29
+- still_blocked: 33
 
 ## Promoted
 
 | Candidate | Kind | Title | Evidence |
 |---|---|---|---|
-| candidate-misk-hub-programs-application-deadline-2030-leaders-20260712-68dd4c4c | official-source-evidence | Application deadline: 2030 Leaders | https://hub.misk.org.sa/programs/leadership/2030-leaders/ |
 
 ## Still Blocked Summary
 
 - public-listing-needs-official-match: 13
-- needs-secondary-official-proof: 16
+- not-secondary-verifiable: 2
+- needs-secondary-official-proof: 18
 

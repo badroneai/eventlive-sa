@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-07-09T04:23:11.379Z
+Generated at: 2026-07-09T10:12:32.244Z
 
 ## Operating Rule
 
@@ -10,7 +10,7 @@ Raw collection is not publication. Every source run preserves evidence, separate
 
 - Sources: 66
 - Attempted this run: 34
-- Productive: 14
+- Productive: 15
 - Zero-yield: 9
 - Collector errors: 8
 - Probe blocked: 12
@@ -51,32 +51,32 @@ Raw collection is not publication. Every source run preserves evidence, separate
 | 4 | mos-events | active-collector | collector-error | 0 | yes | Fix collector error: fetch failed |
 | 5 | webook-explore | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
 | 6 | hala-yalla | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
-| 7 | experience-alula-events | active-collector | zero-yield | 0 | yes | Zero-yield for 40 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 7 | experience-alula-events | active-collector | zero-yield | 0 | yes | Zero-yield for 43 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 8 | mdlbeast-events | active-collector | productive | 5 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 9 | monshaat-events | active-collector | collector-error | 0 | yes | Fix collector error: fetch failed |
 | 10 | invest-saudi-events | active-collector | productive | 3 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 11 | rfecc-whats-on | active-collector | productive | 6 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 12 | eye-of-riyadh-events | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
 | 13 | ten-times-saudi | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
-| 14 | eventbrite-saudi | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
+| 14 | eventbrite-saudi | discovery-only | productive | 18 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 15 | platinumlist-jeddah | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
 | 16 | tuwaiq-academy-bootcamps | active-collector | productive | 12 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 17 | future-skills-catalog | active-collector | productive | 4 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 18 | riyadh-season | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: bot-protection |
 | 19 | visit-saudi-seasons | active-collector | productive | 4 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
-| 20 | code-mcit-programs | active-collector | zero-yield | 0 | yes | Zero-yield for 40 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 20 | code-mcit-programs | active-collector | zero-yield | 0 | yes | Zero-yield for 43 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 21 | misk-hub-programs | active-collector | productive | 5 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 22 | dhahran-expo-calendar | active-collector | productive | 15 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
-| 23 | ithra-events | active-collector | zero-yield | 0 | yes | Zero-yield for 40 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 23 | ithra-events | active-collector | zero-yield | 0 | yes | Zero-yield for 43 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 24 | saudi-digital-academy | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: fetch failed |
 | 25 | sdaia-academy-programs | active-collector | collector-error | 0 | no | Fix collector error: fetch failed |
 | 26 | saudi-events-app | partnership | partnership | 0 | no | Partnership/API lane; do not scrape protected or app-only data. |
 | 27 | enjoy-saudi-events | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: http-403 |
-| 28 | misk-hub-events | active-collector | zero-yield | 0 | no | Zero-yield for 40 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
-| 29 | jcci-events-center | active-collector | zero-yield | 0 | no | Zero-yield for 40 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
-| 30 | saudi-pro-league-fixtures | active-collector | zero-yield | 0 | no | Zero-yield for 40 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 28 | misk-hub-events | active-collector | zero-yield | 0 | no | Zero-yield for 43 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 29 | jcci-events-center | active-collector | zero-yield | 0 | no | Zero-yield for 43 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 30 | saudi-pro-league-fixtures | active-collector | zero-yield | 0 | no | Zero-yield for 43 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 31 | neom-newsroom-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
-| 32 | saudi-space-agency-events | active-collector | zero-yield | 0 | no | Zero-yield for 25 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 32 | saudi-space-agency-events | active-collector | zero-yield | 0 | no | Zero-yield for 28 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 33 | cst-events-news | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 34 | visit-saudi-calendar-pdf | extractor-backlog | not-attempted | 0 | no | Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible. |
 | 35 | qiddiya-events | evidence-monitor | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: http-403 |
@@ -99,10 +99,10 @@ Raw collection is not publication. Every source run preserves evidence, separate
 | 52 | monshaat-academy-programs | partnership | partnership | 0 | no | Partnership/API lane; do not scrape protected or app-only data. |
 | 53 | gea-entertainment-events | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: http-403 |
 | 54 | sdaia-calendar-events | active-collector | collector-error | 0 | no | Fix collector error: fetch failed |
-| 55 | makkah-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 34 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 55 | makkah-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 37 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 59 | asharqia-chamber-events | active-collector | productive | 2 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 60 | qassim-chamber-events | active-collector | collector-error | 0 | no | Fix collector error: HTTP 403 |
-| 61 | abha-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 34 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 61 | abha-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 37 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 62 | baha-amanah-events | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: bot-protection |
 | 63 | baha-chamber-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 64 | jouf-chamber-events | extractor-backlog | not-attempted | 0 | no | Latest deep probe recommends build-html-detail-extractor; build only if future date-complete rows are visible. |

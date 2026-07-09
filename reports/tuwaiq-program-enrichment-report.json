@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-09T04:20:46.556Z",
+  "generated_at": "2026-07-09T10:10:03.559Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 26,
-    "enriched": 26,
+    "targets": 28,
+    "enriched": 28,
     "failed": 0
   },
   "enriched": [
@@ -40,7 +40,7 @@
       "requirements": 6
     },
     {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-9",
+      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-10",
       "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
       "slug": "4yOEV7Qq",
       "goals": 12,
@@ -62,6 +62,14 @@
       "goals": 8,
       "features": 6,
       "requirements": 10
+    },
+    {
+      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-9",
+      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
+      "slug": "4yOEV7Qq",
+      "goals": 12,
+      "features": 6,
+      "requirements": 11
     },
     {
       "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-8",
@@ -214,6 +222,14 @@
       "goals": 7,
       "features": 6,
       "requirements": 12
+    },
+    {
+      "id": "event-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc",
+      "title": "معسكر إدارة الحوكمة والمخاطر والامتثال GRC",
+      "slug": "aXzlnR2d",
+      "goals": 7,
+      "features": 8,
+      "requirements": 4
     }
   ],
   "failed": []

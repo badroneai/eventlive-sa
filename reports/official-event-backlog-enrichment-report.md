@@ -1,10 +1,10 @@
 # EventLive Official Event Backlog Enrichment
-- Generated at: 2026-07-09T04:21:30.532Z
-- Targets: 74
-- Enriched: 74
+- Generated at: 2026-07-09T10:10:45.963Z
+- Targets: 75
+- Enriched: 75
 - Fetched: 15
-- Images: 59
-- Fetch failures: 59
+- Images: 60
+- Fetch failures: 60
 
 | Source | Event | Method | Image | Fetch |
 |---|---|---:|---:|---:|
@@ -47,6 +47,7 @@
 | Saudi Universities and Technical Colleges | Quarter-Finals: Join the Celebration at the FIFA Fan Zone | official-page-meta | no | yes |
 | Riyadh City Events | PFL MENA Fight Night | approved-source-row | yes | fetch failed |
 | Monsha'at All Events | أسبوع العقار والمقاولات 12- 16 يوليو 2026م | approved-source-row | no | fetch failed |
+| Riyadh City Events | Mishkat Summer Camp | approved-source-row | yes | fetch failed |
 | Saudi Universities and Technical Colleges | Join us at KAUST Health for Respiratory Health Day | official-page-meta | no | yes |
 | Riyadh City Events | SAIF Summer Program | approved-source-row | yes | fetch failed |
 | Saudi Universities and Technical Colleges | Semi-Finals: Join the Celebration at the FIFA Fan Zone | official-page-meta | no | yes |
