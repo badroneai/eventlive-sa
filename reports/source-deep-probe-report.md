@@ -1,6 +1,6 @@
 # EventLive Source Deep Probe
 
-Generated at: 2026-07-08T19:55:10.398Z
+Generated at: 2026-07-09T04:12:35.996Z
 
 ## Summary
 
@@ -35,7 +35,7 @@ Generated at: 2026-07-08T19:55:10.398Z
 | 24 | saudi-digital-academy | - | -35 | blocked-or-protected:fetch failed | 0 | 0 | 0 | - |
 | 35 | qiddiya-events | 403 | -35 | blocked-or-protected:http-403 | 0 | 0 | 0 | Attention Required! | Cloudflare |
 | 43 | jeddah-season | - | -35 | blocked-or-protected:fetch failed | 0 | 0 | 0 | - |
-| 50 | saudi-winter-calendar-spa | - | -35 | blocked-or-protected:timeout | 0 | 0 | 0 | - |
+| 50 | saudi-winter-calendar-spa | 403 | -35 | blocked-or-protected:http-403 | 0 | 0 | 0 | Attention Required! | Cloudflare |
 
 ## Next Actions
 

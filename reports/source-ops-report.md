@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-07-08T20:06:07.850Z
+- generated_at: 2026-07-09T04:23:11.531Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -13,7 +13,7 @@
 - Sources in registry: 66
 - Sources attempted in latest collection: 34
 - Collection coverage: 52%
-- Healthy sources: 16
+- Healthy sources: 15
 - Zero-yield sources: 9
 - High-priority unattempted sources: 3
 - Candidates: 187
@@ -74,7 +74,7 @@
 | 11 | RFECC What's On | healthy | 6 | 6 | استمر بالمراجعة والتكرار قبل النشر. |
 | 12 | Eye of Riyadh Events | collection-error | 0 | 15 | Discovery-only source unavailable in this run: HTTP 403 |
 | 13 | 10times Saudi Arabia | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 14 | Eventbrite Saudi Arabia | healthy | 16 | 16 | استمر بالمراجعة والتكرار قبل النشر. |
+| 14 | Eventbrite Saudi Arabia | collection-error | 0 | 16 | Discovery-only source unavailable in this run: HTTP 405 |
 | 15 | Platinumlist Jeddah Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 16 | Tuwaiq Academy Bootcamps and Programs | healthy | 12 | 19 | استمر بالمراجعة والتكرار قبل النشر. |
 | 17 | Future Skills MCIT Catalogue | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |

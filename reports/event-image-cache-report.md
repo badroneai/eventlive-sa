@@ -1,6 +1,6 @@
 # EventLive Event Image Cache Report
 
-- generated_at: 2026-07-08T20:05:54.660Z
+- generated_at: 2026-07-09T04:22:58.289Z
 - events_file: dist/events.json
 - manifest: data/event_image_cache_manifest.json
 - image_dir: dist/assets/event-images
@@ -10,15 +10,15 @@
 - reused: 159
 - rejected_removed: 0
 - failed: 6
-- skipped_recent_failures: 0
+- skipped_recent_failures: 6
 - remembered_failures: 9
 - concurrency: 8
 
 ## Failed
 
 - https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122220/images-5.jpg — tls-certificate — certificate has expired — retry after 2026-07-09T20:05:54.660Z
-- https://cdn.rfecc.sa/wp-content/uploads/2025/02/26113050/images-4.png — tls-certificate — certificate has expired — retry after 2026-07-09T20:05:54.660Z
+- https://cdn.rfecc.sa/wp-content/uploads/2026/03/12031444/inter-aviation-Arabia-HP-PR-logo.png — tls-certificate — certificate has expired — retry after 2026-07-09T20:05:54.660Z
 - https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122706/fibo_arabia_logo_10431.webp — tls-certificate — certificate has expired — retry after 2026-07-09T20:05:54.660Z
 - https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122431/WMT-Spotlight-Riyadh-Dates-1200x675-1-1024x576-1.jpg — tls-certificate — certificate has expired — retry after 2026-07-09T20:05:54.660Z
 - https://cdn.rfecc.sa/wp-content/uploads/2026/01/06123740/GqbqdoDWMAAm16R.jpg — tls-certificate — certificate has expired — retry after 2026-07-09T20:05:54.660Z
-- https://cdn.rfecc.sa/wp-content/uploads/2026/03/12031444/inter-aviation-Arabia-HP-PR-logo.png — tls-certificate — certificate has expired — retry after 2026-07-09T20:05:54.660Z
+- https://cdn.rfecc.sa/wp-content/uploads/2025/02/26113050/images-4.png — tls-certificate — certificate has expired — retry after 2026-07-09T20:05:54.660Z

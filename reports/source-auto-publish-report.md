@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-08T20:03:42.187Z
+- published_at: 2026-07-09T04:20:46.096Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 187
-- published_new: 1
-- linked_existing: 157
+- published_new: 2
+- linked_existing: 156
 - blocked_remaining: 29
 
 ## Blocked summary
@@ -17,7 +17,8 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45 | published | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-8 | معسكر تطوير تطبيقات الويب باستخدام لغة Python |
+| candidate-misk-hub-programs-application-deadline-2030-leaders-20260712-68dd4c4c | published | event-application-deadline-2030-leaders-2 | Application deadline: 2030 Leaders |
+| candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45 | published | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-9 | معسكر تطوير تطبيقات الويب باستخدام لغة Python |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -58,7 +59,6 @@
 | candidate-tuwaiq-academy-bootcamps-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية-20260705-60b7f94b | linked-existing | event-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية | already linked to catalog event |
 | candidate-riyadh-city-events-esports-world-cup-20260706-b4b860e9 | linked-existing | event-esports-world-cup | already linked to catalog event |
 | candidate-saudi-university-events-registration-now-open-for-children-at-the-childhood-studies-center-for-t-20260707-a2624927 | linked-existing | event-registration-now-open-for-children-at-the-childhood-studies-center-for-t | already linked to catalog event |
-| candidate-misk-hub-programs-application-deadline-2030-leaders-20260708-68dd4c4c | linked-existing | event-application-deadline-2030-leaders | already linked to catalog event |
 | candidate-saudi-university-events-quarter-finals-join-the-celebration-at-the-fifa-fan-zone-20260709-ce09a5c4 | linked-existing | event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone | already linked to catalog event |
 | candidate-mdlbeast-events-unstable-20260710-5647df2e | linked-existing | event-unstable | already linked to catalog event |
 | candidate-riyadh-city-events-pfl-mena-fight-night-20260710-0eafa4d0 | linked-existing | event-pfl-mena-fight-night | already linked to catalog event |

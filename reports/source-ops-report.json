@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T20:06:07.850Z",
+  "generated_at": "2026-07-09T04:23:11.531Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,18 +11,18 @@
   },
   "collection": {
     "basis": "source_collection_report",
-    "collected_at": "2026-07-08T19:59:39.495Z",
+    "collected_at": "2026-07-09T04:16:47.502Z",
     "freshness": "fresh",
-    "discovered": 144,
+    "discovered": 128,
     "written": 187
   },
   "sources": {
     "total": 66,
     "attempted": 34,
     "collection_coverage_pct": 52,
-    "healthy": 16,
+    "healthy": 15,
     "zero_yield": 9,
-    "errors": 9,
+    "errors": 10,
     "not_collected": 32,
     "unattempted_high_priority": 3,
     "health": [
@@ -147,10 +147,10 @@
         "id": "eventbrite-saudi",
         "name": "Eventbrite Saudi Arabia",
         "priority": 14,
-        "status": "healthy",
-        "extracted": 16,
+        "status": "collection-error",
+        "extracted": 0,
         "candidates": 16,
-        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
+        "next_action": "Discovery-only source unavailable in this run: HTTP 405"
       },
       {
         "id": "platinumlist-jeddah",

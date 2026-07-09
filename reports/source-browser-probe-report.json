@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T19:58:11.015Z",
+  "generated_at": "2026-07-09T04:15:21.797Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -29,14 +29,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 7161,
+      "duration_ms": 6744,
       "classification": "browser-network-api",
       "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
       "title": "Events",
       "text_bytes": 2679,
-      "html_bytes": 816010,
-      "html_snapshot": "data/raw/browser-probes/experience-alula-events-2026-07-08T19-58-11-015Z.html",
-      "screenshot": "data/raw/browser-probes/experience-alula-events-2026-07-08T19-58-11-015Z.png",
+      "html_bytes": 816012,
+      "html_snapshot": "data/raw/browser-probes/experience-alula-events-2026-07-09T04-15-21-797Z.html",
+      "screenshot": "data/raw/browser-probes/experience-alula-events-2026-07-09T04-15-21-797Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -139,44 +139,44 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.experiencealula.com/bin/commerce/productsAvailabilityStatus.initiateProductStatusSync.json?experiencePath=/content/rcudxp/ea/en/data/all-experiences-detail",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-object:id,url",
-          "preview": "{\"id\":{\"1c3b7397-6a4b-f011-a908-005056b00240\":{\"isSoldOut\":\"false\",\"isExpired\":\"false\",\"almostFull\":\"false\",\"sellingFast\":\"false\",\"soldOutTagLabel\":\"\",\"expiredTagLabel\":\"Expired\",\"sellingFastTagLabel\":\"Selling fast\",\"almostFullTagLabel\":\"Almost full\",\"manualProductTagLabel\":\"\",\"soldOutTagColor\":\"grey\",\"expiredTagColor\":\"camel\",\"sellingFastTagColor\":\"yellow\",\"almostFullTagColor\":\"red\",\"manualProductTagColor\":\"\",\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/test-products/duathlon-form0.html\"}},\"url\":{\"/content/rcudxp/ea/en/things-to-do/test-products/duathlon-form0.html\":{\"isSoldOut\":\"false\",\"isExpired\":\"false\",\"almostFull\":\"false\",\"sellingFast\":\"false\",\"soldOutTagLabel\":\"\",\"expiredTagLabel\":\"Expired\",\"sellingFastTagLabel\":\"Selling fast\",\"almostFullTagLabel\":\"Almost full\",\"manualProductTagLabel\":\"\",\"soldOutTagColor\":\"grey\",\"expiredTagColor\":\"camel\",\"sellingFastTagColor\":\"yellow\",\"almostFullTagColor\":\"red\",\"manualProductTagColor\":\"\",\"productId\":\"1c3b7397-6a4b-f011-a908-005056b00240\"}}}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
           "url": "https://www.experiencealula.com/bin/commerce/productPriceSync.initiateProductSync.json?experiencePath=/content/rcudxp/ea/en/data/all-experiences-detail",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "",
           "response_shape": "json-like-invalid",
           "preview": "{\"id\":{\"9bf8b85c-d478-ee11-a8fd-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":false,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences/hegra-wildlife-and-nature-tour\",\"authoredWebFromPrice\":\"150\",\"authoredMobileFromPrice\":\"\"},\"e06073e4-569d-ec11-a8eb-005056b00240\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":false,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences2/oasis-heritage-trail-tour\",\"authoredWebFromPrice\":\"35\",\"authoredMobileFromPrice\":\"\"},\"cb5a4872-ca47-ec11-a8e8-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":false,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences2/dadan-and-jabal-ikmah-premium-tour\",\"authoredWebFromPrice\":\"1000\",\"authoredMobileFromPrice\":\"\"},\"fad99c22-cb47-ec11-a8e8-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":true,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences/hegra-day-tour\",\"authoredWebFromPrice\":\"95\",\"authoredMobileFromPrice\":\"\"},\"ce23ba67-cb47-ec11-a8e8-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":false,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences2/hegra-premium-tour\",\"authoredWebFromPrice\":\"1000\",\"authoredMobileFromPrice\":\"\"},\"637135a6-cb47-ec11-a8e8-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":false,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences2/old-town-tourAB\",\"authoredWebFromPrice\":\"70\",\"authoredMobileFromPrice\":\"\"},\"0c4026e6-cb47-ec11-a8e8-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":true,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences2/dadan-jabal-ikmah-tour\",\"authoredWebFromPrice\":\"60\",\"authoredMobileFromPrice\":\"\"},\"d7e056be-9ead-f011-a90f-005056830069\":{\"basePrice\":\"\",\"fromPrice\""
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.experiencealula.com/bin/commerce/productsAvailabilityStatus.initiateProductStatusSync.json?experiencePath=/content/rcudxp/ea/en/data/all-experiences-detail",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:id,url",
+          "preview": "{\"id\":{\"1c3b7397-6a4b-f011-a908-005056b00240\":{\"isSoldOut\":\"false\",\"isExpired\":\"false\",\"almostFull\":\"false\",\"sellingFast\":\"false\",\"soldOutTagLabel\":\"\",\"expiredTagLabel\":\"Expired\",\"sellingFastTagLabel\":\"Selling fast\",\"almostFullTagLabel\":\"Almost full\",\"manualProductTagLabel\":\"\",\"soldOutTagColor\":\"grey\",\"expiredTagColor\":\"camel\",\"sellingFastTagColor\":\"yellow\",\"almostFullTagColor\":\"red\",\"manualProductTagColor\":\"\",\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/test-products/duathlon-form0.html\"}},\"url\":{\"/content/rcudxp/ea/en/things-to-do/test-products/duathlon-form0.html\":{\"isSoldOut\":\"false\",\"isExpired\":\"false\",\"almostFull\":\"false\",\"sellingFast\":\"false\",\"soldOutTagLabel\":\"\",\"expiredTagLabel\":\"Expired\",\"sellingFastTagLabel\":\"Selling fast\",\"almostFullTagLabel\":\"Almost full\",\"manualProductTagLabel\":\"\",\"soldOutTagColor\":\"grey\",\"expiredTagColor\":\"camel\",\"sellingFastTagColor\":\"yellow\",\"almostFullTagColor\":\"red\",\"manualProductTagColor\":\"\",\"productId\":\"1c3b7397-6a4b-f011-a908-005056b00240\"}}}"
         }
       ],
       "network_sample": [
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.experiencealula.com/bin/commerce/productsAvailabilityStatus.initiateProductStatusSync.json?experiencePath=/content/rcudxp/ea/en/data/all-experiences-detail",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-object:id,url",
-          "preview": "{\"id\":{\"1c3b7397-6a4b-f011-a908-005056b00240\":{\"isSoldOut\":\"false\",\"isExpired\":\"false\",\"almostFull\":\"false\",\"sellingFast\":\"false\",\"soldOutTagLabel\":\"\",\"expiredTagLabel\":\"Expired\",\"sellingFastTagLabel\":\"Selling fast\",\"almostFullTagLabel\":\"Almost full\",\"manualProductTagLabel\":\"\",\"soldOutTagColor\":\"grey\",\"expiredTagColor\":\"camel\",\"sellingFastTagColor\":\"yellow\",\"almostFullTagColor\":\"red\",\"manualProductTagColor\":\"\",\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/test-products/duathlon-form0.html\"}},\"url\":{\"/content/rcudxp/ea/en/things-to-do/test-products/duathlon-form0.html\":{\"isSoldOut\":\"false\",\"isExpired\":\"false\",\"almostFull\":\"false\",\"sellingFast\":\"false\",\"soldOutTagLabel\":\"\",\"expiredTagLabel\":\"Expired\",\"sellingFastTagLabel\":\"Selling fast\",\"almostFullTagLabel\":\"Almost full\",\"manualProductTagLabel\":\"\",\"soldOutTagColor\":\"grey\",\"expiredTagColor\":\"camel\",\"sellingFastTagColor\":\"yellow\",\"almostFullTagColor\":\"red\",\"manualProductTagColor\":\"\",\"productId\":\"1c3b7397-6a4b-f011-a908-005056b00240\"}}}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
           "url": "https://www.experiencealula.com/bin/commerce/productPriceSync.initiateProductSync.json?experiencePath=/content/rcudxp/ea/en/data/all-experiences-detail",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "",
           "response_shape": "json-like-invalid",
           "preview": "{\"id\":{\"9bf8b85c-d478-ee11-a8fd-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":false,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences/hegra-wildlife-and-nature-tour\",\"authoredWebFromPrice\":\"150\",\"authoredMobileFromPrice\":\"\"},\"e06073e4-569d-ec11-a8eb-005056b00240\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":false,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences2/oasis-heritage-trail-tour\",\"authoredWebFromPrice\":\"35\",\"authoredMobileFromPrice\":\"\"},\"cb5a4872-ca47-ec11-a8e8-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":false,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences2/dadan-and-jabal-ikmah-premium-tour\",\"authoredWebFromPrice\":\"1000\",\"authoredMobileFromPrice\":\"\"},\"fad99c22-cb47-ec11-a8e8-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":true,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences/hegra-day-tour\",\"authoredWebFromPrice\":\"95\",\"authoredMobileFromPrice\":\"\"},\"ce23ba67-cb47-ec11-a8e8-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":false,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences2/hegra-premium-tour\",\"authoredWebFromPrice\":\"1000\",\"authoredMobileFromPrice\":\"\"},\"637135a6-cb47-ec11-a8e8-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":false,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences2/old-town-tourAB\",\"authoredWebFromPrice\":\"70\",\"authoredMobileFromPrice\":\"\"},\"0c4026e6-cb47-ec11-a8e8-005056b0cec7\":{\"basePrice\":\"\",\"fromPrice\":\"\",\"mobilePrice\":\"\",\"multiFlow\":true,\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/experiences2/dadan-jabal-ikmah-tour\",\"authoredWebFromPrice\":\"60\",\"authoredMobileFromPrice\":\"\"},\"d7e056be-9ead-f011-a90f-005056830069\":{\"basePrice\":\"\",\"fromPrice\""
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.experiencealula.com/bin/commerce/productsAvailabilityStatus.initiateProductStatusSync.json?experiencePath=/content/rcudxp/ea/en/data/all-experiences-detail",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:id,url",
+          "preview": "{\"id\":{\"1c3b7397-6a4b-f011-a908-005056b00240\":{\"isSoldOut\":\"false\",\"isExpired\":\"false\",\"almostFull\":\"false\",\"sellingFast\":\"false\",\"soldOutTagLabel\":\"\",\"expiredTagLabel\":\"Expired\",\"sellingFastTagLabel\":\"Selling fast\",\"almostFullTagLabel\":\"Almost full\",\"manualProductTagLabel\":\"\",\"soldOutTagColor\":\"grey\",\"expiredTagColor\":\"camel\",\"sellingFastTagColor\":\"yellow\",\"almostFullTagColor\":\"red\",\"manualProductTagColor\":\"\",\"pageURL\":\"/content/rcudxp/ea/en/things-to-do/test-products/duathlon-form0.html\"}},\"url\":{\"/content/rcudxp/ea/en/things-to-do/test-products/duathlon-form0.html\":{\"isSoldOut\":\"false\",\"isExpired\":\"false\",\"almostFull\":\"false\",\"sellingFast\":\"false\",\"soldOutTagLabel\":\"\",\"expiredTagLabel\":\"Expired\",\"sellingFastTagLabel\":\"Selling fast\",\"almostFullTagLabel\":\"Almost full\",\"manualProductTagLabel\":\"\",\"soldOutTagColor\":\"grey\",\"expiredTagColor\":\"camel\",\"sellingFastTagColor\":\"yellow\",\"almostFullTagColor\":\"red\",\"manualProductTagColor\":\"\",\"productId\":\"1c3b7397-6a4b-f011-a908-005056b00240\"}}}"
         }
       ]
     },
@@ -189,14 +189,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 18915,
+      "duration_ms": 20551,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "Our programs | CODE | MCIT",
       "text_bytes": 5509,
-      "html_bytes": 57071,
-      "html_snapshot": "data/raw/browser-probes/code-mcit-programs-2026-07-08T19-58-11-015Z.html",
-      "screenshot": "data/raw/browser-probes/code-mcit-programs-2026-07-08T19-58-11-015Z.png",
+      "html_bytes": 57066,
+      "html_snapshot": "data/raw/browser-probes/code-mcit-programs-2026-07-09T04-15-21-797Z.html",
+      "screenshot": "data/raw/browser-probes/code-mcit-programs-2026-07-09T04-15-21-797Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -270,14 +270,14 @@
       "status": "error",
       "http_status": 0,
       "navigation_error": "page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.ithra.com/\nCall log:\n  - navigating to \"https://www.ithra.com/\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 184,
+      "duration_ms": 216,
       "classification": "empty-or-shell",
       "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
       "title": "",
       "text_bytes": 0,
       "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/ithra-events-2026-07-08T19-58-11-015Z.html",
-      "screenshot": "data/raw/browser-probes/ithra-events-2026-07-08T19-58-11-015Z.png",
+      "html_snapshot": "data/raw/browser-probes/ithra-events-2026-07-09T04-15-21-797Z.html",
+      "screenshot": "data/raw/browser-probes/ithra-events-2026-07-09T04-15-21-797Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -305,28 +305,28 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 9814,
+      "duration_ms": 9079,
       "classification": "browser-network-api",
       "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
       "title": "Misk Hub Events",
-      "text_bytes": 2150,
-      "html_bytes": 248227,
-      "html_snapshot": "data/raw/browser-probes/misk-hub-events-2026-07-08T19-58-11-015Z.html",
-      "screenshot": "data/raw/browser-probes/misk-hub-events-2026-07-08T19-58-11-015Z.png",
+      "text_bytes": 2610,
+      "html_bytes": 248293,
+      "html_snapshot": "data/raw/browser-probes/misk-hub-events-2026-07-09T04-15-21-797Z.html",
+      "screenshot": "data/raw/browser-probes/misk-hub-events-2026-07-09T04-15-21-797Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
         "has_json_ld": false,
         "has_event_schema": false,
         "date_snippets": [
-          "Insights العربية Sign in Skills Offline 08 May 2026 How to Choose Your Career Path and Keep Up with Labor Market Changes The Misk C",
+          "Insights العربية Sign in Skills Online 01 Jul 2026 Cybersecurity in the Workplace Within the Misk Career Essentials Program, we pr",
+          "closing on 1st July 2026 Skills Offline 08 May 2026 How to Choose Your Career Path and Keep Up with Labor Market Changes The Misk C",
           "d Cybersecurity in the Workplace Arabic 01 Jul 2026 7:00 pm : 8:00 pm More Details Hybrid Test Form Karachi English,Arabic 21 Jan -",
           "31 Dec 2026 10:11 : 10:11 More Details Online This event has Passed Enhancing Efficiency an",
           "ce Using Artificial Intelligence Arabic 08 May 2026 9:00 pm : 10:00 pm More Details Online This event has Passed How to Choose Your",
           "eep Up with Labor Market Changes Arabic 08 May 2026 8:00 pm : 9:00 pm More Details Online This event has Passed Workforce Skills in",
           "e Age of Artificial Intelligence Arabic 08 May 2026 7:00 pm : 8:00 pm More Details Online This event has Passed How do we build our",
-          "s and discover our career paths? Arabic 03 May 2026 8:00 pm : 9:00 pm More Details Online This event has Passed Lead Organizational",
-          "e Age of Artificial Intelligence Arabic 13 Apr 2026 7:00 pm : 8:00 pm More Details Online This event has Passed From Idea to Produc"
+          "s and discover our career paths? Arabic 03 May 2026 8:00 pm : 9:00 pm More Details Online This event has Passed Lead Organizational"
         ],
         "event_like_links": [
           {
@@ -422,16 +422,6 @@
         {
           "method": "POST",
           "status": 200,
-          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_37ae0a61afd2c7db86853f204ddf81a056d8dcf7a88233e503360e0e50e1d1fa\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783540721302.579746911829526780\"}",
-          "response_shape": "empty",
-          "preview": ""
-        },
-        {
-          "method": "POST",
-          "status": 200,
           "url": "https://hub.misk.org.sa/api/events/RenderLazyLoadAllEventsOfSeries",
           "content_type": "application/json",
           "resource_type": "xhr",
@@ -442,38 +432,28 @@
         {
           "method": "POST",
           "status": 200,
-          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/b73a735559c740c78767fc87d0245423/items/?frontend_timestamp=1783540721&frontend_sign=d5ffe1c55baa93cd753e91e7f96cf944ae393207",
+          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/230df27ebe1440b3aa6cbc7fc33a50a2/items/?frontend_timestamp=1783570553&frontend_sign=a4850c07dd16f87741c194aa1b4e5945a89498e4",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
           "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
-          "preview": "{\"recommId\": \"a0d6eb3727cf5fb98216fa43001711ff\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
+          "preview": "{\"recommId\": \"60a9712785085984d5d40bebc97f4545\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_22ec78cc2682abd3ebed367c1c24be43f386c2c1339731131c15b191ba276c8f\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783570554481.587249805863814621\"}",
+          "response_shape": "empty",
+          "preview": ""
         }
       ],
       "network_sample": [
         {
           "method": "POST",
           "status": 200,
-          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_37ae0a61afd2c7db86853f204ddf81a056d8dcf7a88233e503360e0e50e1d1fa\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783540721302.579746911829526780\"}",
-          "response_shape": "empty",
-          "preview": ""
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_efb1630af88dbaadb7986de4b889669a20dd04d7f540f1a3b61dd587372d124a\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783540721302.579746911829526780\"}",
-          "response_shape": "empty",
-          "preview": ""
-        },
-        {
-          "method": "POST",
-          "status": 200,
           "url": "https://hub.misk.org.sa/api/events/RenderLazyLoadAllEventsOfSeries",
           "content_type": "application/json",
           "resource_type": "xhr",
@@ -484,12 +464,32 @@
         {
           "method": "POST",
           "status": 200,
-          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/b73a735559c740c78767fc87d0245423/items/?frontend_timestamp=1783540721&frontend_sign=d5ffe1c55baa93cd753e91e7f96cf944ae393207",
+          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/230df27ebe1440b3aa6cbc7fc33a50a2/items/?frontend_timestamp=1783570553&frontend_sign=a4850c07dd16f87741c194aa1b4e5945a89498e4",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
           "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
-          "preview": "{\"recommId\": \"a0d6eb3727cf5fb98216fa43001711ff\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
+          "preview": "{\"recommId\": \"60a9712785085984d5d40bebc97f4545\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_22ec78cc2682abd3ebed367c1c24be43f386c2c1339731131c15b191ba276c8f\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783570554481.587249805863814621\"}",
+          "response_shape": "empty",
+          "preview": ""
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_23927ebf89a78c96049eb8a4f2e68c8b55134d4142c858b8c559a69deb4d7103\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783570554481.587249805863814621\"}",
+          "response_shape": "empty",
+          "preview": ""
         }
       ]
     },
@@ -502,14 +502,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 15681,
+      "duration_ms": 14940,
       "classification": "browser-network-api",
       "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
       "title": "المعارض والفعاليات - JCC - Jeddah Chamber",
-      "text_bytes": 2344,
-      "html_bytes": 1561685,
-      "html_snapshot": "data/raw/browser-probes/jcci-events-center-2026-07-08T19-58-11-015Z.html",
-      "screenshot": "data/raw/browser-probes/jcci-events-center-2026-07-08T19-58-11-015Z.png",
+      "text_bytes": 2257,
+      "html_bytes": 1561337,
+      "html_snapshot": "data/raw/browser-probes/jcci-events-center-2026-07-09T04-15-21-797Z.html",
+      "screenshot": "data/raw/browser-probes/jcci-events-center-2026-07-09T04-15-21-797Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -620,7 +620,7 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-alert-support-web%402.0.9%2Findex",
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-dropdown-support-web%402.0.9%2Findex",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
@@ -630,7 +630,7 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-dropdown-support-web%402.0.9%2Findex",
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-tabs-support-web%402.0.11%2Findex",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
@@ -650,7 +650,7 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-tabs-support-web%402.0.11%2Findex",
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-alert-support-web%402.0.9%2Findex",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
@@ -712,6 +712,16 @@
         {
           "method": "GET",
           "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=portal-template-react-renderer-impl%405.0.7%2Frender.es%2Cdynamic-data-mapping-form-web%404.0.101%2Fadmin%2Fjs%2FFormView",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\",\"data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\":\"\\/o\\/js\\/resolved-module\\/frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/lifera"
+        },
+        {
+          "method": "GET",
+          "status": 200,
           "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-tooltip-support-web%404.0.16%2Findex",
           "content_type": "application/json",
           "resource_type": "fetch",
@@ -722,27 +732,7 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-alert-support-web%402.0.9%2Findex",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
-        },
-        {
-          "method": "GET",
-          "status": 200,
           "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-dropdown-support-web%402.0.9%2Findex",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-collapse-support-web%402.0.12%2Findex",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
@@ -762,17 +752,27 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=portal-template-react-renderer-impl%405.0.7%2Frender.es%2Cdynamic-data-mapping-form-web%404.0.101%2Fadmin%2Fjs%2FFormView",
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-collapse-support-web%402.0.12%2Findex",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
           "response_shape": "json-like-invalid",
-          "preview": "{\"pathMap\":{\"data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\",\"data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\":\"\\/o\\/js\\/resolved-module\\/frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/lifera"
+          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
         },
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/dynamic-data-mapping-form-field-types?p_auth=43UDfP",
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-alert-support-web%402.0.9%2Findex",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/dynamic-data-mapping-form-field-types?p_auth=cxMsf1",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
@@ -840,14 +840,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 15505,
+      "duration_ms": 17308,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "",
       "text_bytes": 152819,
       "html_bytes": 152982,
-      "html_snapshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-07-08T19-58-11-015Z.html",
-      "screenshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-07-08T19-58-11-015Z.png",
+      "html_snapshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-07-09T04-15-21-797Z.html",
+      "screenshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-07-09T04-15-21-797Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -884,14 +884,14 @@
       "status": "ok",
       "http_status": 405,
       "navigation_error": "",
-      "duration_ms": 5845,
+      "duration_ms": 5847,
       "classification": "empty-or-shell",
       "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
       "title": "",
       "text_bytes": 536,
       "html_bytes": 687,
-      "html_snapshot": "data/raw/browser-probes/saudi-space-agency-events-2026-07-08T19-58-11-015Z.html",
-      "screenshot": "data/raw/browser-probes/saudi-space-agency-events-2026-07-08T19-58-11-015Z.png",
+      "html_snapshot": "data/raw/browser-probes/saudi-space-agency-events-2026-07-09T04-15-21-797Z.html",
+      "screenshot": "data/raw/browser-probes/saudi-space-agency-events-2026-07-09T04-15-21-797Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -930,14 +930,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 14324,
+      "duration_ms": 8741,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "Events | غرفة مكة المكرمة",
-      "text_bytes": 4648,
-      "html_bytes": 73474,
-      "html_snapshot": "data/raw/browser-probes/makkah-chamber-events-2026-07-08T19-58-11-015Z.html",
-      "screenshot": "data/raw/browser-probes/makkah-chamber-events-2026-07-08T19-58-11-015Z.png",
+      "text_bytes": 4668,
+      "html_bytes": 73833,
+      "html_snapshot": "data/raw/browser-probes/makkah-chamber-events-2026-07-09T04-15-21-797Z.html",
+      "screenshot": "data/raw/browser-probes/makkah-chamber-events-2026-07-09T04-15-21-797Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -968,6 +968,10 @@
           {
             "text": "الفعاليات القادمة",
             "href": "https://makkahcci.org.sa/event?date=all&country=all&type=all"
+          },
+          {
+            "text": "هذا الشهر\n1",
+            "href": "https://makkahcci.org.sa/event?date=month&country=all&type=all"
           },
           {
             "text": "الفعاليات الماضية",
@@ -1020,10 +1024,6 @@
           {
             "text": "1",
             "href": "https://makkahcci.org.sa/event?date=old&type=all&country=all&category=all"
-          },
-          {
-            "text": "2",
-            "href": "https://makkahcci.org.sa/event/page/2?date=old&type=all&country=all&category=all"
           }
         ]
       },
@@ -1042,9 +1042,9 @@
           "url": "https://makkahcci.org.sa/website/translations",
           "content_type": "application/json",
           "resource_type": "xhr",
-          "request_post_data": "{\"jsonrpc\":\"2.0\",\"method\":\"call\",\"params\":{\"mods\":[],\"lang\":null},\"id\":864526706}",
+          "request_post_data": "{\"jsonrpc\":\"2.0\",\"method\":\"call\",\"params\":{\"mods\":[],\"lang\":null},\"id\":526423475}",
           "response_shape": "json-like-invalid",
-          "preview": "{\"jsonrpc\": \"2.0\", \"id\": 864526706, \"result\": {\"lang_parameters\": {\"id\": 3, \"name\": \"Arabic / \\u0627\\u0644\\u0652\\u0639\\u064e\\u0631\\u064e\\u0628\\u064a\\u0651\\u0629\", \"direction\": \"rtl\", \"date_format\": \"%d %b, %Y\", \"time_format\": \"%H:%M:%S\", \"grouping\": \"[3,0]\", \"decimal_point\": \".\", \"thousands_sep\": \",\", \"week_start\": 6}, \"modules\": {\"im_livechat\": {\"messages\": [{\"id\": \"Visitor\", \"string\": \"\\u0627\\u0644\\u0632\\u0627\\u0626\\u0631\"}, {\"id\": \"Ask something ...\", \"string\": \"\\u0627\\u0633\\u0623\\u0644 \\u0639\\u0646 \\u0634\\u064a\\u0621...\"}, {\"id\": \"Chat with one of our collaborators\", \"string\": \"\\u062a\\u062d\\u062f\\u062b \\u0645\\u0639 \\u0623\\u062d\\u062f \\u0645\\u0645\\u062b\\u0644\\u064a\\u0646\\u0627\"}, {\"id\": \"Did we correctly answer your question ?\", \"string\": \"\\u0647\\u0644 \\u0623\\u062c\\u0628\\u0646\\u0627 \\u0639\\u0644\\u0649 \\u0633\\u0624\\u0627\\u0644\\u0643 \\u0628\\u0634\\u0643\\u0644 \\u0635\\u062d\\u064a\\u062d\\u061f\"}, {\"id\": \"Explain your note\", \"string\": \"\\u0634\\u0631\\u062d \\u0645\\u0644\\u0627\\u062d\\u0638\\u062a\\u0643\"}, {\"id\": \"How may I help you?\", \"string\": \"\\u0643\\u064a\\u0641 \\u064a\\u0645\\u0643\\u0646\\u0646\\u064a \\u0645\\u0633\\u0627\\u0639\\u062f\\u062a\\u0643\\u061f\"}, {\"id\": \"I don't want to rate this conversation\", \"string\": \"\\u0644\\u0627 \\u0623\\u0631\\u064a\\u062f \\u062a\\u0642\\u064a\\u064a\\u0645 \\u0647\\u0630\\u0647 \\u0627\\u0644\\u0645\\u062d\\u0627\\u062f\\u062b\\u0629\"}, {\"id\": \"Livechat\", \"string\": \"\\u0627\\u0644\\u062f\\u0631\\u062f\\u0634\\u0629 \\u0627\\u0644\\u062d\\u064a\\u0629\"}, {\"id\": \"None of our collaborators seems to be available, please try again later.\", \"string\": \"\\u064a\\u0628\\u062f\\u0648 \\u0623\\u0646 \\u062c\\u0645\\u064a\\u0639 \\u0645\\u0645\\u062b\\u0644\\u064a\\u0646\\u0627 \\u0645\\u0634\\u063a\\u0648\\u0644\\u0648\\u0646 \\u0627\\u0644\\u0622\\u0646\\u060c \\u0628\\u0631\\u062c\\u0627\\u0621 \\u0627\\u0644\\u0645\\u062d\\u062"
+          "preview": "{\"jsonrpc\": \"2.0\", \"id\": 526423475, \"result\": {\"lang_parameters\": {\"id\": 3, \"name\": \"Arabic / \\u0627\\u0644\\u0652\\u0639\\u064e\\u0631\\u064e\\u0628\\u064a\\u0651\\u0629\", \"direction\": \"rtl\", \"date_format\": \"%d %b, %Y\", \"time_format\": \"%H:%M:%S\", \"grouping\": \"[3,0]\", \"decimal_point\": \".\", \"thousands_sep\": \",\", \"week_start\": 6}, \"modules\": {\"im_livechat\": {\"messages\": [{\"id\": \"Visitor\", \"string\": \"\\u0627\\u0644\\u0632\\u0627\\u0626\\u0631\"}, {\"id\": \"Ask something ...\", \"string\": \"\\u0627\\u0633\\u0623\\u0644 \\u0639\\u0646 \\u0634\\u064a\\u0621...\"}, {\"id\": \"Chat with one of our collaborators\", \"string\": \"\\u062a\\u062d\\u062f\\u062b \\u0645\\u0639 \\u0623\\u062d\\u062f \\u0645\\u0645\\u062b\\u0644\\u064a\\u0646\\u0627\"}, {\"id\": \"Did we correctly answer your question ?\", \"string\": \"\\u0647\\u0644 \\u0623\\u062c\\u0628\\u0646\\u0627 \\u0639\\u0644\\u0649 \\u0633\\u0624\\u0627\\u0644\\u0643 \\u0628\\u0634\\u0643\\u0644 \\u0635\\u062d\\u064a\\u062d\\u061f\"}, {\"id\": \"Explain your note\", \"string\": \"\\u0634\\u0631\\u062d \\u0645\\u0644\\u0627\\u062d\\u0638\\u062a\\u0643\"}, {\"id\": \"How may I help you?\", \"string\": \"\\u0643\\u064a\\u0641 \\u064a\\u0645\\u0643\\u0646\\u0646\\u064a \\u0645\\u0633\\u0627\\u0639\\u062f\\u062a\\u0643\\u061f\"}, {\"id\": \"I don't want to rate this conversation\", \"string\": \"\\u0644\\u0627 \\u0623\\u0631\\u064a\\u062f \\u062a\\u0642\\u064a\\u064a\\u0645 \\u0647\\u0630\\u0647 \\u0627\\u0644\\u0645\\u062d\\u0627\\u062f\\u062b\\u0629\"}, {\"id\": \"Livechat\", \"string\": \"\\u0627\\u0644\\u062f\\u0631\\u062f\\u0634\\u0629 \\u0627\\u0644\\u062d\\u064a\\u0629\"}, {\"id\": \"None of our collaborators seems to be available, please try again later.\", \"string\": \"\\u064a\\u0628\\u062f\\u0648 \\u0623\\u0646 \\u062c\\u0645\\u064a\\u0639 \\u0645\\u0645\\u062b\\u0644\\u064a\\u0646\\u0627 \\u0645\\u0634\\u063a\\u0648\\u0644\\u0648\\u0646 \\u0627\\u0644\\u0622\\u0646\\u060c \\u0628\\u0631\\u062c\\u0627\\u0621 \\u0627\\u0644\\u0645\\u062d\\u062"
         }
       ]
     }

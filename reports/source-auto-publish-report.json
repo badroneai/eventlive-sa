@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-07-08T20:03:42.187Z",
+  "published_at": "2026-07-09T04:20:46.096Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -7,15 +7,20 @@
   "candidates_seen": 187,
   "totals": {
     "candidates_seen": 187,
-    "published": 1,
-    "linked_existing": 157,
+    "published": 2,
+    "linked_existing": 156,
     "blocked": 29,
     "reconciled": 158
   },
   "published": [
     {
+      "candidate_id": "candidate-misk-hub-programs-application-deadline-2030-leaders-20260712-68dd4c4c",
+      "event_id": "event-application-deadline-2030-leaders-2",
+      "title": "Application deadline: 2030 Leaders"
+    },
+    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45",
-      "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-8",
+      "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-9",
       "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python"
     }
   ],
@@ -258,12 +263,6 @@
       "candidate_id": "candidate-saudi-university-events-registration-now-open-for-children-at-the-childhood-studies-center-for-t-20260707-a2624927",
       "event_id": "event-registration-now-open-for-children-at-the-childhood-studies-center-for-t",
       "title": "Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-misk-hub-programs-application-deadline-2030-leaders-20260708-68dd4c4c",
-      "event_id": "event-application-deadline-2030-leaders",
-      "title": "Application deadline: 2030 Leaders",
       "reason": "already linked to catalog event"
     },
     {

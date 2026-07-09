@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T20:06:07.558Z",
+  "generated_at": "2026-07-09T04:23:11.229Z",
   "source_registry": "data/source_registry.json",
   "source_collection_report": "reports/source-collection-report.json",
   "totals": {
@@ -622,8 +622,8 @@
       "cadence": "weekly-discovery",
       "score": 44,
       "has_active_collector": false,
-      "last_collection_status": "ok",
-      "last_extracted": 16,
+      "last_collection_status": "skipped",
+      "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
@@ -1452,12 +1452,12 @@
       "has_active_collector": false,
       "last_collection_status": "",
       "last_extracted": 0,
-      "last_probe_status": "",
+      "last_probe_status": 403,
       "last_probe_score": -35,
-      "last_probe_recommendation": "blocked-or-protected:timeout",
-      "last_probe_blocked_reason": "timeout",
+      "last_probe_recommendation": "blocked-or-protected:http-403",
+      "last_probe_blocked_reason": "http-403",
       "known_candidates": 0,
-      "next_action": "Do not scrape now; latest probe is blocked-or-protected:timeout. Keep as partnership, browser/API investigation, or evidence lane."
+      "next_action": "Do not scrape now; latest probe is blocked-or-protected:http-403. Keep as partnership, browser/API investigation, or evidence lane."
     },
     {
       "id": "riyadh-city-events",
