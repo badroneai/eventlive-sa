@@ -1,0 +1,135 @@
+{
+  "schema": "eventlive.platinumlist-taxonomy-radar.v1",
+  "status": "radar-for-development",
+  "generated_from": [
+    "reports/platinumlist-snapshot-leads.json",
+    "reports/platinumlist-detail-radar.json"
+  ],
+  "publication_policy": {
+    "default": "candidate-only",
+    "requires_secondary_verification": true,
+    "reason": "Platinumlist is a ticketing marketplace and discovery surface; EventLive publication requires official organizer, venue, season, or authority confirmation."
+  },
+  "radar_kinds": [
+    {
+      "id": "live-timing-event-radar",
+      "label_ar": "فعالية بتوقيت حي مرصودة",
+      "purpose": "High-value lead for EventLive live countdown and attendee mode after secondary verification.",
+      "public_handling_now": "Do not publish directly; promote only after source verification.",
+      "signals": [
+        "date is visible",
+        "doors open / show starts / ends signals are visible",
+        "event-like title"
+      ]
+    },
+    {
+      "id": "dated-event-radar",
+      "label_ar": "فعالية بتاريخ مرصودة",
+      "purpose": "Useful event lead with date/date range but no clear live timing yet.",
+      "public_handling_now": "Candidate for city/category pages after secondary verification; not live-first until time fields are confirmed.",
+      "signals": [
+        "date or date range is visible",
+        "no reliable doors/start/end timing yet"
+      ]
+    },
+    {
+      "id": "ongoing-experience-radar",
+      "label_ar": "تجربة أو نشاط مستمر مرصود",
+      "purpose": "Potential future EventLive product lane for attractions, tours, fan zones, beach clubs, parks, and recurring experiences.",
+      "public_handling_now": "Keep out of live event counters until EventLive supports experiences separately.",
+      "signals": [
+        "attraction/tour/park/beach/resort wording",
+        "recurring availability or long date range",
+        "not a single attendee-session event"
+      ]
+    },
+    {
+      "id": "protected-detail-radar",
+      "label_ar": "صفحة محمية أو تحتاج شراكة",
+      "purpose": "Partnership/API or later browser review candidate.",
+      "public_handling_now": "Owner-only radar.",
+      "signals": [
+        "Queue-it/Cloudflare/waiting room",
+        "blocked direct access"
+      ]
+    },
+    {
+      "id": "needs-review-radar",
+      "label_ar": "مرشح يحتاج مراجعة",
+      "purpose": "Fallback bucket for ambiguous leads.",
+      "public_handling_now": "Owner-only radar.",
+      "signals": [
+        "insufficient date/time/category evidence"
+      ]
+    }
+  ],
+  "taxonomy_facets": [
+    {
+      "id": "sports-fanzone-match",
+      "label_ar": "رياضة ومناطق مشجعين ومباريات",
+      "status": "radar",
+      "eventlive_mapping_candidate": "sports"
+    },
+    {
+      "id": "entertainment-shows-nightlife",
+      "label_ar": "ترفيه وعروض وكوميديا وسهرات",
+      "status": "radar",
+      "eventlive_mapping_candidate": "entertainment-families"
+    },
+    {
+      "id": "business-conference-workshop",
+      "label_ar": "أعمال ومؤتمرات وورش وجوائز",
+      "status": "radar",
+      "eventlive_mapping_candidate": "conference-forum"
+    },
+    {
+      "id": "attraction-tour-experience",
+      "label_ar": "تجارب وأنشطة وجولات ومعالم",
+      "status": "radar",
+      "eventlive_mapping_candidate": "future-experiences-lane"
+    },
+    {
+      "id": "uncategorized-review",
+      "label_ar": "غير مصنف يحتاج مراجعة",
+      "status": "radar",
+      "eventlive_mapping_candidate": "manual-review"
+    }
+  ],
+  "latest_observed_counts": {
+    "detail_pages_probed": 19,
+    "live_timing_event_radar": 8,
+    "dated_event_radar": 3,
+    "ongoing_experience_radar": 8,
+    "platform_routes_probed": 24,
+    "platform_unique_event_links": 113,
+    "platform_city_network_hosts": 24,
+    "platform_routes_with_organizer_cta": 22,
+    "sports_fanzone_match": 6,
+    "entertainment_shows_nightlife": 7,
+    "business_conference_workshop": 2,
+    "attraction_tour_experience": 8
+  },
+  "platform_intent_radar": {
+    "city_time_pages": [
+      "city + today",
+      "city + weekend",
+      "city + month",
+      "city + all events"
+    ],
+    "city_time_category_pages": [
+      "city + today + comedy/shows",
+      "city + today + sports/fanzones",
+      "city + today + gaming/esports",
+      "city + business events",
+      "city + concerts"
+    ],
+    "organizer_acquisition": {
+      "status": "important-product-lane",
+      "finding": "Organizer CTAs appear across most public event routes; add-event flow redirects to login, which means marketplace platforms use organizers as a data and revenue acquisition loop."
+    },
+    "city_expansion": {
+      "status": "radar",
+      "finding": "The Saudi city subdomain network is broader than Riyadh/Jeddah and should be used as a coverage gap checklist before adding city-specific collectors."
+    }
+  }
+}

@@ -21,6 +21,9 @@ assert.match(workflow, /data\/source_run_state\.json/, 'source sync must persist
 assert.match(workflow, /data\/event_image_cache_manifest\.json/, 'source sync must persist image cache manifest across scheduled runs');
 assert.match(workflow, /reports\/source-\*\.json/, 'source sync must persist machine-readable source operation reports');
 assert.match(workflow, /reports\/source-\*\.md/, 'source sync must persist readable source operation reports');
+assert.match(workflow, /reports\/mygov-\*\.json/, 'source sync must persist GOV.SA/NEC radar JSON evidence');
+assert.match(workflow, /reports\/mygov-\*\.md/, 'source sync must persist GOV.SA/NEC radar markdown evidence');
+assert.match(workflow, /data\/raw\/mygov-wayback-radar\/\*\*/, 'source sync artifacts must include GOV.SA/NEC raw archive evidence');
 assert.match(workflow, /reports\/event-image-cache-report\.json/, 'source sync must persist image-cache evidence JSON');
 assert.match(workflow, /reports\/event-image-cache-report\.md/, 'source sync must persist image-cache evidence markdown');
 

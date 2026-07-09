@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T10:10:26.415Z",
+  "generated_at": "2026-07-09T12:16:14.539Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-source-acquisition-pipeline",
@@ -12715,60 +12715,6 @@
       "request_url": "mailto:hello@eventme.live?subject=%D9%85%D8%B5%D8%AF%D8%B1%20%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Registration%20Now%20Open%20for%20Children%20at%20the%20Childhood%20Studies%20Center%20for%20the%20Academic%20Year%201448%20AH&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D8%B2%D9%88%D9%8A%D8%AF%D9%83%D9%85%20%D8%A8%D9%85%D8%B5%D8%AF%D8%B1%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Registration%20Now%20Open%20for%20Children%20at%20the%20Childhood%20Studies%20Center%20for%20the%20Academic%20Year%201448%20AH%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%AC%D8%AF%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20King%20Abdulaziz%20University%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%20%D9%82%D8%A7%D8%A6%D9%85%D8%A9%20%D8%A7%D9%84%D9%81%D9%82%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AC%D9%84%D8%B3%D8%A7%D8%AA%20%D9%81%D9%88%D9%82%20%D9%86%D8%A7%D9%81%D8%B0%D8%A9%20%D8%A7%D9%84%D8%AD%D8%B6%D9%88%D8%B1%20%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A9%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A3%D9%88%20%D8%A7%D9%84%D9%85%D8%B1%D9%81%D9%82%3A%0A%D8%A7%D8%B3%D9%85%20%D8%A7%D9%84%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%83%D8%A9%20%D9%84%D9%84%D9%85%D8%B5%D8%AF%D8%B1%3A%0A%D9%87%D9%84%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%B1%D8%B3%D9%85%D9%8A%20%D8%A3%D9%88%20%D9%82%D8%A7%D8%A8%D9%84%20%D9%84%D9%84%D8%AA%D8%AD%D9%82%D9%82%D8%9F%0A%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%3A"
     },
     {
-      "id": "event-application-deadline-2030-leaders",
-      "title": "2030 Leaders",
-      "organizer": "Mohammed Bin Salman Foundation / Misk Hub",
-      "city": "السعودية",
-      "venue": "Hybrid",
-      "category": "تدريب تقني",
-      "starts_at": "2026-07-08T09:00:00+03:00",
-      "ends_at": "2026-07-08T23:59:00+03:00",
-      "updated_at": "2026-07-08T10:08:25.508Z",
-      "status": "live",
-      "status_label": "مباشرة الآن",
-      "attendance_window_ready": true,
-      "attendance_window": {
-        "title": "نافذة الحضور",
-        "starts_at": "2026-07-08T09:00:00+03:00",
-        "ends_at": "2026-07-08T23:59:00+03:00",
-        "room": "Hybrid",
-        "track": "الفعالية الرئيسية",
-        "session_type": "attendance-window",
-        "inferred": true,
-        "source": "event-start-end"
-      },
-      "schedule_quality": "basic-window",
-      "detail_url": "./events/event-application-deadline-2030-leaders.html",
-      "live_url": "",
-      "source_label": "Misk Hub Programs",
-      "source_url": "https://hub.misk.org.sa/programs/leadership/2030-leaders/",
-      "evidence_url": "https://hub.misk.org.sa/programs/leadership/2030-leaders/",
-      "source_confidence": "approved-source",
-      "source_confidence_label": "مصدر معتمد",
-      "approval_status": "published",
-      "approval_status_label": "منشورة",
-      "readiness_stage": {
-        "key": "basic-window",
-        "label": "نافذة حضور أساسية",
-        "rank": 3
-      },
-      "readiness_score": 60,
-      "trust_score": 90,
-      "trust_label": "ثقة عالية",
-      "source_need": {
-        "key": "live-schedule",
-        "label": "إضافة الجدول التفصيلي",
-        "required_source": "قائمة الفقرات والجلسات فوق نافذة الحضور الأساسية",
-        "automation_policy": "تبقى الفعالية قابلة للاستخدام للزائر، وتُرقى تلقائيًا عند ظهور البرنامج التفصيلي.",
-        "gate": "live-ready"
-      },
-      "evidence_gaps": [
-        "الجدول التفصيلي لم يفعل بعد"
-      ],
-      "automation_ready": false,
-      "request_url": "mailto:hello@eventme.live?subject=%D9%85%D8%B5%D8%AF%D8%B1%20%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%202030%20Leaders&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D8%B2%D9%88%D9%8A%D8%AF%D9%83%D9%85%20%D8%A8%D9%85%D8%B5%D8%AF%D8%B1%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%202030%20Leaders%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Hybrid%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%20%D9%82%D8%A7%D8%A6%D9%85%D8%A9%20%D8%A7%D9%84%D9%81%D9%82%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AC%D9%84%D8%B3%D8%A7%D8%AA%20%D9%81%D9%88%D9%82%20%D9%86%D8%A7%D9%81%D8%B0%D8%A9%20%D8%A7%D9%84%D8%AD%D8%B6%D9%88%D8%B1%20%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A9%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A3%D9%88%20%D8%A7%D9%84%D9%85%D8%B1%D9%81%D9%82%3A%0A%D8%A7%D8%B3%D9%85%20%D8%A7%D9%84%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%83%D8%A9%20%D9%84%D9%84%D9%85%D8%B5%D8%AF%D8%B1%3A%0A%D9%87%D9%84%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%B1%D8%B3%D9%85%D9%8A%20%D8%A3%D9%88%20%D9%82%D8%A7%D8%A8%D9%84%20%D9%84%D9%84%D8%AA%D8%AD%D9%82%D9%82%D8%9F%0A%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%3A"
-    },
-    {
       "id": "event-unstable",
       "title": "Unstable",
       "organizer": "MDLBEAST",
@@ -13469,6 +13415,60 @@
       ],
       "automation_ready": false,
       "request_url": "mailto:hello@eventme.live?subject=%D9%85%D8%B5%D8%AF%D8%B1%20%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Eid%20Al-Adha&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D8%B2%D9%88%D9%8A%D8%AF%D9%83%D9%85%20%D8%A8%D9%85%D8%B5%D8%AF%D8%B1%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Eid%20Al-Adha%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%B9%D9%84%D9%89%20%D9%85%D8%B3%D8%AA%D9%88%D9%89%20%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Nationwide%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%20%D9%82%D8%A7%D8%A6%D9%85%D8%A9%20%D8%A7%D9%84%D9%81%D9%82%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AC%D9%84%D8%B3%D8%A7%D8%AA%20%D9%81%D9%88%D9%82%20%D9%86%D8%A7%D9%81%D8%B0%D8%A9%20%D8%A7%D9%84%D8%AD%D8%B6%D9%88%D8%B1%20%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A9%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A3%D9%88%20%D8%A7%D9%84%D9%85%D8%B1%D9%81%D9%82%3A%0A%D8%A7%D8%B3%D9%85%20%D8%A7%D9%84%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%83%D8%A9%20%D9%84%D9%84%D9%85%D8%B5%D8%AF%D8%B1%3A%0A%D9%87%D9%84%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%B1%D8%B3%D9%85%D9%8A%20%D8%A3%D9%88%20%D9%82%D8%A7%D8%A8%D9%84%20%D9%84%D9%84%D8%AA%D8%AD%D9%82%D9%82%D8%9F%0A%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%3A"
+    },
+    {
+      "id": "event-application-deadline-2030-leaders",
+      "title": "2030 Leaders",
+      "organizer": "Mohammed Bin Salman Foundation / Misk Hub",
+      "city": "السعودية",
+      "venue": "Hybrid",
+      "category": "تدريب تقني",
+      "starts_at": "2026-07-08T09:00:00+03:00",
+      "ends_at": "2026-07-08T23:59:00+03:00",
+      "updated_at": "2026-07-08T10:08:25.508Z",
+      "status": "ended",
+      "status_label": "منتهية",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-07-08T09:00:00+03:00",
+        "ends_at": "2026-07-08T23:59:00+03:00",
+        "room": "Hybrid",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "detail_url": "./events/event-application-deadline-2030-leaders.html",
+      "live_url": "",
+      "source_label": "Misk Hub Programs",
+      "source_url": "https://hub.misk.org.sa/programs/leadership/2030-leaders/",
+      "evidence_url": "https://hub.misk.org.sa/programs/leadership/2030-leaders/",
+      "source_confidence": "approved-source",
+      "source_confidence_label": "مصدر معتمد",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "readiness_stage": {
+        "key": "basic-window",
+        "label": "نافذة حضور أساسية",
+        "rank": 3
+      },
+      "readiness_score": 60,
+      "trust_score": 90,
+      "trust_label": "ثقة عالية",
+      "source_need": {
+        "key": "live-schedule",
+        "label": "إضافة الجدول التفصيلي",
+        "required_source": "قائمة الفقرات والجلسات فوق نافذة الحضور الأساسية",
+        "automation_policy": "تبقى الفعالية قابلة للاستخدام للزائر، وتُرقى تلقائيًا عند ظهور البرنامج التفصيلي.",
+        "gate": "live-ready"
+      },
+      "evidence_gaps": [
+        "الجدول التفصيلي لم يفعل بعد"
+      ],
+      "automation_ready": false,
+      "request_url": "mailto:hello@eventme.live?subject=%D9%85%D8%B5%D8%AF%D8%B1%20%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%202030%20Leaders&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D8%B2%D9%88%D9%8A%D8%AF%D9%83%D9%85%20%D8%A8%D9%85%D8%B5%D8%AF%D8%B1%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%202030%20Leaders%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Hybrid%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%20%D9%82%D8%A7%D8%A6%D9%85%D8%A9%20%D8%A7%D9%84%D9%81%D9%82%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%AC%D9%84%D8%B3%D8%A7%D8%AA%20%D9%81%D9%88%D9%82%20%D9%86%D8%A7%D9%81%D8%B0%D8%A9%20%D8%A7%D9%84%D8%AD%D8%B6%D9%88%D8%B1%20%D8%A7%D9%84%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A9%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A3%D9%88%20%D8%A7%D9%84%D9%85%D8%B1%D9%81%D9%82%3A%0A%D8%A7%D8%B3%D9%85%20%D8%A7%D9%84%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%83%D8%A9%20%D9%84%D9%84%D9%85%D8%B5%D8%AF%D8%B1%3A%0A%D9%87%D9%84%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%B1%D8%B3%D9%85%D9%8A%20%D8%A3%D9%88%20%D9%82%D8%A7%D8%A8%D9%84%20%D9%84%D9%84%D8%AA%D8%AD%D9%82%D9%82%D8%9F%0A%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA%3A"
     },
     {
       "id": "ended-sfda-events-نقل-مبيدات-آفات-الصحة-العامة-20260706-6a3399bd",

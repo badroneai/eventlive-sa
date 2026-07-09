@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-09T10:12:08.039Z",
+  "generated_at": "2026-07-08T10:09:04.052Z",
   "max_duration_hours": 8,
   "totals": {
-    "activated": 15,
-    "skipped_long": 7
+    "activated": 14,
+    "skipped_long": 6
   },
   "activated": [
     {
@@ -68,15 +68,6 @@
       "ends_at": "2026-07-12T13:00:00+03:00",
       "duration_hours": 2,
       "session_type": "official-community-session"
-    },
-    {
-      "id": "event-نقل-مبيدات-آفات-الصحة-العامة-2",
-      "title": "نقل مبيدات آفات الصحة العامة",
-      "source_label": "Saudi Food and Drug Authority Events",
-      "starts_at": "2026-07-13T10:00:00+03:00",
-      "ends_at": "2026-07-13T11:00:00+03:00",
-      "duration_hours": 1,
-      "session_type": "official-online-workshop"
     },
     {
       "id": "event-semi-finals-join-the-celebration-at-the-fifa-fan-zone",
@@ -154,12 +145,6 @@
       "title": "Unstable",
       "source_label": "MDLBEAST Events",
       "duration_hours": 24
-    },
-    {
-      "id": "event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج",
-      "title": "تقييم سلامة المنتج التجميلي وملف معلومات المنتج",
-      "source_label": "Saudi Food and Drug Authority Events",
-      "duration_hours": 29
     },
     {
       "id": "event-a-thousand-and-one",

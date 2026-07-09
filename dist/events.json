@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T10:10:26.415Z",
+  "generated_at": "2026-07-09T12:16:14.539Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "catalog_source": "data/events_catalog.json + data/source_ended_events.json + data/demo_program.json",
@@ -6089,150 +6089,6 @@
         "ends_at": "2026-07-29T18:00:00+03:00",
         "room": "King Abdulaziz University",
         "track": "برنامج ممتد",
-        "session_type": "attendance-window",
-        "inferred": true,
-        "source": "event-start-end"
-      },
-      "attendance_window_ready": true,
-      "schedule_quality": "basic-window",
-      "generated_image": true
-    },
-    {
-      "id": "event-application-deadline-2030-leaders",
-      "slug": "application-deadline-2030-leaders",
-      "title": "2030 Leaders",
-      "organizer": "Mohammed Bin Salman Foundation / Misk Hub",
-      "city": "Saudi Arabia",
-      "venue": "Hybrid",
-      "venue_address": "Hybrid",
-      "category": "application deadline",
-      "summary": "Misk's 2030 Leaders program provides a bespoke leadership journey equipping experienced, influential leaders, to challenge convention, lead the nation, and realize Vision 2030 goals. المصدر الرسمي: Misk Hub.",
-      "richness_score": 10,
-      "starts_at": "2026-07-08T09:00:00+03:00",
-      "ends_at": "2026-07-08T23:59:00+03:00",
-      "updated_at": "2026-07-08T10:08:25.508Z",
-      "sessions_count": 1,
-      "tracks_count": 1,
-      "rooms_count": 1,
-      "live_updates_count": 0,
-      "approval_status": "published",
-      "published_by": "EventLive Auto Publisher",
-      "source_label": "Misk Hub Programs",
-      "source_url": "https://hub.misk.org.sa/programs/leadership/2030-leaders/",
-      "evidence_url": "https://hub.misk.org.sa/programs/leadership/2030-leaders/",
-      "source_confidence": "approved-source",
-      "live_schedule_ready": false,
-      "source_file": "data/raw/source-snapshots/misk-hub-programs-2030-leaders-2026-07-08T08-48-20-585Z.html",
-      "tags": [
-        "skills",
-        "training",
-        "entrepreneurship",
-        "leadership",
-        "online learning",
-        "career readiness",
-        "application deadline",
-        "تحقق ثانوي"
-      ],
-      "audiences": [
-        "job-seekers",
-        "professionals",
-        "skilled-trades",
-        "entrepreneurs"
-      ],
-      "registration_deadline": "2026-07-08T18:00:00+03:00",
-      "description": "Misk's 2030 Leaders program provides a bespoke leadership journey equipping experienced, influential leaders, to challenge convention, lead the nation, and realize Vision 2030 goals.",
-      "rich_summary": "Misk's 2030 Leaders program provides a bespoke leadership journey equipping experienced, influential leaders, to challenge convention, lead the nation, and realize Vision 2030 goals.",
-      "program_outline": {
-        "provider": "Misk Hub",
-        "source_method": "official-html",
-        "source_url": "https://hub.misk.org.sa/programs/leadership/2030-leaders/",
-        "collected_at": "2026-07-08T10:08:25.508Z",
-        "official_description": "Misk's 2030 Leaders program provides a bespoke leadership journey equipping experienced, influential leaders, to challenge convention, lead the nation, and realize Vision 2030 goals.",
-        "duration_text": "",
-        "registration_deadline": "2026-07-08T18:00:00+03:00",
-        "goals": [
-          "Misk's 2030 Leaders program provides a bespoke leadership journey equipping experienced, influential leaders, to challenge convention, lead the nation, and realize Vision 2030 goals."
-        ],
-        "features": [
-          "Program format: Hybrid",
-          "Program type: Instructor Paced",
-          "Language: English",
-          "Application close: 2026-07-08T18:00:00+03:00"
-        ],
-        "requirements": [],
-        "faqs": {
-          "program_format": "Hybrid",
-          "program_type": "Instructor Paced",
-          "language": "English",
-          "application_close": "2026-07-08T18:00:00+03:00"
-        }
-      },
-      "file_slug": "event-application-deadline-2030-leaders",
-      "city_label": "السعودية",
-      "category_slug": "technology-training",
-      "category_label": "تدريب تقني",
-      "sessions": [
-        {
-          "title": "نافذة الحضور",
-          "starts_at": "2026-07-08T09:00:00+03:00",
-          "ends_at": "2026-07-08T23:59:00+03:00",
-          "room": "Hybrid",
-          "track": "الفعالية الرئيسية",
-          "session_type": "attendance-window",
-          "inferred": true,
-          "source": "event-start-end"
-        }
-      ],
-      "linked_live_updates_count": 0,
-      "approval_status_label": "منشورة",
-      "event_kind": "moment",
-      "event_kind_label": "فعالية",
-      "status": "live",
-      "status_label": "مباشرة الآن",
-      "image_url": "/assets/event-covers/event-application-deadline-2030-leaders.svg",
-      "image_alt": "غلاف EventLive لفعالية 2030 Leaders",
-      "image_source_url": "https://hub.misk.org.sa/programs/leadership/2030-leaders/",
-      "original_image_url": "",
-      "audience_labels": [
-        {
-          "slug": "job-seekers",
-          "label": "باحثون عن عمل"
-        },
-        {
-          "slug": "professionals",
-          "label": "موظفون ومهنيون"
-        },
-        {
-          "slug": "skilled-trades",
-          "label": "مهاريون وحرفيون"
-        },
-        {
-          "slug": "entrepreneurs",
-          "label": "رواد أعمال"
-        }
-      ],
-      "audience_urls": [
-        "./for/job-seekers.html",
-        "./for/professionals.html",
-        "./for/skilled-trades.html",
-        "./for/entrepreneurs.html"
-      ],
-      "detail_url": "./events/event-application-deadline-2030-leaders.html",
-      "url": "./events/event-application-deadline-2030-leaders.html",
-      "share_url": "./events/event-application-deadline-2030-leaders.html",
-      "print_url": "./print.html?event=event-application-deadline-2030-leaders",
-      "ics_url": "./events/event-application-deadline-2030-leaders.ics",
-      "city_url": "./cities/saudi-arabia.html",
-      "category_url": "./categories/technology-training.html",
-      "maps_url": "https://www.google.com/maps/search/?api=1&query=Hybrid%20Saudi%20Arabia",
-      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Hybrid%20Saudi%20Arabia",
-      "catalog_group": "catalog",
-      "attendance_window": {
-        "title": "نافذة الحضور",
-        "starts_at": "2026-07-08T09:00:00+03:00",
-        "ends_at": "2026-07-08T23:59:00+03:00",
-        "room": "Hybrid",
-        "track": "الفعالية الرئيسية",
         "session_type": "attendance-window",
         "inferred": true,
         "source": "event-start-end"
@@ -24922,6 +24778,150 @@
           "live_schedule_status": "Event-level page only; no timed session agenda was published in the extracted source."
         }
       }
+    },
+    {
+      "id": "event-application-deadline-2030-leaders",
+      "slug": "application-deadline-2030-leaders",
+      "title": "2030 Leaders",
+      "organizer": "Mohammed Bin Salman Foundation / Misk Hub",
+      "city": "Saudi Arabia",
+      "venue": "Hybrid",
+      "venue_address": "Hybrid",
+      "category": "application deadline",
+      "summary": "Misk's 2030 Leaders program provides a bespoke leadership journey equipping experienced, influential leaders, to challenge convention, lead the nation, and realize Vision 2030 goals. المصدر الرسمي: Misk Hub.",
+      "richness_score": 10,
+      "starts_at": "2026-07-08T09:00:00+03:00",
+      "ends_at": "2026-07-08T23:59:00+03:00",
+      "updated_at": "2026-07-08T10:08:25.508Z",
+      "sessions_count": 1,
+      "tracks_count": 1,
+      "rooms_count": 1,
+      "live_updates_count": 0,
+      "approval_status": "published",
+      "published_by": "EventLive Auto Publisher",
+      "source_label": "Misk Hub Programs",
+      "source_url": "https://hub.misk.org.sa/programs/leadership/2030-leaders/",
+      "evidence_url": "https://hub.misk.org.sa/programs/leadership/2030-leaders/",
+      "source_confidence": "approved-source",
+      "live_schedule_ready": false,
+      "source_file": "data/raw/source-snapshots/misk-hub-programs-2030-leaders-2026-07-08T08-48-20-585Z.html",
+      "tags": [
+        "skills",
+        "training",
+        "entrepreneurship",
+        "leadership",
+        "online learning",
+        "career readiness",
+        "application deadline",
+        "تحقق ثانوي"
+      ],
+      "audiences": [
+        "job-seekers",
+        "professionals",
+        "skilled-trades",
+        "entrepreneurs"
+      ],
+      "registration_deadline": "2026-07-08T18:00:00+03:00",
+      "description": "Misk's 2030 Leaders program provides a bespoke leadership journey equipping experienced, influential leaders, to challenge convention, lead the nation, and realize Vision 2030 goals.",
+      "rich_summary": "Misk's 2030 Leaders program provides a bespoke leadership journey equipping experienced, influential leaders, to challenge convention, lead the nation, and realize Vision 2030 goals.",
+      "program_outline": {
+        "provider": "Misk Hub",
+        "source_method": "official-html",
+        "source_url": "https://hub.misk.org.sa/programs/leadership/2030-leaders/",
+        "collected_at": "2026-07-08T10:08:25.508Z",
+        "official_description": "Misk's 2030 Leaders program provides a bespoke leadership journey equipping experienced, influential leaders, to challenge convention, lead the nation, and realize Vision 2030 goals.",
+        "duration_text": "",
+        "registration_deadline": "2026-07-08T18:00:00+03:00",
+        "goals": [
+          "Misk's 2030 Leaders program provides a bespoke leadership journey equipping experienced, influential leaders, to challenge convention, lead the nation, and realize Vision 2030 goals."
+        ],
+        "features": [
+          "Program format: Hybrid",
+          "Program type: Instructor Paced",
+          "Language: English",
+          "Application close: 2026-07-08T18:00:00+03:00"
+        ],
+        "requirements": [],
+        "faqs": {
+          "program_format": "Hybrid",
+          "program_type": "Instructor Paced",
+          "language": "English",
+          "application_close": "2026-07-08T18:00:00+03:00"
+        }
+      },
+      "file_slug": "event-application-deadline-2030-leaders",
+      "city_label": "السعودية",
+      "category_slug": "technology-training",
+      "category_label": "تدريب تقني",
+      "sessions": [
+        {
+          "title": "نافذة الحضور",
+          "starts_at": "2026-07-08T09:00:00+03:00",
+          "ends_at": "2026-07-08T23:59:00+03:00",
+          "room": "Hybrid",
+          "track": "الفعالية الرئيسية",
+          "session_type": "attendance-window",
+          "inferred": true,
+          "source": "event-start-end"
+        }
+      ],
+      "linked_live_updates_count": 0,
+      "approval_status_label": "منشورة",
+      "event_kind": "moment",
+      "event_kind_label": "فعالية",
+      "status": "ended",
+      "status_label": "منتهية",
+      "image_url": "/assets/event-covers/event-application-deadline-2030-leaders.svg",
+      "image_alt": "غلاف EventLive لفعالية 2030 Leaders",
+      "image_source_url": "https://hub.misk.org.sa/programs/leadership/2030-leaders/",
+      "original_image_url": "",
+      "audience_labels": [
+        {
+          "slug": "job-seekers",
+          "label": "باحثون عن عمل"
+        },
+        {
+          "slug": "professionals",
+          "label": "موظفون ومهنيون"
+        },
+        {
+          "slug": "skilled-trades",
+          "label": "مهاريون وحرفيون"
+        },
+        {
+          "slug": "entrepreneurs",
+          "label": "رواد أعمال"
+        }
+      ],
+      "audience_urls": [
+        "./for/job-seekers.html",
+        "./for/professionals.html",
+        "./for/skilled-trades.html",
+        "./for/entrepreneurs.html"
+      ],
+      "detail_url": "./events/event-application-deadline-2030-leaders.html",
+      "url": "./events/event-application-deadline-2030-leaders.html",
+      "share_url": "./events/event-application-deadline-2030-leaders.html",
+      "print_url": "./print.html?event=event-application-deadline-2030-leaders",
+      "ics_url": "./events/event-application-deadline-2030-leaders.ics",
+      "city_url": "./cities/saudi-arabia.html",
+      "category_url": "./categories/technology-training.html",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Hybrid%20Saudi%20Arabia",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Hybrid%20Saudi%20Arabia",
+      "catalog_group": "catalog",
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-07-08T09:00:00+03:00",
+        "ends_at": "2026-07-08T23:59:00+03:00",
+        "room": "Hybrid",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "attendance_window_ready": true,
+      "schedule_quality": "basic-window",
+      "generated_image": true
     },
     {
       "id": "ended-saudi-university-events-egypt-vs-argentina-join-the-celebration-at-the-fifa-fan-zone-20260707-14c45ed1",

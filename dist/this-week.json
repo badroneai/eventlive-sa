@@ -1,20 +1,10 @@
 {
-  "generated_at": "2026-07-08T10:10:26.415Z",
+  "generated_at": "2026-07-09T12:16:14.539Z",
   "platform": "EventLive",
   "scope": "this-week",
   "window_hours": 168,
-  "count": 23,
+  "count": 21,
   "events": [
-    {
-      "id": "event-prince-faisal-bin-fahd-art-exhibition-summer-2026",
-      "title": "Prince Faisal Bin Fahd Art Exhibition: Summer 2026",
-      "url": "./events/event-prince-faisal-bin-fahd-art-exhibition-summer-2026.html",
-      "city": "الرياض",
-      "starts_at": "2026-07-01T16:00:00+03:00",
-      "ends_at": "2026-08-01T22:00:00+03:00",
-      "status": "ongoing",
-      "live_schedule_ready": false
-    },
     {
       "id": "event-registration-for-international-research-competition-on-non-terrestrial-n",
       "title": "Registration for International Research Competition on Non-Terrestrial Networks",
@@ -53,16 +43,6 @@
       "starts_at": "2026-07-07T09:00:00+03:00",
       "ends_at": "2026-07-29T18:00:00+03:00",
       "status": "ongoing",
-      "live_schedule_ready": false
-    },
-    {
-      "id": "event-application-deadline-2030-leaders",
-      "title": "2030 Leaders",
-      "url": "./events/event-application-deadline-2030-leaders.html",
-      "city": "السعودية",
-      "starts_at": "2026-07-08T09:00:00+03:00",
-      "ends_at": "2026-07-08T23:59:00+03:00",
-      "status": "live",
       "live_schedule_ready": false
     },
     {

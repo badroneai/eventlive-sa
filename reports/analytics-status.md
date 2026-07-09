@@ -1,12 +1,20 @@
 # EventLive Analytics Status
 
-- Generated at: 2026-07-08T10:10:06.437Z
+- Generated at: 2026-07-09T12:00:15.495Z
 - Status: PASS
+- Instrumentation status: PASS
 - Provider: plausible
 - Domain: eventme.live
 - Dashboard: https://plausible.io/eventme.live
+- Dashboard status: NEEDS_PROVIDER_SETUP
+- Dashboard setup required: yes
 - Cookies: no
 - PII: no
+
+## Dashboard Activation Note
+
+- إذا ظهرت صفحة 404 في Plausible فهذا يعني غالبا أن موقع eventme.live لم يضف بعد داخل Plausible أو أنك لست داخل حساب مالك اللوحة. التتبع مزروع في الموقع، لكن أرقام الزيارات تحتاج تفعيل اللوحة من مزود التحليلات.
+- Login/setup link: https://plausible.io/login?return_to=%2Feventme.live
 
 ## Tracked Events
 
@@ -41,4 +49,4 @@
 ## Owner Reading Path
 
 - افتح `owner-status.html` لمعرفة حالة الجلب والقياس من داخل الموقع.
-- افتح لوحة المزود أعلاه لقراءة أرقام الزوار الفعلية والمصادر والصفحات.
+- بعد إنشاء موقع `eventme.live` داخل Plausible أو الدخول بحساب المالك، افتح لوحة المزود أعلاه لقراءة أرقام الزوار الفعلية والمصادر والصفحات.

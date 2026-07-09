@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-09T10:10:03.559Z",
+  "generated_at": "2026-07-08T10:08:12.726Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 28,
-    "enriched": 28,
+    "targets": 22,
+    "enriched": 22,
     "failed": 0
   },
   "enriched": [
@@ -40,7 +40,7 @@
       "requirements": 6
     },
     {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-10",
+      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-6",
       "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
       "slug": "4yOEV7Qq",
       "goals": 12,
@@ -62,38 +62,6 @@
       "goals": 8,
       "features": 6,
       "requirements": 10
-    },
-    {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-9",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
-      "slug": "4yOEV7Qq",
-      "goals": 12,
-      "features": 6,
-      "requirements": 11
-    },
-    {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-8",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
-      "slug": "4yOEV7Qq",
-      "goals": 12,
-      "features": 6,
-      "requirements": 11
-    },
-    {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-7",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
-      "slug": "4yOEV7Qq",
-      "goals": 12,
-      "features": 6,
-      "requirements": 11
-    },
-    {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-6",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
-      "slug": "4yOEV7Qq",
-      "goals": 12,
-      "features": 6,
-      "requirements": 11
     },
     {
       "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-5",
@@ -214,22 +182,6 @@
       "goals": 8,
       "features": 5,
       "requirements": 8
-    },
-    {
-      "id": "event-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي",
-      "title": "معسكر بناء وتطوير نماذج الذكاء الاصطناعي",
-      "slug": "o4bVMP8V",
-      "goals": 7,
-      "features": 6,
-      "requirements": 12
-    },
-    {
-      "id": "event-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc",
-      "title": "معسكر إدارة الحوكمة والمخاطر والامتثال GRC",
-      "slug": "aXzlnR2d",
-      "goals": 7,
-      "features": 8,
-      "requirements": 4
     }
   ],
   "failed": []

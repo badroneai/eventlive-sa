@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-09T10:10:23.963Z",
+  "generated_at": "2026-07-08T10:08:25.508Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 8,
-    "enriched": 8,
+    "targets": 7,
+    "enriched": 7,
     "failed": 0
   },
   "enriched": [
@@ -21,15 +21,7 @@
       "goals": 1,
       "features": 4,
       "requirements": 0,
-      "registration_deadline": "2026-07-12T18:00:00+03:00"
-    },
-    {
-      "id": "event-application-deadline-2030-leaders-2",
-      "title": "2030 Leaders",
-      "goals": 1,
-      "features": 4,
-      "requirements": 0,
-      "registration_deadline": "2026-07-12T18:00:00+03:00"
+      "registration_deadline": "2026-07-08T18:00:00+03:00"
     },
     {
       "id": "event-samsung-innovation-campus-ai-program",

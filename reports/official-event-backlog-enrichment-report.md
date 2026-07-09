@@ -1,29 +1,29 @@
 # EventLive Official Event Backlog Enrichment
-- Generated at: 2026-07-09T10:10:45.963Z
-- Targets: 75
-- Enriched: 75
-- Fetched: 15
-- Images: 60
-- Fetch failures: 60
+- Generated at: 2026-07-08T10:08:42.469Z
+- Targets: 74
+- Enriched: 74
+- Fetched: 34
+- Images: 59
+- Fetch failures: 40
 
 | Source | Event | Method | Image | Fetch |
 |---|---|---:|---:|---:|
-| Ministry of Culture Commission Calendars | Skill Development Initiative | approved-source-row | yes | fetch failed |
-| Ministry of Culture Commission Calendars | SITAR | approved-source-row | yes | fetch failed |
-| Ministry of Culture Commission Calendars | The Architecture and Design Café | approved-source-row | yes | fetch failed |
-| Ministry of Culture Commission Calendars | Jusoor Program | approved-source-row | yes | fetch failed |
-| Ministry of Culture Commission Calendars | Urban transformation Initiative | approved-source-row | yes | fetch failed |
-| Ministry of Culture Commission Calendars | The Continuing Professional Development Initiative | approved-source-row | yes | fetch failed |
-| Ministry of Culture Commission Calendars | Design for Good Initiative | approved-source-row | yes | fetch failed |
-| Ministry of Culture Commission Calendars | The Saudi Music Hub | approved-source-row | yes | fetch failed |
-| Ministry of Culture Commission Calendars | Academic Excellence in Architecture and Design Education | approved-source-row | yes | fetch failed |
-| Ministry of Culture Commission Calendars | Culinary Manufacturing Hubs | approved-source-row | yes | fetch failed |
+| Ministry of Culture Commission Calendars | Skill Development Initiative | official-page-meta | yes | yes |
+| Ministry of Culture Commission Calendars | SITAR | official-page-meta | yes | yes |
+| Ministry of Culture Commission Calendars | The Architecture and Design Café | official-page-meta | yes | yes |
+| Ministry of Culture Commission Calendars | Jusoor Program | official-page-meta | yes | yes |
+| Ministry of Culture Commission Calendars | Urban transformation Initiative | official-page-meta | yes | yes |
+| Ministry of Culture Commission Calendars | The Continuing Professional Development Initiative | official-page-meta | yes | yes |
+| Ministry of Culture Commission Calendars | Design for Good Initiative | official-page-meta | yes | yes |
+| Ministry of Culture Commission Calendars | The Saudi Music Hub | official-page-meta | yes | yes |
+| Ministry of Culture Commission Calendars | Academic Excellence in Architecture and Design Education | official-page-meta | yes | yes |
+| Ministry of Culture Commission Calendars | Culinary Manufacturing Hubs | official-page-meta | yes | yes |
 | Riyadh City Events | Poppy Playtime | approved-source-row | yes | fetch failed |
 | Riyadh City Events | Riyadh Season: BLVD City | approved-source-row | yes | fetch failed |
 | Visit Saudi Seasons | The Groves | official-page-meta | yes | yes |
 | Riyadh City Events | Immersive Experience: Flying Over Saudi | approved-source-row | yes | fetch failed |
-| Ministry of Culture Commission Calendars | Film Business Accelerator | approved-source-row | yes | fetch failed |
-| Ministry of Culture Commission Calendars | The Guidelines for Culture and Arts in the Public Realm | approved-source-row | yes | fetch failed |
+| Ministry of Culture Commission Calendars | Film Business Accelerator | official-page-meta | yes | yes |
+| Ministry of Culture Commission Calendars | The Guidelines for Culture and Arts in the Public Realm | official-page-meta | yes | yes |
 | Riyadh City Events | Horses and Equestrian Heritage Exhibition | approved-source-row | yes | fetch failed |
 | Riyadh City Events | Solo Art Exhibition Series | approved-source-row | yes | fetch failed |
 | Riyadh City Events | Eishha (Live It) Fan Zone For FIFA World Cup 2026 | approved-source-row | yes | fetch failed |
@@ -37,23 +37,22 @@
 | Riyadh City Events | Summer Camp at the National Museum: Summer Wonders | approved-source-row | yes | fetch failed |
 | Riyadh City Events | Art Futures Camp 2026 – Diriyah Art Futures | approved-source-row | yes | fetch failed |
 | Monsha'at All Events | لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة) | approved-source-row | no | fetch failed |
-| Monsha'at All Events | لقاءات مراكز دعم المنشآت | approved-source-row | no | fetch failed |
+| Monsha'at All Events | لقاءات مراكز دعم المنشآت | official-page-meta | no | yes |
 | Riyadh City Events | Prince Faisal Bin Fahd Art Exhibition: Summer 2026 | approved-source-row | yes | fetch failed |
 | Riyadh City Events | Registration for International Research Competition on Non-Terrestrial Networks | approved-source-row | yes | fetch failed |
-| Qassim Chamber Events | عمليات إدارة الموارد البشرية | approved-source-row | yes | HTTP 403 |
+| Qassim Chamber Events | عمليات إدارة الموارد البشرية | official-page-meta | yes | yes |
 | Riyadh City Events | Esports World Cup | approved-source-row | yes | fetch failed |
 | Saudi Universities and Technical Colleges | Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH | official-page-meta | no | yes |
 | Saudi Universities and Technical Colleges | Egypt Vs Argentina | official-page-meta | no | yes |
 | Saudi Universities and Technical Colleges | Quarter-Finals: Join the Celebration at the FIFA Fan Zone | official-page-meta | no | yes |
 | Riyadh City Events | PFL MENA Fight Night | approved-source-row | yes | fetch failed |
-| Monsha'at All Events | أسبوع العقار والمقاولات 12- 16 يوليو 2026م | approved-source-row | no | fetch failed |
-| Riyadh City Events | Mishkat Summer Camp | approved-source-row | yes | fetch failed |
+| Monsha'at All Events | أسبوع العقار والمقاولات 12- 16 يوليو 2026م | official-page-meta | no | yes |
 | Saudi Universities and Technical Colleges | Join us at KAUST Health for Respiratory Health Day | official-page-meta | no | yes |
 | Riyadh City Events | SAIF Summer Program | approved-source-row | yes | fetch failed |
 | Saudi Universities and Technical Colleges | Semi-Finals: Join the Celebration at the FIFA Fan Zone | official-page-meta | no | yes |
 | Saudi Universities and Technical Colleges | FIFA World Cup 2026 Final: Celebrate Football's Biggest Night at the KAUST Fan Zone | official-page-meta | no | yes |
 | Riyadh City Events | Summer Splash Running event | approved-source-row | yes | fetch failed |
-| Eye of Riyadh Events | Saudi Wood Expo 2026 | approved-source-row | yes | HTTP 403 |
+| Eye of Riyadh Events | Saudi Wood Expo 2026 | official-page-meta | yes | yes |
 | Eye of Riyadh Events | Saudi Industrial Series | official-page-meta | yes | yes |
 | Riyadh City Events | Merath – Middle East Museums & Heritage Expo | approved-source-row | yes | fetch failed |
 | Riyadh City Events | Saudi Light and Sound (SLS) Expo | approved-source-row | yes | fetch failed |
@@ -67,10 +66,10 @@
 | Riyadh City Events | Saudi Wood Expo | approved-source-row | yes | fetch failed |
 | Riyadh City Events | Saudi Industrial Series | approved-source-row | yes | fetch failed |
 | Riyadh City Events | Hotel & Hospitality Expo | approved-source-row | yes | fetch failed |
-| SDAIA Calendar and Events | Global Forum on the Ethics of AI | approved-source-row | no | fetch failed |
+| SDAIA Calendar and Events | Global Forum on the Ethics of AI | official-page-meta | no | yes |
 | Riyadh City Events | Money20/20 Middle East | approved-source-row | yes | fetch failed |
 | Riyadh City Events | Riyadh Global Medical Biotechnology Summit | approved-source-row | yes | fetch failed |
-| SDAIA Calendar and Events | Global AI Summit | approved-source-row | no | fetch failed |
+| SDAIA Calendar and Events | Global AI Summit | official-page-meta | no | yes |
 | Riyadh City Events | Global AI Summit (GAIN) | approved-source-row | yes | fetch failed |
 | Riyadh City Events | Kingdom Business Luxury Travel Congress | approved-source-row | yes | fetch failed |
 | Riyadh City Events | Smart Cities Saudi Expo | approved-source-row | yes | fetch failed |
@@ -82,4 +81,4 @@
 | Invest Saudi Events | Web Summit Lisbon 2026 | official-page-meta | yes | yes |
 | Invest Saudi Events | Cityscape Global 2026 | approved-source-row | yes | HTTP 403 |
 | Saudi Universities and Technical Colleges | Future Frontiers for Businesses: Catalysts for Growth in a Transformational Economy | official-page-meta | no | yes |
-| Asharqia Chamber Events | معرض وظائف 2026 | approved-source-row | no | fetch failed |
+| Asharqia Chamber Events | معرض وظائف 2026 | official-page-meta | no | yes |

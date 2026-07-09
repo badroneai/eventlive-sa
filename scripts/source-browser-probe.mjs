@@ -152,10 +152,14 @@ function analyzeHtmlSignals(html = '', pageText = '', links = []) {
   };
 }
 
+function hasProtectionQueueSignal(value = '') {
+  return /queue-it|queueit|protectsaudi|general queue page|waiting room|queue\.platinumlist\.net/i.test(String(value || ''));
+}
+
 function classifyProbe({ status = 0, html = '', pageText = '', links = [], network = [], policy_skipped = false }) {
   if (policy_skipped) return 'policy-skipped-partnership';
   const body = `${html}\n${pageText}`.slice(0, 12000);
-  if (status === 403 || /just a moment|cf-browser-verification|cdn-cgi\/challenge|request rejected|access denied/i.test(body)) {
+  if (status === 403 || hasProtectionQueueSignal(body) || /just a moment|cf-browser-verification|cdn-cgi\/challenge|request rejected|access denied/i.test(body)) {
     return 'blocked-or-protected';
   }
   const endpoints = extractEndpointCandidates(network);

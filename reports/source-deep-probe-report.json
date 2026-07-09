@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-09T10:01:54.172Z",
+  "generated_at": "2026-07-08T12:48:41.598Z",
   "registry": "data/source_registry.json",
   "source_ingestion_plan": "reports/source-ingestion-plan.json",
   "probe_limit": 28,
   "timeout_ms": 12000,
   "totals": {
-    "probed": 22,
-    "extractor_ready": 10,
+    "probed": 21,
+    "extractor_ready": 9,
     "blocked": 12,
     "partnership": 0,
     "watch": 0
@@ -60,7 +60,7 @@
         "status": 200,
         "final_url": "https://ncci.org.sa/category/events/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 118136,
+        "bytes": 118086,
         "title": "الفعاليات – الغرفة التجارية بعرعر | غرفة الحدود الشمالية",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -94,7 +94,7 @@
         "status": 200,
         "final_url": "https://www.neom.com/en-us/newsroom/events",
         "content_type": "text/html;charset=utf-8",
-        "bytes": 182023,
+        "bytes": 182004,
         "title": "Events",
         "blocked_reason": "",
         "structured_scripts": 1,
@@ -128,7 +128,7 @@
         "status": 200,
         "final_url": "https://www.cst.gov.sa/en",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 250421,
+        "bytes": 241777,
         "title": "Communications, Space & Technology Commission (CST)",
         "blocked_reason": "",
         "structured_scripts": 2,
@@ -146,74 +146,6 @@
         ]
       },
       "extraction_score": 58,
-      "recommendation": "probe-hidden-api-or-html-table"
-    },
-    {
-      "id": "tabuk-chamber-events",
-      "name": "Tabuk Chamber Events",
-      "priority": 66,
-      "url": "https://www.tabukchamber.sa/",
-      "trust_level": "official",
-      "fetch_method": "html-listing",
-      "candidate_gate": "extraction",
-      "intake_policy": "official-feed-preferred",
-      "signals": {
-        "http_ok": true,
-        "status": 200,
-        "final_url": "https://www.tabukchamber.sa/",
-        "content_type": "text/html; charset=UTF-8",
-        "bytes": 111903,
-        "title": "الغرفة التجارية بتبوك | TABUK CHAMBER",
-        "blocked_reason": "",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 0,
-        "date_snippets": [
-          "2025-11-22",
-          "2025-11-22",
-          "2025-11-22",
-          "2025-11-22",
-          "2025-11-22",
-          "2025-11-22"
-        ]
-      },
-      "extraction_score": 48,
-      "recommendation": "probe-hidden-api-or-html-table"
-    },
-    {
-      "id": "visit-saudi-calendar-pdf",
-      "name": "Visit Saudi Calendar PDF",
-      "priority": 34,
-      "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar.pdf",
-      "trust_level": "official",
-      "fetch_method": "manual-review",
-      "candidate_gate": "extraction",
-      "intake_policy": "official-feed-preferred",
-      "signals": {
-        "http_ok": true,
-        "status": 200,
-        "final_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar.pdf",
-        "content_type": "application/pdf",
-        "bytes": 51429115,
-        "title": "",
-        "blocked_reason": "",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 3,
-        "date_snippets": [
-          "2019/10/01",
-          "2026-06-17",
-          "calendarpdf",
-          "calendarpdf",
-          "2026-06-17",
-          "2026-06-17"
-        ]
-      },
-      "extraction_score": 46,
       "recommendation": "probe-hidden-api-or-html-table"
     },
     {
@@ -353,6 +285,40 @@
       "recommendation": "probe-hidden-api-or-html-table"
     },
     {
+      "id": "saudi-winter-calendar-spa",
+      "name": "Saudi Winter Events Calendar",
+      "priority": 50,
+      "url": "https://www.spa.gov.sa/en/N2183027",
+      "trust_level": "official",
+      "fetch_method": "manual-review",
+      "candidate_gate": "source-evidence",
+      "intake_policy": "monitor-public",
+      "signals": {
+        "http_ok": true,
+        "status": 200,
+        "final_url": "https://www.spa.gov.sa/en/N2183027",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 142279,
+        "title": "STA Launches&#x27; Saudi Winter&#x27; Events Calendar",
+        "blocked_reason": "",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 1,
+        "date_snippets": [
+          "Calendar",
+          "Calendar\"/>",
+          "calendar, which includes various activities and seasons set to take place in seven desti",
+          "calendar is part of the Saudi Winter Program 2024-2025, which features over 1,000 touris",
+          "calendar includes notable seasons and events such as Riyadh Season, Diriyah Season, AlUl",
+          "Calendar, as well as major events like the Dakar Rally, MDL Beast, Saudi Cruise, and the"
+        ]
+      },
+      "extraction_score": 36,
+      "recommendation": "probe-hidden-api-or-html-table"
+    },
+    {
       "id": "baha-amanah-events",
       "name": "Baha Municipality Events",
       "priority": 62,
@@ -379,7 +345,7 @@
           "datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" rel=\"stylesheet\">",
           "calendar-alt\">",
           "date-span\">",
-          "09 Jul 2027",
+          "08 Jul 2027",
           "dated Row -->"
         ]
       },
@@ -454,7 +420,7 @@
         "status": 403,
         "final_url": "https://visitalbalad.com/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 5833,
+        "bytes": 5834,
         "title": "Just a moment...",
         "blocked_reason": "http-403",
         "structured_scripts": 0,
@@ -483,7 +449,7 @@
         "content_type": "",
         "bytes": 0,
         "title": "",
-        "blocked_reason": "fetch failed",
+        "blocked_reason": "fetch failed getaddrinfo ENOTFOUND www.ricec.com TypeError: fetch failed",
         "structured_scripts": 0,
         "structured_events": 0,
         "google_calendar_links": 0,
@@ -492,7 +458,7 @@
         "date_snippets": []
       },
       "extraction_score": -23,
-      "recommendation": "blocked-or-protected:fetch failed"
+      "recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.ricec.com TypeError: fetch failed"
     },
     {
       "id": "saudi-contractors-authority-events",
@@ -510,7 +476,7 @@
         "content_type": "",
         "bytes": 0,
         "title": "",
-        "blocked_reason": "fetch failed",
+        "blocked_reason": "fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed",
         "structured_scripts": 0,
         "structured_events": 0,
         "google_calendar_links": 0,
@@ -519,7 +485,7 @@
         "date_snippets": []
       },
       "extraction_score": -23,
-      "recommendation": "blocked-or-protected:fetch failed"
+      "recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed"
     },
     {
       "id": "riyadh-city-events",
@@ -537,7 +503,7 @@
         "content_type": "",
         "bytes": 0,
         "title": "",
-        "blocked_reason": "fetch failed",
+        "blocked_reason": "fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed",
         "structured_scripts": 0,
         "structured_events": 0,
         "google_calendar_links": 0,
@@ -546,7 +512,7 @@
         "date_snippets": []
       },
       "extraction_score": -23,
-      "recommendation": "blocked-or-protected:fetch failed"
+      "recommendation": "blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed"
     },
     {
       "id": "gea-entertainment-events",
@@ -591,7 +557,7 @@
         "content_type": "",
         "bytes": 0,
         "title": "",
-        "blocked_reason": "fetch failed",
+        "blocked_reason": "fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed",
         "structured_scripts": 0,
         "structured_events": 0,
         "google_calendar_links": 0,
@@ -600,7 +566,34 @@
         "date_snippets": []
       },
       "extraction_score": -35,
-      "recommendation": "blocked-or-protected:fetch failed"
+      "recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed"
+    },
+    {
+      "id": "visit-saudi-calendar-pdf",
+      "name": "Visit Saudi Calendar PDF",
+      "priority": 34,
+      "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar.pdf",
+      "trust_level": "official",
+      "fetch_method": "manual-review",
+      "candidate_gate": "extraction",
+      "intake_policy": "official-feed-preferred",
+      "signals": {
+        "http_ok": false,
+        "status": 0,
+        "final_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar.pdf",
+        "content_type": "",
+        "bytes": 0,
+        "title": "",
+        "blocked_reason": "timeout",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 0,
+        "date_snippets": []
+      },
+      "extraction_score": -35,
+      "recommendation": "blocked-or-protected:timeout"
     },
     {
       "id": "qiddiya-events",
@@ -616,7 +609,7 @@
         "status": 403,
         "final_url": "https://qiddiya.com/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 5965,
+        "bytes": 5987,
         "title": "Attention Required! | Cloudflare",
         "blocked_reason": "http-403",
         "structured_scripts": 0,
@@ -645,7 +638,7 @@
         "content_type": "",
         "bytes": 0,
         "title": "",
-        "blocked_reason": "fetch failed",
+        "blocked_reason": "fetch failed getaddrinfo ENOTFOUND jeddahseason.sa TypeError: fetch failed",
         "structured_scripts": 0,
         "structured_events": 0,
         "google_calendar_links": 0,
@@ -654,34 +647,7 @@
         "date_snippets": []
       },
       "extraction_score": -35,
-      "recommendation": "blocked-or-protected:fetch failed"
-    },
-    {
-      "id": "saudi-winter-calendar-spa",
-      "name": "Saudi Winter Events Calendar",
-      "priority": 50,
-      "url": "https://www.spa.gov.sa/en/N2183027",
-      "trust_level": "official",
-      "fetch_method": "manual-review",
-      "candidate_gate": "source-evidence",
-      "intake_policy": "monitor-public",
-      "signals": {
-        "http_ok": false,
-        "status": 403,
-        "final_url": "https://www.spa.gov.sa/en/N2183027",
-        "content_type": "text/html; charset=UTF-8",
-        "bytes": 5045,
-        "title": "Attention Required! | Cloudflare",
-        "blocked_reason": "http-403",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 0,
-        "date_snippets": []
-      },
-      "extraction_score": -35,
-      "recommendation": "blocked-or-protected:http-403"
+      "recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND jeddahseason.sa TypeError: fetch failed"
     }
   ],
   "next_actions": [
@@ -706,16 +672,6 @@
       "reason": "score=58, gcal=0, structured=0, links=0"
     },
     {
-      "id": "tabuk-chamber-events",
-      "recommendation": "probe-hidden-api-or-html-table",
-      "reason": "score=48, gcal=0, structured=0, links=0"
-    },
-    {
-      "id": "visit-saudi-calendar-pdf",
-      "recommendation": "probe-hidden-api-or-html-table",
-      "reason": "score=46, gcal=0, structured=0, links=0"
-    },
-    {
       "id": "sela-sea-expo",
       "recommendation": "probe-hidden-api-or-html-table",
       "reason": "score=46, gcal=0, structured=0, links=0"
@@ -724,6 +680,16 @@
       "id": "aseer-season-asda",
       "recommendation": "probe-hidden-api-or-html-table",
       "reason": "score=46, gcal=0, structured=0, links=0"
+    },
+    {
+      "id": "diriyah-season",
+      "recommendation": "probe-hidden-api-or-html-table",
+      "reason": "score=36, gcal=0, structured=0, links=0"
+    },
+    {
+      "id": "saudi-university-events",
+      "recommendation": "probe-hidden-api-or-html-table",
+      "reason": "score=36, gcal=0, structured=0, links=2"
     }
   ]
 }

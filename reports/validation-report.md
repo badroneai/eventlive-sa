@@ -8,7 +8,7 @@
 - Total sessions: 5
 - Catalog events: 161
 - Source candidates total: 184
-- Source registry total: 66
+- Source registry total: 69
 - Total errors: 0
 - Total warnings: 0
 

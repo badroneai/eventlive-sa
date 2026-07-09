@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T10:10:43.981Z",
+  "generated_at": "2026-07-09T11:59:57.817Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-source-health",
@@ -9,14 +9,14 @@
     "auto_publish": "reports/source-promotion-report.json"
   },
   "totals": {
-    "sources": 66,
+    "sources": 69,
     "active_collectors": 34,
-    "collection_coverage_pct": 52,
+    "collection_coverage_pct": 49,
     "productive": 16,
     "open_idle": 9,
     "collector_errors": 9,
     "probe_blocked": 0,
-    "extractor_backlog": 32,
+    "extractor_backlog": 35,
     "candidates_discovered": 142,
     "candidates_written": 184
   },
@@ -819,6 +819,42 @@
       "extracted": 0,
       "candidates": 0,
       "next_action": "أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.",
+      "last_collection_status": "",
+      "last_extracted": 0,
+      "known_candidates": 0
+    },
+    {
+      "id": "platinumlist-riyadh",
+      "name": "Platinumlist Riyadh Calendar",
+      "priority": 70,
+      "status": "not-collected",
+      "extracted": 0,
+      "candidates": 0,
+      "next_action": "أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.",
+      "last_collection_status": "",
+      "last_extracted": 0,
+      "known_candidates": 0
+    },
+    {
+      "id": "platinumlist-saudi-city-network",
+      "name": "Platinumlist Saudi City Network",
+      "priority": 72,
+      "status": "not-collected",
+      "extracted": 0,
+      "candidates": 0,
+      "next_action": "أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.",
+      "last_collection_status": "",
+      "last_extracted": 0,
+      "known_candidates": 0
+    },
+    {
+      "id": "my-gov-sa-events",
+      "name": "GOV.SA National Platform Events",
+      "priority": 73,
+      "status": "not-collected",
+      "extracted": 0,
+      "candidates": 0,
+      "next_action": "افتح مسار شراكة أو تغذية رسمية قبل الأتمتة.",
       "last_collection_status": "",
       "last_extracted": 0,
       "known_candidates": 0

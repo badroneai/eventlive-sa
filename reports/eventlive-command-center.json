@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.command-center.v1",
-  "generated_at": "2026-07-08T10:10:06.437Z",
+  "generated_at": "2026-07-09T12:00:15.495Z",
   "project": {
     "name": "EventLive",
     "domain": "eventme.live",
@@ -19,11 +19,11 @@
   },
   "totals": {
     "catalog_events": 161,
-    "public_events": 429,
+    "public_events": 449,
     "source_candidates": 184,
-    "registered_sources": 66,
-    "live_ready": 51,
-    "ended_events": 294,
+    "registered_sources": 69,
+    "live_ready": 52,
+    "ended_events": 295,
     "delivery_standard_pass": 21,
     "delivery_standard_partial": 0,
     "delivery_standard_not_started": 0

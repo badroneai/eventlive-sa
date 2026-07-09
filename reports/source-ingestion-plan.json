@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-09T10:12:32.100Z",
+  "generated_at": "2026-07-09T12:16:14.303Z",
   "source_registry": "data/source_registry.json",
   "source_collection_report": "reports/source-collection-report.json",
   "totals": {
-    "sources": 66,
+    "sources": 69,
     "active_collectors": 30,
     "extractor_backlog": 12,
     "evidence_monitor": 12,
-    "partnership": 3,
-    "discovery_only": 8,
-    "deep_probe_sources": 22
+    "partnership": 4,
+    "discovery_only": 10,
+    "deep_probe_sources": 21
   },
   "ring_counts": {
-    "partnership": 3,
+    "partnership": 4,
     "active-collector": 30,
-    "discovery-only": 8,
+    "discovery-only": 10,
     "extractor-backlog": 12,
     "evidence-monitor": 12,
     "venue-dedupe": 1
   },
   "cadence_counts": {
-    "monthly-partnership-check": 3,
+    "monthly-partnership-check": 4,
     "daily": 30,
     "weekly-discovery": 6,
     "daily-extractor-probe": 2,
@@ -28,32 +28,9 @@
     "weekly-evidence-check": 3,
     "monthly-evidence-check": 9,
     "weekly-dedupe-check": 1,
-    "monthly-discovery": 2
+    "monthly-discovery": 4
   },
   "next_extractors": [
-    {
-      "id": "visit-saudi-calendar-pdf",
-      "name": "Visit Saudi Calendar PDF",
-      "priority": 34,
-      "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar.pdf",
-      "trust_level": "official",
-      "source_type": "national-calendar",
-      "intake_policy": "official-feed-preferred",
-      "candidate_gate": "extraction",
-      "fetch_method": "manual-review",
-      "ring": "extractor-backlog",
-      "cadence": "twice-weekly-extractor-probe",
-      "score": 112,
-      "has_active_collector": false,
-      "last_collection_status": "",
-      "last_extracted": 0,
-      "last_probe_status": 200,
-      "last_probe_score": 46,
-      "last_probe_recommendation": "probe-hidden-api-or-html-table",
-      "last_probe_blocked_reason": "",
-      "known_candidates": 0,
-      "next_action": "Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible."
-    },
     {
       "id": "jouf-chamber-events",
       "name": "Jouf Chamber Events",
@@ -118,10 +95,10 @@
       "last_extracted": 40,
       "last_probe_status": "",
       "last_probe_score": -23,
-      "last_probe_recommendation": "blocked-or-protected:fetch failed",
-      "last_probe_blocked_reason": "fetch failed",
-      "known_candidates": 42,
-      "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
+      "last_probe_recommendation": "blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed",
+      "last_probe_blocked_reason": "fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed",
+      "known_candidates": 41,
+      "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
     },
     {
       "id": "gea-entertainment-events",
@@ -145,29 +122,6 @@
       "last_probe_blocked_reason": "http-403",
       "known_candidates": 0,
       "next_action": "Do not scrape now; latest probe is blocked-or-protected:http-403. Keep as partnership, browser/API investigation, or evidence lane."
-    },
-    {
-      "id": "tabuk-chamber-events",
-      "name": "Tabuk Chamber Events",
-      "priority": 66,
-      "url": "https://www.tabukchamber.sa/",
-      "trust_level": "official",
-      "source_type": "venue-calendar",
-      "intake_policy": "official-feed-preferred",
-      "candidate_gate": "extraction",
-      "fetch_method": "html-listing",
-      "ring": "extractor-backlog",
-      "cadence": "twice-weekly-extractor-probe",
-      "score": 81,
-      "has_active_collector": false,
-      "last_collection_status": "",
-      "last_extracted": 0,
-      "last_probe_status": 200,
-      "last_probe_score": 48,
-      "last_probe_recommendation": "probe-hidden-api-or-html-table",
-      "last_probe_blocked_reason": "",
-      "known_candidates": 0,
-      "next_action": "Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible."
     },
     {
       "id": "riyadh-season",
@@ -210,10 +164,10 @@
       "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": -35,
-      "last_probe_recommendation": "blocked-or-protected:fetch failed",
-      "last_probe_blocked_reason": "fetch failed",
+      "last_probe_recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed",
+      "last_probe_blocked_reason": "fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed",
       "known_candidates": 0,
-      "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
+      "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
     },
     {
       "id": "enjoy-saudi-events",
@@ -237,6 +191,52 @@
       "last_probe_blocked_reason": "http-403",
       "known_candidates": 0,
       "next_action": "Do not scrape now; latest probe is blocked-or-protected:http-403. Keep as partnership, browser/API investigation, or evidence lane."
+    },
+    {
+      "id": "visit-saudi-calendar-pdf",
+      "name": "Visit Saudi Calendar PDF",
+      "priority": 34,
+      "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar.pdf",
+      "trust_level": "official",
+      "source_type": "national-calendar",
+      "intake_policy": "official-feed-preferred",
+      "candidate_gate": "extraction",
+      "fetch_method": "manual-review",
+      "ring": "extractor-backlog",
+      "cadence": "twice-weekly-extractor-probe",
+      "score": 63,
+      "has_active_collector": false,
+      "last_collection_status": "",
+      "last_extracted": 0,
+      "last_probe_status": "",
+      "last_probe_score": -35,
+      "last_probe_recommendation": "blocked-or-protected:timeout",
+      "last_probe_blocked_reason": "timeout",
+      "known_candidates": 0,
+      "next_action": "Do not scrape now; latest probe is blocked-or-protected:timeout. Keep as partnership, browser/API investigation, or evidence lane."
+    },
+    {
+      "id": "tabuk-chamber-events",
+      "name": "Tabuk Chamber Events",
+      "priority": 66,
+      "url": "https://www.tabukchamber.sa/",
+      "trust_level": "official",
+      "source_type": "venue-calendar",
+      "intake_policy": "official-feed-preferred",
+      "candidate_gate": "extraction",
+      "fetch_method": "html-listing",
+      "ring": "extractor-backlog",
+      "cadence": "twice-weekly-extractor-probe",
+      "score": 61,
+      "has_active_collector": false,
+      "last_collection_status": "",
+      "last_extracted": 0,
+      "last_probe_status": "",
+      "last_probe_score": 0,
+      "last_probe_recommendation": "",
+      "last_probe_blocked_reason": "",
+      "known_candidates": 0,
+      "next_action": "Probe HTML/API shape, then decide whether an extractor is worth adding."
     },
     {
       "id": "historic-jeddah-albalad",
@@ -302,10 +302,10 @@
       "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": -23,
-      "last_probe_recommendation": "blocked-or-protected:fetch failed",
-      "last_probe_blocked_reason": "fetch failed",
+      "last_probe_recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed",
+      "last_probe_blocked_reason": "fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed",
       "known_candidates": 0,
-      "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
+      "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
     }
   ],
   "sources": [
@@ -623,12 +623,12 @@
       "score": 44,
       "has_active_collector": false,
       "last_collection_status": "ok",
-      "last_extracted": 18,
+      "last_extracted": 16,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 18,
+      "known_candidates": 16,
       "next_action": "Use only to discover leads; require official confirmation before promotion."
     },
     {
@@ -674,7 +674,7 @@
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 20,
+      "known_candidates": 18,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -856,10 +856,10 @@
       "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": -35,
-      "last_probe_recommendation": "blocked-or-protected:fetch failed",
-      "last_probe_blocked_reason": "fetch failed",
+      "last_probe_recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed",
+      "last_probe_blocked_reason": "fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed",
       "known_candidates": 0,
-      "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
+      "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
     },
     {
       "id": "sdaia-academy-programs",
@@ -1080,16 +1080,16 @@
       "fetch_method": "manual-review",
       "ring": "extractor-backlog",
       "cadence": "twice-weekly-extractor-probe",
-      "score": 112,
+      "score": 63,
       "has_active_collector": false,
       "last_collection_status": "",
       "last_extracted": 0,
-      "last_probe_status": 200,
-      "last_probe_score": 46,
-      "last_probe_recommendation": "probe-hidden-api-or-html-table",
-      "last_probe_blocked_reason": "",
+      "last_probe_status": "",
+      "last_probe_score": -35,
+      "last_probe_recommendation": "blocked-or-protected:timeout",
+      "last_probe_blocked_reason": "timeout",
       "known_candidates": 0,
-      "next_action": "Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible."
+      "next_action": "Do not scrape now; latest probe is blocked-or-protected:timeout. Keep as partnership, browser/API investigation, or evidence lane."
     },
     {
       "id": "qiddiya-events",
@@ -1247,10 +1247,10 @@
       "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": -23,
-      "last_probe_recommendation": "blocked-or-protected:fetch failed",
-      "last_probe_blocked_reason": "fetch failed",
+      "last_probe_recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.ricec.com TypeError: fetch failed",
+      "last_probe_blocked_reason": "fetch failed getaddrinfo ENOTFOUND www.ricec.com TypeError: fetch failed",
       "known_candidates": 0,
-      "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
+      "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.ricec.com TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
     },
     {
       "id": "aseer-season-asda",
@@ -1293,10 +1293,10 @@
       "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": -35,
-      "last_probe_recommendation": "blocked-or-protected:fetch failed",
-      "last_probe_blocked_reason": "fetch failed",
+      "last_probe_recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND jeddahseason.sa TypeError: fetch failed",
+      "last_probe_blocked_reason": "fetch failed getaddrinfo ENOTFOUND jeddahseason.sa TypeError: fetch failed",
       "known_candidates": 0,
-      "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
+      "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed getaddrinfo ENOTFOUND jeddahseason.sa TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
     },
     {
       "id": "saudi-water-authority-events",
@@ -1405,12 +1405,12 @@
       "score": 82,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 7,
+      "last_extracted": 5,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 7,
+      "known_candidates": 5,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -1431,10 +1431,10 @@
       "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": -23,
-      "last_probe_recommendation": "blocked-or-protected:fetch failed",
-      "last_probe_blocked_reason": "fetch failed",
+      "last_probe_recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed",
+      "last_probe_blocked_reason": "fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed",
       "known_candidates": 0,
-      "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
+      "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
     },
     {
       "id": "saudi-winter-calendar-spa",
@@ -1448,16 +1448,16 @@
       "fetch_method": "manual-review",
       "ring": "evidence-monitor",
       "cadence": "monthly-evidence-check",
-      "score": 2,
+      "score": 49,
       "has_active_collector": false,
       "last_collection_status": "",
       "last_extracted": 0,
-      "last_probe_status": 403,
-      "last_probe_score": -35,
-      "last_probe_recommendation": "blocked-or-protected:http-403",
-      "last_probe_blocked_reason": "http-403",
+      "last_probe_status": 200,
+      "last_probe_score": 36,
+      "last_probe_recommendation": "probe-hidden-api-or-html-table",
+      "last_probe_blocked_reason": "",
       "known_candidates": 0,
-      "next_action": "Do not scrape now; latest probe is blocked-or-protected:http-403. Keep as partnership, browser/API investigation, or evidence lane."
+      "next_action": "Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible."
     },
     {
       "id": "riyadh-city-events",
@@ -1477,10 +1477,10 @@
       "last_extracted": 40,
       "last_probe_status": "",
       "last_probe_score": -23,
-      "last_probe_recommendation": "blocked-or-protected:fetch failed",
-      "last_probe_blocked_reason": "fetch failed",
-      "known_candidates": 42,
-      "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
+      "last_probe_recommendation": "blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed",
+      "last_probe_blocked_reason": "fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed",
+      "known_candidates": 41,
+      "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
     },
     {
       "id": "monshaat-academy-programs",
@@ -1747,16 +1747,16 @@
       "fetch_method": "html-listing",
       "ring": "extractor-backlog",
       "cadence": "twice-weekly-extractor-probe",
-      "score": 81,
+      "score": 61,
       "has_active_collector": false,
       "last_collection_status": "",
       "last_extracted": 0,
-      "last_probe_status": 200,
-      "last_probe_score": 48,
-      "last_probe_recommendation": "probe-hidden-api-or-html-table",
+      "last_probe_status": "",
+      "last_probe_score": 0,
+      "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
       "known_candidates": 0,
-      "next_action": "Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible."
+      "next_action": "Probe HTML/API shape, then decide whether an extractor is worth adding."
     },
     {
       "id": "jazan-chamber-events",
@@ -1826,6 +1826,75 @@
       "last_probe_blocked_reason": "",
       "known_candidates": 0,
       "next_action": "Monitor for live event/detail pages; do not create public rows from summary or coming-soon pages."
+    },
+    {
+      "id": "platinumlist-riyadh",
+      "name": "Platinumlist Riyadh Calendar",
+      "priority": 70,
+      "url": "https://riyadh.platinumlist.net/ar/calendar/today",
+      "trust_level": "official-marketplace",
+      "source_type": "ticketing-marketplace",
+      "intake_policy": "candidate-only",
+      "candidate_gate": "duplicate-review",
+      "fetch_method": "search-page",
+      "ring": "discovery-only",
+      "cadence": "monthly-discovery",
+      "score": -12,
+      "has_active_collector": false,
+      "last_collection_status": "",
+      "last_extracted": 0,
+      "last_probe_status": "",
+      "last_probe_score": 0,
+      "last_probe_recommendation": "",
+      "last_probe_blocked_reason": "",
+      "known_candidates": 0,
+      "next_action": "Use only to discover leads; require official confirmation before promotion."
+    },
+    {
+      "id": "platinumlist-saudi-city-network",
+      "name": "Platinumlist Saudi City Network",
+      "priority": 72,
+      "url": "https://platinumlist.net/sitemap",
+      "trust_level": "official-marketplace",
+      "source_type": "ticketing-marketplace",
+      "intake_policy": "candidate-only",
+      "candidate_gate": "source-evidence",
+      "fetch_method": "sitemap-pages",
+      "ring": "discovery-only",
+      "cadence": "monthly-discovery",
+      "score": -14,
+      "has_active_collector": false,
+      "last_collection_status": "",
+      "last_extracted": 0,
+      "last_probe_status": "",
+      "last_probe_score": 0,
+      "last_probe_recommendation": "",
+      "last_probe_blocked_reason": "",
+      "known_candidates": 0,
+      "next_action": "Use only to discover leads; require official confirmation before promotion."
+    },
+    {
+      "id": "my-gov-sa-events",
+      "name": "GOV.SA National Platform Events",
+      "priority": 73,
+      "url": "https://my.gov.sa/ar/events",
+      "trust_level": "official",
+      "source_type": "national-calendar",
+      "intake_policy": "partnership-needed",
+      "candidate_gate": "source-evidence",
+      "fetch_method": "partnership-api",
+      "ring": "partnership",
+      "cadence": "monthly-partnership-check",
+      "score": 1,
+      "has_active_collector": false,
+      "last_collection_status": "",
+      "last_extracted": 0,
+      "last_probe_status": "",
+      "last_probe_score": 0,
+      "last_probe_recommendation": "",
+      "last_probe_blocked_reason": "",
+      "known_candidates": 0,
+      "next_action": "Open a relationship/API path; keep out of automated scraping until a feed or permission path exists."
     }
   ]
 }

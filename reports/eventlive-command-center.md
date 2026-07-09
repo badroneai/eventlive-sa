@@ -1,17 +1,17 @@
 # EventLive Command Center
 
-- Generated at: 2026-07-08T10:10:06.437Z
+- Generated at: 2026-07-09T12:00:15.495Z
 - Live site: https://eventme.live/
 - Lifecycle: pre-professional-launch hardening
 
 ## Totals
 
 - Catalog events: 161
-- Public events: 429
+- Public events: 449
 - Source candidates: 184
-- Registered sources: 66
-- Live-ready events: 51
-- Ended events: 294
+- Registered sources: 69
+- Live-ready events: 52
+- Ended events: 295
 - Delivery standard PASS/PARTIAL/NOT_STARTED: 21/0/0
 
 ## Gates

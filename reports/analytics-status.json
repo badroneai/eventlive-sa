@@ -1,10 +1,15 @@
 {
   "schema": "eventlive.analytics-status.v1",
-  "generated_at": "2026-07-08T10:10:06.437Z",
+  "generated_at": "2026-07-09T12:00:15.495Z",
   "status": "PASS",
+  "instrumentation_status": "PASS",
   "provider": "plausible",
   "domain": "eventme.live",
   "dashboard_url": "https://plausible.io/eventme.live",
+  "dashboard_login_url": "https://plausible.io/login?return_to=%2Feventme.live",
+  "dashboard_status": "NEEDS_PROVIDER_SETUP",
+  "dashboard_setup_required": true,
+  "dashboard_note": "إذا ظهرت صفحة 404 في Plausible فهذا يعني غالبا أن موقع eventme.live لم يضف بعد داخل Plausible أو أنك لست داخل حساب مالك اللوحة. التتبع مزروع في الموقع، لكن أرقام الزيارات تحتاج تفعيل اللوحة من مزود التحليلات.",
   "privacy": {
     "cookies": false,
     "pii": false,

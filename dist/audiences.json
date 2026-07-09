@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-08T10:10:26.415Z",
+  "generated_at": "2026-07-09T12:16:14.539Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "audiences_count": 12,
   "totals": {
     "events": 449,
-    "upcoming_or_active": 155,
-    "ended": 294,
+    "upcoming_or_active": 154,
+    "ended": 295,
     "live_ready": 52
   },
   "audiences": [
@@ -15,8 +15,8 @@
       "label": "موظفون ومهنيون",
       "url": "./for/professionals.html",
       "total_events": 228,
-      "upcoming_or_active": 83,
-      "ended": 145,
+      "upcoming_or_active": 82,
+      "ended": 146,
       "live_ready": 46,
       "sources": [
         "Abha Chamber Events",
@@ -311,8 +311,8 @@
       "label": "مهاريون وحرفيون",
       "url": "./for/skilled-trades.html",
       "total_events": 70,
-      "upcoming_or_active": 32,
-      "ended": 38,
+      "upcoming_or_active": 31,
+      "ended": 39,
       "live_ready": 10,
       "sources": [
         "Asharqia Chamber Events",
@@ -465,8 +465,8 @@
       "label": "رواد أعمال",
       "url": "./for/entrepreneurs.html",
       "total_events": 66,
-      "upcoming_or_active": 22,
-      "ended": 44,
+      "upcoming_or_active": 21,
+      "ended": 45,
       "live_ready": 3,
       "sources": [
         "Abha Chamber Events",
@@ -523,8 +523,8 @@
       "label": "باحثون عن عمل",
       "url": "./for/job-seekers.html",
       "total_events": 31,
-      "upcoming_or_active": 10,
-      "ended": 21,
+      "upcoming_or_active": 9,
+      "ended": 22,
       "live_ready": 1,
       "sources": [
         "Asharqia Chamber Events",

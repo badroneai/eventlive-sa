@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-07-08T10:10:06.437Z",
+  "generated_at": "2026-07-09T12:00:15.495Z",
   "status": "PASS",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
-    "sources": 66,
+    "sources": 69,
     "candidates": 184,
     "matched_candidates": 157,
     "auto_publish_sources": 13,
-    "candidate_only_sources": 8,
-    "partnership_required_sources": 3,
+    "candidate_only_sources": 10,
+    "partnership_required_sources": 4,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 42
   },
   "policies": {
-    "partnership_required": 3,
+    "partnership_required": 4,
     "auto_publish": 13,
-    "candidate_only": 8,
+    "candidate_only": 10,
     "manual_review": 42
   },
   "candidates_by_gate": {
@@ -684,6 +684,36 @@
       "fetch_method": "html-listing",
       "candidate_gate": "source-evidence",
       "publish_policy": "manual_review"
+    },
+    {
+      "id": "platinumlist-riyadh",
+      "name": "Platinumlist Riyadh Calendar",
+      "priority": 70,
+      "trust_level": "official-marketplace",
+      "intake_policy": "candidate-only",
+      "fetch_method": "search-page",
+      "candidate_gate": "duplicate-review",
+      "publish_policy": "candidate_only"
+    },
+    {
+      "id": "platinumlist-saudi-city-network",
+      "name": "Platinumlist Saudi City Network",
+      "priority": 72,
+      "trust_level": "official-marketplace",
+      "intake_policy": "candidate-only",
+      "fetch_method": "sitemap-pages",
+      "candidate_gate": "source-evidence",
+      "publish_policy": "candidate_only"
+    },
+    {
+      "id": "my-gov-sa-events",
+      "name": "GOV.SA National Platform Events",
+      "priority": 73,
+      "trust_level": "official",
+      "intake_policy": "partnership-needed",
+      "fetch_method": "partnership-api",
+      "candidate_gate": "source-evidence",
+      "publish_policy": "partnership_required"
     }
   ]
 }

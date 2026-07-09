@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-09T10:12:08.736Z",
+  "generated_at": "2026-07-08T08:54:05.082Z",
   "source_ops_report": "reports/source-ops-report.json",
   "source_registry": "data/source_registry.json",
   "totals": {
     "leads_seen": 10,
-    "tasks": 10,
+    "tasks": 6,
     "high_priority": 5
   },
   "tasks": [
@@ -97,99 +97,6 @@
         {
           "query": "\"Dubai Property Expo in Al Khobar\" \"Khobar\" tickets",
           "url": "https://www.google.com/search?q=%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22%20tickets"
-        }
-      ],
-      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
-    },
-    {
-      "lead_id": "candidate-eye-of-riyadh-events-big-5-construct-saudi-20260830-2238e3a0",
-      "title": "Big 5 Construct Saudi",
-      "city": "Riyadh",
-      "starts_at": "2026-08-30T09:00:00+03:00",
-      "source_label": "Eye of Riyadh Events",
-      "discovery_quality": "strong-lead",
-      "discovery_score": 70,
-      "discovery_notes": "directory-source, saudi-location-signal, large-event-topic",
-      "resolver_priority": 115,
-      "target_sources": [
-        {
-          "id": "rfecc-whats-on",
-          "name": "RFECC What's On",
-          "url": "https://rfecc.sa/whats-on/",
-          "domain": "rfecc.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 76
-        },
-        {
-          "id": "ricec-events",
-          "name": "Riyadh International Convention and Exhibition Center",
-          "url": "https://www.ricec.com/",
-          "domain": "ricec.com",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 76
-        },
-        {
-          "id": "dhahran-expo-calendar",
-          "name": "Dhahran Expo Calendar",
-          "url": "https://dhahranexpo.com.sa",
-          "domain": "dhahranexpo.com.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 68
-        },
-        {
-          "id": "saudi-water-authority-events",
-          "name": "Saudi Water Authority Events",
-          "url": "https://www.swa.gov.sa/en/events",
-          "domain": "swa.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 66
-        },
-        {
-          "id": "sdaia-calendar-events",
-          "name": "SDAIA Calendar and Events",
-          "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
-          "domain": "sdaia.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 66
-        }
-      ],
-      "searches": [
-        {
-          "query": "site:rfecc.sa \"Big 5 Construct Saudi\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Arfecc.sa%20%22Big%205%20Construct%20Saudi%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:ricec.com \"Big 5 Construct Saudi\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aricec.com%20%22Big%205%20Construct%20Saudi%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:dhahranexpo.com.sa \"Big 5 Construct Saudi\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Big%205%20Construct%20Saudi%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:swa.gov.sa \"Big 5 Construct Saudi\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aswa.gov.sa%20%22Big%205%20Construct%20Saudi%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:sdaia.gov.sa \"Big 5 Construct Saudi\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Big%205%20Construct%20Saudi%22%20%22Riyadh%22"
-        },
-        {
-          "query": "\"Big 5 Construct Saudi\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Big%205%20Construct%20Saudi%22%20%22Riyadh%22%20official"
-        },
-        {
-          "query": "\"Big 5 Construct Saudi\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Big%205%20Construct%20Saudi%22%20%22Riyadh%22%20organizer"
-        },
-        {
-          "query": "\"Big 5 Construct Saudi\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Big%205%20Construct%20Saudi%22%20%22Riyadh%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
@@ -381,6 +288,99 @@
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
     },
     {
+      "lead_id": "candidate-eye-of-riyadh-events-saudi-wood-expo-2026-20260830-b4d44be4",
+      "title": "Saudi Wood Expo 2026",
+      "city": "Riyadh",
+      "starts_at": "2026-08-30T09:00:00+03:00",
+      "source_label": "Eye of Riyadh Events",
+      "discovery_quality": "strong-lead",
+      "discovery_score": 70,
+      "discovery_notes": "directory-source, saudi-location-signal, large-event-topic",
+      "resolver_priority": 115,
+      "target_sources": [
+        {
+          "id": "rfecc-whats-on",
+          "name": "RFECC What's On",
+          "url": "https://rfecc.sa/whats-on/",
+          "domain": "rfecc.sa",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 76
+        },
+        {
+          "id": "ricec-events",
+          "name": "Riyadh International Convention and Exhibition Center",
+          "url": "https://www.ricec.com/",
+          "domain": "ricec.com",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 76
+        },
+        {
+          "id": "dhahran-expo-calendar",
+          "name": "Dhahran Expo Calendar",
+          "url": "https://dhahranexpo.com.sa",
+          "domain": "dhahranexpo.com.sa",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 68
+        },
+        {
+          "id": "saudi-water-authority-events",
+          "name": "Saudi Water Authority Events",
+          "url": "https://www.swa.gov.sa/en/events",
+          "domain": "swa.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 66
+        },
+        {
+          "id": "sdaia-calendar-events",
+          "name": "SDAIA Calendar and Events",
+          "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
+          "domain": "sdaia.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 66
+        }
+      ],
+      "searches": [
+        {
+          "query": "site:rfecc.sa \"Saudi Wood Expo 2026\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Arfecc.sa%20%22Saudi%20Wood%20Expo%202026%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:ricec.com \"Saudi Wood Expo 2026\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aricec.com%20%22Saudi%20Wood%20Expo%202026%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:dhahranexpo.com.sa \"Saudi Wood Expo 2026\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Saudi%20Wood%20Expo%202026%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:swa.gov.sa \"Saudi Wood Expo 2026\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aswa.gov.sa%20%22Saudi%20Wood%20Expo%202026%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:sdaia.gov.sa \"Saudi Wood Expo 2026\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Saudi%20Wood%20Expo%202026%22%20%22Riyadh%22"
+        },
+        {
+          "query": "\"Saudi Wood Expo 2026\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22Saudi%20Wood%20Expo%202026%22%20%22Riyadh%22%20official"
+        },
+        {
+          "query": "\"Saudi Wood Expo 2026\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22Saudi%20Wood%20Expo%202026%22%20%22Riyadh%22%20organizer"
+        },
+        {
+          "query": "\"Saudi Wood Expo 2026\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22Saudi%20Wood%20Expo%202026%22%20%22Riyadh%22%20tickets"
+        }
+      ],
+      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
+    },
+    {
       "lead_id": "candidate-eye-of-riyadh-events-smart-data-ai-summit-20260826-f9946ea8",
       "title": "Smart Data & AI Summit",
       "city": "Riyadh",
@@ -474,101 +474,8 @@
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
     },
     {
-      "lead_id": "candidate-eventbrite-saudi-family-office-investment-summit-b2b-networking-for-investors-founders-20260902-7b861a03",
-      "title": "Family Office Investment Summit",
-      "city": "Riyadh",
-      "starts_at": "2026-09-02T09:30:00+03:00",
-      "source_label": "Eventbrite Saudi Arabia",
-      "discovery_quality": "strong-lead",
-      "discovery_score": 70,
-      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 107,
-      "target_sources": [
-        {
-          "id": "ricec-events",
-          "name": "Riyadh International Convention and Exhibition Center",
-          "url": "https://www.ricec.com/",
-          "domain": "ricec.com",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 102
-        },
-        {
-          "id": "asharqia-chamber-events",
-          "name": "Asharqia Chamber Events",
-          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
-          "domain": "chamber.org.sa",
-          "trust_level": "official",
-          "source_type": "venue-calendar",
-          "score": 94
-        },
-        {
-          "id": "dhahran-expo-calendar",
-          "name": "Dhahran Expo Calendar",
-          "url": "https://dhahranexpo.com.sa",
-          "domain": "dhahranexpo.com.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 94
-        },
-        {
-          "id": "jcci-events-center",
-          "name": "Jeddah Chamber Exhibitions and Events Center",
-          "url": "https://www.jcci.org.sa/en/المعارض-والفعاليات",
-          "domain": "jcci.org.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 94
-        },
-        {
-          "id": "rfecc-whats-on",
-          "name": "RFECC What's On",
-          "url": "https://rfecc.sa/whats-on/",
-          "domain": "rfecc.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 92
-        }
-      ],
-      "searches": [
-        {
-          "query": "site:ricec.com \"Family Office Investment Summit\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aricec.com%20%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:chamber.org.sa \"Family Office Investment Summit\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Achamber.org.sa%20%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:dhahranexpo.com.sa \"Family Office Investment Summit\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:jcci.org.sa \"Family Office Investment Summit\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ajcci.org.sa%20%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:rfecc.sa \"Family Office Investment Summit\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Arfecc.sa%20%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22"
-        },
-        {
-          "query": "\"Family Office Investment Summit\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22%20official"
-        },
-        {
-          "query": "\"Family Office Investment Summit\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22%20organizer"
-        },
-        {
-          "query": "\"Family Office Investment Summit\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22%20tickets"
-        }
-      ],
-      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
-    },
-    {
-      "lead_id": "candidate-eye-of-riyadh-events-hvac-r-saudi-arabia-20260830-857b2f5b",
-      "title": "HVAC R Saudi Arabia",
+      "lead_id": "candidate-eye-of-riyadh-events-saudi-industrial-series-20260830-c10ad399",
+      "title": "Saudi Industrial Series",
       "city": "Riyadh",
       "starts_at": "2026-08-30T09:00:00+03:00",
       "source_label": "Eye of Riyadh Events",
@@ -625,315 +532,36 @@
       ],
       "searches": [
         {
-          "query": "site:rfecc.sa \"HVAC R Saudi Arabia\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Arfecc.sa%20%22HVAC%20R%20Saudi%20Arabia%22%20%22Riyadh%22"
+          "query": "site:rfecc.sa \"Saudi Industrial Series\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Arfecc.sa%20%22Saudi%20Industrial%20Series%22%20%22Riyadh%22"
         },
         {
-          "query": "site:ricec.com \"HVAC R Saudi Arabia\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aricec.com%20%22HVAC%20R%20Saudi%20Arabia%22%20%22Riyadh%22"
+          "query": "site:ricec.com \"Saudi Industrial Series\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aricec.com%20%22Saudi%20Industrial%20Series%22%20%22Riyadh%22"
         },
         {
-          "query": "site:dhahranexpo.com.sa \"HVAC R Saudi Arabia\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22HVAC%20R%20Saudi%20Arabia%22%20%22Riyadh%22"
+          "query": "site:dhahranexpo.com.sa \"Saudi Industrial Series\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Saudi%20Industrial%20Series%22%20%22Riyadh%22"
         },
         {
-          "query": "site:swa.gov.sa \"HVAC R Saudi Arabia\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aswa.gov.sa%20%22HVAC%20R%20Saudi%20Arabia%22%20%22Riyadh%22"
+          "query": "site:swa.gov.sa \"Saudi Industrial Series\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aswa.gov.sa%20%22Saudi%20Industrial%20Series%22%20%22Riyadh%22"
         },
         {
-          "query": "site:sdaia.gov.sa \"HVAC R Saudi Arabia\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22HVAC%20R%20Saudi%20Arabia%22%20%22Riyadh%22"
+          "query": "site:sdaia.gov.sa \"Saudi Industrial Series\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Saudi%20Industrial%20Series%22%20%22Riyadh%22"
         },
         {
-          "query": "\"HVAC R Saudi Arabia\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22HVAC%20R%20Saudi%20Arabia%22%20%22Riyadh%22%20official"
+          "query": "\"Saudi Industrial Series\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22Saudi%20Industrial%20Series%22%20%22Riyadh%22%20official"
         },
         {
-          "query": "\"HVAC R Saudi Arabia\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22HVAC%20R%20Saudi%20Arabia%22%20%22Riyadh%22%20organizer"
+          "query": "\"Saudi Industrial Series\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22Saudi%20Industrial%20Series%22%20%22Riyadh%22%20organizer"
         },
         {
-          "query": "\"HVAC R Saudi Arabia\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22HVAC%20R%20Saudi%20Arabia%22%20%22Riyadh%22%20tickets"
-        }
-      ],
-      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
-    },
-    {
-      "lead_id": "candidate-eye-of-riyadh-events-saudi-fm-clean-20260830-cbe48152",
-      "title": "Saudi FM & Clean",
-      "city": "Riyadh",
-      "starts_at": "2026-08-30T09:00:00+03:00",
-      "source_label": "Eye of Riyadh Events",
-      "discovery_quality": "strong-lead",
-      "discovery_score": 70,
-      "discovery_notes": "directory-source, saudi-location-signal, large-event-topic",
-      "resolver_priority": 105,
-      "target_sources": [
-        {
-          "id": "rfecc-whats-on",
-          "name": "RFECC What's On",
-          "url": "https://rfecc.sa/whats-on/",
-          "domain": "rfecc.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 58
-        },
-        {
-          "id": "ricec-events",
-          "name": "Riyadh International Convention and Exhibition Center",
-          "url": "https://www.ricec.com/",
-          "domain": "ricec.com",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 58
-        },
-        {
-          "id": "dhahran-expo-calendar",
-          "name": "Dhahran Expo Calendar",
-          "url": "https://dhahranexpo.com.sa",
-          "domain": "dhahranexpo.com.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 50
-        },
-        {
-          "id": "saudi-water-authority-events",
-          "name": "Saudi Water Authority Events",
-          "url": "https://www.swa.gov.sa/en/events",
-          "domain": "swa.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 48
-        },
-        {
-          "id": "sdaia-calendar-events",
-          "name": "SDAIA Calendar and Events",
-          "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
-          "domain": "sdaia.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 48
-        }
-      ],
-      "searches": [
-        {
-          "query": "site:rfecc.sa \"Saudi FM & Clean\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Arfecc.sa%20%22Saudi%20FM%20%26%20Clean%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:ricec.com \"Saudi FM & Clean\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aricec.com%20%22Saudi%20FM%20%26%20Clean%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:dhahranexpo.com.sa \"Saudi FM & Clean\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Saudi%20FM%20%26%20Clean%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:swa.gov.sa \"Saudi FM & Clean\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aswa.gov.sa%20%22Saudi%20FM%20%26%20Clean%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:sdaia.gov.sa \"Saudi FM & Clean\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Saudi%20FM%20%26%20Clean%22%20%22Riyadh%22"
-        },
-        {
-          "query": "\"Saudi FM & Clean\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Saudi%20FM%20%26%20Clean%22%20%22Riyadh%22%20official"
-        },
-        {
-          "query": "\"Saudi FM & Clean\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Saudi%20FM%20%26%20Clean%22%20%22Riyadh%22%20organizer"
-        },
-        {
-          "query": "\"Saudi FM & Clean\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Saudi%20FM%20%26%20Clean%22%20%22Riyadh%22%20tickets"
-        }
-      ],
-      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
-    },
-    {
-      "lead_id": "candidate-eventbrite-saudi-family-office-investment-meeting-riyadh-registration-fee-usd-580-20260902-82923462",
-      "title": "Family Office Investment Meeting",
-      "city": "Riyadh",
-      "starts_at": "2026-09-02T09:00:00+03:00",
-      "source_label": "Eventbrite Saudi Arabia",
-      "discovery_quality": "strong-lead",
-      "discovery_score": 70,
-      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 97,
-      "target_sources": [
-        {
-          "id": "saudi-contractors-authority-events",
-          "name": "Saudi Contractors Authority Events",
-          "url": "https://www.sca.gov.sa/",
-          "domain": "sca.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 64
-        },
-        {
-          "id": "asharqia-chamber-events",
-          "name": "Asharqia Chamber Events",
-          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
-          "domain": "chamber.org.sa",
-          "trust_level": "official",
-          "source_type": "venue-calendar",
-          "score": 56
-        },
-        {
-          "id": "invest-saudi-events",
-          "name": "Invest Saudi Events",
-          "url": "https://www.investsaudi.sa/events",
-          "domain": "investsaudi.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 56
-        },
-        {
-          "id": "jcci-events-center",
-          "name": "Jeddah Chamber Exhibitions and Events Center",
-          "url": "https://www.jcci.org.sa/en/المعارض-والفعاليات",
-          "domain": "jcci.org.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 56
-        },
-        {
-          "id": "jouf-chamber-events",
-          "name": "Jouf Chamber Events",
-          "url": "https://ajcci.org.sa/event/",
-          "domain": "ajcci.org.sa",
-          "trust_level": "official",
-          "source_type": "venue-calendar",
-          "score": 56
-        }
-      ],
-      "searches": [
-        {
-          "query": "site:sca.gov.sa \"Family Office Investment Meeting\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Asca.gov.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:chamber.org.sa \"Family Office Investment Meeting\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Achamber.org.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:investsaudi.sa \"Family Office Investment Meeting\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ainvestsaudi.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:jcci.org.sa \"Family Office Investment Meeting\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ajcci.org.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:ajcci.org.sa \"Family Office Investment Meeting\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aajcci.org.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22"
-        },
-        {
-          "query": "\"Family Office Investment Meeting\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20official"
-        },
-        {
-          "query": "\"Family Office Investment Meeting\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20organizer"
-        },
-        {
-          "query": "\"Family Office Investment Meeting\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20tickets"
-        }
-      ],
-      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
-    },
-    {
-      "lead_id": "candidate-eventbrite-saudi-sucession-planning-program-20260903-d2b52d25",
-      "title": "Sucession Planning Program",
-      "city": "Riyadh",
-      "starts_at": "2026-09-03T10:00:00+03:00",
-      "source_label": "Eventbrite Saudi Arabia",
-      "discovery_quality": "strong-lead",
-      "discovery_score": 70,
-      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 97,
-      "target_sources": [
-        {
-          "id": "code-mcit-programs",
-          "name": "CODE MCIT Programs",
-          "url": "https://code.mcit.gov.sa/en/our-programs",
-          "domain": "code.mcit.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 28
-        },
-        {
-          "id": "cst-events-news",
-          "name": "CST Events and News",
-          "url": "https://www.cst.gov.sa/en",
-          "domain": "cst.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 28
-        },
-        {
-          "id": "diriyah-season",
-          "name": "Diriyah Season",
-          "url": "https://diriyahseason.sa/en",
-          "domain": "diriyahseason.sa",
-          "trust_level": "official",
-          "source_type": "organizer-calendar",
-          "score": 28
-        },
-        {
-          "id": "enjoy-saudi-events",
-          "name": "Enjoy Saudi Events",
-          "url": "https://enjoy.sa/en/events",
-          "domain": "enjoy.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 28
-        },
-        {
-          "id": "future-skills-catalog",
-          "name": "Future Skills MCIT Catalogue",
-          "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
-          "domain": "futureskills.mcit.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 28
-        }
-      ],
-      "searches": [
-        {
-          "query": "site:code.mcit.gov.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Acode.mcit.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:cst.gov.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Acst.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:diriyahseason.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Adiriyahseason.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:enjoy.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aenjoy.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:futureskills.mcit.gov.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Afutureskills.mcit.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
-        },
-        {
-          "query": "\"Sucession Planning Program\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20official"
-        },
-        {
-          "query": "\"Sucession Planning Program\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20organizer"
-        },
-        {
-          "query": "\"Sucession Planning Program\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20tickets"
+          "query": "\"Saudi Industrial Series\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22Saudi%20Industrial%20Series%22%20%22Riyadh%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."

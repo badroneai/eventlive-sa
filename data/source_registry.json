@@ -375,6 +375,13 @@
       "id": "platinumlist-jeddah",
       "name": "Platinumlist Jeddah Calendar",
       "url": "https://jeddah.platinumlist.net/calendar/this-weekend",
+      "collector_pages": [
+        "https://jeddah.platinumlist.net/ar/calendar/today",
+        "https://jeddah.platinumlist.net/ar/calendar/this-weekend",
+        "https://jeddah.platinumlist.net/ar/calendar/this-month",
+        "https://jeddah.platinumlist.net/ar/calendar/all",
+        "https://jeddah.platinumlist.net/ar/event"
+      ],
       "owner": "Platinumlist",
       "source_type": "ticketing-marketplace",
       "trust_level": "official-marketplace",
@@ -391,9 +398,95 @@
       ],
       "fetch_method": "html-listing",
       "intake_policy": "candidate-only",
-      "evidence_required": "Platinumlist event URL and organizer/venue confirmation when available.",
+      "evidence_required": "Platinumlist event URL plus official organizer, venue, season, or authority confirmation before catalog promotion.",
       "candidate_gate": "duplicate-review",
-      "notes": "Useful Jeddah-specific supplement; dedupe against webook, Hala Yalla, and official pages."
+      "notes": "Useful Jeddah-specific supplement and SERP benchmark. Direct public fetch can redirect through Queue-it/Cloudflare protection, so keep as discovery/partnership evidence only; do not bypass protection or auto-publish from this source."
+    },
+    {
+      "id": "platinumlist-riyadh",
+      "name": "Platinumlist Riyadh Calendar",
+      "url": "https://riyadh.platinumlist.net/ar/calendar/today",
+      "collector_pages": [
+        "https://riyadh.platinumlist.net/ar/calendar/today",
+        "https://riyadh.platinumlist.net/ar/calendar/this-weekend",
+        "https://riyadh.platinumlist.net/ar/calendar/this-month",
+        "https://riyadh.platinumlist.net/ar/calendar/all"
+      ],
+      "owner": "Platinumlist",
+      "source_type": "ticketing-marketplace",
+      "trust_level": "official-marketplace",
+      "priority": 70,
+      "coverage": "Riyadh ticketed events, today/weekend/month demand pages, entertainment, comedy, sports, concerts, shows, experiences, and local activities.",
+      "cities": [
+        "Riyadh"
+      ],
+      "categories": [
+        "tickets",
+        "entertainment",
+        "sports",
+        "concerts",
+        "shows",
+        "experiences"
+      ],
+      "fetch_method": "search-page",
+      "intake_policy": "candidate-only",
+      "evidence_required": "Platinumlist Riyadh event URL plus official organizer, venue, season, or authority confirmation before catalog promotion.",
+      "candidate_gate": "duplicate-review",
+      "notes": "SERP and UX benchmark for time-intent landing pages. Direct public fetch currently redirects through Queue-it/Cloudflare protection, so keep as discovery/partnership evidence only; do not bypass protection or auto-publish from this source."
+    },
+    {
+      "id": "platinumlist-saudi-city-network",
+      "name": "Platinumlist Saudi City Network",
+      "url": "https://platinumlist.net/sitemap",
+      "collector_pages": [
+        "https://platinumlist.net/sitemap",
+        "https://abha.platinumlist.net/",
+        "https://al-ahsa.platinumlist.net/",
+        "https://albaha.platinumlist.net/",
+        "https://aljawf.platinumlist.net/",
+        "https://aljubail.platinumlist.net/",
+        "https://alkharj.platinumlist.net/",
+        "https://al-qatif.platinumlist.net/",
+        "https://alula.platinumlist.net/",
+        "https://aseer-experiences.platinumlist.net/",
+        "https://buraydah.platinumlist.net/",
+        "https://dammam.platinumlist.net/",
+        "https://dhahran.platinumlist.net/",
+        "https://esports-world-cup.platinumlist.net/",
+        "https://hail.platinumlist.net/",
+        "https://jeddah.platinumlist.net/",
+        "https://jizan.platinumlist.net/",
+        "https://khobar.platinumlist.net/",
+        "https://madina.platinumlist.net/",
+        "https://makkah.platinumlist.net/",
+        "https://riyadh.platinumlist.net/",
+        "https://tabuk.platinumlist.net/",
+        "https://taif.platinumlist.net/",
+        "https://yanbu.platinumlist.net/"
+      ],
+      "owner": "Platinumlist",
+      "source_type": "ticketing-marketplace",
+      "trust_level": "official-marketplace",
+      "priority": 72,
+      "coverage": "Saudi city and season subdomains discovered from Platinumlist sitemap for discovery, taxonomy, and city gap analysis.",
+      "cities": [
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "tickets",
+        "entertainment",
+        "sports",
+        "concerts",
+        "shows",
+        "experiences",
+        "business",
+        "gaming"
+      ],
+      "fetch_method": "sitemap-pages",
+      "intake_policy": "candidate-only",
+      "evidence_required": "City/event URL plus official organizer, venue, season, or authority confirmation before catalog promotion.",
+      "candidate_gate": "source-evidence",
+      "notes": "Use as a national coverage radar and partnership/API candidate. It must not become a direct auto-publish collector because marketplace pages can include user/commercial listings, recurring attractions, and Queue-it/Cloudflare-protected routes."
     },
     {
       "id": "tuwaiq-academy-bootcamps",
@@ -1821,6 +1914,52 @@
       "evidence_required": "Najran Chamber official event/news record with title, date, venue or remote link, and chamber context before candidate promotion.",
       "candidate_gate": "source-evidence",
       "notes": "Added 2026-07-05 after web verification of the official site showing dated workshop/news cards. Start as evidence monitor and build extractor only after stable detail routes are identified."
+    },
+    {
+      "id": "my-gov-sa-events",
+      "name": "GOV.SA National Platform Events",
+      "url": "https://my.gov.sa/ar/events",
+      "collector_pages": [
+        "https://my.gov.sa/ar/events",
+        "https://my.gov.sa/en/events",
+        "https://my.gov.sa/ar/events/{id}",
+        "https://my.gov.sa/en/events/{id}",
+        "https://my.gov.sa/en/services/20045",
+        "https://my.gov.sa/en/services/22331",
+        "https://my.gov.sa/en/services/2531944",
+        "https://my.gov.sa/en/services/304535",
+        "https://my.gov.sa/en/services/304560",
+        "https://dga.gov.sa/en/listing-services/API-Inventory",
+        "https://dga.gov.sa/en/listing-services/platforms-management",
+        "https://dga.gov.sa/en/e-participation/open-data",
+        "https://login.nec.gov.sa/",
+        "https://login.nec.gov.sa/app/agreements",
+        "https://eservices-service.nec.gov.sa/",
+        "https://istitlaa.ncc.gov.sa/ar/Pages/default.aspx",
+        "https://istitlaa.ncc.gov.sa/ar/search/Pages/projects.aspx",
+        "https://web.archive.org/cdx?url=my.gov.sa/en/events/*",
+        "https://web.archive.org/cdx?url=my.gov.sa/ar/events/*"
+      ],
+      "owner": "Digital Government Authority / GOV.SA",
+      "source_type": "national-calendar",
+      "trust_level": "official",
+      "priority": 73,
+      "coverage": "Government platform index for Saudi public events, government-entity events, public consultations, ministries, organizer contact fields, date windows, locations, registration links, and related official detail pages.",
+      "cities": [
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "government",
+        "public events",
+        "public consultation",
+        "official index",
+        "ministries"
+      ],
+      "fetch_method": "partnership-api",
+      "intake_policy": "partnership-needed",
+      "evidence_required": "GOV.SA event detail URL such as https://my.gov.sa/ar/events/{id}, indexed search evidence, or an approved GOV.SA/NEC feed. Do not rely on direct scraping of the protected listing page.",
+      "candidate_gate": "source-evidence",
+      "notes": "Added 2026-07-09 after probing https://my.gov.sa/ar/events. Direct curl and browser access returned a Cloudflare challenge, so this is not promotable for automated scraping. Public search indexes expose detail URLs and useful fields including title, organizer, date range, location/contact, category, description, image, and registration/share links. Deeper recon found useful non-scraping lanes: Wayback archived-page radar with embedded Next/Drupal payload fields, DGA open-data/API governance, Istitlaa public-consultation confirmation links, and NEC National Calendar services as the likely authoritative backend lane. Second pass found the NEC Angular app catalog includes Add Event, View National Calendar Events, and National Calendar Dashboard; View National Calendar Events is the best export/API partnership ask. Treat GOV.SA as a partnership/evidence source and use indexed or archived detail pages only for manual review or official-source corroboration. See reports/mygov-platform-recon-2026-07-09.md, reports/mygov-platform-recon-second-pass-2026-07-09.md, and reports/mygov-wayback-radar.md."
     }
   ]
 }

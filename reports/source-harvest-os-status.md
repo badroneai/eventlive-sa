@@ -1,17 +1,17 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-07-08T10:10:06.437Z
+- Generated at: 2026-07-09T12:00:15.495Z
 - Status: PASS
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
-- Sources: 66
+- Sources: 69
 - Candidates: 184
 - Matched candidates: 157
 - Auto-publish sources: 13
-- Candidate-only sources: 8
-- Partnership-required sources: 3
+- Candidate-only sources: 10
+- Partnership-required sources: 4
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |
@@ -81,3 +81,6 @@
 | Jazan Chamber Events | manual_review | official | duplicate-review |
 | Hail Chamber Events | manual_review | official | source-evidence |
 | Najran Chamber Events | manual_review | official | source-evidence |
+| Platinumlist Riyadh Calendar | candidate_only | official-marketplace | duplicate-review |
+| Platinumlist Saudi City Network | candidate_only | official-marketplace | source-evidence |
+| GOV.SA National Platform Events | partnership_required | official | source-evidence |

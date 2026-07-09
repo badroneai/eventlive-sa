@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T10:10:26.415Z",
+  "generated_at": "2026-07-09T12:16:14.539Z",
   "platform": "EventLive",
   "domain": "eventme.live",
   "intent": "eventlive-owner-status",
@@ -7,7 +7,12 @@
     "provider": "plausible",
     "domain": "eventme.live",
     "status": "PASS",
+    "instrumentation_status": "PASS",
     "dashboard_url": "https://plausible.io/eventme.live",
+    "dashboard_login_url": "https://plausible.io/login?return_to=%2Feventme.live",
+    "dashboard_status": "NEEDS_PROVIDER_SETUP",
+    "dashboard_setup_required": true,
+    "dashboard_note": "إذا ظهرت صفحة 404 في Plausible فهذا يعني غالبا أن موقع eventme.live لم يضف بعد داخل Plausible أو أنك لست داخل حساب مالك اللوحة. التتبع مزروع في الموقع، لكن أرقام الزيارات تحتاج تفعيل اللوحة من مزود التحليلات.",
     "tracked_events": [
       "page_view",
       "search_used",
@@ -30,11 +35,11 @@
       "pii": false,
       "owner_pages_excluded": true
     },
-    "note": "أرقام الزوار الحقيقية تقرأ من لوحة مزود التحليلات. هذه الصفحة تثبت أن التتبع مزروع وتعرض الرابط التشغيلي."
+    "note": "هذه الصفحة تثبت أن التتبع مزروع في الصفحات العامة. أرقام الزوار الحقيقية تظهر بعد تفعيل لوحة مزود التحليلات للدومين."
   },
   "source_sync": {
-    "last_run_at": "2026-07-08T10:10:05.839Z",
-    "registered_sources": 66,
+    "last_run_at": "2026-07-09T11:59:57.583Z",
+    "registered_sources": 69,
     "attempted_sources": 34,
     "productive_sources": 15,
     "collector_errors": 8,
@@ -49,8 +54,8 @@
   "catalog": {
     "public_events": 449,
     "live_ready": 52,
-    "ended_events": 294,
-    "upcoming_or_ongoing": 155
+    "ended_events": 295,
+    "upcoming_or_ongoing": 154
   },
   "links": {
     "analytics_dashboard": "https://plausible.io/eventme.live",

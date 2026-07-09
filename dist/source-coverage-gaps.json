@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T10:10:26.415Z",
+  "generated_at": "2026-07-09T12:16:14.539Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-source-coverage-gaps",
@@ -10,10 +10,10 @@
     "categories": 14,
     "weak_categories": 2,
     "source_risks": 16,
-    "active_events": 155,
-    "ended_events": 294,
+    "active_events": 154,
+    "ended_events": 295,
     "active_source_images": 123,
-    "active_generated_covers": 32,
+    "active_generated_covers": 31,
     "media_gaps": 24
   },
   "cities": [
@@ -435,16 +435,16 @@
       "key": "Saudi Arabia",
       "label": "السعودية",
       "total": 21,
-      "active": 15,
+      "active": 14,
       "upcoming": 2,
       "ongoing": 12,
-      "live": 1,
-      "ended": 6,
+      "live": 0,
+      "ended": 7,
       "live_ready": 0,
       "source_count": 6,
       "source_images": 14,
       "generated_covers": 7,
-      "registered_source_count": 59,
+      "registered_source_count": 61,
       "coverage_score": 82,
       "severity": "healthy",
       "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
@@ -498,7 +498,7 @@
       "source_count": 17,
       "source_images": 98,
       "generated_covers": 105,
-      "registered_source_count": 32,
+      "registered_source_count": 33,
       "coverage_score": 100,
       "severity": "healthy",
       "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
@@ -594,11 +594,11 @@
       "key": "technology training",
       "label": "تدريب تقني",
       "total": 27,
-      "active": 13,
+      "active": 12,
       "upcoming": 9,
       "ongoing": 3,
-      "live": 1,
-      "ended": 14,
+      "live": 0,
+      "ended": 15,
       "live_ready": 0,
       "source_count": 4,
       "source_images": 16,
@@ -770,7 +770,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:1",
-      "next_action": "Zero-yield for 31 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 32 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "monshaat-events",
@@ -788,7 +788,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "no rows detected by extractor",
-      "next_action": "Zero-yield for 31 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 32 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "ithra-events",
@@ -797,7 +797,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "date/content signals exist but extractor returned no complete future rows",
-      "next_action": "Zero-yield for 31 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 32 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "sdaia-academy-programs",
@@ -815,7 +815,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:5",
-      "next_action": "Zero-yield for 31 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 32 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "jcci-events-center",
@@ -824,7 +824,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:13",
-      "next_action": "Zero-yield for 31 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 32 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "saudi-pro-league-fixtures",
@@ -833,7 +833,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:100",
-      "next_action": "Zero-yield for 31 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 32 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "saudi-space-agency-events",
@@ -842,7 +842,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:14",
-      "next_action": "Zero-yield for 16 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 17 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "moc-cultural-subportals",
@@ -869,7 +869,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:10",
-      "next_action": "Zero-yield for 25 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 26 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "qassim-chamber-events",
@@ -887,26 +887,10 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:5",
-      "next_action": "Zero-yield for 25 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 26 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     }
   ],
   "media_gaps": [
-    {
-      "id": "event-application-deadline-2030-leaders",
-      "title": "2030 Leaders",
-      "city": "السعودية",
-      "source_label": "Misk Hub Programs",
-      "source_url": "https://hub.misk.org.sa/programs/leadership/2030-leaders/",
-      "source_host": "hub.misk.org.sa",
-      "image_candidate_url": "",
-      "image_candidate_host": "",
-      "failure_kind": "",
-      "failure_reason": "",
-      "coverage_score": 12,
-      "reason": "لا توجد صورة رسمية مرشحة من صفحة المصدر",
-      "next_action": "افتح صفحة المصدر بمتصفح الجلب واستخرج صورة hero أو og:image صالحة.",
-      "detail_url": "./events/event-application-deadline-2030-leaders.html"
-    },
     {
       "id": "event-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة",
       "title": "احتياطات الأمان عند استخدام مبيدات آفات الصحة العامة",
@@ -1274,6 +1258,22 @@
       "reason": "تعذر تخزين الصورة: tls-certificate",
       "next_action": "جرّب مرآة المصدر أو رابط CDN بديل من الصفحة نفسها، ولا تتجاهل فحص الشهادة في النشر العام.",
       "detail_url": "./events/event-natrual-expo.html"
+    },
+    {
+      "id": "event-saudi-logistic-038-warehousing-expo",
+      "title": "Saudi Logistic & Warehousing Expo",
+      "city": "الرياض",
+      "source_label": "RFECC What's On",
+      "source_url": "https://rfecc.sa/events/saudi-logistic-warehousing-expo/",
+      "source_host": "rfecc.sa",
+      "image_candidate_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122220/images-5.jpg",
+      "image_candidate_host": "cdn.rfecc.sa",
+      "failure_kind": "tls-certificate",
+      "failure_reason": "certificate has expired",
+      "coverage_score": 18,
+      "reason": "تعذر تخزين الصورة: tls-certificate",
+      "next_action": "جرّب مرآة المصدر أو رابط CDN بديل من الصفحة نفسها، ولا تتجاهل فحص الشهادة في النشر العام.",
+      "detail_url": "./events/event-saudi-logistic-038-warehousing-expo.html"
     }
   ],
   "priority_queue": [
@@ -1302,7 +1302,7 @@
       "label": "Experience AlUla Events",
       "coverage_score": 0,
       "reason": "past-date:1",
-      "next_action": "Zero-yield for 31 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 32 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "kind": "source",
@@ -1406,8 +1406,8 @@
     {
       "kind": "media",
       "kind_label": "صورة",
-      "key": "event-application-deadline-2030-leaders",
-      "label": "2030 Leaders",
+      "key": "event-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة",
+      "label": "احتياطات الأمان عند استخدام مبيدات آفات الصحة العامة",
       "coverage_score": 12,
       "reason": "لا توجد صورة رسمية مرشحة من صفحة المصدر",
       "next_action": "افتح صفحة المصدر بمتصفح الجلب واستخرج صورة hero أو og:image صالحة."
@@ -1415,8 +1415,8 @@
     {
       "kind": "media",
       "kind_label": "صورة",
-      "key": "event-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة",
-      "label": "احتياطات الأمان عند استخدام مبيدات آفات الصحة العامة",
+      "key": "event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م",
+      "label": "أسبوع العقار والمقاولات 12- 16 يوليو 2026م",
       "coverage_score": 12,
       "reason": "لا توجد صورة رسمية مرشحة من صفحة المصدر",
       "next_action": "افتح صفحة المصدر بمتصفح الجلب واستخرج صورة hero أو og:image صالحة."

@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-08T10:10:26.415Z",
+  "generated_at": "2026-07-09T12:16:14.539Z",
   "platform": "EventLive",
   "feeds": [
     {
       "slug": "all",
       "title": "كل فعاليات السعودية | EventLive",
       "description": "تغذية دورية للفعاليات القادمة والجارية في السعودية من EventLive.",
-      "count": 155,
+      "count": 154,
       "ics_url": "./feeds/all.ics",
       "rss_url": "./feeds/all.xml",
       "json_url": "./feeds/all.json"
@@ -24,7 +24,7 @@
       "slug": "city-saudi-arabia",
       "title": "فعاليات السعودية | EventLive",
       "description": "تغذية فعاليات السعودية القادمة والجارية من EventLive.",
-      "count": 15,
+      "count": 14,
       "ics_url": "./feeds/city-saudi-arabia.ics",
       "rss_url": "./feeds/city-saudi-arabia.xml",
       "json_url": "./feeds/city-saudi-arabia.json"
@@ -231,7 +231,7 @@
       "slug": "category-technology-training",
       "title": "تدريب تقني | EventLive",
       "description": "تغذية فعاليات تصنيف تدريب تقني القادمة والجارية من EventLive.",
-      "count": 13,
+      "count": 12,
       "ics_url": "./feeds/category-technology-training.ics",
       "rss_url": "./feeds/category-technology-training.xml",
       "json_url": "./feeds/category-technology-training.json"
@@ -303,7 +303,7 @@
       "slug": "for-job-seekers",
       "title": "باحثون عن عمل | EventLive",
       "description": "تغذية فعاليات مناسبة لفئة باحثون عن عمل من EventLive.",
-      "count": 10,
+      "count": 9,
       "ics_url": "./feeds/for-job-seekers.ics",
       "rss_url": "./feeds/for-job-seekers.xml",
       "json_url": "./feeds/for-job-seekers.json"
@@ -312,7 +312,7 @@
       "slug": "for-professionals",
       "title": "موظفون ومهنيون | EventLive",
       "description": "تغذية فعاليات مناسبة لفئة موظفون ومهنيون من EventLive.",
-      "count": 83,
+      "count": 82,
       "ics_url": "./feeds/for-professionals.ics",
       "rss_url": "./feeds/for-professionals.xml",
       "json_url": "./feeds/for-professionals.json"
@@ -330,7 +330,7 @@
       "slug": "for-skilled-trades",
       "title": "مهاريون وحرفيون | EventLive",
       "description": "تغذية فعاليات مناسبة لفئة مهاريون وحرفيون من EventLive.",
-      "count": 32,
+      "count": 31,
       "ics_url": "./feeds/for-skilled-trades.ics",
       "rss_url": "./feeds/for-skilled-trades.xml",
       "json_url": "./feeds/for-skilled-trades.json"
@@ -339,7 +339,7 @@
       "slug": "for-entrepreneurs",
       "title": "رواد أعمال | EventLive",
       "description": "تغذية فعاليات مناسبة لفئة رواد أعمال من EventLive.",
-      "count": 22,
+      "count": 21,
       "ics_url": "./feeds/for-entrepreneurs.ics",
       "rss_url": "./feeds/for-entrepreneurs.xml",
       "json_url": "./feeds/for-entrepreneurs.json"

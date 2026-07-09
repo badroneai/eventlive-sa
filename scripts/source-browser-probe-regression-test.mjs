@@ -65,6 +65,14 @@ assert.equal(classifyProbe({
   network: []
 }), 'blocked-or-protected');
 
+assert.equal(classifyProbe({
+  status: 200,
+  html: '<html><body>Saudi queue by Queue-it</body></html>',
+  pageText: 'General Queue Page KSA protectsaudi',
+  links: [{ href: 'https://queue.platinumlist.net/?c=platinumlist&e=protectsaudi', text: 'Queue' }],
+  network: []
+}), 'blocked-or-protected');
+
 assert.equal(classifyProbe({ policy_skipped: true }), 'policy-skipped-partnership');
 
 const markdown = renderMarkdown({

@@ -107,10 +107,24 @@ function blockedReason(status, html) {
   const title = titleFromHtml(html);
   if (status === 403) return 'http-403';
   if (/request rejected/i.test(title) || /request rejected/i.test(html)) return 'request-rejected';
+  if (/queue-it|queueit|protectsaudi|general queue page|waiting room|queue\.platinumlist\.net/i.test(`${title}\n${html}`)) return 'queue-it-protection';
   if (/just a moment|checking your browser|cf-browser-verification/i.test(title) || /cloudflare/i.test(html.slice(0, 5000))) {
     return 'bot-protection';
   }
   return '';
+}
+
+function fetchErrorBlockedReason(error = {}, source = {}) {
+  const message = [
+    error?.message,
+    error?.cause?.message,
+    error?.cause?.cause?.message,
+    error?.code,
+    String(error || '')
+  ].filter(Boolean).join(' ');
+  const haystack = `${message} ${source?.url || ''} ${source?.collector_url || ''}`;
+  if (/redirect count exceeded/i.test(message) && /platinumlist|queue/i.test(haystack)) return 'queue-it-protection';
+  return error.name === 'AbortError' ? 'timeout' : message;
 }
 
 function scoreSignals(signals, source) {
@@ -232,7 +246,7 @@ async function main() {
         content_type: '',
         bytes: 0,
         title: '',
-        blocked_reason: error.name === 'AbortError' ? 'timeout' : error.message,
+        blocked_reason: fetchErrorBlockedReason(error, source),
         structured_scripts: 0,
         structured_events: 0,
         google_calendar_links: 0,

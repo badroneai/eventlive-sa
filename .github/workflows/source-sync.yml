@@ -69,6 +69,8 @@ jobs:
             data/event_image_cache_manifest.json \
             reports/source-*.json \
             reports/source-*.md \
+            reports/mygov-*.json \
+            reports/mygov-*.md \
             reports/event-image-cache-report.json \
             reports/event-image-cache-report.md \
             reports/*-enrichment-report.json \
@@ -93,6 +95,9 @@ jobs:
             reports/source-*.md
             reports/source-*.json
             reports/source-*.html
+            reports/mygov-*.md
+            reports/mygov-*.json
+            data/raw/mygov-wayback-radar/**
             data/source_candidates.json
             data/source_run_state.json
             data/events_catalog.json

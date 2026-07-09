@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-08T10:10:26.415Z",
+  "generated_at": "2026-07-09T12:16:14.539Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "categories_count": 12,
   "totals": {
     "events": 449,
-    "upcoming_or_active": 155,
-    "ended": 294,
+    "upcoming_or_active": 154,
+    "ended": 295,
     "live_ready": 52
   },
   "categories": [
@@ -255,8 +255,8 @@
       "label": "تدريب تقني",
       "url": "./categories/technology-training.html",
       "total_events": 27,
-      "upcoming_or_active": 13,
-      "ended": 14,
+      "upcoming_or_active": 12,
+      "ended": 15,
       "live_ready": 0,
       "sources": [
         "Future Skills MCIT Catalogue",

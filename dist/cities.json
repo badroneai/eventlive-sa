@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-08T10:10:26.415Z",
+  "generated_at": "2026-07-09T12:16:14.539Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "cities_count": 19,
   "totals": {
     "events": 449,
-    "upcoming_or_active": 155,
-    "ended": 294,
+    "upcoming_or_active": 154,
+    "ended": 295,
     "live_ready": 52
   },
   "cities": [
@@ -93,8 +93,8 @@
       "label": "السعودية",
       "url": "./cities/saudi-arabia.html",
       "total_events": 21,
-      "upcoming_or_active": 15,
-      "ended": 6,
+      "upcoming_or_active": 14,
+      "ended": 7,
       "live_ready": 0,
       "sources": [
         "CODE MCIT Programs",

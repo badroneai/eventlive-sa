@@ -18,6 +18,7 @@ function lastStepIndex(name) {
 
 for (const name of [
   'sources:collect',
+  'sources:radars',
   'sources:ops',
   'sources:verify',
   'sources:auto-publish',
@@ -35,6 +36,9 @@ for (const name of [
 }
 
 assert.ok(stepIndex('sources:collect') < stepIndex('sources:auto-publish'), 'source collection must happen before auto-publish');
+assert.ok(stepIndex('sources:probe') < stepIndex('sources:radars'), 'source radars must run after the general source probe');
+assert.ok(stepIndex('sources:radars') < stepIndex('sources:plan'), 'source plan must include the latest radar evidence');
+assert.ok(stepIndex('sources:radars') < stepIndex('sources:collect'), 'source radars must refresh evidence before collection/ops reporting');
 assert.ok(stepIndex('sources:collect') < stepIndex('sources:ops'), 'source ops must inspect collected candidates before secondary verification');
 assert.ok(stepIndex('sources:ops') < stepIndex('sources:verify'), 'secondary verification must use the latest source ops matching report');
 assert.ok(stepIndex('sources:verify') < stepIndex('sources:auto-publish'), 'secondary verification must run before auto-publish');
