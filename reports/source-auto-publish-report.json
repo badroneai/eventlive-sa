@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-07-09T15:43:04.593Z",
+  "published_at": "2026-07-09T20:13:09.090Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -7,21 +7,16 @@
   "candidates_seen": 193,
   "totals": {
     "candidates_seen": 193,
-    "published": 2,
-    "linked_existing": 162,
+    "published": 1,
+    "linked_existing": 163,
     "blocked": 29,
     "reconciled": 164
   },
   "published": [
     {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45",
-      "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-8",
+      "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-9",
       "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco-20260907-80f1dc55",
-      "event_id": "event-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco",
-      "title": "The KAUST Imaging and Characterization Core Lab presents: AI for Microscopy Workshop"
     }
   ],
   "linked_existing": [
@@ -659,6 +654,12 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc-20260906-cb343b82",
       "event_id": "event-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc",
       "title": "معسكر إدارة الحوكمة والمخاطر والامتثال GRC",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-saudi-university-events-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco-20260907-80f1dc55",
+      "event_id": "event-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco",
+      "title": "The KAUST Imaging and Characterization Core Lab presents: AI for Microscopy Workshop",
       "reason": "already linked to catalog event"
     },
     {

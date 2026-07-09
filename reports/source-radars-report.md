@@ -1,6 +1,6 @@
 # EventLive Source Radars
 
-Generated at: 2026-07-09T15:33:37.404Z
+Generated at: 2026-07-09T20:03:56.240Z
 
 ## Policy
 
@@ -19,5 +19,5 @@ Generated at: 2026-07-09T15:33:37.404Z
 
 | Radar | Status | Duration | Policy | Reports |
 | --- | --- | --- | --- | --- |
-| Strategic Platform Source Radar | ok | 49s | source-evidence; API-surface mapping; no auto-publish | reports/source-strategic-platform-radar.json, reports/source-strategic-platform-radar.md |
-| GOV.SA / NEC Wayback Radar | ok | 46s | source-evidence; no auto-publish | reports/mygov-wayback-radar.json, reports/mygov-wayback-radar.md |
+| Strategic Platform Source Radar | ok | 46s | source-evidence; API-surface mapping; no auto-publish | reports/source-strategic-platform-radar.json, reports/source-strategic-platform-radar.md |
+| GOV.SA / NEC Wayback Radar | ok | 30s | source-evidence; no auto-publish | reports/mygov-wayback-radar.json, reports/mygov-wayback-radar.md |

@@ -1,7 +1,7 @@
 {
   "schema": "eventlive.source-browser-probe-checkpoint.v1",
-  "checkpointed_at": "2026-07-09T15:38:52.498Z",
-  "generated_at": "2026-07-09T15:37:21.336Z",
+  "checkpointed_at": "2026-07-09T20:08:48.045Z",
+  "generated_at": "2026-07-09T20:07:21.885Z",
   "source_registry": "data/source_registry.json",
   "output_dir": "data/raw/browser-probes",
   "sources_planned": 8,
@@ -21,8 +21,8 @@
     "misk-hub-events",
     "jcci-events-center",
     "saudi-pro-league-fixtures",
-    "saudi-space-agency-events",
-    "makkah-chamber-events"
+    "makkah-chamber-events",
+    "abha-chamber-events"
   ],
   "sources": [
     {
@@ -34,14 +34,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 7732,
+      "duration_ms": 7215,
       "classification": "browser-network-api",
       "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
       "title": "Events",
       "text_bytes": 2679,
-      "html_bytes": 816010,
-      "html_snapshot": "data/raw/browser-probes/experience-alula-events-2026-07-09T15-37-21-336Z.html",
-      "screenshot": "data/raw/browser-probes/experience-alula-events-2026-07-09T15-37-21-336Z.png",
+      "html_bytes": 816012,
+      "html_snapshot": "data/raw/browser-probes/experience-alula-events-2026-07-09T20-07-21-885Z.html",
+      "screenshot": "data/raw/browser-probes/experience-alula-events-2026-07-09T20-07-21-885Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -194,14 +194,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 21116,
+      "duration_ms": 20711,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "Our programs | CODE | MCIT",
       "text_bytes": 5511,
-      "html_bytes": 57070,
-      "html_snapshot": "data/raw/browser-probes/code-mcit-programs-2026-07-09T15-37-21-336Z.html",
-      "screenshot": "data/raw/browser-probes/code-mcit-programs-2026-07-09T15-37-21-336Z.png",
+      "html_bytes": 57073,
+      "html_snapshot": "data/raw/browser-probes/code-mcit-programs-2026-07-09T20-07-21-885Z.html",
+      "screenshot": "data/raw/browser-probes/code-mcit-programs-2026-07-09T20-07-21-885Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -275,14 +275,14 @@
       "status": "error",
       "http_status": 0,
       "navigation_error": "page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.ithra.com/\nCall log:\n  - navigating to \"https://www.ithra.com/\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 183,
+      "duration_ms": 152,
       "classification": "empty-or-shell",
       "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
       "title": "",
       "text_bytes": 0,
       "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/ithra-events-2026-07-09T15-37-21-336Z.html",
-      "screenshot": "data/raw/browser-probes/ithra-events-2026-07-09T15-37-21-336Z.png",
+      "html_snapshot": "data/raw/browser-probes/ithra-events-2026-07-09T20-07-21-885Z.html",
+      "screenshot": "data/raw/browser-probes/ithra-events-2026-07-09T20-07-21-885Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -310,14 +310,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 10984,
+      "duration_ms": 10025,
       "classification": "browser-network-api",
       "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
       "title": "Misk Hub Events",
       "text_bytes": 2610,
-      "html_bytes": 248293,
-      "html_snapshot": "data/raw/browser-probes/misk-hub-events-2026-07-09T15-37-21-336Z.html",
-      "screenshot": "data/raw/browser-probes/misk-hub-events-2026-07-09T15-37-21-336Z.png",
+      "html_bytes": 248379,
+      "html_snapshot": "data/raw/browser-probes/misk-hub-events-2026-07-09T20-07-21-885Z.html",
+      "screenshot": "data/raw/browser-probes/misk-hub-events-2026-07-09T20-07-21-885Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -427,16 +427,6 @@
         {
           "method": "POST",
           "status": 200,
-          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/48e19158879a4c869413ad4738343412/items/?frontend_timestamp=1783611476&frontend_sign=73e17cfb11ce002375d408b3d1d72750d4a723a3",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
-          "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
-          "preview": "{\"recommId\": \"9537d127befebefe9cd5939b69cb4a76\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
           "url": "https://hub.misk.org.sa/api/events/RenderLazyLoadAllEventsOfSeries",
           "content_type": "application/json",
           "resource_type": "xhr",
@@ -450,25 +440,25 @@
           "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
           "content_type": "application/json",
           "resource_type": "fetch",
-          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_4531b5f039b111fdaa3df215622947afea4266ee3c86af760dc46eaadb5f0f4b\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783611476296.887967076607595869\"}",
+          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_a6d964db922cc1e8d54f368978dbcce758341bf63569217b5b85eb4a2a675984\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783627674566.884063032345554453\"}",
           "response_shape": "empty",
           "preview": ""
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/07525917881f46a998cf2f2fe8dc1dfc/items/?frontend_timestamp=1783627674&frontend_sign=ac618e5e293106fa9170e9168b054e7b8ae36d8a",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
+          "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
+          "preview": "{\"recommId\": \"6ccbbf479c59770b2bd1a6fbb868bb24\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
         }
       ],
       "network_sample": [
         {
           "method": "POST",
           "status": 200,
-          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/48e19158879a4c869413ad4738343412/items/?frontend_timestamp=1783611476&frontend_sign=73e17cfb11ce002375d408b3d1d72750d4a723a3",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
-          "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
-          "preview": "{\"recommId\": \"9537d127befebefe9cd5939b69cb4a76\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
           "url": "https://hub.misk.org.sa/api/events/RenderLazyLoadAllEventsOfSeries",
           "content_type": "application/json",
           "resource_type": "xhr",
@@ -482,9 +472,19 @@
           "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
           "content_type": "application/json",
           "resource_type": "fetch",
-          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_4531b5f039b111fdaa3df215622947afea4266ee3c86af760dc46eaadb5f0f4b\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783611476296.887967076607595869\"}",
+          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_a6d964db922cc1e8d54f368978dbcce758341bf63569217b5b85eb4a2a675984\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783627674566.884063032345554453\"}",
           "response_shape": "empty",
           "preview": ""
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/07525917881f46a998cf2f2fe8dc1dfc/items/?frontend_timestamp=1783627674&frontend_sign=ac618e5e293106fa9170e9168b054e7b8ae36d8a",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
+          "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
+          "preview": "{\"recommId\": \"6ccbbf479c59770b2bd1a6fbb868bb24\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
         },
         {
           "method": "POST",
@@ -492,7 +492,7 @@
           "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
           "content_type": "application/json",
           "resource_type": "fetch",
-          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_51719dbb9d67a29869cbe2706e5148e3aaab638732a1b8c03ec5adb2cefca93b\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783611476296.887967076607595869\"}",
+          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_19b00c52ce7d16edb1e3313e9080611f4b43256741e43dacddec723ede37ddd7\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783627674566.884063032345554453\"}",
           "response_shape": "empty",
           "preview": ""
         }
@@ -507,14 +507,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 16449,
+      "duration_ms": 16006,
       "classification": "browser-network-api",
       "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
       "title": "المعارض والفعاليات - JCC - Jeddah Chamber",
-      "text_bytes": 2257,
-      "html_bytes": 1542491,
-      "html_snapshot": "data/raw/browser-probes/jcci-events-center-2026-07-09T15-37-21-336Z.html",
-      "screenshot": "data/raw/browser-probes/jcci-events-center-2026-07-09T15-37-21-336Z.png",
+      "text_bytes": 2344,
+      "html_bytes": 1561555,
+      "html_snapshot": "data/raw/browser-probes/jcci-events-center-2026-07-09T20-07-21-885Z.html",
+      "screenshot": "data/raw/browser-probes/jcci-events-center-2026-07-09T20-07-21-885Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -615,12 +615,32 @@
         {
           "method": "GET",
           "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-collapse-support-web%402.0.12%2Findex",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
+        },
+        {
+          "method": "GET",
+          "status": 200,
           "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-spa-web%405.0.28%2Finit",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
           "response_shape": "json-like-invalid",
           "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-spa-web@5.0.28\\/route\\/Route\":\"\\/o\\/js\\/resolved-module\\/frontend-js-spa-web@5.0.28\\/route\\/Route\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-spa-web@5.0.28\\/screen\\/RenderURLScreen\":\"\\/o\\/js\\/resolved-module\\/frontend-js-spa-web@5.0.28\\/screen\\/RenderURLScreen\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_fie"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-alert-support-web%402.0.9%2Findex",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
         },
         {
           "method": "GET",
@@ -635,27 +655,7 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-collapse-support-web%402.0.12%2Findex",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
-        },
-        {
-          "method": "GET",
-          "status": 200,
           "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-tabs-support-web%402.0.11%2Findex",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-alert-support-web%402.0.9%2Findex",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
@@ -672,7 +672,7 @@
           "resource_type": "script",
           "request_post_data": "",
           "response_shape": "text",
-          "preview": "window.google = window.google || {}; google.maps = google.maps || {}; (function() { var modules = google.maps.modules = {}; google.maps.__gjsload__ = function(name, text) { modules[name] = text; }; google.maps.Load = function(apiLoad) { delete google.maps.Load; apiLoad([0.009999999776482582,[null,[[\"https://khms0.googleapis.com/kh?v=1012\\u0026hl=ar-SA\\u0026gl=US\\u0026\",\"https://khms1.googleapis.com/kh?v=1012\\u0026hl=ar-SA\\u0026gl=US\\u0026\"],null,null,null,1,\"1012\",[\"https://khms0.google.com/kh?v=1012\\u0026hl=ar-SA\\u0026gl=US\\u0026\",\"https://khms1.google.com/kh?v=1012\\u0026hl=ar-SA\\u0026gl=US\\u0026\"]],null,null,null,null,[[\"https://cbks0.googleapis.com/cbk?\",\"https://cbks1.googleapis.com/cbk?\"]],[[\"https://khms0.googleapis.com/kh?v=169\\u0026hl=ar-SA\\u0026gl=US\\u0026\",\"https://khms1.googleapis.com/kh?v=169\\u0026hl=ar-SA\\u0026gl=US\\u0026\"],null,null,null,null,\"169\",[\"https://khms0.google.com/kh?v=169\\u0026hl=ar-SA\\u0026gl=US\\u0026\",\"https://khms1.google.com/kh?v=169\\u0026hl=ar-SA\\u0026gl=US\\u0026\"]],null,null,null,null,null,null,null,[[\"https://streetviewpixels-pa.googleapis.com/v1/thumbnail?hl=ar-SA\\u0026gl=US\\u0026\",\"https://streetviewpixels-pa.googleapis.com/v1/thumbnail?hl=ar-SA\\u0026gl=US\\u0026\"]]],[\"ar-SA\",\"US\",null,1,null,null,\"https://maps.gstatic.com/mapfiles/\",null,\"https://maps.googleapis.com\",\"https://maps.googleapis.com\",null,\"https://maps.google.com\",null,\"https://maps.gstatic.com/maps-api-v3/api/images/\",\"https://www.google.com/maps\",null,\"https://www.google.com\",1,\"https://maps.googleapis.com/maps_api_js_slo/log?hasfast=true\",0,1],[\"https://maps.googleapis.com/maps-api-v3/api/js/65/8c/intl/ar_ALL\",\"3.65.8c\"],[992223009],null,null,null,[112],null,null,\"\",null,null,1,\"https://khms.googleapis.com/mz?v=1012\\u0026\",null,\"https://earth"
+          "preview": "window.google = window.google || {}; google.maps = google.maps || {}; (function() { var modules = google.maps.modules = {}; google.maps.__gjsload__ = function(name, text) { modules[name] = text; }; google.maps.Load = function(apiLoad) { delete google.maps.Load; apiLoad([0.009999999776482582,[null,[[\"https://khms0.googleapis.com/kh?v=1012\\u0026hl=ar-SA\\u0026gl=US\\u0026\",\"https://khms1.googleapis.com/kh?v=1012\\u0026hl=ar-SA\\u0026gl=US\\u0026\"],null,null,null,1,\"1012\",[\"https://khms0.google.com/kh?v=1012\\u0026hl=ar-SA\\u0026gl=US\\u0026\",\"https://khms1.google.com/kh?v=1012\\u0026hl=ar-SA\\u0026gl=US\\u0026\"]],null,null,null,null,[[\"https://cbks0.googleapis.com/cbk?\",\"https://cbks1.googleapis.com/cbk?\"]],[[\"https://khms0.googleapis.com/kh?v=169\\u0026hl=ar-SA\\u0026gl=US\\u0026\",\"https://khms1.googleapis.com/kh?v=169\\u0026hl=ar-SA\\u0026gl=US\\u0026\"],null,null,null,null,\"169\",[\"https://khms0.google.com/kh?v=169\\u0026hl=ar-SA\\u0026gl=US\\u0026\",\"https://khms1.google.com/kh?v=169\\u0026hl=ar-SA\\u0026gl=US\\u0026\"]],null,null,null,null,null,null,null,[[\"https://streetviewpixels-pa.googleapis.com/v1/thumbnail?hl=ar-SA\\u0026gl=US\\u0026\",\"https://streetviewpixels-pa.googleapis.com/v1/thumbnail?hl=ar-SA\\u0026gl=US\\u0026\"]]],[\"ar-SA\",\"US\",null,1,null,null,\"https://maps.gstatic.com/mapfiles/\",null,\"https://maps.googleapis.com\",\"https://maps.googleapis.com\",null,\"https://maps.google.com\",null,\"https://maps.gstatic.com/maps-api-v3/api/images/\",\"https://www.google.com/maps\",null,\"https://www.google.com\",1,\"https://maps.googleapis.com/maps_api_js_slo/log?hasfast=true\",0,1],[\"https://maps.googleapis.com/maps-api-v3/api/js/65/6a/intl/ar_ALL\",\"3.65.6a\"],[3758858848],null,null,null,[112],null,null,\"\",null,null,1,\"https://khms.googleapis.com/mz?v=1012\\u0026\",null,\"https://eart"
         },
         {
           "method": "GET",
@@ -697,22 +697,12 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=portal-template-react-renderer-impl%405.0.7%2Frender.es%2Cdynamic-data-mapping-form-web%404.0.101%2Fadmin%2Fjs%2Futil%2FShowPartialResultsAlert",
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-collapse-support-web%402.0.12%2Findex",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
           "response_shape": "json-like-invalid",
-          "preview": "{\"pathMap\":{\"dynamic-data-mapping-form-web@4.0.101\\/admin\\/js\\/util\\/ShowPartialResultsAlert.scss\":\"\\/o\\/js\\/resolved-module\\/dynamic-data-mapping-form-web@4.0.101\\/admin\\/js\\/util\\/ShowPartialResultsAlert.scss\",\"@frontend-taglib-clay$clayui\\/alert@3.65.1\\/index\":\"\\/o\\/js\\/resolved-module\\/@frontend-taglib-clay$clayui\\/alert@3.65.1\\/index\",\"dynamic-data-mapping-form-web@4.0.101\\/admin\\/js\\/util\\/ShowPartialResultsAlert\":\"\\/o\\/js\\/resolved-module\\/dynamic-data-mapping-form-web@4.0.101\\/admin\\/js\\/util\\/ShowPartialResultsAlert\",\"portal-template-react-renderer-impl@5.0.7\\/render.es\":\"\\/o\\/js\\/resolved-module\\/portal-template-react-renderer-impl@5.0.7\\/render.es\",\"@liferay\\/frontend-js-react-web@5.0.21\\/index\":\"\\/o\\/js\\/resolved-module\\/@liferay\\/frontend-js-react-web@5.0.21\\/index\",\"@frontend-taglib-clay$clayui\\/button@3.65.0\\/index\":\"\\/o\\/js\\/resolved-module\\/@frontend-taglib-clay$clayui\\/button@3.65.0\\/index\",\"liferay!frontend-js-react-web$classnames@2.3.1\\/index\":\"\\/o\\/js\\/resolved-module\\/liferay!frontend-js-react-web$classnames@2.3.1\\/index\",\"liferay!frontend-js-react-web$react@16.12.0\\/index\":\"\\/o\\/js\\/resolved-module\\/liferay!frontend-js-react-web$react@16.12.0\\/index\"},\"configMap\":{},\"resolvedModules\":[\"@liferay\\/frontend-js-react-web@5.0.21\\/index\",\"portal-template-react-renderer-impl@5.0.7\\/render.es\",\"@frontend-taglib-clay$clayui\\/alert@3.65.1\\/index\",\"@frontend-taglib-clay$clayui\\/button@3.65.0\\/index\",\"liferay!frontend-js-react-web$classnames@2.3.1\\/index\",\"liferay!frontend-js-react-web$react@16.12.0\\/index\",\"dynamic-data-mapping-form-web@4.0.101\\/admin\\/js\\/util\\/ShowPartialResultsAlert.scss\",\"dynamic-data-mapping-form-web@4.0.101\\/admin\\/js\\/util\\/ShowPartialResultsAlert\"],\"moduleMap\":{\"dynamic-data-mapping-form-web@4.0.101\\/admin\\/js\\/util\\/ShowPartialResul"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-tooltip-support-web%404.0.16%2Findex",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:pathMap,configMap,resolvedModules,moduleMap,moduleFlags",
-          "preview": "{\"pathMap\":{\"frontend-js-tooltip-support-web@4.0.16\\/index\":\"\\/o\\/js\\/resolved-module\\/frontend-js-tooltip-support-web@4.0.16\\/index\",\"@liferay\\/frontend-js-react-web@5.0.21\\/index\":\"\\/o\\/js\\/resolved-module\\/@liferay\\/frontend-js-react-web@5.0.21\\/index\",\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\":\"\\/o\\/js\\/resolved-module\\/@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\"},\"configMap\":{},\"resolvedModules\":[\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\",\"@liferay\\/frontend-js-react-web@5.0.21\\/index\",\"frontend-js-tooltip-support-web@4.0.16\\/index\"],\"moduleMap\":{\"frontend-js-tooltip-support-web@4.0.16\\/index\":{\"@liferay\\/frontend-js-react-web\":\"@liferay\\/frontend-js-react-web@5.0.21\\/index\",\"@frontend-taglib-clay$clayui\\/tooltip\":\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\"},\"@liferay\\/frontend-js-react-web@5.0.21\\/index\":{},\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\":{}},\"moduleFlags\":{\"frontend-js-tooltip-support-web@4.0.16\\/index\":{\"esModule\":true},\"@liferay\\/frontend-js-react-web@5.0.21\\/index\":{\"useESM\":true,\"esModule\":true},\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\":{\"useESM\":true,\"esModule\":true}}}"
+          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
         },
         {
           "method": "GET",
@@ -727,7 +717,17 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-dropdown-support-web%402.0.9%2Findex",
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=portal-template-react-renderer-impl%405.0.7%2Frender.es%2Cdynamic-data-mapping-form-web%404.0.101%2Fadmin%2Fjs%2Futil%2FShowPartialResultsAlert",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"dynamic-data-mapping-form-web@4.0.101\\/admin\\/js\\/util\\/ShowPartialResultsAlert.scss\":\"\\/o\\/js\\/resolved-module\\/dynamic-data-mapping-form-web@4.0.101\\/admin\\/js\\/util\\/ShowPartialResultsAlert.scss\",\"@frontend-taglib-clay$clayui\\/alert@3.65.1\\/index\":\"\\/o\\/js\\/resolved-module\\/@frontend-taglib-clay$clayui\\/alert@3.65.1\\/index\",\"dynamic-data-mapping-form-web@4.0.101\\/admin\\/js\\/util\\/ShowPartialResultsAlert\":\"\\/o\\/js\\/resolved-module\\/dynamic-data-mapping-form-web@4.0.101\\/admin\\/js\\/util\\/ShowPartialResultsAlert\",\"portal-template-react-renderer-impl@5.0.7\\/render.es\":\"\\/o\\/js\\/resolved-module\\/portal-template-react-renderer-impl@5.0.7\\/render.es\",\"@liferay\\/frontend-js-react-web@5.0.21\\/index\":\"\\/o\\/js\\/resolved-module\\/@liferay\\/frontend-js-react-web@5.0.21\\/index\",\"@frontend-taglib-clay$clayui\\/button@3.65.0\\/index\":\"\\/o\\/js\\/resolved-module\\/@frontend-taglib-clay$clayui\\/button@3.65.0\\/index\",\"liferay!frontend-js-react-web$classnames@2.3.1\\/index\":\"\\/o\\/js\\/resolved-module\\/liferay!frontend-js-react-web$classnames@2.3.1\\/index\",\"liferay!frontend-js-react-web$react@16.12.0\\/index\":\"\\/o\\/js\\/resolved-module\\/liferay!frontend-js-react-web$react@16.12.0\\/index\"},\"configMap\":{},\"resolvedModules\":[\"@liferay\\/frontend-js-react-web@5.0.21\\/index\",\"portal-template-react-renderer-impl@5.0.7\\/render.es\",\"@frontend-taglib-clay$clayui\\/alert@3.65.1\\/index\",\"@frontend-taglib-clay$clayui\\/button@3.65.0\\/index\",\"liferay!frontend-js-react-web$classnames@2.3.1\\/index\",\"liferay!frontend-js-react-web$react@16.12.0\\/index\",\"dynamic-data-mapping-form-web@4.0.101\\/admin\\/js\\/util\\/ShowPartialResultsAlert.scss\",\"dynamic-data-mapping-form-web@4.0.101\\/admin\\/js\\/util\\/ShowPartialResultsAlert\"],\"moduleMap\":{\"dynamic-data-mapping-form-web@4.0.101\\/admin\\/js\\/util\\/ShowPartialResul"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-alert-support-web%402.0.9%2Findex",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
@@ -737,7 +737,17 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-collapse-support-web%402.0.12%2Findex",
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-tooltip-support-web%404.0.16%2Findex",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:pathMap,configMap,resolvedModules,moduleMap,moduleFlags",
+          "preview": "{\"pathMap\":{\"frontend-js-tooltip-support-web@4.0.16\\/index\":\"\\/o\\/js\\/resolved-module\\/frontend-js-tooltip-support-web@4.0.16\\/index\",\"@liferay\\/frontend-js-react-web@5.0.21\\/index\":\"\\/o\\/js\\/resolved-module\\/@liferay\\/frontend-js-react-web@5.0.21\\/index\",\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\":\"\\/o\\/js\\/resolved-module\\/@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\"},\"configMap\":{},\"resolvedModules\":[\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\",\"@liferay\\/frontend-js-react-web@5.0.21\\/index\",\"frontend-js-tooltip-support-web@4.0.16\\/index\"],\"moduleMap\":{\"frontend-js-tooltip-support-web@4.0.16\\/index\":{\"@liferay\\/frontend-js-react-web\":\"@liferay\\/frontend-js-react-web@5.0.21\\/index\",\"@frontend-taglib-clay$clayui\\/tooltip\":\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\"},\"@liferay\\/frontend-js-react-web@5.0.21\\/index\":{},\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\":{}},\"moduleFlags\":{\"frontend-js-tooltip-support-web@4.0.16\\/index\":{\"esModule\":true},\"@liferay\\/frontend-js-react-web@5.0.21\\/index\":{\"useESM\":true,\"esModule\":true},\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\":{\"useESM\":true,\"esModule\":true}}}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-dropdown-support-web%402.0.9%2Findex",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
@@ -757,16 +767,6 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-alert-support-web%402.0.9%2Findex",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
-        },
-        {
-          "method": "GET",
-          "status": 200,
           "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=portal-template-react-renderer-impl%405.0.7%2Frender.es%2Cdynamic-data-mapping-form-web%404.0.101%2Fadmin%2Fjs%2FFormView",
           "content_type": "application/json",
           "resource_type": "fetch",
@@ -777,7 +777,7 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/dynamic-data-mapping-form-field-types?p_auth=hXxcyp",
+          "url": "https://www.jcci.org.sa/o/dynamic-data-mapping-form-field-types?p_auth=EVd6wH",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
@@ -787,27 +787,17 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://maps.googleapis.com/maps-api-v3/api/js/65/8c/intl/ar_ALL/common.js",
-          "content_type": "text/javascript",
-          "resource_type": "script",
-          "request_post_data": "",
-          "response_shape": "text",
-          "preview": "google.maps.__gjsload__('common', function(_){var uka,vka,wka,xka,Mu,zka,Aka,Bka,Ou,Xu,av,bv,cv,dv,Eka,Gka,Hka,Ika,Jka,jv,nv,Lka,Mka,Nka,Oka,Pka,Qka,Ska,sv,Tka,Uka,wv,Vka,Wka,Bv,Xka,ala,Sv,bla,cla,dla,ela,fla,gla,Vv,Uv,jla,ila,hla,bw,cw,dw,kla,lla,mla,nla,pla,qla,rla,sla,tla,ula,vla,xla,yla,Dla,Ela,Fla,Gla,jw,Hla,kw,Ila,lw,ow,qw,Kla,Lla,Mla,Ola,Qla,Qw,Wla,Uw,Zla,$la,lx,cma,dma,ema,fma,px,vx,ima,wx,zx,jma,Ax,kma,Dx,vma,Bma,Fma,Gma,Hma,Ima,Jma,sy,Nma,ty,Oma,Pma,Rma,Uma,Tma,Sma,Wma,Vma,Qma,Xma,$ma,ana,dna,fna,kna,Iy,My,mna,Ny,Oy,nna,qna,sna,rna, tna,una,vna,Ena,Cna,Gna,Hna,dz,ez,Jna,Kna,Lna,Mna,Ku,rka,Wu,Yu,fv,Kka,Rka,rv,Nna,Ona,yv,Ay,bna,cna,zv,Zka,Yka,By,Pna,Qna,Sna,Una,Vna,Xna,Yna,zz,Zna,$na,boa,doa,eoa,Ala,Cla,Oz,noa,ooa,poa;_.Iu=function(a,b){return _.lf(_.Tf(a,b))!=null};_.Ju=function(a){return!!a.handled};_.ska=function(){Ku||(Ku=new rka);return Ku}; _.Lu=function(a){var b=_.ska();b.qh.has(a);return new _.tka(()=>{performance.now()>=b.sh&&b.reset();var c=b.rh.has(a),d=b.th.has(a);c||d?c&&!d&&b.rh.set(a,\"over_ttl\"):(b.rh.set(a,_.fo()),b.th.add(a));return b.rh.get(a)})};uka=function(){var a=78;a%3?a=Math.floor(a):a-=2;var b=new Uint8Array(a),c=0;_.Rc(\"AGFzbQEAAAABBAFgAAADAgEABQMBAAEHBwEDbWVtAgAMAQEKDwENAEEAwEEAQQH8CAAACwsEAQEBeAAQBG5hbWUCAwEAAAkEAQABZA==\",function(d){b[c++]=d});return c!==a?b.subarray(0,c):b}; vka=function(a,b){var c=a.length;if(c!==b.length)return!1;for(let d=0;d<c;d++)if(a[d]!==b[d])return!1;return!0};wka=function(a,b){if(!a.qh||!b.qh||a.qh===b.qh)return a.qh===b.qh;if(typeof a.qh===\"string\"&&typeof b.qh===\"string\"){var c=a.qh;let d=b.qh;b.qh.length>a.qh.length&&(d=a.qh,c=b.qh);if(c.lastIndexOf(d,0)!==0)return!1;for(b=d.length;b<c.length;b++)if(c[b]!==\"=\")return!1;return!0}c=_.od(a);b=_.od(b);return vka(c,b)}; xka=function(a,b){if(typeof b===\"string"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://maps.googleapis.com/maps-api-v3/api/js/65/8c/intl/ar_ALL/util.js",
-          "content_type": "text/javascript",
-          "resource_type": "script",
-          "request_post_data": "",
-          "response_shape": "text",
-          "preview": "google.maps.__gjsload__('util', function(_){/* Copyright 2024 Google, Inc SPDX-License-Identifier: MIT */ /* Copyright 2022 Google LLC SPDX-License-Identifier: BSD-3-Clause */ var qya,sya,vya,wya,Bya,Cya,Fya,Kya,Lya,TE,Pya,Tya,WE,Vya,qF,cza,uF,iza,xF,jza,yF,kza,lza,mza,zF,oza,nza,pza,rza,tza,vza,zza,xza,Aza,yza,AF,BF,Dza,Eza,CF,DF,GF,HF,IF,Gza,KF,LF,Hza,MF,Iza,NF,OF,Jza,PF,QF,Kza,RF,Qza,Uza,Wza,Xza,Yza,TF,UF,VF,WF,XF,Zza,YF,ZF,$F,$za,aAa,bAa,aG,bG,cG,cAa,dAa,dG,eG,eAa,kAa,lAa,nAa,oAa,pAa,qAa,rAa,sAa,tAa,uAa,vAa,wAa,xAa,yAa,zAa,AAa,kG,mG,nG,oG,qG,rG,pG,sG,HAa,IAa,xG,yG,AG,LAa,BG,CG,MAa,NAa,DG,KAa,QAa,RAa,SAa,JG,TAa,KG,UAa,LG,MG,OG,PG,QG,WAa,RG,SG,YAa,XAa,WG,aBa,XG,TG,bBa, aH,cH,YG,eH,dBa,gBa,gH,ZAa,iH,jH,kH,hH,hBa,iBa,lH,pH,fH,eBa,jBa,nH,mH,cBa,$G,oH,VG,bH,ZG,lBa,oBa,$Aa,sH,rBa,wBa,xBa,uBa,vBa,yBa,qBa,ABa,zBa,GH,HH,MH,FBa,CBa,NH,LH,JBa,KBa,OH,LBa,QH,PH,OBa,mCa,hI,rCa,sCa,mI,wCa,BCa,ECa,HCa,GCa,JCa,pI,tI,VCa,aDa,cDa,dDa,eDa,gDa,hDa,LI,MI,NI,pDa,PI,SI,xDa,yDa,aza,ADa,Jya,Mya,Qya,Rya,Xya,Zya,Yya,$ya,CDa,dza,DDa,EDa,eza,bCa,FDa,PBa,YBa,GDa,WH,UH,TH,VBa,XBa,TBa,UBa,WBa,RBa,ZBa,NBa,SBa,QBa,aCa,$Ba,HDa,IDa,JDa,KDa,ZI,LDa,MDa,$I,NDa,ODa,PDa,gza; _.rE=function(a,b){var c=Array.prototype.slice.call(arguments,1);return function(){var d=c.slice();d.push.apply(d,arguments);return a.apply(this,d)}};_.sE=function(a,b){return _.Tf(a,b,void 0,void 0,_.Ae)!=null};_.tE=function(a){return(0,_.Nfa)(a)};_.uE=function(a,b){return(c,d)=>{{let f={EF:!0};d&&Object.assign(f,d);c=_.gv(c,void 0,void 0,f);try{let g=new a,h=g.Ii;_.vv(b)(h,c);var e=g}finally{c.Ri()}}return e}};qya=function(a){a&&typeof a.dispose==\"function\"&&a.dispose()}; _.rya=function(a,b){a.Mh?b():(a.Jh||(a.Jh=[]),a.Jh.push(b))};_.vE=function(a,b){_.rya(a,_.rE(qya,b))};sya=function(a,b,c,d,e,f){if(Array.isArray(c))for(let g=0;"
-        },
-        {
-          "method": "GET",
-          "status": 200,
           "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=dynamic-data-mapping-form-field-type%406.0.106%2FText%2FText.es",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\",\"data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\":\"\\/o\\/js\\/resolved-module\\/frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/lifera"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=dynamic-data-mapping-form-field-type%406.0.106%2FCaptcha%2FCaptcha.es",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
@@ -827,12 +817,22 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=dynamic-data-mapping-form-field-type%406.0.106%2FCaptcha%2FCaptcha.es",
-          "content_type": "application/json",
-          "resource_type": "fetch",
+          "url": "https://maps.googleapis.com/maps-api-v3/api/js/65/6a/intl/ar_ALL/common.js",
+          "content_type": "text/javascript",
+          "resource_type": "script",
           "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"pathMap\":{\"data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\",\"data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\":\"\\/o\\/js\\/resolved-module\\/frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/lifera"
+          "response_shape": "text",
+          "preview": "google.maps.__gjsload__('common', function(_){var wka,xka,yka,zka,Lu,Bka,Cka,Dka,Nu,Wu,$u,av,bv,cv,Gka,Ika,Jka,Kka,Lka,iv,mv,Nka,Oka,Pka,Qka,Rka,Ska,Uka,rv,Vka,Wka,tv,Xka,Yka,Av,Zka,cla,Rv,dla,ela,fla,gla,hla,ila,Uv,Tv,lla,kla,jla,aw,bw,cw,mla,nla,ola,pla,rla,sla,tla,ula,vla,wla,xla,zla,Ala,Fla,Gla,Hla,Ila,iw,Jla,jw,Kla,kw,nw,pw,Mla,Nla,Ola,Qla,Sla,Pw,Yla,Tw,ama,bma,kx,ema,fma,gma,hma,ox,ux,kma,vx,yx,lma,zx,mma,Cx,xma,Dma,Hma,Ima,Jma,Kma,Lma,ry,Pma,sy,Qma,Rma,Tma,Wma,Vma,Uma,Yma,Xma,Sma,Zma,bna,cna,fna,hna,mna,Hy,Ly,ona,My,Ny,pna,sna,una,tna, vna,wna,xna,Gna,Ena,Ina,Jna,cz,dz,Lna,Mna,Nna,Ona,Ju,tka,Vu,Xu,ev,Mka,Tka,qv,Pna,Qna,xv,xy,dna,ena,yv,ala,$ka,yy,Rna,Sna,Una,Wna,Xna,Zna,$na,yz,aoa,boa,doa,foa,goa,Cla,Ela,Nz,poa,qoa,roa;_.Hu=function(a,b){return _.lf(_.Tf(a,b))!=null};_.Iu=function(a){return!!a.handled};_.uka=function(){Ju||(Ju=new tka);return Ju}; _.Ku=function(a){var b=_.uka();b.oh.has(a);return new _.vka(()=>{performance.now()>=b.qh&&b.reset();var c=b.ph.has(a),d=b.rh.has(a);c||d?c&&!d&&b.ph.set(a,\"over_ttl\"):(b.ph.set(a,_.eo()),b.rh.add(a));return b.ph.get(a)})};wka=function(){var a=78;a%3?a=Math.floor(a):a-=2;var b=new Uint8Array(a),c=0;_.Rc(\"AGFzbQEAAAABBAFgAAADAgEABQMBAAEHBwEDbWVtAgAMAQEKDwENAEEAwEEAQQH8CAAACwsEAQEBeAAQBG5hbWUCAwEAAAkEAQABZA==\",function(d){b[c++]=d});return c!==a?b.subarray(0,c):b}; xka=function(a,b){var c=a.length;if(c!==b.length)return!1;for(let d=0;d<c;d++)if(a[d]!==b[d])return!1;return!0};yka=function(a,b){if(!a.oh||!b.oh||a.oh===b.oh)return a.oh===b.oh;if(typeof a.oh===\"string\"&&typeof b.oh===\"string\"){var c=a.oh;let d=b.oh;b.oh.length>a.oh.length&&(d=a.oh,c=b.oh);if(c.lastIndexOf(d,0)!==0)return!1;for(b=d.length;b<c.length;b++)if(c[b]!==\"=\")return!1;return!0}c=_.md(a);b=_.md(b);return xka(c,b)}; zka=function(a,b){if(typeof b===\"string"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://maps.googleapis.com/maps-api-v3/api/js/65/6a/intl/ar_ALL/util.js",
+          "content_type": "text/javascript",
+          "resource_type": "script",
+          "request_post_data": "",
+          "response_shape": "text",
+          "preview": "google.maps.__gjsload__('util', function(_){/* Copyright 2024 Google, Inc SPDX-License-Identifier: MIT */ /* Copyright 2022 Google LLC SPDX-License-Identifier: BSD-3-Clause */ var rya,tya,wya,xya,Cya,Dya,Gya,Lya,Mya,SE,Qya,Uya,VE,Wya,pF,cza,gza,jza,vF,kza,wF,lza,mza,nza,xF,pza,oza,qza,sza,uza,wza,Aza,yza,Bza,zza,yF,zF,Eza,Fza,AF,BF,EF,FF,GF,Hza,IF,JF,Iza,KF,Jza,LF,MF,Kza,NF,OF,Lza,PF,Rza,Vza,Xza,Yza,Zza,RF,SF,TF,UF,VF,$za,WF,XF,YF,aAa,bAa,cAa,ZF,$F,aG,dAa,eAa,bG,cG,fAa,lAa,mAa,oAa,pAa,qAa,rAa,sAa,tAa,uAa,vAa,wAa,xAa,yAa,zAa,AAa,BAa,iG,kG,lG,mG,oG,pG,nG,qG,IAa,JAa,vG,wG,yG,MAa,zG,AG,NAa,OAa,BG,LAa,RAa,SAa,TAa,HG,UAa,IG,VAa,JG,KG,MG,NG,OG,XAa,PG,QG,ZAa,YAa,UG,bBa,VG,RG,cBa, ZG,aH,WG,cH,eBa,hBa,eH,$Aa,gH,hH,iH,fH,iBa,jBa,jH,nH,dH,fBa,kBa,lH,kH,dBa,YG,mH,TG,$G,XG,mBa,pBa,aBa,qH,sBa,xBa,yBa,vBa,wBa,zBa,rBa,BBa,ABa,EH,FH,KH,GBa,DBa,LH,JH,KBa,LBa,MH,MBa,OH,NH,PBa,nCa,fI,sCa,tCa,kI,xCa,CCa,FCa,ICa,HCa,KCa,nI,rI,WCa,bDa,dDa,eDa,fDa,hDa,iDa,JI,KI,LI,qDa,NI,QI,yDa,zDa,aza,BDa,Kya,Nya,Rya,Sya,Xya,Zya,Yya,$ya,DDa,dza,EDa,FDa,eza,cCa,TH,GDa,QBa,ZBa,HDa,UH,SH,RH,WBa,YBa,UBa,VBa,XBa,SBa,$Ba,OBa,TBa,RBa,bCa,aCa,IDa,JDa,KDa,LDa,YI,MDa,NDa,ZI,ODa,PDa,QDa,hza; _.qE=function(a,b){var c=Array.prototype.slice.call(arguments,1);return function(){var d=c.slice();d.push.apply(d,arguments);return a.apply(this,d)}};_.rE=function(a,b){return _.Tf(a,b,void 0,void 0,_.Ae)!=null};_.sE=function(a){return(0,_.Nfa)(a)};_.tE=function(a,b){return(c,d)=>{{let f={fF:!0};d&&Object.assign(f,d);c=_.fv(c,void 0,void 0,f);try{let g=new a,h=g.Ei;_.sv(b)(h,c);var e=g}finally{c.Ni()}}return e}};rya=function(a){a&&typeof a.dispose==\"function\"&&a.dispose()}; _.sya=function(a,b){a.Jh?b():(a.Gh||(a.Gh=[]),a.Gh.push(b))};_.uE=function(a,b){_.sya(a,_.qE(rya,b))};tya=function(a,b,c,d,e,f){if(Array.isArray(c))for(let"
         }
       ]
     },
@@ -845,14 +845,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 17039,
+      "duration_ms": 15680,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "",
       "text_bytes": 152819,
       "html_bytes": 152982,
-      "html_snapshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-07-09T15-37-21-336Z.html",
-      "screenshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-07-09T15-37-21-336Z.png",
+      "html_snapshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-07-09T20-07-21-885Z.html",
+      "screenshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-07-09T20-07-21-885Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -881,52 +881,6 @@
       "network_sample": []
     },
     {
-      "id": "saudi-space-agency-events",
-      "name": "Saudi Space Agency Events",
-      "priority": 32,
-      "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
-      "final_url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
-      "status": "ok",
-      "http_status": 405,
-      "navigation_error": "",
-      "duration_ms": 6088,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 536,
-      "html_bytes": 687,
-      "html_snapshot": "data/raw/browser-probes/saudi-space-agency-events-2026-07-09T15-37-21-336Z.html",
-      "screenshot": "data/raw/browser-probes/saudi-space-agency-events-2026-07-09T15-37-21-336Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 1,
-      "network_endpoints": [],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 405,
-          "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
-          "content_type": "text/plain",
-          "resource_type": "document",
-          "request_post_data": "",
-          "response_shape": "text",
-          "preview": "Status Code: 405; Method Not Allowed"
-        }
-      ]
-    },
-    {
       "id": "makkah-chamber-events",
       "name": "Makkah Chamber Events",
       "priority": 55,
@@ -935,14 +889,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 9475,
+      "duration_ms": 8718,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "Events | غرفة مكة المكرمة",
       "text_bytes": 4648,
       "html_bytes": 73474,
-      "html_snapshot": "data/raw/browser-probes/makkah-chamber-events-2026-07-09T15-37-21-336Z.html",
-      "screenshot": "data/raw/browser-probes/makkah-chamber-events-2026-07-09T15-37-21-336Z.png",
+      "html_snapshot": "data/raw/browser-probes/makkah-chamber-events-2026-07-09T20-07-21-885Z.html",
+      "screenshot": "data/raw/browser-probes/makkah-chamber-events-2026-07-09T20-07-21-885Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -1047,11 +1001,95 @@
           "url": "https://makkahcci.org.sa/website/translations",
           "content_type": "application/json",
           "resource_type": "xhr",
-          "request_post_data": "{\"jsonrpc\":\"2.0\",\"method\":\"call\",\"params\":{\"mods\":[],\"lang\":null},\"id\":482983747}",
+          "request_post_data": "{\"jsonrpc\":\"2.0\",\"method\":\"call\",\"params\":{\"mods\":[],\"lang\":null},\"id\":428727428}",
           "response_shape": "json-like-invalid",
-          "preview": "{\"jsonrpc\": \"2.0\", \"id\": 482983747, \"result\": {\"lang_parameters\": {\"id\": 3, \"name\": \"Arabic / \\u0627\\u0644\\u0652\\u0639\\u064e\\u0631\\u064e\\u0628\\u064a\\u0651\\u0629\", \"direction\": \"rtl\", \"date_format\": \"%d %b, %Y\", \"time_format\": \"%H:%M:%S\", \"grouping\": \"[3,0]\", \"decimal_point\": \".\", \"thousands_sep\": \",\", \"week_start\": 6}, \"modules\": {\"im_livechat\": {\"messages\": [{\"id\": \"Visitor\", \"string\": \"\\u0627\\u0644\\u0632\\u0627\\u0626\\u0631\"}, {\"id\": \"Ask something ...\", \"string\": \"\\u0627\\u0633\\u0623\\u0644 \\u0639\\u0646 \\u0634\\u064a\\u0621...\"}, {\"id\": \"Chat with one of our collaborators\", \"string\": \"\\u062a\\u062d\\u062f\\u062b \\u0645\\u0639 \\u0623\\u062d\\u062f \\u0645\\u0645\\u062b\\u0644\\u064a\\u0646\\u0627\"}, {\"id\": \"Did we correctly answer your question ?\", \"string\": \"\\u0647\\u0644 \\u0623\\u062c\\u0628\\u0646\\u0627 \\u0639\\u0644\\u0649 \\u0633\\u0624\\u0627\\u0644\\u0643 \\u0628\\u0634\\u0643\\u0644 \\u0635\\u062d\\u064a\\u062d\\u061f\"}, {\"id\": \"Explain your note\", \"string\": \"\\u0634\\u0631\\u062d \\u0645\\u0644\\u0627\\u062d\\u0638\\u062a\\u0643\"}, {\"id\": \"How may I help you?\", \"string\": \"\\u0643\\u064a\\u0641 \\u064a\\u0645\\u0643\\u0646\\u0646\\u064a \\u0645\\u0633\\u0627\\u0639\\u062f\\u062a\\u0643\\u061f\"}, {\"id\": \"I don't want to rate this conversation\", \"string\": \"\\u0644\\u0627 \\u0623\\u0631\\u064a\\u062f \\u062a\\u0642\\u064a\\u064a\\u0645 \\u0647\\u0630\\u0647 \\u0627\\u0644\\u0645\\u062d\\u0627\\u062f\\u062b\\u0629\"}, {\"id\": \"Livechat\", \"string\": \"\\u0627\\u0644\\u062f\\u0631\\u062f\\u0634\\u0629 \\u0627\\u0644\\u062d\\u064a\\u0629\"}, {\"id\": \"None of our collaborators seems to be available, please try again later.\", \"string\": \"\\u064a\\u0628\\u062f\\u0648 \\u0623\\u0646 \\u062c\\u0645\\u064a\\u0639 \\u0645\\u0645\\u062b\\u0644\\u064a\\u0646\\u0627 \\u0645\\u0634\\u063a\\u0648\\u0644\\u0648\\u0646 \\u0627\\u0644\\u0622\\u0646\\u060c \\u0628\\u0631\\u062c\\u0627\\u0621 \\u0627\\u0644\\u0645\\u062d\\u062"
+          "preview": "{\"jsonrpc\": \"2.0\", \"id\": 428727428, \"result\": {\"lang_parameters\": {\"id\": 3, \"name\": \"Arabic / \\u0627\\u0644\\u0652\\u0639\\u064e\\u0631\\u064e\\u0628\\u064a\\u0651\\u0629\", \"direction\": \"rtl\", \"date_format\": \"%d %b, %Y\", \"time_format\": \"%H:%M:%S\", \"grouping\": \"[3,0]\", \"decimal_point\": \".\", \"thousands_sep\": \",\", \"week_start\": 6}, \"modules\": {\"im_livechat\": {\"messages\": [{\"id\": \"Visitor\", \"string\": \"\\u0627\\u0644\\u0632\\u0627\\u0626\\u0631\"}, {\"id\": \"Ask something ...\", \"string\": \"\\u0627\\u0633\\u0623\\u0644 \\u0639\\u0646 \\u0634\\u064a\\u0621...\"}, {\"id\": \"Chat with one of our collaborators\", \"string\": \"\\u062a\\u062d\\u062f\\u062b \\u0645\\u0639 \\u0623\\u062d\\u062f \\u0645\\u0645\\u062b\\u0644\\u064a\\u0646\\u0627\"}, {\"id\": \"Did we correctly answer your question ?\", \"string\": \"\\u0647\\u0644 \\u0623\\u062c\\u0628\\u0646\\u0627 \\u0639\\u0644\\u0649 \\u0633\\u0624\\u0627\\u0644\\u0643 \\u0628\\u0634\\u0643\\u0644 \\u0635\\u062d\\u064a\\u062d\\u061f\"}, {\"id\": \"Explain your note\", \"string\": \"\\u0634\\u0631\\u062d \\u0645\\u0644\\u0627\\u062d\\u0638\\u062a\\u0643\"}, {\"id\": \"How may I help you?\", \"string\": \"\\u0643\\u064a\\u0641 \\u064a\\u0645\\u0643\\u0646\\u0646\\u064a \\u0645\\u0633\\u0627\\u0639\\u062f\\u062a\\u0643\\u061f\"}, {\"id\": \"I don't want to rate this conversation\", \"string\": \"\\u0644\\u0627 \\u0623\\u0631\\u064a\\u062f \\u062a\\u0642\\u064a\\u064a\\u0645 \\u0647\\u0630\\u0647 \\u0627\\u0644\\u0645\\u062d\\u0627\\u062f\\u062b\\u0629\"}, {\"id\": \"Livechat\", \"string\": \"\\u0627\\u0644\\u062f\\u0631\\u062f\\u0634\\u0629 \\u0627\\u0644\\u062d\\u064a\\u0629\"}, {\"id\": \"None of our collaborators seems to be available, please try again later.\", \"string\": \"\\u064a\\u0628\\u062f\\u0648 \\u0623\\u0646 \\u062c\\u0645\\u064a\\u0639 \\u0645\\u0645\\u062b\\u0644\\u064a\\u0646\\u0627 \\u0645\\u0634\\u063a\\u0648\\u0644\\u0648\\u0646 \\u0627\\u0644\\u0622\\u0646\\u060c \\u0628\\u0631\\u062c\\u0627\\u0621 \\u0627\\u0644\\u0645\\u062d\\u062"
         }
       ]
+    },
+    {
+      "id": "abha-chamber-events",
+      "name": "Abha Chamber Events",
+      "priority": 61,
+      "url": "https://abhacci.org.sa/Events",
+      "final_url": "https://abhacci.org.sa/Events",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 6833,
+      "classification": "browser-structured-html",
+      "next_action": "اكتب extractor من JSON-LD أو structured scripts مع fallback للبطاقات.",
+      "title": "الفعاليات | غرفة أبها",
+      "text_bytes": 396,
+      "html_bytes": 40243,
+      "html_snapshot": "data/raw/browser-probes/abha-chamber-events-2026-07-09T20-07-21-885Z.html",
+      "screenshot": "data/raw/browser-probes/abha-chamber-events-2026-07-09T20-07-21-885Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": true,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": [
+          {
+            "text": "",
+            "href": "https://abhacci.org.sa/Events#"
+          },
+          {
+            "text": "",
+            "href": "https://abhacci.org.sa/Events/Details/3"
+          },
+          {
+            "text": "",
+            "href": "https://abhacci.org.sa/Events/Details/2"
+          },
+          {
+            "text": "",
+            "href": "https://abhacci.org.sa/Events/Details/1"
+          },
+          {
+            "text": "",
+            "href": "https://abhacci.org.sa/Events/Details/7"
+          },
+          {
+            "text": "",
+            "href": "https://abhacci.org.sa/Events/Details/8"
+          },
+          {
+            "text": "1",
+            "href": "https://abhacci.org.sa/Events?page=1"
+          },
+          {
+            "text": "2",
+            "href": "https://abhacci.org.sa/Events?page=2"
+          },
+          {
+            "text": "3",
+            "href": "https://abhacci.org.sa/Events?page=3"
+          },
+          {
+            "text": "4",
+            "href": "https://abhacci.org.sa/Events?page=4"
+          },
+          {
+            "text": "5",
+            "href": "https://abhacci.org.sa/Events?page=5"
+          },
+          {
+            "text": "",
+            "href": "https://abhacci.org.sa/Events?page=2"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 1,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
     }
   ]
 }

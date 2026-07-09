@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T15:45:49.037Z",
+  "generated_at": "2026-07-09T20:15:43.881Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,17 +11,17 @@
   },
   "collection": {
     "basis": "source_collection_report",
-    "collected_at": "2026-07-09T15:38:52.706Z",
+    "collected_at": "2026-07-09T20:08:48.255Z",
     "freshness": "fresh",
-    "discovered": 130,
+    "discovered": 128,
     "written": 193
   },
   "sources": {
     "total": 72,
     "attempted": 34,
     "collection_coverage_pct": 47,
-    "healthy": 15,
-    "zero_yield": 8,
+    "healthy": 14,
+    "zero_yield": 9,
     "errors": 11,
     "not_collected": 38,
     "unattempted_high_priority": 3,
@@ -309,10 +309,10 @@
         "id": "saudi-space-agency-events",
         "name": "Saudi Space Agency Events",
         "priority": 32,
-        "status": "collection-error",
+        "status": "zero-yield",
         "extracted": 0,
         "candidates": 0,
-        "next_action": "fetch failed"
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "cst-events-news",
@@ -552,10 +552,10 @@
         "id": "asharqia-chamber-events",
         "name": "Asharqia Chamber Events",
         "priority": 59,
-        "status": "healthy",
-        "extracted": 2,
+        "status": "collection-error",
+        "extracted": 0,
         "candidates": 2,
-        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
+        "next_action": "fetch failed"
       },
       {
         "id": "qassim-chamber-events",

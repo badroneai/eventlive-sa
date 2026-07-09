@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-09T15:32:55.456Z",
+  "generated_at": "2026-07-09T20:03:18.176Z",
   "registry": "data/source_registry.json",
   "source_ingestion_plan": "reports/source-ingestion-plan.json",
   "probe_limit": 28,
   "timeout_ms": 12000,
   "totals": {
     "probed": 22,
-    "extractor_ready": 10,
-    "blocked": 12,
+    "extractor_ready": 12,
+    "blocked": 10,
     "partnership": 0,
     "watch": 0
   },
@@ -60,7 +60,7 @@
         "status": 200,
         "final_url": "https://ncci.org.sa/category/events/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 118206,
+        "bytes": 118076,
         "title": "الفعاليات – الغرفة التجارية بعرعر | غرفة الحدود الشمالية",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -128,7 +128,7 @@
         "status": 200,
         "final_url": "https://www.cst.gov.sa/en",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 250420,
+        "bytes": 250465,
         "title": "Communications, Space & Technology Commission (CST)",
         "blocked_reason": "",
         "structured_scripts": 2,
@@ -285,6 +285,40 @@
       "recommendation": "probe-hidden-api-or-html-table"
     },
     {
+      "id": "aseer-season-asda",
+      "name": "Aseer Season / Asir Development Authority",
+      "priority": 42,
+      "url": "https://www.asda.gov.sa/",
+      "trust_level": "official",
+      "fetch_method": "manual-review",
+      "candidate_gate": "source-evidence",
+      "intake_policy": "monitor-public",
+      "signals": {
+        "http_ok": true,
+        "status": 200,
+        "final_url": "https://www.asda.gov.sa/en",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 209090,
+        "title": "Aseer Development Authority | Qimam wa Shiyam Strategy",
+        "blocked_reason": "",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 32,
+        "date_snippets": [
+          "calendar icon\" loading=\"lazy\" width=\"24\" height=\"24\" decoding=\"async\" data-nimg=\"1\" clas",
+          "calendar.0x6cub0gfztn3.svg\"/>",
+          "date information on events, experiences, trails, and tourism activities across the r",
+          "dated: 03/05/2026 – 4:13 PM (Saudi Arabia Time)",
+          "dated: 03/05/2026 – 4:13 PM (Saudi Arabia Time)",
+          "date\\\":\\\"2025-10-07T12:58:42\\\",\\\"date_gmt\\\":\\\"2025-10-07T09:58:42\\\",\\\"guid\\\":{\\\"rend"
+        ]
+      },
+      "extraction_score": 46,
+      "recommendation": "probe-hidden-api-or-html-table"
+    },
+    {
       "id": "diriyah-season",
       "name": "Diriyah Season",
       "priority": 40,
@@ -332,7 +366,7 @@
         "status": 200,
         "final_url": "https://www.kaust.edu.sa/en/",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 85625,
+        "bytes": 85626,
         "title": "KAUST | A top research university in the Middle East",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -347,6 +381,40 @@
           "date' : 'default', { 'ad_storage': consentValue, 'ad_user_data': consentValu",
           "Date(\"2023-02-28T10:09:21.5155972Z\") - new Date(), siteClientTag: \"472$$15.0.5519.10",
           "Date()); gtag('config', 'G-VGNT1HSSCZ');"
+        ]
+      },
+      "extraction_score": 36,
+      "recommendation": "probe-hidden-api-or-html-table"
+    },
+    {
+      "id": "saudi-winter-calendar-spa",
+      "name": "Saudi Winter Events Calendar",
+      "priority": 50,
+      "url": "https://www.spa.gov.sa/en/N2183027",
+      "trust_level": "official",
+      "fetch_method": "manual-review",
+      "candidate_gate": "source-evidence",
+      "intake_policy": "monitor-public",
+      "signals": {
+        "http_ok": true,
+        "status": 200,
+        "final_url": "https://www.spa.gov.sa/en/N2183027",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 142279,
+        "title": "STA Launches&#x27; Saudi Winter&#x27; Events Calendar",
+        "blocked_reason": "",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 1,
+        "date_snippets": [
+          "Calendar",
+          "Calendar\"/>",
+          "calendar, which includes various activities and seasons set to take place in seven desti",
+          "calendar is part of the Saudi Winter Program 2024-2025, which features over 1,000 touris",
+          "calendar includes notable seasons and events such as Riyadh Season, Diriyah Season, AlUl",
+          "Calendar, as well as major events like the Dakar Rally, MDL Beast, Saudi Cruise, and the"
         ]
       },
       "extraction_score": 36,
@@ -537,7 +605,7 @@
         "content_type": "",
         "bytes": 0,
         "title": "",
-        "blocked_reason": "fetch failed TypeError: fetch failed",
+        "blocked_reason": "fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed",
         "structured_scripts": 0,
         "structured_events": 0,
         "google_calendar_links": 0,
@@ -546,7 +614,7 @@
         "date_snippets": []
       },
       "extraction_score": -23,
-      "recommendation": "blocked-or-protected:fetch failed TypeError: fetch failed"
+      "recommendation": "blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed"
     },
     {
       "id": "saudi-digital-academy",
@@ -589,7 +657,7 @@
         "status": 403,
         "final_url": "https://qiddiya.com/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 5964,
+        "bytes": 5963,
         "title": "Attention Required! | Cloudflare",
         "blocked_reason": "http-403",
         "structured_scripts": 0,
@@ -601,33 +669,6 @@
       },
       "extraction_score": -35,
       "recommendation": "blocked-or-protected:http-403"
-    },
-    {
-      "id": "aseer-season-asda",
-      "name": "Aseer Season / Asir Development Authority",
-      "priority": 42,
-      "url": "https://www.asda.gov.sa/",
-      "trust_level": "official",
-      "fetch_method": "manual-review",
-      "candidate_gate": "source-evidence",
-      "intake_policy": "monitor-public",
-      "signals": {
-        "http_ok": false,
-        "status": 0,
-        "final_url": "https://www.asda.gov.sa/",
-        "content_type": "",
-        "bytes": 0,
-        "title": "",
-        "blocked_reason": "fetch failed TypeError: fetch failed",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 0,
-        "date_snippets": []
-      },
-      "extraction_score": -35,
-      "recommendation": "blocked-or-protected:fetch failed TypeError: fetch failed"
     },
     {
       "id": "jeddah-season",
@@ -655,33 +696,6 @@
       },
       "extraction_score": -35,
       "recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND jeddahseason.sa TypeError: fetch failed"
-    },
-    {
-      "id": "saudi-winter-calendar-spa",
-      "name": "Saudi Winter Events Calendar",
-      "priority": 50,
-      "url": "https://www.spa.gov.sa/en/N2183027",
-      "trust_level": "official",
-      "fetch_method": "manual-review",
-      "candidate_gate": "source-evidence",
-      "intake_policy": "monitor-public",
-      "signals": {
-        "http_ok": false,
-        "status": 403,
-        "final_url": "https://www.spa.gov.sa/en/N2183027",
-        "content_type": "text/html; charset=UTF-8",
-        "bytes": 5044,
-        "title": "Attention Required! | Cloudflare",
-        "blocked_reason": "http-403",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 0,
-        "date_snippets": []
-      },
-      "extraction_score": -35,
-      "recommendation": "blocked-or-protected:http-403"
     }
   ],
   "next_actions": [

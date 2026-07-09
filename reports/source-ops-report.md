@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-07-09T15:45:49.037Z
+- generated_at: 2026-07-09T20:15:43.881Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -13,8 +13,8 @@
 - Sources in registry: 72
 - Sources attempted in latest collection: 34
 - Collection coverage: 47%
-- Healthy sources: 15
-- Zero-yield sources: 8
+- Healthy sources: 14
+- Zero-yield sources: 9
 - High-priority unattempted sources: 3
 - Candidates: 193
 - Actionable candidates: 0
@@ -92,7 +92,7 @@
 | 29 | Jeddah Chamber Exhibitions and Events Center | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
 | 30 | Saudi Pro League Fixtures | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
 | 31 | NEOM Newsroom Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 32 | Saudi Space Agency Events | collection-error | 0 | 0 | fetch failed |
+| 32 | Saudi Space Agency Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
 | 33 | CST Events and News | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 34 | Visit Saudi Calendar PDF | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 35 | Qiddiya Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
@@ -119,7 +119,7 @@
 | 56 | SCEGA ePortal Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 57 | Ministry of Commerce Upcoming Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 58 | Evento | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 59 | Asharqia Chamber Events | healthy | 2 | 2 | استمر بالمراجعة والتكرار قبل النشر. |
+| 59 | Asharqia Chamber Events | collection-error | 0 | 2 | fetch failed |
 | 60 | Qassim Chamber Events | collection-error | 0 | 0 | HTTP 403 |
 | 61 | Abha Chamber Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
 | 62 | Baha Municipality Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |

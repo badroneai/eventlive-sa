@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-09T15:43:04.593Z
+- published_at: 2026-07-09T20:13:09.090Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 193
-- published_new: 2
-- linked_existing: 162
+- published_new: 1
+- linked_existing: 163
 - blocked_remaining: 29
 
 ## Blocked summary
@@ -17,8 +17,7 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45 | published | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-8 | معسكر تطوير تطبيقات الويب باستخدام لغة Python |
-| candidate-saudi-university-events-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco-20260907-80f1dc55 | published | event-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco | The KAUST Imaging and Characterization Core Lab presents: AI for Microscopy Workshop |
+| candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45 | published | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-9 | معسكر تطوير تطبيقات الويب باستخدام لغة Python |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -125,6 +124,7 @@
 | candidate-riyadh-city-events-lighting-design-technology-expo-20260906-ded31051 | linked-existing | event-lighting-design-technology-expo | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي-20260906-c8b1323c | linked-existing | event-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc-20260906-cb343b82 | linked-existing | event-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc | already linked to catalog event |
+| candidate-saudi-university-events-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco-20260907-80f1dc55 | linked-existing | event-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco | already linked to catalog event |
 | candidate-rfecc-whats-on-inter-aviation-arabia-20260908-ac39c505 | linked-existing | event-inter-aviation-arabia | already linked to catalog event |
 | candidate-rfecc-whats-on-fibo-2026-20260908-f3d2b4f2 | linked-existing | event-fibo-2026 | already linked to catalog event |
 | candidate-rfecc-whats-on-wtm-spotlight-riyadh-20260908-3b46af1d | linked-existing | event-wtm-spotlight-riyadh | already linked to catalog event |
