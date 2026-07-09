@@ -1,0 +1,348 @@
+{
+  "generated_at": "2026-07-09T13:18:46.726Z",
+  "platforms": [
+    {
+      "name": "SCEGA ePortal",
+      "url": "https://eportal.scega.gov.sa/home",
+      "status": 200,
+      "error": null,
+      "apiHints": [
+        "https://eportal.scega.gov.sa/api/first-page/GetAllSocialMediaLinks",
+        "https://eportal.scega.gov.sa/api/feedback",
+        "https://eportal.scega.gov.sa/assets/i18n/ar.json",
+        "https://eportal.scega.gov.sa/api/first-page/GetAllHomePageSetting",
+        "https://eportal.scega.gov.sa/api/Events/GetEventsByEventDate",
+        "https://eportal.scega.gov.sa/api/mainservice/GetHomeMainServices",
+        "https://eportal.scega.gov.sa/api/News/GetActiveOrHomeShownServicesAsync",
+        "https://eportal.scega.gov.sa/api/fileupload/Download",
+        "https://syndication.twitter.com/settings",
+        "https://static.licdn.com/aero-v1/sc/h/8fkga714vy9b2wk5auqo5reeb",
+        "https://static.licdn.com/aero-v1/sc/h/e97efymj9gvxv32086hxtsg5r",
+        "https://static.licdn.com/aero-v1/sc/h/gs508lg3t2o81tq7pmcgn6m2"
+      ],
+      "finalUrl": "https://eportal.scega.gov.sa/home",
+      "title": "الهيئه العامه للمعارض و المؤتمرات",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "ogImage": "",
+      "robots": "",
+      "canonical": "",
+      "lang": "ar",
+      "dir": "rtl",
+      "jsonTypes": [],
+      "headings": [
+        "H2:بوابتك إلى تنظيم المعارض والمؤتمرات…",
+        "H1:الخدمات الإلكترونية – إصدار التراخيص",
+        "H2:التراخيص",
+        "H2:الموافقات الحكومية",
+        "H1:الفعاليات القادمة",
+        "H1:آخر أخبار الهيئة",
+        "H1:تابع اخر تحديثات الهيئة",
+        "H1:النشرة البريدية"
+      ],
+      "counts": {
+        "links": 6,
+        "images": 25,
+        "jsonLd": 0
+      },
+      "keywordSignals": [
+        "اليوم",
+        "الرياض",
+        "معرض",
+        "ملتقى",
+        "دورات"
+      ],
+      "bodySample": "موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق نسخة تجريبية الهيئة الخدمات الإلكترونية المركز الإعلامي مركز المعرفة الفرص الواعدة تسجيل الدخول English بوابتك إلى تنظيم المعارض والمؤتمرات… سجّل الآن، نظّم فعاليتك، وابدأ رحلتك في صناعة الغد الخدمات الإلكترونية – إصدار التراخيص التراخيص إصدار التراخيص اللازمة لتنظيم الندوات والمنتديات بسهولة وسرعة عرض الخدمات المتاحة الموافقات الحكومية تتيح هذه الخدمة تقديم الجهات الحكومية لطلب الموافقة لإقامة الفعاليات، وتشمل الاجتماعات وورش العمل و الدورات التدريبية و المحاضرات والمؤتمرات، كذلك المعارض التوعوية أو التعريفية. عرض الخدمات المتاحة "
+    },
+    {
+      "name": "NEC",
+      "url": "https://nec.gov.sa/ar",
+      "status": 200,
+      "error": null,
+      "apiHints": [
+        "https://nec.gov.sa/api/cms/header",
+        "https://nec.gov.sa/api/cms/footer",
+        "https://nec.gov.sa/api/cms/homepage",
+        "https://nec.gov.sa/api/cms/newsletter",
+        "https://nec.gov.sa/ar"
+      ],
+      "finalUrl": "https://nec.gov.sa/ar",
+      "title": "المركز الوطني للفعاليات | المركز الوطني للفعاليات",
+      "description": "أُسّس مركز الفعاليات بقرار من مجلس الوزراء بتاريخ 15 رجب 1441 هـ الموافق 10 مارس 2020م، ومقره الرياض",
+      "ogTitle": "المركز الوطني للفعاليات",
+      "ogDescription": "أُسّس مركز الفعاليات بقرار من مجلس الوزراء بتاريخ 15 رجب 1441 هـ الموافق 10 مارس 2020م، ومقره الرياض",
+      "ogImage": "https://nec.gov.sa/api/assets/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b",
+      "robots": "",
+      "canonical": "",
+      "lang": "ar",
+      "dir": "rtl",
+      "jsonTypes": [],
+      "headings": [
+        "H1:قطاع واعد لفعاليات المملكة",
+        "H1:برامج ومبادرات المركز",
+        "H1:كن جزءًا من نهضة قطاع الفعاليات في المملكة",
+        "H1:نخلق فعاليات لا حدود لها"
+      ],
+      "counts": {
+        "links": 47,
+        "images": 24,
+        "jsonLd": 0
+      },
+      "keywordSignals": [
+        "الرياض",
+        "التذاكر",
+        "تقويم"
+      ],
+      "bodySample": "موقع حكومي مسجل لدي هيئة الحكومة الرقمية كيف تتحقق عن المركز المبادرات الرعاية المركز الاعلامي انضم للمركز الخدمات الإلكترونية تواصل معنا البحث English قطاع واعد لفعاليات المملكة لقطاع فعاليات واعد، ومواسم سعودية استثنائية، وتقويم وطني مزدهر وجاذب! من نحن أُسّس مركز الفعاليات بقرار من مجلس الوزراء بتاريخ 15 رجب 1441 هـ الموافق 10 مارس 2020م، ومقره الرياض، وهو يهدف إلى تعزيز الفعاليات في المملكة، والارتقاء بالخدمات المقدمة في المجال، ودعم مواسم السعودية والتقويم الوطني والفعاليات الكبرى، بناءً على ما يصدر من أوامر وقرارات، وفقًا للتوجهات والرؤى التي تضعها لجنة الفعاليات كما يتمتع المركز بالشخصي"
+    },
+    {
+      "name": "Visit Saudi Calendar",
+      "url": "https://www.visitsaudi.com/ar/saudi-calendar",
+      "status": 200,
+      "error": null,
+      "apiHints": [
+        "https://www.visitsaudi.com/content/dam/sauditourism/themes/logos/default/ar.svg",
+        "https://www.visitsaudi.com/bin/api/v1/popularSearches",
+        "https://reach.visitsaudi.com/js/formbricks.umd.cjs",
+        "https://dpm.demdex.net/id",
+        "https://dpm.demdex.net/id/rd",
+        "https://reach.visitsaudi.com/api/v1/client/cmibk4o0f0009pq01vtj05qws/environment",
+        "https://c.amazon-adsystem.com/aat/amzn.js",
+        "https://aas.visitsaudi.com/id",
+        "https://reach.visitsaudi.com/api/v2/client/cmibk4o0f0009pq01vtj05qws/user",
+        "https://saudicommissionforto.tt.omtrdc.net/rest/v1/delivery",
+        "https://px.ads.linkedin.com/attribution_trigger",
+        "https://aas.visitsaudi.com/b/ss/saudicommissionvisitsaudi/1/JS-2.25.0-LGU4/s88007820981674"
+      ],
+      "finalUrl": "https://www.visitsaudi.com/ar/saudi-calendar",
+      "title": "تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية",
+      "description": "تابع تقويم السعودية الذي يشمل جميع العطلات الرسمية والوطنية والفعاليات القادمة. اكتشف التواريخ والفعاليات المهمة في السعودية مع روح السعودية!",
+      "ogTitle": "تقويم السعودية | تابع العطلات والفعاليات المميزة",
+      "ogDescription": "تابع تقويم السعودية الذي يشمل جميع العطلات الرسمية والوطنية والفعاليات القادمة. اكتشف التواريخ والفعاليات المهمة في السعودية مع روح السعودية!",
+      "ogImage": "/content/dam/wvs/calendar/SoundStorm.jpeg",
+      "robots": "index, follow",
+      "canonical": "https://www.visitsaudi.com/ar/saudi-calendar",
+      "lang": "ar",
+      "dir": "rtl",
+      "jsonTypes": [],
+      "headings": [
+        "H1:تقويم الفعاليات",
+        "H2:ميزات الوصول"
+      ],
+      "counts": {
+        "links": 24,
+        "images": 12,
+        "jsonLd": 0
+      },
+      "keywordSignals": [
+        "الرياض",
+        "جدة",
+        "تقويم"
+      ],
+      "bodySample": "الصفحة الرئيسية تقويم السعودية الوجهات أساسيات السفر أنشطة سياحية عروض السعودية تقويم الفعاليات الخريطة التفاعلية البحث AR طلب التأشيرة تسجيل الدخول تقويم الفعاليات فعاليات الوجهات عرض الكل الرياض جدة العلا عسير تحدث مع مرشدتك الذكية مرحباً! أنا نورة مرشدتك الذكية"
+    },
+    {
+      "name": "webook Explore",
+      "url": "https://webook.com/ar/explore",
+      "status": 200,
+      "error": null,
+      "apiHints": [
+        "https://webook.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/80a697ecdece/0.9817898756153709:1783598720:LNGwqUw9fo7Nz-MNEXwm2TXRvAz9rZeGAmNHAkxsJ74/a1879ce21f81e201",
+        "https://wbk-assets.webook.com/0.6.7/locales/ar-SA/ui_common.json",
+        "https://wbk-assets.webook.com/0.6.7/locales/ar-SA/ticketing_event.json",
+        "https://wbk-assets.webook.com/0.6.7/locales/ar-SA/flight_common.json",
+        "https://wbk-assets.webook.com/0.6.7/locales/ar-SA/contentful_zone.json",
+        "https://wbk-assets.webook.com/0.6.7/locales/ar-SA/auth_common.json",
+        "https://wbk-assets.webook.com/0.6.7/locales/ar-SA/common.json",
+        "https://wbk-assets.webook.com/0.6.7/locales/ar-SA/contentful_common.json",
+        "https://wbk-assets.webook.com/0.6.7/locales/ar-SA/ticketing_common.json",
+        "https://wbk-assets.webook.com/0.6.7/locales/ar-SA/contentful_business.json",
+        "https://wbk-assets.webook.com/0.6.7/locales/ar-SA/contentful_event.json",
+        "https://wbk-assets.webook.com/0.6.7/locales/ar/ticketing_common.json"
+      ],
+      "finalUrl": "https://webook.com/ar/explore",
+      "title": "استكشف الفعاليات والتجارب | webook.com",
+      "description": "استكشف الفعاليات والتجارب",
+      "ogTitle": "استكشف الفعاليات والتجارب",
+      "ogDescription": "",
+      "ogImage": "https://webook.com/images/default-cover.jpg",
+      "robots": "",
+      "canonical": "https://webook.com/ar/explore",
+      "lang": "ar",
+      "dir": "rtl",
+      "jsonTypes": [
+        "Organization",
+        "WebSite",
+        "WebSite"
+      ],
+      "headings": [
+        "H2:اختر التاريخ",
+        "H2:نطاق السعر",
+        "H2:الفئة",
+        "H2:المنطقة",
+        "H2:تصنيفات",
+        "H2:نستخدم الكوكيز لتحسين تجربتك الكوكيز هي ملفات نصية صغيرة تساعد المواقع على العمل بشكل أفضل، مثل تذكر تفضيلاتك أو عرض محتوى ذو صلة بك."
+      ],
+      "counts": {
+        "links": 79,
+        "images": 63,
+        "jsonLd": 3
+      },
+      "keywordSignals": [
+        "اليوم",
+        "غدا",
+        "الرياض",
+        "جدة",
+        "التذاكر"
+      ],
+      "bodySample": "✨ وظائف للمبدعين فقط، قدّم الآن! ✨ استكشف طيران فنادق منصة إعادة البيع باقات ويبوك webook.com للأعمال مدونة ويبوك الوجهة المملكة العربية السعودية اختر التاريخ اليوم غداً هذا الأسبوع تاريخ مخصص يوليو 2026 أحد اثنين ثلاثاء أربعاء خميس جمعة سبت 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 نطاق السعر 0 SAR - 9,999 SAR الفئة العروض موسيقى المطاعم التجارب الرياضة الآنشطة والمغامرات المنطقة بوليفارد سيتي تصنيفات سيدات كرة القدم عائلي أزواج أطفال Solo الحفلات التجارب 435+ نتيجة مرتبة حسب الأكثر شعبية مطعم ميازو - الرياض الرياض, المملكة العربية السعودية يبدأ من 50"
+    },
+    {
+      "name": "Enjoy Saudi",
+      "url": "https://enjoy.sa/ar/",
+      "status": 403,
+      "error": null,
+      "apiHints": [],
+      "finalUrl": "https://enjoy.sa/ar/",
+      "title": "تعذر الوصول إلى الصفحة | Access Unavailable",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "ogImage": "",
+      "robots": "",
+      "canonical": "",
+      "lang": "en",
+      "dir": "rtl",
+      "jsonTypes": [],
+      "headings": [
+        "H1:Access Unavailable",
+        "H1:تعذر الوصول إلى الصفحة"
+      ],
+      "counts": {
+        "links": 0,
+        "images": 2,
+        "jsonLd": 0
+      },
+      "keywordSignals": [],
+      "bodySample": "تعذر الوصول إلى الصفحة Access Unavailable The requested resource is currently unavailable. Please try again later. تعذر الوصول إلى الصفحة الصفحة المطلوبة غير متاحة حالياً. يرجى المحاولة في وقت لاحق."
+    },
+    {
+      "name": "GEA Events",
+      "url": "https://www.gea.gov.sa/events/",
+      "status": 403,
+      "error": null,
+      "apiHints": [],
+      "finalUrl": "https://www.gea.gov.sa/events/",
+      "title": "تعذر الوصول إلى الصفحة | Access Unavailable",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "",
+      "ogImage": "",
+      "robots": "",
+      "canonical": "",
+      "lang": "en",
+      "dir": "rtl",
+      "jsonTypes": [],
+      "headings": [
+        "H1:Access Unavailable",
+        "H1:تعذر الوصول إلى الصفحة"
+      ],
+      "counts": {
+        "links": 0,
+        "images": 2,
+        "jsonLd": 0
+      },
+      "keywordSignals": [],
+      "bodySample": "تعذر الوصول إلى الصفحة Access Unavailable The requested resource is currently unavailable. Please try again later. تعذر الوصول إلى الصفحة الصفحة المطلوبة غير متاحة حالياً. يرجى المحاولة في وقت لاحق."
+    },
+    {
+      "name": "Evento",
+      "url": "https://www.evento.sa/home",
+      "status": 200,
+      "error": null,
+      "apiHints": [
+        "https://api-dev.evento.sa/banners/public",
+        "https://api.evento.sa/banners/public",
+        "https://api.evento.sa/unified-events",
+        "https://api.evento.sa/regions",
+        "https://api.evento.sa/common/eventType"
+      ],
+      "finalUrl": "https://www.evento.sa/home",
+      "title": "إيفينتو | فعاليات ومباريات المملكة",
+      "description": "فعاليات ومباريات المملكة في مكان واحد - احجز تذكرتك الآن مع إيفينتو",
+      "ogTitle": "إيفينتو | فعاليات ومباريات المملكة",
+      "ogDescription": "تذاكر فعاليات، ايفنتو، حجز تذاكر، فعاليات السعودية، مباريات رياضية",
+      "ogImage": "https://evento.sa/assets/images/evento-logo.webp",
+      "robots": "",
+      "canonical": "",
+      "lang": "ar",
+      "dir": "rtl",
+      "jsonTypes": [],
+      "headings": [],
+      "counts": {
+        "links": 11,
+        "images": 36,
+        "jsonLd": 0
+      },
+      "keywordSignals": [
+        "اليوم",
+        "غدا",
+        "هذا الاسبوع",
+        "هذه العطلة",
+        "هذا الشهر",
+        "الرياض",
+        "معرض",
+        "ترفيهي"
+      ],
+      "bodySample": "تصفّح الفعاليات تذاكري الدعم الفني تعرّف علينا ايفينتو للأعمال تسجيل الدخول / تسجيل ابرز الفعاليات الخاصة – لا تفوتها!! تصفّح ايفينتو من الإثارة الرياضية إلى الترفيه، جميع الفعاليات بانتظارك هنا! 6 نتيجة ترتيب حسب ترتيب حسب الجديد المناطق اختر منطقة الفئة ترفيهي لقاء معرض التاريخ اليوم غدا هذا الاسبوع هذه العطلة هذا الشهر تاريخ مخصص ترفيهي بداية من 35.00 مجتمع مَخرج | مسألة حياة أو موت... مع يعقوب الفرحان منطقة الرياض - الرياض يوليو 13, 2026 - يوليو 13, 2026 لقاء بداية من 35.00 مجتمع منظومة | الذكاء الاصطناعي في الموارد البشرية فرصة أم تحدي؟ منطقة الرياض - الرياض يوليو 14, 2026 - يوليو 14, 202"
+    },
+    {
+      "name": "MC Upcoming Events",
+      "url": "https://mc.gov.sa/ar/mediacenter/Events/UpcomingEvents/pages/default.aspx",
+      "status": 200,
+      "error": null,
+      "apiHints": [
+        "https://mc.gov.sa/Style%20Library/ar-sa/styles/css/govstamp.css",
+        "https://mc.gov.sa/Style%20Library/ar-sa/styles/css/normalize.min.css",
+        "https://mc.gov.sa/Style%20Library/ar-sa/styles/css/corev15.css",
+        "https://mc.gov.sa/Style%20Library/ar-sa/styles/css/bootstrap-rtl.min.css",
+        "https://mc.gov.sa/Style%20Library/ar-sa/styles/css/bootstrap.min.css",
+        "https://mc.gov.sa/Style%20Library/ar-sa/Styles/css/jquery-ui.min.css",
+        "https://mc.gov.sa/Style%20Library/ar-sa/styles/css/mci-icons.min.css",
+        "https://mc.gov.sa/Style%20Library/ar-sa/Styles/css/jquery.fancybox.min.css",
+        "https://mc.gov.sa/Style%20Library/ar-sa/styles/css/swiper.min.css",
+        "https://mc.gov.sa/Style%20Library/ar-sa/Styles/css/select2.min.css",
+        "https://mc.gov.sa/Style%20Library/ar-sa/Styles/css/animate.min.css",
+        "https://mc.gov.sa/Style%20Library/ar-sa/styles/css/stylehaj.css"
+      ],
+      "finalUrl": "https://mc.gov.sa/ar/mediacenter/Events/UpcomingEvents/pages/default.aspx",
+      "title": "الفعاليات القادمة",
+      "description": "",
+      "ogTitle": "",
+      "ogDescription": "وزارة التجارة",
+      "ogImage": "https://mc.gov.sa/ar/PublishingImages/default-logo.jpg",
+      "robots": "INDEX,FOLLOW",
+      "canonical": "https://mc.gov.sa:443/ar/mediacenter/Events/UpcomingEvents/Pages/default.aspx",
+      "lang": "ar",
+      "dir": "rtl",
+      "jsonTypes": [],
+      "headings": [
+        "H1:الفعاليات القادمة",
+        "H2:ماذا تريد ان تبحث؟"
+      ],
+      "counts": {
+        "links": 118,
+        "images": 18,
+        "jsonLd": 0
+      },
+      "keywordSignals": [
+        "اليوم",
+        "فعاليات الشهر",
+        "فعاليات السنة",
+        "ملتقى"
+      ],
+      "bodySample": "موقع حكومي رسمي تابع لحكومة المملكة العربية السعودية كيف تتحقق تسجيل الدخول أسئلة شائعة En عن الوزارة الفروع الأنظمة واللوائح الأدلة والإجراءات الخدمات الإلكترونية مركز المعرفة وزارة التجارة مركز المعرفة الفعاليات الفعاليات القادمة استمع الفعاليات القادمة الفعاليات القادمة فعاليات الشهر فعاليات السنة 14 أكتوبر 2026 14 أكتوبر 2026 سيتم تحديدة لاحقاً ملتقى ملتقى اليوم العالمي المواصفات 2026 المزيد 12 نوفمبر 2026 12 نوفمبر 2026 سيتم تحديدة لاحقاً ملتقى ملتقى اليوم العالمي للجودة 2026 المزيد ​​​​​​​ آخر تعديل 21 رجب 1440 تقييم المحتوى عدد الأصوات: 4349 شارك على نظرة عامة من نحن كيفية الاستخدام سيا"
+    }
+  ]
+}

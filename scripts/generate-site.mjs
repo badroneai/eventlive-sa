@@ -750,10 +750,14 @@ function baseHead({ title, description, canonical, image, manifestHref = './mani
   <title>${escapeHtml(title)}</title>
   <meta name="description" content="${escapeHtml(metaDescription)}" />
   <meta name="application-name" content="${platformName}" />
+  <meta name="author" content="${platformName}" />
+  <meta name="publisher" content="${platformName}" />
   <meta name="theme-color" content="#0d6b52" />
   <meta name="color-scheme" content="light" />
-  ${noindex ? '<meta name="robots" content="noindex,nofollow" />' : ''}
+  ${noindex ? '<meta name="robots" content="noindex,nofollow" />' : '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />'}
   <link rel="canonical" href="${canonical}" />
+  <link rel="alternate" hreflang="ar-SA" href="${canonical}" />
+  <link rel="alternate" hreflang="x-default" href="${canonical}" />
   <link rel="manifest" href="${escapeHtml(manifestHref)}" />
   <link rel="alternate" type="text/calendar" title="EventLive - تقويم الفعاليات" href="${escapeHtml(`${resourcePrefix}events.ics`)}" />
   <link rel="alternate" type="application/rss+xml" title="EventLive - RSS" href="${escapeHtml(`${resourcePrefix}feeds/all.xml`)}" />
@@ -766,6 +770,7 @@ function baseHead({ title, description, canonical, image, manifestHref = './mani
   <meta property="og:description" content="${escapeHtml(metaDescription)}" />
   <meta property="og:image" content="${escapeHtml(shareImage)}" />
   <meta property="og:image:alt" content="${escapeHtml(safeImageAlt)}" />
+  <meta property="og:updated_time" content="${escapeHtml(buildAt)}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${escapeHtml(title)}" />
   <meta name="twitter:description" content="${escapeHtml(metaDescription)}" />
@@ -896,7 +901,9 @@ function hideOwnerOnlyPublicLinks(html) {
 
 function isOwnerOnlyPage(filePath) {
   const relativePath = path.relative(distDir, filePath).replace(/\\/g, '/');
-  return ['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html', 'owner-status.html'].includes(relativePath);
+  const pageName = path.basename(String(filePath));
+  const ownerOnlyPages = new Set(['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html', 'owner-status.html']);
+  return ownerOnlyPages.has(relativePath) || ownerOnlyPages.has(pageName);
 }
 
 function runtimeAttrs(event) {
@@ -3637,8 +3644,19 @@ function searchIntentPageConfigs(events) {
   const now = Date.now();
   const active = sortEventsByStart(events.filter((event) => event.status !== 'ended'));
   const today = eventsForWindow(events, now, 24);
+  const tomorrow = eventsForWindow(events, now + (24 * 60 * 60 * 1000), 24);
+  const thisMonth = eventsForWindow(events, now, 31 * 24);
+  const weekend = active.filter((event) => {
+    const date = dateValue(event.starts_at);
+    if (!date) return false;
+    const diffDays = Math.floor((date.getTime() - now) / 86400000);
+    const weekday = new Intl.DateTimeFormat('en-US', { weekday: 'short', timeZone: 'Asia/Riyadh' }).format(date);
+    return diffDays >= 0 && diffDays <= 21 && ['Fri', 'Sat'].includes(weekday);
+  });
   const cityMatches = (cityKey) => active.filter((event) => citySlug(event.city || '') === cityKey || event.city_slug === cityKey);
   const categoryMatches = (pattern) => active.filter((event) => pattern.test(`${event.category || ''} ${event.category_label || ''} ${event.title || ''} ${event.summary || ''}`));
+  const ticketedMatches = active.filter((event) => event.ticket_url || event.registration_url || /تذاكر|احجز|سجل|ticket|register|registration/i.test(`${event.title || ''} ${event.summary || ''} ${event.price_label || ''}`));
+  const freeMatches = active.filter((event) => /مجاني|مجاناً|بدون رسوم|free/i.test(`${event.title || ''} ${event.summary || ''} ${event.price_label || ''}`));
   return [
     {
       file: 'saudi-events-today.html',
@@ -3653,6 +3671,48 @@ function searchIntentPageConfigs(events) {
         ['هل يمكن إضافة الفعالية للتقويم؟', 'كل صفحة فعالية توفر رابط تقويم ICS عند توفر بيانات البداية والنهاية.']
       ],
       related: [['كل الفعاليات', './events.html'], ['هذا الأسبوع', './this-week.html'], ['فعاليات اليوم', './today-events.html']]
+    },
+    {
+      file: 'saudi-events-tomorrow.html',
+      title: 'فعاليات السعودية غدًا',
+      eyebrow: 'غدًا',
+      h1: 'فعاليات السعودية غدًا',
+      description: 'صفحة مخصصة للباحثين عن فعاليات السعودية غدًا، تعرض أقرب المواعيد القادمة مع المدينة والموقع والمصدر ورابط التقويم.',
+      events: tomorrow.length ? tomorrow : active.slice(0, 24),
+      faq: [
+        ['كيف تعرض EventLive فعاليات غدًا؟', 'تعتمد الصفحة على وقت البداية بتوقيت السعودية وتحدث نتائجها مع كل بناء جديد للكتالوج.'],
+        ['ماذا لو لم توجد فعاليات غدًا؟', 'تعرض الصفحة أقرب الفعاليات القادمة بدل ترك الزائر في صفحة فارغة.'],
+        ['هل يمكن حفظ فعالية الغد؟', 'نعم، صفحة كل فعالية توفر رابط تقويم عند توفر بداية ونهاية واضحتين.']
+      ],
+      related: [['فعاليات السعودية اليوم', './saudi-events-today.html'], ['هذا الأسبوع', './this-week.html'], ['كل الفعاليات', './events.html']]
+    },
+    {
+      file: 'saudi-events-weekend.html',
+      title: 'فعاليات السعودية نهاية الأسبوع',
+      eyebrow: 'الويكند',
+      h1: 'فعاليات السعودية نهاية الأسبوع',
+      description: 'أقرب فعاليات نهاية الأسبوع في السعودية على EventLive، مناسبة لمن يبحث عن فعاليات الجمعة والسبت مع وقت حي ومصدر واضح.',
+      events: weekend.length ? weekend.slice(0, 36) : active.slice(0, 24),
+      faq: [
+        ['ما المقصود بنهاية الأسبوع؟', 'تتعامل EventLive مع الجمعة والسبت كنافذة نهاية الأسبوع داخل السعودية.'],
+        ['هل تشمل الصفحة الرياض وجدة والمدن الأخرى؟', 'نعم، تظهر أي فعالية منشورة تنطبق على نافذة نهاية الأسبوع من كل المدن المتوفرة.'],
+        ['هل هذه صفحة تذاكر؟', 'لا، هي صفحة اكتشاف وحضور؛ روابط التذاكر أو التسجيل تظهر عندما يوفرها المصدر.']
+      ],
+      related: [['فعاليات الرياض اليوم', './riyadh-events-today.html'], ['فعاليات جدة', './jeddah-events.html'], ['هذا الشهر', './saudi-events-this-month.html']]
+    },
+    {
+      file: 'saudi-events-this-month.html',
+      title: 'فعاليات السعودية هذا الشهر',
+      eyebrow: 'هذا الشهر',
+      h1: 'فعاليات السعودية هذا الشهر',
+      description: 'دليل فعاليات السعودية هذا الشهر، يجمع المؤتمرات والمعارض والدورات والفعاليات العامة مع تحديثات EventLive الدورية.',
+      events: thisMonth.length ? thisMonth.slice(0, 48) : active.slice(0, 36),
+      faq: [
+        ['هل هذه الصفحة تتغير شهريًا؟', 'نعم، تعتمد على الكتالوج الحالي وتعرض أقرب فعاليات الشهر بناء على وقت البناء.'],
+        ['هل تظهر الفعاليات المنتهية هنا؟', 'لا، هذه الصفحة تركز على الفعاليات النشطة والقادمة، بينما تبقى الفعاليات المنتهية في صفحاتها الطبيعية.'],
+        ['هل يمكن تصفية النتائج حسب المدينة؟', 'يمكن الانتقال من البطاقة إلى صفحة الفعالية أو فتح صفحة المدن للوصول إلى كل مدينة.']
+      ],
+      related: [['كل الفعاليات', './events.html'], ['المدن', './cities.html'], ['التصنيفات', './categories.html']]
     },
     {
       file: 'riyadh-events-today.html',
@@ -3695,6 +3755,62 @@ function searchIntentPageConfigs(events) {
         ['كيف أميز الدورة القادمة؟', 'تعرض البطاقة حالة الوقت وموعد البداية، وتعرض صفحة التفاصيل رابط التقويم والمصدر.']
       ],
       related: [['تصنيف التدريب التقني', './categories/technology-training.html'], ['للطلاب والخريجين', './for/students.html'], ['للتقنيين', './for/tech.html']]
+    },
+    {
+      file: 'saudi-ticketed-events.html',
+      title: 'فعاليات السعودية بتذاكر أو تسجيل',
+      eyebrow: 'تذاكر وتسجيل',
+      h1: 'فعاليات السعودية بتذاكر أو تسجيل',
+      description: 'مسار مخصص للفعاليات التي يظهر لها رابط تذاكر أو تسجيل أو إشارة حجز، مع الحفاظ على المصدر الرسمي أو المعتمد لكل فعالية.',
+      events: ticketedMatches.slice(0, 48),
+      faq: [
+        ['هل EventLive يبيع التذاكر؟', 'لا، EventLive يعرض رابط التذاكر أو التسجيل عند توفره ويترك عملية الشراء أو التسجيل للجهة المالكة.'],
+        ['هل كل فعالية هنا مدفوعة؟', 'ليس بالضرورة؛ قد تكون الفعالية مجانية لكنها تتطلب تسجيلًا مسبقًا.'],
+        ['كيف أتأكد من الرابط؟', 'افتح صفحة التفاصيل واقرأ المصدر والرابط الرسمي قبل التسجيل أو الشراء.']
+      ],
+      related: [['كل الفعاليات', './events.html'], ['مركز الثقة', './readiness.html'], ['للمنظمين', './organizers.html']]
+    },
+    {
+      file: 'saudi-conferences-exhibitions.html',
+      title: 'المعارض والمؤتمرات في السعودية',
+      eyebrow: 'معارض ومؤتمرات',
+      h1: 'المعارض والمؤتمرات في السعودية',
+      description: 'صفحة تجمع المعارض والمؤتمرات والملتقيات والمنتديات في السعودية، وهي مستوحاة من قوة مصادر مثل SCEGA ووزارة التجارة وNEC.',
+      events: categoryMatches(/مؤتمر|ملتقى|معرض|منتدى|conference|forum|expo|exhibition|summit|congress/i).slice(0, 48),
+      faq: [
+        ['هل تشمل الصفحة فعاليات الأعمال؟', 'نعم، تجمع الصفحة المعارض والمؤتمرات والملتقيات والمنتديات عندما تكون منشورة في كتالوج EventLive.'],
+        ['هل تعتمد EventLive على مصدر رسمي؟', 'تعرض صفحة كل فعالية المصدر أو الدليل المستخدم، ولا تنشر إشارات اكتشافية وحدها كفعالية مؤكدة.'],
+        ['هل يمكن للجهات المنظمة إضافة مؤتمر؟', 'نعم، يمكن استخدام صفحة إضافة فعالية لإرسال رابط المصدر أو برنامج الجلسات.']
+      ],
+      related: [['إضافة فعالية', './organizer-intake.html'], ['منهجية المصادر', './guide-event-sources-methodology.html'], ['كل التصنيفات', './categories.html']]
+    },
+    {
+      file: 'saudi-sports-matches.html',
+      title: 'المباريات والفعاليات الرياضية في السعودية',
+      eyebrow: 'رياضة ومباريات',
+      h1: 'المباريات والفعاليات الرياضية في السعودية',
+      description: 'مسار للباحثين عن المباريات والبطولات والمناطق الجماهيرية والفعاليات الرياضية في السعودية مع الوقت والموقع والمصدر.',
+      events: categoryMatches(/رياض|مباراة|كأس|بطولة|sport|match|football|basketball|fifa|fan zone/i).slice(0, 48),
+      faq: [
+        ['هل تعرض EventLive نتائج المباريات؟', 'EventLive يركز على وقت ومكان الفعالية وروابط الحضور، وليس نتائج المباريات المباشرة.'],
+        ['هل تشمل الصفحة مناطق المشجعين؟', 'نعم، إذا كانت منشورة كمناسبة بوقت ومكان واضحين ضمن الكتالوج.'],
+        ['هل يمكن إضافة المباراة للتقويم؟', 'نعم، عندما تتوفر بيانات وقت واضحة، توفر صفحة التفاصيل ملف تقويم.']
+      ],
+      related: [['فعاليات السعودية اليوم', './saudi-events-today.html'], ['كل الفعاليات', './events.html'], ['المدن', './cities.html']]
+    },
+    {
+      file: 'free-saudi-events.html',
+      title: 'فعاليات مجانية في السعودية',
+      eyebrow: 'مجاني',
+      h1: 'فعاليات مجانية في السعودية',
+      description: 'صفحة للفعاليات والدورات والبرامج التي تظهر كمجانية أو بدون رسوم في بيانات EventLive، مع رابط المصدر والتوقيت.',
+      events: freeMatches.length ? freeMatches.slice(0, 48) : active.slice(0, 24),
+      faq: [
+        ['هل كل الفعاليات هنا مجانية تمامًا؟', 'تعرض الصفحة الفعاليات التي تحتوي بياناتها على إشارة مجانية أو بدون رسوم، ويجب تأكيد التفاصيل من المصدر.'],
+        ['هل تحتاج بعض الفعاليات المجانية إلى تسجيل؟', 'نعم، قد تكون مجانية لكنها تتطلب تسجيلًا مسبقًا لدى الجهة المنظمة.'],
+        ['هل يمكن اقتراح فعالية مجانية؟', 'يمكن للجهة المنظمة إرسال رابط المصدر عبر صفحة إضافة فعالية.']
+      ],
+      related: [['دورات تقنية أونلاين', './online-tech-courses.html'], ['إضافة فعالية', './organizer-intake.html'], ['كل الفعاليات', './events.html']]
     },
     {
       file: 'saudi-events-faq.html',
@@ -5191,9 +5307,16 @@ Important public pages:
 - Categories: ${siteUrl}/categories.html
 - Guides: ${siteUrl}/guides.html
 - Saudi events today: ${siteUrl}/saudi-events-today.html
+- Saudi events tomorrow: ${siteUrl}/saudi-events-tomorrow.html
+- Saudi weekend events: ${siteUrl}/saudi-events-weekend.html
+- Saudi events this month: ${siteUrl}/saudi-events-this-month.html
 - Riyadh events today: ${siteUrl}/riyadh-events-today.html
 - Jeddah events: ${siteUrl}/jeddah-events.html
 - Online tech courses: ${siteUrl}/online-tech-courses.html
+- Ticketed and registration events: ${siteUrl}/saudi-ticketed-events.html
+- Conferences and exhibitions: ${siteUrl}/saudi-conferences-exhibitions.html
+- Sports and matches: ${siteUrl}/saudi-sports-matches.html
+- Free Saudi events: ${siteUrl}/free-saudi-events.html
 - Saudi events FAQ: ${siteUrl}/saudi-events-faq.html
 - Organizers: ${siteUrl}/organizers.html
 - Readiness: ${siteUrl}/readiness.html
@@ -5335,6 +5458,41 @@ function injectGlobalFeedAlternates(html, filePath) {
   return html.replace(/<\/head>/i, `  ${links}\n</head>`);
 }
 
+function enhanceSeoHead(html, filePath) {
+  const canonical = attrValue(html, /<link\b[^>]*rel=["']canonical["'][^>]*href=["']([^"']+)["'][^>]*>/i)
+    || attrValue(html, /<link\b[^>]*href=["']([^"']+)["'][^>]*rel=["']canonical["'][^>]*>/i);
+  if (!canonical || !canonical.startsWith(siteUrl)) return html;
+
+  let next = html;
+  const ownerOnly = isOwnerOnlyPage(filePath);
+  const hasRobots = /<meta\b[^>]*name=["']robots["'][^>]*>/i.test(next);
+  if (!hasRobots) {
+    const robots = ownerOnly
+      ? '<meta name="robots" content="noindex,nofollow" />'
+      : '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />';
+    next = next.replace(/(<link\b[^>]*rel=["']canonical["'][^>]*>)/i, `$1\n  ${robots}`);
+  } else {
+    const robots = ownerOnly
+      ? '<meta name="robots" content="noindex,nofollow" />'
+      : '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />';
+    next = next.replace(/<meta\b[^>]*name=["']robots["'][^>]*>/i, robots);
+  }
+
+  if (!/<link\b[^>]*hreflang=["']ar-SA["'][^>]*>/i.test(next)) {
+    next = next.replace(/(<link\b[^>]*rel=["']canonical["'][^>]*>)/i, `$1\n  <link rel="alternate" hreflang="ar-SA" href="${escapeHtml(canonical)}" />`);
+  }
+  if (!/<link\b[^>]*hreflang=["']x-default["'][^>]*>/i.test(next)) {
+    next = next.replace(/(<link\b[^>]*rel=["']canonical["'][^>]*>)/i, `$1\n  <link rel="alternate" hreflang="x-default" href="${escapeHtml(canonical)}" />`);
+  }
+  if (!/<meta\b[^>]*property=["']og:updated_time["'][^>]*>/i.test(next)) {
+    next = next.replace(/<\/head>/i, `  <meta property="og:updated_time" content="${escapeHtml(buildAt)}" />\n</head>`);
+  }
+  if (!/<meta\b[^>]*name=["']author["'][^>]*>/i.test(next)) {
+    next = next.replace(/<\/head>/i, `  <meta name="author" content="${platformName}" />\n</head>`);
+  }
+  return next;
+}
+
 function protectTargetBlankLinks(html) {
   return html.replace(/<a\b([^>]*\btarget=["']_blank["'][^>]*)>/gi, (tag, attrs) => {
     const relMatch = attrs.match(/\brel=["']([^"']*)["']/i);
@@ -5424,7 +5582,7 @@ function pruneExcludedPublicArtifacts(events) {
 }
 
 function decorateBrandHtml(html, filePath) {
-  let next = injectGlobalFeedAlternates(injectPlatformWebSiteJsonLd(injectFallbackJsonLd(normalizeSeoMetaDescription(normalizeBrandText(html)))), filePath);
+  let next = enhanceSeoHead(injectGlobalFeedAlternates(injectPlatformWebSiteJsonLd(injectFallbackJsonLd(normalizeSeoMetaDescription(normalizeBrandText(html)))), filePath), filePath);
   next = next.replace(/<style id="eventlive-brand-pulse">[\s\S]*?<\/style>/g, '');
   next = next.replace(/<script defer data-domain="eventme\.live" src="https:\/\/plausible\.io\/js\/script\.tagged-events\.js"><\/script>/g, '');
   next = next.replace(/<!-- Privacy-friendly analytics by Plausible -->\s*/g, '');

@@ -66,9 +66,16 @@ for (const expectedUrl of [
   `${siteUrl}/sitemap.xml`,
   `${siteUrl}/organizers.html`,
   `${siteUrl}/saudi-events-today.html`,
+  `${siteUrl}/saudi-events-tomorrow.html`,
+  `${siteUrl}/saudi-events-weekend.html`,
+  `${siteUrl}/saudi-events-this-month.html`,
   `${siteUrl}/riyadh-events-today.html`,
   `${siteUrl}/jeddah-events.html`,
   `${siteUrl}/online-tech-courses.html`,
+  `${siteUrl}/saudi-ticketed-events.html`,
+  `${siteUrl}/saudi-conferences-exhibitions.html`,
+  `${siteUrl}/saudi-sports-matches.html`,
+  `${siteUrl}/free-saudi-events.html`,
   `${siteUrl}/saudi-events-faq.html`
 ]) {
   assert.match(llms, new RegExp(expectedUrl.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `llms.txt must include ${expectedUrl}`);

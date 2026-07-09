@@ -20,9 +20,16 @@ const pages = [
   { file: 'audiences.html', minBlocks: 4, types: ['CollectionPage', 'Dataset', 'ItemList'], datasetUrl: 'https://eventme.live/audiences.json' },
   { file: 'source-coverage-gaps.html', minBlocks: 1, types: ['WebPage'] },
   { file: 'saudi-events-today.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },
+  { file: 'saudi-events-tomorrow.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },
+  { file: 'saudi-events-weekend.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },
+  { file: 'saudi-events-this-month.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },
   { file: 'riyadh-events-today.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 5 },
   { file: 'jeddah-events.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },
   { file: 'online-tech-courses.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 5 },
+  { file: 'saudi-ticketed-events.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 5 },
+  { file: 'saudi-conferences-exhibitions.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 5 },
+  { file: 'saudi-sports-matches.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 5 },
+  { file: 'free-saudi-events.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },
   { file: 'saudi-events-faq.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 5 }
 ];
 
@@ -36,6 +43,14 @@ function typeOf(entry) {
 }
 
 function assertDiscoverabilityHead(html, pageFile) {
+  const ownerOnly = /^(sources|methodology|trust|source-health|owner-status)\.html$/.test(pageFile);
+  if (ownerOnly) {
+    assert.match(html, /<meta name="robots" content="noindex,nofollow"/, `${pageFile} must stay owner-only in robots meta`);
+  } else {
+    assert.match(html, /<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"/, `${pageFile} must expose rich-result-friendly robots directives`);
+  }
+  assert.match(html, /<link rel="alternate" hreflang="ar-SA" href="https:\/\/eventme\.live\/[^"]*"/, `${pageFile} must expose ar-SA hreflang`);
+  assert.match(html, /<meta property="og:updated_time" content="[^"]+"/, `${pageFile} must expose OpenGraph update time`);
   assert.match(html, /rel="alternate" type="text\/calendar"[^>]+events\.ics/, `${pageFile} must expose the all-events calendar alternate`);
   assert.match(html, /rel="alternate" type="application\/rss\+xml"[^>]+feeds\/all\.xml/, `${pageFile} must expose the all-events RSS alternate`);
   assert.match(html, /rel="alternate" type="application\/feed\+json"[^>]+feeds\/all\.json/, `${pageFile} must expose the all-events JSON Feed alternate`);
