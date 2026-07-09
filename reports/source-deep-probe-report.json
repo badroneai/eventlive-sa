@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T13:41:23.952Z",
+  "generated_at": "2026-07-09T15:32:55.456Z",
   "registry": "data/source_registry.json",
   "source_ingestion_plan": "reports/source-ingestion-plan.json",
   "probe_limit": 28,
@@ -60,7 +60,7 @@
         "status": 200,
         "final_url": "https://ncci.org.sa/category/events/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 118076,
+        "bytes": 118206,
         "title": "الفعاليات – الغرفة التجارية بعرعر | غرفة الحدود الشمالية",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -196,7 +196,7 @@
         "status": 200,
         "final_url": "https://www.tabukchamber.sa/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 111905,
+        "bytes": 111907,
         "title": "الغرفة التجارية بتبوك | TABUK CHAMBER",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -214,6 +214,40 @@
         ]
       },
       "extraction_score": 48,
+      "recommendation": "probe-hidden-api-or-html-table"
+    },
+    {
+      "id": "visit-saudi-calendar-pdf",
+      "name": "Visit Saudi Calendar PDF",
+      "priority": 34,
+      "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar.pdf",
+      "trust_level": "official",
+      "fetch_method": "manual-review",
+      "candidate_gate": "extraction",
+      "intake_policy": "official-feed-preferred",
+      "signals": {
+        "http_ok": true,
+        "status": 200,
+        "final_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar.pdf",
+        "content_type": "application/pdf",
+        "bytes": 51429115,
+        "title": "",
+        "blocked_reason": "",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 3,
+        "date_snippets": [
+          "2019/10/01",
+          "2026-06-17",
+          "calendarpdf",
+          "calendarpdf",
+          "2026-06-17",
+          "2026-06-17"
+        ]
+      },
+      "extraction_score": 46,
       "recommendation": "probe-hidden-api-or-html-table"
     },
     {
@@ -245,40 +279,6 @@
           "DATE",
           "date information about Sela?",
           "dateEmail(_email)) { var form_data = $(\".Submit\").serialize();"
-        ]
-      },
-      "extraction_score": 46,
-      "recommendation": "probe-hidden-api-or-html-table"
-    },
-    {
-      "id": "aseer-season-asda",
-      "name": "Aseer Season / Asir Development Authority",
-      "priority": 42,
-      "url": "https://www.asda.gov.sa/",
-      "trust_level": "official",
-      "fetch_method": "manual-review",
-      "candidate_gate": "source-evidence",
-      "intake_policy": "monitor-public",
-      "signals": {
-        "http_ok": true,
-        "status": 200,
-        "final_url": "https://www.asda.gov.sa/en",
-        "content_type": "text/html; charset=utf-8",
-        "bytes": 209090,
-        "title": "Aseer Development Authority | Qimam wa Shiyam Strategy",
-        "blocked_reason": "",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 32,
-        "date_snippets": [
-          "calendar icon\" loading=\"lazy\" width=\"24\" height=\"24\" decoding=\"async\" data-nimg=\"1\" clas",
-          "calendar.0x6cub0gfztn3.svg\"/>",
-          "date information on events, experiences, trails, and tourism activities across the r",
-          "dated: 03/05/2026 – 4:13 PM (Saudi Arabia Time)",
-          "dated: 03/05/2026 – 4:13 PM (Saudi Arabia Time)",
-          "date\\\":\\\"2025-10-07T12:58:42\\\",\\\"date_gmt\\\":\\\"2025-10-07T09:58:42\\\",\\\"guid\\\":{\\\"rend"
         ]
       },
       "extraction_score": 46,
@@ -332,7 +332,7 @@
         "status": 200,
         "final_url": "https://www.kaust.edu.sa/en/",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 85624,
+        "bytes": 85625,
         "title": "KAUST | A top research university in the Middle East",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -537,7 +537,7 @@
         "content_type": "",
         "bytes": 0,
         "title": "",
-        "blocked_reason": "fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed",
+        "blocked_reason": "fetch failed TypeError: fetch failed",
         "structured_scripts": 0,
         "structured_events": 0,
         "google_calendar_links": 0,
@@ -546,7 +546,7 @@
         "date_snippets": []
       },
       "extraction_score": -23,
-      "recommendation": "blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed"
+      "recommendation": "blocked-or-protected:fetch failed TypeError: fetch failed"
     },
     {
       "id": "saudi-digital-academy",
@@ -576,33 +576,6 @@
       "recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed"
     },
     {
-      "id": "visit-saudi-calendar-pdf",
-      "name": "Visit Saudi Calendar PDF",
-      "priority": 34,
-      "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar.pdf",
-      "trust_level": "official",
-      "fetch_method": "manual-review",
-      "candidate_gate": "extraction",
-      "intake_policy": "official-feed-preferred",
-      "signals": {
-        "http_ok": false,
-        "status": 0,
-        "final_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar.pdf",
-        "content_type": "",
-        "bytes": 0,
-        "title": "",
-        "blocked_reason": "timeout",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 0,
-        "date_snippets": []
-      },
-      "extraction_score": -35,
-      "recommendation": "blocked-or-protected:timeout"
-    },
-    {
       "id": "qiddiya-events",
       "name": "Qiddiya Events",
       "priority": 35,
@@ -616,7 +589,7 @@
         "status": 403,
         "final_url": "https://qiddiya.com/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 5961,
+        "bytes": 5964,
         "title": "Attention Required! | Cloudflare",
         "blocked_reason": "http-403",
         "structured_scripts": 0,
@@ -628,6 +601,33 @@
       },
       "extraction_score": -35,
       "recommendation": "blocked-or-protected:http-403"
+    },
+    {
+      "id": "aseer-season-asda",
+      "name": "Aseer Season / Asir Development Authority",
+      "priority": 42,
+      "url": "https://www.asda.gov.sa/",
+      "trust_level": "official",
+      "fetch_method": "manual-review",
+      "candidate_gate": "source-evidence",
+      "intake_policy": "monitor-public",
+      "signals": {
+        "http_ok": false,
+        "status": 0,
+        "final_url": "https://www.asda.gov.sa/",
+        "content_type": "",
+        "bytes": 0,
+        "title": "",
+        "blocked_reason": "fetch failed TypeError: fetch failed",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 0,
+        "date_snippets": []
+      },
+      "extraction_score": -35,
+      "recommendation": "blocked-or-protected:fetch failed TypeError: fetch failed"
     },
     {
       "id": "jeddah-season",
@@ -670,7 +670,7 @@
         "status": 403,
         "final_url": "https://www.spa.gov.sa/en/N2183027",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 5041,
+        "bytes": 5044,
         "title": "Attention Required! | Cloudflare",
         "blocked_reason": "http-403",
         "structured_scripts": 0,
@@ -716,12 +716,12 @@
       "reason": "score=48, gcal=0, structured=0, links=0"
     },
     {
-      "id": "sela-sea-expo",
+      "id": "visit-saudi-calendar-pdf",
       "recommendation": "probe-hidden-api-or-html-table",
       "reason": "score=46, gcal=0, structured=0, links=0"
     },
     {
-      "id": "aseer-season-asda",
+      "id": "sela-sea-expo",
       "recommendation": "probe-hidden-api-or-html-table",
       "reason": "score=46, gcal=0, structured=0, links=0"
     }

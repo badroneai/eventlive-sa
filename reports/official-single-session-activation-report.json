@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-09T13:53:56.401Z",
+  "generated_at": "2026-07-09T15:45:24.630Z",
   "max_duration_hours": 8,
   "totals": {
     "activated": 15,
-    "skipped_long": 7
+    "skipped_long": 8
   },
   "activated": [
     {
@@ -159,7 +159,13 @@
       "id": "event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج",
       "title": "تقييم سلامة المنتج التجميلي وملف معلومات المنتج",
       "source_label": "Saudi Food and Drug Authority Events",
-      "duration_hours": 28.5
+      "duration_hours": 33
+    },
+    {
+      "id": "event-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco",
+      "title": "The KAUST Imaging and Characterization Core Lab presents: AI for Microscopy Workshop",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "duration_hours": 95.98
     },
     {
       "id": "event-a-thousand-and-one",

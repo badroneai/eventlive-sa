@@ -1,10 +1,10 @@
 # EventLive Official Event Backlog Enrichment
-- Generated at: 2026-07-09T13:52:28.377Z
-- Targets: 76
-- Enriched: 76
+- Generated at: 2026-07-09T15:43:59.389Z
+- Targets: 77
+- Enriched: 77
 - Fetched: 16
 - Images: 61
-- Fetch failures: 60
+- Fetch failures: 61
 
 | Source | Event | Method | Image | Fetch |
 |---|---|---:|---:|---:|
@@ -65,6 +65,7 @@
 | Riyadh City Events | Saudi Food Manufacturing show | approved-source-row | yes | fetch failed |
 | Riyadh City Events | INDEX Saudi Arabia (Interior Design Trade Show) | approved-source-row | yes | fetch failed |
 | Riyadh City Events | Lighting Design & Technology Expo | approved-source-row | yes | fetch failed |
+| Saudi Universities and Technical Colleges | The KAUST Imaging and Characterization Core Lab presents: AI for Microscopy Workshop | official-page-meta | no | yes |
 | Riyadh City Events | Saudi Wood Expo | approved-source-row | yes | fetch failed |
 | Riyadh City Events | Saudi Industrial Series | approved-source-row | yes | fetch failed |
 | Riyadh City Events | Hotel & Hospitality Expo | approved-source-row | yes | fetch failed |
@@ -83,4 +84,4 @@
 | Invest Saudi Events | Web Summit Lisbon 2026 | official-page-meta | yes | yes |
 | Invest Saudi Events | Cityscape Global 2026 | approved-source-row | yes | HTTP 403 |
 | Saudi Universities and Technical Colleges | Future Frontiers for Businesses: Catalysts for Growth in a Transformational Economy | official-page-meta | no | yes |
-| Asharqia Chamber Events | معرض وظائف 2026 | official-page-meta | no | yes |
+| Asharqia Chamber Events | معرض وظائف 2026 | approved-source-row | no | fetch failed |

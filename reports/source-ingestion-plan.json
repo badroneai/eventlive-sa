@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T13:54:17.234Z",
+  "generated_at": "2026-07-09T15:45:48.750Z",
   "source_registry": "data/source_registry.json",
   "source_collection_report": "reports/source-collection-report.json",
   "totals": {
@@ -31,6 +31,29 @@
     "monthly-discovery": 5
   },
   "next_extractors": [
+    {
+      "id": "visit-saudi-calendar-pdf",
+      "name": "Visit Saudi Calendar PDF",
+      "priority": 34,
+      "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar.pdf",
+      "trust_level": "official",
+      "source_type": "national-calendar",
+      "intake_policy": "official-feed-preferred",
+      "candidate_gate": "extraction",
+      "fetch_method": "manual-review",
+      "ring": "extractor-backlog",
+      "cadence": "twice-weekly-extractor-probe",
+      "score": 112,
+      "has_active_collector": false,
+      "last_collection_status": "",
+      "last_extracted": 0,
+      "last_probe_status": 200,
+      "last_probe_score": 46,
+      "last_probe_recommendation": "probe-hidden-api-or-html-table",
+      "last_probe_blocked_reason": "",
+      "known_candidates": 0,
+      "next_action": "Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible."
+    },
     {
       "id": "jouf-chamber-events",
       "name": "Jouf Chamber Events",
@@ -95,10 +118,10 @@
       "last_extracted": 40,
       "last_probe_status": "",
       "last_probe_score": -23,
-      "last_probe_recommendation": "blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed",
-      "last_probe_blocked_reason": "fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed",
+      "last_probe_recommendation": "blocked-or-protected:fetch failed TypeError: fetch failed",
+      "last_probe_blocked_reason": "fetch failed TypeError: fetch failed",
       "known_candidates": 43,
-      "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
+      "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
     },
     {
       "id": "scega-exhibitions-conferences",
@@ -214,29 +237,6 @@
       "last_probe_blocked_reason": "http-403",
       "known_candidates": 0,
       "next_action": "Do not scrape now; latest probe is blocked-or-protected:http-403. Keep as partnership, browser/API investigation, or evidence lane."
-    },
-    {
-      "id": "visit-saudi-calendar-pdf",
-      "name": "Visit Saudi Calendar PDF",
-      "priority": 34,
-      "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar.pdf",
-      "trust_level": "official",
-      "source_type": "national-calendar",
-      "intake_policy": "official-feed-preferred",
-      "candidate_gate": "extraction",
-      "fetch_method": "manual-review",
-      "ring": "extractor-backlog",
-      "cadence": "twice-weekly-extractor-probe",
-      "score": 63,
-      "has_active_collector": false,
-      "last_collection_status": "",
-      "last_extracted": 0,
-      "last_probe_status": "",
-      "last_probe_score": -35,
-      "last_probe_recommendation": "blocked-or-protected:timeout",
-      "last_probe_blocked_reason": "timeout",
-      "known_candidates": 0,
-      "next_action": "Do not scrape now; latest probe is blocked-or-protected:timeout. Keep as partnership, browser/API investigation, or evidence lane."
     },
     {
       "id": "historic-jeddah-albalad",
@@ -1036,14 +1036,14 @@
       "cadence": "daily",
       "score": 98,
       "has_active_collector": true,
-      "last_collection_status": "ok",
+      "last_collection_status": "error",
       "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
       "known_candidates": 0,
-      "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
+      "next_action": "Run in the 6-hour sync ring; improve zero-yield extractors before widening."
     },
     {
       "id": "cst-events-news",
@@ -1080,16 +1080,16 @@
       "fetch_method": "manual-review",
       "ring": "extractor-backlog",
       "cadence": "twice-weekly-extractor-probe",
-      "score": 63,
+      "score": 112,
       "has_active_collector": false,
       "last_collection_status": "",
       "last_extracted": 0,
-      "last_probe_status": "",
-      "last_probe_score": -35,
-      "last_probe_recommendation": "blocked-or-protected:timeout",
-      "last_probe_blocked_reason": "timeout",
+      "last_probe_status": 200,
+      "last_probe_score": 46,
+      "last_probe_recommendation": "probe-hidden-api-or-html-table",
+      "last_probe_blocked_reason": "",
       "known_candidates": 0,
-      "next_action": "Do not scrape now; latest probe is blocked-or-protected:timeout. Keep as partnership, browser/API investigation, or evidence lane."
+      "next_action": "Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible."
     },
     {
       "id": "qiddiya-events",
@@ -1264,16 +1264,16 @@
       "fetch_method": "manual-review",
       "ring": "evidence-monitor",
       "cadence": "monthly-evidence-check",
-      "score": 59,
+      "score": 10,
       "has_active_collector": false,
       "last_collection_status": "",
       "last_extracted": 0,
-      "last_probe_status": 200,
-      "last_probe_score": 46,
-      "last_probe_recommendation": "probe-hidden-api-or-html-table",
-      "last_probe_blocked_reason": "",
+      "last_probe_status": "",
+      "last_probe_score": -35,
+      "last_probe_recommendation": "blocked-or-protected:fetch failed TypeError: fetch failed",
+      "last_probe_blocked_reason": "fetch failed TypeError: fetch failed",
       "known_candidates": 0,
-      "next_action": "Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible."
+      "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
     },
     {
       "id": "jeddah-season",
@@ -1336,12 +1336,12 @@
       "score": 54,
       "has_active_collector": false,
       "last_collection_status": "ok",
-      "last_extracted": 6,
+      "last_extracted": 7,
       "last_probe_status": 200,
       "last_probe_score": 36,
       "last_probe_recommendation": "probe-hidden-api-or-html-table",
       "last_probe_blocked_reason": "",
-      "known_candidates": 6,
+      "known_candidates": 7,
       "next_action": "Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible."
     },
     {
@@ -1477,10 +1477,10 @@
       "last_extracted": 40,
       "last_probe_status": "",
       "last_probe_score": -23,
-      "last_probe_recommendation": "blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed",
-      "last_probe_blocked_reason": "fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed",
+      "last_probe_recommendation": "blocked-or-protected:fetch failed TypeError: fetch failed",
+      "last_probe_blocked_reason": "fetch failed TypeError: fetch failed",
       "known_candidates": 43,
-      "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
+      "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
     },
     {
       "id": "monshaat-academy-programs",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T13:54:17.454Z",
+  "generated_at": "2026-07-09T15:45:49.037Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,18 +11,18 @@
   },
   "collection": {
     "basis": "source_collection_report",
-    "collected_at": "2026-07-09T13:47:15.427Z",
+    "collected_at": "2026-07-09T15:38:52.706Z",
     "freshness": "fresh",
-    "discovered": 129,
-    "written": 192
+    "discovered": 130,
+    "written": 193
   },
   "sources": {
     "total": 72,
     "attempted": 34,
     "collection_coverage_pct": 47,
     "healthy": 15,
-    "zero_yield": 9,
-    "errors": 10,
+    "zero_yield": 8,
+    "errors": 11,
     "not_collected": 38,
     "unattempted_high_priority": 3,
     "health": [
@@ -309,10 +309,10 @@
         "id": "saudi-space-agency-events",
         "name": "Saudi Space Agency Events",
         "priority": 32,
-        "status": "zero-yield",
+        "status": "collection-error",
         "extracted": 0,
         "candidates": 0,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "next_action": "fetch failed"
       },
       {
         "id": "cst-events-news",
@@ -427,8 +427,8 @@
         "name": "Saudi Universities and Technical Colleges",
         "priority": 45,
         "status": "healthy",
-        "extracted": 6,
-        "candidates": 6,
+        "extracted": 7,
+        "candidates": 7,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -677,27 +677,27 @@
     ]
   },
   "queue": {
-    "total": 192,
+    "total": 193,
     "ready_for_review": 0,
     "approved_for_catalog": 0,
-    "published_from_candidates": 163,
+    "published_from_candidates": 164,
     "actionable": 0,
     "stale_unpublished": 0,
     "duplicate_risk": 0,
     "needs_extraction": 0,
     "needs_evidence": 16,
     "by_review_status": {
-      "approved-for-catalog": 163,
+      "approved-for-catalog": 164,
       "evidence-captured": 13,
       "new": 16
     },
     "by_publication_gate": {
-      "catalog-review": 163,
+      "catalog-review": 164,
       "duplicate-review": 13,
       "source-evidence": 16
     },
     "by_confidence": {
-      "official": 161,
+      "official": 162,
       "public-listing": 13,
       "unverified": 16,
       "partner": 2
@@ -717,7 +717,7 @@
       "Monsha'at All Events": 3,
       "Tuwaiq Academy Bootcamps and Programs": 20,
       "Eye of Riyadh Events": 15,
-      "Saudi Universities and Technical Colleges": 6,
+      "Saudi Universities and Technical Colleges": 7,
       "MDLBEAST Events": 5,
       "Future Skills MCIT Catalogue": 4,
       "Saudi Food and Drug Authority Events": 7,

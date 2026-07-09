@@ -1,29 +1,21 @@
 {
   "schema": "eventlive.source-secondary-verification.v1",
-  "generated_at": "2026-07-09T13:51:25.605Z",
+  "generated_at": "2026-07-09T15:43:04.452Z",
   "source_candidates": "data/source_candidates.json",
   "source_ops_report": "reports/source-ops-report.json",
   "totals": {
-    "candidates_seen": 192,
-    "candidates_considered": 38,
-    "promoted": 1,
-    "official_evidence_promoted": 1,
+    "candidates_seen": 193,
+    "candidates_considered": 30,
+    "promoted": 0,
+    "official_evidence_promoted": 0,
     "official_programs_promoted": 0,
     "official_catalog_matches_promoted": 0,
-    "still_blocked": 37
+    "still_blocked": 30
   },
-  "promoted": [
-    {
-      "candidate_id": "candidate-misk-hub-programs-application-deadline-2030-leaders-20260712-68dd4c4c",
-      "title": "Application deadline: 2030 Leaders",
-      "kind": "official-source-evidence",
-      "evidence": "https://hub.misk.org.sa/programs/leadership/2030-leaders/",
-      "matched_catalog_event_id": "event-application-deadline-2030-leaders"
-    }
-  ],
+  "promoted": [],
   "still_blocked_by_reason": {
-    "not-secondary-verifiable": 8,
     "public-listing-needs-official-match": 13,
-    "needs-secondary-official-proof": 16
+    "needs-secondary-official-proof": 16,
+    "not-secondary-verifiable": 1
   }
 }

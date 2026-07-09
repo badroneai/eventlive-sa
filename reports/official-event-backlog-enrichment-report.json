@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-09T13:52:28.377Z",
+  "generated_at": "2026-07-09T15:43:59.389Z",
   "totals": {
-    "targets": 76,
-    "enriched": 76,
+    "targets": 77,
+    "enriched": 77,
     "fetched": 16,
     "images": 61,
-    "fetch_failures": 60
+    "fetch_failures": 61
   },
   "enriched": [
     {
@@ -579,6 +579,16 @@
       "fetch_reason": "fetch failed"
     },
     {
+      "id": "event-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco",
+      "title": "The KAUST Imaging and Characterization Core Lab presents: AI for Microscopy Workshop",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/521",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
       "id": "event-saudi-wood-expo",
       "title": "Saudi Wood Expo",
       "source_label": "Riyadh City Events",
@@ -762,11 +772,11 @@
       "id": "event-معرض-وظائف-2026",
       "title": "معرض وظائف 2026",
       "source_label": "Asharqia Chamber Events",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=344",
-      "fetched": true,
+      "fetched": false,
       "image": false,
-      "fetch_reason": ""
+      "fetch_reason": "fetch failed"
     }
   ],
   "failed": [
@@ -1129,6 +1139,12 @@
       "title": "Cityscape Global 2026",
       "source_url": "https://cityscapeglobal.com/",
       "reason": "HTTP 403"
+    },
+    {
+      "id": "event-معرض-وظائف-2026",
+      "title": "معرض وظائف 2026",
+      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=344",
+      "reason": "fetch failed"
     }
   ]
 }

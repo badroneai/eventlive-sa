@@ -1,8 +1,8 @@
 # EventLive Official Single-Session Activation
-- Generated at: 2026-07-09T13:53:56.401Z
+- Generated at: 2026-07-09T15:45:24.630Z
 - Max duration hours: 8
 - Activated: 15
-- Skipped long events: 7
+- Skipped long events: 8
 
 | Source | Event | Duration | Type |
 |---|---|---:|---|

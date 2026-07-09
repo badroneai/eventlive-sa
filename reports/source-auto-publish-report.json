@@ -1,67 +1,27 @@
 {
-  "published_at": "2026-07-09T13:51:25.722Z",
+  "published_at": "2026-07-09T15:43:04.593Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 192,
+  "candidates_seen": 193,
   "totals": {
-    "candidates_seen": 192,
-    "published": 10,
-    "linked_existing": 153,
+    "candidates_seen": 193,
+    "published": 2,
+    "linked_existing": 162,
     "blocked": 29,
-    "reconciled": 163
+    "reconciled": 164
   },
   "published": [
     {
-      "candidate_id": "candidate-visit-saudi-calendar-kashtah-20260627-0fa92e11",
-      "event_id": "event-kashtah",
-      "title": "Kashtah"
-    },
-    {
-      "candidate_id": "candidate-misk-hub-programs-application-deadline-2030-leaders-20260712-68dd4c4c",
-      "event_id": "event-application-deadline-2030-leaders-2",
-      "title": "Application deadline: 2030 Leaders"
-    },
-    {
-      "candidate_id": "candidate-riyadh-city-events-mishkat-summer-camp-20260712-704761b4",
-      "event_id": "event-mishkat-summer-camp",
-      "title": "Mishkat Summer Camp"
-    },
-    {
-      "candidate_id": "candidate-sfda-events-نقل-مبيدات-آفات-الصحة-العامة-20260713-8bb9663d",
-      "event_id": "event-نقل-مبيدات-آفات-الصحة-العامة-2",
-      "title": "نقل مبيدات آفات الصحة العامة"
-    },
-    {
-      "candidate_id": "candidate-riyadh-city-events-wrth-summer-art-craft-program-20260716-77021a48",
-      "event_id": "event-wrth-summer-art-craft-program",
-      "title": "Wrth Summer Art & Craft Program"
-    },
-    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45",
-      "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-7",
+      "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-8",
       "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python"
     },
     {
-      "candidate_id": "candidate-sfda-events-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج-20260721-9858e813",
-      "event_id": "event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج",
-      "title": "تقييم سلامة المنتج التجميلي وملف معلومات المنتج"
-    },
-    {
-      "candidate_id": "candidate-misk-hub-programs-misk-x-unyo-youth-engagement-fellowship-20260901-2ab69839",
-      "event_id": "event-misk-x-unyo-youth-engagement-fellowship",
-      "title": "Misk X UNYO Youth Engagement Fellowship"
-    },
-    {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي-20260906-c8b1323c",
-      "event_id": "event-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي",
-      "title": "معسكر بناء وتطوير نماذج الذكاء الاصطناعي"
-    },
-    {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc-20260906-cb343b82",
-      "event_id": "event-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc",
-      "title": "معسكر إدارة الحوكمة والمخاطر والامتثال GRC"
+      "candidate_id": "candidate-saudi-university-events-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco-20260907-80f1dc55",
+      "event_id": "event-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco",
+      "title": "The KAUST Imaging and Characterization Core Lab presents: AI for Microscopy Workshop"
     }
   ],
   "linked_existing": [
@@ -258,6 +218,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-kashtah-20260627-0fa92e11",
+      "event_id": "event-kashtah",
+      "title": "Kashtah",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-art-futures-camp-2026-diriyah-art-futures-20260628-b1821d4c",
       "event_id": "event-art-futures-camp-2026-diriyah-art-futures",
       "title": "Art Futures Camp 2026 – Diriyah Art Futures",
@@ -354,6 +320,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-misk-hub-programs-application-deadline-2030-leaders-20260712-68dd4c4c",
+      "event_id": "event-application-deadline-2030-leaders-2",
+      "title": "Application deadline: 2030 Leaders",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-riyadh-city-events-mishkat-summer-camp-20260712-704761b4",
+      "event_id": "event-mishkat-summer-camp",
+      "title": "Mishkat Summer Camp",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي-20260712-fd68b684",
       "event_id": "event-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي",
       "title": "معسكر هندسة البرمجيات الحديثة وأنظمة الذكاء الاصطناعي",
@@ -390,6 +368,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-sfda-events-نقل-مبيدات-آفات-الصحة-العامة-20260713-8bb9663d",
+      "event_id": "event-نقل-مبيدات-آفات-الصحة-العامة-2",
+      "title": "نقل مبيدات آفات الصحة العامة",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-saudi-university-events-semi-finals-join-the-celebration-at-the-fifa-fan-zone-20260714-c377ce4a",
       "event_id": "event-semi-finals-join-the-celebration-at-the-fifa-fan-zone",
       "title": "Semi-Finals: Join the Celebration at the FIFA Fan Zone",
@@ -399,6 +383,12 @@
       "candidate_id": "candidate-sfda-events-متطلبات-الاستخدام-الآمن-للأجهزة-والمستلزمات-الطبية-لمراكز-الأسنان-20260715-228461a9",
       "event_id": "event-متطلبات-الاستخدام-الآمن-للأجهزة-والمستلزمات-الطبية-لمراكز-الأسنان",
       "title": "متطلبات الاستخدام الآمن للأجهزة والمستلزمات الطبية لمراكز الأسنان",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-riyadh-city-events-wrth-summer-art-craft-program-20260716-77021a48",
+      "event_id": "event-wrth-summer-art-craft-program",
+      "title": "Wrth Summer Art & Craft Program",
       "reason": "already linked to catalog event"
     },
     {
@@ -417,6 +407,12 @@
       "candidate_id": "candidate-sfda-events-دور-مقدمي-الرعاية-الصحية-وضباط-الاتصال-في-التعامل-مع-انذارات-السلامة-الص-20260721-56cf21b4",
       "event_id": "event-دور-مقدمي-الرعاية-الصحية-وضباط-الاتصال-في-التعامل-مع-انذارات-السلامة-الص",
       "title": "دور مقدمي الرعاية الصحية وضباط الاتصال في التعامل مع انذارات السلامة الصادرة من المركز الوطني لبلاغات الأجهزة والمستلزمات الطبية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-sfda-events-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج-20260721-9858e813",
+      "event_id": "event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج",
+      "title": "تقييم سلامة المنتج التجميلي وملف معلومات المنتج",
       "reason": "already linked to catalog event"
     },
     {
@@ -600,6 +596,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-misk-hub-programs-misk-x-unyo-youth-engagement-fellowship-20260901-2ab69839",
+      "event_id": "event-misk-x-unyo-youth-engagement-fellowship",
+      "title": "Misk X UNYO Youth Engagement Fellowship",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-saudi-woodshow-20260901-f62d44d7",
       "event_id": "event-saudi-woodshow",
       "title": "Saudi WoodShow",
@@ -645,6 +647,18 @@
       "candidate_id": "candidate-riyadh-city-events-lighting-design-technology-expo-20260906-ded31051",
       "event_id": "event-lighting-design-technology-expo",
       "title": "Lighting Design & Technology Expo",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي-20260906-c8b1323c",
+      "event_id": "event-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي",
+      "title": "معسكر بناء وتطوير نماذج الذكاء الاصطناعي",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc-20260906-cb343b82",
+      "event_id": "event-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc",
+      "title": "معسكر إدارة الحوكمة والمخاطر والامتثال GRC",
       "reason": "already linked to catalog event"
     },
     {

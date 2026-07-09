@@ -1,6 +1,6 @@
 # GOV.SA Wayback Radar
 
-Generated at: 2026-07-09T13:42:59.162Z
+Generated at: 2026-07-09T15:34:26.157Z
 
 ## Policy
 
@@ -10,11 +10,11 @@ Generated at: 2026-07-09T13:42:59.162Z
 
 ## Totals
 
-- CDX rows: 10
-- Captures attempted: 8
-- Events extracted: 8
-- Date-complete: 8
-- Structured payloads: 8
+- CDX rows: 12
+- Captures attempted: 10
+- Events extracted: 10
+- Date-complete: 10
+- Structured payloads: 10
 - Failures: 0
 
 ## Extracted Archive Evidence
@@ -29,3 +29,5 @@ Generated at: 2026-07-09T13:42:59.162Z
 | 36054 | en | Participation in disclosing opinions on Draft Regulatory Framework for Close-Out Netting for Capital Market Institutions | 2025-02-24 - 2025-03-26 | Trade, economy and investment sector - Capital Market Authority | No Location | https://web.archive.org/web/20250323104536id_/https://my.gov.sa/en/events/36054 |
 | 36045 | en | Participation in disclosing opinions on Rules and Procedures for Licenses | 2025-02-20 - 2025-03-07 | Environment, agriculture, water and living wealth sector - Saudi Water Authority | No Location | https://web.archive.org/web/20250323104127id_/https://my.gov.sa/en/events/36045 |
 | 36036 | en | Participation in disclosing opinions on Requirements for sales centers and outlets for deregistered vehicles | 2025-02-19 - 2025-03-06 | Municipal services, planning and urban development sector - Ministry of Municipalities & Housing | No Location | https://web.archive.org/web/20250323103617id_/https://my.gov.sa/en/events/36036 |
+| 267222 | ar | المشاركة بالرأي في تعديل الإطار التنظيمي لإتاحة طرح شركات الاستحواذ ذات الأغراض الخاصة في السوق الموازية | 2025-04-08 - 2025-05-08 | قطاع التجارة والاقتصاد والاستثمار - هيئة السوق المالية | الرياض | https://web.archive.org/web/20250515033240id_/https://my.gov.sa/ar/events/267222 |
+| 272282 | ar | المرصد الوطني للمرأة 2025 | 2025-04-10 - 2025-04-10 | لاتوجد بيانات | الرياض | https://web.archive.org/web/20250515023957id_/https://my.gov.sa/ar/events/272282 |
