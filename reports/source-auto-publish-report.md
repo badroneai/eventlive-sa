@@ -1,17 +1,17 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-10T08:28:58.221Z
+- published_at: 2026-07-10T09:12:41.848Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 260
+- candidates_seen: 261
 - published_new: 0
-- linked_existing: 238
-- blocked_remaining: 22
+- linked_existing: 240
+- blocked_remaining: 21
 
 ## Blocked summary
 
 - possible duplicate already exists: event-esports-world-cup: 1
-- publication gate source-evidence is not auto-publishable: 19
+- publication gate source-evidence is not auto-publishable: 18
 - possible duplicate already exists: event-saudi-wood-expo-2026: 1
 - possible duplicate already exists: event-saudi-industrial-series-2: 1
 
@@ -215,6 +215,8 @@
 | candidate-visit-saudi-calendar-al-milwah-falcon-race-20261004-1e16b7f0 | linked-existing | event-al-milwah-falcon-race | already linked to catalog event |
 | candidate-sfda-events-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال-20261005-34d08b48 | linked-existing | event-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-in-act-act-x-20261009-4a38d19e | linked-existing | event-in-act-act-x | already linked to catalog event |
+| candidate-eventbrite-saudi-12th-middle-east-banking-ai-analytics-summit-2026-20261014-cec80e9d | linked-existing | event-12th-middle-east-banking-ai-analytics-summit-2026 | trusted duplicate linked to existing catalog event |
+| candidate-eventbrite-saudi-15th-middle-east-enterprise-ai-analytics-summit-20261015-e0aad1e6 | linked-existing | event-15th-middle-east-enterprise-ai-analytics-summit | trusted duplicate linked to existing catalog event |
 | candidate-experience-alula-events-alula-wellness-festival-20261023-5b74606a | linked-existing | event-alula-wellness-festival | already linked to catalog event |
 | candidate-eye-of-riyadh-events-global-proptech-summit-2026-20261025-7c1d3001 | linked-existing | event-global-proptech-summit-2026 | already linked to catalog event |
 | candidate-rfecc-whats-on-natrual-expo-20261026-a7983dd2 | linked-existing | event-natrual-expo | already linked to catalog event |
@@ -268,9 +270,8 @@
 | candidate-eventbrite-saudi-sucession-planning-program-20260903-d2b52d25 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-jeddah-fintech-week-2026-20260905-8e9a03b6 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-information-session-with-ie-university-saudi-arabia-in-riyadh-20260907-2b4929f1 | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-eventbrite-saudi-12th-middle-east-banking-ai-analytics-summit-2026-20261014-cec80e9d | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-eventbrite-saudi-15th-middle-east-enterprise-ai-analytics-summit-20261015-b7493a97 | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-eventbrite-saudi-15th-middle-east-enterprise-ai-analytics-summit-20261015-e0aad1e6 | blocked | - | publication gate source-evidence is not auto-publishable |
+| candidate-eventbrite-saudi-information-session-with-ie-university-saudi-arabia-in-riyadh-20261014-d14514bb | blocked | - | publication gate source-evidence is not auto-publishable |
+| candidate-eventbrite-saudi-riyadh-2026-venture-capital-world-summit-20261020-a3f5a1b8 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-cat-show-3rd-season-in-saudi-pet-vet-expo-20261109-a33c98fd | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-saudi-pet-vet-expo-5th-edition-2026-20261109-1aafd065 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-dunes-the-ultimate-outdoor-adventure-show-2026-20261119-13b76916 | blocked | - | publication gate source-evidence is not auto-publishable |

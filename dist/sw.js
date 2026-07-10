@@ -1,4 +1,4 @@
-const CACHE_NAME = 'eventlive-static-1783670423273';
+const CACHE_NAME = 'eventlive-static-1783674798138';
 const PRECACHE = [
   "./",
   "./index.html",

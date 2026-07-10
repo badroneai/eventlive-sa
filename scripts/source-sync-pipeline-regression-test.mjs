@@ -20,6 +20,7 @@ for (const name of [
   'sources:collect',
   'sources:radars',
   'sources:ops',
+  'sources:official-evidence',
   'sources:verify',
   'sources:auto-publish',
   'images:sync-catalog',
@@ -36,6 +37,8 @@ for (const name of [
 }
 
 assert.ok(stepIndex('sources:collect') < stepIndex('sources:auto-publish'), 'source collection must happen before auto-publish');
+assert.ok(stepIndex('sources:collect') < stepIndex('sources:official-evidence'), 'official evidence verification must run after fresh discovery collection');
+assert.ok(stepIndex('sources:official-evidence') < stepIndex('sources:verify'), 'official evidence verification must run before secondary verification and auto-publish');
 assert.ok(stepIndex('sources:probe') < stepIndex('sources:radars'), 'source radars must run after the general source probe');
 assert.ok(stepIndex('sources:radars') < stepIndex('sources:plan'), 'source plan must include the latest radar evidence');
 assert.ok(stepIndex('sources:radars') < stepIndex('sources:collect'), 'source radars must refresh evidence before collection/ops reporting');

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T08:30:18.656Z",
+  "generated_at": "2026-07-10T09:13:06.027Z",
   "source_ops_report": "reports/source-ops-report.json",
   "source_registry": "data/source_registry.json",
   "totals": {
@@ -97,99 +97,6 @@
         {
           "query": "\"Dubai Property Expo in Al Khobar\" \"Khobar\" tickets",
           "url": "https://www.google.com/search?q=%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22%20tickets"
-        }
-      ],
-      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
-    },
-    {
-      "lead_id": "candidate-eventbrite-saudi-12th-middle-east-banking-ai-analytics-summit-2026-20261014-cec80e9d",
-      "title": "12th Middle East Banking AI & Analytics Summit 2026",
-      "city": "Riyadh",
-      "starts_at": "2026-10-14T08:30:00+03:00",
-      "source_label": "Eventbrite Saudi Arabia",
-      "discovery_quality": "strong-lead",
-      "discovery_score": 70,
-      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 107,
-      "target_sources": [
-        {
-          "id": "ricec-events",
-          "name": "Riyadh International Convention and Exhibition Center",
-          "url": "https://www.ricec.com/",
-          "domain": "ricec.com",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 86
-        },
-        {
-          "id": "sdaia-calendar-events",
-          "name": "SDAIA Calendar and Events",
-          "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
-          "domain": "sdaia.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 86
-        },
-        {
-          "id": "dhahran-expo-calendar",
-          "name": "Dhahran Expo Calendar",
-          "url": "https://dhahranexpo.com.sa",
-          "domain": "dhahranexpo.com.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 78
-        },
-        {
-          "id": "rfecc-whats-on",
-          "name": "RFECC What's On",
-          "url": "https://rfecc.sa/whats-on/",
-          "domain": "rfecc.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 76
-        },
-        {
-          "id": "abha-chamber-events",
-          "name": "Abha Chamber Events",
-          "url": "https://abhacci.org.sa/Events",
-          "domain": "abhacci.org.sa",
-          "trust_level": "official",
-          "source_type": "venue-calendar",
-          "score": 68
-        }
-      ],
-      "searches": [
-        {
-          "query": "site:ricec.com \"12th Middle East Banking AI & Analytics Summit 2026\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aricec.com%20%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202026%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:sdaia.gov.sa \"12th Middle East Banking AI & Analytics Summit 2026\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Asdaia.gov.sa%20%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202026%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:dhahranexpo.com.sa \"12th Middle East Banking AI & Analytics Summit 2026\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202026%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:rfecc.sa \"12th Middle East Banking AI & Analytics Summit 2026\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Arfecc.sa%20%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202026%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:abhacci.org.sa \"12th Middle East Banking AI & Analytics Summit 2026\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aabhacci.org.sa%20%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202026%22%20%22Riyadh%22"
-        },
-        {
-          "query": "\"12th Middle East Banking AI & Analytics Summit 2026\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202026%22%20%22Riyadh%22%20official"
-        },
-        {
-          "query": "\"12th Middle East Banking AI & Analytics Summit 2026\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202026%22%20%22Riyadh%22%20organizer"
-        },
-        {
-          "query": "\"12th Middle East Banking AI & Analytics Summit 2026\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202026%22%20%22Riyadh%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
@@ -478,6 +385,99 @@
       "title": "Information Session With IE University Saudi Arabia in Riyadh",
       "city": "Riyadh",
       "starts_at": "2026-09-07T17:30:00+03:00",
+      "source_label": "Eventbrite Saudi Arabia",
+      "discovery_quality": "strong-lead",
+      "discovery_score": 70,
+      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
+      "resolver_priority": 97,
+      "target_sources": [
+        {
+          "id": "code-mcit-programs",
+          "name": "CODE MCIT Programs",
+          "url": "https://code.mcit.gov.sa/en/our-programs",
+          "domain": "code.mcit.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 28
+        },
+        {
+          "id": "cst-events-news",
+          "name": "CST Events and News",
+          "url": "https://www.cst.gov.sa/en",
+          "domain": "cst.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 28
+        },
+        {
+          "id": "diriyah-season",
+          "name": "Diriyah Season",
+          "url": "https://diriyahseason.sa/en",
+          "domain": "diriyahseason.sa",
+          "trust_level": "official",
+          "source_type": "organizer-calendar",
+          "score": 28
+        },
+        {
+          "id": "enjoy-saudi-events",
+          "name": "Enjoy Saudi Events",
+          "url": "https://enjoy.sa/ar/",
+          "domain": "enjoy.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 28
+        },
+        {
+          "id": "fii10-official-program",
+          "name": "FII 10th Edition Official Program",
+          "url": "https://fii-institute.org/conference/fii-10th-edition/",
+          "domain": "fii-institute.org",
+          "trust_level": "official",
+          "source_type": "conference-organizer",
+          "score": 28
+        }
+      ],
+      "searches": [
+        {
+          "query": "site:code.mcit.gov.sa \"Information Session With IE University Saudi Arabia in Riyadh\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Acode.mcit.gov.sa%20%22Information%20Session%20With%20IE%20University%20Saudi%20Arabia%20in%20Riyadh%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:cst.gov.sa \"Information Session With IE University Saudi Arabia in Riyadh\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Acst.gov.sa%20%22Information%20Session%20With%20IE%20University%20Saudi%20Arabia%20in%20Riyadh%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:diriyahseason.sa \"Information Session With IE University Saudi Arabia in Riyadh\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Adiriyahseason.sa%20%22Information%20Session%20With%20IE%20University%20Saudi%20Arabia%20in%20Riyadh%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:enjoy.sa \"Information Session With IE University Saudi Arabia in Riyadh\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aenjoy.sa%20%22Information%20Session%20With%20IE%20University%20Saudi%20Arabia%20in%20Riyadh%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:fii-institute.org \"Information Session With IE University Saudi Arabia in Riyadh\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Afii-institute.org%20%22Information%20Session%20With%20IE%20University%20Saudi%20Arabia%20in%20Riyadh%22%20%22Riyadh%22"
+        },
+        {
+          "query": "\"Information Session With IE University Saudi Arabia in Riyadh\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22Information%20Session%20With%20IE%20University%20Saudi%20Arabia%20in%20Riyadh%22%20%22Riyadh%22%20official"
+        },
+        {
+          "query": "\"Information Session With IE University Saudi Arabia in Riyadh\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22Information%20Session%20With%20IE%20University%20Saudi%20Arabia%20in%20Riyadh%22%20%22Riyadh%22%20organizer"
+        },
+        {
+          "query": "\"Information Session With IE University Saudi Arabia in Riyadh\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22Information%20Session%20With%20IE%20University%20Saudi%20Arabia%20in%20Riyadh%22%20%22Riyadh%22%20tickets"
+        }
+      ],
+      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
+    },
+    {
+      "lead_id": "candidate-eventbrite-saudi-information-session-with-ie-university-saudi-arabia-in-riyadh-20261014-d14514bb",
+      "title": "Information Session With IE University Saudi Arabia in Riyadh",
+      "city": "Riyadh",
+      "starts_at": "2026-10-14T17:30:00+03:00",
       "source_label": "Eventbrite Saudi Arabia",
       "discovery_quality": "strong-lead",
       "discovery_score": 70,

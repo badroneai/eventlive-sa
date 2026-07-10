@@ -53,6 +53,7 @@ const lastKnownGoodMaxAgeMs = Math.max(
 const dryRun = ['1', 'true', 'yes'].includes(String(process.env.EVENTLIVE_SOURCE_DRY_RUN || '').toLowerCase());
 let activeSnapshotStamp = collectedAt.replace(/[:.]/g, '-');
 const sourceFetchModes = new Map();
+const sourceEvidenceSnapshots = new Map();
 
 const tlsRelaxationAllowedHosts = new Set(['riyadh.sa', 'api.riyadh.sa', 'www.najran.gov.sa', 'najran.gov.sa']);
 
@@ -194,6 +195,13 @@ const sourceExtractors = {
   'riyadh-city-events': extractRiyadhCityEvents
 };
 
+const sourceApiFallbackExtractors = new Map([
+  ['moc-cultural-calendar', (source) => extractMocCalendarApi(source)],
+  ['moc-cultural-subportals', (source) => extractMocCalendarApi(source)],
+  ['monshaat-events', (source) => extractMonshaatInternalEvents(source)],
+  ['jazan-chamber-events', (source) => extractJazanChamberEvents('', source)]
+]);
+
 function isDiscoveryOnlySource(source) {
   return source.intake_policy === 'candidate-only'
     || source.trust_level === 'aggregator'
@@ -264,7 +272,9 @@ function writeAuxiliarySnapshot(source, label, content, extension = 'html') {
   const safeLabel = toSlug(label || 'detail');
   const snapshotPath = path.join(snapshotDir, `${source.id}-${safeLabel}-${activeSnapshotStamp}.${extension}`);
   fs.writeFileSync(snapshotPath, content, 'utf8');
-  return rel(snapshotPath);
+  const relativePath = rel(snapshotPath);
+  sourceEvidenceSnapshots.set(source.id, relativePath);
+  return relativePath;
 }
 
 function canUseBrowserHtmlFallback(source = {}) {
@@ -348,7 +358,7 @@ function isUsefulImageUrl(url = '') {
   const clean = String(url || '').trim();
   if (!/^https?:\/\//i.test(clean)) return false;
   if (/\.(?:svg|ico)(?:\?|#|$)/i.test(clean)) return false;
-  if (/(?:logo|loader|sprite|icon|placeholder|avatar|apple|vision|rss|twitter|facebook|linkedin|youtube|snapchat)/i.test(clean)) return false;
+  if (/(?:logo|loader|sprite|icon|placeholder|avatar|apple|vision|rss|twitter|facebook|linkedin|youtube|snapchat|whatsapp)/i.test(clean)) return false;
   return /\.(?:jpg|jpeg|png|webp|avif)(?:\?|#|$)/i.test(clean)
     || /\/styles\/|\/images\/|\/events_images\/|\/is\/image\/|scene7\.com|datocms-assets\.com|wp-content\/uploads|cdn\./i.test(clean);
 }
@@ -4191,20 +4201,37 @@ async function extractNorthernBordersChamberEvents(payload, source) {
 }
 
 function jazanApiEndpoint(month, year) {
-  return `https://www.jazancci.org.sa/api/events/calendar/${month}/${year}`;
+  return `https://jazancci.org.sa/api/events/calendar/${month}/${year}`;
 }
 
-function jazanMonthsToFetch() {
-  const months = [];
-  const end = new Date(Date.UTC(now.getUTCFullYear() + 1, now.getUTCMonth(), 1));
-  for (let year = minEndedYear; year <= end.getUTCFullYear(); year += 1) {
+function jazanMonthsToFetch(referenceDate = now, options = {}) {
+  const currentMonth = new Date(Date.UTC(referenceDate.getUTCFullYear(), referenceDate.getUTCMonth(), 1));
+  const futureMonths = Math.max(1, Number(options.futureMonths ?? process.env.EVENTLIVE_JAZAN_FUTURE_MONTHS ?? 12));
+  const historyMode = String(options.historyMode ?? process.env.EVENTLIVE_JAZAN_HISTORY_MODE ?? 'rolling');
+  const historyBatchSize = Math.max(1, Number(options.historyBatchSize ?? process.env.EVENTLIVE_JAZAN_HISTORY_MONTHS_PER_RUN ?? 2));
+  const activeMonths = [];
+  for (let offset = 0; offset <= futureMonths; offset += 1) {
+    const cursor = new Date(Date.UTC(currentMonth.getUTCFullYear(), currentMonth.getUTCMonth() + offset, 1));
+    activeMonths.push({ month: cursor.getUTCMonth() + 1, year: cursor.getUTCFullYear() });
+  }
+
+  const historicalMonths = [];
+  for (let year = minEndedYear; year <= currentMonth.getUTCFullYear(); year += 1) {
     for (let month = 1; month <= 12; month += 1) {
       const cursor = new Date(Date.UTC(year, month - 1, 1));
-      if (cursor > end) continue;
-      months.push({ month, year });
+      if (cursor >= currentMonth) break;
+      historicalMonths.push({ month, year });
     }
   }
-  return months;
+  if (!historicalMonths.length) return activeMonths;
+  if (historyMode === 'full') return [...historicalMonths, ...activeMonths];
+
+  const sixHourSlot = Math.floor(referenceDate.getTime() / (6 * 60 * 60 * 1000));
+  const startIndex = (sixHourSlot * historyBatchSize) % historicalMonths.length;
+  const rollingHistory = Array.from({ length: Math.min(historyBatchSize, historicalMonths.length) }, (_, index) => (
+    historicalMonths[(startIndex + index) % historicalMonths.length]
+  ));
+  return [...activeMonths, ...rollingHistory];
 }
 
 function parseJazanApiRows(payload = '') {
@@ -4235,15 +4262,20 @@ async function extractJazanChamberEvents(payload, source) {
   if (source.collector_url) seenEndpoints.add(source.collector_url);
 
   if (!source.disable_monthly_fetch) {
-    for (const { month, year } of jazanMonthsToFetch()) {
-      const endpoint = jazanApiEndpoint(month, year);
-      if (seenEndpoints.has(endpoint)) continue;
-      seenEndpoints.add(endpoint);
-      try {
-        pushRows(await fetchHtml({ ...source, collector_url: endpoint }));
-      } catch {
-        // Monthly holes are expected on sparse official calendars.
-      }
+    const targets = jazanMonthsToFetch()
+      .map(({ month, year }) => jazanApiEndpoint(month, year))
+      .filter((endpoint) => !seenEndpoints.has(endpoint));
+    for (let offset = 0; offset < targets.length; offset += 4) {
+      const batch = targets.slice(offset, offset + 4);
+      batch.forEach((endpoint) => seenEndpoints.add(endpoint));
+      const payloads = await Promise.all(batch.map(async (endpoint) => {
+        try {
+          return await fetchHtml({ ...source, collector_url: endpoint });
+        } catch {
+          return '';
+        }
+      }));
+      payloads.filter(Boolean).forEach(pushRows);
     }
   }
 
@@ -4971,6 +5003,28 @@ async function fetchText(url, headers = {}) {
   return text;
 }
 
+async function loadSourceExtraction(source, extractor, options = {}) {
+  const fetchPrimary = options.fetchPrimary || fetchHtml;
+  const fallbackExtractor = options.fallbackExtractor || sourceApiFallbackExtractors.get(source.id);
+  try {
+    const payload = await fetchPrimary(source);
+    return {
+      payload,
+      items: await extractor(payload, source),
+      primary_error: null
+    };
+  } catch (primaryError) {
+    if (!fallbackExtractor) throw primaryError;
+    const items = await fallbackExtractor(source);
+    sourceFetchModes.set(source.id, 'official-api-fallback');
+    return {
+      payload: '',
+      items,
+      primary_error: primaryError
+    };
+  }
+}
+
 async function fetchBrowserRenderedHtml(source, waitMs = 4500) {
   const { chromium } = await import('playwright');
   const browser = await chromium.launch({ headless: true });
@@ -5090,12 +5144,17 @@ async function main() {
       ended_new: 0
     };
     try {
-      const html = await fetchHtml(source);
+      const extraction = await loadSourceExtraction(source, extractor);
+      const html = extraction.payload;
       summary.fetch_mode = sourceFetchModes.get(source.id) || 'direct';
-      const snapshotPath = path.join(snapshotDir, `${source.id}-${stamp}.${snapshotExtensionFor(source)}`);
-      fs.writeFileSync(snapshotPath, html, 'utf8');
-      summary.snapshot_path = rel(snapshotPath);
-      const extractedItems = (await extractor(html, source))
+      if (html) {
+        const snapshotPath = path.join(snapshotDir, `${source.id}-${stamp}.${snapshotExtensionFor(source)}`);
+        fs.writeFileSync(snapshotPath, html, 'utf8');
+        summary.snapshot_path = rel(snapshotPath);
+      } else {
+        summary.snapshot_path = sourceEvidenceSnapshots.get(source.id) || '';
+      }
+      const extractedItems = extraction.items
         .filter((item) => item.title && item.starts_at && item.ends_at && item.url);
       const sourceMaxCandidates = Math.max(1, Number(source.max_candidates_per_run || maxPerSource));
       const sourceMaxEnded = Math.max(1, Number(source.max_ended_per_run || maxArchivePerSource));
@@ -5120,7 +5179,10 @@ async function main() {
       Object.assign(summary, sourceCandidateDelta(source, candidates, existingCandidates));
       const existingEndedKeys = new Set(existingEndedEvents.map((item) => candidateMergeKey(item)));
       summary.ended_new = endedEvents.filter((item) => !existingEndedKeys.has(candidateMergeKey(item))).length;
-      if (summary.fetch_mode !== 'direct') summary.note = `Recovered via ${summary.fetch_mode} official evidence.`;
+      if (summary.fetch_mode !== 'direct') {
+        const primaryNote = extraction.primary_error ? ` Primary page failed: ${extraction.primary_error.message}.` : '';
+        summary.note = `Recovered via ${summary.fetch_mode} official evidence.${primaryNote}`;
+      }
       if (!candidates.length) summary.note = `${summary.note ? `${summary.note} ` : ''}No future date-complete candidates found by the conservative extractor.`;
     } catch (error) {
       if (isDiscoveryOnlySource(source)) {
@@ -5207,6 +5269,7 @@ export {
   extractSaudiSpaceAgencyEvents,
   extractSfdaEvents,
   jazanApiEndpoint,
+  jazanMonthsToFetch,
   extractJazanChamberEvents,
   extractMakkahChamberEvents,
   extractNajranMunicipalityEvents,
@@ -5224,6 +5287,7 @@ export {
   extractSdaiaCalendarEvents,
   extractVisitSaudiApiEvents,
   sourceCandidateDelta,
+  loadSourceExtraction,
   isPastCandidate,
   mergeEndedEvents,
   parseAlulaDateRange,

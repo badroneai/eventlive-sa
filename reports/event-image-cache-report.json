@@ -1,22 +1,28 @@
 {
-  "generated_at": "2026-07-10T08:30:38.297Z",
+  "generated_at": "2026-07-10T08:55:04.630Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
-    "targets": 200,
-    "cached_total": 222,
-    "fetched": 1,
-    "reused": 193,
+    "targets": 202,
+    "cached_total": 224,
+    "fetched": 2,
+    "reused": 194,
     "failed": 6,
     "skipped_recent_failures": 6,
     "remembered_failures": 9
   },
   "fetched": [
     {
-      "source_url": "https://ncci.org.sa/wp-content/uploads/2026/04/%D9%88%D8%B1%D8%B4%D8%A9-%D8%A7%D9%84%D8%A3%D8%A8%D8%AA%D9%83%D8%A7%D8%B1-%D9%81%D9%8A-%D8%B1%D9%8A%D9%80%D8%A7%D8%AF%D8%A9-%D8%A7%D9%84%D8%A3%D8%B9%D9%80%D9%85%D8%A7%D9%84-scaled.png",
-      "file": "dist/assets/event-images/ورشة-الأبتكار-في-ريـادة-الأعـمال-c53516007a.png",
-      "bytes": 2551745,
+      "source_url": "https://mebankingai.com/whatsapp.png",
+      "file": "dist/assets/event-images/12th-middle-east-banking-ai-analytics-summit-2026-bc988c16fd.png",
+      "bytes": 30559,
+      "events": 1
+    },
+    {
+      "source_url": "https://meenterpriseai.com/whatsapp.png",
+      "file": "dist/assets/event-images/15th-middle-east-enterprise-ai-analytics-summit-6a711e9760.png",
+      "bytes": 30559,
       "events": 1
     }
   ],
@@ -729,6 +735,11 @@
     {
       "source_url": "https://firebasestorage.googleapis.com/v0/b/event-jcci/o/media%2Fevent-22-04-2026-1776868526993-hv5i81e4mju.jpeg?alt=media&token=26801ccb-3fae-4f56-a265-a7602f8d87ae",
       "file": "dist/assets/event-images/حلول-التمويل-للشركات-الصغيرة-والمتوسطة-15ec906ba0.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://ncci.org.sa/wp-content/uploads/2026/04/%D9%88%D8%B1%D8%B4%D8%A9-%D8%A7%D9%84%D8%A3%D8%A8%D8%AA%D9%83%D8%A7%D8%B1-%D9%81%D9%8A-%D8%B1%D9%8A%D9%80%D8%A7%D8%AF%D8%A9-%D8%A7%D9%84%D8%A3%D8%B9%D9%80%D9%85%D8%A7%D9%84-scaled.png",
+      "file": "dist/assets/event-images/ورشة-الأبتكار-في-ريـادة-الأعـمال-c53516007a.png",
       "events": 1
     },
     {

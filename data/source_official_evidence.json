@@ -1,0 +1,90 @@
+{
+  "schema": "eventlive.source-official-evidence.v1",
+  "entries": [
+    {
+      "id": "middle-east-banking-ai-summit-2026",
+      "status": "active",
+      "title": "12th Middle East Banking AI & Analytics Summit 2026",
+      "discovery_hosts": [
+        "eventbrite.com"
+      ],
+      "official_url": "https://mebankingai.com/sa/",
+      "source_label": "Middle East Banking AI & Analytics Summit Official",
+      "source_owner": "Let's Talk B2B",
+      "organizer": "Let's Talk B2B",
+      "category": "banking and AI conference",
+      "summary": "A Riyadh summit for banking leaders focused on applied AI, analytics, data governance, risk, and scalable transformation.",
+      "tags": [
+        "AI",
+        "banking",
+        "fintech",
+        "conference",
+        "Riyadh"
+      ],
+      "expected_start_date": "2026-10-14",
+      "expected_city": "Riyadh",
+      "required_token_groups": [
+        [
+          "12th Middle East Banking AI & Analytics Summit 2026"
+        ],
+        [
+          "October 14th 2026"
+        ],
+        [
+          "Hyatt Regency Riyadh Olaya"
+        ]
+      ]
+    },
+    {
+      "id": "middle-east-enterprise-ai-summit-2026",
+      "status": "active",
+      "title": "15th Middle East Enterprise AI & Analytics Summit",
+      "discovery_hosts": [
+        "eventbrite.com"
+      ],
+      "official_url": "https://meenterpriseai.com/sa/",
+      "source_label": "Middle East Enterprise AI & Analytics Summit Official",
+      "source_owner": "Let's Talk B2B",
+      "organizer": "Let's Talk B2B",
+      "category": "enterprise AI conference",
+      "summary": "A Riyadh summit for enterprise leaders applying AI and analytics across transformation, governance, customer experience, and operations.",
+      "tags": [
+        "AI",
+        "enterprise",
+        "data analytics",
+        "conference",
+        "Riyadh"
+      ],
+      "expected_start_date": "2026-10-15",
+      "expected_city": "Riyadh",
+      "required_token_groups": [
+        [
+          "Middle East Enterprise"
+        ],
+        [
+          "AI & Analytics Summit"
+        ],
+        [
+          "October 15th Thursday, 2026"
+        ],
+        [
+          "Hyatt Regency Riyadh Olaya"
+        ]
+      ]
+    },
+    {
+      "id": "jeddah-fintech-week-2026",
+      "status": "radar",
+      "title": "Jeddah Fintech Week 2026",
+      "discovery_hosts": [
+        "eventbrite.com"
+      ],
+      "official_url": "https://jeddahfintechweek.com/",
+      "source_label": "Jeddah Fintech Week Official",
+      "source_owner": "Saudi Fintech Expos / Al Awsat Expo",
+      "expected_start_date": "2026-09-05",
+      "expected_city": "Jeddah",
+      "radar_reason": "The current official bundle contains conflicting February, September, and October date/venue variants. Keep discovery evidence blocked until the first-party canonical fields agree."
+    }
+  ]
+}

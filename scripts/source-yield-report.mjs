@@ -5,8 +5,8 @@ import { ensureDir, readJson, rel, root, writeJson } from './program-lifecycle-u
 process.env.EVENTLIVE_SOURCE_FETCH_TIMEOUT_MS ||= '9000';
 process.env.EVENTLIVE_SOURCE_FETCH_ATTEMPTS ||= '1';
 
-let fetchHtml;
 let isPastCandidate;
+let loadSourceExtraction;
 let sourceExtractors = {};
 
 const registryPath = path.join(root, 'data', 'source_registry.json');
@@ -139,7 +139,7 @@ function renderMarkdown(report) {
 }
 
 async function main() {
-  ({ fetchHtml, isPastCandidate, sourceExtractors } = await import('./collect-source-candidates.mjs'));
+  ({ isPastCandidate, loadSourceExtraction, sourceExtractors } = await import('./collect-source-candidates.mjs'));
   ensureDir(snapshotDir);
   const registry = readJson(registryPath);
   const attempts = fs.existsSync(attemptsPath) ? readJson(attemptsPath) : {};
@@ -175,12 +175,15 @@ async function main() {
       note: ''
     };
     try {
-      const payload = await fetchHtml(source);
-      const snapshotPath = path.join(snapshotDir, `${source.id}-${stamp}.${snapshotExtensionFor(source)}`);
-      fs.writeFileSync(snapshotPath, payload, 'utf8');
-      row.snapshot_path = rel(snapshotPath);
+      const extraction = await loadSourceExtraction(source, extractor);
+      const payload = extraction.payload;
+      if (payload) {
+        const snapshotPath = path.join(snapshotDir, `${source.id}-${stamp}.${snapshotExtensionFor(source)}`);
+        fs.writeFileSync(snapshotPath, payload, 'utf8');
+        row.snapshot_path = rel(snapshotPath);
+      }
       row.signals = countSignals(payload);
-      const extracted = await extractor(payload, source);
+      const extracted = extraction.items;
       row.extracted_raw = extracted.length;
       row.drop_reasons = summarizeReasons(extracted);
       row.dropped_samples = summarizeDroppedSamples(extracted);
@@ -189,6 +192,9 @@ async function main() {
       row.capped_future_complete = future.slice(0, maxRows).length;
       row.sample_titles = future.slice(0, 5).map((item) => item.title);
       row.status = 'ok';
+      if (extraction.primary_error) {
+        row.note = `Recovered through official API after primary page failure: ${extraction.primary_error.message}`;
+      }
       if (!future.length) {
         if (!extracted.length && row.signals.date_like_tokens > 0) row.zero_yield_reason = 'date/content signals exist but extractor returned no complete future rows';
         else if (!extracted.length && row.signals.json_rows > 0) row.zero_yield_reason = 'JSON rows exist but extractor mapping returned zero';

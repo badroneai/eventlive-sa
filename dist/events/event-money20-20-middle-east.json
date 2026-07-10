@@ -10,7 +10,7 @@
   "evidence_url": "https://riyadh.sa/en/moment/events/item/event/29339",
   "trust_tier": "approved-source",
   "trust_label": "مصدر معتمد",
-  "verified_at": "2026-07-10T07:21:55.253Z",
+  "verified_at": "2026-07-10T09:12:41.848Z",
   "verification_method": "registered-official",
   "freshness_hours": 0,
   "city": "الرياض",
@@ -38,12 +38,12 @@
       "label": "موظفون ومهنيون"
     },
     {
-      "slug": "tech",
-      "label": "تقنيون"
-    },
-    {
       "slug": "entrepreneurs",
       "label": "رواد أعمال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
     }
   ],
   "keywords": [
@@ -61,8 +61,8 @@
     "investment",
     "technology",
     "موظفون ومهنيون",
-    "تقنيون",
-    "رواد أعمال"
+    "رواد أعمال",
+    "مبدعون وفنون"
   ],
   "sessions": [
     {
@@ -103,7 +103,7 @@
     "url": "https://eventme.live/events/event-money20-20-middle-east.html",
     "mainEntityOfPage": "https://eventme.live/events/event-money20-20-middle-east.html",
     "isAccessibleForFree": false,
-    "keywords": "Money20/20 Middle East, ورش تنظيمية وصحية, conference, فعالية, قادمة, الرياض, Riyadh Exhibition & Convention Center, Malham, Money20/20 Middle East Official, fintech, banking, payments, investment, technology, موظفون ومهنيون, تقنيون, رواد أعمال",
+    "keywords": "Money20/20 Middle East, ورش تنظيمية وصحية, conference, فعالية, قادمة, الرياض, Riyadh Exhibition & Convention Center, Malham, Money20/20 Middle East Official, fintech, banking, payments, investment, technology, موظفون ومهنيون, رواد أعمال, مبدعون وفنون",
     "audience": [
       {
         "@type": "Audience",
@@ -111,11 +111,11 @@
       },
       {
         "@type": "Audience",
-        "audienceType": "تقنيون"
+        "audienceType": "رواد أعمال"
       },
       {
         "@type": "Audience",
-        "audienceType": "رواد أعمال"
+        "audienceType": "مبدعون وفنون"
       }
     ],
     "sameAs": [

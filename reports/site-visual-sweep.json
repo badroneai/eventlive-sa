@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T08:04:03.304Z",
+  "generated_at": "2026-07-10T09:03:11.276Z",
   "intent": "eventlive-site-visual-sweep",
   "base_url": "http://127.0.0.1:4187",
   "ok": true,
@@ -84,7 +84,7 @@
           {
             "tag": "article",
             "className": "card",
-            "text": "عائلات وأطفال ٩يوليو جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 12 ساعة الت",
+            "text": "عائلات وأطفال ٩يوليو جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 11 ساعة الت",
             "width": 262
           },
           {
@@ -108,7 +108,7 @@
           {
             "tag": "div",
             "className": "card-body",
-            "text": "جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 12 ساعة التفاصيل التقويم مصدر حك",
+            "text": "جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 11 ساعة التفاصيل التقويم مصدر حك",
             "width": 260
           },
           {
@@ -149,7 +149,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية مباشرة",
         "h1": "كل الفعاليات",
-        "bodyTextLength": 18498,
+        "bodyTextLength": 18494,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -159,7 +159,7 @@
         "jsonLdBlocks": 4,
         "visibleImages": 24,
         "brokenImages": [],
-        "pendingImages": 3,
+        "pendingImages": 0,
         "headings": [
           "كل الفعاليات",
           "تأكيد قاعة ورشة رحلة المستفيد",
@@ -238,7 +238,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية مباشرة",
         "h1": "كل الفعاليات",
-        "bodyTextLength": 18445,
+        "bodyTextLength": 18441,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -327,7 +327,7 @@
       "metrics": {
         "title": "EventLive | ملتقى التحول الرقمي في القطاع الحكومي 2026",
         "h1": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
-        "bodyTextLength": 4563,
+        "bodyTextLength": 4500,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -342,7 +342,7 @@
           "ملتقى التحول الرقمي في القطاع الحكومي 2026",
           "لا توجد جلسة نشطة الآن",
           "الافتتاح الرسمي وكلمة الجهة المنظمة",
-          "تجري الآن: حلقة نقاش: جاهزية الجهات للذكاء الاصطناعي",
+          "الفعالية مباشرة الآن",
           "أين نحن الآن في الفعالية؟"
         ],
         "horizontalOverflow": false,
@@ -352,7 +352,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 4055
+          "scrollHeight": 3992
         }
       }
     },
@@ -367,7 +367,7 @@
       "metrics": {
         "title": "EventLive | ملتقى التحول الرقمي في القطاع الحكومي 2026",
         "h1": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
-        "bodyTextLength": 4583,
+        "bodyTextLength": 4488,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -382,7 +382,7 @@
           "ملتقى التحول الرقمي في القطاع الحكومي 2026",
           "لا توجد جلسة نشطة الآن",
           "الافتتاح الرسمي وكلمة الجهة المنظمة",
-          "تجري الآن: حلقة نقاش: جاهزية الجهات للذكاء الاصطناعي",
+          "الفعالية مباشرة الآن",
           "أين نحن الآن في الفعالية؟"
         ],
         "horizontalOverflow": false,
@@ -417,7 +417,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 7568
+          "scrollHeight": 7455
         }
       }
     },
@@ -432,7 +432,7 @@
       "metrics": {
         "title": "EventLive | الآن",
         "h1": "الآن",
-        "bodyTextLength": 2126,
+        "bodyTextLength": 2032,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -460,7 +460,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 1703
+          "scrollHeight": 1648
         }
       }
     },
@@ -475,7 +475,7 @@
       "metrics": {
         "title": "EventLive | الآن",
         "h1": "الآن",
-        "bodyTextLength": 1982,
+        "bodyTextLength": 1979,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1241,7 +1241,7 @@
       "metrics": {
         "title": "فعاليات هذا الأسبوع | EventLive",
         "h1": "فعاليات هذا الأسبوع",
-        "bodyTextLength": 11029,
+        "bodyTextLength": 11028,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1284,7 +1284,7 @@
       "metrics": {
         "title": "فعاليات هذا الأسبوع | EventLive",
         "h1": "فعاليات هذا الأسبوع",
-        "bodyTextLength": 10954,
+        "bodyTextLength": 10953,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3240,7 +3240,7 @@
       "metrics": {
         "title": "فجوات تغطية المصادر | EventLive",
         "h1": "فجوات تغطية المصادر",
-        "bodyTextLength": 11771,
+        "bodyTextLength": 11789,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3281,7 +3281,7 @@
       "metrics": {
         "title": "فجوات تغطية المصادر | EventLive",
         "h1": "فجوات تغطية المصادر",
-        "bodyTextLength": 11696,
+        "bodyTextLength": 11714,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3855,7 +3855,7 @@
       "metrics": {
         "title": "مركز الثقة | EventLive",
         "h1": "مركز الثقة",
-        "bodyTextLength": 5610,
+        "bodyTextLength": 5611,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3897,7 +3897,7 @@
       "metrics": {
         "title": "مركز الثقة | EventLive",
         "h1": "مركز الثقة",
-        "bodyTextLength": 5535,
+        "bodyTextLength": 5536,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3988,7 +3988,7 @@
       "metrics": {
         "title": "فعاليات الرياض | EventLive",
         "h1": "فعاليات الرياض",
-        "bodyTextLength": 12652,
+        "bodyTextLength": 12651,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4031,7 +4031,7 @@
       "metrics": {
         "title": "فعاليات الرياض | EventLive",
         "h1": "فعاليات الرياض",
-        "bodyTextLength": 12577,
+        "bodyTextLength": 12576,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,

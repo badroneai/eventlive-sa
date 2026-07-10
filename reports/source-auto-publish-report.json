@@ -1,16 +1,16 @@
 {
-  "published_at": "2026-07-10T08:28:58.221Z",
+  "published_at": "2026-07-10T09:12:41.848Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 260,
+  "candidates_seen": 261,
   "totals": {
-    "candidates_seen": 260,
+    "candidates_seen": 261,
     "published": 0,
-    "linked_existing": 238,
-    "blocked": 22,
-    "reconciled": 238
+    "linked_existing": 240,
+    "blocked": 21,
+    "reconciled": 240
   },
   "duplicate_catalog_rows_removed": 0,
   "duplicate_catalog_rows": [],
@@ -1207,6 +1207,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-eventbrite-saudi-12th-middle-east-banking-ai-analytics-summit-2026-20261014-cec80e9d",
+      "event_id": "event-12th-middle-east-banking-ai-analytics-summit-2026",
+      "title": "12th Middle East Banking AI & Analytics Summit 2026",
+      "reason": "trusted duplicate linked to existing catalog event"
+    },
+    {
+      "candidate_id": "candidate-eventbrite-saudi-15th-middle-east-enterprise-ai-analytics-summit-20261015-e0aad1e6",
+      "event_id": "event-15th-middle-east-enterprise-ai-analytics-summit",
+      "title": "15th Middle East Enterprise AI & Analytics Summit",
+      "reason": "trusted duplicate linked to existing catalog event"
+    },
+    {
       "candidate_id": "candidate-experience-alula-events-alula-wellness-festival-20261023-5b74606a",
       "event_id": "event-alula-wellness-festival",
       "title": "AlUla Wellness Festival",
@@ -1514,18 +1526,13 @@
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
-      "candidate_id": "candidate-eventbrite-saudi-12th-middle-east-banking-ai-analytics-summit-2026-20261014-cec80e9d",
-      "title": "12th Middle East Banking AI & Analytics Summit 2026",
+      "candidate_id": "candidate-eventbrite-saudi-information-session-with-ie-university-saudi-arabia-in-riyadh-20261014-d14514bb",
+      "title": "Information Session With IE University Saudi Arabia in Riyadh",
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
-      "candidate_id": "candidate-eventbrite-saudi-15th-middle-east-enterprise-ai-analytics-summit-20261015-b7493a97",
-      "title": "15th Middle East Enterprise AI & Analytics Summit",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-eventbrite-saudi-15th-middle-east-enterprise-ai-analytics-summit-20261015-e0aad1e6",
-      "title": "15th Middle East Enterprise AI & Analytics Summit",
+      "candidate_id": "candidate-eventbrite-saudi-riyadh-2026-venture-capital-world-summit-20261020-a3f5a1b8",
+      "title": "Riyadh 2026 Venture Capital World Summit",
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {

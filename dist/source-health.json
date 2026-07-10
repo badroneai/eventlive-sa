@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T08:00:30.778Z",
+  "generated_at": "2026-07-10T09:13:20.207Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-source-health",
@@ -9,16 +9,16 @@
     "auto_publish": "reports/source-promotion-report.json"
   },
   "totals": {
-    "sources": 79,
+    "sources": 81,
     "active_collectors": 41,
-    "collection_coverage_pct": 52,
+    "collection_coverage_pct": 51,
     "productive": 28,
     "open_idle": 13,
     "collector_errors": 0,
     "probe_blocked": 0,
-    "extractor_backlog": 38,
-    "candidates_discovered": 261,
-    "candidates_written": 260
+    "extractor_backlog": 40,
+    "candidates_discovered": 263,
+    "candidates_written": 273
   },
   "publication": {
     "published_at": "2026-07-03T15:26:20.570Z",
@@ -192,12 +192,12 @@
       "name": "Eventbrite Saudi Arabia",
       "priority": 14,
       "status": "productive",
-      "extracted": 16,
-      "candidates": 16,
+      "extracted": 18,
+      "candidates": 15,
       "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
       "last_collection_status": "ok",
-      "last_extracted": 16,
-      "known_candidates": 16
+      "last_extracted": 18,
+      "known_candidates": 15
     },
     {
       "id": "platinumlist-jeddah",
@@ -326,7 +326,7 @@
       "status": "zero-yield",
       "extracted": 0,
       "candidates": 0,
-      "next_action": "Recovered via browser-probe official evidence. No future date-complete candidates found by the conservative extractor.",
+      "next_action": "No future date-complete candidates found by the conservative extractor.",
       "last_collection_status": "ok",
       "last_extracted": 0,
       "known_candidates": 0
@@ -908,27 +908,27 @@
       "known_candidates": 0
     },
     {
-      "id": "qassim-university-events",
-      "name": "Qassim University Events",
+      "id": "middle-east-banking-ai-summit",
+      "name": "Middle East Banking AI & Analytics Summit Official",
       "priority": 74,
-      "status": "productive",
-      "extracted": 1,
+      "status": "not-collected",
+      "extracted": 0,
       "candidates": 1,
-      "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
-      "last_collection_status": "ok",
-      "last_extracted": 1,
+      "next_action": "أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.",
+      "last_collection_status": "",
+      "last_extracted": 0,
       "known_candidates": 1
     },
     {
-      "id": "jouf-university-programs",
-      "name": "Jouf University Summer Programs",
+      "id": "middle-east-enterprise-ai-summit",
+      "name": "Middle East Enterprise AI & Analytics Summit Official",
       "priority": 75,
-      "status": "productive",
-      "extracted": 1,
+      "status": "not-collected",
+      "extracted": 0,
       "candidates": 1,
-      "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
-      "last_collection_status": "ok",
-      "last_extracted": 1,
+      "next_action": "أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.",
+      "last_collection_status": "",
+      "last_extracted": 0,
       "known_candidates": 1
     },
     {
@@ -978,6 +978,30 @@
       "last_collection_status": "",
       "last_extracted": 0,
       "known_candidates": 0
+    },
+    {
+      "id": "qassim-university-events",
+      "name": "Qassim University Events",
+      "priority": 80,
+      "status": "productive",
+      "extracted": 1,
+      "candidates": 1,
+      "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
+      "last_collection_status": "ok",
+      "last_extracted": 1,
+      "known_candidates": 1
+    },
+    {
+      "id": "jouf-university-programs",
+      "name": "Jouf University Summer Programs",
+      "priority": 81,
+      "status": "productive",
+      "extracted": 1,
+      "candidates": 1,
+      "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
+      "last_collection_status": "ok",
+      "last_extracted": 1,
+      "known_candidates": 1
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T08:00:11.157Z",
+  "generated_at": "2026-07-10T09:13:06.464Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-saudi-region-coverage",
@@ -11,9 +11,9 @@
     "zero_active_regions": 3,
     "active_target_cities": 12,
     "target_cities": 38,
-    "events": 619,
-    "active_events": 225,
-    "ended_events": 394
+    "events": 622,
+    "active_events": 227,
+    "ended_events": 395
   },
   "national_coverage": {
     "score": 62,
@@ -24,8 +24,8 @@
     "target_cities": 38,
     "active_target_city_ratio": 0.3158,
     "live_ready_regions": 3,
-    "riyadh_active_events": 124,
-    "riyadh_active_share": 0.5511,
+    "riyadh_active_events": 126,
+    "riyadh_active_share": 0.5551,
     "thresholds": {
       "active_regions_min": 10,
       "active_target_city_ratio_min": 0.5,
@@ -985,17 +985,17 @@
           "label": "شقراء"
         }
       ],
-      "total": 287,
-      "active": 124,
-      "upcoming": 89,
+      "total": 289,
+      "active": 126,
+      "upcoming": 91,
       "ongoing": 33,
       "live": 2,
       "ended": 163,
       "live_ready": 7,
-      "source_count": 27,
-      "source_images": 135,
+      "source_count": 29,
+      "source_images": 137,
       "generated_covers": 152,
-      "registered_source_count": 38,
+      "registered_source_count": 40,
       "registered_sources": [
         {
           "id": "webook-explore",
@@ -1262,6 +1262,20 @@
           "ring": "official-feed-preferred",
           "status": "official",
           "url": "https://money2020middleeast.com/"
+        },
+        {
+          "id": "middle-east-banking-ai-summit",
+          "name": "Middle East Banking AI & Analytics Summit Official",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://mebankingai.com/sa/"
+        },
+        {
+          "id": "middle-east-enterprise-ai-summit",
+          "name": "Middle East Enterprise AI & Analytics Summit Official",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://meenterpriseai.com/sa/"
         }
       ],
       "coverage_score": 83,

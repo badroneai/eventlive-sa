@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-07-10T08:30:58.428Z
+- generated_at: 2026-07-10T09:13:20.207Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -10,30 +10,30 @@
 
 ## Executive Summary
 
-- Sources in registry: 79
+- Sources in registry: 81
 - Sources attempted in latest collection: 41
-- Collection coverage: 52%
-- Healthy sources: 20
-- Zero-yield sources: 10
+- Collection coverage: 51%
+- Healthy sources: 28
+- Zero-yield sources: 13
 - High-priority unattempted sources: 3
-- Candidates: 260
+- Candidates: 261
 - Actionable candidates: 0
 - Ready for review: 0
 - Ready for catalog promotion: 0
-- Linked to catalog from candidates: 240
+- Linked to catalog from candidates: 242
 - Stale unpublished candidates: 0
 - Duplicate risk: 0
 - Recommendation: استخدم أقوى مرشحي الاكتشاف لبناء مطابقة آلية مع مصادر رسمية؛ لا تنشر مصدر اكتشاف منفرداً.
 
 ## Candidate Funnel
 
-- review_status.approved-for-catalog: 240
+- review_status.approved-for-catalog: 242
 - review_status.evidence-captured: 4
-- review_status.new: 16
-- publication_gate.catalog-review: 240
+- review_status.new: 15
+- publication_gate.catalog-review: 242
 - publication_gate.duplicate-review: 1
-- publication_gate.source-evidence: 19
-- discovery_quality.strong-lead: 26
+- publication_gate.source-evidence: 18
+- discovery_quality.strong-lead: 27
 - discovery_quality.weak-lead: 1
 - discovery_quality.watch-lead: 4
 
@@ -55,7 +55,7 @@
 | Sucession Planning Program | Eventbrite Saudi Arabia | Riyadh | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
 | Jeddah Fintech Week 2026 | Eventbrite Saudi Arabia | Jeddah | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
 | Information Session With IE University Saudi Arabia in Riyadh | Eventbrite Saudi Arabia | Riyadh | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
-| 12th Middle East Banking AI & Analytics Summit 2026 | Eventbrite Saudi Arabia | Riyadh | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
+| Information Session With IE University Saudi Arabia in Riyadh | Eventbrite Saudi Arabia | Riyadh | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
 
 ## Source Health
 
@@ -63,18 +63,18 @@
 |---:|---|---|---:|---:|---|
 | 1 | National Events Center / Saudi Events | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 2 | Visit Saudi Calendar | healthy | 11 | 12 | استمر بالمراجعة والتكرار قبل النشر. |
-| 3 | Ministry of Culture Cultural Calendar | collection-error | 0 | 0 | fetch failed |
-| 4 | Ministry of Sport Events | collection-error | 0 | 0 | fetch failed |
+| 3 | Ministry of Culture Cultural Calendar | healthy | 13 | 0 | استمر بالمراجعة والتكرار قبل النشر. |
+| 4 | Ministry of Sport Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
 | 5 | webook Explore | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 6 | Hala Yalla | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 7 | Experience AlUla Events | healthy | 9 | 9 | استمر بالمراجعة والتكرار قبل النشر. |
-| 8 | MDLBEAST Events | healthy | 3 | 5 | استمر بالمراجعة والتكرار قبل النشر. |
-| 9 | Monsha'at All Events | collection-error | 0 | 3 | fetch failed |
+| 8 | MDLBEAST Events | healthy | 5 | 5 | استمر بالمراجعة والتكرار قبل النشر. |
+| 9 | Monsha'at All Events | healthy | 3 | 3 | استمر بالمراجعة والتكرار قبل النشر. |
 | 10 | Invest Saudi Events | healthy | 3 | 3 | استمر بالمراجعة والتكرار قبل النشر. |
 | 11 | RFECC What's On | healthy | 6 | 6 | استمر بالمراجعة والتكرار قبل النشر. |
-| 12 | Eye of Riyadh Events | collection-error | 0 | 6 | Discovery-only source unavailable in this run: HTTP 403 |
+| 12 | Eye of Riyadh Events | healthy | 16 | 6 | استمر بالمراجعة والتكرار قبل النشر. |
 | 13 | 10times Saudi Arabia | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 14 | Eventbrite Saudi Arabia | collection-error | 0 | 16 | Discovery-only source unavailable in this run: HTTP 405 |
+| 14 | Eventbrite Saudi Arabia | healthy | 18 | 15 | استمر بالمراجعة والتكرار قبل النشر. |
 | 15 | Platinumlist Jeddah Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 16 | Tuwaiq Academy Bootcamps and Programs | healthy | 12 | 20 | استمر بالمراجعة والتكرار قبل النشر. |
 | 17 | Future Skills MCIT Catalogue | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |
@@ -85,7 +85,7 @@
 | 22 | Dhahran Expo Calendar | healthy | 15 | 15 | استمر بالمراجعة والتكرار قبل النشر. |
 | 23 | Ithra Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
 | 24 | Saudi Digital Academy | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 25 | SDAIA Academy Programs | collection-error | 0 | 0 | fetch failed |
+| 25 | SDAIA Academy Programs | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
 | 26 | Saudi Events App | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 27 | Enjoy Saudi Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 28 | Misk Hub Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
@@ -97,7 +97,7 @@
 | 34 | Visit Saudi Summer Calendar PDF | healthy | 52 | 51 | استمر بالمراجعة والتكرار قبل النشر. |
 | 35 | Qiddiya Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 36 | Sela and Saudi Entertainment Expo | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 37 | Ministry of Culture Commission Calendars | collection-error | 0 | 12 | fetch failed |
+| 37 | Ministry of Culture Commission Calendars | healthy | 13 | 12 | استمر بالمراجعة والتكرار قبل النشر. |
 | 38 | Visit AlBalad / Historic Jeddah | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 39 | Discover Aseer Events | healthy | 1 | 1 | استمر بالمراجعة والتكرار قبل النشر. |
 | 40 | Diriyah Season | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
@@ -114,29 +114,31 @@
 | 51 | Riyadh City Events | healthy | 40 | 43 | استمر بالمراجعة والتكرار قبل النشر. |
 | 52 | Monsha'at Academy Programs | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 53 | General Entertainment Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 54 | SDAIA Calendar and Events | collection-error | 0 | 2 | fetch failed |
+| 54 | SDAIA Calendar and Events | healthy | 2 | 2 | استمر بالمراجعة والتكرار قبل النشر. |
 | 55 | Makkah Chamber Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
 | 56 | SCEGA ePortal Events | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |
 | 57 | Ministry of Commerce Upcoming Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 58 | Evento | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 59 | Asharqia Chamber Events | collection-error | 0 | 2 | fetch failed |
-| 60 | Qassim Chamber Events | collection-error | 0 | 0 | HTTP 403 |
+| 59 | Asharqia Chamber Events | healthy | 2 | 2 | استمر بالمراجعة والتكرار قبل النشر. |
+| 60 | Qassim Chamber Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
 | 61 | Abha Chamber Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
 | 62 | Baha Municipality Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 63 | Baha Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 64 | Jouf Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 65 | Northern Borders Chamber Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
 | 66 | Tabuk Chamber Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
-| 67 | Jazan Chamber Events | collection-error | 0 | 1 | fetch failed |
+| 67 | Jazan Chamber Events | healthy | 1 | 1 | استمر بالمراجعة والتكرار قبل النشر. |
 | 68 | Hail Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 69 | Najran Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 70 | Platinumlist Riyadh Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 71 | Najran Municipality Summer Events | healthy | 1 | 1 | استمر بالمراجعة والتكرار قبل النشر. |
 | 72 | Platinumlist Saudi City Network | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 73 | GOV.SA National Platform Events | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
-| 74 | Qassim University Events | healthy | 1 | 1 | استمر بالمراجعة والتكرار قبل النشر. |
-| 75 | Jouf University Summer Programs | healthy | 1 | 1 | استمر بالمراجعة والتكرار قبل النشر. |
+| 74 | Middle East Banking AI & Analytics Summit Official | not-collected | 0 | 1 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 75 | Middle East Enterprise AI & Analytics Summit Official | not-collected | 0 | 1 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 76 | Money20/20 Middle East Official Agendas | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 77 | LEAP Official Event and Agendas | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 78 | FII 10th Edition Official Program | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 79 | Cityscape Global Official Program | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
+| 80 | Qassim University Events | healthy | 1 | 1 | استمر بالمراجعة والتكرار قبل النشر. |
+| 81 | Jouf University Summer Programs | healthy | 1 | 1 | استمر بالمراجعة والتكرار قبل النشر. |

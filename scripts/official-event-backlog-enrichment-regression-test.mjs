@@ -47,6 +47,7 @@ for (const event of published) {
     `${event.id} must not be marked live-ready without sessions`
   );
   assert.doesNotMatch(event.image_url || '', /\.(mp4|mov|webm)(\?|$)/i, `${event.id} must not use video as image`);
+  assert.doesNotMatch(event.image_url || '', /(?:whatsapp|social|chat[-_]?icon)/i, `${event.id} must not use a social/contact icon as event artwork`);
 }
 
 for (const event of published.filter((row) => requiredSources.includes(row.source_label))) {

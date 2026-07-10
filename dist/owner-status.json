@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T08:00:11.157Z",
+  "generated_at": "2026-07-10T09:13:06.464Z",
   "platform": "EventLive",
   "domain": "eventme.live",
   "intent": "eventlive-owner-status",
@@ -38,31 +38,31 @@
     "note": "هذه الصفحة تثبت أن التتبع مزروع في الصفحات العامة. أرقام الزوار الحقيقية تظهر بعد تفعيل لوحة مزود التحليلات للدومين."
   },
   "source_sync": {
-    "last_run_at": "2026-07-10T06:58:44.535Z",
-    "registered_sources": 79,
+    "last_run_at": "2026-07-10T09:13:06.228Z",
+    "registered_sources": 81,
     "attempted_sources": 41,
     "productive_sources": 26,
     "collector_errors": 0,
     "zero_yield": 13,
-    "candidates_seen": 260,
+    "candidates_seen": 261,
     "published_new": 0,
-    "linked_existing": 238,
-    "blocked_remaining": 22,
+    "linked_existing": 240,
+    "blocked_remaining": 21,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 29,
+    "secondary_still_blocked": 21,
     "blocked_reasons": {
       "possible duplicate already exists: event-esports-world-cup": 1,
-      "publication gate source-evidence is not auto-publishable": 19,
+      "publication gate source-evidence is not auto-publishable": 18,
       "possible duplicate already exists: event-saudi-wood-expo-2026": 1,
       "possible duplicate already exists: event-saudi-industrial-series-2": 1
     },
     "collector_error_sources": []
   },
   "catalog": {
-    "public_events": 619,
+    "public_events": 622,
     "live_ready": 21,
-    "ended_events": 394,
-    "upcoming_or_ongoing": 225
+    "ended_events": 395,
+    "upcoming_or_ongoing": 227
   },
   "links": {
     "analytics_dashboard": "https://plausible.io/eventme.live",

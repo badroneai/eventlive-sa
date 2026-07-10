@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-10T08:00:11.157Z",
+  "generated_at": "2026-07-10T09:13:06.464Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "live-schedule-activation",
   "totals": {
-    "candidates": 212,
+    "candidates": 214,
     "urgent": 95,
     "high": 17,
     "needs_date": 0,
-    "source_groups": 27,
-    "basic_window_candidates": 212,
+    "source_groups": 29,
+    "basic_window_candidates": 214,
     "missing_window_candidates": 0
   },
   "focus": {
@@ -1726,6 +1726,76 @@
         "next_action": "استخرج وقت الورشة، محاور التدريب، ورابط التسجيل من صفحة التفاصيل أو نماذج الحضور."
       },
       "impact_score": 15
+    },
+    {
+      "key": "Middle East Banking AI & Analytics Summit Official",
+      "source_label": "Middle East Banking AI & Analytics Summit Official",
+      "source_url": "https://mebankingai.com/sa/",
+      "source_host": "mebankingai.com",
+      "candidates": 1,
+      "urgent": 0,
+      "high": 0,
+      "basic_windows": 1,
+      "missing_windows": 0,
+      "route_counts": {
+        "source-detail-probe": 1
+      },
+      "next_event_starts_at": "2026-10-14T08:30:00+03:00",
+      "example_events": [
+        {
+          "id": "event-12th-middle-east-banking-ai-analytics-summit-2026",
+          "title": "12th Middle East Banking AI & Analytics Summit 2026",
+          "city": "الرياض",
+          "starts_at": "2026-10-14T08:30:00+03:00",
+          "detail_url": "./events/event-12th-middle-east-banking-ai-analytics-summit-2026.html",
+          "priority": {
+            "key": "normal",
+            "label": "متابعة دورية",
+            "rank": 2
+          }
+        }
+      ],
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "impact_score": 11
+    },
+    {
+      "key": "Middle East Enterprise AI & Analytics Summit Official",
+      "source_label": "Middle East Enterprise AI & Analytics Summit Official",
+      "source_url": "https://meenterpriseai.com/sa/",
+      "source_host": "meenterpriseai.com",
+      "candidates": 1,
+      "urgent": 0,
+      "high": 0,
+      "basic_windows": 1,
+      "missing_windows": 0,
+      "route_counts": {
+        "source-detail-probe": 1
+      },
+      "next_event_starts_at": "2026-10-15T08:30:00+03:00",
+      "example_events": [
+        {
+          "id": "event-15th-middle-east-enterprise-ai-analytics-summit",
+          "title": "15th Middle East Enterprise AI & Analytics Summit",
+          "city": "الرياض",
+          "starts_at": "2026-10-15T08:30:00+03:00",
+          "detail_url": "./events/event-15th-middle-east-enterprise-ai-analytics-summit.html",
+          "priority": {
+            "key": "normal",
+            "label": "متابعة دورية",
+            "rank": 2
+          }
+        }
+      ],
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "impact_score": 11
     },
     {
       "key": "Money20/20 Middle East Official",
@@ -9675,6 +9745,98 @@
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20IN%20ACT%20-%20ACT%20X&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20IN%20ACT%20-%20ACT%20X%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-10-09T00%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-in-act-act-x.html"
+    },
+    {
+      "id": "event-12th-middle-east-banking-ai-analytics-summit-2026",
+      "title": "12th Middle East Banking AI & Analytics Summit 2026",
+      "city": "الرياض",
+      "venue": "Hyatt Regency Riyadh Olaya",
+      "organizer": "Let's Talk B2B",
+      "category": "مؤتمرات ومنتديات",
+      "starts_at": "2026-10-14T08:30:00+03:00",
+      "ends_at": "2026-10-14T16:30:00+03:00",
+      "detail_url": "./events/event-12th-middle-east-banking-ai-analytics-summit-2026.html",
+      "calendar_url": "./events/event-12th-middle-east-banking-ai-analytics-summit-2026.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Hyatt%20Regency%20Riyadh%20Olaya%20Riyadh",
+      "source_label": "Middle East Banking AI & Analytics Summit Official",
+      "source_url": "https://mebankingai.com/sa/",
+      "evidence_url": "https://mebankingai.com/sa/",
+      "source_confidence": "corroborated-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-10-14T08:30:00+03:00",
+        "ends_at": "2026-10-14T16:30:00+03:00",
+        "room": "Hyatt Regency Riyadh Olaya",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%2012th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202026&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%2012th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202026%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Hyatt%20Regency%20Riyadh%20Olaya%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-10-14T08%3A30%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-12th-middle-east-banking-ai-analytics-summit-2026.html"
+    },
+    {
+      "id": "event-15th-middle-east-enterprise-ai-analytics-summit",
+      "title": "15th Middle East Enterprise AI & Analytics Summit",
+      "city": "الرياض",
+      "venue": "Hyatt Regency Riyadh Olaya",
+      "organizer": "Let's Talk B2B",
+      "category": "مؤتمرات ومنتديات",
+      "starts_at": "2026-10-15T08:30:00+03:00",
+      "ends_at": "2026-10-15T16:30:00+03:00",
+      "detail_url": "./events/event-15th-middle-east-enterprise-ai-analytics-summit.html",
+      "calendar_url": "./events/event-15th-middle-east-enterprise-ai-analytics-summit.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Hyatt%20Regency%20Riyadh%20Olaya%20Riyadh",
+      "source_label": "Middle East Enterprise AI & Analytics Summit Official",
+      "source_url": "https://meenterpriseai.com/sa/",
+      "evidence_url": "https://meenterpriseai.com/sa/",
+      "source_confidence": "corroborated-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-10-15T08:30:00+03:00",
+        "ends_at": "2026-10-15T16:30:00+03:00",
+        "room": "Hyatt Regency Riyadh Olaya",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%2015th%20Middle%20East%20Enterprise%20AI%20%26%20Analytics%20Summit&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%2015th%20Middle%20East%20Enterprise%20AI%20%26%20Analytics%20Summit%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Hyatt%20Regency%20Riyadh%20Olaya%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-10-15T08%3A30%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-15th-middle-east-enterprise-ai-analytics-summit.html"
     },
     {
       "id": "event-alula-wellness-festival",

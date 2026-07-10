@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:12th Middle East Banking AI & Analytics Summit 2026 | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-12th-middle-east-banking-ai-analytics-summit-2026@eventme.live
+DTSTAMP:20260710T091306Z
+DTSTART:20261014T053000Z
+DTEND:20261014T133000Z
+SUMMARY:12th Middle East Banking AI & Analytics Summit 2026
+DESCRIPTION:A Riyadh summit for banking leaders focused on applied AI\, analytics\, data governance\, risk\, and scalable transformation.
+LOCATION:Hyatt Regency Riyadh Olaya
+URL:https://eventme.live/events/event-12th-middle-east-banking-ai-analytics-summit-2026.html
+END:VEVENT
+END:VCALENDAR

@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-10T08:00:11.157Z",
+  "generated_at": "2026-07-10T09:13:06.464Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "cities_count": 34,
   "totals": {
-    "events": 619,
-    "upcoming_or_active": 225,
-    "ended": 394,
+    "events": 622,
+    "upcoming_or_active": 227,
+    "ended": 395,
     "live_ready": 21
   },
   "cities": [
@@ -14,8 +14,8 @@
       "slug": "riyadh",
       "label": "الرياض",
       "url": "./cities/riyadh.html",
-      "total_events": 286,
-      "upcoming_or_active": 123,
+      "total_events": 288,
+      "upcoming_or_active": 125,
       "ended": 163,
       "live_ready": 7,
       "sources": [
@@ -27,6 +27,8 @@
         "Invest Saudi Events",
         "LEAP 2026 Official",
         "MDLBEAST Events",
+        "Middle East Banking AI & Analytics Summit Official",
+        "Middle East Enterprise AI & Analytics Summit Official",
         "Ministry of Culture Commission Calendars",
         "Ministry of Sport Events",
         "Misk Hub Programs",
@@ -67,7 +69,7 @@
         "status": "ongoing",
         "url": "./events/event-skill-development-initiative.html"
       },
-      "sources_count": 27,
+      "sources_count": 29,
       "categories_count": 12
     },
     {
@@ -203,9 +205,9 @@
       "slug": "online",
       "label": "عن بعد",
       "url": "./cities/online.html",
-      "total_events": 35,
+      "total_events": 36,
       "upcoming_or_active": 12,
-      "ended": 23,
+      "ended": 24,
       "live_ready": 8,
       "sources": [
         "CODE MCIT Programs",

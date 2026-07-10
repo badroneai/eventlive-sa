@@ -1,0 +1,32 @@
+{
+  "schema": "eventlive.source-official-evidence-report.v1",
+  "generated_at": "2026-07-10T09:12:31.322Z",
+  "source_candidates": "data/source_candidates.json",
+  "source_evidence": "data/source_official_evidence.json",
+  "totals": {
+    "entries": 3,
+    "verified_entries": 2,
+    "candidates_verified": 5,
+    "deduplicated": 12
+  },
+  "results": [
+    {
+      "id": "middle-east-banking-ai-summit-2026",
+      "status": "verified",
+      "matched": 2,
+      "note": "Official evidence matched."
+    },
+    {
+      "id": "middle-east-enterprise-ai-summit-2026",
+      "status": "verified",
+      "matched": 3,
+      "note": "Official evidence matched."
+    },
+    {
+      "id": "jeddah-fintech-week-2026",
+      "status": "radar",
+      "matched": 0,
+      "note": "The current official bundle contains conflicting February, September, and October date/venue variants. Keep discovery evidence blocked until the first-party canonical fields agree."
+    }
+  ]
+}

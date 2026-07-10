@@ -1814,7 +1814,7 @@
       "owner": "Qassim University",
       "source_type": "organizer-calendar",
       "trust_level": "official",
-      "priority": 74,
+      "priority": 80,
       "coverage": "Public university events, summer clubs, lectures, student programs, and community activities in Buraydah and Qassim.",
       "cities": [
         "Buraydah",
@@ -1842,7 +1842,7 @@
       "owner": "Jouf University",
       "source_type": "organizer-calendar",
       "trust_level": "official",
-      "priority": 75,
+      "priority": 81,
       "coverage": "Public summer programs, training, innovation, volunteering, sports, and community activities in Sakaka and Al Jouf.",
       "cities": [
         "Sakaka",
@@ -2035,7 +2035,7 @@
       "id": "jazan-chamber-events",
       "name": "Jazan Chamber Events",
       "url": "https://jazancci.org.sa/",
-      "collector_url": "https://www.jazancci.org.sa/api/events/calendar/7/2026",
+      "collector_url": "https://jazancci.org.sa/api/events/calendar/7/2026",
       "owner": "Jazan Chamber of Commerce",
       "source_type": "venue-calendar",
       "trust_level": "official",
@@ -2057,7 +2057,7 @@
       "intake_policy": "official-feed-preferred",
       "evidence_required": "Jazan Chamber calendar API row or official event detail URL with title, start/end datetime, location or delivery mode, and chamber context before candidate promotion.",
       "candidate_gate": "duplicate-review",
-      "notes": "Added 2026-07-05 after web verification of the official chamber site and public activity signals. Browser probe confirmed a stable monthly calendar API under /api/events/calendar/{month}/{year}; the collector sweeps official monthly API rows from 2022 onward and publishes only date-complete rows. Runtime DNS currently resolves the API reliably when bootstrapped through www.jazancci.org.sa; keep public detail links on events.jazancci.org.sa."
+      "notes": "Added 2026-07-05 after web verification of the official chamber site and public activity signals. Browser probe confirmed a stable monthly calendar API under /api/events/calendar/{month}/{year}. Every six-hour run checks the current and next 12 months plus a rotating historical batch from 2022 onward; a full historical sweep remains available through EVENTLIVE_JAZAN_HISTORY_MODE=full. Keep public detail links on events.jazancci.org.sa."
     },
     {
       "id": "hail-chamber-events",
@@ -2271,6 +2271,55 @@
       "evidence_required": "GOV.SA event detail URL such as https://my.gov.sa/ar/events/{id}, indexed search evidence, or an approved GOV.SA/NEC feed. Do not rely on direct scraping of the protected listing page.",
       "candidate_gate": "source-evidence",
       "notes": "Added 2026-07-09 after probing https://my.gov.sa/ar/events. Direct curl and browser access returned a Cloudflare challenge, so this is not promotable for automated scraping. Public search indexes expose detail URLs and useful fields including title, organizer, date range, location/contact, category, description, image, and registration/share links. Deeper recon found useful non-scraping lanes: Wayback archived-page radar with embedded Next/Drupal payload fields, DGA open-data/API governance, Istitlaa public-consultation confirmation links, and NEC National Calendar services as the likely authoritative backend lane. Second pass found the NEC Angular app catalog includes Add Event, View National Calendar Events, and National Calendar Dashboard; View National Calendar Events is the best export/API partnership ask. Treat GOV.SA as a partnership/evidence source and use indexed or archived detail pages only for manual review or official-source corroboration. See reports/mygov-platform-recon-2026-07-09.md, reports/mygov-platform-recon-second-pass-2026-07-09.md, and reports/mygov-wayback-radar.md."
+    },
+    {
+      "id": "middle-east-banking-ai-summit",
+      "name": "Middle East Banking AI & Analytics Summit Official",
+      "url": "https://mebankingai.com/sa/",
+      "owner": "Let's Talk B2B",
+      "source_type": "conference-organizer",
+      "trust_level": "official",
+      "priority": 74,
+      "coverage": "Official event identity, Riyadh date, venue, speakers, partners, registration, and edition changes for the Middle East Banking AI & Analytics Summit.",
+      "cities": [
+        "Riyadh"
+      ],
+      "categories": [
+        "banking",
+        "AI",
+        "data",
+        "fintech",
+        "conference"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "First-party page must contain the matching title, explicit edition date, and Riyadh venue before a discovery lead is promoted.",
+      "candidate_gate": "human-review",
+      "notes": "Added 2026-07-10. A six-hour official-evidence verifier reads the public first-party page and same-origin application bundle, then promotes matching discovery leads only when title, date, and venue tokens all agree."
+    },
+    {
+      "id": "middle-east-enterprise-ai-summit",
+      "name": "Middle East Enterprise AI & Analytics Summit Official",
+      "url": "https://meenterpriseai.com/sa/",
+      "owner": "Let's Talk B2B",
+      "source_type": "conference-organizer",
+      "trust_level": "official",
+      "priority": 75,
+      "coverage": "Official event identity, Riyadh date, venue, speakers, agenda, partners, registration, and edition changes for the Middle East Enterprise AI & Analytics Summit.",
+      "cities": [
+        "Riyadh"
+      ],
+      "categories": [
+        "enterprise AI",
+        "data",
+        "technology",
+        "conference"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "First-party page must contain the matching title, explicit edition date, and Riyadh venue before a discovery lead is promoted.",
+      "candidate_gate": "human-review",
+      "notes": "Added 2026-07-10. A six-hour official-evidence verifier reads the public first-party page and same-origin application bundle, then promotes matching discovery leads only when title, date, and venue tokens all agree."
     }
   ]
 }

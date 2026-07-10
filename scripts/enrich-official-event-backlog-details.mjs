@@ -64,6 +64,7 @@ function extractMeta(html, name) {
 
 function isStillImage(url = '') {
   const cleaned = cleanText(url).split('#')[0];
+  if (/logo|sprite|icon|favicon|apple-touch|whatsapp|social|chat[-_]?icon/i.test(cleaned)) return false;
   return /\.(jpe?g|png|webp|avif)(\?|$)/i.test(cleaned) || /scene7\.com\/is\/image\//i.test(cleaned);
 }
 
@@ -154,7 +155,7 @@ async function fetchPageMeta(url) {
     const html = await response.text();
     const title = cleanText(extractMeta(html, 'og:title') || html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] || '');
     const description = cleanText(extractMeta(html, 'og:description') || extractMeta(html, 'description') || stripHtml(html).slice(0, 520));
-    const image = highResImage(imageCandidates(html).find((candidate) => !/logo|sprite|icon|favicon|apple-touch/i.test(candidate)) || '');
+    const image = highResImage(imageCandidates(html).find(isStillImage) || '');
     return { ok: true, title, description, image };
   } catch (error) {
     return { ok: false, reason: error?.message || 'fetch-failed' };

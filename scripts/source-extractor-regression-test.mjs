@@ -6,6 +6,7 @@ import {
   extractInvestSaudiEvents,
   extractJazanChamberEvents,
   jazanApiEndpoint,
+  jazanMonthsToFetch,
   extractKaustEvents,
   extractKauEvents,
   extractMakkahChamberEvents,
@@ -17,7 +18,8 @@ import {
   extractSaudiProLeagueFixtures,
   extractSdaiaAcademyPrograms,
   extractSdaiaCalendarEvents,
-  extractVisitSaudiApiEvents
+  extractVisitSaudiApiEvents,
+  loadSourceExtraction
 } from './collect-source-candidates.mjs';
 
 const visitSaudiSource = {
@@ -522,7 +524,30 @@ assert.equal(jazanEvents[0].ends_at, '2026-06-16T20:00:00+03:00');
 assert.equal(jazanEvents[0].publication_gate, 'duplicate-review');
 assert.equal(jazanEvents[0].venue, 'أكاديمية غرفة جازان');
 assert.ok(jazanEvents[0].image_url.includes('firebasestorage.googleapis.com'));
-assert.equal(jazanApiEndpoint(7, 2026), 'https://www.jazancci.org.sa/api/events/calendar/7/2026');
+assert.equal(jazanApiEndpoint(7, 2026), 'https://jazancci.org.sa/api/events/calendar/7/2026');
+const jazanRollingMonths = jazanMonthsToFetch(new Date('2026-07-10T12:00:00Z'), {
+  futureMonths: 12,
+  historyMode: 'rolling',
+  historyBatchSize: 2
+});
+assert.equal(jazanRollingMonths.length, 15);
+assert.deepEqual(jazanRollingMonths[0], { month: 7, year: 2026 });
+assert.deepEqual(jazanRollingMonths[12], { month: 7, year: 2027 });
+assert.equal(jazanRollingMonths.filter((item) => (
+  new Date(Date.UTC(item.year, item.month - 1, 1)) < new Date('2026-07-01T00:00:00Z')
+)).length, 2);
+
+const fallbackExtraction = await loadSourceExtraction(
+  { id: 'test-official-api-fallback' },
+  () => { throw new Error('primary extractor must not run'); },
+  {
+    fetchPrimary: async () => { throw new Error('listing timeout'); },
+    fallbackExtractor: async () => [{ title: 'Official API Event' }]
+  }
+);
+assert.equal(fallbackExtraction.payload, '');
+assert.equal(fallbackExtraction.items[0].title, 'Official API Event');
+assert.match(fallbackExtraction.primary_error.message, /listing timeout/);
 
 const sdaiaCalendarEvents = await extractSdaiaCalendarEvents(`
   <a class="card h-100 card-border card-action" href="/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=122" title="Global Forum on the Ethics of AI">

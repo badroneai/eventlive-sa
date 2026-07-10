@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-10T08:00:11.157Z",
+  "generated_at": "2026-07-10T09:13:06.464Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "categories_count": 12,
   "totals": {
-    "events": 619,
-    "upcoming_or_active": 225,
-    "ended": 394,
+    "events": 622,
+    "upcoming_or_active": 227,
+    "ended": 395,
     "live_ready": 21
   },
   "categories": [
@@ -255,8 +255,8 @@
       "slug": "conference-forum",
       "label": "مؤتمرات ومنتديات",
       "url": "./categories/conference-forum.html",
-      "total_events": 61,
-      "upcoming_or_active": 22,
+      "total_events": 63,
+      "upcoming_or_active": 24,
       "ended": 39,
       "live_ready": 5,
       "sources": [
@@ -266,6 +266,8 @@
         "HRSE KSA Official",
         "Invest Saudi Events",
         "LEAP 2026 Official",
+        "Middle East Banking AI & Analytics Summit Official",
+        "Middle East Enterprise AI & Analytics Summit Official",
         "Money20/20 Middle East Official",
         "Real Estate Future Forum Official",
         "Riyadh City Events",
@@ -301,7 +303,7 @@
         "status": "upcoming",
         "url": "./events/event-offshore-technology-innovation-technical-conference-expo-offshore-arabia.html"
       },
-      "sources_count": 13,
+      "sources_count": 15,
       "cities_count": 8,
       "audiences_count": 9
     },
@@ -425,9 +427,9 @@
       "slug": "chamber-event",
       "label": "فعاليات الغرف التجارية",
       "url": "./categories/chamber-event.html",
-      "total_events": 72,
+      "total_events": 73,
       "upcoming_or_active": 8,
-      "ended": 64,
+      "ended": 65,
       "live_ready": 1,
       "sources": [
         "Abha Chamber Events",
