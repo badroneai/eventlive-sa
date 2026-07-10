@@ -71,6 +71,23 @@ async function inspect(page, route, width) {
       subscription: rect('.facet-page .facet-focus:last-of-type'),
       quickActions: rect('.event-quick-actions'),
       mobileMenu: rect('.mobile-site-menu > summary'),
+      homeShelf: (() => {
+        const shelf = document.querySelector('.card-row');
+        const cards = [...document.querySelectorAll('.card-row .card')];
+        const first = cards[0]?.getBoundingClientRect();
+        const second = cards[1]?.getBoundingClientRect();
+        return shelf ? {
+          cardCount: cards.length,
+          clientWidth: shelf.clientWidth,
+          scrollWidth: shelf.scrollWidth,
+          overflowX: getComputedStyle(shelf).overflowX,
+          scrollSnapType: getComputedStyle(shelf).scrollSnapType,
+          ariaLabel: shelf.getAttribute('aria-label'),
+          tabIndex: shelf.tabIndex,
+          firstCardWidth: first?.width || 0,
+          nextCardVisibleWidth: second ? Math.max(0, Math.min(innerWidth, second.right) - Math.max(0, second.left)) : 0
+        } : null;
+      })(),
       smallTouchTargets: touchTargets.filter((target) => target.height < 44)
     };
   });
@@ -86,6 +103,13 @@ try {
 
     const home = await inspect(page, 'index.html', width);
     assert.ok(home.scrollWidth <= width + 1, `home must not overflow horizontally at ${width}px`);
+    assert.ok(home.homeShelf?.cardCount > 1, `home must expose a useful event shelf at ${width}px`);
+    assert.equal(home.homeShelf?.overflowX, 'auto', `home shelf must use native horizontal scrolling at ${width}px`);
+    assert.ok(String(home.homeShelf?.scrollSnapType).includes('x'), `home shelf must snap horizontally at ${width}px`);
+    assert.equal(home.homeShelf?.ariaLabel, 'فعاليات تبدأ قريبًا', `home shelf needs an accessible name at ${width}px`);
+    assert.equal(home.homeShelf?.tabIndex, 0, `home shelf must be keyboard focusable at ${width}px`);
+    assert.ok(home.homeShelf?.firstCardWidth >= width * 0.74 && home.homeShelf?.firstCardWidth <= width * 0.86, `home card width must prioritize reading while preserving a next-card cue at ${width}px`);
+    assert.ok(home.homeShelf?.nextCardVisibleWidth >= 20 && home.homeShelf?.nextCardVisibleWidth <= 90, `home must reveal part of the next card at ${width}px`);
     assert.equal(home.smallTouchTargets.length, 0, `home has undersized touch targets at ${width}px: ${JSON.stringify(home.smallTouchTargets)}`);
 
     const catalog = await inspect(page, 'events.html', width);

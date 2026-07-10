@@ -38,7 +38,7 @@ const htmlFiles = walkHtml(distDir)
   .filter((file) => !ownerOnlyPages.has(file))
   .sort();
 const sitemap = fs.readFileSync(sitemapPath, 'utf8');
-const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1].normalize('NFC'));
 const uniqueUrls = [...new Set(urls)];
 const eventsFeedPath = path.join(distDir, 'events.json');
 assert.equal(fs.existsSync(eventsFeedPath), true, 'dist/events.json must exist for sitemap event coverage checks');
@@ -48,7 +48,7 @@ const events = Array.isArray(eventsFeed) ? eventsFeed : eventsFeed.events || [];
 assert.equal(urls.length, uniqueUrls.length, 'sitemap must not contain duplicate URLs');
 assert.ok(urls.length >= htmlFiles.length - 1, 'sitemap must be near-complete for generated HTML pages');
 
-const expectedUrls = htmlFiles.map((file) => `${siteUrl}/${file === 'index.html' ? '' : file}`);
+const expectedUrls = htmlFiles.map((file) => `${siteUrl}/${file === 'index.html' ? '' : file}`.normalize('NFC'));
 const missing = expectedUrls.filter((url) => !urls.includes(url));
 assert.deepEqual(missing, [], `sitemap missing generated HTML pages:\n${missing.join('\n')}`);
 

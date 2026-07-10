@@ -74,7 +74,22 @@ const brandCss = `<style id="eventlive-brand-pulse">
   .breadcrumbs strong { max-width: 24ch; }
   details.more > summary, .cta-now, .card-foot a, .card-foot button { min-height: 44px; }
   .more-panel a { min-height: 44px; display:flex; align-items:center; }
-  .card-row { scroll-padding-inline:16px; overscroll-behavior-inline:contain; }
+  .card-row {
+    scroll-padding-inline:16px;
+    overscroll-behavior-inline:contain;
+    -webkit-overflow-scrolling:touch;
+  }
+  .card-row .card {
+    flex:0 0 min(82vw,320px);
+    min-width:0;
+    scroll-snap-align:start;
+  }
+  .card-row:focus-visible {
+    outline:3px solid rgba(13,107,82,.35);
+    outline-offset:4px;
+  }
+  .h-section-head { align-items:flex-start; }
+  .h-section-head .more-link { display:inline-flex; align-items:center; min-height:44px; }
 }
 </style>`;
 
@@ -5239,7 +5254,7 @@ function patchHomePage(events) {
         </div>
         <a class=\"more-link\" href=\"./today-events.html\">فعاليات اليوم</a>
       </div>
-      <div class=\"card-row\">
+      <div class=\"card-row\" role=\"region\" aria-label=\"فعاليات تبدأ قريبًا\" tabindex=\"0\">
 ${soonCards}
       </div>
     </section>\n`
@@ -5251,7 +5266,7 @@ ${soonCards}
         </div>
         <a class=\"more-link\" href=\"./today-events.html\">فعاليات اليوم</a>
       </div>
-      <div class=\"card-row\">
+      <div class=\"card-row\" role=\"region\" aria-label=\"فعاليات تبدأ قريبًا\" tabindex=\"0\">
         <p class=\"empty-state\">لا توجد فعاليات ضمن الساعات 72 القادمة. تصفح \"ماذا في هذا الأسبوع؟\".</p>
       </div>
     </section>\n`;
@@ -5878,7 +5893,7 @@ function writeSitemap(events = []) {
   const eventByPage = new Map(events.map((event) => [`events/${event.file_slug}.html`, event]));
   const ownerOnlyPages = new Set(['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html', 'owner-status.html', 'attendance.html']);
   const sitemapPaths = [...new Set(htmlFiles(distDir)
-    .map((file) => file.replace(/\\/g, '/'))
+    .map((file) => file.replace(/\\/g, '/').normalize('NFC'))
     .filter((file) => !ownerOnlyPages.has(file))
     .map((file) => file === 'index.html' ? '' : file))];
   const urls = sitemapPaths
