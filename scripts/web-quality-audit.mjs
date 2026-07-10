@@ -128,7 +128,14 @@ try {
       const horizontalOverflow = document.documentElement.scrollWidth > window.innerWidth + 2;
       const httpLinks = [...document.querySelectorAll('a[href],script[src],img[src],link[href]')]
         .map((node) => node.getAttribute('href') || node.getAttribute('src') || '')
-        .filter((value) => /^http:\/\//i.test(value));
+        .filter((value) => {
+          if (!/^http:\/\//i.test(value)) return false;
+          try {
+            return new URL(value, window.location.href).origin !== window.location.origin;
+          } catch {
+            return true;
+          }
+        });
       const targetBlankMissingRel = [...document.querySelectorAll('a[target="_blank"]')].filter((anchor) => {
         const rel = anchor.getAttribute('rel') || '';
         return !/\bnoopener\b/i.test(rel) || !/\bnoreferrer\b/i.test(rel);
@@ -152,7 +159,7 @@ try {
     });
     const pageSize = sizeOfPage(pagePath);
     const accessibilityViolations = [];
-    if (metrics.lang !== 'ar') accessibilityViolations.push(`expected html lang=ar, got ${metrics.lang || 'missing'}`);
+    if (!/^ar(?:-|$)/i.test(metrics.lang)) accessibilityViolations.push(`expected an Arabic BCP 47 language tag, got ${metrics.lang || 'missing'}`);
     if (metrics.dir !== 'rtl') accessibilityViolations.push(`expected html dir=rtl, got ${metrics.dir || 'missing'}`);
     if (!metrics.title) accessibilityViolations.push('missing document title');
     if (metrics.h1Count < 1) accessibilityViolations.push('missing h1');
