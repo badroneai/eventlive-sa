@@ -63,7 +63,7 @@ for (const event of samples) {
   assert.equal(fs.existsSync(detailPath), true, `${event.detail_url} must be generated`);
 
   const html = fs.readFileSync(detailPath, 'utf8');
-  const charsetCount = (html.match(/<meta charset="UTF-8" \/>/g) || []).length;
+  const charsetCount = (html.match(/<meta charset="UTF-8"\s*\/?>/gi) || []).length;
   assert.equal(charsetCount, 1, `${event.detail_url} must include exactly one charset meta tag`);
 
   assert.match(html, /aria-label="ملخص جاهزية الحضور"/, `${event.detail_url} must include the attendance readiness panel`);

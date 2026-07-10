@@ -34,6 +34,11 @@ jobs:
       - name: Build site
         run: npm run build
 
+      - name: Verify bilingual site contract
+        run: |
+          npm run test:i18n-contract
+          npm run test:i18n-site
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

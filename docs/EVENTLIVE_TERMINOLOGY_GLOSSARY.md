@@ -17,4 +17,5 @@ This glossary protects the public language of EventLive so generated pages stay 
 
 - Do not use EventMe as a visible brand name. The only allowed visible use is the domain eventme.live.
 - Public navigation must hide source, methodology, trust, and raw JSON owner pages.
-- Arabic is the primary interface language; English event titles remain acceptable when the official source publishes them in English.
+- Arabic is the default interface language. English has an independent, indexable route for every public page.
+- Official event titles may remain in their source language; interface controls and explanatory copy use the selected locale.

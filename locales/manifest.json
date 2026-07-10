@@ -1,0 +1,28 @@
+{
+  "defaultLocale": "ar-SA",
+  "locales": {
+    "ar-SA": {
+      "label": "العربية",
+      "nativeLabel": "العربية",
+      "dir": "rtl",
+      "urlPrefix": "",
+      "numberingSystem": "arab"
+    },
+    "en-SA": {
+      "label": "English",
+      "nativeLabel": "English",
+      "dir": "ltr",
+      "urlPrefix": "en",
+      "numberingSystem": "latn"
+    }
+  },
+  "futureLocales": {
+    "zh-Hans": {
+      "label": "Chinese (Simplified)",
+      "nativeLabel": "简体中文",
+      "dir": "ltr",
+      "urlPrefix": "zh-hans",
+      "numberingSystem": "latn"
+    }
+  }
+}

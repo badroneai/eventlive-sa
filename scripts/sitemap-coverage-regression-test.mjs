@@ -48,13 +48,21 @@ const events = Array.isArray(eventsFeed) ? eventsFeed : eventsFeed.events || [];
 assert.equal(urls.length, uniqueUrls.length, 'sitemap must not contain duplicate URLs');
 assert.ok(urls.length >= htmlFiles.length - 1, 'sitemap must be near-complete for generated HTML pages');
 
-const expectedUrls = htmlFiles.map((file) => `${siteUrl}/${file === 'index.html' ? '' : file}`.normalize('NFC'));
+const publicUrlForFile = (file) => {
+  if (file === 'index.html') return `${siteUrl}/`;
+  if (file.endsWith('/index.html')) return `${siteUrl}/${file.slice(0, -'index.html'.length)}`;
+  return `${siteUrl}/${file}`;
+};
+const expectedUrls = htmlFiles.map((file) => publicUrlForFile(file).normalize('NFC'));
 const missing = expectedUrls.filter((url) => !urls.includes(url));
 assert.deepEqual(missing, [], `sitemap missing generated HTML pages:\n${missing.join('\n')}`);
 
 const staleUrls = urls
   .filter((url) => url.startsWith(`${siteUrl}/`))
-  .map((url) => url.slice(`${siteUrl}/`.length) || 'index.html')
+  .map((url) => {
+    const relative = url.slice(`${siteUrl}/`.length);
+    return !relative || relative.endsWith('/') ? `${relative}index.html` : relative;
+  })
   .filter((relativePath) => !fs.existsSync(path.join(distDir, relativePath)));
 
 assert.deepEqual(staleUrls, [], `sitemap contains URLs without generated files:\n${staleUrls.join('\n')}`);

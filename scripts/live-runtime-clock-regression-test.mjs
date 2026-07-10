@@ -43,6 +43,10 @@ assertRuntimeScript('index.html', home);
 const staticHomeRelativeTimes = [...home.matchAll(/<div class="card-when"(?![^>]*data-live-time)[^>]*>\s*(?:يبدأ بعد|ينتهي بعد|انتهت منذ)[\s\S]*?<\/div>/g)];
 assert.deepEqual(staticHomeRelativeTimes, [], 'home cards must not keep build-time relative timing without data-live-time');
 assertLiveTimeElements('index.html', home);
+const firstHomeStart = home.match(/<[^>]+class="card-when"[^>]+data-start="([^"]+)"/i)?.[1]
+  || home.match(/<[^>]+data-start="([^"]+)"[^>]+class="card-when"/i)?.[1];
+assert.ok(firstHomeStart && Number.isFinite(Date.parse(firstHomeStart)), 'home must expose a valid first event start for the runtime clock browser test');
+const browserTestNow = Date.parse(firstHomeStart) - (60 * 60 * 1000);
 
 for (const page of requiredPages.slice(1)) {
   const html = readDist(page);
@@ -54,11 +58,11 @@ for (const page of requiredPages.slice(1)) {
 const browser = await chromium.launch({ headless: true });
 try {
   const page = await browser.newPage();
-  await page.addInitScript(() => {
+  await page.addInitScript((fakeNow) => {
     const realNow = Date.now.bind(Date);
-    window.__eventliveFakeNow = Date.parse('2026-07-05T12:00:00+03:00');
+    window.__eventliveFakeNow = fakeNow;
     Date.now = () => window.__eventliveFakeNow || realNow();
-  });
+  }, browserTestNow);
   await page.goto(pathToFileURL(path.join(distDir, 'index.html')).href);
   await page.waitForFunction(() => window.EventLiveRuntimeClock && document.querySelector('.card-when[data-live-time]')?.textContent?.trim());
   const before = await page.locator('.card-when[data-live-time]').first().textContent();

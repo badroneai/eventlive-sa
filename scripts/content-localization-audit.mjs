@@ -56,18 +56,41 @@ for (const page of pages) {
   const brandMatches = [...visibleText.matchAll(forbiddenBrandPattern)].length;
   const ownerLinks = forbiddenOwnerLinks.filter((link) => html.includes(`href="${link}"`) || html.includes(`href='${link}'`));
   const hasRequiredTerms = requiredArabicTerms.every((term) => visibleText.includes(term));
-  const htmlLangOk = /<html[^>]*lang="ar"[^>]*dir="rtl"/i.test(html);
+  const htmlLangOk = /<html[^>]*lang="ar-SA"[^>]*dir="rtl"/i.test(html);
 
   if (brandMatches > 0) findings.push({ page, rule: 'forbidden-eventme-brand', evidence: `${brandMatches} visible EventMe references` });
   if (ownerLinks.length > 0) findings.push({ page, rule: 'owner-link-visible', evidence: ownerLinks.join(', ') });
   if (!hasRequiredTerms && page === 'index.html') findings.push({ page, rule: 'missing-core-arabic-terms', evidence: requiredArabicTerms.join(', ') });
-  if (!htmlLangOk) findings.push({ page, rule: 'html-lang-dir', evidence: 'expected lang=ar and dir=rtl' });
+  if (!htmlLangOk) findings.push({ page, rule: 'html-lang-dir', evidence: 'expected lang=ar-SA and dir=rtl' });
 
   pageChecks.push({
     page,
     html_lang_dir: htmlLangOk,
     visible_eventme_brand_refs: brandMatches,
     owner_links_visible: ownerLinks,
+    visible_text_chars: visibleText.length
+  });
+}
+
+for (const page of pages) {
+  const relative = path.join('en', page);
+  const fullPath = path.join(distDir, relative);
+  if (!fs.existsSync(fullPath)) {
+    findings.push({ page: relative, rule: 'missing-page', evidence: relative });
+    continue;
+  }
+  const html = fs.readFileSync(fullPath, 'utf8');
+  const visibleText = stripHtml(html);
+  const htmlLangOk = /<html[^>]*lang="en-SA"[^>]*dir="ltr"/i.test(html);
+  const hasSwitcher = /class="language-switch"[^>]*>العربية<\/a>/i.test(html);
+  const hasCoreEnglish = page !== 'index.html' || ['Saudi Arabia', 'events', 'EventLive'].every((term) => visibleText.includes(term));
+  if (!htmlLangOk) findings.push({ page: relative, rule: 'html-lang-dir', evidence: 'expected lang=en-SA and dir=ltr' });
+  if (!hasSwitcher) findings.push({ page: relative, rule: 'language-switch', evidence: 'missing Arabic counterpart link' });
+  if (!hasCoreEnglish) findings.push({ page: relative, rule: 'missing-core-english-terms', evidence: 'Saudi Arabia, events, EventLive' });
+  pageChecks.push({
+    page: relative,
+    html_lang_dir: htmlLangOk,
+    language_switch: hasSwitcher,
     visible_text_chars: visibleText.length
   });
 }
@@ -91,7 +114,8 @@ This glossary protects the public language of EventLive so generated pages stay 
 
 - Do not use EventMe as a visible brand name. The only allowed visible use is the domain eventme.live.
 - Public navigation must hide source, methodology, trust, and raw JSON owner pages.
-- Arabic is the primary interface language; English event titles remain acceptable when the official source publishes them in English.
+- Arabic is the default interface language. English has an independent, indexable route for every public page.
+- Official event titles may remain in their source language; interface controls and explanatory copy use the selected locale.
 `;
 
 fs.mkdirSync(reportsDir, { recursive: true });

@@ -31,7 +31,11 @@ for (const filePath of htmlFiles) {
   const html = fs.readFileSync(filePath, 'utf8');
   const errors = [];
 
-  if (!/<html[^>]+lang="ar"[^>]+dir="rtl"|<html[^>]+dir="rtl"[^>]+lang="ar"/i.test(html)) errors.push('missing Arabic RTL html attributes');
+  const isEnglish = relativePath.startsWith('en/');
+  const languagePattern = isEnglish
+    ? /<html[^>]+lang="en-SA"[^>]+dir="ltr"|<html[^>]+dir="ltr"[^>]+lang="en-SA"/i
+    : /<html[^>]+lang="ar(?:-SA)?"[^>]+dir="rtl"|<html[^>]+dir="rtl"[^>]+lang="ar(?:-SA)?"/i;
+  if (!languagePattern.test(html)) errors.push(`missing ${isEnglish ? 'English LTR' : 'Arabic RTL'} html attributes`);
   if (!/<link rel="canonical" href="https:\/\/eventme\.live\//i.test(html)) errors.push('missing eventme.live canonical');
   if (!/<meta name="description" content="[^"]{40,}"/i.test(html)) errors.push('missing useful meta description');
   if (!/<meta property="og:site_name" content="EventLive"/i.test(html)) errors.push('missing EventLive OpenGraph site name');

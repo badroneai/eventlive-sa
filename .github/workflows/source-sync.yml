@@ -74,6 +74,8 @@ jobs:
           npm run test:venue-location
           npm run test:image-cache
           npm run test:public-assets
+          npm run test:i18n-contract
+          npm run test:i18n-site
           npm run test:event-kind
           npm run test:city-search
 

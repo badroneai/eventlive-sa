@@ -104,7 +104,7 @@ function checkPage(relativePath) {
 
   const html = readDist(relativePath);
   const errors = [];
-  if (!has(/<html[^>]+lang="ar"[^>]+dir="rtl"|<html[^>]+dir="rtl"[^>]+lang="ar"/i, html)) errors.push('missing Arabic RTL html attributes');
+  if (!has(/<html[^>]+lang="ar(?:-SA)?"[^>]+dir="rtl"|<html[^>]+dir="rtl"[^>]+lang="ar(?:-SA)?"/i, html)) errors.push('missing Arabic RTL html attributes');
   if (!has(/<link rel="canonical" href="https:\/\/eventme\.live\//i, html)) errors.push('missing eventme.live canonical');
   if (!has(/<meta name="description" content="[^"]{40,}"/i, html)) errors.push('missing useful meta description');
   if (!has(/<meta property="og:site_name" content="EventLive"/i, html)) errors.push('missing EventLive OpenGraph site name');

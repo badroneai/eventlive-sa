@@ -78,6 +78,11 @@ jobs:
       - name: Build EventLive public site
         run: npm run build
 
+      - name: Verify bilingual site contract
+        run: |
+          npm run test:i18n-contract
+          npm run test:i18n-site
+
       - name: Run verified venue location regression tests
         run: npm run test:venue-location
 
