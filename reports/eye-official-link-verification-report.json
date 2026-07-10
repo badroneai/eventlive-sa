@@ -1,55 +1,31 @@
 {
   "schema": "eventlive.eye-official-link-verification.v1",
-  "generated_at": "2026-07-10T09:12:21.122Z",
+  "generated_at": "2026-07-10T10:11:11.575Z",
   "dry_run": false,
   "totals": {
     "targets": 12,
-    "confirmed": 9,
-    "skipped": 3,
-    "failed": 0
+    "confirmed": 5,
+    "skipped": 1,
+    "failed": 6
   },
   "rows": [
     {
       "candidate_id": "candidate-eye-of-riyadh-events-oxford-future-of-real-estate-programme-20260805-7c9ee195",
       "title": "Oxford Future of Real Estate Programme",
-      "status": "skipped",
-      "official_url": "https://www.eyeofriyadh.com/oxford-fcp-registration/",
-      "confirmed": false,
-      "reason": "official-link-is-not-independent"
+      "status": "failed",
+      "reason": "HTTP 403"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-sunaa-2026-20260818-e3819fa8",
       "title": "SUNAA 2026",
-      "status": "skipped",
-      "official_url": "https://pmcfec.com/",
-      "confirmed": false,
-      "reason": "title-not-confirmed",
-      "title_tokens": [
-        "sunaa"
-      ],
-      "matched_title_tokens": [],
-      "year_confirmed": true,
-      "month_confirmed": false
+      "status": "failed",
+      "reason": "HTTP 403"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-smart-data-ai-summit-20260826-f9946ea8",
       "title": "Smart Data & AI Summit",
-      "status": "confirmed",
-      "official_url": "https://saudi.smartdataseries.com/",
-      "official_image_url": "https://saudi.smartdataseries.com/wp-content/uploads/2025/11/sdais-saudi.jpg",
-      "organizer": "",
-      "confirmed": true,
-      "reason": "confirmed",
-      "title_tokens": [
-        "smart",
-        "data"
-      ],
-      "matched_title_tokens": [
-        "smart",
-        "data"
-      ],
-      "year_confirmed": true,
-      "month_confirmed": true
+      "status": "failed",
+      "reason": "HTTP 403"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-hrse-ksa-20260830-6945a87a",
@@ -110,64 +86,20 @@
     {
       "candidate_id": "candidate-eye-of-riyadh-events-saudi-fm-clean-20260830-cbe48152",
       "title": "Saudi FM & Clean",
-      "status": "confirmed",
-      "official_url": "https://www.big5constructsaudi.com/specialised-events/saudi-fm-clean-ksa/",
-      "official_image_url": "https://www.big5constructsaudi.com/wp-content/uploads/sites/7/2024/12/Saudi-FM.png",
-      "organizer": "dmg events",
-      "confirmed": true,
-      "reason": "confirmed",
-      "title_tokens": [
-        "clean"
-      ],
-      "matched_title_tokens": [
-        "clean"
-      ],
-      "year_confirmed": true,
-      "month_confirmed": true
+      "status": "failed",
+      "reason": "HTTP 403"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-global-proptech-summit-2026-20261025-7c1d3001",
       "title": "Global Proptech Summit 2026",
-      "status": "confirmed",
-      "official_url": "https://globalproptechsummit.com/",
-      "official_image_url": "",
-      "organizer": "Eye of Riyadh",
-      "confirmed": true,
-      "reason": "confirmed",
-      "title_tokens": [
-        "global",
-        "proptech"
-      ],
-      "matched_title_tokens": [
-        "global",
-        "proptech"
-      ],
-      "year_confirmed": true,
-      "month_confirmed": true
+      "status": "failed",
+      "reason": "HTTP 403"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-supply-chain-forum-20261028-206f7fb8",
       "title": "Real Estate Supply Chain Forum",
-      "status": "confirmed",
-      "official_url": "https://www.rscforum.com/",
-      "official_image_url": "https://static.wixstatic.com/media/269912_ae1b1f61c9d443469ca3a36bcf09dcf4%7Emv2.png/v1/fit/w_2500,h_1330,al_c/269912_ae1b1f61c9d443469ca3a36bcf09dcf4%7Emv2.png",
-      "organizer": "Eye of Riyadh",
-      "confirmed": true,
-      "reason": "confirmed",
-      "title_tokens": [
-        "real",
-        "estate",
-        "supply",
-        "chain"
-      ],
-      "matched_title_tokens": [
-        "real",
-        "estate",
-        "supply",
-        "chain"
-      ],
-      "year_confirmed": true,
-      "month_confirmed": true
+      "status": "failed",
+      "reason": "HTTP 403"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-cips-mena-procurement-and-supply-chain-futures-conference-and-awards-20261028-18fb7207",

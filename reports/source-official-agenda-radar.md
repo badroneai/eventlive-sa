@@ -1,6 +1,6 @@
 # EventLive Official Agenda Radar
 
-Generated at: 2026-07-10T08:14:45.740Z
+Generated at: 2026-07-10T09:53:20.097Z
 
 This radar detects when first-party event pages expose a complete timed programme. It does not publish records.
 
