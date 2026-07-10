@@ -8,6 +8,11 @@
   "source_label": "Visit Saudi Seasons",
   "source_url": "https://www.visitsaudi.com/en/diriyah/events/coca-cola-fan-zone",
   "evidence_url": "https://www.visitsaudi.com/en/diriyah/events/coca-cola-fan-zone",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T03:51:59.093Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
   "city": "الدرعية",
   "venue": "Diriyah",
   "venue_address": "Diriyah",
@@ -19,6 +24,9 @@
   "event_kind_label": "برنامج ممتد",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/coca-cola-fan-zone-at-jax-district-3fe0a1326d.webp",
   "image_alt": "Coca-Cola Fan Zone at JAX District",
@@ -80,7 +88,13 @@
     "location": {
       "@type": "Place",
       "name": "Diriyah",
-      "address": "Diriyah"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Diriyah",
+        "addressLocality": "الدرعية",
+        "addressRegion": "منطقة الرياض",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

@@ -8,6 +8,11 @@
   "source_label": "Saudi Universities and Technical Colleges",
   "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/521",
   "evidence_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/521",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T03:51:59.093Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
   "city": "ثول",
   "venue": "AV/VR Hub, KAUST Visualization Core, building 1, level 2, room 2304",
   "venue_address": "AV/VR Hub, KAUST Visualization Core, building 1, level 2, room 2304",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-covers/event-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco.svg",
   "image_alt": "غلاف EventLive لفعالية The KAUST Imaging and Characterization Core Lab presents: AI for Microscopy Workshop",
@@ -77,7 +85,13 @@
     "location": {
       "@type": "Place",
       "name": "AV/VR Hub, KAUST Visualization Core, building 1, level 2, room 2304",
-      "address": "AV/VR Hub, KAUST Visualization Core, building 1, level 2, room 2304"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "AV/VR Hub, KAUST Visualization Core, building 1, level 2, room 2304",
+        "addressLocality": "ثول",
+        "addressRegion": "منطقة مكة المكرمة",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

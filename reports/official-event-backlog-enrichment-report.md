@@ -1,10 +1,10 @@
 # EventLive Official Event Backlog Enrichment
-- Generated at: 2026-07-10T02:34:10.246Z
-- Targets: 78
-- Enriched: 78
+- Generated at: 2026-07-10T03:51:59.093Z
+- Targets: 79
+- Enriched: 79
 - Fetched: 36
-- Images: 62
-- Fetch failures: 42
+- Images: 63
+- Fetch failures: 43
 
 | Source | Event | Method | Image | Fetch |
 |---|---|---:|---:|---:|
@@ -42,6 +42,7 @@
 | Riyadh City Events | Registration for International Research Competition on Non-Terrestrial Networks | approved-source-row | yes | fetch failed |
 | Qassim Chamber Events | عمليات إدارة الموارد البشرية | official-page-meta | yes | yes |
 | Riyadh City Events | Esports World Cup | approved-source-row | yes | fetch failed |
+| Najran Municipality Summer Events | مهرجان صيف نجران 2026 «صيفنا هايل» | approved-source-row | yes | fetch failed |
 | Saudi Universities and Technical Colleges | Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH | official-page-meta | no | yes |
 | Saudi Universities and Technical Colleges | Egypt Vs Argentina | official-page-meta | no | yes |
 | Saudi Universities and Technical Colleges | Quarter-Finals: Join the Celebration at the FIFA Fan Zone | official-page-meta | no | yes |

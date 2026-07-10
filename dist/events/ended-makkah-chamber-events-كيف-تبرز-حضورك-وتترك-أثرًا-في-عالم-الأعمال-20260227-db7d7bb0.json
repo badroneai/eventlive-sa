@@ -8,6 +8,11 @@
   "source_label": "Makkah Chamber Events",
   "source_url": "https://makkahcci.org.sa/event/2026-02-27-560/register",
   "evidence_url": "https://makkahcci.org.sa/event/2026-02-27-560/register",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
   "city": "مكة",
   "venue": "Makkah Chamber",
   "venue_address": "Makkah Chamber",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/كيف-تبرز-حضورك-وتترك-أثرًا-في-عالم-الأعمال-f13bcf47bb.jpg",
   "image_alt": "كيف تبرز حضورك وتترك أثرًا في عالم الأعمال",
@@ -68,7 +76,13 @@
     "location": {
       "@type": "Place",
       "name": "Makkah Chamber",
-      "address": "Makkah Chamber"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Makkah Chamber",
+        "addressLocality": "مكة",
+        "addressRegion": "منطقة مكة المكرمة",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

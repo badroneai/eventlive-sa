@@ -8,6 +8,11 @@
   "source_label": "MDLBEAST Events",
   "source_url": "https://mdlbeast.com/events/azimuth-2025",
   "evidence_url": "https://mdlbeast.com/events/azimuth-2025",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
   "city": "العلا",
   "venue": "Alula",
   "venue_address": "Alula",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-covers/ended-mdlbeast-events-azimuth-2025-20250925-c14274c1.svg",
   "image_alt": "غلاف EventLive لفعالية Azimuth 2025",
@@ -75,7 +83,13 @@
     "location": {
       "@type": "Place",
       "name": "Alula",
-      "address": "Alula"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Alula",
+        "addressLocality": "العلا",
+        "addressRegion": "منطقة المدينة المنورة",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

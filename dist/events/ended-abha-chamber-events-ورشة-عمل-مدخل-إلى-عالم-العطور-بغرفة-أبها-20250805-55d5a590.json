@@ -8,6 +8,11 @@
   "source_label": "Abha Chamber Events",
   "source_url": "https://abhacci.org.sa/Events/Details/8",
   "evidence_url": "https://abhacci.org.sa/Events/Details/8",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
   "city": "أبها",
   "venue": "Abha Chamber",
   "venue_address": "Abha Chamber",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/ورشة-عمل-مدخل-إلى-عالم-العطور-بغرفة-أبها-3a08e1ba47.jpg",
   "image_alt": "ورشة عمل \"مدخل إلى عالم العطور \"بغرفة أبها",
@@ -68,7 +76,13 @@
     "location": {
       "@type": "Place",
       "name": "Abha Chamber",
-      "address": "Abha Chamber"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Abha Chamber",
+        "addressLocality": "أبها",
+        "addressRegion": "منطقة عسير",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

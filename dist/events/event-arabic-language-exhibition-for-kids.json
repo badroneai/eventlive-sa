@@ -8,6 +8,11 @@
   "source_label": "Visit Saudi Calendar",
   "source_url": "https://www.visitsaudi.com/en/riyadh/events/arabic-language-exhibition-for-kids",
   "evidence_url": "https://www.visitsaudi.com/en/riyadh/events/arabic-language-exhibition-for-kids",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T03:51:43.019Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
   "city": "الرياض",
   "venue": "Riyadh",
   "venue_address": "Riyadh",
@@ -19,6 +24,9 @@
   "event_kind_label": "برنامج ممتد",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/arabic-language-exhibition-for-kids-32b2d59ca2.webp",
   "image_alt": "Arabic Language Exhibition for kids",
@@ -74,7 +82,13 @@
     "location": {
       "@type": "Place",
       "name": "Riyadh",
-      "address": "Riyadh"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Riyadh",
+        "addressLocality": "الرياض",
+        "addressRegion": "منطقة الرياض",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

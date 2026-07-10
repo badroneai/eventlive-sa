@@ -6,6 +6,7 @@ import path from 'node:path';
 import { classifyAudiences } from './audience-utils.mjs';
 import { extractEmbeddedJsonObjects, walkEmbeddedObjects } from './embedded-json-utils.mjs';
 import { parseFlexibleDateRange } from './date-parse-utils.mjs';
+import { ocrRemotePoster } from './poster-ocr-utils.mjs';
 import { ensureDir, exists, readJson, rel, root, writeJson } from './program-lifecycle-utils.mjs';
 
 const sourceRegistryPath = process.env.EVENTLIVE_SOURCE_REGISTRY_FILE
@@ -51,7 +52,7 @@ const dryRun = ['1', 'true', 'yes'].includes(String(process.env.EVENTLIVE_SOURCE
 let activeSnapshotStamp = collectedAt.replace(/[:.]/g, '-');
 const sourceFetchModes = new Map();
 
-const tlsRelaxationAllowedHosts = new Set(['riyadh.sa', 'api.riyadh.sa']);
+const tlsRelaxationAllowedHosts = new Set(['riyadh.sa', 'api.riyadh.sa', 'www.najran.gov.sa', 'najran.gov.sa']);
 
 function isTlsRelaxationCandidate(url = '') {
   try {
@@ -181,6 +182,9 @@ const sourceExtractors = {
   'qassim-chamber-events': extractQassimChamberEvents,
   'abha-chamber-events': extractAbhaChamberEvents,
   'jazan-chamber-events': extractJazanChamberEvents,
+  'northern-borders-chamber-events': extractNorthernBordersChamberEvents,
+  'tabuk-chamber-events': extractTabukChamberEvents,
+  'najran-municipality-summer-events': extractNajranMunicipalityEvents,
   'riyadh-city-events': extractRiyadhCityEvents
 };
 
@@ -1549,6 +1553,9 @@ function baseCandidate(source, item, snapshotPath) {
     ...(item.discovery_quality ? { discovery_quality: item.discovery_quality } : {}),
     ...(Number.isInteger(item.discovery_score) ? { discovery_score: item.discovery_score } : {}),
     ...(item.discovery_notes ? { discovery_notes: item.discovery_notes } : {}),
+    ...(item.verification_method ? { verification_method: item.verification_method } : {}),
+    ...(item.date_precision ? { date_precision: item.date_precision } : {}),
+    ...(item.time_precision ? { time_precision: item.time_precision } : {}),
     ...(Array.isArray(item.sessions) && item.sessions.length ? { sessions: item.sessions } : {}),
     extracted_sessions_count: Array.isArray(item.sessions) ? item.sessions.length : 0,
     reviewer_notes: `تم جمعه آلياً من ${source.name}. ${source.evidence_required}`,
@@ -3696,6 +3703,212 @@ function extractAbhaChamberEvents(html, source) {
   return items;
 }
 
+const arabicMonthPattern = 'يناير|فبراير|مارس|أبريل|ابريل|مايو|يونيو|يوليو|أغسطس|اغسطس|سبتمبر|أكتوبر|اكتوبر|نوفمبر|ديسمبر';
+
+function normalizedArabicDigits(value = '') {
+  return String(value || '').replace(/[٠-٩]/g, (digit) => '٠١٢٣٤٥٦٧٨٩'.indexOf(digit));
+}
+
+function officialClockFromText(value = '', fallback = '09:00') {
+  const text = normalizedArabicDigits(value);
+  const matches = [...text.matchAll(/(?<!\d)(\d{1,2})(?::(\d{2}))?\s*(صباح(?:اً)?|مساء(?:ً)?|[صم])/g)];
+  for (const match of matches) {
+    let hour = Number(match[1]);
+    const minute = Number(match[2] || 0);
+    if (hour < 1 || hour > 12 || minute > 59) continue;
+    if (/مساء|م/.test(match[3]) && hour < 12) hour += 12;
+    if (/صباح|ص/.test(match[3]) && hour === 12) hour = 0;
+    return { value: `${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}`, precision: 'exact' };
+  }
+  return { value: fallback, precision: 'date-only-defaulted' };
+}
+
+function addClockHours(value = '09:00', hours = 2) {
+  const [hour, minute] = value.split(':').map(Number);
+  const total = Math.min(1439, hour * 60 + minute + hours * 60);
+  return `${String(Math.floor(total / 60)).padStart(2, '0')}:${String(total % 60).padStart(2, '0')}`;
+}
+
+function officialScheduleFromText(value = '') {
+  const text = normalizedArabicDigits(stripTags(value));
+  const match = text.match(new RegExp(`(?<!\\d)(\\d{1,2})\\s*(${arabicMonthPattern})\\s*(20\\d{2})`));
+  if (!match) return null;
+  const clock = officialClockFromText(text, /مساء/.test(text) ? '18:00' : '09:00');
+  const endClock = addClockHours(clock.value, 2);
+  const dates = parseFlexibleDateRange(`${match[1]} ${match[2]} ${match[3]}`, {
+    start_time: `${clock.value}:00`,
+    end_time: `${endClock}:00`
+  });
+  return dates ? {
+    ...dates,
+    raw_date_text: match[0],
+    date_precision: 'official-text',
+    time_precision: clock.precision,
+    weekday_verified: false
+  } : null;
+}
+
+function tabukActivityBlocks(html = '') {
+  return String(html).split(/<div class="\s*card-book row col\s*">/).slice(1);
+}
+
+function extractTabukChamberEvents(html, source) {
+  const items = [];
+  const seen = new Set();
+  for (const block of tabukActivityBlocks(html)) {
+    const href = block.match(/<a href="([^"]*\/activities\/\d+)"/i)?.[1] || '';
+    const title = stripTags(block.match(/<h6>([\s\S]*?)<\/h6>/i)?.[1] || '');
+    const body = [...block.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)]
+      .map((match) => stripTags(match[1]))
+      .filter(Boolean)
+      .join(' ');
+    const schedule = officialScheduleFromText(body);
+    if (!href || !title || !schedule) continue;
+    const key = `${href}|${schedule.starts_at}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    const imageSrc = block.match(/<img[^>]+src="([^"]+)"/i)?.[1] || '';
+    const imageUrl = imageSrc ? resolveUrl(imageSrc.replace(/^http:/i, 'https:'), source.url) : '';
+    const online = /عن بعد|افتراضي|افتراضية|ZOOM|الاتصال المرئي/i.test(body);
+    items.push({
+      title,
+      url: resolveUrl(href, source.url),
+      organizer: source.owner,
+      summary: body || `فعالية رسمية من غرفة تبوك. ${schedule.raw_date_text}.`,
+      city: online ? 'Online' : 'Tabuk',
+      venue: online ? 'Online' : 'Tabuk Chamber',
+      category: inferChamberCategory(title, body),
+      raw_date_text: schedule.raw_date_text,
+      ...(imageUrl ? { image_url: imageUrl, image_alt: title, image_source_url: resolveUrl(href, source.url) } : {}),
+      attendance_mode: online ? 'online' : 'in-person',
+      confidence: 'official',
+      review_status: 'ready-for-review',
+      publication_gate: 'duplicate-review',
+      verification_method: 'official-page-explicit-date',
+      date_precision: schedule.date_precision,
+      time_precision: schedule.time_precision,
+      language: 'ar',
+      richness_score: calculateRichnessScore({ title, summary: body, city: online ? 'Online' : 'Tabuk', venue: online ? 'Online' : 'Tabuk Chamber', category: inferChamberCategory(title, body), image_url: imageUrl, attendance_mode: online ? 'online' : 'in-person', language: 'ar' }),
+      starts_at: schedule.starts_at,
+      ends_at: schedule.ends_at
+    });
+  }
+  return items;
+}
+
+function saudiDateOnlyOffset(value = '', days = 0) {
+  const date = new Date(`${String(value).slice(0, 10)}T12:00:00Z`);
+  if (!Number.isFinite(date.getTime())) return '';
+  date.setUTCDate(date.getUTCDate() + days);
+  return date.toISOString().slice(0, 10);
+}
+
+function extractNajranMunicipalityEvents(html, source) {
+  const items = [];
+  const blocks = String(html).split(/<dga-card\b/i).slice(1);
+  for (const block of blocks) {
+    const card = block.split(/<\/dga-card>/i)[0] || '';
+    const title = stripTags(card.match(/<h4[^>]*>([\s\S]*?)<\/h4>/i)?.[1] || '');
+    const body = stripTags(card.match(/<span class="text-md-regular[^"]*"[\s\S]*?>([\s\S]*?)<\/span>/i)?.[1] || '');
+    const combined = `${title} ${body}`;
+    if (!/صيف(?:نا هايل| نجران)\s*2026/i.test(combined) || !/30\s*(?:يوم|يوماً|يومًا)/.test(combined)) continue;
+    const dateText = stripTags(card.match(/<span class="text-sm-semibold[^"]*">([\s\S]*?)<\/span>/i)?.[1] || '');
+    const published = officialScheduleFromText(dateText);
+    if (!published) continue;
+    const startDate = saudiDateOnlyOffset(published.starts_at, /غد[ًاا]/.test(combined) ? 1 : 0);
+    const endDate = saudiDateOnlyOffset(startDate, 29);
+    if (!startDate || !endDate) continue;
+    const href = card.match(/data-url="([^"]+)"/i)?.[1] || source.url;
+    const imageSrc = card.match(/\bimage="([^"]+)"/i)?.[1] || '';
+    const url = resolveUrl(href, source.url);
+    const imageUrl = imageSrc ? resolveUrl(imageSrc, source.url) : '';
+    items.push({
+      title: 'مهرجان صيف نجران 2026 «صيفنا هايل»',
+      url,
+      organizer: source.owner,
+      summary: body,
+      city: 'Najran',
+      venue: '11 موقعًا في مدينة نجران',
+      category: 'entertainment families',
+      raw_date_text: `${dateText} + غدًا + 30 يومًا`,
+      ...(imageUrl ? { image_url: imageUrl, image_alt: title, image_source_url: url } : {}),
+      attendance_mode: 'in-person',
+      confidence: 'official',
+      review_status: 'ready-for-review',
+      publication_gate: 'duplicate-review',
+      verification_method: 'official-announcement-relative-date',
+      date_precision: 'official-day-window',
+      time_precision: 'date-only',
+      language: 'ar',
+      tags: ['Najran Summer', 'families', 'culture', 'entertainment'],
+      richness_score: calculateRichnessScore({ title, summary: body, city: 'Najran', venue: '11 موقعًا في مدينة نجران', category: 'entertainment families', image_url: imageUrl, attendance_mode: 'in-person', language: 'ar' }),
+      starts_at: `${startDate}T00:00:00+03:00`,
+      ends_at: `${endDate}T23:59:00+03:00`
+    });
+    break;
+  }
+  return items;
+}
+
+function northernBordersRows(payload = '') {
+  try {
+    const parsed = JSON.parse(payload);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+async function extractNorthernBordersChamberEvents(payload, source) {
+  const items = [];
+  const seen = new Set();
+  const rows = northernBordersRows(payload).slice(0, Math.max(1, Number(source.ocr_limit || 10)));
+  for (const row of rows) {
+    const title = stripTags(row?.title?.rendered || row?.title || '');
+    const url = row?.link || '';
+    const body = stripTags(row?.content?.rendered || row?.excerpt?.rendered || '');
+    const imageUrl = row?._embedded?.['wp:featuredmedia']?.[0]?.source_url || '';
+    let schedule = officialScheduleFromText(body);
+    let ocrSnapshot = '';
+    if (!schedule && imageUrl && !source.disable_ocr) {
+      schedule = await ocrRemotePoster(imageUrl, { default_start_time: '18:00', duration_hours: 2 });
+      if (schedule?.raw_text) ocrSnapshot = writeAuxiliarySnapshot(source, `${row.id || title}-poster-ocr`, schedule.raw_text, 'txt');
+    }
+    if (!title || !url || !schedule) continue;
+    const key = `${url}|${schedule.starts_at}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    const online = /عن بعد|افتراضي|افتراضية|ZOOM|الاتصال المرئي/i.test(`${body} ${schedule.raw_text || ''}`);
+    const city = /رفحاء/.test(`${title} ${body}`) ? 'Rafha' : 'Arar';
+    const exactTime = schedule.time_precision === 'exact';
+    items.push({
+      title,
+      url,
+      organizer: source.owner,
+      summary: body || `فعالية رسمية من غرفة الحدود الشمالية، استُخرج موعدها من الملصق الرسمي مع تحقق يوم الأسبوع.`,
+      city: online ? 'Online' : city,
+      venue: online ? 'Online' : 'Northern Borders Chamber',
+      category: inferChamberCategory(title, body),
+      raw_date_text: schedule.raw_date_text || schedule.starts_at,
+      ...(imageUrl ? { image_url: imageUrl, image_alt: title, image_source_url: url } : {}),
+      ...(ocrSnapshot ? { raw_snapshot_path: ocrSnapshot } : {}),
+      attendance_mode: online ? 'online' : 'in-person',
+      confidence: 'official',
+      review_status: exactTime ? 'ready-for-review' : 'source-evidence',
+      publication_gate: exactTime ? 'duplicate-review' : 'source-evidence',
+      verification_method: schedule.weekday_verified ? 'official-poster-ocr-weekday-verified' : 'official-page-explicit-date',
+      date_precision: schedule.date_precision,
+      time_precision: schedule.time_precision,
+      language: 'ar',
+      tags: ['official poster', 'Northern Borders'],
+      richness_score: calculateRichnessScore({ title, summary: body, city: online ? 'Online' : city, venue: online ? 'Online' : 'Northern Borders Chamber', category: inferChamberCategory(title, body), image_url: imageUrl, attendance_mode: online ? 'online' : 'in-person', language: 'ar' }),
+      starts_at: schedule.starts_at,
+      ends_at: schedule.ends_at
+    });
+  }
+  return items;
+}
+
 function jazanApiEndpoint(month, year) {
   return `https://www.jazancci.org.sa/api/events/calendar/${month}/${year}`;
 }
@@ -4625,8 +4838,11 @@ export {
   jazanApiEndpoint,
   extractJazanChamberEvents,
   extractMakkahChamberEvents,
+  extractNajranMunicipalityEvents,
+  extractNorthernBordersChamberEvents,
   extractMocCalendarPayload,
   extractQassimChamberEvents,
+  extractTabukChamberEvents,
   extractKaustEvents,
   extractKauEvents,
   extractRiyadhCityEvents,

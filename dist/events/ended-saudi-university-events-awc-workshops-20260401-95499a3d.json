@@ -8,6 +8,11 @@
   "source_label": "Saudi Universities and Technical Colleges",
   "source_url": "https://kau.edu.sa/en/event/awc-workshops",
   "evidence_url": "https://kau.edu.sa/en/event/awc-workshops",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
   "city": "جدة",
   "venue": "King Abdulaziz University",
   "venue_address": "King Abdulaziz University",
@@ -19,6 +24,9 @@
   "event_kind_label": "برنامج ممتد",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-covers/ended-saudi-university-events-awc-workshops-20260401-95499a3d.svg",
   "image_alt": "غلاف EventLive لفعالية AWC Workshops",
@@ -78,7 +86,13 @@
     "location": {
       "@type": "Place",
       "name": "King Abdulaziz University",
-      "address": "King Abdulaziz University"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "King Abdulaziz University",
+        "addressLocality": "جدة",
+        "addressRegion": "منطقة مكة المكرمة",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

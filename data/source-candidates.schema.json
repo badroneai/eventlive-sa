@@ -64,6 +64,9 @@
           "source_owner": { "type": "string", "minLength": 1 },
           "evidence_url": { "type": "string" },
           "raw_snapshot_path": { "type": "string" },
+          "verification_method": { "type": "string", "minLength": 1 },
+          "date_precision": { "type": "string", "minLength": 1 },
+          "time_precision": { "type": "string", "minLength": 1 },
           "discovered_at": { "type": "string", "format": "date-time" },
           "discovery_method": {
             "type": "string",

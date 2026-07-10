@@ -24,10 +24,10 @@ const liveReadyCount = events.filter((event) => event.live_schedule_ready).lengt
 assert.ok(events.length >= 20, 'home page data test expects a useful public catalog');
 assert.match(html, new RegExp(`تصفح\\s+${events.length}\\s+فعالية`), 'home CTA must reflect events.json count');
 assert.match(html, new RegExp(`<span><b>${cityCount}</b>مدينة</span>`), 'home board must reflect distinct city count');
-assert.match(html, new RegExp(`<span><b>${liveReadyCount}</b>جدول حي جاهز</span>`), 'home board must reflect live-ready count');
+assert.match(html, new RegExp(`<span><b>${liveReadyCount}</b>فعالية بوقت رسمي</span>`), 'home board must reflect official schedule count');
 assert.match(html, new RegExp(`${events.length}\\s+فعالية من\\s+\\d+\\s+مصدرًا مسجلًا`), 'home trust band must reflect catalog size');
 
-const soonSectionMatch = html.match(/<section class="h-section" id="soon"[^>]*data-temporal-window-hours="72"[^>]*>([\s\S]*?)(?=\s*<section class="h-section" id="tech"[^>]*>)/);
+const soonSectionMatch = html.match(/<section class="h-section" id="soon"[^>]*data-temporal-window-hours="72"[^>]*>([\s\S]*?)<\/section>/);
 assert.ok(soonSectionMatch, 'home page must expose a 72-hour starts-soon section');
 
 const soonSection = soonSectionMatch[1];

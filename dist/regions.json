@@ -1,16 +1,37 @@
 {
-  "generated_at": "2026-07-10T02:36:14.055Z",
+  "generated_at": "2026-07-10T03:59:04.097Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-saudi-region-coverage",
   "totals": {
     "regions": 13,
-    "weak_regions": 8,
-    "active_regions": 5,
-    "uncovered_regions": 6,
-    "events": 435,
+    "weak_regions": 10,
+    "active_regions": 6,
+    "uncovered_regions": 3,
+    "zero_active_regions": 7,
+    "active_target_cities": 8,
+    "target_cities": 38,
+    "events": 441,
     "active_events": 160,
-    "ended_events": 275
+    "ended_events": 281
+  },
+  "national_coverage": {
+    "score": 44,
+    "verdict": "NEEDS_WORK",
+    "active_regions": 6,
+    "zero_active_regions": 7,
+    "active_target_cities": 8,
+    "target_cities": 38,
+    "active_target_city_ratio": 0.2105,
+    "live_ready_regions": 3,
+    "riyadh_active_events": 98,
+    "riyadh_active_share": 0.6125,
+    "thresholds": {
+      "active_regions_min": 10,
+      "active_target_city_ratio_min": 0.5,
+      "riyadh_active_share_max": 0.55,
+      "zero_active_regions_max": 3
+    }
   },
   "regions": [
     {
@@ -19,23 +40,26 @@
       "target_cities": [
         {
           "key": "Sakaka",
-          "label": "Sakaka"
+          "label": "سكاكا"
         },
         {
           "key": "Dumat Al Jandal",
-          "label": "Dumat Al Jandal"
+          "label": "دومة الجندل"
         }
       ],
       "covered_cities": [],
       "active_cities": [],
+      "active_target_city_count": 0,
+      "active_target_city_ratio": 0,
+      "active_event_target": 10,
       "missing_target_cities": [
         {
           "key": "Sakaka",
-          "label": "Sakaka"
+          "label": "سكاكا"
         },
         {
           "key": "Dumat Al Jandal",
-          "label": "Dumat Al Jandal"
+          "label": "دومة الجندل"
         }
       ],
       "total": 0,
@@ -63,61 +87,23 @@
       "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
     },
     {
-      "key": "najran-region",
-      "label": "منطقة نجران",
-      "target_cities": [
-        {
-          "key": "Najran",
-          "label": "نجران"
-        }
-      ],
-      "covered_cities": [],
-      "active_cities": [],
-      "missing_target_cities": [
-        {
-          "key": "Najran",
-          "label": "نجران"
-        }
-      ],
-      "total": 0,
-      "active": 0,
-      "upcoming": 0,
-      "ongoing": 0,
-      "live": 0,
-      "ended": 0,
-      "live_ready": 0,
-      "source_count": 0,
-      "source_images": 0,
-      "generated_covers": 0,
-      "registered_source_count": 1,
-      "registered_sources": [
-        {
-          "id": "najran-chamber-events",
-          "name": "Najran Chamber Events",
-          "ring": "monitor-public",
-          "status": "official",
-          "url": "https://najcci.org.sa/ar"
-        }
-      ],
-      "coverage_score": 3,
-      "severity": "gap",
-      "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
-    },
-    {
       "key": "al-baha-region",
       "label": "منطقة الباحة",
       "target_cities": [
         {
           "key": "Al Baha",
-          "label": "Al Baha"
+          "label": "الباحة"
         }
       ],
       "covered_cities": [],
       "active_cities": [],
+      "active_target_city_count": 0,
+      "active_target_city_ratio": 0,
+      "active_event_target": 10,
       "missing_target_cities": [
         {
           "key": "Al Baha",
-          "label": "Al Baha"
+          "label": "الباحة"
         }
       ],
       "total": 0,
@@ -147,7 +133,7 @@
           "url": "https://bcci.org.sa/"
         }
       ],
-      "coverage_score": 6,
+      "coverage_score": 7,
       "severity": "gap",
       "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
     },
@@ -157,42 +143,46 @@
       "target_cities": [
         {
           "key": "Arar",
-          "label": "Arar"
+          "label": "عرعر"
         },
         {
           "key": "Rafha",
-          "label": "Rafha"
+          "label": "رفحاء"
         },
         {
           "key": "Turaif",
-          "label": "Turaif"
+          "label": "طريف"
         }
       ],
-      "covered_cities": [],
-      "active_cities": [],
-      "missing_target_cities": [
+      "covered_cities": [
         {
           "key": "Arar",
-          "label": "Arar"
+          "label": "عرعر"
         },
         {
           "key": "Rafha",
-          "label": "Rafha"
-        },
-        {
-          "key": "Turaif",
-          "label": "Turaif"
+          "label": "رفحاء"
         }
       ],
-      "total": 0,
+      "active_cities": [],
+      "active_target_city_count": 0,
+      "active_target_city_ratio": 0,
+      "active_event_target": 10,
+      "missing_target_cities": [
+        {
+          "key": "Turaif",
+          "label": "طريف"
+        }
+      ],
+      "total": 3,
       "active": 0,
       "upcoming": 0,
       "ongoing": 0,
       "live": 0,
-      "ended": 0,
+      "ended": 3,
       "live_ready": 0,
-      "source_count": 0,
-      "source_images": 0,
+      "source_count": 1,
+      "source_images": 3,
       "generated_covers": 0,
       "registered_source_count": 2,
       "registered_sources": [
@@ -211,9 +201,9 @@
           "url": "https://ncci.org.sa/category/events/"
         }
       ],
-      "coverage_score": 6,
+      "coverage_score": 10,
       "severity": "gap",
-      "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
+      "next_action": "ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/منصة محلية مساندة."
     },
     {
       "key": "tabuk-region",
@@ -225,30 +215,34 @@
         },
         {
           "key": "NEOM",
-          "label": "NEOM"
+          "label": "نيوم"
         }
       ],
-      "covered_cities": [],
-      "active_cities": [],
-      "missing_target_cities": [
+      "covered_cities": [
         {
           "key": "Tabuk",
           "label": "تبوك"
-        },
-        {
-          "key": "NEOM",
-          "label": "NEOM"
         }
       ],
-      "total": 0,
+      "active_cities": [],
+      "active_target_city_count": 0,
+      "active_target_city_ratio": 0,
+      "active_event_target": 10,
+      "missing_target_cities": [
+        {
+          "key": "NEOM",
+          "label": "نيوم"
+        }
+      ],
+      "total": 1,
       "active": 0,
       "upcoming": 0,
       "ongoing": 0,
       "live": 0,
-      "ended": 0,
+      "ended": 1,
       "live_ready": 0,
-      "source_count": 0,
-      "source_images": 0,
+      "source_count": 1,
+      "source_images": 1,
       "generated_covers": 0,
       "registered_source_count": 2,
       "registered_sources": [
@@ -267,9 +261,9 @@
           "url": "https://www.tabukchamber.sa/"
         }
       ],
-      "coverage_score": 6,
+      "coverage_score": 10,
       "severity": "gap",
-      "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
+      "next_action": "ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/منصة محلية مساندة."
     },
     {
       "key": "hail-region",
@@ -282,6 +276,9 @@
       ],
       "covered_cities": [],
       "active_cities": [],
+      "active_target_city_count": 0,
+      "active_target_city_ratio": 0,
+      "active_event_target": 10,
       "missing_target_cities": [
         {
           "key": "Hail",
@@ -322,9 +319,77 @@
           "url": "https://www.hc.org.sa/"
         }
       ],
-      "coverage_score": 9,
+      "coverage_score": 10,
       "severity": "gap",
       "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
+    },
+    {
+      "key": "qassim-region",
+      "label": "منطقة القصيم",
+      "target_cities": [
+        {
+          "key": "Buraydah",
+          "label": "بريدة"
+        },
+        {
+          "key": "Unaizah",
+          "label": "عنيزة"
+        },
+        {
+          "key": "Rass",
+          "label": "الرس"
+        }
+      ],
+      "covered_cities": [
+        {
+          "key": "Buraydah",
+          "label": "بريدة"
+        }
+      ],
+      "active_cities": [],
+      "active_target_city_count": 0,
+      "active_target_city_ratio": 0,
+      "active_event_target": 10,
+      "missing_target_cities": [
+        {
+          "key": "Unaizah",
+          "label": "عنيزة"
+        },
+        {
+          "key": "Rass",
+          "label": "الرس"
+        }
+      ],
+      "total": 20,
+      "active": 0,
+      "upcoming": 0,
+      "ongoing": 0,
+      "live": 0,
+      "ended": 20,
+      "live_ready": 1,
+      "source_count": 2,
+      "source_images": 3,
+      "generated_covers": 17,
+      "registered_source_count": 2,
+      "registered_sources": [
+        {
+          "id": "saudi-pro-league-fixtures",
+          "name": "Saudi Pro League Fixtures",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://www.spl.com.sa/en"
+        },
+        {
+          "id": "qassim-chamber-events",
+          "name": "Qassim Chamber Events",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://qcc.org.sa/events-list"
+        }
+      ],
+      "coverage_score": 13,
+      "severity": "gap",
+      "next_action": "ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/منصة محلية مساندة."
     },
     {
       "key": "madinah-region",
@@ -350,6 +415,9 @@
         }
       ],
       "active_cities": [],
+      "active_target_city_count": 0,
+      "active_target_city_ratio": 0,
+      "active_event_target": 10,
       "missing_target_cities": [
         {
           "key": "Madinah",
@@ -408,127 +476,9 @@
           "url": "https://mdlbeast.com/events"
         }
       ],
-      "coverage_score": 35,
-      "severity": "watch",
+      "coverage_score": 20,
+      "severity": "gap",
       "next_action": "ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/منصة محلية مساندة."
-    },
-    {
-      "key": "qassim-region",
-      "label": "منطقة القصيم",
-      "target_cities": [
-        {
-          "key": "Buraydah",
-          "label": "بريدة"
-        },
-        {
-          "key": "Unaizah",
-          "label": "Unaizah"
-        },
-        {
-          "key": "Rass",
-          "label": "Rass"
-        }
-      ],
-      "covered_cities": [
-        {
-          "key": "Buraydah",
-          "label": "بريدة"
-        }
-      ],
-      "active_cities": [],
-      "missing_target_cities": [
-        {
-          "key": "Unaizah",
-          "label": "Unaizah"
-        },
-        {
-          "key": "Rass",
-          "label": "Rass"
-        }
-      ],
-      "total": 20,
-      "active": 0,
-      "upcoming": 0,
-      "ongoing": 0,
-      "live": 0,
-      "ended": 20,
-      "live_ready": 1,
-      "source_count": 2,
-      "source_images": 3,
-      "generated_covers": 17,
-      "registered_source_count": 2,
-      "registered_sources": [
-        {
-          "id": "saudi-pro-league-fixtures",
-          "name": "Saudi Pro League Fixtures",
-          "ring": "official-feed-preferred",
-          "status": "official",
-          "url": "https://www.spl.com.sa/en"
-        },
-        {
-          "id": "qassim-chamber-events",
-          "name": "Qassim Chamber Events",
-          "ring": "monitor-public",
-          "status": "official",
-          "url": "https://qcc.org.sa/events-list"
-        }
-      ],
-      "coverage_score": 56,
-      "severity": "watch",
-      "next_action": "ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/منصة محلية مساندة."
-    },
-    {
-      "key": "jazan-region",
-      "label": "منطقة جازان",
-      "target_cities": [
-        {
-          "key": "Jazan",
-          "label": "جازان"
-        }
-      ],
-      "covered_cities": [
-        {
-          "key": "Jazan",
-          "label": "جازان"
-        }
-      ],
-      "active_cities": [
-        {
-          "key": "Jazan",
-          "label": "جازان"
-        }
-      ],
-      "missing_target_cities": [],
-      "total": 11,
-      "active": 1,
-      "upcoming": 1,
-      "ongoing": 0,
-      "live": 0,
-      "ended": 10,
-      "live_ready": 0,
-      "source_count": 1,
-      "source_images": 9,
-      "generated_covers": 2,
-      "registered_source_count": 2,
-      "registered_sources": [
-        {
-          "id": "misk-hub-events",
-          "name": "Misk Hub Events",
-          "ring": "official-feed-preferred",
-          "status": "official",
-          "url": "https://hub.misk.org.sa/en/events/"
-        },
-        {
-          "id": "jazan-chamber-events",
-          "name": "Jazan Chamber Events",
-          "ring": "official-feed-preferred",
-          "status": "official",
-          "url": "https://jazancci.org.sa/"
-        }
-      ],
-      "coverage_score": 69,
-      "severity": "healthy",
-      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
     },
     {
       "key": "aseer-region",
@@ -567,6 +517,9 @@
           "label": "عسير"
         }
       ],
+      "active_target_city_count": 1,
+      "active_target_city_ratio": 0.3333,
+      "active_event_target": 10,
       "missing_target_cities": [],
       "total": 11,
       "active": 2,
@@ -616,8 +569,120 @@
           "url": "https://www.kaust.edu.sa/"
         }
       ],
-      "coverage_score": 82,
-      "severity": "healthy",
+      "coverage_score": 45,
+      "severity": "watch",
+      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
+    },
+    {
+      "key": "jazan-region",
+      "label": "منطقة جازان",
+      "target_cities": [
+        {
+          "key": "Jazan",
+          "label": "جازان"
+        }
+      ],
+      "covered_cities": [
+        {
+          "key": "Jazan",
+          "label": "جازان"
+        }
+      ],
+      "active_cities": [
+        {
+          "key": "Jazan",
+          "label": "جازان"
+        }
+      ],
+      "active_target_city_count": 1,
+      "active_target_city_ratio": 1,
+      "active_event_target": 10,
+      "missing_target_cities": [],
+      "total": 11,
+      "active": 1,
+      "upcoming": 1,
+      "ongoing": 0,
+      "live": 0,
+      "ended": 10,
+      "live_ready": 0,
+      "source_count": 1,
+      "source_images": 9,
+      "generated_covers": 2,
+      "registered_source_count": 2,
+      "registered_sources": [
+        {
+          "id": "misk-hub-events",
+          "name": "Misk Hub Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://hub.misk.org.sa/en/events/"
+        },
+        {
+          "id": "jazan-chamber-events",
+          "name": "Jazan Chamber Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://jazancci.org.sa/"
+        }
+      ],
+      "coverage_score": 49,
+      "severity": "watch",
+      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
+    },
+    {
+      "key": "najran-region",
+      "label": "منطقة نجران",
+      "target_cities": [
+        {
+          "key": "Najran",
+          "label": "نجران"
+        }
+      ],
+      "covered_cities": [
+        {
+          "key": "Najran",
+          "label": "نجران"
+        }
+      ],
+      "active_cities": [
+        {
+          "key": "Najran",
+          "label": "نجران"
+        }
+      ],
+      "active_target_city_count": 1,
+      "active_target_city_ratio": 1,
+      "active_event_target": 10,
+      "missing_target_cities": [],
+      "total": 1,
+      "active": 1,
+      "upcoming": 0,
+      "ongoing": 1,
+      "live": 0,
+      "ended": 0,
+      "live_ready": 0,
+      "source_count": 1,
+      "source_images": 1,
+      "generated_covers": 0,
+      "registered_source_count": 2,
+      "registered_sources": [
+        {
+          "id": "najran-municipality-summer-events",
+          "name": "Najran Municipality Summer Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://www.najran.gov.sa/ar/News/AllNews"
+        },
+        {
+          "id": "najran-chamber-events",
+          "name": "Najran Chamber Events",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://najcci.org.sa/ar"
+        }
+      ],
+      "coverage_score": 49,
+      "severity": "watch",
       "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
     },
     {
@@ -650,7 +715,7 @@
         },
         {
           "key": "Hafar Al Batin",
-          "label": "Hafar Al Batin"
+          "label": "حفر الباطن"
         }
       ],
       "covered_cities": [
@@ -677,6 +742,9 @@
           "label": "الظهران"
         }
       ],
+      "active_target_city_count": 1,
+      "active_target_city_ratio": 0.1429,
+      "active_event_target": 10,
       "missing_target_cities": [
         {
           "key": "Khobar",
@@ -688,7 +756,7 @@
         },
         {
           "key": "Hafar Al Batin",
-          "label": "Hafar Al Batin"
+          "label": "حفر الباطن"
         }
       ],
       "total": 53,
@@ -697,7 +765,7 @@
       "ongoing": 0,
       "live": 0,
       "ended": 36,
-      "live_ready": 15,
+      "live_ready": 0,
       "source_count": 3,
       "source_images": 15,
       "generated_covers": 38,
@@ -788,9 +856,9 @@
           "url": "https://hub.misk.org.sa/en/events/"
         }
       ],
-      "coverage_score": 100,
+      "coverage_score": 67,
       "severity": "healthy",
-      "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
+      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
     },
     {
       "key": "riyadh-region",
@@ -806,19 +874,19 @@
         },
         {
           "key": "Al Kharj",
-          "label": "Al Kharj"
+          "label": "الخرج"
         },
         {
           "key": "Dawadmi",
-          "label": "Dawadmi"
+          "label": "الدوادمي"
         },
         {
           "key": "Majmaah",
-          "label": "Majmaah"
+          "label": "المجمعة"
         },
         {
           "key": "Shaqra",
-          "label": "Shaqra"
+          "label": "شقراء"
         }
       ],
       "covered_cities": [
@@ -841,34 +909,37 @@
           "label": "الدرعية"
         }
       ],
+      "active_target_city_count": 2,
+      "active_target_city_ratio": 0.3333,
+      "active_event_target": 10,
       "missing_target_cities": [
         {
           "key": "Al Kharj",
-          "label": "Al Kharj"
+          "label": "الخرج"
         },
         {
           "key": "Dawadmi",
-          "label": "Dawadmi"
+          "label": "الدوادمي"
         },
         {
           "key": "Majmaah",
-          "label": "Majmaah"
+          "label": "المجمعة"
         },
         {
           "key": "Shaqra",
-          "label": "Shaqra"
+          "label": "شقراء"
         }
       ],
-      "total": 196,
-      "active": 99,
-      "upcoming": 73,
+      "total": 195,
+      "active": 98,
+      "upcoming": 72,
       "ongoing": 25,
       "live": 1,
       "ended": 97,
-      "live_ready": 22,
-      "source_count": 18,
+      "live_ready": 1,
+      "source_count": 17,
       "source_images": 95,
-      "generated_covers": 101,
+      "generated_covers": 100,
       "registered_source_count": 33,
       "registered_sources": [
         {
@@ -1103,7 +1174,7 @@
           "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx"
         }
       ],
-      "coverage_score": 100,
+      "coverage_score": 76,
       "severity": "healthy",
       "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
     },
@@ -1129,7 +1200,7 @@
         },
         {
           "key": "Rabigh",
-          "label": "Rabigh"
+          "label": "رابغ"
         }
       ],
       "covered_cities": [
@@ -1156,6 +1227,9 @@
           "label": "ثول"
         }
       ],
+      "active_target_city_count": 2,
+      "active_target_city_ratio": 0.4,
+      "active_event_target": 10,
       "missing_target_cities": [
         {
           "key": "Taif",
@@ -1163,7 +1237,7 @@
         },
         {
           "key": "Rabigh",
-          "label": "Rabigh"
+          "label": "رابغ"
         }
       ],
       "total": 70,
@@ -1312,7 +1386,7 @@
           "url": "https://makkahcci.org.sa/events"
         }
       ],
-      "coverage_score": 100,
+      "coverage_score": 78,
       "severity": "healthy",
       "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
     }
@@ -1326,65 +1400,65 @@
       "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
     },
     {
-      "key": "najran-region",
-      "label": "منطقة نجران",
-      "coverage_score": 3,
-      "reason": "لا توجد فعاليات قادمة/جارية في المنطقة",
-      "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
-    },
-    {
       "key": "al-baha-region",
       "label": "منطقة الباحة",
-      "coverage_score": 6,
+      "coverage_score": 7,
       "reason": "لا توجد فعاليات قادمة/جارية في المنطقة",
       "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
     },
     {
       "key": "northern-borders-region",
       "label": "منطقة الحدود الشمالية",
-      "coverage_score": 6,
+      "coverage_score": 10,
       "reason": "لا توجد فعاليات قادمة/جارية في المنطقة",
-      "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
+      "next_action": "ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/منصة محلية مساندة."
     },
     {
       "key": "tabuk-region",
       "label": "منطقة تبوك",
-      "coverage_score": 6,
+      "coverage_score": 10,
       "reason": "لا توجد فعاليات قادمة/جارية في المنطقة",
-      "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
+      "next_action": "ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/منصة محلية مساندة."
     },
     {
       "key": "hail-region",
       "label": "منطقة حائل",
-      "coverage_score": 9,
+      "coverage_score": 10,
       "reason": "لا توجد فعاليات قادمة/جارية في المنطقة",
       "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
     },
     {
-      "key": "madinah-region",
-      "label": "منطقة المدينة المنورة",
-      "coverage_score": 35,
-      "reason": "لا توجد فعاليات قادمة/جارية في المنطقة",
-      "next_action": "ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/منصة محلية مساندة."
-    },
-    {
       "key": "qassim-region",
       "label": "منطقة القصيم",
-      "coverage_score": 56,
+      "coverage_score": 13,
       "reason": "لا توجد فعاليات قادمة/جارية في المنطقة",
       "next_action": "ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/منصة محلية مساندة."
     },
     {
-      "key": "jazan-region",
-      "label": "منطقة جازان",
-      "coverage_score": 69,
-      "reason": "تحتاج عمقًا أكبر في المدن المستهدفة",
-      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
+      "key": "madinah-region",
+      "label": "منطقة المدينة المنورة",
+      "coverage_score": 20,
+      "reason": "لا توجد فعاليات قادمة/جارية في المنطقة",
+      "next_action": "ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/منصة محلية مساندة."
     },
     {
       "key": "aseer-region",
       "label": "منطقة عسير",
-      "coverage_score": 82,
+      "coverage_score": 45,
+      "reason": "تحتاج عمقًا أكبر في المدن المستهدفة",
+      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
+    },
+    {
+      "key": "jazan-region",
+      "label": "منطقة جازان",
+      "coverage_score": 49,
+      "reason": "تحتاج عمقًا أكبر في المدن المستهدفة",
+      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
+    },
+    {
+      "key": "najran-region",
+      "label": "منطقة نجران",
+      "coverage_score": 49,
       "reason": "تحتاج عمقًا أكبر في المدن المستهدفة",
       "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
     }

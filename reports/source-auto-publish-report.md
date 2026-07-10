@@ -1,10 +1,10 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-10T02:30:50.941Z
+- published_at: 2026-07-10T03:47:10.130Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 193
-- published_new: 0
+- candidates_seen: 194
+- published_new: 1
 - linked_existing: 162
 - blocked_remaining: 31
 
@@ -18,6 +18,7 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
+| candidate-najran-municipality-summer-events-مهرجان-صيف-نجران-2026-صيفنا-هايل-20260707-a130a84c | published | event-مهرجان-صيف-نجران-2026-صيفنا-هايل | مهرجان صيف نجران 2026 «صيفنا هايل» |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -30,7 +31,7 @@
 | candidate-moc-cultural-subportals-culinary-manufacturing-hubs-20250811-d7214bd9 | linked-existing | event-culinary-manufacturing-hubs | already linked to catalog event |
 | candidate-riyadh-city-events-poppy-playtime-20251010-b96ed7bc | linked-existing | event-poppy-playtime | already linked to catalog event |
 | candidate-riyadh-city-events-riyadh-season-blvd-city-20251010-d23bcbe8 | linked-existing | event-riyadh-season-blvd-city | already linked to catalog event |
-| candidate-visit-saudi-seasons-the-groves-20251105-b7362f59 | linked-existing | event-the-groves | already linked to catalog event |
+| candidate-visit-saudi-calendar-the-groves-20251105-b7362f59 | linked-existing | event-the-groves | already linked to catalog event |
 | candidate-riyadh-city-events-immersive-experience-flying-over-saudi-20251224-5f459910 | linked-existing | event-immersive-experience-flying-over-saudi | already linked to catalog event |
 | candidate-visit-saudi-calendar-arabic-language-exhibition-28-20260101-d1f2da19 | linked-existing | event-arabic-language-exhibition-28 | already linked to catalog event |
 | candidate-visit-saudi-calendar-arabic-language-exhibition-for-kids-20260101-36979634 | linked-existing | event-arabic-language-exhibition-for-kids | already linked to catalog event |
@@ -44,7 +45,7 @@
 | candidate-riyadh-city-events-sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026-20260611-3f758046 | linked-existing | event-sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026 | already linked to catalog event |
 | candidate-riyadh-city-events-world-cup-2026-fan-zone-at-kimpton-kafd-20260611-5af6b715 | linked-existing | event-world-cup-2026-fan-zone-at-kimpton-kafd | already linked to catalog event |
 | candidate-riyadh-city-events-solitaire-fan-zone-fifa-world-cup-2026-20260611-ccdd5e23 | linked-existing | event-solitaire-fan-zone-fifa-world-cup-2026 | already linked to catalog event |
-| candidate-visit-saudi-seasons-coca-cola-fan-zone-at-jax-district-20260611-f9159842 | linked-existing | event-coca-cola-fan-zone-at-jax-district | already linked to catalog event |
+| candidate-visit-saudi-calendar-coca-cola-fan-zone-at-jax-district-20260611-f9159842 | linked-existing | event-coca-cola-fan-zone-at-jax-district | already linked to catalog event |
 | candidate-riyadh-city-events-ruh-space-20260613-66f6aa84 | linked-existing | event-ruh-space | already linked to catalog event |
 | candidate-riyadh-city-events-laysen-fan-zone-fifa-world-cup-2026-20260614-8c77f037 | linked-existing | event-laysen-fan-zone-fifa-world-cup-2026 | already linked to catalog event |
 | candidate-visit-saudi-calendar-aseer-season-20260625-2fc92ef9 | linked-existing | event-aseer-season | already linked to catalog event |
@@ -149,8 +150,8 @@
 | candidate-dhahran-expo-calendar-the-egyptian-products-exhibition-20260924-18d15b29 | linked-existing | event-the-egyptian-products-exhibition | already linked to catalog event |
 | candidate-dhahran-expo-calendar-wadaef-exhibition-20260927-18d15b29 | linked-existing | event-wadaef-exhibition | already linked to catalog event |
 | candidate-riyadh-city-events-the-saudi-food-show-20260927-368d6055 | linked-existing | event-the-saudi-food-show | already linked to catalog event |
-| candidate-visit-saudi-seasons-saudi-international-falcons-hunting-exhibition-20261001-a4f29b73 | linked-existing | event-saudi-international-falcons-hunting-exhibition | already linked to catalog event |
-| candidate-visit-saudi-seasons-saudi-falcons-club-auction-20261001-4e016ab8 | linked-existing | event-saudi-falcons-club-auction | already linked to catalog event |
+| candidate-visit-saudi-calendar-saudi-international-falcons-hunting-exhibition-20261001-a4f29b73 | linked-existing | event-saudi-international-falcons-hunting-exhibition | already linked to catalog event |
+| candidate-visit-saudi-calendar-saudi-falcons-club-auction-20261001-4e016ab8 | linked-existing | event-saudi-falcons-club-auction | already linked to catalog event |
 | candidate-visit-saudi-calendar-al-milwah-falcon-race-20261004-1e16b7f0 | linked-existing | event-al-milwah-falcon-race | already linked to catalog event |
 | candidate-sfda-events-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال-20261005-34d08b48 | linked-existing | event-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال | already linked to catalog event |
 | candidate-rfecc-whats-on-natrual-expo-20261026-a7983dd2 | linked-existing | event-natrual-expo | already linked to catalog event |

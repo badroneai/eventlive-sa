@@ -8,6 +8,11 @@
   "source_label": "Riyadh City Events",
   "source_url": "https://riyadh.sa/en/moment/events/item/event/30758",
   "evidence_url": "https://riyadh.sa/en/moment/events/item/event/30758",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T03:51:59.093Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
   "city": "الرياض",
   "venue": "Prince Faisal Bin Fahd Arts Hall, Riyadh",
   "venue_address": "Prince Faisal Bin Fahd Arts Hall, Riyadh",
@@ -19,6 +24,9 @@
   "event_kind_label": "برنامج ممتد",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/prince-faisal-bin-fahd-art-exhibition-summer-2026-8216b3ee07.jpg",
   "image_alt": "Prince Faisal Bin Fahd Art Exhibition: Summer 2026",
@@ -80,7 +88,13 @@
     "location": {
       "@type": "Place",
       "name": "Prince Faisal Bin Fahd Arts Hall, Riyadh",
-      "address": "Prince Faisal Bin Fahd Arts Hall, Riyadh"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Prince Faisal Bin Fahd Arts Hall, Riyadh",
+        "addressLocality": "الرياض",
+        "addressRegion": "منطقة الرياض",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

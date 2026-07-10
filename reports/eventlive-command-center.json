@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.command-center.v1",
-  "generated_at": "2026-07-10T02:36:13.771Z",
+  "generated_at": "2026-07-10T03:56:00.073Z",
   "project": {
     "name": "EventLive",
     "domain": "eventme.live",
@@ -18,19 +18,25 @@
     ]
   },
   "totals": {
-    "catalog_events": 167,
-    "public_events": 435,
-    "source_candidates": 193,
-    "registered_sources": 72,
-    "live_ready": 51,
-    "ended_events": 275,
+    "catalog_events": 168,
+    "public_events": 441,
+    "source_candidates": 194,
+    "registered_sources": 73,
+    "live_ready": 15,
+    "ended_events": 281,
     "delivery_standard_pass": 21,
     "delivery_standard_partial": 0,
     "delivery_standard_not_started": 0,
-    "published_last_sync": 0,
+    "published_last_sync": 1,
     "linked_existing_last_sync": 162,
     "blocked_last_sync": 31,
-    "collector_errors": 0
+    "collector_errors": 0,
+    "national_coverage_score": 44,
+    "active_regions": 6,
+    "zero_active_regions": 7,
+    "active_target_cities": 8,
+    "target_cities": 38,
+    "riyadh_active_share": 0.6125
   },
   "gates": [
     {
@@ -62,6 +68,11 @@
       "name": "Analytics",
       "status": "PASS",
       "evidence": "reports/analytics-status.md"
+    },
+    {
+      "name": "National Coverage",
+      "status": "NEEDS_WORK",
+      "evidence": "dist/regions.json"
     }
   ],
   "decisions": [

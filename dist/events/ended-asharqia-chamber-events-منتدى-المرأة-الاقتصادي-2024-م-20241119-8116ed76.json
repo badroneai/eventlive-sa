@@ -8,6 +8,11 @@
   "source_label": "Asharqia Chamber Events",
   "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=253",
   "evidence_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=253",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
   "city": "الدمام",
   "venue": "09:45 AM",
   "venue_address": "09:45 AM",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-covers/ended-asharqia-chamber-events-منتدى-المرأة-الاقتصادي-2024-م-20241119-8116ed76.svg",
   "image_alt": "غلاف EventLive لفعالية \"منتدى المرأة الاقتصادي 2024 م \"",
@@ -72,7 +80,13 @@
     "location": {
       "@type": "Place",
       "name": "09:45 AM",
-      "address": "09:45 AM"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "09:45 AM",
+        "addressLocality": "الدمام",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

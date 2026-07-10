@@ -220,8 +220,7 @@ function hasOfficialProviderEnrichment(row = {}) {
 }
 
 function shouldPreservePrimaryOfficialRecord(existing = {}, candidate = {}) {
-  return hasOfficialProviderEnrichment(existing)
-    && normalizeMatchValue(existing.source_label) !== normalizeMatchValue(candidate.source_label);
+  return hasOfficialProviderEnrichment(existing);
 }
 
 function sourceConfidenceFor(candidate) {

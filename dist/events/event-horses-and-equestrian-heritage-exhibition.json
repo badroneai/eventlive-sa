@@ -8,6 +8,11 @@
   "source_label": "Riyadh City Events",
   "source_url": "https://riyadh.sa/en/moment/events/item/event/30355",
   "evidence_url": "https://riyadh.sa/en/moment/events/item/event/30355",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T03:51:59.093Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
   "city": "الرياض",
   "venue": "King Abdulaziz Public Library (Khurais Branch), Riyadh",
   "venue_address": "King Abdulaziz Public Library (Khurais Branch), Riyadh",
@@ -19,6 +24,9 @@
   "event_kind_label": "برنامج ممتد",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/horses-and-equestrian-heritage-exhibition-7b885e70c4.png",
   "image_alt": "Horses and Equestrian Heritage Exhibition",
@@ -69,7 +77,13 @@
     "location": {
       "@type": "Place",
       "name": "King Abdulaziz Public Library (Khurais Branch), Riyadh",
-      "address": "King Abdulaziz Public Library (Khurais Branch), Riyadh"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "King Abdulaziz Public Library (Khurais Branch), Riyadh",
+        "addressLocality": "الرياض",
+        "addressRegion": "منطقة الرياض",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-07-10T02:36:13.771Z
+- Generated at: 2026-07-10T03:56:00.073Z
 - Status: PASS
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
-- Sources: 72
-- Candidates: 193
-- Matched candidates: 165
+- Sources: 73
+- Candidates: 194
+- Matched candidates: 166
 - Auto-publish sources: 14
 - Candidate-only sources: 11
 - Partnership-required sources: 4
-- Productive sources / attempted: 22/34
+- Productive sources / attempted: 1/1
 - Collector errors: 0
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 193 |
-| candidate_queue | 193 |
-| evaluated_for_publish | 193 |
+| discovered_this_run | 1 |
+| candidate_queue | 194 |
+| evaluated_for_publish | 194 |
 | linked_existing | 162 |
-| published_new | 0 |
+| published_new | 1 |
 | blocked | 31 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 29 |
+| secondary_still_blocked | 30 |
 
 ## Blocked Reasons
 
@@ -115,5 +115,6 @@
 | Hail Chamber Events | manual_review | official | source-evidence |
 | Najran Chamber Events | manual_review | official | source-evidence |
 | Platinumlist Riyadh Calendar | candidate_only | official-marketplace | duplicate-review |
+| Najran Municipality Summer Events | manual_review | official | duplicate-review |
 | Platinumlist Saudi City Network | candidate_only | official-marketplace | source-evidence |
 | GOV.SA National Platform Events | partnership_required | official | source-evidence |

@@ -134,6 +134,11 @@ for (const event of eventSamples) {
   assert.equal(eventJsonLd?.url, canonical, `${htmlFile} Event JSON-LD must use canonical URL`);
   assert.equal(eventJsonLd?.mainEntityOfPage, canonical, `${htmlFile} Event JSON-LD must point mainEntityOfPage to canonical URL`);
   assert.ok(eventJsonLd?.location?.['@type'], `${htmlFile} Event JSON-LD must include a typed location`);
+  if (eventJsonLd?.location?.['@type'] === 'Place') {
+    assert.equal(eventJsonLd.location.address?.['@type'], 'PostalAddress', `${htmlFile} physical location must expose PostalAddress`);
+    assert.equal(eventJsonLd.location.address?.addressCountry, 'SA', `${htmlFile} physical location must expose Saudi country code`);
+    assert.ok(eventJsonLd.location.address?.addressLocality, `${htmlFile} physical location must expose addressLocality`);
+  }
   assert.ok(eventJsonLd?.organizer?.name, `${htmlFile} Event JSON-LD must include organizer name`);
   assert.ok(String(eventJsonLd?.keywords || '').length > 20, `${htmlFile} Event JSON-LD must include useful keywords`);
   assert.ok(Array.isArray(eventJsonLd?.audience) && eventJsonLd.audience.length > 0, `${htmlFile} Event JSON-LD must include audience`);

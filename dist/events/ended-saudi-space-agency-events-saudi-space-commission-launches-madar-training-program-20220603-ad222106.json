@@ -8,6 +8,11 @@
   "source_label": "Saudi Space Agency Events",
   "source_url": "https://ssa.gov.sa/en/events/%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%84%D9%84%D9%81%D8%B6%D8%A7%D8%A1-%D8%AA%D8%B7%D9%84%D9%82-%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%D9%8A-%D9%85%D8%AF%D8%A7%D8%B1/",
   "evidence_url": "https://ssa.gov.sa/en/events/%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%84%D9%84%D9%81%D8%B6%D8%A7%D8%A1-%D8%AA%D8%B7%D9%84%D9%82-%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%D9%8A-%D9%85%D8%AF%D8%A7%D8%B1/",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
   "city": "جدة",
   "venue": "Jeddah",
   "venue_address": "Jeddah",
@@ -19,6 +24,9 @@
   "event_kind_label": "برنامج ممتد",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/saudi-space-commission-launches-madar-training-program-9b31794226.webp",
   "image_alt": "Saudi Space Commission Launches “Madar” Training Program",
@@ -73,7 +81,13 @@
     "location": {
       "@type": "Place",
       "name": "Jeddah",
-      "address": "Jeddah"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jeddah",
+        "addressLocality": "جدة",
+        "addressRegion": "منطقة مكة المكرمة",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

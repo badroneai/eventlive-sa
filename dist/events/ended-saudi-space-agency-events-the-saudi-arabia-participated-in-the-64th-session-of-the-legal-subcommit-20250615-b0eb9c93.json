@@ -8,6 +8,11 @@
   "source_label": "Saudi Space Agency Events",
   "source_url": "https://ssa.gov.sa/en/events/64th-session-of-the-legal-subcommittee-of-the-united-nations-committee-on-the-peaceful-uses-of-outer-space-copuos/",
   "evidence_url": "https://ssa.gov.sa/en/events/64th-session-of-the-legal-subcommittee-of-the-united-nations-committee-on-the-peaceful-uses-of-outer-space-copuos/",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
   "city": "دولي",
   "venue": "Vienna International Centre",
   "venue_address": "Vienna International Centre",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/the-saudi-arabia-participated-in-the-64th-session-of-the-legal-subcomm-4dcf7050f6.webp",
   "image_alt": "The Saudi Arabia participated in the 64th session of the Legal Subcommittee of the United Nations Committee on the Peaceful Uses of Outer Space (COPUOS)",
@@ -78,7 +86,12 @@
     "location": {
       "@type": "Place",
       "name": "Vienna International Centre",
-      "address": "Vienna International Centre"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Vienna International Centre",
+        "addressLocality": "دولي",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

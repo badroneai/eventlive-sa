@@ -1,12 +1,12 @@
 {
   "schema": "eventlive.delivery-readiness.v1",
-  "generated_at": "2026-07-10T02:36:13.771Z",
+  "generated_at": "2026-07-10T03:56:00.073Z",
   "status": "PASS",
   "totals": {
-    "catalog_events": 167,
-    "public_events": 435,
-    "live_ready": 51,
-    "with_source_evidence": 435,
+    "catalog_events": 168,
+    "public_events": 441,
+    "live_ready": 15,
+    "with_source_evidence": 441,
     "gates": 6,
     "gates_passed": 6
   },
@@ -39,13 +39,13 @@
       "id": "source_evidence",
       "name": "أدلة المصادر",
       "status": "PASS",
-      "evidence": "435/435 فعالية لديها مصدر أو دليل"
+      "evidence": "441/441 فعالية لديها مصدر أو دليل"
     },
     {
       "id": "live_ready",
-      "name": "الجداول الحية",
+      "name": "الأوقات الرسمية",
       "status": "PASS",
-      "evidence": "51 جداول حية جاهزة"
+      "evidence": "15 فعالية بوقت أو جلسة رسمية"
     }
   ]
 }

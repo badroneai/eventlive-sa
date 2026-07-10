@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T02:36:14.055Z",
+  "generated_at": "2026-07-10T03:59:04.097Z",
   "platform": "EventLive",
   "domain": "eventme.live",
   "intent": "eventlive-owner-status",
@@ -44,12 +44,12 @@
     "productive_sources": 21,
     "collector_errors": 0,
     "zero_yield": 12,
-    "candidates_seen": 193,
-    "published_new": 0,
+    "candidates_seen": 194,
+    "published_new": 1,
     "linked_existing": 162,
     "blocked_remaining": 31,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 29,
+    "secondary_still_blocked": 30,
     "blocked_reasons": {
       "possible duplicate already exists: event-esports-world-cup": 1,
       "publication gate source-evidence is not auto-publishable": 16,
@@ -60,9 +60,9 @@
     "collector_error_sources": []
   },
   "catalog": {
-    "public_events": 435,
-    "live_ready": 51,
-    "ended_events": 275,
+    "public_events": 441,
+    "live_ready": 15,
+    "ended_events": 281,
     "upcoming_or_ongoing": 160
   },
   "links": {

@@ -8,6 +8,11 @@
   "source_label": "Saudi Water Authority Events",
   "source_url": "https://www.swa.gov.sa/en/events/Event-639166882740331066",
   "evidence_url": "https://www.swa.gov.sa/en/events/Event-639166882740331066",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T03:51:45.466Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
   "city": "جدة",
   "venue": "Jeddah-The Ritz-Carlton",
   "venue_address": "Jeddah-The Ritz-Carlton",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/the-global-water-sustainability-conference-2026-1ff7fb4855.png",
   "image_alt": "The Global Water Sustainability Conference 2026",
@@ -72,7 +80,13 @@
     "location": {
       "@type": "Place",
       "name": "Jeddah-The Ritz-Carlton",
-      "address": "Jeddah-The Ritz-Carlton"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jeddah-The Ritz-Carlton",
+        "addressLocality": "جدة",
+        "addressRegion": "منطقة مكة المكرمة",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

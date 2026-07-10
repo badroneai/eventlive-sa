@@ -1,0 +1,15 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "فعاليات عرعر | EventLive",
+  "home_page_url": "https://eventme.live",
+  "feed_url": "https://eventme.live/feeds/city-arar.json",
+  "description": "تغذية فعاليات عرعر القادمة والجارية من EventLive.",
+  "language": "ar-SA",
+  "authors": [
+    {
+      "name": "EventLive",
+      "url": "https://eventme.live"
+    }
+  ],
+  "items": []
+}

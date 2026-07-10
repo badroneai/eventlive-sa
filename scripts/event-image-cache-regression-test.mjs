@@ -7,8 +7,13 @@ const root = process.cwd();
 const manifestPath = path.join(root, 'data', 'event_image_cache_manifest.json');
 const eventsPath = path.join(root, 'dist', 'events.json');
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
+const endedPath = path.join(root, 'data', 'source_ended_events.json');
+const cacheScriptPath = path.join(root, 'scripts', 'cache-event-images.mjs');
 
 assert.equal(fs.existsSync(eventsPath), true, 'dist/events.json must exist; run npm run build first');
+const cacheScript = fs.readFileSync(cacheScriptPath, 'utf8');
+assert.match(cacheScript, /tlsRelaxationAllowedHosts[^\n]+najran\.gov\.sa/, 'official Najran images must have a narrowly scoped TLS recovery path');
+assert.match(cacheScript, /new https\.Agent\(\{ rejectUnauthorized: false \}\)/, 'TLS recovery must use an explicit host-scoped agent');
 
 if (!fs.existsSync(manifestPath)) {
   console.log('event-image-cache-regression-test: skipped (manifest not generated yet)');
@@ -20,6 +25,9 @@ const images = manifest.images && typeof manifest.images === 'object' ? manifest
 const records = Object.values(images).filter((record) => record.file && record.public_path);
 const catalogEvents = fs.existsSync(catalogPath)
   ? JSON.parse(fs.readFileSync(catalogPath, 'utf8')).events || []
+  : [];
+const endedEvents = fs.existsSync(endedPath)
+  ? JSON.parse(fs.readFileSync(endedPath, 'utf8')).ended_events || []
   : [];
 const discoveredCatalogImageUrls = catalogEvents
   .filter((event) => event.image_discovered_at && /^https?:\/\//i.test(String(event.original_image_url || event.image_url || '')))
@@ -44,6 +52,21 @@ const rejectedManifestRecords = records.filter((record) => {
 });
 
 const events = JSON.parse(fs.readFileSync(eventsPath, 'utf8')).events || [];
+const builtById = new Map(events.map((event) => [event.id, event]));
+for (const rawEvent of [...catalogEvents, ...endedEvents]) {
+  const rawUrl = String(rawEvent.original_image_url || rawEvent.image_url || '');
+  if (!/^https?:\/\//i.test(rawUrl)) continue;
+  let normalizedUrl = rawUrl;
+  try {
+    normalizedUrl = new URL(rawUrl).href;
+  } catch {
+    normalizedUrl = rawUrl;
+  }
+  if (normalizedUrl === rawUrl) continue;
+  const cachedRecord = images[normalizedUrl];
+  if (!cachedRecord?.public_path || !cachedRecord.file || !fs.existsSync(path.join(root, cachedRecord.file))) continue;
+  assert.equal(builtById.get(rawEvent.id)?.image_url, cachedRecord.public_path, `${rawEvent.id} must resolve encoded Unicode image URLs from the cache manifest`);
+}
 const cachedEvents = events.filter((event) => String(event.image_url || '').startsWith('/assets/event-images/'));
 const eventsWithImages = events.filter((event) => event.image_url);
 const generatedCoverEvents = events.filter((event) => event.generated_image);

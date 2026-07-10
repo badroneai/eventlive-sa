@@ -1,0 +1,31 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "فعاليات نجران | EventLive",
+  "home_page_url": "https://eventme.live",
+  "feed_url": "https://eventme.live/feeds/city-najran.json",
+  "description": "تغذية فعاليات نجران القادمة والجارية من EventLive.",
+  "language": "ar-SA",
+  "authors": [
+    {
+      "name": "EventLive",
+      "url": "https://eventme.live"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://eventme.live/events/event-مهرجان-صيف-نجران-2026-صيفنا-هايل.html",
+      "url": "https://eventme.live/events/event-مهرجان-صيف-نجران-2026-صيفنا-هايل.html",
+      "title": "مهرجان صيف نجران 2026 «صيفنا هايل»",
+      "content_text": "برعاية صاحب السمو الأمير جلوي بن عبدالعزيز بن مساعد، أمير منطقة نجران، تطلق أمانة المنطقة، غدًا، مهرجان \"صيف نجران 2026\" تحت شعار \"صيفنا هايل\"، ويستمر لمدة 30 يومًا؛ موزعًا على 11 موقعًا داخل مدينة نجران، وذلك ضمن جهود الأمانة لتنشيط الحركة السياحية والترفيهية، وإثراء جودة الحياة وتوفير برامج تلبي اهتمامات مختلف فئات المجتمع. وتتوزع فعاليات المهرجان على عددٍ من المواقع الحيوية، تشمل متنز",
+      "date_published": "2026-07-07T00:00:00+03:00",
+      "date_modified": "2026-07-10T03:51:59.093Z",
+      "tags": [
+        "نجران",
+        "ترفيه وعائلات",
+        "عائلات وأطفال",
+        "مبدعون وفنون"
+      ],
+      "external_url": "https://www.najran.gov.sa/ar/News/NewsDetails/1381/%D8%A8%D8%B1%D8%B9%D8%A7%D9%8A%D8%A9-%D8%A3%D9%85%D9%8A%D8%B1-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A3%D9%85%D8%A7%D9%86%D8%A9-%D9%86%D8%AC%D8%B1%D8%A7%D9%86-%D8%AA%D8%B7%D9%84%D9%82-%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA-%D9%85%D9%87%D8%B1%D8%AC%D8%A7%D9%86-%D8%B5%D9%8A%D9%81%D9%86%D8%A7-%D9%87%D8%A7%D9%8A%D9%84-2026-%D8%BA%D8%AF%D9%8B%D8%A7"
+    }
+  ]
+}

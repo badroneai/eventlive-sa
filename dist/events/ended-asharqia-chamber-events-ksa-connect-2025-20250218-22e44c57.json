@@ -8,6 +8,11 @@
   "source_label": "Asharqia Chamber Events",
   "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=335",
   "evidence_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=335",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
   "city": "الدمام",
   "venue": "مبنى غرفة الشرقية",
   "venue_address": "مبنى غرفة الشرقية",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-covers/ended-asharqia-chamber-events-ksa-connect-2025-20250218-22e44c57.svg",
   "image_alt": "غلاف EventLive لفعالية \"KSA Connect 2025“",
@@ -72,7 +80,13 @@
     "location": {
       "@type": "Place",
       "name": "مبنى غرفة الشرقية",
-      "address": "مبنى غرفة الشرقية"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "مبنى غرفة الشرقية",
+        "addressLocality": "الدمام",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

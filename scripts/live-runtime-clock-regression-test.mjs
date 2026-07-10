@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { chromium } from 'playwright';
+import { representativeEventPath } from './audit-page-utils.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -12,7 +13,7 @@ const requiredPages = [
   'this-month.html',
   'cities/riyadh.html',
   'categories/technology-training.html',
-  'events/demo-event.html'
+  representativeEventPath().replace(/^\//, '')
 ];
 
 function readDist(relativePath) {

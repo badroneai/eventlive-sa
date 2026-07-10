@@ -8,6 +8,11 @@
   "source_label": "Saudi Pro League Fixtures",
   "source_url": "https://webook.com/ar/events/rsl-25-26-al-ahli-vs-al-qasiah-4534-5345435-435435",
   "evidence_url": "https://webook.com/ar/events/rsl-25-26-al-ahli-vs-al-qasiah-4534-5345435-435435",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-05T05:49:40.389Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 118,
   "city": "جدة",
   "venue": "Alinma Bank Stadium at King Abdullah Sport City",
   "venue_address": "Alinma Bank Stadium at King Abdullah Sport City",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-covers/ended-saudi-pro-league-fixtures-al-ahli-vs-al-qadsiah-20251121-c6ae0c3d.svg",
   "image_alt": "غلاف EventLive لفعالية Al Ahli vs Al Qadsiah",
@@ -67,7 +75,13 @@
     "location": {
       "@type": "Place",
       "name": "Alinma Bank Stadium at King Abdullah Sport City",
-      "address": "Alinma Bank Stadium at King Abdullah Sport City"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Alinma Bank Stadium at King Abdullah Sport City",
+        "addressLocality": "جدة",
+        "addressRegion": "منطقة مكة المكرمة",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

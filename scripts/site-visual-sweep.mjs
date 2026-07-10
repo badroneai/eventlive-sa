@@ -3,6 +3,7 @@ import http from 'node:http';
 import path from 'node:path';
 import { once } from 'node:events';
 import { chromium } from 'playwright';
+import { representativeEventId, representativeEventPath } from './audit-page-utils.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -15,6 +16,8 @@ const navigationTimeoutMs = Number(process.env.EVENTLIVE_VISUAL_SWEEP_NAV_TIMEOU
 const pageTimeoutMs = Number(process.env.EVENTLIVE_VISUAL_SWEEP_PAGE_TIMEOUT_MS || 18000);
 const maxScrollSteps = Number(process.env.EVENTLIVE_VISUAL_SWEEP_MAX_SCROLL_STEPS || 8);
 const maxImagesToWaitFor = Number(process.env.EVENTLIVE_VISUAL_SWEEP_MAX_IMAGES || 80);
+const representativeId = representativeEventId();
+const representativePath = representativeEventPath();
 
 const pages = [
   { id: 'home', path: '/index.html', required: ['EventLive', 'فعاليات'] },
@@ -26,9 +29,9 @@ const pages = [
   { id: 'updates', path: '/updates.html', required: ['التحديثات'] },
   { id: 'screen', path: '/screen.html', required: ['شاشة الحضور'] },
   { id: 'activation', path: '/activation.html', required: ['التفعيل'] },
-  { id: 'print', path: '/print.html?event=event-the-groves', required: ['نسخة طباعة الفعالية'] },
-  { id: 'share', path: '/share.html?event=event-the-groves', required: ['مشاركة الفعالية'] },
-  { id: 'signage', path: '/signage.html?event=event-the-groves', required: ['لافتة QR للفعالية'] },
+  { id: 'print', path: `/print.html?event=${encodeURIComponent(representativeId)}`, required: ['نسخة طباعة الفعالية'] },
+  { id: 'share', path: `/share.html?event=${encodeURIComponent(representativeId)}`, required: ['مشاركة الفعالية'] },
+  { id: 'signage', path: `/signage.html?event=${encodeURIComponent(representativeId)}`, required: ['لافتة QR للفعالية'] },
   { id: 'this-week', path: '/this-week.html', required: ['هذا الأسبوع'] },
   { id: 'this-month', path: '/this-month.html', required: ['فعاليات هذا الشهر'] },
   { id: 'weekend', path: '/weekend.html', required: ['الويكند'] },
@@ -57,7 +60,7 @@ const pages = [
   { id: 'trust', path: '/trust.html', required: ['الثقة'] },
   { id: 'riyadh-city', path: '/cities/riyadh.html', required: ['الرياض'] },
   { id: 'technology-category', path: '/categories/technology-training.html', required: ['تدريب تقني'] },
-  { id: 'demo-event', path: '/events/demo-event.html', required: ['EventLive'] }
+  { id: 'representative-event', path: representativePath, required: ['EventLive'] }
 ];
 
 const viewports = [

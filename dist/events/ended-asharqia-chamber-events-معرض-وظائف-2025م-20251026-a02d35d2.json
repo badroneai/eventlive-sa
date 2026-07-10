@@ -8,6 +8,11 @@
   "source_label": "Asharqia Chamber Events",
   "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=342",
   "evidence_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=342",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
   "city": "الظهران",
   "venue": "معارض الظهران الدولية",
   "venue_address": "معارض الظهران الدولية",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-covers/ended-asharqia-chamber-events-معرض-وظائف-2025م-20251026-a02d35d2.svg",
   "image_alt": "غلاف EventLive لفعالية معرض وظائف 2025م",
@@ -72,7 +80,13 @@
     "location": {
       "@type": "Place",
       "name": "معارض الظهران الدولية",
-      "address": "معارض الظهران الدولية"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "معارض الظهران الدولية",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

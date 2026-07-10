@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T02:35:01.279Z",
+  "generated_at": "2026-07-10T03:59:30.300Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-source-health",
@@ -9,16 +9,16 @@
     "auto_publish": "reports/source-promotion-report.json"
   },
   "totals": {
-    "sources": 72,
+    "sources": 73,
     "active_collectors": 34,
     "collection_coverage_pct": 47,
     "productive": 22,
     "open_idle": 12,
     "collector_errors": 0,
     "probe_blocked": 0,
-    "extractor_backlog": 38,
-    "candidates_discovered": 193,
-    "candidates_written": 193
+    "extractor_backlog": 39,
+    "candidates_discovered": 1,
+    "candidates_written": 194
   },
   "publication": {
     "published_at": "2026-07-03T15:26:20.570Z",
@@ -49,11 +49,11 @@
       "priority": 2,
       "status": "productive",
       "extracted": 11,
-      "candidates": 12,
+      "candidates": 16,
       "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
       "last_collection_status": "ok",
       "last_extracted": 11,
-      "known_candidates": 12
+      "known_candidates": 16
     },
     {
       "id": "moc-cultural-calendar",
@@ -253,11 +253,11 @@
       "priority": 19,
       "status": "productive",
       "extracted": 4,
-      "candidates": 4,
+      "candidates": 0,
       "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
       "last_collection_status": "ok",
       "last_extracted": 4,
-      "known_candidates": 4
+      "known_candidates": 0
     },
     {
       "id": "code-mcit-programs",
@@ -870,6 +870,18 @@
       "last_collection_status": "",
       "last_extracted": 0,
       "known_candidates": 0
+    },
+    {
+      "id": "najran-municipality-summer-events",
+      "name": "Najran Municipality Summer Events",
+      "priority": 71,
+      "status": "not-collected",
+      "extracted": 0,
+      "candidates": 1,
+      "next_action": "أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.",
+      "last_collection_status": "",
+      "last_extracted": 0,
+      "known_candidates": 1
     },
     {
       "id": "platinumlist-saudi-city-network",

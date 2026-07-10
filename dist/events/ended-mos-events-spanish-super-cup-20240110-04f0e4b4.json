@@ -8,6 +8,11 @@
   "source_label": "Ministry of Sport Events",
   "source_url": "https://www.mos.gov.sa/en/media/events/2024/10/03/spanish-super-cup",
   "evidence_url": "https://www.mos.gov.sa/en/media/events/2024/10/03/spanish-super-cup",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
   "city": "الرياض",
   "venue": "Riyadh",
   "venue_address": "Riyadh",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-covers/ended-mos-events-spanish-super-cup-20240110-04f0e4b4.svg",
   "image_alt": "غلاف EventLive لفعالية Spanish Super Cup",
@@ -65,7 +73,13 @@
     "location": {
       "@type": "Place",
       "name": "Riyadh",
-      "address": "Riyadh"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Riyadh",
+        "addressLocality": "الرياض",
+        "addressRegion": "منطقة الرياض",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

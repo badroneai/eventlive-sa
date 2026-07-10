@@ -8,6 +8,11 @@
   "source_label": "Saudi Space Agency Events",
   "source_url": "https://ssa.gov.sa/en/events/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%86%D8%AD%D9%88-%D8%A7%D9%84%D9%81%D8%B6%D8%A7%D8%A1/",
   "evidence_url": "https://ssa.gov.sa/en/events/%D9%85%D8%B9%D8%A7%D8%B1%D8%B6-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%86%D8%AD%D9%88-%D8%A7%D9%84%D9%81%D8%B6%D8%A7%D8%A1/",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
   "city": "السعودية",
   "venue": "Saudi Arabia",
   "venue_address": "Saudi Arabia",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/saudi-space-exhibitions-3cf4817744.webp",
   "image_alt": "Saudi Space Exhibitions",
@@ -72,7 +80,12 @@
     "location": {
       "@type": "Place",
       "name": "Saudi Arabia",
-      "address": "Saudi Arabia"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Saudi Arabia",
+        "addressLocality": "السعودية",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

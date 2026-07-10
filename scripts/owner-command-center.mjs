@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { exists, readJson, root, writeJson } from './program-lifecycle-utils.mjs';
+import { representativeEventPath } from './audit-page-utils.mjs';
 
 const reportsDir = path.join(root, 'reports');
 const generatedAt = new Date().toISOString();
@@ -88,6 +89,7 @@ function readProjectState() {
   const sourceAutoPublish = safeReadJson('reports/source-auto-publish-report.json', null);
   const sourceSecondaryVerification = safeReadJson('reports/source-secondary-verification-report.json', null);
   const sourceHealthPublic = safeReadJson('dist/source-health.json', null);
+  const regionsCoverage = safeReadJson('dist/regions.json', null);
   const distEvents = safeReadJson('dist/events.json', { events: [] });
   const deliveryStandard = safeReadJson('reports/delivery-readiness-standard-status.json', null);
   return {
@@ -105,6 +107,7 @@ function readProjectState() {
     sourceAutoPublish,
     sourceSecondaryVerification,
     sourceHealthPublic,
+    regionsCoverage,
     deliveryStandard
   };
 }
@@ -123,7 +126,7 @@ function buildDeliveryReadiness(state) {
     ['launch_sweep', 'مسح الإطلاق', status(launchPass, Boolean(state.launchSweep)), launchPass ? 'site-launch-sweep PASS' : 'شغل npm run test:site-launch-sweep'],
     ['visual_sweep', 'المسح البصري', status(visualPass, Boolean(state.visualSweep)), visualPass ? 'site-visual-sweep PASS' : 'شغل npm run test:site-visual-sweep'],
     ['source_evidence', 'أدلة المصادر', status(withSource === readinessEvents.length && readinessEvents.length > 0, withSource > 0), `${withSource}/${readinessEvents.length} فعالية لديها مصدر أو دليل`],
-    ['live_ready', 'الجداول الحية', status(liveReady >= 50, liveReady > 0), `${liveReady} جداول حية جاهزة`]
+    ['live_ready', 'الأوقات الرسمية', status(liveReady >= 10, liveReady > 0), `${liveReady} فعالية بوقت أو جلسة رسمية`]
   ];
   const report = {
     schema: 'eventlive.delivery-readiness.v1',
@@ -163,7 +166,7 @@ function buildDesignStatus(state) {
   const requiredSurfaces = [
     ['home', 'الرئيسية', '/index.html'],
     ['events', 'كل الفعاليات', '/events.html'],
-    ['event-detail', 'صفحة فعالية', '/events/demo-event.html'],
+    ['event-detail', 'صفحة فعالية', representativeEventPath()],
     ['today', 'اليوم', '/today.html'],
     ['week', 'هذا الأسبوع', '/this-week.html'],
     ['screen', 'شاشة الحضور', '/screen.html'],
@@ -414,6 +417,7 @@ function buildAnalyticsStatus() {
 function buildCommandCenter(state, readiness, design, harvest, analytics) {
   const publicEvents = state.distEvents.length ? state.distEvents : state.events;
   const standardStatus = state.deliveryStandard?.release_verdict === 'READY_WITH_RESERVED_ITEMS' ? 'PASS' : state.deliveryStandard ? 'PARTIAL' : 'NOT_STARTED';
+  const nationalCoverage = state.regionsCoverage?.national_coverage || {};
   const decisions = [
     ['analytics_provider', 'اختيار/تفعيل حساب Analytics فعلي', analytics.provider === 'plausible' ? 'Plausible مبدئيا' : analytics.provider],
     ['eventlive_domain', 'حسم شراء نطاق EventLive إضافي لاحقا', 'الدومين الحالي المعتمد eventme.live'],
@@ -426,7 +430,8 @@ function buildCommandCenter(state, readiness, design, harvest, analytics) {
     ['Command Center', 'PASS', 'reports/eventlive-command-center.md'],
     ['Design OS', design.status, 'reports/design-os-status.md'],
     ['Harvest OS', harvest.status, 'reports/source-harvest-os-status.md'],
-    ['Analytics', analytics.status, 'reports/analytics-status.md']
+    ['Analytics', analytics.status, 'reports/analytics-status.md'],
+    ['National Coverage', nationalCoverage.verdict || 'NOT_STARTED', 'dist/regions.json']
   ];
   const report = {
     schema: 'eventlive.command-center.v1',
@@ -453,7 +458,13 @@ function buildCommandCenter(state, readiness, design, harvest, analytics) {
       published_last_sync: harvest.funnel?.published_new || 0,
       linked_existing_last_sync: harvest.funnel?.linked_existing || 0,
       blocked_last_sync: harvest.funnel?.blocked || 0,
-      collector_errors: harvest.totals?.collector_errors || 0
+      collector_errors: harvest.totals?.collector_errors || 0,
+      national_coverage_score: nationalCoverage.score || 0,
+      active_regions: nationalCoverage.active_regions || 0,
+      zero_active_regions: nationalCoverage.zero_active_regions || 0,
+      active_target_cities: nationalCoverage.active_target_cities || 0,
+      target_cities: nationalCoverage.target_cities || 0,
+      riyadh_active_share: nationalCoverage.riyadh_active_share || 0
     },
     gates: gates.map(([name, gateStatus, evidence]) => ({ name, status: gateStatus, evidence })),
     decisions: decisions.map(([id, title, note]) => ({ id, title, note })),
@@ -488,6 +499,10 @@ function buildCommandCenter(state, readiness, design, harvest, analytics) {
     `- Ended events: ${report.totals.ended_events}`,
     `- Last sync published / linked / blocked: ${report.totals.published_last_sync}/${report.totals.linked_existing_last_sync}/${report.totals.blocked_last_sync}`,
     `- Collector errors: ${report.totals.collector_errors}`,
+    `- National coverage score: ${report.totals.national_coverage_score}/100`,
+    `- Active regions / zero-active regions: ${report.totals.active_regions}/${report.totals.zero_active_regions}`,
+    `- Active target cities: ${report.totals.active_target_cities}/${report.totals.target_cities}`,
+    `- Riyadh share of active events: ${Math.round(report.totals.riyadh_active_share * 100)}%`,
     `- Delivery standard PASS/PARTIAL/NOT_STARTED: ${report.totals.delivery_standard_pass}/${report.totals.delivery_standard_partial}/${report.totals.delivery_standard_not_started}`,
     '',
     '## Gates',
@@ -517,6 +532,10 @@ function buildCommandCenter(state, readiness, design, harvest, analytics) {
       <article class="card"><span class="muted">رُبطت بموجود</span><b>${report.totals.linked_existing_last_sync}</b></article>
       <article class="card"><span class="muted">محجوبة للتحقق</span><b>${report.totals.blocked_last_sync}</b></article>
       <article class="card"><span class="muted">أخطاء الجوامع</span><b>${report.totals.collector_errors}</b></article>
+      <article class="card"><span class="muted">درجة التغطية الوطنية</span><b>${report.totals.national_coverage_score}/100</b></article>
+      <article class="card"><span class="muted">المناطق النشطة</span><b>${report.totals.active_regions}/13</b></article>
+      <article class="card"><span class="muted">المدن المستهدفة النشطة</span><b>${report.totals.active_target_cities}/${report.totals.target_cities}</b></article>
+      <article class="card"><span class="muted">حصة الرياض من القادم</span><b>${Math.round(report.totals.riyadh_active_share * 100)}%</b></article>
     </div>
     <h2>قمع الجلب والنشر</h2>
     <table><tr><th>المرحلة</th><th>العدد</th></tr>${Object.entries(harvest.funnel || {}).map(([stage, value]) => `<tr><td><code>${htmlEscape(stage)}</code></td><td>${value}</td></tr>`).join('')}</table>

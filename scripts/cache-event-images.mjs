@@ -30,6 +30,7 @@ const maxImageBytes = Math.max(250000, Number(process.env.EVENTLIVE_IMAGE_CACHE_
 const concurrency = Math.max(1, Math.min(16, Number(process.env.EVENTLIVE_IMAGE_CACHE_CONCURRENCY || 8)));
 const failureRetryHours = Math.max(1, Number(process.env.EVENTLIVE_IMAGE_CACHE_FAILURE_RETRY_HOURS || 24));
 const generatedAt = new Date().toISOString();
+const tlsRelaxationAllowedHosts = new Set(['www.najran.gov.sa', 'najran.gov.sa']);
 
 function hash(value = '') {
   return crypto.createHash('sha1').update(value).digest('hex').slice(0, 10);
@@ -125,6 +126,15 @@ function sourceRefererForUrl(url) {
 }
 
 function imageRequestOptions(url, referer = sourceRefererForUrl(url)) {
+  let relaxedAgent;
+  try {
+    const parsed = new URL(url);
+    if (parsed.protocol === 'https:' && tlsRelaxationAllowedHosts.has(parsed.hostname)) {
+      relaxedAgent = new https.Agent({ rejectUnauthorized: false });
+    }
+  } catch {
+    relaxedAgent = undefined;
+  }
   return {
     headers: {
       accept: 'image/avif,image/webp,image/png,image/jpeg,image/*,*/*;q=0.8',
@@ -134,7 +144,8 @@ function imageRequestOptions(url, referer = sourceRefererForUrl(url)) {
       referer,
       'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
     },
-    timeout: timeoutMs
+    timeout: timeoutMs,
+    ...(relaxedAgent ? { agent: relaxedAgent } : {})
   };
 }
 

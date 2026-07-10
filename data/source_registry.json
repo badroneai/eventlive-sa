@@ -415,8 +415,33 @@
       "candidate_gate": "duplicate-review",
       "notes": "Useful Jeddah-specific supplement and SERP benchmark. Direct public fetch can redirect through Queue-it/Cloudflare protection, so keep as discovery/partnership evidence only; do not bypass protection or auto-publish from this source."
     },
-    {
-      "id": "platinumlist-riyadh",
+  {
+    "id": "najran-municipality-summer-events",
+    "name": "Najran Municipality Summer Events",
+    "url": "https://www.najran.gov.sa/ar/News/AllNews",
+    "owner": "Najran Municipality",
+    "source_type": "government-calendar",
+    "trust_level": "official",
+    "priority": 71,
+    "coverage": "Najran municipal summer festivals, family entertainment, cultural programs, and official city event announcements.",
+    "cities": [
+      "Najran",
+      "Saudi Arabia"
+    ],
+    "categories": [
+      "entertainment",
+      "families",
+      "culture",
+      "summer festivals"
+    ],
+    "fetch_method": "html-listing",
+    "intake_policy": "official-feed-preferred",
+    "evidence_required": "Official Najran Municipality announcement with publication date, explicit launch wording, duration, and public event context.",
+    "candidate_gate": "duplicate-review",
+    "notes": "Added 2026-07-10 from the official Najran Municipality news feed after verifying the 30-day Najran Summer 2026 launch announcement. Relative dates are accepted only when anchored to an explicit official publication date."
+  },
+  {
+    "id": "platinumlist-riyadh",
       "name": "Platinumlist Riyadh Calendar",
       "url": "https://riyadh.platinumlist.net/ar/calendar/today",
       "collector_pages": [
@@ -1874,10 +1899,11 @@
       "candidate_gate": "extraction",
       "notes": "Added 2026-07-05 after web verification of the official /event/ page showing chamber events and past/future forum-style records."
     },
-    {
-      "id": "northern-borders-chamber-events",
+  {
+    "id": "northern-borders-chamber-events",
       "name": "Northern Borders Chamber Events",
-      "url": "https://ncci.org.sa/category/events/",
+    "url": "https://ncci.org.sa/category/events/",
+    "collector_url": "https://ncci.org.sa/wp-json/wp/v2/posts?categories=23&per_page=24&_embed=1",
       "owner": "Northern Borders Chamber of Commerce",
       "source_type": "venue-calendar",
       "trust_level": "official",
@@ -1897,16 +1923,17 @@
         "community",
         "regional events"
       ],
-      "fetch_method": "html-listing",
+    "fetch_method": "json-api",
       "intake_policy": "official-feed-preferred",
       "evidence_required": "Northern Borders Chamber event post with title, event/published date, location or city, and official chamber context.",
       "candidate_gate": "extraction",
       "notes": "Added 2026-07-05 after web verification of the official events category. It appears WordPress-like and suitable for conservative date extraction."
     },
-    {
-      "id": "tabuk-chamber-events",
+  {
+    "id": "tabuk-chamber-events",
       "name": "Tabuk Chamber Events",
-      "url": "https://www.tabukchamber.sa/",
+    "url": "https://www.tabukchamber.sa/",
+    "collector_url": "https://www.tabukchamber.sa/activities",
       "owner": "Tabuk Chamber of Commerce",
       "source_type": "venue-calendar",
       "trust_level": "official",

@@ -7,7 +7,7 @@ const planPath = path.join(root, 'reports', 'source-ingestion-plan.json');
 const reportJsonPath = path.join(root, 'reports', 'source-deep-probe-report.json');
 const reportMdPath = path.join(root, 'reports', 'source-deep-probe-report.md');
 const generatedAt = new Date().toISOString();
-const selectedIds = (process.env.EVENTLIVE_PROBE_SOURCE_IDS || '')
+const selectedIds = (process.env.EVENTLIVE_PROBE_SOURCE_IDS || process.env.EVENTLIVE_SOURCE_IDS || '')
   .split(',')
   .map((item) => item.trim())
   .filter(Boolean);

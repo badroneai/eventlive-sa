@@ -8,6 +8,11 @@
   "source_label": "Riyadh City Events",
   "source_url": "https://riyadh.sa/en/moment/events/item/event/31160",
   "evidence_url": "https://riyadh.sa/en/moment/events/item/event/31160",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T03:51:59.093Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
   "city": "الرياض",
   "venue": "Riyadh",
   "venue_address": "Riyadh",
@@ -19,6 +24,9 @@
   "event_kind_label": "برنامج ممتد",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/registration-for-international-research-competition-on-non-terrestrial-edd16ffe75.png",
   "image_alt": "Registration for International Research Competition on Non-Terrestrial Networks",
@@ -83,7 +91,13 @@
     "location": {
       "@type": "Place",
       "name": "Riyadh",
-      "address": "Riyadh"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Riyadh",
+        "addressLocality": "الرياض",
+        "addressRegion": "منطقة الرياض",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

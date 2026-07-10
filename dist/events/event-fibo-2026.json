@@ -1,13 +1,18 @@
 {
   "id": "event-fibo-2026",
   "title": "FIBO 2026",
-  "summary": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات. المصدر الرسمي: واجهة الرياض للمعارض والمؤتمرات. FIBO 2026 ضمن معارض وتجارية في الرياض. تبدأ الفعالية ٠٨‏/٠٩‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ١٠‏/٠٩‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تتوفر لها صفحة جدول حي تساعد الزائر على متابعة الحالة والوقت أثناء الحضور. المصدر: RFECC What's On.",
+  "summary": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات. المصدر الرسمي: واجهة الرياض للمعارض والمؤتمرات. FIBO 2026 ضمن معارض وتجارية في الرياض. تبدأ الفعالية ٠٨‏/٠٩‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ١٠‏/٠٩‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: RFECC What's On.",
   "canonical_url": "https://eventme.live/events/event-fibo-2026.html",
   "detail_url": "./events/event-fibo-2026.html",
   "calendar_url": "./events/event-fibo-2026.ics",
   "source_label": "RFECC What's On",
   "source_url": "https://rfecc.sa/events/fibo-2026/",
   "evidence_url": "https://rfecc.sa/events/fibo-2026/",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T03:51:51.749Z",
+  "verification_method": "registered-venue-official",
+  "freshness_hours": 0,
   "city": "الرياض",
   "venue": "Riyadh Front Exhibition & Conference Center",
   "venue_address": "Riyadh Front Exhibition & Conference Center",
@@ -18,8 +23,11 @@
   "event_kind": "moment",
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
-  "live_schedule_ready": true,
-  "schedule_quality": "detailed",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-covers/event-fibo-2026.svg",
   "image_alt": "غلاف EventLive لفعالية FIBO 2026",
   "category": "معارض وتجارية",
@@ -47,25 +55,11 @@
   ],
   "sessions": [
     {
-      "title": "ساعات الزيارة",
-      "starts_at": "2026-09-08T16:00:00+03:00",
-      "ends_at": "2026-09-08T22:00:00+03:00",
+      "title": "نافذة الحضور",
+      "starts_at": "2026-09-08T09:00:00+03:00",
+      "ends_at": "2026-09-10T18:00:00+03:00",
       "room": "Riyadh Front Exhibition & Conference Center",
-      "anchor": "#session-event-fibo-2026-opening-hours-1"
-    },
-    {
-      "title": "ساعات الزيارة",
-      "starts_at": "2026-09-09T16:00:00+03:00",
-      "ends_at": "2026-09-09T22:00:00+03:00",
-      "room": "Riyadh Front Exhibition & Conference Center",
-      "anchor": "#session-event-fibo-2026-opening-hours-2"
-    },
-    {
-      "title": "ساعات الزيارة",
-      "starts_at": "2026-09-10T16:00:00+03:00",
-      "ends_at": "2026-09-10T22:00:00+03:00",
-      "room": "Riyadh Front Exhibition & Conference Center",
-      "anchor": "#session-event-fibo-2026-opening-hours-3"
+      "anchor": "#session-نافذة-الحضور"
     }
   ],
   "schema_org": {
@@ -79,7 +73,13 @@
     "location": {
       "@type": "Place",
       "name": "Riyadh Front Exhibition & Conference Center",
-      "address": "Riyadh Front Exhibition & Conference Center"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Riyadh Front Exhibition & Conference Center",
+        "addressLocality": "الرياض",
+        "addressRegion": "منطقة الرياض",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",
@@ -88,7 +88,7 @@
     "image": [
       "https://eventme.live/assets/event-covers/event-fibo-2026.svg"
     ],
-    "description": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات. المصدر الرسمي: واجهة الرياض للمعارض والمؤتمرات. FIBO 2026 ضمن معارض وتجارية في الرياض. تبدأ الفعالية ٠٨‏/٠٩‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ١٠‏/٠٩‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تتوفر لها صفحة جدول حي تساعد الزائر على متابعة الحالة والوقت أثناء الحضور. المصدر: RFECC What's On.",
+    "description": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات. المصدر الرسمي: واجهة الرياض للمعارض والمؤتمرات. FIBO 2026 ضمن معارض وتجارية في الرياض. تبدأ الفعالية ٠٨‏/٠٩‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ١٠‏/٠٩‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: RFECC What's On.",
     "url": "https://eventme.live/events/event-fibo-2026.html",
     "mainEntityOfPage": "https://eventme.live/events/event-fibo-2026.html",
     "isAccessibleForFree": false,

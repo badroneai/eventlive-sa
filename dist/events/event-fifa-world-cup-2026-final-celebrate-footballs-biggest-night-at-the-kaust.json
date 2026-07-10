@@ -8,6 +8,11 @@
   "source_label": "Saudi Universities and Technical Colleges",
   "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/514",
   "evidence_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/514",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T03:52:34.420Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
   "city": "ثول",
   "venue": "Discovery Square",
   "venue_address": "Discovery Square",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": true,
+  "agenda_ready": false,
+  "official_sessions_count": 1,
+  "schedule_depth": "official-single-session",
   "schedule_quality": "detailed",
   "image_url": "https://eventme.live/assets/event-covers/event-fifa-world-cup-2026-final-celebrate-footballs-biggest-night-at-the-kaust.svg",
   "image_alt": "غلاف EventLive لفعالية FIFA World Cup 2026 Final: Celebrate Football's Biggest Night at the KAUST Fan Zone",
@@ -77,7 +85,13 @@
     "location": {
       "@type": "Place",
       "name": "Discovery Square",
-      "address": "Discovery Square"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Discovery Square",
+        "addressLocality": "ثول",
+        "addressRegion": "منطقة مكة المكرمة",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

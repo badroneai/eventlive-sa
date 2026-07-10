@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-10T02:36:14.055Z",
+  "generated_at": "2026-07-10T03:59:04.097Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "categories_count": 12,
   "totals": {
-    "events": 435,
+    "events": 441,
     "upcoming_or_active": 160,
-    "ended": 275,
-    "live_ready": 51
+    "ended": 281,
+    "live_ready": 15
   },
   "categories": [
     {
@@ -17,7 +17,7 @@
       "total_events": 43,
       "upcoming_or_active": 23,
       "ended": 20,
-      "live_ready": 28,
+      "live_ready": 0,
       "sources": [
         "Dhahran Expo Calendar",
         "Eye of Riyadh Events",
@@ -46,6 +46,49 @@
       "sources_count": 4,
       "cities_count": 2,
       "audiences_count": 7
+    },
+    {
+      "slug": "entertainment-families",
+      "label": "ترفيه وعائلات",
+      "url": "./categories/entertainment-families.html",
+      "total_events": 56,
+      "upcoming_or_active": 22,
+      "ended": 34,
+      "live_ready": 1,
+      "sources": [
+        "MDLBEAST Events",
+        "Najran Municipality Summer Events",
+        "Riyadh City Events",
+        "Visit Saudi Calendar",
+        "Visit Saudi Seasons"
+      ],
+      "cities": [
+        "الرياض",
+        "العلا",
+        "جدة",
+        "عسير",
+        "على مستوى المملكة",
+        "نجران"
+      ],
+      "audiences": [
+        "باحثون وأكاديميون",
+        "تقنيون",
+        "رواد أعمال",
+        "رياضة ولياقة",
+        "عائلات وأطفال",
+        "مبدعون وفنون",
+        "مهاريون وحرفيون",
+        "موظفون ومهنيون"
+      ],
+      "next_event": {
+        "title": "Poppy Playtime",
+        "starts_at": "2025-10-10T16:00:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-poppy-playtime.html"
+      },
+      "sources_count": 5,
+      "cities_count": 6,
+      "audiences_count": 8
     },
     {
       "slug": "regulatory-workshop",
@@ -84,91 +127,6 @@
       "audiences_count": 6
     },
     {
-      "slug": "entertainment-families",
-      "label": "ترفيه وعائلات",
-      "url": "./categories/entertainment-families.html",
-      "total_events": 55,
-      "upcoming_or_active": 21,
-      "ended": 34,
-      "live_ready": 1,
-      "sources": [
-        "MDLBEAST Events",
-        "Riyadh City Events",
-        "Visit Saudi Calendar",
-        "Visit Saudi Seasons"
-      ],
-      "cities": [
-        "الرياض",
-        "العلا",
-        "جدة",
-        "عسير",
-        "على مستوى المملكة"
-      ],
-      "audiences": [
-        "باحثون وأكاديميون",
-        "تقنيون",
-        "رواد أعمال",
-        "رياضة ولياقة",
-        "عائلات وأطفال",
-        "مبدعون وفنون",
-        "مهاريون وحرفيون",
-        "موظفون ومهنيون"
-      ],
-      "next_event": {
-        "title": "Poppy Playtime",
-        "starts_at": "2025-10-10T16:00:00+03:00",
-        "status": "ongoing",
-        "url": "./events/event-poppy-playtime.html"
-      },
-      "sources_count": 4,
-      "cities_count": 5,
-      "audiences_count": 8
-    },
-    {
-      "slug": "conference-forum",
-      "label": "مؤتمرات ومنتديات",
-      "url": "./categories/conference-forum.html",
-      "total_events": 24,
-      "upcoming_or_active": 17,
-      "ended": 7,
-      "live_ready": 5,
-      "sources": [
-        "Dhahran Expo Calendar",
-        "Eye of Riyadh Events",
-        "Invest Saudi Events",
-        "Riyadh City Events",
-        "SDAIA Calendar and Events",
-        "Saudi Universities and Technical Colleges",
-        "ملف البرنامج المعتمد من الجهة المنظمة"
-      ],
-      "cities": [
-        "الرياض",
-        "الظهران",
-        "جدة",
-        "دولي"
-      ],
-      "audiences": [
-        "باحثون عن عمل",
-        "باحثون وأكاديميون",
-        "تقنيون",
-        "رواد أعمال",
-        "رياضة ولياقة",
-        "طلاب وخريجون",
-        "مبدعون وفنون",
-        "مهاريون وحرفيون",
-        "موظفون ومهنيون"
-      ],
-      "next_event": {
-        "title": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
-        "starts_at": "2026-07-10T09:00:00+03:00",
-        "status": "upcoming",
-        "url": "./events/demo-event.html"
-      },
-      "sources_count": 7,
-      "cities_count": 4,
-      "audiences_count": 9
-    },
-    {
       "slug": "culture-arts",
       "label": "ثقافة وفنون",
       "url": "./categories/culture-arts.html",
@@ -202,6 +160,49 @@
       "sources_count": 3,
       "cities_count": 2,
       "audiences_count": 6
+    },
+    {
+      "slug": "conference-forum",
+      "label": "مؤتمرات ومنتديات",
+      "url": "./categories/conference-forum.html",
+      "total_events": 23,
+      "upcoming_or_active": 16,
+      "ended": 7,
+      "live_ready": 0,
+      "sources": [
+        "Dhahran Expo Calendar",
+        "Eye of Riyadh Events",
+        "Invest Saudi Events",
+        "Riyadh City Events",
+        "SDAIA Calendar and Events",
+        "Saudi Universities and Technical Colleges"
+      ],
+      "cities": [
+        "الرياض",
+        "الظهران",
+        "جدة",
+        "دولي"
+      ],
+      "audiences": [
+        "باحثون عن عمل",
+        "باحثون وأكاديميون",
+        "تقنيون",
+        "رواد أعمال",
+        "رياضة ولياقة",
+        "طلاب وخريجون",
+        "مبدعون وفنون",
+        "مهاريون وحرفيون",
+        "موظفون ومهنيون"
+      ],
+      "next_event": {
+        "title": "Offshore Technology & Innovation Technical Conference & Expo - OFFSHORE ARABIA 2026”",
+        "starts_at": "2026-08-24T09:00:00+03:00",
+        "status": "upcoming",
+        "url": "./events/event-offshore-technology-innovation-technical-conference-expo-offshore-arabia.html"
+      },
+      "sources_count": 6,
+      "cities_count": 4,
+      "audiences_count": 9
     },
     {
       "slug": "technology-training",
@@ -334,10 +335,10 @@
       "slug": "chamber-event",
       "label": "فعاليات الغرف التجارية",
       "url": "./categories/chamber-event.html",
-      "total_events": 65,
+      "total_events": 71,
       "upcoming_or_active": 8,
-      "ended": 57,
-      "live_ready": 3,
+      "ended": 63,
+      "live_ready": 1,
       "sources": [
         "Abha Chamber Events",
         "Asharqia Chamber Events",
@@ -346,7 +347,9 @@
         "Jazan Chamber Events",
         "Jeddah Chamber Exhibitions and Events Center",
         "Makkah Chamber Events",
-        "Qassim Chamber Events"
+        "Northern Borders Chamber Events",
+        "Qassim Chamber Events",
+        "Tabuk Chamber Events"
       ],
       "cities": [
         "أبها",
@@ -356,9 +359,12 @@
         "الظهران",
         "القطيف",
         "بريدة",
+        "تبوك",
         "جازان",
         "جدة",
         "دولي",
+        "رفحاء",
+        "عرعر",
         "عن بعد",
         "مكة"
       ],
@@ -380,8 +386,8 @@
         "status": "upcoming",
         "url": "./events/event-متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة.html"
       },
-      "sources_count": 8,
-      "cities_count": 12,
+      "sources_count": 10,
+      "cities_count": 15,
       "audiences_count": 10
     },
     {
@@ -391,7 +397,7 @@
       "total_events": 10,
       "upcoming_or_active": 8,
       "ended": 2,
-      "live_ready": 1,
+      "live_ready": 0,
       "sources": [
         "Dhahran Expo Calendar",
         "Saudi Space Agency Events",

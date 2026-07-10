@@ -1,26 +1,28 @@
 # EventLive Build Report
-- Built at: 2026-07-10T02:36:14.055Z
+- Built at: 2026-07-10T03:59:04.097Z
 - Mode: data-driven catalog + static brand refresh
 - Public domain: eventme.live
-- Events generated: 435
+- Events generated: 441
 - Draft/sample records excluded: 3
-- Event detail pages: 435
-- Cities generated: 19
+- Event detail pages: 441
+- Cities generated: 23
 - Stale event image references patched: 0
 - Missing local event image references patched: 0
 - Categories generated: 12
-- Live-ready events: 51
-- Ended events: 275
+- Live-ready events: 15
+- Multi-session agendas: 0
+- Official sessions: 15
+- Ended events: 281
 - Home page data refreshed: yes
 - Browse page data refreshed: yes
 - Organizer intake linked: already current
 - Screen fallback refreshed: yes
 - Category links normalized: 0
 - Category fallback pages created: 0
-- Excluded-record references patched: 3
+- Excluded-record references patched: 5
 - Search intent pages generated: 12
 - Guides search-intent links patched: already current
-- Patched files: 532
+- Patched files: 542
 - Brand: EventLive
 - Live mark: red pulsing i-dot
 - Domain preserved: yes

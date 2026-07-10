@@ -1,22 +1,28 @@
 {
-  "published_at": "2026-07-10T02:30:50.941Z",
+  "published_at": "2026-07-10T03:47:10.130Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 193,
+  "candidates_seen": 194,
   "totals": {
-    "candidates_seen": 193,
-    "published": 0,
+    "candidates_seen": 194,
+    "published": 1,
     "linked_existing": 162,
     "blocked": 31,
-    "reconciled": 162
+    "reconciled": 163
   },
   "duplicate_catalog_rows_removed": 0,
   "duplicate_catalog_rows": [],
   "canonical_event_ids_remapped": 0,
   "canonical_event_id_remaps": [],
-  "published": [],
+  "published": [
+    {
+      "candidate_id": "candidate-najran-municipality-summer-events-مهرجان-صيف-نجران-2026-صيفنا-هايل-20260707-a130a84c",
+      "event_id": "event-مهرجان-صيف-نجران-2026-صيفنا-هايل",
+      "title": "مهرجان صيف نجران 2026 «صيفنا هايل»"
+    }
+  ],
   "linked_existing": [
     {
       "candidate_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c",
@@ -91,7 +97,7 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-seasons-the-groves-20251105-b7362f59",
+      "candidate_id": "candidate-visit-saudi-calendar-the-groves-20251105-b7362f59",
       "event_id": "event-the-groves",
       "title": "The Groves",
       "reason": "already linked to catalog event"
@@ -175,7 +181,7 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-seasons-coca-cola-fan-zone-at-jax-district-20260611-f9159842",
+      "candidate_id": "candidate-visit-saudi-calendar-coca-cola-fan-zone-at-jax-district-20260611-f9159842",
       "event_id": "event-coca-cola-fan-zone-at-jax-district",
       "title": "Coca-Cola Fan Zone at JAX District",
       "reason": "already linked to catalog event"
@@ -805,13 +811,13 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-seasons-saudi-international-falcons-hunting-exhibition-20261001-a4f29b73",
+      "candidate_id": "candidate-visit-saudi-calendar-saudi-international-falcons-hunting-exhibition-20261001-a4f29b73",
       "event_id": "event-saudi-international-falcons-hunting-exhibition",
       "title": "Saudi International Falcons & Hunting Exhibition",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-seasons-saudi-falcons-club-auction-20261001-4e016ab8",
+      "candidate_id": "candidate-visit-saudi-calendar-saudi-falcons-club-auction-20261001-4e016ab8",
       "event_id": "event-saudi-falcons-club-auction",
       "title": "Saudi Falcons Club Auction",
       "reason": "already linked to catalog event"

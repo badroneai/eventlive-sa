@@ -10,7 +10,7 @@ const reportMdPath = path.join(root, 'reports', 'source-browser-probe-report.md'
 const checkpointJsonPath = path.join(root, 'reports', 'source-browser-probe-checkpoint.json');
 const generatedAt = new Date().toISOString();
 const stamp = generatedAt.replace(/[:.]/g, '-');
-const selectedIds = (process.env.EVENTLIVE_BROWSER_SOURCE_IDS || '')
+const selectedIds = (process.env.EVENTLIVE_BROWSER_SOURCE_IDS || process.env.EVENTLIVE_SOURCE_IDS || '')
   .split(',')
   .map((item) => item.trim())
   .filter(Boolean);

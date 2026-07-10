@@ -115,17 +115,16 @@ for (const event of samples) {
   } else {
     assert.equal(eventLd.eventAttendanceMode, 'https://schema.org/OfflineEventAttendanceMode', `${event.detail_url} must use OfflineEventAttendanceMode`);
     assert.equal(eventLd.location?.['@type'], 'Place', `${event.detail_url} must use Place for in-person events`);
+    assert.equal(eventLd.location?.address?.['@type'], 'PostalAddress', `${event.detail_url} must use structured PostalAddress data`);
+    assert.equal(eventLd.location?.address?.addressCountry, 'SA', `${event.detail_url} must identify Saudi Arabia as the address country`);
+    assert.ok(eventLd.location?.address?.addressLocality, `${event.detail_url} must expose the event city as addressLocality`);
   }
-  if (Array.isArray(event.sessions) && event.sessions.length) {
+  const officialSessions = (event.sessions || []).filter((session) => !['attendance-window', 'opening-hours'].includes(session.session_type)
+    && session.source !== 'event-start-end'
+    && session.inferred !== true);
+  if (officialSessions.length) {
     assert.ok(Array.isArray(eventLd.subEvent), `${event.detail_url} live schedules must expose subEvent JSON-LD`);
-    assert.equal(eventLd.subEvent.length, Math.min(20, event.sessions.length), `${event.detail_url} subEvent count must follow the live schedule sample`);
-    if (event.schedule_quality === 'basic-window') {
-      assert.equal(event.live_schedule_ready, false, `${event.detail_url} basic attendance windows must not inflate live_schedule_ready`);
-      assert.match(html, />\s*نافذة الحضور\s*</, `${event.detail_url} must label inferred schedules as an attendance window`);
-      assert.match(html, /نافذة حضور أساسية مستنتجة/, `${event.detail_url} must explain inferred attendance windows`);
-      assert.ok(event.attendance_window_ready, `${event.detail_url} must expose attendance_window_ready`);
-      assert.equal(event.attendance_window?.session_type, 'attendance-window', `${event.detail_url} must expose structured attendance window metadata`);
-    }
+    assert.equal(eventLd.subEvent.length, Math.min(20, officialSessions.length), `${event.detail_url} subEvent count must include official sessions only`);
     for (const subEvent of eventLd.subEvent) {
       assert.equal(subEvent['@type'], 'Event', `${event.detail_url} each subEvent must be an Event`);
       assert.ok(subEvent.url?.startsWith(`https://eventme.live/${event.detail_url.replace(/^\.\//, '')}#session-`), `${event.detail_url} subEvent URLs must point to visible session anchors`);
@@ -133,7 +132,15 @@ for (const event of samples) {
       assert.match(html, new RegExp(`id="${anchor.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}"`), `${event.detail_url} must render a matching session anchor for ${anchor}`);
     }
   } else {
-    assert.equal(eventLd.subEvent, undefined, `${event.detail_url} must not claim subEvents without a live schedule`);
+    assert.equal(eventLd.subEvent, undefined, `${event.detail_url} must not claim subEvents for attendance windows or opening hours`);
+  }
+  if (event.schedule_quality === 'basic-window') {
+    assert.equal(event.live_schedule_ready, false, `${event.detail_url} basic attendance windows must not inflate live_schedule_ready`);
+    assert.match(html, />\s*نافذة الحضور\s*</, `${event.detail_url} must label inferred schedules as an attendance window`);
+    assert.match(html, /نافذة حضور أساسية مستنتجة/, `${event.detail_url} must explain inferred attendance windows`);
+    assert.ok(event.attendance_window_ready, `${event.detail_url} must expose attendance_window_ready`);
+    assert.equal(event.attendance_window?.session_type, 'attendance-window', `${event.detail_url} must expose structured attendance window metadata`);
+    assert.equal(eventLd.subEvent, undefined, `${event.detail_url} attendance windows must never become Google subEvents`);
   }
 }
 

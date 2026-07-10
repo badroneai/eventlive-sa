@@ -24,11 +24,18 @@ assert.equal(report.totals.regions, 13, 'regions report must cover all 13 Saudi 
 assert.ok(report.totals.events >= 200, 'regions report must analyze the public catalog');
 assert.equal(report.totals.events, publicEvents.length, 'regions report event total must match dist/events.json');
 assert.ok(report.totals.weak_regions >= 1, 'regions report must expose weak regions for acquisition planning');
+assert.ok(report.national_coverage && typeof report.national_coverage.score === 'number', 'national coverage score must exist');
+assert.ok(['PASS', 'NEEDS_WORK'].includes(report.national_coverage.verdict), 'national coverage verdict must be explicit');
+assert.equal(report.national_coverage.active_regions + report.national_coverage.zero_active_regions, 13, 'active and zero-active regions must reconcile');
+assert.equal(report.national_coverage.target_cities, report.regions.reduce((sum, region) => sum + region.target_cities.length, 0), 'target-city total must reconcile');
+assert.ok(report.national_coverage.riyadh_active_share >= 0 && report.national_coverage.riyadh_active_share <= 1, 'Riyadh share must be a ratio');
 assert.ok(report.priority_queue.length >= 5, 'regions report must include an actionable priority queue');
 assert.ok(report.regions.some((region) => region.key === 'riyadh-region' && region.total > 0), 'Riyadh region must be represented');
 assert.ok(report.regions.some((region) => region.key === 'eastern-region' && region.total > 0), 'Eastern region must be represented');
 assert.ok(report.regions.some((region) => region.key === 'jazan-region'), 'Jazan region must be tracked even when weak');
 assert.ok(report.regions.every((region) => Array.isArray(region.target_cities) && region.target_cities.length >= 1), 'each region must have target cities');
+assert.ok(report.regions.every((region) => region.active_target_city_count === region.active_cities.length), 'active target-city count must reconcile');
+assert.ok(report.regions.every((region) => region.coverage_score >= 0 && region.coverage_score <= 100), 'region score must remain bounded');
 
 const html = fs.readFileSync(htmlPath, 'utf8');
 assert.match(html, /تغطية مناطق المملكة/, 'regions page must have the Arabic page title');

@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import http from 'node:http';
 import path from 'node:path';
 import { chromium, webkit } from 'playwright';
+import { representativeEventPath } from './audit-page-utils.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -15,7 +16,7 @@ const pages = [
   '/today-events.html',
   '/screen.html',
   '/organizers.html',
-  '/events/demo-event.html'
+  representativeEventPath()
 ];
 
 const viewports = [

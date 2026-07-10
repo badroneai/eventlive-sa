@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-10T02:36:14.055Z",
+  "generated_at": "2026-07-10T03:59:04.097Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "live-schedule-activation",
   "totals": {
-    "candidates": 132,
-    "urgent": 55,
-    "high": 12,
+    "candidates": 150,
+    "urgent": 56,
+    "high": 13,
     "needs_date": 0,
-    "source_groups": 18,
-    "basic_window_candidates": 132,
+    "source_groups": 20,
+    "basic_window_candidates": 150,
     "missing_window_candidates": 0
   },
   "focus": {
@@ -149,7 +149,7 @@
       "source_host": "tuwaiq.edu.sa",
       "candidates": 20,
       "urgent": 4,
-      "high": 6,
+      "high": 7,
       "basic_windows": 20,
       "missing_windows": 0,
       "route_counts": {
@@ -223,7 +223,7 @@
         "label": "محلل برامج ودورات",
         "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
       },
-      "impact_score": 276
+      "impact_score": 280
     },
     {
       "key": "Ministry of Culture Commission Calendars",
@@ -390,6 +390,89 @@
         "next_action": "افتح صفحة التقويم أو الموسم وابحث عن برنامج الأيام، المواقع الفرعية، وساعات التشغيل المعلنة."
       },
       "impact_score": 168
+    },
+    {
+      "key": "Dhahran Expo Calendar",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa",
+      "source_host": "dhahranexpo.com.sa",
+      "candidates": 15,
+      "urgent": 0,
+      "high": 0,
+      "basic_windows": 15,
+      "missing_windows": 0,
+      "route_counts": {
+        "expo-agenda-probe": 15
+      },
+      "next_event_starts_at": "2026-08-24T09:00:00+03:00",
+      "example_events": [
+        {
+          "id": "event-offshore-technology-innovation-technical-conference-expo-offshore-arabia",
+          "title": "Offshore Technology & Innovation Technical Conference & Expo - OFFSHORE ARABIA 2026”",
+          "city": "الظهران",
+          "starts_at": "2026-08-24T09:00:00+03:00",
+          "detail_url": "./events/event-offshore-technology-innovation-technical-conference-expo-offshore-arabia.html",
+          "priority": {
+            "key": "normal",
+            "label": "متابعة دورية",
+            "rank": 2
+          }
+        },
+        {
+          "id": "event-crafts-handicrafts-exhibition",
+          "title": "Crafts & Handicrafts Exhibition",
+          "city": "الظهران",
+          "starts_at": "2026-09-01T09:00:00+03:00",
+          "detail_url": "./events/event-crafts-handicrafts-exhibition.html",
+          "priority": {
+            "key": "normal",
+            "label": "متابعة دورية",
+            "rank": 2
+          }
+        },
+        {
+          "id": "event-arabian-and-international-industries-exhibition",
+          "title": "Arabian and International Industries Exhibition",
+          "city": "الظهران",
+          "starts_at": "2026-09-02T09:00:00+03:00",
+          "detail_url": "./events/event-arabian-and-international-industries-exhibition.html",
+          "priority": {
+            "key": "normal",
+            "label": "متابعة دورية",
+            "rank": 2
+          }
+        },
+        {
+          "id": "event-static-equipment-engineering-maintenance-technical-conference-expo-state",
+          "title": "Static Equipment Engineering & Maintenance Technical Conference & Expo - STATEC Arabia",
+          "city": "الظهران",
+          "starts_at": "2026-09-08T09:00:00+03:00",
+          "detail_url": "./events/event-static-equipment-engineering-maintenance-technical-conference-expo-state.html",
+          "priority": {
+            "key": "normal",
+            "label": "متابعة دورية",
+            "rank": 2
+          }
+        },
+        {
+          "id": "event-gulf-steel-storage-tank-refinery-expo",
+          "title": "Gulf Steel, Storage Tank & Refinery Expo",
+          "city": "الظهران",
+          "starts_at": "2026-09-20T09:00:00+03:00",
+          "detail_url": "./events/event-gulf-steel-storage-tank-refinery-expo.html",
+          "priority": {
+            "key": "normal",
+            "label": "متابعة دورية",
+            "rank": 2
+          }
+        }
+      ],
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "impact_score": 165
     },
     {
       "key": "Misk Hub Programs",
@@ -629,6 +712,89 @@
       "impact_score": 76
     },
     {
+      "key": "RFECC What's On",
+      "source_label": "RFECC What's On",
+      "source_url": "https://rfecc.sa/events/saudi-logistic-warehousing-expo/",
+      "source_host": "rfecc.sa",
+      "candidates": 6,
+      "urgent": 0,
+      "high": 0,
+      "basic_windows": 6,
+      "missing_windows": 0,
+      "route_counts": {
+        "expo-agenda-probe": 6
+      },
+      "next_event_starts_at": "2026-08-30T09:00:00+03:00",
+      "example_events": [
+        {
+          "id": "event-saudi-logistic-038-warehousing-expo",
+          "title": "Saudi Logistic & Warehousing Expo",
+          "city": "الرياض",
+          "starts_at": "2026-08-30T09:00:00+03:00",
+          "detail_url": "./events/event-saudi-logistic-038-warehousing-expo.html",
+          "priority": {
+            "key": "normal",
+            "label": "متابعة دورية",
+            "rank": 2
+          }
+        },
+        {
+          "id": "event-inter-aviation-arabia",
+          "title": "Inter Aviation Arabia",
+          "city": "الرياض",
+          "starts_at": "2026-09-08T09:00:00+03:00",
+          "detail_url": "./events/event-inter-aviation-arabia.html",
+          "priority": {
+            "key": "normal",
+            "label": "متابعة دورية",
+            "rank": 2
+          }
+        },
+        {
+          "id": "event-fibo-2026",
+          "title": "FIBO 2026",
+          "city": "الرياض",
+          "starts_at": "2026-09-08T09:00:00+03:00",
+          "detail_url": "./events/event-fibo-2026.html",
+          "priority": {
+            "key": "normal",
+            "label": "متابعة دورية",
+            "rank": 2
+          }
+        },
+        {
+          "id": "event-wtm-spotlight-riyadh",
+          "title": "WTM Spotlight Riyadh",
+          "city": "الرياض",
+          "starts_at": "2026-09-08T09:00:00+03:00",
+          "detail_url": "./events/event-wtm-spotlight-riyadh.html",
+          "priority": {
+            "key": "normal",
+            "label": "متابعة دورية",
+            "rank": 2
+          }
+        },
+        {
+          "id": "event-natrual-expo",
+          "title": "Natrual Expo",
+          "city": "الرياض",
+          "starts_at": "2026-10-26T09:00:00+03:00",
+          "detail_url": "./events/event-natrual-expo.html",
+          "priority": {
+            "key": "normal",
+            "label": "متابعة دورية",
+            "rank": 2
+          }
+        }
+      ],
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "impact_score": 66
+    },
+    {
       "key": "Visit Saudi Seasons",
       "source_label": "Visit Saudi Seasons",
       "source_url": "https://www.visitsaudi.com/en/riyadh/events/the-groves",
@@ -828,77 +994,6 @@
         "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
       },
       "impact_score": 52
-    },
-    {
-      "key": "Dhahran Expo Calendar",
-      "source_label": "Dhahran Expo Calendar",
-      "source_url": "https://dhahranexpo.com.sa",
-      "source_host": "dhahranexpo.com.sa",
-      "candidates": 4,
-      "urgent": 0,
-      "high": 0,
-      "basic_windows": 4,
-      "missing_windows": 0,
-      "route_counts": {
-        "expo-agenda-probe": 4
-      },
-      "next_event_starts_at": "2026-11-05T09:00:00+03:00",
-      "example_events": [
-        {
-          "id": "event-world-firefighters-challenge",
-          "title": "World Firefighters Challenge",
-          "city": "الظهران",
-          "starts_at": "2026-11-05T09:00:00+03:00",
-          "detail_url": "./events/event-world-firefighters-challenge.html",
-          "priority": {
-            "key": "normal",
-            "label": "متابعة دورية",
-            "rank": 2
-          }
-        },
-        {
-          "id": "event-business-sector-annual-reception",
-          "title": "Business Sector Annual Reception.",
-          "city": "الظهران",
-          "starts_at": "2026-12-01T09:00:00+03:00",
-          "detail_url": "./events/event-business-sector-annual-reception.html",
-          "priority": {
-            "key": "normal",
-            "label": "متابعة دورية",
-            "rank": 2
-          }
-        },
-        {
-          "id": "event-pfl-mena-final",
-          "title": "PFL Mena Final",
-          "city": "الظهران",
-          "starts_at": "2026-12-11T09:00:00+03:00",
-          "detail_url": "./events/event-pfl-mena-final.html",
-          "priority": {
-            "key": "normal",
-            "label": "متابعة دورية",
-            "rank": 2
-          }
-        },
-        {
-          "id": "event-ctw-global-ksa-gulf-4p-mach-tools",
-          "title": "CTW Global KSA, Gulf 4P & Mach Tools",
-          "city": "الظهران",
-          "starts_at": "2026-12-14T09:00:00+03:00",
-          "detail_url": "./events/event-ctw-global-ksa-gulf-4p-mach-tools.html",
-          "priority": {
-            "key": "normal",
-            "label": "متابعة دورية",
-            "rank": 2
-          }
-        }
-      ],
-      "acquisition": {
-        "route": "expo-agenda-probe",
-        "label": "فحص أجندة المعارض",
-        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
-      },
-      "impact_score": 44
     },
     {
       "key": "Saudi Universities and Technical Colleges",
@@ -1159,6 +1254,41 @@
         "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
       },
       "impact_score": 22
+    },
+    {
+      "key": "Najran Municipality Summer Events",
+      "source_label": "Najran Municipality Summer Events",
+      "source_url": "https://www.najran.gov.sa/ar/News/NewsDetails/1381/%D8%A8%D8%B1%D8%B9%D8%A7%D9%8A%D8%A9-%D8%A3%D9%85%D9%8A%D8%B1-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A3%D9%85%D8%A7%D9%86%D8%A9-%D9%86%D8%AC%D8%B1%D8%A7%D9%86-%D8%AA%D8%B7%D9%84%D9%82-%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA-%D9%85%D9%87%D8%B1%D8%AC%D8%A7%D9%86-%D8%B5%D9%8A%D9%81%D9%86%D8%A7-%D9%87%D8%A7%D9%8A%D9%84-2026-%D8%BA%D8%AF%D9%8B%D8%A7",
+      "source_host": "najran.gov.sa",
+      "candidates": 1,
+      "urgent": 1,
+      "high": 0,
+      "basic_windows": 1,
+      "missing_windows": 0,
+      "route_counts": {
+        "source-detail-probe": 1
+      },
+      "next_event_starts_at": "2026-07-07T00:00:00+03:00",
+      "example_events": [
+        {
+          "id": "event-مهرجان-صيف-نجران-2026-صيفنا-هايل",
+          "title": "مهرجان صيف نجران 2026 «صيفنا هايل»",
+          "city": "نجران",
+          "starts_at": "2026-07-07T00:00:00+03:00",
+          "detail_url": "./events/event-مهرجان-صيف-نجران-2026-صيفنا-هايل.html",
+          "priority": {
+            "key": "urgent",
+            "label": "عاجل الآن",
+            "rank": 0
+          }
+        }
+      ],
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "impact_score": 19
     },
     {
       "key": "Jazan Chamber Events",
@@ -3027,6 +3157,52 @@
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Esports%20World%20Cup&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Esports%20World%20Cup%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Boulevard%20City%2C%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-06T17%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-esports-world-cup.html"
     },
     {
+      "id": "event-مهرجان-صيف-نجران-2026-صيفنا-هايل",
+      "title": "مهرجان صيف نجران 2026 «صيفنا هايل»",
+      "city": "نجران",
+      "venue": "11 موقعًا في مدينة نجران",
+      "organizer": "Najran Municipality",
+      "category": "ترفيه وعائلات",
+      "starts_at": "2026-07-07T00:00:00+03:00",
+      "ends_at": "2026-08-05T23:59:00+03:00",
+      "detail_url": "./events/event-مهرجان-صيف-نجران-2026-صيفنا-هايل.html",
+      "calendar_url": "./events/event-مهرجان-صيف-نجران-2026-صيفنا-هايل.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=11%20%D9%85%D9%88%D9%82%D8%B9%D9%8B%D8%A7%20%D9%81%D9%8A%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86%20Najran",
+      "source_label": "Najran Municipality Summer Events",
+      "source_url": "https://www.najran.gov.sa/ar/News/NewsDetails/1381/%D8%A8%D8%B1%D8%B9%D8%A7%D9%8A%D8%A9-%D8%A3%D9%85%D9%8A%D8%B1-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A3%D9%85%D8%A7%D9%86%D8%A9-%D9%86%D8%AC%D8%B1%D8%A7%D9%86-%D8%AA%D8%B7%D9%84%D9%82-%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA-%D9%85%D9%87%D8%B1%D8%AC%D8%A7%D9%86-%D8%B5%D9%8A%D9%81%D9%86%D8%A7-%D9%87%D8%A7%D9%8A%D9%84-2026-%D8%BA%D8%AF%D9%8B%D8%A7",
+      "evidence_url": "https://www.najran.gov.sa/ar/News/NewsDetails/1381/%D8%A8%D8%B1%D8%B9%D8%A7%D9%8A%D8%A9-%D8%A3%D9%85%D9%8A%D8%B1-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A3%D9%85%D8%A7%D9%86%D8%A9-%D9%86%D8%AC%D8%B1%D8%A7%D9%86-%D8%AA%D8%B7%D9%84%D9%82-%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA-%D9%85%D9%87%D8%B1%D8%AC%D8%A7%D9%86-%D8%B5%D9%8A%D9%81%D9%86%D8%A7-%D9%87%D8%A7%D9%8A%D9%84-2026-%D8%BA%D8%AF%D9%8B%D8%A7",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-07-07T00:00:00+03:00",
+        "ends_at": "2026-08-05T23:59:00+03:00",
+        "room": "11 موقعًا في مدينة نجران",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "priority": {
+        "key": "urgent",
+        "label": "عاجل الآن",
+        "rank": 0
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D9%87%D8%B1%D8%AC%D8%A7%D9%86%20%D8%B5%D9%8A%D9%81%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86%202026%20%C2%AB%D8%B5%D9%8A%D9%81%D9%86%D8%A7%20%D9%87%D8%A7%D9%8A%D9%84%C2%BB&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D9%87%D8%B1%D8%AC%D8%A7%D9%86%20%D8%B5%D9%8A%D9%81%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86%202026%20%C2%AB%D8%B5%D9%8A%D9%81%D9%86%D8%A7%20%D9%87%D8%A7%D9%8A%D9%84%C2%BB%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%2011%20%D9%85%D9%88%D9%82%D8%B9%D9%8B%D8%A7%20%D9%81%D9%8A%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D9%86%D8%AC%D8%B1%D8%A7%D9%86%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-07T00%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D9%87%D8%B1%D8%AC%D8%A7%D9%86-%D8%B5%D9%8A%D9%81-%D9%86%D8%AC%D8%B1%D8%A7%D9%86-2026-%D8%B5%D9%8A%D9%81%D9%86%D8%A7-%D9%87%D8%A7%D9%8A%D9%84.html"
+    },
+    {
       "id": "event-registration-now-open-for-children-at-the-childhood-studies-center-for-t",
       "title": "Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH",
       "city": "جدة",
@@ -4351,9 +4527,9 @@
         "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
       },
       "priority": {
-        "key": "normal",
-        "label": "متابعة دورية",
-        "rank": 2
+        "key": "high",
+        "label": "أولوية عالية",
+        "rank": 1
       },
       "blockers": [
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
@@ -4635,6 +4811,98 @@
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A3%D9%85%D9%86%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A8%D8%B1%D8%A7%D9%86%D9%8A&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A3%D9%85%D9%86%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A8%D8%B1%D8%A7%D9%86%D9%8A%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-08-23T18%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%B9%D8%B3%D9%83%D8%B1-%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D8%B3%D9%8A%D8%A8%D8%B1%D8%A7%D9%86%D9%8A.html"
+    },
+    {
+      "id": "event-offshore-technology-innovation-technical-conference-expo-offshore-arabia",
+      "title": "Offshore Technology & Innovation Technical Conference & Expo - OFFSHORE ARABIA 2026”",
+      "city": "الظهران",
+      "venue": "Dhahran Expo",
+      "organizer": "Aldrich International L.L.C.",
+      "category": "مؤتمرات ومنتديات",
+      "starts_at": "2026-08-24T09:00:00+03:00",
+      "ends_at": "2026-08-26T18:00:00+03:00",
+      "detail_url": "./events/event-offshore-technology-innovation-technical-conference-expo-offshore-arabia.html",
+      "calendar_url": "./events/event-offshore-technology-innovation-technical-conference-expo-offshore-arabia.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Dhahran%20Expo%20Dhahran",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa",
+      "evidence_url": "https://dhahranexpo.com.sa",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-08-24T09:00:00+03:00",
+        "ends_at": "2026-08-26T18:00:00+03:00",
+        "room": "Dhahran Expo",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Offshore%20Technology%20%26%20Innovation%20Technical%20Conference%20%26%20Expo%20-%20OFFSHORE%20ARABIA%202026%E2%80%9D&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Offshore%20Technology%20%26%20Innovation%20Technical%20Conference%20%26%20Expo%20-%20OFFSHORE%20ARABIA%202026%E2%80%9D%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Dhahran%20Expo%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-08-24T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-offshore-technology-innovation-technical-conference-expo-offshore-arabia.html"
+    },
+    {
+      "id": "event-saudi-logistic-038-warehousing-expo",
+      "title": "Saudi Logistic & Warehousing Expo",
+      "city": "الرياض",
+      "venue": "Riyadh Front Exhibition & Conference Center",
+      "organizer": "Riyadh Front Exhibition & Conference Center",
+      "category": "معارض وتجارية",
+      "starts_at": "2026-08-30T09:00:00+03:00",
+      "ends_at": "2026-09-01T18:00:00+03:00",
+      "detail_url": "./events/event-saudi-logistic-038-warehousing-expo.html",
+      "calendar_url": "./events/event-saudi-logistic-038-warehousing-expo.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Riyadh%20Front%20Exhibition%20%26%20Conference%20Center%20Riyadh",
+      "source_label": "RFECC What's On",
+      "source_url": "https://rfecc.sa/events/saudi-logistic-warehousing-expo/",
+      "evidence_url": "https://rfecc.sa/events/saudi-logistic-warehousing-expo/",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-08-30T09:00:00+03:00",
+        "ends_at": "2026-09-01T18:00:00+03:00",
+        "room": "Riyadh Front Exhibition & Conference Center",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Saudi%20Logistic%20%26%20Warehousing%20Expo&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Saudi%20Logistic%20%26%20Warehousing%20Expo%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%20Front%20Exhibition%20%26%20Conference%20Center%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-08-30T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-saudi-logistic-038-warehousing-expo.html"
     },
     {
       "id": "event-saudi-wood-expo-2026",
@@ -5005,6 +5273,52 @@
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20LEAP%202026&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20LEAP%202026%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-08-31T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-leap-2026.html"
     },
     {
+      "id": "event-crafts-handicrafts-exhibition",
+      "title": "Crafts & Handicrafts Exhibition",
+      "city": "الظهران",
+      "venue": "Dhahran Expo",
+      "organizer": "Sharqia Chamber",
+      "category": "فعاليات الغرف التجارية",
+      "starts_at": "2026-09-01T09:00:00+03:00",
+      "ends_at": "2026-09-04T18:00:00+03:00",
+      "detail_url": "./events/event-crafts-handicrafts-exhibition.html",
+      "calendar_url": "./events/event-crafts-handicrafts-exhibition.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Dhahran%20Expo%20Dhahran",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa",
+      "evidence_url": "https://dhahranexpo.com.sa",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-09-01T09:00:00+03:00",
+        "ends_at": "2026-09-04T18:00:00+03:00",
+        "room": "Dhahran Expo",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Crafts%20%26%20Handicrafts%20Exhibition&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Crafts%20%26%20Handicrafts%20Exhibition%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Dhahran%20Expo%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-01T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-crafts-handicrafts-exhibition.html"
+    },
+    {
       "id": "event-misk-x-unyo-youth-engagement-fellowship",
       "title": "Misk X UNYO Youth Engagement Fellowship",
       "city": "السعودية",
@@ -5141,6 +5455,52 @@
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D8%B1%D9%81%20%D9%88%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D9%8A%D8%AF%D9%88%D9%8A%D8%A9%202026&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%AD%D8%B1%D9%81%20%D9%88%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84%20%D8%A7%D9%84%D9%8A%D8%AF%D9%88%D9%8A%D8%A9%202026%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%20%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-01T16%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%AD%D8%B1%D9%81-%D9%88%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D9%8A%D8%AF%D9%88%D9%8A%D8%A9-2026.html"
+    },
+    {
+      "id": "event-arabian-and-international-industries-exhibition",
+      "title": "Arabian and International Industries Exhibition",
+      "city": "الظهران",
+      "venue": "Dhahran Expo",
+      "organizer": "Ibrahim Mohammed Saad Al-Awad Establishment for Organizing Exhibitions and Conferences",
+      "category": "معارض وتجارية",
+      "starts_at": "2026-09-02T09:00:00+03:00",
+      "ends_at": "2026-09-11T18:00:00+03:00",
+      "detail_url": "./events/event-arabian-and-international-industries-exhibition.html",
+      "calendar_url": "./events/event-arabian-and-international-industries-exhibition.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Dhahran%20Expo%20Dhahran",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa",
+      "evidence_url": "https://dhahranexpo.com.sa",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-09-02T09:00:00+03:00",
+        "ends_at": "2026-09-11T18:00:00+03:00",
+        "room": "Dhahran Expo",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Arabian%20and%20International%20Industries%20Exhibition&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Arabian%20and%20International%20Industries%20Exhibition%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Dhahran%20Expo%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-02T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-arabian-and-international-industries-exhibition.html"
     },
     {
       "id": "event-the-innovation-diwan",
@@ -5509,6 +5869,190 @@
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20The%20KAUST%20Imaging%20and%20Characterization%20Core%20Lab%20presents%3A%20AI%20for%20Microscopy%20Workshop&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20The%20KAUST%20Imaging%20and%20Characterization%20Core%20Lab%20presents%3A%20AI%20for%20Microscopy%20Workshop%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%AB%D9%88%D9%84%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20AV%2FVR%20Hub%2C%20KAUST%20Visualization%20Core%2C%20building%201%2C%20level%202%2C%20room%202304%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-07T00%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco.html"
+    },
+    {
+      "id": "event-inter-aviation-arabia",
+      "title": "Inter Aviation Arabia",
+      "city": "الرياض",
+      "venue": "Riyadh Front Exhibition & Conference Center",
+      "organizer": "Riyadh Front Exhibition & Conference Center",
+      "category": "معارض وتجارية",
+      "starts_at": "2026-09-08T09:00:00+03:00",
+      "ends_at": "2026-09-10T18:00:00+03:00",
+      "detail_url": "./events/event-inter-aviation-arabia.html",
+      "calendar_url": "./events/event-inter-aviation-arabia.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Riyadh%20Front%20Exhibition%20%26%20Conference%20Center%20Riyadh",
+      "source_label": "RFECC What's On",
+      "source_url": "https://rfecc.sa/events/inter-aviation-arabia/",
+      "evidence_url": "https://rfecc.sa/events/inter-aviation-arabia/",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-09-08T09:00:00+03:00",
+        "ends_at": "2026-09-10T18:00:00+03:00",
+        "room": "Riyadh Front Exhibition & Conference Center",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Inter%20Aviation%20Arabia&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Inter%20Aviation%20Arabia%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%20Front%20Exhibition%20%26%20Conference%20Center%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-08T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-inter-aviation-arabia.html"
+    },
+    {
+      "id": "event-fibo-2026",
+      "title": "FIBO 2026",
+      "city": "الرياض",
+      "venue": "Riyadh Front Exhibition & Conference Center",
+      "organizer": "Riyadh Front Exhibition & Conference Center",
+      "category": "معارض وتجارية",
+      "starts_at": "2026-09-08T09:00:00+03:00",
+      "ends_at": "2026-09-10T18:00:00+03:00",
+      "detail_url": "./events/event-fibo-2026.html",
+      "calendar_url": "./events/event-fibo-2026.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Riyadh%20Front%20Exhibition%20%26%20Conference%20Center%20Riyadh",
+      "source_label": "RFECC What's On",
+      "source_url": "https://rfecc.sa/events/fibo-2026/",
+      "evidence_url": "https://rfecc.sa/events/fibo-2026/",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-09-08T09:00:00+03:00",
+        "ends_at": "2026-09-10T18:00:00+03:00",
+        "room": "Riyadh Front Exhibition & Conference Center",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20FIBO%202026&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20FIBO%202026%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%20Front%20Exhibition%20%26%20Conference%20Center%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-08T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-fibo-2026.html"
+    },
+    {
+      "id": "event-static-equipment-engineering-maintenance-technical-conference-expo-state",
+      "title": "Static Equipment Engineering & Maintenance Technical Conference & Expo - STATEC Arabia",
+      "city": "الظهران",
+      "venue": "Dhahran Expo",
+      "organizer": "Aldrich Int’l LLC",
+      "category": "مؤتمرات ومنتديات",
+      "starts_at": "2026-09-08T09:00:00+03:00",
+      "ends_at": "2026-09-10T18:00:00+03:00",
+      "detail_url": "./events/event-static-equipment-engineering-maintenance-technical-conference-expo-state.html",
+      "calendar_url": "./events/event-static-equipment-engineering-maintenance-technical-conference-expo-state.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Dhahran%20Expo%20Dhahran",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa",
+      "evidence_url": "https://dhahranexpo.com.sa",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-09-08T09:00:00+03:00",
+        "ends_at": "2026-09-10T18:00:00+03:00",
+        "room": "Dhahran Expo",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Static%20Equipment%20Engineering%20%26%20Maintenance%20Technical%20Conference%20%26%20Expo%20-%20STATEC%20Arabia&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Static%20Equipment%20Engineering%20%26%20Maintenance%20Technical%20Conference%20%26%20Expo%20-%20STATEC%20Arabia%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Dhahran%20Expo%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-08T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-static-equipment-engineering-maintenance-technical-conference-expo-state.html"
+    },
+    {
+      "id": "event-wtm-spotlight-riyadh",
+      "title": "WTM Spotlight Riyadh",
+      "city": "الرياض",
+      "venue": "Riyadh Front Exhibition & Conference Center",
+      "organizer": "Riyadh Front Exhibition & Conference Center",
+      "category": "معارض وتجارية",
+      "starts_at": "2026-09-08T09:00:00+03:00",
+      "ends_at": "2026-09-10T18:00:00+03:00",
+      "detail_url": "./events/event-wtm-spotlight-riyadh.html",
+      "calendar_url": "./events/event-wtm-spotlight-riyadh.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Riyadh%20Front%20Exhibition%20%26%20Conference%20Center%20Riyadh",
+      "source_label": "RFECC What's On",
+      "source_url": "https://rfecc.sa/events/wtm-2026/",
+      "evidence_url": "https://rfecc.sa/events/wtm-2026/",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-09-08T09:00:00+03:00",
+        "ends_at": "2026-09-10T18:00:00+03:00",
+        "room": "Riyadh Front Exhibition & Conference Center",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20WTM%20Spotlight%20Riyadh&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20WTM%20Spotlight%20Riyadh%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%20Front%20Exhibition%20%26%20Conference%20Center%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-08T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-wtm-spotlight-riyadh.html"
     },
     {
       "id": "event-fibo-arabia-2026",
@@ -6063,6 +6607,52 @@
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Smart%20Cities%20Saudi%20Expo&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Smart%20Cities%20Saudi%20Expo%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%20International%20Convention%20%26%20Exhibition%20Center%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-15T14%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-smart-cities-saudi-expo.html"
     },
     {
+      "id": "event-gulf-steel-storage-tank-refinery-expo",
+      "title": "Gulf Steel, Storage Tank & Refinery Expo",
+      "city": "الظهران",
+      "venue": "Dhahran Expo",
+      "organizer": "Spartans and Knights Events Management",
+      "category": "معارض وتجارية",
+      "starts_at": "2026-09-20T09:00:00+03:00",
+      "ends_at": "2026-09-22T18:00:00+03:00",
+      "detail_url": "./events/event-gulf-steel-storage-tank-refinery-expo.html",
+      "calendar_url": "./events/event-gulf-steel-storage-tank-refinery-expo.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Dhahran%20Expo%20Dhahran",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa",
+      "evidence_url": "https://dhahranexpo.com.sa",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-09-20T09:00:00+03:00",
+        "ends_at": "2026-09-22T18:00:00+03:00",
+        "room": "Dhahran Expo",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Gulf%20Steel%2C%20Storage%20Tank%20%26%20Refinery%20Expo&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Gulf%20Steel%2C%20Storage%20Tank%20%26%20Refinery%20Expo%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Dhahran%20Expo%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-20T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-gulf-steel-storage-tank-refinery-expo.html"
+    },
+    {
       "id": "event-facility-management-conference-exhibition",
       "title": "Facility Management Conference & Exhibition",
       "city": "الرياض",
@@ -6153,6 +6743,98 @@
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Saudi%20National%20Day&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Saudi%20National%20Day%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%B9%D9%84%D9%89%20%D9%85%D8%B3%D8%AA%D9%88%D9%89%20%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Nationwide%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-23T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-saudi-national-day.html"
+    },
+    {
+      "id": "event-the-egyptian-products-exhibition",
+      "title": "The Egyptian Products Exhibition",
+      "city": "الظهران",
+      "venue": "Dhahran Expo",
+      "organizer": "Al-Baraa Muhammed Bin Abdullah Al-Duaij Establishment for Organizing Exhibitions & Conferences",
+      "category": "معارض وتجارية",
+      "starts_at": "2026-09-24T09:00:00+03:00",
+      "ends_at": "2026-09-29T18:00:00+03:00",
+      "detail_url": "./events/event-the-egyptian-products-exhibition.html",
+      "calendar_url": "./events/event-the-egyptian-products-exhibition.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Dhahran%20Expo%20Dhahran",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa",
+      "evidence_url": "https://dhahranexpo.com.sa",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-09-24T09:00:00+03:00",
+        "ends_at": "2026-09-29T18:00:00+03:00",
+        "room": "Dhahran Expo",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20The%20Egyptian%20Products%20Exhibition&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20The%20Egyptian%20Products%20Exhibition%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Dhahran%20Expo%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-24T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-the-egyptian-products-exhibition.html"
+    },
+    {
+      "id": "event-wadaef-exhibition",
+      "title": "Wadaef Exhibition",
+      "city": "الظهران",
+      "venue": "Dhahran Expo",
+      "organizer": "Sharqia Chamber",
+      "category": "فعاليات الغرف التجارية",
+      "starts_at": "2026-09-27T09:00:00+03:00",
+      "ends_at": "2026-09-29T18:00:00+03:00",
+      "detail_url": "./events/event-wadaef-exhibition.html",
+      "calendar_url": "./events/event-wadaef-exhibition.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Dhahran%20Expo%20Dhahran",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa",
+      "evidence_url": "https://dhahranexpo.com.sa",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-09-27T09:00:00+03:00",
+        "ends_at": "2026-09-29T18:00:00+03:00",
+        "room": "Dhahran Expo",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Wadaef%20Exhibition&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Wadaef%20Exhibition%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Dhahran%20Expo%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-27T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-wadaef-exhibition.html"
     },
     {
       "id": "event-the-saudi-food-show",
@@ -6337,6 +7019,52 @@
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Al%20Milwah%20Falcon%20Race&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Al%20Milwah%20Falcon%20Race%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-10-04T19%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-al-milwah-falcon-race.html"
+    },
+    {
+      "id": "event-natrual-expo",
+      "title": "Natrual Expo",
+      "city": "الرياض",
+      "venue": "Riyadh Front Exhibition & Conference Center",
+      "organizer": "Riyadh Front Exhibition & Conference Center",
+      "category": "معارض وتجارية",
+      "starts_at": "2026-10-26T09:00:00+03:00",
+      "ends_at": "2026-10-29T18:00:00+03:00",
+      "detail_url": "./events/event-natrual-expo.html",
+      "calendar_url": "./events/event-natrual-expo.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Riyadh%20Front%20Exhibition%20%26%20Conference%20Center%20Riyadh",
+      "source_label": "RFECC What's On",
+      "source_url": "https://rfecc.sa/events/natrual-expo/",
+      "evidence_url": "https://rfecc.sa/events/natrual-expo/",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-10-26T09:00:00+03:00",
+        "ends_at": "2026-10-29T18:00:00+03:00",
+        "room": "Riyadh Front Exhibition & Conference Center",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Natrual%20Expo&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Natrual%20Expo%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%20Front%20Exhibition%20%26%20Conference%20Center%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-10-26T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-natrual-expo.html"
     },
     {
       "id": "event-future-investment-initiative-fii-10",
@@ -6799,6 +7527,52 @@
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Saudi%20Water%20Partnerships%20Company%20Forum%20and%20Awards%20Ceremony&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Saudi%20Water%20Partnerships%20Company%20Forum%20and%20Awards%20Ceremony%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Fairmont%20-%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-12-01T09%3A20%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-saudi-water-partnerships-company-forum-and-awards-ceremony.html"
     },
     {
+      "id": "event-consumer-trade-fair",
+      "title": "Consumer Trade Fair",
+      "city": "الظهران",
+      "venue": "Dhahran Expo",
+      "organizer": "Al-Baraa Muhammed Bin Abdullah Al-Duaij Establishment for Organizing Exhibitions & Conferences",
+      "category": "معارض وتجارية",
+      "starts_at": "2026-12-02T09:00:00+03:00",
+      "ends_at": "2026-12-09T18:00:00+03:00",
+      "detail_url": "./events/event-consumer-trade-fair.html",
+      "calendar_url": "./events/event-consumer-trade-fair.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Dhahran%20Expo%20Dhahran",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa",
+      "evidence_url": "https://dhahranexpo.com.sa",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-12-02T09:00:00+03:00",
+        "ends_at": "2026-12-09T18:00:00+03:00",
+        "room": "Dhahran Expo",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Consumer%20Trade%20Fair&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Consumer%20Trade%20Fair%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Dhahran%20Expo%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-12-02T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-consumer-trade-fair.html"
+    },
+    {
       "id": "event-soundstorm-26",
       "title": "SOUNDSTORM 26",
       "city": "الرياض",
@@ -6843,6 +7617,52 @@
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20SOUNDSTORM%2026&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20SOUNDSTORM%2026%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-12-03T00%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-soundstorm-26.html"
+    },
+    {
+      "id": "event-dirayah-forum",
+      "title": "Dirayah Forum",
+      "city": "الظهران",
+      "venue": "Dhahran Expo",
+      "organizer": "Princess Seetah Bint Abdulaziz Award Association",
+      "category": "جوائز وتكريم",
+      "starts_at": "2026-12-05T09:00:00+03:00",
+      "ends_at": "2026-12-07T18:00:00+03:00",
+      "detail_url": "./events/event-dirayah-forum.html",
+      "calendar_url": "./events/event-dirayah-forum.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Dhahran%20Expo%20Dhahran",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa",
+      "evidence_url": "https://dhahranexpo.com.sa",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-12-05T09:00:00+03:00",
+        "ends_at": "2026-12-07T18:00:00+03:00",
+        "room": "Dhahran Expo",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Dirayah%20Forum&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Dirayah%20Forum%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Dhahran%20Expo%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-12-05T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-dirayah-forum.html"
     },
     {
       "id": "event-global-prize-for-innovation-in-water",
@@ -6937,6 +7757,52 @@
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20The%20Global%20Water%20Sustainability%20Conference%202026&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20The%20Global%20Water%20Sustainability%20Conference%202026%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%AC%D8%AF%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Jeddah-The%20Ritz-Carlton%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-12-07T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-the-global-water-sustainability-conference-2026.html"
     },
     {
+      "id": "event-emtec-the-environmental-management-technology-exhibitions-conference",
+      "title": "EMTEC – The Environmental Management & Technology Exhibitions & Conference",
+      "city": "الظهران",
+      "venue": "Dhahran Expo",
+      "organizer": "AYM Events",
+      "category": "مؤتمرات ومنتديات",
+      "starts_at": "2026-12-07T09:00:00+03:00",
+      "ends_at": "2026-12-09T18:00:00+03:00",
+      "detail_url": "./events/event-emtec-the-environmental-management-technology-exhibitions-conference.html",
+      "calendar_url": "./events/event-emtec-the-environmental-management-technology-exhibitions-conference.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Dhahran%20Expo%20Dhahran",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa",
+      "evidence_url": "https://dhahranexpo.com.sa",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-12-07T09:00:00+03:00",
+        "ends_at": "2026-12-09T18:00:00+03:00",
+        "room": "Dhahran Expo",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20EMTEC%20%E2%80%93%20The%20Environmental%20Management%20%26%20Technology%20Exhibitions%20%26%20Conference&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20EMTEC%20%E2%80%93%20The%20Environmental%20Management%20%26%20Technology%20Exhibitions%20%26%20Conference%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Dhahran%20Expo%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-12-07T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-emtec-the-environmental-management-technology-exhibitions-conference.html"
+    },
+    {
       "id": "event-pfl-mena-final",
       "title": "PFL Mena Final",
       "city": "الظهران",
@@ -6983,6 +7849,52 @@
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20PFL%20Mena%20Final&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20PFL%20Mena%20Final%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Dhahran%20Expo%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-12-11T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-pfl-mena-final.html"
     },
     {
+      "id": "event-saudi-intl-construction-interior-design-cidex-2026",
+      "title": "Saudi Int’l Construction & Interior Design CIDEX 2026",
+      "city": "الظهران",
+      "venue": "Dhahran Expo",
+      "organizer": "Creative XP",
+      "category": "معارض وتجارية",
+      "starts_at": "2026-12-14T09:00:00+03:00",
+      "ends_at": "2026-12-17T18:00:00+03:00",
+      "detail_url": "./events/event-saudi-intl-construction-interior-design-cidex-2026.html",
+      "calendar_url": "./events/event-saudi-intl-construction-interior-design-cidex-2026.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Dhahran%20Expo%20Dhahran",
+      "source_label": "Dhahran Expo Calendar",
+      "source_url": "https://dhahranexpo.com.sa",
+      "evidence_url": "https://dhahranexpo.com.sa",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-12-14T09:00:00+03:00",
+        "ends_at": "2026-12-17T18:00:00+03:00",
+        "room": "Dhahran Expo",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Saudi%20Int%E2%80%99l%20Construction%20%26%20Interior%20Design%20CIDEX%202026&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Saudi%20Int%E2%80%99l%20Construction%20%26%20Interior%20Design%20CIDEX%202026%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Dhahran%20Expo%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-12-14T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-saudi-intl-construction-interior-design-cidex-2026.html"
+    },
+    {
       "id": "event-ctw-global-ksa-gulf-4p-mach-tools",
       "title": "CTW Global KSA, Gulf 4P & Mach Tools",
       "city": "الظهران",
@@ -7027,6 +7939,52 @@
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20CTW%20Global%20KSA%2C%20Gulf%204P%20%26%20Mach%20Tools&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20CTW%20Global%20KSA%2C%20Gulf%204P%20%26%20Mach%20Tools%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Dhahran%20Expo%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-12-14T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-ctw-global-ksa-gulf-4p-mach-tools.html"
+    },
+    {
+      "id": "event-china-homelife-saudi-arabia-2026",
+      "title": "China Homelife Saudi Arabia 2026",
+      "city": "الرياض",
+      "venue": "Riyadh Front Exhibition & Conference Center",
+      "organizer": "Riyadh Front Exhibition & Conference Center",
+      "category": "معارض وتجارية",
+      "starts_at": "2026-12-20T09:00:00+03:00",
+      "ends_at": "2026-12-22T18:00:00+03:00",
+      "detail_url": "./events/event-china-homelife-saudi-arabia-2026.html",
+      "calendar_url": "./events/event-china-homelife-saudi-arabia-2026.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Riyadh%20Front%20Exhibition%20%26%20Conference%20Center%20Riyadh",
+      "source_label": "RFECC What's On",
+      "source_url": "https://rfecc.sa/events/china-homelife-saudi-arabia-2026/",
+      "evidence_url": "https://rfecc.sa/events/china-homelife-saudi-arabia-2026/",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-12-20T09:00:00+03:00",
+        "ends_at": "2026-12-22T18:00:00+03:00",
+        "room": "Riyadh Front Exhibition & Conference Center",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20China%20Homelife%20Saudi%20Arabia%202026&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20China%20Homelife%20Saudi%20Arabia%202026%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%20Front%20Exhibition%20%26%20Conference%20Center%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-12-20T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-china-homelife-saudi-arabia-2026.html"
     },
     {
       "id": "event-معرض-وظائف-2026",

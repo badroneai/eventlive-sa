@@ -8,6 +8,11 @@
   "source_label": "Jazan Chamber Events",
   "source_url": "https://events.jazancci.org.sa/index.php/ar/التصنيفات/ندوات-وورش-عمل/255-فن-التعامل-مع-كبار-الشخصيات-والمشاهير",
   "evidence_url": "https://events.jazancci.org.sa/index.php/ar/التصنيفات/ندوات-وورش-عمل/255-فن-التعامل-مع-كبار-الشخصيات-والمشاهير",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
   "city": "جازان",
   "venue": "مسرح الغرفة",
   "venue_address": "مسرح الغرفة",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/ورشة-فن-التعامل-مع-كبار-الشخصيات-والمشاهير-2c606f48d9.jpg",
   "image_alt": "ورشة \"فن التعامل مع كبار الشخصيات والمشاهير\"",
@@ -93,7 +101,13 @@
     "location": {
       "@type": "Place",
       "name": "مسرح الغرفة",
-      "address": "مسرح الغرفة"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "مسرح الغرفة",
+        "addressLocality": "جازان",
+        "addressRegion": "منطقة جازان",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

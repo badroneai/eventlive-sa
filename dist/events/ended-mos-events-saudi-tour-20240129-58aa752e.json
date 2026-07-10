@@ -8,6 +8,11 @@
   "source_label": "Ministry of Sport Events",
   "source_url": "https://www.mos.gov.sa/en/media/events/2024/10/03/saudi-tour",
   "evidence_url": "https://www.mos.gov.sa/en/media/events/2024/10/03/saudi-tour",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
   "city": "العلا",
   "venue": "AlUla",
   "venue_address": "AlUla",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-covers/ended-mos-events-saudi-tour-20240129-58aa752e.svg",
   "image_alt": "غلاف EventLive لفعالية Saudi Tour",
@@ -70,7 +78,13 @@
     "location": {
       "@type": "Place",
       "name": "AlUla",
-      "address": "AlUla"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "AlUla",
+        "addressLocality": "العلا",
+        "addressRegion": "منطقة المدينة المنورة",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

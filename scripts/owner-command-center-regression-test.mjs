@@ -40,6 +40,9 @@ assert(commandCenter.gates.some((gate) => gate.name === 'Analytics'), 'analytics
 assert(commandCenter.gates.some((gate) => gate.name === 'Harvest OS'), 'harvest gate missing');
 assert(commandCenter.gates.some((gate) => gate.name === 'Design OS'), 'design gate missing');
 assert(commandCenter.gates.some((gate) => gate.name === '23-Gate Delivery Standard'), '23-gate delivery standard missing');
+assert(commandCenter.gates.some((gate) => gate.name === 'National Coverage'), 'national coverage gate missing');
+assert(typeof commandCenter.totals?.national_coverage_score === 'number', 'national coverage score missing');
+assert(commandCenter.totals?.active_regions + commandCenter.totals?.zero_active_regions === 13, 'regional totals must reconcile');
 
 const analytics = readJson('reports/analytics-status.json');
 const analyticsMd = fs.readFileSync(path.join(reportsDir, 'analytics-status.md'), 'utf8');

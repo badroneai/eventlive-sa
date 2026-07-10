@@ -8,6 +8,11 @@
   "source_label": "MDLBEAST Events",
   "source_url": "https://mdlbeast.com/events/mdlbeast-presents-aravia",
   "evidence_url": "https://mdlbeast.com/events/mdlbeast-presents-aravia",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-05T05:49:40.389Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 118,
   "city": "الرياض",
   "venue": "Doha",
   "venue_address": "Doha",
@@ -19,6 +24,9 @@
   "event_kind_label": "برنامج ممتد",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-covers/ended-mdlbeast-events-mdlbeast-presents-aravia-20221121-3e0cbb0b.svg",
   "image_alt": "غلاف EventLive لفعالية MDLBEAST Presents Aravia",
@@ -75,7 +83,13 @@
     "location": {
       "@type": "Place",
       "name": "Doha",
-      "address": "Doha"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Doha",
+        "addressLocality": "الرياض",
+        "addressRegion": "منطقة الرياض",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

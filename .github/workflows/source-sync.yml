@@ -40,6 +40,9 @@ jobs:
       - name: Install Playwright browser
         run: npx playwright install chromium
 
+      - name: Install Arabic poster OCR
+        run: sudo apt-get update && sudo apt-get install -y tesseract-ocr tesseract-ocr-ara
+
       - name: Collect trusted sources and publish catalog
         run: npm run sources:sync
 
@@ -49,6 +52,9 @@ jobs:
           npm run test:csv
           npm run test:source-auto-publish
           npm run test:source-sync-pipeline
+          npm run test:source-selection-contract
+          npm run test:poster-ocr
+          npm run test:regional-chamber-extractors
           npm run test:backlog-enrichment
           npm run test:single-session-activation
           npm run test:live-operational-feeds
@@ -98,6 +104,8 @@ jobs:
             reports/mygov-*.md
             reports/mygov-*.json
             data/raw/mygov-wayback-radar/**
+            data/raw/source-snapshots/**
+            data/raw/source-yield-snapshots/**
             data/source_candidates.json
             data/source_run_state.json
             data/events_catalog.json

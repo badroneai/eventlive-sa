@@ -8,6 +8,11 @@
   "source_label": "Misk Hub Events",
   "source_url": "https://hub.misk.org.sa/en/events/skills/how-to-choose-your-career-path-and-keep-up-with-labor-market-change/",
   "evidence_url": "https://hub.misk.org.sa/en/events/skills/how-to-choose-your-career-path-and-keep-up-with-labor-market-change/",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
   "city": "السعودية",
   "venue": "Offline",
   "venue_address": "Offline",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-covers/ended-misk-hub-events-how-to-choose-your-career-path-and-keep-up-with-labor-market-changes-20260508-4ea5dc0d.svg",
   "image_alt": "غلاف EventLive لفعالية How to Choose Your Career Path and Keep Up with Labor Market Changes",
@@ -83,7 +91,12 @@
     "location": {
       "@type": "Place",
       "name": "Offline",
-      "address": "Offline"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Offline",
+        "addressLocality": "السعودية",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

@@ -34,6 +34,11 @@ assert.match(html, /visibleRows = rows\.slice\(0, visibleLimit\)/, 'events.html 
 assert.match(html, /controls\.loadMore\.addEventListener\('click'/, 'events.html must let users load more matching events');
 assert.match(html, /id="catalogMetricEvents"/, 'events.html must expose data-driven catalog metrics');
 assert.match(html, /function updateCatalogMetrics\(\)/, 'events.html must refresh catalog metrics from events.json');
+assert.match(html, /<div class="label">الجلسات الرسمية<\/div>/, 'events.html must label only official sessions as sessions');
+assert.match(html, /<div class="label">أجندات متعددة الجلسات<\/div>/, 'events.html must distinguish multi-session agendas from generic schedules');
+assert.match(html, /Number\(event\.official_sessions_count \|\| 0\)/, 'events.html must count verified official sessions');
+assert.match(html, /events\.filter\(\(event\) => event\.agenda_ready\)\.length/, 'events.html must count only multi-session agendas');
+assert.doesNotMatch(html, /Array\.isArray\(event\.sessions\) \? event\.sessions\.length/, 'events.html must not count attendance windows or opening hours as sessions');
 assert.match(html, /updateCatalogMetrics\(\);\s*setupFilters\(\);/s, 'events.html must refresh metrics before rendering filters');
 assert.doesNotMatch(serviceWorker, /"\.\/events\.json"/, 'service worker must not promote owner-only events.json through public precache');
 

@@ -7,7 +7,7 @@ X-WR-CALNAME:ترفيه وعائلات | EventLive
 X-WR-TIMEZONE:Asia/Riyadh
 BEGIN:VEVENT
 UID:event-poppy-playtime@eventme.live
-DTSTAMP:20260710T023614Z
+DTSTAMP:20260710T035904Z
 DTSTART:20251010T130000Z
 DTEND:20261208T205900Z
 SUMMARY:Poppy Playtime
@@ -17,7 +17,7 @@ URL:https://eventme.live/events/event-poppy-playtime.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-the-groves@eventme.live
-DTSTAMP:20260710T023614Z
+DTSTAMP:20260710T035904Z
 DTSTART:20251105T130000Z
 DTEND:20260718T230000Z
 SUMMARY:The Groves
@@ -27,7 +27,7 @@ URL:https://eventme.live/events/event-the-groves.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-summer-camp-at-the-national-museum-summer-wonders@eventme.live
-DTSTAMP:20260710T023614Z
+DTSTAMP:20260710T035904Z
 DTSTART:20260625T113000Z
 DTEND:20260822T173000Z
 SUMMARY:Summer Camp at the National Museum: Summer Wonders
@@ -37,7 +37,7 @@ URL:https://eventme.live/events/event-summer-camp-at-the-national-museum-summer-
 END:VEVENT
 BEGIN:VEVENT
 UID:event-kashtah@eventme.live
-DTSTAMP:20260710T023614Z
+DTSTAMP:20260710T035904Z
 DTSTART:20260627T130000Z
 DTEND:20260830T210000Z
 SUMMARY:Kashtah
@@ -46,8 +46,18 @@ LOCATION:Aseer
 URL:https://eventme.live/events/event-kashtah.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-مهرجان-صيف-نجران-2026-صيفنا-هايل@eventme.live
+DTSTAMP:20260710T035904Z
+DTSTART:20260706T210000Z
+DTEND:20260805T205900Z
+SUMMARY:مهرجان صيف نجران 2026 «صيفنا هايل»
+DESCRIPTION:برعاية صاحب السمو الأمير جلوي بن عبدالعزيز بن مساعد، أمير منطقة نجران، تطلق أمانة المنطقة، غدًا، مهرجان "صيف نجران 2026" تحت شعار "صيفنا هايل"، ويستمر لمدة 30 يومًا؛ موزعًا على 11 موقعًا داخل مدينة نجران، وذلك ضمن جهود الأمانة لتنشيط الحركة السياحية والترفيهية، وإثراء جودة الحياة وتوفير برامج تلبي اهتمامات مختلف فئات المجتمع. وتتوزع فعاليات المهرجان على عددٍ من المواقع الحيوية، تشمل متنز
+LOCATION:11 موقعًا في مدينة نجران
+URL:https://eventme.live/events/event-مهرجان-صيف-نجران-2026-صيفنا-هايل.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-unstable@eventme.live
-DTSTAMP:20260710T023614Z
+DTSTAMP:20260710T035904Z
 DTSTART:20260709T210000Z
 DTEND:20260710T210000Z
 SUMMARY:Unstable
@@ -57,7 +67,7 @@ URL:https://eventme.live/events/event-unstable.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-beast-house@eventme.live
-DTSTAMP:20260710T023614Z
+DTSTAMP:20260710T035904Z
 DTSTART:20260710T180000Z
 DTEND:20260711T000000Z
 SUMMARY:Beast House
@@ -67,7 +77,7 @@ URL:https://eventme.live/events/event-beast-house.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-mishkat-summer-camp@eventme.live
-DTSTAMP:20260710T023614Z
+DTSTAMP:20260710T035904Z
 DTSTART:20260712T060000Z
 DTEND:20260806T100000Z
 SUMMARY:Mishkat Summer Camp
@@ -77,7 +87,7 @@ URL:https://eventme.live/events/event-mishkat-summer-camp.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-wrth-summer-art-craft-program@eventme.live
-DTSTAMP:20260710T023614Z
+DTSTAMP:20260710T035904Z
 DTSTART:20260716T123000Z
 DTEND:20260718T193000Z
 SUMMARY:Wrth Summer Art & Craft Program
@@ -87,7 +97,7 @@ URL:https://eventme.live/events/event-wrth-summer-art-craft-program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-international-falcon-breeders-auction@eventme.live
-DTSTAMP:20260710T023614Z
+DTSTAMP:20260710T035904Z
 DTSTART:20260805T130000Z
 DTEND:20260825T200000Z
 SUMMARY:International Falcon Breeders Auction
@@ -97,7 +107,7 @@ URL:https://eventme.live/events/event-international-falcon-breeders-auction.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-leap-2026@eventme.live
-DTSTAMP:20260710T023614Z
+DTSTAMP:20260710T035904Z
 DTSTART:20260831T060000Z
 DTEND:20260903T140000Z
 SUMMARY:LEAP 2026
@@ -107,7 +117,7 @@ URL:https://eventme.live/events/event-leap-2026.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-fibo-arabia-2026@eventme.live
-DTSTAMP:20260710T023614Z
+DTSTAMP:20260710T035904Z
 DTSTART:20260908T100000Z
 DTEND:20260910T190000Z
 SUMMARY:FIBO Arabia 2026
@@ -117,7 +127,7 @@ URL:https://eventme.live/events/event-fibo-arabia-2026.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-national-day@eventme.live
-DTSTAMP:20260710T023614Z
+DTSTAMP:20260710T035904Z
 DTSTART:20260923T060000Z
 DTEND:20260923T150000Z
 SUMMARY:Saudi National Day
@@ -127,7 +137,7 @@ URL:https://eventme.live/events/event-saudi-national-day.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-international-falcons-hunting-exhibition@eventme.live
-DTSTAMP:20260710T023614Z
+DTSTAMP:20260710T035904Z
 DTSTART:20261001T110000Z
 DTEND:20261010T190000Z
 SUMMARY:Saudi International Falcons & Hunting Exhibition
@@ -137,7 +147,7 @@ URL:https://eventme.live/events/event-saudi-international-falcons-hunting-exhibi
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-falcons-club-auction@eventme.live
-DTSTAMP:20260710T023614Z
+DTSTAMP:20260710T035904Z
 DTSTART:20261001T160000Z
 DTEND:20261130T200000Z
 SUMMARY:Saudi Falcons Club Auction
@@ -147,7 +157,7 @@ URL:https://eventme.live/events/event-saudi-falcons-club-auction.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-al-milwah-falcon-race@eventme.live
-DTSTAMP:20260710T023614Z
+DTSTAMP:20260710T035904Z
 DTSTART:20261004T160000Z
 DTEND:20261008T210000Z
 SUMMARY:Al Milwah Falcon Race
@@ -157,7 +167,7 @@ URL:https://eventme.live/events/event-al-milwah-falcon-race.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-a-thousand-and-one@eventme.live
-DTSTAMP:20260710T023614Z
+DTSTAMP:20260710T035904Z
 DTSTART:20261028T210000Z
 DTEND:20261029T210000Z
 SUMMARY:A Thousand and One
@@ -167,7 +177,7 @@ URL:https://eventme.live/events/event-a-thousand-and-one.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-xp-music-futures-2026@eventme.live
-DTSTAMP:20260710T023614Z
+DTSTAMP:20260710T035904Z
 DTSTART:20261125T210000Z
 DTEND:20261127T210000Z
 SUMMARY:XP Music Futures 2026
@@ -177,7 +187,7 @@ URL:https://eventme.live/events/event-xp-music-futures-2026.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-soundstorm-26@eventme.live
-DTSTAMP:20260710T023614Z
+DTSTAMP:20260710T035904Z
 DTSTART:20261202T210000Z
 DTEND:20261203T210000Z
 SUMMARY:SOUNDSTORM 26
@@ -187,7 +197,7 @@ URL:https://eventme.live/events/event-soundstorm-26.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-founding-day@eventme.live
-DTSTAMP:20260710T023614Z
+DTSTAMP:20260710T035904Z
 DTSTART:20270222T060000Z
 DTEND:20270222T150000Z
 SUMMARY:Founding Day
@@ -197,7 +207,7 @@ URL:https://eventme.live/events/event-founding-day.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-eid-al-fitr@eventme.live
-DTSTAMP:20260710T023614Z
+DTSTAMP:20260710T035904Z
 DTSTART:20270330T060000Z
 DTEND:20270330T150000Z
 SUMMARY:Eid Al-Fitr
@@ -207,7 +217,7 @@ URL:https://eventme.live/events/event-eid-al-fitr.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-eid-al-adha@eventme.live
-DTSTAMP:20260710T023614Z
+DTSTAMP:20260710T035904Z
 DTSTART:20270606T060000Z
 DTEND:20270610T150000Z
 SUMMARY:Eid Al-Adha

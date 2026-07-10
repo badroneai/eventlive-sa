@@ -8,6 +8,11 @@
   "source_label": "Dhahran Expo Calendar",
   "source_url": "https://dhahranexpo.com.sa",
   "evidence_url": "https://dhahranexpo.com.sa",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-venue-official",
+  "freshness_hours": 1,
   "city": "الظهران",
   "venue": "Dhahran Expo",
   "venue_address": "Dhahran Expo",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-covers/ended-dhahran-expo-calendar-offer-home-expo-20260108-18d15b29.svg",
   "image_alt": "غلاف EventLive لفعالية Heavy Equipment Connect",
@@ -72,7 +80,13 @@
     "location": {
       "@type": "Place",
       "name": "Dhahran Expo",
-      "address": "Dhahran Expo"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Dhahran Expo",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

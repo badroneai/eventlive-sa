@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T02:36:14.055Z",
+  "generated_at": "2026-07-10T03:59:04.097Z",
   "platform": "EventLive",
   "feeds": [
     {
@@ -15,7 +15,7 @@
       "slug": "city-riyadh",
       "title": "فعاليات الرياض | EventLive",
       "description": "تغذية فعاليات الرياض القادمة والجارية من EventLive.",
-      "count": 98,
+      "count": 97,
       "ics_url": "./feeds/city-riyadh.ics",
       "rss_url": "./feeds/city-riyadh.xml",
       "json_url": "./feeds/city-riyadh.json"
@@ -46,6 +46,15 @@
       "ics_url": "./feeds/city-aseer.ics",
       "rss_url": "./feeds/city-aseer.xml",
       "json_url": "./feeds/city-aseer.json"
+    },
+    {
+      "slug": "city-najran",
+      "title": "فعاليات نجران | EventLive",
+      "description": "تغذية فعاليات نجران القادمة والجارية من EventLive.",
+      "count": 1,
+      "ics_url": "./feeds/city-najran.ics",
+      "rss_url": "./feeds/city-najran.xml",
+      "json_url": "./feeds/city-najran.json"
     },
     {
       "slug": "city-jeddah",
@@ -111,6 +120,15 @@
       "json_url": "./feeds/city-global.json"
     },
     {
+      "slug": "city-tabuk",
+      "title": "فعاليات تبوك | EventLive",
+      "description": "تغذية فعاليات تبوك القادمة والجارية من EventLive.",
+      "count": 0,
+      "ics_url": "./feeds/city-tabuk.ics",
+      "rss_url": "./feeds/city-tabuk.xml",
+      "json_url": "./feeds/city-tabuk.json"
+    },
+    {
       "slug": "city-buraydah",
       "title": "فعاليات بريدة | EventLive",
       "description": "تغذية فعاليات بريدة القادمة والجارية من EventLive.",
@@ -118,6 +136,15 @@
       "ics_url": "./feeds/city-buraydah.ics",
       "rss_url": "./feeds/city-buraydah.xml",
       "json_url": "./feeds/city-buraydah.json"
+    },
+    {
+      "slug": "city-arar",
+      "title": "فعاليات عرعر | EventLive",
+      "description": "تغذية فعاليات عرعر القادمة والجارية من EventLive.",
+      "count": 0,
+      "ics_url": "./feeds/city-arar.ics",
+      "rss_url": "./feeds/city-arar.xml",
+      "json_url": "./feeds/city-arar.json"
     },
     {
       "slug": "city-makkah",
@@ -165,6 +192,15 @@
       "json_url": "./feeds/city-qatif.json"
     },
     {
+      "slug": "city-rafha",
+      "title": "فعاليات رفحاء | EventLive",
+      "description": "تغذية فعاليات رفحاء القادمة والجارية من EventLive.",
+      "count": 0,
+      "ics_url": "./feeds/city-rafha.ics",
+      "rss_url": "./feeds/city-rafha.xml",
+      "json_url": "./feeds/city-rafha.json"
+    },
+    {
       "slug": "city-abha",
       "title": "فعاليات أبها | EventLive",
       "description": "تغذية فعاليات أبها القادمة والجارية من EventLive.",
@@ -195,7 +231,7 @@
       "slug": "category-entertainment-families",
       "title": "ترفيه وعائلات | EventLive",
       "description": "تغذية فعاليات تصنيف ترفيه وعائلات القادمة والجارية من EventLive.",
-      "count": 21,
+      "count": 22,
       "ics_url": "./feeds/category-entertainment-families.ics",
       "rss_url": "./feeds/category-entertainment-families.xml",
       "json_url": "./feeds/category-entertainment-families.json"
@@ -264,15 +300,6 @@
       "json_url": "./feeds/category-education-community.json"
     },
     {
-      "slug": "category-conference-forum",
-      "title": "مؤتمرات ومنتديات | EventLive",
-      "description": "تغذية فعاليات تصنيف مؤتمرات ومنتديات القادمة والجارية من EventLive.",
-      "count": 17,
-      "ics_url": "./feeds/category-conference-forum.ics",
-      "rss_url": "./feeds/category-conference-forum.xml",
-      "json_url": "./feeds/category-conference-forum.json"
-    },
-    {
       "slug": "category-chamber-event",
       "title": "فعاليات الغرف التجارية | EventLive",
       "description": "تغذية فعاليات تصنيف فعاليات الغرف التجارية القادمة والجارية من EventLive.",
@@ -280,6 +307,15 @@
       "ics_url": "./feeds/category-chamber-event.ics",
       "rss_url": "./feeds/category-chamber-event.xml",
       "json_url": "./feeds/category-chamber-event.json"
+    },
+    {
+      "slug": "category-conference-forum",
+      "title": "مؤتمرات ومنتديات | EventLive",
+      "description": "تغذية فعاليات تصنيف مؤتمرات ومنتديات القادمة والجارية من EventLive.",
+      "count": 16,
+      "ics_url": "./feeds/category-conference-forum.ics",
+      "rss_url": "./feeds/category-conference-forum.xml",
+      "json_url": "./feeds/category-conference-forum.json"
     },
     {
       "slug": "category-awards-ceremonies",
@@ -312,7 +348,7 @@
       "slug": "for-professionals",
       "title": "موظفون ومهنيون | EventLive",
       "description": "تغذية فعاليات مناسبة لفئة موظفون ومهنيون من EventLive.",
-      "count": 88,
+      "count": 87,
       "ics_url": "./feeds/for-professionals.ics",
       "rss_url": "./feeds/for-professionals.xml",
       "json_url": "./feeds/for-professionals.json"
@@ -321,7 +357,7 @@
       "slug": "for-tech",
       "title": "تقنيون | EventLive",
       "description": "تغذية فعاليات مناسبة لفئة تقنيون من EventLive.",
-      "count": 45,
+      "count": 44,
       "ics_url": "./feeds/for-tech.ics",
       "rss_url": "./feeds/for-tech.xml",
       "json_url": "./feeds/for-tech.json"
@@ -357,7 +393,7 @@
       "slug": "for-families",
       "title": "عائلات وأطفال | EventLive",
       "description": "تغذية فعاليات مناسبة لفئة عائلات وأطفال من EventLive.",
-      "count": 38,
+      "count": 39,
       "ics_url": "./feeds/for-families.ics",
       "rss_url": "./feeds/for-families.xml",
       "json_url": "./feeds/for-families.json"
@@ -375,7 +411,7 @@
       "slug": "for-creatives",
       "title": "مبدعون وفنون | EventLive",
       "description": "تغذية فعاليات مناسبة لفئة مبدعون وفنون من EventLive.",
-      "count": 79,
+      "count": 80,
       "ics_url": "./feeds/for-creatives.ics",
       "rss_url": "./feeds/for-creatives.xml",
       "json_url": "./feeds/for-creatives.json"

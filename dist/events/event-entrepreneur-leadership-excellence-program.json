@@ -8,6 +8,11 @@
   "source_label": "Misk Hub Programs",
   "source_url": "https://hub.misk.org.sa/programs/entrepreneurship/entrepreneur-leadership-excellence-program/",
   "evidence_url": "https://hub.misk.org.sa/programs/entrepreneurship/entrepreneur-leadership-excellence-program/",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T03:51:41.104Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
   "city": "السعودية",
   "venue": "In-Person",
   "venue_address": "In-Person",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/entrepreneur-leadership-excellence-program-01356b9cea.png",
   "image_alt": "Entrepreneur Leadership Excellence Program",
@@ -87,7 +95,12 @@
     "location": {
       "@type": "Place",
       "name": "In-Person",
-      "address": "In-Person"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "In-Person",
+        "addressLocality": "السعودية",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

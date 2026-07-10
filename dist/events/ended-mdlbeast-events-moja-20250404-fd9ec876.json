@@ -8,6 +8,11 @@
   "source_label": "MDLBEAST Events",
   "source_url": "https://mdlbeast.com/events/moja",
   "evidence_url": "https://mdlbeast.com/events/moja",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
   "city": "جدة",
   "venue": "Jeddah",
   "venue_address": "Jeddah",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-covers/ended-mdlbeast-events-moja-20250404-fd9ec876.svg",
   "image_alt": "غلاف EventLive لفعالية Moja",
@@ -75,7 +83,13 @@
     "location": {
       "@type": "Place",
       "name": "Jeddah",
-      "address": "Jeddah"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jeddah",
+        "addressLocality": "جدة",
+        "addressRegion": "منطقة مكة المكرمة",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

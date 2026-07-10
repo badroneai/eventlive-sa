@@ -8,6 +8,11 @@
   "source_label": "MDLBEAST Events",
   "source_url": "https://mdlbeast.com/events/aft-r",
   "evidence_url": "https://mdlbeast.com/events/aft-r",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
   "city": "الرياض",
   "venue": "Riyadh",
   "venue_address": "Riyadh",
@@ -19,6 +24,9 @@
   "event_kind_label": "برنامج ممتد",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-covers/ended-mdlbeast-events-aft-r-20250718-43c244be.svg",
   "image_alt": "غلاف EventLive لفعالية AFT_r",
@@ -75,7 +83,13 @@
     "location": {
       "@type": "Place",
       "name": "Riyadh",
-      "address": "Riyadh"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Riyadh",
+        "addressLocality": "الرياض",
+        "addressRegion": "منطقة الرياض",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

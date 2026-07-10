@@ -8,6 +8,11 @@
   "source_label": "Jazan Chamber Events",
   "source_url": "https://events.jazancci.org.sa/index.php/ar/%D8%A7%D9%84%D8%AA%D8%B5%D9%86%D9%8A%D9%81%D8%A7%D8%AA/%D9%86%D8%AF%D9%88%D8%A7%D8%AA-%D9%88%D9%88%D8%B1%D8%B4-%D8%B9%D9%85%D9%84/240-%D9%88%D8%B1%D8%B4%D8%A9-%D8%AA%D8%B9%D8%B1%D9%8A%D9%81%D9%8A%D8%A9-%D8%B9%D9",
   "evidence_url": "https://events.jazancci.org.sa/index.php/ar/%D8%A7%D9%84%D8%AA%D8%B5%D9%86%D9%8A%D9%81%D8%A7%D8%AA/%D9%86%D8%AF%D9%88%D8%A7%D8%AA-%D9%88%D9%88%D8%B1%D8%B4-%D8%B9%D9%85%D9%84/240-%D9%88%D8%B1%D8%B4%D8%A9-%D8%AA%D8%B9%D8%B1%D9%8A%D9%81%D9%8A%D8%A9-%D8%B9%D9",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
   "city": "جازان",
   "venue": "أكاديمية غرفة جازان",
   "venue_address": "أكاديمية غرفة جازان",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/ورشة-تعريفية-عن-نظام-الشركات-de87d5fb80.png",
   "image_alt": "ورشة تعريفية عن نظام الشركات",
@@ -73,7 +81,13 @@
     "location": {
       "@type": "Place",
       "name": "أكاديمية غرفة جازان",
-      "address": "أكاديمية غرفة جازان"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "أكاديمية غرفة جازان",
+        "addressLocality": "جازان",
+        "addressRegion": "منطقة جازان",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

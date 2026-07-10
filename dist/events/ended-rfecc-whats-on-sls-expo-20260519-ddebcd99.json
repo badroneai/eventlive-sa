@@ -1,13 +1,18 @@
 {
   "id": "ended-rfecc-whats-on-sls-expo-20260519-ddebcd99",
   "title": "SLS EXPO",
-  "summary": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات. SLS EXPO ضمن معارض وتجارية في الرياض. تبدأ الفعالية ١٩‏/٠٥‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٢١‏/٠٥‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تتوفر لها صفحة جدول حي تساعد الزائر على متابعة الحالة والوقت أثناء الحضور. المصدر: RFECC What's On.",
+  "summary": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات. SLS EXPO ضمن معارض وتجارية في الرياض. تبدأ الفعالية ١٩‏/٠٥‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٢١‏/٠٥‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: RFECC What's On.",
   "canonical_url": "https://eventme.live/events/ended-rfecc-whats-on-sls-expo-20260519-ddebcd99.html",
   "detail_url": "./events/ended-rfecc-whats-on-sls-expo-20260519-ddebcd99.html",
   "calendar_url": "./events/ended-rfecc-whats-on-sls-expo-20260519-ddebcd99.ics",
   "source_label": "RFECC What's On",
   "source_url": "https://rfecc.sa/events/sls-expo/",
   "evidence_url": "https://rfecc.sa/events/sls-expo/",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-venue-official",
+  "freshness_hours": 1,
   "city": "الرياض",
   "venue": "Riyadh Front Exhibition & Conference Center",
   "venue_address": "Riyadh Front Exhibition & Conference Center",
@@ -18,8 +23,11 @@
   "event_kind": "moment",
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
-  "live_schedule_ready": true,
-  "schedule_quality": "detailed",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-covers/ended-rfecc-whats-on-sls-expo-20260519-ddebcd99.svg",
   "image_alt": "غلاف EventLive لفعالية SLS EXPO",
   "category": "معارض وتجارية",
@@ -48,25 +56,11 @@
   ],
   "sessions": [
     {
-      "title": "ساعات الزيارة",
-      "starts_at": "2026-05-19T16:00:00+03:00",
-      "ends_at": "2026-05-19T22:00:00+03:00",
+      "title": "نافذة الحضور",
+      "starts_at": "2026-05-19T09:00:00+03:00",
+      "ends_at": "2026-05-21T18:00:00+03:00",
       "room": "Riyadh Front Exhibition & Conference Center",
-      "anchor": "#session-ended-rfecc-whats-on-sls-expo-20260519-ddebcd99-opening-hours-1"
-    },
-    {
-      "title": "ساعات الزيارة",
-      "starts_at": "2026-05-20T16:00:00+03:00",
-      "ends_at": "2026-05-20T22:00:00+03:00",
-      "room": "Riyadh Front Exhibition & Conference Center",
-      "anchor": "#session-ended-rfecc-whats-on-sls-expo-20260519-ddebcd99-opening-hours-2"
-    },
-    {
-      "title": "ساعات الزيارة",
-      "starts_at": "2026-05-21T16:00:00+03:00",
-      "ends_at": "2026-05-21T22:00:00+03:00",
-      "room": "Riyadh Front Exhibition & Conference Center",
-      "anchor": "#session-ended-rfecc-whats-on-sls-expo-20260519-ddebcd99-opening-hours-3"
+      "anchor": "#session-نافذة-الحضور"
     }
   ],
   "schema_org": {
@@ -80,7 +74,13 @@
     "location": {
       "@type": "Place",
       "name": "Riyadh Front Exhibition & Conference Center",
-      "address": "Riyadh Front Exhibition & Conference Center"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Riyadh Front Exhibition & Conference Center",
+        "addressLocality": "الرياض",
+        "addressRegion": "منطقة الرياض",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",
@@ -89,7 +89,7 @@
     "image": [
       "https://eventme.live/assets/event-covers/ended-rfecc-whats-on-sls-expo-20260519-ddebcd99.svg"
     ],
-    "description": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات. SLS EXPO ضمن معارض وتجارية في الرياض. تبدأ الفعالية ١٩‏/٠٥‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٢١‏/٠٥‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تتوفر لها صفحة جدول حي تساعد الزائر على متابعة الحالة والوقت أثناء الحضور. المصدر: RFECC What's On.",
+    "description": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات. SLS EXPO ضمن معارض وتجارية في الرياض. تبدأ الفعالية ١٩‏/٠٥‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٢١‏/٠٥‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: RFECC What's On.",
     "url": "https://eventme.live/events/ended-rfecc-whats-on-sls-expo-20260519-ddebcd99.html",
     "mainEntityOfPage": "https://eventme.live/events/ended-rfecc-whats-on-sls-expo-20260519-ddebcd99.html",
     "isAccessibleForFree": false,

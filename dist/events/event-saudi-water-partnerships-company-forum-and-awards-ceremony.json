@@ -8,6 +8,11 @@
   "source_label": "Saudi Water Authority Events",
   "source_url": "https://www.swa.gov.sa/en/events/Event-639161702137808713",
   "evidence_url": "https://www.swa.gov.sa/en/events/Event-639161702137808713",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T03:51:45.466Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
   "city": "الرياض",
   "venue": "Fairmont - Riyadh",
   "venue_address": "Fairmont - Riyadh",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/saudi-water-partnerships-company-forum-and-awards-ceremony-5e9d653040.jpg",
   "image_alt": "Saudi Water Partnerships Company Forum and Awards Ceremony",
@@ -72,7 +80,13 @@
     "location": {
       "@type": "Place",
       "name": "Fairmont - Riyadh",
-      "address": "Fairmont - Riyadh"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Fairmont - Riyadh",
+        "addressLocality": "الرياض",
+        "addressRegion": "منطقة الرياض",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

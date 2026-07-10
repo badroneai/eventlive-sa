@@ -8,6 +8,11 @@
   "source_label": "Asharqia Chamber Events",
   "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=344",
   "evidence_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=344",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T03:51:59.093Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
   "city": "الظهران",
   "venue": "شركة معارض الظهران الدولي",
   "venue_address": "شركة معارض الظهران الدولي",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-covers/event-معرض-وظائف-2026.svg",
   "image_alt": "غلاف EventLive لفعالية معرض وظائف 2026",
@@ -71,7 +79,13 @@
     "location": {
       "@type": "Place",
       "name": "شركة معارض الظهران الدولي",
-      "address": "شركة معارض الظهران الدولي"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "شركة معارض الظهران الدولي",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

@@ -101,6 +101,37 @@ fs.writeFileSync(catalogPath, `${JSON.stringify({
       }],
       source_file: '',
       tags: ['workshop']
+    },
+    {
+      id: 'event-provider-enriched-workshop',
+      slug: 'provider-enriched-workshop',
+      title: 'Provider Enriched Workshop',
+      organizer: 'Regression Authority',
+      city: 'Riyadh',
+      venue: 'Online',
+      venue_address: 'Online',
+      category: 'workshop',
+      summary: 'Existing row enriched from its official detail page.',
+      starts_at: '2026-12-08T14:30:00+03:00',
+      ends_at: '2026-12-08T16:00:00+03:00',
+      updated_at: '2026-07-03T00:00:00+03:00',
+      sessions_count: 0,
+      tracks_count: 0,
+      rooms_count: 0,
+      live_updates_count: 0,
+      approval_status: 'published',
+      published_by: 'EventLive Auto Publisher',
+      source_label: 'Regression Authority Events',
+      source_url: 'https://example.gov.sa/events/provider-enriched-workshop',
+      evidence_url: 'https://example.gov.sa/events/provider-enriched-workshop',
+      source_confidence: 'approved-source',
+      live_schedule_ready: false,
+      program_outline: {
+        provider: 'Regression Authority Events',
+        source_url: 'https://example.gov.sa/events/provider-enriched-workshop'
+      },
+      source_file: '',
+      tags: ['workshop']
     }
   ]
 }, null, 2)}\n`, 'utf8');
@@ -187,6 +218,31 @@ fs.writeFileSync(candidatesPath, `${JSON.stringify({
       tags: ['workshop']
     },
     {
+      id: 'candidate-provider-enriched-generic-window',
+      title: 'Provider Enriched Workshop',
+      organizer: 'Regression Authority',
+      city: 'Riyadh',
+      venue: 'Online',
+      category: 'workshop',
+      summary: 'Generic source-card window that must not replace detail enrichment.',
+      starts_at: '2026-12-08T09:00:00+03:00',
+      ends_at: '2026-12-08T18:00:00+03:00',
+      source_type: 'official-site',
+      source_url: 'https://example.gov.sa/events/provider-enriched-workshop',
+      source_label: 'Regression Authority Events',
+      source_owner: 'Regression Authority',
+      evidence_url: 'https://example.gov.sa/events/provider-enriched-workshop',
+      raw_snapshot_path: 'data/raw/source-snapshots/provider-enrichment-regression.html',
+      discovered_at: '2026-07-03T00:00:00+03:00',
+      discovery_method: 'official-calendar',
+      confidence: 'official',
+      review_status: 'ready-for-review',
+      publication_gate: 'auto-publish',
+      extracted_sessions_count: 0,
+      reviewer_notes: 'Provider enrichment preservation fixture.',
+      tags: ['workshop']
+    },
+    {
       id: 'candidate-official-image-preservation-title-variant',
       title: 'Image Preservation Official Workshop',
       organizer: 'Regression Authority',
@@ -237,7 +293,7 @@ const candidates = JSON.parse(fs.readFileSync(candidatesPath, 'utf8'));
 const candidate = candidates.candidates[0];
 
 if (
-  catalog.events.length !== 3
+  catalog.events.length !== 4
   || catalog.events.some((event) => event.id === 'event-invalid-auto-published')
   || candidate.matched_catalog_event_id !== 'event-saudi-national-day'
   || !/Published:\s*1/i.test(out)
@@ -252,6 +308,8 @@ const imageEvent = catalog.events.find((event) => event.title === 'Official Imag
 const sourceDateVariant = candidates.candidates.find((row) => row.id === 'candidate-official-image-preservation-title-variant');
 const preciseEvent = catalog.events.find((event) => event.id === 'event-official-precise-session');
 const preciseCandidate = candidates.candidates.find((row) => row.id === 'candidate-official-precise-session-generic-window');
+const providerEvent = catalog.events.find((event) => event.id === 'event-provider-enriched-workshop');
+const providerCandidate = candidates.candidates.find((row) => row.id === 'candidate-provider-enriched-generic-window');
 if (
   imageEvent?.image_url !== 'https://example.gov.sa/assets/workshop-cover.jpg'
   || imageEvent?.original_image_url !== 'https://example.gov.sa/assets/workshop-cover.jpg'
@@ -263,11 +321,21 @@ if (
 }
 
 if (
-  catalog.events.length !== 3
+  catalog.events.length !== 4
   || sourceDateVariant?.matched_catalog_event_id !== imageEvent.id
 ) {
   console.error('TEST_FAIL official source/date duplicate should link to the first published event');
   console.error(JSON.stringify({ catalog_events: catalog.events.length, sourceDateVariant }, null, 2));
+  process.exit(1);
+}
+
+if (
+  providerCandidate?.matched_catalog_event_id !== 'event-provider-enriched-workshop'
+  || providerEvent?.starts_at !== '2026-12-08T14:30:00+03:00'
+  || providerEvent?.ends_at !== '2026-12-08T16:00:00+03:00'
+) {
+  console.error('TEST_FAIL linked generic source row must not overwrite official provider enrichment');
+  console.error(JSON.stringify({ providerCandidate, providerEvent }, null, 2));
   process.exit(1);
 }
 

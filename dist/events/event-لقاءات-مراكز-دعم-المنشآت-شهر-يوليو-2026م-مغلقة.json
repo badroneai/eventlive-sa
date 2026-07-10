@@ -8,6 +8,11 @@
   "source_label": "Monsha'at All Events",
   "source_url": "http://www.monshaat.gov.sa/ar/node/487360",
   "evidence_url": "http://www.monshaat.gov.sa/ar/node/487360",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T03:51:59.093Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
   "city": "السعودية",
   "venue": "Monsha’at",
   "venue_address": "Monsha’at",
@@ -19,6 +24,9 @@
   "event_kind_label": "برنامج ممتد",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-covers/event-لقاءات-مراكز-دعم-المنشآت-شهر-يوليو-2026م-مغلقة.svg",
   "image_alt": "غلاف EventLive لفعالية لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)",
@@ -75,7 +83,12 @@
     "location": {
       "@type": "Place",
       "name": "Monsha’at",
-      "address": "Monsha’at"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Monsha’at",
+        "addressLocality": "السعودية",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

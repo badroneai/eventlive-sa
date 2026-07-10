@@ -8,6 +8,11 @@
   "source_label": "Ministry of Culture Commission Calendars",
   "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Culinary%20Manufacturing%20Hubs/EventDetail",
   "evidence_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Culinary%20Manufacturing%20Hubs/EventDetail",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T03:51:59.093Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
   "city": "السعودية",
   "venue": "Saudi Arabia",
   "venue_address": "Saudi Arabia",
@@ -19,6 +24,9 @@
   "event_kind_label": "برنامج ممتد",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/culinary-manufacturing-hubs-b74246d22a.png",
   "image_alt": "Culinary Manufacturing Hubs",
@@ -74,7 +82,12 @@
     "location": {
       "@type": "Place",
       "name": "Saudi Arabia",
-      "address": "Saudi Arabia"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Saudi Arabia",
+        "addressLocality": "السعودية",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

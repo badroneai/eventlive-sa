@@ -8,6 +8,11 @@
   "source_label": "Jeddah Chamber Exhibitions and Events Center",
   "source_url": "https://www.jcci.org.sa/en/المعارض-والفعاليات",
   "evidence_url": "https://www.jcci.org.sa/en/المعارض-والفعاليات",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-venue-official",
+  "freshness_hours": 1,
   "city": "جدة",
   "venue": "Jeddah Forums and Events Center",
   "venue_address": "Jeddah Forums and Events Center",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-covers/ended-jcci-events-center-break-out-beat-2-20230928-6f454365.svg",
   "image_alt": "غلاف EventLive لفعالية Comic Con Arabia Event",
@@ -67,7 +75,13 @@
     "location": {
       "@type": "Place",
       "name": "Jeddah Forums and Events Center",
-      "address": "Jeddah Forums and Events Center"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jeddah Forums and Events Center",
+        "addressLocality": "جدة",
+        "addressRegion": "منطقة مكة المكرمة",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

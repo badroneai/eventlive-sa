@@ -8,6 +8,11 @@
   "source_label": "Saudi Space Agency Events",
   "source_url": "https://ssa.gov.sa/en/events/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%AF%D9%81%D8%A7%D8%B9-2022/",
   "evidence_url": "https://ssa.gov.sa/en/events/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%AF%D9%81%D8%A7%D8%B9-2022/",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
   "city": "الرياض",
   "venue": "Riyadh, Saudi Arabia",
   "venue_address": "Riyadh, Saudi Arabia",
@@ -19,6 +24,9 @@
   "event_kind_label": "برنامج ممتد",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/world-defense-show-2022-8e60dabcc1.webp",
   "image_alt": "World Defense Show 2022",
@@ -78,7 +86,13 @@
     "location": {
       "@type": "Place",
       "name": "Riyadh, Saudi Arabia",
-      "address": "Riyadh, Saudi Arabia"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Riyadh, Saudi Arabia",
+        "addressLocality": "الرياض",
+        "addressRegion": "منطقة الرياض",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

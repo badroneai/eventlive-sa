@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-07-10T02:36:14.055Z",
+  "generated_at": "2026-07-10T03:59:04.097Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "audiences_count": 12,
   "totals": {
-    "events": 435,
+    "events": 441,
     "upcoming_or_active": 160,
-    "ended": 275,
-    "live_ready": 51
+    "ended": 281,
+    "live_ready": 15
   },
   "audiences": [
     {
       "slug": "professionals",
       "label": "موظفون ومهنيون",
       "url": "./for/professionals.html",
-      "total_events": 214,
-      "upcoming_or_active": 88,
-      "ended": 126,
-      "live_ready": 46,
+      "total_events": 215,
+      "upcoming_or_active": 87,
+      "ended": 128,
+      "live_ready": 10,
       "sources": [
         "Abha Chamber Events",
         "Asharqia Chamber Events",
@@ -33,6 +33,7 @@
         "Misk Hub Events",
         "Misk Hub Programs",
         "Monsha'at All Events",
+        "Northern Borders Chamber Events",
         "Qassim Chamber Events",
         "RFECC What's On",
         "Riyadh City Events",
@@ -42,8 +43,7 @@
         "Saudi Universities and Technical Colleges",
         "Saudi Water Authority Events",
         "Tuwaiq Academy Bootcamps and Programs",
-        "Visit Saudi Calendar",
-        "ملف البرنامج المعتمد من الجهة المنظمة"
+        "Visit Saudi Calendar"
       ],
       "cities": [
         "أبها",
@@ -58,6 +58,7 @@
         "جازان",
         "جدة",
         "دولي",
+        "عرعر",
         "عن بعد",
         "مكة"
       ],
@@ -80,19 +81,19 @@
         "status": "ongoing",
         "url": "./events/event-the-continuing-professional-development-initiative.html"
       },
-      "count": 214,
+      "count": 215,
       "sources_count": 25,
-      "cities_count": 14,
+      "cities_count": 15,
       "categories_count": 11
     },
     {
       "slug": "creatives",
       "label": "مبدعون وفنون",
       "url": "./for/creatives.html",
-      "total_events": 147,
-      "upcoming_or_active": 79,
-      "ended": 68,
-      "live_ready": 4,
+      "total_events": 150,
+      "upcoming_or_active": 80,
+      "ended": 70,
+      "live_ready": 2,
       "sources": [
         "Asharqia Chamber Events",
         "CODE MCIT Programs",
@@ -105,6 +106,8 @@
         "Ministry of Culture Commission Calendars",
         "Misk Hub Events",
         "Misk Hub Programs",
+        "Najran Municipality Summer Events",
+        "Northern Borders Chamber Events",
         "Riyadh City Events",
         "SDAIA Calendar and Events",
         "Saudi Space Agency Events",
@@ -125,8 +128,11 @@
         "جازان",
         "جدة",
         "دولي",
+        "رفحاء",
+        "عرعر",
         "على مستوى المملكة",
-        "عن بعد"
+        "عن بعد",
+        "نجران"
       ],
       "categories": [
         "ألعاب ورياضات إلكترونية",
@@ -148,19 +154,19 @@
         "status": "ongoing",
         "url": "./events/event-skill-development-initiative.html"
       },
-      "count": 147,
-      "sources_count": 19,
-      "cities_count": 12,
+      "count": 150,
+      "sources_count": 21,
+      "cities_count": 15,
       "categories_count": 12
     },
     {
       "slug": "tech",
       "label": "تقنيون",
       "url": "./for/tech.html",
-      "total_events": 70,
-      "upcoming_or_active": 45,
+      "total_events": 69,
+      "upcoming_or_active": 44,
       "ended": 25,
-      "live_ready": 1,
+      "live_ready": 0,
       "sources": [
         "CODE MCIT Programs",
         "Future Skills MCIT Catalogue",
@@ -173,8 +179,7 @@
         "Saudi Universities and Technical Colleges",
         "Tuwaiq Academy Bootcamps and Programs",
         "Visit Saudi Calendar",
-        "Visit Saudi Seasons",
-        "ملف البرنامج المعتمد من الجهة المنظمة"
+        "Visit Saudi Seasons"
       ],
       "cities": [
         "الرياض",
@@ -205,8 +210,8 @@
         "status": "ongoing",
         "url": "./events/event-world-cup-2026-fan-zone-at-kimpton-kafd.html"
       },
-      "count": 70,
-      "sources_count": 13,
+      "count": 69,
+      "sources_count": 12,
       "cities_count": 8,
       "categories_count": 11
     },
@@ -214,8 +219,8 @@
       "slug": "families",
       "label": "عائلات وأطفال",
       "url": "./for/families.html",
-      "total_events": 79,
-      "upcoming_or_active": 38,
+      "total_events": 80,
+      "upcoming_or_active": 39,
       "ended": 41,
       "live_ready": 1,
       "sources": [
@@ -223,6 +228,7 @@
         "Jazan Chamber Events",
         "MDLBEAST Events",
         "Makkah Chamber Events",
+        "Najran Municipality Summer Events",
         "Riyadh City Events",
         "Saudi Universities and Technical Colleges",
         "Visit Saudi Calendar",
@@ -236,7 +242,8 @@
         "جدة",
         "عسير",
         "على مستوى المملكة",
-        "مكة"
+        "مكة",
+        "نجران"
       ],
       "categories": [
         "ألعاب ورياضات إلكترونية",
@@ -253,19 +260,19 @@
         "status": "ongoing",
         "url": "./events/event-poppy-playtime.html"
       },
-      "count": 79,
-      "sources_count": 8,
-      "cities_count": 8,
+      "count": 80,
+      "sources_count": 9,
+      "cities_count": 9,
       "categories_count": 7
     },
     {
       "slug": "skilled-trades",
       "label": "مهاريون وحرفيون",
       "url": "./for/skilled-trades.html",
-      "total_events": 73,
+      "total_events": 74,
       "upcoming_or_active": 35,
-      "ended": 38,
-      "live_ready": 9,
+      "ended": 39,
+      "live_ready": 5,
       "sources": [
         "Asharqia Chamber Events",
         "CODE MCIT Programs",
@@ -276,6 +283,7 @@
         "Ministry of Culture Commission Calendars",
         "Misk Hub Events",
         "Misk Hub Programs",
+        "Northern Borders Chamber Events",
         "RFECC What's On",
         "Riyadh City Events",
         "Saudi Universities and Technical Colleges",
@@ -290,6 +298,7 @@
         "ثول",
         "جازان",
         "جدة",
+        "عرعر",
         "عن بعد",
         "مكة"
       ],
@@ -311,9 +320,9 @@
         "status": "ongoing",
         "url": "./events/event-culinary-manufacturing-hubs.html"
       },
-      "count": 73,
-      "sources_count": 14,
-      "cities_count": 9,
+      "count": 74,
+      "sources_count": 15,
+      "cities_count": 10,
       "categories_count": 10
     },
     {
@@ -323,7 +332,7 @@
       "total_events": 64,
       "upcoming_or_active": 34,
       "ended": 30,
-      "live_ready": 6,
+      "live_ready": 5,
       "sources": [
         "Dhahran Expo Calendar",
         "Jazan Chamber Events",
@@ -418,10 +427,10 @@
       "slug": "entrepreneurs",
       "label": "رواد أعمال",
       "url": "./for/entrepreneurs.html",
-      "total_events": 68,
+      "total_events": 71,
       "upcoming_or_active": 25,
-      "ended": 43,
-      "live_ready": 2,
+      "ended": 46,
+      "live_ready": 1,
       "sources": [
         "Abha Chamber Events",
         "Asharqia Chamber Events",
@@ -431,10 +440,12 @@
         "Makkah Chamber Events",
         "Misk Hub Programs",
         "Monsha'at All Events",
+        "Northern Borders Chamber Events",
         "Qassim Chamber Events",
         "RFECC What's On",
         "Riyadh City Events",
         "Saudi Water Authority Events",
+        "Tabuk Chamber Events",
         "Visit Saudi Calendar"
       ],
       "cities": [
@@ -445,9 +456,11 @@
         "الظهران",
         "القطيف",
         "بريدة",
+        "تبوك",
         "جازان",
         "جدة",
         "دولي",
+        "عرعر",
         "عسير",
         "عن بعد",
         "مكة"
@@ -468,9 +481,9 @@
         "status": "ongoing",
         "url": "./events/event-poppy-playtime.html"
       },
-      "count": 68,
-      "sources_count": 13,
-      "cities_count": 13,
+      "count": 71,
+      "sources_count": 15,
+      "cities_count": 15,
       "categories_count": 8
     },
     {
@@ -525,10 +538,10 @@
       "slug": "job-seekers",
       "label": "باحثون عن عمل",
       "url": "./for/job-seekers.html",
-      "total_events": 32,
+      "total_events": 33,
       "upcoming_or_active": 11,
-      "ended": 21,
-      "live_ready": 1,
+      "ended": 22,
+      "live_ready": 0,
       "sources": [
         "Asharqia Chamber Events",
         "Dhahran Expo Calendar",
@@ -536,6 +549,7 @@
         "Makkah Chamber Events",
         "Misk Hub Events",
         "Misk Hub Programs",
+        "Northern Borders Chamber Events",
         "Saudi Universities and Technical Colleges"
       ],
       "cities": [
@@ -562,8 +576,8 @@
         "status": "ongoing",
         "url": "./events/event-misk-local-traineeship-program.html"
       },
-      "count": 32,
-      "sources_count": 7,
+      "count": 33,
+      "sources_count": 8,
       "cities_count": 10,
       "categories_count": 4
     },

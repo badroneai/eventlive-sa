@@ -4,6 +4,7 @@ import path from 'node:path';
 import lighthouse from 'lighthouse';
 import { launch as launchChrome } from 'chrome-launcher';
 import { chromium } from 'playwright';
+import { representativeEventPath } from './audit-page-utils.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -14,7 +15,7 @@ const pages = [
   '/index.html',
   '/events.html',
   '/screen.html',
-  '/events/demo-event.html'
+  representativeEventPath()
 ];
 
 function contentType(filePath) {

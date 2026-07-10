@@ -8,6 +8,11 @@
   "source_label": "Saudi Space Agency Events",
   "source_url": "https://ssa.gov.sa/en/events/%D8%A7%D9%84%D9%85%D8%A4%D8%AA%D9%85%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A-%D9%84%D9%84%D9%85%D9%84%D8%A7%D8%AD%D8%A9-%D8%A7%D9%84%D9%81%D8%B6%D8%A7%D8%A6%D9%8A%D8%A9-iac2022-%D9%81%D9%8A-%D8%A8%D8%A7%D8%B1%D9%8A%D8%B3/",
   "evidence_url": "https://ssa.gov.sa/en/events/%D8%A7%D9%84%D9%85%D8%A4%D8%AA%D9%85%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A-%D9%84%D9%84%D9%85%D9%84%D8%A7%D8%AD%D8%A9-%D8%A7%D9%84%D9%81%D8%B6%D8%A7%D8%A6%D9%8A%D8%A9-iac2022-%D9%81%D9%8A-%D8%A8%D8%A7%D8%B1%D9%8A%D8%B3/",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
   "city": "دولي",
   "venue": "Paris, France",
   "venue_address": "Paris, France",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/international-astronautical-congress-iac2022-in-paris-795d13acaf.webp",
   "image_alt": "International Astronautical Congress IAC2022 in Paris",
@@ -73,7 +81,12 @@
     "location": {
       "@type": "Place",
       "name": "Paris, France",
-      "address": "Paris, France"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Paris, France",
+        "addressLocality": "دولي",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

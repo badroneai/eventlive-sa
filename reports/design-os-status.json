@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.design-os-status.v1",
-  "generated_at": "2026-07-10T02:36:13.771Z",
+  "generated_at": "2026-07-10T03:56:00.073Z",
   "status": "PASS",
   "identity": {
     "brand": "EventLive",
@@ -32,7 +32,7 @@
     {
       "id": "event-detail",
       "name": "صفحة فعالية",
-      "url": "/events/demo-event.html",
+      "url": "/events/event-beast-house.html",
       "status": "NOT_STARTED",
       "evidence": "pending visual/design sweep"
     },

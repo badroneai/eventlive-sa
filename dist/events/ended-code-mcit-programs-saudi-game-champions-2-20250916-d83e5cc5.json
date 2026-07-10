@@ -8,6 +8,11 @@
   "source_label": "CODE MCIT Programs",
   "source_url": "https://code.mcit.gov.sa/en/saudi-game-champions-2",
   "evidence_url": "https://code.mcit.gov.sa/en/saudi-game-champions-2",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
   "city": "الرياض",
   "venue": "CODE Riyadh",
   "venue_address": "CODE Riyadh",
@@ -19,6 +24,9 @@
   "event_kind_label": "برنامج ممتد",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/daman-proptech-challenge-2eea8247e5.png",
   "image_alt": "Saudi Game Champions 2",
@@ -89,7 +97,13 @@
     "location": {
       "@type": "Place",
       "name": "CODE Riyadh",
-      "address": "CODE Riyadh"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "CODE Riyadh",
+        "addressLocality": "الرياض",
+        "addressRegion": "منطقة الرياض",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

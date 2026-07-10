@@ -8,6 +8,11 @@
   "source_label": "Invest Saudi Events",
   "source_url": "https://www.investsaudi.sa/events",
   "evidence_url": "https://www.investsaudi.sa/events",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T03:51:59.093Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
   "city": "دولي",
   "venue": "Lisbon, Portugal.",
   "venue_address": "Lisbon, Portugal.",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/web-summit-lisbon-2026-b9e840051d.webp",
   "image_alt": "Web Summit Lisbon 2026",
@@ -81,7 +89,12 @@
     "location": {
       "@type": "Place",
       "name": "Lisbon, Portugal.",
-      "address": "Lisbon, Portugal."
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Lisbon, Portugal.",
+        "addressLocality": "دولي",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

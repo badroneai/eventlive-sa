@@ -8,6 +8,11 @@
   "source_label": "Invest Saudi Events",
   "source_url": "https://ksa.biwexpo.com/en/registration-visitor?utm_source=misa&utm_medium=email&utm_campaign=ksa26",
   "evidence_url": "https://ksa.biwexpo.com/en/registration-visitor?utm_source=misa&utm_medium=email&utm_campaign=ksa26",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
   "city": "الرياض",
   "venue": "The Arena, Riyadh, Saudi Arabia",
   "venue_address": "The Arena, Riyadh, Saudi Arabia",
@@ -19,6 +24,9 @@
   "event_kind_label": "فعالية",
   "attendance_mode": "in_person",
   "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/innoprom-saudi-arabia-2026-a277cf02de.webp",
   "image_alt": "INNOPROM. Saudi Arabia 2026",
@@ -72,7 +80,13 @@
     "location": {
       "@type": "Place",
       "name": "The Arena, Riyadh, Saudi Arabia",
-      "address": "The Arena, Riyadh, Saudi Arabia"
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "The Arena, Riyadh, Saudi Arabia",
+        "addressLocality": "الرياض",
+        "addressRegion": "منطقة الرياض",
+        "addressCountry": "SA"
+      }
     },
     "organizer": {
       "@type": "Organization",

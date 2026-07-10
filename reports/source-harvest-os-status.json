@@ -1,41 +1,41 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-07-10T02:36:13.771Z",
+  "generated_at": "2026-07-10T03:56:00.073Z",
   "status": "PASS",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
-    "sources": 72,
-    "candidates": 193,
-    "matched_candidates": 165,
+    "sources": 73,
+    "candidates": 194,
+    "matched_candidates": 166,
     "auto_publish_sources": 14,
     "candidate_only_sources": 11,
     "partnership_required_sources": 4,
     "blocked_or_closed_sources": 0,
-    "manual_review_sources": 43,
-    "collection_attempted": 34,
-    "productive_sources": 22,
+    "manual_review_sources": 44,
+    "collection_attempted": 1,
+    "productive_sources": 1,
     "collector_errors": 0
   },
   "policies": {
     "partnership_required": 4,
     "auto_publish": 14,
     "candidate_only": 11,
-    "manual_review": 43
+    "manual_review": 44
   },
   "candidates_by_gate": {
-    "catalog-review": 164,
+    "catalog-review": 165,
     "duplicate-review": 13,
     "source-evidence": 16
   },
   "funnel": {
-    "discovered_this_run": 193,
-    "candidate_queue": 193,
-    "evaluated_for_publish": 193,
+    "discovered_this_run": 1,
+    "candidate_queue": 194,
+    "evaluated_for_publish": 194,
     "linked_existing": 162,
-    "published_new": 0,
+    "published_new": 1,
     "blocked": 31,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 29
+    "secondary_still_blocked": 30
   },
   "blocked_reasons": {
     "possible duplicate already exists: event-esports-world-cup": 1,
@@ -692,7 +692,7 @@
       "priority": 65,
       "trust_level": "official",
       "intake_policy": "official-feed-preferred",
-      "fetch_method": "html-listing",
+      "fetch_method": "json-api",
       "candidate_gate": "extraction",
       "publish_policy": "manual_review"
     },
@@ -745,6 +745,16 @@
       "fetch_method": "search-page",
       "candidate_gate": "duplicate-review",
       "publish_policy": "candidate_only"
+    },
+    {
+      "id": "najran-municipality-summer-events",
+      "name": "Najran Municipality Summer Events",
+      "priority": 71,
+      "trust_level": "official",
+      "intake_policy": "official-feed-preferred",
+      "fetch_method": "html-listing",
+      "candidate_gate": "duplicate-review",
+      "publish_policy": "manual_review"
     },
     {
       "id": "platinumlist-saudi-city-network",
