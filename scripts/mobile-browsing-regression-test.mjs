@@ -9,6 +9,7 @@ const root = process.cwd();
 const distDir = path.join(root, 'dist');
 const port = Number(process.env.EVENTLIVE_MOBILE_TEST_PORT || 4193);
 const widths = [360, 390, 430];
+const tabletWidth = 820;
 const representativeEvent = JSON.parse(fs.readFileSync(path.join(distDir, 'events.json'), 'utf8'))
   .events?.find((event) => event.status !== 'ended') || JSON.parse(fs.readFileSync(path.join(distDir, 'events.json'), 'utf8')).events?.[0];
 
@@ -110,6 +111,12 @@ try {
     await page.close();
     console.log(`MOBILE_VIEWPORT_PASS width=${width}`);
   }
+  const tabletPage = await browser.newPage({ viewport: { width: tabletWidth, height: 1180 }, isMobile: true, deviceScaleFactor: 2 });
+  const tabletCatalog = await inspect(tabletPage, 'events.html', tabletWidth);
+  assert.ok(tabletCatalog.scrollWidth <= tabletWidth + 1, 'events catalog must not overflow horizontally at 820px');
+  assert.equal(tabletCatalog.smallTouchTargets.length, 0, `tablet catalog has undersized touch targets: ${JSON.stringify(tabletCatalog.smallTouchTargets)}`);
+  await tabletPage.close();
+  console.log(`MOBILE_VIEWPORT_PASS width=${tabletWidth}`);
   console.log('MOBILE_BROWSING_OK');
 } finally {
   await browser?.close();

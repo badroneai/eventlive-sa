@@ -711,11 +711,17 @@
     .events-browse .catalog-load button[hidden] { display:none; }
     .events-browse .empty { grid-column: 1 / -1; }
     @media (max-width: 980px) {
+      .events-browse details.more > summary,
+      .events-browse .cta-now,
+      .events-browse .actions a,
+      .events-browse .actions button { min-height:44px; }
       .events-browse .hero-metrics,
       .events-browse .status-board,
       .events-browse .trust { grid-template-columns: 1fr 1fr; }
       .events-browse .toolbar { position: static; grid-template-columns: 1fr 1fr; }
       .events-browse .toolbar input { grid-column: 1 / -1; }
+      .events-browse .filter-drawer { grid-column: 1 / -1; }
+      .events-browse .filter-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
     }
     @media (max-width: 680px) {
       .events-browse .hero .wrap { padding-block: 22px 18px; }

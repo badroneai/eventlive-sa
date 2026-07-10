@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.browser-matrix-audit.v1",
-  "generated_at": "2026-07-10T06:26:07.869Z",
+  "generated_at": "2026-07-10T13:30:46.330Z",
   "status": "PASS",
   "summary": {
     "engines": 2,
@@ -19,11 +19,11 @@
       "metrics": {
         "scrollWidth": 390,
         "clientWidth": 390,
-        "bodyHeight": 2603,
+        "bodyHeight": 2608,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 601,
-        "loadMs": 1435
+        "domContentLoadedMs": 459,
+        "loadMs": 1265
       },
       "violations": []
     },
@@ -36,11 +36,11 @@
       "metrics": {
         "scrollWidth": 390,
         "clientWidth": 390,
-        "bodyHeight": 20621,
+        "bodyHeight": 16854,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 168,
-        "loadMs": 185
+        "domContentLoadedMs": 225,
+        "loadMs": 225
       },
       "violations": []
     },
@@ -53,11 +53,11 @@
       "metrics": {
         "scrollWidth": 390,
         "clientWidth": 390,
-        "bodyHeight": 14955,
+        "bodyHeight": 11030,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 19,
-        "loadMs": 34
+        "domContentLoadedMs": 27,
+        "loadMs": 39
       },
       "violations": []
     },
@@ -71,10 +71,10 @@
         "scrollWidth": 390,
         "clientWidth": 390,
         "bodyHeight": 844,
-        "h1Text": "Unstable",
+        "h1Text": "Puppet World",
         "h1Visible": true,
-        "domContentLoadedMs": 9,
-        "loadMs": 52
+        "domContentLoadedMs": 184,
+        "loadMs": 184
       },
       "violations": []
     },
@@ -90,25 +90,25 @@
         "bodyHeight": 6430,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 167,
-        "loadMs": 168
+        "domContentLoadedMs": 196,
+        "loadMs": 196
       },
       "violations": []
     },
     {
       "engine": "chromium",
       "viewport": "mobile",
-      "page": "/events/event-beast-house.html",
+      "page": "/events/event-build-play-together.html",
       "http_status": 200,
       "console_errors": 0,
       "metrics": {
         "scrollWidth": 390,
         "clientWidth": 390,
-        "bodyHeight": 4722,
-        "h1Text": "Beast House",
+        "bodyHeight": 4561,
+        "h1Text": "Build & Play Together",
         "h1Visible": true,
-        "domContentLoadedMs": 21,
-        "loadMs": 26
+        "domContentLoadedMs": 45,
+        "loadMs": 47
       },
       "violations": []
     },
@@ -121,11 +121,11 @@
       "metrics": {
         "scrollWidth": 820,
         "clientWidth": 820,
-        "bodyHeight": 2273,
+        "bodyHeight": 2271,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 510,
-        "loadMs": 1238
+        "domContentLoadedMs": 470,
+        "loadMs": 1220
       },
       "violations": []
     },
@@ -138,11 +138,11 @@
       "metrics": {
         "scrollWidth": 820,
         "clientWidth": 820,
-        "bodyHeight": 11169,
+        "bodyHeight": 11262,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 195,
-        "loadMs": 210
+        "domContentLoadedMs": 168,
+        "loadMs": 187
       },
       "violations": []
     },
@@ -155,11 +155,11 @@
       "metrics": {
         "scrollWidth": 820,
         "clientWidth": 820,
-        "bodyHeight": 8580,
+        "bodyHeight": 8445,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 22,
-        "loadMs": 41
+        "domContentLoadedMs": 8,
+        "loadMs": 36
       },
       "violations": []
     },
@@ -173,10 +173,10 @@
         "scrollWidth": 820,
         "clientWidth": 820,
         "bodyHeight": 1180,
-        "h1Text": "Unstable",
+        "h1Text": "Puppet World",
         "h1Visible": true,
-        "domContentLoadedMs": 163,
-        "loadMs": 163
+        "domContentLoadedMs": 209,
+        "loadMs": 213
       },
       "violations": []
     },
@@ -192,25 +192,25 @@
         "bodyHeight": 5516,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 142,
-        "loadMs": 142
+        "domContentLoadedMs": 197,
+        "loadMs": 197
       },
       "violations": []
     },
     {
       "engine": "chromium",
       "viewport": "tablet",
-      "page": "/events/event-beast-house.html",
+      "page": "/events/event-build-play-together.html",
       "http_status": 200,
       "console_errors": 0,
       "metrics": {
         "scrollWidth": 820,
         "clientWidth": 820,
-        "bodyHeight": 3513,
-        "h1Text": "Beast House",
+        "bodyHeight": 3781,
+        "h1Text": "Build & Play Together",
         "h1Visible": true,
-        "domContentLoadedMs": 13,
-        "loadMs": 27
+        "domContentLoadedMs": 29,
+        "loadMs": 43
       },
       "violations": []
     },
@@ -223,11 +223,11 @@
       "metrics": {
         "scrollWidth": 1440,
         "clientWidth": 1440,
-        "bodyHeight": 3101,
+        "bodyHeight": 3053,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 407,
-        "loadMs": 1052
+        "domContentLoadedMs": 2064,
+        "loadMs": 2826
       },
       "violations": []
     },
@@ -240,11 +240,11 @@
       "metrics": {
         "scrollWidth": 1440,
         "clientWidth": 1440,
-        "bodyHeight": 7672,
+        "bodyHeight": 7632,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 204,
-        "loadMs": 207
+        "domContentLoadedMs": 178,
+        "loadMs": 181
       },
       "violations": []
     },
@@ -257,11 +257,11 @@
       "metrics": {
         "scrollWidth": 1440,
         "clientWidth": 1440,
-        "bodyHeight": 6862,
+        "bodyHeight": 6116,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 20,
-        "loadMs": 37
+        "domContentLoadedMs": 21,
+        "loadMs": 49
       },
       "violations": []
     },
@@ -275,10 +275,10 @@
         "scrollWidth": 1440,
         "clientWidth": 1440,
         "bodyHeight": 900,
-        "h1Text": "Unstable",
+        "h1Text": "Puppet World",
         "h1Visible": true,
-        "domContentLoadedMs": 231,
-        "loadMs": 231
+        "domContentLoadedMs": 204,
+        "loadMs": 204
       },
       "violations": []
     },
@@ -294,25 +294,25 @@
         "bodyHeight": 3584,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 180,
-        "loadMs": 180
+        "domContentLoadedMs": 156,
+        "loadMs": 156
       },
       "violations": []
     },
     {
       "engine": "chromium",
       "viewport": "desktop",
-      "page": "/events/event-beast-house.html",
+      "page": "/events/event-build-play-together.html",
       "http_status": 200,
       "console_errors": 0,
       "metrics": {
         "scrollWidth": 1440,
         "clientWidth": 1440,
-        "bodyHeight": 3029,
-        "h1Text": "Beast House",
+        "bodyHeight": 3296,
+        "h1Text": "Build & Play Together",
         "h1Visible": true,
-        "domContentLoadedMs": 12,
-        "loadMs": 30
+        "domContentLoadedMs": 35,
+        "loadMs": 36
       },
       "violations": []
     },
@@ -325,11 +325,11 @@
       "metrics": {
         "scrollWidth": 390,
         "clientWidth": 390,
-        "bodyHeight": 2603,
+        "bodyHeight": 2608,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 976,
-        "loadMs": 1617
+        "domContentLoadedMs": 637,
+        "loadMs": 1266
       },
       "violations": []
     },
@@ -342,11 +342,11 @@
       "metrics": {
         "scrollWidth": 390,
         "clientWidth": 390,
-        "bodyHeight": 20655,
+        "bodyHeight": 16852,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 429,
-        "loadMs": 781
+        "domContentLoadedMs": 197,
+        "loadMs": 587
       },
       "violations": []
     },
@@ -359,11 +359,11 @@
       "metrics": {
         "scrollWidth": 390,
         "clientWidth": 390,
-        "bodyHeight": 14947,
+        "bodyHeight": 11024,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 147,
-        "loadMs": 356
+        "domContentLoadedMs": 176,
+        "loadMs": 354
       },
       "violations": []
     },
@@ -377,10 +377,10 @@
         "scrollWidth": 390,
         "clientWidth": 390,
         "bodyHeight": 844,
-        "h1Text": "Unstable",
+        "h1Text": "Puppet World",
         "h1Visible": true,
-        "domContentLoadedMs": 161,
-        "loadMs": 359
+        "domContentLoadedMs": 150,
+        "loadMs": 374
       },
       "violations": []
     },
@@ -396,25 +396,25 @@
         "bodyHeight": 6429,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 173,
-        "loadMs": 397
+        "domContentLoadedMs": 167,
+        "loadMs": 419
       },
       "violations": []
     },
     {
       "engine": "webkit",
       "viewport": "mobile",
-      "page": "/events/event-beast-house.html",
+      "page": "/events/event-build-play-together.html",
       "http_status": 200,
       "console_errors": 0,
       "metrics": {
         "scrollWidth": 390,
         "clientWidth": 390,
-        "bodyHeight": 4721,
-        "h1Text": "Beast House",
+        "bodyHeight": 4541,
+        "h1Text": "Build & Play Together",
         "h1Visible": true,
-        "domContentLoadedMs": 166,
-        "loadMs": 336
+        "domContentLoadedMs": 162,
+        "loadMs": 333
       },
       "violations": []
     },
@@ -427,11 +427,11 @@
       "metrics": {
         "scrollWidth": 820,
         "clientWidth": 820,
-        "bodyHeight": 2273,
+        "bodyHeight": 2271,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 468,
-        "loadMs": 1129
+        "domContentLoadedMs": 528,
+        "loadMs": 1270
       },
       "violations": []
     },
@@ -444,11 +444,11 @@
       "metrics": {
         "scrollWidth": 820,
         "clientWidth": 820,
-        "bodyHeight": 11249,
+        "bodyHeight": 11503,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 182,
-        "loadMs": 518
+        "domContentLoadedMs": 188,
+        "loadMs": 549
       },
       "violations": []
     },
@@ -461,11 +461,11 @@
       "metrics": {
         "scrollWidth": 820,
         "clientWidth": 820,
-        "bodyHeight": 8576,
+        "bodyHeight": 8441,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 150,
-        "loadMs": 365
+        "domContentLoadedMs": 187,
+        "loadMs": 396
       },
       "violations": []
     },
@@ -479,10 +479,10 @@
         "scrollWidth": 820,
         "clientWidth": 820,
         "bodyHeight": 1180,
-        "h1Text": "Unstable",
+        "h1Text": "Puppet World",
         "h1Visible": true,
-        "domContentLoadedMs": 150,
-        "loadMs": 324
+        "domContentLoadedMs": 169,
+        "loadMs": 367
       },
       "violations": []
     },
@@ -498,25 +498,25 @@
         "bodyHeight": 5516,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 159,
-        "loadMs": 379
+        "domContentLoadedMs": 151,
+        "loadMs": 363
       },
       "violations": []
     },
     {
       "engine": "webkit",
       "viewport": "tablet",
-      "page": "/events/event-beast-house.html",
+      "page": "/events/event-build-play-together.html",
       "http_status": 200,
       "console_errors": 0,
       "metrics": {
         "scrollWidth": 820,
         "clientWidth": 820,
-        "bodyHeight": 3513,
-        "h1Text": "Beast House",
+        "bodyHeight": 3781,
+        "h1Text": "Build & Play Together",
         "h1Visible": true,
-        "domContentLoadedMs": 154,
-        "loadMs": 363
+        "domContentLoadedMs": 184,
+        "loadMs": 361
       },
       "violations": []
     },
@@ -529,11 +529,11 @@
       "metrics": {
         "scrollWidth": 1440,
         "clientWidth": 1440,
-        "bodyHeight": 3101,
+        "bodyHeight": 3053,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 382,
-        "loadMs": 1134
+        "domContentLoadedMs": 496,
+        "loadMs": 1220
       },
       "violations": []
     },
@@ -546,11 +546,11 @@
       "metrics": {
         "scrollWidth": 1440,
         "clientWidth": 1440,
-        "bodyHeight": 7726,
+        "bodyHeight": 7757,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 174,
-        "loadMs": 508
+        "domContentLoadedMs": 157,
+        "loadMs": 512
       },
       "violations": []
     },
@@ -563,11 +563,11 @@
       "metrics": {
         "scrollWidth": 1440,
         "clientWidth": 1440,
-        "bodyHeight": 6860,
+        "bodyHeight": 6114,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 170,
-        "loadMs": 353
+        "domContentLoadedMs": 155,
+        "loadMs": 381
       },
       "violations": []
     },
@@ -581,10 +581,10 @@
         "scrollWidth": 1440,
         "clientWidth": 1440,
         "bodyHeight": 900,
-        "h1Text": "Unstable",
+        "h1Text": "Puppet World",
         "h1Visible": true,
-        "domContentLoadedMs": 150,
-        "loadMs": 351
+        "domContentLoadedMs": 139,
+        "loadMs": 435
       },
       "violations": []
     },
@@ -600,25 +600,25 @@
         "bodyHeight": 3584,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 152,
-        "loadMs": 375
+        "domContentLoadedMs": 176,
+        "loadMs": 408
       },
       "violations": []
     },
     {
       "engine": "webkit",
       "viewport": "desktop",
-      "page": "/events/event-beast-house.html",
+      "page": "/events/event-build-play-together.html",
       "http_status": 200,
       "console_errors": 0,
       "metrics": {
         "scrollWidth": 1440,
         "clientWidth": 1440,
-        "bodyHeight": 3029,
-        "h1Text": "Beast House",
+        "bodyHeight": 3296,
+        "h1Text": "Build & Play Together",
         "h1Visible": true,
-        "domContentLoadedMs": 160,
-        "loadMs": 332
+        "domContentLoadedMs": 183,
+        "loadMs": 358
       },
       "violations": []
     }
