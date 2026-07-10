@@ -1006,6 +1006,8 @@
 
 
 
+
+
     <style id="eventlive-brand-pulse">
 @keyframes eventliveLiveDotPulse {
   0%, 100% { opacity: .92; transform: translateX(-50%) scale(1); box-shadow: 0 0 0 0 rgba(229, 72, 77, .2); }
@@ -1035,7 +1037,78 @@
   .breadcrumbs strong { max-width: 24ch; }
   details.more > summary, .cta-now, .card-foot a, .card-foot button { min-height: 44px; }
   .more-panel a { min-height: 44px; display:flex; align-items:center; }
-  .card-row { scroll-padding-inline:16px; overscroll-behavior-inline:contain; }
+  .site-head { padding-top:env(safe-area-inset-top); }
+  .site-head .head-in { min-height:58px; gap:8px; }
+  .site-head .brand { gap:8px; margin-inline-end:0; min-width:0; }
+  .site-head .brand .mark { width:34px; height:34px; border-radius:9px; flex:0 0 34px; }
+  .site-head .brand b { font-size:18px; line-height:1; }
+  .site-head .brand small { display:none; }
+  .site-head .cta-now {
+    order:1;
+    min-height:44px;
+    padding:7px 12px;
+    border:1px solid var(--line);
+    border-radius:8px;
+    background:#fff;
+    color:var(--brand-deep);
+    box-shadow:none;
+    font-size:13.5px;
+  }
+  .site-head .cta-now .dot { background:var(--live); animation-duration:5.6s; }
+  .site-head .burger { order:2; margin-inline-start:0; }
+  .site-head .burger > summary {
+    display:grid;
+    place-items:center;
+    width:44px;
+    height:44px;
+    min-height:44px;
+    padding:0;
+    border:1px solid var(--line);
+    border-radius:8px;
+    background:#fff;
+    font-size:18px;
+  }
+  .site-head .more-panel { top:calc(58px + env(safe-area-inset-top)); }
+  .site-head + .hero .hero-in { gap:16px; padding:20px 0 24px; }
+  .site-head + .hero .eyebrow { margin-bottom:10px; padding:4px 9px; }
+  .site-head + .hero h1 { margin-bottom:8px; font-size:26px; }
+  .site-head + .hero .lead {
+    margin-bottom:14px;
+    font-size:14px;
+    line-height:1.7;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+  }
+  .site-head + .hero .search-box input { min-height:48px; border-radius:10px; }
+  .site-head + .hero .hero-ctas { gap:8px; margin-top:12px; }
+  .site-head + .hero .hero-ctas .ghost { flex:1; min-height:44px; padding:8px 10px; text-align:center; }
+  .site-head + .hero .board { padding:14px; border-radius:14px; }
+  .site-head + .hero .board-label { margin-bottom:8px; }
+  .site-head + .hero .board h2 { font-size:18px; }
+  .site-head + .hero .board .b-meta { margin-bottom:10px; }
+  .site-head + .hero .countdown { gap:6px; margin-bottom:12px; }
+  .site-head + .hero .cd-cell { padding:8px 4px 7px; border-radius:8px; }
+  .site-head + .hero .cd-cell b { font-size:20px; }
+  .site-head + .hero .board-actions .primary { flex:1; min-height:44px; padding:9px 12px; text-align:center; }
+  .site-head + .hero .board-actions .plain, .site-head + .hero .board-stats { display:none; }
+  .card-row {
+    scroll-padding-inline:16px;
+    overscroll-behavior-inline:contain;
+    -webkit-overflow-scrolling:touch;
+  }
+  .card-row .card {
+    flex:0 0 min(82vw,320px);
+    min-width:0;
+    scroll-snap-align:start;
+  }
+  .card-row:focus-visible {
+    outline:3px solid rgba(13,107,82,.35);
+    outline-offset:4px;
+  }
+  .h-section-head { align-items:flex-start; }
+  .h-section-head .more-link { display:inline-flex; align-items:center; min-height:44px; }
 }
 </style>
   <!-- Privacy-friendly analytics by Plausible -->
@@ -1196,6 +1269,26 @@
     const CATEGORY_AR = {"cultural initiative":"ثقافة وفنون","culture-arts":"ثقافة وفنون","family \u0026 kids":"ترفيه وعائلات","entertainment-families":"ترفيه وعائلات","gaming-esports":"ألعاب ورياضات إلكترونية","entertainment / families":"ترفيه وعائلات","entertainment \u0026 sports":"رياضة وفعاليات جماهيرية","sports":"رياضة وفعاليات جماهيرية","culture \u0026 history / families":"ثقافة وفنون","exhibitions \u0026 conferences":"علوم وفضاء","exhibition-trade":"معارض وتجارية","tourism experience":"رياضة وفعاليات جماهيرية","skills program":"تدريب تقني","technology-training":"تدريب تقني","festival":"ترفيه وعائلات","entertainment":"ترفيه وعائلات","culture \u0026 community":"ثقافة وفنون","culture and arts":"ألعاب ورياضات إلكترونية","regulatory-workshop":"ورش تنظيمية وصحية","exhibition":"فعاليات الغرف التجارية","culture arts":"ثقافة وفنون","sports / families":"رياضة وفعاليات جماهيرية","film":"ثقافة وفنون","awards-ceremonies":"جوائز وتكريم","saudi seasons":"رياضة وفعاليات جماهيرية","adventure / families":"ترفيه وعائلات","entrepreneurship":"تدريب تقني","immersive experience":"جوائز وتكريم","explorers thematic, workshop":"جامعات ومجتمع","education-community":"جامعات ومجتمع","science-space":"علوم وفضاء","معسكر - هندسة الميكاترونكس":"جامعات ومجتمع","entertainment families":"ترفيه وعائلات","university event":"جامعات ومجتمع","summer program":"جامعات ومجتمع","music":"ترفيه وعائلات","family":"ترفيه وعائلات","learning":"جامعات ومجتمع","performance":"جامعات ومجتمع","application deadline":"تدريب تقني","technology training":"تدريب تقني","أسبوع الاعمال":"تدريب تقني","معسكر - تطوير البرمجيات والتطبيقات":"ورش تنظيمية وصحية","education training":"تدريب تقني","community":"ورش تنظيمية وصحية","regulatory workshop":"ورش تنظيمية وصحية","workshop":"فعاليات الغرف التجارية","sports and community":"رياضة وفعاليات جماهيرية","culture":"ثقافة وفنون","chamber-event":"فعاليات الغرف التجارية","معسكر - الحوسبة السحابية":"جامعات ومجتمع","معسكر - أنظمة الشبكات":"ورش تنظيمية وصحية","exhibition / families":"ترفيه وعائلات","معسكر - الأمن السيبراني":"جامعات ومجتمع","معسكر - هندسة البرمجيات":"ورش تنظيمية وصحية","conference":"فعاليات الغرف التجارية","conference-forum":"مؤتمرات ومنتديات","معسكر - علم البيانات والذكاء الاصطناعي":"جامعات ومجتمع","artificial intelligence":"مؤتمرات ومنتديات","public holidays":"ترفيه وعائلات","banking and ai conference":"مؤتمرات ومنتديات","enterprise ai conference":"مؤتمرات ومنتديات","summit":"مؤتمرات ومنتديات","chamber event":"فعاليات الغرف التجارية","forum":"مؤتمرات ومنتديات","venue event":"معارض وتجارية","business forum":"فعاليات الغرف التجارية","awards":"جوائز وتكريم","architecture design festival":"ترفيه وعائلات","destination event":"علوم وفضاء","national day":"جوائز وتكريم","لقاء":"فعاليات الغرف التجارية","skills":"تدريب تقني","space":"علوم وفضاء","academic event":"جامعات ومجتمع","ورشة عمل":"فعاليات الغرف التجارية","دورة تدريبية":"فعاليات الغرف التجارية","ملتقى":"فعاليات الغرف التجارية","اجتماع":"فعاليات الغرف التجارية","فعالية فوانيس":"فعاليات الغرف التجارية","التوطين":"فعاليات الغرف التجارية","space education":"علوم وفضاء","auction":"معارض وتجارية","الاتصالات وتقنية المعلومات":"فعاليات الغرف التجارية","ريادة الأعمال":"فعاليات الغرف التجارية","football match":"رياضة وفعاليات جماهيرية","business reception":"فعاليات الغرف التجارية","roadshow":"تدريب تقني","incubator":"ألعاب ورياضات إلكترونية","training":"فعاليات الغرف التجارية","career fair":"فعاليات الغرف التجارية","gaming program":"ألعاب ورياضات إلكترونية","technology bootcamp":"ألعاب ورياضات إلكترونية","digital series":"ألعاب ورياضات إلكترونية","حفل تكريم":"فعاليات الغرف التجارية","ندوة":"فعاليات الغرف التجارية","حفل تدشين":"فعاليات الغرف التجارية","ورش عمل":"فعاليات الغرف التجارية","ai entrepreneurship":"ألعاب ورياضات إلكترونية","منتدى":"فعاليات الغرف التجارية","business event":"فعاليات الغرف التجارية","مؤتمر":"فعاليات الغرف التجارية","business gathering":"فعاليات الغرف التجارية","لقاء حواري":"فعاليات الغرف التجارية","jeddah chamber":"فعاليات الغرف التجارية","وفد تجاري":"فعاليات الغرف التجارية","sports championship":"رياضة وفعاليات جماهيرية","accelerator":"ألعاب ورياضات إلكترونية","tourism":"فعاليات الغرف التجارية"};
     const cityAr = (city) => CITY_AR[city] || city || '';
     const categoryAr = (category) => CATEGORY_AR[String(category || '').trim().toLowerCase()] || category || 'عام';
+    function normalizeSearchText(value) {
+      return String(value || '').toLowerCase()
+        .replace(/[\u064B-\u0652]/g, '')
+        .replace(/[\u0623\u0625\u0622]/g, '\u0627')
+        .replace(/\u0629/g, '\u0647')
+        .replace(/\u0649/g, '\u064A')
+        .replace(/[^a-z0-9\u0600-\u06ff]+/g, ' ')
+        .trim();
+    }
+    function cityIntentForQuery(value) {
+      const query = normalizeSearchText(value);
+      const aliases = new Map([
+        ['\u0627\u0644\u062e\u0628\u0631', 'Khobar'], ['\u062e\u0628\u0631', 'Khobar'], ['khobar', 'Khobar'], ['al khobar', 'Khobar'], ['alkhobar', 'Khobar'], ['alkobar', 'Khobar']
+      ]);
+      Object.entries(CITY_AR).forEach(([city, label]) => {
+        aliases.set(normalizeSearchText(city), city);
+        aliases.set(normalizeSearchText(label), city);
+      });
+      return aliases.get(query) || '';
+    }
     const controls = {
       search: document.getElementById('eventSearch'),
       city: document.getElementById('cityFilter'),
@@ -1547,12 +1640,13 @@
     }
 
     function renderEvents() {
-      const query = controls.search.value.trim().toLowerCase();
+      const query = normalizeSearchText(controls.search.value);
+      const targetCity = cityIntentForQuery(controls.search.value);
       const filteredRows = events.filter((event) => {
         const status = computeStatus(event);
         const audienceText = (event.audience_labels || []).map((audience) => audience.label).join(' ');
-        const haystack = [event.title, event.organizer, event.city, event.venue, event.venue_address, event.category, audienceText, (event.tags || []).join(' ')].join(' ').toLowerCase();
-        if (query && !haystack.includes(query)) return false;
+        const haystack = normalizeSearchText([event.title, event.organizer, event.city, cityAr(event.city), event.venue, event.venue_address, event.category, audienceText, (event.tags || []).join(' ')].join(' '));
+        if (targetCity ? event.city !== targetCity : (query && !haystack.includes(query))) return false;
         if (controls.city.value && event.city !== controls.city.value) return false;
         if (controls.category.value && categoryAr(event.category) !== controls.category.value) return false;
         if (controls.audience.value && !(event.audiences || []).includes(controls.audience.value)) return false;
@@ -1894,6 +1988,8 @@
 
 
 
+
+
     function applyInitialSearchQuery() {
       const params = new URLSearchParams(window.location.search);
       const query = (params.get('q') || params.get('search') || params.get('query') || '').trim();
@@ -1916,6 +2012,10 @@
     });
     if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(() => {});
   </script>
+
+
+
+
 
 
 

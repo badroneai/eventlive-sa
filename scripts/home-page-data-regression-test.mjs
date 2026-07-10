@@ -60,6 +60,9 @@ const searchData = extractAssignedJson('searchData');
 assert.equal(searchData.length, events.length, 'home search data must cover the full catalog');
 assert.equal(ticker.length, Math.min(120, upcoming.length), 'home ticker must be derived from upcoming events');
 assert.equal(searchData[0].t, events[0].title, 'home search order must follow events.json');
+assert.equal(searchData[0].k, events[0].city, 'home search rows must preserve the canonical city key');
+assert.match(html, /function cityIntent\(v\)/, 'home search must recognize exact city intent');
+assert.match(html, /events\.html\?q=' \+ encodeURIComponent\(input\.value\.trim\(\)\)/, 'home Enter search must preserve the query');
 if (ticker.length) {
   assert.equal(ticker[0].id, upcoming[0].id, 'home ticker order must follow upcoming events');
   assert.ok(String(ticker[0].u || '').startsWith('./events/') || ticker[0].u === './event.html', 'home ticker URLs must be public event URLs');

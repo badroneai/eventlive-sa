@@ -81,6 +81,7 @@
     "test:live-ready": "node scripts/live-ready-regression-test.mjs",
     "test:schedule-depth": "node scripts/schedule-depth-regression-test.mjs",
     "test:search": "node scripts/search-regression-test.mjs",
+    "test:city-search": "node scripts/city-search-browser-regression-test.mjs",
     "test:seo-content": "node scripts/seo-content-regression-test.mjs",
     "test:production-domain": "node scripts/production-domain-regression-test.mjs",
     "test:ai-search-readiness": "node scripts/ai-search-readiness-regression-test.mjs",

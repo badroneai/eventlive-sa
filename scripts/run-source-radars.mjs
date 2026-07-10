@@ -96,6 +96,38 @@ ensureDir(reportsDir);
 
 const radars = [
   {
+    id: 'platinumlist-platform',
+    name: 'Platinumlist Saudi City Radar',
+    source_id: 'platinumlist-saudi-city-network',
+    policy: 'candidate-only; city coverage evidence; no auto-publish',
+    command: process.execPath,
+    args: ['scripts/platinumlist-platform-radar.mjs'],
+    timeout_ms: Number(process.env.EVENTLIVE_PLATINUMLIST_PLATFORM_JOB_TIMEOUT_MS || 240000),
+    env: {
+      EVENTLIVE_PLATINUMLIST_PLATFORM_LIMIT: String(process.env.EVENTLIVE_PLATINUMLIST_PLATFORM_LIMIT || 32)
+    },
+    reports: [
+      'reports/platinumlist-platform-radar.json',
+      'reports/platinumlist-platform-radar.md'
+    ]
+  },
+  {
+    id: 'platinumlist-details',
+    name: 'Platinumlist City Detail Radar',
+    source_id: 'platinumlist-saudi-city-network',
+    policy: 'candidate-only; secondary official verification required; no auto-publish',
+    command: process.execPath,
+    args: ['scripts/platinumlist-detail-radar.mjs'],
+    timeout_ms: Number(process.env.EVENTLIVE_PLATINUMLIST_DETAIL_JOB_TIMEOUT_MS || 240000),
+    env: {
+      EVENTLIVE_PLATINUMLIST_DETAIL_LIMIT: String(process.env.EVENTLIVE_PLATINUMLIST_DETAIL_LIMIT || 24)
+    },
+    reports: [
+      'reports/platinumlist-detail-radar.json',
+      'reports/platinumlist-detail-radar.md'
+    ]
+  },
+  {
     id: 'official-agendas',
     name: 'Official Multi-Session Agenda Radar',
     source_id: 'official-agenda-watchlist',

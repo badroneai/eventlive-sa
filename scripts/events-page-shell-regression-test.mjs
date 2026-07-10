@@ -29,6 +29,8 @@ assert.match(html, /function applyInitialSearchQuery\(\)/, 'events.html must sup
 assert.match(html, /new URLSearchParams\(window\.location\.search\)/, 'events.html must read q/search/query URL parameters');
 assert.match(html, /params\.get\('q'\).*params\.get\('search'\).*params\.get\('query'\)/s, 'events.html must accept q, search, and query parameters');
 assert.match(html, /setupFilters\(\);\s*applyInitialSearchQuery\(\);\s*renderStatusCenter\(\);/s, 'events.html must apply URL search before rendering results');
+assert.match(html, /function cityIntentForQuery\(value\)/, 'events search must recognize exact city intent');
+assert.match(html, /targetCity \? event\.city !== targetCity/, 'city-intent search must require the canonical event city');
 assert.match(html, /id="sortFilter"/, 'events.html must expose explicit result sorting');
 assert.match(html, /id="loadMoreEvents"/, 'events.html must progressively reveal the catalog instead of rendering every card at once');
 assert.match(html, /let visibleLimit = 24/, 'events.html must start with a bounded first page of results');

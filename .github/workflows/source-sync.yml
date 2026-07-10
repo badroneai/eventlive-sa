@@ -75,6 +75,7 @@ jobs:
           npm run test:image-cache
           npm run test:public-assets
           npm run test:event-kind
+          npm run test:city-search
 
       - name: Persist sync state back to the repository
         run: |
@@ -91,6 +92,8 @@ jobs:
             reports/source-*.md \
             reports/mygov-*.json \
             reports/mygov-*.md \
+            reports/platinumlist-*.json \
+            reports/platinumlist-*.md \
             reports/event-image-cache-report.json \
             reports/event-image-cache-report.md \
             reports/*-enrichment-report.json \
@@ -119,7 +122,11 @@ jobs:
             reports/source-*.html
             reports/mygov-*.md
             reports/mygov-*.json
+            reports/platinumlist-*.md
+            reports/platinumlist-*.json
             data/raw/mygov-wayback-radar/**
+            data/raw/platinumlist-platform-radar/**
+            data/raw/platinumlist-detail-radar/**
             data/raw/source-snapshots/**
             data/raw/source-yield-snapshots/**
             data/source_candidates.json

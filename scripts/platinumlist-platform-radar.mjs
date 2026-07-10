@@ -12,12 +12,20 @@ const jsonReportPath = path.join(reportsDir, 'platinumlist-platform-radar.json')
 const mdReportPath = path.join(reportsDir, 'platinumlist-platform-radar.md');
 const generatedAt = new Date().toISOString();
 const stamp = generatedAt.replace(/[:.]/g, '-');
-const routeLimit = Math.max(1, Number(process.env.EVENTLIVE_PLATINUMLIST_PLATFORM_LIMIT || 22));
+const routeLimit = Math.max(1, Number(process.env.EVENTLIVE_PLATINUMLIST_PLATFORM_LIMIT || 32));
 const waitMs = Math.max(1200, Number(process.env.EVENTLIVE_PLATINUMLIST_PLATFORM_WAIT_MS || 2800));
 const timeoutMs = Math.max(10000, Number(process.env.EVENTLIVE_PLATINUMLIST_PLATFORM_TIMEOUT_MS || 45000));
 const userAgent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36';
 
 const routeSeeds = [
+  { lane: 'khobar-time', url: 'https://khobar.platinumlist.net/ar/calendar/today' },
+  { lane: 'khobar-time', url: 'https://khobar.platinumlist.net/ar/calendar/this-weekend' },
+  { lane: 'khobar-time', url: 'https://khobar.platinumlist.net/ar/calendar/july' },
+  { lane: 'khobar-time', url: 'https://khobar.platinumlist.net/ar/calendar/august' },
+  { lane: 'khobar-all', url: 'https://khobar.platinumlist.net/ar/event' },
+  { lane: 'khobar-category', url: 'https://khobar.platinumlist.net/ar/shows' },
+  { lane: 'khobar-category', url: 'https://khobar.platinumlist.net/ar/concert' },
+  { lane: 'khobar-category', url: 'https://khobar.platinumlist.net/ar/business-events' },
   { lane: 'riyadh-time', url: 'https://riyadh.platinumlist.net/ar/calendar/today' },
   { lane: 'riyadh-time', url: 'https://riyadh.platinumlist.net/ar/calendar/this-weekend' },
   { lane: 'riyadh-time', url: 'https://riyadh.platinumlist.net/ar/calendar/july' },

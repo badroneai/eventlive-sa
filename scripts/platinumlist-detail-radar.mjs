@@ -6,6 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, '..');
 const leadsPath = path.join(rootDir, 'reports', 'platinumlist-snapshot-leads.json');
+const platformRadarPath = path.join(rootDir, 'reports', 'platinumlist-platform-radar.json');
 const reportsDir = path.join(rootDir, 'reports');
 const rawDir = path.join(rootDir, 'data', 'raw', 'platinumlist-detail-radar');
 const jsonReportPath = path.join(reportsDir, 'platinumlist-detail-radar.json');
@@ -198,10 +199,15 @@ export function parseDetailSignals({ url = '', html = '', text = '', title = '',
   };
 }
 
-function chooseProbeLeads(report) {
+export function chooseProbeLeads(report, platformReport = {}) {
   const rich = (report.leads || []).map((lead) => ({ ...lead, lead_type: 'rich-card' }));
   const linkOnly = (report.link_only_leads || []).map((lead) => ({ ...lead, lead_type: 'link-only' }));
-  const interesting = [...rich, ...linkOnly].filter((lead) => /riyadh|jeddah/i.test(lead.url));
+  const platformLeads = (platformReport.routes || []).flatMap((route) => (route.event_links || []).map((lead) => ({
+    ...lead,
+    city: route.city || cityFromUrl(lead.url).city,
+    lead_type: 'platform-city-radar'
+  })));
+  const interesting = [...platformLeads, ...rich, ...linkOnly].filter((lead) => /riyadh|jeddah|khobar|dammam|dhahran/i.test(lead.url));
   const rank = (lead) => (
     (lead.best_image_url ? 2 : 0)
     + (/conference|workshop|expo|award|world-cup|fiba|pfl|stand-up|comedy|music|concert|مؤتمر|ورشة|معرض|كأس|كوميدي/i.test(`${lead.title} ${lead.url}`) ? 2 : 0)
@@ -214,7 +220,7 @@ function chooseProbeLeads(report) {
     interesting
   ].map((bucket) => bucket.sort((a, b) => rank(b) - rank(a) || a.title.localeCompare(b.title)));
 
-  const priority = [];
+  const priority = interesting.filter((lead) => /khobar/i.test(lead.url)).sort((a, b) => rank(b) - rank(a));
   let cursor = 0;
   while (priority.length < interesting.length && buckets.some((bucket) => cursor < bucket.length)) {
     for (const bucket of buckets) {
@@ -397,11 +403,12 @@ function summarize(details) {
 }
 
 async function main() {
-  if (!fs.existsSync(leadsPath)) throw new Error(`Run npm run sources:platinumlist:leads first; missing ${path.relative(rootDir, leadsPath)}`);
   fs.mkdirSync(reportsDir, { recursive: true });
   fs.mkdirSync(rawDir, { recursive: true });
-  const leadReport = JSON.parse(fs.readFileSync(leadsPath, 'utf8'));
-  const leads = chooseProbeLeads(leadReport);
+  const leadReport = fs.existsSync(leadsPath) ? JSON.parse(fs.readFileSync(leadsPath, 'utf8')) : {};
+  const platformReport = fs.existsSync(platformRadarPath) ? JSON.parse(fs.readFileSync(platformRadarPath, 'utf8')) : {};
+  const leads = chooseProbeLeads(leadReport, platformReport);
+  if (!leads.length) throw new Error('No Platinumlist detail leads available from snapshot or platform radar.');
   const { chromium } = await importPlaywright();
   const browser = await chromium.launch({
     headless: process.env.EVENTLIVE_BROWSER_HEADLESS === '0' ? false : true,
@@ -420,7 +427,7 @@ async function main() {
   const summary = summarize(dedupedDetails);
   const report = {
     generated_at: generatedAt,
-    source_leads: path.relative(rootDir, leadsPath),
+    source_leads: [path.relative(rootDir, leadsPath), path.relative(rootDir, platformRadarPath)],
     probe_limit: probeLimit,
     policy: {
       intake_policy: 'candidate-only',

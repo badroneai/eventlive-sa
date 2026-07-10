@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
 import {
   classifyPlatinumlistDetail,
-  parseDetailSignals
+  parseDetailSignals,
+  chooseProbeLeads
 } from './platinumlist-detail-radar.mjs';
 
 const liveEvent = classifyPlatinumlistDetail({
@@ -38,5 +39,17 @@ assert.equal(parsed.city_ar, 'جدة');
 assert.equal(parsed.has_event_schema, true);
 assert.equal(parsed.radar_kind, 'dated-event-radar');
 assert.equal(parsed.best_image_url, 'https://cdn.platinumlist.net/upload/event/sample-full-en123.jpg');
+
+const khobarLeads = chooseProbeLeads({}, {
+  routes: [{
+    city: 'Khobar',
+    event_links: [
+      { title: 'أمسية في الخبر', url: 'https://khobar.platinumlist.net/ar/event-tickets/khobar-night' },
+      { title: 'شاطئ في الخبر', url: 'https://khobar.platinumlist.net/ar/event-tickets/khobar-beach' }
+    ]
+  }]
+});
+assert.equal(khobarLeads.length, 2, 'Khobar platform routes must feed the detail radar');
+assert.ok(khobarLeads.every((lead) => /khobar/i.test(lead.url)));
 
 console.log('TEST_OK platinumlist detail radar regression checks passed');

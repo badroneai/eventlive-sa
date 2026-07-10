@@ -16,5 +16,7 @@ assert.match(source, /city_network/);
 assert.match(source, /Smart AI Search|AI Search/);
 assert.match(source, /for-organisers/);
 assert.match(source, /queue-it|queueit/i);
+assert.match(source, /khobar\.platinumlist\.net\/ar\/calendar\/today/);
+assert.match(source, /khobar\.platinumlist\.net\/ar\/business-events/);
 
 console.log('TEST_OK platinumlist platform radar regression checks passed');

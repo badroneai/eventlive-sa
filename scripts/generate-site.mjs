@@ -4569,6 +4569,7 @@ function homeSearchEvent(event) {
   return {
     t: event.title,
     c: event.city_label || cityLabel(event.city),
+    k: event.city,
     d: formatShortDate(event.starts_at),
     u: compactEventUrl(event)
   };
