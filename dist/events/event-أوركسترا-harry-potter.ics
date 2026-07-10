@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:أوركسترا Harry Potter | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-أوركسترا-harry-potter@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260727T210000Z
+DTEND:20260801T205900Z
+SUMMARY:أوركسترا Harry Potter
+DESCRIPTION:استمتع بأوركسترا ،Harry Potter عرض موسيقي حي يقدم الموسيقى التصويرية لسلسلة الأفام الشهيرة لعشاق السلسلة ومحبي الموسيقى السينمائية.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-أوركسترا-harry-potter.html
+END:VEVENT
+END:VCALENDAR

@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.product-journey-audit.v1",
-  "generated_at": "2026-07-08T01:37:33.080Z",
+  "generated_at": "2026-07-10T06:25:52.657Z",
   "status": "PASS",
   "summary": {
     "journeys_checked": 4,
@@ -93,17 +93,17 @@
   "dead_end_checks": [
     {
       "page": "index.html",
-      "internal_links": 98,
+      "internal_links": 93,
       "status": "PASS"
     },
     {
       "page": "events.html",
-      "internal_links": 73,
+      "internal_links": 87,
       "status": "PASS"
     },
     {
       "page": "today-events.html",
-      "internal_links": 32,
+      "internal_links": 54,
       "status": "PASS"
     },
     {

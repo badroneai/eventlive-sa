@@ -6,8 +6,10 @@ import path from 'node:path';
 import { classifyAudiences } from './audience-utils.mjs';
 import { extractEmbeddedJsonObjects, walkEmbeddedObjects } from './embedded-json-utils.mjs';
 import { parseFlexibleDateRange } from './date-parse-utils.mjs';
+import { normalizeSaudiCity as normalizeCanonicalSaudiCity } from './city-utils.mjs';
 import { ocrRemotePoster } from './poster-ocr-utils.mjs';
 import { ensureDir, exists, readJson, rel, root, writeJson } from './program-lifecycle-utils.mjs';
+import { parseVisitSaudiSummerPdfXml, visitSaudiPdfBufferToXml } from './visit-saudi-summer-pdf-utils.mjs';
 
 const sourceRegistryPath = process.env.EVENTLIVE_SOURCE_REGISTRY_FILE
   ? path.join(root, process.env.EVENTLIVE_SOURCE_REGISTRY_FILE)
@@ -151,6 +153,7 @@ async function fetchWithRelaxedTls(url, options = {}) {
 const sourceExtractors = {
   'visit-saudi-calendar': extractVisitSaudi,
   'visit-saudi-seasons': extractVisitSaudiSeasons,
+  'visit-saudi-calendar-pdf': extractVisitSaudiSummerPdf,
   'invest-saudi-events': extractInvestSaudiEvents,
   'saudi-space-agency-events': extractSaudiSpaceAgencyEvents,
   'experience-alula-events': extractExperienceAlula,
@@ -180,10 +183,13 @@ const sourceExtractors = {
   'asharqia-chamber-events': extractAsharqiaChamberEvents,
   'makkah-chamber-events': extractMakkahChamberEvents,
   'qassim-chamber-events': extractQassimChamberEvents,
+  'qassim-university-events': extractQassimUniversityEvents,
+  'jouf-university-programs': extractJoufUniversityPrograms,
   'abha-chamber-events': extractAbhaChamberEvents,
   'jazan-chamber-events': extractJazanChamberEvents,
   'northern-borders-chamber-events': extractNorthernBordersChamberEvents,
   'tabuk-chamber-events': extractTabukChamberEvents,
+  'scega-exhibitions-conferences': extractScegaEvents,
   'najran-municipality-summer-events': extractNajranMunicipalityEvents,
   'riyadh-city-events': extractRiyadhCityEvents
 };
@@ -477,11 +483,16 @@ function richFieldsFromItem(item = {}) {
     'image_source_url',
     'registration_url',
     'ticket_url',
+    'maps_url',
     'attendance_mode',
     'price_label',
     'language',
     'rich_summary',
     'registration_deadline',
+    'parking_info',
+    'accessibility_info',
+    'age_policy',
+    'duration_label',
     'richness_score'
   ].forEach((key) => {
     if (item[key] !== undefined && item[key] !== null && item[key] !== '') fields[key] = item[key];
@@ -1225,9 +1236,24 @@ function parseEnglishDateRange(value, defaultYear = now.getFullYear()) {
   return null;
 }
 
-function parseAlulaDateRange(value) {
+function parseAlulaDateRange(value, fallbackYear = now.getFullYear()) {
   const text = stripTags(value).replace(/[–—]/g, '-').replace(/\s+/g, ' ').trim();
-  let match = text.match(/(\d{1,2})\s+and\s+(\d{1,2})\s+([A-Za-z]{3,9})\s*,?\s*(\d{4})/i);
+  let match = text.match(/(?:^|\D)(\d{1,2})\s+([A-Za-z]{3,9})(?:\s+(\d{4}))?\s+to\s+(\d{1,2})\s+([A-Za-z]{3,9})\s+(\d{4})(?:\D|$)/i);
+  if (match) {
+    const startDay = Number(match[1]);
+    const startMonth = monthIndex(match[2]);
+    const endDay = Number(match[4]);
+    const endMonth = monthIndex(match[5]);
+    const endYear = Number(match[6]);
+    const startYear = Number(match[3]) || (startMonth > endMonth ? endYear - 1 : endYear);
+    if (Number.isInteger(startMonth) && Number.isInteger(endMonth)) {
+      return {
+        starts_at: dateWithTime(startYear, startMonth, startDay),
+        ends_at: dateWithTime(endYear, endMonth, endDay, '18:00:00')
+      };
+    }
+  }
+  match = text.match(/(?:^|\D)(\d{1,2})\s+(?:and|to)\s+(\d{1,2})\s+([A-Za-z]{3,9})\s*,?\s*(\d{4})(?:\D|$)/i);
   if (match) {
     const startDay = Number(match[1]);
     const endDay = Number(match[2]);
@@ -1237,6 +1263,31 @@ function parseAlulaDateRange(value) {
       return {
         starts_at: dateWithTime(year, month, startDay),
         ends_at: dateWithTime(year, month, endDay, '18:00:00')
+      };
+    }
+  }
+  match = text.match(/(?:^|\s)(\d{1,2})\s+([A-Za-z]{3,9})\s+(\d{4})(?:\s|$)/i);
+  if (match) {
+    const day = Number(match[1]);
+    const month = monthIndex(match[2]);
+    const year = Number(match[3]) || fallbackYear;
+    if (Number.isInteger(month)) {
+      return {
+        starts_at: dateWithTime(year, month, day),
+        ends_at: dateWithTime(year, month, day, '18:00:00')
+      };
+    }
+  }
+  match = text.match(/(?:^|\D)(\d{1,2})\s+([A-Za-z]{3,9})\s*-\s*(\d{1,2})\s+([A-Za-z]{3,9})(?:\D|$)/i);
+  if (match) {
+    const startDay = Number(match[1]);
+    const startMonth = monthIndex(match[2]);
+    const endDay = Number(match[3]);
+    const endMonth = monthIndex(match[4]);
+    if (Number.isInteger(startMonth) && Number.isInteger(endMonth)) {
+      return {
+        starts_at: dateWithTime(fallbackYear, startMonth, startDay),
+        ends_at: dateWithTime(endMonth < startMonth ? fallbackYear + 1 : fallbackYear, endMonth, endDay, '18:00:00')
       };
     }
   }
@@ -1700,6 +1751,10 @@ function extractVisitSaudi(html, source) {
 function extractVisitSaudiSeasons(html, source) {
   return extractVisitSaudiApiEvents(html, source)
     .filter((item) => /season|موسم|festival|fan zone|entertainment|tourism/i.test(`${item.title} ${item.summary} ${item.category}`));
+}
+
+function extractVisitSaudiSummerPdf(xml, source) {
+  return parseVisitSaudiSummerPdfXml(xml, source);
 }
 
 function extractVisitSaudiApiEvents(payloadText, source) {
@@ -2306,65 +2361,175 @@ function inferSwaCategory(title = '', details = '') {
   return 'water sector';
 }
 
-async function extractExperienceAlula(html, source) {
-  const blocks = [...html.matchAll(/<a[^>]+data-track-card-click="Product Cards"[\s\S]*?<\/a>/g)]
-    .map((match) => match[0]);
-  const seen = new Set();
+function highResAlulaImage(value = '') {
+  const url = decodeHtml(value).trim();
+  if (!url) return '';
+  if (/scene7\.com\/is\/image\//i.test(url)) {
+    return `${url.split('?')[0]}?$Responsive$&fit=stretch&fmt=webp&wid=1920`;
+  }
+  return url;
+}
+
+function experienceAlulaInfoPairs(html = '') {
+  const pairs = new Map();
+  for (const match of html.matchAll(/<p class="body-semi-bold">([^<]{1,160})<\/p>\s*<p class="body">([\s\S]*?)<\/p>/gi)) {
+    const label = stripTags(match[1]);
+    const value = stripTags(match[2]);
+    if (label && value && !pairs.has(label)) pairs.set(label, value);
+  }
+  return pairs;
+}
+
+function experienceAlulaCategory(title = '') {
+  const text = title.toLowerCase();
+  if (/race|tour|endurance|warrior|cup|trail|سباق|بطولة/.test(text)) return 'sports';
+  if (/festival|season|مهرجان|موسم/.test(text)) return 'festival';
+  if (/music|concert|azimuth|موسيقى|حفل/.test(text)) return 'music';
+  return 'destination event';
+}
+
+function extractExperienceAlulaDetailHtml(html = '', url = '') {
+  const title = metaContent(html, 'og:title') || stripTags(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || '');
+  if (!title) return null;
+  const info = experienceAlulaInfoPairs(html);
+  const titleYear = Number(title.match(/\b(20\d{2})\b/)?.[1] || now.getFullYear());
+  const dateTexts = [
+    ...[...html.matchAll(/<h3[^>]*class="[^"]*sub-title[^"]*"[^>]*>([\s\S]*?)<\/h3>/gi)].map((match) => stripTags(match[1])),
+    ...[...info.entries()].filter(([label]) => /schedule/i.test(label)).map(([, value]) => value)
+  ].filter(Boolean);
+  const dateText = dateTexts.find((value) => parseAlulaDateRange(value, titleYear)) || '';
+  const dates = parseAlulaDateRange(dateText, titleYear);
+  if (!dates) return null;
+  const venue = info.get('Meeting location') || info.get('Location') || 'AlUla';
+  const priceText = info.get('Price') || info.get('Price range') || '';
+  const imageUrl = highResAlulaImage(metaContent(html, 'og:image') || firstUsefulImageFromHtml(html, url));
+  const directionsBlock = html.match(/<p class="body-semi-bold">(?:Meeting location|Location)<\/p>[\s\S]{0,900}?href="([^"]+)"/i);
+  const overview = stripTags(html.match(/<section[^>]+id="overview-component"[\s\S]*?<div[^>]+class="[^"]*cmp-text[^"]*"[^>]*>([\s\S]*?)<\/div>/i)?.[1] || '');
+  const summary = overview || stripTags(metaContent(html, 'og:description') || `فعالية رسمية منشورة من Experience AlUla.`);
+  const booking = info.get('Booking') || '';
+  const registrationUrl = /no advance booking required/i.test(booking) ? '' : registrationUrlFromHtml(html, url);
+  return {
+    title,
+    url,
+    summary,
+    rich_summary: summary,
+    city: 'AlUla',
+    venue,
+    category: experienceAlulaCategory(title),
+    raw_date_text: dateText,
+    ...(imageUrl ? { image_url: imageUrl, image_alt: title, image_source_url: url } : {}),
+    ...(registrationUrl ? { registration_url: registrationUrl, ticket_url: registrationUrl } : {}),
+    ...(priceText ? { price_label: priceLabelFromText(priceText) || priceText } : {}),
+    ...(directionsBlock?.[1] ? { maps_url: resolveUrl(directionsBlock[1], url) } : {}),
+    ...(info.get('Parking') ? { parking_info: info.get('Parking') } : {}),
+    ...(info.get('Wheelchair and stroller accessible?') ? { accessibility_info: info.get('Wheelchair and stroller accessible?') } : {}),
+    ...(info.get('Age restrictions') || info.get('Age limit') ? { age_policy: info.get('Age restrictions') || info.get('Age limit') } : {}),
+    ...(info.get('Duration') ? { duration_label: info.get('Duration') } : {}),
+    attendance_mode: 'in-person',
+    language: 'en',
+    highlights: [
+      info.get('Duration') ? `Duration: ${info.get('Duration')}` : '',
+      info.get('Age restrictions') || info.get('Age limit') ? `Age: ${info.get('Age restrictions') || info.get('Age limit')}` : '',
+      booking ? `Booking: ${booking}` : '',
+      info.get('Parking') ? `Parking: ${info.get('Parking')}` : '',
+      info.get('Wheelchair and stroller accessible?') ? `Accessibility: ${info.get('Wheelchair and stroller accessible?')}` : ''
+    ].filter(Boolean),
+    ...dates
+  };
+}
+
+function extractExperienceAlulaFestivalCards(html = '', source = {}) {
   const items = [];
-  const detailLinks = [];
-  for (const block of blocks) {
-    const href = block.match(/href="([^"]+)"/)?.[1];
-    if (!href || !/\/en\/whats-on\/(?:events|festivals)\//.test(href)) continue;
+  for (const titleMatch of html.matchAll(/<h4 class="title">([\s\S]*?)<\/h4>/gi)) {
+    const title = stripTags(titleMatch[1]);
+    const start = html.lastIndexOf('<div class="content-block', titleMatch.index);
+    const end = html.indexOf('</a>', titleMatch.index);
+    if (!title || start < 0 || end < 0) continue;
+    const block = html.slice(start, end + 4);
+    const dateText = stripTags(block.match(/<p class="subtitle tags">([\s\S]*?)<\/p>/i)?.[1] || '');
+    const dates = parseAlulaDateRange(dateText, Number(dateText.match(/\b(20\d{2})\b/)?.[1] || now.getFullYear()));
+    const href = block.match(/<a[^>]+href="([^"]+)"[^>]*>[^<]*(?:Learn more|اعرف المزيد)/i)?.[1]
+      || block.match(/<a[^>]+href="([^"]+)"/i)?.[1];
+    if (!dates || !href || !/\/whats-on\/festivals\//.test(href)) continue;
+    const summary = stripTags(block.match(/<div class="description[^>]*>([\s\S]*?)<\/div>/i)?.[1] || '');
+    const image = highResAlulaImage([...block.matchAll(/srcset="([^"]+)"/gi)].map((match) => match[1]).find((value) => /wid=1920/.test(value)) || '');
     const url = resolveUrl(href, source.url);
-    if (seen.has(url)) continue;
-    seen.add(url);
-    detailLinks.push(url);
-    const title = stripTags(block.match(/class="card-title[^"]*"[^>]*>([\s\S]*?)<\/p>/)?.[1] || '');
-    const dateText = stripTags(block.match(/<span class="date">([\s\S]*?)<\/span>/)?.[1] || '');
-    const dates = parseAlulaDateRange(dateText);
-    if (!title || !dates) continue;
-    const city = stripTags(block.match(/<div class="card-location[^"]*"[^>]*>[\s\S]*?<\/span>([\s\S]*?)<\/div>/)?.[1] || '') || 'AlUla';
-    const summary = stripTags(block.match(/<p class="card-text">([\s\S]*?)<\/p>/)?.[1] || '');
-    const category = stripTags(block.match(/data-track-card-click-category>[\s\S]*?<div class="d-flex align-items-center">[\s\S]*?<\/span>([\s\S]*?)<\/div>/)?.[1] || '') || 'destination event';
     items.push({
       title,
       url,
-      summary: summary || `فعالية رسمية من Experience AlUla. التاريخ المعلن: ${dateText}.`,
-      city: normalizeSaudiCity(city, 'AlUla'),
-      venue: city || 'AlUla',
-      category,
+      summary: summary || `مهرجان رسمي ضمن تقويم العلا.` ,
+      rich_summary: summary || undefined,
+      city: 'AlUla',
+      venue: 'AlUla',
+      category: 'festival',
       raw_date_text: dateText,
+      ...(image ? { image_url: image, image_alt: title, image_source_url: url } : {}),
+      attendance_mode: 'in-person',
+      language: 'en',
       ...dates
     });
   }
-
-  const itemUrls = new Set(items.map((item) => item.url));
-  for (const url of detailLinks.filter((link) => !itemUrls.has(link)).slice(0, maxPerSource * 2)) {
-    try {
-      const detailHtml = await fetchHtml({ ...source, collector_url: url });
-      const event = structuredEventFromHtml(detailHtml);
-      const dates = event ? parseStructuredDateRange(event.startDate, event.endDate) : null;
-      if (!event || !dates) continue;
-      const rawSnapshotPath = writeAuxiliarySnapshot(source, event.name || url, detailHtml);
-      const location = typeof event.location === 'string'
-        ? event.location
-        : (event.location?.name || event.location?.address?.addressLocality || 'AlUla');
-      items.push({
-        title: event.name || stripTags(detailHtml.match(/<title>([\s\S]*?)<\/title>/i)?.[1] || ''),
-        url: event.url || url,
-        summary: stripTags(event.description || `فعالية رسمية من Experience AlUla.`),
-        city: normalizeSaudiCity(location, 'AlUla'),
-        venue: location || 'AlUla',
-        category: /MusicEvent/i.test(String(event['@type'] || '')) ? 'music' : 'destination event',
-        raw_snapshot_path: rawSnapshotPath,
-        raw_date_text: [event.startDate, event.endDate].filter(Boolean).join(' - '),
-        ...dates
-      });
-    } catch {
-      // Detail pages are opportunistic; listing extraction remains the baseline.
-    }
-  }
   return items;
+}
+
+function experienceAlulaSitemapLinks(xml = '') {
+  return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)]
+    .map((match) => decodeHtml(match[1]))
+    .filter((url) => /\/en\/whats-on\/events\/[^/?#]+/i.test(url));
+}
+
+async function extractExperienceAlula(html, source) {
+  const blocks = [...html.matchAll(/<a[^>]+data-track-card-click="Product Cards"[\s\S]*?<\/a>/g)].map((match) => match[0]);
+  const detailLinks = blocks
+    .map((block) => block.match(/href="([^"]+)"/)?.[1])
+    .filter((href) => href && /\/en\/whats-on\/(?:events|festivals)\//.test(href))
+    .map((href) => resolveUrl(href, source.url));
+  const items = [];
+
+  try {
+    const sitemapUrl = new URL('/sitemap.xml', source.url).href;
+    const sitemap = await fetchHtml({ ...source, collector_url: sitemapUrl });
+    detailLinks.push(...experienceAlulaSitemapLinks(sitemap));
+  } catch {
+    // The listing remains a legitimate fallback when sitemap retrieval fails.
+  }
+
+  try {
+    const festivalUrl = new URL('/en/whats-on/festivals', source.url).href;
+    const festivalHtml = await fetchHtml({ ...source, collector_url: festivalUrl });
+    items.push(...extractExperienceAlulaFestivalCards(festivalHtml, source));
+  } catch {
+    // Event detail discovery can still produce a useful run without the festival page.
+  }
+
+  const uniqueDetailLinks = [...new Set(detailLinks)].slice(0, Math.max(maxPerSource * 2, 40));
+  let cursor = 0;
+  const detailItems = [];
+  const workers = Array.from({ length: Math.min(4, uniqueDetailLinks.length) }, async () => {
+    while (cursor < uniqueDetailLinks.length) {
+      const url = uniqueDetailLinks[cursor];
+      cursor += 1;
+      try {
+        const detailHtml = await fetchHtml({ ...source, collector_url: url });
+        const event = extractExperienceAlulaDetailHtml(detailHtml, url);
+        if (!event) continue;
+        event.raw_snapshot_path = writeAuxiliarySnapshot(source, event.title || url, detailHtml);
+        detailItems.push(event);
+      } catch {
+        // A failed detail must not invalidate other official detail pages in the same run.
+      }
+    }
+  });
+  await Promise.all(workers);
+  items.push(...detailItems);
+
+  const seen = new Set();
+  return items.filter((item) => {
+    const key = `${item.url}|${item.starts_at}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 }
 
 async function extractRfeccWhatsOn(_html, source) {
@@ -2646,22 +2811,8 @@ function hasSaudiRelevance(value = '') {
 
 function normalizeSaudiCity(value = '', fallback = 'Saudi Arabia') {
   const text = stripTags(value);
-  const lower = text.toLowerCase();
   if (!text) return fallback;
-  if (text.includes('عن بعد') || lower.includes('online') || lower.includes('remote')) return 'Online';
-  if (text.includes('الرياض') || lower.includes('riyadh')) return 'Riyadh';
-  if (text.includes('جدة') || lower.includes('jeddah')) return 'Jeddah';
-  if (text.includes('الخبر') || lower.includes('khobar')) return 'Khobar';
-  if (text.includes('الظهران') || lower.includes('dhahran')) return 'Dhahran';
-  if (text.includes('الدمام') || lower.includes('dammam')) return 'Dammam';
-  if (text.includes('العلا') || lower.includes('alula') || lower.includes('al ula')) return 'AlUla';
-  if (text.includes('بريدة') || lower.includes('buraydah') || lower.includes('buraidah')) return 'Buraydah';
-  if (text.includes('الجبيل') || lower.includes('jubail')) return 'Jubail';
-  if (text.includes('القطيف') || lower.includes('qatif')) return 'Qatif';
-  if (text.includes('خميس') || lower.includes('khamis')) return 'Khamis Mushait';
-  if (text.includes('مكة') || lower.includes('makkah') || lower.includes('mecca')) return 'Makkah';
-  if (text.includes('المدينة') || lower.includes('madinah') || lower.includes('medina')) return 'Madinah';
-  return fallback;
+  return normalizeCanonicalSaudiCity(text, fallback);
 }
 
 function extractTuwaiqAcademy(jsonText, source) {
@@ -3663,6 +3814,136 @@ function extractQassimChamberEvents(html, source) {
   return items;
 }
 
+function isQassimUniversityPublicEvent(title = '') {
+  return !/التحويل|تغيير التخصص|بداية الدراسة|نهاية الدراسة|تسجيل المقررات|حذف|إضافة|الانسحاب|الاعتذار|إجازة|الاختبارات|موعد صرف|آخر يوم|أخر يوم|اخر موعد|رصد الدرجات|احتساب المعدل|المعدل التراكمي|استقبال طلبات/i.test(title);
+}
+
+function qassimUniversityCategory(title = '') {
+  if (/نادي صيفي|النادي الصيفي|برنامج صيفي/i.test(title)) return 'summer program';
+  if (/ورشة/i.test(title)) return 'workshop';
+  if (/ندوة|محاضرة|ملتقى|مؤتمر/i.test(title)) return 'university event';
+  return 'public university event';
+}
+
+function parseQassimUniversityEvents(html = '', source = {}) {
+  const items = [];
+  const blocks = String(html).split(/<div class="jet-listing-grid__item\b/i).slice(1);
+  for (const block of blocks) {
+    const title = stripTags(block.match(/<h4 class="elementor-heading-title[^>]*>([\s\S]*?)<\/h4>/i)?.[1] || '');
+    const dateText = stripTags(block.match(/<h3 class="jet-listing-dynamic-field__content"[^>]*>([\s\S]*?)<\/h3>/i)?.[1] || '');
+    const timeText = stripTags(block.match(/jet-listing-dynamic-field__content"[^>]*>\s*(\d{1,2}:\d{2}\s*(?:صباح(?:ًا|ا)?|مساء(?:ً|ًا|ا)?))/i)?.[1] || '');
+    const href = block.match(/href="([^"]*\/events\/[^"]+)"/i)?.[1] || '';
+    const schedule = officialScheduleFromText(`${dateText} ${timeText}`);
+    if (!title || !isQassimUniversityPublicEvent(title) || !href || !schedule) continue;
+    const url = resolveUrl(href, source.url);
+    items.push({
+      title,
+      url,
+      organizer: source.owner,
+      summary: `فعالية عامة مدرجة في تقويم جامعة القصيم. الموعد المعلن: ${dateText}${timeText ? `، ${timeText}` : ''}.`,
+      city: 'Buraydah',
+      venue: 'Qassim University',
+      category: qassimUniversityCategory(title),
+      raw_date_text: `${dateText} ${timeText}`.trim(),
+      attendance_mode: 'in-person',
+      confidence: 'official',
+      review_status: 'ready-for-review',
+      publication_gate: 'duplicate-review',
+      verification_method: 'official-calendar-explicit-date',
+      date_precision: schedule.date_precision,
+      time_precision: schedule.time_precision,
+      language: 'ar',
+      starts_at: schedule.starts_at,
+      ends_at: schedule.ends_at
+    });
+  }
+  return items;
+}
+
+async function extractQassimUniversityEvents(html, source) {
+  const items = parseQassimUniversityEvents(html, source);
+  await Promise.all(items.slice(0, 20).map(async (item) => {
+    try {
+      const detailHtml = await fetchHtml({ ...source, collector_url: item.url });
+      const enrichment = detailEnrichmentFromHtml(detailHtml, item.url, item.title);
+      item.raw_snapshot_path = writeAuxiliarySnapshot(source, item.title, detailHtml);
+      Object.assign(item, enrichment);
+      if (enrichment.rich_summary) item.summary = enrichment.rich_summary;
+      item.richness_score = calculateRichnessScore(item);
+    } catch {
+      item.richness_score = calculateRichnessScore(item);
+    }
+  }));
+  return items;
+}
+
+function parseJoufUniversitySummerProgram(detailHtml = '', source = {}, url = '', publishedDate = '') {
+  const text = stripTags(detailHtml).replace(/\s+/g, ' ');
+  const titleYear = Number(text.match(/البرنامج الصيفي[^.]{0,120}\b(20\d{2})\b/)?.[1] || publishedDate.slice(0, 4));
+  const monthRange = text.match(/يمتد\s+من\s+شهر\s+([\u0600-\u06ff]+)\s+حتى\s+نهاية\s+([\u0600-\u06ff]+)\s+(20\d{2})/);
+  const startDate = String(publishedDate || '').match(/^(20\d{2})-(\d{2})-(\d{2})/)?.[0] || '';
+  const endMonth = monthRange ? monthIndex(monthRange[2]) : null;
+  const year = Number(monthRange?.[3] || titleYear);
+  if (!startDate || !Number.isInteger(endMonth) || !year || !/تطلق\s+جامعة\s+الجوف\s+البرنامج الصيفي/.test(text)) return null;
+  const endDay = new Date(Date.UTC(year, endMonth + 1, 0)).getUTCDate();
+  const contentImage = [...detailHtml.matchAll(/<img[^>]+src="([^"]+)"[^>]*>/gi)]
+    .map((match) => resolveUrl(decodeHtml(match[1]), url))
+    .find((value) => /\/sites\/default\/files\/styles\/(?:webp|large)\/public\//i.test(value));
+  const imageUrl = contentImage
+    ? contentImage.replace(/\/styles\/(?:webp|large)\/public\//i, '/').split('?')[0]
+    : firstUsefulImageFromHtml(detailHtml, url);
+  const summaryMatch = text.match(/تطلق\s+جامعة\s+الجوف\s+البرنامج الصيفي[\s\S]{0,900}?(?=ويأتي البرنامج|وأكد|ويشتمل)/);
+  const summary = stripTags(summaryMatch?.[0] || metaContent(detailHtml, 'description') || `برنامج صيفي رسمي من جامعة الجوف.`).slice(0, 900);
+  return {
+    title: `البرنامج الصيفي بجامعة الجوف ${year}`,
+    url,
+    organizer: source.owner,
+    summary,
+    rich_summary: summary,
+    city: 'Sakaka',
+    venue: 'Jouf University',
+    category: 'summer program',
+    raw_date_text: `${startDate} - نهاية ${monthRange[2]} ${year}`,
+    ...(imageUrl ? { image_url: imageUrl, image_alt: `البرنامج الصيفي بجامعة الجوف ${year}`, image_source_url: url } : {}),
+    attendance_mode: 'in-person',
+    confidence: 'official',
+    review_status: 'ready-for-review',
+    publication_gate: 'duplicate-review',
+    verification_method: 'official-launch-date-and-explicit-month-range',
+    date_precision: 'official-month-window',
+    time_precision: 'date-only',
+    language: 'ar',
+    highlights: ['أكثر من 50 برنامجًا وفعالية نوعية', 'أكثر من 210 ساعات تدريبية', 'مسارات معرفية وتدريبية وتطوعية ورياضية'],
+    starts_at: `${startDate}T00:00:00+03:00`,
+    ends_at: `${year}-${String(endMonth + 1).padStart(2, '0')}-${String(endDay).padStart(2, '0')}T23:59:00+03:00`
+  };
+}
+
+async function extractJoufUniversityPrograms(html, source) {
+  const items = [];
+  const blocks = String(html).split(/<div class="views-row">/i).slice(1);
+  for (const block of blocks) {
+    if (!/البرنامج الصيفي|summer-program/i.test(block)) continue;
+    const href = block.match(/<a href="([^"]+)"[^>]*hreflang="ar"/i)?.[1]
+      || block.match(/onclick="location\.href=&#039;([^&]+)&#039;"/i)?.[1]
+      || '';
+    const publishedDate = block.match(/<time datetime="(20\d{2}-\d{2}-\d{2})/i)?.[1] || '';
+    if (!href || !publishedDate) continue;
+    const url = resolveUrl(href, source.url);
+    try {
+      const detailHtml = await fetchHtml({ ...source, collector_url: url });
+      const item = parseJoufUniversitySummerProgram(detailHtml, source, url, publishedDate);
+      if (!item) continue;
+      item.raw_snapshot_path = writeAuxiliarySnapshot(source, item.title, detailHtml);
+      item.richness_score = calculateRichnessScore(item);
+      items.push(item);
+    } catch {
+      // The official detail is required because the listing alone lacks the end month.
+    }
+  }
+  return items;
+}
+
 function extractAbhaChamberEvents(html, source) {
   const items = [];
   const seen = new Set();
@@ -4385,6 +4666,70 @@ function normalizeCandidateKeyValue(value) {
   return decodeHtml(value).trim().toLowerCase().replace(/\s+/g, ' ');
 }
 
+function extractScegaEvents(payload, source) {
+  let parsed;
+  try { parsed = JSON.parse(payload); } catch { return []; }
+  const rawRows = parsed?.data?.items?.item1;
+  if (!Array.isArray(rawRows)) return [];
+  const grouped = new Map();
+
+  for (const raw of rawRows) {
+    const titleAr = stripTags(raw.nameAr || '');
+    const titleEn = stripTags(raw.name || '');
+    const title = titleAr && titleAr !== '---' ? titleAr : titleEn;
+    if (!title || title === '---') continue;
+    const sourceCity = stripTags(raw.city || raw.region || 'Saudi Arabia');
+    const city = /malham|ملهم/i.test(sourceCity) ? 'Riyadh' : normalizeSaudiCity(sourceCity, sourceCity || 'Saudi Arabia');
+    const venue = stripTags(raw.neighborhood || raw.eventLocationAr || raw.eventLocation || city);
+    const startsAt = dateTimeFromIsoDateAndClock(raw.eventDateFrom, raw.eventStartTime, '09:00:00');
+    const endsAt = dateTimeFromIsoDateAndClock(raw.eventDateTo || raw.eventDateFrom, raw.eventEndTime, '17:00:00');
+    if (!startsAt || !endsAt || Date.parse(endsAt) <= Date.parse(startsAt)) continue;
+    const key = [normalizeCandidateKeyValue(title), normalizeCandidateKeyValue(city), normalizeCandidateKeyValue(venue)].join('|');
+    const previous = grouped.get(key);
+    if (!previous) {
+      grouped.set(key, { ...raw, title, city, venue, starts_at: startsAt, ends_at: endsAt, ids: [raw.id].filter(Boolean) });
+      continue;
+    }
+    previous.starts_at = previous.starts_at < startsAt ? previous.starts_at : startsAt;
+    previous.ends_at = previous.ends_at > endsAt ? previous.ends_at : endsAt;
+    previous.ids = [...new Set([...previous.ids, raw.id].filter(Boolean))];
+  }
+
+  return [...grouped.values()].map((row) => {
+    const detailId = row.ids.slice().sort((a, b) => Number(a) - Number(b))[0];
+    const url = new URL(`/h-events-details/${detailId}`, source.url).href;
+    const descriptionAr = stripTags(row.descriptionAr || '');
+    const descriptionEn = stripTags(row.description || '');
+    const summary = [descriptionAr, descriptionEn].find((value) => value && value !== '---')
+      || `${row.title} فعالية رسمية مدرجة في تقويم الهيئة السعودية للمعارض والمؤتمرات.`;
+    const categoryText = `${row.eventTypeAr || ''} ${row.eventTypeE || ''}`;
+    const category = /مؤتمر|conference|forum|summit/i.test(categoryText) ? 'conference' : /معرض|exhibition|expo/i.test(categoryText) ? 'exhibition' : 'business event';
+    return {
+      title: row.title,
+      url,
+      organizer: source.owner,
+      summary,
+      city: row.city,
+      venue: row.venue,
+      category,
+      raw_date_text: `${row.eventDateFrom || ''} ${row.eventStartTime || ''} - ${row.eventDateTo || row.eventDateFrom || ''} ${row.eventEndTime || ''}`.trim(),
+      starts_at: row.starts_at,
+      ends_at: row.ends_at,
+      attendance_mode: 'in-person',
+      language: /[\u0600-\u06ff]/.test(row.title) ? 'ar' : 'en',
+      confidence: 'official',
+      review_status: 'ready-for-review',
+      publication_gate: 'duplicate-review',
+      verification_method: 'official-public-json-api',
+      date_precision: 'explicit-range',
+      time_precision: 'exact',
+      tags: ['SCEGA', category, 'official business event'],
+      richness_score: calculateRichnessScore({ title: row.title, summary, city: row.city, venue: row.venue, category, attendance_mode: 'in-person', language: 'ar' }),
+      source_record_ids: row.ids.map(String)
+    };
+  }).sort((a, b) => a.starts_at.localeCompare(b.starts_at) || a.title.localeCompare(b.title));
+}
+
 function candidateMergeKey(candidate) {
   return [
     normalizeCandidateKeyValue(candidate.source_url),
@@ -4560,6 +4905,27 @@ async function fetchHtml(source) {
     headers['sec-fetch-site'] = 'same-origin';
     options.body = JSON.stringify(source.collector_body || {});
   }
+  if (source.fetch_method === 'pdf-calendar') {
+    let lastPdfError;
+    for (const candidateUrl of targets) {
+      try {
+        const pdfResponse = await collectorFetch(candidateUrl, {
+          ...options,
+          signal: AbortSignal.timeout(Math.max(fetchTimeoutMs, 120_000))
+        });
+        if (!pdfResponse.ok) throw new Error(`HTTP ${pdfResponse.status}`);
+        const xml = visitSaudiPdfBufferToXml(Buffer.from(await pdfResponse.arrayBuffer()), {
+          imageOutputDir: path.join(root, 'dist', 'assets', 'event-images'),
+          publicBasePath: '/assets/event-images'
+        });
+        sourceFetchModes.set(source.id, 'direct-pdf');
+        return xml;
+      } catch (error) {
+        lastPdfError = error;
+      }
+    }
+    throw lastPdfError || new Error('pdf-fetch-failed');
+  }
   let response;
   let text = '';
   let lastError;
@@ -4625,6 +4991,7 @@ async function fetchBrowserRenderedHtml(source, waitMs = 4500) {
 }
 
 function snapshotExtensionFor(source) {
+  if (source.fetch_method === 'pdf-calendar') return 'xml';
   const target = source.collector_url || source.url || '';
   return /\/api\/|api\.|\.json(?:$|\?)/i.test(target) ? 'json' : 'html';
 }
@@ -4730,15 +5097,17 @@ async function main() {
       summary.snapshot_path = rel(snapshotPath);
       const extractedItems = (await extractor(html, source))
         .filter((item) => item.title && item.starts_at && item.ends_at && item.url);
+      const sourceMaxCandidates = Math.max(1, Number(source.max_candidates_per_run || maxPerSource));
+      const sourceMaxEnded = Math.max(1, Number(source.max_ended_per_run || maxArchivePerSource));
       const items = extractedItems
         .filter((item) => !isPastCandidate(item))
         .sort((a, b) => new Date(a.starts_at).getTime() - new Date(b.starts_at).getTime())
-        .slice(0, maxPerSource);
+        .slice(0, sourceMaxCandidates);
       const historicalItems = extractedItems
         .filter((item) => isPastCandidate(item))
         .filter(isAllowedEndedCandidate)
         .sort((a, b) => new Date(b.starts_at).getTime() - new Date(a.starts_at).getTime())
-        .slice(0, maxArchivePerSource);
+        .slice(0, sourceMaxEnded);
       const candidates = items
         .map((item) => baseCandidate(source, item, summary.snapshot_path));
       const endedEvents = historicalItems
@@ -4831,6 +5200,8 @@ export {
   extractAbhaChamberEvents,
   extractAsharqiaChamberEvents,
   extractCodeMcitPrograms,
+  extractExperienceAlulaDetailHtml,
+  extractExperienceAlulaFestivalCards,
   extractInvestSaudiEvents,
   extractIthraEvents,
   extractSaudiSpaceAgencyEvents,
@@ -4843,6 +5214,7 @@ export {
   extractMocCalendarPayload,
   extractQassimChamberEvents,
   extractTabukChamberEvents,
+  extractScegaEvents,
   extractKaustEvents,
   extractKauEvents,
   extractRiyadhCityEvents,
@@ -4854,6 +5226,9 @@ export {
   sourceCandidateDelta,
   isPastCandidate,
   mergeEndedEvents,
+  parseAlulaDateRange,
+  parseQassimUniversityEvents,
+  parseJoufUniversitySummerProgram,
   parseMonshaatDate,
   sourceExtractors
 };

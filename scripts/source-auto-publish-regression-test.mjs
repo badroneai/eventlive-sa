@@ -132,6 +132,89 @@ fs.writeFileSync(catalogPath, `${JSON.stringify({
       },
       source_file: '',
       tags: ['workshop']
+    },
+    {
+      id: 'event-collapsed-pdf-row',
+      slug: 'collapsed-pdf-row',
+      title: 'Collapsed PDF Row',
+      organizer: 'Saudi Tourism Authority',
+      city: 'Jeddah',
+      venue: 'Jeddah',
+      venue_address: 'Jeddah',
+      category: 'festival',
+      summary: 'Stale row created by the former one-document-one-event identity rule.',
+      starts_at: '2026-12-20T00:00:00+03:00',
+      ends_at: '2026-12-20T23:59:00+03:00',
+      updated_at: '2026-07-03T00:00:00+03:00',
+      sessions_count: 0,
+      tracks_count: 0,
+      rooms_count: 0,
+      live_updates_count: 0,
+      approval_status: 'published',
+      published_by: 'EventLive Auto Publisher',
+      source_label: 'Visit Saudi Calendar PDF',
+      source_url: 'https://www.visitsaudi.com/content/dam/documents/calendar.pdf',
+      evidence_url: 'https://www.visitsaudi.com/content/dam/documents/calendar.pdf',
+      source_confidence: 'approved-source',
+      live_schedule_ready: false,
+      source_file: 'data/raw/source-snapshots/calendar.xml',
+      tags: ['festival']
+    },
+    {
+      id: 'event-eishha-rich-detail',
+      slug: 'eishha-rich-detail',
+      title: 'Eishha Live It Fan Zone For FIFA World Cup 2026',
+      organizer: 'Riyadh City',
+      city: 'Riyadh',
+      venue: 'Boulevard City',
+      venue_address: 'Boulevard City',
+      category: 'sports',
+      summary: 'Rich official detail row with image and precise operating hours.',
+      image_url: 'https://riyadh.sa/eishha.jpg',
+      starts_at: '2026-06-11T18:00:00+03:00',
+      ends_at: '2026-07-19T23:55:00+03:00',
+      updated_at: '2026-07-03T00:00:00+03:00',
+      sessions_count: 0,
+      tracks_count: 0,
+      rooms_count: 0,
+      live_updates_count: 0,
+      approval_status: 'published',
+      published_by: 'EventLive Auto Publisher',
+      source_label: 'Riyadh City Events',
+      source_url: 'https://riyadh.sa/en/moment/events/item/event/31073',
+      evidence_url: 'https://riyadh.sa/en/moment/events/item/event/31073',
+      source_confidence: 'approved-source',
+      live_schedule_ready: false,
+      source_file: 'data/raw/source-snapshots/riyadh-city-events.json',
+      tags: ['sports']
+    },
+    {
+      id: 'event-kashtah-rich-detail',
+      slug: 'kashtah',
+      title: 'Kashtah',
+      organizer: 'Saudi Tourism Authority',
+      city: 'Aseer',
+      venue: 'Al-Hadabah Park',
+      venue_address: 'Al-Hadabah Park',
+      category: 'families',
+      summary: 'Rich official detail row for Kashtah.',
+      image_url: 'https://visitsaudi.com/kashtah.jpg',
+      starts_at: '2026-06-27T16:00:00+03:00',
+      ends_at: '2026-08-31T00:00:00+03:00',
+      updated_at: '2026-07-03T00:00:00+03:00',
+      sessions_count: 0,
+      tracks_count: 0,
+      rooms_count: 0,
+      live_updates_count: 0,
+      approval_status: 'published',
+      published_by: 'EventLive Auto Publisher',
+      source_label: 'Visit Saudi Calendar',
+      source_url: 'https://www.visitsaudi.com/en/aseer/events/kashtah',
+      evidence_url: 'https://www.visitsaudi.com/en/aseer/events/kashtah',
+      source_confidence: 'approved-source',
+      live_schedule_ready: false,
+      source_file: 'data/raw/source-snapshots/visit-saudi.json',
+      tags: ['families']
     }
   ]
 }, null, 2)}\n`, 'utf8');
@@ -225,6 +308,9 @@ fs.writeFileSync(candidatesPath, `${JSON.stringify({
       venue: 'Online',
       category: 'workshop',
       summary: 'Generic source-card window that must not replace detail enrichment.',
+      image_url: '/assets/event-images/provider-enriched-workshop.jpg',
+      image_alt: 'Provider Enriched Workshop',
+      image_source_url: 'https://example.gov.sa/events/provider-enriched-workshop',
       starts_at: '2026-12-08T09:00:00+03:00',
       ends_at: '2026-12-08T18:00:00+03:00',
       source_type: 'official-site',
@@ -266,6 +352,110 @@ fs.writeFileSync(candidatesPath, `${JSON.stringify({
       extracted_sessions_count: 0,
       reviewer_notes: 'Source/date duplicate regression fixture.',
       tags: ['workshop']
+    },
+    {
+      id: 'candidate-official-pdf-event-one',
+      title: 'Official PDF Event One',
+      organizer: 'Saudi Tourism Authority',
+      city: 'Jeddah',
+      venue: 'Jeddah',
+      category: 'festival',
+      summary: 'First distinct event from a multi-event official PDF.',
+      starts_at: '2026-12-20T00:00:00+03:00',
+      ends_at: '2026-12-20T23:59:00+03:00',
+      source_type: 'official-site',
+      source_url: 'https://www.visitsaudi.com/content/dam/documents/calendar.pdf',
+      source_label: 'Visit Saudi Calendar PDF',
+      source_owner: 'Saudi Tourism Authority',
+      evidence_url: 'https://www.visitsaudi.com/content/dam/documents/calendar.pdf',
+      raw_snapshot_path: 'data/raw/source-snapshots/calendar.xml',
+      discovered_at: '2026-07-03T00:00:00+03:00',
+      discovery_method: 'official-calendar',
+      confidence: 'official',
+      review_status: 'approved-for-catalog',
+      publication_gate: 'catalog-review',
+      matched_catalog_event_id: 'event-collapsed-pdf-row',
+      extracted_sessions_count: 0,
+      reviewer_notes: 'Multi-event PDF regression fixture.',
+      tags: ['festival']
+    },
+    {
+      id: 'candidate-official-pdf-event-two',
+      title: 'Official PDF Event Two',
+      organizer: 'Saudi Tourism Authority',
+      city: 'Al Baha',
+      venue: 'Al Baha',
+      category: 'festival',
+      summary: 'Second distinct event from the same multi-event official PDF and date.',
+      starts_at: '2026-12-20T00:00:00+03:00',
+      ends_at: '2026-12-20T23:59:00+03:00',
+      source_type: 'official-site',
+      source_url: 'https://www.visitsaudi.com/content/dam/documents/calendar.pdf',
+      source_label: 'Visit Saudi Calendar PDF',
+      source_owner: 'Saudi Tourism Authority',
+      evidence_url: 'https://www.visitsaudi.com/content/dam/documents/calendar.pdf',
+      raw_snapshot_path: 'data/raw/source-snapshots/calendar.xml',
+      discovered_at: '2026-07-03T00:00:00+03:00',
+      discovery_method: 'official-calendar',
+      confidence: 'official',
+      review_status: 'approved-for-catalog',
+      publication_gate: 'catalog-review',
+      matched_catalog_event_id: 'event-collapsed-pdf-row',
+      extracted_sessions_count: 0,
+      reviewer_notes: 'Multi-event PDF regression fixture.',
+      tags: ['festival']
+    },
+    {
+      id: 'candidate-official-pdf-eishha-arabic',
+      title: 'عيشها',
+      organizer: 'Saudi Tourism Authority',
+      city: 'Riyadh',
+      venue: 'Riyadh',
+      category: 'sports',
+      summary: 'Arabic calendar row for the same rich English event.',
+      starts_at: '2026-06-11T00:00:00+03:00',
+      ends_at: '2026-07-19T23:59:00+03:00',
+      source_type: 'official-site',
+      source_url: 'https://www.visitsaudi.com/content/dam/documents/calendar.pdf',
+      source_label: 'Visit Saudi Calendar PDF',
+      source_owner: 'Saudi Tourism Authority',
+      evidence_url: 'https://www.visitsaudi.com/content/dam/documents/calendar.pdf',
+      ticket_url: 'https://webook.com/ar/sa/ruh/sports-event/events/eishha-world-cup-2026-fan-zone-tickets',
+      registration_url: 'https://webook.com/ar/sa/ruh/sports-event/events/eishha-world-cup-2026-fan-zone-tickets',
+      raw_snapshot_path: 'data/raw/source-snapshots/calendar.xml',
+      discovered_at: '2026-07-03T00:00:00+03:00',
+      discovery_method: 'official-calendar',
+      confidence: 'official',
+      review_status: 'ready-for-review',
+      publication_gate: 'duplicate-review',
+      extracted_sessions_count: 0,
+      reviewer_notes: 'Action URL semantic identity regression fixture.',
+      tags: ['sports']
+    },
+    {
+      id: 'candidate-official-pdf-kashtah-arabic',
+      title: 'كشتة',
+      organizer: 'Saudi Tourism Authority',
+      city: 'Aseer',
+      venue: 'Aseer',
+      category: 'families',
+      summary: 'Arabic calendar row for Kashtah.',
+      starts_at: '2026-06-27T00:00:00+03:00',
+      ends_at: '2026-08-31T23:59:00+03:00',
+      source_type: 'official-site',
+      source_url: 'https://www.visitsaudi.com/content/dam/documents/calendar.pdf',
+      source_label: 'Visit Saudi Calendar PDF',
+      source_owner: 'Saudi Tourism Authority',
+      evidence_url: 'https://www.visitsaudi.com/content/dam/documents/calendar.pdf',
+      raw_snapshot_path: 'data/raw/source-snapshots/calendar.xml',
+      discovered_at: '2026-07-03T00:00:00+03:00',
+      discovery_method: 'official-calendar',
+      confidence: 'official',
+      review_status: 'ready-for-review',
+      publication_gate: 'duplicate-review',
+      extracted_sessions_count: 0,
+      reviewer_notes: 'Bilingual alias regression fixture.',
+      tags: ['families']
     }
   ]
 }, null, 2)}\n`, 'utf8');
@@ -293,10 +483,10 @@ const candidates = JSON.parse(fs.readFileSync(candidatesPath, 'utf8'));
 const candidate = candidates.candidates[0];
 
 if (
-  catalog.events.length !== 4
+  catalog.events.length !== 8
   || catalog.events.some((event) => event.id === 'event-invalid-auto-published')
   || candidate.matched_catalog_event_id !== 'event-saudi-national-day'
-  || !/Published:\s*1/i.test(out)
+  || !/Published:\s*3/i.test(out)
 ) {
   console.error('TEST_FAIL official title/date duplicate should link instead of publishing a second row');
   console.error(out);
@@ -321,7 +511,7 @@ if (
 }
 
 if (
-  catalog.events.length !== 4
+  catalog.events.length !== 8
   || sourceDateVariant?.matched_catalog_event_id !== imageEvent.id
 ) {
   console.error('TEST_FAIL official source/date duplicate should link to the first published event');
@@ -329,12 +519,48 @@ if (
   process.exit(1);
 }
 
+const pdfEvents = catalog.events.filter((event) => /^Official PDF Event /.test(event.title));
+const pdfCandidates = candidates.candidates.filter((row) => /^candidate-official-pdf-event-/.test(row.id));
+if (
+  pdfEvents.length !== 2
+  || catalog.events.some((event) => event.id === 'event-collapsed-pdf-row')
+  || new Set(pdfCandidates.map((row) => row.matched_catalog_event_id)).size !== 2
+) {
+  console.error('TEST_FAIL a multi-event PDF must not collapse distinct rows onto one source identity');
+  console.error(JSON.stringify({ pdfEvents, pdfCandidates }, null, 2));
+  process.exit(1);
+}
+
+const actionCandidate = candidates.candidates.find((row) => row.id === 'candidate-official-pdf-eishha-arabic');
+const actionEvent = catalog.events.find((event) => event.id === 'event-eishha-rich-detail');
+if (
+  actionCandidate?.matched_catalog_event_id !== 'event-eishha-rich-detail'
+  || actionEvent?.starts_at !== '2026-06-11T18:00:00+03:00'
+  || !actionEvent?.ticket_url?.includes('eishha-world-cup-2026-fan-zone-tickets')
+  || catalog.events.some((event) => event.id === 'event-عيشها')
+) {
+  console.error('TEST_FAIL action URL semantics must join a bilingual calendar row to its richer detail record');
+  console.error(JSON.stringify({ actionCandidate, actionEvent }, null, 2));
+  process.exit(1);
+}
+
+const aliasCandidate = candidates.candidates.find((row) => row.id === 'candidate-official-pdf-kashtah-arabic');
+if (
+  aliasCandidate?.matched_catalog_event_id !== 'event-kashtah-rich-detail'
+  || catalog.events.some((event) => event.id === 'event-كشتة')
+) {
+  console.error('TEST_FAIL a high-confidence bilingual title alias must retain the richer official detail row');
+  console.error(JSON.stringify({ aliasCandidate }, null, 2));
+  process.exit(1);
+}
+
 if (
   providerCandidate?.matched_catalog_event_id !== 'event-provider-enriched-workshop'
   || providerEvent?.starts_at !== '2026-12-08T14:30:00+03:00'
   || providerEvent?.ends_at !== '2026-12-08T16:00:00+03:00'
+  || providerEvent?.image_url !== '/assets/event-images/provider-enriched-workshop.jpg'
 ) {
-  console.error('TEST_FAIL linked generic source row must not overwrite official provider enrichment');
+  console.error('TEST_FAIL linked source row must preserve official provider timing while filling missing media');
   console.error(JSON.stringify({ providerCandidate, providerEvent }, null, 2));
   process.exit(1);
 }

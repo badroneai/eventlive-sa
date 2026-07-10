@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { selectBacklogTargets } from './backlog-target-utils.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -8,6 +9,8 @@ const reportMdPath = path.join(root, 'reports', 'official-event-backlog-enrichme
 const generatedAt = new Date().toISOString();
 const timeoutMs = Math.max(3000, Number(process.env.EVENTLIVE_BACKLOG_TIMEOUT_MS || 12000));
 const limit = Math.max(1, Number(process.env.EVENTLIVE_BACKLOG_LIMIT || 100));
+const concurrency = Math.min(8, Math.max(1, Number(process.env.EVENTLIVE_BACKLOG_CONCURRENCY || 5)));
+const refreshIntervalMs = Math.max(60_000, Number(process.env.EVENTLIVE_BACKLOG_REFRESH_MS || 7 * 24 * 60 * 60 * 1000));
 
 function readJson(filePath, fallback) {
   try {
@@ -234,30 +237,40 @@ function applyBacklogOutline(event, page = {}) {
 
 const catalog = readJson(catalogPath, { events: [] });
 const events = Array.isArray(catalog.events) ? catalog.events : [];
-const targets = events
-  .filter((event) => event.approval_status === 'published')
-  .filter((event) => !event.program_outline || ['official-page-meta', 'approved-source-row', 'eventlive-internal-seed'].includes(event.program_outline.source_method))
-  .slice(0, limit);
+const targets = selectBacklogTargets(events, {
+  limit,
+  refreshIntervalMs,
+  nowMs: Date.parse(generatedAt)
+});
 
 const enriched = [];
 const failed = [];
 
-for (const event of targets) {
-  const url = sourceUrl(event);
-  const page = await fetchPageMeta(url);
-  applyBacklogOutline(event, page);
-  enriched.push({
-    id: event.id,
-    title: event.title,
-    source_label: event.source_label,
-    source_method: event.program_outline.source_method,
-    source_url: url,
-    fetched: Boolean(page.ok),
-    image: Boolean(event.image_url),
-    fetch_reason: page.ok ? '' : page.reason
-  });
-  if (!page.ok && url) {
-    failed.push({ id: event.id, title: event.title, source_url: url, reason: page.reason });
+for (let offset = 0; offset < targets.length; offset += concurrency) {
+  const batch = targets.slice(offset, offset + concurrency);
+  const results = await Promise.all(batch.map(async (event) => {
+    const url = sourceUrl(event);
+    const page = await fetchPageMeta(url);
+    applyBacklogOutline(event, page);
+    return {
+      row: {
+        id: event.id,
+        title: event.title,
+        source_label: event.source_label,
+        source_method: event.program_outline.source_method,
+        source_url: url,
+        fetched: Boolean(page.ok),
+        image: Boolean(event.image_url),
+        fetch_reason: page.ok ? '' : page.reason
+      },
+      failure: !page.ok && url
+        ? { id: event.id, title: event.title, source_url: url, reason: page.reason }
+        : null
+    };
+  }));
+  for (const result of results) {
+    enriched.push(result.row);
+    if (result.failure) failed.push(result.failure);
   }
 }
 

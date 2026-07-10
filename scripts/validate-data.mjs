@@ -215,7 +215,7 @@ function validateCatalog(catalog, catalogSchema) {
     if (event.live_schedule_ready === false && event.url) {
       errors.push(`${prefix}: live_schedule_ready=false must not include url`);
     }
-    if (event.approval_status === 'published' && !['approved-source', 'organizer-confirmed'].includes(event.source_confidence)) {
+    if (event.approval_status === 'published' && !['approved-source', 'corroborated-source', 'organizer-confirmed'].includes(event.source_confidence)) {
       warnings.push(`${prefix}: published catalog event should have approved source confidence`);
     }
     if (Array.isArray(event.tags) && event.tags.length > 10) {

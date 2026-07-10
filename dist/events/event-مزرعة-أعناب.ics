@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:مزرعة أعناب | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-مزرعة-أعناب@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260623T210000Z
+DTEND:20260901T205900Z
+SUMMARY:مزرعة أعناب
+DESCRIPTION:فعالية ريفية تفاعلية تتيح للزوار زراعة الشتلات، وقطف الفواكه، وتذوق العصائر، وإعداد خبز التنور، والتصوير بالزي التراثي. مزرعة أعناب ضمن رياضة وفعاليات جماهيرية في عسير. تبدأ الفعالية ٢٤‏/٠٦‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ٠١‏/٠٩‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.
+LOCATION:منطقة عسير
+URL:https://eventme.live/events/event-مزرعة-أعناب.html
+END:VEVENT
+END:VCALENDAR

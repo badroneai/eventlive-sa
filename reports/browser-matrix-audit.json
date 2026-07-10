@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.browser-matrix-audit.v1",
-  "generated_at": "2026-07-09T13:32:12.317Z",
+  "generated_at": "2026-07-10T06:26:07.869Z",
   "status": "PASS",
   "summary": {
     "engines": 2,
@@ -19,11 +19,11 @@
       "metrics": {
         "scrollWidth": 390,
         "clientWidth": 390,
-        "bodyHeight": 3175,
+        "bodyHeight": 2603,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 752,
-        "loadMs": 1515
+        "domContentLoadedMs": 601,
+        "loadMs": 1435
       },
       "violations": []
     },
@@ -36,11 +36,11 @@
       "metrics": {
         "scrollWidth": 390,
         "clientWidth": 390,
-        "bodyHeight": 20930,
+        "bodyHeight": 20621,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 203,
-        "loadMs": 224
+        "domContentLoadedMs": 168,
+        "loadMs": 185
       },
       "violations": []
     },
@@ -53,11 +53,11 @@
       "metrics": {
         "scrollWidth": 390,
         "clientWidth": 390,
-        "bodyHeight": 11780,
+        "bodyHeight": 14955,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
         "domContentLoadedMs": 19,
-        "loadMs": 32
+        "loadMs": 34
       },
       "violations": []
     },
@@ -71,10 +71,10 @@
         "scrollWidth": 390,
         "clientWidth": 390,
         "bodyHeight": 844,
-        "h1Text": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+        "h1Text": "Unstable",
         "h1Visible": true,
-        "domContentLoadedMs": 26,
-        "loadMs": 59
+        "domContentLoadedMs": 9,
+        "loadMs": 52
       },
       "violations": []
     },
@@ -90,25 +90,25 @@
         "bodyHeight": 6430,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 208,
-        "loadMs": 208
+        "domContentLoadedMs": 167,
+        "loadMs": 168
       },
       "violations": []
     },
     {
       "engine": "chromium",
       "viewport": "mobile",
-      "page": "/events/demo-event.html",
+      "page": "/events/event-beast-house.html",
       "http_status": 200,
       "console_errors": 0,
       "metrics": {
         "scrollWidth": 390,
         "clientWidth": 390,
-        "bodyHeight": 3712,
-        "h1Text": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+        "bodyHeight": 4722,
+        "h1Text": "Beast House",
         "h1Visible": true,
-        "domContentLoadedMs": 55,
-        "loadMs": 61
+        "domContentLoadedMs": 21,
+        "loadMs": 26
       },
       "violations": []
     },
@@ -121,11 +121,11 @@
       "metrics": {
         "scrollWidth": 820,
         "clientWidth": 820,
-        "bodyHeight": 2777,
+        "bodyHeight": 2273,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 445,
-        "loadMs": 1129
+        "domContentLoadedMs": 510,
+        "loadMs": 1238
       },
       "violations": []
     },
@@ -138,11 +138,11 @@
       "metrics": {
         "scrollWidth": 820,
         "clientWidth": 820,
-        "bodyHeight": 11253,
+        "bodyHeight": 11169,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 178,
-        "loadMs": 195
+        "domContentLoadedMs": 195,
+        "loadMs": 210
       },
       "violations": []
     },
@@ -155,11 +155,11 @@
       "metrics": {
         "scrollWidth": 820,
         "clientWidth": 820,
-        "bodyHeight": 6823,
+        "bodyHeight": 8580,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 7,
-        "loadMs": 17
+        "domContentLoadedMs": 22,
+        "loadMs": 41
       },
       "violations": []
     },
@@ -173,10 +173,10 @@
         "scrollWidth": 820,
         "clientWidth": 820,
         "bodyHeight": 1180,
-        "h1Text": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+        "h1Text": "Unstable",
         "h1Visible": true,
-        "domContentLoadedMs": 180,
-        "loadMs": 193
+        "domContentLoadedMs": 163,
+        "loadMs": 163
       },
       "violations": []
     },
@@ -192,25 +192,25 @@
         "bodyHeight": 5516,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 193,
-        "loadMs": 193
+        "domContentLoadedMs": 142,
+        "loadMs": 142
       },
       "violations": []
     },
     {
       "engine": "chromium",
       "viewport": "tablet",
-      "page": "/events/demo-event.html",
+      "page": "/events/event-beast-house.html",
       "http_status": 200,
       "console_errors": 0,
       "metrics": {
         "scrollWidth": 820,
         "clientWidth": 820,
-        "bodyHeight": 2825,
-        "h1Text": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+        "bodyHeight": 3513,
+        "h1Text": "Beast House",
         "h1Visible": true,
-        "domContentLoadedMs": 23,
-        "loadMs": 29
+        "domContentLoadedMs": 13,
+        "loadMs": 27
       },
       "violations": []
     },
@@ -223,11 +223,11 @@
       "metrics": {
         "scrollWidth": 1440,
         "clientWidth": 1440,
-        "bodyHeight": 4118,
+        "bodyHeight": 3101,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 459,
-        "loadMs": 1129
+        "domContentLoadedMs": 407,
+        "loadMs": 1052
       },
       "violations": []
     },
@@ -240,11 +240,11 @@
       "metrics": {
         "scrollWidth": 1440,
         "clientWidth": 1440,
-        "bodyHeight": 7751,
+        "bodyHeight": 7672,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 228,
-        "loadMs": 230
+        "domContentLoadedMs": 204,
+        "loadMs": 207
       },
       "violations": []
     },
@@ -257,11 +257,11 @@
       "metrics": {
         "scrollWidth": 1440,
         "clientWidth": 1440,
-        "bodyHeight": 5308,
+        "bodyHeight": 6862,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 7,
-        "loadMs": 17
+        "domContentLoadedMs": 20,
+        "loadMs": 37
       },
       "violations": []
     },
@@ -275,10 +275,10 @@
         "scrollWidth": 1440,
         "clientWidth": 1440,
         "bodyHeight": 900,
-        "h1Text": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+        "h1Text": "Unstable",
         "h1Visible": true,
-        "domContentLoadedMs": 183,
-        "loadMs": 183
+        "domContentLoadedMs": 231,
+        "loadMs": 231
       },
       "violations": []
     },
@@ -294,25 +294,25 @@
         "bodyHeight": 3584,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 179,
-        "loadMs": 179
+        "domContentLoadedMs": 180,
+        "loadMs": 180
       },
       "violations": []
     },
     {
       "engine": "chromium",
       "viewport": "desktop",
-      "page": "/events/demo-event.html",
+      "page": "/events/event-beast-house.html",
       "http_status": 200,
       "console_errors": 0,
       "metrics": {
         "scrollWidth": 1440,
         "clientWidth": 1440,
-        "bodyHeight": 2615,
-        "h1Text": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+        "bodyHeight": 3029,
+        "h1Text": "Beast House",
         "h1Visible": true,
-        "domContentLoadedMs": 21,
-        "loadMs": 29
+        "domContentLoadedMs": 12,
+        "loadMs": 30
       },
       "violations": []
     },
@@ -325,11 +325,11 @@
       "metrics": {
         "scrollWidth": 390,
         "clientWidth": 390,
-        "bodyHeight": 3175,
+        "bodyHeight": 2603,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 971,
-        "loadMs": 3396
+        "domContentLoadedMs": 976,
+        "loadMs": 1617
       },
       "violations": []
     },
@@ -342,11 +342,11 @@
       "metrics": {
         "scrollWidth": 390,
         "clientWidth": 390,
-        "bodyHeight": 20934,
+        "bodyHeight": 20655,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 169,
-        "loadMs": 485
+        "domContentLoadedMs": 429,
+        "loadMs": 781
       },
       "violations": []
     },
@@ -359,11 +359,11 @@
       "metrics": {
         "scrollWidth": 390,
         "clientWidth": 390,
-        "bodyHeight": 11774,
+        "bodyHeight": 14947,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 165,
-        "loadMs": 350
+        "domContentLoadedMs": 147,
+        "loadMs": 356
       },
       "violations": []
     },
@@ -377,10 +377,10 @@
         "scrollWidth": 390,
         "clientWidth": 390,
         "bodyHeight": 844,
-        "h1Text": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+        "h1Text": "Unstable",
         "h1Visible": true,
-        "domContentLoadedMs": 137,
-        "loadMs": 443
+        "domContentLoadedMs": 161,
+        "loadMs": 359
       },
       "violations": []
     },
@@ -396,25 +396,25 @@
         "bodyHeight": 6429,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 168,
-        "loadMs": 447
+        "domContentLoadedMs": 173,
+        "loadMs": 397
       },
       "violations": []
     },
     {
       "engine": "webkit",
       "viewport": "mobile",
-      "page": "/events/demo-event.html",
+      "page": "/events/event-beast-house.html",
       "http_status": 200,
       "console_errors": 0,
       "metrics": {
         "scrollWidth": 390,
         "clientWidth": 390,
-        "bodyHeight": 3711,
-        "h1Text": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+        "bodyHeight": 4721,
+        "h1Text": "Beast House",
         "h1Visible": true,
-        "domContentLoadedMs": 175,
-        "loadMs": 329
+        "domContentLoadedMs": 166,
+        "loadMs": 336
       },
       "violations": []
     },
@@ -427,11 +427,11 @@
       "metrics": {
         "scrollWidth": 820,
         "clientWidth": 820,
-        "bodyHeight": 2777,
+        "bodyHeight": 2273,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 488,
-        "loadMs": 1610
+        "domContentLoadedMs": 468,
+        "loadMs": 1129
       },
       "violations": []
     },
@@ -444,11 +444,11 @@
       "metrics": {
         "scrollWidth": 820,
         "clientWidth": 820,
-        "bodyHeight": 11323,
+        "bodyHeight": 11249,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 159,
-        "loadMs": 463
+        "domContentLoadedMs": 182,
+        "loadMs": 518
       },
       "violations": []
     },
@@ -461,11 +461,11 @@
       "metrics": {
         "scrollWidth": 820,
         "clientWidth": 820,
-        "bodyHeight": 6820,
+        "bodyHeight": 8576,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 164,
-        "loadMs": 401
+        "domContentLoadedMs": 150,
+        "loadMs": 365
       },
       "violations": []
     },
@@ -479,10 +479,10 @@
         "scrollWidth": 820,
         "clientWidth": 820,
         "bodyHeight": 1180,
-        "h1Text": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+        "h1Text": "Unstable",
         "h1Visible": true,
-        "domContentLoadedMs": 196,
-        "loadMs": 437
+        "domContentLoadedMs": 150,
+        "loadMs": 324
       },
       "violations": []
     },
@@ -498,25 +498,25 @@
         "bodyHeight": 5516,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 152,
-        "loadMs": 384
+        "domContentLoadedMs": 159,
+        "loadMs": 379
       },
       "violations": []
     },
     {
       "engine": "webkit",
       "viewport": "tablet",
-      "page": "/events/demo-event.html",
+      "page": "/events/event-beast-house.html",
       "http_status": 200,
       "console_errors": 0,
       "metrics": {
         "scrollWidth": 820,
         "clientWidth": 820,
-        "bodyHeight": 2825,
-        "h1Text": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+        "bodyHeight": 3513,
+        "h1Text": "Beast House",
         "h1Visible": true,
-        "domContentLoadedMs": 169,
-        "loadMs": 321
+        "domContentLoadedMs": 154,
+        "loadMs": 363
       },
       "violations": []
     },
@@ -529,11 +529,11 @@
       "metrics": {
         "scrollWidth": 1440,
         "clientWidth": 1440,
-        "bodyHeight": 4118,
+        "bodyHeight": 3101,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 508,
-        "loadMs": 1155
+        "domContentLoadedMs": 382,
+        "loadMs": 1134
       },
       "violations": []
     },
@@ -546,11 +546,11 @@
       "metrics": {
         "scrollWidth": 1440,
         "clientWidth": 1440,
-        "bodyHeight": 7756,
+        "bodyHeight": 7726,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 169,
-        "loadMs": 467
+        "domContentLoadedMs": 174,
+        "loadMs": 508
       },
       "violations": []
     },
@@ -563,10 +563,10 @@
       "metrics": {
         "scrollWidth": 1440,
         "clientWidth": 1440,
-        "bodyHeight": 5306,
+        "bodyHeight": 6860,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 169,
+        "domContentLoadedMs": 170,
         "loadMs": 353
       },
       "violations": []
@@ -581,10 +581,10 @@
         "scrollWidth": 1440,
         "clientWidth": 1440,
         "bodyHeight": 900,
-        "h1Text": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+        "h1Text": "Unstable",
         "h1Visible": true,
-        "domContentLoadedMs": 174,
-        "loadMs": 338
+        "domContentLoadedMs": 150,
+        "loadMs": 351
       },
       "violations": []
     },
@@ -600,25 +600,25 @@
         "bodyHeight": 3584,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 171,
-        "loadMs": 384
+        "domContentLoadedMs": 152,
+        "loadMs": 375
       },
       "violations": []
     },
     {
       "engine": "webkit",
       "viewport": "desktop",
-      "page": "/events/demo-event.html",
+      "page": "/events/event-beast-house.html",
       "http_status": 200,
       "console_errors": 0,
       "metrics": {
         "scrollWidth": 1440,
         "clientWidth": 1440,
-        "bodyHeight": 2615,
-        "h1Text": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+        "bodyHeight": 3029,
+        "h1Text": "Beast House",
         "h1Visible": true,
-        "domContentLoadedMs": 133,
-        "loadMs": 323
+        "domContentLoadedMs": 160,
+        "loadMs": 332
       },
       "violations": []
     }

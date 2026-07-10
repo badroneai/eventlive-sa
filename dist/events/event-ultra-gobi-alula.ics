@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Ultra Gobi AlUla | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-ultra-gobi-alula@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20270113T060000Z
+DTEND:20270120T150000Z
+SUMMARY:Ultra Gobi AlUla
+DESCRIPTION:Ultra Gobi AlUla marks the first international chapter of the legendary endurance series\, bringing its two-decade legacy to the Kingdom's desert landscapes. Across distances from 30km to 400km\, athletes traverse open desert\, dramatic rock formations\, and ancient trade routes. Supported by world-class race infrastructure\, this is a journey through endurance\, history\, and place.
+LOCATION:Across AlUla
+URL:https://eventme.live/events/event-ultra-gobi-alula.html
+END:VEVENT
+END:VCALENDAR

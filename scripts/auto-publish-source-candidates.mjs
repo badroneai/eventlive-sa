@@ -90,8 +90,18 @@ function normalizeSourceUrl(value = '') {
   }
 }
 
+function isMultiEventDocumentUrl(value = '') {
+  try {
+    return /\.pdf$/i.test(new URL(String(value || '').trim()).pathname);
+  } catch {
+    return /\.pdf(?:$|[?#])/i.test(String(value || '').trim());
+  }
+}
+
 function candidateSourceDateKey(row) {
-  const source = normalizeSourceUrl(row.source_url || row.evidence_url || row.image_source_url);
+  const raw = row.source_url || row.evidence_url || row.image_source_url;
+  if (isMultiEventDocumentUrl(raw)) return '';
+  const source = normalizeSourceUrl(raw);
   if (!source || !source.includes('/')) return '';
   return [
     source,
@@ -102,6 +112,7 @@ function candidateSourceDateKey(row) {
 
 function candidateSourceIdentityKey(row) {
   const raw = String(row.source_url || row.evidence_url || row.image_source_url || '').trim();
+  if (isMultiEventDocumentUrl(raw)) return '';
   let source = '';
   try {
     const url = new URL(raw);
@@ -121,6 +132,147 @@ function candidateSourceIdentityKey(row) {
   return source;
 }
 
+const actionStopWords = new Set([
+  'ar', 'en', 'sa', 'event', 'events', 'ticket', 'tickets', 'book', 'booking',
+  'calendar', 'activity', 'activities', 'adventure', 'adventures', 'sport', 'sports',
+  'music', 'world', 'cup', 'fifa', 'fan', 'zone', 'at', 'for', 'the', 'one', 'heart',
+  'via', 'riyadh', 'jeddah', 'ruh', 'jed', '26', '2026'
+]);
+
+function normalizedSearchTokens(value = '') {
+  return String(value || '')
+    .toLowerCase()
+    .replace(/kimptonkafd/g, 'kimpton kafd')
+    .replace(/fanzone/g, 'fan zone')
+    .replace(/wc26/g, 'world cup 2026')
+    .replace(/tickets?\d+/g, 'tickets')
+    .replace(/roh/g, 'ruh')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+    .split(/\s+/)
+    .filter((token) => token && !actionStopWords.has(token) && !/^\d+$/.test(token));
+}
+
+function candidateActionIdentityKey(row) {
+  const raw = String(row.ticket_url || row.registration_url || '').trim();
+  if (!raw) return '';
+  try {
+    const url = new URL(raw);
+    const path = url.pathname.replace(/\/+$/g, '').toLowerCase();
+    const stableParams = [...url.searchParams.entries()]
+      .filter(([key, value]) => /^(?:id|eventid|eveid|event|programid|courseid|bootcampid|ticketid)$/i.test(key) && value)
+      .sort(([a], [b]) => a.localeCompare(b));
+    const genericActionPath = /\/(?:login|register|registration|checkout)(?:\.php)?$/i.test(path);
+    if (!path || (genericActionPath && !stableParams.length)) return '';
+    const query = stableParams.length ? `?${new URLSearchParams(stableParams).toString().toLowerCase()}` : '';
+    return `${url.hostname.toLowerCase()}${path}${query}`;
+  } catch {
+    return '';
+  }
+}
+
+function actionDistinctiveTokens(row) {
+  const identity = candidateActionIdentityKey(row);
+  if (!identity) return [];
+  return [...new Set(normalizedSearchTokens(identity.slice(identity.indexOf('/') + 1)))];
+}
+
+function actionSemanticScore(row, event) {
+  const actionTokens = actionDistinctiveTokens(row);
+  if (!actionTokens.length) return 0;
+  if (normalizeMatchValue(row.city) !== normalizeMatchValue(event.city)) return 0;
+  const rowDate = String(row.starts_at || row.event_start || '').slice(0, 10);
+  const eventDate = String(event.starts_at || event.event_start || '').slice(0, 10);
+  if (!rowDate || rowDate !== eventDate) return 0;
+  const eventTokens = new Set(normalizedSearchTokens(`${event.title || ''} ${event.slug || ''} ${event.venue || ''} ${event.organizer || ''}`));
+  const overlap = actionTokens.filter((token) => eventTokens.has(token)).length;
+  if (!overlap) return 0;
+  return overlap / actionTokens.length;
+}
+
+function findActionSemanticMatch(row, events) {
+  let best = null;
+  let bestScore = 0;
+  for (const event of events) {
+    if (event.id === row.id) continue;
+    const score = actionSemanticScore(row, event);
+    if (score >= 0.5 && score > bestScore) {
+      best = event;
+      bestScore = score;
+    }
+  }
+  return best;
+}
+
+function bilingualAliasKey(row) {
+  const title = normalizeMatchValue(row.title);
+  const source = normalizeSourceUrl(row.source_url || row.evidence_url);
+  const year = String(row.starts_at || row.event_start || '').slice(0, 4);
+  let alias = '';
+  if (/(?:^|\s)(?:kashtah|كشتة)(?:\s|$)/i.test(title)) alias = 'kashtah';
+  if (
+    /eportal\.scega\.gov\.sa\/h-events-details\/2041$/.test(source)
+    || /^(?:leap|ليب)\s*(?:20)?26$/i.test(title)
+  ) alias = 'leap';
+  if (
+    /eportal\.scega\.gov\.sa\/h-events-details\/2087$/.test(source)
+    || title === 'saudi woodshow'
+    || title === 'ملتقى الأخشاب الدولي'
+  ) alias = 'saudi-woodshow';
+  if (
+    /eportal\.scega\.gov\.sa\/h-events-details\/2086$/.test(source)
+    || /riyadh global medical biotechnology summit/i.test(title)
+    || /قمة الرياض العالمية للتقنية الحيوية الطبية/.test(title)
+  ) alias = 'riyadh-medical-biotechnology-summit';
+  if (
+    /eportal\.scega\.gov\.sa\/h-events-details\/2088$/.test(source)
+    || /al m[ei]lwah falcon race/i.test(title)
+    || title === 'سباق الملواح'
+  ) alias = 'al-milwah-falcon-race';
+  if (!alias) return '';
+  return [alias, normalizeMatchValue(row.city), year].join('|');
+}
+
+function reconcileCollapsedMultiEventDocuments(candidates, catalogEvents) {
+  const groups = new Map();
+  for (const candidate of candidates) {
+    if (!candidate.matched_catalog_event_id || !isMultiEventDocumentUrl(candidate.source_url)) continue;
+    const rows = groups.get(candidate.matched_catalog_event_id) || [];
+    rows.push(candidate);
+    groups.set(candidate.matched_catalog_event_id, rows);
+  }
+  const staleEventIds = new Set();
+  for (const [eventId, rows] of groups) {
+    const distinctRows = new Set(rows.map((row) => candidateMatchKey(row)));
+    const catalogEvent = catalogEvents.find((event) => event.id === eventId);
+    if (
+      distinctRows.size > 1
+      && catalogEvent
+      && isAutoPublishedEventLiveRow(catalogEvent)
+      && isMultiEventDocumentUrl(catalogEvent.source_url)
+    ) staleEventIds.add(eventId);
+  }
+  if (!staleEventIds.size) return { candidates, catalogEvents };
+  return {
+    catalogEvents: catalogEvents.filter((event) => !staleEventIds.has(event.id)),
+    candidates: candidates.map((candidate) => {
+      if (!staleEventIds.has(candidate.matched_catalog_event_id)) return candidate;
+      const {
+        matched_catalog_event_id,
+        reviewed_at,
+        reviewed_by,
+        ...rest
+      } = candidate;
+      return {
+        ...rest,
+        review_status: 'ready-for-review',
+        publication_gate: 'duplicate-review',
+        reviewer_notes: `${candidate.reviewer_notes || ''} أُعيدت المطابقة بعد تصحيح هوية مستند متعدد الفعاليات.`.trim()
+      };
+    })
+  };
+}
+
 function preferredDuplicateEvent(first, second) {
   const firstCanonical = first.id === `event-${first.slug}`;
   const secondCanonical = second.id === `event-${second.slug}`;
@@ -133,6 +285,63 @@ function preferredDuplicateEvent(first, second) {
     event.live_schedule_ready
   ].filter(Boolean).length;
   return score(second) > score(first) ? second : first;
+}
+
+function mergeActionFields(preferred, discarded) {
+  for (const field of ['registration_url', 'ticket_url']) {
+    if (!preferred[field] && discarded[field]) preferred[field] = discarded[field];
+  }
+  return preferred;
+}
+
+function dedupeActionSemanticCatalog(events) {
+  const result = [...events];
+  const removed = [];
+  for (let index = 0; index < result.length; index += 1) {
+    const event = result[index];
+    if (!candidateActionIdentityKey(event)) continue;
+    const match = findActionSemanticMatch(event, result);
+    if (!match) continue;
+    if (event.published_by !== 'EventLive Auto Publisher' && match.published_by !== 'EventLive Auto Publisher') continue;
+    const matchIndex = result.indexOf(match);
+    if (matchIndex < 0 || matchIndex === index) continue;
+    const preferredRecord = preferredDuplicateEvent(match, event);
+    const preferred = mergeActionFields(preferredRecord, preferredRecord === match ? event : match);
+    const discarded = preferred === match ? event : match;
+    const preferredIndex = preferred === match ? matchIndex : index;
+    const discardedIndex = preferred === match ? index : matchIndex;
+    result[preferredIndex] = preferred;
+    result.splice(discardedIndex, 1);
+    if (discardedIndex < index) index -= 1;
+    removed.push({ removed_event_id: discarded.id, kept_event_id: preferred.id, reason: 'action-url-semantic-match' });
+  }
+  return { events: result, removed };
+}
+
+function dedupeBilingualAliasCatalog(events) {
+  const result = [];
+  const indexByAlias = new Map();
+  const removed = [];
+  for (const event of events) {
+    const alias = bilingualAliasKey(event);
+    if (!alias || !indexByAlias.has(alias)) {
+      if (alias) indexByAlias.set(alias, result.length);
+      result.push(event);
+      continue;
+    }
+    const index = indexByAlias.get(alias);
+    const existing = result[index];
+    if (existing.published_by !== 'EventLive Auto Publisher' && event.published_by !== 'EventLive Auto Publisher') {
+      result.push(event);
+      continue;
+    }
+    const preferredRecord = preferredDuplicateEvent(existing, event);
+    const preferred = mergeActionFields(preferredRecord, preferredRecord === existing ? event : existing);
+    const discarded = preferred === existing ? event : existing;
+    result[index] = preferred;
+    removed.push({ removed_event_id: discarded.id, kept_event_id: preferred.id, reason: 'bilingual-title-alias' });
+  }
+  return { events: result, removed };
 }
 
 function dedupeAutoPublishedCatalog(events) {
@@ -225,9 +434,24 @@ function shouldPreservePrimaryOfficialRecord(existing = {}, candidate = {}) {
 
 function sourceConfidenceFor(candidate) {
   if (candidate.confidence === 'official') return 'approved-source';
+  if (candidate.confidence === 'verified-secondary') return 'corroborated-source';
   if (candidate.confidence === 'partner') return 'organizer-confirmed';
   if (candidate.evidence_url || candidate.raw_snapshot_path) return 'pending-review';
   return 'needs-source-evidence';
+}
+
+function hasVerifiedSecondaryEvidence(candidate) {
+  if (candidate.confidence !== 'verified-secondary') return false;
+  if (candidate.secondary_verification_kind !== 'official-source-evidence') return false;
+  if (!candidate.secondary_verified_at) return false;
+  if (candidate.verification_method !== 'directory-official-link-page-confirmation') return false;
+  try {
+    const officialHost = new URL(candidate.source_url || '').hostname.replace(/^www\./, '');
+    const discoveryHost = new URL(candidate.discovery_source_url || '').hostname.replace(/^www\./, '');
+    return Boolean(officialHost && discoveryHost && officialHost !== discoveryHost);
+  } catch {
+    return false;
+  }
 }
 
 function richFieldsFromCandidate(candidate = {}) {
@@ -238,17 +462,46 @@ function richFieldsFromCandidate(candidate = {}) {
     'image_source_url',
     'registration_url',
     'ticket_url',
+    'maps_url',
     'attendance_mode',
     'price_label',
     'language',
     'rich_summary',
     'registration_deadline',
+    'parking_info',
+    'accessibility_info',
+    'age_policy',
+    'duration_label',
     'richness_score'
   ].forEach((key) => {
     if (candidate[key] !== undefined && candidate[key] !== null && candidate[key] !== '') fields[key] = candidate[key];
   });
   if (Array.isArray(candidate.highlights) && candidate.highlights.length) fields.highlights = candidate.highlights.slice(0, 8);
   return fields;
+}
+
+function mergeMissingCandidateEnrichment(existing = {}, candidate = {}) {
+  const richFields = richFieldsFromCandidate(candidate);
+  const imageMissing = !existing.image_url
+    || String(existing.image_url).startsWith('/assets/event-covers/')
+    || /\/themes\/custom\/[^?#]*(?:list|logo|icon)[^/?#]*\.(?:png|jpe?g|webp|svg)(?:$|[?#])/i.test(String(existing.image_url));
+  const verifiedOfficialImage = hasVerifiedSecondaryEvidence(candidate)
+    && richFields.image_url
+    && normalizeSourceUrl(candidate.image_source_url) === normalizeSourceUrl(candidate.source_url);
+  if ((imageMissing || verifiedOfficialImage) && richFields.image_url) {
+    existing.image_url = richFields.image_url;
+    existing.original_image_url = candidate.original_image_url || richFields.image_url;
+    existing.image_alt = richFields.image_alt || existing.image_alt || candidate.title;
+    existing.image_source_url = richFields.image_source_url || existing.image_source_url || candidate.source_url || '';
+  }
+  for (const field of ['registration_url', 'ticket_url', 'maps_url', 'attendance_mode', 'price_label', 'language', 'rich_summary', 'registration_deadline', 'parking_info', 'accessibility_info', 'age_policy', 'duration_label']) {
+    if (!existing[field] && richFields[field]) existing[field] = richFields[field];
+  }
+  if ((!Array.isArray(existing.highlights) || !existing.highlights.length) && richFields.highlights) {
+    existing.highlights = richFields.highlights;
+  }
+  existing.richness_score = Math.max(Number(existing.richness_score || 0), Number(richFields.richness_score || 0));
+  return existing;
 }
 
 function catalogEventFromCandidate(candidate, existingIds) {
@@ -313,7 +566,7 @@ function autoPublishBlocker(candidate, catalogByMatch, catalogByLooseMatch, cata
   if (isLongSeasonLike(candidate) && catalogByDateWindow.has(candidateDateWindowKey(candidate))) {
     return 'possible duplicate by city/date window already exists';
   }
-  if (candidate.confidence === 'official') return '';
+  if (candidate.confidence === 'official' || hasVerifiedSecondaryEvidence(candidate)) return '';
   if (includePartner && candidate.confidence === 'partner') return '';
   return `confidence ${candidate.confidence || 'unknown'} is not auto-publishable`;
 }
@@ -326,7 +579,9 @@ function trustedAlreadyPublished(candidate) {
   if (isPast(candidate)) return false;
   if (candidate.review_status === 'rejected' || candidate.publication_gate === 'blocked') return false;
   if (['source-evidence', 'extraction'].includes(candidate.publication_gate)) return false;
-  return candidate.confidence === 'official' || (includePartner && candidate.confidence === 'partner');
+  return candidate.confidence === 'official'
+    || hasVerifiedSecondaryEvidence(candidate)
+    || (includePartner && candidate.confidence === 'partner');
 }
 
 function writeReport(report) {
@@ -372,11 +627,16 @@ function main() {
 
   const candidatesEnvelope = readJson(candidatesPath);
   const catalogEnvelope = readJson(catalogPath);
-  const candidates = Array.isArray(candidatesEnvelope.candidates) ? candidatesEnvelope.candidates : [];
-  const validCatalogEvents = (Array.isArray(catalogEnvelope.events) ? catalogEnvelope.events : [])
+  const rawCandidates = Array.isArray(candidatesEnvelope.candidates) ? candidatesEnvelope.candidates : [];
+  const rawCatalogEvents = Array.isArray(catalogEnvelope.events) ? catalogEnvelope.events : [];
+  const reconciledDocuments = reconcileCollapsedMultiEventDocuments(rawCandidates, rawCatalogEvents);
+  const candidates = reconciledDocuments.candidates;
+  const validCatalogEvents = reconciledDocuments.catalogEvents
     .filter((event) => hasValidPublicDateTimes(event) || !isAutoPublishedEventLiveRow(event));
   const dedupedCatalog = dedupeAutoPublishedCatalog(validCatalogEvents);
-  const catalogEvents = dedupedCatalog.events;
+  const actionDedupedCatalog = dedupeActionSemanticCatalog(dedupedCatalog.events);
+  const aliasDedupedCatalog = dedupeBilingualAliasCatalog(actionDedupedCatalog.events);
+  const catalogEvents = aliasDedupedCatalog.events;
   const existingIds = new Set(catalogEvents.map((event) => event.id));
   const catalogByMatch = new Map(catalogEvents.map((event) => [candidateMatchKey(event), event]));
   const catalogByLooseMatch = new Map(catalogEvents.map((event) => [candidateLooseMatchKey(event), event]));
@@ -389,6 +649,12 @@ function main() {
   const catalogBySourceIdentity = new Map(catalogEvents
     .map((event) => [candidateSourceIdentityKey(event), event])
     .filter(([key]) => key));
+  const catalogByActionIdentity = new Map(catalogEvents
+    .map((event) => [candidateActionIdentityKey(event), event])
+    .filter(([key]) => key));
+  const catalogByBilingualAlias = new Map(catalogEvents
+    .map((event) => [bilingualAliasKey(event), event])
+    .filter(([key]) => key));
   const published = [];
   const linkedExisting = [];
   const blocked = [];
@@ -396,25 +662,45 @@ function main() {
   let updatedCandidates = candidates.map((candidate) => {
     const exactMatch = catalogByMatch.get(candidateMatchKey(candidate));
     const looseMatch = !exactMatch ? catalogByLooseMatch.get(candidateLooseMatchKey(candidate)) : null;
-    const sourceIdentityMatch = !exactMatch && !looseMatch
+    const bilingualAliasMatch = !exactMatch && !looseMatch
+      ? catalogByBilingualAlias.get(bilingualAliasKey(candidate))
+      : null;
+    const actionIdentityMatch = !exactMatch && !looseMatch && !bilingualAliasMatch
+      ? catalogByActionIdentity.get(candidateActionIdentityKey(candidate))
+      : null;
+    const actionSemanticMatch = !exactMatch && !looseMatch && !bilingualAliasMatch && !actionIdentityMatch
+      ? findActionSemanticMatch(candidate, catalogEvents)
+      : null;
+    const sourceIdentityMatch = !exactMatch && !looseMatch && !bilingualAliasMatch && !actionIdentityMatch && !actionSemanticMatch
       ? catalogBySourceIdentity.get(candidateSourceIdentityKey(candidate))
       : null;
-    const windowMatch = !exactMatch && !looseMatch && !sourceIdentityMatch && isLongSeasonLike(candidate)
+    const windowMatch = !exactMatch && !looseMatch && !bilingualAliasMatch && !actionIdentityMatch && !actionSemanticMatch && !sourceIdentityMatch && isLongSeasonLike(candidate)
       ? catalogByDateWindow.get(candidateDateWindowKey(candidate))
       : null;
-    const sourceDateMatch = !exactMatch && !looseMatch && !sourceIdentityMatch && !windowMatch
+    const sourceDateMatch = !exactMatch && !looseMatch && !bilingualAliasMatch && !actionIdentityMatch && !actionSemanticMatch && !sourceIdentityMatch && !windowMatch
       ? catalogBySourceDate.get(candidateSourceDateKey(candidate))
       : null;
-    const existingMatch = exactMatch || looseMatch || sourceIdentityMatch || windowMatch || sourceDateMatch;
+    const existingMatch = exactMatch || looseMatch || bilingualAliasMatch || actionIdentityMatch || actionSemanticMatch || sourceIdentityMatch || windowMatch || sourceDateMatch;
     if (existingMatch) {
       if (trustedAlreadyPublished(candidate)) {
         const alreadyLinked = candidate.review_status === 'approved-for-catalog'
           && candidate.matched_catalog_event_id === existingMatch.id;
         const preservePrimaryOfficialRecord = shouldPreservePrimaryOfficialRecord(existingMatch, candidate);
-        if (!windowMatch && !preservePrimaryOfficialRecord) {
+        mergeMissingCandidateEnrichment(existingMatch, candidate);
+        if ((bilingualAliasMatch || actionIdentityMatch || actionSemanticMatch) && !preservePrimaryOfficialRecord) {
+          mergeActionFields(existingMatch, candidate);
+        } else if (!windowMatch && !preservePrimaryOfficialRecord) {
           const querySpecificIdentity = sourceIdentityMatch && candidateSourceIdentityKey(candidate).includes('?');
+          const sameSourcePage = normalizeSourceUrl(existingMatch.source_url || existingMatch.evidence_url)
+            === normalizeSourceUrl(candidate.source_url || candidate.evidence_url);
           if (!sourceDateMatch && (!sourceIdentityMatch || querySpecificIdentity)) {
             existingMatch.title = decodeHtml(candidate.title || existingMatch.title);
+          }
+          if (sameSourcePage && !hasPreciseLiveSchedule(existingMatch)) {
+            existingMatch.summary = candidate.rich_summary || candidate.summary || existingMatch.summary;
+            existingMatch.venue = candidate.venue || existingMatch.venue;
+            existingMatch.venue_address = candidate.venue || existingMatch.venue_address;
+            existingMatch.category = candidate.category || existingMatch.category;
           }
           if (!hasPreciseLiveSchedule(existingMatch)) {
             existingMatch.starts_at = candidate.starts_at || existingMatch.starts_at;
@@ -465,7 +751,13 @@ function main() {
         title: candidate.title,
         reason: blocker
       });
-      return candidate;
+      const { matched_catalog_event_id: staleMatch, ...unmatchedCandidate } = candidate;
+      return {
+        ...unmatchedCandidate,
+        publication_gate: candidate.publication_gate === 'duplicate-review'
+          ? 'source-evidence'
+          : candidate.publication_gate
+      };
     }
 
     const event = catalogEventFromCandidate(candidate, existingIds);
@@ -476,6 +768,10 @@ function main() {
     if (sourceDateKey) catalogBySourceDate.set(sourceDateKey, event);
     const sourceIdentityKey = candidateSourceIdentityKey(event);
     if (sourceIdentityKey) catalogBySourceIdentity.set(sourceIdentityKey, event);
+    const actionIdentityKey = candidateActionIdentityKey(event);
+    if (actionIdentityKey) catalogByActionIdentity.set(actionIdentityKey, event);
+    const bilingualKey = bilingualAliasKey(event);
+    if (bilingualKey) catalogByBilingualAlias.set(bilingualKey, event);
     if (isLongSeasonLike(event)) catalogByDateWindow.set(candidateDateWindowKey(event), event);
     published.push({
       candidate_id: candidate.id,
@@ -514,8 +810,14 @@ function main() {
       blocked: blocked.length,
       reconciled: published.length + linkedExisting.length
     },
-    duplicate_catalog_rows_removed: dedupedCatalog.removed.length,
-    duplicate_catalog_rows: dedupedCatalog.removed,
+    duplicate_catalog_rows_removed: dedupedCatalog.removed.length
+      + actionDedupedCatalog.removed.length
+      + aliasDedupedCatalog.removed.length,
+    duplicate_catalog_rows: [
+      ...dedupedCatalog.removed,
+      ...actionDedupedCatalog.removed,
+      ...aliasDedupedCatalog.removed
+    ],
     canonical_event_ids_remapped: canonicalization.remapped.length,
     canonical_event_id_remaps: canonicalization.remapped,
     published,

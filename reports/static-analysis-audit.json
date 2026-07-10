@@ -1,11 +1,11 @@
 {
   "schema": "eventlive.static-analysis-audit.v1",
-  "generated_at": "2026-07-08T01:37:23.426Z",
+  "generated_at": "2026-07-10T06:25:41.156Z",
   "status": "PASS",
   "summary": {
-    "script_files_checked": 165,
+    "script_files_checked": 208,
     "syntax_failures": 0,
-    "package_script_references": 155,
+    "package_script_references": 190,
     "missing_package_script_references": 0,
     "risky_findings": 15,
     "high_risk_findings": 0
@@ -42,6 +42,11 @@
       "stderr": ""
     },
     {
+      "file": "scripts/attendance-mode-offline-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
       "file": "scripts/audience-regression-test.mjs",
       "ok": true,
       "stderr": ""
@@ -57,6 +62,11 @@
       "stderr": ""
     },
     {
+      "file": "scripts/audit-page-utils.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
       "file": "scripts/auto-publish-source-candidates.mjs",
       "ok": true,
       "stderr": ""
@@ -68,6 +78,16 @@
     },
     {
       "file": "scripts/axe-accessibility-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/backlog-target-selection-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/backlog-target-utils.mjs",
       "ok": true,
       "stderr": ""
     },
@@ -242,12 +262,22 @@
       "stderr": ""
     },
     {
+      "file": "scripts/enrich-leap-agenda-details.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
       "file": "scripts/enrich-mdlbeast-events-details.mjs",
       "ok": true,
       "stderr": ""
     },
     {
       "file": "scripts/enrich-misk-program-details.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/enrich-money2020-agendas.mjs",
       "ok": true,
       "stderr": ""
     },
@@ -287,6 +317,11 @@
       "stderr": ""
     },
     {
+      "file": "scripts/event-agenda-ui-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
       "file": "scripts/event-detail-page-regression-test.mjs",
       "ok": true,
       "stderr": ""
@@ -322,6 +357,11 @@
       "stderr": ""
     },
     {
+      "file": "scripts/experience-alula-extractor-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
       "file": "scripts/facet-pages-regression-test.mjs",
       "ok": true,
       "stderr": ""
@@ -352,7 +392,22 @@
       "stderr": ""
     },
     {
+      "file": "scripts/jouf-university-program-extractor-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
       "file": "scripts/launch-preflight-report.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/leap-agenda-enrichment-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/leap-agenda-utils.mjs",
       "ok": true,
       "stderr": ""
     },
@@ -402,6 +457,26 @@
       "stderr": ""
     },
     {
+      "file": "scripts/money2020-agenda-enrichment-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/money2020-agenda-utils.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/multi-event-document-build-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/mygov-wayback-radar.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
       "file": "scripts/normalize-program.mjs",
       "ok": true,
       "stderr": ""
@@ -438,6 +513,51 @@
     },
     {
       "file": "scripts/owner-command-center.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/owner-status-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/platinumlist-detail-radar-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/platinumlist-detail-radar.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/platinumlist-platform-radar-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/platinumlist-platform-radar.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/platinumlist-snapshot-leads-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/platinumlist-snapshot-leads.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/poster-ocr-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/poster-ocr-utils.mjs",
       "ok": true,
       "stderr": ""
     },
@@ -482,6 +602,16 @@
       "stderr": ""
     },
     {
+      "file": "scripts/public-demo-isolation-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/public-event-dedupe-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
       "file": "scripts/public-transparency-feeds-regression-test.mjs",
       "ok": true,
       "stderr": ""
@@ -497,7 +627,17 @@
       "stderr": ""
     },
     {
+      "file": "scripts/qassim-university-extractor-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
       "file": "scripts/readiness-trust-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/regional-chamber-extractor-regression-test.mjs",
       "ok": true,
       "stderr": ""
     },
@@ -587,7 +727,27 @@
       "stderr": ""
     },
     {
+      "file": "scripts/run-source-radars.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
       "file": "scripts/saudi-water-authority-enrichment-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/scega-canonical-alias-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/scega-events-extractor-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/schedule-depth-regression-test.mjs",
       "ok": true,
       "stderr": ""
     },
@@ -608,6 +768,11 @@
     },
     {
       "file": "scripts/search-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/secondary-verify-source-candidates.mjs",
       "ok": true,
       "stderr": ""
     },
@@ -672,6 +837,16 @@
       "stderr": ""
     },
     {
+      "file": "scripts/source-auto-publish-source-identity-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-browser-fallback-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
       "file": "scripts/source-browser-probe-regression-test.mjs",
       "ok": true,
       "stderr": ""
@@ -717,6 +892,16 @@
       "stderr": ""
     },
     {
+      "file": "scripts/source-limit-policy-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-official-agenda-radar.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
       "file": "scripts/source-official-resolver.mjs",
       "ok": true,
       "stderr": ""
@@ -743,6 +928,21 @@
     },
     {
       "file": "scripts/source-run-state.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-secondary-verification-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-selection-contract-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/source-strategic-platform-radar.mjs",
       "ok": true,
       "stderr": ""
     },
@@ -792,6 +992,11 @@
       "stderr": ""
     },
     {
+      "file": "scripts/trust-transparency-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
       "file": "scripts/tuwaiq-program-enrichment-regression-test.mjs",
       "ok": true,
       "stderr": ""
@@ -823,6 +1028,16 @@
     },
     {
       "file": "scripts/visit-saudi-enrichment-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/visit-saudi-summer-pdf-regression-test.mjs",
+      "ok": true,
+      "stderr": ""
+    },
+    {
+      "file": "scripts/visit-saudi-summer-pdf-utils.mjs",
       "ok": true,
       "stderr": ""
     },
@@ -874,6 +1089,11 @@
       "exists": true
     },
     {
+      "npm_script": "sources:verify",
+      "reference": "scripts/secondary-verify-source-candidates.mjs",
+      "exists": true
+    },
+    {
       "npm_script": "sources:plan",
       "reference": "scripts/source-ingestion-plan.mjs",
       "exists": true
@@ -891,6 +1111,31 @@
     {
       "npm_script": "sources:browser-probe",
       "reference": "scripts/source-browser-probe.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:platinumlist:leads",
+      "reference": "scripts/platinumlist-snapshot-leads.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:platinumlist:details",
+      "reference": "scripts/platinumlist-detail-radar.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:platinumlist:platform",
+      "reference": "scripts/platinumlist-platform-radar.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:mygov:wayback",
+      "reference": "scripts/mygov-wayback-radar.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:radars",
+      "reference": "scripts/run-source-radars.mjs",
       "exists": true
     },
     {
@@ -951,6 +1196,16 @@
     {
       "npm_script": "sources:mdlbeast:details",
       "reference": "scripts/enrich-mdlbeast-events-details.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:leap:agenda",
+      "reference": "scripts/enrich-leap-agenda-details.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "sources:money2020:agenda",
+      "reference": "scripts/enrich-money2020-agendas.mjs",
       "exists": true
     },
     {
@@ -1069,6 +1324,26 @@
       "exists": true
     },
     {
+      "npm_script": "test:scega-events-extractor",
+      "reference": "scripts/scega-events-extractor-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:scega-canonical-alias",
+      "reference": "scripts/scega-canonical-alias-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:attendance-mode-offline",
+      "reference": "scripts/attendance-mode-offline-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:backlog-target-selection",
+      "reference": "scripts/backlog-target-selection-regression-test.mjs",
+      "exists": true
+    },
+    {
       "npm_script": "test:source-plan",
       "reference": "scripts/source-plan-regression-test.mjs",
       "exists": true
@@ -1096,6 +1371,11 @@
     {
       "npm_script": "test:live-ready",
       "reference": "scripts/live-ready-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:schedule-depth",
+      "reference": "scripts/schedule-depth-regression-test.mjs",
       "exists": true
     },
     {
@@ -1179,6 +1459,11 @@
       "exists": true
     },
     {
+      "npm_script": "test:event-agenda-ui",
+      "reference": "scripts/event-agenda-ui-regression-test.mjs",
+      "exists": true
+    },
+    {
       "npm_script": "test:image-cache",
       "reference": "scripts/event-image-cache-regression-test.mjs",
       "exists": true
@@ -1201,6 +1486,21 @@
     {
       "npm_script": "test:dedupe",
       "reference": "scripts/dedupe-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:public-dedupe",
+      "reference": "scripts/public-event-dedupe-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:multi-event-document-build",
+      "reference": "scripts/multi-event-document-build-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:public-demo-isolation",
+      "reference": "scripts/public-demo-isolation-regression-test.mjs",
       "exists": true
     },
     {
@@ -1229,6 +1529,16 @@
       "exists": true
     },
     {
+      "npm_script": "test:source-auto-publish-identity",
+      "reference": "scripts/source-auto-publish-source-identity-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:source-secondary-verification",
+      "reference": "scripts/source-secondary-verification-regression-test.mjs",
+      "exists": true
+    },
+    {
       "npm_script": "test:source-ops",
       "reference": "scripts/source-ops-regression-test.mjs",
       "exists": true
@@ -1241,6 +1551,76 @@
     {
       "npm_script": "test:source-browser-probe",
       "reference": "scripts/source-browser-probe-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:source-browser-fallback",
+      "reference": "scripts/source-browser-fallback-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:source-selection-contract",
+      "reference": "scripts/source-selection-contract-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:poster-ocr",
+      "reference": "scripts/poster-ocr-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:visit-saudi-summer-pdf",
+      "reference": "scripts/visit-saudi-summer-pdf-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:source-limit-policy",
+      "reference": "scripts/source-limit-policy-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:experience-alula-extractor",
+      "reference": "scripts/experience-alula-extractor-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:leap-agenda-enrichment",
+      "reference": "scripts/leap-agenda-enrichment-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:money2020-agenda-enrichment",
+      "reference": "scripts/money2020-agenda-enrichment-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:qassim-university-extractor",
+      "reference": "scripts/qassim-university-extractor-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:jouf-university-program-extractor",
+      "reference": "scripts/jouf-university-program-extractor-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:regional-chamber-extractors",
+      "reference": "scripts/regional-chamber-extractor-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:platinumlist-leads",
+      "reference": "scripts/platinumlist-snapshot-leads-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:platinumlist-detail-radar",
+      "reference": "scripts/platinumlist-detail-radar-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:platinumlist-platform-radar",
+      "reference": "scripts/platinumlist-platform-radar-regression-test.mjs",
       "exists": true
     },
     {
@@ -1401,6 +1781,11 @@
     {
       "npm_script": "test:owner-command-center",
       "reference": "scripts/owner-command-center-regression-test.mjs",
+      "exists": true
+    },
+    {
+      "npm_script": "test:owner-status",
+      "reference": "scripts/owner-status-regression-test.mjs",
       "exists": true
     },
     {
@@ -1599,6 +1984,11 @@
       "exists": true
     },
     {
+      "npm_script": "test:trust-transparency",
+      "reference": "scripts/trust-transparency-regression-test.mjs",
+      "exists": true
+    },
+    {
       "npm_script": "test:live-operational-feeds",
       "reference": "scripts/live-operational-feeds-regression-test.mjs",
       "exists": true
@@ -1619,28 +2009,28 @@
       "rule": "hardcoded-localhost-production-link",
       "severity": "medium",
       "file": "scripts/axe-accessibility-audit.mjs",
-      "line": 35,
+      "line": 36,
       "description": "Localhost URLs should not leak into production-facing source files."
     },
     {
       "rule": "hardcoded-localhost-production-link",
       "severity": "medium",
       "file": "scripts/axe-accessibility-audit.mjs",
-      "line": 48,
+      "line": 49,
       "description": "Localhost URLs should not leak into production-facing source files."
     },
     {
       "rule": "hardcoded-localhost-production-link",
       "severity": "medium",
       "file": "scripts/browser-matrix-audit.mjs",
-      "line": 45,
+      "line": 47,
       "description": "Localhost URLs should not leak into production-facing source files."
     },
     {
       "rule": "hardcoded-localhost-production-link",
       "severity": "medium",
       "file": "scripts/browser-matrix-audit.mjs",
-      "line": 59,
+      "line": 61,
       "description": "Localhost URLs should not leak into production-facing source files."
     },
     {
@@ -1654,14 +2044,14 @@
       "rule": "hardcoded-localhost-production-link",
       "severity": "medium",
       "file": "scripts/lighthouse-performance-audit.mjs",
-      "line": 34,
+      "line": 35,
       "description": "Localhost URLs should not leak into production-facing source files."
     },
     {
       "rule": "hardcoded-localhost-production-link",
       "severity": "medium",
       "file": "scripts/lighthouse-performance-audit.mjs",
-      "line": 47,
+      "line": 48,
       "description": "Localhost URLs should not leak into production-facing source files."
     },
     {
@@ -1682,21 +2072,21 @@
       "rule": "hardcoded-localhost-production-link",
       "severity": "medium",
       "file": "scripts/site-visual-sweep.mjs",
-      "line": 88,
+      "line": 91,
       "description": "Localhost URLs should not leak into production-facing source files."
     },
     {
       "rule": "hardcoded-localhost-production-link",
       "severity": "medium",
       "file": "scripts/site-visual-sweep.mjs",
-      "line": 124,
+      "line": 127,
       "description": "Localhost URLs should not leak into production-facing source files."
     },
     {
       "rule": "hardcoded-localhost-production-link",
       "severity": "medium",
       "file": "scripts/site-visual-sweep.mjs",
-      "line": 265,
+      "line": 268,
       "description": "Localhost URLs should not leak into production-facing source files."
     },
     {
@@ -1710,14 +2100,14 @@
       "rule": "hardcoded-localhost-production-link",
       "severity": "medium",
       "file": "scripts/web-quality-audit.mjs",
-      "line": 38,
+      "line": 39,
       "description": "Localhost URLs should not leak into production-facing source files."
     },
     {
       "rule": "hardcoded-localhost-production-link",
       "severity": "medium",
       "file": "scripts/web-quality-audit.mjs",
-      "line": 53,
+      "line": 54,
       "description": "Localhost URLs should not leak into production-facing source files."
     }
   ]

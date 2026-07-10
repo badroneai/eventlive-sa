@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Big 5 Construct Saudi | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-big-5-construct-saudi@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260830T060000Z
+DTEND:20260902T150000Z
+SUMMARY:Big 5 Construct Saudi
+DESCRIPTION:Big 5 Construct Saudi is the Kingdom&rsquo\;s leading construction event\, serving as a true testament to the country&rsquo\;s growing attractiveness in
+LOCATION:Riyadh Front \, Riyadh
+URL:https://eventme.live/events/event-big-5-construct-saudi.html
+END:VEVENT
+END:VCALENDAR

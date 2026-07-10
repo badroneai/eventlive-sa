@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Global Proptech Summit 2026 | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-global-proptech-summit-2026@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20261025T060000Z
+DTEND:20261026T150000Z
+SUMMARY:Global Proptech Summit 2026
+DESCRIPTION:The Global PropTech Summit (TGPS) is an international platform that convenes policymakers\, investors\, developers\, technology companies\, and industry s
+LOCATION:Mandarin Oriental Al Faisaliah \, Riyadh
+URL:https://eventme.live/events/event-global-proptech-summit-2026.html
+END:VEVENT
+END:VCALENDAR

@@ -1,6 +1,6 @@
 # EventLive Web Quality Audit
 
-- Generated at: 2026-07-08T01:37:35.874Z
+- Generated at: 2026-07-10T07:55:47.433Z
 - Pages: 6
 - Accessibility baseline: PASS (0 findings)
 - Responsive baseline: PASS (0 findings)
@@ -14,4 +14,4 @@
 | /today-events.html | 0 | 0 | 0 | 0 | 0 |
 | /screen.html | 0 | 0 | 0 | 0 | 0 |
 | /organizers.html | 0 | 0 | 0 | 0 | 0 |
-| /events/demo-event.html | 0 | 0 | 0 | 0 | 0 |
+| /events/event-beast-house.html | 0 | 0 | 0 | 0 | 0 |

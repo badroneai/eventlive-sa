@@ -10,7 +10,7 @@
   "evidence_url": "https://kau.edu.sa/en/event/research-beacons-program-season-3-2026",
   "trust_tier": "official",
   "trust_label": "مصدر حكومي أو رسمي",
-  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verified_at": "2026-07-10T06:52:19.836Z",
   "verification_method": "registered-official",
   "freshness_hours": 1,
   "city": "جدة",
@@ -97,6 +97,11 @@
         "addressLocality": "جدة",
         "addressRegion": "منطقة مكة المكرمة",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 21.4934146,
+        "longitude": 39.2485449
       }
     },
     "organizer": {

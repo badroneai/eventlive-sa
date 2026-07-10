@@ -16,6 +16,10 @@ assert.equal(normalizeSaudiCity('غرفة الحدود الشمالية في ع�
 assert.equal(normalizeSaudiCity('ليالي سهيل رفحاء'), 'Rafha');
 assert.equal(normalizeSaudiCity('فعالية في سكاكا'), 'Sakaka');
 assert.equal(normalizeSaudiCity('Paris, France'), 'Global');
+assert.equal(normalizeSaudiCity('Damam Expo'), 'Dammam');
+assert.equal(normalizeSaudiCity('Tayef'), 'Taif');
+assert.equal(normalizeSaudiCity('Mazhmeya'), 'Al Muzahimiyah');
+assert.equal(normalizeSaudiCity('Nemas'), 'Al Namas');
 assert.equal(isPlaceholderCity('Saudi Arabia'), true);
 assert.equal(isPlaceholderCity('Riyadh'), false);
 

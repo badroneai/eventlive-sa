@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:سكة الأطعمة | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-سكة-الأطعمة@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260303T210000Z
+DTEND:20260815T205900Z
+SUMMARY:سكة الأطعمة
+DESCRIPTION:سكة الأطعمة هي وجهة دائمة تجمع نخبة من المطاعم، لتقدّم للزوار تجربة طعام متكاملة في أجواء نابضة بالحياة. سكة الأطعمة ضمن رياضة وفعاليات جماهيرية في الرياض. تبدأ الفعالية ٠٤‏/٠٣‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ١٥‏/٠٨‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-سكة-الأطعمة.html
+END:VEVENT
+END:VCALENDAR

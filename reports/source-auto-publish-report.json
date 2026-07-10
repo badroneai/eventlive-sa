@@ -1,28 +1,22 @@
 {
-  "published_at": "2026-07-10T03:47:10.130Z",
+  "published_at": "2026-07-10T07:21:55.253Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 194,
+  "candidates_seen": 260,
   "totals": {
-    "candidates_seen": 194,
-    "published": 1,
-    "linked_existing": 162,
-    "blocked": 31,
-    "reconciled": 163
+    "candidates_seen": 260,
+    "published": 0,
+    "linked_existing": 238,
+    "blocked": 22,
+    "reconciled": 238
   },
   "duplicate_catalog_rows_removed": 0,
   "duplicate_catalog_rows": [],
   "canonical_event_ids_remapped": 0,
   "canonical_event_id_remaps": [],
-  "published": [
-    {
-      "candidate_id": "candidate-najran-municipality-summer-events-مهرجان-صيف-نجران-2026-صيفنا-هايل-20260707-a130a84c",
-      "event_id": "event-مهرجان-صيف-نجران-2026-صيفنا-هايل",
-      "title": "مهرجان صيف نجران 2026 «صيفنا هايل»"
-    }
-  ],
+  "published": [],
   "linked_existing": [
     {
       "candidate_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c",
@@ -97,7 +91,7 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-the-groves-20251105-b7362f59",
+      "candidate_id": "candidate-visit-saudi-seasons-the-groves-20251105-b7362f59",
       "event_id": "event-the-groves",
       "title": "The Groves",
       "reason": "already linked to catalog event"
@@ -139,15 +133,117 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-سكة-الأطعمة-20260304-4a38d19e",
+      "event_id": "event-سكة-الأطعمة",
+      "title": "سكة الأطعمة",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-misk-hub-programs-misk-local-traineeship-program-20260401-200b6490",
       "event_id": "event-misk-local-traineeship-program",
       "title": "Misk Local Traineeship Program",
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-سوق-الثلاثاء-الشعبي-20260501-4a38d19e",
+      "event_id": "event-سوق-الثلاثاء-الشعبي",
+      "title": "سوق الثلاثاء الشعبي",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-قصور-وقاع-ابو-نقطة-المتحمي-20260503-4a38d19e",
+      "event_id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
+      "title": "قصور وقاع ابو نقطة المتحمي",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-صندوق-أسامة-من-مخرج-ثمانية-20260505-4a38d19e",
+      "event_id": "event-صندوق-أسامة-من-مخرج-ثمانية",
+      "title": "صندوق أسامة من مخرج ثمانية",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-solo-art-exhibition-series-20260506-1e56ae74",
       "event_id": "event-solo-art-exhibition-series",
       "title": "Solo Art Exhibition Series",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-قصور-العسابلة-20260515-4a38d19e",
+      "event_id": "event-قصور-العسابلة",
+      "title": "قصور العسابلة",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-قرية-آل-ينفع-20260515-4a38d19e",
+      "event_id": "event-قرية-آل-ينفع",
+      "title": "قرية آل ينفع",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-مزرعة-الليوان-20260518-4a38d19e",
+      "event_id": "event-مزرعة-الليوان",
+      "title": "مزرعة الليوان",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-مزرعة-ركايب-20260601-4a38d19e",
+      "event_id": "event-مزرعة-ركايب",
+      "title": "مزرعة ركايب",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-برندة-20260601-4a38d19e",
+      "event_id": "event-برندة",
+      "title": "برندة",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-سكاي-فيلج-20260602-4a38d19e",
+      "event_id": "event-سكاي-فيلج",
+      "title": "سكاي فيلج",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-معرض-قلب-البحر-20260604-4a38d19e",
+      "event_id": "event-معرض-قلب-البحر",
+      "title": "معرض قلب البحر",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-منطقة-مشجعي-كأس-العالم-2026-20260610-4a38d19e",
+      "event_id": "event-منطقة-مشجعي-كأس-العالم-2026",
+      "title": "منطقة مشجعي كأس العالم 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-جدة-بروميناد-fan-zone-20260611-4a38d19e",
+      "event_id": "event-جدة-بروميناد-fan-zone",
+      "title": "جدة بروميناد Fan Zone",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-عيشوا-المونديال-مع-بنش-مارك-عبادي-الجوهر-أرينا-20260611-4a38d19e",
+      "event_id": "event-عيشوا-المونديال-مع-بنش-مارك-عبادي-الجوهر-أرينا",
+      "title": "عيشوا المونديال مع بنش مارك - عبادي الجوهر أرينا",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-عيشها-20260611-4a38d19e",
+      "event_id": "event-eishha-live-it-fan-zone-for-fifa-world-cup-2026",
+      "title": "عيشها",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-فان-زون-بنك-الرياض-من-سولتير-20260611-4a38d19e",
+      "event_id": "event-solitaire-fan-zone-fifa-world-cup-2026",
+      "title": "فان زون بنك الرياض من سولتير",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-منطقة-مشجعي-كأس-العالم-2026-في-فندق-كيمبتون-كافد-20260611-4a38d19e",
+      "event_id": "event-world-cup-2026-fan-zone-at-kimpton-kafd",
+      "title": "منطقة مشجعي كأس العالم 2026 في فندق كيمبتون كافد",
       "reason": "already linked to catalog event"
     },
     {
@@ -181,9 +277,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-coca-cola-fan-zone-at-jax-district-20260611-f9159842",
+      "candidate_id": "candidate-visit-saudi-seasons-coca-cola-fan-zone-at-jax-district-20260611-f9159842",
       "event_id": "event-coca-cola-fan-zone-at-jax-district",
       "title": "Coca-Cola Fan Zone at JAX District",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-مساحة-روح-وجهة-المونديال-20260613-4a38d19e",
+      "event_id": "event-ruh-space",
+      "title": "مساحة روح",
       "reason": "already linked to catalog event"
     },
     {
@@ -193,9 +295,57 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-منطقة-مشجعين-ليسن-20260614-4a38d19e",
+      "event_id": "event-laysen-fan-zone-fifa-world-cup-2026",
+      "title": "منطقة مشجعين ليسن",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-laysen-fan-zone-fifa-world-cup-2026-20260614-8c77f037",
       "event_id": "event-laysen-fan-zone-fifa-world-cup-2026",
       "title": "Laysen Fan Zone – FIFA World Cup 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-مهرجان-صوت-أبها-saf-20260615-4a38d19e",
+      "event_id": "event-مهرجان-صوت-أبها-saf",
+      "title": "مهرجان صوت أبها SAF",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-بوابة-المونديال-كأس-العالم-في-جدة-20260615-4a38d19e",
+      "event_id": "event-بوابة-المونديال-كأس-العالم-في-جدة",
+      "title": "بوابة المونديال – كأس العالم في جدة",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-معرض-في-تتبّع-ذكريات-غامرة-20260618-4a38d19e",
+      "event_id": "event-معرض-في-تتبّع-ذكريات-غامرة",
+      "title": "معرض في تتبّع ذكريات غامرة",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-مهرجان-أبها-للتسوق-20260624-4a38d19e",
+      "event_id": "event-مهرجان-أبها-للتسوق",
+      "title": "مهرجان أبها للتسوق",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-مزرعة-أعناب-20260624-4a38d19e",
+      "event_id": "event-مزرعة-أعناب",
+      "title": "مزرعة أعناب",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-الحفلات-الغنائية-20260625-4a38d19e",
+      "event_id": "event-الحفلات-الغنائية",
+      "title": "الحفلات الغنائية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-أسبوع-العطور-20260625-4a38d19e",
+      "event_id": "event-أسبوع-العطور",
+      "title": "أسبوع العطور",
       "reason": "already linked to catalog event"
     },
     {
@@ -217,6 +367,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-كشتة-20260627-4a38d19e",
+      "event_id": "event-kashtah",
+      "title": "كشتة",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-kashtah-20260627-0fa92e11",
       "event_id": "event-kashtah",
       "title": "Kashtah",
@@ -226,6 +382,42 @@
       "candidate_id": "candidate-riyadh-city-events-art-futures-camp-2026-diriyah-art-futures-20260628-b1821d4c",
       "event_id": "event-art-futures-camp-2026-diriyah-art-futures",
       "title": "Art Futures Camp 2026 – Diriyah Art Futures",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-بيوني-الشرف-20260701-4a38d19e",
+      "event_id": "event-بيوني-الشرف",
+      "title": "بيوني الشرف",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-فعالية-سيّر-20260701-4a38d19e",
+      "event_id": "event-فعالية-سيّر",
+      "title": "فعالية سيّر",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-معرض-الصيف-للفنون-20260701-4a38d19e",
+      "event_id": "event-معرض-الصيف-للفنون",
+      "title": "معرض الصيف للفنون",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-قرية-الموسى-التراثية-20260701-4a38d19e",
+      "event_id": "event-قرية-الموسى-التراثية",
+      "title": "قرية الموسى التراثية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-صيف-غابة-رغدان-في-الباحة-2026-20260701-4a38d19e",
+      "event_id": "event-صيف-غابة-رغدان-في-الباحة-2026",
+      "title": "صيف غابة رغدان في الباحة 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-قرية-الأطاولة-التراثية-20260701-4a38d19e",
+      "event_id": "event-قرية-الأطاولة-التراثية",
+      "title": "قرية الأطاولة التراثية",
       "reason": "already linked to catalog event"
     },
     {
@@ -259,9 +451,45 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-ورث-الفن-20260706-4a38d19e",
+      "event_id": "event-ورث-الفن",
+      "title": "ورث الفن",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-taste-of-the-world-20260706-4a38d19e",
+      "event_id": "event-taste-of-the-world",
+      "title": "Taste of the World",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-مهرجان-المأكولات-الشعبية-20260706-4a38d19e",
+      "event_id": "event-مهرجان-المأكولات-الشعبية",
+      "title": "مهرجان المأكولات الشعبية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-فعالية-رمي-السهام-20260706-4a38d19e",
+      "event_id": "event-فعالية-رمي-السهام",
+      "title": "فعالية رمي السهام",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
+      "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
+      "title": "عروض الفنون الأدائية التقليدية",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-esports-world-cup-20260706-b4b860e9",
       "event_id": "event-esports-world-cup",
       "title": "Esports World Cup",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-najran-municipality-summer-events-مهرجان-صيف-نجران-2026-صيفنا-هايل-20260707-a130a84c",
+      "event_id": "event-مهرجان-صيف-نجران-2026-صيفنا-هايل",
+      "title": "مهرجان صيف نجران 2026 «صيفنا هايل»",
       "reason": "already linked to catalog event"
     },
     {
@@ -271,9 +499,27 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-jouf-university-programs-البرنامج-الصيفي-بجامعة-الجوف-2026-20260708-fa67cacd",
+      "event_id": "event-البرنامج-الصيفي-بجامعة-الجوف-2026",
+      "title": "البرنامج الصيفي بجامعة الجوف 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-مهرجان-لحن-المملكة-20260709-4a38d19e",
+      "event_id": "event-مهرجان-لحن-المملكة",
+      "title": "مهرجان لحن المملكة",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-mdlbeast-events-unstable-20260710-5647df2e",
       "event_id": "event-unstable",
       "title": "Unstable",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-عمر-الجمل-حفلة-ستاند-أب-كوميدي-20260710-4a38d19e",
+      "event_id": "event-عمر-الجمل-حفلة-ستاند-أب-كوميدي",
+      "title": "عمر الجمل - حفلة ستاند أب كوميدي",
       "reason": "already linked to catalog event"
     },
     {
@@ -337,6 +583,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-qassim-university-events-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم-20260712-dc748566",
+      "event_id": "event-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم",
+      "title": "انطلاق النادي الصيفي التاسع لجامعة القصيم",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-saif-summer-program-20260712-c90d634d",
       "event_id": "event-saif-summer-program",
       "title": "SAIF Summer Program",
@@ -379,9 +631,27 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-بطولة-المملكة-للبلوت-20260716-4a38d19e",
+      "event_id": "event-بطولة-المملكة-للبلوت",
+      "title": "بطولة المملكة للبلوت",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-experience-alula-events-summer-fruits-season-in-alula-20260716-de70ec3a",
+      "event_id": "event-summer-fruits-season-in-alula",
+      "title": "Summer Fruits Season in AlUla",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-wrth-summer-art-craft-program-20260716-77021a48",
       "event_id": "event-wrth-summer-art-craft-program",
       "title": "Wrth Summer Art & Craft Program",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-اليوم-العالمي-لآيس-كريم-بالتعاون-مع-كلمشي-20260719-4a38d19e",
+      "event_id": "event-اليوم-العالمي-لآيس-كريم-بالتعاون-مع-كلمشي",
+      "title": "اليوم العالمي لآيس كريم بالتعاون مع كلمشي",
       "reason": "already linked to catalog event"
     },
     {
@@ -421,6 +691,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-الأسبوع-الصيني-20260723-4a38d19e",
+      "event_id": "event-الأسبوع-الصيني",
+      "title": "الأسبوع الصيني",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-the-comeback-20260725-4a38d19e",
+      "event_id": "event-the-comeback",
+      "title": "The Comeback",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-summer-splash-running-event-20260725-0b63acb2",
       "event_id": "event-summer-splash-running-event",
       "title": "Summer Splash Running event",
@@ -442,6 +724,18 @@
       "candidate_id": "candidate-misk-hub-programs-entrepreneur-leadership-excellence-program-20260727-dd903886",
       "event_id": "event-entrepreneur-leadership-excellence-program",
       "title": "Entrepreneur Leadership Excellence Program",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-أوركسترا-harry-potter-20260728-4a38d19e",
+      "event_id": "event-أوركسترا-harry-potter",
+      "title": "أوركسترا Harry Potter",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-ضحكات-الرياض-20260802-4a38d19e",
+      "event_id": "event-ضحكات-الرياض",
+      "title": "ضحكات الرياض",
       "reason": "already linked to catalog event"
     },
     {
@@ -487,9 +781,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-أوركسترا-game-of-thrones-20260811-4a38d19e",
+      "event_id": "event-أوركسترا-game-of-thrones",
+      "title": "أوركسترا Game of Thrones",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-sfda-events-الإدراج-في-خطوات-20260812-80dbadc1",
       "event_id": "event-الإدراج-في-خطوات",
       "title": "الإدراج في خطوات",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-بطولة-أبطال-المملكة-للشطرنج-20260813-4a38d19e",
+      "event_id": "event-بطولة-أبطال-المملكة-للشطرنج",
+      "title": "بطولة أبطال المملكة للشطرنج",
       "reason": "already linked to catalog event"
     },
     {
@@ -541,9 +847,39 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-eye-of-riyadh-events-smart-data-ai-summit-20260826-f9946ea8",
+      "event_id": "event-smart-data-ai-summit",
+      "title": "Smart Data & AI Summit",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-rfecc-whats-on-saudi-logistic-warehousing-expo-20260830-ff3565ba",
       "event_id": "event-saudi-logistic-038-warehousing-expo",
       "title": "Saudi Logistic & Warehousing Expo",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-eye-of-riyadh-events-hrse-ksa-20260830-6945a87a",
+      "event_id": "event-hrse-ksa",
+      "title": "HRSE KSA",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-eye-of-riyadh-events-big-5-construct-saudi-20260830-2238e3a0",
+      "event_id": "event-big-5-construct-saudi",
+      "title": "Big 5 Construct Saudi",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-eye-of-riyadh-events-hvac-r-saudi-arabia-20260830-857b2f5b",
+      "event_id": "event-hvac-r-saudi-arabia",
+      "title": "HVAC R Saudi Arabia",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-eye-of-riyadh-events-saudi-fm-clean-20260830-cbe48152",
+      "event_id": "event-saudi-fm-clean",
+      "title": "Saudi FM & Clean",
       "reason": "already linked to catalog event"
     },
     {
@@ -577,6 +913,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-scega-exhibitions-conferences-ليب-26-20260831-57037ac3",
+      "event_id": "event-leap-2026",
+      "title": "ليب 26",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-leap-2026-20260831-95d3166a",
       "event_id": "event-leap-2026",
       "title": "LEAP 2026",
@@ -598,6 +940,12 @@
       "candidate_id": "candidate-riyadh-city-events-saudi-woodshow-20260901-f62d44d7",
       "event_id": "event-saudi-woodshow",
       "title": "Saudi WoodShow",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-scega-exhibitions-conferences-ملتقى-الأخشاب-الدولي-20260901-081bbfc0",
+      "event_id": "event-saudi-woodshow",
+      "title": "ملتقى الأخشاب الدولي",
       "reason": "already linked to catalog event"
     },
     {
@@ -709,6 +1057,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-in-act-act-ix-20260911-4a38d19e",
+      "event_id": "event-in-act-act-ix",
+      "title": "IN ACT - ACT IX",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-hotel-hospitality-expo-20260913-d9cf02f3",
       "event_id": "event-hotel-hospitality-expo",
       "title": "Hotel & Hospitality Expo",
@@ -724,6 +1078,12 @@
       "candidate_id": "candidate-riyadh-city-events-money20-20-middle-east-20260914-ae7e4b9d",
       "event_id": "event-money20-20-middle-east",
       "title": "Money20/20 Middle East",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-scega-exhibitions-conferences-قمة-الرياض-العالمية-للتقنية-الحيوية-الطبية-2026-20260914-3539190e",
+      "event_id": "event-riyadh-global-medical-biotechnology-summit",
+      "title": "قمة الرياض العالمية للتقنية الحيوية الطبية 2026",
       "reason": "already linked to catalog event"
     },
     {
@@ -811,15 +1171,21 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-saudi-international-falcons-hunting-exhibition-20261001-a4f29b73",
+      "candidate_id": "candidate-visit-saudi-seasons-saudi-international-falcons-hunting-exhibition-20261001-a4f29b73",
       "event_id": "event-saudi-international-falcons-hunting-exhibition",
       "title": "Saudi International Falcons & Hunting Exhibition",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-saudi-falcons-club-auction-20261001-4e016ab8",
+      "candidate_id": "candidate-visit-saudi-seasons-saudi-falcons-club-auction-20261001-4e016ab8",
       "event_id": "event-saudi-falcons-club-auction",
       "title": "Saudi Falcons Club Auction",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-scega-exhibitions-conferences-سباق-الملواح-20261004-634d88ef",
+      "event_id": "event-al-milwah-falcon-race",
+      "title": "سباق الملواح",
       "reason": "already linked to catalog event"
     },
     {
@@ -835,6 +1201,24 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-in-act-act-x-20261009-4a38d19e",
+      "event_id": "event-in-act-act-x",
+      "title": "IN ACT - ACT X",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-experience-alula-events-alula-wellness-festival-20261023-5b74606a",
+      "event_id": "event-alula-wellness-festival",
+      "title": "AlUla Wellness Festival",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-eye-of-riyadh-events-global-proptech-summit-2026-20261025-7c1d3001",
+      "event_id": "event-global-proptech-summit-2026",
+      "title": "Global Proptech Summit 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-rfecc-whats-on-natrual-expo-20261026-a7983dd2",
       "event_id": "event-natrual-expo",
       "title": "Natrual Expo",
@@ -844,6 +1228,18 @@
       "candidate_id": "candidate-invest-saudi-events-future-investment-initiative-fii-10-20261027-a7444334",
       "event_id": "event-future-investment-initiative-fii-10",
       "title": "Future Investment Initiative (FII 10)",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-eye-of-riyadh-events-real-estate-supply-chain-forum-20261028-206f7fb8",
+      "event_id": "event-real-estate-supply-chain-forum",
+      "title": "Real Estate Supply Chain Forum",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-eye-of-riyadh-events-cips-mena-procurement-and-supply-chain-futures-conference-and-awards-20261028-18fb7207",
+      "event_id": "event-cips-mena-procurement-and-supply-chain-futures-conference-and-awards",
+      "title": "CIPS MENA Procurement and Supply Chain Futures conference and awards",
       "reason": "already linked to catalog event"
     },
     {
@@ -865,9 +1261,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-experience-alula-events-alula-skies-festival-20261106-c03f831c",
+      "event_id": "event-alula-skies-festival",
+      "title": "AlUla Skies Festival",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-invest-saudi-events-web-summit-lisbon-2026-20261109-f87ccdc1",
       "event_id": "event-web-summit-lisbon-2026",
       "title": "Web Summit Lisbon 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-in-act-anniversary-act-xi-20261113-4a38d19e",
+      "event_id": "event-in-act-anniversary-act-xi",
+      "title": "IN ACT ANNIVERSARY - ACT XI",
       "reason": "already linked to catalog event"
     },
     {
@@ -880,6 +1288,12 @@
       "candidate_id": "candidate-mdlbeast-events-xp-music-futures-2026-20261126-19e9b824",
       "event_id": "event-xp-music-futures-2026",
       "title": "XP Music Futures 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-experience-alula-events-ancient-kingdoms-festival-20261126-a8081cef",
+      "event_id": "event-ancient-kingdoms-festival",
+      "title": "Ancient Kingdoms Festival",
       "reason": "already linked to catalog event"
     },
     {
@@ -955,6 +1369,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-experience-alula-events-winter-at-tantora-20261217-fcb864a2",
+      "event_id": "event-winter-at-tantora",
+      "title": "Winter at Tantora",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-rfecc-whats-on-china-homelife-saudi-arabia-2026-20261220-f2ff78ec",
       "event_id": "event-china-homelife-saudi-arabia-2026",
       "title": "China Homelife Saudi Arabia 2026",
@@ -964,6 +1384,36 @@
       "candidate_id": "candidate-asharqia-chamber-events-معرض-وظائف-2026-20261227-6ec9f54f",
       "event_id": "event-معرض-وظائف-2026",
       "title": "معرض وظائف 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-experience-alula-events-ultra-gobi-alula-20270113-fe4957f7",
+      "event_id": "event-ultra-gobi-alula",
+      "title": "Ultra Gobi AlUla",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-experience-alula-events-alula-arts-festival-20270115-3e7c4732",
+      "event_id": "event-alula-arts-festival",
+      "title": "AlUla Arts Festival",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-experience-alula-events-alula-trail-race-20270122-acfe31aa",
+      "event_id": "event-alula-trail-race",
+      "title": "AlUla Trail Race",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-eye-of-riyadh-events-real-estate-future-forum-20270125-d058344d",
+      "event_id": "event-real-estate-future-forum",
+      "title": "Real Estate Future Forum",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-experience-alula-events-alula-tour-20270126-cf866ee5",
+      "event_id": "event-alula-tour",
+      "title": "AlUla Tour",
       "reason": "already linked to catalog event"
     },
     {
@@ -1004,6 +1454,11 @@
       "reason": "possible duplicate already exists: event-esports-world-cup"
     },
     {
+      "candidate_id": "candidate-eventbrite-saudi-riyadh-tech-mixer-and-social-tech-ai-data-it-20260710-5651bfb9",
+      "title": "Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨",
+      "reason": "publication gate source-evidence is not auto-publishable"
+    },
+    {
       "candidate_id": "candidate-eventbrite-saudi-dubai-property-expo-in-al-khobar-17th-18th-july-2026-danube-20260717-2dd8b8b7",
       "title": "Dubai Property Expo in Al Khobar",
       "reason": "publication gate source-evidence is not auto-publishable"
@@ -1011,22 +1466,12 @@
     {
       "candidate_id": "candidate-eye-of-riyadh-events-oxford-future-of-real-estate-programme-20260805-7c9ee195",
       "title": "Oxford Future of Real Estate Programme",
-      "reason": "confidence public-listing is not auto-publishable"
+      "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-sunaa-2026-20260818-e3819fa8",
       "title": "SUNAA 2026",
-      "reason": "confidence public-listing is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-smart-data-ai-summit-20260826-f9946ea8",
-      "title": "Smart Data & AI Summit",
-      "reason": "confidence public-listing is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-hrse-ksa-20260830-6945a87a",
-      "title": "HRSE KSA",
-      "reason": "confidence public-listing is not auto-publishable"
+      "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-saudi-wood-expo-2026-20260830-b4d44be4",
@@ -1034,24 +1479,9 @@
       "reason": "possible duplicate already exists: event-saudi-wood-expo-2026"
     },
     {
-      "candidate_id": "candidate-eye-of-riyadh-events-big-5-construct-saudi-20260830-2238e3a0",
-      "title": "Big 5 Construct Saudi",
-      "reason": "confidence public-listing is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-hvac-r-saudi-arabia-20260830-857b2f5b",
-      "title": "HVAC R Saudi Arabia",
-      "reason": "confidence public-listing is not auto-publishable"
-    },
-    {
       "candidate_id": "candidate-eye-of-riyadh-events-saudi-industrial-series-20260830-c10ad399",
       "title": "Saudi Industrial Series",
       "reason": "possible duplicate already exists: event-saudi-industrial-series-2"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-saudi-fm-clean-20260830-cbe48152",
-      "title": "Saudi FM & Clean",
-      "reason": "confidence public-listing is not auto-publishable"
     },
     {
       "candidate_id": "candidate-eventbrite-saudi-family-office-investment-meeting-riyadh-registration-fee-usd-580-20260902-82923462",
@@ -1084,8 +1514,8 @@
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
-      "candidate_id": "candidate-eventbrite-saudi-25th-wpc-energy-congress-20261011-5909609b",
-      "title": "25TH WPC Energy Congress",
+      "candidate_id": "candidate-eventbrite-saudi-12th-middle-east-banking-ai-analytics-summit-2026-20261014-cec80e9d",
+      "title": "12th Middle East Banking AI & Analytics Summit 2026",
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
@@ -1097,26 +1527,6 @@
       "candidate_id": "candidate-eventbrite-saudi-15th-middle-east-enterprise-ai-analytics-summit-20261015-e0aad1e6",
       "title": "15th Middle East Enterprise AI & Analytics Summit",
       "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-eventbrite-saudi-riyadh-2026-venture-capital-world-summit-20261020-a3f5a1b8",
-      "title": "Riyadh 2026 Venture Capital World Summit",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-global-proptech-summit-2026-20261025-7c1d3001",
-      "title": "Global Proptech Summit 2026",
-      "reason": "confidence public-listing is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-real-estate-supply-chain-forum-20261028-206f7fb8",
-      "title": "Real Estate Supply Chain Forum",
-      "reason": "confidence public-listing is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-cips-mena-procurement-and-supply-chain-futures-conference-and-awards-20261028-18fb7207",
-      "title": "CIPS MENA Procurement and Supply Chain Futures conference and awards",
-      "reason": "confidence public-listing is not auto-publishable"
     },
     {
       "candidate_id": "candidate-eventbrite-saudi-cat-show-3rd-season-in-saudi-pet-vet-expo-20261109-a33c98fd",
@@ -1139,14 +1549,9 @@
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
-      "candidate_id": "candidate-eye-of-riyadh-events-real-estate-future-forum-20270125-d058344d",
-      "title": "Real Estate Future Forum",
-      "reason": "confidence public-listing is not auto-publishable"
-    },
-    {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-excellence-award-2026-rea-2026-20270126-5e55ea49",
       "title": "Real Estate Excellence Award 2026 (REA 2026)",
-      "reason": "confidence public-listing is not auto-publishable"
+      "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
       "candidate_id": "candidate-eventbrite-saudi-saudi-international-marine-exhibition-simec-6th-edition-2027-20270328-47e72c19",

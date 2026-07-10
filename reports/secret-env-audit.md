@@ -1,10 +1,10 @@
 # EventLive Secret & Environment Audit
 
-- Generated at: 2026-07-08T01:37:34.288Z
+- Generated at: 2026-07-10T06:25:53.267Z
 - Status: PASS
-- Files scanned: 340
+- Files scanned: 6883
 - Findings: 0
-- External public tokens in raw snapshots: 0
+- External public tokens in raw snapshots: 313
 - Environment matrix script: present
 - Deploy workflow: present
 

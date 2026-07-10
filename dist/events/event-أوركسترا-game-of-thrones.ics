@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:أوركسترا Game of Thrones | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-أوركسترا-game-of-thrones@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260810T210000Z
+DTEND:20260815T205900Z
+SUMMARY:أوركسترا Game of Thrones
+DESCRIPTION:استمتع بأوركسترا ،Game of Thrones عرض موسيقي حي يستحضر الموسيقى التصويرية للمسلسل، بأفضل مقطوعاته عبر جميع المواسم في أجواء كاسيكية سينمائية.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-أوركسترا-game-of-thrones.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:ضحكات الرياض | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-ضحكات-الرياض@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260801T210000Z
+DTEND:20260808T205900Z
+SUMMARY:ضحكات الرياض
+DESCRIPTION:استمتع بعروض ضحكات الرياض، أمسية كوميدية يقدمها نجوم الكوميديا المحليون في عروض فردية على المسرح بأسلوب ساخر وخفيف الظل.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-ضحكات-الرياض.html
+END:VEVENT
+END:VCALENDAR

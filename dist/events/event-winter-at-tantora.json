@@ -1,0 +1,123 @@
+{
+  "id": "event-winter-at-tantora",
+  "title": "Winter at Tantora",
+  "summary": "Experience a season of culture and celebration, inspired by AlUla’s rich heritage. Winter at Tantora ضمن ترفيه وعائلات في العلا. تبدأ الفعالية ١٧‏/١٢‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٠٩‏/٠١‏/٢٠٢٧، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Experience AlUla Events.",
+  "canonical_url": "https://eventme.live/events/event-winter-at-tantora.html",
+  "detail_url": "./events/event-winter-at-tantora.html",
+  "calendar_url": "./events/event-winter-at-tantora.ics",
+  "source_label": "Experience AlUla Events",
+  "source_url": "https://www.experiencealula.com/en/whats-on/festivals/winter-at-tantora",
+  "evidence_url": "https://www.experiencealula.com/en/whats-on/festivals/winter-at-tantora",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T07:21:55.253Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
+  "city": "العلا",
+  "venue": "AlUla",
+  "venue_address": "AlUla",
+  "starts_at": "2026-12-17T09:00:00+03:00",
+  "ends_at": "2027-01-09T18:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/winter-at-tantora-82f432dbc6.webp",
+  "image_alt": "Winter at Tantora",
+  "category": "ترفيه وعائلات",
+  "category_url": "./categories/entertainment-families.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Winter at Tantora",
+    "ترفيه وعائلات",
+    "festival",
+    "برنامج ممتد",
+    "قادمة",
+    "العلا",
+    "AlUla",
+    "Experience AlUla Events",
+    "destination",
+    "culture",
+    "heritage",
+    "music",
+    "sports",
+    "festivals",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-12-17T09:00:00+03:00",
+      "ends_at": "2027-01-09T18:00:00+03:00",
+      "room": "AlUla",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Winter at Tantora",
+    "startDate": "2026-12-17T09:00:00+03:00",
+    "endDate": "2027-01-09T18:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "AlUla",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "AlUla",
+        "addressLocality": "العلا",
+        "addressRegion": "منطقة المدينة المنورة",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Royal Commission for AlUla / Experience AlUla"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/winter-at-tantora-82f432dbc6.webp"
+    ],
+    "description": "Experience a season of culture and celebration, inspired by AlUla’s rich heritage. Winter at Tantora ضمن ترفيه وعائلات في العلا. تبدأ الفعالية ١٧‏/١٢‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٠٩‏/٠١‏/٢٠٢٧، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Experience AlUla Events.",
+    "url": "https://eventme.live/events/event-winter-at-tantora.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-winter-at-tantora.html",
+    "isAccessibleForFree": false,
+    "keywords": "Winter at Tantora, ترفيه وعائلات, festival, برنامج ممتد, قادمة, العلا, AlUla, Experience AlUla Events, destination, culture, heritage, music, sports, festivals, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.experiencealula.com/en/whats-on/festivals/winter-at-tantora"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.experiencealula.com/en/whats-on/festivals/winter-at-tantora",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

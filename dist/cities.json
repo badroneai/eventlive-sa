@@ -1,41 +1,51 @@
 {
-  "generated_at": "2026-07-10T03:59:04.097Z",
+  "generated_at": "2026-07-10T08:00:11.157Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
-  "cities_count": 23,
+  "cities_count": 34,
   "totals": {
-    "events": 441,
-    "upcoming_or_active": 160,
-    "ended": 281,
-    "live_ready": 15
+    "events": 619,
+    "upcoming_or_active": 225,
+    "ended": 394,
+    "live_ready": 21
   },
   "cities": [
     {
       "slug": "riyadh",
       "label": "الرياض",
       "url": "./cities/riyadh.html",
-      "total_events": 194,
-      "upcoming_or_active": 97,
-      "ended": 97,
-      "live_ready": 1,
+      "total_events": 286,
+      "upcoming_or_active": 123,
+      "ended": 163,
+      "live_ready": 7,
       "sources": [
         "CODE MCIT Programs",
         "Eye of Riyadh Events",
+        "Eye of Riyadh Official",
+        "Global PropTech Summit Official",
+        "HRSE KSA Official",
         "Invest Saudi Events",
+        "LEAP 2026 Official",
         "MDLBEAST Events",
         "Ministry of Culture Commission Calendars",
         "Ministry of Sport Events",
         "Misk Hub Programs",
+        "Money20/20 Middle East Official",
         "RFECC What's On",
+        "Real Estate Future Forum Official",
         "Riyadh City Events",
+        "SCEGA ePortal Events",
         "SDAIA Calendar and Events",
         "Saudi Food and Drug Authority Events",
         "Saudi Pro League Fixtures",
         "Saudi Space Agency Events",
         "Saudi Water Authority Events",
+        "Smart Data & AI Summit Official",
         "Tuwaiq Academy Bootcamps and Programs",
         "Visit Saudi Calendar",
-        "Visit Saudi Seasons"
+        "Visit Saudi Seasons",
+        "Visit Saudi Summer Calendar PDF",
+        "dmg events Official"
       ],
       "categories": [
         "ألعاب ورياضات إلكترونية",
@@ -57,7 +67,7 @@
         "status": "ongoing",
         "url": "./events/event-skill-development-initiative.html"
       },
-      "sources_count": 17,
+      "sources_count": 27,
       "categories_count": 12
     },
     {
@@ -89,12 +99,39 @@
       "categories_count": 5
     },
     {
+      "slug": "aseer",
+      "label": "عسير",
+      "url": "./cities/aseer.html",
+      "total_events": 18,
+      "upcoming_or_active": 17,
+      "ended": 1,
+      "live_ready": 0,
+      "sources": [
+        "Visit Saudi Calendar",
+        "Visit Saudi Summer Calendar PDF"
+      ],
+      "categories": [
+        "ترفيه وعائلات",
+        "ثقافة وفنون",
+        "رياضة وفعاليات جماهيرية",
+        "ورش تنظيمية وصحية"
+      ],
+      "next_event": {
+        "title": "سوق الثلاثاء الشعبي",
+        "starts_at": "2026-05-01T00:00:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-سوق-الثلاثاء-الشعبي.html"
+      },
+      "sources_count": 2,
+      "categories_count": 4
+    },
+    {
       "slug": "saudi-arabia",
       "label": "السعودية",
       "url": "./cities/saudi-arabia.html",
-      "total_events": 21,
+      "total_events": 23,
       "upcoming_or_active": 16,
-      "ended": 5,
+      "ended": 7,
       "live_ready": 0,
       "sources": [
         "CODE MCIT Programs",
@@ -102,12 +139,14 @@
         "Misk Hub Events",
         "Misk Hub Programs",
         "Monsha'at All Events",
-        "Saudi Space Agency Events"
+        "Saudi Space Agency Events",
+        "Visit Saudi Summer Calendar PDF"
       ],
       "categories": [
         "ألعاب ورياضات إلكترونية",
         "تدريب تقني",
         "ثقافة وفنون",
+        "رياضة وفعاليات جماهيرية",
         "علوم وفضاء"
       ],
       "next_event": {
@@ -116,8 +155,49 @@
         "status": "ongoing",
         "url": "./events/event-the-architecture-and-design-caf.html"
       },
-      "sources_count": 6,
-      "categories_count": 4
+      "sources_count": 7,
+      "categories_count": 5
+    },
+    {
+      "slug": "jeddah",
+      "label": "جدة",
+      "url": "./cities/jeddah.html",
+      "total_events": 77,
+      "upcoming_or_active": 13,
+      "ended": 64,
+      "live_ready": 0,
+      "sources": [
+        "Jeddah Chamber Exhibitions and Events Center",
+        "MDLBEAST Events",
+        "Ministry of Sport Events",
+        "SCEGA ePortal Events",
+        "Saudi Pro League Fixtures",
+        "Saudi Space Agency Events",
+        "Saudi Universities and Technical Colleges",
+        "Saudi Water Authority Events",
+        "Visit Saudi Summer Calendar PDF"
+      ],
+      "categories": [
+        "ألعاب ورياضات إلكترونية",
+        "ترفيه وعائلات",
+        "ثقافة وفنون",
+        "جامعات ومجتمع",
+        "جوائز وتكريم",
+        "رياضة وفعاليات جماهيرية",
+        "علوم وفضاء",
+        "فعاليات الغرف التجارية",
+        "مؤتمرات ومنتديات",
+        "معارض وتجارية",
+        "ورش تنظيمية وصحية"
+      ],
+      "next_event": {
+        "title": "معرض قلب البحر",
+        "starts_at": "2026-06-04T00:00:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-معرض-قلب-البحر.html"
+      },
+      "sources_count": 9,
+      "categories_count": 11
     },
     {
       "slug": "online",
@@ -153,41 +233,31 @@
       "categories_count": 4
     },
     {
-      "slug": "jeddah",
-      "label": "جدة",
-      "url": "./cities/jeddah.html",
-      "total_events": 53,
-      "upcoming_or_active": 4,
-      "ended": 49,
+      "slug": "alula",
+      "label": "العلا",
+      "url": "./cities/alula.html",
+      "total_events": 17,
+      "upcoming_or_active": 9,
+      "ended": 8,
       "live_ready": 0,
       "sources": [
-        "CODE MCIT Programs",
-        "Jeddah Chamber Exhibitions and Events Center",
+        "Experience AlUla Events",
         "MDLBEAST Events",
-        "Ministry of Sport Events",
-        "Saudi Pro League Fixtures",
-        "Saudi Space Agency Events",
-        "Saudi Universities and Technical Colleges",
-        "Saudi Water Authority Events"
+        "Ministry of Sport Events"
       ],
       "categories": [
-        "ألعاب ورياضات إلكترونية",
         "ترفيه وعائلات",
-        "جامعات ومجتمع",
-        "جوائز وتكريم",
         "رياضة وفعاليات جماهيرية",
-        "علوم وفضاء",
-        "فعاليات الغرف التجارية",
-        "مؤتمرات ومنتديات"
+        "علوم وفضاء"
       ],
       "next_event": {
-        "title": "Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH",
-        "starts_at": "2026-07-07T09:00:00+03:00",
-        "status": "ongoing",
-        "url": "./events/event-registration-now-open-for-children-at-the-childhood-studies-center-for-t.html"
+        "title": "Summer Fruits Season in AlUla",
+        "starts_at": "2026-07-16T09:00:00+03:00",
+        "status": "upcoming",
+        "url": "./events/event-summer-fruits-season-in-alula.html"
       },
-      "sources_count": 8,
-      "categories_count": 8
+      "sources_count": 3,
+      "categories_count": 3
     },
     {
       "slug": "thuwal",
@@ -215,6 +285,32 @@
       "categories_count": 3
     },
     {
+      "slug": "al-baha",
+      "label": "الباحة",
+      "url": "./cities/al-baha.html",
+      "total_events": 4,
+      "upcoming_or_active": 4,
+      "ended": 0,
+      "live_ready": 0,
+      "sources": [
+        "Visit Saudi Summer Calendar PDF"
+      ],
+      "categories": [
+        "ترفيه وعائلات",
+        "ثقافة وفنون",
+        "رياضة وفعاليات جماهيرية",
+        "ورش تنظيمية وصحية"
+      ],
+      "next_event": {
+        "title": "منطقة مشجعي كأس العالم 2026",
+        "starts_at": "2026-06-10T00:00:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-منطقة-مشجعي-كأس-العالم-2026.html"
+      },
+      "sources_count": 1,
+      "categories_count": 4
+    },
+    {
       "slug": "nationwide",
       "label": "على مستوى المملكة",
       "url": "./cities/nationwide.html",
@@ -238,28 +334,34 @@
       "categories_count": 1
     },
     {
-      "slug": "aseer",
-      "label": "عسير",
-      "url": "./cities/aseer.html",
-      "total_events": 2,
-      "upcoming_or_active": 2,
-      "ended": 0,
-      "live_ready": 0,
+      "slug": "buraydah",
+      "label": "بريدة",
+      "url": "./cities/buraydah.html",
+      "total_events": 24,
+      "upcoming_or_active": 1,
+      "ended": 23,
+      "live_ready": 1,
       "sources": [
-        "Visit Saudi Calendar"
+        "Qassim Chamber Events",
+        "Qassim University Events",
+        "SCEGA ePortal Events",
+        "Saudi Pro League Fixtures"
       ],
       "categories": [
-        "ترفيه وعائلات",
-        "رياضة وفعاليات جماهيرية"
+        "جامعات ومجتمع",
+        "رياضة وفعاليات جماهيرية",
+        "فعاليات الغرف التجارية",
+        "مؤتمرات ومنتديات",
+        "معارض وتجارية"
       ],
       "next_event": {
-        "title": "Aseer Season",
-        "starts_at": "2026-06-25T09:00:00+03:00",
-        "status": "ongoing",
-        "url": "./events/event-aseer-season.html"
+        "title": "انطلاق النادي الصيفي التاسع لجامعة القصيم",
+        "starts_at": "2026-07-12T16:30:00+03:00",
+        "status": "upcoming",
+        "url": "./events/event-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم.html"
       },
-      "sources_count": 1,
-      "categories_count": 2
+      "sources_count": 4,
+      "categories_count": 5
     },
     {
       "slug": "jazan",
@@ -311,6 +413,31 @@
       "categories_count": 3
     },
     {
+      "slug": "najran",
+      "label": "نجران",
+      "url": "./cities/najran.html",
+      "total_events": 3,
+      "upcoming_or_active": 1,
+      "ended": 2,
+      "live_ready": 0,
+      "sources": [
+        "Najran Municipality Summer Events",
+        "Saudi Pro League Fixtures"
+      ],
+      "categories": [
+        "ترفيه وعائلات",
+        "رياضة وفعاليات جماهيرية"
+      ],
+      "next_event": {
+        "title": "مهرجان صيف نجران 2026 «صيفنا هايل»",
+        "starts_at": "2026-07-07T00:00:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-مهرجان-صيف-نجران-2026-صيفنا-هايل.html"
+      },
+      "sources_count": 2,
+      "categories_count": 2
+    },
+    {
       "slug": "diriyah",
       "label": "الدرعية",
       "url": "./cities/diriyah.html",
@@ -334,24 +461,24 @@
       "categories_count": 1
     },
     {
-      "slug": "najran",
-      "label": "نجران",
-      "url": "./cities/najran.html",
+      "slug": "sakaka",
+      "label": "سكاكا",
+      "url": "./cities/sakaka.html",
       "total_events": 1,
       "upcoming_or_active": 1,
       "ended": 0,
       "live_ready": 0,
       "sources": [
-        "Najran Municipality Summer Events"
+        "Jouf University Summer Programs"
       ],
       "categories": [
-        "ترفيه وعائلات"
+        "ورش تنظيمية وصحية"
       ],
       "next_event": {
-        "title": "مهرجان صيف نجران 2026 «صيفنا هايل»",
-        "starts_at": "2026-07-07T00:00:00+03:00",
+        "title": "البرنامج الصيفي بجامعة الجوف 2026",
+        "starts_at": "2026-07-08T00:00:00+03:00",
         "status": "ongoing",
-        "url": "./events/event-مهرجان-صيف-نجران-2026-صيفنا-هايل.html"
+        "url": "./events/event-البرنامج-الصيفي-بجامعة-الجوف-2026.html"
       },
       "sources_count": 1,
       "categories_count": 1
@@ -360,75 +487,40 @@
       "slug": "dammam",
       "label": "الدمام",
       "url": "./cities/dammam.html",
-      "total_events": 23,
+      "total_events": 31,
       "upcoming_or_active": 0,
-      "ended": 23,
+      "ended": 31,
       "live_ready": 0,
       "sources": [
         "Asharqia Chamber Events",
+        "SCEGA ePortal Events",
         "Saudi Pro League Fixtures"
       ],
       "categories": [
         "رياضة وفعاليات جماهيرية",
-        "فعاليات الغرف التجارية"
+        "فعاليات الغرف التجارية",
+        "معارض وتجارية"
       ],
-      "sources_count": 2,
-      "categories_count": 2
-    },
-    {
-      "slug": "buraydah",
-      "label": "بريدة",
-      "url": "./cities/buraydah.html",
-      "total_events": 20,
-      "upcoming_or_active": 0,
-      "ended": 20,
-      "live_ready": 1,
-      "sources": [
-        "Qassim Chamber Events",
-        "Saudi Pro League Fixtures"
-      ],
-      "categories": [
-        "رياضة وفعاليات جماهيرية",
-        "فعاليات الغرف التجارية"
-      ],
-      "sources_count": 2,
-      "categories_count": 2
+      "sources_count": 3,
+      "categories_count": 3
     },
     {
       "slug": "makkah",
       "label": "مكة",
       "url": "./cities/makkah.html",
-      "total_events": 10,
+      "total_events": 11,
       "upcoming_or_active": 0,
-      "ended": 10,
+      "ended": 11,
       "live_ready": 0,
       "sources": [
-        "Makkah Chamber Events"
+        "Makkah Chamber Events",
+        "SCEGA ePortal Events"
       ],
       "categories": [
-        "فعاليات الغرف التجارية"
+        "فعاليات الغرف التجارية",
+        "معارض وتجارية"
       ],
-      "sources_count": 1,
-      "categories_count": 1
-    },
-    {
-      "slug": "alula",
-      "label": "العلا",
-      "url": "./cities/alula.html",
-      "total_events": 7,
-      "upcoming_or_active": 0,
-      "ended": 7,
-      "live_ready": 0,
-      "sources": [
-        "Experience AlUla Events",
-        "MDLBEAST Events",
-        "Ministry of Sport Events"
-      ],
-      "categories": [
-        "ترفيه وعائلات",
-        "رياضة وفعاليات جماهيرية"
-      ],
-      "sources_count": 3,
+      "sources_count": 2,
       "categories_count": 2
     },
     {
@@ -466,6 +558,60 @@
       "categories_count": 1
     },
     {
+      "slug": "madinah",
+      "label": "المدينة المنورة",
+      "url": "./cities/madinah.html",
+      "total_events": 3,
+      "upcoming_or_active": 0,
+      "ended": 3,
+      "live_ready": 0,
+      "sources": [
+        "SCEGA ePortal Events"
+      ],
+      "categories": [
+        "مؤتمرات ومنتديات"
+      ],
+      "sources_count": 1,
+      "categories_count": 1
+    },
+    {
+      "slug": "tabuk",
+      "label": "تبوك",
+      "url": "./cities/tabuk.html",
+      "total_events": 3,
+      "upcoming_or_active": 0,
+      "ended": 3,
+      "live_ready": 0,
+      "sources": [
+        "Saudi Pro League Fixtures",
+        "Tabuk Chamber Events"
+      ],
+      "categories": [
+        "رياضة وفعاليات جماهيرية",
+        "فعاليات الغرف التجارية"
+      ],
+      "sources_count": 2,
+      "categories_count": 2
+    },
+    {
+      "slug": "khobar",
+      "label": "الخبر",
+      "url": "./cities/khobar.html",
+      "total_events": 2,
+      "upcoming_or_active": 0,
+      "ended": 2,
+      "live_ready": 0,
+      "sources": [
+        "SCEGA ePortal Events"
+      ],
+      "categories": [
+        "مؤتمرات ومنتديات",
+        "معارض وتجارية"
+      ],
+      "sources_count": 1,
+      "categories_count": 2
+    },
+    {
       "slug": "arar",
       "label": "عرعر",
       "url": "./cities/arar.html",
@@ -478,6 +624,40 @@
       ],
       "categories": [
         "فعاليات الغرف التجارية"
+      ],
+      "sources_count": 1,
+      "categories_count": 1
+    },
+    {
+      "slug": "al-ahsa",
+      "label": "الأحساء",
+      "url": "./cities/al-ahsa.html",
+      "total_events": 1,
+      "upcoming_or_active": 0,
+      "ended": 1,
+      "live_ready": 0,
+      "sources": [
+        "Saudi Pro League Fixtures"
+      ],
+      "categories": [
+        "رياضة وفعاليات جماهيرية"
+      ],
+      "sources_count": 1,
+      "categories_count": 1
+    },
+    {
+      "slug": "الافلاج",
+      "label": "الافلاج",
+      "url": "./cities/الافلاج.html",
+      "total_events": 1,
+      "upcoming_or_active": 0,
+      "ended": 1,
+      "live_ready": 0,
+      "sources": [
+        "SCEGA ePortal Events"
+      ],
+      "categories": [
+        "معارض وتجارية"
       ],
       "sources_count": 1,
       "categories_count": 1
@@ -500,35 +680,86 @@
       "categories_count": 1
     },
     {
-      "slug": "qatif",
-      "label": "القطيف",
-      "url": "./cities/qatif.html",
+      "slug": "rass",
+      "label": "الرس",
+      "url": "./cities/rass.html",
       "total_events": 1,
       "upcoming_or_active": 0,
       "ended": 1,
       "live_ready": 0,
       "sources": [
-        "Asharqia Chamber Events"
+        "Saudi Pro League Fixtures"
       ],
       "categories": [
-        "فعاليات الغرف التجارية"
+        "رياضة وفعاليات جماهيرية"
       ],
       "sources_count": 1,
       "categories_count": 1
     },
     {
-      "slug": "tabuk",
-      "label": "تبوك",
-      "url": "./cities/tabuk.html",
+      "slug": "taif",
+      "label": "الطائف",
+      "url": "./cities/taif.html",
       "total_events": 1,
       "upcoming_or_active": 0,
       "ended": 1,
       "live_ready": 0,
       "sources": [
-        "Tabuk Chamber Events"
+        "SCEGA ePortal Events"
       ],
       "categories": [
-        "فعاليات الغرف التجارية"
+        "معارض وتجارية"
+      ],
+      "sources_count": 1,
+      "categories_count": 1
+    },
+    {
+      "slug": "al-muzahimiyah",
+      "label": "المزاحمية",
+      "url": "./cities/al-muzahimiyah.html",
+      "total_events": 1,
+      "upcoming_or_active": 0,
+      "ended": 1,
+      "live_ready": 0,
+      "sources": [
+        "SCEGA ePortal Events"
+      ],
+      "categories": [
+        "معارض وتجارية"
+      ],
+      "sources_count": 1,
+      "categories_count": 1
+    },
+    {
+      "slug": "al-namas",
+      "label": "النماص",
+      "url": "./cities/al-namas.html",
+      "total_events": 1,
+      "upcoming_or_active": 0,
+      "ended": 1,
+      "live_ready": 0,
+      "sources": [
+        "SCEGA ePortal Events"
+      ],
+      "categories": [
+        "معارض وتجارية"
+      ],
+      "sources_count": 1,
+      "categories_count": 1
+    },
+    {
+      "slug": "hail",
+      "label": "حائل",
+      "url": "./cities/hail.html",
+      "total_events": 1,
+      "upcoming_or_active": 0,
+      "ended": 1,
+      "live_ready": 0,
+      "sources": [
+        "SCEGA ePortal Events"
+      ],
+      "categories": [
+        "معارض وتجارية"
       ],
       "sources_count": 1,
       "categories_count": 1
@@ -546,6 +777,23 @@
       ],
       "categories": [
         "فعاليات الغرف التجارية"
+      ],
+      "sources_count": 1,
+      "categories_count": 1
+    },
+    {
+      "slug": "yanbu",
+      "label": "ينبع",
+      "url": "./cities/yanbu.html",
+      "total_events": 1,
+      "upcoming_or_active": 0,
+      "ended": 1,
+      "live_ready": 0,
+      "sources": [
+        "SCEGA ePortal Events"
+      ],
+      "categories": [
+        "مؤتمرات ومنتديات"
       ],
       "sources_count": 1,
       "categories_count": 1

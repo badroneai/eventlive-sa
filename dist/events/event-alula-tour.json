@@ -1,0 +1,131 @@
+{
+  "id": "event-alula-tour",
+  "title": "AlUla Tour",
+  "summary": "AlUla Tour is a major fixture on the international cycling calendar, attracting the world’s top teams and riders for a multi-stage race through one of the most spectacular landscapes on Earth. From dramatic desert backdrops to iconic landmarks like Maraya and the Oasis, each stage delivers high performance and unforgettable scenery in equal measure. Individual AlUla Tour stages will be announced closer to the race date, but previous editions have seen riders traverse routes from Old Town to Harrat Uwayrid and Winter Park to Wirkah Mountain.",
+  "canonical_url": "https://eventme.live/events/event-alula-tour.html",
+  "detail_url": "./events/event-alula-tour.html",
+  "calendar_url": "./events/event-alula-tour.ics",
+  "source_label": "Experience AlUla Events",
+  "source_url": "https://www.experiencealula.com/en/whats-on/events/alula-tour",
+  "evidence_url": "https://www.experiencealula.com/en/whats-on/events/alula-tour",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T07:21:55.253Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
+  "city": "العلا",
+  "venue": "Across AlUla",
+  "venue_address": "Across AlUla",
+  "starts_at": "2027-01-26T09:00:00+03:00",
+  "ends_at": "2027-01-26T18:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/alula-tour-7e38ba68fd.webp",
+  "image_alt": "AlUla Tour",
+  "category": "رياضة وفعاليات جماهيرية",
+  "category_url": "./categories/sports.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    },
+    {
+      "slug": "sports",
+      "label": "رياضة ولياقة"
+    }
+  ],
+  "keywords": [
+    "AlUla Tour",
+    "رياضة وفعاليات جماهيرية",
+    "sports",
+    "فعالية",
+    "قادمة",
+    "العلا",
+    "Across AlUla",
+    "Experience AlUla Events",
+    "destination",
+    "culture",
+    "heritage",
+    "music",
+    "festivals",
+    "عائلات وأطفال",
+    "مبدعون وفنون",
+    "رياضة ولياقة"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2027-01-26T09:00:00+03:00",
+      "ends_at": "2027-01-26T18:00:00+03:00",
+      "room": "Across AlUla",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "AlUla Tour",
+    "startDate": "2027-01-26T09:00:00+03:00",
+    "endDate": "2027-01-26T18:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Across AlUla",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Across AlUla",
+        "addressLocality": "العلا",
+        "addressRegion": "منطقة المدينة المنورة",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Royal Commission for AlUla / Experience AlUla"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/alula-tour-7e38ba68fd.webp"
+    ],
+    "description": "AlUla Tour is a major fixture on the international cycling calendar, attracting the world’s top teams and riders for a multi-stage race through one of the most spectacular landscapes on Earth. From dramatic desert backdrops to iconic landmarks like Maraya and the Oasis, each stage delivers high performance and unforgettable scenery in equal measure. Individual AlUla Tour stages will be announced closer to the race date, but previous editions have seen riders traverse routes from Old Town to Harrat Uwayrid and Winter Park to Wirkah Mountain.",
+    "url": "https://eventme.live/events/event-alula-tour.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-alula-tour.html",
+    "isAccessibleForFree": false,
+    "keywords": "AlUla Tour, رياضة وفعاليات جماهيرية, sports, فعالية, قادمة, العلا, Across AlUla, Experience AlUla Events, destination, culture, heritage, music, festivals, عائلات وأطفال, مبدعون وفنون, رياضة ولياقة",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رياضة ولياقة"
+      }
+    ],
+    "sameAs": [
+      "https://www.experiencealula.com/en/whats-on/events/alula-tour"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.experiencealula.com/en/whats-on/events/alula-tour#",
+      "availability": "https://schema.org/InStock",
+      "category": "Registration"
+    }
+  }
+}

@@ -40,8 +40,8 @@ jobs:
       - name: Install Playwright browser
         run: npx playwright install chromium
 
-      - name: Install Arabic poster OCR
-        run: sudo apt-get update && sudo apt-get install -y tesseract-ocr tesseract-ocr-ara
+      - name: Install source document extractors
+        run: sudo apt-get update && sudo apt-get install -y tesseract-ocr tesseract-ocr-ara poppler-utils
 
       - name: Collect trusted sources and publish catalog
         run: npm run sources:sync
@@ -51,13 +51,27 @@ jobs:
           npm run validate:gate
           npm run test:csv
           npm run test:source-auto-publish
+          npm run test:source-action-identity
+          npm run test:eye-official-links
           npm run test:source-sync-pipeline
           npm run test:source-selection-contract
+          npm run test:scega-events-extractor
+          npm run test:scega-canonical-alias
           npm run test:poster-ocr
           npm run test:regional-chamber-extractors
+          npm run test:leap-agenda-enrichment
+          npm run test:money2020-agenda-enrichment
+          npm run test:hrse-agenda-enrichment
+          npm run test:smart-data-agenda-enrichment
+          npm run test:rff-agenda-enrichment
+          npm run test:official-agenda-radar
+          npm run test:global-proptech-agenda
+          npm run test:backlog-target-selection
           npm run test:backlog-enrichment
           npm run test:single-session-activation
           npm run test:live-operational-feeds
+          npm run test:attendance-mode-offline
+          npm run test:venue-location
           npm run test:image-cache
           npm run test:public-assets
           npm run test:event-kind
@@ -82,7 +96,9 @@ jobs:
             reports/*-enrichment-report.json \
             reports/*-enrichment-report.md \
             reports/official-single-session-activation-report.json \
-            reports/official-single-session-activation-report.md
+            reports/official-single-session-activation-report.md \
+            reports/eye-official-link-verification-report.json \
+            reports/eye-official-link-verification-report.md
           if git diff --cached --quiet; then
             echo "No catalog state changes to persist."
           else

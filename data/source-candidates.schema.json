@@ -41,11 +41,16 @@
           "image_source_url": { "type": "string" },
           "registration_url": { "type": "string" },
           "ticket_url": { "type": "string" },
+          "maps_url": { "type": "string" },
           "attendance_mode": {
             "type": "string",
             "enum": ["online", "in-person", "hybrid"]
           },
           "price_label": { "type": "string" },
+          "parking_info": { "type": "string" },
+          "accessibility_info": { "type": "string" },
+          "age_policy": { "type": "string" },
+          "duration_label": { "type": "string" },
           "language": { "type": "string" },
           "registration_deadline": { "type": "string" },
           "richness_score": { "type": "integer", "minimum": 0 },
@@ -60,6 +65,7 @@
             "enum": ["official-site", "organizer-file", "ticketing-page", "government-calendar", "social-post", "partner-feed", "manual-lead"]
           },
           "source_url": { "type": "string", "minLength": 1 },
+          "discovery_source_url": { "type": "string" },
           "source_label": { "type": "string", "minLength": 1 },
           "source_owner": { "type": "string", "minLength": 1 },
           "evidence_url": { "type": "string" },
@@ -74,7 +80,7 @@
           },
           "confidence": {
             "type": "string",
-            "enum": ["official", "partner", "public-listing", "social-signal", "unverified"]
+            "enum": ["official", "verified-secondary", "partner", "public-listing", "social-signal", "unverified"]
           },
           "review_status": {
             "type": "string",
@@ -109,7 +115,9 @@
                 "ends_at": { "type": "string", "format": "date-time" },
                 "session_type": { "type": "string" },
                 "room": { "type": "string" },
-                "speaker": { "type": "string" }
+                "speaker": { "type": "string" },
+                "track": { "type": "string" },
+                "source_url": { "type": "string" }
               }
             }
           },

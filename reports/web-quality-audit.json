@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.web-quality-audit.v1",
-  "generated_at": "2026-07-08T01:37:35.874Z",
+  "generated_at": "2026-07-10T07:55:47.433Z",
   "scope": "mobile browser baseline for accessibility, responsive behavior, performance budgets, and static security hygiene",
   "summary": {
     "pages": 6,
@@ -31,9 +31,9 @@
         "horizontalOverflow": false,
         "httpLinks": [],
         "targetBlankMissingRel": 0,
-        "domContentLoadedMs": 432,
-        "loadMs": 1114,
-        "pageSize": 179853
+        "domContentLoadedMs": 494,
+        "loadMs": 1241,
+        "pageSize": 213329
       },
       "accessibility": {
         "violations": []
@@ -64,9 +64,9 @@
         "horizontalOverflow": false,
         "httpLinks": [],
         "targetBlankMissingRel": 0,
-        "domContentLoadedMs": 149,
-        "loadMs": 149,
-        "pageSize": 93082
+        "domContentLoadedMs": 171,
+        "loadMs": 188,
+        "pageSize": 95824
       },
       "accessibility": {
         "violations": []
@@ -97,9 +97,9 @@
         "horizontalOverflow": false,
         "httpLinks": [],
         "targetBlankMissingRel": 0,
-        "domContentLoadedMs": 23,
-        "loadMs": 23,
-        "pageSize": 35545
+        "domContentLoadedMs": 20,
+        "loadMs": 32,
+        "pageSize": 58271
       },
       "accessibility": {
         "violations": []
@@ -130,9 +130,9 @@
         "horizontalOverflow": false,
         "httpLinks": [],
         "targetBlankMissingRel": 0,
-        "domContentLoadedMs": 28,
-        "loadMs": 28,
-        "pageSize": 474808
+        "domContentLoadedMs": 18,
+        "loadMs": 36,
+        "pageSize": 66471
       },
       "accessibility": {
         "violations": []
@@ -163,9 +163,9 @@
         "horizontalOverflow": false,
         "httpLinks": [],
         "targetBlankMissingRel": 0,
-        "domContentLoadedMs": 483,
-        "loadMs": 483,
-        "pageSize": 60959
+        "domContentLoadedMs": 194,
+        "loadMs": 195,
+        "pageSize": 61813
       },
       "accessibility": {
         "violations": []
@@ -181,13 +181,13 @@
       }
     },
     {
-      "page": "/events/demo-event.html",
+      "page": "/events/event-beast-house.html",
       "http_status": 200,
       "console_errors": [],
       "metrics": {
         "lang": "ar",
         "dir": "rtl",
-        "title": "ملتقى التحول الرقمي في القطاع الحكومي 2026 | EventLive",
+        "title": "Beast House | EventLive",
         "h1Count": 1,
         "imagesMissingAlt": 0,
         "unnamedButtons": 0,
@@ -196,9 +196,9 @@
         "horizontalOverflow": false,
         "httpLinks": [],
         "targetBlankMissingRel": 0,
-        "domContentLoadedMs": 24,
-        "loadMs": 24,
-        "pageSize": 30679
+        "domContentLoadedMs": 12,
+        "loadMs": 19,
+        "pageSize": 40818
       },
       "accessibility": {
         "violations": []

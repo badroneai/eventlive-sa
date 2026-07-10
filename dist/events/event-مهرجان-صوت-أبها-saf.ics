@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:مهرجان صوت أبها SAF | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-مهرجان-صوت-أبها-saf@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260614T210000Z
+DTEND:20260915T205900Z
+SUMMARY:مهرجان صوت أبها SAF
+DESCRIPTION:مهرجان مفتوح متعدد الأنماط في أبها يجمع بين التسوق، والمطاعم العالمية، والموسيقى الحية، والتجارب التفاعلية الغامرة. مهرجان صوت أبها SAF ضمن ترفيه وعائلات في عسير. تبدأ الفعالية ١٥‏/٠٦‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ١٥‏/٠٩‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.
+LOCATION:منطقة عسير
+URL:https://eventme.live/events/event-مهرجان-صوت-أبها-saf.html
+END:VEVENT
+END:VCALENDAR

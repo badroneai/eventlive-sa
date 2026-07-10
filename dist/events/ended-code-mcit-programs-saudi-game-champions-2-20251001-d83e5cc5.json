@@ -1,0 +1,152 @@
+{
+  "id": "ended-code-mcit-programs-saudi-game-champions-2-20251001-d83e5cc5",
+  "title": "Saudi Game Champions 2",
+  "summary": "Join us on a journey that begins with your playable idea and evolves into a market-ready MVP and a clear roadmap for your studio. It starts with a Game Jam event where entrepreneurs will have the opportunity to showcase their skills, collaborate with other talented individuals, and gain valuable feedback on their game idea. After the Game Jam, the top 20 teams of entrepreneurs will qualify for the incubation program",
+  "canonical_url": "https://eventme.live/events/ended-code-mcit-programs-saudi-game-champions-2-20251001-d83e5cc5.html",
+  "detail_url": "./events/ended-code-mcit-programs-saudi-game-champions-2-20251001-d83e5cc5.html",
+  "calendar_url": "./events/ended-code-mcit-programs-saudi-game-champions-2-20251001-d83e5cc5.ics",
+  "source_label": "CODE MCIT Programs",
+  "source_url": "https://code.mcit.gov.sa/en/saudi-game-champions-2",
+  "evidence_url": "https://code.mcit.gov.sa/en/saudi-game-champions-2",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T06:52:19.836Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 1,
+  "city": "الرياض",
+  "venue": "CODE Riyadh",
+  "venue_address": "CODE Riyadh",
+  "starts_at": "2025-10-01T09:00:00+03:00",
+  "ends_at": "2026-04-30T18:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-covers/ended-code-mcit-programs-saudi-game-champions-2-20251001-d83e5cc5.svg",
+  "image_alt": "غلاف EventLive لفعالية Saudi Game Champions 2",
+  "category": "ألعاب ورياضات إلكترونية",
+  "category_url": "./categories/gaming-esports.html",
+  "audiences": [
+    {
+      "slug": "students",
+      "label": "طلاب وخريجون"
+    },
+    {
+      "slug": "tech",
+      "label": "تقنيون"
+    },
+    {
+      "slug": "skilled-trades",
+      "label": "مهاريون وحرفيون"
+    },
+    {
+      "slug": "entrepreneurs",
+      "label": "رواد أعمال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Saudi Game Champions 2",
+    "ألعاب ورياضات إلكترونية",
+    "gaming program",
+    "برنامج ممتد",
+    "منتهية",
+    "الرياض",
+    "CODE Riyadh",
+    "CODE MCIT Programs",
+    "technology",
+    "entrepreneurship",
+    "incubators",
+    "accelerators",
+    "bootcamps",
+    "gaming",
+    "Incubator",
+    "ended-event",
+    "طلاب وخريجون",
+    "تقنيون",
+    "مهاريون وحرفيون",
+    "رواد أعمال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2025-10-01T09:00:00+03:00",
+      "ends_at": "2026-04-30T18:00:00+03:00",
+      "room": "CODE Riyadh",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Saudi Game Champions 2",
+    "startDate": "2025-10-01T09:00:00+03:00",
+    "endDate": "2026-04-30T18:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "CODE Riyadh",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "CODE Riyadh",
+        "addressLocality": "الرياض",
+        "addressRegion": "منطقة الرياض",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Ministry of Communications and Information Technology / CODE"
+    },
+    "image": [
+      "https://eventme.live/assets/event-covers/ended-code-mcit-programs-saudi-game-champions-2-20251001-d83e5cc5.svg"
+    ],
+    "description": "Join us on a journey that begins with your playable idea and evolves into a market-ready MVP and a clear roadmap for your studio. It starts with a Game Jam event where entrepreneurs will have the opportunity to showcase their skills, collaborate with other talented individuals, and gain valuable feedback on their game idea. After the Game Jam, the top 20 teams of entrepreneurs will qualify for the incubation program",
+    "url": "https://eventme.live/events/ended-code-mcit-programs-saudi-game-champions-2-20251001-d83e5cc5.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-code-mcit-programs-saudi-game-champions-2-20251001-d83e5cc5.html",
+    "isAccessibleForFree": false,
+    "keywords": "Saudi Game Champions 2, ألعاب ورياضات إلكترونية, gaming program, برنامج ممتد, منتهية, الرياض, CODE Riyadh, CODE MCIT Programs, technology, entrepreneurship, incubators, accelerators, bootcamps, gaming, Incubator, ended-event, طلاب وخريجون, تقنيون, مهاريون وحرفيون, رواد أعمال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "طلاب وخريجون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "تقنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مهاريون وحرفيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رواد أعمال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://code.mcit.gov.sa/en/saudi-game-champions-2"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://code.mcit.gov.sa/en/saudi-game-champions-2",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

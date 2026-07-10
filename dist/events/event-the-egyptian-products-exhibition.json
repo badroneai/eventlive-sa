@@ -10,7 +10,7 @@
   "evidence_url": "https://dhahranexpo.com.sa",
   "trust_tier": "official-venue",
   "trust_label": "مصدر المكان الرسمي",
-  "verified_at": "2026-07-10T03:51:42.770Z",
+  "verified_at": "2026-07-10T07:21:55.253Z",
   "verification_method": "registered-venue-official",
   "freshness_hours": 0,
   "city": "الظهران",
@@ -81,6 +81,11 @@
         "addressLocality": "الظهران",
         "addressRegion": "المنطقة الشرقية",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.381223,
+        "longitude": 50.212678
       }
     },
     "organizer": {

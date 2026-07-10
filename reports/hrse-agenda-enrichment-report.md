@@ -1,0 +1,11 @@
+# HRSE KSA 2026 Agenda Enrichment
+
+- generated_at: 2026-07-10T07:29:20.008Z
+- catalog_targets: 1
+- candidate_targets: 1
+- official_sessions: 117
+- streams: 9
+- named_speakers: 51
+- pages: 2026-08-30=2, 2026-08-31=3, 2026-09-01=58, 2026-09-02=54
+- fetch_error: none
+- source: https://informaconnect.com/hrse-saudi/agenda/3/

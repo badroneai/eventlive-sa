@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.axe-accessibility-audit.v1",
-  "generated_at": "2026-07-08T01:39:39.373Z",
+  "generated_at": "2026-07-10T07:55:53.384Z",
   "status": "PASS",
   "summary": {
     "pages": 6,
@@ -41,9 +41,9 @@
       "incomplete": 2
     },
     {
-      "page": "/events/demo-event.html",
+      "page": "/events/event-beast-house.html",
       "violations": [],
-      "passes": 16,
+      "passes": 19,
       "incomplete": 1
     }
   ]

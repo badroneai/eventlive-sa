@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Global PropTech Summit 2025 | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-global-proptech-summit-2025@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20251026T060000Z
+DTEND:20251027T150000Z
+SUMMARY:Global PropTech Summit 2025
+DESCRIPTION:انعقدت القمة العالمية لتقنيات العقار 2025 في الرياض يومي 26 و27 أكتوبر، ويُحفظ برنامجها الرسمي هنا بجلساته عن الذكاء الاصطناعي والمدن الذكية والتنظيم والاستثمار العقاري.
+LOCATION:Al Faisaliah Tower\, Riyadh\, Saudi Arabia
+URL:https://eventme.live/events/ended-global-proptech-summit-2025.html
+END:VEVENT
+END:VCALENDAR

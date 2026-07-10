@@ -1,9 +1,9 @@
 {
   "schema": "eventlive.security-review-audit.v1",
-  "generated_at": "2026-07-08T01:39:48.616Z",
+  "generated_at": "2026-07-10T06:26:05.469Z",
   "status": "PASS",
   "summary": {
-    "public_html_files_scanned": 513,
+    "public_html_files_scanned": 719,
     "findings": 0,
     "target_blank_issues": 0,
     "http_resource_issues": 0

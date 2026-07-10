@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:The Comeback | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-the-comeback@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260724T210000Z
+DTEND:20260725T205900Z
+SUMMARY:The Comeback
+DESCRIPTION:يعود بطل العالم السابق للوزن الثقيل، أنتوني جوشوا، إلى الحلبة في جدة، ليواجه كريستيان برينغا غير المهزوم، في نزال حاسم. The Comeback ضمن رياضة وفعاليات جماهيرية في جدة. تبدأ الفعالية ٢٥‏/٠٧‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ٢٥‏/٠٧‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.
+LOCATION:جدة
+URL:https://eventme.live/events/event-the-comeback.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,111 @@
+{
+  "id": "event-صندوق-أسامة-من-مخرج-ثمانية",
+  "title": "صندوق أسامة من مخرج ثمانية",
+  "summary": "ليلة صندوق أسامة تجربة تفاعلية كوميدية، يشارك فيها الجمهور أفكارهم بشكل مجهول، ليحوّلها أسامة بازيد إلى نكت مرتجلة ولحظات ممتعة.",
+  "canonical_url": "https://eventme.live/events/event-صندوق-أسامة-من-مخرج-ثمانية.html",
+  "detail_url": "./events/event-صندوق-أسامة-من-مخرج-ثمانية.html",
+  "calendar_url": "./events/event-صندوق-أسامة-من-مخرج-ثمانية.ics",
+  "source_label": "Visit Saudi Summer Calendar PDF",
+  "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+  "evidence_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T07:21:55.253Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
+  "city": "الرياض",
+  "venue": "الرياض",
+  "venue_address": "الرياض",
+  "starts_at": "2026-05-05T00:00:00+03:00",
+  "ends_at": "2026-12-31T23:59:00+03:00",
+  "status": "ongoing",
+  "status_label": "برنامج جارٍ",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-covers/event-صندوق-أسامة-من-مخرج-ثمانية.svg",
+  "image_alt": "غلاف EventLive لفعالية صندوق أسامة من مخرج ثمانية",
+  "category": "ترفيه وعائلات",
+  "category_url": "./categories/entertainment-families.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    }
+  ],
+  "keywords": [
+    "صندوق أسامة من مخرج ثمانية",
+    "ترفيه وعائلات",
+    "entertainment",
+    "برنامج ممتد",
+    "برنامج جارٍ",
+    "الرياض",
+    "Visit Saudi Summer Calendar PDF",
+    "tourism",
+    "seasons",
+    "culture",
+    "sports",
+    "عائلات وأطفال"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-05-05T00:00:00+03:00",
+      "ends_at": "2026-12-31T23:59:00+03:00",
+      "room": "الرياض",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "صندوق أسامة من مخرج ثمانية",
+    "startDate": "2026-05-05T00:00:00+03:00",
+    "endDate": "2026-12-31T23:59:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "الرياض",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "الرياض",
+        "addressLocality": "الرياض",
+        "addressRegion": "منطقة الرياض",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Saudi Tourism Authority"
+    },
+    "image": [
+      "https://eventme.live/assets/event-covers/event-صندوق-أسامة-من-مخرج-ثمانية.svg"
+    ],
+    "description": "ليلة صندوق أسامة تجربة تفاعلية كوميدية، يشارك فيها الجمهور أفكارهم بشكل مجهول، ليحوّلها أسامة بازيد إلى نكت مرتجلة ولحظات ممتعة.",
+    "url": "https://eventme.live/events/event-صندوق-أسامة-من-مخرج-ثمانية.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-صندوق-أسامة-من-مخرج-ثمانية.html",
+    "isAccessibleForFree": false,
+    "keywords": "صندوق أسامة من مخرج ثمانية, ترفيه وعائلات, entertainment, برنامج ممتد, برنامج جارٍ, الرياض, Visit Saudi Summer Calendar PDF, tourism, seasons, culture, sports, عائلات وأطفال",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      }
+    ],
+    "sameAs": [
+      "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://webook.com/ar/sa/ruh/theater-and-performing-arts/events/osamas-box-comedy-podcast-thmanyah",
+      "availability": "https://schema.org/InStock",
+      "category": "Registration"
+    }
+  }
+}

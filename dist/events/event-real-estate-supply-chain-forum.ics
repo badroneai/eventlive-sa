@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Real Estate Supply Chain Forum | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-real-estate-supply-chain-forum@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20261028T060000Z
+DTEND:20261029T150000Z
+SUMMARY:Real Estate Supply Chain Forum
+DESCRIPTION:The Real Estate Supply Chain Forum is a premier platform driving strategic collaboration\, digital transformation\, and sustainable growth in
+LOCATION:Mandarin Oriental Al Faisaliah \, Riyadh
+URL:https://eventme.live/events/event-real-estate-supply-chain-forum.html
+END:VEVENT
+END:VCALENDAR

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'eventlive-static-1783655951128';
+const CACHE_NAME = 'eventlive-static-1783670423273';
 const PRECACHE = [
   "./",
   "./index.html",
@@ -16,6 +16,7 @@ const PRECACHE = [
   "./search-index.json",
   "./audiences.json",
   "./today-events.html",
+  "./attendance.html",
   "./today.html",
   "./today.json",
   "./live-status.json",
@@ -53,8 +54,29 @@ self.addEventListener('activate', (event) => {
   })());
 });
 
+self.addEventListener('message', (event) => {
+  if (event.data?.type !== 'CACHE_EVENT_ASSETS') return;
+  const assets = Array.isArray(event.data.assets) ? event.data.assets : [];
+  event.waitUntil((async () => {
+    const cache = await caches.open(CACHE_NAME);
+    let cached = 0;
+    for (const asset of assets) {
+      try {
+        const url = new URL(asset, self.location.href);
+        if (url.origin !== self.location.origin) continue;
+        const response = await fetch(url.href, { credentials: 'same-origin' });
+        if (!response.ok) continue;
+        await cache.put(url.href, response.clone());
+        cached += 1;
+      } catch (error) {}
+    }
+    event.ports?.[0]?.postMessage({ type: 'CACHE_EVENT_ASSETS_RESULT', cached });
+  })());
+});
+
 self.addEventListener('fetch', (event) => {
-  const isNavigationRequest = event.request.mode === 'navigate' || (event.request.method === 'GET' && event.request.headers.get('Accept')?.includes('text/html'));
+  if (event.request.method !== 'GET') return;
+  const isNavigationRequest = event.request.mode === 'navigate' || event.request.headers.get('Accept')?.includes('text/html');
   if (isNavigationRequest) {
     event.respondWith(
       fetch(event.request).then((response) => {
@@ -62,10 +84,22 @@ self.addEventListener('fetch', (event) => {
           cache.put(event.request, response.clone()).catch(() => {});
           return response;
         });
-      }).catch(() => caches.match(event.request))
+      }).catch(async () => (await caches.match(event.request)) || caches.match('./index.html'))
     );
     return;
   }
 
-  event.respondWith(caches.match(event.request).then((cached) => cached || fetch(event.request)));
+  const url = new URL(event.request.url);
+  const isEventAsset = url.origin === self.location.origin && (
+    /\/events\/.+\.(?:json|ics)$/.test(url.pathname)
+    || ['image', 'style', 'script', 'font'].includes(event.request.destination)
+  );
+  if (!isEventAsset) {
+    event.respondWith(caches.match(event.request).then((cached) => cached || fetch(event.request)));
+    return;
+  }
+  event.respondWith(caches.match(event.request).then((cached) => cached || fetch(event.request).then((response) => {
+    if (response.ok) caches.open(CACHE_NAME).then((cache) => cache.put(event.request, response.clone())).catch(() => {});
+    return response;
+  })));
 });

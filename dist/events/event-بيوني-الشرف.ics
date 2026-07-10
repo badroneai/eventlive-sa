@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:بيوني الشرف | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-بيوني-الشرف@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260630T210000Z
+DTEND:20261001T205900Z
+SUMMARY:بيوني الشرف
+DESCRIPTION:تقدّم بيوني تجربة متكاملة تمزج عبق التراث بروح عصرية، مصما مة بأحجار وأخشاب تتجاوز 70 عاماً، مع شاات، ونوافير، ومسطحاتٍ خضراء، وجلسات خارجية، ومنطقة ألعاب لاطفال.
+LOCATION:منطقة عسير
+URL:https://eventme.live/events/event-بيوني-الشرف.html
+END:VEVENT
+END:VCALENDAR

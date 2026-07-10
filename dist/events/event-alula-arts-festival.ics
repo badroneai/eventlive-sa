@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:AlUla Arts Festival | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-alula-arts-festival@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20270115T060000Z
+DTEND:20270216T150000Z
+SUMMARY:AlUla Arts Festival
+DESCRIPTION:Experience creativity in motion\, through art that inspires and connects. AlUla Arts Festival ضمن ترفيه وعائلات في العلا. تبدأ الفعالية ١٥‏/٠١‏/٢٠٢٧، ٩:٠٠ ص وتنتهي ١٦‏/٠٢‏/٢٠٢٧، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Experience AlUla Events.
+LOCATION:AlUla
+URL:https://eventme.live/events/event-alula-arts-festival.html
+END:VEVENT
+END:VCALENDAR

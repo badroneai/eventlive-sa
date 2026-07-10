@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:الحفلات الغنائية | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-الحفلات-الغنائية@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260624T210000Z
+DTEND:20260831T205900Z
+SUMMARY:الحفلات الغنائية
+DESCRIPTION:سلسلة حفلات موسيقية تجمع فنانين من الخليج والعالم العربي في أمسيات تمزج بين الطرب الأصيل، واايقاعات الحديثة في مسرح طال مداح.
+LOCATION:منطقة عسير
+URL:https://eventme.live/events/event-الحفلات-الغنائية.html
+END:VEVENT
+END:VCALENDAR

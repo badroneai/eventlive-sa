@@ -1,0 +1,123 @@
+{
+  "id": "event-alula-wellness-festival",
+  "title": "AlUla Wellness Festival",
+  "summary": "Reconnect and re-energise where body and mind are strengthened and restored. AlUla Wellness Festival ضمن ترفيه وعائلات في العلا. تبدأ الفعالية ٢٣‏/١٠‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٣١‏/١٠‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Experience AlUla Events.",
+  "canonical_url": "https://eventme.live/events/event-alula-wellness-festival.html",
+  "detail_url": "./events/event-alula-wellness-festival.html",
+  "calendar_url": "./events/event-alula-wellness-festival.ics",
+  "source_label": "Experience AlUla Events",
+  "source_url": "https://www.experiencealula.com/en/whats-on/festivals/alula-wellness-festival",
+  "evidence_url": "https://www.experiencealula.com/en/whats-on/festivals/alula-wellness-festival",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T07:21:55.253Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
+  "city": "العلا",
+  "venue": "AlUla",
+  "venue_address": "AlUla",
+  "starts_at": "2026-10-23T09:00:00+03:00",
+  "ends_at": "2026-10-31T18:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/alula-wellness-festival-acf0c2fa83.webp",
+  "image_alt": "AlUla Wellness Festival",
+  "category": "ترفيه وعائلات",
+  "category_url": "./categories/entertainment-families.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "AlUla Wellness Festival",
+    "ترفيه وعائلات",
+    "festival",
+    "فعالية",
+    "قادمة",
+    "العلا",
+    "AlUla",
+    "Experience AlUla Events",
+    "destination",
+    "culture",
+    "heritage",
+    "music",
+    "sports",
+    "festivals",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-10-23T09:00:00+03:00",
+      "ends_at": "2026-10-31T18:00:00+03:00",
+      "room": "AlUla",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "AlUla Wellness Festival",
+    "startDate": "2026-10-23T09:00:00+03:00",
+    "endDate": "2026-10-31T18:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "AlUla",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "AlUla",
+        "addressLocality": "العلا",
+        "addressRegion": "منطقة المدينة المنورة",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Royal Commission for AlUla / Experience AlUla"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/alula-wellness-festival-acf0c2fa83.webp"
+    ],
+    "description": "Reconnect and re-energise where body and mind are strengthened and restored. AlUla Wellness Festival ضمن ترفيه وعائلات في العلا. تبدأ الفعالية ٢٣‏/١٠‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٣١‏/١٠‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Experience AlUla Events.",
+    "url": "https://eventme.live/events/event-alula-wellness-festival.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-alula-wellness-festival.html",
+    "isAccessibleForFree": false,
+    "keywords": "AlUla Wellness Festival, ترفيه وعائلات, festival, فعالية, قادمة, العلا, AlUla, Experience AlUla Events, destination, culture, heritage, music, sports, festivals, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.experiencealula.com/en/whats-on/festivals/alula-wellness-festival"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.experiencealula.com/en/whats-on/festivals/alula-wellness-festival",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

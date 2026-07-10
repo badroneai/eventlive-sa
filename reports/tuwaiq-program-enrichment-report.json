@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T03:50:46.883Z",
+  "generated_at": "2026-07-10T06:57:13.053Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 20,
@@ -40,14 +40,6 @@
       "requirements": 6
     },
     {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
-      "slug": "4yOEV7Qq",
-      "goals": 12,
-      "features": 6,
-      "requirements": 11
-    },
-    {
       "id": "event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي",
       "title": "معسكر تطوير مواقع الويب باستخدام Java ودمج تقنيات الذكاء الاصطناعي",
       "slug": "B5R0wKJk",
@@ -62,6 +54,14 @@
       "goals": 8,
       "features": 6,
       "requirements": 10
+    },
+    {
+      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python",
+      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
+      "slug": "4yOEV7Qq",
+      "goals": 12,
+      "features": 6,
+      "requirements": 11
     },
     {
       "id": "event-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات",

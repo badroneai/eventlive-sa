@@ -7,7 +7,7 @@ X-WR-CALNAME:رواد أعمال | EventLive
 X-WR-TIMEZONE:Asia/Riyadh
 BEGIN:VEVENT
 UID:event-poppy-playtime@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20251010T130000Z
 DTEND:20261208T205900Z
 SUMMARY:Poppy Playtime
@@ -17,7 +17,7 @@ URL:https://eventme.live/events/event-poppy-playtime.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-riyadh-season-blvd-city@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20251010T130000Z
 DTEND:20261008T230000Z
 SUMMARY:Riyadh Season: BLVD City
@@ -27,7 +27,7 @@ URL:https://eventme.live/events/event-riyadh-season-blvd-city.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-misk-local-traineeship-program@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260401T060000Z
 DTEND:20261231T150000Z
 SUMMARY:Misk Local Traineeship Program
@@ -37,7 +37,7 @@ URL:https://eventme.live/events/event-misk-local-traineeship-program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-kashtah@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260627T130000Z
 DTEND:20260830T210000Z
 SUMMARY:Kashtah
@@ -47,7 +47,7 @@ URL:https://eventme.live/events/event-kashtah.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-لقاءات-مراكز-دعم-المنشآت-شهر-يوليو-2026م-مغلقة@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260701T060000Z
 DTEND:20260730T150000Z
 SUMMARY:لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)
@@ -57,7 +57,7 @@ URL:https://eventme.live/events/event-لقاءات-مراكز-دعم-المنش�
 END:VEVENT
 BEGIN:VEVENT
 UID:event-لقاءات-مراكز-دعم-المنشآت@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260701T060000Z
 DTEND:20260730T150000Z
 SUMMARY:لقاءات مراكز دعم المنشآت
@@ -66,8 +66,18 @@ LOCATION:Monsha’at
 URL:https://eventme.live/events/event-لقاءات-مراكز-دعم-المنشآت.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-البرنامج-الصيفي-بجامعة-الجوف-2026@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260707T210000Z
+DTEND:20260831T205900Z
+SUMMARY:البرنامج الصيفي بجامعة الجوف 2026
+DESCRIPTION:تطلق جامعة الجوف البرنامج الصيفي بجامعة الجوف 1447هـ – 2026م، بوصفه برنامجًا نوعيًا متكاملًا يستهدف تنمية المهارات وتطويرها، ونشر ثقافة الابتكار، وترسيخ ثقافة التطوع وخدمة المجتمع، بما يعزز دور الجامعة التنموي والمجتمعي، ويفتح مسارات واسعة لاستثمار فترة الصيف في برامج معرفية وتدريبية وتطوعية ورياضية موجهة لمنسوبي الجامعة وطلبتها والخريجين وأفراد المجتمع. ويستهدف البرنامج، الذي يمتد من شهر يوليو حتى نهاية أغسطس 2026م، أكثر من 16\,000مستفيد من داخل الجامعة وخارجها، من خلال أكثر من 50 برنامجًا وفعالية نوعية، وما يزيد على 210 ساعة تدريبية مكثفة، إلى جانب مشاركة أكثر من 300 متطوع أكاديمي وطبي، وتنفيذ أكثر من 11\,000 ساعة تطوعية معتمدة، إضافة إلى أكثر من 10 بطولات رياضية صيفية.
+LOCATION:Jouf University
+URL:https://eventme.live/events/event-البرنامج-الصيفي-بجامعة-الجوف-2026.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-application-deadline-2030-leaders@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260712T060000Z
 DTEND:20260712T205900Z
 SUMMARY:2030 Leaders
@@ -77,7 +87,7 @@ URL:https://eventme.live/events/event-application-deadline-2030-leaders.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260712T060000Z
 DTEND:20260716T150000Z
 SUMMARY:أسبوع العقار والمقاولات 12- 16 يوليو 2026م
@@ -87,7 +97,7 @@ URL:https://eventme.live/events/event-أسبوع-العقار-والمقاولا
 END:VEVENT
 BEGIN:VEVENT
 UID:event-samsung-innovation-campus-ai-program@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260713T060000Z
 DTEND:20260912T150000Z
 SUMMARY:Samsung Innovation Campus AI Program
@@ -97,7 +107,7 @@ URL:https://eventme.live/events/event-samsung-innovation-campus-ai-program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260721T073000Z
 DTEND:20260721T084500Z
 SUMMARY:متطلبات نظام إدارة المرافق ISO 41001 للمنشآت الصغيرة والمتوسطة
@@ -107,7 +117,7 @@ URL:https://eventme.live/events/event-متطلبات-نظام-إدارة-الم�
 END:VEVENT
 BEGIN:VEVENT
 UID:event-entrepreneur-leadership-excellence-program@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260727T060000Z
 DTEND:20260729T150000Z
 SUMMARY:Entrepreneur Leadership Excellence Program
@@ -117,7 +127,7 @@ URL:https://eventme.live/events/event-entrepreneur-leadership-excellence-program
 END:VEVENT
 BEGIN:VEVENT
 UID:event-nonprofit-sector-skills-program@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260803T060000Z
 DTEND:20260916T150000Z
 SUMMARY:Nonprofit Sector Skills Program
@@ -127,7 +137,7 @@ URL:https://eventme.live/events/event-nonprofit-sector-skills-program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-merath-middle-east-museums-heritage-expo@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260830T120000Z
 DTEND:20260901T180000Z
 SUMMARY:Merath – Middle East Museums & Heritage Expo
@@ -137,7 +147,7 @@ URL:https://eventme.live/events/event-merath-middle-east-museums-heritage-expo.h
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-light-and-sound-sls-expo@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260830T120000Z
 DTEND:20260901T180000Z
 SUMMARY:Saudi Light and Sound (SLS) Expo
@@ -147,17 +157,17 @@ URL:https://eventme.live/events/event-saudi-light-and-sound-sls-expo.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-leap-2026@eventme.live
-DTSTAMP:20260710T035904Z
-DTSTART:20260831T060000Z
-DTEND:20260903T140000Z
+DTSTAMP:20260710T080011Z
+DTSTART:20260831T080000Z
+DTEND:20260903T180000Z
 SUMMARY:LEAP 2026
-DESCRIPTION:LEAP 2026 marks the fifth edition of Saudi’s flagship global technology and innovation event\, cementing its position as one of the world’s most influential platforms for digital transformation. المصدر الرسمي: Visit Saudi.
-LOCATION:Riyadh
+DESCRIPTION:يجمع مؤتمر LEAP 2026 في الرياض قادة التقنية والشركات الناشئة والمستثمرين وصناع السياسات والمبتكرين من 31 أغسطس إلى 3 سبتمبر 2026، مع جدول حي موثق للجلسات والقاعات.
+LOCATION:Malham\, Riyadh\, Saudi Arabia
 URL:https://eventme.live/events/event-leap-2026.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-misk-x-unyo-youth-engagement-fellowship@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260901T060000Z
 DTEND:20270301T150000Z
 SUMMARY:Misk X UNYO Youth Engagement Fellowship
@@ -167,7 +177,7 @@ URL:https://eventme.live/events/event-misk-x-unyo-youth-engagement-fellowship.ht
 END:VEVENT
 BEGIN:VEVENT
 UID:event-the-innovation-diwan@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260905T060000Z
 DTEND:20270131T150000Z
 SUMMARY:The Innovation Diwan
@@ -177,7 +187,7 @@ URL:https://eventme.live/events/event-the-innovation-diwan.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-food-manufacturing-show@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260905T110000Z
 DTEND:20260907T190000Z
 SUMMARY:Saudi Food Manufacturing show
@@ -187,7 +197,7 @@ URL:https://eventme.live/events/event-saudi-food-manufacturing-show.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-misk-launchpad@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260906T060000Z
 DTEND:20270102T150000Z
 SUMMARY:Misk Launchpad
@@ -197,17 +207,17 @@ URL:https://eventme.live/events/event-misk-launchpad.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-money20-20-middle-east@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260914T060000Z
 DTEND:20260916T140000Z
 SUMMARY:Money20/20 Middle East
-DESCRIPTION:Money20/20 Middle East is the region’s definitive fintech event\, bringing together over 38\,500 visitors\, 450+ global brands\, 350+ speakers\, 400+ investors\, and 150+ startups to shape the future of money\, finance\, and technology. As the most influential gathering in the Middle East\, it offers world-class thought leadership\, groundbreaking innovations\, and high-impact networking that fuels business growth and positions Saudi Arabia at the heart of the global fintech revolution. Book Now
-LOCATION:Riyadh Exhibition & Convention Center - Malham
+DESCRIPTION:يجمع Money20/20 Middle East منظومة التقنية المالية العالمية في الرياض من 14 إلى 16 سبتمبر 2026، بمشاركة البنوك وشركات التقنية المالية والمستثمرين والجهات التنظيمية.
+LOCATION:Malham\, Riyadh\, Saudi Arabia
 URL:https://eventme.live/events/event-money20-20-middle-east.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-riyadh-global-medical-biotechnology-summit@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260914T063000Z
 DTEND:20260916T120000Z
 SUMMARY:Riyadh Global Medical Biotechnology Summit
@@ -217,7 +227,7 @@ URL:https://eventme.live/events/event-riyadh-global-medical-biotechnology-summit
 END:VEVENT
 BEGIN:VEVENT
 UID:event-future-investment-initiative-fii-10@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261027T060000Z
 DTEND:20261030T150000Z
 SUMMARY:Future Investment Initiative (FII 10)
@@ -227,7 +237,7 @@ URL:https://eventme.live/events/event-future-investment-initiative-fii-10.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-web-summit-lisbon-2026@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261109T060000Z
 DTEND:20261112T150000Z
 SUMMARY:Web Summit Lisbon 2026
@@ -237,7 +247,7 @@ URL:https://eventme.live/events/event-web-summit-lisbon-2026.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-cityscape-global-2026@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261116T060000Z
 DTEND:20261119T150000Z
 SUMMARY:Cityscape Global 2026
@@ -247,7 +257,7 @@ URL:https://eventme.live/events/event-cityscape-global-2026.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-global-prize-for-innovation-in-water@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261207T060000Z
 DTEND:20261207T130000Z
 SUMMARY:Global Prize for Innovation in Water

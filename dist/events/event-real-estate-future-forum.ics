@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Real Estate Future Forum | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-real-estate-future-forum@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20270125T060000Z
+DTEND:20270127T150000Z
+SUMMARY:Real Estate Future Forum
+DESCRIPTION:The Real Estate Future Forum (RFF) is a global platform that brings together policymakers\, investors\, developers\, business leaders\, and experts from a
+LOCATION:Four Seasons Hotel \, Riyadh
+URL:https://eventme.live/events/event-real-estate-future-forum.html
+END:VEVENT
+END:VCALENDAR

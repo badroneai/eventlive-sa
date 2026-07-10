@@ -1,68 +1,34 @@
 {
-  "generated_at": "2026-07-10T03:59:04.097Z",
+  "generated_at": "2026-07-10T08:00:11.157Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "categories_count": 12,
   "totals": {
-    "events": 441,
-    "upcoming_or_active": 160,
-    "ended": 281,
-    "live_ready": 15
+    "events": 619,
+    "upcoming_or_active": 225,
+    "ended": 394,
+    "live_ready": 21
   },
   "categories": [
-    {
-      "slug": "exhibition-trade",
-      "label": "معارض وتجارية",
-      "url": "./categories/exhibition-trade.html",
-      "total_events": 43,
-      "upcoming_or_active": 23,
-      "ended": 20,
-      "live_ready": 0,
-      "sources": [
-        "Dhahran Expo Calendar",
-        "Eye of Riyadh Events",
-        "RFECC What's On",
-        "Riyadh City Events"
-      ],
-      "cities": [
-        "الرياض",
-        "الظهران"
-      ],
-      "audiences": [
-        "باحثون وأكاديميون",
-        "تقنيون",
-        "رواد أعمال",
-        "عائلات وأطفال",
-        "مبدعون وفنون",
-        "مهاريون وحرفيون",
-        "موظفون ومهنيون"
-      ],
-      "next_event": {
-        "title": "Horses and Equestrian Heritage Exhibition",
-        "starts_at": "2026-02-24T21:30:00+03:00",
-        "status": "ongoing",
-        "url": "./events/event-horses-and-equestrian-heritage-exhibition.html"
-      },
-      "sources_count": 4,
-      "cities_count": 2,
-      "audiences_count": 7
-    },
     {
       "slug": "entertainment-families",
       "label": "ترفيه وعائلات",
       "url": "./categories/entertainment-families.html",
-      "total_events": 56,
-      "upcoming_or_active": 22,
-      "ended": 34,
+      "total_events": 86,
+      "upcoming_or_active": 42,
+      "ended": 44,
       "live_ready": 1,
       "sources": [
+        "Experience AlUla Events",
         "MDLBEAST Events",
         "Najran Municipality Summer Events",
         "Riyadh City Events",
         "Visit Saudi Calendar",
-        "Visit Saudi Seasons"
+        "Visit Saudi Seasons",
+        "Visit Saudi Summer Calendar PDF"
       ],
       "cities": [
+        "الباحة",
         "الرياض",
         "العلا",
         "جدة",
@@ -86,66 +52,190 @@
         "status": "ongoing",
         "url": "./events/event-poppy-playtime.html"
       },
-      "sources_count": 5,
-      "cities_count": 6,
+      "sources_count": 7,
+      "cities_count": 7,
       "audiences_count": 8
     },
     {
-      "slug": "regulatory-workshop",
-      "label": "ورش تنظيمية وصحية",
-      "url": "./categories/regulatory-workshop.html",
-      "total_events": 27,
-      "upcoming_or_active": 22,
-      "ended": 5,
-      "live_ready": 9,
+      "slug": "sports",
+      "label": "رياضة وفعاليات جماهيرية",
+      "url": "./categories/sports.html",
+      "total_events": 152,
+      "upcoming_or_active": 30,
+      "ended": 122,
+      "live_ready": 4,
       "sources": [
-        "Saudi Food and Drug Authority Events",
+        "Dhahran Expo Calendar",
+        "Experience AlUla Events",
+        "Ministry of Sport Events",
+        "Riyadh City Events",
+        "Saudi Pro League Fixtures",
         "Saudi Universities and Technical Colleges",
-        "Tuwaiq Academy Bootcamps and Programs"
+        "Visit Saudi Calendar",
+        "Visit Saudi Seasons",
+        "Visit Saudi Summer Calendar PDF"
       ],
       "cities": [
+        "الأحساء",
+        "الباحة",
+        "الدرعية",
+        "الدمام",
+        "الرس",
         "الرياض",
+        "السعودية",
+        "الظهران",
+        "العلا",
+        "بريدة",
+        "تبوك",
         "ثول",
-        "عن بعد"
+        "جدة",
+        "خميس مشيط",
+        "عسير",
+        "نجران"
       ],
       "audiences": [
         "باحثون وأكاديميون",
         "تقنيون",
+        "رياضة ولياقة",
         "طلاب وخريجون",
+        "عائلات وأطفال",
+        "عموم الجمهور",
         "مبدعون وفنون",
         "مهاريون وحرفيون",
         "موظفون ومهنيون"
       ],
       "next_event": {
-        "title": "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
-        "starts_at": "2026-07-05T18:00:00+03:00",
+        "title": "Immersive Experience: Flying Over Saudi",
+        "starts_at": "2025-12-24T16:20:00+03:00",
         "status": "ongoing",
-        "url": "./events/event-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية.html"
+        "url": "./events/event-immersive-experience-flying-over-saudi.html"
       },
-      "sources_count": 3,
-      "cities_count": 3,
-      "audiences_count": 6
+      "sources_count": 9,
+      "cities_count": 16,
+      "audiences_count": 9
+    },
+    {
+      "slug": "regulatory-workshop",
+      "label": "ورش تنظيمية وصحية",
+      "url": "./categories/regulatory-workshop.html",
+      "total_events": 37,
+      "upcoming_or_active": 28,
+      "ended": 9,
+      "live_ready": 10,
+      "sources": [
+        "Global PropTech Summit Official",
+        "Jouf University Summer Programs",
+        "Money20/20 Middle East Official",
+        "SCEGA ePortal Events",
+        "Saudi Food and Drug Authority Events",
+        "Saudi Universities and Technical Colleges",
+        "Tuwaiq Academy Bootcamps and Programs",
+        "Visit Saudi Summer Calendar PDF"
+      ],
+      "cities": [
+        "الباحة",
+        "الرياض",
+        "ثول",
+        "جدة",
+        "سكاكا",
+        "عسير",
+        "عن بعد"
+      ],
+      "audiences": [
+        "باحثون وأكاديميون",
+        "تقنيون",
+        "رواد أعمال",
+        "رياضة ولياقة",
+        "طلاب وخريجون",
+        "عائلات وأطفال",
+        "مبدعون وفنون",
+        "مهاريون وحرفيون",
+        "موظفون ومهنيون"
+      ],
+      "next_event": {
+        "title": "مزرعة الليوان",
+        "starts_at": "2026-05-18T00:00:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-مزرعة-الليوان.html"
+      },
+      "sources_count": 8,
+      "cities_count": 7,
+      "audiences_count": 9
+    },
+    {
+      "slug": "exhibition-trade",
+      "label": "معارض وتجارية",
+      "url": "./categories/exhibition-trade.html",
+      "total_events": 94,
+      "upcoming_or_active": 26,
+      "ended": 68,
+      "live_ready": 0,
+      "sources": [
+        "Dhahran Expo Calendar",
+        "Eye of Riyadh Events",
+        "RFECC What's On",
+        "Riyadh City Events",
+        "SCEGA ePortal Events",
+        "dmg events Official"
+      ],
+      "cities": [
+        "الافلاج",
+        "الخبر",
+        "الدمام",
+        "الرياض",
+        "الطائف",
+        "الظهران",
+        "المزاحمية",
+        "النماص",
+        "بريدة",
+        "جدة",
+        "حائل",
+        "مكة"
+      ],
+      "audiences": [
+        "باحثون وأكاديميون",
+        "تقنيون",
+        "رواد أعمال",
+        "عائلات وأطفال",
+        "مبدعون وفنون",
+        "مهاريون وحرفيون",
+        "موظفون ومهنيون"
+      ],
+      "next_event": {
+        "title": "Horses and Equestrian Heritage Exhibition",
+        "starts_at": "2026-02-24T21:30:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-horses-and-equestrian-heritage-exhibition.html"
+      },
+      "sources_count": 6,
+      "cities_count": 12,
+      "audiences_count": 7
     },
     {
       "slug": "culture-arts",
       "label": "ثقافة وفنون",
       "url": "./categories/culture-arts.html",
-      "total_events": 17,
-      "upcoming_or_active": 17,
+      "total_events": 25,
+      "upcoming_or_active": 25,
       "ended": 0,
       "live_ready": 0,
       "sources": [
         "Ministry of Culture Commission Calendars",
         "Riyadh City Events",
-        "Visit Saudi Calendar"
+        "Visit Saudi Calendar",
+        "Visit Saudi Summer Calendar PDF"
       ],
       "cities": [
+        "الباحة",
         "الرياض",
-        "السعودية"
+        "السعودية",
+        "جدة",
+        "عسير"
       ],
       "audiences": [
         "باحثون وأكاديميون",
         "تقنيون",
+        "رياضة ولياقة",
         "عائلات وأطفال",
         "مبدعون وفنون",
         "مهاريون وحرفيون",
@@ -157,31 +247,42 @@
         "status": "ongoing",
         "url": "./events/event-skill-development-initiative.html"
       },
-      "sources_count": 3,
-      "cities_count": 2,
-      "audiences_count": 6
+      "sources_count": 4,
+      "cities_count": 5,
+      "audiences_count": 7
     },
     {
       "slug": "conference-forum",
       "label": "مؤتمرات ومنتديات",
       "url": "./categories/conference-forum.html",
-      "total_events": 23,
-      "upcoming_or_active": 16,
-      "ended": 7,
-      "live_ready": 0,
+      "total_events": 61,
+      "upcoming_or_active": 22,
+      "ended": 39,
+      "live_ready": 5,
       "sources": [
         "Dhahran Expo Calendar",
         "Eye of Riyadh Events",
+        "Eye of Riyadh Official",
+        "HRSE KSA Official",
         "Invest Saudi Events",
+        "LEAP 2026 Official",
+        "Money20/20 Middle East Official",
+        "Real Estate Future Forum Official",
         "Riyadh City Events",
+        "SCEGA ePortal Events",
         "SDAIA Calendar and Events",
-        "Saudi Universities and Technical Colleges"
+        "Saudi Universities and Technical Colleges",
+        "Smart Data & AI Summit Official"
       ],
       "cities": [
+        "الخبر",
         "الرياض",
         "الظهران",
+        "المدينة المنورة",
+        "بريدة",
         "جدة",
-        "دولي"
+        "دولي",
+        "ينبع"
       ],
       "audiences": [
         "باحثون عن عمل",
@@ -200,8 +301,8 @@
         "status": "upcoming",
         "url": "./events/event-offshore-technology-innovation-technical-conference-expo-offshore-arabia.html"
       },
-      "sources_count": 6,
-      "cities_count": 4,
+      "sources_count": 13,
+      "cities_count": 8,
       "audiences_count": 9
     },
     {
@@ -243,70 +344,24 @@
       "audiences_count": 7
     },
     {
-      "slug": "sports",
-      "label": "رياضة وفعاليات جماهيرية",
-      "url": "./categories/sports.html",
-      "total_events": 119,
-      "upcoming_or_active": 12,
-      "ended": 107,
-      "live_ready": 4,
-      "sources": [
-        "Dhahran Expo Calendar",
-        "Experience AlUla Events",
-        "Ministry of Sport Events",
-        "Riyadh City Events",
-        "Saudi Pro League Fixtures",
-        "Saudi Universities and Technical Colleges",
-        "Visit Saudi Calendar",
-        "Visit Saudi Seasons"
-      ],
-      "cities": [
-        "الدرعية",
-        "الدمام",
-        "الرياض",
-        "الظهران",
-        "العلا",
-        "بريدة",
-        "ثول",
-        "جدة",
-        "خميس مشيط",
-        "عسير"
-      ],
-      "audiences": [
-        "باحثون وأكاديميون",
-        "تقنيون",
-        "رياضة ولياقة",
-        "عائلات وأطفال",
-        "مبدعون وفنون",
-        "مهاريون وحرفيون",
-        "موظفون ومهنيون"
-      ],
-      "next_event": {
-        "title": "Immersive Experience: Flying Over Saudi",
-        "starts_at": "2025-12-24T16:20:00+03:00",
-        "status": "ongoing",
-        "url": "./events/event-immersive-experience-flying-over-saudi.html"
-      },
-      "sources_count": 8,
-      "cities_count": 10,
-      "audiences_count": 7
-    },
-    {
       "slug": "education-community",
       "label": "جامعات ومجتمع",
       "url": "./categories/education-community.html",
-      "total_events": 18,
+      "total_events": 19,
       "upcoming_or_active": 11,
-      "ended": 7,
+      "ended": 8,
       "live_ready": 0,
       "sources": [
         "Misk Hub Programs",
+        "Qassim University Events",
         "Riyadh City Events",
         "Saudi Universities and Technical Colleges",
-        "Tuwaiq Academy Bootcamps and Programs"
+        "Tuwaiq Academy Bootcamps and Programs",
+        "Visit Saudi Summer Calendar PDF"
       ],
       "cities": [
         "الرياض",
+        "بريدة",
         "ثول",
         "جدة"
       ],
@@ -327,17 +382,52 @@
         "status": "ongoing",
         "url": "./events/event-registration-now-open-for-children-at-the-childhood-studies-center-for-t.html"
       },
+      "sources_count": 6,
+      "cities_count": 4,
+      "audiences_count": 9
+    },
+    {
+      "slug": "awards-ceremonies",
+      "label": "جوائز وتكريم",
+      "url": "./categories/awards-ceremonies.html",
+      "total_events": 11,
+      "upcoming_or_active": 9,
+      "ended": 2,
+      "live_ready": 0,
+      "sources": [
+        "Dhahran Expo Calendar",
+        "Eye of Riyadh Official",
+        "Saudi Space Agency Events",
+        "Saudi Water Authority Events"
+      ],
+      "cities": [
+        "الرياض",
+        "الظهران",
+        "جدة"
+      ],
+      "audiences": [
+        "باحثون وأكاديميون",
+        "رواد أعمال",
+        "مبدعون وفنون",
+        "موظفون ومهنيون"
+      ],
+      "next_event": {
+        "title": "Global Infrastructure Expo",
+        "starts_at": "2026-09-15T04:00:00+03:00",
+        "status": "upcoming",
+        "url": "./events/event-global-infrastructure-expo.html"
+      },
       "sources_count": 4,
       "cities_count": 3,
-      "audiences_count": 9
+      "audiences_count": 4
     },
     {
       "slug": "chamber-event",
       "label": "فعاليات الغرف التجارية",
       "url": "./categories/chamber-event.html",
-      "total_events": 71,
+      "total_events": 72,
       "upcoming_or_active": 8,
-      "ended": 63,
+      "ended": 64,
       "live_ready": 1,
       "sources": [
         "Abha Chamber Events",
@@ -349,6 +439,7 @@
         "Makkah Chamber Events",
         "Northern Borders Chamber Events",
         "Qassim Chamber Events",
+        "Qassim University Events",
         "Tabuk Chamber Events"
       ],
       "cities": [
@@ -357,7 +448,6 @@
         "الدمام",
         "الرياض",
         "الظهران",
-        "القطيف",
         "بريدة",
         "تبوك",
         "جازان",
@@ -386,55 +476,22 @@
         "status": "upcoming",
         "url": "./events/event-متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة.html"
       },
-      "sources_count": 10,
-      "cities_count": 15,
+      "sources_count": 11,
+      "cities_count": 14,
       "audiences_count": 10
-    },
-    {
-      "slug": "awards-ceremonies",
-      "label": "جوائز وتكريم",
-      "url": "./categories/awards-ceremonies.html",
-      "total_events": 10,
-      "upcoming_or_active": 8,
-      "ended": 2,
-      "live_ready": 0,
-      "sources": [
-        "Dhahran Expo Calendar",
-        "Saudi Space Agency Events",
-        "Saudi Water Authority Events"
-      ],
-      "cities": [
-        "الرياض",
-        "الظهران",
-        "جدة"
-      ],
-      "audiences": [
-        "باحثون وأكاديميون",
-        "رواد أعمال",
-        "مبدعون وفنون",
-        "موظفون ومهنيون"
-      ],
-      "next_event": {
-        "title": "Global Infrastructure Expo",
-        "starts_at": "2026-09-15T04:00:00+03:00",
-        "status": "upcoming",
-        "url": "./events/event-global-infrastructure-expo.html"
-      },
-      "sources_count": 3,
-      "cities_count": 3,
-      "audiences_count": 4
     },
     {
       "slug": "gaming-esports",
       "label": "ألعاب ورياضات إلكترونية",
       "url": "./categories/gaming-esports.html",
-      "total_events": 14,
-      "upcoming_or_active": 5,
-      "ended": 9,
+      "total_events": 18,
+      "upcoming_or_active": 8,
+      "ended": 10,
       "live_ready": 0,
       "sources": [
         "CODE MCIT Programs",
-        "Riyadh City Events"
+        "Riyadh City Events",
+        "Visit Saudi Summer Calendar PDF"
       ],
       "cities": [
         "الرياض",
@@ -457,7 +514,7 @@
         "status": "ongoing",
         "url": "./events/event-riyadh-season-blvd-city.html"
       },
-      "sources_count": 2,
+      "sources_count": 3,
       "cities_count": 4,
       "audiences_count": 7
     },
@@ -465,17 +522,19 @@
       "slug": "science-space",
       "label": "علوم وفضاء",
       "url": "./categories/science-space.html",
-      "total_events": 15,
+      "total_events": 16,
       "upcoming_or_active": 2,
-      "ended": 13,
+      "ended": 14,
       "live_ready": 0,
       "sources": [
+        "Experience AlUla Events",
         "Riyadh City Events",
         "Saudi Space Agency Events"
       ],
       "cities": [
         "الرياض",
         "السعودية",
+        "العلا",
         "جدة",
         "دولي"
       ],
@@ -483,6 +542,7 @@
         "باحثون وأكاديميون",
         "تقنيون",
         "طلاب وخريجون",
+        "عائلات وأطفال",
         "مبدعون وفنون",
         "موظفون ومهنيون"
       ],
@@ -492,9 +552,9 @@
         "status": "ongoing",
         "url": "./events/event-registration-for-international-research-competition-on-non-terrestrial-n.html"
       },
-      "sources_count": 2,
-      "cities_count": 4,
-      "audiences_count": 5
+      "sources_count": 3,
+      "cities_count": 5,
+      "audiences_count": 6
     }
   ]
 }

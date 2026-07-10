@@ -1,10 +1,11 @@
 {
   "schema": "eventlive.lighthouse-performance-audit.v1",
-  "generated_at": "2026-07-08T01:37:42.712Z",
+  "generated_at": "2026-07-10T07:56:02.735Z",
   "status": "PASS",
   "summary": {
     "pages": 4,
-    "min_performance": 94,
+    "chrome_path": "/Users/baderalsalman/Library/Caches/ms-playwright/chromium_headless_shell-1228/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+    "min_performance": 100,
     "min_accessibility": 98,
     "performance_threshold": 90,
     "accessibility_threshold": 95
@@ -14,52 +15,60 @@
       "page": "/index.html",
       "performance": 100,
       "accessibility": 98,
+      "runtime_error": null,
+      "run_warnings": [],
       "audits": {
-        "first-contentful-paint": "0.4 s",
-        "largest-contentful-paint": "0.4 s",
-        "speed-index": "0.5 s",
-        "interactive": "0.4 s",
+        "first-contentful-paint": "0.6 s",
+        "largest-contentful-paint": "0.6 s",
+        "speed-index": "0.8 s",
+        "interactive": "0.6 s",
         "total-blocking-time": "0 ms",
-        "cumulative-layout-shift": "0.043"
+        "cumulative-layout-shift": "0.033"
       }
     },
     {
       "page": "/events.html",
       "performance": 100,
       "accessibility": 100,
+      "runtime_error": null,
+      "run_warnings": [],
       "audits": {
         "first-contentful-paint": "0.2 s",
-        "largest-contentful-paint": "0.4 s",
-        "speed-index": "0.5 s",
+        "largest-contentful-paint": "0.2 s",
+        "speed-index": "0.3 s",
         "interactive": "0.2 s",
         "total-blocking-time": "0 ms",
-        "cumulative-layout-shift": "0"
+        "cumulative-layout-shift": "0.025"
       }
     },
     {
       "page": "/screen.html",
-      "performance": 94,
+      "performance": 100,
       "accessibility": 100,
+      "runtime_error": null,
+      "run_warnings": [],
       "audits": {
         "first-contentful-paint": "0.2 s",
-        "largest-contentful-paint": "0.4 s",
-        "speed-index": "0.4 s",
+        "largest-contentful-paint": "0.2 s",
+        "speed-index": "0.2 s",
         "interactive": "0.2 s",
         "total-blocking-time": "0 ms",
-        "cumulative-layout-shift": "0.152"
+        "cumulative-layout-shift": "0.049"
       }
     },
     {
-      "page": "/events/demo-event.html",
-      "performance": 99,
+      "page": "/events/event-beast-house.html",
+      "performance": 100,
       "accessibility": 100,
+      "runtime_error": null,
+      "run_warnings": [],
       "audits": {
-        "first-contentful-paint": "0.3 s",
-        "largest-contentful-paint": "0.3 s",
-        "speed-index": "0.5 s",
-        "interactive": "0.3 s",
+        "first-contentful-paint": "0.2 s",
+        "largest-contentful-paint": "0.2 s",
+        "speed-index": "0.3 s",
+        "interactive": "0.2 s",
         "total-blocking-time": "0 ms",
-        "cumulative-layout-shift": "0.061"
+        "cumulative-layout-shift": "0.036"
       }
     }
   ]

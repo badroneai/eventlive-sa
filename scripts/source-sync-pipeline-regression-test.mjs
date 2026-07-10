@@ -70,6 +70,8 @@ for (const name of [
   'sources:swa:details',
   'sources:rfecc:details',
   'sources:mdlbeast:details',
+  'sources:leap:agenda',
+  'sources:money2020:agenda',
   'sources:backlog:details',
   'sources:single-session:activate'
 ]) {
@@ -77,6 +79,8 @@ for (const name of [
 }
 
 assert.ok(detailIndex('sources:mdlbeast:details') < detailIndex('sources:backlog:details'), 'source-specific enrichers must run before generic backlog enrichment');
+assert.ok(detailIndex('sources:leap:agenda') < detailIndex('sources:backlog:details'), 'official multi-session agendas must be enriched before generic backlog enrichment');
+assert.ok(detailIndex('sources:money2020:agenda') < detailIndex('sources:backlog:details'), 'Money20/20 historical and current agenda monitoring must run before generic backlog enrichment');
 assert.ok(detailIndex('sources:backlog:details') < detailIndex('sources:single-session:activate'), 'single-session activation must run after backlog enrichment');
 
 console.log('source-sync-pipeline-regression-test: ok');

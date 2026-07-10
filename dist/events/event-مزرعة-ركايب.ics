@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:مزرعة ركايب | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-مزرعة-ركايب@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260531T210000Z
+DTEND:20260930T205900Z
+SUMMARY:مزرعة ركايب
+DESCRIPTION:مزرعةٌ ريفية تضم أشجاراً مثمرة، وجلساتٍ خارجية، وإسطبل خيول، ومجموعةً من المطاعم، والمقاهي، ومنطقة ألعاب لاطفال، ضمن أجواءٍ ريفية مميزة.
+LOCATION:منطقة عسير
+URL:https://eventme.live/events/event-مزرعة-ركايب.html
+END:VEVENT
+END:VCALENDAR

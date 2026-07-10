@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:CIPS MENA Procurement and Supply Chain Futures conference and awards | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-cips-mena-procurement-and-supply-chain-futures-conference-and-awards@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20261028T060000Z
+DTEND:20261029T150000Z
+SUMMARY:CIPS MENA Procurement and Supply Chain Futures conference and awards
+DESCRIPTION:CIPS MENA Procurement and Supply Chain Futures Forum is the region&rsquo\;s leading gathering for procurement and supply chain professionals. Designed
+LOCATION:Mandarin Oriental Al Faisaliah \, Riyadh
+URL:https://eventme.live/events/event-cips-mena-procurement-and-supply-chain-futures-conference-and-awards.html
+END:VEVENT
+END:VCALENDAR

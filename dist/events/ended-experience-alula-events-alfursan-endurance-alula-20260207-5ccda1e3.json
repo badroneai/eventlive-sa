@@ -1,7 +1,7 @@
 {
   "id": "ended-experience-alula-events-alfursan-endurance-alula-20260207-5ccda1e3",
   "title": "AlFursan Endurance AlUla",
-  "summary": "World-class endurance racing returns to AlUla. AlFursan Endurance AlUla ضمن رياضة وفعاليات جماهيرية في العلا. تبدأ الفعالية ٠٧‏/٠٢‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٠٨‏/٠٢‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Experience AlUla Events.",
+  "summary": "The return of AlFursan Endurance AlUla in 2026 marks the seventh edition of this world-class endurance riding event. Known for attracting elite international competitors, AlFursan Endurance AlUla is also a celebration of the area's cultural heritage and natural beauty. Spectators can look forward to captivating performances, traditional experiences, and collaborations with national institutions, all set against AlUla’s breathtaking desert landscapes.",
   "canonical_url": "https://eventme.live/events/ended-experience-alula-events-alfursan-endurance-alula-20260207-5ccda1e3.html",
   "detail_url": "./events/ended-experience-alula-events-alfursan-endurance-alula-20260207-5ccda1e3.html",
   "calendar_url": "./events/ended-experience-alula-events-alfursan-endurance-alula-20260207-5ccda1e3.ics",
@@ -10,11 +10,11 @@
   "evidence_url": "https://www.experiencealula.com/en/whats-on/events/alfursan-endurance-alula",
   "trust_tier": "official",
   "trust_label": "مصدر حكومي أو رسمي",
-  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verified_at": "2026-07-10T06:52:19.836Z",
   "verification_method": "registered-official",
   "freshness_hours": 1,
   "city": "العلا",
-  "venue": "AlUla",
+  "venue": "Mohamed Yousuf Naghi Equestrian Village - AlFursan",
   "venue_address": "AlUla",
   "starts_at": "2026-02-07T09:00:00+03:00",
   "ends_at": "2026-02-08T18:00:00+03:00",
@@ -28,8 +28,8 @@
   "official_sessions_count": 0,
   "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
-  "image_url": "https://eventme.live/assets/event-covers/ended-experience-alula-events-alfursan-endurance-alula-20260207-5ccda1e3.svg",
-  "image_alt": "غلاف EventLive لفعالية AlFursan Endurance AlUla",
+  "image_url": "https://eventme.live/assets/event-images/alfursan-endurance-alula-8bcec8fcca.webp",
+  "image_alt": "AlFursan Endurance AlUla",
   "category": "رياضة وفعاليات جماهيرية",
   "category_url": "./categories/sports.html",
   "audiences": [
@@ -40,33 +40,37 @@
     {
       "slug": "creatives",
       "label": "مبدعون وفنون"
+    },
+    {
+      "slug": "sports",
+      "label": "رياضة ولياقة"
     }
   ],
   "keywords": [
     "AlFursan Endurance AlUla",
     "رياضة وفعاليات جماهيرية",
-    "Events",
+    "sports",
     "فعالية",
     "منتهية",
     "العلا",
-    "AlUla",
+    "Mohamed Yousuf Naghi Equestrian Village - AlFursan",
     "Experience AlUla Events",
     "destination",
     "culture",
     "heritage",
     "music",
-    "sports",
     "festivals",
     "ended-event",
     "عائلات وأطفال",
-    "مبدعون وفنون"
+    "مبدعون وفنون",
+    "رياضة ولياقة"
   ],
   "sessions": [
     {
       "title": "نافذة الحضور",
       "starts_at": "2026-02-07T09:00:00+03:00",
       "ends_at": "2026-02-08T18:00:00+03:00",
-      "room": "AlUla",
+      "room": "Mohamed Yousuf Naghi Equestrian Village - AlFursan",
       "anchor": "#session-نافذة-الحضور"
     }
   ],
@@ -80,7 +84,7 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "AlUla",
+      "name": "Mohamed Yousuf Naghi Equestrian Village - AlFursan",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "AlUla",
@@ -94,13 +98,13 @@
       "name": "Royal Commission for AlUla / Experience AlUla"
     },
     "image": [
-      "https://eventme.live/assets/event-covers/ended-experience-alula-events-alfursan-endurance-alula-20260207-5ccda1e3.svg"
+      "https://eventme.live/assets/event-images/alfursan-endurance-alula-8bcec8fcca.webp"
     ],
-    "description": "World-class endurance racing returns to AlUla. AlFursan Endurance AlUla ضمن رياضة وفعاليات جماهيرية في العلا. تبدأ الفعالية ٠٧‏/٠٢‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٠٨‏/٠٢‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Experience AlUla Events.",
+    "description": "The return of AlFursan Endurance AlUla in 2026 marks the seventh edition of this world-class endurance riding event. Known for attracting elite international competitors, AlFursan Endurance AlUla is also a celebration of the area's cultural heritage and natural beauty. Spectators can look forward to captivating performances, traditional experiences, and collaborations with national institutions, all set against AlUla’s breathtaking desert landscapes.",
     "url": "https://eventme.live/events/ended-experience-alula-events-alfursan-endurance-alula-20260207-5ccda1e3.html",
     "mainEntityOfPage": "https://eventme.live/events/ended-experience-alula-events-alfursan-endurance-alula-20260207-5ccda1e3.html",
     "isAccessibleForFree": false,
-    "keywords": "AlFursan Endurance AlUla, رياضة وفعاليات جماهيرية, Events, فعالية, منتهية, العلا, AlUla, Experience AlUla Events, destination, culture, heritage, music, sports, festivals, ended-event, عائلات وأطفال, مبدعون وفنون",
+    "keywords": "AlFursan Endurance AlUla, رياضة وفعاليات جماهيرية, sports, فعالية, منتهية, العلا, Mohamed Yousuf Naghi Equestrian Village - AlFursan, Experience AlUla Events, destination, culture, heritage, music, festivals, ended-event, عائلات وأطفال, مبدعون وفنون, رياضة ولياقة",
     "audience": [
       {
         "@type": "Audience",
@@ -109,6 +113,10 @@
       {
         "@type": "Audience",
         "audienceType": "مبدعون وفنون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رياضة ولياقة"
       }
     ],
     "sameAs": [
@@ -116,9 +124,9 @@
     ],
     "offers": {
       "@type": "Offer",
-      "url": "https://www.experiencealula.com/en/whats-on/events/alfursan-endurance-alula",
+      "url": "https://www.experiencealula.com/en/whats-on/events/alfursan-endurance-alula#",
       "availability": "https://schema.org/InStock",
-      "category": "Event access"
+      "category": "60 SAR"
     }
   }
 }

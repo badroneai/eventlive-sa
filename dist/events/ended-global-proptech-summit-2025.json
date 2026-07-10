@@ -1,0 +1,405 @@
+{
+  "id": "ended-global-proptech-summit-2025",
+  "title": "Global PropTech Summit 2025",
+  "summary": "انعقدت القمة العالمية لتقنيات العقار 2025 في الرياض يومي 26 و27 أكتوبر، ويُحفظ برنامجها الرسمي هنا بجلساته عن الذكاء الاصطناعي والمدن الذكية والتنظيم والاستثمار العقاري.",
+  "canonical_url": "https://eventme.live/events/ended-global-proptech-summit-2025.html",
+  "detail_url": "./events/ended-global-proptech-summit-2025.html",
+  "calendar_url": "./events/ended-global-proptech-summit-2025.ics",
+  "source_label": "Global PropTech Summit Official",
+  "source_url": "https://globalproptechsummit.com/",
+  "evidence_url": "https://globalproptechsummit.com/agenda.pdf",
+  "trust_tier": "approved-source",
+  "trust_label": "مصدر معتمد",
+  "verified_at": "2026-07-10T07:47:21.788Z",
+  "verification_method": "approved-source-evidence",
+  "freshness_hours": 0,
+  "city": "الرياض",
+  "venue": "Mandarin Oriental Al Faisaliah",
+  "venue_address": "Al Faisaliah Tower, Riyadh, Saudi Arabia",
+  "starts_at": "2025-10-26T09:00:00+03:00",
+  "ends_at": "2025-10-27T18:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 40,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-covers/ended-global-proptech-summit-2025.svg",
+  "image_alt": "غلاف EventLive لفعالية Global PropTech Summit 2025",
+  "category": "ورش تنظيمية وصحية",
+  "category_url": "./categories/regulatory-workshop.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "tech",
+      "label": "تقنيون"
+    },
+    {
+      "slug": "entrepreneurs",
+      "label": "رواد أعمال"
+    }
+  ],
+  "keywords": [
+    "Global PropTech Summit 2025",
+    "ورش تنظيمية وصحية",
+    "conference",
+    "فعالية",
+    "منتهية",
+    "الرياض",
+    "Mandarin Oriental Al Faisaliah",
+    "Global PropTech Summit Official",
+    "proptech",
+    "real estate",
+    "artificial intelligence",
+    "investment",
+    "ended-event",
+    "موظفون ومهنيون",
+    "تقنيون",
+    "رواد أعمال"
+  ],
+  "sessions": [
+    {
+      "title": "Reception",
+      "starts_at": "2025-10-26T09:00:00+03:00",
+      "ends_at": "2025-10-26T10:00:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-0900-reception"
+    },
+    {
+      "title": "Tour & Exhibition Opening",
+      "starts_at": "2025-10-26T10:00:00+03:00",
+      "ends_at": "2025-10-26T10:15:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1000-tour-exhibition-opening"
+    },
+    {
+      "title": "Opening Ceremony",
+      "starts_at": "2025-10-26T10:15:00+03:00",
+      "ends_at": "2025-10-26T10:25:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1015-opening-ceremony"
+    },
+    {
+      "title": "REGA CEO Keynote",
+      "starts_at": "2025-10-26T10:25:00+03:00",
+      "ends_at": "2025-10-26T10:30:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1025-rega-ceo-keynote"
+    },
+    {
+      "title": "NHC Innovation CEO Keynote",
+      "starts_at": "2025-10-26T10:30:00+03:00",
+      "ends_at": "2025-10-26T10:35:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1030-nhc-innovation-ceo-keynote"
+    },
+    {
+      "title": "H.E. Minister of Municipalities",
+      "starts_at": "2025-10-26T10:35:00+03:00",
+      "ends_at": "2025-10-26T10:40:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1035-h-e-minister-of-municipalities"
+    },
+    {
+      "title": "Agreements & Announcements",
+      "starts_at": "2025-10-26T10:40:00+03:00",
+      "ends_at": "2025-10-26T11:00:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1040-agreements-announcements"
+    },
+    {
+      "title": "THE CAPITAL MARKET AUTHORITY: EMPOWERMENT AND A PACKAGE OF ENHANCEMENTS",
+      "starts_at": "2025-10-26T11:00:00+03:00",
+      "ends_at": "2025-10-26T11:30:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1100-the-capital-market-authority-empowerment-and-a-package-of-enhancements"
+    },
+    {
+      "title": "FROM MUD TO MODERNITY BUILDINGS THAT THINK. CITIES THAT LEARN. PEOPLE THAT LIVE.",
+      "starts_at": "2025-10-26T11:30:00+03:00",
+      "ends_at": "2025-10-26T11:45:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1130-from-mud-to-modernity-buildings-that-think-cities-that-learn-people-that"
+    },
+    {
+      "title": "BREAK",
+      "starts_at": "2025-10-26T11:45:00+03:00",
+      "ends_at": "2025-10-26T12:30:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1145-break"
+    },
+    {
+      "title": "THE EFFORTS OF AUTHORITIES IN DEVELOPING THE PROPTECH SECTOR AND THEIR ECONOMIC IMPACT",
+      "starts_at": "2025-10-26T12:30:00+03:00",
+      "ends_at": "2025-10-26T13:10:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1230-the-efforts-of-authorities-in-developing-the-proptech-sector-and-their-e"
+    },
+    {
+      "title": "DIGITAL TRANSFORMATION IN THE REAL ESTATE SECTOR: THE ROLE OF SMART JUDICIAL SERVICES IN ACCELERATING TRANSACTIONS",
+      "starts_at": "2025-10-26T13:10:00+03:00",
+      "ends_at": "2025-10-26T13:40:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1310-digital-transformation-in-the-real-estate-sector-the-role-of-smart-judic"
+    },
+    {
+      "title": "TECHHUB BY NHC INNOVATION",
+      "starts_at": "2025-10-26T13:40:00+03:00",
+      "ends_at": "2025-10-26T13:55:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1340-techhub-by-nhc-innovation"
+    },
+    {
+      "title": "THE REAL ESTATE REGISTRY… REDEFINING THE FUTURE OF PROPTECH",
+      "starts_at": "2025-10-26T13:55:00+03:00",
+      "ends_at": "2025-10-26T14:10:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1355-the-real-estate-registry-redefining-the-future-of-proptech"
+    },
+    {
+      "title": "VISION 2030 & PROPTECH: TRANSFORMING SAUDI ARABIA’S BUILT ENVIRONMENT",
+      "starts_at": "2025-10-26T14:10:00+03:00",
+      "ends_at": "2025-10-26T14:50:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1410-vision-2030-proptech-transforming-saudi-arabia-s-built-environment"
+    },
+    {
+      "title": "SMART REAL ESTATE TRANSFORMATION: ALANDALUS’S VISION IN THE PROPTECH ERA",
+      "starts_at": "2025-10-26T14:50:00+03:00",
+      "ends_at": "2025-10-26T15:00:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1450-smart-real-estate-transformation-alandalus-s-vision-in-the-proptech-era"
+    },
+    {
+      "title": "FROM REGULATION TO INNOVATION: HOW EU CROWDFUNDING IS RESHAPING PROPTECH",
+      "starts_at": "2025-10-26T15:00:00+03:00",
+      "ends_at": "2025-10-26T15:15:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1500-from-regulation-to-innovation-how-eu-crowdfunding-is-reshaping-proptech"
+    },
+    {
+      "title": "PROPTECH... SMART ENVIRONMENT OF PROPERTIES",
+      "starts_at": "2025-10-26T15:15:00+03:00",
+      "ends_at": "2025-10-26T15:30:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1515-proptech-smart-environment-of-properties"
+    },
+    {
+      "title": "THE ULTIMATE BUYER EXPERIENCE FOROFF-PLAN PROJECTS",
+      "starts_at": "2025-10-26T15:30:00+03:00",
+      "ends_at": "2025-10-26T15:45:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1530-the-ultimate-buyer-experience-foroff-plan-projects"
+    },
+    {
+      "title": "THE ADOPTION OF PROPTECH AND ITS RELATIONSHIP TO THE SUSTAINABILITY OF THE REAL ESTATE SECTOR",
+      "starts_at": "2025-10-26T15:45:00+03:00",
+      "ends_at": "2025-10-26T16:00:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1545-the-adoption-of-proptech-and-its-relationship-to-the-sustainability-of-t"
+    },
+    {
+      "title": "HOW AI IS REVOLUTIONIZING LAND",
+      "starts_at": "2025-10-26T16:00:00+03:00",
+      "ends_at": "2025-10-26T16:40:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1600-how-ai-is-revolutionizing-land"
+    },
+    {
+      "title": "CONSCIOUS PROPERTY TECHNOLOGY AND",
+      "starts_at": "2025-10-26T16:40:00+03:00",
+      "ends_at": "2025-10-26T17:20:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1640-conscious-property-technology-and"
+    },
+    {
+      "title": "EMERGING TRENDS IN PROPTECH : HOW TOKENIZATION WILL REDEFINE",
+      "starts_at": "2025-10-26T17:20:00+03:00",
+      "ends_at": "2025-10-26T18:00:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-1-1720-emerging-trends-in-proptech-how-tokenization-will-redefine"
+    },
+    {
+      "title": "BEYOND THE REALTOR: BUILDING AN END-TO-END AI- POWERED PROPTECH ECOSYSTEM",
+      "starts_at": "2025-10-27T10:00:00+03:00",
+      "ends_at": "2025-10-27T10:15:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-2-1000-beyond-the-realtor-building-an-end-to-end-ai-powered-proptech-ecosystem"
+    },
+    {
+      "title": "PROPTECH IN ACTION: TRANSFORMING SUPPLY CHAINS & BUILD-TO-RENT COMMUNITIES",
+      "starts_at": "2025-10-27T10:15:00+03:00",
+      "ends_at": "2025-10-27T10:55:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-2-1015-proptech-in-action-transforming-supply-chains-build-to-rent-communities"
+    },
+    {
+      "title": "THE FUTURE OF PROPTECH: GLOBAL TRENDS SHAPING REAL ESTATE INNOVATION",
+      "starts_at": "2025-10-27T10:55:00+03:00",
+      "ends_at": "2025-10-27T11:35:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-2-1055-the-future-of-proptech-global-trends-shaping-real-estate-innovation"
+    },
+    {
+      "title": "AFFORDABLE HOUSING AT SCALE AND MARKET REFORMS",
+      "starts_at": "2025-10-27T11:35:00+03:00",
+      "ends_at": "2025-10-27T11:50:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-2-1135-affordable-housing-at-scale-and-market-reforms"
+    },
+    {
+      "title": "PROPTECH AT SCALE: DRIVING INNOVATION ACROSS 250 MILLION M² OF GLOBAL COMMERCIAL REAL ESTATE",
+      "starts_at": "2025-10-27T11:50:00+03:00",
+      "ends_at": "2025-10-27T12:05:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-2-1150-proptech-at-scale-driving-innovation-across-250-million-m2-of-global-com"
+    },
+    {
+      "title": "PROPTECH AND PROCUREMENT: BIG WINS IN SAVINGS AND GOVERNANCE",
+      "starts_at": "2025-10-27T12:05:00+03:00",
+      "ends_at": "2025-10-27T12:20:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-2-1205-proptech-and-procurement-big-wins-in-savings-and-governance"
+    },
+    {
+      "title": "BREAK",
+      "starts_at": "2025-10-27T12:20:00+03:00",
+      "ends_at": "2025-10-27T12:25:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-2-1220-break"
+    },
+    {
+      "title": "BRIDGING PROPTECH INNOVATION WITH TRADITIONAL REAL ESTATE: BUILDING DIGITAL ECOSYSTEMS IN SAUDI ARABIA",
+      "starts_at": "2025-10-27T12:25:00+03:00",
+      "ends_at": "2025-10-27T13:05:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-2-1225-bridging-proptech-innovation-with-traditional-real-estate-building-digit"
+    },
+    {
+      "title": "ACCELERATING PROPTECH ADOPTION IN LEGACY REAL ESTATE: STRATEGIES FOR SAUDI ARABIA’S NEXT DECADE",
+      "starts_at": "2025-10-27T13:05:00+03:00",
+      "ends_at": "2025-10-27T13:35:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-2-1305-accelerating-proptech-adoption-in-legacy-real-estate-strategies-for-saud"
+    },
+    {
+      "title": "REIMAGINING REAL ESTATE: BY SAKANI",
+      "starts_at": "2025-10-27T13:35:00+03:00",
+      "ends_at": "2025-10-27T13:50:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-2-1335-reimagining-real-estate-by-sakani"
+    },
+    {
+      "title": "AWJ HOLDING COMPANY DIRECTOR OF DIGITAL AND TECHNOLOGY KEYNOTE",
+      "starts_at": "2025-10-27T13:50:00+03:00",
+      "ends_at": "2025-10-27T14:05:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-2-1350-awj-holding-company-director-of-digital-and-technology-keynote"
+    },
+    {
+      "title": "AI-DRIVEN URBAN FUTURES: TRANSFORMING PROPERTY AND INFRASTRUCTURE FOR THE NEXT GENERATION OF SMART CITIES",
+      "starts_at": "2025-10-27T14:05:00+03:00",
+      "ends_at": "2025-10-27T15:05:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-2-1405-ai-driven-urban-futures-transforming-property-and-infrastructure-for-the"
+    },
+    {
+      "title": "PROPTECH WITHOUT BORDERS: CO-CREATING THE CITIES OF TOMORROW",
+      "starts_at": "2025-10-27T15:05:00+03:00",
+      "ends_at": "2025-10-27T15:25:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-2-1505-proptech-without-borders-co-creating-the-cities-of-tomorrow"
+    },
+    {
+      "title": "FROM SMART BUILDINGS TO SMART FINANCING: THE NEXT FRONTIER OF PROPTECH",
+      "starts_at": "2025-10-27T15:25:00+03:00",
+      "ends_at": "2025-10-27T16:05:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-2-1525-from-smart-buildings-to-smart-financing-the-next-frontier-of-proptech"
+    },
+    {
+      "title": "REINVEST’S APPROACH TO TRANSFORMING THE COMMERCIAL REAL ESTATE SECTOR IN SAUDI ARABIA",
+      "starts_at": "2025-10-27T16:05:00+03:00",
+      "ends_at": "2025-10-27T16:20:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-2-1605-reinvest-s-approach-to-transforming-the-commercial-real-estate-sector-in"
+    },
+    {
+      "title": "SCALING PROPTECH STARTUPS: FROM INNOVATION TO IMPLEMENTATION IN SAUDI REAL ESTATE",
+      "starts_at": "2025-10-27T16:20:00+03:00",
+      "ends_at": "2025-10-27T17:00:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-2-1620-scaling-proptech-startups-from-innovation-to-implementation-in-saudi-rea"
+    },
+    {
+      "title": "HUMAN-CENTRIC PROPTECH: REDEFINING TENANT EXPERIENCE IN THE",
+      "starts_at": "2025-10-27T17:00:00+03:00",
+      "ends_at": "2025-10-27T18:00:00+03:00",
+      "room": "Global PropTech Summit",
+      "anchor": "#session-global-proptech-2025-day-2-1700-human-centric-proptech-redefining-tenant-experience-in-the"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Global PropTech Summit 2025",
+    "startDate": "2025-10-26T09:00:00+03:00",
+    "endDate": "2025-10-27T18:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Mandarin Oriental Al Faisaliah",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Al Faisaliah Tower, Riyadh, Saudi Arabia",
+        "addressLocality": "الرياض",
+        "addressRegion": "منطقة الرياض",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Global PropTech Summit"
+    },
+    "image": [
+      "https://eventme.live/assets/event-covers/ended-global-proptech-summit-2025.svg"
+    ],
+    "description": "انعقدت القمة العالمية لتقنيات العقار 2025 في الرياض يومي 26 و27 أكتوبر، ويُحفظ برنامجها الرسمي هنا بجلساته عن الذكاء الاصطناعي والمدن الذكية والتنظيم والاستثمار العقاري.",
+    "url": "https://eventme.live/events/ended-global-proptech-summit-2025.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-global-proptech-summit-2025.html",
+    "isAccessibleForFree": false,
+    "keywords": "Global PropTech Summit 2025, ورش تنظيمية وصحية, conference, فعالية, منتهية, الرياض, Mandarin Oriental Al Faisaliah, Global PropTech Summit Official, proptech, real estate, artificial intelligence, investment, ended-event, موظفون ومهنيون, تقنيون, رواد أعمال",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "تقنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رواد أعمال"
+      }
+    ],
+    "sameAs": [
+      "https://globalproptechsummit.com/",
+      "https://globalproptechsummit.com/agenda.pdf"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://globalproptechsummit.com/",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

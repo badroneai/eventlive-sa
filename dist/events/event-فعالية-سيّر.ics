@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:فعالية سيّر | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-فعالية-سيّر@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260630T210000Z
+DTEND:20260901T205900Z
+SUMMARY:فعالية سيّر
+DESCRIPTION:فعالية طبيعية تجمع المشي في المسارات، والتخايم، والتسلق، والموسيقى الحية، واليوغا، وتجارب الطهي المحلي، وأكواخاً مستقلة.
+LOCATION:منطقة عسير
+URL:https://eventme.live/events/event-فعالية-سيّر.html
+END:VEVENT
+END:VCALENDAR

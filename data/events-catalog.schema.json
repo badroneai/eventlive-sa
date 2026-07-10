@@ -87,6 +87,10 @@
             "enum": ["online", "in-person", "hybrid"]
           },
           "price_label": { "type": "string" },
+          "parking_info": { "type": "string" },
+          "accessibility_info": { "type": "string" },
+          "age_policy": { "type": "string" },
+          "duration_label": { "type": "string" },
           "language": { "type": "string" },
           "registration_deadline": { "type": "string" },
           "richness_score": { "type": "integer", "minimum": 0 },
@@ -138,7 +142,9 @@
                 "ends_at": { "type": "string", "format": "date-time" },
                 "session_type": { "type": "string" },
                 "room": { "type": "string" },
-                "speaker": { "type": "string" }
+                "speaker": { "type": "string" },
+                "track": { "type": "string" },
+                "source_url": { "type": "string" }
               }
             }
           },
@@ -153,6 +159,7 @@
             "type": "string",
             "enum": [
               "approved-source",
+              "corroborated-source",
               "organizer-confirmed",
               "needs-organizer-confirmation",
               "needs-source-evidence",

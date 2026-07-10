@@ -2,15 +2,15 @@
   "id": "ended-dhahran-expo-calendar-lamatna-expo-20260226-18d15b29",
   "title": "Lamatna Expo",
   "summary": "فعالية ضمن تقويم Dhahran Expo 2026. التاريخ المعلن: 26 Feb. – 4 March. المنظم: Events & More. Lamatna Expo ضمن معارض وتجارية في الظهران. تبدأ الفعالية ٢٦‏/٠٢‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٠٤‏/٠٣‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Dhahran Expo Calendar.",
-  "canonical_url": "https://eventme.live/events/ended-dhahran-expo-calendar-offer-home-expo-20260108-18d15b29.html",
-  "detail_url": "./events/ended-dhahran-expo-calendar-offer-home-expo-20260108-18d15b29.html",
-  "calendar_url": "./events/ended-dhahran-expo-calendar-offer-home-expo-20260108-18d15b29.ics",
+  "canonical_url": "https://eventme.live/events/ended-dhahran-expo-calendar-lamatna-expo-20260226-18d15b29.html",
+  "detail_url": "./events/ended-dhahran-expo-calendar-lamatna-expo-20260226-18d15b29.html",
+  "calendar_url": "./events/ended-dhahran-expo-calendar-lamatna-expo-20260226-18d15b29.ics",
   "source_label": "Dhahran Expo Calendar",
   "source_url": "https://dhahranexpo.com.sa",
   "evidence_url": "https://dhahranexpo.com.sa",
   "trust_tier": "official-venue",
   "trust_label": "مصدر المكان الرسمي",
-  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verified_at": "2026-07-10T06:52:19.836Z",
   "verification_method": "registered-venue-official",
   "freshness_hours": 1,
   "city": "الظهران",
@@ -28,7 +28,7 @@
   "official_sessions_count": 0,
   "schedule_depth": "attendance-window",
   "schedule_quality": "basic-window",
-  "image_url": "https://eventme.live/assets/event-covers/ended-dhahran-expo-calendar-offer-home-expo-20260108-18d15b29.svg",
+  "image_url": "https://eventme.live/assets/event-covers/ended-dhahran-expo-calendar-lamatna-expo-20260226-18d15b29.svg",
   "image_alt": "غلاف EventLive لفعالية Lamatna Expo",
   "category": "معارض وتجارية",
   "category_url": "./categories/exhibition-trade.html",
@@ -81,6 +81,11 @@
         "addressLocality": "الظهران",
         "addressRegion": "المنطقة الشرقية",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.381223,
+        "longitude": 50.212678
       }
     },
     "organizer": {
@@ -88,11 +93,11 @@
       "name": "Events & More"
     },
     "image": [
-      "https://eventme.live/assets/event-covers/ended-dhahran-expo-calendar-offer-home-expo-20260108-18d15b29.svg"
+      "https://eventme.live/assets/event-covers/ended-dhahran-expo-calendar-lamatna-expo-20260226-18d15b29.svg"
     ],
     "description": "فعالية ضمن تقويم Dhahran Expo 2026. التاريخ المعلن: 26 Feb. – 4 March. المنظم: Events & More. Lamatna Expo ضمن معارض وتجارية في الظهران. تبدأ الفعالية ٢٦‏/٠٢‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٠٤‏/٠٣‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Dhahran Expo Calendar.",
-    "url": "https://eventme.live/events/ended-dhahran-expo-calendar-offer-home-expo-20260108-18d15b29.html",
-    "mainEntityOfPage": "https://eventme.live/events/ended-dhahran-expo-calendar-offer-home-expo-20260108-18d15b29.html",
+    "url": "https://eventme.live/events/ended-dhahran-expo-calendar-lamatna-expo-20260226-18d15b29.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-dhahran-expo-calendar-lamatna-expo-20260226-18d15b29.html",
     "isAccessibleForFree": false,
     "keywords": "Lamatna Expo, معارض وتجارية, exhibition, فعالية, منتهية, الظهران, Dhahran Expo, Dhahran Expo Calendar, exhibitions, conferences, trade shows, venue, business, ended-event, موظفون ومهنيون",
     "audience": [

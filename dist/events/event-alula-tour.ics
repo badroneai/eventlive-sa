@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:AlUla Tour | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-alula-tour@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20270126T060000Z
+DTEND:20270126T150000Z
+SUMMARY:AlUla Tour
+DESCRIPTION:AlUla Tour is a major fixture on the international cycling calendar\, attracting the world’s top teams and riders for a multi-stage race through one of the most spectacular landscapes on Earth. From dramatic desert backdrops to iconic landmarks like Maraya and the Oasis\, each stage delivers high performance and unforgettable scenery in equal measure. Individual AlUla Tour stages will be announced closer to the race date\, but previous editions have seen riders traverse routes from Old Town to Harrat Uwayrid and Winter Park to Wirkah Mountain.
+LOCATION:Across AlUla
+URL:https://eventme.live/events/event-alula-tour.html
+END:VEVENT
+END:VCALENDAR

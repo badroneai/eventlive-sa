@@ -78,7 +78,11 @@ try {
         id: violation.id,
         impact: violation.impact,
         description: violation.description,
-        nodes: violation.nodes.length
+        nodes: violation.nodes.map((node) => ({
+          target: node.target,
+          html: node.html,
+          failure_summary: node.failureSummary
+        }))
       })),
       passes: result.passes.length,
       incomplete: result.incomplete.length
@@ -126,7 +130,7 @@ fs.writeFileSync(
     '## Findings',
     '',
     totalViolations
-      ? results.flatMap((item) => item.violations.map((violation) => `- ${item.page}: ${violation.id} (${violation.impact}) nodes=${violation.nodes}`)).join('\n')
+      ? results.flatMap((item) => item.violations.map((violation) => `- ${item.page}: ${violation.id} (${violation.impact}) nodes=${violation.nodes.length} targets=${violation.nodes.map((node) => node.target.join(' ')).join(', ')}`)).join('\n')
       : '- None',
     ''
   ].join('\n'),

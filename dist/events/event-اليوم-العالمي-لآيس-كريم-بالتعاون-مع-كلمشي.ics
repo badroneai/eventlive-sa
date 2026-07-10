@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:اليوم العالمي لآيس كريم بالتعاون مع كلمشي | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-اليوم-العالمي-لآيس-كريم-بالتعاون-مع-كلمشي@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260718T210000Z
+DTEND:20260719T205900Z
+SUMMARY:اليوم العالمي لآيس كريم بالتعاون مع كلمشي
+DESCRIPTION:تفعيل خاص بمناسبة اليوم العالمي لآيس كريم بالتعاون مع كلمشي، يتضمن توزيع الأيس كريم، وتجارب تحمل هوية صيف الديرة، ومقابات مع العائات، ومحتوى يوثق اللحظات.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-اليوم-العالمي-لآيس-كريم-بالتعاون-مع-كلمشي.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:ورث الفن | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-ورث-الفن@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260705T210000Z
+DTEND:20260822T205900Z
+SUMMARY:ورث الفن
+DESCRIPTION:استكشف فعالية ورث الفن، احتفاء بالموروث الثقاا السعودي من خال ممرات فنية غامرة، وورش تفاعلية، وتجارب حرفية تُعيد تقديم الأصالة بلغة الفن المعاصر.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-ورث-الفن.html
+END:VEVENT
+END:VCALENDAR

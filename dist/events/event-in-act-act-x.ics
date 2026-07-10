@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:IN ACT - ACT X | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-in-act-act-x@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20261008T210000Z
+DTEND:20261009T205900Z
+SUMMARY:IN ACT - ACT X
+DESCRIPTION:ACT X تعود إلى الرياض لتقدم تجربة تضع الموسيقى والطاقة في قلب الحدث، مع تركيز كامل على حلبة الرقص. IN ACT - ACT X ضمن رياضة وفعاليات جماهيرية في الرياض. تبدأ الفعالية ٠٩‏/١٠‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ٠٩‏/١٠‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-in-act-act-x.html
+END:VEVENT
+END:VCALENDAR

@@ -7,7 +7,7 @@ X-WR-CALNAME:ترفيه وعائلات | EventLive
 X-WR-TIMEZONE:Asia/Riyadh
 BEGIN:VEVENT
 UID:event-poppy-playtime@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20251010T130000Z
 DTEND:20261208T205900Z
 SUMMARY:Poppy Playtime
@@ -17,7 +17,7 @@ URL:https://eventme.live/events/event-poppy-playtime.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-the-groves@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20251105T130000Z
 DTEND:20260718T230000Z
 SUMMARY:The Groves
@@ -26,8 +26,88 @@ LOCATION:Riyadh
 URL:https://eventme.live/events/event-the-groves.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-سوق-الثلاثاء-الشعبي@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260430T210000Z
+DTEND:20261231T205900Z
+SUMMARY:سوق الثلاثاء الشعبي
+DESCRIPTION:يضم سوق الثلاثاء الشعبي منافذ للمنتجات المحلية، والحرف اليدوية، وأنشطة تعكس التراث المحلي. سوق الثلاثاء الشعبي ضمن ترفيه وعائلات في عسير. تبدأ الفعالية ٠١‏/٠٥‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ٣١‏/١٢‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.
+LOCATION:منطقة عسير
+URL:https://eventme.live/events/event-سوق-الثلاثاء-الشعبي.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-قصور-وقاع-ابو-نقطة-المتحمي@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260502T210000Z
+DTEND:20260823T205900Z
+SUMMARY:قصور وقاع ابو نقطة المتحمي
+DESCRIPTION:فعالية تراثية ثقافية تضم مطاعم، ومقاهي محلية وإقليمية ومأكولات تراثية، وحرفاً يدوية، وجلسات أدبية، وموسيقية في عسير. قصور وقاع ابو نقطة المتحمي ضمن ترفيه وعائلات في عسير. تبدأ الفعالية ٠٣‏/٠٥‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ٢٣‏/٠٨‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.
+LOCATION:منطقة عسير
+URL:https://eventme.live/events/event-قصور-وقاع-ابو-نقطة-المتحمي.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-صندوق-أسامة-من-مخرج-ثمانية@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260504T210000Z
+DTEND:20261231T205900Z
+SUMMARY:صندوق أسامة من مخرج ثمانية
+DESCRIPTION:ليلة صندوق أسامة تجربة تفاعلية كوميدية، يشارك فيها الجمهور أفكارهم بشكل مجهول، ليحوّلها أسامة بازيد إلى نكت مرتجلة ولحظات ممتعة.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-صندوق-أسامة-من-مخرج-ثمانية.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-قصور-العسابلة@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260514T210000Z
+DTEND:20260823T205900Z
+SUMMARY:قصور العسابلة
+DESCRIPTION:قصور العسابلة وجهة تراثية تضم عروضاً شعبية، وسينما تراثية، وعروض خيل، ومناطق تسوق، وتحفاً أثرية، ومسابقات تفاعلية. قصور العسابلة ضمن ترفيه وعائلات في عسير. تبدأ الفعالية ١٥‏/٠٥‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ٢٣‏/٠٨‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.
+LOCATION:منطقة عسير
+URL:https://eventme.live/events/event-قصور-العسابلة.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-مهرجان-صوت-أبها-saf@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260614T210000Z
+DTEND:20260915T205900Z
+SUMMARY:مهرجان صوت أبها SAF
+DESCRIPTION:مهرجان مفتوح متعدد الأنماط في أبها يجمع بين التسوق، والمطاعم العالمية، والموسيقى الحية، والتجارب التفاعلية الغامرة. مهرجان صوت أبها SAF ضمن ترفيه وعائلات في عسير. تبدأ الفعالية ١٥‏/٠٦‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ١٥‏/٠٩‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.
+LOCATION:منطقة عسير
+URL:https://eventme.live/events/event-مهرجان-صوت-أبها-saf.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-مهرجان-أبها-للتسوق@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260623T210000Z
+DTEND:20260828T205900Z
+SUMMARY:مهرجان أبها للتسوق
+DESCRIPTION:فعالية تجمع التسوق والترفيه، وتضم صالات تسوق لمنتجات محلية، وخليجية، ودولية، ومدينة ماه متكاملة، وفعاليات ترفيهية متنوعة لمختلف الأعمار.
+LOCATION:منطقة عسير
+URL:https://eventme.live/events/event-مهرجان-أبها-للتسوق.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-الحفلات-الغنائية@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260624T210000Z
+DTEND:20260831T205900Z
+SUMMARY:الحفلات الغنائية
+DESCRIPTION:سلسلة حفلات موسيقية تجمع فنانين من الخليج والعالم العربي في أمسيات تمزج بين الطرب الأصيل، واايقاعات الحديثة في مسرح طال مداح.
+LOCATION:منطقة عسير
+URL:https://eventme.live/events/event-الحفلات-الغنائية.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-أسبوع-العطور@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260624T210000Z
+DTEND:20260803T205900Z
+SUMMARY:أسبوع العطور
+DESCRIPTION:فعالية تجمع أبرز العلامات التجارية وخبراء العطور لتقديم تجربة فاخرة لعشاق العطور الشرقية والعالمية، تشمل إطاقات حصرية، وتجارب تفاعلية، وفرص تسوق مباشرة للزوار.
+LOCATION:منطقة عسير
+URL:https://eventme.live/events/event-أسبوع-العطور.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-summer-camp-at-the-national-museum-summer-wonders@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260625T113000Z
 DTEND:20260822T173000Z
 SUMMARY:Summer Camp at the National Museum: Summer Wonders
@@ -37,7 +117,7 @@ URL:https://eventme.live/events/event-summer-camp-at-the-national-museum-summer-
 END:VEVENT
 BEGIN:VEVENT
 UID:event-kashtah@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260627T130000Z
 DTEND:20260830T210000Z
 SUMMARY:Kashtah
@@ -46,8 +126,28 @@ LOCATION:Aseer
 URL:https://eventme.live/events/event-kashtah.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-قرية-الأطاولة-التراثية@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260630T210000Z
+DTEND:20260831T205900Z
+SUMMARY:قرية الأطاولة التراثية
+DESCRIPTION:تضم قرية الأطاولة التراثية في الباحة سوق ربوع قريش التاريخي، وحصونًا عريقة، وعمارة جبلية، مما يجعلها وجهة سياحية مميزة. قرية الأطاولة التراثية ضمن ترفيه وعائلات في الباحة. تبدأ الفعالية ٠١‏/٠٧‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ٣١‏/٠٨‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.
+LOCATION:الباحة
+URL:https://eventme.live/events/event-قرية-الأطاولة-التراثية.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-taste-of-the-world@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260705T210000Z
+DTEND:20260822T205900Z
+SUMMARY:Taste of the World
+DESCRIPTION:استمتع بمهرجان ،Taste of the World تجربة طعام عالمية تجمع نكهات من مختلف دول العالم في مكان واحد، مع أكشاك طعام وطهاة عالماين وتجارب تذوّق حيّة.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-taste-of-the-world.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-مهرجان-صيف-نجران-2026-صيفنا-هايل@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260706T210000Z
 DTEND:20260805T205900Z
 SUMMARY:مهرجان صيف نجران 2026 «صيفنا هايل»
@@ -56,8 +156,18 @@ LOCATION:11 موقعًا في مدينة نجران
 URL:https://eventme.live/events/event-مهرجان-صيف-نجران-2026-صيفنا-هايل.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-مهرجان-لحن-المملكة@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260708T210000Z
+DTEND:20260710T205900Z
+SUMMARY:مهرجان لحن المملكة
+DESCRIPTION:استمتع بمهرجان لحن المملكة، فعالية موسيقية نوعية تكرّم رموز التلحين السعودي والخليجي من خال حفلات غنائية تُقدّم أعمالهم الخالدة بأسلوب معاصر كل ليلة.
+LOCATION:جدة
+URL:https://eventme.live/events/event-مهرجان-لحن-المملكة.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-unstable@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260709T210000Z
 DTEND:20260710T210000Z
 SUMMARY:Unstable
@@ -66,8 +176,18 @@ LOCATION:Riyadh
 URL:https://eventme.live/events/event-unstable.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-عمر-الجمل-حفلة-ستاند-أب-كوميدي@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260709T210000Z
+DTEND:20260710T205900Z
+SUMMARY:عمر الجمل - حفلة ستاند أب كوميدي
+DESCRIPTION:يقدّم "كام فاضي" عرض عمر الجمل، ستاند أب تفاعلي يصبح فيه الجمهور جزءاً من العرض. عمر الجمل - حفلة ستاند أب كوميدي ضمن ترفيه وعائلات في الرياض. تبدأ الفعالية ١٠‏/٠٧‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ١٠‏/٠٧‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-عمر-الجمل-حفلة-ستاند-أب-كوميدي.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-beast-house@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260710T180000Z
 DTEND:20260711T000000Z
 SUMMARY:Beast House
@@ -77,7 +197,7 @@ URL:https://eventme.live/events/event-beast-house.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-mishkat-summer-camp@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260712T060000Z
 DTEND:20260806T100000Z
 SUMMARY:Mishkat Summer Camp
@@ -86,8 +206,18 @@ LOCATION:Mishkat Interactive Center\, King Abdullah City for Atomic and Renewabl
 URL:https://eventme.live/events/event-mishkat-summer-camp.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-summer-fruits-season-in-alula@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260716T060000Z
+DTEND:20260722T150000Z
+SUMMARY:Summer Fruits Season in AlUla
+DESCRIPTION:Celebrate the richness of AlUla's summer harvest at the Al Manshiyah Farmers Market. This vibrant event features a range of locally grown fruit\, including delicious mangoes\, grapes and figs - highlighting AlUla's deep agricultural roots and cultural heritage.
+LOCATION:AlManshiyah Farmers Market
+URL:https://eventme.live/events/event-summer-fruits-season-in-alula.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-wrth-summer-art-craft-program@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260716T123000Z
 DTEND:20260718T193000Z
 SUMMARY:Wrth Summer Art & Craft Program
@@ -96,8 +226,18 @@ LOCATION:Riyadh Park Mall\, Riyadh
 URL:https://eventme.live/events/event-wrth-summer-art-craft-program.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-أوركسترا-harry-potter@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260727T210000Z
+DTEND:20260801T205900Z
+SUMMARY:أوركسترا Harry Potter
+DESCRIPTION:استمتع بأوركسترا ،Harry Potter عرض موسيقي حي يقدم الموسيقى التصويرية لسلسلة الأفام الشهيرة لعشاق السلسلة ومحبي الموسيقى السينمائية.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-أوركسترا-harry-potter.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-international-falcon-breeders-auction@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260805T130000Z
 DTEND:20260825T200000Z
 SUMMARY:International Falcon Breeders Auction
@@ -106,18 +246,18 @@ LOCATION:Riyadh
 URL:https://eventme.live/events/event-international-falcon-breeders-auction.html
 END:VEVENT
 BEGIN:VEVENT
-UID:event-leap-2026@eventme.live
-DTSTAMP:20260710T035904Z
-DTSTART:20260831T060000Z
-DTEND:20260903T140000Z
-SUMMARY:LEAP 2026
-DESCRIPTION:LEAP 2026 marks the fifth edition of Saudi’s flagship global technology and innovation event\, cementing its position as one of the world’s most influential platforms for digital transformation. المصدر الرسمي: Visit Saudi.
-LOCATION:Riyadh
-URL:https://eventme.live/events/event-leap-2026.html
+UID:event-أوركسترا-game-of-thrones@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260810T210000Z
+DTEND:20260815T205900Z
+SUMMARY:أوركسترا Game of Thrones
+DESCRIPTION:استمتع بأوركسترا ،Game of Thrones عرض موسيقي حي يستحضر الموسيقى التصويرية للمسلسل، بأفضل مقطوعاته عبر جميع المواسم في أجواء كاسيكية سينمائية.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-أوركسترا-game-of-thrones.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-fibo-arabia-2026@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260908T100000Z
 DTEND:20260910T190000Z
 SUMMARY:FIBO Arabia 2026
@@ -127,7 +267,7 @@ URL:https://eventme.live/events/event-fibo-arabia-2026.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-national-day@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260923T060000Z
 DTEND:20260923T150000Z
 SUMMARY:Saudi National Day
@@ -137,7 +277,7 @@ URL:https://eventme.live/events/event-saudi-national-day.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-international-falcons-hunting-exhibition@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261001T110000Z
 DTEND:20261010T190000Z
 SUMMARY:Saudi International Falcons & Hunting Exhibition
@@ -147,7 +287,7 @@ URL:https://eventme.live/events/event-saudi-international-falcons-hunting-exhibi
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-falcons-club-auction@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261001T160000Z
 DTEND:20261130T200000Z
 SUMMARY:Saudi Falcons Club Auction
@@ -157,7 +297,7 @@ URL:https://eventme.live/events/event-saudi-falcons-club-auction.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-al-milwah-falcon-race@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261004T160000Z
 DTEND:20261008T210000Z
 SUMMARY:Al Milwah Falcon Race
@@ -166,8 +306,18 @@ LOCATION:Riyadh
 URL:https://eventme.live/events/event-al-milwah-falcon-race.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-alula-wellness-festival@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20261023T060000Z
+DTEND:20261031T150000Z
+SUMMARY:AlUla Wellness Festival
+DESCRIPTION:Reconnect and re-energise where body and mind are strengthened and restored. AlUla Wellness Festival ضمن ترفيه وعائلات في العلا. تبدأ الفعالية ٢٣‏/١٠‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٣١‏/١٠‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Experience AlUla Events.
+LOCATION:AlUla
+URL:https://eventme.live/events/event-alula-wellness-festival.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-a-thousand-and-one@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261028T210000Z
 DTEND:20261029T210000Z
 SUMMARY:A Thousand and One
@@ -176,8 +326,28 @@ LOCATION:Riyadh
 URL:https://eventme.live/events/event-a-thousand-and-one.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-alula-skies-festival@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20261106T060000Z
+DTEND:20261115T150000Z
+SUMMARY:AlUla Skies Festival
+DESCRIPTION:Soar\, stargaze and celebrate AlUla’s skies - from below and above. AlUla Skies Festival ضمن ترفيه وعائلات في العلا. تبدأ الفعالية ٠٦‏/١١‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ١٥‏/١١‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Experience AlUla Events.
+LOCATION:AlUla
+URL:https://eventme.live/events/event-alula-skies-festival.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-in-act-anniversary-act-xi@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20261112T210000Z
+DTEND:20261113T205900Z
+SUMMARY:IN ACT ANNIVERSARY - ACT XI
+DESCRIPTION:ACT XI تمثل فصلاً جديدً في في رحلة ،IN ACT احتفالاً بعامين من الموسيقى والحركة والناس الذين كانوا جزءًا منها. IN ACT ANNIVERSARY - ACT XI ضمن ترفيه وعائلات في جدة. تبدأ الفعالية ١٣‏/١١‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ١٣‏/١١‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.
+LOCATION:جدة
+URL:https://eventme.live/events/event-in-act-anniversary-act-xi.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-xp-music-futures-2026@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261125T210000Z
 DTEND:20261127T210000Z
 SUMMARY:XP Music Futures 2026
@@ -186,8 +356,18 @@ LOCATION:Riyadh
 URL:https://eventme.live/events/event-xp-music-futures-2026.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-ancient-kingdoms-festival@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20261126T060000Z
+DTEND:20261212T150000Z
+SUMMARY:Ancient Kingdoms Festival
+DESCRIPTION:Step into the legacy of ancient civilisations\, where stories of the past come to life. Ancient Kingdoms Festival ضمن ترفيه وعائلات في العلا. تبدأ الفعالية ٢٦‏/١١‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ١٢‏/١٢‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Experience AlUla Events.
+LOCATION:AlUla
+URL:https://eventme.live/events/event-ancient-kingdoms-festival.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-soundstorm-26@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261202T210000Z
 DTEND:20261203T210000Z
 SUMMARY:SOUNDSTORM 26
@@ -196,8 +376,28 @@ LOCATION:Riyadh
 URL:https://eventme.live/events/event-soundstorm-26.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-winter-at-tantora@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20261217T060000Z
+DTEND:20270109T150000Z
+SUMMARY:Winter at Tantora
+DESCRIPTION:Experience a season of culture and celebration\, inspired by AlUla’s rich heritage. Winter at Tantora ضمن ترفيه وعائلات في العلا. تبدأ الفعالية ١٧‏/١٢‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٠٩‏/٠١‏/٢٠٢٧، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Experience AlUla Events.
+LOCATION:AlUla
+URL:https://eventme.live/events/event-winter-at-tantora.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-alula-arts-festival@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20270115T060000Z
+DTEND:20270216T150000Z
+SUMMARY:AlUla Arts Festival
+DESCRIPTION:Experience creativity in motion\, through art that inspires and connects. AlUla Arts Festival ضمن ترفيه وعائلات في العلا. تبدأ الفعالية ١٥‏/٠١‏/٢٠٢٧، ٩:٠٠ ص وتنتهي ١٦‏/٠٢‏/٢٠٢٧، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Experience AlUla Events.
+LOCATION:AlUla
+URL:https://eventme.live/events/event-alula-arts-festival.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-founding-day@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20270222T060000Z
 DTEND:20270222T150000Z
 SUMMARY:Founding Day
@@ -207,7 +407,7 @@ URL:https://eventme.live/events/event-founding-day.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-eid-al-fitr@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20270330T060000Z
 DTEND:20270330T150000Z
 SUMMARY:Eid Al-Fitr
@@ -217,7 +417,7 @@ URL:https://eventme.live/events/event-eid-al-fitr.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-eid-al-adha@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20270606T060000Z
 DTEND:20270610T150000Z
 SUMMARY:Eid Al-Adha

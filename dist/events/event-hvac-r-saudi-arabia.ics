@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:HVAC R Saudi Arabia | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-hvac-r-saudi-arabia@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260830T060000Z
+DTEND:20260902T150000Z
+SUMMARY:HVAC R Saudi Arabia
+DESCRIPTION:Now in its ninth year\, HVAC R Expo Saudi Arabia is the ultimate platform for advanced HVAC R solutions in the Kingdom. From innovative cooli
+LOCATION:Riyadh Front Exhibition & Conference Center\, Saudi Arabia \, Riyadh
+URL:https://eventme.live/events/event-hvac-r-saudi-arabia.html
+END:VEVENT
+END:VCALENDAR

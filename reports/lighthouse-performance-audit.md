@@ -1,13 +1,13 @@
 # EventLive Lighthouse Performance Audit
 
-- Generated at: 2026-07-08T01:37:42.712Z
+- Generated at: 2026-07-10T07:56:02.735Z
 - Status: PASS
-- Minimum performance: 94
+- Minimum performance: 100
 - Minimum accessibility: 98
 
 | Page | Performance | Accessibility | LCP | TBT | CLS |
 | --- | ---: | ---: | --- | --- | --- |
-| /index.html | 100 | 98 | 0.4 s | 0 ms | 0.043 |
-| /events.html | 100 | 100 | 0.4 s | 0 ms | 0 |
-| /screen.html | 94 | 100 | 0.4 s | 0 ms | 0.152 |
-| /events/demo-event.html | 99 | 100 | 0.3 s | 0 ms | 0.061 |
+| /index.html | 100 | 98 | 0.6 s | 0 ms | 0.033 |
+| /events.html | 100 | 100 | 0.2 s | 0 ms | 0.025 |
+| /screen.html | 100 | 100 | 0.2 s | 0 ms | 0.049 |
+| /events/event-beast-house.html | 100 | 100 | 0.2 s | 0 ms | 0.036 |

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:صيف غابة رغدان في الباحة 2026 | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-صيف-غابة-رغدان-في-الباحة-2026@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260630T210000Z
+DTEND:20260831T205900Z
+SUMMARY:صيف غابة رغدان في الباحة 2026
+DESCRIPTION:تجربة صيفية متكاملة تضم باقة متنوعة من الفعاليات الترفيهية والثقافية والعائلية، تقام في غابة رغدان، وتقدم مزيجًا فريدً في من الطبيعة الجبلية واانشطة التفاعلية وتجارب الطعام.
+LOCATION:الباحة
+URL:https://eventme.live/events/event-صيف-غابة-رغدان-في-الباحة-2026.html
+END:VEVENT
+END:VCALENDAR

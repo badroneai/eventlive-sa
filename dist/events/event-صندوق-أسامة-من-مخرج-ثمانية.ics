@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:صندوق أسامة من مخرج ثمانية | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-صندوق-أسامة-من-مخرج-ثمانية@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260504T210000Z
+DTEND:20261231T205900Z
+SUMMARY:صندوق أسامة من مخرج ثمانية
+DESCRIPTION:ليلة صندوق أسامة تجربة تفاعلية كوميدية، يشارك فيها الجمهور أفكارهم بشكل مجهول، ليحوّلها أسامة بازيد إلى نكت مرتجلة ولحظات ممتعة.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-صندوق-أسامة-من-مخرج-ثمانية.html
+END:VEVENT
+END:VCALENDAR

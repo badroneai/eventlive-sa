@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-10T03:59:04.097Z",
+  "generated_at": "2026-07-10T08:00:11.157Z",
   "platform": "EventLive",
   "scope": "this-month",
   "starts_at": "2026-07-01T00:00:00.000Z",
   "ends_before": "2026-08-01T00:00:00.000Z",
-  "count": 70,
+  "count": 112,
   "events": [
     {
       "id": "event-skill-development-initiative",
@@ -197,6 +197,16 @@
       "live_schedule_ready": false
     },
     {
+      "id": "event-سكة-الأطعمة",
+      "title": "سكة الأطعمة",
+      "url": "./events/event-سكة-الأطعمة.html",
+      "city": "الرياض",
+      "starts_at": "2026-03-04T00:00:00+03:00",
+      "ends_at": "2026-08-15T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
       "id": "event-misk-local-traineeship-program",
       "title": "Misk Local Traineeship Program",
       "url": "./events/event-misk-local-traineeship-program.html",
@@ -207,12 +217,142 @@
       "live_schedule_ready": false
     },
     {
+      "id": "event-سوق-الثلاثاء-الشعبي",
+      "title": "سوق الثلاثاء الشعبي",
+      "url": "./events/event-سوق-الثلاثاء-الشعبي.html",
+      "city": "عسير",
+      "starts_at": "2026-05-01T00:00:00+03:00",
+      "ends_at": "2026-12-31T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
+      "title": "قصور وقاع ابو نقطة المتحمي",
+      "url": "./events/event-قصور-وقاع-ابو-نقطة-المتحمي.html",
+      "city": "عسير",
+      "starts_at": "2026-05-03T00:00:00+03:00",
+      "ends_at": "2026-08-23T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-صندوق-أسامة-من-مخرج-ثمانية",
+      "title": "صندوق أسامة من مخرج ثمانية",
+      "url": "./events/event-صندوق-أسامة-من-مخرج-ثمانية.html",
+      "city": "الرياض",
+      "starts_at": "2026-05-05T00:00:00+03:00",
+      "ends_at": "2026-12-31T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
       "id": "event-solo-art-exhibition-series",
       "title": "Solo Art Exhibition Series",
       "url": "./events/event-solo-art-exhibition-series.html",
       "city": "الرياض",
       "starts_at": "2026-05-06T16:00:00+03:00",
       "ends_at": "2026-08-01T22:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-قصور-العسابلة",
+      "title": "قصور العسابلة",
+      "url": "./events/event-قصور-العسابلة.html",
+      "city": "عسير",
+      "starts_at": "2026-05-15T00:00:00+03:00",
+      "ends_at": "2026-08-23T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-قرية-آل-ينفع",
+      "title": "قرية آل ينفع",
+      "url": "./events/event-قرية-آل-ينفع.html",
+      "city": "عسير",
+      "starts_at": "2026-05-15T00:00:00+03:00",
+      "ends_at": "2026-08-23T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-مزرعة-الليوان",
+      "title": "مزرعة الليوان",
+      "url": "./events/event-مزرعة-الليوان.html",
+      "city": "عسير",
+      "starts_at": "2026-05-18T00:00:00+03:00",
+      "ends_at": "2026-08-31T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-مزرعة-ركايب",
+      "title": "مزرعة ركايب",
+      "url": "./events/event-مزرعة-ركايب.html",
+      "city": "عسير",
+      "starts_at": "2026-06-01T00:00:00+03:00",
+      "ends_at": "2026-09-30T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-برندة",
+      "title": "برندة",
+      "url": "./events/event-برندة.html",
+      "city": "عسير",
+      "starts_at": "2026-06-01T00:00:00+03:00",
+      "ends_at": "2026-09-01T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-سكاي-فيلج",
+      "title": "سكاي فيلج",
+      "url": "./events/event-سكاي-فيلج.html",
+      "city": "عسير",
+      "starts_at": "2026-06-02T00:00:00+03:00",
+      "ends_at": "2026-08-30T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-معرض-قلب-البحر",
+      "title": "معرض قلب البحر",
+      "url": "./events/event-معرض-قلب-البحر.html",
+      "city": "جدة",
+      "starts_at": "2026-06-04T00:00:00+03:00",
+      "ends_at": "2026-12-02T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-منطقة-مشجعي-كأس-العالم-2026",
+      "title": "منطقة مشجعي كأس العالم 2026",
+      "url": "./events/event-منطقة-مشجعي-كأس-العالم-2026.html",
+      "city": "الباحة",
+      "starts_at": "2026-06-10T00:00:00+03:00",
+      "ends_at": "2026-08-23T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-جدة-بروميناد-fan-zone",
+      "title": "جدة بروميناد Fan Zone",
+      "url": "./events/event-جدة-بروميناد-fan-zone.html",
+      "city": "جدة",
+      "starts_at": "2026-06-11T00:00:00+03:00",
+      "ends_at": "2026-07-19T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-عيشوا-المونديال-مع-بنش-مارك-عبادي-الجوهر-أرينا",
+      "title": "عيشوا المونديال مع بنش مارك - عبادي الجوهر أرينا",
+      "url": "./events/event-عيشوا-المونديال-مع-بنش-مارك-عبادي-الجوهر-أرينا.html",
+      "city": "جدة",
+      "starts_at": "2026-06-11T00:00:00+03:00",
+      "ends_at": "2026-07-19T23:59:00+03:00",
       "status": "ongoing",
       "live_schedule_ready": false
     },
@@ -297,6 +437,76 @@
       "live_schedule_ready": false
     },
     {
+      "id": "event-مهرجان-صوت-أبها-saf",
+      "title": "مهرجان صوت أبها SAF",
+      "url": "./events/event-مهرجان-صوت-أبها-saf.html",
+      "city": "عسير",
+      "starts_at": "2026-06-15T00:00:00+03:00",
+      "ends_at": "2026-09-15T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-بوابة-المونديال-كأس-العالم-في-جدة",
+      "title": "بوابة المونديال – كأس العالم في جدة",
+      "url": "./events/event-بوابة-المونديال-كأس-العالم-في-جدة.html",
+      "city": "جدة",
+      "starts_at": "2026-06-15T00:00:00+03:00",
+      "ends_at": "2026-07-18T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-معرض-في-تتبّع-ذكريات-غامرة",
+      "title": "معرض في تتبّع ذكريات غامرة",
+      "url": "./events/event-معرض-في-تتبّع-ذكريات-غامرة.html",
+      "city": "جدة",
+      "starts_at": "2026-06-18T00:00:00+03:00",
+      "ends_at": "2026-12-07T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-مهرجان-أبها-للتسوق",
+      "title": "مهرجان أبها للتسوق",
+      "url": "./events/event-مهرجان-أبها-للتسوق.html",
+      "city": "عسير",
+      "starts_at": "2026-06-24T00:00:00+03:00",
+      "ends_at": "2026-08-28T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-مزرعة-أعناب",
+      "title": "مزرعة أعناب",
+      "url": "./events/event-مزرعة-أعناب.html",
+      "city": "عسير",
+      "starts_at": "2026-06-24T00:00:00+03:00",
+      "ends_at": "2026-09-01T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-الحفلات-الغنائية",
+      "title": "الحفلات الغنائية",
+      "url": "./events/event-الحفلات-الغنائية.html",
+      "city": "عسير",
+      "starts_at": "2026-06-25T00:00:00+03:00",
+      "ends_at": "2026-08-31T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-أسبوع-العطور",
+      "title": "أسبوع العطور",
+      "url": "./events/event-أسبوع-العطور.html",
+      "city": "عسير",
+      "starts_at": "2026-06-25T00:00:00+03:00",
+      "ends_at": "2026-08-03T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
       "id": "event-aseer-season",
       "title": "Aseer Season",
       "url": "./events/event-aseer-season.html",
@@ -333,6 +543,66 @@
       "city": "الرياض",
       "starts_at": "2026-06-28T10:00:00+03:00",
       "ends_at": "2026-07-16T17:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-بيوني-الشرف",
+      "title": "بيوني الشرف",
+      "url": "./events/event-بيوني-الشرف.html",
+      "city": "عسير",
+      "starts_at": "2026-07-01T00:00:00+03:00",
+      "ends_at": "2026-10-01T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-فعالية-سيّر",
+      "title": "فعالية سيّر",
+      "url": "./events/event-فعالية-سيّر.html",
+      "city": "عسير",
+      "starts_at": "2026-07-01T00:00:00+03:00",
+      "ends_at": "2026-09-01T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-معرض-الصيف-للفنون",
+      "title": "معرض الصيف للفنون",
+      "url": "./events/event-معرض-الصيف-للفنون.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-01T00:00:00+03:00",
+      "ends_at": "2026-09-01T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-قرية-الموسى-التراثية",
+      "title": "قرية الموسى التراثية",
+      "url": "./events/event-قرية-الموسى-التراثية.html",
+      "city": "الباحة",
+      "starts_at": "2026-07-01T00:00:00+03:00",
+      "ends_at": "2026-08-31T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-صيف-غابة-رغدان-في-الباحة-2026",
+      "title": "صيف غابة رغدان في الباحة 2026",
+      "url": "./events/event-صيف-غابة-رغدان-في-الباحة-2026.html",
+      "city": "الباحة",
+      "starts_at": "2026-07-01T00:00:00+03:00",
+      "ends_at": "2026-08-31T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-قرية-الأطاولة-التراثية",
+      "title": "قرية الأطاولة التراثية",
+      "url": "./events/event-قرية-الأطاولة-التراثية.html",
+      "city": "الباحة",
+      "starts_at": "2026-07-01T00:00:00+03:00",
+      "ends_at": "2026-08-31T23:59:00+03:00",
       "status": "ongoing",
       "live_schedule_ready": false
     },
@@ -387,6 +657,56 @@
       "live_schedule_ready": false
     },
     {
+      "id": "event-ورث-الفن",
+      "title": "ورث الفن",
+      "url": "./events/event-ورث-الفن.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-06T00:00:00+03:00",
+      "ends_at": "2026-08-22T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-taste-of-the-world",
+      "title": "Taste of the World",
+      "url": "./events/event-taste-of-the-world.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-06T00:00:00+03:00",
+      "ends_at": "2026-08-22T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-مهرجان-المأكولات-الشعبية",
+      "title": "مهرجان المأكولات الشعبية",
+      "url": "./events/event-مهرجان-المأكولات-الشعبية.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-06T00:00:00+03:00",
+      "ends_at": "2026-08-22T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-فعالية-رمي-السهام",
+      "title": "فعالية رمي السهام",
+      "url": "./events/event-فعالية-رمي-السهام.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-06T00:00:00+03:00",
+      "ends_at": "2026-08-22T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-عروض-الفنون-الأدائية-التقليدية",
+      "title": "عروض الفنون الأدائية التقليدية",
+      "url": "./events/event-عروض-الفنون-الأدائية-التقليدية.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-06T00:00:00+03:00",
+      "ends_at": "2026-08-22T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
       "id": "event-esports-world-cup",
       "title": "Esports World Cup",
       "url": "./events/event-esports-world-cup.html",
@@ -417,12 +737,42 @@
       "live_schedule_ready": false
     },
     {
+      "id": "event-البرنامج-الصيفي-بجامعة-الجوف-2026",
+      "title": "البرنامج الصيفي بجامعة الجوف 2026",
+      "url": "./events/event-البرنامج-الصيفي-بجامعة-الجوف-2026.html",
+      "city": "سكاكا",
+      "starts_at": "2026-07-08T00:00:00+03:00",
+      "ends_at": "2026-08-31T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-مهرجان-لحن-المملكة",
+      "title": "مهرجان لحن المملكة",
+      "url": "./events/event-مهرجان-لحن-المملكة.html",
+      "city": "جدة",
+      "starts_at": "2026-07-09T00:00:00+03:00",
+      "ends_at": "2026-07-10T23:59:00+03:00",
+      "status": "live",
+      "live_schedule_ready": false
+    },
+    {
       "id": "event-unstable",
       "title": "Unstable",
       "url": "./events/event-unstable.html",
       "city": "الرياض",
       "starts_at": "2026-07-10T00:00:00+03:00",
       "ends_at": "2026-07-11T00:00:00+03:00",
+      "status": "live",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-عمر-الجمل-حفلة-ستاند-أب-كوميدي",
+      "title": "عمر الجمل - حفلة ستاند أب كوميدي",
+      "url": "./events/event-عمر-الجمل-حفلة-ستاند-أب-كوميدي.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-10T00:00:00+03:00",
+      "ends_at": "2026-07-10T23:59:00+03:00",
       "status": "live",
       "live_schedule_ready": false
     },
@@ -527,6 +877,16 @@
       "live_schedule_ready": true
     },
     {
+      "id": "event-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم",
+      "title": "انطلاق النادي الصيفي التاسع لجامعة القصيم",
+      "url": "./events/event-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم.html",
+      "city": "بريدة",
+      "starts_at": "2026-07-12T16:30:00+03:00",
+      "ends_at": "2026-07-12T18:30:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
       "id": "event-saif-summer-program",
       "title": "SAIF Summer Program",
       "url": "./events/event-saif-summer-program.html",
@@ -597,12 +957,42 @@
       "live_schedule_ready": true
     },
     {
+      "id": "event-بطولة-المملكة-للبلوت",
+      "title": "بطولة المملكة للبلوت",
+      "url": "./events/event-بطولة-المملكة-للبلوت.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-16T00:00:00+03:00",
+      "ends_at": "2026-07-19T23:59:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-summer-fruits-season-in-alula",
+      "title": "Summer Fruits Season in AlUla",
+      "url": "./events/event-summer-fruits-season-in-alula.html",
+      "city": "العلا",
+      "starts_at": "2026-07-16T09:00:00+03:00",
+      "ends_at": "2026-07-22T18:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
       "id": "event-wrth-summer-art-craft-program",
       "title": "Wrth Summer Art & Craft Program",
       "url": "./events/event-wrth-summer-art-craft-program.html",
       "city": "الرياض",
       "starts_at": "2026-07-16T15:30:00+03:00",
       "ends_at": "2026-07-18T22:30:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-اليوم-العالمي-لآيس-كريم-بالتعاون-مع-كلمشي",
+      "title": "اليوم العالمي لآيس كريم بالتعاون مع كلمشي",
+      "url": "./events/event-اليوم-العالمي-لآيس-كريم-بالتعاون-مع-كلمشي.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-19T00:00:00+03:00",
+      "ends_at": "2026-07-19T23:59:00+03:00",
       "status": "upcoming",
       "live_schedule_ready": false
     },
@@ -657,6 +1047,26 @@
       "live_schedule_ready": false
     },
     {
+      "id": "event-الأسبوع-الصيني",
+      "title": "الأسبوع الصيني",
+      "url": "./events/event-الأسبوع-الصيني.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-23T00:00:00+03:00",
+      "ends_at": "2026-07-29T23:59:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-the-comeback",
+      "title": "The Comeback",
+      "url": "./events/event-the-comeback.html",
+      "city": "جدة",
+      "starts_at": "2026-07-25T00:00:00+03:00",
+      "ends_at": "2026-07-25T23:59:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
       "id": "event-summer-splash-running-event",
       "title": "Summer Splash Running event",
       "url": "./events/event-summer-splash-running-event.html",
@@ -703,6 +1113,16 @@
       "city": "السعودية",
       "starts_at": "2026-07-27T09:00:00+03:00",
       "ends_at": "2026-07-29T18:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-أوركسترا-harry-potter",
+      "title": "أوركسترا Harry Potter",
+      "url": "./events/event-أوركسترا-harry-potter.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-28T00:00:00+03:00",
+      "ends_at": "2026-08-01T23:59:00+03:00",
       "status": "upcoming",
       "live_schedule_ready": false
     }

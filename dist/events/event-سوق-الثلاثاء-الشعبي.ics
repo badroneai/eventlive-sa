@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:سوق الثلاثاء الشعبي | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-سوق-الثلاثاء-الشعبي@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260430T210000Z
+DTEND:20261231T205900Z
+SUMMARY:سوق الثلاثاء الشعبي
+DESCRIPTION:يضم سوق الثلاثاء الشعبي منافذ للمنتجات المحلية، والحرف اليدوية، وأنشطة تعكس التراث المحلي. سوق الثلاثاء الشعبي ضمن ترفيه وعائلات في عسير. تبدأ الفعالية ٠١‏/٠٥‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ٣١‏/١٢‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.
+LOCATION:منطقة عسير
+URL:https://eventme.live/events/event-سوق-الثلاثاء-الشعبي.html
+END:VEVENT
+END:VCALENDAR

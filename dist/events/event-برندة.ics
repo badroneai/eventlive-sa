@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:برندة | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-برندة@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260531T210000Z
+DTEND:20260901T205900Z
+SUMMARY:برندة
+DESCRIPTION:منطقة سياحية تجمع الطبيعة الخابة، وااجواء الترفيهية بمطلا على أبها، وساحة فنونٍ بطابعٍ عسيري، ومقاهي ومطاعم في أجواءٍ راقية.
+LOCATION:منطقة عسير
+URL:https://eventme.live/events/event-برندة.html
+END:VEVENT
+END:VCALENDAR

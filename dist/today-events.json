@@ -1,18 +1,38 @@
 {
-  "generated_at": "2026-07-10T03:59:04.097Z",
+  "generated_at": "2026-07-10T08:00:11.157Z",
   "platform": "EventLive",
   "scope": "today-events",
   "window_hours": 72,
-  "count": 14,
+  "count": 20,
   "events": [
     {
-      "id": "event-registration-now-open-for-children-at-the-childhood-studies-center-for-t",
-      "title": "Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH",
-      "url": "./events/event-registration-now-open-for-children-at-the-childhood-studies-center-for-t.html",
-      "city": "جدة",
-      "starts_at": "2026-07-07T09:00:00+03:00",
-      "ends_at": "2026-07-29T18:00:00+03:00",
+      "id": "event-البرنامج-الصيفي-بجامعة-الجوف-2026",
+      "title": "البرنامج الصيفي بجامعة الجوف 2026",
+      "url": "./events/event-البرنامج-الصيفي-بجامعة-الجوف-2026.html",
+      "city": "سكاكا",
+      "starts_at": "2026-07-08T00:00:00+03:00",
+      "ends_at": "2026-08-31T23:59:00+03:00",
       "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-مهرجان-لحن-المملكة",
+      "title": "مهرجان لحن المملكة",
+      "url": "./events/event-مهرجان-لحن-المملكة.html",
+      "city": "جدة",
+      "starts_at": "2026-07-09T00:00:00+03:00",
+      "ends_at": "2026-07-10T23:59:00+03:00",
+      "status": "live",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-عمر-الجمل-حفلة-ستاند-أب-كوميدي",
+      "title": "عمر الجمل - حفلة ستاند أب كوميدي",
+      "url": "./events/event-عمر-الجمل-حفلة-ستاند-أب-كوميدي.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-10T00:00:00+03:00",
+      "ends_at": "2026-07-10T23:59:00+03:00",
+      "status": "live",
       "live_schedule_ready": false
     },
     {
@@ -126,6 +146,16 @@
       "live_schedule_ready": true
     },
     {
+      "id": "event-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم",
+      "title": "انطلاق النادي الصيفي التاسع لجامعة القصيم",
+      "url": "./events/event-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم.html",
+      "city": "بريدة",
+      "starts_at": "2026-07-12T16:30:00+03:00",
+      "ends_at": "2026-07-12T18:30:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
       "id": "event-saif-summer-program",
       "title": "SAIF Summer Program",
       "url": "./events/event-saif-summer-program.html",
@@ -144,6 +174,36 @@
       "ends_at": "2026-08-20T21:00:00+03:00",
       "status": "upcoming",
       "live_schedule_ready": false
+    },
+    {
+      "id": "event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials",
+      "title": "أساسيات الحوسبة السحابية - Cloud Computing Essentials",
+      "url": "./events/event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials.html",
+      "city": "عن بعد",
+      "starts_at": "2026-07-13T09:00:00+03:00",
+      "ends_at": "2026-07-15T18:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-samsung-innovation-campus-ai-program",
+      "title": "Samsung Innovation Campus AI Program",
+      "url": "./events/event-samsung-innovation-campus-ai-program.html",
+      "city": "عن بعد",
+      "starts_at": "2026-07-13T09:00:00+03:00",
+      "ends_at": "2026-09-12T18:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-نقل-مبيدات-آفات-الصحة-العامة-2",
+      "title": "نقل مبيدات آفات الصحة العامة",
+      "url": "./events/event-نقل-مبيدات-آفات-الصحة-العامة-2.html",
+      "city": "عن بعد",
+      "starts_at": "2026-07-13T10:00:00+03:00",
+      "ends_at": "2026-07-13T11:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
     }
   ]
 }

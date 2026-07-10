@@ -1,0 +1,121 @@
+{
+  "id": "event-مهرجان-المأكولات-الشعبية",
+  "title": "مهرجان المأكولات الشعبية",
+  "summary": "احتفل بثقافة الطعام المحلي في مهرجان المأكولات الشعبية، حيث يجتمع الطهاة وااسر المنتجة استعراض تنوع المطبخ السعودي الأصيل في أجواء عائلية.",
+  "canonical_url": "https://eventme.live/events/event-مهرجان-المأكولات-الشعبية.html",
+  "detail_url": "./events/event-مهرجان-المأكولات-الشعبية.html",
+  "calendar_url": "./events/event-مهرجان-المأكولات-الشعبية.ics",
+  "source_label": "Visit Saudi Summer Calendar PDF",
+  "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+  "evidence_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T07:21:55.253Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
+  "city": "الرياض",
+  "venue": "الرياض",
+  "venue_address": "الرياض",
+  "starts_at": "2026-07-06T00:00:00+03:00",
+  "ends_at": "2026-08-22T23:59:00+03:00",
+  "status": "ongoing",
+  "status_label": "برنامج جارٍ",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/visit-saudi-summer-2026-p054-top-right.jpg",
+  "image_alt": "مهرجان المأكولات الشعبية",
+  "category": "ثقافة وفنون",
+  "category_url": "./categories/culture-arts.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "مهرجان المأكولات الشعبية",
+    "ثقافة وفنون",
+    "culture and arts",
+    "برنامج ممتد",
+    "برنامج جارٍ",
+    "الرياض",
+    "Visit Saudi Summer Calendar PDF",
+    "tourism",
+    "seasons",
+    "culture",
+    "entertainment",
+    "sports",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-07-06T00:00:00+03:00",
+      "ends_at": "2026-08-22T23:59:00+03:00",
+      "room": "الرياض",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "مهرجان المأكولات الشعبية",
+    "startDate": "2026-07-06T00:00:00+03:00",
+    "endDate": "2026-08-22T23:59:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "الرياض",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "الرياض",
+        "addressLocality": "الرياض",
+        "addressRegion": "منطقة الرياض",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Saudi Tourism Authority"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/visit-saudi-summer-2026-p054-top-right.jpg"
+    ],
+    "description": "احتفل بثقافة الطعام المحلي في مهرجان المأكولات الشعبية، حيث يجتمع الطهاة وااسر المنتجة استعراض تنوع المطبخ السعودي الأصيل في أجواء عائلية.",
+    "url": "https://eventme.live/events/event-مهرجان-المأكولات-الشعبية.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-مهرجان-المأكولات-الشعبية.html",
+    "isAccessibleForFree": false,
+    "keywords": "مهرجان المأكولات الشعبية, ثقافة وفنون, culture and arts, برنامج ممتد, برنامج جارٍ, الرياض, Visit Saudi Summer Calendar PDF, tourism, seasons, culture, entertainment, sports, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

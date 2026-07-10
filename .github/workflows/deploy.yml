@@ -78,6 +78,19 @@ jobs:
       - name: Build EventLive public site
         run: npm run build
 
+      - name: Run verified venue location regression tests
+        run: npm run test:venue-location
+
+      - name: Run source publication identity regression tests
+        run: |
+          npm run test:source-action-identity
+          npm run test:eye-official-links
+          npm run test:hrse-agenda-enrichment
+          npm run test:smart-data-agenda-enrichment
+          npm run test:rff-agenda-enrichment
+          npm run test:official-agenda-radar
+          npm run test:global-proptech-agenda
+
       - name: Run static analysis audit
         run: npm run audit:static
 

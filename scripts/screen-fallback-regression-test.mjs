@@ -30,13 +30,15 @@ const fallback = JSON.parse(match[1]);
 assert.equal(fallback.generated_at, today.generated_at, 'screen fallback must be regenerated with today.json');
 assert.equal(fallback.generated_at, events.generated_at, 'screen fallback must match events.json generation time');
 assert.deepEqual(fallback.focus, today.focus, 'screen fallback focus must match today.json');
-assert.equal(fallback.queue.length, today.queue.length, 'screen fallback queue must match today.json');
+assert.deepEqual(fallback.queue, today.queue.slice(0, 4), 'screen fallback must embed only the visible priority queue');
+assert.ok(fallback.queue.length <= 4, 'screen fallback must not embed the full operational queue');
 assert.equal(fallback.signals.events, events.events.length, 'screen fallback event signal must match events.json');
 assert.equal(fallback.signals.actionable, today.queue.length, 'screen fallback actionable signal must match today queue');
 assert.equal(fallback.signals.live_schedule_ready, liveStatus.totals.live_schedule_ready, 'screen fallback ready signal must match live-status.json');
 assert.equal(fallback.live_updates.totals.updates, updates.totals.updates, 'screen fallback update count must match updates.json');
 assert.equal(fallback.live_updates.totals.urgent, updates.totals.urgent, 'screen fallback urgent updates must match updates.json');
 assert.equal(fallback.live_updates.focus?.id || '', updates.focus?.id || '', 'screen fallback update focus must match updates.json');
+assert.ok(Buffer.byteLength(screen, 'utf8') <= 500_000, 'screen.html must stay within the 500KB performance budget');
 
 for (const forbidden of [
   '2026-07-05T07:31:50.651Z',

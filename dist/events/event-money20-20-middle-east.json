@@ -1,21 +1,21 @@
 {
   "id": "event-money20-20-middle-east",
   "title": "Money20/20 Middle East",
-  "summary": "Money20/20 Middle East is the region’s definitive fintech event, bringing together over 38,500 visitors, 450+ global brands, 350+ speakers, 400+ investors, and 150+ startups to shape the future of money, finance, and technology. As the most influential gathering in the Middle East, it offers world-class thought leadership, groundbreaking innovations, and high-impact networking that fuels business growth and positions Saudi Arabia at the heart of the global fintech revolution. Book Now",
+  "summary": "يجمع Money20/20 Middle East منظومة التقنية المالية العالمية في الرياض من 14 إلى 16 سبتمبر 2026، بمشاركة البنوك وشركات التقنية المالية والمستثمرين والجهات التنظيمية.",
   "canonical_url": "https://eventme.live/events/event-money20-20-middle-east.html",
   "detail_url": "./events/event-money20-20-middle-east.html",
   "calendar_url": "./events/event-money20-20-middle-east.ics",
-  "source_label": "Riyadh City Events",
-  "source_url": "https://riyadh.sa/en/moment/events/item/event/29339",
+  "source_label": "Money20/20 Middle East Official",
+  "source_url": "https://money2020middleeast.com/",
   "evidence_url": "https://riyadh.sa/en/moment/events/item/event/29339",
-  "trust_tier": "official",
-  "trust_label": "مصدر حكومي أو رسمي",
-  "verified_at": "2026-07-10T03:51:59.093Z",
+  "trust_tier": "approved-source",
+  "trust_label": "مصدر معتمد",
+  "verified_at": "2026-07-10T07:21:55.253Z",
   "verification_method": "registered-official",
   "freshness_hours": 0,
   "city": "الرياض",
-  "venue": "Riyadh Exhibition & Convention Center - Malham",
-  "venue_address": "Riyadh Exhibition & Convention Center - Malham",
+  "venue": "Riyadh Exhibition & Convention Center, Malham",
+  "venue_address": "Malham, Riyadh, Saudi Arabia",
   "starts_at": "2026-09-14T09:00:00+03:00",
   "ends_at": "2026-09-16T17:00:00+03:00",
   "status": "upcoming",
@@ -30,50 +30,46 @@
   "schedule_quality": "basic-window",
   "image_url": "https://eventme.live/assets/event-images/money20-20-middle-east-5ccc78e6d8.png",
   "image_alt": "Money20/20 Middle East",
-  "category": "جامعات ومجتمع",
-  "category_url": "./categories/education-community.html",
+  "category": "ورش تنظيمية وصحية",
+  "category_url": "./categories/regulatory-workshop.html",
   "audiences": [
     {
       "slug": "professionals",
       "label": "موظفون ومهنيون"
     },
     {
-      "slug": "entrepreneurs",
-      "label": "رواد أعمال"
+      "slug": "tech",
+      "label": "تقنيون"
     },
     {
-      "slug": "creatives",
-      "label": "مبدعون وفنون"
+      "slug": "entrepreneurs",
+      "label": "رواد أعمال"
     }
   ],
   "keywords": [
     "Money20/20 Middle East",
-    "جامعات ومجتمع",
-    "Exhibitions & Conferences",
+    "ورش تنظيمية وصحية",
+    "conference",
     "فعالية",
     "قادمة",
     "الرياض",
-    "Riyadh Exhibition & Convention Center - Malham",
-    "Riyadh City Events",
-    "city events",
-    "culture",
-    "sports",
-    "community",
-    "camps",
-    "tourism",
-    "6275",
-    "9336",
-    "9601",
+    "Riyadh Exhibition & Convention Center, Malham",
+    "Money20/20 Middle East Official",
+    "fintech",
+    "banking",
+    "payments",
+    "investment",
+    "technology",
     "موظفون ومهنيون",
-    "رواد أعمال",
-    "مبدعون وفنون"
+    "تقنيون",
+    "رواد أعمال"
   ],
   "sessions": [
     {
       "title": "نافذة الحضور",
       "starts_at": "2026-09-14T09:00:00+03:00",
       "ends_at": "2026-09-16T17:00:00+03:00",
-      "room": "Riyadh Exhibition & Convention Center - Malham",
+      "room": "Riyadh Exhibition & Convention Center, Malham",
       "anchor": "#session-نافذة-الحضور"
     }
   ],
@@ -87,10 +83,10 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Riyadh Exhibition & Convention Center - Malham",
+      "name": "Riyadh Exhibition & Convention Center, Malham",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Riyadh Exhibition & Convention Center - Malham",
+        "streetAddress": "Malham, Riyadh, Saudi Arabia",
         "addressLocality": "الرياض",
         "addressRegion": "منطقة الرياض",
         "addressCountry": "SA"
@@ -98,16 +94,16 @@
     },
     "organizer": {
       "@type": "Organization",
-      "name": "Tahaluf Co."
+      "name": "Tahaluf"
     },
     "image": [
       "https://eventme.live/assets/event-images/money20-20-middle-east-5ccc78e6d8.png"
     ],
-    "description": "Money20/20 Middle East is the region’s definitive fintech event, bringing together over 38,500 visitors, 450+ global brands, 350+ speakers, 400+ investors, and 150+ startups to shape the future of money, finance, and technology. As the most influential gathering in the Middle East, it offers world-class thought leadership, groundbreaking innovations, and high-impact networking that fuels business growth and positions Saudi Arabia at the heart of the global fintech revolution. Book Now",
+    "description": "يجمع Money20/20 Middle East منظومة التقنية المالية العالمية في الرياض من 14 إلى 16 سبتمبر 2026، بمشاركة البنوك وشركات التقنية المالية والمستثمرين والجهات التنظيمية.",
     "url": "https://eventme.live/events/event-money20-20-middle-east.html",
     "mainEntityOfPage": "https://eventme.live/events/event-money20-20-middle-east.html",
     "isAccessibleForFree": false,
-    "keywords": "Money20/20 Middle East, جامعات ومجتمع, Exhibitions & Conferences, فعالية, قادمة, الرياض, Riyadh Exhibition & Convention Center - Malham, Riyadh City Events, city events, culture, sports, community, camps, tourism, 6275, 9336, 9601, موظفون ومهنيون, رواد أعمال, مبدعون وفنون",
+    "keywords": "Money20/20 Middle East, ورش تنظيمية وصحية, conference, فعالية, قادمة, الرياض, Riyadh Exhibition & Convention Center, Malham, Money20/20 Middle East Official, fintech, banking, payments, investment, technology, موظفون ومهنيون, تقنيون, رواد أعمال",
     "audience": [
       {
         "@type": "Audience",
@@ -115,19 +111,20 @@
       },
       {
         "@type": "Audience",
-        "audienceType": "رواد أعمال"
+        "audienceType": "تقنيون"
       },
       {
         "@type": "Audience",
-        "audienceType": "مبدعون وفنون"
+        "audienceType": "رواد أعمال"
       }
     ],
     "sameAs": [
+      "https://money2020middleeast.com/",
       "https://riyadh.sa/en/moment/events/item/event/29339"
     ],
     "offers": {
       "@type": "Offer",
-      "url": "https://riyadh.sa/en/moment/events/item/event/29339",
+      "url": "https://money2020middleeast.com/",
       "availability": "https://schema.org/InStock",
       "category": "Event access"
     }

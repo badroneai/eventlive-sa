@@ -7,12 +7,12 @@ X-WR-CALNAME:LEAP 2026 | EventLive
 X-WR-TIMEZONE:Asia/Riyadh
 BEGIN:VEVENT
 UID:event-leap-2026@eventme.live
-DTSTAMP:20260710T035904Z
-DTSTART:20260831T060000Z
-DTEND:20260903T140000Z
+DTSTAMP:20260710T080011Z
+DTSTART:20260831T080000Z
+DTEND:20260903T180000Z
 SUMMARY:LEAP 2026
-DESCRIPTION:LEAP 2026 marks the fifth edition of Saudi’s flagship global technology and innovation event\, cementing its position as one of the world’s most influential platforms for digital transformation. المصدر الرسمي: Visit Saudi.
-LOCATION:Riyadh
+DESCRIPTION:يجمع مؤتمر LEAP 2026 في الرياض قادة التقنية والشركات الناشئة والمستثمرين وصناع السياسات والمبتكرين من 31 أغسطس إلى 3 سبتمبر 2026، مع جدول حي موثق للجلسات والقاعات.
+LOCATION:Malham\, Riyadh\, Saudi Arabia
 URL:https://eventme.live/events/event-leap-2026.html
 END:VEVENT
 END:VCALENDAR

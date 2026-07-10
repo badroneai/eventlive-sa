@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.content-localization-audit.v1",
-  "generated_at": "2026-07-08T01:37:33.558Z",
+  "generated_at": "2026-07-10T06:25:53.060Z",
   "status": "PASS",
   "summary": {
     "pages_checked": 8,
@@ -13,21 +13,21 @@
       "html_lang_dir": true,
       "visible_eventme_brand_refs": 0,
       "owner_links_visible": [],
-      "visible_text_chars": 3712
+      "visible_text_chars": 3432
     },
     {
       "page": "events.html",
       "html_lang_dir": true,
       "visible_eventme_brand_refs": 0,
       "owner_links_visible": [],
-      "visible_text_chars": 1990
+      "visible_text_chars": 2095
     },
     {
       "page": "today-events.html",
       "html_lang_dir": true,
       "visible_eventme_brand_refs": 0,
       "owner_links_visible": [],
-      "visible_text_chars": 4909
+      "visible_text_chars": 10273
     },
     {
       "page": "screen.html",
@@ -48,21 +48,21 @@
       "html_lang_dir": true,
       "visible_eventme_brand_refs": 0,
       "owner_links_visible": [],
-      "visible_text_chars": 3262
+      "visible_text_chars": 5081
     },
     {
       "page": "categories.html",
       "html_lang_dir": true,
       "visible_eventme_brand_refs": 0,
       "owner_links_visible": [],
-      "visible_text_chars": 3113
+      "visible_text_chars": 3149
     },
     {
       "page": "audiences.html",
       "html_lang_dir": true,
       "visible_eventme_brand_refs": 0,
       "owner_links_visible": [],
-      "visible_text_chars": 3090
+      "visible_text_chars": 3101
     }
   ],
   "findings": []

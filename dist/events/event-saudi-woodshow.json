@@ -10,7 +10,7 @@
   "evidence_url": "https://riyadh.sa/en/moment/events/item/event/30053",
   "trust_tier": "official",
   "trust_label": "مصدر حكومي أو رسمي",
-  "verified_at": "2026-07-10T03:51:59.093Z",
+  "verified_at": "2026-07-10T07:21:55.253Z",
   "verification_method": "registered-official",
   "freshness_hours": 0,
   "city": "الرياض",
@@ -36,14 +36,6 @@
     {
       "slug": "professionals",
       "label": "موظفون ومهنيون"
-    },
-    {
-      "slug": "skilled-trades",
-      "label": "مهاريون وحرفيون"
-    },
-    {
-      "slug": "creatives",
-      "label": "مبدعون وفنون"
     }
   ],
   "keywords": [
@@ -62,9 +54,7 @@
     "camps",
     "tourism",
     "7972",
-    "موظفون ومهنيون",
-    "مهاريون وحرفيون",
-    "مبدعون وفنون"
+    "موظفون ومهنيون"
   ],
   "sessions": [
     {
@@ -92,6 +82,11 @@
         "addressLocality": "الرياض",
         "addressRegion": "منطقة الرياض",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 24.7523498,
+        "longitude": 46.7262727
       }
     },
     "organizer": {
@@ -105,19 +100,11 @@
     "url": "https://eventme.live/events/event-saudi-woodshow.html",
     "mainEntityOfPage": "https://eventme.live/events/event-saudi-woodshow.html",
     "isAccessibleForFree": false,
-    "keywords": "Saudi WoodShow, معارض وتجارية, Exhibitions & Conferences, فعالية, قادمة, الرياض, Riyadh International Convention & Exhibition Center, Riyadh City Events, city events, culture, sports, community, camps, tourism, 7972, موظفون ومهنيون, مهاريون وحرفيون, مبدعون وفنون",
+    "keywords": "Saudi WoodShow, معارض وتجارية, Exhibitions & Conferences, فعالية, قادمة, الرياض, Riyadh International Convention & Exhibition Center, Riyadh City Events, city events, culture, sports, community, camps, tourism, 7972, موظفون ومهنيون",
     "audience": [
       {
         "@type": "Audience",
         "audienceType": "موظفون ومهنيون"
-      },
-      {
-        "@type": "Audience",
-        "audienceType": "مهاريون وحرفيون"
-      },
-      {
-        "@type": "Audience",
-        "audienceType": "مبدعون وفنون"
       }
     ],
     "sameAs": [

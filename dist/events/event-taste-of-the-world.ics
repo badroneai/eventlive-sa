@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Taste of the World | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-taste-of-the-world@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260705T210000Z
+DTEND:20260822T205900Z
+SUMMARY:Taste of the World
+DESCRIPTION:استمتع بمهرجان ،Taste of the World تجربة طعام عالمية تجمع نكهات من مختلف دول العالم في مكان واحد، مع أكشاك طعام وطهاة عالماين وتجارب تذوّق حيّة.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-taste-of-the-world.html
+END:VEVENT
+END:VCALENDAR

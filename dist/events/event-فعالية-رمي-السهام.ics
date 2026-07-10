@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:فعالية رمي السهام | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-فعالية-رمي-السهام@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260705T210000Z
+DTEND:20260822T205900Z
+SUMMARY:فعالية رمي السهام
+DESCRIPTION:استمتع بفعالية رمي السهام، تجربة رياضية تفاعلية تجمع بين التركيز والمهارة، مع منافسات منظمة بإشراف متخصصين لجميع الفئات العمرية.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-فعالية-رمي-السهام.html
+END:VEVENT
+END:VCALENDAR

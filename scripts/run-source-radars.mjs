@@ -96,6 +96,20 @@ ensureDir(reportsDir);
 
 const radars = [
   {
+    id: 'official-agendas',
+    name: 'Official Multi-Session Agenda Radar',
+    source_id: 'official-agenda-watchlist',
+    policy: 'source-evidence; agenda readiness; no auto-publish',
+    command: process.execPath,
+    args: ['scripts/source-official-agenda-radar.mjs'],
+    timeout_ms: Number(process.env.EVENTLIVE_SOURCE_RADAR_TIMEOUT_MS || 120000),
+    env: {},
+    reports: [
+      'reports/source-official-agenda-radar.json',
+      'reports/source-official-agenda-radar.md'
+    ]
+  },
+  {
     id: 'strategic-platforms',
     name: 'Strategic Platform Source Radar',
     source_id: 'strategic-platform-watchlist',

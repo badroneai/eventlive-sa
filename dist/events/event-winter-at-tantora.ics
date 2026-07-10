@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Winter at Tantora | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-winter-at-tantora@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20261217T060000Z
+DTEND:20270109T150000Z
+SUMMARY:Winter at Tantora
+DESCRIPTION:Experience a season of culture and celebration\, inspired by AlUla’s rich heritage. Winter at Tantora ضمن ترفيه وعائلات في العلا. تبدأ الفعالية ١٧‏/١٢‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٠٩‏/٠١‏/٢٠٢٧، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Experience AlUla Events.
+LOCATION:AlUla
+URL:https://eventme.live/events/event-winter-at-tantora.html
+END:VEVENT
+END:VCALENDAR

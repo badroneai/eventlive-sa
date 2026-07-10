@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:HRSE KSA | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-hrse-ksa@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260830T060000Z
+DTEND:20260902T141000Z
+SUMMARY:HRSE KSA
+DESCRIPTION:تجمع HRSE KSA قادة الموارد البشرية والعمل والتقنية في الرياض، مع ورش معتمدة ومؤتمرات متخصصة وأجندة رسمية حية من 30 أغسطس إلى 2 سبتمبر 2026.
+LOCATION:The Arena Riyadh\, Riyadh\, Saudi Arabia
+URL:https://eventme.live/events/event-hrse-ksa.html
+END:VEVENT
+END:VCALENDAR

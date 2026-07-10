@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:معرض الصيف للفنون | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-معرض-الصيف-للفنون@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260630T210000Z
+DTEND:20260901T205900Z
+SUMMARY:معرض الصيف للفنون
+DESCRIPTION:اكتشف معرض الصيف للفنون، منصة تعاونية تستعرض أعمال فنانين سعوديين من مختلف المناطق والمستويات في المملكة العربية السعودية.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-معرض-الصيف-للفنون.html
+END:VEVENT
+END:VCALENDAR

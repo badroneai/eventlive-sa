@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:فعاليات الباحة | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-منطقة-مشجعي-كأس-العالم-2026@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260609T210000Z
+DTEND:20260823T205900Z
+SUMMARY:منطقة مشجعي كأس العالم 2026
+DESCRIPTION:عيش أجواء منطقة مشجعي كأس العالم 2026، حيث تجتمع متعة متابعة المباريات على شاشات عرض ضخمة مع أنشطة تفاعلية، ومطاعم، ومقاهٍ تناسب جميع أفراد العائلة.
+LOCATION:الباحة
+URL:https://eventme.live/events/event-منطقة-مشجعي-كأس-العالم-2026.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-قرية-الموسى-التراثية@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260630T210000Z
+DTEND:20260831T205900Z
+SUMMARY:قرية الموسى التراثية
+DESCRIPTION:تجربة تراثية ثقافية في قرية الموسى، تقدم عروضً في شعبية، وحرفًا يدوية، وتجارب طعام محلية، وجولات تعريفية تسلط الضوء على الهوية الثقافية للمنطقة.
+LOCATION:الباحة
+URL:https://eventme.live/events/event-قرية-الموسى-التراثية.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-صيف-غابة-رغدان-في-الباحة-2026@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260630T210000Z
+DTEND:20260831T205900Z
+SUMMARY:صيف غابة رغدان في الباحة 2026
+DESCRIPTION:تجربة صيفية متكاملة تضم باقة متنوعة من الفعاليات الترفيهية والثقافية والعائلية، تقام في غابة رغدان، وتقدم مزيجًا فريدً في من الطبيعة الجبلية واانشطة التفاعلية وتجارب الطعام.
+LOCATION:الباحة
+URL:https://eventme.live/events/event-صيف-غابة-رغدان-في-الباحة-2026.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-قرية-الأطاولة-التراثية@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260630T210000Z
+DTEND:20260831T205900Z
+SUMMARY:قرية الأطاولة التراثية
+DESCRIPTION:تضم قرية الأطاولة التراثية في الباحة سوق ربوع قريش التاريخي، وحصونًا عريقة، وعمارة جبلية، مما يجعلها وجهة سياحية مميزة. قرية الأطاولة التراثية ضمن ترفيه وعائلات في الباحة. تبدأ الفعالية ٠١‏/٠٧‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ٣١‏/٠٨‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.
+LOCATION:الباحة
+URL:https://eventme.live/events/event-قرية-الأطاولة-التراثية.html
+END:VEVENT
+END:VCALENDAR

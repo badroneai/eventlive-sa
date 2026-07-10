@@ -1,0 +1,1810 @@
+{
+  "id": "ended-money2020-middle-east-2025",
+  "title": "Money20/20 Middle East 2025",
+  "summary": "النسخة الافتتاحية من Money20/20 Middle East في الرياض، محفوظة ببرنامجها الرسمي الكامل للجلسات والمتحدثين والقاعات. Money20/20 Middle East 2025 ضمن مؤتمرات ومنتديات في الرياض. تبدأ الفعالية ١٤‏/٠٩‏/٢٠٢٥، ٣:٠٠ م وتنتهي ١٧‏/٠٩‏/٢٠٢٥، ٧:٠٠ م حسب البيانات المتاحة. تتوفر لها صفحة جدول حي تساعد الزائر على متابعة الحالة والوقت أثناء الحضور. المصدر: Money20/20 Middle East Official.",
+  "canonical_url": "https://eventme.live/events/ended-money2020-middle-east-2025.html",
+  "detail_url": "./events/ended-money2020-middle-east-2025.html",
+  "calendar_url": "./events/ended-money2020-middle-east-2025.ics",
+  "source_label": "Money20/20 Middle East Official",
+  "source_url": "https://money2020middleeast.com/2025-agenda",
+  "evidence_url": "https://money2020middleeast.com/2025-agenda",
+  "trust_tier": "approved-source",
+  "trust_label": "مصدر معتمد",
+  "verified_at": "2026-07-10T06:58:11.483Z",
+  "verification_method": "approved-source-evidence",
+  "freshness_hours": 1,
+  "city": "الرياض",
+  "venue": "Riyadh Exhibition & Convention Center, Malham",
+  "venue_address": "Malham, Riyadh, Saudi Arabia",
+  "starts_at": "2025-09-14T15:00:00+03:00",
+  "ends_at": "2025-09-17T19:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 242,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-covers/ended-money2020-middle-east-2025.svg",
+  "image_alt": "غلاف EventLive لفعالية Money20/20 Middle East 2025",
+  "category": "مؤتمرات ومنتديات",
+  "category_url": "./categories/conference-forum.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "entrepreneurs",
+      "label": "رواد أعمال"
+    }
+  ],
+  "keywords": [
+    "Money20/20 Middle East 2025",
+    "مؤتمرات ومنتديات",
+    "conference",
+    "فعالية",
+    "منتهية",
+    "الرياض",
+    "Riyadh Exhibition & Convention Center, Malham",
+    "Money20/20 Middle East Official",
+    "fintech",
+    "banking",
+    "payments",
+    "investment",
+    "technology",
+    "ended-event",
+    "موظفون ومهنيون",
+    "رواد أعمال"
+  ],
+  "sessions": [
+    {
+      "title": "Fintech Strategy and Capital Market Growth",
+      "starts_at": "2025-09-14T15:00:00+03:00",
+      "ends_at": "2025-09-14T15:05:00+03:00",
+      "room": "Venturescape",
+      "anchor": "#session-money2020-2025-2025-09-14-1500-fintech-strategy-and-capital-market-growth"
+    },
+    {
+      "title": "Keynote : Launch of the Annual Fintech Report",
+      "starts_at": "2025-09-14T15:05:00+03:00",
+      "ends_at": "2025-09-14T15:15:00+03:00",
+      "room": "Venturescape",
+      "anchor": "#session-money2020-2025-2025-09-14-1505-keynote-launch-of-the-annual-fintech-report"
+    },
+    {
+      "title": "Panel Discussion : Fintech Investment Growth in MENA",
+      "starts_at": "2025-09-14T15:15:00+03:00",
+      "ends_at": "2025-09-14T15:35:00+03:00",
+      "room": "Venturescape",
+      "anchor": "#session-money2020-2025-2025-09-14-1515-panel-discussion-fintech-investment-growth-in-mena"
+    },
+    {
+      "title": "Networking Event : Matchmaking Meetings",
+      "starts_at": "2025-09-14T16:00:00+03:00",
+      "ends_at": "2025-09-14T18:00:00+03:00",
+      "room": "Venturescape",
+      "anchor": "#session-money2020-2025-2025-09-14-1600-networking-event-matchmaking-meetings"
+    },
+    {
+      "title": "Fintech Fusion Networking Mixer",
+      "starts_at": "2025-09-14T18:00:00+03:00",
+      "ends_at": "2025-09-14T20:00:00+03:00",
+      "room": "Venturescape",
+      "anchor": "#session-money2020-2025-2025-09-14-1800-fintech-fusion-networking-mixer"
+    },
+    {
+      "title": "Live Stream : Livestream Executive Summit Stage - Day 1",
+      "starts_at": "2025-09-15T12:00:00+03:00",
+      "ends_at": "2025-09-15T19:00:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-15-1200-live-stream-livestream-executive-summit-stage-day-1"
+    },
+    {
+      "title": "Keynote : Strategic Vision and Priorities",
+      "starts_at": "2025-09-15T12:10:00+03:00",
+      "ends_at": "2025-09-15T12:20:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-15-1210-keynote-strategic-vision-and-priorities"
+    },
+    {
+      "title": "Keynote : Keynote Speech",
+      "starts_at": "2025-09-15T12:20:00+03:00",
+      "ends_at": "2025-09-15T12:35:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-15-1220-keynote-keynote-speech"
+    },
+    {
+      "title": "Announcements",
+      "starts_at": "2025-09-15T12:35:00+03:00",
+      "ends_at": "2025-09-15T12:40:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-15-1235-announcements"
+    },
+    {
+      "title": "Fireside Chat : Capital Market Evolution in the Digital Age",
+      "starts_at": "2025-09-15T12:40:00+03:00",
+      "ends_at": "2025-09-15T13:00:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-15-1240-fireside-chat-capital-market-evolution-in-the-digital-age"
+    },
+    {
+      "title": "Keynote : Unlocking Inclusive Growth through Global Payment Interoperability",
+      "starts_at": "2025-09-15T12:45:00+03:00",
+      "ends_at": "2025-09-15T13:00:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-15-1245-keynote-unlocking-inclusive-growth-through-global-payment-interoperabili"
+    },
+    {
+      "title": "Panel Discussion : Global Xchange: The Great Fintech Reroute: Is the Global Financial Future Being Built Outside the West",
+      "starts_at": "2025-09-15T12:50:00+03:00",
+      "ends_at": "2025-09-15T13:30:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-15-1250-panel-discussion-global-xchange-the-great-fintech-reroute-is-the-global"
+    },
+    {
+      "title": "Keynote : The Role of the Regulator towards a Fintech-Driven Economy",
+      "starts_at": "2025-09-15T13:00:00+03:00",
+      "ends_at": "2025-09-15T13:20:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-15-1300-keynote-the-role-of-the-regulator-towards-a-fintech-driven-economy"
+    },
+    {
+      "title": "Podcast : Everything is Fintech",
+      "starts_at": "2025-09-15T13:00:00+03:00",
+      "ends_at": "2025-09-15T13:55:00+03:00",
+      "room": "MoneyPot",
+      "anchor": "#session-money2020-2025-2025-09-15-1300-podcast-everything-is-fintech"
+    },
+    {
+      "title": "Fireside Chat : The Digital Infrastructure of Capital: How Institutions Are Rebuilding Treasury, FX, and Portfolio Strategies for a Tokenized Economy",
+      "starts_at": "2025-09-15T13:00:00+03:00",
+      "ends_at": "2025-09-15T13:30:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-15-1300-fireside-chat-the-digital-infrastructure-of-capital-how-institutions-are"
+    },
+    {
+      "title": "Panel Discussion : Fraud Has Evolved. Can The AI Defense Line Hold?",
+      "starts_at": "2025-09-15T13:00:00+03:00",
+      "ends_at": "2025-09-15T13:40:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-15-1300-panel-discussion-fraud-has-evolved-can-the-ai-defense-line-hold"
+    },
+    {
+      "title": "Panel Discussion : The Untold Stories: Redefining Venture and Innovation in Fintech",
+      "starts_at": "2025-09-15T13:00:00+03:00",
+      "ends_at": "2025-09-15T13:40:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-15-1300-panel-discussion-the-untold-stories-redefining-venture-and-innovation-in"
+    },
+    {
+      "title": "Keynote : The Future Insured: Strategic Insurance Evolution in a Dynamic Financial Landscape",
+      "starts_at": "2025-09-15T13:20:00+03:00",
+      "ends_at": "2025-09-15T13:40:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-15-1320-keynote-the-future-insured-strategic-insurance-evolution-in-a-dynamic-fi"
+    },
+    {
+      "title": "Fireside Chat : In Conversation with: Digital Assets and State Capital: How Governments and Sovereign Institutions Are Shaping the Next Financial Frontier",
+      "starts_at": "2025-09-15T13:30:00+03:00",
+      "ends_at": "2025-09-15T13:50:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-15-1330-fireside-chat-in-conversation-with-digital-assets-and-state-capital-how"
+    },
+    {
+      "title": "Panel Discussion : The Post-Wallet Era: What’s Shaping the Future of Payments in the Middle East",
+      "starts_at": "2025-09-15T13:30:00+03:00",
+      "ends_at": "2025-09-15T14:20:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-15-1330-panel-discussion-the-post-wallet-era-what-s-shaping-the-future-of-paymen"
+    },
+    {
+      "title": "Announcements",
+      "starts_at": "2025-09-15T13:40:00+03:00",
+      "ends_at": "2025-09-15T14:00:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-15-1340-announcements"
+    },
+    {
+      "title": "Fireside Chat : Who Is Finance Really Built For?",
+      "starts_at": "2025-09-15T13:40:00+03:00",
+      "ends_at": "2025-09-15T14:00:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-15-1340-fireside-chat-who-is-finance-really-built-for"
+    },
+    {
+      "title": "Fireside Chat : Synergy Over Capital: Building Lasting Investor-Founder Bonds",
+      "starts_at": "2025-09-15T13:40:00+03:00",
+      "ends_at": "2025-09-15T14:00:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-15-1340-fireside-chat-synergy-over-capital-building-lasting-investor-founder-bon"
+    },
+    {
+      "title": "Presentation : East to West – A Global Pulse Check",
+      "starts_at": "2025-09-15T13:40:00+03:00",
+      "ends_at": "2025-09-15T14:00:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-15-1340-presentation-east-to-west-a-global-pulse-check"
+    },
+    {
+      "title": "Keynote : Unlocking Trust in Digital Assets: Building a Regulatory Framework that Enables Innovation",
+      "starts_at": "2025-09-15T13:50:00+03:00",
+      "ends_at": "2025-09-15T14:10:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-15-1350-keynote-unlocking-trust-in-digital-assets-building-a-regulatory-framewor"
+    },
+    {
+      "title": "Fireside Chat : Instability as a Catalyst - Fintech’s Role in a Global Interconnected Economy",
+      "starts_at": "2025-09-15T14:00:00+03:00",
+      "ends_at": "2025-09-15T14:35:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-15-1400-fireside-chat-instability-as-a-catalyst-fintech-s-role-in-a-global-inter"
+    },
+    {
+      "title": "Podcast : Fintech Files by BCG Platinion",
+      "starts_at": "2025-09-15T14:00:00+03:00",
+      "ends_at": "2025-09-15T14:30:00+03:00",
+      "room": "MoneyPot",
+      "anchor": "#session-money2020-2025-2025-09-15-1400-podcast-fintech-files-by-bcg-platinion"
+    },
+    {
+      "title": "Networking : Dr. Leda Glyptis - Book Signing / Networking Session",
+      "starts_at": "2025-09-15T14:00:00+03:00",
+      "ends_at": "2025-09-15T14:40:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-15-1400-networking-dr-leda-glyptis-book-signing-networking-session"
+    },
+    {
+      "title": "Debate : Capital Crossroads: When Should Fintechs Choose Equity, Debt or Credit",
+      "starts_at": "2025-09-15T14:00:00+03:00",
+      "ends_at": "2025-09-15T14:40:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-15-1400-debate-capital-crossroads-when-should-fintechs-choose-equity-debt-or-cre"
+    },
+    {
+      "title": "Regional Insights : The Transformation Economy: Lending at the Core of Vision 2030",
+      "starts_at": "2025-09-15T14:00:00+03:00",
+      "ends_at": "2025-09-15T14:20:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-15-1400-regional-insights-the-transformation-economy-lending-at-the-core-of-visi"
+    },
+    {
+      "title": "Panel Discussion : Navigating the New Frontier: AI Regulation and the Open Banking Revolution",
+      "starts_at": "2025-09-15T14:10:00+03:00",
+      "ends_at": "2025-09-15T14:50:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-15-1410-panel-discussion-navigating-the-new-frontier-ai-regulation-and-the-open"
+    },
+    {
+      "title": "Panel Discussion : Global Xchange: Unlocking Trillions: Public-Private Partnerships as Catalysts for Emerging Market Growth",
+      "starts_at": "2025-09-15T14:20:00+03:00",
+      "ends_at": "2025-09-15T14:50:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-15-1420-panel-discussion-global-xchange-unlocking-trillions-public-private-partn"
+    },
+    {
+      "title": "Presentation : From Insight to Impact: Agentic AI that Drives Real Results in Finance",
+      "starts_at": "2025-09-15T14:20:00+03:00",
+      "ends_at": "2025-09-15T14:40:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-15-1420-presentation-from-insight-to-impact-agentic-ai-that-drives-real-results"
+    },
+    {
+      "title": "Keynote : Reimagining Global Energy in a Digital Financial Future",
+      "starts_at": "2025-09-15T14:35:00+03:00",
+      "ends_at": "2025-09-15T14:50:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-15-1435-keynote-reimagining-global-energy-in-a-digital-financial-future"
+    },
+    {
+      "title": "Panel Discussion : Surviving the First Three Years: Capital, Chaos, and the Founder’s Battlefield",
+      "starts_at": "2025-09-15T14:40:00+03:00",
+      "ends_at": "2025-09-15T15:00:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-15-1440-panel-discussion-surviving-the-first-three-years-capital-chaos-and-the-f"
+    },
+    {
+      "title": "Fireside Chat : Secondaries, Safe Bets or Short-Sighted? A VC's Dilemma",
+      "starts_at": "2025-09-15T14:40:00+03:00",
+      "ends_at": "2025-09-15T15:00:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-15-1440-fireside-chat-secondaries-safe-bets-or-short-sighted-a-vc-s-dilemma"
+    },
+    {
+      "title": "Presentation : The Rise of AI-Driven Finance",
+      "starts_at": "2025-09-15T14:40:00+03:00",
+      "ends_at": "2025-09-15T15:00:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-15-1440-presentation-the-rise-of-ai-driven-finance"
+    },
+    {
+      "title": "Podcast : She Builds with Sarah Hewerdine",
+      "starts_at": "2025-09-15T14:45:00+03:00",
+      "ends_at": "2025-09-15T15:30:00+03:00",
+      "room": "MoneyPot",
+      "anchor": "#session-money2020-2025-2025-09-15-1445-podcast-she-builds-with-sarah-hewerdine"
+    },
+    {
+      "title": "Keynote : The Currency of Trust: Why Finance Runs on More Than Money",
+      "starts_at": "2025-09-15T14:50:00+03:00",
+      "ends_at": "2025-09-15T15:10:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-15-1450-keynote-the-currency-of-trust-why-finance-runs-on-more-than-money"
+    },
+    {
+      "title": "Panel Discussion : Unveiling the Opportunities in Digitizing and Integrating Insurtech for Businesses",
+      "starts_at": "2025-09-15T14:50:00+03:00",
+      "ends_at": "2025-09-15T15:40:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-15-1450-panel-discussion-unveiling-the-opportunities-in-digitizing-and-integrati"
+    },
+    {
+      "title": "Keynote : Transforming Fintech in the Age of AI: Opportunities and Challenges for the Digital Economy",
+      "starts_at": "2025-09-15T14:50:00+03:00",
+      "ends_at": "2025-09-15T15:00:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-15-1450-keynote-transforming-fintech-in-the-age-of-ai-opportunities-and-challeng"
+    },
+    {
+      "title": "Roundtable : Education, Youth and Financial Services Innovation",
+      "starts_at": "2025-09-15T15:00:00+03:00",
+      "ends_at": "2025-09-15T16:30:00+03:00",
+      "room": "Boardroom",
+      "anchor": "#session-money2020-2025-2025-09-15-1500-roundtable-education-youth-and-financial-services-innovation"
+    },
+    {
+      "title": "Panel Discussion : Sync or Spy: AI + Open Banking: Empowering Customers or Hijacking Consent?",
+      "starts_at": "2025-09-15T15:00:00+03:00",
+      "ends_at": "2025-09-15T15:25:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-15-1500-panel-discussion-sync-or-spy-ai-open-banking-empowering-customers-or-hij"
+    },
+    {
+      "title": "Keynote : Public-Private Collaboration for Inclusive Finance - driving financial inclusion through government, fintech, and regulator collaboration",
+      "starts_at": "2025-09-15T15:00:00+03:00",
+      "ends_at": "2025-09-15T15:10:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-15-1500-keynote-public-private-collaboration-for-inclusive-finance-driving-finan"
+    },
+    {
+      "title": "Panel Discussion : Next-Gen Family Offices",
+      "starts_at": "2025-09-15T15:00:00+03:00",
+      "ends_at": "2025-09-15T15:30:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-15-1500-panel-discussion-next-gen-family-offices"
+    },
+    {
+      "title": "Live Demo : The Future of Deposits 2025: Fintech Eats First – Can Banks Catch Up?",
+      "starts_at": "2025-09-15T15:00:00+03:00",
+      "ends_at": "2025-09-15T15:20:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-15-1500-live-demo-the-future-of-deposits-2025-fintech-eats-first-can-banks-catch"
+    },
+    {
+      "title": "Fireside Chat : Scaling Digital Assets: Safe, Connected, and Ready for the Real World",
+      "starts_at": "2025-09-15T15:10:00+03:00",
+      "ends_at": "2025-09-15T15:25:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-15-1510-fireside-chat-scaling-digital-assets-safe-connected-and-ready-for-the-re"
+    },
+    {
+      "title": "Panel Discussion : From Steppes to Silicon: Unlocking the Digital and Financial Future of Central Asia and the Bordering Countries of Eastern Europe and Western Asia",
+      "starts_at": "2025-09-15T15:10:00+03:00",
+      "ends_at": "2025-09-15T15:40:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-15-1510-panel-discussion-from-steppes-to-silicon-unlocking-the-digital-and-finan"
+    },
+    {
+      "title": "Live Demo : Central Banks & Smart Signals: How AI is Rewriting Monetary Intelligence",
+      "starts_at": "2025-09-15T15:20:00+03:00",
+      "ends_at": "2025-09-15T15:40:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-15-1520-live-demo-central-banks-smart-signals-how-ai-is-rewriting-monetary-intel"
+    },
+    {
+      "title": "Keynote : Inside the AI Supercycle",
+      "starts_at": "2025-09-15T15:25:00+03:00",
+      "ends_at": "2025-09-15T15:45:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-15-1525-keynote-inside-the-ai-supercycle"
+    },
+    {
+      "title": "Fireside Chat : Who’s Playing by the Rules?",
+      "starts_at": "2025-09-15T15:25:00+03:00",
+      "ends_at": "2025-09-15T15:45:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-15-1525-fireside-chat-who-s-playing-by-the-rules"
+    },
+    {
+      "title": "Fireside Chat : Strategic Alignment: Choosing the Right Funds to Back the Future of Fintech",
+      "starts_at": "2025-09-15T15:30:00+03:00",
+      "ends_at": "2025-09-15T15:50:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-15-1530-fireside-chat-strategic-alignment-choosing-the-right-funds-to-back-the-f"
+    },
+    {
+      "title": "Panel Discussion : Finance Without Border, Driving Efficiency Through Tokenization",
+      "starts_at": "2025-09-15T15:40:00+03:00",
+      "ends_at": "2025-09-15T16:20:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-15-1540-panel-discussion-finance-without-border-driving-efficiency-through-token"
+    },
+    {
+      "title": "Fireside Chat : From Oil to Ownership: Financial Literacy as the Cornerstone of Saudi Arabia’s Fintech Revolution",
+      "starts_at": "2025-09-15T15:40:00+03:00",
+      "ends_at": "2025-09-15T16:00:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-15-1540-fireside-chat-from-oil-to-ownership-financial-literacy-as-the-cornerston"
+    },
+    {
+      "title": "Presentation : Fintech at Scale: Redefining Payments for Millions in Record Time",
+      "starts_at": "2025-09-15T15:40:00+03:00",
+      "ends_at": "2025-09-15T16:00:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-15-1540-presentation-fintech-at-scale-redefining-payments-for-millions-in-record"
+    },
+    {
+      "title": "Fireside Chat : Digitally-Driven & Globally-Connected: The Future of Banking in Saudi Arabia",
+      "starts_at": "2025-09-15T15:45:00+03:00",
+      "ends_at": "2025-09-15T16:00:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-15-1545-fireside-chat-digitally-driven-globally-connected-the-future-of-banking"
+    },
+    {
+      "title": "Podcast : The Bank Tellers with Micky Tesfaye",
+      "starts_at": "2025-09-15T15:45:00+03:00",
+      "ends_at": "2025-09-15T16:20:00+03:00",
+      "room": "MoneyPot",
+      "anchor": "#session-money2020-2025-2025-09-15-1545-podcast-the-bank-tellers-with-micky-tesfaye"
+    },
+    {
+      "title": "In Conversation . . .",
+      "starts_at": "2025-09-15T15:45:00+03:00",
+      "ends_at": "2025-09-15T16:10:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-15-1545-in-conversation"
+    },
+    {
+      "title": "Panel Discussion : Financial Inclusion: From Margins to Mainstream- Who's Investing in the Unbanked?",
+      "starts_at": "2025-09-15T15:50:00+03:00",
+      "ends_at": "2025-09-15T16:30:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-15-1550-panel-discussion-financial-inclusion-from-margins-to-mainstream-who-s-in"
+    },
+    {
+      "title": "Meet AIANA, our AI Co-Host!",
+      "starts_at": "2025-09-15T15:50:00+03:00",
+      "ends_at": "2025-09-15T16:00:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-15-1550-meet-aiana-our-ai-co-host"
+    },
+    {
+      "title": "Deep Dive : Regulating Risk, Enabling Innovation: A Cross-Sector View from Banks, Markets, and Regulators",
+      "starts_at": "2025-09-15T16:00:00+03:00",
+      "ends_at": "2025-09-15T16:30:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-15-1600-deep-dive-regulating-risk-enabling-innovation-a-cross-sector-view-from-b"
+    },
+    {
+      "title": "Fireside Chat : In Conversation with CEO of Zepz (WorldRemit and Sendwave): Reimagining Remittances: Fintech’s Role in Empowering the Global Diaspora",
+      "starts_at": "2025-09-15T16:00:00+03:00",
+      "ends_at": "2025-09-15T16:20:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-15-1600-fireside-chat-in-conversation-with-ceo-of-zepz-worldremit-and-sendwave-r"
+    },
+    {
+      "title": "Regional Insights : Youth, Mobile & Money: Africa’s Billion- Dollar Fintech Opportunity",
+      "starts_at": "2025-09-15T16:00:00+03:00",
+      "ends_at": "2025-09-15T16:20:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-15-1600-regional-insights-youth-mobile-money-africa-s-billion-dollar-fintech-opp"
+    },
+    {
+      "title": "In Conversation ... : When Unicorn Backers Talk ‘OFF’ The Record, You Listen.",
+      "starts_at": "2025-09-15T16:10:00+03:00",
+      "ends_at": "2025-09-15T16:40:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-15-1610-in-conversation-when-unicorn-backers-talk-off-the-record-you-listen"
+    },
+    {
+      "title": "Podcast : Breaking Banks Fintech Podcast",
+      "starts_at": "2025-09-15T16:20:00+03:00",
+      "ends_at": "2025-09-15T17:00:00+03:00",
+      "room": "MoneyPot",
+      "anchor": "#session-money2020-2025-2025-09-15-1620-podcast-breaking-banks-fintech-podcast"
+    },
+    {
+      "title": "Panel Discussion : Redesigning the Digital Customer Experience",
+      "starts_at": "2025-09-15T16:20:00+03:00",
+      "ends_at": "2025-09-15T17:00:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-15-1620-panel-discussion-redesigning-the-digital-customer-experience"
+    },
+    {
+      "title": "Fireside Chat : Code, Capital, and Confidence: Women at the Helm of AI and FinTech",
+      "starts_at": "2025-09-15T16:20:00+03:00",
+      "ends_at": "2025-09-15T16:40:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-15-1620-fireside-chat-code-capital-and-confidence-women-at-the-helm-of-ai-and-fi"
+    },
+    {
+      "title": "Fireside Chat : Fintech & The Creator Economy",
+      "starts_at": "2025-09-15T16:20:00+03:00",
+      "ends_at": "2025-09-15T16:40:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-15-1620-fireside-chat-fintech-the-creator-economy"
+    },
+    {
+      "title": "Fireside Chat : Banking on Impact",
+      "starts_at": "2025-09-15T16:30:00+03:00",
+      "ends_at": "2025-09-15T16:50:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-15-1630-fireside-chat-banking-on-impact"
+    },
+    {
+      "title": "Live Demo : Cap Table to Capital Raise: Carta in Action",
+      "starts_at": "2025-09-15T16:30:00+03:00",
+      "ends_at": "2025-09-15T16:40:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-15-1630-live-demo-cap-table-to-capital-raise-carta-in-action"
+    },
+    {
+      "title": "Panel Discussion : Scaling Responsibly: Move Fast, But Don’t Break Everything",
+      "starts_at": "2025-09-15T16:40:00+03:00",
+      "ends_at": "2025-09-15T17:10:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-15-1640-panel-discussion-scaling-responsibly-move-fast-but-don-t-break-everythin"
+    },
+    {
+      "title": "Fireside Chat : In Conversation with Carlos Menendez, COO of DLocal: Pay Local, Lead Global: Reimagining Payment Systems for the Global South",
+      "starts_at": "2025-09-15T16:40:00+03:00",
+      "ends_at": "2025-09-15T17:00:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-15-1640-fireside-chat-in-conversation-with-carlos-menendez-coo-of-dlocal-pay-loc"
+    },
+    {
+      "title": "Keynote",
+      "starts_at": "2025-09-15T16:40:00+03:00",
+      "ends_at": "2025-09-15T17:00:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-15-1640-keynote"
+    },
+    {
+      "title": "MoneySurge : MoneySurge Pitch Competition - Round 1",
+      "starts_at": "2025-09-15T16:40:00+03:00",
+      "ends_at": "2025-09-15T18:50:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-15-1640-moneysurge-moneysurge-pitch-competition-round-1"
+    },
+    {
+      "title": "Google Pay & Google Wallet: Powering the Future of Payments in the Middle East",
+      "starts_at": "2025-09-15T16:40:00+03:00",
+      "ends_at": "2025-09-15T17:00:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-15-1640-google-pay-google-wallet-powering-the-future-of-payments-in-the-middle-e"
+    },
+    {
+      "title": "Deep Dive : The Infrastructure Imperative: Building the Backbone of Future Finance",
+      "starts_at": "2025-09-15T16:50:00+03:00",
+      "ends_at": "2025-09-15T17:20:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-15-1650-deep-dive-the-infrastructure-imperative-building-the-backbone-of-future"
+    },
+    {
+      "title": "Investor & Startup Activities : Fintech 525 – Money20/20 Middle East Edition (Registration Required)",
+      "starts_at": "2025-09-15T17:00:00+03:00",
+      "ends_at": "2025-09-15T19:00:00+03:00",
+      "room": "Hall 3 - Investor & Startup Zone",
+      "anchor": "#session-money2020-2025-2025-09-15-1700-investor-startup-activities-fintech-525-money20-20-middle-east-edition-r"
+    },
+    {
+      "title": "Fireside Chat : From Open Finance to Fair Finance: Rethinking Creditworthiness with Alternative Data",
+      "starts_at": "2025-09-15T17:00:00+03:00",
+      "ends_at": "2025-09-15T17:20:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-15-1700-fireside-chat-from-open-finance-to-fair-finance-rethinking-creditworthin"
+    },
+    {
+      "title": "Panel Discussion : Fintech Without Borders: Forging a New Silk Road for Digital Finance",
+      "starts_at": "2025-09-15T17:00:00+03:00",
+      "ends_at": "2025-09-15T17:20:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-15-1700-panel-discussion-fintech-without-borders-forging-a-new-silk-road-for-dig"
+    },
+    {
+      "title": "Presentation : The Tokenized Future – Capital Markets & Digital Assets",
+      "starts_at": "2025-09-15T17:00:00+03:00",
+      "ends_at": "2025-09-15T17:20:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-15-1700-presentation-the-tokenized-future-capital-markets-digital-assets"
+    },
+    {
+      "title": "Podcast : Making Sense by J.P. Morgan",
+      "starts_at": "2025-09-15T17:10:00+03:00",
+      "ends_at": "2025-09-15T17:40:00+03:00",
+      "room": "MoneyPot",
+      "anchor": "#session-money2020-2025-2025-09-15-1710-podcast-making-sense-by-j-p-morgan"
+    },
+    {
+      "title": "Networking : Global Women in AI, an initiative by CFTE – Networking Session",
+      "starts_at": "2025-09-15T17:10:00+03:00",
+      "ends_at": "2025-09-15T18:10:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-15-1710-networking-global-women-in-ai-an-initiative-by-cfte-networking-session"
+    },
+    {
+      "title": "Fireside Chat : The Role of Venture Capital in Shaping the Fintech Sector in Saudi Arabia",
+      "starts_at": "2025-09-15T17:20:00+03:00",
+      "ends_at": "2025-09-15T17:40:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-15-1720-fireside-chat-the-role-of-venture-capital-in-shaping-the-fintech-sector"
+    },
+    {
+      "title": "Keynote : The Age of Agentic Commerce",
+      "starts_at": "2025-09-15T17:20:00+03:00",
+      "ends_at": "2025-09-15T17:40:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-15-1720-keynote-the-age-of-agentic-commerce"
+    },
+    {
+      "title": "Panel Discussion : Boosting Financial Access for SMEs in Emerging Markets Across Asia, Africa and the GCC",
+      "starts_at": "2025-09-15T17:20:00+03:00",
+      "ends_at": "2025-09-15T18:10:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-15-1720-panel-discussion-boosting-financial-access-for-smes-in-emerging-markets"
+    },
+    {
+      "title": "Presentation : AI Meets Compliance: From Innovation Risk to Responsible Deployment",
+      "starts_at": "2025-09-15T17:20:00+03:00",
+      "ends_at": "2025-09-15T17:40:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-15-1720-presentation-ai-meets-compliance-from-innovation-risk-to-responsible-dep"
+    },
+    {
+      "title": "Panel Discussion : The New Investment Thesis for Fintech in a Risk-Off World",
+      "starts_at": "2025-09-15T17:40:00+03:00",
+      "ends_at": "2025-09-15T18:10:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-15-1740-panel-discussion-the-new-investment-thesis-for-fintech-in-a-risk-off-wor"
+    },
+    {
+      "title": "Panel Discussion : Influencers, Trust & Fintech: Where Content Meets Capital: Where the Creator Economy Meets Fintech",
+      "starts_at": "2025-09-15T17:40:00+03:00",
+      "ends_at": "2025-09-15T18:10:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-15-1740-panel-discussion-influencers-trust-fintech-where-content-meets-capital-w"
+    },
+    {
+      "title": "Fireside Chat : From Telco to Fintech Powerhouse",
+      "starts_at": "2025-09-15T17:40:00+03:00",
+      "ends_at": "2025-09-15T18:00:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-15-1740-fireside-chat-from-telco-to-fintech-powerhouse"
+    },
+    {
+      "title": "Fireside Chat : The Next Generation of Consumer Finance – Born in Retail, Built for Real Life",
+      "starts_at": "2025-09-15T18:10:00+03:00",
+      "ends_at": "2025-09-15T18:30:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-15-1810-fireside-chat-the-next-generation-of-consumer-finance-born-in-retail-bui"
+    },
+    {
+      "title": "Panel Discussion : Embedded Finance Unleashed: How Non-Financial Innovators and Financial Disruptors are Expanding Fintech’s Retail Frontier",
+      "starts_at": "2025-09-15T18:10:00+03:00",
+      "ends_at": "2025-09-15T18:50:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-15-1810-panel-discussion-embedded-finance-unleashed-how-non-financial-innovators"
+    },
+    {
+      "title": "Panel Discussion : Banking Without Borders: How Embedded Finance is Rewiring Access in Emerging Markets",
+      "starts_at": "2025-09-15T18:10:00+03:00",
+      "ends_at": "2025-09-15T18:50:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-15-1810-panel-discussion-banking-without-borders-how-embedded-finance-is-rewirin"
+    },
+    {
+      "title": "Podcast : Banking Transformed with Jim Marous",
+      "starts_at": "2025-09-16T11:45:00+03:00",
+      "ends_at": "2025-09-16T12:25:00+03:00",
+      "room": "MoneyPot",
+      "anchor": "#session-money2020-2025-2025-09-16-1145-podcast-banking-transformed-with-jim-marous"
+    },
+    {
+      "title": "Live Stream : Livestream Executive Summit Stage - Day 2",
+      "starts_at": "2025-09-16T12:00:00+03:00",
+      "ends_at": "2025-09-16T19:00:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-16-1200-live-stream-livestream-executive-summit-stage-day-2"
+    },
+    {
+      "title": "Investor & Startup Activities : LP/GP BRUNCH - The Network That Deploys",
+      "starts_at": "2025-09-16T12:00:00+03:00",
+      "ends_at": "2025-09-16T14:00:00+03:00",
+      "room": "Hall 3 - Investor Lounge",
+      "anchor": "#session-money2020-2025-2025-09-16-1200-investor-startup-activities-lp-gp-brunch-the-network-that-deploys"
+    },
+    {
+      "title": "Announcements",
+      "starts_at": "2025-09-16T12:05:00+03:00",
+      "ends_at": "2025-09-16T12:20:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-16-1205-announcements"
+    },
+    {
+      "title": "Fireside Chat : Digital Trust at Scale: Building the Next Generation of Consumer Finance in Saudi Arabia",
+      "starts_at": "2025-09-16T12:05:00+03:00",
+      "ends_at": "2025-09-16T12:25:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-16-1205-fireside-chat-digital-trust-at-scale-building-the-next-generation-of-con"
+    },
+    {
+      "title": "Panel Discussion : Global Vision, Regional Lens: Next Big Bets on MENA Fintech",
+      "starts_at": "2025-09-16T12:05:00+03:00",
+      "ends_at": "2025-09-16T12:45:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-16-1205-panel-discussion-global-vision-regional-lens-next-big-bets-on-mena-finte"
+    },
+    {
+      "title": "Keynote : Evolution of Payment Systems in Saudi Arabia",
+      "starts_at": "2025-09-16T12:20:00+03:00",
+      "ends_at": "2025-09-16T12:35:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-16-1220-keynote-evolution-of-payment-systems-in-saudi-arabia"
+    },
+    {
+      "title": "Keynote : GCC-Nigeria Partnership: Shaping New Growth Pathway",
+      "starts_at": "2025-09-16T12:20:00+03:00",
+      "ends_at": "2025-09-16T12:35:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-16-1220-keynote-gcc-nigeria-partnership-shaping-new-growth-pathway"
+    },
+    {
+      "title": "Deep Dive : Exploring the Role of Biometrics in Shaping Next-Gen Payments",
+      "starts_at": "2025-09-16T12:25:00+03:00",
+      "ends_at": "2025-09-16T13:00:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-16-1225-deep-dive-exploring-the-role-of-biometrics-in-shaping-next-gen-payments"
+    },
+    {
+      "title": "Keynote : Keynote",
+      "starts_at": "2025-09-16T12:35:00+03:00",
+      "ends_at": "2025-09-16T12:50:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-16-1235-keynote-keynote"
+    },
+    {
+      "title": "Fireside Chat : Capital Markets 2.0: Building Resilient & Inclusive Markets in Emerging Economies",
+      "starts_at": "2025-09-16T12:35:00+03:00",
+      "ends_at": "2025-09-16T12:55:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-16-1235-fireside-chat-capital-markets-2-0-building-resilient-inclusive-markets-i"
+    },
+    {
+      "title": "Fireside Chat : Sandbox to Scale with Regulators",
+      "starts_at": "2025-09-16T12:45:00+03:00",
+      "ends_at": "2025-09-16T13:05:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-16-1245-fireside-chat-sandbox-to-scale-with-regulators"
+    },
+    {
+      "title": "Fireside Chat : Modernizing the Payments Infrastructure: A Blueprint for a Sustainable Payment Ecosystem",
+      "starts_at": "2025-09-16T12:50:00+03:00",
+      "ends_at": "2025-09-16T13:10:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-16-1250-fireside-chat-modernizing-the-payments-infrastructure-a-blueprint-for-a"
+    },
+    {
+      "title": "Podcast : Paymentology’s The Issuer Academy",
+      "starts_at": "2025-09-16T12:50:00+03:00",
+      "ends_at": "2025-09-16T13:35:00+03:00",
+      "room": "MoneyPot",
+      "anchor": "#session-money2020-2025-2025-09-16-1250-podcast-paymentology-s-the-issuer-academy"
+    },
+    {
+      "title": "Panel Discussion : Unlocking Africa’s $3 Trillion Economy: The Role of Fintech in Regional Development",
+      "starts_at": "2025-09-16T12:55:00+03:00",
+      "ends_at": "2025-09-16T13:35:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-16-1255-panel-discussion-unlocking-africa-s-3-trillion-economy-the-role-of-finte"
+    },
+    {
+      "title": "Keynote : SpaceX Lessons for Banking",
+      "starts_at": "2025-09-16T13:00:00+03:00",
+      "ends_at": "2025-09-16T13:15:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-16-1300-keynote-spacex-lessons-for-banking"
+    },
+    {
+      "title": "Keynote : The World of 2050. How AI, Quantum and Climate will Reshape Humanity",
+      "starts_at": "2025-09-16T13:00:00+03:00",
+      "ends_at": "2025-09-16T13:20:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-16-1300-keynote-the-world-of-2050-how-ai-quantum-and-climate-will-reshape-humani"
+    },
+    {
+      "title": "Panel Discussion : In the Room: The Conversations That Made the Unicorn",
+      "starts_at": "2025-09-16T13:05:00+03:00",
+      "ends_at": "2025-09-16T13:40:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-16-1305-panel-discussion-in-the-room-the-conversations-that-made-the-unicorn"
+    },
+    {
+      "title": "Panel Discussion : Open Banking Without Borders: Global Lessons, Regional Leadership",
+      "starts_at": "2025-09-16T13:10:00+03:00",
+      "ends_at": "2025-09-16T13:50:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-16-1310-panel-discussion-open-banking-without-borders-global-lessons-regional-le"
+    },
+    {
+      "title": "Panel Discussion : Preparing for the Next Wave of Innovation in Saudi Finance",
+      "starts_at": "2025-09-16T13:10:00+03:00",
+      "ends_at": "2025-09-16T13:30:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-16-1310-panel-discussion-preparing-for-the-next-wave-of-innovation-in-saudi-fina"
+    },
+    {
+      "title": "Fireside Chat : Building the AI Bank of the Future in Emerging and Frontier Markets",
+      "starts_at": "2025-09-16T13:15:00+03:00",
+      "ends_at": "2025-09-16T13:30:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-16-1315-fireside-chat-building-the-ai-bank-of-the-future-in-emerging-and-frontie"
+    },
+    {
+      "title": "Fireside Chat : The Gulf Strategy: Regulation as a Catalyst, not a Constraint",
+      "starts_at": "2025-09-16T13:20:00+03:00",
+      "ends_at": "2025-09-16T13:40:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-16-1320-fireside-chat-the-gulf-strategy-regulation-as-a-catalyst-not-a-constrain"
+    },
+    {
+      "title": "Deep Dive : Are Digital Assets Fundamentally Transforming the Ecosystem of Financial Markets?",
+      "starts_at": "2025-09-16T13:30:00+03:00",
+      "ends_at": "2025-09-16T14:10:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-16-1330-deep-dive-are-digital-assets-fundamentally-transforming-the-ecosystem-of"
+    },
+    {
+      "title": "In Conversation ... : Not If, But When: Getting Ready for the Saudi Market",
+      "starts_at": "2025-09-16T13:30:00+03:00",
+      "ends_at": "2025-09-16T14:00:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-16-1330-in-conversation-not-if-but-when-getting-ready-for-the-saudi-market"
+    },
+    {
+      "title": "Keynote : A CEO’s Story: Hyper‑Local Execution, Global Ambition – Scaling Yuno’s Payment Orchestration Across Continents",
+      "starts_at": "2025-09-16T13:35:00+03:00",
+      "ends_at": "2025-09-16T13:50:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-16-1335-keynote-a-ceo-s-story-hyper-local-execution-global-ambition-scaling-yuno"
+    },
+    {
+      "title": "Fireside Chat : Ambitious IPOs and the CFO Crisis",
+      "starts_at": "2025-09-16T13:40:00+03:00",
+      "ends_at": "2025-09-16T14:00:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-16-1340-fireside-chat-ambitious-ipos-and-the-cfo-crisis"
+    },
+    {
+      "title": "Live Demo : Designing Finance You Can Feel",
+      "starts_at": "2025-09-16T13:40:00+03:00",
+      "ends_at": "2025-09-16T14:00:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-16-1340-live-demo-designing-finance-you-can-feel"
+    },
+    {
+      "title": "Fireside Chat : Post-IPO Playbook: Scaling Wealth Management for the Next Generation",
+      "starts_at": "2025-09-16T13:50:00+03:00",
+      "ends_at": "2025-09-16T14:05:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-16-1350-fireside-chat-post-ipo-playbook-scaling-wealth-management-for-the-next-g"
+    },
+    {
+      "title": "Podcast : Everything is Fintech",
+      "starts_at": "2025-09-16T13:50:00+03:00",
+      "ends_at": "2025-09-16T14:40:00+03:00",
+      "room": "MoneyPot",
+      "anchor": "#session-money2020-2025-2025-09-16-1350-podcast-everything-is-fintech"
+    },
+    {
+      "title": "Deep Dive : From Awareness to Access: Building Financial Literacy as Core Infrastructure for Emerging Economies",
+      "starts_at": "2025-09-16T13:50:00+03:00",
+      "ends_at": "2025-09-16T14:20:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-16-1350-deep-dive-from-awareness-to-access-building-financial-literacy-as-core-i"
+    },
+    {
+      "title": "Panel Discussion : Cross-Border Payments & Investment - The Future of Fintech Capital Flow",
+      "starts_at": "2025-09-16T14:00:00+03:00",
+      "ends_at": "2025-09-16T14:40:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-16-1400-panel-discussion-cross-border-payments-investment-the-future-of-fintech"
+    },
+    {
+      "title": "Presentation : From Embedded to Everywhere - A New Era of B2B Payments",
+      "starts_at": "2025-09-16T14:00:00+03:00",
+      "ends_at": "2025-09-16T14:20:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-16-1400-presentation-from-embedded-to-everywhere-a-new-era-of-b2b-payments"
+    },
+    {
+      "title": "Fireside Chat : A Bank’s Role in Enabling Growth of Small & Medium Sized Businesses",
+      "starts_at": "2025-09-16T14:05:00+03:00",
+      "ends_at": "2025-09-16T14:25:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-16-1405-fireside-chat-a-bank-s-role-in-enabling-growth-of-small-medium-sized-bus"
+    },
+    {
+      "title": "Keynote : The Next Frontier of Digital Banking: From Platforms to Ecosystems",
+      "starts_at": "2025-09-16T14:10:00+03:00",
+      "ends_at": "2025-09-16T14:20:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-16-1410-keynote-the-next-frontier-of-digital-banking-from-platforms-to-ecosystem"
+    },
+    {
+      "title": "Presentation : Winning Cross-Border Payments with Payment Orchestration",
+      "starts_at": "2025-09-16T14:20:00+03:00",
+      "ends_at": "2025-09-16T14:35:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-16-1420-presentation-winning-cross-border-payments-with-payment-orchestration"
+    },
+    {
+      "title": "Keynote : A CEO's Story: Borderless Ambition: Scaling Financial Inclusion from Africa to the Gulf",
+      "starts_at": "2025-09-16T14:20:00+03:00",
+      "ends_at": "2025-09-16T14:40:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-16-1420-keynote-a-ceo-s-story-borderless-ambition-scaling-financial-inclusion-fr"
+    },
+    {
+      "title": "Regional Insights : Killing the OTP and the path to Passwordless",
+      "starts_at": "2025-09-16T14:20:00+03:00",
+      "ends_at": "2025-09-16T14:40:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-16-1420-regional-insights-killing-the-otp-and-the-path-to-passwordless"
+    },
+    {
+      "title": "Fireside Chat : Building Secure Digital Economies",
+      "starts_at": "2025-09-16T14:25:00+03:00",
+      "ends_at": "2025-09-16T14:40:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-16-1425-fireside-chat-building-secure-digital-economies"
+    },
+    {
+      "title": "Panel Discussion : Are we there yet? The Advancement of Digital Wallets",
+      "starts_at": "2025-09-16T14:35:00+03:00",
+      "ends_at": "2025-09-16T15:15:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-16-1435-panel-discussion-are-we-there-yet-the-advancement-of-digital-wallets"
+    },
+    {
+      "title": "Fireside Chat : The Next Chapter for Capital Markets Infrastructure",
+      "starts_at": "2025-09-16T14:40:00+03:00",
+      "ends_at": "2025-09-16T15:00:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-16-1440-fireside-chat-the-next-chapter-for-capital-markets-infrastructure"
+    },
+    {
+      "title": "Panel Discussion : Global Exchange: Banking on Innovation: Powering Inclusive Growth in Emerging Economies",
+      "starts_at": "2025-09-16T14:40:00+03:00",
+      "ends_at": "2025-09-16T15:30:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-16-1440-panel-discussion-global-exchange-banking-on-innovation-powering-inclusiv"
+    },
+    {
+      "title": "Panel Discussion : Beyond the Balance Sheet: Private Credit and the Future of Asset-Backed Finance in MENA",
+      "starts_at": "2025-09-16T14:40:00+03:00",
+      "ends_at": "2025-09-16T15:20:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-16-1440-panel-discussion-beyond-the-balance-sheet-private-credit-and-the-future"
+    },
+    {
+      "title": "Fireside Chat : Rethinking Resilience in Modern Payment Systems",
+      "starts_at": "2025-09-16T14:40:00+03:00",
+      "ends_at": "2025-09-16T15:00:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-16-1440-fireside-chat-rethinking-resilience-in-modern-payment-systems"
+    },
+    {
+      "title": "Podcast : Fintech Insider",
+      "starts_at": "2025-09-16T14:45:00+03:00",
+      "ends_at": "2025-09-16T15:45:00+03:00",
+      "room": "MoneyPot",
+      "anchor": "#session-money2020-2025-2025-09-16-1445-podcast-fintech-insider"
+    },
+    {
+      "title": "Panel Discussion : The Next Decade of Middle East Fintech",
+      "starts_at": "2025-09-16T15:00:00+03:00",
+      "ends_at": "2025-09-16T15:40:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-16-1500-panel-discussion-the-next-decade-of-middle-east-fintech"
+    },
+    {
+      "title": "Panel Discussion : Who’s Policing the Machines? AI, Ethics, and Fintech",
+      "starts_at": "2025-09-16T15:00:00+03:00",
+      "ends_at": "2025-09-16T15:30:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-16-1500-panel-discussion-who-s-policing-the-machines-ai-ethics-and-fintech"
+    },
+    {
+      "title": "Regional Insights : Learnings from UK & US Policy",
+      "starts_at": "2025-09-16T15:00:00+03:00",
+      "ends_at": "2025-09-16T15:20:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-16-1500-regional-insights-learnings-from-uk-us-policy"
+    },
+    {
+      "title": "Panel Discussion : Idea Xchange: Retail 4.0: Intelligence, Access & the New Loyalty - How AI, Open Banking, and Embedded Payments Are Transforming Commerce",
+      "starts_at": "2025-09-16T15:15:00+03:00",
+      "ends_at": "2025-09-16T15:55:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-16-1515-panel-discussion-idea-xchange-retail-4-0-intelligence-access-the-new-loy"
+    },
+    {
+      "title": "Panel Discussion : Empowering Fintech in Saudi: Real Builders, Real Lessons",
+      "starts_at": "2025-09-16T15:20:00+03:00",
+      "ends_at": "2025-09-16T16:00:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-16-1520-panel-discussion-empowering-fintech-in-saudi-real-builders-real-lessons"
+    },
+    {
+      "title": "Fireside Chat : Decoding Fintech Investment Signals: Beyond the Numbers",
+      "starts_at": "2025-09-16T15:20:00+03:00",
+      "ends_at": "2025-09-16T15:40:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-16-1520-fireside-chat-decoding-fintech-investment-signals-beyond-the-numbers"
+    },
+    {
+      "title": "Panel Discussion : Fintech’s Blind Spot: Gen Z",
+      "starts_at": "2025-09-16T15:30:00+03:00",
+      "ends_at": "2025-09-16T16:00:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-16-1530-panel-discussion-fintech-s-blind-spot-gen-z"
+    },
+    {
+      "title": "Panel Discussion : From Cash to Clicks: The Mobile Money Revolution in Emerging Markets",
+      "starts_at": "2025-09-16T15:30:00+03:00",
+      "ends_at": "2025-09-16T16:10:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-16-1530-panel-discussion-from-cash-to-clicks-the-mobile-money-revolution-in-emer"
+    },
+    {
+      "title": "Deep Dive : Scaling Global Payments - Infrastructure, Innovation, and Interoperability",
+      "starts_at": "2025-09-16T15:40:00+03:00",
+      "ends_at": "2025-09-16T16:00:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-16-1540-deep-dive-scaling-global-payments-infrastructure-innovation-and-interope"
+    },
+    {
+      "title": "Fireside Chat : Lessons from Building Starling and Scaling It for the World",
+      "starts_at": "2025-09-16T15:40:00+03:00",
+      "ends_at": "2025-09-16T16:00:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-16-1540-fireside-chat-lessons-from-building-starling-and-scaling-it-for-the-worl"
+    },
+    {
+      "title": "Fireside Chat : Modernizing Financial Infrastructure: Navigating Legacy, Scale, and Speed",
+      "starts_at": "2025-09-16T15:55:00+03:00",
+      "ends_at": "2025-09-16T16:10:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-16-1555-fireside-chat-modernizing-financial-infrastructure-navigating-legacy-sca"
+    },
+    {
+      "title": "Roundtable : G20 Roadmap & the Future of Cross-Border Payments",
+      "starts_at": "2025-09-16T16:00:00+03:00",
+      "ends_at": "2025-09-16T17:30:00+03:00",
+      "room": "Boardroom",
+      "anchor": "#session-money2020-2025-2025-09-16-1600-roundtable-g20-roadmap-the-future-of-cross-border-payments"
+    },
+    {
+      "title": "Panel Discussion : Digital Identity – Rethinking Trust and Control",
+      "starts_at": "2025-09-16T16:00:00+03:00",
+      "ends_at": "2025-09-16T16:35:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-16-1600-panel-discussion-digital-identity-rethinking-trust-and-control"
+    },
+    {
+      "title": "Podcast : Thameen | ثمين",
+      "starts_at": "2025-09-16T16:00:00+03:00",
+      "ends_at": "2025-09-16T17:00:00+03:00",
+      "room": "MoneyPot",
+      "anchor": "#session-money2020-2025-2025-09-16-1600-podcast-thameen-ثمين"
+    },
+    {
+      "title": "In Conversation ... : The Thin Line Between Purpose and Profit",
+      "starts_at": "2025-09-16T16:00:00+03:00",
+      "ends_at": "2025-09-16T16:20:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-16-1600-in-conversation-the-thin-line-between-purpose-and-profit"
+    },
+    {
+      "title": "Panel Discussion : FinTech Arabia: The Future of Finance In The Kingdom",
+      "starts_at": "2025-09-16T16:00:00+03:00",
+      "ends_at": "2025-09-16T16:20:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-16-1600-panel-discussion-fintech-arabia-the-future-of-finance-in-the-kingdom"
+    },
+    {
+      "title": "Fireside Chat : Micro Moments, Macro Impact: Women Are Redefining the Economy",
+      "starts_at": "2025-09-16T16:00:00+03:00",
+      "ends_at": "2025-09-16T16:20:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-16-1600-fireside-chat-micro-moments-macro-impact-women-are-redefining-the-econom"
+    },
+    {
+      "title": "Panel Discussion : Will the Emergence of Agentic AI be a Significant Disruptor in Transforming the Financial Services Landscape?",
+      "starts_at": "2025-09-16T16:10:00+03:00",
+      "ends_at": "2025-09-16T16:50:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-16-1610-panel-discussion-will-the-emergence-of-agentic-ai-be-a-significant-disru"
+    },
+    {
+      "title": "Panel Discussion : Why Launch in the Middle East? The Region’s Fintech Magnetism Unpacked",
+      "starts_at": "2025-09-16T16:10:00+03:00",
+      "ends_at": "2025-09-16T16:50:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-16-1610-panel-discussion-why-launch-in-the-middle-east-the-region-s-fintech-magn"
+    },
+    {
+      "title": "Interview : Why We Passed on the Deal: Reality and Regret",
+      "starts_at": "2025-09-16T16:20:00+03:00",
+      "ends_at": "2025-09-16T16:40:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-16-1620-interview-why-we-passed-on-the-deal-reality-and-regret"
+    },
+    {
+      "title": "Panel Discussion : Democratizing Wealth: Diversifying Assets and Fractionalized Ownership",
+      "starts_at": "2025-09-16T16:20:00+03:00",
+      "ends_at": "2025-09-16T16:50:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-16-1620-panel-discussion-democratizing-wealth-diversifying-assets-and-fractional"
+    },
+    {
+      "title": "Fireside Chat : Digital Dollars: Power, Policy & Platforms",
+      "starts_at": "2025-09-16T16:20:00+03:00",
+      "ends_at": "2025-09-16T16:40:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-16-1620-fireside-chat-digital-dollars-power-policy-platforms"
+    },
+    {
+      "title": "Fireside Chat : Fireside Chat: Advancing AI Infrastructure, Services and Innovation Locally and Globally",
+      "starts_at": "2025-09-16T16:35:00+03:00",
+      "ends_at": "2025-09-16T16:50:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-16-1635-fireside-chat-fireside-chat-advancing-ai-infrastructure-services-and-inn"
+    },
+    {
+      "title": "Fireside Chat : Too Fast, Too Free? Why Seamless Payments Threaten the Status Quo",
+      "starts_at": "2025-09-16T16:40:00+03:00",
+      "ends_at": "2025-09-16T17:10:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-16-1640-fireside-chat-too-fast-too-free-why-seamless-payments-threaten-the-statu"
+    },
+    {
+      "title": "Presentation : Wealthtech for the New World: Building the Future of Investing From MENA",
+      "starts_at": "2025-09-16T16:40:00+03:00",
+      "ends_at": "2025-09-16T17:00:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-16-1640-presentation-wealthtech-for-the-new-world-building-the-future-of-investi"
+    },
+    {
+      "title": "Deep Dive : Platform Power: How Embedded Finance Will Reshape Digital Economies in MENA",
+      "starts_at": "2025-09-16T16:50:00+03:00",
+      "ends_at": "2025-09-16T17:10:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-16-1650-deep-dive-platform-power-how-embedded-finance-will-reshape-digital-econo"
+    },
+    {
+      "title": "Fireside Chat : In Conversation with: Regulation at a Crossroads: Unlocking Innovation Through Smarter Compliance, Risk, and Security Frameworks",
+      "starts_at": "2025-09-16T16:50:00+03:00",
+      "ends_at": "2025-09-16T17:10:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-16-1650-fireside-chat-in-conversation-with-regulation-at-a-crossroads-unlocking"
+    },
+    {
+      "title": "Fireside Chat : In Conversation with Senator Ibrahim Hadejia: Unlocking Africa’s Growth: Gulf Partnerships, AfCFTA Momentum & Nigeria’s $1.2 Trillion Opportunity",
+      "starts_at": "2025-09-16T16:50:00+03:00",
+      "ends_at": "2025-09-16T17:10:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-16-1650-fireside-chat-in-conversation-with-senator-ibrahim-hadejia-unlocking-afr"
+    },
+    {
+      "title": "MoneySurge : MoneySurge Pitch Competition - Round 2",
+      "starts_at": "2025-09-16T16:50:00+03:00",
+      "ends_at": "2025-09-16T18:50:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-16-1650-moneysurge-moneysurge-pitch-competition-round-2"
+    },
+    {
+      "title": "Investor & Startup Activities : Power Hour hosted by Mastercard (Registration Required)",
+      "starts_at": "2025-09-16T17:00:00+03:00",
+      "ends_at": "2025-09-16T18:30:00+03:00",
+      "room": "Hall 3 - Investor & Startup Zone",
+      "anchor": "#session-money2020-2025-2025-09-16-1700-investor-startup-activities-power-hour-hosted-by-mastercard-registration"
+    },
+    {
+      "title": "Fireside Chat : Fintech’s Role in the Retail Revolution",
+      "starts_at": "2025-09-16T17:00:00+03:00",
+      "ends_at": "2025-09-16T17:20:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-16-1700-fireside-chat-fintech-s-role-in-the-retail-revolution"
+    },
+    {
+      "title": "Fireside Chat : In Conversation with: Fintech Game Changers: Revolutionising the Business of Sports.",
+      "starts_at": "2025-09-16T17:10:00+03:00",
+      "ends_at": "2025-09-16T17:30:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-16-1710-fireside-chat-in-conversation-with-fintech-game-changers-revolutionising"
+    },
+    {
+      "title": "In Conversation ... : Getting The Yes! How I Won The Investment",
+      "starts_at": "2025-09-16T17:10:00+03:00",
+      "ends_at": "2025-09-16T17:30:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-16-1710-in-conversation-getting-the-yes-how-i-won-the-investment"
+    },
+    {
+      "title": "Panel Discussion : Beyond the Wallet: Building Africa’s Mobile-First Financial Future",
+      "starts_at": "2025-09-16T17:10:00+03:00",
+      "ends_at": "2025-09-16T17:50:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-16-1710-panel-discussion-beyond-the-wallet-building-africa-s-mobile-first-financ"
+    },
+    {
+      "title": "Fireside Chat : Trust, Tokens & Transparency: Rebuilding Finance from the Blockchain Up",
+      "starts_at": "2025-09-16T17:20:00+03:00",
+      "ends_at": "2025-09-16T17:40:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-16-1720-fireside-chat-trust-tokens-transparency-rebuilding-finance-from-the-bloc"
+    },
+    {
+      "title": "Fireside Chat : How SAMA's Strategy is Driving the Future of Sector Development",
+      "starts_at": "2025-09-16T17:30:00+03:00",
+      "ends_at": "2025-09-16T17:45:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-16-1730-fireside-chat-how-sama-s-strategy-is-driving-the-future-of-sector-develo"
+    },
+    {
+      "title": "Fireside Chat : Asset Management Reinvented: The Dynamic Dance of Human Insight and Algorithmic Precision",
+      "starts_at": "2025-09-16T17:30:00+03:00",
+      "ends_at": "2025-09-16T17:50:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-16-1730-fireside-chat-asset-management-reinvented-the-dynamic-dance-of-human-ins"
+    },
+    {
+      "title": "Networking : Brett King Book Signing / Networking Session",
+      "starts_at": "2025-09-16T17:30:00+03:00",
+      "ends_at": "2025-09-16T18:15:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-16-1730-networking-brett-king-book-signing-networking-session"
+    },
+    {
+      "title": "Networking : Networking Session",
+      "starts_at": "2025-09-16T17:30:00+03:00",
+      "ends_at": "2025-09-16T18:15:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-16-1730-networking-networking-session"
+    },
+    {
+      "title": "Podcast : Paymentology’s The Issuer Academy",
+      "starts_at": "2025-09-16T17:40:00+03:00",
+      "ends_at": "2025-09-16T18:20:00+03:00",
+      "room": "MoneyPot",
+      "anchor": "#session-money2020-2025-2025-09-16-1740-podcast-paymentology-s-the-issuer-academy"
+    },
+    {
+      "title": "Fireside Chat : Embedded Finance 2.0: The Rise of Trading-as-a-Service",
+      "starts_at": "2025-09-16T17:40:00+03:00",
+      "ends_at": "2025-09-16T18:00:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-16-1740-fireside-chat-embedded-finance-2-0-the-rise-of-trading-as-a-service"
+    },
+    {
+      "title": "Deep Dive : Agents of Change: AI’s Role in Autonomous Finance",
+      "starts_at": "2025-09-16T17:45:00+03:00",
+      "ends_at": "2025-09-16T18:15:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-16-1745-deep-dive-agents-of-change-ai-s-role-in-autonomous-finance"
+    },
+    {
+      "title": "Deep Dive : Crossing Borders, Shaping Futures: A Bold Dive into Tomorrow’s Global Finance",
+      "starts_at": "2025-09-16T17:50:00+03:00",
+      "ends_at": "2025-09-16T18:10:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-16-1750-deep-dive-crossing-borders-shaping-futures-a-bold-dive-into-tomorrow-s-g"
+    },
+    {
+      "title": "Keynote : The Airwallex Story: Rewiring Global Money Movement: Designing the Digital Infrastructure for a Connected World",
+      "starts_at": "2025-09-16T17:50:00+03:00",
+      "ends_at": "2025-09-16T18:10:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-16-1750-keynote-the-airwallex-story-rewiring-global-money-movement-designing-the"
+    },
+    {
+      "title": "Fireside Chat : In Conversation with the Saudi Credit Bureau: Can we use Open Finance to Create More Accurate Lending Scores and Personalization?",
+      "starts_at": "2025-09-16T18:10:00+03:00",
+      "ends_at": "2025-09-16T18:30:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-16-1810-fireside-chat-in-conversation-with-the-saudi-credit-bureau-can-we-use-op"
+    },
+    {
+      "title": "Deep Dive : Latin America’s Fintech Boom: Opportunities and Challenges",
+      "starts_at": "2025-09-16T18:10:00+03:00",
+      "ends_at": "2025-09-16T18:30:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-16-1810-deep-dive-latin-america-s-fintech-boom-opportunities-and-challenges"
+    },
+    {
+      "title": "Panel Discussion : Building a Financial System That Works for Everyone",
+      "starts_at": "2025-09-16T18:15:00+03:00",
+      "ends_at": "2025-09-16T18:50:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-16-1815-panel-discussion-building-a-financial-system-that-works-for-everyone"
+    },
+    {
+      "title": "Fireside Chat : Diaspora Capital and Alternative Investments Unleashed: Unlocking Borderless Growth for Emerging Markets",
+      "starts_at": "2025-09-16T18:30:00+03:00",
+      "ends_at": "2025-09-16T18:50:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-16-1830-fireside-chat-diaspora-capital-and-alternative-investments-unleashed-unl"
+    },
+    {
+      "title": "Live Stream : Livestream Executive Summit Stage - Day 3",
+      "starts_at": "2025-09-17T12:00:00+03:00",
+      "ends_at": "2025-09-17T19:00:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-17-1200-live-stream-livestream-executive-summit-stage-day-3"
+    },
+    {
+      "title": "Podcast : The Bank Tellers with Micky Tesfaye",
+      "starts_at": "2025-09-17T12:00:00+03:00",
+      "ends_at": "2025-09-17T12:30:00+03:00",
+      "room": "MoneyPot",
+      "anchor": "#session-money2020-2025-2025-09-17-1200-podcast-the-bank-tellers-with-micky-tesfaye"
+    },
+    {
+      "title": "Saudi Arabia Algo Trading Challenge 2025",
+      "starts_at": "2025-09-17T12:00:00+03:00",
+      "ends_at": "2025-09-17T13:00:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-17-1200-saudi-arabia-algo-trading-challenge-2025"
+    },
+    {
+      "title": "Announcements",
+      "starts_at": "2025-09-17T12:05:00+03:00",
+      "ends_at": "2025-09-17T12:15:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-17-1205-announcements"
+    },
+    {
+      "title": "Fireside Chat : Stablecoin saturation: What's required to survive the crowded marketplace?",
+      "starts_at": "2025-09-17T12:05:00+03:00",
+      "ends_at": "2025-09-17T12:45:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-17-1205-fireside-chat-stablecoin-saturation-what-s-required-to-survive-the-crowd"
+    },
+    {
+      "title": "Fireside Chat : Connected by Code: The Rise of Fintech Collaboration Across Asia’s Eastern Frontiers",
+      "starts_at": "2025-09-17T12:10:00+03:00",
+      "ends_at": "2025-09-17T12:30:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-17-1210-fireside-chat-connected-by-code-the-rise-of-fintech-collaboration-across"
+    },
+    {
+      "title": "Fireside Chat : Ethical AI in Action – Governance Beyond Guidelines",
+      "starts_at": "2025-09-17T12:10:00+03:00",
+      "ends_at": "2025-09-17T12:30:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-17-1210-fireside-chat-ethical-ai-in-action-governance-beyond-guidelines"
+    },
+    {
+      "title": "Deep Dive : Accelerating Financial Innovation: How Institutions Are Shaping the Next Financial Era",
+      "starts_at": "2025-09-17T12:15:00+03:00",
+      "ends_at": "2025-09-17T12:45:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-17-1215-deep-dive-accelerating-financial-innovation-how-institutions-are-shaping"
+    },
+    {
+      "title": "Keynote : Founder’s Story: From Wall Street to the Gulf: A New Dawn in Wealth-tech",
+      "starts_at": "2025-09-17T12:30:00+03:00",
+      "ends_at": "2025-09-17T12:50:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-17-1230-keynote-founder-s-story-from-wall-street-to-the-gulf-a-new-dawn-in-wealt"
+    },
+    {
+      "title": "Live Demo : Building the Future with AI Agents in Finance",
+      "starts_at": "2025-09-17T12:30:00+03:00",
+      "ends_at": "2025-09-17T12:50:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-17-1230-live-demo-building-the-future-with-ai-agents-in-finance"
+    },
+    {
+      "title": "Interview : Breaking Barriers in Cross-Border Finance",
+      "starts_at": "2025-09-17T12:40:00+03:00",
+      "ends_at": "2025-09-17T13:00:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-17-1240-interview-breaking-barriers-in-cross-border-finance"
+    },
+    {
+      "title": "Deep Dive : Creditworthiness Reimagined: From Traditional Scores to Financial Identity",
+      "starts_at": "2025-09-17T12:45:00+03:00",
+      "ends_at": "2025-09-17T13:05:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-17-1245-deep-dive-creditworthiness-reimagined-from-traditional-scores-to-financi"
+    },
+    {
+      "title": "Podcast : CLO Fintech Files by BCG Platinion",
+      "starts_at": "2025-09-17T12:45:00+03:00",
+      "ends_at": "2025-09-17T13:45:00+03:00",
+      "room": "MoneyPot",
+      "anchor": "#session-money2020-2025-2025-09-17-1245-podcast-clo-fintech-files-by-bcg-platinion"
+    },
+    {
+      "title": "Panel Discussion : Discussing the Role of Fintech in Developing Financial Literacy for Consumers",
+      "starts_at": "2025-09-17T12:45:00+03:00",
+      "ends_at": "2025-09-17T13:30:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-17-1245-panel-discussion-discussing-the-role-of-fintech-in-developing-financial"
+    },
+    {
+      "title": "Fireside Chat : Unlocking Capital Frontiers: An Analysis of VC, LP, and Alternative Investment Trends in Emerging Fintech Markets",
+      "starts_at": "2025-09-17T12:50:00+03:00",
+      "ends_at": "2025-09-17T13:10:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-17-1250-fireside-chat-unlocking-capital-frontiers-an-analysis-of-vc-lp-and-alter"
+    },
+    {
+      "title": "Presentation : Decoding Blockchain’s New Global Playbook",
+      "starts_at": "2025-09-17T12:50:00+03:00",
+      "ends_at": "2025-09-17T13:10:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-17-1250-presentation-decoding-blockchain-s-new-global-playbook"
+    },
+    {
+      "title": "Investor & Startup Activities : Investor Office Hours",
+      "starts_at": "2025-09-17T13:00:00+03:00",
+      "ends_at": "2025-09-17T14:00:00+03:00",
+      "room": "Hall 3 - Investor & Startup Zone",
+      "anchor": "#session-money2020-2025-2025-09-17-1300-investor-startup-activities-investor-office-hours"
+    },
+    {
+      "title": "Networking : Networking Session",
+      "starts_at": "2025-09-17T13:00:00+03:00",
+      "ends_at": "2025-09-17T13:20:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-17-1300-networking-networking-session"
+    },
+    {
+      "title": "Fireside Chat : Sandbox to Powered Growth : HALA Co-Founder and Investors Share the Journey",
+      "starts_at": "2025-09-17T13:00:00+03:00",
+      "ends_at": "2025-09-17T13:20:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-17-1300-fireside-chat-sandbox-to-powered-growth-hala-co-founder-and-investors-sh"
+    },
+    {
+      "title": "Deep Dive : From Claims to Code - The Future of the Insurance Industry",
+      "starts_at": "2025-09-17T13:05:00+03:00",
+      "ends_at": "2025-09-17T13:35:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-17-1305-deep-dive-from-claims-to-code-the-future-of-the-insurance-industry"
+    },
+    {
+      "title": "Panel Discussion : Global Xchange: Power, Policy, and Platforms: Who’s Shaping the Future of Finance in Emerging Markets?",
+      "starts_at": "2025-09-17T13:10:00+03:00",
+      "ends_at": "2025-09-17T14:00:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-17-1310-panel-discussion-global-xchange-power-policy-and-platforms-who-s-shaping"
+    },
+    {
+      "title": "Presentation : Fraud-Proof Futures: Why Financial Literacy is Our Strongest Defense",
+      "starts_at": "2025-09-17T13:10:00+03:00",
+      "ends_at": "2025-09-17T13:50:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-17-1310-presentation-fraud-proof-futures-why-financial-literacy-is-our-strongest"
+    },
+    {
+      "title": "Debate : Profits vs. Planet: Should Finance Pick Sides?",
+      "starts_at": "2025-09-17T13:20:00+03:00",
+      "ends_at": "2025-09-17T13:50:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-17-1320-debate-profits-vs-planet-should-finance-pick-sides"
+    },
+    {
+      "title": "Debate : Investment Dilemmas: Profitability or Growth at All Costs?",
+      "starts_at": "2025-09-17T13:20:00+03:00",
+      "ends_at": "2025-09-17T13:50:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-17-1320-debate-investment-dilemmas-profitability-or-growth-at-all-costs"
+    },
+    {
+      "title": "Fireside Chat : In Conversation with: Discussing How Financial Institutions are Responding to the Deepfake Threat",
+      "starts_at": "2025-09-17T13:30:00+03:00",
+      "ends_at": "2025-09-17T13:50:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-17-1330-fireside-chat-in-conversation-with-discussing-how-financial-institutions"
+    },
+    {
+      "title": "Regional Insights : Fintech Trends from Asia",
+      "starts_at": "2025-09-17T13:30:00+03:00",
+      "ends_at": "2025-09-17T13:50:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-17-1330-regional-insights-fintech-trends-from-asia"
+    },
+    {
+      "title": "Deep Dive : Built-In, Not Bolted-On: The Rise of Contextual Finance",
+      "starts_at": "2025-09-17T13:35:00+03:00",
+      "ends_at": "2025-09-17T13:55:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-17-1335-deep-dive-built-in-not-bolted-on-the-rise-of-contextual-finance"
+    },
+    {
+      "title": "Deep Dive : Fintech Loyalty Unlocked: How Platforms Cultivate Enduring Consumer Trust in the Digital Age",
+      "starts_at": "2025-09-17T13:50:00+03:00",
+      "ends_at": "2025-09-17T14:20:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-17-1350-deep-dive-fintech-loyalty-unlocked-how-platforms-cultivate-enduring-cons"
+    },
+    {
+      "title": "Panel Discussion : Survivors, Disruptors, or Allies? Who Will Shape the Next Era of Banking?",
+      "starts_at": "2025-09-17T13:50:00+03:00",
+      "ends_at": "2025-09-17T14:20:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-17-1350-panel-discussion-survivors-disruptors-or-allies-who-will-shape-the-next"
+    },
+    {
+      "title": "Panel Discussion : Crafting Compelling Narratives for Fintech Success",
+      "starts_at": "2025-09-17T13:50:00+03:00",
+      "ends_at": "2025-09-17T14:20:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-17-1350-panel-discussion-crafting-compelling-narratives-for-fintech-success"
+    },
+    {
+      "title": "Regional Insights : Proptech & Fintech Synergies in Saudi Arabia*",
+      "starts_at": "2025-09-17T13:50:00+03:00",
+      "ends_at": "2025-09-17T14:10:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-17-1350-regional-insights-proptech-fintech-synergies-in-saudi-arabia"
+    },
+    {
+      "title": "Keynote : Digital RICHES: The Race for Customer Loyalty",
+      "starts_at": "2025-09-17T13:55:00+03:00",
+      "ends_at": "2025-09-17T14:15:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-17-1355-keynote-digital-riches-the-race-for-customer-loyalty"
+    },
+    {
+      "title": "Fireside Chat : Breaking the Code: Women Leading the Next Fintech Revolution in Emerging Markets",
+      "starts_at": "2025-09-17T14:00:00+03:00",
+      "ends_at": "2025-09-17T14:15:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-17-1400-fireside-chat-breaking-the-code-women-leading-the-next-fintech-revolutio"
+    },
+    {
+      "title": "Presentation : Blueprint for a Fintech Nation: The MENA Opportunity",
+      "starts_at": "2025-09-17T14:10:00+03:00",
+      "ends_at": "2025-09-17T14:30:00+03:00",
+      "room": "The Pulse",
+      "anchor": "#session-money2020-2025-2025-09-17-1410-presentation-blueprint-for-a-fintech-nation-the-mena-opportunity"
+    },
+    {
+      "title": "Fireside Chat : The Future of Digital-First Islamic Finance",
+      "starts_at": "2025-09-17T14:15:00+03:00",
+      "ends_at": "2025-09-17T14:35:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-17-1415-fireside-chat-the-future-of-digital-first-islamic-finance"
+    },
+    {
+      "title": "Podcast : VC Reacts",
+      "starts_at": "2025-09-17T14:15:00+03:00",
+      "ends_at": "2025-09-17T15:00:00+03:00",
+      "room": "MoneyPot",
+      "anchor": "#session-money2020-2025-2025-09-17-1415-podcast-vc-reacts"
+    },
+    {
+      "title": "Panel Discussion : Regional and International Development Funds: A Blueprint for Sustainable Economic Transformation Across Africa, Asia, and the Middle East",
+      "starts_at": "2025-09-17T14:15:00+03:00",
+      "ends_at": "2025-09-17T14:35:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-17-1415-panel-discussion-regional-and-international-development-funds-a-blueprin"
+    },
+    {
+      "title": "Panel Discussion : Breaking the Money Taboo: Transparency, Tech & the Future of Financial Empowerment",
+      "starts_at": "2025-09-17T14:20:00+03:00",
+      "ends_at": "2025-09-17T15:00:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-17-1420-panel-discussion-breaking-the-money-taboo-transparency-tech-the-future-o"
+    },
+    {
+      "title": "In Conversation ... : Are We Designing Systems for People or for Machines?",
+      "starts_at": "2025-09-17T14:20:00+03:00",
+      "ends_at": "2025-09-17T14:40:00+03:00",
+      "room": "Off The Record",
+      "anchor": "#session-money2020-2025-2025-09-17-1420-in-conversation-are-we-designing-systems-for-people-or-for-machines"
+    },
+    {
+      "title": "Panel Discussion : Cap Tables and Consequences: What Founders Overlook When Thinking About Exits",
+      "starts_at": "2025-09-17T14:20:00+03:00",
+      "ends_at": "2025-09-17T15:00:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-17-1420-panel-discussion-cap-tables-and-consequences-what-founders-overlook-when"
+    },
+    {
+      "title": "Deep Dive : The Future of Global Finance is Local + Digital",
+      "starts_at": "2025-09-17T14:35:00+03:00",
+      "ends_at": "2025-09-17T15:05:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-17-1435-deep-dive-the-future-of-global-finance-is-local-digital"
+    },
+    {
+      "title": "Keynote : Money, Confidence & Control: Why Now Is Every Woman’s Moment",
+      "starts_at": "2025-09-17T14:35:00+03:00",
+      "ends_at": "2025-09-17T14:55:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-17-1435-keynote-money-confidence-control-why-now-is-every-woman-s-moment"
+    },
+    {
+      "title": "Deep Dive : Gaming the System: How Digital Entertainment is Driving Cross-Border Commerce and Financial Inclusion",
+      "starts_at": "2025-09-17T14:55:00+03:00",
+      "ends_at": "2025-09-17T15:35:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-17-1455-deep-dive-gaming-the-system-how-digital-entertainment-is-driving-cross-b"
+    },
+    {
+      "title": "Panel Discussion : Scaling Secure AI-Driven Finance: From Core Banking to Cloud-Native Intelligence",
+      "starts_at": "2025-09-17T15:00:00+03:00",
+      "ends_at": "2025-09-17T15:40:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-17-1500-panel-discussion-scaling-secure-ai-driven-finance-from-core-banking-to-c"
+    },
+    {
+      "title": "Panel Discussion : Global Fintech Horizons: AI and Lending for Cross-Border Growth - Risk, Regulation & Returns",
+      "starts_at": "2025-09-17T15:00:00+03:00",
+      "ends_at": "2025-09-17T15:30:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-17-1500-panel-discussion-global-fintech-horizons-ai-and-lending-for-cross-border"
+    },
+    {
+      "title": "Deep Dive : Fintech Ecosystems and the Next Wave of Financial Innovation",
+      "starts_at": "2025-09-17T15:05:00+03:00",
+      "ends_at": "2025-09-17T15:35:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-17-1505-deep-dive-fintech-ecosystems-and-the-next-wave-of-financial-innovation"
+    },
+    {
+      "title": "Fireside Chat : Bridging Markets, Building Trust: The Rise of Fintech Alliances Between Saudi Arabia and Pakistan",
+      "starts_at": "2025-09-17T15:10:00+03:00",
+      "ends_at": "2025-09-17T15:30:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-17-1510-fireside-chat-bridging-markets-building-trust-the-rise-of-fintech-allian"
+    },
+    {
+      "title": "Keynote : A CEO’s Story: Timing the Leap: Revolut’s Bold Expansion from Europe and America to Latin America’s Brazil",
+      "starts_at": "2025-09-17T15:15:00+03:00",
+      "ends_at": "2025-09-17T15:30:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-17-1515-keynote-a-ceo-s-story-timing-the-leap-revolut-s-bold-expansion-from-euro"
+    },
+    {
+      "title": "Panel Discussion : Global Xchange: Unlocking Access - The Story Behind Financial Inclusion’s Rapid Rise in Across 2 Continents",
+      "starts_at": "2025-09-17T15:30:00+03:00",
+      "ends_at": "2025-09-17T16:10:00+03:00",
+      "room": "The Bridge",
+      "anchor": "#session-money2020-2025-2025-09-17-1530-panel-discussion-global-xchange-unlocking-access-the-story-behind-financ"
+    },
+    {
+      "title": "Keynote : Venture Truths & Exit Plays: A Candid AMA with Mike Sigal",
+      "starts_at": "2025-09-17T15:30:00+03:00",
+      "ends_at": "2025-09-17T16:00:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-17-1530-keynote-venture-truths-exit-plays-a-candid-ama-with-mike-sigal"
+    },
+    {
+      "title": "Fireside Chat : What’s Next? The Future of Money, Markets, and Innovation",
+      "starts_at": "2025-09-17T15:35:00+03:00",
+      "ends_at": "2025-09-17T16:00:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-17-1535-fireside-chat-what-s-next-the-future-of-money-markets-and-innovation"
+    },
+    {
+      "title": "Deep Dive : The Evolution of Contactless Payments",
+      "starts_at": "2025-09-17T15:40:00+03:00",
+      "ends_at": "2025-09-17T16:10:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-17-1540-deep-dive-the-evolution-of-contactless-payments"
+    },
+    {
+      "title": "MoneySurge : MoneySurge Stage Prep",
+      "starts_at": "2025-09-17T16:00:00+03:00",
+      "ends_at": "2025-09-17T16:10:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-17-1600-moneysurge-moneysurge-stage-prep"
+    },
+    {
+      "title": "Fireside Chat : Pioneering Global Investment: Unlocking Saudi Arabia’s VC Landscape with the First Foreign Fund License",
+      "starts_at": "2025-09-17T16:00:00+03:00",
+      "ends_at": "2025-09-17T16:20:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-17-1600-fireside-chat-pioneering-global-investment-unlocking-saudi-arabia-s-vc-l"
+    },
+    {
+      "title": "MoneySurge : Start of MoneySurge Pitch Competition Finale",
+      "starts_at": "2025-09-17T16:10:00+03:00",
+      "ends_at": "2025-09-17T18:00:00+03:00",
+      "room": "Executive Summit",
+      "anchor": "#session-money2020-2025-2025-09-17-1610-moneysurge-start-of-moneysurge-pitch-competition-finale"
+    },
+    {
+      "title": "Panel Discussion : Evaluating the Impact of Generative Finance on Credit Advice",
+      "starts_at": "2025-09-17T16:10:00+03:00",
+      "ends_at": "2025-09-17T16:50:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-17-1610-panel-discussion-evaluating-the-impact-of-generative-finance-on-credit-a"
+    },
+    {
+      "title": "Live Demo : Powering Fintech-Financial Institutions Partnerships with Finbridge Global",
+      "starts_at": "2025-09-17T16:20:00+03:00",
+      "ends_at": "2025-09-17T16:30:00+03:00",
+      "room": "The Capital",
+      "anchor": "#session-money2020-2025-2025-09-17-1620-live-demo-powering-fintech-financial-institutions-partnerships-with-finb"
+    },
+    {
+      "title": "Panel Discussion : The Future of SME Finance: Intelligent Infrastructure, Inclusive Growth",
+      "starts_at": "2025-09-17T16:50:00+03:00",
+      "ends_at": "2025-09-17T17:30:00+03:00",
+      "room": "Next-Gen Money",
+      "anchor": "#session-money2020-2025-2025-09-17-1650-panel-discussion-the-future-of-sme-finance-intelligent-infrastructure-in"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Money20/20 Middle East 2025",
+    "startDate": "2025-09-14T15:00:00+03:00",
+    "endDate": "2025-09-17T19:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Riyadh Exhibition & Convention Center, Malham",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Malham, Riyadh, Saudi Arabia",
+        "addressLocality": "الرياض",
+        "addressRegion": "منطقة الرياض",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Tahaluf"
+    },
+    "image": [
+      "https://eventme.live/assets/event-covers/ended-money2020-middle-east-2025.svg"
+    ],
+    "description": "النسخة الافتتاحية من Money20/20 Middle East في الرياض، محفوظة ببرنامجها الرسمي الكامل للجلسات والمتحدثين والقاعات. Money20/20 Middle East 2025 ضمن مؤتمرات ومنتديات في الرياض. تبدأ الفعالية ١٤‏/٠٩‏/٢٠٢٥، ٣:٠٠ م وتنتهي ١٧‏/٠٩‏/٢٠٢٥، ٧:٠٠ م حسب البيانات المتاحة. تتوفر لها صفحة جدول حي تساعد الزائر على متابعة الحالة والوقت أثناء الحضور. المصدر: Money20/20 Middle East Official.",
+    "url": "https://eventme.live/events/ended-money2020-middle-east-2025.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-money2020-middle-east-2025.html",
+    "isAccessibleForFree": false,
+    "keywords": "Money20/20 Middle East 2025, مؤتمرات ومنتديات, conference, فعالية, منتهية, الرياض, Riyadh Exhibition & Convention Center, Malham, Money20/20 Middle East Official, fintech, banking, payments, investment, technology, ended-event, موظفون ومهنيون, رواد أعمال",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رواد أعمال"
+      }
+    ],
+    "sameAs": [
+      "https://money2020middleeast.com/2025-agenda"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://money2020middleeast.com/2025-agenda",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

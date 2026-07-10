@@ -1,0 +1,121 @@
+{
+  "id": "event-بطولة-أبطال-المملكة-للشطرنج",
+  "title": "بطولة أبطال المملكة للشطرنج",
+  "summary": "شاهد بطولة أبطال المملكة للشطرنج، تجمع نخبة الاعبين من مختلف مناطق المملكة في منافسة رفيعة المستوى تعزز ثقافة الألعاب الذهنية وتبرز المواهب المحلية.",
+  "canonical_url": "https://eventme.live/events/event-بطولة-أبطال-المملكة-للشطرنج.html",
+  "detail_url": "./events/event-بطولة-أبطال-المملكة-للشطرنج.html",
+  "calendar_url": "./events/event-بطولة-أبطال-المملكة-للشطرنج.ics",
+  "source_label": "Visit Saudi Summer Calendar PDF",
+  "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+  "evidence_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T07:21:55.253Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
+  "city": "الرياض",
+  "venue": "الرياض",
+  "venue_address": "الرياض",
+  "starts_at": "2026-08-13T00:00:00+03:00",
+  "ends_at": "2026-08-16T23:59:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/visit-saudi-summer-2026-p056-top-left.jpg",
+  "image_alt": "بطولة أبطال المملكة للشطرنج",
+  "category": "ألعاب ورياضات إلكترونية",
+  "category_url": "./categories/gaming-esports.html",
+  "audiences": [
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    },
+    {
+      "slug": "sports",
+      "label": "رياضة ولياقة"
+    }
+  ],
+  "keywords": [
+    "بطولة أبطال المملكة للشطرنج",
+    "ألعاب ورياضات إلكترونية",
+    "culture and arts",
+    "فعالية",
+    "قادمة",
+    "الرياض",
+    "Visit Saudi Summer Calendar PDF",
+    "tourism",
+    "seasons",
+    "culture",
+    "entertainment",
+    "sports",
+    "مبدعون وفنون",
+    "رياضة ولياقة"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-08-13T00:00:00+03:00",
+      "ends_at": "2026-08-16T23:59:00+03:00",
+      "room": "الرياض",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "بطولة أبطال المملكة للشطرنج",
+    "startDate": "2026-08-13T00:00:00+03:00",
+    "endDate": "2026-08-16T23:59:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "الرياض",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "الرياض",
+        "addressLocality": "الرياض",
+        "addressRegion": "منطقة الرياض",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Saudi Tourism Authority"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/visit-saudi-summer-2026-p056-top-left.jpg"
+    ],
+    "description": "شاهد بطولة أبطال المملكة للشطرنج، تجمع نخبة الاعبين من مختلف مناطق المملكة في منافسة رفيعة المستوى تعزز ثقافة الألعاب الذهنية وتبرز المواهب المحلية.",
+    "url": "https://eventme.live/events/event-بطولة-أبطال-المملكة-للشطرنج.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-بطولة-أبطال-المملكة-للشطرنج.html",
+    "isAccessibleForFree": false,
+    "keywords": "بطولة أبطال المملكة للشطرنج, ألعاب ورياضات إلكترونية, culture and arts, فعالية, قادمة, الرياض, Visit Saudi Summer Calendar PDF, tourism, seasons, culture, entertainment, sports, مبدعون وفنون, رياضة ولياقة",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رياضة ولياقة"
+      }
+    ],
+    "sameAs": [
+      "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

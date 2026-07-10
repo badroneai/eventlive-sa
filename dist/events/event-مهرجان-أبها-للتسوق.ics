@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:مهرجان أبها للتسوق | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-مهرجان-أبها-للتسوق@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260623T210000Z
+DTEND:20260828T205900Z
+SUMMARY:مهرجان أبها للتسوق
+DESCRIPTION:فعالية تجمع التسوق والترفيه، وتضم صالات تسوق لمنتجات محلية، وخليجية، ودولية، ومدينة ماه متكاملة، وفعاليات ترفيهية متنوعة لمختلف الأعمار.
+LOCATION:منطقة عسير
+URL:https://eventme.live/events/event-مهرجان-أبها-للتسوق.html
+END:VEVENT
+END:VCALENDAR

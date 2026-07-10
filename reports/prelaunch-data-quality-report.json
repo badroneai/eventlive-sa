@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-10T03:59:45.446Z",
+  "generated_at": "2026-07-10T08:01:20.466Z",
   "intent": "eventlive-prelaunch-data-quality",
   "ok": true,
   "totals": {
-    "events": 441,
-    "upcoming_or_active": 160,
-    "ended": 281,
-    "live_ready": 15,
-    "cities": 23,
+    "events": 619,
+    "upcoming_or_active": 225,
+    "ended": 394,
+    "live_ready": 21,
+    "cities": 34,
     "categories": 12,
-    "local_images": 441
+    "local_images": 619
   },
   "failure_counts": {},
   "failures": {}

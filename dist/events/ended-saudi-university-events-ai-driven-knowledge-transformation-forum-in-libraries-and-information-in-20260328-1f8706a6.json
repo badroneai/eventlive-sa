@@ -12,7 +12,7 @@
   "trust_label": "مصدر حكومي أو رسمي",
   "verified_at": "2026-07-05T19:46:40.960Z",
   "verification_method": "registered-official",
-  "freshness_hours": 104,
+  "freshness_hours": 108,
   "city": "جدة",
   "venue": "King Abdulaziz University",
   "venue_address": "King Abdulaziz University",
@@ -102,6 +102,11 @@
         "addressLocality": "جدة",
         "addressRegion": "منطقة مكة المكرمة",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 21.4934146,
+        "longitude": 39.2485449
       }
     },
     "organizer": {

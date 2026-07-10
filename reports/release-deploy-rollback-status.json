@@ -1,24 +1,24 @@
 {
   "schema": "eventlive.release-deploy-rollback.v1",
-  "generated_at": "2026-07-08T01:52:43.897Z",
-  "status": "PASS",
+  "generated_at": "2026-07-10T06:26:06.139Z",
+  "status": "PARTIAL",
   "release": {
-    "commit": "c2ea60755b49fb88e3e5f1d2811000de11062402",
-    "branch": "main",
+    "commit": "0a60cfcdab84cf8ce75cfff6cab1f7f43ac1f55a",
+    "branch": "codex/eventlive-final-launch-radar",
     "remote": "https://github.com/badroneai/eventlive-sa.git",
-    "workflow_status": "success",
-    "workflow_url": "https://github.com/badroneai/eventlive-sa/actions/runs/28911551876",
+    "workflow_status": "pending",
+    "workflow_url": null,
     "public_url": "https://eventme.live/",
-    "public_verify_status": "success",
-    "rollback_drill_status": "documented",
-    "rollback_drill_reference": "ROLLBACK-RUNBOOK.md + GitHub Actions release verification evidence"
+    "public_verify_status": "pending",
+    "rollback_drill_status": "pending",
+    "rollback_drill_reference": "ROLLBACK-RUNBOOK.md"
   },
   "checks": [
     {
       "id": "git_commit",
       "label": "Current git commit is known",
       "ok": true,
-      "evidence": "c2ea60755b49fb88e3e5f1d2811000de11062402"
+      "evidence": "0a60cfcdab84cf8ce75cfff6cab1f7f43ac1f55a"
     },
     {
       "id": "deploy_workflow",
@@ -36,26 +36,30 @@
       "id": "readiness_gate_scope",
       "label": "Delivery standard exists with only release/owner-reserved completion remaining",
       "ok": true,
-      "evidence": "reports/delivery-readiness-standard-status.json verdict=NOT_READY"
+      "evidence": "reports/delivery-readiness-standard-status.json verdict=READY_WITH_RESERVED_ITEMS"
     },
     {
       "id": "workflow_success",
       "label": "Deployment workflow succeeded after push",
-      "ok": true,
-      "evidence": "https://github.com/badroneai/eventlive-sa/actions/runs/28911551876"
+      "ok": false,
+      "evidence": "pending external GitHub Actions evidence"
     },
     {
       "id": "public_verify",
       "label": "Public production URL was verified after deploy",
-      "ok": true,
+      "ok": false,
       "evidence": "https://eventme.live/"
     },
     {
       "id": "rollback_drill",
       "label": "Rollback drill/runbook is documented for this release",
-      "ok": true,
-      "evidence": "ROLLBACK-RUNBOOK.md + GitHub Actions release verification evidence"
+      "ok": false,
+      "evidence": "ROLLBACK-RUNBOOK.md"
     }
   ],
-  "remaining": []
+  "remaining": [
+    "Deployment workflow succeeded after push",
+    "Public production URL was verified after deploy",
+    "Rollback drill/runbook is documented for this release"
+  ]
 }

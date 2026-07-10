@@ -1,25 +1,25 @@
 # EventLive Official Resolver Report
 
-- generated_at: 2026-07-10T02:18:08.911Z
+- generated_at: 2026-07-10T06:58:17.502Z
 - source_ops_report: reports/source-ops-report.json
 - leads_seen: 10
 - resolver_tasks: 10
-- high_priority: 5
+- high_priority: 1
 
 ## Resolver Tasks
 
 | Priority | Lead | Source | City | Quality | Target sources | Next action |
 |---:|---|---|---|---|---|---|
 | 132 | Dubai Property Expo in Al Khobar | Eventbrite Saudi Arabia | Khobar | strong-lead/70 | dhahran-expo-calendar, ricec-events, sdaia-calendar-events, asharqia-chamber-events, abha-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 115 | Big 5 Construct Saudi | Eye of Riyadh Events | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, saudi-water-authority-events, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 115 | Global Proptech Summit 2026 | Eye of Riyadh Events | Riyadh | strong-lead/70 | ricec-events, sdaia-calendar-events, dhahran-expo-calendar, rfecc-whats-on, abha-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 115 | HRSE KSA | Eye of Riyadh Events | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, saudi-water-authority-events, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 115 | Smart Data & AI Summit | Eye of Riyadh Events | Riyadh | strong-lead/70 | ricec-events, sdaia-calendar-events, dhahran-expo-calendar, rfecc-whats-on, abha-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 107 | 12th Middle East Banking AI & Analytics Summit 2026 | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | ricec-events, sdaia-calendar-events, dhahran-expo-calendar, rfecc-whats-on, abha-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 107 | 15th Middle East Enterprise AI & Analytics Summit | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | ricec-events, sdaia-calendar-events, dhahran-expo-calendar, rfecc-whats-on, abha-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 107 | Family Office Investment Summit | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | ricec-events, asharqia-chamber-events, dhahran-expo-calendar, jcci-events-center, rfecc-whats-on | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 107 | Jeddah Fintech Week 2026 | Eventbrite Saudi Arabia | Jeddah | strong-lead/70 | abha-chamber-events, baha-chamber-events, future-skills-catalog, hail-chamber-events, invest-saudi-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 105 | HVAC R Saudi Arabia | Eye of Riyadh Events | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, saudi-water-authority-events, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 105 | Saudi FM & Clean | Eye of Riyadh Events | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, saudi-water-authority-events, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 97 | Family Office Investment Meeting | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | saudi-contractors-authority-events, asharqia-chamber-events, invest-saudi-events, jcci-events-center, jouf-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 97 | Sucession Planning Program | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | code-mcit-programs, cst-events-news, diriyah-season, enjoy-saudi-events, future-skills-catalog | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 97 | Information Session With IE University Saudi Arabia in Riyadh | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | code-mcit-programs, cst-events-news, diriyah-season, enjoy-saudi-events, fii10-official-program | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 97 | Sucession Planning Program | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | code-mcit-programs, cst-events-news, diriyah-season, enjoy-saudi-events, fii10-official-program | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 87 | Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨ | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | misk-hub-events, enjoy-saudi-events, riyadh-city-events, riyadh-season, platinumlist-saudi-city-network | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 
 ## Search Pack
 
@@ -34,49 +34,27 @@
 - ["Dubai Property Expo in Al Khobar" "Khobar" organizer](https://www.google.com/search?q=%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22%20organizer)
 - ["Dubai Property Expo in Al Khobar" "Khobar" tickets](https://www.google.com/search?q=%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22%20tickets)
 
-### Big 5 Construct Saudi
+### 12th Middle East Banking AI & Analytics Summit 2026
 
-- [site:rfecc.sa "Big 5 Construct Saudi" "Riyadh"](https://www.google.com/search?q=site%3Arfecc.sa%20%22Big%205%20Construct%20Saudi%22%20%22Riyadh%22)
-- [site:ricec.com "Big 5 Construct Saudi" "Riyadh"](https://www.google.com/search?q=site%3Aricec.com%20%22Big%205%20Construct%20Saudi%22%20%22Riyadh%22)
-- [site:dhahranexpo.com.sa "Big 5 Construct Saudi" "Riyadh"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Big%205%20Construct%20Saudi%22%20%22Riyadh%22)
-- [site:swa.gov.sa "Big 5 Construct Saudi" "Riyadh"](https://www.google.com/search?q=site%3Aswa.gov.sa%20%22Big%205%20Construct%20Saudi%22%20%22Riyadh%22)
-- [site:sdaia.gov.sa "Big 5 Construct Saudi" "Riyadh"](https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Big%205%20Construct%20Saudi%22%20%22Riyadh%22)
-- ["Big 5 Construct Saudi" "Riyadh" official](https://www.google.com/search?q=%22Big%205%20Construct%20Saudi%22%20%22Riyadh%22%20official)
-- ["Big 5 Construct Saudi" "Riyadh" organizer](https://www.google.com/search?q=%22Big%205%20Construct%20Saudi%22%20%22Riyadh%22%20organizer)
-- ["Big 5 Construct Saudi" "Riyadh" tickets](https://www.google.com/search?q=%22Big%205%20Construct%20Saudi%22%20%22Riyadh%22%20tickets)
+- [site:ricec.com "12th Middle East Banking AI & Analytics Summit 2026" "Riyadh"](https://www.google.com/search?q=site%3Aricec.com%20%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202026%22%20%22Riyadh%22)
+- [site:sdaia.gov.sa "12th Middle East Banking AI & Analytics Summit 2026" "Riyadh"](https://www.google.com/search?q=site%3Asdaia.gov.sa%20%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202026%22%20%22Riyadh%22)
+- [site:dhahranexpo.com.sa "12th Middle East Banking AI & Analytics Summit 2026" "Riyadh"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202026%22%20%22Riyadh%22)
+- [site:rfecc.sa "12th Middle East Banking AI & Analytics Summit 2026" "Riyadh"](https://www.google.com/search?q=site%3Arfecc.sa%20%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202026%22%20%22Riyadh%22)
+- [site:abhacci.org.sa "12th Middle East Banking AI & Analytics Summit 2026" "Riyadh"](https://www.google.com/search?q=site%3Aabhacci.org.sa%20%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202026%22%20%22Riyadh%22)
+- ["12th Middle East Banking AI & Analytics Summit 2026" "Riyadh" official](https://www.google.com/search?q=%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202026%22%20%22Riyadh%22%20official)
+- ["12th Middle East Banking AI & Analytics Summit 2026" "Riyadh" organizer](https://www.google.com/search?q=%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202026%22%20%22Riyadh%22%20organizer)
+- ["12th Middle East Banking AI & Analytics Summit 2026" "Riyadh" tickets](https://www.google.com/search?q=%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202026%22%20%22Riyadh%22%20tickets)
 
-### Global Proptech Summit 2026
+### 15th Middle East Enterprise AI & Analytics Summit
 
-- [site:ricec.com "Global Proptech Summit 2026" "Riyadh"](https://www.google.com/search?q=site%3Aricec.com%20%22Global%20Proptech%20Summit%202026%22%20%22Riyadh%22)
-- [site:sdaia.gov.sa "Global Proptech Summit 2026" "Riyadh"](https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Global%20Proptech%20Summit%202026%22%20%22Riyadh%22)
-- [site:dhahranexpo.com.sa "Global Proptech Summit 2026" "Riyadh"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Global%20Proptech%20Summit%202026%22%20%22Riyadh%22)
-- [site:rfecc.sa "Global Proptech Summit 2026" "Riyadh"](https://www.google.com/search?q=site%3Arfecc.sa%20%22Global%20Proptech%20Summit%202026%22%20%22Riyadh%22)
-- [site:abhacci.org.sa "Global Proptech Summit 2026" "Riyadh"](https://www.google.com/search?q=site%3Aabhacci.org.sa%20%22Global%20Proptech%20Summit%202026%22%20%22Riyadh%22)
-- ["Global Proptech Summit 2026" "Riyadh" official](https://www.google.com/search?q=%22Global%20Proptech%20Summit%202026%22%20%22Riyadh%22%20official)
-- ["Global Proptech Summit 2026" "Riyadh" organizer](https://www.google.com/search?q=%22Global%20Proptech%20Summit%202026%22%20%22Riyadh%22%20organizer)
-- ["Global Proptech Summit 2026" "Riyadh" tickets](https://www.google.com/search?q=%22Global%20Proptech%20Summit%202026%22%20%22Riyadh%22%20tickets)
-
-### HRSE KSA
-
-- [site:rfecc.sa "HRSE KSA" "Riyadh"](https://www.google.com/search?q=site%3Arfecc.sa%20%22HRSE%20KSA%22%20%22Riyadh%22)
-- [site:ricec.com "HRSE KSA" "Riyadh"](https://www.google.com/search?q=site%3Aricec.com%20%22HRSE%20KSA%22%20%22Riyadh%22)
-- [site:dhahranexpo.com.sa "HRSE KSA" "Riyadh"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22HRSE%20KSA%22%20%22Riyadh%22)
-- [site:swa.gov.sa "HRSE KSA" "Riyadh"](https://www.google.com/search?q=site%3Aswa.gov.sa%20%22HRSE%20KSA%22%20%22Riyadh%22)
-- [site:sdaia.gov.sa "HRSE KSA" "Riyadh"](https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22HRSE%20KSA%22%20%22Riyadh%22)
-- ["HRSE KSA" "Riyadh" official](https://www.google.com/search?q=%22HRSE%20KSA%22%20%22Riyadh%22%20official)
-- ["HRSE KSA" "Riyadh" organizer](https://www.google.com/search?q=%22HRSE%20KSA%22%20%22Riyadh%22%20organizer)
-- ["HRSE KSA" "Riyadh" tickets](https://www.google.com/search?q=%22HRSE%20KSA%22%20%22Riyadh%22%20tickets)
-
-### Smart Data & AI Summit
-
-- [site:ricec.com "Smart Data & AI Summit" "Riyadh"](https://www.google.com/search?q=site%3Aricec.com%20%22Smart%20Data%20%26%20AI%20Summit%22%20%22Riyadh%22)
-- [site:sdaia.gov.sa "Smart Data & AI Summit" "Riyadh"](https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Smart%20Data%20%26%20AI%20Summit%22%20%22Riyadh%22)
-- [site:dhahranexpo.com.sa "Smart Data & AI Summit" "Riyadh"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Smart%20Data%20%26%20AI%20Summit%22%20%22Riyadh%22)
-- [site:rfecc.sa "Smart Data & AI Summit" "Riyadh"](https://www.google.com/search?q=site%3Arfecc.sa%20%22Smart%20Data%20%26%20AI%20Summit%22%20%22Riyadh%22)
-- [site:abhacci.org.sa "Smart Data & AI Summit" "Riyadh"](https://www.google.com/search?q=site%3Aabhacci.org.sa%20%22Smart%20Data%20%26%20AI%20Summit%22%20%22Riyadh%22)
-- ["Smart Data & AI Summit" "Riyadh" official](https://www.google.com/search?q=%22Smart%20Data%20%26%20AI%20Summit%22%20%22Riyadh%22%20official)
-- ["Smart Data & AI Summit" "Riyadh" organizer](https://www.google.com/search?q=%22Smart%20Data%20%26%20AI%20Summit%22%20%22Riyadh%22%20organizer)
-- ["Smart Data & AI Summit" "Riyadh" tickets](https://www.google.com/search?q=%22Smart%20Data%20%26%20AI%20Summit%22%20%22Riyadh%22%20tickets)
+- [site:ricec.com "15th Middle East Enterprise AI & Analytics Summit" "Riyadh"](https://www.google.com/search?q=site%3Aricec.com%20%2215th%20Middle%20East%20Enterprise%20AI%20%26%20Analytics%20Summit%22%20%22Riyadh%22)
+- [site:sdaia.gov.sa "15th Middle East Enterprise AI & Analytics Summit" "Riyadh"](https://www.google.com/search?q=site%3Asdaia.gov.sa%20%2215th%20Middle%20East%20Enterprise%20AI%20%26%20Analytics%20Summit%22%20%22Riyadh%22)
+- [site:dhahranexpo.com.sa "15th Middle East Enterprise AI & Analytics Summit" "Riyadh"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%2215th%20Middle%20East%20Enterprise%20AI%20%26%20Analytics%20Summit%22%20%22Riyadh%22)
+- [site:rfecc.sa "15th Middle East Enterprise AI & Analytics Summit" "Riyadh"](https://www.google.com/search?q=site%3Arfecc.sa%20%2215th%20Middle%20East%20Enterprise%20AI%20%26%20Analytics%20Summit%22%20%22Riyadh%22)
+- [site:abhacci.org.sa "15th Middle East Enterprise AI & Analytics Summit" "Riyadh"](https://www.google.com/search?q=site%3Aabhacci.org.sa%20%2215th%20Middle%20East%20Enterprise%20AI%20%26%20Analytics%20Summit%22%20%22Riyadh%22)
+- ["15th Middle East Enterprise AI & Analytics Summit" "Riyadh" official](https://www.google.com/search?q=%2215th%20Middle%20East%20Enterprise%20AI%20%26%20Analytics%20Summit%22%20%22Riyadh%22%20official)
+- ["15th Middle East Enterprise AI & Analytics Summit" "Riyadh" organizer](https://www.google.com/search?q=%2215th%20Middle%20East%20Enterprise%20AI%20%26%20Analytics%20Summit%22%20%22Riyadh%22%20organizer)
+- ["15th Middle East Enterprise AI & Analytics Summit" "Riyadh" tickets](https://www.google.com/search?q=%2215th%20Middle%20East%20Enterprise%20AI%20%26%20Analytics%20Summit%22%20%22Riyadh%22%20tickets)
 
 ### Family Office Investment Summit
 
@@ -89,6 +67,17 @@
 - ["Family Office Investment Summit" "Riyadh" organizer](https://www.google.com/search?q=%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22%20organizer)
 - ["Family Office Investment Summit" "Riyadh" tickets](https://www.google.com/search?q=%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22%20tickets)
 
+### Jeddah Fintech Week 2026
+
+- [site:abhacci.org.sa "Jeddah Fintech Week 2026" "Jeddah"](https://www.google.com/search?q=site%3Aabhacci.org.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22)
+- [site:bcci.org.sa "Jeddah Fintech Week 2026" "Jeddah"](https://www.google.com/search?q=site%3Abcci.org.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22)
+- [site:futureskills.mcit.gov.sa "Jeddah Fintech Week 2026" "Jeddah"](https://www.google.com/search?q=site%3Afutureskills.mcit.gov.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22)
+- [site:hc.org.sa "Jeddah Fintech Week 2026" "Jeddah"](https://www.google.com/search?q=site%3Ahc.org.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22)
+- [site:investsaudi.sa "Jeddah Fintech Week 2026" "Jeddah"](https://www.google.com/search?q=site%3Ainvestsaudi.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22)
+- ["Jeddah Fintech Week 2026" "Jeddah" official](https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20official)
+- ["Jeddah Fintech Week 2026" "Jeddah" organizer](https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20organizer)
+- ["Jeddah Fintech Week 2026" "Jeddah" tickets](https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20tickets)
+
 ### HVAC R Saudi Arabia
 
 - [site:rfecc.sa "HVAC R Saudi Arabia" "Riyadh"](https://www.google.com/search?q=site%3Arfecc.sa%20%22HVAC%20R%20Saudi%20Arabia%22%20%22Riyadh%22)
@@ -99,17 +88,6 @@
 - ["HVAC R Saudi Arabia" "Riyadh" official](https://www.google.com/search?q=%22HVAC%20R%20Saudi%20Arabia%22%20%22Riyadh%22%20official)
 - ["HVAC R Saudi Arabia" "Riyadh" organizer](https://www.google.com/search?q=%22HVAC%20R%20Saudi%20Arabia%22%20%22Riyadh%22%20organizer)
 - ["HVAC R Saudi Arabia" "Riyadh" tickets](https://www.google.com/search?q=%22HVAC%20R%20Saudi%20Arabia%22%20%22Riyadh%22%20tickets)
-
-### Saudi FM & Clean
-
-- [site:rfecc.sa "Saudi FM & Clean" "Riyadh"](https://www.google.com/search?q=site%3Arfecc.sa%20%22Saudi%20FM%20%26%20Clean%22%20%22Riyadh%22)
-- [site:ricec.com "Saudi FM & Clean" "Riyadh"](https://www.google.com/search?q=site%3Aricec.com%20%22Saudi%20FM%20%26%20Clean%22%20%22Riyadh%22)
-- [site:dhahranexpo.com.sa "Saudi FM & Clean" "Riyadh"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Saudi%20FM%20%26%20Clean%22%20%22Riyadh%22)
-- [site:swa.gov.sa "Saudi FM & Clean" "Riyadh"](https://www.google.com/search?q=site%3Aswa.gov.sa%20%22Saudi%20FM%20%26%20Clean%22%20%22Riyadh%22)
-- [site:sdaia.gov.sa "Saudi FM & Clean" "Riyadh"](https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Saudi%20FM%20%26%20Clean%22%20%22Riyadh%22)
-- ["Saudi FM & Clean" "Riyadh" official](https://www.google.com/search?q=%22Saudi%20FM%20%26%20Clean%22%20%22Riyadh%22%20official)
-- ["Saudi FM & Clean" "Riyadh" organizer](https://www.google.com/search?q=%22Saudi%20FM%20%26%20Clean%22%20%22Riyadh%22%20organizer)
-- ["Saudi FM & Clean" "Riyadh" tickets](https://www.google.com/search?q=%22Saudi%20FM%20%26%20Clean%22%20%22Riyadh%22%20tickets)
 
 ### Family Office Investment Meeting
 
@@ -122,14 +100,36 @@
 - ["Family Office Investment Meeting" "Riyadh" organizer](https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20organizer)
 - ["Family Office Investment Meeting" "Riyadh" tickets](https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20tickets)
 
+### Information Session With IE University Saudi Arabia in Riyadh
+
+- [site:code.mcit.gov.sa "Information Session With IE University Saudi Arabia in Riyadh" "Riyadh"](https://www.google.com/search?q=site%3Acode.mcit.gov.sa%20%22Information%20Session%20With%20IE%20University%20Saudi%20Arabia%20in%20Riyadh%22%20%22Riyadh%22)
+- [site:cst.gov.sa "Information Session With IE University Saudi Arabia in Riyadh" "Riyadh"](https://www.google.com/search?q=site%3Acst.gov.sa%20%22Information%20Session%20With%20IE%20University%20Saudi%20Arabia%20in%20Riyadh%22%20%22Riyadh%22)
+- [site:diriyahseason.sa "Information Session With IE University Saudi Arabia in Riyadh" "Riyadh"](https://www.google.com/search?q=site%3Adiriyahseason.sa%20%22Information%20Session%20With%20IE%20University%20Saudi%20Arabia%20in%20Riyadh%22%20%22Riyadh%22)
+- [site:enjoy.sa "Information Session With IE University Saudi Arabia in Riyadh" "Riyadh"](https://www.google.com/search?q=site%3Aenjoy.sa%20%22Information%20Session%20With%20IE%20University%20Saudi%20Arabia%20in%20Riyadh%22%20%22Riyadh%22)
+- [site:fii-institute.org "Information Session With IE University Saudi Arabia in Riyadh" "Riyadh"](https://www.google.com/search?q=site%3Afii-institute.org%20%22Information%20Session%20With%20IE%20University%20Saudi%20Arabia%20in%20Riyadh%22%20%22Riyadh%22)
+- ["Information Session With IE University Saudi Arabia in Riyadh" "Riyadh" official](https://www.google.com/search?q=%22Information%20Session%20With%20IE%20University%20Saudi%20Arabia%20in%20Riyadh%22%20%22Riyadh%22%20official)
+- ["Information Session With IE University Saudi Arabia in Riyadh" "Riyadh" organizer](https://www.google.com/search?q=%22Information%20Session%20With%20IE%20University%20Saudi%20Arabia%20in%20Riyadh%22%20%22Riyadh%22%20organizer)
+- ["Information Session With IE University Saudi Arabia in Riyadh" "Riyadh" tickets](https://www.google.com/search?q=%22Information%20Session%20With%20IE%20University%20Saudi%20Arabia%20in%20Riyadh%22%20%22Riyadh%22%20tickets)
+
 ### Sucession Planning Program
 
 - [site:code.mcit.gov.sa "Sucession Planning Program" "Riyadh"](https://www.google.com/search?q=site%3Acode.mcit.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22)
 - [site:cst.gov.sa "Sucession Planning Program" "Riyadh"](https://www.google.com/search?q=site%3Acst.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22)
 - [site:diriyahseason.sa "Sucession Planning Program" "Riyadh"](https://www.google.com/search?q=site%3Adiriyahseason.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22)
 - [site:enjoy.sa "Sucession Planning Program" "Riyadh"](https://www.google.com/search?q=site%3Aenjoy.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22)
-- [site:futureskills.mcit.gov.sa "Sucession Planning Program" "Riyadh"](https://www.google.com/search?q=site%3Afutureskills.mcit.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22)
+- [site:fii-institute.org "Sucession Planning Program" "Riyadh"](https://www.google.com/search?q=site%3Afii-institute.org%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22)
 - ["Sucession Planning Program" "Riyadh" official](https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20official)
 - ["Sucession Planning Program" "Riyadh" organizer](https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20organizer)
 - ["Sucession Planning Program" "Riyadh" tickets](https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20tickets)
+
+### Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨
+
+- [site:hub.misk.org.sa "Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh"](https://www.google.com/search?q=site%3Ahub.misk.org.sa%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22)
+- [site:enjoy.sa "Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh"](https://www.google.com/search?q=site%3Aenjoy.sa%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22)
+- [site:riyadh.sa "Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh"](https://www.google.com/search?q=site%3Ariyadh.sa%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22)
+- [site:riyadhseason.com "Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh"](https://www.google.com/search?q=site%3Ariyadhseason.com%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22)
+- [site:platinumlist.net "Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh"](https://www.google.com/search?q=site%3Aplatinumlist.net%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22)
+- ["Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh" official](https://www.google.com/search?q=%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22%20official)
+- ["Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh" organizer](https://www.google.com/search?q=%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22%20organizer)
+- ["Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh" tickets](https://www.google.com/search?q=%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22%20tickets)
 

@@ -7,7 +7,7 @@ X-WR-CALNAME:فعاليات الرياض | EventLive
 X-WR-TIMEZONE:Asia/Riyadh
 BEGIN:VEVENT
 UID:event-skill-development-initiative@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20210714T000000Z
 DTEND:20301231T000000Z
 SUMMARY:Skill Development Initiative
@@ -17,7 +17,7 @@ URL:https://eventme.live/events/event-skill-development-initiative.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-sitar@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20220921T000000Z
 DTEND:20301231T000000Z
 SUMMARY:SITAR
@@ -27,7 +27,7 @@ URL:https://eventme.live/events/event-sitar.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-poppy-playtime@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20251010T130000Z
 DTEND:20261208T205900Z
 SUMMARY:Poppy Playtime
@@ -37,7 +37,7 @@ URL:https://eventme.live/events/event-poppy-playtime.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-riyadh-season-blvd-city@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20251010T130000Z
 DTEND:20261008T230000Z
 SUMMARY:Riyadh Season: BLVD City
@@ -47,7 +47,7 @@ URL:https://eventme.live/events/event-riyadh-season-blvd-city.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-the-groves@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20251105T130000Z
 DTEND:20260718T230000Z
 SUMMARY:The Groves
@@ -57,7 +57,7 @@ URL:https://eventme.live/events/event-the-groves.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-immersive-experience-flying-over-saudi@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20251224T132000Z
 DTEND:20261224T202000Z
 SUMMARY:Immersive Experience: Flying Over Saudi
@@ -67,7 +67,7 @@ URL:https://eventme.live/events/event-immersive-experience-flying-over-saudi.htm
 END:VEVENT
 BEGIN:VEVENT
 UID:event-arabic-language-exhibition-28@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260101T050000Z
 DTEND:20261231T130000Z
 SUMMARY:Arabic Language Exhibition 28
@@ -77,7 +77,7 @@ URL:https://eventme.live/events/event-arabic-language-exhibition-28.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-arabic-language-exhibition-for-kids@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260101T050000Z
 DTEND:20261231T130000Z
 SUMMARY:Arabic Language Exhibition for kids
@@ -87,7 +87,7 @@ URL:https://eventme.live/events/event-arabic-language-exhibition-for-kids.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-horses-and-equestrian-heritage-exhibition@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260224T183000Z
 DTEND:20260830T205500Z
 SUMMARY:Horses and Equestrian Heritage Exhibition
@@ -96,8 +96,18 @@ LOCATION:King Abdulaziz Public Library (Khurais Branch)\, Riyadh
 URL:https://eventme.live/events/event-horses-and-equestrian-heritage-exhibition.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-سكة-الأطعمة@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260303T210000Z
+DTEND:20260815T205900Z
+SUMMARY:سكة الأطعمة
+DESCRIPTION:سكة الأطعمة هي وجهة دائمة تجمع نخبة من المطاعم، لتقدّم للزوار تجربة طعام متكاملة في أجواء نابضة بالحياة. سكة الأطعمة ضمن رياضة وفعاليات جماهيرية في الرياض. تبدأ الفعالية ٠٤‏/٠٣‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ١٥‏/٠٨‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-سكة-الأطعمة.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-misk-local-traineeship-program@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260401T060000Z
 DTEND:20261231T150000Z
 SUMMARY:Misk Local Traineeship Program
@@ -106,8 +116,18 @@ LOCATION:In-Person
 URL:https://eventme.live/events/event-misk-local-traineeship-program.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-صندوق-أسامة-من-مخرج-ثمانية@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260504T210000Z
+DTEND:20261231T205900Z
+SUMMARY:صندوق أسامة من مخرج ثمانية
+DESCRIPTION:ليلة صندوق أسامة تجربة تفاعلية كوميدية، يشارك فيها الجمهور أفكارهم بشكل مجهول، ليحوّلها أسامة بازيد إلى نكت مرتجلة ولحظات ممتعة.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-صندوق-أسامة-من-مخرج-ثمانية.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-solo-art-exhibition-series@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260506T130000Z
 DTEND:20260801T190000Z
 SUMMARY:Solo Art Exhibition Series
@@ -117,7 +137,7 @@ URL:https://eventme.live/events/event-solo-art-exhibition-series.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-eishha-live-it-fan-zone-for-fifa-world-cup-2026@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260611T150000Z
 DTEND:20260719T205500Z
 SUMMARY:Eishha (Live It) Fan Zone For FIFA World Cup 2026
@@ -127,7 +147,7 @@ URL:https://eventme.live/events/event-eishha-live-it-fan-zone-for-fifa-world-cup
 END:VEVENT
 BEGIN:VEVENT
 UID:event-coca-cola-fan-zone-for-fifa-world-cup-2026@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260611T150000Z
 DTEND:20260719T000000Z
 SUMMARY:Coca-Cola Fan Zone For FIFA World Cup 2026
@@ -137,7 +157,7 @@ URL:https://eventme.live/events/event-coca-cola-fan-zone-for-fifa-world-cup-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:event-sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260611T160000Z
 DTEND:20260718T220000Z
 SUMMARY:Sikkat Al-Atimah (Street Food) Fan Zone – FIFA World Cup 2026
@@ -147,7 +167,7 @@ URL:https://eventme.live/events/event-sikkat-al-atimah-street-food-fan-zone-fifa
 END:VEVENT
 BEGIN:VEVENT
 UID:event-world-cup-2026-fan-zone-at-kimpton-kafd@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260611T160000Z
 DTEND:20260809T220000Z
 SUMMARY:World Cup 2026 Fan Zone at Kimpton KAFD
@@ -157,7 +177,7 @@ URL:https://eventme.live/events/event-world-cup-2026-fan-zone-at-kimpton-kafd.ht
 END:VEVENT
 BEGIN:VEVENT
 UID:event-solitaire-fan-zone-fifa-world-cup-2026@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260611T160000Z
 DTEND:20260718T230000Z
 SUMMARY:Solitaire Fan Zone – FIFA World Cup 2026
@@ -167,7 +187,7 @@ URL:https://eventme.live/events/event-solitaire-fan-zone-fifa-world-cup-2026.htm
 END:VEVENT
 BEGIN:VEVENT
 UID:event-ruh-space@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260613T160000Z
 DTEND:20260718T230000Z
 SUMMARY:Ruh Space
@@ -177,7 +197,7 @@ URL:https://eventme.live/events/event-ruh-space.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-laysen-fan-zone-fifa-world-cup-2026@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260614T160000Z
 DTEND:20260718T220000Z
 SUMMARY:Laysen Fan Zone – FIFA World Cup 2026
@@ -187,7 +207,7 @@ URL:https://eventme.live/events/event-laysen-fan-zone-fifa-world-cup-2026.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-summer-camp-at-the-national-museum-summer-wonders@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260625T113000Z
 DTEND:20260822T173000Z
 SUMMARY:Summer Camp at the National Museum: Summer Wonders
@@ -197,7 +217,7 @@ URL:https://eventme.live/events/event-summer-camp-at-the-national-museum-summer-
 END:VEVENT
 BEGIN:VEVENT
 UID:event-art-futures-camp-2026-diriyah-art-futures@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260628T070000Z
 DTEND:20260716T140000Z
 SUMMARY:Art Futures Camp 2026 – Diriyah Art Futures
@@ -206,8 +226,18 @@ LOCATION:Diriyah Art Futures (DAF)
 URL:https://eventme.live/events/event-art-futures-camp-2026-diriyah-art-futures.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-معرض-الصيف-للفنون@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260630T210000Z
+DTEND:20260901T205900Z
+SUMMARY:معرض الصيف للفنون
+DESCRIPTION:اكتشف معرض الصيف للفنون، منصة تعاونية تستعرض أعمال فنانين سعوديين من مختلف المناطق والمستويات في المملكة العربية السعودية.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-معرض-الصيف-للفنون.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-prince-faisal-bin-fahd-art-exhibition-summer-2026@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260701T130000Z
 DTEND:20260801T190000Z
 SUMMARY:Prince Faisal Bin Fahd Art Exhibition: Summer 2026
@@ -217,7 +247,7 @@ URL:https://eventme.live/events/event-prince-faisal-bin-fahd-art-exhibition-summ
 END:VEVENT
 BEGIN:VEVENT
 UID:event-registration-for-international-research-competition-on-non-terrestrial-n@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260703T210100Z
 DTEND:20260810T205500Z
 SUMMARY:Registration for International Research Competition on Non-Terrestrial Networks
@@ -227,7 +257,7 @@ URL:https://eventme.live/events/event-registration-for-international-research-co
 END:VEVENT
 BEGIN:VEVENT
 UID:event-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260705T150000Z
 DTEND:20260820T180000Z
 SUMMARY:معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية
@@ -236,8 +266,58 @@ LOCATION:الرياض - المقر الرئيسي
 URL:https://eventme.live/events/event-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-ورث-الفن@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260705T210000Z
+DTEND:20260822T205900Z
+SUMMARY:ورث الفن
+DESCRIPTION:استكشف فعالية ورث الفن، احتفاء بالموروث الثقاا السعودي من خال ممرات فنية غامرة، وورش تفاعلية، وتجارب حرفية تُعيد تقديم الأصالة بلغة الفن المعاصر.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-ورث-الفن.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-taste-of-the-world@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260705T210000Z
+DTEND:20260822T205900Z
+SUMMARY:Taste of the World
+DESCRIPTION:استمتع بمهرجان ،Taste of the World تجربة طعام عالمية تجمع نكهات من مختلف دول العالم في مكان واحد، مع أكشاك طعام وطهاة عالماين وتجارب تذوّق حيّة.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-taste-of-the-world.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-مهرجان-المأكولات-الشعبية@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260705T210000Z
+DTEND:20260822T205900Z
+SUMMARY:مهرجان المأكولات الشعبية
+DESCRIPTION:احتفل بثقافة الطعام المحلي في مهرجان المأكولات الشعبية، حيث يجتمع الطهاة وااسر المنتجة استعراض تنوع المطبخ السعودي الأصيل في أجواء عائلية.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-مهرجان-المأكولات-الشعبية.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-فعالية-رمي-السهام@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260705T210000Z
+DTEND:20260822T205900Z
+SUMMARY:فعالية رمي السهام
+DESCRIPTION:استمتع بفعالية رمي السهام، تجربة رياضية تفاعلية تجمع بين التركيز والمهارة، مع منافسات منظمة بإشراف متخصصين لجميع الفئات العمرية.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-فعالية-رمي-السهام.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-عروض-الفنون-الأدائية-التقليدية@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260705T210000Z
+DTEND:20260822T205900Z
+SUMMARY:عروض الفنون الأدائية التقليدية
+DESCRIPTION:استمتع بعروض الفنون الأدائية التقليدية، تُقدام أمام الجمهور مباشرة في فقرات شعبية قصيرة تتكرر على مدار الفعالية. عروض الفنون الأدائية التقليدية ضمن ثقافة وفنون في الرياض. تبدأ الفعالية ٠٦‏/٠٧‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ٢٢‏/٠٨‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-عروض-الفنون-الأدائية-التقليدية.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-esports-world-cup@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260706T140000Z
 DTEND:20260823T190000Z
 SUMMARY:Esports World Cup
@@ -247,7 +327,7 @@ URL:https://eventme.live/events/event-esports-world-cup.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-unstable@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260709T210000Z
 DTEND:20260710T210000Z
 SUMMARY:Unstable
@@ -256,8 +336,18 @@ LOCATION:Riyadh
 URL:https://eventme.live/events/event-unstable.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-عمر-الجمل-حفلة-ستاند-أب-كوميدي@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260709T210000Z
+DTEND:20260710T205900Z
+SUMMARY:عمر الجمل - حفلة ستاند أب كوميدي
+DESCRIPTION:يقدّم "كام فاضي" عرض عمر الجمل، ستاند أب تفاعلي يصبح فيه الجمهور جزءاً من العرض. عمر الجمل - حفلة ستاند أب كوميدي ضمن ترفيه وعائلات في الرياض. تبدأ الفعالية ١٠‏/٠٧‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ١٠‏/٠٧‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-عمر-الجمل-حفلة-ستاند-أب-كوميدي.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-pfl-mena-fight-night@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260710T130000Z
 DTEND:20260710T190000Z
 SUMMARY:PFL MENA Fight Night
@@ -267,7 +357,7 @@ URL:https://eventme.live/events/event-pfl-mena-fight-night.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-beast-house@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260710T180000Z
 DTEND:20260711T000000Z
 SUMMARY:Beast House
@@ -277,7 +367,7 @@ URL:https://eventme.live/events/event-beast-house.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-mishkat-summer-camp@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260712T060000Z
 DTEND:20260806T100000Z
 SUMMARY:Mishkat Summer Camp
@@ -287,7 +377,7 @@ URL:https://eventme.live/events/event-mishkat-summer-camp.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260712T070000Z
 DTEND:20260903T120000Z
 SUMMARY:معسكر هندسة البرمجيات الحديثة وأنظمة الذكاء الاصطناعي
@@ -297,7 +387,7 @@ URL:https://eventme.live/events/event-معسكر-هندسة-البرمجيات-�
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saif-summer-program@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260712T140000Z
 DTEND:20260829T180000Z
 SUMMARY:SAIF Summer Program
@@ -307,7 +397,7 @@ URL:https://eventme.live/events/event-saif-summer-program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-معسكر-هندسة-الدرونز-التطبيقي@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260712T150000Z
 DTEND:20260820T180000Z
 SUMMARY:معسكر هندسة الدرونز التطبيقي
@@ -316,8 +406,18 @@ LOCATION:الرياض - المقر الرئيسي
 URL:https://eventme.live/events/event-معسكر-هندسة-الدرونز-التطبيقي.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-بطولة-المملكة-للبلوت@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260715T210000Z
+DTEND:20260719T205900Z
+SUMMARY:بطولة المملكة للبلوت
+DESCRIPTION:شاهد بطولة المملكة للبلوت، تجمع نخبة الاعبين من مختلف مناطق المملكة في منافسة رفيعة المستوى تبرز المواهب المحلية وتعزز ثقافة الألعاب الذهنية.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-بطولة-المملكة-للبلوت.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-wrth-summer-art-craft-program@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260716T123000Z
 DTEND:20260718T193000Z
 SUMMARY:Wrth Summer Art & Craft Program
@@ -326,8 +426,18 @@ LOCATION:Riyadh Park Mall\, Riyadh
 URL:https://eventme.live/events/event-wrth-summer-art-craft-program.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-اليوم-العالمي-لآيس-كريم-بالتعاون-مع-كلمشي@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260718T210000Z
+DTEND:20260719T205900Z
+SUMMARY:اليوم العالمي لآيس كريم بالتعاون مع كلمشي
+DESCRIPTION:تفعيل خاص بمناسبة اليوم العالمي لآيس كريم بالتعاون مع كلمشي، يتضمن توزيع الأيس كريم، وتجارب تحمل هوية صيف الديرة، ومقابات مع العائات، ومحتوى يوثق اللحظات.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-اليوم-العالمي-لآيس-كريم-بالتعاون-مع-كلمشي.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-معسكر-تصميم-وتصنيع-الحلول-الهندسية@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260719T140000Z
 DTEND:20261015T180000Z
 SUMMARY:معسكر تصميم وتصنيع الحلول الهندسية
@@ -337,7 +447,7 @@ URL:https://eventme.live/events/event-معسكر-تصميم-وتصنيع-الح�
 END:VEVENT
 BEGIN:VEVENT
 UID:event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260721T063000Z
 DTEND:20260722T110000Z
 SUMMARY:تقييم سلامة المنتج التجميلي وملف معلومات المنتج
@@ -346,8 +456,18 @@ LOCATION:Riyadh
 URL:https://eventme.live/events/event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-الأسبوع-الصيني@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260722T210000Z
+DTEND:20260729T205900Z
+SUMMARY:الأسبوع الصيني
+DESCRIPTION:اكتشف الأسبوع الصيني، فعالية ثقافية ترفيهية تستعرض الفنون والتجارب الصينية في أجواء عصرية، تبرز التقارب بين الثقافتين السعودية والصينية.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-الأسبوع-الصيني.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-summer-splash-running-event@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260725T020000Z
 DTEND:20260725T040000Z
 SUMMARY:Summer Splash Running event
@@ -357,7 +477,7 @@ URL:https://eventme.live/events/event-summer-splash-running-event.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260726T070000Z
 DTEND:20261015T120000Z
 SUMMARY:معسكر تطوير مواقع الويب باستخدام Java ودمج تقنيات الذكاء الاصطناعي
@@ -367,7 +487,7 @@ URL:https://eventme.live/events/event-معسكر-تطوير-مواقع-الوي�
 END:VEVENT
 BEGIN:VEVENT
 UID:event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260726T140000Z
 DTEND:20260820T180000Z
 SUMMARY:معسكر تطوير البرمجيات السحابية الاحترافية لسحابة قوقل
@@ -377,7 +497,7 @@ URL:https://eventme.live/events/event-معسكر-تطوير-البرمجيات-�
 END:VEVENT
 BEGIN:VEVENT
 UID:event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260726T143000Z
 DTEND:20261015T183000Z
 SUMMARY:معسكر تطوير تطبيقات الويب باستخدام لغة Python
@@ -386,8 +506,28 @@ LOCATION:الرياض - المقر الرئيسي
 URL:https://eventme.live/events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-أوركسترا-harry-potter@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260727T210000Z
+DTEND:20260801T205900Z
+SUMMARY:أوركسترا Harry Potter
+DESCRIPTION:استمتع بأوركسترا ،Harry Potter عرض موسيقي حي يقدم الموسيقى التصويرية لسلسلة الأفام الشهيرة لعشاق السلسلة ومحبي الموسيقى السينمائية.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-أوركسترا-harry-potter.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-ضحكات-الرياض@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260801T210000Z
+DTEND:20260808T205900Z
+SUMMARY:ضحكات الرياض
+DESCRIPTION:استمتع بعروض ضحكات الرياض، أمسية كوميدية يقدمها نجوم الكوميديا المحليون في عروض فردية على المسرح بأسلوب ساخر وخفيف الظل.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-ضحكات-الرياض.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260802T060000Z
 DTEND:20261008T120000Z
 SUMMARY:معسكر طويق للقطاع الأمني: تطوير البرمجيات
@@ -397,7 +537,7 @@ URL:https://eventme.live/events/event-معسكر-طويق-للقطاع-الأم�
 END:VEVENT
 BEGIN:VEVENT
 UID:event-معسكر-طويق-للقطاع-الأمني-البنية-التحتية@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260802T060000Z
 DTEND:20261001T120000Z
 SUMMARY:معسكر طويق للقطاع الأمني: البنية التحتية
@@ -407,7 +547,7 @@ URL:https://eventme.live/events/event-معسكر-طويق-للقطاع-الأم�
 END:VEVENT
 BEGIN:VEVENT
 UID:event-international-falcon-breeders-auction@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260805T130000Z
 DTEND:20260825T200000Z
 SUMMARY:International Falcon Breeders Auction
@@ -417,7 +557,7 @@ URL:https://eventme.live/events/event-international-falcon-breeders-auction.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-2@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260809T050000Z
 DTEND:20261112T090000Z
 SUMMARY:معسكر تطوير تطبيقات الويب باستخدام لغة Python
@@ -427,7 +567,7 @@ URL:https://eventme.live/events/event-معسكر-تطوير-تطبيقات-ال�
 END:VEVENT
 BEGIN:VEVENT
 UID:event-معسكر-الأنظمة-الذاتية-للدرونز@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260809T150000Z
 DTEND:20260910T180000Z
 SUMMARY:معسكر الأنظمة الذاتية للدرونز
@@ -436,8 +576,28 @@ LOCATION:الرياض - المقر الرئيسي
 URL:https://eventme.live/events/event-معسكر-الأنظمة-الذاتية-للدرونز.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-أوركسترا-game-of-thrones@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260810T210000Z
+DTEND:20260815T205900Z
+SUMMARY:أوركسترا Game of Thrones
+DESCRIPTION:استمتع بأوركسترا ،Game of Thrones عرض موسيقي حي يستحضر الموسيقى التصويرية للمسلسل، بأفضل مقطوعاته عبر جميع المواسم في أجواء كاسيكية سينمائية.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-أوركسترا-game-of-thrones.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-بطولة-أبطال-المملكة-للشطرنج@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260812T210000Z
+DTEND:20260816T205900Z
+SUMMARY:بطولة أبطال المملكة للشطرنج
+DESCRIPTION:شاهد بطولة أبطال المملكة للشطرنج، تجمع نخبة الاعبين من مختلف مناطق المملكة في منافسة رفيعة المستوى تعزز ثقافة الألعاب الذهنية وتبرز المواهب المحلية.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-بطولة-أبطال-المملكة-للشطرنج.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260816T130000Z
 DTEND:20261105T180000Z
 SUMMARY:معسكر تطوير الألعاب والعوالم الافتراضية باستخدام Unreal Engine
@@ -447,7 +607,7 @@ URL:https://eventme.live/events/event-معسكر-تطوير-الألعاب-وا�
 END:VEVENT
 BEGIN:VEVENT
 UID:event-معسكر-تصميم-تجربة-المستخدم-ux-ui@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260823T070000Z
 DTEND:20261015T120000Z
 SUMMARY:معسكر تصميم تجربة المستخدم UX\\UI
@@ -457,7 +617,7 @@ URL:https://eventme.live/events/event-معسكر-تصميم-تجربة-المس�
 END:VEVENT
 BEGIN:VEVENT
 UID:event-معسكر-طويق-السيبراني@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260823T070000Z
 DTEND:20270107T120000Z
 SUMMARY:معسكر طويق السيبراني
@@ -467,7 +627,7 @@ URL:https://eventme.live/events/event-معسكر-طويق-السيبراني.htm
 END:VEVENT
 BEGIN:VEVENT
 UID:event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260823T080000Z
 DTEND:20260917T120000Z
 SUMMARY:معسكر هندسة الحوسبة السحابية باستخدام Google Cloud
@@ -477,7 +637,7 @@ URL:https://eventme.live/events/event-معسكر-هندسة-الحوسبة-ال�
 END:VEVENT
 BEGIN:VEVENT
 UID:event-معسكر-اختبار-البرمجيات-والأتمتة@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260823T150000Z
 DTEND:20261015T190000Z
 SUMMARY:معسكر اختبار البرمجيات والأتمتة
@@ -487,7 +647,7 @@ URL:https://eventme.live/events/event-معسكر-اختبار-البرمجيات
 END:VEVENT
 BEGIN:VEVENT
 UID:event-معسكر-أساسيات-الأمن-السيبراني@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260823T150000Z
 DTEND:20260917T180000Z
 SUMMARY:معسكر أساسيات الأمن السيبراني
@@ -496,8 +656,18 @@ LOCATION:الرياض - المقر الرئيسي
 URL:https://eventme.live/events/event-معسكر-أساسيات-الأمن-السيبراني.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-smart-data-ai-summit@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260826T060000Z
+DTEND:20260827T130000Z
+SUMMARY:Smart Data & AI Summit
+DESCRIPTION:تجمع قمة Smart Data & AI قادة البيانات والذكاء الاصطناعي في الرياض يومي 26 و27 أغسطس 2026، بأجندة رسمية تناقش الذكاء الوكيلي وحوكمة البيانات والتحليلات والمدن الذكية.
+LOCATION:JW Marriott Hotel Riyadh\, Riyadh\, Saudi Arabia
+URL:https://eventme.live/events/event-smart-data-ai-summit.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-saudi-logistic-038-warehousing-expo@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260830T060000Z
 DTEND:20260901T150000Z
 SUMMARY:Saudi Logistic & Warehousing Expo
@@ -507,7 +677,7 @@ URL:https://eventme.live/events/event-saudi-logistic-038-warehousing-expo.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-wood-expo-2026@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260830T060000Z
 DTEND:20260901T150000Z
 SUMMARY:Saudi Wood Expo 2026
@@ -517,7 +687,7 @@ URL:https://eventme.live/events/event-saudi-wood-expo-2026.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-industrial-series-2@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260830T060000Z
 DTEND:20260901T150000Z
 SUMMARY:Saudi Industrial Series
@@ -526,8 +696,48 @@ LOCATION:Riyadh International Convention & Exhibition Center (RICEC) \, Riyadh
 URL:https://eventme.live/events/event-saudi-industrial-series-2.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-hrse-ksa@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260830T060000Z
+DTEND:20260902T141000Z
+SUMMARY:HRSE KSA
+DESCRIPTION:تجمع HRSE KSA قادة الموارد البشرية والعمل والتقنية في الرياض، مع ورش معتمدة ومؤتمرات متخصصة وأجندة رسمية حية من 30 أغسطس إلى 2 سبتمبر 2026.
+LOCATION:The Arena Riyadh\, Riyadh\, Saudi Arabia
+URL:https://eventme.live/events/event-hrse-ksa.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-big-5-construct-saudi@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260830T060000Z
+DTEND:20260902T150000Z
+SUMMARY:Big 5 Construct Saudi
+DESCRIPTION:Big 5 Construct Saudi is the Kingdom&rsquo\;s leading construction event\, serving as a true testament to the country&rsquo\;s growing attractiveness in
+LOCATION:Riyadh Front \, Riyadh
+URL:https://eventme.live/events/event-big-5-construct-saudi.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-hvac-r-saudi-arabia@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260830T060000Z
+DTEND:20260902T150000Z
+SUMMARY:HVAC R Saudi Arabia
+DESCRIPTION:Now in its ninth year\, HVAC R Expo Saudi Arabia is the ultimate platform for advanced HVAC R solutions in the Kingdom. From innovative cooli
+LOCATION:Riyadh Front Exhibition & Conference Center\, Saudi Arabia \, Riyadh
+URL:https://eventme.live/events/event-hvac-r-saudi-arabia.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-saudi-fm-clean@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260830T060000Z
+DTEND:20260902T150000Z
+SUMMARY:Saudi FM & Clean
+DESCRIPTION:Saudi Arabia is the leading facilities management (FM) market in the GCC and is expected to reach $43.48 billion by 2030. A construction boom is sweep
+LOCATION:Riyadh Front Exhibition & Convention center \, Riyadh
+URL:https://eventme.live/events/event-saudi-fm-clean.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-merath-middle-east-museums-heritage-expo@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260830T120000Z
 DTEND:20260901T180000Z
 SUMMARY:Merath – Middle East Museums & Heritage Expo
@@ -537,7 +747,7 @@ URL:https://eventme.live/events/event-merath-middle-east-museums-heritage-expo.h
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-light-and-sound-sls-expo@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260830T120000Z
 DTEND:20260901T180000Z
 SUMMARY:Saudi Light and Sound (SLS) Expo
@@ -547,7 +757,7 @@ URL:https://eventme.live/events/event-saudi-light-and-sound-sls-expo.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-entertainment-and-amusement-expo@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260830T120000Z
 DTEND:20260901T180000Z
 SUMMARY:Saudi Entertainment and Amusement Expo
@@ -557,7 +767,7 @@ URL:https://eventme.live/events/event-saudi-entertainment-and-amusement-expo.htm
 END:VEVENT
 BEGIN:VEVENT
 UID:event-معسكر-هندسة-تطبيقات-الذكاء-الاصطناعي-التوليدي-باستخدام-النماذج-اللغوية-ا@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260830T130000Z
 DTEND:20261008T170000Z
 SUMMARY:معسكر هندسة تطبيقات الذكاء الاصطناعي التوليدي باستخدام النماذج اللغوية الضخمة
@@ -567,7 +777,7 @@ URL:https://eventme.live/events/event-معسكر-هندسة-تطبيقات-ال�
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-warehousing-logistics-expo@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260830T133000Z
 DTEND:20260901T180000Z
 SUMMARY:Saudi Warehousing & Logistics Expo
@@ -577,17 +787,17 @@ URL:https://eventme.live/events/event-saudi-warehousing-logistics-expo.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-leap-2026@eventme.live
-DTSTAMP:20260710T035904Z
-DTSTART:20260831T060000Z
-DTEND:20260903T140000Z
+DTSTAMP:20260710T080011Z
+DTSTART:20260831T080000Z
+DTEND:20260903T180000Z
 SUMMARY:LEAP 2026
-DESCRIPTION:LEAP 2026 marks the fifth edition of Saudi’s flagship global technology and innovation event\, cementing its position as one of the world’s most influential platforms for digital transformation. المصدر الرسمي: Visit Saudi.
-LOCATION:Riyadh
+DESCRIPTION:يجمع مؤتمر LEAP 2026 في الرياض قادة التقنية والشركات الناشئة والمستثمرين وصناع السياسات والمبتكرين من 31 أغسطس إلى 3 سبتمبر 2026، مع جدول حي موثق للجلسات والقاعات.
+LOCATION:Malham\, Riyadh\, Saudi Arabia
 URL:https://eventme.live/events/event-leap-2026.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-woodshow@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260901T100000Z
 DTEND:20260903T190000Z
 SUMMARY:Saudi WoodShow
@@ -597,7 +807,7 @@ URL:https://eventme.live/events/event-saudi-woodshow.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-the-innovation-diwan@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260905T060000Z
 DTEND:20270131T150000Z
 SUMMARY:The Innovation Diwan
@@ -607,7 +817,7 @@ URL:https://eventme.live/events/event-the-innovation-diwan.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-food-manufacturing-show@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260905T110000Z
 DTEND:20260907T190000Z
 SUMMARY:Saudi Food Manufacturing show
@@ -617,7 +827,7 @@ URL:https://eventme.live/events/event-saudi-food-manufacturing-show.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-misk-launchpad@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260906T060000Z
 DTEND:20270102T150000Z
 SUMMARY:Misk Launchpad
@@ -627,7 +837,7 @@ URL:https://eventme.live/events/event-misk-launchpad.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-index-saudi-arabia-interior-design-trade-show@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260906T130000Z
 DTEND:20260908T190000Z
 SUMMARY:INDEX Saudi Arabia (Interior Design Trade Show)
@@ -637,7 +847,7 @@ URL:https://eventme.live/events/event-index-saudi-arabia-interior-design-trade-s
 END:VEVENT
 BEGIN:VEVENT
 UID:event-lighting-design-technology-expo@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260906T130000Z
 DTEND:20260908T190000Z
 SUMMARY:Lighting Design & Technology Expo
@@ -647,7 +857,7 @@ URL:https://eventme.live/events/event-lighting-design-technology-expo.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260906T130000Z
 DTEND:20261112T170000Z
 SUMMARY:معسكر بناء وتطوير نماذج الذكاء الاصطناعي
@@ -657,7 +867,7 @@ URL:https://eventme.live/events/event-معسكر-بناء-وتطوير-نماذ�
 END:VEVENT
 BEGIN:VEVENT
 UID:event-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260906T140000Z
 DTEND:20261029T180000Z
 SUMMARY:معسكر إدارة الحوكمة والمخاطر والامتثال GRC
@@ -667,7 +877,7 @@ URL:https://eventme.live/events/event-معسكر-إدارة-الحوكمة-وا�
 END:VEVENT
 BEGIN:VEVENT
 UID:event-inter-aviation-arabia@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260908T060000Z
 DTEND:20260910T150000Z
 SUMMARY:Inter Aviation Arabia
@@ -677,7 +887,7 @@ URL:https://eventme.live/events/event-inter-aviation-arabia.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-fibo-2026@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260908T060000Z
 DTEND:20260910T150000Z
 SUMMARY:FIBO 2026
@@ -687,7 +897,7 @@ URL:https://eventme.live/events/event-fibo-2026.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-wtm-spotlight-riyadh@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260908T060000Z
 DTEND:20260910T150000Z
 SUMMARY:WTM Spotlight Riyadh
@@ -697,7 +907,7 @@ URL:https://eventme.live/events/event-wtm-spotlight-riyadh.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-fibo-arabia-2026@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260908T100000Z
 DTEND:20260910T190000Z
 SUMMARY:FIBO Arabia 2026
@@ -707,7 +917,7 @@ URL:https://eventme.live/events/event-fibo-arabia-2026.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-wood-expo@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260908T120000Z
 DTEND:20260910T180000Z
 SUMMARY:Saudi Wood Expo
@@ -717,7 +927,7 @@ URL:https://eventme.live/events/event-saudi-wood-expo.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-industrial-series@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260908T120000Z
 DTEND:20260910T180000Z
 SUMMARY:Saudi Industrial Series
@@ -727,7 +937,7 @@ URL:https://eventme.live/events/event-saudi-industrial-series.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-hotel-hospitality-expo@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260913T130000Z
 DTEND:20260915T190000Z
 SUMMARY:Hotel & Hospitality Expo
@@ -737,17 +947,17 @@ URL:https://eventme.live/events/event-hotel-hospitality-expo.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-money20-20-middle-east@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260914T060000Z
 DTEND:20260916T140000Z
 SUMMARY:Money20/20 Middle East
-DESCRIPTION:Money20/20 Middle East is the region’s definitive fintech event\, bringing together over 38\,500 visitors\, 450+ global brands\, 350+ speakers\, 400+ investors\, and 150+ startups to shape the future of money\, finance\, and technology. As the most influential gathering in the Middle East\, it offers world-class thought leadership\, groundbreaking innovations\, and high-impact networking that fuels business growth and positions Saudi Arabia at the heart of the global fintech revolution. Book Now
-LOCATION:Riyadh Exhibition & Convention Center - Malham
+DESCRIPTION:يجمع Money20/20 Middle East منظومة التقنية المالية العالمية في الرياض من 14 إلى 16 سبتمبر 2026، بمشاركة البنوك وشركات التقنية المالية والمستثمرين والجهات التنظيمية.
+LOCATION:Malham\, Riyadh\, Saudi Arabia
 URL:https://eventme.live/events/event-money20-20-middle-east.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-global-forum-on-the-ethics-of-ai@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260914T060000Z
 DTEND:20260917T150000Z
 SUMMARY:Global Forum on the Ethics of AI
@@ -757,7 +967,7 @@ URL:https://eventme.live/events/event-global-forum-on-the-ethics-of-ai.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-riyadh-global-medical-biotechnology-summit@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260914T063000Z
 DTEND:20260916T120000Z
 SUMMARY:Riyadh Global Medical Biotechnology Summit
@@ -767,7 +977,7 @@ URL:https://eventme.live/events/event-riyadh-global-medical-biotechnology-summit
 END:VEVENT
 BEGIN:VEVENT
 UID:event-global-infrastructure-expo@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260915T010000Z
 DTEND:20260917T070000Z
 SUMMARY:Global Infrastructure Expo
@@ -777,7 +987,7 @@ URL:https://eventme.live/events/event-global-infrastructure-expo.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-global-ai-summit@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260915T060000Z
 DTEND:20260917T150000Z
 SUMMARY:Global AI Summit
@@ -787,7 +997,7 @@ URL:https://eventme.live/events/event-global-ai-summit.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-global-ai-summit-gain@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260915T060000Z
 DTEND:20260917T150000Z
 SUMMARY:Global AI Summit (GAIN)
@@ -797,7 +1007,7 @@ URL:https://eventme.live/events/event-global-ai-summit-gain.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-kingdom-business-luxury-travel-congress@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260915T060000Z
 DTEND:20260916T140000Z
 SUMMARY:Kingdom Business Luxury Travel Congress
@@ -807,7 +1017,7 @@ URL:https://eventme.live/events/event-kingdom-business-luxury-travel-congress.ht
 END:VEVENT
 BEGIN:VEVENT
 UID:event-smart-cities-saudi-expo@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260915T110000Z
 DTEND:20260917T190000Z
 SUMMARY:Smart Cities Saudi Expo
@@ -817,7 +1027,7 @@ URL:https://eventme.live/events/event-smart-cities-saudi-expo.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-facility-management-conference-exhibition@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260920T060000Z
 DTEND:20260922T160000Z
 SUMMARY:Facility Management Conference & Exhibition
@@ -827,7 +1037,7 @@ URL:https://eventme.live/events/event-facility-management-conference-exhibition.
 END:VEVENT
 BEGIN:VEVENT
 UID:event-the-saudi-food-show@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20260927T130000Z
 DTEND:20260929T200000Z
 SUMMARY:The Saudi Food Show
@@ -837,7 +1047,7 @@ URL:https://eventme.live/events/event-the-saudi-food-show.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-international-falcons-hunting-exhibition@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261001T110000Z
 DTEND:20261010T190000Z
 SUMMARY:Saudi International Falcons & Hunting Exhibition
@@ -847,7 +1057,7 @@ URL:https://eventme.live/events/event-saudi-international-falcons-hunting-exhibi
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-falcons-club-auction@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261001T160000Z
 DTEND:20261130T200000Z
 SUMMARY:Saudi Falcons Club Auction
@@ -857,7 +1067,7 @@ URL:https://eventme.live/events/event-saudi-falcons-club-auction.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-al-milwah-falcon-race@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261004T160000Z
 DTEND:20261008T210000Z
 SUMMARY:Al Milwah Falcon Race
@@ -866,8 +1076,28 @@ LOCATION:Riyadh
 URL:https://eventme.live/events/event-al-milwah-falcon-race.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-in-act-act-x@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20261008T210000Z
+DTEND:20261009T205900Z
+SUMMARY:IN ACT - ACT X
+DESCRIPTION:ACT X تعود إلى الرياض لتقدم تجربة تضع الموسيقى والطاقة في قلب الحدث، مع تركيز كامل على حلبة الرقص. IN ACT - ACT X ضمن رياضة وفعاليات جماهيرية في الرياض. تبدأ الفعالية ٠٩‏/١٠‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ٠٩‏/١٠‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-in-act-act-x.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-global-proptech-summit-2026@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20261025T060000Z
+DTEND:20261026T150000Z
+SUMMARY:Global Proptech Summit 2026
+DESCRIPTION:The Global PropTech Summit (TGPS) is an international platform that convenes policymakers\, investors\, developers\, technology companies\, and industry s
+LOCATION:Mandarin Oriental Al Faisaliah \, Riyadh
+URL:https://eventme.live/events/event-global-proptech-summit-2026.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-natrual-expo@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261026T060000Z
 DTEND:20261029T150000Z
 SUMMARY:Natrual Expo
@@ -877,7 +1107,7 @@ URL:https://eventme.live/events/event-natrual-expo.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-future-investment-initiative-fii-10@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261027T060000Z
 DTEND:20261030T150000Z
 SUMMARY:Future Investment Initiative (FII 10)
@@ -886,8 +1116,28 @@ LOCATION:Riyadh\, Saudi Arabia.
 URL:https://eventme.live/events/event-future-investment-initiative-fii-10.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-real-estate-supply-chain-forum@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20261028T060000Z
+DTEND:20261029T150000Z
+SUMMARY:Real Estate Supply Chain Forum
+DESCRIPTION:The Real Estate Supply Chain Forum is a premier platform driving strategic collaboration\, digital transformation\, and sustainable growth in
+LOCATION:Mandarin Oriental Al Faisaliah \, Riyadh
+URL:https://eventme.live/events/event-real-estate-supply-chain-forum.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-cips-mena-procurement-and-supply-chain-futures-conference-and-awards@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20261028T060000Z
+DTEND:20261029T150000Z
+SUMMARY:CIPS MENA Procurement and Supply Chain Futures conference and awards
+DESCRIPTION:CIPS MENA Procurement and Supply Chain Futures Forum is the region&rsquo\;s leading gathering for procurement and supply chain professionals. Designed
+LOCATION:Mandarin Oriental Al Faisaliah \, Riyadh
+URL:https://eventme.live/events/event-cips-mena-procurement-and-supply-chain-futures-conference-and-awards.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-a-thousand-and-one@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261028T210000Z
 DTEND:20261029T210000Z
 SUMMARY:A Thousand and One
@@ -897,7 +1147,7 @@ URL:https://eventme.live/events/event-a-thousand-and-one.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-world-conference-on-desalination-and-water-reuse@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261101T050000Z
 DTEND:20261105T010000Z
 SUMMARY:World Conference on Desalination and Water Reuse
@@ -907,7 +1157,7 @@ URL:https://eventme.live/events/event-world-conference-on-desalination-and-water
 END:VEVENT
 BEGIN:VEVENT
 UID:event-cityscape-global-2026@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261116T060000Z
 DTEND:20261119T150000Z
 SUMMARY:Cityscape Global 2026
@@ -917,7 +1167,7 @@ URL:https://eventme.live/events/event-cityscape-global-2026.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-xp-music-futures-2026@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261125T210000Z
 DTEND:20261127T210000Z
 SUMMARY:XP Music Futures 2026
@@ -927,7 +1177,7 @@ URL:https://eventme.live/events/event-xp-music-futures-2026.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-water-partnerships-company-forum-and-awards-ceremony@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261201T062000Z
 DTEND:20261201T173000Z
 SUMMARY:Saudi Water Partnerships Company Forum and Awards Ceremony
@@ -937,7 +1187,7 @@ URL:https://eventme.live/events/event-saudi-water-partnerships-company-forum-and
 END:VEVENT
 BEGIN:VEVENT
 UID:event-soundstorm-26@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261202T210000Z
 DTEND:20261203T210000Z
 SUMMARY:SOUNDSTORM 26
@@ -947,7 +1197,7 @@ URL:https://eventme.live/events/event-soundstorm-26.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-china-homelife-saudi-arabia-2026@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20261220T060000Z
 DTEND:20261222T150000Z
 SUMMARY:China Homelife Saudi Arabia 2026
@@ -956,8 +1206,18 @@ LOCATION:Riyadh Front Exhibition & Conference Center
 URL:https://eventme.live/events/event-china-homelife-saudi-arabia-2026.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-real-estate-future-forum@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20270125T060000Z
+DTEND:20270127T150000Z
+SUMMARY:Real Estate Future Forum
+DESCRIPTION:The Real Estate Future Forum (RFF) is a global platform that brings together policymakers\, investors\, developers\, business leaders\, and experts from a
+LOCATION:Four Seasons Hotel \, Riyadh
+URL:https://eventme.live/events/event-real-estate-future-forum.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-foundation-day@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20270222T050000Z
 DTEND:20270223T000000Z
 SUMMARY:Foundation Day
@@ -967,7 +1227,7 @@ URL:https://eventme.live/events/event-foundation-day.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-flag-day@eventme.live
-DTSTAMP:20260710T035904Z
+DTSTAMP:20260710T080011Z
 DTSTART:20270311T050000Z
 DTEND:20270312T010000Z
 SUMMARY:Saudi Flag Day

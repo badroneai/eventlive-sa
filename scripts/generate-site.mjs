@@ -6,6 +6,7 @@ import { AUDIENCE_TAXONOMY, audienceObjects, classifyAudiences } from './audienc
 import { normalizeSaudiCity } from './city-utils.mjs';
 import { classifyEventKind, eventKindLabel, getEventStatus } from './event-kind-utils.mjs';
 import { isLikelyImageAssetUrl, isRejectedImageAssetUrl, isSourcePageLikeImageUrl } from './image-asset-utils.mjs';
+import { coordinatesQuery, resolveVenueLocation } from './venue-location-utils.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -23,6 +24,7 @@ const buildAt = new Date().toISOString();
 const includeDemoEvent = process.env.EVENTLIVE_INCLUDE_DEMO === '1';
 const imageCacheManifest = readJson('data/event_image_cache_manifest.json', { images: {} });
 const registeredSources = readJson('data/source_registry.json', { sources: [] }).sources || [];
+const venueRegistry = readJson('data/venue_registry.json', { venues: [] }).venues || [];
 const registeredSourcesByName = new Map();
 for (const source of registeredSources) {
   for (const value of [source.name, source.owner].filter(Boolean)) {
@@ -76,7 +78,17 @@ const brandCss = `<style id="eventlive-brand-pulse">
 const pageCss = `<style>
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap');
 :root{--bg:#f7f5ef;--ink:#10231d;--muted:#66756f;--line:#dfe6df;--card:#fffdf8;--green:#0d6b52;--green-dark:#07231c;--live:#c4212b;--gold:#b88a2a}
-*{box-sizing:border-box}body{margin:0;font-family:"IBM Plex Sans Arabic",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.75}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(247,245,239,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:700}.brand-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:8px;background:var(--green-dark);color:#fff;font-weight:700}.nav-links{display:flex;gap:18px;color:var(--muted);font-weight:700;font-size:.94rem}.cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:8px;background:var(--green);color:#fff;padding:10px 14px;font-weight:700}.hero{padding:54px 0 30px;background:linear-gradient(135deg,var(--green-dark),#0d6b52);color:#fff}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:#f7df9a;font-weight:700}.live-dot{width:9px;height:9px;border-radius:999px;background:var(--live);box-shadow:0 0 0 4px rgba(229,72,77,.18)}h1{font-size:clamp(2rem,5vw,4.4rem);line-height:1.12;margin:14px 0 12px;letter-spacing:0}.lead{font-size:1.08rem;max-width:760px;color:rgba(255,255,255,.82)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}.section{padding:32px 0}.card,.activation-card{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;box-shadow:0 18px 40px rgba(16,35,29,.06)}.activation-card{padding:18px}.activation-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.card-body{padding:18px}.cover{aspect-ratio:16/9;width:100%;object-fit:cover;background:#dfe6df}.meta{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;color:var(--muted);font-size:.9rem}.chip{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:4px 9px;background:#fff}.chip-live{background:var(--live);border-color:var(--live);color:#fff}.title{font-size:1.18rem;font-weight:700;margin:0 0 8px}.signal-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:18px}.signal{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:12px}.signal b{display:block;font-size:1.35rem}.facet-focus,.readiness{background:#fff;border:1px solid var(--line);border-radius:8px;padding:18px;margin:18px 0}.signals{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}.signal-check,.program-check{border:1px solid var(--line);border-radius:8px;padding:12px;background:#fff}.signal-check.good,.program-check{border-color:rgba(13,107,82,.35)}.signal-check.warn{border-color:rgba(229,72,77,.25)}.decision-score{font-size:2rem;font-weight:700;color:var(--green)}.timeline{display:grid;gap:10px;margin-top:14px}.session{border:1px solid var(--line);border-radius:8px;padding:12px;background:#fff}.footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted)}.footer-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px;font-weight:700}.footer-links a{color:var(--green)}@media(max-width:760px){.nav-links{display:none}.hero{padding-top:34px}.wrap{width:min(100% - 22px,1120px)}}
+*{box-sizing:border-box}body{margin:0;font-family:"IBM Plex Sans Arabic",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.75}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(247,245,239,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:700}.brand-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:8px;background:var(--green-dark);color:#fff;font-weight:700}.nav-links{display:flex;gap:18px;color:var(--muted);font-weight:700;font-size:.94rem}.cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;border:0;border-radius:8px;background:var(--green);color:#fff;padding:10px 14px;font:inherit;font-weight:700;cursor:pointer}.cta.is-saved{background:var(--green-dark)}.cta-status{flex-basis:100%;margin:0;color:var(--muted);font-size:.88rem}.hero{padding:54px 0 30px;background:linear-gradient(135deg,var(--green-dark),#0d6b52);color:#fff}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:#f7df9a;font-weight:700}.live-dot{width:9px;height:9px;border-radius:999px;background:var(--live);box-shadow:0 0 0 4px rgba(229,72,77,.18)}h1{font-size:clamp(2rem,5vw,4.4rem);line-height:1.12;margin:14px 0 12px;letter-spacing:0}.lead{font-size:1.08rem;max-width:760px;color:rgba(255,255,255,.82)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}.section{padding:32px 0}.card,.activation-card{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;box-shadow:0 18px 40px rgba(16,35,29,.06)}.activation-card{padding:18px}.activation-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.card-body{padding:18px}.cover{aspect-ratio:16/9;width:100%;object-fit:cover;background:#dfe6df}.meta{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;color:var(--muted);font-size:.9rem}.chip{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:4px 9px;background:#fff}.chip-live{background:var(--live);border-color:var(--live);color:#fff}.title{font-size:1.18rem;font-weight:700;margin:0 0 8px}.signal-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:18px}.signal{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:12px}.signal b{display:block;font-size:1.35rem}.facet-focus,.readiness{background:#fff;border:1px solid var(--line);border-radius:8px;padding:18px;margin:18px 0}.signals{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}.signal-check,.program-check{border:1px solid var(--line);border-radius:8px;padding:12px;background:#fff}.signal-check.good,.program-check{border-color:rgba(13,107,82,.35)}.signal-check.warn{border-color:rgba(229,72,77,.25)}.decision-score{font-size:2rem;font-weight:700;color:var(--green)}.timeline{display:grid;gap:10px;margin-top:14px}.session{border:1px solid var(--line);border-radius:8px;padding:12px;background:#fff}.footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted)}.footer-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px;font-weight:700}.footer-links a{color:var(--green)}@media(max-width:760px){.nav-links{display:none}.hero{padding-top:34px}.wrap{width:min(100% - 22px,1120px)}}
+</style>`;
+
+const agendaCss = `<style>
+.agenda-head{display:flex;align-items:end;justify-content:space-between;gap:16px}.agenda-head p{margin:0;color:var(--muted)}.agenda-head .eyebrow{color:#72530a}
+.agenda-live-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0}.agenda-live-item{border:1px solid var(--line);border-radius:8px;padding:12px;background:#fff}.agenda-live-item span{display:block;color:var(--muted);font-size:.86rem}.agenda-live-item b{display:block;margin-top:4px}
+.agenda-toolbar{display:grid;grid-template-columns:minmax(240px,1fr) minmax(190px,.45fr);gap:10px;margin:14px 0}.agenda-search,.agenda-room{width:100%;min-height:46px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);padding:10px 12px;font:inherit}
+.agenda-toolbar-single{grid-template-columns:1fr}
+.agenda-days{display:flex;gap:8px;overflow-x:auto;padding:2px 0 8px;scroll-snap-type:x proximity}.agenda-day{flex:0 0 auto;min-height:42px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);padding:8px 12px;font:inherit;font-weight:700;cursor:pointer;scroll-snap-align:start}.agenda-day[aria-pressed="true"]{background:var(--green-dark);border-color:var(--green-dark);color:#fff}.agenda-count{color:var(--muted);font-weight:700}
+.session[hidden]{display:none}.session.is-live{border-color:var(--live);box-shadow:inset 4px 0 0 var(--live)}.session.is-ended{opacity:.62}.session-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}.session-time{white-space:nowrap;color:var(--green);font-weight:700}.session b{unicode-bidi:plaintext}.session-speaker{margin:6px 0 0;color:var(--muted);font-size:.92rem}.session-source{color:var(--green);font-size:.88rem;font-weight:700}.session-status{color:var(--muted);font-size:.84rem}
+@media(max-width:760px){.agenda-toolbar,.agenda-live-summary{grid-template-columns:1fr}.agenda-head,.session-top{align-items:flex-start;flex-direction:column}.session-time{white-space:normal}}
 </style>`;
 
 function readJson(relativePath, fallback = {}) {
@@ -205,6 +217,8 @@ const cityLabelMap = new Map([
   ['Taif', 'الطائف'],
   ['Tabuk', 'تبوك'],
   ['Hail', 'حائل'],
+  ['Al Muzahimiyah', 'المزاحمية'],
+  ['Al Namas', 'النماص'],
   ['Jazan', 'جازان'],
   ['Najran', 'نجران'],
   ['Al Baha', 'الباحة'],
@@ -250,6 +264,8 @@ const citySlugMap = new Map([
   ['Taif', 'taif'],
   ['Tabuk', 'tabuk'],
   ['Hail', 'hail'],
+  ['Al Muzahimiyah', 'al-muzahimiyah'],
+  ['Al Namas', 'al-namas'],
   ['Jazan', 'jazan'],
   ['Najran', 'najran'],
   ['Al Baha', 'al-baha'],
@@ -651,6 +667,14 @@ function normalizeEvent(raw, sourceGroup, previousLookup) {
   const previousSessions = detailedSessionsFrom(previous.sessions);
   const sessions = rawSessions.length ? rawSessions : previousSessions;
   const trustProfile = sourceTrustProfile(raw, previous);
+  const venueLocation = resolveVenueLocation({
+    ...previous,
+    ...raw,
+    city: normalizedCity,
+    venue: raw.venue || previous.venue || normalizedCity,
+    venue_address: raw.venue_address || previous.venue_address || raw.venue || normalizedCity
+  }, venueRegistry);
+  const venueCoordinates = coordinatesQuery(venueLocation);
   const detailUrl = `./events/${fileSlug}.html`;
   const originalImage = remoteImageCandidate(raw.original_image_url, raw.image_url, raw.image, previous.original_image_url, previous.image_url);
   const imageUrl = localizeEventImage(raw.cached_image_url || previous.cached_image_url || raw.image_url || raw.image || previous.image_url || '');
@@ -707,8 +731,19 @@ function normalizeEvent(raw, sourceGroup, previousLookup) {
     ics_url: `./events/${fileSlug}.ics`,
     city_url: `./cities/${citySlug(normalizedCity)}.html`,
     category_url: `./categories/${catSlug}.html`,
-    maps_url: raw.maps_url || previous.maps_url || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${raw.venue || normalizedCity} ${normalizedCity}`)}`,
-    directions_url: raw.directions_url || previous.directions_url || `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${raw.venue || normalizedCity} ${normalizedCity}`)}`,
+    latitude: venueLocation?.latitude,
+    longitude: venueLocation?.longitude,
+    location_precision: venueLocation?.precision || '',
+    location_verification_method: venueLocation?.verification_method || '',
+    location_verified_at: venueLocation?.verified_at || '',
+    location_evidence_url: venueLocation?.evidence_url || '',
+    location_registry_id: venueLocation?.registry_id || '',
+    maps_url: venueCoordinates
+      ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(venueCoordinates)}`
+      : raw.maps_url || previous.maps_url || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${raw.venue || normalizedCity} ${normalizedCity}`)}`,
+    directions_url: venueCoordinates
+      ? `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(venueCoordinates)}`
+      : raw.directions_url || previous.directions_url || `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${raw.venue || normalizedCity} ${normalizedCity}`)}`,
     catalog_group: sourceGroup,
     richness_score: Number(raw.richness_score ?? previous.richness_score ?? 3)
   };
@@ -797,8 +832,10 @@ function buildEvents() {
       normalizeArabicSearch(event.source_label || event.organizer)
     ].join('|');
     let sourceIdentityKey = '';
+    const sourceIdentityUrl = event.source_url || event.evidence_url || '';
+    const isMultiEventDocument = /\.(?:pdf|csv|xlsx?|ics)(?:$|[?#])/i.test(sourceIdentityUrl);
     try {
-      const sourceUrl = new URL(event.source_url || event.evidence_url || '');
+      const sourceUrl = new URL(isMultiEventDocument ? '' : sourceIdentityUrl);
       const stableParams = [...sourceUrl.searchParams.entries()]
         .filter(([key, value]) => /^(?:id|eventid|itemid|event|programid|courseid|bootcampid)$/i.test(key) && value)
         .sort(([a], [b]) => a.localeCompare(b));
@@ -878,6 +915,7 @@ function baseHead({ title, description, canonical, image, manifestHref = './mani
   <meta name="publisher" content="${platformName}" />
   <meta name="theme-color" content="#0d6b52" />
   <meta name="color-scheme" content="light" />
+  <link rel="icon" type="image/svg+xml" href="${escapeHtml(`${resourcePrefix}favicon.svg`)}" />
   ${noindex ? '<meta name="robots" content="noindex,nofollow" />' : '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />'}
   <link rel="canonical" href="${canonical}" />
   <link rel="alternate" hreflang="ar-SA" href="${canonical}" />
@@ -1002,7 +1040,7 @@ function analyticsRuntimeScript() {
 }
 
 function header(relativePrefix = './') {
-  return `<header class="topbar"><div class="wrap nav"><a class="brand" href="${relativePrefix}index.html"><span class="brand-mark">EL</span><b>${brandVisual}</b></a><nav class="nav-links" aria-label="روابط رئيسية"><a href="${relativePrefix}events.html">كل الفعاليات</a><a href="${relativePrefix}today-events.html">اليوم</a><a href="${relativePrefix}this-month.html">هذا الشهر</a><a href="${relativePrefix}cities.html">المدن</a><a href="${relativePrefix}categories.html">التصنيفات</a><a href="${relativePrefix}audiences.html">الجمهور</a><a href="${relativePrefix}organizers.html">للمنظمين</a><a href="${relativePrefix}organizer-intake.html">إضافة فعالية</a></nav><a class="cta" href="${relativePrefix}today-events.html"><span class="live-dot"></span> وضع الحضور</a></div></header>`;
+  return `<header class="topbar"><div class="wrap nav"><a class="brand" href="${relativePrefix}index.html"><span class="brand-mark">EL</span><b>${brandVisual}</b></a><nav class="nav-links" aria-label="روابط رئيسية"><a href="${relativePrefix}events.html">كل الفعاليات</a><a href="${relativePrefix}today-events.html">اليوم</a><a href="${relativePrefix}this-month.html">هذا الشهر</a><a href="${relativePrefix}cities.html">المدن</a><a href="${relativePrefix}categories.html">التصنيفات</a><a href="${relativePrefix}audiences.html">الجمهور</a><a href="${relativePrefix}organizers.html">للمنظمين</a><a href="${relativePrefix}organizer-intake.html">إضافة فعالية</a></nav><a class="cta" href="${relativePrefix}attendance.html"><span class="live-dot"></span> وضع الحضور</a></div></header>`;
 }
 
 function footer(relativePrefix = './') {
@@ -1149,6 +1187,100 @@ function liveRuntimeScript() {
   if (!isLocalHost && 'serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js').catch(function () {});
   }
+})();
+</script>`;
+}
+
+function sessionAgendaScript() {
+  return `<script>
+(function () {
+  var root = document.querySelector('[data-event-agenda]');
+  if (!root) return;
+  var items = Array.prototype.slice.call(root.querySelectorAll('[data-session-item]'));
+  var dayButtons = Array.prototype.slice.call(root.querySelectorAll('[data-agenda-day]'));
+  var roomSelect = root.querySelector('[data-agenda-room]');
+  var searchInput = root.querySelector('[data-agenda-search]');
+  var count = root.querySelector('[data-agenda-count]');
+  var nowOutput = root.querySelector('[data-agenda-now]');
+  var nextOutput = root.querySelector('[data-agenda-next]');
+  var selectedDay = 'all';
+
+  function normalize(value) {
+    return String(value || '').toLowerCase().normalize('NFKD')
+      .replace(/[\u064B-\u065F\u0670]/g, '')
+      .replace(/[أإآ]/g, 'ا').replace(/ة/g, 'ه').replace(/ى/g, 'ي')
+      .replace(/[^a-z0-9\u0600-\u06ff]+/g, ' ').trim();
+  }
+  function time(value) {
+    var parsed = new Date(value || '').getTime();
+    return Number.isFinite(parsed) ? parsed : null;
+  }
+  function riyadhDay() {
+    var parts = new Intl.DateTimeFormat('en', { timeZone: 'Asia/Riyadh', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date());
+    var values = {};
+    parts.forEach(function (part) { values[part.type] = part.value; });
+    return values.year + '-' + values.month + '-' + values.day;
+  }
+  function setDay(day) {
+    selectedDay = day;
+    dayButtons.forEach(function (button) {
+      button.setAttribute('aria-pressed', button.getAttribute('data-agenda-day') === day ? 'true' : 'false');
+    });
+    applyFilters();
+  }
+  function applyFilters() {
+    var room = roomSelect ? roomSelect.value : 'all';
+    var query = normalize(searchInput ? searchInput.value : '');
+    var visible = 0;
+    items.forEach(function (item) {
+      var dayMatch = selectedDay === 'all' || item.getAttribute('data-day') === selectedDay;
+      var roomMatch = room === 'all' || item.getAttribute('data-room') === room;
+      var searchMatch = !query || normalize(item.getAttribute('data-search')).indexOf(query) !== -1;
+      item.hidden = !(dayMatch && roomMatch && searchMatch);
+      if (!item.hidden) visible += 1;
+    });
+    if (count) count.textContent = visible ? visible + ' جلسة ظاهرة' : 'لا توجد جلسات مطابقة';
+  }
+  function updateStatus() {
+    var now = Date.now();
+    var active = [];
+    var upcoming = [];
+    items.forEach(function (item) {
+      var start = time(item.getAttribute('data-start'));
+      var end = time(item.getAttribute('data-end')) || start;
+      var status = item.querySelector('[data-session-status]');
+      item.classList.remove('is-live', 'is-ended');
+      if (start !== null && end !== null && now >= start && now <= end) {
+        item.classList.add('is-live');
+        if (status) status.textContent = 'تجري الآن';
+        active.push(item);
+      } else if (end !== null && now > end) {
+        item.classList.add('is-ended');
+        if (status) status.textContent = 'انتهت';
+      } else {
+        if (status) status.textContent = 'قادمة';
+        if (start !== null) upcoming.push(item);
+      }
+    });
+    upcoming.sort(function (a, b) { return time(a.getAttribute('data-start')) - time(b.getAttribute('data-start')); });
+    if (nowOutput) nowOutput.textContent = active.length ? (active.length > 1 ? active.length + ' جلسات جارية · ' : '') + active[0].querySelector('b').textContent : 'لا توجد جلسة جارية الآن';
+    if (nextOutput) nextOutput.textContent = upcoming.length ? upcoming[0].querySelector('b').textContent : 'لا توجد جلسات قادمة';
+  }
+
+  dayButtons.forEach(function (button) { button.addEventListener('click', function () { setDay(button.getAttribute('data-agenda-day')); }); });
+  if (roomSelect) roomSelect.addEventListener('change', applyFilters);
+  if (searchInput) searchInput.addEventListener('input', applyFilters);
+  if (dayButtons.length) {
+    var days = dayButtons.map(function (button) { return button.getAttribute('data-agenda-day'); }).filter(function (day) { return day !== 'all'; }).sort();
+    var today = riyadhDay();
+    var initial = days.indexOf(today) !== -1 ? today : (today > days[days.length - 1] ? days[days.length - 1] : days[0]);
+    setDay(initial || 'all');
+  } else {
+    applyFilters();
+  }
+  updateStatus();
+  setInterval(updateStatus, 60000);
+  window.EventLiveAgenda = { filter: applyFilters, refresh: updateStatus, setDay: setDay };
 })();
 </script>`;
 }
@@ -1318,10 +1450,78 @@ function eventDetailActions(event) {
     actions.push(`<a class="cta" href="${escapeHtml(event.directions_url)}">الاتجاهات</a>`);
   }
   actions.push(`<a class="cta" href="${escapeHtml(icsHref)}">أضف للتقويم</a>`);
+  if (event.status !== 'ended') {
+    actions.push(`<button class="cta" type="button" data-attendance-save data-event-id="${escapeHtml(event.id)}">احفظ للحضور</button>`);
+    actions.push('<p class="cta-status" data-attendance-status aria-live="polite">يحفظ الصفحة والجدول على هذا الجهاز عند ضعف الشبكة.</p>');
+  }
   if (!isOnlineEvent(event) && event.source_url) {
     actions.push(`<a class="cta" href="${escapeHtml(event.source_url)}">المصدر</a>`);
   }
   return actions.join('');
+}
+
+function attendanceModeScript(event, image) {
+  if (event.status === 'ended') return '';
+  const assets = unique([
+    `./${event.file_slug}.html`,
+    `./${event.file_slug}.json`,
+    `./${event.file_slug}.ics`,
+    image
+  ]).filter(Boolean);
+  return `<script id="eventlive-attendance-mode">
+(function () {
+  var button = document.querySelector('[data-attendance-save]');
+  var status = document.querySelector('[data-attendance-status]');
+  if (!button || !status) return;
+  var eventId = ${JSON.stringify(event.id)};
+  var assets = ${JSON.stringify(assets)};
+  var storageKey = 'eventlive-attendance-events';
+
+  function savedEvents() {
+    try { return JSON.parse(localStorage.getItem(storageKey) || '{}') || {}; } catch (error) { return {}; }
+  }
+  function renderSaved() {
+    var saved = savedEvents();
+    if (!saved[eventId]) return;
+    button.classList.add('is-saved');
+    button.textContent = 'محفوظ للحضور';
+    status.textContent = 'هذه الفعالية وجدولها محفوظان على هذا الجهاز.';
+  }
+  function askWorkerToCache() {
+    if (!('serviceWorker' in navigator)) return Promise.resolve({ cached: 0 });
+    return navigator.serviceWorker.getRegistration().then(function (registration) {
+      if (!registration) return { cached: 0 };
+      var worker = navigator.serviceWorker.controller || registration.active;
+      if (!worker) return { cached: 0 };
+      return new Promise(function (resolve) {
+        var channel = new MessageChannel();
+        var timer = window.setTimeout(function () { resolve({ cached: 0 }); }, 5000);
+        channel.port1.onmessage = function (message) {
+          window.clearTimeout(timer);
+          resolve(message.data || { cached: 0 });
+        };
+        worker.postMessage({ type: 'CACHE_EVENT_ASSETS', eventId: eventId, assets: assets }, [channel.port2]);
+      });
+    }).catch(function () { return { cached: 0 }; });
+  }
+
+  button.addEventListener('click', function () {
+    button.disabled = true;
+    status.textContent = 'جاري تجهيز وضع الحضور...';
+    askWorkerToCache().then(function (result) {
+      var saved = savedEvents();
+      saved[eventId] = { savedAt: new Date().toISOString(), path: window.location.pathname, cachedAssets: Number(result.cached || 0) };
+      localStorage.setItem(storageKey, JSON.stringify(saved));
+      button.disabled = false;
+      renderSaved();
+      if (typeof window.eventLiveTrack === 'function') {
+        window.eventLiveTrack('attendance_mode_saved', { event_id: eventId, cached_assets: Number(result.cached || 0) });
+      }
+    });
+  });
+  renderSaved();
+})();
+</script>`;
 }
 
 function sessionAnchor(session = {}, index = 0) {
@@ -1415,6 +1615,49 @@ function renderFaqSection(items = [], title = 'أسئلة سريعة') {
   return `<section class="section"><div class="wrap"><article class="readiness"><span>إجابات مختصرة</span><h2>${escapeHtml(title)}</h2><div class="grid">${items.map((item) => `<div class="program-check"><b>${escapeHtml(item.question)}</b><p>${escapeHtml(item.answer)}</p></div>`).join('')}</div></article></div></section>`;
 }
 
+function formatSessionTime(value) {
+  const date = dateValue(value);
+  if (!date) return 'وقت غير محدد';
+  return new Intl.DateTimeFormat('ar-SA', {
+    hour: 'numeric',
+    minute: '2-digit',
+    timeZone: 'Asia/Riyadh'
+  }).format(date);
+}
+
+function formatAgendaDay(value) {
+  const date = dateValue(value);
+  if (!date) return value;
+  return new Intl.DateTimeFormat('ar-SA-u-ca-gregory', {
+    weekday: 'short',
+    day: 'numeric',
+    month: 'short',
+    timeZone: 'Asia/Riyadh'
+  }).format(date);
+}
+
+function renderEventSessions(event, sessionsTitle, sessionsNote) {
+  const rows = Array.isArray(event.sessions) ? event.sessions : [];
+  if (!rows.length) return '';
+  const detailed = event.schedule_quality !== 'basic-window' && rows.length >= 6;
+  const days = unique(rows.map((session) => String(session.starts_at || session.start_at || '').slice(0, 10)).filter(Boolean));
+  const rooms = unique(rows.map((session) => session.room).filter(Boolean)).sort((a, b) => a.localeCompare(b));
+  const roomFilter = rooms.length ? `<select class="agenda-room" data-agenda-room aria-label="تصفية حسب القاعة"><option value="all">كل القاعات</option>${rooms.map((room) => `<option value="${escapeHtml(room)}">${escapeHtml(room)}</option>`).join('')}</select>` : '';
+  const agendaSummary = [`${rows.length} جلسة`, rooms.length ? `${rooms.length} قاعات` : '', 'بتوقيت الرياض'].filter(Boolean).join(' · ');
+  const toolbar = detailed
+    ? `<div class="agenda-live-summary" aria-live="polite"><div class="agenda-live-item"><span>يجري الآن</span><b data-agenda-now>لا توجد جلسة جارية الآن</b></div><div class="agenda-live-item"><span>التالي</span><b data-agenda-next>يُحدد حسب الوقت الفعلي</b></div></div><div class="agenda-days" aria-label="أيام البرنامج"><button class="agenda-day" type="button" data-agenda-day="all" aria-pressed="false">كل الأيام</button>${days.map((day) => `<button class="agenda-day" type="button" data-agenda-day="${escapeHtml(day)}" aria-pressed="false">${escapeHtml(formatAgendaDay(`${day}T12:00:00+03:00`))}</button>`).join('')}</div><div class="agenda-toolbar${rooms.length ? '' : ' agenda-toolbar-single'}"><input class="agenda-search" type="search" data-agenda-search placeholder="ابحث في الجلسات أو المتحدثين" aria-label="ابحث في جلسات الفعالية">${roomFilter}</div><p class="agenda-count" data-agenda-count>${rows.length} جلسة</p>`
+    : '';
+  const timeline = rows.map((session, index) => {
+    const start = session.starts_at || session.start_at || '';
+    const end = session.ends_at || session.end_at || start;
+    const day = String(start).slice(0, 10);
+    const search = normalizeArabicSearch([session.title, session.session_title, session.speaker, session.room, session.track].filter(Boolean).join(' '));
+    const sourceLink = session.source_url ? `<a class="session-source" href="${escapeHtml(session.source_url)}" rel="noopener noreferrer">المصدر الرسمي</a>` : '';
+    return `<article class="session" id="${escapeHtml(sessionAnchor(session, index))}" data-session-item data-day="${escapeHtml(day)}" data-room="${escapeHtml(session.room || '')}" data-search="${escapeHtml(search)}" data-start="${escapeHtml(start)}" data-end="${escapeHtml(end)}"><div class="session-top"><div><b>${escapeHtml(session.title || session.session_title || 'جلسة')}</b>${session.speaker ? `<p class="session-speaker">${escapeHtml(session.speaker)}</p>` : ''}</div><time class="session-time" datetime="${escapeHtml(start)}">من ${escapeHtml(formatSessionTime(start))} إلى ${escapeHtml(formatSessionTime(end))}</time></div><div class="meta">${session.room ? `<span class="chip">${escapeHtml(session.room)}</span>` : ''}${session.track ? `<span class="chip">${escapeHtml(session.track)}</span>` : ''}<span class="session-status" data-session-status>قادمة</span>${sourceLink}</div></article>`;
+  }).join('');
+  return `<section class="section" data-event-agenda><div class="wrap"><div class="agenda-head"><div><span class="eyebrow">برنامج موثق</span><h2>${sessionsTitle}</h2></div>${detailed ? `<p>${agendaSummary}</p>` : ''}</div>${sessionsNote}${toolbar}<div class="timeline">${timeline}</div></div></section>`;
+}
+
 function renderEventDetail(event) {
   const relative = '../';
   const description = `${event.title} في ${cityLabel(event.city)}: الوقت، الموقع، المصدر، وحالة الجدول الحي عبر EventLive.`;
@@ -1441,9 +1684,7 @@ function renderEventDetail(event) {
     ? '<p class="muted">هذه نافذة حضور أساسية مستنتجة من وقت بداية ونهاية الفعالية. عند توفر البرنامج التفصيلي ستظهر الجلسات والفقرات هنا.</p>'
     : '';
   const officialSessions = officialSessionRows(event);
-  const sessions = event.sessions?.length
-    ? `<section class="section"><div class="wrap"><h2>${sessionsTitle}</h2>${sessionsNote}<div class="timeline">${event.sessions.map((session, index) => `<div class="session" id="${escapeHtml(sessionAnchor(session, index))}"><b>${escapeHtml(session.title || session.session_title || 'جلسة')}</b><div class="meta"><span>${escapeHtml(formatDate(session.starts_at || session.start_at))}</span><span>${escapeHtml(session.room || session.track || '')}</span></div></div>`).join('')}</div></div></section>`
-    : '';
+  const sessions = renderEventSessions(event, sessionsTitle, sessionsNote);
   const outline = event.program_outline || {};
   const outlineLists = [
     ['الأهداف', outline.goals],
@@ -1462,6 +1703,7 @@ function renderEventDetail(event) {
   <link rel="alternate" type="application/json" title="${escapeHtml(event.title)} - EventLive JSON" href="${escapeHtml(jsonHref)}" />
   <link rel="alternate" type="text/calendar" title="${escapeHtml(event.title)} - EventLive ICS" href="${escapeHtml(`${event.file_slug}.ics`)}" />
   ${pageCss}
+  ${agendaCss}
   ${jsonLd({
     '@context': 'https://schema.org',
     '@type': 'WebPage',
@@ -1506,6 +1748,8 @@ ${header(relative)}
 </main>
 ${footer(relative)}
 ${liveRuntimeScript()}
+${sessionAgendaScript()}
+${attendanceModeScript(event, image)}
 </body>
 </html>`;
   writeText(path.join(eventsDir, `${event.file_slug}.html`), html);
@@ -2272,11 +2516,14 @@ ${liveRuntimeScript()}
 }
 
 function reconcileStaleEventRefs(events) {
-  const byHash = new Map();
+  const slugsByHash = new Map();
   const byLegacySlug = new Map();
   for (const event of events) {
     const hash = String(event.file_slug || '').match(/-([a-f0-9]{8})$/i)?.[1];
-    if (hash) byHash.set(hash, event.file_slug);
+    if (hash) {
+      if (!slugsByHash.has(hash)) slugsByHash.set(hash, new Set());
+      slugsByHash.get(hash).add(event.file_slug);
+    }
     const currentSlug = String(event.file_slug || '').trim();
     if (!currentSlug) continue;
     for (const candidate of [
@@ -2296,7 +2543,8 @@ function reconcileStaleEventRefs(events) {
     const before = text;
     text = text
       .replace(/events\/([^"'?#/]+?)-([a-f0-9]{8})\.(html|ics)/gi, (match, prefix, hash, ext) => {
-        const currentSlug = byHash.get(hash);
+        const matches = slugsByHash.get(hash);
+        const currentSlug = matches?.size === 1 ? [...matches][0] : '';
         return currentSlug ? `events/${currentSlug}.${ext}` : match;
       })
       .replace(/events\/([^"'?#/]+?)\.(html|ics)/gi, (match, legacySlug, ext) => {
@@ -2307,7 +2555,8 @@ function reconcileStaleEventRefs(events) {
         return fs.existsSync(currentPath) && !fs.existsSync(legacyPath) ? `events/${currentSlug}.${ext}` : match;
       })
       .replace(/assets\/event-covers\/([^"'?#/]+?)-([a-f0-9]{8})\.svg/gi, (match, prefix, hash) => {
-        const currentSlug = byHash.get(hash);
+        const matches = slugsByHash.get(hash);
+        const currentSlug = matches?.size === 1 ? [...matches][0] : '';
         return currentSlug ? `assets/event-covers/${currentSlug}.svg` : match;
       });
     if (text !== before) fs.writeFileSync(filePath, text, 'utf8');
@@ -4803,6 +5052,69 @@ async function writeActivationUtilityPages(events) {
   }));
 }
 
+function writeAttendancePage() {
+  const canonical = absoluteUrl('attendance.html');
+  const html = `<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  ${baseHead({ title: 'وضع الحضور | EventLive', description: 'فعالياتك المحفوظة وجداولها الحية على هذا الجهاز، متاحة عند ضعف الاتصال.', canonical, noindex: true })}
+  ${pageCss}
+  <style>
+    .attendance-list{display:grid;gap:14px}.attendance-item{display:grid;grid-template-columns:160px 1fr;gap:16px;background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden}.attendance-item img{width:100%;height:100%;min-height:150px;object-fit:cover}.attendance-body{padding:16px}.attendance-body h2{margin:0 0 6px}.attendance-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.attendance-remove{background:#fff;color:var(--live);border:1px solid rgba(229,72,77,.35)}.attendance-empty{background:#fff;border:1px solid var(--line);border-radius:8px;padding:24px;text-align:center}.network-state{display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.12)}@media(max-width:620px){.attendance-item{grid-template-columns:1fr}.attendance-item img{aspect-ratio:16/9;min-height:0}.attendance-body{padding:14px}}
+  </style>
+</head>
+<body data-page-kind="attendance">
+${header('./')}
+<main>
+  <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span>رفيقك داخل الفعالية</span><h1>وضع الحضور</h1><p class="lead">فعالياتك التي حفظتها على هذا الجهاز، مع وصول سريع إلى الجدول الحي والاتجاهات حتى عند ضعف الشبكة.</p><span class="network-state" data-network-state aria-live="polite">جاري فحص الاتصال...</span></div></section>
+  <section class="section"><div class="wrap"><div class="attendance-list" data-attendance-list aria-live="polite"></div><div class="attendance-empty" data-attendance-empty hidden><h2>لم تحفظ فعالية بعد</h2><p>افتح أي فعالية قادمة واضغط «احفظ للحضور» لتظهر هنا.</p><a class="cta" href="./events.html">استكشف الفعاليات</a></div></div></section>
+</main>
+${footer('./')}
+<script id="eventlive-attendance-dashboard">
+(function () {
+  var storageKey = 'eventlive-attendance-events';
+  var list = document.querySelector('[data-attendance-list]');
+  var empty = document.querySelector('[data-attendance-empty]');
+  var network = document.querySelector('[data-network-state]');
+  function savedEvents() { try { return JSON.parse(localStorage.getItem(storageKey) || '{}') || {}; } catch (error) { return {}; } }
+  function updateNetwork() { network.textContent = navigator.onLine ? 'متصل، الجداول تتحدث عند توفر جديد' : 'دون اتصال، نعرض آخر نسخة محفوظة'; }
+  function eventJsonPath(saved) { return String(saved.path || '').replace(/\\.html(?:[?#].*)?$/, '.json'); }
+  function el(name, className, text) { var node = document.createElement(name); if (className) node.className = className; if (text) node.textContent = text; return node; }
+  function removeEvent(eventId, card) {
+    var saved = savedEvents(); delete saved[eventId]; localStorage.setItem(storageKey, JSON.stringify(saved)); card.remove();
+    if (!list.children.length) empty.hidden = false;
+    if (typeof window.eventLiveTrack === 'function') window.eventLiveTrack('attendance_mode_removed', { event_id: eventId });
+  }
+  function renderCard(eventId, saved, event) {
+    var card = el('article', 'attendance-item');
+    var image = el('img'); image.src = event.image_url || './assets/eventlive-hero.png'; image.alt = event.image_alt || event.title || 'فعالية محفوظة'; image.loading = 'lazy';
+    var body = el('div', 'attendance-body'); body.append(el('h2', '', event.title || eventId));
+    body.append(el('p', '', [event.city_label || event.city, event.venue].filter(Boolean).join(' · ')));
+    body.append(el('p', '', event.status_label || 'محفوظة للحضور'));
+    var actions = el('div', 'attendance-actions');
+    var open = el('a', 'cta', 'افتح الجدول'); open.href = saved.path || './events.html';
+    actions.append(open);
+    if (event.directions_url) { var directions = el('a', 'cta', 'الاتجاهات'); directions.href = event.directions_url; actions.append(directions); }
+    var remove = el('button', 'cta attendance-remove', 'إزالة'); remove.type = 'button'; remove.addEventListener('click', function () { removeEvent(eventId, card); }); actions.append(remove);
+    body.append(actions); card.append(image, body); list.append(card);
+  }
+  async function render() {
+    var saved = savedEvents(); var entries = Object.entries(saved).sort(function (a, b) { return String(b[1].savedAt || '').localeCompare(String(a[1].savedAt || '')); });
+    list.innerHTML = ''; empty.hidden = entries.length > 0;
+    for (const entry of entries) {
+      var eventId = entry[0], savedItem = entry[1];
+      try { var response = await fetch(eventJsonPath(savedItem)); if (!response.ok) throw new Error('unavailable'); renderCard(eventId, savedItem, await response.json()); }
+      catch (error) { renderCard(eventId, savedItem, { title: eventId, status_label: 'النسخة التفصيلية غير متاحة بعد' }); }
+    }
+  }
+  window.addEventListener('online', updateNetwork); window.addEventListener('offline', updateNetwork); updateNetwork(); render();
+})();
+</script>
+</body>
+</html>`;
+  writeText(path.join(distDir, 'attendance.html'), html);
+}
+
 function normalizePublicHref(value = '') {
   return String(value || '')
     .replace(/^https?:\/\/eventme\.live\//, './')
@@ -5031,6 +5343,14 @@ function patchScreenPage() {
   const todayPath = path.join(distDir, 'today.json');
   if (!fs.existsSync(screenPath) || !fs.existsSync(todayPath)) return false;
   const fallback = JSON.parse(fs.readFileSync(todayPath, 'utf8'));
+  const screenFallback = {
+    ...fallback,
+    queue: Array.isArray(fallback.queue) ? fallback.queue.slice(0, 4) : [],
+    live_updates: {
+      ...(fallback.live_updates || {}),
+      queue: Array.isArray(fallback.live_updates?.queue) ? fallback.live_updates.queue.slice(0, 3) : []
+    }
+  };
   const html = fs.readFileSync(screenPath, 'utf8');
   const screenFitCss = `<style id="eventlive-screen-fit">
 html, body { width:100%; height:100%; overflow:hidden; }
@@ -5375,7 +5695,7 @@ body[data-screen-mode="event-screen"] .screen .qr-panel { display:none !importan
       render(screenData);
     }`;
   let next = html
-    .replace(/const fallbackToday = \{[\s\S]*?\};\n\s*const controls =/, `const fallbackToday = ${scriptValue(fallback)};\n    const controls =`)
+    .replace(/const fallbackToday = \{[\s\S]*?\};\n\s*const controls =/, `const fallbackToday = ${scriptValue(screenFallback)};\n    const controls =`)
     .replace(/"dateModified":"[^"]+"/g, `"dateModified":"${buildAt}"`)
     .replace(/<style id="eventlive-screen-fit">[\s\S]*?<\/style>/g, '')
     .replace(/<\/head>/i, `  ${screenFitCss}\n</head>`)
@@ -5424,6 +5744,7 @@ function writeServiceWorker() {
     './search-index.json',
     './audiences.json',
     './today-events.html',
+    './attendance.html',
     './today.html',
     './today.json',
     './live-status.json',
@@ -5452,7 +5773,7 @@ function writeServiceWorker() {
     if (asset === './') return true;
     return fs.existsSync(path.join(distDir, asset.replace(/^\.\//, '')));
   });
-  writeText(swPath, `const CACHE_NAME = 'eventlive-static-${Date.now()}';\nconst PRECACHE = ${JSON.stringify(precache, null, 2)};\n\nself.addEventListener('install', (event) => {\n  event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(PRECACHE)).then(() => self.skipWaiting()));\n});\n\nself.addEventListener('activate', (event) => {\n  event.waitUntil((async () => {\n    const keys = await caches.keys();\n    await Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)));\n    await self.clients.claim();\n  })());\n});\n\nself.addEventListener('fetch', (event) => {\n  const isNavigationRequest = event.request.mode === 'navigate' || (event.request.method === 'GET' && event.request.headers.get('Accept')?.includes('text/html'));\n  if (isNavigationRequest) {\n    event.respondWith(\n      fetch(event.request).then((response) => {\n        return caches.open(CACHE_NAME).then((cache) => {\n          cache.put(event.request, response.clone()).catch(() => {});\n          return response;\n        });\n      }).catch(() => caches.match(event.request))\n    );\n    return;\n  }\n\n  event.respondWith(caches.match(event.request).then((cached) => cached || fetch(event.request)));\n});\n`);
+  writeText(swPath, `const CACHE_NAME = 'eventlive-static-${Date.now()}';\nconst PRECACHE = ${JSON.stringify(precache, null, 2)};\n\nself.addEventListener('install', (event) => {\n  event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(PRECACHE)).then(() => self.skipWaiting()));\n});\n\nself.addEventListener('activate', (event) => {\n  event.waitUntil((async () => {\n    const keys = await caches.keys();\n    await Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)));\n    await self.clients.claim();\n  })());\n});\n\nself.addEventListener('message', (event) => {\n  if (event.data?.type !== 'CACHE_EVENT_ASSETS') return;\n  const assets = Array.isArray(event.data.assets) ? event.data.assets : [];\n  event.waitUntil((async () => {\n    const cache = await caches.open(CACHE_NAME);\n    let cached = 0;\n    for (const asset of assets) {\n      try {\n        const url = new URL(asset, self.location.href);\n        if (url.origin !== self.location.origin) continue;\n        const response = await fetch(url.href, { credentials: 'same-origin' });\n        if (!response.ok) continue;\n        await cache.put(url.href, response.clone());\n        cached += 1;\n      } catch (error) {}\n    }\n    event.ports?.[0]?.postMessage({ type: 'CACHE_EVENT_ASSETS_RESULT', cached });\n  })());\n});\n\nself.addEventListener('fetch', (event) => {\n  if (event.request.method !== 'GET') return;\n  const isNavigationRequest = event.request.mode === 'navigate' || event.request.headers.get('Accept')?.includes('text/html');\n  if (isNavigationRequest) {\n    event.respondWith(\n      fetch(event.request).then((response) => {\n        return caches.open(CACHE_NAME).then((cache) => {\n          cache.put(event.request, response.clone()).catch(() => {});\n          return response;\n        });\n      }).catch(async () => (await caches.match(event.request)) || caches.match('./index.html'))\n    );\n    return;\n  }\n\n  const url = new URL(event.request.url);\n  const isEventAsset = url.origin === self.location.origin && (\n    /\\/events\\/.+\\.(?:json|ics)$/.test(url.pathname)\n    || ['image', 'style', 'script', 'font'].includes(event.request.destination)\n  );\n  if (!isEventAsset) {\n    event.respondWith(caches.match(event.request).then((cached) => cached || fetch(event.request)));\n    return;\n  }\n  event.respondWith(caches.match(event.request).then((cached) => cached || fetch(event.request).then((response) => {\n    if (response.ok) caches.open(CACHE_NAME).then((cache) => cache.put(event.request, response.clone())).catch(() => {});\n    return response;\n  })));\n});\n`);
 }
 
 function htmlFiles(dir) {
@@ -5479,7 +5800,7 @@ function sitemapImageXml(event = {}) {
 
 function writeSitemap(events = []) {
   const eventByPage = new Map(events.map((event) => [`events/${event.file_slug}.html`, event]));
-  const ownerOnlyPages = new Set(['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html', 'owner-status.html']);
+  const ownerOnlyPages = new Set(['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html', 'owner-status.html', 'attendance.html']);
   const sitemapPaths = [...new Set(htmlFiles(distDir)
     .map((file) => file.replace(/\\/g, '/'))
     .filter((file) => !ownerOnlyPages.has(file))
@@ -5909,6 +6230,10 @@ function removeForbiddenArtifacts() {
   if (fs.existsSync(oldHero)) fs.rmSync(oldHero, { force: true });
 }
 
+function writeBrandIcon() {
+  writeText(path.join(distDir, 'favicon.svg'), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="EventLive"><rect width="64" height="64" rx="12" fill="#07231c"/><text x="11" y="42" fill="#fff" font-family="Arial,sans-serif" font-size="28" font-weight="700">EL</text><circle cx="51" cy="14" r="5" fill="#e5484d"/></svg>`);
+}
+
 const events = buildEvents();
 writeCatalogFiles(events);
 writeMethodologyPage(events);
@@ -5924,6 +6249,7 @@ writeAudiencesIndexPage(events);
 writeTemporalPages(events);
 writeLiveOperationalFeeds(events);
 await writeActivationUtilityPages(events);
+writeAttendancePage();
 const homePatched = patchHomePage(events);
 const browsePatched = patchEventsBrowsePage(events);
 const organizersPatched = patchOrganizersPage();
@@ -5943,6 +6269,7 @@ const missingImageRefsPatched = reconcileMissingLocalEventImages(events);
 const excludedReferencePatched = pruneExcludedPublicArtifacts(events);
 const searchIntentPages = writeSearchIntentPages(events);
 const guidesIntentPatched = patchGuidesHubWithSearchIntentPages(searchIntentPages);
+writeBrandIcon();
 writeServiceWorker();
 removeForbiddenArtifacts();
 writeSitemap(events);

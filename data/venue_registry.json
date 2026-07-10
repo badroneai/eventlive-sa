@@ -1,0 +1,145 @@
+{
+  "schema": "eventlive.venue-registry.v1",
+  "updated_at": "2026-07-10T00:00:00+03:00",
+  "venues": [
+    {
+      "id": "roshn-front-exhibition-center",
+      "name": "Riyadh Front Exhibition & Conference Center",
+      "city": "Riyadh",
+      "aliases": [
+        "Riyadh Front Exhibition & Conference Center",
+        "Riyadh Front Exhibition & Convention Center",
+        "Riyadh Front Exhibition Center",
+        "RFECC",
+        "Roshn Front",
+        "Roshn Front, Riyadh",
+        "واجهة روشن",
+        "واجهة الرياض"
+      ],
+      "latitude": 24.8414302,
+      "longitude": 46.7333539,
+      "precision": "venue",
+      "verification_method": "openstreetmap-place-match",
+      "verified_at": "2026-07-10T00:00:00+03:00",
+      "evidence_url": "https://www.openstreetmap.org/?mlat=24.8414302&mlon=46.7333539#map=17/24.8414302/46.7333539"
+    },
+    {
+      "id": "riyadh-international-convention-center",
+      "name": "Riyadh International Convention & Exhibition Center",
+      "city": "Riyadh",
+      "aliases": [
+        "Riyadh International Convention & Exhibition Center",
+        "Riyadh International Convention and Exhibition Center",
+        "Riyadh International Convention & Exhibition Center (RICEC)",
+        "RICEC",
+        "مركز الرياض الدولي للمؤتمرات والمعارض"
+      ],
+      "latitude": 24.7523498,
+      "longitude": 46.7262727,
+      "precision": "venue",
+      "verification_method": "openstreetmap-place-match",
+      "verified_at": "2026-07-10T00:00:00+03:00",
+      "evidence_url": "https://www.openstreetmap.org/?mlat=24.7523498&mlon=46.7262727#map=17/24.7523498/46.7262727"
+    },
+    {
+      "id": "dhahran-expo",
+      "name": "Dhahran Expo",
+      "city": "Dhahran",
+      "aliases": [
+        "Dhahran Expo",
+        "Dhahran International Exhibitions Company",
+        "شركة معارض الظهران الدولي",
+        "شركة معارض الظهران الدولية",
+        "معارض الظهران"
+      ],
+      "latitude": 26.381223,
+      "longitude": 50.212678,
+      "precision": "venue",
+      "verification_method": "official-site-map",
+      "verified_at": "2026-07-10T00:00:00+03:00",
+      "evidence_url": "https://dhahranexpo.com.sa/"
+    },
+    {
+      "id": "boulevard-riyadh-city",
+      "name": "Boulevard Riyadh City",
+      "city": "Riyadh",
+      "aliases": [
+        "Boulevard City, Riyadh",
+        "Boulevard Riyadh City",
+        "Global Theater, Boulevard City, Riyadh",
+        "Eishha (Live It) fan zone, Boulevard City, Riyadh",
+        "بوليفارد سيتي",
+        "بوليفارد رياض سيتي"
+      ],
+      "latitude": 24.7684171,
+      "longitude": 46.6044742,
+      "precision": "venue",
+      "verification_method": "openstreetmap-place-match",
+      "verified_at": "2026-07-10T00:00:00+03:00",
+      "evidence_url": "https://www.openstreetmap.org/?mlat=24.7684171&mlon=46.6044742#map=17/24.7684171/46.6044742"
+    },
+    {
+      "id": "prince-faisal-bin-fahd-arts-hall",
+      "name": "Prince Faisal bin Fahd Arts Hall",
+      "city": "Riyadh",
+      "aliases": [
+        "Prince Faisal Bin Fahd Arts Hall, Riyadh",
+        "Prince Faisal bin Fahd Arts Hall",
+        "صالة الأمير فيصل بن فهد للفنون"
+      ],
+      "latitude": 24.6638581,
+      "longitude": 46.6902308,
+      "precision": "venue",
+      "verification_method": "openstreetmap-place-match",
+      "verified_at": "2026-07-10T00:00:00+03:00",
+      "evidence_url": "https://www.openstreetmap.org/?mlat=24.6638581&mlon=46.6902308#map=17/24.6638581/46.6902308"
+    },
+    {
+      "id": "king-abdulaziz-university",
+      "name": "King Abdulaziz University",
+      "city": "Jeddah",
+      "aliases": [
+        "King Abdulaziz University",
+        "جامعة الملك عبدالعزيز",
+        "جامعة الملك عبد العزيز"
+      ],
+      "latitude": 21.4934146,
+      "longitude": 39.2485449,
+      "precision": "campus",
+      "verification_method": "openstreetmap-place-match",
+      "verified_at": "2026-07-10T00:00:00+03:00",
+      "evidence_url": "https://www.openstreetmap.org/?mlat=21.4934146&mlon=39.2485449#map=16/21.4934146/39.2485449"
+    },
+    {
+      "id": "qassim-university",
+      "name": "Qassim University",
+      "city": "Buraydah",
+      "aliases": [
+        "Qassim University",
+        "جامعة القصيم"
+      ],
+      "latitude": 26.3529519,
+      "longitude": 43.7600402,
+      "precision": "campus",
+      "verification_method": "openstreetmap-place-match",
+      "verified_at": "2026-07-10T00:00:00+03:00",
+      "evidence_url": "https://www.openstreetmap.org/?mlat=26.3529519&mlon=43.7600402#map=16/26.3529519/43.7600402"
+    },
+    {
+      "id": "jouf-university",
+      "name": "Jouf University",
+      "city": "Sakaka",
+      "aliases": [
+        "Jouf University",
+        "Al-Jouf University",
+        "جامعة الجوف"
+      ],
+      "latitude": 29.7848626,
+      "longitude": 40.0352745,
+      "precision": "campus",
+      "verification_method": "openstreetmap-place-match",
+      "verified_at": "2026-07-10T00:00:00+03:00",
+      "evidence_url": "https://www.openstreetmap.org/?mlat=29.7848626&mlon=40.0352745#map=16/29.7848626/40.0352745"
+    }
+  ]
+}

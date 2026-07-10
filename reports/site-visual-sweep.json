@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T01:43:25.548Z",
+  "generated_at": "2026-07-10T08:04:03.304Z",
   "intent": "eventlive-site-visual-sweep",
   "base_url": "http://127.0.0.1:4187",
   "ok": true,
@@ -22,7 +22,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية الآن",
         "h1": "ماذا يحدث الآن في السعودية؟",
-        "bodyTextLength": 3615,
+        "bodyTextLength": 3220,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -30,14 +30,13 @@
         "hasDescription": true,
         "hasManifest": true,
         "jsonLdBlocks": 3,
-        "visibleImages": 13,
+        "visibleImages": 12,
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
           "ماذا يحدث الآن في السعودية؟",
-          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+          "مهرجان لحن المملكة",
           "يبدأ قريبًا",
-          "دورات وبرامج للتقنيين والباحثين عن فرصة",
           "برامج ممتدة نوافذها مفتوحة الآن"
         ],
         "horizontalOverflow": false,
@@ -47,7 +46,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 3707
+          "scrollHeight": 3101
         }
       }
     },
@@ -62,7 +61,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية الآن",
         "h1": "ماذا يحدث الآن في السعودية؟",
-        "bodyTextLength": 3576,
+        "bodyTextLength": 3181,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -70,14 +69,13 @@
         "hasDescription": true,
         "hasManifest": true,
         "jsonLdBlocks": 3,
-        "visibleImages": 13,
+        "visibleImages": 12,
         "brokenImages": [],
-        "pendingImages": 0,
+        "pendingImages": 5,
         "headings": [
           "ماذا يحدث الآن في السعودية؟",
-          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+          "مهرجان لحن المملكة",
           "يبدأ قريبًا",
-          "دورات وبرامج للتقنيين والباحثين عن فرصة",
           "برامج ممتدة نوافذها مفتوحة الآن"
         ],
         "horizontalOverflow": false,
@@ -86,13 +84,13 @@
           {
             "tag": "article",
             "className": "card",
-            "text": "عائلات وأطفال ٦يوليو الرياض · Boulevard City, Riyadh · الاثنين Esports World Cup",
+            "text": "عائلات وأطفال ٩يوليو جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 12 ساعة الت",
             "width": 262
           },
           {
             "tag": "a",
             "className": "cover",
-            "text": "عائلات وأطفال ٦يوليو",
+            "text": "عائلات وأطفال ٩يوليو",
             "width": 260
           },
           {
@@ -110,33 +108,33 @@
           {
             "tag": "div",
             "className": "card-body",
-            "text": "الرياض · Boulevard City, Riyadh · الاثنين Esports World Cup نافذة البرنامج مفتوح",
+            "text": "جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 12 ساعة التفاصيل التقويم مصدر حك",
             "width": 260
           },
           {
             "tag": "div",
             "className": "card-meta",
-            "text": "الرياض · Boulevard City, Riyadh · الاثنين",
+            "text": "جدة · جدة · الخميس",
             "width": 228
           },
           {
             "tag": "h3",
             "className": "",
-            "text": "Esports World Cup",
+            "text": "مهرجان لحن المملكة",
             "width": 228
           },
           {
             "tag": "a",
             "className": "",
-            "text": "Esports World Cup",
-            "width": 140
+            "text": "مهرجان لحن المملكة",
+            "width": 132
           }
         ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 3175
+          "scrollHeight": 2603
         }
       }
     },
@@ -151,7 +149,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية مباشرة",
         "h1": "كل الفعاليات",
-        "bodyTextLength": 17675,
+        "bodyTextLength": 18498,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -175,57 +173,57 @@
           {
             "tag": "a",
             "className": "",
-            "text": "على مستوى المملكة",
-            "width": 147
+            "text": "المزاحمية",
+            "width": 82
           },
           {
             "tag": "a",
             "className": "",
-            "text": "عن بعد",
-            "width": 68
+            "text": "النماص",
+            "width": 70
           },
           {
             "tag": "a",
             "className": "",
-            "text": "مكة",
-            "width": 47
+            "text": "بريدة",
+            "width": 56
           },
           {
             "tag": "a",
             "className": "",
-            "text": "فعاليات الغرف التجارية",
-            "width": 158
+            "text": "تبوك",
+            "width": 53
           },
           {
             "tag": "a",
             "className": "",
-            "text": "مؤتمرات ومنتديات",
-            "width": 134
+            "text": "ثول",
+            "width": 46
           },
           {
             "tag": "a",
             "className": "",
-            "text": "معارض وتجارية",
-            "width": 116
+            "text": "جازان",
+            "width": 57
           },
           {
             "tag": "a",
             "className": "",
-            "text": "ورش تنظيمية وصحية",
-            "width": 151
+            "text": "جدة",
+            "width": 50
           },
           {
             "tag": "a",
             "className": "",
-            "text": "مبدعون وفنون",
-            "width": 113
+            "text": "حائل",
+            "width": 54
           }
         ],
         "viewport": {
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 7824
+          "scrollHeight": 7722
         }
       }
     },
@@ -240,7 +238,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية مباشرة",
         "h1": "كل الفعاليات",
-        "bodyTextLength": 17622,
+        "bodyTextLength": 18445,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -250,7 +248,7 @@
         "jsonLdBlocks": 4,
         "visibleImages": 24,
         "brokenImages": [],
-        "pendingImages": 19,
+        "pendingImages": 18,
         "headings": [
           "كل الفعاليات",
           "تأكيد قاعة ورشة رحلة المستفيد",
@@ -288,33 +286,33 @@
           {
             "tag": "a",
             "className": "",
-            "text": "الرياض",
+            "text": "الجبيل",
+            "width": 63
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الخبر",
+            "width": 51
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الدرعية",
             "width": 67
           },
           {
             "tag": "a",
             "className": "",
-            "text": "السعودية",
-            "width": 80
-          },
-          {
-            "tag": "a",
-            "className": "",
-            "text": "الظهران",
-            "width": 70
-          },
-          {
-            "tag": "a",
-            "className": "",
-            "text": "العلا",
-            "width": 49
+            "text": "الدمام",
+            "width": 62
           }
         ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 21013
+          "scrollHeight": 20675
         }
       }
     },
@@ -329,7 +327,7 @@
       "metrics": {
         "title": "EventLive | ملتقى التحول الرقمي في القطاع الحكومي 2026",
         "h1": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
-        "bodyTextLength": 4611,
+        "bodyTextLength": 4563,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -344,7 +342,7 @@
           "ملتقى التحول الرقمي في القطاع الحكومي 2026",
           "لا توجد جلسة نشطة الآن",
           "الافتتاح الرسمي وكلمة الجهة المنظمة",
-          "باقي على بداية الفعالية",
+          "تجري الآن: حلقة نقاش: جاهزية الجهات للذكاء الاصطناعي",
           "أين نحن الآن في الفعالية؟"
         ],
         "horizontalOverflow": false,
@@ -354,7 +352,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 4020
+          "scrollHeight": 4055
         }
       }
     },
@@ -369,7 +367,7 @@
       "metrics": {
         "title": "EventLive | ملتقى التحول الرقمي في القطاع الحكومي 2026",
         "h1": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
-        "bodyTextLength": 4604,
+        "bodyTextLength": 4583,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -384,7 +382,7 @@
           "ملتقى التحول الرقمي في القطاع الحكومي 2026",
           "لا توجد جلسة نشطة الآن",
           "الافتتاح الرسمي وكلمة الجهة المنظمة",
-          "باقي على بداية الفعالية",
+          "تجري الآن: حلقة نقاش: جاهزية الجهات للذكاء الاصطناعي",
           "أين نحن الآن في الفعالية؟"
         ],
         "horizontalOverflow": false,
@@ -419,7 +417,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 7507
+          "scrollHeight": 7568
         }
       }
     },
@@ -434,7 +432,7 @@
       "metrics": {
         "title": "EventLive | الآن",
         "h1": "الآن",
-        "bodyTextLength": 2353,
+        "bodyTextLength": 2126,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -449,11 +447,11 @@
           "الآن",
           "تأكيد قاعة ورشة رحلة المستفيد",
           "أقرب خطوة مفيدة",
-          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+          "مهرجان لحن المملكة",
           "كل الأولويات القادمة",
-          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+          "مهرجان لحن المملكة",
           "Unstable",
-          "ملتقى التحول الرقمي في القطاع الحكومي 2026"
+          "عمر الجمل - حفلة ستاند أب كوميدي"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -462,7 +460,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 1750
+          "scrollHeight": 1703
         }
       }
     },
@@ -477,7 +475,7 @@
       "metrics": {
         "title": "EventLive | الآن",
         "h1": "الآن",
-        "bodyTextLength": 2300,
+        "bodyTextLength": 1982,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -492,11 +490,11 @@
           "الآن",
           "تأكيد قاعة ورشة رحلة المستفيد",
           "أقرب خطوة مفيدة",
-          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+          "مهرجان لحن المملكة",
           "كل الأولويات القادمة",
-          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+          "مهرجان لحن المملكة",
           "Unstable",
-          "ملتقى التحول الرقمي في القطاع الحكومي 2026"
+          "عمر الجمل - حفلة ستاند أب كوميدي"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -530,7 +528,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 3408
+          "scrollHeight": 3231
         }
       }
     },
@@ -541,11 +539,11 @@
       "ok": true,
       "errors": [],
       "screenshot": "output/playwright/visual-sweep/today-events-desktop.png",
-      "screenshot_mode": "full-page",
+      "screenshot_mode": "viewport",
       "metrics": {
         "title": "فعاليات اليوم | EventLive",
         "h1": "فعاليات اليوم",
-        "bodyTextLength": 4999,
+        "bodyTextLength": 10315,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -553,18 +551,18 @@
         "hasDescription": true,
         "hasManifest": true,
         "jsonLdBlocks": 3,
-        "visibleImages": 7,
+        "visibleImages": 18,
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
           "فعاليات اليوم",
           "تابع فعاليات اليوم",
-          "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
-          "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
-          "Esports World Cup",
-          "Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH",
-          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
-          "Unstable"
+          "البرنامج الصيفي بجامعة الجوف 2026",
+          "البرنامج الصيفي بجامعة الجوف 2026",
+          "مهرجان لحن المملكة",
+          "عمر الجمل - حفلة ستاند أب كوميدي",
+          "Unstable",
+          "PFL MENA Fight Night"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -573,7 +571,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 3433
+          "scrollHeight": 6860
         }
       }
     },
@@ -588,7 +586,7 @@
       "metrics": {
         "title": "فعاليات اليوم | EventLive",
         "h1": "فعاليات اليوم",
-        "bodyTextLength": 4924,
+        "bodyTextLength": 10240,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -596,18 +594,18 @@
         "hasDescription": true,
         "hasManifest": true,
         "jsonLdBlocks": 3,
-        "visibleImages": 7,
+        "visibleImages": 18,
         "brokenImages": [],
-        "pendingImages": 0,
+        "pendingImages": 7,
         "headings": [
           "فعاليات اليوم",
           "تابع فعاليات اليوم",
-          "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
-          "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
-          "Esports World Cup",
-          "Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH",
-          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
-          "Unstable"
+          "البرنامج الصيفي بجامعة الجوف 2026",
+          "البرنامج الصيفي بجامعة الجوف 2026",
+          "مهرجان لحن المملكة",
+          "عمر الجمل - حفلة ستاند أب كوميدي",
+          "Unstable",
+          "PFL MENA Fight Night"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -616,7 +614,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 7082
+          "scrollHeight": 14998
         }
       }
     },
@@ -730,7 +728,7 @@
       "metrics": {
         "title": "التحديثات الحية | EventLive",
         "h1": "التحديثات الحية",
-        "bodyTextLength": 1338,
+        "bodyTextLength": 676,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -743,10 +741,7 @@
         "pendingImages": 0,
         "headings": [
           "التحديثات الحية",
-          "تأكيد قاعة ورشة رحلة المستفيد",
-          "تنبيه وقت الجلسة الرئيسية",
-          "نصيحة وصول",
-          "فتح التسجيل المبكر",
+          "لا توجد تحديثات حية الآن",
           "ملف التحديثات"
         ],
         "horizontalOverflow": false,
@@ -756,7 +751,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 1344
+          "scrollHeight": 1060
         }
       }
     },
@@ -771,7 +766,7 @@
       "metrics": {
         "title": "التحديثات الحية | EventLive",
         "h1": "التحديثات الحية",
-        "bodyTextLength": 1263,
+        "bodyTextLength": 601,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -784,10 +779,7 @@
         "pendingImages": 0,
         "headings": [
           "التحديثات الحية",
-          "تأكيد قاعة ورشة رحلة المستفيد",
-          "تنبيه وقت الجلسة الرئيسية",
-          "نصيحة وصول",
-          "فتح التسجيل المبكر",
+          "لا توجد تحديثات حية الآن",
           "ملف التحديثات"
         ],
         "horizontalOverflow": false,
@@ -797,7 +789,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 2473
+          "scrollHeight": 1245
         }
       }
     },
@@ -811,8 +803,8 @@
       "screenshot_mode": "full-page",
       "metrics": {
         "title": "EventLive | شاشة الحضور",
-        "h1": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
-        "bodyTextLength": 864,
+        "h1": "Unstable",
+        "bodyTextLength": 620,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -824,7 +816,7 @@
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+          "Unstable",
           "القادم على EventLive"
         ],
         "horizontalOverflow": false,
@@ -848,8 +840,8 @@
       "screenshot_mode": "full-page",
       "metrics": {
         "title": "EventLive | شاشة الحضور",
-        "h1": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
-        "bodyTextLength": 751,
+        "h1": "Unstable",
+        "bodyTextLength": 499,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -861,7 +853,7 @@
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
+          "Unstable",
           "القادم على EventLive"
         ],
         "horizontalOverflow": false,
@@ -886,7 +878,7 @@
       "metrics": {
         "title": "تفعيل الجداول الحية | EventLive",
         "h1": "تفعيل الجداول الحية",
-        "bodyTextLength": 14722,
+        "bodyTextLength": 13997,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -900,12 +892,12 @@
         "headings": [
           "تفعيل الجداول الحية",
           "مصادر التفعيل الأعلى أثرًا",
+          "Visit Saudi Summer Calendar PDF",
           "Riyadh City Events",
           "Tuwaiq Academy Bootcamps and Programs",
-          "Visit Saudi Calendar",
-          "Misk Hub Programs",
-          "Saudi Water Authority Events",
-          "Future Skills MCIT Catalogue"
+          "Ministry of Culture Commission Calendars",
+          "Dhahran Expo Calendar",
+          "Visit Saudi Calendar"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -914,7 +906,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 9763
+          "scrollHeight": 8834
         }
       }
     },
@@ -929,7 +921,7 @@
       "metrics": {
         "title": "تفعيل الجداول الحية | EventLive",
         "h1": "تفعيل الجداول الحية",
-        "bodyTextLength": 14647,
+        "bodyTextLength": 13922,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -943,12 +935,12 @@
         "headings": [
           "تفعيل الجداول الحية",
           "مصادر التفعيل الأعلى أثرًا",
+          "Visit Saudi Summer Calendar PDF",
           "Riyadh City Events",
           "Tuwaiq Academy Bootcamps and Programs",
-          "Visit Saudi Calendar",
-          "Misk Hub Programs",
-          "Saudi Water Authority Events",
-          "Future Skills MCIT Catalogue"
+          "Ministry of Culture Commission Calendars",
+          "Dhahran Expo Calendar",
+          "Visit Saudi Calendar"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -956,7 +948,7 @@
           {
             "tag": "table",
             "className": "",
-            "text": "الفعاليةالأولويةالمصدرمسار الاستخراجالنقصPoppy Playtimeالرياض · 2025-10-10T16:00",
+            "text": "الفعاليةالأولويةالمصدرمسار الاستخراجالنقصSkill Development Initiativeالرياض · 20",
             "width": 780
           },
           {
@@ -974,31 +966,31 @@
           {
             "tag": "th",
             "className": "",
-            "text": "الأولوية",
-            "width": 70
-          },
-          {
-            "tag": "th",
-            "className": "",
             "text": "المصدر",
-            "width": 153
+            "width": 174
           },
           {
             "tag": "th",
             "className": "",
             "text": "مسار الاستخراج",
-            "width": 121
+            "width": 124
           },
           {
             "tag": "th",
             "className": "",
             "text": "النقص",
-            "width": 113
+            "width": 134
           },
           {
             "tag": "tbody",
             "className": "",
-            "text": "Poppy Playtimeالرياض · 2025-10-10T16:00:00+03:00عاجل الآنRiyadh City Eventsفحص ص",
+            "text": "Skill Development Initiativeالرياض · 2021-07-14T03:00:00+03:00عاجل الآنMinistry ",
+            "width": 780
+          },
+          {
+            "tag": "tr",
+            "className": "",
+            "text": "Skill Development Initiativeالرياض · 2021-07-14T03:00:00+03:00عاجل الآنMinistry ",
             "width": 780
           }
         ],
@@ -1006,13 +998,13 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 16293
+          "scrollHeight": 16363
         }
       }
     },
     {
       "page": "print",
-      "path": "/print.html?event=event-the-groves",
+      "path": "/print.html?event=event-beast-house",
       "viewport": "desktop",
       "ok": true,
       "errors": [],
@@ -1020,8 +1012,8 @@
       "screenshot_mode": "full-page",
       "metrics": {
         "title": "نسخة طباعة الفعالية | EventLive",
-        "h1": "The Groves",
-        "bodyTextLength": 949,
+        "h1": "Beast House",
+        "bodyTextLength": 908,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1033,7 +1025,7 @@
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "The Groves",
+          "Beast House",
           "بيانات الحضور",
           "الجدول الحي"
         ],
@@ -1044,13 +1036,13 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 1317
+          "scrollHeight": 1279
         }
       }
     },
     {
       "page": "print",
-      "path": "/print.html?event=event-the-groves",
+      "path": "/print.html?event=event-beast-house",
       "viewport": "mobile",
       "ok": true,
       "errors": [],
@@ -1058,8 +1050,8 @@
       "screenshot_mode": "full-page",
       "metrics": {
         "title": "نسخة طباعة الفعالية | EventLive",
-        "h1": "The Groves",
-        "bodyTextLength": 874,
+        "h1": "Beast House",
+        "bodyTextLength": 833,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1071,7 +1063,7 @@
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "The Groves",
+          "Beast House",
           "بيانات الحضور",
           "الجدول الحي"
         ],
@@ -1082,13 +1074,13 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 1821
+          "scrollHeight": 1690
         }
       }
     },
     {
       "page": "share",
-      "path": "/share.html?event=event-the-groves",
+      "path": "/share.html?event=event-beast-house",
       "viewport": "desktop",
       "ok": true,
       "errors": [],
@@ -1096,8 +1088,8 @@
       "screenshot_mode": "full-page",
       "metrics": {
         "title": "مشاركة الفعالية | EventLive",
-        "h1": "The Groves",
-        "bodyTextLength": 1307,
+        "h1": "Beast House",
+        "bodyTextLength": 1246,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1109,8 +1101,8 @@
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "The Groves",
-          "The Groves",
+          "Beast House",
+          "Beast House",
           "QR المشاركة"
         ],
         "horizontalOverflow": false,
@@ -1120,13 +1112,13 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 1391
+          "scrollHeight": 1353
         }
       }
     },
     {
       "page": "share",
-      "path": "/share.html?event=event-the-groves",
+      "path": "/share.html?event=event-beast-house",
       "viewport": "mobile",
       "ok": true,
       "errors": [],
@@ -1134,8 +1126,8 @@
       "screenshot_mode": "full-page",
       "metrics": {
         "title": "مشاركة الفعالية | EventLive",
-        "h1": "The Groves",
-        "bodyTextLength": 1232,
+        "h1": "Beast House",
+        "bodyTextLength": 1171,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1147,8 +1139,8 @@
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "The Groves",
-          "The Groves",
+          "Beast House",
+          "Beast House",
           "QR المشاركة"
         ],
         "horizontalOverflow": false,
@@ -1158,13 +1150,13 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 2292
+          "scrollHeight": 2120
         }
       }
     },
     {
       "page": "signage",
-      "path": "/signage.html?event=event-the-groves",
+      "path": "/signage.html?event=event-beast-house",
       "viewport": "desktop",
       "ok": true,
       "errors": [],
@@ -1172,8 +1164,8 @@
       "screenshot_mode": "full-page",
       "metrics": {
         "title": "لافتة QR للفعالية | EventLive",
-        "h1": "The Groves",
-        "bodyTextLength": 1234,
+        "h1": "Beast House",
+        "bodyTextLength": 1205,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1185,8 +1177,8 @@
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "The Groves",
-          "The Groves",
+          "Beast House",
+          "Beast House",
           "امسح للوصول إلى EventLive"
         ],
         "horizontalOverflow": false,
@@ -1196,13 +1188,13 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 1351
+          "scrollHeight": 1321
         }
       }
     },
     {
       "page": "signage",
-      "path": "/signage.html?event=event-the-groves",
+      "path": "/signage.html?event=event-beast-house",
       "viewport": "mobile",
       "ok": true,
       "errors": [],
@@ -1210,8 +1202,8 @@
       "screenshot_mode": "full-page",
       "metrics": {
         "title": "لافتة QR للفعالية | EventLive",
-        "h1": "The Groves",
-        "bodyTextLength": 1159,
+        "h1": "Beast House",
+        "bodyTextLength": 1130,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1223,8 +1215,8 @@
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "The Groves",
-          "The Groves",
+          "Beast House",
+          "Beast House",
           "امسح للوصول إلى EventLive"
         ],
         "horizontalOverflow": false,
@@ -1234,7 +1226,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 2285
+          "scrollHeight": 2111
         }
       }
     },
@@ -1249,7 +1241,7 @@
       "metrics": {
         "title": "فعاليات هذا الأسبوع | EventLive",
         "h1": "فعاليات هذا الأسبوع",
-        "bodyTextLength": 11229,
+        "bodyTextLength": 11029,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1263,12 +1255,12 @@
         "headings": [
           "فعاليات هذا الأسبوع",
           "تابع فعاليات هذا الأسبوع",
-          "لقاءات مراكز دعم المنشآت",
-          "لقاءات مراكز دعم المنشآت",
-          "لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)",
-          "Prince Faisal Bin Fahd Art Exhibition: Summer 2026",
           "Registration for International Research Competition on Non-Terrestrial Networks",
-          "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية"
+          "Registration for International Research Competition on Non-Terrestrial Networks",
+          "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
+          "عروض الفنون الأدائية التقليدية",
+          "فعالية رمي السهام",
+          "مهرجان المأكولات الشعبية"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -1277,7 +1269,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 6890
+          "scrollHeight": 7231
         }
       }
     },
@@ -1292,7 +1284,7 @@
       "metrics": {
         "title": "فعاليات هذا الأسبوع | EventLive",
         "h1": "فعاليات هذا الأسبوع",
-        "bodyTextLength": 11154,
+        "bodyTextLength": 10954,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1302,16 +1294,16 @@
         "jsonLdBlocks": 3,
         "visibleImages": 18,
         "brokenImages": [],
-        "pendingImages": 8,
+        "pendingImages": 7,
         "headings": [
           "فعاليات هذا الأسبوع",
           "تابع فعاليات هذا الأسبوع",
-          "لقاءات مراكز دعم المنشآت",
-          "لقاءات مراكز دعم المنشآت",
-          "لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)",
-          "Prince Faisal Bin Fahd Art Exhibition: Summer 2026",
           "Registration for International Research Competition on Non-Terrestrial Networks",
-          "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية"
+          "Registration for International Research Competition on Non-Terrestrial Networks",
+          "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
+          "عروض الفنون الأدائية التقليدية",
+          "فعالية رمي السهام",
+          "مهرجان المأكولات الشعبية"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -1320,7 +1312,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 15780
+          "scrollHeight": 15648
         }
       }
     },
@@ -1335,7 +1327,7 @@
       "metrics": {
         "title": "فعاليات هذا الشهر | EventLive",
         "h1": "فعاليات هذا الشهر",
-        "bodyTextLength": 13309,
+        "bodyTextLength": 11252,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1349,12 +1341,12 @@
         "headings": [
           "فعاليات هذا الشهر",
           "تابع فعاليات هذا الشهر",
-          "Poppy Playtime",
-          "Poppy Playtime",
-          "Riyadh Season: BLVD City",
-          "The Groves",
-          "Immersive Experience: Flying Over Saudi",
-          "Arabic Language Exhibition 28"
+          "Skill Development Initiative",
+          "Skill Development Initiative",
+          "SITAR",
+          "The Architecture and Design Café",
+          "Jusoor Program",
+          "Urban transformation Initiative"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -1363,7 +1355,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 7775
+          "scrollHeight": 6446
         }
       }
     },
@@ -1378,7 +1370,7 @@
       "metrics": {
         "title": "فعاليات هذا الشهر | EventLive",
         "h1": "فعاليات هذا الشهر",
-        "bodyTextLength": 13234,
+        "bodyTextLength": 11177,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1388,16 +1380,16 @@
         "jsonLdBlocks": 3,
         "visibleImages": 18,
         "brokenImages": [],
-        "pendingImages": 8,
+        "pendingImages": 7,
         "headings": [
           "فعاليات هذا الشهر",
           "تابع فعاليات هذا الشهر",
-          "Poppy Playtime",
-          "Poppy Playtime",
-          "Riyadh Season: BLVD City",
-          "The Groves",
-          "Immersive Experience: Flying Over Saudi",
-          "Arabic Language Exhibition 28"
+          "Skill Development Initiative",
+          "Skill Development Initiative",
+          "SITAR",
+          "The Architecture and Design Café",
+          "Jusoor Program",
+          "Urban transformation Initiative"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -1406,7 +1398,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 17501
+          "scrollHeight": 15633
         }
       }
     },
@@ -1421,7 +1413,7 @@
       "metrics": {
         "title": "EventLive | فعاليات الويكند",
         "h1": "الويكند",
-        "bodyTextLength": 6063,
+        "bodyTextLength": 5159,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1429,7 +1421,7 @@
         "hasDescription": true,
         "hasManifest": true,
         "jsonLdBlocks": 3,
-        "visibleImages": 11,
+        "visibleImages": 8,
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
@@ -1437,10 +1429,10 @@
           "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
           "فعاليات الويكند",
           "مدن ضمن هذا التصنيف",
-          "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
-          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
-          "ملتقى التحول الرقمي في القطاع الحكومي 2026",
-          "The Groves"
+          "The Groves",
+          "Arabic Language Exhibition 28",
+          "Arabic Language Exhibition for kids",
+          "Misk Local Traineeship Program"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -1449,7 +1441,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 3752
+          "scrollHeight": 3173
         }
       }
     },
@@ -1464,7 +1456,7 @@
       "metrics": {
         "title": "EventLive | فعاليات الويكند",
         "h1": "الويكند",
-        "bodyTextLength": 6010,
+        "bodyTextLength": 5106,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1472,18 +1464,18 @@
         "hasDescription": true,
         "hasManifest": true,
         "jsonLdBlocks": 3,
-        "visibleImages": 11,
+        "visibleImages": 8,
         "brokenImages": [],
-        "pendingImages": 3,
+        "pendingImages": 0,
         "headings": [
           "الويكند",
           "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
           "فعاليات الويكند",
           "مدن ضمن هذا التصنيف",
-          "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
-          "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
-          "ملتقى التحول الرقمي في القطاع الحكومي 2026",
-          "The Groves"
+          "The Groves",
+          "Arabic Language Exhibition 28",
+          "Arabic Language Exhibition for kids",
+          "Misk Local Traineeship Program"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -1517,7 +1509,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 8832
+          "scrollHeight": 7160
         }
       }
     },
@@ -1528,11 +1520,11 @@
       "ok": true,
       "errors": [],
       "screenshot": "output/playwright/visual-sweep/cities-desktop.png",
-      "screenshot_mode": "full-page",
+      "screenshot_mode": "viewport",
       "metrics": {
         "title": "فعاليات مدن السعودية | EventLive",
         "h1": "فعاليات مدن السعودية",
-        "bodyTextLength": 3225,
+        "bodyTextLength": 5182,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1547,11 +1539,11 @@
           "فعاليات مدن السعودية",
           "الرياض",
           "الظهران",
-          "عن بعد",
-          "جدة",
+          "عسير",
           "السعودية",
-          "ثول",
-          "على مستوى المملكة"
+          "جدة",
+          "عن بعد",
+          "العلا"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -1560,7 +1552,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 3435
+          "scrollHeight": 5563
         }
       }
     },
@@ -1575,7 +1567,7 @@
       "metrics": {
         "title": "فعاليات مدن السعودية | EventLive",
         "h1": "فعاليات مدن السعودية",
-        "bodyTextLength": 3150,
+        "bodyTextLength": 5107,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1590,11 +1582,11 @@
           "فعاليات مدن السعودية",
           "الرياض",
           "الظهران",
-          "عن بعد",
-          "جدة",
+          "عسير",
           "السعودية",
-          "ثول",
-          "على مستوى المملكة"
+          "جدة",
+          "عن بعد",
+          "العلا"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -1603,7 +1595,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 10590
+          "scrollHeight": 18049
         }
       }
     },
@@ -1618,7 +1610,7 @@
       "metrics": {
         "title": "تصنيفات فعاليات السعودية | EventLive",
         "h1": "تصنيفات فعاليات السعودية",
-        "bodyTextLength": 3120,
+        "bodyTextLength": 3166,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1631,13 +1623,13 @@
         "pendingImages": 0,
         "headings": [
           "تصنيفات فعاليات السعودية",
-          "معارض وتجارية",
-          "ورش تنظيمية وصحية",
           "ترفيه وعائلات",
-          "مؤتمرات ومنتديات",
           "رياضة وفعاليات جماهيرية",
-          "تدريب تقني",
-          "جامعات ومجتمع"
+          "ورش تنظيمية وصحية",
+          "معارض وتجارية",
+          "ثقافة وفنون",
+          "مؤتمرات ومنتديات",
+          "تدريب تقني"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -1646,7 +1638,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 2818
+          "scrollHeight": 2860
         }
       }
     },
@@ -1661,7 +1653,7 @@
       "metrics": {
         "title": "تصنيفات فعاليات السعودية | EventLive",
         "h1": "تصنيفات فعاليات السعودية",
-        "bodyTextLength": 3045,
+        "bodyTextLength": 3091,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1674,13 +1666,13 @@
         "pendingImages": 0,
         "headings": [
           "تصنيفات فعاليات السعودية",
-          "معارض وتجارية",
-          "ورش تنظيمية وصحية",
           "ترفيه وعائلات",
-          "مؤتمرات ومنتديات",
           "رياضة وفعاليات جماهيرية",
-          "تدريب تقني",
-          "جامعات ومجتمع"
+          "ورش تنظيمية وصحية",
+          "معارض وتجارية",
+          "ثقافة وفنون",
+          "مؤتمرات ومنتديات",
+          "تدريب تقني"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -1689,7 +1681,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 8023
+          "scrollHeight": 8079
         }
       }
     },
@@ -1704,7 +1696,7 @@
       "metrics": {
         "title": "فعاليات حسب الجمهور | EventLive",
         "h1": "فعاليات حسب الجمهور",
-        "bodyTextLength": 3108,
+        "bodyTextLength": 3132,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1717,13 +1709,13 @@
         "pendingImages": 0,
         "headings": [
           "فعاليات حسب الجمهور",
-          "موظفون ومهنيون",
           "مبدعون وفنون",
-          "تقنيون",
+          "موظفون ومهنيون",
           "عائلات وأطفال",
-          "باحثون وأكاديميون",
+          "تقنيون",
           "مهاريون وحرفيون",
-          "طلاب وخريجون"
+          "باحثون وأكاديميون",
+          "رياضة ولياقة"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -1732,7 +1724,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 2790
+          "scrollHeight": 2818
         }
       }
     },
@@ -1747,7 +1739,7 @@
       "metrics": {
         "title": "فعاليات حسب الجمهور | EventLive",
         "h1": "فعاليات حسب الجمهور",
-        "bodyTextLength": 3033,
+        "bodyTextLength": 3057,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1760,13 +1752,13 @@
         "pendingImages": 0,
         "headings": [
           "فعاليات حسب الجمهور",
-          "موظفون ومهنيون",
           "مبدعون وفنون",
-          "تقنيون",
+          "موظفون ومهنيون",
           "عائلات وأطفال",
-          "باحثون وأكاديميون",
+          "تقنيون",
           "مهاريون وحرفيون",
-          "طلاب وخريجون"
+          "باحثون وأكاديميون",
+          "رياضة ولياقة"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -1775,7 +1767,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 7886
+          "scrollHeight": 7914
         }
       }
     },
@@ -1901,7 +1893,7 @@
       "metrics": {
         "title": "إضافة فعالية أو جدول حي | EventLive",
         "h1": "إضافة فعالية أو جدول حي",
-        "bodyTextLength": 1569,
+        "bodyTextLength": 1570,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1940,7 +1932,7 @@
       "metrics": {
         "title": "إضافة فعالية أو جدول حي | EventLive",
         "h1": "إضافة فعالية أو جدول حي",
-        "bodyTextLength": 1494,
+        "bodyTextLength": 1495,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1979,7 +1971,7 @@
       "metrics": {
         "title": "منهجية جمع ونشر الفعاليات | EventLive",
         "h1": "منهجية جمع ونشر الفعاليات",
-        "bodyTextLength": 1870,
+        "bodyTextLength": 1871,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -2022,7 +2014,7 @@
       "metrics": {
         "title": "منهجية جمع ونشر الفعاليات | EventLive",
         "h1": "منهجية جمع ونشر الفعاليات",
-        "bodyTextLength": 1795,
+        "bodyTextLength": 1796,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -2065,7 +2057,7 @@
       "metrics": {
         "title": "EventLive | أدلة EventLive لفعاليات السعودية",
         "h1": "أدلة EventLive لفعاليات السعودية",
-        "bodyTextLength": 1422,
+        "bodyTextLength": 2320,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -2081,7 +2073,8 @@
           "ابدأ من الدليل المناسب",
           "لماذا هذه الصفحات مهمة؟",
           "أسئلة شائعة",
-          "انتقل للمنصة الحية"
+          "انتقل للمنصة الحية",
+          "مسارات بحث مباشرة"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -2090,7 +2083,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 1520
+          "scrollHeight": 2024
         }
       }
     },
@@ -2105,7 +2098,7 @@
       "metrics": {
         "title": "EventLive | أدلة EventLive لفعاليات السعودية",
         "h1": "أدلة EventLive لفعاليات السعودية",
-        "bodyTextLength": 1369,
+        "bodyTextLength": 2267,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -2121,7 +2114,8 @@
           "ابدأ من الدليل المناسب",
           "لماذا هذه الصفحات مهمة؟",
           "أسئلة شائعة",
-          "انتقل للمنصة الحية"
+          "انتقل للمنصة الحية",
+          "مسارات بحث مباشرة"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -2155,7 +2149,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 2101
+          "scrollHeight": 3272
         }
       }
     },
@@ -3010,7 +3004,7 @@
       "metrics": {
         "title": "مصادر الفعاليات | EventLive",
         "h1": "مصادر الفعاليات",
-        "bodyTextLength": 11286,
+        "bodyTextLength": 11094,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3048,7 +3042,7 @@
       "metrics": {
         "title": "مصادر الفعاليات | EventLive",
         "h1": "مصادر الفعاليات",
-        "bodyTextLength": 11211,
+        "bodyTextLength": 11019,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3070,7 +3064,7 @@
           {
             "tag": "table",
             "className": "",
-            "text": "الفعاليةالمدينةالمصدرالحاجةالثقةQuarter-Finals: Join the Celebration at the FIFA",
+            "text": "الفعاليةالمدينةالمصدرالحاجةالثقةBeast HouseMDLBEASTالرياضMDLBEAST Eventsمراقبة ا",
             "width": 780
           },
           {
@@ -3089,13 +3083,13 @@
             "tag": "th",
             "className": "",
             "text": "المدينة",
-            "width": 70
+            "width": 79
           },
           {
             "tag": "th",
             "className": "",
             "text": "المصدر",
-            "width": 187
+            "width": 192
           },
           {
             "tag": "th",
@@ -3112,7 +3106,7 @@
           {
             "tag": "tbody",
             "className": "",
-            "text": "Quarter-Finals: Join the Celebration at the FIFA Fan ZoneSaudi universities and ",
+            "text": "Beast HouseMDLBEASTالرياضMDLBEAST Eventsمراقبة المصدر100ثقة عاليةJoin us at KAUS",
             "width": 780
           }
         ],
@@ -3120,7 +3114,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 9697
+          "scrollHeight": 9611
         }
       }
     },
@@ -3246,7 +3240,7 @@
       "metrics": {
         "title": "فجوات تغطية المصادر | EventLive",
         "h1": "فجوات تغطية المصادر",
-        "bodyTextLength": 11873,
+        "bodyTextLength": 11771,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3272,7 +3266,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 9652
+          "scrollHeight": 9516
         }
       }
     },
@@ -3287,7 +3281,7 @@
       "metrics": {
         "title": "فجوات تغطية المصادر | EventLive",
         "h1": "فجوات تغطية المصادر",
-        "bodyTextLength": 11798,
+        "bodyTextLength": 11696,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3312,7 +3306,7 @@
           {
             "tag": "table",
             "className": "",
-            "text": "الفعاليةالمدينةالمصدرالسببالإجراءاحتياطات الأمان عند استخدام مبيدات آفات الصحة ا",
+            "text": "الفعاليةالمدينةالمصدرالسببالإجراء2030 LeadersالسعوديةMisk Hub Programshub.misk.o",
             "width": 780
           },
           {
@@ -3348,13 +3342,13 @@
           {
             "tag": "tbody",
             "className": "",
-            "text": "احتياطات الأمان عند استخدام مبيدات آفات الصحة العامةعن بعدSaudi Food and Drug Au",
+            "text": "2030 LeadersالسعوديةMisk Hub Programshub.misk.org.saلا توجد صورة رسمية مرشحة من ",
             "width": 780
           },
           {
             "tag": "tr",
             "className": "",
-            "text": "احتياطات الأمان عند استخدام مبيدات آفات الصحة العامةعن بعدSaudi Food and Drug Au",
+            "text": "2030 LeadersالسعوديةMisk Hub Programshub.misk.org.saلا توجد صورة رسمية مرشحة من ",
             "width": 780
           }
         ],
@@ -3362,7 +3356,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 16232
+          "scrollHeight": 15996
         }
       }
     },
@@ -3599,7 +3593,7 @@
       "metrics": {
         "title": "تغطية مناطق المملكة | EventLive",
         "h1": "تغطية مناطق المملكة",
-        "bodyTextLength": 3363,
+        "bodyTextLength": 3320,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3623,7 +3617,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 3755
+          "scrollHeight": 3668
         }
       }
     },
@@ -3638,7 +3632,7 @@
       "metrics": {
         "title": "تغطية مناطق المملكة | EventLive",
         "h1": "تغطية مناطق المملكة",
-        "bodyTextLength": 3288,
+        "bodyTextLength": 3245,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3661,7 +3655,7 @@
           {
             "tag": "table",
             "className": "",
-            "text": "المنطقةالكلنشطةمنتهيةجداول حيةصورأغلفةالدرجةالإجراءمنطقة الجوفgap0000003المصادر ",
+            "text": "المنطقةالكلنشطةمنتهيةجداول حيةصورأغلفةالدرجةالإجراءمنطقة الحدود الشماليةgap30303",
             "width": 780
           },
           {
@@ -3680,7 +3674,7 @@
             "tag": "th",
             "className": "",
             "text": "صور",
-            "width": 47
+            "width": 53
           },
           {
             "tag": "th",
@@ -3698,12 +3692,12 @@
             "tag": "th",
             "className": "",
             "text": "الإجراء",
-            "width": 279
+            "width": 269
           },
           {
             "tag": "tbody",
             "className": "",
-            "text": "منطقة الجوفgap0000003المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط ",
+            "text": "منطقة الحدود الشماليةgap30303010ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/م",
             "width": 780
           }
         ],
@@ -3711,7 +3705,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 5165
+          "scrollHeight": 5092
         }
       }
     },
@@ -3726,7 +3720,7 @@
       "metrics": {
         "title": "جاهزية التشغيل | EventLive",
         "h1": "جاهزية التشغيل",
-        "bodyTextLength": 5033,
+        "bodyTextLength": 5629,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3754,7 +3748,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 4250
+          "scrollHeight": 4423
         }
       }
     },
@@ -3769,7 +3763,7 @@
       "metrics": {
         "title": "جاهزية التشغيل | EventLive",
         "h1": "جاهزية التشغيل",
-        "bodyTextLength": 4958,
+        "bodyTextLength": 5554,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3796,7 +3790,7 @@
           {
             "tag": "table",
             "className": "",
-            "text": "الفعاليةالحالةالثقةالجلساتالإجراءمتطلبات الاستخدام الآمن للأجهزة والمستلزمات الط",
+            "text": "الفعاليةالحالةالثقةالجلساتالإجراءنقل مبيدات آفات الصحة العامةعن بعد · Saudi Food",
             "width": 780
           },
           {
@@ -3815,13 +3809,13 @@
             "tag": "th",
             "className": "",
             "text": "الفعالية",
-            "width": 479
+            "width": 415
           },
           {
             "tag": "th",
             "className": "",
             "text": "الحالة",
-            "width": 73
+            "width": 103
           },
           {
             "tag": "th",
@@ -3839,14 +3833,14 @@
             "tag": "th",
             "className": "",
             "text": "الإجراء",
-            "width": 102
+            "width": 137
           }
         ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 5824
+          "scrollHeight": 5674
         }
       }
     },
@@ -3861,7 +3855,7 @@
       "metrics": {
         "title": "مركز الثقة | EventLive",
         "h1": "مركز الثقة",
-        "bodyTextLength": 4945,
+        "bodyTextLength": 5610,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3903,7 +3897,7 @@
       "metrics": {
         "title": "مركز الثقة | EventLive",
         "h1": "مركز الثقة",
-        "bodyTextLength": 4870,
+        "bodyTextLength": 5535,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3929,7 +3923,7 @@
           {
             "tag": "table",
             "className": "",
-            "text": "الفعاليةالثقةالمصدرالاعتمادفجوات الدليل25th WPC Petrolium Congressالرياض100ثقة ع",
+            "text": "الفعاليةالثقةالمصدرالاعتمادفجوات الدليلآلية تقديم طلبات اذونات استيراد مواد التص",
             "width": 780
           },
           {
@@ -3948,30 +3942,30 @@
             "tag": "th",
             "className": "",
             "text": "الثقة",
-            "width": 61
+            "width": 60
           },
           {
             "tag": "th",
             "className": "",
             "text": "المصدر",
-            "width": 186
+            "width": 185
           },
           {
             "tag": "th",
             "className": "",
             "text": "الاعتماد",
-            "width": 86
+            "width": 85
           },
           {
             "tag": "th",
             "className": "",
             "text": "فجوات الدليل",
-            "width": 90
+            "width": 121
           },
           {
             "tag": "tbody",
             "className": "",
-            "text": "25th WPC Petrolium Congressالرياض100ثقة عاليةRFECC What's Onتمت المراجعةلا توجد ",
+            "text": "آلية تقديم طلبات اذونات استيراد مواد التصوير الطبي في النظام الالكتروني ومتطلبات",
             "width": 780
           }
         ],
@@ -3979,7 +3973,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 6251
+          "scrollHeight": 6227
         }
       }
     },
@@ -3994,7 +3988,7 @@
       "metrics": {
         "title": "فعاليات الرياض | EventLive",
         "h1": "فعاليات الرياض",
-        "bodyTextLength": 14707,
+        "bodyTextLength": 12652,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4008,12 +4002,12 @@
         "headings": [
           "فعاليات الرياض",
           "تابع فعاليات الرياض",
-          "Poppy Playtime",
+          "Skill Development Initiative",
+          "Skill Development Initiative",
+          "SITAR",
           "Poppy Playtime",
           "Riyadh Season: BLVD City",
-          "The Groves",
-          "Immersive Experience: Flying Over Saudi",
-          "Arabic Language Exhibition 28"
+          "The Groves"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -4022,7 +4016,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 8452
+          "scrollHeight": 7775
         }
       }
     },
@@ -4037,7 +4031,7 @@
       "metrics": {
         "title": "فعاليات الرياض | EventLive",
         "h1": "فعاليات الرياض",
-        "bodyTextLength": 14632,
+        "bodyTextLength": 12577,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4047,16 +4041,16 @@
         "jsonLdBlocks": 3,
         "visibleImages": 18,
         "brokenImages": [],
-        "pendingImages": 8,
+        "pendingImages": 7,
         "headings": [
           "فعاليات الرياض",
           "تابع فعاليات الرياض",
-          "Poppy Playtime",
+          "Skill Development Initiative",
+          "Skill Development Initiative",
+          "SITAR",
           "Poppy Playtime",
           "Riyadh Season: BLVD City",
-          "The Groves",
-          "Immersive Experience: Flying Over Saudi",
-          "Arabic Language Exhibition 28"
+          "The Groves"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -4065,7 +4059,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 18519
+          "scrollHeight": 16936
         }
       }
     },
@@ -4080,7 +4074,7 @@
       "metrics": {
         "title": "تدريب تقني | EventLive",
         "h1": "تدريب تقني",
-        "bodyTextLength": 8247,
+        "bodyTextLength": 8080,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4098,8 +4092,8 @@
           "Misk Local Traineeship Program",
           "لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)",
           "لقاءات مراكز دعم المنشآت",
-          "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
-          "أسبوع العقار والمقاولات 12- 16 يوليو 2026م"
+          "2030 Leaders",
+          "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -4108,7 +4102,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 5404
+          "scrollHeight": 5381
         }
       }
     },
@@ -4123,7 +4117,7 @@
       "metrics": {
         "title": "تدريب تقني | EventLive",
         "h1": "تدريب تقني",
-        "bodyTextLength": 8172,
+        "bodyTextLength": 8005,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4141,8 +4135,8 @@
           "Misk Local Traineeship Program",
           "لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)",
           "لقاءات مراكز دعم المنشآت",
-          "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
-          "أسبوع العقار والمقاولات 12- 16 يوليو 2026م"
+          "2030 Leaders",
+          "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -4151,34 +4145,36 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 13942
+          "scrollHeight": 13814
         }
       }
     },
     {
-      "page": "demo-event",
-      "path": "/events/demo-event.html",
+      "page": "representative-event",
+      "path": "/events/event-beast-house.html",
       "viewport": "desktop",
       "ok": true,
       "errors": [],
-      "screenshot": "output/playwright/visual-sweep/demo-event-desktop.png",
+      "screenshot": "output/playwright/visual-sweep/representative-event-desktop.png",
       "screenshot_mode": "full-page",
       "metrics": {
-        "title": "ملتقى التحول الرقمي في القطاع الحكومي 2026 | EventLive",
-        "h1": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
-        "bodyTextLength": 1444,
+        "title": "Beast House | EventLive",
+        "h1": "Beast House",
+        "bodyTextLength": 2406,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
         "hasCanonical": true,
         "hasDescription": true,
         "hasManifest": true,
-        "jsonLdBlocks": 4,
+        "jsonLdBlocks": 5,
         "visibleImages": 1,
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+          "Beast House",
+          "ما يحتاجه الزائر بسرعة",
+          "محاور البرنامج",
           "الجدول الحي"
         ],
         "horizontalOverflow": false,
@@ -4188,34 +4184,36 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 2006
+          "scrollHeight": 3026
         }
       }
     },
     {
-      "page": "demo-event",
-      "path": "/events/demo-event.html",
+      "page": "representative-event",
+      "path": "/events/event-beast-house.html",
       "viewport": "mobile",
       "ok": true,
       "errors": [],
-      "screenshot": "output/playwright/visual-sweep/demo-event-mobile.png",
+      "screenshot": "output/playwright/visual-sweep/representative-event-mobile.png",
       "screenshot_mode": "full-page",
       "metrics": {
-        "title": "ملتقى التحول الرقمي في القطاع الحكومي 2026 | EventLive",
-        "h1": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
-        "bodyTextLength": 1369,
+        "title": "Beast House | EventLive",
+        "h1": "Beast House",
+        "bodyTextLength": 2331,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
         "hasCanonical": true,
         "hasDescription": true,
         "hasManifest": true,
-        "jsonLdBlocks": 4,
+        "jsonLdBlocks": 5,
         "visibleImages": 1,
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "ملتقى التحول الرقمي في القطاع الحكومي 2026",
+          "Beast House",
+          "ما يحتاجه الزائر بسرعة",
+          "محاور البرنامج",
           "الجدول الحي"
         ],
         "horizontalOverflow": false,
@@ -4225,7 +4223,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 2774
+          "scrollHeight": 4722
         }
       }
     }

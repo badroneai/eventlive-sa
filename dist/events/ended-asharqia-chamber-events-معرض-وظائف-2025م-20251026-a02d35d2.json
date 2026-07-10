@@ -10,7 +10,7 @@
   "evidence_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=342",
   "trust_tier": "official",
   "trust_label": "مصدر حكومي أو رسمي",
-  "verified_at": "2026-07-10T02:28:17.576Z",
+  "verified_at": "2026-07-10T06:52:19.836Z",
   "verification_method": "registered-official",
   "freshness_hours": 1,
   "city": "الظهران",
@@ -86,6 +86,11 @@
         "addressLocality": "الظهران",
         "addressRegion": "المنطقة الشرقية",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.381223,
+        "longitude": 50.212678
       }
     },
     "organizer": {

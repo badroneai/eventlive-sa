@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Summer Fruits Season in AlUla | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-summer-fruits-season-in-alula@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260716T060000Z
+DTEND:20260722T150000Z
+SUMMARY:Summer Fruits Season in AlUla
+DESCRIPTION:Celebrate the richness of AlUla's summer harvest at the Al Manshiyah Farmers Market. This vibrant event features a range of locally grown fruit\, including delicious mangoes\, grapes and figs - highlighting AlUla's deep agricultural roots and cultural heritage.
+LOCATION:AlManshiyah Farmers Market
+URL:https://eventme.live/events/event-summer-fruits-season-in-alula.html
+END:VEVENT
+END:VCALENDAR

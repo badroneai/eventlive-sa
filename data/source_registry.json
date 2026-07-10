@@ -1036,14 +1036,23 @@
     },
     {
       "id": "visit-saudi-calendar-pdf",
-      "name": "Visit Saudi Calendar PDF",
-      "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar.pdf",
+      "name": "Visit Saudi Summer Calendar PDF",
+      "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "collector_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
       "owner": "Saudi Tourism Authority",
       "source_type": "national-calendar",
       "trust_level": "official",
       "priority": 34,
-      "coverage": "STA print/PDF calendar reference for Saudi national tourism events, seasons, and destination schedules.",
+      "max_candidates_per_run": 120,
+      "max_ended_per_run": 120,
+      "coverage": "Official Saudi summer calendar with dated destination events, linked booking or location evidence, and coverage across Aseer, Red Sea, Jeddah, Riyadh, Al Baha, Taif, and AlUla.",
       "cities": [
+        "Aseer",
+        "Jeddah",
+        "Riyadh",
+        "Al Baha",
+        "Taif",
+        "AlUla",
         "Saudi Arabia"
       ],
       "categories": [
@@ -1053,11 +1062,11 @@
         "entertainment",
         "sports"
       ],
-      "fetch_method": "manual-review",
+      "fetch_method": "pdf-calendar",
       "intake_policy": "official-feed-preferred",
-      "evidence_required": "Parsed PDF row plus canonical web page or organizer URL before public catalog publication.",
-      "candidate_gate": "extraction",
-      "notes": "Added from source-research batch 3 as a reference layer. Use PDF parsing for discovery, then reconcile against Visit Saudi web pages or organizer evidence."
+      "evidence_required": "A date-complete row in the official Arabic summer calendar PDF; linked booking URLs are preserved where the PDF exposes them.",
+      "candidate_gate": "duplicate-review",
+      "notes": "Automated from the official 2026 summer calendar PDF. The extractor reads the PDF creation year, restores RTL text, accepts only explicit Gregorian dates, rejects vague 'until end of summer' rows, and fails closed when the annual page layout changes."
     },
     {
       "id": "qiddiya-events",
@@ -1629,6 +1638,16 @@
       "id": "scega-exhibitions-conferences",
       "name": "SCEGA ePortal Events",
       "url": "https://eportal.scega.gov.sa/home",
+      "collector_url": "https://eportal.scega.gov.sa/api/events/GetWithPaging?pageNumber=1&pageSize=500",
+      "collector_method": "POST",
+      "collector_body": {
+        "name": null,
+        "nameAr": null,
+        "isActive": true,
+        "eventDateFrom": null,
+        "eventDateTo": null,
+        "onlyUpcoming": false
+      },
       "owner": "Saudi Conventions & Exhibitions General Authority",
       "source_type": "government-calendar",
       "trust_level": "official",
@@ -1643,14 +1662,12 @@
         "business events",
         "licenses"
       ],
-      "fetch_method": "html-calendar",
+      "fetch_method": "json-api",
       "intake_policy": "official-feed-preferred",
       "evidence_required": "SCEGA event detail URL or licensed event record with title, date, venue/city, and organizer or authority evidence.",
-      "candidate_gate": "human-review",
-      "notes": "Strategic platform recon 2026-07-09: homepage and Angular bundle expose event-list/detail surfaces such as /h-events-list and events-details; keep in scheduled evidence radar and build extractor only after detail payload is verified.",
-      "collector_pages": [
-        "https://eservices.scega.gov.sa/login"
-      ]
+      "candidate_gate": "extraction",
+      "max_ended_per_run": 100,
+      "notes": "Activated 2026-07-10 after validating the public Angular event API and its request contract. The collector requests the complete active authority timeline rather than upcoming-only rows so normal six-hour syncs retain official 2025+ history and new events in one idempotent pass. It merges overlapping authority records before candidate creation and preserves SCEGA detail IDs as first-party evidence."
     },
     {
       "id": "ministry-commerce-events",
@@ -1788,6 +1805,62 @@
       "evidence_required": "Qassim Chamber event detail or listing row with title, date, location, and chamber context.",
       "candidate_gate": "duplicate-review",
       "notes": "Added 2026-07-05 from the official /events-list page. The public list may reject automated HTML requests, so the collector uses the official tc.qcc.org.sa training/events surface while keeping qcc.org.sa as the canonical source lane."
+    },
+    {
+      "id": "qassim-university-events",
+      "name": "Qassim University Events",
+      "url": "https://www.qu.edu.sa/events/",
+      "collector_url": "https://www.qu.edu.sa/events/",
+      "owner": "Qassim University",
+      "source_type": "organizer-calendar",
+      "trust_level": "official",
+      "priority": 74,
+      "coverage": "Public university events, summer clubs, lectures, student programs, and community activities in Buraydah and Qassim.",
+      "cities": [
+        "Buraydah",
+        "Qassim",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "education",
+        "student events",
+        "summer programs",
+        "workshops",
+        "community"
+      ],
+      "fetch_method": "html-calendar",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Qassim University event detail URL with explicit Gregorian date and time from the official calendar.",
+      "candidate_gate": "duplicate-review",
+      "notes": "Added after the official calendar exposed date-complete July 2026 public events. Administrative academic deadlines are excluded before candidate creation; event details are fetched for official summaries and images."
+    },
+    {
+      "id": "jouf-university-programs",
+      "name": "Jouf University Summer Programs",
+      "url": "https://ju.edu.sa/ar",
+      "collector_url": "https://ju.edu.sa/ar",
+      "owner": "Jouf University",
+      "source_type": "organizer-calendar",
+      "trust_level": "official",
+      "priority": 75,
+      "coverage": "Public summer programs, training, innovation, volunteering, sports, and community activities in Sakaka and Al Jouf.",
+      "cities": [
+        "Sakaka",
+        "Al Jouf",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "education",
+        "summer programs",
+        "training",
+        "volunteering",
+        "sports"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Jouf University official program detail with an explicit launch date and end month or date.",
+      "candidate_gate": "duplicate-review",
+      "notes": "Added after the July 2026 official university announcement exposed a public summer program running through the end of August. Publish the umbrella program once; do not fabricate one row per activity without individual schedules."
     },
     {
       "id": "abha-chamber-events",
@@ -2039,6 +2112,119 @@
       "evidence_required": "Najran Chamber official event/news record with title, date, venue or remote link, and chamber context before candidate promotion.",
       "candidate_gate": "source-evidence",
       "notes": "Added 2026-07-05 after web verification of the official site showing dated workshop/news cards. Start as evidence monitor and build extractor only after stable detail routes are identified."
+    },
+    {
+      "id": "leap-official-agendas",
+      "name": "LEAP Official Event and Agendas",
+      "url": "https://onegiantleap.com/",
+      "collector_pages": [
+        "https://onegiantleap.com/our-2026-agenda?field_swapcard_session_day_value=all",
+        "https://onegiantleap.com/faq",
+        "https://onegiantleap.com/about-us/key-information"
+      ],
+      "owner": "Tahaluf / LEAP",
+      "source_type": "conference-organizer",
+      "trust_level": "official",
+      "priority": 77,
+      "max_candidates_per_run": 300,
+      "coverage": "LEAP event identity, visitor hours, venue, multi-stage agenda, session times, rooms, tracks, and speakers.",
+      "cities": [
+        "Riyadh"
+      ],
+      "categories": [
+        "technology",
+        "artificial intelligence",
+        "startups",
+        "investment",
+        "conference"
+      ],
+      "fetch_method": "html-calendar",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "LEAP first-party event, FAQ, or agenda page with explicit event or session facts.",
+      "candidate_gate": "extraction",
+      "notes": "Added 2026-07-10. Direct HTTP is protected, while a standard public Playwright browser loads the agenda without bypassing controls. The production connector filters stale dates, normalizes Riyadh wall-clock times, deduplicates CMS copies, and retains one rotating raw snapshot."
+    },
+    {
+      "id": "fii10-official-program",
+      "name": "FII 10th Edition Official Program",
+      "url": "https://fii-institute.org/conference/fii-10th-edition/",
+      "owner": "FII Institute",
+      "source_type": "conference-organizer",
+      "trust_level": "official",
+      "priority": 78,
+      "coverage": "FII10 event identity, dates, factsheet, speakers, and the timed official programme when published.",
+      "cities": [
+        "Riyadh"
+      ],
+      "categories": [
+        "investment",
+        "economy",
+        "technology",
+        "conference"
+      ],
+      "fetch_method": "html-calendar",
+      "intake_policy": "monitor-public",
+      "evidence_required": "FII Institute first-party event page or official programme file with explicit dates, session times, and speakers.",
+      "candidate_gate": "extraction",
+      "notes": "Added 2026-07-10. The official page confirms 26-29 October 2026 and currently says to stay tuned; the six-hour agenda radar will promote it to extractor work only after a timed programme appears."
+    },
+    {
+      "id": "cityscape-global-official-program",
+      "name": "Cityscape Global Official Program",
+      "url": "https://cityscapeglobal.com/",
+      "owner": "Tahaluf / Cityscape Global",
+      "source_type": "conference-organizer",
+      "trust_level": "official",
+      "priority": 79,
+      "coverage": "Cityscape Global event identity, dates, venue, conference stages, speakers, and official programme.",
+      "cities": [
+        "Riyadh"
+      ],
+      "categories": [
+        "real estate",
+        "investment",
+        "urban development",
+        "conference",
+        "exhibition"
+      ],
+      "fetch_method": "partnership-api",
+      "intake_policy": "partnership-needed",
+      "evidence_required": "Cityscape Global first-party programme, approved export/API, or a normally accessible public page. Do not bypass edge protection.",
+      "candidate_gate": "source-evidence",
+      "notes": "Added 2026-07-10. Direct HTTP currently returns Cloudflare protection. The source stays in the six-hour agenda radar and partnership lane; no protection bypass or automatic session publication is allowed."
+    },
+    {
+      "id": "money2020-middle-east-agendas",
+      "name": "Money20/20 Middle East Official Agendas",
+      "url": "https://money2020middleeast.com/",
+      "collector_pages": [
+        "https://money2020middleeast.com/2025-agenda",
+        "https://money2020middleeast.com/2026-agenda",
+        "https://money2020middleeast.com/about-us/key-information"
+      ],
+      "owner": "Tahaluf / Money20/20 Middle East",
+      "source_type": "conference-organizer",
+      "trust_level": "official",
+      "priority": 76,
+      "max_candidates_per_run": 300,
+      "max_ended_per_run": 300,
+      "coverage": "Money20/20 Middle East event identity, official multi-stage agendas, session times, stages, speakers, and current-edition programme monitoring.",
+      "cities": [
+        "Riyadh"
+      ],
+      "categories": [
+        "fintech",
+        "banking",
+        "payments",
+        "investment",
+        "technology",
+        "conference"
+      ],
+      "fetch_method": "html-calendar",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Money20/20 Middle East first-party event or agenda page with explicit session dates and times.",
+      "candidate_gate": "extraction",
+      "notes": "Added 2026-07-10. The public 2025 agenda yields 242 official timed sessions across 11 stages and is published as a normal ended event. The same six-hour connector watches first-party 2026 agenda routes and will attach sessions to the current event only after at least three complete official rows are published. Timestamped raw-page accumulation is prohibited; only a rotating latest snapshot is retained."
     },
     {
       "id": "my-gov-sa-events",

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:الأسبوع الصيني | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-الأسبوع-الصيني@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260722T210000Z
+DTEND:20260729T205900Z
+SUMMARY:الأسبوع الصيني
+DESCRIPTION:اكتشف الأسبوع الصيني، فعالية ثقافية ترفيهية تستعرض الفنون والتجارب الصينية في أجواء عصرية، تبرز التقارب بين الثقافتين السعودية والصينية.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-الأسبوع-الصيني.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,120 @@
+{
+  "id": "event-بوابة-المونديال-كأس-العالم-في-جدة",
+  "title": "بوابة المونديال – كأس العالم في جدة",
+  "summary": "تقدّم بوابة المونديال في جدة تجربة جماهيرية متكاملة لمشاهدة مباريات كأس العالم على شاشات عملاقة، مع مطاعم، وألعاب، ومنطقة أطفال، وفعاليات للعائات ومحبي كرة القدم.",
+  "canonical_url": "https://eventme.live/events/event-بوابة-المونديال-كأس-العالم-في-جدة.html",
+  "detail_url": "./events/event-بوابة-المونديال-كأس-العالم-في-جدة.html",
+  "calendar_url": "./events/event-بوابة-المونديال-كأس-العالم-في-جدة.ics",
+  "source_label": "Visit Saudi Summer Calendar PDF",
+  "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+  "evidence_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T07:21:55.253Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
+  "city": "جدة",
+  "venue": "جدة",
+  "venue_address": "جدة",
+  "starts_at": "2026-06-15T00:00:00+03:00",
+  "ends_at": "2026-07-18T23:59:00+03:00",
+  "status": "ongoing",
+  "status_label": "برنامج جارٍ",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/visit-saudi-summer-2026-p030-bottom-left.jpg",
+  "image_alt": "بوابة المونديال – كأس العالم في جدة",
+  "category": "ألعاب ورياضات إلكترونية",
+  "category_url": "./categories/gaming-esports.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "sports",
+      "label": "رياضة ولياقة"
+    }
+  ],
+  "keywords": [
+    "بوابة المونديال – كأس العالم في جدة",
+    "ألعاب ورياضات إلكترونية",
+    "sports",
+    "برنامج ممتد",
+    "برنامج جارٍ",
+    "جدة",
+    "Visit Saudi Summer Calendar PDF",
+    "tourism",
+    "seasons",
+    "culture",
+    "entertainment",
+    "عائلات وأطفال",
+    "رياضة ولياقة"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-06-15T00:00:00+03:00",
+      "ends_at": "2026-07-18T23:59:00+03:00",
+      "room": "جدة",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "بوابة المونديال – كأس العالم في جدة",
+    "startDate": "2026-06-15T00:00:00+03:00",
+    "endDate": "2026-07-18T23:59:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "جدة",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "جدة",
+        "addressLocality": "جدة",
+        "addressRegion": "منطقة مكة المكرمة",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Saudi Tourism Authority"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/visit-saudi-summer-2026-p030-bottom-left.jpg"
+    ],
+    "description": "تقدّم بوابة المونديال في جدة تجربة جماهيرية متكاملة لمشاهدة مباريات كأس العالم على شاشات عملاقة، مع مطاعم، وألعاب، ومنطقة أطفال، وفعاليات للعائات ومحبي كرة القدم.",
+    "url": "https://eventme.live/events/event-بوابة-المونديال-كأس-العالم-في-جدة.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-بوابة-المونديال-كأس-العالم-في-جدة.html",
+    "isAccessibleForFree": false,
+    "keywords": "بوابة المونديال – كأس العالم في جدة, ألعاب ورياضات إلكترونية, sports, برنامج ممتد, برنامج جارٍ, جدة, Visit Saudi Summer Calendar PDF, tourism, seasons, culture, entertainment, عائلات وأطفال, رياضة ولياقة",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رياضة ولياقة"
+      }
+    ],
+    "sameAs": [
+      "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

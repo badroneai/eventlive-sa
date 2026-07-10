@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:قرية آل ينفع | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-قرية-آل-ينفع@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260514T210000Z
+DTEND:20260823T205900Z
+SUMMARY:قرية آل ينفع
+DESCRIPTION:قرية آل ينفع الأثرية في عسير، تضم منازل ومساجد ومدرجات، وتجمع بين التراث المعماري، والفنون المعاصرة، والهوية الثقافية. قرية آل ينفع ضمن ثقافة وفنون في عسير. تبدأ الفعالية ١٥‏/٠٥‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ٢٣‏/٠٨‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.
+LOCATION:منطقة عسير
+URL:https://eventme.live/events/event-قرية-آل-ينفع.html
+END:VEVENT
+END:VCALENDAR

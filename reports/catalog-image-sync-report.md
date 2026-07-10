@@ -1,10 +1,10 @@
 # EventLive Catalog Image Sync Report
 
-- generated_at: 2026-07-10T03:47:10.379Z
+- generated_at: 2026-07-10T07:22:22.325Z
 - dry_run: false
 - catalog_file: data/events_catalog.json
 - candidates_file: data/source_candidates.json
-- trusted_image_candidates: 202
+- trusted_image_candidates: 242
 - synced: 0
 
 ## Synced

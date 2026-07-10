@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:مهرجان المأكولات الشعبية | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-مهرجان-المأكولات-الشعبية@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260705T210000Z
+DTEND:20260822T205900Z
+SUMMARY:مهرجان المأكولات الشعبية
+DESCRIPTION:احتفل بثقافة الطعام المحلي في مهرجان المأكولات الشعبية، حيث يجتمع الطهاة وااسر المنتجة استعراض تنوع المطبخ السعودي الأصيل في أجواء عائلية.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-مهرجان-المأكولات-الشعبية.html
+END:VEVENT
+END:VCALENDAR

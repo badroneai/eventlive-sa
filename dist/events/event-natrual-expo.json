@@ -10,7 +10,7 @@
   "evidence_url": "https://rfecc.sa/events/natrual-expo/",
   "trust_tier": "official-venue",
   "trust_label": "مصدر المكان الرسمي",
-  "verified_at": "2026-07-10T03:51:51.749Z",
+  "verified_at": "2026-07-10T07:21:55.253Z",
   "verification_method": "registered-venue-official",
   "freshness_hours": 0,
   "city": "الرياض",
@@ -79,6 +79,11 @@
         "addressLocality": "الرياض",
         "addressRegion": "منطقة الرياض",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 24.8414302,
+        "longitude": 46.7333539
       }
     },
     "organizer": {

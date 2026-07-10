@@ -49,10 +49,30 @@ function startServer() {
   });
 }
 
+function lighthouseChromePath() {
+  const browserPath = chromium.executablePath();
+  const match = browserPath.match(/^(.*[\\/])chromium-(\d+)[\\/]/);
+  if (!match) return browserPath;
+  const shellRoot = path.join(match[1], `chromium_headless_shell-${match[2]}`);
+  for (const directory of ['chrome-headless-shell-mac-arm64', 'chrome-headless-shell-mac-x64', 'chrome-mac']) {
+    const candidate = path.join(shellRoot, directory, directory === 'chrome-mac' ? 'headless_shell' : 'chrome-headless-shell');
+    if (fs.existsSync(candidate)) return candidate;
+  }
+  return browserPath;
+}
+
 const { server, baseUrl } = await startServer();
+const chromePath = lighthouseChromePath();
 const chrome = await launchChrome({
-  chromePath: chromium.executablePath(),
-  chromeFlags: ['--headless=new', '--no-sandbox', '--disable-gpu']
+  chromePath,
+  chromeFlags: [
+    ...(chromePath.includes('headless-shell') || chromePath.endsWith('headless_shell') ? [] : ['--headless=new']),
+    '--no-sandbox',
+    '--disable-gpu',
+    '--disable-background-timer-throttling',
+    '--disable-renderer-backgrounding',
+    '--disable-backgrounding-occluded-windows'
+  ]
 });
 const results = [];
 
@@ -87,10 +107,14 @@ try {
   for (const pagePath of pages) {
     const runnerResult = await runLighthouseWithRetry(pagePath);
     const lhr = runnerResult.lhr;
+    const performanceScore = lhr.categories.performance?.score;
+    const accessibilityScore = lhr.categories.accessibility?.score;
     results.push({
       page: pagePath,
-      performance: Math.round((lhr.categories.performance?.score ?? 0) * 100),
-      accessibility: Math.round((lhr.categories.accessibility?.score ?? 0) * 100),
+      performance: performanceScore == null ? null : Math.round(performanceScore * 100),
+      accessibility: accessibilityScore == null ? null : Math.round(accessibilityScore * 100),
+      runtime_error: lhr.runtimeError || null,
+      run_warnings: lhr.runWarnings || [],
       audits: {
         'first-contentful-paint': lhr.audits['first-contentful-paint']?.displayValue || '',
         'largest-contentful-paint': lhr.audits['largest-contentful-paint']?.displayValue || '',
@@ -106,15 +130,17 @@ try {
   server.close();
 }
 
-const minPerformance = Math.min(...results.map((item) => item.performance));
-const minAccessibility = Math.min(...results.map((item) => item.accessibility));
-const status = minPerformance >= 90 && minAccessibility >= 95 ? 'PASS' : 'FAIL';
+const completeResults = results.filter((item) => item.performance != null && item.accessibility != null);
+const minPerformance = completeResults.length ? Math.min(...completeResults.map((item) => item.performance)) : null;
+const minAccessibility = completeResults.length ? Math.min(...completeResults.map((item) => item.accessibility)) : null;
+const status = completeResults.length === results.length && minPerformance >= 90 && minAccessibility >= 95 ? 'PASS' : 'FAIL';
 const report = {
   schema: 'eventlive.lighthouse-performance-audit.v1',
   generated_at: generatedAt,
   status,
   summary: {
     pages: pages.length,
+    chrome_path: chromePath,
     min_performance: minPerformance,
     min_accessibility: minAccessibility,
     performance_threshold: 90,

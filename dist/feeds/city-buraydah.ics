@@ -5,4 +5,14 @@ METHOD:PUBLISH
 PRODID:-//EventLive//Saudi Events//AR
 X-WR-CALNAME:فعاليات بريدة | EventLive
 X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260712T133000Z
+DTEND:20260712T153000Z
+SUMMARY:انطلاق النادي الصيفي التاسع لجامعة القصيم
+DESCRIPTION:فعالية عامة مدرجة في تقويم جامعة القصيم. الموعد المعلن: 12 يوليو 2026، 4:30 مساءً. انطلاق النادي الصيفي التاسع لجامعة القصيم ضمن جامعات ومجتمع في بريدة. تبدأ الفعالية ١٢‏/٠٧‏/٢٠٢٦، ٤:٣٠ م وتنتهي ١٢‏/٠٧‏/٢٠٢٦، ٦:٣٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Qassim University Events.
+LOCATION:Qassim University
+URL:https://eventme.live/events/event-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم.html
+END:VEVENT
 END:VCALENDAR

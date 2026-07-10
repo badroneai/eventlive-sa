@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:بطولة أبطال المملكة للشطرنج | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-بطولة-أبطال-المملكة-للشطرنج@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260812T210000Z
+DTEND:20260816T205900Z
+SUMMARY:بطولة أبطال المملكة للشطرنج
+DESCRIPTION:شاهد بطولة أبطال المملكة للشطرنج، تجمع نخبة الاعبين من مختلف مناطق المملكة في منافسة رفيعة المستوى تعزز ثقافة الألعاب الذهنية وتبرز المواهب المحلية.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-بطولة-أبطال-المملكة-للشطرنج.html
+END:VEVENT
+END:VCALENDAR

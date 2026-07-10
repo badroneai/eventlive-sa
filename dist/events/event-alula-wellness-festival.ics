@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:AlUla Wellness Festival | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-alula-wellness-festival@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20261023T060000Z
+DTEND:20261031T150000Z
+SUMMARY:AlUla Wellness Festival
+DESCRIPTION:Reconnect and re-energise where body and mind are strengthened and restored. AlUla Wellness Festival ضمن ترفيه وعائلات في العلا. تبدأ الفعالية ٢٣‏/١٠‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ٣١‏/١٠‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Experience AlUla Events.
+LOCATION:AlUla
+URL:https://eventme.live/events/event-alula-wellness-festival.html
+END:VEVENT
+END:VCALENDAR

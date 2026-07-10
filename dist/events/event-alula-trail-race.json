@@ -1,0 +1,131 @@
+{
+  "id": "event-alula-trail-race",
+  "title": "AlUla Trail Race",
+  "summary": "Every January, AlUla bursts into action with the AlUla Trail Race - a dynamic celebration of endurance and unity set against its breathtaking ancient landscape. Whether you’re tackling the ultra-marathon or cheering on the Kids Run, each course challenges the spirit while weaving through awe-inspiring heritage sites and sandstone wonders. This multi-day event invites runners and supporters alike to come together, creating memories that blend athletic grit with cultural discovery. Expect vibrant energy, international camaraderie, and a festival-like atmosphere the whole family can enjoy.",
+  "canonical_url": "https://eventme.live/events/event-alula-trail-race.html",
+  "detail_url": "./events/event-alula-trail-race.html",
+  "calendar_url": "./events/event-alula-trail-race.ics",
+  "source_label": "Experience AlUla Events",
+  "source_url": "https://www.experiencealula.com/en/whats-on/events/alula-trail-race",
+  "evidence_url": "https://www.experiencealula.com/en/whats-on/events/alula-trail-race",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T07:21:55.253Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
+  "city": "العلا",
+  "venue": "Across AlUla",
+  "venue_address": "Across AlUla",
+  "starts_at": "2027-01-22T09:00:00+03:00",
+  "ends_at": "2027-01-22T18:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/alula-trail-race-d7eef6fe8b.webp",
+  "image_alt": "AlUla Trail Race",
+  "category": "رياضة وفعاليات جماهيرية",
+  "category_url": "./categories/sports.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    },
+    {
+      "slug": "sports",
+      "label": "رياضة ولياقة"
+    }
+  ],
+  "keywords": [
+    "AlUla Trail Race",
+    "رياضة وفعاليات جماهيرية",
+    "sports",
+    "فعالية",
+    "قادمة",
+    "العلا",
+    "Across AlUla",
+    "Experience AlUla Events",
+    "destination",
+    "culture",
+    "heritage",
+    "music",
+    "festivals",
+    "عائلات وأطفال",
+    "مبدعون وفنون",
+    "رياضة ولياقة"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2027-01-22T09:00:00+03:00",
+      "ends_at": "2027-01-22T18:00:00+03:00",
+      "room": "Across AlUla",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "AlUla Trail Race",
+    "startDate": "2027-01-22T09:00:00+03:00",
+    "endDate": "2027-01-22T18:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Across AlUla",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Across AlUla",
+        "addressLocality": "العلا",
+        "addressRegion": "منطقة المدينة المنورة",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Royal Commission for AlUla / Experience AlUla"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/alula-trail-race-d7eef6fe8b.webp"
+    ],
+    "description": "Every January, AlUla bursts into action with the AlUla Trail Race - a dynamic celebration of endurance and unity set against its breathtaking ancient landscape. Whether you’re tackling the ultra-marathon or cheering on the Kids Run, each course challenges the spirit while weaving through awe-inspiring heritage sites and sandstone wonders. This multi-day event invites runners and supporters alike to come together, creating memories that blend athletic grit with cultural discovery. Expect vibrant energy, international camaraderie, and a festival-like atmosphere the whole family can enjoy.",
+    "url": "https://eventme.live/events/event-alula-trail-race.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-alula-trail-race.html",
+    "isAccessibleForFree": false,
+    "keywords": "AlUla Trail Race, رياضة وفعاليات جماهيرية, sports, فعالية, قادمة, العلا, Across AlUla, Experience AlUla Events, destination, culture, heritage, music, festivals, عائلات وأطفال, مبدعون وفنون, رياضة ولياقة",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رياضة ولياقة"
+      }
+    ],
+    "sameAs": [
+      "https://www.experiencealula.com/en/whats-on/events/alula-trail-race"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.experiencealula.com/en/whats-on/events/alula-trail-race#",
+      "availability": "https://schema.org/InStock",
+      "category": "Registration"
+    }
+  }
+}

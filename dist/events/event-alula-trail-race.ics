@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:AlUla Trail Race | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-alula-trail-race@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20270122T060000Z
+DTEND:20270122T150000Z
+SUMMARY:AlUla Trail Race
+DESCRIPTION:Every January\, AlUla bursts into action with the AlUla Trail Race - a dynamic celebration of endurance and unity set against its breathtaking ancient landscape. Whether you’re tackling the ultra-marathon or cheering on the Kids Run\, each course challenges the spirit while weaving through awe-inspiring heritage sites and sandstone wonders. This multi-day event invites runners and supporters alike to come together\, creating memories that blend athletic grit with cultural discovery. Expect vibrant energy\, international camaraderie\, and a festival-like atmosphere the whole family can enjoy.
+LOCATION:Across AlUla
+URL:https://eventme.live/events/event-alula-trail-race.html
+END:VEVENT
+END:VCALENDAR

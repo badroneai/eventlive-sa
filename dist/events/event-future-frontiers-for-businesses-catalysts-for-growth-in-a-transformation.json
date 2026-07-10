@@ -10,7 +10,7 @@
   "evidence_url": "https://kau.edu.sa/en/event/future-frontiers-for-businesses-catalysts-for-growth-in-a-transformation",
   "trust_tier": "official",
   "trust_label": "مصدر حكومي أو رسمي",
-  "verified_at": "2026-07-10T03:51:59.093Z",
+  "verified_at": "2026-07-10T07:21:55.253Z",
   "verification_method": "registered-official",
   "freshness_hours": 0,
   "city": "جدة",
@@ -96,6 +96,11 @@
         "addressLocality": "جدة",
         "addressRegion": "منطقة مكة المكرمة",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 21.4934146,
+        "longitude": 39.2485449
       }
     },
     "organizer": {

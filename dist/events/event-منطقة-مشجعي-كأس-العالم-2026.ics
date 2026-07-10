@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:منطقة مشجعي كأس العالم 2026 | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-منطقة-مشجعي-كأس-العالم-2026@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260609T210000Z
+DTEND:20260823T205900Z
+SUMMARY:منطقة مشجعي كأس العالم 2026
+DESCRIPTION:عيش أجواء منطقة مشجعي كأس العالم 2026، حيث تجتمع متعة متابعة المباريات على شاشات عرض ضخمة مع أنشطة تفاعلية، ومطاعم، ومقاهٍ تناسب جميع أفراد العائلة.
+LOCATION:الباحة
+URL:https://eventme.live/events/event-منطقة-مشجعي-كأس-العالم-2026.html
+END:VEVENT
+END:VCALENDAR

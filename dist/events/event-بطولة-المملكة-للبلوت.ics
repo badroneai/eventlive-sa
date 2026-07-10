@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:بطولة المملكة للبلوت | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-بطولة-المملكة-للبلوت@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260715T210000Z
+DTEND:20260719T205900Z
+SUMMARY:بطولة المملكة للبلوت
+DESCRIPTION:شاهد بطولة المملكة للبلوت، تجمع نخبة الاعبين من مختلف مناطق المملكة في منافسة رفيعة المستوى تبرز المواهب المحلية وتعزز ثقافة الألعاب الذهنية.
+LOCATION:الرياض
+URL:https://eventme.live/events/event-بطولة-المملكة-للبلوت.html
+END:VEVENT
+END:VCALENDAR

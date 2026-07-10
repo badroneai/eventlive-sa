@@ -1,0 +1,127 @@
+{
+  "id": "event-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم",
+  "title": "انطلاق النادي الصيفي التاسع لجامعة القصيم",
+  "summary": "فعالية عامة مدرجة في تقويم جامعة القصيم. الموعد المعلن: 12 يوليو 2026، 4:30 مساءً. انطلاق النادي الصيفي التاسع لجامعة القصيم ضمن جامعات ومجتمع في بريدة. تبدأ الفعالية ١٢‏/٠٧‏/٢٠٢٦، ٤:٣٠ م وتنتهي ١٢‏/٠٧‏/٢٠٢٦، ٦:٣٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Qassim University Events.",
+  "canonical_url": "https://eventme.live/events/event-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم.html",
+  "detail_url": "./events/event-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم.html",
+  "calendar_url": "./events/event-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم.ics",
+  "source_label": "Qassim University Events",
+  "source_url": "https://www.qu.edu.sa/events/%D8%A7%D9%86%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D8%B5%D9%8A%D9%81%D9%8A-%D8%A7%D9%84%D8%AA%D8%A7%D8%B3%D8%B9-%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%A7%D9%84/",
+  "evidence_url": "https://www.qu.edu.sa/events/%D8%A7%D9%86%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D8%B5%D9%8A%D9%81%D9%8A-%D8%A7%D9%84%D8%AA%D8%A7%D8%B3%D8%B9-%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%A7%D9%84/",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T07:21:55.253Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
+  "city": "بريدة",
+  "venue": "Qassim University",
+  "venue_address": "Qassim University",
+  "starts_at": "2026-07-12T16:30:00+03:00",
+  "ends_at": "2026-07-12T18:30:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم-69e05e13ee.webp",
+  "image_alt": "انطلاق النادي الصيفي التاسع لجامعة القصيم - جامعة القصيم",
+  "category": "جامعات ومجتمع",
+  "category_url": "./categories/education-community.html",
+  "audiences": [
+    {
+      "slug": "students",
+      "label": "طلاب وخريجون"
+    },
+    {
+      "slug": "researchers",
+      "label": "باحثون وأكاديميون"
+    }
+  ],
+  "keywords": [
+    "انطلاق النادي الصيفي التاسع لجامعة القصيم",
+    "جامعات ومجتمع",
+    "summer program",
+    "فعالية",
+    "قادمة",
+    "بريدة",
+    "Qassim University",
+    "Qassim University Events",
+    "education",
+    "student events",
+    "summer programs",
+    "workshops",
+    "community",
+    "طلاب وخريجون",
+    "باحثون وأكاديميون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-07-12T16:30:00+03:00",
+      "ends_at": "2026-07-12T18:30:00+03:00",
+      "room": "Qassim University",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "انطلاق النادي الصيفي التاسع لجامعة القصيم",
+    "startDate": "2026-07-12T16:30:00+03:00",
+    "endDate": "2026-07-12T18:30:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Qassim University",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Qassim University",
+        "addressLocality": "بريدة",
+        "addressRegion": "منطقة القصيم",
+        "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.3529519,
+        "longitude": 43.7600402
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Qassim University"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم-69e05e13ee.webp"
+    ],
+    "description": "فعالية عامة مدرجة في تقويم جامعة القصيم. الموعد المعلن: 12 يوليو 2026، 4:30 مساءً. انطلاق النادي الصيفي التاسع لجامعة القصيم ضمن جامعات ومجتمع في بريدة. تبدأ الفعالية ١٢‏/٠٧‏/٢٠٢٦، ٤:٣٠ م وتنتهي ١٢‏/٠٧‏/٢٠٢٦، ٦:٣٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Qassim University Events.",
+    "url": "https://eventme.live/events/event-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم.html",
+    "isAccessibleForFree": false,
+    "keywords": "انطلاق النادي الصيفي التاسع لجامعة القصيم, جامعات ومجتمع, summer program, فعالية, قادمة, بريدة, Qassim University, Qassim University Events, education, student events, summer programs, workshops, community, طلاب وخريجون, باحثون وأكاديميون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "طلاب وخريجون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "باحثون وأكاديميون"
+      }
+    ],
+    "sameAs": [
+      "https://www.qu.edu.sa/events/%D8%A7%D9%86%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D8%B5%D9%8A%D9%81%D9%8A-%D8%A7%D9%84%D8%AA%D8%A7%D8%B3%D8%B9-%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%A7%D9%84/"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.qu.edu.sa/events/%D8%A7%D9%86%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D8%B5%D9%8A%D9%81%D9%8A-%D8%A7%D9%84%D8%AA%D8%A7%D8%B3%D8%B9-%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%A7%D9%84/",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

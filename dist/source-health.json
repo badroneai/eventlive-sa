@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T03:59:30.300Z",
+  "generated_at": "2026-07-10T08:00:30.778Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-source-health",
@@ -9,16 +9,16 @@
     "auto_publish": "reports/source-promotion-report.json"
   },
   "totals": {
-    "sources": 73,
-    "active_collectors": 34,
-    "collection_coverage_pct": 47,
-    "productive": 22,
-    "open_idle": 12,
+    "sources": 79,
+    "active_collectors": 41,
+    "collection_coverage_pct": 52,
+    "productive": 28,
+    "open_idle": 13,
     "collector_errors": 0,
     "probe_blocked": 0,
-    "extractor_backlog": 39,
-    "candidates_discovered": 1,
-    "candidates_written": 194
+    "extractor_backlog": 38,
+    "candidates_discovered": 261,
+    "candidates_written": 260
   },
   "publication": {
     "published_at": "2026-07-03T15:26:20.570Z",
@@ -49,11 +49,11 @@
       "priority": 2,
       "status": "productive",
       "extracted": 11,
-      "candidates": 16,
+      "candidates": 12,
       "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
       "last_collection_status": "ok",
       "last_extracted": 11,
-      "known_candidates": 16
+      "known_candidates": 12
     },
     {
       "id": "moc-cultural-calendar",
@@ -107,13 +107,13 @@
       "id": "experience-alula-events",
       "name": "Experience AlUla Events",
       "priority": 7,
-      "status": "zero-yield",
-      "extracted": 0,
-      "candidates": 0,
-      "next_action": "No future date-complete candidates found by the conservative extractor.",
+      "status": "productive",
+      "extracted": 9,
+      "candidates": 9,
+      "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
       "last_collection_status": "ok",
-      "last_extracted": 0,
-      "known_candidates": 0
+      "last_extracted": 9,
+      "known_candidates": 9
     },
     {
       "id": "mdlbeast-events",
@@ -169,11 +169,11 @@
       "priority": 12,
       "status": "productive",
       "extracted": 16,
-      "candidates": 15,
+      "candidates": 6,
       "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
       "last_collection_status": "ok",
       "last_extracted": 16,
-      "known_candidates": 15
+      "known_candidates": 6
     },
     {
       "id": "ten-times-saudi",
@@ -253,11 +253,11 @@
       "priority": 19,
       "status": "productive",
       "extracted": 4,
-      "candidates": 0,
+      "candidates": 4,
       "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
       "last_collection_status": "ok",
       "last_extracted": 4,
-      "known_candidates": 0
+      "known_candidates": 4
     },
     {
       "id": "code-mcit-programs",
@@ -326,7 +326,7 @@
       "status": "zero-yield",
       "extracted": 0,
       "candidates": 0,
-      "next_action": "No future date-complete candidates found by the conservative extractor.",
+      "next_action": "Recovered via browser-probe official evidence. No future date-complete candidates found by the conservative extractor.",
       "last_collection_status": "ok",
       "last_extracted": 0,
       "known_candidates": 0
@@ -429,15 +429,15 @@
     },
     {
       "id": "visit-saudi-calendar-pdf",
-      "name": "Visit Saudi Calendar PDF",
+      "name": "Visit Saudi Summer Calendar PDF",
       "priority": 34,
-      "status": "not-collected",
-      "extracted": 0,
-      "candidates": 0,
-      "next_action": "أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.",
-      "last_collection_status": "",
-      "last_extracted": 0,
-      "known_candidates": 0
+      "status": "productive",
+      "extracted": 52,
+      "candidates": 51,
+      "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
+      "last_collection_status": "ok",
+      "last_extracted": 52,
+      "known_candidates": 51
     },
     {
       "id": "qiddiya-events",
@@ -695,13 +695,13 @@
       "id": "scega-exhibitions-conferences",
       "name": "SCEGA ePortal Events",
       "priority": 56,
-      "status": "not-collected",
-      "extracted": 0,
-      "candidates": 0,
-      "next_action": "أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.",
-      "last_collection_status": "",
-      "last_extracted": 0,
-      "known_candidates": 0
+      "status": "productive",
+      "extracted": 4,
+      "candidates": 4,
+      "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
+      "last_collection_status": "ok",
+      "last_extracted": 4,
+      "known_candidates": 4
     },
     {
       "id": "ministry-commerce-events",
@@ -803,11 +803,11 @@
       "id": "northern-borders-chamber-events",
       "name": "Northern Borders Chamber Events",
       "priority": 65,
-      "status": "not-collected",
+      "status": "zero-yield",
       "extracted": 0,
       "candidates": 0,
-      "next_action": "أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.",
-      "last_collection_status": "",
+      "next_action": "No future date-complete candidates found by the conservative extractor.",
+      "last_collection_status": "ok",
       "last_extracted": 0,
       "known_candidates": 0
     },
@@ -815,11 +815,11 @@
       "id": "tabuk-chamber-events",
       "name": "Tabuk Chamber Events",
       "priority": 66,
-      "status": "not-collected",
+      "status": "zero-yield",
       "extracted": 0,
       "candidates": 0,
-      "next_action": "أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.",
-      "last_collection_status": "",
+      "next_action": "No future date-complete candidates found by the conservative extractor.",
+      "last_collection_status": "ok",
       "last_extracted": 0,
       "known_candidates": 0
     },
@@ -875,12 +875,12 @@
       "id": "najran-municipality-summer-events",
       "name": "Najran Municipality Summer Events",
       "priority": 71,
-      "status": "not-collected",
-      "extracted": 0,
+      "status": "productive",
+      "extracted": 1,
       "candidates": 1,
-      "next_action": "أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.",
-      "last_collection_status": "",
-      "last_extracted": 0,
+      "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
+      "last_collection_status": "ok",
+      "last_extracted": 1,
       "known_candidates": 1
     },
     {
@@ -899,6 +899,78 @@
       "id": "my-gov-sa-events",
       "name": "GOV.SA National Platform Events",
       "priority": 73,
+      "status": "not-collected",
+      "extracted": 0,
+      "candidates": 0,
+      "next_action": "افتح مسار شراكة أو تغذية رسمية قبل الأتمتة.",
+      "last_collection_status": "",
+      "last_extracted": 0,
+      "known_candidates": 0
+    },
+    {
+      "id": "qassim-university-events",
+      "name": "Qassim University Events",
+      "priority": 74,
+      "status": "productive",
+      "extracted": 1,
+      "candidates": 1,
+      "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
+      "last_collection_status": "ok",
+      "last_extracted": 1,
+      "known_candidates": 1
+    },
+    {
+      "id": "jouf-university-programs",
+      "name": "Jouf University Summer Programs",
+      "priority": 75,
+      "status": "productive",
+      "extracted": 1,
+      "candidates": 1,
+      "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
+      "last_collection_status": "ok",
+      "last_extracted": 1,
+      "known_candidates": 1
+    },
+    {
+      "id": "money2020-middle-east-agendas",
+      "name": "Money20/20 Middle East Official Agendas",
+      "priority": 76,
+      "status": "not-collected",
+      "extracted": 0,
+      "candidates": 0,
+      "next_action": "أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.",
+      "last_collection_status": "",
+      "last_extracted": 0,
+      "known_candidates": 0
+    },
+    {
+      "id": "leap-official-agendas",
+      "name": "LEAP Official Event and Agendas",
+      "priority": 77,
+      "status": "not-collected",
+      "extracted": 0,
+      "candidates": 0,
+      "next_action": "أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.",
+      "last_collection_status": "",
+      "last_extracted": 0,
+      "known_candidates": 0
+    },
+    {
+      "id": "fii10-official-program",
+      "name": "FII 10th Edition Official Program",
+      "priority": 78,
+      "status": "not-collected",
+      "extracted": 0,
+      "candidates": 0,
+      "next_action": "أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.",
+      "last_collection_status": "",
+      "last_extracted": 0,
+      "known_candidates": 0
+    },
+    {
+      "id": "cityscape-global-official-program",
+      "name": "Cityscape Global Official Program",
+      "priority": 79,
       "status": "not-collected",
       "extracted": 0,
       "candidates": 0,

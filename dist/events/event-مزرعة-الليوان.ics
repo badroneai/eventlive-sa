@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:مزرعة الليوان | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-مزرعة-الليوان@eventme.live
+DTSTAMP:20260710T080011Z
+DTSTART:20260517T210000Z
+DTEND:20260831T205900Z
+SUMMARY:مزرعة الليوان
+DESCRIPTION:وجهة ريفية أصيلة تجمع التراث والطبيعة، تضم نُزاً طينياً مريحاً، وإفطاراً محلياً، ومتحفاً، ومجلساً تراثياً، ومكتبةً ، ومقهى، ومطعماً، وأنشطةً تفاعلية لتجربةٍ عائلية دافئة في تُنسى.
+LOCATION:منطقة عسير
+URL:https://eventme.live/events/event-مزرعة-الليوان.html
+END:VEVENT
+END:VCALENDAR

@@ -1,6 +1,6 @@
 # EventLive Product Journey Audit
 
-- Generated at: 2026-07-08T01:37:33.080Z
+- Generated at: 2026-07-10T06:25:52.657Z
 - Status: PASS
 - Journeys checked: 4
 - Dead-end pages checked: 7

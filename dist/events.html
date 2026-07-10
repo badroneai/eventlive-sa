@@ -853,6 +853,57 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <style id="eventlive-brand-pulse">
 @keyframes eventliveLiveDotPulse {
   0%, 100% { opacity: .92; transform: translateX(-50%) scale(1); box-shadow: 0 0 0 0 rgba(229, 72, 77, .2); }
@@ -964,7 +1015,7 @@
     <section class="facet-nav" aria-label="روابط اكتشاف الفعاليات">
       <div class="facet-row">
         <strong>المدن</strong>
-        <a href="./cities/abha.html">أبها</a><a href="./cities/jubail.html">الجبيل</a><a href="./cities/diriyah.html">الدرعية</a><a href="./cities/dammam.html">الدمام</a><a href="./cities/riyadh.html">الرياض</a><a href="./cities/saudi-arabia.html">السعودية</a><a href="./cities/dhahran.html">الظهران</a><a href="./cities/alula.html">العلا</a><a href="./cities/qatif.html">القطيف</a><a href="./cities/buraydah.html">بريدة</a><a href="./cities/tabuk.html">تبوك</a><a href="./cities/thuwal.html">ثول</a><a href="./cities/jazan.html">جازان</a><a href="./cities/jeddah.html">جدة</a><a href="./cities/khamis-mushait.html">خميس مشيط</a><a href="./cities/global.html">دولي</a><a href="./cities/rafha.html">رفحاء</a><a href="./cities/arar.html">عرعر</a><a href="./cities/aseer.html">عسير</a><a href="./cities/nationwide.html">على مستوى المملكة</a><a href="./cities/online.html">عن بعد</a><a href="./cities/makkah.html">مكة</a><a href="./cities/najran.html">نجران</a>
+        <a href="./cities/abha.html">أبها</a><a href="./cities/al-ahsa.html">الأحساء</a><a href="./cities/الافلاج.html">الافلاج</a><a href="./cities/al-baha.html">الباحة</a><a href="./cities/jubail.html">الجبيل</a><a href="./cities/khobar.html">الخبر</a><a href="./cities/diriyah.html">الدرعية</a><a href="./cities/dammam.html">الدمام</a><a href="./cities/rass.html">الرس</a><a href="./cities/riyadh.html">الرياض</a><a href="./cities/saudi-arabia.html">السعودية</a><a href="./cities/taif.html">الطائف</a><a href="./cities/dhahran.html">الظهران</a><a href="./cities/alula.html">العلا</a><a href="./cities/madinah.html">المدينة المنورة</a><a href="./cities/al-muzahimiyah.html">المزاحمية</a><a href="./cities/al-namas.html">النماص</a><a href="./cities/buraydah.html">بريدة</a><a href="./cities/tabuk.html">تبوك</a><a href="./cities/thuwal.html">ثول</a><a href="./cities/jazan.html">جازان</a><a href="./cities/jeddah.html">جدة</a><a href="./cities/hail.html">حائل</a><a href="./cities/khamis-mushait.html">خميس مشيط</a><a href="./cities/global.html">دولي</a><a href="./cities/rafha.html">رفحاء</a><a href="./cities/sakaka.html">سكاكا</a><a href="./cities/arar.html">عرعر</a><a href="./cities/aseer.html">عسير</a><a href="./cities/nationwide.html">على مستوى المملكة</a><a href="./cities/online.html">عن بعد</a><a href="./cities/makkah.html">مكة</a><a href="./cities/najran.html">نجران</a><a href="./cities/yanbu.html">ينبع</a>
       </div>
       <div class="facet-row">
         <strong>التصنيفات</strong>
@@ -1031,8 +1082,8 @@
     let visibleLimit = 24;
     const pageSize = 24;
     const eventsFeedUrl = './events.json';
-    const CITY_AR = {"Riyadh":"الرياض","Saudi Arabia":"السعودية","Diriyah":"الدرعية","Aseer":"عسير","Najran":"نجران","Jeddah":"جدة","Online":"عن بعد","Thuwal":"ثول","Jazan":"جازان","Dhahran":"الظهران","Nationwide":"على مستوى المملكة","Global":"دولي","Tabuk":"تبوك","Buraydah":"بريدة","Arar":"عرعر","Makkah":"مكة","AlUla":"العلا","Dammam":"الدمام","Khamis Mushait":"خميس مشيط","Qatif":"القطيف","Rafha":"رفحاء","Abha":"أبها","Jubail":"الجبيل"};
-    const CATEGORY_AR = {"cultural initiative":"ثقافة وفنون","culture-arts":"ثقافة وفنون","family \u0026 kids":"ترفيه وعائلات","entertainment-families":"ترفيه وعائلات","gaming-esports":"ألعاب ورياضات إلكترونية","entertainment / families":"ترفيه وعائلات","entertainment \u0026 sports":"رياضة وفعاليات جماهيرية","sports":"رياضة وفعاليات جماهيرية","culture \u0026 history / families":"ثقافة وفنون","exhibitions \u0026 conferences":"علوم وفضاء","exhibition-trade":"معارض وتجارية","skills program":"تدريب تقني","technology-training":"تدريب تقني","culture \u0026 community":"ثقافة وفنون","sports / families":"رياضة وفعاليات جماهيرية","saudi seasons":"رياضة وفعاليات جماهيرية","adventure / families":"ترفيه وعائلات","entrepreneurship":"تدريب تقني","science-space":"علوم وفضاء","معسكر - هندسة الميكاترونكس":"جامعات ومجتمع","regulatory-workshop":"ورش تنظيمية وصحية","entertainment families":"ترفيه وعائلات","university event":"جامعات ومجتمع","education-community":"جامعات ومجتمع","music":"ترفيه وعائلات","application deadline":"تدريب تقني","technology training":"تدريب تقني","أسبوع الاعمال":"تدريب تقني","معسكر - تطوير البرمجيات والتطبيقات":"ورش تنظيمية وصحية","community":"ورش تنظيمية وصحية","regulatory workshop":"ورش تنظيمية وصحية","sports and community":"رياضة وفعاليات جماهيرية","workshop":"فعاليات الغرف التجارية","chamber-event":"فعاليات الغرف التجارية","معسكر - الحوسبة السحابية":"جامعات ومجتمع","معسكر - أنظمة الشبكات":"ورش تنظيمية وصحية","exhibition / families":"ترفيه وعائلات","معسكر - الأمن السيبراني":"جامعات ومجتمع","معسكر - هندسة البرمجيات":"ورش تنظيمية وصحية","conference":"مؤتمرات ومنتديات","conference-forum":"مؤتمرات ومنتديات","exhibition":"فعاليات الغرف التجارية","معسكر - علم البيانات والذكاء الاصطناعي":"جامعات ومجتمع","artificial intelligence":"مؤتمرات ومنتديات","awards-ceremonies":"جوائز وتكريم","public holidays":"ترفيه وعائلات","chamber event":"فعاليات الغرف التجارية","venue event":"معارض وتجارية","business forum":"فعاليات الغرف التجارية","awards":"جوائز وتكريم","national day":"جوائز وتكريم","skills":"تدريب تقني","space":"علوم وفضاء","academic event":"جامعات ومجتمع","فعالية فوانيس":"فعاليات الغرف التجارية","التوطين":"فعاليات الغرف التجارية","events":"رياضة وفعاليات جماهيرية","space education":"علوم وفضاء","auction":"معارض وتجارية","الاتصالات وتقنية المعلومات":"فعاليات الغرف التجارية","ريادة الأعمال":"فعاليات الغرف التجارية","football match":"رياضة وفعاليات جماهيرية","business reception":"فعاليات الغرف التجارية","roadshow":"تدريب تقني","incubator":"ألعاب ورياضات إلكترونية","training":"فعاليات الغرف التجارية","career fair":"فعاليات الغرف التجارية","technology bootcamp":"ألعاب ورياضات إلكترونية","digital series":"ألعاب ورياضات إلكترونية","gaming program":"ألعاب ورياضات إلكترونية","ai entrepreneurship":"ألعاب ورياضات إلكترونية","business event":"فعاليات الغرف التجارية","business gathering":"فعاليات الغرف التجارية","jeddah chamber":"فعاليات الغرف التجارية","sports championship":"رياضة وفعاليات جماهيرية","accelerator":"ألعاب ورياضات إلكترونية"};
+    const CITY_AR = {"Riyadh":"الرياض","Saudi Arabia":"السعودية","Aseer":"عسير","Jeddah":"جدة","Al Baha":"الباحة","Diriyah":"الدرعية","Najran":"نجران","Sakaka":"سكاكا","Online":"عن بعد","Thuwal":"ثول","Buraydah":"بريدة","AlUla":"العلا","Jazan":"جازان","Dhahran":"الظهران","Nationwide":"على مستوى المملكة","Global":"دولي","Tabuk":"تبوك","Al Muzahimiyah":"المزاحمية","Dammam":"الدمام","Khobar":"الخبر","Taif":"الطائف","Madinah":"المدينة المنورة","Arar":"عرعر","Al Namas":"النماص","Yanbu":"ينبع","Makkah":"مكة","Rass":"الرس","Al Ahsa":"الأحساء","الافلاج":"الافلاج","Hail":"حائل","Khamis Mushait":"خميس مشيط","Rafha":"رفحاء","Abha":"أبها","Jubail":"الجبيل"};
+    const CATEGORY_AR = {"cultural initiative":"ثقافة وفنون","culture-arts":"ثقافة وفنون","family \u0026 kids":"ترفيه وعائلات","entertainment-families":"ترفيه وعائلات","gaming-esports":"ألعاب ورياضات إلكترونية","entertainment / families":"ترفيه وعائلات","entertainment \u0026 sports":"رياضة وفعاليات جماهيرية","sports":"رياضة وفعاليات جماهيرية","culture \u0026 history / families":"ثقافة وفنون","exhibitions \u0026 conferences":"علوم وفضاء","exhibition-trade":"معارض وتجارية","tourism experience":"رياضة وفعاليات جماهيرية","skills program":"تدريب تقني","technology-training":"تدريب تقني","festival":"ترفيه وعائلات","entertainment":"ترفيه وعائلات","culture \u0026 community":"ثقافة وفنون","culture and arts":"ألعاب ورياضات إلكترونية","regulatory-workshop":"ورش تنظيمية وصحية","sports / families":"رياضة وفعاليات جماهيرية","saudi seasons":"رياضة وفعاليات جماهيرية","adventure / families":"ترفيه وعائلات","entrepreneurship":"تدريب تقني","science-space":"علوم وفضاء","معسكر - هندسة الميكاترونكس":"جامعات ومجتمع","entertainment families":"ترفيه وعائلات","university event":"جامعات ومجتمع","education-community":"جامعات ومجتمع","summer program":"جامعات ومجتمع","music":"ترفيه وعائلات","application deadline":"تدريب تقني","technology training":"تدريب تقني","أسبوع الاعمال":"تدريب تقني","معسكر - تطوير البرمجيات والتطبيقات":"ورش تنظيمية وصحية","community":"ورش تنظيمية وصحية","regulatory workshop":"ورش تنظيمية وصحية","sports and community":"رياضة وفعاليات جماهيرية","workshop":"فعاليات الغرف التجارية","chamber-event":"فعاليات الغرف التجارية","معسكر - الحوسبة السحابية":"جامعات ومجتمع","معسكر - أنظمة الشبكات":"ورش تنظيمية وصحية","exhibition / families":"ترفيه وعائلات","معسكر - الأمن السيبراني":"جامعات ومجتمع","معسكر - هندسة البرمجيات":"ورش تنظيمية وصحية","conference":"مؤتمرات ومنتديات","conference-forum":"مؤتمرات ومنتديات","exhibition":"فعاليات الغرف التجارية","معسكر - علم البيانات والذكاء الاصطناعي":"جامعات ومجتمع","artificial intelligence":"مؤتمرات ومنتديات","awards-ceremonies":"جوائز وتكريم","public holidays":"ترفيه وعائلات","summit":"مؤتمرات ومنتديات","chamber event":"فعاليات الغرف التجارية","forum":"مؤتمرات ومنتديات","venue event":"معارض وتجارية","business forum":"فعاليات الغرف التجارية","awards":"جوائز وتكريم","destination event":"علوم وفضاء","national day":"جوائز وتكريم","skills":"تدريب تقني","space":"علوم وفضاء","academic event":"جامعات ومجتمع","فعالية فوانيس":"فعاليات الغرف التجارية","التوطين":"فعاليات الغرف التجارية","space education":"علوم وفضاء","auction":"معارض وتجارية","الاتصالات وتقنية المعلومات":"فعاليات الغرف التجارية","ريادة الأعمال":"فعاليات الغرف التجارية","football match":"رياضة وفعاليات جماهيرية","business reception":"فعاليات الغرف التجارية","roadshow":"تدريب تقني","incubator":"ألعاب ورياضات إلكترونية","training":"فعاليات الغرف التجارية","career fair":"فعاليات الغرف التجارية","gaming program":"ألعاب ورياضات إلكترونية","technology bootcamp":"ألعاب ورياضات إلكترونية","digital series":"ألعاب ورياضات إلكترونية","ai entrepreneurship":"ألعاب ورياضات إلكترونية","business event":"فعاليات الغرف التجارية","business gathering":"فعاليات الغرف التجارية","jeddah chamber":"فعاليات الغرف التجارية","sports championship":"رياضة وفعاليات جماهيرية","accelerator":"ألعاب ورياضات إلكترونية"};
     const cityAr = (city) => CITY_AR[city] || city || '';
     const categoryAr = (category) => CATEGORY_AR[String(category || '').trim().toLowerCase()] || category || 'عام';
     const controls = {
@@ -1614,6 +1665,57 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     function applyInitialSearchQuery() {
       const params = new URLSearchParams(window.location.search);
       const query = (params.get('q') || params.get('search') || params.get('query') || '').trim();
@@ -1636,6 +1738,108 @@
     });
     if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(() => {});
   </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
