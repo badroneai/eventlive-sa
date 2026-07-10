@@ -45,6 +45,11 @@ function inspect(file, locale, direction, canonical) {
         assert.ok(!/[\u0600-\u06ff]/u.test(value), `${file} contains an untranslated ${attribute}: ${value}`);
       }
     });
+    if (file.endsWith(`${path.sep}en${path.sep}index.html`)) {
+      for (const phrase of ['يحدث الآن — ينتهي خلال', 'أقرب فعالية — تبدأ خلال', 'افتح الجدول الحي']) {
+        assert.ok(!source.includes(phrase), `${file} contains an untranslated live-home runtime phrase: ${phrase}`);
+      }
+    }
   }
   assert.equal($('html').attr('lang'), locale, `${file} has the wrong language`);
   assert.equal($('html').attr('dir'), direction, `${file} has the wrong direction`);

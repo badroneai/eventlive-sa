@@ -38,6 +38,10 @@ const runtimeLiteralMap = {
   'X-WR-CALNAME:EventLive | سجل فعالياتي': 'X-WR-CALNAME:EventLive | My saved events',
   'الجدول الحي جاهز': 'Live schedule ready',
   'الجدول الحي قيد التفعيل': 'Live schedule pending activation',
+  'يحدث الآن — ينتهي خلال': 'Live now · ends in',
+  '<span class="live-dot"></span>يحدث الآن — ينتهي خلال': '<span class="live-dot"></span>Live now · ends in',
+  'أقرب فعالية — تبدأ خلال': 'Next event · starts in',
+  'افتح الجدول الحي': 'Open live schedule',
   ' فعالية محفوظة في هذا المتصفح.': ' events saved in this browser.',
   'احفظ الفعاليات المهمة لك للرجوع لها قبل الوصول وأثناء الحضور.': 'Save important events for quick access before arrival and during attendance.',
   '<div class="empty">لم تحفظ أي فعالية بعد. استخدم زر حفظ في بطاقات الفعاليات.</div>': '<div class="empty">No events saved yet. Use the save button on an event card.</div>',
@@ -328,7 +332,7 @@ function languageCss() {
 .i18n-content-hero h1,.i18n-content-hero .lead{color:#fff!important}.i18n-content-hero .eyebrow{color:#bfe8da!important}
 html[lang^="en"] body{font-family:"IBM Plex Sans","IBM Plex Sans Arabic",Arial,sans-serif;letter-spacing:0}
 html[lang^="en"] [lang="ar"]{font-family:"IBM Plex Sans Arabic",Tahoma,Arial,sans-serif}
-@media(max-width:760px){.language-switch{min-width:44px;padding-inline:9px}.site-head .language-switch{order:0}}
+@media(max-width:760px){.language-switch{min-width:44px;padding-inline:9px}.site-head .language-switch{order:1;width:44px;padding:0;font-size:0}.site-head .language-switch::after{content:attr(data-short-label);font-size:12px;font-weight:800;letter-spacing:0}}
 </style>`;
 }
 
@@ -372,7 +376,8 @@ function alternateLinks(relativePath) {
 
 function injectLanguageSwitcher($, href, label, ariaLabel) {
   $('.language-switch').remove();
-  const link = `<a class="language-switch" href="${href}" hreflang="${href.startsWith('/en') ? 'en-SA' : 'ar-SA'}" lang="${href.startsWith('/en') ? 'en' : 'ar'}" aria-label="${ariaLabel}">${label}</a>`;
+  const shortLabel = href.startsWith('/en') ? 'EN' : 'AR';
+  const link = `<a class="language-switch" href="${href}" hreflang="${href.startsWith('/en') ? 'en-SA' : 'ar-SA'}" lang="${href.startsWith('/en') ? 'en' : 'ar'}" data-short-label="${shortLabel}" aria-label="${ariaLabel}">${label}</a>`;
   const target = $('.site-head .head-in, .topbar .nav, header .nav').first();
   if (target.length) target.append(link);
   else $('body').prepend(link);

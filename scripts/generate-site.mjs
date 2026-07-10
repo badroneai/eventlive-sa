@@ -76,20 +76,12 @@ const brandCss = `<style id="eventlive-brand-pulse">
   .more-panel a { min-height: 44px; display:flex; align-items:center; }
   .site-head { padding-top:env(safe-area-inset-top); }
   .site-head .head-in { min-height:58px; gap:8px; }
-  .site-head .brand { gap:8px; margin-inline-end:0; min-width:0; }
+  .site-head .brand { gap:8px; margin-inline-end:auto; min-width:0; }
   .site-head .brand .mark { width:34px; height:34px; border-radius:9px; flex:0 0 34px; }
   .site-head .brand b { font-size:18px; line-height:1; }
   .site-head .brand small { display:none; }
   .site-head .cta-now {
-    order:1;
-    min-height:44px;
-    padding:7px 12px;
-    border:1px solid var(--line);
-    border-radius:8px;
-    background:#fff;
-    color:var(--brand-deep);
-    box-shadow:none;
-    font-size:13.5px;
+    display:none;
   }
   .site-head .cta-now .dot { background:var(--live); animation-duration:5.6s; }
   .site-head .burger { order:2; margin-inline-start:0; }
@@ -106,30 +98,35 @@ const brandCss = `<style id="eventlive-brand-pulse">
     font-size:18px;
   }
   .site-head .more-panel { top:calc(58px + env(safe-area-inset-top)); }
-  .site-head + .hero .hero-in { gap:16px; padding:20px 0 24px; }
-  .site-head + .hero .eyebrow { margin-bottom:10px; padding:4px 9px; }
-  .site-head + .hero h1 { margin-bottom:8px; font-size:26px; }
+  .site-head + .hero::before { opacity:.035; }
+  .site-head + .hero .hero-in { gap:12px; padding:14px 0 18px; }
+  .site-head + .hero .eyebrow { display:none; }
+  .site-head + .hero h1 { margin-bottom:6px; font-size:24px; line-height:1.3; }
   .site-head + .hero .lead {
-    margin-bottom:14px;
-    font-size:14px;
-    line-height:1.7;
+    margin-bottom:10px;
+    font-size:13px;
+    line-height:1.6;
     display:-webkit-box;
     -webkit-line-clamp:2;
     -webkit-box-orient:vertical;
     overflow:hidden;
   }
-  .site-head + .hero .search-box input { min-height:48px; border-radius:10px; }
-  .site-head + .hero .hero-ctas { gap:8px; margin-top:12px; }
-  .site-head + .hero .hero-ctas .ghost { flex:1; min-height:44px; padding:8px 10px; text-align:center; }
-  .site-head + .hero .board { padding:14px; border-radius:14px; }
-  .site-head + .hero .board-label { margin-bottom:8px; }
-  .site-head + .hero .board h2 { font-size:18px; }
-  .site-head + .hero .board .b-meta { margin-bottom:10px; }
-  .site-head + .hero .countdown { gap:6px; margin-bottom:12px; }
-  .site-head + .hero .cd-cell { padding:8px 4px 7px; border-radius:8px; }
-  .site-head + .hero .cd-cell b { font-size:20px; }
-  .site-head + .hero .board-actions .primary { flex:1; min-height:44px; padding:9px 12px; text-align:center; }
-  .site-head + .hero .board-actions .plain, .site-head + .hero .board-stats { display:none; }
+  .site-head + .hero .search-box input { min-height:46px; border-radius:10px; }
+  .site-head + .hero .hero-ctas { gap:8px; margin-top:8px; }
+  .site-head + .hero .hero-ctas .ghost { flex:1; min-height:44px; padding:7px 8px; text-align:center; font-size:12.5px; }
+  .site-head + .hero .board { padding:12px; border-radius:12px; }
+  .site-head + .hero .board-label { margin-bottom:4px; font-size:11.5px; }
+  .site-head + .hero .board h2 { margin-bottom:2px; font-size:17px; line-height:1.35; }
+  .site-head + .hero .board .b-meta { margin-bottom:8px; font-size:12px; }
+  .site-head + .hero .countdown { gap:5px; margin-bottom:8px; }
+  .site-head + .hero .cd-cell { padding:5px 3px 4px; border-radius:8px; }
+  .site-head + .hero .cd-cell b { font-size:18px; }
+  .site-head + .hero .cd-cell span { font-size:9.5px; }
+  .site-head + .hero .board-actions { gap:6px; }
+  .site-head + .hero .board-actions .primary,
+  .site-head + .hero .board-actions .plain { flex:1; display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:7px 8px; border-radius:9px; text-align:center; font-size:12.5px; }
+  .site-head + .hero .board-actions .plain { border:1px solid rgba(255,255,255,.18); }
+  .site-head + .hero .board-stats { display:none; }
   .card-row {
     scroll-padding-inline:16px;
     overscroll-behavior-inline:contain;
