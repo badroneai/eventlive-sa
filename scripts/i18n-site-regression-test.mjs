@@ -38,6 +38,14 @@ function inspect(file, locale, direction, canonical) {
     assert.ok(!/[\u0621-\u064a]PM|PM[\u0621-\u064a]/u.test(source), `${file} contains a corrupted Arabic word from time localization`);
   }
   const $ = load(source);
+  if (locale === 'en-SA') {
+    $('[aria-label],[placeholder]').each((_, element) => {
+      for (const attribute of ['aria-label', 'placeholder']) {
+        const value = $(element).attr(attribute) || '';
+        assert.ok(!/[\u0600-\u06ff]/u.test(value), `${file} contains an untranslated ${attribute}: ${value}`);
+      }
+    });
+  }
   assert.equal($('html').attr('lang'), locale, `${file} has the wrong language`);
   assert.equal($('html').attr('dir'), direction, `${file} has the wrong direction`);
   assert.equal($('link[rel="canonical"]').attr('href'), canonical, `${file} has the wrong canonical URL`);
