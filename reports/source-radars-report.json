@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-radars.v1",
-  "generated_at": "2026-07-10T06:46:34.229Z",
+  "generated_at": "2026-07-10T08:14:45.710Z",
   "strict": false,
   "policy": {
     "allowed_use": "scheduled evidence refresh, parser validation, official-source lead discovery",
@@ -8,8 +8,8 @@
   },
   "totals": {
     "radars": 3,
-    "ok": 3,
-    "failed": 0
+    "ok": 2,
+    "failed": 1
   },
   "radars": [
     {
@@ -17,10 +17,10 @@
       "name": "Official Multi-Session Agenda Radar",
       "source_id": "official-agenda-watchlist",
       "policy": "source-evidence; agenda readiness; no auto-publish",
-      "command": "/opt/homebrew/Cellar/node/26.3.1/bin/node scripts/source-official-agenda-radar.mjs",
-      "started_at": "2026-07-10T06:46:34.230Z",
-      "ended_at": "2026-07-10T06:46:35.854Z",
-      "duration_ms": 1624,
+      "command": "/opt/hostedtoolcache/node/24.18.0/x64/bin/node scripts/source-official-agenda-radar.mjs",
+      "started_at": "2026-07-10T08:14:45.711Z",
+      "ended_at": "2026-07-10T08:14:48.191Z",
+      "duration_ms": 2480,
       "status": "ok",
       "exit_code": 0,
       "signal": null,
@@ -31,11 +31,12 @@
       ],
       "stdout_tail": [
         "# EventLive Official Agenda Radar",
-        "- Targets: 9",
-        "- Published timed agendas: 2",
-        "- Announced without timed agenda: 2",
+        "- Targets: 18",
+        "- Published timed agendas: 4",
+        "- Announced without timed agenda: 8",
+        "- Placeholder agendas rejected: 1",
         "- Not published: 1",
-        "- Protected or partnership: 2"
+        "- Protected or partnership: 1"
       ],
       "stderr_tail": [],
       "error": ""
@@ -45,10 +46,10 @@
       "name": "Strategic Platform Source Radar",
       "source_id": "strategic-platform-watchlist",
       "policy": "source-evidence; API-surface mapping; no auto-publish",
-      "command": "/opt/homebrew/Cellar/node/26.3.1/bin/node scripts/source-strategic-platform-radar.mjs",
-      "started_at": "2026-07-10T06:46:35.854Z",
-      "ended_at": "2026-07-10T06:46:52.068Z",
-      "duration_ms": 16214,
+      "command": "/opt/hostedtoolcache/node/24.18.0/x64/bin/node scripts/source-strategic-platform-radar.mjs",
+      "started_at": "2026-07-10T08:14:48.191Z",
+      "ended_at": "2026-07-10T08:15:35.666Z",
+      "duration_ms": 47475,
       "status": "ok",
       "exit_code": 0,
       "signal": null,
@@ -60,7 +61,7 @@
       "stdout_tail": [
         "# Strategic Platform Source Radar",
         "- Platforms: 8",
-        "- Reachable: 5",
+        "- Reachable: 3",
         "- Protected: 3",
         "- Report: reports/source-strategic-platform-radar.md"
       ],
@@ -72,26 +73,22 @@
       "name": "GOV.SA / NEC Wayback Radar",
       "source_id": "my-gov-sa-events",
       "policy": "source-evidence; no auto-publish",
-      "command": "/opt/homebrew/Cellar/node/26.3.1/bin/node scripts/mygov-wayback-radar.mjs",
-      "started_at": "2026-07-10T06:46:52.068Z",
-      "ended_at": "2026-07-10T06:47:26.062Z",
-      "duration_ms": 33994,
-      "status": "ok",
-      "exit_code": 0,
+      "command": "/opt/hostedtoolcache/node/24.18.0/x64/bin/node scripts/mygov-wayback-radar.mjs",
+      "started_at": "2026-07-10T08:15:35.666Z",
+      "ended_at": "2026-07-10T08:16:35.702Z",
+      "duration_ms": 60036,
+      "status": "failed",
+      "exit_code": 1,
       "signal": null,
       "timeout_ms": 90000,
       "reports": [
         "reports/mygov-wayback-radar.json",
         "reports/mygov-wayback-radar.md"
       ],
-      "stdout_tail": [
-        "# GOV.SA Wayback Radar",
-        "- Captures attempted: 10",
-        "- Events extracted: 10",
-        "- Date-complete: 10",
-        "- Report: reports/mygov-wayback-radar.md"
+      "stdout_tail": [],
+      "stderr_tail": [
+        "[DOMException [AbortError]: This operation was aborted]"
       ],
-      "stderr_tail": [],
       "error": ""
     }
   ]

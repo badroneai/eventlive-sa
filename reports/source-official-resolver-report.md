@@ -1,9 +1,9 @@
 # EventLive Official Resolver Report
 
-- generated_at: 2026-07-10T06:58:17.502Z
+- generated_at: 2026-07-10T08:30:18.656Z
 - source_ops_report: reports/source-ops-report.json
 - leads_seen: 10
-- resolver_tasks: 10
+- resolver_tasks: 8
 - high_priority: 1
 
 ## Resolver Tasks
@@ -12,10 +12,8 @@
 |---:|---|---|---|---|---|---|
 | 132 | Dubai Property Expo in Al Khobar | Eventbrite Saudi Arabia | Khobar | strong-lead/70 | dhahran-expo-calendar, ricec-events, sdaia-calendar-events, asharqia-chamber-events, abha-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 107 | 12th Middle East Banking AI & Analytics Summit 2026 | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | ricec-events, sdaia-calendar-events, dhahran-expo-calendar, rfecc-whats-on, abha-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 107 | 15th Middle East Enterprise AI & Analytics Summit | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | ricec-events, sdaia-calendar-events, dhahran-expo-calendar, rfecc-whats-on, abha-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 107 | Family Office Investment Summit | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | ricec-events, asharqia-chamber-events, dhahran-expo-calendar, jcci-events-center, rfecc-whats-on | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 107 | Jeddah Fintech Week 2026 | Eventbrite Saudi Arabia | Jeddah | strong-lead/70 | abha-chamber-events, baha-chamber-events, future-skills-catalog, hail-chamber-events, invest-saudi-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 105 | HVAC R Saudi Arabia | Eye of Riyadh Events | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, saudi-water-authority-events, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 97 | Family Office Investment Meeting | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | saudi-contractors-authority-events, asharqia-chamber-events, invest-saudi-events, jcci-events-center, jouf-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 97 | Information Session With IE University Saudi Arabia in Riyadh | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | code-mcit-programs, cst-events-news, diriyah-season, enjoy-saudi-events, fii10-official-program | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 97 | Sucession Planning Program | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | code-mcit-programs, cst-events-news, diriyah-season, enjoy-saudi-events, fii10-official-program | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
@@ -45,17 +43,6 @@
 - ["12th Middle East Banking AI & Analytics Summit 2026" "Riyadh" organizer](https://www.google.com/search?q=%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202026%22%20%22Riyadh%22%20organizer)
 - ["12th Middle East Banking AI & Analytics Summit 2026" "Riyadh" tickets](https://www.google.com/search?q=%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202026%22%20%22Riyadh%22%20tickets)
 
-### 15th Middle East Enterprise AI & Analytics Summit
-
-- [site:ricec.com "15th Middle East Enterprise AI & Analytics Summit" "Riyadh"](https://www.google.com/search?q=site%3Aricec.com%20%2215th%20Middle%20East%20Enterprise%20AI%20%26%20Analytics%20Summit%22%20%22Riyadh%22)
-- [site:sdaia.gov.sa "15th Middle East Enterprise AI & Analytics Summit" "Riyadh"](https://www.google.com/search?q=site%3Asdaia.gov.sa%20%2215th%20Middle%20East%20Enterprise%20AI%20%26%20Analytics%20Summit%22%20%22Riyadh%22)
-- [site:dhahranexpo.com.sa "15th Middle East Enterprise AI & Analytics Summit" "Riyadh"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%2215th%20Middle%20East%20Enterprise%20AI%20%26%20Analytics%20Summit%22%20%22Riyadh%22)
-- [site:rfecc.sa "15th Middle East Enterprise AI & Analytics Summit" "Riyadh"](https://www.google.com/search?q=site%3Arfecc.sa%20%2215th%20Middle%20East%20Enterprise%20AI%20%26%20Analytics%20Summit%22%20%22Riyadh%22)
-- [site:abhacci.org.sa "15th Middle East Enterprise AI & Analytics Summit" "Riyadh"](https://www.google.com/search?q=site%3Aabhacci.org.sa%20%2215th%20Middle%20East%20Enterprise%20AI%20%26%20Analytics%20Summit%22%20%22Riyadh%22)
-- ["15th Middle East Enterprise AI & Analytics Summit" "Riyadh" official](https://www.google.com/search?q=%2215th%20Middle%20East%20Enterprise%20AI%20%26%20Analytics%20Summit%22%20%22Riyadh%22%20official)
-- ["15th Middle East Enterprise AI & Analytics Summit" "Riyadh" organizer](https://www.google.com/search?q=%2215th%20Middle%20East%20Enterprise%20AI%20%26%20Analytics%20Summit%22%20%22Riyadh%22%20organizer)
-- ["15th Middle East Enterprise AI & Analytics Summit" "Riyadh" tickets](https://www.google.com/search?q=%2215th%20Middle%20East%20Enterprise%20AI%20%26%20Analytics%20Summit%22%20%22Riyadh%22%20tickets)
-
 ### Family Office Investment Summit
 
 - [site:ricec.com "Family Office Investment Summit" "Riyadh"](https://www.google.com/search?q=site%3Aricec.com%20%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22)
@@ -77,17 +64,6 @@
 - ["Jeddah Fintech Week 2026" "Jeddah" official](https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20official)
 - ["Jeddah Fintech Week 2026" "Jeddah" organizer](https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20organizer)
 - ["Jeddah Fintech Week 2026" "Jeddah" tickets](https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20tickets)
-
-### HVAC R Saudi Arabia
-
-- [site:rfecc.sa "HVAC R Saudi Arabia" "Riyadh"](https://www.google.com/search?q=site%3Arfecc.sa%20%22HVAC%20R%20Saudi%20Arabia%22%20%22Riyadh%22)
-- [site:ricec.com "HVAC R Saudi Arabia" "Riyadh"](https://www.google.com/search?q=site%3Aricec.com%20%22HVAC%20R%20Saudi%20Arabia%22%20%22Riyadh%22)
-- [site:dhahranexpo.com.sa "HVAC R Saudi Arabia" "Riyadh"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22HVAC%20R%20Saudi%20Arabia%22%20%22Riyadh%22)
-- [site:swa.gov.sa "HVAC R Saudi Arabia" "Riyadh"](https://www.google.com/search?q=site%3Aswa.gov.sa%20%22HVAC%20R%20Saudi%20Arabia%22%20%22Riyadh%22)
-- [site:sdaia.gov.sa "HVAC R Saudi Arabia" "Riyadh"](https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22HVAC%20R%20Saudi%20Arabia%22%20%22Riyadh%22)
-- ["HVAC R Saudi Arabia" "Riyadh" official](https://www.google.com/search?q=%22HVAC%20R%20Saudi%20Arabia%22%20%22Riyadh%22%20official)
-- ["HVAC R Saudi Arabia" "Riyadh" organizer](https://www.google.com/search?q=%22HVAC%20R%20Saudi%20Arabia%22%20%22Riyadh%22%20organizer)
-- ["HVAC R Saudi Arabia" "Riyadh" tickets](https://www.google.com/search?q=%22HVAC%20R%20Saudi%20Arabia%22%20%22Riyadh%22%20tickets)
 
 ### Family Office Investment Meeting
 

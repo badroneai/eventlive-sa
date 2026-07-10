@@ -1,17 +1,51 @@
 {
-  "generated_at": "2026-07-10T06:45:46.146Z",
+  "generated_at": "2026-07-10T08:14:04.909Z",
   "registry": "data/source_registry.json",
   "source_ingestion_plan": "reports/source-ingestion-plan.json",
   "probe_limit": 28,
   "timeout_ms": 12000,
   "totals": {
     "probed": 21,
-    "extractor_ready": 10,
-    "blocked": 11,
+    "extractor_ready": 11,
+    "blocked": 10,
     "partnership": 0,
     "watch": 0
   },
   "sources": [
+    {
+      "id": "money2020-middle-east-agendas",
+      "name": "Money20/20 Middle East Official Agendas",
+      "priority": 76,
+      "url": "https://money2020middleeast.com/",
+      "trust_level": "official",
+      "fetch_method": "html-calendar",
+      "candidate_gate": "extraction",
+      "intake_policy": "official-feed-preferred",
+      "signals": {
+        "http_ok": true,
+        "status": 200,
+        "final_url": "https://money2020middleeast.com/",
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 64980,
+        "title": "The Global Fintech Conference | Money 20/20 Middle East",
+        "blocked_reason": "",
+        "structured_scripts": 1,
+        "structured_events": 2,
+        "google_calendar_links": 0,
+        "event_detail_links": 2,
+        "json_or_api_hints": 7,
+        "date_snippets": [
+          "Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.cr",
+          "Date\": \"2025-09-15\", \"endDate\": \"2025-09-17\", \"eventStatus\": \"https://sc",
+          "2025-09-17",
+          "2025-09-15",
+          "2025-09-17",
+          "2025-09-17"
+        ]
+      },
+      "extraction_score": 98,
+      "recommendation": "build-jsonld-event-extractor"
+    },
     {
       "id": "jouf-chamber-events",
       "name": "Jouf Chamber Events",
@@ -60,7 +94,7 @@
         "status": 200,
         "final_url": "https://ncci.org.sa/category/events/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 118086,
+        "bytes": 118096,
         "title": "الفعاليات – الغرفة التجارية بعرعر | غرفة الحدود الشمالية",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -128,7 +162,7 @@
         "status": 200,
         "final_url": "https://www.cst.gov.sa/en",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 250421,
+        "bytes": 250420,
         "title": "Communications, Space & Technology Commission (CST)",
         "blocked_reason": "",
         "structured_scripts": 2,
@@ -332,7 +366,7 @@
         "status": 200,
         "final_url": "https://www.kaust.edu.sa/en/",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 85626,
+        "bytes": 85625,
         "title": "KAUST | A top research university in the Middle East",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -351,40 +385,6 @@
       },
       "extraction_score": 36,
       "recommendation": "probe-hidden-api-or-html-table"
-    },
-    {
-      "id": "baha-amanah-events",
-      "name": "Baha Municipality Events",
-      "priority": 62,
-      "url": "https://baha.gov.sa/ar/Events",
-      "trust_level": "official",
-      "fetch_method": "html-listing",
-      "candidate_gate": "extraction",
-      "intake_policy": "official-feed-preferred",
-      "signals": {
-        "http_ok": true,
-        "status": 200,
-        "final_url": "https://baha.gov.sa/ar/Events",
-        "content_type": "text/html; charset=utf-8",
-        "bytes": 194225,
-        "title": "فعاليات الباحة",
-        "blocked_reason": "bot-protection",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 19,
-        "json_or_api_hints": 14,
-        "date_snippets": [
-          "datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" as=\"style\"",
-          "datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" rel=\"stylesheet\">",
-          "calendar-alt\">",
-          "date-span\">",
-          "10 Jul 2027",
-          "dated Row -->"
-        ]
-      },
-      "extraction_score": 23,
-      "recommendation": "blocked-or-protected:bot-protection"
     },
     {
       "id": "riyadh-season",
@@ -510,7 +510,7 @@
         "content_type": "",
         "bytes": 0,
         "title": "",
-        "blocked_reason": "fetch failed Connect Timeout Error (attempted address: www.ricec.com:443, timeout: 10000ms) TypeError: fetch failed",
+        "blocked_reason": "fetch failed getaddrinfo EAI_AGAIN www.ricec.com TypeError: fetch failed",
         "structured_scripts": 0,
         "structured_events": 0,
         "google_calendar_links": 0,
@@ -519,34 +519,7 @@
         "date_snippets": []
       },
       "extraction_score": -23,
-      "recommendation": "blocked-or-protected:fetch failed Connect Timeout Error (attempted address: www.ricec.com:443, timeout: 10000ms) TypeError: fetch failed"
-    },
-    {
-      "id": "saudi-contractors-authority-events",
-      "name": "Saudi Contractors Authority Events",
-      "priority": 49,
-      "url": "https://www.sca.gov.sa/",
-      "trust_level": "official",
-      "fetch_method": "html-listing",
-      "candidate_gate": "extraction",
-      "intake_policy": "monitor-public",
-      "signals": {
-        "http_ok": false,
-        "status": 0,
-        "final_url": "https://www.sca.gov.sa/",
-        "content_type": "",
-        "bytes": 0,
-        "title": "",
-        "blocked_reason": "fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 0,
-        "date_snippets": []
-      },
-      "extraction_score": -23,
-      "recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed"
+      "recommendation": "blocked-or-protected:fetch failed getaddrinfo EAI_AGAIN www.ricec.com TypeError: fetch failed"
     },
     {
       "id": "riyadh-city-events",
@@ -574,6 +547,33 @@
       },
       "extraction_score": -23,
       "recommendation": "blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed"
+    },
+    {
+      "id": "leap-official-agendas",
+      "name": "LEAP Official Event and Agendas",
+      "priority": 77,
+      "url": "https://onegiantleap.com/",
+      "trust_level": "official",
+      "fetch_method": "html-calendar",
+      "candidate_gate": "extraction",
+      "intake_policy": "official-feed-preferred",
+      "signals": {
+        "http_ok": false,
+        "status": 403,
+        "final_url": "https://onegiantleap.com/",
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 4518,
+        "title": "Attention Required! | Cloudflare",
+        "blocked_reason": "http-403",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 0,
+        "date_snippets": []
+      },
+      "extraction_score": -23,
+      "recommendation": "blocked-or-protected:http-403"
     },
     {
       "id": "saudi-digital-academy",
@@ -616,7 +616,7 @@
         "status": 403,
         "final_url": "https://qiddiya.com/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 5987,
+        "bytes": 5962,
         "title": "Attention Required! | Cloudflare",
         "blocked_reason": "http-403",
         "structured_scripts": 0,
@@ -659,6 +659,11 @@
   ],
   "next_actions": [
     {
+      "id": "money2020-middle-east-agendas",
+      "recommendation": "build-jsonld-event-extractor",
+      "reason": "score=98, gcal=0, structured=2, links=2"
+    },
+    {
       "id": "jouf-chamber-events",
       "recommendation": "build-html-detail-extractor",
       "reason": "score=78, gcal=0, structured=0, links=26"
@@ -690,11 +695,6 @@
     },
     {
       "id": "sela-sea-expo",
-      "recommendation": "probe-hidden-api-or-html-table",
-      "reason": "score=46, gcal=0, structured=0, links=0"
-    },
-    {
-      "id": "aseer-season-asda",
       "recommendation": "probe-hidden-api-or-html-table",
       "reason": "score=46, gcal=0, structured=0, links=0"
     }

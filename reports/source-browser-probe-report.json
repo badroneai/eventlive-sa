@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T06:52:19.059Z",
+  "generated_at": "2026-07-10T08:19:59.734Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -7,15 +7,15 @@
     "selected_ids": [],
     "scope": "priority",
     "limit": 8,
-    "probed_this_run": 0,
-    "fresh_results_available": 22,
+    "probed_this_run": 8,
+    "fresh_results_available": 23,
     "wait_ms": 4500,
     "timeout_ms": 60000
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 22,
-    "browser_network_api": 11,
+    "probed": 23,
+    "browser_network_api": 9,
     "browser_hydration_payload": 0,
     "rendered_html_candidates": 6,
     "blocked_or_protected": 1,
@@ -196,189 +196,35 @@
       "name": "Ministry of Sport Events",
       "priority": 4,
       "url": "https://www.mos.gov.sa/en/media/events",
-      "final_url": "https://www.mos.gov.sa/en/media/events",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 10785,
-      "classification": "browser-network-api",
-      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
-      "title": "Events",
-      "text_bytes": 1204,
-      "html_bytes": 219275,
-      "html_snapshot": "data/raw/browser-probes/mos-events-2026-07-10T03-23-21-532Z.html",
-      "screenshot": "data/raw/browser-probes/mos-events-2026-07-10T03-23-21-532Z.png",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.mos.gov.sa/en/media/events\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 134752,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/mos-events-2026-07-10T08-19-59-734Z.html",
+      "screenshot": "data/raw/browser-probes/mos-events-2026-07-10T08-19-59-734Z.png",
       "signals": {
-        "has_next_data": true,
+        "has_next_data": false,
         "has_nuxt": false,
         "has_json_ld": false,
         "has_event_schema": false,
-        "date_snippets": [
-          "ur View Details Events Formula E Jeddah 18 DEC 2026 View Details Longines Global Champion (PlayOffs) Riyadh 18 NOV 2026 View Detail",
-          "s Rally Saudi Arabia Jeddah 11 NOV 2026 View Details Women's World Tennis Championship Final Riyadh 7 NOV 2026 View Det",
-          "rban Cycling World Championships Riyadh 3 NOV 2026 View Details AlUla Tour AlUla 27 JAN 2026 View Details UIM E1 World Championshi",
-          "p 16 JAN 2026 View Details Spanish Super Cup Jeddah 7 JAN 2026 View Details Dakar Rally 3 JAN",
-          "6 View Details Italian Super Cup Riyadh 18 DEC 2025 View Details Tennis NextGen Jeddah 17 DEC 2025 View Details Professional Fighte",
-          "League – Final Middle East Championship 5 DEC 2025 View Details 1 2 3 4 Quick Links Home Page About US Investment Opportunities Sh"
-        ],
-        "event_like_links": [
-          {
-            "text": "View Details",
-            "href": "https://www.mos.gov.sa/en/media/events/2024/10/03/spanish-super-cup"
-          },
-          {
-            "text": "View Details",
-            "href": "https://www.mos.gov.sa/en/media/events/2024/10/03/extreme-e"
-          },
-          {
-            "text": "View Details",
-            "href": "https://www.mos.gov.sa/en/media/events/2024/10/03/saudi-tour"
-          },
-          {
-            "text": "View Details",
-            "href": "https://www.mos.gov.sa/en/media/events/2026/06/15/formula-e"
-          },
-          {
-            "text": "View Details",
-            "href": "https://www.mos.gov.sa/en/media/events/2026/06/15/longines-global-%D9%A3"
-          },
-          {
-            "text": "View Details",
-            "href": "https://www.mos.gov.sa/en/media/events/2026/06/15/rally-saudi-arabia"
-          },
-          {
-            "text": "View Details",
-            "href": "https://www.mos.gov.sa/en/media/events/2026/06/15/women's-world-55"
-          },
-          {
-            "text": "View Details",
-            "href": "https://www.mos.gov.sa/en/media/events/2026/06/15/uci-urban-cycling-world-championships"
-          },
-          {
-            "text": "View Details",
-            "href": "https://www.mos.gov.sa/en/media/events/2026/05/25/alula-tour"
-          },
-          {
-            "text": "View Details",
-            "href": "https://www.mos.gov.sa/en/media/events/2026/05/25/uim-e1-world-championship"
-          },
-          {
-            "text": "View Details",
-            "href": "https://www.mos.gov.sa/en/media/events/2026/05/25/spanish-super-cup"
-          },
-          {
-            "text": "View Details",
-            "href": "https://www.mos.gov.sa/en/media/events/2026/05/25/dakar-rally"
-          },
-          {
-            "text": "View Details",
-            "href": "https://www.mos.gov.sa/en/media/events/2026/05/25/italian-super-cup"
-          },
-          {
-            "text": "View Details",
-            "href": "https://www.mos.gov.sa/en/media/events/2025/11/16/tennis-nextgen"
-          },
-          {
-            "text": "View Details",
-            "href": "https://www.mos.gov.sa/en/media/events/2025/11/16/professional-fighters-league-%E2%80%93-final-middle-east-championship"
-          },
-          {
-            "text": "Events",
-            "href": "https://www.mos.gov.sa/en/media/events"
-          }
-        ]
+        "date_snippets": [],
+        "event_like_links": []
       },
       "script_signals": {
-        "next_data_scripts": 1,
+        "next_data_scripts": 0,
         "nuxt_scripts": 0,
         "json_ld_scripts": 0,
-        "large_inline_scripts": 1
+        "large_inline_scripts": 0
       },
-      "network_total": 5,
-      "network_endpoints": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://www.mos.gov.sa/_next/data/NBcUT1ilEskm5SvCYVFyN/en/media/events/2024/10/03/spanish-super-cup.json?path=en&path=media&path=events&path=2024&path=10&path=03&path=spanish-super-cup",
-          "content_type": "",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "empty",
-          "preview": ""
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://www.mos.gov.sa/sitecore/api/graph/edge?sc_apikey=3E84E8D8-D72B-4A26-8758-5D7C19FDE9C7",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"operationName\":\"events\",\"variables\":{\"where\":{\"AND\":[{\"name\":\"_path\",\"value\":\"{9D2241D2-BA2F-4506-9125-58D149B91619}\",\"operator\":\"CONTAINS\"},{\"name\":\"_templates\",\"value\":\"{7908D0DB-7A25-4353-A4D1-95BE75B3AC1D}\",\"operator\":\"EQ\"},{\"name\":\"_language\",\"value\":\"en\"}]},\"orderBy\":{\"name\":\"Date\",\"direction\":\"DESC\"},\"first\":12,\"after\":\"MA==\"},\"query\":\"query events($where: ItemSearchPredicate!, $after: String, $first: Int, $orderBy: ItemSearchOrderByInput) {\\n search(where: $where, after: $after, first: $first, orderBy: $orderBy) {\\n total\\n pageInfo {\\n endCursor\\n hasNext\\n __typename\\n }\\n results {\\n id\\n name\\n url {\\n path\\n __typename\\n }\\n title: field(name: \\\"title\\\") {\\n value\\n __typename\\n }\\n date: field(name: \\\"Date\\\") {\\n value\\n __typename\\n }\\n city: field(name: \\\"city\\\") {\\n jsonValue\\n __typename\\n }\\n image: field(name: \\\"image\\\") {\\n jsonValue\\n __typename\\n }\\n __typename\\n }\\n __typename\\n }\\n}\"}",
-          "response_shape": "json-object:data",
-          "preview": "{\"data\":{\"item\":{\"path\":\"/sitecore/content/MOS/MOS/Home/Media/Events\",\"ancestors\":[{\"path\":\"/sitecore/content/MOS/MOS/Home/Media\",\"url\":{\"path\":\"/en/media\",\"__typename\":\"ItemUrl\"},\"pageTitle\":{\"value\":\"Media\",\"__typename\":\"TextField\"},\"isClickable\":{\"value\":\"\",\"__typename\":\"CheckboxField\"},\"navigationFilter\":{\"targetItems\":[],\"__typename\":\"MultilistField\"},\"__typename\":\"C__Page_396071eb215b47e9b55c4cd351a6fb47\"},{\"path\":\"/sitecore/content/MOS/MOS/Home\",\"url\":{\"path\":\"/en/\",\"__typename\":\"ItemUrl\"},\"pageTitle\":{\"value\":\"The Official Website of the Ministry of Sports\",\"__typename\":\"TextField\"},\"isClickable\":{\"value\":\"1\",\"__typename\":\"CheckboxField\"},\"navigationFilter\":{\"targetItems\":[],\"__typename\":\"MultilistField\"},\"__typename\":\"C__Page_396071eb215b47e9b55c4cd351a6fb47\"},{\"path\":\"/sitecore/content/MOS/MOS\",\"url\":{\"path\":\"/en/\",\"__typename\":\"ItemUrl\"},\"pageTitle\":null,\"isClickable\":null,\"navigationFilter\":null,\"__typename\":\"HeadlessSite_bf6dee913fb04afaa2334ba98ec645b4\"},{\"path\":\"/sitecore/content/MOS\",\"url\":{\"path\":\"/en/sitecore/content/mos\",\"__typename\":\"ItemUrl\"},\"pageTitle\":null,\"isClickable\":null,\"navigationFilter\":null,\"__typename\":\"HeadlessTenant_a045938f103248ac9a2183b827a955fe\"},{\"path\":\"/sitecore/content\",\"url\":{\"path\":\"/en/\",\"__typename\":\"ItemUrl\"},\"pageTitle\":null,\"isClickable\":null,\"navigationFilter\":null,\"__typename\":\"UnknownItem\"},{\"path\":\"/sitecore\",\"url\":{\"path\":\"/en/sitecore\",\"__typename\":\"ItemUrl\"},\"pageTitle\":null,\"isClickable\":null,\"navigationFilter\":null,\"__typename\":\"UnknownItem\"}],\"url\":{\"path\":\"/en/media/events\",\"__typename\":\"ItemUrl\"},\"pageTitle\":{\"value\":\"Events\",\"__typename\":\"TextField\"},\"isClickable\":{\"value\":\"1\",\"__typename\":\"CheckboxField\"},\"__typename\":\"C__Page_396071eb215b47e9b55c4cd351a6fb47\"}}}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://www.mos.gov.sa/_next/data/NBcUT1ilEskm5SvCYVFyN/en/media/events/2024/10/03/extreme-e.json?path=en&path=media&path=events&path=2024&path=10&path=03&path=extreme-e",
-          "content_type": "",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "empty",
-          "preview": ""
-        }
-      ],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://www.mos.gov.sa/_next/data/NBcUT1ilEskm5SvCYVFyN/en/media/events/2024/10/03/spanish-super-cup.json?path=en&path=media&path=events&path=2024&path=10&path=03&path=spanish-super-cup",
-          "content_type": "",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "empty",
-          "preview": ""
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://www.mos.gov.sa/_next/data/NBcUT1ilEskm5SvCYVFyN/en.json?path=en",
-          "content_type": "",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "empty",
-          "preview": ""
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://www.mos.gov.sa/sitecore/api/graph/edge?sc_apikey=3E84E8D8-D72B-4A26-8758-5D7C19FDE9C7",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"operationName\":\"events\",\"variables\":{\"where\":{\"AND\":[{\"name\":\"_path\",\"value\":\"{9D2241D2-BA2F-4506-9125-58D149B91619}\",\"operator\":\"CONTAINS\"},{\"name\":\"_templates\",\"value\":\"{7908D0DB-7A25-4353-A4D1-95BE75B3AC1D}\",\"operator\":\"EQ\"},{\"name\":\"_language\",\"value\":\"en\"}]},\"orderBy\":{\"name\":\"Date\",\"direction\":\"DESC\"},\"first\":12,\"after\":\"MA==\"},\"query\":\"query events($where: ItemSearchPredicate!, $after: String, $first: Int, $orderBy: ItemSearchOrderByInput) {\\n search(where: $where, after: $after, first: $first, orderBy: $orderBy) {\\n total\\n pageInfo {\\n endCursor\\n hasNext\\n __typename\\n }\\n results {\\n id\\n name\\n url {\\n path\\n __typename\\n }\\n title: field(name: \\\"title\\\") {\\n value\\n __typename\\n }\\n date: field(name: \\\"Date\\\") {\\n value\\n __typename\\n }\\n city: field(name: \\\"city\\\") {\\n jsonValue\\n __typename\\n }\\n image: field(name: \\\"image\\\") {\\n jsonValue\\n __typename\\n }\\n __typename\\n }\\n __typename\\n }\\n}\"}",
-          "response_shape": "json-object:data",
-          "preview": "{\"data\":{\"item\":{\"path\":\"/sitecore/content/MOS/MOS/Home/Media/Events\",\"ancestors\":[{\"path\":\"/sitecore/content/MOS/MOS/Home/Media\",\"url\":{\"path\":\"/en/media\",\"__typename\":\"ItemUrl\"},\"pageTitle\":{\"value\":\"Media\",\"__typename\":\"TextField\"},\"isClickable\":{\"value\":\"\",\"__typename\":\"CheckboxField\"},\"navigationFilter\":{\"targetItems\":[],\"__typename\":\"MultilistField\"},\"__typename\":\"C__Page_396071eb215b47e9b55c4cd351a6fb47\"},{\"path\":\"/sitecore/content/MOS/MOS/Home\",\"url\":{\"path\":\"/en/\",\"__typename\":\"ItemUrl\"},\"pageTitle\":{\"value\":\"The Official Website of the Ministry of Sports\",\"__typename\":\"TextField\"},\"isClickable\":{\"value\":\"1\",\"__typename\":\"CheckboxField\"},\"navigationFilter\":{\"targetItems\":[],\"__typename\":\"MultilistField\"},\"__typename\":\"C__Page_396071eb215b47e9b55c4cd351a6fb47\"},{\"path\":\"/sitecore/content/MOS/MOS\",\"url\":{\"path\":\"/en/\",\"__typename\":\"ItemUrl\"},\"pageTitle\":null,\"isClickable\":null,\"navigationFilter\":null,\"__typename\":\"HeadlessSite_bf6dee913fb04afaa2334ba98ec645b4\"},{\"path\":\"/sitecore/content/MOS\",\"url\":{\"path\":\"/en/sitecore/content/mos\",\"__typename\":\"ItemUrl\"},\"pageTitle\":null,\"isClickable\":null,\"navigationFilter\":null,\"__typename\":\"HeadlessTenant_a045938f103248ac9a2183b827a955fe\"},{\"path\":\"/sitecore/content\",\"url\":{\"path\":\"/en/\",\"__typename\":\"ItemUrl\"},\"pageTitle\":null,\"isClickable\":null,\"navigationFilter\":null,\"__typename\":\"UnknownItem\"},{\"path\":\"/sitecore\",\"url\":{\"path\":\"/en/sitecore\",\"__typename\":\"ItemUrl\"},\"pageTitle\":null,\"isClickable\":null,\"navigationFilter\":null,\"__typename\":\"UnknownItem\"}],\"url\":{\"path\":\"/en/media/events\",\"__typename\":\"ItemUrl\"},\"pageTitle\":{\"value\":\"Events\",\"__typename\":\"TextField\"},\"isClickable\":{\"value\":\"1\",\"__typename\":\"CheckboxField\"},\"__typename\":\"C__Page_396071eb215b47e9b55c4cd351a6fb47\"}}}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://www.mos.gov.sa/sitecore/api/graph/edge?sc_apikey=3E84E8D8-D72B-4A26-8758-5D7C19FDE9C7",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"operationName\":\"events\",\"variables\":{\"where\":{\"AND\":[{\"name\":\"_path\",\"value\":\"{9D2241D2-BA2F-4506-9125-58D149B91619}\",\"operator\":\"CONTAINS\"},{\"name\":\"_templates\",\"value\":\"{7908D0DB-7A25-4353-A4D1-95BE75B3AC1D}\",\"operator\":\"EQ\"},{\"name\":\"_language\",\"value\":\"en\"}]},\"orderBy\":{\"name\":\"Date\",\"direction\":\"DESC\"},\"first\":12,\"after\":\"MA==\"},\"query\":\"query events($where: ItemSearchPredicate!, $after: String, $first: Int, $orderBy: ItemSearchOrderByInput) {\\n search(where: $where, after: $after, first: $first, orderBy: $orderBy) {\\n total\\n pageInfo {\\n endCursor\\n hasNext\\n __typename\\n }\\n results {\\n id\\n name\\n url {\\n path\\n __typename\\n }\\n title: field(name: \\\"title\\\") {\\n value\\n __typename\\n }\\n date: field(name: \\\"Date\\\") {\\n value\\n __typename\\n }\\n city: field(name: \\\"city\\\") {\\n jsonValue\\n __typename\\n }\\n image: field(name: \\\"image\\\") {\\n jsonValue\\n __typename\\n }\\n __typename\\n }\\n __typename\\n }\\n}\"}",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"data\":{\"search\":{\"total\":43,\"pageInfo\":{\"endCursor\":\"MTI=\",\"hasNext\":true,\"__typename\":\"PageInfo\"},\"results\":[{\"id\":\"5687841F8A304272883542908FCE99B3\",\"name\":\"Formula E\",\"url\":{\"path\":\"/en/media/events/2026/06/15/formula-e\",\"__typename\":\"ItemUrl\"},\"title\":{\"value\":\"Formula E\",\"__typename\":\"TextField\"},\"date\":{\"value\":\"20261218T000000Z\",\"__typename\":\"DateField\"},\"city\":{\"jsonValue\":{\"id\":\"9fff401b-0a83-4778-b923-93c9c42ca8f8\",\"url\":\"/en/data/cities/jeddah\",\"name\":\"Jeddah\",\"displayName\":\"Jeddah\",\"fields\":{\"Title\":{\"value\":\"Jeddah\"}}},\"__typename\":\"LookupField\"},\"image\":{\"jsonValue\":{\"value\":{\"src\":\"/-/media/project/mos/mos/z9s_1533.jpg?h=2202&iar=0&w=3306&hash=2DDAB13FE7771F65EA16B68F8A26179D\",\"alt\":\"\",\"width\":\"3306\",\"height\":\"2202\"}},\"__typename\":\"ImageField\"},\"__typename\":\"Event_7908d0db7a254353a4d195be75b3ac1d\"},{\"id\":\"995C50B5AF0642508D5B03126CA0D7DC\",\"name\":\"Longines Global ٣\",\"url\":{\"path\":\"/en/media/events/2026/06/15/longines-global-%D9%A3\",\"__typename\":\"ItemUrl\"},\"title\":{\"value\":\"Longines Global Champion (PlayOffs)\",\"__typename\":\"TextField\"},\"date\":{\"value\":\"20261118T000000Z\",\"__typename\":\"DateField\"},\"city\":{\"jsonValue\":{\"id\":\"e97a9f92-5c9d-4c5a-bb94-123cce999b07\",\"url\":\"/en/data/cities/riyadh\",\"name\":\"Riyadh\",\"displayName\":\"Riyadh\",\"fields\":{\"Title\":{\"value\":\"Riyadh\"}}},\"__typename\":\"LookupField\"},\"image\":{\"jsonValue\":{\"value\":{\"src\":\"/-/media/project/mos/mos/amk10014-enhanced-nr.jpg?h=3035&iar=0&w=4552&hash=77299F9559B8221EEBC3BCC8367E7BC7\",\"alt\":\"\",\"width\":\"4552\",\"height\":\"3035\"}},\"__typename\":\"ImageField\"},\"__typename\":\"Event_7908d0db7a254353a4d195be75b3ac1d\"},{\"id\":\"0BE49E4921DD417A9BA9F4849B3E2BBD\",\"name\":\"Rally Saudi Arabia\",\"url\":{\"path\":\"/en/media/events/2026/06/15/rally-saudi-arabia\",\"__typename\":\"ItemUrl\"},\"title\":{\"value\":\"Rally Saudi Arabia\",\"__ty"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://www.mos.gov.sa/_next/data/NBcUT1ilEskm5SvCYVFyN/en/media/events/2024/10/03/extreme-e.json?path=en&path=media&path=events&path=2024&path=10&path=03&path=extreme-e",
-          "content_type": "",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "empty",
-          "preview": ""
-        }
-      ]
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
     },
     {
       "id": "experience-alula-events",
@@ -709,14 +555,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 17777,
+      "duration_ms": 19888,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "Our programs | CODE | MCIT",
       "text_bytes": 5511,
-      "html_bytes": 57070,
-      "html_snapshot": "data/raw/browser-probes/code-mcit-programs-2026-07-10T03-23-21-532Z.html",
-      "screenshot": "data/raw/browser-probes/code-mcit-programs-2026-07-10T03-23-21-532Z.png",
+      "html_bytes": 57068,
+      "html_snapshot": "data/raw/browser-probes/code-mcit-programs-2026-07-10T08-19-59-734Z.html",
+      "screenshot": "data/raw/browser-probes/code-mcit-programs-2026-07-10T08-19-59-734Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -789,15 +635,15 @@
       "final_url": "chrome-error://chromewebdata/",
       "status": "error",
       "http_status": 0,
-      "navigation_error": "page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.ithra.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.ithra.com/\", waiting until \"domcontentloaded\"\u001b[22m\n",
-      "duration_ms": 366,
+      "navigation_error": "page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.ithra.com/\nCall log:\n  - navigating to \"https://www.ithra.com/\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 154,
       "classification": "empty-or-shell",
       "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
       "title": "",
       "text_bytes": 0,
       "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/ithra-events-2026-07-10T03-23-21-532Z.html",
-      "screenshot": "data/raw/browser-probes/ithra-events-2026-07-10T03-23-21-532Z.png",
+      "html_snapshot": "data/raw/browser-probes/ithra-events-2026-07-10T08-19-59-734Z.html",
+      "screenshot": "data/raw/browser-probes/ithra-events-2026-07-10T08-19-59-734Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -821,260 +667,35 @@
       "name": "SDAIA Academy Programs",
       "priority": 25,
       "url": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx",
-      "final_url": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 10036,
-      "classification": "browser-network-api",
-      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
-      "title": "SDAIA |",
-      "text_bytes": 8396,
-      "html_bytes": 177197,
-      "html_snapshot": "data/raw/browser-probes/sdaia-academy-programs-2026-07-10T03-23-21-532Z.html",
-      "screenshot": "data/raw/browser-probes/sdaia-academy-programs-2026-07-10T03-23-21-532Z.png",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx\nCall log:\n  - navigating to \"https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 1334,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/sdaia-academy-programs-2026-07-10T08-19-59-734Z.html",
+      "screenshot": "data/raw/browser-probes/sdaia-academy-programs-2026-07-10T08-19-59-734Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
         "has_json_ld": false,
         "has_event_schema": false,
         "date_snippets": [],
-        "event_like_links": [
-          {
-            "text": "AI Scholarship Program",
-            "href": "https://sdaia.gov.sa/en/Sectors/academy/Pages/ScholarshipProgram.aspx"
-          },
-          {
-            "text": "Free Software and Services",
-            "href": "https://sdaia.gov.sa/en/Services/Pages/FreeServicesAndPrograms.aspx"
-          },
-          {
-            "text": "Calendar and Events",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx"
-          },
-          {
-            "text": "Search",
-            "href": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx#"
-          },
-          {
-            "text": "",
-            "href": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx#ctl00_PlaceHolderBanner_ContentMap_SkipLink"
-          },
-          {
-            "text": "Programs ​Details​",
-            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/academy/bootcamps/Pages/ProfessionalTrainingLargeLanguageDetails.aspx"
-          },
-          {
-            "text": "Camp ​Details​",
-            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/academy/bootcamps/Pages/CloudSystemsManagementBootcampDetails.aspx"
-          },
-          {
-            "text": "Camp ​Details​",
-            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/academy/bootcamps/Pages/AIAgentsDevelopmentGroqProgram.aspx"
-          },
-          {
-            "text": "Camp ​Details​",
-            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/academy/bootcamps/Pages/PracticalAITrainingProgram.aspx"
-          },
-          {
-            "text": "Camp ​Details​",
-            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/academy/bootcamps/Pages/ServicenowPlatformDeveloperDetails.aspx"
-          },
-          {
-            "text": "Camp Details",
-            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/academy/bootcamps/Pages/DataEngineeringBootcampDetails.aspx"
-          },
-          {
-            "text": "Pr​o​gram Details",
-            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/academy/bootcamps/Pages/BuildingAIAppDetails.aspx"
-          },
-          {
-            "text": "Programs ​Details​",
-            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/academy/bootcamps/Pages/WorkflowAIDetails.aspx"
-          },
-          {
-            "text": "Yes",
-            "href": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx#pills-first"
-          },
-          {
-            "text": "No",
-            "href": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx#pills-second"
-          },
-          {
-            "text": "Privacy Policy",
-            "href": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx#"
-          },
-          {
-            "text": "Manage Preferences",
-            "href": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx#"
-          },
-          {
-            "text": "",
-            "href": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx#?"
-          }
-        ]
+        "event_like_links": []
       },
       "script_signals": {
         "next_data_scripts": 0,
         "nuxt_scripts": 0,
         "json_ld_scripts": 0,
-        "large_inline_scripts": 1
+        "large_inline_scripts": 0
       },
-      "network_total": 10,
-      "network_endpoints": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/sectors/academy/bootcamps/pages/default.aspx&_=1783653845235",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-object:Message,Status,ErrorCode,ErrorMessage,Notifications",
-          "preview": "{\"Message\":{\"Title\":\"/en/sectors/academy/bootcamps/pages/default.aspx\",\"PageId\":\"/en/sectors/academy/bootcamps/pages/default.aspx\",\"YesCount\":\"0\",\"NoCount\":\"0\",\"TotalCount\":\"0\"},\"Status\":true,\"ErrorCode\":0,\"ErrorMessage\":null,\"Notifications\":null}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://prod17-live-chat.sprinklr.com/api/livechat/handshake/appHandshake",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "p=%7B%22appId%22%3A%226858005e3884612a4b9d8765_app_17005144%22%2C%22page%22%3A%22https%3A%2F%2Fsdaia.gov.sa%2Fen%2FSectors%2Facademy%2Fbootcamps%2FPages%2Fdefault.aspx%22%2C%22pageTitle%22%3A%22SDAIA%20%7C%22%2C%22referralPage%22%3A%22%22%2C%22timezone%22%3A%22Asia%2FRiyadh%22%2C%22userAgent%22%3A%22Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F126.0.0.0%20Safari%2F537.36%22%2C%22enforcedLocale%22%3A%22en%22%2C%22fallbackLocales%22%3A%5B%22en-US%22%5D%7D&x-chat-token=&x-user-id=undefined&x-client-id=6fcc62be-90e0-4659-8cb2-87035164db06_1_0&x-chat-appId=6858005e3884612a4b9d8765_app_17005144&x-chat-referer=https%3A%2F%2Fsdaia.gov.sa%2Fen%2FSectors%2Facademy%2Fbootcamps%2FPages%2Fdefault.aspx&x-chat-origin=https%3A%2F%2Fsdaia.gov.sa&x-chat-page-title=SDAIA%20%7C&x-chat-version=UWu0G3-5a&x-chat-sdk=Web&x-chat-skin=MODERN",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"chatSessionToken\":\"eyJhbGciOiJSUzI1NiJ9.eyJ2aXNpdFNlc3Npb25JZCI6IjZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZiIsInN1YiI6IkFjY2VzcyBUb2tlbiBHZW5lcmF0ZWQgQnkgU3ByaW5rbHIiLCJjaGF0TG9jYWxlIjoiZW4iLCJjaGF0VXNlckhhc0NvbnZlcnNhdGlvblN0YXJ0ZWQiOmZhbHNlLCJpc3MiOiJTUFJJTktMUiIsInZpc2l0U2Vzc2lvbklkRXhwaXJlQXQiOjE3ODM2OTcwNDc1MjIsInR5cCI6IkpXVCIsImlzRGVmbGVjdGlvblRva2VuIjpmYWxzZSwidXNlclNlc3Npb25Mb2dpbk1ldGhvZCI6IntcInR5cGVcIjpcIkFOT05ZTU9VU1wifSIsImNoYXRVc2VySWQiOiJBXzZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZSIsImFwcElkIjoiYXBwXzE3MDA1MTQ0Iiwic2NvcGUiOlsiUkVBRCIsIldSSVRFIl0sImNoYXRVc2VyUHJvZmlsZUNyZWF0aW9uU2tpcHBlZCI6dHJ1ZSwiZXhwIjoxNzgzNjk3MDQ3LCJhdXRoVHlwZSI6IlNQUl9LRVlfUEFTU19MT0dJTiIsImlhdCI6MTc4MzY1Mzg0NywianRpIjoiNzIwY2M0OWUtNTA3NS00YjdhLWI2ZDMtZjk2ZmU5NDU3ZWUxIiwiYW5vbnltb3VzSWQiOiJBXzZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZSIsImNsaWVudElkIjoxMDYyMiwic3RyaWN0VXNlckF1dGhlbnRpY2F0aW9uIjpmYWxzZSwidXNlcklkIjowLCJhdWQiOiJTUFJJTktMUiIsIm5iZiI6MTc4MzY1MjY0NywidmlzaXRTZXNzaW9uU3RhcnRUaW1lIjoxNzgzNjUzODQ3NTIyLCJtcXR0QWNsIjoie1wicFwiOltcInB1Ymxpc2gvQV82YTUwNjVkN2U1NTUyNzMwOWEyYTg2ZWUvcHRyLTkwMDc3LXRvcGljXCJdLFwic1wiOltcImFwcF8xNzAwNTE0NF9pbmJveC9BXzZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZVwiLFwiaW5ib3gvQV82YTUwNjVkN2U1NTUyNzMwOWEyYTg2ZWVcIl19IiwiY2hhdFVzZXJUeXBlIjoiQU5PTllNT1VTIiwicGFydG5lcklkIjo5MDA3NywidG9rZW5UeXBlIjoiQUNDRVNTIn0.H_p7WS8XSHzxUYwXTg5RSRsxCDCKBVum4zHok7Abq7ZbpLCzZsteQFdrgZMRNbB_7C5DhUe5odd2n35bzvJxQtH8bc3GtbJXRyFEXwUXFxlYtuifUMrwtsIpuRGIfMBxV49oXMWEDTgr16d4dvQ3qR9QqiSOURuJ70ICMWXtQcbfil38kWEL17ncwe3EgpIvylyGMt7JjQAAlZAaA9nq4U0J8kiRYRVXTg9Q1rsP-BEYrWjgJHYoXt1dhWxPjXv23bJhQwBVdT5jiJJbPkHGNsq7R0XB9eIzAOwCTmDGaLXErM42h_zMTMS6cFZ_6mMxzBU27ebKaIG6F3IhsUJakA\",\"anonymousInbox\":\"app_17005144_inbox/A_6a5065d7e55527309a2a86ee\",\"userInbox\":\"app_17005144_inbox/A_6a5065d7e55527309a2a86ee\",\"inboxServerUrl\":\"wss://prod1"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://prod17-live-chat.sprinklr.com/api/livechat/handshake/application/6858005e3884612a4b9d8765_app_17005144",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "x-chat-token=&x-user-id=undefined&x-client-id=6fcc62be-90e0-4659-8cb2-87035164db06_1_0&x-chat-appId=6858005e3884612a4b9d8765_app_17005144&x-chat-referer=https%3A%2F%2Fsdaia.gov.sa%2Fen%2FSectors%2Facademy%2Fbootcamps%2FPages%2Fdefault.aspx&x-chat-origin=https%3A%2F%2Fsdaia.gov.sa&x-chat-page-title=SDAIA%20%7C&x-chat-version=UWu0G3-5a&x-chat-sdk=Web",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"createdTime\":1750597726550,\"deleted\":false,\"canEdit\":false,\"id\":\"app_17005144\",\"accountId\":17005144,\"partnerId\":90077,\"name\":\"SDAIA Live Chat\",\"description\":\"SDAIA Live Chat\",\"showBrandProfile\":false,\"brandProfileImgUrl\":\"https://storage.googleapis.com/spr-prod17-cdata/90077/ACCOUNT/IMAGE/1B4DB32A426D569557A62DA6C922FE83.svg\",\"botProfileImgUrl\":\"https://storage.googleapis.com/spr-prod17-cdata/DAM/90077/182405a4-ccf0-4b14-a9f4-d22c21579203-2082760488/SDAIA_logo.svg\",\"allowedTags\":[\"target\"],\"expireAfterDuration\":10,\"expireAfterDurationUnit\":\"MINUTES\",\"enableSpeechToText\":false,\"otherConfigs\":{\"settings\":{\"hour12\":true,\"analyticsSettings\":{\"sprinklrAnalytics\":{\"enabled\":true}},\"enableSoundNotification\":true,\"enableSentry\":true,\"sendSessionActiveEvent\":false,\"maximumOpenConversations\":{\"limit\":1,\"replaceNewConversationButton\":false},\"externalLocaleData\":{\"ar\":\"https://storage.googleapis.com/spr-prod17-cdata/DAM/90077/6a231f1f-c17f-4398-8764-cfc2c34ecdcf-635854671/ar.json.json\"}},\"theme\":{\"colors\":{\"primary\":\"#1b8354\"},\"styles\":{\"chatMessage\":{\"primary\":{}},\"chatConversation\":{\"body\":{\"backgroundColor\":\"#FFFFFF\"}},\"header\":{},\"trigger\":{\"icon\":{\"type\":\"bubble\"},\"align\":\"right\",\"xPadding\":20,\"yPadding\":20,\"closeIcon\":{\"type\":\"chevron\"}}}},\"trigger\":{\"defaultHidden\":false,\"label\":\"\",\"initiallyHidden\":false},\"homeScreen\":{\"header\":{\"langVsTranslatedFieldValues\":{\"ar\":{\"title\":\"مرحبًا بك في الهيئة السعودية للبيانات والذكاء الاصطناعي - سدايا\",\"description\":\"كيف يمكننا مساعدتك اليوم؟\"}},\"title\":\"Welcome to SDAIA!\",\"description\":\"How can we help you today?\",\"logo\":\"\"},\"conversationCard\":{\"langVsTranslatedFieldValues\":{\"ar\":{\"title\":\"أبدأ الدردشة مع ممثل خدمة عملاء سدايا.\"}},\"title\":\"Start a conversation with our team of experts now!\",\"button\":{\"label\":\"New Conversation\"},\"agent"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://prod17-live-chat.sprinklr.com/api/livechat/prompt/browse/event",
-          "content_type": "",
-          "resource_type": "xhr",
-          "request_post_data": "p=%7B%22page%22%3A%22https%3A%2F%2Fsdaia.gov.sa%2Fen%2FSectors%2Facademy%2Fbootcamps%2FPages%2Fdefault.aspx%22%2C%22userAgent%22%3A%22Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F126.0.0.0%20Safari%2F537.36%22%2C%22device%22%3A%22DESKTOP%22%2C%22timeZone%22%3A%22Asia%2FRiyadh%22%2C%22eventType%22%3A%22Trigger%20visible%22%2C%22sourceType%22%3A%22LIVE_CHAT%22%7D&x-chat-token=eyJhbGciOiJSUzI1NiJ9.eyJ2aXNpdFNlc3Npb25JZCI6IjZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZiIsInN1YiI6IkFjY2VzcyBUb2tlbiBHZW5lcmF0ZWQgQnkgU3ByaW5rbHIiLCJjaGF0TG9jYWxlIjoiZW4iLCJjaGF0VXNlckhhc0NvbnZlcnNhdGlvblN0YXJ0ZWQiOmZhbHNlLCJpc3MiOiJTUFJJTktMUiIsInZpc2l0U2Vzc2lvbklkRXhwaXJlQXQiOjE3ODM2OTcwNDc1MjIsInR5cCI6IkpXVCIsImlzRGVmbGVjdGlvblRva2VuIjpmYWxzZSwidXNlclNlc3Npb25Mb2dpbk1ldGhvZCI6IntcInR5cGVcIjpcIkFOT05ZTU9VU1wifSIsImNoYXRVc2VySWQiOiJBXzZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZSIsImFwcElkIjoiYXBwXzE3MDA1MTQ0Iiwic2NvcGUiOlsiUkVBRCIsIldSSVRFIl0sImNoYXRVc2VyUHJvZmlsZUNyZWF0aW9uU2tpcHBlZCI6dHJ1ZSwiZXhwIjoxNzgzNjk3MDQ3LCJhdXRoVHlwZSI6IlNQUl9LRVlfUEFTU19MT0dJTiIsImlhdCI6MTc4MzY1Mzg0NywianRpIjoiNzIwY2M0OWUtNTA3NS00YjdhLWI2ZDMtZjk2ZmU5NDU3ZWUxIiwiYW5vbnltb3VzS",
-          "response_shape": "empty",
-          "preview": ""
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://prod17-live-chat.sprinklr.com/api/livechat/event/fetch-notifications?cursor=A_6a5065d70000000000000000",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "p=%7B%22lastActiveDiff%22%3A0%2C%22notifyUserStatusUpdate%22%3Afalse%7D&x-chat-auto=true&x-chat-token=eyJhbGciOiJSUzI1NiJ9.eyJ2aXNpdFNlc3Npb25JZCI6IjZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZiIsInN1YiI6IkFjY2VzcyBUb2tlbiBHZW5lcmF0ZWQgQnkgU3ByaW5rbHIiLCJjaGF0TG9jYWxlIjoiZW4iLCJjaGF0VXNlckhhc0NvbnZlcnNhdGlvblN0YXJ0ZWQiOmZhbHNlLCJpc3MiOiJTUFJJTktMUiIsInZpc2l0U2Vzc2lvbklkRXhwaXJlQXQiOjE3ODM2OTcwNDc1MjIsInR5cCI6IkpXVCIsImlzRGVmbGVjdGlvblRva2VuIjpmYWxzZSwidXNlclNlc3Npb25Mb2dpbk1ldGhvZCI6IntcInR5cGVcIjpcIkFOT05ZTU9VU1wifSIsImNoYXRVc2VySWQiOiJBXzZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZSIsImFwcElkIjoiYXBwXzE3MDA1MTQ0Iiwic2NvcGUiOlsiUkVBRCIsIldSSVRFIl0sImNoYXRVc2VyUHJvZmlsZUNyZWF0aW9uU2tpcHBlZCI6dHJ1ZSwiZXhwIjoxNzgzNjk3MDQ3LCJhdXRoVHlwZSI6IlNQUl9LRVlfUEFTU19MT0dJTiIsImlhdCI6MTc4MzY1Mzg0NywianRpIjoiNzIwY2M0OWUtNTA3NS00YjdhLWI2ZDMtZjk2ZmU5NDU3ZWUxIiwiYW5vbnltb3VzSWQiOiJBXzZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZSIsImNsaWVudElkIjoxMDYyMiwic3RyaWN0VXNlckF1dGhlbnRpY2F0aW9uIjpmYWxzZSwidXNlcklkIjowLCJhdWQiOiJTUFJJTktMUiIsIm5iZiI6MTc4MzY1MjY0NywidmlzaXRTZXNzaW9uU3RhcnRUaW1lIjoxNzgzNjUzODQ3NTIyLCJtcXR0QWNsIjoie1wicFwiOltcInB1Ymxpc2gvQV82YTUwNjVkN2U1NTUyNzMwOWEyYTg2ZWUvcHRyLTkwMDc3LXRvcGljXCJdLFwic1wiOltcImFwcF8xNzAwNTE0NF9pbmJve",
-          "response_shape": "json-object:results,hasMore,totalCount,beforeCursor,afterCursor,details",
-          "preview": "{\"results\":[],\"hasMore\":false,\"totalCount\":0,\"beforeCursor\":\"B_6a5065d70000000000000001\",\"afterCursor\":\"A_6a5065d70000000000000000\",\"details\":{\"SERVER_TIMESTAMP\":1783653849028}}"
-        }
-      ],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaformapi/api/user/GetNafathInfo?_=1783653845233",
-          "content_type": "text/html",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "html",
-          "preview": "<html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your administrator.<br><br>Your support ID is: 13811971062290138134<br><br><a href='javascript:history.back();'>[Go Back]</a></body></html>"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaapi/api/home/geteninternalpagenavdata?_=1783653845232",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"Data\":{\"menu\":[{\"id\":1,\"title\":\"Home\",\"url\":\"/en/default.aspx\",\"hasChild\":\"false\",\"itemSort\":\"1\",\"layout\":null,\"show\":\"true\",\"level2\":[],\"error\":false},{\"id\":2,\"title\":\"SDAIA\",\"url\":\"/en/SDAIA/Pages/default.aspx\",\"hasChild\":\"true\",\"itemSort\":\"2\",\"layout\":\"Grid\",\"show\":\"true\",\"level2\":[{\"id\":1,\"title\":\"About SDAIA\",\"url\":\"/en/SDAIA/about/Pages/default.aspx\",\"menuLevel1\":\"SDAIA\",\"itemSort\":\"1\",\"icon\":\"fal fa-buildings\",\"level3\":[{\"title\":\"About SDAIA\",\"url\":\"/en/SDAIA/about/Pages/About.aspx\",\"itemSort\":\"1\",\"icon\":\"fal fa-buildings\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Board of Directors\",\"url\":\"/en/SDAIA/about/Pages/directorsBoard.aspx\",\"itemSort\":\"2\",\"icon\":\"fal fa-id-card\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Organizational Structure\",\"url\":\"/en/SDAIA/about/Pages/organizationalStructure.aspx\",\"itemSort\":\"3\",\"icon\":\"fal fa-diagram-project\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Budget and Spending\",\"url\":\"/en/SDAIA/about/Pages/Budget.aspx\",\"itemSort\":\"4\",\"icon\":\"fal fa-coins\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Competitions and Purchases\",\"url\":\"/en/SDAIA/about/Pages/CompetitionsAndPurchases.aspx\",\"itemSort\":\"5\",\"icon\":\"fal fa-flag-checkered\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Achievements\",\"url\":\"/en/SDAIA/about/Pages/Achievements.aspx\",\"itemSort\":\"6\",\"icon\":\"fal fa-ballot-check\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Laws and Regulations\",\"url\":\"/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx\",\"itemSort\":\"7\",\"icon\":\"fal fa-clipboard-check\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Artificial Intelligence\",\"url\":\"/en/SDAIA/about/Pages/AboutAI.aspx\",\"itemSort\":\"8\",\"i"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/sectors/academy/bootcamps/pages/default.aspx&_=1783653845235",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-object:Message,Status,ErrorCode,ErrorMessage,Notifications",
-          "preview": "{\"Message\":{\"Title\":\"/en/sectors/academy/bootcamps/pages/default.aspx\",\"PageId\":\"/en/sectors/academy/bootcamps/pages/default.aspx\",\"YesCount\":\"0\",\"NoCount\":\"0\",\"TotalCount\":\"0\"},\"Status\":true,\"ErrorCode\":0,\"ErrorMessage\":null,\"Notifications\":null}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://prod17-live-chat.sprinklr.com/api/livechat/handshake/widget/6858005e3884612a4b9d8765_app_17005144",
-          "content_type": "application/javascript",
-          "resource_type": "script",
-          "request_post_data": "",
-          "response_shape": "html",
-          "preview": "!function(){var e=document.createElement(\"iframe\");e.id=\"spr-live-chat-frame\",e.name=\"spr-live-chat-frame\",e.title=\"Sprinklr live chat\",e.style.visibility=\"hidden\",e.style.border=\"none\",e.style.position=\"absolute\",e.style.top=\"0\",e.style.left=\"0\",e.style.height=\"0\",e.style.width=\"0\",document.body.appendChild(e);var t=window.document&&(window.document.querySelector(\"[nonce]\")||window.document.querySelector(\"script[data-spr-nonce]\"));if(t)var r=t.nonce||t.getAttribute(\"nonce\")||t.getAttribute(\"data-spr-nonce\");var n,o,d,i,a=\"<!DOCTYPE html><html><head><link rel=\\\"preconnect\\\" href=\\\"https://prod17-live-chat.sprinklr.com\\\" crossorigin=\\\"\\\" /><link rel=\\\"dns-prefetch\\\" href=\\\"https://prod17-live-chat.sprinklr.com\\\" crossorigin=\\\"\\\" /><script ATTR>var e=new RegExp('((CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS)[ +]+(15[_.]0|15[_.]([1-9]|\\\\\\\\d{2,})|15[_.]8|15[_.](9|\\\\\\\\d{2,})|(1[6-9]|[2-9]\\\\\\\\d|\\\\\\\\d{3,})[_.]\\\\\\\\d+|16[_.]0|16[_.]([1-9]|\\\\\\\\d{2,})|(1[7-9]|[2-9]\\\\\\\\d|\\\\\\\\d{3,})[_.]\\\\\\\\d+|17[_.]0|17[_.]([1-9]|\\\\\\\\d{2,})|(1[8-9]|[2-9]\\\\\\\\d|\\\\\\\\d{3,})[_.]\\\\\\\\d+)(?:[_.]\\\\\\\\d+)?)|((Chromium|Chrome)\\\\\\\\/(95\\\\\\\\.0|95\\\\\\\\.([1-9]|\\\\\\\\d{2,})|(9[6-9]|\\\\\\\\d{3,})\\\\\\\\.\\\\\\\\d+)(?:\\\\\\\\.\\\\\\\\d+)?)|(Version\\\\\\\\/(15\\\\\\\\.0|15\\\\\\\\.([1-9]|\\\\\\\\d{2,})|(1[6-9]|[2-9]\\\\\\\\d|\\\\\\\\d{3,})\\\\\\\\.\\\\\\\\d+|16\\\\\\\\.0|16\\\\\\\\.([1-9]|\\\\\\\\d{2,})|(1[7-9]|[2-9]\\\\\\\\d|\\\\\\\\d{3,})\\\\\\\\.\\\\\\\\d+|17\\\\\\\\.0|17\\\\\\\\.([1-9]|\\\\\\\\d{2,})|(1[8-9]|[2-9]\\\\\\\\d|\\\\\\\\d{3,})\\\\\\\\.\\\\\\\\d+)(?:\\\\\\\\.\\\\\\\\d+)? Safari\\\\\\\\/)').test(navigator.userAgent),o=e?'https://live-chat-gcp-prod17.sprinklr.com/chat/UWu0G3-5a/static/js/modern/vendor.ae9485dd.js':'https://live-chat-gcp-prod17.sprinklr.com/chat/UWu0G3-5a/static/js/legacy/vendor.ae9485dd.js',a=e?'https://live-chat-gcp-prod17.sprinklr.com/chat/UWu0G3-5a/static/js/modern/main.80cf55c6.js':'https://live-c"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://prod17-live-chat.sprinklr.com/api/livechat/handshake/appHandshake",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "p=%7B%22appId%22%3A%226858005e3884612a4b9d8765_app_17005144%22%2C%22page%22%3A%22https%3A%2F%2Fsdaia.gov.sa%2Fen%2FSectors%2Facademy%2Fbootcamps%2FPages%2Fdefault.aspx%22%2C%22pageTitle%22%3A%22SDAIA%20%7C%22%2C%22referralPage%22%3A%22%22%2C%22timezone%22%3A%22Asia%2FRiyadh%22%2C%22userAgent%22%3A%22Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F126.0.0.0%20Safari%2F537.36%22%2C%22enforcedLocale%22%3A%22en%22%2C%22fallbackLocales%22%3A%5B%22en-US%22%5D%7D&x-chat-token=&x-user-id=undefined&x-client-id=6fcc62be-90e0-4659-8cb2-87035164db06_1_0&x-chat-appId=6858005e3884612a4b9d8765_app_17005144&x-chat-referer=https%3A%2F%2Fsdaia.gov.sa%2Fen%2FSectors%2Facademy%2Fbootcamps%2FPages%2Fdefault.aspx&x-chat-origin=https%3A%2F%2Fsdaia.gov.sa&x-chat-page-title=SDAIA%20%7C&x-chat-version=UWu0G3-5a&x-chat-sdk=Web&x-chat-skin=MODERN",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"chatSessionToken\":\"eyJhbGciOiJSUzI1NiJ9.eyJ2aXNpdFNlc3Npb25JZCI6IjZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZiIsInN1YiI6IkFjY2VzcyBUb2tlbiBHZW5lcmF0ZWQgQnkgU3ByaW5rbHIiLCJjaGF0TG9jYWxlIjoiZW4iLCJjaGF0VXNlckhhc0NvbnZlcnNhdGlvblN0YXJ0ZWQiOmZhbHNlLCJpc3MiOiJTUFJJTktMUiIsInZpc2l0U2Vzc2lvbklkRXhwaXJlQXQiOjE3ODM2OTcwNDc1MjIsInR5cCI6IkpXVCIsImlzRGVmbGVjdGlvblRva2VuIjpmYWxzZSwidXNlclNlc3Npb25Mb2dpbk1ldGhvZCI6IntcInR5cGVcIjpcIkFOT05ZTU9VU1wifSIsImNoYXRVc2VySWQiOiJBXzZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZSIsImFwcElkIjoiYXBwXzE3MDA1MTQ0Iiwic2NvcGUiOlsiUkVBRCIsIldSSVRFIl0sImNoYXRVc2VyUHJvZmlsZUNyZWF0aW9uU2tpcHBlZCI6dHJ1ZSwiZXhwIjoxNzgzNjk3MDQ3LCJhdXRoVHlwZSI6IlNQUl9LRVlfUEFTU19MT0dJTiIsImlhdCI6MTc4MzY1Mzg0NywianRpIjoiNzIwY2M0OWUtNTA3NS00YjdhLWI2ZDMtZjk2ZmU5NDU3ZWUxIiwiYW5vbnltb3VzSWQiOiJBXzZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZSIsImNsaWVudElkIjoxMDYyMiwic3RyaWN0VXNlckF1dGhlbnRpY2F0aW9uIjpmYWxzZSwidXNlcklkIjowLCJhdWQiOiJTUFJJTktMUiIsIm5iZiI6MTc4MzY1MjY0NywidmlzaXRTZXNzaW9uU3RhcnRUaW1lIjoxNzgzNjUzODQ3NTIyLCJtcXR0QWNsIjoie1wicFwiOltcInB1Ymxpc2gvQV82YTUwNjVkN2U1NTUyNzMwOWEyYTg2ZWUvcHRyLTkwMDc3LXRvcGljXCJdLFwic1wiOltcImFwcF8xNzAwNTE0NF9pbmJveC9BXzZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZVwiLFwiaW5ib3gvQV82YTUwNjVkN2U1NTUyNzMwOWEyYTg2ZWVcIl19IiwiY2hhdFVzZXJUeXBlIjoiQU5PTllNT1VTIiwicGFydG5lcklkIjo5MDA3NywidG9rZW5UeXBlIjoiQUNDRVNTIn0.H_p7WS8XSHzxUYwXTg5RSRsxCDCKBVum4zHok7Abq7ZbpLCzZsteQFdrgZMRNbB_7C5DhUe5odd2n35bzvJxQtH8bc3GtbJXRyFEXwUXFxlYtuifUMrwtsIpuRGIfMBxV49oXMWEDTgr16d4dvQ3qR9QqiSOURuJ70ICMWXtQcbfil38kWEL17ncwe3EgpIvylyGMt7JjQAAlZAaA9nq4U0J8kiRYRVXTg9Q1rsP-BEYrWjgJHYoXt1dhWxPjXv23bJhQwBVdT5jiJJbPkHGNsq7R0XB9eIzAOwCTmDGaLXErM42h_zMTMS6cFZ_6mMxzBU27ebKaIG6F3IhsUJakA\",\"anonymousInbox\":\"app_17005144_inbox/A_6a5065d7e55527309a2a86ee\",\"userInbox\":\"app_17005144_inbox/A_6a5065d7e55527309a2a86ee\",\"inboxServerUrl\":\"wss://prod1"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://prod17-live-chat.sprinklr.com/api/livechat/handshake/application/6858005e3884612a4b9d8765_app_17005144",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "x-chat-token=&x-user-id=undefined&x-client-id=6fcc62be-90e0-4659-8cb2-87035164db06_1_0&x-chat-appId=6858005e3884612a4b9d8765_app_17005144&x-chat-referer=https%3A%2F%2Fsdaia.gov.sa%2Fen%2FSectors%2Facademy%2Fbootcamps%2FPages%2Fdefault.aspx&x-chat-origin=https%3A%2F%2Fsdaia.gov.sa&x-chat-page-title=SDAIA%20%7C&x-chat-version=UWu0G3-5a&x-chat-sdk=Web",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"createdTime\":1750597726550,\"deleted\":false,\"canEdit\":false,\"id\":\"app_17005144\",\"accountId\":17005144,\"partnerId\":90077,\"name\":\"SDAIA Live Chat\",\"description\":\"SDAIA Live Chat\",\"showBrandProfile\":false,\"brandProfileImgUrl\":\"https://storage.googleapis.com/spr-prod17-cdata/90077/ACCOUNT/IMAGE/1B4DB32A426D569557A62DA6C922FE83.svg\",\"botProfileImgUrl\":\"https://storage.googleapis.com/spr-prod17-cdata/DAM/90077/182405a4-ccf0-4b14-a9f4-d22c21579203-2082760488/SDAIA_logo.svg\",\"allowedTags\":[\"target\"],\"expireAfterDuration\":10,\"expireAfterDurationUnit\":\"MINUTES\",\"enableSpeechToText\":false,\"otherConfigs\":{\"settings\":{\"hour12\":true,\"analyticsSettings\":{\"sprinklrAnalytics\":{\"enabled\":true}},\"enableSoundNotification\":true,\"enableSentry\":true,\"sendSessionActiveEvent\":false,\"maximumOpenConversations\":{\"limit\":1,\"replaceNewConversationButton\":false},\"externalLocaleData\":{\"ar\":\"https://storage.googleapis.com/spr-prod17-cdata/DAM/90077/6a231f1f-c17f-4398-8764-cfc2c34ecdcf-635854671/ar.json.json\"}},\"theme\":{\"colors\":{\"primary\":\"#1b8354\"},\"styles\":{\"chatMessage\":{\"primary\":{}},\"chatConversation\":{\"body\":{\"backgroundColor\":\"#FFFFFF\"}},\"header\":{},\"trigger\":{\"icon\":{\"type\":\"bubble\"},\"align\":\"right\",\"xPadding\":20,\"yPadding\":20,\"closeIcon\":{\"type\":\"chevron\"}}}},\"trigger\":{\"defaultHidden\":false,\"label\":\"\",\"initiallyHidden\":false},\"homeScreen\":{\"header\":{\"langVsTranslatedFieldValues\":{\"ar\":{\"title\":\"مرحبًا بك في الهيئة السعودية للبيانات والذكاء الاصطناعي - سدايا\",\"description\":\"كيف يمكننا مساعدتك اليوم؟\"}},\"title\":\"Welcome to SDAIA!\",\"description\":\"How can we help you today?\",\"logo\":\"\"},\"conversationCard\":{\"langVsTranslatedFieldValues\":{\"ar\":{\"title\":\"أبدأ الدردشة مع ممثل خدمة عملاء سدايا.\"}},\"title\":\"Start a conversation with our team of experts now!\",\"button\":{\"label\":\"New Conversation\"},\"agent"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://prod17-live-chat.sprinklr.com/api/livechat/prompt/browse/event",
-          "content_type": "",
-          "resource_type": "xhr",
-          "request_post_data": "p=%7B%22page%22%3A%22https%3A%2F%2Fsdaia.gov.sa%2Fen%2FSectors%2Facademy%2Fbootcamps%2FPages%2Fdefault.aspx%22%2C%22userAgent%22%3A%22Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F126.0.0.0%20Safari%2F537.36%22%2C%22device%22%3A%22DESKTOP%22%2C%22timeZone%22%3A%22Asia%2FRiyadh%22%2C%22eventType%22%3A%22Trigger%20visible%22%2C%22sourceType%22%3A%22LIVE_CHAT%22%7D&x-chat-token=eyJhbGciOiJSUzI1NiJ9.eyJ2aXNpdFNlc3Npb25JZCI6IjZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZiIsInN1YiI6IkFjY2VzcyBUb2tlbiBHZW5lcmF0ZWQgQnkgU3ByaW5rbHIiLCJjaGF0TG9jYWxlIjoiZW4iLCJjaGF0VXNlckhhc0NvbnZlcnNhdGlvblN0YXJ0ZWQiOmZhbHNlLCJpc3MiOiJTUFJJTktMUiIsInZpc2l0U2Vzc2lvbklkRXhwaXJlQXQiOjE3ODM2OTcwNDc1MjIsInR5cCI6IkpXVCIsImlzRGVmbGVjdGlvblRva2VuIjpmYWxzZSwidXNlclNlc3Npb25Mb2dpbk1ldGhvZCI6IntcInR5cGVcIjpcIkFOT05ZTU9VU1wifSIsImNoYXRVc2VySWQiOiJBXzZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZSIsImFwcElkIjoiYXBwXzE3MDA1MTQ0Iiwic2NvcGUiOlsiUkVBRCIsIldSSVRFIl0sImNoYXRVc2VyUHJvZmlsZUNyZWF0aW9uU2tpcHBlZCI6dHJ1ZSwiZXhwIjoxNzgzNjk3MDQ3LCJhdXRoVHlwZSI6IlNQUl9LRVlfUEFTU19MT0dJTiIsImlhdCI6MTc4MzY1Mzg0NywianRpIjoiNzIwY2M0OWUtNTA3NS00YjdhLWI2ZDMtZjk2ZmU5NDU3ZWUxIiwiYW5vbnltb3VzS",
-          "response_shape": "empty",
-          "preview": ""
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://prod17-live-chat.sprinklr.com/api/livechat/prompt/browse/event",
-          "content_type": "",
-          "resource_type": "xhr",
-          "request_post_data": "p=%7B%22page%22%3A%22https%3A%2F%2Fsdaia.gov.sa%2Fen%2FSectors%2Facademy%2Fbootcamps%2FPages%2Fdefault.aspx%22%2C%22userAgent%22%3A%22Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F126.0.0.0%20Safari%2F537.36%22%2C%22device%22%3A%22DESKTOP%22%2C%22timeZone%22%3A%22Asia%2FRiyadh%22%2C%22eventType%22%3A%22Trigger%20visible%22%2C%22sourceType%22%3A%22LIVE_CHAT%22%7D&x-chat-token=eyJhbGciOiJSUzI1NiJ9.eyJ2aXNpdFNlc3Npb25JZCI6IjZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZiIsInN1YiI6IkFjY2VzcyBUb2tlbiBHZW5lcmF0ZWQgQnkgU3ByaW5rbHIiLCJjaGF0TG9jYWxlIjoiZW4iLCJjaGF0VXNlckhhc0NvbnZlcnNhdGlvblN0YXJ0ZWQiOmZhbHNlLCJpc3MiOiJTUFJJTktMUiIsInZpc2l0U2Vzc2lvbklkRXhwaXJlQXQiOjE3ODM2OTcwNDc1MjIsInR5cCI6IkpXVCIsImlzRGVmbGVjdGlvblRva2VuIjpmYWxzZSwidXNlclNlc3Npb25Mb2dpbk1ldGhvZCI6IntcInR5cGVcIjpcIkFOT05ZTU9VU1wifSIsImNoYXRVc2VySWQiOiJBXzZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZSIsImFwcElkIjoiYXBwXzE3MDA1MTQ0Iiwic2NvcGUiOlsiUkVBRCIsIldSSVRFIl0sImNoYXRVc2VyUHJvZmlsZUNyZWF0aW9uU2tpcHBlZCI6dHJ1ZSwiZXhwIjoxNzgzNjk3MDQ3LCJhdXRoVHlwZSI6IlNQUl9LRVlfUEFTU19MT0dJTiIsImlhdCI6MTc4MzY1Mzg0NywianRpIjoiNzIwY2M0OWUtNTA3NS00YjdhLWI2ZDMtZjk2ZmU5NDU3ZWUxIiwiYW5vbnltb3VzS",
-          "response_shape": "empty",
-          "preview": ""
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://prod17-live-chat.sprinklr.com/api/livechat/conversation/fetch?sortKey=lastInteractionTime",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "x-chat-token=eyJhbGciOiJSUzI1NiJ9.eyJ2aXNpdFNlc3Npb25JZCI6IjZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZiIsInN1YiI6IkFjY2VzcyBUb2tlbiBHZW5lcmF0ZWQgQnkgU3ByaW5rbHIiLCJjaGF0TG9jYWxlIjoiZW4iLCJjaGF0VXNlckhhc0NvbnZlcnNhdGlvblN0YXJ0ZWQiOmZhbHNlLCJpc3MiOiJTUFJJTktMUiIsInZpc2l0U2Vzc2lvbklkRXhwaXJlQXQiOjE3ODM2OTcwNDc1MjIsInR5cCI6IkpXVCIsImlzRGVmbGVjdGlvblRva2VuIjpmYWxzZSwidXNlclNlc3Npb25Mb2dpbk1ldGhvZCI6IntcInR5cGVcIjpcIkFOT05ZTU9VU1wifSIsImNoYXRVc2VySWQiOiJBXzZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZSIsImFwcElkIjoiYXBwXzE3MDA1MTQ0Iiwic2NvcGUiOlsiUkVBRCIsIldSSVRFIl0sImNoYXRVc2VyUHJvZmlsZUNyZWF0aW9uU2tpcHBlZCI6dHJ1ZSwiZXhwIjoxNzgzNjk3MDQ3LCJhdXRoVHlwZSI6IlNQUl9LRVlfUEFTU19MT0dJTiIsImlhdCI6MTc4MzY1Mzg0NywianRpIjoiNzIwY2M0OWUtNTA3NS00YjdhLWI2ZDMtZjk2ZmU5NDU3ZWUxIiwiYW5vbnltb3VzSWQiOiJBXzZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZSIsImNsaWVudElkIjoxMDYyMiwic3RyaWN0VXNlckF1dGhlbnRpY2F0aW9uIjpmYWxzZSwidXNlcklkIjowLCJhdWQiOiJTUFJJTktMUiIsIm5iZiI6MTc4MzY1MjY0NywidmlzaXRTZXNzaW9uU3RhcnRUaW1lIjoxNzgzNjUzODQ3NTIyLCJtcXR0QWNsIjoie1wicFwiOltcInB1Ymxpc2gvQV82YTUwNjVkN2U1NTUyNzMwOWEyYTg2ZWUvcHRyLTkwMDc3LXRvcGljXCJdLFwic1wiOltcImFwcF8xNzAwNTE0NF9pbmJveC9BXzZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZVwiLFwiaW5ib3gvQV82YTUwNjVkN2U1NTUyNzMwOWEyYTg2ZWVcIl",
-          "response_shape": "json-object:results,hasMore,totalCount,before,after",
-          "preview": "{\"results\":[],\"hasMore\":false,\"totalCount\":0,\"before\":1783653847913,\"after\":1783653847912}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://prod17-live-chat.sprinklr.com/api/livechat/event/fetch-notifications?cursor=A_6a5065d70000000000000000",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "p=%7B%22lastActiveDiff%22%3A0%2C%22notifyUserStatusUpdate%22%3Afalse%7D&x-chat-auto=true&x-chat-token=eyJhbGciOiJSUzI1NiJ9.eyJ2aXNpdFNlc3Npb25JZCI6IjZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZiIsInN1YiI6IkFjY2VzcyBUb2tlbiBHZW5lcmF0ZWQgQnkgU3ByaW5rbHIiLCJjaGF0TG9jYWxlIjoiZW4iLCJjaGF0VXNlckhhc0NvbnZlcnNhdGlvblN0YXJ0ZWQiOmZhbHNlLCJpc3MiOiJTUFJJTktMUiIsInZpc2l0U2Vzc2lvbklkRXhwaXJlQXQiOjE3ODM2OTcwNDc1MjIsInR5cCI6IkpXVCIsImlzRGVmbGVjdGlvblRva2VuIjpmYWxzZSwidXNlclNlc3Npb25Mb2dpbk1ldGhvZCI6IntcInR5cGVcIjpcIkFOT05ZTU9VU1wifSIsImNoYXRVc2VySWQiOiJBXzZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZSIsImFwcElkIjoiYXBwXzE3MDA1MTQ0Iiwic2NvcGUiOlsiUkVBRCIsIldSSVRFIl0sImNoYXRVc2VyUHJvZmlsZUNyZWF0aW9uU2tpcHBlZCI6dHJ1ZSwiZXhwIjoxNzgzNjk3MDQ3LCJhdXRoVHlwZSI6IlNQUl9LRVlfUEFTU19MT0dJTiIsImlhdCI6MTc4MzY1Mzg0NywianRpIjoiNzIwY2M0OWUtNTA3NS00YjdhLWI2ZDMtZjk2ZmU5NDU3ZWUxIiwiYW5vbnltb3VzSWQiOiJBXzZhNTA2NWQ3ZTU1NTI3MzA5YTJhODZlZSIsImNsaWVudElkIjoxMDYyMiwic3RyaWN0VXNlckF1dGhlbnRpY2F0aW9uIjpmYWxzZSwidXNlcklkIjowLCJhdWQiOiJTUFJJTktMUiIsIm5iZiI6MTc4MzY1MjY0NywidmlzaXRTZXNzaW9uU3RhcnRUaW1lIjoxNzgzNjUzODQ3NTIyLCJtcXR0QWNsIjoie1wicFwiOltcInB1Ymxpc2gvQV82YTUwNjVkN2U1NTUyNzMwOWEyYTg2ZWUvcHRyLTkwMDc3LXRvcGljXCJdLFwic1wiOltcImFwcF8xNzAwNTE0NF9pbmJve",
-          "response_shape": "json-object:results,hasMore,totalCount,beforeCursor,afterCursor,details",
-          "preview": "{\"results\":[],\"hasMore\":false,\"totalCount\":0,\"beforeCursor\":\"B_6a5065d70000000000000001\",\"afterCursor\":\"A_6a5065d70000000000000000\",\"details\":{\"SERVER_TIMESTAMP\":1783653849028}}"
-        }
-      ]
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
     },
     {
       "id": "misk-hub-events",
@@ -1085,28 +706,28 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 12334,
+      "duration_ms": 10171,
       "classification": "browser-network-api",
       "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
       "title": "Misk Hub Events",
-      "text_bytes": 2150,
-      "html_bytes": 248239,
-      "html_snapshot": "data/raw/browser-probes/misk-hub-events-2026-07-10T03-23-21-532Z.html",
-      "screenshot": "data/raw/browser-probes/misk-hub-events-2026-07-10T03-23-21-532Z.png",
+      "text_bytes": 2610,
+      "html_bytes": 248298,
+      "html_snapshot": "data/raw/browser-probes/misk-hub-events-2026-07-10T08-19-59-734Z.html",
+      "screenshot": "data/raw/browser-probes/misk-hub-events-2026-07-10T08-19-59-734Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
         "has_json_ld": false,
         "has_event_schema": false,
         "date_snippets": [
-          "Insights العربية Sign in Skills Offline 08 May 2026 How to Choose Your Career Path and Keep Up with Labor Market Changes The Misk C",
+          "Insights العربية Sign in Skills Online 01 Jul 2026 Cybersecurity in the Workplace Within the Misk Career Essentials Program, we pr",
+          "closing on 1st July 2026 Skills Offline 08 May 2026 How to Choose Your Career Path and Keep Up with Labor Market Changes The Misk C",
           "d Cybersecurity in the Workplace Arabic 01 Jul 2026 7:00 pm : 8:00 pm More Details Hybrid Test Form Karachi English,Arabic 21 Jan -",
           "31 Dec 2026 10:11 : 10:11 More Details Online This event has Passed Enhancing Efficiency an",
           "ce Using Artificial Intelligence Arabic 08 May 2026 9:00 pm : 10:00 pm More Details Online This event has Passed How to Choose Your",
           "eep Up with Labor Market Changes Arabic 08 May 2026 8:00 pm : 9:00 pm More Details Online This event has Passed Workforce Skills in",
           "e Age of Artificial Intelligence Arabic 08 May 2026 7:00 pm : 8:00 pm More Details Online This event has Passed How do we build our",
-          "s and discover our career paths? Arabic 03 May 2026 8:00 pm : 9:00 pm More Details Online This event has Passed Lead Organizational",
-          "e Age of Artificial Intelligence Arabic 13 Apr 2026 7:00 pm : 8:00 pm More Details Online This event has Passed From Idea to Produc"
+          "s and discover our career paths? Arabic 03 May 2026 8:00 pm : 9:00 pm More Details Online This event has Passed Lead Organizational"
         ],
         "event_like_links": [
           {
@@ -1215,19 +836,19 @@
           "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
           "content_type": "application/json",
           "resource_type": "fetch",
-          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_d9df0f5d0ebc35a5e8965fcf27a3f8ec12017f42863762d46360bfeef220817e\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783653856599.632477787649207682\"}",
+          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_d16920ef39ff27d92d37d1c710d0e2142900fbd07103df89f025bdb4b456044a\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783671762671.667707062623017926\"}",
           "response_shape": "empty",
           "preview": ""
         },
         {
           "method": "POST",
           "status": 200,
-          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/d7b7714edd604851bef8fb6e408d2c2b/items/?frontend_timestamp=1783653855&frontend_sign=cdf9d4f6f3ce65113bf7d7d2cc159a984d9a60d4",
+          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/b404126235a24888be490c0381d3f335/items/?frontend_timestamp=1783671762&frontend_sign=598343a9bf2fd8d0c59a234e77a43276102b1816",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
           "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
-          "preview": "{\"recommId\": \"56633710e9411f3a01c1ebd850ef4a9e\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
+          "preview": "{\"recommId\": \"3a086ec04bcf5d80234d0f5f28fa4064\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
         }
       ],
       "network_sample": [
@@ -1247,9 +868,19 @@
           "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
           "content_type": "application/json",
           "resource_type": "fetch",
-          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_d9df0f5d0ebc35a5e8965fcf27a3f8ec12017f42863762d46360bfeef220817e\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783653856599.632477787649207682\"}",
+          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_d16920ef39ff27d92d37d1c710d0e2142900fbd07103df89f025bdb4b456044a\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783671762671.667707062623017926\"}",
           "response_shape": "empty",
           "preview": ""
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/b404126235a24888be490c0381d3f335/items/?frontend_timestamp=1783671762&frontend_sign=598343a9bf2fd8d0c59a234e77a43276102b1816",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
+          "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
+          "preview": "{\"recommId\": \"3a086ec04bcf5d80234d0f5f28fa4064\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
         },
         {
           "method": "POST",
@@ -1257,19 +888,9 @@
           "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
           "content_type": "application/json",
           "resource_type": "fetch",
-          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_d9df0f5d0ebc35a5e8965fcf27a3f8ec12017f42863762d46360bfeef220817e\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783653856599.632477787649207682\"}",
+          "request_post_data": "{\"event_name\":\"PageView\",\"fb.dynamic_product_ads\":{},\"custom_data\":{},\"event_id\":\"ob3_plugin-set_49a7f2f7a6d415851e175aba5258e090590458fb16d2d4e73c7f8a9bcad2efec\",\"fb.pixel_id\":\"1038245586939616\",\"fb.advanced_matching\":{},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1783671762671.667707062623017926\"}",
           "response_shape": "empty",
           "preview": ""
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/d7b7714edd604851bef8fb6e408d2c2b/items/?frontend_timestamp=1783653855&frontend_sign=cdf9d4f6f3ce65113bf7d7d2cc159a984d9a60d4",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
-          "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
-          "preview": "{\"recommId\": \"56633710e9411f3a01c1ebd850ef4a9e\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
         }
       ]
     },
@@ -1282,14 +903,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 15194,
+      "duration_ms": 16430,
       "classification": "browser-network-api",
       "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
       "title": "المعارض والفعاليات - JCC - Jeddah Chamber",
-      "text_bytes": 2344,
-      "html_bytes": 1561699,
-      "html_snapshot": "data/raw/browser-probes/jcci-events-center-2026-07-10T03-23-21-532Z.html",
-      "screenshot": "data/raw/browser-probes/jcci-events-center-2026-07-10T03-23-21-532Z.png",
+      "text_bytes": 2257,
+      "html_bytes": 1561351,
+      "html_snapshot": "data/raw/browser-probes/jcci-events-center-2026-07-10T08-19-59-734Z.html",
+      "screenshot": "data/raw/browser-probes/jcci-events-center-2026-07-10T08-19-59-734Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -1400,6 +1021,16 @@
         {
           "method": "GET",
           "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-alert-support-web%402.0.9%2Findex",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
+        },
+        {
+          "method": "GET",
+          "status": 200,
           "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-tabs-support-web%402.0.11%2Findex",
           "content_type": "application/json",
           "resource_type": "fetch",
@@ -1411,16 +1042,6 @@
           "method": "GET",
           "status": 200,
           "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-dropdown-support-web%402.0.9%2Findex",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-alert-support-web%402.0.9%2Findex",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
@@ -1452,6 +1073,16 @@
         {
           "method": "GET",
           "status": 200,
+          "url": "https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:",
+          "preview": "{}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
           "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=%40liferay%2Ffrontend-js-state-web%401.0.13",
           "content_type": "application/json",
           "resource_type": "fetch",
@@ -1472,6 +1103,16 @@
         {
           "method": "GET",
           "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-tooltip-support-web%404.0.16%2Findex",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:pathMap,configMap,resolvedModules,moduleMap,moduleFlags",
+          "preview": "{\"pathMap\":{\"frontend-js-tooltip-support-web@4.0.16\\/index\":\"\\/o\\/js\\/resolved-module\\/frontend-js-tooltip-support-web@4.0.16\\/index\",\"@liferay\\/frontend-js-react-web@5.0.21\\/index\":\"\\/o\\/js\\/resolved-module\\/@liferay\\/frontend-js-react-web@5.0.21\\/index\",\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\":\"\\/o\\/js\\/resolved-module\\/@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\"},\"configMap\":{},\"resolvedModules\":[\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\",\"@liferay\\/frontend-js-react-web@5.0.21\\/index\",\"frontend-js-tooltip-support-web@4.0.16\\/index\"],\"moduleMap\":{\"frontend-js-tooltip-support-web@4.0.16\\/index\":{\"@liferay\\/frontend-js-react-web\":\"@liferay\\/frontend-js-react-web@5.0.21\\/index\",\"@frontend-taglib-clay$clayui\\/tooltip\":\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\"},\"@liferay\\/frontend-js-react-web@5.0.21\\/index\":{},\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\":{}},\"moduleFlags\":{\"frontend-js-tooltip-support-web@4.0.16\\/index\":{\"esModule\":true},\"@liferay\\/frontend-js-react-web@5.0.21\\/index\":{\"useESM\":true,\"esModule\":true},\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\":{\"useESM\":true,\"esModule\":true}}}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
           "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-spa-web%405.0.28%2Finit",
           "content_type": "application/json",
           "resource_type": "fetch",
@@ -1482,22 +1123,12 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-object:",
-          "preview": "{}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-tooltip-support-web%404.0.16%2Findex",
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-alert-support-web%402.0.9%2Findex",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
-          "response_shape": "json-object:pathMap,configMap,resolvedModules,moduleMap,moduleFlags",
-          "preview": "{\"pathMap\":{\"frontend-js-tooltip-support-web@4.0.16\\/index\":\"\\/o\\/js\\/resolved-module\\/frontend-js-tooltip-support-web@4.0.16\\/index\",\"@liferay\\/frontend-js-react-web@5.0.21\\/index\":\"\\/o\\/js\\/resolved-module\\/@liferay\\/frontend-js-react-web@5.0.21\\/index\",\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\":\"\\/o\\/js\\/resolved-module\\/@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\"},\"configMap\":{},\"resolvedModules\":[\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\",\"@liferay\\/frontend-js-react-web@5.0.21\\/index\",\"frontend-js-tooltip-support-web@4.0.16\\/index\"],\"moduleMap\":{\"frontend-js-tooltip-support-web@4.0.16\\/index\":{\"@liferay\\/frontend-js-react-web\":\"@liferay\\/frontend-js-react-web@5.0.21\\/index\",\"@frontend-taglib-clay$clayui\\/tooltip\":\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\"},\"@liferay\\/frontend-js-react-web@5.0.21\\/index\":{},\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\":{}},\"moduleFlags\":{\"frontend-js-tooltip-support-web@4.0.16\\/index\":{\"esModule\":true},\"@liferay\\/frontend-js-react-web@5.0.21\\/index\":{\"useESM\":true,\"esModule\":true},\"@frontend-taglib-clay$clayui\\/tooltip@3.67.0\\/index\":{\"useESM\":true,\"esModule\":true}}}"
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
         },
         {
           "method": "GET",
@@ -1522,7 +1153,7 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-alert-support-web%402.0.9%2Findex",
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-collapse-support-web%402.0.12%2Findex",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
@@ -1542,17 +1173,7 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=frontend-js-collapse-support-web%402.0.12%2Findex",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"pathMap\":{\"frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/toggle_radio\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/get_form_element.es\",\"frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/events\\/EventHandler\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/fetch.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\",\"frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/DefaultEventHandler.es\",\"frontend-js-web@5.0.53\\/liferay\\/breakpoints\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/breakpoints\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/focus_form_field\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/get_element\",\"frontend-js-web@5.0.53\\/liferay\\/align\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/align\",\"f"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://www.jcci.org.sa/o/dynamic-data-mapping-form-field-types?p_auth=1sJ1hL",
+          "url": "https://www.jcci.org.sa/o/dynamic-data-mapping-form-field-types?p_auth=4hD2uY",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
@@ -1572,22 +1193,22 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=dynamic-data-mapping-form-field-type%406.0.106%2FRichText%2FRichText.es",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"pathMap\":{\"data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\",\"data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\",\"frontend-editor-ckeditor-web@5.0.59\\/css\\/main.scss\":\"\\/o\\/js\\/resolved-module\\/frontend-editor-ckeditor-web@5.0.59\\/css\\/main.scss\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\":\"\\/o\\/js\\/resolved-module\\/frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRe"
-        },
-        {
-          "method": "GET",
-          "status": 200,
           "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=dynamic-data-mapping-form-field-type%406.0.106%2FCaptcha%2FCaptcha.es",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
           "response_shape": "json-like-invalid",
           "preview": "{\"pathMap\":{\"data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\",\"data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\":\"\\/o\\/js\\/resolved-module\\/frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/is_tablet\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/lifera"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.jcci.org.sa/o/js_resolve_modules?modules=dynamic-data-mapping-form-field-type%406.0.106%2FRichText%2FRichText.es",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pathMap\":{\"data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/thunks\\/pageReset.es\",\"data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/custom\\/form\\/components\\/PaginationControls.es\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/constants\",\"frontend-editor-ckeditor-web@5.0.59\\/css\\/main.scss\":\"\\/o\\/js\\/resolved-module\\/frontend-editor-ckeditor-web@5.0.59\\/css\\/main.scss\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/Placeholder.es\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/remove_entity_selection\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/form\\/post_form.es\",\"frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\":\"\\/o\\/js\\/resolved-module\\/frontend-js-metal-web$metal-incremental-dom@2.16.9\\/lib\\/changes\",\"frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\":\"\\/o\\/js\\/resolved-module\\/frontend-js-web@5.0.53\\/liferay\\/util\\/normalize_friendly_url\",\"data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/utils\\/fetch.es\",\"data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRenderer\\/EditorVariant.es\":\"\\/o\\/js\\/resolved-module\\/data-engine-js-components-web@1.0.72\\/js\\/core\\/components\\/PageRe"
         },
         {
           "method": "GET",
@@ -1620,14 +1241,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 11049,
+      "duration_ms": 17247,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "",
       "text_bytes": 152819,
       "html_bytes": 152982,
-      "html_snapshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-07-10T03-23-21-532Z.html",
-      "screenshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-07-10T03-23-21-532Z.png",
+      "html_snapshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-07-10T08-19-59-734Z.html",
+      "screenshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-07-10T08-19-59-734Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -1654,6 +1275,52 @@
       "network_total": 0,
       "network_endpoints": [],
       "network_sample": []
+    },
+    {
+      "id": "saudi-space-agency-events",
+      "name": "Saudi Space Agency Events",
+      "priority": 32,
+      "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
+      "final_url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
+      "status": "ok",
+      "http_status": 405,
+      "navigation_error": "",
+      "duration_ms": 5899,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 536,
+      "html_bytes": 687,
+      "html_snapshot": "data/raw/browser-probes/saudi-space-agency-events-2026-07-10T08-19-59-734Z.html",
+      "screenshot": "data/raw/browser-probes/saudi-space-agency-events-2026-07-10T08-19-59-734Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 1,
+      "network_endpoints": [],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 405,
+          "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
+          "content_type": "text/plain",
+          "resource_type": "document",
+          "request_post_data": "",
+          "response_shape": "text",
+          "preview": "Status Code: 405; Method Not Allowed"
+        }
+      ]
     },
     {
       "id": "moc-cultural-subportals",

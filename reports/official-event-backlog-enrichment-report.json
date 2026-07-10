@@ -1,83 +1,12 @@
 {
-  "generated_at": "2026-07-10T07:49:38.395Z",
+  "generated_at": "2026-07-10T08:30:17.705Z",
   "totals": {
-    "targets": 7,
-    "enriched": 7,
-    "fetched": 7,
-    "images": 7,
+    "targets": 0,
+    "enriched": 0,
+    "fetched": 0,
+    "images": 0,
     "fetch_failures": 0
   },
-  "enriched": [
-    {
-      "id": "event-big-5-construct-saudi",
-      "title": "Big 5 Construct Saudi",
-      "source_label": "dmg events Official",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.big5constructsaudi.com/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-cips-mena-procurement-and-supply-chain-futures-conference-and-awards",
-      "title": "CIPS MENA Procurement and Supply Chain Futures conference and awards",
-      "source_label": "Eye of Riyadh Official",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.cipsmenaconferenceandawards.com/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-global-proptech-summit-2026",
-      "title": "Global Proptech Summit 2026",
-      "source_label": "Eye of Riyadh Official",
-      "source_method": "official-page-meta",
-      "source_url": "https://globalproptechsummit.com/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hvac-r-saudi-arabia",
-      "title": "HVAC R Saudi Arabia",
-      "source_label": "dmg events Official",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.big5constructsaudi.com/specialised-events/hvacr-ksa/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-real-estate-future-forum",
-      "title": "Real Estate Future Forum",
-      "source_label": "Eye of Riyadh Official",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.therff.com/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-real-estate-supply-chain-forum",
-      "title": "Real Estate Supply Chain Forum",
-      "source_label": "Eye of Riyadh Official",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.rscforum.com/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-saudi-fm-clean",
-      "title": "Saudi FM & Clean",
-      "source_label": "dmg events Official",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.big5constructsaudi.com/specialised-events/saudi-fm-clean-ksa/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    }
-  ],
+  "enriched": [],
   "failed": []
 }
