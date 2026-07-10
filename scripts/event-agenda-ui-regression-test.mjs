@@ -24,6 +24,8 @@ assert.match(html, /data-agenda-now/, 'agenda must include a live now summary');
 assert.match(html, /data-agenda-next/, 'agenda must include a next-session summary');
 assert.match(html, /window\.EventLiveAgenda/, 'agenda controls must expose a testable runtime API');
 assert.match(html, /\.agenda-head \.eyebrow\{color:#72530a\}/, 'agenda eyebrow must use a WCAG AA color on the light page background');
+assert.match(html, /\.agenda-head p\{margin:0;color:#5f6e68\}/, 'agenda summary must use a WCAG AA color on the light page background');
+assert.match(html, /\.agenda-count\{color:#5f6e68;font-weight:700\}/, 'agenda count must use a WCAG AA color on the light page background');
 assert.match(html, /https:\/\/onegiantleap\.com\/session\//, 'official session evidence links must remain visible');
 assert.doesNotMatch(html, /2026-04-1[3-6]T/, 'stale April sessions must never enter the LEAP 2026 public agenda');
 assert.doesNotMatch(html, /Exhibition \/ Families|Riyadh Riyadh/, 'stale Visit Saudi classification and venue text must not leak into the public page');
