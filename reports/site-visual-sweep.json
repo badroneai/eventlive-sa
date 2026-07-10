@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T12:41:58.014Z",
+  "generated_at": "2026-07-10T13:22:25.886Z",
   "intent": "eventlive-site-visual-sweep",
   "base_url": "http://127.0.0.1:4187",
   "ok": true,
@@ -22,7 +22,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية الآن",
         "h1": "ماذا يحدث الآن في السعودية؟",
-        "bodyTextLength": 3229,
+        "bodyTextLength": 3288,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -61,7 +61,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية الآن",
         "h1": "ماذا يحدث الآن في السعودية؟",
-        "bodyTextLength": 3190,
+        "bodyTextLength": 3249,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -84,7 +84,7 @@
           {
             "tag": "article",
             "className": "card",
-            "text": "عائلات وأطفال ٩يوليو جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 8 ساعة التف",
+            "text": "عائلات وأطفال ٩يوليو جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 7 ساعة التف",
             "width": 262
           },
           {
@@ -108,7 +108,7 @@
           {
             "tag": "div",
             "className": "card-body",
-            "text": "جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 8 ساعة التفاصيل التقويم مصدر حكو",
+            "text": "جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 7 ساعة التفاصيل التقويم مصدر حكو",
             "width": 260
           },
           {
@@ -134,7 +134,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 2602
+          "scrollHeight": 2608
         }
       }
     },
@@ -149,7 +149,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية مباشرة",
         "h1": "كل الفعاليات",
-        "bodyTextLength": 19070,
+        "bodyTextLength": 19748,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -159,7 +159,7 @@
         "jsonLdBlocks": 4,
         "visibleImages": 24,
         "brokenImages": [],
-        "pendingImages": 0,
+        "pendingImages": 3,
         "headings": [
           "كل الفعاليات",
           "تأكيد قاعة ورشة رحلة المستفيد",
@@ -223,7 +223,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 7617
+          "scrollHeight": 7681
         }
       }
     },
@@ -238,7 +238,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية مباشرة",
         "h1": "كل الفعاليات",
-        "bodyTextLength": 19017,
+        "bodyTextLength": 8176,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -248,13 +248,13 @@
         "jsonLdBlocks": 4,
         "visibleImages": 24,
         "brokenImages": [],
-        "pendingImages": 18,
+        "pendingImages": 13,
         "headings": [
           "كل الفعاليات",
+          "الفعاليات المتاحة",
           "تأكيد قاعة ورشة رحلة المستفيد",
           "مركز الحالة الحية",
-          "سجل فعالياتي",
-          "الفعاليات المتاحة"
+          "سجل فعالياتي"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -284,35 +284,35 @@
             "width": 74
           },
           {
-            "tag": "a",
+            "tag": "br",
             "className": "",
-            "text": "الجبيل",
-            "width": 63
+            "text": "",
+            "width": 0
           },
           {
-            "tag": "a",
+            "tag": "br",
             "className": "",
-            "text": "الخبر",
-            "width": 51
+            "text": "",
+            "width": 0
           },
           {
-            "tag": "a",
+            "tag": "br",
             "className": "",
-            "text": "الدرعية",
-            "width": 67
+            "text": "",
+            "width": 0
           },
           {
-            "tag": "a",
+            "tag": "br",
             "className": "",
-            "text": "الدمام",
-            "width": 62
+            "text": "",
+            "width": 0
           }
         ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 21426
+          "scrollHeight": 16879
         }
       }
     },
@@ -417,7 +417,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 7480
+          "scrollHeight": 7455
         }
       }
     },
@@ -432,7 +432,7 @@
       "metrics": {
         "title": "EventLive | الآن",
         "h1": "الآن",
-        "bodyTextLength": 2122,
+        "bodyTextLength": 2133,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -543,7 +543,7 @@
       "metrics": {
         "title": "فعاليات اليوم | EventLive",
         "h1": "فعاليات اليوم",
-        "bodyTextLength": 10829,
+        "bodyTextLength": 10643,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -556,13 +556,13 @@
         "pendingImages": 0,
         "headings": [
           "فعاليات اليوم",
-          "تابع فعاليات اليوم",
-          "البرنامج الصيفي بجامعة الجوف 2026",
           "البرنامج الصيفي بجامعة الجوف 2026",
           "مهرجان لحن المملكة",
           "عمر الجمل - حفلة ستاند أب كوميدي",
           "Unstable",
-          "Build & Play Together"
+          "Build & Play Together",
+          "Echoes of the Familiar",
+          "Tafasahu: Make Room"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -571,7 +571,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 6488
+          "scrollHeight": 6113
         }
       }
     },
@@ -586,7 +586,7 @@
       "metrics": {
         "title": "فعاليات اليوم | EventLive",
         "h1": "فعاليات اليوم",
-        "bodyTextLength": 10754,
+        "bodyTextLength": 10192,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -596,25 +596,50 @@
         "jsonLdBlocks": 3,
         "visibleImages": 18,
         "brokenImages": [],
-        "pendingImages": 7,
+        "pendingImages": 1,
         "headings": [
           "فعاليات اليوم",
-          "تابع فعاليات اليوم",
-          "البرنامج الصيفي بجامعة الجوف 2026",
           "البرنامج الصيفي بجامعة الجوف 2026",
           "مهرجان لحن المملكة",
           "عمر الجمل - حفلة ستاند أب كوميدي",
           "Unstable",
-          "Build & Play Together"
+          "Build & Play Together",
+          "Echoes of the Familiar",
+          "Tafasahu: Make Room"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
-        "overflowingNodes": [],
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعاليات اليوم",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "المدن",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الجمهور",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "إضافة فعالية",
+            "width": 70
+          }
+        ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 15375
+          "scrollHeight": 11030
         }
       }
     },
@@ -766,7 +791,7 @@
       "metrics": {
         "title": "التحديثات الحية | EventLive",
         "h1": "التحديثات الحية",
-        "bodyTextLength": 600,
+        "bodyTextLength": 602,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -784,12 +809,37 @@
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
-        "overflowingNodes": [],
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعاليات اليوم",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "المدن",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الجمهور",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "إضافة فعالية",
+            "width": 70
+          }
+        ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 1245
+          "scrollHeight": 1221
         }
       }
     },
@@ -804,7 +854,7 @@
       "metrics": {
         "title": "EventLive | شاشة الحضور",
         "h1": "Puppet World",
-        "bodyTextLength": 677,
+        "bodyTextLength": 698,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -841,7 +891,7 @@
       "metrics": {
         "title": "EventLive | شاشة الحضور",
         "h1": "Puppet World",
-        "bodyTextLength": 533,
+        "bodyTextLength": 534,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -921,7 +971,7 @@
       "metrics": {
         "title": "تفعيل الجداول الحية | EventLive",
         "h1": "تفعيل الجداول الحية",
-        "bodyTextLength": 13944,
+        "bodyTextLength": 13946,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -946,6 +996,30 @@
         "overflowBy": 0,
         "overflowingNodes": [
           {
+            "tag": "a",
+            "className": "",
+            "text": "فعاليات اليوم",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "المدن",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الجمهور",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "إضافة فعالية",
+            "width": 70
+          },
+          {
             "tag": "table",
             "className": "",
             "text": "الفعاليةالأولويةالمصدرمسار الاستخراجالنقصSkill Development Initiativeالرياض · 20",
@@ -968,37 +1042,13 @@
             "className": "",
             "text": "المصدر",
             "width": 169
-          },
-          {
-            "tag": "th",
-            "className": "",
-            "text": "مسار الاستخراج",
-            "width": 121
-          },
-          {
-            "tag": "th",
-            "className": "",
-            "text": "النقص",
-            "width": 128
-          },
-          {
-            "tag": "tbody",
-            "className": "",
-            "text": "Skill Development Initiativeالرياض · 2021-07-14T03:00:00+03:00عاجل الآنMinistry ",
-            "width": 780
-          },
-          {
-            "tag": "tr",
-            "className": "",
-            "text": "Skill Development Initiativeالرياض · 2021-07-14T03:00:00+03:00عاجل الآنMinistry ",
-            "width": 780
           }
         ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 16251
+          "scrollHeight": 16227
         }
       }
     },
@@ -1051,7 +1101,7 @@
       "metrics": {
         "title": "نسخة طباعة الفعالية | EventLive",
         "h1": "Build & Play Together",
-        "bodyTextLength": 2041,
+        "bodyTextLength": 2043,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1069,12 +1119,37 @@
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
-        "overflowingNodes": [],
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعاليات اليوم",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "المدن",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الجمهور",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "إضافة فعالية",
+            "width": 70
+          }
+        ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 3341
+          "scrollHeight": 3333
         }
       }
     },
@@ -1127,7 +1202,7 @@
       "metrics": {
         "title": "مشاركة الفعالية | EventLive",
         "h1": "Build & Play Together",
-        "bodyTextLength": 1067,
+        "bodyTextLength": 1069,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1145,12 +1220,37 @@
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
-        "overflowingNodes": [],
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعاليات اليوم",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "المدن",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الجمهور",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "إضافة فعالية",
+            "width": 70
+          }
+        ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 2175
+          "scrollHeight": 2167
         }
       }
     },
@@ -1203,7 +1303,7 @@
       "metrics": {
         "title": "لافتة QR للفعالية | EventLive",
         "h1": "Build & Play Together",
-        "bodyTextLength": 1014,
+        "bodyTextLength": 1016,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1221,12 +1321,37 @@
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
-        "overflowingNodes": [],
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعاليات اليوم",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "المدن",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الجمهور",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "إضافة فعالية",
+            "width": 70
+          }
+        ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 2209
+          "scrollHeight": 2201
         }
       }
     },
@@ -1241,7 +1366,7 @@
       "metrics": {
         "title": "فعاليات هذا الأسبوع | EventLive",
         "h1": "فعاليات هذا الأسبوع",
-        "bodyTextLength": 11281,
+        "bodyTextLength": 10927,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1254,13 +1379,13 @@
         "pendingImages": 0,
         "headings": [
           "فعاليات هذا الأسبوع",
-          "تابع فعاليات هذا الأسبوع",
-          "Registration for International Research Competition on Non-Terrestrial Networks",
           "Registration for International Research Competition on Non-Terrestrial Networks",
           "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
           "عروض الفنون الأدائية التقليدية",
           "فعالية رمي السهام",
-          "مهرجان المأكولات الشعبية"
+          "مهرجان المأكولات الشعبية",
+          "ورث الفن",
+          "Taste of the World"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -1269,7 +1394,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 7612
+          "scrollHeight": 6890
         }
       }
     },
@@ -1284,7 +1409,7 @@
       "metrics": {
         "title": "فعاليات هذا الأسبوع | EventLive",
         "h1": "فعاليات هذا الأسبوع",
-        "bodyTextLength": 11206,
+        "bodyTextLength": 10454,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1294,25 +1419,50 @@
         "jsonLdBlocks": 3,
         "visibleImages": 18,
         "brokenImages": [],
-        "pendingImages": 7,
+        "pendingImages": 2,
         "headings": [
           "فعاليات هذا الأسبوع",
-          "تابع فعاليات هذا الأسبوع",
-          "Registration for International Research Competition on Non-Terrestrial Networks",
           "Registration for International Research Competition on Non-Terrestrial Networks",
           "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
           "عروض الفنون الأدائية التقليدية",
           "فعالية رمي السهام",
-          "مهرجان المأكولات الشعبية"
+          "مهرجان المأكولات الشعبية",
+          "ورث الفن",
+          "Taste of the World"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
-        "overflowingNodes": [],
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعاليات اليوم",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "المدن",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الجمهور",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "إضافة فعالية",
+            "width": 70
+          }
+        ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 15872
+          "scrollHeight": 11189
         }
       }
     },
@@ -1327,7 +1477,7 @@
       "metrics": {
         "title": "فعاليات هذا الشهر | EventLive",
         "h1": "فعاليات هذا الشهر",
-        "bodyTextLength": 11240,
+        "bodyTextLength": 11536,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1340,13 +1490,13 @@
         "pendingImages": 0,
         "headings": [
           "فعاليات هذا الشهر",
-          "تابع فعاليات هذا الشهر",
-          "Skill Development Initiative",
           "Skill Development Initiative",
           "SITAR",
           "The Architecture and Design Café",
           "Jusoor Program",
-          "Urban transformation Initiative"
+          "Urban transformation Initiative",
+          "The Continuing Professional Development Initiative",
+          "Design for Good Initiative"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -1355,7 +1505,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 6446
+          "scrollHeight": 6739
         }
       }
     },
@@ -1370,7 +1520,7 @@
       "metrics": {
         "title": "فعاليات هذا الشهر | EventLive",
         "h1": "فعاليات هذا الشهر",
-        "bodyTextLength": 11165,
+        "bodyTextLength": 11071,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1380,25 +1530,50 @@
         "jsonLdBlocks": 3,
         "visibleImages": 18,
         "brokenImages": [],
-        "pendingImages": 7,
+        "pendingImages": 2,
         "headings": [
           "فعاليات هذا الشهر",
-          "تابع فعاليات هذا الشهر",
-          "Skill Development Initiative",
           "Skill Development Initiative",
           "SITAR",
           "The Architecture and Design Café",
           "Jusoor Program",
-          "Urban transformation Initiative"
+          "Urban transformation Initiative",
+          "The Continuing Professional Development Initiative",
+          "Design for Good Initiative"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
-        "overflowingNodes": [],
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعاليات اليوم",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "المدن",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الجمهور",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "إضافة فعالية",
+            "width": 70
+          }
+        ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 15633
+          "scrollHeight": 11195
         }
       }
     },
@@ -1509,7 +1684,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 7160
+          "scrollHeight": 7191
         }
       }
     },
@@ -1567,7 +1742,7 @@
       "metrics": {
         "title": "فعاليات مدن السعودية | EventLive",
         "h1": "فعاليات مدن السعودية",
-        "bodyTextLength": 5129,
+        "bodyTextLength": 5131,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1590,12 +1765,37 @@
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
-        "overflowingNodes": [],
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعاليات اليوم",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "المدن",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الجمهور",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "إضافة فعالية",
+            "width": 70
+          }
+        ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 18049
+          "scrollHeight": 18025
         }
       }
     },
@@ -1610,7 +1810,7 @@
       "metrics": {
         "title": "تصنيفات فعاليات السعودية | EventLive",
         "h1": "تصنيفات فعاليات السعودية",
-        "bodyTextLength": 3175,
+        "bodyTextLength": 3172,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1653,7 +1853,7 @@
       "metrics": {
         "title": "تصنيفات فعاليات السعودية | EventLive",
         "h1": "تصنيفات فعاليات السعودية",
-        "bodyTextLength": 3100,
+        "bodyTextLength": 3099,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1676,12 +1876,37 @@
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
-        "overflowingNodes": [],
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعاليات اليوم",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "المدن",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الجمهور",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "إضافة فعالية",
+            "width": 70
+          }
+        ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 8079
+          "scrollHeight": 8055
         }
       }
     },
@@ -1696,7 +1921,7 @@
       "metrics": {
         "title": "فعاليات حسب الجمهور | EventLive",
         "h1": "فعاليات حسب الجمهور",
-        "bodyTextLength": 3131,
+        "bodyTextLength": 3128,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1739,7 +1964,7 @@
       "metrics": {
         "title": "فعاليات حسب الجمهور | EventLive",
         "h1": "فعاليات حسب الجمهور",
-        "bodyTextLength": 3056,
+        "bodyTextLength": 3055,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1762,12 +1987,37 @@
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
-        "overflowingNodes": [],
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعاليات اليوم",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "المدن",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الجمهور",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "إضافة فعالية",
+            "width": 70
+          }
+        ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 7914
+          "scrollHeight": 7890
         }
       }
     },
@@ -1932,7 +2182,7 @@
       "metrics": {
         "title": "إضافة فعالية أو جدول حي | EventLive",
         "h1": "إضافة فعالية أو جدول حي",
-        "bodyTextLength": 1494,
+        "bodyTextLength": 1496,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1951,12 +2201,37 @@
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
-        "overflowingNodes": [],
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعاليات اليوم",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "المدن",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الجمهور",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "إضافة فعالية",
+            "width": 70
+          }
+        ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 3578
+          "scrollHeight": 3554
         }
       }
     },
@@ -1999,7 +2274,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 1698
+          "scrollHeight": 1741
         }
       }
     },
@@ -2014,7 +2289,7 @@
       "metrics": {
         "title": "منهجية جمع ونشر الفعاليات | EventLive",
         "h1": "منهجية جمع ونشر الفعاليات",
-        "bodyTextLength": 1798,
+        "bodyTextLength": 1800,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -2037,12 +2312,37 @@
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
-        "overflowingNodes": [],
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعاليات اليوم",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "المدن",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الجمهور",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "إضافة فعالية",
+            "width": 70
+          }
+        ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 2979
+          "scrollHeight": 2955
         }
       }
     },
@@ -2149,7 +2449,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 3272
+          "scrollHeight": 3292
         }
       }
     },
@@ -3042,7 +3342,7 @@
       "metrics": {
         "title": "مصادر الفعاليات | EventLive",
         "h1": "مصادر الفعاليات",
-        "bodyTextLength": 10722,
+        "bodyTextLength": 10724,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3061,6 +3361,30 @@
         "horizontalOverflow": false,
         "overflowBy": 0,
         "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعاليات اليوم",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "المدن",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الجمهور",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "إضافة فعالية",
+            "width": 70
+          },
           {
             "tag": "table",
             "className": "",
@@ -3084,37 +3408,13 @@
             "className": "",
             "text": "المدينة",
             "width": 70
-          },
-          {
-            "tag": "th",
-            "className": "",
-            "text": "المصدر",
-            "width": 194
-          },
-          {
-            "tag": "th",
-            "className": "",
-            "text": "الحاجة",
-            "width": 83
-          },
-          {
-            "tag": "th",
-            "className": "",
-            "text": "الثقة",
-            "width": 62
-          },
-          {
-            "tag": "tbody",
-            "className": "",
-            "text": "Build & Play TogetherKing Abdulaziz Center for World Culture / IthraالظهرانIthra",
-            "width": 780
           }
         ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 9611
+          "scrollHeight": 9587
         }
       }
     },
@@ -3281,7 +3581,7 @@
       "metrics": {
         "title": "فجوات تغطية المصادر | EventLive",
         "h1": "فجوات تغطية المصادر",
-        "bodyTextLength": 11631,
+        "bodyTextLength": 11633,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3303,6 +3603,30 @@
         "horizontalOverflow": false,
         "overflowBy": 0,
         "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعاليات اليوم",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "المدن",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الجمهور",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "إضافة فعالية",
+            "width": 70
+          },
           {
             "tag": "table",
             "className": "",
@@ -3326,37 +3650,13 @@
             "className": "",
             "text": "المصدر",
             "width": 364
-          },
-          {
-            "tag": "th",
-            "className": "",
-            "text": "السبب",
-            "width": 99
-          },
-          {
-            "tag": "th",
-            "className": "",
-            "text": "الإجراء",
-            "width": 96
-          },
-          {
-            "tag": "tbody",
-            "className": "",
-            "text": "2030 LeadersالسعوديةMisk Hub Programshub.misk.org.saلا توجد صورة رسمية مرشحة من ",
-            "width": 780
-          },
-          {
-            "tag": "tr",
-            "className": "",
-            "text": "2030 LeadersالسعوديةMisk Hub Programshub.misk.org.saلا توجد صورة رسمية مرشحة من ",
-            "width": 780
           }
         ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 15884
+          "scrollHeight": 15860
         }
       }
     },
@@ -3632,7 +3932,7 @@
       "metrics": {
         "title": "تغطية مناطق المملكة | EventLive",
         "h1": "تغطية مناطق المملكة",
-        "bodyTextLength": 3211,
+        "bodyTextLength": 3213,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3652,6 +3952,30 @@
         "horizontalOverflow": false,
         "overflowBy": 0,
         "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعاليات اليوم",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "المدن",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الجمهور",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "إضافة فعالية",
+            "width": 70
+          },
           {
             "tag": "table",
             "className": "",
@@ -3675,37 +3999,13 @@
             "className": "",
             "text": "صور",
             "width": 53
-          },
-          {
-            "tag": "th",
-            "className": "",
-            "text": "أغلفة",
-            "width": 54
-          },
-          {
-            "tag": "th",
-            "className": "",
-            "text": "الدرجة",
-            "width": 60
-          },
-          {
-            "tag": "th",
-            "className": "",
-            "text": "الإجراء",
-            "width": 269
-          },
-          {
-            "tag": "tbody",
-            "className": "",
-            "text": "منطقة الحدود الشماليةgap30303010ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/م",
-            "width": 780
           }
         ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 5080
+          "scrollHeight": 5056
         }
       }
     },
@@ -3763,7 +4063,7 @@
       "metrics": {
         "title": "جاهزية التشغيل | EventLive",
         "h1": "جاهزية التشغيل",
-        "bodyTextLength": 3719,
+        "bodyTextLength": 3721,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3788,6 +4088,30 @@
         "overflowBy": 0,
         "overflowingNodes": [
           {
+            "tag": "a",
+            "className": "",
+            "text": "فعاليات اليوم",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "المدن",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الجمهور",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "إضافة فعالية",
+            "width": 70
+          },
+          {
             "tag": "table",
             "className": "",
             "text": "الفعاليةالحالةالثقةالجلساتالإجراءBuild & Play Togetherالظهران · Ithra Eventsجاهز",
@@ -3810,37 +4134,13 @@
             "className": "",
             "text": "الحالة",
             "width": 105
-          },
-          {
-            "tag": "th",
-            "className": "",
-            "text": "الثقة",
-            "width": 64
-          },
-          {
-            "tag": "th",
-            "className": "",
-            "text": "الجلسات",
-            "width": 88
-          },
-          {
-            "tag": "th",
-            "className": "",
-            "text": "الإجراء",
-            "width": 155
-          },
-          {
-            "tag": "tbody",
-            "className": "",
-            "text": "Build & Play Togetherالظهران · Ithra Eventsجاهز للزوار10021فتح الجدول الحيEchoes",
-            "width": 780
           }
         ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 5429
+          "scrollHeight": 5405
         }
       }
     },
@@ -3897,7 +4197,7 @@
       "metrics": {
         "title": "مركز الثقة | EventLive",
         "h1": "مركز الثقة",
-        "bodyTextLength": 4525,
+        "bodyTextLength": 4527,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3921,6 +4221,30 @@
         "overflowBy": 0,
         "overflowingNodes": [
           {
+            "tag": "a",
+            "className": "",
+            "text": "فعاليات اليوم",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "المدن",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الجمهور",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "إضافة فعالية",
+            "width": 70
+          },
+          {
             "tag": "table",
             "className": "",
             "text": "الفعاليةالثقةالمصدرالاعتمادفجوات الدليل1, 2, 3, A Little Space for Meالظهران100ث",
@@ -3943,37 +4267,13 @@
             "className": "",
             "text": "الثقة",
             "width": 62
-          },
-          {
-            "tag": "th",
-            "className": "",
-            "text": "المصدر",
-            "width": 178
-          },
-          {
-            "tag": "th",
-            "className": "",
-            "text": "الاعتماد",
-            "width": 86
-          },
-          {
-            "tag": "th",
-            "className": "",
-            "text": "فجوات الدليل",
-            "width": 92
-          },
-          {
-            "tag": "tbody",
-            "className": "",
-            "text": "1, 2, 3, A Little Space for Meالظهران100ثقة عاليةIthra Eventsمنشورةلا توجد فجوة ",
-            "width": 780
           }
         ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 6251
+          "scrollHeight": 6227
         }
       }
     },
@@ -3988,7 +4288,7 @@
       "metrics": {
         "title": "فعاليات الرياض | EventLive",
         "h1": "فعاليات الرياض",
-        "bodyTextLength": 12642,
+        "bodyTextLength": 12730,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4001,13 +4301,13 @@
         "pendingImages": 0,
         "headings": [
           "فعاليات الرياض",
-          "تابع فعاليات الرياض",
-          "Skill Development Initiative",
           "Skill Development Initiative",
           "SITAR",
           "Poppy Playtime",
           "Riyadh Season: BLVD City",
-          "The Groves"
+          "The Groves",
+          "Immersive Experience: Flying Over Saudi",
+          "Arabic Language Exhibition 28"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -4016,7 +4316,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 7775
+          "scrollHeight": 7793
         }
       }
     },
@@ -4031,7 +4331,7 @@
       "metrics": {
         "title": "فعاليات الرياض | EventLive",
         "h1": "فعاليات الرياض",
-        "bodyTextLength": 12567,
+        "bodyTextLength": 12200,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4041,25 +4341,50 @@
         "jsonLdBlocks": 3,
         "visibleImages": 18,
         "brokenImages": [],
-        "pendingImages": 7,
+        "pendingImages": 2,
         "headings": [
           "فعاليات الرياض",
-          "تابع فعاليات الرياض",
-          "Skill Development Initiative",
           "Skill Development Initiative",
           "SITAR",
           "Poppy Playtime",
           "Riyadh Season: BLVD City",
-          "The Groves"
+          "The Groves",
+          "Immersive Experience: Flying Over Saudi",
+          "Arabic Language Exhibition 28"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
-        "overflowingNodes": [],
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعاليات اليوم",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "المدن",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الجمهور",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "إضافة فعالية",
+            "width": 70
+          }
+        ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 16936
+          "scrollHeight": 11261
         }
       }
     },
@@ -4074,7 +4399,7 @@
       "metrics": {
         "title": "تدريب تقني | EventLive",
         "h1": "تدريب تقني",
-        "bodyTextLength": 7823,
+        "bodyTextLength": 7852,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4087,13 +4412,13 @@
         "pendingImages": 0,
         "headings": [
           "تدريب تقني",
-          "تابع تدريب تقني",
-          "Misk Local Traineeship Program",
           "Misk Local Traineeship Program",
           "لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)",
           "لقاءات مراكز دعم المنشآت",
           "2030 Leaders",
-          "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي"
+          "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
+          "أسبوع العقار والمقاولات 12- 16 يوليو 2026م",
+          "دورة +CompTIA A"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -4102,7 +4427,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 5221
+          "scrollHeight": 5389
         }
       }
     },
@@ -4117,7 +4442,7 @@
       "metrics": {
         "title": "تدريب تقني | EventLive",
         "h1": "تدريب تقني",
-        "bodyTextLength": 7748,
+        "bodyTextLength": 7452,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4127,25 +4452,50 @@
         "jsonLdBlocks": 3,
         "visibleImages": 18,
         "brokenImages": [],
-        "pendingImages": 5,
+        "pendingImages": 2,
         "headings": [
           "تدريب تقني",
-          "تابع تدريب تقني",
-          "Misk Local Traineeship Program",
           "Misk Local Traineeship Program",
           "لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)",
           "لقاءات مراكز دعم المنشآت",
           "2030 Leaders",
-          "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي"
+          "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
+          "أسبوع العقار والمقاولات 12- 16 يوليو 2026م",
+          "دورة +CompTIA A"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
-        "overflowingNodes": [],
+        "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعاليات اليوم",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "المدن",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الجمهور",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "إضافة فعالية",
+            "width": 70
+          }
+        ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 13466
+          "scrollHeight": 11460
         }
       }
     },
@@ -4160,7 +4510,7 @@
       "metrics": {
         "title": "Build & Play Together | EventLive",
         "h1": "Build & Play Together",
-        "bodyTextLength": 2954,
+        "bodyTextLength": 2976,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4233,7 +4583,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 3230
+          "scrollHeight": 3294
         }
       }
     },
@@ -4244,11 +4594,11 @@
       "ok": true,
       "errors": [],
       "screenshot": "output/playwright/visual-sweep/representative-event-mobile.png",
-      "screenshot_mode": "viewport",
+      "screenshot_mode": "full-page",
       "metrics": {
         "title": "Build & Play Together | EventLive",
         "h1": "Build & Play Together",
-        "bodyTextLength": 2879,
+        "bodyTextLength": 2881,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4268,6 +4618,30 @@
         "horizontalOverflow": false,
         "overflowBy": 0,
         "overflowingNodes": [
+          {
+            "tag": "a",
+            "className": "",
+            "text": "فعاليات اليوم",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "المدن",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "الجمهور",
+            "width": 70
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "text": "إضافة فعالية",
+            "width": 70
+          },
           {
             "tag": "button",
             "className": "agenda-day",
@@ -4291,37 +4665,13 @@
             "className": "agenda-day",
             "text": "السبت، ١١ يوليو",
             "width": 121
-          },
-          {
-            "tag": "button",
-            "className": "agenda-day",
-            "text": "الاثنين، ١٣ يوليو",
-            "width": 122
-          },
-          {
-            "tag": "button",
-            "className": "agenda-day",
-            "text": "الثلاثاء، ١٤ يوليو",
-            "width": 122
-          },
-          {
-            "tag": "button",
-            "className": "agenda-day",
-            "text": "الأربعاء، ١٥ يوليو",
-            "width": 125
-          },
-          {
-            "tag": "button",
-            "className": "agenda-day",
-            "text": "الخميس، ١٦ يوليو",
-            "width": 136
           }
         ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 5312
+          "scrollHeight": 4561
         }
       }
     }

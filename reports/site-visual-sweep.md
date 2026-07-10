@@ -1,5 +1,5 @@
 # EventLive Site Visual Sweep
-- Generated at: 2026-07-10T12:41:58.014Z
+- Generated at: 2026-07-10T13:22:25.886Z
 - Status: PASS
 - Pages: 41
 - Viewports: 2
@@ -89,4 +89,4 @@
 | /categories/technology-training.html | desktop | PASS | 18 | 3 | output/playwright/visual-sweep/technology-category-desktop.png (viewport) |
 | /categories/technology-training.html | mobile | PASS | 18 | 3 | output/playwright/visual-sweep/technology-category-mobile.png (viewport) |
 | /events/event-build-play-together.html | desktop | PASS | 1 | 5 | output/playwright/visual-sweep/representative-event-desktop.png (full-page) |
-| /events/event-build-play-together.html | mobile | PASS | 1 | 5 | output/playwright/visual-sweep/representative-event-mobile.png (viewport) |
+| /events/event-build-play-together.html | mobile | PASS | 1 | 5 | output/playwright/visual-sweep/representative-event-mobile.png (full-page) |

@@ -667,6 +667,9 @@
 
 
 
+
+
+
     <style id="eventlive-brand-pulse">
 @keyframes eventliveLiveDotPulse {
   0%, 100% { opacity: .92; transform: translateX(-50%) scale(1); box-shadow: 0 0 0 0 rgba(229, 72, 77, .2); }
@@ -694,6 +697,9 @@
 }
 @media (max-width: 760px) {
   .breadcrumbs strong { max-width: 24ch; }
+  details.more > summary, .cta-now, .card-foot a, .card-foot button { min-height: 44px; }
+  .more-panel a { min-height: 44px; display:flex; align-items:center; }
+  .card-row { scroll-padding-inline:16px; overscroll-behavior-inline:contain; }
 }
 </style>
   <!-- Privacy-friendly analytics by Plausible -->
@@ -768,8 +774,8 @@
       </div>
       <aside class="board" id="nowBoard">
         <div class="board-label" id="boardLabel">أقرب فعالية قادمة</div>
-        <h2 id="boardTitle">1, 2, 3, A Little Space for Me</h2>
-        <div class="b-meta" id="boardMeta">الظهران · ١٠‏/٠٧‏/٢٠٢٦، ٤:٠٠ م</div>
+        <h2 id="boardTitle">In the Home of…</h2>
+        <div class="b-meta" id="boardMeta">الظهران · ١٠‏/٠٧‏/٢٠٢٦، ٤:٣٠ م</div>
         <div class="countdown" id="boardCountdown" aria-live="polite">
           <div class="cd-cell"><b id="cdD">–</b><span>يوم</span></div>
           <div class="cd-cell"><b id="cdH">–</b><span>ساعة</span></div>
@@ -777,11 +783,11 @@
           <div class="cd-cell"><b id="cdS">–</b><span>ثانية</span></div>
         </div>
         <div class="board-actions">
-          <a class="primary" id="boardCta" href="./events/event-1-2-3-a-little-space-for-me.html">التفاصيل والتذكير</a>
+          <a class="primary" id="boardCta" href="./events/event-in-the-home-of.html">التفاصيل والتذكير</a>
           <a class="plain" href="./today.html">وضع الحضور الكامل ←</a>
         </div>
         <div class="board-stats">
-          <span><b>74</b>خلال ١٠ أيام</span>
+          <span><b>51</b>خلال ١٠ أيام</span>
           <span><b>34</b>مدينة</span>
           <span><b>241</b>فعالية بوقت رسمي</span>
         </div>
@@ -981,7 +987,7 @@
           </div>
         </div>
       </article>
-<article class="card" data-event-start="2026-07-10T16:00:00+03:00" data-event-end="2026-07-25T20:50:00+03:00" data-event-status="upcoming">
+<article class="card" data-event-start="2026-07-10T16:00:00+03:00" data-event-end="2026-07-25T20:50:00+03:00" data-event-status="ongoing">
         <a class="cover" href="./events/event-1-2-3-a-little-space-for-me.html" style="--c1:#4a1d4f;--c2:#7c3f84">
           <img src="./assets/event-images/1-2-3-a-little-space-for-me-dc6823988c.jpg" alt="1, 2, 3, A Little Space for Me" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.cover').classList.add('noimg');this.remove();" />
           <span class="cover-cat">عائلات وأطفال</span>
@@ -999,7 +1005,7 @@
           </div>
         </div>
       </article>
-<article class="card" data-event-start="2026-07-10T16:00:00+03:00" data-event-end="2026-08-22T11:30:00+03:00" data-event-status="upcoming">
+<article class="card" data-event-start="2026-07-10T16:00:00+03:00" data-event-end="2026-08-22T11:30:00+03:00" data-event-status="ongoing">
         <a class="cover" href="./events/event-1-2-3-lets-rhyme.html" style="--c1:#4a1d4f;--c2:#7c3f84">
           <img src="./assets/event-images/1-2-3-let-s-rhyme-6df127aea1.jpg" alt="1, 2, 3, Let's Rhyme!" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.cover').classList.add('noimg');this.remove();" />
           <span class="cover-cat">عائلات وأطفال</span>
@@ -1033,7 +1039,7 @@
     <section class="trust-band">
       <div>
         <strong>كل فعالية هنا مرتبطة بمصدر رسمي مُتحقَّق منه</strong>
-        <p>1118 فعالية من 51 مصدرًا مسجلًا · آخر مزامنة: ١٠‏/٠٧‏/٢٠٢٦، ٣:٣٧ م بتوقيت الرياض</p>
+        <p>1118 فعالية من 51 مصدرًا مسجلًا · آخر مزامنة: ١٠‏/٠٧‏/٢٠٢٦، ٤:١٨ م بتوقيت الرياض</p>
       </div>
 
     </section>
@@ -1163,6 +1169,12 @@
       if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(function () {});
     })();
   </script>
+
+
+
+
+
+
 
 
 

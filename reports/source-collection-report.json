@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-07-10T12:34:39.411Z",
+  "collected_at": "2026-07-10T12:55:22.458Z",
   "dry_run": false,
   "source_registry": "data/source_registry.json",
   "source_candidates": "data/source_candidates.json",
@@ -10,24 +10,24 @@
   "ended_min_year": 2022,
   "baseline_key": "source_url + title + start_date",
   "checkpoint": "reports/source-collection-checkpoint.json",
-  "candidates_discovered": 11,
-  "ended_events_discovered": 0,
+  "candidates_discovered": 4,
+  "ended_events_discovered": 80,
   "candidates_written": 406,
   "ended_events_written": 757,
   "sources": [
     {
-      "id": "hayy-jameel-events",
+      "id": "scega-exhibitions-conferences",
       "status": "ok",
-      "extracted": 11,
-      "snapshot_path": "data/raw/source-snapshots/hayy-jameel-events-2026-07-10T12-34-39-411Z.html",
+      "extracted": 4,
+      "snapshot_path": "data/raw/source-snapshots/scega-exhibitions-conferences-2026-07-10T12-55-22-458Z.json",
       "note": "",
       "fetch_mode": "direct",
-      "source_existing_active": 11,
+      "source_existing_active": 4,
       "new_candidates": 0,
-      "refreshed_candidates": 11,
+      "refreshed_candidates": 4,
       "missing_from_latest_run": 0,
-      "approved_linked_preserved": 11,
-      "ended_extracted": 0,
+      "approved_linked_preserved": 4,
+      "ended_extracted": 80,
       "ended_new": 0
     }
   ]

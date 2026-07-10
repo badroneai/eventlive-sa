@@ -1,5 +1,5 @@
 # EventLive Build Report
-- Built at: 2026-07-10T12:37:24.491Z
+- Built at: 2026-07-10T13:18:14.450Z
 - Mode: data-driven catalog + static brand refresh
 - Public domain: eventme.live
 - Events generated: 1118
@@ -19,7 +19,7 @@
 - Screen fallback refreshed: yes
 - Category links normalized: 0
 - Category fallback pages created: 0
-- Excluded-record references patched: 4
+- Excluded-record references patched: 5
 - Search intent pages generated: 12
 - Guides search-intent links patched: already current
 - Patched files: 1231

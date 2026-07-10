@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T12:38:15.199Z",
+  "generated_at": "2026-07-10T13:19:10.101Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-source-health",
@@ -17,7 +17,7 @@
     "collector_errors": 0,
     "probe_blocked": 0,
     "extractor_backlog": 40,
-    "candidates_discovered": 11,
+    "candidates_discovered": 4,
     "candidates_collected_before_dedupe": 406,
     "candidates_written": 406
   },
