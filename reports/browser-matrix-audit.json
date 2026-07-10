@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.browser-matrix-audit.v1",
-  "generated_at": "2026-07-10T13:30:46.330Z",
+  "generated_at": "2026-07-10T13:50:04.605Z",
   "status": "PASS",
   "summary": {
     "engines": 2,
@@ -22,8 +22,8 @@
         "bodyHeight": 2608,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 459,
-        "loadMs": 1265
+        "domContentLoadedMs": 552,
+        "loadMs": 1208
       },
       "violations": []
     },
@@ -39,8 +39,8 @@
         "bodyHeight": 16854,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 225,
-        "loadMs": 225
+        "domContentLoadedMs": 218,
+        "loadMs": 218
       },
       "violations": []
     },
@@ -56,7 +56,7 @@
         "bodyHeight": 11030,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 27,
+        "domContentLoadedMs": 25,
         "loadMs": 39
       },
       "violations": []
@@ -73,8 +73,8 @@
         "bodyHeight": 844,
         "h1Text": "Puppet World",
         "h1Visible": true,
-        "domContentLoadedMs": 184,
-        "loadMs": 184
+        "domContentLoadedMs": 161,
+        "loadMs": 161
       },
       "violations": []
     },
@@ -107,8 +107,8 @@
         "bodyHeight": 4561,
         "h1Text": "Build & Play Together",
         "h1Visible": true,
-        "domContentLoadedMs": 45,
-        "loadMs": 47
+        "domContentLoadedMs": 40,
+        "loadMs": 48
       },
       "violations": []
     },
@@ -124,8 +124,8 @@
         "bodyHeight": 2271,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 470,
-        "loadMs": 1220
+        "domContentLoadedMs": 495,
+        "loadMs": 1186
       },
       "violations": []
     },
@@ -138,11 +138,11 @@
       "metrics": {
         "scrollWidth": 820,
         "clientWidth": 820,
-        "bodyHeight": 11262,
+        "bodyHeight": 11284,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 168,
-        "loadMs": 187
+        "domContentLoadedMs": 232,
+        "loadMs": 256
       },
       "violations": []
     },
@@ -159,7 +159,7 @@
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
         "domContentLoadedMs": 8,
-        "loadMs": 36
+        "loadMs": 41
       },
       "violations": []
     },
@@ -175,8 +175,8 @@
         "bodyHeight": 1180,
         "h1Text": "Puppet World",
         "h1Visible": true,
-        "domContentLoadedMs": 209,
-        "loadMs": 213
+        "domContentLoadedMs": 149,
+        "loadMs": 160
       },
       "violations": []
     },
@@ -192,8 +192,8 @@
         "bodyHeight": 5516,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 197,
-        "loadMs": 197
+        "domContentLoadedMs": 164,
+        "loadMs": 164
       },
       "violations": []
     },
@@ -209,8 +209,8 @@
         "bodyHeight": 3781,
         "h1Text": "Build & Play Together",
         "h1Visible": true,
-        "domContentLoadedMs": 29,
-        "loadMs": 43
+        "domContentLoadedMs": 38,
+        "loadMs": 44
       },
       "violations": []
     },
@@ -226,8 +226,8 @@
         "bodyHeight": 3053,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 2064,
-        "loadMs": 2826
+        "domContentLoadedMs": 461,
+        "loadMs": 1103
       },
       "violations": []
     },
@@ -240,11 +240,11 @@
       "metrics": {
         "scrollWidth": 1440,
         "clientWidth": 1440,
-        "bodyHeight": 7632,
+        "bodyHeight": 7637,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 178,
-        "loadMs": 181
+        "domContentLoadedMs": 196,
+        "loadMs": 198
       },
       "violations": []
     },
@@ -260,8 +260,8 @@
         "bodyHeight": 6116,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 21,
-        "loadMs": 49
+        "domContentLoadedMs": 9,
+        "loadMs": 68
       },
       "violations": []
     },
@@ -277,8 +277,8 @@
         "bodyHeight": 900,
         "h1Text": "Puppet World",
         "h1Visible": true,
-        "domContentLoadedMs": 204,
-        "loadMs": 204
+        "domContentLoadedMs": 188,
+        "loadMs": 188
       },
       "violations": []
     },
@@ -294,8 +294,8 @@
         "bodyHeight": 3584,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 156,
-        "loadMs": 156
+        "domContentLoadedMs": 210,
+        "loadMs": 210
       },
       "violations": []
     },
@@ -311,8 +311,8 @@
         "bodyHeight": 3296,
         "h1Text": "Build & Play Together",
         "h1Visible": true,
-        "domContentLoadedMs": 35,
-        "loadMs": 36
+        "domContentLoadedMs": 41,
+        "loadMs": 59
       },
       "violations": []
     },
@@ -328,8 +328,8 @@
         "bodyHeight": 2608,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 637,
-        "loadMs": 1266
+        "domContentLoadedMs": 623,
+        "loadMs": 1375
       },
       "violations": []
     },
@@ -342,11 +342,11 @@
       "metrics": {
         "scrollWidth": 390,
         "clientWidth": 390,
-        "bodyHeight": 16852,
+        "bodyHeight": 16853,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 197,
-        "loadMs": 587
+        "domContentLoadedMs": 174,
+        "loadMs": 578
       },
       "violations": []
     },
@@ -362,8 +362,8 @@
         "bodyHeight": 11024,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 176,
-        "loadMs": 354
+        "domContentLoadedMs": 157,
+        "loadMs": 337
       },
       "violations": []
     },
@@ -379,8 +379,8 @@
         "bodyHeight": 844,
         "h1Text": "Puppet World",
         "h1Visible": true,
-        "domContentLoadedMs": 150,
-        "loadMs": 374
+        "domContentLoadedMs": 128,
+        "loadMs": 314
       },
       "violations": []
     },
@@ -396,8 +396,8 @@
         "bodyHeight": 6429,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 167,
-        "loadMs": 419
+        "domContentLoadedMs": 180,
+        "loadMs": 410
       },
       "violations": []
     },
@@ -413,8 +413,8 @@
         "bodyHeight": 4541,
         "h1Text": "Build & Play Together",
         "h1Visible": true,
-        "domContentLoadedMs": 162,
-        "loadMs": 333
+        "domContentLoadedMs": 138,
+        "loadMs": 1637
       },
       "violations": []
     },
@@ -430,8 +430,8 @@
         "bodyHeight": 2271,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 528,
-        "loadMs": 1270
+        "domContentLoadedMs": 502,
+        "loadMs": 1244
       },
       "violations": []
     },
@@ -444,11 +444,11 @@
       "metrics": {
         "scrollWidth": 820,
         "clientWidth": 820,
-        "bodyHeight": 11503,
+        "bodyHeight": 11311,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 188,
-        "loadMs": 549
+        "domContentLoadedMs": 222,
+        "loadMs": 569
       },
       "violations": []
     },
@@ -464,8 +464,8 @@
         "bodyHeight": 8441,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 187,
-        "loadMs": 396
+        "domContentLoadedMs": 180,
+        "loadMs": 399
       },
       "violations": []
     },
@@ -481,8 +481,8 @@
         "bodyHeight": 1180,
         "h1Text": "Puppet World",
         "h1Visible": true,
-        "domContentLoadedMs": 169,
-        "loadMs": 367
+        "domContentLoadedMs": 174,
+        "loadMs": 374
       },
       "violations": []
     },
@@ -498,8 +498,8 @@
         "bodyHeight": 5516,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 151,
-        "loadMs": 363
+        "domContentLoadedMs": 169,
+        "loadMs": 399
       },
       "violations": []
     },
@@ -515,8 +515,8 @@
         "bodyHeight": 3781,
         "h1Text": "Build & Play Together",
         "h1Visible": true,
-        "domContentLoadedMs": 184,
-        "loadMs": 361
+        "domContentLoadedMs": 153,
+        "loadMs": 324
       },
       "violations": []
     },
@@ -532,8 +532,8 @@
         "bodyHeight": 3053,
         "h1Text": "ماذا يحدث الآن في السعودية؟",
         "h1Visible": true,
-        "domContentLoadedMs": 496,
-        "loadMs": 1220
+        "domContentLoadedMs": 469,
+        "loadMs": 1134
       },
       "violations": []
     },
@@ -549,8 +549,8 @@
         "bodyHeight": 7757,
         "h1Text": "كل الفعاليات",
         "h1Visible": true,
-        "domContentLoadedMs": 157,
-        "loadMs": 512
+        "domContentLoadedMs": 170,
+        "loadMs": 472
       },
       "violations": []
     },
@@ -566,8 +566,8 @@
         "bodyHeight": 6114,
         "h1Text": "فعاليات اليوم",
         "h1Visible": true,
-        "domContentLoadedMs": 155,
-        "loadMs": 381
+        "domContentLoadedMs": 148,
+        "loadMs": 338
       },
       "violations": []
     },
@@ -583,8 +583,8 @@
         "bodyHeight": 900,
         "h1Text": "Puppet World",
         "h1Visible": true,
-        "domContentLoadedMs": 139,
-        "loadMs": 435
+        "domContentLoadedMs": 182,
+        "loadMs": 366
       },
       "violations": []
     },
@@ -600,8 +600,8 @@
         "bodyHeight": 3584,
         "h1Text": "اجعل فعاليتك مفهومة لحظة الحضور",
         "h1Visible": true,
-        "domContentLoadedMs": 176,
-        "loadMs": 408
+        "domContentLoadedMs": 153,
+        "loadMs": 423
       },
       "violations": []
     },
@@ -617,8 +617,8 @@
         "bodyHeight": 3296,
         "h1Text": "Build & Play Together",
         "h1Visible": true,
-        "domContentLoadedMs": 183,
-        "loadMs": 358
+        "domContentLoadedMs": 178,
+        "loadMs": 353
       },
       "violations": []
     }

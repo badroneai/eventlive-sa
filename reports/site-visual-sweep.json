@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T13:22:25.886Z",
+  "generated_at": "2026-07-10T13:48:29.803Z",
   "intent": "eventlive-site-visual-sweep",
   "base_url": "http://127.0.0.1:4187",
   "ok": true,
@@ -149,7 +149,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية مباشرة",
         "h1": "كل الفعاليات",
-        "bodyTextLength": 19748,
+        "bodyTextLength": 20353,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -159,7 +159,7 @@
         "jsonLdBlocks": 4,
         "visibleImages": 24,
         "brokenImages": [],
-        "pendingImages": 3,
+        "pendingImages": 2,
         "headings": [
           "كل الفعاليات",
           "تأكيد قاعة ورشة رحلة المستفيد",
@@ -223,7 +223,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 7681
+          "scrollHeight": 7687
         }
       }
     },
@@ -238,7 +238,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية مباشرة",
         "h1": "كل الفعاليات",
-        "bodyTextLength": 8176,
+        "bodyTextLength": 8362,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -312,7 +312,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 16879
+          "scrollHeight": 16908
         }
       }
     },
@@ -417,7 +417,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 7455
+          "scrollHeight": 7480
         }
       }
     },
@@ -854,7 +854,7 @@
       "metrics": {
         "title": "EventLive | شاشة الحضور",
         "h1": "Puppet World",
-        "bodyTextLength": 698,
+        "bodyTextLength": 677,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1699,7 +1699,7 @@
       "metrics": {
         "title": "فعاليات مدن السعودية | EventLive",
         "h1": "فعاليات مدن السعودية",
-        "bodyTextLength": 5204,
+        "bodyTextLength": 5205,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1742,7 +1742,7 @@
       "metrics": {
         "title": "فعاليات مدن السعودية | EventLive",
         "h1": "فعاليات مدن السعودية",
-        "bodyTextLength": 5131,
+        "bodyTextLength": 5132,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -2274,7 +2274,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 1741
+          "scrollHeight": 1698
         }
       }
     },

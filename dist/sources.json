@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T13:18:14.450Z",
+  "generated_at": "2026-07-10T13:44:09.626Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-source-acquisition-pipeline",
@@ -1486,8 +1486,8 @@
       "starts_at": "2026-07-10T16:30:00+03:00",
       "ends_at": "2026-07-25T21:00:00+03:00",
       "updated_at": "2026-07-10T12:35:05.171Z",
-      "status": "upcoming",
-      "status_label": "قادمة",
+      "status": "ongoing",
+      "status_label": "برنامج جارٍ",
       "attendance_window_ready": true,
       "attendance_window": {
         "title": "نافذة الحضور",

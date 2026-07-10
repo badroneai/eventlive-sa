@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.lighthouse-performance-audit.v1",
-  "generated_at": "2026-07-10T07:56:02.735Z",
+  "generated_at": "2026-07-10T13:48:44.273Z",
   "status": "PASS",
   "summary": {
     "pages": 4,
@@ -20,7 +20,7 @@
       "audits": {
         "first-contentful-paint": "0.6 s",
         "largest-contentful-paint": "0.6 s",
-        "speed-index": "0.8 s",
+        "speed-index": "0.9 s",
         "interactive": "0.6 s",
         "total-blocking-time": "0 ms",
         "cumulative-layout-shift": "0.033"
@@ -34,11 +34,11 @@
       "run_warnings": [],
       "audits": {
         "first-contentful-paint": "0.2 s",
-        "largest-contentful-paint": "0.2 s",
-        "speed-index": "0.3 s",
+        "largest-contentful-paint": "0.3 s",
+        "speed-index": "0.4 s",
         "interactive": "0.2 s",
         "total-blocking-time": "0 ms",
-        "cumulative-layout-shift": "0.025"
+        "cumulative-layout-shift": "0.029"
       }
     },
     {
@@ -57,7 +57,7 @@
       }
     },
     {
-      "page": "/events/event-beast-house.html",
+      "page": "/events/event-build-play-together.html",
       "performance": 100,
       "accessibility": 100,
       "runtime_error": null,
@@ -68,7 +68,7 @@
         "speed-index": "0.3 s",
         "interactive": "0.2 s",
         "total-blocking-time": "0 ms",
-        "cumulative-layout-shift": "0.036"
+        "cumulative-layout-shift": "0.02"
       }
     }
   ]

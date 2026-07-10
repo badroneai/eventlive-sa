@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /events.json
+Disallow: /events-catalog.json
 Disallow: /sources.html
 Disallow: /methodology.html
 Disallow: /trust.html

@@ -5,20 +5,24 @@ import path from 'node:path';
 const root = process.cwd();
 const eventsHtmlPath = path.join(root, 'dist', 'events.html');
 const eventsJsonPath = path.join(root, 'dist', 'events.json');
+const catalogJsonPath = path.join(root, 'dist', 'events-catalog.json');
 const serviceWorkerPath = path.join(root, 'dist', 'sw.js');
 
 assert.equal(fs.existsSync(eventsHtmlPath), true, 'dist/events.html must exist; run npm run build first');
 assert.equal(fs.existsSync(eventsJsonPath), true, 'dist/events.json must exist; run npm run build first');
+assert.equal(fs.existsSync(catalogJsonPath), true, 'dist/events-catalog.json must exist; run npm run build first');
 assert.equal(fs.existsSync(serviceWorkerPath), true, 'dist/sw.js must exist; run npm run build first');
 
 const html = fs.readFileSync(eventsHtmlPath, 'utf8');
 const serviceWorker = fs.readFileSync(serviceWorkerPath, 'utf8');
 const htmlBytes = fs.statSync(eventsHtmlPath).size;
 const jsonBytes = fs.statSync(eventsJsonPath).size;
+const catalogBytes = fs.statSync(catalogJsonPath).size;
 
 assert.ok(htmlBytes < 260_000, `events.html should be a lightweight shell, got ${htmlBytes} bytes`);
 assert.ok(jsonBytes > htmlBytes, 'events.json should carry the event payload instead of duplicating it in events.html');
-assert.match(html, /const eventsFeedUrl = '\.\/events\.json'/, 'events.html must load the external events feed');
+assert.ok(catalogBytes < jsonBytes * 0.35, `events-catalog.json should omit heavy detail/session payloads, got ${catalogBytes} of ${jsonBytes} bytes`);
+assert.match(html, /const eventsFeedUrl = '\.\/events-catalog\.json'/, 'events.html must load the compact external catalog feed');
 assert.doesNotMatch(html, /const events = \[\{/, 'events.html must not inline the full event catalog');
 assert.match(html, /تعذر تحميل ملف الفعاليات/, 'events.html must include a friendly feed-load failure message');
 assert.match(html, /function applyInitialSearchQuery\(\)/, 'events.html must support query-string search bootstrapping');

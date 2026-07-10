@@ -1,6 +1,6 @@
 # EventLive Browser Matrix Audit
 
-- Generated at: 2026-07-10T13:30:46.330Z
+- Generated at: 2026-07-10T13:50:04.605Z
 - Status: PASS
 - Engines: chromium, webkit
 - Viewports: mobile, tablet, desktop

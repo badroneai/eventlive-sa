@@ -2738,6 +2738,62 @@ function writeCatalogFiles(events) {
       : 'data/events_catalog.json + data/source_ended_events.json',
     events
   });
+  const catalogEvents = events.map((event) => ({
+    id: event.id,
+    title: event.title,
+    summary: event.summary,
+    organizer: event.organizer,
+    city: event.city,
+    city_url: event.city_url,
+    venue: event.venue,
+    venue_address: event.venue_address,
+    category: event.category,
+    category_url: event.category_url,
+    starts_at: event.starts_at,
+    ends_at: event.ends_at,
+    status: event.status,
+    status_label: event.status_label,
+    event_kind: event.event_kind,
+    event_kind_label: event.event_kind_label,
+    live_schedule_ready: Boolean(event.live_schedule_ready),
+    agenda_ready: Boolean(event.agenda_ready),
+    official_sessions_count: Number(event.official_sessions_count || 0),
+    sessions_count: Number(event.sessions_count || 0),
+    tracks_count: Number(event.tracks_count || 0),
+    rooms_count: Number(event.rooms_count || 0),
+    live_updates_count: Number(event.live_updates_count || 0),
+    next_session_title: event.next_session_title || '',
+    attendance_mode: event.attendance_mode || '',
+    price_label: event.price_label || '',
+    language: event.language || '',
+    richness_score: Number(event.richness_score || 0),
+    source_label: event.source_label,
+    source_file: event.source_file || '',
+    approval_status_label: event.approval_status_label,
+    image_url: event.image_url,
+    image_alt: event.image_alt,
+    directions_url: event.directions_url || '',
+    detail_url: event.detail_url,
+    url: event.url || event.detail_url,
+    live_url: event.live_url || '',
+    signage_url: event.signage_url || '',
+    ics_url: event.ics_url,
+    calendar_url: event.ics_url,
+    audiences: event.audiences || [],
+    audience_labels: event.audience_labels || [],
+    audience_urls: (event.audience_labels || []).map((audience) => ({
+      label: audience.label,
+      url: `./for/${audience.slug}.html`
+    })),
+    tags: event.tags || []
+  }));
+  writeJson('events-catalog.json', {
+    generated_at: buildAt,
+    platform: platformName,
+    canonical_domain: platformDomain,
+    payload: 'compact-card-catalog',
+    events: catalogEvents
+  });
   const searchRows = events.map((event) => ({
     id: event.id,
     title: event.title,
@@ -5847,6 +5903,7 @@ function writeAiSearchFiles(events) {
 writeText(path.join(distDir, 'robots.txt'), stripTrailingWhitespace(`User-agent: *
 Allow: /
 Disallow: /events.json
+Disallow: /events-catalog.json
 Disallow: /sources.html
 Disallow: /methodology.html
 Disallow: /trust.html
