@@ -139,7 +139,7 @@ try {
     assert.ok(home.homeShelf?.cardCount > 1, `home must expose a useful event shelf at ${width}px`);
     assert.equal(home.homeShelf?.overflowX, 'auto', `home shelf must use native horizontal scrolling at ${width}px`);
     assert.ok(String(home.homeShelf?.scrollSnapType).includes('x'), `home shelf must snap horizontally at ${width}px`);
-    assert.equal(home.homeShelf?.ariaLabel, 'فعاليات تبدأ قريبًا', `home shelf needs an accessible name at ${width}px`);
+    assert.equal(home.homeShelf?.ariaLabel, 'اليوم في السعودية', `home shelf needs an accessible timeline name at ${width}px`);
     assert.equal(home.homeShelf?.tabIndex, 0, `home shelf must be keyboard focusable at ${width}px`);
     assert.ok(home.homeShelf?.firstCardWidth >= width * 0.74 && home.homeShelf?.firstCardWidth <= width * 0.86, `home card width must prioritize reading while preserving a next-card cue at ${width}px`);
     assert.ok(home.homeShelf?.nextCardVisibleWidth >= 20 && home.homeShelf?.nextCardVisibleWidth <= 90, `home must reveal part of the next card at ${width}px`);

@@ -27,25 +27,42 @@ assert.match(html, new RegExp(`<span><b>${cityCount}</b>مدينة</span>`), 'ho
 assert.match(html, new RegExp(`<span><b>${liveReadyCount}</b>فعالية بوقت رسمي</span>`), 'home board must reflect official schedule count');
 assert.match(html, new RegExp(`${events.length}\\s+فعالية من\\s+\\d+\\s+مصدرًا مسجلًا`), 'home trust band must reflect catalog size');
 
-const soonSectionMatch = html.match(/<section class="h-section" id="soon"[^>]*data-temporal-window-hours="72"[^>]*>([\s\S]*?)<\/section>/);
-assert.ok(soonSectionMatch, 'home page must expose a 72-hour starts-soon section');
-
-const soonSection = soonSectionMatch[1];
-const soonCards = [...soonSection.matchAll(/<article class="card"[^>]*data-event-start="([^"]*)"[^>]*data-event-end="([^"]*)"[^>]*data-event-status="([^"]*)"/g)];
-assert.equal(soonCards.length, Math.min(12, todayEvents.length), 'home starts-soon cards must mirror the 72-hour today-events feed');
-
 const now = Date.now();
-const windowMs = 72 * 60 * 60 * 1000;
-const toleranceMs = 5 * 60 * 1000;
-for (const [, startsAt, endsAt, status] of soonCards) {
-  const startMs = new Date(startsAt).getTime();
-  const endMs = new Date(endsAt || startsAt).getTime();
-  assert.ok(Number.isFinite(startMs), `home starts-soon card must have a valid start time: ${startsAt}`);
-  assert.notEqual(status, 'ended', `home starts-soon card must not be ended: ${startsAt}`);
-  const isActive = startMs <= now + toleranceMs && Number.isFinite(endMs) && endMs >= now - toleranceMs && startMs >= now - windowMs - toleranceMs;
-  const isUpcomingSoon = startMs >= now - toleranceMs && startMs <= now + windowMs + toleranceMs;
-  assert.ok(isActive || isUpcomingSoon, `home starts-soon card is outside the 72-hour window: ${startsAt}`);
+const dateKey = (value) => new Intl.DateTimeFormat('en-CA', {
+  year: 'numeric', month: '2-digit', day: '2-digit', timeZone: 'Asia/Riyadh'
+}).format(new Date(value));
+const todayKey = dateKey(now);
+const tomorrowKey = dateKey(now + 86400000);
+const weekLimit = now + (7 * 86400000);
+const expectedToday = upcoming.filter((event) => {
+  const start = new Date(event.starts_at).getTime();
+  const end = new Date(event.ends_at || event.starts_at).getTime();
+  return dateKey(start) === todayKey || (event.event_kind !== 'program' && start <= now && end >= now);
+});
+const used = new Set(expectedToday.map((event) => event.id));
+const expectedTomorrow = upcoming.filter((event) => !used.has(event.id) && dateKey(event.starts_at) === tomorrowKey);
+expectedTomorrow.forEach((event) => used.add(event.id));
+const expectedWeek = upcoming.filter((event) => {
+  const start = new Date(event.starts_at).getTime();
+  return !used.has(event.id) && start > now && start <= weekLimit;
+});
+
+const windows = [
+  ['soon', 'today', 'اليوم في السعودية', expectedToday],
+  ['tomorrow', 'tomorrow', 'غدًا', expectedTomorrow],
+  ['week', 'week', 'هذا الأسبوع', expectedWeek]
+];
+const allVisibleLinks = [];
+for (const [id, windowName, heading, expected] of windows) {
+  const match = html.match(new RegExp(`<section class="h-section" id="${id}"[^>]*data-home-window="${windowName}"[^>]*>([\\s\\S]*?)<\\/section>`));
+  assert.ok(match, `home page must expose the ${windowName} timeline section`);
+  assert.match(match[1], new RegExp(`<h2>${heading}<\\/h2>`), `${windowName} section must have a clear public heading`);
+  assert.match(match[1], new RegExp(`<p><b>${expected.length}<\\/b>`), `${windowName} section must disclose its full event count`);
+  const links = [...match[1].matchAll(/<article class="card"[\s\S]*?<a class="cover" href="([^"]+)"/g)].map((card) => card[1]);
+  assert.equal(links.length, Math.min(8, expected.length), `${windowName} cards must match the public timeline window`);
+  allVisibleLinks.push(...links);
 }
+assert.equal(new Set(allVisibleLinks).size, allVisibleLinks.length, 'home timeline sections must not repeat the same event');
 
 function extractAssignedJson(variableName) {
   const pattern = new RegExp(`var ${variableName} = ([\\s\\S]*?);\\n\\s*var `);

@@ -61,6 +61,10 @@ function inspect(file, locale, direction, canonical) {
   assert.equal($('#eventlive-language-runtime').length, 1, `${file} must persist language preference`);
   if (locale === 'en-SA') assert.equal($('link[rel="manifest"]').attr('href'), '/en/manifest.webmanifest');
   const isEnglishEventDetail = locale === 'en-SA' && file.includes(`${path.sep}en${path.sep}events${path.sep}`);
+  if (isEnglishEventDetail) {
+    assert.ok(!source.includes('درجة جاهزية الحضور'), `${file} exposes the retired internal readiness score`);
+    assert.ok(!/<dd>\s*(?:حضوري|عن بعد)\s*<\/dd>/u.test(source), `${file} contains an untranslated attendance type`);
+  }
   const shouldCheckScripts = locale === 'en-SA' && (!isEnglishEventDetail || !eventDetailScriptChecked);
   if (shouldCheckScripts) {
     $('script:not([src]):not([type="application/ld+json"]):not([type="module"])').each((index, element) => {

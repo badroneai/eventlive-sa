@@ -67,11 +67,21 @@ const brandCss = `<style id="eventlive-brand-pulse">
 .breadcrumbs a { color: #0d6b52; }
 .breadcrumbs strong { color: #10231d; font-weight: 800; max-width: 46ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .session { scroll-margin-top: 88px; }
+.attendance-summary h2 { margin: 4px 0 2px; font-size: 1.45rem; }
+.attendance-summary > p { margin: 0; color: var(--muted); }
+.attendance-kicker { color: var(--green); font-size: .82rem; font-weight: 700; }
+.attendance-facts { display:grid; grid-template-columns:1fr 1fr; gap:0 20px; margin:16px 0 4px; border-top:1px solid var(--line); }
+.attendance-fact { min-width:0; padding:11px 0; border-bottom:1px solid var(--line); }
+.attendance-fact dt { color:var(--muted); font-size:.78rem; }
+.attendance-fact dd { margin:2px 0 0; color:var(--ink); font-weight:700; overflow-wrap:anywhere; }
 @media (prefers-reduced-motion: reduce) {
   .brand-word .live-i::after { animation: none; opacity: 1; box-shadow: 0 0 0 3px rgba(229, 72, 77, .18); }
 }
 @media (max-width: 760px) {
   .breadcrumbs strong { max-width: 24ch; }
+  .event-detail .attendance-summary h2 { font-size:1.25rem; }
+  .event-detail .attendance-facts { grid-template-columns:1fr; margin-top:12px; }
+  .event-detail .attendance-fact { padding:9px 0; }
   details.more > summary, .cta-now, .card-foot a, .card-foot button { min-height: 44px; }
   .more-panel a { min-height: 44px; display:flex; align-items:center; }
   .site-head { padding-top:env(safe-area-inset-top); }
@@ -1365,19 +1375,33 @@ function eventCard(event, prefix = './') {
   return `<article class="card" data-event-start="${escapeHtml(event.starts_at || '')}" data-event-end="${escapeHtml(event.ends_at || event.starts_at || '')}" data-event-status="${escapeHtml(event.status || '')}"><img class="cover" src="${escapeHtml(image)}" alt="${escapeHtml(event.image_alt || event.title)}" loading="lazy" /><div class="card-body"><h2 class="title"><a dir="auto" href="${escapeHtml(detail)}">${escapeHtml(event.title)}</a></h2><p>${escapeHtml(event.summary)}</p><div class="meta"><span class="chip${statusClass}" data-runtime-status ${runtimeAttrs(event)}>${escapeHtml(event.status_label)}</span><span class="chip">${escapeHtml(formatDate(event.starts_at))}</span><span class="chip" data-live-time ${runtimeAttrs(event)}>جاري حساب الوقت...</span><span class="chip">${escapeHtml(cityLabel(event.city))}</span><span class="chip">${escapeHtml(event.category_label)}</span></div><a class="cta" href="${escapeHtml(detail)}">تفاصيل الحضور</a></div></article>`;
 }
 
-function readinessSignals(event) {
+function attendanceFacts(event) {
   const online = isOnlineEvent(event);
-  const signals = [
-    ['وقت واضح', Boolean(event.starts_at && event.ends_at)],
-    [`مصدر موثوق · ${event.trust_label || 'مصدر معتمد'}`, Boolean(event.evidence_url || event.source_url)],
-    ['مدينة محددة', Boolean(event.city && event.city !== 'Saudi Arabia')],
-    [online ? 'رابط حضور' : 'موقع قابل للوصول', online ? Boolean(event.source_url || event.evidence_url) : Boolean(event.venue || event.maps_url)],
-    [event.agenda_ready ? 'أجندة متعددة الجلسات' : 'جلسة رسمية', Boolean(event.live_schedule_ready)],
-    ['رابط مشاركة', Boolean(event.share_url)],
-    ['تصنيف مفهوم', Boolean(event.category_label)],
-    ['جمهور مناسب', Boolean(event.audience_labels?.length)]
+  const sessionsCount = Number(event.sessions_count || event.sessions?.length || 0);
+  const sessionsLabel = sessionsCount === 1
+    ? 'جلسة واحدة في الجدول'
+    : sessionsCount === 2
+      ? 'جلستان في الجدول'
+      : sessionsCount <= 10
+        ? `${sessionsCount} جلسات في الجدول`
+        : `${sessionsCount} جلسة في الجدول`;
+  const scheduleLabel = event.agenda_ready && sessionsCount
+    ? sessionsLabel
+    : event.live_schedule_ready
+      ? 'موعد الفعالية مؤكد'
+      : 'تفاصيل المصدر المتاحة';
+  const entryLabel = event.ticket_url
+    ? 'رابط التذاكر متاح'
+    : event.registration_url
+      ? 'رابط التسجيل متاح'
+      : event.price_label || 'راجع المصدر قبل الحضور';
+  const facts = [
+    ['نوع الحضور', online ? 'عن بعد' : 'حضوري'],
+    ['المصدر', event.trust_label || event.source_label || 'مصدر رسمي'],
+    ['تفاصيل البرنامج', scheduleLabel],
+    ['التسجيل والدخول', entryLabel]
   ];
-  return signals.map(([label, ok]) => `<div class="signal-check ${ok ? 'good' : 'warn'}"><b>${ok ? 'جاهز' : 'بحاجة إثراء'}</b><span>${label}</span></div>`).join('');
+  return `<dl class="attendance-facts">${facts.map(([label, value]) => `<div class="attendance-fact"><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join('')}</dl>`;
 }
 
 function eventLocationJsonLd(event, canonical) {
@@ -1753,16 +1777,6 @@ function renderEventDetail(event) {
   const schemaImage = publicAssetUrl(event.image_url);
   const jsonHref = `${event.file_slug}.json`;
   const online = isOnlineEvent(event);
-  const score = [
-    event.starts_at && event.ends_at,
-    event.evidence_url || event.source_url,
-    event.city && event.city !== 'Saudi Arabia',
-    online ? (event.source_url || event.evidence_url) : event.venue,
-    event.live_schedule_ready,
-    event.image_url,
-    event.audience_labels?.length,
-    event.category_label
-  ].filter(Boolean).length;
   const endedNote = event.status === 'ended' && !event.live_schedule_ready
     ? '<p><strong>فعالية مكتملة محفوظة.</strong> اكتملت هذه الفعالية وتبقى في EventLive كسجل طبيعي مثل أي فعالية كانت منشورة ثم انتهت.</p>'
     : '';
@@ -1828,7 +1842,7 @@ ${header(relative)}
 <main>
   ${eventBreadcrumbHtml(event, relative)}
   <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span><span data-runtime-status ${runtimeAttrs(event)}>${escapeHtml(event.status_label)}</span> · ${escapeHtml(event.event_kind_label)}</span><h1>${escapeHtml(event.title)}</h1><p class="lead">${escapeHtml(event.summary)}</p><div class="signal-strip"><div class="signal"><span>المدينة</span><b>${escapeHtml(cityLabel(event.city))}</b></div><div class="signal"><span>البداية</span><b>${escapeHtml(formatDate(event.starts_at))}</b></div><div class="signal"><span>النهاية</span><b>${escapeHtml(formatDate(event.ends_at))}</b></div><div class="signal"><span>الحالة الحية</span><b data-live-time ${runtimeAttrs(event)}>جاري حساب الوقت...</b></div></div>${eventQuickActions(event)}</div></section>
-  <section class="section"><div class="wrap grid"><article class="card"><img class="cover" src="${escapeHtml(image)}" alt="${escapeHtml(event.image_alt || event.title)}" /></article><article class="readiness" aria-label="ملخص جاهزية الحضور"><span>درجة جاهزية الحضور</span><div class="decision-score">${score}/8</div>${endedNote}<div class="signals">${readinessSignals(event)}</div><div class="meta">${eventDetailActions(event)}</div></article></div></section>
+  <section class="section"><div class="wrap grid"><article class="card"><img class="cover" src="${escapeHtml(image)}" alt="${escapeHtml(event.image_alt || event.title)}" /></article><article class="readiness attendance-summary" aria-label="معلومات الحضور"><span class="attendance-kicker">ما تحتاجه قبل الذهاب</span><h2>معلومات الحضور</h2><p>معلومات عملية مرتبطة بالمصدر لمساعدتك قبل الوصول وأثناء الفعالية.</p>${endedNote}${attendanceFacts(event)}<div class="meta">${eventDetailActions(event)}</div></article></div></section>
   ${renderFaqSection(eventFaq, 'ما يحتاجه الزائر بسرعة')}
   ${programOutline}
   ${sessions}
@@ -5287,43 +5301,68 @@ function enhanceHomeRuntime(html, events) {
   return next.replace(/<\/body>/i, `<script id="eventlive-runtime-clock">${liveRuntimeScript().replace(/^<script>|<\/script>$/g, '')}</script>\n</body>`);
 }
 
+function riyadhDateKey(value) {
+  const date = value instanceof Date ? value : new Date(value);
+  if (Number.isNaN(date.getTime())) return '';
+  return new Intl.DateTimeFormat('en-CA', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    timeZone: 'Asia/Riyadh'
+  }).format(date);
+}
+
+function homeTimelineSection({ id, windowName, title, description, events, href, linkLabel }) {
+  const cards = events.slice(0, 8).map((event) => homeEventCard(event)).join('\n');
+  const content = cards || `<p class="empty-state">لا توجد فعاليات مؤكدة في هذه النافذة حتى الآن. <a href="${href}">استعرض أقرب الفعاليات</a>.</p>`;
+  return `<section class="h-section" id="${id}" data-home-window="${windowName}">
+      <div class="h-section-head">
+        <div>
+          <h2>${title}</h2>
+          <p><b>${events.length}</b> <span>${description}</span></p>
+        </div>
+        <a class="more-link" href="${href}">${linkLabel}</a>
+      </div>
+      <div class="card-row" role="region" aria-label="${title}" tabindex="0">
+${content}
+      </div>
+    </section>`;
+}
+
 function patchHomePage(events) {
   const indexPath = path.join(distDir, 'index.html');
   if (!fs.existsSync(indexPath)) return false;
   const html = fs.readFileSync(indexPath, 'utf8');
   const now = Date.now();
   const upcoming = sortEventsByStart(events.filter((event) => event.status !== 'ended'));
-  const upcomingIn72Hours = eventsForWindow(events, now, 72);
+  const todayKey = riyadhDateKey(now);
+  const tomorrowKey = riyadhDateKey(now + (24 * 60 * 60 * 1000));
+  const weekLimit = now + (7 * 24 * 60 * 60 * 1000);
+  const todayEvents = sortEventsByStart(upcoming.filter((event) => {
+    const start = dateValue(event.starts_at)?.getTime();
+    const end = dateValue(event.ends_at || event.starts_at)?.getTime();
+    if (!Number.isFinite(start)) return false;
+    const startsToday = riyadhDateKey(start) === todayKey;
+    const liveMoment = event.event_kind !== 'program' && start <= now && (!Number.isFinite(end) || end >= now);
+    return startsToday || liveMoment;
+  }));
+  const usedIds = new Set(todayEvents.map((event) => event.id));
+  const tomorrowEvents = sortEventsByStart(upcoming.filter((event) => {
+    if (usedIds.has(event.id)) return false;
+    return riyadhDateKey(event.starts_at) === tomorrowKey;
+  }));
+  tomorrowEvents.forEach((event) => usedIds.add(event.id));
+  const weekEvents = sortEventsByStart(upcoming.filter((event) => {
+    if (usedIds.has(event.id)) return false;
+    const start = dateValue(event.starts_at)?.getTime();
+    return Number.isFinite(start) && start > now && start <= weekLimit;
+  }));
   const nextEvent = upcoming.find((event) => dateValue(event.starts_at)?.getTime() > now) || upcoming[0] || events[0];
-  const soonCards = upcomingIn72Hours
-    .slice(0, 12)
-    .map((event) => homeEventCard(event))
-    .join('\n');
-  const comingSection = upcomingIn72Hours.length
-    ? `<section class=\"h-section\" id=\"soon\" data-temporal-window-hours=\"72\">
-      <div class=\"h-section-head\">
-        <div>
-          <h2>يبدأ قريبًا</h2>
-          <p>خلال الساعات الاثنتين والسبعين القادمة</p>
-        </div>
-        <a class=\"more-link\" href=\"./today-events.html\">فعاليات اليوم</a>
-      </div>
-      <div class=\"card-row\" role=\"region\" aria-label=\"فعاليات تبدأ قريبًا\" tabindex=\"0\">
-${soonCards}
-      </div>
-    </section>\n`
-      : `<section class=\"h-section\" id=\"soon\" data-temporal-window-hours=\"72\">
-      <div class=\"h-section-head\">
-        <div>
-          <h2>يبدأ قريبًا</h2>
-          <p>خلال الساعات الاثنتين والسبعين القادمة</p>
-        </div>
-        <a class=\"more-link\" href=\"./today-events.html\">فعاليات اليوم</a>
-      </div>
-      <div class=\"card-row\" role=\"region\" aria-label=\"فعاليات تبدأ قريبًا\" tabindex=\"0\">
-        <p class=\"empty-state\">لا توجد فعاليات ضمن الساعات 72 القادمة. تصفح \"ماذا في هذا الأسبوع؟\".</p>
-      </div>
-    </section>\n`;
+  const timelineSections = [
+    homeTimelineSection({ id: 'soon', windowName: 'today', title: 'اليوم في السعودية', description: 'فعالية تبدأ اليوم أو تجري الآن', events: todayEvents, href: './today-events.html', linkLabel: 'كل فعاليات اليوم' }),
+    homeTimelineSection({ id: 'tomorrow', windowName: 'tomorrow', title: 'غدًا', description: 'فعالية تبدأ غدًا', events: tomorrowEvents, href: './saudi-events-tomorrow.html', linkLabel: 'كل فعاليات الغد' }),
+    homeTimelineSection({ id: 'week', windowName: 'week', title: 'هذا الأسبوع', description: 'فعالية أخرى خلال الأيام السبعة القادمة', events: weekEvents, href: './this-week.html', linkLabel: 'استعرض الأسبوع' })
+  ].join('\n');
   const tenDaysFromNow = now + (10 * 24 * 60 * 60 * 1000);
   const withinTenDays = upcoming.filter((event) => {
     const start = dateValue(event.starts_at)?.getTime();
@@ -5357,7 +5396,8 @@ ${soonCards}
     .replace(/<p>[\d,]+\s+فعالية من\s+[\d,]+\s+مصدرًا مسجلًا · آخر مزامنة:[^<]*<\/p>/, `<p>${events.length} فعالية من ${sourceCount} مصدرًا مسجلًا · آخر مزامنة: ${formatDate(buildAt)} بتوقيت الرياض</p>`)
     .replace(/var ticker = [\s\S]*?;\n\s*var cdD =/, `var ticker = ${scriptValue(ticker)};\n      var cdD =`)
     .replace(/var searchData = [\s\S]*?;\n\s*var input =/, `var searchData = ${scriptValue(searchData)};\n      var input =`)
-    .replace(/<section class=\"h-section\" id=\"soon\"[^>]*>[\s\S]*?<\/section>/, comingSection.trim())
+    .replace(/<section class=\"h-section\" id=\"(?:tomorrow|week)\"[^>]*>[\s\S]*?<\/section>\s*/g, '')
+    .replace(/<section class=\"h-section\" id=\"soon\"[^>]*>[\s\S]*?<\/section>/, timelineSections)
     .replace(/<h3><a href=/g, '<h3><a dir="auto" href=');
   if (nextEvent) {
     next = next

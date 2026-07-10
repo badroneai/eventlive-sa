@@ -140,6 +140,8 @@ function translateText(value = '') {
     [/^(\d+)\s*ساعة$/u, '$1 hr'],
     [/^(\d+)\s*دقيقة$/u, '$1 min'],
     [/^(\d+)\s*فعالية$/u, '$1 events'],
+    [/^(\d+)\s*جلسة في الجدول$/u, '$1 sessions in the schedule'],
+    [/^(\d+)\s*جلسات في الجدول$/u, '$1 sessions in the schedule'],
     [/^·\s*فعالية$/u, '· event'],
     [/^المصدر:\s*(.+)$/u, 'Source: $1'],
     [/^المدينة:\s*(.+)$/u, 'City: $1'],

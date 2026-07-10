@@ -66,10 +66,11 @@ for (const event of samples) {
   const charsetCount = (html.match(/<meta charset="UTF-8"\s*\/?>/gi) || []).length;
   assert.equal(charsetCount, 1, `${event.detail_url} must include exactly one charset meta tag`);
 
-  assert.match(html, /aria-label="ملخص جاهزية الحضور"/, `${event.detail_url} must include the attendance readiness panel`);
-  assert.match(html, /decision-score/, `${event.detail_url} must show an attendance readiness score`);
-  assert.match(html, /وقت واضح/, `${event.detail_url} must show time readiness signal`);
-  assert.match(html, /مصدر موثوق/, `${event.detail_url} must show source readiness signal`);
+  assert.match(html, /aria-label="معلومات الحضور"/, `${event.detail_url} must include public attendance information`);
+  assert.match(html, /ما تحتاجه قبل الذهاب/, `${event.detail_url} must explain the visitor value of the attendance panel`);
+  assert.match(html, /نوع الحضور/, `${event.detail_url} must show the attendance type`);
+  assert.match(html, /تفاصيل البرنامج/, `${event.detail_url} must show public schedule availability`);
+  assert.doesNotMatch(html, /درجة جاهزية الحضور|\d+\/8/, `${event.detail_url} must not expose an internal readiness score`);
   assert.match(html, /جدول حي/, `${event.detail_url} must show live schedule readiness signal`);
   assert.doesNotMatch(html, /href="\.\/events\/[^"]+\.ics"/, `${event.detail_url} must not link to a nested events/events calendar path`);
   assert.match(html, /href="\.\/[^"]+\.ics"/, `${event.detail_url} must link to its sibling calendar file`);
@@ -82,8 +83,8 @@ for (const event of samples) {
     assert.match(html, /اكتملت هذه الفعالية|فعالية مكتملة محفوظة/, `${event.detail_url} must explain ended events as retained records`);
   }
 
-  const signalCount = (html.match(/class="signal-check /g) || []).length;
-  assert.equal(signalCount, 8, `${event.detail_url} must render all attendance readiness signals`);
+  const attendanceFactCount = (html.match(/class="attendance-fact"/g) || []).length;
+  assert.equal(attendanceFactCount, 4, `${event.detail_url} must render four visitor-facing attendance facts`);
 
   const ld = jsonLdScripts(html);
   const eventLd = ld.find((item) => item['@type'] === 'Event');
