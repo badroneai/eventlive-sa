@@ -1,0 +1,151 @@
+{
+  "id": "ended-madinah-chamber-events-غرفة-المدينة-تستضيف-ملتقى-الارشاد-المهني-20240521-df9d3088",
+  "title": "غرفة المدينة تستضيف ملتقى الارشاد المهني",
+  "summary": "بحضور وتشريف سمو أمير منطقة المدينة المنورة #سلمان_بن_سلطان استضافت #غرفة_المدينة_المنورة ملتقى الإرشاد المهني الذي تنظمه إدارة تعليم منطقة المدينة المنورة تحت شعار \"مسارك قدرات واختيار\" بمشاركة كبرى الجهات التعليمية والأكاديمية بالمملكة بهدف تبصير الطلاب والطالبات بالقيم والمهارات التي تتطلبها مهن المستقبل.",
+  "canonical_url": "https://eventme.live/events/ended-madinah-chamber-events-غرفة-المدينة-تستضيف-ملتقى-الارشاد-المهني-20240521-df9d3088.html",
+  "detail_url": "./events/ended-madinah-chamber-events-غرفة-المدينة-تستضيف-ملتقى-الارشاد-المهني-20240521-df9d3088.html",
+  "calendar_url": "./events/ended-madinah-chamber-events-غرفة-المدينة-تستضيف-ملتقى-الارشاد-المهني-20240521-df9d3088.ics",
+  "source_label": "Madinah Chamber Events",
+  "source_url": "https://www.mcci.org.sa/Event/eventDetails?circular=238",
+  "evidence_url": "https://www.mcci.org.sa/Event/eventDetails?circular=238",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T11:06:14.632Z",
+  "verification_method": "official-public-json-api",
+  "freshness_hours": 0,
+  "city": "المدينة المنورة",
+  "venue": "غرفة المدينة المنورة",
+  "venue_address": "غرفة المدينة المنورة",
+  "starts_at": "2024-05-21T22:51:00+03:00",
+  "ends_at": "2024-05-22T00:51:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/غرفة-المدينة-تستضيف-ملتقى-الارشاد-المهني-bedb031a46.jpg",
+  "image_alt": "غرفة المدينة تستضيف ملتقى الارشاد المهني",
+  "category": "فعاليات الغرف التجارية",
+  "category_url": "./categories/chamber-event.html",
+  "audiences": [
+    {
+      "slug": "students",
+      "label": "طلاب وخريجون"
+    },
+    {
+      "slug": "job-seekers",
+      "label": "باحثون عن عمل"
+    },
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "skilled-trades",
+      "label": "مهاريون وحرفيون"
+    },
+    {
+      "slug": "researchers",
+      "label": "باحثون وأكاديميون"
+    }
+  ],
+  "keywords": [
+    "غرفة المدينة تستضيف ملتقى الارشاد المهني",
+    "فعاليات الغرف التجارية",
+    "لقاء حواري",
+    "فعالية",
+    "منتهية",
+    "المدينة المنورة",
+    "غرفة المدينة المنورة",
+    "Madinah Chamber Events",
+    "business",
+    "training",
+    "workshops",
+    "forums",
+    "exhibitions",
+    "Madinah Chamber",
+    "ended-event",
+    "طلاب وخريجون",
+    "باحثون عن عمل",
+    "موظفون ومهنيون",
+    "مهاريون وحرفيون",
+    "باحثون وأكاديميون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2024-05-21T22:51:00+03:00",
+      "ends_at": "2024-05-22T00:51:00+03:00",
+      "room": "غرفة المدينة المنورة",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "غرفة المدينة تستضيف ملتقى الارشاد المهني",
+    "startDate": "2024-05-21T22:51:00+03:00",
+    "endDate": "2024-05-22T00:51:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "غرفة المدينة المنورة",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "غرفة المدينة المنورة",
+        "addressLocality": "المدينة المنورة",
+        "addressRegion": "منطقة المدينة المنورة",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "غرفة المدينة المنورة"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/غرفة-المدينة-تستضيف-ملتقى-الارشاد-المهني-bedb031a46.jpg"
+    ],
+    "description": "بحضور وتشريف سمو أمير منطقة المدينة المنورة #سلمان_بن_سلطان استضافت #غرفة_المدينة_المنورة ملتقى الإرشاد المهني الذي تنظمه إدارة تعليم منطقة المدينة المنورة تحت شعار \"مسارك قدرات واختيار\" بمشاركة كبرى الجهات التعليمية والأكاديمية بالمملكة بهدف تبصير الطلاب والطالبات بالقيم والمهارات التي تتطلبها مهن المستقبل.",
+    "url": "https://eventme.live/events/ended-madinah-chamber-events-غرفة-المدينة-تستضيف-ملتقى-الارشاد-المهني-20240521-df9d3088.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-madinah-chamber-events-غرفة-المدينة-تستضيف-ملتقى-الارشاد-المهني-20240521-df9d3088.html",
+    "isAccessibleForFree": false,
+    "keywords": "غرفة المدينة تستضيف ملتقى الارشاد المهني, فعاليات الغرف التجارية, لقاء حواري, فعالية, منتهية, المدينة المنورة, غرفة المدينة المنورة, Madinah Chamber Events, business, training, workshops, forums, exhibitions, Madinah Chamber, ended-event, طلاب وخريجون, باحثون عن عمل, موظفون ومهنيون, مهاريون وحرفيون, باحثون وأكاديميون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "طلاب وخريجون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "باحثون عن عمل"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مهاريون وحرفيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "باحثون وأكاديميون"
+      }
+    ],
+    "sameAs": [
+      "https://www.mcci.org.sa/Event/eventDetails?circular=238"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.mcci.org.sa/Event/eventDetails?circular=238",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-10T10:08:07.323Z
+- published_at: 2026-07-10T11:12:15.075Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 390
+- candidates_seen: 395
 - published_new: 0
-- linked_existing: 369
+- linked_existing: 374
 - blocked_remaining: 21
 
 ## Blocked summary
@@ -153,6 +153,8 @@
 | candidate-misk-hub-programs-application-deadline-2030-leaders-20260712-68dd4c4c | linked-existing | event-application-deadline-2030-leaders | already linked to catalog event |
 | candidate-riyadh-city-events-mishkat-summer-camp-20260712-704761b4 | linked-existing | event-mishkat-summer-camp | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي-20260712-fd68b684 | linked-existing | event-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي | already linked to catalog event |
+| candidate-umm-al-qura-events-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية-20260712-cacbed34 | linked-existing | event-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية | already linked to catalog event |
+| candidate-umm-al-qura-events-دورة-الفحوصات-المكروبيولوجية-لمياه-الشرب-الأسس-العلمية-والتطبيقات-البحثي-20260712-056dae07 | linked-existing | event-دورة-الفحوصات-المكروبيولوجية-لمياه-الشرب-الأسس-العلمية-والتطبيقات-البحثي | already linked to catalog event |
 | candidate-saudi-university-events-join-us-at-kaust-health-for-respiratory-health-day-20260712-27bf6068 | linked-existing | event-join-us-at-kaust-health-for-respiratory-health-day | already linked to catalog event |
 | candidate-qassim-university-events-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم-20260712-dc748566 | linked-existing | event-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم | already linked to catalog event |
 | candidate-riyadh-city-events-saif-summer-program-20260712-c90d634d | linked-existing | event-saif-summer-program | already linked to catalog event |
@@ -210,6 +212,7 @@
 | candidate-visit-saudi-calendar-pdf-the-comeback-20260725-4a38d19e | linked-existing | event-the-comeback | already linked to catalog event |
 | candidate-riyadh-city-events-summer-splash-running-event-20260725-0b63acb2 | linked-existing | event-summer-splash-running-event | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي-20260726-12263779 | linked-existing | event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي | already linked to catalog event |
+| candidate-umm-al-qura-events-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية-20260726-3aa6cb44 | linked-existing | event-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل-20260726-aa1669c2 | linked-existing | event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل | already linked to catalog event |
 | candidate-misk-hub-programs-entrepreneur-leadership-excellence-program-20260727-dd903886 | linked-existing | event-entrepreneur-leadership-excellence-program | already linked to catalog event |
 | candidate-ithra-events-tinkering-stations-20260727-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
@@ -260,6 +263,7 @@
 | candidate-ithra-events-creative-character-design-20260811-afddf835 | linked-existing | event-creative-character-design | already linked to catalog event |
 | candidate-sfda-events-الإدراج-في-خطوات-20260812-80dbadc1 | linked-existing | event-الإدراج-في-خطوات | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-بطولة-أبطال-المملكة-للشطرنج-20260813-4a38d19e | linked-existing | event-بطولة-أبطال-المملكة-للشطرنج | already linked to catalog event |
+| candidate-umm-al-qura-events-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem-20260816-84787696 | linked-existing | event-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine-20260816-58d47757 | linked-existing | event-معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine | already linked to catalog event |
 | candidate-sfda-events-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة-20260818-a459d8bf | linked-existing | event-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-تجربة-المستخدم-ux-ui-20260823-c81fc88f | linked-existing | event-معسكر-تصميم-تجربة-المستخدم-ux-ui | already linked to catalog event |
@@ -368,6 +372,7 @@
 | candidate-saudi-water-authority-events-the-global-water-sustainability-conference-2026-20261207-86fe6cc5 | linked-existing | event-the-global-water-sustainability-conference-2026 | already linked to catalog event |
 | candidate-dhahran-expo-calendar-emtec-the-environmental-management-technology-exhibitions-conference-20261207-18d15b29 | linked-existing | event-emtec-the-environmental-management-technology-exhibitions-conference | already linked to catalog event |
 | candidate-ithra-events-arabic-calligraphy-woodworks-from-script-to-object-20261208-87dbd1ca | linked-existing | event-arabic-calligraphy-woodworks-from-script-to-object | already linked to catalog event |
+| candidate-madinah-architecture-festival-مهرجان-المدينة-المنورة-الدولي-للعمارة-2026-20261210-7c99a854 | linked-existing | event-مهرجان-المدينة-المنورة-الدولي-للعمارة-2026 | already linked to catalog event |
 | candidate-dhahran-expo-calendar-pfl-mena-final-20261211-18d15b29 | linked-existing | event-pfl-mena-final | already linked to catalog event |
 | candidate-dhahran-expo-calendar-saudi-intl-construction-interior-design-cidex-2026-20261214-18d15b29 | linked-existing | event-saudi-intl-construction-interior-design-cidex-2026 | already linked to catalog event |
 | candidate-dhahran-expo-calendar-ctw-global-ksa-gulf-4p-mach-tools-20261214-18d15b29 | linked-existing | event-ctw-global-ksa-gulf-4p-mach-tools | already linked to catalog event |
@@ -387,7 +392,6 @@
 | candidate-visit-saudi-calendar-eid-al-fitr-20270330-64dfe211 | linked-existing | event-eid-al-fitr | already linked to catalog event |
 | candidate-visit-saudi-calendar-eid-al-adha-20270606-f67747fe | linked-existing | event-eid-al-adha | already linked to catalog event |
 | candidate-eye-of-riyadh-events-esports-world-cup-20260706-13ed17c1 | blocked | - | possible duplicate already exists: event-esports-world-cup |
-| candidate-eventbrite-saudi-riyadh-tech-mixer-and-social-tech-ai-data-it-20260710-5651bfb9 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-dubai-property-expo-in-al-khobar-17th-18th-july-2026-danube-20260717-2dd8b8b7 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eye-of-riyadh-events-oxford-future-of-real-estate-programme-20260805-7c9ee195 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eye-of-riyadh-events-sunaa-2026-20260818-e3819fa8 | blocked | - | publication gate source-evidence is not auto-publishable |
@@ -399,6 +403,7 @@
 | candidate-eventbrite-saudi-sucession-planning-program-20260903-d2b52d25 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-jeddah-fintech-week-2026-20260905-8e9a03b6 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-information-session-with-ie-university-saudi-arabia-in-riyadh-20260907-2b4929f1 | blocked | - | publication gate source-evidence is not auto-publishable |
+| candidate-eventbrite-saudi-25th-wpc-energy-congress-20261011-5909609b | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-information-session-with-ie-university-saudi-arabia-in-riyadh-20261014-d14514bb | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-riyadh-2026-venture-capital-world-summit-20261020-a3f5a1b8 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-cat-show-3rd-season-in-saudi-pet-vet-expo-20261109-a33c98fd | blocked | - | publication gate source-evidence is not auto-publishable |

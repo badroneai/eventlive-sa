@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:دورة تحضير البيئات وتعريف السلالات البكتيرية | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية@eventme.live
+DTSTAMP:20260710T112054Z
+DTSTART:20260712T070000Z
+DTEND:20260721T150000Z
+SUMMARY:دورة تحضير البيئات وتعريف السلالات البكتيرية
+DESCRIPTION:دورة علمية متكاملة في طرق تحضير بيئات تزرييع البكتيريا المستخدمة في فحوصات المياه و الاغذية و كذلك طرق التعرف على البكتيريا و تحديد نوعها
+LOCATION:Umm Al-Qura University
+URL:https://eventme.live/events/event-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية.html
+END:VEVENT
+END:VCALENDAR

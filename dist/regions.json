@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T10:10:45.542Z",
+  "generated_at": "2026-07-10T11:20:54.252Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-saudi-region-coverage",
@@ -9,23 +9,23 @@
     "active_regions": 10,
     "uncovered_regions": 0,
     "zero_active_regions": 3,
-    "active_target_cities": 12,
+    "active_target_cities": 14,
     "target_cities": 38,
-    "events": 841,
-    "active_events": 350,
-    "ended_events": 491
+    "events": 1107,
+    "active_events": 355,
+    "ended_events": 752
   },
   "national_coverage": {
-    "score": 63,
+    "score": 65,
     "verdict": "NEEDS_WORK",
     "active_regions": 10,
     "zero_active_regions": 3,
-    "active_target_cities": 12,
+    "active_target_cities": 14,
     "target_cities": 38,
-    "active_target_city_ratio": 0.3158,
+    "active_target_city_ratio": 0.3684,
     "live_ready_regions": 4,
     "riyadh_active_events": 126,
-    "riyadh_active_share": 0.36,
+    "riyadh_active_share": 0.3549,
     "thresholds": {
       "active_regions_min": 10,
       "active_target_city_ratio_min": 0.5,
@@ -541,106 +541,6 @@
       "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
     },
     {
-      "key": "madinah-region",
-      "label": "منطقة المدينة المنورة",
-      "target_cities": [
-        {
-          "key": "Madinah",
-          "label": "المدينة المنورة"
-        },
-        {
-          "key": "Yanbu",
-          "label": "ينبع"
-        },
-        {
-          "key": "AlUla",
-          "label": "العلا"
-        }
-      ],
-      "covered_cities": [
-        {
-          "key": "Madinah",
-          "label": "المدينة المنورة"
-        },
-        {
-          "key": "Yanbu",
-          "label": "ينبع"
-        },
-        {
-          "key": "AlUla",
-          "label": "العلا"
-        }
-      ],
-      "active_cities": [
-        {
-          "key": "AlUla",
-          "label": "العلا"
-        }
-      ],
-      "active_target_city_count": 1,
-      "active_target_city_ratio": 0.3333,
-      "active_event_target": 10,
-      "missing_target_cities": [],
-      "total": 21,
-      "active": 9,
-      "upcoming": 9,
-      "ongoing": 0,
-      "live": 0,
-      "ended": 12,
-      "live_ready": 0,
-      "source_count": 4,
-      "source_images": 11,
-      "generated_covers": 10,
-      "registered_source_count": 6,
-      "registered_sources": [
-        {
-          "id": "eye-of-riyadh-events",
-          "name": "Eye of Riyadh Events",
-          "ring": "candidate-only",
-          "status": "aggregator",
-          "url": "https://www.eyeofriyadh.com/events/"
-        },
-        {
-          "id": "saudi-winter-calendar-spa",
-          "name": "Saudi Winter Events Calendar",
-          "ring": "monitor-public",
-          "status": "official",
-          "url": "https://www.spa.gov.sa/en/N2183027"
-        },
-        {
-          "id": "hala-yalla",
-          "name": "Hala Yalla",
-          "ring": "candidate-only",
-          "status": "official-marketplace",
-          "url": "https://halayalla.com/sa-en/ticketing"
-        },
-        {
-          "id": "experience-alula-events",
-          "name": "Experience AlUla Events",
-          "ring": "official-feed-preferred",
-          "status": "official",
-          "url": "https://www.experiencealula.com/en/whats-on/events"
-        },
-        {
-          "id": "mdlbeast-events",
-          "name": "MDLBEAST Events",
-          "ring": "monitor-public",
-          "status": "official",
-          "url": "https://mdlbeast.com/events"
-        },
-        {
-          "id": "visit-saudi-calendar-pdf",
-          "name": "Visit Saudi Summer Calendar PDF",
-          "ring": "official-feed-preferred",
-          "status": "official",
-          "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-        }
-      ],
-      "coverage_score": 70,
-      "severity": "healthy",
-      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
-    },
-    {
       "key": "aseer-region",
       "label": "منطقة عسير",
       "target_cities": [
@@ -914,6 +814,124 @@
       "coverage_score": 79,
       "severity": "healthy",
       "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
+    },
+    {
+      "key": "madinah-region",
+      "label": "منطقة المدينة المنورة",
+      "target_cities": [
+        {
+          "key": "Madinah",
+          "label": "المدينة المنورة"
+        },
+        {
+          "key": "Yanbu",
+          "label": "ينبع"
+        },
+        {
+          "key": "AlUla",
+          "label": "العلا"
+        }
+      ],
+      "covered_cities": [
+        {
+          "key": "Madinah",
+          "label": "المدينة المنورة"
+        },
+        {
+          "key": "Yanbu",
+          "label": "ينبع"
+        },
+        {
+          "key": "AlUla",
+          "label": "العلا"
+        }
+      ],
+      "active_cities": [
+        {
+          "key": "Madinah",
+          "label": "المدينة المنورة"
+        },
+        {
+          "key": "AlUla",
+          "label": "العلا"
+        }
+      ],
+      "active_target_city_count": 2,
+      "active_target_city_ratio": 0.6667,
+      "active_event_target": 10,
+      "missing_target_cities": [],
+      "total": 261,
+      "active": 10,
+      "upcoming": 10,
+      "ongoing": 0,
+      "live": 0,
+      "ended": 251,
+      "live_ready": 0,
+      "source_count": 6,
+      "source_images": 113,
+      "generated_covers": 148,
+      "registered_source_count": 8,
+      "registered_sources": [
+        {
+          "id": "eye-of-riyadh-events",
+          "name": "Eye of Riyadh Events",
+          "ring": "candidate-only",
+          "status": "aggregator",
+          "url": "https://www.eyeofriyadh.com/events/"
+        },
+        {
+          "id": "saudi-winter-calendar-spa",
+          "name": "Saudi Winter Events Calendar",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://www.spa.gov.sa/en/N2183027"
+        },
+        {
+          "id": "madinah-chamber-events",
+          "name": "Madinah Chamber Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://www.mcci.org.sa/Event/events"
+        },
+        {
+          "id": "madinah-architecture-festival",
+          "name": "Madinah International Architecture Festival",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://mdc.almunawarah.sa/"
+        },
+        {
+          "id": "hala-yalla",
+          "name": "Hala Yalla",
+          "ring": "candidate-only",
+          "status": "official-marketplace",
+          "url": "https://halayalla.com/sa-en/ticketing"
+        },
+        {
+          "id": "experience-alula-events",
+          "name": "Experience AlUla Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://www.experiencealula.com/en/whats-on/events"
+        },
+        {
+          "id": "mdlbeast-events",
+          "name": "MDLBEAST Events",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://mdlbeast.com/events"
+        },
+        {
+          "id": "visit-saudi-calendar-pdf",
+          "name": "Visit Saudi Summer Calendar PDF",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+        }
+      ],
+      "coverage_score": 82,
+      "severity": "healthy",
+      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
     },
     {
       "key": "riyadh-region",
@@ -1331,12 +1349,16 @@
           "label": "جدة"
         },
         {
+          "key": "Makkah",
+          "label": "مكة"
+        },
+        {
           "key": "Thuwal",
           "label": "ثول"
         }
       ],
-      "active_target_city_count": 2,
-      "active_target_city_ratio": 0.4,
+      "active_target_city_count": 3,
+      "active_target_city_ratio": 0.6,
       "active_event_target": 10,
       "missing_target_cities": [
         {
@@ -1344,17 +1366,17 @@
           "label": "رابغ"
         }
       ],
-      "total": 96,
-      "active": 17,
-      "upcoming": 10,
+      "total": 106,
+      "active": 21,
+      "upcoming": 14,
       "ongoing": 6,
       "live": 1,
-      "ended": 79,
+      "ended": 85,
       "live_ready": 5,
-      "source_count": 10,
-      "source_images": 29,
-      "generated_covers": 67,
-      "registered_source_count": 20,
+      "source_count": 11,
+      "source_images": 33,
+      "generated_covers": 73,
+      "registered_source_count": 21,
       "registered_sources": [
         {
           "id": "webook-explore",
@@ -1495,9 +1517,16 @@
           "ring": "monitor-public",
           "status": "official",
           "url": "https://makkahcci.org.sa/events"
+        },
+        {
+          "id": "umm-al-qura-events",
+          "name": "Umm Al-Qura University Events Center",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://uqu.edu.sa/App/Events"
         }
       ],
-      "coverage_score": 85,
+      "coverage_score": 90,
       "severity": "healthy",
       "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
     }
@@ -1560,18 +1589,18 @@
       "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
     },
     {
-      "key": "madinah-region",
-      "label": "منطقة المدينة المنورة",
-      "coverage_score": 70,
-      "reason": "تحتاج عمقًا أكبر في المدن المستهدفة",
-      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
-    },
-    {
       "key": "aseer-region",
       "label": "منطقة عسير",
       "coverage_score": 73,
       "reason": "تحتاج عمقًا أكبر في المدن المستهدفة",
       "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
+    },
+    {
+      "key": "eastern-region",
+      "label": "المنطقة الشرقية",
+      "coverage_score": 79,
+      "reason": "تحتاج عمقًا أكبر في المدن المستهدفة",
+      "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
     }
   ],
   "links": {

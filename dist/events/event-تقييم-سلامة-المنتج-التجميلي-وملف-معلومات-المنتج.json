@@ -10,12 +10,12 @@
   "evidence_url": "https://www.sfda.gov.sa/ar/workshop/5522011",
   "trust_tier": "official",
   "trust_label": "مصدر حكومي أو رسمي",
-  "verified_at": "2026-07-10T10:08:19.180Z",
+  "verified_at": "2026-07-10T11:12:27.424Z",
   "verification_method": "registered-official",
   "freshness_hours": 0,
   "city": "الرياض",
-  "venue": "Riyadh",
-  "venue_address": "Riyadh",
+  "venue": "Rass",
+  "venue_address": "Rass",
   "starts_at": "2026-07-21T09:30:00+03:00",
   "ends_at": "2026-07-22T14:00:00+03:00",
   "status": "upcoming",
@@ -45,7 +45,7 @@
     "فعالية",
     "قادمة",
     "الرياض",
-    "Riyadh",
+    "Rass",
     "Saudi Food and Drug Authority Events",
     "healthcare",
     "food",
@@ -62,7 +62,7 @@
       "title": "نافذة الحضور",
       "starts_at": "2026-07-21T09:30:00+03:00",
       "ends_at": "2026-07-22T14:00:00+03:00",
-      "room": "Riyadh",
+      "room": "Rass",
       "anchor": "#session-نافذة-الحضور"
     }
   ],
@@ -76,10 +76,10 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Riyadh",
+      "name": "Rass",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Riyadh",
+        "streetAddress": "Rass",
         "addressLocality": "الرياض",
         "addressRegion": "منطقة الرياض",
         "addressCountry": "SA"
@@ -96,7 +96,7 @@
     "url": "https://eventme.live/events/event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج.html",
     "mainEntityOfPage": "https://eventme.live/events/event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج.html",
     "isAccessibleForFree": false,
-    "keywords": "تقييم سلامة المنتج التجميلي وملف معلومات المنتج, ورش تنظيمية وصحية, regulatory workshop, فعالية, قادمة, الرياض, Riyadh, Saudi Food and Drug Authority Events, healthcare, food, pharma, regulation, workshops, conferences, SFDA, workshop, موظفون ومهنيون",
+    "keywords": "تقييم سلامة المنتج التجميلي وملف معلومات المنتج, ورش تنظيمية وصحية, regulatory workshop, فعالية, قادمة, الرياض, Rass, Saudi Food and Drug Authority Events, healthcare, food, pharma, regulation, workshops, conferences, SFDA, workshop, موظفون ومهنيون",
     "audience": [
       {
         "@type": "Audience",

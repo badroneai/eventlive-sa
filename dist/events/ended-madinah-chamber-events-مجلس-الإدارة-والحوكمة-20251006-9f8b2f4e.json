@@ -1,0 +1,124 @@
+{
+  "id": "ended-madinah-chamber-events-مجلس-الإدارة-والحوكمة-20251006-9f8b2f4e",
+  "title": "مجلس الإدارة والحوكمة",
+  "summary": "بتنظيم غرفة المدينة المنورة ومعهد مجالس الإدارات في دول مجلس التعاون الخليجي، وسدكو القابضة، يدعوكم المركز الوطني للمنشآت العائلية للتسجيل في فعالية “مجلس الإدارة والحوكمة”، حيث يشارك نائب الرئيس التنفيذي للمركز، الدكتور سهيل بن منصور التميمي، بورقة عمل بعنوان “الوضع الراهن لحوكمة المنشآت العائلية” والتي تستعرض دراسة أعدها المركز في هذا السياق وتسلّط الضوء على أهمية مبادئ الحوكمة ودورها في تعزيز الاستدامة ورفع كفاءة اتخاذ القرار داخل المنشآت العائلية. لمزيد من التفاصيل وللتسجيل لحضور الفعالية عبر الرابط: https://ncfb.sa/events/details?id=17",
+  "canonical_url": "https://eventme.live/events/ended-madinah-chamber-events-مجلس-الإدارة-والحوكمة-20251006-9f8b2f4e.html",
+  "detail_url": "./events/ended-madinah-chamber-events-مجلس-الإدارة-والحوكمة-20251006-9f8b2f4e.html",
+  "calendar_url": "./events/ended-madinah-chamber-events-مجلس-الإدارة-والحوكمة-20251006-9f8b2f4e.ics",
+  "source_label": "Madinah Chamber Events",
+  "source_url": "https://www.mcci.org.sa/Event/eventDetails?circular=420",
+  "evidence_url": "https://www.mcci.org.sa/Event/eventDetails?circular=420",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T11:06:14.632Z",
+  "verification_method": "official-public-json-api",
+  "freshness_hours": 0,
+  "city": "المدينة المنورة",
+  "venue": "غرفة المدينة المنورة",
+  "venue_address": "غرفة المدينة المنورة",
+  "starts_at": "2025-10-06T21:00:00+03:00",
+  "ends_at": "2025-10-06T23:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-covers/ended-madinah-chamber-events-مجلس-الإدارة-والحوكمة-20251006-9f8b2f4e.svg",
+  "image_alt": "غلاف EventLive لفعالية مجلس الإدارة والحوكمة",
+  "category": "فعاليات الغرف التجارية",
+  "category_url": "./categories/chamber-event.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "entrepreneurs",
+      "label": "رواد أعمال"
+    }
+  ],
+  "keywords": [
+    "مجلس الإدارة والحوكمة",
+    "فعاليات الغرف التجارية",
+    "ورشة عمل",
+    "فعالية",
+    "منتهية",
+    "المدينة المنورة",
+    "غرفة المدينة المنورة",
+    "Madinah Chamber Events",
+    "business",
+    "training",
+    "workshops",
+    "forums",
+    "exhibitions",
+    "Madinah Chamber",
+    "ended-event",
+    "موظفون ومهنيون",
+    "رواد أعمال"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2025-10-06T21:00:00+03:00",
+      "ends_at": "2025-10-06T23:00:00+03:00",
+      "room": "غرفة المدينة المنورة",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "مجلس الإدارة والحوكمة",
+    "startDate": "2025-10-06T21:00:00+03:00",
+    "endDate": "2025-10-06T23:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "غرفة المدينة المنورة",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "غرفة المدينة المنورة",
+        "addressLocality": "المدينة المنورة",
+        "addressRegion": "منطقة المدينة المنورة",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "غرفة المدينة المنورة ومعهد مجالس الإدارات في دول مجلس التعاون الخليجي، وسدكو القابضة،"
+    },
+    "image": [
+      "https://eventme.live/assets/event-covers/ended-madinah-chamber-events-مجلس-الإدارة-والحوكمة-20251006-9f8b2f4e.svg"
+    ],
+    "description": "بتنظيم غرفة المدينة المنورة ومعهد مجالس الإدارات في دول مجلس التعاون الخليجي، وسدكو القابضة، يدعوكم المركز الوطني للمنشآت العائلية للتسجيل في فعالية “مجلس الإدارة والحوكمة”، حيث يشارك نائب الرئيس التنفيذي للمركز، الدكتور سهيل بن منصور التميمي، بورقة عمل بعنوان “الوضع الراهن لحوكمة المنشآت العائلية” والتي تستعرض دراسة أعدها المركز في هذا السياق وتسلّط الضوء على أهمية مبادئ الحوكمة ودورها في تعزيز الاستدامة ورفع كفاءة اتخاذ القرار داخل المنشآت العائلية. لمزيد من التفاصيل وللتسجيل لحضور الفعالية عبر الرابط: https://ncfb.sa/events/details?id=17",
+    "url": "https://eventme.live/events/ended-madinah-chamber-events-مجلس-الإدارة-والحوكمة-20251006-9f8b2f4e.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-madinah-chamber-events-مجلس-الإدارة-والحوكمة-20251006-9f8b2f4e.html",
+    "isAccessibleForFree": false,
+    "keywords": "مجلس الإدارة والحوكمة, فعاليات الغرف التجارية, ورشة عمل, فعالية, منتهية, المدينة المنورة, غرفة المدينة المنورة, Madinah Chamber Events, business, training, workshops, forums, exhibitions, Madinah Chamber, ended-event, موظفون ومهنيون, رواد أعمال",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رواد أعمال"
+      }
+    ],
+    "sameAs": [
+      "https://www.mcci.org.sa/Event/eventDetails?circular=420"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://ncfb.sa/events/details?id=17",
+      "availability": "https://schema.org/InStock",
+      "category": "Registration"
+    }
+  }
+}

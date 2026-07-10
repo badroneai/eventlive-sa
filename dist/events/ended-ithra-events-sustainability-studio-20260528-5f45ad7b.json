@@ -10,11 +10,11 @@
   "evidence_url": "https://www.ithra.com/en/programme/2026/eid-aladha/sustainability-studio",
   "trust_tier": "official-venue",
   "trust_label": "مصدر المكان الرسمي",
-  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verified_at": "2026-07-10T11:06:14.632Z",
   "verification_method": "official-public-algolia-index",
   "freshness_hours": 0,
   "city": "الظهران",
-  "venue": "Lush Garden",
+  "venue": "Ithra - Lush Garden",
   "venue_address": "Lush Garden",
   "starts_at": "2026-05-28T16:00:00+03:00",
   "ends_at": "2026-05-31T23:00:00+03:00",
@@ -49,7 +49,7 @@
     "فعالية",
     "منتهية",
     "الظهران",
-    "Lush Garden",
+    "Ithra - Lush Garden",
     "Ithra Events",
     "culture",
     "arts",
@@ -103,13 +103,18 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Lush Garden",
+      "name": "Ithra - Lush Garden",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Lush Garden",
         "addressLocality": "الظهران",
         "addressRegion": "المنطقة الشرقية",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.3354108,
+        "longitude": 50.1205788
       }
     },
     "organizer": {
@@ -123,7 +128,7 @@
     "url": "https://eventme.live/events/ended-ithra-events-sustainability-studio-20260528-5f45ad7b.html",
     "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-sustainability-studio-20260528-5f45ad7b.html",
     "isAccessibleForFree": true,
-    "keywords": "Sustainability Studio, جامعات ومجتمع, learning, فعالية, منتهية, الظهران, Lush Garden, Ithra Events, culture, arts, creativity, community, exhibitions, Ithra, Activity, Eid AlAdha, ended-event, باحثون وأكاديميون, مبدعون وفنون",
+    "keywords": "Sustainability Studio, جامعات ومجتمع, learning, فعالية, منتهية, الظهران, Ithra - Lush Garden, Ithra Events, culture, arts, creativity, community, exhibitions, Ithra, Activity, Eid AlAdha, ended-event, باحثون وأكاديميون, مبدعون وفنون",
     "audience": [
       {
         "@type": "Audience",

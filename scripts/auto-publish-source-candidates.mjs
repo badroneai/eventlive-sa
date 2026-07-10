@@ -705,20 +705,22 @@ function main() {
         const alreadyLinked = candidate.review_status === 'approved-for-catalog'
           && candidate.matched_catalog_event_id === existingMatch.id;
         const preservePrimaryOfficialRecord = shouldPreservePrimaryOfficialRecord(existingMatch, candidate);
+        const sameSourcePage = normalizeSourceUrl(existingMatch.source_url || existingMatch.evidence_url)
+          === normalizeSourceUrl(candidate.source_url || candidate.evidence_url);
         mergeMissingCandidateEnrichment(existingMatch, candidate);
+        if (sameSourcePage && candidate.venue) {
+          existingMatch.venue = candidate.venue;
+          existingMatch.venue_address = candidate.venue;
+        }
         if ((bilingualAliasMatch || actionIdentityMatch || actionSemanticMatch) && !preservePrimaryOfficialRecord) {
           mergeActionFields(existingMatch, candidate);
         } else if (!windowMatch && !preservePrimaryOfficialRecord) {
           const querySpecificIdentity = sourceIdentityMatch && candidateSourceIdentityKey(candidate).includes('?');
-          const sameSourcePage = normalizeSourceUrl(existingMatch.source_url || existingMatch.evidence_url)
-            === normalizeSourceUrl(candidate.source_url || candidate.evidence_url);
           if (!sourceDateMatch && (!sourceIdentityMatch || querySpecificIdentity)) {
             existingMatch.title = decodeHtml(candidate.title || existingMatch.title);
           }
           if (sameSourcePage && !hasPreciseLiveSchedule(existingMatch)) {
             existingMatch.summary = candidate.rich_summary || candidate.summary || existingMatch.summary;
-            existingMatch.venue = candidate.venue || existingMatch.venue;
-            existingMatch.venue_address = candidate.venue || existingMatch.venue_address;
             existingMatch.category = candidate.category || existingMatch.category;
           }
           if (!hasPreciseLiveSchedule(existingMatch)) {

@@ -1,0 +1,124 @@
+{
+  "id": "ended-madinah-chamber-events-ورشة-عمل-بعنوان-مدخل-الى-عالم-تطوير-التطبيقات-20220702-41bb7c69",
+  "title": "ورشة عمل بعنوان \" مدخل الى عالم تطوير التطبيقات \"",
+  "summary": "نظم مجتمع Google السعودي للمطورين ممثل في مجتمع النساء الرائدات في التقنية بالتعاون مع #غرفة_المدينة_المنورة ورشة عمل بعنوان \" مدخل الى عالم تطوير التطبيقات \" ، تهدف الى التعرف على اشهر ادوات جوجل لتطوير التطبيقات على منصات متعددة",
+  "canonical_url": "https://eventme.live/events/ended-madinah-chamber-events-ورشة-عمل-بعنوان-مدخل-الى-عالم-تطوير-التطبيقات-20220702-41bb7c69.html",
+  "detail_url": "./events/ended-madinah-chamber-events-ورشة-عمل-بعنوان-مدخل-الى-عالم-تطوير-التطبيقات-20220702-41bb7c69.html",
+  "calendar_url": "./events/ended-madinah-chamber-events-ورشة-عمل-بعنوان-مدخل-الى-عالم-تطوير-التطبيقات-20220702-41bb7c69.ics",
+  "source_label": "Madinah Chamber Events",
+  "source_url": "https://www.mcci.org.sa/Event/eventDetails?circular=61",
+  "evidence_url": "https://www.mcci.org.sa/Event/eventDetails?circular=61",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T11:06:14.632Z",
+  "verification_method": "official-public-json-api",
+  "freshness_hours": 0,
+  "city": "المدينة المنورة",
+  "venue": "مبنى غرفة المدينة المنورة",
+  "venue_address": "مبنى غرفة المدينة المنورة",
+  "starts_at": "2022-07-02T22:01:00+03:00",
+  "ends_at": "2022-07-03T00:01:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-covers/ended-madinah-chamber-events-ورشة-عمل-بعنوان-مدخل-الى-عالم-تطوير-التطبيقات-20220702-41bb7c69.svg",
+  "image_alt": "غلاف EventLive لفعالية ورشة عمل بعنوان \" مدخل الى عالم تطوير التطبيقات \"",
+  "category": "فعاليات الغرف التجارية",
+  "category_url": "./categories/chamber-event.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "tech",
+      "label": "تقنيون"
+    }
+  ],
+  "keywords": [
+    "ورشة عمل بعنوان \" مدخل الى عالم تطوير التطبيقات \"",
+    "فعاليات الغرف التجارية",
+    "workshop",
+    "فعالية",
+    "منتهية",
+    "المدينة المنورة",
+    "مبنى غرفة المدينة المنورة",
+    "Madinah Chamber Events",
+    "business",
+    "training",
+    "workshops",
+    "forums",
+    "exhibitions",
+    "Madinah Chamber",
+    "ended-event",
+    "موظفون ومهنيون",
+    "تقنيون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2022-07-02T22:01:00+03:00",
+      "ends_at": "2022-07-03T00:01:00+03:00",
+      "room": "مبنى غرفة المدينة المنورة",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "ورشة عمل بعنوان \" مدخل الى عالم تطوير التطبيقات \"",
+    "startDate": "2022-07-02T22:01:00+03:00",
+    "endDate": "2022-07-03T00:01:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "مبنى غرفة المدينة المنورة",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "مبنى غرفة المدينة المنورة",
+        "addressLocality": "المدينة المنورة",
+        "addressRegion": "منطقة المدينة المنورة",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "نظم مجتمع Google السعودي للمطورين بالتعاون مع غرفة المدينة المنورة"
+    },
+    "image": [
+      "https://eventme.live/assets/event-covers/ended-madinah-chamber-events-ورشة-عمل-بعنوان-مدخل-الى-عالم-تطوير-التطبيقات-20220702-41bb7c69.svg"
+    ],
+    "description": "نظم مجتمع Google السعودي للمطورين ممثل في مجتمع النساء الرائدات في التقنية بالتعاون مع #غرفة_المدينة_المنورة ورشة عمل بعنوان \" مدخل الى عالم تطوير التطبيقات \" ، تهدف الى التعرف على اشهر ادوات جوجل لتطوير التطبيقات على منصات متعددة",
+    "url": "https://eventme.live/events/ended-madinah-chamber-events-ورشة-عمل-بعنوان-مدخل-الى-عالم-تطوير-التطبيقات-20220702-41bb7c69.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-madinah-chamber-events-ورشة-عمل-بعنوان-مدخل-الى-عالم-تطوير-التطبيقات-20220702-41bb7c69.html",
+    "isAccessibleForFree": false,
+    "keywords": "ورشة عمل بعنوان \" مدخل الى عالم تطوير التطبيقات \", فعاليات الغرف التجارية, workshop, فعالية, منتهية, المدينة المنورة, مبنى غرفة المدينة المنورة, Madinah Chamber Events, business, training, workshops, forums, exhibitions, Madinah Chamber, ended-event, موظفون ومهنيون, تقنيون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "تقنيون"
+      }
+    ],
+    "sameAs": [
+      "https://www.mcci.org.sa/Event/eventDetails?circular=61"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.mcci.org.sa/Event/eventDetails?circular=61",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

@@ -15,6 +15,27 @@ function cityMatches(eventCity, venueCity) {
   return !eventNormalized || !venueNormalized || eventNormalized === venueNormalized;
 }
 
+function eventSourceHost(event = {}) {
+  for (const value of [event.source_url, event.evidence_url, event.image_source_url]) {
+    try {
+      if (value) return new URL(value).hostname.toLowerCase().replace(/^www\./, '');
+    } catch {
+      // Ignore malformed optional evidence URLs.
+    }
+  }
+  return '';
+}
+
+function sourceMatches(event, venue) {
+  const allowedHosts = Array.isArray(venue.source_hosts) ? venue.source_hosts : [];
+  if (!allowedHosts.length) return true;
+  const sourceHost = eventSourceHost(event);
+  return Boolean(sourceHost) && allowedHosts.some((host) => {
+    const normalized = String(host || '').toLowerCase().replace(/^www\./, '');
+    return sourceHost === normalized || sourceHost.endsWith(`.${normalized}`);
+  });
+}
+
 export function resolveVenueLocation(event = {}, venues = []) {
   const explicitLatitude = Number(event.latitude ?? event.lat);
   const explicitLongitude = Number(event.longitude ?? event.lng ?? event.lon);
@@ -35,6 +56,7 @@ export function resolveVenueLocation(event = {}, venues = []) {
   let best = null;
   for (const venue of venues) {
     if (!cityMatches(event.city, venue.city)) continue;
+    if (!sourceMatches(event, venue)) continue;
     for (const aliasValue of [venue.name, ...(venue.aliases || [])]) {
       const alias = normalizedVenueText(aliasValue);
       if (alias.length < 5 || !haystack.includes(alias)) continue;

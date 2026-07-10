@@ -1,18 +1,673 @@
 {
-  "generated_at": "2026-07-10T10:09:49.755Z",
+  "generated_at": "2026-07-10T11:14:36.066Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
-    "targets": 394,
-    "cached_total": 420,
-    "fetched": 0,
-    "reused": 388,
+    "targets": 500,
+    "cached_total": 529,
+    "fetched": 109,
+    "reused": 385,
     "failed": 6,
     "skipped_recent_failures": 6,
     "remembered_failures": 9
   },
-  "fetched": [],
+  "fetched": [
+    {
+      "source_url": "https://mdc.almunawarah.sa/_app/immutable/assets/competition-1.DsOvnh1b.jpg",
+      "file": "dist/assets/event-images/مهرجان-المدينة-المنورة-الدولي-للعمارة-2026-969e053170.jpg",
+      "bytes": 283383,
+      "events": 1
+    },
+    {
+      "source_url": "https://static.uqu.edu.sa/assets/images/uqu-gate.jpeg",
+      "file": "dist/assets/event-images/دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية-3157e8ad38.jpg",
+      "bytes": 120292,
+      "events": 4
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/639130210729618368.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-مكافحة-غسل-الأموال-وتمويل-الإرهاب-وتمويل-انتشار-التسلح-لتجار--94f5cb3e51.jpg",
+      "bytes": 338341,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/639021293717559432.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-لائحة-تفضيل-المحتوى-المحلي-fb1bb1e4c7.jpg",
+      "bytes": 101729,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/639039583062326698.png",
+      "file": "dist/assets/event-images/مبادرة-تذوق-السعودية-a7a12b7ddc.png",
+      "bytes": 905144,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/639136274426732702.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-التعريف-بمنصة-قوى-وخدماتها-c40c0fcb51.jpg",
+      "bytes": 331692,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/639021291651514750.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-شهادة-المحتوى-المحلي-f17597cdc9.jpg",
+      "bytes": 108661,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638954892075106070.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-التعريف-بالآلية-المحدثة-لنظام-تصنيف-المقاولين-الجديد-3a48274e97.jpg",
+      "bytes": 243273,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/639021296261751651.png",
+      "file": "dist/assets/event-images/ورشة-عمل-إعطاء-الأفضلية-للمحتوى-المحلي-للشركات-المملوكة-للدولة-634be52ad8.png",
+      "bytes": 1186828,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/639033565297950389.png",
+      "file": "dist/assets/event-images/لقاء-فرص-استثمارية-نحو-بيئة-مستدامة-aca23af9db.png",
+      "bytes": 4481070,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/639034205535291928.png",
+      "file": "dist/assets/event-images/لقاء-التعريف-ببرنامج-تليد-5a15e0c09e.png",
+      "bytes": 5648124,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638954801046010581.jpg",
+      "file": "dist/assets/event-images/فعالية-اكتشف-بُعد-المدينة-المنورة-6072ee15ea.jpg",
+      "bytes": 382333,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638928127361788997.jpg",
+      "file": "dist/assets/event-images/ملتقى-ذات-نخل-للتمور-الفاخرة-fe9558268f.jpg",
+      "bytes": 245040,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/639036945668070257.png",
+      "file": "dist/assets/event-images/ورشة-عمل-التعريف-بالإجراءات-المحدثة-لتصدير-التمور-8dc3654a41.png",
+      "bytes": 6555807,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638838214493138196.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-التعريف-ببرنامج-اكتفاء-وفرص-التوطين-وآلية-التسجيل-والتأهيل-لد-db684116f2.jpg",
+      "bytes": 555204,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638838195584897239.jpg",
+      "file": "dist/assets/event-images/مستجدات-نظام-العمل-واثارها-على-العقود-العمالية-197c9a1fd1.jpg",
+      "bytes": 606678,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638837347857822102.jpg",
+      "file": "dist/assets/event-images/حفل-جائزة-المدينة-للأداء-الحكومي-المتميز-وجائزة-الموظف-المتميز-d34bffc18f.jpg",
+      "bytes": 255549,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/639007509248724698.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-حملة-أهلاً-بأهلِ-الدَار-ba3665b28a.jpg",
+      "bytes": 7309785,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638834002785374314.jpg",
+      "file": "dist/assets/event-images/المسؤولية-الاجتماعية-رؤية-وطموح-117d272ad5.jpg",
+      "bytes": 732740,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638886686189400216.jpg",
+      "file": "dist/assets/event-images/لقــاء-الامتياز-التجاري-كأداة-للتوسع-المستدام-99c09e2195.jpg",
+      "bytes": 4629151,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638828821704575764.jpg",
+      "file": "dist/assets/event-images/حساب-الزكاة-لمكلفي-التقديري-والحسابات-وفق-أحكام-اللائحة-التنفيذية-لجبا-b94d6e9b6e.jpg",
+      "bytes": 572379,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638838192376323287.jpg",
+      "file": "dist/assets/event-images/دور-الصندوق-بتمويل-المزارع-الريفية-403a4708c1.jpg",
+      "bytes": 1516968,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638831302465674129.jpg",
+      "file": "dist/assets/event-images/حفل-ختام-برنامج-أفق-1ce761c3df.jpg",
+      "bytes": 348655,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638825333091605657.png",
+      "file": "dist/assets/event-images/رحلة-التسجيل-العيني-للعقار-وخدمات-السجل-العقاري-ebdb81eb45.png",
+      "bytes": 258607,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638833005440783366.jpg",
+      "file": "dist/assets/event-images/تحسين-كفاءة-العمليات-التشغيلية-للمنشآت-الصغيرة-والمتوسطة-3bbfade26f.jpg",
+      "bytes": 591737,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638828839270549278.jpg",
+      "file": "dist/assets/event-images/لقاء-استعدادات-مرافق-الضيافة-السياحية-لـموسم-الحج1446-97244f0134.jpg",
+      "bytes": 553186,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638808968780713267.jpg",
+      "file": "dist/assets/event-images/لقاء-قطاع-السياحة-والترفيه-مع-الجهات-الداعمة-2bb149acac.jpg",
+      "bytes": 40655,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638825328215888851.png",
+      "file": "dist/assets/event-images/حصر-التحديات-والمعوقات-لقطاع-الضيافة-a363fca788.png",
+      "bytes": 289732,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638809693713086563.jpg",
+      "file": "dist/assets/event-images/برنامج-تدريبي-بعنوان-تطبيقات-مايكروسوفت-أوفيس-المكتبية-المتقدمة-e12a554a37.jpg",
+      "bytes": 56151,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638826316131943363.png",
+      "file": "dist/assets/event-images/لقاء-مع-المستثمرين-بالمدينة-المنورة-لمناقشة-استعدادات-مرافق-الضيافة-ال-d09f8dfa4a.png",
+      "bytes": 228755,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638826240043796752.jpg",
+      "file": "dist/assets/event-images/الجمعية-العمومية-العادية-91060f5754.jpg",
+      "bytes": 64056,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638808965318356958.jpeg",
+      "file": "dist/assets/event-images/معرض-فرنشايز-ماركت-df5b393453.jpg",
+      "bytes": 411206,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638826141475937730.jpg",
+      "file": "dist/assets/event-images/لقاء-القطاع-العقاري-بمنطقة-المدينة-المنورة-bd919ad06e.jpg",
+      "bytes": 37305,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638826173269573512.jpg",
+      "file": "dist/assets/event-images/لقاء-قطاع-خدمات-الحج-والعمرة-بمنطقة-المدينة-المنورة-241c1663ed.jpg",
+      "bytes": 34636,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638825346799178604.png",
+      "file": "dist/assets/event-images/مؤتمر-ومعرض-الحج-459ef746f1.png",
+      "bytes": 295109,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638826942067284259.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-الذكاء-الاصطناعي-والابتكار-في-خدمات-العمرة-معايير-الضيافة-وال-17bbbfd879.jpg",
+      "bytes": 247932,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638826936113991547.jpg",
+      "file": "dist/assets/event-images/منتدى-العمرة-والزيارة-e471020b77.jpg",
+      "bytes": 338780,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638826135367062791.png",
+      "file": "dist/assets/event-images/ورشة-المحتوى-المحلي-وفائدته-للمنشآت-a8b8c21188.png",
+      "bytes": 291146,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638826939917943912.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-خدمات-الإيواء-والسكن-بمنطقة-المدينة-المنورة-4c5c3ce217.jpg",
+      "bytes": 639231,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638948039110178473.png",
+      "file": "dist/assets/event-images/فرص-التجارة-الإلكترونية-في-القطاعات-الواعدة-28f66a8c1b.png",
+      "bytes": 11847879,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638825356566925613.png",
+      "file": "dist/assets/event-images/الابتكار-وريادة-الأعمال-في-منظومة-الحج-0b52b5adbf.png",
+      "bytes": 173989,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/06edddb7-f035-4ef4-bc3d-b40d56e137be_.....jpg",
+      "file": "dist/assets/event-images/لقاء-افتراضي-بعنوان-الخدمات-المقدمة-من-مؤسسة-البريد-السعودي-سبل-إلى-ال-7f6466e87f.jpg",
+      "bytes": 22634,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/37219f32-323f-44fb-8f79-c9f8a9518852_%D8%B2%D8%B2.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-بعنوان-الاستثمار-والتخصيص-بالأندية-الرياضية-السعودية-d2499f418f.jpg",
+      "bytes": 27449,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/7bbaf3c4-8991-49e2-81ed-49b0f859782c_ab8e4922-4194-4fb1-9006-5fe185bd22a6.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-بعنوان-برنامج-الدعم-الفني-لرواد-وقاء-من-القطاع-الخاص-بمرحلته--1da51fd146.jpg",
+      "bytes": 29234,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/aec8e491-01b2-479c-a080-d6ba5f33de7d_123.jpg",
+      "file": "dist/assets/event-images/لقاء-معالي-نائب-وزير-الصناعة-والثروة-المعدنية-لشؤون-الصناعة-c1f1bdca27.jpg",
+      "bytes": 176170,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638825375681575816.png",
+      "file": "dist/assets/event-images/منتدى-المدينة-للصناعة-والمحتوى-المحلي-d82f4c44c5.png",
+      "bytes": 339925,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/44da2542-4924-498f-8fac-9242707f4e35_%D8%A9%D8%A9.jpg",
+      "file": "dist/assets/event-images/التعريف-بالتحديثات-على-نظام-وآلية-التصنيف-المقاولين-bb7e90e14d.jpg",
+      "bytes": 43194,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/1aa6314e-f68d-4326-b52f-f54565bb90ec_GTkoKmCXwAAnqYD.jpg",
+      "file": "dist/assets/event-images/واقع-منشآت-القطاع-غير-الربحي-a66bf3ebf4.jpg",
+      "bytes": 29085,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/41d63964-4e9d-4dfc-ac53-98f0c0432b19_%D8%B1%D9%88%D8%A7%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20(2).jpg",
+      "file": "dist/assets/event-images/أساليب-الاستثمار-ودورها-في-المنظومة-الريادية-5ea59954ab.jpg",
+      "bytes": 43550,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/05898c95-0a52-49c1-887a-dfdf58c006ec_%D8%A8%D8%B1%D8%B4%D9%88%D8%B1%20%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%84%20%D8%A7%D9%84%D9%85%D8%A4%D8%B3%D8%B3%D9%8A%20%D9%84%D9%84%D9%85%D9%86%D8%B4%D8%A2%D8%AA%20%20%D8%A7%D9%84%D8%B9%D8%A7%D8%A6%D9%84%D9%8A%D8%A9%20000.jpg",
+      "file": "dist/assets/event-images/التحول-المؤسسي-للمنشآت-العائلية-a265ad8bc1.jpg",
+      "bytes": 76441,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/cce65da3-bfce-4bba-abe4-6f3cded895ae_%D8%B4%D8%B1%D8%AD%20%D9%86%D8%B8%D8%A7%D9%85%20%D8%A7%D9%84%D8%A8%D9%8A%D8%B9%20%D9%88%D8%A7%D9%84%D8%AA%D8%A3%D8%AC%D9%8A%D8%B1%20%D9%84%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9-01%20(00000002).jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-شرح-نظام-البيع-والتأجير-في-المشروعات-العقارية-03b97c0f29.jpg",
+      "bytes": 25223,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/cfdf1095-585e-4d3f-8461-434695de903e_GTGnpyhWgAA7unu.jpg",
+      "file": "dist/assets/event-images/صيف-ورث-2024-في-غرفة-المدينة-المنورة-d46e8f2103.jpg",
+      "bytes": 123905,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/638825353228424478.png",
+      "file": "dist/assets/event-images/منتدى-المدينة-المنورة-لاستثمار-98cf83809a.png",
+      "bytes": 286559,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/2ce96ed4-1ae3-4d80-b03f-eed80c7b1ae3_GRFjOYLXAAA9-ax.jpg",
+      "file": "dist/assets/event-images/اساسيات-devops-نحو-عملية-تطوير-مستدامة-9a2b16ed24.jpg",
+      "bytes": 84459,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/ce15b8f7-5313-4123-9568-5c22bdda8e73_GSmomn1WoAA7KBo%20(2).jpg",
+      "file": "dist/assets/event-images/دور-الخطوط-السعودية-في-الحج-والعمرة-والسياحة-055ea8c474.jpg",
+      "bytes": 111385,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/2592011b-66ab-4238-8f35-31b4de937591_GQxUxmWXsAAoKMX.jpeg",
+      "file": "dist/assets/event-images/دورة-تدريبية-بعنوان-التدريب-على-استخدام-نظام-الأسواق-الموسمية-وعلى-متط-fa53bd2907.jpg",
+      "bytes": 78224,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/65ec40f0-22e3-4adc-99d9-40950ca6f6f3_GReyBerWkAAftrH.jpg",
+      "file": "dist/assets/event-images/قياس-الاداء-باستخدام-excel-7ef24a64d9.jpg",
+      "bytes": 131499,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/a8e78480-72c0-480b-9291-2421ff525317_%D9%88%D8%B1%D8%B4%D9%87%20%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D9%8A%D9%81%20%D8%A8%D8%A7%D9%84%D9%81%D8%B1%D8%B5%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D9%8A%D9%87%20%D8%A8%D9%85%D9%86%D8%B7%D9%82%D9%87%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D9%87.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-التعريف-بالفرص-الاستثماريه-بمنطقه-المدينه-2b2f25079d.jpg",
+      "bytes": 120067,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/fee92aa2-2cb4-4933-902b-0aaee4e2bd27_%D8%AF%D8%B9%D9%88%D8%A9%20%D9%84%D8%AD%D9%85%D9%84%D8%A9%20%D8%A7%D9%84%D8%B1%D8%B7%D8%A8.jpg",
+      "file": "dist/assets/event-images/فعالية-الاعلان-عن-موعد-جني-الرطب-بعنوان-تباشير-الرطب-3d6df8c5ff.jpg",
+      "bytes": 32514,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/e99343b5-d440-4933-ab98-bd315325d312_11.jpg",
+      "file": "dist/assets/event-images/غرفة-المدينة-تدشن-تطبيقها-الرسمي-fbc902fa48.jpg",
+      "bytes": 82165,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/23ff0bee-36d5-4ae5-b578-4825187cebba_GQ_YljDWsAAwyqQ.jpeg",
+      "file": "dist/assets/event-images/ورشة-عمل-بعنوان-تحليل-الأداء-لقياس-كفاءة-المنشآت-7711287a9f.jpg",
+      "bytes": 117451,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/ee40ac08-7a7b-461f-940e-36878edf6486_WhatsApp%20Image%202024-06-24%20at%201.36.24%20PM.jpeg",
+      "file": "dist/assets/event-images/ورشة-عمل-عمل-بعنوان-التسويق-الرقمي-d0feb01ef9.jpg",
+      "bytes": 191971,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/a3c09918-56a7-47e5-9d48-7756efa29356_GPkugQEWMAAySog.jpg",
+      "file": "dist/assets/event-images/جلسة-حوارية-بعنوان-جهود-برنامج-خدمة-ضيوف-الرحمن-96a051fed3.jpg",
+      "bytes": 77621,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/5a429f58-8966-4206-91a0-c8a178d0cee1_GQ64P3dXsAAvGtw.jpeg",
+      "file": "dist/assets/event-images/تحت-شعار-ترك-التدخين-قرار-اثره-استقرار-6a92d88c34.jpg",
+      "bytes": 68041,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/ebe20d5f-1487-4cf1-aa01-225e504569c7_1.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-شرح-برامج-هدف-ومنصة-جدارات-9ed111b459.jpg",
+      "bytes": 33532,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/0ac20e47-4840-4b4b-ba88-9df10bd91fff_1.jpg",
+      "file": "dist/assets/event-images/غرفة-المدينة-تستضيف-ملتقى-الارشاد-المهني-bedb031a46.jpg",
+      "bytes": 91978,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/27644c3c-c79d-4315-92da-03e3b004f6b6_12.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-تعريفية-لأعمال-أنظمة-الطاقة-الشمسية-الكهروضوئية-الصغيرة-401b62a987.jpg",
+      "bytes": 59197,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/49c67caa-c662-4f24-b340-0aef5bfa59df_1.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-مبادرة-الإعفاء-من-غرامات-التأخير-والمخالفات-للمنشآت-0a21ef810f.jpg",
+      "bytes": 165467,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/5d99ab9b-ea2c-48d2-af2a-94593c4cee6a_1.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-بعنوان-نحو-شراكة-فاعلة-بين-القطاع-الخاص-والقطاع-الثالث-لتطوير-74079bfdac.jpg",
+      "bytes": 134385,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/3c522575-c1f0-44e2-b43f-31718bc4cef0_1.jpg",
+      "file": "dist/assets/event-images/لقاء-معالي-وزير-الاتصالات-26fedc9f3e.jpg",
+      "bytes": 58618,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/dc0c8e6d-2b97-4a12-bbd1-b92f6bd3b330_GLxtxSQX0AAfMkm.jpg",
+      "file": "dist/assets/event-images/مشاركة-غرفة-المدينة-المنورة-في-منتدى-العمرة-والزيارة-a01969e1b0.jpg",
+      "bytes": 179066,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/c3fb14bb-6916-4de7-a7db-114e03742248_A50.jpg",
+      "file": "dist/assets/event-images/غرفة-المدينة-المنورة-تستضيف-منتدى-منافع-بنسخته-الثــانية-4a2dfc8a02.jpg",
+      "bytes": 166726,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/af5e32e9-8b34-4e55-8af6-1bf7e9fa1fe7_GIYHCSjW8AAd0ce.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-محاكاة-ادارة-الاعمال-f4a2c5b7b7.jpg",
+      "bytes": 32335,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/06ddc9a3-c625-49ea-950b-e3533b35334b_%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%8A%D8%A7%D8%AF.jpg",
+      "file": "dist/assets/event-images/لقاء-وفد-اصحاب-الاعمال-السعودي-التركي-8d26117d3f.jpg",
+      "bytes": 132496,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/3d9d43df-b2f5-491a-a321-1928c4e7aaed_A250.jpg",
+      "file": "dist/assets/event-images/لقاءات-رمضانية-باب-الاعمال-1434061ed0.jpg",
+      "bytes": 113202,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/30220fc6-13ba-4e8c-9c22-064a3a1c3ddd_GJJZl6bXEAAQUIe.jpg",
+      "file": "dist/assets/event-images/لقاء-مع-المهندس-عبدالله-الغامدي-الرئيس-التنفيذي-للتسويق-في-ذا-شفز-63a62a8bce.jpg",
+      "bytes": 184232,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/41886c54-ed9f-4416-a169-cb75c5256d24_A250.jpg",
+      "file": "dist/assets/event-images/الاعلان-عن-اولى-لقاءات-رمضانية-باب-الاعمال-768d7bfa5e.jpg",
+      "bytes": 113202,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/c965d9cc-e80b-4dce-9279-e3130eb44c21_A250.jpg",
+      "file": "dist/assets/event-images/دعوة-الجمعية-العمومية-للعام-المالي-2023م-1bd87edc25.jpg",
+      "bytes": 191469,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/a1ca40d3-86a2-477b-a6c0-d40bd18ab3b7_%D8%B9%D9%87%D8%AF.jpg",
+      "file": "dist/assets/event-images/منتدى-البركة-للاقتصاد-الإسلامي-ندوة-البركة-44-تحت-عنوان-مقاصد-الشريعة--231e766a2c.jpg",
+      "bytes": 182558,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/93220e25-bd17-4ca1-bcde-193b9ec41e04_GHVaT4-XcAAouiI.jpg",
+      "file": "dist/assets/event-images/معسكر-رواد-الازياء-c60de54a5e.jpg",
+      "bytes": 70396,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/0864de03-2fc9-4e8a-81ff-30255c762ec7_m11.jpg",
+      "file": "dist/assets/event-images/منتدى-مكة-للحلال-الحدث-العالمي-لرفع-الوعي-بالصناعات-الحلال-7d9cad5345.jpg",
+      "bytes": 114633,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/82d36f17-0448-4ad9-ad45-fe94567edffb_11112121.jpg",
+      "file": "dist/assets/event-images/اللقاء-التعريفي-عن-البرامج-التمويلية-بصندوق-التنمية-السياحي-42651d30a1.jpg",
+      "bytes": 55583,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/c455833f-b019-4695-a4fd-cbd510742b8a_e1.jpg",
+      "file": "dist/assets/event-images/تحتضن-غرفة-مكة-المكرمة-للمعارض-إقامة-فعاليات-المؤتمر-السعودي-الدولي-لل-7cae275378.jpg",
+      "bytes": 57455,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/c192d64b-9e4a-4974-9bdb-de38c7f79a3a_maden01.png",
+      "file": "dist/assets/event-images/ورشة-عمل-الفرص-الاستثمارية-لشركة-معادن-9704421d5c.png",
+      "bytes": 74644,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/3bdbb89a-db96-4ef5-ab7d-5fbe0d04a3f1_WhatsApp%20Image%202023-12-28%20at%202.21.48%20PM.jpeg",
+      "file": "dist/assets/event-images/مؤتمر-ومعرض-خدمات-الحج-والعمرة-2024-6a37c30bcf.jpg",
+      "bytes": 49328,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/c95584c9-c66e-4b8b-bbcd-5a30ff2127ee_meet.jpg",
+      "file": "dist/assets/event-images/لقاء-بعنوان-الدعم-والإرشاد-لأصحاب-المشاريع-الصغيرة-والمتوسطة-في-القطاع-6f274c7caf.jpg",
+      "bytes": 85376,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/c644a461-22e4-4f0a-ad68-add980cc0936_2255.jpg",
+      "file": "dist/assets/event-images/الجمعية-العمومية-الغير-عادية-الأربعاء،-13-سبتمبر-2023م-075c88b9d9.jpg",
+      "bytes": 67603,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/11731c95-8d93-44e1-9a35-a04881bc1479_6060.jpg",
+      "file": "dist/assets/event-images/قامت-غرفة-المدينة-المنورة-بتنظيم-لقاء-تعريفي-برعاية-محافظ-المهد-سعادة--1a8cc8f6b5.jpg",
+      "bytes": 140945,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/bf43ddd5-9415-4866-b78a-195ec487cedd_999.jpg",
+      "file": "dist/assets/event-images/استقبل-سعادة-رئيس-مجلس-إدارة-غرفة-المدينة-المنورة-والأمين-العام-ورئيس--83b64a3a86.jpg",
+      "bytes": 18551,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/95f7882a-f0fe-40dd-bb9b-aa07265beebb_2222.jpg",
+      "file": "dist/assets/event-images/سمو-نائب-أمير-منطقة-المدينة-المنورة،-سعود-بن-خالد-الفيصل-يفتتح-أعمال-م-8de956e879.jpg",
+      "bytes": 220835,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/e80ab5bd-616d-4d99-b720-6ea8c7583e12_3030.jpg",
+      "file": "dist/assets/event-images/اقامت-غرفة-المدينة-المنورة-بالتعاون-مع-وزارة-الشؤون-البلدية-والقروية-و-e4e20dbbbd.jpg",
+      "bytes": 127116,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/259a8777-db54-4905-ae46-3f48425403e3_2020.jpg",
+      "file": "dist/assets/event-images/اقامت-غرفة-المدينة-المنورة-بالتعاون-مع-صندوق-تنمية-الموارد-البشرية-ورش-94a5b7b62d.jpg",
+      "bytes": 118943,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/cc76fba4-bffe-4d9f-8186-77f570999260_gg.jpg",
+      "file": "dist/assets/event-images/اجتماع-الجمعية-العمومية-للعام-المالي-2022م-bb77101110.jpg",
+      "bytes": 198936,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/d0b1b8dc-7479-44d8-bbfe-8c1421365c9f_7788998.jpg",
+      "file": "dist/assets/event-images/نظمت-غرفة-المدينة-المنورة-لقاء-مع-وزارة-النقل-والخدمات-اللوجستية-بحضور-e2af127d2a.jpg",
+      "bytes": 202715,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/73abdf35-0ec5-42ac-b62d-feee4b32d35c_855.jpg",
+      "file": "dist/assets/event-images/اقامت-غرفة-المدينة-المنورة-لقاء-أساليب-البناء-الحديث-بالتعاون-مع-وزارة-0521b71b72.jpg",
+      "bytes": 310035,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/e197c297-67c7-4054-9a96-bb57331a5760_hh.jpg",
+      "file": "dist/assets/event-images/السحور-الريادي-السنوي-بـغرفة-المدينة-المنورة-لرواد-ورائدات-الأعمال-بال-3ea7dd69c7.jpg",
+      "bytes": 196655,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/ba0a6ca7-ac93-4680-b5c9-a150c0c8df09_Frp6HxtWAAgu6Hw.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-بعنوان-دراسة-سياسات-التوطين-في-المملكة-0fe4a0fe4d.jpg",
+      "bytes": 199067,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/7560f2fa-d725-4f7a-894f-275d8cf1f242_kk.jpg",
+      "file": "dist/assets/event-images/استقبال-الوفد-الأوزبكي-لمناقشة-أبرز-الميزات-النسبية-والتنافسية-التي-تح-1a9d139cf5.jpg",
+      "bytes": 200119,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/4064bcd8-5bdb-49df-99f5-953bdb59ec26_fr.jpg",
+      "file": "dist/assets/event-images/زيارة-سعادة-سفير-جمهورية-فرنسا-لغرفة-المدينة-المنورة-لمناقشة-منطقة-الم-450498c170.jpg",
+      "bytes": 89683,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/b62aba15-fcc3-4445-a383-801d33169cdb_Frp6HxtWAAgu6Hw.jpeg",
+      "file": "dist/assets/event-images/لقاء-التزام-للمسؤولية-الاجتماعية-196c8e737b.jpg",
+      "bytes": 251208,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/46e2af7f-edbe-4357-b3df-8b41260d79f4_mlhmh.jpg",
+      "file": "dist/assets/event-images/يوم-المرأة-العالمي-بغرفة-المدينة-المنورة-cf52ac7be4.jpg",
+      "bytes": 70319,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/50195727-8902-40e3-b2e6-821ff5d98923_work.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-بعنوان-دراسة-سياسات-التوطين-في-المملكة-f01dcff65b.jpg",
+      "bytes": 69872,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/59eccc4d-79c1-4ab7-904b-c5c4031343d1_sabb.jpg",
+      "file": "dist/assets/event-images/اجتماع-غرفة-المدينة-المنورة-مع-العضو-المنتدب-و-الرئيس-التنفيذي-لـبنك-س-ec242cf08c.jpg",
+      "bytes": 133314,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/8b1d097d-599d-472c-9989-2c8dcff6a125_852.jpg",
+      "file": "dist/assets/event-images/لقاء-تعريفي-بعنوان-المطابخ-السحابية-70ba096ef5.jpg",
+      "bytes": 83560,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/6b8c4a5f-3e30-4278-8c95-76557d1a7b06_kjj.jpg",
+      "file": "dist/assets/event-images/لقاء-بعنوان-مناقشة-التحديات-التي-تواجه-قطاعات-الاعمال-بالمنطقة-والتعرف-7c6f25768e.jpg",
+      "bytes": 191172,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/abafadcc-0ef5-4d92-8a92-687a740b81fe_hhh.jpg",
+      "file": "dist/assets/event-images/أفضل-فريق-عمل-في-أفضل-بيئة-عمل-great-place-to-work-5fb1565d21.jpg",
+      "bytes": 154560,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/cf73f574-26c8-4394-9bc3-5e0f62232ef3_65.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-لائحة-تفضيل-المحتوى-المحلي-والمنشآت-الصغيرة-والمتوسطة-المحلية-2f154e84e6.jpg",
+      "bytes": 122881,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/ce8231b8-b31f-45a4-9c07-291b391c20be_ind2.jpg",
+      "file": "dist/assets/event-images/زيارة-وفد-أصحاب-الأعمال-الاندونيسي-مع-نظرائهم-من-الشركات-السعودية-في-م-bfd3496272.jpg",
+      "bytes": 98011,
+      "events": 1
+    },
+    {
+      "source_url": "https://services.mi.org.sa/upload/events/main/c9f216f5-93d5-4ad8-888f-05c5acffd86b_111.jpeg",
+      "file": "dist/assets/event-images/لقاء-مع-معالي-الأستاذ-أحمد-الخطيب-بهدف-مناقشة-أبرز-المستجدات-في-القطاع-f226c42e1a.jpg",
+      "bytes": 391546,
+      "events": 1
+    }
+  ],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -1937,21 +2592,6 @@
     {
       "source_url": "https://ssa.gov.sa/media/mm2heimx/space.webp?width=1400&height=788&rnd=133492254180630000",
       "file": "dist/assets/event-images/saudi-space-exhibitions-3cf4817744.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://ssa.gov.sa/media/4pyhjdal/iac2022.webp?width=1400&height=788&rnd=133492252309270000",
-      "file": "dist/assets/event-images/international-astronautical-congress-iac2022-in-paris-795d13acaf.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://ssa.gov.sa/media/oahm3dev/general-photos-11.webp?width=1400&height=788&rnd=133548586078130000",
-      "file": "dist/assets/event-images/saudi-space-commission-launches-madar-training-program-9b31794226.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://ssa.gov.sa/media/xixebxn0/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D8%AF%D9%81%D8%A7%D8%B9.webp?width=1400&height=788&rnd=133492254989230000",
-      "file": "dist/assets/event-images/world-defense-show-2022-8e60dabcc1.webp",
       "events": 1
     }
   ],

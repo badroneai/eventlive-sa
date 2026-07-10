@@ -10,7 +10,7 @@
   "evidence_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
   "trust_tier": "official",
   "trust_label": "مصدر حكومي أو رسمي",
-  "verified_at": "2026-07-10T10:08:07.323Z",
+  "verified_at": "2026-07-10T11:12:15.075Z",
   "verification_method": "registered-official",
   "freshness_hours": 0,
   "city": "جدة",
@@ -40,10 +40,6 @@
     {
       "slug": "creatives",
       "label": "مبدعون وفنون"
-    },
-    {
-      "slug": "sports",
-      "label": "رياضة ولياقة"
     }
   ],
   "keywords": [
@@ -60,8 +56,7 @@
     "entertainment",
     "sports",
     "مهاريون وحرفيون",
-    "مبدعون وفنون",
-    "رياضة ولياقة"
+    "مبدعون وفنون"
   ],
   "sessions": [
     {
@@ -102,7 +97,7 @@
     "url": "https://eventme.live/events/event-معرض-في-تتبّع-ذكريات-غامرة.html",
     "mainEntityOfPage": "https://eventme.live/events/event-معرض-في-تتبّع-ذكريات-غامرة.html",
     "isAccessibleForFree": false,
-    "keywords": "معرض في تتبّع ذكريات غامرة, ثقافة وفنون, culture and arts, برنامج ممتد, برنامج جارٍ, جدة, Visit Saudi Summer Calendar PDF, tourism, seasons, culture, entertainment, sports, مهاريون وحرفيون, مبدعون وفنون, رياضة ولياقة",
+    "keywords": "معرض في تتبّع ذكريات غامرة, ثقافة وفنون, culture and arts, برنامج ممتد, برنامج جارٍ, جدة, Visit Saudi Summer Calendar PDF, tourism, seasons, culture, entertainment, sports, مهاريون وحرفيون, مبدعون وفنون",
     "audience": [
       {
         "@type": "Audience",
@@ -111,10 +106,6 @@
       {
         "@type": "Audience",
         "audienceType": "مبدعون وفنون"
-      },
-      {
-        "@type": "Audience",
-        "audienceType": "رياضة ولياقة"
       }
     ],
     "sameAs": [

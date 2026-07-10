@@ -10,12 +10,12 @@
   "evidence_url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/childrens-book-fair/paper-book-libraries-world",
   "trust_tier": "official-venue",
   "trust_label": "مصدر المكان الرسمي",
-  "verified_at": "2026-07-10T10:08:07.323Z",
+  "verified_at": "2026-07-10T11:12:15.075Z",
   "verification_method": "registered-venue-official",
   "freshness_hours": 0,
   "city": "الظهران",
-  "venue": "Children Museum",
-  "venue_address": "Children Museum",
+  "venue": "Ithra - Children Museum",
+  "venue_address": "Ithra - Children Museum",
   "starts_at": "2026-07-24T17:00:00+03:00",
   "ends_at": "2026-07-24T18:00:00+03:00",
   "status": "upcoming",
@@ -49,7 +49,7 @@
     "فعالية",
     "قادمة",
     "الظهران",
-    "Children Museum",
+    "Ithra - Children Museum",
     "Ithra Events",
     "culture",
     "arts",
@@ -80,13 +80,18 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Children Museum",
+      "name": "Ithra - Children Museum",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Children Museum",
+        "streetAddress": "Ithra - Children Museum",
         "addressLocality": "الظهران",
         "addressRegion": "المنطقة الشرقية",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.3354108,
+        "longitude": 50.1205788
       }
     },
     "organizer": {
@@ -100,7 +105,7 @@
     "url": "https://eventme.live/events/event-from-a-paper-to-a-book-in-the-libraries-of-the-world.html",
     "mainEntityOfPage": "https://eventme.live/events/event-from-a-paper-to-a-book-in-the-libraries-of-the-world.html",
     "isAccessibleForFree": true,
-    "keywords": "From a Paper to a Book in the Libraries of the World, جامعات ومجتمع, learning, فعالية, قادمة, الظهران, Children Museum, Ithra Events, culture, arts, creativity, community, exhibitions, Ithra, Workshop, باحثون وأكاديميون, مبدعون وفنون",
+    "keywords": "From a Paper to a Book in the Libraries of the World, جامعات ومجتمع, learning, فعالية, قادمة, الظهران, Ithra - Children Museum, Ithra Events, culture, arts, creativity, community, exhibitions, Ithra, Workshop, باحثون وأكاديميون, مبدعون وفنون",
     "audience": [
       {
         "@type": "Audience",

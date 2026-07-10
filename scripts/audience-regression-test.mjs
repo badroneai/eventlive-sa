@@ -62,6 +62,18 @@ hasAudience('Sports fixture => sports', {
   category: 'sports'
 }, 'sports');
 
+hasAudience('Arabic running race => sports', {
+  title: 'سباق جري مجتمعي',
+  summary: 'سباق مفتوح للجمهور في المدينة.',
+  category: 'community'
+}, 'sports');
+
+lacksAudience('Arabic verb جرى must not imply sports', {
+  title: 'زيارة وفد تجاري',
+  summary: 'جرى خلال الزيارة استعراض فرص التعاون بين الجهتين.',
+  category: 'business'
+}, 'sports');
+
 hasAudience('Explicit women-only event => women', {
   title: 'ورشة نسائية في التصميم',
   summary: 'للسيدات فقط.',

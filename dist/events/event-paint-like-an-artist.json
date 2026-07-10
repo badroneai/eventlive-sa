@@ -10,12 +10,12 @@
   "evidence_url": "https://www.ithra.com/en/programme/2026/childrens-museum/paint-artist",
   "trust_tier": "official-venue",
   "trust_label": "مصدر المكان الرسمي",
-  "verified_at": "2026-07-10T10:08:07.323Z",
+  "verified_at": "2026-07-10T11:12:15.075Z",
   "verification_method": "registered-venue-official",
   "freshness_hours": 0,
   "city": "الظهران",
-  "venue": "Children Museum",
-  "venue_address": "Children Museum",
+  "venue": "Ithra - Children Museum",
+  "venue_address": "Ithra - Children Museum",
   "starts_at": "2026-08-03T11:00:00+03:00",
   "ends_at": "2026-08-31T20:45:00+03:00",
   "status": "upcoming",
@@ -45,7 +45,7 @@
     "برنامج ممتد",
     "قادمة",
     "الظهران",
-    "Children Museum",
+    "Ithra - Children Museum",
     "Ithra Events",
     "culture",
     "arts",
@@ -251,13 +251,18 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Children Museum",
+      "name": "Ithra - Children Museum",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Children Museum",
+        "streetAddress": "Ithra - Children Museum",
         "addressLocality": "الظهران",
         "addressRegion": "المنطقة الشرقية",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.3354108,
+        "longitude": 50.1205788
       }
     },
     "organizer": {
@@ -271,7 +276,7 @@
     "url": "https://eventme.live/events/event-paint-like-an-artist.html",
     "mainEntityOfPage": "https://eventme.live/events/event-paint-like-an-artist.html",
     "isAccessibleForFree": true,
-    "keywords": "Paint Like an Artist, جامعات ومجتمع, learning, برنامج ممتد, قادمة, الظهران, Children Museum, Ithra Events, culture, arts, creativity, community, exhibitions, Ithra, Children, Workshop, مبدعون وفنون",
+    "keywords": "Paint Like an Artist, جامعات ومجتمع, learning, برنامج ممتد, قادمة, الظهران, Ithra - Children Museum, Ithra Events, culture, arts, creativity, community, exhibitions, Ithra, Children, Workshop, مبدعون وفنون",
     "audience": [
       {
         "@type": "Audience",

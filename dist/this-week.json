@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-10T10:10:45.542Z",
+  "generated_at": "2026-07-10T11:20:54.252Z",
   "platform": "EventLive",
   "scope": "this-week",
   "window_hours": 168,
-  "count": 85,
+  "count": 87,
   "events": [
     {
       "id": "event-registration-for-international-research-competition-on-non-terrestrial-n",
@@ -612,6 +612,26 @@
       "city": "عن بعد",
       "starts_at": "2026-07-12T09:00:00+03:00",
       "ends_at": "2026-07-14T18:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-دورة-الفحوصات-المكروبيولوجية-لمياه-الشرب-الأسس-العلمية-والتطبيقات-البحثي",
+      "title": "دورة الفحوصات المكروبيولوجية لمياه الشرب: الأسس العلمية والتطبيقات البحثية",
+      "url": "./events/event-دورة-الفحوصات-المكروبيولوجية-لمياه-الشرب-الأسس-العلمية-والتطبيقات-البحثي.html",
+      "city": "مكة",
+      "starts_at": "2026-07-12T10:00:00+03:00",
+      "ends_at": "2026-07-21T18:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية",
+      "title": "دورة تحضير البيئات وتعريف السلالات البكتيرية",
+      "url": "./events/event-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية.html",
+      "city": "مكة",
+      "starts_at": "2026-07-12T10:00:00+03:00",
+      "ends_at": "2026-07-21T18:00:00+03:00",
       "status": "upcoming",
       "live_schedule_ready": false
     },

@@ -1,0 +1,124 @@
+{
+  "id": "ended-madinah-chamber-events-منتدى-المدينة-المنورة-لاستثمار-20241222-f7af6768",
+  "title": "منتدى المدينة المنورة لاستثمار",
+  "summary": "برعاية وتشريف صاحب السمو الملكي الأمير سلمان بن سلطان بن عبدالعزيز أميـر منطقة المدينة المنورة ينطلق #منتدى_المدينة_للإستثمار بوابتك للإستثمار في منطقة المدينة المنورة",
+  "canonical_url": "https://eventme.live/events/ended-madinah-chamber-events-منتدى-المدينة-المنورة-لاستثمار-20241222-f7af6768.html",
+  "detail_url": "./events/ended-madinah-chamber-events-منتدى-المدينة-المنورة-لاستثمار-20241222-f7af6768.html",
+  "calendar_url": "./events/ended-madinah-chamber-events-منتدى-المدينة-المنورة-لاستثمار-20241222-f7af6768.ics",
+  "source_label": "Madinah Chamber Events",
+  "source_url": "https://www.mcci.org.sa/Event/eventDetails?circular=329",
+  "evidence_url": "https://www.mcci.org.sa/Event/eventDetails?circular=329",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T11:06:14.632Z",
+  "verification_method": "official-public-json-api",
+  "freshness_hours": 0,
+  "city": "المدينة المنورة",
+  "venue": "غرفة المدينة المنورة",
+  "venue_address": "غرفة المدينة المنورة",
+  "starts_at": "2024-12-22T18:00:00+03:00",
+  "ends_at": "2024-12-22T20:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/منتدى-المدينة-المنورة-لاستثمار-98cf83809a.png",
+  "image_alt": "منتدى المدينة المنورة لاستثمار",
+  "category": "فعاليات الغرف التجارية",
+  "category_url": "./categories/chamber-event.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "entrepreneurs",
+      "label": "رواد أعمال"
+    }
+  ],
+  "keywords": [
+    "منتدى المدينة المنورة لاستثمار",
+    "فعاليات الغرف التجارية",
+    "منتدى",
+    "فعالية",
+    "منتهية",
+    "المدينة المنورة",
+    "غرفة المدينة المنورة",
+    "Madinah Chamber Events",
+    "business",
+    "training",
+    "workshops",
+    "forums",
+    "exhibitions",
+    "Madinah Chamber",
+    "ended-event",
+    "موظفون ومهنيون",
+    "رواد أعمال"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2024-12-22T18:00:00+03:00",
+      "ends_at": "2024-12-22T20:00:00+03:00",
+      "room": "غرفة المدينة المنورة",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "منتدى المدينة المنورة لاستثمار",
+    "startDate": "2024-12-22T18:00:00+03:00",
+    "endDate": "2024-12-22T20:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "غرفة المدينة المنورة",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "غرفة المدينة المنورة",
+        "addressLocality": "المدينة المنورة",
+        "addressRegion": "منطقة المدينة المنورة",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "غرفة المدينة المنورة"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/منتدى-المدينة-المنورة-لاستثمار-98cf83809a.png"
+    ],
+    "description": "برعاية وتشريف صاحب السمو الملكي الأمير سلمان بن سلطان بن عبدالعزيز أميـر منطقة المدينة المنورة ينطلق #منتدى_المدينة_للإستثمار بوابتك للإستثمار في منطقة المدينة المنورة",
+    "url": "https://eventme.live/events/ended-madinah-chamber-events-منتدى-المدينة-المنورة-لاستثمار-20241222-f7af6768.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-madinah-chamber-events-منتدى-المدينة-المنورة-لاستثمار-20241222-f7af6768.html",
+    "isAccessibleForFree": false,
+    "keywords": "منتدى المدينة المنورة لاستثمار, فعاليات الغرف التجارية, منتدى, فعالية, منتهية, المدينة المنورة, غرفة المدينة المنورة, Madinah Chamber Events, business, training, workshops, forums, exhibitions, Madinah Chamber, ended-event, موظفون ومهنيون, رواد أعمال",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رواد أعمال"
+      }
+    ],
+    "sameAs": [
+      "https://www.mcci.org.sa/Event/eventDetails?circular=329"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://x.com/hashtag/%D9%85%D9%86%D8%AA%D8%AF%D9%89_%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9_%D9%84%D9%84%D8%A5%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1?src=hashtag_click",
+      "availability": "https://schema.org/InStock",
+      "category": "Registration"
+    }
+  }
+}

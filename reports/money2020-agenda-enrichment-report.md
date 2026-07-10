@@ -1,6 +1,6 @@
 # Money20/20 Middle East Agenda Enrichment
 
-- generated_at: 2026-07-10T10:09:06.985Z
+- generated_at: 2026-07-10T11:13:40.419Z
 - 2025_official_sessions: 242
 - 2025_rooms: 11
 - 2026_official_sessions: 0

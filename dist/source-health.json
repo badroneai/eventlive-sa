@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T10:11:22.094Z",
+  "generated_at": "2026-07-10T11:21:42.875Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-source-health",
@@ -9,16 +9,17 @@
     "auto_publish": "reports/source-promotion-report.json"
   },
   "totals": {
-    "sources": 81,
-    "active_collectors": 41,
-    "collection_coverage_pct": 51,
-    "productive": 29,
-    "open_idle": 12,
+    "sources": 84,
+    "active_collectors": 44,
+    "collection_coverage_pct": 52,
+    "productive": 30,
+    "open_idle": 14,
     "collector_errors": 0,
     "probe_blocked": 0,
     "extractor_backlog": 40,
-    "candidates_discovered": 392,
-    "candidates_written": 402
+    "candidates_discovered": 393,
+    "candidates_collected_before_dedupe": 407,
+    "candidates_written": 395
   },
   "publication": {
     "published_at": "2026-07-03T15:26:20.570Z",
@@ -326,7 +327,7 @@
       "status": "zero-yield",
       "extracted": 0,
       "candidates": 0,
-      "next_action": "No future date-complete candidates found by the conservative extractor.",
+      "next_action": "Recovered via last-known-good official evidence. No future date-complete candidates found by the conservative extractor.",
       "last_collection_status": "ok",
       "last_extracted": 0,
       "known_candidates": 0
@@ -564,11 +565,11 @@
       "name": "Saudi Universities and Technical Colleges",
       "priority": 45,
       "status": "productive",
-      "extracted": 6,
+      "extracted": 4,
       "candidates": 6,
       "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
       "last_collection_status": "ok",
-      "last_extracted": 6,
+      "last_extracted": 4,
       "known_candidates": 6
     },
     {
@@ -671,12 +672,12 @@
       "id": "sdaia-calendar-events",
       "name": "SDAIA Calendar and Events",
       "priority": 54,
-      "status": "productive",
-      "extracted": 2,
+      "status": "zero-yield",
+      "extracted": 0,
       "candidates": 2,
-      "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
+      "next_action": "No future date-complete candidates found by the conservative extractor.",
       "last_collection_status": "ok",
-      "last_extracted": 2,
+      "last_extracted": 0,
       "known_candidates": 2
     },
     {
@@ -932,16 +933,16 @@
       "known_candidates": 1
     },
     {
-      "id": "money2020-middle-east-agendas",
-      "name": "Money20/20 Middle East Official Agendas",
+      "id": "umm-al-qura-events",
+      "name": "Umm Al-Qura University Events Center",
       "priority": 76,
-      "status": "not-collected",
-      "extracted": 0,
-      "candidates": 0,
-      "next_action": "أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.",
-      "last_collection_status": "",
-      "last_extracted": 0,
-      "known_candidates": 0
+      "status": "productive",
+      "extracted": 4,
+      "candidates": 4,
+      "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
+      "last_collection_status": "ok",
+      "last_extracted": 4,
+      "known_candidates": 4
     },
     {
       "id": "leap-official-agendas",
@@ -995,6 +996,42 @@
       "id": "jouf-university-programs",
       "name": "Jouf University Summer Programs",
       "priority": 81,
+      "status": "productive",
+      "extracted": 1,
+      "candidates": 1,
+      "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
+      "last_collection_status": "ok",
+      "last_extracted": 1,
+      "known_candidates": 1
+    },
+    {
+      "id": "money2020-middle-east-agendas",
+      "name": "Money20/20 Middle East Official Agendas",
+      "priority": 82,
+      "status": "not-collected",
+      "extracted": 0,
+      "candidates": 0,
+      "next_action": "أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة.",
+      "last_collection_status": "",
+      "last_extracted": 0,
+      "known_candidates": 0
+    },
+    {
+      "id": "madinah-chamber-events",
+      "name": "Madinah Chamber Events",
+      "priority": 83,
+      "status": "zero-yield",
+      "extracted": 0,
+      "candidates": 0,
+      "next_action": "No future date-complete candidates found by the conservative extractor.",
+      "last_collection_status": "ok",
+      "last_extracted": 0,
+      "known_candidates": 0
+    },
+    {
+      "id": "madinah-architecture-festival",
+      "name": "Madinah International Architecture Festival",
+      "priority": 84,
       "status": "productive",
       "extracted": 1,
       "candidates": 1,

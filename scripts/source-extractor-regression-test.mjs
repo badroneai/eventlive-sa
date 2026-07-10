@@ -6,11 +6,14 @@ import {
   extractInvestSaudiEvents,
   extractIthraEvents,
   extractJazanChamberEvents,
+  extractMadinahArchitectureFestival,
+  extractMadinahChamberPayload,
   jazanApiEndpoint,
   jazanMonthsToFetch,
   extractKaustEvents,
   extractKauEvents,
   extractMakkahChamberEvents,
+  extractUmmAlQuraEventDetail,
   extractMocCalendarPayload,
   extractMonshaat,
   extractQassimChamberEvents,
@@ -67,6 +70,7 @@ assert.equal(ithraEvents[0].sessions.length, 2);
 assert.equal(ithraEvents[0].sessions[0].starts_at, '2026-07-15T10:00:00+03:00');
 assert.equal(ithraEvents[0].price_label, '35 SAR');
 assert.equal(ithraEvents[0].verification_method, 'official-public-algolia-index');
+assert.equal(ithraEvents[0].venue, 'Ithra - Ithra Tower - level 8, Art Studio');
 
 const visitSaudiSource = {
   id: 'visit-saudi-calendar',
@@ -496,6 +500,70 @@ assert.equal(makkahEvents[0].city, 'Makkah');
 assert.equal(makkahEvents[0].starts_at, '2026-03-01T23:30:00+03:00');
 assert.equal(makkahEvents[0].ends_at, '2026-03-02T00:30:00+03:00');
 assert.ok(makkahEvents[0].image_url.includes('/web/image/event.event/566/image'));
+
+const uquEvent = extractUmmAlQuraEventDetail(`
+  <h1 class="text-2xl font-bold mb-8 text-gray-900">دورة تقنية PCR بالمعامل الحيوية الجزيئية</h1>
+  <div class="mb-8 text-base text-justify text-gray-700"><p>دورة عملية في تقنيات البيولوجيا الجزيئية.</p></div>
+  <span>المدة:</span><span>2 يوم/أيام</span>
+  <span>تبدأ في:</span><span>2026/07/26 - 10:00 - صباحاً</span>
+  <a href="/App/Enrollments/register?event=fixture">التسجيل</a>
+`, {
+  id: 'umm-al-qura-events',
+  name: 'Umm Al-Qura University Events Center',
+  url: 'https://uqu.edu.sa/App/Events',
+  owner: 'Umm Al-Qura University'
+}, 'https://uqu.edu.sa/App/Events/41008');
+
+assert.ok(uquEvent, 'UQU detail with an explicit schedule must be extracted');
+assert.equal(uquEvent.city, 'Makkah');
+assert.equal(uquEvent.venue, 'Umm Al-Qura University');
+assert.equal(uquEvent.starts_at, '2026-07-26T10:00:00+03:00');
+assert.equal(uquEvent.ends_at, '2026-07-27T18:00:00+03:00');
+assert.match(uquEvent.registration_url, /\/App\/Enrollments\/register/);
+assert.equal(extractUmmAlQuraEventDetail('<h1 class="text-2xl font-bold">خبر بلا موعد</h1>', { owner: 'UQU' }, 'https://uqu.edu.sa/App/Events/1'), null);
+
+const madinahChamberEvents = extractMadinahChamberPayload(JSON.stringify({
+  data: [{
+    eventId: 501,
+    title: 'ملتقى أعمال المدينة 2026',
+    summery: '<p>ملتقى رسمي لقطاع الأعمال.</p><a href="https://survey.example.sa/register">التسجيل</a>',
+    eventDate: '2026-12-01T10:00:00',
+    imageUrl: 'event-501.jpg',
+    organisers: 'غرفة المدينة المنورة',
+    type: 'ملتقى',
+    location: 'غرفة المدينة المنورة'
+  }]
+}), {
+  id: 'madinah-chamber-events',
+  name: 'Madinah Chamber Events',
+  url: 'https://www.mcci.org.sa/Event/events',
+  owner: 'Madinah Chamber of Commerce'
+});
+
+assert.equal(madinahChamberEvents.length, 1);
+assert.equal(madinahChamberEvents[0].city, 'Madinah');
+assert.equal(madinahChamberEvents[0].starts_at, '2026-12-01T10:00:00+03:00');
+assert.equal(madinahChamberEvents[0].ends_at, '2026-12-01T12:00:00+03:00');
+assert.match(madinahChamberEvents[0].image_url, /upload\/events\/main\/event-501\.jpg/);
+assert.match(madinahChamberEvents[0].registration_url, /survey\.example\.sa/);
+
+const madinahFestivalEvents = extractMadinahArchitectureFestival(`
+  <h1>Madinah International Architecture Festival</h1>
+  <h2>مهرجان المدينة المنورة الدولي للعمارة</h2>
+  <span>Festival Date</span><strong>10 December 2026</strong>
+  <img src="/_app/immutable/assets/competition-1.fixture.jpg" alt="Madinah architecture festival">
+`, {
+  id: 'madinah-architecture-festival',
+  name: 'Madinah International Architecture Festival',
+  url: 'https://mdc.almunawarah.sa/',
+  owner: 'Al-Madinah Region Development Authority'
+});
+
+assert.equal(madinahFestivalEvents.length, 1);
+assert.equal(madinahFestivalEvents[0].city, 'Madinah');
+assert.equal(madinahFestivalEvents[0].starts_at, '2026-12-10T09:00:00+03:00');
+assert.equal(madinahFestivalEvents[0].ends_at, '2026-12-10T21:00:00+03:00');
+assert.match(madinahFestivalEvents[0].image_url, /competition-1\.fixture\.jpg/);
 
 const qassimEvents = extractQassimChamberEvents(`
   <div class="card h-100"><div class="carousel-item active" style="background-image: url('https://tc.qcc.org.sa/storage/260/hr.jpg')"></div>

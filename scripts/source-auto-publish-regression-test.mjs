@@ -240,6 +240,10 @@ fs.writeFileSync(catalogPath, `${JSON.stringify({
       evidence_url: 'https://www.ithra.com/en/programme/2026/ithra-session-refresh',
       source_confidence: 'approved-source',
       live_schedule_ready: false,
+      program_outline: {
+        provider: 'Ithra',
+        source_url: 'https://www.ithra.com/en/programme/2026/ithra-session-refresh'
+      },
       source_file: 'data/raw/source-snapshots/ithra.json',
       tags: ['learning']
     }
@@ -305,7 +309,7 @@ fs.writeFileSync(candidatesPath, `${JSON.stringify({
       title: 'Ithra Session Refresh',
       organizer: 'Ithra',
       city: 'Dhahran',
-      venue: 'Ithra Tower',
+      venue: 'Ithra - Ithra Tower',
       category: 'learning',
       summary: 'Official Ithra event with newly available sessions.',
       starts_at: '2026-12-12T10:00:00+03:00',
@@ -639,8 +643,9 @@ if (
   || ithraEvent?.sessions?.length !== 3
   || ithraEvent?.sessions_count !== 3
   || ithraEvent?.live_schedule_ready !== true
+  || ithraEvent?.venue !== 'Ithra - Ithra Tower'
 ) {
-  console.error('TEST_FAIL an official periodic source refresh must activate newly available sessions');
+  console.error('TEST_FAIL an official periodic source refresh must activate sessions and refresh its verified venue');
   console.error(JSON.stringify({ ithraCandidate, ithraEvent }, null, 2));
   process.exit(1);
 }

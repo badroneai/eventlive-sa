@@ -179,6 +179,9 @@ const sourceExtractors = {
   'moc-cultural-subportals': extractMocCulturalCalendar,
   'mos-events': extractMinistryOfSportEvents,
   'jcci-events-center': extractJcciEventsCenter,
+  'umm-al-qura-events': extractUmmAlQuraEvents,
+  'madinah-chamber-events': extractMadinahChamberEvents,
+  'madinah-architecture-festival': extractMadinahArchitectureFestival,
   'sdaia-calendar-events': extractSdaiaCalendarEvents,
   'saudi-university-events': extractKaustEvents,
   'asharqia-chamber-events': extractAsharqiaChamberEvents,
@@ -2115,7 +2118,8 @@ function extractIthraAlgoliaEvents(payload, source) {
     if (seen.has(key)) return null;
     seen.add(key);
     const website = hit.website_json || {};
-    const venue = stripTags(website.location || [hit.location, hit.venue].filter(Boolean).join(' - ')) || 'Ithra';
+    const venueLabel = stripTags(website.location || [hit.location, hit.venue].filter(Boolean).join(' - ')) || 'Ithra';
+    const venue = /^ithra(?:\s*-|$)/i.test(venueLabel) ? venueLabel : `Ithra - ${venueLabel}`;
     const imageUrl = [
       ...(Array.isArray(hit.only_image_url) ? hit.only_image_url : []),
       ...(Array.isArray(hit.image_url) ? hit.image_url : []),
@@ -3895,6 +3899,182 @@ function extractMakkahChamberEvents(html, source) {
   return items;
 }
 
+function uquClock(hourValue, minuteValue, period = '') {
+  let hour = Number(hourValue);
+  const minute = Number(minuteValue);
+  if (!Number.isInteger(hour) || hour < 0 || hour > 23 || !Number.isInteger(minute) || minute < 0 || minute > 59) return '';
+  if (/مساء|pm/i.test(period) && hour < 12) hour += 12;
+  if (/صباح|am/i.test(period) && hour === 12) hour = 0;
+  return `${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}`;
+}
+
+function extractUmmAlQuraEventDetail(detailHtml, source, url) {
+  const text = stripTags(detailHtml);
+  const title = cleanTitle(detailHtml.match(/<h1 class="text-2xl font-bold[^>]*>\s*([\s\S]*?)\s*<\/h1>/i)?.[1] || '');
+  const startMatch = text.match(/تبدأ في:\s*(20\d{2})\/(\d{1,2})\/(\d{1,2})\s*-\s*(\d{1,2}):(\d{2})\s*-\s*(صباحاً|مساءً|صباحا|مساء|AM|PM)/i);
+  const durationDays = Math.max(1, Number(text.match(/المدة:\s*(\d+)\s*يوم/)?.[1] || 1));
+  if (!title || !startMatch) return null;
+  const clock = uquClock(startMatch[4], startMatch[5], startMatch[6]);
+  if (!clock) return null;
+  const startDate = `${startMatch[1]}-${String(startMatch[2]).padStart(2, '0')}-${String(startMatch[3]).padStart(2, '0')}`;
+  const startsAt = `${startDate}T${clock}:00+03:00`;
+  const endDate = saudiDateOnlyOffset(startDate, durationDays - 1);
+  const endsAt = durationDays === 1 ? addHoursToSaudiDateTime(startsAt, 2) : `${endDate}T18:00:00+03:00`;
+  const summary = stripTags(detailHtml.match(/<div\s+class="mb-8 text-base text-justify[^\"]*"[^>]*>\s*([\s\S]*?)\s*<\/div>/i)?.[1] || '');
+  const registrationHref = detailHtml.match(/href="([^"]*\/App\/Enrollments\/register\?event=[^"]+)"/i)?.[1] || '';
+  const imageCandidate = metaContent(detailHtml, 'og:image');
+  const imageUrl = isUsefulImageUrl(imageCandidate) ? resolveUrl(imageCandidate, url) : '';
+  const attendanceMode = /عن بعد|افتراضي|online/i.test(text) ? 'online' : 'in-person';
+  const city = attendanceMode === 'online' ? 'Online' : 'Makkah';
+  const venue = attendanceMode === 'online' ? 'Online' : 'Umm Al-Qura University';
+  return {
+    title,
+    url,
+    organizer: source.owner,
+    summary: summary.slice(0, 700) || `دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة.`,
+    city,
+    venue,
+    category: 'education training',
+    raw_date_text: `${startMatch[0]} · ${durationDays} يوم`,
+    starts_at: startsAt,
+    ends_at: endsAt,
+    ...(registrationHref ? { registration_url: resolveUrl(registrationHref, url) } : {}),
+    ...(imageUrl ? { image_url: imageUrl, image_alt: title, image_source_url: url } : {}),
+    attendance_mode: attendanceMode,
+    confidence: 'official',
+    review_status: 'ready-for-review',
+    publication_gate: 'duplicate-review',
+    verification_method: 'official-event-detail-explicit-start-duration',
+    date_precision: 'explicit-start-duration',
+    time_precision: 'exact-start-estimated-end',
+    language: 'ar',
+    tags: ['Umm Al-Qura University', 'Makkah', 'training'],
+    richness_score: calculateRichnessScore({ title, summary, city, venue, category: 'education training', image_url: imageUrl, registration_url: registrationHref, attendance_mode: attendanceMode, language: 'ar' })
+  };
+}
+
+async function extractUmmAlQuraEvents(html, source) {
+  const urls = [...new Set([...String(html).matchAll(/href="(https:\/\/uqu\.edu\.sa\/App\/Events\/\d+)"/gi)].map((match) => match[1]))].slice(0, 24);
+  const items = [];
+  for (const url of urls) {
+    try {
+      const detailHtml = await fetchText(url, { 'accept-language': 'ar-SA,ar;q=0.9,en;q=0.8' });
+      const item = extractUmmAlQuraEventDetail(detailHtml, source, url);
+      if (item) items.push(item);
+    } catch {
+      // A single stale detail page must not prevent the official listing from refreshing.
+    }
+  }
+  return items;
+}
+
+function extractMadinahChamberPayload(payloadText, source) {
+  let payload;
+  try { payload = JSON.parse(payloadText); } catch { return []; }
+  const rows = Array.isArray(payload?.data) ? payload.data : Array.isArray(payload) ? payload : [];
+  const seen = new Set();
+  const items = [];
+  for (const row of rows) {
+    const title = cleanTitle(row?.title || '');
+    const startsAt = dateTimeFromParts(row?.eventDate, row?.eventDate, '09:00');
+    const endsAt = addHoursToSaudiDateTime(startsAt, 2);
+    if (!title || !startsAt || !endsAt || !row?.eventId) continue;
+    const key = `${row.eventId}|${startsAt}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    const summaryHtml = row.summery || row.paragraph1 || '';
+    const summary = stripTags(summaryHtml);
+    const registrationHref = summaryHtml.match(/href=["']([^"']+)["']/i)?.[1] || '';
+    const attendanceMode = /عن بعد|افتراضي|virtual|online|teams\.microsoft/i.test(`${row.location || ''} ${summaryHtml}`) ? 'online' : 'in-person';
+    const city = attendanceMode === 'online' ? 'Online' : 'Madinah';
+    const venue = attendanceMode === 'online' ? 'Online' : (stripTags(row.location || '') || 'Madinah Chamber');
+    const imageFile = row.imageUrl || row.thmImageUrl || '';
+    const imageUrl = imageFile ? `https://services.mi.org.sa/upload/events/main/${encodeURIComponent(imageFile)}` : '';
+    const url = `https://www.mcci.org.sa/Event/eventDetails?circular=${encodeURIComponent(row.eventId)}`;
+    items.push({
+      title,
+      url,
+      organizer: stripTags(row.organisers || '') || source.owner,
+      summary: summary.slice(0, 700) || `فعالية رسمية من غرفة المدينة المنورة.`,
+      city,
+      venue,
+      category: stripTags(row.type || '') || inferChamberCategory(title, summary),
+      raw_date_text: row.eventDate,
+      starts_at: startsAt,
+      ends_at: endsAt,
+      ...(registrationHref ? { registration_url: resolveUrl(registrationHref, url) } : {}),
+      ...(imageUrl ? { image_url: imageUrl, image_alt: title, image_source_url: url } : {}),
+      attendance_mode: attendanceMode,
+      confidence: 'official',
+      review_status: 'ready-for-review',
+      publication_gate: 'duplicate-review',
+      verification_method: 'official-public-json-api',
+      date_precision: 'api-datetime',
+      time_precision: 'exact-start-estimated-end',
+      language: 'ar',
+      tags: ['Madinah Chamber', stripTags(row.type || ''), 'business'].filter(Boolean),
+      richness_score: calculateRichnessScore({ title, summary, city, venue, category: row.type, image_url: imageUrl, registration_url: registrationHref, attendance_mode: attendanceMode, language: 'ar' })
+    });
+  }
+  return items;
+}
+
+async function extractMadinahChamberEvents(payloadText, source) {
+  let firstPayload;
+  try { firstPayload = JSON.parse(payloadText); } catch { return []; }
+  const rows = Array.isArray(firstPayload?.data) ? [...firstPayload.data] : [];
+  const totalPages = Math.min(60, Math.max(1, Number(firstPayload?.totalPages || 1)));
+  for (let pageNumber = 2; pageNumber <= totalPages; pageNumber += 1) {
+    try {
+      const pageText = await fetchText(`https://services.mi.org.sa/api/events?PageNumber=${pageNumber}&PageSize=100`, {
+        accept: 'application/json',
+        referer: source.url
+      });
+      const pagePayload = JSON.parse(pageText);
+      if (Array.isArray(pagePayload?.data)) rows.push(...pagePayload.data);
+    } catch {
+      // Keep the successfully fetched pages; the next six-hour run will retry the gap.
+    }
+  }
+  if (rows.length) writeAuxiliarySnapshot(source, 'all-events-pages', JSON.stringify({ data: rows }, null, 2), 'json');
+  return extractMadinahChamberPayload(JSON.stringify({ data: rows }), source);
+}
+
+function extractMadinahArchitectureFestival(html, source) {
+  if (!/Madinah International\s+Architecture Festival|مهرجان المدينة المنورة الدولي للعمارة/i.test(html)) return [];
+  const dateText = stripTags(html).match(/(?:Festival Date\s*)?(\d{1,2}\s+[A-Za-z]{3,9}\s+20\d{2})/i)?.[1] || '';
+  const dates = parseEnglishDateRange(dateText);
+  if (!dates) return [];
+  const imagePath = html.match(/src="([^"]*competition-1\.[^"]+\.jpg)"/i)?.[1] || '';
+  const imageUrl = imagePath ? resolveUrl(imagePath, source.url) : '';
+  const title = 'مهرجان المدينة المنورة الدولي للعمارة 2026';
+  const venue = 'Madinah';
+  const summary = 'مهرجان ومعرض نهائي رسمي تنظمه هيئة تطوير منطقة المدينة المنورة، تعرض خلاله الفرق المختارة أعمالها ويُعلن الفائزون في المسابقة الدولية للتصميم.';
+  return [{
+    title,
+    url: source.url,
+    organizer: source.owner,
+    summary,
+    city: 'Madinah',
+    venue,
+    category: 'architecture design festival',
+    raw_date_text: dateText,
+    starts_at: dates.starts_at,
+    ends_at: dateTimeFromParts(dates.ends_at, '21:00', '21:00'),
+    ...(imageUrl ? { image_url: imageUrl, image_alt: title, image_source_url: source.url } : {}),
+    attendance_mode: 'in-person',
+    confidence: 'official',
+    review_status: 'ready-for-review',
+    publication_gate: 'duplicate-review',
+    verification_method: 'official-event-page-explicit-date',
+    date_precision: 'explicit-date',
+    time_precision: 'date-only',
+    language: 'ar',
+    tags: ['Madinah', 'architecture', 'design', 'festival'],
+    richness_score: calculateRichnessScore({ title, summary, city: 'Madinah', venue, category: 'architecture design festival', image_url: imageUrl, attendance_mode: 'in-person', language: 'ar' })
+  }];
+}
+
 function extractQassimChamberEvents(html, source) {
   const items = [];
   const seen = new Set();
@@ -5413,6 +5593,11 @@ export {
   jazanMonthsToFetch,
   extractJazanChamberEvents,
   extractMakkahChamberEvents,
+  extractUmmAlQuraEventDetail,
+  extractUmmAlQuraEvents,
+  extractMadinahChamberPayload,
+  extractMadinahChamberEvents,
+  extractMadinahArchitectureFestival,
   extractNajranMunicipalityEvents,
   extractNorthernBordersChamberEvents,
   extractMocCalendarPayload,

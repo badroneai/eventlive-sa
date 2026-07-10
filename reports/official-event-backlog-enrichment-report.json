@@ -1,12 +1,63 @@
 {
-  "generated_at": "2026-07-10T10:09:18.524Z",
+  "generated_at": "2026-07-10T11:13:50.287Z",
   "totals": {
-    "targets": 0,
-    "enriched": 0,
-    "fetched": 0,
-    "images": 0,
+    "targets": 5,
+    "enriched": 5,
+    "fetched": 5,
+    "images": 5,
     "fetch_failures": 0
   },
-  "enriched": [],
+  "enriched": [
+    {
+      "id": "event-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem",
+      "title": "دورة اساسيات المجهر الالكتروني الماسح SEM",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41009",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-دورة-الفحوصات-المكروبيولوجية-لمياه-الشرب-الأسس-العلمية-والتطبيقات-البحثي",
+      "title": "دورة الفحوصات المكروبيولوجية لمياه الشرب: الأسس العلمية والتطبيقات البحثية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41006",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية",
+      "title": "دورة تحضير البيئات وتعريف السلالات البكتيرية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41007",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية",
+      "title": "دورة تقنية PCR بالمعامل الحيوية الجزيئية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41008",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-مهرجان-المدينة-المنورة-الدولي-للعمارة-2026",
+      "title": "مهرجان المدينة المنورة الدولي للعمارة 2026",
+      "source_label": "Madinah International Architecture Festival",
+      "source_method": "official-page-meta",
+      "source_url": "https://mdc.almunawarah.sa/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    }
+  ],
   "failed": []
 }

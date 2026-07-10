@@ -1,6 +1,6 @@
 # Real Estate Future Forum 2026 Agenda Enrichment
 
-- generated_at: 2026-07-10T10:09:15.526Z
+- generated_at: 2026-07-10T11:13:47.279Z
 - rendered_rows: 46
 - official_sessions_2026: 46
 - days: 3

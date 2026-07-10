@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-10T10:10:45.542Z",
+  "generated_at": "2026-07-10T11:20:54.252Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "categories_count": 12,
   "totals": {
-    "events": 841,
-    "upcoming_or_active": 350,
-    "ended": 491,
+    "events": 1107,
+    "upcoming_or_active": 355,
+    "ended": 752,
     "live_ready": 239
   },
   "categories": [
@@ -14,14 +14,15 @@
       "slug": "entertainment-families",
       "label": "ترفيه وعائلات",
       "url": "./categories/entertainment-families.html",
-      "total_events": 156,
-      "upcoming_or_active": 97,
+      "total_events": 157,
+      "upcoming_or_active": 98,
       "ended": 59,
       "live_ready": 71,
       "sources": [
         "Experience AlUla Events",
         "Ithra Events",
         "MDLBEAST Events",
+        "Madinah International Architecture Festival",
         "Najran Municipality Summer Events",
         "Riyadh City Events",
         "Visit Saudi Calendar",
@@ -33,6 +34,7 @@
         "الرياض",
         "الظهران",
         "العلا",
+        "المدينة المنورة",
         "جدة",
         "عسير",
         "على مستوى المملكة",
@@ -54,17 +56,17 @@
         "status": "ongoing",
         "url": "./events/event-poppy-playtime.html"
       },
-      "sources_count": 8,
-      "cities_count": 8,
+      "sources_count": 9,
+      "cities_count": 9,
       "audiences_count": 8
     },
     {
       "slug": "education-community",
       "label": "جامعات ومجتمع",
       "url": "./categories/education-community.html",
-      "total_events": 108,
+      "total_events": 111,
       "upcoming_or_active": 44,
-      "ended": 64,
+      "ended": 67,
       "live_ready": 89,
       "sources": [
         "Ithra Events",
@@ -260,8 +262,8 @@
       "slug": "regulatory-workshop",
       "label": "ورش تنظيمية وصحية",
       "url": "./categories/regulatory-workshop.html",
-      "total_events": 37,
-      "upcoming_or_active": 28,
+      "total_events": 39,
+      "upcoming_or_active": 30,
       "ended": 9,
       "live_ready": 10,
       "sources": [
@@ -272,6 +274,7 @@
         "Saudi Food and Drug Authority Events",
         "Saudi Universities and Technical Colleges",
         "Tuwaiq Academy Bootcamps and Programs",
+        "Umm Al-Qura University Events Center",
         "Visit Saudi Summer Calendar PDF"
       ],
       "cities": [
@@ -281,7 +284,8 @@
         "جدة",
         "سكاكا",
         "عسير",
-        "عن بعد"
+        "عن بعد",
+        "مكة"
       ],
       "audiences": [
         "باحثون وأكاديميون",
@@ -300,17 +304,17 @@
         "status": "ongoing",
         "url": "./events/event-مزرعة-الليوان.html"
       },
-      "sources_count": 8,
-      "cities_count": 7,
+      "sources_count": 9,
+      "cities_count": 8,
       "audiences_count": 9
     },
     {
       "slug": "conference-forum",
       "label": "مؤتمرات ومنتديات",
       "url": "./categories/conference-forum.html",
-      "total_events": 64,
+      "total_events": 66,
       "upcoming_or_active": 25,
-      "ended": 39,
+      "ended": 41,
       "live_ready": 6,
       "sources": [
         "Dhahran Expo Calendar",
@@ -328,7 +332,8 @@
         "SCEGA ePortal Events",
         "SDAIA Calendar and Events",
         "Saudi Universities and Technical Colleges",
-        "Smart Data & AI Summit Official"
+        "Smart Data & AI Summit Official",
+        "Umm Al-Qura University Events Center"
       ],
       "cities": [
         "الخبر",
@@ -338,6 +343,7 @@
         "بريدة",
         "جدة",
         "دولي",
+        "مكة",
         "ينبع"
       ],
       "audiences": [
@@ -357,31 +363,34 @@
         "status": "upcoming",
         "url": "./events/event-offshore-technology-innovation-technical-conference-expo-offshore-arabia.html"
       },
-      "sources_count": 16,
-      "cities_count": 8,
+      "sources_count": 17,
+      "cities_count": 9,
       "audiences_count": 9
     },
     {
       "slug": "technology-training",
       "label": "تدريب تقني",
       "url": "./categories/technology-training.html",
-      "total_events": 28,
-      "upcoming_or_active": 14,
-      "ended": 14,
+      "total_events": 31,
+      "upcoming_or_active": 16,
+      "ended": 15,
       "live_ready": 0,
       "sources": [
         "Future Skills MCIT Catalogue",
         "Misk Hub Events",
         "Misk Hub Programs",
-        "Monsha'at All Events"
+        "Monsha'at All Events",
+        "Umm Al-Qura University Events Center"
       ],
       "cities": [
         "الرياض",
         "السعودية",
-        "عن بعد"
+        "عن بعد",
+        "مكة"
       ],
       "audiences": [
         "باحثون عن عمل",
+        "باحثون وأكاديميون",
         "تقنيون",
         "رواد أعمال",
         "طلاب وخريجون",
@@ -395,9 +404,9 @@
         "status": "ongoing",
         "url": "./events/event-misk-local-traineeship-program.html"
       },
-      "sources_count": 4,
-      "cities_count": 3,
-      "audiences_count": 7
+      "sources_count": 5,
+      "cities_count": 4,
+      "audiences_count": 8
     },
     {
       "slug": "science-space",
@@ -483,9 +492,9 @@
       "slug": "chamber-event",
       "label": "فعاليات الغرف التجارية",
       "url": "./categories/chamber-event.html",
-      "total_events": 73,
+      "total_events": 328,
       "upcoming_or_active": 8,
-      "ended": 65,
+      "ended": 320,
       "live_ready": 1,
       "sources": [
         "Abha Chamber Events",
@@ -494,6 +503,7 @@
         "Invest Saudi Events",
         "Jazan Chamber Events",
         "Jeddah Chamber Exhibitions and Events Center",
+        "Madinah Chamber Events",
         "Makkah Chamber Events",
         "Northern Borders Chamber Events",
         "Qassim Chamber Events",
@@ -506,6 +516,7 @@
         "الدمام",
         "الرياض",
         "الظهران",
+        "المدينة المنورة",
         "بريدة",
         "تبوك",
         "جازان",
@@ -534,8 +545,8 @@
         "status": "upcoming",
         "url": "./events/event-متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة.html"
       },
-      "sources_count": 11,
-      "cities_count": 14,
+      "sources_count": 12,
+      "cities_count": 15,
       "audiences_count": 10
     },
     {

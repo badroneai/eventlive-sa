@@ -10,12 +10,12 @@
   "evidence_url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/childrens-book-fair/meet-expert-fatimah-sharafeddine",
   "trust_tier": "official-venue",
   "trust_label": "مصدر المكان الرسمي",
-  "verified_at": "2026-07-10T10:08:07.323Z",
+  "verified_at": "2026-07-10T11:12:15.075Z",
   "verification_method": "registered-venue-official",
   "freshness_hours": 0,
   "city": "الظهران",
-  "venue": "Library",
-  "venue_address": "Library",
+  "venue": "Ithra - Library",
+  "venue_address": "Ithra - Library",
   "starts_at": "2026-07-21T20:00:00+03:00",
   "ends_at": "2026-07-21T21:00:00+03:00",
   "status": "upcoming",
@@ -53,7 +53,7 @@
     "فعالية",
     "قادمة",
     "الظهران",
-    "Library",
+    "Ithra - Library",
     "Ithra Events",
     "culture",
     "arts",
@@ -86,13 +86,18 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Library",
+      "name": "Ithra - Library",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Library",
+        "streetAddress": "Ithra - Library",
         "addressLocality": "الظهران",
         "addressRegion": "المنطقة الشرقية",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.3354108,
+        "longitude": 50.1205788
       }
     },
     "organizer": {
@@ -106,7 +111,7 @@
     "url": "https://eventme.live/events/event-meet-with-an-expert-fatimah-sharafeddine.html",
     "mainEntityOfPage": "https://eventme.live/events/event-meet-with-an-expert-fatimah-sharafeddine.html",
     "isAccessibleForFree": true,
-    "keywords": "Meet with an Expert: Fatimah Sharafeddine, ترفيه وعائلات, family, فعالية, قادمة, الظهران, Library, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Discussion, مهاريون وحرفيون, عائلات وأطفال, مبدعون وفنون",
+    "keywords": "Meet with an Expert: Fatimah Sharafeddine, ترفيه وعائلات, family, فعالية, قادمة, الظهران, Ithra - Library, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Discussion, مهاريون وحرفيون, عائلات وأطفال, مبدعون وفنون",
     "audience": [
       {
         "@type": "Audience",

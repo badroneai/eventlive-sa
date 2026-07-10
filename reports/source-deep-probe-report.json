@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-10T09:59:22.778Z",
+  "generated_at": "2026-07-10T11:00:36.078Z",
   "registry": "data/source_registry.json",
   "source_ingestion_plan": "reports/source-ingestion-plan.json",
   "probe_limit": 28,
   "timeout_ms": 12000,
   "totals": {
-    "probed": 22,
+    "probed": 21,
     "extractor_ready": 11,
-    "blocked": 11,
+    "blocked": 10,
     "partnership": 0,
     "watch": 0
   },
@@ -15,7 +15,7 @@
     {
       "id": "money2020-middle-east-agendas",
       "name": "Money20/20 Middle East Official Agendas",
-      "priority": 76,
+      "priority": 82,
       "url": "https://money2020middleeast.com/",
       "trust_level": "official",
       "fetch_method": "html-calendar",
@@ -94,7 +94,7 @@
         "status": 200,
         "final_url": "https://ncci.org.sa/category/events/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 118136,
+        "bytes": 118120,
         "title": "الفعاليات – الغرفة التجارية بعرعر | غرفة الحدود الشمالية",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -366,7 +366,7 @@
         "status": 200,
         "final_url": "https://www.kaust.edu.sa/en/",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 85624,
+        "bytes": 85626,
         "title": "KAUST | A top research university in the Middle East",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -385,40 +385,6 @@
       },
       "extraction_score": 36,
       "recommendation": "probe-hidden-api-or-html-table"
-    },
-    {
-      "id": "baha-amanah-events",
-      "name": "Baha Municipality Events",
-      "priority": 62,
-      "url": "https://baha.gov.sa/ar/Events",
-      "trust_level": "official",
-      "fetch_method": "html-listing",
-      "candidate_gate": "extraction",
-      "intake_policy": "official-feed-preferred",
-      "signals": {
-        "http_ok": true,
-        "status": 200,
-        "final_url": "https://baha.gov.sa/ar/Events",
-        "content_type": "text/html; charset=utf-8",
-        "bytes": 194225,
-        "title": "فعاليات الباحة",
-        "blocked_reason": "bot-protection",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 19,
-        "json_or_api_hints": 14,
-        "date_snippets": [
-          "datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" as=\"style\"",
-          "datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" rel=\"stylesheet\">",
-          "calendar-alt\">",
-          "date-span\">",
-          "10 Jul 2027",
-          "dated Row -->"
-        ]
-      },
-      "extraction_score": 23,
-      "recommendation": "blocked-or-protected:bot-protection"
     },
     {
       "id": "riyadh-season",
@@ -502,6 +468,33 @@
       "recommendation": "blocked-or-protected:timeout"
     },
     {
+      "id": "historic-jeddah-albalad",
+      "name": "Visit AlBalad / Historic Jeddah",
+      "priority": 38,
+      "url": "https://visitalbalad.com/",
+      "trust_level": "official",
+      "fetch_method": "html-listing",
+      "candidate_gate": "extraction",
+      "intake_policy": "monitor-public",
+      "signals": {
+        "http_ok": false,
+        "status": 403,
+        "final_url": "https://visitalbalad.com/",
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 5834,
+        "title": "Just a moment...",
+        "blocked_reason": "http-403",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 0,
+        "date_snippets": []
+      },
+      "extraction_score": -23,
+      "recommendation": "blocked-or-protected:http-403"
+    },
+    {
       "id": "ricec-events",
       "name": "Riyadh International Convention and Exhibition Center",
       "priority": 41,
@@ -527,33 +520,6 @@
       },
       "extraction_score": -23,
       "recommendation": "blocked-or-protected:fetch failed Connect Timeout Error (attempted address: www.ricec.com:443, timeout: 10000ms) TypeError: fetch failed"
-    },
-    {
-      "id": "saudi-contractors-authority-events",
-      "name": "Saudi Contractors Authority Events",
-      "priority": 49,
-      "url": "https://www.sca.gov.sa/",
-      "trust_level": "official",
-      "fetch_method": "html-listing",
-      "candidate_gate": "extraction",
-      "intake_policy": "monitor-public",
-      "signals": {
-        "http_ok": false,
-        "status": 0,
-        "final_url": "https://www.sca.gov.sa/",
-        "content_type": "",
-        "bytes": 0,
-        "title": "",
-        "blocked_reason": "fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 0,
-        "date_snippets": []
-      },
-      "extraction_score": -23,
-      "recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed"
     },
     {
       "id": "riyadh-city-events",
@@ -583,10 +549,10 @@
       "recommendation": "blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed"
     },
     {
-      "id": "middle-east-banking-ai-summit",
-      "name": "Middle East Banking AI & Analytics Summit Official",
-      "priority": 74,
-      "url": "https://mebankingai.com/sa/",
+      "id": "middle-east-enterprise-ai-summit",
+      "name": "Middle East Enterprise AI & Analytics Summit Official",
+      "priority": 75,
+      "url": "https://meenterpriseai.com/sa/",
       "trust_level": "official",
       "fetch_method": "html-listing",
       "candidate_gate": "human-review",
@@ -594,10 +560,10 @@
       "signals": {
         "http_ok": true,
         "status": 200,
-        "final_url": "https://mebankingai.com/sa/",
+        "final_url": "https://meenterpriseai.com/sa/",
         "content_type": "text/html",
-        "bytes": 2305,
-        "title": "Middle East Banking",
+        "bytes": 1996,
+        "title": "Middle East Enterprise",
         "blocked_reason": "bot-protection",
         "structured_scripts": 0,
         "structured_events": 0,

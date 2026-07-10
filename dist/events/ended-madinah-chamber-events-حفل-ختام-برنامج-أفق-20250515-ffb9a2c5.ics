@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:حفل ختام برنامج ( أفق ) | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-madinah-chamber-events-حفل-ختام-برنامج-أفق-20250515-ffb9a2c5@eventme.live
+DTSTAMP:20260710T112054Z
+DTSTART:20250515T150000Z
+DTEND:20250515T170000Z
+SUMMARY:حفل ختام برنامج ( أفق )
+DESCRIPTION:اقيم بمقر غرفة المدينة المنورة حفل ختام برنامج ( أفق ) أحد برامج جمعية تنمية الايتام @tanmiat_alaytam الذي يهدف الى تطوير وتمكين وتشجيع الايتام في عدة مجالات متنوعة من خلال حلقات نقاش وورش عمل متخصصة.
+LOCATION:غرفة المدينة المنورة
+URL:https://eventme.live/events/ended-madinah-chamber-events-حفل-ختام-برنامج-أفق-20250515-ffb9a2c5.html
+END:VEVENT
+END:VCALENDAR

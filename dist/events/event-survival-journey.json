@@ -10,12 +10,12 @@
   "evidence_url": "https://www.ithra.com/en/programme/2026/survival-journey",
   "trust_tier": "official-venue",
   "trust_label": "مصدر المكان الرسمي",
-  "verified_at": "2026-07-10T10:08:07.323Z",
+  "verified_at": "2026-07-10T11:12:15.075Z",
   "verification_method": "registered-venue-official",
   "freshness_hours": 0,
   "city": "الظهران",
-  "venue": "Energy Exhibit",
-  "venue_address": "Energy Exhibit",
+  "venue": "Ithra - Energy Exhibit",
+  "venue_address": "Ithra - Energy Exhibit",
   "starts_at": "2026-07-27T17:00:00+03:00",
   "ends_at": "2026-08-26T18:45:00+03:00",
   "status": "upcoming",
@@ -45,7 +45,7 @@
     "برنامج ممتد",
     "قادمة",
     "الظهران",
-    "Energy Exhibit",
+    "Ithra - Energy Exhibit",
     "Ithra Events",
     "arts",
     "creativity",
@@ -250,13 +250,18 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Energy Exhibit",
+      "name": "Ithra - Energy Exhibit",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Energy Exhibit",
+        "streetAddress": "Ithra - Energy Exhibit",
         "addressLocality": "الظهران",
         "addressRegion": "المنطقة الشرقية",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.3354108,
+        "longitude": 50.1205788
       }
     },
     "organizer": {
@@ -270,7 +275,7 @@
     "url": "https://eventme.live/events/event-survival-journey.html",
     "mainEntityOfPage": "https://eventme.live/events/event-survival-journey.html",
     "isAccessibleForFree": true,
-    "keywords": "Survival Journey, ثقافة وفنون, culture, برنامج ممتد, قادمة, الظهران, Energy Exhibit, Ithra Events, arts, creativity, community, exhibitions, learning, Ithra, Activity, مبدعون وفنون",
+    "keywords": "Survival Journey, ثقافة وفنون, culture, برنامج ممتد, قادمة, الظهران, Ithra - Energy Exhibit, Ithra Events, arts, creativity, community, exhibitions, learning, Ithra, Activity, مبدعون وفنون",
     "audience": [
       {
         "@type": "Audience",

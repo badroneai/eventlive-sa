@@ -10,11 +10,11 @@
   "evidence_url": "https://www.ithra.com/en/visit-ithra/attractions/cinema/saudi-film-festival-12/panel-discussions/support-and-funding-opportunities-conversation-ithra-film-fund-1",
   "trust_tier": "official-venue",
   "trust_label": "مصدر المكان الرسمي",
-  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verified_at": "2026-07-10T11:06:14.632Z",
   "verification_method": "official-public-algolia-index",
   "freshness_hours": 0,
   "city": "الظهران",
-  "venue": "Knowledge Tower - level 3",
+  "venue": "Ithra - Knowledge Tower - level 3",
   "venue_address": "Knowledge Tower - level 3",
   "starts_at": "2026-06-29T14:00:00+03:00",
   "ends_at": "2026-06-29T16:00:00+03:00",
@@ -49,7 +49,7 @@
     "فعالية",
     "منتهية",
     "الظهران",
-    "Knowledge Tower - level 3",
+    "Ithra - Knowledge Tower - level 3",
     "Ithra Events",
     "culture",
     "arts",
@@ -83,13 +83,18 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Knowledge Tower - level 3",
+      "name": "Ithra - Knowledge Tower - level 3",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Knowledge Tower - level 3",
         "addressLocality": "الظهران",
         "addressRegion": "المنطقة الشرقية",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.3354108,
+        "longitude": 50.1205788
       }
     },
     "organizer": {
@@ -103,7 +108,7 @@
     "url": "https://eventme.live/events/ended-ithra-events-support-and-funding-opportunities-a-conversation-with-the-red-sea-fund-20260629-4ba3f1ee.html",
     "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-support-and-funding-opportunities-a-conversation-with-the-red-sea-fund-20260629-4ba3f1ee.html",
     "isAccessibleForFree": true,
-    "keywords": "Support and Funding Opportunities: A conversation with the Red Sea Fund, جامعات ومجتمع, performance, فعالية, منتهية, الظهران, Knowledge Tower - level 3, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Saudi Film Festival, Talk, ended-event, عائلات وأطفال, مبدعون وفنون",
+    "keywords": "Support and Funding Opportunities: A conversation with the Red Sea Fund, جامعات ومجتمع, performance, فعالية, منتهية, الظهران, Ithra - Knowledge Tower - level 3, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Saudi Film Festival, Talk, ended-event, عائلات وأطفال, مبدعون وفنون",
     "audience": [
       {
         "@type": "Audience",

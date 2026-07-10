@@ -5,4 +5,44 @@ METHOD:PUBLISH
 PRODID:-//EventLive//Saudi Events//AR
 X-WR-CALNAME:فعاليات مكة | EventLive
 X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية@eventme.live
+DTSTAMP:20260710T112054Z
+DTSTART:20260712T070000Z
+DTEND:20260721T150000Z
+SUMMARY:دورة تحضير البيئات وتعريف السلالات البكتيرية
+DESCRIPTION:دورة علمية متكاملة في طرق تحضير بيئات تزرييع البكتيريا المستخدمة في فحوصات المياه و الاغذية و كذلك طرق التعرف على البكتيريا و تحديد نوعها
+LOCATION:Umm Al-Qura University
+URL:https://eventme.live/events/event-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-دورة-الفحوصات-المكروبيولوجية-لمياه-الشرب-الأسس-العلمية-والتطبيقات-البحثي@eventme.live
+DTSTAMP:20260710T112054Z
+DTSTART:20260712T070000Z
+DTEND:20260721T150000Z
+SUMMARY:دورة الفحوصات المكروبيولوجية لمياه الشرب: الأسس العلمية والتطبيقات البحثية
+DESCRIPTION:دورة علمية متكاملة للتعرف على اسس و معايير الفحوصات المكروبيولوجية لمياه الشرب و تطبيقاتها البحثية دورة الفحوصات المكروبيولوجية لمياه الشرب: الأسس العلمية والتطبيقات البحثية ضمن ورش تنظيمية وصحية في مكة. تبدأ الفعالية ١٢‏/٠٧‏/٢٠٢٦، ١٠:٠٠ ص وتنتهي ٢١‏/٠٧‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Umm Al-Qura University Events Center.
+LOCATION:Umm Al-Qura University
+URL:https://eventme.live/events/event-دورة-الفحوصات-المكروبيولوجية-لمياه-الشرب-الأسس-العلمية-والتطبيقات-البحثي.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية@eventme.live
+DTSTAMP:20260710T112054Z
+DTSTART:20260726T070000Z
+DTEND:20260727T150000Z
+SUMMARY:دورة تقنية PCR بالمعامل الحيوية الجزيئية
+DESCRIPTION:دورة لاستكشاف الأساسيات المعملية للبيولوجيا الجزيئية، من استخلاص الحمض النووي وتضخيمه باستخدام تقنية تفاعل البلمرة المتسلسل (PCR) إلى الكشف عنه بالفصل والتحليل عبر تقنية الترحيل الكهربائي Electrophoresis.
+LOCATION:Umm Al-Qura University
+URL:https://eventme.live/events/event-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem@eventme.live
+DTSTAMP:20260710T112054Z
+DTSTART:20260816T070000Z
+DTEND:20260818T150000Z
+SUMMARY:دورة اساسيات المجهر الالكتروني الماسح SEM
+DESCRIPTION:دورة عملية متكاملة للتعرف على مبادئ عمل المجهر الإلكتروني الماسح وتطبيقاته في تحليل المواد على المستوى الميكروي والنانوي
+LOCATION:Umm Al-Qura University
+URL:https://eventme.live/events/event-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem.html
+END:VEVENT
 END:VCALENDAR

@@ -10,12 +10,12 @@
   "evidence_url": "https://www.ithra.com/en/programme/2026/introduction-jewelry-making",
   "trust_tier": "official-venue",
   "trust_label": "مصدر المكان الرسمي",
-  "verified_at": "2026-07-10T10:08:07.323Z",
+  "verified_at": "2026-07-10T11:12:15.075Z",
   "verification_method": "registered-venue-official",
   "freshness_hours": 0,
   "city": "الظهران",
-  "venue": "Ithra Tower - Level 7, Art Studio",
-  "venue_address": "Ithra Tower - Level 7, Art Studio",
+  "venue": "Ithra - Ithra Tower - Level 7, Art Studio",
+  "venue_address": "Ithra - Ithra Tower - Level 7, Art Studio",
   "starts_at": "2026-07-21T16:30:00+03:00",
   "ends_at": "2026-07-25T21:30:00+03:00",
   "status": "upcoming",
@@ -53,7 +53,7 @@
     "فعالية",
     "قادمة",
     "الظهران",
-    "Ithra Tower - Level 7, Art Studio",
+    "Ithra - Ithra Tower - Level 7, Art Studio",
     "Ithra Events",
     "culture",
     "arts",
@@ -114,13 +114,18 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Ithra Tower - Level 7, Art Studio",
+      "name": "Ithra - Ithra Tower - Level 7, Art Studio",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Ithra Tower - Level 7, Art Studio",
+        "streetAddress": "Ithra - Ithra Tower - Level 7, Art Studio",
         "addressLocality": "الظهران",
         "addressRegion": "المنطقة الشرقية",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.3354108,
+        "longitude": 50.1205788
       }
     },
     "organizer": {
@@ -134,7 +139,7 @@
     "url": "https://eventme.live/events/event-introduction-to-jewelry-making-techniques.html",
     "mainEntityOfPage": "https://eventme.live/events/event-introduction-to-jewelry-making-techniques.html",
     "isAccessibleForFree": false,
-    "keywords": "Introduction to Jewelry Making Techniques, جامعات ومجتمع, learning, فعالية, قادمة, الظهران, Ithra Tower - Level 7, Art Studio, Ithra Events, culture, arts, creativity, community, exhibitions, Ithra, Art and Design, Immerse, مهاريون وحرفيون, رواد أعمال, مبدعون وفنون",
+    "keywords": "Introduction to Jewelry Making Techniques, جامعات ومجتمع, learning, فعالية, قادمة, الظهران, Ithra - Ithra Tower - Level 7, Art Studio, Ithra Events, culture, arts, creativity, community, exhibitions, Ithra, Art and Design, Immerse, مهاريون وحرفيون, رواد أعمال, مبدعون وفنون",
     "audience": [
       {
         "@type": "Audience",

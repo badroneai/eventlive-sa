@@ -140,6 +140,45 @@
       "verification_method": "openstreetmap-place-match",
       "verified_at": "2026-07-10T00:00:00+03:00",
       "evidence_url": "https://www.openstreetmap.org/?mlat=29.7848626&mlon=40.0352745#map=16/29.7848626/40.0352745"
+    },
+    {
+      "id": "ithra-cultural-center",
+      "name": "King Abdulaziz Center for World Culture - Ithra",
+      "city": "Dhahran",
+      "aliases": [
+        "Ithra",
+        "King Abdulaziz Center for World Culture",
+        "إثراء",
+        "مركز الملك عبدالعزيز الثقافي العالمي"
+      ],
+      "source_hosts": [
+        "ithra.com"
+      ],
+      "latitude": 26.3354108,
+      "longitude": 50.1205788,
+      "precision": "campus",
+      "verification_method": "openstreetmap-place-match-source-scoped",
+      "verified_at": "2026-07-10T00:00:00+03:00",
+      "evidence_url": "https://www.openstreetmap.org/way/711880052"
+    },
+    {
+      "id": "umm-al-qura-university-abdiyah",
+      "name": "Umm Al-Qura University",
+      "city": "Makkah",
+      "aliases": [
+        "Umm Al-Qura University",
+        "جامعة أم القرى",
+        "جامعة ام القرى"
+      ],
+      "source_hosts": [
+        "uqu.edu.sa"
+      ],
+      "latitude": 21.324832,
+      "longitude": 39.9448821,
+      "precision": "campus",
+      "verification_method": "openstreetmap-place-match-source-scoped",
+      "verified_at": "2026-07-10T00:00:00+03:00",
+      "evidence_url": "https://www.openstreetmap.org/way/457989129"
     }
   ]
 }

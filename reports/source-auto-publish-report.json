@@ -1,16 +1,16 @@
 {
-  "published_at": "2026-07-10T10:08:07.323Z",
+  "published_at": "2026-07-10T11:12:15.075Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 390,
+  "candidates_seen": 395,
   "totals": {
-    "candidates_seen": 390,
+    "candidates_seen": 395,
     "published": 0,
-    "linked_existing": 369,
+    "linked_existing": 374,
     "blocked": 21,
-    "reconciled": 369
+    "reconciled": 374
   },
   "duplicate_catalog_rows_removed": 0,
   "duplicate_catalog_rows": [],
@@ -835,6 +835,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-umm-al-qura-events-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية-20260712-cacbed34",
+      "event_id": "event-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية",
+      "title": "دورة تحضير البيئات وتعريف السلالات البكتيرية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-دورة-الفحوصات-المكروبيولوجية-لمياه-الشرب-الأسس-العلمية-والتطبيقات-البحثي-20260712-056dae07",
+      "event_id": "event-دورة-الفحوصات-المكروبيولوجية-لمياه-الشرب-الأسس-العلمية-والتطبيقات-البحثي",
+      "title": "دورة الفحوصات المكروبيولوجية لمياه الشرب: الأسس العلمية والتطبيقات البحثية",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-saudi-university-events-join-us-at-kaust-health-for-respiratory-health-day-20260712-27bf6068",
       "event_id": "event-join-us-at-kaust-health-for-respiratory-health-day",
       "title": "Join us at KAUST Health for Respiratory Health Day",
@@ -1177,6 +1189,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-umm-al-qura-events-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية-20260726-3aa6cb44",
+      "event_id": "event-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية",
+      "title": "دورة تقنية PCR بالمعامل الحيوية الجزيئية",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل-20260726-aa1669c2",
       "event_id": "event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل",
       "title": "معسكر تطوير البرمجيات السحابية الاحترافية لسحابة قوقل",
@@ -1474,6 +1492,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-بطولة-أبطال-المملكة-للشطرنج-20260813-4a38d19e",
       "event_id": "event-بطولة-أبطال-المملكة-للشطرنج",
       "title": "بطولة أبطال المملكة للشطرنج",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem-20260816-84787696",
+      "event_id": "event-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem",
+      "title": "دورة اساسيات المجهر الالكتروني الماسح SEM",
       "reason": "already linked to catalog event"
     },
     {
@@ -2125,6 +2149,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-madinah-architecture-festival-مهرجان-المدينة-المنورة-الدولي-للعمارة-2026-20261210-7c99a854",
+      "event_id": "event-مهرجان-المدينة-المنورة-الدولي-للعمارة-2026",
+      "title": "مهرجان المدينة المنورة الدولي للعمارة 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-dhahran-expo-calendar-pfl-mena-final-20261211-18d15b29",
       "event_id": "event-pfl-mena-final",
       "title": "PFL Mena Final",
@@ -2240,11 +2270,6 @@
       "reason": "possible duplicate already exists: event-esports-world-cup"
     },
     {
-      "candidate_id": "candidate-eventbrite-saudi-riyadh-tech-mixer-and-social-tech-ai-data-it-20260710-5651bfb9",
-      "title": "Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
       "candidate_id": "candidate-eventbrite-saudi-dubai-property-expo-in-al-khobar-17th-18th-july-2026-danube-20260717-2dd8b8b7",
       "title": "Dubai Property Expo in Al Khobar",
       "reason": "publication gate source-evidence is not auto-publishable"
@@ -2297,6 +2322,11 @@
     {
       "candidate_id": "candidate-eventbrite-saudi-information-session-with-ie-university-saudi-arabia-in-riyadh-20260907-2b4929f1",
       "title": "Information Session With IE University Saudi Arabia in Riyadh",
+      "reason": "publication gate source-evidence is not auto-publishable"
+    },
+    {
+      "candidate_id": "candidate-eventbrite-saudi-25th-wpc-energy-congress-20261011-5909609b",
+      "title": "25TH WPC Energy Congress",
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {

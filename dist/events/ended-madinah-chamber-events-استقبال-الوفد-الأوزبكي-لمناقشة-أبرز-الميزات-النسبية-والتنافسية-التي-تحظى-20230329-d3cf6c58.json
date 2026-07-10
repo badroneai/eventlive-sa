@@ -1,0 +1,124 @@
+{
+  "id": "ended-madinah-chamber-events-استقبال-الوفد-الأوزبكي-لمناقشة-أبرز-الميزات-النسبية-والتنافسية-التي-تحظى-20230329-d3cf6c58",
+  "title": "استقبال الوفد الأوزبكي لمناقشة أبرز الميزات النسبية والتنافسية التي تحظى بها منطقة المدينة المنورة كواجهة استثمارية واعدة ، والبحث في سبل التعاون المشترك",
+  "summary": "استقبل نائب رئيس مجلس إدارة غرفة المدينة المنورة د.خالد عبد القادر الدقل والأمين العام للغرفة م.عبدالله أحمد أبوالنصر ، الوفد الأوزبكي لمناقشة أبرز الميزات النسبية والتنافسية التي تحظى بها منطقة المدينة المنورة كواجهة استثمارية واعدة ، والبحث في سبل التعاون المشترك",
+  "canonical_url": "https://eventme.live/events/ended-madinah-chamber-events-استقبال-الوفد-الأوزبكي-لمناقشة-أبرز-الميزات-النسبية-والتنافسية-التي-تحظى-20230329-d3cf6c58.html",
+  "detail_url": "./events/ended-madinah-chamber-events-استقبال-الوفد-الأوزبكي-لمناقشة-أبرز-الميزات-النسبية-والتنافسية-التي-تحظى-20230329-d3cf6c58.html",
+  "calendar_url": "./events/ended-madinah-chamber-events-استقبال-الوفد-الأوزبكي-لمناقشة-أبرز-الميزات-النسبية-والتنافسية-التي-تحظى-20230329-d3cf6c58.ics",
+  "source_label": "Madinah Chamber Events",
+  "source_url": "https://www.mcci.org.sa/Event/eventDetails?circular=164",
+  "evidence_url": "https://www.mcci.org.sa/Event/eventDetails?circular=164",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T11:06:14.632Z",
+  "verification_method": "official-public-json-api",
+  "freshness_hours": 0,
+  "city": "المدينة المنورة",
+  "venue": "مبنى غرفة المدينة المنورة",
+  "venue_address": "مبنى غرفة المدينة المنورة",
+  "starts_at": "2023-03-29T15:00:00+03:00",
+  "ends_at": "2023-03-29T17:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/استقبال-الوفد-الأوزبكي-لمناقشة-أبرز-الميزات-النسبية-والتنافسية-التي-تح-1a9d139cf5.jpg",
+  "image_alt": "استقبال الوفد الأوزبكي لمناقشة أبرز الميزات النسبية والتنافسية التي تحظى بها منطقة المدينة المنورة كواجهة استثمارية واعدة ، والبحث في سبل التعاون المشترك",
+  "category": "فعاليات الغرف التجارية",
+  "category_url": "./categories/chamber-event.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "entrepreneurs",
+      "label": "رواد أعمال"
+    }
+  ],
+  "keywords": [
+    "استقبال الوفد الأوزبكي لمناقشة أبرز الميزات النسبية والتنافسية التي تحظى بها منطقة المدينة المنورة كواجهة استثمارية واعدة ، والبحث في سبل التعاون المشترك",
+    "فعاليات الغرف التجارية",
+    "وفد تجاري",
+    "فعالية",
+    "منتهية",
+    "المدينة المنورة",
+    "مبنى غرفة المدينة المنورة",
+    "Madinah Chamber Events",
+    "business",
+    "training",
+    "workshops",
+    "forums",
+    "exhibitions",
+    "Madinah Chamber",
+    "ended-event",
+    "موظفون ومهنيون",
+    "رواد أعمال"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2023-03-29T15:00:00+03:00",
+      "ends_at": "2023-03-29T17:00:00+03:00",
+      "room": "مبنى غرفة المدينة المنورة",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "استقبال الوفد الأوزبكي لمناقشة أبرز الميزات النسبية والتنافسية التي تحظى بها منطقة المدينة المنورة كواجهة استثمارية واعدة ، والبحث في سبل التعاون المشترك",
+    "startDate": "2023-03-29T15:00:00+03:00",
+    "endDate": "2023-03-29T17:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "مبنى غرفة المدينة المنورة",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "مبنى غرفة المدينة المنورة",
+        "addressLocality": "المدينة المنورة",
+        "addressRegion": "منطقة المدينة المنورة",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "غرفة المدينة المنورة"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/استقبال-الوفد-الأوزبكي-لمناقشة-أبرز-الميزات-النسبية-والتنافسية-التي-تح-1a9d139cf5.jpg"
+    ],
+    "description": "استقبل نائب رئيس مجلس إدارة غرفة المدينة المنورة د.خالد عبد القادر الدقل والأمين العام للغرفة م.عبدالله أحمد أبوالنصر ، الوفد الأوزبكي لمناقشة أبرز الميزات النسبية والتنافسية التي تحظى بها منطقة المدينة المنورة كواجهة استثمارية واعدة ، والبحث في سبل التعاون المشترك",
+    "url": "https://eventme.live/events/ended-madinah-chamber-events-استقبال-الوفد-الأوزبكي-لمناقشة-أبرز-الميزات-النسبية-والتنافسية-التي-تحظى-20230329-d3cf6c58.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-madinah-chamber-events-استقبال-الوفد-الأوزبكي-لمناقشة-أبرز-الميزات-النسبية-والتنافسية-التي-تحظى-20230329-d3cf6c58.html",
+    "isAccessibleForFree": false,
+    "keywords": "استقبال الوفد الأوزبكي لمناقشة أبرز الميزات النسبية والتنافسية التي تحظى بها منطقة المدينة المنورة كواجهة استثمارية واعدة ، والبحث في سبل التعاون المشترك, فعاليات الغرف التجارية, وفد تجاري, فعالية, منتهية, المدينة المنورة, مبنى غرفة المدينة المنورة, Madinah Chamber Events, business, training, workshops, forums, exhibitions, Madinah Chamber, ended-event, موظفون ومهنيون, رواد أعمال",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رواد أعمال"
+      }
+    ],
+    "sameAs": [
+      "https://www.mcci.org.sa/Event/eventDetails?circular=164"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.mcci.org.sa/Event/eventDetails?circular=164",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

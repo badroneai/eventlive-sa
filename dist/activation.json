@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-10T10:10:45.542Z",
+  "generated_at": "2026-07-10T11:20:54.252Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "live-schedule-activation",
   "totals": {
-    "candidates": 214,
-    "urgent": 95,
-    "high": 17,
+    "candidates": 219,
+    "urgent": 97,
+    "high": 18,
     "needs_date": 0,
-    "source_groups": 29,
-    "basic_window_candidates": 214,
+    "source_groups": 31,
+    "basic_window_candidates": 219,
     "missing_window_candidates": 0
   },
   "focus": {
@@ -962,6 +962,77 @@
       "impact_score": 66
     },
     {
+      "key": "Umm Al-Qura University Events Center",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_url": "https://uqu.edu.sa/App/Events/41007",
+      "source_host": "uqu.edu.sa",
+      "candidates": 4,
+      "urgent": 2,
+      "high": 1,
+      "basic_windows": 4,
+      "missing_windows": 0,
+      "route_counts": {
+        "campus-calendar-parser": 4
+      },
+      "next_event_starts_at": "2026-07-12T10:00:00+03:00",
+      "example_events": [
+        {
+          "id": "event-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية",
+          "title": "دورة تحضير البيئات وتعريف السلالات البكتيرية",
+          "city": "مكة",
+          "starts_at": "2026-07-12T10:00:00+03:00",
+          "detail_url": "./events/event-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية.html",
+          "priority": {
+            "key": "urgent",
+            "label": "عاجل الآن",
+            "rank": 0
+          }
+        },
+        {
+          "id": "event-دورة-الفحوصات-المكروبيولوجية-لمياه-الشرب-الأسس-العلمية-والتطبيقات-البحثي",
+          "title": "دورة الفحوصات المكروبيولوجية لمياه الشرب: الأسس العلمية والتطبيقات البحثية",
+          "city": "مكة",
+          "starts_at": "2026-07-12T10:00:00+03:00",
+          "detail_url": "./events/event-دورة-الفحوصات-المكروبيولوجية-لمياه-الشرب-الأسس-العلمية-والتطبيقات-البحثي.html",
+          "priority": {
+            "key": "urgent",
+            "label": "عاجل الآن",
+            "rank": 0
+          }
+        },
+        {
+          "id": "event-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية",
+          "title": "دورة تقنية PCR بالمعامل الحيوية الجزيئية",
+          "city": "مكة",
+          "starts_at": "2026-07-26T10:00:00+03:00",
+          "detail_url": "./events/event-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية.html",
+          "priority": {
+            "key": "high",
+            "label": "أولوية عالية",
+            "rank": 1
+          }
+        },
+        {
+          "id": "event-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem",
+          "title": "دورة اساسيات المجهر الالكتروني الماسح SEM",
+          "city": "مكة",
+          "starts_at": "2026-08-16T10:00:00+03:00",
+          "detail_url": "./events/event-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem.html",
+          "priority": {
+            "key": "normal",
+            "label": "متابعة دورية",
+            "rank": 2
+          }
+        }
+      ],
+      "acquisition": {
+        "route": "campus-calendar-parser",
+        "label": "محلل تقويم جامعي",
+        "next_action": "اجمع تفاصيل المكان داخل الحرم، الفقرات، ورابط التسجيل من صفحة التقويم الجامعي."
+      },
+      "impact_score": 64
+    },
+    {
       "key": "Visit Saudi Seasons",
       "source_label": "Visit Saudi Seasons",
       "source_url": "https://www.visitsaudi.com/en/riyadh/events/the-groves",
@@ -1726,6 +1797,41 @@
         "next_action": "استخرج وقت الورشة، محاور التدريب، ورابط التسجيل من صفحة التفاصيل أو نماذج الحضور."
       },
       "impact_score": 15
+    },
+    {
+      "key": "Madinah International Architecture Festival",
+      "source_label": "Madinah International Architecture Festival",
+      "source_url": "https://mdc.almunawarah.sa/",
+      "source_host": "mdc.almunawarah.sa",
+      "candidates": 1,
+      "urgent": 0,
+      "high": 0,
+      "basic_windows": 1,
+      "missing_windows": 0,
+      "route_counts": {
+        "source-detail-probe": 1
+      },
+      "next_event_starts_at": "2026-12-10T09:00:00+03:00",
+      "example_events": [
+        {
+          "id": "event-مهرجان-المدينة-المنورة-الدولي-للعمارة-2026",
+          "title": "مهرجان المدينة المنورة الدولي للعمارة 2026",
+          "city": "المدينة المنورة",
+          "starts_at": "2026-12-10T09:00:00+03:00",
+          "detail_url": "./events/event-مهرجان-المدينة-المنورة-الدولي-للعمارة-2026.html",
+          "priority": {
+            "key": "normal",
+            "label": "متابعة دورية",
+            "rank": 2
+          }
+        }
+      ],
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "impact_score": 11
     },
     {
       "key": "Middle East Banking AI & Analytics Summit Official",
@@ -2758,7 +2864,7 @@
       "id": "event-misk-local-traineeship-program",
       "title": "Misk Local Traineeship Program",
       "city": "الرياض",
-      "venue": "Misk Hub Riyadh",
+      "venue": "In-Person",
       "organizer": "Mohammed Bin Salman Foundation / Misk Hub",
       "category": "تدريب تقني",
       "starts_at": "2026-04-01T09:00:00+03:00",
@@ -2777,7 +2883,7 @@
         "title": "نافذة الحضور",
         "starts_at": "2026-04-01T09:00:00+03:00",
         "ends_at": "2026-12-31T18:00:00+03:00",
-        "room": "Misk Hub Riyadh",
+        "room": "In-Person",
         "track": "برنامج ممتد",
         "session_type": "attendance-window",
         "inferred": true,
@@ -2798,7 +2904,7 @@
       "blockers": [
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
-      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Misk%20Local%20Traineeship%20Program&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Misk%20Local%20Traineeship%20Program%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Misk%20Hub%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-04-01T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-misk-local-traineeship-program.html"
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Misk%20Local%20Traineeship%20Program&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Misk%20Local%20Traineeship%20Program%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20In-Person%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-04-01T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-misk-local-traineeship-program.html"
     },
     {
       "id": "event-سوق-الثلاثاء-الشعبي",
@@ -5745,6 +5851,98 @@
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D9%87%D9%86%D8%AF%D8%B3%D8%A9%20%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB%D8%A9%20%D9%88%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D9%87%D9%86%D8%AF%D8%B3%D8%A9%20%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB%D8%A9%20%D9%88%D8%A3%D9%86%D8%B8%D9%85%D8%A9%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-12T10%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%B9%D8%B3%D9%83%D8%B1-%D9%87%D9%86%D8%AF%D8%B3%D8%A9-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB%D8%A9-%D9%88%D8%A3%D9%86%D8%B8%D9%85%D8%A9-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A.html"
     },
     {
+      "id": "event-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية",
+      "title": "دورة تحضير البيئات وتعريف السلالات البكتيرية",
+      "city": "مكة",
+      "venue": "Umm Al-Qura University",
+      "organizer": "Umm Al-Qura University",
+      "category": "تدريب تقني",
+      "starts_at": "2026-07-12T10:00:00+03:00",
+      "ends_at": "2026-07-21T18:00:00+03:00",
+      "detail_url": "./events/event-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية.html",
+      "calendar_url": "./events/event-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=21.324832%2C39.9448821",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_url": "https://uqu.edu.sa/App/Events/41007",
+      "evidence_url": "https://uqu.edu.sa/App/Events/41007",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-07-12T10:00:00+03:00",
+        "ends_at": "2026-07-21T18:00:00+03:00",
+        "room": "Umm Al-Qura University",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "campus-calendar-parser",
+        "label": "محلل تقويم جامعي",
+        "next_action": "اجمع تفاصيل المكان داخل الحرم، الفقرات، ورابط التسجيل من صفحة التقويم الجامعي."
+      },
+      "priority": {
+        "key": "urgent",
+        "label": "عاجل الآن",
+        "rank": 0
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D8%AF%D9%88%D8%B1%D8%A9%20%D8%AA%D8%AD%D8%B6%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D8%A7%D8%AA%20%D9%88%D8%AA%D8%B9%D8%B1%D9%8A%D9%81%20%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%84%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D9%83%D8%AA%D9%8A%D8%B1%D9%8A%D8%A9&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D8%AF%D9%88%D8%B1%D8%A9%20%D8%AA%D8%AD%D8%B6%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D8%A7%D8%AA%20%D9%88%D8%AA%D8%B9%D8%B1%D9%8A%D9%81%20%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%84%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D9%83%D8%AA%D9%8A%D8%B1%D9%8A%D8%A9%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D9%85%D9%83%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Umm%20Al-Qura%20University%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-12T10%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D8%AF%D9%88%D8%B1%D8%A9-%D8%AA%D8%AD%D8%B6%D9%8A%D8%B1-%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D8%A7%D8%AA-%D9%88%D8%AA%D8%B9%D8%B1%D9%8A%D9%81-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%A8%D9%83%D8%AA%D9%8A%D8%B1%D9%8A%D8%A9.html"
+    },
+    {
+      "id": "event-دورة-الفحوصات-المكروبيولوجية-لمياه-الشرب-الأسس-العلمية-والتطبيقات-البحثي",
+      "title": "دورة الفحوصات المكروبيولوجية لمياه الشرب: الأسس العلمية والتطبيقات البحثية",
+      "city": "مكة",
+      "venue": "Umm Al-Qura University",
+      "organizer": "Umm Al-Qura University",
+      "category": "ورش تنظيمية وصحية",
+      "starts_at": "2026-07-12T10:00:00+03:00",
+      "ends_at": "2026-07-21T18:00:00+03:00",
+      "detail_url": "./events/event-دورة-الفحوصات-المكروبيولوجية-لمياه-الشرب-الأسس-العلمية-والتطبيقات-البحثي.html",
+      "calendar_url": "./events/event-دورة-الفحوصات-المكروبيولوجية-لمياه-الشرب-الأسس-العلمية-والتطبيقات-البحثي.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=21.324832%2C39.9448821",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_url": "https://uqu.edu.sa/App/Events/41006",
+      "evidence_url": "https://uqu.edu.sa/App/Events/41006",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-07-12T10:00:00+03:00",
+        "ends_at": "2026-07-21T18:00:00+03:00",
+        "room": "Umm Al-Qura University",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "campus-calendar-parser",
+        "label": "محلل تقويم جامعي",
+        "next_action": "اجمع تفاصيل المكان داخل الحرم، الفقرات، ورابط التسجيل من صفحة التقويم الجامعي."
+      },
+      "priority": {
+        "key": "urgent",
+        "label": "عاجل الآن",
+        "rank": 0
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D8%AF%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D9%81%D8%AD%D9%88%D8%B5%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%88%D8%A8%D9%8A%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A9%20%D9%84%D9%85%D9%8A%D8%A7%D9%87%20%D8%A7%D9%84%D8%B4%D8%B1%D8%A8%3A%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B3%20%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D8%AD%D8%AB%D9%8A%D8%A9&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D8%AF%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D9%81%D8%AD%D9%88%D8%B5%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%88%D8%A8%D9%8A%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A9%20%D9%84%D9%85%D9%8A%D8%A7%D9%87%20%D8%A7%D9%84%D8%B4%D8%B1%D8%A8%3A%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B3%20%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A%D8%A9%20%D9%88%D8%A7%D9%84%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D8%AD%D8%AB%D9%8A%D8%A9%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D9%85%D9%83%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Umm%20Al-Qura%20University%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-12T10%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D9%81%D8%AD%D9%88%D8%B5%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%83%D8%B1%D9%88%D8%A8%D9%8A%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A9-%D9%84%D9%85%D9%8A%D8%A7%D9%87-%D8%A7%D9%84%D8%B4%D8%B1%D8%A8-%D8%A7%D9%84%D8%A3%D8%B3%D8%B3-%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D8%A8%D8%AD%D8%AB%D9%8A.html"
+    },
+    {
       "id": "event-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم",
       "title": "انطلاق النادي الصيفي التاسع لجامعة القصيم",
       "city": "بريدة",
@@ -6208,7 +6406,7 @@
       "id": "event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج",
       "title": "تقييم سلامة المنتج التجميلي وملف معلومات المنتج",
       "city": "الرياض",
-      "venue": "Riyadh",
+      "venue": "Rass",
       "organizer": "Saudi Food and Drug Authority",
       "category": "ورش تنظيمية وصحية",
       "starts_at": "2026-07-21T09:30:00+03:00",
@@ -6227,7 +6425,7 @@
         "title": "نافذة الحضور",
         "starts_at": "2026-07-21T09:30:00+03:00",
         "ends_at": "2026-07-22T14:00:00+03:00",
-        "room": "Riyadh",
+        "room": "Rass",
         "track": "الفعالية الرئيسية",
         "session_type": "attendance-window",
         "inferred": true,
@@ -6248,7 +6446,7 @@
       "blockers": [
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
-      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D8%AA%D9%82%D9%8A%D9%8A%D9%85%20%D8%B3%D9%84%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%20%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D9%8A%D9%84%D9%8A%20%D9%88%D9%85%D9%84%D9%81%20%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D8%AA%D9%82%D9%8A%D9%8A%D9%85%20%D8%B3%D9%84%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%20%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D9%8A%D9%84%D9%8A%20%D9%88%D9%85%D9%84%D9%81%20%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-21T09%3A30%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D8%AA%D9%82%D9%8A%D9%8A%D9%85-%D8%B3%D9%84%D8%A7%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC-%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D9%8A%D9%84%D9%8A-%D9%88%D9%85%D9%84%D9%81-%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC.html"
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D8%AA%D9%82%D9%8A%D9%8A%D9%85%20%D8%B3%D9%84%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%20%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D9%8A%D9%84%D9%8A%20%D9%88%D9%85%D9%84%D9%81%20%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D8%AA%D9%82%D9%8A%D9%8A%D9%85%20%D8%B3%D9%84%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%20%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D9%8A%D9%84%D9%8A%20%D9%88%D9%85%D9%84%D9%81%20%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Rass%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-21T09%3A30%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D8%AA%D9%82%D9%8A%D9%8A%D9%85-%D8%B3%D9%84%D8%A7%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC-%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D9%8A%D9%84%D9%8A-%D9%88%D9%85%D9%84%D9%81-%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC.html"
     },
     {
       "id": "event-متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة",
@@ -6479,6 +6677,52 @@
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D9%85%D9%88%D8%A7%D9%82%D8%B9%20%D8%A7%D9%84%D9%88%D9%8A%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85%20Java%20%D9%88%D8%AF%D9%85%D8%AC%20%D8%AA%D9%82%D9%86%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D9%85%D9%88%D8%A7%D9%82%D8%B9%20%D8%A7%D9%84%D9%88%D9%8A%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85%20Java%20%D9%88%D8%AF%D9%85%D8%AC%20%D8%AA%D9%82%D9%86%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-26T10%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%B9%D8%B3%D9%83%D8%B1-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%A7%D9%84%D9%88%D9%8A%D8%A8-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-java-%D9%88%D8%AF%D9%85%D8%AC-%D8%AA%D9%82%D9%86%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A.html"
+    },
+    {
+      "id": "event-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية",
+      "title": "دورة تقنية PCR بالمعامل الحيوية الجزيئية",
+      "city": "مكة",
+      "venue": "Umm Al-Qura University",
+      "organizer": "Umm Al-Qura University",
+      "category": "تدريب تقني",
+      "starts_at": "2026-07-26T10:00:00+03:00",
+      "ends_at": "2026-07-27T18:00:00+03:00",
+      "detail_url": "./events/event-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية.html",
+      "calendar_url": "./events/event-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=21.324832%2C39.9448821",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_url": "https://uqu.edu.sa/App/Events/41008",
+      "evidence_url": "https://uqu.edu.sa/App/Events/41008",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-07-26T10:00:00+03:00",
+        "ends_at": "2026-07-27T18:00:00+03:00",
+        "room": "Umm Al-Qura University",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "campus-calendar-parser",
+        "label": "محلل تقويم جامعي",
+        "next_action": "اجمع تفاصيل المكان داخل الحرم، الفقرات، ورابط التسجيل من صفحة التقويم الجامعي."
+      },
+      "priority": {
+        "key": "high",
+        "label": "أولوية عالية",
+        "rank": 1
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D8%AF%D9%88%D8%B1%D8%A9%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20PCR%20%D8%A8%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%85%D9%84%20%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D8%B2%D9%8A%D8%A6%D9%8A%D8%A9&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D8%AF%D9%88%D8%B1%D8%A9%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9%20PCR%20%D8%A8%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%85%D9%84%20%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AC%D8%B2%D9%8A%D8%A6%D9%8A%D8%A9%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D9%85%D9%83%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Umm%20Al-Qura%20University%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-26T10%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D8%AF%D9%88%D8%B1%D8%A9-%D8%AA%D9%82%D9%86%D9%8A%D8%A9-pcr-%D8%A8%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%85%D9%84-%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D9%8A%D8%A9-%D8%A7%D9%84%D8%AC%D8%B2%D9%8A%D8%A6%D9%8A%D8%A9.html"
     },
     {
       "id": "event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل",
@@ -7077,6 +7321,52 @@
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D8%A8%D8%B7%D9%88%D9%84%D8%A9%20%D8%A3%D8%A8%D8%B7%D8%A7%D9%84%20%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9%20%D9%84%D9%84%D8%B4%D8%B7%D8%B1%D9%86%D8%AC&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D8%A8%D8%B7%D9%88%D9%84%D8%A9%20%D8%A3%D8%A8%D8%B7%D8%A7%D9%84%20%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9%20%D9%84%D9%84%D8%B4%D8%B7%D8%B1%D9%86%D8%AC%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-08-13T00%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D8%A8%D8%B7%D9%88%D9%84%D8%A9-%D8%A3%D8%A8%D8%B7%D8%A7%D9%84-%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9-%D9%84%D9%84%D8%B4%D8%B7%D8%B1%D9%86%D8%AC.html"
+    },
+    {
+      "id": "event-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem",
+      "title": "دورة اساسيات المجهر الالكتروني الماسح SEM",
+      "city": "مكة",
+      "venue": "Umm Al-Qura University",
+      "organizer": "Umm Al-Qura University",
+      "category": "ورش تنظيمية وصحية",
+      "starts_at": "2026-08-16T10:00:00+03:00",
+      "ends_at": "2026-08-18T18:00:00+03:00",
+      "detail_url": "./events/event-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem.html",
+      "calendar_url": "./events/event-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=21.324832%2C39.9448821",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_url": "https://uqu.edu.sa/App/Events/41009",
+      "evidence_url": "https://uqu.edu.sa/App/Events/41009",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-08-16T10:00:00+03:00",
+        "ends_at": "2026-08-18T18:00:00+03:00",
+        "room": "Umm Al-Qura University",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "campus-calendar-parser",
+        "label": "محلل تقويم جامعي",
+        "next_action": "اجمع تفاصيل المكان داخل الحرم، الفقرات، ورابط التسجيل من صفحة التقويم الجامعي."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D8%AF%D9%88%D8%B1%D8%A9%20%D8%A7%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AC%D9%87%D8%B1%20%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%20%D8%A7%D9%84%D9%85%D8%A7%D8%B3%D8%AD%20SEM&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D8%AF%D9%88%D8%B1%D8%A9%20%D8%A7%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%AC%D9%87%D8%B1%20%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%20%D8%A7%D9%84%D9%85%D8%A7%D8%B3%D8%AD%20SEM%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D9%85%D9%83%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Umm%20Al-Qura%20University%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-08-16T10%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AC%D9%87%D8%B1-%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A-%D8%A7%D9%84%D9%85%D8%A7%D8%B3%D8%AD-sem.html"
     },
     {
       "id": "event-معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine",
@@ -8140,7 +8430,7 @@
       "id": "event-the-innovation-diwan",
       "title": "The Innovation Diwan",
       "city": "الرياض",
-      "venue": "Misk Hub Riyadh",
+      "venue": "Hybrid",
       "organizer": "Mohammed Bin Salman Foundation / Misk Hub",
       "category": "جامعات ومجتمع",
       "starts_at": "2026-09-05T09:00:00+03:00",
@@ -8159,7 +8449,7 @@
         "title": "نافذة الحضور",
         "starts_at": "2026-09-05T09:00:00+03:00",
         "ends_at": "2027-01-31T18:00:00+03:00",
-        "room": "Misk Hub Riyadh",
+        "room": "Hybrid",
         "track": "برنامج ممتد",
         "session_type": "attendance-window",
         "inferred": true,
@@ -8180,7 +8470,7 @@
       "blockers": [
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
-      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20The%20Innovation%20Diwan&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20The%20Innovation%20Diwan%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Misk%20Hub%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-05T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-the-innovation-diwan.html"
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20The%20Innovation%20Diwan&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20The%20Innovation%20Diwan%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Hybrid%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-05T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-the-innovation-diwan.html"
     },
     {
       "id": "event-saudi-food-manufacturing-show",
@@ -8232,7 +8522,7 @@
       "id": "event-misk-launchpad",
       "title": "Misk Launchpad",
       "city": "الرياض",
-      "venue": "Misk Hub Riyadh",
+      "venue": "Hybrid",
       "organizer": "Mohammed Bin Salman Foundation / Misk Hub",
       "category": "تدريب تقني",
       "starts_at": "2026-09-06T09:00:00+03:00",
@@ -8251,7 +8541,7 @@
         "title": "نافذة الحضور",
         "starts_at": "2026-09-06T09:00:00+03:00",
         "ends_at": "2027-01-02T18:00:00+03:00",
-        "room": "Misk Hub Riyadh",
+        "room": "Hybrid",
         "track": "برنامج ممتد",
         "session_type": "attendance-window",
         "inferred": true,
@@ -8272,7 +8562,7 @@
       "blockers": [
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
-      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Misk%20Launchpad&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Misk%20Launchpad%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Misk%20Hub%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-06T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-misk-launchpad.html"
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Misk%20Launchpad&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Misk%20Launchpad%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Hybrid%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-06T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-misk-launchpad.html"
     },
     {
       "id": "event-index-saudi-arabia-interior-design-trade-show",
@@ -9382,7 +9672,7 @@
       "id": "event-saudi-national-day",
       "title": "Saudi National Day",
       "city": "على مستوى المملكة",
-      "venue": "Nationwide",
+      "venue": "Saudi Arabia",
       "organizer": "Saudi Tourism Authority",
       "category": "ترفيه وعائلات",
       "starts_at": "2026-09-23T09:00:00+03:00",
@@ -9401,7 +9691,7 @@
         "title": "نافذة الحضور",
         "starts_at": "2026-09-23T09:00:00+03:00",
         "ends_at": "2026-09-23T18:00:00+03:00",
-        "room": "Nationwide",
+        "room": "Saudi Arabia",
         "track": "الفعالية الرئيسية",
         "session_type": "attendance-window",
         "inferred": true,
@@ -9422,7 +9712,7 @@
       "blockers": [
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
-      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Saudi%20National%20Day&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Saudi%20National%20Day%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%B9%D9%84%D9%89%20%D9%85%D8%B3%D8%AA%D9%88%D9%89%20%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Nationwide%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-23T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-saudi-national-day.html"
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Saudi%20National%20Day&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Saudi%20National%20Day%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%B9%D9%84%D9%89%20%D9%85%D8%B3%D8%AA%D9%88%D9%89%20%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Saudi%20Arabia%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-23T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-saudi-national-day.html"
     },
     {
       "id": "event-the-egyptian-products-exhibition",
@@ -10943,6 +11233,52 @@
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20EMTEC%20%E2%80%93%20The%20Environmental%20Management%20%26%20Technology%20Exhibitions%20%26%20Conference&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20EMTEC%20%E2%80%93%20The%20Environmental%20Management%20%26%20Technology%20Exhibitions%20%26%20Conference%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Dhahran%20Expo%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-12-07T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-emtec-the-environmental-management-technology-exhibitions-conference.html"
     },
     {
+      "id": "event-مهرجان-المدينة-المنورة-الدولي-للعمارة-2026",
+      "title": "مهرجان المدينة المنورة الدولي للعمارة 2026",
+      "city": "المدينة المنورة",
+      "venue": "Madinah",
+      "organizer": "Al-Madinah Region Development Authority",
+      "category": "ترفيه وعائلات",
+      "starts_at": "2026-12-10T09:00:00+03:00",
+      "ends_at": "2026-12-10T21:00:00+03:00",
+      "detail_url": "./events/event-مهرجان-المدينة-المنورة-الدولي-للعمارة-2026.html",
+      "calendar_url": "./events/event-مهرجان-المدينة-المنورة-الدولي-للعمارة-2026.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Madinah%20Madinah",
+      "source_label": "Madinah International Architecture Festival",
+      "source_url": "https://mdc.almunawarah.sa/",
+      "evidence_url": "https://mdc.almunawarah.sa/",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-12-10T09:00:00+03:00",
+        "ends_at": "2026-12-10T21:00:00+03:00",
+        "room": "Madinah",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D9%87%D8%B1%D8%AC%D8%A7%D9%86%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%20%D9%84%D9%84%D8%B9%D9%85%D8%A7%D8%B1%D8%A9%202026&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D9%87%D8%B1%D8%AC%D8%A7%D9%86%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%20%D9%84%D9%84%D8%B9%D9%85%D8%A7%D8%B1%D8%A9%202026%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Madinah%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-12-10T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D9%87%D8%B1%D8%AC%D8%A7%D9%86-%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A-%D9%84%D9%84%D8%B9%D9%85%D8%A7%D8%B1%D8%A9-2026.html"
+    },
+    {
       "id": "event-pfl-mena-final",
       "title": "PFL Mena Final",
       "city": "الظهران",
@@ -11176,7 +11512,7 @@
       "id": "event-معرض-وظائف-2026",
       "title": "معرض وظائف 2026",
       "city": "الظهران",
-      "venue": "شركة معارض الظهران الدولي",
+      "venue": "شركة معارض الظهران الدولية ( كسبو)",
       "organizer": "Asharqia Chamber",
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-12-27T16:00:00+03:00",
@@ -11195,7 +11531,7 @@
         "title": "نافذة الحضور",
         "starts_at": "2026-12-27T16:00:00+03:00",
         "ends_at": "2026-12-29T16:00:00+03:00",
-        "room": "شركة معارض الظهران الدولي",
+        "room": "شركة معارض الظهران الدولية ( كسبو)",
         "track": "الفعالية الرئيسية",
         "session_type": "attendance-window",
         "inferred": true,
@@ -11216,7 +11552,7 @@
       "blockers": [
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
-      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%B9%D8%B1%D8%B6%20%D9%88%D8%B8%D8%A7%D8%A6%D9%81%202026&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%B9%D8%B1%D8%B6%20%D9%88%D8%B8%D8%A7%D8%A6%D9%81%202026%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%20%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-12-27T16%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%B9%D8%B1%D8%B6-%D9%88%D8%B8%D8%A7%D8%A6%D9%81-2026.html"
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%B9%D8%B1%D8%B6%20%D9%88%D8%B8%D8%A7%D8%A6%D9%81%202026&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%B9%D8%B1%D8%B6%20%D9%88%D8%B8%D8%A7%D8%A6%D9%81%202026%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%20%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9%20(%20%D9%83%D8%B3%D8%A8%D9%88)%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-12-27T16%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%B9%D8%B1%D8%B6-%D9%88%D8%B8%D8%A7%D8%A6%D9%81-2026.html"
     },
     {
       "id": "event-ultra-gobi-alula",
@@ -11498,7 +11834,7 @@
       "id": "event-founding-day",
       "title": "Founding Day",
       "city": "على مستوى المملكة",
-      "venue": "Nationwide",
+      "venue": "Saudi Arabia",
       "organizer": "Saudi Tourism Authority",
       "category": "ترفيه وعائلات",
       "starts_at": "2027-02-22T09:00:00+03:00",
@@ -11517,7 +11853,7 @@
         "title": "نافذة الحضور",
         "starts_at": "2027-02-22T09:00:00+03:00",
         "ends_at": "2027-02-22T18:00:00+03:00",
-        "room": "Nationwide",
+        "room": "Saudi Arabia",
         "track": "الفعالية الرئيسية",
         "session_type": "attendance-window",
         "inferred": true,
@@ -11538,7 +11874,7 @@
       "blockers": [
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
-      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Founding%20Day&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Founding%20Day%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%B9%D9%84%D9%89%20%D9%85%D8%B3%D8%AA%D9%88%D9%89%20%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Nationwide%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202027-02-22T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-founding-day.html"
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Founding%20Day&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Founding%20Day%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%B9%D9%84%D9%89%20%D9%85%D8%B3%D8%AA%D9%88%D9%89%20%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Saudi%20Arabia%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202027-02-22T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-founding-day.html"
     },
     {
       "id": "event-saudi-flag-day",
@@ -11590,7 +11926,7 @@
       "id": "event-eid-al-fitr",
       "title": "Eid Al-Fitr",
       "city": "على مستوى المملكة",
-      "venue": "Nationwide",
+      "venue": "Saudi Arabia",
       "organizer": "Saudi Tourism Authority",
       "category": "ترفيه وعائلات",
       "starts_at": "2027-03-30T09:00:00+03:00",
@@ -11609,7 +11945,7 @@
         "title": "نافذة الحضور",
         "starts_at": "2027-03-30T09:00:00+03:00",
         "ends_at": "2027-03-30T18:00:00+03:00",
-        "room": "Nationwide",
+        "room": "Saudi Arabia",
         "track": "الفعالية الرئيسية",
         "session_type": "attendance-window",
         "inferred": true,
@@ -11630,13 +11966,13 @@
       "blockers": [
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
-      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Eid%20Al-Fitr&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Eid%20Al-Fitr%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%B9%D9%84%D9%89%20%D9%85%D8%B3%D8%AA%D9%88%D9%89%20%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Nationwide%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202027-03-30T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-eid-al-fitr.html"
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Eid%20Al-Fitr&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Eid%20Al-Fitr%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%B9%D9%84%D9%89%20%D9%85%D8%B3%D8%AA%D9%88%D9%89%20%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Saudi%20Arabia%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202027-03-30T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-eid-al-fitr.html"
     },
     {
       "id": "event-eid-al-adha",
       "title": "Eid Al-Adha",
       "city": "على مستوى المملكة",
-      "venue": "Nationwide",
+      "venue": "Saudi Arabia",
       "organizer": "Saudi Tourism Authority",
       "category": "ترفيه وعائلات",
       "starts_at": "2027-06-06T09:00:00+03:00",
@@ -11655,7 +11991,7 @@
         "title": "نافذة الحضور",
         "starts_at": "2027-06-06T09:00:00+03:00",
         "ends_at": "2027-06-10T18:00:00+03:00",
-        "room": "Nationwide",
+        "room": "Saudi Arabia",
         "track": "الفعالية الرئيسية",
         "session_type": "attendance-window",
         "inferred": true,
@@ -11676,7 +12012,7 @@
       "blockers": [
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
-      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Eid%20Al-Adha&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Eid%20Al-Adha%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%B9%D9%84%D9%89%20%D9%85%D8%B3%D8%AA%D9%88%D9%89%20%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Nationwide%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202027-06-06T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-eid-al-adha.html"
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Eid%20Al-Adha&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Eid%20Al-Adha%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%B9%D9%84%D9%89%20%D9%85%D8%B3%D8%AA%D9%88%D9%89%20%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Saudi%20Arabia%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202027-06-06T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-eid-al-adha.html"
     }
   ],
   "links": {

@@ -10,11 +10,11 @@
   "evidence_url": "https://www.ithra.com/en/programme/2026/eid-aladha/make-it-eid",
   "trust_tier": "official-venue",
   "trust_label": "مصدر المكان الرسمي",
-  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verified_at": "2026-07-10T11:06:14.632Z",
   "verification_method": "official-public-algolia-index",
   "freshness_hours": 0,
   "city": "الظهران",
-  "venue": "Culture Oasis",
+  "venue": "Ithra - Culture Oasis",
   "venue_address": "Culture Oasis",
   "starts_at": "2026-05-28T16:00:00+03:00",
   "ends_at": "2026-05-31T23:00:00+03:00",
@@ -45,7 +45,7 @@
     "فعالية",
     "منتهية",
     "الظهران",
-    "Culture Oasis",
+    "Ithra - Culture Oasis",
     "Ithra Events",
     "culture",
     "arts",
@@ -98,13 +98,18 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Culture Oasis",
+      "name": "Ithra - Culture Oasis",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Culture Oasis",
         "addressLocality": "الظهران",
         "addressRegion": "المنطقة الشرقية",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.3354108,
+        "longitude": 50.1205788
       }
     },
     "organizer": {
@@ -118,7 +123,7 @@
     "url": "https://eventme.live/events/ended-ithra-events-make-it-eid-20260528-2f86cb2a.html",
     "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-make-it-eid-20260528-2f86cb2a.html",
     "isAccessibleForFree": true,
-    "keywords": "Make It Eid, جامعات ومجتمع, learning, فعالية, منتهية, الظهران, Culture Oasis, Ithra Events, culture, arts, creativity, community, exhibitions, Ithra, Eid AlAdha, Workshop, ended-event, مبدعون وفنون",
+    "keywords": "Make It Eid, جامعات ومجتمع, learning, فعالية, منتهية, الظهران, Ithra - Culture Oasis, Ithra Events, culture, arts, creativity, community, exhibitions, Ithra, Eid AlAdha, Workshop, ended-event, مبدعون وفنون",
     "audience": [
       {
         "@type": "Audience",

@@ -10,11 +10,11 @@
   "evidence_url": "https://www.ithra.com/en/programme/2025/art-studio1/textured-painting",
   "trust_tier": "official-venue",
   "trust_label": "مصدر المكان الرسمي",
-  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verified_at": "2026-07-10T11:06:14.632Z",
   "verification_method": "official-public-algolia-index",
   "freshness_hours": 0,
   "city": "الظهران",
-  "venue": "Ithra Tower - Level 7, Art studio",
+  "venue": "Ithra - Ithra Tower - Level 7, Art studio",
   "venue_address": "Ithra Tower - Level 7, Art studio",
   "starts_at": "2026-06-27T17:00:00+03:00",
   "ends_at": "2026-06-27T20:00:00+03:00",
@@ -49,7 +49,7 @@
     "فعالية",
     "منتهية",
     "الظهران",
-    "Ithra Tower - Level 7, Art studio",
+    "Ithra - Ithra Tower - Level 7, Art studio",
     "Ithra Events",
     "culture",
     "arts",
@@ -82,13 +82,18 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Ithra Tower - Level 7, Art studio",
+      "name": "Ithra - Ithra Tower - Level 7, Art studio",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Ithra Tower - Level 7, Art studio",
         "addressLocality": "الظهران",
         "addressRegion": "المنطقة الشرقية",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.3354108,
+        "longitude": 50.1205788
       }
     },
     "organizer": {
@@ -102,7 +107,7 @@
     "url": "https://eventme.live/events/ended-ithra-events-textured-painting-20260627-b0fc79b9.html",
     "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-textured-painting-20260627-b0fc79b9.html",
     "isAccessibleForFree": false,
-    "keywords": "Textured Painting, جامعات ومجتمع, learning, فعالية, منتهية, الظهران, Ithra Tower - Level 7, Art studio, Ithra Events, culture, arts, creativity, community, exhibitions, Ithra, Art and Design, Workshop, ended-event, مهاريون وحرفيون, مبدعون وفنون",
+    "keywords": "Textured Painting, جامعات ومجتمع, learning, فعالية, منتهية, الظهران, Ithra - Ithra Tower - Level 7, Art studio, Ithra Events, culture, arts, creativity, community, exhibitions, Ithra, Art and Design, Workshop, ended-event, مهاريون وحرفيون, مبدعون وفنون",
     "audience": [
       {
         "@type": "Audience",

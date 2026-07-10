@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T10:04:43.112Z",
+  "generated_at": "2026-07-10T11:06:07.145Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -7,15 +7,15 @@
     "selected_ids": [],
     "scope": "priority",
     "limit": 8,
-    "probed_this_run": 0,
-    "fresh_results_available": 23,
+    "probed_this_run": 1,
+    "fresh_results_available": 24,
     "wait_ms": 4500,
     "timeout_ms": 60000
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 23,
-    "browser_network_api": 9,
+    "probed": 24,
+    "browser_network_api": 10,
     "browser_hydration_payload": 0,
     "rendered_html_candidates": 6,
     "blocked_or_protected": 1,
@@ -2819,6 +2819,72 @@
       "network_total": 0,
       "network_endpoints": [],
       "network_sample": []
+    },
+    {
+      "id": "madinah-chamber-events",
+      "name": "Madinah Chamber Events",
+      "priority": 83,
+      "url": "https://services.mi.org.sa/api/events?PageNumber=1&PageSize=100",
+      "final_url": "https://services.mi.org.sa/api/events?PageNumber=1&PageSize=100",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 6494,
+      "classification": "browser-network-api",
+      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
+      "title": "",
+      "text_bytes": 38281,
+      "html_bytes": 42674,
+      "html_snapshot": "data/raw/browser-probes/madinah-chamber-events-2026-07-10T11-06-07-145Z.html",
+      "screenshot": "data/raw/browser-probes/madinah-chamber-events-2026-07-10T11-06-07-145Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [
+          "/p>\", \"paragraph2\": null, \"eventDate\": \"2026-07-07T21:00:00\", \"imageUrl\": \"639185464094648063.jfif\", \"thmImageUrl\": \"6391854640946",
+          ", \"locationMap\": \"test\", \"insertDate\": \"2026-07-01T23:46:49.4692167\", \"userInsert\": \"5c0f6001-ff7f-414a-8ae3-13b329e9c3fe\", \"userE",
+          "f-414a-8ae3-13b329e9c3fe\", \"editDate\": \"2026-07-01T23:50:23.8442996\", \"show\": true, \"titleEn\": null, \"summeryEn\": null, \"paragraph",
+          "/p>\", \"paragraph2\": null, \"eventDate\": \"2026-05-13T21:00:00\", \"imageUrl\": \"639136415871778688.jfif\", \"thmImageUrl\": \"6391364158717",
+          ", \"locationMap\": \"test\", \"insertDate\": \"2026-05-06T05:19:47.1835769\", \"userInsert\": \"5c0f6001-ff7f-414a-8ae3-13b329e9c3fe\", \"userE",
+          "f-414a-8ae3-13b329e9c3fe\", \"editDate\": \"2026-05-06T05:19:47.1835839\", \"show\": true, \"titleEn\": null, \"summeryEn\": null, \"paragraph",
+          "/p>\", \"paragraph2\": null, \"eventDate\": \"2026-05-13T21:00:00\", \"imageUrl\": \"639137171605901564.jfif\", \"thmImageUrl\": \"6391371716059",
+          ", \"locationMap\": \"test\", \"insertDate\": \"2026-05-07T02:19:20.5949308\", \"userInsert\": \"5c0f6001-ff7f-414a-8ae3-13b329e9c3fe\", \"userE"
+        ],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 1,
+      "network_endpoints": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://services.mi.org.sa/api/events?PageNumber=1&PageSize=100",
+          "content_type": "application/json",
+          "resource_type": "document",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{ \"pageNumber\": 1, \"pageSize\": 12, \"firstPage\": \"http://services.mi.org.sa/api/events?pageNumber=1&pageSize=12\", \"lastPage\": \"http://services.mi.org.sa/api/events?pageNumber=29&pageSize=12\", \"totalPages\": 29, \"totalRecords\": 338, \"nextPage\": \"http://services.mi.org.sa/api/events?pageNumber=2&pageSize=12\", \"previousPage\": null, \"data\": [ { \"eventId\": 474, \"title\": \"\\\"اللقاء التوعوي لتعزيز الامتثال لمتطلبات سلامة الغداء لدى مشغلي المنشآت الغذائية\\\"\", \"summery\": \"<p><span style=\\\"background-color: rgb(255, 255, 255); color: rgb(15, 20, 25);\\\">يسر اللجنة الصناعية بـغرفة المدينة دعوتكم لحضور </span>\\\"اللقاء التوعوي لتعزيز الامتثال لمتطلبات سلامة الغداء لدى مشغلي المنشآت الغذائية\\\"</p><p><span style=\\\"background-color: rgb(255, 255, 255); color: rgb(15, 20, 25);\\\"> الثلاثاء 7\\\\07\\\\ 2026 م</span></p><p>غ<span style=\\\"background-color: rgb(255, 255, 255); color: rgb(15, 20, 25);\\\">رفة المدينة المنورة</span></p><p>را<span style=\\\"background-color: rgb(255, 255, 255); color: rgb(15, 20, 25);\\\">بط التسجيل:</span></p><p><a href=\\\"https://survey.porsline.com/s/QAfD3DC4\\\" rel=\\\"noopener noreferrer\\\" target=\\\"_blank\\\">https://survey.porsline.com/s/QAfD3DC4</a></p>\", \"paragraph1\": \"<p>يسر اللجنة الصناعية بغرفة المدينة المنورة دعوتكم لحضور \\\"اللقاء التوعوي لتعزيز الامتثال لمتطلبات سلامة الغداء لدى مشغلي المنشآت الغذائية\\\"</p><p> الثلاثاء 7\\\\07\\\\ 2026 م</p><p>غرفة المدينة المنورة</p><p>رابط التسجيل:</p><p><a href=\\\"https://survey.porsline.com/s/QAfD3DC4\\\" rel=\\\"noopener noreferrer\\\" target=\\\"_blank\\\">https://survey.porsline.com/s/QAfD3DC4</a></p>\", \"paragraph2\": null, \"eventDate\": \"2026-07-07T21:00:00\", \"imageUrl\": \"639185464094648063.jfif\", \"thmImageUrl\": \"639185464094648169.jfif\", \"organisers"
+        }
+      ],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://services.mi.org.sa/api/events?PageNumber=1&PageSize=100",
+          "content_type": "application/json",
+          "resource_type": "document",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{ \"pageNumber\": 1, \"pageSize\": 12, \"firstPage\": \"http://services.mi.org.sa/api/events?pageNumber=1&pageSize=12\", \"lastPage\": \"http://services.mi.org.sa/api/events?pageNumber=29&pageSize=12\", \"totalPages\": 29, \"totalRecords\": 338, \"nextPage\": \"http://services.mi.org.sa/api/events?pageNumber=2&pageSize=12\", \"previousPage\": null, \"data\": [ { \"eventId\": 474, \"title\": \"\\\"اللقاء التوعوي لتعزيز الامتثال لمتطلبات سلامة الغداء لدى مشغلي المنشآت الغذائية\\\"\", \"summery\": \"<p><span style=\\\"background-color: rgb(255, 255, 255); color: rgb(15, 20, 25);\\\">يسر اللجنة الصناعية بـغرفة المدينة دعوتكم لحضور </span>\\\"اللقاء التوعوي لتعزيز الامتثال لمتطلبات سلامة الغداء لدى مشغلي المنشآت الغذائية\\\"</p><p><span style=\\\"background-color: rgb(255, 255, 255); color: rgb(15, 20, 25);\\\"> الثلاثاء 7\\\\07\\\\ 2026 م</span></p><p>غ<span style=\\\"background-color: rgb(255, 255, 255); color: rgb(15, 20, 25);\\\">رفة المدينة المنورة</span></p><p>را<span style=\\\"background-color: rgb(255, 255, 255); color: rgb(15, 20, 25);\\\">بط التسجيل:</span></p><p><a href=\\\"https://survey.porsline.com/s/QAfD3DC4\\\" rel=\\\"noopener noreferrer\\\" target=\\\"_blank\\\">https://survey.porsline.com/s/QAfD3DC4</a></p>\", \"paragraph1\": \"<p>يسر اللجنة الصناعية بغرفة المدينة المنورة دعوتكم لحضور \\\"اللقاء التوعوي لتعزيز الامتثال لمتطلبات سلامة الغداء لدى مشغلي المنشآت الغذائية\\\"</p><p> الثلاثاء 7\\\\07\\\\ 2026 م</p><p>غرفة المدينة المنورة</p><p>رابط التسجيل:</p><p><a href=\\\"https://survey.porsline.com/s/QAfD3DC4\\\" rel=\\\"noopener noreferrer\\\" target=\\\"_blank\\\">https://survey.porsline.com/s/QAfD3DC4</a></p>\", \"paragraph2\": null, \"eventDate\": \"2026-07-07T21:00:00\", \"imageUrl\": \"639185464094648063.jfif\", \"thmImageUrl\": \"639185464094648169.jfif\", \"organisers"
+        }
+      ]
     }
   ]
 }

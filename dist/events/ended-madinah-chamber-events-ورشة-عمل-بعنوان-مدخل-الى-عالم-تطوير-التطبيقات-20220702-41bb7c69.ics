@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:ورشة عمل بعنوان " مدخل الى عالم تطوير التطبيقات " | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-madinah-chamber-events-ورشة-عمل-بعنوان-مدخل-الى-عالم-تطوير-التطبيقات-20220702-41bb7c69@eventme.live
+DTSTAMP:20260710T112054Z
+DTSTART:20220702T190100Z
+DTEND:20220702T210100Z
+SUMMARY:ورشة عمل بعنوان " مدخل الى عالم تطوير التطبيقات "
+DESCRIPTION:نظم مجتمع Google السعودي للمطورين ممثل في مجتمع النساء الرائدات في التقنية بالتعاون مع #غرفة_المدينة_المنورة ورشة عمل بعنوان " مدخل الى عالم تطوير التطبيقات " ، تهدف الى التعرف على اشهر ادوات جوجل لتطوير التطبيقات على منصات متعددة
+LOCATION:مبنى غرفة المدينة المنورة
+URL:https://eventme.live/events/ended-madinah-chamber-events-ورشة-عمل-بعنوان-مدخل-الى-عالم-تطوير-التطبيقات-20220702-41bb7c69.html
+END:VEVENT
+END:VCALENDAR

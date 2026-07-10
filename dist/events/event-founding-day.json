@@ -10,11 +10,11 @@
   "evidence_url": "https://www.visitsaudi.com/en/saudi-calendar/founding-day",
   "trust_tier": "official",
   "trust_label": "مصدر حكومي أو رسمي",
-  "verified_at": "2026-07-10T10:08:23.925Z",
+  "verified_at": "2026-07-10T11:12:47.124Z",
   "verification_method": "registered-official",
   "freshness_hours": 0,
   "city": "على مستوى المملكة",
-  "venue": "Nationwide",
+  "venue": "Saudi Arabia",
   "venue_address": "Saudi Arabia",
   "starts_at": "2027-02-22T09:00:00+03:00",
   "ends_at": "2027-02-22T18:00:00+03:00",
@@ -57,7 +57,7 @@
     "فعالية",
     "قادمة",
     "على مستوى المملكة",
-    "Nationwide",
+    "Saudi Arabia",
     "Visit Saudi Calendar",
     "tourism",
     "culture",
@@ -73,7 +73,7 @@
       "title": "نافذة الحضور",
       "starts_at": "2027-02-22T09:00:00+03:00",
       "ends_at": "2027-02-22T18:00:00+03:00",
-      "room": "Nationwide",
+      "room": "Saudi Arabia",
       "anchor": "#session-نافذة-الحضور"
     }
   ],
@@ -87,7 +87,7 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Nationwide",
+      "name": "Saudi Arabia",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Saudi Arabia",
@@ -106,7 +106,7 @@
     "url": "https://eventme.live/events/event-founding-day.html",
     "mainEntityOfPage": "https://eventme.live/events/event-founding-day.html",
     "isAccessibleForFree": false,
-    "keywords": "Founding Day, ترفيه وعائلات, Public Holidays, فعالية, قادمة, على مستوى المملكة, Nationwide, Visit Saudi Calendar, tourism, culture, entertainment, sports, تقنيون, عائلات وأطفال, مبدعون وفنون, رياضة ولياقة",
+    "keywords": "Founding Day, ترفيه وعائلات, Public Holidays, فعالية, قادمة, على مستوى المملكة, Saudi Arabia, Visit Saudi Calendar, tourism, culture, entertainment, sports, تقنيون, عائلات وأطفال, مبدعون وفنون, رياضة ولياقة",
     "audience": [
       {
         "@type": "Audience",

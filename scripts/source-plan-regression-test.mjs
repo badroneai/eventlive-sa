@@ -18,6 +18,9 @@ for (const id of [
   'saudi-pro-league-fixtures',
   'asharqia-chamber-events',
   'jazan-chamber-events',
+  'umm-al-qura-events',
+  'madinah-chamber-events',
+  'madinah-architecture-festival',
   'invest-saudi-events',
   'saudi-space-agency-events',
   'sfda-events'

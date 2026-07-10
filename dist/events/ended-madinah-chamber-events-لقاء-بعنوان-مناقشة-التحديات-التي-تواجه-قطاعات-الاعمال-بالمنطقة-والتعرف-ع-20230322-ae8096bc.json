@@ -1,0 +1,115 @@
+{
+  "id": "ended-madinah-chamber-events-لقاء-بعنوان-مناقشة-التحديات-التي-تواجه-قطاعات-الاعمال-بالمنطقة-والتعرف-ع-20230322-ae8096bc",
+  "title": "لقاء بعنوان مناقشة التحديات التي تواجه قطاعات الاعمال بالمنطقة والتعرف على آلية العمل بشركة \"TUV\" التابعة لأمانة منطقة المدينة المنورة",
+  "summary": "اجتمعت #غرفة_المدينة_المنورة ممثلةً بعدداً من لجان الغرفة مع أمانة منطقة المدينة المنورة لمناقشة التحديات التي تواجه قطاعات الاعمال بالمنطقة والتعرف على آلية العمل بشركة \"TUV\" التابعة للأمانة",
+  "canonical_url": "https://eventme.live/events/ended-madinah-chamber-events-لقاء-بعنوان-مناقشة-التحديات-التي-تواجه-قطاعات-الاعمال-بالمنطقة-والتعرف-ع-20230322-ae8096bc.html",
+  "detail_url": "./events/ended-madinah-chamber-events-لقاء-بعنوان-مناقشة-التحديات-التي-تواجه-قطاعات-الاعمال-بالمنطقة-والتعرف-ع-20230322-ae8096bc.html",
+  "calendar_url": "./events/ended-madinah-chamber-events-لقاء-بعنوان-مناقشة-التحديات-التي-تواجه-قطاعات-الاعمال-بالمنطقة-والتعرف-ع-20230322-ae8096bc.ics",
+  "source_label": "Madinah Chamber Events",
+  "source_url": "https://www.mcci.org.sa/Event/eventDetails?circular=163",
+  "evidence_url": "https://www.mcci.org.sa/Event/eventDetails?circular=163",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T11:06:14.632Z",
+  "verification_method": "official-public-json-api",
+  "freshness_hours": 0,
+  "city": "المدينة المنورة",
+  "venue": "مبنى غرفة المدينة المنورة",
+  "venue_address": "مبنى غرفة المدينة المنورة",
+  "starts_at": "2023-03-22T13:00:00+03:00",
+  "ends_at": "2023-03-22T15:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/لقاء-بعنوان-مناقشة-التحديات-التي-تواجه-قطاعات-الاعمال-بالمنطقة-والتعرف-7c6f25768e.jpg",
+  "image_alt": "لقاء بعنوان مناقشة التحديات التي تواجه قطاعات الاعمال بالمنطقة والتعرف على آلية العمل بشركة \"TUV\" التابعة لأمانة منطقة المدينة المنورة",
+  "category": "فعاليات الغرف التجارية",
+  "category_url": "./categories/chamber-event.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    }
+  ],
+  "keywords": [
+    "لقاء بعنوان مناقشة التحديات التي تواجه قطاعات الاعمال بالمنطقة والتعرف على آلية العمل بشركة \"TUV\" التابعة لأمانة منطقة المدينة المنورة",
+    "فعاليات الغرف التجارية",
+    "لقاء حواري",
+    "فعالية",
+    "منتهية",
+    "المدينة المنورة",
+    "مبنى غرفة المدينة المنورة",
+    "Madinah Chamber Events",
+    "business",
+    "training",
+    "workshops",
+    "forums",
+    "exhibitions",
+    "Madinah Chamber",
+    "ended-event",
+    "موظفون ومهنيون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2023-03-22T13:00:00+03:00",
+      "ends_at": "2023-03-22T15:00:00+03:00",
+      "room": "مبنى غرفة المدينة المنورة",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "لقاء بعنوان مناقشة التحديات التي تواجه قطاعات الاعمال بالمنطقة والتعرف على آلية العمل بشركة \"TUV\" التابعة لأمانة منطقة المدينة المنورة",
+    "startDate": "2023-03-22T13:00:00+03:00",
+    "endDate": "2023-03-22T15:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "مبنى غرفة المدينة المنورة",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "مبنى غرفة المدينة المنورة",
+        "addressLocality": "المدينة المنورة",
+        "addressRegion": "منطقة المدينة المنورة",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "غرفة المدينة المنورة"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/لقاء-بعنوان-مناقشة-التحديات-التي-تواجه-قطاعات-الاعمال-بالمنطقة-والتعرف-7c6f25768e.jpg"
+    ],
+    "description": "اجتمعت #غرفة_المدينة_المنورة ممثلةً بعدداً من لجان الغرفة مع أمانة منطقة المدينة المنورة لمناقشة التحديات التي تواجه قطاعات الاعمال بالمنطقة والتعرف على آلية العمل بشركة \"TUV\" التابعة للأمانة",
+    "url": "https://eventme.live/events/ended-madinah-chamber-events-لقاء-بعنوان-مناقشة-التحديات-التي-تواجه-قطاعات-الاعمال-بالمنطقة-والتعرف-ع-20230322-ae8096bc.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-madinah-chamber-events-لقاء-بعنوان-مناقشة-التحديات-التي-تواجه-قطاعات-الاعمال-بالمنطقة-والتعرف-ع-20230322-ae8096bc.html",
+    "isAccessibleForFree": false,
+    "keywords": "لقاء بعنوان مناقشة التحديات التي تواجه قطاعات الاعمال بالمنطقة والتعرف على آلية العمل بشركة \"TUV\" التابعة لأمانة منطقة المدينة المنورة, فعاليات الغرف التجارية, لقاء حواري, فعالية, منتهية, المدينة المنورة, مبنى غرفة المدينة المنورة, Madinah Chamber Events, business, training, workshops, forums, exhibitions, Madinah Chamber, ended-event, موظفون ومهنيون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      }
+    ],
+    "sameAs": [
+      "https://www.mcci.org.sa/Event/eventDetails?circular=163"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.mcci.org.sa/Event/eventDetails?circular=163",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

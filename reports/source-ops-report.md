@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-07-10T10:11:22.094Z
+- generated_at: 2026-07-10T11:21:42.875Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -10,27 +10,27 @@
 
 ## Executive Summary
 
-- Sources in registry: 81
-- Sources attempted in latest collection: 41
-- Collection coverage: 51%
-- Healthy sources: 29
-- Zero-yield sources: 12
+- Sources in registry: 84
+- Sources attempted in latest collection: 44
+- Collection coverage: 52%
+- Healthy sources: 30
+- Zero-yield sources: 14
 - High-priority unattempted sources: 3
-- Candidates: 390
+- Candidates: 395
 - Actionable candidates: 0
 - Ready for review: 0
 - Ready for catalog promotion: 0
-- Linked to catalog from candidates: 371
+- Linked to catalog from candidates: 376
 - Stale unpublished candidates: 0
 - Duplicate risk: 0
 - Recommendation: استخدم أقوى مرشحي الاكتشاف لبناء مطابقة آلية مع مصادر رسمية؛ لا تنشر مصدر اكتشاف منفرداً.
 
 ## Candidate Funnel
 
-- review_status.approved-for-catalog: 371
+- review_status.approved-for-catalog: 376
 - review_status.evidence-captured: 4
 - review_status.new: 15
-- publication_gate.catalog-review: 371
+- publication_gate.catalog-review: 376
 - publication_gate.duplicate-review: 1
 - publication_gate.source-evidence: 18
 - discovery_quality.strong-lead: 27
@@ -48,13 +48,13 @@
 |---|---|---|---|---:|---|---|
 | Real Estate Excellence Award 2026 (REA 2026) | Eye of Riyadh Events | Riyadh | watch-lead | 45 | directory-source, saudi-location-signal | Real Estate Future Forum (Eye of Riyadh Official, 80) |
 | Oxford Future of Real Estate Programme | Eye of Riyadh Events | Saudi Arabia | weak-lead | 25 | directory-source, saudi-location-signal, program-not-public-event, city-not-specific | Real Estate Future Forum (Eye of Riyadh Official, 60) |
-| Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨ | Eventbrite Saudi Arabia | Riyadh | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
 | Dubai Property Expo in Al Khobar | Eventbrite Saudi Arabia | Khobar | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
 | Family Office Investment Meeting | Eventbrite Saudi Arabia | Riyadh | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
 | Family Office Investment Summit | Eventbrite Saudi Arabia | Riyadh | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
 | Sucession Planning Program | Eventbrite Saudi Arabia | Riyadh | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
 | Jeddah Fintech Week 2026 | Eventbrite Saudi Arabia | Jeddah | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
 | Information Session With IE University Saudi Arabia in Riyadh | Eventbrite Saudi Arabia | Riyadh | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
+| 25TH WPC Energy Congress | Eventbrite Saudi Arabia | Riyadh | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
 | Information Session With IE University Saudi Arabia in Riyadh | Eventbrite Saudi Arabia | Riyadh | strong-lead | 70 | saudi-location-signal, specific-venue, event-topic-fit | - |
 
 ## Source Health
@@ -85,7 +85,7 @@
 | 22 | Dhahran Expo Calendar | healthy | 15 | 15 | استمر بالمراجعة والتكرار قبل النشر. |
 | 23 | Ithra Events | healthy | 129 | 129 | استمر بالمراجعة والتكرار قبل النشر. |
 | 24 | Saudi Digital Academy | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 25 | SDAIA Academy Programs | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
+| 25 | SDAIA Academy Programs | zero-yield | 0 | 0 | Recovered via last-known-good official evidence. No future date-complete candidates found by the conservative extractor. |
 | 26 | Saudi Events App | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 27 | Enjoy Saudi Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 28 | Misk Hub Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
@@ -105,7 +105,7 @@
 | 42 | Aseer Season / Asir Development Authority | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 43 | Jeddah Season | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 44 | Saudi Water Authority Events | healthy | 8 | 8 | استمر بالمراجعة والتكرار قبل النشر. |
-| 45 | Saudi Universities and Technical Colleges | healthy | 6 | 6 | استمر بالمراجعة والتكرار قبل النشر. |
+| 45 | Saudi Universities and Technical Colleges | healthy | 4 | 6 | استمر بالمراجعة والتكرار قبل النشر. |
 | 46 | ExpoFP and Eventseye Saudi Trade Shows | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 47 | Meetup and Facebook Events Saudi Arabia | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 48 | Saudi Food and Drug Authority Events | healthy | 7 | 7 | استمر بالمراجعة والتكرار قبل النشر. |
@@ -114,7 +114,7 @@
 | 51 | Riyadh City Events | healthy | 40 | 43 | استمر بالمراجعة والتكرار قبل النشر. |
 | 52 | Monsha'at Academy Programs | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 53 | General Entertainment Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 54 | SDAIA Calendar and Events | healthy | 2 | 2 | استمر بالمراجعة والتكرار قبل النشر. |
+| 54 | SDAIA Calendar and Events | zero-yield | 0 | 2 | No future date-complete candidates found by the conservative extractor. |
 | 55 | Makkah Chamber Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
 | 56 | SCEGA ePortal Events | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |
 | 57 | Ministry of Commerce Upcoming Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
@@ -136,9 +136,12 @@
 | 73 | GOV.SA National Platform Events | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 74 | Middle East Banking AI & Analytics Summit Official | not-collected | 0 | 1 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 75 | Middle East Enterprise AI & Analytics Summit Official | not-collected | 0 | 1 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 76 | Money20/20 Middle East Official Agendas | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 76 | Umm Al-Qura University Events Center | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |
 | 77 | LEAP Official Event and Agendas | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 78 | FII 10th Edition Official Program | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 79 | Cityscape Global Official Program | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 80 | Qassim University Events | healthy | 1 | 1 | استمر بالمراجعة والتكرار قبل النشر. |
 | 81 | Jouf University Summer Programs | healthy | 1 | 1 | استمر بالمراجعة والتكرار قبل النشر. |
+| 82 | Money20/20 Middle East Official Agendas | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
+| 83 | Madinah Chamber Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
+| 84 | Madinah International Architecture Festival | healthy | 1 | 1 | استمر بالمراجعة والتكرار قبل النشر. |

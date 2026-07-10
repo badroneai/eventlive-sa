@@ -1,0 +1,115 @@
+{
+  "id": "ended-madinah-chamber-events-مشاركة-غرفة-المدينة-المنورة-في-منتدى-العمرة-والزيارة-20240422-9b9a2812",
+  "title": "مشاركة غرفة المدينة المنورة في منتدى العمرة والزيارة",
+  "summary": "تشارك غرفة المدينة المنورة في منتدى العمرة والزيارة والذي يقام في مركز الملك سلمان الدولي للمؤتمرات بالمدينة المنورة مشاركة غرفة المدينة المنورة في منتدى العمرة والزيارة ضمن فعاليات الغرف التجارية في المدينة المنورة. تبدأ الفعالية ٢٢‏/٠٤‏/٢٠٢٤، ١٠:٠٠ ص وتنتهي ٢٢‏/٠٤‏/٢٠٢٤، ١٢:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Madinah Chamber Events.",
+  "canonical_url": "https://eventme.live/events/ended-madinah-chamber-events-مشاركة-غرفة-المدينة-المنورة-في-منتدى-العمرة-والزيارة-20240422-9b9a2812.html",
+  "detail_url": "./events/ended-madinah-chamber-events-مشاركة-غرفة-المدينة-المنورة-في-منتدى-العمرة-والزيارة-20240422-9b9a2812.html",
+  "calendar_url": "./events/ended-madinah-chamber-events-مشاركة-غرفة-المدينة-المنورة-في-منتدى-العمرة-والزيارة-20240422-9b9a2812.ics",
+  "source_label": "Madinah Chamber Events",
+  "source_url": "https://www.mcci.org.sa/Event/eventDetails?circular=220",
+  "evidence_url": "https://www.mcci.org.sa/Event/eventDetails?circular=220",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T11:06:14.632Z",
+  "verification_method": "official-public-json-api",
+  "freshness_hours": 0,
+  "city": "المدينة المنورة",
+  "venue": "مركز الملك سلمان الدولي للمؤتمرات",
+  "venue_address": "مركز الملك سلمان الدولي للمؤتمرات",
+  "starts_at": "2024-04-22T10:00:00+03:00",
+  "ends_at": "2024-04-22T12:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/مشاركة-غرفة-المدينة-المنورة-في-منتدى-العمرة-والزيارة-a01969e1b0.jpg",
+  "image_alt": "مشاركة غرفة المدينة المنورة في منتدى العمرة والزيارة",
+  "category": "فعاليات الغرف التجارية",
+  "category_url": "./categories/chamber-event.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    }
+  ],
+  "keywords": [
+    "مشاركة غرفة المدينة المنورة في منتدى العمرة والزيارة",
+    "فعاليات الغرف التجارية",
+    "منتدى",
+    "فعالية",
+    "منتهية",
+    "المدينة المنورة",
+    "مركز الملك سلمان الدولي للمؤتمرات",
+    "Madinah Chamber Events",
+    "business",
+    "training",
+    "workshops",
+    "forums",
+    "exhibitions",
+    "Madinah Chamber",
+    "ended-event",
+    "موظفون ومهنيون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2024-04-22T10:00:00+03:00",
+      "ends_at": "2024-04-22T12:00:00+03:00",
+      "room": "مركز الملك سلمان الدولي للمؤتمرات",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "مشاركة غرفة المدينة المنورة في منتدى العمرة والزيارة",
+    "startDate": "2024-04-22T10:00:00+03:00",
+    "endDate": "2024-04-22T12:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "مركز الملك سلمان الدولي للمؤتمرات",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "مركز الملك سلمان الدولي للمؤتمرات",
+        "addressLocality": "المدينة المنورة",
+        "addressRegion": "منطقة المدينة المنورة",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "وزارة الحج والعمرة"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/مشاركة-غرفة-المدينة-المنورة-في-منتدى-العمرة-والزيارة-a01969e1b0.jpg"
+    ],
+    "description": "تشارك غرفة المدينة المنورة في منتدى العمرة والزيارة والذي يقام في مركز الملك سلمان الدولي للمؤتمرات بالمدينة المنورة مشاركة غرفة المدينة المنورة في منتدى العمرة والزيارة ضمن فعاليات الغرف التجارية في المدينة المنورة. تبدأ الفعالية ٢٢‏/٠٤‏/٢٠٢٤، ١٠:٠٠ ص وتنتهي ٢٢‏/٠٤‏/٢٠٢٤، ١٢:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Madinah Chamber Events.",
+    "url": "https://eventme.live/events/ended-madinah-chamber-events-مشاركة-غرفة-المدينة-المنورة-في-منتدى-العمرة-والزيارة-20240422-9b9a2812.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-madinah-chamber-events-مشاركة-غرفة-المدينة-المنورة-في-منتدى-العمرة-والزيارة-20240422-9b9a2812.html",
+    "isAccessibleForFree": false,
+    "keywords": "مشاركة غرفة المدينة المنورة في منتدى العمرة والزيارة, فعاليات الغرف التجارية, منتدى, فعالية, منتهية, المدينة المنورة, مركز الملك سلمان الدولي للمؤتمرات, Madinah Chamber Events, business, training, workshops, forums, exhibitions, Madinah Chamber, ended-event, موظفون ومهنيون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      }
+    ],
+    "sameAs": [
+      "https://www.mcci.org.sa/Event/eventDetails?circular=220"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.mcci.org.sa/Event/eventDetails?circular=220",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

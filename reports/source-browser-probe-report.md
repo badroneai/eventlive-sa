@@ -1,11 +1,11 @@
 # EventLive Browser Source Probe
 
-Generated at: 2026-07-10T10:04:43.112Z
+Generated at: 2026-07-10T11:06:07.145Z
 
 ## Summary
 
-- Sources probed: 23
-- Browser network API: 9
+- Sources probed: 24
+- Browser network API: 10
 - Hydration payload: 0
 - Rendered HTML candidates: 6
 - Blocked/protected: 1
@@ -38,6 +38,7 @@ Generated at: 2026-07-10T10:04:43.112Z
 | 67 | jazan-chamber-events | ok | 200 | browser-network-api | 2 | 0 | 3 | ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار. |
 | 68 | hail-chamber-events | ok | 200 | rendered-text-review | 0 | 0 | 0 | راجع الصفحة يدويًا وحدد هل هي مصدر أدلة أم صفحة تعريفية فقط. |
 | 69 | najran-chamber-events | ok | 200 | rendered-html-candidates | 0 | 0 | 8 | اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي. |
+| 83 | madinah-chamber-events | ok | 200 | browser-network-api | 1 | 0 | 8 | ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار. |
 
 ## Endpoint Candidates
 
@@ -66,6 +67,7 @@ Generated at: 2026-07-10T10:04:43.112Z
 - asharqia-chamber-events: GET https://api-cdn.mypurecloud.ie/webdeployments/v1/deployments/bf04c4ac-89eb-4d7b-9061-14343d788e27/config.json (200, json-object:id,version,headlessMode,languages,defaultLanguage,apiEndpoint,messenger,position)
 - jazan-chamber-events: GET https://www.jazancci.org.sa/api/events/calendar/7/2026 (301, empty)
 - jazan-chamber-events: GET https://jazancci.org.sa/api/events/calendar/7/2026 (200, json-like-invalid)
+- madinah-chamber-events: GET https://services.mi.org.sa/api/events?PageNumber=1&PageSize=100 (200, json-like-invalid)
 
 ## Actionable Samples
 
@@ -88,3 +90,4 @@ Generated at: 2026-07-10T10:04:43.112Z
 | tabuk-chamber-events | ع غرفة تبوك أهم وأب / شاهد جميع الأخبار 09 يوليو 2026 غرفة تبوك تدعو منشآت القطاع الخاص للمشاركة في مبادرة «السبت البنفسجي» 24 09 يول<br>ت الخارجية للمبنى الرئيسي لغرفة تبوك 28 07 يوليو 2026 فرصة استثمارية بمنطقة #تبوك "أرض فضاء - أرض تعليمية" 44 05 يوليو 2026 دعوة لحضو<br>قاء الفرص الواعدة والجلسات الإرشادية 52 30 يونيو 2026 #استبيان / شاركنا رأيك.. لتطوير خدماتنا المؤتمتة والارتقاء بجودة خدماتنا 82 30 | - | - |
 | jazan-chamber-events | nshat-alsghyrh-walmtwsth-","createdAt":"2026-07-09T09:13:48.740Z","updatedAt":"2026-07-09T09:13:48.740Z","title":{"ar":"متطلبات نظ<br>مال.</p><h2>موعد الورشة:</h2><p><strong>21 يونيو 2025م</strong><br/><strong>10:30 صباحاً</strong><br/><strong>عن بُعد</strong></p><h2<br>amber</p></li></ul><p></p>"},"startAt":"2026-07-21T07:30:00.000Z","endAt":"2026-07-21T08:45:00.000Z","location":null,"url":"https: | - | GET https://www.jazancci.org.sa/api/events/calendar/7/2026 (301, empty): empty<br>GET https://jazancci.org.sa/api/events/calendar/7/2026 (200, json-like-invalid): [{"id":17,"slug":"mttlbat-nzam-idarh-almrafq-iso-41001-llmnshat-alsghyrh-walmtwsth-","createdAt":"2026-07-09T09:13:48.7… |
 | najran-chamber-events | صديق الاكتروني غرفة نجران آخر الأخبار - 2026-07-01 أمين عام الغرفة يستقبل وفد من جامعة نجران - 2026-07-01 الأمين العام يوقع إتفاقي<br>ة مع أكاديمية بوابة الرواد للتدريب - 2026-06-29 ورشة عمل “الخدمات الإلكترونية المقدمة لأصحاب العمل (GOSI أعمال) والالتزام التأم<br>يني” - 2026-07-07 شكر وتقدير - 2026-07-02 اللجنة العقارية تعقد اجتماعها الاعتيادي - 2026-07-01 أمين عام الغرفة يستقبل وفد من جام | - | - |
+| madinah-chamber-events | /p>", "paragraph2": null, "eventDate": "2026-07-07T21:00:00", "imageUrl": "639185464094648063.jfif", "thmImageUrl": "6391854640946<br>, "locationMap": "test", "insertDate": "2026-07-01T23:46:49.4692167", "userInsert": "5c0f6001-ff7f-414a-8ae3-13b329e9c3fe", "userE<br>f-414a-8ae3-13b329e9c3fe", "editDate": "2026-07-01T23:50:23.8442996", "show": true, "titleEn": null, "summeryEn": null, "paragraph | - | GET https://services.mi.org.sa/api/events?PageNumber=1&PageSize=100 (200, json-like-invalid): { "pageNumber": 1, "pageSize": 12, "firstPage": "http://services.mi.org.sa/api/events?pageNumber=1&pageSize=12", "lastP… |

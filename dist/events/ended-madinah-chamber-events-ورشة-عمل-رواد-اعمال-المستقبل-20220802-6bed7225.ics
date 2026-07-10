@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:ورشة عمل رواد اعمال المستقبل | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-madinah-chamber-events-ورشة-عمل-رواد-اعمال-المستقبل-20220802-6bed7225@eventme.live
+DTSTAMP:20260710T112054Z
+DTSTART:20220802T062500Z
+DTEND:20220802T082500Z
+SUMMARY:ورشة عمل رواد اعمال المستقبل
+DESCRIPTION:تهدف الورشة الى كيفية اكتساب المهارات اللازمة لرواد اعمال المستقبل في صناعة الشركات الناشئة من خلال استعراض خدمات غرفة المدينة المنورة التي تسهل و تؤهل رواد الأعمال في مزاولة نشاطهم التجاري.
+LOCATION:مقر غرفة المدينة المنورة
+URL:https://eventme.live/events/ended-madinah-chamber-events-ورشة-عمل-رواد-اعمال-المستقبل-20220802-6bed7225.html
+END:VEVENT
+END:VCALENDAR

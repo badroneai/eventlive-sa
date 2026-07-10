@@ -10,11 +10,11 @@
   "evidence_url": "https://hub.misk.org.sa/programs/skills/misk-local-traineeship-program/",
   "trust_tier": "official",
   "trust_label": "مصدر حكومي أو رسمي",
-  "verified_at": "2026-07-10T10:08:22.219Z",
+  "verified_at": "2026-07-10T11:12:44.950Z",
   "verification_method": "registered-official",
   "freshness_hours": 0,
   "city": "الرياض",
-  "venue": "Misk Hub Riyadh",
+  "venue": "In-Person",
   "venue_address": "In-Person",
   "starts_at": "2026-04-01T09:00:00+03:00",
   "ends_at": "2026-12-31T18:00:00+03:00",
@@ -61,7 +61,7 @@
     "برنامج ممتد",
     "برنامج جارٍ",
     "الرياض",
-    "Misk Hub Riyadh",
+    "In-Person",
     "Misk Hub Programs",
     "skills",
     "training",
@@ -80,7 +80,7 @@
       "title": "نافذة الحضور",
       "starts_at": "2026-04-01T09:00:00+03:00",
       "ends_at": "2026-12-31T18:00:00+03:00",
-      "room": "Misk Hub Riyadh",
+      "room": "In-Person",
       "anchor": "#session-نافذة-الحضور"
     }
   ],
@@ -94,7 +94,7 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Misk Hub Riyadh",
+      "name": "In-Person",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "In-Person",
@@ -114,7 +114,7 @@
     "url": "https://eventme.live/events/event-misk-local-traineeship-program.html",
     "mainEntityOfPage": "https://eventme.live/events/event-misk-local-traineeship-program.html",
     "isAccessibleForFree": false,
-    "keywords": "Misk Local Traineeship Program, تدريب تقني, skills program, برنامج ممتد, برنامج جارٍ, الرياض, Misk Hub Riyadh, Misk Hub Programs, skills, training, entrepreneurship, leadership, online learning, career readiness, طلاب وخريجون, باحثون عن عمل, موظفون ومهنيون, مهاريون وحرفيون, رواد أعمال",
+    "keywords": "Misk Local Traineeship Program, تدريب تقني, skills program, برنامج ممتد, برنامج جارٍ, الرياض, In-Person, Misk Hub Programs, skills, training, entrepreneurship, leadership, online learning, career readiness, طلاب وخريجون, باحثون عن عمل, موظفون ومهنيون, مهاريون وحرفيون, رواد أعمال",
     "audience": [
       {
         "@type": "Audience",

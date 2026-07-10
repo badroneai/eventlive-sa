@@ -10,12 +10,12 @@
   "evidence_url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/cinema-club/my-neighbor-totoro",
   "trust_tier": "official-venue",
   "trust_label": "مصدر المكان الرسمي",
-  "verified_at": "2026-07-10T10:08:07.323Z",
+  "verified_at": "2026-07-10T11:12:15.075Z",
   "verification_method": "registered-venue-official",
   "freshness_hours": 0,
   "city": "الظهران",
-  "venue": "Cinema",
-  "venue_address": "Cinema",
+  "venue": "Ithra - Cinema",
+  "venue_address": "Ithra - Cinema",
   "starts_at": "2026-07-10T17:00:00+03:00",
   "ends_at": "2026-07-22T19:00:00+03:00",
   "status": "upcoming",
@@ -49,7 +49,7 @@
     "فعالية",
     "قادمة",
     "الظهران",
-    "Cinema",
+    "Ithra - Cinema",
     "Ithra Events",
     "culture",
     "arts",
@@ -152,13 +152,18 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Cinema",
+      "name": "Ithra - Cinema",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Cinema",
+        "streetAddress": "Ithra - Cinema",
         "addressLocality": "الظهران",
         "addressRegion": "المنطقة الشرقية",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.3354108,
+        "longitude": 50.1205788
       }
     },
     "organizer": {
@@ -172,7 +177,7 @@
     "url": "https://eventme.live/events/event-my-neighbor-totoro.html",
     "mainEntityOfPage": "https://eventme.live/events/event-my-neighbor-totoro.html",
     "isAccessibleForFree": true,
-    "keywords": "My Neighbor Totoro, جامعات ومجتمع, performance, فعالية, قادمة, الظهران, Cinema, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Children Festival, Film Screening, عائلات وأطفال, مبدعون وفنون",
+    "keywords": "My Neighbor Totoro, جامعات ومجتمع, performance, فعالية, قادمة, الظهران, Ithra - Cinema, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Children Festival, Film Screening, عائلات وأطفال, مبدعون وفنون",
     "audience": [
       {
         "@type": "Audience",

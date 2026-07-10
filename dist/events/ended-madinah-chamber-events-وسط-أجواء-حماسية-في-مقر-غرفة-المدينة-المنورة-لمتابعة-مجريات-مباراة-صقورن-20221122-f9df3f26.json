@@ -1,0 +1,124 @@
+{
+  "id": "ended-madinah-chamber-events-وسط-أجواء-حماسية-في-مقر-غرفة-المدينة-المنورة-لمتابعة-مجريات-مباراة-صقورن-20221122-f9df3f26",
+  "title": "وسط أجواء حماسية في مقر #غرفة_المدينة_المنورة لمتابعة مجريات مباراة صقورنا الخُضر 🇸🇦 كل الدعوات والأمنيات بالتوفيق لمنتخبنا السعودي",
+  "summary": "وسط أجواء حماسية في مقر #غرفة_المدينة_المنورة لمتابعة مجريات مباراة صقورنا الخُضر 🇸🇦 كل الدعوات والأمنيات بالتوفيق لمنتخبنا السعودي #قدام يامنتخبنا #معاك_يالأخضر #مونديال_قطر_2022",
+  "canonical_url": "https://eventme.live/events/ended-madinah-chamber-events-وسط-أجواء-حماسية-في-مقر-غرفة-المدينة-المنورة-لمتابعة-مجريات-مباراة-صقورن-20221122-f9df3f26.html",
+  "detail_url": "./events/ended-madinah-chamber-events-وسط-أجواء-حماسية-في-مقر-غرفة-المدينة-المنورة-لمتابعة-مجريات-مباراة-صقورن-20221122-f9df3f26.html",
+  "calendar_url": "./events/ended-madinah-chamber-events-وسط-أجواء-حماسية-في-مقر-غرفة-المدينة-المنورة-لمتابعة-مجريات-مباراة-صقورن-20221122-f9df3f26.ics",
+  "source_label": "Madinah Chamber Events",
+  "source_url": "https://www.mcci.org.sa/Event/eventDetails?circular=115",
+  "evidence_url": "https://www.mcci.org.sa/Event/eventDetails?circular=115",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T11:06:14.632Z",
+  "verification_method": "official-public-json-api",
+  "freshness_hours": 0,
+  "city": "المدينة المنورة",
+  "venue": "مبنى غرفة المدينة المنورة",
+  "venue_address": "مبنى غرفة المدينة المنورة",
+  "starts_at": "2022-11-22T13:00:00+03:00",
+  "ends_at": "2022-11-22T15:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-covers/ended-madinah-chamber-events-وسط-أجواء-حماسية-في-مقر-غرفة-المدينة-المنورة-لمتابعة-مجريات-مباراة-صقورن-20221122-f9df3f26.svg",
+  "image_alt": "غلاف EventLive لفعالية وسط أجواء حماسية في مقر #غرفة_المدينة_المنورة لمتابعة مجريات مباراة صقورنا الخُضر 🇸🇦 كل الدعوات والأمنيات بالتوفيق لمنتخبنا السعودي",
+  "category": "فعاليات الغرف التجارية",
+  "category_url": "./categories/chamber-event.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "sports",
+      "label": "رياضة ولياقة"
+    }
+  ],
+  "keywords": [
+    "وسط أجواء حماسية في مقر #غرفة_المدينة_المنورة لمتابعة مجريات مباراة صقورنا الخُضر 🇸🇦 كل الدعوات والأمنيات بالتوفيق لمنتخبنا السعودي",
+    "فعاليات الغرف التجارية",
+    "chamber event",
+    "فعالية",
+    "منتهية",
+    "المدينة المنورة",
+    "مبنى غرفة المدينة المنورة",
+    "Madinah Chamber Events",
+    "business",
+    "training",
+    "workshops",
+    "forums",
+    "exhibitions",
+    "Madinah Chamber",
+    "ended-event",
+    "موظفون ومهنيون",
+    "رياضة ولياقة"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2022-11-22T13:00:00+03:00",
+      "ends_at": "2022-11-22T15:00:00+03:00",
+      "room": "مبنى غرفة المدينة المنورة",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "وسط أجواء حماسية في مقر #غرفة_المدينة_المنورة لمتابعة مجريات مباراة صقورنا الخُضر 🇸🇦 كل الدعوات والأمنيات بالتوفيق لمنتخبنا السعودي",
+    "startDate": "2022-11-22T13:00:00+03:00",
+    "endDate": "2022-11-22T15:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "مبنى غرفة المدينة المنورة",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "مبنى غرفة المدينة المنورة",
+        "addressLocality": "المدينة المنورة",
+        "addressRegion": "منطقة المدينة المنورة",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "غرفة المدينة المنورة"
+    },
+    "image": [
+      "https://eventme.live/assets/event-covers/ended-madinah-chamber-events-وسط-أجواء-حماسية-في-مقر-غرفة-المدينة-المنورة-لمتابعة-مجريات-مباراة-صقورن-20221122-f9df3f26.svg"
+    ],
+    "description": "وسط أجواء حماسية في مقر #غرفة_المدينة_المنورة لمتابعة مجريات مباراة صقورنا الخُضر 🇸🇦 كل الدعوات والأمنيات بالتوفيق لمنتخبنا السعودي #قدام يامنتخبنا #معاك_يالأخضر #مونديال_قطر_2022",
+    "url": "https://eventme.live/events/ended-madinah-chamber-events-وسط-أجواء-حماسية-في-مقر-غرفة-المدينة-المنورة-لمتابعة-مجريات-مباراة-صقورن-20221122-f9df3f26.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-madinah-chamber-events-وسط-أجواء-حماسية-في-مقر-غرفة-المدينة-المنورة-لمتابعة-مجريات-مباراة-صقورن-20221122-f9df3f26.html",
+    "isAccessibleForFree": false,
+    "keywords": "وسط أجواء حماسية في مقر #غرفة_المدينة_المنورة لمتابعة مجريات مباراة صقورنا الخُضر 🇸🇦 كل الدعوات والأمنيات بالتوفيق لمنتخبنا السعودي, فعاليات الغرف التجارية, chamber event, فعالية, منتهية, المدينة المنورة, مبنى غرفة المدينة المنورة, Madinah Chamber Events, business, training, workshops, forums, exhibitions, Madinah Chamber, ended-event, موظفون ومهنيون, رياضة ولياقة",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رياضة ولياقة"
+      }
+    ],
+    "sameAs": [
+      "https://www.mcci.org.sa/Event/eventDetails?circular=115"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.mcci.org.sa/Event/eventDetails?circular=115",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

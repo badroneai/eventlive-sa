@@ -5,4 +5,14 @@ METHOD:PUBLISH
 PRODID:-//EventLive//Saudi Events//AR
 X-WR-CALNAME:فعاليات المدينة المنورة | EventLive
 X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-مهرجان-المدينة-المنورة-الدولي-للعمارة-2026@eventme.live
+DTSTAMP:20260710T112054Z
+DTSTART:20261210T060000Z
+DTEND:20261210T180000Z
+SUMMARY:مهرجان المدينة المنورة الدولي للعمارة 2026
+DESCRIPTION:مهرجان ومعرض نهائي رسمي تنظمه هيئة تطوير منطقة المدينة المنورة، تعرض خلاله الفرق المختارة أعمالها ويُعلن الفائزون في المسابقة الدولية للتصميم.
+LOCATION:Madinah
+URL:https://eventme.live/events/event-مهرجان-المدينة-المنورة-الدولي-للعمارة-2026.html
+END:VEVENT
 END:VCALENDAR

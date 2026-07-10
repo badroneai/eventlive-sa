@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-10T10:10:45.542Z",
+  "generated_at": "2026-07-10T11:20:54.252Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "cities_count": 34,
   "totals": {
-    "events": 841,
-    "upcoming_or_active": 350,
-    "ended": 491,
+    "events": 1107,
+    "upcoming_or_active": 355,
+    "ended": 752,
     "live_ready": 239
   },
   "cities": [
@@ -169,9 +169,9 @@
       "slug": "jeddah",
       "label": "جدة",
       "url": "./cities/jeddah.html",
-      "total_events": 77,
+      "total_events": 81,
       "upcoming_or_active": 13,
-      "ended": 64,
+      "ended": 68,
       "live_ready": 0,
       "sources": [
         "Jeddah Chamber Exhibitions and Events Center",
@@ -210,14 +210,15 @@
       "slug": "online",
       "label": "عن بعد",
       "url": "./cities/online.html",
-      "total_events": 36,
+      "total_events": 52,
       "upcoming_or_active": 12,
-      "ended": 24,
+      "ended": 40,
       "live_ready": 8,
       "sources": [
         "CODE MCIT Programs",
         "Future Skills MCIT Catalogue",
         "Jazan Chamber Events",
+        "Madinah Chamber Events",
         "Misk Hub Events",
         "Misk Hub Programs",
         "Northern Borders Chamber Events",
@@ -236,7 +237,7 @@
         "status": "upcoming",
         "url": "./events/event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي.html"
       },
-      "sources_count": 8,
+      "sources_count": 9,
       "categories_count": 4
     },
     {
@@ -265,6 +266,35 @@
       },
       "sources_count": 3,
       "categories_count": 3
+    },
+    {
+      "slug": "makkah",
+      "label": "مكة",
+      "url": "./cities/makkah.html",
+      "total_events": 17,
+      "upcoming_or_active": 4,
+      "ended": 13,
+      "live_ready": 0,
+      "sources": [
+        "Makkah Chamber Events",
+        "SCEGA ePortal Events",
+        "Umm Al-Qura University Events Center"
+      ],
+      "categories": [
+        "تدريب تقني",
+        "فعاليات الغرف التجارية",
+        "مؤتمرات ومنتديات",
+        "معارض وتجارية",
+        "ورش تنظيمية وصحية"
+      ],
+      "next_event": {
+        "title": "دورة تحضير البيئات وتعريف السلالات البكتيرية",
+        "starts_at": "2026-07-12T10:00:00+03:00",
+        "status": "upcoming",
+        "url": "./events/event-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية.html"
+      },
+      "sources_count": 3,
+      "categories_count": 5
     },
     {
       "slug": "thuwal",
@@ -339,6 +369,33 @@
       },
       "sources_count": 1,
       "categories_count": 1
+    },
+    {
+      "slug": "madinah",
+      "label": "المدينة المنورة",
+      "url": "./cities/madinah.html",
+      "total_events": 243,
+      "upcoming_or_active": 1,
+      "ended": 242,
+      "live_ready": 0,
+      "sources": [
+        "Madinah Chamber Events",
+        "Madinah International Architecture Festival",
+        "SCEGA ePortal Events"
+      ],
+      "categories": [
+        "ترفيه وعائلات",
+        "فعاليات الغرف التجارية",
+        "مؤتمرات ومنتديات"
+      ],
+      "next_event": {
+        "title": "مهرجان المدينة المنورة الدولي للعمارة 2026",
+        "starts_at": "2026-12-10T09:00:00+03:00",
+        "status": "upcoming",
+        "url": "./events/event-مهرجان-المدينة-المنورة-الدولي-للعمارة-2026.html"
+      },
+      "sources_count": 3,
+      "categories_count": 3
     },
     {
       "slug": "buraydah",
@@ -512,25 +569,6 @@
       "categories_count": 3
     },
     {
-      "slug": "makkah",
-      "label": "مكة",
-      "url": "./cities/makkah.html",
-      "total_events": 11,
-      "upcoming_or_active": 0,
-      "ended": 11,
-      "live_ready": 0,
-      "sources": [
-        "Makkah Chamber Events",
-        "SCEGA ePortal Events"
-      ],
-      "categories": [
-        "فعاليات الغرف التجارية",
-        "معارض وتجارية"
-      ],
-      "sources_count": 2,
-      "categories_count": 2
-    },
-    {
       "slug": "abha",
       "label": "أبها",
       "url": "./cities/abha.html",
@@ -560,23 +598,6 @@
       ],
       "categories": [
         "رياضة وفعاليات جماهيرية"
-      ],
-      "sources_count": 1,
-      "categories_count": 1
-    },
-    {
-      "slug": "madinah",
-      "label": "المدينة المنورة",
-      "url": "./cities/madinah.html",
-      "total_events": 3,
-      "upcoming_or_active": 0,
-      "ended": 3,
-      "live_ready": 0,
-      "sources": [
-        "SCEGA ePortal Events"
-      ],
-      "categories": [
-        "مؤتمرات ومنتديات"
       ],
       "sources_count": 1,
       "categories_count": 1

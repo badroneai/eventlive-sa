@@ -10,11 +10,11 @@
   "evidence_url": "https://www.ithra.com/en/programme/2026/eid-aladha/grandmas-eid-tales",
   "trust_tier": "official-venue",
   "trust_label": "مصدر المكان الرسمي",
-  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verified_at": "2026-07-10T11:06:14.632Z",
   "verification_method": "official-public-algolia-index",
   "freshness_hours": 0,
   "city": "الظهران",
-  "venue": "Culture Oasis",
+  "venue": "Ithra - Culture Oasis",
   "venue_address": "Culture Oasis",
   "starts_at": "2026-05-28T17:00:00+03:00",
   "ends_at": "2026-05-31T22:45:00+03:00",
@@ -45,7 +45,7 @@
     "فعالية",
     "منتهية",
     "الظهران",
-    "Culture Oasis",
+    "Ithra - Culture Oasis",
     "Ithra Events",
     "arts",
     "creativity",
@@ -203,13 +203,18 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Culture Oasis",
+      "name": "Ithra - Culture Oasis",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Culture Oasis",
         "addressLocality": "الظهران",
         "addressRegion": "المنطقة الشرقية",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.3354108,
+        "longitude": 50.1205788
       }
     },
     "organizer": {
@@ -223,7 +228,7 @@
     "url": "https://eventme.live/events/ended-ithra-events-grandmas-eid-tales-20260528-b9fe749c.html",
     "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-grandmas-eid-tales-20260528-b9fe749c.html",
     "isAccessibleForFree": true,
-    "keywords": "Grandma’s Eid Tales, ثقافة وفنون, culture, فعالية, منتهية, الظهران, Culture Oasis, Ithra Events, arts, creativity, community, exhibitions, learning, Ithra, Activity, Eid AlAdha, ended-event, مبدعون وفنون",
+    "keywords": "Grandma’s Eid Tales, ثقافة وفنون, culture, فعالية, منتهية, الظهران, Ithra - Culture Oasis, Ithra Events, arts, creativity, community, exhibitions, learning, Ithra, Activity, Eid AlAdha, ended-event, مبدعون وفنون",
     "audience": [
       {
         "@type": "Audience",

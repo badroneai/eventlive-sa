@@ -1,0 +1,124 @@
+{
+  "id": "ended-madinah-chamber-events-ورشة-عمل-لائحة-تفضيل-المحتوى-المحلي-والمنشآت-الصغيرة-والمتوسطة-المحلية-و-20230301-1a7eb6fd",
+  "title": "ورشة عمل لائحة تفضيل المحتوى المحلي والمنشآت الصغيرة والمتوسطة المحلية والشركات المدرجة في السوق المالية في الأعمال والمشتريات",
+  "summary": "نظمت #غرفة_المدينة_المنورة ورشة عمل لائحة تفضيل المحتوى المحلي والمنشآت الصغيرة والمتوسطة المحلية والشركات المدرجة في السوق المالية في الأعمال والمشتريات بحضور م.محمد القحطاني نائب الرئيس التنفيذي للعمليات في @LCGPA_SA وعددا من أصحاب الأعمال والمستثمرين في #منطقة_المدينة_المنورة",
+  "canonical_url": "https://eventme.live/events/ended-madinah-chamber-events-ورشة-عمل-لائحة-تفضيل-المحتوى-المحلي-والمنشآت-الصغيرة-والمتوسطة-المحلية-و-20230301-1a7eb6fd.html",
+  "detail_url": "./events/ended-madinah-chamber-events-ورشة-عمل-لائحة-تفضيل-المحتوى-المحلي-والمنشآت-الصغيرة-والمتوسطة-المحلية-و-20230301-1a7eb6fd.html",
+  "calendar_url": "./events/ended-madinah-chamber-events-ورشة-عمل-لائحة-تفضيل-المحتوى-المحلي-والمنشآت-الصغيرة-والمتوسطة-المحلية-و-20230301-1a7eb6fd.ics",
+  "source_label": "Madinah Chamber Events",
+  "source_url": "https://www.mcci.org.sa/Event/eventDetails?circular=153",
+  "evidence_url": "https://www.mcci.org.sa/Event/eventDetails?circular=153",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T11:06:14.632Z",
+  "verification_method": "official-public-json-api",
+  "freshness_hours": 0,
+  "city": "المدينة المنورة",
+  "venue": "مبنى غرفة المدينة المنورة",
+  "venue_address": "مبنى غرفة المدينة المنورة",
+  "starts_at": "2023-03-01T13:00:00+03:00",
+  "ends_at": "2023-03-01T15:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/ورشة-عمل-لائحة-تفضيل-المحتوى-المحلي-والمنشآت-الصغيرة-والمتوسطة-المحلية-2f154e84e6.jpg",
+  "image_alt": "ورشة عمل لائحة تفضيل المحتوى المحلي والمنشآت الصغيرة والمتوسطة المحلية والشركات المدرجة في السوق المالية في الأعمال والمشتريات",
+  "category": "فعاليات الغرف التجارية",
+  "category_url": "./categories/chamber-event.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "entrepreneurs",
+      "label": "رواد أعمال"
+    }
+  ],
+  "keywords": [
+    "ورشة عمل لائحة تفضيل المحتوى المحلي والمنشآت الصغيرة والمتوسطة المحلية والشركات المدرجة في السوق المالية في الأعمال والمشتريات",
+    "فعاليات الغرف التجارية",
+    "workshop",
+    "فعالية",
+    "منتهية",
+    "المدينة المنورة",
+    "مبنى غرفة المدينة المنورة",
+    "Madinah Chamber Events",
+    "business",
+    "training",
+    "workshops",
+    "forums",
+    "exhibitions",
+    "Madinah Chamber",
+    "ended-event",
+    "موظفون ومهنيون",
+    "رواد أعمال"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2023-03-01T13:00:00+03:00",
+      "ends_at": "2023-03-01T15:00:00+03:00",
+      "room": "مبنى غرفة المدينة المنورة",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "ورشة عمل لائحة تفضيل المحتوى المحلي والمنشآت الصغيرة والمتوسطة المحلية والشركات المدرجة في السوق المالية في الأعمال والمشتريات",
+    "startDate": "2023-03-01T13:00:00+03:00",
+    "endDate": "2023-03-01T15:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "مبنى غرفة المدينة المنورة",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "مبنى غرفة المدينة المنورة",
+        "addressLocality": "المدينة المنورة",
+        "addressRegion": "منطقة المدينة المنورة",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "غرفة المدينة المنورة"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/ورشة-عمل-لائحة-تفضيل-المحتوى-المحلي-والمنشآت-الصغيرة-والمتوسطة-المحلية-2f154e84e6.jpg"
+    ],
+    "description": "نظمت #غرفة_المدينة_المنورة ورشة عمل لائحة تفضيل المحتوى المحلي والمنشآت الصغيرة والمتوسطة المحلية والشركات المدرجة في السوق المالية في الأعمال والمشتريات بحضور م.محمد القحطاني نائب الرئيس التنفيذي للعمليات في @LCGPA_SA وعددا من أصحاب الأعمال والمستثمرين في #منطقة_المدينة_المنورة",
+    "url": "https://eventme.live/events/ended-madinah-chamber-events-ورشة-عمل-لائحة-تفضيل-المحتوى-المحلي-والمنشآت-الصغيرة-والمتوسطة-المحلية-و-20230301-1a7eb6fd.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-madinah-chamber-events-ورشة-عمل-لائحة-تفضيل-المحتوى-المحلي-والمنشآت-الصغيرة-والمتوسطة-المحلية-و-20230301-1a7eb6fd.html",
+    "isAccessibleForFree": false,
+    "keywords": "ورشة عمل لائحة تفضيل المحتوى المحلي والمنشآت الصغيرة والمتوسطة المحلية والشركات المدرجة في السوق المالية في الأعمال والمشتريات, فعاليات الغرف التجارية, workshop, فعالية, منتهية, المدينة المنورة, مبنى غرفة المدينة المنورة, Madinah Chamber Events, business, training, workshops, forums, exhibitions, Madinah Chamber, ended-event, موظفون ومهنيون, رواد أعمال",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رواد أعمال"
+      }
+    ],
+    "sameAs": [
+      "https://www.mcci.org.sa/Event/eventDetails?circular=153"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.mcci.org.sa/Event/eventDetails?circular=153",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

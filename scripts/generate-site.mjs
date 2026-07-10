@@ -837,7 +837,7 @@ function buildEvents() {
     try {
       const sourceUrl = new URL(isMultiEventDocument ? '' : sourceIdentityUrl);
       const stableParams = [...sourceUrl.searchParams.entries()]
-        .filter(([key, value]) => /^(?:id|eventid|itemid|event|programid|courseid|bootcampid)$/i.test(key) && value)
+        .filter(([key, value]) => /^(?:id|eventid|itemid|event|programid|courseid|bootcampid|circular)$/i.test(key) && value)
         .sort(([a], [b]) => a.localeCompare(b));
       const pathParts = sourceUrl.pathname.split('/').filter(Boolean);
       if (/^(?:ar|en)$/i.test(pathParts[0])) pathParts.shift();

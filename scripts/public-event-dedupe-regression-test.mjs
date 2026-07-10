@@ -21,4 +21,22 @@ for (const event of events) {
 const duplicates = [...keys.entries()].filter(([, count]) => count > 1);
 assert.deepEqual(duplicates, [], `public event feed contains ${duplicates.length} exact duplicate groups`);
 
+const endedPath = path.join(process.cwd(), 'data', 'source_ended_events.json');
+const endedEvents = JSON.parse(fs.readFileSync(endedPath, 'utf8')).ended_events || [];
+const isChamberDetail = (event) => /mcci\.org\.sa\/Event\/eventDetails\?[^#]*\bcircular=/i.test(String(event.source_url || event.evidence_url || ''));
+const semanticKey = (event) => [
+  normalizeArabicSearch(event.title),
+  normalizeSaudiCity(event.city, event.city),
+  event.starts_at,
+  event.ends_at,
+  normalizeArabicSearch(event.source_label || event.organizer)
+].join('|');
+const collectedChamberKeys = [...new Set(endedEvents.filter(isChamberDetail).map(semanticKey))].sort();
+const publicChamberKeys = [...new Set(events.filter(isChamberDetail).map(semanticKey))].sort();
+assert.deepEqual(
+  publicChamberKeys,
+  collectedChamberKeys,
+  'Madinah Chamber detail pages must remain distinct while exact duplicate circulars stay deduplicated'
+);
+
 console.log(`PUBLIC_DEDUPE_TEST_OK events=${events.length} duplicate_groups=0`);

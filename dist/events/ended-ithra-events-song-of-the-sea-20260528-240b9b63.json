@@ -10,11 +10,11 @@
   "evidence_url": "https://www.ithra.com/en/programme/2026/eid-aladha/home-feeling/song-sea",
   "trust_tier": "official-venue",
   "trust_label": "مصدر المكان الرسمي",
-  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verified_at": "2026-07-10T11:06:14.632Z",
   "verification_method": "official-public-algolia-index",
   "freshness_hours": 0,
   "city": "الظهران",
-  "venue": "Cinema",
+  "venue": "Ithra - Cinema",
   "venue_address": "Cinema",
   "starts_at": "2026-05-28T17:00:00+03:00",
   "ends_at": "2026-05-30T18:00:00+03:00",
@@ -49,7 +49,7 @@
     "فعالية",
     "منتهية",
     "الظهران",
-    "Cinema",
+    "Ithra - Cinema",
     "Ithra Events",
     "culture",
     "arts",
@@ -97,13 +97,18 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Cinema",
+      "name": "Ithra - Cinema",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Cinema",
         "addressLocality": "الظهران",
         "addressRegion": "المنطقة الشرقية",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.3354108,
+        "longitude": 50.1205788
       }
     },
     "organizer": {
@@ -117,7 +122,7 @@
     "url": "https://eventme.live/events/ended-ithra-events-song-of-the-sea-20260528-240b9b63.html",
     "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-song-of-the-sea-20260528-240b9b63.html",
     "isAccessibleForFree": true,
-    "keywords": "Song of the Sea, جامعات ومجتمع, performance, فعالية, منتهية, الظهران, Cinema, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Eid AlAdha, Film Screening, ended-event, عائلات وأطفال, مبدعون وفنون",
+    "keywords": "Song of the Sea, جامعات ومجتمع, performance, فعالية, منتهية, الظهران, Ithra - Cinema, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Eid AlAdha, Film Screening, ended-event, عائلات وأطفال, مبدعون وفنون",
     "audience": [
       {
         "@type": "Audience",

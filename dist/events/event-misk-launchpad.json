@@ -10,11 +10,11 @@
   "evidence_url": "https://hub.misk.org.sa/programs/entrepreneurship/misk-launchpad/",
   "trust_tier": "official",
   "trust_label": "مصدر حكومي أو رسمي",
-  "verified_at": "2026-07-10T10:08:22.219Z",
+  "verified_at": "2026-07-10T11:12:44.950Z",
   "verification_method": "registered-official",
   "freshness_hours": 0,
   "city": "الرياض",
-  "venue": "Misk Hub Riyadh",
+  "venue": "Hybrid",
   "venue_address": "Hybrid",
   "starts_at": "2026-09-06T09:00:00+03:00",
   "ends_at": "2027-01-02T18:00:00+03:00",
@@ -61,7 +61,7 @@
     "برنامج ممتد",
     "قادمة",
     "الرياض",
-    "Misk Hub Riyadh",
+    "Hybrid",
     "Misk Hub Programs",
     "skills",
     "training",
@@ -80,7 +80,7 @@
       "title": "نافذة الحضور",
       "starts_at": "2026-09-06T09:00:00+03:00",
       "ends_at": "2027-01-02T18:00:00+03:00",
-      "room": "Misk Hub Riyadh",
+      "room": "Hybrid",
       "anchor": "#session-نافذة-الحضور"
     }
   ],
@@ -94,7 +94,7 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Misk Hub Riyadh",
+      "name": "Hybrid",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Hybrid",
@@ -114,7 +114,7 @@
     "url": "https://eventme.live/events/event-misk-launchpad.html",
     "mainEntityOfPage": "https://eventme.live/events/event-misk-launchpad.html",
     "isAccessibleForFree": false,
-    "keywords": "Misk Launchpad, تدريب تقني, skills program, برنامج ممتد, قادمة, الرياض, Misk Hub Riyadh, Misk Hub Programs, skills, training, entrepreneurship, leadership, online learning, career readiness, باحثون عن عمل, موظفون ومهنيون, مهاريون وحرفيون, رواد أعمال, مبدعون وفنون",
+    "keywords": "Misk Launchpad, تدريب تقني, skills program, برنامج ممتد, قادمة, الرياض, Hybrid, Misk Hub Programs, skills, training, entrepreneurship, leadership, online learning, career readiness, باحثون عن عمل, موظفون ومهنيون, مهاريون وحرفيون, رواد أعمال, مبدعون وفنون",
     "audience": [
       {
         "@type": "Audience",

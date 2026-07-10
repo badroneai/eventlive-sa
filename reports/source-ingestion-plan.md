@@ -1,6 +1,6 @@
 # EventLive Source Ingestion Plan
 
-Generated at: 2026-07-10T10:11:23.639Z
+Generated at: 2026-07-10T11:21:44.378Z
 
 ## Executive Model
 
@@ -8,20 +8,20 @@ EventLive should not treat all registered sources equally. The operating model i
 
 ## Totals
 
-- Sources: 81
-- Active collectors: 30
+- Sources: 84
+- Active collectors: 33
 - Extractor backlog: 16
 - Evidence monitors: 14
 - Partnership/API lanes: 5
 - Discovery-only lanes: 11
-- Sources with latest deep-probe evidence: 22
+- Sources with latest deep-probe evidence: 21
 
 ## Run Cadence
 
 | Cadence | Sources | Purpose |
 |---|---:|---|
 | monthly-partnership-check | 5 | Relationship/API path, not scraping. |
-| daily | 30 | Collect candidates and let trust gates decide publication. |
+| daily | 33 | Collect candidates and let trust gates decide publication. |
 | weekly-discovery | 6 | Lead discovery only, never direct publication. |
 | daily-extractor-probe | 2 | High-priority official source that needs an extractor. |
 | twice-weekly-extractor-probe | 14 | Official or strategic source to test before extractor build. |
@@ -41,11 +41,11 @@ EventLive should not treat all registered sources equally. The operating model i
 | 5 | money2020-middle-east-agendas | extractor-backlog | twice-weekly-extractor-probe | build-jsonld-event-extractor | Latest deep probe recommends build-jsonld-event-extractor; build only if future date-complete rows are visible. |
 | 6 | tabuk-chamber-events | extractor-backlog | twice-weekly-extractor-probe | probe-hidden-api-or-html-table | Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible. |
 | 7 | riyadh-season | extractor-backlog | daily-extractor-probe | blocked-or-protected:bot-protection | Do not scrape now; latest probe is blocked-or-protected:bot-protection. Keep as partnership, browser/API investigation, or evidence lane. |
-| 8 | historic-jeddah-albalad | extractor-backlog | twice-weekly-extractor-probe | - | Probe HTML/API shape, then decide whether an extractor is worth adding. |
-| 9 | saudi-digital-academy | extractor-backlog | daily-extractor-probe | blocked-or-protected:fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed | Do not scrape now; latest probe is blocked-or-protected:fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane. |
-| 10 | enjoy-saudi-events | extractor-backlog | twice-weekly-extractor-probe | blocked-or-protected:http-403 | Do not scrape now; latest probe is blocked-or-protected:http-403. Keep as partnership, browser/API investigation, or evidence lane. |
-| 11 | middle-east-enterprise-ai-summit | extractor-backlog | twice-weekly-extractor-probe | - | Probe HTML/API shape, then decide whether an extractor is worth adding. |
-| 12 | visit-saudi-calendar-pdf | venue-dedupe | weekly-dedupe-check | blocked-or-protected:timeout | Do not scrape now; latest probe is blocked-or-protected:timeout. Keep as partnership, browser/API investigation, or evidence lane. |
+| 8 | saudi-digital-academy | extractor-backlog | daily-extractor-probe | blocked-or-protected:fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed | Do not scrape now; latest probe is blocked-or-protected:fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane. |
+| 9 | enjoy-saudi-events | extractor-backlog | twice-weekly-extractor-probe | blocked-or-protected:http-403 | Do not scrape now; latest probe is blocked-or-protected:http-403. Keep as partnership, browser/API investigation, or evidence lane. |
+| 10 | saudi-contractors-authority-events | extractor-backlog | twice-weekly-extractor-probe | - | Probe HTML/API shape, then decide whether an extractor is worth adding. |
+| 11 | baha-amanah-events | extractor-backlog | twice-weekly-extractor-probe | - | Probe HTML/API shape, then decide whether an extractor is worth adding. |
+| 12 | middle-east-banking-ai-summit | extractor-backlog | twice-weekly-extractor-probe | - | Probe HTML/API shape, then decide whether an extractor is worth adding. |
 
 ## Active 6-Hour Ring
 
@@ -75,12 +75,15 @@ EventLive should not treat all registered sources equally. The operating model i
 | discover-aseer-events | ok | 1 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | saudi-water-authority-events | ok | 8 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | sfda-events | ok | 7 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| sdaia-calendar-events | ok | 2 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
+| sdaia-calendar-events | ok | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | makkah-chamber-events | ok | 0 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | asharqia-chamber-events | ok | 2 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | qassim-chamber-events | ok | 0 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | abha-chamber-events | ok | 0 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | jazan-chamber-events | ok | 1 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
+| umm-al-qura-events | ok | 4 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
+| madinah-chamber-events | ok | 0 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
+| madinah-architecture-festival | ok | 1 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 
 ## Full Source Plan
 
@@ -123,7 +126,7 @@ EventLive should not treat all registered sources equally. The operating model i
 | 35 | qiddiya-events | evidence-monitor | weekly-evidence-check | 17 | blocked-or-protected:http-403 | Do not scrape now; latest probe is blocked-or-protected:http-403. Keep as partnership, browser/API investigation, or evidence lane. |
 | 36 | sela-sea-expo | evidence-monitor | monthly-evidence-check | 55 | probe-hidden-api-or-html-table | Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible. |
 | 37 | moc-cultural-subportals | active-collector | daily | 150 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| 38 | historic-jeddah-albalad | extractor-backlog | twice-weekly-extractor-probe | 77 | - | Probe HTML/API shape, then decide whether an extractor is worth adding. |
+| 38 | historic-jeddah-albalad | extractor-backlog | twice-weekly-extractor-probe | 47 | blocked-or-protected:http-403 | Do not scrape now; latest probe is blocked-or-protected:http-403. Keep as partnership, browser/API investigation, or evidence lane. |
 | 39 | discover-aseer-events | active-collector | daily | 91 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | 40 | diriyah-season | evidence-monitor | monthly-evidence-check | 59 | probe-hidden-api-or-html-table | Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible. |
 | 41 | ricec-events | venue-dedupe | weekly-dedupe-check | 31 | blocked-or-protected:fetch failed Connect Timeout Error (attempted address: www.ricec.com:443, timeout: 10000ms) TypeError: fetch failed | Do not scrape now; latest probe is blocked-or-protected:fetch failed Connect Timeout Error (attempted address: www.ricec.com:443, timeout: 10000ms) TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane. |
@@ -134,12 +137,12 @@ EventLive should not treat all registered sources equally. The operating model i
 | 46 | expofp-eventseye-saudi | discovery-only | monthly-discovery | 12 | - | Use only to discover leads; require official confirmation before promotion. |
 | 47 | meetup-facebook-saudi-events | discovery-only | monthly-discovery | 11 | - | Use only to discover leads; require official confirmation before promotion. |
 | 48 | sfda-events | active-collector | daily | 82 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| 49 | saudi-contractors-authority-events | extractor-backlog | twice-weekly-extractor-probe | 36 | blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed | Do not scrape now; latest probe is blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane. |
+| 49 | saudi-contractors-authority-events | extractor-backlog | twice-weekly-extractor-probe | 66 | - | Probe HTML/API shape, then decide whether an extractor is worth adding. |
 | 50 | saudi-winter-calendar-spa | evidence-monitor | monthly-evidence-check | 32 | - | Monitor for live event/detail pages; do not create public rows from summary or coming-soon pages. |
 | 51 | riyadh-city-events | extractor-backlog | twice-weekly-extractor-probe | 91 | blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed | Do not scrape now; latest probe is blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane. |
 | 52 | monshaat-academy-programs | partnership | monthly-partnership-check | 22 | - | Open a relationship/API path; keep out of automated scraping until a feed or permission path exists. |
 | 53 | gea-entertainment-events | evidence-monitor | monthly-evidence-check | 86 | - | Monitor for live event/detail pages; do not create public rows from summary or coming-soon pages. |
-| 54 | sdaia-calendar-events | active-collector | daily | 133 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
+| 54 | sdaia-calendar-events | active-collector | daily | 133 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | 55 | makkah-chamber-events | active-collector | daily | 75 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | 56 | scega-exhibitions-conferences | extractor-backlog | twice-weekly-extractor-probe | 91 | probe-hidden-api-or-html-table | Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible. |
 | 57 | ministry-commerce-events | evidence-monitor | monthly-evidence-check | 25 | - | Monitor for live event/detail pages; do not create public rows from summary or coming-soon pages. |
@@ -147,7 +150,7 @@ EventLive should not treat all registered sources equally. The operating model i
 | 59 | asharqia-chamber-events | active-collector | daily | 71 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | 60 | qassim-chamber-events | active-collector | daily | 70 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | 61 | abha-chamber-events | active-collector | daily | 69 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| 62 | baha-amanah-events | extractor-backlog | twice-weekly-extractor-probe | 40 | blocked-or-protected:bot-protection | Do not scrape now; latest probe is blocked-or-protected:bot-protection. Keep as partnership, browser/API investigation, or evidence lane. |
+| 62 | baha-amanah-events | extractor-backlog | twice-weekly-extractor-probe | 65 | - | Probe HTML/API shape, then decide whether an extractor is worth adding. |
 | 63 | baha-chamber-events | evidence-monitor | monthly-evidence-check | 19 | - | Monitor for live event/detail pages; do not create public rows from summary or coming-soon pages. |
 | 64 | jouf-chamber-events | extractor-backlog | twice-weekly-extractor-probe | 99 | build-html-detail-extractor | Latest deep probe recommends build-html-detail-extractor; build only if future date-complete rows are visible. |
 | 65 | northern-borders-chamber-events | extractor-backlog | twice-weekly-extractor-probe | 98 | build-html-detail-extractor | Latest deep probe recommends build-html-detail-extractor; build only if future date-complete rows are visible. |
@@ -159,12 +162,15 @@ EventLive should not treat all registered sources equally. The operating model i
 | 71 | najran-municipality-summer-events | venue-dedupe | weekly-dedupe-check | 43 | - | Use as a discovery anchor, then reconcile against organizer, ticketing, and catalog duplicates. |
 | 72 | platinumlist-saudi-city-network | discovery-only | monthly-discovery | -14 | - | Use only to discover leads; require official confirmation before promotion. |
 | 73 | my-gov-sa-events | partnership | monthly-partnership-check | 1 | - | Open a relationship/API path; keep out of automated scraping until a feed or permission path exists. |
-| 74 | middle-east-banking-ai-summit | extractor-backlog | twice-weekly-extractor-probe | 23 | blocked-or-protected:bot-protection | Do not scrape now; latest probe is blocked-or-protected:bot-protection. Keep as partnership, browser/API investigation, or evidence lane. |
-| 75 | middle-east-enterprise-ai-summit | extractor-backlog | twice-weekly-extractor-probe | 52 | - | Probe HTML/API shape, then decide whether an extractor is worth adding. |
-| 76 | money2020-middle-east-agendas | extractor-backlog | twice-weekly-extractor-probe | 91 | build-jsonld-event-extractor | Latest deep probe recommends build-jsonld-event-extractor; build only if future date-complete rows are visible. |
+| 74 | middle-east-banking-ai-summit | extractor-backlog | twice-weekly-extractor-probe | 53 | - | Probe HTML/API shape, then decide whether an extractor is worth adding. |
+| 75 | middle-east-enterprise-ai-summit | extractor-backlog | twice-weekly-extractor-probe | 22 | blocked-or-protected:bot-protection | Do not scrape now; latest probe is blocked-or-protected:bot-protection. Keep as partnership, browser/API investigation, or evidence lane. |
+| 76 | umm-al-qura-events | active-collector | daily | 66 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | 77 | leap-official-agendas | extractor-backlog | twice-weekly-extractor-probe | 50 | - | Probe HTML/API shape, then decide whether an extractor is worth adding. |
 | 78 | fii10-official-program | extractor-backlog | twice-weekly-extractor-probe | 37 | - | Probe HTML/API shape, then decide whether an extractor is worth adding. |
 | 79 | cityscape-global-official-program | partnership | monthly-partnership-check | -5 | - | Open a relationship/API path; keep out of automated scraping until a feed or permission path exists. |
 | 80 | qassim-university-events | venue-dedupe | weekly-dedupe-check | 35 | - | Use as a discovery anchor, then reconcile against organizer, ticketing, and catalog duplicates. |
 | 81 | jouf-university-programs | venue-dedupe | weekly-dedupe-check | 35 | - | Use as a discovery anchor, then reconcile against organizer, ticketing, and catalog duplicates. |
+| 82 | money2020-middle-east-agendas | extractor-backlog | twice-weekly-extractor-probe | 88 | build-jsonld-event-extractor | Latest deep probe recommends build-jsonld-event-extractor; build only if future date-complete rows are visible. |
+| 83 | madinah-chamber-events | active-collector | daily | 63 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
+| 84 | madinah-architecture-festival | active-collector | daily | 63 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 

@@ -1,0 +1,124 @@
+{
+  "id": "ended-madinah-chamber-events-لقاء-التزام-للمسؤولية-الاجتماعية-20230321-6d91375f",
+  "title": "لقاء التزام للمسؤولية الاجتماعية",
+  "summary": "نظمت غرفة المدينة المنورة ممثلةً بلجنة المسؤولية الاجتماعية لقاء التزام للمسؤولية الاجتماعية ، ويهدف إلى المساهمة في تعزيز ثقافة المسؤولية الاجتماعية لقطاع الأعمال بـمنطقة المدينة المنورة",
+  "canonical_url": "https://eventme.live/events/ended-madinah-chamber-events-لقاء-التزام-للمسؤولية-الاجتماعية-20230321-6d91375f.html",
+  "detail_url": "./events/ended-madinah-chamber-events-لقاء-التزام-للمسؤولية-الاجتماعية-20230321-6d91375f.html",
+  "calendar_url": "./events/ended-madinah-chamber-events-لقاء-التزام-للمسؤولية-الاجتماعية-20230321-6d91375f.ics",
+  "source_label": "Madinah Chamber Events",
+  "source_url": "https://www.mcci.org.sa/Event/eventDetails?circular=162",
+  "evidence_url": "https://www.mcci.org.sa/Event/eventDetails?circular=162",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T11:06:14.632Z",
+  "verification_method": "official-public-json-api",
+  "freshness_hours": 0,
+  "city": "المدينة المنورة",
+  "venue": "مبنى غرفة المدينة المنورة",
+  "venue_address": "مبنى غرفة المدينة المنورة",
+  "starts_at": "2023-03-21T19:00:00+03:00",
+  "ends_at": "2023-03-21T21:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/لقاء-التزام-للمسؤولية-الاجتماعية-196c8e737b.jpg",
+  "image_alt": "لقاء التزام للمسؤولية الاجتماعية",
+  "category": "فعاليات الغرف التجارية",
+  "category_url": "./categories/chamber-event.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "لقاء التزام للمسؤولية الاجتماعية",
+    "فعاليات الغرف التجارية",
+    "chamber event",
+    "فعالية",
+    "منتهية",
+    "المدينة المنورة",
+    "مبنى غرفة المدينة المنورة",
+    "Madinah Chamber Events",
+    "business",
+    "training",
+    "workshops",
+    "forums",
+    "exhibitions",
+    "Madinah Chamber",
+    "ended-event",
+    "موظفون ومهنيون",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2023-03-21T19:00:00+03:00",
+      "ends_at": "2023-03-21T21:00:00+03:00",
+      "room": "مبنى غرفة المدينة المنورة",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "لقاء التزام للمسؤولية الاجتماعية",
+    "startDate": "2023-03-21T19:00:00+03:00",
+    "endDate": "2023-03-21T21:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "مبنى غرفة المدينة المنورة",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "مبنى غرفة المدينة المنورة",
+        "addressLocality": "المدينة المنورة",
+        "addressRegion": "منطقة المدينة المنورة",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "غرفة المدينة المنورة"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/لقاء-التزام-للمسؤولية-الاجتماعية-196c8e737b.jpg"
+    ],
+    "description": "نظمت غرفة المدينة المنورة ممثلةً بلجنة المسؤولية الاجتماعية لقاء التزام للمسؤولية الاجتماعية ، ويهدف إلى المساهمة في تعزيز ثقافة المسؤولية الاجتماعية لقطاع الأعمال بـمنطقة المدينة المنورة",
+    "url": "https://eventme.live/events/ended-madinah-chamber-events-لقاء-التزام-للمسؤولية-الاجتماعية-20230321-6d91375f.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-madinah-chamber-events-لقاء-التزام-للمسؤولية-الاجتماعية-20230321-6d91375f.html",
+    "isAccessibleForFree": false,
+    "keywords": "لقاء التزام للمسؤولية الاجتماعية, فعاليات الغرف التجارية, chamber event, فعالية, منتهية, المدينة المنورة, مبنى غرفة المدينة المنورة, Madinah Chamber Events, business, training, workshops, forums, exhibitions, Madinah Chamber, ended-event, موظفون ومهنيون, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.mcci.org.sa/Event/eventDetails?circular=162"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.mcci.org.sa/Event/eventDetails?circular=162",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

@@ -2218,7 +2218,7 @@
       "owner": "Tahaluf / Money20/20 Middle East",
       "source_type": "conference-organizer",
       "trust_level": "official",
-      "priority": 76,
+      "priority": 82,
       "max_candidates_per_run": 300,
       "max_ended_per_run": 300,
       "coverage": "Money20/20 Middle East event identity, official multi-stage agendas, session times, stages, speakers, and current-edition programme monitoring.",
@@ -2333,6 +2333,88 @@
       "evidence_required": "First-party page must contain the matching title, explicit edition date, and Riyadh venue before a discovery lead is promoted.",
       "candidate_gate": "human-review",
       "notes": "Added 2026-07-10. A six-hour official-evidence verifier reads the public first-party page and same-origin application bundle, then promotes matching discovery leads only when title, date, and venue tokens all agree."
+    },
+    {
+      "id": "umm-al-qura-events",
+      "name": "Umm Al-Qura University Events Center",
+      "url": "https://uqu.edu.sa/App/Events",
+      "owner": "Umm Al-Qura University",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 76,
+      "coverage": "Public courses, workshops, research programs, innovation events, and date-complete university activities in Makkah.",
+      "cities": [
+        "Makkah"
+      ],
+      "categories": [
+        "education",
+        "training",
+        "research",
+        "innovation",
+        "workshops"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Official UQU event detail URL with an explicit event start, duration, title, and registration or organizer context. Publication dates alone are never treated as event dates.",
+      "candidate_gate": "duplicate-review",
+      "max_candidates_per_run": 40,
+      "max_ended_per_run": 80,
+      "notes": "Activated 2026-07-10 after validating that the public listing links to first-party detail pages carrying explicit starts, durations, remaining seats, summaries, and enrollment routes. The collector opens each recent detail page and rejects cards that only expose a publication date."
+    },
+    {
+      "id": "madinah-chamber-events",
+      "name": "Madinah Chamber Events",
+      "url": "https://www.mcci.org.sa/Event/events",
+      "collector_url": "https://services.mi.org.sa/api/events?PageNumber=1&PageSize=100",
+      "owner": "Madinah Chamber of Commerce",
+      "source_type": "venue-calendar",
+      "trust_level": "official",
+      "priority": 83,
+      "coverage": "Madinah Chamber meetings, workshops, forums, exhibitions, training programs, registrations, and the official event history.",
+      "cities": [
+        "Madinah",
+        "Online"
+      ],
+      "categories": [
+        "business",
+        "training",
+        "workshops",
+        "forums",
+        "exhibitions"
+      ],
+      "fetch_method": "json-api",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Official Chamber JSON row and first-party event detail URL with event ID, explicit datetime, title, location or online mode, and organizer context.",
+      "candidate_gate": "duplicate-review",
+      "max_candidates_per_run": 80,
+      "max_ended_per_run": 400,
+      "notes": "Activated 2026-07-10 from the public API used by the official Next.js events page. Every run traverses all API pages, preserves high-resolution event art and registration links, and keeps 2022+ history subject to the platform-wide archive rule."
+    },
+    {
+      "id": "madinah-architecture-festival",
+      "name": "Madinah International Architecture Festival",
+      "url": "https://mdc.almunawarah.sa/",
+      "owner": "Al-Madinah Region Development Authority",
+      "source_type": "organizer-calendar",
+      "trust_level": "official",
+      "priority": 84,
+      "coverage": "The official Madinah architecture festival, public final exhibition, award ceremony, competition stages, and first-party program evidence.",
+      "cities": [
+        "Madinah"
+      ],
+      "categories": [
+        "architecture",
+        "design",
+        "festival",
+        "culture"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Official Al-Munawarah/MDA page with the explicit festival date, Madinah identity, organizer, and public exhibition or award context.",
+      "candidate_gate": "duplicate-review",
+      "max_candidates_per_run": 10,
+      "max_ended_per_run": 20,
+      "notes": "Activated 2026-07-10 from the official bilingual competition site issued by the Madinah Region Development Authority. The first verified public festival date is 10 December 2026; application windows remain program metadata and are not published as separate events."
     }
   ]
 }

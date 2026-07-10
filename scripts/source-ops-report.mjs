@@ -233,7 +233,8 @@ function writePublicSourceHealth(report, promotionReport, collectionReport) {
     probe_blocked: 0,
     extractor_backlog: sources.filter((source) => source.status === 'not-collected').length,
     candidates_discovered: collectionReport.candidates_discovered || 0,
-    candidates_written: collectionReport.candidates_written || 0
+    candidates_collected_before_dedupe: collectionReport.candidates_written || 0,
+    candidates_written: report.queue.total
   };
   const health = {
     generated_at: generatedAt,

@@ -10,12 +10,12 @@
   "evidence_url": "https://www.ithra.com/en/programme/2026/non-stop-spin",
   "trust_tier": "official-venue",
   "trust_label": "مصدر المكان الرسمي",
-  "verified_at": "2026-07-10T10:08:07.323Z",
+  "verified_at": "2026-07-10T11:12:15.075Z",
   "verification_method": "registered-venue-official",
   "freshness_hours": 0,
   "city": "الظهران",
-  "venue": "Energy Exhibit - Youth Club",
-  "venue_address": "Energy Exhibit - Youth Club",
+  "venue": "Ithra - Energy Exhibit - Youth Club",
+  "venue_address": "Ithra - Energy Exhibit - Youth Club",
   "starts_at": "2026-07-31T17:00:00+03:00",
   "ends_at": "2026-08-24T19:15:00+03:00",
   "status": "upcoming",
@@ -45,7 +45,7 @@
     "برنامج ممتد",
     "قادمة",
     "الظهران",
-    "Energy Exhibit - Youth Club",
+    "Ithra - Energy Exhibit - Youth Club",
     "Ithra Events",
     "arts",
     "creativity",
@@ -222,13 +222,18 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Energy Exhibit - Youth Club",
+      "name": "Ithra - Energy Exhibit - Youth Club",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Energy Exhibit - Youth Club",
+        "streetAddress": "Ithra - Energy Exhibit - Youth Club",
         "addressLocality": "الظهران",
         "addressRegion": "المنطقة الشرقية",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.3354108,
+        "longitude": 50.1205788
       }
     },
     "organizer": {
@@ -242,7 +247,7 @@
     "url": "https://eventme.live/events/event-the-non-stop-spin.html",
     "mainEntityOfPage": "https://eventme.live/events/event-the-non-stop-spin.html",
     "isAccessibleForFree": true,
-    "keywords": "The Non-Stop Spin, ثقافة وفنون, culture, برنامج ممتد, قادمة, الظهران, Energy Exhibit - Youth Club, Ithra Events, arts, creativity, community, exhibitions, learning, Ithra, Activity, مبدعون وفنون",
+    "keywords": "The Non-Stop Spin, ثقافة وفنون, culture, برنامج ممتد, قادمة, الظهران, Ithra - Energy Exhibit - Youth Club, Ithra Events, arts, creativity, community, exhibitions, learning, Ithra, Activity, مبدعون وفنون",
     "audience": [
       {
         "@type": "Audience",

@@ -10,11 +10,11 @@
   "evidence_url": "https://www.ithra.com/en/programme/2026/participants-journey-ithras-short-play-contest-2026",
   "trust_tier": "official-venue",
   "trust_label": "مصدر المكان الرسمي",
-  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verified_at": "2026-07-10T11:06:14.632Z",
   "verification_method": "official-public-algolia-index",
   "freshness_hours": 0,
   "city": "الظهران",
-  "venue": "Energy Exhibit - The Theater",
+  "venue": "Ithra - Energy Exhibit - The Theater",
   "venue_address": "Energy Exhibit - The Theater",
   "starts_at": "2026-05-20T19:00:00+03:00",
   "ends_at": "2026-05-20T20:00:00+03:00",
@@ -45,7 +45,7 @@
     "فعالية",
     "منتهية",
     "الظهران",
-    "Energy Exhibit - The Theater",
+    "Ithra - Energy Exhibit - The Theater",
     "Ithra Events",
     "arts",
     "creativity",
@@ -77,13 +77,18 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Energy Exhibit - The Theater",
+      "name": "Ithra - Energy Exhibit - The Theater",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Energy Exhibit - The Theater",
         "addressLocality": "الظهران",
         "addressRegion": "المنطقة الشرقية",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.3354108,
+        "longitude": 50.1205788
       }
     },
     "organizer": {
@@ -97,7 +102,7 @@
     "url": "https://eventme.live/events/ended-ithra-events-the-participants-journey-of-the-ithras-short-play-contest-2026-20260520-488b85ed.html",
     "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-the-participants-journey-of-the-ithras-short-play-contest-2026-20260520-488b85ed.html",
     "isAccessibleForFree": true,
-    "keywords": "The participants' journey of the Ithra’s Short Play Contest 2026, ثقافة وفنون, culture, فعالية, منتهية, الظهران, Energy Exhibit - The Theater, Ithra Events, arts, creativity, community, exhibitions, learning, Ithra, Ithra Theater Society, Panel Discussions, ended-event, مبدعون وفنون",
+    "keywords": "The participants' journey of the Ithra’s Short Play Contest 2026, ثقافة وفنون, culture, فعالية, منتهية, الظهران, Ithra - Energy Exhibit - The Theater, Ithra Events, arts, creativity, community, exhibitions, learning, Ithra, Ithra Theater Society, Panel Discussions, ended-event, مبدعون وفنون",
     "audience": [
       {
         "@type": "Audience",

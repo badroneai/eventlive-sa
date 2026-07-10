@@ -10,11 +10,11 @@
   "evidence_url": "https://www.ithra.com/en/visit-ithra/attractions/cinema/saudi-film-festival-12/film-screenings/baab",
   "trust_tier": "official-venue",
   "trust_label": "مصدر المكان الرسمي",
-  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verified_at": "2026-07-10T11:06:14.632Z",
   "verification_method": "official-public-algolia-index",
   "freshness_hours": 0,
   "city": "الظهران",
-  "venue": "Theater",
+  "venue": "Ithra - Theater",
   "venue_address": "Theater",
   "starts_at": "2026-07-01T16:00:00+03:00",
   "ends_at": "2026-07-01T18:00:00+03:00",
@@ -49,7 +49,7 @@
     "فعالية",
     "منتهية",
     "الظهران",
-    "Theater",
+    "Ithra - Theater",
     "Ithra Events",
     "culture",
     "arts",
@@ -82,13 +82,18 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Theater",
+      "name": "Ithra - Theater",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Theater",
         "addressLocality": "الظهران",
         "addressRegion": "المنطقة الشرقية",
         "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.3354108,
+        "longitude": 50.1205788
       }
     },
     "organizer": {
@@ -102,7 +107,7 @@
     "url": "https://eventme.live/events/ended-ithra-events-baab-20260701-d52c434a.html",
     "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-baab-20260701-d52c434a.html",
     "isAccessibleForFree": true,
-    "keywords": "BAAB, جامعات ومجتمع, performance, فعالية, منتهية, الظهران, Theater, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Saudi Film Festival, ended-event, عائلات وأطفال, مبدعون وفنون",
+    "keywords": "BAAB, جامعات ومجتمع, performance, فعالية, منتهية, الظهران, Ithra - Theater, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Saudi Film Festival, ended-event, عائلات وأطفال, مبدعون وفنون",
     "audience": [
       {
         "@type": "Audience",

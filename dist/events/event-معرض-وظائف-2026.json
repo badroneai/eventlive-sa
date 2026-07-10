@@ -10,12 +10,12 @@
   "evidence_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=344",
   "trust_tier": "official",
   "trust_label": "مصدر حكومي أو رسمي",
-  "verified_at": "2026-07-10T10:08:07.323Z",
+  "verified_at": "2026-07-10T11:12:15.075Z",
   "verification_method": "registered-official",
   "freshness_hours": 0,
   "city": "الظهران",
-  "venue": "شركة معارض الظهران الدولي",
-  "venue_address": "شركة معارض الظهران الدولي",
+  "venue": "شركة معارض الظهران الدولية ( كسبو)",
+  "venue_address": "شركة معارض الظهران الدولية ( كسبو)",
   "starts_at": "2026-12-27T16:00:00+03:00",
   "ends_at": "2026-12-29T16:00:00+03:00",
   "status": "upcoming",
@@ -49,7 +49,7 @@
     "فعالية",
     "قادمة",
     "الظهران",
-    "شركة معارض الظهران الدولي",
+    "شركة معارض الظهران الدولية ( كسبو)",
     "Asharqia Chamber Events",
     "business",
     "exhibitions",
@@ -64,7 +64,7 @@
       "title": "نافذة الحضور",
       "starts_at": "2026-12-27T16:00:00+03:00",
       "ends_at": "2026-12-29T16:00:00+03:00",
-      "room": "شركة معارض الظهران الدولي",
+      "room": "شركة معارض الظهران الدولية ( كسبو)",
       "anchor": "#session-نافذة-الحضور"
     }
   ],
@@ -78,10 +78,10 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "شركة معارض الظهران الدولي",
+      "name": "شركة معارض الظهران الدولية ( كسبو)",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "شركة معارض الظهران الدولي",
+        "streetAddress": "شركة معارض الظهران الدولية ( كسبو)",
         "addressLocality": "الظهران",
         "addressRegion": "المنطقة الشرقية",
         "addressCountry": "SA"
@@ -103,7 +103,7 @@
     "url": "https://eventme.live/events/event-معرض-وظائف-2026.html",
     "mainEntityOfPage": "https://eventme.live/events/event-معرض-وظائف-2026.html",
     "isAccessibleForFree": false,
-    "keywords": "معرض وظائف 2026, فعاليات الغرف التجارية, exhibition, فعالية, قادمة, الظهران, شركة معارض الظهران الدولي, Asharqia Chamber Events, business, exhibitions, career fairs, forums, chamber events, باحثون عن عمل, موظفون ومهنيون",
+    "keywords": "معرض وظائف 2026, فعاليات الغرف التجارية, exhibition, فعالية, قادمة, الظهران, شركة معارض الظهران الدولية ( كسبو), Asharqia Chamber Events, business, exhibitions, career fairs, forums, chamber events, باحثون عن عمل, موظفون ومهنيون",
     "audience": [
       {
         "@type": "Audience",

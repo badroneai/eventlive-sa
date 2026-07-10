@@ -5,7 +5,7 @@ import { resolveVenueLocation } from './venue-location-utils.mjs';
 
 const registry = JSON.parse(fs.readFileSync('data/venue_registry.json', 'utf8'));
 assert.equal(registry.schema, 'eventlive.venue-registry.v1', 'venue registry schema must remain explicit');
-assert.ok(registry.venues.length >= 8, 'venue registry must retain the verified launch set');
+assert.ok(registry.venues.length >= 10, 'venue registry must retain the verified national set');
 
 for (const venue of registry.venues) {
   assert.ok(venue.id && venue.name && venue.city, 'every venue must carry stable identity and city');
@@ -19,10 +19,17 @@ const rfecc = resolveVenueLocation({ city: 'Riyadh', venue: 'Riyadh Front Exhibi
 assert.equal(rfecc?.registry_id, 'roshn-front-exhibition-center', 'RFECC alias must resolve to Roshn Front');
 assert.equal(resolveVenueLocation({ city: 'Jeddah', venue: 'Riyadh Front Exhibition & Convention Center' }, registry.venues), null, 'city mismatch must prevent a false venue match');
 
+const ithra = resolveVenueLocation({ city: 'Dhahran', venue: 'Ithra - Library', source_url: 'https://www.ithra.com/en/programme/example' }, registry.venues);
+assert.equal(ithra?.registry_id, 'ithra-cultural-center', 'generic Ithra room names must resolve only with first-party source scope');
+assert.equal(resolveVenueLocation({ city: 'Dhahran', venue: 'Ithra - Library', source_url: 'https://example.org/event' }, registry.venues), null, 'generic room names must not geocode outside their verified source');
+
+const uqu = resolveVenueLocation({ city: 'Makkah', venue: 'Umm Al-Qura University', source_url: 'https://uqu.edu.sa/App/Events/41008' }, registry.venues);
+assert.equal(uqu?.registry_id, 'umm-al-qura-university-abdiyah', 'UQU events must resolve to the verified Abidiyah campus');
+
 const publicEvents = JSON.parse(fs.readFileSync('dist/events.json', 'utf8')).events || [];
 const active = publicEvents.filter((event) => event.status !== 'ended');
 const geocodedActive = active.filter((event) => Number.isFinite(Number(event.latitude)) && Number.isFinite(Number(event.longitude)));
-assert.ok(geocodedActive.length >= 25, 'verified registry must geocode at least 25 active events at launch');
+assert.ok(geocodedActive.length >= 50, 'verified registry must geocode a meaningful active event set');
 
 for (const event of geocodedActive) {
   assert.ok(event.location_registry_id || event.location_verification_method === 'event-source', `${event.id} coordinates must carry provenance`);

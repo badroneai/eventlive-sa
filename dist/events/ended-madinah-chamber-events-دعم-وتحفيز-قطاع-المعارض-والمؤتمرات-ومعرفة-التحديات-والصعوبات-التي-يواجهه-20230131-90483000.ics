@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:دعم وتحفيز قطاع المعارض والمؤتمرات ومعرفة التحديات والصعوبات التي يواجهها القطاع | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-madinah-chamber-events-دعم-وتحفيز-قطاع-المعارض-والمؤتمرات-ومعرفة-التحديات-والصعوبات-التي-يواجهه-20230131-90483000@eventme.live
+DTSTAMP:20260710T112054Z
+DTSTART:20230131T160000Z
+DTEND:20230131T180000Z
+SUMMARY:دعم وتحفيز قطاع المعارض والمؤتمرات ومعرفة التحديات والصعوبات التي يواجهها القطاع
+DESCRIPTION:من منطلق #غرفة_المدينة_المنورة في دعم وتحفيز قطاع المعارض والمؤتمرات ومعرفة التحديات والصعوبات التي تواجه القطاع في منطقة #المدينة_المنورة ، زار الأمين العام ووفد من الغرفة معرض #عطرة بنسخته الثالثة.
+LOCATION:مبنى غرفة المدينة المنورة
+URL:https://eventme.live/events/ended-madinah-chamber-events-دعم-وتحفيز-قطاع-المعارض-والمؤتمرات-ومعرفة-التحديات-والصعوبات-التي-يواجهه-20230131-90483000.html
+END:VEVENT
+END:VCALENDAR

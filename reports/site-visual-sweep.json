@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T10:14:28.789Z",
+  "generated_at": "2026-07-10T11:25:23.425Z",
   "intent": "eventlive-site-visual-sweep",
   "base_url": "http://127.0.0.1:4187",
   "ok": true,
@@ -22,7 +22,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية الآن",
         "h1": "ماذا يحدث الآن في السعودية؟",
-        "bodyTextLength": 3161,
+        "bodyTextLength": 3224,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -61,7 +61,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية الآن",
         "h1": "ماذا يحدث الآن في السعودية؟",
-        "bodyTextLength": 3122,
+        "bodyTextLength": 3185,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -84,7 +84,7 @@
           {
             "tag": "article",
             "className": "card",
-            "text": "عائلات وأطفال ٩يوليو جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 10 ساعة الت",
+            "text": "عائلات وأطفال ٩يوليو جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 9 ساعة التف",
             "width": 262
           },
           {
@@ -108,7 +108,7 @@
           {
             "tag": "div",
             "className": "card-body",
-            "text": "جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 10 ساعة التفاصيل التقويم مصدر حك",
+            "text": "جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 9 ساعة التفاصيل التقويم مصدر حكو",
             "width": 260
           },
           {
@@ -149,7 +149,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية مباشرة",
         "h1": "كل الفعاليات",
-        "bodyTextLength": 18888,
+        "bodyTextLength": 19046,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -238,7 +238,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية مباشرة",
         "h1": "كل الفعاليات",
-        "bodyTextLength": 18835,
+        "bodyTextLength": 18993,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -327,7 +327,7 @@
       "metrics": {
         "title": "EventLive | ملتقى التحول الرقمي في القطاع الحكومي 2026",
         "h1": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
-        "bodyTextLength": 4541,
+        "bodyTextLength": 4483,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -342,7 +342,7 @@
           "ملتقى التحول الرقمي في القطاع الحكومي 2026",
           "لا توجد جلسة نشطة الآن",
           "الافتتاح الرسمي وكلمة الجهة المنظمة",
-          "تجري الآن: ورشة عمل: تصميم رحلة المستفيد في الخدمات الحكومية",
+          "انتهت الفعالية",
           "أين نحن الآن في الفعالية؟"
         ],
         "horizontalOverflow": false,
@@ -352,7 +352,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 4027
+          "scrollHeight": 3992
         }
       }
     },
@@ -367,7 +367,7 @@
       "metrics": {
         "title": "EventLive | ملتقى التحول الرقمي في القطاع الحكومي 2026",
         "h1": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
-        "bodyTextLength": 4569,
+        "bodyTextLength": 4464,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -382,7 +382,7 @@
           "ملتقى التحول الرقمي في القطاع الحكومي 2026",
           "لا توجد جلسة نشطة الآن",
           "الافتتاح الرسمي وكلمة الجهة المنظمة",
-          "تجري الآن: ورشة عمل: تصميم رحلة المستفيد في الخدمات الحكومية",
+          "انتهت الفعالية",
           "أين نحن الآن في الفعالية؟"
         ],
         "horizontalOverflow": false,
@@ -417,7 +417,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 7543
+          "scrollHeight": 7455
         }
       }
     },
@@ -432,7 +432,7 @@
       "metrics": {
         "title": "EventLive | الآن",
         "h1": "الآن",
-        "bodyTextLength": 2107,
+        "bodyTextLength": 2113,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -475,7 +475,7 @@
       "metrics": {
         "title": "EventLive | الآن",
         "h1": "الآن",
-        "bodyTextLength": 2054,
+        "bodyTextLength": 2095,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -528,7 +528,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 3259
+          "scrollHeight": 3287
         }
       }
     },
@@ -543,7 +543,7 @@
       "metrics": {
         "title": "فعاليات اليوم | EventLive",
         "h1": "فعاليات اليوم",
-        "bodyTextLength": 10808,
+        "bodyTextLength": 10805,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -586,7 +586,7 @@
       "metrics": {
         "title": "فعاليات اليوم | EventLive",
         "h1": "فعاليات اليوم",
-        "bodyTextLength": 10733,
+        "bodyTextLength": 10730,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -804,7 +804,7 @@
       "metrics": {
         "title": "EventLive | شاشة الحضور",
         "h1": "Beaded plant Suncatcher",
-        "bodyTextLength": 700,
+        "bodyTextLength": 733,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -841,7 +841,7 @@
       "metrics": {
         "title": "EventLive | شاشة الحضور",
         "h1": "Beaded plant Suncatcher",
-        "bodyTextLength": 559,
+        "bodyTextLength": 584,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -878,7 +878,7 @@
       "metrics": {
         "title": "تفعيل الجداول الحية | EventLive",
         "h1": "تفعيل الجداول الحية",
-        "bodyTextLength": 13996,
+        "bodyTextLength": 13997,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -906,7 +906,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 8834
+          "scrollHeight": 8876
         }
       }
     },
@@ -921,7 +921,7 @@
       "metrics": {
         "title": "تفعيل الجداول الحية | EventLive",
         "h1": "تفعيل الجداول الحية",
-        "bodyTextLength": 13921,
+        "bodyTextLength": 13922,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -998,7 +998,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 16363
+          "scrollHeight": 16405
         }
       }
     },
@@ -1013,7 +1013,7 @@
       "metrics": {
         "title": "نسخة طباعة الفعالية | EventLive",
         "h1": "Build & Play Together",
-        "bodyTextLength": 2108,
+        "bodyTextLength": 2116,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1051,7 +1051,7 @@
       "metrics": {
         "title": "نسخة طباعة الفعالية | EventLive",
         "h1": "Build & Play Together",
-        "bodyTextLength": 2033,
+        "bodyTextLength": 2041,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1165,7 +1165,7 @@
       "metrics": {
         "title": "لافتة QR للفعالية | EventLive",
         "h1": "Build & Play Together",
-        "bodyTextLength": 1081,
+        "bodyTextLength": 1089,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1188,7 +1188,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 1369
+          "scrollHeight": 1407
         }
       }
     },
@@ -1203,7 +1203,7 @@
       "metrics": {
         "title": "لافتة QR للفعالية | EventLive",
         "h1": "Build & Play Together",
-        "bodyTextLength": 1006,
+        "bodyTextLength": 1014,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1226,7 +1226,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 2171
+          "scrollHeight": 2209
         }
       }
     },
@@ -1241,7 +1241,7 @@
       "metrics": {
         "title": "فعاليات هذا الأسبوع | EventLive",
         "h1": "فعاليات هذا الأسبوع",
-        "bodyTextLength": 11292,
+        "bodyTextLength": 11281,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1284,7 +1284,7 @@
       "metrics": {
         "title": "فعاليات هذا الأسبوع | EventLive",
         "h1": "فعاليات هذا الأسبوع",
-        "bodyTextLength": 11217,
+        "bodyTextLength": 11206,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1327,7 +1327,7 @@
       "metrics": {
         "title": "فعاليات هذا الشهر | EventLive",
         "h1": "فعاليات هذا الشهر",
-        "bodyTextLength": 11252,
+        "bodyTextLength": 11240,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1370,7 +1370,7 @@
       "metrics": {
         "title": "فعاليات هذا الشهر | EventLive",
         "h1": "فعاليات هذا الشهر",
-        "bodyTextLength": 11177,
+        "bodyTextLength": 11165,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1466,7 +1466,7 @@
         "jsonLdBlocks": 3,
         "visibleImages": 8,
         "brokenImages": [],
-        "pendingImages": 4,
+        "pendingImages": 0,
         "headings": [
           "الويكند",
           "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
@@ -1524,7 +1524,7 @@
       "metrics": {
         "title": "فعاليات مدن السعودية | EventLive",
         "h1": "فعاليات مدن السعودية",
-        "bodyTextLength": 5117,
+        "bodyTextLength": 5181,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1552,7 +1552,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 5507
+          "scrollHeight": 5535
         }
       }
     },
@@ -1567,7 +1567,7 @@
       "metrics": {
         "title": "فعاليات مدن السعودية | EventLive",
         "h1": "فعاليات مدن السعودية",
-        "bodyTextLength": 5042,
+        "bodyTextLength": 5106,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1595,7 +1595,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 17993
+          "scrollHeight": 18049
         }
       }
     },
@@ -1610,7 +1610,7 @@
       "metrics": {
         "title": "تصنيفات فعاليات السعودية | EventLive",
         "h1": "تصنيفات فعاليات السعودية",
-        "bodyTextLength": 3169,
+        "bodyTextLength": 3174,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1653,7 +1653,7 @@
       "metrics": {
         "title": "تصنيفات فعاليات السعودية | EventLive",
         "h1": "تصنيفات فعاليات السعودية",
-        "bodyTextLength": 3094,
+        "bodyTextLength": 3099,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1724,7 +1724,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 2818
+          "scrollHeight": 2846
         }
       }
     },
@@ -1971,7 +1971,7 @@
       "metrics": {
         "title": "منهجية جمع ونشر الفعاليات | EventLive",
         "h1": "منهجية جمع ونشر الفعاليات",
-        "bodyTextLength": 1872,
+        "bodyTextLength": 1873,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1999,7 +1999,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 1741
+          "scrollHeight": 1742
         }
       }
     },
@@ -2014,7 +2014,7 @@
       "metrics": {
         "title": "منهجية جمع ونشر الفعاليات | EventLive",
         "h1": "منهجية جمع ونشر الفعاليات",
-        "bodyTextLength": 1797,
+        "bodyTextLength": 1798,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3004,7 +3004,7 @@
       "metrics": {
         "title": "مصادر الفعاليات | EventLive",
         "h1": "مصادر الفعاليات",
-        "bodyTextLength": 10773,
+        "bodyTextLength": 10775,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3042,7 +3042,7 @@
       "metrics": {
         "title": "مصادر الفعاليات | EventLive",
         "h1": "مصادر الفعاليات",
-        "bodyTextLength": 10698,
+        "bodyTextLength": 10700,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3240,7 +3240,7 @@
       "metrics": {
         "title": "فجوات تغطية المصادر | EventLive",
         "h1": "فجوات تغطية المصادر",
-        "bodyTextLength": 11651,
+        "bodyTextLength": 11703,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3281,7 +3281,7 @@
       "metrics": {
         "title": "فجوات تغطية المصادر | EventLive",
         "h1": "فجوات تغطية المصادر",
-        "bodyTextLength": 11576,
+        "bodyTextLength": 11628,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3356,7 +3356,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 15844
+          "scrollHeight": 15884
         }
       }
     },
@@ -3593,7 +3593,7 @@
       "metrics": {
         "title": "تغطية مناطق المملكة | EventLive",
         "h1": "تغطية مناطق المملكة",
-        "bodyTextLength": 3303,
+        "bodyTextLength": 3286,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3632,7 +3632,7 @@
       "metrics": {
         "title": "تغطية مناطق المملكة | EventLive",
         "h1": "تغطية مناطق المملكة",
-        "bodyTextLength": 3228,
+        "bodyTextLength": 3211,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3720,7 +3720,7 @@
       "metrics": {
         "title": "جاهزية التشغيل | EventLive",
         "h1": "جاهزية التشغيل",
-        "bodyTextLength": 3791,
+        "bodyTextLength": 3794,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3763,7 +3763,7 @@
       "metrics": {
         "title": "جاهزية التشغيل | EventLive",
         "h1": "جاهزية التشغيل",
-        "bodyTextLength": 3716,
+        "bodyTextLength": 3719,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3855,7 +3855,7 @@
       "metrics": {
         "title": "مركز الثقة | EventLive",
         "h1": "مركز الثقة",
-        "bodyTextLength": 4596,
+        "bodyTextLength": 4600,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3897,7 +3897,7 @@
       "metrics": {
         "title": "مركز الثقة | EventLive",
         "h1": "مركز الثقة",
-        "bodyTextLength": 4521,
+        "bodyTextLength": 4525,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3988,7 +3988,7 @@
       "metrics": {
         "title": "فعاليات الرياض | EventLive",
         "h1": "فعاليات الرياض",
-        "bodyTextLength": 12650,
+        "bodyTextLength": 12644,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4031,7 +4031,7 @@
       "metrics": {
         "title": "فعاليات الرياض | EventLive",
         "h1": "فعاليات الرياض",
-        "bodyTextLength": 12575,
+        "bodyTextLength": 12569,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4074,7 +4074,7 @@
       "metrics": {
         "title": "تدريب تقني | EventLive",
         "h1": "تدريب تقني",
-        "bodyTextLength": 8079,
+        "bodyTextLength": 7823,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4102,7 +4102,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 5381
+          "scrollHeight": 5221
         }
       }
     },
@@ -4117,7 +4117,7 @@
       "metrics": {
         "title": "تدريب تقني | EventLive",
         "h1": "تدريب تقني",
-        "bodyTextLength": 8004,
+        "bodyTextLength": 7748,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4145,7 +4145,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 13814
+          "scrollHeight": 13466
         }
       }
     },
@@ -4160,7 +4160,7 @@
       "metrics": {
         "title": "Build & Play Together | EventLive",
         "h1": "Build & Play Together",
-        "bodyTextLength": 2946,
+        "bodyTextLength": 2954,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4248,7 +4248,7 @@
       "metrics": {
         "title": "Build & Play Together | EventLive",
         "h1": "Build & Play Together",
-        "bodyTextLength": 2871,
+        "bodyTextLength": 2879,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4321,7 +4321,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 5284
+          "scrollHeight": 5312
         }
       }
     }

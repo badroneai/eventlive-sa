@@ -1,0 +1,118 @@
+{
+  "id": "ended-madinah-chamber-events-ورشة-المحتوى-المحلي-وفائدته-للمنشآت-20250128-6a7d83e7",
+  "title": "ورشة المحتوى المحلي وفائدته للمنشآت",
+  "summary": "تدعوكم غرفة المدينة المنورة لحضور ورشة عمل بعنوان: المحتوى المحلي وفائدته للمنشآت الثلاثاء 28\\ 1\\ 2025 م 10:00 صباحاً حضوري/عن بعد رابط التسجيل: http s:// mcc i.org.sa/link/3384",
+  "canonical_url": "https://eventme.live/events/ended-madinah-chamber-events-ورشة-المحتوى-المحلي-وفائدته-للمنشآت-20250128-6a7d83e7.html",
+  "detail_url": "./events/ended-madinah-chamber-events-ورشة-المحتوى-المحلي-وفائدته-للمنشآت-20250128-6a7d83e7.html",
+  "calendar_url": "./events/ended-madinah-chamber-events-ورشة-المحتوى-المحلي-وفائدته-للمنشآت-20250128-6a7d83e7.ics",
+  "source_label": "Madinah Chamber Events",
+  "source_url": "https://www.mcci.org.sa/Event/eventDetails?circular=332",
+  "evidence_url": "https://www.mcci.org.sa/Event/eventDetails?circular=332",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T11:06:14.632Z",
+  "verification_method": "official-public-json-api",
+  "freshness_hours": 0,
+  "city": "عن بعد",
+  "venue": "Online",
+  "venue_address": "Online",
+  "starts_at": "2025-01-28T18:00:00+03:00",
+  "ends_at": "2025-01-28T20:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "online",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/ورشة-المحتوى-المحلي-وفائدته-للمنشآت-a8b8c21188.png",
+  "image_alt": "ورشة المحتوى المحلي وفائدته للمنشآت",
+  "category": "فعاليات الغرف التجارية",
+  "category_url": "./categories/chamber-event.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "entrepreneurs",
+      "label": "رواد أعمال"
+    }
+  ],
+  "keywords": [
+    "ورشة المحتوى المحلي وفائدته للمنشآت",
+    "فعاليات الغرف التجارية",
+    "ورشة عمل",
+    "فعالية",
+    "منتهية",
+    "عن بعد",
+    "Online",
+    "Madinah Chamber Events",
+    "business",
+    "training",
+    "workshops",
+    "forums",
+    "exhibitions",
+    "Madinah Chamber",
+    "ended-event",
+    "موظفون ومهنيون",
+    "رواد أعمال"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2025-01-28T18:00:00+03:00",
+      "ends_at": "2025-01-28T20:00:00+03:00",
+      "room": "Online",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "ورشة المحتوى المحلي وفائدته للمنشآت",
+    "startDate": "2025-01-28T18:00:00+03:00",
+    "endDate": "2025-01-28T20:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "name": "Online",
+      "url": "https://www.mcci.org.sa/Event/eventDetails?circular=332"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "غرفة المدينة"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/ورشة-المحتوى-المحلي-وفائدته-للمنشآت-a8b8c21188.png"
+    ],
+    "description": "تدعوكم غرفة المدينة المنورة لحضور ورشة عمل بعنوان: المحتوى المحلي وفائدته للمنشآت الثلاثاء 28\\ 1\\ 2025 م 10:00 صباحاً حضوري/عن بعد رابط التسجيل: http s:// mcc i.org.sa/link/3384",
+    "url": "https://eventme.live/events/ended-madinah-chamber-events-ورشة-المحتوى-المحلي-وفائدته-للمنشآت-20250128-6a7d83e7.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-madinah-chamber-events-ورشة-المحتوى-المحلي-وفائدته-للمنشآت-20250128-6a7d83e7.html",
+    "isAccessibleForFree": false,
+    "keywords": "ورشة المحتوى المحلي وفائدته للمنشآت, فعاليات الغرف التجارية, ورشة عمل, فعالية, منتهية, عن بعد, Online, Madinah Chamber Events, business, training, workshops, forums, exhibitions, Madinah Chamber, ended-event, موظفون ومهنيون, رواد أعمال",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رواد أعمال"
+      }
+    ],
+    "sameAs": [
+      "https://www.mcci.org.sa/Event/eventDetails?circular=332"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://x.com/hashtag/%D8%BA%D8%B1%D9%81%D8%A9_%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9_%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9?src=hashtag_click",
+      "availability": "https://schema.org/InStock",
+      "category": "Registration"
+    }
+  }
+}
