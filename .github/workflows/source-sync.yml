@@ -106,7 +106,17 @@ jobs:
             echo "No catalog state changes to persist."
           else
             git commit -m "chore(sync): persist daily source sync state [skip ci]"
-            git push origin "HEAD:${GITHUB_REF_NAME}"
+            for attempt in 1 2 3; do
+              git fetch origin "${GITHUB_REF_NAME}"
+              git rebase "origin/${GITHUB_REF_NAME}"
+              if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+                exit 0
+              fi
+              echo "Sync push raced with another deployment; retrying (${attempt}/3)."
+              sleep $((attempt * 5))
+            done
+            echo "Unable to persist sync state after three rebased attempts."
+            exit 1
           fi
 
       - name: Upload source sync evidence
