@@ -14,6 +14,22 @@ assert.deepEqual(registry.locales, ['ar-SA', 'en-SA']);
 assert.ok(registry.routes.length > 1000, 'all public routes must be localized');
 let eventDetailScriptChecked = false;
 
+function resolveUnicodePath(base, relative) {
+  let current = base;
+  for (const segment of relative.split(path.sep)) {
+    const exact = path.join(current, segment);
+    if (fs.existsSync(exact)) {
+      current = exact;
+      continue;
+    }
+    const normalized = segment.normalize('NFC');
+    const match = fs.readdirSync(current).find((entry) => entry.normalize('NFC') === normalized);
+    assert.ok(match, `missing localized page segment: ${exact}`);
+    current = path.join(current, match);
+  }
+  return current;
+}
+
 function inspect(file, locale, direction, canonical) {
   assert.ok(fs.existsSync(file), `missing localized page: ${file}`);
   const source = fs.readFileSync(file, 'utf8');
@@ -46,8 +62,8 @@ for (const route of registry.routes) {
   const relative = route.key;
   const arCanonical = `https://eventme.live/${relative === 'index.html' ? '' : relative}`;
   const enCanonical = `https://eventme.live/en/${relative === 'index.html' ? '' : relative}`;
-  const ar = inspect(path.join(dist, relative), 'ar-SA', 'rtl', arCanonical);
-  const en = inspect(path.join(dist, 'en', relative), 'en-SA', 'ltr', enCanonical);
+  const ar = inspect(resolveUnicodePath(dist, relative), 'ar-SA', 'rtl', arCanonical);
+  const en = inspect(resolveUnicodePath(path.join(dist, 'en'), relative), 'en-SA', 'ltr', enCanonical);
   assert.equal(ar.$('.language-switch').attr('href'), route['en-SA']);
   assert.equal(en.$('.language-switch').attr('href'), route['ar-SA']);
   assert.equal(ar.$('link[hreflang="en-SA"]').attr('href'), enCanonical);
