@@ -35,6 +35,7 @@ const activeCollectorIds = new Set([
   'umm-al-qura-events',
   'madinah-chamber-events',
   'madinah-architecture-festival',
+  'hayy-jameel-events',
   'sdaia-calendar-events',
   'asharqia-chamber-events',
   'makkah-chamber-events',

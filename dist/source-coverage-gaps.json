@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-10T11:20:54.252Z",
+  "generated_at": "2026-07-10T12:37:24.491Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-source-coverage-gaps",
   "totals": {
-    "events": 1107,
+    "events": 1118,
     "cities": 35,
     "weak_cities": 18,
     "categories": 14,
     "weak_categories": 2,
     "source_risks": 16,
-    "active_events": 355,
+    "active_events": 366,
     "ended_events": 752,
-    "active_source_images": 320,
+    "active_source_images": 331,
     "active_generated_covers": 35,
     "media_gaps": 24
   },
@@ -540,24 +540,6 @@
       "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
     },
     {
-      "key": "Jeddah",
-      "label": "جدة",
-      "total": 81,
-      "active": 13,
-      "upcoming": 6,
-      "ongoing": 6,
-      "live": 1,
-      "ended": 68,
-      "live_ready": 0,
-      "source_count": 9,
-      "source_images": 19,
-      "generated_covers": 62,
-      "registered_source_count": 19,
-      "coverage_score": 82,
-      "severity": "healthy",
-      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
-    },
-    {
       "key": "Saudi Arabia",
       "label": "السعودية",
       "total": 23,
@@ -612,6 +594,24 @@
       "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
     },
     {
+      "key": "Jeddah",
+      "label": "جدة",
+      "total": 92,
+      "active": 24,
+      "upcoming": 9,
+      "ongoing": 14,
+      "live": 1,
+      "ended": 68,
+      "live_ready": 2,
+      "source_count": 10,
+      "source_images": 30,
+      "generated_covers": 62,
+      "registered_source_count": 20,
+      "coverage_score": 100,
+      "severity": "healthy",
+      "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
+    },
+    {
       "key": "Riyadh",
       "label": "الرياض",
       "total": 288,
@@ -634,9 +634,9 @@
       "label": "الظهران",
       "total": 247,
       "active": 140,
-      "upcoming": 135,
+      "upcoming": 134,
       "ongoing": 4,
-      "live": 1,
+      "live": 2,
       "ended": 107,
       "live_ready": 218,
       "source_count": 3,
@@ -735,23 +735,6 @@
       "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
     },
     {
-      "key": "awards ceremonies",
-      "label": "جوائز وتكريم",
-      "total": 16,
-      "active": 10,
-      "upcoming": 10,
-      "ongoing": 0,
-      "live": 0,
-      "ended": 6,
-      "live_ready": 4,
-      "source_count": 5,
-      "source_images": 15,
-      "generated_covers": 1,
-      "coverage_score": 89,
-      "severity": "healthy",
-      "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
-    },
-    {
       "key": "science space",
       "label": "علوم وفضاء",
       "total": 27,
@@ -764,6 +747,23 @@
       "source_count": 4,
       "source_images": 27,
       "generated_covers": 0,
+      "coverage_score": 89,
+      "severity": "healthy",
+      "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
+    },
+    {
+      "key": "awards ceremonies",
+      "label": "جوائز وتكريم",
+      "total": 18,
+      "active": 12,
+      "upcoming": 10,
+      "ongoing": 2,
+      "live": 0,
+      "ended": 6,
+      "live_ready": 4,
+      "source_count": 6,
+      "source_images": 17,
+      "generated_covers": 1,
       "coverage_score": 89,
       "severity": "healthy",
       "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
@@ -822,33 +822,16 @@
     {
       "key": "exhibition trade",
       "label": "معارض وتجارية",
-      "total": 106,
-      "active": 31,
+      "total": 108,
+      "active": 33,
       "upcoming": 28,
-      "ongoing": 3,
+      "ongoing": 5,
       "live": 0,
       "ended": 75,
       "live_ready": 12,
-      "source_count": 7,
-      "source_images": 32,
+      "source_count": 8,
+      "source_images": 34,
       "generated_covers": 74,
-      "coverage_score": 89,
-      "severity": "healthy",
-      "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
-    },
-    {
-      "key": "culture arts",
-      "label": "ثقافة وفنون",
-      "total": 56,
-      "active": 44,
-      "upcoming": 21,
-      "ongoing": 23,
-      "live": 0,
-      "ended": 12,
-      "live_ready": 31,
-      "source_count": 5,
-      "source_images": 56,
-      "generated_covers": 0,
       "coverage_score": 89,
       "severity": "healthy",
       "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
@@ -856,16 +839,33 @@
     {
       "key": "education community",
       "label": "جامعات ومجتمع",
-      "total": 111,
-      "active": 44,
-      "upcoming": 43,
-      "ongoing": 1,
+      "total": 114,
+      "active": 47,
+      "upcoming": 45,
+      "ongoing": 2,
       "live": 0,
       "ended": 67,
-      "live_ready": 89,
-      "source_count": 7,
-      "source_images": 99,
+      "live_ready": 91,
+      "source_count": 8,
+      "source_images": 102,
       "generated_covers": 12,
+      "coverage_score": 89,
+      "severity": "healthy",
+      "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
+    },
+    {
+      "key": "culture arts",
+      "label": "ثقافة وفنون",
+      "total": 60,
+      "active": 48,
+      "upcoming": 22,
+      "ongoing": 26,
+      "live": 0,
+      "ended": 12,
+      "live_ready": 31,
+      "source_count": 6,
+      "source_images": 60,
+      "generated_covers": 0,
       "coverage_score": 89,
       "severity": "healthy",
       "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
@@ -875,9 +875,9 @@
       "label": "ترفيه وعائلات",
       "total": 157,
       "active": 98,
-      "upcoming": 79,
+      "upcoming": 78,
       "ongoing": 16,
-      "live": 3,
+      "live": 4,
       "ended": 59,
       "live_ready": 71,
       "source_count": 9,
@@ -896,7 +896,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:3",
-      "next_action": "Zero-yield for 9 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 12 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "code-mcit-programs",
@@ -904,8 +904,8 @@
       "status": "zero-yield",
       "ring": "active-collector",
       "coverage_score": 0,
-      "reason": "past-date:9",
-      "next_action": "Zero-yield for 60 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "reason": "past-date:4",
+      "next_action": "Zero-yield for 63 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "sdaia-academy-programs",
@@ -914,7 +914,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "date/content signals exist but extractor returned no complete future rows",
-      "next_action": "Zero-yield for 9 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 12 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "misk-hub-events",
@@ -923,7 +923,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:5",
-      "next_action": "Zero-yield for 60 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 63 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "jcci-events-center",
@@ -932,7 +932,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:13",
-      "next_action": "Zero-yield for 60 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 63 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "saudi-pro-league-fixtures",
@@ -941,7 +941,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:100",
-      "next_action": "Zero-yield for 60 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 63 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "saudi-space-agency-events",
@@ -950,7 +950,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:14",
-      "next_action": "Zero-yield for 22 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 25 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "makkah-chamber-events",
@@ -959,7 +959,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:10",
-      "next_action": "Zero-yield for 54 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 57 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "qassim-chamber-events",
@@ -968,7 +968,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:3",
-      "next_action": "Zero-yield for 9 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 12 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "abha-chamber-events",
@@ -977,7 +977,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:5",
-      "next_action": "Zero-yield for 54 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 57 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "northern-borders-chamber-events",
@@ -986,7 +986,7 @@
       "ring": "extractor-backlog",
       "coverage_score": 0,
       "reason": "past-date:4",
-      "next_action": "Zero-yield for 15 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 18 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "tabuk-chamber-events",
@@ -995,25 +995,16 @@
       "ring": "extractor-backlog",
       "coverage_score": 0,
       "reason": "past-date:2",
-      "next_action": "Zero-yield for 15 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
-    },
-    {
-      "id": "sdaia-calendar-events",
-      "label": "SDAIA Calendar and Events",
-      "status": "zero-yield",
-      "ring": "active-collector",
-      "coverage_score": 32,
-      "reason": "date/content signals exist but extractor returned no complete future rows",
-      "next_action": "Zero-yield for 3 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 18 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "madinah-chamber-events",
       "label": "Madinah Chamber Events",
       "status": "zero-yield",
       "ring": "active-collector",
-      "coverage_score": 32,
+      "coverage_score": 14,
       "reason": "past-date:305",
-      "next_action": "Zero-yield for 3 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 6 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "nec-saudi-events",
@@ -1027,6 +1018,15 @@
     {
       "id": "webook-explore",
       "label": "webook Explore",
+      "status": "discovery-only",
+      "ring": "discovery-only",
+      "coverage_score": 50,
+      "reason": "not a direct auto-publish source lane",
+      "next_action": "Use only as discovery evidence; never publish directly."
+    },
+    {
+      "id": "hala-yalla",
+      "label": "Hala Yalla",
       "status": "discovery-only",
       "ring": "discovery-only",
       "coverage_score": 50,
@@ -1428,7 +1428,7 @@
       "label": "Ministry of Sport Events",
       "coverage_score": 0,
       "reason": "past-date:3",
-      "next_action": "Zero-yield for 9 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 12 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "kind": "source",
@@ -1436,8 +1436,8 @@
       "key": "code-mcit-programs",
       "label": "CODE MCIT Programs",
       "coverage_score": 0,
-      "reason": "past-date:9",
-      "next_action": "Zero-yield for 60 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "reason": "past-date:4",
+      "next_action": "Zero-yield for 63 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "kind": "source",
@@ -1446,7 +1446,7 @@
       "label": "SDAIA Academy Programs",
       "coverage_score": 0,
       "reason": "date/content signals exist but extractor returned no complete future rows",
-      "next_action": "Zero-yield for 9 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 12 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "kind": "source",
@@ -1455,7 +1455,7 @@
       "label": "Misk Hub Events",
       "coverage_score": 0,
       "reason": "past-date:5",
-      "next_action": "Zero-yield for 60 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 63 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "kind": "category",

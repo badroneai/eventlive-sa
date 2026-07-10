@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Hayy Cinema | “Kef Hayyak?” 3rd Edition Screenings and Awards Ceremony | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-hayy-cinema@eventme.live
+DTSTAMP:20260710T123724Z
+DTSTART:20260618T060000Z
+DTEND:20260715T150000Z
+SUMMARY:Hayy Cinema | “Kef Hayyak?” 3rd Edition Screenings and Awards Ceremony
+DESCRIPTION:Join us for the screenings of the third edition of “Kef Hayyak?” cohort’s films! “Kef Hayyak?” is a unique documentary filmmaking challenge that invites aspiring filmmakers to capture the essence of their neighborhoods in Jeddah through their own lens—using only their phones. Building on the success of its first two editions\, the programme launched an open call for its third edition in December 2025\, selecting 13 projects for development based on the quality and originality of their creative proposals.
+LOCATION:Hayy Jameel
+URL:https://eventme.live/events/event-hayy-cinema.html
+END:VEVENT
+END:VCALENDAR

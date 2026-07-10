@@ -25,6 +25,15 @@ fs.writeFileSync(catalogPath, `${JSON.stringify({
       source_label: 'Community Source',
       source_url: 'https://example.com/event',
       starts_at: '2026-07-12T09:00:00+03:00'
+    },
+    {
+      id: 'event-pinned-icon',
+      title: 'Pinned Icon Recovery Workshop',
+      source_label: 'Official Recovery Source',
+      source_url: 'https://official.example.sa/events/recovery',
+      starts_at: '2026-07-13T09:00:00+03:00',
+      image_url: 'https://official.example.sa/theme/safari-pinned-tab.png',
+      original_image_url: 'https://official.example.sa/theme/safari-pinned-tab.png'
     }
   ]
 }, null, 2)}\n`, 'utf8');
@@ -48,6 +57,15 @@ fs.writeFileSync(candidatesPath, `${JSON.stringify({
       starts_at: '2026-07-12T09:00:00+03:00',
       confidence: 'community',
       image_url: 'https://example.com/uploads/event.jpg'
+    },
+    {
+      title: 'Pinned Icon Recovery Workshop',
+      source_label: 'Official Recovery Source',
+      source_url: 'https://official.example.sa/events/recovery',
+      starts_at: '2026-07-13T09:00:00+03:00',
+      confidence: 'official',
+      image_url: 'https://official.example.sa/uploads/recovery-1100x500.jpg',
+      image_alt: 'Recovery workshop artwork'
     }
   ]
 }, null, 2)}\n`, 'utf8');
@@ -62,6 +80,7 @@ await import('./sync-catalog-images-from-candidates.mjs');
 const catalog = JSON.parse(fs.readFileSync(catalogPath, 'utf8'));
 const official = catalog.events.find((event) => event.id === 'event-official-image');
 const untrusted = catalog.events.find((event) => event.id === 'event-untrusted-image');
+const recovered = catalog.events.find((event) => event.id === 'event-pinned-icon');
 const report = JSON.parse(fs.readFileSync(reportJsonPath, 'utf8'));
 
 assert.equal(official.image_url, 'https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-07/course.jpg?itok=ok');
@@ -69,6 +88,8 @@ assert.equal(official.original_image_url, official.image_url);
 assert.equal(official.image_alt, 'Course image');
 assert.equal(official.image_discovery_method, 'catalog-candidate');
 assert.equal(untrusted.image_url, undefined, 'untrusted candidates must not enrich published catalog events');
-assert.equal(report.synced, 1);
+assert.equal(recovered.image_url, 'https://official.example.sa/uploads/recovery-1100x500.jpg', 'a generic pinned-tab icon must be replaced by trusted event artwork');
+assert.equal(recovered.image_alt, 'Recovery workshop artwork');
+assert.equal(report.synced, 2);
 
 console.log('catalog-image-sync-regression-test: ok');

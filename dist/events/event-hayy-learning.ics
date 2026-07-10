@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Hayy Learning | Recess: An After-School Programme for Teens | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-hayy-learning@eventme.live
+DTSTAMP:20260710T123724Z
+DTSTART:20260606T060000Z
+DTEND:20260823T150000Z
+SUMMARY:Hayy Learning | Recess: An After-School Programme for Teens
+DESCRIPTION:Recess is back — and applications are open! An alternative afterschool arts programme at Hayy Jameel for ambitious teens aged 14–17. Over 12 weekly sessions\, participants dive into contemporary art through studio practice\, research\, field trips to local galleries and artist studios and mentorship from working creatives. Every student hand-binds their own portfolio throughout the programme\, and the whole cohort comes together at the end for a real\, student-led showcase.
+LOCATION:Hayy Jameel
+URL:https://eventme.live/events/event-hayy-learning.html
+END:VEVENT
+END:VCALENDAR

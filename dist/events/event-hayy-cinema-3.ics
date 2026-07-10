@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Hayy Cinema | In Short: Film Programme — Summer Edition | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-hayy-cinema-3@eventme.live
+DTSTAMP:20260710T123724Z
+DTSTART:20260715T060000Z
+DTEND:20260806T150000Z
+SUMMARY:Hayy Cinema | In Short: Film Programme — Summer Edition
+DESCRIPTION:In Short: Film Programme — Summer 2026 Edition This summer\, Hayy Cinema invites audiences to discover In Short \, a new programme dedicated to the art of short filmmaking. Running until August 6\, the programme brings together three distinct slots: Our Stories: Bold works by emerging Gulf filmmakers and distinctive regional voices Borderless Intersections: A cclaimed international short films Across Generations: F amily-friendly adventures for younger audiences and the young at heart.
+LOCATION:Hayy Jameel
+URL:https://eventme.live/events/event-hayy-cinema-3.html
+END:VEVENT
+END:VCALENDAR

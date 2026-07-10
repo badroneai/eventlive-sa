@@ -10,12 +10,12 @@
   "evidence_url": "https://www.sfda.gov.sa/ar/workshop/5522013",
   "trust_tier": "official",
   "trust_label": "مصدر حكومي أو رسمي",
-  "verified_at": "2026-07-10T11:13:53.006Z",
+  "verified_at": "2026-07-10T12:35:05.171Z",
   "verification_method": "registered-official",
   "freshness_hours": 0,
   "city": "عن بعد",
-  "venue": "عن بعد",
-  "venue_address": "عن بعد",
+  "venue": "Online",
+  "venue_address": "Online",
   "starts_at": "2026-07-13T10:00:00+03:00",
   "ends_at": "2026-07-13T11:00:00+03:00",
   "status": "upcoming",
@@ -45,6 +45,7 @@
     "فعالية",
     "قادمة",
     "عن بعد",
+    "Online",
     "Saudi Food and Drug Authority Events",
     "healthcare",
     "food",
@@ -61,7 +62,7 @@
       "title": "نقل مبيدات آفات الصحة العامة",
       "starts_at": "2026-07-13T10:00:00+03:00",
       "ends_at": "2026-07-13T11:00:00+03:00",
-      "room": "عن بعد",
+      "room": "Online",
       "anchor": "#session-event-نقل-مبيدات-ا-فات-الصحة-العامة-2-official-session-1"
     }
   ],
@@ -75,7 +76,7 @@
     "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
     "location": {
       "@type": "VirtualLocation",
-      "name": "عن بعد",
+      "name": "Online",
       "url": "https://www.sfda.gov.sa/ar/workshop/5522013"
     },
     "organizer": {
@@ -89,7 +90,7 @@
     "url": "https://eventme.live/events/event-نقل-مبيدات-آفات-الصحة-العامة-2.html",
     "mainEntityOfPage": "https://eventme.live/events/event-نقل-مبيدات-آفات-الصحة-العامة-2.html",
     "isAccessibleForFree": false,
-    "keywords": "نقل مبيدات آفات الصحة العامة, ورش تنظيمية وصحية, regulatory workshop, فعالية, قادمة, عن بعد, Saudi Food and Drug Authority Events, healthcare, food, pharma, regulation, workshops, conferences, SFDA, workshop, موظفون ومهنيون",
+    "keywords": "نقل مبيدات آفات الصحة العامة, ورش تنظيمية وصحية, regulatory workshop, فعالية, قادمة, عن بعد, Online, Saudi Food and Drug Authority Events, healthcare, food, pharma, regulation, workshops, conferences, SFDA, workshop, موظفون ومهنيون",
     "audience": [
       {
         "@type": "Audience",

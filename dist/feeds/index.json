@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-10T11:20:54.252Z",
+  "generated_at": "2026-07-10T12:37:24.491Z",
   "platform": "EventLive",
   "feeds": [
     {
       "slug": "all",
       "title": "كل فعاليات السعودية | EventLive",
       "description": "تغذية دورية للفعاليات القادمة والجارية في السعودية من EventLive.",
-      "count": 355,
+      "count": 366,
       "ics_url": "./feeds/all.ics",
       "rss_url": "./feeds/all.xml",
       "json_url": "./feeds/all.json"
@@ -42,7 +42,7 @@
       "slug": "city-jeddah",
       "title": "فعاليات جدة | EventLive",
       "description": "تغذية فعاليات جدة القادمة والجارية من EventLive.",
-      "count": 13,
+      "count": 24,
       "ics_url": "./feeds/city-jeddah.ics",
       "rss_url": "./feeds/city-jeddah.xml",
       "json_url": "./feeds/city-jeddah.json"
@@ -321,7 +321,7 @@
       "slug": "category-culture-arts",
       "title": "ثقافة وفنون | EventLive",
       "description": "تغذية فعاليات تصنيف ثقافة وفنون القادمة والجارية من EventLive.",
-      "count": 44,
+      "count": 48,
       "ics_url": "./feeds/category-culture-arts.ics",
       "rss_url": "./feeds/category-culture-arts.xml",
       "json_url": "./feeds/category-culture-arts.json"
@@ -357,7 +357,7 @@
       "slug": "category-exhibition-trade",
       "title": "معارض وتجارية | EventLive",
       "description": "تغذية فعاليات تصنيف معارض وتجارية القادمة والجارية من EventLive.",
-      "count": 31,
+      "count": 33,
       "ics_url": "./feeds/category-exhibition-trade.ics",
       "rss_url": "./feeds/category-exhibition-trade.xml",
       "json_url": "./feeds/category-exhibition-trade.json"
@@ -381,6 +381,24 @@
       "json_url": "./feeds/category-regulatory-workshop.json"
     },
     {
+      "slug": "category-awards-ceremonies",
+      "title": "جوائز وتكريم | EventLive",
+      "description": "تغذية فعاليات تصنيف جوائز وتكريم القادمة والجارية من EventLive.",
+      "count": 12,
+      "ics_url": "./feeds/category-awards-ceremonies.ics",
+      "rss_url": "./feeds/category-awards-ceremonies.xml",
+      "json_url": "./feeds/category-awards-ceremonies.json"
+    },
+    {
+      "slug": "category-education-community",
+      "title": "جامعات ومجتمع | EventLive",
+      "description": "تغذية فعاليات تصنيف جامعات ومجتمع القادمة والجارية من EventLive.",
+      "count": 47,
+      "ics_url": "./feeds/category-education-community.ics",
+      "rss_url": "./feeds/category-education-community.xml",
+      "json_url": "./feeds/category-education-community.json"
+    },
+    {
       "slug": "category-science-space",
       "title": "علوم وفضاء | EventLive",
       "description": "تغذية فعاليات تصنيف علوم وفضاء القادمة والجارية من EventLive.",
@@ -388,15 +406,6 @@
       "ics_url": "./feeds/category-science-space.ics",
       "rss_url": "./feeds/category-science-space.xml",
       "json_url": "./feeds/category-science-space.json"
-    },
-    {
-      "slug": "category-education-community",
-      "title": "جامعات ومجتمع | EventLive",
-      "description": "تغذية فعاليات تصنيف جامعات ومجتمع القادمة والجارية من EventLive.",
-      "count": 44,
-      "ics_url": "./feeds/category-education-community.ics",
-      "rss_url": "./feeds/category-education-community.xml",
-      "json_url": "./feeds/category-education-community.json"
     },
     {
       "slug": "category-chamber-event",
@@ -415,15 +424,6 @@
       "ics_url": "./feeds/category-conference-forum.ics",
       "rss_url": "./feeds/category-conference-forum.xml",
       "json_url": "./feeds/category-conference-forum.json"
-    },
-    {
-      "slug": "category-awards-ceremonies",
-      "title": "جوائز وتكريم | EventLive",
-      "description": "تغذية فعاليات تصنيف جوائز وتكريم القادمة والجارية من EventLive.",
-      "count": 10,
-      "ics_url": "./feeds/category-awards-ceremonies.ics",
-      "rss_url": "./feeds/category-awards-ceremonies.xml",
-      "json_url": "./feeds/category-awards-ceremonies.json"
     },
     {
       "slug": "for-students",
@@ -465,7 +465,7 @@
       "slug": "for-skilled-trades",
       "title": "مهاريون وحرفيون | EventLive",
       "description": "تغذية فعاليات مناسبة لفئة مهاريون وحرفيون من EventLive.",
-      "count": 67,
+      "count": 68,
       "ics_url": "./feeds/for-skilled-trades.ics",
       "rss_url": "./feeds/for-skilled-trades.xml",
       "json_url": "./feeds/for-skilled-trades.json"
@@ -474,7 +474,7 @@
       "slug": "for-entrepreneurs",
       "title": "رواد أعمال | EventLive",
       "description": "تغذية فعاليات مناسبة لفئة رواد أعمال من EventLive.",
-      "count": 32,
+      "count": 33,
       "ics_url": "./feeds/for-entrepreneurs.ics",
       "rss_url": "./feeds/for-entrepreneurs.xml",
       "json_url": "./feeds/for-entrepreneurs.json"
@@ -483,7 +483,7 @@
       "slug": "for-researchers",
       "title": "باحثون وأكاديميون | EventLive",
       "description": "تغذية فعاليات مناسبة لفئة باحثون وأكاديميون من EventLive.",
-      "count": 46,
+      "count": 47,
       "ics_url": "./feeds/for-researchers.ics",
       "rss_url": "./feeds/for-researchers.xml",
       "json_url": "./feeds/for-researchers.json"
@@ -492,7 +492,7 @@
       "slug": "for-families",
       "title": "عائلات وأطفال | EventLive",
       "description": "تغذية فعاليات مناسبة لفئة عائلات وأطفال من EventLive.",
-      "count": 152,
+      "count": 163,
       "ics_url": "./feeds/for-families.ics",
       "rss_url": "./feeds/for-families.xml",
       "json_url": "./feeds/for-families.json"
@@ -510,7 +510,7 @@
       "slug": "for-creatives",
       "title": "مبدعون وفنون | EventLive",
       "description": "تغذية فعاليات مناسبة لفئة مبدعون وفنون من EventLive.",
-      "count": 237,
+      "count": 248,
       "ics_url": "./feeds/for-creatives.ics",
       "rss_url": "./feeds/for-creatives.xml",
       "json_url": "./feeds/for-creatives.json"

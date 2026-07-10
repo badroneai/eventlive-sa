@@ -89,6 +89,7 @@ fs.writeFileSync(catalogPath, `${JSON.stringify({
       source_label: 'Regression Authority Events',
       source_url: 'https://example.gov.sa/events/official-precise-session',
       evidence_url: 'https://example.gov.sa/events/official-precise-session',
+      ticket_url: 'https://tickets.example.gov.sa/tickets/official-precise-session',
       source_confidence: 'approved-source',
       live_schedule_ready: true,
       sessions: [{
@@ -281,7 +282,7 @@ fs.writeFileSync(candidatesPath, `${JSON.stringify({
     },
     {
       id: 'candidate-official-precise-session-generic-window',
-      title: 'Official Precise Session',
+      title: 'Official Precise Session | July Programme',
       organizer: 'Regression Authority',
       city: 'Riyadh',
       venue: 'Online',
@@ -294,6 +295,7 @@ fs.writeFileSync(candidatesPath, `${JSON.stringify({
       source_label: 'Regression Authority Events',
       source_owner: 'Regression Authority',
       evidence_url: 'https://example.gov.sa/events/official-precise-session',
+      ticket_url: 'https://tickets.example.gov.sa/tickets/official-precise-session',
       raw_snapshot_path: 'data/raw/source-snapshots/source-auto-publish-precise-regression.html',
       discovered_at: '2026-07-03T00:00:00+03:00',
       discovery_method: 'official-calendar',
@@ -323,6 +325,7 @@ fs.writeFileSync(candidatesPath, `${JSON.stringify({
       discovered_at: '2026-07-03T00:00:00+03:00',
       discovery_method: 'official-calendar',
       confidence: 'official',
+      verification_method: 'official-detail-explicit-session-times',
       review_status: 'ready-for-review',
       publication_gate: 'human-review',
       extracted_sessions_count: 3,
@@ -632,8 +635,9 @@ if (
   preciseCandidate?.matched_catalog_event_id !== 'event-official-precise-session'
   || preciseEvent?.starts_at !== '2026-12-04T10:00:00+03:00'
   || preciseEvent?.ends_at !== '2026-12-04T11:00:00+03:00'
+  || preciseEvent?.title !== 'Official Precise Session | July Programme'
 ) {
-  console.error('TEST_FAIL linked generic source row must not overwrite existing precise live schedule times');
+  console.error('TEST_FAIL an exact source-page refresh must update the title without overwriting precise live schedule times');
   console.error(JSON.stringify({ preciseCandidate, preciseEvent }, null, 2));
   process.exit(1);
 }
@@ -644,6 +648,7 @@ if (
   || ithraEvent?.sessions_count !== 3
   || ithraEvent?.live_schedule_ready !== true
   || ithraEvent?.venue !== 'Ithra - Ithra Tower'
+  || ithraEvent?.summary !== 'Official Ithra event with newly available sessions.'
 ) {
   console.error('TEST_FAIL an official periodic source refresh must activate sessions and refresh its verified venue');
   console.error(JSON.stringify({ ithraCandidate, ithraEvent }, null, 2));

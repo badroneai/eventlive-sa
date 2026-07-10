@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-hayy-makers@eventme.live
+DTSTAMP:20260710T123724Z
+DTSTART:20260714T150000Z
+DTEND:20260716T180000Z
+SUMMARY:Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi
+DESCRIPTION:An intermediate woodworking course focused on advancing technical skills through machine work\, carving\, joinery\, design planning\, and finishing techniques. Participants will gain the confidence to execute more complex projects with precision and craftsmanship. * Completion of the Foundations of Woodworking Course (Level 1) or equivalent prior woodworking experience is required. Learning Outcomes: Learn workshop safety protocols and proper use of personal protective equipment. Use Jigs and modify machine cuts.
+LOCATION:Hayy Jameel - Hayy Makers\, First Floor
+URL:https://eventme.live/events/event-hayy-makers.html
+END:VEVENT
+END:VCALENDAR

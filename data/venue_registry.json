@@ -179,6 +179,26 @@
       "verification_method": "openstreetmap-place-match-source-scoped",
       "verified_at": "2026-07-10T00:00:00+03:00",
       "evidence_url": "https://www.openstreetmap.org/way/457989129"
+    },
+    {
+      "id": "hayy-jameel-creative-hub",
+      "name": "Hayy Jameel",
+      "city": "Jeddah",
+      "aliases": [
+        "Hayy Jameel",
+        "Hayy Jameel - Hayy Makers, First Floor",
+        "Hayy: Creative Hub",
+        "حي جميل"
+      ],
+      "source_hosts": [
+        "hayyjameel.org"
+      ],
+      "latitude": 21.6312844,
+      "longitude": 39.1291346,
+      "precision": "campus",
+      "verification_method": "official-venue-google-map-source-scoped",
+      "verified_at": "2026-07-10T00:00:00+03:00",
+      "evidence_url": "https://www.google.com/maps/place/Hayy:+Creative+Hub/@21.631284,39.129135,14z/data=!4m5!3m4!1s0x0:0xd82a897695f56fb8!8m2!3d21.6312844!4d39.1291346?hl=en"
     }
   ]
 }

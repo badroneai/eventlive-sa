@@ -1,0 +1,138 @@
+{
+  "id": "event-hayy-cinema-3",
+  "title": "Hayy Cinema | In Short: Film Programme — Summer Edition",
+  "summary": "In Short: Film Programme — Summer 2026 Edition This summer, Hayy Cinema invites audiences to discover In Short , a new programme dedicated to the art of short filmmaking. Running until August 6, the programme brings together three distinct slots: Our Stories: Bold works by emerging Gulf filmmakers and distinctive regional voices Borderless Intersections: A cclaimed international short films Across Generations: F amily-friendly adventures for younger audiences and the young at heart.",
+  "canonical_url": "https://eventme.live/events/event-hayy-cinema-3.html",
+  "detail_url": "./events/event-hayy-cinema-3.html",
+  "calendar_url": "./events/event-hayy-cinema-3.ics",
+  "source_label": "Hayy Jameel What's On",
+  "source_url": "https://hayyjameel.org/whats-on/hayy-cinema-inshort2026/",
+  "evidence_url": "https://hayyjameel.org/whats-on/hayy-cinema-inshort2026/",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T12:35:13.973Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
+  "city": "جدة",
+  "venue": "Hayy Jameel",
+  "venue_address": "Hayy Jameel",
+  "starts_at": "2026-07-15T09:00:00+03:00",
+  "ends_at": "2026-08-06T18:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/hayy-cinema-in-short-film-programme-summer-edition-ca91ef0332.jpg",
+  "image_alt": "Hayy Cinema | In Short: Film Programme — Summer Edition",
+  "category": "ثقافة وفنون",
+  "category_url": "./categories/culture-arts.html",
+  "audiences": [
+    {
+      "slug": "entrepreneurs",
+      "label": "رواد أعمال"
+    },
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Hayy Cinema | In Short: Film Programme — Summer Edition",
+    "ثقافة وفنون",
+    "Film",
+    "برنامج ممتد",
+    "قادمة",
+    "جدة",
+    "Hayy Jameel",
+    "Hayy Jameel What's On",
+    "culture",
+    "arts",
+    "film",
+    "workshops",
+    "exhibitions",
+    "families",
+    "Jeddah",
+    "رواد أعمال",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-07-15T09:00:00+03:00",
+      "ends_at": "2026-08-06T18:00:00+03:00",
+      "room": "Hayy Jameel",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Hayy Cinema | In Short: Film Programme — Summer Edition",
+    "startDate": "2026-07-15T09:00:00+03:00",
+    "endDate": "2026-08-06T18:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Hayy Jameel",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Hayy Jameel",
+        "addressLocality": "جدة",
+        "addressRegion": "منطقة مكة المكرمة",
+        "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 21.6312844,
+        "longitude": 39.1291346
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Art Jameel / Hayy Jameel"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/hayy-cinema-in-short-film-programme-summer-edition-ca91ef0332.jpg"
+    ],
+    "description": "In Short: Film Programme — Summer 2026 Edition This summer, Hayy Cinema invites audiences to discover In Short , a new programme dedicated to the art of short filmmaking. Running until August 6, the programme brings together three distinct slots: Our Stories: Bold works by emerging Gulf filmmakers and distinctive regional voices Borderless Intersections: A cclaimed international short films Across Generations: F amily-friendly adventures for younger audiences and the young at heart.",
+    "url": "https://eventme.live/events/event-hayy-cinema-3.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-hayy-cinema-3.html",
+    "isAccessibleForFree": false,
+    "keywords": "Hayy Cinema | In Short: Film Programme — Summer Edition, ثقافة وفنون, Film, برنامج ممتد, قادمة, جدة, Hayy Jameel, Hayy Jameel What's On, culture, arts, film, workshops, exhibitions, families, Jeddah, رواد أعمال, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "رواد أعمال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://hayyjameel.org/whats-on/hayy-cinema-inshort2026/"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.hayycinema.org/",
+      "availability": "https://schema.org/InStock",
+      "category": "Registration"
+    }
+  }
+}

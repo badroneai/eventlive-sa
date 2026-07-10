@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T11:20:54.252Z",
+  "generated_at": "2026-07-10T12:37:24.491Z",
   "platform": "EventLive",
   "domain": "eventme.live",
   "intent": "eventlive-owner-status",
@@ -38,15 +38,15 @@
     "note": "هذه الصفحة تثبت أن التتبع مزروع في الصفحات العامة. أرقام الزوار الحقيقية تظهر بعد تفعيل لوحة مزود التحليلات للدومين."
   },
   "source_sync": {
-    "last_run_at": "2026-07-10T11:15:37.936Z",
-    "registered_sources": 84,
-    "attempted_sources": 44,
-    "productive_sources": 28,
+    "last_run_at": "2026-07-10T12:11:24.460Z",
+    "registered_sources": 85,
+    "attempted_sources": 45,
+    "productive_sources": 30,
     "collector_errors": 0,
-    "zero_yield": 14,
-    "candidates_seen": 395,
+    "zero_yield": 13,
+    "candidates_seen": 406,
     "published_new": 0,
-    "linked_existing": 374,
+    "linked_existing": 385,
     "blocked_remaining": 21,
     "secondary_promoted": 0,
     "secondary_still_blocked": 21,
@@ -59,10 +59,10 @@
     "collector_error_sources": []
   },
   "catalog": {
-    "public_events": 1107,
-    "live_ready": 239,
+    "public_events": 1118,
+    "live_ready": 241,
     "ended_events": 752,
-    "upcoming_or_ongoing": 355
+    "upcoming_or_ongoing": 366
   },
   "links": {
     "analytics_dashboard": "https://plausible.io/eventme.live",

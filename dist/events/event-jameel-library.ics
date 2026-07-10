@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Jameel Library | July Community Programmes | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-jameel-library@eventme.live
+DTSTAMP:20260710T123724Z
+DTSTART:20260701T060000Z
+DTEND:20260731T150000Z
+SUMMARY:Jameel Library | July Community Programmes
+DESCRIPTION:Join the Jameel Library for a wide range of programmes led by community members this July! You could also pitch your own programme here . Grotto’s Summer Reading Club To kick-off the Summer Reading Challenge\, the Jameel Library is hosting the cultural and literary initiative Grotto to lead curated book discussions dedicated to the interrogation of identity\, myth\, and historical endurance.
+LOCATION:Hayy Jameel
+URL:https://eventme.live/events/event-jameel-library.html
+END:VEVENT
+END:VCALENDAR

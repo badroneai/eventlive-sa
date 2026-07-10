@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Hayy Makers | Introduction to Pottery Course with Pharah Al-Ghalib | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-hayy-makers-2@eventme.live
+DTSTAMP:20260710T123724Z
+DTSTART:20260726T140000Z
+DTEND:20260728T180000Z
+SUMMARY:Hayy Makers | Introduction to Pottery Course with Pharah Al-Ghalib
+DESCRIPTION:This intensive three-day course with artist and designer Pharah Al-Ghalib offers a comprehensive introduction to wheel-thrown pottery\, guiding participants through the full spectrum of the ceramic process. Day 1 Clay & Wheel Fundamentals: Focuses on understanding clay—its qualities\, preparation\, and potential. Participants will learn wedging techniques before moving to the wheel to practice centering\, opening\, and pulling walls\, creating several forms to be set aside to dry to a leather-hard stage.
+LOCATION:Hayy Jameel - Hayy Makers\, First Floor
+URL:https://eventme.live/events/event-hayy-makers-2.html
+END:VEVENT
+END:VCALENDAR

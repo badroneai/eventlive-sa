@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-radars.v1",
-  "generated_at": "2026-07-10T11:01:23.671Z",
+  "generated_at": "2026-07-10T11:57:43.348Z",
   "strict": false,
   "policy": {
     "allowed_use": "scheduled evidence refresh, parser validation, official-source lead discovery",
@@ -8,8 +8,8 @@
   },
   "totals": {
     "radars": 3,
-    "ok": 2,
-    "failed": 1
+    "ok": 3,
+    "failed": 0
   },
   "radars": [
     {
@@ -18,9 +18,9 @@
       "source_id": "official-agenda-watchlist",
       "policy": "source-evidence; agenda readiness; no auto-publish",
       "command": "/opt/homebrew/Cellar/node/26.3.1/bin/node scripts/source-official-agenda-radar.mjs",
-      "started_at": "2026-07-10T11:01:23.672Z",
-      "ended_at": "2026-07-10T11:01:25.711Z",
-      "duration_ms": 2039,
+      "started_at": "2026-07-10T11:57:43.349Z",
+      "ended_at": "2026-07-10T11:57:45.454Z",
+      "duration_ms": 2105,
       "status": "ok",
       "exit_code": 0,
       "signal": null,
@@ -47,9 +47,9 @@
       "source_id": "strategic-platform-watchlist",
       "policy": "source-evidence; API-surface mapping; no auto-publish",
       "command": "/opt/homebrew/Cellar/node/26.3.1/bin/node scripts/source-strategic-platform-radar.mjs",
-      "started_at": "2026-07-10T11:01:25.711Z",
-      "ended_at": "2026-07-10T11:01:37.127Z",
-      "duration_ms": 11416,
+      "started_at": "2026-07-10T11:57:45.454Z",
+      "ended_at": "2026-07-10T11:57:56.349Z",
+      "duration_ms": 10895,
       "status": "ok",
       "exit_code": 0,
       "signal": null,
@@ -74,21 +74,25 @@
       "source_id": "my-gov-sa-events",
       "policy": "source-evidence; no auto-publish",
       "command": "/opt/homebrew/Cellar/node/26.3.1/bin/node scripts/mygov-wayback-radar.mjs",
-      "started_at": "2026-07-10T11:01:37.127Z",
-      "ended_at": "2026-07-10T11:02:37.217Z",
-      "duration_ms": 60090,
-      "status": "failed",
-      "exit_code": 1,
+      "started_at": "2026-07-10T11:57:56.349Z",
+      "ended_at": "2026-07-10T11:58:25.859Z",
+      "duration_ms": 29510,
+      "status": "ok",
+      "exit_code": 0,
       "signal": null,
       "timeout_ms": 90000,
       "reports": [
         "reports/mygov-wayback-radar.json",
         "reports/mygov-wayback-radar.md"
       ],
-      "stdout_tail": [],
-      "stderr_tail": [
-        "[DOMException [AbortError]: This operation was aborted]"
+      "stdout_tail": [
+        "# GOV.SA Wayback Radar",
+        "- Captures attempted: 10",
+        "- Events extracted: 10",
+        "- Date-complete: 10",
+        "- Report: reports/mygov-wayback-radar.md"
       ],
+      "stderr_tail": [],
       "error": ""
     }
   ]

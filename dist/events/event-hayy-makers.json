@@ -1,0 +1,153 @@
+{
+  "id": "event-hayy-makers",
+  "title": "Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi",
+  "summary": "An intermediate woodworking course focused on advancing technical skills through machine work, carving, joinery, design planning, and finishing techniques. Participants will gain the confidence to execute more complex projects with precision and craftsmanship. * Completion of the Foundations of Woodworking Course (Level 1) or equivalent prior woodworking experience is required. Learning Outcomes: Learn workshop safety protocols and proper use of personal protective equipment. Use Jigs and modify machine cuts.",
+  "canonical_url": "https://eventme.live/events/event-hayy-makers.html",
+  "detail_url": "./events/event-hayy-makers.html",
+  "calendar_url": "./events/event-hayy-makers.ics",
+  "source_label": "Hayy Jameel What's On",
+  "source_url": "https://hayyjameel.org/whats-on/__trashed-4/",
+  "evidence_url": "https://hayyjameel.org/whats-on/__trashed-4/",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T12:35:13.973Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
+  "city": "جدة",
+  "venue": "Hayy Jameel - Hayy Makers, First Floor",
+  "venue_address": "Hayy Jameel - Hayy Makers, First Floor",
+  "starts_at": "2026-07-14T18:00:00+03:00",
+  "ends_at": "2026-07-16T21:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 3,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/hayy-makers-woodworking-course-level-2-with-ahmad-sofi-395adc1ba2.jpg",
+  "image_alt": "Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi",
+  "category": "جامعات ومجتمع",
+  "category_url": "./categories/education-community.html",
+  "audiences": [
+    {
+      "slug": "skilled-trades",
+      "label": "مهاريون وحرفيون"
+    },
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi",
+    "جامعات ومجتمع",
+    "Workshop",
+    "فعالية",
+    "قادمة",
+    "جدة",
+    "Hayy Jameel - Hayy Makers, First Floor",
+    "Hayy Jameel What's On",
+    "culture",
+    "arts",
+    "film",
+    "workshops",
+    "exhibitions",
+    "families",
+    "Hayy Jameel",
+    "Jeddah",
+    "مهاريون وحرفيون",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi",
+      "starts_at": "2026-07-14T18:00:00+03:00",
+      "ends_at": "2026-07-14T21:00:00+03:00",
+      "room": "Hayy Jameel - Hayy Makers, First Floor",
+      "anchor": "#session-hayy-makers-woodworking-course-level-2-with-ahmad-sofi-2026-07-14-1800"
+    },
+    {
+      "title": "Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi",
+      "starts_at": "2026-07-15T18:00:00+03:00",
+      "ends_at": "2026-07-15T21:00:00+03:00",
+      "room": "Hayy Jameel - Hayy Makers, First Floor",
+      "anchor": "#session-hayy-makers-woodworking-course-level-2-with-ahmad-sofi-2026-07-15-1800"
+    },
+    {
+      "title": "Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi",
+      "starts_at": "2026-07-16T18:00:00+03:00",
+      "ends_at": "2026-07-16T21:00:00+03:00",
+      "room": "Hayy Jameel - Hayy Makers, First Floor",
+      "anchor": "#session-hayy-makers-woodworking-course-level-2-with-ahmad-sofi-2026-07-16-1800"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi",
+    "startDate": "2026-07-14T18:00:00+03:00",
+    "endDate": "2026-07-16T21:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Hayy Jameel - Hayy Makers, First Floor",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Hayy Jameel - Hayy Makers, First Floor",
+        "addressLocality": "جدة",
+        "addressRegion": "منطقة مكة المكرمة",
+        "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 21.6312844,
+        "longitude": 39.1291346
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Art Jameel / Hayy Jameel"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/hayy-makers-woodworking-course-level-2-with-ahmad-sofi-395adc1ba2.jpg"
+    ],
+    "description": "An intermediate woodworking course focused on advancing technical skills through machine work, carving, joinery, design planning, and finishing techniques. Participants will gain the confidence to execute more complex projects with precision and craftsmanship. * Completion of the Foundations of Woodworking Course (Level 1) or equivalent prior woodworking experience is required. Learning Outcomes: Learn workshop safety protocols and proper use of personal protective equipment. Use Jigs and modify machine cuts.",
+    "url": "https://eventme.live/events/event-hayy-makers.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-hayy-makers.html",
+    "isAccessibleForFree": false,
+    "keywords": "Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi, جامعات ومجتمع, Workshop, فعالية, قادمة, جدة, Hayy Jameel - Hayy Makers, First Floor, Hayy Jameel What's On, culture, arts, film, workshops, exhibitions, families, Hayy Jameel, Jeddah, مهاريون وحرفيون, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "مهاريون وحرفيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://hayyjameel.org/whats-on/__trashed-4/"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://applytoday.typeform.com/to/E3d7cEHk",
+      "availability": "https://schema.org/InStock",
+      "category": "Registration"
+    }
+  }
+}

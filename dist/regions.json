@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T11:20:54.252Z",
+  "generated_at": "2026-07-10T12:37:24.491Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-saudi-region-coverage",
@@ -11,8 +11,8 @@
     "zero_active_regions": 3,
     "active_target_cities": 14,
     "target_cities": 38,
-    "events": 1107,
-    "active_events": 355,
+    "events": 1118,
+    "active_events": 366,
     "ended_events": 752
   },
   "national_coverage": {
@@ -25,7 +25,7 @@
     "active_target_city_ratio": 0.3684,
     "live_ready_regions": 4,
     "riyadh_active_events": 126,
-    "riyadh_active_share": 0.3549,
+    "riyadh_active_share": 0.3443,
     "thresholds": {
       "active_regions_min": 10,
       "active_target_city_ratio_min": 0.5,
@@ -716,9 +716,9 @@
       ],
       "total": 282,
       "active": 140,
-      "upcoming": 135,
+      "upcoming": 134,
       "ongoing": 4,
-      "live": 1,
+      "live": 2,
       "ended": 142,
       "live_ready": 218,
       "source_count": 5,
@@ -1366,17 +1366,17 @@
           "label": "رابغ"
         }
       ],
-      "total": 106,
-      "active": 21,
-      "upcoming": 14,
-      "ongoing": 6,
+      "total": 117,
+      "active": 32,
+      "upcoming": 17,
+      "ongoing": 14,
       "live": 1,
       "ended": 85,
-      "live_ready": 5,
-      "source_count": 11,
-      "source_images": 33,
+      "live_ready": 7,
+      "source_count": 12,
+      "source_images": 44,
       "generated_covers": 73,
-      "registered_source_count": 21,
+      "registered_source_count": 22,
       "registered_sources": [
         {
           "id": "webook-explore",
@@ -1510,6 +1510,13 @@
           "ring": "official-feed-preferred",
           "status": "official",
           "url": "https://gea.gov.sa/events/"
+        },
+        {
+          "id": "hayy-jameel-events",
+          "name": "Hayy Jameel What's On",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://hayyjameel.org/whats-on/"
         },
         {
           "id": "makkah-chamber-events",

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Hayy Arts | Red Wind\, Coral Worlds | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-hayy-arts-red-wind-coral-worlds@eventme.live
+DTSTAMP:20260710T123724Z
+DTSTART:20260520T060000Z
+DTEND:20261026T150000Z
+SUMMARY:Hayy Arts | Red Wind\, Coral Worlds
+DESCRIPTION:Opening May 20\, 2026\, ‘Red Wind\, Coral Worlds’ is an upcoming exhibition curated by recipients of the Art Jameel Curatorial Open Call\, Huda Tayob and Miriam Hillawi Abraham. Red Wind\, Coral Worlds sites the Red Sea within an expanded and interconnected oceanic terrain. The exhibition traces the entangled worlds that converge across its waters\, attending to the material and affective remnants left in the wake of centuries of movement and migration shaped by trade\, pilgrimage\, and displacement.
+LOCATION:Hayy Jameel
+URL:https://eventme.live/events/event-hayy-arts-red-wind-coral-worlds.html
+END:VEVENT
+END:VCALENDAR

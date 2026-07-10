@@ -21,6 +21,7 @@ for (const id of [
   'umm-al-qura-events',
   'madinah-chamber-events',
   'madinah-architecture-festival',
+  'hayy-jameel-events',
   'invest-saudi-events',
   'saudi-space-agency-events',
   'sfda-events'

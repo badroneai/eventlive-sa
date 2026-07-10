@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Hayy Explorers | As Told by The Land: Traces & Memory | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-hayy-explorers@eventme.live
+DTSTAMP:20260710T123724Z
+DTSTART:20260702T060000Z
+DTEND:20261001T150000Z
+SUMMARY:Hayy Explorers | As Told by The Land: Traces & Memory
+DESCRIPTION:As Told by the Land is a three-month long thematic programme at Hayy Explorers for children aged 6–15 years old. Through educational programmes and artist interventions\, it responds to the current Hayy Arts exhibitions by exploring themes of storytelling\, movement\, and shifting worlds. Across the three months\, children are invited to follow paths\, collect traces\, and construct new worlds from their immediate surroundings and everyday life.
+LOCATION:Hayy Jameel
+URL:https://eventme.live/events/event-hayy-explorers.html
+END:VEVENT
+END:VCALENDAR

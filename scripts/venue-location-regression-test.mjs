@@ -26,6 +26,10 @@ assert.equal(resolveVenueLocation({ city: 'Dhahran', venue: 'Ithra - Library', s
 const uqu = resolveVenueLocation({ city: 'Makkah', venue: 'Umm Al-Qura University', source_url: 'https://uqu.edu.sa/App/Events/41008' }, registry.venues);
 assert.equal(uqu?.registry_id, 'umm-al-qura-university-abdiyah', 'UQU events must resolve to the verified Abidiyah campus');
 
+const hayyJameel = resolveVenueLocation({ city: 'Jeddah', venue: 'Hayy Jameel - Hayy Makers, First Floor', source_url: 'https://hayyjameel.org/whats-on/pottery' }, registry.venues);
+assert.equal(hayyJameel?.registry_id, 'hayy-jameel-creative-hub', 'Hayy Jameel programme rooms must resolve to the official venue coordinates');
+assert.equal(resolveVenueLocation({ city: 'Jeddah', venue: 'Hayy Jameel', source_url: 'https://example.org/event' }, registry.venues), null, 'Hayy Jameel coordinates must remain scoped to the first-party source');
+
 const publicEvents = JSON.parse(fs.readFileSync('dist/events.json', 'utf8')).events || [];
 const active = publicEvents.filter((event) => event.status !== 'ended');
 const geocodedActive = active.filter((event) => Number.isFinite(Number(event.latitude)) && Number.isFinite(Number(event.longitude)));

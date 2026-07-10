@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T11:25:23.425Z",
+  "generated_at": "2026-07-10T12:41:58.014Z",
   "intent": "eventlive-site-visual-sweep",
   "base_url": "http://127.0.0.1:4187",
   "ok": true,
@@ -22,7 +22,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية الآن",
         "h1": "ماذا يحدث الآن في السعودية؟",
-        "bodyTextLength": 3224,
+        "bodyTextLength": 3229,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -61,7 +61,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية الآن",
         "h1": "ماذا يحدث الآن في السعودية؟",
-        "bodyTextLength": 3185,
+        "bodyTextLength": 3190,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -84,7 +84,7 @@
           {
             "tag": "article",
             "className": "card",
-            "text": "عائلات وأطفال ٩يوليو جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 9 ساعة التف",
+            "text": "عائلات وأطفال ٩يوليو جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 8 ساعة التف",
             "width": 262
           },
           {
@@ -108,7 +108,7 @@
           {
             "tag": "div",
             "className": "card-body",
-            "text": "جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 9 ساعة التفاصيل التقويم مصدر حكو",
+            "text": "جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 8 ساعة التفاصيل التقويم مصدر حكو",
             "width": 260
           },
           {
@@ -149,7 +149,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية مباشرة",
         "h1": "كل الفعاليات",
-        "bodyTextLength": 19046,
+        "bodyTextLength": 19070,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -159,7 +159,7 @@
         "jsonLdBlocks": 4,
         "visibleImages": 24,
         "brokenImages": [],
-        "pendingImages": 3,
+        "pendingImages": 0,
         "headings": [
           "كل الفعاليات",
           "تأكيد قاعة ورشة رحلة المستفيد",
@@ -238,7 +238,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية مباشرة",
         "h1": "كل الفعاليات",
-        "bodyTextLength": 18993,
+        "bodyTextLength": 19017,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -417,7 +417,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 7455
+          "scrollHeight": 7480
         }
       }
     },
@@ -432,7 +432,7 @@
       "metrics": {
         "title": "EventLive | الآن",
         "h1": "الآن",
-        "bodyTextLength": 2113,
+        "bodyTextLength": 2122,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -475,7 +475,7 @@
       "metrics": {
         "title": "EventLive | الآن",
         "h1": "الآن",
-        "bodyTextLength": 2095,
+        "bodyTextLength": 2080,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -528,7 +528,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 3287
+          "scrollHeight": 3259
         }
       }
     },
@@ -543,7 +543,7 @@
       "metrics": {
         "title": "فعاليات اليوم | EventLive",
         "h1": "فعاليات اليوم",
-        "bodyTextLength": 10805,
+        "bodyTextLength": 10829,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -586,7 +586,7 @@
       "metrics": {
         "title": "فعاليات اليوم | EventLive",
         "h1": "فعاليات اليوم",
-        "bodyTextLength": 10730,
+        "bodyTextLength": 10754,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -803,8 +803,8 @@
       "screenshot_mode": "full-page",
       "metrics": {
         "title": "EventLive | شاشة الحضور",
-        "h1": "Beaded plant Suncatcher",
-        "bodyTextLength": 733,
+        "h1": "Puppet World",
+        "bodyTextLength": 677,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -816,7 +816,7 @@
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "Beaded plant Suncatcher",
+          "Puppet World",
           "القادم على EventLive"
         ],
         "horizontalOverflow": false,
@@ -840,8 +840,8 @@
       "screenshot_mode": "full-page",
       "metrics": {
         "title": "EventLive | شاشة الحضور",
-        "h1": "Beaded plant Suncatcher",
-        "bodyTextLength": 584,
+        "h1": "Puppet World",
+        "bodyTextLength": 533,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -853,7 +853,7 @@
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "Beaded plant Suncatcher",
+          "Puppet World",
           "القادم على EventLive"
         ],
         "horizontalOverflow": false,
@@ -878,7 +878,7 @@
       "metrics": {
         "title": "تفعيل الجداول الحية | EventLive",
         "h1": "تفعيل الجداول الحية",
-        "bodyTextLength": 13997,
+        "bodyTextLength": 14019,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -896,8 +896,8 @@
           "Riyadh City Events",
           "Tuwaiq Academy Bootcamps and Programs",
           "Ministry of Culture Commission Calendars",
-          "Dhahran Expo Calendar",
-          "Visit Saudi Calendar"
+          "Hayy Jameel What's On",
+          "Dhahran Expo Calendar"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -906,7 +906,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 8876
+          "scrollHeight": 9497
         }
       }
     },
@@ -921,7 +921,7 @@
       "metrics": {
         "title": "تفعيل الجداول الحية | EventLive",
         "h1": "تفعيل الجداول الحية",
-        "bodyTextLength": 13922,
+        "bodyTextLength": 13944,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -939,8 +939,8 @@
           "Riyadh City Events",
           "Tuwaiq Academy Bootcamps and Programs",
           "Ministry of Culture Commission Calendars",
-          "Dhahran Expo Calendar",
-          "Visit Saudi Calendar"
+          "Hayy Jameel What's On",
+          "Dhahran Expo Calendar"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -967,19 +967,19 @@
             "tag": "th",
             "className": "",
             "text": "المصدر",
-            "width": 174
+            "width": 169
           },
           {
             "tag": "th",
             "className": "",
             "text": "مسار الاستخراج",
-            "width": 124
+            "width": 121
           },
           {
             "tag": "th",
             "className": "",
             "text": "النقص",
-            "width": 134
+            "width": 128
           },
           {
             "tag": "tbody",
@@ -998,7 +998,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 16405
+          "scrollHeight": 16251
         }
       }
     },
@@ -1524,7 +1524,7 @@
       "metrics": {
         "title": "فعاليات مدن السعودية | EventLive",
         "h1": "فعاليات مدن السعودية",
-        "bodyTextLength": 5181,
+        "bodyTextLength": 5204,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1539,9 +1539,9 @@
           "فعاليات مدن السعودية",
           "الظهران",
           "الرياض",
+          "جدة",
           "عسير",
           "السعودية",
-          "جدة",
           "عن بعد",
           "العلا"
         ],
@@ -1567,7 +1567,7 @@
       "metrics": {
         "title": "فعاليات مدن السعودية | EventLive",
         "h1": "فعاليات مدن السعودية",
-        "bodyTextLength": 5106,
+        "bodyTextLength": 5129,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1582,9 +1582,9 @@
           "فعاليات مدن السعودية",
           "الظهران",
           "الرياض",
+          "جدة",
           "عسير",
           "السعودية",
-          "جدة",
           "عن بعد",
           "العلا"
         ],
@@ -1610,7 +1610,7 @@
       "metrics": {
         "title": "تصنيفات فعاليات السعودية | EventLive",
         "h1": "تصنيفات فعاليات السعودية",
-        "bodyTextLength": 3174,
+        "bodyTextLength": 3175,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1624,8 +1624,8 @@
         "headings": [
           "تصنيفات فعاليات السعودية",
           "ترفيه وعائلات",
-          "جامعات ومجتمع",
           "ثقافة وفنون",
+          "جامعات ومجتمع",
           "معارض وتجارية",
           "رياضة وفعاليات جماهيرية",
           "ورش تنظيمية وصحية",
@@ -1638,7 +1638,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 2874
+          "scrollHeight": 2818
         }
       }
     },
@@ -1653,7 +1653,7 @@
       "metrics": {
         "title": "تصنيفات فعاليات السعودية | EventLive",
         "h1": "تصنيفات فعاليات السعودية",
-        "bodyTextLength": 3099,
+        "bodyTextLength": 3100,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1667,8 +1667,8 @@
         "headings": [
           "تصنيفات فعاليات السعودية",
           "ترفيه وعائلات",
-          "جامعات ومجتمع",
           "ثقافة وفنون",
+          "جامعات ومجتمع",
           "معارض وتجارية",
           "رياضة وفعاليات جماهيرية",
           "ورش تنظيمية وصحية",
@@ -1999,7 +1999,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 1742
+          "scrollHeight": 1698
         }
       }
     },
@@ -3004,7 +3004,7 @@
       "metrics": {
         "title": "مصادر الفعاليات | EventLive",
         "h1": "مصادر الفعاليات",
-        "bodyTextLength": 10775,
+        "bodyTextLength": 10797,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3042,7 +3042,7 @@
       "metrics": {
         "title": "مصادر الفعاليات | EventLive",
         "h1": "مصادر الفعاليات",
-        "bodyTextLength": 10700,
+        "bodyTextLength": 10722,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3240,7 +3240,7 @@
       "metrics": {
         "title": "فجوات تغطية المصادر | EventLive",
         "h1": "فجوات تغطية المصادر",
-        "bodyTextLength": 11703,
+        "bodyTextLength": 11706,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3281,7 +3281,7 @@
       "metrics": {
         "title": "فجوات تغطية المصادر | EventLive",
         "h1": "فجوات تغطية المصادر",
-        "bodyTextLength": 11628,
+        "bodyTextLength": 11631,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3988,7 +3988,7 @@
       "metrics": {
         "title": "فعاليات الرياض | EventLive",
         "h1": "فعاليات الرياض",
-        "bodyTextLength": 12644,
+        "bodyTextLength": 12642,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4031,7 +4031,7 @@
       "metrics": {
         "title": "فعاليات الرياض | EventLive",
         "h1": "فعاليات الرياض",
-        "bodyTextLength": 12569,
+        "bodyTextLength": 12567,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,

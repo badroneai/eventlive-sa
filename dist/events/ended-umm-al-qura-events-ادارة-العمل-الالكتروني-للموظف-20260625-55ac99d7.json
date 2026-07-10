@@ -10,7 +10,7 @@
   "evidence_url": "https://uqu.edu.sa/App/Events/41002",
   "trust_tier": "official",
   "trust_label": "مصدر حكومي أو رسمي",
-  "verified_at": "2026-07-10T11:06:14.632Z",
+  "verified_at": "2026-07-10T12:02:27.912Z",
   "verification_method": "official-event-detail-explicit-start-duration",
   "freshness_hours": 0,
   "city": "مكة",
@@ -121,7 +121,7 @@
     ],
     "offers": {
       "@type": "Offer",
-      "url": "https://uqu.edu.sa/App/Enrollments/register?event=eyJpdiI6IjJzcU5mNkpiZTVGZmoyNDFROUgvVXc9PSIsInZhbHVlIjoiNHladUFGcG1HQVgyblNuRk8xTzNvdz09IiwibWFjIjoiZjdiMTRjMmNlOTYyMjBmM2ZhZWRkNTA0NDk1N2Y0YzA0ZTZlMmFiNjBkOTQ3OGU1ZGM2ZWE0ZmIyZjRkNmE3ZSIsInRhZyI6IiJ9",
+      "url": "https://uqu.edu.sa/App/Enrollments/register?event=eyJpdiI6ImNjdnJqSFhIUDF4N0lna0xHck0vdVE9PSIsInZhbHVlIjoiM2FQVlhHTGFkUmRTbTZuR2tpM1Q5UT09IiwibWFjIjoiZTU3YzU3M2FmNTBiZGU5MWZhYjhlYmFhODRhZmFhMTU3MWQwMzViYTFiZDA3ZDMwMTFiZmNmYTY5YTg0MzY1ZiIsInRhZyI6IiJ9",
       "availability": "https://schema.org/InStock",
       "category": "Registration"
     }

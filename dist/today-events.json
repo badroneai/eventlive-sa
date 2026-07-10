@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T11:20:54.252Z",
+  "generated_at": "2026-07-10T12:37:24.491Z",
   "platform": "EventLive",
   "scope": "today-events",
   "window_hours": 72,
@@ -102,7 +102,7 @@
       "city": "الظهران",
       "starts_at": "2026-07-10T14:30:00+03:00",
       "ends_at": "2026-07-11T22:00:00+03:00",
-      "status": "upcoming",
+      "status": "live",
       "live_schedule_ready": true
     },
     {

@@ -1,0 +1,129 @@
+{
+  "id": "event-hayy-cinema-2",
+  "title": "Hayy Cinema | July 2026",
+  "summary": "July 2026 At Hayy Cinema Join Hayy Cinema this July for a continuation of stories exploring identity, memory, and human connection, with extended screenings of this season’s featured films. The lineup continues with A Matter of Life and Death (2025) , a Saudi rom-com where fate, fear, and unlikely love collide; The Stories (2025) , a cross-cultural tale of connection through letters and shared humanity; and You Will Die at Twenty (2019) , in which a young man grows up under a prophecy that he will die at the...",
+  "canonical_url": "https://eventme.live/events/event-hayy-cinema-2.html",
+  "detail_url": "./events/event-hayy-cinema-2.html",
+  "calendar_url": "./events/event-hayy-cinema-2.ics",
+  "source_label": "Hayy Jameel What's On",
+  "source_url": "https://hayyjameel.org/whats-on/hayy-cinema-july-2026/",
+  "evidence_url": "https://hayyjameel.org/whats-on/hayy-cinema-july-2026/",
+  "trust_tier": "official",
+  "trust_label": "مصدر حكومي أو رسمي",
+  "verified_at": "2026-07-10T12:35:13.973Z",
+  "verification_method": "registered-official",
+  "freshness_hours": 0,
+  "city": "جدة",
+  "venue": "Hayy Jameel",
+  "venue_address": "Hayy Jameel",
+  "starts_at": "2026-07-01T09:00:00+03:00",
+  "ends_at": "2026-07-15T18:00:00+03:00",
+  "status": "ongoing",
+  "status_label": "برنامج جارٍ",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/hayy-cinema-july-2026-1ce63d8c81.jpg",
+  "image_alt": "Hayy Cinema | July 2026",
+  "category": "ثقافة وفنون",
+  "category_url": "./categories/culture-arts.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Hayy Cinema | July 2026",
+    "ثقافة وفنون",
+    "Film",
+    "برنامج ممتد",
+    "برنامج جارٍ",
+    "جدة",
+    "Hayy Jameel",
+    "Hayy Jameel What's On",
+    "culture",
+    "arts",
+    "film",
+    "workshops",
+    "exhibitions",
+    "families",
+    "Jeddah",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-07-01T09:00:00+03:00",
+      "ends_at": "2026-07-15T18:00:00+03:00",
+      "room": "Hayy Jameel",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Hayy Cinema | July 2026",
+    "startDate": "2026-07-01T09:00:00+03:00",
+    "endDate": "2026-07-15T18:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Hayy Jameel",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Hayy Jameel",
+        "addressLocality": "جدة",
+        "addressRegion": "منطقة مكة المكرمة",
+        "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 21.6312844,
+        "longitude": 39.1291346
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Art Jameel / Hayy Jameel"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/hayy-cinema-july-2026-1ce63d8c81.jpg"
+    ],
+    "description": "July 2026 At Hayy Cinema Join Hayy Cinema this July for a continuation of stories exploring identity, memory, and human connection, with extended screenings of this season’s featured films. The lineup continues with A Matter of Life and Death (2025) , a Saudi rom-com where fate, fear, and unlikely love collide; The Stories (2025) , a cross-cultural tale of connection through letters and shared humanity; and You Will Die at Twenty (2019) , in which a young man grows up under a prophecy that he will die at the...",
+    "url": "https://eventme.live/events/event-hayy-cinema-2.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-hayy-cinema-2.html",
+    "isAccessibleForFree": false,
+    "keywords": "Hayy Cinema | July 2026, ثقافة وفنون, Film, برنامج ممتد, برنامج جارٍ, جدة, Hayy Jameel, Hayy Jameel What's On, culture, arts, film, workshops, exhibitions, families, Jeddah, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://hayyjameel.org/whats-on/hayy-cinema-july-2026/"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://hayyjameel.org/whats-on/hayy-cinema-july-2026/",
+      "availability": "https://schema.org/InStock",
+      "category": "Event access"
+    }
+  }
+}

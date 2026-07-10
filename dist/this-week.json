@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-10T11:20:54.252Z",
+  "generated_at": "2026-07-10T12:37:24.491Z",
   "platform": "EventLive",
   "scope": "this-week",
   "window_hours": 168,
-  "count": 87,
+  "count": 89,
   "events": [
     {
       "id": "event-registration-for-international-research-competition-on-non-terrestrial-n",
@@ -202,7 +202,7 @@
       "city": "الظهران",
       "starts_at": "2026-07-10T14:30:00+03:00",
       "ends_at": "2026-07-11T22:00:00+03:00",
-      "status": "upcoming",
+      "status": "live",
       "live_schedule_ready": true
     },
     {
@@ -796,6 +796,16 @@
       "live_schedule_ready": true
     },
     {
+      "id": "event-hayy-makers",
+      "title": "Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi",
+      "url": "./events/event-hayy-makers.html",
+      "city": "جدة",
+      "starts_at": "2026-07-14T18:00:00+03:00",
+      "ends_at": "2026-07-16T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
       "id": "event-semi-finals-join-the-celebration-at-the-fifa-fan-zone",
       "title": "Semi-Finals: Join the Celebration at the FIFA Fan Zone",
       "url": "./events/event-semi-finals-join-the-celebration-at-the-fifa-fan-zone.html",
@@ -804,6 +814,16 @@
       "ends_at": "2026-07-14T23:59:00+03:00",
       "status": "upcoming",
       "live_schedule_ready": true
+    },
+    {
+      "id": "event-hayy-cinema-3",
+      "title": "Hayy Cinema | In Short: Film Programme — Summer Edition",
+      "url": "./events/event-hayy-cinema-3.html",
+      "city": "جدة",
+      "starts_at": "2026-07-15T09:00:00+03:00",
+      "ends_at": "2026-08-06T18:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
     },
     {
       "id": "event-متطلبات-الاستخدام-الآمن-للأجهزة-والمستلزمات-الطبية-لمراكز-الأسنان",

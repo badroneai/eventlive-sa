@@ -70,6 +70,12 @@ function imageFields(candidate = {}) {
   };
 }
 
+function hasUsableCatalogImage(event = {}) {
+  const value = String(event.image_url || event.original_image_url || '').trim();
+  if (/^\/?assets\/event-(?:images|covers)\//i.test(value)) return true;
+  return isLikelyImageAssetUrl(value);
+}
+
 function main() {
   const catalog = readJson(catalogPath);
   const candidatesEnvelope = readJson(candidatesPath);
@@ -88,7 +94,7 @@ function main() {
 
   const synced = [];
   for (const event of events) {
-    if (event.image_url || event.original_image_url) continue;
+    if (hasUsableCatalogImage(event)) continue;
     const match = matchKeys(event).map((key) => byKey.get(key)).find(Boolean);
     if (!match) continue;
     Object.assign(event, match.fields, {

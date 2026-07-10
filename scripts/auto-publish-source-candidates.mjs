@@ -90,6 +90,20 @@ function normalizeSourceUrl(value = '') {
   }
 }
 
+function exactSourcePageKey(value = '') {
+  const raw = String(value || '').trim();
+  if (!raw) return '';
+  try {
+    const url = new URL(raw);
+    url.hash = '';
+    url.searchParams.sort();
+    url.pathname = url.pathname.replace(/\/+$/g, '') || '/';
+    return url.toString().toLowerCase();
+  } catch {
+    return raw.split('#')[0].replace(/\/+$/g, '').toLowerCase();
+  }
+}
+
 function isMultiEventDocumentUrl(value = '') {
   try {
     return /\.pdf$/i.test(new URL(String(value || '').trim()).pathname);
@@ -704,23 +718,26 @@ function main() {
       if (trustedAlreadyPublished(candidate)) {
         const alreadyLinked = candidate.review_status === 'approved-for-catalog'
           && candidate.matched_catalog_event_id === existingMatch.id;
-        const preservePrimaryOfficialRecord = shouldPreservePrimaryOfficialRecord(existingMatch, candidate);
         const sameSourcePage = normalizeSourceUrl(existingMatch.source_url || existingMatch.evidence_url)
           === normalizeSourceUrl(candidate.source_url || candidate.evidence_url);
+        const exactSourcePage = exactSourcePageKey(existingMatch.source_url || existingMatch.evidence_url)
+          === exactSourcePageKey(candidate.source_url || candidate.evidence_url);
+        const sameSourceDetailRefresh = exactSourcePage && /^official-detail-/i.test(candidate.verification_method || '');
+        const preservePrimaryOfficialRecord = shouldPreservePrimaryOfficialRecord(existingMatch, candidate) && !sameSourceDetailRefresh;
         mergeMissingCandidateEnrichment(existingMatch, candidate);
         if (sameSourcePage && candidate.venue) {
           existingMatch.venue = candidate.venue;
           existingMatch.venue_address = candidate.venue;
         }
-        if ((bilingualAliasMatch || actionIdentityMatch || actionSemanticMatch) && !preservePrimaryOfficialRecord) {
+        if ((bilingualAliasMatch || actionIdentityMatch || actionSemanticMatch) && !exactSourcePage && !preservePrimaryOfficialRecord) {
           mergeActionFields(existingMatch, candidate);
         } else if (!windowMatch && !preservePrimaryOfficialRecord) {
           const querySpecificIdentity = sourceIdentityMatch && candidateSourceIdentityKey(candidate).includes('?');
-          if (!sourceDateMatch && (!sourceIdentityMatch || querySpecificIdentity)) {
+          if (exactSourcePage || (!sourceDateMatch && (!sourceIdentityMatch || querySpecificIdentity))) {
             existingMatch.title = decodeHtml(candidate.title || existingMatch.title);
           }
-          if (sameSourcePage && !hasPreciseLiveSchedule(existingMatch)) {
-            existingMatch.summary = candidate.rich_summary || candidate.summary || existingMatch.summary;
+          if (sameSourcePage && (sameSourceDetailRefresh || !hasPreciseLiveSchedule(existingMatch))) {
+            existingMatch.summary = candidate.summary || candidate.rich_summary || existingMatch.summary;
             existingMatch.category = candidate.category || existingMatch.category;
           }
           if (!hasPreciseLiveSchedule(existingMatch)) {

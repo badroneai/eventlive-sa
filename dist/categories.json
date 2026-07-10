@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-10T11:20:54.252Z",
+  "generated_at": "2026-07-10T12:37:24.491Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "categories_count": 12,
   "totals": {
-    "events": 1107,
-    "upcoming_or_active": 355,
+    "events": 1118,
+    "upcoming_or_active": 366,
     "ended": 752,
-    "live_ready": 239
+    "live_ready": 241
   },
   "categories": [
     {
@@ -61,60 +61,15 @@
       "audiences_count": 8
     },
     {
-      "slug": "education-community",
-      "label": "جامعات ومجتمع",
-      "url": "./categories/education-community.html",
-      "total_events": 111,
-      "upcoming_or_active": 44,
-      "ended": 67,
-      "live_ready": 89,
-      "sources": [
-        "Ithra Events",
-        "Misk Hub Programs",
-        "Qassim University Events",
-        "Riyadh City Events",
-        "Saudi Universities and Technical Colleges",
-        "Tuwaiq Academy Bootcamps and Programs",
-        "Visit Saudi Summer Calendar PDF"
-      ],
-      "cities": [
-        "الرياض",
-        "الظهران",
-        "بريدة",
-        "ثول",
-        "جدة"
-      ],
-      "audiences": [
-        "باحثون عن عمل",
-        "باحثون وأكاديميون",
-        "تقنيون",
-        "رواد أعمال",
-        "رياضة ولياقة",
-        "طلاب وخريجون",
-        "عائلات وأطفال",
-        "مبدعون وفنون",
-        "مهاريون وحرفيون",
-        "موظفون ومهنيون"
-      ],
-      "next_event": {
-        "title": "Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH",
-        "starts_at": "2026-07-07T09:00:00+03:00",
-        "status": "ongoing",
-        "url": "./events/event-registration-now-open-for-children-at-the-childhood-studies-center-for-t.html"
-      },
-      "sources_count": 7,
-      "cities_count": 5,
-      "audiences_count": 10
-    },
-    {
       "slug": "culture-arts",
       "label": "ثقافة وفنون",
       "url": "./categories/culture-arts.html",
-      "total_events": 56,
-      "upcoming_or_active": 44,
+      "total_events": 60,
+      "upcoming_or_active": 48,
       "ended": 12,
       "live_ready": 31,
       "sources": [
+        "Hayy Jameel What's On",
         "Ithra Events",
         "Ministry of Culture Commission Calendars",
         "Riyadh City Events",
@@ -145,21 +100,69 @@
         "status": "ongoing",
         "url": "./events/event-skill-development-initiative.html"
       },
-      "sources_count": 5,
+      "sources_count": 6,
       "cities_count": 6,
       "audiences_count": 8
+    },
+    {
+      "slug": "education-community",
+      "label": "جامعات ومجتمع",
+      "url": "./categories/education-community.html",
+      "total_events": 114,
+      "upcoming_or_active": 47,
+      "ended": 67,
+      "live_ready": 91,
+      "sources": [
+        "Hayy Jameel What's On",
+        "Ithra Events",
+        "Misk Hub Programs",
+        "Qassim University Events",
+        "Riyadh City Events",
+        "Saudi Universities and Technical Colleges",
+        "Tuwaiq Academy Bootcamps and Programs",
+        "Visit Saudi Summer Calendar PDF"
+      ],
+      "cities": [
+        "الرياض",
+        "الظهران",
+        "بريدة",
+        "ثول",
+        "جدة"
+      ],
+      "audiences": [
+        "باحثون عن عمل",
+        "باحثون وأكاديميون",
+        "تقنيون",
+        "رواد أعمال",
+        "رياضة ولياقة",
+        "طلاب وخريجون",
+        "عائلات وأطفال",
+        "مبدعون وفنون",
+        "مهاريون وحرفيون",
+        "موظفون ومهنيون"
+      ],
+      "next_event": {
+        "title": "Hayy Explorers | As Told by The Land: Traces & Memory",
+        "starts_at": "2026-07-02T09:00:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-hayy-explorers.html"
+      },
+      "sources_count": 8,
+      "cities_count": 5,
+      "audiences_count": 10
     },
     {
       "slug": "exhibition-trade",
       "label": "معارض وتجارية",
       "url": "./categories/exhibition-trade.html",
-      "total_events": 106,
-      "upcoming_or_active": 31,
+      "total_events": 108,
+      "upcoming_or_active": 33,
       "ended": 75,
       "live_ready": 12,
       "sources": [
         "Dhahran Expo Calendar",
         "Eye of Riyadh Events",
+        "Hayy Jameel What's On",
         "Ithra Events",
         "RFECC What's On",
         "Riyadh City Events",
@@ -196,7 +199,7 @@
         "status": "ongoing",
         "url": "./events/event-horses-and-equestrian-heritage-exhibition.html"
       },
-      "sources_count": 7,
+      "sources_count": 8,
       "cities_count": 12,
       "audiences_count": 8
     },
@@ -409,6 +412,47 @@
       "audiences_count": 8
     },
     {
+      "slug": "awards-ceremonies",
+      "label": "جوائز وتكريم",
+      "url": "./categories/awards-ceremonies.html",
+      "total_events": 18,
+      "upcoming_or_active": 12,
+      "ended": 6,
+      "live_ready": 4,
+      "sources": [
+        "Dhahran Expo Calendar",
+        "Eye of Riyadh Official",
+        "Hayy Jameel What's On",
+        "Ithra Events",
+        "Saudi Space Agency Events",
+        "Saudi Water Authority Events"
+      ],
+      "cities": [
+        "الرياض",
+        "الظهران",
+        "جدة"
+      ],
+      "audiences": [
+        "باحثون عن عمل",
+        "باحثون وأكاديميون",
+        "رواد أعمال",
+        "رياضة ولياقة",
+        "عائلات وأطفال",
+        "مبدعون وفنون",
+        "مهاريون وحرفيون",
+        "موظفون ومهنيون"
+      ],
+      "next_event": {
+        "title": "Hayy Cinema | “Kef Hayyak?” 3rd Edition Screenings and Awards Ceremony",
+        "starts_at": "2026-06-18T09:00:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-hayy-cinema.html"
+      },
+      "sources_count": 6,
+      "cities_count": 3,
+      "audiences_count": 8
+    },
+    {
       "slug": "science-space",
       "label": "علوم وفضاء",
       "url": "./categories/science-space.html",
@@ -447,46 +491,6 @@
       "sources_count": 4,
       "cities_count": 6,
       "audiences_count": 6
-    },
-    {
-      "slug": "awards-ceremonies",
-      "label": "جوائز وتكريم",
-      "url": "./categories/awards-ceremonies.html",
-      "total_events": 16,
-      "upcoming_or_active": 10,
-      "ended": 6,
-      "live_ready": 4,
-      "sources": [
-        "Dhahran Expo Calendar",
-        "Eye of Riyadh Official",
-        "Ithra Events",
-        "Saudi Space Agency Events",
-        "Saudi Water Authority Events"
-      ],
-      "cities": [
-        "الرياض",
-        "الظهران",
-        "جدة"
-      ],
-      "audiences": [
-        "باحثون عن عمل",
-        "باحثون وأكاديميون",
-        "رواد أعمال",
-        "رياضة ولياقة",
-        "عائلات وأطفال",
-        "مبدعون وفنون",
-        "مهاريون وحرفيون",
-        "موظفون ومهنيون"
-      ],
-      "next_event": {
-        "title": "Global Infrastructure Expo",
-        "starts_at": "2026-09-15T04:00:00+03:00",
-        "status": "upcoming",
-        "url": "./events/event-global-infrastructure-expo.html"
-      },
-      "sources_count": 5,
-      "cities_count": 3,
-      "audiences_count": 8
     },
     {
       "slug": "chamber-event",

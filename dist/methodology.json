@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-07-10T11:20:54.252Z",
+  "generated_at": "2026-07-10T12:37:24.491Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
-  "public_events": 1107,
-  "upcoming_or_active": 355,
+  "public_events": 1118,
+  "upcoming_or_active": 366,
   "ended_events": 752,
-  "live_ready_events": 239,
-  "registered_sources": 84,
-  "official_or_government_sources": 78,
+  "live_ready_events": 241,
+  "registered_sources": 85,
+  "official_or_government_sources": 79,
   "discovery_only_sources": 39,
   "partnership_needed_sources": 11,
   "source_trust_levels": {
-    "official": 67,
+    "official": 68,
     "official-marketplace": 6,
     "venue-official": 5,
     "aggregator": 3,
@@ -20,12 +20,12 @@
   },
   "intake_policies": {
     "partnership-needed": 5,
-    "official-feed-preferred": 40,
+    "official-feed-preferred": 41,
     "candidate-only": 11,
     "monitor-public": 28
   },
   "candidate_publication_gates": {
-    "catalog-review": 376,
+    "catalog-review": 387,
     "duplicate-review": 1,
     "source-evidence": 18
   }

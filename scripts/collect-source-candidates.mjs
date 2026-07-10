@@ -182,6 +182,7 @@ const sourceExtractors = {
   'umm-al-qura-events': extractUmmAlQuraEvents,
   'madinah-chamber-events': extractMadinahChamberEvents,
   'madinah-architecture-festival': extractMadinahArchitectureFestival,
+  'hayy-jameel-events': extractHayyJameelEvents,
   'sdaia-calendar-events': extractSdaiaCalendarEvents,
   'saudi-university-events': extractKaustEvents,
   'asharqia-chamber-events': extractAsharqiaChamberEvents,
@@ -347,6 +348,16 @@ function sourceFallbackHtml(source) {
 
 function cleanTitle(value = '') {
   return stripTags(value).replace(/\s+\|\s+.*$/, '').trim();
+}
+
+function readableExcerpt(value = '', limit = 520) {
+  const text = stripTags(value);
+  if (text.length <= limit) return text;
+  const head = text.slice(0, Math.max(1, limit - 3));
+  const sentenceEnd = Math.max(head.lastIndexOf('. '), head.lastIndexOf('! '), head.lastIndexOf('? '), head.lastIndexOf('؟ '));
+  if (sentenceEnd >= Math.floor(limit * 0.6)) return head.slice(0, sentenceEnd + 1).trim();
+  const clipped = head.replace(/\s+\S*$/, '').trim();
+  return `${clipped || head.trim()}...`;
 }
 
 function resolveUrl(href, baseUrl) {
@@ -1591,7 +1602,7 @@ function baseCandidate(source, item, snapshotPath) {
   const id = `candidate-${source.id}-${toSlug(item.title)}-${datePart}-${sourcePart}`;
   const candidate = {
     id,
-    title: cleanTitle(item.title),
+    title: item.preserve_full_title ? stripTags(item.title).trim() : cleanTitle(item.title),
     organizer: item.organizer || source.owner,
     city: item.city || source.cities?.[0] || 'Saudi Arabia',
     venue: item.venue || item.city || source.cities?.[0] || 'Saudi Arabia',
@@ -4075,6 +4086,162 @@ function extractMadinahArchitectureFestival(html, source) {
   }];
 }
 
+function parseHayyJameelDateRange(value) {
+  const text = stripTags(value).replace(/[–—]/g, '-').replace(/\s+/g, ' ').trim();
+  const match = text.match(/([A-Za-z]{3,9})\s+(\d{1,2}),?\s+(20\d{2})\s*-\s*([A-Za-z]{3,9})\s+(\d{1,2}),?\s+(20\d{2})/i);
+  if (!match) return parseEnglishDateRange(text);
+  const startMonth = monthIndex(match[1]);
+  const startDay = Number(match[2]);
+  const startYear = Number(match[3]);
+  const endMonth = monthIndex(match[4]);
+  const endDay = Number(match[5]);
+  const endYear = Number(match[6]);
+  if (!Number.isInteger(startMonth) || !Number.isInteger(endMonth) || !startDay || !endDay) return null;
+  return {
+    starts_at: dateWithTime(startYear, startMonth, startDay),
+    ends_at: dateWithTime(endYear, endMonth, endDay, '18:00:00')
+  };
+}
+
+function extractHayyJameelCards(html, source) {
+  const cards = [...String(html).matchAll(/<li class="YESY mix-target([\s\S]*?)<\/li>/gi)].map((match) => match[0]);
+  const items = [];
+  const seen = new Set();
+  for (const card of cards) {
+    if (!/\b(?:current|up-coming)\b/i.test(card) || /\bpast\b/i.test(card)) continue;
+    const title = stripTags(card.match(/<h3><a[^>]+title="([^"]+)"/i)?.[1] || '').trim();
+    const href = card.match(/<h3><a[^>]+href="([^"]+)"/i)?.[1] || card.match(/<a[^>]+href="([^"]+)"[^>]+rel="bookmark"/i)?.[1] || '';
+    const category = cleanTitle(card.match(/<h5>([\s\S]*?)<\/h5>/i)?.[1] || '') || 'culture arts';
+    const dateText = stripTags(card.match(/<p class="uk-margin-medium-top">([\s\S]*?)<\/p>/i)?.[1] || '');
+    const dates = parseHayyJameelDateRange(dateText);
+    const imageCandidate = card.match(/<img[^>]+data-src="([^"]+)"/i)?.[1] || card.match(/<img[^>]+src="([^"]+)"/i)?.[1] || '';
+    const url = resolveUrl(href, source.url);
+    if (!title || !url || !dates) continue;
+    const key = `${url}|${dates.starts_at}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    items.push({
+      title,
+      preserve_full_title: true,
+      url,
+      organizer: source.owner,
+      summary: `فعالية ثقافية رسمية من تقويم حي جميل في جدة. التاريخ المعلن: ${dateText}.`,
+      city: 'Jeddah',
+      venue: 'Hayy Jameel',
+      category,
+      raw_date_text: dateText,
+      ...(imageCandidate ? { image_url: resolveUrl(imageCandidate, url), image_alt: title, image_source_url: url } : {}),
+      attendance_mode: 'in-person',
+      confidence: 'official',
+      review_status: 'ready-for-review',
+      publication_gate: 'duplicate-review',
+      verification_method: 'official-whats-on-listing',
+      date_precision: 'explicit-date-range',
+      time_precision: 'date-only',
+      language: 'en',
+      tags: ['Hayy Jameel', category, 'Jeddah'].filter(Boolean),
+      ...dates
+    });
+  }
+  return items;
+}
+
+function hayyJameelClock(hourValue, minuteValue = '0', meridiem = '') {
+  let hour = Number(hourValue);
+  const minute = Number(minuteValue || 0);
+  if (!Number.isInteger(hour) || hour < 0 || hour > 23 || !Number.isInteger(minute) || minute < 0 || minute > 59) return '';
+  if (/pm/i.test(meridiem) && hour < 12) hour += 12;
+  if (/am/i.test(meridiem) && hour === 12) hour = 0;
+  return `${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}:00`;
+}
+
+function extractHayyJameelSessions(detailSection, listing) {
+  const year = Number(String(listing.starts_at || '').slice(0, 4));
+  const lines = String(detailSection || '')
+    .replace(/<br\s*\/?\s*>/gi, '\n')
+    .replace(/<\/p>/gi, '\n')
+    .split('\n')
+    .map((line) => stripTags(line))
+    .filter(Boolean);
+  const sessions = [];
+  let currentDate = '';
+  for (const line of lines) {
+    const dateMatch = line.match(/(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)?\s*,?\s*([A-Za-z]{3,9})\s+(\d{1,2})(?:\s*,\s*(20\d{2}))?/i);
+    if (dateMatch) {
+      const month = monthIndex(dateMatch[1]);
+      const day = Number(dateMatch[2]);
+      const lineYear = Number(dateMatch[3] || year);
+      if (Number.isInteger(month) && day && lineYear) currentDate = dateWithTime(lineYear, month, day).slice(0, 10);
+      continue;
+    }
+    const timeMatch = line.match(/(\d{1,2})(?::(\d{2}))?\s*(AM|PM)?\s*(?:-|–|—|to)\s*(\d{1,2})(?::(\d{2}))?\s*(AM|PM)/i);
+    if (!currentDate || !timeMatch) continue;
+    const endMeridiem = timeMatch[6];
+    const startClock = hayyJameelClock(timeMatch[1], timeMatch[2], timeMatch[3] || endMeridiem);
+    const endClock = hayyJameelClock(timeMatch[4], timeMatch[5], endMeridiem);
+    if (!startClock || !endClock) continue;
+    const startsAt = `${currentDate}T${startClock}+03:00`;
+    let endsAt = `${currentDate}T${endClock}+03:00`;
+    if (Date.parse(endsAt) <= Date.parse(startsAt)) endsAt = addHoursToSaudiDateTime(startsAt, 2);
+    sessions.push({
+      id: `${toSlug(listing.title)}-${currentDate}-${startClock.slice(0, 5).replace(':', '')}`,
+      title: listing.title,
+      starts_at: startsAt,
+      ends_at: endsAt,
+      room: listing.venue || 'Hayy Jameel',
+      session_type: 'official-program-session',
+      source_url: listing.url
+    });
+  }
+  return sessions;
+}
+
+function extractHayyJameelDetail(detailHtml, listing, source) {
+  const detailSection = detailHtml.match(/<nav class="side-nav uk-visible@m"[\s\S]*?<\/nav>/i)?.[0] || '';
+  const contentSection = detailHtml.match(/<div class="entry-content">([\s\S]*?)<\/div>\s*<\/div>/i)?.[1] || '';
+  const location = stripTags(detailSection.match(/Location:\s*<br\s*\/?>([\s\S]*?)<\/p>/i)?.[1] || '');
+  const registrationHref = detailSection.match(/<a[^>]+href="([^"]+)"[^>]*>\s*(?:Register|Book|Tickets?)/i)?.[1] || '';
+  const highResolutionImage = [...detailHtml.matchAll(/<img[^>]+data-src="([^"]+)"/gi)]
+    .map((match) => resolveUrl(match[1], listing.url))
+    .find((url) => /(?:1100x500|scaled|1400x650)/i.test(url));
+  const fullSummary = stripTags(contentSection) || listing.summary;
+  const summary = readableExcerpt(fullSummary, 520);
+  const venue = location ? `Hayy Jameel - ${location}` : listing.venue;
+  const sessions = extractHayyJameelSessions(detailSection, { ...listing, venue });
+  const startsAt = sessions[0]?.starts_at || listing.starts_at;
+  const endsAt = sessions.at(-1)?.ends_at || listing.ends_at;
+  return {
+    ...listing,
+    organizer: source.owner,
+    summary,
+    rich_summary: readableExcerpt(fullSummary, 1000),
+    venue,
+    venue_address: venue,
+    starts_at: startsAt,
+    ends_at: endsAt,
+    ...(registrationHref ? { registration_url: resolveUrl(registrationHref, listing.url) } : {}),
+    ...(highResolutionImage ? { image_url: highResolutionImage, image_alt: listing.title, image_source_url: listing.url } : {}),
+    ...(sessions.length ? { sessions, sessions_count: sessions.length, live_schedule_ready: true, extracted_sessions_count: sessions.length } : {}),
+    verification_method: sessions.length ? 'official-detail-explicit-session-times' : 'official-detail-date-range',
+    time_precision: sessions.length ? 'official-session-times' : listing.time_precision,
+    richness_score: calculateRichnessScore({ ...listing, summary, city: 'Jeddah', venue, image_url: highResolutionImage || listing.image_url, registration_url: registrationHref, attendance_mode: 'in-person', language: 'en' })
+  };
+}
+
+async function extractHayyJameelEvents(html, source) {
+  const listings = extractHayyJameelCards(html, source);
+  const items = [];
+  for (const listing of listings.slice(0, 30)) {
+    try {
+      const detailHtml = await fetchText(listing.url, { 'accept-language': 'en-US,en;q=0.9,ar;q=0.8' });
+      items.push(extractHayyJameelDetail(detailHtml, listing, source));
+    } catch {
+      items.push(listing);
+    }
+  }
+  return items;
+}
+
 function extractQassimChamberEvents(html, source) {
   const items = [];
   const seen = new Set();
@@ -5598,6 +5765,11 @@ export {
   extractMadinahChamberPayload,
   extractMadinahChamberEvents,
   extractMadinahArchitectureFestival,
+  extractHayyJameelCards,
+  extractHayyJameelDetail,
+  extractHayyJameelEvents,
+  baseCandidate,
+  readableExcerpt,
   extractNajranMunicipalityEvents,
   extractNorthernBordersChamberEvents,
   extractMocCalendarPayload,

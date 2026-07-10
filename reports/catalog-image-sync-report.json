@@ -1,9 +1,76 @@
 {
-  "generated_at": "2026-07-10T11:12:15.570Z",
+  "generated_at": "2026-07-10T12:21:56.363Z",
   "dry_run": false,
   "catalog_file": "data/events_catalog.json",
   "candidates_file": "data/source_candidates.json",
-  "trusted_image_candidates": 502,
-  "synced": 0,
-  "synced_events": []
+  "trusted_image_candidates": 524,
+  "synced": 11,
+  "synced_events": [
+    {
+      "id": "event-hayy-arts",
+      "title": "Hayy Arts | Global Positioning System",
+      "source_label": "Hayy Jameel What's On",
+      "image_url": "https://hayyjameel.org/wp-content/uploads/2026/05/GPS_Banner_Hayy-1-1100x500.jpg"
+    },
+    {
+      "id": "event-hayy-arts-red-wind-coral-worlds",
+      "title": "Hayy Arts | Red Wind, Coral Worlds",
+      "source_label": "Hayy Jameel What's On",
+      "image_url": "https://hayyjameel.org/wp-content/uploads/2026/04/Web-banner-1100x500.png"
+    },
+    {
+      "id": "event-hayy-learning",
+      "title": "Hayy Learning | Recess: An After-School Programme for Teens",
+      "source_label": "Hayy Jameel What's On",
+      "image_url": "https://hayyjameel.org/wp-content/uploads/2026/04/DSC05548-compressed-1100x500.jpg"
+    },
+    {
+      "id": "event-hayy-cinema",
+      "title": "Hayy Cinema | “Kef Hayyak?” 3rd Edition Screenings and Awards Ceremony",
+      "source_label": "Hayy Jameel What's On",
+      "image_url": "https://hayyjameel.org/wp-content/uploads/2026/06/Typeform-Banner-aspect-ratio-0-0-1100x500.png"
+    },
+    {
+      "id": "event-hayy-cinema-2",
+      "title": "Hayy Cinema | July 2026",
+      "source_label": "Hayy Jameel What's On",
+      "image_url": "https://hayyjameel.org/wp-content/uploads/2026/06/08-aspect-ratio-0-0-1100x500.jpeg"
+    },
+    {
+      "id": "event-jameel-library",
+      "title": "Jameel Library | July Community Programmes",
+      "source_label": "Hayy Jameel What's On",
+      "image_url": "https://hayyjameel.org/wp-content/uploads/2026/06/DSC00760-1100x500.jpg"
+    },
+    {
+      "id": "event-jameel-library-summer-reading-challenge",
+      "title": "Jameel Library | Summer Reading Challenge",
+      "source_label": "Hayy Jameel What's On",
+      "image_url": "https://hayyjameel.org/wp-content/uploads/2026/06/Untitled-1400-x-650-px-1-1100x500.png"
+    },
+    {
+      "id": "event-hayy-explorers",
+      "title": "Hayy Explorers | As Told by The Land: Traces & Memory",
+      "source_label": "Hayy Jameel What's On",
+      "image_url": "https://hayyjameel.org/wp-content/uploads/2026/07/202607_HE_Monthly_Programme_Banners-04-1100x500.png"
+    },
+    {
+      "id": "event-hayy-makers",
+      "title": "Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi",
+      "source_label": "Hayy Jameel What's On",
+      "image_url": "https://hayyjameel.org/wp-content/uploads/2026/06/Table-3-1100x500.jpg"
+    },
+    {
+      "id": "event-hayy-cinema-3",
+      "title": "Hayy Cinema | In Short: Film Programme — Summer Edition",
+      "source_label": "Hayy Jameel What's On",
+      "image_url": "https://hayyjameel.org/wp-content/uploads/2026/07/IGYDN_Still_2_72_DPI_Tawfeek_Barhom_Kidam_Foss_production-cc5bea-1100x500.jpg"
+    },
+    {
+      "id": "event-hayy-makers-2",
+      "title": "Hayy Makers | Introduction to Pottery Course with Pharah Al-Ghalib",
+      "source_label": "Hayy Jameel What's On",
+      "image_url": "https://hayyjameel.org/wp-content/uploads/2026/07/Pharah-3-1100x500.jpg"
+    }
+  ]
 }

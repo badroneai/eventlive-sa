@@ -7,7 +7,7 @@ X-WR-CALNAME:رواد أعمال | EventLive
 X-WR-TIMEZONE:Asia/Riyadh
 BEGIN:VEVENT
 UID:event-poppy-playtime@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20251010T130000Z
 DTEND:20261208T205900Z
 SUMMARY:Poppy Playtime
@@ -17,7 +17,7 @@ URL:https://eventme.live/events/event-poppy-playtime.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-riyadh-season-blvd-city@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20251010T130000Z
 DTEND:20261008T230000Z
 SUMMARY:Riyadh Season: BLVD City
@@ -27,7 +27,7 @@ URL:https://eventme.live/events/event-riyadh-season-blvd-city.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-misk-local-traineeship-program@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260401T060000Z
 DTEND:20261231T150000Z
 SUMMARY:Misk Local Traineeship Program
@@ -37,7 +37,7 @@ URL:https://eventme.live/events/event-misk-local-traineeship-program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-kashtah@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260627T130000Z
 DTEND:20260830T210000Z
 SUMMARY:Kashtah
@@ -47,7 +47,7 @@ URL:https://eventme.live/events/event-kashtah.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-لقاءات-مراكز-دعم-المنشآت-شهر-يوليو-2026م-مغلقة@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260701T060000Z
 DTEND:20260730T150000Z
 SUMMARY:لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)
@@ -57,7 +57,7 @@ URL:https://eventme.live/events/event-لقاءات-مراكز-دعم-المنش�
 END:VEVENT
 BEGIN:VEVENT
 UID:event-لقاءات-مراكز-دعم-المنشآت@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260701T060000Z
 DTEND:20260730T150000Z
 SUMMARY:لقاءات مراكز دعم المنشآت
@@ -67,7 +67,7 @@ URL:https://eventme.live/events/event-لقاءات-مراكز-دعم-المنش�
 END:VEVENT
 BEGIN:VEVENT
 UID:event-البرنامج-الصيفي-بجامعة-الجوف-2026@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260707T210000Z
 DTEND:20260831T205900Z
 SUMMARY:البرنامج الصيفي بجامعة الجوف 2026
@@ -77,7 +77,7 @@ URL:https://eventme.live/events/event-البرنامج-الصيفي-بجامعة
 END:VEVENT
 BEGIN:VEVENT
 UID:event-kindergarten-under-the-palm-tree-english@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260711T080000Z
 DTEND:20260725T083000Z
 SUMMARY:Kindergarten Under the Palm Tree (English)
@@ -87,7 +87,7 @@ URL:https://eventme.live/events/event-kindergarten-under-the-palm-tree-english.h
 END:VEVENT
 BEGIN:VEVENT
 UID:event-application-deadline-2030-leaders@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260712T060000Z
 DTEND:20260712T205900Z
 SUMMARY:2030 Leaders
@@ -97,7 +97,7 @@ URL:https://eventme.live/events/event-application-deadline-2030-leaders.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260712T060000Z
 DTEND:20260716T150000Z
 SUMMARY:أسبوع العقار والمقاولات 12- 16 يوليو 2026م
@@ -107,7 +107,7 @@ URL:https://eventme.live/events/event-أسبوع-العقار-والمقاولا
 END:VEVENT
 BEGIN:VEVENT
 UID:event-samsung-innovation-campus-ai-program@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260713T060000Z
 DTEND:20260912T150000Z
 SUMMARY:Samsung Innovation Campus AI Program
@@ -117,7 +117,7 @@ URL:https://eventme.live/events/event-samsung-innovation-campus-ai-program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-nim-adventures@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260713T130000Z
 DTEND:20260718T193000Z
 SUMMARY:niMú Adventures
@@ -126,8 +126,18 @@ LOCATION:Ithra - Plaza
 URL:https://eventme.live/events/event-nim-adventures.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-hayy-cinema-3@eventme.live
+DTSTAMP:20260710T123724Z
+DTSTART:20260715T060000Z
+DTEND:20260806T150000Z
+SUMMARY:Hayy Cinema | In Short: Film Programme — Summer Edition
+DESCRIPTION:In Short: Film Programme — Summer 2026 Edition This summer\, Hayy Cinema invites audiences to discover In Short \, a new programme dedicated to the art of short filmmaking. Running until August 6\, the programme brings together three distinct slots: Our Stories: Bold works by emerging Gulf filmmakers and distinctive regional voices Borderless Intersections: A cclaimed international short films Across Generations: F amily-friendly adventures for younger audiences and the young at heart.
+LOCATION:Hayy Jameel
+URL:https://eventme.live/events/event-hayy-cinema-3.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260721T073000Z
 DTEND:20260721T084500Z
 SUMMARY:متطلبات نظام إدارة المرافق ISO 41001 للمنشآت الصغيرة والمتوسطة
@@ -137,7 +147,7 @@ URL:https://eventme.live/events/event-متطلبات-نظام-إدارة-الم�
 END:VEVENT
 BEGIN:VEVENT
 UID:event-introduction-to-jewelry-making-techniques@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260721T133000Z
 DTEND:20260725T183000Z
 SUMMARY:Introduction to Jewelry Making Techniques
@@ -147,7 +157,7 @@ URL:https://eventme.live/events/event-introduction-to-jewelry-making-techniques.
 END:VEVENT
 BEGIN:VEVENT
 UID:event-entrepreneur-leadership-excellence-program@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260727T060000Z
 DTEND:20260729T150000Z
 SUMMARY:Entrepreneur Leadership Excellence Program
@@ -157,7 +167,7 @@ URL:https://eventme.live/events/event-entrepreneur-leadership-excellence-program
 END:VEVENT
 BEGIN:VEVENT
 UID:event-trivia-night-earth-quest-tic-tac-know@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260730T130000Z
 DTEND:20260828T190000Z
 SUMMARY:Trivia Night - Earth Quest: Tic-Tac-Know
@@ -167,7 +177,7 @@ URL:https://eventme.live/events/event-trivia-night-earth-quest-tic-tac-know.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-the-moral-of-the-story@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260730T140000Z
 DTEND:20260827T163000Z
 SUMMARY:The Moral of the Story
@@ -177,7 +187,7 @@ URL:https://eventme.live/events/event-the-moral-of-the-story.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-nonprofit-sector-skills-program@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260803T060000Z
 DTEND:20260916T150000Z
 SUMMARY:Nonprofit Sector Skills Program
@@ -187,7 +197,7 @@ URL:https://eventme.live/events/event-nonprofit-sector-skills-program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-merath-middle-east-museums-heritage-expo@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260830T120000Z
 DTEND:20260901T180000Z
 SUMMARY:Merath – Middle East Museums & Heritage Expo
@@ -197,7 +207,7 @@ URL:https://eventme.live/events/event-merath-middle-east-museums-heritage-expo.h
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-light-and-sound-sls-expo@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260830T120000Z
 DTEND:20260901T180000Z
 SUMMARY:Saudi Light and Sound (SLS) Expo
@@ -207,7 +217,7 @@ URL:https://eventme.live/events/event-saudi-light-and-sound-sls-expo.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-leap-2026@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260831T080000Z
 DTEND:20260903T180000Z
 SUMMARY:LEAP 2026
@@ -217,7 +227,7 @@ URL:https://eventme.live/events/event-leap-2026.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-misk-x-unyo-youth-engagement-fellowship@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260901T060000Z
 DTEND:20270301T150000Z
 SUMMARY:Misk X UNYO Youth Engagement Fellowship
@@ -227,7 +237,7 @@ URL:https://eventme.live/events/event-misk-x-unyo-youth-engagement-fellowship.ht
 END:VEVENT
 BEGIN:VEVENT
 UID:event-the-innovation-diwan@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260905T060000Z
 DTEND:20270131T150000Z
 SUMMARY:The Innovation Diwan
@@ -237,7 +247,7 @@ URL:https://eventme.live/events/event-the-innovation-diwan.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-saudi-food-manufacturing-show@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260905T110000Z
 DTEND:20260907T190000Z
 SUMMARY:Saudi Food Manufacturing show
@@ -247,7 +257,7 @@ URL:https://eventme.live/events/event-saudi-food-manufacturing-show.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-misk-launchpad@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260906T060000Z
 DTEND:20270102T150000Z
 SUMMARY:Misk Launchpad
@@ -257,7 +267,7 @@ URL:https://eventme.live/events/event-misk-launchpad.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-money20-20-middle-east@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260914T060000Z
 DTEND:20260916T140000Z
 SUMMARY:Money20/20 Middle East
@@ -267,7 +277,7 @@ URL:https://eventme.live/events/event-money20-20-middle-east.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-riyadh-global-medical-biotechnology-summit@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20260914T063000Z
 DTEND:20260916T120000Z
 SUMMARY:Riyadh Global Medical Biotechnology Summit
@@ -277,7 +287,7 @@ URL:https://eventme.live/events/event-riyadh-global-medical-biotechnology-summit
 END:VEVENT
 BEGIN:VEVENT
 UID:event-the-art-of-public-speaking@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20261026T133000Z
 DTEND:20261030T173000Z
 SUMMARY:The Art of Public Speaking
@@ -287,7 +297,7 @@ URL:https://eventme.live/events/event-the-art-of-public-speaking.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-future-investment-initiative-fii-10@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20261027T060000Z
 DTEND:20261030T150000Z
 SUMMARY:Future Investment Initiative (FII 10)
@@ -297,7 +307,7 @@ URL:https://eventme.live/events/event-future-investment-initiative-fii-10.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-web-summit-lisbon-2026@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20261109T060000Z
 DTEND:20261112T150000Z
 SUMMARY:Web Summit Lisbon 2026
@@ -307,7 +317,7 @@ URL:https://eventme.live/events/event-web-summit-lisbon-2026.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-cityscape-global-2026@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20261116T060000Z
 DTEND:20261119T150000Z
 SUMMARY:Cityscape Global 2026
@@ -317,7 +327,7 @@ URL:https://eventme.live/events/event-cityscape-global-2026.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-global-prize-for-innovation-in-water@eventme.live
-DTSTAMP:20260710T112054Z
+DTSTAMP:20260710T123724Z
 DTSTART:20261207T060000Z
 DTEND:20261207T130000Z
 SUMMARY:Global Prize for Innovation in Water

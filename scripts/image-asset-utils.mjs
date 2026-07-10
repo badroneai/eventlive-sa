@@ -62,6 +62,7 @@ export function isRejectedImageAssetUrl(value = '') {
   if (/chicon[-_.]?footer/i.test(stem)) return true;
   if (/^(?:m[-_.]?)?logo(?:[-_.](?:white|new|old|dark|light))?$/i.test(stem)) return true;
   if (/digitalportal[-_.]?logo/i.test(stem)) return true;
+  if (/(?:safari[-_.]?pinned[-_.]?tab|pinned[-_.]?tab|mask[-_.]?icon)/i.test(stem)) return true;
   if (isGenericSiteAssetPath(pathText) && (tokenPattern('logo').test(stem) || tokenPattern('icon').test(stem))) return true;
   if (/^(?:icon|icons|favicon)$/i.test(stem)) return true;
   if (/\/(?:logo|icons?|favicon)\.(?:svg|png|jpg|jpeg|webp|gif|avif)(?:$|[?#])/i.test(pathText)) return true;

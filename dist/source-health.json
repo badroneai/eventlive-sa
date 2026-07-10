@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T11:21:42.875Z",
+  "generated_at": "2026-07-10T12:38:15.199Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-source-health",
@@ -9,17 +9,17 @@
     "auto_publish": "reports/source-promotion-report.json"
   },
   "totals": {
-    "sources": 84,
-    "active_collectors": 44,
-    "collection_coverage_pct": 52,
-    "productive": 30,
-    "open_idle": 14,
+    "sources": 85,
+    "active_collectors": 45,
+    "collection_coverage_pct": 53,
+    "productive": 32,
+    "open_idle": 13,
     "collector_errors": 0,
     "probe_blocked": 0,
     "extractor_backlog": 40,
-    "candidates_discovered": 393,
-    "candidates_collected_before_dedupe": 407,
-    "candidates_written": 395
+    "candidates_discovered": 11,
+    "candidates_collected_before_dedupe": 406,
+    "candidates_written": 406
   },
   "publication": {
     "published_at": "2026-07-03T15:26:20.570Z",
@@ -75,7 +75,7 @@
       "status": "zero-yield",
       "extracted": 0,
       "candidates": 0,
-      "next_action": "No future date-complete candidates found by the conservative extractor.",
+      "next_action": "past-date:3",
       "last_collection_status": "ok",
       "last_extracted": 0,
       "known_candidates": 0
@@ -267,7 +267,7 @@
       "status": "zero-yield",
       "extracted": 0,
       "candidates": 0,
-      "next_action": "No future date-complete candidates found by the conservative extractor.",
+      "next_action": "past-date:4",
       "last_collection_status": "ok",
       "last_extracted": 0,
       "known_candidates": 0
@@ -327,7 +327,7 @@
       "status": "zero-yield",
       "extracted": 0,
       "candidates": 0,
-      "next_action": "Recovered via last-known-good official evidence. No future date-complete candidates found by the conservative extractor.",
+      "next_action": "date/content signals exist but extractor returned no complete future rows",
       "last_collection_status": "ok",
       "last_extracted": 0,
       "known_candidates": 0
@@ -363,7 +363,7 @@
       "status": "zero-yield",
       "extracted": 0,
       "candidates": 0,
-      "next_action": "No future date-complete candidates found by the conservative extractor.",
+      "next_action": "past-date:5",
       "last_collection_status": "ok",
       "last_extracted": 0,
       "known_candidates": 0
@@ -375,7 +375,7 @@
       "status": "zero-yield",
       "extracted": 0,
       "candidates": 0,
-      "next_action": "No future date-complete candidates found by the conservative extractor.",
+      "next_action": "past-date:13",
       "last_collection_status": "ok",
       "last_extracted": 0,
       "known_candidates": 0
@@ -387,7 +387,7 @@
       "status": "zero-yield",
       "extracted": 0,
       "candidates": 0,
-      "next_action": "No future date-complete candidates found by the conservative extractor.",
+      "next_action": "past-date:100",
       "last_collection_status": "ok",
       "last_extracted": 0,
       "known_candidates": 0
@@ -411,7 +411,7 @@
       "status": "zero-yield",
       "extracted": 0,
       "candidates": 0,
-      "next_action": "No future date-complete candidates found by the conservative extractor.",
+      "next_action": "past-date:14",
       "last_collection_status": "ok",
       "last_extracted": 0,
       "known_candidates": 0
@@ -565,11 +565,11 @@
       "name": "Saudi Universities and Technical Colleges",
       "priority": 45,
       "status": "productive",
-      "extracted": 4,
+      "extracted": 6,
       "candidates": 6,
       "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
       "last_collection_status": "ok",
-      "last_extracted": 4,
+      "last_extracted": 6,
       "known_candidates": 6
     },
     {
@@ -672,12 +672,12 @@
       "id": "sdaia-calendar-events",
       "name": "SDAIA Calendar and Events",
       "priority": 54,
-      "status": "zero-yield",
-      "extracted": 0,
+      "status": "productive",
+      "extracted": 2,
       "candidates": 2,
-      "next_action": "No future date-complete candidates found by the conservative extractor.",
+      "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
       "last_collection_status": "ok",
-      "last_extracted": 0,
+      "last_extracted": 2,
       "known_candidates": 2
     },
     {
@@ -687,7 +687,7 @@
       "status": "zero-yield",
       "extracted": 0,
       "candidates": 0,
-      "next_action": "No future date-complete candidates found by the conservative extractor.",
+      "next_action": "past-date:10",
       "last_collection_status": "ok",
       "last_extracted": 0,
       "known_candidates": 0
@@ -747,7 +747,7 @@
       "status": "zero-yield",
       "extracted": 0,
       "candidates": 0,
-      "next_action": "No future date-complete candidates found by the conservative extractor.",
+      "next_action": "past-date:3",
       "last_collection_status": "ok",
       "last_extracted": 0,
       "known_candidates": 0
@@ -759,7 +759,7 @@
       "status": "zero-yield",
       "extracted": 0,
       "candidates": 0,
-      "next_action": "No future date-complete candidates found by the conservative extractor.",
+      "next_action": "past-date:5",
       "last_collection_status": "ok",
       "last_extracted": 0,
       "known_candidates": 0
@@ -807,7 +807,7 @@
       "status": "zero-yield",
       "extracted": 0,
       "candidates": 0,
-      "next_action": "No future date-complete candidates found by the conservative extractor.",
+      "next_action": "past-date:4",
       "last_collection_status": "ok",
       "last_extracted": 0,
       "known_candidates": 0
@@ -819,7 +819,7 @@
       "status": "zero-yield",
       "extracted": 0,
       "candidates": 0,
-      "next_action": "No future date-complete candidates found by the conservative extractor.",
+      "next_action": "past-date:2",
       "last_collection_status": "ok",
       "last_extracted": 0,
       "known_candidates": 0
@@ -1023,7 +1023,7 @@
       "status": "zero-yield",
       "extracted": 0,
       "candidates": 0,
-      "next_action": "No future date-complete candidates found by the conservative extractor.",
+      "next_action": "past-date:305",
       "last_collection_status": "ok",
       "last_extracted": 0,
       "known_candidates": 0
@@ -1039,6 +1039,18 @@
       "last_collection_status": "ok",
       "last_extracted": 1,
       "known_candidates": 1
+    },
+    {
+      "id": "hayy-jameel-events",
+      "name": "Hayy Jameel What's On",
+      "priority": 85,
+      "status": "productive",
+      "extracted": 11,
+      "candidates": 11,
+      "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
+      "last_collection_status": "ok",
+      "last_extracted": 11,
+      "known_candidates": 11
     }
   ]
 }

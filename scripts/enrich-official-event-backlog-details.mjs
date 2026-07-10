@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { selectBacklogTargets } from './backlog-target-utils.mjs';
+import { highResImage, isStillImage, preferredEventImage } from './backlog-image-utils.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -11,6 +12,8 @@ const timeoutMs = Math.max(3000, Number(process.env.EVENTLIVE_BACKLOG_TIMEOUT_MS
 const limit = Math.max(1, Number(process.env.EVENTLIVE_BACKLOG_LIMIT || 100));
 const concurrency = Math.min(8, Math.max(1, Number(process.env.EVENTLIVE_BACKLOG_CONCURRENCY || 5)));
 const refreshIntervalMs = Math.max(60_000, Number(process.env.EVENTLIVE_BACKLOG_REFRESH_MS || 7 * 24 * 60 * 60 * 1000));
+const forceRefresh = process.env.EVENTLIVE_BACKLOG_FORCE === '1';
+const sourceLabels = new Set(String(process.env.EVENTLIVE_BACKLOG_SOURCE_LABELS || '').split(',').map((value) => value.trim()).filter(Boolean));
 
 function readJson(filePath, fallback) {
   try {
@@ -35,13 +38,6 @@ function cleanText(value = '') {
     .trim();
 }
 
-function stripHtml(value = '') {
-  return cleanText(String(value || '')
-    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
-    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
-    .replace(/<[^>]+>/g, ' '));
-}
-
 function compactItems(items, limitValue = 8, maxLength = 320) {
   const seen = new Set();
   return items
@@ -57,29 +53,14 @@ function compactItems(items, limitValue = 8, maxLength = 320) {
     .slice(0, limitValue);
 }
 
+function isNavigationNoise(value = '') {
+  const text = cleanText(value);
+  return /Shop Art Jameel|Explore Hayy Jameel|Venue Hire|Current Upcoming Past/i.test(text);
+}
+
 function extractMeta(html, name) {
   const pattern = new RegExp(`<meta[^>]+(?:property|name)=["']${name}["'][^>]+content=["']([^"']*)`, 'i');
   return cleanText(String(html || '').match(pattern)?.[1] || '');
-}
-
-function isStillImage(url = '') {
-  const cleaned = cleanText(url).split('#')[0];
-  if (/logo|sprite|icon|favicon|apple-touch|whatsapp|social|chat[-_]?icon/i.test(cleaned)) return false;
-  return /\.(jpe?g|png|webp|avif)(\?|$)/i.test(cleaned) || /scene7\.com\/is\/image\//i.test(cleaned);
-}
-
-function highResImage(url = '') {
-  const cleaned = cleanText(url).replace(/&amp;/g, '&');
-  if (!cleaned) return '';
-  if (/datocms-assets\.com/i.test(cleaned)) return `${cleaned.split('?')[0]}?auto=format&fit=max&w=2048&q=90`;
-  if (/scene7\.com\/is\/image\//i.test(cleaned) && !/[?&](wid|hei|fmt)=/i.test(cleaned)) {
-    return `${cleaned}${cleaned.includes('?') ? '&' : '?'}wid=1600&hei=900&fit=constrain&fmt=webp`;
-  }
-  try {
-    return new URL(cleaned).href;
-  } catch {
-    return cleaned;
-  }
 }
 
 function imageCandidates(html = '') {
@@ -154,7 +135,7 @@ async function fetchPageMeta(url) {
     if (!response.ok) return { ok: false, reason: `HTTP ${response.status}` };
     const html = await response.text();
     const title = cleanText(extractMeta(html, 'og:title') || html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] || '');
-    const description = cleanText(extractMeta(html, 'og:description') || extractMeta(html, 'description') || stripHtml(html).slice(0, 520));
+    const description = cleanText(extractMeta(html, 'og:description') || extractMeta(html, 'description'));
     const image = highResImage(imageCandidates(html).find(isStillImage) || '');
     return { ok: true, title, description, image };
   } catch (error) {
@@ -173,11 +154,11 @@ function applyBacklogOutline(event, page = {}) {
     event.summary ||
     `${event.title} فعالية منشورة من ${provider} ضمن كتالوج EventLive.`
   );
-  const imageUrl = highResImage(page.image || event.image_url || '');
+  const imageUrl = preferredEventImage(page.image, event.image_url || event.original_image_url || '');
   const method = page.source_method || (page.ok ? 'official-page-meta' : (url ? 'approved-source-row' : 'eventlive-internal-seed'));
 
-  event.description = event.description || officialDescription;
-  event.rich_summary = event.rich_summary || officialDescription;
+  if (!event.description || isNavigationNoise(event.description)) event.description = officialDescription;
+  if (!event.rich_summary || isNavigationNoise(event.rich_summary)) event.rich_summary = officialDescription;
   event.summary = event.summary || officialDescription;
   if (imageUrl && isStillImage(imageUrl)) {
     event.image_url = imageUrl;
@@ -240,11 +221,14 @@ function applyBacklogOutline(event, page = {}) {
 
 const catalog = readJson(catalogPath, { events: [] });
 const events = Array.isArray(catalog.events) ? catalog.events : [];
-const targets = selectBacklogTargets(events, {
-  limit,
-  refreshIntervalMs,
-  nowMs: Date.parse(generatedAt)
-});
+const scopedEvents = sourceLabels.size ? events.filter((event) => sourceLabels.has(event.source_label)) : events;
+const targets = forceRefresh
+  ? scopedEvents.filter((event) => event.approval_status === 'published').slice(0, limit)
+  : selectBacklogTargets(scopedEvents, {
+    limit,
+    refreshIntervalMs,
+    nowMs: Date.parse(generatedAt)
+  });
 
 const enriched = [];
 const failed = [];

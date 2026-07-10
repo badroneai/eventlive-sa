@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Hayy Arts | Global Positioning System | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-hayy-arts@eventme.live
+DTSTAMP:20260710T123724Z
+DTSTART:20260520T060000Z
+DTEND:20261026T150000Z
+SUMMARY:Hayy Arts | Global Positioning System
+DESCRIPTION:Opening May 20\, 2026\, ‘Global Positioning System’ is an upcoming exhibition curated by Indranjan Banerjee and Lucas Morin. Global Positioning System is an exhibition dedicated to mapping and navigation systems. It tells stories of fast cars and slow trains\, street barriers and trembling grounds\, warping highways and broken bridges.
+LOCATION:Hayy Jameel
+URL:https://eventme.live/events/event-hayy-arts.html
+END:VEVENT
+END:VCALENDAR

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-10T11:20:54.252Z",
+  "generated_at": "2026-07-10T12:37:24.491Z",
   "platform": "EventLive",
   "scope": "this-month",
   "starts_at": "2026-07-01T00:00:00.000Z",
   "ends_before": "2026-08-01T00:00:00.000Z",
-  "count": 207,
+  "count": 218,
   "events": [
     {
       "id": "event-skill-development-initiative",
@@ -287,6 +287,26 @@
       "live_schedule_ready": false
     },
     {
+      "id": "event-hayy-arts",
+      "title": "Hayy Arts | Global Positioning System",
+      "url": "./events/event-hayy-arts.html",
+      "city": "جدة",
+      "starts_at": "2026-05-20T09:00:00+03:00",
+      "ends_at": "2026-10-26T18:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-hayy-arts-red-wind-coral-worlds",
+      "title": "Hayy Arts | Red Wind, Coral Worlds",
+      "url": "./events/event-hayy-arts-red-wind-coral-worlds.html",
+      "city": "جدة",
+      "starts_at": "2026-05-20T09:00:00+03:00",
+      "ends_at": "2026-10-26T18:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
       "id": "event-مزرعة-ركايب",
       "title": "مزرعة ركايب",
       "url": "./events/event-مزرعة-ركايب.html",
@@ -323,6 +343,16 @@
       "city": "جدة",
       "starts_at": "2026-06-04T00:00:00+03:00",
       "ends_at": "2026-12-02T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-hayy-learning",
+      "title": "Hayy Learning | Recess: An After-School Programme for Teens",
+      "url": "./events/event-hayy-learning.html",
+      "city": "جدة",
+      "starts_at": "2026-06-06T09:00:00+03:00",
+      "ends_at": "2026-08-23T18:00:00+03:00",
       "status": "ongoing",
       "live_schedule_ready": false
     },
@@ -463,6 +493,16 @@
       "city": "جدة",
       "starts_at": "2026-06-18T00:00:00+03:00",
       "ends_at": "2026-12-07T23:59:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-hayy-cinema",
+      "title": "Hayy Cinema | “Kef Hayyak?” 3rd Edition Screenings and Awards Ceremony",
+      "url": "./events/event-hayy-cinema.html",
+      "city": "جدة",
+      "starts_at": "2026-06-18T09:00:00+03:00",
+      "ends_at": "2026-07-15T18:00:00+03:00",
       "status": "ongoing",
       "live_schedule_ready": false
     },
@@ -627,12 +667,52 @@
       "live_schedule_ready": false
     },
     {
+      "id": "event-hayy-cinema-2",
+      "title": "Hayy Cinema | July 2026",
+      "url": "./events/event-hayy-cinema-2.html",
+      "city": "جدة",
+      "starts_at": "2026-07-01T09:00:00+03:00",
+      "ends_at": "2026-07-15T18:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-jameel-library",
+      "title": "Jameel Library | July Community Programmes",
+      "url": "./events/event-jameel-library.html",
+      "city": "جدة",
+      "starts_at": "2026-07-01T09:00:00+03:00",
+      "ends_at": "2026-07-31T18:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-jameel-library-summer-reading-challenge",
+      "title": "Jameel Library | Summer Reading Challenge",
+      "url": "./events/event-jameel-library-summer-reading-challenge.html",
+      "city": "جدة",
+      "starts_at": "2026-07-01T09:00:00+03:00",
+      "ends_at": "2026-08-31T18:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
       "id": "event-prince-faisal-bin-fahd-art-exhibition-summer-2026",
       "title": "Prince Faisal Bin Fahd Art Exhibition: Summer 2026",
       "url": "./events/event-prince-faisal-bin-fahd-art-exhibition-summer-2026.html",
       "city": "الرياض",
       "starts_at": "2026-07-01T16:00:00+03:00",
       "ends_at": "2026-08-01T22:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-hayy-explorers",
+      "title": "Hayy Explorers | As Told by The Land: Traces & Memory",
+      "url": "./events/event-hayy-explorers.html",
+      "city": "جدة",
+      "starts_at": "2026-07-02T09:00:00+03:00",
+      "ends_at": "2026-10-01T18:00:00+03:00",
       "status": "ongoing",
       "live_schedule_ready": false
     },
@@ -833,7 +913,7 @@
       "city": "الظهران",
       "starts_at": "2026-07-10T14:30:00+03:00",
       "ends_at": "2026-07-11T22:00:00+03:00",
-      "status": "upcoming",
+      "status": "live",
       "live_schedule_ready": true
     },
     {
@@ -1427,6 +1507,16 @@
       "live_schedule_ready": true
     },
     {
+      "id": "event-hayy-makers",
+      "title": "Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi",
+      "url": "./events/event-hayy-makers.html",
+      "city": "جدة",
+      "starts_at": "2026-07-14T18:00:00+03:00",
+      "ends_at": "2026-07-16T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
       "id": "event-semi-finals-join-the-celebration-at-the-fifa-fan-zone",
       "title": "Semi-Finals: Join the Celebration at the FIFA Fan Zone",
       "url": "./events/event-semi-finals-join-the-celebration-at-the-fifa-fan-zone.html",
@@ -1435,6 +1525,16 @@
       "ends_at": "2026-07-14T23:59:00+03:00",
       "status": "upcoming",
       "live_schedule_ready": true
+    },
+    {
+      "id": "event-hayy-cinema-3",
+      "title": "Hayy Cinema | In Short: Film Programme — Summer Edition",
+      "url": "./events/event-hayy-cinema-3.html",
+      "city": "جدة",
+      "starts_at": "2026-07-15T09:00:00+03:00",
+      "ends_at": "2026-08-06T18:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
     },
     {
       "id": "event-متطلبات-الاستخدام-الآمن-للأجهزة-والمستلزمات-الطبية-لمراكز-الأسنان",
@@ -1845,6 +1945,16 @@
       "ends_at": "2026-08-20T21:00:00+03:00",
       "status": "upcoming",
       "live_schedule_ready": false
+    },
+    {
+      "id": "event-hayy-makers-2",
+      "title": "Hayy Makers | Introduction to Pottery Course with Pharah Al-Ghalib",
+      "url": "./events/event-hayy-makers-2.html",
+      "city": "جدة",
+      "starts_at": "2026-07-26T17:00:00+03:00",
+      "ends_at": "2026-07-28T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
     },
     {
       "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python",

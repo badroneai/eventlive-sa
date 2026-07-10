@@ -2415,6 +2415,34 @@
       "max_candidates_per_run": 10,
       "max_ended_per_run": 20,
       "notes": "Activated 2026-07-10 from the official bilingual competition site issued by the Madinah Region Development Authority. The first verified public festival date is 10 December 2026; application windows remain program metadata and are not published as separate events."
+    },
+    {
+      "id": "hayy-jameel-events",
+      "name": "Hayy Jameel What's On",
+      "url": "https://hayyjameel.org/whats-on/",
+      "owner": "Art Jameel / Hayy Jameel",
+      "source_type": "venue-calendar",
+      "trust_level": "official",
+      "priority": 85,
+      "coverage": "Current and upcoming exhibitions, cinema programmes, workshops, learning activities, installations, and public cultural events at Hayy Jameel in Jeddah.",
+      "cities": [
+        "Jeddah"
+      ],
+      "categories": [
+        "culture",
+        "arts",
+        "film",
+        "workshops",
+        "exhibitions",
+        "families"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "First-party Hayy Jameel What's On card and detail page with an explicit date range, title, Jeddah venue context, and current or upcoming status.",
+      "candidate_gate": "duplicate-review",
+      "max_candidates_per_run": 40,
+      "max_ended_per_run": 100,
+      "notes": "Activated 2026-07-10 from the public first-party What's On calendar. Every six-hour run reads current/upcoming cards, opens their detail pages for precise sessions, registration, fees, room and high-resolution imagery, and rejects past-labelled or date-incomplete cards."
     }
   ]
 }

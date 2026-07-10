@@ -8,6 +8,10 @@ import {
   extractJazanChamberEvents,
   extractMadinahArchitectureFestival,
   extractMadinahChamberPayload,
+  extractHayyJameelCards,
+  extractHayyJameelDetail,
+  baseCandidate,
+  readableExcerpt,
   jazanApiEndpoint,
   jazanMonthsToFetch,
   extractKaustEvents,
@@ -564,6 +568,60 @@ assert.equal(madinahFestivalEvents[0].city, 'Madinah');
 assert.equal(madinahFestivalEvents[0].starts_at, '2026-12-10T09:00:00+03:00');
 assert.equal(madinahFestivalEvents[0].ends_at, '2026-12-10T21:00:00+03:00');
 assert.match(madinahFestivalEvents[0].image_url, /competition-1\.fixture\.jpg/);
+
+const hayySource = {
+  id: 'hayy-jameel-events',
+  name: "Hayy Jameel What's On",
+  url: 'https://hayyjameel.org/whats-on/',
+  owner: 'Art Jameel / Hayy Jameel'
+};
+const hayyCards = extractHayyJameelCards(`
+  <li class="YESY mix-target all workshop up-coming families" data-order="1">
+    <div class="uk-card"><div class="uk-card-header"><h5>Workshop</h5></div>
+    <a href="https://hayyjameel.org/whats-on/pottery/" rel="bookmark" title="Hayy Makers | Pottery"><img data-src="https://hayyjameel.org/uploads/pottery-560x400.jpg"></a>
+    <div class="uk-card-body"><h3><a href="https://hayyjameel.org/whats-on/pottery/" title="Hayy Makers | Pottery">Hayy Makers | Pottery</a></h3>
+    <p class="uk-margin-medium-top">July 26, 2026 - July 28, 2026<br /><br /></p></div></div>
+  </li>
+  <li class="YESY mix-target all announcement past" data-order="2">
+    <div class="uk-card"><div class="uk-card-header"><h5>Announcement</h5></div>
+    <a href="https://hayyjameel.org/whats-on/past-call/" rel="bookmark" title="Past Open Call"></a>
+    <div class="uk-card-body"><h3><a href="https://hayyjameel.org/whats-on/past-call/" title="Past Open Call">Past Open Call</a></h3>
+    <p class="uk-margin-medium-top">August 24, 2026 - August 30, 2026<br /></p></div></div>
+  </li>
+`, hayySource);
+
+assert.equal(hayyCards.length, 1, 'Hayy listing must reject cards labelled past even when their application window is later');
+assert.equal(hayyCards[0].title, 'Hayy Makers | Pottery', 'Hayy listing must preserve the full programme title after the vertical separator');
+assert.equal(baseCandidate(hayySource, hayyCards[0], 'data/raw/source-snapshots/hayy.fixture.html').title, 'Hayy Makers | Pottery', 'Hayy candidate identity must preserve the full programme title');
+assert.equal(readableExcerpt('alpha beta gamma delta', 14), 'alpha beta...', 'source excerpts must end at word boundaries');
+assert.equal(readableExcerpt('First clean sentence. Second sentence continues for much longer.', 32), 'First clean sentence.', 'source excerpts should prefer a complete sentence when one is available');
+assert.equal(hayyCards[0].city, 'Jeddah');
+assert.equal(hayyCards[0].starts_at, '2026-07-26T09:00:00+03:00');
+assert.equal(hayyCards[0].ends_at, '2026-07-28T18:00:00+03:00');
+
+const hayyDetail = extractHayyJameelDetail(`
+  <nav class="side-nav uk-visible@m">
+    <p class="strip_tagss">Hayy Makers</p>
+    <p>Date and time:<br />Day 1:<br />Sunday, July 26<br />5 - 9PM</p>
+    <p>Day 2:<br />Monday, July 27<br />5 - 9 PM</p>
+    <p>Day 3:<br />Tuesday, July 28<br />5 - 9 PM</p>
+    <p>Fees:<br />989 SAR</p><p>Location:<br />Hayy Makers, First Floor</p>
+    <a href="https://applytoday.typeform.com/to/fixture">Register Here</a>
+  </nav>
+  <div class="uk-margin-medium-bottom"><img data-src="https://hayyjameel.org/uploads/pottery-1100x500.jpg"></div>
+  <div class="entry-content"><p>A rich three-day official pottery course for the Jeddah community.</p></div></div>
+`, hayyCards[0], hayySource);
+
+assert.equal(hayyDetail.venue, 'Hayy Jameel - Hayy Makers, First Floor');
+assert.equal(hayyDetail.sessions.length, 3);
+assert.equal(hayyDetail.sessions[0].starts_at, '2026-07-26T17:00:00+03:00');
+assert.equal(hayyDetail.sessions[2].ends_at, '2026-07-28T21:00:00+03:00');
+assert.equal(hayyDetail.starts_at, '2026-07-26T17:00:00+03:00');
+assert.equal(hayyDetail.ends_at, '2026-07-28T21:00:00+03:00');
+assert.match(hayyDetail.registration_url, /typeform\.com/);
+assert.match(hayyDetail.image_url, /1100x500/);
+assert.equal(hayyDetail.live_schedule_ready, true);
+assert.equal(hayyDetail.rich_summary, hayyDetail.summary);
 
 const qassimEvents = extractQassimChamberEvents(`
   <div class="card h-100"><div class="carousel-item active" style="background-image: url('https://tc.qcc.org.sa/storage/260/hr.jpg')"></div>

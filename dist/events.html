@@ -925,6 +925,14 @@
 
 
 
+
+
+
+
+
+
+
+
     <style id="eventlive-brand-pulse">
 @keyframes eventliveLiveDotPulse {
   0%, 100% { opacity: .92; transform: translateX(-50%) scale(1); box-shadow: 0 0 0 0 rgba(229, 72, 77, .2); }
@@ -1104,7 +1112,7 @@
     const pageSize = 24;
     const eventsFeedUrl = './events.json';
     const CITY_AR = {"Riyadh":"الرياض","Saudi Arabia":"السعودية","Aseer":"عسير","Jeddah":"جدة","Al Baha":"الباحة","Diriyah":"الدرعية","Najran":"نجران","Sakaka":"سكاكا","Dhahran":"الظهران","Online":"عن بعد","Makkah":"مكة","Thuwal":"ثول","Buraydah":"بريدة","AlUla":"العلا","Jazan":"جازان","Nationwide":"على مستوى المملكة","Global":"دولي","Madinah":"المدينة المنورة","Tabuk":"تبوك","Al Muzahimiyah":"المزاحمية","Dammam":"الدمام","Khobar":"الخبر","Taif":"الطائف","Arar":"عرعر","Al Namas":"النماص","Yanbu":"ينبع","Rass":"الرس","Al Ahsa":"الأحساء","الافلاج":"الافلاج","Hail":"حائل","Khamis Mushait":"خميس مشيط","Rafha":"رفحاء","Abha":"أبها","Jubail":"الجبيل"};
-    const CATEGORY_AR = {"cultural initiative":"ثقافة وفنون","culture-arts":"ثقافة وفنون","family \u0026 kids":"ترفيه وعائلات","entertainment-families":"ترفيه وعائلات","gaming-esports":"ألعاب ورياضات إلكترونية","entertainment / families":"ترفيه وعائلات","entertainment \u0026 sports":"رياضة وفعاليات جماهيرية","sports":"رياضة وفعاليات جماهيرية","culture \u0026 history / families":"ثقافة وفنون","exhibitions \u0026 conferences":"علوم وفضاء","exhibition-trade":"معارض وتجارية","tourism experience":"رياضة وفعاليات جماهيرية","skills program":"تدريب تقني","technology-training":"تدريب تقني","festival":"ترفيه وعائلات","entertainment":"ترفيه وعائلات","culture \u0026 community":"ثقافة وفنون","culture and arts":"ألعاب ورياضات إلكترونية","regulatory-workshop":"ورش تنظيمية وصحية","sports / families":"رياضة وفعاليات جماهيرية","saudi seasons":"رياضة وفعاليات جماهيرية","adventure / families":"ترفيه وعائلات","entrepreneurship":"تدريب تقني","science-space":"علوم وفضاء","معسكر - هندسة الميكاترونكس":"جامعات ومجتمع","entertainment families":"ترفيه وعائلات","university event":"جامعات ومجتمع","education-community":"جامعات ومجتمع","summer program":"جامعات ومجتمع","music":"ترفيه وعائلات","family":"ترفيه وعائلات","exhibition":"فعاليات الغرف التجارية","learning":"جامعات ومجتمع","performance":"جامعات ومجتمع","application deadline":"تدريب تقني","technology training":"تدريب تقني","أسبوع الاعمال":"تدريب تقني","معسكر - تطوير البرمجيات والتطبيقات":"ورش تنظيمية وصحية","education training":"تدريب تقني","community":"ورش تنظيمية وصحية","regulatory workshop":"ورش تنظيمية وصحية","sports and community":"رياضة وفعاليات جماهيرية","culture":"ثقافة وفنون","workshop":"فعاليات الغرف التجارية","chamber-event":"فعاليات الغرف التجارية","معسكر - الحوسبة السحابية":"جامعات ومجتمع","معسكر - أنظمة الشبكات":"ورش تنظيمية وصحية","exhibition / families":"ترفيه وعائلات","معسكر - الأمن السيبراني":"جامعات ومجتمع","معسكر - هندسة البرمجيات":"ورش تنظيمية وصحية","conference":"فعاليات الغرف التجارية","conference-forum":"مؤتمرات ومنتديات","معسكر - علم البيانات والذكاء الاصطناعي":"جامعات ومجتمع","artificial intelligence":"مؤتمرات ومنتديات","awards-ceremonies":"جوائز وتكريم","public holidays":"ترفيه وعائلات","banking and ai conference":"مؤتمرات ومنتديات","enterprise ai conference":"مؤتمرات ومنتديات","summit":"مؤتمرات ومنتديات","chamber event":"فعاليات الغرف التجارية","forum":"مؤتمرات ومنتديات","venue event":"معارض وتجارية","business forum":"فعاليات الغرف التجارية","awards":"جوائز وتكريم","architecture design festival":"ترفيه وعائلات","destination event":"علوم وفضاء","national day":"جوائز وتكريم","لقاء":"فعاليات الغرف التجارية","skills":"تدريب تقني","space":"علوم وفضاء","academic event":"جامعات ومجتمع","ورشة عمل":"فعاليات الغرف التجارية","دورة تدريبية":"فعاليات الغرف التجارية","ملتقى":"فعاليات الغرف التجارية","اجتماع":"فعاليات الغرف التجارية","فعالية فوانيس":"فعاليات الغرف التجارية","التوطين":"فعاليات الغرف التجارية","space education":"علوم وفضاء","auction":"معارض وتجارية","الاتصالات وتقنية المعلومات":"فعاليات الغرف التجارية","ريادة الأعمال":"فعاليات الغرف التجارية","football match":"رياضة وفعاليات جماهيرية","business reception":"فعاليات الغرف التجارية","roadshow":"تدريب تقني","incubator":"ألعاب ورياضات إلكترونية","training":"فعاليات الغرف التجارية","career fair":"فعاليات الغرف التجارية","gaming program":"ألعاب ورياضات إلكترونية","technology bootcamp":"ألعاب ورياضات إلكترونية","digital series":"ألعاب ورياضات إلكترونية","حفل تكريم":"فعاليات الغرف التجارية","ندوة":"فعاليات الغرف التجارية","حفل تدشين":"فعاليات الغرف التجارية","ورش عمل":"فعاليات الغرف التجارية","ai entrepreneurship":"ألعاب ورياضات إلكترونية","منتدى":"فعاليات الغرف التجارية","business event":"فعاليات الغرف التجارية","مؤتمر":"فعاليات الغرف التجارية","business gathering":"فعاليات الغرف التجارية","لقاء حواري":"فعاليات الغرف التجارية","jeddah chamber":"فعاليات الغرف التجارية","وفد تجاري":"فعاليات الغرف التجارية","sports championship":"رياضة وفعاليات جماهيرية","accelerator":"ألعاب ورياضات إلكترونية","tourism":"فعاليات الغرف التجارية"};
+    const CATEGORY_AR = {"cultural initiative":"ثقافة وفنون","culture-arts":"ثقافة وفنون","family \u0026 kids":"ترفيه وعائلات","entertainment-families":"ترفيه وعائلات","gaming-esports":"ألعاب ورياضات إلكترونية","entertainment / families":"ترفيه وعائلات","entertainment \u0026 sports":"رياضة وفعاليات جماهيرية","sports":"رياضة وفعاليات جماهيرية","culture \u0026 history / families":"ثقافة وفنون","exhibitions \u0026 conferences":"علوم وفضاء","exhibition-trade":"معارض وتجارية","tourism experience":"رياضة وفعاليات جماهيرية","skills program":"تدريب تقني","technology-training":"تدريب تقني","festival":"ترفيه وعائلات","entertainment":"ترفيه وعائلات","culture \u0026 community":"ثقافة وفنون","culture and arts":"ألعاب ورياضات إلكترونية","regulatory-workshop":"ورش تنظيمية وصحية","exhibition":"فعاليات الغرف التجارية","culture arts":"ثقافة وفنون","sports / families":"رياضة وفعاليات جماهيرية","film":"ثقافة وفنون","awards-ceremonies":"جوائز وتكريم","saudi seasons":"رياضة وفعاليات جماهيرية","adventure / families":"ترفيه وعائلات","entrepreneurship":"تدريب تقني","immersive experience":"جوائز وتكريم","explorers thematic, workshop":"جامعات ومجتمع","education-community":"جامعات ومجتمع","science-space":"علوم وفضاء","معسكر - هندسة الميكاترونكس":"جامعات ومجتمع","entertainment families":"ترفيه وعائلات","university event":"جامعات ومجتمع","summer program":"جامعات ومجتمع","music":"ترفيه وعائلات","family":"ترفيه وعائلات","learning":"جامعات ومجتمع","performance":"جامعات ومجتمع","application deadline":"تدريب تقني","technology training":"تدريب تقني","أسبوع الاعمال":"تدريب تقني","معسكر - تطوير البرمجيات والتطبيقات":"ورش تنظيمية وصحية","education training":"تدريب تقني","community":"ورش تنظيمية وصحية","regulatory workshop":"ورش تنظيمية وصحية","workshop":"فعاليات الغرف التجارية","sports and community":"رياضة وفعاليات جماهيرية","culture":"ثقافة وفنون","chamber-event":"فعاليات الغرف التجارية","معسكر - الحوسبة السحابية":"جامعات ومجتمع","معسكر - أنظمة الشبكات":"ورش تنظيمية وصحية","exhibition / families":"ترفيه وعائلات","معسكر - الأمن السيبراني":"جامعات ومجتمع","معسكر - هندسة البرمجيات":"ورش تنظيمية وصحية","conference":"فعاليات الغرف التجارية","conference-forum":"مؤتمرات ومنتديات","معسكر - علم البيانات والذكاء الاصطناعي":"جامعات ومجتمع","artificial intelligence":"مؤتمرات ومنتديات","public holidays":"ترفيه وعائلات","banking and ai conference":"مؤتمرات ومنتديات","enterprise ai conference":"مؤتمرات ومنتديات","summit":"مؤتمرات ومنتديات","chamber event":"فعاليات الغرف التجارية","forum":"مؤتمرات ومنتديات","venue event":"معارض وتجارية","business forum":"فعاليات الغرف التجارية","awards":"جوائز وتكريم","architecture design festival":"ترفيه وعائلات","destination event":"علوم وفضاء","national day":"جوائز وتكريم","لقاء":"فعاليات الغرف التجارية","skills":"تدريب تقني","space":"علوم وفضاء","academic event":"جامعات ومجتمع","ورشة عمل":"فعاليات الغرف التجارية","دورة تدريبية":"فعاليات الغرف التجارية","ملتقى":"فعاليات الغرف التجارية","اجتماع":"فعاليات الغرف التجارية","فعالية فوانيس":"فعاليات الغرف التجارية","التوطين":"فعاليات الغرف التجارية","space education":"علوم وفضاء","auction":"معارض وتجارية","الاتصالات وتقنية المعلومات":"فعاليات الغرف التجارية","ريادة الأعمال":"فعاليات الغرف التجارية","football match":"رياضة وفعاليات جماهيرية","business reception":"فعاليات الغرف التجارية","roadshow":"تدريب تقني","incubator":"ألعاب ورياضات إلكترونية","training":"فعاليات الغرف التجارية","career fair":"فعاليات الغرف التجارية","gaming program":"ألعاب ورياضات إلكترونية","technology bootcamp":"ألعاب ورياضات إلكترونية","digital series":"ألعاب ورياضات إلكترونية","حفل تكريم":"فعاليات الغرف التجارية","ندوة":"فعاليات الغرف التجارية","حفل تدشين":"فعاليات الغرف التجارية","ورش عمل":"فعاليات الغرف التجارية","ai entrepreneurship":"ألعاب ورياضات إلكترونية","منتدى":"فعاليات الغرف التجارية","business event":"فعاليات الغرف التجارية","مؤتمر":"فعاليات الغرف التجارية","business gathering":"فعاليات الغرف التجارية","لقاء حواري":"فعاليات الغرف التجارية","jeddah chamber":"فعاليات الغرف التجارية","وفد تجاري":"فعاليات الغرف التجارية","sports championship":"رياضة وفعاليات جماهيرية","accelerator":"ألعاب ورياضات إلكترونية","tourism":"فعاليات الغرف التجارية"};
     const cityAr = (city) => CITY_AR[city] || city || '';
     const categoryAr = (category) => CATEGORY_AR[String(category || '').trim().toLowerCase()] || category || 'عام';
     const controls = {
@@ -1758,6 +1766,14 @@
 
 
 
+
+
+
+
+
+
+
+
     function applyInitialSearchQuery() {
       const params = new URLSearchParams(window.location.search);
       const query = (params.get('q') || params.get('search') || params.get('query') || '').trim();
@@ -1780,6 +1796,22 @@
     });
     if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(() => {});
   </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
