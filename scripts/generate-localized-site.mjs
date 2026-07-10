@@ -303,10 +303,20 @@ function publicPathsFromSitemap() {
   const xml = fs.readFileSync(path.join(distDir, 'sitemap.xml'), 'utf8');
   const paths = [];
   for (const match of xml.matchAll(/<loc>https:\/\/eventme\.live\/?([^<]*)<\/loc>/g)) {
-    const relative = decodeURIComponent(match[1] || 'index.html').replace(/^\/+/, '') || 'index.html';
+    const relative = (decodeURIComponent(match[1] || 'index.html').replace(/^\/+/, '') || 'index.html').normalize('NFC');
     if (relative.endsWith('.html') && !relative.startsWith('en/') && !ownerOnly.has(relative)) paths.push(relative);
   }
   return [...new Set(paths)];
+}
+
+function resolveUnicodePath(relativePath) {
+  const direct = path.join(distDir, relativePath);
+  if (fs.existsSync(direct)) return direct;
+  const directory = path.dirname(direct);
+  if (!fs.existsSync(directory)) return null;
+  const target = path.basename(relativePath).normalize('NFC');
+  const match = fs.readdirSync(directory).find((name) => name.normalize('NFC') === target);
+  return match ? path.join(directory, match) : null;
 }
 
 function languageCss() {
@@ -718,8 +728,8 @@ function main() {
   const routes = [];
 
   for (const relativePath of paths) {
-    const sourcePath = path.join(distDir, relativePath);
-    if (!fs.existsSync(sourcePath)) continue;
+    const sourcePath = resolveUnicodePath(relativePath);
+    if (!sourcePath) throw new Error(`Sitemap route has no generated source page: ${relativePath}`);
     const source = fs.readFileSync(sourcePath, 'utf8');
     fs.writeFileSync(sourcePath, prepareArabic(source, relativePath));
     const destination = path.join(enDir, relativePath);
