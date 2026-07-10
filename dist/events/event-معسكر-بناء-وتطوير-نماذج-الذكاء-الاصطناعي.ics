@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:معسكر بناء وتطوير نماذج الذكاء الاصطناعي | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي@eventme.live
+DTSTAMP:20260710T023614Z
+DTSTART:20260906T130000Z
+DTEND:20261112T170000Z
+SUMMARY:معسكر بناء وتطوير نماذج الذكاء الاصطناعي
+DESCRIPTION:يهدف المعسكر إلى تعريف المشاركين بالمفاهيم الشاملة والمتقدمة المتعلقة بعلم الذكاء الاصطناعي، مع التركيز على بناء أساس قوي في مجالات تعلم الآلة والتعلم العميق باستخدام لغة Python، سيكتسب المشاركون خلال المعسكر فهمًا عميقًا لطرق استخدام ال... المصدر الرسمي: أكاديمية طويق.
+LOCATION:الرياض - المقر الرئيسي
+URL:https://eventme.live/events/event-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي.html
+END:VEVENT
+END:VCALENDAR

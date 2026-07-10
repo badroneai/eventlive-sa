@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-09T20:13:09.547Z",
+  "generated_at": "2026-07-10T02:33:38.833Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 27,
-    "enriched": 27,
+    "targets": 20,
+    "enriched": 20,
     "failed": 0
   },
   "enriched": [
@@ -40,7 +40,7 @@
       "requirements": 6
     },
     {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-9",
+      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python",
       "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
       "slug": "4yOEV7Qq",
       "goals": 12,
@@ -62,62 +62,6 @@
       "goals": 8,
       "features": 6,
       "requirements": 10
-    },
-    {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-8",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
-      "slug": "4yOEV7Qq",
-      "goals": 12,
-      "features": 6,
-      "requirements": 11
-    },
-    {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-7",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
-      "slug": "4yOEV7Qq",
-      "goals": 12,
-      "features": 6,
-      "requirements": 11
-    },
-    {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-6",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
-      "slug": "4yOEV7Qq",
-      "goals": 12,
-      "features": 6,
-      "requirements": 11
-    },
-    {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-5",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
-      "slug": "4yOEV7Qq",
-      "goals": 12,
-      "features": 6,
-      "requirements": 11
-    },
-    {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-4",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
-      "slug": "4yOEV7Qq",
-      "goals": 12,
-      "features": 6,
-      "requirements": 11
-    },
-    {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-3",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
-      "slug": "4yOEV7Qq",
-      "goals": 12,
-      "features": 6,
-      "requirements": 11
-    },
-    {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
-      "slug": "4yOEV7Qq",
-      "goals": 12,
-      "features": 6,
-      "requirements": 11
     },
     {
       "id": "event-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات",

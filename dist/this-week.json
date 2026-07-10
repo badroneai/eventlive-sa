@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-09T13:25:15.876Z",
+  "generated_at": "2026-07-10T02:36:14.055Z",
   "platform": "EventLive",
   "scope": "this-week",
   "window_hours": 168,
-  "count": 21,
+  "count": 24,
   "events": [
     {
       "id": "event-registration-for-international-research-competition-on-non-terrestrial-n",
@@ -46,23 +46,13 @@
       "live_schedule_ready": false
     },
     {
-      "id": "event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone",
-      "title": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
-      "url": "./events/event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone.html",
-      "city": "ثول",
-      "starts_at": "2026-07-09T19:30:00+03:00",
-      "ends_at": "2026-07-09T23:59:00+03:00",
-      "status": "upcoming",
-      "live_schedule_ready": true
-    },
-    {
       "id": "event-unstable",
       "title": "Unstable",
       "url": "./events/event-unstable.html",
       "city": "الرياض",
       "starts_at": "2026-07-10T00:00:00+03:00",
       "ends_at": "2026-07-11T00:00:00+03:00",
-      "status": "upcoming",
+      "status": "live",
       "live_schedule_ready": false
     },
     {
@@ -96,6 +86,16 @@
       "live_schedule_ready": true
     },
     {
+      "id": "event-application-deadline-2030-leaders",
+      "title": "2030 Leaders",
+      "url": "./events/event-application-deadline-2030-leaders.html",
+      "city": "السعودية",
+      "starts_at": "2026-07-12T09:00:00+03:00",
+      "ends_at": "2026-07-12T23:59:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
       "id": "event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م",
       "title": "أسبوع العقار والمقاولات 12- 16 يوليو 2026م",
       "url": "./events/event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م.html",
@@ -122,6 +122,16 @@
       "city": "عن بعد",
       "starts_at": "2026-07-12T09:00:00+03:00",
       "ends_at": "2026-07-14T18:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-mishkat-summer-camp",
+      "title": "Mishkat Summer Camp",
+      "url": "./events/event-mishkat-summer-camp.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-12T09:00:00+03:00",
+      "ends_at": "2026-08-06T13:00:00+03:00",
       "status": "upcoming",
       "live_schedule_ready": false
     },
@@ -196,6 +206,16 @@
       "live_schedule_ready": false
     },
     {
+      "id": "event-نقل-مبيدات-آفات-الصحة-العامة-2",
+      "title": "نقل مبيدات آفات الصحة العامة",
+      "url": "./events/event-نقل-مبيدات-آفات-الصحة-العامة-2.html",
+      "city": "عن بعد",
+      "starts_at": "2026-07-13T10:00:00+03:00",
+      "ends_at": "2026-07-13T11:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
       "id": "event-semi-finals-join-the-celebration-at-the-fifa-fan-zone",
       "title": "Semi-Finals: Join the Celebration at the FIFA Fan Zone",
       "url": "./events/event-semi-finals-join-the-celebration-at-the-fifa-fan-zone.html",
@@ -214,6 +234,16 @@
       "ends_at": "2026-07-15T11:00:00+03:00",
       "status": "upcoming",
       "live_schedule_ready": true
+    },
+    {
+      "id": "event-wrth-summer-art-craft-program",
+      "title": "Wrth Summer Art & Craft Program",
+      "url": "./events/event-wrth-summer-art-craft-program.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-16T15:30:00+03:00",
+      "ends_at": "2026-07-18T22:30:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
     }
   ]
 }

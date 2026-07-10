@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:تقييم سلامة المنتج التجميلي وملف معلومات المنتج | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج@eventme.live
+DTSTAMP:20260710T023614Z
+DTSTART:20260721T063000Z
+DTEND:20260722T110000Z
+SUMMARY:تقييم سلامة المنتج التجميلي وملف معلومات المنتج
+DESCRIPTION:تقييم سلامة المنتج التجميلي وملف معلومات المنتج. نوع الورشة: عامة. لغة العرض: الإنجليزية. المصدر الرسمي: الهيئة العامة للغذاء والدواء.
+LOCATION:Riyadh
+URL:https://eventme.live/events/event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج.html
+END:VEVENT
+END:VCALENDAR

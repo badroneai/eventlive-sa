@@ -18,6 +18,7 @@ const probeScope = String(process.env.EVENTLIVE_BROWSER_SCOPE || 'priority').toL
 const probeLimit = Math.max(1, Number(process.env.EVENTLIVE_BROWSER_PROBE_LIMIT || 8));
 const waitMs = Math.max(1000, Number(process.env.EVENTLIVE_BROWSER_WAIT_MS || 4500));
 const timeoutMs = Math.max(10000, Number(process.env.EVENTLIVE_BROWSER_TIMEOUT_MS || 60000));
+const resultMaxAgeMs = Math.max(60_000, Number(process.env.EVENTLIVE_BROWSER_RESULT_MAX_AGE_MS || 12 * 60 * 60 * 1000));
 const maxBodyPreview = Math.max(240, Number(process.env.EVENTLIVE_BROWSER_BODY_PREVIEW || 1800));
 const userAgent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36';
 
@@ -43,16 +44,41 @@ function isPolicyProtected(source) {
     || source.boundary === 'partnership_or_api_only';
 }
 
-function readCollectionZeroYieldIds() {
-  if (!exists(collectionReportPath)) return new Set();
+function readCollectionProblems() {
+  if (!exists(collectionReportPath)) return new Map();
   const report = readJson(collectionReportPath);
-  return new Set((report.sources || [])
-    .filter((source) => source.status === 'ok' && Number(source.extracted || 0) === 0)
-    .map((source) => source.id));
+  return new Map((report.sources || [])
+    .filter((source) => source.status === 'error' || Number(source.extracted || 0) === 0)
+    .map((source) => [source.id, source]));
+}
+
+function rankProbeSources(sources, collectionProblems, limit = probeLimit) {
+  const rank = (source) => {
+    const problem = collectionProblems.get(source.id);
+    if (problem?.status === 'error') return 0;
+    if (problem && Number(problem.extracted || 0) === 0) return 1;
+    if (source.ring === 'extractor-backlog') return 2;
+    return 9;
+  };
+  return [...sources]
+    .filter((source) => rank(source) < 9)
+    .filter((source) => !isPolicyProtected(source))
+    .sort((a, b) => rank(a) - rank(b) || Number(a.priority || 999) - Number(b.priority || 999))
+    .slice(0, limit);
+}
+
+function mergeRecentProbeResults(previousReport, currentResults, currentTime = Date.now()) {
+  const previousAt = new Date(previousReport?.generated_at || 0).getTime();
+  const recentPrevious = Number.isFinite(previousAt) && currentTime - previousAt <= resultMaxAgeMs
+    ? (previousReport.sources || [])
+    : [];
+  const merged = new Map(recentPrevious.map((source) => [source.id, source]));
+  for (const source of currentResults) merged.set(source.id, source);
+  return [...merged.values()].sort((a, b) => Number(a.priority || 999) - Number(b.priority || 999));
 }
 
 function chooseProbeSources(registry) {
-  const zeroYieldIds = readCollectionZeroYieldIds();
+  const collectionProblems = readCollectionProblems();
   const sources = [...(registry.sources || [])].sort((a, b) => Number(a.priority || 999) - Number(b.priority || 999));
   if (selectedIds.length) {
     return sources.filter((source) => selectedIds.includes(source.id));
@@ -62,10 +88,7 @@ function chooseProbeSources(registry) {
       .filter((source) => !isPolicyProtected(source))
       .slice(0, probeLimit);
   }
-  return sources
-    .filter((source) => zeroYieldIds.has(source.id) || source.ring === 'extractor-backlog')
-    .filter((source) => !isPolicyProtected(source))
-    .slice(0, probeLimit);
+  return rankProbeSources(sources, collectionProblems, probeLimit);
 }
 
 function isLikelyApiUrl(url = '') {
@@ -474,6 +497,8 @@ async function main() {
     await browser.close().catch(() => {});
   }
 
+  const previousReport = exists(reportJsonPath) ? readJson(reportJsonPath) : {};
+  const mergedResults = mergeRecentProbeResults(previousReport, results);
   const report = {
     generated_at: generatedAt,
     source_registry: rel(registryPath),
@@ -483,14 +508,16 @@ async function main() {
       selected_ids: selectedIds,
       scope: probeScope,
       limit: selectedIds.length ? sources.length : probeLimit,
+      probed_this_run: results.length,
+      fresh_results_available: mergedResults.length,
       wait_ms: waitMs,
       timeout_ms: timeoutMs
     },
     methodology: 'Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.',
     totals: {
-      ...totalsFor(results)
+      ...totalsFor(mergedResults)
     },
-    sources: results
+    sources: mergedResults
   };
   writeJson(reportJsonPath, report);
   fs.writeFileSync(reportMdPath, renderMarkdown(report), 'utf8');
@@ -515,6 +542,8 @@ export {
   classifyProbe,
   extractEndpointCandidates,
   isLikelyApiUrl,
+  mergeRecentProbeResults,
+  rankProbeSources,
   renderMarkdown,
   shouldCaptureNetwork
 };

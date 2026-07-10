@@ -1,29 +1,50 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-07-09T12:00:15.495Z",
+  "generated_at": "2026-07-10T02:36:13.771Z",
   "status": "PASS",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
-    "sources": 69,
-    "candidates": 184,
-    "matched_candidates": 157,
-    "auto_publish_sources": 13,
-    "candidate_only_sources": 10,
+    "sources": 72,
+    "candidates": 193,
+    "matched_candidates": 165,
+    "auto_publish_sources": 14,
+    "candidate_only_sources": 11,
     "partnership_required_sources": 4,
     "blocked_or_closed_sources": 0,
-    "manual_review_sources": 42
+    "manual_review_sources": 43,
+    "collection_attempted": 34,
+    "productive_sources": 22,
+    "collector_errors": 0
   },
   "policies": {
     "partnership_required": 4,
-    "auto_publish": 13,
-    "candidate_only": 10,
-    "manual_review": 42
+    "auto_publish": 14,
+    "candidate_only": 11,
+    "manual_review": 43
   },
   "candidates_by_gate": {
-    "catalog-review": 155,
+    "catalog-review": 164,
     "duplicate-review": 13,
     "source-evidence": 16
   },
+  "funnel": {
+    "discovered_this_run": 193,
+    "candidate_queue": 193,
+    "evaluated_for_publish": 193,
+    "linked_existing": 162,
+    "published_new": 0,
+    "blocked": 31,
+    "secondary_promoted": 0,
+    "secondary_still_blocked": 29
+  },
+  "blocked_reasons": {
+    "possible duplicate already exists: event-esports-world-cup": 1,
+    "publication gate source-evidence is not auto-publishable": 16,
+    "confidence public-listing is not auto-publishable": 12,
+    "possible duplicate already exists: event-saudi-wood-expo-2026": 1,
+    "possible duplicate already exists: event-saudi-industrial-series-2": 1
+  },
+  "collector_error_sources": [],
   "sources": [
     {
       "id": "nec-saudi-events",
@@ -41,7 +62,7 @@
       "priority": 2,
       "trust_level": "official",
       "intake_policy": "official-feed-preferred",
-      "fetch_method": "html-calendar",
+      "fetch_method": "json-api",
       "candidate_gate": "human-review",
       "publish_policy": "auto_publish"
     },
@@ -552,7 +573,7 @@
       "trust_level": "official",
       "intake_policy": "official-feed-preferred",
       "fetch_method": "html-calendar",
-      "candidate_gate": "extraction",
+      "candidate_gate": "source-evidence",
       "publish_policy": "manual_review"
     },
     {
@@ -574,6 +595,36 @@
       "fetch_method": "html-listing",
       "candidate_gate": "duplicate-review",
       "publish_policy": "manual_review"
+    },
+    {
+      "id": "scega-exhibitions-conferences",
+      "name": "SCEGA ePortal Events",
+      "priority": 56,
+      "trust_level": "official",
+      "intake_policy": "official-feed-preferred",
+      "fetch_method": "html-calendar",
+      "candidate_gate": "human-review",
+      "publish_policy": "auto_publish"
+    },
+    {
+      "id": "ministry-commerce-events",
+      "name": "Ministry of Commerce Upcoming Events",
+      "priority": 57,
+      "trust_level": "official",
+      "intake_policy": "monitor-public",
+      "fetch_method": "html-calendar",
+      "candidate_gate": "source-evidence",
+      "publish_policy": "manual_review"
+    },
+    {
+      "id": "evento-sa-events",
+      "name": "Evento",
+      "priority": 58,
+      "trust_level": "official-marketplace",
+      "intake_policy": "candidate-only",
+      "fetch_method": "search-page",
+      "candidate_gate": "duplicate-review",
+      "publish_policy": "candidate_only"
     },
     {
       "id": "asharqia-chamber-events",

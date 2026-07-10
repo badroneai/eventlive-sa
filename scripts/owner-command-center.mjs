@@ -84,6 +84,9 @@ function readProjectState() {
   const launchSweep = safeReadJson('reports/site-launch-sweep.json', null);
   const visualSweep = safeReadJson('reports/site-visual-sweep.json', null);
   const sourceOps = safeReadJson('reports/source-ops-report.json', null);
+  const sourceCollection = safeReadJson('reports/source-collection-report.json', null);
+  const sourceAutoPublish = safeReadJson('reports/source-auto-publish-report.json', null);
+  const sourceSecondaryVerification = safeReadJson('reports/source-secondary-verification-report.json', null);
   const sourceHealthPublic = safeReadJson('dist/source-health.json', null);
   const distEvents = safeReadJson('dist/events.json', { events: [] });
   const deliveryStandard = safeReadJson('reports/delivery-readiness-standard-status.json', null);
@@ -98,6 +101,9 @@ function readProjectState() {
     launchSweep,
     visualSweep,
     sourceOps,
+    sourceCollection,
+    sourceAutoPublish,
+    sourceSecondaryVerification,
     sourceHealthPublic,
     deliveryStandard
   };
@@ -234,10 +240,26 @@ function buildHarvestStatus(state) {
   const policies = countBy(sources, (source) => source.publish_policy);
   const candidatesByGate = countBy(state.candidates, (candidate) => candidate.publication_gate || candidate.review_status);
   const matchedCandidates = state.candidates.filter((candidate) => candidate.matched_catalog_event_id).length;
+  const collectionRows = state.sourceCollection?.sources || [];
+  const collectorErrors = collectionRows.filter((source) => source.status === 'error');
+  const productiveSources = collectionRows.filter((source) => Number(source.extracted || 0) > 0);
+  const publishTotals = state.sourceAutoPublish?.totals || {};
+  const verificationTotals = state.sourceSecondaryVerification?.totals || {};
+  const blockedReasons = countBy(state.sourceAutoPublish?.blocked || [], (candidate) => candidate.reason || 'unknown');
+  const funnel = {
+    discovered_this_run: Number(state.sourceCollection?.candidates_discovered || 0),
+    candidate_queue: Number(state.sourceCollection?.candidates_written || state.candidates.length),
+    evaluated_for_publish: Number(publishTotals.candidates_seen || 0),
+    linked_existing: Number(publishTotals.linked_existing || 0),
+    published_new: Number(publishTotals.published || 0),
+    blocked: Number(publishTotals.blocked || 0),
+    secondary_promoted: Number(verificationTotals.promoted || 0),
+    secondary_still_blocked: Number(verificationTotals.still_blocked || 0)
+  };
   const report = {
     schema: 'eventlive.harvest-os-status.v1',
     generated_at: generatedAt,
-    status: sources.length > 0 && state.sourceOps ? 'PASS' : 'NEEDS_WORK',
+    status: sources.length > 0 && state.sourceOps && collectorErrors.length === 0 ? 'PASS' : 'NEEDS_WORK',
     operating_rule: 'Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.',
     totals: {
       sources: sources.length,
@@ -247,10 +269,19 @@ function buildHarvestStatus(state) {
       candidate_only_sources: policies.candidate_only || 0,
       partnership_required_sources: policies.partnership_required || 0,
       blocked_or_closed_sources: policies.blocked_or_closed || 0,
-      manual_review_sources: policies.manual_review || 0
+      manual_review_sources: policies.manual_review || 0,
+      collection_attempted: collectionRows.length,
+      productive_sources: productiveSources.length,
+      collector_errors: collectorErrors.length
     },
     policies,
     candidates_by_gate: candidatesByGate,
+    funnel,
+    blocked_reasons: blockedReasons,
+    collector_error_sources: collectorErrors.map((source) => ({
+      id: source.id,
+      note: source.note || 'collector error'
+    })),
     sources
   };
   writeJson(path.join(reportsDir, 'source-harvest-os-status.json'), report);
@@ -269,6 +300,20 @@ function buildHarvestStatus(state) {
     `- Auto-publish sources: ${report.totals.auto_publish_sources}`,
     `- Candidate-only sources: ${report.totals.candidate_only_sources}`,
     `- Partnership-required sources: ${report.totals.partnership_required_sources}`,
+    `- Productive sources / attempted: ${report.totals.productive_sources}/${report.totals.collection_attempted}`,
+    `- Collector errors: ${report.totals.collector_errors}`,
+    '',
+    '## Publication Funnel',
+    '',
+    mdTable(['Stage', 'Count'], Object.entries(report.funnel).map(([stage, value]) => [stage, value])),
+    '',
+    '## Blocked Reasons',
+    '',
+    mdTable(['Reason', 'Count'], Object.entries(report.blocked_reasons).sort((a, b) => b[1] - a[1])),
+    '',
+    '## Collector Errors',
+    '',
+    mdTable(['Source', 'Reason'], report.collector_error_sources.map((source) => [source.id, source.note])),
     '',
     mdTable(['Source', 'Policy', 'Trust', 'Gate'], sources.slice(0, 80).map((source) => [source.name || source.id, source.publish_policy, source.trust_level, source.candidate_gate])),
     ''
@@ -404,7 +449,11 @@ function buildCommandCenter(state, readiness, design, harvest, analytics) {
       ended_events: publicEvents.filter((event) => event.status === 'ended').length,
       delivery_standard_pass: state.deliveryStandard?.totals?.PASS || 0,
       delivery_standard_partial: state.deliveryStandard?.totals?.PARTIAL || 0,
-      delivery_standard_not_started: state.deliveryStandard?.totals?.NOT_STARTED || 0
+      delivery_standard_not_started: state.deliveryStandard?.totals?.NOT_STARTED || 0,
+      published_last_sync: harvest.funnel?.published_new || 0,
+      linked_existing_last_sync: harvest.funnel?.linked_existing || 0,
+      blocked_last_sync: harvest.funnel?.blocked || 0,
+      collector_errors: harvest.totals?.collector_errors || 0
     },
     gates: gates.map(([name, gateStatus, evidence]) => ({ name, status: gateStatus, evidence })),
     decisions: decisions.map(([id, title, note]) => ({ id, title, note })),
@@ -437,6 +486,8 @@ function buildCommandCenter(state, readiness, design, harvest, analytics) {
     `- Registered sources: ${report.totals.registered_sources}`,
     `- Live-ready events: ${report.totals.live_ready}`,
     `- Ended events: ${report.totals.ended_events}`,
+    `- Last sync published / linked / blocked: ${report.totals.published_last_sync}/${report.totals.linked_existing_last_sync}/${report.totals.blocked_last_sync}`,
+    `- Collector errors: ${report.totals.collector_errors}`,
     `- Delivery standard PASS/PARTIAL/NOT_STARTED: ${report.totals.delivery_standard_pass}/${report.totals.delivery_standard_partial}/${report.totals.delivery_standard_not_started}`,
     '',
     '## Gates',
@@ -462,7 +513,17 @@ function buildCommandCenter(state, readiness, design, harvest, analytics) {
       <article class="card"><span class="muted">مصادر مسجلة</span><b>${report.totals.registered_sources}</b></article>
       <article class="card"><span class="muted">جداول حية</span><b>${report.totals.live_ready}</b></article>
       <article class="card"><span class="muted">فعاليات منتهية</span><b>${report.totals.ended_events}</b></article>
+      <article class="card"><span class="muted">نُشرت آخر دورة</span><b>${report.totals.published_last_sync}</b></article>
+      <article class="card"><span class="muted">رُبطت بموجود</span><b>${report.totals.linked_existing_last_sync}</b></article>
+      <article class="card"><span class="muted">محجوبة للتحقق</span><b>${report.totals.blocked_last_sync}</b></article>
+      <article class="card"><span class="muted">أخطاء الجوامع</span><b>${report.totals.collector_errors}</b></article>
     </div>
+    <h2>قمع الجلب والنشر</h2>
+    <table><tr><th>المرحلة</th><th>العدد</th></tr>${Object.entries(harvest.funnel || {}).map(([stage, value]) => `<tr><td><code>${htmlEscape(stage)}</code></td><td>${value}</td></tr>`).join('')}</table>
+    <h2>لماذا لم تُنشر المرشحات؟</h2>
+    <table><tr><th>السبب</th><th>العدد</th></tr>${Object.entries(harvest.blocked_reasons || {}).sort((a, b) => b[1] - a[1]).map(([reason, value]) => `<tr><td>${htmlEscape(reason)}</td><td>${value}</td></tr>`).join('')}</table>
+    <h2>مصادر تحتاج إصلاحًا</h2>
+    <table><tr><th>المصدر</th><th>العلة</th></tr>${(harvest.collector_error_sources || []).map((source) => `<tr><td><code>${htmlEscape(source.id)}</code></td><td>${htmlEscape(source.note)}</td></tr>`).join('')}</table>
     <h2>البوابات</h2>
     <table><tr><th>البوابة</th><th>الحالة</th><th>الدليل</th></tr>${report.gates.map((gate) => `<tr><td>${htmlEscape(gate.name)}</td><td><span class="pill ${gate.status}">${htmlEscape(gate.status)}</span></td><td><code>${htmlEscape(gate.evidence)}</code></td></tr>`).join('')}</table>
     <h2>قرارات تحتاج المالك</h2>

@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-07-09T20:13:09.090Z",
+  "published_at": "2026-07-10T02:30:50.941Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -7,18 +7,16 @@
   "candidates_seen": 193,
   "totals": {
     "candidates_seen": 193,
-    "published": 1,
-    "linked_existing": 163,
-    "blocked": 29,
-    "reconciled": 164
+    "published": 0,
+    "linked_existing": 162,
+    "blocked": 31,
+    "reconciled": 162
   },
-  "published": [
-    {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45",
-      "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-9",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python"
-    }
-  ],
+  "duplicate_catalog_rows_removed": 0,
+  "duplicate_catalog_rows": [],
+  "canonical_event_ids_remapped": 0,
+  "canonical_event_id_remaps": [],
+  "published": [],
   "linked_existing": [
     {
       "candidate_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c",
@@ -267,12 +265,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-saudi-university-events-quarter-finals-join-the-celebration-at-the-fifa-fan-zone-20260709-ce09a5c4",
-      "event_id": "event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone",
-      "title": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-mdlbeast-events-unstable-20260710-5647df2e",
       "event_id": "event-unstable",
       "title": "Unstable",
@@ -316,7 +308,7 @@
     },
     {
       "candidate_id": "candidate-misk-hub-programs-application-deadline-2030-leaders-20260712-68dd4c4c",
-      "event_id": "event-application-deadline-2030-leaders-2",
+      "event_id": "event-application-deadline-2030-leaders",
       "title": "Application deadline: 2030 Leaders",
       "reason": "already linked to catalog event"
     },
@@ -393,6 +385,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45",
+      "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python",
+      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-saudi-university-events-fifa-world-cup-2026-final-celebrate-footballs-biggest-night-at-the-kaust-20260719-c9d0e20a",
       "event_id": "event-fifa-world-cup-2026-final-celebrate-footballs-biggest-night-at-the-kaust",
       "title": "FIFA World Cup 2026 Final: Celebrate Football's Biggest Night at the KAUST Fan Zone",
@@ -408,6 +406,12 @@
       "candidate_id": "candidate-sfda-events-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج-20260721-9858e813",
       "event_id": "event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج",
       "title": "تقييم سلامة المنتج التجميلي وملف معلومات المنتج",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-jazan-chamber-events-متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة-20260721-8e0bf671",
+      "event_id": "event-متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة",
+      "title": "متطلبات نظام إدارة المرافق ISO 41001 للمنشآت الصغيرة والمتوسطة",
       "reason": "already linked to catalog event"
     },
     {
@@ -534,18 +538,6 @@
       "candidate_id": "candidate-rfecc-whats-on-saudi-logistic-warehousing-expo-20260830-ff3565ba",
       "event_id": "event-saudi-logistic-038-warehousing-expo",
       "title": "Saudi Logistic & Warehousing Expo",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-saudi-wood-expo-2026-20260830-b4d44be4",
-      "event_id": "event-saudi-wood-expo-2026",
-      "title": "Saudi Wood Expo 2026",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-saudi-industrial-series-20260830-c10ad399",
-      "event_id": "event-saudi-industrial-series-2",
-      "title": "Saudi Industrial Series",
       "reason": "already linked to catalog event"
     },
     {
@@ -1016,6 +1008,11 @@
       "reason": "confidence public-listing is not auto-publishable"
     },
     {
+      "candidate_id": "candidate-eye-of-riyadh-events-sunaa-2026-20260818-e3819fa8",
+      "title": "SUNAA 2026",
+      "reason": "confidence public-listing is not auto-publishable"
+    },
+    {
       "candidate_id": "candidate-eye-of-riyadh-events-smart-data-ai-summit-20260826-f9946ea8",
       "title": "Smart Data & AI Summit",
       "reason": "confidence public-listing is not auto-publishable"
@@ -1024,6 +1021,11 @@
       "candidate_id": "candidate-eye-of-riyadh-events-hrse-ksa-20260830-6945a87a",
       "title": "HRSE KSA",
       "reason": "confidence public-listing is not auto-publishable"
+    },
+    {
+      "candidate_id": "candidate-eye-of-riyadh-events-saudi-wood-expo-2026-20260830-b4d44be4",
+      "title": "Saudi Wood Expo 2026",
+      "reason": "possible duplicate already exists: event-saudi-wood-expo-2026"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-big-5-construct-saudi-20260830-2238e3a0",
@@ -1036,14 +1038,14 @@
       "reason": "confidence public-listing is not auto-publishable"
     },
     {
+      "candidate_id": "candidate-eye-of-riyadh-events-saudi-industrial-series-20260830-c10ad399",
+      "title": "Saudi Industrial Series",
+      "reason": "possible duplicate already exists: event-saudi-industrial-series-2"
+    },
+    {
       "candidate_id": "candidate-eye-of-riyadh-events-saudi-fm-clean-20260830-cbe48152",
       "title": "Saudi FM & Clean",
       "reason": "confidence public-listing is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-leap-2026-20260831-44ae74ee",
-      "title": "LEAP 2026",
-      "reason": "possible duplicate already exists: event-leap-2026"
     },
     {
       "candidate_id": "candidate-eventbrite-saudi-family-office-investment-meeting-riyadh-registration-fee-usd-580-20260902-82923462",
@@ -1071,13 +1073,13 @@
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
-      "candidate_id": "candidate-eventbrite-saudi-25th-wpc-energy-congress-20261011-5909609b",
-      "title": "25TH WPC Energy Congress",
+      "candidate_id": "candidate-eventbrite-saudi-information-session-with-ie-university-saudi-arabia-in-riyadh-20260907-2b4929f1",
+      "title": "Information Session With IE University Saudi Arabia in Riyadh",
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
-      "candidate_id": "candidate-eventbrite-saudi-12th-middle-east-banking-ai-analytics-summit-2026-20261014-cec80e9d",
-      "title": "12th Middle East Banking AI & Analytics Summit 2026",
+      "candidate_id": "candidate-eventbrite-saudi-25th-wpc-energy-congress-20261011-5909609b",
+      "title": "25TH WPC Energy Congress",
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {

@@ -1,23 +1,23 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-09T20:13:09.090Z
+- published_at: 2026-07-10T02:30:50.941Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 193
-- published_new: 1
-- linked_existing: 163
-- blocked_remaining: 29
+- published_new: 0
+- linked_existing: 162
+- blocked_remaining: 31
 
 ## Blocked summary
 
 - possible duplicate already exists: event-esports-world-cup: 1
 - publication gate source-evidence is not auto-publishable: 16
-- confidence public-listing is not auto-publishable: 11
-- possible duplicate already exists: event-leap-2026: 1
+- confidence public-listing is not auto-publishable: 12
+- possible duplicate already exists: event-saudi-wood-expo-2026: 1
+- possible duplicate already exists: event-saudi-industrial-series-2: 1
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45 | published | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-9 | معسكر تطوير تطبيقات الويب باستخدام لغة Python |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -59,7 +59,6 @@
 | candidate-tuwaiq-academy-bootcamps-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية-20260705-60b7f94b | linked-existing | event-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية | already linked to catalog event |
 | candidate-riyadh-city-events-esports-world-cup-20260706-b4b860e9 | linked-existing | event-esports-world-cup | already linked to catalog event |
 | candidate-saudi-university-events-registration-now-open-for-children-at-the-childhood-studies-center-for-t-20260707-a2624927 | linked-existing | event-registration-now-open-for-children-at-the-childhood-studies-center-for-t | already linked to catalog event |
-| candidate-saudi-university-events-quarter-finals-join-the-celebration-at-the-fifa-fan-zone-20260709-ce09a5c4 | linked-existing | event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone | already linked to catalog event |
 | candidate-mdlbeast-events-unstable-20260710-5647df2e | linked-existing | event-unstable | already linked to catalog event |
 | candidate-riyadh-city-events-pfl-mena-fight-night-20260710-0eafa4d0 | linked-existing | event-pfl-mena-fight-night | already linked to catalog event |
 | candidate-mdlbeast-events-beast-house-20260710-83049a2a | linked-existing | event-beast-house | already linked to catalog event |
@@ -67,7 +66,7 @@
 | candidate-monshaat-events-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م-20260712-1d4a3074 | linked-existing | event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م | already linked to catalog event |
 | candidate-future-skills-catalog-دورة-comptia-a-20260712-dd4c25aa | linked-existing | event-دورة-comptia-a | already linked to catalog event |
 | candidate-future-skills-catalog-security-operations-threat-detection-incident-response-عمليات-الأمن-السي-20260712-c94b7135 | linked-existing | event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي | already linked to catalog event |
-| candidate-misk-hub-programs-application-deadline-2030-leaders-20260712-68dd4c4c | linked-existing | event-application-deadline-2030-leaders-2 | already linked to catalog event |
+| candidate-misk-hub-programs-application-deadline-2030-leaders-20260712-68dd4c4c | linked-existing | event-application-deadline-2030-leaders | already linked to catalog event |
 | candidate-riyadh-city-events-mishkat-summer-camp-20260712-704761b4 | linked-existing | event-mishkat-summer-camp | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي-20260712-fd68b684 | linked-existing | event-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي | already linked to catalog event |
 | candidate-saudi-university-events-join-us-at-kaust-health-for-respiratory-health-day-20260712-27bf6068 | linked-existing | event-join-us-at-kaust-health-for-respiratory-health-day | already linked to catalog event |
@@ -80,9 +79,11 @@
 | candidate-sfda-events-متطلبات-الاستخدام-الآمن-للأجهزة-والمستلزمات-الطبية-لمراكز-الأسنان-20260715-228461a9 | linked-existing | event-متطلبات-الاستخدام-الآمن-للأجهزة-والمستلزمات-الطبية-لمراكز-الأسنان | already linked to catalog event |
 | candidate-riyadh-city-events-wrth-summer-art-craft-program-20260716-77021a48 | linked-existing | event-wrth-summer-art-craft-program | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-وتصنيع-الحلول-الهندسية-20260719-944bbe1b | linked-existing | event-معسكر-تصميم-وتصنيع-الحلول-الهندسية | already linked to catalog event |
+| candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45 | linked-existing | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python | already linked to catalog event |
 | candidate-saudi-university-events-fifa-world-cup-2026-final-celebrate-footballs-biggest-night-at-the-kaust-20260719-c9d0e20a | linked-existing | event-fifa-world-cup-2026-final-celebrate-footballs-biggest-night-at-the-kaust | already linked to catalog event |
 | candidate-sfda-events-دور-مقدمي-الرعاية-الصحية-وضباط-الاتصال-في-التعامل-مع-انذارات-السلامة-الص-20260721-56cf21b4 | linked-existing | event-دور-مقدمي-الرعاية-الصحية-وضباط-الاتصال-في-التعامل-مع-انذارات-السلامة-الص | already linked to catalog event |
 | candidate-sfda-events-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج-20260721-9858e813 | linked-existing | event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج | already linked to catalog event |
+| candidate-jazan-chamber-events-متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة-20260721-8e0bf671 | linked-existing | event-متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة | already linked to catalog event |
 | candidate-riyadh-city-events-summer-splash-running-event-20260725-0b63acb2 | linked-existing | event-summer-splash-running-event | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي-20260726-12263779 | linked-existing | event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل-20260726-aa1669c2 | linked-existing | event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل | already linked to catalog event |
@@ -104,8 +105,6 @@
 | candidate-tuwaiq-academy-bootcamps-معسكر-أساسيات-الأمن-السيبراني-20260823-da0b3686 | linked-existing | event-معسكر-أساسيات-الأمن-السيبراني | already linked to catalog event |
 | candidate-dhahran-expo-calendar-offshore-technology-innovation-technical-conference-expo-offshore-arabia-20260824-18d15b29 | linked-existing | event-offshore-technology-innovation-technical-conference-expo-offshore-arabia | already linked to catalog event |
 | candidate-rfecc-whats-on-saudi-logistic-warehousing-expo-20260830-ff3565ba | linked-existing | event-saudi-logistic-038-warehousing-expo | already linked to catalog event |
-| candidate-eye-of-riyadh-events-saudi-wood-expo-2026-20260830-b4d44be4 | linked-existing | event-saudi-wood-expo-2026 | already linked to catalog event |
-| candidate-eye-of-riyadh-events-saudi-industrial-series-20260830-c10ad399 | linked-existing | event-saudi-industrial-series-2 | already linked to catalog event |
 | candidate-riyadh-city-events-merath-middle-east-museums-heritage-expo-20260830-822a8145 | linked-existing | event-merath-middle-east-museums-heritage-expo | already linked to catalog event |
 | candidate-riyadh-city-events-saudi-light-and-sound-sls-expo-20260830-5ef5389b | linked-existing | event-saudi-light-and-sound-sls-expo | already linked to catalog event |
 | candidate-riyadh-city-events-saudi-entertainment-and-amusement-expo-20260830-9a81c6d8 | linked-existing | event-saudi-entertainment-and-amusement-expo | already linked to catalog event |
@@ -184,19 +183,21 @@
 | candidate-eye-of-riyadh-events-esports-world-cup-20260706-13ed17c1 | blocked | - | possible duplicate already exists: event-esports-world-cup |
 | candidate-eventbrite-saudi-dubai-property-expo-in-al-khobar-17th-18th-july-2026-danube-20260717-2dd8b8b7 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eye-of-riyadh-events-oxford-future-of-real-estate-programme-20260805-7c9ee195 | blocked | - | confidence public-listing is not auto-publishable |
+| candidate-eye-of-riyadh-events-sunaa-2026-20260818-e3819fa8 | blocked | - | confidence public-listing is not auto-publishable |
 | candidate-eye-of-riyadh-events-smart-data-ai-summit-20260826-f9946ea8 | blocked | - | confidence public-listing is not auto-publishable |
 | candidate-eye-of-riyadh-events-hrse-ksa-20260830-6945a87a | blocked | - | confidence public-listing is not auto-publishable |
+| candidate-eye-of-riyadh-events-saudi-wood-expo-2026-20260830-b4d44be4 | blocked | - | possible duplicate already exists: event-saudi-wood-expo-2026 |
 | candidate-eye-of-riyadh-events-big-5-construct-saudi-20260830-2238e3a0 | blocked | - | confidence public-listing is not auto-publishable |
 | candidate-eye-of-riyadh-events-hvac-r-saudi-arabia-20260830-857b2f5b | blocked | - | confidence public-listing is not auto-publishable |
+| candidate-eye-of-riyadh-events-saudi-industrial-series-20260830-c10ad399 | blocked | - | possible duplicate already exists: event-saudi-industrial-series-2 |
 | candidate-eye-of-riyadh-events-saudi-fm-clean-20260830-cbe48152 | blocked | - | confidence public-listing is not auto-publishable |
-| candidate-eye-of-riyadh-events-leap-2026-20260831-44ae74ee | blocked | - | possible duplicate already exists: event-leap-2026 |
 | candidate-eventbrite-saudi-family-office-investment-meeting-riyadh-registration-fee-usd-580-20260902-82923462 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-family-office-investment-riyadh-saudi-arabia-20260902-fc391e91 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-family-office-investment-summit-b2b-networking-for-investors-founders-20260902-7b861a03 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-sucession-planning-program-20260903-d2b52d25 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-jeddah-fintech-week-2026-20260905-8e9a03b6 | blocked | - | publication gate source-evidence is not auto-publishable |
+| candidate-eventbrite-saudi-information-session-with-ie-university-saudi-arabia-in-riyadh-20260907-2b4929f1 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-25th-wpc-energy-congress-20261011-5909609b | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-eventbrite-saudi-12th-middle-east-banking-ai-analytics-summit-2026-20261014-cec80e9d | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-15th-middle-east-enterprise-ai-analytics-summit-20261015-b7493a97 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-15th-middle-east-enterprise-ai-analytics-summit-20261015-e0aad1e6 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-riyadh-2026-venture-capital-world-summit-20261020-a3f5a1b8 | blocked | - | publication gate source-evidence is not auto-publishable |

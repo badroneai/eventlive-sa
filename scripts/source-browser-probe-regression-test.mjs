@@ -3,9 +3,49 @@ import {
   classifyProbe,
   extractEndpointCandidates,
   isLikelyApiUrl,
+  mergeRecentProbeResults,
+  rankProbeSources,
   renderMarkdown,
   shouldCaptureNetwork
 } from './source-browser-probe.mjs';
+
+const mergedProbeResults = mergeRecentProbeResults({
+  generated_at: new Date().toISOString(),
+  sources: [
+    { id: 'kept-source', priority: 2, status: 'ok' },
+    { id: 'reprobed-source', priority: 3, status: 'error' }
+  ]
+}, [
+  { id: 'reprobed-source', priority: 3, status: 'ok' },
+  { id: 'new-source', priority: 1, status: 'ok' }
+]);
+assert.deepEqual(
+  mergedProbeResults.map((source) => `${source.id}:${source.status}`),
+  ['new-source:ok', 'kept-source:ok', 'reprobed-source:ok'],
+  'fresh probe results must retain untouched sources and replace reprobed sources'
+);
+assert.deepEqual(
+  mergeRecentProbeResults({ generated_at: '2020-01-01T00:00:00.000Z', sources: [{ id: 'stale' }] }, [{ id: 'fresh', priority: 1 }]).map((source) => source.id),
+  ['fresh'],
+  'stale probe results must expire'
+);
+
+const rankedSources = rankProbeSources([
+  { id: 'zero-yield-high-priority', priority: 1 },
+  { id: 'collector-error', priority: 50 },
+  { id: 'extractor-backlog', priority: 3, ring: 'extractor-backlog' },
+  { id: 'healthy', priority: 2 },
+  { id: 'protected-error', priority: 4, intake_policy: 'partnership-needed' }
+], new Map([
+  ['zero-yield-high-priority', { status: 'ok', extracted: 0 }],
+  ['collector-error', { status: 'error', extracted: 0 }],
+  ['protected-error', { status: 'error', extracted: 0 }]
+]), 4);
+assert.deepEqual(
+  rankedSources.map((source) => source.id),
+  ['collector-error', 'zero-yield-high-priority', 'extractor-backlog'],
+  'collector errors must be probed before zero-yield and backlog sources without crossing protection policy'
+);
 
 const apiNetwork = [
   {

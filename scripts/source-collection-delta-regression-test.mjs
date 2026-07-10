@@ -124,4 +124,23 @@ assert.equal(mergedEnded[0].id, 'ended-corrected-time');
 assert.equal(mergedEnded[0].starts_at, '2026-06-16T18:00:00+03:00');
 assert.equal(mergedEnded[0].first_collected_at, '2026-07-05T00:00:00.000Z');
 
+const localeDuplicateEnded = mergeEndedEvents([{
+  id: 'ended-space-en',
+  source_label: 'Saudi Space Agency Events',
+  source_url: 'https://ssa.gov.sa/en/events/space-debris/',
+  title: 'Space Debris Conference',
+  city: 'Riyadh',
+  starts_at: '2026-01-26T10:00:00+03:00',
+  ends_at: '2026-01-27T18:00:00+03:00'
+}, {
+  id: 'ended-space-ar',
+  source_label: 'Saudi Space Agency Events',
+  source_url: 'https://ssa.gov.sa/ar/events/space-debris/',
+  title: 'Space Debris Conference',
+  city: 'Riyadh',
+  starts_at: '2026-01-26T10:00:00+03:00',
+  ends_at: '2026-01-27T18:00:00+03:00'
+}], []);
+assert.equal(localeDuplicateEnded.length, 1, 'existing Arabic/English source variants of one ended event must reconcile without rediscovery');
+
 console.log('TEST_OK source collection delta regression checks passed');

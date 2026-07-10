@@ -1,10 +1,10 @@
 # EventLive Delivery Readiness Status
 
-- Generated at: 2026-07-09T12:00:15.495Z
+- Generated at: 2026-07-10T02:36:13.771Z
 - Status: PASS
-- Catalog events: 161
-- Public events: 449
-- Live-ready: 52
+- Catalog events: 167
+- Public events: 435
+- Live-ready: 51
 
 | Gate | Status | Evidence |
 | --- | --- | --- |
@@ -12,5 +12,5 @@
 | البناء | PASS | build report حاضر ومحدث |
 | مسح الإطلاق | PASS | site-launch-sweep PASS |
 | المسح البصري | PASS | site-visual-sweep PASS |
-| أدلة المصادر | PASS | 449/449 فعالية لديها مصدر أو دليل |
-| الجداول الحية | PASS | 52 جداول حية جاهزة |
+| أدلة المصادر | PASS | 435/435 فعالية لديها مصدر أو دليل |
+| الجداول الحية | PASS | 51 جداول حية جاهزة |

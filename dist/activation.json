@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-09T13:25:15.876Z",
+  "generated_at": "2026-07-10T02:36:14.055Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "live-schedule-activation",
   "totals": {
-    "candidates": 126,
-    "urgent": 51,
-    "high": 13,
+    "candidates": 132,
+    "urgent": 55,
+    "high": 12,
     "needs_date": 0,
-    "source_groups": 16,
-    "basic_window_candidates": 126,
+    "source_groups": 18,
+    "basic_window_candidates": 132,
     "missing_window_candidates": 0
   },
   "focus": {
@@ -64,13 +64,13 @@
       "source_label": "Riyadh City Events",
       "source_url": "https://riyadh.sa/en/moment/events/item/event/29515",
       "source_host": "riyadh.sa",
-      "candidates": 38,
-      "urgent": 19,
+      "candidates": 40,
+      "urgent": 21,
       "high": 1,
-      "basic_windows": 38,
+      "basic_windows": 40,
       "missing_windows": 0,
       "route_counts": {
-        "source-detail-probe": 38
+        "source-detail-probe": 40
       },
       "next_event_starts_at": "2025-10-10T16:00:00+03:00",
       "example_events": [
@@ -140,20 +140,20 @@
         "label": "فحص صفحة المصدر",
         "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
       },
-      "impact_score": 574
+      "impact_score": 612
     },
     {
       "key": "Tuwaiq Academy Bootcamps and Programs",
       "source_label": "Tuwaiq Academy Bootcamps and Programs",
       "source_url": "https://tuwaiq.edu.sa/bootcamp/b64Yy4yX/view",
       "source_host": "tuwaiq.edu.sa",
-      "candidates": 22,
+      "candidates": 20,
       "urgent": 4,
-      "high": 9,
-      "basic_windows": 22,
+      "high": 6,
+      "basic_windows": 20,
       "missing_windows": 0,
       "route_counts": {
-        "training-program-parser": 22
+        "training-program-parser": 20
       },
       "next_event_starts_at": "2026-07-05T18:00:00+03:00",
       "example_events": [
@@ -223,7 +223,7 @@
         "label": "محلل برامج ودورات",
         "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
       },
-      "impact_score": 310
+      "impact_score": 276
     },
     {
       "key": "Ministry of Culture Commission Calendars",
@@ -313,13 +313,13 @@
       "source_label": "Visit Saudi Calendar",
       "source_url": "https://www.visitsaudi.com/en/riyadh/events/arabic-language-exhibition",
       "source_host": "visitsaudi.com",
-      "candidates": 11,
-      "urgent": 3,
+      "candidates": 12,
+      "urgent": 4,
       "high": 1,
-      "basic_windows": 11,
+      "basic_windows": 12,
       "missing_windows": 0,
       "route_counts": {
-        "official-calendar-probe": 11
+        "official-calendar-probe": 12
       },
       "next_event_starts_at": "2026-01-01T08:00:00+03:00",
       "example_events": [
@@ -360,6 +360,18 @@
           }
         },
         {
+          "id": "event-kashtah",
+          "title": "Kashtah",
+          "city": "عسير",
+          "starts_at": "2026-06-27T16:00:00+03:00",
+          "detail_url": "./events/event-kashtah.html",
+          "priority": {
+            "key": "urgent",
+            "label": "عاجل الآن",
+            "rank": 0
+          }
+        },
+        {
           "id": "event-international-falcon-breeders-auction",
           "title": "International Falcon Breeders Auction",
           "city": "الرياض",
@@ -370,18 +382,6 @@
             "label": "أولوية عالية",
             "rank": 1
           }
-        },
-        {
-          "id": "event-leap-2026",
-          "title": "LEAP 2026",
-          "city": "الرياض",
-          "starts_at": "2026-08-31T09:00:00+03:00",
-          "detail_url": "./events/event-leap-2026.html",
-          "priority": {
-            "key": "normal",
-            "label": "متابعة دورية",
-            "rank": 2
-          }
         }
       ],
       "acquisition": {
@@ -389,20 +389,20 @@
         "label": "فحص التقويم الرسمي",
         "next_action": "افتح صفحة التقويم أو الموسم وابحث عن برنامج الأيام، المواقع الفرعية، وساعات التشغيل المعلنة."
       },
-      "impact_score": 149
+      "impact_score": 168
     },
     {
       "key": "Misk Hub Programs",
       "source_label": "Misk Hub Programs",
       "source_url": "https://hub.misk.org.sa/programs/skills/misk-local-traineeship-program/",
       "source_host": "hub.misk.org.sa",
-      "candidates": 6,
-      "urgent": 2,
+      "candidates": 8,
+      "urgent": 3,
       "high": 2,
-      "basic_windows": 6,
+      "basic_windows": 8,
       "missing_windows": 0,
       "route_counts": {
-        "training-program-parser": 6
+        "training-program-parser": 8
       },
       "next_event_starts_at": "2026-04-01T09:00:00+03:00",
       "example_events": [
@@ -412,6 +412,18 @@
           "city": "الرياض",
           "starts_at": "2026-04-01T09:00:00+03:00",
           "detail_url": "./events/event-misk-local-traineeship-program.html",
+          "priority": {
+            "key": "urgent",
+            "label": "عاجل الآن",
+            "rank": 0
+          }
+        },
+        {
+          "id": "event-application-deadline-2030-leaders",
+          "title": "2030 Leaders",
+          "city": "السعودية",
+          "starts_at": "2026-07-12T09:00:00+03:00",
+          "detail_url": "./events/event-application-deadline-2030-leaders.html",
           "priority": {
             "key": "urgent",
             "label": "عاجل الآن",
@@ -453,18 +465,6 @@
             "label": "أولوية عالية",
             "rank": 1
           }
-        },
-        {
-          "id": "event-the-innovation-diwan",
-          "title": "The Innovation Diwan",
-          "city": "الرياض",
-          "starts_at": "2026-09-05T09:00:00+03:00",
-          "detail_url": "./events/event-the-innovation-diwan.html",
-          "priority": {
-            "key": "normal",
-            "label": "متابعة دورية",
-            "rank": 2
-          }
         }
       ],
       "acquisition": {
@@ -472,7 +472,7 @@
         "label": "محلل برامج ودورات",
         "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
       },
-      "impact_score": 90
+      "impact_score": 120
     },
     {
       "key": "Saudi Water Authority Events",
@@ -901,6 +901,65 @@
       "impact_score": 44
     },
     {
+      "key": "Saudi Universities and Technical Colleges",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_url": "https://kau.edu.sa/en/event/registration-now-open-for-children-at-the-childhood-studies-center-for-t",
+      "source_host": "kau.edu.sa",
+      "candidates": 3,
+      "urgent": 1,
+      "high": 0,
+      "basic_windows": 3,
+      "missing_windows": 0,
+      "route_counts": {
+        "campus-calendar-parser": 3
+      },
+      "next_event_starts_at": "2026-07-07T09:00:00+03:00",
+      "example_events": [
+        {
+          "id": "event-registration-now-open-for-children-at-the-childhood-studies-center-for-t",
+          "title": "Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH",
+          "city": "جدة",
+          "starts_at": "2026-07-07T09:00:00+03:00",
+          "detail_url": "./events/event-registration-now-open-for-children-at-the-childhood-studies-center-for-t.html",
+          "priority": {
+            "key": "urgent",
+            "label": "عاجل الآن",
+            "rank": 0
+          }
+        },
+        {
+          "id": "event-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco",
+          "title": "The KAUST Imaging and Characterization Core Lab presents: AI for Microscopy Workshop",
+          "city": "ثول",
+          "starts_at": "2026-09-07T00:00:00+03:00",
+          "detail_url": "./events/event-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco.html",
+          "priority": {
+            "key": "normal",
+            "label": "متابعة دورية",
+            "rank": 2
+          }
+        },
+        {
+          "id": "event-future-frontiers-for-businesses-catalysts-for-growth-in-a-transformation",
+          "title": "Future Frontiers for Businesses: Catalysts for Growth in a Transformational Economy",
+          "city": "جدة",
+          "starts_at": "2026-12-01T09:00:00+03:00",
+          "detail_url": "./events/event-future-frontiers-for-businesses-catalysts-for-growth-in-a-transformation.html",
+          "priority": {
+            "key": "normal",
+            "label": "متابعة دورية",
+            "rank": 2
+          }
+        }
+      ],
+      "acquisition": {
+        "route": "campus-calendar-parser",
+        "label": "محلل تقويم جامعي",
+        "next_action": "اجمع تفاصيل المكان داخل الحرم، الفقرات، ورابط التسجيل من صفحة التقويم الجامعي."
+      },
+      "impact_score": 41
+    },
+    {
       "key": "Invest Saudi Events",
       "source_label": "Invest Saudi Events",
       "source_url": "https://fii-institute.org/conference/fii-10th-edition",
@@ -958,53 +1017,6 @@
         "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
       },
       "impact_score": 33
-    },
-    {
-      "key": "Saudi Universities and Technical Colleges",
-      "source_label": "Saudi Universities and Technical Colleges",
-      "source_url": "https://kau.edu.sa/en/event/registration-now-open-for-children-at-the-childhood-studies-center-for-t",
-      "source_host": "kau.edu.sa",
-      "candidates": 2,
-      "urgent": 1,
-      "high": 0,
-      "basic_windows": 2,
-      "missing_windows": 0,
-      "route_counts": {
-        "campus-calendar-parser": 2
-      },
-      "next_event_starts_at": "2026-07-07T09:00:00+03:00",
-      "example_events": [
-        {
-          "id": "event-registration-now-open-for-children-at-the-childhood-studies-center-for-t",
-          "title": "Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH",
-          "city": "جدة",
-          "starts_at": "2026-07-07T09:00:00+03:00",
-          "detail_url": "./events/event-registration-now-open-for-children-at-the-childhood-studies-center-for-t.html",
-          "priority": {
-            "key": "urgent",
-            "label": "عاجل الآن",
-            "rank": 0
-          }
-        },
-        {
-          "id": "event-future-frontiers-for-businesses-catalysts-for-growth-in-a-transformation",
-          "title": "Future Frontiers for Businesses: Catalysts for Growth in a Transformational Economy",
-          "city": "جدة",
-          "starts_at": "2026-12-01T09:00:00+03:00",
-          "detail_url": "./events/event-future-frontiers-for-businesses-catalysts-for-growth-in-a-transformation.html",
-          "priority": {
-            "key": "normal",
-            "label": "متابعة دورية",
-            "rank": 2
-          }
-        }
-      ],
-      "acquisition": {
-        "route": "campus-calendar-parser",
-        "label": "محلل تقويم جامعي",
-        "next_action": "اجمع تفاصيل المكان داخل الحرم، الفقرات، ورابط التسجيل من صفحة التقويم الجامعي."
-      },
-      "impact_score": 30
     },
     {
       "key": "Asharqia Chamber Events",
@@ -1147,6 +1159,76 @@
         "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
       },
       "impact_score": 22
+    },
+    {
+      "key": "Jazan Chamber Events",
+      "source_label": "Jazan Chamber Events",
+      "source_url": "https://events.jazancci.org.sa/ar/events/mttlbat-nzam-idarh-almrafq-iso-41001-llmnshat-alsghyrh-walmtwsth-",
+      "source_host": "events.jazancci.org.sa",
+      "candidates": 1,
+      "urgent": 0,
+      "high": 1,
+      "basic_windows": 1,
+      "missing_windows": 0,
+      "route_counts": {
+        "expo-agenda-probe": 1
+      },
+      "next_event_starts_at": "2026-07-21T10:30:00+03:00",
+      "example_events": [
+        {
+          "id": "event-متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة",
+          "title": "متطلبات نظام إدارة المرافق ISO 41001 للمنشآت الصغيرة والمتوسطة",
+          "city": "جازان",
+          "starts_at": "2026-07-21T10:30:00+03:00",
+          "detail_url": "./events/event-متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة.html",
+          "priority": {
+            "key": "high",
+            "label": "أولوية عالية",
+            "rank": 1
+          }
+        }
+      ],
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "impact_score": 15
+    },
+    {
+      "key": "Saudi Food and Drug Authority Events",
+      "source_label": "Saudi Food and Drug Authority Events",
+      "source_url": "https://www.sfda.gov.sa/ar/workshop/5522011",
+      "source_host": "sfda.gov.sa",
+      "candidates": 1,
+      "urgent": 0,
+      "high": 1,
+      "basic_windows": 1,
+      "missing_windows": 0,
+      "route_counts": {
+        "workshop-detail-parser": 1
+      },
+      "next_event_starts_at": "2026-07-21T09:30:00+03:00",
+      "example_events": [
+        {
+          "id": "event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج",
+          "title": "تقييم سلامة المنتج التجميلي وملف معلومات المنتج",
+          "city": "الرياض",
+          "starts_at": "2026-07-21T09:30:00+03:00",
+          "detail_url": "./events/event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج.html",
+          "priority": {
+            "key": "high",
+            "label": "أولوية عالية",
+            "rank": 1
+          }
+        }
+      ],
+      "acquisition": {
+        "route": "workshop-detail-parser",
+        "label": "محلل ورش العمل",
+        "next_action": "استخرج وقت الورشة، محاور التدريب، ورابط التسجيل من صفحة التفاصيل أو نماذج الحضور."
+      },
+      "impact_score": 15
     }
   ],
   "events": [
@@ -2577,6 +2659,52 @@
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Summer%20Camp%20at%20the%20National%20Museum%3A%20Summer%20Wonders&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Summer%20Camp%20at%20the%20National%20Museum%3A%20Summer%20Wonders%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20The%20National%20Museum%2C%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-06-25T14%3A30%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-summer-camp-at-the-national-museum-summer-wonders.html"
     },
     {
+      "id": "event-kashtah",
+      "title": "Kashtah",
+      "city": "عسير",
+      "venue": "Aseer",
+      "organizer": "Saudi Tourism Authority",
+      "category": "ترفيه وعائلات",
+      "starts_at": "2026-06-27T16:00:00+03:00",
+      "ends_at": "2026-08-31T00:00:00+03:00",
+      "detail_url": "./events/event-kashtah.html",
+      "calendar_url": "./events/event-kashtah.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Aseer%20Aseer",
+      "source_label": "Visit Saudi Calendar",
+      "source_url": "https://www.visitsaudi.com/en/aseer/events/kashtah",
+      "evidence_url": "https://www.visitsaudi.com/en/aseer/events/kashtah",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-06-27T16:00:00+03:00",
+        "ends_at": "2026-08-31T00:00:00+03:00",
+        "room": "Aseer",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "official-calendar-probe",
+        "label": "فحص التقويم الرسمي",
+        "next_action": "افتح صفحة التقويم أو الموسم وابحث عن برنامج الأيام، المواقع الفرعية، وساعات التشغيل المعلنة."
+      },
+      "priority": {
+        "key": "urgent",
+        "label": "عاجل الآن",
+        "rank": 0
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Kashtah&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Kashtah%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%B9%D8%B3%D9%8A%D8%B1%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Aseer%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-06-27T16%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-kashtah.html"
+    },
+    {
       "id": "event-art-futures-camp-2026-diriyah-art-futures",
       "title": "Art Futures Camp 2026 – Diriyah Art Futures",
       "city": "الرياض",
@@ -3037,6 +3165,52 @@
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20PFL%20MENA%20Fight%20Night&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20PFL%20MENA%20Fight%20Night%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Global%20Theater%2C%20Boulevard%20City%2C%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-10T16%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-pfl-mena-fight-night.html"
     },
     {
+      "id": "event-application-deadline-2030-leaders",
+      "title": "2030 Leaders",
+      "city": "السعودية",
+      "venue": "Hybrid",
+      "organizer": "Mohammed Bin Salman Foundation / Misk Hub",
+      "category": "تدريب تقني",
+      "starts_at": "2026-07-12T09:00:00+03:00",
+      "ends_at": "2026-07-12T23:59:00+03:00",
+      "detail_url": "./events/event-application-deadline-2030-leaders.html",
+      "calendar_url": "./events/event-application-deadline-2030-leaders.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Hybrid%20Saudi%20Arabia",
+      "source_label": "Misk Hub Programs",
+      "source_url": "https://hub.misk.org.sa/programs/leadership/2030-leaders/",
+      "evidence_url": "https://hub.misk.org.sa/programs/leadership/2030-leaders/",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-07-12T09:00:00+03:00",
+        "ends_at": "2026-07-12T23:59:00+03:00",
+        "room": "Hybrid",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "training-program-parser",
+        "label": "محلل برامج ودورات",
+        "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
+      },
+      "priority": {
+        "key": "urgent",
+        "label": "عاجل الآن",
+        "rank": 0
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%202030%20Leaders&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%202030%20Leaders%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Hybrid%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-12T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-application-deadline-2030-leaders.html"
+    },
+    {
       "id": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي",
       "title": "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
       "city": "عن بعد",
@@ -3219,6 +3393,52 @@
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Security%20Operations%2C%20Threat%20Detection%20%26%20Incident%20Response%20-%20%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A3%D9%85%D9%86%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A8%D8%B1%D8%A7%D9%86%D9%8A%D8%8C%20%D9%88%D8%A7%D9%83%D8%AA%D8%B4%D8%A7%D9%81%20%D8%A7%D9%84%D8%AA%D9%87%D8%AF%D9%8A%D8%AF%D8%A7%D8%AA%D8%8C%20%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AC%D8%A7%D8%A8%D8%A9%20%D9%84%D9%84%D8%AD%D9%88%D8%A7%D8%AF%D8%AB&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Security%20Operations%2C%20Threat%20Detection%20%26%20Incident%20Response%20-%20%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A3%D9%85%D9%86%20%D8%A7%D9%84%D8%B3%D9%8A%D8%A8%D8%B1%D8%A7%D9%86%D9%8A%D8%8C%20%D9%88%D8%A7%D9%83%D8%AA%D8%B4%D8%A7%D9%81%20%D8%A7%D9%84%D8%AA%D9%87%D8%AF%D9%8A%D8%AF%D8%A7%D8%AA%D8%8C%20%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AC%D8%A7%D8%A8%D8%A9%20%D9%84%D9%84%D8%AD%D9%88%D8%A7%D8%AF%D8%AB%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%B9%D9%86%20%D8%A8%D8%B9%D8%AF%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%AA%D9%81%D8%A7%D8%B9%D9%84%D9%8A%D8%A9%20%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D8%A9%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-12T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-security-operations-threat-detection-incident-response-%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D8%B3%D9%8A.html"
+    },
+    {
+      "id": "event-mishkat-summer-camp",
+      "title": "Mishkat Summer Camp",
+      "city": "الرياض",
+      "venue": "Mishkat Interactive Center, King Abdullah City for Atomic and Renewable Energy, Riyadh",
+      "organizer": "Mishkat Interactive Center for Atomic and Renewable Energy",
+      "category": "ترفيه وعائلات",
+      "starts_at": "2026-07-12T09:00:00+03:00",
+      "ends_at": "2026-08-06T13:00:00+03:00",
+      "detail_url": "./events/event-mishkat-summer-camp.html",
+      "calendar_url": "./events/event-mishkat-summer-camp.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Mishkat%20Interactive%20Center%2C%20King%20Abdullah%20City%20for%20Atomic%20and%20Renewable%20Energy%2C%20Riyadh%20Riyadh",
+      "source_label": "Riyadh City Events",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31180",
+      "evidence_url": "https://riyadh.sa/en/moment/events/item/event/31180",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-07-12T09:00:00+03:00",
+        "ends_at": "2026-08-06T13:00:00+03:00",
+        "room": "Mishkat Interactive Center, King Abdullah City for Atomic and Renewable Energy, Riyadh",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "priority": {
+        "key": "urgent",
+        "label": "عاجل الآن",
+        "rank": 0
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Mishkat%20Summer%20Camp&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Mishkat%20Summer%20Camp%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Mishkat%20Interactive%20Center%2C%20King%20Abdullah%20City%20for%20Atomic%20and%20Renewable%20Energy%2C%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-12T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-mishkat-summer-camp.html"
     },
     {
       "id": "event-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي",
@@ -3451,6 +3671,52 @@
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Samsung%20Innovation%20Campus%20AI%20Program&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Samsung%20Innovation%20Campus%20AI%20Program%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%B9%D9%86%20%D8%A8%D8%B9%D8%AF%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Online%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-13T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-samsung-innovation-campus-ai-program.html"
     },
     {
+      "id": "event-wrth-summer-art-craft-program",
+      "title": "Wrth Summer Art & Craft Program",
+      "city": "الرياض",
+      "venue": "Riyadh Park Mall, Riyadh",
+      "organizer": "The Royal Institute of Traditional Arts (Wrth)",
+      "category": "ترفيه وعائلات",
+      "starts_at": "2026-07-16T15:30:00+03:00",
+      "ends_at": "2026-07-18T22:30:00+03:00",
+      "detail_url": "./events/event-wrth-summer-art-craft-program.html",
+      "calendar_url": "./events/event-wrth-summer-art-craft-program.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Riyadh%20Park%20Mall%2C%20Riyadh%20Riyadh",
+      "source_label": "Riyadh City Events",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31181",
+      "evidence_url": "https://riyadh.sa/en/moment/events/item/event/31181",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-07-16T15:30:00+03:00",
+        "ends_at": "2026-07-18T22:30:00+03:00",
+        "room": "Riyadh Park Mall, Riyadh",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "source-detail-probe",
+        "label": "فحص صفحة المصدر",
+        "next_action": "افتح صفحة المصدر بمتصفح الجلب وابحث عن agenda، schedule، speakers، أو ملف PDF رسمي."
+      },
+      "priority": {
+        "key": "urgent",
+        "label": "عاجل الآن",
+        "rank": 0
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Wrth%20Summer%20Art%20%26%20Craft%20Program&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Wrth%20Summer%20Art%20%26%20Craft%20Program%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%20Park%20Mall%2C%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-16T15%3A30%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-wrth-summer-art-craft-program.html"
+    },
+    {
       "id": "event-معسكر-تصميم-وتصنيع-الحلول-الهندسية",
       "title": "معسكر تصميم وتصنيع الحلول الهندسية",
       "city": "الرياض",
@@ -3495,6 +3761,98 @@
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%88%D8%AA%D8%B5%D9%86%D9%8A%D8%B9%20%D8%A7%D9%84%D8%AD%D9%84%D9%88%D9%84%20%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D9%8A%D8%A9&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%88%D8%AA%D8%B5%D9%86%D9%8A%D8%B9%20%D8%A7%D9%84%D8%AD%D9%84%D9%88%D9%84%20%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D9%8A%D8%A9%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-19T17%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%B9%D8%B3%D9%83%D8%B1-%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D9%88%D8%AA%D8%B5%D9%86%D9%8A%D8%B9-%D8%A7%D9%84%D8%AD%D9%84%D9%88%D9%84-%D8%A7%D9%84%D9%87%D9%86%D8%AF%D8%B3%D9%8A%D8%A9.html"
+    },
+    {
+      "id": "event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج",
+      "title": "تقييم سلامة المنتج التجميلي وملف معلومات المنتج",
+      "city": "الرياض",
+      "venue": "Riyadh",
+      "organizer": "Saudi Food and Drug Authority",
+      "category": "ورش تنظيمية وصحية",
+      "starts_at": "2026-07-21T09:30:00+03:00",
+      "ends_at": "2026-07-22T14:00:00+03:00",
+      "detail_url": "./events/event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج.html",
+      "calendar_url": "./events/event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Riyadh%20Riyadh",
+      "source_label": "Saudi Food and Drug Authority Events",
+      "source_url": "https://www.sfda.gov.sa/ar/workshop/5522011",
+      "evidence_url": "https://www.sfda.gov.sa/ar/workshop/5522011",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-07-21T09:30:00+03:00",
+        "ends_at": "2026-07-22T14:00:00+03:00",
+        "room": "Riyadh",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "workshop-detail-parser",
+        "label": "محلل ورش العمل",
+        "next_action": "استخرج وقت الورشة، محاور التدريب، ورابط التسجيل من صفحة التفاصيل أو نماذج الحضور."
+      },
+      "priority": {
+        "key": "high",
+        "label": "أولوية عالية",
+        "rank": 1
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D8%AA%D9%82%D9%8A%D9%8A%D9%85%20%D8%B3%D9%84%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%20%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D9%8A%D9%84%D9%8A%20%D9%88%D9%85%D9%84%D9%81%20%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D8%AA%D9%82%D9%8A%D9%8A%D9%85%20%D8%B3%D9%84%D8%A7%D9%85%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%20%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D9%8A%D9%84%D9%8A%20%D9%88%D9%85%D9%84%D9%81%20%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-21T09%3A30%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D8%AA%D9%82%D9%8A%D9%8A%D9%85-%D8%B3%D9%84%D8%A7%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC-%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D9%8A%D9%84%D9%8A-%D9%88%D9%85%D9%84%D9%81-%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC.html"
+    },
+    {
+      "id": "event-متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة",
+      "title": "متطلبات نظام إدارة المرافق ISO 41001 للمنشآت الصغيرة والمتوسطة",
+      "city": "جازان",
+      "venue": "Jazan Chamber",
+      "organizer": "Jazan Chamber of Commerce",
+      "category": "فعاليات الغرف التجارية",
+      "starts_at": "2026-07-21T10:30:00+03:00",
+      "ends_at": "2026-07-21T11:45:00+03:00",
+      "detail_url": "./events/event-متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة.html",
+      "calendar_url": "./events/event-متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=Jazan%20Chamber%20Jazan",
+      "source_label": "Jazan Chamber Events",
+      "source_url": "https://events.jazancci.org.sa/ar/events/mttlbat-nzam-idarh-almrafq-iso-41001-llmnshat-alsghyrh-walmtwsth-",
+      "evidence_url": "https://events.jazancci.org.sa/ar/events/mttlbat-nzam-idarh-almrafq-iso-41001-llmnshat-alsghyrh-walmtwsth-",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-07-21T10:30:00+03:00",
+        "ends_at": "2026-07-21T11:45:00+03:00",
+        "room": "Jazan Chamber",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "expo-agenda-probe",
+        "label": "فحص أجندة المعارض",
+        "next_action": "ابحث داخل صفحة المعرض عن agenda/program/opening hours وحوّل ساعات الزيارة والفعاليات المصاحبة إلى جلسات."
+      },
+      "priority": {
+        "key": "high",
+        "label": "أولوية عالية",
+        "rank": 1
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%AA%D8%B7%D9%84%D8%A8%D8%A7%D8%AA%20%D9%86%D8%B8%D8%A7%D9%85%20%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D9%81%D9%82%20ISO%2041001%20%D9%84%D9%84%D9%85%D9%86%D8%B4%D8%A2%D8%AA%20%D8%A7%D9%84%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D9%88%D8%B3%D8%B7%D8%A9&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%AA%D8%B7%D9%84%D8%A8%D8%A7%D8%AA%20%D9%86%D8%B8%D8%A7%D9%85%20%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D9%81%D9%82%20ISO%2041001%20%D9%84%D9%84%D9%85%D9%86%D8%B4%D8%A2%D8%AA%20%D8%A7%D9%84%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D9%88%D8%B3%D8%B7%D8%A9%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%AC%D8%A7%D8%B2%D8%A7%D9%86%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Jazan%20Chamber%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-21T10%3A30%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%AA%D8%B7%D9%84%D8%A8%D8%A7%D8%AA-%D9%86%D8%B8%D8%A7%D9%85-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D9%81%D9%82-iso-41001-%D9%84%D9%84%D9%85%D9%86%D8%B4%D8%A2%D8%AA-%D8%A7%D9%84%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9-%D9%88%D8%A7%D9%84%D9%85%D8%AA%D9%88%D8%B3%D8%B7%D8%A9.html"
     },
     {
       "id": "event-summer-splash-running-event",
@@ -3633,190 +3991,6 @@
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B3%D8%AD%D8%A7%D8%A8%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9%20%D9%84%D8%B3%D8%AD%D8%A7%D8%A8%D8%A9%20%D9%82%D9%88%D9%82%D9%84&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B3%D8%AD%D8%A7%D8%A8%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9%20%D9%84%D8%B3%D8%AD%D8%A7%D8%A8%D8%A9%20%D9%82%D9%88%D9%82%D9%84%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-26T17%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%B9%D8%B3%D9%83%D8%B1-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B3%D8%AD%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%84%D8%B3%D8%AD%D8%A7%D8%A8%D8%A9-%D9%82%D9%88%D9%82%D9%84.html"
-    },
-    {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-6",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
-      "city": "الرياض",
-      "venue": "الرياض - المقر الرئيسي",
-      "organizer": "Tuwaiq Academy",
-      "category": "ورش تنظيمية وصحية",
-      "starts_at": "2026-07-26T17:30:00+03:00",
-      "ends_at": "2026-10-15T21:30:00+03:00",
-      "detail_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-6.html",
-      "calendar_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-6.ics",
-      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%20Riyadh",
-      "source_label": "Tuwaiq Academy Bootcamps and Programs",
-      "source_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
-      "evidence_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
-      "source_confidence": "approved-source",
-      "approval_status": "published",
-      "approval_status_label": "منشور",
-      "attendance_window_ready": true,
-      "attendance_window": {
-        "title": "نافذة الحضور",
-        "starts_at": "2026-07-26T17:30:00+03:00",
-        "ends_at": "2026-10-15T21:30:00+03:00",
-        "room": "الرياض - المقر الرئيسي",
-        "track": "برنامج ممتد",
-        "session_type": "attendance-window",
-        "inferred": true,
-        "source": "event-start-end"
-      },
-      "schedule_quality": "basic-window",
-      "sessions_count": 1,
-      "acquisition": {
-        "route": "training-program-parser",
-        "label": "محلل برامج ودورات",
-        "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
-      },
-      "priority": {
-        "key": "high",
-        "label": "أولوية عالية",
-        "rank": 1
-      },
-      "blockers": [
-        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
-      ],
-      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D9%88%D9%8A%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85%20%D9%84%D8%BA%D8%A9%20Python&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D9%88%D9%8A%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85%20%D9%84%D8%BA%D8%A9%20Python%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-26T17%3A30%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%B9%D8%B3%D9%83%D8%B1-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D9%84%D8%BA%D8%A9-python-6.html"
-    },
-    {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-5",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
-      "city": "الرياض",
-      "venue": "الرياض - المقر الرئيسي",
-      "organizer": "Tuwaiq Academy",
-      "category": "ورش تنظيمية وصحية",
-      "starts_at": "2026-07-26T17:30:00+03:00",
-      "ends_at": "2026-10-15T21:30:00+03:00",
-      "detail_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-5.html",
-      "calendar_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-5.ics",
-      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%20Riyadh",
-      "source_label": "Tuwaiq Academy Bootcamps and Programs",
-      "source_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
-      "evidence_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
-      "source_confidence": "approved-source",
-      "approval_status": "published",
-      "approval_status_label": "منشور",
-      "attendance_window_ready": true,
-      "attendance_window": {
-        "title": "نافذة الحضور",
-        "starts_at": "2026-07-26T17:30:00+03:00",
-        "ends_at": "2026-10-15T21:30:00+03:00",
-        "room": "الرياض - المقر الرئيسي",
-        "track": "برنامج ممتد",
-        "session_type": "attendance-window",
-        "inferred": true,
-        "source": "event-start-end"
-      },
-      "schedule_quality": "basic-window",
-      "sessions_count": 1,
-      "acquisition": {
-        "route": "training-program-parser",
-        "label": "محلل برامج ودورات",
-        "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
-      },
-      "priority": {
-        "key": "high",
-        "label": "أولوية عالية",
-        "rank": 1
-      },
-      "blockers": [
-        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
-      ],
-      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D9%88%D9%8A%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85%20%D9%84%D8%BA%D8%A9%20Python&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D9%88%D9%8A%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85%20%D9%84%D8%BA%D8%A9%20Python%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-26T17%3A30%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%B9%D8%B3%D9%83%D8%B1-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D9%84%D8%BA%D8%A9-python-5.html"
-    },
-    {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-4",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
-      "city": "الرياض",
-      "venue": "الرياض - المقر الرئيسي",
-      "organizer": "Tuwaiq Academy",
-      "category": "ورش تنظيمية وصحية",
-      "starts_at": "2026-07-26T17:30:00+03:00",
-      "ends_at": "2026-10-15T21:30:00+03:00",
-      "detail_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-4.html",
-      "calendar_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-4.ics",
-      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%20Riyadh",
-      "source_label": "Tuwaiq Academy Bootcamps and Programs",
-      "source_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
-      "evidence_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
-      "source_confidence": "approved-source",
-      "approval_status": "published",
-      "approval_status_label": "منشور",
-      "attendance_window_ready": true,
-      "attendance_window": {
-        "title": "نافذة الحضور",
-        "starts_at": "2026-07-26T17:30:00+03:00",
-        "ends_at": "2026-10-15T21:30:00+03:00",
-        "room": "الرياض - المقر الرئيسي",
-        "track": "برنامج ممتد",
-        "session_type": "attendance-window",
-        "inferred": true,
-        "source": "event-start-end"
-      },
-      "schedule_quality": "basic-window",
-      "sessions_count": 1,
-      "acquisition": {
-        "route": "training-program-parser",
-        "label": "محلل برامج ودورات",
-        "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
-      },
-      "priority": {
-        "key": "high",
-        "label": "أولوية عالية",
-        "rank": 1
-      },
-      "blockers": [
-        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
-      ],
-      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D9%88%D9%8A%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85%20%D9%84%D8%BA%D8%A9%20Python&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D9%88%D9%8A%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85%20%D9%84%D8%BA%D8%A9%20Python%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-26T17%3A30%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%B9%D8%B3%D9%83%D8%B1-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D9%84%D8%BA%D8%A9-python-4.html"
-    },
-    {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-3",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
-      "city": "الرياض",
-      "venue": "الرياض - المقر الرئيسي",
-      "organizer": "Tuwaiq Academy",
-      "category": "ورش تنظيمية وصحية",
-      "starts_at": "2026-07-26T17:30:00+03:00",
-      "ends_at": "2026-10-15T21:30:00+03:00",
-      "detail_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-3.html",
-      "calendar_url": "./events/event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-3.ics",
-      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%20Riyadh",
-      "source_label": "Tuwaiq Academy Bootcamps and Programs",
-      "source_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
-      "evidence_url": "https://tuwaiq.edu.sa/bootcamp/4yOEV7Qq/view",
-      "source_confidence": "approved-source",
-      "approval_status": "published",
-      "approval_status_label": "منشورة",
-      "attendance_window_ready": true,
-      "attendance_window": {
-        "title": "نافذة الحضور",
-        "starts_at": "2026-07-26T17:30:00+03:00",
-        "ends_at": "2026-10-15T21:30:00+03:00",
-        "room": "الرياض - المقر الرئيسي",
-        "track": "برنامج ممتد",
-        "session_type": "attendance-window",
-        "inferred": true,
-        "source": "event-start-end"
-      },
-      "schedule_quality": "basic-window",
-      "sessions_count": 1,
-      "acquisition": {
-        "route": "training-program-parser",
-        "label": "محلل برامج ودورات",
-        "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
-      },
-      "priority": {
-        "key": "high",
-        "label": "أولوية عالية",
-        "rank": 1
-      },
-      "blockers": [
-        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
-      ],
-      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D9%88%D9%8A%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85%20%D9%84%D8%BA%D8%A9%20Python&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D9%88%D9%8A%D8%A8%20%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85%20%D9%84%D8%BA%D8%A9%20Python%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-07-26T17%3A30%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%B9%D8%B3%D9%83%D8%B1-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%88%D9%8A%D8%A8-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D9%84%D8%BA%D8%A9-python-3.html"
     },
     {
       "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python",
@@ -4131,9 +4305,9 @@
         "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
       },
       "priority": {
-        "key": "normal",
-        "label": "متابعة دورية",
-        "rank": 2
+        "key": "high",
+        "label": "أولوية عالية",
+        "rank": 1
       },
       "blockers": [
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
@@ -4831,6 +5005,52 @@
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20LEAP%202026&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20LEAP%202026%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-08-31T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-leap-2026.html"
     },
     {
+      "id": "event-misk-x-unyo-youth-engagement-fellowship",
+      "title": "Misk X UNYO Youth Engagement Fellowship",
+      "city": "السعودية",
+      "venue": "In-Person",
+      "organizer": "Mohammed Bin Salman Foundation / Misk Hub",
+      "category": "تدريب تقني",
+      "starts_at": "2026-09-01T09:00:00+03:00",
+      "ends_at": "2027-03-01T18:00:00+03:00",
+      "detail_url": "./events/event-misk-x-unyo-youth-engagement-fellowship.html",
+      "calendar_url": "./events/event-misk-x-unyo-youth-engagement-fellowship.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=In-Person%20Saudi%20Arabia",
+      "source_label": "Misk Hub Programs",
+      "source_url": "https://hub.misk.org.sa/programs/global/misk-x-unyo-youth-engagement-fellowship/",
+      "evidence_url": "https://hub.misk.org.sa/programs/global/misk-x-unyo-youth-engagement-fellowship/",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-09-01T09:00:00+03:00",
+        "ends_at": "2027-03-01T18:00:00+03:00",
+        "room": "In-Person",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "training-program-parser",
+        "label": "محلل برامج ودورات",
+        "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Misk%20X%20UNYO%20Youth%20Engagement%20Fellowship&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Misk%20X%20UNYO%20Youth%20Engagement%20Fellowship%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20In-Person%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-01T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-misk-x-unyo-youth-engagement-fellowship.html"
+    },
+    {
       "id": "event-saudi-woodshow",
       "title": "Saudi WoodShow",
       "city": "الرياض",
@@ -5153,6 +5373,144 @@
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Lighting%20Design%20%26%20Technology%20Expo&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Lighting%20Design%20%26%20Technology%20Expo%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%20Front%20Exhibition%20%26%20Conference%20Center%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-06T16%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-lighting-design-technology-expo.html"
     },
     {
+      "id": "event-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي",
+      "title": "معسكر بناء وتطوير نماذج الذكاء الاصطناعي",
+      "city": "الرياض",
+      "venue": "الرياض - المقر الرئيسي",
+      "organizer": "Tuwaiq Academy",
+      "category": "جامعات ومجتمع",
+      "starts_at": "2026-09-06T16:00:00+03:00",
+      "ends_at": "2026-11-12T20:00:00+03:00",
+      "detail_url": "./events/event-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي.html",
+      "calendar_url": "./events/event-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%20Riyadh",
+      "source_label": "Tuwaiq Academy Bootcamps and Programs",
+      "source_url": "https://tuwaiq.edu.sa/bootcamp/o4bVMP8V/view",
+      "evidence_url": "https://tuwaiq.edu.sa/bootcamp/o4bVMP8V/view",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-09-06T16:00:00+03:00",
+        "ends_at": "2026-11-12T20:00:00+03:00",
+        "room": "الرياض - المقر الرئيسي",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "training-program-parser",
+        "label": "محلل برامج ودورات",
+        "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%A8%D9%86%D8%A7%D8%A1%20%D9%88%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D9%86%D9%85%D8%A7%D8%B0%D8%AC%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%A8%D9%86%D8%A7%D8%A1%20%D9%88%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D9%86%D9%85%D8%A7%D8%B0%D8%AC%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-06T16%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%B9%D8%B3%D9%83%D8%B1-%D8%A8%D9%86%D8%A7%D8%A1-%D9%88%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D9%86%D9%85%D8%A7%D8%B0%D8%AC-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A.html"
+    },
+    {
+      "id": "event-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc",
+      "title": "معسكر إدارة الحوكمة والمخاطر والامتثال GRC",
+      "city": "الرياض",
+      "venue": "الرياض - المقر الرئيسي",
+      "organizer": "Tuwaiq Academy",
+      "category": "جامعات ومجتمع",
+      "starts_at": "2026-09-06T17:00:00+03:00",
+      "ends_at": "2026-10-29T21:00:00+03:00",
+      "detail_url": "./events/event-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc.html",
+      "calendar_url": "./events/event-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%20Riyadh",
+      "source_label": "Tuwaiq Academy Bootcamps and Programs",
+      "source_url": "https://tuwaiq.edu.sa/bootcamp/aXzlnR2d/view",
+      "evidence_url": "https://tuwaiq.edu.sa/bootcamp/aXzlnR2d/view",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-09-06T17:00:00+03:00",
+        "ends_at": "2026-10-29T21:00:00+03:00",
+        "room": "الرياض - المقر الرئيسي",
+        "track": "برنامج ممتد",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "training-program-parser",
+        "label": "محلل برامج ودورات",
+        "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AD%D9%88%D9%83%D9%85%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D8%AE%D8%A7%D8%B7%D8%B1%20%D9%88%D8%A7%D9%84%D8%A7%D9%85%D8%AA%D8%AB%D8%A7%D9%84%20GRC&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%B9%D8%B3%D9%83%D8%B1%20%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AD%D9%88%D9%83%D9%85%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D8%AE%D8%A7%D8%B7%D8%B1%20%D9%88%D8%A7%D9%84%D8%A7%D9%85%D8%AA%D8%AB%D8%A7%D9%84%20GRC%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%20-%20%D8%A7%D9%84%D9%85%D9%82%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-06T17%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%B9%D8%B3%D9%83%D8%B1-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%AD%D9%88%D9%83%D9%85%D8%A9-%D9%88%D8%A7%D9%84%D9%85%D8%AE%D8%A7%D8%B7%D8%B1-%D9%88%D8%A7%D9%84%D8%A7%D9%85%D8%AA%D8%AB%D8%A7%D9%84-grc.html"
+    },
+    {
+      "id": "event-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco",
+      "title": "The KAUST Imaging and Characterization Core Lab presents: AI for Microscopy Workshop",
+      "city": "ثول",
+      "venue": "AV/VR Hub, KAUST Visualization Core, building 1, level 2, room 2304",
+      "organizer": "KAUST Imaging and Characterization Core Lab",
+      "category": "جامعات ومجتمع",
+      "starts_at": "2026-09-07T00:00:00+03:00",
+      "ends_at": "2026-09-10T23:59:00+03:00",
+      "detail_url": "./events/event-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco.html",
+      "calendar_url": "./events/event-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=AV%2FVR%20Hub%2C%20KAUST%20Visualization%20Core%2C%20building%201%2C%20level%202%2C%20room%202304%20Thuwal",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/521",
+      "evidence_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/521",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشورة",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-09-07T00:00:00+03:00",
+        "ends_at": "2026-09-10T23:59:00+03:00",
+        "room": "AV/VR Hub, KAUST Visualization Core, building 1, level 2, room 2304",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "campus-calendar-parser",
+        "label": "محلل تقويم جامعي",
+        "next_action": "اجمع تفاصيل المكان داخل الحرم، الفقرات، ورابط التسجيل من صفحة التقويم الجامعي."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20The%20KAUST%20Imaging%20and%20Characterization%20Core%20Lab%20presents%3A%20AI%20for%20Microscopy%20Workshop&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20The%20KAUST%20Imaging%20and%20Characterization%20Core%20Lab%20presents%3A%20AI%20for%20Microscopy%20Workshop%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%AB%D9%88%D9%84%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20AV%2FVR%20Hub%2C%20KAUST%20Visualization%20Core%2C%20building%201%2C%20level%202%2C%20room%202304%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-07T00%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco.html"
+    },
+    {
       "id": "event-fibo-arabia-2026",
       "title": "FIBO Arabia 2026",
       "city": "الرياض",
@@ -5337,52 +5695,6 @@
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Hotel%20%26%20Hospitality%20Expo&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Hotel%20%26%20Hospitality%20Expo%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%20Front%20Exhibition%20%26%20Conference%20Center%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-13T16%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-hotel-hospitality-expo.html"
     },
     {
-      "id": "event-global-forum-on-the-ethics-of-ai",
-      "title": "Global Forum on the Ethics of AI",
-      "city": "الرياض",
-      "venue": "SDAIA",
-      "organizer": "UNESCO",
-      "category": "مؤتمرات ومنتديات",
-      "starts_at": "2026-09-14T09:00:00+03:00",
-      "ends_at": "2026-09-17T18:00:00+03:00",
-      "detail_url": "./events/event-global-forum-on-the-ethics-of-ai.html",
-      "calendar_url": "./events/event-global-forum-on-the-ethics-of-ai.ics",
-      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=SDAIA%20Riyadh",
-      "source_label": "SDAIA Calendar and Events",
-      "source_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=122",
-      "evidence_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=122",
-      "source_confidence": "approved-source",
-      "approval_status": "published",
-      "approval_status_label": "منشور",
-      "attendance_window_ready": true,
-      "attendance_window": {
-        "title": "نافذة الحضور",
-        "starts_at": "2026-09-14T09:00:00+03:00",
-        "ends_at": "2026-09-17T18:00:00+03:00",
-        "room": "SDAIA",
-        "track": "الفعالية الرئيسية",
-        "session_type": "attendance-window",
-        "inferred": true,
-        "source": "event-start-end"
-      },
-      "schedule_quality": "basic-window",
-      "sessions_count": 1,
-      "acquisition": {
-        "route": "training-program-parser",
-        "label": "محلل برامج ودورات",
-        "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
-      },
-      "priority": {
-        "key": "normal",
-        "label": "متابعة دورية",
-        "rank": 2
-      },
-      "blockers": [
-        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
-      ],
-      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Global%20Forum%20on%20the%20Ethics%20of%20AI&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Global%20Forum%20on%20the%20Ethics%20of%20AI%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20SDAIA%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-14T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-global-forum-on-the-ethics-of-ai.html"
-    },
-    {
       "id": "event-money20-20-middle-east",
       "title": "Money20/20 Middle East",
       "city": "الرياض",
@@ -5427,6 +5739,52 @@
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
       "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Money20%2F20%20Middle%20East&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Money20%2F20%20Middle%20East%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20Riyadh%20Exhibition%20%26%20Convention%20Center%20-%20Malham%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-14T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-money20-20-middle-east.html"
+    },
+    {
+      "id": "event-global-forum-on-the-ethics-of-ai",
+      "title": "Global Forum on the Ethics of AI",
+      "city": "الرياض",
+      "venue": "SDAIA",
+      "organizer": "UNESCO",
+      "category": "مؤتمرات ومنتديات",
+      "starts_at": "2026-09-14T09:00:00+03:00",
+      "ends_at": "2026-09-17T18:00:00+03:00",
+      "detail_url": "./events/event-global-forum-on-the-ethics-of-ai.html",
+      "calendar_url": "./events/event-global-forum-on-the-ethics-of-ai.ics",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=SDAIA%20Riyadh",
+      "source_label": "SDAIA Calendar and Events",
+      "source_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=122",
+      "evidence_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=122",
+      "source_confidence": "approved-source",
+      "approval_status": "published",
+      "approval_status_label": "منشور",
+      "attendance_window_ready": true,
+      "attendance_window": {
+        "title": "نافذة الحضور",
+        "starts_at": "2026-09-14T09:00:00+03:00",
+        "ends_at": "2026-09-17T18:00:00+03:00",
+        "room": "SDAIA",
+        "track": "الفعالية الرئيسية",
+        "session_type": "attendance-window",
+        "inferred": true,
+        "source": "event-start-end"
+      },
+      "schedule_quality": "basic-window",
+      "sessions_count": 1,
+      "acquisition": {
+        "route": "training-program-parser",
+        "label": "محلل برامج ودورات",
+        "next_action": "استخرج محاور البرنامج، مدة كل لقاء، ونمط الحضور من صفحة البرنامج أو تقويم التدريب."
+      },
+      "priority": {
+        "key": "normal",
+        "label": "متابعة دورية",
+        "rank": 2
+      },
+      "blockers": [
+        "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
+      ],
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20Global%20Forum%20on%20the%20Ethics%20of%20AI&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20Global%20Forum%20on%20the%20Ethics%20of%20AI%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20SDAIA%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-09-14T09%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-global-forum-on-the-ethics-of-ai.html"
     },
     {
       "id": "event-riyadh-global-medical-biotechnology-summit",
@@ -5525,7 +5883,7 @@
       "title": "Global AI Summit",
       "city": "الرياض",
       "venue": "SDAIA",
-      "organizer": "SDAIA",
+      "organizer": "UNESCO",
       "category": "مؤتمرات ومنتديات",
       "starts_at": "2026-09-15T09:00:00+03:00",
       "ends_at": "2026-09-17T18:00:00+03:00",
@@ -5537,7 +5895,7 @@
       "evidence_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=123",
       "source_confidence": "approved-source",
       "approval_status": "published",
-      "approval_status_label": "منشور",
+      "approval_status_label": "منشورة",
       "attendance_window_ready": true,
       "attendance_window": {
         "title": "نافذة الحضور",
@@ -6674,26 +7032,26 @@
       "id": "event-معرض-وظائف-2026",
       "title": "معرض وظائف 2026",
       "city": "الظهران",
-      "venue": "شركة معارض الظهران الدولية ( كسبو)",
+      "venue": "شركة معارض الظهران الدولي",
       "organizer": "Asharqia Chamber",
       "category": "فعاليات الغرف التجارية",
       "starts_at": "2026-12-27T16:00:00+03:00",
       "ends_at": "2026-12-29T16:00:00+03:00",
       "detail_url": "./events/event-معرض-وظائف-2026.html",
       "calendar_url": "./events/event-معرض-وظائف-2026.ics",
-      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%20%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9%20(%20%D9%83%D8%B3%D8%A8%D9%88)%20Dhahran",
+      "directions_url": "https://www.google.com/maps/dir/?api=1&destination=%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%20%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%20Dhahran",
       "source_label": "Asharqia Chamber Events",
       "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=344",
       "evidence_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=344",
       "source_confidence": "approved-source",
       "approval_status": "published",
-      "approval_status_label": "منشور",
+      "approval_status_label": "منشورة",
       "attendance_window_ready": true,
       "attendance_window": {
         "title": "نافذة الحضور",
         "starts_at": "2026-12-27T16:00:00+03:00",
         "ends_at": "2026-12-29T16:00:00+03:00",
-        "room": "شركة معارض الظهران الدولية ( كسبو)",
+        "room": "شركة معارض الظهران الدولي",
         "track": "الفعالية الرئيسية",
         "session_type": "attendance-window",
         "inferred": true,
@@ -6714,7 +7072,7 @@
       "blockers": [
         "نافذة الحضور موجودة وتحتاج جدولًا تفصيليًا"
       ],
-      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%B9%D8%B1%D8%B6%20%D9%88%D8%B8%D8%A7%D8%A6%D9%81%202026&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%B9%D8%B1%D8%B6%20%D9%88%D8%B8%D8%A7%D8%A6%D9%81%202026%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%20%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9%20(%20%D9%83%D8%B3%D8%A8%D9%88)%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-12-27T16%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%B9%D8%B1%D8%B6-%D9%88%D8%B8%D8%A7%D8%A6%D9%81-2026.html"
+      "request_url": "mailto:hello@eventme.live?subject=%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D8%B9%D8%A8%D8%B1%20EventLive%3A%20%D9%85%D8%B9%D8%B1%D8%B6%20%D9%88%D8%B8%D8%A7%D8%A6%D9%81%202026&body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20EventLive%D8%8C%0A%0A%D9%86%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%81%D8%B9%D9%8A%D9%84%20%D8%AC%D8%AF%D9%88%D9%84%20%D8%AD%D9%8A%20%D9%84%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9%3A%20%D9%85%D8%B9%D8%B1%D8%B6%20%D9%88%D8%B8%D8%A7%D8%A6%D9%81%202026%0A%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%3A%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%0A%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%86%3A%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%B9%D8%A7%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B8%D9%87%D8%B1%D8%A7%D9%86%20%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%0A%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%3A%202026-12-27T16%3A00%3A00%2B03%3A00%0A%0A%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%3A%0A-%20%D9%85%D9%84%D9%81%20%D8%A7%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20%D8%A3%D9%88%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D9%85%D8%B5%D8%AF%D8%B1%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%0A-%20%D8%A7%D9%84%D9%82%D8%A7%D8%B9%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%AB%D9%88%D9%86%20%D8%A5%D9%86%20%D9%88%D8%AC%D8%AF%D8%AA%0A-%20%D8%AC%D9%87%D8%A9%20%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%0A%0A%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%3A%20https%3A%2F%2Feventme.live%2Fevents%2Fevent-%D9%85%D8%B9%D8%B1%D8%B6-%D9%88%D8%B8%D8%A7%D8%A6%D9%81-2026.html"
     },
     {
       "id": "event-foundation-day",

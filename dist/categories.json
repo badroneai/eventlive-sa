@@ -1,51 +1,15 @@
 {
-  "generated_at": "2026-07-09T13:25:15.876Z",
+  "generated_at": "2026-07-10T02:36:14.055Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "categories_count": 12,
   "totals": {
-    "events": 449,
-    "upcoming_or_active": 154,
-    "ended": 295,
-    "live_ready": 52
+    "events": 435,
+    "upcoming_or_active": 160,
+    "ended": 275,
+    "live_ready": 51
   },
   "categories": [
-    {
-      "slug": "regulatory-workshop",
-      "label": "ورش تنظيمية وصحية",
-      "url": "./categories/regulatory-workshop.html",
-      "total_events": 31,
-      "upcoming_or_active": 24,
-      "ended": 7,
-      "live_ready": 8,
-      "sources": [
-        "Saudi Food and Drug Authority Events",
-        "Saudi Universities and Technical Colleges",
-        "Tuwaiq Academy Bootcamps and Programs"
-      ],
-      "cities": [
-        "الرياض",
-        "ثول",
-        "عن بعد"
-      ],
-      "audiences": [
-        "باحثون وأكاديميون",
-        "تقنيون",
-        "طلاب وخريجون",
-        "مبدعون وفنون",
-        "مهاريون وحرفيون",
-        "موظفون ومهنيون"
-      ],
-      "next_event": {
-        "title": "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
-        "starts_at": "2026-07-05T18:00:00+03:00",
-        "status": "ongoing",
-        "url": "./events/event-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية.html"
-      },
-      "sources_count": 3,
-      "cities_count": 3,
-      "audiences_count": 6
-    },
     {
       "slug": "exhibition-trade",
       "label": "معارض وتجارية",
@@ -84,12 +48,48 @@
       "audiences_count": 7
     },
     {
+      "slug": "regulatory-workshop",
+      "label": "ورش تنظيمية وصحية",
+      "url": "./categories/regulatory-workshop.html",
+      "total_events": 27,
+      "upcoming_or_active": 22,
+      "ended": 5,
+      "live_ready": 9,
+      "sources": [
+        "Saudi Food and Drug Authority Events",
+        "Saudi Universities and Technical Colleges",
+        "Tuwaiq Academy Bootcamps and Programs"
+      ],
+      "cities": [
+        "الرياض",
+        "ثول",
+        "عن بعد"
+      ],
+      "audiences": [
+        "باحثون وأكاديميون",
+        "تقنيون",
+        "طلاب وخريجون",
+        "مبدعون وفنون",
+        "مهاريون وحرفيون",
+        "موظفون ومهنيون"
+      ],
+      "next_event": {
+        "title": "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
+        "starts_at": "2026-07-05T18:00:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية.html"
+      },
+      "sources_count": 3,
+      "cities_count": 3,
+      "audiences_count": 6
+    },
+    {
       "slug": "entertainment-families",
       "label": "ترفيه وعائلات",
       "url": "./categories/entertainment-families.html",
-      "total_events": 54,
-      "upcoming_or_active": 18,
-      "ended": 36,
+      "total_events": 55,
+      "upcoming_or_active": 21,
+      "ended": 34,
       "live_ready": 1,
       "sources": [
         "MDLBEAST Events",
@@ -101,9 +101,11 @@
         "الرياض",
         "العلا",
         "جدة",
+        "عسير",
         "على مستوى المملكة"
       ],
       "audiences": [
+        "باحثون وأكاديميون",
         "تقنيون",
         "رواد أعمال",
         "رياضة ولياقة",
@@ -119,8 +121,8 @@
         "url": "./events/event-poppy-playtime.html"
       },
       "sources_count": 4,
-      "cities_count": 4,
-      "audiences_count": 7
+      "cities_count": 5,
+      "audiences_count": 8
     },
     {
       "slug": "conference-forum",
@@ -202,13 +204,51 @@
       "audiences_count": 6
     },
     {
+      "slug": "technology-training",
+      "label": "تدريب تقني",
+      "url": "./categories/technology-training.html",
+      "total_events": 28,
+      "upcoming_or_active": 14,
+      "ended": 14,
+      "live_ready": 0,
+      "sources": [
+        "Future Skills MCIT Catalogue",
+        "Misk Hub Events",
+        "Misk Hub Programs",
+        "Monsha'at All Events"
+      ],
+      "cities": [
+        "الرياض",
+        "السعودية",
+        "عن بعد"
+      ],
+      "audiences": [
+        "باحثون عن عمل",
+        "تقنيون",
+        "رواد أعمال",
+        "طلاب وخريجون",
+        "مبدعون وفنون",
+        "مهاريون وحرفيون",
+        "موظفون ومهنيون"
+      ],
+      "next_event": {
+        "title": "Misk Local Traineeship Program",
+        "starts_at": "2026-04-01T09:00:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-misk-local-traineeship-program.html"
+      },
+      "sources_count": 4,
+      "cities_count": 3,
+      "audiences_count": 7
+    },
+    {
       "slug": "sports",
       "label": "رياضة وفعاليات جماهيرية",
       "url": "./categories/sports.html",
-      "total_events": 120,
-      "upcoming_or_active": 13,
+      "total_events": 119,
+      "upcoming_or_active": 12,
       "ended": 107,
-      "live_ready": 5,
+      "live_ready": 4,
       "sources": [
         "Dhahran Expo Calendar",
         "Experience AlUla Events",
@@ -251,49 +291,11 @@
       "audiences_count": 7
     },
     {
-      "slug": "technology-training",
-      "label": "تدريب تقني",
-      "url": "./categories/technology-training.html",
-      "total_events": 27,
-      "upcoming_or_active": 12,
-      "ended": 15,
-      "live_ready": 0,
-      "sources": [
-        "Future Skills MCIT Catalogue",
-        "Misk Hub Events",
-        "Misk Hub Programs",
-        "Monsha'at All Events"
-      ],
-      "cities": [
-        "الرياض",
-        "السعودية",
-        "عن بعد"
-      ],
-      "audiences": [
-        "باحثون عن عمل",
-        "تقنيون",
-        "رواد أعمال",
-        "طلاب وخريجون",
-        "مبدعون وفنون",
-        "مهاريون وحرفيون",
-        "موظفون ومهنيون"
-      ],
-      "next_event": {
-        "title": "Misk Local Traineeship Program",
-        "starts_at": "2026-04-01T09:00:00+03:00",
-        "status": "ongoing",
-        "url": "./events/event-misk-local-traineeship-program.html"
-      },
-      "sources_count": 4,
-      "cities_count": 3,
-      "audiences_count": 7
-    },
-    {
       "slug": "education-community",
       "label": "جامعات ومجتمع",
       "url": "./categories/education-community.html",
-      "total_events": 15,
-      "upcoming_or_active": 8,
+      "total_events": 18,
+      "upcoming_or_active": 11,
       "ended": 7,
       "live_ready": 0,
       "sources": [
@@ -304,6 +306,7 @@
       ],
       "cities": [
         "الرياض",
+        "ثول",
         "جدة"
       ],
       "audiences": [
@@ -324,51 +327,17 @@
         "url": "./events/event-registration-now-open-for-children-at-the-childhood-studies-center-for-t.html"
       },
       "sources_count": 4,
-      "cities_count": 2,
-      "audiences_count": 9
-    },
-    {
-      "slug": "awards-ceremonies",
-      "label": "جوائز وتكريم",
-      "url": "./categories/awards-ceremonies.html",
-      "total_events": 11,
-      "upcoming_or_active": 8,
-      "ended": 3,
-      "live_ready": 1,
-      "sources": [
-        "Dhahran Expo Calendar",
-        "Saudi Space Agency Events",
-        "Saudi Water Authority Events"
-      ],
-      "cities": [
-        "الرياض",
-        "الظهران",
-        "جدة"
-      ],
-      "audiences": [
-        "باحثون وأكاديميون",
-        "رواد أعمال",
-        "مبدعون وفنون",
-        "موظفون ومهنيون"
-      ],
-      "next_event": {
-        "title": "Global Infrastructure Expo",
-        "starts_at": "2026-09-15T04:00:00+03:00",
-        "status": "upcoming",
-        "url": "./events/event-global-infrastructure-expo.html"
-      },
-      "sources_count": 3,
       "cities_count": 3,
-      "audiences_count": 4
+      "audiences_count": 9
     },
     {
       "slug": "chamber-event",
       "label": "فعاليات الغرف التجارية",
       "url": "./categories/chamber-event.html",
       "total_events": 65,
-      "upcoming_or_active": 7,
-      "ended": 58,
-      "live_ready": 4,
+      "upcoming_or_active": 8,
+      "ended": 57,
+      "live_ready": 3,
       "sources": [
         "Abha Chamber Events",
         "Asharqia Chamber Events",
@@ -406,14 +375,48 @@
         "موظفون ومهنيون"
       ],
       "next_event": {
-        "title": "Crafts & Handicrafts Exhibition",
-        "starts_at": "2026-09-01T09:00:00+03:00",
+        "title": "متطلبات نظام إدارة المرافق ISO 41001 للمنشآت الصغيرة والمتوسطة",
+        "starts_at": "2026-07-21T10:30:00+03:00",
         "status": "upcoming",
-        "url": "./events/event-crafts-handicrafts-exhibition.html"
+        "url": "./events/event-متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة.html"
       },
       "sources_count": 8,
       "cities_count": 12,
       "audiences_count": 10
+    },
+    {
+      "slug": "awards-ceremonies",
+      "label": "جوائز وتكريم",
+      "url": "./categories/awards-ceremonies.html",
+      "total_events": 10,
+      "upcoming_or_active": 8,
+      "ended": 2,
+      "live_ready": 1,
+      "sources": [
+        "Dhahran Expo Calendar",
+        "Saudi Space Agency Events",
+        "Saudi Water Authority Events"
+      ],
+      "cities": [
+        "الرياض",
+        "الظهران",
+        "جدة"
+      ],
+      "audiences": [
+        "باحثون وأكاديميون",
+        "رواد أعمال",
+        "مبدعون وفنون",
+        "موظفون ومهنيون"
+      ],
+      "next_event": {
+        "title": "Global Infrastructure Expo",
+        "starts_at": "2026-09-15T04:00:00+03:00",
+        "status": "upcoming",
+        "url": "./events/event-global-infrastructure-expo.html"
+      },
+      "sources_count": 3,
+      "cities_count": 3,
+      "audiences_count": 4
     },
     {
       "slug": "gaming-esports",
@@ -430,6 +433,7 @@
       "cities": [
         "الرياض",
         "السعودية",
+        "جدة",
         "عن بعد"
       ],
       "audiences": [
@@ -448,16 +452,16 @@
         "url": "./events/event-riyadh-season-blvd-city.html"
       },
       "sources_count": 2,
-      "cities_count": 3,
+      "cities_count": 4,
       "audiences_count": 7
     },
     {
       "slug": "science-space",
       "label": "علوم وفضاء",
       "url": "./categories/science-space.html",
-      "total_events": 28,
+      "total_events": 15,
       "upcoming_or_active": 2,
-      "ended": 26,
+      "ended": 13,
       "live_ready": 0,
       "sources": [
         "Riyadh City Events",

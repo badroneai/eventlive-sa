@@ -1,17 +1,47 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-07-09T12:00:15.495Z
+- Generated at: 2026-07-10T02:36:13.771Z
 - Status: PASS
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
-- Sources: 69
-- Candidates: 184
-- Matched candidates: 157
-- Auto-publish sources: 13
-- Candidate-only sources: 10
+- Sources: 72
+- Candidates: 193
+- Matched candidates: 165
+- Auto-publish sources: 14
+- Candidate-only sources: 11
 - Partnership-required sources: 4
+- Productive sources / attempted: 22/34
+- Collector errors: 0
+
+## Publication Funnel
+
+| Stage | Count |
+| --- | --- |
+| discovered_this_run | 193 |
+| candidate_queue | 193 |
+| evaluated_for_publish | 193 |
+| linked_existing | 162 |
+| published_new | 0 |
+| blocked | 31 |
+| secondary_promoted | 0 |
+| secondary_still_blocked | 29 |
+
+## Blocked Reasons
+
+| Reason | Count |
+| --- | --- |
+| publication gate source-evidence is not auto-publishable | 16 |
+| confidence public-listing is not auto-publishable | 12 |
+| possible duplicate already exists: event-esports-world-cup | 1 |
+| possible duplicate already exists: event-saudi-wood-expo-2026 | 1 |
+| possible duplicate already exists: event-saudi-industrial-series-2 | 1 |
+
+## Collector Errors
+
+| Source | Reason |
+| --- | --- |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |
@@ -67,9 +97,12 @@
 | Saudi Winter Events Calendar | manual_review | official | source-evidence |
 | Riyadh City Events | manual_review | official | extraction |
 | Monsha'at Academy Programs | partnership_required | official | extraction |
-| General Entertainment Authority Events | manual_review | official | extraction |
+| General Entertainment Authority Events | manual_review | official | source-evidence |
 | SDAIA Calendar and Events | manual_review | official | extraction |
 | Makkah Chamber Events | manual_review | official | duplicate-review |
+| SCEGA ePortal Events | auto_publish | official | human-review |
+| Ministry of Commerce Upcoming Events | manual_review | official | source-evidence |
+| Evento | candidate_only | official-marketplace | duplicate-review |
 | Asharqia Chamber Events | manual_review | official | duplicate-review |
 | Qassim Chamber Events | manual_review | official | duplicate-review |
 | Abha Chamber Events | manual_review | official | duplicate-review |

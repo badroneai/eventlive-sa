@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.command-center.v1",
-  "generated_at": "2026-07-09T12:00:15.495Z",
+  "generated_at": "2026-07-10T02:36:13.771Z",
   "project": {
     "name": "EventLive",
     "domain": "eventme.live",
@@ -18,15 +18,19 @@
     ]
   },
   "totals": {
-    "catalog_events": 161,
-    "public_events": 449,
-    "source_candidates": 184,
-    "registered_sources": 69,
-    "live_ready": 52,
-    "ended_events": 295,
+    "catalog_events": 167,
+    "public_events": 435,
+    "source_candidates": 193,
+    "registered_sources": 72,
+    "live_ready": 51,
+    "ended_events": 275,
     "delivery_standard_pass": 21,
     "delivery_standard_partial": 0,
-    "delivery_standard_not_started": 0
+    "delivery_standard_not_started": 0,
+    "published_last_sync": 0,
+    "linked_existing_last_sync": 162,
+    "blocked_last_sync": 31,
+    "collector_errors": 0
   },
   "gates": [
     {

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-09T20:13:28.130Z",
+  "generated_at": "2026-07-10T02:33:51.925Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 9,
-    "enriched": 9,
+    "targets": 8,
+    "enriched": 8,
     "failed": 0
   },
   "enriched": [
@@ -17,14 +17,6 @@
     },
     {
       "id": "event-application-deadline-2030-leaders",
-      "title": "2030 Leaders",
-      "goals": 1,
-      "features": 4,
-      "requirements": 0,
-      "registration_deadline": "2026-07-12T18:00:00+03:00"
-    },
-    {
-      "id": "event-application-deadline-2030-leaders-2",
       "title": "2030 Leaders",
       "goals": 1,
       "features": 4,

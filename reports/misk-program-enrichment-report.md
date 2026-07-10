@@ -1,14 +1,13 @@
 # Misk Program Enrichment Report
 
-- generated_at: 2026-07-09T20:13:28.130Z
-- targets: 9
-- enriched: 9
+- generated_at: 2026-07-10T02:33:51.925Z
+- targets: 8
+- enriched: 8
 - failed: 0
 
 ## Enriched
 
 - Misk Local Traineeship Program - goals=1, features=1, requirements=3, registration_deadline=2026-11-30T18:00:00+03:00
-- 2030 Leaders - goals=1, features=4, requirements=0, registration_deadline=2026-07-12T18:00:00+03:00
 - 2030 Leaders - goals=1, features=4, requirements=0, registration_deadline=2026-07-12T18:00:00+03:00
 - Samsung Innovation Campus AI Program - goals=1, features=1, requirements=0, registration_deadline=2026-07-04T18:00:00+03:00
 - Entrepreneur Leadership Excellence Program - goals=1, features=3, requirements=0, registration_deadline=2026-07-09T18:00:00+03:00

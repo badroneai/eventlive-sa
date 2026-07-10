@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T20:15:43.881Z",
+  "generated_at": "2026-07-10T02:35:01.279Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,18 +11,18 @@
   },
   "collection": {
     "basis": "source_collection_report",
-    "collected_at": "2026-07-09T20:08:48.255Z",
+    "collected_at": "2026-07-10T02:28:17.576Z",
     "freshness": "fresh",
-    "discovered": 128,
+    "discovered": 193,
     "written": 193
   },
   "sources": {
     "total": 72,
     "attempted": 34,
     "collection_coverage_pct": 47,
-    "healthy": 14,
-    "zero_yield": 9,
-    "errors": 11,
+    "healthy": 22,
+    "zero_yield": 12,
+    "errors": 0,
     "not_collected": 38,
     "unattempted_high_priority": 3,
     "health": [
@@ -48,19 +48,19 @@
         "id": "moc-cultural-calendar",
         "name": "Ministry of Culture Cultural Calendar",
         "priority": 3,
-        "status": "collection-error",
-        "extracted": 0,
+        "status": "healthy",
+        "extracted": 13,
         "candidates": 0,
-        "next_action": "fetch failed"
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "mos-events",
         "name": "Ministry of Sport Events",
         "priority": 4,
-        "status": "collection-error",
+        "status": "zero-yield",
         "extracted": 0,
         "candidates": 0,
-        "next_action": "fetch failed"
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "webook-explore",
@@ -102,10 +102,10 @@
         "id": "monshaat-events",
         "name": "Monsha'at All Events",
         "priority": 9,
-        "status": "collection-error",
-        "extracted": 0,
+        "status": "healthy",
+        "extracted": 3,
         "candidates": 3,
-        "next_action": "fetch failed"
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "invest-saudi-events",
@@ -129,10 +129,10 @@
         "id": "eye-of-riyadh-events",
         "name": "Eye of Riyadh Events",
         "priority": 12,
-        "status": "collection-error",
-        "extracted": 0,
+        "status": "healthy",
+        "extracted": 16,
         "candidates": 15,
-        "next_action": "Discovery-only source unavailable in this run: HTTP 403"
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "ten-times-saudi",
@@ -147,10 +147,10 @@
         "id": "eventbrite-saudi",
         "name": "Eventbrite Saudi Arabia",
         "priority": 14,
-        "status": "collection-error",
-        "extracted": 0,
+        "status": "healthy",
+        "extracted": 16,
         "candidates": 16,
-        "next_action": "Discovery-only source unavailable in this run: HTTP 405"
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "platinumlist-jeddah",
@@ -246,10 +246,10 @@
         "id": "sdaia-academy-programs",
         "name": "SDAIA Academy Programs",
         "priority": 25,
-        "status": "collection-error",
+        "status": "zero-yield",
         "extracted": 0,
         "candidates": 0,
-        "next_action": "fetch failed"
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "saudi-events-app",
@@ -354,10 +354,10 @@
         "id": "moc-cultural-subportals",
         "name": "Ministry of Culture Commission Calendars",
         "priority": 37,
-        "status": "collection-error",
-        "extracted": 0,
+        "status": "healthy",
+        "extracted": 13,
         "candidates": 12,
-        "next_action": "fetch failed"
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "historic-jeddah-albalad",
@@ -427,8 +427,8 @@
         "name": "Saudi Universities and Technical Colleges",
         "priority": 45,
         "status": "healthy",
-        "extracted": 7,
-        "candidates": 7,
+        "extracted": 6,
+        "candidates": 6,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -507,10 +507,10 @@
         "id": "sdaia-calendar-events",
         "name": "SDAIA Calendar and Events",
         "priority": 54,
-        "status": "collection-error",
-        "extracted": 0,
+        "status": "healthy",
+        "extracted": 2,
         "candidates": 2,
-        "next_action": "fetch failed"
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "makkah-chamber-events",
@@ -552,19 +552,19 @@
         "id": "asharqia-chamber-events",
         "name": "Asharqia Chamber Events",
         "priority": 59,
-        "status": "collection-error",
-        "extracted": 0,
+        "status": "healthy",
+        "extracted": 2,
         "candidates": 2,
-        "next_action": "fetch failed"
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "qassim-chamber-events",
         "name": "Qassim Chamber Events",
         "priority": 60,
-        "status": "collection-error",
+        "status": "zero-yield",
         "extracted": 0,
         "candidates": 0,
-        "next_action": "HTTP 403"
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "abha-chamber-events",
@@ -624,10 +624,10 @@
         "id": "jazan-chamber-events",
         "name": "Jazan Chamber Events",
         "priority": 67,
-        "status": "collection-error",
-        "extracted": 0,
-        "candidates": 0,
-        "next_action": "fetch failed"
+        "status": "healthy",
+        "extracted": 1,
+        "candidates": 1,
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "hail-chamber-events",
@@ -698,14 +698,13 @@
     },
     "by_confidence": {
       "official": 162,
-      "public-listing": 13,
-      "unverified": 16,
-      "partner": 2
+      "public-listing": 15,
+      "unverified": 16
     },
     "by_discovery_quality": {
-      "strong-lead": 27,
+      "strong-lead": 26,
       "weak-lead": 1,
-      "watch-lead": 3
+      "watch-lead": 4
     },
     "by_source": {
       "Ministry of Culture Commission Calendars": 12,
@@ -717,11 +716,12 @@
       "Monsha'at All Events": 3,
       "Tuwaiq Academy Bootcamps and Programs": 20,
       "Eye of Riyadh Events": 15,
-      "Saudi Universities and Technical Colleges": 7,
+      "Saudi Universities and Technical Colleges": 6,
       "MDLBEAST Events": 5,
       "Future Skills MCIT Catalogue": 4,
       "Saudi Food and Drug Authority Events": 7,
       "Eventbrite Saudi Arabia": 16,
+      "Jazan Chamber Events": 1,
       "Dhahran Expo Calendar": 15,
       "RFECC What's On": 6,
       "Asharqia Chamber Events": 2,
@@ -1002,6 +1002,27 @@
         "rank": 6
       },
       {
+        "id": "candidate-eye-of-riyadh-events-sunaa-2026-20260818-e3819fa8",
+        "title": "SUNAA 2026",
+        "source_label": "Eye of Riyadh Events",
+        "city": "Saudi Arabia",
+        "starts_at": "2026-08-18T09:00:00+03:00",
+        "ends_at": "2026-08-20T18:00:00+03:00",
+        "review_status": "evidence-captured",
+        "publication_gate": "duplicate-review",
+        "confidence": "public-listing",
+        "discovery_quality": "watch-lead",
+        "discovery_score": 60,
+        "discovery_notes": "directory-source, saudi-location-signal, large-event-topic, city-not-specific",
+        "duplicate_risk": false,
+        "matched_catalog_event_id": "",
+        "days_to_start": 40,
+        "is_past": false,
+        "is_actionable": false,
+        "action": "دليل تجميعي؛ ابن مطابقة مصدر رسمي قبل أي نشر آلي.",
+        "rank": 6
+      },
+      {
         "id": "candidate-eye-of-riyadh-events-smart-data-ai-summit-20260826-f9946ea8",
         "title": "Smart Data & AI Summit",
         "source_label": "Eye of Riyadh Events",
@@ -1101,27 +1122,6 @@
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
         "days_to_start": 52,
-        "is_past": false,
-        "is_actionable": false,
-        "action": "دليل تجميعي؛ ابن مطابقة مصدر رسمي قبل أي نشر آلي.",
-        "rank": 6
-      },
-      {
-        "id": "candidate-eye-of-riyadh-events-leap-2026-20260831-44ae74ee",
-        "title": "LEAP 2026",
-        "source_label": "Eye of Riyadh Events",
-        "city": "Riyadh",
-        "starts_at": "2026-08-31T09:00:00+03:00",
-        "ends_at": "2026-09-03T18:00:00+03:00",
-        "review_status": "evidence-captured",
-        "publication_gate": "duplicate-review",
-        "confidence": "public-listing",
-        "discovery_quality": "strong-lead",
-        "discovery_score": 70,
-        "discovery_notes": "directory-source, saudi-location-signal, large-event-topic",
-        "duplicate_risk": false,
-        "matched_catalog_event_id": "event-leap-2026",
-        "days_to_start": 53,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل تجميعي؛ ابن مطابقة مصدر رسمي قبل أي نشر آلي.",

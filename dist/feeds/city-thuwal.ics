@@ -6,18 +6,8 @@ PRODID:-//EventLive//Saudi Events//AR
 X-WR-CALNAME:فعاليات ثول | EventLive
 X-WR-TIMEZONE:Asia/Riyadh
 BEGIN:VEVENT
-UID:event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone@eventme.live
-DTSTAMP:20260709T132515Z
-DTSTART:20260709T163000Z
-DTEND:20260709T205900Z
-SUMMARY:Quarter-Finals: Join the Celebration at the FIFA Fan Zone
-DESCRIPTION:The road to the FIFA World Cup Final continues as the tournament reaches the quarter-finals. Quarter-Finals: Join the Celebration at the FIFA Fan Zone ضمن رياضة وفعاليات جماهيرية في ثول. تبدأ الفعالية ٠٩‏/٠٧‏/٢٠٢٦، ٧:٣٠ م وتنتهي ٠٩‏/٠٧‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تتوفر لها صفحة جدول حي تساعد الزائر على متابعة الحالة والوقت أثناء الحضور. المصدر: Saudi Universities and Technical Colleges.
-LOCATION:Discovery Square
-URL:https://eventme.live/events/event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone.html
-END:VEVENT
-BEGIN:VEVENT
 UID:event-join-us-at-kaust-health-for-respiratory-health-day@eventme.live
-DTSTAMP:20260709T132515Z
+DTSTAMP:20260710T023614Z
 DTSTART:20260712T080000Z
 DTEND:20260712T100000Z
 SUMMARY:Join us at KAUST Health for Respiratory Health Day
@@ -27,7 +17,7 @@ URL:https://eventme.live/events/event-join-us-at-kaust-health-for-respiratory-he
 END:VEVENT
 BEGIN:VEVENT
 UID:event-semi-finals-join-the-celebration-at-the-fifa-fan-zone@eventme.live
-DTSTAMP:20260709T132515Z
+DTSTAMP:20260710T023614Z
 DTSTART:20260714T180000Z
 DTEND:20260714T205900Z
 SUMMARY:Semi-Finals: Join the Celebration at the FIFA Fan Zone
@@ -37,12 +27,22 @@ URL:https://eventme.live/events/event-semi-finals-join-the-celebration-at-the-fi
 END:VEVENT
 BEGIN:VEVENT
 UID:event-fifa-world-cup-2026-final-celebrate-footballs-biggest-night-at-the-kaust@eventme.live
-DTSTAMP:20260709T132515Z
+DTSTAMP:20260710T023614Z
 DTSTART:20260719T150000Z
 DTEND:20260719T205900Z
 SUMMARY:FIFA World Cup 2026 Final: Celebrate Football's Biggest Night at the KAUST Fan Zone
 DESCRIPTION:The FIFA World Cup 2026 is down to the final four teams. FIFA World Cup 2026 Final: Celebrate Football's Biggest Night at the KAUST Fan Zone ضمن رياضة وفعاليات جماهيرية في ثول. تبدأ الفعالية ١٩‏/٠٧‏/٢٠٢٦، ٦:٠٠ م وتنتهي ١٩‏/٠٧‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تتوفر لها صفحة جدول حي تساعد الزائر على متابعة الحالة والوقت أثناء الحضور. المصدر: Saudi Universities and Technical Colleges.
 LOCATION:Discovery Square
 URL:https://eventme.live/events/event-fifa-world-cup-2026-final-celebrate-footballs-biggest-night-at-the-kaust.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco@eventme.live
+DTSTAMP:20260710T023614Z
+DTSTART:20260906T210000Z
+DTEND:20260910T205900Z
+SUMMARY:The KAUST Imaging and Characterization Core Lab presents: AI for Microscopy Workshop
+DESCRIPTION:فعالية عامة من تقويم KAUST Central. The KAUST Imaging and Characterization Core Lab presents: AI for Microscopy Workshop ضمن جامعات ومجتمع في ثول. تبدأ الفعالية ٠٧‏/٠٩‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ١٠‏/٠٩‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Saudi Universities and Technical Colleges.
+LOCATION:AV/VR Hub\, KAUST Visualization Core\, building 1\, level 2\, room 2304
+URL:https://eventme.live/events/event-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco.html
 END:VEVENT
 END:VCALENDAR

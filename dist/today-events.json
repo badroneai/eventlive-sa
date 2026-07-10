@@ -1,20 +1,10 @@
 {
-  "generated_at": "2026-07-09T13:25:15.876Z",
+  "generated_at": "2026-07-10T02:36:14.055Z",
   "platform": "EventLive",
   "scope": "today-events",
   "window_hours": 72,
-  "count": 13,
+  "count": 15,
   "events": [
-    {
-      "id": "event-esports-world-cup",
-      "title": "Esports World Cup",
-      "url": "./events/event-esports-world-cup.html",
-      "city": "الرياض",
-      "starts_at": "2026-07-06T17:00:00+03:00",
-      "ends_at": "2026-08-23T22:00:00+03:00",
-      "status": "ongoing",
-      "live_schedule_ready": false
-    },
     {
       "id": "event-registration-now-open-for-children-at-the-childhood-studies-center-for-t",
       "title": "Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH",
@@ -26,23 +16,13 @@
       "live_schedule_ready": false
     },
     {
-      "id": "event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone",
-      "title": "Quarter-Finals: Join the Celebration at the FIFA Fan Zone",
-      "url": "./events/event-quarter-finals-join-the-celebration-at-the-fifa-fan-zone.html",
-      "city": "ثول",
-      "starts_at": "2026-07-09T19:30:00+03:00",
-      "ends_at": "2026-07-09T23:59:00+03:00",
-      "status": "upcoming",
-      "live_schedule_ready": true
-    },
-    {
       "id": "event-unstable",
       "title": "Unstable",
       "url": "./events/event-unstable.html",
       "city": "الرياض",
       "starts_at": "2026-07-10T00:00:00+03:00",
       "ends_at": "2026-07-11T00:00:00+03:00",
-      "status": "upcoming",
+      "status": "live",
       "live_schedule_ready": false
     },
     {
@@ -76,6 +56,16 @@
       "live_schedule_ready": true
     },
     {
+      "id": "event-application-deadline-2030-leaders",
+      "title": "2030 Leaders",
+      "url": "./events/event-application-deadline-2030-leaders.html",
+      "city": "السعودية",
+      "starts_at": "2026-07-12T09:00:00+03:00",
+      "ends_at": "2026-07-12T23:59:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
       "id": "event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م",
       "title": "أسبوع العقار والمقاولات 12- 16 يوليو 2026م",
       "url": "./events/event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م.html",
@@ -102,6 +92,16 @@
       "city": "عن بعد",
       "starts_at": "2026-07-12T09:00:00+03:00",
       "ends_at": "2026-07-14T18:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-mishkat-summer-camp",
+      "title": "Mishkat Summer Camp",
+      "url": "./events/event-mishkat-summer-camp.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-12T09:00:00+03:00",
+      "ends_at": "2026-08-06T13:00:00+03:00",
       "status": "upcoming",
       "live_schedule_ready": false
     },
@@ -134,6 +134,26 @@
       "ends_at": "2026-07-12T13:00:00+03:00",
       "status": "upcoming",
       "live_schedule_ready": true
+    },
+    {
+      "id": "event-saif-summer-program",
+      "title": "SAIF Summer Program",
+      "url": "./events/event-saif-summer-program.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-12T17:00:00+03:00",
+      "ends_at": "2026-08-29T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
+    },
+    {
+      "id": "event-معسكر-هندسة-الدرونز-التطبيقي",
+      "title": "معسكر هندسة الدرونز التطبيقي",
+      "url": "./events/event-معسكر-هندسة-الدرونز-التطبيقي.html",
+      "city": "الرياض",
+      "starts_at": "2026-07-12T18:00:00+03:00",
+      "ends_at": "2026-08-20T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": false
     }
   ]
 }

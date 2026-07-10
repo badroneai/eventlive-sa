@@ -55,6 +55,12 @@ assert(/404/.test(analyticsMd), 'analytics owner note must explain Plausible 404
 const harvest = readJson('reports/source-harvest-os-status.json');
 assert(harvest.operating_rule?.includes('Raw collection is not publication'), 'harvest operating rule missing');
 assert(harvest.totals?.sources >= 1, 'harvest sources not counted');
+assert(typeof harvest.totals?.collector_errors === 'number', 'harvest collector errors missing');
+assert(typeof harvest.funnel?.published_new === 'number', 'harvest publication funnel missing');
+assert(typeof harvest.funnel?.linked_existing === 'number', 'harvest linked-existing metric missing');
+assert(typeof harvest.funnel?.blocked === 'number', 'harvest blocked metric missing');
+assert(harvest.blocked_reasons && typeof harvest.blocked_reasons === 'object', 'harvest blocked reasons missing');
+assert(Array.isArray(harvest.collector_error_sources), 'harvest collector error source list missing');
 
 const mdFiles = [
   'eventlive-command-center.md',

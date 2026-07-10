@@ -7,7 +7,7 @@ X-WR-CALNAME:جامعات ومجتمع | EventLive
 X-WR-TIMEZONE:Asia/Riyadh
 BEGIN:VEVENT
 UID:event-registration-now-open-for-children-at-the-childhood-studies-center-for-t@eventme.live
-DTSTAMP:20260709T132515Z
+DTSTAMP:20260710T023614Z
 DTSTART:20260707T060000Z
 DTEND:20260729T150000Z
 SUMMARY:Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH
@@ -17,7 +17,7 @@ URL:https://eventme.live/events/event-registration-now-open-for-children-at-the-
 END:VEVENT
 BEGIN:VEVENT
 UID:event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل@eventme.live
-DTSTAMP:20260709T132515Z
+DTSTAMP:20260710T023614Z
 DTSTART:20260726T140000Z
 DTEND:20260820T180000Z
 SUMMARY:معسكر تطوير البرمجيات السحابية الاحترافية لسحابة قوقل
@@ -27,7 +27,7 @@ URL:https://eventme.live/events/event-معسكر-تطوير-البرمجيات-�
 END:VEVENT
 BEGIN:VEVENT
 UID:event-معسكر-الأنظمة-الذاتية-للدرونز@eventme.live
-DTSTAMP:20260709T132515Z
+DTSTAMP:20260710T023614Z
 DTSTART:20260809T150000Z
 DTEND:20260910T180000Z
 SUMMARY:معسكر الأنظمة الذاتية للدرونز
@@ -37,7 +37,7 @@ URL:https://eventme.live/events/event-معسكر-الأنظمة-الذاتية-�
 END:VEVENT
 BEGIN:VEVENT
 UID:event-معسكر-طويق-السيبراني@eventme.live
-DTSTAMP:20260709T132515Z
+DTSTAMP:20260710T023614Z
 DTSTART:20260823T070000Z
 DTEND:20270107T120000Z
 SUMMARY:معسكر طويق السيبراني
@@ -47,7 +47,7 @@ URL:https://eventme.live/events/event-معسكر-طويق-السيبراني.htm
 END:VEVENT
 BEGIN:VEVENT
 UID:event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud@eventme.live
-DTSTAMP:20260709T132515Z
+DTSTAMP:20260710T023614Z
 DTSTART:20260823T080000Z
 DTEND:20260917T120000Z
 SUMMARY:معسكر هندسة الحوسبة السحابية باستخدام Google Cloud
@@ -57,7 +57,7 @@ URL:https://eventme.live/events/event-معسكر-هندسة-الحوسبة-ال�
 END:VEVENT
 BEGIN:VEVENT
 UID:event-the-innovation-diwan@eventme.live
-DTSTAMP:20260709T132515Z
+DTSTAMP:20260710T023614Z
 DTSTART:20260905T060000Z
 DTEND:20270131T150000Z
 SUMMARY:The Innovation Diwan
@@ -66,8 +66,38 @@ LOCATION:Hybrid
 URL:https://eventme.live/events/event-the-innovation-diwan.html
 END:VEVENT
 BEGIN:VEVENT
+UID:event-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي@eventme.live
+DTSTAMP:20260710T023614Z
+DTSTART:20260906T130000Z
+DTEND:20261112T170000Z
+SUMMARY:معسكر بناء وتطوير نماذج الذكاء الاصطناعي
+DESCRIPTION:يهدف المعسكر إلى تعريف المشاركين بالمفاهيم الشاملة والمتقدمة المتعلقة بعلم الذكاء الاصطناعي، مع التركيز على بناء أساس قوي في مجالات تعلم الآلة والتعلم العميق باستخدام لغة Python، سيكتسب المشاركون خلال المعسكر فهمًا عميقًا لطرق استخدام ال... المصدر الرسمي: أكاديمية طويق.
+LOCATION:الرياض - المقر الرئيسي
+URL:https://eventme.live/events/event-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc@eventme.live
+DTSTAMP:20260710T023614Z
+DTSTART:20260906T140000Z
+DTEND:20261029T180000Z
+SUMMARY:معسكر إدارة الحوكمة والمخاطر والامتثال GRC
+DESCRIPTION:يهدف معسكر الحوكمة والمخاطر GRC إلى تأهيل المشاركين من خلال التركيز على فهم مبادئ الحوكمة واستراتيجيات تنفيذها، وتحليل وتقييم المخاطر مع تطوير خطط للتعامل معها، ويشمل المعسكر التعرف على اللوائح والقوانين وتنفيذ استراتيجيات امتثال فعالة، ... المصدر الرسمي: أكاديمية طويق.
+LOCATION:الرياض - المقر الرئيسي
+URL:https://eventme.live/events/event-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc.html
+END:VEVENT
+BEGIN:VEVENT
+UID:event-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco@eventme.live
+DTSTAMP:20260710T023614Z
+DTSTART:20260906T210000Z
+DTEND:20260910T205900Z
+SUMMARY:The KAUST Imaging and Characterization Core Lab presents: AI for Microscopy Workshop
+DESCRIPTION:فعالية عامة من تقويم KAUST Central. The KAUST Imaging and Characterization Core Lab presents: AI for Microscopy Workshop ضمن جامعات ومجتمع في ثول. تبدأ الفعالية ٠٧‏/٠٩‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ١٠‏/٠٩‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Saudi Universities and Technical Colleges.
+LOCATION:AV/VR Hub\, KAUST Visualization Core\, building 1\, level 2\, room 2304
+URL:https://eventme.live/events/event-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco.html
+END:VEVENT
+BEGIN:VEVENT
 UID:event-money20-20-middle-east@eventme.live
-DTSTAMP:20260709T132515Z
+DTSTAMP:20260710T023614Z
 DTSTART:20260914T060000Z
 DTEND:20260916T140000Z
 SUMMARY:Money20/20 Middle East
@@ -77,7 +107,7 @@ URL:https://eventme.live/events/event-money20-20-middle-east.html
 END:VEVENT
 BEGIN:VEVENT
 UID:event-kingdom-business-luxury-travel-congress@eventme.live
-DTSTAMP:20260709T132515Z
+DTSTAMP:20260710T023614Z
 DTSTART:20260915T060000Z
 DTEND:20260916T140000Z
 SUMMARY:Kingdom Business Luxury Travel Congress

@@ -674,11 +674,13 @@ function buildEvents() {
   const ended = readJson('data/source_ended_events.json', { ended_events: [] }).ended_events || [];
   const demoEvent = makeDemoEvent(readJson('data/demo_program.json', {}));
   const rawEvents = [
-    ...ended.map((event) => [event, 'ended']),
     ...catalog.map((event) => [event, 'catalog']),
+    ...ended.map((event) => [event, 'ended']),
     ...(demoEvent ? [[demoEvent, 'demo']] : [])
   ];
-  const seen = new Set();
+  const seenIds = new Set();
+  const seenSemantic = new Set();
+  const seenSourceIdentity = new Set();
   const events = [];
   let excludedDraftLikeRecords = 0;
   const excludedPublicSlugs = [];
@@ -689,9 +691,34 @@ function buildEvents() {
       continue;
     }
     const event = normalizeEvent(raw, sourceGroup, previousLookup);
-    const key = event.id || eventIdentity(event);
-    if (seen.has(key)) continue;
-    seen.add(key);
+    const idKey = event.id || eventIdentity(event);
+    const semanticKey = [
+      normalizeArabicSearch(event.title),
+      normalizeSaudiCity(event.city, event.city),
+      event.starts_at,
+      event.ends_at,
+      normalizeArabicSearch(event.source_label || event.organizer)
+    ].join('|');
+    let sourceIdentityKey = '';
+    try {
+      const sourceUrl = new URL(event.source_url || event.evidence_url || '');
+      const stableParams = [...sourceUrl.searchParams.entries()]
+        .filter(([key, value]) => /^(?:id|eventid|itemid|event|programid|courseid|bootcampid)$/i.test(key) && value)
+        .sort(([a], [b]) => a.localeCompare(b));
+      const pathParts = sourceUrl.pathname.split('/').filter(Boolean);
+      if (/^(?:ar|en)$/i.test(pathParts[0])) pathParts.shift();
+      const genericTail = new Set(['event', 'events', 'calendar', 'program', 'programs', 'bootcamp', 'bootcamps', 'course', 'courses', 'workshop', 'workshops']);
+      if (pathParts.length >= 2 && !genericTail.has(pathParts.at(-1)?.toLowerCase())) {
+        sourceIdentityKey = `${sourceUrl.hostname}/${pathParts.join('/')}`.replace(/\/+$/g, '').toLowerCase();
+        if (stableParams.length) sourceIdentityKey += `?${new URLSearchParams(stableParams).toString().toLowerCase()}`;
+      }
+    } catch {
+      sourceIdentityKey = '';
+    }
+    if (seenIds.has(idKey) || seenSemantic.has(semanticKey) || (sourceIdentityKey && seenSourceIdentity.has(sourceIdentityKey))) continue;
+    seenIds.add(idKey);
+    seenSemantic.add(semanticKey);
+    if (sourceIdentityKey) seenSourceIdentity.add(sourceIdentityKey);
     events.push(event);
   }
   const sortedEvents = events.sort((a, b) => {
@@ -2600,6 +2627,15 @@ function writeOwnerStatusPage(events) {
   const autoPublish = readReport('reports/source-auto-publish-report.json', {});
   const secondary = readReport('reports/source-secondary-verification-report.json', {});
   const sourceOps = readReport('reports/source-ops-report.json', {});
+  const sourceCollection = readReport('reports/source-collection-report.json', {});
+  const blockedReasons = (autoPublish.blocked || []).reduce((totals, candidate) => {
+    const reason = candidate.reason || 'unknown';
+    totals[reason] = (totals[reason] || 0) + 1;
+    return totals;
+  }, {});
+  const collectorErrorSources = (sourceCollection.sources || [])
+    .filter((source) => source.status === 'error')
+    .map((source) => ({ id: source.id, note: source.note || 'collector error' }));
   const status = {
     generated_at: buildAt,
     platform: platformName,
@@ -2631,7 +2667,9 @@ function writeOwnerStatusPage(events) {
       linked_existing: autoPublish.totals?.linked_existing || 0,
       blocked_remaining: autoPublish.totals?.blocked || 0,
       secondary_promoted: secondary.totals?.promoted || 0,
-      secondary_still_blocked: secondary.totals?.still_blocked || 0
+      secondary_still_blocked: secondary.totals?.still_blocked || 0,
+      blocked_reasons: blockedReasons,
+      collector_error_sources: collectorErrorSources
     },
     catalog: {
       public_events: events.length,
@@ -2675,6 +2713,8 @@ ${header('./')}
     ['collector_errors', status.source_sync.collector_errors, 'إذا زادت الأخطاء، نصلح collectors أو نعيد تصنيف المصدر.'],
     ['tracked_events', status.analytics.tracked_events.length, 'إذا صارت صفرًا، فالقياس غير مزروع في الصفحات العامة.']
   ], (row) => `<tr><th>${escapeHtml(row[0])}</th><td>${escapeHtml(row[1])}</td><td>${escapeHtml(row[2])}</td></tr>`)}</div></section>
+  <section class="section"><div class="wrap"><h2>أسباب الحجب في آخر دورة</h2>${operationalTable(['السبب', 'العدد'], Object.entries(status.source_sync.blocked_reasons).sort((a, b) => b[1] - a[1]), (row) => `<tr><td>${escapeHtml(row[0])}</td><td>${escapeHtml(row[1])}</td></tr>`)}</div></section>
+  <section class="section"><div class="wrap"><h2>مصادر تحتاج إصلاحًا</h2>${operationalTable(['المصدر', 'العلة'], status.source_sync.collector_error_sources, (row) => `<tr><td><code>${escapeHtml(row.id)}</code></td><td>${escapeHtml(row.note)}</td></tr>`)}</div></section>
 </main>
 ${footer('./')}
 </body>

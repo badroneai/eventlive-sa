@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Kashtah | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-kashtah@eventme.live
+DTSTAMP:20260710T023614Z
+DTSTART:20260627T130000Z
+DTEND:20260830T210000Z
+SUMMARY:Kashtah
+DESCRIPTION:Kashtah brings the charm of a traditional outdoor gathering to Al-Hadabah Park in Abha\, creating a family-friendly destination where nature\, adventure\, and relaxation come together. المصدر الرسمي: Visit Saudi.
+LOCATION:Aseer
+URL:https://eventme.live/events/event-kashtah.html
+END:VEVENT
+END:VCALENDAR

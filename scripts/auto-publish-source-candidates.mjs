@@ -100,6 +100,87 @@ function candidateSourceDateKey(row) {
   ].join('|');
 }
 
+function candidateSourceIdentityKey(row) {
+  const raw = String(row.source_url || row.evidence_url || row.image_source_url || '').trim();
+  let source = '';
+  try {
+    const url = new URL(raw);
+    const stableParams = [...url.searchParams.entries()]
+      .filter(([key, value]) => /^(?:id|eventid|itemid|event|programid|courseid|bootcampid)$/i.test(key) && value)
+      .sort(([a], [b]) => a.localeCompare(b));
+    source = `${url.hostname}${url.pathname}`.replace(/\/+$/g, '').toLowerCase();
+    if (stableParams.length) source += `?${new URLSearchParams(stableParams).toString().toLowerCase()}`;
+  } catch {
+    source = normalizeSourceUrl(raw);
+  }
+  if (!source || !source.includes('/')) return '';
+  const pathParts = source.slice(source.indexOf('/') + 1).split('?')[0].split('/').filter(Boolean);
+  const genericTail = new Set(['event', 'events', 'calendar', 'program', 'programs', 'bootcamp', 'bootcamps', 'course', 'courses', 'workshop', 'workshops']);
+  if (pathParts.length < 2 || genericTail.has(pathParts.at(-1))) return '';
+  if (/^(?:ar|en)$/i.test(pathParts[0]) && pathParts.length < 3) return '';
+  return source;
+}
+
+function preferredDuplicateEvent(first, second) {
+  const firstCanonical = first.id === `event-${first.slug}`;
+  const secondCanonical = second.id === `event-${second.slug}`;
+  if (firstCanonical !== secondCanonical) return firstCanonical ? first : second;
+  const score = (event) => [
+    event.image_url || event.original_image_url,
+    event.registration_url,
+    event.summary,
+    Array.isArray(event.sessions) && event.sessions.length,
+    event.live_schedule_ready
+  ].filter(Boolean).length;
+  return score(second) > score(first) ? second : first;
+}
+
+function dedupeAutoPublishedCatalog(events) {
+  const result = [];
+  const indexByIdentity = new Map();
+  const removed = [];
+  for (const event of events) {
+    const identity = event.published_by === 'EventLive Auto Publisher' ? candidateSourceIdentityKey(event) : '';
+    if (!identity || !indexByIdentity.has(identity)) {
+      if (identity) indexByIdentity.set(identity, result.length);
+      result.push(event);
+      continue;
+    }
+    const index = indexByIdentity.get(identity);
+    const existing = result[index];
+    const preferred = preferredDuplicateEvent(existing, event);
+    const discarded = preferred === existing ? event : existing;
+    result[index] = preferred;
+    removed.push({ removed_event_id: discarded.id, kept_event_id: preferred.id, source_identity: identity });
+  }
+  return { events: result, removed };
+}
+
+function canonicalizeQueryIdentityEvents(events, candidates) {
+  const queryEvents = events.filter((event) => (
+    event.published_by === 'EventLive Auto Publisher'
+    && candidateSourceIdentityKey(event).includes('?')
+  ));
+  const queryIds = new Set(queryEvents.map((event) => event.id));
+  const reservedIds = new Set(events.filter((event) => !queryIds.has(event.id)).map((event) => event.id));
+  const idMap = new Map();
+  for (const event of queryEvents) {
+    const slug = toSlug(event.title || event.id);
+    const nextId = uniqueId(`event-${slug}`, reservedIds);
+    reservedIds.add(nextId);
+    if (event.id !== nextId) idMap.set(event.id, nextId);
+    event.id = nextId;
+    event.slug = slug;
+  }
+  const updatedCandidates = candidates.map((candidate) => idMap.has(candidate.matched_catalog_event_id)
+    ? { ...candidate, matched_catalog_event_id: idMap.get(candidate.matched_catalog_event_id) }
+    : candidate);
+  return {
+    candidates: updatedCandidates,
+    remapped: [...idMap.entries()].map(([from, to]) => ({ from, to }))
+  };
+}
+
 function isLongSeasonLike(row) {
   const start = new Date(row.starts_at || row.event_start).getTime();
   const end = new Date(row.ends_at || row.event_end || row.starts_at || row.event_start).getTime();
@@ -293,8 +374,10 @@ function main() {
   const candidatesEnvelope = readJson(candidatesPath);
   const catalogEnvelope = readJson(catalogPath);
   const candidates = Array.isArray(candidatesEnvelope.candidates) ? candidatesEnvelope.candidates : [];
-  const catalogEvents = (Array.isArray(catalogEnvelope.events) ? catalogEnvelope.events : [])
+  const validCatalogEvents = (Array.isArray(catalogEnvelope.events) ? catalogEnvelope.events : [])
     .filter((event) => hasValidPublicDateTimes(event) || !isAutoPublishedEventLiveRow(event));
+  const dedupedCatalog = dedupeAutoPublishedCatalog(validCatalogEvents);
+  const catalogEvents = dedupedCatalog.events;
   const existingIds = new Set(catalogEvents.map((event) => event.id));
   const catalogByMatch = new Map(catalogEvents.map((event) => [candidateMatchKey(event), event]));
   const catalogByLooseMatch = new Map(catalogEvents.map((event) => [candidateLooseMatchKey(event), event]));
@@ -304,27 +387,36 @@ function main() {
   const catalogBySourceDate = new Map(catalogEvents
     .map((event) => [candidateSourceDateKey(event), event])
     .filter(([key]) => key));
+  const catalogBySourceIdentity = new Map(catalogEvents
+    .map((event) => [candidateSourceIdentityKey(event), event])
+    .filter(([key]) => key));
   const published = [];
   const linkedExisting = [];
   const blocked = [];
 
-  const updatedCandidates = candidates.map((candidate) => {
+  let updatedCandidates = candidates.map((candidate) => {
     const exactMatch = catalogByMatch.get(candidateMatchKey(candidate));
     const looseMatch = !exactMatch ? catalogByLooseMatch.get(candidateLooseMatchKey(candidate)) : null;
-    const windowMatch = !exactMatch && !looseMatch && isLongSeasonLike(candidate)
+    const sourceIdentityMatch = !exactMatch && !looseMatch
+      ? catalogBySourceIdentity.get(candidateSourceIdentityKey(candidate))
+      : null;
+    const windowMatch = !exactMatch && !looseMatch && !sourceIdentityMatch && isLongSeasonLike(candidate)
       ? catalogByDateWindow.get(candidateDateWindowKey(candidate))
       : null;
-    const sourceDateMatch = !exactMatch && !looseMatch && !windowMatch
+    const sourceDateMatch = !exactMatch && !looseMatch && !sourceIdentityMatch && !windowMatch
       ? catalogBySourceDate.get(candidateSourceDateKey(candidate))
       : null;
-    const existingMatch = exactMatch || looseMatch || windowMatch || sourceDateMatch;
+    const existingMatch = exactMatch || looseMatch || sourceIdentityMatch || windowMatch || sourceDateMatch;
     if (existingMatch) {
       if (trustedAlreadyPublished(candidate)) {
         const alreadyLinked = candidate.review_status === 'approved-for-catalog'
           && candidate.matched_catalog_event_id === existingMatch.id;
         const preservePrimaryOfficialRecord = shouldPreservePrimaryOfficialRecord(existingMatch, candidate);
         if (!windowMatch && !preservePrimaryOfficialRecord) {
-          if (!sourceDateMatch) existingMatch.title = decodeHtml(candidate.title || existingMatch.title);
+          const querySpecificIdentity = sourceIdentityMatch && candidateSourceIdentityKey(candidate).includes('?');
+          if (!sourceDateMatch && (!sourceIdentityMatch || querySpecificIdentity)) {
+            existingMatch.title = decodeHtml(candidate.title || existingMatch.title);
+          }
           if (!hasPreciseLiveSchedule(existingMatch)) {
             existingMatch.starts_at = candidate.starts_at || existingMatch.starts_at;
             existingMatch.ends_at = candidate.ends_at || existingMatch.ends_at;
@@ -383,6 +475,8 @@ function main() {
     catalogByLooseMatch.set(candidateLooseMatchKey(event), event);
     const sourceDateKey = candidateSourceDateKey(event);
     if (sourceDateKey) catalogBySourceDate.set(sourceDateKey, event);
+    const sourceIdentityKey = candidateSourceIdentityKey(event);
+    if (sourceIdentityKey) catalogBySourceIdentity.set(sourceIdentityKey, event);
     if (isLongSeasonLike(event)) catalogByDateWindow.set(candidateDateWindowKey(event), event);
     published.push({
       candidate_id: candidate.id,
@@ -400,6 +494,13 @@ function main() {
     };
   });
 
+  const canonicalization = canonicalizeQueryIdentityEvents(catalogEvents, updatedCandidates);
+  updatedCandidates = canonicalization.candidates;
+  const canonicalIdMap = new Map(canonicalization.remapped.map((item) => [item.from, item.to]));
+  for (const row of [...published, ...linkedExisting]) {
+    if (canonicalIdMap.has(row.event_id)) row.event_id = canonicalIdMap.get(row.event_id);
+  }
+
   const report = {
     published_at: publishedAt,
     dry_run: dryRun,
@@ -414,6 +515,10 @@ function main() {
       blocked: blocked.length,
       reconciled: published.length + linkedExisting.length
     },
+    duplicate_catalog_rows_removed: dedupedCatalog.removed.length,
+    duplicate_catalog_rows: dedupedCatalog.removed,
+    canonical_event_ids_remapped: canonicalization.remapped.length,
+    canonical_event_id_remaps: canonicalization.remapped,
     published,
     linked_existing: linkedExisting,
     blocked

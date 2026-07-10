@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-07-09T13:25:15.876Z",
+  "generated_at": "2026-07-10T02:36:14.055Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "audiences_count": 12,
   "totals": {
-    "events": 449,
-    "upcoming_or_active": 154,
-    "ended": 295,
-    "live_ready": 52
+    "events": 435,
+    "upcoming_or_active": 160,
+    "ended": 275,
+    "live_ready": 51
   },
   "audiences": [
     {
       "slug": "professionals",
       "label": "موظفون ومهنيون",
       "url": "./for/professionals.html",
-      "total_events": 228,
-      "upcoming_or_active": 82,
-      "ended": 146,
+      "total_events": 214,
+      "upcoming_or_active": 88,
+      "ended": 126,
       "live_ready": 46,
       "sources": [
         "Abha Chamber Events",
@@ -80,7 +80,7 @@
         "status": "ongoing",
         "url": "./events/event-the-continuing-professional-development-initiative.html"
       },
-      "count": 228,
+      "count": 214,
       "sources_count": 25,
       "cities_count": 14,
       "categories_count": 11
@@ -89,9 +89,9 @@
       "slug": "creatives",
       "label": "مبدعون وفنون",
       "url": "./for/creatives.html",
-      "total_events": 152,
-      "upcoming_or_active": 78,
-      "ended": 74,
+      "total_events": 147,
+      "upcoming_or_active": 79,
+      "ended": 68,
       "live_ready": 4,
       "sources": [
         "Asharqia Chamber Events",
@@ -148,7 +148,7 @@
         "status": "ongoing",
         "url": "./events/event-skill-development-initiative.html"
       },
-      "count": 152,
+      "count": 147,
       "sources_count": 19,
       "cities_count": 12,
       "categories_count": 12
@@ -157,9 +157,9 @@
       "slug": "tech",
       "label": "تقنيون",
       "url": "./for/tech.html",
-      "total_events": 71,
+      "total_events": 70,
       "upcoming_or_active": 45,
-      "ended": 26,
+      "ended": 25,
       "live_ready": 1,
       "sources": [
         "CODE MCIT Programs",
@@ -179,6 +179,7 @@
       "cities": [
         "الرياض",
         "السعودية",
+        "ثول",
         "جدة",
         "دولي",
         "على مستوى المملكة",
@@ -204,67 +205,18 @@
         "status": "ongoing",
         "url": "./events/event-world-cup-2026-fan-zone-at-kimpton-kafd.html"
       },
-      "count": 71,
+      "count": 70,
       "sources_count": 13,
-      "cities_count": 7,
+      "cities_count": 8,
       "categories_count": 11
-    },
-    {
-      "slug": "researchers",
-      "label": "باحثون وأكاديميون",
-      "url": "./for/researchers.html",
-      "total_events": 79,
-      "upcoming_or_active": 35,
-      "ended": 44,
-      "live_ready": 7,
-      "sources": [
-        "Dhahran Expo Calendar",
-        "Jazan Chamber Events",
-        "Ministry of Culture Commission Calendars",
-        "Riyadh City Events",
-        "Saudi Space Agency Events",
-        "Saudi Universities and Technical Colleges",
-        "Saudi Water Authority Events",
-        "Tuwaiq Academy Bootcamps and Programs"
-      ],
-      "cities": [
-        "الرياض",
-        "السعودية",
-        "الظهران",
-        "ثول",
-        "جازان",
-        "جدة",
-        "دولي"
-      ],
-      "categories": [
-        "ثقافة وفنون",
-        "جامعات ومجتمع",
-        "جوائز وتكريم",
-        "رياضة وفعاليات جماهيرية",
-        "علوم وفضاء",
-        "فعاليات الغرف التجارية",
-        "مؤتمرات ومنتديات",
-        "معارض وتجارية",
-        "ورش تنظيمية وصحية"
-      ],
-      "next_event": {
-        "title": "Academic Excellence in Architecture and Design Education",
-        "starts_at": "2025-03-09T00:00:00+03:00",
-        "status": "ongoing",
-        "url": "./events/event-academic-excellence-in-architecture-and-design-education.html"
-      },
-      "count": 79,
-      "sources_count": 8,
-      "cities_count": 7,
-      "categories_count": 9
     },
     {
       "slug": "families",
       "label": "عائلات وأطفال",
       "url": "./for/families.html",
-      "total_events": 78,
-      "upcoming_or_active": 35,
-      "ended": 43,
+      "total_events": 79,
+      "upcoming_or_active": 38,
+      "ended": 41,
       "live_ready": 1,
       "sources": [
         "Experience AlUla Events",
@@ -301,7 +253,7 @@
         "status": "ongoing",
         "url": "./events/event-poppy-playtime.html"
       },
-      "count": 78,
+      "count": 79,
       "sources_count": 8,
       "cities_count": 8,
       "categories_count": 7
@@ -310,10 +262,10 @@
       "slug": "skilled-trades",
       "label": "مهاريون وحرفيون",
       "url": "./for/skilled-trades.html",
-      "total_events": 70,
-      "upcoming_or_active": 31,
-      "ended": 39,
-      "live_ready": 10,
+      "total_events": 73,
+      "upcoming_or_active": 35,
+      "ended": 38,
+      "live_ready": 9,
       "sources": [
         "Asharqia Chamber Events",
         "CODE MCIT Programs",
@@ -359,17 +311,67 @@
         "status": "ongoing",
         "url": "./events/event-culinary-manufacturing-hubs.html"
       },
-      "count": 70,
+      "count": 73,
       "sources_count": 14,
       "cities_count": 9,
+      "categories_count": 10
+    },
+    {
+      "slug": "researchers",
+      "label": "باحثون وأكاديميون",
+      "url": "./for/researchers.html",
+      "total_events": 64,
+      "upcoming_or_active": 34,
+      "ended": 30,
+      "live_ready": 6,
+      "sources": [
+        "Dhahran Expo Calendar",
+        "Jazan Chamber Events",
+        "Ministry of Culture Commission Calendars",
+        "Riyadh City Events",
+        "Saudi Space Agency Events",
+        "Saudi Universities and Technical Colleges",
+        "Saudi Water Authority Events",
+        "Tuwaiq Academy Bootcamps and Programs"
+      ],
+      "cities": [
+        "الرياض",
+        "السعودية",
+        "الظهران",
+        "ثول",
+        "جازان",
+        "جدة",
+        "دولي"
+      ],
+      "categories": [
+        "ترفيه وعائلات",
+        "ثقافة وفنون",
+        "جامعات ومجتمع",
+        "جوائز وتكريم",
+        "رياضة وفعاليات جماهيرية",
+        "علوم وفضاء",
+        "فعاليات الغرف التجارية",
+        "مؤتمرات ومنتديات",
+        "معارض وتجارية",
+        "ورش تنظيمية وصحية"
+      ],
+      "next_event": {
+        "title": "Academic Excellence in Architecture and Design Education",
+        "starts_at": "2025-03-09T00:00:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-academic-excellence-in-architecture-and-design-education.html"
+      },
+      "count": 64,
+      "sources_count": 8,
+      "cities_count": 7,
       "categories_count": 10
     },
     {
       "slug": "students",
       "label": "طلاب وخريجون",
       "url": "./for/students.html",
-      "total_events": 52,
-      "upcoming_or_active": 29,
+      "total_events": 50,
+      "upcoming_or_active": 27,
       "ended": 23,
       "live_ready": 0,
       "sources": [
@@ -407,19 +409,78 @@
         "status": "ongoing",
         "url": "./events/event-misk-local-traineeship-program.html"
       },
-      "count": 52,
+      "count": 50,
       "sources_count": 9,
       "cities_count": 7,
       "categories_count": 7
     },
     {
+      "slug": "entrepreneurs",
+      "label": "رواد أعمال",
+      "url": "./for/entrepreneurs.html",
+      "total_events": 68,
+      "upcoming_or_active": 25,
+      "ended": 43,
+      "live_ready": 2,
+      "sources": [
+        "Abha Chamber Events",
+        "Asharqia Chamber Events",
+        "CODE MCIT Programs",
+        "Invest Saudi Events",
+        "Jazan Chamber Events",
+        "Makkah Chamber Events",
+        "Misk Hub Programs",
+        "Monsha'at All Events",
+        "Qassim Chamber Events",
+        "RFECC What's On",
+        "Riyadh City Events",
+        "Saudi Water Authority Events",
+        "Visit Saudi Calendar"
+      ],
+      "cities": [
+        "أبها",
+        "الجبيل",
+        "الرياض",
+        "السعودية",
+        "الظهران",
+        "القطيف",
+        "بريدة",
+        "جازان",
+        "جدة",
+        "دولي",
+        "عسير",
+        "عن بعد",
+        "مكة"
+      ],
+      "categories": [
+        "ألعاب ورياضات إلكترونية",
+        "تدريب تقني",
+        "ترفيه وعائلات",
+        "جامعات ومجتمع",
+        "جوائز وتكريم",
+        "فعاليات الغرف التجارية",
+        "مؤتمرات ومنتديات",
+        "معارض وتجارية"
+      ],
+      "next_event": {
+        "title": "Poppy Playtime",
+        "starts_at": "2025-10-10T16:00:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-poppy-playtime.html"
+      },
+      "count": 68,
+      "sources_count": 13,
+      "cities_count": 13,
+      "categories_count": 8
+    },
+    {
       "slug": "sports",
       "label": "رياضة ولياقة",
       "url": "./for/sports.html",
-      "total_events": 129,
-      "upcoming_or_active": 22,
+      "total_events": 128,
+      "upcoming_or_active": 21,
       "ended": 107,
-      "live_ready": 5,
+      "live_ready": 4,
       "sources": [
         "Dhahran Expo Calendar",
         "Jeddah Chamber Exhibitions and Events Center",
@@ -455,76 +516,18 @@
         "status": "ongoing",
         "url": "./events/event-immersive-experience-flying-over-saudi.html"
       },
-      "count": 129,
+      "count": 128,
       "sources_count": 8,
       "cities_count": 10,
       "categories_count": 5
     },
     {
-      "slug": "entrepreneurs",
-      "label": "رواد أعمال",
-      "url": "./for/entrepreneurs.html",
-      "total_events": 66,
-      "upcoming_or_active": 21,
-      "ended": 45,
-      "live_ready": 3,
-      "sources": [
-        "Abha Chamber Events",
-        "Asharqia Chamber Events",
-        "CODE MCIT Programs",
-        "Invest Saudi Events",
-        "Jazan Chamber Events",
-        "Makkah Chamber Events",
-        "Misk Hub Programs",
-        "Monsha'at All Events",
-        "Qassim Chamber Events",
-        "RFECC What's On",
-        "Riyadh City Events",
-        "Saudi Water Authority Events",
-        "Visit Saudi Calendar"
-      ],
-      "cities": [
-        "أبها",
-        "الجبيل",
-        "الرياض",
-        "السعودية",
-        "الظهران",
-        "القطيف",
-        "بريدة",
-        "جازان",
-        "جدة",
-        "دولي",
-        "عن بعد",
-        "مكة"
-      ],
-      "categories": [
-        "ألعاب ورياضات إلكترونية",
-        "تدريب تقني",
-        "ترفيه وعائلات",
-        "جامعات ومجتمع",
-        "جوائز وتكريم",
-        "فعاليات الغرف التجارية",
-        "مؤتمرات ومنتديات",
-        "معارض وتجارية"
-      ],
-      "next_event": {
-        "title": "Poppy Playtime",
-        "starts_at": "2025-10-10T16:00:00+03:00",
-        "status": "ongoing",
-        "url": "./events/event-poppy-playtime.html"
-      },
-      "count": 66,
-      "sources_count": 13,
-      "cities_count": 12,
-      "categories_count": 8
-    },
-    {
       "slug": "job-seekers",
       "label": "باحثون عن عمل",
       "url": "./for/job-seekers.html",
-      "total_events": 31,
-      "upcoming_or_active": 9,
-      "ended": 22,
+      "total_events": 32,
+      "upcoming_or_active": 11,
+      "ended": 21,
       "live_ready": 1,
       "sources": [
         "Asharqia Chamber Events",
@@ -559,7 +562,7 @@
         "status": "ongoing",
         "url": "./events/event-misk-local-traineeship-program.html"
       },
-      "count": 31,
+      "count": 32,
       "sources_count": 7,
       "cities_count": 10,
       "categories_count": 4

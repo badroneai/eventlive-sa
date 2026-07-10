@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-09T13:25:15.876Z",
+  "generated_at": "2026-07-10T02:36:14.055Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-saudi-region-coverage",
   "totals": {
     "regions": 13,
-    "weak_regions": 9,
-    "active_regions": 4,
+    "weak_regions": 8,
+    "active_regions": 5,
     "uncovered_regions": 6,
-    "events": 449,
-    "active_events": 154,
-    "ended_events": 295
+    "events": 435,
+    "active_events": 160,
+    "ended_events": 275
   },
   "regions": [
     {
@@ -327,54 +327,6 @@
       "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
     },
     {
-      "key": "jazan-region",
-      "label": "منطقة جازان",
-      "target_cities": [
-        {
-          "key": "Jazan",
-          "label": "جازان"
-        }
-      ],
-      "covered_cities": [
-        {
-          "key": "Jazan",
-          "label": "جازان"
-        }
-      ],
-      "active_cities": [],
-      "missing_target_cities": [],
-      "total": 10,
-      "active": 0,
-      "upcoming": 0,
-      "ongoing": 0,
-      "live": 0,
-      "ended": 10,
-      "live_ready": 0,
-      "source_count": 1,
-      "source_images": 8,
-      "generated_covers": 2,
-      "registered_source_count": 2,
-      "registered_sources": [
-        {
-          "id": "misk-hub-events",
-          "name": "Misk Hub Events",
-          "ring": "official-feed-preferred",
-          "status": "official",
-          "url": "https://hub.misk.org.sa/en/events/"
-        },
-        {
-          "id": "jazan-chamber-events",
-          "name": "Jazan Chamber Events",
-          "ring": "official-feed-preferred",
-          "status": "official",
-          "url": "https://jazancci.org.sa/"
-        }
-      ],
-      "coverage_score": 34,
-      "severity": "gap",
-      "next_action": "ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/منصة محلية مساندة."
-    },
-    {
       "key": "madinah-region",
       "label": "منطقة المدينة المنورة",
       "target_cities": [
@@ -494,15 +446,15 @@
           "label": "Rass"
         }
       ],
-      "total": 21,
+      "total": 20,
       "active": 0,
       "upcoming": 0,
       "ongoing": 0,
       "live": 0,
-      "ended": 21,
-      "live_ready": 2,
+      "ended": 20,
+      "live_ready": 1,
       "source_count": 2,
-      "source_images": 4,
+      "source_images": 3,
       "generated_covers": 17,
       "registered_source_count": 2,
       "registered_sources": [
@@ -524,6 +476,59 @@
       "coverage_score": 56,
       "severity": "watch",
       "next_action": "ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/منصة محلية مساندة."
+    },
+    {
+      "key": "jazan-region",
+      "label": "منطقة جازان",
+      "target_cities": [
+        {
+          "key": "Jazan",
+          "label": "جازان"
+        }
+      ],
+      "covered_cities": [
+        {
+          "key": "Jazan",
+          "label": "جازان"
+        }
+      ],
+      "active_cities": [
+        {
+          "key": "Jazan",
+          "label": "جازان"
+        }
+      ],
+      "missing_target_cities": [],
+      "total": 11,
+      "active": 1,
+      "upcoming": 1,
+      "ongoing": 0,
+      "live": 0,
+      "ended": 10,
+      "live_ready": 0,
+      "source_count": 1,
+      "source_images": 9,
+      "generated_covers": 2,
+      "registered_source_count": 2,
+      "registered_sources": [
+        {
+          "id": "misk-hub-events",
+          "name": "Misk Hub Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://hub.misk.org.sa/en/events/"
+        },
+        {
+          "id": "jazan-chamber-events",
+          "name": "Jazan Chamber Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://jazancci.org.sa/"
+        }
+      ],
+      "coverage_score": 69,
+      "severity": "healthy",
+      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
     },
     {
       "key": "aseer-region",
@@ -563,16 +568,16 @@
         }
       ],
       "missing_target_cities": [],
-      "total": 10,
-      "active": 1,
+      "total": 11,
+      "active": 2,
       "upcoming": 0,
-      "ongoing": 1,
+      "ongoing": 2,
       "live": 0,
       "ended": 9,
       "live_ready": 0,
       "source_count": 3,
       "source_images": 6,
-      "generated_covers": 4,
+      "generated_covers": 5,
       "registered_source_count": 5,
       "registered_sources": [
         {
@@ -854,16 +859,16 @@
           "label": "Shaqra"
         }
       ],
-      "total": 204,
-      "active": 98,
+      "total": 196,
+      "active": 99,
       "upcoming": 73,
       "ongoing": 25,
-      "live": 0,
-      "ended": 106,
+      "live": 1,
+      "ended": 97,
       "live_ready": 22,
-      "source_count": 17,
-      "source_images": 99,
-      "generated_covers": 105,
+      "source_count": 18,
+      "source_images": 95,
+      "generated_covers": 101,
       "registered_source_count": 33,
       "registered_sources": [
         {
@@ -1167,8 +1172,8 @@
       "ongoing": 1,
       "live": 0,
       "ended": 62,
-      "live_ready": 6,
-      "source_count": 8,
+      "live_ready": 5,
+      "source_count": 9,
       "source_images": 14,
       "generated_covers": 56,
       "registered_source_count": 19,
@@ -1356,13 +1361,6 @@
       "next_action": "المصادر الرسمية مسجلة؛ شغّل فحص HTML/API محافظ ثم انشر فقط الصفوف مكتملة التاريخ."
     },
     {
-      "key": "jazan-region",
-      "label": "منطقة جازان",
-      "coverage_score": 34,
-      "reason": "لا توجد فعاليات قادمة/جارية في المنطقة",
-      "next_action": "ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/منصة محلية مساندة."
-    },
-    {
       "key": "madinah-region",
       "label": "منطقة المدينة المنورة",
       "coverage_score": 35,
@@ -1375,6 +1373,13 @@
       "coverage_score": 56,
       "reason": "لا توجد فعاليات قادمة/جارية في المنطقة",
       "next_action": "ابحث عن فعاليات قادمة من نفس المصدر أو من غرفة/منصة محلية مساندة."
+    },
+    {
+      "key": "jazan-region",
+      "label": "منطقة جازان",
+      "coverage_score": 69,
+      "reason": "تحتاج عمقًا أكبر في المدن المستهدفة",
+      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
     },
     {
       "key": "aseer-region",

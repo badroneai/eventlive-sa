@@ -6,8 +6,8 @@
 - Program title: ملتقى التحول الرقمي في القطاع الحكومي 2026
 - Organizer: مؤسسة سميرة محمد السلمان للاتصالات وتقنية المعلومات
 - Total sessions: 5
-- Catalog events: 161
-- Source candidates total: 184
+- Catalog events: 167
+- Source candidates total: 193
 - Source registry total: 72
 - Total errors: 0
 - Total warnings: 0

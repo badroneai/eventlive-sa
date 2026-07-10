@@ -18,7 +18,12 @@ const sourceEndedEventsPath = process.env.EVENTLIVE_SOURCE_ENDED_EVENTS_FILE || 
   ? path.join(root, process.env.EVENTLIVE_SOURCE_ENDED_EVENTS_FILE || process.env.EVENTLIVE_SOURCE_ARCHIVE_FILE)
   : path.join(root, 'data', 'source_ended_events.json');
 const legacySourceArchivePath = path.join(root, 'data', 'source_archive.json');
-const snapshotDir = path.join(root, 'data', 'raw', 'source-snapshots');
+const snapshotDir = process.env.EVENTLIVE_SOURCE_SNAPSHOT_DIR
+  ? path.join(root, process.env.EVENTLIVE_SOURCE_SNAPSHOT_DIR)
+  : path.join(root, 'data', 'raw', 'source-snapshots');
+const browserProbeReportPath = process.env.EVENTLIVE_BROWSER_PROBE_REPORT_JSON
+  ? path.join(root, process.env.EVENTLIVE_BROWSER_PROBE_REPORT_JSON)
+  : path.join(root, 'reports', 'source-browser-probe-report.json');
 const reportJsonPath = path.join(root, 'reports', 'source-collection-report.json');
 const reportMdPath = path.join(root, 'reports', 'source-collection-report.md');
 const checkpointJsonPath = process.env.EVENTLIVE_SOURCE_COLLECTION_CHECKPOINT_JSON
@@ -34,8 +39,17 @@ const maxPerSource = Math.max(1, Number(process.env.EVENTLIVE_SOURCE_LIMIT || 40
 const maxArchivePerSource = Math.max(1, Number(process.env.EVENTLIVE_SOURCE_ENDED_LIMIT || process.env.EVENTLIVE_SOURCE_ARCHIVE_LIMIT || 24));
 const minEndedYear = Math.max(2022, Number(process.env.EVENTLIVE_SOURCE_ENDED_MIN_YEAR || 2022));
 const fetchTimeoutMs = Math.max(3000, Number(process.env.EVENTLIVE_SOURCE_FETCH_TIMEOUT_MS || 20000));
+const browserFallbackMaxAgeMs = Math.max(
+  60_000,
+  Number(process.env.EVENTLIVE_BROWSER_FALLBACK_MAX_AGE_MS || 12 * 60 * 60 * 1000)
+);
+const lastKnownGoodMaxAgeMs = Math.max(
+  60_000,
+  Number(process.env.EVENTLIVE_LAST_GOOD_SNAPSHOT_MAX_AGE_MS || 7 * 24 * 60 * 60 * 1000)
+);
 const dryRun = ['1', 'true', 'yes'].includes(String(process.env.EVENTLIVE_SOURCE_DRY_RUN || '').toLowerCase());
 let activeSnapshotStamp = collectedAt.replace(/[:.]/g, '-');
+const sourceFetchModes = new Map();
 
 const tlsRelaxationAllowedHosts = new Set(['riyadh.sa', 'api.riyadh.sa']);
 
@@ -236,10 +250,76 @@ function toSlug(value = '') {
 }
 
 function writeAuxiliarySnapshot(source, label, content, extension = 'html') {
+  ensureDir(snapshotDir);
   const safeLabel = toSlug(label || 'detail');
   const snapshotPath = path.join(snapshotDir, `${source.id}-${safeLabel}-${activeSnapshotStamp}.${extension}`);
   fs.writeFileSync(snapshotPath, content, 'utf8');
   return rel(snapshotPath);
+}
+
+function canUseBrowserHtmlFallback(source = {}) {
+  if (isDiscoveryOnlySource(source)) return false;
+  if (String(source.collector_method || 'GET').toUpperCase() !== 'GET') return false;
+  const target = String(source.collector_url || source.url || '');
+  return !/\/api\/|api\.|\.json(?:$|\?)/i.test(target);
+}
+
+function freshBrowserProbeHtml(source, currentTime = Date.now()) {
+  if (!canUseBrowserHtmlFallback(source) || !exists(browserProbeReportPath)) return '';
+  try {
+    const report = readJson(browserProbeReportPath);
+    const generatedAtMs = new Date(report.generated_at || 0).getTime();
+    if (!Number.isFinite(generatedAtMs) || currentTime - generatedAtMs > browserFallbackMaxAgeMs) return '';
+    const probe = (report.sources || []).find((item) => item.id === source.id);
+    if (!probe || probe.status !== 'ok' || /blocked|protected|policy-skipped/i.test(probe.classification || '')) return '';
+    const snapshotPath = String(probe.html_snapshot || '');
+    if (!snapshotPath) return '';
+    const absolutePath = path.isAbsolute(snapshotPath) ? snapshotPath : path.join(root, snapshotPath);
+    if (!exists(absolutePath)) return '';
+    const html = fs.readFileSync(absolutePath, 'utf8');
+    return Buffer.byteLength(html) >= 512 ? html : '';
+  } catch {
+    return '';
+  }
+}
+
+function snapshotTimestamp(fileName, sourceId) {
+  const escapedId = String(sourceId || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const match = String(fileName || '').match(new RegExp(`^${escapedId}-(\\d{4})-(\\d{2})-(\\d{2})T(\\d{2})-(\\d{2})-(\\d{2})-(\\d{3})Z\\.html$`));
+  if (!match) return 0;
+  return new Date(`${match[1]}-${match[2]}-${match[3]}T${match[4]}:${match[5]}:${match[6]}.${match[7]}Z`).getTime();
+}
+
+function latestOfficialSnapshotHtml(source, currentTime = Date.now()) {
+  if (!canUseBrowserHtmlFallback(source) || !exists(snapshotDir)) return '';
+  try {
+    const candidates = fs.readdirSync(snapshotDir)
+      .map((fileName) => ({ fileName, timestamp: snapshotTimestamp(fileName, source.id) }))
+      .filter((item) => Number.isFinite(item.timestamp) && item.timestamp > 0)
+      .filter((item) => currentTime - item.timestamp <= lastKnownGoodMaxAgeMs)
+      .sort((a, b) => b.timestamp - a.timestamp);
+    for (const candidate of candidates) {
+      const html = fs.readFileSync(path.join(snapshotDir, candidate.fileName), 'utf8');
+      if (Buffer.byteLength(html) >= 512) return html;
+    }
+  } catch {
+    return '';
+  }
+  return '';
+}
+
+function sourceFallbackHtml(source) {
+  const browserHtml = freshBrowserProbeHtml(source);
+  if (browserHtml) {
+    sourceFetchModes.set(source.id, 'browser-probe');
+    return browserHtml;
+  }
+  const snapshotHtml = latestOfficialSnapshotHtml(source);
+  if (snapshotHtml) {
+    sourceFetchModes.set(source.id, 'last-known-good');
+    return snapshotHtml;
+  }
+  return '';
 }
 
 function cleanTitle(value = '') {
@@ -4101,10 +4181,13 @@ function candidateMergeKey(candidate) {
 }
 
 function endedStableMergeKey(candidate) {
-  const url = normalizeCandidateKeyValue(candidate.source_url);
   const title = normalizeCandidateKeyValue(candidate.title);
-  if (!url || !title) return '';
-  return `${url}|${title}`;
+  const city = normalizeCandidateKeyValue(candidate.city);
+  const source = normalizeCandidateKeyValue(candidate.source_label || candidate.source_owner);
+  const startsAt = String(candidate.starts_at || '');
+  const endsAt = String(candidate.ends_at || '');
+  if (!title || !startsAt) return '';
+  return `${source}|${title}|${city}|${startsAt}|${endsAt}`;
 }
 
 function mergeCandidates(existing, discovered, refreshedSourceLabels = new Set()) {
@@ -4140,12 +4223,6 @@ function mergeCandidates(existing, discovered, refreshedSourceLabels = new Set()
 function mergeEndedEvents(existing, discovered) {
   const byKey = new Map();
   const stableToKeys = new Map();
-  const rememberStableKey = (stableKey, key) => {
-    if (!stableKey) return;
-    const keys = stableToKeys.get(stableKey) || new Set();
-    keys.add(key);
-    stableToKeys.set(stableKey, keys);
-  };
   const normalizeEndedRecord = (row) => {
     const collected = row.collected_at || row.archived_at || collectedAt;
     const { archive_status, archive_reason, archive_value, archived_at, first_archived_at, ...rest } = row;
@@ -4168,8 +4245,12 @@ function mergeEndedEvents(existing, discovered) {
   for (const row of existing.filter(hasValidCandidateDates)) {
     const normalized = normalizeEndedRecord(row);
     const key = candidateMergeKey(normalized);
+    const stableKey = endedStableMergeKey(normalized);
+    for (const staleKey of stableToKeys.get(stableKey) || []) {
+      if (staleKey !== key) byKey.delete(staleKey);
+    }
     byKey.set(key, normalized);
-    rememberStableKey(endedStableMergeKey(normalized), key);
+    stableToKeys.set(stableKey, new Set([key]));
   }
   for (const row of discovered.filter(hasValidCandidateDates)) {
     const normalized = normalizeEndedRecord(row);
@@ -4273,16 +4354,23 @@ async function fetchHtml(source) {
     try {
       response = await collectorFetch(candidateUrl, { ...options });
       text = await response.text();
-      if (response.ok) break;
+      if (response.ok) {
+        sourceFetchModes.set(source.id, 'direct');
+        break;
+      }
       lastError = new Error(`HTTP ${response.status}`);
     } catch (error) {
       lastError = error;
     }
   }
   if (!response?.ok) {
+    const fallbackHtml = sourceFallbackHtml(source);
+    if (fallbackHtml) return fallbackHtml;
     throw lastError || new Error('fetch failed');
   }
   if (/request rejected/i.test(text) || /<title>\s*Request Rejected\s*<\/title>/i.test(text)) {
+    const fallbackHtml = sourceFallbackHtml(source);
+    if (fallbackHtml) return fallbackHtml;
     throw new Error('request-rejected');
   }
   return text;
@@ -4412,6 +4500,7 @@ async function main() {
       extracted: 0,
       snapshot_path: '',
       note: '',
+      fetch_mode: '',
       source_existing_active: 0,
       new_candidates: 0,
       refreshed_candidates: 0,
@@ -4422,6 +4511,7 @@ async function main() {
     };
     try {
       const html = await fetchHtml(source);
+      summary.fetch_mode = sourceFetchModes.get(source.id) || 'direct';
       const snapshotPath = path.join(snapshotDir, `${source.id}-${stamp}.${snapshotExtensionFor(source)}`);
       fs.writeFileSync(snapshotPath, html, 'utf8');
       summary.snapshot_path = rel(snapshotPath);
@@ -4448,7 +4538,8 @@ async function main() {
       Object.assign(summary, sourceCandidateDelta(source, candidates, existingCandidates));
       const existingEndedKeys = new Set(existingEndedEvents.map((item) => candidateMergeKey(item)));
       summary.ended_new = endedEvents.filter((item) => !existingEndedKeys.has(candidateMergeKey(item))).length;
-      if (!candidates.length) summary.note = 'No future date-complete candidates found by the conservative extractor.';
+      if (summary.fetch_mode !== 'direct') summary.note = `Recovered via ${summary.fetch_mode} official evidence.`;
+      if (!candidates.length) summary.note = `${summary.note ? `${summary.note} ` : ''}No future date-complete candidates found by the conservative extractor.`;
     } catch (error) {
       if (isDiscoveryOnlySource(source)) {
         summary.status = 'skipped';
@@ -4521,6 +4612,9 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 
 export {
   fetchHtml,
+  freshBrowserProbeHtml,
+  latestOfficialSnapshotHtml,
+  writeAuxiliarySnapshot,
   extractAbhaChamberEvents,
   extractAsharqiaChamberEvents,
   extractCodeMcitPrograms,

@@ -1,30 +1,18 @@
 {
-  "generated_at": "2026-07-09T20:15:30.488Z",
+  "generated_at": "2026-07-10T02:18:18.453Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
-    "targets": 171,
-    "cached_total": 182,
-    "fetched": 6,
+    "targets": 172,
+    "cached_total": 183,
+    "fetched": 7,
     "reused": 159,
     "failed": 6,
     "skipped_recent_failures": 6,
     "remembered_failures": 9
   },
   "fetched": [
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/kashtah?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/kashtah-ba6ebb0c6b.webp",
-      "bytes": 107660,
-      "events": 1
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/fadgxp3x.sdb.webp",
-      "file": "dist/assets/event-images/معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي-242280a557.webp",
-      "bytes": 12092,
-      "events": 1
-    },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/HMtcsYHWcAAgwSv.jpeg?itok=HTQn5DOt",
       "file": "dist/assets/event-images/wrth-summer-art-craft-program-313d642987.jpg",
@@ -38,9 +26,27 @@
       "events": 1
     },
     {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/fadgxp3x.sdb.webp",
+      "file": "dist/assets/event-images/معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي-242280a557.webp",
+      "bytes": 12092,
+      "events": 1
+    },
+    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/nadcywdn.tl5.webp",
       "file": "dist/assets/event-images/معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc-88592b3651.webp",
       "bytes": 12398,
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/kashtah?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/kashtah-ba6ebb0c6b.webp",
+      "bytes": 107660,
+      "events": 1
+    },
+    {
+      "source_url": "https://firebasestorage.googleapis.com/v0/b/event-jcci/o/media%2FISO_41001__copy_jpg-1783588238480-g5a8isz8p58.jpeg?alt=media&token=ac8d9502-40b9-4cc7-94c9-6daa7317f05f",
+      "file": "dist/assets/event-images/متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة-e5660de944.jpg",
+      "bytes": 856799,
       "events": 1
     },
     {
@@ -294,7 +300,7 @@
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/emzgfcby.aiz.webp",
       "file": "dist/assets/event-images/معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-8b9b4fc037.webp",
-      "events": 8
+      "events": 9
     },
     {
       "source_url": "https://hub.misk.org.sa/media/eoxb5tmh/ec-founder-leadership-excellence_en.png",
@@ -739,7 +745,7 @@
     {
       "source_url": "https://code.mcit.gov.sa/sites/default/files/inline-images/digital.png",
       "file": "dist/assets/event-images/daman-proptech-challenge-2eea8247e5.png",
-      "events": 5
+      "events": 7
     },
     {
       "source_url": "https://abhacci.org.sa/files/images/126.jpg",

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Mishkat Summer Camp | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-mishkat-summer-camp@eventme.live
+DTSTAMP:20260710T023614Z
+DTSTART:20260712T060000Z
+DTEND:20260806T100000Z
+SUMMARY:Mishkat Summer Camp
+DESCRIPTION:Discover the exciting world of science\, energy\, and innovation at Mishkat Summer Camp 2026\, where young learners can explore the future through hands-on experiments\, interactive challenges\, educational games\, and collaborative activities designed to inspire curiosity\, creativity\, and teamwork. Organised by Mishkat Interactive Center\, an initiative of the King Abdullah City for Atomic and Renewable Energy (K.A.CARE)\, the camp introduces participants to the future of energy while developing STEAM skills through experiential learning. Activities explore topics such as solar\, wind\, and nuclear energy\, hydrogen technologies\, the circular carbon economy\, artificial intelligence\, innovation\, and programming\, supporting Saudi Vision 2030's goals of building future-ready generations. The programme is free of charge and is open to children aged 10–12 years. Camp Schedule Girls: 12–23 July | Boys: 26 July–6 August | Days: Sunday–Thursday Register Now
+LOCATION:Mishkat Interactive Center\, King Abdullah City for Atomic and Renewable Energy\, Riyadh
+URL:https://eventme.live/events/event-mishkat-summer-camp.html
+END:VEVENT
+END:VCALENDAR
