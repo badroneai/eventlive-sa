@@ -701,6 +701,62 @@
   .breadcrumbs strong { max-width: 24ch; }
   details.more > summary, .cta-now, .card-foot a, .card-foot button { min-height: 44px; }
   .more-panel a { min-height: 44px; display:flex; align-items:center; }
+  .site-head { padding-top:env(safe-area-inset-top); }
+  .site-head .head-in { min-height:58px; gap:8px; }
+  .site-head .brand { gap:8px; margin-inline-end:0; min-width:0; }
+  .site-head .brand .mark { width:34px; height:34px; border-radius:9px; flex:0 0 34px; }
+  .site-head .brand b { font-size:18px; line-height:1; }
+  .site-head .brand small { display:none; }
+  .site-head .cta-now {
+    order:1;
+    min-height:44px;
+    padding:7px 12px;
+    border:1px solid var(--line);
+    border-radius:8px;
+    background:#fff;
+    color:var(--brand-deep);
+    box-shadow:none;
+    font-size:13.5px;
+  }
+  .site-head .cta-now .dot { background:var(--live); animation-duration:5.6s; }
+  .site-head .burger { order:2; margin-inline-start:0; }
+  .site-head .burger > summary {
+    display:grid;
+    place-items:center;
+    width:44px;
+    height:44px;
+    min-height:44px;
+    padding:0;
+    border:1px solid var(--line);
+    border-radius:8px;
+    background:#fff;
+    font-size:18px;
+  }
+  .site-head .more-panel { top:calc(58px + env(safe-area-inset-top)); }
+  .site-head + .hero .hero-in { gap:16px; padding:20px 0 24px; }
+  .site-head + .hero .eyebrow { margin-bottom:10px; padding:4px 9px; }
+  .site-head + .hero h1 { margin-bottom:8px; font-size:26px; }
+  .site-head + .hero .lead {
+    margin-bottom:14px;
+    font-size:14px;
+    line-height:1.7;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+  }
+  .site-head + .hero .search-box input { min-height:48px; border-radius:10px; }
+  .site-head + .hero .hero-ctas { gap:8px; margin-top:12px; }
+  .site-head + .hero .hero-ctas .ghost { flex:1; min-height:44px; padding:8px 10px; text-align:center; }
+  .site-head + .hero .board { padding:14px; border-radius:14px; }
+  .site-head + .hero .board-label { margin-bottom:8px; }
+  .site-head + .hero .board h2 { font-size:18px; }
+  .site-head + .hero .board .b-meta { margin-bottom:10px; }
+  .site-head + .hero .countdown { gap:6px; margin-bottom:12px; }
+  .site-head + .hero .cd-cell { padding:8px 4px 7px; border-radius:8px; }
+  .site-head + .hero .cd-cell b { font-size:20px; }
+  .site-head + .hero .board-actions .primary { flex:1; min-height:44px; padding:9px 12px; text-align:center; }
+  .site-head + .hero .board-actions .plain, .site-head + .hero .board-stats { display:none; }
   .card-row {
     scroll-padding-inline:16px;
     overscroll-behavior-inline:contain;
@@ -769,7 +825,7 @@
           <a href="./organizers.html">للمنظمين</a>
         </div>
       </details>
-      <a class="cta-now" href="./today.html"><span class="dot"></span>وضع الحضور</a>
+      <a class="cta-now" href="./today.html" aria-label="افتح صفحة الآن وأقرب فعالية"><span class="dot"></span>الآن</a>
     </div>
   </header>
 
@@ -801,7 +857,7 @@
         </div>
         <div class="board-actions">
           <a class="primary" id="boardCta" href="./events/event-my-little-fort.html">التفاصيل والتذكير</a>
-          <a class="plain" href="./today.html">وضع الحضور الكامل ←</a>
+          <a class="plain" href="./today.html">افتح صفحة الآن ←</a>
         </div>
         <div class="board-stats">
           <span><b>50</b>خلال ١٠ أيام</span>
@@ -1071,7 +1127,7 @@
         </div>
         <div>
           <h4>احضر</h4>
-          <a href="./today.html">وضع الحضور</a>
+          <a href="./today.html">صفحة الآن</a>
           <a href="./today-events.html">فعاليات اليوم</a>
           <a href="./this-week.html">هذا الأسبوع</a>
           <a href="./weekend.html">نهاية الأسبوع</a>

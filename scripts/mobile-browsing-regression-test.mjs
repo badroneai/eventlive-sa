@@ -71,6 +71,25 @@ async function inspect(page, route, width) {
       subscription: rect('.facet-page .facet-focus:last-of-type'),
       quickActions: rect('.event-quick-actions'),
       mobileMenu: rect('.mobile-site-menu > summary'),
+      homeHeader: (() => {
+        const header = document.querySelector('.site-head');
+        const cta = document.querySelector('.site-head .cta-now');
+        const tagline = document.querySelector('.site-head .brand small');
+        const menu = document.querySelector('.site-head .burger > summary');
+        const headerRect = header?.getBoundingClientRect();
+        const ctaRect = cta?.getBoundingClientRect();
+        const menuRect = menu?.getBoundingClientRect();
+        return header ? {
+          height: headerRect?.height || 0,
+          ctaText: String(cta?.textContent || '').trim(),
+          ctaWidth: ctaRect?.width || 0,
+          ctaHeight: ctaRect?.height || 0,
+          taglineDisplay: tagline ? getComputedStyle(tagline).display : null,
+          menuWidth: menuRect?.width || 0,
+          menuHeight: menuRect?.height || 0
+        } : null;
+      })(),
+      homeFirstSection: rect('main .h-section'),
       homeShelf: (() => {
         const shelf = document.querySelector('.card-row');
         const cards = [...document.querySelectorAll('.card-row .card')];
@@ -103,6 +122,13 @@ try {
 
     const home = await inspect(page, 'index.html', width);
     assert.ok(home.scrollWidth <= width + 1, `home must not overflow horizontally at ${width}px`);
+    assert.ok(home.homeHeader?.height <= 64, `home header must stay compact at ${width}px`);
+    assert.equal(home.homeHeader?.ctaText, 'الآن', `home header action must describe its destination at ${width}px`);
+    assert.ok(home.homeHeader?.ctaWidth <= 90, `home header action must not dominate the brand at ${width}px`);
+    assert.ok(home.homeHeader?.ctaHeight >= 44, `home header action must remain touch friendly at ${width}px`);
+    assert.equal(home.homeHeader?.taglineDisplay, 'none', `home header tagline must not crowd mobile navigation at ${width}px`);
+    assert.ok(home.homeHeader?.menuWidth >= 44 && home.homeHeader?.menuHeight >= 44, `home menu must expose a clear touch target at ${width}px`);
+    assert.ok(home.homeFirstSection?.top <= 740, `home must reveal event discovery within the first mobile viewport at ${width}px`);
     assert.ok(home.homeShelf?.cardCount > 1, `home must expose a useful event shelf at ${width}px`);
     assert.equal(home.homeShelf?.overflowX, 'auto', `home shelf must use native horizontal scrolling at ${width}px`);
     assert.ok(String(home.homeShelf?.scrollSnapType).includes('x'), `home shelf must snap horizontally at ${width}px`);

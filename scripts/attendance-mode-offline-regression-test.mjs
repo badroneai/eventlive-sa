@@ -11,6 +11,8 @@ const html = fs.readFileSync(htmlPath, 'utf8');
 const serviceWorker = fs.readFileSync('dist/sw.js', 'utf8');
 const attendancePage = fs.readFileSync('dist/attendance.html', 'utf8');
 
+assert.match(attendancePage, /<h1>محفوظاتي للحضور<\/h1>/, 'attendance dashboard must use a user-facing name that explains the saved content');
+assert.match(attendancePage, /احفظ الفعالية التي تنوي حضورها/, 'attendance dashboard must explain how and why events appear here');
 assert.match(html, /data-attendance-save/, 'upcoming event pages must expose the attendance-save control');
 assert.match(html, /eventlive-attendance-events/, 'attendance mode must persist saved events locally');
 assert.match(html, /CACHE_EVENT_ASSETS/, 'attendance mode must request an explicit offline event bundle');

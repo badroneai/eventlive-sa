@@ -74,6 +74,62 @@ const brandCss = `<style id="eventlive-brand-pulse">
   .breadcrumbs strong { max-width: 24ch; }
   details.more > summary, .cta-now, .card-foot a, .card-foot button { min-height: 44px; }
   .more-panel a { min-height: 44px; display:flex; align-items:center; }
+  .site-head { padding-top:env(safe-area-inset-top); }
+  .site-head .head-in { min-height:58px; gap:8px; }
+  .site-head .brand { gap:8px; margin-inline-end:0; min-width:0; }
+  .site-head .brand .mark { width:34px; height:34px; border-radius:9px; flex:0 0 34px; }
+  .site-head .brand b { font-size:18px; line-height:1; }
+  .site-head .brand small { display:none; }
+  .site-head .cta-now {
+    order:1;
+    min-height:44px;
+    padding:7px 12px;
+    border:1px solid var(--line);
+    border-radius:8px;
+    background:#fff;
+    color:var(--brand-deep);
+    box-shadow:none;
+    font-size:13.5px;
+  }
+  .site-head .cta-now .dot { background:var(--live); animation-duration:5.6s; }
+  .site-head .burger { order:2; margin-inline-start:0; }
+  .site-head .burger > summary {
+    display:grid;
+    place-items:center;
+    width:44px;
+    height:44px;
+    min-height:44px;
+    padding:0;
+    border:1px solid var(--line);
+    border-radius:8px;
+    background:#fff;
+    font-size:18px;
+  }
+  .site-head .more-panel { top:calc(58px + env(safe-area-inset-top)); }
+  .site-head + .hero .hero-in { gap:16px; padding:20px 0 24px; }
+  .site-head + .hero .eyebrow { margin-bottom:10px; padding:4px 9px; }
+  .site-head + .hero h1 { margin-bottom:8px; font-size:26px; }
+  .site-head + .hero .lead {
+    margin-bottom:14px;
+    font-size:14px;
+    line-height:1.7;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+  }
+  .site-head + .hero .search-box input { min-height:48px; border-radius:10px; }
+  .site-head + .hero .hero-ctas { gap:8px; margin-top:12px; }
+  .site-head + .hero .hero-ctas .ghost { flex:1; min-height:44px; padding:8px 10px; text-align:center; }
+  .site-head + .hero .board { padding:14px; border-radius:14px; }
+  .site-head + .hero .board-label { margin-bottom:8px; }
+  .site-head + .hero .board h2 { font-size:18px; }
+  .site-head + .hero .board .b-meta { margin-bottom:10px; }
+  .site-head + .hero .countdown { gap:6px; margin-bottom:12px; }
+  .site-head + .hero .cd-cell { padding:8px 4px 7px; border-radius:8px; }
+  .site-head + .hero .cd-cell b { font-size:20px; }
+  .site-head + .hero .board-actions .primary { flex:1; min-height:44px; padding:9px 12px; text-align:center; }
+  .site-head + .hero .board-actions .plain, .site-head + .hero .board-stats { display:none; }
   .card-row {
     scroll-padding-inline:16px;
     overscroll-behavior-inline:contain;
@@ -1059,7 +1115,7 @@ function analyticsRuntimeScript() {
 
 function header(relativePrefix = './') {
   const mobileLinks = `<nav aria-label="قائمة الجوال"><a href="${relativePrefix}events.html">كل الفعاليات</a><a href="${relativePrefix}today-events.html">فعاليات اليوم</a><a href="${relativePrefix}this-month.html">هذا الشهر</a><a href="${relativePrefix}cities.html">المدن</a><a href="${relativePrefix}categories.html">التصنيفات</a><a href="${relativePrefix}audiences.html">الجمهور</a><a href="${relativePrefix}organizers.html">للمنظمين</a><a href="${relativePrefix}organizer-intake.html">إضافة فعالية</a></nav>`;
-  return `<header class="topbar"><div class="wrap nav"><a class="brand" href="${relativePrefix}index.html"><span class="brand-mark">EL</span><b>${brandVisual}</b></a><nav class="nav-links" aria-label="روابط رئيسية"><a href="${relativePrefix}events.html">كل الفعاليات</a><a href="${relativePrefix}today-events.html">اليوم</a><a href="${relativePrefix}this-month.html">هذا الشهر</a><a href="${relativePrefix}cities.html">المدن</a><a href="${relativePrefix}categories.html">التصنيفات</a><a href="${relativePrefix}audiences.html">الجمهور</a><a href="${relativePrefix}organizers.html">للمنظمين</a><a href="${relativePrefix}organizer-intake.html">إضافة فعالية</a></nav><details class="mobile-site-menu"><summary aria-label="فتح قائمة التنقل">☰</summary>${mobileLinks}</details><a class="cta" href="${relativePrefix}attendance.html"><span class="live-dot"></span> وضع الحضور</a></div></header>`;
+  return `<header class="topbar"><div class="wrap nav"><a class="brand" href="${relativePrefix}index.html"><span class="brand-mark">EL</span><b>${brandVisual}</b></a><nav class="nav-links" aria-label="روابط رئيسية"><a href="${relativePrefix}events.html">كل الفعاليات</a><a href="${relativePrefix}today-events.html">اليوم</a><a href="${relativePrefix}this-month.html">هذا الشهر</a><a href="${relativePrefix}cities.html">المدن</a><a href="${relativePrefix}categories.html">التصنيفات</a><a href="${relativePrefix}audiences.html">الجمهور</a><a href="${relativePrefix}organizers.html">للمنظمين</a><a href="${relativePrefix}organizer-intake.html">إضافة فعالية</a></nav><details class="mobile-site-menu"><summary aria-label="فتح قائمة التنقل">☰</summary>${mobileLinks}</details><a class="cta" href="${relativePrefix}today.html"><span class="live-dot"></span> الآن</a></div></header>`;
 }
 
 function footer(relativePrefix = './') {
@@ -5148,7 +5204,7 @@ function writeAttendancePage() {
   const html = `<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  ${baseHead({ title: 'وضع الحضور | EventLive', description: 'فعالياتك المحفوظة وجداولها الحية على هذا الجهاز، متاحة عند ضعف الاتصال.', canonical, noindex: true })}
+  ${baseHead({ title: 'محفوظاتي للحضور | EventLive', description: 'فعالياتك المحفوظة وجداولها واتجاهاتها على هذا الجهاز، متاحة عند ضعف الاتصال.', canonical, noindex: true })}
   ${pageCss}
   <style>
     .attendance-list{display:grid;gap:14px}.attendance-item{display:grid;grid-template-columns:160px 1fr;gap:16px;background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden}.attendance-item img{width:100%;height:100%;min-height:150px;object-fit:cover}.attendance-body{padding:16px}.attendance-body h2{margin:0 0 6px}.attendance-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.attendance-remove{background:#fff;color:var(--live);border:1px solid rgba(229,72,77,.35)}.attendance-empty{background:#fff;border:1px solid var(--line);border-radius:8px;padding:24px;text-align:center}.network-state{display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.12)}@media(max-width:620px){.attendance-item{grid-template-columns:1fr}.attendance-item img{aspect-ratio:16/9;min-height:0}.attendance-body{padding:14px}}
@@ -5157,7 +5213,7 @@ function writeAttendancePage() {
 <body data-page-kind="attendance">
 ${header('./')}
 <main>
-  <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span>رفيقك داخل الفعالية</span><h1>وضع الحضور</h1><p class="lead">فعالياتك التي حفظتها على هذا الجهاز، مع وصول سريع إلى الجدول الحي والاتجاهات حتى عند ضعف الشبكة.</p><span class="network-state" data-network-state aria-live="polite">جاري فحص الاتصال...</span></div></section>
+  <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span>جاهزة وقت الفعالية</span><h1>محفوظاتي للحضور</h1><p class="lead">احفظ الفعالية التي تنوي حضورها لتجد هنا جدولها المباشر، موقعها واتجاهاتها، حتى عند ضعف الشبكة.</p><span class="network-state" data-network-state aria-live="polite">جاري فحص الاتصال...</span></div></section>
   <section class="section"><div class="wrap"><div class="attendance-list" data-attendance-list aria-live="polite"></div><div class="attendance-empty" data-attendance-empty hidden><h2>لم تحفظ فعالية بعد</h2><p>افتح أي فعالية قادمة واضغط «احفظ للحضور» لتظهر هنا.</p><a class="cta" href="./events.html">استكشف الفعاليات</a></div></div></section>
 </main>
 ${footer('./')}
@@ -5890,7 +5946,7 @@ function sitemapImageXml(event = {}) {
 }
 
 function writeSitemap(events = []) {
-  const eventByPage = new Map(events.map((event) => [`events/${event.file_slug}.html`, event]));
+  const eventByPage = new Map(events.map((event) => [`events/${event.file_slug}.html`.normalize('NFC'), event]));
   const ownerOnlyPages = new Set(['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html', 'owner-status.html', 'attendance.html']);
   const sitemapPaths = [...new Set(htmlFiles(distDir)
     .map((file) => file.replace(/\\/g, '/').normalize('NFC'))
