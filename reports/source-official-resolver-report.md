@@ -1,6 +1,6 @@
 # EventLive Official Resolver Report
 
-- generated_at: 2026-07-10T02:18:08.911Z
+- generated_at: 2026-07-10T04:25:03.331Z
 - source_ops_report: reports/source-ops-report.json
 - leads_seen: 10
 - resolver_tasks: 10
@@ -19,7 +19,7 @@
 | 105 | HVAC R Saudi Arabia | Eye of Riyadh Events | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, saudi-water-authority-events, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 105 | Saudi FM & Clean | Eye of Riyadh Events | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, saudi-water-authority-events, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 97 | Family Office Investment Meeting | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | saudi-contractors-authority-events, asharqia-chamber-events, invest-saudi-events, jcci-events-center, jouf-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 97 | Sucession Planning Program | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | code-mcit-programs, cst-events-news, diriyah-season, enjoy-saudi-events, future-skills-catalog | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 87 | Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨ | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | misk-hub-events, enjoy-saudi-events, riyadh-city-events, riyadh-season, platinumlist-saudi-city-network | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 
 ## Search Pack
 
@@ -122,14 +122,14 @@
 - ["Family Office Investment Meeting" "Riyadh" organizer](https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20organizer)
 - ["Family Office Investment Meeting" "Riyadh" tickets](https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20tickets)
 
-### Sucession Planning Program
+### Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨
 
-- [site:code.mcit.gov.sa "Sucession Planning Program" "Riyadh"](https://www.google.com/search?q=site%3Acode.mcit.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22)
-- [site:cst.gov.sa "Sucession Planning Program" "Riyadh"](https://www.google.com/search?q=site%3Acst.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22)
-- [site:diriyahseason.sa "Sucession Planning Program" "Riyadh"](https://www.google.com/search?q=site%3Adiriyahseason.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22)
-- [site:enjoy.sa "Sucession Planning Program" "Riyadh"](https://www.google.com/search?q=site%3Aenjoy.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22)
-- [site:futureskills.mcit.gov.sa "Sucession Planning Program" "Riyadh"](https://www.google.com/search?q=site%3Afutureskills.mcit.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22)
-- ["Sucession Planning Program" "Riyadh" official](https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20official)
-- ["Sucession Planning Program" "Riyadh" organizer](https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20organizer)
-- ["Sucession Planning Program" "Riyadh" tickets](https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20tickets)
+- [site:hub.misk.org.sa "Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh"](https://www.google.com/search?q=site%3Ahub.misk.org.sa%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22)
+- [site:enjoy.sa "Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh"](https://www.google.com/search?q=site%3Aenjoy.sa%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22)
+- [site:riyadh.sa "Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh"](https://www.google.com/search?q=site%3Ariyadh.sa%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22)
+- [site:riyadhseason.com "Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh"](https://www.google.com/search?q=site%3Ariyadhseason.com%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22)
+- [site:platinumlist.net "Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh"](https://www.google.com/search?q=site%3Aplatinumlist.net%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22)
+- ["Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh" official](https://www.google.com/search?q=%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22%20official)
+- ["Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh" organizer](https://www.google.com/search?q=%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22%20organizer)
+- ["Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh" tickets](https://www.google.com/search?q=%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22%20tickets)
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T02:18:08.911Z",
+  "generated_at": "2026-07-10T04:25:03.331Z",
   "source_ops_report": "reports/source-ops-report.json",
   "source_registry": "data/source_registry.json",
   "totals": {
@@ -846,42 +846,24 @@
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
     },
     {
-      "lead_id": "candidate-eventbrite-saudi-sucession-planning-program-20260903-d2b52d25",
-      "title": "Sucession Planning Program",
+      "lead_id": "candidate-eventbrite-saudi-riyadh-tech-mixer-and-social-tech-ai-data-it-20260710-5651bfb9",
+      "title": "Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨",
       "city": "Riyadh",
-      "starts_at": "2026-09-03T10:00:00+03:00",
+      "starts_at": "2026-07-10T18:00:00+03:00",
       "source_label": "Eventbrite Saudi Arabia",
       "discovery_quality": "strong-lead",
       "discovery_score": 70,
       "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 97,
+      "resolver_priority": 87,
       "target_sources": [
         {
-          "id": "code-mcit-programs",
-          "name": "CODE MCIT Programs",
-          "url": "https://code.mcit.gov.sa/en/our-programs",
-          "domain": "code.mcit.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 28
-        },
-        {
-          "id": "cst-events-news",
-          "name": "CST Events and News",
-          "url": "https://www.cst.gov.sa/en",
-          "domain": "cst.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 28
-        },
-        {
-          "id": "diriyah-season",
-          "name": "Diriyah Season",
-          "url": "https://diriyahseason.sa/en",
-          "domain": "diriyahseason.sa",
+          "id": "misk-hub-events",
+          "name": "Misk Hub Events",
+          "url": "https://hub.misk.org.sa/en/events/",
+          "domain": "hub.misk.org.sa",
           "trust_level": "official",
           "source_type": "organizer-calendar",
-          "score": 28
+          "score": 48
         },
         {
           "id": "enjoy-saudi-events",
@@ -890,50 +872,68 @@
           "domain": "enjoy.sa",
           "trust_level": "official",
           "source_type": "government-calendar",
-          "score": 28
+          "score": 38
         },
         {
-          "id": "future-skills-catalog",
-          "name": "Future Skills MCIT Catalogue",
-          "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
-          "domain": "futureskills.mcit.gov.sa",
+          "id": "riyadh-city-events",
+          "name": "Riyadh City Events",
+          "url": "https://riyadh.sa/en/events/all",
+          "domain": "riyadh.sa",
           "trust_level": "official",
           "source_type": "government-calendar",
-          "score": 28
+          "score": 38
+        },
+        {
+          "id": "riyadh-season",
+          "name": "Riyadh Season Official",
+          "url": "https://riyadhseason.com/en/explore",
+          "domain": "riyadhseason.com",
+          "trust_level": "official",
+          "source_type": "organizer-calendar",
+          "score": 38
+        },
+        {
+          "id": "platinumlist-saudi-city-network",
+          "name": "Platinumlist Saudi City Network",
+          "url": "https://platinumlist.net/sitemap",
+          "domain": "platinumlist.net",
+          "trust_level": "official-marketplace",
+          "source_type": "ticketing-marketplace",
+          "score": 32
         }
       ],
       "searches": [
         {
-          "query": "site:code.mcit.gov.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Acode.mcit.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
+          "query": "site:hub.misk.org.sa \"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ahub.misk.org.sa%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22"
         },
         {
-          "query": "site:cst.gov.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Acst.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
+          "query": "site:enjoy.sa \"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aenjoy.sa%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22"
         },
         {
-          "query": "site:diriyahseason.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Adiriyahseason.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
+          "query": "site:riyadh.sa \"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ariyadh.sa%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22"
         },
         {
-          "query": "site:enjoy.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aenjoy.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
+          "query": "site:riyadhseason.com \"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ariyadhseason.com%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22"
         },
         {
-          "query": "site:futureskills.mcit.gov.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Afutureskills.mcit.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
+          "query": "site:platinumlist.net \"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aplatinumlist.net%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22"
         },
         {
-          "query": "\"Sucession Planning Program\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20official"
+          "query": "\"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22%20official"
         },
         {
-          "query": "\"Sucession Planning Program\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20organizer"
+          "query": "\"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22%20organizer"
         },
         {
-          "query": "\"Sucession Planning Program\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20tickets"
+          "query": "\"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."

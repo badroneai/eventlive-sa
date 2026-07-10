@@ -1,28 +1,22 @@
 {
-  "published_at": "2026-07-10T03:47:10.130Z",
+  "published_at": "2026-07-10T04:22:47.415Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 194,
+  "candidates_seen": 196,
   "totals": {
-    "candidates_seen": 194,
-    "published": 1,
-    "linked_existing": 162,
-    "blocked": 31,
+    "candidates_seen": 196,
+    "published": 0,
+    "linked_existing": 163,
+    "blocked": 33,
     "reconciled": 163
   },
   "duplicate_catalog_rows_removed": 0,
   "duplicate_catalog_rows": [],
   "canonical_event_ids_remapped": 0,
   "canonical_event_id_remaps": [],
-  "published": [
-    {
-      "candidate_id": "candidate-najran-municipality-summer-events-مهرجان-صيف-نجران-2026-صيفنا-هايل-20260707-a130a84c",
-      "event_id": "event-مهرجان-صيف-نجران-2026-صيفنا-هايل",
-      "title": "مهرجان صيف نجران 2026 «صيفنا هايل»"
-    }
-  ],
+  "published": [],
   "linked_existing": [
     {
       "candidate_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c",
@@ -97,7 +91,7 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-the-groves-20251105-b7362f59",
+      "candidate_id": "candidate-visit-saudi-seasons-the-groves-20251105-b7362f59",
       "event_id": "event-the-groves",
       "title": "The Groves",
       "reason": "already linked to catalog event"
@@ -181,7 +175,7 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-coca-cola-fan-zone-at-jax-district-20260611-f9159842",
+      "candidate_id": "candidate-visit-saudi-seasons-coca-cola-fan-zone-at-jax-district-20260611-f9159842",
       "event_id": "event-coca-cola-fan-zone-at-jax-district",
       "title": "Coca-Cola Fan Zone at JAX District",
       "reason": "already linked to catalog event"
@@ -262,6 +256,12 @@
       "candidate_id": "candidate-riyadh-city-events-esports-world-cup-20260706-b4b860e9",
       "event_id": "event-esports-world-cup",
       "title": "Esports World Cup",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-najran-municipality-summer-events-مهرجان-صيف-نجران-2026-صيفنا-هايل-20260707-a130a84c",
+      "event_id": "event-مهرجان-صيف-نجران-2026-صيفنا-هايل",
+      "title": "مهرجان صيف نجران 2026 «صيفنا هايل»",
       "reason": "already linked to catalog event"
     },
     {
@@ -811,13 +811,13 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-saudi-international-falcons-hunting-exhibition-20261001-a4f29b73",
+      "candidate_id": "candidate-visit-saudi-seasons-saudi-international-falcons-hunting-exhibition-20261001-a4f29b73",
       "event_id": "event-saudi-international-falcons-hunting-exhibition",
       "title": "Saudi International Falcons & Hunting Exhibition",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-saudi-falcons-club-auction-20261001-4e016ab8",
+      "candidate_id": "candidate-visit-saudi-seasons-saudi-falcons-club-auction-20261001-4e016ab8",
       "event_id": "event-saudi-falcons-club-auction",
       "title": "Saudi Falcons Club Auction",
       "reason": "already linked to catalog event"
@@ -1004,6 +1004,11 @@
       "reason": "possible duplicate already exists: event-esports-world-cup"
     },
     {
+      "candidate_id": "candidate-eventbrite-saudi-riyadh-tech-mixer-and-social-tech-ai-data-it-20260710-5651bfb9",
+      "title": "Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨",
+      "reason": "publication gate source-evidence is not auto-publishable"
+    },
+    {
       "candidate_id": "candidate-eventbrite-saudi-dubai-property-expo-in-al-khobar-17th-18th-july-2026-danube-20260717-2dd8b8b7",
       "title": "Dubai Property Expo in Al Khobar",
       "reason": "publication gate source-evidence is not auto-publishable"
@@ -1084,8 +1089,13 @@
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
-      "candidate_id": "candidate-eventbrite-saudi-25th-wpc-energy-congress-20261011-5909609b",
-      "title": "25TH WPC Energy Congress",
+      "candidate_id": "candidate-eventbrite-saudi-12th-middle-east-banking-ai-analytics-summit-2026-20261014-cec80e9d",
+      "title": "12th Middle East Banking AI & Analytics Summit 2026",
+      "reason": "publication gate source-evidence is not auto-publishable"
+    },
+    {
+      "candidate_id": "candidate-eventbrite-saudi-information-session-with-ie-university-saudi-arabia-in-riyadh-20261014-d14514bb",
+      "title": "Information Session With IE University Saudi Arabia in Riyadh",
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {

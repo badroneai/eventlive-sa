@@ -1,22 +1,15 @@
 {
-  "generated_at": "2026-07-10T03:29:01.253Z",
+  "generated_at": "2026-07-10T04:18:23.678Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
   "selection": {
-    "selected_ids": [
-      "jouf-chamber-events",
-      "northern-borders-chamber-events",
-      "tabuk-chamber-events",
-      "hail-chamber-events",
-      "najran-chamber-events",
-      "baha-chamber-events"
-    ],
+    "selected_ids": [],
     "scope": "priority",
-    "limit": 6,
-    "probed_this_run": 6,
+    "limit": 8,
+    "probed_this_run": 0,
     "fresh_results_available": 22,
-    "wait_ms": 2500,
+    "wait_ms": 4500,
     "timeout_ms": 60000
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",

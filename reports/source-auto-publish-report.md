@@ -1,24 +1,23 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-10T03:47:10.130Z
+- published_at: 2026-07-10T04:22:47.415Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 194
-- published_new: 1
-- linked_existing: 162
-- blocked_remaining: 31
+- candidates_seen: 196
+- published_new: 0
+- linked_existing: 163
+- blocked_remaining: 33
 
 ## Blocked summary
 
 - possible duplicate already exists: event-esports-world-cup: 1
-- publication gate source-evidence is not auto-publishable: 16
+- publication gate source-evidence is not auto-publishable: 18
 - confidence public-listing is not auto-publishable: 12
 - possible duplicate already exists: event-saudi-wood-expo-2026: 1
 - possible duplicate already exists: event-saudi-industrial-series-2: 1
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-najran-municipality-summer-events-مهرجان-صيف-نجران-2026-صيفنا-هايل-20260707-a130a84c | published | event-مهرجان-صيف-نجران-2026-صيفنا-هايل | مهرجان صيف نجران 2026 «صيفنا هايل» |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -31,7 +30,7 @@
 | candidate-moc-cultural-subportals-culinary-manufacturing-hubs-20250811-d7214bd9 | linked-existing | event-culinary-manufacturing-hubs | already linked to catalog event |
 | candidate-riyadh-city-events-poppy-playtime-20251010-b96ed7bc | linked-existing | event-poppy-playtime | already linked to catalog event |
 | candidate-riyadh-city-events-riyadh-season-blvd-city-20251010-d23bcbe8 | linked-existing | event-riyadh-season-blvd-city | already linked to catalog event |
-| candidate-visit-saudi-calendar-the-groves-20251105-b7362f59 | linked-existing | event-the-groves | already linked to catalog event |
+| candidate-visit-saudi-seasons-the-groves-20251105-b7362f59 | linked-existing | event-the-groves | already linked to catalog event |
 | candidate-riyadh-city-events-immersive-experience-flying-over-saudi-20251224-5f459910 | linked-existing | event-immersive-experience-flying-over-saudi | already linked to catalog event |
 | candidate-visit-saudi-calendar-arabic-language-exhibition-28-20260101-d1f2da19 | linked-existing | event-arabic-language-exhibition-28 | already linked to catalog event |
 | candidate-visit-saudi-calendar-arabic-language-exhibition-for-kids-20260101-36979634 | linked-existing | event-arabic-language-exhibition-for-kids | already linked to catalog event |
@@ -45,7 +44,7 @@
 | candidate-riyadh-city-events-sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026-20260611-3f758046 | linked-existing | event-sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026 | already linked to catalog event |
 | candidate-riyadh-city-events-world-cup-2026-fan-zone-at-kimpton-kafd-20260611-5af6b715 | linked-existing | event-world-cup-2026-fan-zone-at-kimpton-kafd | already linked to catalog event |
 | candidate-riyadh-city-events-solitaire-fan-zone-fifa-world-cup-2026-20260611-ccdd5e23 | linked-existing | event-solitaire-fan-zone-fifa-world-cup-2026 | already linked to catalog event |
-| candidate-visit-saudi-calendar-coca-cola-fan-zone-at-jax-district-20260611-f9159842 | linked-existing | event-coca-cola-fan-zone-at-jax-district | already linked to catalog event |
+| candidate-visit-saudi-seasons-coca-cola-fan-zone-at-jax-district-20260611-f9159842 | linked-existing | event-coca-cola-fan-zone-at-jax-district | already linked to catalog event |
 | candidate-riyadh-city-events-ruh-space-20260613-66f6aa84 | linked-existing | event-ruh-space | already linked to catalog event |
 | candidate-riyadh-city-events-laysen-fan-zone-fifa-world-cup-2026-20260614-8c77f037 | linked-existing | event-laysen-fan-zone-fifa-world-cup-2026 | already linked to catalog event |
 | candidate-visit-saudi-calendar-aseer-season-20260625-2fc92ef9 | linked-existing | event-aseer-season | already linked to catalog event |
@@ -59,6 +58,7 @@
 | candidate-riyadh-city-events-registration-for-international-research-competition-on-non-terrestrial-n-20260704-61ba0723 | linked-existing | event-registration-for-international-research-competition-on-non-terrestrial-n | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية-20260705-60b7f94b | linked-existing | event-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية | already linked to catalog event |
 | candidate-riyadh-city-events-esports-world-cup-20260706-b4b860e9 | linked-existing | event-esports-world-cup | already linked to catalog event |
+| candidate-najran-municipality-summer-events-مهرجان-صيف-نجران-2026-صيفنا-هايل-20260707-a130a84c | linked-existing | event-مهرجان-صيف-نجران-2026-صيفنا-هايل | already linked to catalog event |
 | candidate-saudi-university-events-registration-now-open-for-children-at-the-childhood-studies-center-for-t-20260707-a2624927 | linked-existing | event-registration-now-open-for-children-at-the-childhood-studies-center-for-t | already linked to catalog event |
 | candidate-mdlbeast-events-unstable-20260710-5647df2e | linked-existing | event-unstable | already linked to catalog event |
 | candidate-riyadh-city-events-pfl-mena-fight-night-20260710-0eafa4d0 | linked-existing | event-pfl-mena-fight-night | already linked to catalog event |
@@ -150,8 +150,8 @@
 | candidate-dhahran-expo-calendar-the-egyptian-products-exhibition-20260924-18d15b29 | linked-existing | event-the-egyptian-products-exhibition | already linked to catalog event |
 | candidate-dhahran-expo-calendar-wadaef-exhibition-20260927-18d15b29 | linked-existing | event-wadaef-exhibition | already linked to catalog event |
 | candidate-riyadh-city-events-the-saudi-food-show-20260927-368d6055 | linked-existing | event-the-saudi-food-show | already linked to catalog event |
-| candidate-visit-saudi-calendar-saudi-international-falcons-hunting-exhibition-20261001-a4f29b73 | linked-existing | event-saudi-international-falcons-hunting-exhibition | already linked to catalog event |
-| candidate-visit-saudi-calendar-saudi-falcons-club-auction-20261001-4e016ab8 | linked-existing | event-saudi-falcons-club-auction | already linked to catalog event |
+| candidate-visit-saudi-seasons-saudi-international-falcons-hunting-exhibition-20261001-a4f29b73 | linked-existing | event-saudi-international-falcons-hunting-exhibition | already linked to catalog event |
+| candidate-visit-saudi-seasons-saudi-falcons-club-auction-20261001-4e016ab8 | linked-existing | event-saudi-falcons-club-auction | already linked to catalog event |
 | candidate-visit-saudi-calendar-al-milwah-falcon-race-20261004-1e16b7f0 | linked-existing | event-al-milwah-falcon-race | already linked to catalog event |
 | candidate-sfda-events-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال-20261005-34d08b48 | linked-existing | event-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال | already linked to catalog event |
 | candidate-rfecc-whats-on-natrual-expo-20261026-a7983dd2 | linked-existing | event-natrual-expo | already linked to catalog event |
@@ -182,6 +182,7 @@
 | candidate-visit-saudi-calendar-eid-al-fitr-20270330-64dfe211 | linked-existing | event-eid-al-fitr | already linked to catalog event |
 | candidate-visit-saudi-calendar-eid-al-adha-20270606-f67747fe | linked-existing | event-eid-al-adha | already linked to catalog event |
 | candidate-eye-of-riyadh-events-esports-world-cup-20260706-13ed17c1 | blocked | - | possible duplicate already exists: event-esports-world-cup |
+| candidate-eventbrite-saudi-riyadh-tech-mixer-and-social-tech-ai-data-it-20260710-5651bfb9 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-dubai-property-expo-in-al-khobar-17th-18th-july-2026-danube-20260717-2dd8b8b7 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eye-of-riyadh-events-oxford-future-of-real-estate-programme-20260805-7c9ee195 | blocked | - | confidence public-listing is not auto-publishable |
 | candidate-eye-of-riyadh-events-sunaa-2026-20260818-e3819fa8 | blocked | - | confidence public-listing is not auto-publishable |
@@ -198,7 +199,8 @@
 | candidate-eventbrite-saudi-sucession-planning-program-20260903-d2b52d25 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-jeddah-fintech-week-2026-20260905-8e9a03b6 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-information-session-with-ie-university-saudi-arabia-in-riyadh-20260907-2b4929f1 | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-eventbrite-saudi-25th-wpc-energy-congress-20261011-5909609b | blocked | - | publication gate source-evidence is not auto-publishable |
+| candidate-eventbrite-saudi-12th-middle-east-banking-ai-analytics-summit-2026-20261014-cec80e9d | blocked | - | publication gate source-evidence is not auto-publishable |
+| candidate-eventbrite-saudi-information-session-with-ie-university-saudi-arabia-in-riyadh-20261014-d14514bb | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-15th-middle-east-enterprise-ai-analytics-summit-20261015-b7493a97 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-15th-middle-east-enterprise-ai-analytics-summit-20261015-e0aad1e6 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-riyadh-2026-venture-capital-world-summit-20261020-a3f5a1b8 | blocked | - | publication gate source-evidence is not auto-publishable |
