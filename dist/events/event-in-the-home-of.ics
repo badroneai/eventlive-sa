@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:In the Home of… | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-in-the-home-of@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260710T133000Z
+DTEND:20260725T180000Z
+SUMMARY:In the Home of…
+DESCRIPTION:Some homes are easy to recognize. Others leave clues behind. In this interactive library experience\, children move through a series of spaces\, each one arranged as a &ldquo\;home&rdquo\; shaped by a well-known literary character. Objects\, layouts\, and small details hint at who might live there. As they explore each corner\, children follow prompts and challenges that guide them to observe\, connect\, and identify the character behind each space. The experience unfolds step by step\, turning the library into a trail of clues where stories are discovered through place\, detail\, and interaction.
+LOCATION:Library - Level 2
+URL:https://eventme.live/events/event-in-the-home-of.html
+END:VEVENT
+END:VCALENDAR

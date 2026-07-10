@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Tinkering Stations | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-tinkering-stations@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260727T060000Z
+DTEND:20260831T180000Z
+SUMMARY:Tinkering Stations
+DESCRIPTION:Interactive spaces where your children can explore\, create\, experiment and have hands-on learning experiences. Join the challenge and participate in many practical experiments\, which allow you to assemble\, test and transform your ideas and creativity into a tangible product. Use different materials to create whatever you want\, whether it is a car\, a house\, a rocket or anything else. Join us to start designing and bring your ideas to life!
+LOCATION:Children Museum
+URL:https://eventme.live/events/event-tinkering-stations.html
+END:VEVENT
+END:VCALENDAR

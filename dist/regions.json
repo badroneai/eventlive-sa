@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T09:13:06.464Z",
+  "generated_at": "2026-07-10T10:10:45.542Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-saudi-region-coverage",
@@ -11,21 +11,21 @@
     "zero_active_regions": 3,
     "active_target_cities": 12,
     "target_cities": 38,
-    "events": 622,
-    "active_events": 227,
-    "ended_events": 395
+    "events": 841,
+    "active_events": 350,
+    "ended_events": 491
   },
   "national_coverage": {
-    "score": 62,
+    "score": 63,
     "verdict": "NEEDS_WORK",
     "active_regions": 10,
     "zero_active_regions": 3,
     "active_target_cities": 12,
     "target_cities": 38,
     "active_target_city_ratio": 0.3158,
-    "live_ready_regions": 3,
+    "live_ready_regions": 4,
     "riyadh_active_events": 126,
-    "riyadh_active_share": 0.5551,
+    "riyadh_active_share": 0.36,
     "thresholds": {
       "active_regions_min": 10,
       "active_target_city_ratio_min": 0.5,
@@ -541,181 +541,6 @@
       "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
     },
     {
-      "key": "eastern-region",
-      "label": "المنطقة الشرقية",
-      "target_cities": [
-        {
-          "key": "Dammam",
-          "label": "الدمام"
-        },
-        {
-          "key": "Khobar",
-          "label": "الخبر"
-        },
-        {
-          "key": "Dhahran",
-          "label": "الظهران"
-        },
-        {
-          "key": "Jubail",
-          "label": "الجبيل"
-        },
-        {
-          "key": "Qatif",
-          "label": "القطيف"
-        },
-        {
-          "key": "Al Ahsa",
-          "label": "الأحساء"
-        },
-        {
-          "key": "Hafar Al Batin",
-          "label": "حفر الباطن"
-        }
-      ],
-      "covered_cities": [
-        {
-          "key": "Dammam",
-          "label": "الدمام"
-        },
-        {
-          "key": "Khobar",
-          "label": "الخبر"
-        },
-        {
-          "key": "Dhahran",
-          "label": "الظهران"
-        },
-        {
-          "key": "Jubail",
-          "label": "الجبيل"
-        },
-        {
-          "key": "Al Ahsa",
-          "label": "الأحساء"
-        }
-      ],
-      "active_cities": [
-        {
-          "key": "Dhahran",
-          "label": "الظهران"
-        }
-      ],
-      "active_target_city_count": 1,
-      "active_target_city_ratio": 0.1429,
-      "active_event_target": 10,
-      "missing_target_cities": [
-        {
-          "key": "Qatif",
-          "label": "القطيف"
-        },
-        {
-          "key": "Hafar Al Batin",
-          "label": "حفر الباطن"
-        }
-      ],
-      "total": 63,
-      "active": 17,
-      "upcoming": 17,
-      "ongoing": 0,
-      "live": 0,
-      "ended": 46,
-      "live_ready": 0,
-      "source_count": 4,
-      "source_images": 15,
-      "generated_covers": 48,
-      "registered_source_count": 12,
-      "registered_sources": [
-        {
-          "id": "webook-explore",
-          "name": "webook Explore",
-          "ring": "candidate-only",
-          "status": "official-marketplace",
-          "url": "https://webook.com/ar/explore"
-        },
-        {
-          "id": "ten-times-saudi",
-          "name": "10times Saudi Arabia",
-          "ring": "candidate-only",
-          "status": "aggregator",
-          "url": "https://10times.com/saudiarabia"
-        },
-        {
-          "id": "dhahran-expo-calendar",
-          "name": "Dhahran Expo Calendar",
-          "ring": "monitor-public",
-          "status": "venue-official",
-          "url": "https://dhahranexpo.com.sa"
-        },
-        {
-          "id": "saudi-pro-league-fixtures",
-          "name": "Saudi Pro League Fixtures",
-          "ring": "official-feed-preferred",
-          "status": "official",
-          "url": "https://www.spl.com.sa/en"
-        },
-        {
-          "id": "asharqia-chamber-events",
-          "name": "Asharqia Chamber Events",
-          "ring": "monitor-public",
-          "status": "official",
-          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx"
-        },
-        {
-          "id": "expofp-eventseye-saudi",
-          "name": "ExpoFP and Eventseye Saudi Trade Shows",
-          "ring": "candidate-only",
-          "status": "aggregator",
-          "url": "https://expofp.com/"
-        },
-        {
-          "id": "meetup-facebook-saudi-events",
-          "name": "Meetup and Facebook Events Saudi Arabia",
-          "ring": "candidate-only",
-          "status": "community",
-          "url": "https://www.meetup.com/"
-        },
-        {
-          "id": "hala-yalla",
-          "name": "Hala Yalla",
-          "ring": "candidate-only",
-          "status": "official-marketplace",
-          "url": "https://halayalla.com/sa-en/ticketing"
-        },
-        {
-          "id": "eye-of-riyadh-events",
-          "name": "Eye of Riyadh Events",
-          "ring": "candidate-only",
-          "status": "aggregator",
-          "url": "https://www.eyeofriyadh.com/events/"
-        },
-        {
-          "id": "ithra-events",
-          "name": "Ithra Events",
-          "ring": "official-feed-preferred",
-          "status": "venue-official",
-          "url": "https://www.ithra.com"
-        },
-        {
-          "id": "saudi-university-events",
-          "name": "Saudi Universities and Technical Colleges",
-          "ring": "monitor-public",
-          "status": "official",
-          "url": "https://www.kaust.edu.sa/"
-        },
-        {
-          "id": "misk-hub-events",
-          "name": "Misk Hub Events",
-          "ring": "official-feed-preferred",
-          "status": "official",
-          "url": "https://hub.misk.org.sa/en/events/"
-        }
-      ],
-      "coverage_score": 67,
-      "severity": "healthy",
-      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
-    },
-    {
       "key": "madinah-region",
       "label": "منطقة المدينة المنورة",
       "target_cities": [
@@ -914,6 +739,181 @@
       "coverage_score": 73,
       "severity": "healthy",
       "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
+    },
+    {
+      "key": "eastern-region",
+      "label": "المنطقة الشرقية",
+      "target_cities": [
+        {
+          "key": "Dammam",
+          "label": "الدمام"
+        },
+        {
+          "key": "Khobar",
+          "label": "الخبر"
+        },
+        {
+          "key": "Dhahran",
+          "label": "الظهران"
+        },
+        {
+          "key": "Jubail",
+          "label": "الجبيل"
+        },
+        {
+          "key": "Qatif",
+          "label": "القطيف"
+        },
+        {
+          "key": "Al Ahsa",
+          "label": "الأحساء"
+        },
+        {
+          "key": "Hafar Al Batin",
+          "label": "حفر الباطن"
+        }
+      ],
+      "covered_cities": [
+        {
+          "key": "Dammam",
+          "label": "الدمام"
+        },
+        {
+          "key": "Khobar",
+          "label": "الخبر"
+        },
+        {
+          "key": "Dhahran",
+          "label": "الظهران"
+        },
+        {
+          "key": "Jubail",
+          "label": "الجبيل"
+        },
+        {
+          "key": "Al Ahsa",
+          "label": "الأحساء"
+        }
+      ],
+      "active_cities": [
+        {
+          "key": "Dhahran",
+          "label": "الظهران"
+        }
+      ],
+      "active_target_city_count": 1,
+      "active_target_city_ratio": 0.1429,
+      "active_event_target": 10,
+      "missing_target_cities": [
+        {
+          "key": "Qatif",
+          "label": "القطيف"
+        },
+        {
+          "key": "Hafar Al Batin",
+          "label": "حفر الباطن"
+        }
+      ],
+      "total": 282,
+      "active": 140,
+      "upcoming": 135,
+      "ongoing": 4,
+      "live": 1,
+      "ended": 142,
+      "live_ready": 218,
+      "source_count": 5,
+      "source_images": 234,
+      "generated_covers": 48,
+      "registered_source_count": 12,
+      "registered_sources": [
+        {
+          "id": "webook-explore",
+          "name": "webook Explore",
+          "ring": "candidate-only",
+          "status": "official-marketplace",
+          "url": "https://webook.com/ar/explore"
+        },
+        {
+          "id": "ten-times-saudi",
+          "name": "10times Saudi Arabia",
+          "ring": "candidate-only",
+          "status": "aggregator",
+          "url": "https://10times.com/saudiarabia"
+        },
+        {
+          "id": "dhahran-expo-calendar",
+          "name": "Dhahran Expo Calendar",
+          "ring": "monitor-public",
+          "status": "venue-official",
+          "url": "https://dhahranexpo.com.sa"
+        },
+        {
+          "id": "saudi-pro-league-fixtures",
+          "name": "Saudi Pro League Fixtures",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://www.spl.com.sa/en"
+        },
+        {
+          "id": "asharqia-chamber-events",
+          "name": "Asharqia Chamber Events",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx"
+        },
+        {
+          "id": "expofp-eventseye-saudi",
+          "name": "ExpoFP and Eventseye Saudi Trade Shows",
+          "ring": "candidate-only",
+          "status": "aggregator",
+          "url": "https://expofp.com/"
+        },
+        {
+          "id": "meetup-facebook-saudi-events",
+          "name": "Meetup and Facebook Events Saudi Arabia",
+          "ring": "candidate-only",
+          "status": "community",
+          "url": "https://www.meetup.com/"
+        },
+        {
+          "id": "hala-yalla",
+          "name": "Hala Yalla",
+          "ring": "candidate-only",
+          "status": "official-marketplace",
+          "url": "https://halayalla.com/sa-en/ticketing"
+        },
+        {
+          "id": "eye-of-riyadh-events",
+          "name": "Eye of Riyadh Events",
+          "ring": "candidate-only",
+          "status": "aggregator",
+          "url": "https://www.eyeofriyadh.com/events/"
+        },
+        {
+          "id": "ithra-events",
+          "name": "Ithra Events",
+          "ring": "official-feed-preferred",
+          "status": "venue-official",
+          "url": "https://www.ithra.com/en/programme/2026"
+        },
+        {
+          "id": "saudi-university-events",
+          "name": "Saudi Universities and Technical Colleges",
+          "ring": "monitor-public",
+          "status": "official",
+          "url": "https://www.kaust.edu.sa/"
+        },
+        {
+          "id": "misk-hub-events",
+          "name": "Misk Hub Events",
+          "ring": "official-feed-preferred",
+          "status": "official",
+          "url": "https://hub.misk.org.sa/en/events/"
+        }
+      ],
+      "coverage_score": 79,
+      "severity": "healthy",
+      "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
     },
     {
       "key": "riyadh-region",
@@ -1560,16 +1560,16 @@
       "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
     },
     {
-      "key": "eastern-region",
-      "label": "المنطقة الشرقية",
-      "coverage_score": 67,
+      "key": "madinah-region",
+      "label": "منطقة المدينة المنورة",
+      "coverage_score": 70,
       "reason": "تحتاج عمقًا أكبر في المدن المستهدفة",
       "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
     },
     {
-      "key": "madinah-region",
-      "label": "منطقة المدينة المنورة",
-      "coverage_score": 70,
+      "key": "aseer-region",
+      "label": "منطقة عسير",
+      "coverage_score": 73,
       "reason": "تحتاج عمقًا أكبر في المدن المستهدفة",
       "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
     }

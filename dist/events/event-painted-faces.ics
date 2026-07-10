@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Painted Faces | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-painted-faces@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260710T130000Z
+DTEND:20260725T180000Z
+SUMMARY:Painted Faces
+DESCRIPTION:What's a festival without facepainting? Children choose from a variety of designs and have them painted using safe\, child-friendly colors.
+LOCATION:Children's Museum
+URL:https://eventme.live/events/event-painted-faces.html
+END:VEVENT
+END:VCALENDAR

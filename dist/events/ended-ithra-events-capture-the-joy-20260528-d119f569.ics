@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Capture the Joy! | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-ithra-events-capture-the-joy-20260528-d119f569@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260528T130000Z
+DTEND:20260530T200000Z
+SUMMARY:Capture the Joy!
+DESCRIPTION:Take a photo by one of our photographers who roam around the Center\, and keep your photo as a souvenir from your visit to Ithra during Eid al-Adha!
+LOCATION:Plaza
+URL:https://eventme.live/events/ended-ithra-events-capture-the-joy-20260528-d119f569.html
+END:VEVENT
+END:VCALENDAR

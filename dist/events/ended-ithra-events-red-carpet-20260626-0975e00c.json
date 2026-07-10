@@ -1,0 +1,128 @@
+{
+  "id": "ended-ithra-events-red-carpet-20260626-0975e00c",
+  "title": "Red Carpet",
+  "summary": "The festival welcomes guests on the red carpet during the opening and closing ceremonies and celebrates the filmmakers participating in its 12th edition with daily official photoshoots and media interviews. It also offers the public the opportunity to meet attending stars and take pictures with them throughout the festival.",
+  "canonical_url": "https://eventme.live/events/ended-ithra-events-red-carpet-20260626-0975e00c.html",
+  "detail_url": "./events/ended-ithra-events-red-carpet-20260626-0975e00c.html",
+  "calendar_url": "./events/ended-ithra-events-red-carpet-20260626-0975e00c.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/visit-ithra/attractions/cinema/saudi-film-festival-12/red-carpet",
+  "evidence_url": "https://www.ithra.com/en/visit-ithra/attractions/cinema/saudi-film-festival-12/red-carpet",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verification_method": "official-public-algolia-index",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Plaza",
+  "venue_address": "Plaza",
+  "starts_at": "2026-06-26T12:00:00+03:00",
+  "ends_at": "2026-07-01T12:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": false,
+  "agenda_ready": false,
+  "official_sessions_count": 0,
+  "schedule_depth": "attendance-window",
+  "schedule_quality": "basic-window",
+  "image_url": "https://eventme.live/assets/event-images/red-carpet-f62ab36481.jpg",
+  "image_alt": "Red Carpet",
+  "category": "جوائز وتكريم",
+  "category_url": "./categories/awards-ceremonies.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Red Carpet",
+    "جوائز وتكريم",
+    "performance",
+    "فعالية",
+    "منتهية",
+    "الظهران",
+    "Plaza",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Saudi Film Festival",
+    "ended-event",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "نافذة الحضور",
+      "starts_at": "2026-06-26T12:00:00+03:00",
+      "ends_at": "2026-07-01T12:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-نافذة-الحضور"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Red Carpet",
+    "startDate": "2026-06-26T12:00:00+03:00",
+    "endDate": "2026-07-01T12:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Plaza",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plaza",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/red-carpet-f62ab36481.jpg"
+    ],
+    "description": "The festival welcomes guests on the red carpet during the opening and closing ceremonies and celebrates the filmmakers participating in its 12th edition with daily official photoshoots and media interviews. It also offers the public the opportunity to meet attending stars and take pictures with them throughout the festival.",
+    "url": "https://eventme.live/events/ended-ithra-events-red-carpet-20260626-0975e00c.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-red-carpet-20260626-0975e00c.html",
+    "isAccessibleForFree": true,
+    "keywords": "Red Carpet, جوائز وتكريم, performance, فعالية, منتهية, الظهران, Plaza, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Saudi Film Festival, ended-event, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/visit-ithra/attractions/cinema/saudi-film-festival-12/red-carpet"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/visit-ithra/attractions/cinema/saudi-film-festival-12/red-carpet",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

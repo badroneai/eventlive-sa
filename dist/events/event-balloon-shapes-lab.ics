@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Balloon Shapes Lab | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-balloon-shapes-lab@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260710T130000Z
+DTEND:20260725T180000Z
+SUMMARY:Balloon Shapes Lab
+DESCRIPTION:Children twist and shape balloons into different forms\, experimenting with how each movement changes the shape. Balloon Shapes Lab ضمن ترفيه وعائلات في الظهران. تبدأ الفعالية ١٠‏/٠٧‏/٢٠٢٦، ٤:٠٠ م وتنتهي ٢٥‏/٠٧‏/٢٠٢٦، ٩:٠٠ م حسب البيانات المتاحة. تتوفر لها صفحة جدول حي تساعد الزائر على متابعة الحالة والوقت أثناء الحضور. المصدر: Ithra Events.
+LOCATION:Children's Museum
+URL:https://eventme.live/events/event-balloon-shapes-lab.html
+END:VEVENT
+END:VCALENDAR

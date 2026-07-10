@@ -56,6 +56,19 @@ for (const event of published.filter((row) => requiredSources.includes(row.sourc
   assert.ok(event.program_outline.requirements?.length >= 1, `${event.id} backlog outline must include attendance requirements`);
 }
 
+const ithraEvents = published.filter((event) => event.source_label === 'Ithra Events');
+assert.ok(ithraEvents.length >= 100, 'Ithra official index should contribute broad active coverage');
+assert.equal(
+  ithraEvents.every((event) => event.program_outline?.source_method === 'official-public-algolia-index'),
+  true,
+  'Ithra outlines must retain their official public index provenance'
+);
+assert.equal(
+  ithraEvents.every((event) => /official timed sessions/.test(event.program_outline?.faqs?.live_schedule_status || '')),
+  true,
+  'Ithra outlines must describe the extracted official session schedule'
+);
+
 const distPublishedWithOutline = distEvents.filter((event) => event.program_outline);
 assert.ok(distPublishedWithOutline.length >= published.length, 'build must carry enriched outlines into dist/events.json');
 

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Let’s Decorate! | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-lets-decorate@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260710T130000Z
+DTEND:20260725T190000Z
+SUMMARY:Let’s Decorate!
+DESCRIPTION:Decorations change depending on the occasion\, the place\, and the people. At the Inspiration Spot\, children get inspired to make different styles to celebrate.
+LOCATION:Children's Museum
+URL:https://eventme.live/events/event-lets-decorate.html
+END:VEVENT
+END:VCALENDAR

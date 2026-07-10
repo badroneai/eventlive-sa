@@ -174,7 +174,7 @@ function applyBacklogOutline(event, page = {}) {
     `${event.title} فعالية منشورة من ${provider} ضمن كتالوج EventLive.`
   );
   const imageUrl = highResImage(page.image || event.image_url || '');
-  const method = page.ok ? 'official-page-meta' : (url ? 'approved-source-row' : 'eventlive-internal-seed');
+  const method = page.source_method || (page.ok ? 'official-page-meta' : (url ? 'approved-source-row' : 'eventlive-internal-seed'));
 
   event.description = event.description || officialDescription;
   event.rich_summary = event.rich_summary || officialDescription;
@@ -228,7 +228,9 @@ function applyBacklogOutline(event, page = {}) {
       city: cleanText(event.city || ''),
       venue: cleanText(event.venue || ''),
       category: cleanText(event.category || ''),
-      live_schedule_status: 'Event-level source only; no timed session agenda was extracted.'
+      live_schedule_status: Number(event.sessions_count || 0) > 0
+        ? `${Number(event.sessions_count)} official timed sessions were extracted from the official source.`
+        : 'Event-level source only; no timed session agenda was extracted.'
     }).filter(([, value]) => value))
   };
   event.live_schedule_ready = Boolean(event.live_schedule_ready && Number(event.sessions_count || 0) > 0);
@@ -251,7 +253,14 @@ for (let offset = 0; offset < targets.length; offset += concurrency) {
   const batch = targets.slice(offset, offset + concurrency);
   const results = await Promise.all(batch.map(async (event) => {
     const url = sourceUrl(event);
-    const page = await fetchPageMeta(url);
+    const page = event.source_label === 'Ithra Events'
+      ? {
+        ok: true,
+        description: event.rich_summary || event.description || event.summary,
+        image: event.image_url || '',
+        source_method: 'official-public-algolia-index'
+      }
+      : await fetchPageMeta(url);
     applyBacklogOutline(event, page);
     return {
       row: {

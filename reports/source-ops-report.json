@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T09:13:20.207Z",
+  "generated_at": "2026-07-10T10:11:22.094Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,17 +11,17 @@
   },
   "collection": {
     "basis": "source_collection_report",
-    "collected_at": "2026-07-10T09:08:43.544Z",
+    "collected_at": "2026-07-10T10:04:43.964Z",
     "freshness": "fresh",
-    "discovered": 263,
-    "written": 273
+    "discovered": 392,
+    "written": 402
   },
   "sources": {
     "total": 81,
     "attempted": 41,
     "collection_coverage_pct": 51,
-    "healthy": 28,
-    "zero_yield": 13,
+    "healthy": 29,
+    "zero_yield": 12,
     "errors": 0,
     "not_collected": 40,
     "unattempted_high_priority": 3,
@@ -228,10 +228,10 @@
         "id": "ithra-events",
         "name": "Ithra Events",
         "priority": 23,
-        "status": "zero-yield",
-        "extracted": 0,
-        "candidates": 0,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "status": "healthy",
+        "extracted": 129,
+        "candidates": 129,
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "saudi-digital-academy",
@@ -758,27 +758,27 @@
     ]
   },
   "queue": {
-    "total": 261,
+    "total": 390,
     "ready_for_review": 0,
     "approved_for_catalog": 0,
-    "published_from_candidates": 242,
+    "published_from_candidates": 371,
     "actionable": 0,
     "stale_unpublished": 0,
     "duplicate_risk": 0,
     "needs_extraction": 0,
     "needs_evidence": 18,
     "by_review_status": {
-      "approved-for-catalog": 242,
+      "approved-for-catalog": 371,
       "evidence-captured": 4,
       "new": 15
     },
     "by_publication_gate": {
-      "catalog-review": 242,
+      "catalog-review": 371,
       "duplicate-review": 1,
       "source-evidence": 18
     },
     "by_confidence": {
-      "official": 229,
+      "official": 358,
       "public-listing": 6,
       "unverified": 15,
       "verified-secondary": 11
@@ -803,6 +803,7 @@
       "Saudi Universities and Technical Colleges": 6,
       "Jouf University Summer Programs": 1,
       "MDLBEAST Events": 5,
+      "Ithra Events": 129,
       "Eventbrite Saudi Arabia": 15,
       "Future Skills MCIT Catalogue": 4,
       "Qassim University Events": 1,

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Trivia Night - Earth Quest: Tic-Tac-Know | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-trivia-night-earth-quest-tic-tac-know@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260730T130000Z
+DTEND:20260828T190000Z
+SUMMARY:Trivia Night - Earth Quest: Tic-Tac-Know
+DESCRIPTION:Join us with your family and friends for trivia night at the Energy Exhibit\, where you can play in friendly rounds and put your general knowledge to the test! Every journey starts with one step... A quick adventure through time\, where ancient rocks tell the Earth's story in a deep\, silent voice. Choose your card\, accept the challenge and let the stones reveal their secrets.
+LOCATION:Energy Exhibit
+URL:https://eventme.live/events/event-trivia-night-earth-quest-tic-tac-know.html
+END:VEVENT
+END:VCALENDAR

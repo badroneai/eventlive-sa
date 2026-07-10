@@ -2019,6 +2019,9 @@ async function extractMonshaatInternalEvents(source) {
 }
 
 function extractIthraEvents(html, source) {
+  if (String(html || '').trim().startsWith('{')) {
+    return extractIthraAlgoliaEvents(html, source);
+  }
   const items = [];
   const seen = new Set();
   const blocks = [
@@ -2056,6 +2059,114 @@ function extractIthraEvents(html, source) {
     });
   }
   return items;
+}
+
+function saudiDateTimeFromEpoch(value) {
+  const epochSeconds = Number(value);
+  if (!Number.isFinite(epochSeconds) || epochSeconds <= 0) return '';
+  return `${new Date((epochSeconds * 1000) + (3 * 60 * 60 * 1000)).toISOString().slice(0, 19)}+03:00`;
+}
+
+function ithraSessionsFromHit(hit = {}) {
+  const starts = Array.isArray(hit.start_timestamp) ? hit.start_timestamp : [];
+  const ends = Array.isArray(hit.end_timestamp) ? hit.end_timestamp : [];
+  const calendar = Array.isArray(hit.website_calendar_json) ? hit.website_calendar_json : [];
+  const venue = [hit.location, hit.venue].map((value) => stripTags(value || '')).filter(Boolean).join(' - ') || 'Ithra';
+  const seen = new Set();
+  return starts.map((start, index) => {
+    const startsAt = saudiDateTimeFromEpoch(start);
+    const endsAt = saudiDateTimeFromEpoch(ends[index]);
+    if (!startsAt || !endsAt || Date.parse(endsAt) <= Date.parse(startsAt)) return null;
+    const key = `${startsAt}|${endsAt}`;
+    if (seen.has(key)) return null;
+    seen.add(key);
+    const row = calendar[index] || {};
+    const title = cleanTitle(row.title || hit.title || 'Ithra program session');
+    return {
+      id: `ithra-${hit.id || hit.objectID}-${String(startsAt).slice(0, 16).replace(/[^0-9]/g, '')}-${toSlug(title)}`,
+      title,
+      starts_at: startsAt,
+      ends_at: endsAt,
+      session_type: 'official-program-session',
+      track: 'Ithra',
+      room: venue,
+      source_url: row.pageLink || hit.url
+    };
+  }).filter(Boolean).sort((a, b) => a.starts_at.localeCompare(b.starts_at));
+}
+
+function extractIthraAlgoliaEvents(payload, source) {
+  let parsed;
+  try { parsed = JSON.parse(payload); } catch { return []; }
+  const hits = Array.isArray(parsed?.hits) ? parsed.hits : [];
+  const seen = new Set();
+  return hits.map((hit) => {
+    if (hit.locale && hit.locale !== 'en') return null;
+    if (hit.exclude_from_listing || hit.exclude_from_pagelist || hit.is_cancelled) return null;
+    const title = cleanTitle(hit.title || '');
+    const url = resolveUrl(hit.url || '', source.url);
+    const sessions = ithraSessionsFromHit(hit);
+    const activeSessions = sessions.filter((session) => Date.parse(session.ends_at) >= now.getTime());
+    const eventWindowSessions = activeSessions.length ? activeSessions : sessions;
+    const startsAt = eventWindowSessions[0]?.starts_at || saudiDateTimeFromEpoch(hit.start_date || hit.timestamp);
+    const endsAt = eventWindowSessions.at(-1)?.ends_at || saudiDateTimeFromEpoch(hit.end_date || hit.start_date || hit.timestamp);
+    if (!title || !url || !startsAt || !endsAt || Date.parse(endsAt) <= Date.parse(startsAt)) return null;
+    const key = `${url}|${startsAt}`;
+    if (seen.has(key)) return null;
+    seen.add(key);
+    const website = hit.website_json || {};
+    const venue = stripTags(website.location || [hit.location, hit.venue].filter(Boolean).join(' - ')) || 'Ithra';
+    const imageUrl = [
+      ...(Array.isArray(hit.only_image_url) ? hit.only_image_url : []),
+      ...(Array.isArray(hit.image_url) ? hit.image_url : []),
+      hit.thumbnail
+    ].find((value) => isUsefulImageUrl(value || '')) || '';
+    const description = stripTags(hit.description || hit.short_description || hit.index_content || '');
+    const price = hit.ticket_price === 'free' || /free/i.test(String(hit.ticket_price || ''))
+      ? 'free'
+      : Number(hit.ticket_price) > 0 ? `${Number(hit.ticket_price)} SAR` : priceLabelFromText(website.button_text || '');
+    const registrationUrl = resolveUrl(hit.ticket_link || hit.registration_link || '', url);
+    const category = inferIthraCategory(title, `${description} ${(hit.tags || []).map((tag) => tag?.label || tag?.key || '').join(' ')}`);
+    return {
+      title,
+      url,
+      organizer: source.owner,
+      summary: description.slice(0, 700) || `برنامج رسمي من مركز إثراء في الظهران.`,
+      rich_summary: description.slice(0, 700),
+      city: 'Dhahran',
+      venue,
+      category,
+      raw_date_text: [website.date, website.time].filter(Boolean).join(' - '),
+      starts_at: startsAt,
+      ends_at: endsAt,
+      ...(imageUrl ? { image_url: imageUrl, image_alt: title, image_source_url: url } : {}),
+      ...(registrationUrl ? { registration_url: registrationUrl } : {}),
+      ...(price ? { price_label: price } : {}),
+      language: stripTags(website.language || hit.program_language || 'en'),
+      attendance_mode: website.is_zoom ? 'online' : 'in-person',
+      ...(sessions.length ? { sessions } : {}),
+      age_policy: stripTags(website.age || hit.programme_age || ''),
+      confidence: 'official',
+      review_status: 'ready-for-review',
+      publication_gate: 'human-review',
+      verification_method: 'official-public-algolia-index',
+      date_precision: 'explicit-range',
+      time_precision: 'exact',
+      tags: [...new Set(['Ithra', ...(hit.filter_tags || []), ...(hit.tags || []).map((tag) => tag?.key || tag?.label).filter(Boolean)])],
+      richness_score: calculateRichnessScore({
+        title,
+        summary: description,
+        city: 'Dhahran',
+        venue,
+        category,
+        image_url: imageUrl,
+        registration_url: registrationUrl,
+        attendance_mode: website.is_zoom ? 'online' : 'in-person',
+        language: website.language || hit.program_language,
+        sessions
+      })
+    };
+  }).filter(Boolean).sort((a, b) => a.starts_at.localeCompare(b.starts_at) || a.title.localeCompare(b.title));
 }
 
 function inferIthraCategory(title = '', html = '') {
@@ -4770,6 +4881,12 @@ function candidateMergeKey(candidate) {
   ].join('|');
 }
 
+function refreshableCandidateIdentity(candidate = {}) {
+  const url = normalizeCandidateKeyValue(candidate.source_url);
+  if (!url || /\.pdf(?:$|[?#])|\/documents?\//i.test(url)) return '';
+  return `${normalizeCandidateKeyValue(candidate.source_label)}|${url}`;
+}
+
 function endedStableMergeKey(candidate) {
   const title = normalizeCandidateKeyValue(candidate.title);
   const city = normalizeCandidateKeyValue(candidate.city);
@@ -4783,6 +4900,17 @@ function endedStableMergeKey(candidate) {
 function mergeCandidates(existing, discovered, refreshedSourceLabels = new Set()) {
   const byKey = new Map();
   const discoveredKeys = new Set(discovered.map((candidate) => candidateMergeKey(candidate)));
+  const existingByIdentity = new Map(existing
+    .map((candidate) => [refreshableCandidateIdentity(candidate), candidate])
+    .filter(([identity]) => identity));
+  const discoveredIdentityCounts = discovered.reduce((counts, candidate) => {
+    const identity = refreshableCandidateIdentity(candidate);
+    if (identity) counts.set(identity, (counts.get(identity) || 0) + 1);
+    return counts;
+  }, new Map());
+  const uniqueDiscoveredIdentities = new Set([...discoveredIdentityCounts]
+    .filter(([, count]) => count === 1)
+    .map(([identity]) => identity));
   const strongerDiscoveredUrls = new Set(discovered
     .filter((candidate) => candidate.source_url && !String(candidate.title || '').startsWith('Application deadline:'))
     .filter((candidate) => candidate.publication_gate !== 'source-evidence')
@@ -4792,6 +4920,8 @@ function mergeCandidates(existing, discovered, refreshedSourceLabels = new Set()
     .filter((candidate) => !isSeedCandidate(candidate) && !isPastCandidate(candidate))
     .filter((candidate) => {
       if (!refreshedSourceLabels.has(candidate.source_label)) return true;
+      const identity = refreshableCandidateIdentity(candidate);
+      if (identity && uniqueDiscoveredIdentities.has(identity)) return discoveredKeys.has(candidateMergeKey(candidate));
       if (candidate.review_status === 'approved-for-catalog' && candidate.matched_catalog_event_id) return true;
       return discoveredKeys.has(candidateMergeKey(candidate));
     })
@@ -4805,7 +4935,10 @@ function mergeCandidates(existing, discovered, refreshedSourceLabels = new Set()
   }
   for (const candidate of discovered.filter(hasValidCandidateDates).filter((candidate) => !isPastCandidate(candidate))) {
     const key = candidateMergeKey(candidate);
-    byKey.set(key, mergeCandidateRecord(byKey.get(key), candidate));
+    const identity = refreshableCandidateIdentity(candidate);
+    const previous = byKey.get(key)
+      || (identity && uniqueDiscoveredIdentities.has(identity) ? existingByIdentity.get(identity) : null);
+    byKey.set(key, mergeCandidateRecord(previous, candidate));
   }
   return [...byKey.values()].sort((a, b) => new Date(a.starts_at).getTime() - new Date(b.starts_at).getTime());
 }
@@ -4937,6 +5070,13 @@ async function fetchHtml(source) {
     headers['sec-fetch-site'] = 'same-origin';
     options.body = JSON.stringify(source.collector_body || {});
   }
+  if (source.id === 'ithra-events') {
+    headers['x-algolia-application-id'] = 'ZJVUTJO7VX';
+    headers['x-algolia-api-key'] = '508b60706403a2a3f4e7642ebbeaa2fd';
+    headers.origin = 'https://www.ithra.com';
+    headers.referer = 'https://www.ithra.com/en/programme/2026';
+    headers['sec-fetch-site'] = 'cross-site';
+  }
   if (source.fetch_method === 'pdf-calendar') {
     let lastPdfError;
     for (const candidateUrl of targets) {
@@ -5046,6 +5186,7 @@ async function fetchBrowserRenderedHtml(source, waitMs = 4500) {
 
 function snapshotExtensionFor(source) {
   if (source.fetch_method === 'pdf-calendar') return 'xml';
+  if (/json|api/i.test(source.fetch_method || '') || source.collector_method === 'POST') return 'json';
   const target = source.collector_url || source.url || '';
   return /\/api\/|api\.|\.json(?:$|\?)/i.test(target) ? 'json' : 'html';
 }
@@ -5290,6 +5431,7 @@ export {
   loadSourceExtraction,
   isPastCandidate,
   mergeEndedEvents,
+  mergeCandidates,
   parseAlulaDateRange,
   parseQassimUniversityEvents,
   parseJoufUniversitySummerProgram,

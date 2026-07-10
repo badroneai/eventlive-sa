@@ -1,5 +1,5 @@
 # EventLive Site Visual Sweep
-- Generated at: 2026-07-10T09:03:11.276Z
+- Generated at: 2026-07-10T10:14:28.789Z
 - Status: PASS
 - Pages: 41
 - Viewports: 2
@@ -26,12 +26,12 @@
 | /screen.html | mobile | PASS | 0 | 2 | output/playwright/visual-sweep/screen-mobile.png (full-page) |
 | /activation.html | desktop | PASS | 0 | 4 | output/playwright/visual-sweep/activation-desktop.png (viewport) |
 | /activation.html | mobile | PASS | 0 | 4 | output/playwright/visual-sweep/activation-mobile.png (viewport) |
-| /print.html?event=event-beast-house | desktop | PASS | 1 | 2 | output/playwright/visual-sweep/print-desktop.png (full-page) |
-| /print.html?event=event-beast-house | mobile | PASS | 1 | 2 | output/playwright/visual-sweep/print-mobile.png (full-page) |
-| /share.html?event=event-beast-house | desktop | PASS | 2 | 2 | output/playwright/visual-sweep/share-desktop.png (full-page) |
-| /share.html?event=event-beast-house | mobile | PASS | 2 | 2 | output/playwright/visual-sweep/share-mobile.png (full-page) |
-| /signage.html?event=event-beast-house | desktop | PASS | 1 | 2 | output/playwright/visual-sweep/signage-desktop.png (full-page) |
-| /signage.html?event=event-beast-house | mobile | PASS | 1 | 2 | output/playwright/visual-sweep/signage-mobile.png (full-page) |
+| /print.html?event=event-build-play-together | desktop | PASS | 1 | 2 | output/playwright/visual-sweep/print-desktop.png (full-page) |
+| /print.html?event=event-build-play-together | mobile | PASS | 1 | 2 | output/playwright/visual-sweep/print-mobile.png (full-page) |
+| /share.html?event=event-build-play-together | desktop | PASS | 2 | 2 | output/playwright/visual-sweep/share-desktop.png (full-page) |
+| /share.html?event=event-build-play-together | mobile | PASS | 2 | 2 | output/playwright/visual-sweep/share-mobile.png (full-page) |
+| /signage.html?event=event-build-play-together | desktop | PASS | 1 | 2 | output/playwright/visual-sweep/signage-desktop.png (full-page) |
+| /signage.html?event=event-build-play-together | mobile | PASS | 1 | 2 | output/playwright/visual-sweep/signage-mobile.png (full-page) |
 | /this-week.html | desktop | PASS | 18 | 3 | output/playwright/visual-sweep/this-week-desktop.png (viewport) |
 | /this-week.html | mobile | PASS | 18 | 3 | output/playwright/visual-sweep/this-week-mobile.png (viewport) |
 | /this-month.html | desktop | PASS | 18 | 3 | output/playwright/visual-sweep/this-month-desktop.png (viewport) |
@@ -88,5 +88,5 @@
 | /cities/riyadh.html | mobile | PASS | 18 | 3 | output/playwright/visual-sweep/riyadh-city-mobile.png (viewport) |
 | /categories/technology-training.html | desktop | PASS | 18 | 3 | output/playwright/visual-sweep/technology-category-desktop.png (viewport) |
 | /categories/technology-training.html | mobile | PASS | 18 | 3 | output/playwright/visual-sweep/technology-category-mobile.png (viewport) |
-| /events/event-beast-house.html | desktop | PASS | 1 | 5 | output/playwright/visual-sweep/representative-event-desktop.png (full-page) |
-| /events/event-beast-house.html | mobile | PASS | 1 | 5 | output/playwright/visual-sweep/representative-event-mobile.png (full-page) |
+| /events/event-build-play-together.html | desktop | PASS | 1 | 5 | output/playwright/visual-sweep/representative-event-desktop.png (full-page) |
+| /events/event-build-play-together.html | mobile | PASS | 1 | 5 | output/playwright/visual-sweep/representative-event-mobile.png (viewport) |

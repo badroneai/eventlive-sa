@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:My Family Bouquet | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-my-family-bouquet@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260710T130000Z
+DTEND:20260725T200000Z
+SUMMARY:My Family Bouquet
+DESCRIPTION:A bouquet grows\, one flower at a time. In this hands-on workshop\, children begin with simple shapes and watch them take form as each piece is rolled\, combined\, and built into a flower. Colors are chosen\, details are added\, and the process repeats\, each new bloom adding to the whole. As the bouquet comes together\, each flower stands for someone at home\, gathered into one arrangement shaped through making and choice.
+LOCATION:Plaza
+URL:https://eventme.live/events/event-my-family-bouquet.html
+END:VEVENT
+END:VCALENDAR

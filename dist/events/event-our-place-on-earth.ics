@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Our Place on Earth | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-our-place-on-earth@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260710T130000Z
+DTEND:20260725T180000Z
+SUMMARY:Our Place on Earth
+DESCRIPTION:A house in the desert is not built like one by the sea\, and for good reason. In this experience\, children explore how homes respond to their environments\, from heat to movement to moisture. This leads into building and testing simple structures\, adjusting them to stand against different conditions.
+LOCATION:Energy Exhibit
+URL:https://eventme.live/events/event-our-place-on-earth.html
+END:VEVENT
+END:VCALENDAR

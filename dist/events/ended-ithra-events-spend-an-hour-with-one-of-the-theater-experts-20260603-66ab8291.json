@@ -1,0 +1,120 @@
+{
+  "id": "ended-ithra-events-spend-an-hour-with-one-of-the-theater-experts-20260603-66ab8291",
+  "title": "Spend an hour with one of the theater experts",
+  "summary": "Get the chance to spend an hour with a theater expert to discuss variety of theater related subjects such as, production and design, lighting, sound, programing cultural events and marketing for theater. For June, meet Andrew Cummins production manager, and learn all there is to know about the role the production and design can play in theatrical performance.",
+  "canonical_url": "https://eventme.live/events/ended-ithra-events-spend-an-hour-with-one-of-the-theater-experts-20260603-66ab8291.html",
+  "detail_url": "./events/ended-ithra-events-spend-an-hour-with-one-of-the-theater-experts-20260603-66ab8291.html",
+  "calendar_url": "./events/ended-ithra-events-spend-an-hour-with-one-of-the-theater-experts-20260603-66ab8291.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/ithra-theater-society/hour-ithra-theatre-expert",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/ithra-theater-society/hour-ithra-theatre-expert",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verification_method": "official-public-algolia-index",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Theater",
+  "venue_address": "Theater",
+  "starts_at": "2026-06-03T19:00:00+03:00",
+  "ends_at": "2026-06-03T20:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": false,
+  "official_sessions_count": 1,
+  "schedule_depth": "official-single-session",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/spend-an-hour-with-one-of-the-theater-experts-0272b93b0a.jpg",
+  "image_alt": "Spend an hour with one of the theater experts",
+  "category": "جامعات ومجتمع",
+  "category_url": "./categories/education-community.html",
+  "audiences": [
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Spend an hour with one of the theater experts",
+    "جامعات ومجتمع",
+    "performance",
+    "فعالية",
+    "منتهية",
+    "الظهران",
+    "Theater",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Ithra Theater Society",
+    "Panel Discussions",
+    "ended-event",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Spend an hour with one of the theater experts",
+      "starts_at": "2026-06-03T19:00:00+03:00",
+      "ends_at": "2026-06-03T20:00:00+03:00",
+      "room": "Theater",
+      "anchor": "#session-ithra-17504-202606031900-spend-an-hour-with-one-of-the-theater-experts"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Spend an hour with one of the theater experts",
+    "startDate": "2026-06-03T19:00:00+03:00",
+    "endDate": "2026-06-03T20:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Theater",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Theater",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/spend-an-hour-with-one-of-the-theater-experts-0272b93b0a.jpg"
+    ],
+    "description": "Get the chance to spend an hour with a theater expert to discuss variety of theater related subjects such as, production and design, lighting, sound, programing cultural events and marketing for theater. For June, meet Andrew Cummins production manager, and learn all there is to know about the role the production and design can play in theatrical performance.",
+    "url": "https://eventme.live/events/ended-ithra-events-spend-an-hour-with-one-of-the-theater-experts-20260603-66ab8291.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-spend-an-hour-with-one-of-the-theater-experts-20260603-66ab8291.html",
+    "isAccessibleForFree": true,
+    "keywords": "Spend an hour with one of the theater experts, جامعات ومجتمع, performance, فعالية, منتهية, الظهران, Theater, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Ithra Theater Society, Panel Discussions, ended-event, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/ithra-theater-society/hour-ithra-theatre-expert"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/ithra-theater-society/hour-ithra-theatre-expert",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Zoom In | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-zoom-in@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260710T130000Z
+DTEND:20260725T180000Z
+SUMMARY:Zoom In
+DESCRIPTION:A tiny fragment holds the clue. In this Praise of the Artisan treasure hunt\, children begin with a zoomed-in detail taken from a larger artwork\, a pattern\, texture\, or small visual hint. Moving through the space\, they search for the full piece\, matching what they see up close with what appears on the walls. As the search unfolds\, attention shifts to details that are often overlooked\, building observation skills through careful looking. Each match reveals the complete artwork behind the fragment.
+LOCATION:Museum - Gallery 3
+URL:https://eventme.live/events/event-zoom-in.html
+END:VEVENT
+END:VCALENDAR

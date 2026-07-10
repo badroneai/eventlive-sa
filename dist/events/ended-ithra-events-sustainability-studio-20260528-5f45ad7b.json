@@ -1,0 +1,149 @@
+{
+  "id": "ended-ithra-events-sustainability-studio-20260528-5f45ad7b",
+  "title": "Sustainability Studio",
+  "summary": "Enjoy a hands-on experience by printing on plates made from paper. Participants will try their hand at printing, decorate the plate pieces, and take home their hand-painted creations. This workshop celebrates sustainability, offering visitors a unique and immersive way to creativity and Sustainability.",
+  "canonical_url": "https://eventme.live/events/ended-ithra-events-sustainability-studio-20260528-5f45ad7b.html",
+  "detail_url": "./events/ended-ithra-events-sustainability-studio-20260528-5f45ad7b.html",
+  "calendar_url": "./events/ended-ithra-events-sustainability-studio-20260528-5f45ad7b.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/eid-aladha/sustainability-studio",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/eid-aladha/sustainability-studio",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verification_method": "official-public-algolia-index",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Lush Garden",
+  "venue_address": "Lush Garden",
+  "starts_at": "2026-05-28T16:00:00+03:00",
+  "ends_at": "2026-05-31T23:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 4,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/sustainability-studio-71ae293b21.jpg",
+  "image_alt": "Sustainability Studio",
+  "category": "جامعات ومجتمع",
+  "category_url": "./categories/education-community.html",
+  "audiences": [
+    {
+      "slug": "researchers",
+      "label": "باحثون وأكاديميون"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Sustainability Studio",
+    "جامعات ومجتمع",
+    "learning",
+    "فعالية",
+    "منتهية",
+    "الظهران",
+    "Lush Garden",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "Ithra",
+    "Activity",
+    "Eid AlAdha",
+    "ended-event",
+    "باحثون وأكاديميون",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Sustainability Studio",
+      "starts_at": "2026-05-28T16:00:00+03:00",
+      "ends_at": "2026-05-28T23:00:00+03:00",
+      "room": "Lush Garden",
+      "anchor": "#session-ithra-17947-202605281600-sustainability-studio"
+    },
+    {
+      "title": "Sustainability Studio",
+      "starts_at": "2026-05-29T16:00:00+03:00",
+      "ends_at": "2026-05-29T23:00:00+03:00",
+      "room": "Lush Garden",
+      "anchor": "#session-ithra-17947-202605291600-sustainability-studio"
+    },
+    {
+      "title": "Sustainability Studio",
+      "starts_at": "2026-05-30T16:00:00+03:00",
+      "ends_at": "2026-05-30T23:00:00+03:00",
+      "room": "Lush Garden",
+      "anchor": "#session-ithra-17947-202605301600-sustainability-studio"
+    },
+    {
+      "title": "Sustainability Studio",
+      "starts_at": "2026-05-31T16:00:00+03:00",
+      "ends_at": "2026-05-31T23:00:00+03:00",
+      "room": "Lush Garden",
+      "anchor": "#session-ithra-17947-202605311600-sustainability-studio"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Sustainability Studio",
+    "startDate": "2026-05-28T16:00:00+03:00",
+    "endDate": "2026-05-31T23:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Lush Garden",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Lush Garden",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/sustainability-studio-71ae293b21.jpg"
+    ],
+    "description": "Enjoy a hands-on experience by printing on plates made from paper. Participants will try their hand at printing, decorate the plate pieces, and take home their hand-painted creations. This workshop celebrates sustainability, offering visitors a unique and immersive way to creativity and Sustainability.",
+    "url": "https://eventme.live/events/ended-ithra-events-sustainability-studio-20260528-5f45ad7b.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-sustainability-studio-20260528-5f45ad7b.html",
+    "isAccessibleForFree": true,
+    "keywords": "Sustainability Studio, جامعات ومجتمع, learning, فعالية, منتهية, الظهران, Lush Garden, Ithra Events, culture, arts, creativity, community, exhibitions, Ithra, Activity, Eid AlAdha, ended-event, باحثون وأكاديميون, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "باحثون وأكاديميون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/eid-aladha/sustainability-studio"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/eid-aladha/sustainability-studio",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

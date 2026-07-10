@@ -1,0 +1,799 @@
+{
+  "id": "event-energy-lab",
+  "title": "Energy Lab",
+  "summary": "Join us in our Energy Lab, where your curious minds can expand and explore the wonders of scientific and engineering ideas! Here, you can conduct crazy experiments and share knowledge with like-minded friends.",
+  "canonical_url": "https://eventme.live/events/event-energy-lab.html",
+  "detail_url": "./events/event-energy-lab.html",
+  "calendar_url": "./events/event-energy-lab.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/energy-lab",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/energy-lab",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:08:07.323Z",
+  "verification_method": "registered-venue-official",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Energy Exhibit",
+  "venue_address": "Energy Exhibit",
+  "starts_at": "2026-07-27T16:00:00+03:00",
+  "ends_at": "2026-08-31T21:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 97,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/energy-lab-bae21e6134.jpg",
+  "image_alt": "Energy Lab",
+  "category": "ثقافة وفنون",
+  "category_url": "./categories/culture-arts.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Energy Lab",
+    "ثقافة وفنون",
+    "culture",
+    "برنامج ممتد",
+    "قادمة",
+    "الظهران",
+    "Energy Exhibit",
+    "Ithra Events",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Families",
+    "Learn",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-02T16:00:00+03:00",
+      "ends_at": "2026-04-02T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604021600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-03T16:00:00+03:00",
+      "ends_at": "2026-04-03T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604031600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-04T16:00:00+03:00",
+      "ends_at": "2026-04-04T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604041600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-06T16:00:00+03:00",
+      "ends_at": "2026-04-06T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604061600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-07T16:00:00+03:00",
+      "ends_at": "2026-04-07T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604071600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-08T16:00:00+03:00",
+      "ends_at": "2026-04-08T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604081600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-09T16:00:00+03:00",
+      "ends_at": "2026-04-09T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604091600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-10T16:00:00+03:00",
+      "ends_at": "2026-04-10T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604101600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-11T16:00:00+03:00",
+      "ends_at": "2026-04-11T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604111600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-13T16:00:00+03:00",
+      "ends_at": "2026-04-13T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604131600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-14T16:00:00+03:00",
+      "ends_at": "2026-04-14T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604141600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-15T16:00:00+03:00",
+      "ends_at": "2026-04-15T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604151600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-16T16:00:00+03:00",
+      "ends_at": "2026-04-16T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604161600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-17T16:00:00+03:00",
+      "ends_at": "2026-04-17T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604171600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-18T16:00:00+03:00",
+      "ends_at": "2026-04-18T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604181600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-20T16:00:00+03:00",
+      "ends_at": "2026-04-20T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604201600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-21T16:00:00+03:00",
+      "ends_at": "2026-04-21T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604211600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-22T16:00:00+03:00",
+      "ends_at": "2026-04-22T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604221600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-23T16:00:00+03:00",
+      "ends_at": "2026-04-23T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604231600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-24T16:00:00+03:00",
+      "ends_at": "2026-04-24T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604241600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-25T16:00:00+03:00",
+      "ends_at": "2026-04-25T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604251600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-27T16:00:00+03:00",
+      "ends_at": "2026-04-27T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604271600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-28T16:00:00+03:00",
+      "ends_at": "2026-04-28T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604281600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-29T16:00:00+03:00",
+      "ends_at": "2026-04-29T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604291600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-04-30T16:00:00+03:00",
+      "ends_at": "2026-04-30T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202604301600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-05-01T16:00:00+03:00",
+      "ends_at": "2026-05-01T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202605011600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-05-02T16:00:00+03:00",
+      "ends_at": "2026-05-02T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202605021600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-05-04T16:00:00+03:00",
+      "ends_at": "2026-05-04T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202605041600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-05-05T16:00:00+03:00",
+      "ends_at": "2026-05-05T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202605051600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-05-06T16:00:00+03:00",
+      "ends_at": "2026-05-06T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202605061600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-05-18T16:00:00+03:00",
+      "ends_at": "2026-05-18T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202605181600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-05-19T16:00:00+03:00",
+      "ends_at": "2026-05-19T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202605191600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-05-20T16:00:00+03:00",
+      "ends_at": "2026-05-20T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202605201600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-05-21T16:00:00+03:00",
+      "ends_at": "2026-05-21T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202605211600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-05-22T16:00:00+03:00",
+      "ends_at": "2026-05-22T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202605221600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-05-23T16:00:00+03:00",
+      "ends_at": "2026-05-23T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202605231600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-01T16:00:00+03:00",
+      "ends_at": "2026-06-01T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606011600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-02T16:00:00+03:00",
+      "ends_at": "2026-06-02T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606021600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-03T16:00:00+03:00",
+      "ends_at": "2026-06-03T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606031600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-04T16:00:00+03:00",
+      "ends_at": "2026-06-04T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606041600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-05T16:00:00+03:00",
+      "ends_at": "2026-06-05T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606051600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-06T16:00:00+03:00",
+      "ends_at": "2026-06-06T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606061600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-08T16:00:00+03:00",
+      "ends_at": "2026-06-08T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606081600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-09T16:00:00+03:00",
+      "ends_at": "2026-06-09T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606091600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-10T16:00:00+03:00",
+      "ends_at": "2026-06-10T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606101600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-11T16:00:00+03:00",
+      "ends_at": "2026-06-11T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606111600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-12T16:00:00+03:00",
+      "ends_at": "2026-06-12T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606121600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-13T16:00:00+03:00",
+      "ends_at": "2026-06-13T20:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606131600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-15T16:00:00+03:00",
+      "ends_at": "2026-06-15T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606151600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-16T16:00:00+03:00",
+      "ends_at": "2026-06-16T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606161600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-17T16:00:00+03:00",
+      "ends_at": "2026-06-17T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606171600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-18T16:00:00+03:00",
+      "ends_at": "2026-06-18T22:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606181600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-19T16:00:00+03:00",
+      "ends_at": "2026-06-19T22:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606191600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-20T16:00:00+03:00",
+      "ends_at": "2026-06-20T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606201600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-22T16:00:00+03:00",
+      "ends_at": "2026-06-22T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606221600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-23T16:00:00+03:00",
+      "ends_at": "2026-06-23T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606231600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-24T16:00:00+03:00",
+      "ends_at": "2026-06-24T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606241600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-25T16:00:00+03:00",
+      "ends_at": "2026-06-25T22:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606251600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-26T16:00:00+03:00",
+      "ends_at": "2026-06-26T22:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606261600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-27T16:00:00+03:00",
+      "ends_at": "2026-06-27T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606271600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-29T16:00:00+03:00",
+      "ends_at": "2026-06-29T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606291600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-06-30T16:00:00+03:00",
+      "ends_at": "2026-06-30T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202606301600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-07-01T16:00:00+03:00",
+      "ends_at": "2026-07-01T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202607011600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-07-02T16:00:00+03:00",
+      "ends_at": "2026-07-02T22:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202607021600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-07-03T16:00:00+03:00",
+      "ends_at": "2026-07-03T22:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202607031600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-07-04T16:00:00+03:00",
+      "ends_at": "2026-07-04T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202607041600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-07-27T16:00:00+03:00",
+      "ends_at": "2026-07-27T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202607271600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-07-28T16:00:00+03:00",
+      "ends_at": "2026-07-28T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202607281600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-07-29T16:00:00+03:00",
+      "ends_at": "2026-07-29T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202607291600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-07-30T16:00:00+03:00",
+      "ends_at": "2026-07-30T22:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202607301600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-07-31T16:00:00+03:00",
+      "ends_at": "2026-07-31T22:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202607311600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-01T16:00:00+03:00",
+      "ends_at": "2026-08-01T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608011600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-03T16:00:00+03:00",
+      "ends_at": "2026-08-03T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608031600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-04T16:00:00+03:00",
+      "ends_at": "2026-08-04T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608041600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-05T16:00:00+03:00",
+      "ends_at": "2026-08-05T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608051600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-06T16:00:00+03:00",
+      "ends_at": "2026-08-06T22:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608061600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-07T16:00:00+03:00",
+      "ends_at": "2026-08-07T22:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608071600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-08T16:00:00+03:00",
+      "ends_at": "2026-08-08T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608081600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-10T16:00:00+03:00",
+      "ends_at": "2026-08-10T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608101600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-11T16:00:00+03:00",
+      "ends_at": "2026-08-11T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608111600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-12T16:00:00+03:00",
+      "ends_at": "2026-08-12T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608121600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-13T16:00:00+03:00",
+      "ends_at": "2026-08-13T22:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608131600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-14T16:00:00+03:00",
+      "ends_at": "2026-08-14T22:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608141600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-15T16:00:00+03:00",
+      "ends_at": "2026-08-15T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608151600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-17T16:00:00+03:00",
+      "ends_at": "2026-08-17T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608171600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-18T16:00:00+03:00",
+      "ends_at": "2026-08-18T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608181600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-19T16:00:00+03:00",
+      "ends_at": "2026-08-19T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608191600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-20T16:00:00+03:00",
+      "ends_at": "2026-08-20T22:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608201600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-21T16:00:00+03:00",
+      "ends_at": "2026-08-21T22:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608211600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-22T16:00:00+03:00",
+      "ends_at": "2026-08-22T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608221600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-24T16:00:00+03:00",
+      "ends_at": "2026-08-24T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608241600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-25T16:00:00+03:00",
+      "ends_at": "2026-08-25T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608251600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-26T16:00:00+03:00",
+      "ends_at": "2026-08-26T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608261600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-27T16:00:00+03:00",
+      "ends_at": "2026-08-27T22:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608271600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-28T16:00:00+03:00",
+      "ends_at": "2026-08-28T22:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608281600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-29T16:00:00+03:00",
+      "ends_at": "2026-08-29T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608291600-energy-lab"
+    },
+    {
+      "title": "Energy Lab",
+      "starts_at": "2026-08-31T16:00:00+03:00",
+      "ends_at": "2026-08-31T21:00:00+03:00",
+      "room": "Energy Exhibit",
+      "anchor": "#session-ithra-2859-202608311600-energy-lab"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Energy Lab",
+    "startDate": "2026-07-27T16:00:00+03:00",
+    "endDate": "2026-08-31T21:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Energy Exhibit",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Energy Exhibit",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/energy-lab-bae21e6134.jpg"
+    ],
+    "description": "Join us in our Energy Lab, where your curious minds can expand and explore the wonders of scientific and engineering ideas! Here, you can conduct crazy experiments and share knowledge with like-minded friends.",
+    "url": "https://eventme.live/events/event-energy-lab.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-energy-lab.html",
+    "isAccessibleForFree": true,
+    "keywords": "Energy Lab, ثقافة وفنون, culture, برنامج ممتد, قادمة, الظهران, Energy Exhibit, Ithra Events, arts, creativity, community, exhibitions, learning, Ithra, Families, Learn, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/energy-lab"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/energy-lab",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

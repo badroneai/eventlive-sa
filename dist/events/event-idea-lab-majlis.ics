@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Idea Lab Majlis | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-idea-lab-majlis@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260727T150000Z
+DTEND:20260831T170000Z
+SUMMARY:Idea Lab Majlis
+DESCRIPTION:Join us at our monthly Idea Lab Societies gathering\, a collaborative space for design professionals\, practitioners and enthusiasts. Engage with peers from various disciplines for an evening of inspiration\, brainstorming\, and insightful discussions. We invite you to share your creative perspectives and explore new possibilities!
+LOCATION:Ithra Tower - Level 5
+URL:https://eventme.live/events/event-idea-lab-majlis.html
+END:VEVENT
+END:VCALENDAR

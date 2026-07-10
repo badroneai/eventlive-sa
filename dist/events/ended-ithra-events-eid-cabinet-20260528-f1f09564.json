@@ -1,0 +1,150 @@
+{
+  "id": "ended-ithra-events-eid-cabinet-20260528-f1f09564",
+  "title": "Eid Cabinet",
+  "summary": "An interactive experience filled with joy and wonder! What if we traveled around the world to see how people celebrate Eid? And how can we design a unique outfit that reflects joy from different parts of the world? In this colorful journey, you will explore Eid outfits from diverse cultures and create your own designs using fun techniques and creative methods. Along the way, you will watch a short showcase celebrating the beauty of traditional attire and the customs of Eid Al-Adha. For every outfit tells a story, and every story carries a joy that lights up Eid.",
+  "canonical_url": "https://eventme.live/events/ended-ithra-events-eid-cabinet-20260528-f1f09564.html",
+  "detail_url": "./events/ended-ithra-events-eid-cabinet-20260528-f1f09564.html",
+  "calendar_url": "./events/ended-ithra-events-eid-cabinet-20260528-f1f09564.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/eid-aladha/eid-cabinet",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/eid-aladha/eid-cabinet",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verification_method": "official-public-algolia-index",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Children's Museum - Children's Oasis",
+  "venue_address": "Children's Museum - Children's Oasis",
+  "starts_at": "2026-05-28T16:30:00+03:00",
+  "ends_at": "2026-05-31T23:15:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 4,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/eid-cabinet-77a9ae5ac1.jpg",
+  "image_alt": "Eid Cabinet",
+  "category": "ترفيه وعائلات",
+  "category_url": "./categories/entertainment-families.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Eid Cabinet",
+    "ترفيه وعائلات",
+    "family",
+    "فعالية",
+    "منتهية",
+    "الظهران",
+    "Children's Museum - Children's Oasis",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Children",
+    "Eid AlAdha",
+    "ended-event",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Eid Cabinet",
+      "starts_at": "2026-05-28T16:30:00+03:00",
+      "ends_at": "2026-05-28T23:15:00+03:00",
+      "room": "Children's Museum - Children's Oasis",
+      "anchor": "#session-ithra-17937-202605281630-eid-cabinet"
+    },
+    {
+      "title": "Eid Cabinet",
+      "starts_at": "2026-05-29T16:30:00+03:00",
+      "ends_at": "2026-05-29T23:15:00+03:00",
+      "room": "Children's Museum - Children's Oasis",
+      "anchor": "#session-ithra-17937-202605291630-eid-cabinet"
+    },
+    {
+      "title": "Eid Cabinet",
+      "starts_at": "2026-05-30T16:30:00+03:00",
+      "ends_at": "2026-05-30T23:15:00+03:00",
+      "room": "Children's Museum - Children's Oasis",
+      "anchor": "#session-ithra-17937-202605301630-eid-cabinet"
+    },
+    {
+      "title": "Eid Cabinet",
+      "starts_at": "2026-05-31T16:30:00+03:00",
+      "ends_at": "2026-05-31T23:15:00+03:00",
+      "room": "Children's Museum - Children's Oasis",
+      "anchor": "#session-ithra-17937-202605311630-eid-cabinet"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Eid Cabinet",
+    "startDate": "2026-05-28T16:30:00+03:00",
+    "endDate": "2026-05-31T23:15:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Children's Museum - Children's Oasis",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Children's Museum - Children's Oasis",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/eid-cabinet-77a9ae5ac1.jpg"
+    ],
+    "description": "An interactive experience filled with joy and wonder! What if we traveled around the world to see how people celebrate Eid? And how can we design a unique outfit that reflects joy from different parts of the world? In this colorful journey, you will explore Eid outfits from diverse cultures and create your own designs using fun techniques and creative methods. Along the way, you will watch a short showcase celebrating the beauty of traditional attire and the customs of Eid Al-Adha. For every outfit tells a story, and every story carries a joy that lights up Eid.",
+    "url": "https://eventme.live/events/ended-ithra-events-eid-cabinet-20260528-f1f09564.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-eid-cabinet-20260528-f1f09564.html",
+    "isAccessibleForFree": true,
+    "keywords": "Eid Cabinet, ترفيه وعائلات, family, فعالية, منتهية, الظهران, Children's Museum - Children's Oasis, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Children, Eid AlAdha, ended-event, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/eid-aladha/eid-cabinet"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/eid-aladha/eid-cabinet",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

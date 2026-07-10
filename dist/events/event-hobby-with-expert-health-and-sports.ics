@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Hobby with Expert: Health and Sports | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-hobby-with-expert-health-and-sports@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260727T160000Z
+DTEND:20260727T173000Z
+SUMMARY:Hobby with Expert: Health and Sports
+DESCRIPTION:In a world where health and sports intersect and opinions differ\, join us on a journey to separate fact from fiction and uncover the truth together.
+LOCATION:Library - Level 3
+URL:https://eventme.live/events/event-hobby-with-expert-health-and-sports.html
+END:VEVENT
+END:VCALENDAR

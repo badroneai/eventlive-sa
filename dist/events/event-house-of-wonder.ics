@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:House of Wonder | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-house-of-wonder@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260710T150000Z
+DTEND:20260725T173000Z
+SUMMARY:House of Wonder
+DESCRIPTION:Wonder House is an interactive experience full of surprises and fun activities\, taking children on a journey of discovery\, imagination\, and excitement.
+LOCATION:Children's Museum
+URL:https://eventme.live/events/event-house-of-wonder.html
+END:VEVENT
+END:VCALENDAR

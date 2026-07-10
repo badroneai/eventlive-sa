@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:The Art of Looking at Art | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-the-art-of-looking-at-art@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260915T133000Z
+DTEND:20260919T183000Z
+SUMMARY:The Art of Looking at Art
+DESCRIPTION:Whether you are new to art or want to deepen your knowledge and enjoyment\, the Art of Looking at Art welcomes everyone on a five-day introductory journey designed to deepen the way participants view\, understand\, and experience art. Through foundational learning\, exhibition visits\, reflective writing\, group critique\, discussions on Arab and global art\, and direct engagement with a practicing artist\, participants will develop a more confident\, personal\, and informed relationship with art. The course blends observation\, emotion\, cultural context\, and critical thinking\, guiding each participant toward discovering their own unique way of seeing. Course Objectives: Understanding foundational conce
+LOCATION:Ithra Tower - Level 9\, Classroom 2
+URL:https://eventme.live/events/event-the-art-of-looking-at-art.html
+END:VEVENT
+END:VCALENDAR

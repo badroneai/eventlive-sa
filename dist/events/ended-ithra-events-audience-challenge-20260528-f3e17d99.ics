@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Audience Challenge | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-ithra-events-audience-challenge-20260528-f3e17d99@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260528T133000Z
+DTEND:20260531T190000Z
+SUMMARY:Audience Challenge
+DESCRIPTION:Are you ready for a fun challenge? In this family game\, we celebrate Eid together in front of the screen\, competing as if we were live on air! Together\, we answer questions\, move through the points\, and enjoy the excitement of the competition.
+LOCATION:Library - Level 2
+URL:https://eventme.live/events/ended-ithra-events-audience-challenge-20260528-f3e17d99.html
+END:VEVENT
+END:VCALENDAR

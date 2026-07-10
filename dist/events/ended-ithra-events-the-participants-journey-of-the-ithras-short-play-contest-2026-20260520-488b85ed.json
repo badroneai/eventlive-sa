@@ -1,0 +1,119 @@
+{
+  "id": "ended-ithra-events-the-participants-journey-of-the-ithras-short-play-contest-2026-20260520-488b85ed",
+  "title": "The participants' journey of the Ithra’s Short Play Contest 2026",
+  "summary": "In this session, we will be discussing the participants' journey and the general rules of Ithra Short Play Contest 2026. Join us to prepare your team and learn more about the contest's 6th edition.",
+  "canonical_url": "https://eventme.live/events/ended-ithra-events-the-participants-journey-of-the-ithras-short-play-contest-2026-20260520-488b85ed.html",
+  "detail_url": "./events/ended-ithra-events-the-participants-journey-of-the-ithras-short-play-contest-2026-20260520-488b85ed.html",
+  "calendar_url": "./events/ended-ithra-events-the-participants-journey-of-the-ithras-short-play-contest-2026-20260520-488b85ed.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/participants-journey-ithras-short-play-contest-2026",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/participants-journey-ithras-short-play-contest-2026",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verification_method": "official-public-algolia-index",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Energy Exhibit - The Theater",
+  "venue_address": "Energy Exhibit - The Theater",
+  "starts_at": "2026-05-20T19:00:00+03:00",
+  "ends_at": "2026-05-20T20:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": false,
+  "official_sessions_count": 1,
+  "schedule_depth": "official-single-session",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/the-participants-journey-of-the-ithra-s-short-play-contest-2026-293d17e460.jpg",
+  "image_alt": "The participants' journey of the Ithra’s Short Play Contest 2026",
+  "category": "ثقافة وفنون",
+  "category_url": "./categories/culture-arts.html",
+  "audiences": [
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "The participants' journey of the Ithra’s Short Play Contest 2026",
+    "ثقافة وفنون",
+    "culture",
+    "فعالية",
+    "منتهية",
+    "الظهران",
+    "Energy Exhibit - The Theater",
+    "Ithra Events",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Ithra Theater Society",
+    "Panel Discussions",
+    "ended-event",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "The participants' journey of the Ithra’s Short Play Contest 2026",
+      "starts_at": "2026-05-20T19:00:00+03:00",
+      "ends_at": "2026-05-20T20:00:00+03:00",
+      "room": "Energy Exhibit - The Theater",
+      "anchor": "#session-ithra-17838-202605201900-the-participants-journey-of-the-ithras-short-play-contest-2026"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "The participants' journey of the Ithra’s Short Play Contest 2026",
+    "startDate": "2026-05-20T19:00:00+03:00",
+    "endDate": "2026-05-20T20:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Energy Exhibit - The Theater",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Energy Exhibit - The Theater",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/the-participants-journey-of-the-ithra-s-short-play-contest-2026-293d17e460.jpg"
+    ],
+    "description": "In this session, we will be discussing the participants' journey and the general rules of Ithra Short Play Contest 2026. Join us to prepare your team and learn more about the contest's 6th edition.",
+    "url": "https://eventme.live/events/ended-ithra-events-the-participants-journey-of-the-ithras-short-play-contest-2026-20260520-488b85ed.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-the-participants-journey-of-the-ithras-short-play-contest-2026-20260520-488b85ed.html",
+    "isAccessibleForFree": true,
+    "keywords": "The participants' journey of the Ithra’s Short Play Contest 2026, ثقافة وفنون, culture, فعالية, منتهية, الظهران, Energy Exhibit - The Theater, Ithra Events, arts, creativity, community, exhibitions, learning, Ithra, Ithra Theater Society, Panel Discussions, ended-event, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/participants-journey-ithras-short-play-contest-2026"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/participants-journey-ithras-short-play-contest-2026",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

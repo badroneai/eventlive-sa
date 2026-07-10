@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:1\, 2\, 3\, A Little Space for Me | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-1-2-3-a-little-space-for-me@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260710T130000Z
+DTEND:20260725T175000Z
+SUMMARY:1\, 2\, 3\, A Little Space for Me
+DESCRIPTION:Small spaces can hold big discoveries. Designed for children under three with their parents\, this environment is divided into three distinct zones: movement\, hands-on exploration\, and quiet play. Each area offers a different way to engage\, from active motion to focused interaction and calm building. The experience supports early development through movement\, touch\, and shared exploration.
+LOCATION:Plaza
+URL:https://eventme.live/events/event-1-2-3-a-little-space-for-me.html
+END:VEVENT
+END:VCALENDAR

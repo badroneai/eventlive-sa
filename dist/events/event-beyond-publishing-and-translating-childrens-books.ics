@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Beyond Publishing and Translating Children's Books | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-beyond-publishing-and-translating-childrens-books@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260722T150000Z
+DTEND:20260722T160000Z
+SUMMARY:Beyond Publishing and Translating Children's Books
+DESCRIPTION:This session addresses the journey of the children's book through publishing and translation\, and discusses how stories\, values\, and ideas are conveyed to children across multiple languages and cultures. In the session\, there is also a discussion of the role of publishers and translators in enriching cultural content directed at children.
+LOCATION:Library - Library - café
+URL:https://eventme.live/events/event-beyond-publishing-and-translating-childrens-books.html
+END:VEVENT
+END:VCALENDAR

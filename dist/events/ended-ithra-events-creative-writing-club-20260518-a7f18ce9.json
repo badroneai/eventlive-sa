@@ -1,0 +1,178 @@
+{
+  "id": "ended-ithra-events-creative-writing-club-20260518-a7f18ce9",
+  "title": "Creative Writing Club",
+  "summary": "The Creative Writing Club is a program designed for children and youth aged 10 to 17. It focuses on developing narrative writing skills in an enjoyable and motivating way. Participants will learn how to create characters, build storylines and transform ideas into lively stories. The club meets every Monday, providing a supportive environment that boosts confidence in expression and nurtures imaginative creativity. It&rsquo;s a wonderful opportunity to discover the joy of writing, develop storytelling and dialogue skills, and build imaginative worlds that reflect each participant&rsquo;s personality and ideas.",
+  "canonical_url": "https://eventme.live/events/ended-ithra-events-creative-writing-club-20260518-a7f18ce9.html",
+  "detail_url": "./events/ended-ithra-events-creative-writing-club-20260518-a7f18ce9.html",
+  "calendar_url": "./events/ended-ithra-events-creative-writing-club-20260518-a7f18ce9.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/creative-writing-club",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/creative-writing-club",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verification_method": "official-public-algolia-index",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Library - Level 2",
+  "venue_address": "Library - Level 2",
+  "starts_at": "2026-05-18T17:00:00+03:00",
+  "ends_at": "2026-06-29T19:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 7,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/creative-writing-club-211e3f3700.png",
+  "image_alt": "Creative Writing Club",
+  "category": "ترفيه وعائلات",
+  "category_url": "./categories/entertainment-families.html",
+  "audiences": [
+    {
+      "slug": "skilled-trades",
+      "label": "مهاريون وحرفيون"
+    },
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Creative Writing Club",
+    "ترفيه وعائلات",
+    "family",
+    "برنامج ممتد",
+    "منتهية",
+    "الظهران",
+    "Library - Level 2",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Activity",
+    "Library",
+    "ended-event",
+    "مهاريون وحرفيون",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Creative Writing Club",
+      "starts_at": "2026-05-18T17:00:00+03:00",
+      "ends_at": "2026-05-18T19:00:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-17076-202605181700-creative-writing-club"
+    },
+    {
+      "title": "Creative Writing Club",
+      "starts_at": "2026-05-25T17:00:00+03:00",
+      "ends_at": "2026-05-25T19:00:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-17076-202605251700-creative-writing-club"
+    },
+    {
+      "title": "Creative Writing Club",
+      "starts_at": "2026-06-01T17:00:00+03:00",
+      "ends_at": "2026-06-01T19:00:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-17076-202606011700-creative-writing-club"
+    },
+    {
+      "title": "Creative Writing Club",
+      "starts_at": "2026-06-08T17:00:00+03:00",
+      "ends_at": "2026-06-08T19:00:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-17076-202606081700-creative-writing-club"
+    },
+    {
+      "title": "Creative Writing Club",
+      "starts_at": "2026-06-15T17:00:00+03:00",
+      "ends_at": "2026-06-15T19:00:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-17076-202606151700-creative-writing-club"
+    },
+    {
+      "title": "Creative Writing Club",
+      "starts_at": "2026-06-22T17:00:00+03:00",
+      "ends_at": "2026-06-22T19:00:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-17076-202606221700-creative-writing-club"
+    },
+    {
+      "title": "Creative Writing Club",
+      "starts_at": "2026-06-29T17:00:00+03:00",
+      "ends_at": "2026-06-29T19:00:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-17076-202606291700-creative-writing-club"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Creative Writing Club",
+    "startDate": "2026-05-18T17:00:00+03:00",
+    "endDate": "2026-06-29T19:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Library - Level 2",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Library - Level 2",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/creative-writing-club-211e3f3700.png"
+    ],
+    "description": "The Creative Writing Club is a program designed for children and youth aged 10 to 17. It focuses on developing narrative writing skills in an enjoyable and motivating way. Participants will learn how to create characters, build storylines and transform ideas into lively stories. The club meets every Monday, providing a supportive environment that boosts confidence in expression and nurtures imaginative creativity. It&rsquo;s a wonderful opportunity to discover the joy of writing, develop storytelling and dialogue skills, and build imaginative worlds that reflect each participant&rsquo;s personality and ideas.",
+    "url": "https://eventme.live/events/ended-ithra-events-creative-writing-club-20260518-a7f18ce9.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-creative-writing-club-20260518-a7f18ce9.html",
+    "isAccessibleForFree": false,
+    "keywords": "Creative Writing Club, ترفيه وعائلات, family, برنامج ممتد, منتهية, الظهران, Library - Level 2, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Activity, Library, ended-event, مهاريون وحرفيون, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "مهاريون وحرفيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/creative-writing-club"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/creative-writing-club",
+      "availability": "https://schema.org/InStock",
+      "category": "450 SAR"
+    }
+  }
+}

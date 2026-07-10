@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-10T09:13:06.464Z",
+  "generated_at": "2026-07-10T10:10:45.542Z",
   "platform": "EventLive",
   "scope": "today-events",
   "window_hours": 72,
-  "count": 20,
+  "count": 61,
   "events": [
     {
       "id": "event-البرنامج-الصيفي-بجامعة-الجوف-2026",
@@ -46,6 +46,246 @@
       "live_schedule_ready": false
     },
     {
+      "id": "event-build-play-together",
+      "title": "Build & Play Together",
+      "url": "./events/event-build-play-together.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T09:00:00+03:00",
+      "ends_at": "2026-07-25T22:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-echoes-of-the-familiar",
+      "title": "Echoes of the Familiar",
+      "url": "./events/event-echoes-of-the-familiar.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T09:00:00+03:00",
+      "ends_at": "2026-09-30T23:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-tafasahu-make-room",
+      "title": "Tafasahu: Make Room",
+      "url": "./events/event-tafasahu-make-room.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T09:00:00+03:00",
+      "ends_at": "2027-03-20T22:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-leap-then-look",
+      "title": "Leap Then Look!",
+      "url": "./events/event-leap-then-look.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T10:00:00+03:00",
+      "ends_at": "2026-07-25T22:00:00+03:00",
+      "status": "ongoing",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-beaded-plant-suncatcher",
+      "title": "Beaded plant Suncatcher",
+      "url": "./events/event-beaded-plant-suncatcher.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T12:30:00+03:00",
+      "ends_at": "2026-07-11T14:30:00+03:00",
+      "status": "live",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-puppet-world",
+      "title": "Puppet World",
+      "url": "./events/event-puppet-world.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T14:30:00+03:00",
+      "ends_at": "2026-07-11T22:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-1-2-3-a-little-space-for-me",
+      "title": "1, 2, 3, A Little Space for Me",
+      "url": "./events/event-1-2-3-a-little-space-for-me.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-25T20:50:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-1-2-3-lets-rhyme",
+      "title": "1, 2, 3, Let's Rhyme!",
+      "url": "./events/event-1-2-3-lets-rhyme.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-08-22T11:30:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-a-home-i-imagine",
+      "title": "A Home I Imagine",
+      "url": "./events/event-a-home-i-imagine.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-25T23:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-ajeeb-in-wonder-house",
+      "title": "Ajeeb in Wonder House",
+      "url": "./events/event-ajeeb-in-wonder-house.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-25T21:30:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-around-the-table",
+      "title": "Around the Table",
+      "url": "./events/event-around-the-table.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-25T20:45:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-balloon-shapes-lab",
+      "title": "Balloon Shapes Lab",
+      "url": "./events/event-balloon-shapes-lab.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-25T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-built-by-nature",
+      "title": "Built by Nature",
+      "url": "./events/event-built-by-nature.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-25T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-childrens-caf",
+      "title": "Children's Café",
+      "url": "./events/event-childrens-caf.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-25T23:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-draw-your-story",
+      "title": "Draw Your Story",
+      "url": "./events/event-draw-your-story.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-25T22:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-hidden-home-bingo",
+      "title": "Hidden Home Bingo",
+      "url": "./events/event-hidden-home-bingo.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-25T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-insightful-spaces",
+      "title": "Insightful Spaces",
+      "url": "./events/event-insightful-spaces.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-25T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-interactive-exhibit",
+      "title": "Interactive Exhibit",
+      "url": "./events/event-interactive-exhibit.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-25T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-lets-decorate",
+      "title": "Let’s Decorate!",
+      "url": "./events/event-lets-decorate.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-25T22:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-mic-moments",
+      "title": "Mic Moments",
+      "url": "./events/event-mic-moments.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-25T22:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-mirror-or-window",
+      "title": "Mirror Or Window",
+      "url": "./events/event-mirror-or-window.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-25T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-my-family-bouquet",
+      "title": "My Family Bouquet",
+      "url": "./events/event-my-family-bouquet.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-25T23:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-our-place-on-earth",
+      "title": "Our Place on Earth",
+      "url": "./events/event-our-place-on-earth.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-25T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-painted-faces",
+      "title": "Painted Faces",
+      "url": "./events/event-painted-faces.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-25T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
       "id": "event-pfl-mena-fight-night",
       "title": "PFL MENA Fight Night",
       "url": "./events/event-pfl-mena-fight-night.html",
@@ -56,12 +296,162 @@
       "live_schedule_ready": false
     },
     {
+      "id": "event-treasures-in-every-home",
+      "title": "Treasures in Every Home",
+      "url": "./events/event-treasures-in-every-home.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-25T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-where-we-belong",
+      "title": "Where We Belong",
+      "url": "./events/event-where-we-belong.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-25T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-who-lived-here",
+      "title": "Who Lived Here?",
+      "url": "./events/event-who-lived-here.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-25T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-zoom-in",
+      "title": "Zoom In",
+      "url": "./events/event-zoom-in.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-25T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-in-the-home-of",
+      "title": "In the Home of…",
+      "url": "./events/event-in-the-home-of.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T16:30:00+03:00",
+      "ends_at": "2026-07-25T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-my-little-fort",
+      "title": "My Little Fort",
+      "url": "./events/event-my-little-fort.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T17:00:00+03:00",
+      "ends_at": "2026-07-25T21:30:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-my-neighbor-totoro",
+      "title": "My Neighbor Totoro",
+      "url": "./events/event-my-neighbor-totoro.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T17:00:00+03:00",
+      "ends_at": "2026-07-22T19:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-on-this-carpet",
+      "title": "On This Carpet",
+      "url": "./events/event-on-this-carpet.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T17:00:00+03:00",
+      "ends_at": "2026-07-25T21:45:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-sense-the-home",
+      "title": "Sense the Home",
+      "url": "./events/event-sense-the-home.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T17:00:00+03:00",
+      "ends_at": "2026-07-25T21:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-water-challenges",
+      "title": "Water Challenges",
+      "url": "./events/event-water-challenges.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T17:00:00+03:00",
+      "ends_at": "2026-07-31T22:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-the-house-of-ideas",
+      "title": "The House of Ideas",
+      "url": "./events/event-the-house-of-ideas.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T17:30:00+03:00",
+      "ends_at": "2026-07-25T20:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-house-of-wonder",
+      "title": "House of Wonder",
+      "url": "./events/event-house-of-wonder.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-10T18:00:00+03:00",
+      "ends_at": "2026-07-25T20:30:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
       "id": "event-beast-house",
       "title": "Beast House",
       "url": "./events/event-beast-house.html",
       "city": "الرياض",
       "starts_at": "2026-07-10T21:00:00+03:00",
       "ends_at": "2026-07-11T03:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-kindergarten-under-the-palm-tree-english",
+      "title": "Kindergarten Under the Palm Tree (English)",
+      "url": "./events/event-kindergarten-under-the-palm-tree-english.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-11T11:00:00+03:00",
+      "ends_at": "2026-07-25T11:30:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-unbox-your-story",
+      "title": "Unbox Your Story",
+      "url": "./events/event-unbox-your-story.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-11T12:00:00+03:00",
+      "ends_at": "2026-08-22T12:30:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
+      "id": "event-storyteller-of-the-day",
+      "title": "Storyteller of the Day",
+      "url": "./events/event-storyteller-of-the-day.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-11T17:00:00+03:00",
+      "ends_at": "2026-08-26T17:30:00+03:00",
       "status": "upcoming",
       "live_schedule_ready": true
     },
@@ -176,6 +566,16 @@
       "live_schedule_ready": false
     },
     {
+      "id": "event-night-at-ithra",
+      "title": "Night at Ithra",
+      "url": "./events/event-night-at-ithra.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-12T18:00:00+03:00",
+      "ends_at": "2026-07-26T22:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
+    },
+    {
       "id": "event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials",
       "title": "أساسيات الحوسبة السحابية - Cloud Computing Essentials",
       "url": "./events/event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials.html",
@@ -184,6 +584,16 @@
       "ends_at": "2026-07-15T18:00:00+03:00",
       "status": "upcoming",
       "live_schedule_ready": false
+    },
+    {
+      "id": "event-ithra-summer-camp-2026-a-world-of-homes",
+      "title": "Ithra Summer Camp 2026: A world of homes",
+      "url": "./events/event-ithra-summer-camp-2026-a-world-of-homes.html",
+      "city": "الظهران",
+      "starts_at": "2026-07-13T09:00:00+03:00",
+      "ends_at": "2026-08-06T19:00:00+03:00",
+      "status": "upcoming",
+      "live_schedule_ready": true
     },
     {
       "id": "event-samsung-innovation-campus-ai-program",

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Production Market | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-ithra-events-production-market-20260627-d0b641c3@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260627T090000Z
+DTEND:20260701T150000Z
+SUMMARY:Production Market
+DESCRIPTION:The production market is a vibrant platform that brings together filmmakers\, producers\, financiers and talents from Saudi Arabia and around the world. This market serves as an opportunity for exchanging ideas\, networking and marketing film projects\, where competing film projects are showcased alongside funding and co-production opportunities. This creative environment aims to enhance the film industry in Saudi Arabia and encourage interaction and collaboration among artists\, producers and investors in the cinema field.
+LOCATION:Plaza
+URL:https://eventme.live/events/ended-ithra-events-production-market-20260627-d0b641c3.html
+END:VEVENT
+END:VCALENDAR

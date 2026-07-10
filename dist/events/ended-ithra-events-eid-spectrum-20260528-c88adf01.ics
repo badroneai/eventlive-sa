@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Eid Spectrum | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-ithra-events-eid-spectrum-20260528-c88adf01@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260528T130000Z
+DTEND:20260530T200000Z
+SUMMARY:Eid Spectrum
+DESCRIPTION:Step into an interactive art and science experiment where energy\, color\, and emotion come alive. Using a magical powder that reacts to touch\, visitors will see how their body temperature transforms into vibrant colors\, revealing how heat turns into visible energy.
+LOCATION:Energy Exhibit
+URL:https://eventme.live/events/ended-ithra-events-eid-spectrum-20260528-c88adf01.html
+END:VEVENT
+END:VCALENDAR

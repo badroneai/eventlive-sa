@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Creative Character Design | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-creative-character-design@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260811T133000Z
+DTEND:20260815T183000Z
+SUMMARY:Creative Character Design
+DESCRIPTION:This course aims to provide the necessary knowledge to craft simplistic and flat characters that can be used for personal projects and client work. This course welcomes artists\, illustrators\, and graphic designers to create stylized character designs using Adobe Illustrator with a focus on keeping things simple\, expressive\, and intentional. This course will increase the skills of those who already obtain basic knowledge regarding Adobe Illustrator. Participants will learn how Al Refai&rsquo\;s methods regarding approaching character creation by exploring different ways to draw faces\, bodies\, proportions\, and poses. Moreover\, participants will play with various styles while covering the basics
+LOCATION:Ithra Tower - Level 8\, Classroom 2
+URL:https://eventme.live/events/event-creative-character-design.html
+END:VEVENT
+END:VCALENDAR

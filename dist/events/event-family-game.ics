@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Family Game | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-family-game@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260731T150000Z
+DTEND:20260828T153000Z
+SUMMARY:Family Game
+DESCRIPTION:Every month a new fun challenging and educational game for you and your family to play and spend unforgettable time together at Ithra library!
+LOCATION:Library - Level 2
+URL:https://eventme.live/events/event-family-game.html
+END:VEVENT
+END:VCALENDAR

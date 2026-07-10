@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:SWIM-R Mission | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-swim-r-mission@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260728T140000Z
+DTEND:20260831T160000Z
+SUMMARY:SWIM-R Mission
+DESCRIPTION:Are you up for a challenge? Join us at the Energy Exhibit and don&rsquo\;t miss the chance to program and code the robot to reach the end of the maze and accomplish the mission!
+LOCATION:Energy Exhibit
+URL:https://eventme.live/events/event-swim-r-mission.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,128 @@
+{
+  "id": "ended-ithra-events-irkalla-gilgameshs-dream-20260628-8b4c3fd6",
+  "title": "Irkalla: Gilgamesh's Dream",
+  "summary": "In a burning Baghdad, a diabetic street child escapes into a world of myth, seeking to resurrect his parents. As his friend is swept away by violence, Jam-Jam finds himself compelled to save him, drawing on the shadows of Gilgamesh and the winged bull, in a city that refuses to die. Mohamed Al-Daradji Mohamed Al-Daradji is an award-winning filmmaker known for socially engaging films. Born in Baghdad, he studied film and television at the Media Academy in the Netherlands before moving to the UK, where he earned two masters&rsquo; degrees in cinematography and directing from the Northern Film School in Leeds. He is the co-founder of Human Film, a UK-based production company with producer Isabe",
+  "canonical_url": "https://eventme.live/events/ended-ithra-events-irkalla-gilgameshs-dream-20260628-8b4c3fd6.html",
+  "detail_url": "./events/ended-ithra-events-irkalla-gilgameshs-dream-20260628-8b4c3fd6.html",
+  "calendar_url": "./events/ended-ithra-events-irkalla-gilgameshs-dream-20260628-8b4c3fd6.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/visit-ithra/attractions/cinema/saudi-film-festival-12/film-screenings/irkalla-gilgameshs-dream",
+  "evidence_url": "https://www.ithra.com/en/visit-ithra/attractions/cinema/saudi-film-festival-12/film-screenings/irkalla-gilgameshs-dream",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verification_method": "official-public-algolia-index",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Theater",
+  "venue_address": "Theater",
+  "starts_at": "2026-06-28T16:00:00+03:00",
+  "ends_at": "2026-06-28T18:10:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": false,
+  "official_sessions_count": 1,
+  "schedule_depth": "official-single-session",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/irkalla-gilgamesh-s-dream-1f44fffefe.jpg",
+  "image_alt": "Irkalla: Gilgamesh's Dream",
+  "category": "جوائز وتكريم",
+  "category_url": "./categories/awards-ceremonies.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Irkalla: Gilgamesh's Dream",
+    "جوائز وتكريم",
+    "performance",
+    "فعالية",
+    "منتهية",
+    "الظهران",
+    "Theater",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Saudi Film Festival",
+    "ended-event",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Irkalla: Gilgamesh's Dream",
+      "starts_at": "2026-06-28T16:00:00+03:00",
+      "ends_at": "2026-06-28T18:10:00+03:00",
+      "room": "Theater",
+      "anchor": "#session-ithra-18158-202606281600-irkalla-gilgameshs-dream"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Irkalla: Gilgamesh's Dream",
+    "startDate": "2026-06-28T16:00:00+03:00",
+    "endDate": "2026-06-28T18:10:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Theater",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Theater",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/irkalla-gilgamesh-s-dream-1f44fffefe.jpg"
+    ],
+    "description": "In a burning Baghdad, a diabetic street child escapes into a world of myth, seeking to resurrect his parents. As his friend is swept away by violence, Jam-Jam finds himself compelled to save him, drawing on the shadows of Gilgamesh and the winged bull, in a city that refuses to die. Mohamed Al-Daradji Mohamed Al-Daradji is an award-winning filmmaker known for socially engaging films. Born in Baghdad, he studied film and television at the Media Academy in the Netherlands before moving to the UK, where he earned two masters&rsquo; degrees in cinematography and directing from the Northern Film School in Leeds. He is the co-founder of Human Film, a UK-based production company with producer Isabe",
+    "url": "https://eventme.live/events/ended-ithra-events-irkalla-gilgameshs-dream-20260628-8b4c3fd6.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-irkalla-gilgameshs-dream-20260628-8b4c3fd6.html",
+    "isAccessibleForFree": true,
+    "keywords": "Irkalla: Gilgamesh's Dream, جوائز وتكريم, performance, فعالية, منتهية, الظهران, Theater, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Saudi Film Festival, ended-event, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/visit-ithra/attractions/cinema/saudi-film-festival-12/film-screenings/irkalla-gilgameshs-dream"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/visit-ithra/attractions/cinema/saudi-film-festival-12/film-screenings/irkalla-gilgameshs-dream",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

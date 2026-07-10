@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Sense the Home | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-sense-the-home@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260710T140000Z
+DTEND:20260725T180000Z
+SUMMARY:Sense the Home
+DESCRIPTION:A sensory space where children explore textures\, sounds\, and scents inspired by everyday life at home Sense the Home ضمن ترفيه وعائلات في الظهران. تبدأ الفعالية ١٠‏/٠٧‏/٢٠٢٦، ٥:٠٠ م وتنتهي ٢٥‏/٠٧‏/٢٠٢٦، ٩:٠٠ م حسب البيانات المتاحة. تتوفر لها صفحة جدول حي تساعد الزائر على متابعة الحالة والوقت أثناء الحضور. المصدر: Ithra Events.
+LOCATION:Children's Museum
+URL:https://eventme.live/events/event-sense-the-home.html
+END:VEVENT
+END:VCALENDAR

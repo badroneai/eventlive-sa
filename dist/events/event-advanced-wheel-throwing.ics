@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Advanced Wheel Throwing | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-advanced-wheel-throwing@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20261005T133000Z
+DTEND:20261009T173000Z
+SUMMARY:Advanced Wheel Throwing
+DESCRIPTION:This is an applied and professional cultural course in the art of pottery for the intermediate level. This engaging course\, which spans five days\, targets amateur beginner ceramicists or those with intermediate experience who love handicrafts. It is presented within an enthusiastic educational framework\, aiming to deepen the understanding of handicrafts as a proud\, inherited artistic and cultural practice. Additionally\, this course focuses on developing clay modeling skills by expanding the knowledge of materials and tools\, while enhancing the mastery of hand-building techniques. The course includes progressive practical applications that enable participants to refine their craft skills and
+LOCATION:Ithra Tower - Level 7\, Art Studio
+URL:https://eventme.live/events/event-advanced-wheel-throwing.html
+END:VEVENT
+END:VCALENDAR

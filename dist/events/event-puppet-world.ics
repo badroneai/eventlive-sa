@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Puppet World | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-puppet-world@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260710T113000Z
+DTEND:20260711T190000Z
+SUMMARY:Puppet World
+DESCRIPTION:Step into Puppet World\, a magical roaming experience where giant luminous puppets come to life\, transforming Children's festival into a world of wonder and imagination. wering above the crowd\, these illuminated characters gracefully dance\, interact with visito and create unforgettable moments for audiences of all ages. Don't miss the chance of attending this parade with family and friends!
+LOCATION:Plaza
+URL:https://eventme.live/events/event-puppet-world.html
+END:VEVENT
+END:VCALENDAR

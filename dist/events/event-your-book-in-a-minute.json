@@ -1,0 +1,572 @@
+{
+  "id": "event-your-book-in-a-minute",
+  "title": "Your Book in a Minute!",
+  "summary": "This program presents an exciting and challenging experience, where participants have only one minute to talk about their favorite book. Are you ready to be part of this fun literary experience?",
+  "canonical_url": "https://eventme.live/events/event-your-book-in-a-minute.html",
+  "detail_url": "./events/event-your-book-in-a-minute.html",
+  "calendar_url": "./events/event-your-book-in-a-minute.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2025/your-book-minute",
+  "evidence_url": "https://www.ithra.com/en/programme/2025/your-book-minute",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:08:07.323Z",
+  "verification_method": "registered-venue-official",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Library - Level 3",
+  "venue_address": "Library - Level 3",
+  "starts_at": "2026-07-15T19:00:00+03:00",
+  "ends_at": "2026-09-01T19:25:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 66,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/your-book-in-a-minute-5cc468c06d.jpg",
+  "image_alt": "Your Book in a Minute!",
+  "category": "ثقافة وفنون",
+  "category_url": "./categories/culture-arts.html",
+  "audiences": [
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Your Book in a Minute!",
+    "ثقافة وفنون",
+    "culture",
+    "برنامج ممتد",
+    "قادمة",
+    "الظهران",
+    "Library - Level 3",
+    "Ithra Events",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Library",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2025-01-16T18:00:00+03:00",
+      "ends_at": "2025-01-16T18:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202501161800-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2025-01-23T18:00:00+03:00",
+      "ends_at": "2025-01-23T18:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202501231800-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2025-01-30T18:00:00+03:00",
+      "ends_at": "2025-01-30T18:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202501301800-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2025-02-06T18:00:00+03:00",
+      "ends_at": "2025-02-06T18:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202502061800-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2025-02-13T18:00:00+03:00",
+      "ends_at": "2025-02-13T18:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202502131800-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2025-02-20T18:00:00+03:00",
+      "ends_at": "2025-02-20T18:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202502201800-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2025-02-27T18:00:00+03:00",
+      "ends_at": "2025-02-27T18:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202502271800-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2025-04-03T18:00:00+03:00",
+      "ends_at": "2025-04-03T18:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202504031800-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2025-04-10T18:00:00+03:00",
+      "ends_at": "2025-04-10T18:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202504101800-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2025-04-17T18:00:00+03:00",
+      "ends_at": "2025-04-17T18:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202504171800-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2025-04-24T18:00:00+03:00",
+      "ends_at": "2025-04-24T18:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202504241800-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2025-09-04T19:00:00+03:00",
+      "ends_at": "2025-09-04T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202509041900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2025-09-11T19:00:00+03:00",
+      "ends_at": "2025-09-11T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202509111900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2025-10-02T19:00:00+03:00",
+      "ends_at": "2025-10-02T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202510021900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2025-10-09T19:00:00+03:00",
+      "ends_at": "2025-10-09T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202510091900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2025-10-16T19:00:00+03:00",
+      "ends_at": "2025-10-16T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202510161900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-01-02T19:00:00+03:00",
+      "ends_at": "2026-01-02T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202601021900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-01-03T19:00:00+03:00",
+      "ends_at": "2026-01-03T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202601031900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-01-08T19:00:00+03:00",
+      "ends_at": "2026-01-08T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202601081900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-01-09T19:00:00+03:00",
+      "ends_at": "2026-01-09T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202601091900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-01-10T19:00:00+03:00",
+      "ends_at": "2026-01-10T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202601101900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-01-15T19:00:00+03:00",
+      "ends_at": "2026-01-15T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202601151900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-01-16T19:00:00+03:00",
+      "ends_at": "2026-01-16T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202601161900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-01-17T19:00:00+03:00",
+      "ends_at": "2026-01-17T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202601171900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-01-22T19:00:00+03:00",
+      "ends_at": "2026-01-22T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202601221900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-01-23T19:00:00+03:00",
+      "ends_at": "2026-01-23T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202601231900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-01-24T19:00:00+03:00",
+      "ends_at": "2026-01-24T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202601241900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-01-29T19:00:00+03:00",
+      "ends_at": "2026-01-29T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202601291900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-01-30T19:00:00+03:00",
+      "ends_at": "2026-01-30T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202601301900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-02-05T19:00:00+03:00",
+      "ends_at": "2026-02-05T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202602051900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-02-06T19:00:00+03:00",
+      "ends_at": "2026-02-06T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202602061900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-02-07T19:00:00+03:00",
+      "ends_at": "2026-02-07T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202602071900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-02-12T19:00:00+03:00",
+      "ends_at": "2026-02-12T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202602121900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-02-13T19:00:00+03:00",
+      "ends_at": "2026-02-13T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202602131900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-02-14T19:00:00+03:00",
+      "ends_at": "2026-02-14T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202602141900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-04-02T19:00:00+03:00",
+      "ends_at": "2026-04-02T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202604021900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-04-03T19:00:00+03:00",
+      "ends_at": "2026-04-03T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202604031900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-04-04T19:00:00+03:00",
+      "ends_at": "2026-04-04T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202604041900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-04-09T19:00:00+03:00",
+      "ends_at": "2026-04-09T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202604091900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-04-10T19:00:00+03:00",
+      "ends_at": "2026-04-10T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202604101900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-04-11T19:00:00+03:00",
+      "ends_at": "2026-04-11T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202604111900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-04-16T19:00:00+03:00",
+      "ends_at": "2026-04-16T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202604161900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-04-17T19:00:00+03:00",
+      "ends_at": "2026-04-17T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202604171900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-04-18T19:00:00+03:00",
+      "ends_at": "2026-04-18T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202604181900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-04-23T19:00:00+03:00",
+      "ends_at": "2026-04-23T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202604231900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-04-24T19:00:00+03:00",
+      "ends_at": "2026-04-24T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202604241900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-04-25T19:00:00+03:00",
+      "ends_at": "2026-04-25T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202604251900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-04-30T19:00:00+03:00",
+      "ends_at": "2026-04-30T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202604301900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-05-01T19:00:00+03:00",
+      "ends_at": "2026-05-01T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202605011900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-05-02T19:00:00+03:00",
+      "ends_at": "2026-05-02T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202605021900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-05-06T19:00:00+03:00",
+      "ends_at": "2026-05-06T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202605061900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-05-13T19:00:00+03:00",
+      "ends_at": "2026-05-13T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202605131900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-06-03T19:00:00+03:00",
+      "ends_at": "2026-06-03T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202606031900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-06-10T19:00:00+03:00",
+      "ends_at": "2026-06-10T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202606101900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-06-17T19:00:00+03:00",
+      "ends_at": "2026-06-17T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202606171900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-06-24T19:00:00+03:00",
+      "ends_at": "2026-06-24T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202606241900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-07-01T19:00:00+03:00",
+      "ends_at": "2026-07-01T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202607011900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-07-08T19:00:00+03:00",
+      "ends_at": "2026-07-08T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202607081900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-07-15T19:00:00+03:00",
+      "ends_at": "2026-07-15T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202607151900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-07-22T19:00:00+03:00",
+      "ends_at": "2026-07-22T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202607221900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-07-29T19:00:00+03:00",
+      "ends_at": "2026-07-29T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202607291900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-08-05T19:00:00+03:00",
+      "ends_at": "2026-08-05T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202608051900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-08-12T19:00:00+03:00",
+      "ends_at": "2026-08-12T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202608121900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-08-19T19:00:00+03:00",
+      "ends_at": "2026-08-19T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202608191900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-08-26T19:00:00+03:00",
+      "ends_at": "2026-08-26T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202608261900-your-book-in-a-minute"
+    },
+    {
+      "title": "Your Book in a Minute!",
+      "starts_at": "2026-09-01T19:00:00+03:00",
+      "ends_at": "2026-09-01T19:25:00+03:00",
+      "room": "Library - Level 3",
+      "anchor": "#session-ithra-14897-202609011900-your-book-in-a-minute"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Your Book in a Minute!",
+    "startDate": "2026-07-15T19:00:00+03:00",
+    "endDate": "2026-09-01T19:25:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Library - Level 3",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Library - Level 3",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/your-book-in-a-minute-5cc468c06d.jpg"
+    ],
+    "description": "This program presents an exciting and challenging experience, where participants have only one minute to talk about their favorite book. Are you ready to be part of this fun literary experience?",
+    "url": "https://eventme.live/events/event-your-book-in-a-minute.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-your-book-in-a-minute.html",
+    "isAccessibleForFree": true,
+    "keywords": "Your Book in a Minute!, ثقافة وفنون, culture, برنامج ممتد, قادمة, الظهران, Library - Level 3, Ithra Events, arts, creativity, community, exhibitions, learning, Ithra, Library, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2025/your-book-minute"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2025/your-book-minute",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

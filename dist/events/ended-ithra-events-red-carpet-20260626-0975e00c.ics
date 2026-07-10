@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Red Carpet | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-ithra-events-red-carpet-20260626-0975e00c@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260626T090000Z
+DTEND:20260701T090000Z
+SUMMARY:Red Carpet
+DESCRIPTION:The festival welcomes guests on the red carpet during the opening and closing ceremonies and celebrates the filmmakers participating in its 12th edition with daily official photoshoots and media interviews. It also offers the public the opportunity to meet attending stars and take pictures with them throughout the festival.
+LOCATION:Plaza
+URL:https://eventme.live/events/ended-ithra-events-red-carpet-20260626-0975e00c.html
+END:VEVENT
+END:VCALENDAR

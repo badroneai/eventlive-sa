@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Eid News | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-ithra-events-eid-news-20260528-1e5985cd@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260528T130500Z
+DTEND:20260531T200000Z
+SUMMARY:Eid News
+DESCRIPTION:We wish you a blessed Eid Al-Adha. Here is your chance to become the announcer sharing the news of Eid in your own voice. A joyful\, celebratory moment that captures the spirit of participation and festive excitement.
+LOCATION:Children's Museum
+URL:https://eventme.live/events/ended-ithra-events-eid-news-20260528-1e5985cd.html
+END:VEVENT
+END:VCALENDAR

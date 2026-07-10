@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Treasures in Every Home | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-treasures-in-every-home@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260710T130000Z
+DTEND:20260725T180000Z
+SUMMARY:Treasures in Every Home
+DESCRIPTION:Deep within the Earth\, metal begins its journey\, formed over time and transformed into materials we use every day at home. In this interactive workshop\, children follow this journey\, then reshape a simple tin container into a new functional object. The activity introduces how materials can be reused and redesigned for new purposes..
+LOCATION:Energy Exhibit
+URL:https://eventme.live/events/event-treasures-in-every-home.html
+END:VEVENT
+END:VCALENDAR

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-10T08:30:03.544Z",
+  "generated_at": "2026-07-10T10:09:06.985Z",
   "totals": {
-    "sessions_2025": 0,
-    "rooms_2025": 0,
+    "sessions_2025": 242,
+    "rooms_2025": 11,
     "sessions_2026": 0,
     "current_catalog_targets": 1,
     "current_candidate_targets": 1
@@ -10,7 +10,5 @@
   "agenda_2025_url": "https://money2020middleeast.com/2025-agenda",
   "agenda_2026_url": "",
   "agenda_2026_status": "not-published-yet",
-  "errors": [
-    "fetch failed"
-  ]
+  "errors": []
 }

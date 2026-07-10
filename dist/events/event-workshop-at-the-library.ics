@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Workshop at the Library | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-workshop-at-the-library@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260801T140000Z
+DTEND:20260829T164500Z
+SUMMARY:Workshop at the Library
+DESCRIPTION:Join us at the Ithra Library as we read a different story each time\, enriching our imagination through it\, followed by a workshop inspired by the tale to reinforce its values and deepen its meaning. You will also have the opportunity to use various materials and tools\, repurposing them to create new shapes! Innovate and create with your friends and family\, spending time full of knowledge\, crafting unique pieces\, and exploring fresh techniques.
+LOCATION:Library - Level 2
+URL:https://eventme.live/events/event-workshop-at-the-library.html
+END:VEVENT
+END:VCALENDAR

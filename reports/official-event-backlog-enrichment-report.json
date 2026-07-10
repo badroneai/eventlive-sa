@@ -1,33 +1,12 @@
 {
-  "generated_at": "2026-07-10T08:53:41.808Z",
+  "generated_at": "2026-07-10T10:09:18.524Z",
   "totals": {
-    "targets": 2,
-    "enriched": 2,
-    "fetched": 2,
-    "images": 2,
+    "targets": 0,
+    "enriched": 0,
+    "fetched": 0,
+    "images": 0,
     "fetch_failures": 0
   },
-  "enriched": [
-    {
-      "id": "event-12th-middle-east-banking-ai-analytics-summit-2026",
-      "title": "12th Middle East Banking AI & Analytics Summit 2026",
-      "source_label": "Middle East Banking AI & Analytics Summit Official",
-      "source_method": "official-page-meta",
-      "source_url": "https://mebankingai.com/sa/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-15th-middle-east-enterprise-ai-analytics-summit",
-      "title": "15th Middle East Enterprise AI & Analytics Summit",
-      "source_label": "Middle East Enterprise AI & Analytics Summit Official",
-      "source_method": "official-page-meta",
-      "source_url": "https://meenterpriseai.com/sa/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    }
-  ],
+  "enriched": [],
   "failed": []
 }

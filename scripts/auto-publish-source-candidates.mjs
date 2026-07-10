@@ -501,6 +501,25 @@ function mergeMissingCandidateEnrichment(existing = {}, candidate = {}) {
     existing.highlights = richFields.highlights;
   }
   existing.richness_score = Math.max(Number(existing.richness_score || 0), Number(richFields.richness_score || 0));
+  const candidateSessions = Array.isArray(candidate.sessions) ? candidate.sessions : [];
+  const scheduleConfidence = candidate.confidence === 'official'
+    ? sourceConfidenceFor(candidate)
+    : (existing.source_confidence || sourceConfidenceFor(candidate));
+  const candidateScheduleReady = isLiveScheduleReady({
+    ...existing,
+    ...candidate,
+    source_confidence: scheduleConfidence,
+    sessions: candidateSessions
+  });
+  if (candidateSessions.length && (!hasPreciseLiveSchedule(existing)
+    || (candidateScheduleReady
+      && normalizeSourceUrl(existing.source_url || existing.evidence_url) === normalizeSourceUrl(candidate.source_url || candidate.evidence_url)))) {
+    existing.sessions = candidateSessions;
+    existing.sessions_count = liveReadySessionCount({ sessions: candidateSessions });
+    existing.live_schedule_ready = candidateScheduleReady;
+    if (candidateScheduleReady && !existing.url) existing.url = candidate.source_url || candidate.evidence_url || '';
+    if (!candidateScheduleReady) delete existing.url;
+  }
   return existing;
 }
 

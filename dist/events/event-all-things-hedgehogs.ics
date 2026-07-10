@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:All Things Hedgehogs | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-all-things-hedgehogs@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260801T150000Z
+DTEND:20260829T154500Z
+SUMMARY:All Things Hedgehogs
+DESCRIPTION:Do you have what it takes to uncover the secrets of hedgehogs and discover amazing facts about them? In this workshop\, we will dive into the wonderful world of hedgehogs and create our own hedgehog using everything we have learned about these fascinating creatures.
+LOCATION:Children's Museum
+URL:https://eventme.live/events/event-all-things-hedgehogs.html
+END:VEVENT
+END:VCALENDAR

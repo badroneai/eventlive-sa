@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Stories from Ithra's Library | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-stories-from-ithras-library@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260731T140000Z
+DTEND:20260828T163000Z
+SUMMARY:Stories from Ithra's Library
+DESCRIPTION:Join us at Ithra&rsquo\;s Library with your family\, where every Friday\, we gather round and read a selection of gripping stories\, work together to unravel the morals of each one of them\, and discuss authors&rsquo\; hidden meanings.
+LOCATION:Library - Level 2
+URL:https://eventme.live/events/event-stories-from-ithras-library.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:F1 Simulators Activity | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-ithra-events-f1-simulators-activity-20260604-a2705c28@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260604T060000Z
+DTEND:20260606T193000Z
+SUMMARY:F1 Simulators Activity
+DESCRIPTION:Feel the excitement of Formula 1! Step into our motion simulators and experience the track like never before. Whether you are playing for fun or want to race like a professional\, come and join us for a fast and thrilling ride.
+LOCATION:Plaza
+URL:https://eventme.live/events/ended-ithra-events-f1-simulators-activity-20260604-a2705c28.html
+END:VEVENT
+END:VCALENDAR

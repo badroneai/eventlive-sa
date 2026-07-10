@@ -28,6 +28,15 @@ assert.match(html, /https:\/\/onegiantleap\.com\/session\//, 'official session e
 assert.doesNotMatch(html, /2026-04-1[3-6]T/, 'stale April sessions must never enter the LEAP 2026 public agenda');
 assert.doesNotMatch(html, /Exhibition \/ Families|Riyadh Riyadh/, 'stale Visit Saudi classification and venue text must not leak into the public page');
 
+const recurringIthra = events.find((event) => event.id === 'event-childrens-museum-story-time');
+assert.ok(recurringIthra, 'a long-running recurring Ithra program must remain present');
+const recurringIthraHtml = fs.readFileSync(path.join('dist', recurringIthra.detail_url.replace(/^\.\//, '')), 'utf8');
+assert.match(
+  recurringIthraHtml,
+  /days\.find\(function \(day\) \{ return day >= today; \}\)/,
+  'recurring agendas must open on today or the nearest upcoming session day instead of the oldest ended day'
+);
+
 const money = events.find((event) => event.id === 'ended-money2020-middle-east-2025');
 assert.ok(money, 'Money20/20 Middle East 2025 must be retained as a normal ended event');
 assert.equal(money.sessions.length, 242, 'Money20/20 must retain all official agenda cards, including simultaneous sessions');

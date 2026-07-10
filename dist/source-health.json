@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T09:13:20.207Z",
+  "generated_at": "2026-07-10T10:11:22.094Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-source-health",
@@ -12,13 +12,13 @@
     "sources": 81,
     "active_collectors": 41,
     "collection_coverage_pct": 51,
-    "productive": 28,
-    "open_idle": 13,
+    "productive": 29,
+    "open_idle": 12,
     "collector_errors": 0,
     "probe_blocked": 0,
     "extractor_backlog": 40,
-    "candidates_discovered": 263,
-    "candidates_written": 273
+    "candidates_discovered": 392,
+    "candidates_written": 402
   },
   "publication": {
     "published_at": "2026-07-03T15:26:20.570Z",
@@ -299,13 +299,13 @@
       "id": "ithra-events",
       "name": "Ithra Events",
       "priority": 23,
-      "status": "zero-yield",
-      "extracted": 0,
-      "candidates": 0,
-      "next_action": "No future date-complete candidates found by the conservative extractor.",
+      "status": "productive",
+      "extracted": 129,
+      "candidates": 129,
+      "next_action": "استمر بالمراجعة والتكرار قبل النشر.",
       "last_collection_status": "ok",
-      "last_extracted": 0,
-      "known_candidates": 0
+      "last_extracted": 129,
+      "known_candidates": 129
     },
     {
       "id": "saudi-digital-academy",

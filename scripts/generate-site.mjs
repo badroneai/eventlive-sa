@@ -1273,7 +1273,8 @@ function sessionAgendaScript() {
   if (dayButtons.length) {
     var days = dayButtons.map(function (button) { return button.getAttribute('data-agenda-day'); }).filter(function (day) { return day !== 'all'; }).sort();
     var today = riyadhDay();
-    var initial = days.indexOf(today) !== -1 ? today : (today > days[days.length - 1] ? days[days.length - 1] : days[0]);
+    var nextAvailableDay = days.find(function (day) { return day >= today; });
+    var initial = days.indexOf(today) !== -1 ? today : (nextAvailableDay || days[days.length - 1]);
     setDay(initial || 'all');
   } else {
     applyFilters();

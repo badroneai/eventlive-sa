@@ -1,0 +1,171 @@
+{
+  "id": "event-the-art-of-public-speaking",
+  "title": "The Art of Public Speaking",
+  "summary": "In an era where ideas and technology integrate, presentations have become a key tool for delivering messages, whether in work environments or at conferences and seminars. To develop the skills of those interested in the art of public speaking, this comprehensive course was created to satisfy the passion of those seeking to improve their presentation skills, including teachers, lecturers, employees in public and private sectors, entrepreneurs, conference participants and anyone interested in persuasion and influence through presentations. This course focuses on merging public speaking skills with visual presentation techniques, enabling participants to deliver impactful, clear and persuasive",
+  "canonical_url": "https://eventme.live/events/event-the-art-of-public-speaking.html",
+  "detail_url": "./events/event-the-art-of-public-speaking.html",
+  "calendar_url": "./events/event-the-art-of-public-speaking.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/art-public-speaking",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/art-public-speaking",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:08:07.323Z",
+  "verification_method": "registered-venue-official",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Ithra Tower - Level 9, Classroom 2",
+  "venue_address": "Ithra Tower - Level 9, Classroom 2",
+  "starts_at": "2026-10-26T16:30:00+03:00",
+  "ends_at": "2026-10-30T20:30:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 5,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/the-art-of-public-speaking-571bd8329a.jpg",
+  "image_alt": "The Art of Public Speaking",
+  "category": "مؤتمرات ومنتديات",
+  "category_url": "./categories/conference-forum.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "skilled-trades",
+      "label": "مهاريون وحرفيون"
+    },
+    {
+      "slug": "entrepreneurs",
+      "label": "رواد أعمال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "The Art of Public Speaking",
+    "مؤتمرات ومنتديات",
+    "learning",
+    "فعالية",
+    "قادمة",
+    "الظهران",
+    "Ithra Tower - Level 9, Classroom 2",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "Ithra",
+    "Broaden",
+    "Literacy",
+    "موظفون ومهنيون",
+    "مهاريون وحرفيون",
+    "رواد أعمال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "The Art of Public Speaking",
+      "starts_at": "2026-10-26T16:30:00+03:00",
+      "ends_at": "2026-10-26T20:30:00+03:00",
+      "room": "Ithra Tower - Level 9, Classroom 2",
+      "anchor": "#session-ithra-17973-202610261630-the-art-of-public-speaking"
+    },
+    {
+      "title": "The Art of Public Speaking",
+      "starts_at": "2026-10-27T16:30:00+03:00",
+      "ends_at": "2026-10-27T20:30:00+03:00",
+      "room": "Ithra Tower - Level 9, Classroom 2",
+      "anchor": "#session-ithra-17973-202610271630-the-art-of-public-speaking"
+    },
+    {
+      "title": "The Art of Public Speaking",
+      "starts_at": "2026-10-28T16:30:00+03:00",
+      "ends_at": "2026-10-28T20:30:00+03:00",
+      "room": "Ithra Tower - Level 9, Classroom 2",
+      "anchor": "#session-ithra-17973-202610281630-the-art-of-public-speaking"
+    },
+    {
+      "title": "The Art of Public Speaking",
+      "starts_at": "2026-10-29T16:30:00+03:00",
+      "ends_at": "2026-10-29T20:30:00+03:00",
+      "room": "Ithra Tower - Level 9, Classroom 2",
+      "anchor": "#session-ithra-17973-202610291630-the-art-of-public-speaking"
+    },
+    {
+      "title": "The Art of Public Speaking",
+      "starts_at": "2026-10-30T16:30:00+03:00",
+      "ends_at": "2026-10-30T20:30:00+03:00",
+      "room": "Ithra Tower - Level 9, Classroom 2",
+      "anchor": "#session-ithra-17973-202610301630-the-art-of-public-speaking"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "The Art of Public Speaking",
+    "startDate": "2026-10-26T16:30:00+03:00",
+    "endDate": "2026-10-30T20:30:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Ithra Tower - Level 9, Classroom 2",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ithra Tower - Level 9, Classroom 2",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/the-art-of-public-speaking-571bd8329a.jpg"
+    ],
+    "description": "In an era where ideas and technology integrate, presentations have become a key tool for delivering messages, whether in work environments or at conferences and seminars. To develop the skills of those interested in the art of public speaking, this comprehensive course was created to satisfy the passion of those seeking to improve their presentation skills, including teachers, lecturers, employees in public and private sectors, entrepreneurs, conference participants and anyone interested in persuasion and influence through presentations. This course focuses on merging public speaking skills with visual presentation techniques, enabling participants to deliver impactful, clear and persuasive",
+    "url": "https://eventme.live/events/event-the-art-of-public-speaking.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-the-art-of-public-speaking.html",
+    "isAccessibleForFree": false,
+    "keywords": "The Art of Public Speaking, مؤتمرات ومنتديات, learning, فعالية, قادمة, الظهران, Ithra Tower - Level 9, Classroom 2, Ithra Events, culture, arts, creativity, community, exhibitions, Ithra, Broaden, Literacy, موظفون ومهنيون, مهاريون وحرفيون, رواد أعمال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مهاريون وحرفيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "رواد أعمال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/art-public-speaking"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/art-public-speaking",
+      "availability": "https://schema.org/InStock",
+      "category": "700 SAR"
+    }
+  }
+}

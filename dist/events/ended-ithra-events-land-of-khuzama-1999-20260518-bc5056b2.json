@@ -1,0 +1,164 @@
+{
+  "id": "ended-ithra-events-land-of-khuzama-1999-20260518-bc5056b2",
+  "title": "Land of Khuzama (1999)",
+  "summary": "During a dangerous odyssey across Arabia, a bird and a furry rodent get to experience environmental conditions firsthand, which doesn&rsquo;t only threaten various wildlife habitats but also their own survival. Come watch it exclusively at the Children&rsquo;s Museum; an adventure you won&rsquo;t want to miss!",
+  "canonical_url": "https://eventme.live/events/ended-ithra-events-land-of-khuzama-1999-20260518-bc5056b2.html",
+  "detail_url": "./events/ended-ithra-events-land-of-khuzama-1999-20260518-bc5056b2.html",
+  "calendar_url": "./events/ended-ithra-events-land-of-khuzama-1999-20260518-bc5056b2.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/land-khuzama-1999",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/land-khuzama-1999",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verification_method": "official-public-algolia-index",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Children's Museum",
+  "venue_address": "Children's Museum",
+  "starts_at": "2026-05-18T18:00:00+03:00",
+  "ends_at": "2026-05-23T20:30:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 6,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/land-of-khuzama-1999-4eae97c1e0.png",
+  "image_alt": "Land of Khuzama (1999)",
+  "category": "جامعات ومجتمع",
+  "category_url": "./categories/education-community.html",
+  "audiences": [
+    {
+      "slug": "entrepreneurs",
+      "label": "رواد أعمال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Land of Khuzama (1999)",
+    "جامعات ومجتمع",
+    "performance",
+    "فعالية",
+    "منتهية",
+    "الظهران",
+    "Children's Museum",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Children",
+    "Film Screening",
+    "ended-event",
+    "رواد أعمال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Land of Khuzama (1999)",
+      "starts_at": "2026-05-18T18:00:00+03:00",
+      "ends_at": "2026-05-18T20:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-17904-202605181800-land-of-khuzama-1999"
+    },
+    {
+      "title": "Land of Khuzama (1999)",
+      "starts_at": "2026-05-19T18:00:00+03:00",
+      "ends_at": "2026-05-19T20:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-17904-202605191800-land-of-khuzama-1999"
+    },
+    {
+      "title": "Land of Khuzama (1999)",
+      "starts_at": "2026-05-20T18:00:00+03:00",
+      "ends_at": "2026-05-20T20:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-17904-202605201800-land-of-khuzama-1999"
+    },
+    {
+      "title": "Land of Khuzama (1999)",
+      "starts_at": "2026-05-21T19:00:00+03:00",
+      "ends_at": "2026-05-21T20:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-17904-202605211900-land-of-khuzama-1999"
+    },
+    {
+      "title": "Land of Khuzama (1999)",
+      "starts_at": "2026-05-22T19:00:00+03:00",
+      "ends_at": "2026-05-22T20:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-17904-202605221900-land-of-khuzama-1999"
+    },
+    {
+      "title": "Land of Khuzama (1999)",
+      "starts_at": "2026-05-23T18:00:00+03:00",
+      "ends_at": "2026-05-23T20:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-17904-202605231800-land-of-khuzama-1999"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Land of Khuzama (1999)",
+    "startDate": "2026-05-18T18:00:00+03:00",
+    "endDate": "2026-05-23T20:30:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Children's Museum",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Children's Museum",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/land-of-khuzama-1999-4eae97c1e0.png"
+    ],
+    "description": "During a dangerous odyssey across Arabia, a bird and a furry rodent get to experience environmental conditions firsthand, which doesn&rsquo;t only threaten various wildlife habitats but also their own survival. Come watch it exclusively at the Children&rsquo;s Museum; an adventure you won&rsquo;t want to miss!",
+    "url": "https://eventme.live/events/ended-ithra-events-land-of-khuzama-1999-20260518-bc5056b2.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-land-of-khuzama-1999-20260518-bc5056b2.html",
+    "isAccessibleForFree": true,
+    "keywords": "Land of Khuzama (1999), جامعات ومجتمع, performance, فعالية, منتهية, الظهران, Children's Museum, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Children, Film Screening, ended-event, رواد أعمال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "رواد أعمال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/land-khuzama-1999"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/land-khuzama-1999",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

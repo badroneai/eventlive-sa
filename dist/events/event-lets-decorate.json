@@ -1,0 +1,268 @@
+{
+  "id": "event-lets-decorate",
+  "title": "Let’s Decorate!",
+  "summary": "Decorations change depending on the occasion, the place, and the people. At the Inspiration Spot, children get inspired to make different styles to celebrate.",
+  "canonical_url": "https://eventme.live/events/event-lets-decorate.html",
+  "detail_url": "./events/event-lets-decorate.html",
+  "calendar_url": "./events/event-lets-decorate.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/childrens-festival-children-museum/lets-decorate",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/childrens-festival-children-museum/lets-decorate",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:08:07.323Z",
+  "verification_method": "registered-venue-official",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Children's Museum",
+  "venue_address": "Children's Museum",
+  "starts_at": "2026-07-10T16:00:00+03:00",
+  "ends_at": "2026-07-25T22:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 21,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/let-s-decorate-51787d1ab9.jpg",
+  "image_alt": "Let’s Decorate!",
+  "category": "ترفيه وعائلات",
+  "category_url": "./categories/entertainment-families.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Let’s Decorate!",
+    "ترفيه وعائلات",
+    "family",
+    "برنامج ممتد",
+    "قادمة",
+    "الظهران",
+    "Children's Museum",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Activity",
+    "Children Festival",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Let’s Decorate!",
+      "starts_at": "2026-07-06T10:00:00+03:00",
+      "ends_at": "2026-07-06T12:00:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18121-202607061000-lets-decorate"
+    },
+    {
+      "title": "Let’s Decorate!",
+      "starts_at": "2026-07-06T13:00:00+03:00",
+      "ends_at": "2026-07-06T15:00:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18121-202607061300-lets-decorate"
+    },
+    {
+      "title": "Let’s Decorate!",
+      "starts_at": "2026-07-06T16:00:00+03:00",
+      "ends_at": "2026-07-06T18:00:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18121-202607061600-lets-decorate"
+    },
+    {
+      "title": "Let’s Decorate!",
+      "starts_at": "2026-07-06T19:00:00+03:00",
+      "ends_at": "2026-07-06T21:00:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18121-202607061900-lets-decorate"
+    },
+    {
+      "title": "Let’s Decorate!",
+      "starts_at": "2026-07-07T09:00:00+03:00",
+      "ends_at": "2026-07-07T22:00:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18121-202607070900-lets-decorate"
+    },
+    {
+      "title": "Let’s Decorate!",
+      "starts_at": "2026-07-08T09:00:00+03:00",
+      "ends_at": "2026-07-08T22:00:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18121-202607080900-lets-decorate"
+    },
+    {
+      "title": "Let’s Decorate!",
+      "starts_at": "2026-07-09T09:00:00+03:00",
+      "ends_at": "2026-07-09T22:00:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18121-202607090900-lets-decorate"
+    },
+    {
+      "title": "Let’s Decorate!",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-10T22:00:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18121-202607101600-lets-decorate"
+    },
+    {
+      "title": "Let’s Decorate!",
+      "starts_at": "2026-07-11T09:00:00+03:00",
+      "ends_at": "2026-07-11T22:00:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18121-202607110900-lets-decorate"
+    },
+    {
+      "title": "Let’s Decorate!",
+      "starts_at": "2026-07-13T09:00:00+03:00",
+      "ends_at": "2026-07-13T22:00:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18121-202607130900-lets-decorate"
+    },
+    {
+      "title": "Let’s Decorate!",
+      "starts_at": "2026-07-14T09:00:00+03:00",
+      "ends_at": "2026-07-14T22:00:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18121-202607140900-lets-decorate"
+    },
+    {
+      "title": "Let’s Decorate!",
+      "starts_at": "2026-07-15T09:00:00+03:00",
+      "ends_at": "2026-07-15T22:00:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18121-202607150900-lets-decorate"
+    },
+    {
+      "title": "Let’s Decorate!",
+      "starts_at": "2026-07-16T09:00:00+03:00",
+      "ends_at": "2026-07-16T22:00:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18121-202607160900-lets-decorate"
+    },
+    {
+      "title": "Let’s Decorate!",
+      "starts_at": "2026-07-17T16:00:00+03:00",
+      "ends_at": "2026-07-17T22:00:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18121-202607171600-lets-decorate"
+    },
+    {
+      "title": "Let’s Decorate!",
+      "starts_at": "2026-07-18T09:00:00+03:00",
+      "ends_at": "2026-07-18T22:00:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18121-202607180900-lets-decorate"
+    },
+    {
+      "title": "Let’s Decorate!",
+      "starts_at": "2026-07-20T09:00:00+03:00",
+      "ends_at": "2026-07-20T22:00:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18121-202607200900-lets-decorate"
+    },
+    {
+      "title": "Let’s Decorate!",
+      "starts_at": "2026-07-21T09:00:00+03:00",
+      "ends_at": "2026-07-21T22:00:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18121-202607210900-lets-decorate"
+    },
+    {
+      "title": "Let’s Decorate!",
+      "starts_at": "2026-07-22T09:00:00+03:00",
+      "ends_at": "2026-07-22T22:00:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18121-202607220900-lets-decorate"
+    },
+    {
+      "title": "Let’s Decorate!",
+      "starts_at": "2026-07-23T09:00:00+03:00",
+      "ends_at": "2026-07-23T22:00:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18121-202607230900-lets-decorate"
+    },
+    {
+      "title": "Let’s Decorate!",
+      "starts_at": "2026-07-24T16:00:00+03:00",
+      "ends_at": "2026-07-24T22:00:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18121-202607241600-lets-decorate"
+    },
+    {
+      "title": "Let’s Decorate!",
+      "starts_at": "2026-07-25T09:00:00+03:00",
+      "ends_at": "2026-07-25T22:00:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18121-202607250900-lets-decorate"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Let’s Decorate!",
+    "startDate": "2026-07-10T16:00:00+03:00",
+    "endDate": "2026-07-25T22:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Children's Museum",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Children's Museum",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/let-s-decorate-51787d1ab9.jpg"
+    ],
+    "description": "Decorations change depending on the occasion, the place, and the people. At the Inspiration Spot, children get inspired to make different styles to celebrate.",
+    "url": "https://eventme.live/events/event-lets-decorate.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-lets-decorate.html",
+    "isAccessibleForFree": true,
+    "keywords": "Let’s Decorate!, ترفيه وعائلات, family, برنامج ممتد, قادمة, الظهران, Children's Museum, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Activity, Children Festival, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/childrens-festival-children-museum/lets-decorate"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/childrens-festival-children-museum/lets-decorate",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

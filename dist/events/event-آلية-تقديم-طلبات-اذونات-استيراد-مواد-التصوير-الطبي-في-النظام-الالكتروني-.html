@@ -27,7 +27,7 @@
   <meta property="og:description" content="آلية تقديم طلبات اذونات استيراد مواد التصوير الطبي في النظام الالكتروني ومتطلباتها في عن بعد: الوقت، الموقع، المصدر، وحالة الجدول الحي عبر EventLive." />
   <meta property="og:image" content="https://eventme.live/assets/event-covers/event-آلية-تقديم-طلبات-اذونات-استيراد-مواد-التصوير-الطبي-في-النظام-الالكتروني-.svg" />
   <meta property="og:image:alt" content="غلاف EventLive لفعالية آلية تقديم طلبات اذونات استيراد مواد التصوير الطبي في النظام الالكتروني ومتطلباتها" />
-  <meta property="og:updated_time" content="2026-07-10T09:13:06.464Z" />
+  <meta property="og:updated_time" content="2026-07-10T10:10:45.542Z" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="آلية تقديم طلبات اذونات استيراد مواد التصوير الطبي في النظام الالكتروني ومتطلباتها | EventLive" />
   <meta name="twitter:description" content="آلية تقديم طلبات اذونات استيراد مواد التصوير الطبي في النظام الالكتروني ومتطلباتها في عن بعد: الوقت، الموقع، المصدر، وحالة الجدول الحي عبر EventLive." />
@@ -100,7 +100,7 @@
   <section class="section"><div class="wrap"><article class="readiness" aria-label="محاور البرنامج الرسمية"><span>من المصدر الرسمي</span><h2>محاور البرنامج</h2><p>آلية تقديم طلبات اذونات استيراد مواد التصوير الطبي في النظام الالكتروني ومتطلباتها. طريقة الحضور: عن بعد. نوع الورشة: عامة. لغة العرض: العربية انتهى وقت ورشة العمل</p><div class="signal-strip"><div class="signal"><span>المدة</span><b>2026-07-06T10:00:00+03:00 إلى 2026-07-06T11:00:00+03:00</b></div><div class="signal"><span>المزود</span><b>Saudi Food and Drug Authority</b></div></div><div class="grid"><div class="program-check"><b>الأهداف</b><ul><li>آلية تقديم طلبات اذونات استيراد مواد التصوير الطبي في النظام الالكتروني ومتطلباتها</li></ul></div><div class="program-check"><b>المميزات</b><ul><li>طريقة الحضور: عن بعد</li><li>نوع الورشة: عامة</li><li>لغة العرض: العربية انتهى وقت ورشة العمل</li><li>جدول حي: جلسة رسمية واحدة</li><li>الوقت: 2026-07-06T10:00:00+03:00 إلى 2026-07-06T11:00:00+03:00</li></ul></div></div></article></div></section>
   <section class="section" data-event-agenda><div class="wrap"><div class="agenda-head"><div><span class="eyebrow">برنامج موثق</span><h2>الجدول الحي</h2></div></div><div class="timeline"><article class="session" id="session-event-ا-لية-تقديم-طلبات-اذونات-استيراد-مواد-التصوير-الطبي-في-النظام-الالكتروني-official-session-1" data-session-item data-day="2026-07-06" data-room="عن بعد" data-search="يه تقديم طلبات اذونات استيراد مواد تصوير طبي في نظام الكتروني ومتطلباتها عن بعد" data-start="2026-07-06T10:00:00+03:00" data-end="2026-07-06T11:00:00+03:00"><div class="session-top"><div><b>آلية تقديم طلبات اذونات استيراد مواد التصوير الطبي في النظام الالكتروني ومتطلباتها</b></div><time class="session-time" datetime="2026-07-06T10:00:00+03:00">من ١٠:٠٠ ص إلى ١١:٠٠ ص</time></div><div class="meta"><span class="chip">عن بعد</span><span class="session-status" data-session-status>قادمة</span></div></article></div></div></section>
 </main>
-<footer class="footer"><div class="wrap">EventLive يبقي الدومين الرسمي eventme.live ويربط كل فعالية بمصدرها قدر الإمكان. آخر بناء: ١٠‏/٠٧‏/٢٠٢٦، ١٢:١٣ م<div class="footer-links"><a href="../privacy.html">الخصوصية</a><a href="../terms.html">الشروط</a><a href="../source-rights.html">حقوق المصادر</a></div></div></footer>
+<footer class="footer"><div class="wrap">EventLive يبقي الدومين الرسمي eventme.live ويربط كل فعالية بمصدرها قدر الإمكان. آخر بناء: ١٠‏/٠٧‏/٢٠٢٦، ١:١٠ م<div class="footer-links"><a href="../privacy.html">الخصوصية</a><a href="../terms.html">الشروط</a><a href="../source-rights.html">حقوق المصادر</a></div></div></footer>
 <script>
 (function () {
   function clampHours(value) {
@@ -298,7 +298,8 @@
   if (dayButtons.length) {
     var days = dayButtons.map(function (button) { return button.getAttribute('data-agenda-day'); }).filter(function (day) { return day !== 'all'; }).sort();
     var today = riyadhDay();
-    var initial = days.indexOf(today) !== -1 ? today : (today > days[days.length - 1] ? days[days.length - 1] : days[0]);
+    var nextAvailableDay = days.find(function (day) { return day >= today; });
+    var initial = days.indexOf(today) !== -1 ? today : (nextAvailableDay || days[days.length - 1]);
     setDay(initial || 'all');
   } else {
     applyFilters();

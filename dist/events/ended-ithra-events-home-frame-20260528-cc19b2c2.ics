@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Home Frame | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-ithra-events-home-frame-20260528-cc19b2c2@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260528T131500Z
+DTEND:20260531T191000Z
+SUMMARY:Home Frame
+DESCRIPTION:In this program\, children create a meaningful art frame inspired by Eid memories and the warmth of home\, capturing family\, joy\, and imagination in one creative experience.
+LOCATION:Children's Museum
+URL:https://eventme.live/events/ended-ithra-events-home-frame-20260528-cc19b2c2.html
+END:VEVENT
+END:VCALENDAR

@@ -1,31 +1,18 @@
 {
-  "generated_at": "2026-07-10T08:55:04.630Z",
+  "generated_at": "2026-07-10T10:09:49.755Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
-    "targets": 202,
-    "cached_total": 224,
-    "fetched": 2,
-    "reused": 194,
+    "targets": 394,
+    "cached_total": 420,
+    "fetched": 0,
+    "reused": 388,
     "failed": 6,
     "skipped_recent_failures": 6,
     "remembered_failures": 9
   },
-  "fetched": [
-    {
-      "source_url": "https://mebankingai.com/whatsapp.png",
-      "file": "dist/assets/event-images/12th-middle-east-banking-ai-analytics-summit-2026-bc988c16fd.png",
-      "bytes": 30559,
-      "events": 1
-    },
-    {
-      "source_url": "https://meenterpriseai.com/whatsapp.png",
-      "file": "dist/assets/event-images/15th-middle-east-enterprise-ai-analytics-summit-6a711e9760.png",
-      "bytes": 30559,
-      "events": 1
-    }
-  ],
+  "fetched": [],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -223,8 +210,203 @@
       "events": 5
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/bd79089afb4fcca102702b4924e6c7bc.jpg",
+      "file": "dist/assets/event-images/build-play-together-a47cb14c8a.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/36d13ecef91b05d955bc60b3c951d824.jpg",
+      "file": "dist/assets/event-images/echoes-of-the-familiar-de9fb567e4.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a6bc331fa4832c1c4dc775cb733f77fa.jpg",
+      "file": "dist/assets/event-images/tafasahu-make-room-f70932f422.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4d3708b09af44a312ade4fd065b26f22.png",
+      "file": "dist/assets/event-images/leap-then-look-bf84521a1f.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/7b355c6af030a76b742b41484d8a084e.jpg",
+      "file": "dist/assets/event-images/beaded-plant-suncatcher-29904eadb8.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/46e6e4160b7aa59719d88308bd919faa.png",
+      "file": "dist/assets/event-images/puppet-world-3863736de8.png",
+      "events": 1
+    },
+    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/766.png?itok=fW0JAe0G",
       "file": "dist/assets/event-images/pfl-mena-fight-night-f80f0d3758.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6d322eb08f77dad4a78fe2bd57211c8c.jpg",
+      "file": "dist/assets/event-images/ajeeb-in-wonder-house-36ef1d6d7c.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/8a1898d1a92796dc500bdfcf9d30f7b8.jpg",
+      "file": "dist/assets/event-images/1-2-3-a-little-space-for-me-dc6823988c.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/71ccb8981524b13e856e38276f2c0cde.jpg",
+      "file": "dist/assets/event-images/1-2-3-let-s-rhyme-6df127aea1.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1ea1870b2f6153f6a1e226f49fe9feab.jpg",
+      "file": "dist/assets/event-images/a-home-i-imagine-5e16f1cd67.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/775569abc4a041215f586cc4f44c4654.jpg",
+      "file": "dist/assets/event-images/around-the-table-3dc22ec4fd.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/f279f19d391539955198b39f74896310.png",
+      "file": "dist/assets/event-images/balloon-shapes-lab-e6aeaa9b76.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/8bce8bd63e14116e5dc17f5a86ed2877.png",
+      "file": "dist/assets/event-images/built-by-nature-e568863602.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/e08ca4205d41622630357f6c5878f72d.jpg",
+      "file": "dist/assets/event-images/children-s-caf-64db4fa0b5.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d79cc04c29ddcbceb1de3c5f975aacdc.jpg",
+      "file": "dist/assets/event-images/draw-your-story-2b055b7555.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/14bf35f728afe868b4f7e3f9050bc293.png",
+      "file": "dist/assets/event-images/hidden-home-bingo-4e1c787eba.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/90315b54b65df8250bf15fb42b84a5fc.png",
+      "file": "dist/assets/event-images/insightful-spaces-41a67e2ec3.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1bb6f3a71fd24385c1d24e98fa775448.jpg",
+      "file": "dist/assets/event-images/interactive-exhibit-b92db5e9ce.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6a63a21825e182f3eb25f41eee38e5f6.jpg",
+      "file": "dist/assets/event-images/let-s-decorate-51787d1ab9.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ed0558c94b7411c8e8af752920055c32.jpg",
+      "file": "dist/assets/event-images/mic-moments-2d5d5eb34b.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/971a6ad7cc87bddac843cc9dc8caf394.png",
+      "file": "dist/assets/event-images/mirror-or-window-c02fc96abd.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a9a5a6fb390c4581eef2b544a5b8df21.png",
+      "file": "dist/assets/event-images/my-family-bouquet-7c214dd7c1.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/03aa1f59a54ddc4fe66f74a791e57f6e.png",
+      "file": "dist/assets/event-images/our-place-on-earth-7fa922f9be.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/835b32e24287c9341427be196d022bb6.jpg",
+      "file": "dist/assets/event-images/painted-faces-9cd48f66a6.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1003733fc99194c8db0c789ce5d7f134.jpg",
+      "file": "dist/assets/event-images/treasures-in-every-home-fe7cbb1c84.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/451bbba7a5290a4a84cdbd45e4fbf487.png",
+      "file": "dist/assets/event-images/where-we-belong-41594f1263.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c8d49ffba4df7361602a59e087351495.jpg",
+      "file": "dist/assets/event-images/who-lived-here-c6e588dd84.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/74d8bb602fafe981b723140aa8d77236.jpg",
+      "file": "dist/assets/event-images/zoom-in-21ef7b083b.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/511a9dfeffde3b15bc74f0439c2d9903.jpg",
+      "file": "dist/assets/event-images/in-the-home-of-dd9d82ea42.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/af79621e838debd5a8fac9b97ca237ee.jpg",
+      "file": "dist/assets/event-images/my-little-fort-65b28eb031.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/83206b9ea769d26e304387df26624b55.jpg",
+      "file": "dist/assets/event-images/my-neighbor-totoro-3f9c84f638.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b3d6e2a8839c4f5f1fd761ce0128b3f0.jpg",
+      "file": "dist/assets/event-images/on-this-carpet-fd659c9065.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4fc48ae30b1d0dbb317bb0591965d908.jpg",
+      "file": "dist/assets/event-images/sense-the-home-05f5b809d7.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a4795fe8ad5fcaabfa4fbe1a9fb5482a.jpg",
+      "file": "dist/assets/event-images/water-challenges-8d408f33fd.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a3b20b8e0c030c9ef25ac3aa540971ab.jpg",
+      "file": "dist/assets/event-images/the-house-of-ideas-85952c2c1b.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ab3ff0a2be0d82630a41a6c58b222403.jpg",
+      "file": "dist/assets/event-images/house-of-wonder-61e69155c8.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9cb3e48739ad64294e279bd3a23dadf7.jpg",
+      "file": "dist/assets/event-images/kindergarten-under-the-palm-tree-english-fd59c1ee33.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4899ef6ead03a33b6ae9c2359ab2f195.jpg",
+      "file": "dist/assets/event-images/unbox-your-story-c6dc19b0cf.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/00a340b39fdc9a81673ac198e27e48ab.jpg",
+      "file": "dist/assets/event-images/storyteller-of-the-day-d9b6d7c21c.jpg",
       "events": 1
     },
     {
@@ -235,7 +417,7 @@
     {
       "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-07/7.jpg?itok=HnrYjVdd",
       "file": "dist/assets/event-images/دورة-comptia-a-2358801bb0.jpg",
-      "events": 1
+      "events": 2
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/3.png?itok=7Upsv5tQ",
@@ -263,9 +445,14 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9bc17ba5c2c11392124d984206f68f22.jpg",
+      "file": "dist/assets/event-images/night-at-ithra-d006295ead.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2022-08/types-of-cloud-computing.png?itok=OuG9_dIR",
       "file": "dist/assets/event-images/أساسيات-الحوسبة-السحابية-cloud-computing-essentials-d84b80a7c2.png",
-      "events": 1
+      "events": 2
     },
     {
       "source_url": "https://hub.misk.org.sa/media/ovkjtk3x/artificial-intelligence.png",
@@ -273,9 +460,54 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/947c8f3cf9955abb14f13c7d27d75131.jpg",
+      "file": "dist/assets/event-images/ithra-summer-camp-2026-a-world-of-homes-2fce7df61a.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-07/wrr12.jpg",
       "file": "dist/assets/event-images/نقل-مبيدات-آفات-الصحة-العامة-dfaa164635.jpg",
       "events": 7
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a338131d3f3c0d13f3e55350cdfbbb73.jpg",
+      "file": "dist/assets/event-images/nature-s-architects-f04274c655.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ad2d76d651cdebdf25e8281828e3308f.png",
+      "file": "dist/assets/event-images/nim-adventures-66708f0c2b.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/32082b77dec6984cba45612d16a16f42.png",
+      "file": "dist/assets/event-images/virtual-to-reality-924a9f8bce.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/22bae4b046bb7b233edc1e50d7dfdcce.jpg",
+      "file": "dist/assets/event-images/finding-nemo-4d5a57dee0.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6157f51c92a2893ce920bbd5ca35f797.jpg",
+      "file": "dist/assets/event-images/open-art-space-4910232c8c.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/85d5578f24bf5b2a9e720c84eec26adc.jpg",
+      "file": "dist/assets/event-images/english-children-book-club-7-9-5174b0b666.jpg",
+      "events": 4
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d9bf7aded9306f8c7266477951ef3d49.jpg",
+      "file": "dist/assets/event-images/kinusaiga-art-a47d48296f.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1bfbc17fa9fc0e794418752ac39ebb8d.jpg",
+      "file": "dist/assets/event-images/your-book-in-a-minute-5cc468c06d.jpg",
+      "events": 1
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/CITRUS-FESTIVAL-Hero-Desktop-2880x1620?wid=1600&hei=900&fit=constrain&fmt=webp",
@@ -288,14 +520,74 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ab9d6fe97ce2e131a314c39ed6772096.jpg",
+      "file": "dist/assets/event-images/tales-of-the-night-sky-english-f55a234a58.jpg",
+      "events": 2
+    },
+    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/psvxh1jc.vwh.png",
       "file": "dist/assets/event-images/معسكر-تصميم-وتصنيع-الحلول-الهندسية-a59ff44dd2.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fdb75fd81cbee99ea30222efe695233a.png",
+      "file": "dist/assets/event-images/the-magical-suitcase-d1e9724d19.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/61a5b325e26d1721cdcfde9a4eb998fd.png",
+      "file": "dist/assets/event-images/the-lorax-3d0476ead6.png",
       "events": 1
     },
     {
       "source_url": "https://firebasestorage.googleapis.com/v0/b/event-jcci/o/media%2FISO_41001__copy_jpg-1783588238480-g5a8isz8p58.jpeg?alt=media&token=ac8d9502-40b9-4cc7-94c9-6daa7317f05f",
       "file": "dist/assets/event-images/متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة-e5660de944.jpg",
       "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9f257f8faf39a4d36e6098ffa98b5ada.jpg",
+      "file": "dist/assets/event-images/introduction-to-jewelry-making-techniques-08b9ea7ebc.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4021d960e395deebef413e3d00023cb5.jpg",
+      "file": "dist/assets/event-images/book-signings-4ef17644ea.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/bf597790435aaae1d2d8ada7df32b350.jpg",
+      "file": "dist/assets/event-images/reading-and-the-child-s-personality-2ab696aae6.jpg",
+      "events": 5
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/85b2b63774124458f54bf3981b2a15b3.jpg",
+      "file": "dist/assets/event-images/meet-with-an-expert-fatimah-sharafeddine-859896fce7.jpg",
+      "events": 4
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d82c4b8a27ac6bfea316ddbb6df07297.png",
+      "file": "dist/assets/event-images/painted-lamps-6ed4be3191.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d3743b474df21d4119abc873f921c759.jpg",
+      "file": "dist/assets/event-images/today-s-story-narrator-with-samar-barraj-3f7e391070.jpg",
+      "events": 3
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/7065e6e1e765661f4a44c78da1021235.jpg",
+      "file": "dist/assets/event-images/take-a-closer-look-at-the-preparation-process-for-the-plays-competing-470ce0d879.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/021dbae93d2b03cf4faffc8cb85e03d7.jpg",
+      "file": "dist/assets/event-images/youth-book-club-acf92e6dc3.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a7d7f2716b488d5a78bf643c97c24ebe.jpg",
+      "file": "dist/assets/event-images/from-a-paper-to-a-book-in-the-libraries-of-the-world-3adcae3693.jpg",
+      "events": 2
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/%282%29%20%281%29.png?itok=BEC7XaXW",
@@ -323,6 +615,121 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/34a91e4e84d3e4a79a05114daaabbfcb.jpg",
+      "file": "dist/assets/event-images/tinkering-stations-1fefe4f4f1.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4dc402fa30dd57d68581aa05f1ce5c0f.jpg",
+      "file": "dist/assets/event-images/spot-of-inspiration-0f891a4330.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/df659f937227e0e3b989ee5698288e94.jpg",
+      "file": "dist/assets/event-images/children-s-museum-story-time-0b7f442de4.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c106a0c8f6497e29241fc97f368d2be4.jpg",
+      "file": "dist/assets/event-images/children-s-art-studio-4f842a30bc.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/f63629974556fd3642fc133c437a45df.jpg",
+      "file": "dist/assets/event-images/energy-lab-bae21e6134.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a21934b0416a6f32d59a3124407ca98b.jpg",
+      "file": "dist/assets/event-images/survival-journey-cf5b8c030f.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/60534c243269321c0665c696e8594e0f.jpg",
+      "file": "dist/assets/event-images/idea-lab-majlis-940e781716.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b5d9b257f76e8e22988d937aea95efaa.jpg",
+      "file": "dist/assets/event-images/hobby-with-expert-health-and-sports-93b518d704.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5d9089ccc5309c4c20ca0c1099df3ab1.jpg",
+      "file": "dist/assets/event-images/chess-hub-3cbbdfff18.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/80f522efd4107e277b60a5b14d414771.jpg",
+      "file": "dist/assets/event-images/swim-r-mission-3b2e3d2c10.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/388c96722ea7802636485fc7640da5a1.jpg",
+      "file": "dist/assets/event-images/energy-in-motion-bba2390362.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5031b376aa4c8c1488517597db5bca86.jpg",
+      "file": "dist/assets/event-images/family-challenges-e3db77fbac.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3c0e886119ed7d6dc6e96bff14dbcb78.jpg",
+      "file": "dist/assets/event-images/trivia-night-earth-quest-tic-tac-know-c5700ded56.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/65968408a9d3f0c694f39a86ea6e3a9c.jpg",
+      "file": "dist/assets/event-images/nu-power-30a035f1b7.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/0e6478ba150972b2c8690feb03167d72.jpg",
+      "file": "dist/assets/event-images/the-moral-of-the-story-a19cde13da.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3028e58e79c097efe11df08b7a04a1b6.png",
+      "file": "dist/assets/event-images/grand-art-space-9d738f462b.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/54557d2e58629050eaeb37d4f43e3623.jpg",
+      "file": "dist/assets/event-images/stories-from-ithra-s-library-a855c19f5b.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c5b090989cac0c53d5c9a27a3ed1234d.jpg",
+      "file": "dist/assets/event-images/the-non-stop-spin-33e21a6337.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/0831e607b81b99046024c689736852e7.jpg",
+      "file": "dist/assets/event-images/family-game-4d2847f9c7.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/01b5d57ab150c4fcccb439292ba92ac3.jpg",
+      "file": "dist/assets/event-images/toddler-saturday-f5e0116f13.jpg",
+      "events": 2
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/dd5ff655b67bc2f07a32214394e9129d.jpg",
+      "file": "dist/assets/event-images/connect-and-create-4fc4440494.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6519ce3982b405e399c3a7313853a2bf.jpg",
+      "file": "dist/assets/event-images/workshop-at-the-library-264921ca4b.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/542f6f8fa297bb62aeddcdcdc1697de1.jpg",
+      "file": "dist/assets/event-images/all-things-hedgehogs-3951d075be.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/4ilqvrk1.uuc.webp",
       "file": "dist/assets/event-images/معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات-4ae6ec31c9.webp",
       "events": 1
@@ -338,8 +745,43 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2a93a513735da824f0d28d0a8d24b99d.jpg",
+      "file": "dist/assets/event-images/children-s-museum-free-monday-197cdfde54.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/520804fd4caae096d74b7963ab6c3119.jpg",
+      "file": "dist/assets/event-images/paint-like-an-artist-4ea915212b.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/44c29a424fe8b0284cf1d63032466fa6.jpg",
+      "file": "dist/assets/event-images/the-almost-perfect-guide-to-event-management-4d1c29907d.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9ddce5702230478442505d6706277c6a.jpg",
+      "file": "dist/assets/event-images/tangram-ea2359d77f.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a180e5434be9644a539053e8899ce50a.jpg",
+      "file": "dist/assets/event-images/ithra-readers-club-e3aa82a27b.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://scth.scene7.com/is/image/scth/international-falcon-breeders-auction-in-riyadh?wid=1920&hei=1080&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/international-falcon-breeders-auction-40c948e3c1.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/88b13d1d2de978df78f18c8d6c7c1d7b.jpg",
+      "file": "dist/assets/event-images/little-explorers-7671ac0b7f.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2fcd7911e5e79f6eeaedb4d9031f71b0.jpg",
+      "file": "dist/assets/event-images/dots-on-letters-28119e3242.jpg",
       "events": 1
     },
     {
@@ -350,6 +792,16 @@
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/4imooj3a.lm4.webp",
       "file": "dist/assets/event-images/معسكر-الأنظمة-الذاتية-للدرونز-7b0d0348ca.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/e5b8be6fa3a209657ca287b675a308b4.jpg",
+      "file": "dist/assets/event-images/platforms-manager-skills-4ccfdc9203.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5220b80aaa7e087afc6b0ee18cc23ba3.png",
+      "file": "dist/assets/event-images/creative-character-design-f8b2d539d8.png",
       "events": 1
     },
     {
@@ -453,6 +905,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/8d214c6ed8f45408bf725ff016fe5cba.jpg",
+      "file": "dist/assets/event-images/podcast-production-from-the-field-to-storytelling-dc8bdf3914.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://hub.misk.org.sa/media/duyhwegb/intagram.svg",
       "file": "dist/assets/event-images/the-innovation-diwan-f02f359761.svg",
       "events": 1
@@ -488,6 +945,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/19d1952725ab7da71f45c678173b1866.jpg",
+      "file": "dist/assets/event-images/islamic-wood-mastery-inlay-hexagonal-jewelry-box-joinery-for-mangour-s-b34d018214.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://scth.scene7.com/is/image/scth/fibo-arabia?wid=1920&hei=1080&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/fibo-arabia-2026-5a9221f06b.webp",
       "events": 1
@@ -518,6 +980,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/bc26222ac54f92c203ba9900210a1cd8.jpg",
+      "file": "dist/assets/event-images/hobby-with-expert-translation-b861847de3.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://swa-cdn.swa.gov.sa/Events/b4fed1f10c414a39a5c49cd9fda6a63d_2026_05_20_07_35_20_655.png",
       "file": "dist/assets/event-images/global-infrastructure-expo-1935b0ae77.png",
       "events": 1
@@ -538,6 +1005,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/621cff36bdbfb99011f6e2f7b91edc14.jpg",
+      "file": "dist/assets/event-images/the-art-of-looking-at-art-528b3ca03c.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/Cover-Banner.png?itok=KT7YvNG-",
       "file": "dist/assets/event-images/facility-management-conference-exhibition-4d4d574dbb.png",
       "events": 1
@@ -550,6 +1022,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/F%20Gu_yE-xWIAAqBvu.jpeg?itok=tEBuPjK9",
       "file": "dist/assets/event-images/the-saudi-food-show-05498df4f1.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1f863e71b2332867064fdab8fb85e7f3.jpg",
+      "file": "dist/assets/event-images/the-playful-art-of-critical-thinking-0f43287ff4.jpg",
       "events": 1
     },
     {
@@ -568,6 +1045,36 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/afc589ad447422ccf7b5f40960fd1425.jpg",
+      "file": "dist/assets/event-images/advanced-wheel-throwing-23a0c7641e.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/7d5f0dd18004eb67d740a16e424c38f2.jpg",
+      "file": "dist/assets/event-images/how-to-edit-fictional-texts-f6190a8eb7.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/99264b28f44e86dab86ebb61a017ffed.jpg",
+      "file": "dist/assets/event-images/the-soul-of-place-leveraging-folklore-and-local-heritage-in-narrative--45d3e43633.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://mebankingai.com/whatsapp.png",
+      "file": "dist/assets/event-images/12th-middle-east-banking-ai-analytics-summit-2026-bc988c16fd.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://meenterpriseai.com/whatsapp.png",
+      "file": "dist/assets/event-images/15th-middle-east-enterprise-ai-analytics-summit-6a711e9760.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fd743dc190d99ded6708dfc96b3a1d68.jpg",
+      "file": "dist/assets/event-images/immersive-introduction-to-arabic-writing-and-type-design-1c7ab6de8f.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/1Q7A3687-desktop-hero-2880x1620?wid=1600&hei=900&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/alula-wellness-festival-acf0c2fa83.webp",
       "events": 1
@@ -575,6 +1082,11 @@
     {
       "source_url": "https://www.eyeofriyadh.com/events/events_images/2025/08/73c7ac8fdc4d.jpg",
       "file": "dist/assets/event-images/global-proptech-summit-2026-665b431b41.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3446449530b9e6bb40e54a10959b0acf.jpg",
+      "file": "dist/assets/event-images/the-art-of-public-speaking-571bd8329a.jpg",
       "events": 1
     },
     {
@@ -598,6 +1110,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/0301c13b598e8fc8d228f10919a6bad0.png",
+      "file": "dist/assets/event-images/the-orbits-of-arabic-calligraphy-06ba8042fb.png",
+      "events": 1
+    },
+    {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/0016_Hot_Air_Balloon-Desktop-Hero-2880x1620?wid=1600&hei=900&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/alula-skies-festival-00c3b24f91.webp",
       "events": 1
@@ -613,8 +1130,18 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a6df327d199be9574f121467e642759d.jpg",
+      "file": "dist/assets/event-images/the-art-of-islamic-illumination-e68faec5bb.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/02-gusham-desktop-hero-2880x1620?wid=1600&hei=900&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/ancient-kingdoms-festival-5b41946fbd.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a0c7faa31852000cd0e48ddd9c8ce3ee.jpg",
+      "file": "dist/assets/event-images/making-short-films-79f15d1791.jpg",
       "events": 1
     },
     {
@@ -633,8 +1160,23 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6f6c1fc4ec458d7d7b35e96d64b41cdd.jpg",
+      "file": "dist/assets/event-images/arabic-calligraphy-woodworks-from-script-to-object-e54fab4cf8.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/33a0b815ceea85d12caead62a174150a.jpg",
+      "file": "dist/assets/event-images/content-creation-for-conversational-podcasts-855561878a.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/shorfat-aljadidah-hero-2880x1620-02?wid=1600&hei=900&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/winter-at-tantora-82f432dbc6.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/96d2a1e8dcdaf86940cde863416e9f3b.jpg",
+      "file": "dist/assets/event-images/the-art-of-writing-a-novel-6ea7798bd4.jpg",
       "events": 1
     },
     {
@@ -688,8 +1230,178 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ffd391d6ab1a31514641bf1e5723a1c6.jpg",
+      "file": "dist/assets/event-images/free-monday-children-s-festival-at-the-children-museum-833a2c24ca.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/57ced1047619d76eed02cbbfb34191f7.jpg",
+      "file": "dist/assets/event-images/philosophy-for-everyone-a-journey-of-thought-from-young-to-old-1dc740ef9e.jpg",
+      "events": 3
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9c5873773d4292a9e3ae3723253da66b.jpg",
+      "file": "dist/assets/event-images/documentary-competition-group-4-c5f1d56372.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/560bafb34a47c331b1dc9ad85fc108c9.jpg",
+      "file": "dist/assets/event-images/baab-d957b34587.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/020d54be4c6194691645b3a8c40bd303.jpg",
+      "file": "dist/assets/event-images/spotlight-on-korean-cinema-group-4-760a37b2aa.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d343871bd059c4dd50f887d50009539f.jpg",
+      "file": "dist/assets/event-images/documentary-competition-group-2-e0e9895316.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b51e0cf777e8932c6a96587bf272ac38.jpg",
+      "file": "dist/assets/event-images/journey-film-group-3-9febeadde4.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ebd009e4f4dbefb1de3e9ee4546f625a.jpg",
+      "file": "dist/assets/event-images/sa3oud-wainah-96aaddef99.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c8dbd06910da7730a9a477501de4df71.jpg",
+      "file": "dist/assets/event-images/book-signing-sessions-1-f02020009b.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/729cf79cc190dce7b56c51d33b502b3a.jpg",
+      "file": "dist/assets/event-images/low-budget-films-opportunity-artistic-choice-or-a-phase-f80b6e67ef.jpg",
+      "events": 7
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/28f9d5ca7d51b069418295a0e37823e0.jpg",
+      "file": "dist/assets/event-images/journey-film-group-2-a7a5c63cc3.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/153fc3da163e569f742a34dbff93b1d4.jpg",
+      "file": "dist/assets/event-images/short-film-competition-group-3-30dc123771.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3b420c2ffc5f9acedea7b23126516b95.jpg",
+      "file": "dist/assets/event-images/a-matter-of-life-and-death-1b10618502.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c8f42f6d093fc583e1a522ae5b065cb9.jpg",
+      "file": "dist/assets/event-images/parallel-films-group-2-1ce5c62339.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fecca42a5edde20fadea3cd4911749b2.jpg",
+      "file": "dist/assets/event-images/book-signing-sessions-2-b580e79734.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-06/%D9%88%D8%B1%D8%B4%D8%A9%20%D8%B9%D9%85%D9%84%20-%20%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D9%8A%D9%81%20%D8%A8%D8%A7%D9%84%D8%AA%D8%AD%D8%AF%D9%8A%D8%AB%D8%A7%D8%AA%20%D8%B9%D9%84%D9%89%20%D9%86%D8%B8%D8%A7%D9%85%20%D8%A7%D9%84%D8%A7%D8%AC%D9%87%D8%B2%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%84%D8%B2%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%A9.jpg",
       "file": "dist/assets/event-images/التعريف-بالتحديثات-على-نظام-الأجهزة-والمستلزمات-الطبية-cce891ebbd.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/192262e62fd37f39db9bb251163db5d4.jpg",
+      "file": "dist/assets/event-images/journey-film-group-5-06a44ac4de.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3352cc0b0f473d0f81e2f57703216b31.jpg",
+      "file": "dist/assets/event-images/rabsha-5b8fb78b66.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/8aa6866dc71f32e9ce349d1df998eff4.jpg",
+      "file": "dist/assets/event-images/short-film-competition-group-2-06c8e147a8.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9ab504a7b58f639c569bad18edee9ee3.jpg",
+      "file": "dist/assets/event-images/spotlight-on-korean-cinema-group-2-9def9b01fe.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b968f1bee69678376ef9449738a80779.jpg",
+      "file": "dist/assets/event-images/designing-soundscapes-for-film-fe6207cc5a.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/68339e01a7fbe17d5f7759cb35bacba9.jpg",
+      "file": "dist/assets/event-images/irkalla-gilgamesh-s-dream-1f44fffefe.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/f381e692ad797786d6297885d0ae2b5b.jpg",
+      "file": "dist/assets/event-images/parallel-films-group-1-d83394b920.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1fb536bac645fb83866cc982e2a309a2.jpg",
+      "file": "dist/assets/event-images/short-film-competition-group-1-39f3199c32.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2d31aad00d0d3e0df84bbd1e595de182.jpg",
+      "file": "dist/assets/event-images/spotlight-on-korean-cinema-group-3-164be6d12e.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2f01fa3711992cfcb94a21aa94d75878.jpg",
+      "file": "dist/assets/event-images/documentary-competition-group-1-cd02826ba8.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5148dc12ecf378891d40b79463be2122.jpg",
+      "file": "dist/assets/event-images/journey-film-group-1-abb6f58d49.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/260e65f936a1f5c45da49eb41456cb4c.jpg",
+      "file": "dist/assets/event-images/textured-painting-bb6433ce72.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4ee75026c1380525ab95646206e3901b.jpg",
+      "file": "dist/assets/event-images/film-screenings-af1ef83177.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6de73774b39094442034156cc5f7f4fe.jpg",
+      "file": "dist/assets/event-images/hijra-c10c3a2a68.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fe52134dbaddeb838f577a8c7d1f95b0.jpg",
+      "file": "dist/assets/event-images/spotlight-on-korean-cinema-group-1-8b11d9949f.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b8aa1df70855161b23e027b4424dbbee.jpg",
+      "file": "dist/assets/event-images/production-market-ec30f7727d.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/e122e64d061155cb3737d462408108f6.png",
+      "file": "dist/assets/event-images/the-world-as-your-canvas-introduction-to-ar-19c028814e.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4b6aa487820d2c6149ce488b8fe297a5.jpg",
+      "file": "dist/assets/event-images/red-carpet-f62ab36481.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/cac5cfb1902e9a2d74bbfb53a20dc22a.jpg",
+      "file": "dist/assets/event-images/designing-presence-057587ef40.jpg",
       "events": 1
     },
     {
@@ -703,8 +1415,18 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/79ad3bdcca4c8170bcad667f945cd048.jpg",
+      "file": "dist/assets/event-images/the-fundamentals-of-voiceover-1159f7a2db.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://tc.qcc.org.sa/storage/258/6a2f8ea226a73_%D8%A7%D9%95%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%AA%D8%A7%D9%94%D9%85%D9%8A%D9%86_%D8%A7%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%86.jpg",
       "file": "dist/assets/event-images/أساسيات-إدارة-التأمين-في-المنشآت-والشركات-a7f66cbfea.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/713f62a0bef5281b29f4a52cd3cfe041.jpg",
+      "file": "dist/assets/event-images/creating-content-for-anthological-podcasts-97b3453b1e.jpg",
       "events": 1
     },
     {
@@ -728,13 +1450,253 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/291afdeb11c69d2d5f04f5884a1f9c77.jpg",
+      "file": "dist/assets/event-images/the-art-of-improvisation-speaking-confidently-without-preparation-6836fc4c8b.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://tc.qcc.org.sa/storage/257/6a1d99d4711e8_%D9%85%D9%88%D9%94%D8%B4%D8%B1%D8%A7%D8%AA-kpi_%D8%A7%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%86.jpg",
       "file": "dist/assets/event-images/إدارة-الأداء-المؤسسي-وتقييم-الموظفين-وفق-مؤشرات-kpi-9fabb57f63.jpg",
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/04eba3ba969097eeeda2d6b889593523.jpg",
+      "file": "dist/assets/event-images/arabic-type-course-913647274b.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/27d93f7e6350504873360cfe5639df2f.jpg",
+      "file": "dist/assets/event-images/car-making-lego-station-c9b01876bf.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/62b616807e4771790d03646440e81225.png",
+      "file": "dist/assets/event-images/f1-driver-exhibition-cec2372a2f.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d947abc74a6d0061d30aa28874529363.jpg",
+      "file": "dist/assets/event-images/f1-simulators-activity-7caaf94ecc.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1ccd9173defddf1ed50b8b8b3233c241.jpg",
+      "file": "dist/assets/event-images/musical-band-bb362b0db4.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/032e0e893493535bb537e8d32b29432a.jpg",
+      "file": "dist/assets/event-images/spend-an-hour-with-one-of-the-theater-experts-0272b93b0a.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c8e912b652faf2a27bd41440128b2e03.jpg",
+      "file": "dist/assets/event-images/jewelry-making-rings-101-0960f8aa44.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1320a46de4548f3704f79bfe13b25247.png",
+      "file": "dist/assets/event-images/humood-alkhudher-an-eid-celebration-at-ithra-theater-0806a49618.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4427f8aa026ef4d62fef230cf2df561b.jpg",
+      "file": "dist/assets/event-images/e-t-474dec9466.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/569cc0c926c97e9d669b360d29979d8f.jpg",
+      "file": "dist/assets/event-images/warm-echos-6822589fb2.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9a047ec3c2149b9aa5402fb5e55255ac.jpg",
+      "file": "dist/assets/event-images/eid-stories-73ff8bcf0c.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/37c98377a760bbd988d8113acd2bd001.jpg",
+      "file": "dist/assets/event-images/grandma-s-eid-tales-20028dc20e.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/f72b7698b7be88f3d7206eb2055f8822.jpg",
+      "file": "dist/assets/event-images/song-of-the-sea-393bf814e8.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/298932653b5a3870e33976676d9a8ee8.jpg",
+      "file": "dist/assets/event-images/sounds-of-joy-08daeeefda.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5db70cbc59d960c348ad9751ed8ea787.jpg",
+      "file": "dist/assets/event-images/eid-competition-84f951ac85.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/f5562a8367fc3071de7d8b898046ef63.png",
+      "file": "dist/assets/event-images/audience-challenge-c2eb0ac6b2.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/17d42934c6143e5935f117b0dd1d3d63.jpg",
+      "file": "dist/assets/event-images/eid-cabinet-77a9ae5ac1.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/8f5bdd4fc76a219380aa97edab8e7a56.jpg",
+      "file": "dist/assets/event-images/home-scent-1d527729f7.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9e8aff524b1bdd490f3b2984b30d600d.png",
+      "file": "dist/assets/event-images/at-elevation-15198717f2.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/036c6d0689f03b2f7fa68e88fd9e67d2.jpg",
+      "file": "dist/assets/event-images/home-frame-f0012cd995.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1b1d1fa1dc25d95d5e6aeb761fc9afd5.png",
+      "file": "dist/assets/event-images/the-taste-of-nostalgia-ff2a407972.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ee031d2ceb6f3607c75d9f1368528710.png",
+      "file": "dist/assets/event-images/dots-of-joy-1a6d887ed4.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/782b8871899187c00909ff4d45d49315.png",
+      "file": "dist/assets/event-images/eid-news-9a53c40294.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c7e6834a5f70a18f6a7160979bb0b563.jpg",
+      "file": "dist/assets/event-images/capture-the-joy-9c1a73706a.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/540d8bbd02bb6ae0f812b8b0523fda9e.jpg",
+      "file": "dist/assets/event-images/eid-spectrum-b3910b56e5.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ba898a3b3b1384fdd947ee484222609c.png",
+      "file": "dist/assets/event-images/eid-tea-tales-a3dde10248.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b17af50fbc49e1d428dba6cce4681cfe.jpg",
+      "file": "dist/assets/event-images/family-studio-dacc244fd4.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/f71b323caa140617946161115434bb70.jpg",
+      "file": "dist/assets/event-images/journey-of-emotions-1be9a330b2.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a69d3d91f4735fd80ca802a1a6d348ab.png",
+      "file": "dist/assets/event-images/make-it-eid-07133594ec.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c8d8f14175238982ceaaf0686db5940c.jpg",
+      "file": "dist/assets/event-images/on-grandma-s-wall-0ecd57e6db.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/e63b6e66659791e8e35456d7ed2d3e2e.jpg",
+      "file": "dist/assets/event-images/story-in-the-scent-854d49caa9.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/8a2543050f5d17479d60abe00493f76d.jpg",
+      "file": "dist/assets/event-images/sustainability-studio-71ae293b21.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d0143332d8f07561f62f57ec45ed3727.jpg",
+      "file": "dist/assets/event-images/the-emotion-scent-journey-e979c3a2b3.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/07b0a69e6ba7dc3d417448ed35ab313e.jpg",
+      "file": "dist/assets/event-images/the-hidden-hue-09c812045a.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/99575cb32705375232191e6270f95b8d.png",
+      "file": "dist/assets/event-images/toddler-s-space-c13be4b92d.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/e0a40009c239be9e209d9f729c3844e2.jpg",
+      "file": "dist/assets/event-images/material-library-experience-2fe6e254bb.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9b23657ec4f2a966cf60f92728f44962.jpg",
+      "file": "dist/assets/event-images/art-in-virtual-motion-906a3300d1.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a9b2ca4960f5bc97d8d0cfc4605c1fc7.jpg",
+      "file": "dist/assets/event-images/the-participants-journey-of-the-ithra-s-short-play-contest-2026-293d17e460.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b3d2dd17e9a7412dd24eca90d6ce1d8b.png",
+      "file": "dist/assets/event-images/land-of-khuzama-1999-4eae97c1e0.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c47683fb579ecc7a50e89aca87fd3437.png",
+      "file": "dist/assets/event-images/creative-writing-club-211e3f3700.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4bc8d80c1e68a4c54fdfa603dbd2cac0.jpg",
+      "file": "dist/assets/event-images/ithra-public-tour-english-f48215244e.jpg",
+      "events": 2
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6580b13515bcdc09719a443143c8d5a3.png",
+      "file": "dist/assets/event-images/where-does-it-come-from-5769952bda.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ede25c9dc810397fce8527375c8f75bf.jpg",
+      "file": "dist/assets/event-images/aramcorama-exhibit-bc852ac4b4.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b9dab29976790617352fa739f30a9172.jpg",
+      "file": "dist/assets/event-images/in-praise-of-the-artisan-f673088221.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/925c065f967c6b1de12248056986bf91.jpg",
+      "file": "dist/assets/event-images/rehlaat-exhibit-9ea8ea55af.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/8f71076ba3d271bd0ffb06c56d782c34.jpg",
+      "file": "dist/assets/event-images/creative-installations-with-precast-1706906e6d.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://firebasestorage.googleapis.com/v0/b/event-jcci/o/media%2Fevent-22-04-2026-1776868526993-hv5i81e4mju.jpeg?alt=media&token=26801ccb-3fae-4f56-a265-a7602f8d87ae",
       "file": "dist/assets/event-images/حلول-التمويل-للشركات-الصغيرة-والمتوسطة-15ec906ba0.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b5b670c6fd81c76feb0075372d3eb871.jpg",
+      "file": "dist/assets/event-images/ithra-museum-free-wednesday-292629892d.jpg",
       "events": 1
     },
     {
@@ -843,13 +1805,8 @@
       "events": 1
     },
     {
-      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/2022-08/WhatsApp%20Image%202021-12-08%20at%201.25.06%20PM.jpeg",
-      "file": "dist/assets/event-images/أساسيات-الحوسبة-السحابية-cloud-computing-fundamentals-fb1e60a8ef.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/2022-10/WhatsApp%20Image%202021-12-08%20at%201.25.06%20PM_2.jpeg",
-      "file": "dist/assets/event-images/web-development-with-html-css-تطوير-الويب-باستخدام-html-و-css-3f9541506f.jpg",
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2022-10/top11.png?itok=_yYcTbnn",
+      "file": "dist/assets/event-images/web-development-with-html-css-تطوير-الويب-باستخدام-html-و-css-e3bfe60e13.png",
       "events": 1
     },
     {
@@ -873,13 +1830,13 @@
       "events": 1
     },
     {
-      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/2022-06/WhatsApp%20Image%202021-12-08%20at%201.25.06%20PM_3.jpeg",
-      "file": "dist/assets/event-images/aws-security-essential-fb6d62a41b.jpg",
+      "source_url": "https://ncci.org.sa/wp-content/uploads/2025/11/%D8%B1%D8%AD%D9%84%D8%A9-%D8%A5%D9%84%D9%89-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9-%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A9.jpg",
+      "file": "dist/assets/event-images/دورة-رحلة-إلى-عالم-الضيافة-والخدمة-59a58dae0b.jpg",
       "events": 1
     },
     {
-      "source_url": "https://ncci.org.sa/wp-content/uploads/2025/11/%D8%B1%D8%AD%D9%84%D8%A9-%D8%A5%D9%84%D9%89-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9-%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A9.jpg",
-      "file": "dist/assets/event-images/دورة-رحلة-إلى-عالم-الضيافة-والخدمة-59a58dae0b.jpg",
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d8565b5e78b2d0761347e3169962c3c5.jpg",
+      "file": "dist/assets/event-images/games-hub-9ae2a7e0d7.jpg",
       "events": 1
     },
     {
@@ -890,7 +1847,12 @@
     {
       "source_url": "https://code.mcit.gov.sa/sites/default/files/inline-images/digital.png",
       "file": "dist/assets/event-images/daman-proptech-challenge-2eea8247e5.png",
-      "events": 6
+      "events": 7
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fc8166cf5cfe3b9fc68c32ee5f97245a.jpg",
+      "file": "dist/assets/event-images/story-land-836edf7fa9.jpg",
+      "events": 1
     },
     {
       "source_url": "https://abhacci.org.sa/files/images/126.jpg",
@@ -905,11 +1867,6 @@
     {
       "source_url": "https://ssa.gov.sa/media/nipon1fn/15june-1.webp?width=1400&height=788&rnd=134268819563230000",
       "file": "dist/assets/event-images/the-saudi-arabia-participated-in-the-64th-session-of-the-legal-subcomm-4dcf7050f6.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://code.mcit.gov.sa/sites/default/files/2025-07/WhatsApp%20Image%202025-07-17%20at%2012.33.20%20PM.jpeg",
-      "file": "dist/assets/event-images/code-ai-incubator-18c132425f.jpg",
       "events": 1
     },
     {

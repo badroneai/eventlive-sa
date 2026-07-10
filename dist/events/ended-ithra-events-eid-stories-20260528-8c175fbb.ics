@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Eid Stories | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-ithra-events-eid-stories-20260528-8c175fbb@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260528T140000Z
+DTEND:20260531T192000Z
+SUMMARY:Eid Stories
+DESCRIPTION:Join us with your family at Ithra Library during Eid Al-Adha where we follow the storyteller&rsquo\;s attempts to show us why Eid at his home is truly special. Along the way\, we discover that Eid moves feelings and fills homes! We then continue with a fun interactive activity\, where we share our thoughts and write Eid messages\, expressing gratitude to our families and celebrating the special feelings Eid brings.
+LOCATION:Library - Level 2
+URL:https://eventme.live/events/ended-ithra-events-eid-stories-20260528-8c175fbb.html
+END:VEVENT
+END:VCALENDAR

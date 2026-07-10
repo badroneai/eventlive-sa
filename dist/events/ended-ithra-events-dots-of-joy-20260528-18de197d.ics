@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Dots of Joy | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-ithra-events-dots-of-joy-20260528-18de197d@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260528T130500Z
+DTEND:20260531T201500Z
+SUMMARY:Dots of Joy
+DESCRIPTION:A joyful art adventure filled with colors and laughter! In it\, children place their colorful stickers to express their Eid feelings on a white space\, which gradually transforms into a lively\, vibrant artwork. Every dot carries a smile\, and together we create a happiness that keeps growing.
+LOCATION:Children's Museum
+URL:https://eventme.live/events/ended-ithra-events-dots-of-joy-20260528-18de197d.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:On Grandma’s Wall | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-ithra-events-on-grandmas-wall-20260528-b9220969@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260528T130000Z
+DTEND:20260531T193000Z
+SUMMARY:On Grandma’s Wall
+DESCRIPTION:In this open art experience\, we celebrate Eid within a space inspired by Grandma&rsquo\;s house\, where warm memories return with a fresh\, contemporary spirit. Visitors step into a world that blends nostalgia with technology\, taking part in creating a living mural using virtual reality.
+LOCATION:Plaza
+URL:https://eventme.live/events/ended-ithra-events-on-grandmas-wall-20260528-b9220969.html
+END:VEVENT
+END:VCALENDAR

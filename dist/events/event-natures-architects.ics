@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Nature's Architects | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-natures-architects@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260713T130000Z
+DTEND:20260718T180000Z
+SUMMARY:Nature's Architects
+DESCRIPTION:Nature builds without blueprints\, yet every structure serves a clear purpose. The experience begins with a short film that reveals how living organisms design and construct their homes. This is followed by hands-on activities where children explore these ideas further\, testing\, building\, and observing how form responds to need. The workshop connects observation with practical understanding.
+LOCATION:Energy Exhibit
+URL:https://eventme.live/events/event-natures-architects.html
+END:VEVENT
+END:VCALENDAR

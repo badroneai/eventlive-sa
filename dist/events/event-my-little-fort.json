@@ -1,0 +1,604 @@
+{
+  "id": "event-my-little-fort",
+  "title": "My Little Fort",
+  "summary": "Many children create small spaces of their own at home&mdash;under a table, behind cushions, or inside a blanket fort. In this hands-on activity, children build their own small &ldquo;fort&rdquo; using soft materials, shaping a space they can define and arrange. The session ends with a short story connected to the idea of shared spaces and home.",
+  "canonical_url": "https://eventme.live/events/event-my-little-fort.html",
+  "detail_url": "./events/event-my-little-fort.html",
+  "calendar_url": "./events/event-my-little-fort.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/childrens-festival-children-museum/my-little-fort",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/childrens-festival-children-museum/my-little-fort",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:08:07.323Z",
+  "verification_method": "registered-venue-official",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Children's Museum",
+  "venue_address": "Children's Museum",
+  "starts_at": "2026-07-10T17:00:00+03:00",
+  "ends_at": "2026-07-25T21:30:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 69,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/my-little-fort-65b28eb031.jpg",
+  "image_alt": "My Little Fort",
+  "category": "ترفيه وعائلات",
+  "category_url": "./categories/entertainment-families.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "My Little Fort",
+    "ترفيه وعائلات",
+    "family",
+    "برنامج ممتد",
+    "قادمة",
+    "الظهران",
+    "Children's Museum",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Activity",
+    "Children Festival",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-06T12:00:00+03:00",
+      "ends_at": "2026-07-06T12:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607061200-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-06T15:00:00+03:00",
+      "ends_at": "2026-07-06T15:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607061500-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-06T18:00:00+03:00",
+      "ends_at": "2026-07-06T18:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607061800-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-06T21:00:00+03:00",
+      "ends_at": "2026-07-06T21:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607062100-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-07T12:00:00+03:00",
+      "ends_at": "2026-07-07T12:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607071200-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-07T15:00:00+03:00",
+      "ends_at": "2026-07-07T15:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607071500-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-07T18:00:00+03:00",
+      "ends_at": "2026-07-07T18:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607071800-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-07T21:00:00+03:00",
+      "ends_at": "2026-07-07T21:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607072100-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-08T12:00:00+03:00",
+      "ends_at": "2026-07-08T12:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607081200-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-08T15:00:00+03:00",
+      "ends_at": "2026-07-08T15:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607081500-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-08T18:00:00+03:00",
+      "ends_at": "2026-07-08T18:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607081800-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-08T21:00:00+03:00",
+      "ends_at": "2026-07-08T21:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607082100-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-09T12:00:00+03:00",
+      "ends_at": "2026-07-09T12:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607091200-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-09T15:00:00+03:00",
+      "ends_at": "2026-07-09T15:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607091500-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-09T18:00:00+03:00",
+      "ends_at": "2026-07-09T18:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607091800-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-09T21:00:00+03:00",
+      "ends_at": "2026-07-09T21:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607092100-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-10T17:00:00+03:00",
+      "ends_at": "2026-07-10T17:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607101700-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-10T19:00:00+03:00",
+      "ends_at": "2026-07-10T19:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607101900-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-10T21:00:00+03:00",
+      "ends_at": "2026-07-10T21:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607102100-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-11T12:00:00+03:00",
+      "ends_at": "2026-07-11T12:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607111200-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-11T15:00:00+03:00",
+      "ends_at": "2026-07-11T15:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607111500-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-11T18:00:00+03:00",
+      "ends_at": "2026-07-11T18:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607111800-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-11T21:00:00+03:00",
+      "ends_at": "2026-07-11T21:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607112100-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-13T12:00:00+03:00",
+      "ends_at": "2026-07-13T12:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607131200-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-13T15:00:00+03:00",
+      "ends_at": "2026-07-13T15:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607131500-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-13T18:00:00+03:00",
+      "ends_at": "2026-07-13T18:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607131800-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-13T21:00:00+03:00",
+      "ends_at": "2026-07-13T21:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607132100-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-14T12:00:00+03:00",
+      "ends_at": "2026-07-14T12:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607141200-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-14T15:00:00+03:00",
+      "ends_at": "2026-07-14T15:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607141500-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-14T18:00:00+03:00",
+      "ends_at": "2026-07-14T18:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607141800-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-14T21:00:00+03:00",
+      "ends_at": "2026-07-14T21:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607142100-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-15T12:00:00+03:00",
+      "ends_at": "2026-07-15T12:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607151200-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-15T15:00:00+03:00",
+      "ends_at": "2026-07-15T15:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607151500-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-15T18:00:00+03:00",
+      "ends_at": "2026-07-15T18:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607151800-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-15T21:00:00+03:00",
+      "ends_at": "2026-07-15T21:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607152100-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-16T12:00:00+03:00",
+      "ends_at": "2026-07-16T12:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607161200-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-16T15:00:00+03:00",
+      "ends_at": "2026-07-16T15:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607161500-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-16T18:00:00+03:00",
+      "ends_at": "2026-07-16T18:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607161800-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-16T21:00:00+03:00",
+      "ends_at": "2026-07-16T21:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607162100-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-17T17:00:00+03:00",
+      "ends_at": "2026-07-17T17:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607171700-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-17T19:00:00+03:00",
+      "ends_at": "2026-07-17T19:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607171900-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-17T21:00:00+03:00",
+      "ends_at": "2026-07-17T21:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607172100-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-18T12:00:00+03:00",
+      "ends_at": "2026-07-18T12:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607181200-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-18T15:00:00+03:00",
+      "ends_at": "2026-07-18T15:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607181500-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-18T18:00:00+03:00",
+      "ends_at": "2026-07-18T18:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607181800-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-18T21:00:00+03:00",
+      "ends_at": "2026-07-18T21:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607182100-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-20T12:00:00+03:00",
+      "ends_at": "2026-07-20T12:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607201200-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-20T15:00:00+03:00",
+      "ends_at": "2026-07-20T15:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607201500-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-20T18:00:00+03:00",
+      "ends_at": "2026-07-20T18:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607201800-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-20T21:00:00+03:00",
+      "ends_at": "2026-07-20T21:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607202100-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-21T12:00:00+03:00",
+      "ends_at": "2026-07-21T12:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607211200-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-21T15:00:00+03:00",
+      "ends_at": "2026-07-21T15:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607211500-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-21T18:00:00+03:00",
+      "ends_at": "2026-07-21T18:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607211800-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-21T21:00:00+03:00",
+      "ends_at": "2026-07-21T21:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607212100-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-22T12:00:00+03:00",
+      "ends_at": "2026-07-22T12:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607221200-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-22T15:00:00+03:00",
+      "ends_at": "2026-07-22T15:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607221500-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-22T18:00:00+03:00",
+      "ends_at": "2026-07-22T18:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607221800-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-22T21:00:00+03:00",
+      "ends_at": "2026-07-22T21:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607222100-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-23T12:00:00+03:00",
+      "ends_at": "2026-07-23T12:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607231200-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-23T15:00:00+03:00",
+      "ends_at": "2026-07-23T15:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607231500-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-23T18:00:00+03:00",
+      "ends_at": "2026-07-23T18:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607231800-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-23T21:00:00+03:00",
+      "ends_at": "2026-07-23T21:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607232100-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-24T17:00:00+03:00",
+      "ends_at": "2026-07-24T17:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607241700-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-24T19:00:00+03:00",
+      "ends_at": "2026-07-24T19:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607241900-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-24T21:00:00+03:00",
+      "ends_at": "2026-07-24T21:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607242100-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-25T12:00:00+03:00",
+      "ends_at": "2026-07-25T12:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607251200-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-25T15:00:00+03:00",
+      "ends_at": "2026-07-25T15:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607251500-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-25T18:00:00+03:00",
+      "ends_at": "2026-07-25T18:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607251800-my-little-fort"
+    },
+    {
+      "title": "My Little Fort",
+      "starts_at": "2026-07-25T21:00:00+03:00",
+      "ends_at": "2026-07-25T21:30:00+03:00",
+      "room": "Children's Museum",
+      "anchor": "#session-ithra-18107-202607252100-my-little-fort"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "My Little Fort",
+    "startDate": "2026-07-10T17:00:00+03:00",
+    "endDate": "2026-07-25T21:30:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Children's Museum",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Children's Museum",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/my-little-fort-65b28eb031.jpg"
+    ],
+    "description": "Many children create small spaces of their own at home&mdash;under a table, behind cushions, or inside a blanket fort. In this hands-on activity, children build their own small &ldquo;fort&rdquo; using soft materials, shaping a space they can define and arrange. The session ends with a short story connected to the idea of shared spaces and home.",
+    "url": "https://eventme.live/events/event-my-little-fort.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-my-little-fort.html",
+    "isAccessibleForFree": true,
+    "keywords": "My Little Fort, ترفيه وعائلات, family, برنامج ممتد, قادمة, الظهران, Children's Museum, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Activity, Children Festival, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/childrens-festival-children-museum/my-little-fort"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/childrens-festival-children-museum/my-little-fort",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

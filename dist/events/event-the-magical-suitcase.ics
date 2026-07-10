@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:The Magical Suitcase | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-the-magical-suitcase@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260720T113000Z
+DTEND:20260725T183000Z
+SUMMARY:The Magical Suitcase
+DESCRIPTION:A pair of clowns\, Wachi and Pica\, arrive in town with a giant suitcase\, the biggest suitcase you have ever seen. It follows them wherever they go. Beneath this enormous suitcase\, you can spot the legs and shoes of four other clowns\, their friends. Follow them and discover who they are.
+LOCATION:Plaza
+URL:https://eventme.live/events/event-the-magical-suitcase.html
+END:VEVENT
+END:VCALENDAR

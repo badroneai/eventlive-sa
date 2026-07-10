@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Book Signing Sessions 1 | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-ithra-events-book-signing-sessions-1-20260630-9bf41472@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260630T123000Z
+DTEND:20260630T140000Z
+SUMMARY:Book Signing Sessions 1
+DESCRIPTION:Discussion sessions with the authors of the Saudi Cinema Encyclopedia Initiative books\, a collection of knowledge and cultural publications on cinema that enrich the Arabic library. These include newly authored and translated books\, as well as research exploring various dimensions of the film industry\, criticism\, documentation\, and analysis. The discussions are followed by a book signing session. Silence in CinemaA book signing session follows the discussions Chantal Akerman: The Genius of the Margins
+LOCATION:Library
+URL:https://eventme.live/events/ended-ithra-events-book-signing-sessions-1-20260630-9bf41472.html
+END:VEVENT
+END:VCALENDAR

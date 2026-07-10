@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Aramcorama Exhibit | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-ithra-events-aramcorama-exhibit-20260518-854df5c1@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260518T060000Z
+DTEND:20260525T200000Z
+SUMMARY:Aramcorama Exhibit
+DESCRIPTION:Aramcorama celebrates the legacy of Saudi Aramco through carefully curated historical images\, documents and artifacts. These unique objects capture the creation of the company and its pioneering efforts to provide opportunities and technological advances which helped lay the foundation for the modern Saudi state. The history of Saudi Aramco\, as captured by records drawn from its archival collections\, illustrates the collective effort that has transformed the Kingdom&rsquo\;s energy resources into a driver of the world&rsquo\;s economy.
+LOCATION:Museum - Gallery 5
+URL:https://eventme.live/events/ended-ithra-events-aramcorama-exhibit-20260518-854df5c1.html
+END:VEVENT
+END:VCALENDAR

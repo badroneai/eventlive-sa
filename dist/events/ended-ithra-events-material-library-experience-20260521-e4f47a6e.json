@@ -1,0 +1,169 @@
+{
+  "id": "ended-ithra-events-material-library-experience-20260521-e4f47a6e",
+  "title": "Material Library Experience",
+  "summary": "Explore natural dyes through a hands-on experience at Idea Lab&rsquo;s Material Library. Discover the vibrant colors in plants and everyday ingredients and explore a unique collection of unconventional and sustainable materials. The Material Library at Ithra is the first of its kind in the Kingdom of Saudi Arabia. It is a physical and digital material library curated in collaboration with Colab in Dubai to be an inspiring resource for sustainable and unique materials. The library offers its visitors, from designers, artists, and professionals in various fields, the opportunity to peruse a rich collection of materials from around the world, alongside materials from local and regional supplier",
+  "canonical_url": "https://eventme.live/events/ended-ithra-events-material-library-experience-20260521-e4f47a6e.html",
+  "detail_url": "./events/ended-ithra-events-material-library-experience-20260521-e4f47a6e.html",
+  "calendar_url": "./events/ended-ithra-events-material-library-experience-20260521-e4f47a6e.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2024/material-library-experience",
+  "evidence_url": "https://www.ithra.com/en/programme/2024/material-library-experience",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verification_method": "official-public-algolia-index",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Idea Lab - Level 4",
+  "venue_address": "Idea Lab - Level 4",
+  "starts_at": "2026-05-21T18:00:00+03:00",
+  "ends_at": "2026-05-23T19:45:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 6,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/material-library-experience-2fe6e254bb.jpg",
+  "image_alt": "Material Library Experience",
+  "category": "جامعات ومجتمع",
+  "category_url": "./categories/education-community.html",
+  "audiences": [
+    {
+      "slug": "professionals",
+      "label": "موظفون ومهنيون"
+    },
+    {
+      "slug": "tech",
+      "label": "تقنيون"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Material Library Experience",
+    "جامعات ومجتمع",
+    "learning",
+    "فعالية",
+    "منتهية",
+    "الظهران",
+    "Idea Lab - Level 4",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "Ithra",
+    "Workshop",
+    "ended-event",
+    "موظفون ومهنيون",
+    "تقنيون",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Material Library Experience",
+      "starts_at": "2026-05-21T18:00:00+03:00",
+      "ends_at": "2026-05-21T18:45:00+03:00",
+      "room": "Idea Lab - Level 4",
+      "anchor": "#session-ithra-10403-202605211800-material-library-experience"
+    },
+    {
+      "title": "Material Library Experience",
+      "starts_at": "2026-05-21T19:00:00+03:00",
+      "ends_at": "2026-05-21T19:45:00+03:00",
+      "room": "Idea Lab - Level 4",
+      "anchor": "#session-ithra-10403-202605211900-material-library-experience"
+    },
+    {
+      "title": "Material Library Experience",
+      "starts_at": "2026-05-22T18:00:00+03:00",
+      "ends_at": "2026-05-22T18:45:00+03:00",
+      "room": "Idea Lab - Level 4",
+      "anchor": "#session-ithra-10403-202605221800-material-library-experience"
+    },
+    {
+      "title": "Material Library Experience",
+      "starts_at": "2026-05-22T19:00:00+03:00",
+      "ends_at": "2026-05-22T19:45:00+03:00",
+      "room": "Idea Lab - Level 4",
+      "anchor": "#session-ithra-10403-202605221900-material-library-experience"
+    },
+    {
+      "title": "Material Library Experience",
+      "starts_at": "2026-05-23T18:00:00+03:00",
+      "ends_at": "2026-05-23T18:45:00+03:00",
+      "room": "Idea Lab - Level 4",
+      "anchor": "#session-ithra-10403-202605231800-material-library-experience"
+    },
+    {
+      "title": "Material Library Experience",
+      "starts_at": "2026-05-23T19:00:00+03:00",
+      "ends_at": "2026-05-23T19:45:00+03:00",
+      "room": "Idea Lab - Level 4",
+      "anchor": "#session-ithra-10403-202605231900-material-library-experience"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Material Library Experience",
+    "startDate": "2026-05-21T18:00:00+03:00",
+    "endDate": "2026-05-23T19:45:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Idea Lab - Level 4",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Idea Lab - Level 4",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/material-library-experience-2fe6e254bb.jpg"
+    ],
+    "description": "Explore natural dyes through a hands-on experience at Idea Lab&rsquo;s Material Library. Discover the vibrant colors in plants and everyday ingredients and explore a unique collection of unconventional and sustainable materials. The Material Library at Ithra is the first of its kind in the Kingdom of Saudi Arabia. It is a physical and digital material library curated in collaboration with Colab in Dubai to be an inspiring resource for sustainable and unique materials. The library offers its visitors, from designers, artists, and professionals in various fields, the opportunity to peruse a rich collection of materials from around the world, alongside materials from local and regional supplier",
+    "url": "https://eventme.live/events/ended-ithra-events-material-library-experience-20260521-e4f47a6e.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-material-library-experience-20260521-e4f47a6e.html",
+    "isAccessibleForFree": false,
+    "keywords": "Material Library Experience, جامعات ومجتمع, learning, فعالية, منتهية, الظهران, Idea Lab - Level 4, Ithra Events, culture, arts, creativity, community, exhibitions, Ithra, Workshop, ended-event, موظفون ومهنيون, تقنيون, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "موظفون ومهنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "تقنيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2024/material-library-experience"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2024/material-library-experience",
+      "availability": "https://schema.org/InStock",
+      "category": "20 SAR"
+    }
+  }
+}

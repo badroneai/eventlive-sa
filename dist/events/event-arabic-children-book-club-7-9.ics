@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Arabic Children Book Club (7 - 9) | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-arabic-children-book-club-7-9@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260805T150000Z
+DTEND:20260805T160000Z
+SUMMARY:Arabic Children Book Club (7 - 9)
+DESCRIPTION:Are you ready to motivate your children to read and discuss books in our monthly book club meetings? Encourage them to read and develop their linguistic\, social and conversational skills\, as we will discuss books with them at levels ranging from (Level Z or 7) to (Level M or 13) according to the Arabi 21 classification of the Arab Thought Foundation\, so that children can grow their reading experience gradually with approximately 30 to 200 words per page. We are waiting for you!
+LOCATION:Library - Level 2
+URL:https://eventme.live/events/event-arabic-children-book-club-7-9.html
+END:VEVENT
+END:VCALENDAR

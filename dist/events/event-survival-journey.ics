@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Survival Journey | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-survival-journey@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260727T140000Z
+DTEND:20260826T154500Z
+SUMMARY:Survival Journey
+DESCRIPTION:How can we adapt to our environment using the energy around us? How do elements of nature become sources that support our daily lives? Join us in an interactive experience where we explore how nature&rsquo\;s challenges can transform into useful sources of life. We observe\, experiment\, and imagine how certain solutions can become sustainable for the natural world.
+LOCATION:Energy Exhibit
+URL:https://eventme.live/events/event-survival-journey.html
+END:VEVENT
+END:VCALENDAR

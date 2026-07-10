@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { isPastCandidate, mergeEndedEvents, sourceCandidateDelta } from './collect-source-candidates.mjs';
+import { isPastCandidate, mergeCandidates, mergeEndedEvents, sourceCandidateDelta } from './collect-source-candidates.mjs';
 
 const source = { id: 'official-source', name: 'Official Source' };
 
@@ -81,6 +81,30 @@ assert.equal(delta.new_candidates, 1);
 assert.equal(delta.refreshed_candidates, 1);
 assert.equal(delta.missing_from_latest_run, 1);
 assert.equal(delta.approved_linked_preserved, 1);
+
+const refreshedRecurring = mergeCandidates([{
+  id: 'candidate-recurring-old',
+  source_label: 'Ithra Events',
+  source_url: 'https://www.ithra.com/en/programme/2026/recurring-program',
+  title: 'Recurring Program',
+  starts_at: '2026-07-10T10:00:00+03:00',
+  ends_at: '2026-08-01T12:00:00+03:00',
+  review_status: 'approved-for-catalog',
+  publication_gate: 'catalog-review',
+  matched_catalog_event_id: 'event-recurring-program'
+}], [{
+  id: 'candidate-recurring-new',
+  source_label: 'Ithra Events',
+  source_url: 'https://www.ithra.com/en/programme/2026/recurring-program',
+  title: 'Recurring Program',
+  starts_at: '2026-07-12T10:00:00+03:00',
+  ends_at: '2026-08-01T12:00:00+03:00',
+  sessions: [{ title: 'Next session', starts_at: '2026-07-12T10:00:00+03:00', ends_at: '2026-07-12T12:00:00+03:00' }]
+}], new Set(['Ithra Events']));
+assert.equal(refreshedRecurring.length, 1, 'a recurring official page must not accumulate a candidate per next-session date');
+assert.equal(refreshedRecurring[0].id, 'candidate-recurring-new');
+assert.equal(refreshedRecurring[0].matched_catalog_event_id, 'event-recurring-program');
+assert.equal(refreshedRecurring[0].review_status, 'approved-for-catalog');
 
 assert.equal(
   isPastCandidate({

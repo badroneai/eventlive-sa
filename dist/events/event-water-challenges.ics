@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Water Challenges | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-water-challenges@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260710T140000Z
+DTEND:20260731T190000Z
+SUMMARY:Water Challenges
+DESCRIPTION:Summer is here and you know what that means&hellip\; the water challenges are back! With all-new fun water-based challenges and activites\, and a special surprise to end the day with! A set of outdoor water-based activities where children move between water games that include pouring\, splashing\, and balancing tasks.
+LOCATION:Children's Oasis
+URL:https://eventme.live/events/event-water-challenges.html
+END:VEVENT
+END:VCALENDAR

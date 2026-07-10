@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:The Almost Perfect Guide to Event Management | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-the-almost-perfect-guide-to-event-management@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260803T133000Z
+DTEND:20260806T173000Z
+SUMMARY:The Almost Perfect Guide to Event Management
+DESCRIPTION:This introductory course welcomes anyone curious about event management\, regardless of prior experience. Over four interactive days \, participants will discover the core principles of organizing an event\, from concept and audience definition to budgeting\, logistics\, marketing and on-day operations. Working in small groups\, participants will choose their event type (cultural\, sport\, corporate or wedding) and develop a complete event plan from scratch\, which they present before a jury. Inspired by real-world case studies and a guest professional from the industry\, the course is as much a personal journey as a practical one\, challenging participants to think creatively\, collaborate under pressu
+LOCATION:Knowledge Tower - L9 - Classroom 2
+URL:https://eventme.live/events/event-the-almost-perfect-guide-to-event-management.html
+END:VEVENT
+END:VCALENDAR

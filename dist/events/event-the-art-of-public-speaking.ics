@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:The Art of Public Speaking | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-the-art-of-public-speaking@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20261026T133000Z
+DTEND:20261030T173000Z
+SUMMARY:The Art of Public Speaking
+DESCRIPTION:In an era where ideas and technology integrate\, presentations have become a key tool for delivering messages\, whether in work environments or at conferences and seminars. To develop the skills of those interested in the art of public speaking\, this comprehensive course was created to satisfy the passion of those seeking to improve their presentation skills\, including teachers\, lecturers\, employees in public and private sectors\, entrepreneurs\, conference participants and anyone interested in persuasion and influence through presentations. This course focuses on merging public speaking skills with visual presentation techniques\, enabling participants to deliver impactful\, clear and persuasive
+LOCATION:Ithra Tower - Level 9\, Classroom 2
+URL:https://eventme.live/events/event-the-art-of-public-speaking.html
+END:VEVENT
+END:VCALENDAR

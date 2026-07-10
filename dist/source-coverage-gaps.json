@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-10T09:13:06.464Z",
+  "generated_at": "2026-07-10T10:10:45.542Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "intent": "eventlive-source-coverage-gaps",
   "totals": {
-    "events": 622,
+    "events": 841,
     "cities": 35,
     "weak_cities": 20,
     "categories": 14,
     "weak_categories": 2,
     "source_risks": 16,
-    "active_events": 227,
-    "ended_events": 395,
-    "active_source_images": 192,
+    "active_events": 350,
+    "ended_events": 491,
+    "active_source_images": 315,
     "active_generated_covers": 35,
     "media_gaps": 24
   },
@@ -504,24 +504,6 @@
       "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
     },
     {
-      "key": "Dhahran",
-      "label": "الظهران",
-      "total": 28,
-      "active": 17,
-      "upcoming": 17,
-      "ongoing": 0,
-      "live": 0,
-      "ended": 11,
-      "live_ready": 0,
-      "source_count": 2,
-      "source_images": 15,
-      "generated_covers": 13,
-      "registered_source_count": 6,
-      "coverage_score": 78,
-      "severity": "healthy",
-      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
-    },
-    {
       "key": "Aseer",
       "label": "عسير",
       "total": 18,
@@ -622,8 +604,8 @@
       "ended": 24,
       "live_ready": 8,
       "source_count": 8,
-      "source_images": 27,
-      "generated_covers": 9,
+      "source_images": 28,
+      "generated_covers": 8,
       "registered_source_count": 11,
       "coverage_score": 100,
       "severity": "healthy",
@@ -643,6 +625,24 @@
       "source_images": 136,
       "generated_covers": 152,
       "registered_source_count": 40,
+      "coverage_score": 100,
+      "severity": "healthy",
+      "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
+    },
+    {
+      "key": "Dhahran",
+      "label": "الظهران",
+      "total": 247,
+      "active": 140,
+      "upcoming": 135,
+      "ongoing": 4,
+      "live": 1,
+      "ended": 107,
+      "live_ready": 218,
+      "source_count": 3,
+      "source_images": 234,
+      "generated_covers": 13,
+      "registered_source_count": 6,
       "coverage_score": 100,
       "severity": "healthy",
       "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
@@ -684,23 +684,6 @@
       "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
     },
     {
-      "key": "science space",
-      "label": "علوم وفضاء",
-      "total": 16,
-      "active": 2,
-      "upcoming": 1,
-      "ongoing": 1,
-      "live": 0,
-      "ended": 14,
-      "live_ready": 0,
-      "source_count": 3,
-      "source_images": 16,
-      "generated_covers": 0,
-      "coverage_score": 71,
-      "severity": "healthy",
-      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
-    },
-    {
       "key": "gaming esports",
       "label": "ألعاب ورياضات إلكترونية",
       "total": 18,
@@ -718,40 +701,6 @@
       "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
     },
     {
-      "key": "awards ceremonies",
-      "label": "جوائز وتكريم",
-      "total": 11,
-      "active": 9,
-      "upcoming": 9,
-      "ongoing": 0,
-      "live": 0,
-      "ended": 2,
-      "live_ready": 0,
-      "source_count": 4,
-      "source_images": 10,
-      "generated_covers": 1,
-      "coverage_score": 71,
-      "severity": "healthy",
-      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
-    },
-    {
-      "key": "education community",
-      "label": "جامعات ومجتمع",
-      "total": 19,
-      "active": 11,
-      "upcoming": 10,
-      "ongoing": 1,
-      "live": 0,
-      "ended": 8,
-      "live_ready": 0,
-      "source_count": 6,
-      "source_images": 10,
-      "generated_covers": 9,
-      "coverage_score": 71,
-      "severity": "healthy",
-      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
-    },
-    {
       "key": "technology training",
       "label": "تدريب تقني",
       "total": 28,
@@ -762,42 +711,8 @@
       "ended": 14,
       "live_ready": 0,
       "source_count": 4,
-      "source_images": 15,
-      "generated_covers": 13,
-      "coverage_score": 71,
-      "severity": "healthy",
-      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
-    },
-    {
-      "key": "culture arts",
-      "label": "ثقافة وفنون",
-      "total": 25,
-      "active": 25,
-      "upcoming": 2,
-      "ongoing": 23,
-      "live": 0,
-      "ended": 0,
-      "live_ready": 0,
-      "source_count": 4,
-      "source_images": 25,
-      "generated_covers": 0,
-      "coverage_score": 71,
-      "severity": "healthy",
-      "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
-    },
-    {
-      "key": "exhibition trade",
-      "label": "معارض وتجارية",
-      "total": 94,
-      "active": 26,
-      "upcoming": 24,
-      "ongoing": 2,
-      "live": 0,
-      "ended": 68,
-      "live_ready": 0,
-      "source_count": 6,
-      "source_images": 20,
-      "generated_covers": 74,
+      "source_images": 16,
+      "generated_covers": 12,
       "coverage_score": 71,
       "severity": "healthy",
       "next_action": "استخرج جدول الجلسات أو أوقات الفقرات لتحويل البطاقات النشطة إلى وضع حضور حي."
@@ -820,17 +735,51 @@
       "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
     },
     {
+      "key": "awards ceremonies",
+      "label": "جوائز وتكريم",
+      "total": 16,
+      "active": 10,
+      "upcoming": 10,
+      "ongoing": 0,
+      "live": 0,
+      "ended": 6,
+      "live_ready": 4,
+      "source_count": 5,
+      "source_images": 15,
+      "generated_covers": 1,
+      "coverage_score": 89,
+      "severity": "healthy",
+      "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
+    },
+    {
+      "key": "science space",
+      "label": "علوم وفضاء",
+      "total": 27,
+      "active": 11,
+      "upcoming": 7,
+      "ongoing": 3,
+      "live": 1,
+      "ended": 16,
+      "live_ready": 11,
+      "source_count": 4,
+      "source_images": 27,
+      "generated_covers": 0,
+      "coverage_score": 89,
+      "severity": "healthy",
+      "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
+    },
+    {
       "key": "conference forum",
       "label": "مؤتمرات ومنتديات",
-      "total": 63,
-      "active": 24,
-      "upcoming": 24,
+      "total": 64,
+      "active": 25,
+      "upcoming": 25,
       "ongoing": 0,
       "live": 0,
       "ended": 39,
-      "live_ready": 5,
-      "source_count": 15,
-      "source_images": 24,
+      "live_ready": 6,
+      "source_count": 16,
+      "source_images": 25,
       "generated_covers": 39,
       "coverage_score": 89,
       "severity": "healthy",
@@ -871,17 +820,68 @@
       "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
     },
     {
+      "key": "exhibition trade",
+      "label": "معارض وتجارية",
+      "total": 106,
+      "active": 31,
+      "upcoming": 28,
+      "ongoing": 3,
+      "live": 0,
+      "ended": 75,
+      "live_ready": 12,
+      "source_count": 7,
+      "source_images": 32,
+      "generated_covers": 74,
+      "coverage_score": 89,
+      "severity": "healthy",
+      "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
+    },
+    {
+      "key": "culture arts",
+      "label": "ثقافة وفنون",
+      "total": 56,
+      "active": 44,
+      "upcoming": 21,
+      "ongoing": 23,
+      "live": 0,
+      "ended": 12,
+      "live_ready": 31,
+      "source_count": 5,
+      "source_images": 56,
+      "generated_covers": 0,
+      "coverage_score": 89,
+      "severity": "healthy",
+      "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
+    },
+    {
+      "key": "education community",
+      "label": "جامعات ومجتمع",
+      "total": 108,
+      "active": 44,
+      "upcoming": 43,
+      "ongoing": 1,
+      "live": 0,
+      "ended": 64,
+      "live_ready": 89,
+      "source_count": 7,
+      "source_images": 99,
+      "generated_covers": 9,
+      "coverage_score": 89,
+      "severity": "healthy",
+      "next_action": "استمر في الجلب الدوري وراقب التكرار وجودة الصور عند كل نشر."
+    },
+    {
       "key": "entertainment families",
       "label": "ترفيه وعائلات",
-      "total": 86,
-      "active": 42,
-      "upcoming": 24,
-      "ongoing": 15,
+      "total": 156,
+      "active": 97,
+      "upcoming": 78,
+      "ongoing": 16,
       "live": 3,
-      "ended": 44,
-      "live_ready": 1,
-      "source_count": 7,
-      "source_images": 42,
+      "ended": 59,
+      "live_ready": 71,
+      "source_count": 8,
+      "source_images": 112,
       "generated_covers": 44,
       "coverage_score": 89,
       "severity": "healthy",
@@ -896,16 +896,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:9",
-      "next_action": "Zero-yield for 53 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
-    },
-    {
-      "id": "ithra-events",
-      "label": "Ithra Events",
-      "status": "zero-yield",
-      "ring": "active-collector",
-      "coverage_score": 0,
-      "reason": "date/content signals exist but extractor returned no complete future rows",
-      "next_action": "Zero-yield for 53 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 57 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "misk-hub-events",
@@ -914,7 +905,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:5",
-      "next_action": "Zero-yield for 53 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 57 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "jcci-events-center",
@@ -923,7 +914,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:13",
-      "next_action": "Zero-yield for 53 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 57 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "saudi-pro-league-fixtures",
@@ -932,7 +923,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:100",
-      "next_action": "Zero-yield for 53 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 57 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "saudi-space-agency-events",
@@ -941,7 +932,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:14",
-      "next_action": "Zero-yield for 15 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 19 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "makkah-chamber-events",
@@ -950,7 +941,7 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:10",
-      "next_action": "Zero-yield for 47 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 51 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "abha-chamber-events",
@@ -959,52 +950,52 @@
       "ring": "active-collector",
       "coverage_score": 0,
       "reason": "past-date:5",
-      "next_action": "Zero-yield for 47 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 51 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "northern-borders-chamber-events",
       "label": "Northern Borders Chamber Events",
       "status": "zero-yield",
       "ring": "extractor-backlog",
-      "coverage_score": 2,
+      "coverage_score": 0,
       "reason": "past-date:4",
-      "next_action": "Zero-yield for 8 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 12 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "tabuk-chamber-events",
       "label": "Tabuk Chamber Events",
       "status": "zero-yield",
       "ring": "extractor-backlog",
-      "coverage_score": 2,
+      "coverage_score": 0,
       "reason": "past-date:2",
-      "next_action": "Zero-yield for 8 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 12 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "mos-events",
       "label": "Ministry of Sport Events",
       "status": "zero-yield",
       "ring": "active-collector",
-      "coverage_score": 38,
+      "coverage_score": 14,
       "reason": "past-date:3",
-      "next_action": "past-date:3"
+      "next_action": "Zero-yield for 6 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "sdaia-academy-programs",
       "label": "SDAIA Academy Programs",
       "status": "zero-yield",
       "ring": "active-collector",
-      "coverage_score": 38,
+      "coverage_score": 14,
       "reason": "date/content signals exist but extractor returned no complete future rows",
-      "next_action": "date/content signals exist but extractor returned no complete future rows"
+      "next_action": "Zero-yield for 6 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "qassim-chamber-events",
       "label": "Qassim Chamber Events",
       "status": "zero-yield",
       "ring": "active-collector",
-      "coverage_score": 38,
+      "coverage_score": 14,
       "reason": "past-date:3",
-      "next_action": "past-date:3"
+      "next_action": "Zero-yield for 6 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "id": "nec-saudi-events",
@@ -1027,6 +1018,15 @@
     {
       "id": "hala-yalla",
       "label": "Hala Yalla",
+      "status": "discovery-only",
+      "ring": "discovery-only",
+      "coverage_score": 50,
+      "reason": "not a direct auto-publish source lane",
+      "next_action": "Use only as discovery evidence; never publish directly."
+    },
+    {
+      "id": "ten-times-saudi",
+      "label": "10times Saudi Arabia",
       "status": "discovery-only",
       "ring": "discovery-only",
       "coverage_score": 50,
@@ -1428,16 +1428,7 @@
       "label": "CODE MCIT Programs",
       "coverage_score": 0,
       "reason": "past-date:9",
-      "next_action": "Zero-yield for 53 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
-    },
-    {
-      "kind": "source",
-      "kind_label": "مصدر",
-      "key": "ithra-events",
-      "label": "Ithra Events",
-      "coverage_score": 0,
-      "reason": "date/content signals exist but extractor returned no complete future rows",
-      "next_action": "Zero-yield for 53 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 57 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "kind": "source",
@@ -1446,7 +1437,7 @@
       "label": "Misk Hub Events",
       "coverage_score": 0,
       "reason": "past-date:5",
-      "next_action": "Zero-yield for 53 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 57 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "kind": "source",
@@ -1455,7 +1446,16 @@
       "label": "Jeddah Chamber Exhibitions and Events Center",
       "coverage_score": 0,
       "reason": "past-date:13",
-      "next_action": "Zero-yield for 53 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+      "next_action": "Zero-yield for 57 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
+    },
+    {
+      "kind": "source",
+      "kind_label": "مصدر",
+      "key": "saudi-pro-league-fixtures",
+      "label": "Saudi Pro League Fixtures",
+      "coverage_score": 0,
+      "reason": "past-date:100",
+      "next_action": "Zero-yield for 57 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only."
     },
     {
       "kind": "category",

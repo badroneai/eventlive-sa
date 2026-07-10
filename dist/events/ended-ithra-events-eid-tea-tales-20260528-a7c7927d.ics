@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Eid Tea Tales | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-ithra-events-eid-tea-tales-20260528-a7c7927d@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260528T130000Z
+DTEND:20260530T200000Z
+SUMMARY:Eid Tea Tales
+DESCRIPTION:Immerse yourself in an experience where science blends with the warmth of tea\, and emotions are crafted through flavor. Discover the origins of tea\, explore how brewing methods shape every cup and step into an interactive tasting corner filled with different flavors. From aroma to taste\, uncover how tea can influence our emotions and create moments of warmth and comfort.
+LOCATION:Energy Exhibit
+URL:https://eventme.live/events/ended-ithra-events-eid-tea-tales-20260528-a7c7927d.html
+END:VEVENT
+END:VCALENDAR

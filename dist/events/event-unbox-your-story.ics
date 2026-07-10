@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Unbox Your Story | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-unbox-your-story@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260711T090000Z
+DTEND:20260822T093000Z
+SUMMARY:Unbox Your Story
+DESCRIPTION:What if we combine reality with fantasy? How would that enrich your story? Join us for a fun family experience as you discover a new world of stories full with boundless imagination and possibilities. All you have to do is open the box in front of you to reveal the tools and materials within. Begin creating your characters and designing your plot with the various elements available to you. Unleash your creativity and share your new story with those around you!
+LOCATION:Library - Level 2
+URL:https://eventme.live/events/event-unbox-your-story.html
+END:VEVENT
+END:VCALENDAR

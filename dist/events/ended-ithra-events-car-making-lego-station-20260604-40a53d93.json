@@ -1,0 +1,142 @@
+{
+  "id": "ended-ithra-events-car-making-lego-station-20260604-40a53d93",
+  "title": "Car Making Lego Station",
+  "summary": "Come and build with us! Create your own Formula cars and racing models using Lego. It is a fun place to design and show your skills to everyone. Add your special car to our racing gallery for all fans to see.",
+  "canonical_url": "https://eventme.live/events/ended-ithra-events-car-making-lego-station-20260604-40a53d93.html",
+  "detail_url": "./events/ended-ithra-events-car-making-lego-station-20260604-40a53d93.html",
+  "calendar_url": "./events/ended-ithra-events-car-making-lego-station-20260604-40a53d93.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/car-making-lego-station",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/car-making-lego-station",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verification_method": "official-public-algolia-index",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Plaza",
+  "venue_address": "Plaza",
+  "starts_at": "2026-06-04T09:00:00+03:00",
+  "ends_at": "2026-06-06T22:30:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 3,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/car-making-lego-station-c9b01876bf.jpg",
+  "image_alt": "Car Making Lego Station",
+  "category": "معارض وتجارية",
+  "category_url": "./categories/exhibition-trade.html",
+  "audiences": [
+    {
+      "slug": "skilled-trades",
+      "label": "مهاريون وحرفيون"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Car Making Lego Station",
+    "معارض وتجارية",
+    "exhibition",
+    "فعالية",
+    "منتهية",
+    "الظهران",
+    "Plaza",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Activity",
+    "ended-event",
+    "مهاريون وحرفيون",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Car Making Lego Station",
+      "starts_at": "2026-06-04T09:00:00+03:00",
+      "ends_at": "2026-06-04T22:30:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-17912-202606040900-car-making-lego-station"
+    },
+    {
+      "title": "Car Making Lego Station",
+      "starts_at": "2026-06-05T16:00:00+03:00",
+      "ends_at": "2026-06-05T23:30:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-17912-202606051600-car-making-lego-station"
+    },
+    {
+      "title": "Car Making Lego Station",
+      "starts_at": "2026-06-06T09:00:00+03:00",
+      "ends_at": "2026-06-06T22:30:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-17912-202606060900-car-making-lego-station"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Car Making Lego Station",
+    "startDate": "2026-06-04T09:00:00+03:00",
+    "endDate": "2026-06-06T22:30:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Plaza",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plaza",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/car-making-lego-station-c9b01876bf.jpg"
+    ],
+    "description": "Come and build with us! Create your own Formula cars and racing models using Lego. It is a fun place to design and show your skills to everyone. Add your special car to our racing gallery for all fans to see.",
+    "url": "https://eventme.live/events/ended-ithra-events-car-making-lego-station-20260604-40a53d93.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-car-making-lego-station-20260604-40a53d93.html",
+    "isAccessibleForFree": true,
+    "keywords": "Car Making Lego Station, معارض وتجارية, exhibition, فعالية, منتهية, الظهران, Plaza, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Activity, ended-event, مهاريون وحرفيون, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "مهاريون وحرفيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/car-making-lego-station"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/car-making-lego-station",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

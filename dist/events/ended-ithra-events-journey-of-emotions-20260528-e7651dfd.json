@@ -1,0 +1,142 @@
+{
+  "id": "ended-ithra-events-journey-of-emotions-20260528-e7651dfd",
+  "title": "Journey of Emotions",
+  "summary": "Join us for a unique sensory experience, where the holiday transforms into a world you can see, hear, smell and taste. From Saudi Arabia to Amman, from Uzbekistan to Indonesia and Morocco, a journey that blends art, the senses and memories, you are welcome to wander through rooms, each of which captures a different aspect of the holiday atmosphere&mdash;from its joyful sounds and unique scents to its traditional sweets and dishes and even its colorful attire. Click here to join the virtual queue.",
+  "canonical_url": "https://eventme.live/events/ended-ithra-events-journey-of-emotions-20260528-e7651dfd.html",
+  "detail_url": "./events/ended-ithra-events-journey-of-emotions-20260528-e7651dfd.html",
+  "calendar_url": "./events/ended-ithra-events-journey-of-emotions-20260528-e7651dfd.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/eid-aladha/journey-emotions",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/eid-aladha/journey-emotions",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verification_method": "official-public-algolia-index",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Plaza",
+  "venue_address": "Plaza",
+  "starts_at": "2026-05-28T16:00:00+03:00",
+  "ends_at": "2026-05-30T23:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 3,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/journey-of-emotions-1be9a330b2.jpg",
+  "image_alt": "Journey of Emotions",
+  "category": "ثقافة وفنون",
+  "category_url": "./categories/culture-arts.html",
+  "audiences": [
+    {
+      "slug": "entrepreneurs",
+      "label": "رواد أعمال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Journey of Emotions",
+    "ثقافة وفنون",
+    "culture",
+    "فعالية",
+    "منتهية",
+    "الظهران",
+    "Plaza",
+    "Ithra Events",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Activity",
+    "Eid AlAdha",
+    "ended-event",
+    "رواد أعمال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Journey of Emotions",
+      "starts_at": "2026-05-28T16:00:00+03:00",
+      "ends_at": "2026-05-28T23:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-17846-202605281600-journey-of-emotions"
+    },
+    {
+      "title": "Journey of Emotions",
+      "starts_at": "2026-05-29T16:00:00+03:00",
+      "ends_at": "2026-05-29T23:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-17846-202605291600-journey-of-emotions"
+    },
+    {
+      "title": "Journey of Emotions",
+      "starts_at": "2026-05-30T16:00:00+03:00",
+      "ends_at": "2026-05-30T23:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-17846-202605301600-journey-of-emotions"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Journey of Emotions",
+    "startDate": "2026-05-28T16:00:00+03:00",
+    "endDate": "2026-05-30T23:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Plaza",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plaza",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/journey-of-emotions-1be9a330b2.jpg"
+    ],
+    "description": "Join us for a unique sensory experience, where the holiday transforms into a world you can see, hear, smell and taste. From Saudi Arabia to Amman, from Uzbekistan to Indonesia and Morocco, a journey that blends art, the senses and memories, you are welcome to wander through rooms, each of which captures a different aspect of the holiday atmosphere&mdash;from its joyful sounds and unique scents to its traditional sweets and dishes and even its colorful attire. Click here to join the virtual queue.",
+    "url": "https://eventme.live/events/ended-ithra-events-journey-of-emotions-20260528-e7651dfd.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-journey-of-emotions-20260528-e7651dfd.html",
+    "isAccessibleForFree": true,
+    "keywords": "Journey of Emotions, ثقافة وفنون, culture, فعالية, منتهية, الظهران, Plaza, Ithra Events, arts, creativity, community, exhibitions, learning, Ithra, Activity, Eid AlAdha, ended-event, رواد أعمال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "رواد أعمال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/eid-aladha/journey-emotions"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/eid-aladha/journey-emotions",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

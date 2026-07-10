@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Energy Lab | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-energy-lab@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260727T130000Z
+DTEND:20260831T180000Z
+SUMMARY:Energy Lab
+DESCRIPTION:Join us in our Energy Lab\, where your curious minds can expand and explore the wonders of scientific and engineering ideas! Here\, you can conduct crazy experiments and share knowledge with like-minded friends.
+LOCATION:Energy Exhibit
+URL:https://eventme.live/events/event-energy-lab.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Connect and Create! | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-connect-and-create@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260801T140000Z
+DTEND:20260825T160000Z
+SUMMARY:Connect and Create!
+DESCRIPTION:How can a simple movement extend across an entire form? How does motion travel through connected parts to create a balanced and elegant transformation? Join us in an interactive experience where we explore how linked structures expand and contract to create smooth movement with minimal effort. We build\, test and observe how motion spreads through a form to create transforming patterns that bring together science\, design and art.
+LOCATION:Energy Exhibit
+URL:https://eventme.live/events/event-connect-and-create.html
+END:VEVENT
+END:VCALENDAR

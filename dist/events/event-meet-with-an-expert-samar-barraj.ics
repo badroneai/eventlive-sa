@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Meet with an Expert: Samar Barraj | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-meet-with-an-expert-samar-barraj@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260722T160000Z
+DTEND:20260722T164500Z
+SUMMARY:Meet with an Expert: Samar Barraj
+DESCRIPTION:A meeting rich in dialogue and knowledge\, where we meet with an expert specializing in children's literature to open windows of understanding in this vital field that shapes the awareness of future generations. This interactive session combines consultation and in-depth intellectual discussion\, in which the expert answers questions and provides specialized insights on how to choose appropriate literature for children\, the impact of reading on building a child's personality\, and how to enhance their values and skills through the written word. The meeting targets the following groups: - Parents - Teachers and educators - Publishers and writers in children's literature
+LOCATION:Library
+URL:https://eventme.live/events/event-meet-with-an-expert-samar-barraj.html
+END:VEVENT
+END:VCALENDAR

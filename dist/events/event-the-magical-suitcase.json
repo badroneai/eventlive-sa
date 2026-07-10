@@ -1,0 +1,163 @@
+{
+  "id": "event-the-magical-suitcase",
+  "title": "The Magical Suitcase",
+  "summary": "A pair of clowns, Wachi and Pica, arrive in town with a giant suitcase, the biggest suitcase you have ever seen. It follows them wherever they go. Beneath this enormous suitcase, you can spot the legs and shoes of four other clowns, their friends. Follow them and discover who they are.",
+  "canonical_url": "https://eventme.live/events/event-the-magical-suitcase.html",
+  "detail_url": "./events/event-the-magical-suitcase.html",
+  "calendar_url": "./events/event-the-magical-suitcase.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/magical-suitcase",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/magical-suitcase",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:08:07.323Z",
+  "verification_method": "registered-venue-official",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Plaza",
+  "venue_address": "Plaza",
+  "starts_at": "2026-07-20T14:30:00+03:00",
+  "ends_at": "2026-07-25T21:30:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 6,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/the-magical-suitcase-d1e9724d19.png",
+  "image_alt": "The Magical Suitcase",
+  "category": "ترفيه وعائلات",
+  "category_url": "./categories/entertainment-families.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "The Magical Suitcase",
+    "ترفيه وعائلات",
+    "family",
+    "فعالية",
+    "قادمة",
+    "الظهران",
+    "Plaza",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Children Festival",
+    "Interactive Show",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "The Magical Suitcase",
+      "starts_at": "2026-07-20T14:30:00+03:00",
+      "ends_at": "2026-07-20T21:30:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18281-202607201430-the-magical-suitcase"
+    },
+    {
+      "title": "The Magical Suitcase",
+      "starts_at": "2026-07-21T14:30:00+03:00",
+      "ends_at": "2026-07-21T21:30:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18281-202607211430-the-magical-suitcase"
+    },
+    {
+      "title": "The Magical Suitcase",
+      "starts_at": "2026-07-22T14:30:00+03:00",
+      "ends_at": "2026-07-22T21:30:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18281-202607221430-the-magical-suitcase"
+    },
+    {
+      "title": "The Magical Suitcase",
+      "starts_at": "2026-07-23T14:30:00+03:00",
+      "ends_at": "2026-07-23T21:30:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18281-202607231430-the-magical-suitcase"
+    },
+    {
+      "title": "The Magical Suitcase",
+      "starts_at": "2026-07-24T14:30:00+03:00",
+      "ends_at": "2026-07-24T21:30:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18281-202607241430-the-magical-suitcase"
+    },
+    {
+      "title": "The Magical Suitcase",
+      "starts_at": "2026-07-25T14:30:00+03:00",
+      "ends_at": "2026-07-25T21:30:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18281-202607251430-the-magical-suitcase"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "The Magical Suitcase",
+    "startDate": "2026-07-20T14:30:00+03:00",
+    "endDate": "2026-07-25T21:30:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Plaza",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plaza",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/the-magical-suitcase-d1e9724d19.png"
+    ],
+    "description": "A pair of clowns, Wachi and Pica, arrive in town with a giant suitcase, the biggest suitcase you have ever seen. It follows them wherever they go. Beneath this enormous suitcase, you can spot the legs and shoes of four other clowns, their friends. Follow them and discover who they are.",
+    "url": "https://eventme.live/events/event-the-magical-suitcase.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-the-magical-suitcase.html",
+    "isAccessibleForFree": true,
+    "keywords": "The Magical Suitcase, ترفيه وعائلات, family, فعالية, قادمة, الظهران, Plaza, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Children Festival, Interactive Show, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/magical-suitcase"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/magical-suitcase",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

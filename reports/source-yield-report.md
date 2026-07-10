@@ -1,51 +1,51 @@
 # EventLive Source Yield Report
 
-Generated at: 2026-07-10T09:03:26.307Z
+Generated at: 2026-07-10T10:01:05.283Z
 Sources attempted: 41
 
 | Source | Status | Signals | Extracted raw | Future complete | Written last run | Drop reasons | Note |
 |---|---|---:|---:|---:|---:|---|---|
 | visit-saudi-calendar | ok | bytes 41996, rows 11, dates 0 | 11 | 11 | 0 | future-complete:11 |  |
-| moc-cultural-calendar | ok | bytes 76160, rows 0, dates 0 | 13 | 13 | 13 | future-complete:13 |  |
+| moc-cultural-calendar | ok | bytes 76160, rows 0, dates 0 | 13 | 13 | 0 | future-complete:13 |  |
 | mos-events | ok | bytes 81794, rows 0, dates 26 | 3 | 0 | 0 | past-date:3 |  |
 | experience-alula-events | ok | bytes 568668, rows 0, dates 1 | 11 | 9 | 0 | future-complete:9, past-date:2 |  |
 | mdlbeast-events | ok | bytes 395643, rows 0, dates 83 | 41 | 5 | 0 | future-complete:5, past-date:36 |  |
-| monshaat-events | ok | bytes 189053, rows 0, dates 2 | 15 | 3 | 3 | past-date:12, future-complete:3 |  |
+| monshaat-events | ok | bytes 288383, rows 0, dates 128 | 15 | 3 | 0 | past-date:12, future-complete:3 |  |
 | invest-saudi-events | ok | bytes 7022, rows 9, dates 0 | 8 | 3 | 0 | past-date:5, future-complete:3 |  |
-| rfecc-whats-on | ok | bytes 144324, rows 0, dates 3 | 20 | 6 | 0 | past-date:14, future-complete:6 |  |
+| rfecc-whats-on | ok | bytes 144336, rows 0, dates 3 | 20 | 6 | 0 | past-date:14, future-complete:6 |  |
 | eye-of-riyadh-events | ok | bytes 101041, rows 0, dates 1 | 16 | 16 | 0 | future-complete:16 |  |
-| eventbrite-saudi | ok | bytes 837225, rows 0, dates 240 | 18 | 18 | 0 | future-complete:18 |  |
+| eventbrite-saudi | ok | bytes 840217, rows 0, dates 240 | 18 | 18 | 0 | future-complete:18 |  |
 | tuwaiq-academy-bootcamps | ok | bytes 10788, rows 12, dates 0 | 12 | 12 | 0 | future-complete:12 |  |
-| future-skills-catalog | ok | bytes 169820, rows 0, dates 2 | 12 | 4 | 0 | future-complete:4, past-date:8 |  |
+| future-skills-catalog | ok | bytes 169748, rows 0, dates 2 | 12 | 4 | 0 | future-complete:4, past-date:8 |  |
 | visit-saudi-seasons | ok | bytes 41996, rows 11, dates 0 | 4 | 4 | 0 | future-complete:4 |  |
 | code-mcit-programs | ok | bytes 55569, rows 0, dates 3 | 9 | 0 | 0 | past-date:9 |  |
 | misk-hub-programs | ok | bytes 215330, rows 0, dates 0 | 5 | 5 | 0 | future-complete:5 |  |
 | dhahran-expo-calendar | ok | bytes 490854, rows 0, dates 0 | 22 | 15 | 0 | past-date:7, future-complete:15 |  |
-| ithra-events | ok | bytes 174289, rows 0, dates 7 | 0 | 0 | 0 | - |  |
+| ithra-events | ok | bytes 3897174, rows 0, dates 2809 | 225 | 129 | 129 | past-date:96, future-complete:129 |  |
 | sdaia-academy-programs | ok | bytes 35254, rows 0, dates 1 | 0 | 0 | 0 | - |  |
 | misk-hub-events | ok | bytes 229641, rows 0, dates 22 | 5 | 0 | 0 | past-date:5 |  |
 | jcci-events-center | ok | bytes 1370249, rows 0, dates 0 | 13 | 0 | 0 | past-date:13 |  |
 | saudi-pro-league-fixtures | ok | bytes 162264, rows 100, dates 200 | 100 | 0 | 0 | past-date:100 |  |
 | saudi-space-agency-events | ok | bytes 146085, rows 0, dates 1 | 14 | 0 | 0 | past-date:14 |  |
 | visit-saudi-calendar-pdf | ok | bytes 389264, rows 0, dates 0 | 77 | 52 | 0 | future-complete:52, past-date:25 |  |
-| moc-cultural-subportals | ok | bytes 71387, rows 0, dates 1 | 13 | 13 | 13 | future-complete:13 |  |
+| moc-cultural-subportals | ok | bytes 71387, rows 0, dates 1 | 13 | 13 | 0 | future-complete:13 |  |
 | discover-aseer-events | ok | bytes 137929, rows 0, dates 2 | 1 | 1 | 0 | future-complete:1 |  |
 | saudi-water-authority-events | ok | bytes 176730, rows 0, dates 21 | 9 | 8 | 0 | future-complete:8, past-date:1 |  |
-| saudi-university-events | ok | bytes 85873, rows 0, dates 0 | 14 | 6 | 0 | future-complete:6, past-date:8 |  |
-| sfda-events | ok | bytes 127189, rows 0, dates 18 | 9 | 7 | 0 | future-complete:7, past-date:2 |  |
+| saudi-university-events | ok | bytes 85874, rows 0, dates 0 | 14 | 6 | 0 | future-complete:6, past-date:8 |  |
+| sfda-events | ok | bytes 186073, rows 0, dates 22 | 9 | 7 | 0 | future-complete:7, past-date:2 |  |
 | riyadh-city-events | ok | bytes 3129, rows 0, dates 0 | 94 | 94 | 0 | future-complete:94 |  |
-| sdaia-calendar-events | ok | bytes 40830, rows 0, dates 1 | 3 | 2 | 2 | past-date:1, future-complete:2 |  |
+| sdaia-calendar-events | ok | bytes 40975, rows 0, dates 1 | 3 | 2 | 0 | past-date:1, future-complete:2 |  |
 | makkah-chamber-events | ok | bytes 67797, rows 0, dates 14 | 10 | 0 | 0 | past-date:10 |  |
 | scega-exhibitions-conferences | ok | bytes 85264, rows 0, dates 0 | 84 | 4 | 0 | past-date:80, future-complete:4 |  |
-| asharqia-chamber-events | ok | bytes 103207, rows 0, dates 3 | 15 | 2 | 2 | future-complete:2, past-date:13 |  |
+| asharqia-chamber-events | ok | bytes 103207, rows 0, dates 3 | 15 | 2 | 0 | future-complete:2, past-date:13 |  |
 | qassim-chamber-events | ok | bytes 12736, rows 0, dates 3 | 3 | 0 | 0 | past-date:3 |  |
 | abha-chamber-events | ok | bytes 38904, rows 0, dates 0 | 5 | 0 | 0 | past-date:5 |  |
 | northern-borders-chamber-events | ok | bytes 308810, rows 24, dates 0 | 4 | 0 | 0 | past-date:4 |  |
 | tabuk-chamber-events | ok | bytes 35173, rows 0, dates 18 | 2 | 0 | 0 | past-date:2 |  |
-| jazan-chamber-events | ok | bytes 2841, rows 1, dates 1 | 1 | 1 | 1 | future-complete:1 |  |
+| jazan-chamber-events | ok | bytes 2841, rows 1, dates 1 | 1 | 1 | 0 | future-complete:1 |  |
 | najran-municipality-summer-events | ok | bytes 170517, rows 0, dates 9 | 1 | 1 | 0 | future-complete:1 |  |
 | qassim-university-events | ok | bytes 742179, rows 0, dates 12 | 1 | 1 | 0 | future-complete:1 |  |
-| jouf-university-programs | ok | bytes 672497, rows 0, dates 253 | 1 | 1 | 0 | future-complete:1 |  |
+| jouf-university-programs | ok | bytes 672498, rows 0, dates 253 | 1 | 1 | 0 | future-complete:1 |  |
 
 ## Zero Yield Sources
 
@@ -53,7 +53,6 @@ Sources attempted: 41
 |---|---|---|
 | mos-events | past-date:3 | 0 |
 | code-mcit-programs | past-date:9 | 0 |
-| ithra-events | date/content signals exist but extractor returned no complete future rows | 2 |
 | sdaia-academy-programs | date/content signals exist but extractor returned no complete future rows | 0 |
 | misk-hub-events | past-date:5 | 0 |
 | jcci-events-center | past-date:13 | 0 |
@@ -109,6 +108,11 @@ Sources attempted: 41
 | dhahran-expo-calendar | Real Estate Auction | past-date | - | 2026-02-02T09:00:00+03:00 - 2026-02-02T18:00:00+03:00 | Dhahran |
 | dhahran-expo-calendar | Hala February Shopping Exhibition | past-date | - | 2026-02-06T09:00:00+03:00 - 2026-02-15T18:00:00+03:00 | Dhahran |
 | dhahran-expo-calendar | Lamatna Expo | past-date | - | 2026-02-26T09:00:00+03:00 - 2026-03-04T18:00:00+03:00 | Dhahran |
+| ithra-events | Story Land | past-date | 23rd May 2026 - 12:00 PM - 1:15 PM · 1 hr 15 mins | 2025-08-13T17:00:00+03:00 - 2026-05-23T20:45:00+03:00 | Dhahran |
+| ithra-events | Games Hub | past-date | 21st May 2026 - 4:30 PM - 6:00 PM | 2025-10-23T16:30:00+03:00 - 2026-05-23T20:00:00+03:00 | Dhahran |
+| ithra-events | Ithra Museum – Free Wednesday | past-date | 3rd June 2026 - 9:00 AM - 11:00 PM | 2026-05-06T09:00:00+03:00 - 2026-07-01T23:00:00+03:00 | Dhahran |
+| ithra-events | Creative Installations with Precast | past-date | 22nd May 2026 - 5:00 PM - 8:00 PM | 2026-05-15T17:00:00+03:00 - 2026-05-23T20:00:00+03:00 | Dhahran |
+| ithra-events | Aramcorama Exhibit | past-date | 18th May 2026 - 9:00 AM - 11:00 PM | 2026-05-18T09:00:00+03:00 - 2026-05-25T23:00:00+03:00 | Dhahran |
 | misk-hub-events | Cybersecurity in the Workplace | past-date | 01 Jul 2026 | 2026-07-01T19:00:00+03:00 - 2026-07-01T20:00:00+03:00 | Online |
 | misk-hub-events | How to Choose Your Career Path and Keep Up with Labor Market Changes | past-date | 08 May 2026 | 2026-05-08T20:00:00+03:00 - 2026-05-08T21:00:00+03:00 | Saudi Arabia |
 | misk-hub-events | Enhancing Efficiency and Productivity in the Workplace Using Artificial Intelligence | past-date | 08 May 2026 | 2026-05-08T21:00:00+03:00 - 2026-05-08T22:00:00+03:00 | Online |

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Mic Moments | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-mic-moments@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260710T130000Z
+DTEND:20260725T190000Z
+SUMMARY:Mic Moments
+DESCRIPTION:Everyday life is full of small details\, routines\, habits\, and traditions that differ from one home to another. In this street mic&ndash\;style activity\, children respond to short\, guided questions about their daily life. The format is open and conversational\, allowing them to speak\, listen\, and hear different perspectives in a simple setup.
+LOCATION:Children's Museum
+URL:https://eventme.live/events/event-mic-moments.html
+END:VEVENT
+END:VCALENDAR

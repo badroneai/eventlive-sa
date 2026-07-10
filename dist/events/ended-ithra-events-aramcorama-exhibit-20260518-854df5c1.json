@@ -1,0 +1,158 @@
+{
+  "id": "ended-ithra-events-aramcorama-exhibit-20260518-854df5c1",
+  "title": "Aramcorama Exhibit",
+  "summary": "Aramcorama celebrates the legacy of Saudi Aramco through carefully curated historical images, documents and artifacts. These unique objects capture the creation of the company and its pioneering efforts to provide opportunities and technological advances which helped lay the foundation for the modern Saudi state. The history of Saudi Aramco, as captured by records drawn from its archival collections, illustrates the collective effort that has transformed the Kingdom&rsquo;s energy resources into a driver of the world&rsquo;s economy.",
+  "canonical_url": "https://eventme.live/events/ended-ithra-events-aramcorama-exhibit-20260518-854df5c1.html",
+  "detail_url": "./events/ended-ithra-events-aramcorama-exhibit-20260518-854df5c1.html",
+  "calendar_url": "./events/ended-ithra-events-aramcorama-exhibit-20260518-854df5c1.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/ithra-museum/aramcorama-exhibit",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/ithra-museum/aramcorama-exhibit",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verification_method": "official-public-algolia-index",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Museum - Gallery 5",
+  "venue_address": "Museum - Gallery 5",
+  "starts_at": "2026-05-18T09:00:00+03:00",
+  "ends_at": "2026-05-25T23:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 7,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/aramcorama-exhibit-bc852ac4b4.jpg",
+  "image_alt": "Aramcorama Exhibit",
+  "category": "ثقافة وفنون",
+  "category_url": "./categories/culture-arts.html",
+  "audiences": [
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Aramcorama Exhibit",
+    "ثقافة وفنون",
+    "culture",
+    "فعالية",
+    "منتهية",
+    "الظهران",
+    "Museum - Gallery 5",
+    "Ithra Events",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Exhibit",
+    "ended-event",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Aramcorama Exhibit",
+      "starts_at": "2026-05-18T09:00:00+03:00",
+      "ends_at": "2026-05-18T23:00:00+03:00",
+      "room": "Museum - Gallery 5",
+      "anchor": "#session-ithra-12872-202605180900-aramcorama-exhibit"
+    },
+    {
+      "title": "Aramcorama Exhibit",
+      "starts_at": "2026-05-19T09:00:00+03:00",
+      "ends_at": "2026-05-19T23:00:00+03:00",
+      "room": "Museum - Gallery 5",
+      "anchor": "#session-ithra-12872-202605190900-aramcorama-exhibit"
+    },
+    {
+      "title": "Aramcorama Exhibit",
+      "starts_at": "2026-05-20T09:00:00+03:00",
+      "ends_at": "2026-05-20T23:00:00+03:00",
+      "room": "Museum - Gallery 5",
+      "anchor": "#session-ithra-12872-202605200900-aramcorama-exhibit"
+    },
+    {
+      "title": "Aramcorama Exhibit",
+      "starts_at": "2026-05-21T09:00:00+03:00",
+      "ends_at": "2026-05-21T23:00:00+03:00",
+      "room": "Museum - Gallery 5",
+      "anchor": "#session-ithra-12872-202605210900-aramcorama-exhibit"
+    },
+    {
+      "title": "Aramcorama Exhibit",
+      "starts_at": "2026-05-22T09:00:00+03:00",
+      "ends_at": "2026-05-22T23:00:00+03:00",
+      "room": "Museum - Gallery 5",
+      "anchor": "#session-ithra-12872-202605220900-aramcorama-exhibit"
+    },
+    {
+      "title": "Aramcorama Exhibit",
+      "starts_at": "2026-05-23T09:00:00+03:00",
+      "ends_at": "2026-05-23T23:00:00+03:00",
+      "room": "Museum - Gallery 5",
+      "anchor": "#session-ithra-12872-202605230900-aramcorama-exhibit"
+    },
+    {
+      "title": "Aramcorama Exhibit",
+      "starts_at": "2026-05-25T09:00:00+03:00",
+      "ends_at": "2026-05-25T23:00:00+03:00",
+      "room": "Museum - Gallery 5",
+      "anchor": "#session-ithra-12872-202605250900-aramcorama-exhibit"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Aramcorama Exhibit",
+    "startDate": "2026-05-18T09:00:00+03:00",
+    "endDate": "2026-05-25T23:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Museum - Gallery 5",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Museum - Gallery 5",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/aramcorama-exhibit-bc852ac4b4.jpg"
+    ],
+    "description": "Aramcorama celebrates the legacy of Saudi Aramco through carefully curated historical images, documents and artifacts. These unique objects capture the creation of the company and its pioneering efforts to provide opportunities and technological advances which helped lay the foundation for the modern Saudi state. The history of Saudi Aramco, as captured by records drawn from its archival collections, illustrates the collective effort that has transformed the Kingdom&rsquo;s energy resources into a driver of the world&rsquo;s economy.",
+    "url": "https://eventme.live/events/ended-ithra-events-aramcorama-exhibit-20260518-854df5c1.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-aramcorama-exhibit-20260518-854df5c1.html",
+    "isAccessibleForFree": false,
+    "keywords": "Aramcorama Exhibit, ثقافة وفنون, culture, فعالية, منتهية, الظهران, Museum - Gallery 5, Ithra Events, arts, creativity, community, exhibitions, learning, Ithra, Exhibit, ended-event, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/ithra-museum/aramcorama-exhibit"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/ithra-museum/aramcorama-exhibit",
+      "availability": "https://schema.org/InStock",
+      "category": "35 SAR"
+    }
+  }
+}

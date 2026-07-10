@@ -1,0 +1,127 @@
+{
+  "id": "event-beyond-publishing-and-translating-childrens-books",
+  "title": "Beyond Publishing and Translating Children's Books",
+  "summary": "This session addresses the journey of the children's book through publishing and translation, and discusses how stories, values, and ideas are conveyed to children across multiple languages and cultures. In the session, there is also a discussion of the role of publishers and translators in enriching cultural content directed at children.",
+  "canonical_url": "https://eventme.live/events/event-beyond-publishing-and-translating-childrens-books.html",
+  "detail_url": "./events/event-beyond-publishing-and-translating-childrens-books.html",
+  "calendar_url": "./events/event-beyond-publishing-and-translating-childrens-books.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/childrens-book-fair/beyond-publishing-and-translating-childrens-books",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/childrens-book-fair/beyond-publishing-and-translating-childrens-books",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:08:07.323Z",
+  "verification_method": "registered-venue-official",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Library - Library - café",
+  "venue_address": "Library - Library - café",
+  "starts_at": "2026-07-22T18:00:00+03:00",
+  "ends_at": "2026-07-22T19:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": false,
+  "official_sessions_count": 1,
+  "schedule_depth": "official-single-session",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/reading-and-the-child-s-personality-2ab696aae6.jpg",
+  "image_alt": "Beyond Publishing and Translating Children's Books",
+  "category": "ترفيه وعائلات",
+  "category_url": "./categories/entertainment-families.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Beyond Publishing and Translating Children's Books",
+    "ترفيه وعائلات",
+    "family",
+    "فعالية",
+    "قادمة",
+    "الظهران",
+    "Library - Library - café",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Talk",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Beyond Publishing and Translating Children's Books",
+      "starts_at": "2026-07-22T18:00:00+03:00",
+      "ends_at": "2026-07-22T19:00:00+03:00",
+      "room": "Library - Library - café",
+      "anchor": "#session-ithra-18285-202607221800-beyond-publishing-and-translating-childrens-books"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Beyond Publishing and Translating Children's Books",
+    "startDate": "2026-07-22T18:00:00+03:00",
+    "endDate": "2026-07-22T19:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Library - Library - café",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Library - Library - café",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/reading-and-the-child-s-personality-2ab696aae6.jpg"
+    ],
+    "description": "This session addresses the journey of the children's book through publishing and translation, and discusses how stories, values, and ideas are conveyed to children across multiple languages and cultures. In the session, there is also a discussion of the role of publishers and translators in enriching cultural content directed at children.",
+    "url": "https://eventme.live/events/event-beyond-publishing-and-translating-childrens-books.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-beyond-publishing-and-translating-childrens-books.html",
+    "isAccessibleForFree": true,
+    "keywords": "Beyond Publishing and Translating Children's Books, ترفيه وعائلات, family, فعالية, قادمة, الظهران, Library - Library - café, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Talk, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/childrens-book-fair/beyond-publishing-and-translating-childrens-books"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/childrens-book-fair/beyond-publishing-and-translating-childrens-books",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

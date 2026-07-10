@@ -1,0 +1,715 @@
+{
+  "id": "ended-ithra-events-games-hub-20251023-fb83124c",
+  "title": "Games Hub",
+  "summary": "Join us for a fun-filled experience where children can enjoy a variety of card games and board games. Enjoy exciting challenges, spend quality time, and make new friends who share your passion for playful and engaging games!",
+  "canonical_url": "https://eventme.live/events/ended-ithra-events-games-hub-20251023-fb83124c.html",
+  "detail_url": "./events/ended-ithra-events-games-hub-20251023-fb83124c.html",
+  "calendar_url": "./events/ended-ithra-events-games-hub-20251023-fb83124c.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/childrens-museum/games-hub",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/childrens-museum/games-hub",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verification_method": "official-public-algolia-index",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Children Museum",
+  "venue_address": "Children Museum",
+  "starts_at": "2025-10-23T16:30:00+03:00",
+  "ends_at": "2026-05-23T20:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 85,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/games-hub-9ae2a7e0d7.jpg",
+  "image_alt": "Games Hub",
+  "category": "ترفيه وعائلات",
+  "category_url": "./categories/entertainment-families.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Games Hub",
+    "ترفيه وعائلات",
+    "family",
+    "برنامج ممتد",
+    "منتهية",
+    "الظهران",
+    "Children Museum",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Families",
+    "Play",
+    "ended-event",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-10-23T16:30:00+03:00",
+      "ends_at": "2025-10-23T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202510231630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-10-23T19:30:00+03:00",
+      "ends_at": "2025-10-23T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202510231930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-10-24T16:30:00+03:00",
+      "ends_at": "2025-10-24T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202510241630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-10-24T19:30:00+03:00",
+      "ends_at": "2025-10-24T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202510241930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-10-25T15:30:00+03:00",
+      "ends_at": "2025-10-25T17:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202510251530-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-10-25T18:30:00+03:00",
+      "ends_at": "2025-10-25T20:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202510251830-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-10-30T16:30:00+03:00",
+      "ends_at": "2025-10-30T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202510301630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-10-30T19:30:00+03:00",
+      "ends_at": "2025-10-30T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202510301930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-10-31T16:30:00+03:00",
+      "ends_at": "2025-10-31T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202510311630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-10-31T19:30:00+03:00",
+      "ends_at": "2025-10-31T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202510311930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-01T15:30:00+03:00",
+      "ends_at": "2025-11-01T17:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511011530-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-01T18:30:00+03:00",
+      "ends_at": "2025-11-01T20:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511011830-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-06T16:30:00+03:00",
+      "ends_at": "2025-11-06T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511061630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-06T19:30:00+03:00",
+      "ends_at": "2025-11-06T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511061930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-07T16:30:00+03:00",
+      "ends_at": "2025-11-07T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511071630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-07T19:30:00+03:00",
+      "ends_at": "2025-11-07T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511071930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-08T15:30:00+03:00",
+      "ends_at": "2025-11-08T17:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511081530-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-08T18:30:00+03:00",
+      "ends_at": "2025-11-08T20:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511081830-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-13T16:30:00+03:00",
+      "ends_at": "2025-11-13T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511131630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-13T19:30:00+03:00",
+      "ends_at": "2025-11-13T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511131930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-14T16:30:00+03:00",
+      "ends_at": "2025-11-14T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511141630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-14T19:30:00+03:00",
+      "ends_at": "2025-11-14T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511141930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-15T15:30:00+03:00",
+      "ends_at": "2025-11-15T17:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511151530-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-15T18:30:00+03:00",
+      "ends_at": "2025-11-15T20:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511151830-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-20T16:30:00+03:00",
+      "ends_at": "2025-11-20T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511201630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-20T19:30:00+03:00",
+      "ends_at": "2025-11-20T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511201930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-21T16:30:00+03:00",
+      "ends_at": "2025-11-21T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511211630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-21T19:30:00+03:00",
+      "ends_at": "2025-11-21T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511211930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-22T15:30:00+03:00",
+      "ends_at": "2025-11-22T17:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511221530-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-22T18:30:00+03:00",
+      "ends_at": "2025-11-22T20:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511221830-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-27T16:30:00+03:00",
+      "ends_at": "2025-11-27T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511271630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-27T19:30:00+03:00",
+      "ends_at": "2025-11-27T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511271930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-28T16:30:00+03:00",
+      "ends_at": "2025-11-28T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511281630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-28T19:30:00+03:00",
+      "ends_at": "2025-11-28T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511281930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-29T15:30:00+03:00",
+      "ends_at": "2025-11-29T17:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511291530-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-11-29T18:30:00+03:00",
+      "ends_at": "2025-11-29T20:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202511291830-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-04T16:30:00+03:00",
+      "ends_at": "2025-12-04T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512041630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-04T19:30:00+03:00",
+      "ends_at": "2025-12-04T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512041930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-05T16:30:00+03:00",
+      "ends_at": "2025-12-05T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512051630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-05T19:30:00+03:00",
+      "ends_at": "2025-12-05T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512051930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-06T15:30:00+03:00",
+      "ends_at": "2025-12-06T17:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512061530-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-06T18:30:00+03:00",
+      "ends_at": "2025-12-06T20:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512061830-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-11T16:30:00+03:00",
+      "ends_at": "2025-12-11T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512111630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-11T19:30:00+03:00",
+      "ends_at": "2025-12-11T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512111930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-12T16:30:00+03:00",
+      "ends_at": "2025-12-12T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512121630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-12T19:30:00+03:00",
+      "ends_at": "2025-12-12T20:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512121930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-13T15:30:00+03:00",
+      "ends_at": "2025-12-13T16:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512131530-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-13T18:30:00+03:00",
+      "ends_at": "2025-12-13T20:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512131830-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-18T16:30:00+03:00",
+      "ends_at": "2025-12-18T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512181630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-18T19:30:00+03:00",
+      "ends_at": "2025-12-18T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512181930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-19T16:30:00+03:00",
+      "ends_at": "2025-12-19T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512191630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-19T19:30:00+03:00",
+      "ends_at": "2025-12-19T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512191930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-20T15:30:00+03:00",
+      "ends_at": "2025-12-20T17:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512201530-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-20T18:30:00+03:00",
+      "ends_at": "2025-12-20T20:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512201830-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-25T16:30:00+03:00",
+      "ends_at": "2025-12-25T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512251630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-25T19:30:00+03:00",
+      "ends_at": "2025-12-25T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512251930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-26T16:00:00+03:00",
+      "ends_at": "2025-12-26T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512261600-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-26T19:00:00+03:00",
+      "ends_at": "2025-12-26T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512261900-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-27T15:00:00+03:00",
+      "ends_at": "2025-12-27T17:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512271500-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2025-12-27T18:00:00+03:00",
+      "ends_at": "2025-12-27T20:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202512271800-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-04-02T16:30:00+03:00",
+      "ends_at": "2026-04-02T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202604021630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-04-02T19:30:00+03:00",
+      "ends_at": "2026-04-02T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202604021930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-04-09T16:30:00+03:00",
+      "ends_at": "2026-04-09T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202604091630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-04-09T19:30:00+03:00",
+      "ends_at": "2026-04-09T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202604091930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-05-01T16:30:00+03:00",
+      "ends_at": "2026-05-01T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202605011630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-05-01T19:30:00+03:00",
+      "ends_at": "2026-05-01T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202605011930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-05-02T15:30:00+03:00",
+      "ends_at": "2026-05-02T17:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202605021530-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-05-02T18:30:00+03:00",
+      "ends_at": "2026-05-02T20:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202605021830-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-05-07T16:30:00+03:00",
+      "ends_at": "2026-05-07T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202605071630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-05-07T19:30:00+03:00",
+      "ends_at": "2026-05-07T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202605071930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-05-08T16:30:00+03:00",
+      "ends_at": "2026-05-08T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202605081630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-05-08T19:30:00+03:00",
+      "ends_at": "2026-05-08T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202605081930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-05-09T15:30:00+03:00",
+      "ends_at": "2026-05-09T17:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202605091530-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-05-09T18:30:00+03:00",
+      "ends_at": "2026-05-09T20:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202605091830-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-05-14T16:30:00+03:00",
+      "ends_at": "2026-05-14T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202605141630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-05-14T19:30:00+03:00",
+      "ends_at": "2026-05-14T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202605141930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-05-15T19:30:00+03:00",
+      "ends_at": "2026-05-15T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202605151930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-05-16T15:30:00+03:00",
+      "ends_at": "2026-05-16T17:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202605161530-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-05-16T18:30:00+03:00",
+      "ends_at": "2026-05-16T20:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202605161830-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-05-21T16:30:00+03:00",
+      "ends_at": "2026-05-21T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202605211630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-05-21T19:30:00+03:00",
+      "ends_at": "2026-05-21T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202605211930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-05-22T16:30:00+03:00",
+      "ends_at": "2026-05-22T18:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202605221630-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-05-22T19:30:00+03:00",
+      "ends_at": "2026-05-22T21:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202605221930-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-05-23T15:30:00+03:00",
+      "ends_at": "2026-05-23T17:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202605231530-games-hub"
+    },
+    {
+      "title": "Games Hub",
+      "starts_at": "2026-05-23T18:30:00+03:00",
+      "ends_at": "2026-05-23T20:00:00+03:00",
+      "room": "Children Museum",
+      "anchor": "#session-ithra-8045-202605231830-games-hub"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Games Hub",
+    "startDate": "2025-10-23T16:30:00+03:00",
+    "endDate": "2026-05-23T20:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Children Museum",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Children Museum",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/games-hub-9ae2a7e0d7.jpg"
+    ],
+    "description": "Join us for a fun-filled experience where children can enjoy a variety of card games and board games. Enjoy exciting challenges, spend quality time, and make new friends who share your passion for playful and engaging games!",
+    "url": "https://eventme.live/events/ended-ithra-events-games-hub-20251023-fb83124c.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-games-hub-20251023-fb83124c.html",
+    "isAccessibleForFree": false,
+    "keywords": "Games Hub, ترفيه وعائلات, family, برنامج ممتد, منتهية, الظهران, Children Museum, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Families, Play, ended-event, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/childrens-museum/games-hub"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/childrens-museum/games-hub",
+      "availability": "https://schema.org/InStock",
+      "category": "20 SAR"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:English Children Book Club (10 - 12) | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-english-children-book-club-10-12@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260715T150000Z
+DTEND:20260812T160000Z
+SUMMARY:English Children Book Club (10 - 12)
+DESCRIPTION:Are you ready to encourage your children to read books and discuss it at the monthly book club meetings? Let them read and develop their linguistic\, social and conversational skills. we are waiting for you!
+LOCATION:Library - Level 2
+URL:https://eventme.live/events/event-english-children-book-club-10-12.html
+END:VEVENT
+END:VCALENDAR

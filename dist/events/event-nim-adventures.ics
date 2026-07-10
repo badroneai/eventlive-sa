@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:niMú Adventures | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-nim-adventures@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260713T130000Z
+DTEND:20260718T193000Z
+SUMMARY:niMú Adventures
+DESCRIPTION:In a world filled with imagination and wonder\, niM&uacute\; embarks on an unexpected journey among suitcases\, dreams\, and ordinary moments that transform into extraordinary stories. What begins as a simple moment of waiting soon becomes an adventure full of surprises\, laughter\, and discovery.
+LOCATION:Plaza
+URL:https://eventme.live/events/event-nim-adventures.html
+END:VEVENT
+END:VCALENDAR

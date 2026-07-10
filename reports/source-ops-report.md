@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-07-10T09:13:20.207Z
+- generated_at: 2026-07-10T10:11:22.094Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -13,24 +13,24 @@
 - Sources in registry: 81
 - Sources attempted in latest collection: 41
 - Collection coverage: 51%
-- Healthy sources: 28
-- Zero-yield sources: 13
+- Healthy sources: 29
+- Zero-yield sources: 12
 - High-priority unattempted sources: 3
-- Candidates: 261
+- Candidates: 390
 - Actionable candidates: 0
 - Ready for review: 0
 - Ready for catalog promotion: 0
-- Linked to catalog from candidates: 242
+- Linked to catalog from candidates: 371
 - Stale unpublished candidates: 0
 - Duplicate risk: 0
 - Recommendation: استخدم أقوى مرشحي الاكتشاف لبناء مطابقة آلية مع مصادر رسمية؛ لا تنشر مصدر اكتشاف منفرداً.
 
 ## Candidate Funnel
 
-- review_status.approved-for-catalog: 242
+- review_status.approved-for-catalog: 371
 - review_status.evidence-captured: 4
 - review_status.new: 15
-- publication_gate.catalog-review: 242
+- publication_gate.catalog-review: 371
 - publication_gate.duplicate-review: 1
 - publication_gate.source-evidence: 18
 - discovery_quality.strong-lead: 27
@@ -83,7 +83,7 @@
 | 20 | CODE MCIT Programs | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
 | 21 | Misk Hub Programs | healthy | 5 | 8 | استمر بالمراجعة والتكرار قبل النشر. |
 | 22 | Dhahran Expo Calendar | healthy | 15 | 15 | استمر بالمراجعة والتكرار قبل النشر. |
-| 23 | Ithra Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
+| 23 | Ithra Events | healthy | 129 | 129 | استمر بالمراجعة والتكرار قبل النشر. |
 | 24 | Saudi Digital Academy | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 25 | SDAIA Academy Programs | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
 | 26 | Saudi Events App | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |

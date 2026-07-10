@@ -1,15 +1,48 @@
 {
-  "generated_at": "2026-07-10T09:13:06.464Z",
+  "generated_at": "2026-07-10T10:10:45.542Z",
   "platform": "EventLive",
   "canonical_domain": "eventme.live",
   "cities_count": 34,
   "totals": {
-    "events": 622,
-    "upcoming_or_active": 227,
-    "ended": 395,
-    "live_ready": 21
+    "events": 841,
+    "upcoming_or_active": 350,
+    "ended": 491,
+    "live_ready": 239
   },
   "cities": [
+    {
+      "slug": "dhahran",
+      "label": "الظهران",
+      "url": "./cities/dhahran.html",
+      "total_events": 247,
+      "upcoming_or_active": 140,
+      "ended": 107,
+      "live_ready": 218,
+      "sources": [
+        "Asharqia Chamber Events",
+        "Dhahran Expo Calendar",
+        "Ithra Events"
+      ],
+      "categories": [
+        "ترفيه وعائلات",
+        "ثقافة وفنون",
+        "جامعات ومجتمع",
+        "جوائز وتكريم",
+        "رياضة وفعاليات جماهيرية",
+        "علوم وفضاء",
+        "فعاليات الغرف التجارية",
+        "مؤتمرات ومنتديات",
+        "معارض وتجارية"
+      ],
+      "next_event": {
+        "title": "Build & Play Together",
+        "starts_at": "2026-07-10T09:00:00+03:00",
+        "status": "ongoing",
+        "url": "./events/event-build-play-together.html"
+      },
+      "sources_count": 3,
+      "categories_count": 9
+    },
     {
       "slug": "riyadh",
       "label": "الرياض",
@@ -71,34 +104,6 @@
       },
       "sources_count": 29,
       "categories_count": 12
-    },
-    {
-      "slug": "dhahran",
-      "label": "الظهران",
-      "url": "./cities/dhahran.html",
-      "total_events": 28,
-      "upcoming_or_active": 17,
-      "ended": 11,
-      "live_ready": 0,
-      "sources": [
-        "Asharqia Chamber Events",
-        "Dhahran Expo Calendar"
-      ],
-      "categories": [
-        "جوائز وتكريم",
-        "رياضة وفعاليات جماهيرية",
-        "فعاليات الغرف التجارية",
-        "مؤتمرات ومنتديات",
-        "معارض وتجارية"
-      ],
-      "next_event": {
-        "title": "Offshore Technology & Innovation Technical Conference & Expo - OFFSHORE ARABIA 2026”",
-        "starts_at": "2026-08-24T09:00:00+03:00",
-        "status": "upcoming",
-        "url": "./events/event-offshore-technology-innovation-technical-conference-expo-offshore-arabia.html"
-      },
-      "sources_count": 2,
-      "categories_count": 5
     },
     {
       "slug": "aseer",

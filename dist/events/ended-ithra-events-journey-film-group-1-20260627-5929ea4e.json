@@ -1,0 +1,128 @@
+{
+  "id": "ended-ithra-events-journey-film-group-1-20260627-5929ea4e",
+  "title": "Journey Film: Group 1",
+  "summary": "Lost Land In the hope of reuniting with their scattered family, four-year-old Shafi and his nine-year-old sister Somira leave a Rohingya refugee camp in Bangladesh on a perilous journey to reach Malaysia.",
+  "canonical_url": "https://eventme.live/events/ended-ithra-events-journey-film-group-1-20260627-5929ea4e.html",
+  "detail_url": "./events/ended-ithra-events-journey-film-group-1-20260627-5929ea4e.html",
+  "calendar_url": "./events/ended-ithra-events-journey-film-group-1-20260627-5929ea4e.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/visit-ithra/attractions/cinema/saudi-film-festival-12/film-screenings/journey-film-group-1",
+  "evidence_url": "https://www.ithra.com/en/visit-ithra/attractions/cinema/saudi-film-festival-12/film-screenings/journey-film-group-1",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verification_method": "official-public-algolia-index",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Cinema",
+  "venue_address": "Cinema",
+  "starts_at": "2026-06-27T19:00:00+03:00",
+  "ends_at": "2026-06-27T20:40:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": false,
+  "official_sessions_count": 1,
+  "schedule_depth": "official-single-session",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/journey-film-group-1-abb6f58d49.jpg",
+  "image_alt": "Journey Film: Group 1",
+  "category": "جامعات ومجتمع",
+  "category_url": "./categories/education-community.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Journey Film: Group 1",
+    "جامعات ومجتمع",
+    "performance",
+    "فعالية",
+    "منتهية",
+    "الظهران",
+    "Cinema",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Saudi Film Festival",
+    "ended-event",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Journey Film: Group 1",
+      "starts_at": "2026-06-27T19:00:00+03:00",
+      "ends_at": "2026-06-27T20:40:00+03:00",
+      "room": "Cinema",
+      "anchor": "#session-ithra-18160-202606271900-journey-film-group-1"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Journey Film: Group 1",
+    "startDate": "2026-06-27T19:00:00+03:00",
+    "endDate": "2026-06-27T20:40:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Cinema",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cinema",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/journey-film-group-1-abb6f58d49.jpg"
+    ],
+    "description": "Lost Land In the hope of reuniting with their scattered family, four-year-old Shafi and his nine-year-old sister Somira leave a Rohingya refugee camp in Bangladesh on a perilous journey to reach Malaysia.",
+    "url": "https://eventme.live/events/ended-ithra-events-journey-film-group-1-20260627-5929ea4e.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-journey-film-group-1-20260627-5929ea4e.html",
+    "isAccessibleForFree": true,
+    "keywords": "Journey Film: Group 1, جامعات ومجتمع, performance, فعالية, منتهية, الظهران, Cinema, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Saudi Film Festival, ended-event, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/visit-ithra/attractions/cinema/saudi-film-festival-12/film-screenings/journey-film-group-1"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/visit-ithra/attractions/cinema/saudi-film-festival-12/film-screenings/journey-film-group-1",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

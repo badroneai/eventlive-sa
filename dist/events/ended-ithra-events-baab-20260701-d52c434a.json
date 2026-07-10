@@ -1,0 +1,128 @@
+{
+  "id": "ended-ithra-events-baab-20260701-d52c434a",
+  "title": "BAAB",
+  "summary": "After discovering cassette tapes hidden behind a green door, Wahida begins to unravel the truth about her twin sister's death. Plagued by tinnitus, her journey into the mountains uncovers a terrifying revelation. Nayla Al Khaja the UAE's first female director, is known for rich, moody visuals and layered storytelling. Her debut feature Three was the longest-running independent film in MENA, screening for 120 days in cinemas. With films on Netflix, her work blends psychological beauty and horror, tackling social taboos like grief, divorce and identity while presenting Arabic Gulf culture in a raw, unsanitized way.,The",
+  "canonical_url": "https://eventme.live/events/ended-ithra-events-baab-20260701-d52c434a.html",
+  "detail_url": "./events/ended-ithra-events-baab-20260701-d52c434a.html",
+  "calendar_url": "./events/ended-ithra-events-baab-20260701-d52c434a.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/visit-ithra/attractions/cinema/saudi-film-festival-12/film-screenings/baab",
+  "evidence_url": "https://www.ithra.com/en/visit-ithra/attractions/cinema/saudi-film-festival-12/film-screenings/baab",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verification_method": "official-public-algolia-index",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Theater",
+  "venue_address": "Theater",
+  "starts_at": "2026-07-01T16:00:00+03:00",
+  "ends_at": "2026-07-01T18:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": false,
+  "official_sessions_count": 1,
+  "schedule_depth": "official-single-session",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/baab-d957b34587.jpg",
+  "image_alt": "BAAB",
+  "category": "جامعات ومجتمع",
+  "category_url": "./categories/education-community.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "BAAB",
+    "جامعات ومجتمع",
+    "performance",
+    "فعالية",
+    "منتهية",
+    "الظهران",
+    "Theater",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Saudi Film Festival",
+    "ended-event",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "BAAB",
+      "starts_at": "2026-07-01T16:00:00+03:00",
+      "ends_at": "2026-07-01T18:00:00+03:00",
+      "room": "Theater",
+      "anchor": "#session-ithra-18156-202607011600-baab"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "BAAB",
+    "startDate": "2026-07-01T16:00:00+03:00",
+    "endDate": "2026-07-01T18:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Theater",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Theater",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/baab-d957b34587.jpg"
+    ],
+    "description": "After discovering cassette tapes hidden behind a green door, Wahida begins to unravel the truth about her twin sister's death. Plagued by tinnitus, her journey into the mountains uncovers a terrifying revelation. Nayla Al Khaja the UAE's first female director, is known for rich, moody visuals and layered storytelling. Her debut feature Three was the longest-running independent film in MENA, screening for 120 days in cinemas. With films on Netflix, her work blends psychological beauty and horror, tackling social taboos like grief, divorce and identity while presenting Arabic Gulf culture in a raw, unsanitized way.,The",
+    "url": "https://eventme.live/events/ended-ithra-events-baab-20260701-d52c434a.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-baab-20260701-d52c434a.html",
+    "isAccessibleForFree": true,
+    "keywords": "BAAB, جامعات ومجتمع, performance, فعالية, منتهية, الظهران, Theater, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Saudi Film Festival, ended-event, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/visit-ithra/attractions/cinema/saudi-film-festival-12/film-screenings/baab"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/visit-ithra/attractions/cinema/saudi-film-festival-12/film-screenings/baab",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Song of the Sea | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-ithra-events-song-of-the-sea-20260528-240b9b63@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260528T140000Z
+DTEND:20260530T150000Z
+SUMMARY:Song of the Sea
+DESCRIPTION:A visually poetic story about two siblings discovering memory and belonging. The film gently explores family bonds and the meaning of finding one&rsquo\;s &ldquo\;home&rdquo\; in another.
+LOCATION:Cinema
+URL:https://eventme.live/events/ended-ithra-events-song-of-the-sea-20260528-240b9b63.html
+END:VEVENT
+END:VCALENDAR

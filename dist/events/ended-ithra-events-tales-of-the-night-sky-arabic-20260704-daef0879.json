@@ -1,0 +1,125 @@
+{
+  "id": "ended-ithra-events-tales-of-the-night-sky-arabic-20260704-daef0879",
+  "title": "Tales of the Night Sky (Arabic)",
+  "summary": "This magical Mommy and Me experience invites families on a journey through the night sky, beginning with a storytime inspired by traditional Arab tales of the constellations. After the story, we will design constellation cards featuring their favorite star patterns, blending creativity with storytelling. The morning will end with a shared breakfast, offering a special moment to connect, reflect and enjoy quality time together.",
+  "canonical_url": "https://eventme.live/events/ended-ithra-events-tales-of-the-night-sky-arabic-20260704-daef0879.html",
+  "detail_url": "./events/ended-ithra-events-tales-of-the-night-sky-arabic-20260704-daef0879.html",
+  "calendar_url": "./events/ended-ithra-events-tales-of-the-night-sky-arabic-20260704-daef0879.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/tales-night-sky-arabic",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/tales-night-sky-arabic",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verification_method": "official-public-algolia-index",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Library - Level 2",
+  "venue_address": "Library - Level 2",
+  "starts_at": "2026-07-04T10:00:00+03:00",
+  "ends_at": "2026-07-04T11:30:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": false,
+  "official_sessions_count": 1,
+  "schedule_depth": "official-single-session",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/tales-of-the-night-sky-english-f55a234a58.jpg",
+  "image_alt": "Tales of the Night Sky (Arabic)",
+  "category": "ثقافة وفنون",
+  "category_url": "./categories/culture-arts.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Tales of the Night Sky (Arabic)",
+    "ثقافة وفنون",
+    "culture",
+    "فعالية",
+    "منتهية",
+    "الظهران",
+    "Library - Level 2",
+    "Ithra Events",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Mommy and Me",
+    "ended-event",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Tales of the Night Sky (Arabic)",
+      "starts_at": "2026-07-04T10:00:00+03:00",
+      "ends_at": "2026-07-04T11:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-18260-202607041000-tales-of-the-night-sky-arabic"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Tales of the Night Sky (Arabic)",
+    "startDate": "2026-07-04T10:00:00+03:00",
+    "endDate": "2026-07-04T11:30:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Library - Level 2",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Library - Level 2",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/tales-of-the-night-sky-english-f55a234a58.jpg"
+    ],
+    "description": "This magical Mommy and Me experience invites families on a journey through the night sky, beginning with a storytime inspired by traditional Arab tales of the constellations. After the story, we will design constellation cards featuring their favorite star patterns, blending creativity with storytelling. The morning will end with a shared breakfast, offering a special moment to connect, reflect and enjoy quality time together.",
+    "url": "https://eventme.live/events/ended-ithra-events-tales-of-the-night-sky-arabic-20260704-daef0879.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-tales-of-the-night-sky-arabic-20260704-daef0879.html",
+    "isAccessibleForFree": false,
+    "keywords": "Tales of the Night Sky (Arabic), ثقافة وفنون, culture, فعالية, منتهية, الظهران, Library - Level 2, Ithra Events, arts, creativity, community, exhibitions, learning, Ithra, Mommy and Me, ended-event, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/tales-night-sky-arabic"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/tales-night-sky-arabic",
+      "availability": "https://schema.org/InStock",
+      "category": "35 SAR"
+    }
+  }
+}

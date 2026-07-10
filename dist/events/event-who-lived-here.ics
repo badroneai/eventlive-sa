@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Who Lived Here? | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-who-lived-here@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260710T130000Z
+DTEND:20260725T180000Z
+SUMMARY:Who Lived Here?
+DESCRIPTION:Every landscape shapes the homes built within it. This treasure hunt in Rehlaat Gallery\, children follow clues across three environments: desert\, mountain\, and coast. Each stop reveals a model home designed in response to its surroundings\, from materials and structure to layout and function. As they move between locations\, children match clues to the correct homes\, discovering how climate\, terrain\, and daily life influence the way people build and live.
+LOCATION:Museum - Gallery 4
+URL:https://eventme.live/events/event-who-lived-here.html
+END:VEVENT
+END:VCALENDAR

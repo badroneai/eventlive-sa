@@ -1,0 +1,345 @@
+{
+  "id": "event-family-game",
+  "title": "Family Game",
+  "summary": "Every month a new fun challenging and educational game for you and your family to play and spend unforgettable time together at Ithra library!",
+  "canonical_url": "https://eventme.live/events/event-family-game.html",
+  "detail_url": "./events/event-family-game.html",
+  "calendar_url": "./events/event-family-game.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2024/family-game",
+  "evidence_url": "https://www.ithra.com/en/programme/2024/family-game",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:08:07.323Z",
+  "verification_method": "registered-venue-official",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Library - Level 2",
+  "venue_address": "Library - Level 2",
+  "starts_at": "2026-07-31T18:00:00+03:00",
+  "ends_at": "2026-08-28T18:30:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 32,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/family-game-4d2847f9c7.jpg",
+  "image_alt": "Family Game",
+  "category": "ترفيه وعائلات",
+  "category_url": "./categories/entertainment-families.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Family Game",
+    "ترفيه وعائلات",
+    "family",
+    "برنامج ممتد",
+    "قادمة",
+    "الظهران",
+    "Library - Level 2",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Families",
+    "Library",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Family Game",
+      "starts_at": "2025-08-22T18:00:00+03:00",
+      "ends_at": "2025-08-22T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202508221800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2025-08-29T18:00:00+03:00",
+      "ends_at": "2025-08-29T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202508291800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2025-09-02T16:00:00+03:00",
+      "ends_at": "2025-09-02T20:00:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202509021600-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2025-10-14T16:00:00+03:00",
+      "ends_at": "2025-10-14T20:00:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202510141600-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2025-10-21T16:00:00+03:00",
+      "ends_at": "2025-10-21T20:00:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202510211600-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2025-10-28T16:00:00+03:00",
+      "ends_at": "2025-10-28T20:00:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202510281600-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2025-11-04T16:00:00+03:00",
+      "ends_at": "2025-11-04T20:00:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202511041600-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2025-12-16T16:00:00+03:00",
+      "ends_at": "2025-12-16T20:00:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202512161600-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2025-12-23T16:00:00+03:00",
+      "ends_at": "2025-12-23T20:00:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202512231600-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2025-12-30T16:00:00+03:00",
+      "ends_at": "2025-12-30T20:00:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202512301600-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-01-02T18:00:00+03:00",
+      "ends_at": "2026-01-02T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202601021800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-01-09T18:00:00+03:00",
+      "ends_at": "2026-01-09T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202601091800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-02-06T18:00:00+03:00",
+      "ends_at": "2026-02-06T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202602061800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-02-13T18:00:00+03:00",
+      "ends_at": "2026-02-13T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202602131800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-03-27T18:00:00+03:00",
+      "ends_at": "2026-03-27T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202603271800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-04-03T16:00:00+03:00",
+      "ends_at": "2026-04-03T16:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202604031600-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-04-10T18:00:00+03:00",
+      "ends_at": "2026-04-10T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202604101800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-04-17T18:00:00+03:00",
+      "ends_at": "2026-04-17T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202604171800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-04-24T18:00:00+03:00",
+      "ends_at": "2026-04-24T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202604241800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-05-01T18:00:00+03:00",
+      "ends_at": "2026-05-01T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202605011800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-05-08T18:00:00+03:00",
+      "ends_at": "2026-05-08T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202605081800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-05-15T18:00:00+03:00",
+      "ends_at": "2026-05-15T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202605151800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-06-05T18:00:00+03:00",
+      "ends_at": "2026-06-05T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202606051800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-06-12T18:00:00+03:00",
+      "ends_at": "2026-06-12T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202606121800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-06-19T18:00:00+03:00",
+      "ends_at": "2026-06-19T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202606191800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-06-26T18:00:00+03:00",
+      "ends_at": "2026-06-26T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202606261800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-07-03T18:00:00+03:00",
+      "ends_at": "2026-07-03T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202607031800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-07-31T18:00:00+03:00",
+      "ends_at": "2026-07-31T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202607311800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-08-07T18:00:00+03:00",
+      "ends_at": "2026-08-07T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202608071800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-08-14T18:00:00+03:00",
+      "ends_at": "2026-08-14T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202608141800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-08-21T18:00:00+03:00",
+      "ends_at": "2026-08-21T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202608211800-family-game"
+    },
+    {
+      "title": "Family Game",
+      "starts_at": "2026-08-28T18:00:00+03:00",
+      "ends_at": "2026-08-28T18:30:00+03:00",
+      "room": "Library - Level 2",
+      "anchor": "#session-ithra-1901-202608281800-family-game"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Family Game",
+    "startDate": "2026-07-31T18:00:00+03:00",
+    "endDate": "2026-08-28T18:30:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Library - Level 2",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Library - Level 2",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/family-game-4d2847f9c7.jpg"
+    ],
+    "description": "Every month a new fun challenging and educational game for you and your family to play and spend unforgettable time together at Ithra library!",
+    "url": "https://eventme.live/events/event-family-game.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-family-game.html",
+    "isAccessibleForFree": true,
+    "keywords": "Family Game, ترفيه وعائلات, family, برنامج ممتد, قادمة, الظهران, Library - Level 2, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Families, Library, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2024/family-game"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://tickets.ithra.com/showProductList.html?idEvent=6",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

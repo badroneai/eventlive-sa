@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:The Hidden Hue | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-ithra-events-the-hidden-hue-20260528-a505e4ca@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260528T130000Z
+DTEND:20260530T200000Z
+SUMMARY:The Hidden Hue
+DESCRIPTION:Join us into a creative workshop where colors and shapes speak the language of emotion. Participants explore how light and form express feelings without words\, and how visual energy shapes mood and balance. This is where emotions become visible.
+LOCATION:Energy Exhibit
+URL:https://eventme.live/events/ended-ithra-events-the-hidden-hue-20260528-a505e4ca.html
+END:VEVENT
+END:VCALENDAR

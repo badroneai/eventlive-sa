@@ -1,16 +1,16 @@
 {
-  "published_at": "2026-07-10T09:12:41.848Z",
+  "published_at": "2026-07-10T10:08:07.323Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 261,
+  "candidates_seen": 390,
   "totals": {
-    "candidates_seen": 261,
+    "candidates_seen": 390,
     "published": 0,
-    "linked_existing": 240,
+    "linked_existing": 369,
     "blocked": 21,
-    "reconciled": 240
+    "reconciled": 369
   },
   "duplicate_catalog_rows_removed": 0,
   "duplicate_catalog_rows": [],
@@ -523,15 +523,273 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-build-play-together-20260710-c73728ad",
+      "event_id": "event-build-play-together",
+      "title": "Build & Play Together",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260710-cc43c2bd",
+      "event_id": "event-echoes-of-the-familiar",
+      "title": "Echoes of the Familiar",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260710-562bc61d",
+      "event_id": "event-tafasahu-make-room",
+      "title": "Tafasahu: Make Room",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-leap-then-look-20260710-99d88224",
+      "event_id": "event-leap-then-look",
+      "title": "Leap Then Look!",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-beaded-plant-suncatcher-20260710-ebabc697",
+      "event_id": "event-beaded-plant-suncatcher",
+      "title": "Beaded plant Suncatcher",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-puppet-world-20260710-3b43fb64",
+      "event_id": "event-puppet-world",
+      "title": "Puppet World",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-pfl-mena-fight-night-20260710-0eafa4d0",
       "event_id": "event-pfl-mena-fight-night",
       "title": "PFL MENA Fight Night",
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-ajeeb-in-wonder-house-20260710-caa7ff83",
+      "event_id": "event-ajeeb-in-wonder-house",
+      "title": "Ajeeb in Wonder House",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20260710-a3bc99ba",
+      "event_id": "event-1-2-3-a-little-space-for-me",
+      "title": "1, 2, 3, A Little Space for Me",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-1-2-3-lets-rhyme-20260710-4d37515a",
+      "event_id": "event-1-2-3-lets-rhyme",
+      "title": "1, 2, 3, Let's Rhyme!",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-a-home-i-imagine-20260710-7778a5c1",
+      "event_id": "event-a-home-i-imagine",
+      "title": "A Home I Imagine",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-around-the-table-20260710-87d7ec65",
+      "event_id": "event-around-the-table",
+      "title": "Around the Table",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-balloon-shapes-lab-20260710-7c264d45",
+      "event_id": "event-balloon-shapes-lab",
+      "title": "Balloon Shapes Lab",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-built-by-nature-20260710-950b3be0",
+      "event_id": "event-built-by-nature",
+      "title": "Built by Nature",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-caf-20260710-f5069d9a",
+      "event_id": "event-childrens-caf",
+      "title": "Children's Café",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-draw-your-story-20260710-6b28e480",
+      "event_id": "event-draw-your-story",
+      "title": "Draw Your Story",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-hidden-home-bingo-20260710-0150ad97",
+      "event_id": "event-hidden-home-bingo",
+      "title": "Hidden Home Bingo",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-insightful-spaces-20260710-83f85411",
+      "event_id": "event-insightful-spaces",
+      "title": "Insightful Spaces",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-interactive-exhibit-20260710-bcda7332",
+      "event_id": "event-interactive-exhibit",
+      "title": "Interactive Exhibit",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-childrens-festival-2026-20260710-d6d5cc99",
+      "event_id": "event-childrens-caf",
+      "title": "Ithra Children's Festival 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-lets-decorate-20260710-4cb342a7",
+      "event_id": "event-lets-decorate",
+      "title": "Let’s Decorate!",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-mic-moments-20260710-6b55b3ff",
+      "event_id": "event-mic-moments",
+      "title": "Mic Moments",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-mirror-or-window-20260710-660f44a0",
+      "event_id": "event-mirror-or-window",
+      "title": "Mirror Or Window",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-my-family-bouquet-20260710-9570ab84",
+      "event_id": "event-my-family-bouquet",
+      "title": "My Family Bouquet",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-our-place-on-earth-20260710-d06c9f86",
+      "event_id": "event-our-place-on-earth",
+      "title": "Our Place on Earth",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-painted-faces-20260710-d70db13a",
+      "event_id": "event-painted-faces",
+      "title": "Painted Faces",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-treasures-in-every-home-20260710-6f6454c1",
+      "event_id": "event-treasures-in-every-home",
+      "title": "Treasures in Every Home",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-where-we-belong-20260710-44a2729b",
+      "event_id": "event-where-we-belong",
+      "title": "Where We Belong",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-who-lived-here-20260710-11c491ce",
+      "event_id": "event-who-lived-here",
+      "title": "Who Lived Here?",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-zoom-in-20260710-d8d7bd6d",
+      "event_id": "event-zoom-in",
+      "title": "Zoom In",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-in-the-home-of-20260710-0dcdc683",
+      "event_id": "event-in-the-home-of",
+      "title": "In the Home of…",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-play-with-shadows-20260710-9984f169",
+      "event_id": "event-build-play-together",
+      "title": "Play with Shadows",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-little-dot-20260710-6f97a4be",
+      "event_id": "event-my-little-fort",
+      "title": "Little Dot",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-my-little-fort-20260710-09d01da3",
+      "event_id": "event-my-little-fort",
+      "title": "My Little Fort",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-my-neighbor-totoro-20260710-f3bc5c57",
+      "event_id": "event-my-neighbor-totoro",
+      "title": "My Neighbor Totoro",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-on-this-carpet-20260710-2972e041",
+      "event_id": "event-on-this-carpet",
+      "title": "On This Carpet",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-sense-the-home-20260710-3a3ca5ae",
+      "event_id": "event-sense-the-home",
+      "title": "Sense the Home",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-water-challenges-20260710-eea51834",
+      "event_id": "event-water-challenges",
+      "title": "Water Challenges",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-house-of-ideas-20260710-26aaa6b2",
+      "event_id": "event-the-house-of-ideas",
+      "title": "The House of Ideas",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-house-of-wonder-20260710-9a8dfa3b",
+      "event_id": "event-house-of-wonder",
+      "title": "House of Wonder",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-museum-story-time-20260710-1104734c",
+      "event_id": "event-draw-your-story",
+      "title": "Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-mdlbeast-events-beast-house-20260710-83049a2a",
       "event_id": "event-beast-house",
       "title": "Beast House",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-kindergarten-under-the-palm-tree-english-20260711-c72ee6a9",
+      "event_id": "event-kindergarten-under-the-palm-tree-english",
+      "title": "Kindergarten Under the Palm Tree (English)",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-unbox-your-story-20260711-5085a6f0",
+      "event_id": "event-unbox-your-story",
+      "title": "Unbox Your Story",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-storyteller-of-the-day-20260711-94528a46",
+      "event_id": "event-storyteller-of-the-day",
+      "title": "Storyteller of the Day",
       "reason": "already linked to catalog event"
     },
     {
@@ -601,6 +859,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-night-at-ithra-20260712-b0205ab5",
+      "event_id": "event-night-at-ithra",
+      "title": "Night at Ithra",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-future-skills-catalog-أساسيات-الحوسبة-السحابية-cloud-computing-essentials-20260713-a4d60bbe",
       "event_id": "event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials",
       "title": "أساسيات الحوسبة السحابية - Cloud Computing Essentials",
@@ -619,6 +883,54 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260713-f563a36e",
+      "event_id": "event-ithra-summer-camp-2026-a-world-of-homes",
+      "title": "Ithra Summer Camp 2026: A world of homes",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-summer-youth-program-20260713-a20f7a11",
+      "event_id": "event-ithra-summer-camp-2026-a-world-of-homes",
+      "title": "Summer Youth Program",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-natures-architects-20260713-9b0461b0",
+      "event_id": "event-natures-architects",
+      "title": "Nature's Architects",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-nim-adventures-20260713-c504dfe0",
+      "event_id": "event-nim-adventures",
+      "title": "niMú Adventures",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-virtual-to-reality-20260713-b8053f5f",
+      "event_id": "event-virtual-to-reality",
+      "title": "Virtual to Reality",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-finding-nemo-20260713-ee95c1c5",
+      "event_id": "event-finding-nemo",
+      "title": "Finding Nemo",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-open-art-space-20260713-40aac166",
+      "event_id": "event-open-art-space",
+      "title": "Open Art Space",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-english-children-book-club-7-9-20260714-fceb6af6",
+      "event_id": "event-english-children-book-club-7-9",
+      "title": "English Children Book Club (7-9)",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-saudi-university-events-semi-finals-join-the-celebration-at-the-fifa-fan-zone-20260714-c377ce4a",
       "event_id": "event-semi-finals-join-the-celebration-at-the-fifa-fan-zone",
       "title": "Semi-Finals: Join the Celebration at the FIFA Fan Zone",
@@ -628,6 +940,24 @@
       "candidate_id": "candidate-sfda-events-متطلبات-الاستخدام-الآمن-للأجهزة-والمستلزمات-الطبية-لمراكز-الأسنان-20260715-228461a9",
       "event_id": "event-متطلبات-الاستخدام-الآمن-للأجهزة-والمستلزمات-الطبية-لمراكز-الأسنان",
       "title": "متطلبات الاستخدام الآمن للأجهزة والمستلزمات الطبية لمراكز الأسنان",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-kinusaiga-art-20260715-98b157b0",
+      "event_id": "event-kinusaiga-art",
+      "title": "Kinusaiga Art",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-english-children-book-club-10-12-20260715-efa3d7e3",
+      "event_id": "event-english-children-book-club-10-12",
+      "title": "English Children Book Club (10 - 12)",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-your-book-in-a-minute-20260715-c8aab584",
+      "event_id": "event-your-book-in-a-minute",
+      "title": "Your Book in a Minute!",
       "reason": "already linked to catalog event"
     },
     {
@@ -646,6 +976,12 @@
       "candidate_id": "candidate-riyadh-city-events-wrth-summer-art-craft-program-20260716-77021a48",
       "event_id": "event-wrth-summer-art-craft-program",
       "title": "Wrth Summer Art & Craft Program",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tales-of-the-night-sky-english-20260718-eb5d626a",
+      "event_id": "event-tales-of-the-night-sky-english",
+      "title": "Tales of the Night Sky (English)",
       "reason": "already linked to catalog event"
     },
     {
@@ -673,6 +1009,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-the-magical-suitcase-20260720-431be2c3",
+      "event_id": "event-the-magical-suitcase",
+      "title": "The Magical Suitcase",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-lorax-20260720-657904eb",
+      "event_id": "event-the-lorax",
+      "title": "The Lorax",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-sfda-events-دور-مقدمي-الرعاية-الصحية-وضباط-الاتصال-في-التعامل-مع-انذارات-السلامة-الص-20260721-56cf21b4",
       "event_id": "event-دور-مقدمي-الرعاية-الصحية-وضباط-الاتصال-في-التعامل-مع-انذارات-السلامة-الص",
       "title": "دور مقدمي الرعاية الصحية وضباط الاتصال في التعامل مع انذارات السلامة الصادرة من المركز الوطني لبلاغات الأجهزة والمستلزمات الطبية",
@@ -691,9 +1039,123 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-introduction-to-jewelry-making-techniques-20260721-654d3ff7",
+      "event_id": "event-introduction-to-jewelry-making-techniques",
+      "title": "Introduction to Jewelry Making Techniques",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-book-signings-20260721-df1bcbf0",
+      "event_id": "event-book-signings",
+      "title": "Book Signings",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-reading-and-the-childs-personality-20260721-9550074a",
+      "event_id": "event-reading-and-the-childs-personality",
+      "title": "Reading and the Child's Personality",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-sustainability-in-childrens-literature-insights-and-experiences-20260721-79862b16",
+      "event_id": "event-sustainability-in-childrens-literature-insights-and-experiences",
+      "title": "Sustainability in Children's Literature, Insights and Experiences",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-meet-with-an-expert-fatimah-sharafeddine-20260721-5bf4cca2",
+      "event_id": "event-meet-with-an-expert-fatimah-sharafeddine",
+      "title": "Meet with an Expert: Fatimah Sharafeddine",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-painted-lamps-20260722-285504a4",
+      "event_id": "event-painted-lamps",
+      "title": "Painted Lamps",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-todays-story-narrator-with-samar-barraj-20260722-432648cb",
+      "event_id": "event-todays-story-narrator-with-samar-barraj",
+      "title": "Today's Story Narrator with Samar Barraj",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-beyond-publishing-and-translating-childrens-books-20260722-73918e79",
+      "event_id": "event-beyond-publishing-and-translating-childrens-books",
+      "title": "Beyond Publishing and Translating Children's Books",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-meet-with-an-expert-samar-barraj-20260722-e5d2eda4",
+      "event_id": "event-meet-with-an-expert-samar-barraj",
+      "title": "Meet with an Expert: Samar Barraj",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-take-a-closer-look-at-the-preparation-process-for-the-plays-competing-20260722-0295f2ee",
+      "event_id": "event-take-a-closer-look-at-the-preparation-process-for-the-plays-competing",
+      "title": "Take a closer look at the preparation process for the plays competing",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-todays-story-narrator-with-taghreed-najjar-20260722-cc6a7a42",
+      "event_id": "event-todays-story-narrator-with-taghreed-najjar",
+      "title": "Today's Story Narrator with Taghreed Najjar",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-youth-book-club-20260722-de163fbc",
+      "event_id": "event-youth-book-club",
+      "title": "Youth Book Club",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-meet-with-an-expert-taghreed-najjar-20260722-b32994d9",
+      "event_id": "event-meet-with-an-expert-taghreed-najjar",
+      "title": "Meet with an Expert: Taghreed Najjar",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-الأسبوع-الصيني-20260723-4a38d19e",
       "event_id": "event-الأسبوع-الصيني",
       "title": "الأسبوع الصيني",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-from-idea-to-narrative-how-we-write-for-childrens-hearts-20260723-edec6fb4",
+      "event_id": "event-from-idea-to-narrative-how-we-write-for-childrens-hearts",
+      "title": "From Idea to Narrative: How We Write for Children's Hearts",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-bringing-the-text-into-reading-environments-20260723-7b2f0f58",
+      "event_id": "event-bringing-the-text-into-reading-environments",
+      "title": "Bringing the Text into Reading Environments",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-meet-with-an-expert-dr-sabah-aisawi-20260723-b96b8354",
+      "event_id": "event-meet-with-an-expert-dr-sabah-aisawi",
+      "title": "Meet with an Expert : Dr. Sabah Aisawi",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-from-a-paper-to-a-book-in-the-libraries-of-the-world-20260724-189aadbc",
+      "event_id": "event-from-a-paper-to-a-book-in-the-libraries-of-the-world",
+      "title": "From a Paper to a Book in the Libraries of the World",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-reading-between-the-image-and-the-story-20260724-e1b0df1e",
+      "event_id": "event-reading-between-the-image-and-the-story",
+      "title": "Reading Between the Image and the Story",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-a-house-reads-a-story-that-begins-with-the-family-20260724-65c22584",
+      "event_id": "event-a-house-reads-a-story-that-begins-with-the-family",
+      "title": "A House Reads: A Story that Begins with the Family",
       "reason": "already linked to catalog event"
     },
     {
@@ -727,9 +1189,159 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-tinkering-stations-20260727-5a2c4c0e",
+      "event_id": "event-tinkering-stations",
+      "title": "Tinkering Stations",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260727-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260727-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260727-2bf92d17",
+      "event_id": "event-childrens-art-studio",
+      "title": "Children's Art Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-energy-lab-20260727-60155d60",
+      "event_id": "event-energy-lab",
+      "title": "Energy Lab",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-children-story-time-20260727-f545fa69",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-survival-journey-20260727-4fd1e78d",
+      "event_id": "event-survival-journey",
+      "title": "Survival Journey",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-idea-lab-majlis-20260727-eeece087",
+      "event_id": "event-idea-lab-majlis",
+      "title": "Idea Lab Majlis",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-hobby-with-expert-health-and-sports-20260727-939d9607",
+      "event_id": "event-hobby-with-expert-health-and-sports",
+      "title": "Hobby with Expert: Health and Sports",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-أوركسترا-harry-potter-20260728-4a38d19e",
       "event_id": "event-أوركسترا-harry-potter",
       "title": "أوركسترا Harry Potter",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-chess-hub-20260728-4919439a",
+      "event_id": "event-chess-hub",
+      "title": "Chess Hub",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-swim-r-mission-20260728-f8a6c05c",
+      "event_id": "event-swim-r-mission",
+      "title": "SWIM-R Mission",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-energy-in-motion-20260729-e0404048",
+      "event_id": "event-energy-in-motion",
+      "title": "Energy in Motion",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-arabic-children-book-club-10-12-20260729-39c903cc",
+      "event_id": "event-arabic-children-book-club-10-12",
+      "title": "Arabic Children Book Club (10-12)",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-family-challenges-20260730-3726c868",
+      "event_id": "event-family-challenges",
+      "title": "Family Challenges",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260730-ef7080ff",
+      "event_id": "event-trivia-night-earth-quest-tic-tac-know",
+      "title": "Trivia Night - Earth Quest: Tic-Tac-Know",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-nu-power-20260730-653464ac",
+      "event_id": "event-nu-power",
+      "title": "Nu-Power",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-moral-of-the-story-20260730-bfa3f2a8",
+      "event_id": "event-the-moral-of-the-story",
+      "title": "The Moral of the Story",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-grand-art-space-20260730-e3acefbb",
+      "event_id": "event-grand-art-space",
+      "title": "Grand Art Space",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-stories-from-ithras-library-20260731-4116de16",
+      "event_id": "event-stories-from-ithras-library",
+      "title": "Stories from Ithra's Library",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-non-stop-spin-20260731-6cf89742",
+      "event_id": "event-the-non-stop-spin",
+      "title": "The Non-Stop Spin",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-family-game-20260731-fff43c76",
+      "event_id": "event-family-game",
+      "title": "Family Game",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-toddler-saturday-20260801-739e1f00",
+      "event_id": "event-toddler-saturday",
+      "title": "Toddler Saturday",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-connect-and-create-20260801-d2514326",
+      "event_id": "event-connect-and-create",
+      "title": "Connect and Create!",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-workshop-at-the-library-20260801-7db9eb13",
+      "event_id": "event-workshop-at-the-library",
+      "title": "Workshop at the Library",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-all-things-hedgehogs-20260801-952dc936",
+      "event_id": "event-all-things-hedgehogs",
+      "title": "All Things Hedgehogs",
       "reason": "already linked to catalog event"
     },
     {
@@ -757,6 +1369,42 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-childrens-museum-free-monday-20260803-15ad7731",
+      "event_id": "event-childrens-museum-free-monday",
+      "title": "Children's Museum - Free Monday",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-paint-like-an-artist-20260803-a67d8ec3",
+      "event_id": "event-paint-like-an-artist",
+      "title": "Paint Like an Artist",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-almost-perfect-guide-to-event-management-20260803-9e165fb1",
+      "event_id": "event-the-almost-perfect-guide-to-event-management",
+      "title": "The Almost Perfect Guide to Event Management",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-toddler-tuesday-20260804-1afead7d",
+      "event_id": "event-toddler-tuesday",
+      "title": "Toddler Tuesday",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tangram-20260804-9a9db6cb",
+      "event_id": "event-tangram",
+      "title": "Tangram",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-readers-club-20260804-59a0cf0c",
+      "event_id": "event-ithra-readers-club",
+      "title": "Ithra Readers Club",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-international-falcon-breeders-auction-20260805-4b7cff1b",
       "event_id": "event-international-falcon-breeders-auction",
       "title": "International Falcon Breeders Auction",
@@ -766,6 +1414,24 @@
       "candidate_id": "candidate-riyadh-city-events-international-falcon-breeders-auction-20260805-ffef92ab",
       "event_id": "event-international-falcon-breeders-auction",
       "title": "International Falcon Breeders Auction",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-arabic-children-book-club-7-9-20260805-810c285f",
+      "event_id": "event-arabic-children-book-club-7-9",
+      "title": "Arabic Children Book Club (7 - 9)",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-little-explorers-20260806-1cc1993f",
+      "event_id": "event-little-explorers",
+      "title": "Little Explorers",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-dots-on-letters-20260807-b8901d67",
+      "event_id": "event-dots-on-letters",
+      "title": "Dots on Letters",
       "reason": "already linked to catalog event"
     },
     {
@@ -781,9 +1447,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-platforms-manager-skills-20260810-62ec512d",
+      "event_id": "event-platforms-manager-skills",
+      "title": "Platforms Manager Skills",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-أوركسترا-game-of-thrones-20260811-4a38d19e",
       "event_id": "event-أوركسترا-game-of-thrones",
       "title": "أوركسترا Game of Thrones",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-creative-character-design-20260811-afddf835",
+      "event_id": "event-creative-character-design",
+      "title": "Creative Character Design",
       "reason": "already linked to catalog event"
     },
     {
@@ -961,6 +1639,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-podcast-production-from-the-field-to-storytelling-20260902-f50aa266",
+      "event_id": "event-podcast-production-from-the-field-to-storytelling",
+      "title": "Podcast Production: From the Field to Storytelling",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-misk-hub-programs-the-innovation-diwan-20260905-6f9de2e0",
       "event_id": "event-the-innovation-diwan",
       "title": "The Innovation Diwan",
@@ -1006,6 +1690,12 @@
       "candidate_id": "candidate-saudi-university-events-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco-20260907-80f1dc55",
       "event_id": "event-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco",
       "title": "The KAUST Imaging and Characterization Core Lab presents: AI for Microscopy Workshop",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-islamic-wood-mastery-inlay-hexagonal-jewelry-box-joinery-for-mangour-scr-20260907-64366857",
+      "event_id": "event-islamic-wood-mastery-inlay-hexagonal-jewelry-box-joinery-for-mangour-scr",
+      "title": "Islamic Wood Mastery: Inlay Hexagonal Jewelry Box & Joinery for Mangour Screens",
       "reason": "already linked to catalog event"
     },
     {
@@ -1093,6 +1783,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-hobby-with-expert-translation-20260914-b6ea26ca",
+      "event_id": "event-hobby-with-expert-translation",
+      "title": "Hobby with Expert: Translation",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-saudi-water-authority-events-global-infrastructure-expo-20260915-ad5622a3",
       "event_id": "event-global-infrastructure-expo",
       "title": "Global Infrastructure Expo",
@@ -1126,6 +1822,12 @@
       "candidate_id": "candidate-riyadh-city-events-global-infrastructure-expo-20260915-e198cb08",
       "event_id": "event-global-infrastructure-expo",
       "title": "Global Infrastructure Expo",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-art-of-looking-at-art-20260915-70b4c472",
+      "event_id": "event-the-art-of-looking-at-art",
+      "title": "The Art of Looking at Art",
       "reason": "already linked to catalog event"
     },
     {
@@ -1171,6 +1873,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-the-playful-art-of-critical-thinking-20260930-433638cb",
+      "event_id": "event-the-playful-art-of-critical-thinking",
+      "title": "The Playful Art Of Critical Thinking",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-seasons-saudi-international-falcons-hunting-exhibition-20261001-a4f29b73",
       "event_id": "event-saudi-international-falcons-hunting-exhibition",
       "title": "Saudi International Falcons & Hunting Exhibition",
@@ -1201,9 +1909,27 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-advanced-wheel-throwing-20261005-bf5e1f8a",
+      "event_id": "event-advanced-wheel-throwing",
+      "title": "Advanced Wheel Throwing",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-how-to-edit-fictional-texts-20261006-e0e3a230",
+      "event_id": "event-how-to-edit-fictional-texts",
+      "title": "How to Edit Fictional Texts",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-in-act-act-x-20261009-4a38d19e",
       "event_id": "event-in-act-act-x",
       "title": "IN ACT - ACT X",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-soul-of-place-leveraging-folklore-and-local-heritage-in-narrative-wr-20261012-ac10e34d",
+      "event_id": "event-the-soul-of-place-leveraging-folklore-and-local-heritage-in-narrative-wr",
+      "title": "The Soul of Place: Leveraging Folklore and Local Heritage in Narrative Writing",
       "reason": "already linked to catalog event"
     },
     {
@@ -1217,6 +1943,12 @@
       "event_id": "event-15th-middle-east-enterprise-ai-analytics-summit",
       "title": "15th Middle East Enterprise AI & Analytics Summit",
       "reason": "trusted duplicate linked to existing catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-immersive-introduction-to-arabic-writing-and-type-design-20261021-3708788d",
+      "event_id": "event-immersive-introduction-to-arabic-writing-and-type-design",
+      "title": "Immersive Introduction to Arabic Writing and Type Design",
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-experience-alula-events-alula-wellness-festival-20261023-5b74606a",
@@ -1234,6 +1966,12 @@
       "candidate_id": "candidate-rfecc-whats-on-natrual-expo-20261026-a7983dd2",
       "event_id": "event-natrual-expo",
       "title": "Natrual Expo",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-art-of-public-speaking-20261026-5849d4f8",
+      "event_id": "event-the-art-of-public-speaking",
+      "title": "The Art of Public Speaking",
       "reason": "already linked to catalog event"
     },
     {
@@ -1267,6 +2005,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-the-orbits-of-arabic-calligraphy-20261102-93166d59",
+      "event_id": "event-the-orbits-of-arabic-calligraphy",
+      "title": "The Orbits of Arabic Calligraphy",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-dhahran-expo-calendar-world-firefighters-challenge-20261105-18d15b29",
       "event_id": "event-world-firefighters-challenge",
       "title": "World Firefighters Challenge",
@@ -1297,6 +2041,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-the-art-of-islamic-illumination-20261124-4d93707e",
+      "event_id": "event-the-art-of-islamic-illumination",
+      "title": "The Art of Islamic Illumination",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-mdlbeast-events-xp-music-futures-2026-20261126-19e9b824",
       "event_id": "event-xp-music-futures-2026",
       "title": "XP Music Futures 2026",
@@ -1306,6 +2056,12 @@
       "candidate_id": "candidate-experience-alula-events-ancient-kingdoms-festival-20261126-a8081cef",
       "event_id": "event-ancient-kingdoms-festival",
       "title": "Ancient Kingdoms Festival",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-making-short-films-20261130-d9e14125",
+      "event_id": "event-making-short-films",
+      "title": "Making Short Films",
       "reason": "already linked to catalog event"
     },
     {
@@ -1363,6 +2119,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-arabic-calligraphy-woodworks-from-script-to-object-20261208-87dbd1ca",
+      "event_id": "event-arabic-calligraphy-woodworks-from-script-to-object",
+      "title": "Arabic Calligraphy × Woodworks: From Script to Object",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-dhahran-expo-calendar-pfl-mena-final-20261211-18d15b29",
       "event_id": "event-pfl-mena-final",
       "title": "PFL Mena Final",
@@ -1381,9 +2143,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-content-creation-for-conversational-podcasts-20261214-80ecfed8",
+      "event_id": "event-content-creation-for-conversational-podcasts",
+      "title": "Content Creation for Conversational Podcasts",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-experience-alula-events-winter-at-tantora-20261217-fcb864a2",
       "event_id": "event-winter-at-tantora",
       "title": "Winter at Tantora",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-art-of-writing-a-novel-20261217-24b700fc",
+      "event_id": "event-the-art-of-writing-a-novel",
+      "title": "The Art Of Writing A Novel",
       "reason": "already linked to catalog event"
     },
     {

@@ -1,0 +1,133 @@
+{
+  "id": "ended-ithra-events-musical-band-20260604-c71d7eaf",
+  "title": "Musical Band",
+  "summary": "Enjoy live music at the event! The band will play a variety of songs and tunes to create a great atmosphere. Listen to the performances and enjoy the music as you walk around.",
+  "canonical_url": "https://eventme.live/events/ended-ithra-events-musical-band-20260604-c71d7eaf.html",
+  "detail_url": "./events/ended-ithra-events-musical-band-20260604-c71d7eaf.html",
+  "calendar_url": "./events/ended-ithra-events-musical-band-20260604-c71d7eaf.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/musical-band",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/musical-band",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verification_method": "official-public-algolia-index",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Plaza",
+  "venue_address": "Plaza",
+  "starts_at": "2026-06-04T09:00:00+03:00",
+  "ends_at": "2026-06-06T22:30:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 3,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/musical-band-bb362b0db4.jpg",
+  "image_alt": "Musical Band",
+  "category": "جامعات ومجتمع",
+  "category_url": "./categories/education-community.html",
+  "audiences": [
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Musical Band",
+    "جامعات ومجتمع",
+    "performance",
+    "فعالية",
+    "منتهية",
+    "الظهران",
+    "Plaza",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Live Performance",
+    "ended-event",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Musical Band",
+      "starts_at": "2026-06-04T09:00:00+03:00",
+      "ends_at": "2026-06-04T22:30:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-17945-202606040900-musical-band"
+    },
+    {
+      "title": "Musical Band",
+      "starts_at": "2026-06-05T16:00:00+03:00",
+      "ends_at": "2026-06-05T23:30:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-17945-202606051600-musical-band"
+    },
+    {
+      "title": "Musical Band",
+      "starts_at": "2026-06-06T09:00:00+03:00",
+      "ends_at": "2026-06-06T22:30:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-17945-202606060900-musical-band"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Musical Band",
+    "startDate": "2026-06-04T09:00:00+03:00",
+    "endDate": "2026-06-06T22:30:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Plaza",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plaza",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/musical-band-bb362b0db4.jpg"
+    ],
+    "description": "Enjoy live music at the event! The band will play a variety of songs and tunes to create a great atmosphere. Listen to the performances and enjoy the music as you walk around.",
+    "url": "https://eventme.live/events/ended-ithra-events-musical-band-20260604-c71d7eaf.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-musical-band-20260604-c71d7eaf.html",
+    "isAccessibleForFree": true,
+    "keywords": "Musical Band, جامعات ومجتمع, performance, فعالية, منتهية, الظهران, Plaza, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Live Performance, ended-event, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/musical-band"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/musical-band",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

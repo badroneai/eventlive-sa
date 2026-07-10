@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Painted Lamps | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-painted-lamps@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260722T130000Z
+DTEND:20260725T173000Z
+SUMMARY:Painted Lamps
+DESCRIPTION:Light has a way of bringing a space to life. In this workshop\, mothers and children transform simple lamps into personalized creations through painting and decoration. Inspired by the colors\, patterns\, and details that make a home feel familiar\, participants design a glowing piece that is both decorative and functional\, bringing a touch of warmth and creativity into their space.
+LOCATION:Ithra Tower - Level 9\, Room 2
+URL:https://eventme.live/events/event-painted-lamps.html
+END:VEVENT
+END:VCALENDAR

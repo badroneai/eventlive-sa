@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T09:03:11.276Z",
+  "generated_at": "2026-07-10T10:14:28.789Z",
   "intent": "eventlive-site-visual-sweep",
   "base_url": "http://127.0.0.1:4187",
   "ok": true,
@@ -22,7 +22,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية الآن",
         "h1": "ماذا يحدث الآن في السعودية؟",
-        "bodyTextLength": 3220,
+        "bodyTextLength": 3161,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -46,7 +46,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 3101
+          "scrollHeight": 3053
         }
       }
     },
@@ -61,7 +61,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية الآن",
         "h1": "ماذا يحدث الآن في السعودية؟",
-        "bodyTextLength": 3181,
+        "bodyTextLength": 3122,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -84,7 +84,7 @@
           {
             "tag": "article",
             "className": "card",
-            "text": "عائلات وأطفال ٩يوليو جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 11 ساعة الت",
+            "text": "عائلات وأطفال ٩يوليو جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 10 ساعة الت",
             "width": 262
           },
           {
@@ -108,7 +108,7 @@
           {
             "tag": "div",
             "className": "card-body",
-            "text": "جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 11 ساعة التفاصيل التقويم مصدر حك",
+            "text": "جدة · جدة · الخميس مهرجان لحن المملكة ينتهي بعد 10 ساعة التفاصيل التقويم مصدر حك",
             "width": 260
           },
           {
@@ -134,7 +134,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 2603
+          "scrollHeight": 2602
         }
       }
     },
@@ -149,7 +149,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية مباشرة",
         "h1": "كل الفعاليات",
-        "bodyTextLength": 18494,
+        "bodyTextLength": 18888,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -159,7 +159,7 @@
         "jsonLdBlocks": 4,
         "visibleImages": 24,
         "brokenImages": [],
-        "pendingImages": 0,
+        "pendingImages": 3,
         "headings": [
           "كل الفعاليات",
           "تأكيد قاعة ورشة رحلة المستفيد",
@@ -223,7 +223,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 7722
+          "scrollHeight": 7617
         }
       }
     },
@@ -238,7 +238,7 @@
       "metrics": {
         "title": "EventLive | فعاليات السعودية مباشرة",
         "h1": "كل الفعاليات",
-        "bodyTextLength": 18441,
+        "bodyTextLength": 18835,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -312,7 +312,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 20675
+          "scrollHeight": 21426
         }
       }
     },
@@ -327,7 +327,7 @@
       "metrics": {
         "title": "EventLive | ملتقى التحول الرقمي في القطاع الحكومي 2026",
         "h1": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
-        "bodyTextLength": 4500,
+        "bodyTextLength": 4541,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -342,7 +342,7 @@
           "ملتقى التحول الرقمي في القطاع الحكومي 2026",
           "لا توجد جلسة نشطة الآن",
           "الافتتاح الرسمي وكلمة الجهة المنظمة",
-          "الفعالية مباشرة الآن",
+          "تجري الآن: ورشة عمل: تصميم رحلة المستفيد في الخدمات الحكومية",
           "أين نحن الآن في الفعالية؟"
         ],
         "horizontalOverflow": false,
@@ -352,7 +352,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 3992
+          "scrollHeight": 4027
         }
       }
     },
@@ -367,7 +367,7 @@
       "metrics": {
         "title": "EventLive | ملتقى التحول الرقمي في القطاع الحكومي 2026",
         "h1": "ملتقى التحول الرقمي في القطاع الحكومي 2026",
-        "bodyTextLength": 4488,
+        "bodyTextLength": 4569,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -382,7 +382,7 @@
           "ملتقى التحول الرقمي في القطاع الحكومي 2026",
           "لا توجد جلسة نشطة الآن",
           "الافتتاح الرسمي وكلمة الجهة المنظمة",
-          "الفعالية مباشرة الآن",
+          "تجري الآن: ورشة عمل: تصميم رحلة المستفيد في الخدمات الحكومية",
           "أين نحن الآن في الفعالية؟"
         ],
         "horizontalOverflow": false,
@@ -417,7 +417,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 7455
+          "scrollHeight": 7543
         }
       }
     },
@@ -432,7 +432,7 @@
       "metrics": {
         "title": "EventLive | الآن",
         "h1": "الآن",
-        "bodyTextLength": 2032,
+        "bodyTextLength": 2107,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -475,7 +475,7 @@
       "metrics": {
         "title": "EventLive | الآن",
         "h1": "الآن",
-        "bodyTextLength": 1979,
+        "bodyTextLength": 2054,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -528,7 +528,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 3231
+          "scrollHeight": 3259
         }
       }
     },
@@ -543,7 +543,7 @@
       "metrics": {
         "title": "فعاليات اليوم | EventLive",
         "h1": "فعاليات اليوم",
-        "bodyTextLength": 10315,
+        "bodyTextLength": 10808,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -562,7 +562,7 @@
           "مهرجان لحن المملكة",
           "عمر الجمل - حفلة ستاند أب كوميدي",
           "Unstable",
-          "PFL MENA Fight Night"
+          "Build & Play Together"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -571,7 +571,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 6860
+          "scrollHeight": 6488
         }
       }
     },
@@ -586,7 +586,7 @@
       "metrics": {
         "title": "فعاليات اليوم | EventLive",
         "h1": "فعاليات اليوم",
-        "bodyTextLength": 10240,
+        "bodyTextLength": 10733,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -605,7 +605,7 @@
           "مهرجان لحن المملكة",
           "عمر الجمل - حفلة ستاند أب كوميدي",
           "Unstable",
-          "PFL MENA Fight Night"
+          "Build & Play Together"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -614,7 +614,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 14998
+          "scrollHeight": 15375
         }
       }
     },
@@ -728,7 +728,7 @@
       "metrics": {
         "title": "التحديثات الحية | EventLive",
         "h1": "التحديثات الحية",
-        "bodyTextLength": 676,
+        "bodyTextLength": 675,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -766,7 +766,7 @@
       "metrics": {
         "title": "التحديثات الحية | EventLive",
         "h1": "التحديثات الحية",
-        "bodyTextLength": 601,
+        "bodyTextLength": 600,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -803,8 +803,8 @@
       "screenshot_mode": "full-page",
       "metrics": {
         "title": "EventLive | شاشة الحضور",
-        "h1": "Unstable",
-        "bodyTextLength": 620,
+        "h1": "Beaded plant Suncatcher",
+        "bodyTextLength": 700,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -816,7 +816,7 @@
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "Unstable",
+          "Beaded plant Suncatcher",
           "القادم على EventLive"
         ],
         "horizontalOverflow": false,
@@ -840,8 +840,8 @@
       "screenshot_mode": "full-page",
       "metrics": {
         "title": "EventLive | شاشة الحضور",
-        "h1": "Unstable",
-        "bodyTextLength": 499,
+        "h1": "Beaded plant Suncatcher",
+        "bodyTextLength": 559,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -853,7 +853,7 @@
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "Unstable",
+          "Beaded plant Suncatcher",
           "القادم على EventLive"
         ],
         "horizontalOverflow": false,
@@ -878,7 +878,7 @@
       "metrics": {
         "title": "تفعيل الجداول الحية | EventLive",
         "h1": "تفعيل الجداول الحية",
-        "bodyTextLength": 13997,
+        "bodyTextLength": 13996,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -921,7 +921,7 @@
       "metrics": {
         "title": "تفعيل الجداول الحية | EventLive",
         "h1": "تفعيل الجداول الحية",
-        "bodyTextLength": 13922,
+        "bodyTextLength": 13921,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1004,7 +1004,7 @@
     },
     {
       "page": "print",
-      "path": "/print.html?event=event-beast-house",
+      "path": "/print.html?event=event-build-play-together",
       "viewport": "desktop",
       "ok": true,
       "errors": [],
@@ -1012,8 +1012,8 @@
       "screenshot_mode": "full-page",
       "metrics": {
         "title": "نسخة طباعة الفعالية | EventLive",
-        "h1": "Beast House",
-        "bodyTextLength": 908,
+        "h1": "Build & Play Together",
+        "bodyTextLength": 2108,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1025,7 +1025,7 @@
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "Beast House",
+          "Build & Play Together",
           "بيانات الحضور",
           "الجدول الحي"
         ],
@@ -1036,13 +1036,13 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 1279
+          "scrollHeight": 2267
         }
       }
     },
     {
       "page": "print",
-      "path": "/print.html?event=event-beast-house",
+      "path": "/print.html?event=event-build-play-together",
       "viewport": "mobile",
       "ok": true,
       "errors": [],
@@ -1050,8 +1050,8 @@
       "screenshot_mode": "full-page",
       "metrics": {
         "title": "نسخة طباعة الفعالية | EventLive",
-        "h1": "Beast House",
-        "bodyTextLength": 833,
+        "h1": "Build & Play Together",
+        "bodyTextLength": 2033,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1063,7 +1063,7 @@
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "Beast House",
+          "Build & Play Together",
           "بيانات الحضور",
           "الجدول الحي"
         ],
@@ -1074,13 +1074,13 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 1690
+          "scrollHeight": 3341
         }
       }
     },
     {
       "page": "share",
-      "path": "/share.html?event=event-beast-house",
+      "path": "/share.html?event=event-build-play-together",
       "viewport": "desktop",
       "ok": true,
       "errors": [],
@@ -1088,8 +1088,8 @@
       "screenshot_mode": "full-page",
       "metrics": {
         "title": "مشاركة الفعالية | EventLive",
-        "h1": "Beast House",
-        "bodyTextLength": 1246,
+        "h1": "Build & Play Together",
+        "bodyTextLength": 1142,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1101,8 +1101,8 @@
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "Beast House",
-          "Beast House",
+          "Build & Play Together",
+          "Build & Play Together",
           "QR المشاركة"
         ],
         "horizontalOverflow": false,
@@ -1112,13 +1112,13 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 1353
+          "scrollHeight": 1333
         }
       }
     },
     {
       "page": "share",
-      "path": "/share.html?event=event-beast-house",
+      "path": "/share.html?event=event-build-play-together",
       "viewport": "mobile",
       "ok": true,
       "errors": [],
@@ -1126,8 +1126,8 @@
       "screenshot_mode": "full-page",
       "metrics": {
         "title": "مشاركة الفعالية | EventLive",
-        "h1": "Beast House",
-        "bodyTextLength": 1171,
+        "h1": "Build & Play Together",
+        "bodyTextLength": 1067,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1139,8 +1139,8 @@
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "Beast House",
-          "Beast House",
+          "Build & Play Together",
+          "Build & Play Together",
           "QR المشاركة"
         ],
         "horizontalOverflow": false,
@@ -1150,13 +1150,13 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 2120
+          "scrollHeight": 2175
         }
       }
     },
     {
       "page": "signage",
-      "path": "/signage.html?event=event-beast-house",
+      "path": "/signage.html?event=event-build-play-together",
       "viewport": "desktop",
       "ok": true,
       "errors": [],
@@ -1164,8 +1164,8 @@
       "screenshot_mode": "full-page",
       "metrics": {
         "title": "لافتة QR للفعالية | EventLive",
-        "h1": "Beast House",
-        "bodyTextLength": 1205,
+        "h1": "Build & Play Together",
+        "bodyTextLength": 1081,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1177,8 +1177,8 @@
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "Beast House",
-          "Beast House",
+          "Build & Play Together",
+          "Build & Play Together",
           "امسح للوصول إلى EventLive"
         ],
         "horizontalOverflow": false,
@@ -1188,13 +1188,13 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 1321
+          "scrollHeight": 1369
         }
       }
     },
     {
       "page": "signage",
-      "path": "/signage.html?event=event-beast-house",
+      "path": "/signage.html?event=event-build-play-together",
       "viewport": "mobile",
       "ok": true,
       "errors": [],
@@ -1202,8 +1202,8 @@
       "screenshot_mode": "full-page",
       "metrics": {
         "title": "لافتة QR للفعالية | EventLive",
-        "h1": "Beast House",
-        "bodyTextLength": 1130,
+        "h1": "Build & Play Together",
+        "bodyTextLength": 1006,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1215,8 +1215,8 @@
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "Beast House",
-          "Beast House",
+          "Build & Play Together",
+          "Build & Play Together",
           "امسح للوصول إلى EventLive"
         ],
         "horizontalOverflow": false,
@@ -1226,7 +1226,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 2111
+          "scrollHeight": 2171
         }
       }
     },
@@ -1241,7 +1241,7 @@
       "metrics": {
         "title": "فعاليات هذا الأسبوع | EventLive",
         "h1": "فعاليات هذا الأسبوع",
-        "bodyTextLength": 11028,
+        "bodyTextLength": 11292,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1269,7 +1269,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 7231
+          "scrollHeight": 7612
         }
       }
     },
@@ -1284,7 +1284,7 @@
       "metrics": {
         "title": "فعاليات هذا الأسبوع | EventLive",
         "h1": "فعاليات هذا الأسبوع",
-        "bodyTextLength": 10953,
+        "bodyTextLength": 11217,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1312,7 +1312,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 15648
+          "scrollHeight": 15872
         }
       }
     },
@@ -1466,7 +1466,7 @@
         "jsonLdBlocks": 3,
         "visibleImages": 8,
         "brokenImages": [],
-        "pendingImages": 0,
+        "pendingImages": 4,
         "headings": [
           "الويكند",
           "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
@@ -1524,7 +1524,7 @@
       "metrics": {
         "title": "فعاليات مدن السعودية | EventLive",
         "h1": "فعاليات مدن السعودية",
-        "bodyTextLength": 5182,
+        "bodyTextLength": 5117,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1537,8 +1537,8 @@
         "pendingImages": 0,
         "headings": [
           "فعاليات مدن السعودية",
-          "الرياض",
           "الظهران",
+          "الرياض",
           "عسير",
           "السعودية",
           "جدة",
@@ -1552,7 +1552,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 5563
+          "scrollHeight": 5507
         }
       }
     },
@@ -1567,7 +1567,7 @@
       "metrics": {
         "title": "فعاليات مدن السعودية | EventLive",
         "h1": "فعاليات مدن السعودية",
-        "bodyTextLength": 5107,
+        "bodyTextLength": 5042,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1580,8 +1580,8 @@
         "pendingImages": 0,
         "headings": [
           "فعاليات مدن السعودية",
-          "الرياض",
           "الظهران",
+          "الرياض",
           "عسير",
           "السعودية",
           "جدة",
@@ -1595,7 +1595,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 18049
+          "scrollHeight": 17993
         }
       }
     },
@@ -1610,7 +1610,7 @@
       "metrics": {
         "title": "تصنيفات فعاليات السعودية | EventLive",
         "h1": "تصنيفات فعاليات السعودية",
-        "bodyTextLength": 3166,
+        "bodyTextLength": 3169,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1624,12 +1624,12 @@
         "headings": [
           "تصنيفات فعاليات السعودية",
           "ترفيه وعائلات",
+          "جامعات ومجتمع",
+          "ثقافة وفنون",
+          "معارض وتجارية",
           "رياضة وفعاليات جماهيرية",
           "ورش تنظيمية وصحية",
-          "معارض وتجارية",
-          "ثقافة وفنون",
-          "مؤتمرات ومنتديات",
-          "تدريب تقني"
+          "مؤتمرات ومنتديات"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -1638,7 +1638,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 2860
+          "scrollHeight": 2874
         }
       }
     },
@@ -1653,7 +1653,7 @@
       "metrics": {
         "title": "تصنيفات فعاليات السعودية | EventLive",
         "h1": "تصنيفات فعاليات السعودية",
-        "bodyTextLength": 3091,
+        "bodyTextLength": 3094,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1667,12 +1667,12 @@
         "headings": [
           "تصنيفات فعاليات السعودية",
           "ترفيه وعائلات",
+          "جامعات ومجتمع",
+          "ثقافة وفنون",
+          "معارض وتجارية",
           "رياضة وفعاليات جماهيرية",
           "ورش تنظيمية وصحية",
-          "معارض وتجارية",
-          "ثقافة وفنون",
-          "مؤتمرات ومنتديات",
-          "تدريب تقني"
+          "مؤتمرات ومنتديات"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
@@ -1696,7 +1696,7 @@
       "metrics": {
         "title": "فعاليات حسب الجمهور | EventLive",
         "h1": "فعاليات حسب الجمهور",
-        "bodyTextLength": 3132,
+        "bodyTextLength": 3131,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1710,10 +1710,10 @@
         "headings": [
           "فعاليات حسب الجمهور",
           "مبدعون وفنون",
-          "موظفون ومهنيون",
           "عائلات وأطفال",
-          "تقنيون",
+          "موظفون ومهنيون",
           "مهاريون وحرفيون",
+          "تقنيون",
           "باحثون وأكاديميون",
           "رياضة ولياقة"
         ],
@@ -1739,7 +1739,7 @@
       "metrics": {
         "title": "فعاليات حسب الجمهور | EventLive",
         "h1": "فعاليات حسب الجمهور",
-        "bodyTextLength": 3057,
+        "bodyTextLength": 3056,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1753,10 +1753,10 @@
         "headings": [
           "فعاليات حسب الجمهور",
           "مبدعون وفنون",
-          "موظفون ومهنيون",
           "عائلات وأطفال",
-          "تقنيون",
+          "موظفون ومهنيون",
           "مهاريون وحرفيون",
+          "تقنيون",
           "باحثون وأكاديميون",
           "رياضة ولياقة"
         ],
@@ -1893,7 +1893,7 @@
       "metrics": {
         "title": "إضافة فعالية أو جدول حي | EventLive",
         "h1": "إضافة فعالية أو جدول حي",
-        "bodyTextLength": 1570,
+        "bodyTextLength": 1569,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1932,7 +1932,7 @@
       "metrics": {
         "title": "إضافة فعالية أو جدول حي | EventLive",
         "h1": "إضافة فعالية أو جدول حي",
-        "bodyTextLength": 1495,
+        "bodyTextLength": 1494,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1971,7 +1971,7 @@
       "metrics": {
         "title": "منهجية جمع ونشر الفعاليات | EventLive",
         "h1": "منهجية جمع ونشر الفعاليات",
-        "bodyTextLength": 1871,
+        "bodyTextLength": 1872,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -1999,7 +1999,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 1698
+          "scrollHeight": 1741
         }
       }
     },
@@ -2014,7 +2014,7 @@
       "metrics": {
         "title": "منهجية جمع ونشر الفعاليات | EventLive",
         "h1": "منهجية جمع ونشر الفعاليات",
-        "bodyTextLength": 1796,
+        "bodyTextLength": 1797,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3004,7 +3004,7 @@
       "metrics": {
         "title": "مصادر الفعاليات | EventLive",
         "h1": "مصادر الفعاليات",
-        "bodyTextLength": 11094,
+        "bodyTextLength": 10773,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3042,7 +3042,7 @@
       "metrics": {
         "title": "مصادر الفعاليات | EventLive",
         "h1": "مصادر الفعاليات",
-        "bodyTextLength": 11019,
+        "bodyTextLength": 10698,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3064,7 +3064,7 @@
           {
             "tag": "table",
             "className": "",
-            "text": "الفعاليةالمدينةالمصدرالحاجةالثقةBeast HouseMDLBEASTالرياضMDLBEAST Eventsمراقبة ا",
+            "text": "الفعاليةالمدينةالمصدرالحاجةالثقةBuild & Play TogetherKing Abdulaziz Center for W",
             "width": 780
           },
           {
@@ -3083,30 +3083,30 @@
             "tag": "th",
             "className": "",
             "text": "المدينة",
-            "width": 79
+            "width": 70
           },
           {
             "tag": "th",
             "className": "",
             "text": "المصدر",
-            "width": 192
+            "width": 194
           },
           {
             "tag": "th",
             "className": "",
             "text": "الحاجة",
-            "width": 109
+            "width": 83
           },
           {
             "tag": "th",
             "className": "",
             "text": "الثقة",
-            "width": 61
+            "width": 62
           },
           {
             "tag": "tbody",
             "className": "",
-            "text": "Beast HouseMDLBEASTالرياضMDLBEAST Eventsمراقبة المصدر100ثقة عاليةJoin us at KAUS",
+            "text": "Build & Play TogetherKing Abdulaziz Center for World Culture / IthraالظهرانIthra",
             "width": 780
           }
         ],
@@ -3240,7 +3240,7 @@
       "metrics": {
         "title": "فجوات تغطية المصادر | EventLive",
         "h1": "فجوات تغطية المصادر",
-        "bodyTextLength": 11789,
+        "bodyTextLength": 11651,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3266,7 +3266,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 9516
+          "scrollHeight": 9477
         }
       }
     },
@@ -3281,7 +3281,7 @@
       "metrics": {
         "title": "فجوات تغطية المصادر | EventLive",
         "h1": "فجوات تغطية المصادر",
-        "bodyTextLength": 11714,
+        "bodyTextLength": 11576,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3356,7 +3356,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 15996
+          "scrollHeight": 15844
         }
       }
     },
@@ -3593,7 +3593,7 @@
       "metrics": {
         "title": "تغطية مناطق المملكة | EventLive",
         "h1": "تغطية مناطق المملكة",
-        "bodyTextLength": 3320,
+        "bodyTextLength": 3303,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3632,7 +3632,7 @@
       "metrics": {
         "title": "تغطية مناطق المملكة | EventLive",
         "h1": "تغطية مناطق المملكة",
-        "bodyTextLength": 3245,
+        "bodyTextLength": 3228,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3705,7 +3705,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 5092
+          "scrollHeight": 5080
         }
       }
     },
@@ -3720,7 +3720,7 @@
       "metrics": {
         "title": "جاهزية التشغيل | EventLive",
         "h1": "جاهزية التشغيل",
-        "bodyTextLength": 5629,
+        "bodyTextLength": 3791,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3748,7 +3748,7 @@
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 4423
+          "scrollHeight": 4250
         }
       }
     },
@@ -3763,7 +3763,7 @@
       "metrics": {
         "title": "جاهزية التشغيل | EventLive",
         "h1": "جاهزية التشغيل",
-        "bodyTextLength": 5554,
+        "bodyTextLength": 3716,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3790,7 +3790,7 @@
           {
             "tag": "table",
             "className": "",
-            "text": "الفعاليةالحالةالثقةالجلساتالإجراءنقل مبيدات آفات الصحة العامةعن بعد · Saudi Food",
+            "text": "الفعاليةالحالةالثقةالجلساتالإجراءBuild & Play Togetherالظهران · Ithra Eventsجاهز",
             "width": 780
           },
           {
@@ -3808,39 +3808,39 @@
           {
             "tag": "th",
             "className": "",
-            "text": "الفعالية",
-            "width": 415
-          },
-          {
-            "tag": "th",
-            "className": "",
             "text": "الحالة",
-            "width": 103
+            "width": 105
           },
           {
             "tag": "th",
             "className": "",
             "text": "الثقة",
-            "width": 53
+            "width": 64
           },
           {
             "tag": "th",
             "className": "",
             "text": "الجلسات",
-            "width": 73
+            "width": 88
           },
           {
             "tag": "th",
             "className": "",
             "text": "الإجراء",
-            "width": 137
+            "width": 155
+          },
+          {
+            "tag": "tbody",
+            "className": "",
+            "text": "Build & Play Togetherالظهران · Ithra Eventsجاهز للزوار10021فتح الجدول الحيEchoes",
+            "width": 780
           }
         ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 5674
+          "scrollHeight": 5429
         }
       }
     },
@@ -3855,7 +3855,7 @@
       "metrics": {
         "title": "مركز الثقة | EventLive",
         "h1": "مركز الثقة",
-        "bodyTextLength": 5611,
+        "bodyTextLength": 4596,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3897,7 +3897,7 @@
       "metrics": {
         "title": "مركز الثقة | EventLive",
         "h1": "مركز الثقة",
-        "bodyTextLength": 5536,
+        "bodyTextLength": 4521,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -3923,7 +3923,7 @@
           {
             "tag": "table",
             "className": "",
-            "text": "الفعاليةالثقةالمصدرالاعتمادفجوات الدليلآلية تقديم طلبات اذونات استيراد مواد التص",
+            "text": "الفعاليةالثقةالمصدرالاعتمادفجوات الدليل1, 2, 3, A Little Space for Meالظهران100ث",
             "width": 780
           },
           {
@@ -3942,30 +3942,30 @@
             "tag": "th",
             "className": "",
             "text": "الثقة",
-            "width": 60
+            "width": 62
           },
           {
             "tag": "th",
             "className": "",
             "text": "المصدر",
-            "width": 185
+            "width": 178
           },
           {
             "tag": "th",
             "className": "",
             "text": "الاعتماد",
-            "width": 85
+            "width": 86
           },
           {
             "tag": "th",
             "className": "",
             "text": "فجوات الدليل",
-            "width": 121
+            "width": 92
           },
           {
             "tag": "tbody",
             "className": "",
-            "text": "آلية تقديم طلبات اذونات استيراد مواد التصوير الطبي في النظام الالكتروني ومتطلبات",
+            "text": "1, 2, 3, A Little Space for Meالظهران100ثقة عاليةIthra Eventsمنشورةلا توجد فجوة ",
             "width": 780
           }
         ],
@@ -3973,7 +3973,7 @@
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 6227
+          "scrollHeight": 6251
         }
       }
     },
@@ -3988,7 +3988,7 @@
       "metrics": {
         "title": "فعاليات الرياض | EventLive",
         "h1": "فعاليات الرياض",
-        "bodyTextLength": 12651,
+        "bodyTextLength": 12650,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4031,7 +4031,7 @@
       "metrics": {
         "title": "فعاليات الرياض | EventLive",
         "h1": "فعاليات الرياض",
-        "bodyTextLength": 12576,
+        "bodyTextLength": 12575,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4074,7 +4074,7 @@
       "metrics": {
         "title": "تدريب تقني | EventLive",
         "h1": "تدريب تقني",
-        "bodyTextLength": 8080,
+        "bodyTextLength": 8079,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4117,7 +4117,7 @@
       "metrics": {
         "title": "تدريب تقني | EventLive",
         "h1": "تدريب تقني",
-        "bodyTextLength": 8005,
+        "bodyTextLength": 8004,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4151,16 +4151,16 @@
     },
     {
       "page": "representative-event",
-      "path": "/events/event-beast-house.html",
+      "path": "/events/event-build-play-together.html",
       "viewport": "desktop",
       "ok": true,
       "errors": [],
       "screenshot": "output/playwright/visual-sweep/representative-event-desktop.png",
       "screenshot_mode": "full-page",
       "metrics": {
-        "title": "Beast House | EventLive",
-        "h1": "Beast House",
-        "bodyTextLength": 2406,
+        "title": "Build & Play Together | EventLive",
+        "h1": "Build & Play Together",
+        "bodyTextLength": 2946,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4172,34 +4172,83 @@
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "Beast House",
+          "Build & Play Together",
           "ما يحتاجه الزائر بسرعة",
           "محاور البرنامج",
           "الجدول الحي"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
-        "overflowingNodes": [],
+        "overflowingNodes": [
+          {
+            "tag": "button",
+            "className": "agenda-day",
+            "text": "الأربعاء، ١٥ يوليو",
+            "width": 125
+          },
+          {
+            "tag": "button",
+            "className": "agenda-day",
+            "text": "الخميس، ١٦ يوليو",
+            "width": 136
+          },
+          {
+            "tag": "button",
+            "className": "agenda-day",
+            "text": "الجمعة، ١٧ يوليو",
+            "width": 128
+          },
+          {
+            "tag": "button",
+            "className": "agenda-day",
+            "text": "السبت، ١٨ يوليو",
+            "width": 125
+          },
+          {
+            "tag": "button",
+            "className": "agenda-day",
+            "text": "الاثنين، ٢٠ يوليو",
+            "width": 120
+          },
+          {
+            "tag": "button",
+            "className": "agenda-day",
+            "text": "الثلاثاء، ٢١ يوليو",
+            "width": 122
+          },
+          {
+            "tag": "button",
+            "className": "agenda-day",
+            "text": "الأربعاء، ٢٢ يوليو",
+            "width": 128
+          },
+          {
+            "tag": "button",
+            "className": "agenda-day",
+            "text": "الخميس، ٢٣ يوليو",
+            "width": 141
+          }
+        ],
         "viewport": {
           "width": 1366,
           "height": 900,
           "scrollWidth": 1366,
-          "scrollHeight": 3026
+          "scrollHeight": 3230
         }
       }
     },
     {
       "page": "representative-event",
-      "path": "/events/event-beast-house.html",
+      "path": "/events/event-build-play-together.html",
       "viewport": "mobile",
       "ok": true,
       "errors": [],
       "screenshot": "output/playwright/visual-sweep/representative-event-mobile.png",
-      "screenshot_mode": "full-page",
+      "screenshot_mode": "viewport",
       "metrics": {
-        "title": "Beast House | EventLive",
-        "h1": "Beast House",
-        "bodyTextLength": 2331,
+        "title": "Build & Play Together | EventLive",
+        "h1": "Build & Play Together",
+        "bodyTextLength": 2871,
         "requiredFound": true,
         "legacyBrandVisible": false,
         "localPathVisible": false,
@@ -4211,19 +4260,68 @@
         "brokenImages": [],
         "pendingImages": 0,
         "headings": [
-          "Beast House",
+          "Build & Play Together",
           "ما يحتاجه الزائر بسرعة",
           "محاور البرنامج",
           "الجدول الحي"
         ],
         "horizontalOverflow": false,
         "overflowBy": 0,
-        "overflowingNodes": [],
+        "overflowingNodes": [
+          {
+            "tag": "button",
+            "className": "agenda-day",
+            "text": "الأربعاء، ٨ يوليو",
+            "width": 120
+          },
+          {
+            "tag": "button",
+            "className": "agenda-day",
+            "text": "الخميس، ٩ يوليو",
+            "width": 132
+          },
+          {
+            "tag": "button",
+            "className": "agenda-day",
+            "text": "الجمعة، ١٠ يوليو",
+            "width": 124
+          },
+          {
+            "tag": "button",
+            "className": "agenda-day",
+            "text": "السبت، ١١ يوليو",
+            "width": 121
+          },
+          {
+            "tag": "button",
+            "className": "agenda-day",
+            "text": "الاثنين، ١٣ يوليو",
+            "width": 122
+          },
+          {
+            "tag": "button",
+            "className": "agenda-day",
+            "text": "الثلاثاء، ١٤ يوليو",
+            "width": 122
+          },
+          {
+            "tag": "button",
+            "className": "agenda-day",
+            "text": "الأربعاء، ١٥ يوليو",
+            "width": 125
+          },
+          {
+            "tag": "button",
+            "className": "agenda-day",
+            "text": "الخميس، ١٦ يوليو",
+            "width": 136
+          }
+        ],
         "viewport": {
           "width": 390,
           "height": 844,
           "scrollWidth": 390,
-          "scrollHeight": 4722
+          "scrollHeight": 5284
         }
       }
     }

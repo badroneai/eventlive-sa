@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Where We Belong | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-where-we-belong@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260710T130000Z
+DTEND:20260725T180000Z
+SUMMARY:Where We Belong
+DESCRIPTION:Look closely at Earth\, and it begins to feel like a system that never stops working\; air moving\, water cycling\, living things adapting. In this program\, children explore how life continues and changes across different environments\, and how organisms adjust to survive over time. The journey then stretches further\, looking at how science studies these systems and reimagines them beyond Earth. The experience connects life\, environment\, and possibility in one continuous story.
+LOCATION:Energy Exhibit
+URL:https://eventme.live/events/event-where-we-belong.html
+END:VEVENT
+END:VCALENDAR

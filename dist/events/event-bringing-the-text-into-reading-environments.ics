@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Bringing the Text into Reading Environments | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-bringing-the-text-into-reading-environments@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260723T153000Z
+DTEND:20260723T163000Z
+SUMMARY:Bringing the Text into Reading Environments
+DESCRIPTION:In this session\, we discuss the journey of the text within diverse reading environments\, including schools\, libraries\, digital platforms\, and cultural spaces tailored for children. We also explore the factors that contribute to enhancing the presence of engaging texts for children.
+LOCATION:Library - Level 2
+URL:https://eventme.live/events/event-bringing-the-text-into-reading-environments.html
+END:VEVENT
+END:VCALENDAR

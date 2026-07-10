@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Leap Then Look! | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-leap-then-look@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260710T070000Z
+DTEND:20260725T190000Z
+SUMMARY:Leap Then Look!
+DESCRIPTION:An intractive exhibition that encourages play and collabration\, Inviting visitors to assemble and combine different aculptures to create a collaborative artwork while exploring the senses and imagination.
+LOCATION:Children's Museum
+URL:https://eventme.live/events/event-leap-then-look.html
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Insightful Spaces | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-insightful-spaces@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260710T130000Z
+DTEND:20260725T180000Z
+SUMMARY:Insightful Spaces
+DESCRIPTION:The way we experience a space is shaped by what we feel under our feet\, not just what we see. In this sensory journey\, children touch different carpeted surfaces\, noticing textures\, patterns\, and subtle changes in sensation. As they explore\, they begin to recognize how materials influence comfort\, sound and perception in everyday spaces.
+LOCATION:Energy Exhibit
+URL:https://eventme.live/events/event-insightful-spaces.html
+END:VEVENT
+END:VCALENDAR

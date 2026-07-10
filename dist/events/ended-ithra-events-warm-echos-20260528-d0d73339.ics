@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Warm Echos | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-ithra-events-warm-echos-20260528-d0d73339@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260528T160000Z
+DTEND:20260530T162000Z
+SUMMARY:Warm Echos
+DESCRIPTION:A collection of short films celebrating human connection\, simple and gentle stories that leave a warm and lasting feeling. Catfish: As Elise moves into a new apartment with her parents\, her pet cat Roger turns into a goldfish. Distraught\, she goes back to her childhood home to turn him back. Luce and the Rock: A gentle\, slow-paced tale about curiosity and fear. Through minimal visuals and little dialogue\, the film shows how openness and trust can help us accept others.
+LOCATION:Cinema
+URL:https://eventme.live/events/ended-ithra-events-warm-echos-20260528-d0d73339.html
+END:VEVENT
+END:VCALENDAR

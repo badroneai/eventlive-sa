@@ -1,0 +1,247 @@
+{
+  "id": "event-interactive-exhibit",
+  "title": "Interactive Exhibit",
+  "summary": "An open-ended interactive exhibition that invites children to explore, create, and play through hands-on experiences. It encourages curiosity, imagination, and discovery for children and their families.",
+  "canonical_url": "https://eventme.live/events/event-interactive-exhibit.html",
+  "detail_url": "./events/event-interactive-exhibit.html",
+  "calendar_url": "./events/event-interactive-exhibit.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/interactive-exhibit",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/interactive-exhibit",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:08:07.323Z",
+  "verification_method": "registered-venue-official",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Plaza",
+  "venue_address": "Plaza",
+  "starts_at": "2026-07-10T16:00:00+03:00",
+  "ends_at": "2026-07-25T21:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 18,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/interactive-exhibit-b92db5e9ce.jpg",
+  "image_alt": "Interactive Exhibit",
+  "category": "معارض وتجارية",
+  "category_url": "./categories/exhibition-trade.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Interactive Exhibit",
+    "معارض وتجارية",
+    "exhibition",
+    "برنامج ممتد",
+    "قادمة",
+    "الظهران",
+    "Plaza",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Activity",
+    "Children Festival",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Interactive Exhibit",
+      "starts_at": "2026-07-06T16:00:00+03:00",
+      "ends_at": "2026-07-06T21:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18082-202607061600-interactive-exhibit"
+    },
+    {
+      "title": "Interactive Exhibit",
+      "starts_at": "2026-07-07T16:00:00+03:00",
+      "ends_at": "2026-07-07T21:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18082-202607071600-interactive-exhibit"
+    },
+    {
+      "title": "Interactive Exhibit",
+      "starts_at": "2026-07-08T16:00:00+03:00",
+      "ends_at": "2026-07-08T21:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18082-202607081600-interactive-exhibit"
+    },
+    {
+      "title": "Interactive Exhibit",
+      "starts_at": "2026-07-09T16:00:00+03:00",
+      "ends_at": "2026-07-09T21:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18082-202607091600-interactive-exhibit"
+    },
+    {
+      "title": "Interactive Exhibit",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-10T21:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18082-202607101600-interactive-exhibit"
+    },
+    {
+      "title": "Interactive Exhibit",
+      "starts_at": "2026-07-11T16:00:00+03:00",
+      "ends_at": "2026-07-11T21:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18082-202607111600-interactive-exhibit"
+    },
+    {
+      "title": "Interactive Exhibit",
+      "starts_at": "2026-07-13T16:00:00+03:00",
+      "ends_at": "2026-07-13T21:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18082-202607131600-interactive-exhibit"
+    },
+    {
+      "title": "Interactive Exhibit",
+      "starts_at": "2026-07-14T16:00:00+03:00",
+      "ends_at": "2026-07-14T21:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18082-202607141600-interactive-exhibit"
+    },
+    {
+      "title": "Interactive Exhibit",
+      "starts_at": "2026-07-15T16:00:00+03:00",
+      "ends_at": "2026-07-15T21:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18082-202607151600-interactive-exhibit"
+    },
+    {
+      "title": "Interactive Exhibit",
+      "starts_at": "2026-07-16T16:00:00+03:00",
+      "ends_at": "2026-07-16T21:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18082-202607161600-interactive-exhibit"
+    },
+    {
+      "title": "Interactive Exhibit",
+      "starts_at": "2026-07-17T16:00:00+03:00",
+      "ends_at": "2026-07-17T21:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18082-202607171600-interactive-exhibit"
+    },
+    {
+      "title": "Interactive Exhibit",
+      "starts_at": "2026-07-18T16:00:00+03:00",
+      "ends_at": "2026-07-18T21:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18082-202607181600-interactive-exhibit"
+    },
+    {
+      "title": "Interactive Exhibit",
+      "starts_at": "2026-07-20T16:00:00+03:00",
+      "ends_at": "2026-07-20T21:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18082-202607201600-interactive-exhibit"
+    },
+    {
+      "title": "Interactive Exhibit",
+      "starts_at": "2026-07-21T16:00:00+03:00",
+      "ends_at": "2026-07-21T21:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18082-202607211600-interactive-exhibit"
+    },
+    {
+      "title": "Interactive Exhibit",
+      "starts_at": "2026-07-22T16:00:00+03:00",
+      "ends_at": "2026-07-22T21:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18082-202607221600-interactive-exhibit"
+    },
+    {
+      "title": "Interactive Exhibit",
+      "starts_at": "2026-07-23T16:00:00+03:00",
+      "ends_at": "2026-07-23T21:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18082-202607231600-interactive-exhibit"
+    },
+    {
+      "title": "Interactive Exhibit",
+      "starts_at": "2026-07-24T16:00:00+03:00",
+      "ends_at": "2026-07-24T21:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18082-202607241600-interactive-exhibit"
+    },
+    {
+      "title": "Interactive Exhibit",
+      "starts_at": "2026-07-25T16:00:00+03:00",
+      "ends_at": "2026-07-25T21:00:00+03:00",
+      "room": "Plaza",
+      "anchor": "#session-ithra-18082-202607251600-interactive-exhibit"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Interactive Exhibit",
+    "startDate": "2026-07-10T16:00:00+03:00",
+    "endDate": "2026-07-25T21:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Plaza",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plaza",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/interactive-exhibit-b92db5e9ce.jpg"
+    ],
+    "description": "An open-ended interactive exhibition that invites children to explore, create, and play through hands-on experiences. It encourages curiosity, imagination, and discovery for children and their families.",
+    "url": "https://eventme.live/events/event-interactive-exhibit.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-interactive-exhibit.html",
+    "isAccessibleForFree": true,
+    "keywords": "Interactive Exhibit, معارض وتجارية, exhibition, برنامج ممتد, قادمة, الظهران, Plaza, Ithra Events, culture, arts, creativity, community, exhibitions, learning, Ithra, Activity, Children Festival, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/interactive-exhibit"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/interactive-exhibit",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

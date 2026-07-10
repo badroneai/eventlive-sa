@@ -1,0 +1,176 @@
+{
+  "id": "event-painted-lamps",
+  "title": "Painted Lamps",
+  "summary": "Light has a way of bringing a space to life. In this workshop, mothers and children transform simple lamps into personalized creations through painting and decoration. Inspired by the colors, patterns, and details that make a home feel familiar, participants design a glowing piece that is both decorative and functional, bringing a touch of warmth and creativity into their space.",
+  "canonical_url": "https://eventme.live/events/event-painted-lamps.html",
+  "detail_url": "./events/event-painted-lamps.html",
+  "calendar_url": "./events/event-painted-lamps.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/painted-lamps",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/painted-lamps",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:08:07.323Z",
+  "verification_method": "registered-venue-official",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Ithra Tower - Level 9, Room 2",
+  "venue_address": "Ithra Tower - Level 9, Room 2",
+  "starts_at": "2026-07-22T16:00:00+03:00",
+  "ends_at": "2026-07-25T20:30:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 8,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/painted-lamps-6ed4be3191.png",
+  "image_alt": "Painted Lamps",
+  "category": "علوم وفضاء",
+  "category_url": "./categories/science-space.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Painted Lamps",
+    "علوم وفضاء",
+    "learning",
+    "فعالية",
+    "قادمة",
+    "الظهران",
+    "Ithra Tower - Level 9, Room 2",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "Ithra",
+    "Children Festival",
+    "Workshop",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Painted Lamps",
+      "starts_at": "2026-07-22T16:00:00+03:00",
+      "ends_at": "2026-07-22T18:00:00+03:00",
+      "room": "Ithra Tower - Level 9, Room 2",
+      "anchor": "#session-ithra-18134-202607221600-painted-lamps"
+    },
+    {
+      "title": "Painted Lamps",
+      "starts_at": "2026-07-22T18:30:00+03:00",
+      "ends_at": "2026-07-22T20:30:00+03:00",
+      "room": "Ithra Tower - Level 9, Room 2",
+      "anchor": "#session-ithra-18134-202607221830-painted-lamps"
+    },
+    {
+      "title": "Painted Lamps",
+      "starts_at": "2026-07-23T16:00:00+03:00",
+      "ends_at": "2026-07-23T18:00:00+03:00",
+      "room": "Ithra Tower - Level 9, Room 2",
+      "anchor": "#session-ithra-18134-202607231600-painted-lamps"
+    },
+    {
+      "title": "Painted Lamps",
+      "starts_at": "2026-07-23T18:30:00+03:00",
+      "ends_at": "2026-07-23T20:30:00+03:00",
+      "room": "Ithra Tower - Level 9, Room 2",
+      "anchor": "#session-ithra-18134-202607231830-painted-lamps"
+    },
+    {
+      "title": "Painted Lamps",
+      "starts_at": "2026-07-24T16:00:00+03:00",
+      "ends_at": "2026-07-24T18:00:00+03:00",
+      "room": "Ithra Tower - Level 9, Room 2",
+      "anchor": "#session-ithra-18134-202607241600-painted-lamps"
+    },
+    {
+      "title": "Painted Lamps",
+      "starts_at": "2026-07-24T18:30:00+03:00",
+      "ends_at": "2026-07-24T20:30:00+03:00",
+      "room": "Ithra Tower - Level 9, Room 2",
+      "anchor": "#session-ithra-18134-202607241830-painted-lamps"
+    },
+    {
+      "title": "Painted Lamps",
+      "starts_at": "2026-07-25T16:00:00+03:00",
+      "ends_at": "2026-07-25T18:00:00+03:00",
+      "room": "Ithra Tower - Level 9, Room 2",
+      "anchor": "#session-ithra-18134-202607251600-painted-lamps"
+    },
+    {
+      "title": "Painted Lamps",
+      "starts_at": "2026-07-25T18:30:00+03:00",
+      "ends_at": "2026-07-25T20:30:00+03:00",
+      "room": "Ithra Tower - Level 9, Room 2",
+      "anchor": "#session-ithra-18134-202607251830-painted-lamps"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Painted Lamps",
+    "startDate": "2026-07-22T16:00:00+03:00",
+    "endDate": "2026-07-25T20:30:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Ithra Tower - Level 9, Room 2",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ithra Tower - Level 9, Room 2",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/painted-lamps-6ed4be3191.png"
+    ],
+    "description": "Light has a way of bringing a space to life. In this workshop, mothers and children transform simple lamps into personalized creations through painting and decoration. Inspired by the colors, patterns, and details that make a home feel familiar, participants design a glowing piece that is both decorative and functional, bringing a touch of warmth and creativity into their space.",
+    "url": "https://eventme.live/events/event-painted-lamps.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-painted-lamps.html",
+    "isAccessibleForFree": true,
+    "keywords": "Painted Lamps, علوم وفضاء, learning, فعالية, قادمة, الظهران, Ithra Tower - Level 9, Room 2, Ithra Events, culture, arts, creativity, community, exhibitions, Ithra, Children Festival, Workshop, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/painted-lamps"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/painted-lamps",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

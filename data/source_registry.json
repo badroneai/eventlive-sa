@@ -720,7 +720,18 @@
     {
       "id": "ithra-events",
       "name": "Ithra Events",
-      "url": "https://www.ithra.com",
+      "url": "https://www.ithra.com/en/programme/2026",
+      "collector_url": "https://zjvutjo7vx-dsn.algolia.net/1/indexes/programs/query",
+      "collector_method": "POST",
+      "collector_body": {
+        "query": "",
+        "hitsPerPage": 1000,
+        "facetFilters": [
+          [
+            "locale:en"
+          ]
+        ]
+      },
       "owner": "King Abdulaziz Center for World Culture / Ithra",
       "source_type": "venue-calendar",
       "trust_level": "venue-official",
@@ -739,11 +750,13 @@
         "exhibitions",
         "learning"
       ],
-      "fetch_method": "html-calendar",
+      "fetch_method": "json-api",
+      "max_candidates_per_run": 200,
+      "max_ended_per_run": 150,
       "intake_policy": "official-feed-preferred",
       "evidence_required": "Ithra event or program URL with date/time and location fields.",
       "candidate_gate": "human-review",
-      "notes": "Added from source-research batch 1. Strong official cultural venue source; build extractor after confirming the current event-card structure."
+      "notes": "Production collector uses the same public Algolia programs index as Ithra's 2026 What's On page. English records are collected once to prevent bilingual duplication; exact timestamps, sessions, venue, price, registration, coordinates, and official artwork are retained."
     },
     {
       "id": "saudi-digital-academy",

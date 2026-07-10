@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Sounds of Joy | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:ended-ithra-events-sounds-of-joy-20260528-797fc034@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260528T140000Z
+DTEND:20260531T190000Z
+SUMMARY:Sounds of Joy
+DESCRIPTION:Enjoy the live musical performances at the Lush Garden from various Muslim countries such as Saudi Arabia\, Oman\, Morocco\, Egypt\, Indonesia and Uzbekistan\, as they fill the atmosphere with melodies rooted in celebrating the heritage of our Eid holiday!
+LOCATION:Lush Garden
+URL:https://eventme.live/events/ended-ithra-events-sounds-of-joy-20260528-797fc034.html
+END:VEVENT
+END:VCALENDAR

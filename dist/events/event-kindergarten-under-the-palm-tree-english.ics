@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Kindergarten Under the Palm Tree (English) | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-kindergarten-under-the-palm-tree-english@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260711T080000Z
+DTEND:20260725T083000Z
+SUMMARY:Kindergarten Under the Palm Tree (English)
+DESCRIPTION:Produced by the King Abdulaziz Center for World Culture (Ithra)\, a new animated series makes its debut! Set in the diverse environments of Saudi Arabia\, small animals embark on charming adventures\, discovering the meaning of early emotions such as gratitude and joy in a warm world designed for young children.
+LOCATION:Cinema
+URL:https://eventme.live/events/event-kindergarten-under-the-palm-tree-english.html
+END:VEVENT
+END:VCALENDAR

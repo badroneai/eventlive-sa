@@ -1,0 +1,176 @@
+{
+  "id": "event-ajeeb-in-wonder-house",
+  "title": "Ajeeb in Wonder House",
+  "summary": "A story-led experience that follows Ajeeb as he visits a series of unusual homes, each shaped by a different idea, form, or function. As the story unfolds, children observe how each space reflects a way of living, then shift into designing a home that suits Ajeeb himself. The activity combines storytelling with creative decision-making, moving from observation to design.",
+  "canonical_url": "https://eventme.live/events/event-ajeeb-in-wonder-house.html",
+  "detail_url": "./events/event-ajeeb-in-wonder-house.html",
+  "calendar_url": "./events/event-ajeeb-in-wonder-house.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/ajeeb-wonder-house",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/ajeeb-wonder-house",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:08:07.323Z",
+  "verification_method": "registered-venue-official",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Ithra Tower - Level 4, Show Tank",
+  "venue_address": "Ithra Tower - Level 4, Show Tank",
+  "starts_at": "2026-07-10T16:00:00+03:00",
+  "ends_at": "2026-07-25T21:30:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "program",
+  "event_kind_label": "برنامج ممتد",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": true,
+  "official_sessions_count": 8,
+  "schedule_depth": "multi-session-agenda",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/ajeeb-in-wonder-house-36ef1d6d7c.jpg",
+  "image_alt": "Ajeeb in Wonder House",
+  "category": "علوم وفضاء",
+  "category_url": "./categories/science-space.html",
+  "audiences": [
+    {
+      "slug": "families",
+      "label": "عائلات وأطفال"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Ajeeb in Wonder House",
+    "علوم وفضاء",
+    "learning",
+    "برنامج ممتد",
+    "قادمة",
+    "الظهران",
+    "Ithra Tower - Level 4, Show Tank",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "Ithra",
+    "Children Festival",
+    "Workshop",
+    "عائلات وأطفال",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Ajeeb in Wonder House",
+      "starts_at": "2026-07-10T16:00:00+03:00",
+      "ends_at": "2026-07-10T21:30:00+03:00",
+      "room": "Ithra Tower - Level 4, Show Tank",
+      "anchor": "#session-ithra-18040-202607101600-ajeeb-in-wonder-house"
+    },
+    {
+      "title": "Ajeeb in Wonder House",
+      "starts_at": "2026-07-11T16:00:00+03:00",
+      "ends_at": "2026-07-11T21:30:00+03:00",
+      "room": "Ithra Tower - Level 4, Show Tank",
+      "anchor": "#session-ithra-18040-202607111600-ajeeb-in-wonder-house"
+    },
+    {
+      "title": "Ajeeb in Wonder House",
+      "starts_at": "2026-07-16T16:00:00+03:00",
+      "ends_at": "2026-07-16T21:30:00+03:00",
+      "room": "Ithra Tower - Level 4, Show Tank",
+      "anchor": "#session-ithra-18040-202607161600-ajeeb-in-wonder-house"
+    },
+    {
+      "title": "Ajeeb in Wonder House",
+      "starts_at": "2026-07-17T16:00:00+03:00",
+      "ends_at": "2026-07-17T21:30:00+03:00",
+      "room": "Ithra Tower - Level 4, Show Tank",
+      "anchor": "#session-ithra-18040-202607171600-ajeeb-in-wonder-house"
+    },
+    {
+      "title": "Ajeeb in Wonder House",
+      "starts_at": "2026-07-18T16:00:00+03:00",
+      "ends_at": "2026-07-18T21:30:00+03:00",
+      "room": "Ithra Tower - Level 4, Show Tank",
+      "anchor": "#session-ithra-18040-202607181600-ajeeb-in-wonder-house"
+    },
+    {
+      "title": "Ajeeb in Wonder House",
+      "starts_at": "2026-07-23T16:00:00+03:00",
+      "ends_at": "2026-07-23T21:30:00+03:00",
+      "room": "Ithra Tower - Level 4, Show Tank",
+      "anchor": "#session-ithra-18040-202607231600-ajeeb-in-wonder-house"
+    },
+    {
+      "title": "Ajeeb in Wonder House",
+      "starts_at": "2026-07-24T16:00:00+03:00",
+      "ends_at": "2026-07-24T21:30:00+03:00",
+      "room": "Ithra Tower - Level 4, Show Tank",
+      "anchor": "#session-ithra-18040-202607241600-ajeeb-in-wonder-house"
+    },
+    {
+      "title": "Ajeeb in Wonder House",
+      "starts_at": "2026-07-25T16:00:00+03:00",
+      "ends_at": "2026-07-25T21:30:00+03:00",
+      "room": "Ithra Tower - Level 4, Show Tank",
+      "anchor": "#session-ithra-18040-202607251600-ajeeb-in-wonder-house"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Ajeeb in Wonder House",
+    "startDate": "2026-07-10T16:00:00+03:00",
+    "endDate": "2026-07-25T21:30:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Ithra Tower - Level 4, Show Tank",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ithra Tower - Level 4, Show Tank",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/ajeeb-in-wonder-house-36ef1d6d7c.jpg"
+    ],
+    "description": "A story-led experience that follows Ajeeb as he visits a series of unusual homes, each shaped by a different idea, form, or function. As the story unfolds, children observe how each space reflects a way of living, then shift into designing a home that suits Ajeeb himself. The activity combines storytelling with creative decision-making, moving from observation to design.",
+    "url": "https://eventme.live/events/event-ajeeb-in-wonder-house.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-ajeeb-in-wonder-house.html",
+    "isAccessibleForFree": true,
+    "keywords": "Ajeeb in Wonder House, علوم وفضاء, learning, برنامج ممتد, قادمة, الظهران, Ithra Tower - Level 4, Show Tank, Ithra Events, culture, arts, creativity, community, exhibitions, Ithra, Children Festival, Workshop, عائلات وأطفال, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "عائلات وأطفال"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/ajeeb-wonder-house"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/ajeeb-wonder-house",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

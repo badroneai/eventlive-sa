@@ -1,0 +1,126 @@
+{
+  "id": "ended-ithra-events-textured-painting-20260627-b0fc79b9",
+  "title": "Textured Painting",
+  "summary": "The Textured Painting Workshop is a creative experience for everyone! Do you love drawing but have never tried three-dimensional art before? This workshop is designed just for you! No prior experience is required, just a passion for creativity and exploring the world of art in an entertaining way. In this workshop, you'll learn the fundamentals of textured painting, choose the right materials to create simple 3D paintings and learn clear steps to transform your ideas into vibrant artworks. Don't miss this opportunity! Join us and enjoy a special experience that will untap your artistic and creative skills.",
+  "canonical_url": "https://eventme.live/events/ended-ithra-events-textured-painting-20260627-b0fc79b9.html",
+  "detail_url": "./events/ended-ithra-events-textured-painting-20260627-b0fc79b9.html",
+  "calendar_url": "./events/ended-ithra-events-textured-painting-20260627-b0fc79b9.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2025/art-studio1/textured-painting",
+  "evidence_url": "https://www.ithra.com/en/programme/2025/art-studio1/textured-painting",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:04:43.964Z",
+  "verification_method": "official-public-algolia-index",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Ithra Tower - Level 7, Art studio",
+  "venue_address": "Ithra Tower - Level 7, Art studio",
+  "starts_at": "2026-06-27T17:00:00+03:00",
+  "ends_at": "2026-06-27T20:00:00+03:00",
+  "status": "ended",
+  "status_label": "منتهية",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": false,
+  "official_sessions_count": 1,
+  "schedule_depth": "official-single-session",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/textured-painting-bb6433ce72.jpg",
+  "image_alt": "Textured Painting",
+  "category": "جامعات ومجتمع",
+  "category_url": "./categories/education-community.html",
+  "audiences": [
+    {
+      "slug": "skilled-trades",
+      "label": "مهاريون وحرفيون"
+    },
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Textured Painting",
+    "جامعات ومجتمع",
+    "learning",
+    "فعالية",
+    "منتهية",
+    "الظهران",
+    "Ithra Tower - Level 7, Art studio",
+    "Ithra Events",
+    "culture",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "Ithra",
+    "Art and Design",
+    "Workshop",
+    "ended-event",
+    "مهاريون وحرفيون",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Textured Painting",
+      "starts_at": "2026-06-27T17:00:00+03:00",
+      "ends_at": "2026-06-27T20:00:00+03:00",
+      "room": "Ithra Tower - Level 7, Art studio",
+      "anchor": "#session-ithra-16188-202606271700-textured-painting"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Textured Painting",
+    "startDate": "2026-06-27T17:00:00+03:00",
+    "endDate": "2026-06-27T20:00:00+03:00",
+    "eventStatus": "https://schema.org/EventCompleted",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Ithra Tower - Level 7, Art studio",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ithra Tower - Level 7, Art studio",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/textured-painting-bb6433ce72.jpg"
+    ],
+    "description": "The Textured Painting Workshop is a creative experience for everyone! Do you love drawing but have never tried three-dimensional art before? This workshop is designed just for you! No prior experience is required, just a passion for creativity and exploring the world of art in an entertaining way. In this workshop, you'll learn the fundamentals of textured painting, choose the right materials to create simple 3D paintings and learn clear steps to transform your ideas into vibrant artworks. Don't miss this opportunity! Join us and enjoy a special experience that will untap your artistic and creative skills.",
+    "url": "https://eventme.live/events/ended-ithra-events-textured-painting-20260627-b0fc79b9.html",
+    "mainEntityOfPage": "https://eventme.live/events/ended-ithra-events-textured-painting-20260627-b0fc79b9.html",
+    "isAccessibleForFree": false,
+    "keywords": "Textured Painting, جامعات ومجتمع, learning, فعالية, منتهية, الظهران, Ithra Tower - Level 7, Art studio, Ithra Events, culture, arts, creativity, community, exhibitions, Ithra, Art and Design, Workshop, ended-event, مهاريون وحرفيون, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "مهاريون وحرفيون"
+      },
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2025/art-studio1/textured-painting"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2025/art-studio1/textured-painting",
+      "availability": "https://schema.org/InStock",
+      "category": "50 SAR"
+    }
+  }
+}

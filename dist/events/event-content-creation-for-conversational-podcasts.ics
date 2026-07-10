@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Content Creation for Conversational Podcasts | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-content-creation-for-conversational-podcasts@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20261214T133000Z
+DTEND:20261218T173000Z
+SUMMARY:Content Creation for Conversational Podcasts
+DESCRIPTION:This specialized training course focuses on the fundamentals of talk podcasting\, explaining why it is a rapidly growing platform with seven million listeners in Saudi Arabia and 180% annual growth and how it achieves an 80% audience retention rate. The course covers podcast types\, how to build a general theme\, identify target audiences using the Customer Persona model and highlights the research skills needed to create valuable content and select successful guests. It also details content creation skills\, such as transforming gathered information into broadcast ready materials: including questions\, media and descriptions\, while mastering guest introductions\, attractive titles and professiona
+LOCATION:Ithra Tower - Level 9\, Classroom 2
+URL:https://eventme.live/events/event-content-creation-for-conversational-podcasts.html
+END:VEVENT
+END:VCALENDAR

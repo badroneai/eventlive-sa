@@ -1,0 +1,118 @@
+{
+  "id": "event-take-a-closer-look-at-the-preparation-process-for-the-plays-competing",
+  "title": "Take a closer look at the preparation process for the plays competing",
+  "summary": "In this session, we will take a closer look at the preparation process for the plays competing in the Ithra&rsquo;s Short Play Contest. Join us to learn more about the preparation process and meet some of the participants in contest 6th edition.",
+  "canonical_url": "https://eventme.live/events/event-take-a-closer-look-at-the-preparation-process-for-the-plays-competing.html",
+  "detail_url": "./events/event-take-a-closer-look-at-the-preparation-process-for-the-plays-competing.html",
+  "calendar_url": "./events/event-take-a-closer-look-at-the-preparation-process-for-the-plays-competing.ics",
+  "source_label": "Ithra Events",
+  "source_url": "https://www.ithra.com/en/programme/2026/ithra-theater-society/take-closer-look-preparation-process-plays-competing",
+  "evidence_url": "https://www.ithra.com/en/programme/2026/ithra-theater-society/take-closer-look-preparation-process-plays-competing",
+  "trust_tier": "official-venue",
+  "trust_label": "مصدر المكان الرسمي",
+  "verified_at": "2026-07-10T10:08:07.323Z",
+  "verification_method": "registered-venue-official",
+  "freshness_hours": 0,
+  "city": "الظهران",
+  "venue": "Energy Exhibit - The Theater",
+  "venue_address": "Energy Exhibit - The Theater",
+  "starts_at": "2026-07-22T19:00:00+03:00",
+  "ends_at": "2026-07-22T20:00:00+03:00",
+  "status": "upcoming",
+  "status_label": "قادمة",
+  "event_kind": "moment",
+  "event_kind_label": "فعالية",
+  "attendance_mode": "in_person",
+  "live_schedule_ready": true,
+  "agenda_ready": false,
+  "official_sessions_count": 1,
+  "schedule_depth": "official-single-session",
+  "schedule_quality": "detailed",
+  "image_url": "https://eventme.live/assets/event-images/take-a-closer-look-at-the-preparation-process-for-the-plays-competing-470ce0d879.jpg",
+  "image_alt": "Take a closer look at the preparation process for the plays competing",
+  "category": "ثقافة وفنون",
+  "category_url": "./categories/culture-arts.html",
+  "audiences": [
+    {
+      "slug": "creatives",
+      "label": "مبدعون وفنون"
+    }
+  ],
+  "keywords": [
+    "Take a closer look at the preparation process for the plays competing",
+    "ثقافة وفنون",
+    "culture",
+    "فعالية",
+    "قادمة",
+    "الظهران",
+    "Energy Exhibit - The Theater",
+    "Ithra Events",
+    "arts",
+    "creativity",
+    "community",
+    "exhibitions",
+    "learning",
+    "Ithra",
+    "Ithra Theater Society",
+    "Panel Discussions",
+    "مبدعون وفنون"
+  ],
+  "sessions": [
+    {
+      "title": "Take a closer look at the preparation process for the plays competing",
+      "starts_at": "2026-07-22T19:00:00+03:00",
+      "ends_at": "2026-07-22T20:00:00+03:00",
+      "room": "Energy Exhibit - The Theater",
+      "anchor": "#session-ithra-17908-202607221900-take-a-closer-look-at-the-preparation-process-for-the-plays-competing"
+    }
+  ],
+  "schema_org": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Take a closer look at the preparation process for the plays competing",
+    "startDate": "2026-07-22T19:00:00+03:00",
+    "endDate": "2026-07-22T20:00:00+03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Energy Exhibit - The Theater",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Energy Exhibit - The Theater",
+        "addressLocality": "الظهران",
+        "addressRegion": "المنطقة الشرقية",
+        "addressCountry": "SA"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "King Abdulaziz Center for World Culture / Ithra"
+    },
+    "image": [
+      "https://eventme.live/assets/event-images/take-a-closer-look-at-the-preparation-process-for-the-plays-competing-470ce0d879.jpg"
+    ],
+    "description": "In this session, we will take a closer look at the preparation process for the plays competing in the Ithra&rsquo;s Short Play Contest. Join us to learn more about the preparation process and meet some of the participants in contest 6th edition.",
+    "url": "https://eventme.live/events/event-take-a-closer-look-at-the-preparation-process-for-the-plays-competing.html",
+    "mainEntityOfPage": "https://eventme.live/events/event-take-a-closer-look-at-the-preparation-process-for-the-plays-competing.html",
+    "isAccessibleForFree": true,
+    "keywords": "Take a closer look at the preparation process for the plays competing, ثقافة وفنون, culture, فعالية, قادمة, الظهران, Energy Exhibit - The Theater, Ithra Events, arts, creativity, community, exhibitions, learning, Ithra, Ithra Theater Society, Panel Discussions, مبدعون وفنون",
+    "audience": [
+      {
+        "@type": "Audience",
+        "audienceType": "مبدعون وفنون"
+      }
+    ],
+    "sameAs": [
+      "https://www.ithra.com/en/programme/2026/ithra-theater-society/take-closer-look-preparation-process-plays-competing"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ithra.com/en/programme/2026/ithra-theater-society/take-closer-look-preparation-process-plays-competing",
+      "availability": "https://schema.org/InStock",
+      "price": "0",
+      "priceCurrency": "SAR",
+      "category": "free"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Children's Art Studio | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-childrens-art-studio@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260727T093000Z
+DTEND:20260831T170000Z
+SUMMARY:Children's Art Studio
+DESCRIPTION:A space where children can explore their creativity and imagination\, with colors\, patterns\, engage in art discussions with a Play Guide and much more!
+LOCATION:Children Museum
+URL:https://eventme.live/events/event-childrens-art-studio.html
+END:VEVENT
+END:VCALENDAR

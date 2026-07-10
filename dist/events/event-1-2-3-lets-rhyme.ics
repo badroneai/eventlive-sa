@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:1\, 2\, 3\, Let's Rhyme! | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-1-2-3-lets-rhyme@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260710T130000Z
+DTEND:20260822T083000Z
+SUMMARY:1\, 2\, 3\, Let's Rhyme!
+DESCRIPTION:Come sing along with us as we explore beloved nursery rhymes\, discover new ones\, and enjoy a wonderful storytelling experience. Connect with other families in a welcoming environment that promotes early childhood development and provides lots of entertainment. This session\, lasting for 30 minutes\, is ideal for children aged 0 to 3 years.
+LOCATION:Plaza
+URL:https://eventme.live/events/event-1-2-3-lets-rhyme.html
+END:VEVENT
+END:VCALENDAR

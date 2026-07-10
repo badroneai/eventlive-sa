@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:A House Reads: A Story that Begins with the Family | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-a-house-reads-a-story-that-begins-with-the-family@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260724T153000Z
+DTEND:20260724T163000Z
+SUMMARY:A House Reads: A Story that Begins with the Family
+DESCRIPTION:An interactive workshop designed for children to discover the reading boosters that ignite their passion for books\, and create a lifelong friendship with reading\, making books their closest companions.
+LOCATION:Library - Level 3
+URL:https://eventme.live/events/event-a-house-reads-a-story-that-begins-with-the-family.html
+END:VEVENT
+END:VCALENDAR

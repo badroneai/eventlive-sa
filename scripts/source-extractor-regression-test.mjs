@@ -4,6 +4,7 @@ import {
   extractAsharqiaChamberEvents,
   extractCodeMcitPrograms,
   extractInvestSaudiEvents,
+  extractIthraEvents,
   extractJazanChamberEvents,
   jazanApiEndpoint,
   jazanMonthsToFetch,
@@ -21,6 +22,51 @@ import {
   extractVisitSaudiApiEvents,
   loadSourceExtraction
 } from './collect-source-candidates.mjs';
+
+const ithraEvents = extractIthraEvents(JSON.stringify({
+  hits: [{
+    id: 18080,
+    locale: 'en',
+    title: 'Kinusaiga Art',
+    url: 'https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/kinusaiga-art',
+    description: '<p>A family art workshop.</p>',
+    start_date: 1784098800,
+    end_date: 1784201400,
+    start_timestamp: [1784098800, 1784107800],
+    end_timestamp: [1784106000, 1784115000],
+    website_calendar_json: [{
+      title: 'Kinusaiga Art',
+      pageLink: 'https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/kinusaiga-art'
+    }, {
+      title: 'Kinusaiga Art',
+      pageLink: 'https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/kinusaiga-art'
+    }],
+    website_json: {
+      date: '15th July 2026',
+      time: '10:00 AM - 2:30 PM',
+      age: '6+ Years with families',
+      language: 'English, Arabic',
+      location: 'Ithra Tower - level 8, Art Studio',
+      button_text: '35.00 SAR'
+    },
+    ticket_price: 35,
+    image_url: ['https://www.ithra.com/application/files/cache/thumbnails/kinusaiga.jpg'],
+    filter_tags: ['Workshop', 'Children-Museum']
+  }]
+}), {
+  id: 'ithra-events',
+  name: 'Ithra Events',
+  url: 'https://www.ithra.com/en/programme/2026',
+  owner: 'King Abdulaziz Center for World Culture / Ithra'
+});
+
+assert.equal(ithraEvents.length, 1);
+assert.equal(ithraEvents[0].starts_at, '2026-07-15T10:00:00+03:00');
+assert.equal(ithraEvents[0].ends_at, '2026-07-15T14:30:00+03:00');
+assert.equal(ithraEvents[0].sessions.length, 2);
+assert.equal(ithraEvents[0].sessions[0].starts_at, '2026-07-15T10:00:00+03:00');
+assert.equal(ithraEvents[0].price_label, '35 SAR');
+assert.equal(ithraEvents[0].verification_method, 'official-public-algolia-index');
 
 const visitSaudiSource = {
   id: 'visit-saudi-calendar',

@@ -37,7 +37,12 @@ function metaContent(html, name) {
   const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const propertyMatch = html.match(new RegExp(`<meta\\s+property="${escaped}"\\s+content="([^"]+)"\\s*/?>`, 'i'));
   const nameMatch = html.match(new RegExp(`<meta\\s+name="${escaped}"\\s+content="([^"]+)"\\s*/?>`, 'i'));
-  return propertyMatch?.[1] || nameMatch?.[1] || '';
+  return (propertyMatch?.[1] || nameMatch?.[1] || '')
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;|&apos;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>');
 }
 
 function isOnlineEvent(event = {}) {

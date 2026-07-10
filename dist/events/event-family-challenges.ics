@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Family Challenges | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-family-challenges@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260730T110000Z
+DTEND:20260831T143000Z
+SUMMARY:Family Challenges
+DESCRIPTION:This challenge sets you up for an entertaining quality time with your loved ones! Join us to engage in exciting trivia showdowns\, thrilling challenges against other families\, and create memorable memories with your little ones!
+LOCATION:Children Museum
+URL:https://eventme.live/events/event-family-challenges.html
+END:VEVENT
+END:VCALENDAR

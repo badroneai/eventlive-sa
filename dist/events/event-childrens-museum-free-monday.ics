@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Children's Museum - Free Monday | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-childrens-museum-free-monday@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260803T060000Z
+DTEND:20260803T180000Z
+SUMMARY:Children's Museum - Free Monday
+DESCRIPTION:It's finally the first Monday of every month\, where the Children's Museum opens its doors during different times throughout the day. Offering a special free ticket for you and your family to join us for two hours and a half and take part in fun and interactive workshops.
+LOCATION:Children's Museum
+URL:https://eventme.live/events/event-childrens-museum-free-monday.html
+END:VEVENT
+END:VCALENDAR

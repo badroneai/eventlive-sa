@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//EventLive//Saudi Events//AR
+X-WR-CALNAME:Spot of Inspiration | EventLive
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VEVENT
+UID:event-spot-of-inspiration@eventme.live
+DTSTAMP:20260710T101045Z
+DTSTART:20260727T071500Z
+DTEND:20260831T163000Z
+SUMMARY:Spot of Inspiration
+DESCRIPTION:Step into our creative space and explore a wide variety of new artistic tools and techniques. Enjoy an inspiring interactive experience\, featuring artistic showcases designed to spark children&rsquo\;s creativity and develop their artistic sense. Join us and discover what inspires you in a world full of colors\, textures\, and creative possibilities!
+LOCATION:Children's Museum
+URL:https://eventme.live/events/event-spot-of-inspiration.html
+END:VEVENT
+END:VCALENDAR

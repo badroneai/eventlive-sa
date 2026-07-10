@@ -215,6 +215,33 @@ fs.writeFileSync(catalogPath, `${JSON.stringify({
       live_schedule_ready: false,
       source_file: 'data/raw/source-snapshots/visit-saudi.json',
       tags: ['families']
+    },
+    {
+      id: 'event-ithra-session-refresh',
+      slug: 'ithra-session-refresh',
+      title: 'Ithra Session Refresh',
+      organizer: 'Ithra',
+      city: 'Dhahran',
+      venue: 'Ithra Tower',
+      venue_address: 'Ithra Tower',
+      category: 'learning',
+      summary: 'Existing Ithra event awaiting its official sessions.',
+      starts_at: '2026-12-12T09:00:00+03:00',
+      ends_at: '2026-12-12T18:00:00+03:00',
+      updated_at: '2026-07-03T00:00:00+03:00',
+      sessions_count: 0,
+      tracks_count: 0,
+      rooms_count: 0,
+      live_updates_count: 0,
+      approval_status: 'published',
+      published_by: 'EventLive Auto Publisher',
+      source_label: 'Ithra Events',
+      source_url: 'https://www.ithra.com/en/programme/2026/ithra-session-refresh',
+      evidence_url: 'https://www.ithra.com/en/programme/2026/ithra-session-refresh',
+      source_confidence: 'approved-source',
+      live_schedule_ready: false,
+      source_file: 'data/raw/source-snapshots/ithra.json',
+      tags: ['learning']
     }
   ]
 }, null, 2)}\n`, 'utf8');
@@ -272,6 +299,36 @@ fs.writeFileSync(candidatesPath, `${JSON.stringify({
       extracted_sessions_count: 0,
       reviewer_notes: 'Precise session preservation regression fixture.',
       tags: ['workshop']
+    },
+    {
+      id: 'candidate-ithra-session-refresh',
+      title: 'Ithra Session Refresh',
+      organizer: 'Ithra',
+      city: 'Dhahran',
+      venue: 'Ithra Tower',
+      category: 'learning',
+      summary: 'Official Ithra event with newly available sessions.',
+      starts_at: '2026-12-12T10:00:00+03:00',
+      ends_at: '2026-12-12T13:00:00+03:00',
+      source_type: 'official-site',
+      source_url: 'https://www.ithra.com/en/programme/2026/ithra-session-refresh',
+      source_label: 'Ithra Events',
+      source_owner: 'King Abdulaziz Center for World Culture / Ithra',
+      evidence_url: 'https://www.ithra.com/en/programme/2026/ithra-session-refresh',
+      raw_snapshot_path: 'data/raw/source-snapshots/ithra.json',
+      discovered_at: '2026-07-03T00:00:00+03:00',
+      discovery_method: 'official-calendar',
+      confidence: 'official',
+      review_status: 'ready-for-review',
+      publication_gate: 'human-review',
+      extracted_sessions_count: 3,
+      sessions: [
+        { id: 'ithra-1', title: 'Session 1', starts_at: '2026-12-12T10:00:00+03:00', ends_at: '2026-12-12T11:00:00+03:00', session_type: 'official-program-session' },
+        { id: 'ithra-2', title: 'Session 2', starts_at: '2026-12-12T11:00:00+03:00', ends_at: '2026-12-12T12:00:00+03:00', session_type: 'official-program-session' },
+        { id: 'ithra-3', title: 'Session 3', starts_at: '2026-12-12T12:00:00+03:00', ends_at: '2026-12-12T13:00:00+03:00', session_type: 'official-program-session' }
+      ],
+      reviewer_notes: 'Ithra periodic session refresh regression fixture.',
+      tags: ['learning']
     },
     {
       id: 'candidate-official-image-preservation',
@@ -483,7 +540,7 @@ const candidates = JSON.parse(fs.readFileSync(candidatesPath, 'utf8'));
 const candidate = candidates.candidates[0];
 
 if (
-  catalog.events.length !== 8
+  catalog.events.length !== 9
   || catalog.events.some((event) => event.id === 'event-invalid-auto-published')
   || candidate.matched_catalog_event_id !== 'event-saudi-national-day'
   || !/Published:\s*3/i.test(out)
@@ -498,6 +555,8 @@ const imageEvent = catalog.events.find((event) => event.title === 'Official Imag
 const sourceDateVariant = candidates.candidates.find((row) => row.id === 'candidate-official-image-preservation-title-variant');
 const preciseEvent = catalog.events.find((event) => event.id === 'event-official-precise-session');
 const preciseCandidate = candidates.candidates.find((row) => row.id === 'candidate-official-precise-session-generic-window');
+const ithraEvent = catalog.events.find((event) => event.id === 'event-ithra-session-refresh');
+const ithraCandidate = candidates.candidates.find((row) => row.id === 'candidate-ithra-session-refresh');
 const providerEvent = catalog.events.find((event) => event.id === 'event-provider-enriched-workshop');
 const providerCandidate = candidates.candidates.find((row) => row.id === 'candidate-provider-enriched-generic-window');
 if (
@@ -511,7 +570,7 @@ if (
 }
 
 if (
-  catalog.events.length !== 8
+  catalog.events.length !== 9
   || sourceDateVariant?.matched_catalog_event_id !== imageEvent.id
 ) {
   console.error('TEST_FAIL official source/date duplicate should link to the first published event');
@@ -572,6 +631,17 @@ if (
 ) {
   console.error('TEST_FAIL linked generic source row must not overwrite existing precise live schedule times');
   console.error(JSON.stringify({ preciseCandidate, preciseEvent }, null, 2));
+  process.exit(1);
+}
+
+if (
+  ithraCandidate?.matched_catalog_event_id !== 'event-ithra-session-refresh'
+  || ithraEvent?.sessions?.length !== 3
+  || ithraEvent?.sessions_count !== 3
+  || ithraEvent?.live_schedule_ready !== true
+) {
+  console.error('TEST_FAIL an official periodic source refresh must activate newly available sessions');
+  console.error(JSON.stringify({ ithraCandidate, ithraEvent }, null, 2));
   process.exit(1);
 }
 
