@@ -1,123 +1,12 @@
 {
-  "generated_at": "2026-07-10T12:35:13.973Z",
+  "generated_at": "2026-07-10T15:09:40.168Z",
   "totals": {
-    "targets": 11,
-    "enriched": 11,
-    "fetched": 11,
-    "images": 11,
+    "targets": 0,
+    "enriched": 0,
+    "fetched": 0,
+    "images": 0,
     "fetch_failures": 0
   },
-  "enriched": [
-    {
-      "id": "event-hayy-arts",
-      "title": "Hayy Arts | Global Positioning System",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayy-arts-global-positioning-system/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-arts-red-wind-coral-worlds",
-      "title": "Hayy Arts | Red Wind, Coral Worlds",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayy-arts-red-wind-coral-worlds/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-learning",
-      "title": "Hayy Learning | Recess: An After-School Programme for Teens",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/recess2026/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema",
-      "title": "Hayy Cinema | “Kef Hayyak?” 3rd Edition Screenings and Awards Ceremony",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayy-cinema-kef-hayyak-short-documentary-competition-3rd-edition/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-2",
-      "title": "Hayy Cinema | July 2026",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayy-cinema-july-2026/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-jameel-library",
-      "title": "Jameel Library | July Community Programmes",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/jameel-library-july-community-programmes/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-jameel-library-summer-reading-challenge",
-      "title": "Jameel Library | Summer Reading Challenge",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/jameel-library-summer-reading-challenge/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-explorers",
-      "title": "Hayy Explorers | As Told by The Land: Traces & Memory",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/explorers-thematic-as-told-by-the-land/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-makers",
-      "title": "Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/__trashed-4/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-3",
-      "title": "Hayy Cinema | In Short: Film Programme — Summer Edition",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayy-cinema-inshort2026/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-makers-2",
-      "title": "Hayy Makers | Introduction to Pottery Course with Pharah Al-Ghalib",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-3/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    }
-  ],
+  "enriched": [],
   "failed": []
 }

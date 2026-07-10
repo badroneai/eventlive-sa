@@ -1,6 +1,6 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-10T12:35:05.171Z
+- published_at: 2026-07-10T15:08:32.104Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 406
@@ -116,10 +116,7 @@
 | candidate-ithra-events-puppet-world-20260710-3b43fb64 | linked-existing | event-puppet-world | already linked to catalog event |
 | candidate-riyadh-city-events-pfl-mena-fight-night-20260710-0eafa4d0 | linked-existing | event-pfl-mena-fight-night | already linked to catalog event |
 | candidate-ithra-events-ajeeb-in-wonder-house-20260710-caa7ff83 | linked-existing | event-ajeeb-in-wonder-house | already linked to catalog event |
-| candidate-ithra-events-1-2-3-a-little-space-for-me-20260710-a3bc99ba | linked-existing | event-1-2-3-a-little-space-for-me | already linked to catalog event |
-| candidate-ithra-events-1-2-3-lets-rhyme-20260710-4d37515a | linked-existing | event-1-2-3-lets-rhyme | already linked to catalog event |
 | candidate-ithra-events-a-home-i-imagine-20260710-7778a5c1 | linked-existing | event-a-home-i-imagine | already linked to catalog event |
-| candidate-ithra-events-around-the-table-20260710-87d7ec65 | linked-existing | event-around-the-table | already linked to catalog event |
 | candidate-ithra-events-balloon-shapes-lab-20260710-7c264d45 | linked-existing | event-balloon-shapes-lab | already linked to catalog event |
 | candidate-ithra-events-built-by-nature-20260710-950b3be0 | linked-existing | event-built-by-nature | already linked to catalog event |
 | candidate-ithra-events-childrens-caf-20260710-f5069d9a | linked-existing | event-childrens-caf | already linked to catalog event |
@@ -139,15 +136,18 @@
 | candidate-ithra-events-who-lived-here-20260710-11c491ce | linked-existing | event-who-lived-here | already linked to catalog event |
 | candidate-ithra-events-zoom-in-20260710-d8d7bd6d | linked-existing | event-zoom-in | already linked to catalog event |
 | candidate-ithra-events-in-the-home-of-20260710-0dcdc683 | linked-existing | event-in-the-home-of | already linked to catalog event |
-| candidate-ithra-events-play-with-shadows-20260710-9984f169 | linked-existing | event-build-play-together | already linked to catalog event |
 | candidate-ithra-events-little-dot-20260710-6f97a4be | linked-existing | event-my-little-fort | already linked to catalog event |
-| candidate-ithra-events-my-little-fort-20260710-09d01da3 | linked-existing | event-my-little-fort | already linked to catalog event |
 | candidate-ithra-events-my-neighbor-totoro-20260710-f3bc5c57 | linked-existing | event-my-neighbor-totoro | already linked to catalog event |
-| candidate-ithra-events-on-this-carpet-20260710-2972e041 | linked-existing | event-on-this-carpet | already linked to catalog event |
 | candidate-ithra-events-sense-the-home-20260710-3a3ca5ae | linked-existing | event-sense-the-home | already linked to catalog event |
 | candidate-ithra-events-water-challenges-20260710-eea51834 | linked-existing | event-water-challenges | already linked to catalog event |
 | candidate-ithra-events-the-house-of-ideas-20260710-26aaa6b2 | linked-existing | event-the-house-of-ideas | already linked to catalog event |
+| candidate-ithra-events-1-2-3-a-little-space-for-me-20260710-a3bc99ba | linked-existing | event-1-2-3-a-little-space-for-me | already linked to catalog event |
+| candidate-ithra-events-1-2-3-lets-rhyme-20260710-4d37515a | linked-existing | event-1-2-3-lets-rhyme | already linked to catalog event |
+| candidate-ithra-events-play-with-shadows-20260710-9984f169 | linked-existing | event-build-play-together | already linked to catalog event |
+| candidate-ithra-events-on-this-carpet-20260710-2972e041 | linked-existing | event-on-this-carpet | already linked to catalog event |
 | candidate-ithra-events-house-of-wonder-20260710-9a8dfa3b | linked-existing | event-house-of-wonder | already linked to catalog event |
+| candidate-ithra-events-around-the-table-20260710-87d7ec65 | linked-existing | event-around-the-table | already linked to catalog event |
+| candidate-ithra-events-my-little-fort-20260710-09d01da3 | linked-existing | event-my-little-fort | already linked to catalog event |
 | candidate-ithra-events-museum-story-time-20260710-1104734c | linked-existing | event-draw-your-story | already linked to catalog event |
 | candidate-mdlbeast-events-beast-house-20260710-83049a2a | linked-existing | event-beast-house | already linked to catalog event |
 | candidate-ithra-events-beaded-plant-suncatcher-20260711-ebabc697 | linked-existing | event-beaded-plant-suncatcher | already linked to catalog event |
@@ -351,8 +351,8 @@
 | candidate-ithra-events-how-to-edit-fictional-texts-20261006-e0e3a230 | linked-existing | event-how-to-edit-fictional-texts | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-in-act-act-x-20261009-4a38d19e | linked-existing | event-in-act-act-x | already linked to catalog event |
 | candidate-ithra-events-the-soul-of-place-leveraging-folklore-and-local-heritage-in-narrative-wr-20261012-ac10e34d | linked-existing | event-the-soul-of-place-leveraging-folklore-and-local-heritage-in-narrative-wr | already linked to catalog event |
-| candidate-eventbrite-saudi-12th-middle-east-banking-ai-analytics-summit-2026-20261014-cec80e9d | linked-existing | event-12th-middle-east-banking-ai-analytics-summit-2026 | already linked to catalog event |
-| candidate-eventbrite-saudi-15th-middle-east-enterprise-ai-analytics-summit-20261015-e0aad1e6 | linked-existing | event-15th-middle-east-enterprise-ai-analytics-summit | already linked to catalog event |
+| candidate-eventbrite-saudi-12th-middle-east-banking-ai-analytics-summit-2026-20261014-cec80e9d | linked-existing | event-12th-middle-east-banking-ai-analytics-summit-2026 | trusted duplicate linked to existing catalog event |
+| candidate-eventbrite-saudi-15th-middle-east-enterprise-ai-analytics-summit-20261015-e0aad1e6 | linked-existing | event-15th-middle-east-enterprise-ai-analytics-summit | trusted duplicate linked to existing catalog event |
 | candidate-ithra-events-immersive-introduction-to-arabic-writing-and-type-design-20261021-3708788d | linked-existing | event-immersive-introduction-to-arabic-writing-and-type-design | already linked to catalog event |
 | candidate-experience-alula-events-alula-wellness-festival-20261023-5b74606a | linked-existing | event-alula-wellness-festival | already linked to catalog event |
 | candidate-eye-of-riyadh-events-global-proptech-summit-2026-20261025-7c1d3001 | linked-existing | event-global-proptech-summit-2026 | already linked to catalog event |

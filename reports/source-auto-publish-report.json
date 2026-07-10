@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-07-10T12:35:05.171Z",
+  "published_at": "2026-07-10T15:08:32.104Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -613,27 +613,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20260710-a3bc99ba",
-      "event_id": "event-1-2-3-a-little-space-for-me",
-      "title": "1, 2, 3, A Little Space for Me",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-1-2-3-lets-rhyme-20260710-4d37515a",
-      "event_id": "event-1-2-3-lets-rhyme",
-      "title": "1, 2, 3, Let's Rhyme!",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-a-home-i-imagine-20260710-7778a5c1",
       "event_id": "event-a-home-i-imagine",
       "title": "A Home I Imagine",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-around-the-table-20260710-87d7ec65",
-      "event_id": "event-around-the-table",
-      "title": "Around the Table",
       "reason": "already linked to catalog event"
     },
     {
@@ -751,33 +733,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-play-with-shadows-20260710-9984f169",
-      "event_id": "event-build-play-together",
-      "title": "Play with Shadows",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-little-dot-20260710-6f97a4be",
       "event_id": "event-my-little-fort",
       "title": "Little Dot",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-my-little-fort-20260710-09d01da3",
-      "event_id": "event-my-little-fort",
-      "title": "My Little Fort",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-my-neighbor-totoro-20260710-f3bc5c57",
       "event_id": "event-my-neighbor-totoro",
       "title": "My Neighbor Totoro",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-on-this-carpet-20260710-2972e041",
-      "event_id": "event-on-this-carpet",
-      "title": "On This Carpet",
       "reason": "already linked to catalog event"
     },
     {
@@ -799,9 +763,45 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20260710-a3bc99ba",
+      "event_id": "event-1-2-3-a-little-space-for-me",
+      "title": "1, 2, 3, A Little Space for Me",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-1-2-3-lets-rhyme-20260710-4d37515a",
+      "event_id": "event-1-2-3-lets-rhyme",
+      "title": "1, 2, 3, Let's Rhyme!",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-play-with-shadows-20260710-9984f169",
+      "event_id": "event-build-play-together",
+      "title": "Play with Shadows",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-on-this-carpet-20260710-2972e041",
+      "event_id": "event-on-this-carpet",
+      "title": "On This Carpet",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-house-of-wonder-20260710-9a8dfa3b",
       "event_id": "event-house-of-wonder",
       "title": "House of Wonder",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-around-the-table-20260710-87d7ec65",
+      "event_id": "event-around-the-table",
+      "title": "Around the Table",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-my-little-fort-20260710-09d01da3",
+      "event_id": "event-my-little-fort",
+      "title": "My Little Fort",
       "reason": "already linked to catalog event"
     },
     {
@@ -2026,13 +2026,13 @@
       "candidate_id": "candidate-eventbrite-saudi-12th-middle-east-banking-ai-analytics-summit-2026-20261014-cec80e9d",
       "event_id": "event-12th-middle-east-banking-ai-analytics-summit-2026",
       "title": "12th Middle East Banking AI & Analytics Summit 2026",
-      "reason": "already linked to catalog event"
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-eventbrite-saudi-15th-middle-east-enterprise-ai-analytics-summit-20261015-e0aad1e6",
       "event_id": "event-15th-middle-east-enterprise-ai-analytics-summit",
       "title": "15th Middle East Enterprise AI & Analytics Summit",
-      "reason": "already linked to catalog event"
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-immersive-introduction-to-arabic-writing-and-type-design-20261021-3708788d",

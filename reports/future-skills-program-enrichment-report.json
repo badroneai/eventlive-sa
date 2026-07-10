@@ -1,21 +1,12 @@
 {
-  "generated_at": "2026-07-10T12:07:10.700Z",
+  "generated_at": "2026-07-10T15:08:38.834Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 4,
-    "enriched": 4,
-    "failed": 0
+    "enriched": 3,
+    "failed": 1
   },
   "enriched": [
-    {
-      "id": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي",
-      "title": "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
-      "group_id": "13037",
-      "goals": 1,
-      "features": 3,
-      "requirements": 4,
-      "metadata": 8
-    },
     {
       "id": "event-دورة-comptia-a",
       "title": "دورة +CompTIA A",
@@ -44,5 +35,12 @@
       "metadata": 8
     }
   ],
-  "failed": []
+  "failed": [
+    {
+      "id": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي",
+      "title": "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
+      "group_id": "13037",
+      "reason": "fetch failed"
+    }
+  ]
 }
