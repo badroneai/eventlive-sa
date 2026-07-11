@@ -6,6 +6,9 @@ import { root } from './program-lifecycle-utils.mjs';
 const reportsDir = path.join(root, 'reports');
 const generatedAt = new Date().toISOString();
 const strict = String(process.env.EVENTLIVE_SOURCE_RADARS_STRICT || '').toLowerCase() === 'true';
+const collectEndedEvents = ['1', 'true', 'yes', 'on']
+  .includes(String(process.env.EVENTLIVE_SOURCE_COLLECT_ENDED_EVENTS || '').toLowerCase());
+const timeScope = collectEndedEvents ? 'current-upcoming-and-ended' : 'current-and-upcoming-only';
 const jsonPath = path.join(reportsDir, 'source-radars-report.json');
 const mdPath = path.join(reportsDir, 'source-radars-report.md');
 
@@ -84,6 +87,7 @@ function renderMarkdown(report) {
     `- OK: ${report.totals.ok}`,
     `- Failed: ${report.totals.failed}`,
     `- Strict: ${report.strict}`,
+    `- Time scope: ${report.time_scope}`,
     '',
     '## Runs',
     '',
@@ -94,7 +98,7 @@ function renderMarkdown(report) {
 
 ensureDir(reportsDir);
 
-const radars = [
+const configuredRadars = [
   {
     id: 'platinumlist-platform',
     name: 'Platinumlist Saudi City Radar',
@@ -162,6 +166,7 @@ const radars = [
     name: 'GOV.SA / NEC Wayback Radar',
     source_id: 'my-gov-sa-events',
     policy: 'source-evidence; no auto-publish',
+    historical_only: true,
     command: process.execPath,
     args: ['scripts/mygov-wayback-radar.mjs'],
     timeout_ms: Number(process.env.EVENTLIVE_SOURCE_RADAR_TIMEOUT_MS || 90000),
@@ -176,12 +181,16 @@ const radars = [
   }
 ];
 
+const radars = configuredRadars.filter((radar) => collectEndedEvents || !radar.historical_only);
+
 const results = radars.map(runRadar);
 const failed = results.filter((radar) => radar.status !== 'ok');
 const report = {
   schema: 'eventlive.source-radars.v1',
   generated_at: generatedAt,
   strict,
+  time_scope: timeScope,
+  ended_collection_enabled: collectEndedEvents,
   policy: {
     allowed_use: 'scheduled evidence refresh, parser validation, official-source lead discovery',
     disallowed_use: 'direct catalog publication without current official confirmation'
@@ -198,6 +207,7 @@ fs.writeFileSync(jsonPath, `${JSON.stringify(report, null, 2)}\n`, 'utf8');
 fs.writeFileSync(mdPath, renderMarkdown(report), 'utf8');
 
 console.log('# EventLive Source Radars');
+console.log(`- Time scope: ${report.time_scope}`);
 console.log(`- OK: ${report.totals.ok}`);
 console.log(`- Failed: ${report.totals.failed}`);
 console.log(`- Report: ${rel(mdPath)}`);

@@ -11,6 +11,8 @@ const endedPath = path.join(root, 'data', 'source_ended_events.json');
 const reportJsonPath = path.join(root, 'reports', 'rff-agenda-enrichment-report.json');
 const reportMdPath = path.join(root, 'reports', 'rff-agenda-enrichment-report.md');
 const generatedAt = new Date().toISOString();
+const collectEndedEvents = ['1', 'true', 'yes', 'on']
+  .includes(String(process.env.EVENTLIVE_SOURCE_COLLECT_ENDED_EVENTS || '').toLowerCase());
 
 function readJson(filePath, fallback) {
   try { return JSON.parse(fs.readFileSync(filePath, 'utf8')); } catch { return fallback; }
@@ -107,6 +109,29 @@ function endedRecord(sessions) {
   };
 }
 
+if (!collectEndedEvents) {
+  const report = {
+    generated_at: generatedAt,
+    time_scope: 'current-and-upcoming-only',
+    ended_collection_enabled: false,
+    agenda_url: agendaUrl,
+    status: 'skipped-historical-source',
+    current_event_policy: 'RFF 2027 remains separate until its own official agenda is published.',
+    totals: { rendered_rows: 0, sessions_2026: 0, days: 0, recorded_session_links: 0 },
+    fetch_error: ''
+  };
+  writeJson(reportJsonPath, report);
+  fs.writeFileSync(reportMdPath, [
+    '# Real Estate Future Forum Agenda Enrichment', '',
+    `- generated_at: ${generatedAt}`,
+    '- time_scope: current-and-upcoming-only',
+    '- status: skipped-historical-source',
+    '- existing ended event data was preserved without a network request', ''
+  ].join('\n'), 'utf8');
+  console.log('# EventLive Real Estate Future Forum Agenda Enrichment');
+  console.log('- Time scope: current-and-upcoming-only');
+  console.log('- Status: skipped historical-only extractor');
+} else {
 const ended = readJson(endedPath, { ended_events: [] });
 let sessions = [];
 let fetchError = '';
@@ -131,6 +156,8 @@ try {
 
 const report = {
   generated_at: generatedAt,
+  time_scope: 'current-upcoming-and-ended',
+  ended_collection_enabled: true,
   agenda_url: agendaUrl,
   current_event_policy: 'RFF 2027 remains separate until its own official agenda is published.',
   totals: {
@@ -161,3 +188,4 @@ console.log(`- Days: ${report.totals.days}`);
 console.log(`- Recorded session links: ${report.totals.recorded_session_links}`);
 console.log(`- RFF 2027: kept separate until its own agenda is published`);
 console.log(`- Fetch error: ${fetchError || 'none'}`);
+}

@@ -4,6 +4,9 @@ import { cleanAgendaText, inspectOfficialAgendaHtml } from './official-agenda-ra
 
 const root = process.cwd();
 const generatedAt = new Date().toISOString();
+const collectEndedEvents = ['1', 'true', 'yes', 'on']
+  .includes(String(process.env.EVENTLIVE_SOURCE_COLLECT_ENDED_EVENTS || '').toLowerCase());
+const timeScope = collectEndedEvents ? 'current-upcoming-and-ended' : 'current-and-upcoming-only';
 const reportJsonPath = path.join(root, 'reports', 'source-official-agenda-radar.json');
 const reportMdPath = path.join(root, 'reports', 'source-official-agenda-radar.md');
 
@@ -183,12 +186,17 @@ async function probe(target) {
   }
 }
 
-const rows = await Promise.all(targets.map(probe));
+const activeTargets = collectEndedEvents
+  ? targets
+  : targets.filter((target) => target.extractor !== 'historical-active');
+const rows = await Promise.all(activeTargets.map(probe));
 const counts = Object.fromEntries([...new Set(rows.map((row) => row.status))].sort().map((status) => [status, rows.filter((row) => row.status === status).length]));
 const publishedReady = rows.filter((row) => row.status === 'published-timed-agenda' || /published-.*extractor-active/.test(row.status)).length;
 const report = {
   schema: 'eventlive.official-agenda-radar.v1',
   generated_at: generatedAt,
+  time_scope: timeScope,
+  ended_collection_enabled: collectEndedEvents,
   policy: 'Evidence and readiness radar only. It never publishes an event or session.',
   totals: { targets: rows.length, published_ready: publishedReady, ...counts },
   targets: rows
@@ -199,6 +207,7 @@ const table = rows.map((row) => `| ${row.event} | ${row.status} | ${row.http_sta
 fs.writeFileSync(reportMdPath, [
   '# EventLive Official Agenda Radar', '',
   `Generated at: ${generatedAt}`, '',
+  `Time scope: ${timeScope}`, '',
   'This radar detects when first-party event pages expose a complete timed programme. It does not publish records.', '',
   `- Targets: ${rows.length}`,
   `- Published timed agendas: ${publishedReady}`,
@@ -212,6 +221,7 @@ fs.writeFileSync(reportMdPath, [
 ].join('\n'), 'utf8');
 
 console.log('# EventLive Official Agenda Radar');
+console.log(`- Time scope: ${timeScope}`);
 console.log(`- Targets: ${rows.length}`);
 console.log(`- Published timed agendas: ${publishedReady}`);
 console.log(`- Announced without timed agenda: ${counts['announced-no-timed-agenda'] || 0}`);
