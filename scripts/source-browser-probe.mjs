@@ -1,9 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { ensureDir, exists, readJson, rel, root, writeJson } from './program-lifecycle-utils.mjs';
+import { selectSourcesByCadence } from './source-cadence-utils.mjs';
 
 const registryPath = path.join(root, 'data', 'source_registry.json');
 const collectionReportPath = path.join(root, 'reports', 'source-collection-report.json');
+const sourceRunStatePath = path.join(root, 'data', 'source_run_state.json');
 const outputDir = path.join(root, 'data', 'raw', 'browser-probes');
 const reportJsonPath = path.join(root, 'reports', 'source-browser-probe-report.json');
 const reportMdPath = path.join(root, 'reports', 'source-browser-probe-report.md');
@@ -17,8 +19,10 @@ const selectedIds = (process.env.EVENTLIVE_BROWSER_SOURCE_IDS || process.env.EVE
 const probeScope = String(process.env.EVENTLIVE_BROWSER_SCOPE || 'priority').toLowerCase();
 const probeLimit = Math.max(1, Number(process.env.EVENTLIVE_BROWSER_PROBE_LIMIT || 8));
 const waitMs = Math.max(1000, Number(process.env.EVENTLIVE_BROWSER_WAIT_MS || 4500));
-const timeoutMs = Math.max(10000, Number(process.env.EVENTLIVE_BROWSER_TIMEOUT_MS || 60000));
+const timeoutMs = Math.max(10000, Number(process.env.EVENTLIVE_BROWSER_TIMEOUT_MS || 30000));
 const resultMaxAgeMs = Math.max(60_000, Number(process.env.EVENTLIVE_BROWSER_RESULT_MAX_AGE_MS || 12 * 60 * 60 * 1000));
+const failureCooldownMs = Math.max(6 * 60 * 60 * 1000, Number(process.env.EVENTLIVE_BROWSER_FAILURE_COOLDOWN_MS || 72 * 60 * 60 * 1000));
+const forceAllSources = ['1', 'true', 'yes', 'on'].includes(String(process.env.EVENTLIVE_SOURCE_FORCE_ALL || '').toLowerCase());
 const maxBodyPreview = Math.max(240, Number(process.env.EVENTLIVE_BROWSER_BODY_PREVIEW || 1800));
 const userAgent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36';
 
@@ -87,12 +91,16 @@ function probeResultTimestamp(source = {}) {
   return snapshotTimestamp(source.html_snapshot);
 }
 
+function isRecentProbeResult(source = {}, currentTime = Date.now()) {
+  const probedAt = probeResultTimestamp(source);
+  if (!probedAt) return false;
+  const maxAge = source.status === 'ok' ? resultMaxAgeMs : failureCooldownMs;
+  return currentTime - probedAt <= maxAge;
+}
+
 function mergeRecentProbeResults(previousReport, currentResults, currentTime = Date.now()) {
   const recentPrevious = (previousReport.sources || [])
-    .filter((source) => {
-      const probedAt = probeResultTimestamp(source);
-      return probedAt > 0 && currentTime - probedAt <= resultMaxAgeMs;
-    });
+    .filter((source) => isRecentProbeResult(source, currentTime));
   const merged = new Map(recentPrevious.map((source) => [source.id, source]));
   for (const source of currentResults) merged.set(source.id, source);
   return [...merged.values()].sort((a, b) => Number(a.priority || 999) - Number(b.priority || 999));
@@ -104,12 +112,20 @@ function chooseProbeSources(registry) {
   if (selectedIds.length) {
     return sources.filter((source) => selectedIds.includes(source.id));
   }
+  const runState = exists(sourceRunStatePath) ? readJson(sourceRunStatePath) : { sources: [] };
+  const dueSources = selectSourcesByCadence(sources, runState.sources || [], new Date(), { forceAll: forceAllSources })
+    .due.map((row) => row.source);
+  const previousReport = exists(reportJsonPath) ? readJson(reportJsonPath) : { sources: [] };
+  const recentlyProbedIds = new Set((previousReport.sources || [])
+    .filter((source) => isRecentProbeResult(source))
+    .map((source) => source.id));
+  const eligibleSources = dueSources.filter((source) => !recentlyProbedIds.has(source.id));
   if (probeScope === 'all') {
-    return sources
+    return eligibleSources
       .filter((source) => !isPolicyProtected(source))
       .slice(0, probeLimit);
   }
-  return rankProbeSources(sources, collectionProblems, probeLimit);
+  return rankProbeSources(eligibleSources, collectionProblems, probeLimit);
 }
 
 function isLikelyApiUrl(url = '') {
@@ -379,7 +395,7 @@ async function probeSource(browser, source) {
   const htmlPath = path.join(outputDir, `${baseName}.html`);
   const screenshotPath = path.join(outputDir, `${baseName}.png`);
   fs.writeFileSync(htmlPath, html, 'utf8');
-  await page.screenshot({ path: screenshotPath, fullPage: true }).catch(() => {});
+  if (!navigationError) await page.screenshot({ path: screenshotPath, fullPage: true, timeout: Math.min(15_000, timeoutMs) }).catch(() => {});
   await page.close().catch(() => {});
 
   const htmlSignals = analyzeHtmlSignals(html, pageData.text, pageData.links);
@@ -443,7 +459,8 @@ function renderMarkdown(report) {
     '',
     '## Summary',
     '',
-    `- Sources probed: ${report.totals.probed}`,
+    `- Sources probed this run: ${report.selection?.probed_this_run ?? report.totals.probed}`,
+    `- Fresh results available: ${report.selection?.fresh_results_available ?? report.totals.probed}`,
     `- Browser network API: ${report.totals.browser_network_api}`,
     `- Hydration payload: ${report.totals.browser_hydration_payload}`,
     `- Rendered HTML candidates: ${report.totals.rendered_html_candidates}`,
@@ -504,20 +521,22 @@ async function main() {
   ensureDir(outputDir);
   const registry = readJson(registryPath);
   const sources = chooseProbeSources(registry);
-  const { chromium } = await importPlaywright();
-  const browser = await chromium.launch({
-    headless: process.env.EVENTLIVE_BROWSER_HEADLESS === '0' ? false : true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
-  });
   const results = [];
-  try {
-    for (const [index, source] of sources.entries()) {
-      console.log(`[browser-probe] ${index + 1}/${sources.length} ${source.id}`);
-      results.push(await probeSource(browser, source));
-      writeCheckpoint(sources, results);
+  if (sources.length) {
+    const { chromium } = await importPlaywright();
+    const browser = await chromium.launch({
+      headless: process.env.EVENTLIVE_BROWSER_HEADLESS === '0' ? false : true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
+    try {
+      for (const [index, source] of sources.entries()) {
+        console.log(`[browser-probe] ${index + 1}/${sources.length} ${source.id}`);
+        results.push(await probeSource(browser, source));
+        writeCheckpoint(sources, results);
+      }
+    } finally {
+      await browser.close().catch(() => {});
     }
-  } finally {
-    await browser.close().catch(() => {});
   }
 
   const previousReport = exists(reportJsonPath) ? readJson(reportJsonPath) : {};
@@ -534,7 +553,8 @@ async function main() {
       probed_this_run: results.length,
       fresh_results_available: mergedResults.length,
       wait_ms: waitMs,
-      timeout_ms: timeoutMs
+      timeout_ms: timeoutMs,
+      failure_cooldown_hours: Math.round(failureCooldownMs / (60 * 60 * 1000))
     },
     methodology: 'Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.',
     totals: {
@@ -545,7 +565,8 @@ async function main() {
   writeJson(reportJsonPath, report);
   fs.writeFileSync(reportMdPath, renderMarkdown(report), 'utf8');
   console.log('# EventLive Browser Source Probe');
-  console.log(`- Sources probed: ${report.totals.probed}`);
+  console.log(`- Sources probed this run: ${report.selection.probed_this_run}`);
+  console.log(`- Fresh results available: ${report.selection.fresh_results_available}`);
   console.log(`- Browser network API: ${report.totals.browser_network_api}`);
   console.log(`- Hydration payload: ${report.totals.browser_hydration_payload}`);
   console.log(`- Rendered HTML candidates: ${report.totals.rendered_html_candidates}`);
@@ -566,6 +587,7 @@ export {
   extractEndpointCandidates,
   isLikelyApiUrl,
   mergeRecentProbeResults,
+  isRecentProbeResult,
   probeResultTimestamp,
   rankProbeSources,
   renderMarkdown,

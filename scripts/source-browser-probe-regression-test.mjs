@@ -3,11 +3,16 @@ import {
   classifyProbe,
   extractEndpointCandidates,
   isLikelyApiUrl,
+  isRecentProbeResult,
   mergeRecentProbeResults,
   rankProbeSources,
   renderMarkdown,
   shouldCaptureNetwork
 } from './source-browser-probe.mjs';
+
+const cooldownReference = new Date('2026-07-11T12:00:00.000Z').getTime();
+assert.equal(isRecentProbeResult({ status: 'ok', probed_at: '2026-07-10T23:00:00.000Z' }, cooldownReference), false, 'successful browser evidence must expire after 12 hours');
+assert.equal(isRecentProbeResult({ status: 'error', probed_at: '2026-07-09T12:00:00.000Z' }, cooldownReference), true, 'failed browser probes must remain on cooldown for 72 hours');
 
 const mergedProbeResults = mergeRecentProbeResults({
   generated_at: new Date().toISOString(),

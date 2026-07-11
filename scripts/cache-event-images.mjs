@@ -440,7 +440,15 @@ async function main() {
     reused,
     rejected_removed: rejectedRemoved,
     skipped_recent_failures: skippedRecentFailures,
-    failed
+    failed,
+    requires_rebuild: fetched.length > 0
+      || rejectedRemoved.length > 0
+      || failed.some((item) => item.skipped !== true),
+    rebuild_reasons: [
+      ...(fetched.length ? [`fetched:${fetched.length}`] : []),
+      ...(rejectedRemoved.length ? [`rejected-removed:${rejectedRemoved.length}`] : []),
+      ...(failed.some((item) => item.skipped !== true) ? [`new-failures:${failed.filter((item) => item.skipped !== true).length}`] : [])
+    ]
   };
   writeJson(reportJsonPath, report);
   fs.writeFileSync(reportMdPath, [
@@ -458,6 +466,8 @@ async function main() {
     `- failed: ${manifest.totals.failed}`,
     `- skipped_recent_failures: ${manifest.totals.skipped_recent_failures}`,
     `- remembered_failures: ${manifest.totals.remembered_failures}`,
+    `- requires_rebuild: ${report.requires_rebuild}`,
+    `- rebuild_reasons: ${report.rebuild_reasons.join(', ') || 'none'}`,
     `- concurrency: ${concurrency}`,
     '',
     '## Failed',

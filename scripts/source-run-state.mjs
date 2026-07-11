@@ -108,9 +108,11 @@ function renderMarkdown(state) {
     '',
     `- Sources: ${state.totals.sources}`,
     `- Attempted this run: ${state.totals.attempted}`,
+    `- Deferred by adaptive cadence: ${state.totals.deferred}`,
     `- Productive: ${state.totals.productive}`,
     `- Zero-yield: ${state.totals.zero_yield}`,
     `- Collector errors: ${state.totals.collector_errors}`,
+    `- Persistent collector errors: ${state.totals.persistent_collector_errors}`,
     `- Probe blocked: ${state.totals.probe_blocked}`,
     `- Auto-publish eligible source lanes: ${state.totals.auto_publish_eligible_sources}`,
     '',
@@ -143,6 +145,7 @@ function main() {
   const yieldById = new Map((yieldReport.sources || []).map((row) => [row.id, row]));
   const planById = new Map((plan.sources || []).map((row) => [row.id, row]));
   const probeById = new Map((probe.sources || []).map((row) => [row.id, row]));
+  const deferredById = new Map((collection.deferred_sources || []).map((row) => [row.id, row]));
 
   const sources = (registry.sources || [])
     .map((source) => {
@@ -153,6 +156,7 @@ function main() {
       const probeRow = probeById.get(source.id) || null;
       const previousRow = previousById.get(source.id) || {};
       const attemptedThisRun = Boolean(collectionRow);
+      const deferredRow = deferredById.get(source.id) || null;
       const status = attemptedThisRun
         ? runStatus({ ring, collection: collectionRow, probe: probeRow })
         : previousRow.status || runStatus({ ring, collection: collectionRow, probe: probeRow });
@@ -189,6 +193,11 @@ function main() {
         cadence: planRow.cadence || '',
         source_boundary: boundary,
         status,
+        attempted_this_run: attemptedThisRun,
+        deferred_this_run: Boolean(deferredRow),
+        cadence_reason: deferredRow?.reason || '',
+        cadence_interval_hours: Number(deferredRow?.interval_hours || 0),
+        next_due_at: deferredRow?.next_due_at || null,
         last_attempted_at: collectionRow ? collection.collected_at : previousRow.last_attempted_at || null,
         last_yield_checked_at: yieldRow ? yieldReport.generated_at : previousRow.last_yield_checked_at || null,
         last_probe_at: probeRow ? probe.generated_at : previousRow.last_probe_at || null,
@@ -212,11 +221,16 @@ function main() {
 
   const totals = {
     sources: sources.length,
-    attempted: sources.filter((source) => source.last_attempted_at).length,
-    productive: sources.filter((source) => source.status === 'productive').length,
-    zero_yield: sources.filter((source) => source.status === 'zero-yield').length,
-    collector_errors: sources.filter((source) => source.status === 'collector-error').length,
-    probe_blocked: sources.filter((source) => source.status === 'probe-blocked').length,
+    attempted: sources.filter((source) => source.attempted_this_run).length,
+    deferred: sources.filter((source) => source.deferred_this_run).length,
+    productive: sources.filter((source) => source.attempted_this_run && source.status === 'productive').length,
+    zero_yield: sources.filter((source) => source.attempted_this_run && source.status === 'zero-yield').length,
+    collector_errors: sources.filter((source) => source.attempted_this_run && source.status === 'collector-error').length,
+    probe_blocked: sources.filter((source) => source.attempted_this_run && source.status === 'probe-blocked').length,
+    persistent_productive: sources.filter((source) => source.status === 'productive').length,
+    persistent_zero_yield: sources.filter((source) => source.status === 'zero-yield').length,
+    persistent_collector_errors: sources.filter((source) => source.status === 'collector-error').length,
+    persistent_probe_blocked: sources.filter((source) => source.status === 'probe-blocked').length,
     discovery_only: sources.filter((source) => source.ring === 'discovery-only').length,
     partnership: sources.filter((source) => source.ring === 'partnership').length,
     auto_publish_eligible_sources: sources.filter((source) => source.auto_publish_eligible_by_source).length
@@ -245,6 +259,7 @@ function main() {
   console.log('# EventLive Source Run State');
   console.log(`- Sources: ${totals.sources}`);
   console.log(`- Attempted: ${totals.attempted}`);
+  console.log(`- Deferred: ${totals.deferred}`);
   console.log(`- Productive: ${totals.productive}`);
   console.log(`- Zero-yield: ${totals.zero_yield}`);
   console.log(`- Auto-publish eligible source lanes: ${totals.auto_publish_eligible_sources}`);

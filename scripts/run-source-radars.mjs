@@ -8,6 +8,8 @@ const generatedAt = new Date().toISOString();
 const strict = String(process.env.EVENTLIVE_SOURCE_RADARS_STRICT || '').toLowerCase() === 'true';
 const collectEndedEvents = ['1', 'true', 'yes', 'on']
   .includes(String(process.env.EVENTLIVE_SOURCE_COLLECT_ENDED_EVENTS || '').toLowerCase());
+const includeDiscoveryRadars = ['1', 'true', 'yes', 'on']
+  .includes(String(process.env.EVENTLIVE_INCLUDE_DISCOVERY_RADARS || '').toLowerCase());
 const timeScope = collectEndedEvents ? 'current-upcoming-and-ended' : 'current-and-upcoming-only';
 const jsonPath = path.join(reportsDir, 'source-radars-report.json');
 const mdPath = path.join(reportsDir, 'source-radars-report.md');
@@ -88,6 +90,8 @@ function renderMarkdown(report) {
     `- Failed: ${report.totals.failed}`,
     `- Strict: ${report.strict}`,
     `- Time scope: ${report.time_scope}`,
+    `- Discovery radars enabled: ${report.discovery_radars_enabled}`,
+    `- Skipped by policy: ${report.skipped_radars.length}`,
     '',
     '## Runs',
     '',
@@ -104,6 +108,7 @@ const configuredRadars = [
     name: 'Platinumlist Saudi City Radar',
     source_id: 'platinumlist-saudi-city-network',
     policy: 'candidate-only; city coverage evidence; no auto-publish',
+    discovery_only: true,
     command: process.execPath,
     args: ['scripts/platinumlist-platform-radar.mjs'],
     timeout_ms: Number(process.env.EVENTLIVE_PLATINUMLIST_PLATFORM_JOB_TIMEOUT_MS || 240000),
@@ -120,6 +125,7 @@ const configuredRadars = [
     name: 'Platinumlist City Detail Radar',
     source_id: 'platinumlist-saudi-city-network',
     policy: 'candidate-only; secondary official verification required; no auto-publish',
+    discovery_only: true,
     command: process.execPath,
     args: ['scripts/platinumlist-detail-radar.mjs'],
     timeout_ms: Number(process.env.EVENTLIVE_PLATINUMLIST_DETAIL_JOB_TIMEOUT_MS || 240000),
@@ -181,7 +187,11 @@ const configuredRadars = [
   }
 ];
 
-const radars = configuredRadars.filter((radar) => collectEndedEvents || !radar.historical_only);
+const skippedRadars = configuredRadars.filter((radar) => (
+  (!collectEndedEvents && radar.historical_only)
+  || (!includeDiscoveryRadars && radar.discovery_only)
+));
+const radars = configuredRadars.filter((radar) => !skippedRadars.includes(radar));
 
 const results = radars.map(runRadar);
 const failed = results.filter((radar) => radar.status !== 'ok');
@@ -191,6 +201,8 @@ const report = {
   strict,
   time_scope: timeScope,
   ended_collection_enabled: collectEndedEvents,
+  discovery_radars_enabled: includeDiscoveryRadars,
+  skipped_radars: skippedRadars.map((radar) => ({ id: radar.id, reason: radar.historical_only ? 'historical-disabled' : 'manual-discovery-only' })),
   policy: {
     allowed_use: 'scheduled evidence refresh, parser validation, official-source lead discovery',
     disallowed_use: 'direct catalog publication without current official confirmation'
@@ -208,6 +220,8 @@ fs.writeFileSync(mdPath, renderMarkdown(report), 'utf8');
 
 console.log('# EventLive Source Radars');
 console.log(`- Time scope: ${report.time_scope}`);
+console.log(`- Discovery radars enabled: ${report.discovery_radars_enabled}`);
+console.log(`- Skipped by policy: ${report.skipped_radars.length}`);
 console.log(`- OK: ${report.totals.ok}`);
 console.log(`- Failed: ${report.totals.failed}`);
 console.log(`- Report: ${rel(mdPath)}`);

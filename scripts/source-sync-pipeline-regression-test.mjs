@@ -19,7 +19,7 @@ function lastStepIndex(name) {
 for (const name of [
   'sources:growth:baseline',
   'sources:collect',
-  'sources:radars',
+  'sources:diagnostics:cadenced',
   'sources:ops',
   'sources:official-evidence',
   'sources:verify',
@@ -33,6 +33,7 @@ for (const name of [
   'build',
   'sources:growth',
   'images:cache',
+  'sources:build:if-images-changed',
   'sources:health-gate'
 ]) {
   assert.notEqual(stepIndex(name), -1, `sources:sync must include ${name}`);
@@ -42,9 +43,11 @@ assert.ok(stepIndex('sources:collect') < stepIndex('sources:auto-publish'), 'sou
 assert.equal(stepIndex('sources:growth:baseline'), 0, 'growth baseline must be captured before any network collection mutates the run reports');
 assert.ok(stepIndex('sources:collect') < stepIndex('sources:official-evidence'), 'official evidence verification must run after fresh discovery collection');
 assert.ok(stepIndex('sources:official-evidence') < stepIndex('sources:verify'), 'official evidence verification must run before secondary verification and auto-publish');
-assert.ok(stepIndex('sources:probe') < stepIndex('sources:radars'), 'source radars must run after the general source probe');
-assert.ok(stepIndex('sources:radars') < stepIndex('sources:plan'), 'source plan must include the latest radar evidence');
-assert.ok(stepIndex('sources:radars') < stepIndex('sources:collect'), 'source radars must refresh evidence before collection/ops reporting');
+assert.equal(stepIndex('sources:probe'), -1, 'the six-hour critical path must not run the full deep probe directly');
+assert.equal(stepIndex('sources:radars'), -1, 'the six-hour critical path must not run heavy radars directly');
+assert.equal(stepIndex('sources:yield'), -1, 'the six-hour critical path must not duplicate full source extraction for diagnostics');
+assert.ok(stepIndex('sources:diagnostics:cadenced') < stepIndex('sources:plan'), 'cadenced diagnostics must refresh evidence before planning when due');
+assert.ok(stepIndex('sources:diagnostics:cadenced') < stepIndex('sources:collect'), 'cadenced diagnostics must be decided before collection');
 assert.ok(stepIndex('sources:collect') < stepIndex('sources:ops'), 'source ops must inspect collected candidates before secondary verification');
 assert.ok(stepIndex('sources:ops') < stepIndex('sources:verify'), 'secondary verification must use the latest source ops matching report');
 assert.ok(stepIndex('sources:verify') < stepIndex('sources:auto-publish'), 'secondary verification must run before auto-publish');
@@ -59,9 +62,10 @@ assert.ok(stepIndex('validate') < stepIndex('images:cache'), 'validated data mus
 assert.ok(stepIndex('images:cache') > stepIndex('build'), 'image cache must run after a build creates dist/events.json');
 assert.ok(stepIndex('sources:growth') > stepIndex('build'), 'growth ledger must inspect the built public catalog');
 assert.ok(stepIndex('sources:growth') < stepIndex('images:cache'), 'growth ledger must persist the pre-cache catalog result before the final build');
-assert.ok(stepIndex('images:cache') < steps.findLastIndex((step) => step === 'npm run build'), 'a final build must run after image caching');
+assert.ok(stepIndex('images:cache') < stepIndex('sources:build:if-images-changed'), 'image changes must be evaluated after image caching');
+assert.ok(stepIndex('sources:build:if-images-changed') < stepIndex('sources:health-gate'), 'source health must run after the conditional final build decision');
 assert.ok(stepIndex('sources:growth') < stepIndex('sources:health-gate'), 'source health gate must inspect the current growth result');
-assert.ok(steps.findLastIndex((step) => step === 'npm run build') < stepIndex('sources:health-gate'), 'source health gate must inspect the final built site');
+assert.equal(steps.filter((step) => step === 'npm run build').length, 1, 'the critical path must not rebuild unconditionally after image caching');
 assert.ok(lastStepIndex('sources:state') < lastStepIndex('sources:ops'), 'final source ops report must be regenerated after final source run-state');
 
 const details = (scripts['sources:details'] || '').split('&&').map((step) => step.trim());

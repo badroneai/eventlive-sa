@@ -176,6 +176,10 @@ assert.equal(blocked.status, 'probe-blocked');
 assert.equal(blocked.error_streak, 1);
 assert.equal(blocked.next_action, 'Keep the protected source in the partnership lane.');
 assert.match(seasonal.next_action, /Zero-yield for 3 runs/);
+assert.equal(state.totals.attempted, 3, 'current-run attempted total must not count historical attempts');
+assert.equal(state.totals.collector_errors, 1, 'current-run errors must be separated from persistent source state');
+assert.equal(state.totals.persistent_collector_errors, 1, 'persistent source error state must remain observable');
+assert.equal(blocked.attempted_this_run, false, 'unattempted historical rows must be marked explicitly');
 assert.ok(fs.existsSync(reportMdPath));
 
 runStateScript();

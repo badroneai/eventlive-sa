@@ -139,14 +139,30 @@ function freshnessLabel(isoValue) {
   return 'stale';
 }
 
-function sourceHealth(source, collectionBySource, candidates) {
+function sourceHealth(source, collectionBySource, candidates, deferredBySource = new Map()) {
   const collection = collectionBySource.get(source.id);
+  const deferred = deferredBySource.get(source.id);
   const ownedCandidates = candidates.filter((candidate) => candidate.source_label === source.name);
   const streaks = {
-    error_streak: Number(collection?.error_streak || 0),
-    zero_yield_streak: Number(collection?.zero_yield_streak || 0),
-    last_attempted_at: collection?.last_attempted_at || null
+    error_streak: Number(collection?.error_streak || deferred?.error_streak || 0),
+    zero_yield_streak: Number(collection?.zero_yield_streak || deferred?.zero_yield_streak || 0),
+    last_attempted_at: collection?.last_attempted_at || deferred?.last_attempted_at || null
   };
+  if (!collection && deferred) {
+    return {
+      id: source.id,
+      name: source.name,
+      priority: source.priority,
+      status: 'deferred',
+      historical_status: deferred.status || 'not-attempted',
+      cadence_reason: deferred.reason || 'adaptive-cadence',
+      next_due_at: deferred.next_due_at || null,
+      ...streaks,
+      extracted: 0,
+      candidates: ownedCandidates.length,
+      next_action: `مؤجل حتى ${deferred.next_due_at || 'الدورة المستحقة التالية'} وفق الجدولة التكيفية.`
+    };
+  }
   if (!collection) {
     return {
       id: source.id,
@@ -199,8 +215,9 @@ function sourceHealth(source, collectionBySource, candidates) {
 
 function runStateCollectionRows(runState) {
   const rows = Object.values(runState?.sources || {});
+  const hasCurrentRunMarkers = rows.some((source) => Object.hasOwn(source || {}, 'attempted_this_run'));
   return rows
-    .filter((source) => source?.id && source.last_attempted_at)
+    .filter((source) => source?.id && source.last_attempted_at && (!hasCurrentRunMarkers || source.attempted_this_run === true))
     .map((source) => {
       const failed = source.last_collection_status && source.last_collection_status !== 'ok';
       const zeroYield = Number(source.last_extracted || 0) === 0;
@@ -224,6 +241,7 @@ function publicHealthStatus(status) {
   if (status === 'healthy') return 'productive';
   if (status === 'collection-error') return 'collector-error';
   if (status === 'zero-yield') return 'zero-yield';
+  if (status === 'deferred') return 'cadence-deferred';
   return status;
 }
 
@@ -231,14 +249,23 @@ function writePublicSourceHealth(report, promotionReport, collectionReport) {
   const sources = report.sources.health.map((source) => ({
     ...source,
     status: publicHealthStatus(source.status),
-    last_collection_status: source.status === 'collection-error' ? 'error' : source.status === 'not-collected' ? '' : 'ok',
+    last_collection_status: source.status === 'collection-error'
+      ? 'error'
+      : ['not-collected', 'deferred'].includes(source.status)
+        ? ''
+        : 'ok',
     last_extracted: source.extracted,
     known_candidates: source.candidates
   }));
   const totals = {
     sources: report.sources.total,
-    active_collectors: report.sources.attempted,
+    active_collectors: report.sources.scheduled,
+    due_collectors: report.sources.due,
+    attempted_this_run: report.sources.attempted,
+    cadence_deferred: report.sources.deferred,
     collection_coverage_pct: report.sources.collection_coverage_pct,
+    registry_collection_coverage_pct: report.sources.registry_collection_coverage_pct,
+    scheduled_runnable_coverage_pct: report.sources.scheduled_runnable_coverage_pct,
     productive: sources.filter((source) => source.status === 'productive').length,
     open_idle: sources.filter((source) => source.status === 'zero-yield').length,
     collector_errors: sources.filter((source) => source.status === 'collector-error').length,
@@ -452,8 +479,13 @@ function writeMarkdown(report) {
     '## Executive Summary',
     '',
     `- Sources in registry: ${report.sources.total}`,
+    `- Runnable collector lanes: ${report.sources.runnable}`,
+    `- Sources due now: ${report.sources.due}`,
     `- Sources attempted in latest collection: ${report.sources.attempted}`,
-    `- Collection coverage: ${report.sources.collection_coverage_pct}%`,
+    `- Sources deferred by cadence: ${report.sources.deferred}`,
+    `- Due-source coverage: ${report.sources.collection_coverage_pct}%`,
+    `- Scheduled runnable coverage: ${report.sources.scheduled_runnable_coverage_pct}%`,
+    `- Whole-registry attempted this run: ${report.sources.registry_collection_coverage_pct}%`,
     `- Healthy sources: ${report.sources.healthy}`,
     `- Zero-yield sources: ${report.sources.zero_yield}`,
     `- High-priority unattempted sources: ${report.sources.unattempted_high_priority}`,
@@ -505,11 +537,18 @@ function main() {
   const candidates = Array.isArray(candidatesEnvelope.candidates) ? candidatesEnvelope.candidates : [];
   const catalogEvents = Array.isArray(catalogEnvelope.events) ? catalogEnvelope.events : [];
   const collectionRows = Array.isArray(collectionReport.sources) ? collectionReport.sources : [];
+  const deferredRows = Array.isArray(collectionReport.deferred_sources) ? collectionReport.deferred_sources : [];
+  const adaptiveCadenceEnabled = collectionReport.adaptive_cadence_enabled === true;
   const runStateRows = runStateCollectionRows(runState);
-  const sourceRows = runStateRows.length > collectionRows.length ? runStateRows : collectionRows;
+  const sourceRows = adaptiveCadenceEnabled
+    ? collectionRows
+    : runStateRows.length > collectionRows.length ? runStateRows : collectionRows;
   const collectionBySource = new Map(sourceRows.map((source) => [source.id, source]));
-  const collectionBasis = runStateRows.length > collectionRows.length ? 'source_run_state' : 'source_collection_report';
-  const health = sources.map((source) => sourceHealth(source, collectionBySource, candidates))
+  const deferredBySource = new Map(deferredRows.map((source) => [source.id, source]));
+  const collectionBasis = adaptiveCadenceEnabled
+    ? 'source_collection_report_adaptive'
+    : runStateRows.length > collectionRows.length ? 'source_run_state' : 'source_collection_report';
+  const health = sources.map((source) => sourceHealth(source, collectionBySource, candidates, deferredBySource))
     .sort((a, b) => a.priority - b.priority);
   const queue = buildCandidateQueue(candidates, catalogEvents);
   const actionableQueue = queue.filter((candidate) => candidate.is_actionable);
@@ -550,10 +589,27 @@ function main() {
     sources: {
       total: sources.length,
       attempted: collectionBySource.size,
-      collection_coverage_pct: pct(collectionBySource.size, sources.length),
+      due: adaptiveCadenceEnabled
+        ? Number(collectionReport.sources_due ?? collectionBySource.size)
+        : collectionBySource.size,
+      deferred: adaptiveCadenceEnabled ? deferredBySource.size : 0,
+      scheduled: adaptiveCadenceEnabled
+        ? collectionBySource.size + deferredBySource.size
+        : collectionBySource.size,
+      runnable: adaptiveCadenceEnabled
+        ? Number(collectionReport.sources_runnable || collectionBySource.size + deferredBySource.size)
+        : collectionBySource.size,
+      collection_coverage_pct: adaptiveCadenceEnabled
+        ? pct(collectionBySource.size, Number(collectionReport.sources_due || collectionBySource.size))
+        : pct(collectionBySource.size, sources.length),
+      registry_collection_coverage_pct: pct(collectionBySource.size, sources.length),
+      scheduled_runnable_coverage_pct: adaptiveCadenceEnabled
+        ? pct(collectionBySource.size + deferredBySource.size, Number(collectionReport.sources_runnable || collectionBySource.size + deferredBySource.size))
+        : pct(collectionBySource.size, collectionBySource.size),
       healthy: health.filter((source) => source.status === 'healthy').length,
       zero_yield: health.filter((source) => source.status === 'zero-yield').length,
       errors: health.filter((source) => source.status === 'collection-error').length,
+      cadence_deferred: health.filter((source) => source.status === 'deferred').length,
       not_collected: health.filter((source) => source.status === 'not-collected').length,
       unattempted_high_priority: health.filter((source) => source.status === 'not-collected' && source.priority <= 7).length,
       health

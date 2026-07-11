@@ -23,6 +23,14 @@ jobs:
     env:
       EVENTLIVE_PUBLIC_BASE_URL: https://eventme.live/
       EVENTLIVE_SOURCE_COLLECT_ENDED_EVENTS: "false"
+      EVENTLIVE_SOURCE_ADAPTIVE_CADENCE: "true"
+      EVENTLIVE_SOURCE_DIAGNOSTICS_INTERVAL_HOURS: "24"
+      EVENTLIVE_INCLUDE_DISCOVERY_RADARS: "false"
+      EVENTLIVE_SOURCE_FETCH_TIMEOUT_MS: "12000"
+      EVENTLIVE_SOURCE_FETCH_ATTEMPTS: "2"
+      EVENTLIVE_BROWSER_TIMEOUT_MS: "30000"
+      EVENTLIVE_LIVE_BROWSER_TIMEOUT_MS: "30000"
+      EVENTLIVE_BROWSER_FAILURE_COOLDOWN_MS: "259200000"
       EVENTLIVE_TRUSTED_SOURCE_LIMIT: "200"
       EVENTLIVE_MAX_SOURCE_COLLECTOR_ERRORS: "12"
       EVENTLIVE_CRITICAL_SOURCE_PRIORITY_MAX: "10"
@@ -41,6 +49,14 @@ jobs:
       - name: Install
         run: npm ci || npm install
 
+      - name: Restore event image cache
+        uses: actions/cache@v4
+        with:
+          path: dist/assets/event-images
+          key: eventlive-event-images-${{ runner.os }}-${{ hashFiles('data/event_image_cache_manifest.json') }}
+          restore-keys: |
+            eventlive-event-images-${{ runner.os }}-
+
       - name: Install Playwright browser
         run: npx playwright install chromium
 
@@ -52,6 +68,7 @@ jobs:
           npm run test:source-health-gate
           npm run test:source-run-state
           npm run test:source-future-only
+          npm run test:source-cadence
           npm run test:source-sync-workflow
 
       - name: Collect trusted sources and publish catalog
@@ -72,6 +89,7 @@ jobs:
           npm run test:source-browser-fallback
           npm run test:source-limit-policy
           npm run test:source-future-only
+          npm run test:source-cadence
           npm run test:source-selection-contract
           npm run test:scega-events-extractor
           npm run test:scega-canonical-alias

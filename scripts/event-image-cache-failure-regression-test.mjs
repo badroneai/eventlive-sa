@@ -63,6 +63,8 @@ try {
   assert.equal(failure?.failure_kind, 'source-returned-html', 'HTML responses must be classified');
   assert.match(failure.retry_after || '', /^\d{4}-\d{2}-\d{2}T/, 'failure must carry retry_after');
   assert.equal(failure.attempts, 1, 'first failed fetch must record one attempt');
+  const firstReport = JSON.parse(fs.readFileSync(reportJsonFile, 'utf8'));
+  assert.equal(firstReport.requires_rebuild, true, 'a newly recorded image failure must refresh operational output');
 
   await execFileAsync(process.execPath, ['scripts/cache-event-images.mjs'], {
     cwd: root,
@@ -75,6 +77,8 @@ try {
   assert.equal(secondManifest.totals.failed, 1, 'second run still reports the skipped target as failed');
   assert.equal(secondManifest.totals.skipped_recent_failures, 1, 'second run must skip recent non-image failures');
   assert.equal(secondFailure.attempts, 1, 'skipped failures must not increment attempts before retry_after');
+  const secondReport = JSON.parse(fs.readFileSync(reportJsonFile, 'utf8'));
+  assert.equal(secondReport.requires_rebuild, false, 'a remembered skipped failure must not trigger a redundant public rebuild');
 } finally {
   await new Promise((resolve) => server.close(resolve));
   fs.rmSync(workspaceDir, { recursive: true, force: true });

@@ -3219,6 +3219,7 @@ function writeOwnerStatusPage(events) {
   const secondary = readReport('reports/source-secondary-verification-report.json', {});
   const sourceOps = readReport('reports/source-ops-report.json', {});
   const sourceCollection = readReport('reports/source-collection-report.json', {});
+  const sourceDiagnostics = readReport('reports/source-diagnostics-cadence-report.json', {});
   const sourceGrowth = readReport('reports/source-growth-report.json', {});
   const growthCurrent = sourceGrowth.current || {};
   const blockedReasons = (autoPublish.blocked || []).reduce((totals, candidate) => {
@@ -3252,9 +3253,15 @@ function writeOwnerStatusPage(events) {
       last_run_at: runState.generated_at || sourceOps.generated_at || '',
       registered_sources: runState.totals?.sources || sourceOps.sources?.length || 0,
       attempted_sources: runState.totals?.attempted || sourceOps.collection?.attempted_sources || 0,
+      due_sources: Number(sourceCollection.sources_due || sourceCollection.sources_attempted || 0),
+      deferred_sources: Number(sourceCollection.sources_deferred || runState.totals?.deferred || 0),
+      runnable_sources: Number(sourceCollection.sources_runnable || 0),
       productive_sources: runState.totals?.productive || 0,
       collector_errors: runState.totals?.collector_errors || 0,
+      persistent_collector_errors: runState.totals?.persistent_collector_errors || 0,
       zero_yield: runState.totals?.zero_yield || 0,
+      diagnostics_status: sourceDiagnostics.status || 'unavailable',
+      diagnostics_next_due_at: sourceDiagnostics.next_due_at || '',
       candidates_seen: autoPublish.totals?.candidates_seen || sourceOps.queue?.total || 0,
       published_new: autoPublish.totals?.published || 0,
       linked_existing: autoPublish.totals?.linked_existing || 0,
@@ -3308,7 +3315,7 @@ ${header('./')}
   <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span>للمالك فقط</span><h1>حالة التشغيل والقياس</h1><p class="lead">افتح هذه الصفحة بعد النشر لمعرفة آخر جلب دوري، كم نما الكتالوج، كم بقي محجوبًا، وهل القياس مزروع. أرقام الزوار التفصيلية لا تظهر إلا بعد تفعيل لوحة Plausible للدومين بحساب المالك.</p><div class="signal-strip"><div class="signal"><span>فعاليات منشورة</span><b>${status.catalog.public_events}</b></div><div class="signal"><span>التغير آخر دورة</span><b>${escapeHtml(publicDeltaLabel)}</b></div><div class="signal"><span>مرشحون جدد</span><b>${status.source_sync.new_active_candidates}</b></div><div class="signal"><span>جداول حية</span><b>${status.catalog.live_ready}</b></div></div></div></section>
   <section class="section"><div class="wrap grid">
     <article class="activation-card"><h2>الزيارات والتحليلات</h2><p>حالة الزر: <strong>${escapeHtml(status.analytics.dashboard_status)}</strong></p><p>المزود: <strong>${escapeHtml(status.analytics.provider)}</strong></p><p>الدومين: <strong>${escapeHtml(status.analytics.domain)}</strong></p><p>الخصوصية: بدون كوكيز وبدون بيانات شخصية حسب إعدادات التقرير.</p><p><strong>${escapeHtml(analyticsStatusCopy)}</strong></p><div class="activation-actions"><a class="cta" href="${escapeHtml(analyticsDashboardHref)}" target="_blank" rel="noopener">${escapeHtml(analyticsDashboardLabel)}</a><a class="cta" href="./owner-status.json">بيانات الصفحة JSON</a></div></article>
-    <article class="activation-card"><h2>آخر جلب دوري</h2><p>آخر تقرير: <strong>${escapeHtml(status.source_sync.last_run_at || 'غير متاح')}</strong></p><p>مصادر منتجة: <strong>${status.source_sync.productive_sources}</strong> · أخطاء: <strong>${status.source_sync.collector_errors}</strong> · صفرية: <strong>${status.source_sync.zero_yield}</strong></p><p>مرشحون: <strong>${status.source_sync.candidates_seen}</strong> · منشور جديد: <strong>${status.source_sync.published_new}</strong> · مربوط بموجود: <strong>${status.source_sync.linked_existing}</strong></p><div class="activation-actions"><a class="cta" href="./source-health.html">صحة المصادر</a><a class="cta" href="./source-coverage-gaps.html">فجوات التغطية</a></div></article>
+    <article class="activation-card"><h2>آخر جلب دوري</h2><p>آخر تقرير: <strong>${escapeHtml(status.source_sync.last_run_at || 'غير متاح')}</strong></p><p>مستحقة الآن: <strong>${status.source_sync.due_sources}</strong> · نُفذت: <strong>${status.source_sync.attempted_sources}</strong> · مؤجلة بجدولة تكيفية: <strong>${status.source_sync.deferred_sources}</strong></p><p>مصادر منتجة: <strong>${status.source_sync.productive_sources}</strong> · أخطاء هذه الدورة: <strong>${status.source_sync.collector_errors}</strong> · أخطاء متراكمة تحت المراقبة: <strong>${status.source_sync.persistent_collector_errors}</strong></p><p>الفحص العميق: <strong>${escapeHtml(status.source_sync.diagnostics_status)}</strong> · موعده التالي: <strong>${escapeHtml(status.source_sync.diagnostics_next_due_at || 'غير متاح')}</strong></p><p>مرشحون: <strong>${status.source_sync.candidates_seen}</strong> · منشور جديد: <strong>${status.source_sync.published_new}</strong> · مربوط بموجود: <strong>${status.source_sync.linked_existing}</strong></p><div class="activation-actions"><a class="cta" href="./source-health.html">صحة المصادر</a><a class="cta" href="./source-coverage-gaps.html">فجوات التغطية</a></div></article>
     <article class="activation-card"><h2>اتجاه نمو الكتالوج</h2><p>حالة الدورة: <strong>${escapeHtml(status.source_sync.growth_status)}</strong></p><p>التغير العام: <strong>${escapeHtml(publicDeltaLabel)}</strong> · مرشحون جدد: <strong>${status.source_sync.new_active_candidates}</strong> · منتهية جديدة: <strong>${status.source_sync.new_ended_events}</strong></p><p>دورات متتالية بلا نمو: <strong>${status.source_sync.no_growth_streak}</strong> · فقد ناتج منشور: <strong>${status.source_sync.lost_published_output ? 'نعم' : 'لا'}</strong></p></article>
   </div></section>
   <section class="section"><div class="wrap"><h2>ماذا أراقب؟</h2>${operationalTable(['المؤشر', 'القيمة', 'متى أقلق؟'], [
@@ -3317,6 +3324,7 @@ ${header('./')}
     ['no_growth_streak', status.source_sync.no_growth_streak, 'أربع دورات متتالية بلا نمو تعني أن الجلب يحتاج تدخلاً حتى لو نجح تقنيًا.'],
     ['lost_published_output', status.source_sync.lost_published_output ? 'نعم' : 'لا', 'يجب أن تبقى لا دائمًا؛ نعم توقف بوابة النشر.'],
     ['secondary_promoted', status.source_sync.secondary_promoted, 'إذا كان صفرًا دائمًا، فالمطابقة الرسمية لا تعمل أو لا توجد أدلة كافية.'],
+    ['cadence_deferred', status.source_sync.deferred_sources, 'هذا تأجيل مقصود للمصادر الصفرية أو المتعثرة، وليس حذفًا لها.'],
     ['collector_errors', status.source_sync.collector_errors, 'إذا زادت الأخطاء، نصلح collectors أو نعيد تصنيف المصدر.'],
     ['tracked_events', status.analytics.tracked_events.length, 'إذا صارت صفرًا، فالقياس غير مزروع في الصفحات العامة.']
   ], (row) => `<tr><th>${escapeHtml(row[0])}</th><td>${escapeHtml(row[1])}</td><td>${escapeHtml(row[2])}</td></tr>`)}</div></section>

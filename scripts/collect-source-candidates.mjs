@@ -9,6 +9,7 @@ import { parseFlexibleDateRange } from './date-parse-utils.mjs';
 import { normalizeSaudiCity as normalizeCanonicalSaudiCity } from './city-utils.mjs';
 import { ocrRemotePoster } from './poster-ocr-utils.mjs';
 import { ensureDir, exists, readJson, rel, root, writeJson } from './program-lifecycle-utils.mjs';
+import { selectSourcesByCadence } from './source-cadence-utils.mjs';
 import { parseVisitSaudiSummerPdfXml, visitSaudiPdfBufferToXml } from './visit-saudi-summer-pdf-utils.mjs';
 
 const sourceRegistryPath = process.env.EVENTLIVE_SOURCE_REGISTRY_FILE
@@ -17,6 +18,9 @@ const sourceRegistryPath = process.env.EVENTLIVE_SOURCE_REGISTRY_FILE
 const sourceCandidatesPath = process.env.EVENTLIVE_SOURCE_CANDIDATES_FILE
   ? path.join(root, process.env.EVENTLIVE_SOURCE_CANDIDATES_FILE)
   : path.join(root, 'data', 'source_candidates.json');
+const sourceRunStatePath = process.env.EVENTLIVE_SOURCE_RUN_STATE_FILE
+  ? path.join(root, process.env.EVENTLIVE_SOURCE_RUN_STATE_FILE)
+  : path.join(root, 'data', 'source_run_state.json');
 const sourceEndedEventsPath = process.env.EVENTLIVE_SOURCE_ENDED_EVENTS_FILE || process.env.EVENTLIVE_SOURCE_ARCHIVE_FILE
   ? path.join(root, process.env.EVENTLIVE_SOURCE_ENDED_EVENTS_FILE || process.env.EVENTLIVE_SOURCE_ARCHIVE_FILE)
   : path.join(root, 'data', 'source_ended_events.json');
@@ -59,11 +63,20 @@ const browserFallbackMaxAgeMs = Math.max(
   60_000,
   Number(process.env.EVENTLIVE_BROWSER_FALLBACK_MAX_AGE_MS || 12 * 60 * 60 * 1000)
 );
+const browserFailureCooldownMs = Math.max(
+  6 * 60 * 60 * 1000,
+  Number(process.env.EVENTLIVE_BROWSER_FAILURE_COOLDOWN_MS || 72 * 60 * 60 * 1000)
+);
+const liveBrowserTimeoutMs = Math.max(10_000, Number(process.env.EVENTLIVE_LIVE_BROWSER_TIMEOUT_MS || 30_000));
 const lastKnownGoodMaxAgeMs = Math.max(
   60_000,
   Number(process.env.EVENTLIVE_LAST_GOOD_SNAPSHOT_MAX_AGE_MS || 7 * 24 * 60 * 60 * 1000)
 );
 const dryRun = ['1', 'true', 'yes'].includes(String(process.env.EVENTLIVE_SOURCE_DRY_RUN || '').toLowerCase());
+const adaptiveCadenceEnabled = !['0', 'false', 'no', 'off']
+  .includes(String(process.env.EVENTLIVE_SOURCE_ADAPTIVE_CADENCE ?? 'true').toLowerCase());
+const forceAllSources = ['1', 'true', 'yes', 'on']
+  .includes(String(process.env.EVENTLIVE_SOURCE_FORCE_ALL || '').toLowerCase());
 let activeSnapshotStamp = collectedAt.replace(/[:.]/g, '-');
 const sourceFetchModes = new Map();
 const sourceEvidenceSnapshots = new Map();
@@ -314,6 +327,21 @@ function browserProbeEvidenceTimestamp(probe = {}) {
   const explicit = new Date(probe.probed_at || 0).getTime();
   if (Number.isFinite(explicit) && explicit > 0) return explicit;
   return browserProbeSnapshotTimestamp(probe.html_snapshot);
+}
+
+function recentBrowserProbeFailure(source, currentTime = Date.now()) {
+  if (!canUseBrowserHtmlFallback(source) || !exists(browserProbeReportPath)) return false;
+  try {
+    const report = readJson(browserProbeReportPath);
+    const probe = (report.sources || []).find((item) => item.id === source.id);
+    if (!probe) return false;
+    const failed = probe.status === 'error' || /blocked|protected|empty-or-shell/i.test(probe.classification || '');
+    if (!failed) return false;
+    const probedAtMs = browserProbeEvidenceTimestamp(probe);
+    return probedAtMs > 0 && currentTime - probedAtMs <= browserFailureCooldownMs;
+  } catch {
+    return false;
+  }
 }
 
 function freshBrowserProbeHtml(source, currentTime = Date.now()) {
@@ -5606,7 +5634,9 @@ async function loadSourceExtraction(source, extractor, options = {}) {
     }
   }
 
-  const liveBrowserEnabled = !['1', 'true', 'yes'].includes(String(process.env.EVENTLIVE_DISABLE_LIVE_BROWSER_RECOVERY || '').toLowerCase());
+  const browserRecoveryCoolingDown = recentBrowserProbeFailure(source);
+  const liveBrowserEnabled = !['1', 'true', 'yes'].includes(String(process.env.EVENTLIVE_DISABLE_LIVE_BROWSER_RECOVERY || '').toLowerCase())
+    && !browserRecoveryCoolingDown;
   if (liveBrowserEnabled && canUseBrowserHtmlFallback(source)) {
     try {
       const payload = await fetchBrowserRenderedHtml(source);
@@ -5621,6 +5651,8 @@ async function loadSourceExtraction(source, extractor, options = {}) {
     } catch (error) {
       fallbackError = fallbackError || error;
     }
+  } else if (browserRecoveryCoolingDown && !fallbackError) {
+    fallbackError = new Error('live browser recovery deferred by recent failed probe cooldown');
   }
 
   if (primaryResult) return primaryResult;
@@ -5637,8 +5669,8 @@ async function fetchBrowserRenderedHtml(source, waitMs = 4500) {
       userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
       viewport: { width: 1280, height: 900 }
     });
-    await page.goto(source.collector_url || source.url, { waitUntil: 'domcontentloaded', timeout: 60000 });
-    await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
+    await page.goto(source.collector_url || source.url, { waitUntil: 'domcontentloaded', timeout: liveBrowserTimeoutMs });
+    await page.waitForLoadState('networkidle', { timeout: Math.min(10_000, liveBrowserTimeoutMs) }).catch(() => {});
     await page.waitForTimeout(waitMs);
     const html = await page.content();
     writeAuxiliarySnapshot(source, 'browser-rendered', html);
@@ -5665,7 +5697,10 @@ function writeReport(summary) {
     `- time_scope: ${summary.time_scope}`,
     `- ended_collection_enabled: ${summary.ended_collection_enabled}`,
     `- sources_seen: ${summary.sources_seen}`,
+    `- sources_runnable: ${summary.sources_runnable}`,
+    `- sources_due: ${summary.sources_due}`,
     `- sources_attempted: ${summary.sources_attempted}`,
+    `- sources_deferred: ${summary.sources_deferred}`,
     `- ended_min_year: ${summary.ended_min_year}`,
     `- candidates_discovered: ${summary.candidates_discovered}`,
     `- candidates_written: ${summary.candidates_written}`,
@@ -5674,14 +5709,20 @@ function writeReport(summary) {
     `- ended_events_preserved: ${summary.ended_events_preserved ?? 0}`,
     `- past_rows_skipped: ${summary.past_rows_skipped ?? 0}`,
     '',
-    '| Source | Status | Active | Ended | Past skipped | New | Refreshed | Missing latest | Snapshot | Note |',
-    '|---|---|---:|---:|---:|---:|---:|---:|---|---|',
-    ...summary.sources.map((source) => `| ${source.id} | ${source.status} | ${source.extracted} | ${source.ended_extracted ?? 0} | ${source.past_rows_skipped ?? 0} | ${source.new_candidates ?? 0} | ${source.refreshed_candidates ?? 0} | ${source.missing_from_latest_run ?? 0} | ${source.snapshot_path || '-'} | ${source.note || ''} |`)
+    '| Source | Status | Duration | Active | Ended | Past skipped | New | Refreshed | Missing latest | Snapshot | Note |',
+    '|---|---|---:|---:|---:|---:|---:|---:|---:|---|---|',
+    ...summary.sources.map((source) => `| ${source.id} | ${source.status} | ${Math.round((source.duration_ms || 0) / 1000)}s | ${source.extracted} | ${source.ended_extracted ?? 0} | ${source.past_rows_skipped ?? 0} | ${source.new_candidates ?? 0} | ${source.refreshed_candidates ?? 0} | ${source.missing_from_latest_run ?? 0} | ${source.snapshot_path || '-'} | ${source.note || ''} |`),
+    '',
+    '## Deferred By Adaptive Cadence',
+    '',
+    '| Source | Reason | Interval | Next due |',
+    '|---|---|---:|---|',
+    ...summary.deferred_sources.map((source) => `| ${source.id} | ${source.reason} | ${source.interval_hours}h | ${source.next_due_at || '-'} |`)
   ];
   fs.writeFileSync(reportMdPath, `${lines.join('\n')}\n`, 'utf8');
 }
 
-function writeCollectionCheckpoint({ allSources, sources, sourceSummaries, discovered, endedDiscovered, existingCandidates, existingEndedEvents }) {
+function writeCollectionCheckpoint({ allSources, runnableSources, sources, deferredSources, sourceSummaries, discovered, endedDiscovered, existingCandidates, existingEndedEvents }) {
   writeJson(checkpointJsonPath, {
     schema: 'eventlive.source-collection-checkpoint.v1',
     checkpointed_at: new Date().toISOString(),
@@ -5690,7 +5731,10 @@ function writeCollectionCheckpoint({ allSources, sources, sourceSummaries, disco
     source_candidates: rel(sourceCandidatesPath),
     source_ended_events: rel(sourceEndedEventsPath),
     sources_seen: allSources.length,
+    sources_runnable: runnableSources.length,
+    sources_due: sources.length,
     sources_attempted: sources.length,
+    sources_deferred: deferredSources.length,
     sources_completed: sourceSummaries.length,
     candidates_discovered_so_far: discovered.length,
     ended_events_discovered_so_far: endedDiscovered.length,
@@ -5701,6 +5745,7 @@ function writeCollectionCheckpoint({ allSources, sources, sourceSummaries, disco
     baseline_key: 'source_url + title + start_date',
     normalization_rule: 'candidateMergeKey from the source collector; compare apples-to-apples across periodic runs',
     sources: sourceSummaries,
+    deferred_sources: deferredSources,
     existing_candidates_seen: existingCandidates.length,
     existing_ended_events_seen: existingEndedEvents.length
   });
@@ -5713,9 +5758,25 @@ async function main() {
   const registry = readJson(sourceRegistryPath);
   const allSources = [...(registry.sources || [])].sort((a, b) => a.priority - b.priority);
   const runnableSources = allSources.filter((source) => sourceExtractors[source.id]);
+  const previousRunState = exists(sourceRunStatePath) ? readJson(sourceRunStatePath) : { sources: [] };
+  const cadenceSelection = selectSourcesByCadence(runnableSources, previousRunState.sources || [], now, { forceAll: forceAllSources });
   const sources = selectedIds.length
     ? runnableSources.filter((source) => selectedIds.includes(source.id))
-    : runnableSources;
+    : adaptiveCadenceEnabled
+      ? cadenceSelection.due.map((row) => row.source)
+      : runnableSources;
+  const deferredSources = selectedIds.length || !adaptiveCadenceEnabled
+    ? []
+    : cadenceSelection.deferred.map((row) => ({
+      id: row.source.id,
+      status: row.state.status || 'not-attempted',
+      last_attempted_at: row.state.last_attempted_at || null,
+      error_streak: Number(row.state.error_streak || 0),
+      zero_yield_streak: Number(row.state.zero_yield_streak || 0),
+      reason: row.decision.reason,
+      interval_hours: row.decision.interval_hours,
+      next_due_at: row.decision.next_due_at
+    }));
 
   ensureDir(snapshotDir);
   const discovered = [];
@@ -5739,6 +5800,7 @@ async function main() {
       : [];
 
   for (const source of sources) {
+    const sourceStartedAt = Date.now();
     const extractor = sourceExtractors[source.id];
     const summary = {
       id: source.id,
@@ -5754,7 +5816,8 @@ async function main() {
       approved_linked_preserved: 0,
       ended_extracted: 0,
       ended_new: 0,
-      past_rows_skipped: 0
+      past_rows_skipped: 0,
+      duration_ms: 0
     };
     try {
       const extraction = await loadSourceExtraction(source, extractor);
@@ -5795,8 +5858,9 @@ async function main() {
         summary.note = error.message;
       }
     }
+    summary.duration_ms = Date.now() - sourceStartedAt;
     sourceSummaries.push(summary);
-    writeCollectionCheckpoint({ allSources, sources, sourceSummaries, discovered, endedDiscovered, existingCandidates, existingEndedEvents });
+    writeCollectionCheckpoint({ allSources, runnableSources, sources, deferredSources, sourceSummaries, discovered, endedDiscovered, existingCandidates, existingEndedEvents });
   }
 
   const refreshedSourceLabels = new Set(sourceSummaries
@@ -5835,7 +5899,12 @@ async function main() {
     time_scope: collectionTimeScope,
     ended_collection_enabled: collectEndedEvents,
     sources_seen: allSources.length,
+    sources_runnable: runnableSources.length,
+    sources_due: sources.length,
     sources_attempted: sources.length,
+    sources_deferred: deferredSources.length,
+    adaptive_cadence_enabled: adaptiveCadenceEnabled,
+    force_all_sources: forceAllSources,
     max_per_source: maxPerSource,
     ended_min_year: minEndedYear,
     baseline_key: 'source_url + title + start_date',
@@ -5846,13 +5915,15 @@ async function main() {
     candidates_written: dryRun ? existingCandidates.length : merged.length,
     ended_events_written: !dryRun && collectEndedEvents ? mergedEndedEvents.length : 0,
     ended_events_preserved: existingEndedEvents.length,
-    sources: sourceSummaries
+    sources: sourceSummaries,
+    deferred_sources: deferredSources
   };
   writeReport(report);
   console.log(`# EventLive Source Collector`);
   console.log(`- Time scope: ${report.time_scope}`);
   console.log(`- Ended collection enabled: ${report.ended_collection_enabled}`);
   console.log(`- Sources attempted: ${report.sources_attempted}`);
+  console.log(`- Sources deferred by cadence: ${report.sources_deferred}`);
   console.log(`- Candidates discovered: ${report.candidates_discovered}`);
   console.log(`- Candidates written: ${report.candidates_written}`);
   console.log(`- Ended events written this run: ${report.ended_events_written}`);
@@ -5872,6 +5943,7 @@ export {
   fetchHtml,
   freshBrowserProbeHtml,
   browserProbeEvidenceTimestamp,
+  recentBrowserProbeFailure,
   latestOfficialSnapshotHtml,
   writeAuxiliarySnapshot,
   extractAbhaChamberEvents,

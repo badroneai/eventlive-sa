@@ -14,6 +14,15 @@ function indexOfLine(pattern) {
 
 assert.match(workflow, /cron:\s*["']17 \*\/6 \* \* \*["']/, 'source sync must run every 6 hours');
 assert.match(workflow, /EVENTLIVE_SOURCE_COLLECT_ENDED_EVENTS:\s*["']false["']/, 'scheduled sync must explicitly disable ended-event collection');
+assert.match(workflow, /EVENTLIVE_SOURCE_ADAPTIVE_CADENCE:\s*["']true["']/, 'scheduled sync must defer repeatedly unproductive sources without disabling them');
+assert.match(workflow, /EVENTLIVE_SOURCE_DIAGNOSTICS_INTERVAL_HOURS:\s*["']24["']/, 'heavy diagnostics must run at most daily on the six-hour workflow');
+assert.match(workflow, /EVENTLIVE_INCLUDE_DISCOVERY_RADARS:\s*["']false["']/, 'discovery-only radars must stay off the production critical path');
+assert.match(workflow, /EVENTLIVE_SOURCE_FETCH_TIMEOUT_MS:\s*["']12000["']/, 'scheduled collectors must use a bounded direct-fetch timeout');
+assert.match(workflow, /EVENTLIVE_SOURCE_FETCH_ATTEMPTS:\s*["']2["']/, 'scheduled collectors must avoid three long retries per failed source');
+assert.match(workflow, /EVENTLIVE_BROWSER_FAILURE_COOLDOWN_MS:\s*["']259200000["']/, 'failed browser probes must cool down for 72 hours');
+assert.match(workflow, /uses:\s*actions\/cache@v4/, 'scheduled sync must retain downloaded event images between runs');
+assert.match(workflow, /path:\s*dist\/assets\/event-images/, 'the workflow image cache must restore the public event-image directory');
+assert.match(workflow, /eventlive-event-images-\$\{\{ runner\.os \}\}/, 'the workflow image cache must use a stable EventLive key prefix');
 assert.doesNotMatch(workflow, /EVENTLIVE_SOURCE_ENDED_MIN_YEAR:/, 'scheduled sync must not configure a historical-year collection window');
 assert.match(workflow, /EVENTLIVE_TRUSTED_SOURCE_LIMIT:\s*["']200["']/, 'trusted sources must not be constrained to the discovery-source cap');
 assert.doesNotMatch(workflow, /EVENTLIVE_TRUSTED_SOURCE_ENDED_LIMIT:/, 'scheduled sync must not reserve capacity for ended-event ingestion');
@@ -38,10 +47,12 @@ assert.match(workflow, /for attempt in 1 2 3/, 'source sync must retry persisten
 assert.match(workflow, /npm run test:source-growth/, 'scheduled sync must regression-test the growth ledger');
 
 const sourceSyncIndex = indexOfLine(/npm run sources:sync/);
+const imageRestoreIndex = indexOfLine(/Restore event image cache/);
 const preflightIndex = indexOfLine(/Source state preflight/);
 const sourceHealthPreflightIndex = indexOfLine(/npm run test:source-health-gate/);
 const sourceRunStatePreflightIndex = indexOfLine(/npm run test:source-run-state/);
 const sourceFutureOnlyPreflightIndex = indexOfLine(/npm run test:source-future-only/);
+const sourceCadencePreflightIndex = indexOfLine(/npm run test:source-cadence/);
 const sourceWorkflowPreflightIndex = indexOfLine(/npm run test:source-sync-workflow/);
 const imageCacheTestIndex = indexOfLine(/npm run test:image-cache/);
 const publicAssetsTestIndex = indexOfLine(/npm run test:public-assets/);
@@ -59,9 +70,11 @@ const persistIndex = indexOfLine(/Persist sync state back to the repository/);
 const deployIndex = indexOfLine(/Deploy to GitHub Pages/);
 
 assert.ok(preflightIndex < sourceSyncIndex, 'source-state preflight must run before the long collection step');
+assert.ok(imageRestoreIndex < sourceSyncIndex, 'event images must be restored before the source sync builds the public catalog');
 assert.ok(sourceHealthPreflightIndex < sourceSyncIndex, 'source health gate regression must fail fast before collection');
 assert.ok(sourceRunStatePreflightIndex < sourceSyncIndex, 'source run-state regression must fail fast before collection');
 assert.ok(sourceFutureOnlyPreflightIndex < sourceSyncIndex, 'future-only collection regression must fail fast before collection');
+assert.ok(sourceCadencePreflightIndex < sourceSyncIndex, 'source cadence regression must fail fast before collection');
 assert.ok(sourceWorkflowPreflightIndex < sourceSyncIndex, 'source workflow regression must fail fast before collection');
 assert.ok(sourceSyncIndex < sourcePipelineTestIndex, 'pipeline-order test must run after sources:sync');
 assert.ok(sourceSyncIndex < scegaExtractorTestIndex, 'SCEGA public API extractor test must run after sources:sync');

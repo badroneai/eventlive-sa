@@ -28,7 +28,7 @@ process.env.EVENTLIVE_SOURCE_SNAPSHOT_DIR = path.relative(root, snapshotDir);
 process.env.EVENTLIVE_BROWSER_PROBE_REPORT_JSON = path.relative(root, reportPath);
 process.env.EVENTLIVE_BROWSER_FALLBACK_MAX_AGE_MS = String(60 * 60 * 1000);
 
-const { freshBrowserProbeHtml, latestOfficialSnapshotHtml, writeAuxiliarySnapshot } = await import('./collect-source-candidates.mjs');
+const { freshBrowserProbeHtml, latestOfficialSnapshotHtml, recentBrowserProbeFailure, writeAuxiliarySnapshot } = await import('./collect-source-candidates.mjs');
 const officialSource = {
   id: 'official-source',
   url: 'https://example.gov.sa/events',
@@ -65,6 +65,18 @@ assert.equal(
   '',
   'last-known-good official HTML must expire after the safety window'
 );
+
+fs.writeFileSync(reportPath, `${JSON.stringify({
+  generated_at: new Date().toISOString(),
+  sources: [{
+    id: 'official-source',
+    probed_at: new Date().toISOString(),
+    status: 'error',
+    classification: 'empty-or-shell',
+    html_snapshot: path.relative(root, browserSnapshotPath)
+  }]
+}, null, 2)}\n`, 'utf8');
+assert.equal(recentBrowserProbeFailure(officialSource), true, 'recent failed browser probes must suppress another expensive live-browser attempt');
 
 fs.writeFileSync(reportPath, `${JSON.stringify({
   generated_at: '2020-01-01T00:00:00.000Z',

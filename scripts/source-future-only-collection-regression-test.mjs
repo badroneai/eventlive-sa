@@ -78,7 +78,7 @@ assert.match(collector, /if \(collectEndedEvents\) \{\s*const \{ archived_events
 assert.match(collector, /source\.id === 'jazan-chamber-events'[\s\S]*jazanApiEndpoint\(now\.getUTCMonth\(\) \+ 1/, 'Jazan primary request must roll forward with the current month');
 assert.match(collector, /if \(!collectEndedEvents\) \{\s*return extractMadinahChamberPayload/s, 'Madinah recurring collection must not traverse historical pages');
 assert.match(radars, /historical_only:\s*true/, 'archive-only radars must be marked explicitly');
-assert.match(radars, /filter\(\(radar\) => collectEndedEvents \|\| !radar\.historical_only\)/, 'archive-only radars must be excluded from future-only runs');
+assert.match(radars, /!collectEndedEvents && radar\.historical_only/, 'archive-only radars must be excluded from future-only runs');
 assert.match(agendaRadar, /targets\.filter\(\(target\) => target\.extractor !== 'historical-active'\)/, 'historical agenda probes must be excluded from future-only runs');
 assert.match(moneyEnricher, /if \(collectEndedEvents\) \{[\s\S]*fetchHtml\(agenda2025Url\)/, 'Money20/20 2025 must require historical opt-in');
 assert.match(rffEnricher, /status:\s*'skipped-historical-source'/, 'RFF historical enrichment must no-op during recurring future-only runs');
