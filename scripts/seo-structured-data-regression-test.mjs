@@ -104,6 +104,10 @@ for (const page of pages) {
 
 const homeHtml = fs.readFileSync(path.join(distDir, 'index.html'), 'utf8');
 const homeJsonLd = extractJsonLd(homeHtml);
+const googleSiteVerification = fs.readFileSync(path.join(root, 'data', 'google-site-verification.txt'), 'utf8').trim();
+const verificationMeta = [...homeHtml.matchAll(/<meta name="google-site-verification" content="([^"]+)"/g)];
+assert.equal(verificationMeta.length, 1, 'home must expose exactly one Google Search Console verification tag');
+assert.equal(verificationMeta[0][1], googleSiteVerification, 'home verification tag must match the tracked Google token');
 assert.doesNotMatch(homeHtml, /rel="icon" href="data:image/, 'home must not expose the legacy embedded favicon');
 assert.match(homeHtml, /rel="icon" type="image\/svg\+xml" href="\.\/favicon\.svg"/, 'home must expose the EventLive favicon');
 assert.doesNotMatch(homeHtml, /href="\.\/index\.html"/, 'home links must consolidate on the canonical root URL');

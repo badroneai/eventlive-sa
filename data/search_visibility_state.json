@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "google_search_console": {
+    "property": "https://eventme.live/",
+    "property_type": "url-prefix",
+    "verification_method": "html-tag",
+    "verification_status": "TOKEN_READY_FOR_DEPLOYMENT",
+    "verified_at": null,
+    "sitemap_status": "NOT_SUBMITTED",
+    "sitemap_submitted_at": null,
+    "url_inspection_requests": []
+  }
+}

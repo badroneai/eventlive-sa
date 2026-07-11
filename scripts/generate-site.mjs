@@ -23,6 +23,11 @@ const platformDomain = 'eventme.live';
 const siteUrl = `https://${platformDomain}`;
 const buildAt = new Date().toISOString();
 const includeDemoEvent = process.env.EVENTLIVE_INCLUDE_DEMO === '1';
+const googleSiteVerificationPath = path.join(root, 'data', 'google-site-verification.txt');
+const googleSiteVerification = fs.existsSync(googleSiteVerificationPath)
+  ? fs.readFileSync(googleSiteVerificationPath, 'utf8').trim()
+  : '';
+const searchVisibilityState = readJson('data/search_visibility_state.json', {});
 const imageCacheManifest = readJson('data/event_image_cache_manifest.json', { images: {} });
 const registeredSources = readJson('data/source_registry.json', { sources: [] }).sources || [];
 const venueRegistry = readJson('data/venue_registry.json', { venues: [] }).venues || [];
@@ -1059,6 +1064,7 @@ function baseHead({ title, description, canonical, image, manifestHref = './mani
   <meta name="application-name" content="${platformName}" />
   <meta name="author" content="${platformName}" />
   <meta name="publisher" content="${platformName}" />
+  ${isHomeCanonical(canonical) && googleSiteVerification ? `<meta name="google-site-verification" content="${escapeHtml(googleSiteVerification)}" />` : ''}
   <meta name="theme-color" content="#0d6b52" />
   <meta name="color-scheme" content="light" />
   <link rel="icon" type="image/svg+xml" href="${escapeHtml(`${resourcePrefix}favicon.svg`)}" />
@@ -3326,6 +3332,7 @@ function writeOwnerStatusPage(events, seoDiscovery = {}) {
   const sourceCollection = readReport('reports/source-collection-report.json', {});
   const sourceDiagnostics = readReport('reports/source-diagnostics-cadence-report.json', {});
   const sourceGrowth = readReport('reports/source-growth-report.json', {});
+  const googleSearchConsole = searchVisibilityState.google_search_console || {};
   const growthCurrent = sourceGrowth.current || {};
   const blockedReasons = (autoPublish.blocked || []).reduce((totals, candidate) => {
     const reason = candidate.reason || 'unknown';
@@ -3356,7 +3363,16 @@ function writeOwnerStatusPage(events, seoDiscovery = {}) {
     },
     search_visibility: {
       technical_status: 'READY_FOR_CRAWL',
-      google_search_console_status: 'OWNER_ACCOUNT_VERIFICATION_REQUIRED',
+      google_search_console_status: googleSearchConsole.verification_status || 'NOT_CONFIGURED',
+      google_search_console_property: googleSearchConsole.property || `${siteUrl}/`,
+      google_search_console_property_type: googleSearchConsole.property_type || 'url-prefix',
+      google_search_console_verification_method: googleSearchConsole.verification_method || 'html-tag',
+      google_search_console_verified_at: googleSearchConsole.verified_at || null,
+      google_sitemap_status: googleSearchConsole.sitemap_status || 'NOT_SUBMITTED',
+      google_sitemap_submitted_at: googleSearchConsole.sitemap_submitted_at || null,
+      google_url_inspection_requests: Array.isArray(googleSearchConsole.url_inspection_requests)
+        ? googleSearchConsole.url_inspection_requests
+        : [],
       sitemap_url: `${siteUrl}/sitemap.xml`,
       robots_url: `${siteUrl}/robots.txt`,
       indexnow_status: 'AUTOMATED_AFTER_DEPLOY',
@@ -3367,7 +3383,7 @@ function writeOwnerStatusPage(events, seoDiscovery = {}) {
       event_schema_pages: events.length * 2,
       locales: ['ar-SA', 'en-SA'],
       links: {
-        google_search_console: 'https://search.google.com/search-console?resource_id=sc-domain:eventme.live',
+        google_search_console: `https://search.google.com/search-console?resource_id=${encodeURIComponent(googleSearchConsole.property || `${siteUrl}/`)}`,
         bing_webmaster: `https://www.bing.com/webmasters/home?siteUrl=${encodeURIComponent(`${siteUrl}/`)}`,
         rich_results_test: `https://search.google.com/test/rich-results?url=${encodeURIComponent(`${siteUrl}/`)}`,
         pagespeed: `https://pagespeed.web.dev/analysis?url=${encodeURIComponent(`${siteUrl}/`)}`
@@ -3439,7 +3455,7 @@ ${header('./')}
   <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span>للمالك فقط</span><h1>حالة التشغيل والقياس</h1><p class="lead">افتح هذه الصفحة بعد النشر لمعرفة آخر جلب دوري، كم نما الكتالوج، كم بقي محجوبًا، وهل القياس مزروع. أرقام الزوار التفصيلية لا تظهر إلا بعد تفعيل لوحة Plausible للدومين بحساب المالك.</p><div class="signal-strip"><div class="signal"><span>فعاليات منشورة</span><b>${status.catalog.public_events}</b></div><div class="signal"><span>التغير آخر دورة</span><b>${escapeHtml(publicDeltaLabel)}</b></div><div class="signal"><span>مرشحون جدد</span><b>${status.source_sync.new_active_candidates}</b></div><div class="signal"><span>جداول حية</span><b>${status.catalog.live_ready}</b></div></div></div></section>
   <section class="section"><div class="wrap grid">
     <article class="activation-card"><h2>الزيارات والتحليلات</h2><p>حالة الزر: <strong>${escapeHtml(status.analytics.dashboard_status)}</strong></p><p>المزود: <strong>${escapeHtml(status.analytics.provider)}</strong></p><p>الدومين: <strong>${escapeHtml(status.analytics.domain)}</strong></p><p>الخصوصية: بدون كوكيز وبدون بيانات شخصية حسب إعدادات التقرير.</p><p><strong>${escapeHtml(analyticsStatusCopy)}</strong></p><div class="activation-actions"><a class="cta" href="${escapeHtml(analyticsDashboardHref)}" target="_blank" rel="noopener">${escapeHtml(analyticsDashboardLabel)}</a><a class="cta" href="./owner-status.json">بيانات الصفحة JSON</a></div></article>
-    <article class="activation-card"><h2>الظهور في البحث والذكاءات</h2><p>الجاهزية التقنية: <strong>${escapeHtml(status.search_visibility.technical_status)}</strong></p><p>صفحات Event منظمة بالعربية والإنجليزية: <strong>${status.search_visibility.event_schema_pages}</strong></p><p>روابط تغيرت وسترسل إلى IndexNow: <strong>${status.search_visibility.indexnow_urls_queued}</strong></p><p>Search Console: <strong>${escapeHtml(status.search_visibility.google_search_console_status)}</strong></p><div class="activation-actions"><a class="cta" href="${escapeHtml(status.search_visibility.links.google_search_console)}" target="_blank" rel="noopener">Google Search Console</a><a class="cta" href="${escapeHtml(status.search_visibility.links.bing_webmaster)}" target="_blank" rel="noopener">Bing Webmaster</a><a class="cta" href="${escapeHtml(status.search_visibility.links.rich_results_test)}" target="_blank" rel="noopener">اختبار النتائج المنسقة</a><a class="cta" href="${escapeHtml(status.search_visibility.links.pagespeed)}" target="_blank" rel="noopener">PageSpeed</a></div></article>
+    <article class="activation-card"><h2>الظهور في البحث والذكاءات</h2><p>الجاهزية التقنية: <strong>${escapeHtml(status.search_visibility.technical_status)}</strong></p><p>صفحات Event منظمة بالعربية والإنجليزية: <strong>${status.search_visibility.event_schema_pages}</strong></p><p>روابط تغيرت وسترسل إلى IndexNow: <strong>${status.search_visibility.indexnow_urls_queued}</strong></p><p>Search Console: <strong>${escapeHtml(status.search_visibility.google_search_console_status)}</strong></p><p>Sitemap في Google: <strong>${escapeHtml(status.search_visibility.google_sitemap_status)}</strong></p><div class="activation-actions"><a class="cta" href="${escapeHtml(status.search_visibility.links.google_search_console)}" target="_blank" rel="noopener">Google Search Console</a><a class="cta" href="${escapeHtml(status.search_visibility.links.bing_webmaster)}" target="_blank" rel="noopener">Bing Webmaster</a><a class="cta" href="${escapeHtml(status.search_visibility.links.rich_results_test)}" target="_blank" rel="noopener">اختبار النتائج المنسقة</a><a class="cta" href="${escapeHtml(status.search_visibility.links.pagespeed)}" target="_blank" rel="noopener">PageSpeed</a></div></article>
     <article class="activation-card"><h2>آخر جلب دوري</h2><p>آخر تقرير: <strong>${escapeHtml(status.source_sync.last_run_at || 'غير متاح')}</strong></p><p>مستحقة الآن: <strong>${status.source_sync.due_sources}</strong> · نُفذت: <strong>${status.source_sync.attempted_sources}</strong> · مؤجلة بجدولة تكيفية: <strong>${status.source_sync.deferred_sources}</strong></p><p>مصادر منتجة: <strong>${status.source_sync.productive_sources}</strong> · أخطاء هذه الدورة: <strong>${status.source_sync.collector_errors}</strong> · أخطاء متراكمة تحت المراقبة: <strong>${status.source_sync.persistent_collector_errors}</strong></p><p>الفحص العميق: <strong>${escapeHtml(status.source_sync.diagnostics_status)}</strong> · موعده التالي: <strong>${escapeHtml(status.source_sync.diagnostics_next_due_at || 'غير متاح')}</strong></p><p>مرشحون: <strong>${status.source_sync.candidates_seen}</strong> · منشور جديد: <strong>${status.source_sync.published_new}</strong> · مربوط بموجود: <strong>${status.source_sync.linked_existing}</strong></p><div class="activation-actions"><a class="cta" href="./source-health.html">صحة المصادر</a><a class="cta" href="./source-coverage-gaps.html">فجوات التغطية</a></div></article>
     <article class="activation-card"><h2>اتجاه نمو الكتالوج</h2><p>حالة الدورة: <strong>${escapeHtml(status.source_sync.growth_status)}</strong></p><p>التغير العام: <strong>${escapeHtml(publicDeltaLabel)}</strong> · مرشحون جدد: <strong>${status.source_sync.new_active_candidates}</strong> · منتهية جديدة: <strong>${status.source_sync.new_ended_events}</strong></p><p>دورات متتالية بلا نمو: <strong>${status.source_sync.no_growth_streak}</strong> · فقد ناتج منشور: <strong>${status.source_sync.lost_published_output ? 'نعم' : 'لا'}</strong></p></article>
   </div></section>
@@ -6435,6 +6451,15 @@ function injectGlobalFeedAlternates(html, filePath) {
   return html.replace(/<\/head>/i, `  ${links}\n</head>`);
 }
 
+function injectGoogleSiteVerification(html, filePath) {
+  const withoutVerification = html.replace(/\s*<meta\b[^>]*name=["']google-site-verification["'][^>]*>/gi, '');
+  if (!isHomeFile(filePath) || !googleSiteVerification) return withoutVerification;
+  return withoutVerification.replace(
+    /<\/head>/i,
+    `  <meta name="google-site-verification" content="${escapeHtml(googleSiteVerification)}" />\n</head>`
+  );
+}
+
 function enhanceSeoHead(html, filePath) {
   const canonical = attrValue(html, /<link\b[^>]*rel=["']canonical["'][^>]*href=["']([^"']+)["'][^>]*>/i)
     || attrValue(html, /<link\b[^>]*href=["']([^"']+)["'][^>]*rel=["']canonical["'][^>]*>/i);
@@ -6578,6 +6603,7 @@ function decorateBrandHtml(html, filePath) {
   next = injectPlatformWebSiteJsonLd(next, filePath);
   next = injectGlobalFeedAlternates(next, filePath);
   next = enhanceSeoHead(next, filePath);
+  next = injectGoogleSiteVerification(next, filePath);
   next = normalizePublicHeadIcons(next, filePath);
   next = normalizeInternalHomeLinks(next);
   next = next.replace(/<style id="eventlive-brand-pulse">[\s\S]*?<\/style>/g, '');
