@@ -38,6 +38,17 @@ const selectedIds = (process.env.EVENTLIVE_SOURCE_IDS || '')
   .split(',')
   .map((item) => item.trim())
   .filter(Boolean);
+
+function environmentFlag(name, fallback = false) {
+  const value = String(process.env[name] ?? '').trim().toLowerCase();
+  if (!value) return fallback;
+  return ['1', 'true', 'yes', 'on'].includes(value);
+}
+
+const collectEndedEvents = environmentFlag('EVENTLIVE_SOURCE_COLLECT_ENDED_EVENTS', false);
+const collectionTimeScope = collectEndedEvents
+  ? 'current-upcoming-and-ended'
+  : 'current-and-upcoming-only';
 const maxPerSource = Math.max(1, Number(process.env.EVENTLIVE_SOURCE_LIMIT || 40));
 const maxArchivePerSource = Math.max(1, Number(process.env.EVENTLIVE_SOURCE_ENDED_LIMIT || process.env.EVENTLIVE_SOURCE_ARCHIVE_LIMIT || 24));
 const trustedMaxPerSource = Math.max(maxPerSource, Number(process.env.EVENTLIVE_TRUSTED_SOURCE_LIMIT || 200));
@@ -329,11 +340,14 @@ function trustedOfficialSource(source = {}) {
     && !['candidate-only', 'partnership-needed'].includes(source.intake_policy);
 }
 
-function sourceRunLimits(source = {}) {
+function sourceRunLimits(source = {}, options = {}) {
   const trusted = trustedOfficialSource(source);
+  const includeEnded = options.includeEnded ?? collectEndedEvents;
   return {
     active: Math.max(1, Number(source.max_candidates_per_run || (trusted ? trustedMaxPerSource : maxPerSource))),
-    ended: Math.max(1, Number(source.max_ended_per_run || (trusted ? trustedMaxArchivePerSource : maxArchivePerSource)))
+    ended: includeEnded
+      ? Math.max(1, Number(source.max_ended_per_run || (trusted ? trustedMaxArchivePerSource : maxArchivePerSource)))
+      : 0
   };
 }
 
@@ -4064,6 +4078,9 @@ async function extractMadinahChamberEvents(payloadText, source) {
   let firstPayload;
   try { firstPayload = JSON.parse(payloadText); } catch { return []; }
   const rows = Array.isArray(firstPayload?.data) ? [...firstPayload.data] : [];
+  if (!collectEndedEvents) {
+    return extractMadinahChamberPayload(JSON.stringify({ data: rows }), source);
+  }
   const totalPages = Math.min(60, Math.max(1, Number(firstPayload?.totalPages || 1)));
   for (let pageNumber = 2; pageNumber <= totalPages; pageNumber += 1) {
     try {
@@ -4695,13 +4712,19 @@ function jazanApiEndpoint(month, year) {
 function jazanMonthsToFetch(referenceDate = now, options = {}) {
   const currentMonth = new Date(Date.UTC(referenceDate.getUTCFullYear(), referenceDate.getUTCMonth(), 1));
   const futureMonths = Math.max(1, Number(options.futureMonths ?? process.env.EVENTLIVE_JAZAN_FUTURE_MONTHS ?? 12));
-  const historyMode = String(options.historyMode ?? process.env.EVENTLIVE_JAZAN_HISTORY_MODE ?? 'rolling');
+  const historyMode = String(
+    options.historyMode
+      ?? process.env.EVENTLIVE_JAZAN_HISTORY_MODE
+      ?? (collectEndedEvents ? 'rolling' : 'none')
+  ).toLowerCase();
   const historyBatchSize = Math.max(1, Number(options.historyBatchSize ?? process.env.EVENTLIVE_JAZAN_HISTORY_MONTHS_PER_RUN ?? 2));
   const activeMonths = [];
   for (let offset = 0; offset <= futureMonths; offset += 1) {
     const cursor = new Date(Date.UTC(currentMonth.getUTCFullYear(), currentMonth.getUTCMonth() + offset, 1));
     activeMonths.push({ month: cursor.getUTCMonth() + 1, year: cursor.getUTCFullYear() });
   }
+
+  if (['none', 'off', 'disabled', 'future-only'].includes(historyMode)) return activeMonths;
 
   const historicalMonths = [];
   for (let year = minEndedYear; year <= currentMonth.getUTCFullYear(); year += 1) {
@@ -4748,6 +4771,7 @@ async function extractJazanChamberEvents(payload, source) {
 
   pushRows(payload);
   if (source.collector_url) seenEndpoints.add(source.collector_url);
+  seenEndpoints.add(jazanApiEndpoint(now.getUTCMonth() + 1, now.getUTCFullYear()));
 
   if (!source.disable_monthly_fetch) {
     const targets = jazanMonthsToFetch()
@@ -5408,16 +5432,45 @@ function isAllowedEndedCandidate(candidate) {
   return Number.isInteger(year) && year >= minEndedYear;
 }
 
+function partitionSourceItems(extractedItems = [], source = {}, options = {}) {
+  const referenceDate = options.referenceDate || now;
+  const includeEnded = options.includeEnded ?? collectEndedEvents;
+  const limits = sourceRunLimits(source, { includeEnded });
+  const validItems = extractedItems
+    .filter((item) => item.title && item.starts_at && item.ends_at && item.url);
+  const pastItems = validItems.filter((item) => isPastCandidate(item, referenceDate));
+  const activeItems = validItems
+    .filter((item) => !isPastCandidate(item, referenceDate))
+    .sort((a, b) => new Date(a.starts_at).getTime() - new Date(b.starts_at).getTime())
+    .slice(0, limits.active);
+  const endedItems = includeEnded
+    ? pastItems
+      .filter(isAllowedEndedCandidate)
+      .sort((a, b) => new Date(b.starts_at).getTime() - new Date(a.starts_at).getTime())
+      .slice(0, limits.ended)
+    : [];
+
+  return {
+    activeItems,
+    endedItems,
+    pastRowsSkipped: includeEnded ? 0 : pastItems.length
+  };
+}
+
 function isSeedCandidate(candidate) {
   return String(candidate.source_owner || '') === 'EventLive Research'
     && String(candidate.source_url || '') === 'https://eventme.live/';
 }
 
 async function fetchHtml(source) {
+  const configuredTarget = source.collector_url || source.url;
+  const primaryTarget = source.id === 'jazan-chamber-events'
+    ? jazanApiEndpoint(now.getUTCMonth() + 1, now.getUTCFullYear())
+    : configuredTarget;
   const targets = [
-    source.collector_url || source.url,
+    primaryTarget,
     ...(Array.isArray(source.collector_pages) ? source.collector_pages : [])
-  ].filter(Boolean);
+  ].filter(Boolean).filter((target, index, values) => values.indexOf(target) === index);
   const target = targets[0];
   const method = String(source.collector_method || 'GET').toUpperCase();
   const headers = {
@@ -5609,6 +5662,8 @@ function writeReport(summary) {
     '',
     `- collected_at: ${summary.collected_at}`,
     `- dry_run: ${summary.dry_run}`,
+    `- time_scope: ${summary.time_scope}`,
+    `- ended_collection_enabled: ${summary.ended_collection_enabled}`,
     `- sources_seen: ${summary.sources_seen}`,
     `- sources_attempted: ${summary.sources_attempted}`,
     `- ended_min_year: ${summary.ended_min_year}`,
@@ -5616,10 +5671,12 @@ function writeReport(summary) {
     `- candidates_written: ${summary.candidates_written}`,
     `- ended_events_discovered: ${summary.ended_events_discovered ?? 0}`,
     `- ended_events_written: ${summary.ended_events_written ?? 0}`,
+    `- ended_events_preserved: ${summary.ended_events_preserved ?? 0}`,
+    `- past_rows_skipped: ${summary.past_rows_skipped ?? 0}`,
     '',
-    '| Source | Status | Active | Ended | New | Refreshed | Missing latest | Snapshot | Note |',
-    '|---|---|---:|---:|---:|---:|---:|---|---|',
-    ...summary.sources.map((source) => `| ${source.id} | ${source.status} | ${source.extracted} | ${source.ended_extracted ?? 0} | ${source.new_candidates ?? 0} | ${source.refreshed_candidates ?? 0} | ${source.missing_from_latest_run ?? 0} | ${source.snapshot_path || '-'} | ${source.note || ''} |`)
+    '| Source | Status | Active | Ended | Past skipped | New | Refreshed | Missing latest | Snapshot | Note |',
+    '|---|---|---:|---:|---:|---:|---:|---:|---|---|',
+    ...summary.sources.map((source) => `| ${source.id} | ${source.status} | ${source.extracted} | ${source.ended_extracted ?? 0} | ${source.past_rows_skipped ?? 0} | ${source.new_candidates ?? 0} | ${source.refreshed_candidates ?? 0} | ${source.missing_from_latest_run ?? 0} | ${source.snapshot_path || '-'} | ${source.note || ''} |`)
   ];
   fs.writeFileSync(reportMdPath, `${lines.join('\n')}\n`, 'utf8');
 }
@@ -5637,6 +5694,9 @@ function writeCollectionCheckpoint({ allSources, sources, sourceSummaries, disco
     sources_completed: sourceSummaries.length,
     candidates_discovered_so_far: discovered.length,
     ended_events_discovered_so_far: endedDiscovered.length,
+    ended_collection_enabled: collectEndedEvents,
+    time_scope: collectionTimeScope,
+    past_rows_skipped_so_far: sourceSummaries.reduce((sum, source) => sum + (source.past_rows_skipped || 0), 0),
     ended_min_year: minEndedYear,
     baseline_key: 'source_url + title + start_date',
     normalization_rule: 'candidateMergeKey from the source collector; compare apples-to-apples across periodic runs',
@@ -5693,7 +5753,8 @@ async function main() {
       missing_from_latest_run: 0,
       approved_linked_preserved: 0,
       ended_extracted: 0,
-      ended_new: 0
+      ended_new: 0,
+      past_rows_skipped: 0
     };
     try {
       const extraction = await loadSourceExtraction(source, extractor);
@@ -5706,29 +5767,17 @@ async function main() {
       } else {
         summary.snapshot_path = sourceEvidenceSnapshots.get(source.id) || '';
       }
-      const extractedItems = extraction.items
-        .filter((item) => item.title && item.starts_at && item.ends_at && item.url);
-      const limits = sourceRunLimits(source);
-      const sourceMaxCandidates = limits.active;
-      const sourceMaxEnded = limits.ended;
-      const items = extractedItems
-        .filter((item) => !isPastCandidate(item))
-        .sort((a, b) => new Date(a.starts_at).getTime() - new Date(b.starts_at).getTime())
-        .slice(0, sourceMaxCandidates);
-      const historicalItems = extractedItems
-        .filter((item) => isPastCandidate(item))
-        .filter(isAllowedEndedCandidate)
-        .sort((a, b) => new Date(b.starts_at).getTime() - new Date(a.starts_at).getTime())
-        .slice(0, sourceMaxEnded);
-      const candidates = items
+      const partition = partitionSourceItems(extraction.items, source);
+      const candidates = partition.activeItems
         .map((item) => baseCandidate(source, item, summary.snapshot_path));
-      const endedEvents = historicalItems
+      const endedEvents = partition.endedItems
         .map((item) => baseEndedEventRecord(source, item, summary.snapshot_path));
       discovered.push(...candidates);
       endedDiscovered.push(...endedEvents);
       summary.status = 'ok';
       summary.extracted = candidates.length;
       summary.ended_extracted = endedEvents.length;
+      summary.past_rows_skipped = partition.pastRowsSkipped;
       Object.assign(summary, sourceCandidateDelta(source, candidates, existingCandidates));
       const existingEndedKeys = new Set(existingEndedEvents.map((item) => candidateMergeKey(item)));
       summary.ended_new = endedEvents.filter((item) => !existingEndedKeys.has(candidateMergeKey(item))).length;
@@ -5755,7 +5804,9 @@ async function main() {
     .map((summary) => allSources.find((source) => source.id === summary.id)?.name)
     .filter(Boolean));
   const merged = mergeCandidates(existingCandidates, discovered, refreshedSourceLabels);
-  const mergedEndedEvents = mergeEndedEvents(existingEndedEvents, endedDiscovered);
+  const mergedEndedEvents = collectEndedEvents
+    ? mergeEndedEvents(existingEndedEvents, endedDiscovered)
+    : existingEndedEvents;
 
   if (!dryRun) {
     writeJson(sourceCandidatesPath, {
@@ -5764,13 +5815,15 @@ async function main() {
       notes: 'Pre-publication queue for discovered Saudi event leads. Candidates must be reviewed before they are copied into data/events_catalog.json.',
       candidates: merged
     });
-    const { archived_events, archive_status, archive_reason, archive_value, ...endedEnvelope } = existingEndedEventsEnvelope;
-    writeJson(sourceEndedEventsPath, {
-      ...endedEnvelope,
-      generated_for: 'EventLive ended source events',
-      notes: 'Ended Saudi events collected from source extractors. The public site treats these as normal events with ended status.',
-      ended_events: mergedEndedEvents
-    });
+    if (collectEndedEvents) {
+      const { archived_events, archive_status, archive_reason, archive_value, ...endedEnvelope } = existingEndedEventsEnvelope;
+      writeJson(sourceEndedEventsPath, {
+        ...endedEnvelope,
+        generated_for: 'EventLive ended source events',
+        notes: 'Ended Saudi events collected from source extractors. The public site treats these as normal events with ended status.',
+        ended_events: mergedEndedEvents
+      });
+    }
   }
 
   const report = {
@@ -5779,6 +5832,8 @@ async function main() {
     source_registry: rel(sourceRegistryPath),
     source_candidates: rel(sourceCandidatesPath),
     source_ended_events: rel(sourceEndedEventsPath),
+    time_scope: collectionTimeScope,
+    ended_collection_enabled: collectEndedEvents,
     sources_seen: allSources.length,
     sources_attempted: sources.length,
     max_per_source: maxPerSource,
@@ -5787,16 +5842,22 @@ async function main() {
     checkpoint: rel(checkpointJsonPath),
     candidates_discovered: discovered.length,
     ended_events_discovered: endedDiscovered.length,
+    past_rows_skipped: sourceSummaries.reduce((sum, source) => sum + (source.past_rows_skipped || 0), 0),
     candidates_written: dryRun ? existingCandidates.length : merged.length,
-    ended_events_written: dryRun ? existingEndedEvents.length : mergedEndedEvents.length,
+    ended_events_written: !dryRun && collectEndedEvents ? mergedEndedEvents.length : 0,
+    ended_events_preserved: existingEndedEvents.length,
     sources: sourceSummaries
   };
   writeReport(report);
   console.log(`# EventLive Source Collector`);
+  console.log(`- Time scope: ${report.time_scope}`);
+  console.log(`- Ended collection enabled: ${report.ended_collection_enabled}`);
   console.log(`- Sources attempted: ${report.sources_attempted}`);
   console.log(`- Candidates discovered: ${report.candidates_discovered}`);
   console.log(`- Candidates written: ${report.candidates_written}`);
-  console.log(`- Ended events written: ${report.ended_events_written}`);
+  console.log(`- Ended events written this run: ${report.ended_events_written}`);
+  console.log(`- Existing ended events preserved: ${report.ended_events_preserved}`);
+  console.log(`- Past rows skipped: ${report.past_rows_skipped}`);
   console.log(`- Report: ${rel(reportMdPath)}`);
 }
 
@@ -5852,6 +5913,7 @@ export {
   extractVisitSaudiApiEvents,
   sourceCandidateDelta,
   sourceRunLimits,
+  partitionSourceItems,
   loadSourceExtraction,
   isPastCandidate,
   mergeEndedEvents,

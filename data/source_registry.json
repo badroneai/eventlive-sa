@@ -1661,7 +1661,7 @@
         "isActive": true,
         "eventDateFrom": null,
         "eventDateTo": null,
-        "onlyUpcoming": false
+        "onlyUpcoming": true
       },
       "owner": "Saudi Conventions & Exhibitions General Authority",
       "source_type": "government-calendar",
@@ -1682,7 +1682,7 @@
       "evidence_required": "SCEGA event detail URL or licensed event record with title, date, venue/city, and organizer or authority evidence.",
       "candidate_gate": "extraction",
       "max_ended_per_run": 100,
-      "notes": "Activated 2026-07-10 after validating the public Angular event API and its request contract. The collector requests the complete active authority timeline rather than upcoming-only rows so normal six-hour syncs retain official 2025+ history and new events in one idempotent pass. It merges overlapping authority records before candidate creation and preserves SCEGA detail IDs as first-party evidence."
+      "notes": "Activated 2026-07-10 after validating the public Angular event API and its request contract. Recurring six-hour syncs request upcoming authority rows only, merge overlapping records before candidate creation, and preserve SCEGA detail IDs as first-party evidence. Historical retrieval is an explicit manual maintenance mode and is never part of scheduled collection."
     },
     {
       "id": "ministry-commerce-events",
@@ -2072,7 +2072,7 @@
       "intake_policy": "official-feed-preferred",
       "evidence_required": "Jazan Chamber calendar API row or official event detail URL with title, start/end datetime, location or delivery mode, and chamber context before candidate promotion.",
       "candidate_gate": "duplicate-review",
-      "notes": "Added 2026-07-05 after web verification of the official chamber site and public activity signals. Browser probe confirmed a stable monthly calendar API under /api/events/calendar/{month}/{year}. Every six-hour run checks the current and next 12 months plus a rotating historical batch from 2022 onward; a full historical sweep remains available through EVENTLIVE_JAZAN_HISTORY_MODE=full. Keep public detail links on events.jazancci.org.sa."
+      "notes": "Added 2026-07-05 after web verification of the official chamber site and public activity signals. Browser probe confirmed a stable monthly calendar API under /api/events/calendar/{month}/{year}. Every six-hour run checks the dynamically selected current month and next 12 months only. Historical sweeps require the explicit manual flags EVENTLIVE_SOURCE_COLLECT_ENDED_EVENTS=true and EVENTLIVE_JAZAN_HISTORY_MODE=full. Keep public detail links on events.jazancci.org.sa."
     },
     {
       "id": "hail-chamber-events",
@@ -2390,7 +2390,7 @@
       "candidate_gate": "duplicate-review",
       "max_candidates_per_run": 80,
       "max_ended_per_run": 400,
-      "notes": "Activated 2026-07-10 from the public API used by the official Next.js events page. Every run traverses all API pages, preserves high-resolution event art and registration links, and keeps 2022+ history subject to the platform-wide archive rule."
+      "notes": "Activated 2026-07-10 from the public API used by the official Next.js events page. Recurring six-hour syncs read the newest page and retain current or upcoming rows only, including high-resolution event art and registration links. Full historical pagination is reserved for explicit manual maintenance mode."
     },
     {
       "id": "madinah-architecture-festival",

@@ -2,7 +2,7 @@ name: EventLive Source Sync
 
 on:
   schedule:
-    # Every 6 hours to keep upcoming and ended-event discovery fresh for Saudi visitors.
+    # Every 6 hours to keep current and upcoming Saudi events fresh for visitors.
     - cron: "17 */6 * * *"
   workflow_dispatch:
 
@@ -22,9 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       EVENTLIVE_PUBLIC_BASE_URL: https://eventme.live/
-      EVENTLIVE_SOURCE_ENDED_MIN_YEAR: "2022"
+      EVENTLIVE_SOURCE_COLLECT_ENDED_EVENTS: "false"
       EVENTLIVE_TRUSTED_SOURCE_LIMIT: "200"
-      EVENTLIVE_TRUSTED_SOURCE_ENDED_LIMIT: "200"
       EVENTLIVE_MAX_SOURCE_COLLECTOR_ERRORS: "12"
       EVENTLIVE_CRITICAL_SOURCE_PRIORITY_MAX: "10"
       EVENTLIVE_CRITICAL_SOURCE_ERROR_STREAK: "2"
@@ -52,6 +51,7 @@ jobs:
         run: |
           npm run test:source-health-gate
           npm run test:source-run-state
+          npm run test:source-future-only
           npm run test:source-sync-workflow
 
       - name: Collect trusted sources and publish catalog
@@ -71,6 +71,7 @@ jobs:
           npm run test:source-browser-probe
           npm run test:source-browser-fallback
           npm run test:source-limit-policy
+          npm run test:source-future-only
           npm run test:source-selection-contract
           npm run test:scega-events-extractor
           npm run test:scega-canonical-alias

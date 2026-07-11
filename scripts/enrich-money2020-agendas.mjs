@@ -12,6 +12,8 @@ const endedPath = path.join(root, 'data', 'source_ended_events.json');
 const reportJsonPath = path.join(root, 'reports', 'money2020-agenda-enrichment-report.json');
 const reportMdPath = path.join(root, 'reports', 'money2020-agenda-enrichment-report.md');
 const generatedAt = new Date().toISOString();
+const collectEndedEvents = ['1', 'true', 'yes', 'on']
+  .includes(String(process.env.EVENTLIVE_SOURCE_COLLECT_ENDED_EVENTS || '').toLowerCase());
 
 function readJson(filePath, fallback) {
   try { return JSON.parse(fs.readFileSync(filePath, 'utf8')); } catch { return fallback; }
@@ -132,25 +134,27 @@ let sessions2026 = [];
 let agenda2026Url = '';
 const errors = [];
 
-try {
-  const html = await fetchHtml(agenda2025Url);
-  sessions2025 = parseMoney2020AgendaHtml(html, {
-    year: 2025,
-    windowStart: '2025-09-14T00:00:00+03:00',
-    windowEnd: '2025-09-18T00:00:00+03:00',
-    idPrefix: 'money2020-2025',
-    sourceUrl: agenda2025Url
-  });
-  if (sessions2025.length < 20) throw new Error(`2025 official agenda yielded only ${sessions2025.length} sessions`);
-  const snapshotPath = path.join(root, 'data', 'raw', 'source-snapshots', 'money2020-2025-agenda-latest.html');
-  fs.mkdirSync(path.dirname(snapshotPath), { recursive: true });
-  fs.writeFileSync(snapshotPath, html, 'utf8');
-  const record = ended2025Record(sessions2025);
-  const index = (ended.ended_events || []).findIndex((row) => row.id === record.id);
-  if (index === -1) ended.ended_events.push(record);
-  else ended.ended_events[index] = { ...ended.ended_events[index], ...record, first_collected_at: ended.ended_events[index].first_collected_at || record.first_collected_at };
-} catch (error) {
-  errors.push(String(error?.message || error));
+if (collectEndedEvents) {
+  try {
+    const html = await fetchHtml(agenda2025Url);
+    sessions2025 = parseMoney2020AgendaHtml(html, {
+      year: 2025,
+      windowStart: '2025-09-14T00:00:00+03:00',
+      windowEnd: '2025-09-18T00:00:00+03:00',
+      idPrefix: 'money2020-2025',
+      sourceUrl: agenda2025Url
+    });
+    if (sessions2025.length < 20) throw new Error(`2025 official agenda yielded only ${sessions2025.length} sessions`);
+    const snapshotPath = path.join(root, 'data', 'raw', 'source-snapshots', 'money2020-2025-agenda-latest.html');
+    fs.mkdirSync(path.dirname(snapshotPath), { recursive: true });
+    fs.writeFileSync(snapshotPath, html, 'utf8');
+    const record = ended2025Record(sessions2025);
+    const index = (ended.ended_events || []).findIndex((row) => row.id === record.id);
+    if (index === -1) ended.ended_events.push(record);
+    else ended.ended_events[index] = { ...ended.ended_events[index], ...record, first_collected_at: ended.ended_events[index].first_collected_at || record.first_collected_at };
+  } catch (error) {
+    errors.push(String(error?.message || error));
+  }
 }
 
 try {
@@ -184,10 +188,12 @@ for (const row of (catalog.events || []).filter(isMoney2026)) apply2026Identity(
 for (const row of (candidates.candidates || []).filter(isMoney2026)) apply2026Identity(row, sessions2026, { candidate: true });
 writeJson(catalogPath, catalog);
 writeJson(candidatesPath, candidates);
-writeJson(endedPath, ended);
+if (collectEndedEvents) writeJson(endedPath, ended);
 
 const report = {
   generated_at: generatedAt,
+  time_scope: collectEndedEvents ? 'current-upcoming-and-ended' : 'current-and-upcoming-only',
+  ended_collection_enabled: collectEndedEvents,
   totals: {
     sessions_2025: sessions2025.length,
     rooms_2025: unique(sessions2025.map((session) => session.room)).length,
@@ -204,6 +210,8 @@ writeJson(reportJsonPath, report);
 fs.writeFileSync(reportMdPath, [
   '# Money20/20 Middle East Agenda Enrichment', '',
   `- generated_at: ${generatedAt}`,
+  `- time_scope: ${report.time_scope}`,
+  `- ended_collection_enabled: ${collectEndedEvents}`,
   `- 2025_official_sessions: ${report.totals.sessions_2025}`,
   `- 2025_rooms: ${report.totals.rooms_2025}`,
   `- 2026_official_sessions: ${report.totals.sessions_2026}`,
@@ -213,6 +221,7 @@ fs.writeFileSync(reportMdPath, [
 ].join('\n'), 'utf8');
 
 console.log('# EventLive Money20/20 Agenda Enrichment');
+console.log(`- Time scope: ${report.time_scope}`);
 console.log(`- 2025 official sessions: ${report.totals.sessions_2025}`);
 console.log(`- 2025 rooms: ${report.totals.rooms_2025}`);
 console.log(`- 2026 official sessions: ${report.totals.sessions_2026}`);

@@ -35,8 +35,8 @@ assert.equal(biotech.verification_method, 'official-public-json-api');
 const registry = JSON.parse(fs.readFileSync('data/source_registry.json', 'utf8'));
 const registeredSource = registry.sources.find((entry) => entry.id === source.id);
 assert.ok(registeredSource, 'SCEGA source must remain registered');
-assert.equal(registeredSource.collector_body.onlyUpcoming, false, 'six-hour sync must collect the official historical timeline as well as upcoming events');
+assert.equal(registeredSource.collector_body.onlyUpcoming, true, 'six-hour sync must ask the authority API for upcoming events only');
 assert.match(registeredSource.collector_url, /pageSize=500/, 'collector page must be large enough for the full current authority timeline');
-assert.ok(registeredSource.max_ended_per_run >= 100, 'historical collection must not stall at the generic 24-row per-source limit');
+assert.ok(registeredSource.max_ended_per_run >= 100, 'explicit manual historical maintenance must retain its source-specific capacity');
 
-console.log(`SCEGA_EVENTS_EXTRACTOR_OK rows=${rows.length} merged_duplicates=1`);
+console.log(`SCEGA_EVENTS_EXTRACTOR_OK rows=${rows.length} merged_duplicates=1 scheduled_scope=upcoming-only`);

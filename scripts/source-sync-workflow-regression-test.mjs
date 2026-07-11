@@ -13,9 +13,10 @@ function indexOfLine(pattern) {
 }
 
 assert.match(workflow, /cron:\s*["']17 \*\/6 \* \* \*["']/, 'source sync must run every 6 hours');
-assert.match(workflow, /EVENTLIVE_SOURCE_ENDED_MIN_YEAR:\s*["']2022["']/, 'ended-event sync must keep the 2022 minimum-year boundary');
+assert.match(workflow, /EVENTLIVE_SOURCE_COLLECT_ENDED_EVENTS:\s*["']false["']/, 'scheduled sync must explicitly disable ended-event collection');
+assert.doesNotMatch(workflow, /EVENTLIVE_SOURCE_ENDED_MIN_YEAR:/, 'scheduled sync must not configure a historical-year collection window');
 assert.match(workflow, /EVENTLIVE_TRUSTED_SOURCE_LIMIT:\s*["']200["']/, 'trusted sources must not be constrained to the discovery-source cap');
-assert.match(workflow, /EVENTLIVE_TRUSTED_SOURCE_ENDED_LIMIT:\s*["']200["']/, 'trusted archive collection must preserve a useful history window');
+assert.doesNotMatch(workflow, /EVENTLIVE_TRUSTED_SOURCE_ENDED_LIMIT:/, 'scheduled sync must not reserve capacity for ended-event ingestion');
 assert.match(workflow, /EVENTLIVE_MAX_SOURCE_COLLECTOR_ERRORS:\s*["']12["']/, 'transient collector failures must not discard a complete catalog build');
 assert.match(workflow, /EVENTLIVE_CRITICAL_SOURCE_ERROR_STREAK:\s*["']2["']/, 'critical-source failures must be persistent across distinct runs before blocking publication');
 assert.match(workflow, /contents:\s*write/, 'source sync must be allowed to persist catalog state');
@@ -40,6 +41,7 @@ const sourceSyncIndex = indexOfLine(/npm run sources:sync/);
 const preflightIndex = indexOfLine(/Source state preflight/);
 const sourceHealthPreflightIndex = indexOfLine(/npm run test:source-health-gate/);
 const sourceRunStatePreflightIndex = indexOfLine(/npm run test:source-run-state/);
+const sourceFutureOnlyPreflightIndex = indexOfLine(/npm run test:source-future-only/);
 const sourceWorkflowPreflightIndex = indexOfLine(/npm run test:source-sync-workflow/);
 const imageCacheTestIndex = indexOfLine(/npm run test:image-cache/);
 const publicAssetsTestIndex = indexOfLine(/npm run test:public-assets/);
@@ -59,6 +61,7 @@ const deployIndex = indexOfLine(/Deploy to GitHub Pages/);
 assert.ok(preflightIndex < sourceSyncIndex, 'source-state preflight must run before the long collection step');
 assert.ok(sourceHealthPreflightIndex < sourceSyncIndex, 'source health gate regression must fail fast before collection');
 assert.ok(sourceRunStatePreflightIndex < sourceSyncIndex, 'source run-state regression must fail fast before collection');
+assert.ok(sourceFutureOnlyPreflightIndex < sourceSyncIndex, 'future-only collection regression must fail fast before collection');
 assert.ok(sourceWorkflowPreflightIndex < sourceSyncIndex, 'source workflow regression must fail fast before collection');
 assert.ok(sourceSyncIndex < sourcePipelineTestIndex, 'pipeline-order test must run after sources:sync');
 assert.ok(sourceSyncIndex < scegaExtractorTestIndex, 'SCEGA public API extractor test must run after sources:sync');
