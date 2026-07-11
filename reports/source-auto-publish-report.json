@@ -1,16 +1,16 @@
 {
-  "published_at": "2026-07-11T11:15:18.340Z",
+  "published_at": "2026-07-11T13:55:10.996Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 452,
+  "candidates_seen": 451,
   "totals": {
-    "candidates_seen": 452,
+    "candidates_seen": 451,
     "published": 1,
-    "linked_existing": 431,
+    "linked_existing": 430,
     "blocked": 20,
-    "reconciled": 432
+    "reconciled": 431
   },
   "duplicate_catalog_rows_removed": 1,
   "duplicate_catalog_rows": [
@@ -607,39 +607,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-beaded-plant-suncatcher-20260711-ebabc697",
-      "event_id": "event-beaded-plant-suncatcher",
-      "title": "Beaded plant Suncatcher",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20260711-a3bc99ba",
-      "event_id": "event-1-2-3-a-little-space-for-me",
-      "title": "1, 2, 3, A Little Space for Me",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-play-with-shadows-20260711-9984f169",
-      "event_id": "event-ithra-childrens-festival-2026",
-      "title": "Play with Shadows",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-puppet-world-20260711-3b43fb64",
       "event_id": "event-puppet-world",
       "title": "Puppet World",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-my-little-fort-20260711-09d01da3",
-      "event_id": "event-my-little-fort",
-      "title": "My Little Fort",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-1-2-3-lets-rhyme-20260711-4d37515a",
-      "event_id": "event-1-2-3-lets-rhyme",
-      "title": "1, 2, 3, Let's Rhyme!",
       "reason": "already linked to catalog event"
     },
     {
@@ -652,12 +622,6 @@
       "candidate_id": "candidate-ithra-events-ajeeb-in-wonder-house-20260711-caa7ff83",
       "event_id": "event-ajeeb-in-wonder-house",
       "title": "Ajeeb in Wonder House",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-around-the-table-20260711-87d7ec65",
-      "event_id": "event-around-the-table",
-      "title": "Around the Table",
       "reason": "already linked to catalog event"
     },
     {
@@ -751,9 +715,27 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-play-with-shadows-20260711-9984f169",
+      "event_id": "event-ithra-childrens-festival-2026",
+      "title": "Play with Shadows",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-in-the-home-of-20260711-0dcdc683",
       "event_id": "event-in-the-home-of",
       "title": "In the Home of…",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20260711-a3bc99ba",
+      "event_id": "event-1-2-3-a-little-space-for-me",
+      "title": "1, 2, 3, A Little Space for Me",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-1-2-3-lets-rhyme-20260711-4d37515a",
+      "event_id": "event-1-2-3-lets-rhyme",
+      "title": "1, 2, 3, Let's Rhyme!",
       "reason": "already linked to catalog event"
     },
     {
@@ -796,6 +778,18 @@
       "candidate_id": "candidate-ithra-events-the-house-of-ideas-20260711-26aaa6b2",
       "event_id": "event-the-house-of-ideas",
       "title": "The House of Ideas",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-my-little-fort-20260711-09d01da3",
+      "event_id": "event-my-little-fort",
+      "title": "My Little Fort",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-around-the-table-20260711-87d7ec65",
+      "event_id": "event-around-the-table",
+      "title": "Around the Table",
       "reason": "already linked to catalog event"
     },
     {

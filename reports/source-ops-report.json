@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T11:18:38.111Z",
+  "generated_at": "2026-07-11T13:58:31.401Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-07-11T11:12:43.732Z",
+    "collected_at": "2026-07-11T13:53:17.217Z",
     "freshness": "fresh",
-    "discovered": 237,
-    "written": 452
+    "discovered": 236,
+    "written": 451
   },
   "sources": {
     "total": 85,
-    "attempted": 19,
-    "due": 19,
-    "deferred": 26,
+    "attempted": 18,
+    "due": 18,
+    "deferred": 27,
     "scheduled": 45,
     "runnable": 45,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 22,
+    "registry_collection_coverage_pct": 21,
     "scheduled_runnable_coverage_pct": 100,
     "healthy": 18,
     "zero_yield": 0,
-    "errors": 1,
-    "cadence_deferred": 26,
+    "errors": 0,
+    "cadence_deferred": 27,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -323,8 +323,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 129,
-        "candidates": 129,
+        "extracted": 128,
+        "candidates": 128,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -784,13 +784,16 @@
         "id": "asharqia-chamber-events",
         "name": "Asharqia Chamber Events",
         "priority": 59,
-        "status": "collection-error",
-        "error_streak": 0,
+        "status": "deferred",
+        "historical_status": "collector-error",
+        "cadence_reason": "error-cooldown",
+        "next_due_at": "2026-07-11T17:12:43.732Z",
+        "error_streak": 1,
         "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "last_attempted_at": "2026-07-11T11:12:43.732Z",
         "extracted": 0,
         "candidates": 2,
-        "next_action": "fetch failed; page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentloaded\"\n"
+        "next_action": "مؤجل حتى 2026-07-11T17:12:43.732Z وفق الجدولة التكيفية."
       },
       {
         "id": "qassim-chamber-events",
@@ -1134,27 +1137,27 @@
     ]
   },
   "queue": {
-    "total": 452,
+    "total": 451,
     "ready_for_review": 0,
     "approved_for_catalog": 0,
-    "published_from_candidates": 434,
+    "published_from_candidates": 433,
     "actionable": 0,
     "stale_unpublished": 0,
     "duplicate_risk": 0,
     "needs_extraction": 0,
     "needs_evidence": 17,
     "by_review_status": {
-      "approved-for-catalog": 434,
+      "approved-for-catalog": 433,
       "evidence-captured": 4,
       "new": 14
     },
     "by_publication_gate": {
-      "catalog-review": 434,
+      "catalog-review": 433,
       "duplicate-review": 1,
       "source-evidence": 17
     },
     "by_confidence": {
-      "official": 421,
+      "official": 420,
       "public-listing": 6,
       "unverified": 14,
       "verified-secondary": 11
@@ -1179,7 +1182,7 @@
       "Najran Municipality Summer Events": 1,
       "Saudi Universities and Technical Colleges": 6,
       "Jouf University Summer Programs": 1,
-      "Ithra Events": 129,
+      "Ithra Events": 128,
       "Future Skills MCIT Catalogue": 4,
       "Umm Al-Qura University Events Center": 4,
       "Qassim University Events": 1,
@@ -1248,7 +1251,7 @@
         "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 122,
+        "days_to_start": 121,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",

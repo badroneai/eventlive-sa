@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-07-11T11:18:37.964Z
+Generated at: 2026-07-11T13:58:31.256Z
 
 ## Operating Rule
 
@@ -9,11 +9,11 @@ Raw collection is not publication. Every source run preserves evidence, separate
 ## Totals
 
 - Sources: 85
-- Attempted this run: 19
-- Deferred by adaptive cadence: 26
+- Attempted this run: 18
+- Deferred by adaptive cadence: 27
 - Productive: 18
 - Zero-yield: 0
-- Collector errors: 1
+- Collector errors: 0
 - Persistent collector errors: 8
 - Probe blocked: 0
 - Auto-publish eligible source lanes: 12
@@ -84,7 +84,7 @@ Call log:
 | 20 | code-mcit-programs | active-collector | zero-yield | 0 | yes | Zero-yield for 71 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 21 | misk-hub-programs | active-collector | productive | 5 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 22 | dhahran-expo-calendar | active-collector | productive | 15 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
-| 23 | ithra-events | active-collector | productive | 129 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 23 | ithra-events | active-collector | productive | 128 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 24 | saudi-digital-academy | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed |
 | 25 | sdaia-academy-programs | active-collector | collector-error | 0 | no | Fix collector error: fetch failed; page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx
 Call log:

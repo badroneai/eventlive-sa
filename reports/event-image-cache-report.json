@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T11:18:37.222Z",
+  "generated_at": "2026-07-11T13:58:30.533Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -262,11 +262,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4d3708b09af44a312ade4fd065b26f22.png",
       "file": "dist/assets/event-images/leap-then-look-bf84521a1f.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/7b355c6af030a76b742b41484d8a084e.jpg",
-      "file": "dist/assets/event-images/beaded-plant-suncatcher-29904eadb8.jpg",
       "events": 1
     },
     {
@@ -1547,6 +1542,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/766.png?itok=fW0JAe0G",
       "file": "dist/assets/event-images/pfl-mena-fight-night-f80f0d3758.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/7b355c6af030a76b742b41484d8a084e.jpg",
+      "file": "dist/assets/event-images/beaded-plant-suncatcher-29904eadb8.jpg",
       "events": 1
     },
     {

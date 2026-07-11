@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-11T11:15:18.340Z
+- published_at: 2026-07-11T13:55:10.996Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 452
+- candidates_seen: 451
 - published_new: 1
-- linked_existing: 431
+- linked_existing: 430
 - blocked_remaining: 20
 
 ## Blocked summary
@@ -114,15 +114,9 @@
 | candidate-ithra-events-tafasahu-make-room-20260711-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
 | candidate-ithra-events-ithra-childrens-festival-2026-20260711-d6d5cc99 | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
 | candidate-ithra-events-leap-then-look-20260711-99d88224 | linked-existing | event-leap-then-look | already linked to catalog event |
-| candidate-ithra-events-beaded-plant-suncatcher-20260711-ebabc697 | linked-existing | event-beaded-plant-suncatcher | already linked to catalog event |
-| candidate-ithra-events-1-2-3-a-little-space-for-me-20260711-a3bc99ba | linked-existing | event-1-2-3-a-little-space-for-me | already linked to catalog event |
-| candidate-ithra-events-play-with-shadows-20260711-9984f169 | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
 | candidate-ithra-events-puppet-world-20260711-3b43fb64 | linked-existing | event-puppet-world | already linked to catalog event |
-| candidate-ithra-events-my-little-fort-20260711-09d01da3 | linked-existing | event-my-little-fort | already linked to catalog event |
-| candidate-ithra-events-1-2-3-lets-rhyme-20260711-4d37515a | linked-existing | event-1-2-3-lets-rhyme | already linked to catalog event |
 | candidate-ithra-events-a-home-i-imagine-20260711-7778a5c1 | linked-existing | event-a-home-i-imagine | already linked to catalog event |
 | candidate-ithra-events-ajeeb-in-wonder-house-20260711-caa7ff83 | linked-existing | event-ajeeb-in-wonder-house | already linked to catalog event |
-| candidate-ithra-events-around-the-table-20260711-87d7ec65 | linked-existing | event-around-the-table | already linked to catalog event |
 | candidate-ithra-events-balloon-shapes-lab-20260711-7c264d45 | linked-existing | event-balloon-shapes-lab | already linked to catalog event |
 | candidate-ithra-events-built-by-nature-20260711-950b3be0 | linked-existing | event-built-by-nature | already linked to catalog event |
 | candidate-ithra-events-childrens-caf-20260711-f5069d9a | linked-existing | event-childrens-caf | already linked to catalog event |
@@ -138,7 +132,10 @@
 | candidate-ithra-events-where-we-belong-20260711-44a2729b | linked-existing | event-where-we-belong | already linked to catalog event |
 | candidate-ithra-events-who-lived-here-20260711-11c491ce | linked-existing | event-who-lived-here | already linked to catalog event |
 | candidate-ithra-events-zoom-in-20260711-d8d7bd6d | linked-existing | event-zoom-in | already linked to catalog event |
+| candidate-ithra-events-play-with-shadows-20260711-9984f169 | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
 | candidate-ithra-events-in-the-home-of-20260711-0dcdc683 | linked-existing | event-in-the-home-of | already linked to catalog event |
+| candidate-ithra-events-1-2-3-a-little-space-for-me-20260711-a3bc99ba | linked-existing | event-1-2-3-a-little-space-for-me | already linked to catalog event |
+| candidate-ithra-events-1-2-3-lets-rhyme-20260711-4d37515a | linked-existing | event-1-2-3-lets-rhyme | already linked to catalog event |
 | candidate-ithra-events-storyteller-of-the-day-20260711-94528a46 | linked-existing | event-storyteller-of-the-day | already linked to catalog event |
 | candidate-ithra-events-house-of-wonder-20260711-9a8dfa3b | linked-existing | event-house-of-wonder | already linked to catalog event |
 | candidate-ithra-events-little-dot-20260711-6f97a4be | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
@@ -146,6 +143,8 @@
 | candidate-ithra-events-on-this-carpet-20260711-2972e041 | linked-existing | event-on-this-carpet | already linked to catalog event |
 | candidate-ithra-events-sense-the-home-20260711-3a3ca5ae | linked-existing | event-sense-the-home | already linked to catalog event |
 | candidate-ithra-events-the-house-of-ideas-20260711-26aaa6b2 | linked-existing | event-the-house-of-ideas | already linked to catalog event |
+| candidate-ithra-events-my-little-fort-20260711-09d01da3 | linked-existing | event-my-little-fort | already linked to catalog event |
+| candidate-ithra-events-around-the-table-20260711-87d7ec65 | linked-existing | event-around-the-table | already linked to catalog event |
 | candidate-ithra-events-museum-story-time-20260711-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
 | candidate-future-skills-catalog-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي-20260712-ed2ad6f2 | linked-existing | event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي | already linked to catalog event |
 | candidate-monshaat-events-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م-20260712-1d4a3074 | linked-existing | event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م | already linked to catalog event |
