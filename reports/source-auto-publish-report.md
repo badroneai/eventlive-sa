@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-11T01:16:57.474Z
+- published_at: 2026-07-11T05:19:52.041Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 450
-- published_new: 3
-- linked_existing: 428
+- published_new: 1
+- linked_existing: 430
 - blocked_remaining: 19
 
 ## Blocked summary
@@ -17,8 +17,6 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-ithra-events-ithra-childrens-festival-2026-20260711-d6d5cc99 | published | event-ithra-childrens-festival-2026 | Ithra Children's Festival 2026 |
-| candidate-ithra-events-museum-story-time-20260711-1104734c | published | event-museum-story-time | Museum Story Time |
 | candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702 | published | event-music-festival-mdlbeast-soundstorm | Music Festival: MDLBEAST SoundStorm |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
@@ -117,11 +115,12 @@
 | candidate-ithra-events-beaded-plant-suncatcher-20260711-ebabc697 | linked-existing | event-beaded-plant-suncatcher | already linked to catalog event |
 | candidate-ithra-events-1-2-3-a-little-space-for-me-20260711-a3bc99ba | linked-existing | event-1-2-3-a-little-space-for-me | already linked to catalog event |
 | candidate-ithra-events-1-2-3-lets-rhyme-20260711-4d37515a | linked-existing | event-1-2-3-lets-rhyme | already linked to catalog event |
+| candidate-ithra-events-ithra-childrens-festival-2026-20260711-d6d5cc99 | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
 | candidate-ithra-events-leap-then-look-20260711-99d88224 | linked-existing | event-leap-then-look | already linked to catalog event |
 | candidate-ithra-events-kindergarten-under-the-palm-tree-english-20260711-c72ee6a9 | linked-existing | event-kindergarten-under-the-palm-tree-english | already linked to catalog event |
 | candidate-ithra-events-unbox-your-story-20260711-5085a6f0 | linked-existing | event-unbox-your-story | already linked to catalog event |
 | candidate-ithra-events-my-little-fort-20260711-09d01da3 | linked-existing | event-my-little-fort | already linked to catalog event |
-| candidate-ithra-events-play-with-shadows-20260711-9984f169 | linked-existing | event-ithra-childrens-festival-2026 | trusted duplicate linked to existing catalog event |
+| candidate-ithra-events-play-with-shadows-20260711-9984f169 | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
 | candidate-ithra-events-puppet-world-20260711-3b43fb64 | linked-existing | event-puppet-world | already linked to catalog event |
 | candidate-ithra-events-a-home-i-imagine-20260711-7778a5c1 | linked-existing | event-a-home-i-imagine | already linked to catalog event |
 | candidate-ithra-events-ajeeb-in-wonder-house-20260711-caa7ff83 | linked-existing | event-ajeeb-in-wonder-house | already linked to catalog event |
@@ -144,11 +143,12 @@
 | candidate-ithra-events-in-the-home-of-20260711-0dcdc683 | linked-existing | event-in-the-home-of | already linked to catalog event |
 | candidate-ithra-events-storyteller-of-the-day-20260711-94528a46 | linked-existing | event-storyteller-of-the-day | already linked to catalog event |
 | candidate-ithra-events-house-of-wonder-20260711-9a8dfa3b | linked-existing | event-house-of-wonder | already linked to catalog event |
-| candidate-ithra-events-little-dot-20260711-6f97a4be | linked-existing | event-ithra-childrens-festival-2026 | trusted duplicate linked to existing catalog event |
+| candidate-ithra-events-little-dot-20260711-6f97a4be | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
 | candidate-ithra-events-my-neighbor-totoro-20260711-f3bc5c57 | linked-existing | event-my-neighbor-totoro | already linked to catalog event |
 | candidate-ithra-events-on-this-carpet-20260711-2972e041 | linked-existing | event-on-this-carpet | already linked to catalog event |
 | candidate-ithra-events-sense-the-home-20260711-3a3ca5ae | linked-existing | event-sense-the-home | already linked to catalog event |
 | candidate-ithra-events-the-house-of-ideas-20260711-26aaa6b2 | linked-existing | event-the-house-of-ideas | already linked to catalog event |
+| candidate-ithra-events-museum-story-time-20260711-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
 | candidate-future-skills-catalog-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي-20260712-ed2ad6f2 | linked-existing | event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي | already linked to catalog event |
 | candidate-monshaat-events-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م-20260712-1d4a3074 | linked-existing | event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م | already linked to catalog event |
 | candidate-future-skills-catalog-دورة-comptia-a-20260712-dd4c25aa | linked-existing | event-دورة-comptia-a | already linked to catalog event |

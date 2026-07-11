@@ -1,10 +1,10 @@
 # EventLive Official Evidence Verification
 
-- generated_at: 2026-07-11T01:16:50.685Z
+- generated_at: 2026-07-11T05:19:47.188Z
 - entries: 3
 - verified_entries: 2
 - candidates_verified: 5
-- deduplicated: 12
+- deduplicated: 3
 
 | Entry | Status | Candidates | Note |
 |---|---|---:|---|

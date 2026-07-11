@@ -1,40 +1,22 @@
 {
-  "generated_at": "2026-07-11T01:23:07.297Z",
+  "generated_at": "2026-07-11T05:23:28.458Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
     "cached_total": 592,
-    "fetched": 52,
-    "reused": 442,
+    "fetched": 53,
+    "reused": 441,
     "failed": 6,
     "skipped_recent_failures": 6,
     "remembered_failures": 9
   },
   "fetched": [
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/Melwah%20Falcon%20Racing%201.jpeg?itok=AUotuvgp",
-      "file": "dist/assets/event-images/melwah-falcon-racing-42ac1994c8.jpg",
-      "bytes": 19526,
-      "events": 1
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/slider-riyadh.jpg?itok=paMnaS4v",
-      "file": "dist/assets/event-images/global-csr-forum-77e94825e0.jpg",
-      "bytes": 24546,
-      "events": 1
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/WoAA9PTR%20%281%29.jpg?itok=3sTZl2lB",
-      "file": "dist/assets/event-images/saudi-falcons-hunting-exhibition-f5ca8b6b58.jpg",
-      "bytes": 26201,
-      "events": 1
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-05/BG-KKESH-01-scaled.jpg?itok=TyhrDOfg",
-      "file": "dist/assets/event-images/king-khaled-eye-specialist-hospital-and-research-center-2026-internati-245613e9b7.jpg",
-      "bytes": 12045,
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/cx%201%20G2ANj9uXkAAToVW.jpeg?itok=jDWvR69u",
+      "file": "dist/assets/event-images/e3-customer-experience-conference-5102d5e506.jpg",
+      "bytes": 26285,
       "events": 1
     },
     {
@@ -44,21 +26,15 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/cx%201%20G2ANj9uXkAAToVW.jpeg?itok=jDWvR69u",
-      "file": "dist/assets/event-images/e3-customer-experience-conference-5102d5e506.jpg",
-      "bytes": 26285,
-      "events": 1
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/ezgif.com-webp-to-jpg-converter%20%289%29_0.jpg?itok=8MIYdE3n",
       "file": "dist/assets/event-images/saudi-lifestyle-week-29c3641da8.jpg",
       "bytes": 41504,
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/36x864%5B1%5D.jpg?itok=wCcU3lwC",
-      "file": "dist/assets/event-images/wpc-energy-congress-609df8d8ab.jpg",
-      "bytes": 27256,
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/erter%20%2817%29.jpg?itok=GJOsde_n",
+      "file": "dist/assets/event-images/saudi-procurement-conference-004e3ad949.jpg",
+      "bytes": 19459,
       "events": 1
     },
     {
@@ -68,9 +44,21 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/erter%20%2817%29.jpg?itok=GJOsde_n",
-      "file": "dist/assets/event-images/saudi-procurement-conference-004e3ad949.jpg",
-      "bytes": 19459,
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-05/BG-KKESH-01-scaled.jpg?itok=TyhrDOfg",
+      "file": "dist/assets/event-images/king-khaled-eye-specialist-hospital-and-research-center-2026-internati-245613e9b7.jpg",
+      "bytes": 12045,
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/WoAA9PTR%20%281%29.jpg?itok=3sTZl2lB",
+      "file": "dist/assets/event-images/saudi-falcons-hunting-exhibition-f5ca8b6b58.jpg",
+      "bytes": 26201,
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/36x864%5B1%5D.jpg?itok=wCcU3lwC",
+      "file": "dist/assets/event-images/wpc-energy-congress-609df8d8ab.jpg",
+      "bytes": 27256,
       "events": 1
     },
     {
@@ -86,15 +74,27 @@
       "events": 1
     },
     {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/king-salman-stadium-ezgif.com-webp-to-jpg-converter.jpg?itok=TGhUV_7t",
+      "file": "dist/assets/event-images/world-stadiums-and-arenas-summit-b615e34744.jpg",
+      "bytes": 38526,
+      "events": 1
+    },
+    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/agriculture%20%282%29.jpg?itok=-A4P3sDu",
       "file": "dist/assets/event-images/saudi-agriculture-d9a5ea421d.jpg",
       "bytes": 26356,
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/king-salman-stadium-ezgif.com-webp-to-jpg-converter.jpg?itok=TGhUV_7t",
-      "file": "dist/assets/event-images/world-stadiums-and-arenas-summit-b615e34744.jpg",
-      "bytes": 38526,
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/Melwah%20Falcon%20Racing%201.jpeg?itok=AUotuvgp",
+      "file": "dist/assets/event-images/melwah-falcon-racing-42ac1994c8.jpg",
+      "bytes": 19526,
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/slider-riyadh.jpg?itok=paMnaS4v",
+      "file": "dist/assets/event-images/global-csr-forum-77e94825e0.jpg",
+      "bytes": 24546,
       "events": 1
     },
     {
@@ -104,15 +104,15 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/Metal%20%26%20Steel%20Exhibition.jpg%20%281%29.png?itok=9QJkvuAo",
-      "file": "dist/assets/event-images/metal-steel-exhibition-fabex-d880fae4ee.png",
-      "bytes": 335238,
-      "events": 1
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/esports.jpg?itok=m-JCBfZQ",
       "file": "dist/assets/event-images/new-global-sport-conference-118e7a7283.jpg",
       "bytes": 25438,
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/Metal%20%26%20Steel%20Exhibition.jpg%20%281%29.png?itok=9QJkvuAo",
+      "file": "dist/assets/event-images/metal-steel-exhibition-fabex-d880fae4ee.png",
+      "bytes": 335238,
       "events": 1
     },
     {
@@ -122,21 +122,15 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/testimonials-bg.jpg?itok=msBqG1NP",
-      "file": "dist/assets/event-images/saudi-build-118147add6.jpg",
-      "bytes": 59512,
-      "events": 1
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/ezgif.com-webp-to-jpg-converter%20%2815%29.jpg?itok=Xja154HB",
       "file": "dist/assets/event-images/esports-nations-cup-43c4afd0c2.jpg",
       "bytes": 25675,
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/Screenshot%202025-03-16%20101331.png?itok=AK7s0A06",
-      "file": "dist/assets/event-images/mipim-middle-east-43ba9ff717.png",
-      "bytes": 299295,
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/riyadh%20%2859%29.jpg?itok=HBle8fkV",
+      "file": "dist/assets/event-images/6th-united-nations-world-data-forum-2026-3221838a10.jpg",
+      "bytes": 25461,
       "events": 1
     },
     {
@@ -146,9 +140,15 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/riyadh%20%2859%29.jpg?itok=HBle8fkV",
-      "file": "dist/assets/event-images/6th-united-nations-world-data-forum-2026-3221838a10.jpg",
-      "bytes": 25461,
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/Screenshot%202025-03-16%20101331.png?itok=AK7s0A06",
+      "file": "dist/assets/event-images/mipim-middle-east-43ba9ff717.png",
+      "bytes": 299295,
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/testimonials-bg.jpg?itok=msBqG1NP",
+      "file": "dist/assets/event-images/saudi-build-118147add6.jpg",
+      "bytes": 59512,
       "events": 1
     },
     {
@@ -164,21 +164,15 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/Screen%20Shot%202026-01-25%20at%207.17.31%20AM.png?itok=az27tslp",
-      "file": "dist/assets/event-images/future-investment-initiative-71254bda64.png",
-      "bytes": 325366,
-      "events": 1
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/av%20Gz6twMVXwAAo6rK.jpeg?itok=QUqiKHPT",
-      "file": "dist/assets/event-images/saudi-drone-exhibition-sadex-91b1206bec.jpg",
-      "bytes": 42989,
-      "events": 1
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-05/ad6a12b653df86b_1779611219-0-en1779611313.jpg%5B1%5D.jpg?itok=Sb6uAEoH",
       "file": "dist/assets/event-images/cat-show-0a9e8f5217.jpg",
       "bytes": 19140,
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/Screen%20Shot%202026-01-25%20at%207.17.31%20AM.png?itok=az27tslp",
+      "file": "dist/assets/event-images/future-investment-initiative-71254bda64.png",
+      "bytes": 325366,
       "events": 1
     },
     {
@@ -188,9 +182,9 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/kG6I4DWUWEAAaGeD.jpeg?itok=j6Q_13Tx",
-      "file": "dist/assets/event-images/cityscape-global-66a889c337.jpg",
-      "bytes": 25172,
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/av%20Gz6twMVXwAAo6rK.jpeg?itok=QUqiKHPT",
+      "file": "dist/assets/event-images/saudi-drone-exhibition-sadex-91b1206bec.jpg",
+      "bytes": 42989,
       "events": 1
     },
     {
@@ -200,9 +194,9 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/King%20Abdulaziz%20Falconry%20Festival.png?itok=7obkmA1l",
-      "file": "dist/assets/event-images/king-abdulaziz-falconry-festival-51e54a82ee.png",
-      "bytes": 169515,
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/kG6I4DWUWEAAaGeD.jpeg?itok=j6Q_13Tx",
+      "file": "dist/assets/event-images/cityscape-global-66a889c337.jpg",
+      "bytes": 25172,
       "events": 1
     },
     {
@@ -218,9 +212,9 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/Screen%20Shot%202025-12-21%20at%204.39.38%20AM.png?itok=e6ch0pB5",
-      "file": "dist/assets/event-images/foodex-saudi-d22678595b.png",
-      "bytes": 270169,
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/King%20Abdulaziz%20Falconry%20Festival.png?itok=7obkmA1l",
+      "file": "dist/assets/event-images/king-abdulaziz-falconry-festival-51e54a82ee.png",
+      "bytes": 169515,
       "events": 1
     },
     {
@@ -242,21 +236,21 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/X0AADF1U.jpg?itok=-r2rRplI",
-      "file": "dist/assets/event-images/information-security-event-black-hat-14290ae06b.jpg",
-      "bytes": 30547,
-      "events": 1
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/_AM.png?itok=_z8vQcES",
       "file": "dist/assets/event-images/saudi-elenex-af463fa851.png",
       "bytes": 336861,
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-05/_17853000324651174_3292621591780340508_n.jpg?itok=hfR_zSF3",
-      "file": "dist/assets/event-images/asian-indoor-and-martial-arts-games-d949ca4683.jpg",
-      "bytes": 22137,
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/Screen%20Shot%202025-12-21%20at%204.39.38%20AM.png?itok=e6ch0pB5",
+      "file": "dist/assets/event-images/foodex-saudi-d22678595b.png",
+      "bytes": 270169,
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/X0AADF1U.jpg?itok=-r2rRplI",
+      "file": "dist/assets/event-images/information-security-event-black-hat-14290ae06b.jpg",
+      "bytes": 30547,
       "events": 1
     },
     {
@@ -269,6 +263,12 @@
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/1%201%20FwuJnp_WYAAJgoc.jpeg?itok=9bnAcKRu",
       "file": "dist/assets/event-images/future-projects-forum-4006859c28.jpg",
       "bytes": 44292,
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-05/_17853000324651174_3292621591780340508_n.jpg?itok=hfR_zSF3",
+      "file": "dist/assets/event-images/asian-indoor-and-martial-arts-games-d949ca4683.jpg",
+      "bytes": 22137,
       "events": 1
     },
     {
@@ -290,21 +290,27 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-05/ac27_web_banner_0.jpg?itok=_a9WS-wA",
-      "file": "dist/assets/event-images/afc-asian-cup-saudi-arabia-2027-tickets-c6efe2e55f.jpg",
-      "bytes": 9430,
-      "events": 1
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/1500x500%20%285%29_0.jpg?itok=rVeH9j2W",
       "file": "dist/assets/event-images/next-gen-iot-expo-22dcc8b651.jpg",
       "bytes": 37696,
       "events": 1
     },
     {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-05/ac27_web_banner_0.jpg?itok=_a9WS-wA",
+      "file": "dist/assets/event-images/afc-asian-cup-saudi-arabia-2027-tickets-c6efe2e55f.jpg",
+      "bytes": 9430,
+      "events": 1
+    },
+    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/HG_hI6SbUAA3cxc.jpeg?itok=M3x1tWYv",
       "file": "dist/assets/event-images/24th-erra-annual-conference-c93a8157be.jpg",
       "bytes": 25578,
+      "events": 1
+    },
+    {
+      "source_url": "https://ncci.org.sa/wp-content/uploads/2026/04/%D9%88%D8%B1%D8%B4%D8%A9-%D8%A7%D9%84%D8%A3%D8%A8%D8%AA%D9%83%D8%A7%D8%B1-%D9%81%D9%8A-%D8%B1%D9%8A%D9%80%D8%A7%D8%AF%D8%A9-%D8%A7%D9%84%D8%A3%D8%B9%D9%80%D9%85%D8%A7%D9%84-scaled.png",
+      "file": "dist/assets/event-images/ورشة-الأبتكار-في-ريـادة-الأعـمال-c53516007a.png",
+      "bytes": 2551745,
       "events": 1
     },
     {
@@ -2085,11 +2091,6 @@
     {
       "source_url": "https://services.mi.org.sa/upload/events/main/639130210729618368.jpg",
       "file": "dist/assets/event-images/ورشة-عمل-مكافحة-غسل-الأموال-وتمويل-الإرهاب-وتمويل-انتشار-التسلح-لتجار--94f5cb3e51.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://ncci.org.sa/wp-content/uploads/2026/04/%D9%88%D8%B1%D8%B4%D8%A9-%D8%A7%D9%84%D8%A3%D8%A8%D8%AA%D9%83%D8%A7%D8%B1-%D9%81%D9%8A-%D8%B1%D9%8A%D9%80%D8%A7%D8%AF%D8%A9-%D8%A7%D9%84%D8%A3%D8%B9%D9%80%D9%85%D8%A7%D9%84-scaled.png",
-      "file": "dist/assets/event-images/ورشة-الأبتكار-في-ريـادة-الأعـمال-c53516007a.png",
       "events": 1
     },
     {

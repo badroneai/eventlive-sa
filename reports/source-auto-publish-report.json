@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-07-11T01:16:57.474Z",
+  "published_at": "2026-07-11T05:19:52.041Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -7,8 +7,8 @@
   "candidates_seen": 450,
   "totals": {
     "candidates_seen": 450,
-    "published": 3,
-    "linked_existing": 428,
+    "published": 1,
+    "linked_existing": 430,
     "blocked": 19,
     "reconciled": 431
   },
@@ -23,16 +23,6 @@
   "canonical_event_ids_remapped": 0,
   "canonical_event_id_remaps": [],
   "published": [
-    {
-      "candidate_id": "candidate-ithra-events-ithra-childrens-festival-2026-20260711-d6d5cc99",
-      "event_id": "event-ithra-childrens-festival-2026",
-      "title": "Ithra Children's Festival 2026"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-museum-story-time-20260711-1104734c",
-      "event_id": "event-museum-story-time",
-      "title": "Museum Story Time"
-    },
     {
       "candidate_id": "candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702",
       "event_id": "event-music-festival-mdlbeast-soundstorm",
@@ -623,6 +613,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-ithra-childrens-festival-2026-20260711-d6d5cc99",
+      "event_id": "event-ithra-childrens-festival-2026",
+      "title": "Ithra Children's Festival 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-leap-then-look-20260711-99d88224",
       "event_id": "event-leap-then-look",
       "title": "Leap Then Look!",
@@ -650,7 +646,7 @@
       "candidate_id": "candidate-ithra-events-play-with-shadows-20260711-9984f169",
       "event_id": "event-ithra-childrens-festival-2026",
       "title": "Play with Shadows",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-puppet-world-20260711-3b43fb64",
@@ -788,7 +784,7 @@
       "candidate_id": "candidate-ithra-events-little-dot-20260711-6f97a4be",
       "event_id": "event-ithra-childrens-festival-2026",
       "title": "Little Dot",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-my-neighbor-totoro-20260711-f3bc5c57",
@@ -812,6 +808,12 @@
       "candidate_id": "candidate-ithra-events-the-house-of-ideas-20260711-26aaa6b2",
       "event_id": "event-the-house-of-ideas",
       "title": "The House of Ideas",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-museum-story-time-20260711-1104734c",
+      "event_id": "event-museum-story-time",
+      "title": "Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
