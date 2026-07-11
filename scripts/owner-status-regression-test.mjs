@@ -27,11 +27,18 @@ assert.equal(typeof status.source_sync?.diagnostics_status, 'string');
 assert.ok(status.source_sync?.public_delta === 'baseline' || typeof status.source_sync?.public_delta === 'number');
 assert.equal(typeof status.source_sync?.blocked_reasons, 'object');
 assert.equal(Array.isArray(status.source_sync?.collector_error_sources), true);
+assert.equal(status.search_visibility?.technical_status, 'READY_FOR_CRAWL');
+assert.equal(status.search_visibility?.indexnow_status, 'AUTOMATED_AFTER_DEPLOY');
+assert.equal(typeof status.search_visibility?.indexnow_urls_queued, 'number');
+assert.equal(status.search_visibility?.event_schema_pages, status.catalog.public_events * 2);
+assert.match(status.search_visibility?.links?.google_search_console || '', /search\.google\.com\/search-console/);
+assert.match(status.search_visibility?.links?.bing_webmaster || '', /bing\.com\/webmasters/);
 assert.match(html, /أسباب الحجب في آخر دورة/);
 assert.match(html, /مصادر تحتاج إصلاحًا/);
 assert.match(html, /اتجاه نمو الكتالوج/);
 assert.match(html, /دورات متتالية بلا نمو/);
 assert.match(html, /مؤجلة بجدولة تكيفية/);
+assert.match(html, /الظهور في البحث والذكاءات/);
 assert.match(html, /<meta name="robots" content="noindex,nofollow"/);
 
 console.log(`OWNER_STATUS_TEST_OK blocked=${status.source_sync.blocked_remaining} errors=${status.source_sync.collector_error_sources.length}`);

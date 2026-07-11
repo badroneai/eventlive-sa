@@ -93,7 +93,13 @@ for (const route of registry.routes) {
     const serialized = JSON.stringify(value);
     assert.ok(!serialized.includes('https://eventme.live/events/'), `${relative} English JSON-LD points to an Arabic event route`);
     assert.ok(!/(?:Day|Cities|PM|AM)[\u0621-\u064a]|[\u0621-\u064a](?:Day|Cities|PM|AM)/u.test(serialized), `${relative} English JSON-LD contains a mixed-language word`);
-    if (value && typeof value === 'object' && !Array.isArray(value)) assert.equal(value.inLanguage, 'en-SA');
+    if (value && typeof value === 'object' && !Array.isArray(value)) {
+      if (value['@type'] === 'WebSite') {
+        assert.deepEqual(value.inLanguage, ['ar-SA', 'en-SA'], 'the global WebSite entity must declare both supported languages');
+      } else {
+        assert.equal(value.inLanguage, 'en-SA');
+      }
+    }
   });
 }
 

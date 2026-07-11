@@ -20,6 +20,15 @@
 ## Lifecycle order
 `normalize -> validate -> preview -> diff -> publish -> archive`
 
+## Search and AI discovery
+- `seo-discovery-utils.mjs`
+  - Keeps semantic page fingerprints and stable `lastmod` values so unchanged event pages do not look newly modified on every six-hour build.
+- `submit-indexnow.mjs` (`npm run seo:indexnow`)
+  - Submits only new or materially changed public URLs to IndexNow after deployment. Use `npm run seo:indexnow:all` for a complete release notification.
+- `seo-freshness-regression-test.mjs` / `indexnow-regression-test.mjs`
+  - Protect sitemap freshness, bilingual delta URLs, ownership-key publication, and safe submission boundaries.
+- Operating contract: `EVENTLIVE-SEARCH-AND-AI-VISIBILITY-STRATEGY.md`.
+
 ## Event kinds (moment vs program)
 - `event-kind-utils.mjs`
   - Shared classifier: windows longer than 14 days are `program` (برنامج ممتد), otherwise `moment` (فعالية لحظية). Explicit `event_kind` on a catalog event overrides the duration rule.

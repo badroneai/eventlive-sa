@@ -41,6 +41,13 @@ const legacyBrandPattern = /\bEventMe\b/;
 
 assert.match(robots, /^User-agent: \*/m, 'robots.txt must allow standard crawlers');
 assert.match(robots, /Allow: \//, 'robots.txt must allow the public site');
+for (const agent of ['OAI-SearchBot', 'ChatGPT-User', 'PerplexityBot', 'Perplexity-User', 'Claude-SearchBot', 'Claude-User']) {
+  assert.match(robots, new RegExp(`^User-agent: ${agent}$`, 'm'), `robots.txt must explicitly allow ${agent}`);
+}
+for (const privateFeed of ['/events.json', '/events-catalog.json', '/sources.json', '/methodology.json', '/trust.json', '/activation.json', '/readiness.json', '/owner-status.json']) {
+  assert.match(robots, new RegExp(`^Disallow: ${privateFeed.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$`, 'm'), `robots.txt must keep ${privateFeed} out of crawler feeds`);
+}
+assert.doesNotMatch(robots, /^Disallow: \/(?:sources|methodology|trust|source-health|owner-status)\.html$/m, 'owner HTML must remain crawlable so noindex can be observed');
 assert.match(robots, /Host: eventme\.live/, 'robots.txt must preserve the production host');
 assert.match(robots, /Sitemap: https:\/\/eventme\.live\/sitemap\.xml/, 'robots.txt must point to the production sitemap');
 assert.doesNotMatch(robots, legacyDomainPattern, 'robots.txt must not leak legacy domains');
@@ -58,13 +65,12 @@ assert.match(llms, new RegExp(`Events with source images: ${counts.sourceImages}
 
 for (const expectedUrl of [
   `${siteUrl}/live-status.json`,
-  `${siteUrl}/sources.json`,
-  `${siteUrl}/readiness.json`,
-  `${siteUrl}/activation.json`,
-  `${siteUrl}/methodology.json`,
+  `${siteUrl}/feeds/all.json`,
+  `${siteUrl}/feeds/all.xml`,
   `${siteUrl}/events.ics`,
   `${siteUrl}/sitemap.xml`,
   `${siteUrl}/organizers.html`,
+  `${siteUrl}/about.html`,
   `${siteUrl}/saudi-events-today.html`,
   `${siteUrl}/saudi-events-tomorrow.html`,
   `${siteUrl}/saudi-events-weekend.html`,
@@ -83,6 +89,12 @@ for (const expectedUrl of [
 
 for (const ownerOnlyUrl of [
   `${siteUrl}/events.json`,
+  `${siteUrl}/events-catalog.json`,
+  `${siteUrl}/sources.json`,
+  `${siteUrl}/methodology.json`,
+  `${siteUrl}/trust.json`,
+  `${siteUrl}/activation.json`,
+  `${siteUrl}/readiness.json`,
   `${siteUrl}/trust.html`,
   `${siteUrl}/sources.html`,
   `${siteUrl}/methodology.html`
@@ -103,6 +115,8 @@ assert.match(aiPolicy, /Ended events may be summarized as normal public event re
 assert.match(aiPolicy, /Do not present source candidates, discovery-only records, backlog rows, or draft data as confirmed public events/i, 'ai-policy.txt must protect unpublished data');
 assert.match(aiPolicy, /Do not bypass protected sites, bot defenses, authentication walls, or partner-only APIs/i, 'ai-policy.txt must preserve acquisition boundaries');
 assert.match(aiPolicy, /https:\/\/eventme\.live\/llms\.txt/, 'ai-policy.txt must point AI systems to llms.txt');
+assert.match(aiPolicy, /https:\/\/eventme\.live\/feeds\/all\.json/, 'ai-policy.txt must point to the public JSON Feed');
+assert.doesNotMatch(aiPolicy, /https:\/\/eventme\.live\/(?:sources|methodology|readiness|activation)\.json/, 'ai-policy.txt must not promote owner-only machine feeds');
 assert.doesNotMatch(aiPolicy, legacyDomainPattern, 'ai-policy.txt must not leak legacy domains');
 assert.doesNotMatch(aiPolicy, legacyBrandPattern, 'ai-policy.txt must not leak old naming');
 

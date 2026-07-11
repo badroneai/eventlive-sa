@@ -6,6 +6,7 @@ import { AUDIENCE_TAXONOMY, audienceObjects, classifyAudiences } from './audienc
 import { normalizeSaudiCity } from './city-utils.mjs';
 import { classifyEventKind, eventKindLabel, getEventStatus } from './event-kind-utils.mjs';
 import { isLikelyImageAssetUrl, isRejectedImageAssetUrl, isSourcePageLikeImageUrl } from './image-asset-utils.mjs';
+import { buildIndexNowDelta, reconcileSeoPageState } from './seo-discovery-utils.mjs';
 import { coordinatesQuery, resolveVenueLocation } from './venue-location-utils.mjs';
 
 const root = process.cwd();
@@ -181,6 +182,38 @@ function readJson(relativePath, fallback = {}) {
 function writeJson(relativePath, value) {
   fs.mkdirSync(path.dirname(path.join(distDir, relativePath)), { recursive: true });
   fs.writeFileSync(path.join(distDir, relativePath), `${JSON.stringify(value, null, 2)}\n`, 'utf8');
+}
+
+function prepareSeoDiscovery(events) {
+  const statePath = path.join(root, 'data', 'seo_page_state.json');
+  const previousState = fs.existsSync(statePath)
+    ? JSON.parse(fs.readFileSync(statePath, 'utf8'))
+    : { version: 1, pages: {} };
+  const reconciled = reconcileSeoPageState(events, previousState, buildAt);
+  fs.writeFileSync(statePath, `${JSON.stringify(reconciled.state, null, 2)}\n`, 'utf8');
+
+  const urls = buildIndexNowDelta({
+    changedEvents: reconciled.changedEvents,
+    removedSlugs: reconciled.removedSlugs,
+    siteUrl
+  });
+  const cacheDir = path.join(root, '.eventlive-cache');
+  fs.mkdirSync(cacheDir, { recursive: true });
+  fs.writeFileSync(path.join(cacheDir, 'indexnow-delta.json'), `${JSON.stringify({
+    generated_at: buildAt,
+    changed_events: reconciled.changedEvents.length,
+    unchanged_events: reconciled.unchangedEvents.length,
+    removed_events: reconciled.removedSlugs.length,
+    urls
+  }, null, 2)}\n`, 'utf8');
+
+  return {
+    changed_events: reconciled.changedEvents.length,
+    unchanged_events: reconciled.unchangedEvents.length,
+    removed_events: reconciled.removedSlugs.length,
+    indexnow_urls: urls.length,
+    indexnow_key: fs.readFileSync(path.join(root, 'data', 'indexnow-key.txt'), 'utf8').trim()
+  };
 }
 
 function writeText(fullPath, value) {
@@ -966,11 +999,12 @@ function platformWebSiteJsonLd() {
   return jsonLd({
     '@context': 'https://schema.org',
     '@type': 'WebSite',
+    '@id': `${siteUrl}/#website`,
     name: platformName,
-    alternateName: ['EventLive Saudi Events', 'فعاليات السعودية الحية'],
-    url: siteUrl,
-    inLanguage: 'ar-SA',
-    publisher: { '@type': 'Organization', name: platformName, url: siteUrl },
+    alternateName: ['إيفنت لايف', platformDomain],
+    url: `${siteUrl}/`,
+    inLanguage: ['ar-SA', 'en-SA'],
+    publisher: { '@id': `${siteUrl}/#organization` },
     potentialAction: {
       '@type': 'SearchAction',
       target: {
@@ -982,7 +1016,38 @@ function platformWebSiteJsonLd() {
   });
 }
 
-function baseHead({ title, description, canonical, image, manifestHref = './manifest.webmanifest', type = 'website', imageAlt = '', noindex = false }) {
+function platformOrganizationJsonLd() {
+  return jsonLd({
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${siteUrl}/#organization`,
+    name: platformName,
+    alternateName: 'إيفنت لايف',
+    legalName: 'مؤسسة سميرة محمد السلمان للاتصالات وتقنية المعلومات',
+    url: `${siteUrl}/`,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${siteUrl}/icon.svg`,
+      contentUrl: `${siteUrl}/icon.svg`,
+      width: 512,
+      height: 512
+    },
+    email: 'hello@eventme.live',
+    areaServed: { '@type': 'Country', name: 'Saudi Arabia' },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'event information and organizer support',
+      email: 'hello@eventme.live',
+      availableLanguage: ['ar', 'en']
+    }
+  });
+}
+
+function isHomeCanonical(canonical = '') {
+  return canonical === siteUrl || canonical === `${siteUrl}/`;
+}
+
+function baseHead({ title, description, canonical, image, manifestHref = './manifest.webmanifest', type = 'website', imageAlt = '', noindex = false, modifiedAt = buildAt }) {
   const shareImage = image || publicAssetUrl('/assets/eventlive-hero.png');
   const metaDescription = seoDescription(description);
   const safeImageAlt = imageAlt || title;
@@ -1013,13 +1078,13 @@ function baseHead({ title, description, canonical, image, manifestHref = './mani
   <meta property="og:description" content="${escapeHtml(metaDescription)}" />
   <meta property="og:image" content="${escapeHtml(shareImage)}" />
   <meta property="og:image:alt" content="${escapeHtml(safeImageAlt)}" />
-  <meta property="og:updated_time" content="${escapeHtml(buildAt)}" />
+  <meta property="og:updated_time" content="${escapeHtml(modifiedAt)}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${escapeHtml(title)}" />
   <meta name="twitter:description" content="${escapeHtml(metaDescription)}" />
   <meta name="twitter:image" content="${escapeHtml(shareImage)}" />
   <meta name="twitter:image:alt" content="${escapeHtml(safeImageAlt)}" />
-  ${platformWebSiteJsonLd()}`;
+  ${isHomeCanonical(canonical) ? `${platformWebSiteJsonLd()}\n  ${platformOrganizationJsonLd()}` : ''}`;
 }
 
 function analyticsHeadSnippet() {
@@ -1122,11 +1187,11 @@ function analyticsRuntimeScript() {
 
 function header(relativePrefix = './') {
   const mobileLinks = `<nav aria-label="قائمة الجوال"><a href="${relativePrefix}events.html">كل الفعاليات</a><a href="${relativePrefix}today-events.html">فعاليات اليوم</a><a href="${relativePrefix}this-month.html">هذا الشهر</a><a href="${relativePrefix}cities.html">المدن</a><a href="${relativePrefix}categories.html">التصنيفات</a><a href="${relativePrefix}audiences.html">الجمهور</a><a href="${relativePrefix}organizers.html">للمنظمين</a><a href="${relativePrefix}organizer-intake.html">إضافة فعالية</a></nav>`;
-  return `<header class="topbar"><div class="wrap nav"><a class="brand" href="${relativePrefix}index.html"><span class="brand-mark">EL</span><b>${brandVisual}</b></a><nav class="nav-links" aria-label="روابط رئيسية"><a href="${relativePrefix}events.html">كل الفعاليات</a><a href="${relativePrefix}today-events.html">اليوم</a><a href="${relativePrefix}this-month.html">هذا الشهر</a><a href="${relativePrefix}cities.html">المدن</a><a href="${relativePrefix}categories.html">التصنيفات</a><a href="${relativePrefix}audiences.html">الجمهور</a><a href="${relativePrefix}organizers.html">للمنظمين</a><a href="${relativePrefix}organizer-intake.html">إضافة فعالية</a></nav><details class="mobile-site-menu"><summary aria-label="فتح قائمة التنقل">☰</summary>${mobileLinks}</details><a class="cta" href="${relativePrefix}today.html"><span class="live-dot"></span> الآن</a></div></header>`;
+  return `<header class="topbar"><div class="wrap nav"><a class="brand" href="${relativePrefix}"><span class="brand-mark">EL</span><b>${brandVisual}</b></a><nav class="nav-links" aria-label="روابط رئيسية"><a href="${relativePrefix}events.html">كل الفعاليات</a><a href="${relativePrefix}today-events.html">اليوم</a><a href="${relativePrefix}this-month.html">هذا الشهر</a><a href="${relativePrefix}cities.html">المدن</a><a href="${relativePrefix}categories.html">التصنيفات</a><a href="${relativePrefix}audiences.html">الجمهور</a><a href="${relativePrefix}organizers.html">للمنظمين</a><a href="${relativePrefix}organizer-intake.html">إضافة فعالية</a></nav><details class="mobile-site-menu"><summary aria-label="فتح قائمة التنقل">☰</summary>${mobileLinks}</details><a class="cta" href="${relativePrefix}today.html"><span class="live-dot"></span> الآن</a></div></header>`;
 }
 
 function footer(relativePrefix = './') {
-  return `<footer class="footer"><div class="wrap">EventLive يبقي الدومين الرسمي ${platformDomain} ويربط كل فعالية بمصدرها قدر الإمكان. آخر بناء: ${formatDate(buildAt)}<div class="footer-links"><a href="${relativePrefix}privacy.html">الخصوصية</a><a href="${relativePrefix}terms.html">الشروط</a><a href="${relativePrefix}source-rights.html">حقوق المصادر</a></div></div></footer>`;
+  return `<footer class="footer"><div class="wrap">EventLive يبقي الدومين الرسمي ${platformDomain} ويربط كل فعالية بمصدرها قدر الإمكان. آخر بناء: ${formatDate(buildAt)}<div class="footer-links"><a href="${relativePrefix}about.html">عن المنصة</a><a href="${relativePrefix}privacy.html">الخصوصية</a><a href="${relativePrefix}terms.html">الشروط</a><a href="${relativePrefix}source-rights.html">حقوق المصادر</a></div></div></footer>`;
 }
 
 function hideOwnerOnlyPublicLinks(html) {
@@ -1453,19 +1518,54 @@ function eventAudienceJsonLd(event = {}) {
   return labels.filter(Boolean).map((label) => ({ '@type': 'Audience', audienceType: label }));
 }
 
+function eventAccessIsFree(event = {}) {
+  const label = String(event.price_label || '').trim();
+  if (/مجاني|free|بدون رسوم/i.test(label)) return true;
+  if (/مدفوع|paid|ريال|sar|ر\.س/i.test(label)) return false;
+  return undefined;
+}
+
 function eventOfferJsonLd(event = {}, canonical = '') {
-  const url = event.ticket_url || event.registration_url || event.source_url || event.evidence_url || canonical;
+  if (event.status === 'ended') return undefined;
+  const url = event.ticket_url || event.registration_url;
   if (!url) return undefined;
   const priceText = String(event.price_label || '').trim();
-  const free = /مجاني|free|بدون رسوم/i.test(priceText);
+  const free = eventAccessIsFree(event) === true;
+  const registrationState = String(event.registration_status || event.ticket_status || '').trim();
+  const availability = /closed|sold.?out|full|مغلق|نفدت|مكتمل/i.test(registrationState)
+    ? 'https://schema.org/SoldOut'
+    : /open|available|on.?sale|متاح|مفتوح/i.test(registrationState)
+      ? 'https://schema.org/InStock'
+      : undefined;
   return {
     '@type': 'Offer',
     url,
-    availability: 'https://schema.org/InStock',
+    availability,
     price: free ? '0' : undefined,
     priceCurrency: free ? 'SAR' : undefined,
-    category: priceText || (event.registration_url ? 'Registration' : 'Event access')
+    category: priceText || (event.ticket_url ? 'Ticket' : 'Registration')
   };
+}
+
+function structuredPlainText(value = '') {
+  return String(value || '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&mdash;|&#8212;/gi, '—')
+    .replace(/&ndash;|&#8211;/gi, '–')
+    .replace(/&amp;/gi, '&')
+    .replace(/&quot;|&#34;/gi, '"')
+    .replace(/&#39;|&apos;/gi, "'")
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function eventSchemaDescription(event = {}) {
+  const value = event.program_outline?.official_description
+    || event.description
+    || event.summary
+    || `${event.title || 'فعالية'} عبر EventLive.`;
+  return structuredPlainText(value).slice(0, 1_500);
 }
 
 function eventPublicJson(event = {}, canonical = '', schemaImage = '') {
@@ -1483,6 +1583,7 @@ function eventPublicJson(event = {}, canonical = '', schemaImage = '') {
     trust_tier: event.trust_tier,
     trust_label: event.trust_label,
     verified_at: event.verified_at,
+    page_modified_at: event.seo_modified_at,
     verification_method: event.verification_method,
     freshness_hours: event.freshness_hours,
     city: event.city_label || cityLabel(event.city),
@@ -1524,10 +1625,10 @@ function eventPublicJson(event = {}, canonical = '', schemaImage = '') {
       location: eventLocationJsonLd(event, canonical),
       organizer: { '@type': 'Organization', name: event.organizer },
       image: schemaImage ? [schemaImage] : undefined,
-      description: event.summary,
+      description: eventSchemaDescription(event),
       url: canonical,
       mainEntityOfPage: canonical,
-      isAccessibleForFree: /مجاني|free|بدون رسوم/i.test(String(event.price_label || '')),
+      isAccessibleForFree: eventAccessIsFree(event),
       keywords: eventKeywords(event).join(', '),
       audience: eventAudienceJsonLd(event),
       sameAs: unique([event.source_url, event.evidence_url]).filter(Boolean),
@@ -1771,7 +1872,9 @@ function renderEventSessions(event, sessionsTitle, sessionsNote) {
 
 function renderEventDetail(event) {
   const relative = '../';
-  const description = `${event.title} في ${cityLabel(event.city)}: الوقت، الموقع، المصدر، وحالة الجدول الحي عبر EventLive.`;
+  const city = cityLabel(event.city);
+  const description = `${event.title} في ${city} من ${formatDate(event.starts_at)} إلى ${formatDate(event.ends_at)}. ${event.venue ? `الموقع: ${event.venue}. ` : ''}تحقق من المصدر والجدول الحي عبر EventLive.`;
+  const seoTitle = `${event.title} في ${city} | EventLive`;
   const canonical = absoluteUrl(`events/${event.file_slug}.html`);
   const image = event.image_url.startsWith('/') ? `${relative}${event.image_url.slice(1)}` : event.image_url;
   const schemaImage = publicAssetUrl(event.image_url);
@@ -1787,20 +1890,21 @@ function renderEventDetail(event) {
   const officialSessions = officialSessionRows(event);
   const sessions = renderEventSessions(event, sessionsTitle, sessionsNote);
   const outline = event.program_outline || {};
+  const sourceDescription = structuredPlainText(outline.official_description || event.description || '');
   const outlineLists = [
     ['الأهداف', outline.goals],
     ['المميزات', outline.features],
     ['المتطلبات', outline.requirements]
   ].filter(([, items]) => Array.isArray(items) && items.length);
   const registrationDeadline = outline.registration_deadline || event.registration_deadline || '';
-  const programOutline = (outline.official_description || outline.duration_text || registrationDeadline || outlineLists.length)
-    ? `<section class="section"><div class="wrap"><article class="readiness" aria-label="محاور البرنامج الرسمية"><span>من المصدر الرسمي</span><h2>محاور البرنامج</h2>${outline.official_description ? `<p>${escapeHtml(outline.official_description)}</p>` : ''}<div class="signal-strip">${outline.duration_text ? `<div class="signal"><span>المدة</span><b>${escapeHtml(outline.duration_text)}</b></div>` : ''}${registrationDeadline ? `<div class="signal"><span>إغلاق التسجيل</span><b>${escapeHtml(formatDate(registrationDeadline))}</b></div>` : ''}${outline.provider ? `<div class="signal"><span>المزود</span><b>${escapeHtml(outline.provider)}</b></div>` : ''}</div><div class="grid">${outlineLists.map(([label, items]) => `<div class="program-check"><b>${escapeHtml(label)}</b><ul>${items.slice(0, 6).map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul></div>`).join('')}</div></article></div></section>`
+  const programOutline = (sourceDescription || outline.duration_text || registrationDeadline || outlineLists.length)
+    ? `<section class="section"><div class="wrap"><article class="readiness" aria-label="محاور البرنامج الرسمية"><span>من المصدر الرسمي</span><h2>محاور البرنامج</h2>${sourceDescription ? `<p>${escapeHtml(sourceDescription)}</p>` : ''}<div class="signal-strip">${outline.duration_text ? `<div class="signal"><span>المدة</span><b>${escapeHtml(outline.duration_text)}</b></div>` : ''}${registrationDeadline ? `<div class="signal"><span>إغلاق التسجيل</span><b>${escapeHtml(formatDate(registrationDeadline))}</b></div>` : ''}${outline.provider ? `<div class="signal"><span>المزود</span><b>${escapeHtml(outline.provider)}</b></div>` : ''}</div><div class="grid">${outlineLists.map(([label, items]) => `<div class="program-check"><b>${escapeHtml(label)}</b><ul>${items.slice(0, 6).map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul></div>`).join('')}</div></article></div></section>`
     : '';
   const eventFaq = eventFaqItems(event);
   const html = `<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  ${baseHead({ title: `${event.title} | EventLive`, description, canonical, image: schemaImage, manifestHref: '../manifest.webmanifest', type: 'event', imageAlt: event.image_alt || event.title })}
+  ${baseHead({ title: seoTitle, description, canonical, image: schemaImage, manifestHref: '../manifest.webmanifest', type: 'event', imageAlt: event.image_alt || event.title, modifiedAt: event.seo_modified_at || buildAt })}
   <link rel="alternate" type="application/json" title="${escapeHtml(event.title)} - EventLive JSON" href="${escapeHtml(jsonHref)}" />
   <link rel="alternate" type="text/calendar" title="${escapeHtml(event.title)} - EventLive ICS" href="${escapeHtml(`${event.file_slug}.ics`)}" />
   ${pageCss}
@@ -1811,7 +1915,8 @@ function renderEventDetail(event) {
     inLanguage: 'ar-SA',
     name: event.title,
     url: canonical,
-    isPartOf: { '@type': 'WebSite', name: platformName, url: siteUrl }
+    isPartOf: { '@id': `${siteUrl}/#website` },
+    dateModified: event.seo_modified_at || buildAt
   })}
   ${jsonLd({
     '@context': 'https://schema.org',
@@ -1824,10 +1929,10 @@ function renderEventDetail(event) {
     location: eventLocationJsonLd(event, canonical),
     organizer: { '@type': 'Organization', name: event.organizer },
     image: schemaImage ? [schemaImage] : undefined,
-    description: event.summary,
+    description: eventSchemaDescription(event),
     url: canonical,
     mainEntityOfPage: canonical,
-    isAccessibleForFree: /مجاني|free|بدون رسوم/i.test(String(event.price_label || '')),
+    isAccessibleForFree: eventAccessIsFree(event),
     keywords: eventKeywords(event).join(', '),
     audience: eventAudienceJsonLd(event),
     sameAs: unique([event.source_url, event.evidence_url]).filter(Boolean),
@@ -3212,7 +3317,7 @@ function readReport(relativePath, fallback = {}) {
   }
 }
 
-function writeOwnerStatusPage(events) {
+function writeOwnerStatusPage(events, seoDiscovery = {}) {
   const analytics = readReport('reports/analytics-status.json', {});
   const runState = readReport('reports/source-run-state-report.json', {});
   const autoPublish = readReport('reports/source-auto-publish-report.json', {});
@@ -3248,6 +3353,25 @@ function writeOwnerStatusPage(events) {
       tracked_events: analytics.tracked_events || [],
       privacy: analytics.privacy || { cookies: false, pii: false },
       note: 'هذه الصفحة تثبت أن التتبع مزروع في الصفحات العامة. أرقام الزوار الحقيقية تظهر بعد تفعيل لوحة مزود التحليلات للدومين.'
+    },
+    search_visibility: {
+      technical_status: 'READY_FOR_CRAWL',
+      google_search_console_status: 'OWNER_ACCOUNT_VERIFICATION_REQUIRED',
+      sitemap_url: `${siteUrl}/sitemap.xml`,
+      robots_url: `${siteUrl}/robots.txt`,
+      indexnow_status: 'AUTOMATED_AFTER_DEPLOY',
+      changed_events: Number(seoDiscovery.changed_events || 0),
+      unchanged_events: Number(seoDiscovery.unchanged_events || 0),
+      removed_events: Number(seoDiscovery.removed_events || 0),
+      indexnow_urls_queued: Number(seoDiscovery.indexnow_urls || 0),
+      event_schema_pages: events.length * 2,
+      locales: ['ar-SA', 'en-SA'],
+      links: {
+        google_search_console: 'https://search.google.com/search-console?resource_id=sc-domain:eventme.live',
+        bing_webmaster: `https://www.bing.com/webmasters/home?siteUrl=${encodeURIComponent(`${siteUrl}/`)}`,
+        rich_results_test: `https://search.google.com/test/rich-results?url=${encodeURIComponent(`${siteUrl}/`)}`,
+        pagespeed: `https://pagespeed.web.dev/analysis?url=${encodeURIComponent(`${siteUrl}/`)}`
+      }
     },
     source_sync: {
       last_run_at: runState.generated_at || sourceOps.generated_at || '',
@@ -3315,6 +3439,7 @@ ${header('./')}
   <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span>للمالك فقط</span><h1>حالة التشغيل والقياس</h1><p class="lead">افتح هذه الصفحة بعد النشر لمعرفة آخر جلب دوري، كم نما الكتالوج، كم بقي محجوبًا، وهل القياس مزروع. أرقام الزوار التفصيلية لا تظهر إلا بعد تفعيل لوحة Plausible للدومين بحساب المالك.</p><div class="signal-strip"><div class="signal"><span>فعاليات منشورة</span><b>${status.catalog.public_events}</b></div><div class="signal"><span>التغير آخر دورة</span><b>${escapeHtml(publicDeltaLabel)}</b></div><div class="signal"><span>مرشحون جدد</span><b>${status.source_sync.new_active_candidates}</b></div><div class="signal"><span>جداول حية</span><b>${status.catalog.live_ready}</b></div></div></div></section>
   <section class="section"><div class="wrap grid">
     <article class="activation-card"><h2>الزيارات والتحليلات</h2><p>حالة الزر: <strong>${escapeHtml(status.analytics.dashboard_status)}</strong></p><p>المزود: <strong>${escapeHtml(status.analytics.provider)}</strong></p><p>الدومين: <strong>${escapeHtml(status.analytics.domain)}</strong></p><p>الخصوصية: بدون كوكيز وبدون بيانات شخصية حسب إعدادات التقرير.</p><p><strong>${escapeHtml(analyticsStatusCopy)}</strong></p><div class="activation-actions"><a class="cta" href="${escapeHtml(analyticsDashboardHref)}" target="_blank" rel="noopener">${escapeHtml(analyticsDashboardLabel)}</a><a class="cta" href="./owner-status.json">بيانات الصفحة JSON</a></div></article>
+    <article class="activation-card"><h2>الظهور في البحث والذكاءات</h2><p>الجاهزية التقنية: <strong>${escapeHtml(status.search_visibility.technical_status)}</strong></p><p>صفحات Event منظمة بالعربية والإنجليزية: <strong>${status.search_visibility.event_schema_pages}</strong></p><p>روابط تغيرت وسترسل إلى IndexNow: <strong>${status.search_visibility.indexnow_urls_queued}</strong></p><p>Search Console: <strong>${escapeHtml(status.search_visibility.google_search_console_status)}</strong></p><div class="activation-actions"><a class="cta" href="${escapeHtml(status.search_visibility.links.google_search_console)}" target="_blank" rel="noopener">Google Search Console</a><a class="cta" href="${escapeHtml(status.search_visibility.links.bing_webmaster)}" target="_blank" rel="noopener">Bing Webmaster</a><a class="cta" href="${escapeHtml(status.search_visibility.links.rich_results_test)}" target="_blank" rel="noopener">اختبار النتائج المنسقة</a><a class="cta" href="${escapeHtml(status.search_visibility.links.pagespeed)}" target="_blank" rel="noopener">PageSpeed</a></div></article>
     <article class="activation-card"><h2>آخر جلب دوري</h2><p>آخر تقرير: <strong>${escapeHtml(status.source_sync.last_run_at || 'غير متاح')}</strong></p><p>مستحقة الآن: <strong>${status.source_sync.due_sources}</strong> · نُفذت: <strong>${status.source_sync.attempted_sources}</strong> · مؤجلة بجدولة تكيفية: <strong>${status.source_sync.deferred_sources}</strong></p><p>مصادر منتجة: <strong>${status.source_sync.productive_sources}</strong> · أخطاء هذه الدورة: <strong>${status.source_sync.collector_errors}</strong> · أخطاء متراكمة تحت المراقبة: <strong>${status.source_sync.persistent_collector_errors}</strong></p><p>الفحص العميق: <strong>${escapeHtml(status.source_sync.diagnostics_status)}</strong> · موعده التالي: <strong>${escapeHtml(status.source_sync.diagnostics_next_due_at || 'غير متاح')}</strong></p><p>مرشحون: <strong>${status.source_sync.candidates_seen}</strong> · منشور جديد: <strong>${status.source_sync.published_new}</strong> · مربوط بموجود: <strong>${status.source_sync.linked_existing}</strong></p><div class="activation-actions"><a class="cta" href="./source-health.html">صحة المصادر</a><a class="cta" href="./source-coverage-gaps.html">فجوات التغطية</a></div></article>
     <article class="activation-card"><h2>اتجاه نمو الكتالوج</h2><p>حالة الدورة: <strong>${escapeHtml(status.source_sync.growth_status)}</strong></p><p>التغير العام: <strong>${escapeHtml(publicDeltaLabel)}</strong> · مرشحون جدد: <strong>${status.source_sync.new_active_candidates}</strong> · منتهية جديدة: <strong>${status.source_sync.new_ended_events}</strong></p><p>دورات متتالية بلا نمو: <strong>${status.source_sync.no_growth_streak}</strong> · فقد ناتج منشور: <strong>${status.source_sync.lost_published_output ? 'نعم' : 'لا'}</strong></p></article>
   </div></section>
@@ -3802,6 +3927,51 @@ ${header('./')}
 ${footer('./')}
 </body></html>`;
   writeText(path.join(distDir, 'updates.html'), html);
+}
+
+function writeAboutPage(events) {
+  const canonical = absoluteUrl('about.html');
+  const active = events.filter((event) => event.status !== 'ended').length;
+  const liveReady = events.filter((event) => event.live_schedule_ready).length;
+  const html = `<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  ${baseHead({
+    title: 'عن EventLive | مرجع فعاليات السعودية الحي',
+    description: 'تعرف على EventLive، مرجع فعاليات السعودية الحي الذي يجمع المواعيد والمدن والمواقع والجداول من مصادر قابلة للفحص ويتجدد دوريًا.',
+    canonical
+  })}
+  ${pageCss}
+  ${jsonLd({
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    inLanguage: 'ar-SA',
+    name: 'عن EventLive',
+    description: 'مرجع حي لفعاليات السعودية يركز على ما يحدث الآن وما يبدأ لاحقًا ومعلومات الحضور الموثقة.',
+    url: canonical,
+    mainEntity: { '@id': `${siteUrl}/#organization` },
+    isPartOf: { '@id': `${siteUrl}/#website` },
+    dateModified: buildAt
+  })}
+  ${platformOrganizationJsonLd()}
+</head>
+<body>
+${header('./')}
+<main>
+  <nav class="breadcrumbs wrap" aria-label="مسار التنقل"><a href="./">EventLive</a><span>/</span><strong>عن المنصة</strong></nav>
+  <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span>مرجع حضور حي</span><h1>عن EventLive</h1><p class="lead">نبني مرجعًا سعوديًا يساعد الزائر قبل الفعالية وأثناءها: متى تبدأ، ماذا يحدث الآن، ما التالي، أين المكان، وما المصدر الذي يمكن الرجوع إليه.</p><div class="signal-strip"><div class="signal"><span>فعاليات عامة</span><b>${events.length}</b></div><div class="signal"><span>قادمة أو جارية</span><b>${active}</b></div><div class="signal"><span>جداول حية</span><b>${liveReady}</b></div><div class="signal"><span>دورة التحديث</span><b>كل 6 ساعات</b></div></div></div></section>
+  <section class="section"><div class="wrap grid">
+    <article class="activation-card"><h2>القيمة التي نقدمها</h2><p>EventLive ليس سوق تذاكر ولا قائمة روابط. القيمة الأساسية هي حقيقة الحضور في الوقت المناسب: العد التنازلي، حالة الفعالية، الجلسات، المكان، الاتجاهات، ورابط المصدر.</p></article>
+    <article class="activation-card"><h2>كيف نحافظ على الثقة</h2><p>كل فعالية عامة تحمل مصدرًا أو دليلًا قابلًا للفحص. مصادر الاكتشاف لا تتحول تلقائيًا إلى حقائق منشورة، والتفاصيل غير المعروفة لا تعرض على أنها مؤكدة.</p></article>
+    <article class="activation-card"><h2>كيف تتجدد البيانات</h2><p>تعمل دورة آلية كل ست ساعات لجمع التغييرات، منع التكرار، التحقق من الوقت والمدينة، إعادة بناء العربية والإنجليزية، ثم نشر الموقع بعد عبور اختبارات الجودة.</p></article>
+    <article class="activation-card"><h2>الجهة المشغلة والتواصل</h2><p>تشغل المنصة مؤسسة سميرة محمد السلمان للاتصالات وتقنية المعلومات. للتواصل أو تزويدنا ببرنامج فعالية رسمي: <a href="mailto:hello@eventme.live">hello@eventme.live</a>.</p></article>
+  </div></section>
+  <section class="section"><div class="wrap"><article class="readiness"><h2>ابدأ من احتياجك</h2><p>تصفح الفعاليات، ابدأ من مدينتك، أو أرسل برنامج فعالية رسميًا ليظهر للحضور بصفحة وجدول حي.</p><div class="activation-actions"><a class="cta" href="./events.html">تصفح الفعاليات</a><a class="cta" href="./cities.html">اختر المدينة</a><a class="cta" href="./organizers.html">للمنظمين</a><a class="cta" href="./guides.html">الأدلة</a></div></article></div></section>
+</main>
+${footer('./')}
+</body>
+</html>`;
+  writeText(path.join(distDir, 'about.html'), html);
 }
 
 function writeReadinessPage(events) {
@@ -6018,7 +6188,7 @@ function writeSitemap(events = []) {
     .sort()
     .map((file) => {
       const event = eventByPage.get(file);
-      const lastmod = dateValue(event?.updated_at || event?.ends_at || event?.starts_at)?.toISOString().slice(0, 10) || buildAt.slice(0, 10);
+      const lastmod = dateValue(event?.seo_modified_at)?.toISOString().slice(0, 10) || buildAt.slice(0, 10);
       return `  <url><loc>${xmlText(`${siteUrl}/${file}`)}</loc><lastmod>${lastmod}</lastmod>${event ? sitemapImageXml(event) : ''}</url>`;
     });
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${urls.join('\n')}\n</urlset>\n`;
@@ -6032,17 +6202,25 @@ function writeAiSearchFiles(events) {
   const ended = events.filter((event) => event.status === 'ended').length;
   const liveReady = events.filter((event) => event.live_schedule_ready).length;
   const sourceImageEvents = events.filter((event) => !event.generated_image && /\/assets\/event-images\//.test(event.image_url || '')).length;
+  const privateMachinePaths = [
+    '/events.json',
+    '/events-catalog.json',
+    '/sources.json',
+    '/methodology.json',
+    '/trust.json',
+    '/activation.json',
+    '/readiness.json',
+    '/source-coverage-gaps.json',
+    '/owner-status.json',
+    '/en/events.json',
+    '/en/events-catalog.json'
+  ];
+  const crawlerGroups = ['OAI-SearchBot', 'ChatGPT-User', 'PerplexityBot', 'Perplexity-User', 'Claude-SearchBot', 'Claude-User', '*']
+    .map((agent) => [`User-agent: ${agent}`, 'Allow: /', ...privateMachinePaths.map((item) => `Disallow: ${item}`)].join('\n'))
+    .join('\n\n');
 
-writeText(path.join(distDir, 'robots.txt'), stripTrailingWhitespace(`User-agent: *
-Allow: /
-Disallow: /events.json
-Disallow: /events-catalog.json
-Disallow: /sources.html
-Disallow: /methodology.html
-Disallow: /trust.html
-Disallow: /source-health.html
-Disallow: /owner-status.html
-Disallow: /owner-status.json
+  writeText(path.join(distDir, 'robots.txt'), stripTrailingWhitespace(`${crawlerGroups}
+
 Host: ${platformDomain}
 Sitemap: ${siteUrl}/sitemap.xml
 `));
@@ -6091,14 +6269,12 @@ Important public pages:
 - Free Saudi events: ${siteUrl}/free-saudi-events.html
 - Saudi events FAQ: ${siteUrl}/saudi-events-faq.html
 - Organizers: ${siteUrl}/organizers.html
-- Readiness: ${siteUrl}/readiness.html
+- About EventLive: ${siteUrl}/about.html
 
 Machine-readable feeds:
 - Live status JSON: ${siteUrl}/live-status.json
-- Sources JSON: ${siteUrl}/sources.json
-- Readiness JSON: ${siteUrl}/readiness.json
-- Activation JSON: ${siteUrl}/activation.json
-- Methodology JSON: ${siteUrl}/methodology.json
+- Public JSON Feed: ${siteUrl}/feeds/all.json
+- Public RSS Feed: ${siteUrl}/feeds/all.xml
 - ICS calendar: ${siteUrl}/events.ics
 - Sitemap: ${siteUrl}/sitemap.xml
 
@@ -6137,9 +6313,8 @@ Boundaries:
 Preferred files:
 - ${siteUrl}/llms.txt
 - ${siteUrl}/live-status.json
-- ${siteUrl}/sources.json
-- ${siteUrl}/readiness.json
-- ${siteUrl}/methodology.json
+- ${siteUrl}/feeds/all.json
+- ${siteUrl}/feeds/all.xml
 - ${siteUrl}/sitemap.xml
 `));
 }
@@ -6213,9 +6388,39 @@ function htmlRelativePrefix(filePath = '') {
   return depth ? '../'.repeat(depth) : './';
 }
 
-function injectPlatformWebSiteJsonLd(html) {
-  if (/"@type"\s*:\s*"SearchAction"/.test(html)) return html;
-  return html.replace(/<\/head>/i, `  ${platformWebSiteJsonLd()}\n</head>`);
+function isHomeFile(filePath = '') {
+  return path.relative(distDir, filePath).replace(/\\/g, '/') === 'index.html';
+}
+
+function stripStandaloneWebSiteJsonLd(html, filePath) {
+  return html.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g, (match, source) => {
+    try {
+      const data = JSON.parse(source);
+      if (data?.['@type'] === 'WebSite') return '';
+      if (isHomeFile(filePath) && data?.['@type'] === 'Organization') return '';
+      return match;
+    } catch {
+      return match;
+    }
+  });
+}
+
+function hasStandaloneJsonLdType(html, expectedType) {
+  return [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].some((match) => {
+    try {
+      return JSON.parse(match[1])?.['@type'] === expectedType;
+    } catch {
+      return false;
+    }
+  });
+}
+
+function injectPlatformWebSiteJsonLd(html, filePath) {
+  if (!isHomeFile(filePath)) return html;
+  const hasWebSite = hasStandaloneJsonLdType(html, 'WebSite');
+  const hasOrganization = hasStandaloneJsonLdType(html, 'Organization');
+  const blocks = [hasWebSite ? '' : platformWebSiteJsonLd(), hasOrganization ? '' : platformOrganizationJsonLd()].filter(Boolean).join('\n  ');
+  return blocks ? html.replace(/<\/head>/i, `  ${blocks}\n</head>`) : html;
 }
 
 function injectGlobalFeedAlternates(html, filePath) {
@@ -6274,6 +6479,18 @@ function protectTargetBlankLinks(html) {
     relValues.add('noreferrer');
     return tag.replace(/\brel=["'][^"']*["']/i, `rel="${[...relValues].join(' ')}"`);
   });
+}
+
+function normalizePublicHeadIcons(html, filePath) {
+  const prefix = htmlRelativePrefix(filePath);
+  const withoutIcons = html.replace(/\s*<link\b[^>]*rel=["'](?:shortcut\s+)?icon["'][^>]*>/gi, '');
+  return withoutIcons.replace(/<\/head>/i, `  <link rel="icon" type="image/svg+xml" href="${prefix}favicon.svg" />\n</head>`);
+}
+
+function normalizeInternalHomeLinks(html) {
+  return html
+    .replace(/href=(["'])((?:\.\.\/|\.\/)+)index\.html\1/g, (_match, quote, prefix) => `href=${quote}${prefix}${quote}`)
+    .replace(/href=(["'])\/index\.html\1/g, (_match, quote) => `href=${quote}/${quote}`);
 }
 
 function containsExcludedSlug(value, excludedSlugs) {
@@ -6354,7 +6571,15 @@ function pruneExcludedPublicArtifacts(events) {
 }
 
 function decorateBrandHtml(html, filePath) {
-  let next = enhanceSeoHead(injectGlobalFeedAlternates(injectPlatformWebSiteJsonLd(injectFallbackJsonLd(normalizeSeoMetaDescription(normalizeBrandText(html)))), filePath), filePath);
+  let next = normalizeBrandText(html);
+  next = stripStandaloneWebSiteJsonLd(next, filePath);
+  next = normalizeSeoMetaDescription(next);
+  next = injectFallbackJsonLd(next);
+  next = injectPlatformWebSiteJsonLd(next, filePath);
+  next = injectGlobalFeedAlternates(next, filePath);
+  next = enhanceSeoHead(next, filePath);
+  next = normalizePublicHeadIcons(next, filePath);
+  next = normalizeInternalHomeLinks(next);
   next = next.replace(/<style id="eventlive-brand-pulse">[\s\S]*?<\/style>/g, '');
   next = next.replace(/<script defer data-domain="eventme\.live" src="https:\/\/plausible\.io\/js\/script\.tagged-events\.js"><\/script>/g, '');
   next = next.replace(/<!-- Privacy-friendly analytics by Plausible -->\s*/g, '');
@@ -6372,7 +6597,7 @@ function decorateBrandHtml(html, filePath) {
   next = next.replace(/<a\b[^>]+href=["']\.\/current-release-bundle\.json["'][\s\S]*?<\/a>/g, '');
   next = protectTargetBlankLinks(next);
   if (!isOwnerOnlyPage(filePath) && !/privacy\.html/.test(next) && /<\/footer>/i.test(next)) {
-    next = next.replace(/<\/footer>/i, `<nav class="footer-links" aria-label="روابط الثقة"><a href="./privacy.html">الخصوصية</a><a href="./terms.html">الشروط</a><a href="./source-rights.html">حقوق المصادر</a></nav></footer>`);
+    next = next.replace(/<\/footer>/i, `<nav class="footer-links" aria-label="روابط الثقة"><a href="./about.html">عن المنصة</a><a href="./privacy.html">الخصوصية</a><a href="./terms.html">الشروط</a><a href="./source-rights.html">حقوق المصادر</a></nav></footer>`);
   }
   return next;
 }
@@ -6411,6 +6636,7 @@ function hideOwnerOnlyManifestShortcuts() {
   if (Array.isArray(manifest.shortcuts)) {
     manifest.shortcuts = manifest.shortcuts.filter((shortcut) => !ownerOnlyTargets.has(shortcut.url));
   }
+  manifest.start_url = './';
   const after = `${JSON.stringify(manifest, null, 2)}\n`;
   if (after === before) return false;
   fs.writeFileSync(manifestPath, after, 'utf8');
@@ -6441,10 +6667,15 @@ function removeForbiddenArtifacts() {
 }
 
 function writeBrandIcon() {
-  writeText(path.join(distDir, 'favicon.svg'), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="EventLive"><rect width="64" height="64" rx="12" fill="#07231c"/><text x="11" y="42" fill="#fff" font-family="Arial,sans-serif" font-size="28" font-weight="700">EL</text><circle cx="51" cy="14" r="5" fill="#e5484d"/></svg>`);
+  const icon = `<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="EventLive"><rect width="512" height="512" rx="104" fill="#07231c"/><text x="74" y="342" fill="#fff" font-family="Arial,sans-serif" font-size="230" font-weight="700">EL</text><circle cx="407" cy="111" r="42" fill="#e5484d"/></svg>`;
+  writeText(path.join(distDir, 'favicon.svg'), icon);
+  writeText(path.join(distDir, 'icon.svg'), icon);
+  const key = fs.readFileSync(path.join(root, 'data', 'indexnow-key.txt'), 'utf8').trim();
+  writeText(path.join(distDir, `${key}.txt`), `${key}\n`);
 }
 
 const events = buildEvents();
+const seoDiscovery = prepareSeoDiscovery(events);
 writeCatalogFiles(events);
 writeMethodologyPage(events);
 writeOrganizerIntakePage();
@@ -6465,13 +6696,14 @@ const browsePatched = patchEventsBrowsePage(events);
 const organizersPatched = patchOrganizersPage();
 const categoryFallback = writeLinkedCategoryFallbackPages(events);
 writeSourceCoverageGapsPage(events);
-writeOwnerStatusPage(events);
+writeOwnerStatusPage(events, seoDiscovery);
 writeRegionsCoveragePage(events);
 writeReadinessPage(events);
 writeCompliancePolicyPages();
 writeTrustPage(events);
 writePublicSourcesPage(events);
 writeLiveUpdatesPage(events);
+writeAboutPage(events);
 const screenPatched = patchScreenPage();
 reconcileStaleEventRefs(events);
 const imageRefsPatched = reconcileStaleEventImages(events);
@@ -6511,6 +6743,9 @@ const report = [
   `- Category fallback pages created: ${categoryFallback.fallbackPages}`,
 `- Excluded-record references patched: ${excludedReferencePatched}`,
   `- Search intent pages generated: ${searchIntentPages.length}`,
+  `- SEO pages changed: ${seoDiscovery.changed_events}`,
+  `- SEO pages unchanged: ${seoDiscovery.unchanged_events}`,
+  `- IndexNow URLs queued: ${seoDiscovery.indexnow_urls}`,
   `- Guides search-intent links patched: ${guidesIntentPatched ? 'yes' : 'already current'}`,
   `- Patched files: ${patched.length}`,
   '- Brand: EventLive',

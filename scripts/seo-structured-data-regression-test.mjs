@@ -6,6 +6,7 @@ const root = process.cwd();
 const distDir = path.join(root, 'dist');
 
 const pages = [
+  { file: 'about.html', minBlocks: 2, types: ['AboutPage', 'Organization'] },
   { file: 'events.html', minBlocks: 3, types: ['WebPage', 'Dataset', 'ItemList'], datasetUrl: 'https://eventme.live/events.html', minItems: 20 },
   { file: 'activation.html', minBlocks: 2, types: ['WebPage', 'Dataset'], datasetUrl: 'https://eventme.live/activation.json' },
   { file: 'trust.html', minBlocks: 2, types: ['WebPage', 'Dataset'], datasetUrl: 'https://eventme.live/trust.json' },
@@ -19,18 +20,18 @@ const pages = [
   { file: 'categories.html', minBlocks: 4, types: ['CollectionPage', 'Dataset', 'ItemList'], datasetUrl: 'https://eventme.live/categories.json' },
   { file: 'audiences.html', minBlocks: 4, types: ['CollectionPage', 'Dataset', 'ItemList'], datasetUrl: 'https://eventme.live/audiences.json' },
   { file: 'source-coverage-gaps.html', minBlocks: 1, types: ['WebPage'] },
-  { file: 'saudi-events-today.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },
-  { file: 'saudi-events-tomorrow.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },
-  { file: 'saudi-events-weekend.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },
-  { file: 'saudi-events-this-month.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },
-  { file: 'riyadh-events-today.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 5 },
-  { file: 'jeddah-events.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },
-  { file: 'online-tech-courses.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 5 },
-  { file: 'saudi-ticketed-events.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 5 },
-  { file: 'saudi-conferences-exhibitions.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 5 },
-  { file: 'saudi-sports-matches.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 5 },
-  { file: 'free-saudi-events.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },
-  { file: 'saudi-events-faq.html', minBlocks: 5, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 5 }
+  { file: 'saudi-events-today.html', minBlocks: 4, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },
+  { file: 'saudi-events-tomorrow.html', minBlocks: 4, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },
+  { file: 'saudi-events-weekend.html', minBlocks: 4, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },
+  { file: 'saudi-events-this-month.html', minBlocks: 4, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },
+  { file: 'riyadh-events-today.html', minBlocks: 4, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 5 },
+  { file: 'jeddah-events.html', minBlocks: 4, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },
+  { file: 'online-tech-courses.html', minBlocks: 4, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 5 },
+  { file: 'saudi-ticketed-events.html', minBlocks: 4, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 5 },
+  { file: 'saudi-conferences-exhibitions.html', minBlocks: 4, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 5 },
+  { file: 'saudi-sports-matches.html', minBlocks: 4, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 5 },
+  { file: 'free-saudi-events.html', minBlocks: 4, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },
+  { file: 'saudi-events-faq.html', minBlocks: 4, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 5 }
 ];
 
 function extractJsonLd(html) {
@@ -59,8 +60,9 @@ function assertDiscoverabilityHead(html, pageFile) {
 function assertWebSiteSearchAction(jsonLd, pageFile) {
   const website = jsonLd.find((entry) => typeOf(entry) === 'WebSite');
   assert.ok(website, `${pageFile} must include WebSite JSON-LD`);
-  assert.equal(website.url, 'https://eventme.live', `${pageFile} WebSite URL must be eventme.live`);
-  assert.equal(website.inLanguage, 'ar-SA', `${pageFile} WebSite language must be ar-SA`);
+  assert.equal(website.url, 'https://eventme.live/', `${pageFile} WebSite URL must be the canonical domain root`);
+  assert.equal(website['@id'], 'https://eventme.live/#website', `${pageFile} WebSite must expose a stable entity ID`);
+  assert.deepEqual(website.inLanguage, ['ar-SA', 'en-SA'], `${pageFile} WebSite must declare both supported languages`);
   assert.equal(website.potentialAction?.['@type'], 'SearchAction', `${pageFile} WebSite must expose SearchAction`);
   assert.equal(website.potentialAction?.target?.urlTemplate, 'https://eventme.live/events.html?q={search_term_string}', `${pageFile} SearchAction must target the catalog query URL`);
   assert.equal(website.potentialAction?.['query-input'], 'required name=search_term_string', `${pageFile} SearchAction must declare query input`);
@@ -74,7 +76,7 @@ for (const page of pages) {
   assert.ok(jsonLd.length >= page.minBlocks, `${page.file} must have at least ${page.minBlocks} JSON-LD blocks`);
   assert.match(html, /<link rel="canonical" href="https:\/\/eventme\.live\/[^"]*"/, `${page.file} must use eventme.live canonical`);
   assertDiscoverabilityHead(html, page.file);
-  assertWebSiteSearchAction(jsonLd, page.file);
+  assert.equal(jsonLd.some((entry) => typeOf(entry) === 'WebSite'), false, `${page.file} must not repeat home-only WebSite schema`);
 
   for (const expectedType of page.types) {
     assert.ok(jsonLd.some((entry) => typeOf(entry) === expectedType), `${page.file} must include ${expectedType} JSON-LD`);
@@ -99,6 +101,21 @@ for (const page of pages) {
     assert.ok(itemList.itemListElement.every((item) => String(item.url || '').startsWith('https://eventme.live/')), `${page.file} ItemList URLs must be canonical`);
   }
 }
+
+const homeHtml = fs.readFileSync(path.join(distDir, 'index.html'), 'utf8');
+const homeJsonLd = extractJsonLd(homeHtml);
+assert.doesNotMatch(homeHtml, /rel="icon" href="data:image/, 'home must not expose the legacy embedded favicon');
+assert.match(homeHtml, /rel="icon" type="image\/svg\+xml" href="\.\/favicon\.svg"/, 'home must expose the EventLive favicon');
+assert.doesNotMatch(homeHtml, /href="\.\/index\.html"/, 'home links must consolidate on the canonical root URL');
+assertWebSiteSearchAction(homeJsonLd, 'index.html');
+const organization = homeJsonLd.find((entry) => typeOf(entry) === 'Organization');
+assert.equal(organization?.['@id'], 'https://eventme.live/#organization', 'home must expose a stable EventLive Organization entity');
+assert.equal(organization?.name, 'EventLive');
+assert.equal(organization?.url, 'https://eventme.live/');
+assert.equal(organization?.logo?.url, 'https://eventme.live/icon.svg');
+assert.ok(Number(organization?.logo?.width) >= 112 && Number(organization?.logo?.height) >= 112, 'organization logo must meet Google minimum dimensions');
+const indexNowKey = fs.readFileSync(path.join(root, 'data', 'indexnow-key.txt'), 'utf8').trim();
+assert.ok(fs.existsSync(path.join(distDir, `${indexNowKey}.txt`)), 'build must publish the IndexNow ownership key');
 
 const eventsFeedPath = path.join(distDir, 'events.json');
 assert.ok(fs.existsSync(eventsFeedPath), 'events.json must exist');
@@ -127,7 +144,7 @@ for (const event of eventSamples) {
 
   assert.match(html, new RegExp(`<link rel="canonical" href="${canonical.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}"`), `${htmlFile} must use canonical event URL`);
   assertDiscoverabilityHead(html, htmlFile);
-  assertWebSiteSearchAction(jsonLd, htmlFile);
+  assert.equal(jsonLd.some((entry) => typeOf(entry) === 'WebSite'), false, `${htmlFile} must not repeat home-only WebSite schema`);
   assert.match(html, new RegExp(`<link rel="alternate" type="application/json"[^>]+href="${event.file_slug.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\.json"`), `${htmlFile} must link its event JSON`);
   assert.match(html, new RegExp(`<link rel="alternate" type="text/calendar"[^>]+href="${event.file_slug.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\.ics"`), `${htmlFile} must link its event ICS`);
 
@@ -143,16 +160,34 @@ for (const event of eventSamples) {
   assert.ok(String(eventJsonLd?.keywords || '').length > 20, `${htmlFile} Event JSON-LD must include useful keywords`);
   assert.ok(Array.isArray(eventJsonLd?.audience) && eventJsonLd.audience.length > 0, `${htmlFile} Event JSON-LD must include audience`);
   assert.ok(Array.isArray(eventJsonLd?.sameAs) && eventJsonLd.sameAs.length > 0, `${htmlFile} Event JSON-LD must include source sameAs links`);
-  assert.equal(eventJsonLd?.offers?.['@type'], 'Offer', `${htmlFile} Event JSON-LD must expose an access offer`);
+  if (event.status === 'ended' || (!event.ticket_url && !event.registration_url)) {
+    assert.equal(eventJsonLd?.offers, undefined, `${htmlFile} must not claim a ticket offer without an active ticket or registration URL`);
+  } else {
+    assert.equal(eventJsonLd?.offers?.['@type'], 'Offer', `${htmlFile} may expose a verified ticket or registration offer`);
+    assert.ok([event.ticket_url, event.registration_url].includes(eventJsonLd.offers.url), `${htmlFile} offer must use the ticket or registration URL`);
+  }
   assert.ok(Array.isArray(faqJsonLd?.mainEntity) && faqJsonLd.mainEntity.length >= 3, `${htmlFile} must expose visitor FAQ JSON-LD`);
   assert.match(html, /ما يحتاجه الزائر بسرعة/, `${htmlFile} must render visible visitor FAQ content`);
 
   assert.equal(json.canonical_url, canonical, `${jsonFile} must expose canonical_url`);
   assert.equal(json.schema_org?.['@type'], 'Event', `${jsonFile} must expose Event schema`);
   assert.equal(json.schema_org?.url, canonical, `${jsonFile} schema must use canonical URL`);
+  assert.ok(json.page_modified_at, `${jsonFile} must expose stable page_modified_at`);
   assert.ok(Array.isArray(json.sessions), `${jsonFile} must expose sessions array`);
   assert.ok(Array.isArray(json.keywords) && json.keywords.length >= 4, `${jsonFile} must expose useful keywords`);
   assert.ok(json.source_url || json.evidence_url, `${jsonFile} must preserve source evidence`);
+}
+
+const unknownAvailabilityOffers = events
+  .filter((event) => event.status !== 'ended'
+    && (event.ticket_url || event.registration_url)
+    && !String(event.registration_status || event.ticket_status || '').trim())
+  .slice(0, 20);
+assert.ok(unknownAvailabilityOffers.length > 0, 'SEO offer sample must cover unknown registration availability');
+for (const event of unknownAvailabilityOffers) {
+  const html = fs.readFileSync(path.join(distDir, 'events', `${event.file_slug}.html`), 'utf8');
+  const eventJsonLd = extractJsonLd(html).find((entry) => typeOf(entry) === 'Event');
+  assert.equal(eventJsonLd?.offers?.availability, undefined, `${event.file_slug} must not invent ticket availability`);
 }
 
 console.log('seo-structured-data-regression-test: ok');

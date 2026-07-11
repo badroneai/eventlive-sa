@@ -112,6 +112,10 @@ jobs:
           npm run test:public-assets
           npm run test:i18n-contract
           npm run test:i18n-site
+          npm run test:seo-structured-data
+          npm run test:seo-freshness
+          npm run test:indexnow
+          npm run test:ai-search-readiness
           npm run test:event-kind
           npm run test:city-search
 
@@ -126,6 +130,7 @@ jobs:
             data/source_registry.json \
             data/source_run_state.json \
             data/source_growth_state.json \
+            data/seo_page_state.json \
             data/event_image_cache_manifest.json \
             reports/source-*.json \
             reports/source-*.md \
@@ -183,6 +188,7 @@ jobs:
             data/source_growth_state.json
             data/events_catalog.json
             data/event_image_cache_manifest.json
+            .eventlive-cache/indexnow-delta.json
             dist/**
 
       - name: Setup Pages
@@ -196,6 +202,10 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Notify search engines about changed URLs
+        continue-on-error: true
+        run: npm run seo:indexnow
 
       - name: Summary
         run: |

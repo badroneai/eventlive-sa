@@ -78,6 +78,15 @@ jobs:
       - name: Build EventLive public site
         run: npm run build
 
+      - name: Verify search and AI discovery contracts
+        run: |
+          npm run test:sitemap
+          npm run test:seo-structured-data
+          npm run test:seo-content
+          npm run test:seo-freshness
+          npm run test:indexnow
+          npm run test:ai-search-readiness
+
       - name: Verify bilingual site contract
         run: |
           npm run test:i18n-contract
@@ -211,6 +220,16 @@ jobs:
             data/schema.json
             ops/schema-suite-runtime-history.json
 
+      - name: Upload search discovery payload
+        uses: actions/upload-artifact@v4
+        with:
+          name: eventlive-search-discovery-${{ github.run_id }}
+          retention-days: 2
+          if-no-files-found: error
+          path: |
+            .eventlive-cache/indexnow-delta.json
+            dist/sitemap.xml
+
       - name: Create status summary
         run: |
           echo "## EventLive Status Report" >> $GITHUB_STEP_SUMMARY
@@ -259,6 +278,16 @@ jobs:
 
       - name: Install deps
         run: npm ci || npm install
+
+      - name: Download search discovery payload
+        uses: actions/download-artifact@v4
+        with:
+          name: eventlive-search-discovery-${{ github.run_id }}
+          path: .
+
+      - name: Notify IndexNow after the new site is live
+        continue-on-error: true
+        run: npm run seo:indexnow:all
 
       - name: Restore schema suite runtime history cache
         uses: actions/cache/restore@v4

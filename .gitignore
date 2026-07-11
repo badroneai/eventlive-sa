@@ -1,6 +1,7 @@
 node_modules/
 .playwright-cli/
 .codebase-memory/
+.eventlive-cache/
 output/
 workspaces/
 tmp-*.js

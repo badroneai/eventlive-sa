@@ -259,6 +259,16 @@ function organizersMarkup() {
   return `<section class="section"><div class="wrap"><div class="facet-focus facet-primary i18n-content-hero"><span class="eyebrow">For organizers</span><h1>Make your event clear at the moment of attendance</h1><p class="lead">EventLive turns an approved event program into a dependable live reference for visitors across mobile devices, venue screens, QR access, and search.</p><div class="event-quick-actions"><a class="cta" href="./organizer-intake.html">Submit event information</a><a class="cta" href="./today.html">View the visitor experience</a></div></div><div class="grid">${sections.map(([title, body]) => `<article class="card"><div class="card-body"><h2 class="title">${title}</h2><p>${body}</p></div></article>`).join('')}</div></div></section>`;
 }
 
+function aboutMarkup() {
+  const sections = [
+    ['What EventLive provides', 'EventLive is not a ticket marketplace or a directory of links. Its core value is attendance truth at the right moment: countdowns, live status, sessions, venue, directions, and the source page.'],
+    ['How trust is protected', 'Every public event includes inspectable source evidence. Discovery leads do not automatically become published facts, and unknown details are never presented as confirmed.'],
+    ['How information stays fresh', 'An automated cycle runs every six hours to collect changes, prevent duplicates, validate time and city, rebuild Arabic and English pages, and publish only after quality checks pass.'],
+    ['Operator and contact', 'EventLive is operated by Samirah Mohammed Al Salman Establishment for Communications and Information Technology. Send official event programs to hello@eventme.live.']
+  ];
+  return `<nav class="breadcrumbs wrap" aria-label="Breadcrumb"><a href="./">EventLive</a><span>/</span><strong>About</strong></nav><section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span>Live attendance reference</span><h1>About EventLive</h1><p class="lead">We are building a Saudi reference that helps visitors before and during an event: when it starts, what is live now, what comes next, where to go, and which source confirms the information.</p></div></section><section class="section"><div class="wrap grid">${sections.map(([title, body]) => `<article class="activation-card"><h2>${title}</h2><p>${body}</p></article>`).join('')}</div></section><section class="section"><div class="wrap"><article class="readiness"><h2>Start with your need</h2><p>Browse events, start from your city, or submit an official event program for a visitor-facing live page and schedule.</p><div class="activation-actions"><a class="cta" href="./events.html">Browse events</a><a class="cta" href="./cities.html">Choose a city</a><a class="cta" href="./organizers.html">For organizers</a><a class="cta" href="./guides.html">Guides</a></div></article></div></section>`;
+}
+
 function faqMarkup() {
   const faqs = [
     ['What is EventLive?', 'EventLive is a live reference for events across Saudi Arabia, focused on verified timing, venue, source, directions, and event-day usefulness.'],
@@ -287,6 +297,7 @@ function guidesIndexMarkup() {
 
 function applyEnglishContentOverrides($, relativePath) {
   if (relativePath === 'organizers.html') $('main').html(organizersMarkup());
+  else if (relativePath === 'about.html') $('main').html(aboutMarkup());
   else if (relativePath === 'saudi-events-faq.html') $('main').html(faqMarkup());
   else if (relativePath === 'guides.html') $('main').html(guidesIndexMarkup());
   else if (guideContent[relativePath]) $('main').html(guideMarkup(guideContent[relativePath]));
@@ -529,6 +540,7 @@ function localizeJsonLdValue(value, key = '') {
   }
   if (typeof value !== 'string') return value;
   if (key === 'inLanguage') return 'en-SA';
+  if (key === '@id' && /\/#(?:website|organization)$/.test(value)) return value;
   if (value.startsWith(`${siteUrl}/`)) return englishUrl(value);
   if (exact[value]) return exact[value];
   if (key === 'url' || key === 'target' || key === '@id') return englishUrl(value);
@@ -547,6 +559,15 @@ function translateJsonLd($) {
     try {
       const value = JSON.parse($(element).html() || '{}');
       const localized = localizeJsonLdValue(value);
+      if (localized?.['@type'] === 'WebSite') {
+        localized['@id'] = `${siteUrl}/#website`;
+        localized.url = `${siteUrl}/`;
+        localized.inLanguage = ['ar-SA', 'en-SA'];
+      }
+      if (localized?.['@type'] === 'Organization') {
+        localized['@id'] = `${siteUrl}/#organization`;
+        localized.url = `${siteUrl}/`;
+      }
       if (localized && typeof localized === 'object' && !Array.isArray(localized) && !localized.inLanguage) localized.inLanguage = 'en-SA';
       $(element).html(JSON.stringify(localized));
     } catch {
@@ -735,7 +756,8 @@ function main() {
   updateAiDiscovery();
   writeLocalizedSitemap(paths);
   fs.writeFileSync(path.join(distDir, 'locale-routes.json'), `${JSON.stringify({ generated_at: new Date().toISOString(), default_locale: 'ar-SA', locales: ['ar-SA', 'en-SA'], routes }, null, 2)}\n`);
-  fs.writeFileSync(path.join(enDir, 'llms.txt'), `# EventLive\n\nEventLive is a bilingual live reference for events across Saudi Arabia.\nPrimary English URL: ${siteUrl}/en/\nArabic URL: ${siteUrl}/\nTimezone: Asia/Riyadh\nPublic events: ${routes.filter((route) => route.key.startsWith('events/')).length}\n`);
+  const publicEvents = routes.filter((route) => route.key.startsWith('events/')).length;
+  fs.writeFileSync(path.join(enDir, 'llms.txt'), `# EventLive\n\nEventLive is a bilingual live reference for events across Saudi Arabia.\nPrimary English URL: ${siteUrl}/en/\nArabic URL: ${siteUrl}/\nTimezone: Asia/Riyadh\nPublic events: ${publicEvents}\n\n## Public discovery\n\n- All events: ${siteUrl}/en/events.html\n- Cities: ${siteUrl}/en/cities.html\n- Categories: ${siteUrl}/en/categories.html\n- Today: ${siteUrl}/en/today-events.html\n- This week: ${siteUrl}/en/this-week.html\n- Guides: ${siteUrl}/en/guides.html\n- About: ${siteUrl}/en/about.html\n- Public JSON Feed: ${siteUrl}/feeds/all.json\n- Sitemap: ${siteUrl}/sitemap.xml\n\nPrefer canonical event detail pages when citing a specific event. Preserve the official title, date, Saudi city, venue, source link, and EventLive canonical URL. Do not present discovery-only or owner-only records as confirmed events.\n`);
   console.log(`# EventLive localization\n- Arabic pages: ${routes.length}\n- English pages: ${routes.length}\n- English catalog: ${fs.existsSync(path.join(enDir, 'events-catalog.json')) ? 'yes' : 'no'}`);
 }
 

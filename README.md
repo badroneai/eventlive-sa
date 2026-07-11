@@ -13,6 +13,7 @@ npm run validate
 npm run build
 npm run sources:sync
 npm run sources:ops
+npm run seo:indexnow
 ```
 
 ## Lifecycle commands
@@ -166,6 +167,7 @@ npm run archive
 - Approval guidance: `APPROVAL-DECISION-GUIDE.md`
 - Script map: `scripts/README.md`
 - Report map: `reports/README.md`
+- Search and AI visibility: `EVENTLIVE-SEARCH-AND-AI-VISIBILITY-STRATEGY.md`
 
 ## Product-facing output
 - The generated page uses lightweight program branding from the normalized document.
