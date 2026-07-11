@@ -52,6 +52,7 @@ jobs:
         run: |
           npm run test:source-health-gate
           npm run test:source-run-state
+          npm run test:source-sync-workflow
 
       - name: Collect trusted sources and publish catalog
         run: npm run sources:sync
@@ -127,7 +128,7 @@ jobs:
             git commit -m "chore(sync): persist daily source sync state [skip ci]"
             for attempt in 1 2 3; do
               git fetch origin "${GITHUB_REF_NAME}"
-              git rebase "origin/${GITHUB_REF_NAME}"
+              git rebase --autostash "origin/${GITHUB_REF_NAME}"
               if git push origin "HEAD:${GITHUB_REF_NAME}"; then
                 exit 0
               fi

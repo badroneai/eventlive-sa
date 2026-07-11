@@ -32,7 +32,7 @@ assert.match(workflow, /data\/raw\/mygov-wayback-radar\/\*\*/, 'source sync arti
 assert.match(workflow, /reports\/event-image-cache-report\.json/, 'source sync must persist image-cache evidence JSON');
 assert.match(workflow, /reports\/event-image-cache-report\.md/, 'source sync must persist image-cache evidence markdown');
 assert.match(workflow, /git fetch origin "\$\{GITHUB_REF_NAME\}"/, 'source sync must fetch remote state before each persistence attempt');
-assert.match(workflow, /git rebase "origin\/\$\{GITHUB_REF_NAME\}"/, 'source sync must rebase before pushing persisted data');
+assert.match(workflow, /git rebase --autostash "origin\/\$\{GITHUB_REF_NAME\}"/, 'source sync must rebase with generated-site changes safely stashed before pushing persisted data');
 assert.match(workflow, /for attempt in 1 2 3/, 'source sync must retry persistence races');
 assert.match(workflow, /npm run test:source-growth/, 'scheduled sync must regression-test the growth ledger');
 
@@ -40,6 +40,7 @@ const sourceSyncIndex = indexOfLine(/npm run sources:sync/);
 const preflightIndex = indexOfLine(/Source state preflight/);
 const sourceHealthPreflightIndex = indexOfLine(/npm run test:source-health-gate/);
 const sourceRunStatePreflightIndex = indexOfLine(/npm run test:source-run-state/);
+const sourceWorkflowPreflightIndex = indexOfLine(/npm run test:source-sync-workflow/);
 const imageCacheTestIndex = indexOfLine(/npm run test:image-cache/);
 const publicAssetsTestIndex = indexOfLine(/npm run test:public-assets/);
 const sourcePipelineTestIndex = indexOfLine(/npm run test:source-sync-pipeline/);
@@ -58,6 +59,7 @@ const deployIndex = indexOfLine(/Deploy to GitHub Pages/);
 assert.ok(preflightIndex < sourceSyncIndex, 'source-state preflight must run before the long collection step');
 assert.ok(sourceHealthPreflightIndex < sourceSyncIndex, 'source health gate regression must fail fast before collection');
 assert.ok(sourceRunStatePreflightIndex < sourceSyncIndex, 'source run-state regression must fail fast before collection');
+assert.ok(sourceWorkflowPreflightIndex < sourceSyncIndex, 'source workflow regression must fail fast before collection');
 assert.ok(sourceSyncIndex < sourcePipelineTestIndex, 'pipeline-order test must run after sources:sync');
 assert.ok(sourceSyncIndex < scegaExtractorTestIndex, 'SCEGA public API extractor test must run after sources:sync');
 assert.ok(sourceSyncIndex < scegaAliasTestIndex, 'SCEGA canonical alias test must run after sources:sync');
