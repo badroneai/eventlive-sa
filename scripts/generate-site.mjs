@@ -28,6 +28,7 @@ const googleSiteVerification = fs.existsSync(googleSiteVerificationPath)
   ? fs.readFileSync(googleSiteVerificationPath, 'utf8').trim()
   : '';
 const searchVisibilityState = readJson('data/search_visibility_state.json', {});
+const searchVisibilityBaseline = readJson('data/search_visibility_baseline.json', {});
 const imageCacheManifest = readJson('data/event_image_cache_manifest.json', { images: {} });
 const registeredSources = readJson('data/source_registry.json', { sources: [] }).sources || [];
 const venueRegistry = readJson('data/venue_registry.json', { venues: [] }).venues || [];
@@ -3443,6 +3444,7 @@ function buildOwnerSearchGrowth(events = []) {
     },
     priority_events: gaps.slice(0, 120),
     authority_opportunities: authority,
+    search_visibility_baseline: searchVisibilityBaseline,
     guardrails: [
       'No fabricated event fields.',
       'No automated outreach or link exchange.',
@@ -3457,12 +3459,17 @@ function writeOwnerSearchGrowthPage(events = []) {
   writeJson('owner-search-growth.json', growth);
   const canonical = absoluteUrl('owner-search-growth.html');
   const gapLabels = { source_image: 'صورة مصدر', long_description: 'وصف تفصيلي', verified_place: 'مكان موثق', live_schedule: 'جدول حي' };
+  const rankQueries = Array.isArray(growth.search_visibility_baseline?.queries) ? growth.search_visibility_baseline.queries : [];
+  const rankResult = (row) => row.eventlive
+    ? `الصفحة ${row.eventlive.page} · النتيجة ${row.eventlive.within_page_rank}`
+    : `لم يظهر حتى الصفحة ${row.pages_checked}`;
   const html = `<!doctype html><html lang="ar" dir="rtl"><head>
   ${baseHead({ title: `نمو الظهور والسلطة | ${platformName}`, description: 'صفحة مالك لترتيب فجوات محتوى EventLive وفرص المصادر والربط التحريري.', canonical, noindex: true })}
   ${operationalPageCss()}
   ${jsonLd({ '@context': 'https://schema.org', '@type': 'WebPage', inLanguage: 'ar-SA', name: 'لوحة نمو الظهور والسلطة', url: canonical, dateModified: buildAt })}
   </head><body>${header('./')}<main>
   <section class="hero"><div class="wrap"><span class="eyebrow">للمالك فقط</span><h1>نمو الظهور والسلطة</h1><p class="lead">قائمة تتجدد مع كل بناء، بما فيه دورة الجلب كل ست ساعات، لترتيب أثر التحسين قبل العمل اليدوي أو التواصل مع المصادر.</p><div class="signal-strip"><div class="signal"><span>نشطة</span><b>${growth.active_events}</b></div><div class="signal"><span>تحتاج صورة مصدر</span><b>${growth.gaps.source_image}</b></div><div class="signal"><span>تحتاج وصفًا</span><b>${growth.gaps.long_description}</b></div><div class="signal"><span>تحتاج مكانًا</span><b>${growth.gaps.verified_place}</b></div></div></div></section>
+  <section class="section"><div class="wrap"><h2>خط أساس ظهور Google</h2><p class="lead">قياس مضبوط للسعودية أُخذ في ${escapeHtml(growth.search_visibility_baseline?.captured_date_riyadh || 'غير محدد')}. Search Console: <strong>${escapeHtml(growth.search_visibility_baseline?.search_console?.status || 'غير محدد')}</strong>. القياس الأسبوعي الرسمي يعتمد على الانطباعات والنقرات ومتوسط الترتيب بعد اكتمال معالجة Google.</p>${operationalTable(['عبارة البحث', 'النية', 'النتيجة الحالية', 'العنوان الظاهر'], rankQueries, (row) => `<tr><td>${escapeHtml(row.query)}</td><td>${escapeHtml(row.intent)}</td><td>${escapeHtml(rankResult(row))}</td><td>${escapeHtml(row.eventlive?.title || 'لا توجد نتيجة EventLive ضمن النطاق')}</td></tr>`)}</div></section>
   <section class="section"><div class="wrap"><h2>أعلى فجوات المحتوى أولوية</h2>${operationalTable(['الأولوية', 'الفعالية', 'المدينة', 'البداية', 'الفجوات'], growth.priority_events.slice(0, 40), (row) => `<tr><td>${row.priority}</td><td><a href="${escapeHtml(row.detail_url)}">${escapeHtml(row.title)}</a></td><td>${escapeHtml(row.city)}</td><td>${escapeHtml(row.starts_at)}</td><td>${row.missing.map((item) => escapeHtml(gapLabels[item] || item)).join('، ')}</td></tr>`)}</div></section>
   <section class="section"><div class="wrap"><h2>فرص البيانات والربط الرسمي</h2><p class="lead">هذه قائمة قرار، وليست حملة إرسال آلية. أي تواصل أو اتفاق روابط يحتاج اعتمادًا بشريًا ولا يتضمن تبادل روابط مصطنعًا.</p>${operationalTable(['المصدر', 'النشطة', 'الإجمالي', 'مدن', 'الخطوة التالية'], growth.authority_opportunities, (row) => `<tr><td><a href="${escapeHtml(row.source_url)}" target="_blank" rel="noopener">${escapeHtml(row.host)}</a></td><td>${row.active_events}</td><td>${row.events}</td><td>${row.cities.length}</td><td>${escapeHtml(row.next_action)}</td></tr>`)}</div></section>
   </main>${footer('./')}</body></html>`;

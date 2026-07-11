@@ -27,11 +27,19 @@ No owner action is required for those calculations. Human review remains require
 ## Weekly decision loop
 
 - Confirm Search Console ownership and sitemap success.
+- Compare weekly Search Console performance against `data/search_visibility_baseline.json`; use impressions, clicks, CTR, average position, queries, and landing pages as the primary ranking evidence.
 - Compare indexed event pages with submitted event pages.
 - Review queries with impressions but weak click-through rate and improve title/description only where the page satisfies that intent.
 - Work the highest-priority active records in `owner-search-growth.html`.
 - Contact the highest-value official domains for feeds, corrections, organizer attribution, or editorial citation.
 - Review city and category gaps in the public pulse and source coverage board.
+
+## Ranking baseline
+
+- The first controlled Google baseline is documented in `reports/search-visibility-baseline-2026-07-12.md` and `data/search_visibility_baseline.json`.
+- Search Console is checked weekly using a consistent 28-day comparison window after data processing starts.
+- A non-personalized Saudi Google sample is repeated monthly with the same query registry and page limits.
+- Manual rank samples never override Search Console evidence and stop when Google presents a CAPTCHA.
 
 ## Guardrails
 

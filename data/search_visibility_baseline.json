@@ -1,0 +1,183 @@
+{
+  "version": 1,
+  "site": "https://eventme.live/",
+  "captured_at": "2026-07-11T22:13:07Z",
+  "captured_date_riyadh": "2026-07-12",
+  "method": {
+    "engine": "Google Web Search",
+    "country": "sa",
+    "personalization": "pws=0",
+    "network_location_observed": "Dammam, Saudi Arabia",
+    "result_type": "organic web results only",
+    "rank_definition": "page number and within-page organic position",
+    "limitations": [
+      "Google results vary by time, location, device, and result composition.",
+      "Manual SERP rank is a diagnostic sample; Search Console is the primary ongoing measurement source.",
+      "Google presented a CAPTCHA after the priority-query sample, so event-title long-tail sampling was stopped without interaction."
+    ]
+  },
+  "search_console": {
+    "property": "https://eventme.live/",
+    "status": "DATA_PROCESSING",
+    "observed_message": "Data is being processed. Please check again in a day or so.",
+    "clicks": null,
+    "impressions": null,
+    "average_position": null
+  },
+  "summary": {
+    "brand_indexed": true,
+    "brand_rank": 1,
+    "domain_rank": 1,
+    "broad_saudi_events_status": "NOT_FOUND_THROUGH_PAGE_10",
+    "priority_non_brand_queries_found": 0,
+    "priority_non_brand_queries_measured": 8
+  },
+  "queries": [
+    {
+      "query": "فعاليات السعودية",
+      "locale": "ar",
+      "intent": "national_generic",
+      "pages_checked": 10,
+      "organic_results_checked": 96,
+      "eventlive": null,
+      "status": "NOT_FOUND_THROUGH_PAGE_10",
+      "top_results": [
+        { "rank": 1, "title": "عالم الفعاليات", "url": "https://ksaevent.com/" },
+        { "rank": 2, "title": "الفعاليات في المملكة العربية السعودية", "url": "https://my.gov.sa/ar/events" },
+        { "rank": 3, "title": "الهيئه العامه للمعارض و المؤتمرات", "url": "https://eportal.scega.gov.sa/" }
+      ]
+    },
+    {
+      "query": "فعاليات اليوم في السعودية",
+      "locale": "ar",
+      "intent": "national_today",
+      "pages_checked": 3,
+      "organic_results_checked": 29,
+      "eventlive": null,
+      "status": "NOT_FOUND_THROUGH_PAGE_3",
+      "top_results": [
+        { "rank": 1, "title": "عالم الفعاليات", "url": "https://ksaevent.com/" },
+        { "rank": 2, "title": "أبرز الفعاليات في الرياض اليوم - Platinumlist.net", "url": "https://riyadh.platinumlist.net/ar/calendar/today" },
+        { "rank": 3, "title": "دليل فعاليات الشرقية", "url": "https://www.instagram.com/sharqiya_event/?hl=ar" }
+      ]
+    },
+    {
+      "query": "فعاليات هذا الأسبوع في السعودية",
+      "locale": "ar",
+      "intent": "national_week",
+      "pages_checked": 3,
+      "organic_results_checked": 29,
+      "eventlive": null,
+      "status": "NOT_FOUND_THROUGH_PAGE_3",
+      "top_results": [
+        { "rank": 1, "title": "الفعاليات في المملكة العربية السعودية", "url": "https://my.gov.sa/ar/events" },
+        { "rank": 2, "title": "عالم الفعاليات", "url": "https://ksaevent.com/" },
+        { "rank": 3, "title": "تذاكر الفعاليات الترفيهية في الخبر", "url": "https://khobar.platinumlist.net/ar/" }
+      ]
+    },
+    {
+      "query": "فعاليات الرياض اليوم",
+      "locale": "ar",
+      "intent": "riyadh_today",
+      "pages_checked": 3,
+      "organic_results_checked": 30,
+      "eventlive": null,
+      "status": "NOT_FOUND_THROUGH_PAGE_3",
+      "top_results": [
+        { "rank": 1, "title": "أبرز الفعاليات في الرياض اليوم - Platinumlist.net", "url": "https://riyadh.platinumlist.net/ar/calendar/today" },
+        { "rank": 2, "title": "فعاليات الرياض", "url": "https://www.instagram.com/riyadh.evnt/?hl=ar" },
+        { "rank": 3, "title": "فعاليات الرياض", "url": "https://riyadh.sa/events/all" }
+      ]
+    },
+    {
+      "query": "فعاليات جدة اليوم",
+      "locale": "ar",
+      "intent": "jeddah_today",
+      "pages_checked": 3,
+      "organic_results_checked": 31,
+      "eventlive": null,
+      "status": "NOT_FOUND_THROUGH_PAGE_3",
+      "top_results": [
+        { "rank": 1, "title": "أبرز الفعاليات في جدة اليوم - Platinumlist.net", "url": "https://jeddah.platinumlist.net/ar/calendar/today" },
+        { "rank": 2, "title": "Jeddah Season | موسم جدة", "url": "https://www.instagram.com/jed.calendar/?hl=ar" },
+        { "rank": 3, "title": "تذاكر الفعاليات الترفيهية في جدة", "url": "https://jeddah.platinumlist.net/ar/" }
+      ]
+    },
+    {
+      "query": "فعاليات الخبر اليوم",
+      "locale": "ar",
+      "intent": "khobar_today",
+      "pages_checked": 3,
+      "organic_results_checked": 28,
+      "eventlive": null,
+      "status": "NOT_FOUND_THROUGH_PAGE_3",
+      "top_results": [
+        { "rank": 1, "title": "أبرز الفعاليات في الخبر اليوم - Platinumlist.net", "url": "https://khobar.platinumlist.net/ar/calendar/today" },
+        { "rank": 2, "title": "دليل فعاليات الشرقية", "url": "https://www.instagram.com/sharqiya_event/?hl=ar" },
+        { "rank": 3, "title": "تذاكر الفعاليات الترفيهية في الخبر", "url": "https://khobar.platinumlist.net/ar/" }
+      ]
+    },
+    {
+      "query": "جدول فعاليات السعودية",
+      "locale": "ar",
+      "intent": "national_calendar",
+      "pages_checked": 3,
+      "organic_results_checked": 28,
+      "eventlive": null,
+      "status": "NOT_FOUND_THROUGH_PAGE_3",
+      "top_results": [
+        { "rank": 1, "title": "تقويم السعودية | تابع العطلات والفعاليات المميزة", "url": "https://www.visitsaudi.com/ar/saudi-calendar" },
+        { "rank": 2, "title": "الهيئه العامه للمعارض و المؤتمرات", "url": "https://eportal.scega.gov.sa/" },
+        { "rank": 3, "title": "عالم الفعاليات", "url": "https://ksaevent.com/" }
+      ]
+    },
+    {
+      "query": "Saudi events",
+      "locale": "en",
+      "intent": "national_generic_en",
+      "pages_checked": 3,
+      "organic_results_checked": 30,
+      "eventlive": null,
+      "status": "NOT_FOUND_THROUGH_PAGE_3",
+      "top_results": [
+        { "rank": 1, "title": "Saudi Calendar | Holidays, Events & Key Dates", "url": "https://www.visitsaudi.com/en/saudi-calendar" },
+        { "rank": 2, "title": "National Events Center", "url": "https://nec.gov.sa/en" },
+        { "rank": 3, "title": "Explore Events & Experiences", "url": "https://webook.com/en/explore" }
+      ]
+    },
+    {
+      "query": "EventLive فعاليات السعودية",
+      "locale": "ar",
+      "intent": "brand_ar",
+      "pages_checked": 1,
+      "organic_results_checked": 9,
+      "eventlive": {
+        "page": 1,
+        "within_page_rank": 1,
+        "title": "EventLive | فعاليات السعودية الآن",
+        "url": "https://eventme.live/"
+      },
+      "status": "FOUND"
+    },
+    {
+      "query": "eventme.live",
+      "locale": "en",
+      "intent": "domain_control",
+      "pages_checked": 1,
+      "organic_results_checked": 9,
+      "eventlive": {
+        "page": 1,
+        "within_page_rank": 1,
+        "title": "EventLive | فعاليات السعودية الآن",
+        "url": "https://eventme.live/"
+      },
+      "status": "FOUND"
+    }
+  ],
+  "next_checks": {
+    "search_console_first_read": "2026-07-13",
+    "search_console_weekly_day": "Monday",
+    "manual_serp_recheck": "2026-08-12",
+    "manual_serp_rules": "Use the same queries, gl=sa, pws=0, page limits, and organic-only counting. Stop on CAPTCHA."
+  }
+}
