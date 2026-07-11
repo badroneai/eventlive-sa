@@ -40,7 +40,9 @@ const robots = readText('dist/robots.txt');
 const sitemap = readText('dist/sitemap.xml');
 const manifest = readJson('dist/manifest.webmanifest', {});
 const publicHtmlFiles = htmlFiles(distDir);
-const ownerOnly = ['sources.html', 'methodology.html', 'trust.html', 'events.json', 'candidates.html', 'resolver.html'];
+const ownerOnlyHtml = ['sources.html', 'methodology.html', 'trust.html', 'source-health.html', 'owner-status.html', 'candidates.html', 'resolver.html'];
+const ownerOnlyMachine = ['events.json', 'events-catalog.json', 'sources.json', 'methodology.json', 'trust.json', 'owner-status.json'];
+const ownerOnly = [...ownerOnlyHtml, ...ownerOnlyMachine];
 
 if (webQuality?.summary?.security_status !== 'PASS') findings.push({ area: 'web-quality', issue: 'security baseline not passing' });
 if (secretEnv?.status !== 'PASS') findings.push({ area: 'secrets', issue: 'secret/env audit not passing' });
@@ -51,10 +53,23 @@ for (const script of ['audit:dependencies', 'audit:secret-env', 'audit:static', 
   if (!workflow.includes(script)) findings.push({ area: 'ci', issue: `workflow missing ${script}` });
 }
 
-for (const page of ownerOnly) {
-  if (!robots.includes(`Disallow: /${page}`) && ['sources.html', 'methodology.html', 'trust.html', 'events.json'].includes(page)) {
-    findings.push({ area: 'robots', issue: `robots missing disallow for ${page}` });
+for (const page of ownerOnlyMachine) {
+  if (!robots.includes(`Disallow: /${page}`)) findings.push({ area: 'robots', issue: `robots missing disallow for ${page}` });
+}
+
+for (const page of ownerOnlyHtml) {
+  const pagePath = path.join(distDir, page);
+  if (!fs.existsSync(pagePath)) {
+    findings.push({ area: 'owner-only', issue: `owner-only page missing: ${page}` });
+    continue;
   }
+  const html = fs.readFileSync(pagePath, 'utf8');
+  if (!/<meta name="robots" content="noindex,nofollow"/i.test(html)) {
+    findings.push({ area: 'owner-only', issue: `owner-only page missing readable noindex: ${page}` });
+  }
+}
+
+for (const page of ownerOnly) {
   if (sitemap.includes(`/${page}`)) findings.push({ area: 'sitemap', issue: `owner-only page in sitemap: ${page}` });
 }
 
