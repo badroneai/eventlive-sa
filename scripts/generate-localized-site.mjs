@@ -8,7 +8,7 @@ const distDir = path.join(root, 'dist');
 const enDir = path.join(distDir, 'en');
 const siteUrl = 'https://eventme.live';
 const exact = JSON.parse(fs.readFileSync(path.join(root, 'locales', 'en-SA-static.json'), 'utf8'));
-const ownerOnly = new Set(['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html', 'owner-status.html', 'attendance.html']);
+const ownerOnly = new Set(['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html', 'owner-status.html', 'owner-search-growth.html', 'attendance.html']);
 const catalogEnvelope = JSON.parse(fs.readFileSync(path.join(distDir, 'events-catalog.json'), 'utf8'));
 const catalogEvents = catalogEnvelope.events || [];
 const eventByPath = new Map(catalogEvents.map((event) => [String(event.detail_url || '').replace(/^\.\//, ''), event]));
@@ -295,11 +295,37 @@ function guidesIndexMarkup() {
   return `<section class="section"><div class="wrap"><div class="facet-focus facet-primary i18n-content-hero"><span class="eyebrow">EventLive Knowledge Center</span><h1>Practical guides for Saudi events</h1><p class="lead">Use these guides to make a faster attendance decision, understand how event information is verified, and turn an organizer program into a useful live visitor experience.</p></div><div class="grid">${guides.map(([href, title, body]) => `<article class="card"><div class="card-body"><h2 class="title">${title}</h2><p>${body}</p><a class="cta" href="./${href}">Read guide</a></div></article>`).join('')}</div></div></section>`;
 }
 
+function insightsMarkup() {
+  const insightsPath = path.join(distDir, 'saudi-events-insights.json');
+  if (!fs.existsSync(insightsPath)) return '';
+  const insights = JSON.parse(fs.readFileSync(insightsPath, 'utf8'));
+  const metrics = [
+    ['Active events', insights.totals.active_events],
+    ['Starting within 7 days', insights.totals.starts_next_7_days],
+    ['Active cities', insights.totals.active_cities],
+    ['Live schedules', insights.totals.live_ready]
+  ];
+  const completeness = [
+    ['Linked source evidence', insights.completeness.source_evidence],
+    ['Source image', insights.completeness.source_images],
+    ['Detailed description', insights.completeness.long_descriptions],
+    ['Verifiable place', insights.completeness.verified_places],
+    ['Live schedule', insights.completeness.live_schedules]
+  ];
+  const table = (headers, rows) => `<div class="table-wrap"><table><thead><tr>${headers.map((header) => `<th>${header}</th>`).join('')}</tr></thead><tbody>${rows.join('')}</tbody></table></div>`;
+  return `<section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span>Updated with every release</span><h1>Saudi events pulse</h1><p class="lead">A measurable view of what is available now: how many events are active, where they are concentrated, and how much attendance-ready information each public record contains.</p><p class="muted">Last updated: ${escapeHtml(insights.generated_at)} · Asia/Riyadh</p></div></section>
+  <section class="section"><div class="wrap"><div class="insight-metrics">${metrics.map(([label, value]) => `<div class="insight-metric"><span>${label}</span><b>${value}</b></div>`).join('')}</div></div></section>
+  <section class="section"><div class="wrap insight-split"><div><h2>Most active cities</h2>${table(['City', 'Active events', 'Live schedules'], insights.top_cities.map((row) => `<tr><td><a href="${escapeHtml(row.url)}">${escapeHtml(exact[row.label] || row.label)}</a></td><td>${row.count}</td><td>${row.live_ready}</td></tr>`))}</div><div><h2>Most active categories</h2>${table(['Category', 'Active events', 'Live schedules'], insights.top_categories.map((row) => `<tr><td><a href="${escapeHtml(row.url)}">${escapeHtml(exact[row.label] || row.label)}</a></td><td>${row.count}</td><td>${row.live_ready}</td></tr>`))}</div></div></section>
+  <section class="section"><div class="wrap"><h2>What visitors find in active records</h2><p class="lead">These are descriptive percentages calculated from fields that are actually public. They are not marketing scores and no missing value is inferred.</p>${table(['Information', 'Coverage', 'Active records'], completeness.map(([label, value]) => `<tr><td>${label}</td><td><strong>${value.percent}%</strong><div class="meter" aria-label="${label}: ${value.percent}%"><span style="width:${value.percent}%"></span></div></td><td>${value.count} of ${insights.totals.active_events}</td></tr>`))}</div></section>
+  <section class="section"><div class="wrap"><div class="insight-note"><h2>How these numbers are calculated</h2><p>Counts come directly from EventLive public pages at build time. Active includes upcoming, ongoing, and live records. Completed events remain normal historical pages with their original dates. Internal candidates and blocked records are excluded.</p><p><a href="/saudi-events-insights.json">Open the JSON dataset</a> · <a href="./events.html">Browse all events</a></p></div></div></section>`;
+}
+
 function applyEnglishContentOverrides($, relativePath) {
   if (relativePath === 'organizers.html') $('main').html(organizersMarkup());
   else if (relativePath === 'about.html') $('main').html(aboutMarkup());
   else if (relativePath === 'saudi-events-faq.html') $('main').html(faqMarkup());
   else if (relativePath === 'guides.html') $('main').html(guidesIndexMarkup());
+  else if (relativePath === 'saudi-events-insights.html') $('main').html(insightsMarkup());
   else if (guideContent[relativePath]) $('main').html(guideMarkup(guideContent[relativePath]));
 
   const event = eventByPath.get(relativePath);
@@ -314,6 +340,23 @@ function applyEnglishContentOverrides($, relativePath) {
     const city = $(card).find('a[href*="cities/"], .meta').first().text().split(/[|·]/)[0].trim();
     $(card).find('p').filter((__, paragraph) => /[\u0600-\u06ff]/.test($(paragraph).text()) && $(paragraph).text().trim().length > 90).first().text(englishEventSummary({}, title, city));
   });
+}
+
+function localizeEnglishFooter($) {
+  const footer = $('.footer').first();
+  if (!footer.length) return;
+  const container = footer.children('.wrap').first();
+  if (!container.length) {
+    footer.children('span').each((_, element) => {
+      if (/[\u0600-\u06ff]/u.test($(element).text())) {
+        $(element).text('eventme.live | A venue screen for entrances, reception desks, and halls');
+      }
+    });
+    return;
+  }
+  const links = container.find('.footer-links').first().clone();
+  container.empty().append('EventLive keeps eventme.live as its official domain and links every public event to its source whenever available.');
+  if (links.length) container.append(links);
 }
 
 function publicPathsFromSitemap() {
@@ -615,6 +658,7 @@ function prepareEnglish(html, relativePath) {
   translateRuntimeScripts($, relativePath);
   translateJsonLd($);
   applyEnglishContentOverrides($, relativePath);
+  localizeEnglishFooter($);
   rewriteEnglishAssetUrls($, relativePath);
   englishMeta($, relativePath);
   updateSeo($, relativePath, 'en-SA');
@@ -640,7 +684,7 @@ function translateCatalog() {
 }
 
 function copyTopLevelFeeds() {
-  for (const name of ['today.json', 'today-events.json', 'this-week.json', 'this-month.json', 'updates.json', 'cities.json', 'categories.json', 'audiences.json', 'regions.json', 'live-status.json']) {
+  for (const name of ['today.json', 'today-events.json', 'this-week.json', 'this-month.json', 'updates.json', 'cities.json', 'categories.json', 'audiences.json', 'regions.json', 'live-status.json', 'saudi-events-insights.json']) {
     const source = path.join(distDir, name);
     if (fs.existsSync(source)) fs.copyFileSync(source, path.join(enDir, name));
   }

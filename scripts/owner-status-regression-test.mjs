@@ -34,14 +34,18 @@ assert.equal(status.search_visibility?.event_schema_pages, status.catalog.public
 assert.equal(status.search_visibility?.google_search_console_property, 'https://eventme.live/');
 assert.match(status.search_visibility?.google_search_console_status || '', /TOKEN|VERIFIED/);
 assert.match(status.search_visibility?.google_sitemap_status || '', /NOT_SUBMITTED|SUBMITTED|SUCCESS/);
+assert.equal(status.search_visibility?.google_sitemap_discovered_pages, 2558);
+assert.equal(status.search_visibility?.google_url_inspection_requests?.length, 1);
 assert.match(status.search_visibility?.links?.google_search_console || '', /search\.google\.com\/search-console/);
 assert.match(status.search_visibility?.links?.bing_webmaster || '', /bing\.com\/webmasters/);
+assert.equal(status.links?.search_growth, './owner-search-growth.html');
 assert.match(html, /أسباب الحجب في آخر دورة/);
 assert.match(html, /مصادر تحتاج إصلاحًا/);
 assert.match(html, /اتجاه نمو الكتالوج/);
 assert.match(html, /دورات متتالية بلا نمو/);
 assert.match(html, /مؤجلة بجدولة تكيفية/);
 assert.match(html, /الظهور في البحث والذكاءات/);
+assert.match(html, /فجوات المحتوى والسلطة/);
 assert.match(html, /<meta name="robots" content="noindex,nofollow"/);
 
 console.log(`OWNER_STATUS_TEST_OK blocked=${status.source_sync.blocked_remaining} errors=${status.source_sync.collector_error_sources.length}`);

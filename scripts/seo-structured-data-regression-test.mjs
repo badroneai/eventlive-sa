@@ -19,6 +19,7 @@ const pages = [
   { file: 'cities.html', minBlocks: 4, types: ['CollectionPage', 'Dataset', 'ItemList'], datasetUrl: 'https://eventme.live/cities.json' },
   { file: 'categories.html', minBlocks: 4, types: ['CollectionPage', 'Dataset', 'ItemList'], datasetUrl: 'https://eventme.live/categories.json' },
   { file: 'audiences.html', minBlocks: 4, types: ['CollectionPage', 'Dataset', 'ItemList'], datasetUrl: 'https://eventme.live/audiences.json' },
+  { file: 'saudi-events-insights.html', minBlocks: 3, types: ['CollectionPage', 'Dataset', 'ItemList'], datasetUrl: 'https://eventme.live/saudi-events-insights.html', minItems: 1 },
   { file: 'source-coverage-gaps.html', minBlocks: 1, types: ['WebPage'] },
   { file: 'saudi-events-today.html', minBlocks: 4, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },
   { file: 'saudi-events-tomorrow.html', minBlocks: 4, types: ['CollectionPage', 'ItemList', 'FAQPage'], minItems: 1 },

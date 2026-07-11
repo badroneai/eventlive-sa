@@ -4,10 +4,18 @@
     "property": "https://eventme.live/",
     "property_type": "url-prefix",
     "verification_method": "html-tag",
-    "verification_status": "TOKEN_READY_FOR_DEPLOYMENT",
-    "verified_at": null,
-    "sitemap_status": "NOT_SUBMITTED",
-    "sitemap_submitted_at": null,
-    "url_inspection_requests": []
+    "verification_status": "VERIFIED",
+    "verified_at": "2026-07-11T21:04:11Z",
+    "sitemap_status": "SUCCESS",
+    "sitemap_submitted_at": "2026-07-11T21:05:40Z",
+    "sitemap_last_read_at": "2026-07-11T21:05:40Z",
+    "sitemap_discovered_pages": 2558,
+    "url_inspection_requests": [
+      {
+        "url": "https://eventme.live/",
+        "requested_at": "2026-07-11T21:24:16Z",
+        "status": "REQUESTED"
+      }
+    ]
   }
 }

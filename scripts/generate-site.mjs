@@ -1105,7 +1105,7 @@ function analyticsHeadSnippet() {
 function analyticsRuntimeScript() {
   return `<script id="eventlive-analytics-runtime">
 (function () {
-  var ownerOnlyPattern = /\\/(sources|methodology|trust|source-health|candidates|resolver|owner-status)\\.html$|\\/(events|sources|trust|methodology|readiness|source-coverage-gaps|regions|owner-status)\\.json$/;
+  var ownerOnlyPattern = /\\/(sources|methodology|trust|source-health|candidates|resolver|owner-status|owner-search-growth)\\.html$|\\/(events|sources|trust|methodology|readiness|source-coverage-gaps|regions|owner-status|owner-search-growth)\\.json$/;
   var path = window.location.pathname || '';
   if (ownerOnlyPattern.test(path)) {
     window.eventLiveTrack = function () {};
@@ -1197,7 +1197,7 @@ function header(relativePrefix = './') {
 }
 
 function footer(relativePrefix = './') {
-  return `<footer class="footer"><div class="wrap">EventLive يبقي الدومين الرسمي ${platformDomain} ويربط كل فعالية بمصدرها قدر الإمكان. آخر بناء: ${formatDate(buildAt)}<div class="footer-links"><a href="${relativePrefix}about.html">عن المنصة</a><a href="${relativePrefix}privacy.html">الخصوصية</a><a href="${relativePrefix}terms.html">الشروط</a><a href="${relativePrefix}source-rights.html">حقوق المصادر</a></div></div></footer>`;
+  return `<footer class="footer"><div class="wrap">EventLive يبقي الدومين الرسمي ${platformDomain} ويربط كل فعالية بمصدرها قدر الإمكان. آخر بناء: ${formatDate(buildAt)}<div class="footer-links"><a href="${relativePrefix}saudi-events-insights.html">نبض الفعاليات</a><a href="${relativePrefix}about.html">عن المنصة</a><a href="${relativePrefix}privacy.html">الخصوصية</a><a href="${relativePrefix}terms.html">الشروط</a><a href="${relativePrefix}source-rights.html">حقوق المصادر</a></div></div></footer>`;
 }
 
 function hideOwnerOnlyPublicLinks(html) {
@@ -1217,7 +1217,7 @@ function hideOwnerOnlyPublicLinks(html) {
 function isOwnerOnlyPage(filePath) {
   const relativePath = path.relative(distDir, filePath).replace(/\\/g, '/');
   const pageName = path.basename(String(filePath));
-  const ownerOnlyPages = new Set(['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html', 'owner-status.html']);
+  const ownerOnlyPages = new Set(['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html', 'owner-status.html', 'owner-search-growth.html']);
   return ownerOnlyPages.has(relativePath) || ownerOnlyPages.has(pageName);
 }
 
@@ -3206,8 +3206,268 @@ function operationalTable(headers, rows, rowHtml) {
 
 function operationalPageCss() {
   return `${pageCss}<style>
-.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:8px;background:#fffdf8}table{width:100%;border-collapse:collapse;min-width:780px}th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:start;vertical-align:top}th{font-size:.86rem;color:#66756f;background:#f1eee4}.priority{display:grid;gap:10px}.priority-row{display:grid;grid-template-columns:80px 1fr;gap:12px;align-items:start;border:1px solid var(--line);border-radius:8px;padding:12px;background:#fffdf8}.score{display:grid;place-items:center;width:64px;height:64px;border-radius:8px;background:#0d6b52;color:#fff;font-size:1.35rem;font-weight:900}.muted{color:#66756f}.section h2{margin-top:0}.gap{color:#e5484d;font-weight:800}.watch{color:#b88a2a;font-weight:800}.healthy{color:#0d6b52;font-weight:800}@media(max-width:760px){.priority-row{grid-template-columns:1fr}.score{width:54px;height:54px}}
+.table-wrap{max-width:100%;overflow:auto;border:1px solid var(--line);border-radius:8px;background:#fffdf8}table{width:100%;border-collapse:collapse;min-width:780px}th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:start;vertical-align:top}th{font-size:.86rem;color:#66756f;background:#f1eee4}.priority{display:grid;gap:10px}.priority-row{display:grid;grid-template-columns:80px 1fr;gap:12px;align-items:start;border:1px solid var(--line);border-radius:8px;padding:12px;background:#fffdf8}.score{display:grid;place-items:center;width:64px;height:64px;border-radius:8px;background:#0d6b52;color:#fff;font-size:1.35rem;font-weight:900}.muted{color:#66756f}.section h2{margin-top:0}.gap{color:#e5484d;font-weight:800}.watch{color:#b88a2a;font-weight:800}.healthy{color:#0d6b52;font-weight:800}@media(max-width:760px){.priority-row{grid-template-columns:1fr}.score{width:54px;height:54px}}
 </style>`;
+}
+
+function percentOf(part, total) {
+  return total > 0 ? Number(((part / total) * 100).toFixed(1)) : 0;
+}
+
+function eventHasLongDescription(event = {}) {
+  return String(event.description || event.rich_summary || event.summary || '').replace(/\s+/g, ' ').trim().length >= 120;
+}
+
+function eventHasSourceImage(event = {}) {
+  return !event.generated_image && /\/assets\/event-images\//.test(event.image_url || '');
+}
+
+function eventHasVerifiedPlace(event = {}) {
+  return Boolean(
+    String(event.venue || '').trim()
+    && (event.location_verified_at || event.location_registry_id || event.location_evidence_url || event.maps_url || event.directions_url)
+  );
+}
+
+function groupEventCounts(events = [], keyFor, labelFor, urlFor) {
+  const groups = new Map();
+  for (const event of events) {
+    const key = keyFor(event);
+    if (!key) continue;
+    const current = groups.get(key) || { key, label: labelFor(event), url: urlFor(event), count: 0, live_ready: 0 };
+    current.count += 1;
+    if (event.live_schedule_ready) current.live_ready += 1;
+    groups.set(key, current);
+  }
+  return [...groups.values()].sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'ar'));
+}
+
+function buildSaudiEventsInsights(events = []) {
+  const now = Date.now();
+  const active = events.filter((event) => event.status !== 'ended');
+  const startsWithin = (days) => active.filter((event) => {
+    const starts = dateValue(event.starts_at)?.getTime();
+    return Number.isFinite(starts) && starts >= now && starts <= now + (days * 24 * 60 * 60 * 1000);
+  }).length;
+  const sourceEvidence = active.filter((event) => event.source_url || event.evidence_url).length;
+  const sourceImages = active.filter(eventHasSourceImage).length;
+  const longDescriptions = active.filter(eventHasLongDescription).length;
+  const verifiedPlaces = active.filter(eventHasVerifiedPlace).length;
+  const liveReady = active.filter((event) => event.live_schedule_ready).length;
+  const cities = groupEventCounts(
+    active,
+    (event) => event.city_slug || citySlug(event.city || ''),
+    (event) => event.city_label || cityLabel(event.city),
+    (event) => event.city_url || `./cities/${event.city_slug || citySlug(event.city || '')}.html`
+  );
+  const categories = groupEventCounts(
+    active,
+    (event) => event.category_slug || categorySlug(event.category, event),
+    (event) => event.category_label || categoryLabel(event.category_slug, event.category),
+    (event) => event.category_url || `./categories/${event.category_slug || categorySlug(event.category, event)}.html`
+  );
+  const sourceNames = new Set(active.map((event) => event.source_label || event.source_url || event.evidence_url).filter(Boolean));
+  return {
+    generated_at: buildAt,
+    timezone: 'Asia/Riyadh',
+    canonical_url: `${siteUrl}/saudi-events-insights.html`,
+    methodology: 'Counts are calculated from EventLive public records at build time. Active means upcoming, ongoing, or live; ended events remain normal historical records.',
+    totals: {
+      public_events: events.length,
+      active_events: active.length,
+      ended_events: events.length - active.length,
+      starts_next_7_days: startsWithin(7),
+      starts_next_30_days: startsWithin(30),
+      active_cities: cities.length,
+      active_sources: sourceNames.size,
+      live_ready: liveReady
+    },
+    completeness: {
+      source_evidence: { count: sourceEvidence, percent: percentOf(sourceEvidence, active.length) },
+      source_images: { count: sourceImages, percent: percentOf(sourceImages, active.length) },
+      long_descriptions: { count: longDescriptions, percent: percentOf(longDescriptions, active.length) },
+      verified_places: { count: verifiedPlaces, percent: percentOf(verifiedPlaces, active.length) },
+      live_schedules: { count: liveReady, percent: percentOf(liveReady, active.length) }
+    },
+    top_cities: cities.slice(0, 12),
+    top_categories: categories.slice(0, 12)
+  };
+}
+
+function writeSaudiEventsInsightsPage(events = []) {
+  const insights = buildSaudiEventsInsights(events);
+  writeJson('saudi-events-insights.json', insights);
+  const canonical = insights.canonical_url;
+  const metrics = [
+    ['فعاليات نشطة', insights.totals.active_events],
+    ['تبدأ خلال 7 أيام', insights.totals.starts_next_7_days],
+    ['مدن نشطة', insights.totals.active_cities],
+    ['جداول حية', insights.totals.live_ready]
+  ];
+  const completeness = [
+    ['مرتبطة بدليل مصدر', insights.completeness.source_evidence],
+    ['بصورة من المصدر', insights.completeness.source_images],
+    ['بوصف تفصيلي', insights.completeness.long_descriptions],
+    ['بمكان قابل للتحقق', insights.completeness.verified_places],
+    ['بجدول حي', insights.completeness.live_schedules]
+  ];
+  const collectionSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    inLanguage: 'ar-SA',
+    name: 'نبض فعاليات السعودية',
+    description: 'قراءة محدثة لتوزيع فعاليات السعودية النشطة وجودة معلومات الحضور في EventLive.',
+    url: canonical,
+    dateModified: buildAt,
+    isPartOf: { '@type': 'WebSite', name: platformName, url: siteUrl },
+    mainEntity: { '@id': `${canonical}#dataset` }
+  };
+  const datasetSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    '@id': `${canonical}#dataset`,
+    name: 'مؤشرات فعاليات السعودية في EventLive',
+    description: 'مؤشرات مشتقة من السجل العام للفعاليات: الفعاليات النشطة، المدن، النوافذ الزمنية، الصور، الوصف، المكان، والجداول الحية.',
+    url: canonical,
+    inLanguage: 'ar-SA',
+    dateModified: buildAt,
+    spatialCoverage: { '@type': 'Country', name: 'Saudi Arabia' },
+    creator: { '@id': `${siteUrl}/#organization`, '@type': 'Organization', name: platformName },
+    distribution: {
+      '@type': 'DataDownload',
+      encodingFormat: 'application/json',
+      contentUrl: `${siteUrl}/saudi-events-insights.json`
+    },
+    variableMeasured: Object.entries(insights.totals).map(([name, value]) => ({ '@type': 'PropertyValue', name, value }))
+  };
+  const cityListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'أكثر المدن تغطية بالفعاليات النشطة',
+    numberOfItems: insights.top_cities.length,
+    itemListElement: insights.top_cities.map((city, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: city.label,
+      url: absoluteUrl(String(city.url || '').replace(/^\.\//, ''))
+    }))
+  };
+  const html = `<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  ${baseHead({ title: `نبض فعاليات السعودية | ${platformName}`, description: 'مؤشرات حية عن الفعاليات النشطة والمدن والجداول وجودة معلومات الحضور في السعودية، محدثة مع كل دورة نشر.', canonical })}
+  <link rel="alternate" type="application/json" href="${siteUrl}/saudi-events-insights.json" />
+  ${operationalPageCss()}
+  <style>.insight-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.insight-metric{border-block:3px solid var(--green);padding:18px 4px}.insight-metric span{display:block;color:var(--muted);font-weight:700}.insight-metric b{display:block;margin-top:4px;font-size:2rem}.insight-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}.insight-split>*{min-width:0}.insight-note{border-inline-start:4px solid var(--gold);padding:14px 16px;background:#fffdf8}.meter{height:10px;margin-top:8px;border-radius:3px;background:#e4ebe6;overflow:hidden}.meter span{display:block;height:100%;background:var(--green)}.section .lead{color:var(--muted)}.hero .muted{color:#c7dbd4}main table{min-width:0;table-layout:fixed}@media(max-width:760px){.insight-metrics{grid-template-columns:1fr 1fr}.insight-split{grid-template-columns:minmax(0,1fr)}.insight-metric b{font-size:1.55rem}main th,main td{padding:8px 5px;font-size:.78rem;overflow-wrap:anywhere}}</style>
+  ${jsonLd(collectionSchema)}
+  ${jsonLd(datasetSchema)}
+  ${jsonLd(cityListSchema)}
+</head>
+<body>
+${header('./')}
+<main>
+  <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span>يتجدد مع كل نشر</span><h1>نبض فعاليات السعودية</h1><p class="lead">صورة قابلة للقياس عمّا هو متاح الآن: كم فعالية نشطة، أين تتركز، وما مقدار المعلومات التي تساعد الزائر قبل الوصول وأثناء الحضور.</p><p class="muted">آخر تحديث: ${escapeHtml(formatDate(buildAt))} · توقيت الرياض</p></div></section>
+  <section class="section"><div class="wrap"><div class="insight-metrics">${metrics.map(([label, value]) => `<div class="insight-metric"><span>${escapeHtml(label)}</span><b>${value}</b></div>`).join('')}</div></div></section>
+  <section class="section"><div class="wrap insight-split"><div><h2>أكثر المدن نشاطًا</h2>${operationalTable(['المدينة', 'فعاليات نشطة', 'جداول حية'], insights.top_cities, (row) => `<tr><td><a href="${escapeHtml(row.url)}">${escapeHtml(row.label)}</a></td><td>${row.count}</td><td>${row.live_ready}</td></tr>`)}</div><div><h2>أكثر المجالات نشاطًا</h2>${operationalTable(['المجال', 'فعاليات نشطة', 'جداول حية'], insights.top_categories, (row) => `<tr><td><a href="${escapeHtml(row.url)}">${escapeHtml(row.label)}</a></td><td>${row.count}</td><td>${row.live_ready}</td></tr>`)}</div></div></section>
+  <section class="section"><div class="wrap"><h2>ما الذي يجده الزائر في السجل النشط؟</h2><p class="lead">هذه نسب وصفية للحقول المنشورة فعلًا، وليست تقييمًا تسويقيًا أو معلومات مفترضة.</p>${operationalTable(['المعلومة', 'التغطية', 'من الفعاليات النشطة'], completeness, (row) => `<tr><td>${escapeHtml(row[0])}</td><td><strong>${row[1].percent}%</strong><div class="meter" aria-label="${escapeHtml(row[0])}: ${row[1].percent}%"><span style="width:${row[1].percent}%"></span></div></td><td>${row[1].count} من ${insights.totals.active_events}</td></tr>`)}</div></section>
+  <section class="section"><div class="wrap"><div class="insight-note"><h2>كيف تُحسب هذه الأرقام؟</h2><p>تُحسب مباشرة من صفحات EventLive العامة عند البناء. النشط يشمل القادم والجاري والمباشر، بينما تبقى الفعاليات المنتهية صفحات طبيعية بتاريخها الأصلي. لا تُحتسب المرشحات الداخلية أو السجلات المحجوبة ضمن هذه المؤشرات.</p><p><a href="./saudi-events-insights.json">فتح البيانات بصيغة JSON</a> · <a href="./events.html">تصفح كل الفعاليات</a></p></div></div></section>
+</main>
+${footer('./')}
+</body>
+</html>`;
+  writeText(path.join(distDir, 'saudi-events-insights.html'), html);
+  return insights;
+}
+
+function buildOwnerSearchGrowth(events = []) {
+  const now = Date.now();
+  const active = events.filter((event) => event.status !== 'ended');
+  const gaps = active.map((event) => {
+    const starts = dateValue(event.starts_at)?.getTime();
+    const soon = Number.isFinite(starts) && starts >= now && starts <= now + (30 * 24 * 60 * 60 * 1000);
+    const missing = [];
+    if (!eventHasSourceImage(event)) missing.push('source_image');
+    if (!eventHasLongDescription(event)) missing.push('long_description');
+    if (!eventHasVerifiedPlace(event)) missing.push('verified_place');
+    if (!event.live_schedule_ready) missing.push('live_schedule');
+    const priority = (soon ? 40 : 0)
+      + (missing.includes('source_image') ? 20 : 0)
+      + (missing.includes('long_description') ? 15 : 0)
+      + (missing.includes('verified_place') ? 15 : 0)
+      + (missing.includes('live_schedule') ? 10 : 0);
+    return {
+      id: event.id,
+      title: event.title,
+      city: event.city_label || cityLabel(event.city),
+      starts_at: event.starts_at,
+      detail_url: event.detail_url,
+      source_url: event.source_url || event.evidence_url || '',
+      missing,
+      priority
+    };
+  }).filter((row) => row.missing.length).sort((a, b) => b.priority - a.priority || String(a.starts_at).localeCompare(String(b.starts_at)));
+  const sourceGroups = new Map();
+  for (const event of events) {
+    const sourceUrl = event.source_url || event.evidence_url || '';
+    const host = hostLabel(sourceUrl);
+    if (!host) continue;
+    const current = sourceGroups.get(host) || { host, source_url: sourceUrl, events: 0, active_events: 0, live_ready: 0, cities: new Set() };
+    current.events += 1;
+    if (event.status !== 'ended') current.active_events += 1;
+    if (event.live_schedule_ready) current.live_ready += 1;
+    current.cities.add(event.city_label || cityLabel(event.city));
+    sourceGroups.set(host, current);
+  }
+  const authority = [...sourceGroups.values()].map((row) => ({
+    host: row.host,
+    source_url: row.source_url,
+    events: row.events,
+    active_events: row.active_events,
+    live_ready: row.live_ready,
+    cities: [...row.cities].filter(Boolean),
+    priority: row.active_events * 3 + row.events + row.live_ready * 2,
+    next_action: row.active_events >= 3
+      ? 'اطلب قناة بيانات رسمية أو رابط تقويم ثابت، وتصحيحًا مباشرًا عند تغير الوقت أو المكان.'
+      : 'حافظ على الاستشهاد بالمصدر وراقب ظهور فعاليات جديدة قبل طلب شراكة موسعة.'
+  })).sort((a, b) => b.priority - a.priority || b.active_events - a.active_events).slice(0, 30);
+  const missingCount = (key) => gaps.filter((row) => row.missing.includes(key)).length;
+  return {
+    generated_at: buildAt,
+    cadence: 'every_build_including_six_hour_source_sync',
+    active_events: active.length,
+    gaps: {
+      source_image: missingCount('source_image'),
+      long_description: missingCount('long_description'),
+      verified_place: missingCount('verified_place'),
+      live_schedule: missingCount('live_schedule')
+    },
+    priority_events: gaps.slice(0, 120),
+    authority_opportunities: authority,
+    guardrails: [
+      'No fabricated event fields.',
+      'No automated outreach or link exchange.',
+      'Request editorial citations, official feeds, corrections, or organizer partnerships only.',
+      'Discovery-only records remain excluded from public publication.'
+    ]
+  };
+}
+
+function writeOwnerSearchGrowthPage(events = []) {
+  const growth = buildOwnerSearchGrowth(events);
+  writeJson('owner-search-growth.json', growth);
+  const canonical = absoluteUrl('owner-search-growth.html');
+  const gapLabels = { source_image: 'صورة مصدر', long_description: 'وصف تفصيلي', verified_place: 'مكان موثق', live_schedule: 'جدول حي' };
+  const html = `<!doctype html><html lang="ar" dir="rtl"><head>
+  ${baseHead({ title: `نمو الظهور والسلطة | ${platformName}`, description: 'صفحة مالك لترتيب فجوات محتوى EventLive وفرص المصادر والربط التحريري.', canonical, noindex: true })}
+  ${operationalPageCss()}
+  ${jsonLd({ '@context': 'https://schema.org', '@type': 'WebPage', inLanguage: 'ar-SA', name: 'لوحة نمو الظهور والسلطة', url: canonical, dateModified: buildAt })}
+  </head><body>${header('./')}<main>
+  <section class="hero"><div class="wrap"><span class="eyebrow">للمالك فقط</span><h1>نمو الظهور والسلطة</h1><p class="lead">قائمة تتجدد مع كل بناء، بما فيه دورة الجلب كل ست ساعات، لترتيب أثر التحسين قبل العمل اليدوي أو التواصل مع المصادر.</p><div class="signal-strip"><div class="signal"><span>نشطة</span><b>${growth.active_events}</b></div><div class="signal"><span>تحتاج صورة مصدر</span><b>${growth.gaps.source_image}</b></div><div class="signal"><span>تحتاج وصفًا</span><b>${growth.gaps.long_description}</b></div><div class="signal"><span>تحتاج مكانًا</span><b>${growth.gaps.verified_place}</b></div></div></div></section>
+  <section class="section"><div class="wrap"><h2>أعلى فجوات المحتوى أولوية</h2>${operationalTable(['الأولوية', 'الفعالية', 'المدينة', 'البداية', 'الفجوات'], growth.priority_events.slice(0, 40), (row) => `<tr><td>${row.priority}</td><td><a href="${escapeHtml(row.detail_url)}">${escapeHtml(row.title)}</a></td><td>${escapeHtml(row.city)}</td><td>${escapeHtml(row.starts_at)}</td><td>${row.missing.map((item) => escapeHtml(gapLabels[item] || item)).join('، ')}</td></tr>`)}</div></section>
+  <section class="section"><div class="wrap"><h2>فرص البيانات والربط الرسمي</h2><p class="lead">هذه قائمة قرار، وليست حملة إرسال آلية. أي تواصل أو اتفاق روابط يحتاج اعتمادًا بشريًا ولا يتضمن تبادل روابط مصطنعًا.</p>${operationalTable(['المصدر', 'النشطة', 'الإجمالي', 'مدن', 'الخطوة التالية'], growth.authority_opportunities, (row) => `<tr><td><a href="${escapeHtml(row.source_url)}" target="_blank" rel="noopener">${escapeHtml(row.host)}</a></td><td>${row.active_events}</td><td>${row.events}</td><td>${row.cities.length}</td><td>${escapeHtml(row.next_action)}</td></tr>`)}</div></section>
+  </main>${footer('./')}</body></html>`;
+  writeText(path.join(distDir, 'owner-search-growth.html'), html);
+  return growth;
 }
 
 function writeSourceCoverageGapsPage(events) {
@@ -3370,6 +3630,8 @@ function writeOwnerStatusPage(events, seoDiscovery = {}) {
       google_search_console_verified_at: googleSearchConsole.verified_at || null,
       google_sitemap_status: googleSearchConsole.sitemap_status || 'NOT_SUBMITTED',
       google_sitemap_submitted_at: googleSearchConsole.sitemap_submitted_at || null,
+      google_sitemap_last_read_at: googleSearchConsole.sitemap_last_read_at || null,
+      google_sitemap_discovered_pages: Number(googleSearchConsole.sitemap_discovered_pages || 0),
       google_url_inspection_requests: Array.isArray(googleSearchConsole.url_inspection_requests)
         ? googleSearchConsole.url_inspection_requests
         : [],
@@ -3428,6 +3690,7 @@ function writeOwnerStatusPage(events, seoDiscovery = {}) {
       analytics_dashboard: analytics.dashboard_url || `https://plausible.io/${analytics.domain || platformDomain}`,
       source_health: './source-health.html',
       source_coverage: './source-coverage-gaps.html',
+      search_growth: './owner-search-growth.html',
       events_json: './events.json'
     }
   };
@@ -3455,7 +3718,7 @@ ${header('./')}
   <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span>للمالك فقط</span><h1>حالة التشغيل والقياس</h1><p class="lead">افتح هذه الصفحة بعد النشر لمعرفة آخر جلب دوري، كم نما الكتالوج، كم بقي محجوبًا، وهل القياس مزروع. أرقام الزوار التفصيلية لا تظهر إلا بعد تفعيل لوحة Plausible للدومين بحساب المالك.</p><div class="signal-strip"><div class="signal"><span>فعاليات منشورة</span><b>${status.catalog.public_events}</b></div><div class="signal"><span>التغير آخر دورة</span><b>${escapeHtml(publicDeltaLabel)}</b></div><div class="signal"><span>مرشحون جدد</span><b>${status.source_sync.new_active_candidates}</b></div><div class="signal"><span>جداول حية</span><b>${status.catalog.live_ready}</b></div></div></div></section>
   <section class="section"><div class="wrap grid">
     <article class="activation-card"><h2>الزيارات والتحليلات</h2><p>حالة الزر: <strong>${escapeHtml(status.analytics.dashboard_status)}</strong></p><p>المزود: <strong>${escapeHtml(status.analytics.provider)}</strong></p><p>الدومين: <strong>${escapeHtml(status.analytics.domain)}</strong></p><p>الخصوصية: بدون كوكيز وبدون بيانات شخصية حسب إعدادات التقرير.</p><p><strong>${escapeHtml(analyticsStatusCopy)}</strong></p><div class="activation-actions"><a class="cta" href="${escapeHtml(analyticsDashboardHref)}" target="_blank" rel="noopener">${escapeHtml(analyticsDashboardLabel)}</a><a class="cta" href="./owner-status.json">بيانات الصفحة JSON</a></div></article>
-    <article class="activation-card"><h2>الظهور في البحث والذكاءات</h2><p>الجاهزية التقنية: <strong>${escapeHtml(status.search_visibility.technical_status)}</strong></p><p>صفحات Event منظمة بالعربية والإنجليزية: <strong>${status.search_visibility.event_schema_pages}</strong></p><p>روابط تغيرت وسترسل إلى IndexNow: <strong>${status.search_visibility.indexnow_urls_queued}</strong></p><p>Search Console: <strong>${escapeHtml(status.search_visibility.google_search_console_status)}</strong></p><p>Sitemap في Google: <strong>${escapeHtml(status.search_visibility.google_sitemap_status)}</strong></p><div class="activation-actions"><a class="cta" href="${escapeHtml(status.search_visibility.links.google_search_console)}" target="_blank" rel="noopener">Google Search Console</a><a class="cta" href="${escapeHtml(status.search_visibility.links.bing_webmaster)}" target="_blank" rel="noopener">Bing Webmaster</a><a class="cta" href="${escapeHtml(status.search_visibility.links.rich_results_test)}" target="_blank" rel="noopener">اختبار النتائج المنسقة</a><a class="cta" href="${escapeHtml(status.search_visibility.links.pagespeed)}" target="_blank" rel="noopener">PageSpeed</a></div></article>
+    <article class="activation-card"><h2>الظهور في البحث والذكاءات</h2><p>الجاهزية التقنية: <strong>${escapeHtml(status.search_visibility.technical_status)}</strong></p><p>صفحات Event منظمة بالعربية والإنجليزية: <strong>${status.search_visibility.event_schema_pages}</strong></p><p>روابط تغيرت وسترسل إلى IndexNow: <strong>${status.search_visibility.indexnow_urls_queued}</strong></p><p>Search Console: <strong>${escapeHtml(status.search_visibility.google_search_console_status)}</strong></p><p>Sitemap في Google: <strong>${escapeHtml(status.search_visibility.google_sitemap_status)}</strong></p><p>صفحات اكتشفتها Google من الخريطة: <strong>${status.search_visibility.google_sitemap_discovered_pages.toLocaleString('en-US')}</strong></p><p>طلبات إعادة الفهرسة المسجلة: <strong>${status.search_visibility.google_url_inspection_requests.length}</strong></p><div class="activation-actions"><a class="cta" href="${escapeHtml(status.search_visibility.links.google_search_console)}" target="_blank" rel="noopener">Google Search Console</a><a class="cta" href="./owner-search-growth.html">فجوات المحتوى والسلطة</a><a class="cta" href="${escapeHtml(status.search_visibility.links.bing_webmaster)}" target="_blank" rel="noopener">Bing Webmaster</a><a class="cta" href="${escapeHtml(status.search_visibility.links.rich_results_test)}" target="_blank" rel="noopener">اختبار النتائج المنسقة</a><a class="cta" href="${escapeHtml(status.search_visibility.links.pagespeed)}" target="_blank" rel="noopener">PageSpeed</a></div></article>
     <article class="activation-card"><h2>آخر جلب دوري</h2><p>آخر تقرير: <strong>${escapeHtml(status.source_sync.last_run_at || 'غير متاح')}</strong></p><p>مستحقة الآن: <strong>${status.source_sync.due_sources}</strong> · نُفذت: <strong>${status.source_sync.attempted_sources}</strong> · مؤجلة بجدولة تكيفية: <strong>${status.source_sync.deferred_sources}</strong></p><p>مصادر منتجة: <strong>${status.source_sync.productive_sources}</strong> · أخطاء هذه الدورة: <strong>${status.source_sync.collector_errors}</strong> · أخطاء متراكمة تحت المراقبة: <strong>${status.source_sync.persistent_collector_errors}</strong></p><p>الفحص العميق: <strong>${escapeHtml(status.source_sync.diagnostics_status)}</strong> · موعده التالي: <strong>${escapeHtml(status.source_sync.diagnostics_next_due_at || 'غير متاح')}</strong></p><p>مرشحون: <strong>${status.source_sync.candidates_seen}</strong> · منشور جديد: <strong>${status.source_sync.published_new}</strong> · مربوط بموجود: <strong>${status.source_sync.linked_existing}</strong></p><div class="activation-actions"><a class="cta" href="./source-health.html">صحة المصادر</a><a class="cta" href="./source-coverage-gaps.html">فجوات التغطية</a></div></article>
     <article class="activation-card"><h2>اتجاه نمو الكتالوج</h2><p>حالة الدورة: <strong>${escapeHtml(status.source_sync.growth_status)}</strong></p><p>التغير العام: <strong>${escapeHtml(publicDeltaLabel)}</strong> · مرشحون جدد: <strong>${status.source_sync.new_active_candidates}</strong> · منتهية جديدة: <strong>${status.source_sync.new_ended_events}</strong></p><p>دورات متتالية بلا نمو: <strong>${status.source_sync.no_growth_streak}</strong> · فقد ناتج منشور: <strong>${status.source_sync.lost_published_output ? 'نعم' : 'لا'}</strong></p></article>
   </div></section>
@@ -6195,7 +6458,7 @@ function sitemapImageXml(event = {}) {
 
 function writeSitemap(events = []) {
   const eventByPage = new Map(events.map((event) => [`events/${event.file_slug}.html`.normalize('NFC'), event]));
-  const ownerOnlyPages = new Set(['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html', 'owner-status.html', 'attendance.html']);
+  const ownerOnlyPages = new Set(['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html', 'owner-status.html', 'owner-search-growth.html', 'attendance.html']);
   const sitemapPaths = [...new Set(htmlFiles(distDir)
     .map((file) => file.replace(/\\/g, '/').normalize('NFC'))
     .filter((file) => !ownerOnlyPages.has(file))
@@ -6228,6 +6491,7 @@ function writeAiSearchFiles(events) {
     '/readiness.json',
     '/source-coverage-gaps.json',
     '/owner-status.json',
+    '/owner-search-growth.json',
     '/en/events.json',
     '/en/events-catalog.json'
   ];
@@ -6286,9 +6550,11 @@ Important public pages:
 - Saudi events FAQ: ${siteUrl}/saudi-events-faq.html
 - Organizers: ${siteUrl}/organizers.html
 - About EventLive: ${siteUrl}/about.html
+- Saudi events insights: ${siteUrl}/saudi-events-insights.html
 
 Machine-readable feeds:
 - Live status JSON: ${siteUrl}/live-status.json
+- Saudi events insights JSON: ${siteUrl}/saudi-events-insights.json
 - Public JSON Feed: ${siteUrl}/feeds/all.json
 - Public RSS Feed: ${siteUrl}/feeds/all.xml
 - ICS calendar: ${siteUrl}/events.ics
@@ -6623,7 +6889,7 @@ function decorateBrandHtml(html, filePath) {
   next = next.replace(/<a\b[^>]+href=["']\.\/current-release-bundle\.json["'][\s\S]*?<\/a>/g, '');
   next = protectTargetBlankLinks(next);
   if (!isOwnerOnlyPage(filePath) && !/privacy\.html/.test(next) && /<\/footer>/i.test(next)) {
-    next = next.replace(/<\/footer>/i, `<nav class="footer-links" aria-label="روابط الثقة"><a href="./about.html">عن المنصة</a><a href="./privacy.html">الخصوصية</a><a href="./terms.html">الشروط</a><a href="./source-rights.html">حقوق المصادر</a></nav></footer>`);
+    next = next.replace(/<\/footer>/i, `<nav class="footer-links" aria-label="روابط الثقة"><a href="./saudi-events-insights.html">نبض الفعاليات</a><a href="./about.html">عن المنصة</a><a href="./privacy.html">الخصوصية</a><a href="./terms.html">الشروط</a><a href="./source-rights.html">حقوق المصادر</a></nav></footer>`);
   }
   return next;
 }
@@ -6657,7 +6923,8 @@ function hideOwnerOnlyManifestShortcuts() {
     './candidates.html',
     './resolver.html',
     './source-health.html',
-    './owner-status.html'
+    './owner-status.html',
+    './owner-search-growth.html'
   ]);
   if (Array.isArray(manifest.shortcuts)) {
     manifest.shortcuts = manifest.shortcuts.filter((shortcut) => !ownerOnlyTargets.has(shortcut.url));
@@ -6722,6 +6989,8 @@ const browsePatched = patchEventsBrowsePage(events);
 const organizersPatched = patchOrganizersPage();
 const categoryFallback = writeLinkedCategoryFallbackPages(events);
 writeSourceCoverageGapsPage(events);
+writeSaudiEventsInsightsPage(events);
+writeOwnerSearchGrowthPage(events);
 writeOwnerStatusPage(events, seoDiscovery);
 writeRegionsCoveragePage(events);
 writeReadinessPage(events);
