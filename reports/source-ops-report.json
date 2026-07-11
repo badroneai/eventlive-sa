@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T11:10:04.334Z",
+  "generated_at": "2026-07-11T11:18:38.111Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,9 +11,9 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-07-11T11:01:12.504Z",
+    "collected_at": "2026-07-11T11:12:43.732Z",
     "freshness": "fresh",
-    "discovered": 239,
+    "discovered": 237,
     "written": 452
   },
   "sources": {
@@ -26,9 +26,9 @@
     "collection_coverage_pct": 100,
     "registry_collection_coverage_pct": 22,
     "scheduled_runnable_coverage_pct": 100,
-    "healthy": 19,
+    "healthy": 18,
     "zero_yield": 0,
-    "errors": 0,
+    "errors": 1,
     "cadence_deferred": 26,
     "not_collected": 40,
     "unattempted_high_priority": 3,
@@ -784,13 +784,13 @@
         "id": "asharqia-chamber-events",
         "name": "Asharqia Chamber Events",
         "priority": 59,
-        "status": "healthy",
+        "status": "collection-error",
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 2,
+        "extracted": 0,
         "candidates": 2,
-        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
+        "next_action": "fetch failed; page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentloaded\"\n"
       },
       {
         "id": "qassim-chamber-events",
