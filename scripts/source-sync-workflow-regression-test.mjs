@@ -16,6 +16,8 @@ assert.match(workflow, /cron:\s*["']17 \*\/6 \* \* \*["']/, 'source sync must ru
 assert.match(workflow, /EVENTLIVE_SOURCE_ENDED_MIN_YEAR:\s*["']2022["']/, 'ended-event sync must keep the 2022 minimum-year boundary');
 assert.match(workflow, /EVENTLIVE_TRUSTED_SOURCE_LIMIT:\s*["']200["']/, 'trusted sources must not be constrained to the discovery-source cap');
 assert.match(workflow, /EVENTLIVE_TRUSTED_SOURCE_ENDED_LIMIT:\s*["']200["']/, 'trusted archive collection must preserve a useful history window');
+assert.match(workflow, /EVENTLIVE_MAX_SOURCE_COLLECTOR_ERRORS:\s*["']12["']/, 'transient collector failures must not discard a complete catalog build');
+assert.match(workflow, /EVENTLIVE_CRITICAL_SOURCE_ERROR_STREAK:\s*["']2["']/, 'critical-source failures must be persistent across distinct runs before blocking publication');
 assert.match(workflow, /contents:\s*write/, 'source sync must be allowed to persist catalog state');
 assert.match(workflow, /pages:\s*write/, 'source sync must be allowed to deploy Pages');
 assert.match(workflow, /run:\s*npm run sources:sync/, 'source sync workflow must use the canonical sources:sync command');

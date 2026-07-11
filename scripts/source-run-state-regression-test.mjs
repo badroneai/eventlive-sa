@@ -52,6 +52,18 @@ fs.writeFileSync(registryPath, `${JSON.stringify({
       intake_policy: 'monitor-public',
       candidate_gate: 'human-review',
       fetch_method: 'html-listing'
+    },
+    {
+      id: 'failing-official',
+      name: 'Failing Official',
+      owner: 'Official Owner',
+      url: 'https://failure.example.gov.sa/events',
+      priority: 4,
+      source_type: 'government-calendar',
+      trust_level: 'official',
+      intake_policy: 'official-feed-preferred',
+      candidate_gate: 'human-review',
+      fetch_method: 'html-calendar'
     }
   ]
 }, null, 2)}\n`);
@@ -67,17 +79,21 @@ fs.writeFileSync(path.join(reportsDir, 'source-ingestion-plan.json'), `${JSON.st
   sources: [
     { id: 'official-calendar', ring: 'active-collector', cadence: 'daily', next_action: 'continue' },
     { id: 'community-discovery', ring: 'discovery-only', cadence: 'weekly-discovery', next_action: 'discover only' },
-    { id: 'seasonal-official', ring: 'active-collector', cadence: 'daily', next_action: 'monitor' }
+    { id: 'seasonal-official', ring: 'active-collector', cadence: 'daily', next_action: 'monitor' },
+    { id: 'failing-official', ring: 'active-collector', cadence: 'daily', next_action: 'repair' }
   ]
 }, null, 2)}\n`);
 
-fs.writeFileSync(path.join(reportsDir, 'source-collection-report.json'), `${JSON.stringify({
+const collectionReportPath = path.join(reportsDir, 'source-collection-report.json');
+const collectionReport = {
   collected_at: '2026-07-05T00:10:00.000Z',
   sources: [
     { id: 'official-calendar', status: 'ok', extracted: 4, snapshot_path: 'data/raw/source-snapshots/official.json', note: '' },
-    { id: 'seasonal-official', status: 'ok', extracted: 0, snapshot_path: 'data/raw/source-snapshots/seasonal.html', note: 'No future rows.' }
+    { id: 'seasonal-official', status: 'ok', extracted: 0, snapshot_path: 'data/raw/source-snapshots/seasonal.html', note: 'No future rows.' },
+    { id: 'failing-official', status: 'error', extracted: 0, snapshot_path: '', note: 'Request timed out.' }
   ]
-}, null, 2)}\n`);
+};
+fs.writeFileSync(collectionReportPath, `${JSON.stringify(collectionReport, null, 2)}\n`);
 
 fs.writeFileSync(path.join(reportsDir, 'source-yield-report.json'), `${JSON.stringify({
   generated_at: '2026-07-05T00:09:00.000Z',
@@ -92,32 +108,37 @@ fs.writeFileSync(path.join(reportsDir, 'source-deep-probe-report.json'), `${JSON
   sources: []
 }, null, 2)}\n`);
 
-const run = spawnSync(process.execPath, ['scripts/source-run-state.mjs'], {
-  cwd: process.cwd(),
-  encoding: 'utf8',
-  env: {
-    ...process.env,
-    EVENTLIVE_SOURCE_REGISTRY_FILE: registryPath,
-    EVENTLIVE_SOURCE_RUN_STATE_FILE: statePath,
-    EVENTLIVE_SOURCE_RUN_STATE_REPORT_JSON: reportJsonPath,
-    EVENTLIVE_SOURCE_RUN_STATE_REPORT_MD: reportMdPath,
-    EVENTLIVE_SOURCE_COLLECTION_REPORT_JSON: path.join(reportsDir, 'source-collection-report.json'),
-    EVENTLIVE_SOURCE_YIELD_REPORT_JSON: path.join(reportsDir, 'source-yield-report.json'),
-    EVENTLIVE_SOURCE_INGESTION_PLAN_JSON: path.join(reportsDir, 'source-ingestion-plan.json'),
-    EVENTLIVE_SOURCE_DEEP_PROBE_REPORT_JSON: path.join(reportsDir, 'source-deep-probe-report.json')
-  }
-});
+function runStateScript() {
+  const run = spawnSync(process.execPath, ['scripts/source-run-state.mjs'], {
+    cwd: process.cwd(),
+    encoding: 'utf8',
+    env: {
+      ...process.env,
+      EVENTLIVE_SOURCE_REGISTRY_FILE: registryPath,
+      EVENTLIVE_SOURCE_RUN_STATE_FILE: statePath,
+      EVENTLIVE_SOURCE_RUN_STATE_REPORT_JSON: reportJsonPath,
+      EVENTLIVE_SOURCE_RUN_STATE_REPORT_MD: reportMdPath,
+      EVENTLIVE_SOURCE_COLLECTION_REPORT_JSON: collectionReportPath,
+      EVENTLIVE_SOURCE_YIELD_REPORT_JSON: path.join(reportsDir, 'source-yield-report.json'),
+      EVENTLIVE_SOURCE_INGESTION_PLAN_JSON: path.join(reportsDir, 'source-ingestion-plan.json'),
+      EVENTLIVE_SOURCE_DEEP_PROBE_REPORT_JSON: path.join(reportsDir, 'source-deep-probe-report.json')
+    }
+  });
 
-if (run.status !== 0) {
-  console.error(run.stdout);
-  console.error(run.stderr);
-  process.exit(run.status || 1);
+  if (run.status !== 0) {
+    console.error(run.stdout);
+    console.error(run.stderr);
+    process.exit(run.status || 1);
+  }
 }
 
-const state = JSON.parse(fs.readFileSync(statePath, 'utf8'));
+runStateScript();
+
+let state = JSON.parse(fs.readFileSync(statePath, 'utf8'));
 const official = state.sources.find((source) => source.id === 'official-calendar');
 const discovery = state.sources.find((source) => source.id === 'community-discovery');
-const seasonal = state.sources.find((source) => source.id === 'seasonal-official');
+let seasonal = state.sources.find((source) => source.id === 'seasonal-official');
+let failing = state.sources.find((source) => source.id === 'failing-official');
 
 assert.equal(official.status, 'productive');
 assert.equal(official.auto_publish_eligible_by_source, true);
@@ -126,7 +147,25 @@ assert.equal(discovery.auto_publish_eligible_by_source, false);
 assert.equal(discovery.source_boundary, 'discovery_signal_only');
 assert.equal(seasonal.status, 'zero-yield');
 assert.equal(seasonal.zero_yield_streak, 3);
+assert.equal(failing.status, 'collector-error');
+assert.equal(failing.error_streak, 1);
 assert.match(seasonal.next_action, /Zero-yield for 3 runs/);
 assert.ok(fs.existsSync(reportMdPath));
+
+runStateScript();
+state = JSON.parse(fs.readFileSync(statePath, 'utf8'));
+seasonal = state.sources.find((source) => source.id === 'seasonal-official');
+failing = state.sources.find((source) => source.id === 'failing-official');
+assert.equal(seasonal.zero_yield_streak, 3, 'recomputing one collection run must not inflate zero-yield streaks');
+assert.equal(failing.error_streak, 1, 'recomputing one collection run must not inflate error streaks');
+
+collectionReport.collected_at = '2026-07-05T06:10:00.000Z';
+fs.writeFileSync(collectionReportPath, `${JSON.stringify(collectionReport, null, 2)}\n`);
+runStateScript();
+state = JSON.parse(fs.readFileSync(statePath, 'utf8'));
+seasonal = state.sources.find((source) => source.id === 'seasonal-official');
+failing = state.sources.find((source) => source.id === 'failing-official');
+assert.equal(seasonal.zero_yield_streak, 4, 'a distinct collection run must increment zero-yield streaks once');
+assert.equal(failing.error_streak, 2, 'a distinct collection run must increment error streaks once');
 
 console.log('TEST_OK source run state regression checks passed');

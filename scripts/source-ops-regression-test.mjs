@@ -25,6 +25,7 @@ assert.equal(report.collection.basis, expectedBasis, 'source ops must use the wi
 assert.equal(report.sources.attempted, expectedAttempted, 'source ops attempted count must reflect the widest available collection basis');
 assert.ok(report.sources.collection_coverage_pct >= 25, 'source ops coverage must not collapse to a partial one-source test run');
 assert.ok(report.sources.health.some((source) => source.status === 'healthy'), 'source ops must retain productive source health from run-state memory');
+assert.equal(health.sources.every((source) => Number.isFinite(source.error_streak)), true, 'public source health must expose persistent error streaks');
 assert.equal(health.totals.candidates_written, candidates.length, 'public source health must report the final deduplicated candidate queue');
 assert.equal(health.totals.candidates_collected_before_dedupe, collectionReport.candidates_written, 'public source health must retain the pre-dedupe collection total separately');
 

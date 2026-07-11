@@ -142,12 +142,18 @@ function freshnessLabel(isoValue) {
 function sourceHealth(source, collectionBySource, candidates) {
   const collection = collectionBySource.get(source.id);
   const ownedCandidates = candidates.filter((candidate) => candidate.source_label === source.name);
+  const streaks = {
+    error_streak: Number(collection?.error_streak || 0),
+    zero_yield_streak: Number(collection?.zero_yield_streak || 0),
+    last_attempted_at: collection?.last_attempted_at || null
+  };
   if (!collection) {
     return {
       id: source.id,
       name: source.name,
       priority: source.priority,
       status: 'not-collected',
+      ...streaks,
       extracted: 0,
       candidates: ownedCandidates.length,
       next_action: source.fetch_method === 'partnership-api'
@@ -161,6 +167,7 @@ function sourceHealth(source, collectionBySource, candidates) {
       name: source.name,
       priority: source.priority,
       status: 'collection-error',
+      ...streaks,
       extracted: collection.extracted || 0,
       candidates: ownedCandidates.length,
       next_action: collection.note || 'راجع خطأ الجلب قبل توسيع المصدر.'
@@ -172,6 +179,7 @@ function sourceHealth(source, collectionBySource, candidates) {
       name: source.name,
       priority: source.priority,
       status: 'zero-yield',
+      ...streaks,
       extracted: 0,
       candidates: ownedCandidates.length,
       next_action: collection.note || 'حسن extractor أو ابحث عن endpoint/تفاصيل أكثر اكتمالاً.'
@@ -182,6 +190,7 @@ function sourceHealth(source, collectionBySource, candidates) {
     name: source.name,
     priority: source.priority,
     status: 'healthy',
+    ...streaks,
     extracted: collection.extracted,
     candidates: ownedCandidates.length,
     next_action: 'استمر بالمراجعة والتكرار قبل النشر.'
@@ -199,6 +208,9 @@ function runStateCollectionRows(runState) {
         id: source.id,
         status: failed ? source.last_collection_status : 'ok',
         extracted: Number(source.last_extracted || 0),
+        error_streak: Number(source.error_streak || 0),
+        zero_yield_streak: Number(source.zero_yield_streak || 0),
+        last_attempted_at: source.last_attempted_at,
         note: failed
           ? source.next_action || source.last_collection_status
           : zeroYield

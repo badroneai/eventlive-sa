@@ -150,10 +150,27 @@ function main() {
       const collectionRow = collectionById.get(source.id) || null;
       const yieldRow = yieldById.get(source.id) || null;
       const probeRow = probeById.get(source.id) || null;
-      const status = runStatus({ ring, collection: collectionRow, probe: probeRow });
       const previousRow = previousById.get(source.id) || {};
-      const zeroYieldStreak = status === 'zero-yield' ? Number(previousRow.zero_yield_streak || 0) + 1 : 0;
-      const errorStreak = status === 'collector-error' ? Number(previousRow.error_streak || 0) + 1 : 0;
+      const attemptedThisRun = Boolean(collectionRow);
+      const status = attemptedThisRun
+        ? runStatus({ ring, collection: collectionRow, probe: probeRow })
+        : previousRow.status || runStatus({ ring, collection: collectionRow, probe: probeRow });
+      const sameCollectionRun = attemptedThisRun
+        && previousRow.last_attempted_at === collection.collected_at;
+      const zeroYieldStreak = !attemptedThisRun
+        ? Number(previousRow.zero_yield_streak || 0)
+        : status === 'zero-yield'
+          ? sameCollectionRun
+            ? Math.max(1, Number(previousRow.zero_yield_streak || 0))
+            : Number(previousRow.zero_yield_streak || 0) + 1
+          : 0;
+      const errorStreak = !attemptedThisRun
+        ? Number(previousRow.error_streak || 0)
+        : status === 'collector-error'
+          ? sameCollectionRun
+            ? Math.max(1, Number(previousRow.error_streak || 0))
+            : Number(previousRow.error_streak || 0) + 1
+          : 0;
       const boundary = sourceBoundary(source, ring);
 
       return {
@@ -171,14 +188,16 @@ function main() {
         cadence: planRow.cadence || '',
         source_boundary: boundary,
         status,
-        last_attempted_at: collectionRow ? collection.collected_at : null,
-        last_yield_checked_at: yieldRow ? yieldReport.generated_at : null,
-        last_probe_at: probeRow ? probe.generated_at : null,
-        last_collection_status: collectionRow?.status || '',
-        last_extracted: Number(collectionRow?.extracted || 0),
-        last_snapshot_path: collectionRow?.snapshot_path || yieldRow?.snapshot_path || '',
-        last_zero_yield_reason: yieldRow?.zero_yield_reason || collectionRow?.note || '',
-        dropped_samples_count: Array.isArray(yieldRow?.dropped_samples) ? yieldRow.dropped_samples.length : 0,
+        last_attempted_at: collectionRow ? collection.collected_at : previousRow.last_attempted_at || null,
+        last_yield_checked_at: yieldRow ? yieldReport.generated_at : previousRow.last_yield_checked_at || null,
+        last_probe_at: probeRow ? probe.generated_at : previousRow.last_probe_at || null,
+        last_collection_status: collectionRow?.status || previousRow.last_collection_status || '',
+        last_extracted: collectionRow ? Number(collectionRow.extracted || 0) : Number(previousRow.last_extracted || 0),
+        last_snapshot_path: collectionRow?.snapshot_path || yieldRow?.snapshot_path || previousRow.last_snapshot_path || '',
+        last_zero_yield_reason: yieldRow?.zero_yield_reason || collectionRow?.note || previousRow.last_zero_yield_reason || '',
+        dropped_samples_count: yieldRow
+          ? (Array.isArray(yieldRow.dropped_samples) ? yieldRow.dropped_samples.length : 0)
+          : Number(previousRow.dropped_samples_count || 0),
         zero_yield_streak: zeroYieldStreak,
         error_streak: errorStreak,
         auto_publish_eligible_by_source: isAutoPublishEligibleSource(source, ring),

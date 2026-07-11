@@ -7,6 +7,7 @@ const minProductiveSources = Number(process.env.EVENTLIVE_MIN_PRODUCTIVE_SOURCES
 const maxCollectorErrors = Number(process.env.EVENTLIVE_MAX_SOURCE_COLLECTOR_ERRORS ?? 0);
 const criticalPriorityMax = Number(process.env.EVENTLIVE_CRITICAL_SOURCE_PRIORITY_MAX ?? 10);
 const maxCriticalCollectorErrors = Number(process.env.EVENTLIVE_MAX_CRITICAL_SOURCE_ERRORS ?? 0);
+const criticalErrorStreak = Math.max(1, Number(process.env.EVENTLIVE_CRITICAL_SOURCE_ERROR_STREAK ?? 2));
 const minCandidatesWritten = Number(process.env.EVENTLIVE_MIN_SOURCE_CANDIDATES_WRITTEN ?? 50);
 const maxProbeBlockedRatio = Number(process.env.EVENTLIVE_MAX_PROBE_BLOCKED_RATIO ?? 0.25);
 const growthPath = process.env.EVENTLIVE_SOURCE_GROWTH_REPORT_JSON || 'reports/source-growth-report.json';
@@ -40,6 +41,9 @@ const criticalCollectorErrors = sources.filter((source) => (
   source.status === 'collector-error'
   && Number(source.priority || Number.MAX_SAFE_INTEGER) <= criticalPriorityMax
 ));
+const persistentCriticalCollectorErrors = criticalCollectorErrors.filter((source) => (
+  Number(source.error_streak || 0) >= criticalErrorStreak
+));
 
 if (!sources.length) fail('no source rows in health file');
 if (activeCollectors < minActiveCollectors) {
@@ -58,8 +62,8 @@ if (collectorErrors > maxCollectorErrors) {
     .join(', ');
   fail(`collector_errors=${collectorErrors} max=${maxCollectorErrors} sources=${errors}`);
 }
-if (criticalCollectorErrors.length > maxCriticalCollectorErrors) {
-  fail(`critical_collector_errors=${criticalCollectorErrors.length} max=${maxCriticalCollectorErrors} priority_lte=${criticalPriorityMax} sources=${criticalCollectorErrors.map((source) => source.id).join(', ')}`);
+if (persistentCriticalCollectorErrors.length > maxCriticalCollectorErrors) {
+  fail(`persistent_critical_collector_errors=${persistentCriticalCollectorErrors.length} max=${maxCriticalCollectorErrors} priority_lte=${criticalPriorityMax} streak_gte=${criticalErrorStreak} sources=${persistentCriticalCollectorErrors.map((source) => source.id).join(', ')}`);
 }
 if (candidatesWritten < minCandidatesWritten) {
   fail(`candidates_written=${candidatesWritten} min=${minCandidatesWritten}`);
@@ -90,6 +94,7 @@ console.log([
   `productive=${productive}`,
   `collector_errors=${collectorErrors}`,
   `critical_collector_errors=${criticalCollectorErrors.length}`,
+  `persistent_critical_errors=${persistentCriticalCollectorErrors.length}`,
   `candidates=${candidatesWritten}`,
   `probe_blocked_ratio=${probeBlockedRatio.toFixed(2)}`,
   `growth=${growthStatus}`

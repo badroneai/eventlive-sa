@@ -25,7 +25,8 @@ function writeFixture(overrides = {}) {
   const sources = Array.from({ length: totals.sources }, (_, index) => ({
     id: `source-${index + 1}`,
     priority: index + 1,
-    status: index < totals.collector_errors ? 'collector-error' : 'productive'
+    status: index < totals.collector_errors ? 'collector-error' : 'productive',
+    error_streak: index < totals.collector_errors ? (overrides.error_streak ?? 1) : 0
   }));
   fs.writeFileSync(fixturePath, `${JSON.stringify({ totals, sources }, null, 2)}\n`, 'utf8');
 }
@@ -55,15 +56,23 @@ writeFixture({ totals: { collector_errors: 1 } });
 assert.throws(() => runGate(), /SOURCE_HEALTH_FAIL/);
 
 writeFixture({ totals: { collector_errors: 1 } });
-assert.throws(() => runGate({
+assert.match(runGate({
   EVENTLIVE_MAX_SOURCE_COLLECTOR_ERRORS: '10',
   EVENTLIVE_MAX_CRITICAL_SOURCE_ERRORS: '0'
-}), /critical_collector_errors=1/);
+}), /SOURCE_HEALTH_OK/);
+
+writeFixture({ totals: { collector_errors: 1 }, error_streak: 2 });
+assert.throws(() => runGate({
+  EVENTLIVE_MAX_SOURCE_COLLECTOR_ERRORS: '10',
+  EVENTLIVE_CRITICAL_SOURCE_ERROR_STREAK: '2',
+  EVENTLIVE_MAX_CRITICAL_SOURCE_ERRORS: '0'
+}), /persistent_critical_collector_errors=1/);
 
 writeFixture({ totals: { collector_errors: 11 } });
 assert.match(runGate({
   EVENTLIVE_MAX_SOURCE_COLLECTOR_ERRORS: '12',
-  EVENTLIVE_MAX_CRITICAL_SOURCE_ERRORS: '10',
+  EVENTLIVE_MAX_CRITICAL_SOURCE_ERRORS: '0',
+  EVENTLIVE_CRITICAL_SOURCE_ERROR_STREAK: '2',
   EVENTLIVE_CRITICAL_SOURCE_PRIORITY_MAX: '10'
 }), /SOURCE_HEALTH_OK/);
 
