@@ -48,6 +48,11 @@ jobs:
       - name: Install source document extractors
         run: sudo apt-get update && sudo apt-get install -y tesseract-ocr tesseract-ocr-ara poppler-utils
 
+      - name: Source state preflight
+        run: |
+          npm run test:source-health-gate
+          npm run test:source-run-state
+
       - name: Collect trusted sources and publish catalog
         run: npm run sources:sync
 
