@@ -85,6 +85,12 @@ for (const event of samples) {
 
   const attendanceFactCount = (html.match(/class="attendance-fact"/g) || []).length;
   assert.equal(attendanceFactCount, 4, `${event.detail_url} must render four visitor-facing attendance facts`);
+  const faqPosition = html.indexOf('class="section event-faq"');
+  assert.ok(faqPosition > html.indexOf('aria-label="معلومات الحضور"'), `${event.detail_url} visitor FAQ must follow attendance essentials`);
+  assert.ok(faqPosition < html.indexOf('</main>'), `${event.detail_url} visitor FAQ must remain the final section in the main content`);
+  if (html.includes('data-event-agenda')) {
+    assert.ok(faqPosition > html.indexOf('data-event-agenda'), `${event.detail_url} visitor FAQ must follow the live agenda`);
+  }
 
   const ld = jsonLdScripts(html);
   const eventLd = ld.find((item) => item['@type'] === 'Event');

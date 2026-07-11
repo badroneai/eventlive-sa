@@ -58,6 +58,8 @@ function inspect(file, locale, direction, canonical) {
     assert.equal($(`link[rel="alternate"][hreflang="${alternate}"]`).length, 1, `${file} must have one ${alternate} alternate`);
   }
   assert.equal($('.language-switch').length, 1, `${file} must have one language switch`);
+  assert.equal($('.language-suggestion').length, 0, `${file} must not interrupt visitors with a language suggestion`);
+  assert.ok(!source.includes('EventLive is available in English.'), `${file} must not contain the retired language prompt`);
   assert.equal($('#eventlive-language-runtime').length, 1, `${file} must persist language preference`);
   if (locale === 'en-SA') assert.equal($('link[rel="manifest"]').attr('href'), '/en/manifest.webmanifest');
   const isEnglishEventDetail = locale === 'en-SA' && file.includes(`${path.sep}en${path.sep}events${path.sep}`);

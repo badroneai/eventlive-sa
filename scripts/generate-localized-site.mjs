@@ -328,8 +328,6 @@ function resolveUnicodePath(relativePath) {
 function languageCss() {
   return `<style id="eventlive-i18n-css">
 .language-switch{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:7px 11px;border:1px solid var(--line,#dfe6df);border-radius:8px;background:#fff;color:var(--ink,#10231d);font-weight:700;font-size:.86rem;text-decoration:none;white-space:nowrap}
-.language-suggestion{position:fixed;z-index:90;inset-inline:16px;bottom:16px;display:flex;align-items:center;justify-content:center;gap:12px;max-width:520px;margin-inline:auto;padding:12px 14px;border:1px solid #c9d8d1;border-radius:8px;background:#fff;color:#10231d;box-shadow:0 12px 38px rgba(7,35,28,.18);font-size:.92rem}
-.language-suggestion a{color:#075f48;font-weight:800}.language-suggestion button{inline-size:44px;block-size:44px;border:0;background:transparent;color:#40544d;font-size:1.35rem;cursor:pointer}
 .i18n-content-hero{margin-block-end:24px;padding:clamp(24px,5vw,52px)!important;border-radius:8px;background:#0b4738!important;color:#fff!important}
 .i18n-content-hero h1,.i18n-content-hero .lead{color:#fff!important}.i18n-content-hero .eyebrow{color:#bfe8da!important}
 html[lang^="en"] body{font-family:"IBM Plex Sans","IBM Plex Sans Arabic",Arial,sans-serif;letter-spacing:0}
@@ -339,10 +337,6 @@ html[lang^="en"] [lang="ar"]{font-family:"IBM Plex Sans Arabic",Tahoma,Arial,san
 }
 
 function languageRuntime(locale) {
-  const isArabic = locale === 'ar-SA';
-  const prompt = isArabic
-    ? '<aside class="language-suggestion" role="status"><span>EventLive is available in English.</span><a href="#">View in English</a><button type="button" aria-label="Dismiss">&times;</button></aside>'
-    : '';
   return `<script id="eventlive-language-runtime">
 (() => {
   const locale = ${JSON.stringify(locale)};
@@ -355,17 +349,6 @@ function languageRuntime(locale) {
     switcher.addEventListener('click', () => localStorage.setItem('eventlive-locale', switcher.hreflang || (locale === 'ar-SA' ? 'en-SA' : 'ar-SA')));
   }
   localStorage.setItem('eventlive-locale', locale);
-  const browserLanguage = (navigator.languages && navigator.languages[0]) || navigator.language || '';
-  const dismissed = sessionStorage.getItem('eventlive-language-suggestion');
-  if (locale === 'ar-SA' && !dismissed && !/^ar(?:-|$)/i.test(browserLanguage) && switcher) {
-    document.body.insertAdjacentHTML('beforeend', ${JSON.stringify(prompt)});
-    const suggestion = document.querySelector('.language-suggestion');
-    suggestion?.querySelector('a')?.setAttribute('href', switcher.href);
-    suggestion?.querySelector('button')?.addEventListener('click', () => {
-      sessionStorage.setItem('eventlive-language-suggestion', 'dismissed');
-      suggestion.remove();
-    });
-  }
 })();
 </script>`;
 }

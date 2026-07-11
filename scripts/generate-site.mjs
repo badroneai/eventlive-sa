@@ -1723,7 +1723,7 @@ function faqJsonLd(items = []) {
 
 function renderFaqSection(items = [], title = 'أسئلة سريعة') {
   if (!items.length) return '';
-  return `<section class="section"><div class="wrap"><article class="readiness"><span>إجابات مختصرة</span><h2>${escapeHtml(title)}</h2><div class="grid">${items.map((item) => `<div class="program-check"><b>${escapeHtml(item.question)}</b><p>${escapeHtml(item.answer)}</p></div>`).join('')}</div></article></div></section>`;
+  return `<section class="section event-faq"><div class="wrap"><article class="readiness"><span>إجابات مختصرة</span><h2>${escapeHtml(title)}</h2><div class="grid">${items.map((item) => `<div class="program-check"><b>${escapeHtml(item.question)}</b><p>${escapeHtml(item.answer)}</p></div>`).join('')}</div></article></div></section>`;
 }
 
 function formatSessionTime(value) {
@@ -1843,9 +1843,9 @@ ${header(relative)}
   ${eventBreadcrumbHtml(event, relative)}
   <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span><span data-runtime-status ${runtimeAttrs(event)}>${escapeHtml(event.status_label)}</span> · ${escapeHtml(event.event_kind_label)}</span><h1>${escapeHtml(event.title)}</h1><p class="lead">${escapeHtml(event.summary)}</p><div class="signal-strip"><div class="signal"><span>المدينة</span><b>${escapeHtml(cityLabel(event.city))}</b></div><div class="signal"><span>البداية</span><b>${escapeHtml(formatDate(event.starts_at))}</b></div><div class="signal"><span>النهاية</span><b>${escapeHtml(formatDate(event.ends_at))}</b></div><div class="signal"><span>الحالة الحية</span><b data-live-time ${runtimeAttrs(event)}>جاري حساب الوقت...</b></div></div>${eventQuickActions(event)}</div></section>
   <section class="section"><div class="wrap grid"><article class="card"><img class="cover" src="${escapeHtml(image)}" alt="${escapeHtml(event.image_alt || event.title)}" /></article><article class="readiness attendance-summary" aria-label="معلومات الحضور"><span class="attendance-kicker">ما تحتاجه قبل الذهاب</span><h2>معلومات الحضور</h2><p>معلومات عملية مرتبطة بالمصدر لمساعدتك قبل الوصول وأثناء الفعالية.</p>${endedNote}${attendanceFacts(event)}<div class="meta">${eventDetailActions(event)}</div></article></div></section>
-  ${renderFaqSection(eventFaq, 'ما يحتاجه الزائر بسرعة')}
-  ${programOutline}
   ${sessions}
+  ${programOutline}
+  ${renderFaqSection(eventFaq, 'ما يحتاجه الزائر بسرعة')}
 </main>
 ${footer(relative)}
 ${liveRuntimeScript()}
