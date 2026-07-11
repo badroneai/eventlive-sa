@@ -1,13 +1,23 @@
 {
-  "generated_at": "2026-07-11T13:56:05.934Z",
+  "generated_at": "2026-07-11T19:36:34.249Z",
   "totals": {
-    "targets": 1,
-    "enriched": 1,
-    "fetched": 0,
-    "images": 1,
+    "targets": 3,
+    "enriched": 3,
+    "fetched": 2,
+    "images": 3,
     "fetch_failures": 1
   },
   "enriched": [
+    {
+      "id": "event-little-dot",
+      "title": "Little Dot",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/childrens-festival-children-museum/little-dot",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
     {
       "id": "event-music-festival-mdlbeast-soundstorm",
       "title": "Music Festival: MDLBEAST SoundStorm",
@@ -17,6 +27,16 @@
       "fetched": false,
       "image": true,
       "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-play-with-shadows",
+      "title": "Play with Shadows",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/childrens-festival-children-museum/play-shadows",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
     }
   ],
   "failed": [

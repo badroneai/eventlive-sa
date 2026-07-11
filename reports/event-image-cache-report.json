@@ -1,18 +1,31 @@
 {
-  "generated_at": "2026-07-11T13:58:30.533Z",
+  "generated_at": "2026-07-11T19:38:35.125Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 593,
-    "fetched": 0,
-    "reused": 494,
+    "cached_total": 595,
+    "fetched": 2,
+    "reused": 492,
     "failed": 6,
-    "skipped_recent_failures": 6,
+    "skipped_recent_failures": 0,
     "remembered_failures": 9
   },
-  "fetched": [],
+  "fetched": [
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/85f2d0c53ebf2dfa133f5674b5e960aa.jpg",
+      "file": "dist/assets/event-images/play-with-shadows-f5ff44385d.jpg",
+      "bytes": 321936,
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b07165cb343d41ba5a22312aca12c3bb.png",
+      "file": "dist/assets/event-images/little-dot-ff936b8a00.png",
+      "bytes": 972725,
+      "events": 1
+    }
+  ],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -262,11 +275,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4d3708b09af44a312ade4fd065b26f22.png",
       "file": "dist/assets/event-images/leap-then-look-bf84521a1f.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/46e6e4160b7aa59719d88308bd919faa.png",
-      "file": "dist/assets/event-images/puppet-world-3863736de8.png",
       "events": 1
     },
     {
@@ -1545,6 +1553,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/46e6e4160b7aa59719d88308bd919faa.png",
+      "file": "dist/assets/event-images/puppet-world-3863736de8.png",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/7b355c6af030a76b742b41484d8a084e.jpg",
       "file": "dist/assets/event-images/beaded-plant-suncatcher-29904eadb8.jpg",
       "events": 1
@@ -2473,119 +2486,57 @@
       "source_url": "https://services.mi.org.sa/upload/events/main/37219f32-323f-44fb-8f79-c9f8a9518852_%D8%B2%D8%B2.jpg",
       "file": "dist/assets/event-images/ورشة-عمل-بعنوان-الاستثمار-والتخصيص-بالأندية-الرياضية-السعودية-d2499f418f.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://services.mi.org.sa/upload/events/main/44da2542-4924-498f-8fac-9242707f4e35_%D8%A9%D8%A9.jpg",
-      "file": "dist/assets/event-images/التعريف-بالتحديثات-على-نظام-وآلية-التصنيف-المقاولين-bb7e90e14d.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://services.mi.org.sa/upload/events/main/41d63964-4e9d-4dfc-ac53-98f0c0432b19_%D8%B1%D9%88%D8%A7%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%20(2).jpg",
-      "file": "dist/assets/event-images/أساليب-الاستثمار-ودورها-في-المنظومة-الريادية-5ea59954ab.jpg",
-      "events": 1
     }
   ],
   "rejected_removed": [],
-  "skipped_recent_failures": [
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122220/images-5.jpg",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-11T15:10:33.514Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/03/12031444/inter-aviation-Arabia-HP-PR-logo.png",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-11T15:10:33.514Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122706/fibo_arabia_logo_10431.webp",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-11T15:10:33.514Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122431/WMT-Spotlight-Riyadh-Dates-1200x675-1-1024x576-1.jpg",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-11T15:10:33.514Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06123740/GqbqdoDWMAAm16R.jpg",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-11T15:10:33.514Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2025/02/26113050/images-4.png",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-11T15:10:33.514Z",
-      "skipped": true
-    }
-  ],
+  "skipped_recent_failures": [],
   "failed": [
     {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122220/images-5.jpg",
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2025/02/26113050/images-4.png",
       "events": 1,
       "reason": "certificate has expired",
       "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-11T15:10:33.514Z",
-      "skipped": true
+      "retry_after": "2026-07-12T19:38:35.125Z"
     },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/03/12031444/inter-aviation-Arabia-HP-PR-logo.png",
       "events": 1,
       "reason": "certificate has expired",
       "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-11T15:10:33.514Z",
-      "skipped": true
+      "retry_after": "2026-07-12T19:38:35.125Z"
     },
     {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122706/fibo_arabia_logo_10431.webp",
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122220/images-5.jpg",
       "events": 1,
       "reason": "certificate has expired",
       "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-11T15:10:33.514Z",
-      "skipped": true
+      "retry_after": "2026-07-12T19:38:35.125Z"
     },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122431/WMT-Spotlight-Riyadh-Dates-1200x675-1-1024x576-1.jpg",
       "events": 1,
       "reason": "certificate has expired",
       "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-11T15:10:33.514Z",
-      "skipped": true
+      "retry_after": "2026-07-12T19:38:35.125Z"
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122706/fibo_arabia_logo_10431.webp",
+      "events": 1,
+      "reason": "certificate has expired",
+      "failure_kind": "tls-certificate",
+      "retry_after": "2026-07-12T19:38:35.125Z"
     },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06123740/GqbqdoDWMAAm16R.jpg",
       "events": 1,
       "reason": "certificate has expired",
       "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-11T15:10:33.514Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2025/02/26113050/images-4.png",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-11T15:10:33.514Z",
-      "skipped": true
+      "retry_after": "2026-07-12T19:38:35.125Z"
     }
   ],
-  "requires_rebuild": false,
-  "rebuild_reasons": []
+  "requires_rebuild": true,
+  "rebuild_reasons": [
+    "fetched:2",
+    "new-failures:6"
+  ]
 }
