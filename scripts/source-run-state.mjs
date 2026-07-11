@@ -70,14 +70,15 @@ function runStatus({ ring, collection, probe }) {
   return 'not-attempted';
 }
 
-function nextAction({ source, ring, status, zeroYieldStreak, planRow, yieldRow, collection, probe }) {
-  if (status === 'collector-error') return `Fix collector error: ${collection.note || 'unknown error'}`;
-  if (status === 'probe-blocked') return `Do not bypass protection; keep as blocked/partnership candidate: ${probe.signals.blocked_reason}`;
+function nextAction({ source, ring, status, zeroYieldStreak, planRow, yieldRow, collection, probe, previousRow }) {
+  if (!collection && previousRow?.next_action) return previousRow.next_action;
+  if (status === 'collector-error') return `Fix collector error: ${collection?.note || previousRow?.last_zero_yield_reason || 'unknown error'}`;
+  if (status === 'probe-blocked') return `Do not bypass protection; keep as blocked/partnership candidate: ${probe?.signals?.blocked_reason || 'protection detected in the last attempted run'}`;
   if (status === 'productive') return 'Continue periodic collection; dedupe and auto-publish only through the candidate gate.';
   if (status === 'zero-yield' && zeroYieldStreak >= 3) {
     return `Zero-yield for ${zeroYieldStreak} runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only.`;
   }
-  if (status === 'zero-yield') return yieldRow?.zero_yield_reason || collection.note || 'No future date-complete rows this run; keep monitoring.';
+  if (status === 'zero-yield') return yieldRow?.zero_yield_reason || collection?.note || previousRow?.last_zero_yield_reason || 'No future date-complete rows this run; keep monitoring.';
   if (ring === 'partnership') return 'Partnership/API lane; do not scrape protected or app-only data.';
   if (ring === 'discovery-only') return 'Use only as discovery evidence; never publish directly.';
   if (ring === 'evidence-monitor') return 'Monitor for official event detail evidence before candidate promotion.';
@@ -204,7 +205,7 @@ function main() {
         auto_publish_guard: isAutoPublishEligibleSource(source, ring)
           ? 'candidate must still pass evidence, duplicate, date, and confidence gates'
           : 'not a direct auto-publish source lane',
-        next_action: nextAction({ source, ring, status, zeroYieldStreak, planRow, yieldRow, collection: collectionRow, probe: probeRow })
+        next_action: nextAction({ source, ring, status, zeroYieldStreak, planRow, yieldRow, collection: collectionRow, probe: probeRow, previousRow })
       };
     })
     .sort((a, b) => a.priority - b.priority);

@@ -64,13 +64,34 @@ fs.writeFileSync(registryPath, `${JSON.stringify({
       intake_policy: 'official-feed-preferred',
       candidate_gate: 'human-review',
       fetch_method: 'html-calendar'
+    },
+    {
+      id: 'blocked-official',
+      name: 'Blocked Official',
+      owner: 'Official Owner',
+      url: 'https://blocked.example.gov.sa/events',
+      priority: 5,
+      source_type: 'government-calendar',
+      trust_level: 'official',
+      intake_policy: 'monitor-public',
+      candidate_gate: 'human-review',
+      fetch_method: 'html-calendar'
     }
   ]
 }, null, 2)}\n`);
 
 fs.writeFileSync(statePath, `${JSON.stringify({
   sources: [
-    { id: 'seasonal-official', zero_yield_streak: 2 }
+    { id: 'seasonal-official', zero_yield_streak: 2 },
+    {
+      id: 'blocked-official',
+      status: 'probe-blocked',
+      last_attempted_at: '2026-07-04T18:10:00.000Z',
+      last_collection_status: 'error',
+      last_extracted: 0,
+      error_streak: 1,
+      next_action: 'Keep the protected source in the partnership lane.'
+    }
   ]
 }, null, 2)}\n`);
 
@@ -80,7 +101,8 @@ fs.writeFileSync(path.join(reportsDir, 'source-ingestion-plan.json'), `${JSON.st
     { id: 'official-calendar', ring: 'active-collector', cadence: 'daily', next_action: 'continue' },
     { id: 'community-discovery', ring: 'discovery-only', cadence: 'weekly-discovery', next_action: 'discover only' },
     { id: 'seasonal-official', ring: 'active-collector', cadence: 'daily', next_action: 'monitor' },
-    { id: 'failing-official', ring: 'active-collector', cadence: 'daily', next_action: 'repair' }
+    { id: 'failing-official', ring: 'active-collector', cadence: 'daily', next_action: 'repair' },
+    { id: 'blocked-official', ring: 'active-collector', cadence: 'daily', next_action: 'partnership' }
   ]
 }, null, 2)}\n`);
 
@@ -139,6 +161,7 @@ const official = state.sources.find((source) => source.id === 'official-calendar
 const discovery = state.sources.find((source) => source.id === 'community-discovery');
 let seasonal = state.sources.find((source) => source.id === 'seasonal-official');
 let failing = state.sources.find((source) => source.id === 'failing-official');
+let blocked = state.sources.find((source) => source.id === 'blocked-official');
 
 assert.equal(official.status, 'productive');
 assert.equal(official.auto_publish_eligible_by_source, true);
@@ -149,6 +172,9 @@ assert.equal(seasonal.status, 'zero-yield');
 assert.equal(seasonal.zero_yield_streak, 3);
 assert.equal(failing.status, 'collector-error');
 assert.equal(failing.error_streak, 1);
+assert.equal(blocked.status, 'probe-blocked');
+assert.equal(blocked.error_streak, 1);
+assert.equal(blocked.next_action, 'Keep the protected source in the partnership lane.');
 assert.match(seasonal.next_action, /Zero-yield for 3 runs/);
 assert.ok(fs.existsSync(reportMdPath));
 
@@ -156,8 +182,10 @@ runStateScript();
 state = JSON.parse(fs.readFileSync(statePath, 'utf8'));
 seasonal = state.sources.find((source) => source.id === 'seasonal-official');
 failing = state.sources.find((source) => source.id === 'failing-official');
+blocked = state.sources.find((source) => source.id === 'blocked-official');
 assert.equal(seasonal.zero_yield_streak, 3, 'recomputing one collection run must not inflate zero-yield streaks');
 assert.equal(failing.error_streak, 1, 'recomputing one collection run must not inflate error streaks');
+assert.equal(blocked.next_action, 'Keep the protected source in the partnership lane.', 'unattempted blocked sources must preserve their safe next action');
 
 collectionReport.collected_at = '2026-07-05T06:10:00.000Z';
 fs.writeFileSync(collectionReportPath, `${JSON.stringify(collectionReport, null, 2)}\n`);
