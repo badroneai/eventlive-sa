@@ -1,0 +1,28 @@
+{
+  "schema": "eventlive.source-growth-state.v1",
+  "generated_at": "2026-07-11T01:23:06.951Z",
+  "runs": [
+    {
+      "run_id": "2026-07-11T01:11:39.757Z",
+      "generated_at": "2026-07-11T01:23:06.951Z",
+      "collected_at": "2026-07-11T01:11:39.757Z",
+      "catalog_active_rows": 426,
+      "catalog_ended_rows": 762,
+      "public_events": 1170,
+      "candidates_discovered": 455,
+      "new_active_candidates": 68,
+      "new_ended_events": 4,
+      "published_new": 3,
+      "linked_existing": 428,
+      "blocked_remaining": 19,
+      "sources_attempted": 45,
+      "productive_sources": 31,
+      "collector_errors": 0,
+      "public_delta": null,
+      "catalog_delta": null,
+      "no_growth_streak": 0,
+      "lost_published_output": false,
+      "status": "baseline"
+    }
+  ]
+}

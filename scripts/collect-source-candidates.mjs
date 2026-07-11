@@ -40,6 +40,8 @@ const selectedIds = (process.env.EVENTLIVE_SOURCE_IDS || '')
   .filter(Boolean);
 const maxPerSource = Math.max(1, Number(process.env.EVENTLIVE_SOURCE_LIMIT || 40));
 const maxArchivePerSource = Math.max(1, Number(process.env.EVENTLIVE_SOURCE_ENDED_LIMIT || process.env.EVENTLIVE_SOURCE_ARCHIVE_LIMIT || 24));
+const trustedMaxPerSource = Math.max(maxPerSource, Number(process.env.EVENTLIVE_TRUSTED_SOURCE_LIMIT || 200));
+const trustedMaxArchivePerSource = Math.max(maxArchivePerSource, Number(process.env.EVENTLIVE_TRUSTED_SOURCE_ENDED_LIMIT || 200));
 const minEndedYear = Math.max(2022, Number(process.env.EVENTLIVE_SOURCE_ENDED_MIN_YEAR || 2022));
 const fetchTimeoutMs = Math.max(3000, Number(process.env.EVENTLIVE_SOURCE_FETCH_TIMEOUT_MS || 20000));
 const browserFallbackMaxAgeMs = Math.max(
@@ -288,14 +290,29 @@ function canUseBrowserHtmlFallback(source = {}) {
   return !/\/api\/|api\.|\.json(?:$|\?)/i.test(target);
 }
 
+function browserProbeSnapshotTimestamp(snapshotPath = '') {
+  const name = path.basename(String(snapshotPath || ''));
+  const match = name.match(/-(\d{4}-\d{2}-\d{2}T\d{2}-\d{2}-\d{2}-\d{3}Z)\.html$/i);
+  if (!match) return 0;
+  const iso = match[1].replace(/T(\d{2})-(\d{2})-(\d{2})-(\d{3})Z$/, 'T$1:$2:$3.$4Z');
+  const timestamp = new Date(iso).getTime();
+  return Number.isFinite(timestamp) ? timestamp : 0;
+}
+
+function browserProbeEvidenceTimestamp(probe = {}) {
+  const explicit = new Date(probe.probed_at || 0).getTime();
+  if (Number.isFinite(explicit) && explicit > 0) return explicit;
+  return browserProbeSnapshotTimestamp(probe.html_snapshot);
+}
+
 function freshBrowserProbeHtml(source, currentTime = Date.now()) {
   if (!canUseBrowserHtmlFallback(source) || !exists(browserProbeReportPath)) return '';
   try {
     const report = readJson(browserProbeReportPath);
-    const generatedAtMs = new Date(report.generated_at || 0).getTime();
-    if (!Number.isFinite(generatedAtMs) || currentTime - generatedAtMs > browserFallbackMaxAgeMs) return '';
     const probe = (report.sources || []).find((item) => item.id === source.id);
     if (!probe || probe.status !== 'ok' || /blocked|protected|policy-skipped/i.test(probe.classification || '')) return '';
+    const probedAtMs = browserProbeEvidenceTimestamp(probe);
+    if (!probedAtMs || currentTime - probedAtMs > browserFallbackMaxAgeMs) return '';
     const snapshotPath = String(probe.html_snapshot || '');
     if (!snapshotPath) return '';
     const absolutePath = path.isAbsolute(snapshotPath) ? snapshotPath : path.join(root, snapshotPath);
@@ -305,6 +322,19 @@ function freshBrowserProbeHtml(source, currentTime = Date.now()) {
   } catch {
     return '';
   }
+}
+
+function trustedOfficialSource(source = {}) {
+  return ['official', 'venue-official'].includes(source.trust_level)
+    && !['candidate-only', 'partnership-needed'].includes(source.intake_policy);
+}
+
+function sourceRunLimits(source = {}) {
+  const trusted = trustedOfficialSource(source);
+  return {
+    active: Math.max(1, Number(source.max_candidates_per_run || (trusted ? trustedMaxPerSource : maxPerSource))),
+    ended: Math.max(1, Number(source.max_ended_per_run || (trusted ? trustedMaxArchivePerSource : maxArchivePerSource)))
+  };
 }
 
 function snapshotTimestamp(fileName, sourceId) {
@@ -1996,7 +2026,7 @@ async function extractMonshaatInternalEvents(source) {
   const seen = new Set();
   for (let offset = 0; offset < 6; offset += 1) {
     const monthKey = yyyymmAfter(offset);
-    const apiUrl = `https://www.monshaat.gov.sa/internal/content/events/list/${monthKey}`;
+    const apiUrl = `https://www.monshaat.gov.sa/ar/internal/content/events/list/${monthKey}`;
     const text = await fetchText(apiUrl, {
       accept: 'application/json',
       'accept-language': 'ar-SA,ar;q=0.9,en;q=0.8',
@@ -5493,23 +5523,57 @@ async function fetchText(url, headers = {}) {
 async function loadSourceExtraction(source, extractor, options = {}) {
   const fetchPrimary = options.fetchPrimary || fetchHtml;
   const fallbackExtractor = options.fallbackExtractor || sourceApiFallbackExtractors.get(source.id);
+  let primaryResult = null;
+  let primaryError = null;
   try {
     const payload = await fetchPrimary(source);
-    return {
+    primaryResult = {
       payload,
       items: await extractor(payload, source),
       primary_error: null
     };
-  } catch (primaryError) {
-    if (!fallbackExtractor) throw primaryError;
-    const items = await fallbackExtractor(source);
-    sourceFetchModes.set(source.id, 'official-api-fallback');
-    return {
-      payload: '',
-      items,
-      primary_error: primaryError
-    };
+    const mode = sourceFetchModes.get(source.id) || 'direct';
+    if (primaryResult.items.length && mode !== 'last-known-good') return primaryResult;
+  } catch (error) {
+    primaryError = error;
   }
+
+  let fallbackResult = null;
+  let fallbackError = null;
+  if (fallbackExtractor) {
+    try {
+      const items = await fallbackExtractor(source);
+      fallbackResult = { payload: '', items, primary_error: primaryError };
+      if (items.length) {
+        sourceFetchModes.set(source.id, 'official-api-fallback');
+        return fallbackResult;
+      }
+    } catch (error) {
+      fallbackError = error;
+    }
+  }
+
+  const liveBrowserEnabled = !['1', 'true', 'yes'].includes(String(process.env.EVENTLIVE_DISABLE_LIVE_BROWSER_RECOVERY || '').toLowerCase());
+  if (liveBrowserEnabled && canUseBrowserHtmlFallback(source)) {
+    try {
+      const payload = await fetchBrowserRenderedHtml(source);
+      if (/just a moment|cf-browser-verification|cdn-cgi\/challenge|request rejected|access denied/i.test(payload)) {
+        throw new Error('browser recovery encountered an access-protection page');
+      }
+      const items = await extractor(payload, source);
+      if (items.length || !primaryResult) {
+        sourceFetchModes.set(source.id, 'live-browser-recovery');
+        return { payload, items, primary_error: primaryError };
+      }
+    } catch (error) {
+      fallbackError = fallbackError || error;
+    }
+  }
+
+  if (primaryResult) return primaryResult;
+  if (fallbackResult) return fallbackResult;
+  const reasons = [primaryError?.message, fallbackError?.message].filter(Boolean).join('; ');
+  throw new Error(reasons || 'source extraction failed');
 }
 
 async function fetchBrowserRenderedHtml(source, waitMs = 4500) {
@@ -5644,8 +5708,9 @@ async function main() {
       }
       const extractedItems = extraction.items
         .filter((item) => item.title && item.starts_at && item.ends_at && item.url);
-      const sourceMaxCandidates = Math.max(1, Number(source.max_candidates_per_run || maxPerSource));
-      const sourceMaxEnded = Math.max(1, Number(source.max_ended_per_run || maxArchivePerSource));
+      const limits = sourceRunLimits(source);
+      const sourceMaxCandidates = limits.active;
+      const sourceMaxEnded = limits.ended;
       const items = extractedItems
         .filter((item) => !isPastCandidate(item))
         .sort((a, b) => new Date(a.starts_at).getTime() - new Date(b.starts_at).getTime())
@@ -5745,6 +5810,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 export {
   fetchHtml,
   freshBrowserProbeHtml,
+  browserProbeEvidenceTimestamp,
   latestOfficialSnapshotHtml,
   writeAuxiliarySnapshot,
   extractAbhaChamberEvents,
@@ -5785,6 +5851,7 @@ export {
   extractSdaiaCalendarEvents,
   extractVisitSaudiApiEvents,
   sourceCandidateDelta,
+  sourceRunLimits,
   loadSourceExtraction,
   isPastCandidate,
   mergeEndedEvents,

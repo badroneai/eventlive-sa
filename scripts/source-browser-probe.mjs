@@ -48,7 +48,11 @@ function readCollectionProblems() {
   if (!exists(collectionReportPath)) return new Map();
   const report = readJson(collectionReportPath);
   return new Map((report.sources || [])
-    .filter((source) => source.status === 'error' || Number(source.extracted || 0) === 0)
+    .filter((source) => (
+      source.status === 'error'
+      || Number(source.extracted || 0) === 0
+      || ['browser-probe', 'last-known-good'].includes(source.fetch_mode)
+    ))
     .map((source) => [source.id, source]));
 }
 
@@ -56,6 +60,7 @@ function rankProbeSources(sources, collectionProblems, limit = probeLimit) {
   const rank = (source) => {
     const problem = collectionProblems.get(source.id);
     if (problem?.status === 'error') return 0;
+    if (['browser-probe', 'last-known-good'].includes(problem?.fetch_mode)) return 0;
     if (problem && Number(problem.extracted || 0) === 0) return 1;
     if (source.ring === 'extractor-backlog') return 2;
     return 9;
@@ -67,11 +72,27 @@ function rankProbeSources(sources, collectionProblems, limit = probeLimit) {
     .slice(0, limit);
 }
 
+function snapshotTimestamp(snapshotPath = '') {
+  const name = path.basename(String(snapshotPath || ''));
+  const match = name.match(/-(\d{4}-\d{2}-\d{2}T\d{2}-\d{2}-\d{2}-\d{3}Z)\.(?:html|json)$/i);
+  if (!match) return 0;
+  const iso = match[1].replace(/T(\d{2})-(\d{2})-(\d{2})-(\d{3})Z$/, 'T$1:$2:$3.$4Z');
+  const timestamp = new Date(iso).getTime();
+  return Number.isFinite(timestamp) ? timestamp : 0;
+}
+
+function probeResultTimestamp(source = {}) {
+  const explicit = new Date(source.probed_at || 0).getTime();
+  if (Number.isFinite(explicit) && explicit > 0) return explicit;
+  return snapshotTimestamp(source.html_snapshot);
+}
+
 function mergeRecentProbeResults(previousReport, currentResults, currentTime = Date.now()) {
-  const previousAt = new Date(previousReport?.generated_at || 0).getTime();
-  const recentPrevious = Number.isFinite(previousAt) && currentTime - previousAt <= resultMaxAgeMs
-    ? (previousReport.sources || [])
-    : [];
+  const recentPrevious = (previousReport.sources || [])
+    .filter((source) => {
+      const probedAt = probeResultTimestamp(source);
+      return probedAt > 0 && currentTime - probedAt <= resultMaxAgeMs;
+    });
   const merged = new Map(recentPrevious.map((source) => [source.id, source]));
   for (const source of currentResults) merged.set(source.id, source);
   return [...merged.values()].sort((a, b) => Number(a.priority || 999) - Number(b.priority || 999));
@@ -264,6 +285,7 @@ async function probeSource(browser, source) {
     const classification = classifyProbe({ policy_skipped: true });
     return {
       id: source.id,
+      probed_at: new Date().toISOString(),
       name: source.name,
       priority: source.priority,
       url: sourceUrl(source),
@@ -373,6 +395,7 @@ async function probeSource(browser, source) {
 
   return {
     id: source.id,
+    probed_at: new Date().toISOString(),
     name: source.name,
     priority: source.priority,
     url: sourceUrl(source),
@@ -543,6 +566,7 @@ export {
   extractEndpointCandidates,
   isLikelyApiUrl,
   mergeRecentProbeResults,
+  probeResultTimestamp,
   rankProbeSources,
   renderMarkdown,
   shouldCaptureNetwork

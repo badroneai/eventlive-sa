@@ -4,10 +4,12 @@ import { ensureDir, readJson, rel, root, writeJson } from './program-lifecycle-u
 
 process.env.EVENTLIVE_SOURCE_FETCH_TIMEOUT_MS ||= '9000';
 process.env.EVENTLIVE_SOURCE_FETCH_ATTEMPTS ||= '1';
+process.env.EVENTLIVE_DISABLE_LIVE_BROWSER_RECOVERY ||= '1';
 
 let isPastCandidate;
 let loadSourceExtraction;
 let sourceExtractors = {};
+let sourceRunLimits;
 
 const registryPath = path.join(root, 'data', 'source_registry.json');
 const collectionReportPath = path.join(root, 'reports', 'source-collection-report.json');
@@ -19,7 +21,6 @@ const selectedIds = (process.env.EVENTLIVE_SOURCE_IDS || '')
   .split(',')
   .map((item) => item.trim())
   .filter(Boolean);
-const maxRows = Math.max(1, Number(process.env.EVENTLIVE_SOURCE_LIMIT || 40));
 const now = new Date();
 
 function snapshotExtensionFor(source) {
@@ -139,7 +140,7 @@ function renderMarkdown(report) {
 }
 
 async function main() {
-  ({ isPastCandidate, loadSourceExtraction, sourceExtractors } = await import('./collect-source-candidates.mjs'));
+  ({ isPastCandidate, loadSourceExtraction, sourceExtractors, sourceRunLimits } = await import('./collect-source-candidates.mjs'));
   ensureDir(snapshotDir);
   const registry = readJson(registryPath);
   const attempts = fs.existsSync(attemptsPath) ? readJson(attemptsPath) : {};
@@ -165,6 +166,8 @@ async function main() {
       extracted_raw: 0,
       future_complete: 0,
       capped_future_complete: 0,
+      active_limit: 0,
+      truncated_future_complete: 0,
       last_written: Number(lastCollection.get(source.id)?.extracted || 0),
       drop_reasons: {},
       dropped_samples: [],
@@ -188,8 +191,11 @@ async function main() {
       row.drop_reasons = summarizeReasons(extracted);
       row.dropped_samples = summarizeDroppedSamples(extracted);
       const future = extracted.filter((item) => !itemDropReason(item));
+      const limits = sourceRunLimits(source);
       row.future_complete = future.length;
-      row.capped_future_complete = future.slice(0, maxRows).length;
+      row.active_limit = limits.active;
+      row.capped_future_complete = future.slice(0, limits.active).length;
+      row.truncated_future_complete = Math.max(0, future.length - row.capped_future_complete);
       row.sample_titles = future.slice(0, 5).map((item) => item.title);
       row.status = 'ok';
       if (extraction.primary_error) {

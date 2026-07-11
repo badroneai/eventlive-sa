@@ -12,8 +12,8 @@ import {
 const mergedProbeResults = mergeRecentProbeResults({
   generated_at: new Date().toISOString(),
   sources: [
-    { id: 'kept-source', priority: 2, status: 'ok' },
-    { id: 'reprobed-source', priority: 3, status: 'error' }
+    { id: 'kept-source', priority: 2, status: 'ok', probed_at: new Date().toISOString() },
+    { id: 'reprobed-source', priority: 3, status: 'error', probed_at: new Date().toISOString() }
   ]
 }, [
   { id: 'reprobed-source', priority: 3, status: 'ok' },
@@ -25,9 +25,12 @@ assert.deepEqual(
   'fresh probe results must retain untouched sources and replace reprobed sources'
 );
 assert.deepEqual(
-  mergeRecentProbeResults({ generated_at: '2020-01-01T00:00:00.000Z', sources: [{ id: 'stale' }] }, [{ id: 'fresh', priority: 1 }]).map((source) => source.id),
+  mergeRecentProbeResults({
+    generated_at: new Date().toISOString(),
+    sources: [{ id: 'stale', probed_at: '2020-01-01T00:00:00.000Z' }]
+  }, [{ id: 'fresh', priority: 1 }]).map((source) => source.id),
   ['fresh'],
-  'stale probe results must expire'
+  'stale individual probe results must expire even when the envelope was rewritten recently'
 );
 
 const rankedSources = rankProbeSources([
@@ -39,6 +42,7 @@ const rankedSources = rankProbeSources([
 ], new Map([
   ['zero-yield-high-priority', { status: 'ok', extracted: 0 }],
   ['collector-error', { status: 'error', extracted: 0 }],
+  ['recovered-from-snapshot', { status: 'ok', extracted: 4, fetch_mode: 'last-known-good' }],
   ['protected-error', { status: 'error', extracted: 0 }]
 ]), 4);
 assert.deepEqual(
@@ -46,6 +50,15 @@ assert.deepEqual(
   ['collector-error', 'zero-yield-high-priority', 'extractor-backlog'],
   'collector errors must be probed before zero-yield and backlog sources without crossing protection policy'
 );
+
+const recoveryRank = rankProbeSources([
+  { id: 'recovered-from-snapshot', priority: 7 },
+  { id: 'healthy-direct', priority: 1 }
+], new Map([
+  ['recovered-from-snapshot', { status: 'ok', extracted: 4, fetch_mode: 'last-known-good' }],
+  ['healthy-direct', { status: 'ok', extracted: 4, fetch_mode: 'direct' }]
+]), 4);
+assert.deepEqual(recoveryRank.map((source) => source.id), ['recovered-from-snapshot'], 'snapshot-recovered sources must be reprobed before their evidence expires');
 
 const apiNetwork = [
   {

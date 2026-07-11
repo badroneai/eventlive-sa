@@ -17,6 +17,7 @@ fs.writeFileSync(reportPath, `${JSON.stringify({
   generated_at: new Date().toISOString(),
   sources: [{
     id: 'official-source',
+    probed_at: new Date().toISOString(),
     status: 'ok',
     classification: 'rendered-html-candidates',
     html_snapshot: path.relative(root, browserSnapshotPath)
@@ -69,11 +70,12 @@ fs.writeFileSync(reportPath, `${JSON.stringify({
   generated_at: '2020-01-01T00:00:00.000Z',
   sources: [{
     id: 'official-source',
+    probed_at: '2020-01-01T00:00:00.000Z',
     status: 'ok',
     classification: 'rendered-html-candidates',
     html_snapshot: path.relative(root, browserSnapshotPath)
   }]
 }, null, 2)}\n`, 'utf8');
-assert.equal(freshBrowserProbeHtml(officialSource), '', 'stale browser evidence must not be reused');
+assert.equal(freshBrowserProbeHtml(officialSource), '', 'stale individual browser evidence must not be reused even when the report envelope changes');
 
 console.log('TEST_OK source browser fallback regression checks passed');

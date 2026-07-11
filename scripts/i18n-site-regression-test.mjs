@@ -107,6 +107,14 @@ const arCatalog = JSON.parse(fs.readFileSync(path.join(dist, 'events-catalog.jso
 const enCatalog = JSON.parse(fs.readFileSync(path.join(dist, 'en', 'events-catalog.json'), 'utf8'));
 assert.equal(enCatalog.locale, 'en-SA');
 assert.equal(enCatalog.events.length, arCatalog.events.length, 'localized catalog must preserve every event');
+const eventRouteValues = arCatalog.events
+  .flatMap((event) => [event.file_slug, event.detail_url])
+  .filter((value) => typeof value === 'string' && value);
+assert.deepEqual(
+  eventRouteValues.filter((value) => value !== value.normalize('NFC')),
+  [],
+  'event routes must use NFC so Arabic paths resolve identically on Linux and macOS'
+);
 
 const enManifest = JSON.parse(fs.readFileSync(path.join(dist, 'en', 'manifest.webmanifest'), 'utf8'));
 assert.equal(enManifest.lang, 'en-SA');

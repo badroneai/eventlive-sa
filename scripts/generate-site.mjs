@@ -735,8 +735,8 @@ function normalizeEvent(raw, sourceGroup, previousLookup) {
   const previous = previousLookup.byId.get(raw.id) || previousLookup.byIdentity.get(eventIdentity(raw)) || {};
   const sourceCity = raw.city || previous.city || raw.venue || raw.venue_address || 'Saudi Arabia';
   const normalizedCity = normalizeSaudiCity(sourceCity, sourceCity || 'Saudi Arabia');
-  const slug = raw.slug || previous.slug || slugify(raw.title || raw.id);
-  const fileSlug = raw.file_slug || raw.id || previous.file_slug || slug;
+  const slug = String(raw.slug || previous.slug || slugify(raw.title || raw.id)).normalize('NFC');
+  const fileSlug = String(raw.file_slug || raw.id || previous.file_slug || slug).normalize('NFC');
   const category = raw.category || previous.category || 'general-events';
   const catSlug = categorySlug(category, raw);
   const kind = classifyEventKind({ ...raw, event_kind: raw.event_kind || previous.event_kind });
@@ -3219,6 +3219,8 @@ function writeOwnerStatusPage(events) {
   const secondary = readReport('reports/source-secondary-verification-report.json', {});
   const sourceOps = readReport('reports/source-ops-report.json', {});
   const sourceCollection = readReport('reports/source-collection-report.json', {});
+  const sourceGrowth = readReport('reports/source-growth-report.json', {});
+  const growthCurrent = sourceGrowth.current || {};
   const blockedReasons = (autoPublish.blocked || []).reduce((totals, candidate) => {
     const reason = candidate.reason || 'unknown';
     totals[reason] = (totals[reason] || 0) + 1;
@@ -3259,6 +3261,13 @@ function writeOwnerStatusPage(events) {
       blocked_remaining: autoPublish.totals?.blocked || 0,
       secondary_promoted: secondary.totals?.promoted || 0,
       secondary_still_blocked: secondary.totals?.still_blocked || 0,
+      growth_status: growthCurrent.status || 'unavailable',
+      public_delta: typeof growthCurrent.public_delta === 'number' ? growthCurrent.public_delta : 'baseline',
+      catalog_delta: typeof growthCurrent.catalog_delta === 'number' ? growthCurrent.catalog_delta : 'baseline',
+      no_growth_streak: Number(growthCurrent.no_growth_streak || 0),
+      new_active_candidates: Number(growthCurrent.new_active_candidates || 0),
+      new_ended_events: Number(growthCurrent.new_ended_events || 0),
+      lost_published_output: growthCurrent.lost_published_output === true,
       blocked_reasons: blockedReasons,
       collector_error_sources: collectorErrorSources
     },
@@ -3281,6 +3290,9 @@ function writeOwnerStatusPage(events) {
   const analyticsStatusCopy = analyticsDashboardReady
     ? 'لوحة الزيارات مؤكدة ومربوطة بالدومين.'
     : 'التتبع مزروع في الصفحات العامة، لكن لوحة الأرقام لم تؤكد بعد. ظهور 404 في Plausible يعني إنشاء موقع eventme.live داخل Plausible أو الدخول بالحساب المالك.';
+  const publicDeltaLabel = typeof status.source_sync.public_delta === 'number'
+    ? `${status.source_sync.public_delta > 0 ? '+' : ''}${status.source_sync.public_delta}`
+    : 'خط أساس';
   writeJson('owner-status.json', status);
   const canonical = absoluteUrl('owner-status.html');
   const html = `<!doctype html>
@@ -3293,13 +3305,17 @@ function writeOwnerStatusPage(events) {
 <body>
 ${header('./')}
 <main>
-  <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span>للمالك فقط</span><h1>حالة التشغيل والقياس</h1><p class="lead">افتح هذه الصفحة بعد النشر لمعرفة آخر جلب دوري، كم نشر، كم بقي محجوبًا، وهل القياس مزروع. أرقام الزوار التفصيلية لا تظهر إلا بعد تفعيل لوحة Plausible للدومين بحساب المالك.</p><div class="signal-strip"><div class="signal"><span>فعاليات منشورة</span><b>${status.catalog.public_events}</b></div><div class="signal"><span>نشر جديد آخر دورة</span><b>${status.source_sync.published_new}</b></div><div class="signal"><span>ترقية ثانوية</span><b>${status.source_sync.secondary_promoted}</b></div><div class="signal"><span>جداول حية</span><b>${status.catalog.live_ready}</b></div></div></div></section>
+  <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span>للمالك فقط</span><h1>حالة التشغيل والقياس</h1><p class="lead">افتح هذه الصفحة بعد النشر لمعرفة آخر جلب دوري، كم نما الكتالوج، كم بقي محجوبًا، وهل القياس مزروع. أرقام الزوار التفصيلية لا تظهر إلا بعد تفعيل لوحة Plausible للدومين بحساب المالك.</p><div class="signal-strip"><div class="signal"><span>فعاليات منشورة</span><b>${status.catalog.public_events}</b></div><div class="signal"><span>التغير آخر دورة</span><b>${escapeHtml(publicDeltaLabel)}</b></div><div class="signal"><span>مرشحون جدد</span><b>${status.source_sync.new_active_candidates}</b></div><div class="signal"><span>جداول حية</span><b>${status.catalog.live_ready}</b></div></div></div></section>
   <section class="section"><div class="wrap grid">
     <article class="activation-card"><h2>الزيارات والتحليلات</h2><p>حالة الزر: <strong>${escapeHtml(status.analytics.dashboard_status)}</strong></p><p>المزود: <strong>${escapeHtml(status.analytics.provider)}</strong></p><p>الدومين: <strong>${escapeHtml(status.analytics.domain)}</strong></p><p>الخصوصية: بدون كوكيز وبدون بيانات شخصية حسب إعدادات التقرير.</p><p><strong>${escapeHtml(analyticsStatusCopy)}</strong></p><div class="activation-actions"><a class="cta" href="${escapeHtml(analyticsDashboardHref)}" target="_blank" rel="noopener">${escapeHtml(analyticsDashboardLabel)}</a><a class="cta" href="./owner-status.json">بيانات الصفحة JSON</a></div></article>
     <article class="activation-card"><h2>آخر جلب دوري</h2><p>آخر تقرير: <strong>${escapeHtml(status.source_sync.last_run_at || 'غير متاح')}</strong></p><p>مصادر منتجة: <strong>${status.source_sync.productive_sources}</strong> · أخطاء: <strong>${status.source_sync.collector_errors}</strong> · صفرية: <strong>${status.source_sync.zero_yield}</strong></p><p>مرشحون: <strong>${status.source_sync.candidates_seen}</strong> · منشور جديد: <strong>${status.source_sync.published_new}</strong> · مربوط بموجود: <strong>${status.source_sync.linked_existing}</strong></p><div class="activation-actions"><a class="cta" href="./source-health.html">صحة المصادر</a><a class="cta" href="./source-coverage-gaps.html">فجوات التغطية</a></div></article>
+    <article class="activation-card"><h2>اتجاه نمو الكتالوج</h2><p>حالة الدورة: <strong>${escapeHtml(status.source_sync.growth_status)}</strong></p><p>التغير العام: <strong>${escapeHtml(publicDeltaLabel)}</strong> · مرشحون جدد: <strong>${status.source_sync.new_active_candidates}</strong> · منتهية جديدة: <strong>${status.source_sync.new_ended_events}</strong></p><p>دورات متتالية بلا نمو: <strong>${status.source_sync.no_growth_streak}</strong> · فقد ناتج منشور: <strong>${status.source_sync.lost_published_output ? 'نعم' : 'لا'}</strong></p></article>
   </div></section>
   <section class="section"><div class="wrap"><h2>ماذا أراقب؟</h2>${operationalTable(['المؤشر', 'القيمة', 'متى أقلق؟'], [
     ['blocked_remaining', status.source_sync.blocked_remaining, 'إذا بقي مرتفعًا لعدة دورات، نطوّر تحققًا ثانويًا أو مصادر رسمية بديلة.'],
+    ['public_delta', publicDeltaLabel, 'إذا بقي صفرًا أربع دورات، نراجع نوافذ المصادر والمصادر الصفرية.'],
+    ['no_growth_streak', status.source_sync.no_growth_streak, 'أربع دورات متتالية بلا نمو تعني أن الجلب يحتاج تدخلاً حتى لو نجح تقنيًا.'],
+    ['lost_published_output', status.source_sync.lost_published_output ? 'نعم' : 'لا', 'يجب أن تبقى لا دائمًا؛ نعم توقف بوابة النشر.'],
     ['secondary_promoted', status.source_sync.secondary_promoted, 'إذا كان صفرًا دائمًا، فالمطابقة الرسمية لا تعمل أو لا توجد أدلة كافية.'],
     ['collector_errors', status.source_sync.collector_errors, 'إذا زادت الأخطاء، نصلح collectors أو نعيد تصنيف المصدر.'],
     ['tracked_events', status.analytics.tracked_events.length, 'إذا صارت صفرًا، فالقياس غير مزروع في الصفحات العامة.']

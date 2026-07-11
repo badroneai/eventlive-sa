@@ -1584,6 +1584,8 @@
         "tourism"
       ],
       "fetch_method": "html-listing",
+      "max_candidates_per_run": 120,
+      "max_ended_per_run": 120,
       "intake_policy": "official-feed-preferred",
       "evidence_required": "Riyadh.sa event detail URL with date range, city or venue, public attendance details, and duplicate check against Visit Saudi and Riyadh Season.",
       "candidate_gate": "extraction",

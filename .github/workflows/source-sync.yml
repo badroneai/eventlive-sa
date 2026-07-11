@@ -23,7 +23,11 @@ jobs:
     env:
       EVENTLIVE_PUBLIC_BASE_URL: https://eventme.live/
       EVENTLIVE_SOURCE_ENDED_MIN_YEAR: "2022"
-      EVENTLIVE_MAX_SOURCE_COLLECTOR_ERRORS: "12"
+      EVENTLIVE_TRUSTED_SOURCE_LIMIT: "200"
+      EVENTLIVE_TRUSTED_SOURCE_ENDED_LIMIT: "200"
+      EVENTLIVE_MAX_SOURCE_COLLECTOR_ERRORS: "8"
+      EVENTLIVE_CRITICAL_SOURCE_PRIORITY_MAX: "10"
+      EVENTLIVE_MAX_CRITICAL_SOURCE_ERRORS: "2"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -51,9 +55,15 @@ jobs:
           npm run validate:gate
           npm run test:csv
           npm run test:source-auto-publish
+          npm run test:source-growth
+          npm run test:source-health-gate
           npm run test:source-action-identity
           npm run test:eye-official-links
           npm run test:source-sync-pipeline
+          npm run test:source-sync-workflow
+          npm run test:source-browser-probe
+          npm run test:source-browser-fallback
+          npm run test:source-limit-policy
           npm run test:source-selection-contract
           npm run test:scega-events-extractor
           npm run test:scega-canonical-alias
@@ -89,6 +99,7 @@ jobs:
             data/source_ended_events.json \
             data/source_registry.json \
             data/source_run_state.json \
+            data/source_growth_state.json \
             data/event_image_cache_manifest.json \
             reports/source-*.json \
             reports/source-*.md \
@@ -143,6 +154,7 @@ jobs:
             data/raw/source-yield-snapshots/**
             data/source_candidates.json
             data/source_run_state.json
+            data/source_growth_state.json
             data/events_catalog.json
             data/event_image_cache_manifest.json
             dist/**
@@ -164,4 +176,5 @@ jobs:
           echo "## EventLive Source Sync" >> "$GITHUB_STEP_SUMMARY"
           echo "- Site: https://eventme.live/" >> "$GITHUB_STEP_SUMMARY"
           echo "- Source ops: reports/source-ops-report.md" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Source growth: reports/source-growth-report.md" >> "$GITHUB_STEP_SUMMARY"
           echo "- Deployment: ${{ steps.deployment.outputs.page_url }}" >> "$GITHUB_STEP_SUMMARY"

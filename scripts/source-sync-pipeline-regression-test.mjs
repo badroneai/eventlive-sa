@@ -17,6 +17,7 @@ function lastStepIndex(name) {
 }
 
 for (const name of [
+  'sources:growth:baseline',
   'sources:collect',
   'sources:radars',
   'sources:ops',
@@ -30,6 +31,7 @@ for (const name of [
   'sources:ops',
   'sources:resolve',
   'build',
+  'sources:growth',
   'images:cache',
   'sources:health-gate'
 ]) {
@@ -37,6 +39,7 @@ for (const name of [
 }
 
 assert.ok(stepIndex('sources:collect') < stepIndex('sources:auto-publish'), 'source collection must happen before auto-publish');
+assert.equal(stepIndex('sources:growth:baseline'), 0, 'growth baseline must be captured before any network collection mutates the run reports');
 assert.ok(stepIndex('sources:collect') < stepIndex('sources:official-evidence'), 'official evidence verification must run after fresh discovery collection');
 assert.ok(stepIndex('sources:official-evidence') < stepIndex('sources:verify'), 'official evidence verification must run before secondary verification and auto-publish');
 assert.ok(stepIndex('sources:probe') < stepIndex('sources:radars'), 'source radars must run after the general source probe');
@@ -54,7 +57,10 @@ assert.ok(stepIndex('sources:state') < lastStepIndex('sources:ops'), 'source ops
 assert.ok(stepIndex('sources:ops') < stepIndex('sources:resolve'), 'initial duplicate/ops review must run before official resolver');
 assert.ok(stepIndex('validate') < stepIndex('images:cache'), 'validated data must be built before image caching');
 assert.ok(stepIndex('images:cache') > stepIndex('build'), 'image cache must run after a build creates dist/events.json');
+assert.ok(stepIndex('sources:growth') > stepIndex('build'), 'growth ledger must inspect the built public catalog');
+assert.ok(stepIndex('sources:growth') < stepIndex('images:cache'), 'growth ledger must persist the pre-cache catalog result before the final build');
 assert.ok(stepIndex('images:cache') < steps.findLastIndex((step) => step === 'npm run build'), 'a final build must run after image caching');
+assert.ok(stepIndex('sources:growth') < stepIndex('sources:health-gate'), 'source health gate must inspect the current growth result');
 assert.ok(steps.findLastIndex((step) => step === 'npm run build') < stepIndex('sources:health-gate'), 'source health gate must inspect the final built site');
 assert.ok(lastStepIndex('sources:state') < lastStepIndex('sources:ops'), 'final source ops report must be regenerated after final source run-state');
 

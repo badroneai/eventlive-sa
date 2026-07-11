@@ -5,8 +5,11 @@ const minActiveCollectors = Number(process.env.EVENTLIVE_MIN_ACTIVE_COLLECTORS ?
 const minCollectionCoveragePct = Number(process.env.EVENTLIVE_MIN_SOURCE_COLLECTION_COVERAGE_PCT ?? 35);
 const minProductiveSources = Number(process.env.EVENTLIVE_MIN_PRODUCTIVE_SOURCES ?? 8);
 const maxCollectorErrors = Number(process.env.EVENTLIVE_MAX_SOURCE_COLLECTOR_ERRORS ?? 0);
+const criticalPriorityMax = Number(process.env.EVENTLIVE_CRITICAL_SOURCE_PRIORITY_MAX ?? 10);
+const maxCriticalCollectorErrors = Number(process.env.EVENTLIVE_MAX_CRITICAL_SOURCE_ERRORS ?? 0);
 const minCandidatesWritten = Number(process.env.EVENTLIVE_MIN_SOURCE_CANDIDATES_WRITTEN ?? 50);
 const maxProbeBlockedRatio = Number(process.env.EVENTLIVE_MAX_PROBE_BLOCKED_RATIO ?? 0.25);
+const growthPath = process.env.EVENTLIVE_SOURCE_GROWTH_REPORT_JSON || 'reports/source-growth-report.json';
 
 function fail(message) {
   console.error(`SOURCE_HEALTH_FAIL ${message}`);
@@ -33,6 +36,10 @@ const collectorErrors = Number(totals.collector_errors || 0);
 const candidatesWritten = Number(totals.candidates_written || 0);
 const probeBlocked = Number(totals.probe_blocked || 0);
 const probeBlockedRatio = sources.length ? probeBlocked / sources.length : 0;
+const criticalCollectorErrors = sources.filter((source) => (
+  source.status === 'collector-error'
+  && Number(source.priority || Number.MAX_SAFE_INTEGER) <= criticalPriorityMax
+));
 
 if (!sources.length) fail('no source rows in health file');
 if (activeCollectors < minActiveCollectors) {
@@ -51,11 +58,29 @@ if (collectorErrors > maxCollectorErrors) {
     .join(', ');
   fail(`collector_errors=${collectorErrors} max=${maxCollectorErrors} sources=${errors}`);
 }
+if (criticalCollectorErrors.length > maxCriticalCollectorErrors) {
+  fail(`critical_collector_errors=${criticalCollectorErrors.length} max=${maxCriticalCollectorErrors} priority_lte=${criticalPriorityMax} sources=${criticalCollectorErrors.map((source) => source.id).join(', ')}`);
+}
 if (candidatesWritten < minCandidatesWritten) {
   fail(`candidates_written=${candidatesWritten} min=${minCandidatesWritten}`);
 }
 if (probeBlockedRatio > maxProbeBlockedRatio) {
   fail(`probe_blocked_ratio=${probeBlockedRatio.toFixed(2)} max=${maxProbeBlockedRatio}`);
+}
+
+let growthStatus = 'unavailable';
+if (fs.existsSync(growthPath)) {
+  try {
+    const growth = JSON.parse(fs.readFileSync(growthPath, 'utf8'));
+    const current = growth.current || {};
+    growthStatus = current.status || 'unknown';
+    if (current.lost_published_output === true || growthStatus === 'critical-persistence-gap') {
+      fail(`published output was not preserved: public_delta=${current.public_delta} published_new=${current.published_new}`);
+    }
+  } catch (error) {
+    if (String(error?.message || '').startsWith('published output was not preserved')) throw error;
+    fail(`unable to parse ${growthPath}: ${error.message}`);
+  }
 }
 
 console.log([
@@ -64,6 +89,8 @@ console.log([
   `coverage=${coveragePct}%`,
   `productive=${productive}`,
   `collector_errors=${collectorErrors}`,
+  `critical_collector_errors=${criticalCollectorErrors.length}`,
   `candidates=${candidatesWritten}`,
-  `probe_blocked_ratio=${probeBlockedRatio.toFixed(2)}`
+  `probe_blocked_ratio=${probeBlockedRatio.toFixed(2)}`,
+  `growth=${growthStatus}`
 ].join(' '));

@@ -14,10 +14,13 @@ function indexOfLine(pattern) {
 
 assert.match(workflow, /cron:\s*["']17 \*\/6 \* \* \*["']/, 'source sync must run every 6 hours');
 assert.match(workflow, /EVENTLIVE_SOURCE_ENDED_MIN_YEAR:\s*["']2022["']/, 'ended-event sync must keep the 2022 minimum-year boundary');
+assert.match(workflow, /EVENTLIVE_TRUSTED_SOURCE_LIMIT:\s*["']200["']/, 'trusted sources must not be constrained to the discovery-source cap');
+assert.match(workflow, /EVENTLIVE_TRUSTED_SOURCE_ENDED_LIMIT:\s*["']200["']/, 'trusted archive collection must preserve a useful history window');
 assert.match(workflow, /contents:\s*write/, 'source sync must be allowed to persist catalog state');
 assert.match(workflow, /pages:\s*write/, 'source sync must be allowed to deploy Pages');
 assert.match(workflow, /run:\s*npm run sources:sync/, 'source sync workflow must use the canonical sources:sync command');
 assert.match(workflow, /data\/source_run_state\.json/, 'source sync must persist run-state memory across scheduled runs');
+assert.match(workflow, /data\/source_growth_state\.json/, 'source sync must persist growth history across scheduled runs');
 assert.match(workflow, /data\/event_image_cache_manifest\.json/, 'source sync must persist image cache manifest across scheduled runs');
 assert.match(workflow, /reports\/source-\*\.json/, 'source sync must persist machine-readable source operation reports');
 assert.match(workflow, /reports\/source-\*\.md/, 'source sync must persist readable source operation reports');
@@ -26,6 +29,10 @@ assert.match(workflow, /reports\/mygov-\*\.md/, 'source sync must persist GOV.SA
 assert.match(workflow, /data\/raw\/mygov-wayback-radar\/\*\*/, 'source sync artifacts must include GOV.SA/NEC raw archive evidence');
 assert.match(workflow, /reports\/event-image-cache-report\.json/, 'source sync must persist image-cache evidence JSON');
 assert.match(workflow, /reports\/event-image-cache-report\.md/, 'source sync must persist image-cache evidence markdown');
+assert.match(workflow, /git fetch origin "\$\{GITHUB_REF_NAME\}"/, 'source sync must fetch remote state before each persistence attempt');
+assert.match(workflow, /git rebase "origin\/\$\{GITHUB_REF_NAME\}"/, 'source sync must rebase before pushing persisted data');
+assert.match(workflow, /for attempt in 1 2 3/, 'source sync must retry persistence races');
+assert.match(workflow, /npm run test:source-growth/, 'scheduled sync must regression-test the growth ledger');
 
 const sourceSyncIndex = indexOfLine(/npm run sources:sync/);
 const imageCacheTestIndex = indexOfLine(/npm run test:image-cache/);
