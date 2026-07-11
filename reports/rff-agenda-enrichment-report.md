@@ -1,10 +1,6 @@
-# Real Estate Future Forum 2026 Agenda Enrichment
+# Real Estate Future Forum Agenda Enrichment
 
-- generated_at: 2026-07-11T05:21:02.085Z
-- rendered_rows: 46
-- official_sessions_2026: 46
-- days: 3
-- recorded_session_links: 46
-- RFF_2027_policy: RFF 2027 remains separate until its own official agenda is published.
-- fetch_error: none
-- source: https://www.therff.com/agenda
+- generated_at: 2026-07-11T09:36:16.046Z
+- time_scope: current-and-upcoming-only
+- status: skipped-historical-source
+- existing ended event data was preserved without a network request

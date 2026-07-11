@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T05:03:08.561Z",
+  "generated_at": "2026-07-11T09:12:58.639Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -8,38 +8,38 @@
     "scope": "priority",
     "limit": 8,
     "probed_this_run": 8,
-    "fresh_results_available": 8,
+    "fresh_results_available": 14,
     "wait_ms": 4500,
     "timeout_ms": 60000
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 8,
+    "probed": 14,
     "browser_network_api": 2,
     "browser_hydration_payload": 0,
-    "rendered_html_candidates": 3,
-    "blocked_or_protected": 0,
+    "rendered_html_candidates": 4,
+    "blocked_or_protected": 1,
     "policy_skipped": 0
   },
   "sources": [
     {
-      "id": "mos-events",
-      "probed_at": "2026-07-11T05:05:23.550Z",
-      "name": "Ministry of Sport Events",
-      "priority": 4,
-      "url": "https://www.mos.gov.sa/en/media/events",
+      "id": "moc-cultural-calendar",
+      "probed_at": "2026-07-11T09:15:14.154Z",
+      "name": "Ministry of Culture Cultural Calendar",
+      "priority": 3,
+      "url": "https://www.moc.gov.sa/en/Modules/Pages/Cultural-Calendar",
       "final_url": "chrome-error://chromewebdata/",
       "status": "error",
       "http_status": 0,
-      "navigation_error": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.mos.gov.sa/en/media/events\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 134624,
+      "navigation_error": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.moc.gov.sa/en/Modules/Pages/Cultural-Calendar\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 135067,
       "classification": "empty-or-shell",
       "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
       "title": "",
       "text_bytes": 0,
       "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/mos-events-2026-07-11T05-03-08-561Z.html",
-      "screenshot": "data/raw/browser-probes/mos-events-2026-07-11T05-03-08-561Z.png",
+      "html_snapshot": "data/raw/browser-probes/moc-cultural-calendar-2026-07-11T09-12-58-639Z.html",
+      "screenshot": "data/raw/browser-probes/moc-cultural-calendar-2026-07-11T09-12-58-639Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -57,6 +57,244 @@
       "network_total": 0,
       "network_endpoints": [],
       "network_sample": []
+    },
+    {
+      "id": "mos-events",
+      "probed_at": "2026-07-11T09:17:29.311Z",
+      "name": "Ministry of Sport Events",
+      "priority": 4,
+      "url": "https://www.mos.gov.sa/en/media/events",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.mos.gov.sa/en/media/events\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 135118,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/mos-events-2026-07-11T09-12-58-639Z.html",
+      "screenshot": "data/raw/browser-probes/mos-events-2026-07-11T09-12-58-639Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "monshaat-events",
+      "probed_at": "2026-07-11T09:19:44.476Z",
+      "name": "Monsha'at All Events",
+      "priority": 9,
+      "url": "https://www.monshaat.gov.sa/en/events-list",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.monshaat.gov.sa/en/events-list\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 135131,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/monshaat-events-2026-07-11T09-12-58-639Z.html",
+      "screenshot": "data/raw/browser-probes/monshaat-events-2026-07-11T09-12-58-639Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "eye-of-riyadh-events",
+      "probed_at": "2026-07-11T09:22:14.297Z",
+      "name": "Eye of Riyadh Events",
+      "priority": 12,
+      "url": "https://www.eyeofriyadh.com/events/",
+      "final_url": "https://www.eyeofriyadh.com/events/",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 7324,
+      "classification": "rendered-html-candidates",
+      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
+      "title": "Events | Exhibitions |Festivals | Seminars Riyadh Saudi Arabia",
+      "text_bytes": 6277,
+      "html_bytes": 139007,
+      "html_snapshot": "data/raw/browser-probes/eye-of-riyadh-events-2026-07-11T09-12-58-639Z.html",
+      "screenshot": "data/raw/browser-probes/eye-of-riyadh-events-2026-07-11T09-12-58-639Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [
+          "25 Muharram 1448 - 11 July 2026 Sign In/Sign Up Advertise with us Sign-up for newsletter HOME NEWS EVENTS BUSIN",
+          "hatsApp X LinkedIn Facebook Email Share 25 - 27 Jan, 2027 Real Estate Future Forum Four Seasons Hotel , Riyadh | Forum The Real Est",
+          "must evolve, embracing... More Details 25 - 26 Oct, 2026 Global Proptech Summit 2026 Mandarin Oriental Al Faisaliah , Riyadh | Sum",
+          "platform that convenes... More Details 28 - 29 Oct, 2026 Real Estate Supply Chain Forum Mandarin Oriental Al Faisaliah , Riyadh |",
+          "tform driving strategic... More Details 28 - 29 Oct, 2026 CIPS MENA Procurement and Supply Chain Futures conference and awards Mand",
+          "must evolve, embracing... More Details 18 - 20 Aug, 2026 SUNAA 2026 Prince Meshal bin Abdullah Center for Conferences and Events ,",
+          "iversity and quality of... More Details 26 - 27 Aug, 2026 Smart Data & AI Summit JW Marriott Hotel Riyadh , Riyadh | Summit Organis"
+        ],
+        "event_like_links": [
+          {
+            "text": "EVENTS",
+            "href": "https://www.eyeofriyadh.com/events/"
+          },
+          {
+            "text": "عربي",
+            "href": "https://www.eyeofriyadh.com/ar/events/"
+          },
+          {
+            "text": "Award",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=15"
+          },
+          {
+            "text": "Ceremony",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=21"
+          },
+          {
+            "text": "Championship",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=13"
+          },
+          {
+            "text": "Conference",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=1"
+          },
+          {
+            "text": "Congress",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=28"
+          },
+          {
+            "text": "Exhibition",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=2"
+          },
+          {
+            "text": "Festival",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=5"
+          },
+          {
+            "text": "Forum",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=3"
+          },
+          {
+            "text": "Initiative",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=20"
+          },
+          {
+            "text": "Professional Development Programme",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=32"
+          },
+          {
+            "text": "Show",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=24"
+          },
+          {
+            "text": "Summit",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=4"
+          },
+          {
+            "text": "AWARD",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=15"
+          },
+          {
+            "text": "CEREMONY",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=21"
+          },
+          {
+            "text": "CHAMPIONSHIP",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=13"
+          },
+          {
+            "text": "CONFERENCE",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=1"
+          },
+          {
+            "text": "CONGRESS",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=28"
+          },
+          {
+            "text": "EXHIBITION",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=2"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 4,
+      "network_endpoints": [],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gpt&tv=m202607070101&st=env&sjk=6471038521634770",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"sodar_query_id\":\"PwtSapX7Ke6n998PtvSqoA0\",\"injector_basename\":\"sodar2\",\"bg_hash_basename\":\"FtD5pCbHUPL3PaZwE8nr3y33ChZ0luvzaU3k5GQkcaA\",\"bg_binary\":\"XOzvvqMc0mWaSvDWuzCIYvBkwYzvO+HlGxnOl9dDSPmlgNDZTMR5Kzj8FOWnkY9PfWRbPdT+0v1s8wzYzcx8kNkRiEkCIVfH7jfxQB1F7iyy+21mIejGcPB6Dr/hd95ba64pSVTJB+91yma4HnK0xjIulg2lhwLRE3NY+jKGsyqwoIyHky2AUHCVdZ5rb0PNmVLSQDdufjxCyvY0RnC6wRwMoO7txil5n3C2YzatJBSCE0LmIPuOT1IyIjyRUsMdp+DLFsYWPk6vlAMaYTz2sYFjo/DdaJxxz12RanuHhpgIus+EGmDZZwWEtP3j5p7jqxuzr0JffE3rDTy2LnczrETjtakRh1NlJKxvJjZHUwGg9Ts483EnVZPUnqnEScn+kOkn5NT0seNZgxpBQgkhtNaeVRhpSAeWtIYlpzqhs/yArmZxZ5OteWLPiK5HnEaWNfkMQcbZiYeW0t3ZKaeJFKmabcwY+o1U8650Kz8eBcVNSfTB4DvsmZ7YGYISgzReW0aRgNQqM0p/zIls9KOVTt/LrJfl+wEmh0yvx+AUSpJaByPMLBXhYA27Npba7OdRARsM+9geFmqAZwmSoyHUKeSuJjPl0YpWi4glbb1x2SCeKYXpSSlL4BMewsYOjcL18PKkiVfdRPF/8bBp2LfCotwVo9MMZDZkJebum5ZK7hK/DSDed/jDMM9BoaXvNjiLEN5bBctFKXx6S8M0SKYemiwRX0+/Q0toYx8hv1MyZZEc22bP7Gg05ARUaBg1zifAscLW94RjANh+/4ZjGZXnFu1tasXK2EZDbfqTvtFya0gwZu93O47xusWGpzSvI0EgbOUNuCt+At7IdKDVmYQLbOq/kR7jCKt6057ZcscRAcp9vfI7zjJg6G/JiCyVuc8X5xrlQn/DH0pulEZftaxNZVKJS1LyxEgOFv14QfdUU7x2sbtG0D5nkgEHAENHS0cRLQIX8U9fPHeGGPy4F8OLdkBM7HdDHsYuGKp0UmOr3RRohHuD0DohzsVg75f0kOkln6lprqq1Hh3hglSSbC8p1irGi3Hd5rOfajdDjxnykKCz3M9pyQtbUMXdIfPVR+sgnRG7f5KmWP+6LQUFRV+PuUjFklme1FT1MVn6W3ZIwnN5G4IjWi3cu/fgQK2c7k03rqhBT3wzp0oVHyR0qy7272cMcrf42L4xt4p5MZxwmCAxx4/5MFsqOtEVxxnQl24K8rQUyyUbDA0Lzb8pJtXLK6bg9fM8TBoU/l+KrHqpWcDxEI9szD2W5yc7GtZZwmcs/sVgiFQCqY/tCxdQMAnQejo+qf+eAGoVvzZ7cOLosTC9LoQ7t+LSByzhyNShGX8Pi2BafxDXN7Ec0zA6SlNAiQLTp2RaDwUKoui5UkWZvp8OL+iAoDUkLKrRaAJpcyviFbmwjdLdQbwfv/wrWMAWsuA7RgGiA8KpXaWRoDM3HXRFNYOCdcrBhSB0doTMaTmBF9e4uc7bqQkaLuaxL556Bi1L5Npe/8t9q9Q6nVKKsjiJHuoQ6xWer9gG5CURCUAYhOgS9NLzxEth9B3Zizg+h0YeNcpHmdUQ+cxw6BVHacsG6ZBJiDGrvEEjol6LiTn6nK5NQ3T1Syen2bupw4QedzW9/A5jiEz3+gT6rlTpQ+wxCWXdR"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://bootstrap.smartsuppchat.com/widget/2509ea3487b655fdefb67761d4610393011e3a91.json",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:aiRatingEnabled,allowedDomains,buttonStyle,color,color2,colorGradient,consentModeEnabled,crossDomainEnabled",
+          "preview": "{\"aiRatingEnabled\":false,\"allowedDomains\":[],\"buttonStyle\":\"greeting\",\"color\":\"#f5a623\",\"color2\":null,\"colorGradient\":true,\"consentModeEnabled\":false,\"crossDomainEnabled\":false,\"customBrandingEnabled\":false,\"customBrandingLink\":\"\",\"customBrandingText\":\"\",\"emailControl\":true,\"features\":{\"api\":false,\"customize\":false,\"ga\":false,\"groups\":false,\"rating\":false,\"whiteLabel\":false},\"googleAnalyticsEnabled\":false,\"googleAnalyticsManual\":false,\"googleAnalyticsMeasurementIds\":[],\"groupSelectEnabled\":false,\"headerStyle\":\"standard\",\"hideOfflineChat\":false,\"hideWidget\":false,\"host\":\"websocket-visitors.smartsupp.com\",\"internalAnalyticsEnabled\":false,\"isBlocked\":false,\"lang\":\"en\",\"mobilePopupsEnabled\":false,\"nameControl\":true,\"numberControl\":false,\"openOnTrigger\":false,\"orientation\":\"right\",\"packageName\":\"free\",\"popupTextareaEnabled\":false,\"privacyNoticeCheckRequired\":false,\"privacyNoticeEnabled\":true,\"privacyNoticeUrl\":\"\",\"ratingEnabled\":false,\"requireLogin\":false,\"translates\":{\"en\":{\"topBar.online.hello\":\"Eyeofriyadh\"}},\"urlCardsEnabled\":true,\"widgetVersion\":3,\"hasInternalApi\":false,\"config\":{},\"browserLang\":\"ar\",\"widgetTrackerUrl\":\"https://widget-tracker.smartsupp.com\",\"translationsBaseUrl\":\"https://translations.smartsuppcdn.com\",\"widgetTrackerEnabled\":false}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://widget-v3.smartsuppcdn.com/manifest.json",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{ \"_WidgetMessengerInput-C0XHPxev.js\": { \"file\": \"assets/WidgetMessengerInput-C0XHPxev.js\", \"name\": \"WidgetMessengerInput\", \"imports\": [ \"_shared-CgMCAfor.js\" ], \"dynamicImports\": [ \"node_modules/.pnpm/emoji-mart@5.6.0/node_modules/emoji-mart/dist/module.js\" ] }, \"_shared-CgMCAfor.js\": { \"file\": \"assets/shared-CgMCAfor.js\", \"name\": \"IconButton\", \"dynamicImports\": [ \"node_modules/.pnpm/@thumbmarkjs+thumbmarkjs@1.9.0/node_modules/@thumbmarkjs/thumbmarkjs/dist/thumbmark.esm.js\" ] }, \"node_modules/.pnpm/@thumbmarkjs+thumbmarkjs@1.9.0/node_modules/@thumbmarkjs/thumbmarkjs/dist/thumbmark.esm.js\": { \"file\": \"assets/thumbmark.esm-CP4CU0yL.js\", \"name\": \"thumbmark.esm\", \"src\": \"node_modules/.pnpm/@thumbmarkjs+thumbmarkjs@1.9.0/node_modules/@thumbmarkjs/thumbmarkjs/dist/thumbmark.esm.js\", \"isDynamicEntry\": true }, \"node_modules/.pnpm/emoji-mart@5.6.0/node_modules/emoji-mart/dist/module.js\": { \"file\": \"assets/module-DD5nvVD3.js\", \"name\": \"module\", \"src\": \"node_modules/.pnpm/emoji-mart@5.6.0/node_modules/emoji-mart/dist/module.js\", \"isDynamicEntry\": true }, \"src/frames/messenger/WidgetMessenger.svelte\": { \"file\": \"assets/WidgetMessenger-DD7OyyT5.js\", \"name\": \"WidgetMessenger\", \"src\": \"src/frames/messenger/WidgetMessenger.svelte\", \"isDynamicEntry\": true, \"imports\": [ \"_shared-CgMCAfor.js\", \"_WidgetMessengerInput-C0XHPxev.js\", \"src/main.ts\" ] }, \"src/frames/popup/WidgetPopup.svelte\": { \"file\": \"assets/WidgetPopup-qeuwkcBn.js\", \"name\": \"WidgetPopup\", \"src\": \"src/frames/popup/WidgetPopup.svelte\", \"isDynamicEntry\": true, \"imports\": [ \"_shared-CgMCAfor.js\", \"_WidgetMessengerInput-C0XHPxev.js\" ] },"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://translations.smartsuppcdn.com/api/v1/widget/translations/lang/en/defaults",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"agentRating.all.placeholder\":\"Leave us feedback\",\"agentRating.bad.formText\":\"So sorry 😓 What went wrong?\",\"agentRating.good.formText\":\"Thanks 🤩 What was so great?\",\"agentRating.normal.formText\":\"Thanks 👍 How can we improve?\",\"agentTransfer.defaultText\":\"Agent\",\"agentTransfer.joined\":\"joined the chat\",\"agentTransfer.left\":\"left\",\"agentTransfer.redirected\":\"is your new agent\",\"ariaLabel.agentAvatar\":\"Agent avatar\",\"ariaLabel.card\":\"Product card\",\"ariaLabel.chatContent\":\"Chat content\",\"ariaLabel.chatbotAvatar\":\"Chatbot avatar\",\"ariaLabel.drawer.content\":\"Drawer content\",\"ariaLabel.drawer.overlay\":\"Drawer overlay\",\"ariaLabel.inlineEmojiPicker.description\":\"Showing {count} emojis\",\"ariaLabel.inlineEmojiPicker.label\":\"Emoji suggestions\",\"ariaLabel.left\":\"Left\",\"ariaLabel.openChat\":\"Open Smartsupp chat\",\"ariaLabel.popup\":\"Smartsupp chat popup\",\"ariaLabel.rateChat.bad\":\"Rate chat negativelly\",\"ariaLabel.rateChat.good\":\"Rate chat positively\",\"ariaLabel.rateChat.neutral\":\"Rate chat neutrally\",\"ariaLabel.removeAttachment\":\"Remove attachment\",\"ariaLabel.right\":\"Right\",\"ariaLabel.scrollDown\":\"Scroll down\",\"ariaLabel.success\":\"Success\",\"ariaLabel.uploading\":\"Uploading...\",\"ariaLabel.widgetBranding\":\"Smartsupp branding\",\"authForm.acceptTerms\":\"I agree with privacy policy\",\"authForm.button.send\":\"Send message\",\"authForm.description\":\"We’ll use your contact info only if all the agents are busy at the moment and cannot immediately reply.\",\"authForm.greeting\":\"👋 Please introduce yourself\",\"authForm.group\":\"Choose a group\",\"authForm.label.email\":\"E-mail\",\"authForm.label.group\":\"Group\",\"authForm.label.name\":\"Name\",\"authForm.label.phone\":\"Phone\",\"authForm.submit.error\":\"Authentication failed\",\"authForm.submit.success\":\"Authentication was successful\",\"authForm.yourEmail\":\"Your email\",\"a"
+        }
+      ]
     },
     {
       "id": "code-mcit-programs",
@@ -142,7 +380,7 @@
     },
     {
       "id": "sdaia-academy-programs",
-      "probed_at": "2026-07-11T05:05:49.361Z",
+      "probed_at": "2026-07-11T09:19:46.508Z",
       "name": "SDAIA Academy Programs",
       "priority": 25,
       "url": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx",
@@ -150,14 +388,14 @@
       "status": "error",
       "http_status": 0,
       "navigation_error": "page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx\nCall log:\n  - navigating to \"https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 6418,
+      "duration_ms": 1993,
       "classification": "empty-or-shell",
       "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
       "title": "",
       "text_bytes": 0,
       "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/sdaia-academy-programs-2026-07-11T05-03-08-561Z.html",
-      "screenshot": "data/raw/browser-probes/sdaia-academy-programs-2026-07-11T05-03-08-561Z.png",
+      "html_snapshot": "data/raw/browser-probes/sdaia-academy-programs-2026-07-11T09-12-58-639Z.html",
+      "screenshot": "data/raw/browser-probes/sdaia-academy-programs-2026-07-11T09-12-58-639Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -806,6 +1044,78 @@
       ]
     },
     {
+      "id": "moc-cultural-subportals",
+      "probed_at": "2026-07-11T09:21:59.634Z",
+      "name": "Ministry of Culture Commission Calendars",
+      "priority": 37,
+      "url": "https://music.moc.gov.sa/Cultural-Calendar",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://music.moc.gov.sa/Cultural-Calendar\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 133091,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/moc-cultural-subportals-2026-07-11T09-12-58-639Z.html",
+      "screenshot": "data/raw/browser-probes/moc-cultural-subportals-2026-07-11T09-12-58-639Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "sdaia-calendar-events",
+      "probed_at": "2026-07-11T09:22:01.066Z",
+      "name": "SDAIA Calendar and Events",
+      "priority": 54,
+      "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx\nCall log:\n  - navigating to \"https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 1394,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/sdaia-calendar-events-2026-07-11T09-12-58-639Z.html",
+      "screenshot": "data/raw/browser-probes/sdaia-calendar-events-2026-07-11T09-12-58-639Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
       "id": "makkah-chamber-events",
       "probed_at": "2026-07-11T05:06:45.478Z",
       "name": "Makkah Chamber Events",
@@ -932,6 +1242,123 @@
           "preview": "{\"jsonrpc\": \"2.0\", \"id\": 483903551, \"result\": {\"lang_parameters\": {\"id\": 3, \"name\": \"Arabic / \\u0627\\u0644\\u0652\\u0639\\u064e\\u0631\\u064e\\u0628\\u064a\\u0651\\u0629\", \"direction\": \"rtl\", \"date_format\": \"%d %b, %Y\", \"time_format\": \"%H:%M:%S\", \"grouping\": \"[3,0]\", \"decimal_point\": \".\", \"thousands_sep\": \",\", \"week_start\": 6}, \"modules\": {\"im_livechat\": {\"messages\": [{\"id\": \"Visitor\", \"string\": \"\\u0627\\u0644\\u0632\\u0627\\u0626\\u0631\"}, {\"id\": \"Ask something ...\", \"string\": \"\\u0627\\u0633\\u0623\\u0644 \\u0639\\u0646 \\u0634\\u064a\\u0621...\"}, {\"id\": \"Chat with one of our collaborators\", \"string\": \"\\u062a\\u062d\\u062f\\u062b \\u0645\\u0639 \\u0623\\u062d\\u062f \\u0645\\u0645\\u062b\\u0644\\u064a\\u0646\\u0627\"}, {\"id\": \"Did we correctly answer your question ?\", \"string\": \"\\u0647\\u0644 \\u0623\\u062c\\u0628\\u0646\\u0627 \\u0639\\u0644\\u0649 \\u0633\\u0624\\u0627\\u0644\\u0643 \\u0628\\u0634\\u0643\\u0644 \\u0635\\u062d\\u064a\\u062d\\u061f\"}, {\"id\": \"Explain your note\", \"string\": \"\\u0634\\u0631\\u062d \\u0645\\u0644\\u0627\\u062d\\u0638\\u062a\\u0643\"}, {\"id\": \"How may I help you?\", \"string\": \"\\u0643\\u064a\\u0641 \\u064a\\u0645\\u0643\\u0646\\u0646\\u064a \\u0645\\u0633\\u0627\\u0639\\u062f\\u062a\\u0643\\u061f\"}, {\"id\": \"I don't want to rate this conversation\", \"string\": \"\\u0644\\u0627 \\u0623\\u0631\\u064a\\u062f \\u062a\\u0642\\u064a\\u064a\\u0645 \\u0647\\u0630\\u0647 \\u0627\\u0644\\u0645\\u062d\\u0627\\u062f\\u062b\\u0629\"}, {\"id\": \"Livechat\", \"string\": \"\\u0627\\u0644\\u062f\\u0631\\u062f\\u0634\\u0629 \\u0627\\u0644\\u062d\\u064a\\u0629\"}, {\"id\": \"None of our collaborators seems to be available, please try again later.\", \"string\": \"\\u064a\\u0628\\u062f\\u0648 \\u0623\\u0646 \\u062c\\u0645\\u064a\\u0639 \\u0645\\u0645\\u062b\\u0644\\u064a\\u0646\\u0627 \\u0645\\u0634\\u063a\\u0648\\u0644\\u0648\\u0646 \\u0627\\u0644\\u0622\\u0646\\u060c \\u0628\\u0631\\u062c\\u0627\\u0621 \\u0627\\u0644\\u0645\\u062d\\u062"
         }
       ]
+    },
+    {
+      "id": "qassim-chamber-events",
+      "probed_at": "2026-07-11T09:22:06.930Z",
+      "name": "Qassim Chamber Events",
+      "priority": 60,
+      "url": "https://tc.qcc.org.sa/",
+      "final_url": "https://tc.qcc.org.sa/events",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 5827,
+      "classification": "blocked-or-protected",
+      "next_action": "لا تلتف على الحماية؛ صنف المصدر partnership/API أو ابحث عن مسار رسمي.",
+      "title": "إدارة التدريب - غرفة القصيم",
+      "text_bytes": 950,
+      "html_bytes": 13073,
+      "html_snapshot": "data/raw/browser-probes/qassim-chamber-events-2026-07-11T09-12-58-639Z.html",
+      "screenshot": "data/raw/browser-probes/qassim-chamber-events-2026-07-11T09-12-58-639Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [
+          "الموارد البشرية الفعالية انتهت الاثنين, يوليو 6 2026, 16:30 1448-01-21 عمليات إدارة الموارد البشرية عرض التفاصيل أساسيات إدار",
+          "لمنشآت والشركات الفعالية انتهت الاثنين, يونيو 22 2026, 16:30 1448-01-07 أساسيات إدارة التأمين في المنشآت والشركات عرض التفاصي",
+          "وفق مؤشرات KPI الفعالية انتهت الاثنين, يونيو 8 2026, 16:30 1447-12-22 إدارة الأداء المؤسسي وتقييم الموظفين وفق مؤشرات KPI عر"
+        ],
+        "event_like_links": [
+          {
+            "text": "إستعراض الفعاليات",
+            "href": "https://tc.qcc.org.sa/events"
+          },
+          {
+            "text": "عمليات إدارة الموارد البشرية",
+            "href": "https://tc.qcc.org.sa/events/204"
+          },
+          {
+            "text": "عرض التفاصيل",
+            "href": "https://tc.qcc.org.sa/events/204"
+          },
+          {
+            "text": "أساسيات إدارة التأمين في المنشآت والشركات",
+            "href": "https://tc.qcc.org.sa/events/203"
+          },
+          {
+            "text": "عرض التفاصيل",
+            "href": "https://tc.qcc.org.sa/events/203"
+          },
+          {
+            "text": "إدارة الأداء المؤسسي وتقييم الموظفين وفق مؤشرات KPI",
+            "href": "https://tc.qcc.org.sa/events/202"
+          },
+          {
+            "text": "عرض التفاصيل",
+            "href": "https://tc.qcc.org.sa/events/202"
+          },
+          {
+            "text": "2",
+            "href": "https://tc.qcc.org.sa/events?page=2"
+          },
+          {
+            "text": "3",
+            "href": "https://tc.qcc.org.sa/events?page=3"
+          },
+          {
+            "text": "4",
+            "href": "https://tc.qcc.org.sa/events?page=4"
+          },
+          {
+            "text": "5",
+            "href": "https://tc.qcc.org.sa/events?page=5"
+          },
+          {
+            "text": "6",
+            "href": "https://tc.qcc.org.sa/events?page=6"
+          },
+          {
+            "text": "7",
+            "href": "https://tc.qcc.org.sa/events?page=7"
+          },
+          {
+            "text": "8",
+            "href": "https://tc.qcc.org.sa/events?page=8"
+          },
+          {
+            "text": "9",
+            "href": "https://tc.qcc.org.sa/events?page=9"
+          },
+          {
+            "text": "10",
+            "href": "https://tc.qcc.org.sa/events?page=10"
+          },
+          {
+            "text": "65",
+            "href": "https://tc.qcc.org.sa/events?page=65"
+          },
+          {
+            "text": "66",
+            "href": "https://tc.qcc.org.sa/events?page=66"
+          },
+          {
+            "text": "›",
+            "href": "https://tc.qcc.org.sa/events?page=2"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
     }
   ]
 }

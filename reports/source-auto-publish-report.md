@@ -1,22 +1,23 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-11T05:19:52.041Z
+- published_at: 2026-07-11T09:35:19.611Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 450
-- published_new: 1
+- candidates_seen: 452
+- published_new: 2
 - linked_existing: 430
-- blocked_remaining: 19
+- blocked_remaining: 20
 
 ## Blocked summary
 
 - possible duplicate already exists: event-esports-world-cup: 1
-- publication gate source-evidence is not auto-publishable: 16
+- publication gate source-evidence is not auto-publishable: 17
 - possible duplicate already exists: event-saudi-wood-expo-2026: 1
 - possible duplicate already exists: event-saudi-industrial-series-2: 1
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
+| candidate-riyadh-city-events-global-forum-on-the-ethics-of-ai-gfeai-20260914-a5785294 | published | event-global-forum-on-the-ethics-of-ai-gfeai | Global Forum on the Ethics of AI (GFEAI) |
 | candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702 | published | event-music-festival-mdlbeast-soundstorm | Music Festival: MDLBEAST SoundStorm |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
@@ -112,16 +113,15 @@
 | candidate-ithra-events-echoes-of-the-familiar-20260711-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-ithra-events-lets-decorate-20260711-4cb342a7 | linked-existing | event-lets-decorate | already linked to catalog event |
 | candidate-ithra-events-tafasahu-make-room-20260711-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
-| candidate-ithra-events-beaded-plant-suncatcher-20260711-ebabc697 | linked-existing | event-beaded-plant-suncatcher | already linked to catalog event |
-| candidate-ithra-events-1-2-3-a-little-space-for-me-20260711-a3bc99ba | linked-existing | event-1-2-3-a-little-space-for-me | already linked to catalog event |
-| candidate-ithra-events-1-2-3-lets-rhyme-20260711-4d37515a | linked-existing | event-1-2-3-lets-rhyme | already linked to catalog event |
 | candidate-ithra-events-ithra-childrens-festival-2026-20260711-d6d5cc99 | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
 | candidate-ithra-events-leap-then-look-20260711-99d88224 | linked-existing | event-leap-then-look | already linked to catalog event |
-| candidate-ithra-events-kindergarten-under-the-palm-tree-english-20260711-c72ee6a9 | linked-existing | event-kindergarten-under-the-palm-tree-english | already linked to catalog event |
+| candidate-ithra-events-1-2-3-a-little-space-for-me-20260711-a3bc99ba | linked-existing | event-1-2-3-a-little-space-for-me | already linked to catalog event |
 | candidate-ithra-events-unbox-your-story-20260711-5085a6f0 | linked-existing | event-unbox-your-story | already linked to catalog event |
 | candidate-ithra-events-my-little-fort-20260711-09d01da3 | linked-existing | event-my-little-fort | already linked to catalog event |
+| candidate-ithra-events-beaded-plant-suncatcher-20260711-ebabc697 | linked-existing | event-beaded-plant-suncatcher | already linked to catalog event |
 | candidate-ithra-events-play-with-shadows-20260711-9984f169 | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
 | candidate-ithra-events-puppet-world-20260711-3b43fb64 | linked-existing | event-puppet-world | already linked to catalog event |
+| candidate-ithra-events-1-2-3-lets-rhyme-20260711-4d37515a | linked-existing | event-1-2-3-lets-rhyme | already linked to catalog event |
 | candidate-ithra-events-a-home-i-imagine-20260711-7778a5c1 | linked-existing | event-a-home-i-imagine | already linked to catalog event |
 | candidate-ithra-events-ajeeb-in-wonder-house-20260711-caa7ff83 | linked-existing | event-ajeeb-in-wonder-house | already linked to catalog event |
 | candidate-ithra-events-around-the-table-20260711-87d7ec65 | linked-existing | event-around-the-table | already linked to catalog event |
@@ -168,6 +168,7 @@
 | candidate-sfda-events-نقل-مبيدات-آفات-الصحة-العامة-20260713-8bb9663d | linked-existing | event-نقل-مبيدات-آفات-الصحة-العامة-2 | already linked to catalog event |
 | candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260713-f563a36e | linked-existing | event-ithra-summer-camp-2026-a-world-of-homes | already linked to catalog event |
 | candidate-ithra-events-summer-youth-program-20260713-a20f7a11 | linked-existing | event-ithra-summer-camp-2026-a-world-of-homes | already linked to catalog event |
+| candidate-ithra-events-kindergarten-under-the-palm-tree-english-20260713-c72ee6a9 | linked-existing | event-kindergarten-under-the-palm-tree-english | already linked to catalog event |
 | candidate-ithra-events-natures-architects-20260713-9b0461b0 | linked-existing | event-natures-architects | already linked to catalog event |
 | candidate-ithra-events-nim-adventures-20260713-c504dfe0 | linked-existing | event-nim-adventures | already linked to catalog event |
 | candidate-ithra-events-virtual-to-reality-20260713-b8053f5f | linked-existing | event-virtual-to-reality | already linked to catalog event |
@@ -449,7 +450,8 @@
 | candidate-riyadh-city-events-human-capability-initiative-conference-20270412-17af203d | linked-existing | event-human-capability-initiative-conference | already linked to catalog event |
 | candidate-visit-saudi-calendar-eid-al-adha-20270606-f67747fe | linked-existing | event-eid-al-adha | already linked to catalog event |
 | candidate-eye-of-riyadh-events-esports-world-cup-20260706-13ed17c1 | blocked | - | possible duplicate already exists: event-esports-world-cup |
-| candidate-eventbrite-saudi-dubai-property-expo-in-al-khobar-17th-18th-july-2026-danube-20260717-2dd8b8b7 | blocked | - | publication gate source-evidence is not auto-publishable |
+| candidate-eventbrite-saudi-riyadh-social-and-language-exchange-make-new-friends-20260717-1233a8a9 | blocked | - | publication gate source-evidence is not auto-publishable |
+| candidate-eventbrite-saudi-riyadh-tech-mixer-and-social-tech-ai-data-it-20260717-d9a2c230 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eye-of-riyadh-events-oxford-future-of-real-estate-programme-20260805-7c9ee195 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eye-of-riyadh-events-sunaa-2026-20260818-e3819fa8 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eye-of-riyadh-events-saudi-wood-expo-2026-20260830-b4d44be4 | blocked | - | possible duplicate already exists: event-saudi-wood-expo-2026 |
@@ -461,9 +463,9 @@
 | candidate-eventbrite-saudi-jeddah-fintech-week-2026-20260905-8e9a03b6 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-information-session-with-ie-university-saudi-arabia-in-riyadh-20260907-2b4929f1 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-25th-wpc-energy-congress-20261011-5909609b | blocked | - | publication gate source-evidence is not auto-publishable |
+| candidate-eventbrite-saudi-riyadh-2026-venture-capital-world-summit-20261020-a3f5a1b8 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-cat-show-3rd-season-in-saudi-pet-vet-expo-20261109-a33c98fd | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-saudi-pet-vet-expo-5th-edition-2026-20261109-1aafd065 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-dunes-the-ultimate-outdoor-adventure-show-2026-20261119-13b76916 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-family-offices-vcs-investment-summit-riyadh-invite-only-20261124-e6c951a4 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eye-of-riyadh-events-real-estate-excellence-award-2026-rea-2026-20270126-5e55ea49 | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-eventbrite-saudi-saudi-international-marine-exhibition-simec-6th-edition-2027-20270328-47e72c19 | blocked | - | publication gate source-evidence is not auto-publishable |

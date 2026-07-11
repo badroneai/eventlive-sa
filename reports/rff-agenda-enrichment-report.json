@@ -1,12 +1,15 @@
 {
-  "generated_at": "2026-07-11T05:21:02.085Z",
+  "generated_at": "2026-07-11T09:36:16.046Z",
+  "time_scope": "current-and-upcoming-only",
+  "ended_collection_enabled": false,
   "agenda_url": "https://www.therff.com/agenda",
+  "status": "skipped-historical-source",
   "current_event_policy": "RFF 2027 remains separate until its own official agenda is published.",
   "totals": {
-    "rendered_rows": 46,
-    "sessions_2026": 46,
-    "days": 3,
-    "recorded_session_links": 46
+    "rendered_rows": 0,
+    "sessions_2026": 0,
+    "days": 0,
+    "recorded_session_links": 0
   },
   "fetch_error": ""
 }

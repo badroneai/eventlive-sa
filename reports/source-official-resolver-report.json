@@ -1,106 +1,13 @@
 {
-  "generated_at": "2026-07-11T05:21:07.859Z",
+  "generated_at": "2026-07-11T09:36:18.007Z",
   "source_ops_report": "reports/source-ops-report.json",
   "source_registry": "data/source_registry.json",
   "totals": {
     "leads_seen": 10,
     "tasks": 8,
-    "high_priority": 1
+    "high_priority": 0
   },
   "tasks": [
-    {
-      "lead_id": "candidate-eventbrite-saudi-dubai-property-expo-in-al-khobar-17th-18th-july-2026-danube-20260717-2dd8b8b7",
-      "title": "Dubai Property Expo in Al Khobar",
-      "city": "Khobar",
-      "starts_at": "2026-07-17T10:00:00+03:00",
-      "source_label": "Eventbrite Saudi Arabia",
-      "discovery_quality": "strong-lead",
-      "discovery_score": 70,
-      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 132,
-      "target_sources": [
-        {
-          "id": "dhahran-expo-calendar",
-          "name": "Dhahran Expo Calendar",
-          "url": "https://dhahranexpo.com.sa",
-          "domain": "dhahranexpo.com.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 86
-        },
-        {
-          "id": "madinah-chamber-events",
-          "name": "Madinah Chamber Events",
-          "url": "https://www.mcci.org.sa/Event/events",
-          "domain": "mcci.org.sa",
-          "trust_level": "official",
-          "source_type": "venue-calendar",
-          "score": 78
-        },
-        {
-          "id": "ricec-events",
-          "name": "Riyadh International Convention and Exhibition Center",
-          "url": "https://www.ricec.com/",
-          "domain": "ricec.com",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 78
-        },
-        {
-          "id": "sdaia-calendar-events",
-          "name": "SDAIA Calendar and Events",
-          "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
-          "domain": "sdaia.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 78
-        },
-        {
-          "id": "asharqia-chamber-events",
-          "name": "Asharqia Chamber Events",
-          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
-          "domain": "chamber.org.sa",
-          "trust_level": "official",
-          "source_type": "venue-calendar",
-          "score": 76
-        }
-      ],
-      "searches": [
-        {
-          "query": "site:dhahranexpo.com.sa \"Dubai Property Expo in Al Khobar\" \"Khobar\"",
-          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22"
-        },
-        {
-          "query": "site:mcci.org.sa \"Dubai Property Expo in Al Khobar\" \"Khobar\"",
-          "url": "https://www.google.com/search?q=site%3Amcci.org.sa%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22"
-        },
-        {
-          "query": "site:ricec.com \"Dubai Property Expo in Al Khobar\" \"Khobar\"",
-          "url": "https://www.google.com/search?q=site%3Aricec.com%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22"
-        },
-        {
-          "query": "site:sdaia.gov.sa \"Dubai Property Expo in Al Khobar\" \"Khobar\"",
-          "url": "https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22"
-        },
-        {
-          "query": "site:chamber.org.sa \"Dubai Property Expo in Al Khobar\" \"Khobar\"",
-          "url": "https://www.google.com/search?q=site%3Achamber.org.sa%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22"
-        },
-        {
-          "query": "\"Dubai Property Expo in Al Khobar\" \"Khobar\" official",
-          "url": "https://www.google.com/search?q=%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22%20official"
-        },
-        {
-          "query": "\"Dubai Property Expo in Al Khobar\" \"Khobar\" organizer",
-          "url": "https://www.google.com/search?q=%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22%20organizer"
-        },
-        {
-          "query": "\"Dubai Property Expo in Al Khobar\" \"Khobar\" tickets",
-          "url": "https://www.google.com/search?q=%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22%20tickets"
-        }
-      ],
-      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
-    },
     {
       "lead_id": "candidate-eventbrite-saudi-cat-show-3rd-season-in-saudi-pet-vet-expo-20261109-a33c98fd",
       "title": "Cat Show 3rd season in Saudi Pet & Vet Expo",
@@ -288,10 +195,10 @@
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
     },
     {
-      "lead_id": "candidate-eventbrite-saudi-jeddah-fintech-week-2026-20260905-8e9a03b6",
-      "title": "Jeddah Fintech Week 2026",
-      "city": "Jeddah",
-      "starts_at": "2026-09-05T14:00:00+03:00",
+      "lead_id": "candidate-eventbrite-saudi-riyadh-2026-venture-capital-world-summit-20261020-a3f5a1b8",
+      "title": "Riyadh 2026 Venture Capital World Summit",
+      "city": "Riyadh",
+      "starts_at": "2026-10-20T13:00:00+03:00",
       "source_label": "Eventbrite Saudi Arabia",
       "discovery_quality": "strong-lead",
       "discovery_score": 70,
@@ -299,83 +206,83 @@
       "resolver_priority": 107,
       "target_sources": [
         {
-          "id": "abha-chamber-events",
-          "name": "Abha Chamber Events",
-          "url": "https://abhacci.org.sa/Events",
-          "domain": "abhacci.org.sa",
-          "trust_level": "official",
+          "id": "rfecc-whats-on",
+          "name": "RFECC What's On",
+          "url": "https://rfecc.sa/whats-on/",
+          "domain": "rfecc.sa",
+          "trust_level": "venue-official",
           "source_type": "venue-calendar",
-          "score": 40
+          "score": 76
         },
         {
-          "id": "baha-chamber-events",
-          "name": "Baha Chamber Events",
-          "url": "https://bcci.org.sa/",
-          "domain": "bcci.org.sa",
-          "trust_level": "official",
+          "id": "ricec-events",
+          "name": "Riyadh International Convention and Exhibition Center",
+          "url": "https://www.ricec.com/",
+          "domain": "ricec.com",
+          "trust_level": "venue-official",
           "source_type": "venue-calendar",
-          "score": 40
+          "score": 76
         },
         {
-          "id": "future-skills-catalog",
-          "name": "Future Skills MCIT Catalogue",
-          "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
-          "domain": "futureskills.mcit.gov.sa",
+          "id": "dhahran-expo-calendar",
+          "name": "Dhahran Expo Calendar",
+          "url": "https://dhahranexpo.com.sa",
+          "domain": "dhahranexpo.com.sa",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 68
+        },
+        {
+          "id": "saudi-water-authority-events",
+          "name": "Saudi Water Authority Events",
+          "url": "https://www.swa.gov.sa/en/events",
+          "domain": "swa.gov.sa",
           "trust_level": "official",
           "source_type": "government-calendar",
-          "score": 40
+          "score": 66
         },
         {
-          "id": "hail-chamber-events",
-          "name": "Hail Chamber Events",
-          "url": "https://www.hc.org.sa/",
-          "domain": "hc.org.sa",
-          "trust_level": "official",
-          "source_type": "venue-calendar",
-          "score": 40
-        },
-        {
-          "id": "invest-saudi-events",
-          "name": "Invest Saudi Events",
-          "url": "https://www.investsaudi.sa/events",
-          "domain": "investsaudi.sa",
+          "id": "sdaia-calendar-events",
+          "name": "SDAIA Calendar and Events",
+          "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
+          "domain": "sdaia.gov.sa",
           "trust_level": "official",
           "source_type": "government-calendar",
-          "score": 40
+          "score": 66
         }
       ],
       "searches": [
         {
-          "query": "site:abhacci.org.sa \"Jeddah Fintech Week 2026\" \"Jeddah\"",
-          "url": "https://www.google.com/search?q=site%3Aabhacci.org.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22"
+          "query": "site:rfecc.sa \"Riyadh 2026 Venture Capital World Summit\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Arfecc.sa%20%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22"
         },
         {
-          "query": "site:bcci.org.sa \"Jeddah Fintech Week 2026\" \"Jeddah\"",
-          "url": "https://www.google.com/search?q=site%3Abcci.org.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22"
+          "query": "site:ricec.com \"Riyadh 2026 Venture Capital World Summit\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aricec.com%20%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22"
         },
         {
-          "query": "site:futureskills.mcit.gov.sa \"Jeddah Fintech Week 2026\" \"Jeddah\"",
-          "url": "https://www.google.com/search?q=site%3Afutureskills.mcit.gov.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22"
+          "query": "site:dhahranexpo.com.sa \"Riyadh 2026 Venture Capital World Summit\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22"
         },
         {
-          "query": "site:hc.org.sa \"Jeddah Fintech Week 2026\" \"Jeddah\"",
-          "url": "https://www.google.com/search?q=site%3Ahc.org.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22"
+          "query": "site:swa.gov.sa \"Riyadh 2026 Venture Capital World Summit\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aswa.gov.sa%20%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22"
         },
         {
-          "query": "site:investsaudi.sa \"Jeddah Fintech Week 2026\" \"Jeddah\"",
-          "url": "https://www.google.com/search?q=site%3Ainvestsaudi.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22"
+          "query": "site:sdaia.gov.sa \"Riyadh 2026 Venture Capital World Summit\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22"
         },
         {
-          "query": "\"Jeddah Fintech Week 2026\" \"Jeddah\" official",
-          "url": "https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20official"
+          "query": "\"Riyadh 2026 Venture Capital World Summit\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22%20official"
         },
         {
-          "query": "\"Jeddah Fintech Week 2026\" \"Jeddah\" organizer",
-          "url": "https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20organizer"
+          "query": "\"Riyadh 2026 Venture Capital World Summit\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22%20organizer"
         },
         {
-          "query": "\"Jeddah Fintech Week 2026\" \"Jeddah\" tickets",
-          "url": "https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20tickets"
+          "query": "\"Riyadh 2026 Venture Capital World Summit\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
@@ -660,42 +567,117 @@
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
     },
     {
-      "lead_id": "candidate-eventbrite-saudi-sucession-planning-program-20260903-d2b52d25",
-      "title": "Sucession Planning Program",
+      "lead_id": "candidate-eventbrite-saudi-riyadh-social-and-language-exchange-make-new-friends-20260717-1233a8a9",
+      "title": "Riyadh Social and Language Exchange (Make New Friends) ✨",
       "city": "Riyadh",
-      "starts_at": "2026-09-03T10:00:00+03:00",
+      "starts_at": "2026-07-17T18:00:00+03:00",
       "source_label": "Eventbrite Saudi Arabia",
       "discovery_quality": "strong-lead",
       "discovery_score": 70,
       "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 97,
+      "resolver_priority": 87,
       "target_sources": [
         {
-          "id": "code-mcit-programs",
-          "name": "CODE MCIT Programs",
-          "url": "https://code.mcit.gov.sa/en/our-programs",
-          "domain": "code.mcit.gov.sa",
+          "id": "enjoy-saudi-events",
+          "name": "Enjoy Saudi Events",
+          "url": "https://enjoy.sa/ar/",
+          "domain": "enjoy.sa",
           "trust_level": "official",
           "source_type": "government-calendar",
-          "score": 28
+          "score": 38
         },
         {
-          "id": "cst-events-news",
-          "name": "CST Events and News",
-          "url": "https://www.cst.gov.sa/en",
-          "domain": "cst.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 28
-        },
-        {
-          "id": "diriyah-season",
-          "name": "Diriyah Season",
-          "url": "https://diriyahseason.sa/en",
-          "domain": "diriyahseason.sa",
+          "id": "misk-hub-events",
+          "name": "Misk Hub Events",
+          "url": "https://hub.misk.org.sa/en/events/",
+          "domain": "hub.misk.org.sa",
           "trust_level": "official",
           "source_type": "organizer-calendar",
-          "score": 28
+          "score": 38
+        },
+        {
+          "id": "riyadh-city-events",
+          "name": "Riyadh City Events",
+          "url": "https://riyadh.sa/en/events/all",
+          "domain": "riyadh.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 38
+        },
+        {
+          "id": "riyadh-season",
+          "name": "Riyadh Season Official",
+          "url": "https://riyadhseason.com/en/explore",
+          "domain": "riyadhseason.com",
+          "trust_level": "official",
+          "source_type": "organizer-calendar",
+          "score": 38
+        },
+        {
+          "id": "aseer-season-asda",
+          "name": "Aseer Season / Asir Development Authority",
+          "url": "https://www.asda.gov.sa/",
+          "domain": "asda.gov.sa",
+          "trust_level": "official",
+          "source_type": "destination-calendar",
+          "score": 30
+        }
+      ],
+      "searches": [
+        {
+          "query": "site:enjoy.sa \"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aenjoy.sa%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:hub.misk.org.sa \"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ahub.misk.org.sa%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:riyadh.sa \"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ariyadh.sa%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:riyadhseason.com \"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ariyadhseason.com%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:asda.gov.sa \"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aasda.gov.sa%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22"
+        },
+        {
+          "query": "\"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22%20official"
+        },
+        {
+          "query": "\"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22%20organizer"
+        },
+        {
+          "query": "\"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22%20tickets"
+        }
+      ],
+      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
+    },
+    {
+      "lead_id": "candidate-eventbrite-saudi-riyadh-tech-mixer-and-social-tech-ai-data-it-20260717-d9a2c230",
+      "title": "Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨",
+      "city": "Riyadh",
+      "starts_at": "2026-07-17T18:00:00+03:00",
+      "source_label": "Eventbrite Saudi Arabia",
+      "discovery_quality": "strong-lead",
+      "discovery_score": 70,
+      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
+      "resolver_priority": 87,
+      "target_sources": [
+        {
+          "id": "misk-hub-events",
+          "name": "Misk Hub Events",
+          "url": "https://hub.misk.org.sa/en/events/",
+          "domain": "hub.misk.org.sa",
+          "trust_level": "official",
+          "source_type": "organizer-calendar",
+          "score": 48
         },
         {
           "id": "enjoy-saudi-events",
@@ -704,50 +686,68 @@
           "domain": "enjoy.sa",
           "trust_level": "official",
           "source_type": "government-calendar",
-          "score": 28
+          "score": 38
         },
         {
-          "id": "fii10-official-program",
-          "name": "FII 10th Edition Official Program",
-          "url": "https://fii-institute.org/conference/fii-10th-edition/",
-          "domain": "fii-institute.org",
+          "id": "riyadh-city-events",
+          "name": "Riyadh City Events",
+          "url": "https://riyadh.sa/en/events/all",
+          "domain": "riyadh.sa",
           "trust_level": "official",
-          "source_type": "conference-organizer",
-          "score": 28
+          "source_type": "government-calendar",
+          "score": 38
+        },
+        {
+          "id": "riyadh-season",
+          "name": "Riyadh Season Official",
+          "url": "https://riyadhseason.com/en/explore",
+          "domain": "riyadhseason.com",
+          "trust_level": "official",
+          "source_type": "organizer-calendar",
+          "score": 38
+        },
+        {
+          "id": "platinumlist-saudi-city-network",
+          "name": "Platinumlist Saudi City Network",
+          "url": "https://platinumlist.net/sitemap",
+          "domain": "platinumlist.net",
+          "trust_level": "official-marketplace",
+          "source_type": "ticketing-marketplace",
+          "score": 32
         }
       ],
       "searches": [
         {
-          "query": "site:code.mcit.gov.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Acode.mcit.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
+          "query": "site:hub.misk.org.sa \"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ahub.misk.org.sa%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22"
         },
         {
-          "query": "site:cst.gov.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Acst.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
+          "query": "site:enjoy.sa \"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aenjoy.sa%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22"
         },
         {
-          "query": "site:diriyahseason.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Adiriyahseason.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
+          "query": "site:riyadh.sa \"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ariyadh.sa%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22"
         },
         {
-          "query": "site:enjoy.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aenjoy.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
+          "query": "site:riyadhseason.com \"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ariyadhseason.com%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22"
         },
         {
-          "query": "site:fii-institute.org \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Afii-institute.org%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
+          "query": "site:platinumlist.net \"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aplatinumlist.net%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22"
         },
         {
-          "query": "\"Sucession Planning Program\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20official"
+          "query": "\"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22%20official"
         },
         {
-          "query": "\"Sucession Planning Program\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20organizer"
+          "query": "\"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22%20organizer"
         },
         {
-          "query": "\"Sucession Planning Program\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20tickets"
+          "query": "\"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."

@@ -1,13 +1,13 @@
 # EventLive Event Image Cache Report
 
-- generated_at: 2026-07-11T05:23:28.458Z
+- generated_at: 2026-07-11T09:38:42.694Z
 - events_file: dist/events.json
 - manifest: data/event_image_cache_manifest.json
 - image_dir: dist/assets/event-images
 - targets: 500
-- cached_total: 592
-- fetched: 53
-- reused: 441
+- cached_total: 593
+- fetched: 54
+- reused: 440
 - rejected_removed: 0
 - failed: 6
 - skipped_recent_failures: 6

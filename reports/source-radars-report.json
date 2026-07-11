@@ -1,14 +1,16 @@
 {
   "schema": "eventlive.source-radars.v1",
-  "generated_at": "2026-07-11T04:49:42.364Z",
+  "generated_at": "2026-07-11T08:59:41.303Z",
   "strict": false,
+  "time_scope": "current-and-upcoming-only",
+  "ended_collection_enabled": false,
   "policy": {
     "allowed_use": "scheduled evidence refresh, parser validation, official-source lead discovery",
     "disallowed_use": "direct catalog publication without current official confirmation"
   },
   "totals": {
-    "radars": 5,
-    "ok": 3,
+    "radars": 4,
+    "ok": 2,
     "failed": 2
   },
   "radars": [
@@ -18,9 +20,9 @@
       "source_id": "platinumlist-saudi-city-network",
       "policy": "candidate-only; city coverage evidence; no auto-publish",
       "command": "/opt/hostedtoolcache/node/24.18.0/x64/bin/node scripts/platinumlist-platform-radar.mjs",
-      "started_at": "2026-07-11T04:49:42.364Z",
-      "ended_at": "2026-07-11T04:53:42.407Z",
-      "duration_ms": 240043,
+      "started_at": "2026-07-11T08:59:41.303Z",
+      "ended_at": "2026-07-11T09:03:41.337Z",
+      "duration_ms": 240034,
       "status": "timeout",
       "exit_code": 1,
       "signal": null,
@@ -52,11 +54,11 @@
       "source_id": "platinumlist-saudi-city-network",
       "policy": "candidate-only; secondary official verification required; no auto-publish",
       "command": "/opt/hostedtoolcache/node/24.18.0/x64/bin/node scripts/platinumlist-detail-radar.mjs",
-      "started_at": "2026-07-11T04:53:42.407Z",
-      "ended_at": "2026-07-11T04:57:42.465Z",
-      "duration_ms": 240058,
+      "started_at": "2026-07-11T09:03:41.337Z",
+      "ended_at": "2026-07-11T09:07:41.384Z",
+      "duration_ms": 240047,
       "status": "timeout",
-      "exit_code": 0,
+      "exit_code": 1,
       "signal": null,
       "timeout_ms": 240000,
       "reports": [
@@ -64,6 +66,7 @@
         "reports/platinumlist-detail-radar.md"
       ],
       "stdout_tail": [
+        "[platinumlist-detail] 12/24 ورشة تمثيل في جدة",
         "[platinumlist-detail] 13/24 غرفة مشاهدة مباريات كأس العالم 2026 في منتزه توينا داهبان",
         "[platinumlist-detail] 14/24 عمر الجمل - عرض كوميدي تفاعلي في الرياض",
         "[platinumlist-detail] 15/24 whats on saudi arabia awards 2026 registration",
@@ -74,8 +77,7 @@
         "[platinumlist-detail] 20/24 ليلة ستاند أب كوميدي في جدة",
         "[platinumlist-detail] 21/24 ليلة ستاند أب كوميدي في جدة",
         "[platinumlist-detail] 22/24 “فينا نحكي؟” – عرض ستاند أب كوميدي لجون أشقر في الدمام",
-        "[platinumlist-detail] 23/24 “فينا نحكي؟” كوميديا ستاند أب مع جون أشقر في جدة",
-        "[platinumlist-detail] 24/24 يوم السيدات في منتجع القرية بجدة"
+        "[platinumlist-detail] 23/24 “فينا نحكي؟” كوميديا ستاند أب مع جون أشقر في جدة"
       ],
       "stderr_tail": [],
       "error": "spawnSync /opt/hostedtoolcache/node/24.18.0/x64/bin/node ETIMEDOUT"
@@ -86,9 +88,9 @@
       "source_id": "official-agenda-watchlist",
       "policy": "source-evidence; agenda readiness; no auto-publish",
       "command": "/opt/hostedtoolcache/node/24.18.0/x64/bin/node scripts/source-official-agenda-radar.mjs",
-      "started_at": "2026-07-11T04:57:42.465Z",
-      "ended_at": "2026-07-11T04:57:44.539Z",
-      "duration_ms": 2074,
+      "started_at": "2026-07-11T09:07:41.384Z",
+      "ended_at": "2026-07-11T09:07:43.767Z",
+      "duration_ms": 2383,
       "status": "ok",
       "exit_code": 0,
       "signal": null,
@@ -99,8 +101,9 @@
       ],
       "stdout_tail": [
         "# EventLive Official Agenda Radar",
-        "- Targets: 18",
-        "- Published timed agendas: 4",
+        "- Time scope: current-and-upcoming-only",
+        "- Targets: 16",
+        "- Published timed agendas: 3",
         "- Announced without timed agenda: 8",
         "- Placeholder agendas rejected: 1",
         "- Not published: 1",
@@ -115,9 +118,9 @@
       "source_id": "strategic-platform-watchlist",
       "policy": "source-evidence; API-surface mapping; no auto-publish",
       "command": "/opt/hostedtoolcache/node/24.18.0/x64/bin/node scripts/source-strategic-platform-radar.mjs",
-      "started_at": "2026-07-11T04:57:44.539Z",
-      "ended_at": "2026-07-11T04:58:32.454Z",
-      "duration_ms": 47915,
+      "started_at": "2026-07-11T09:07:43.767Z",
+      "ended_at": "2026-07-11T09:08:32.781Z",
+      "duration_ms": 49014,
       "status": "ok",
       "exit_code": 0,
       "signal": null,
@@ -132,33 +135,6 @@
         "- Reachable: 3",
         "- Protected: 3",
         "- Report: reports/source-strategic-platform-radar.md"
-      ],
-      "stderr_tail": [],
-      "error": ""
-    },
-    {
-      "id": "mygov-wayback",
-      "name": "GOV.SA / NEC Wayback Radar",
-      "source_id": "my-gov-sa-events",
-      "policy": "source-evidence; no auto-publish",
-      "command": "/opt/hostedtoolcache/node/24.18.0/x64/bin/node scripts/mygov-wayback-radar.mjs",
-      "started_at": "2026-07-11T04:58:32.454Z",
-      "ended_at": "2026-07-11T04:58:43.970Z",
-      "duration_ms": 11516,
-      "status": "ok",
-      "exit_code": 0,
-      "signal": null,
-      "timeout_ms": 90000,
-      "reports": [
-        "reports/mygov-wayback-radar.json",
-        "reports/mygov-wayback-radar.md"
-      ],
-      "stdout_tail": [
-        "# GOV.SA Wayback Radar",
-        "- Captures attempted: 10",
-        "- Events extracted: 10",
-        "- Date-complete: 10",
-        "- Report: reports/mygov-wayback-radar.md"
       ],
       "stderr_tail": [],
       "error": ""

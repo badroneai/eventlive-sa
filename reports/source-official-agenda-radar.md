@@ -1,11 +1,13 @@
 # EventLive Official Agenda Radar
 
-Generated at: 2026-07-11T04:57:42.491Z
+Generated at: 2026-07-11T09:07:41.409Z
+
+Time scope: current-and-upcoming-only
 
 This radar detects when first-party event pages expose a complete timed programme. It does not publish records.
 
-- Targets: 18
-- Published timed agendas: 4
+- Targets: 16
+- Published timed agendas: 3
 - Announced without timed agenda: 8
 - Placeholder agendas rejected: 1
 - Not published: 1
@@ -14,7 +16,6 @@ This radar detects when first-party event pages expose a complete timed programm
 | Event | Status | HTTP | Complete time rows | Agenda cards | Policy |
 | --- | --- | ---: | ---: | ---: | --- |
 | LEAP 2026 | published-browser-extractor-active | 403 | 0 | 0 | public-browser-production-extractor |
-| Money20/20 Middle East 2025 | unavailable | - | 0 | 0 | historical-production-extractor |
 | Money20/20 Middle East 2026 | not-published | 404 | 1 | 0 | watch-until-published |
 | Future Investment Initiative 10th Edition | announced-no-timed-agenda | 200 | 0 | 0 | watch-until-timed-program |
 | Global AI Summit 2026 | unavailable | - | 0 | 0 | watch-official-event-page |
@@ -30,4 +31,3 @@ This radar detects when first-party event pages expose a complete timed programm
 | Global Proptech Summit 2026 | announced-no-timed-agenda | 200 | 0 | 0 | watch-homepage-until-2026-agenda-replaces-historical-pdf |
 | Real Estate Supply Chain Forum 2026 | announced-no-timed-agenda | 200 | 0 | 6 | watch-until-timed-program |
 | CIPS MENA Conference and Awards 2026 | placeholder-not-publishable | 200 | 3 | 6 | reject-placeholder-until-official-program |
-| Real Estate Future Forum 2026 historical programme | published-historical-extractor-active | 200 | 141 | 100 | historical-production-extractor-keep-separate-from-2027 |
