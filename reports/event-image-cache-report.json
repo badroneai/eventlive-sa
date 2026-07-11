@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T09:38:42.694Z",
+  "generated_at": "2026-07-11T11:06:22.957Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -26,18 +26,6 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-05/BG-KKESH-01-scaled.jpg?itok=TyhrDOfg",
-      "file": "dist/assets/event-images/king-khaled-eye-specialist-hospital-and-research-center-2026-internati-245613e9b7.jpg",
-      "bytes": 12045,
-      "events": 1
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/cx%201%20G2ANj9uXkAAToVW.jpeg?itok=jDWvR69u",
-      "file": "dist/assets/event-images/e3-customer-experience-conference-5102d5e506.jpg",
-      "bytes": 26285,
-      "events": 1
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/slider-riyadh.jpg?itok=paMnaS4v",
       "file": "dist/assets/event-images/global-csr-forum-77e94825e0.jpg",
       "bytes": 24546,
@@ -47,6 +35,18 @@
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/ezgif.com-webp-to-jpg-converter%20%289%29_0.jpg?itok=8MIYdE3n",
       "file": "dist/assets/event-images/saudi-lifestyle-week-29c3641da8.jpg",
       "bytes": 41504,
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-05/BG-KKESH-01-scaled.jpg?itok=TyhrDOfg",
+      "file": "dist/assets/event-images/king-khaled-eye-specialist-hospital-and-research-center-2026-internati-245613e9b7.jpg",
+      "bytes": 12045,
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/cx%201%20G2ANj9uXkAAToVW.jpeg?itok=jDWvR69u",
+      "file": "dist/assets/event-images/e3-customer-experience-conference-5102d5e506.jpg",
+      "bytes": 26285,
       "events": 1
     },
     {
@@ -62,21 +62,9 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/Melwah%20Falcon%20Racing%201.jpeg?itok=AUotuvgp",
-      "file": "dist/assets/event-images/melwah-falcon-racing-42ac1994c8.jpg",
-      "bytes": 19526,
-      "events": 1
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/36x864%5B1%5D.jpg?itok=wCcU3lwC",
       "file": "dist/assets/event-images/wpc-energy-congress-609df8d8ab.jpg",
       "bytes": 27256,
-      "events": 1
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/WoAA9PTR%20%281%29.jpg?itok=3sTZl2lB",
-      "file": "dist/assets/event-images/saudi-falcons-hunting-exhibition-f5ca8b6b58.jpg",
-      "bytes": 26201,
       "events": 1
     },
     {
@@ -89,6 +77,18 @@
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/gscs--converter.jpg?itok=xvJBfP1-",
       "file": "dist/assets/event-images/global-space-connectivity-and-sustainability-events-04f027f66b.jpg",
       "bytes": 17559,
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/Melwah%20Falcon%20Racing%201.jpeg?itok=AUotuvgp",
+      "file": "dist/assets/event-images/melwah-falcon-racing-42ac1994c8.jpg",
+      "bytes": 19526,
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/WoAA9PTR%20%281%29.jpg?itok=3sTZl2lB",
+      "file": "dist/assets/event-images/saudi-falcons-hunting-exhibition-f5ca8b6b58.jpg",
+      "bytes": 26201,
       "events": 1
     },
     {
@@ -122,15 +122,21 @@
       "events": 1
     },
     {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/Metal%20%26%20Steel%20Exhibition.jpg%20%281%29.png?itok=9QJkvuAo",
+      "file": "dist/assets/event-images/metal-steel-exhibition-fabex-d880fae4ee.png",
+      "bytes": 335238,
+      "events": 1
+    },
+    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/ezgif.com-webp-to-jpg-converter%20%2815%29.jpg?itok=Xja154HB",
       "file": "dist/assets/event-images/esports-nations-cup-43c4afd0c2.jpg",
       "bytes": 25675,
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/Metal%20%26%20Steel%20Exhibition.jpg%20%281%29.png?itok=9QJkvuAo",
-      "file": "dist/assets/event-images/metal-steel-exhibition-fabex-d880fae4ee.png",
-      "bytes": 335238,
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/Screenshot%202025-03-16%20101331.png?itok=AK7s0A06",
+      "file": "dist/assets/event-images/mipim-middle-east-43ba9ff717.png",
+      "bytes": 299295,
       "events": 1
     },
     {
@@ -152,12 +158,6 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/Screenshot%202025-03-16%20101331.png?itok=AK7s0A06",
-      "file": "dist/assets/event-images/mipim-middle-east-43ba9ff717.png",
-      "bytes": 299295,
-      "events": 1
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/seamless.jpeg?itok=n3jLK1Jd",
       "file": "dist/assets/event-images/seamless-saudi-arabia-16b5e93128.jpg",
       "bytes": 37916,
@@ -170,15 +170,15 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/Screen%20Shot%202026-01-25%20at%207.17.31%20AM.png?itok=az27tslp",
-      "file": "dist/assets/event-images/future-investment-initiative-71254bda64.png",
-      "bytes": 325366,
-      "events": 1
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-05/ad6a12b653df86b_1779611219-0-en1779611313.jpg%5B1%5D.jpg?itok=Sb6uAEoH",
       "file": "dist/assets/event-images/cat-show-0a9e8f5217.jpg",
       "bytes": 19140,
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/Screen%20Shot%202026-01-25%20at%207.17.31%20AM.png?itok=az27tslp",
+      "file": "dist/assets/event-images/future-investment-initiative-71254bda64.png",
+      "bytes": 325366,
       "events": 1
     },
     {
@@ -296,15 +296,15 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/1500x500%20%285%29_0.jpg?itok=rVeH9j2W",
-      "file": "dist/assets/event-images/next-gen-iot-expo-22dcc8b651.jpg",
-      "bytes": 37696,
-      "events": 1
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-05/ac27_web_banner_0.jpg?itok=_a9WS-wA",
       "file": "dist/assets/event-images/afc-asian-cup-saudi-arabia-2027-tickets-c6efe2e55f.jpg",
       "bytes": 9430,
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/1500x500%20%285%29_0.jpg?itok=rVeH9j2W",
+      "file": "dist/assets/event-images/next-gen-iot-expo-22dcc8b651.jpg",
+      "bytes": 37696,
       "events": 1
     },
     {
@@ -326,15 +326,15 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/eeb25f5396c900de2564ba61d8ce6b98.jpg",
-      "file": "dist/assets/event-images/ithra-children-s-festival-2026-404eb0e87a.jpg",
-      "bytes": 140455,
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/180f76cd89a868b3d6b42608dffecd7a.png",
       "file": "dist/assets/event-images/museum-story-time-1f3a195fe9.png",
       "bytes": 771734,
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/eeb25f5396c900de2564ba61d8ce6b98.jpg",
+      "file": "dist/assets/event-images/ithra-children-s-festival-2026-404eb0e87a.jpg",
+      "bytes": 140455,
       "events": 1
     }
   ],
@@ -2640,5 +2640,9 @@
       "retry_after": "2026-07-11T15:10:33.514Z",
       "skipped": true
     }
+  ],
+  "requires_rebuild": true,
+  "rebuild_reasons": [
+    "fetched:54"
   ]
 }

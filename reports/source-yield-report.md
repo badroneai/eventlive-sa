@@ -1,48 +1,48 @@
 # EventLive Source Yield Report
 
-Generated at: 2026-07-11T09:08:33.079Z
+Generated at: 2026-07-11T10:55:03.104Z
 Sources attempted: 45
 
 | Source | Status | Signals | Extracted raw | Future complete | Written last run | Drop reasons | Note |
 |---|---|---:|---:|---:|---:|---|---|
 | visit-saudi-calendar | ok | bytes 41996, rows 11, dates 0 | 11 | 11 | 11 | future-complete:11 |  |
 | moc-cultural-calendar | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | fetch failed; fetch failed |
-| mos-events | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | The operation was aborted due to timeout |
+| mos-events | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | fetch failed; live browser recovery deferred by recent failed probe cooldown |
 | experience-alula-events | ok | bytes 568668, rows 0, dates 1 | 11 | 9 | 9 | future-complete:9, past-date:2 |  |
 | mdlbeast-events | ok | bytes 395653, rows 0, dates 85 | 41 | 3 | 3 | past-date:38, future-complete:3 |  |
-| monshaat-events | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | The operation was aborted due to timeout; The operation was aborted due to timeout |
+| monshaat-events | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | fetch failed; fetch failed |
 | invest-saudi-events | ok | bytes 7022, rows 9, dates 0 | 8 | 3 | 3 | past-date:5, future-complete:3 |  |
-| rfecc-whats-on | ok | bytes 144336, rows 0, dates 3 | 20 | 6 | 6 | past-date:14, future-complete:6 |  |
+| rfecc-whats-on | ok | bytes 144312, rows 0, dates 3 | 20 | 6 | 6 | past-date:14, future-complete:6 |  |
 | eye-of-riyadh-events | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | HTTP 403 |
-| eventbrite-saudi | ok | bytes 827250, rows 0, dates 228 | 16 | 16 | 16 | future-complete:16 |  |
+| eventbrite-saudi | error | bytes 0, rows 0, dates 0 | 0 | 0 | 17 | - | HTTP 405 |
 | tuwaiq-academy-bootcamps | ok | bytes 10788, rows 12, dates 0 | 12 | 12 | 12 | future-complete:12 |  |
-| future-skills-catalog | ok | bytes 169748, rows 0, dates 2 | 12 | 4 | 4 | future-complete:4, past-date:8 |  |
+| future-skills-catalog | ok | bytes 169820, rows 0, dates 2 | 12 | 4 | 4 | future-complete:4, past-date:8 |  |
 | visit-saudi-seasons | ok | bytes 41996, rows 11, dates 0 | 4 | 4 | 4 | future-complete:4 |  |
-| code-mcit-programs | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | fetch failed |
+| code-mcit-programs | ok | bytes 42936, rows 0, dates 0 | 0 | 0 | 0 | - |  |
 | misk-hub-programs | ok | bytes 215330, rows 0, dates 0 | 5 | 5 | 5 | future-complete:5 |  |
 | dhahran-expo-calendar | ok | bytes 490854, rows 0, dates 0 | 22 | 15 | 15 | past-date:7, future-complete:15 |  |
-| ithra-events | ok | bytes 3897615, rows 0, dates 2809 | 225 | 129 | 129 | past-date:96, future-complete:129 |  |
-| sdaia-academy-programs | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | fetch failed |
+| ithra-events | ok | bytes 3897624, rows 0, dates 2809 | 225 | 129 | 129 | past-date:96, future-complete:129 |  |
+| sdaia-academy-programs | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | fetch failed; live browser recovery deferred by recent failed probe cooldown |
 | misk-hub-events | ok | bytes 229641, rows 0, dates 22 | 5 | 0 | 0 | past-date:5 |  |
 | jcci-events-center | ok | bytes 1370249, rows 0, dates 0 | 13 | 0 | 0 | past-date:13 |  |
 | saudi-pro-league-fixtures | ok | bytes 162264, rows 100, dates 200 | 100 | 0 | 0 | past-date:100 |  |
 | saudi-space-agency-events | ok | bytes 146085, rows 0, dates 1 | 14 | 0 | 0 | past-date:14 |  |
 | visit-saudi-calendar-pdf | ok | bytes 389264, rows 0, dates 0 | 77 | 50 | 50 | future-complete:50, past-date:27 |  |
-| moc-cultural-subportals | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | The operation was aborted due to timeout; The operation was aborted due to timeout |
+| moc-cultural-subportals | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | fetch failed; fetch failed |
 | discover-aseer-events | ok | bytes 137929, rows 0, dates 2 | 1 | 1 | 1 | future-complete:1 |  |
 | saudi-water-authority-events | ok | bytes 176730, rows 0, dates 21 | 9 | 8 | 8 | future-complete:8, past-date:1 |  |
 | saudi-university-events | ok | bytes 85740, rows 0, dates 0 | 14 | 6 | 6 | future-complete:6, past-date:8 |  |
-| sfda-events | ok | bytes 127189, rows 0, dates 18 | 9 | 7 | 7 | future-complete:7, past-date:2 |  |
-| riyadh-city-events | ok | bytes 3129, rows 0, dates 0 | 94 | 94 | 93 | future-complete:94 |  |
-| sdaia-calendar-events | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | fetch failed |
+| sfda-events | ok | bytes 186064, rows 0, dates 22 | 9 | 7 | 7 | future-complete:7, past-date:2 |  |
+| riyadh-city-events | ok | bytes 3129, rows 0, dates 0 | 94 | 94 | 94 | future-complete:94 |  |
+| sdaia-calendar-events | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | fetch failed; live browser recovery deferred by recent failed probe cooldown |
 | makkah-chamber-events | ok | bytes 67797, rows 0, dates 14 | 10 | 0 | 0 | past-date:10 |  |
 | scega-exhibitions-conferences | ok | bytes 4890, rows 0, dates 0 | 4 | 4 | 4 | future-complete:4 |  |
 | asharqia-chamber-events | ok | bytes 103207, rows 0, dates 3 | 15 | 2 | 2 | future-complete:2, past-date:13 |  |
-| qassim-chamber-events | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | HTTP 403 |
+| qassim-chamber-events | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | HTTP 403; live browser recovery deferred by recent failed probe cooldown |
 | abha-chamber-events | ok | bytes 38904, rows 0, dates 0 | 5 | 0 | 0 | past-date:5 |  |
 | northern-borders-chamber-events | ok | bytes 308810, rows 24, dates 0 | 4 | 0 | 0 | past-date:4 |  |
 | tabuk-chamber-events | ok | bytes 35173, rows 0, dates 18 | 2 | 0 | 0 | past-date:2 |  |
-| jazan-chamber-events | ok | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | Recovered through official API after primary page failure: The operation was aborted due to timeout |
+| jazan-chamber-events | ok | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | Recovered through official API after primary page failure: fetch failed |
 | najran-municipality-summer-events | ok | bytes 170517, rows 0, dates 9 | 1 | 1 | 1 | future-complete:1 |  |
 | umm-al-qura-events | ok | bytes 498140, rows 0, dates 14 | 6 | 4 | 4 | future-complete:4, past-date:2 |  |
 | qassim-university-events | ok | bytes 742179, rows 0, dates 12 | 1 | 1 | 1 | future-complete:1 |  |
@@ -56,19 +56,20 @@ Sources attempted: 45
 | Source | Diagnosis | Attempts |
 |---|---|---|
 | moc-cultural-calendar | collector-error: fetch failed; fetch failed | 0 |
-| mos-events | collector-error: The operation was aborted due to timeout | 0 |
-| monshaat-events | collector-error: The operation was aborted due to timeout; The operation was aborted due to timeout | 0 |
+| mos-events | collector-error: fetch failed; live browser recovery deferred by recent failed probe cooldown | 0 |
+| monshaat-events | collector-error: fetch failed; fetch failed | 0 |
 | eye-of-riyadh-events | collector-error: HTTP 403 | 0 |
-| code-mcit-programs | collector-error: fetch failed | 0 |
-| sdaia-academy-programs | collector-error: fetch failed | 0 |
+| eventbrite-saudi | collector-error: HTTP 405 | 0 |
+| code-mcit-programs | no rows detected by extractor | 0 |
+| sdaia-academy-programs | collector-error: fetch failed; live browser recovery deferred by recent failed probe cooldown | 0 |
 | misk-hub-events | past-date:5 | 0 |
 | jcci-events-center | past-date:13 | 0 |
 | saudi-pro-league-fixtures | past-date:100 | 2 |
 | saudi-space-agency-events | past-date:14 | 0 |
-| moc-cultural-subportals | collector-error: The operation was aborted due to timeout; The operation was aborted due to timeout | 0 |
-| sdaia-calendar-events | collector-error: fetch failed | 0 |
+| moc-cultural-subportals | collector-error: fetch failed; fetch failed | 0 |
+| sdaia-calendar-events | collector-error: fetch failed; live browser recovery deferred by recent failed probe cooldown | 0 |
 | makkah-chamber-events | past-date:10 | 0 |
-| qassim-chamber-events | collector-error: HTTP 403 | 0 |
+| qassim-chamber-events | collector-error: HTTP 403; live browser recovery deferred by recent failed probe cooldown | 0 |
 | abha-chamber-events | past-date:5 | 0 |
 | northern-borders-chamber-events | past-date:4 | 0 |
 | tabuk-chamber-events | past-date:2 | 0 |

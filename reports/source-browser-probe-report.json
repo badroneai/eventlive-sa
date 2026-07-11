@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T09:12:58.639Z",
+  "generated_at": "2026-07-11T11:01:12.321Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -7,10 +7,11 @@
     "selected_ids": [],
     "scope": "priority",
     "limit": 8,
-    "probed_this_run": 8,
+    "probed_this_run": 0,
     "fresh_results_available": 14,
     "wait_ms": 4500,
-    "timeout_ms": 60000
+    "timeout_ms": 30000,
+    "failure_cooldown_hours": 72
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {

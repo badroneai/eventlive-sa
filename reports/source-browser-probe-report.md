@@ -1,10 +1,11 @@
 # EventLive Browser Source Probe
 
-Generated at: 2026-07-11T09:12:58.639Z
+Generated at: 2026-07-11T11:01:12.321Z
 
 ## Summary
 
-- Sources probed: 14
+- Sources probed this run: 0
+- Fresh results available: 14
 - Browser network API: 2
 - Hydration payload: 0
 - Rendered HTML candidates: 4

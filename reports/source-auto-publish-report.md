@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-11T09:35:19.611Z
+- published_at: 2026-07-11T11:03:03.206Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 452
-- published_new: 2
-- linked_existing: 430
+- published_new: 1
+- linked_existing: 431
 - blocked_remaining: 20
 
 ## Blocked summary
@@ -17,7 +17,6 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-riyadh-city-events-global-forum-on-the-ethics-of-ai-gfeai-20260914-a5785294 | published | event-global-forum-on-the-ethics-of-ai-gfeai | Global Forum on the Ethics of AI (GFEAI) |
 | candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702 | published | event-music-festival-mdlbeast-soundstorm | Music Festival: MDLBEAST SoundStorm |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
@@ -115,12 +114,11 @@
 | candidate-ithra-events-tafasahu-make-room-20260711-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
 | candidate-ithra-events-ithra-childrens-festival-2026-20260711-d6d5cc99 | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
 | candidate-ithra-events-leap-then-look-20260711-99d88224 | linked-existing | event-leap-then-look | already linked to catalog event |
-| candidate-ithra-events-1-2-3-a-little-space-for-me-20260711-a3bc99ba | linked-existing | event-1-2-3-a-little-space-for-me | already linked to catalog event |
-| candidate-ithra-events-unbox-your-story-20260711-5085a6f0 | linked-existing | event-unbox-your-story | already linked to catalog event |
-| candidate-ithra-events-my-little-fort-20260711-09d01da3 | linked-existing | event-my-little-fort | already linked to catalog event |
 | candidate-ithra-events-beaded-plant-suncatcher-20260711-ebabc697 | linked-existing | event-beaded-plant-suncatcher | already linked to catalog event |
+| candidate-ithra-events-1-2-3-a-little-space-for-me-20260711-a3bc99ba | linked-existing | event-1-2-3-a-little-space-for-me | already linked to catalog event |
 | candidate-ithra-events-play-with-shadows-20260711-9984f169 | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
 | candidate-ithra-events-puppet-world-20260711-3b43fb64 | linked-existing | event-puppet-world | already linked to catalog event |
+| candidate-ithra-events-my-little-fort-20260711-09d01da3 | linked-existing | event-my-little-fort | already linked to catalog event |
 | candidate-ithra-events-1-2-3-lets-rhyme-20260711-4d37515a | linked-existing | event-1-2-3-lets-rhyme | already linked to catalog event |
 | candidate-ithra-events-a-home-i-imagine-20260711-7778a5c1 | linked-existing | event-a-home-i-imagine | already linked to catalog event |
 | candidate-ithra-events-ajeeb-in-wonder-house-20260711-caa7ff83 | linked-existing | event-ajeeb-in-wonder-house | already linked to catalog event |
@@ -218,6 +216,7 @@
 | candidate-ithra-events-a-house-reads-a-story-that-begins-with-the-family-20260724-65c22584 | linked-existing | event-a-house-reads-a-story-that-begins-with-the-family | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-the-comeback-20260725-4a38d19e | linked-existing | event-the-comeback | already linked to catalog event |
 | candidate-riyadh-city-events-summer-splash-running-event-20260725-0b63acb2 | linked-existing | event-summer-splash-running-event | already linked to catalog event |
+| candidate-ithra-events-unbox-your-story-20260725-5085a6f0 | linked-existing | event-unbox-your-story | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي-20260726-12263779 | linked-existing | event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي | already linked to catalog event |
 | candidate-umm-al-qura-events-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية-20260726-3aa6cb44 | linked-existing | event-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل-20260726-aa1669c2 | linked-existing | event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل | already linked to catalog event |
@@ -319,6 +318,7 @@
 | candidate-riyadh-city-events-saudi-industrial-series-20260908-5562eb43 | linked-existing | event-saudi-industrial-series | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-in-act-act-ix-20260911-4a38d19e | linked-existing | event-in-act-act-ix | already linked to catalog event |
 | candidate-riyadh-city-events-hotel-hospitality-expo-20260913-d9cf02f3 | linked-existing | event-hotel-hospitality-expo | already linked to catalog event |
+| candidate-riyadh-city-events-global-forum-on-the-ethics-of-ai-gfeai-20260914-a5785294 | linked-existing | event-global-forum-on-the-ethics-of-ai-gfeai | already linked to catalog event |
 | candidate-sdaia-calendar-events-global-forum-on-the-ethics-of-ai-20260914-350732da | linked-existing | event-global-forum-on-the-ethics-of-ai | already linked to catalog event |
 | candidate-riyadh-city-events-money20-20-middle-east-20260914-ae7e4b9d | linked-existing | event-money20-20-middle-east | already linked to catalog event |
 | candidate-scega-exhibitions-conferences-قمة-الرياض-العالمية-للتقنية-الحيوية-الطبية-2026-20260914-3539190e | linked-existing | event-riyadh-global-medical-biotechnology-summit | already linked to catalog event |

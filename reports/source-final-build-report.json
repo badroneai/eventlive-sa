@@ -1,0 +1,20 @@
+{
+  "schema": "eventlive.source-final-build.v1",
+  "generated_at": "2026-07-11T11:10:03.761Z",
+  "image_cache_report": "reports/event-image-cache-report.json",
+  "decision": "rebuilt",
+  "duration_ms": 196817,
+  "exit_code": 0,
+  "cache_totals": {
+    "targets": 500,
+    "cached_total": 593,
+    "fetched": 54,
+    "reused": 440,
+    "failed": 6,
+    "skipped_recent_failures": 6,
+    "remembered_failures": 9
+  },
+  "reasons": [
+    "fetched:54"
+  ]
+}

@@ -1,36 +1,48 @@
 {
-  "generated_at": "2026-07-11T09:35:26.833Z",
+  "generated_at": "2026-07-11T11:03:09.657Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 4,
-    "enriched": 0,
-    "failed": 4
+    "enriched": 4,
+    "failed": 0
   },
-  "enriched": [],
-  "failed": [
+  "enriched": [
     {
       "id": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي",
       "title": "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
       "group_id": "13037",
-      "reason": "fetch failed"
+      "goals": 1,
+      "features": 3,
+      "requirements": 4,
+      "metadata": 8
     },
     {
       "id": "event-دورة-comptia-a",
       "title": "دورة +CompTIA A",
       "group_id": "13039",
-      "reason": "fetch failed"
+      "goals": 5,
+      "features": 15,
+      "requirements": 5,
+      "metadata": 8
     },
     {
       "id": "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي",
       "title": "Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث",
       "group_id": "13040",
-      "reason": "fetch failed"
+      "goals": 1,
+      "features": 3,
+      "requirements": 4,
+      "metadata": 8
     },
     {
       "id": "event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials",
       "title": "أساسيات الحوسبة السحابية - Cloud Computing Essentials",
       "group_id": "13035",
-      "reason": "fetch failed"
+      "goals": 6,
+      "features": 13,
+      "requirements": 3,
+      "metadata": 8
     }
-  ]
+  ],
+  "failed": []
 }

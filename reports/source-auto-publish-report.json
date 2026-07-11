@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-07-11T09:35:19.611Z",
+  "published_at": "2026-07-11T11:03:03.206Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -7,8 +7,8 @@
   "candidates_seen": 452,
   "totals": {
     "candidates_seen": 452,
-    "published": 2,
-    "linked_existing": 430,
+    "published": 1,
+    "linked_existing": 431,
     "blocked": 20,
     "reconciled": 432
   },
@@ -23,11 +23,6 @@
   "canonical_event_ids_remapped": 0,
   "canonical_event_id_remaps": [],
   "published": [
-    {
-      "candidate_id": "candidate-riyadh-city-events-global-forum-on-the-ethics-of-ai-gfeai-20260914-a5785294",
-      "event_id": "event-global-forum-on-the-ethics-of-ai-gfeai",
-      "title": "Global Forum on the Ethics of AI (GFEAI)"
-    },
     {
       "candidate_id": "candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702",
       "event_id": "event-music-festival-mdlbeast-soundstorm",
@@ -612,27 +607,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20260711-a3bc99ba",
-      "event_id": "event-1-2-3-a-little-space-for-me",
-      "title": "1, 2, 3, A Little Space for Me",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-unbox-your-story-20260711-5085a6f0",
-      "event_id": "event-unbox-your-story",
-      "title": "Unbox Your Story",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-my-little-fort-20260711-09d01da3",
-      "event_id": "event-my-little-fort",
-      "title": "My Little Fort",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-beaded-plant-suncatcher-20260711-ebabc697",
       "event_id": "event-beaded-plant-suncatcher",
       "title": "Beaded plant Suncatcher",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20260711-a3bc99ba",
+      "event_id": "event-1-2-3-a-little-space-for-me",
+      "title": "1, 2, 3, A Little Space for Me",
       "reason": "already linked to catalog event"
     },
     {
@@ -645,6 +628,12 @@
       "candidate_id": "candidate-ithra-events-puppet-world-20260711-3b43fb64",
       "event_id": "event-puppet-world",
       "title": "Puppet World",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-my-little-fort-20260711-09d01da3",
+      "event_id": "event-my-little-fort",
+      "title": "My Little Fort",
       "reason": "already linked to catalog event"
     },
     {
@@ -1227,6 +1216,12 @@
       "candidate_id": "candidate-riyadh-city-events-summer-splash-running-event-20260725-0b63acb2",
       "event_id": "event-summer-splash-running-event",
       "title": "Summer Splash Running event",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-unbox-your-story-20260725-5085a6f0",
+      "event_id": "event-unbox-your-story",
+      "title": "Unbox Your Story",
       "reason": "already linked to catalog event"
     },
     {
@@ -1833,6 +1828,12 @@
       "candidate_id": "candidate-riyadh-city-events-hotel-hospitality-expo-20260913-d9cf02f3",
       "event_id": "event-hotel-hospitality-expo",
       "title": "Hotel & Hospitality Expo",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-riyadh-city-events-global-forum-on-the-ethics-of-ai-gfeai-20260914-a5785294",
+      "event_id": "event-global-forum-on-the-ethics-of-ai-gfeai",
+      "title": "Global Forum on the Ethics of AI (GFEAI)",
       "reason": "already linked to catalog event"
     },
     {

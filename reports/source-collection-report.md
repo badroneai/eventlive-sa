@@ -1,72 +1,71 @@
 # EventLive Source Collection Report
 
-- collected_at: 2026-07-11T09:22:14.505Z
+- collected_at: 2026-07-11T11:01:12.504Z
 - dry_run: false
 - time_scope: current-and-upcoming-only
 - ended_collection_enabled: false
 - sources_seen: 85
-- sources_attempted: 45
+- sources_runnable: 45
+- sources_due: 19
+- sources_attempted: 19
+- sources_deferred: 26
 - ended_min_year: 2022
-- candidates_discovered: 409
-- candidates_written: 455
+- candidates_discovered: 239
+- candidates_written: 452
 - ended_events_discovered: 0
 - ended_events_written: 0
 - ended_events_preserved: 762
-- past_rows_skipped: 392
+- past_rows_skipped: 188
 
-| Source | Status | Active | Ended | Past skipped | New | Refreshed | Missing latest | Snapshot | Note |
-|---|---|---:|---:|---:|---:|---:|---:|---|---|
-| visit-saudi-calendar | ok | 11 | 0 | 0 | 4 | 7 | 0 | data/raw/source-snapshots/visit-saudi-calendar-2026-07-11T09-22-14-505Z.json |  |
-| moc-cultural-calendar | error | 0 | 0 | 0 | 0 | 0 | 0 | - | fetch failed; fetch failed |
-| mos-events | error | 0 | 0 | 0 | 0 | 0 | 0 | - | fetch failed; page.goto: Timeout 60000ms exceeded.
-Call log:
-  - navigating to "https://www.mos.gov.sa/en/media/events", waiting until "domcontentloaded"
- |
-| experience-alula-events | ok | 9 | 0 | 2 | 0 | 9 | 0 | data/raw/source-snapshots/experience-alula-events-2026-07-11T09-22-14-505Z.html |  |
-| mdlbeast-events | ok | 3 | 0 | 38 | 0 | 3 | 0 | data/raw/source-snapshots/mdlbeast-events-2026-07-11T09-22-14-505Z.html |  |
-| monshaat-events | error | 0 | 0 | 0 | 0 | 0 | 0 | - | fetch failed; fetch failed |
-| invest-saudi-events | ok | 3 | 0 | 5 | 0 | 3 | 0 | data/raw/source-snapshots/invest-saudi-events-2026-07-11T09-22-14-505Z.html |  |
-| rfecc-whats-on | ok | 6 | 0 | 14 | 0 | 6 | 0 | data/raw/source-snapshots/rfecc-whats-on-2026-07-11T09-22-14-505Z.html |  |
-| eye-of-riyadh-events | skipped | 0 | 0 | 0 | 0 | 0 | 0 | - | Discovery-only source unavailable in this run: HTTP 403 |
-| eventbrite-saudi | ok | 17 | 0 | 0 | 6 | 11 | 2 | data/raw/source-snapshots/eventbrite-saudi-2026-07-11T09-22-14-505Z.html |  |
-| tuwaiq-academy-bootcamps | ok | 12 | 0 | 0 | 0 | 12 | 0 | data/raw/source-snapshots/tuwaiq-academy-bootcamps-2026-07-11T09-22-14-505Z.json |  |
-| future-skills-catalog | ok | 4 | 0 | 8 | 0 | 4 | 0 | data/raw/source-snapshots/future-skills-catalog-2026-07-11T09-22-14-505Z.html |  |
-| visit-saudi-seasons | ok | 4 | 0 | 0 | 0 | 4 | 0 | data/raw/source-snapshots/visit-saudi-seasons-2026-07-11T09-22-14-505Z.json |  |
-| code-mcit-programs | ok | 0 | 0 | 4 | 0 | 0 | 0 | data/raw/source-snapshots/code-mcit-programs-2026-07-11T09-22-14-505Z.html | Recovered via live-browser-recovery official evidence. Primary page failed: fetch failed. No future date-complete candidates found by the conservative extractor. |
-| misk-hub-programs | ok | 5 | 0 | 0 | 0 | 5 | 0 | data/raw/source-snapshots/misk-hub-programs-2026-07-11T09-22-14-505Z.html |  |
-| dhahran-expo-calendar | ok | 15 | 0 | 7 | 0 | 15 | 0 | data/raw/source-snapshots/dhahran-expo-calendar-2026-07-11T09-22-14-505Z.html |  |
-| ithra-events | ok | 129 | 0 | 96 | 1 | 128 | 0 | data/raw/source-snapshots/ithra-events-2026-07-11T09-22-14-505Z.json |  |
-| sdaia-academy-programs | error | 0 | 0 | 0 | 0 | 0 | 0 | - | fetch failed; page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx
-Call log:
-  - navigating to "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx", waiting until "domcontentloaded"
- |
-| misk-hub-events | ok | 0 | 0 | 5 | 0 | 0 | 0 | data/raw/source-snapshots/misk-hub-events-2026-07-11T09-22-14-505Z.html | No future date-complete candidates found by the conservative extractor. |
-| jcci-events-center | ok | 0 | 0 | 13 | 0 | 0 | 0 | data/raw/source-snapshots/jcci-events-center-2026-07-11T09-22-14-505Z.html | No future date-complete candidates found by the conservative extractor. |
-| saudi-pro-league-fixtures | ok | 0 | 0 | 100 | 0 | 0 | 0 | data/raw/source-snapshots/saudi-pro-league-fixtures-2026-07-11T09-22-14-505Z.json | No future date-complete candidates found by the conservative extractor. |
-| saudi-space-agency-events | ok | 0 | 0 | 14 | 0 | 0 | 0 | data/raw/source-snapshots/saudi-space-agency-events-2026-07-11T09-22-14-505Z.json | No future date-complete candidates found by the conservative extractor. |
-| visit-saudi-calendar-pdf | ok | 50 | 0 | 27 | 0 | 50 | 0 | data/raw/source-snapshots/visit-saudi-calendar-pdf-2026-07-11T09-22-14-505Z.xml | Recovered via direct-pdf official evidence. |
-| moc-cultural-subportals | error | 0 | 0 | 0 | 0 | 0 | 0 | - | fetch failed; fetch failed |
-| discover-aseer-events | ok | 1 | 0 | 0 | 0 | 1 | 0 | data/raw/source-snapshots/discover-aseer-events-2026-07-11T09-22-14-505Z.html |  |
-| saudi-water-authority-events | ok | 8 | 0 | 1 | 0 | 8 | 0 | data/raw/source-snapshots/saudi-water-authority-events-2026-07-11T09-22-14-505Z.html |  |
-| saudi-university-events | ok | 6 | 0 | 8 | 0 | 6 | 0 | data/raw/source-snapshots/saudi-university-events-2026-07-11T09-22-14-505Z.html |  |
-| sfda-events | ok | 7 | 0 | 2 | 0 | 7 | 0 | data/raw/source-snapshots/sfda-events-2026-07-11T09-22-14-505Z.html |  |
-| riyadh-city-events | ok | 94 | 0 | 0 | 1 | 93 | 0 | data/raw/source-snapshots/riyadh-city-events-2026-07-11T09-22-14-505Z.html |  |
-| sdaia-calendar-events | error | 0 | 0 | 0 | 0 | 0 | 0 | - | fetch failed; page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx
-Call log:
-  - navigating to "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx", waiting until "domcontentloaded"
- |
-| makkah-chamber-events | ok | 0 | 0 | 10 | 0 | 0 | 0 | data/raw/source-snapshots/makkah-chamber-events-2026-07-11T09-22-14-505Z.html | No future date-complete candidates found by the conservative extractor. |
-| scega-exhibitions-conferences | ok | 4 | 0 | 0 | 0 | 4 | 0 | data/raw/source-snapshots/scega-exhibitions-conferences-2026-07-11T09-22-14-505Z.json |  |
-| asharqia-chamber-events | ok | 2 | 0 | 13 | 0 | 2 | 0 | data/raw/source-snapshots/asharqia-chamber-events-2026-07-11T09-22-14-505Z.html |  |
-| qassim-chamber-events | error | 0 | 0 | 0 | 0 | 0 | 0 | - | HTTP 403; browser recovery encountered an access-protection page |
-| abha-chamber-events | ok | 0 | 0 | 5 | 0 | 0 | 0 | data/raw/source-snapshots/abha-chamber-events-2026-07-11T09-22-14-505Z.html | No future date-complete candidates found by the conservative extractor. |
-| northern-borders-chamber-events | ok | 0 | 0 | 4 | 0 | 0 | 0 | data/raw/source-snapshots/northern-borders-chamber-events-2026-07-11T09-22-14-505Z.json | No future date-complete candidates found by the conservative extractor. |
-| tabuk-chamber-events | ok | 0 | 0 | 2 | 0 | 0 | 0 | data/raw/source-snapshots/tabuk-chamber-events-2026-07-11T09-22-14-505Z.html | No future date-complete candidates found by the conservative extractor. |
-| jazan-chamber-events | ok | 0 | 0 | 0 | 0 | 0 | 0 | - | No future date-complete candidates found by the conservative extractor. |
-| najran-municipality-summer-events | ok | 1 | 0 | 0 | 0 | 1 | 0 | data/raw/source-snapshots/najran-municipality-summer-events-2026-07-11T09-22-14-505Z.html |  |
-| umm-al-qura-events | ok | 4 | 0 | 2 | 0 | 4 | 0 | data/raw/source-snapshots/umm-al-qura-events-2026-07-11T09-22-14-505Z.html |  |
-| qassim-university-events | ok | 1 | 0 | 0 | 0 | 1 | 0 | data/raw/source-snapshots/qassim-university-events-2026-07-11T09-22-14-505Z.html |  |
-| jouf-university-programs | ok | 1 | 0 | 0 | 0 | 1 | 0 | data/raw/source-snapshots/jouf-university-programs-2026-07-11T09-22-14-505Z.html |  |
-| madinah-chamber-events | ok | 0 | 0 | 12 | 0 | 0 | 0 | data/raw/source-snapshots/madinah-chamber-events-2026-07-11T09-22-14-505Z.json | No future date-complete candidates found by the conservative extractor. |
-| madinah-architecture-festival | ok | 1 | 0 | 0 | 0 | 1 | 0 | data/raw/source-snapshots/madinah-architecture-festival-2026-07-11T09-22-14-505Z.html |  |
-| hayy-jameel-events | ok | 11 | 0 | 0 | 0 | 11 | 0 | data/raw/source-snapshots/hayy-jameel-events-2026-07-11T09-22-14-505Z.html |  |
+| Source | Status | Duration | Active | Ended | Past skipped | New | Refreshed | Missing latest | Snapshot | Note |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---|---|
+| visit-saudi-calendar | ok | 0s | 11 | 0 | 0 | 4 | 7 | 0 | data/raw/source-snapshots/visit-saudi-calendar-2026-07-11T11-01-12-504Z.json |  |
+| experience-alula-events | ok | 3s | 9 | 0 | 2 | 0 | 9 | 0 | data/raw/source-snapshots/experience-alula-events-2026-07-11T11-01-12-504Z.html |  |
+| mdlbeast-events | ok | 0s | 3 | 0 | 38 | 0 | 3 | 0 | data/raw/source-snapshots/mdlbeast-events-2026-07-11T11-01-12-504Z.html |  |
+| invest-saudi-events | ok | 1s | 3 | 0 | 5 | 0 | 3 | 0 | data/raw/source-snapshots/invest-saudi-events-2026-07-11T11-01-12-504Z.html |  |
+| rfecc-whats-on | ok | 21s | 6 | 0 | 14 | 0 | 6 | 0 | data/raw/source-snapshots/rfecc-whats-on-2026-07-11T11-01-12-504Z.html |  |
+| tuwaiq-academy-bootcamps | ok | 1s | 12 | 0 | 0 | 0 | 12 | 0 | data/raw/source-snapshots/tuwaiq-academy-bootcamps-2026-07-11T11-01-12-504Z.json |  |
+| future-skills-catalog | ok | 23s | 4 | 0 | 8 | 0 | 4 | 0 | data/raw/source-snapshots/future-skills-catalog-2026-07-11T11-01-12-504Z.html |  |
+| visit-saudi-seasons | ok | 0s | 4 | 0 | 0 | 0 | 4 | 0 | data/raw/source-snapshots/visit-saudi-seasons-2026-07-11T11-01-12-504Z.json |  |
+| misk-hub-programs | ok | 3s | 5 | 0 | 0 | 0 | 5 | 0 | data/raw/source-snapshots/misk-hub-programs-2026-07-11T11-01-12-504Z.html |  |
+| dhahran-expo-calendar | ok | 1s | 15 | 0 | 7 | 0 | 15 | 0 | data/raw/source-snapshots/dhahran-expo-calendar-2026-07-11T11-01-12-504Z.html |  |
+| ithra-events | ok | 1s | 129 | 0 | 96 | 1 | 128 | 0 | data/raw/source-snapshots/ithra-events-2026-07-11T11-01-12-504Z.json |  |
+| discover-aseer-events | ok | 1s | 1 | 0 | 0 | 0 | 1 | 0 | data/raw/source-snapshots/discover-aseer-events-2026-07-11T11-01-12-504Z.html |  |
+| saudi-water-authority-events | ok | 1s | 8 | 0 | 1 | 0 | 8 | 0 | data/raw/source-snapshots/saudi-water-authority-events-2026-07-11T11-01-12-504Z.html |  |
+| sfda-events | ok | 5s | 7 | 0 | 2 | 0 | 7 | 0 | data/raw/source-snapshots/sfda-events-2026-07-11T11-01-12-504Z.html |  |
+| scega-exhibitions-conferences | ok | 2s | 4 | 0 | 0 | 0 | 4 | 0 | data/raw/source-snapshots/scega-exhibitions-conferences-2026-07-11T11-01-12-504Z.json |  |
+| asharqia-chamber-events | ok | 3s | 2 | 0 | 13 | 0 | 2 | 0 | data/raw/source-snapshots/asharqia-chamber-events-2026-07-11T11-01-12-504Z.html |  |
+| umm-al-qura-events | ok | 9s | 4 | 0 | 2 | 0 | 4 | 0 | data/raw/source-snapshots/umm-al-qura-events-2026-07-11T11-01-12-504Z.html |  |
+| madinah-architecture-festival | ok | 1s | 1 | 0 | 0 | 0 | 1 | 0 | data/raw/source-snapshots/madinah-architecture-festival-2026-07-11T11-01-12-504Z.html |  |
+| hayy-jameel-events | ok | 26s | 11 | 0 | 0 | 0 | 11 | 0 | data/raw/source-snapshots/hayy-jameel-events-2026-07-11T11-01-12-504Z.html |  |
+
+## Deferred By Adaptive Cadence
+
+| Source | Reason | Interval | Next due |
+|---|---|---:|---|
+| moc-cultural-calendar | error-cooldown | 24h | 2026-07-12T09:22:14.505Z |
+| mos-events | error-cooldown | 24h | 2026-07-12T09:22:14.505Z |
+| monshaat-events | error-cooldown | 24h | 2026-07-12T09:22:14.505Z |
+| eye-of-riyadh-events | discovery-daily | 24h | 2026-07-12T09:22:14.505Z |
+| eventbrite-saudi | discovery-daily | 24h | 2026-07-12T09:22:14.505Z |
+| code-mcit-programs | zero-yield-cooldown | 168h | 2026-07-18T09:22:14.505Z |
+| sdaia-academy-programs | error-cooldown | 24h | 2026-07-12T09:22:14.505Z |
+| misk-hub-events | zero-yield-cooldown | 168h | 2026-07-18T09:22:14.505Z |
+| jcci-events-center | zero-yield-cooldown | 168h | 2026-07-18T09:22:14.505Z |
+| saudi-pro-league-fixtures | zero-yield-cooldown | 168h | 2026-07-18T09:22:14.505Z |
+| saudi-space-agency-events | zero-yield-cooldown | 72h | 2026-07-14T09:22:14.505Z |
+| visit-saudi-calendar-pdf | declared-cadence | 168h | 2026-07-18T09:22:14.505Z |
+| moc-cultural-subportals | error-cooldown | 24h | 2026-07-12T09:22:14.505Z |
+| saudi-university-events | declared-cadence | 720h | 2026-08-10T09:22:14.505Z |
+| riyadh-city-events | error-cooldown | 6h | 2026-07-11T15:22:14.505Z |
+| sdaia-calendar-events | error-cooldown | 24h | 2026-07-12T09:22:14.505Z |
+| makkah-chamber-events | zero-yield-cooldown | 168h | 2026-07-18T09:22:14.505Z |
+| qassim-chamber-events | error-cooldown | 24h | 2026-07-12T09:22:14.505Z |
+| abha-chamber-events | zero-yield-cooldown | 168h | 2026-07-18T09:22:14.505Z |
+| northern-borders-chamber-events | zero-yield-cooldown | 72h | 2026-07-14T09:22:14.505Z |
+| tabuk-chamber-events | zero-yield-cooldown | 72h | 2026-07-14T09:22:14.505Z |
+| jazan-chamber-events | zero-yield-cooldown | 6h | 2026-07-11T15:22:14.505Z |
+| najran-municipality-summer-events | declared-cadence | 168h | 2026-07-18T09:22:14.505Z |
+| qassim-university-events | declared-cadence | 168h | 2026-07-18T09:22:14.505Z |
+| jouf-university-programs | declared-cadence | 168h | 2026-07-18T09:22:14.505Z |
+| madinah-chamber-events | zero-yield-cooldown | 72h | 2026-07-14T09:22:14.505Z |

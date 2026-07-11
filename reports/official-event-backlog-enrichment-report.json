@@ -1,23 +1,13 @@
 {
-  "generated_at": "2026-07-11T09:36:16.194Z",
+  "generated_at": "2026-07-11T11:04:00.536Z",
   "totals": {
-    "targets": 2,
-    "enriched": 2,
+    "targets": 1,
+    "enriched": 1,
     "fetched": 0,
-    "images": 2,
-    "fetch_failures": 2
+    "images": 1,
+    "fetch_failures": 1
   },
   "enriched": [
-    {
-      "id": "event-global-forum-on-the-ethics-of-ai-gfeai",
-      "title": "Global Forum on the Ethics of AI (GFEAI)",
-      "source_label": "Riyadh City Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/31186",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "fetch failed"
-    },
     {
       "id": "event-music-festival-mdlbeast-soundstorm",
       "title": "Music Festival: MDLBEAST SoundStorm",
@@ -30,12 +20,6 @@
     }
   ],
   "failed": [
-    {
-      "id": "event-global-forum-on-the-ethics-of-ai-gfeai",
-      "title": "Global Forum on the Ethics of AI (GFEAI)",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/31186",
-      "reason": "fetch failed"
-    },
     {
       "id": "event-music-festival-mdlbeast-soundstorm",
       "title": "Music Festival: MDLBEAST SoundStorm",
