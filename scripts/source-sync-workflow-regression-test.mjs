@@ -5,6 +5,8 @@ import path from 'node:path';
 const root = process.cwd();
 const workflowPath = path.join(root, '.github', 'workflows', 'source-sync.yml');
 const workflow = fs.readFileSync(workflowPath, 'utf8');
+const deployWorkflowPath = path.join(root, '.github', 'workflows', 'deploy.yml');
+const deployWorkflow = fs.readFileSync(deployWorkflowPath, 'utf8');
 
 function indexOfLine(pattern) {
   const index = workflow.split('\n').findIndex((line) => pattern.test(line));
@@ -23,6 +25,9 @@ assert.match(workflow, /EVENTLIVE_BROWSER_FAILURE_COOLDOWN_MS:\s*["']259200000["
 assert.match(workflow, /uses:\s*actions\/cache@v4/, 'scheduled sync must retain downloaded event images between runs');
 assert.match(workflow, /path:\s*dist\/assets\/event-images/, 'the workflow image cache must restore the public event-image directory');
 assert.match(workflow, /eventlive-event-images-\$\{\{ runner\.os \}\}/, 'the workflow image cache must use a stable EventLive key prefix');
+assert.match(deployWorkflow, /name:\s*Restore event image cache/, 'code deployments must restore source images before rebuilding the public site');
+assert.match(deployWorkflow, /path:\s*dist\/assets\/event-images/, 'code deployments must restore the public event-image directory');
+assert.match(deployWorkflow, /eventlive-event-images-\$\{\{ runner\.os \}\}/, 'source sync and code deployment must share the same image-cache prefix');
 assert.doesNotMatch(workflow, /EVENTLIVE_SOURCE_ENDED_MIN_YEAR:/, 'scheduled sync must not configure a historical-year collection window');
 assert.match(workflow, /EVENTLIVE_TRUSTED_SOURCE_LIMIT:\s*["']200["']/, 'trusted sources must not be constrained to the discovery-source cap');
 assert.doesNotMatch(workflow, /EVENTLIVE_TRUSTED_SOURCE_ENDED_LIMIT:/, 'scheduled sync must not reserve capacity for ended-event ingestion');
@@ -68,6 +73,8 @@ const liveOpsTestIndex = indexOfLine(/npm run test:live-operational-feeds/);
 const attendanceOfflineTestIndex = indexOfLine(/npm run test:attendance-mode-offline/);
 const persistIndex = indexOfLine(/Persist sync state back to the repository/);
 const deployIndex = indexOfLine(/Deploy to GitHub Pages/);
+const deployImageRestoreIndex = deployWorkflow.split('\n').findIndex((line) => /Restore event image cache/.test(line));
+const deployBuildIndex = deployWorkflow.split('\n').findIndex((line) => /Build EventLive public site/.test(line));
 
 assert.ok(preflightIndex < sourceSyncIndex, 'source-state preflight must run before the long collection step');
 assert.ok(imageRestoreIndex < sourceSyncIndex, 'event images must be restored before the source sync builds the public catalog');
@@ -100,5 +107,6 @@ assert.ok(attendanceOfflineTestIndex < persistIndex, 'attendance offline test mu
 assert.ok(imageCacheTestIndex < persistIndex, 'image cache test must pass before persisting synced state');
 assert.ok(publicAssetsTestIndex < persistIndex, 'public asset test must pass before persisting synced state');
 assert.ok(persistIndex < deployIndex, 'state persistence must happen before deployment');
+assert.ok(deployImageRestoreIndex >= 0 && deployImageRestoreIndex < deployBuildIndex, 'code deployment must restore source images before the public build');
 
 console.log('source-sync-workflow-regression-test: ok');
