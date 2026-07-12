@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-11T19:35:34.932Z
+- published_at: 2026-07-12T03:58:51.675Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 450
-- published_new: 3
-- linked_existing: 427
+- published_new: 1
+- linked_existing: 429
 - blocked_remaining: 20
 
 ## Blocked summary
@@ -17,8 +17,6 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-ithra-events-little-dot-20260712-6f97a4be | published | event-little-dot | Little Dot |
-| candidate-ithra-events-play-with-shadows-20260713-9984f169 | published | event-play-with-shadows | Play with Shadows |
 | candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702 | published | event-music-festival-mdlbeast-soundstorm | Music Festival: MDLBEAST SoundStorm |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
@@ -109,11 +107,6 @@
 | candidate-najran-municipality-summer-events-مهرجان-صيف-نجران-2026-صيفنا-هايل-20260707-a130a84c | linked-existing | event-مهرجان-صيف-نجران-2026-صيفنا-هايل | already linked to catalog event |
 | candidate-saudi-university-events-registration-now-open-for-children-at-the-childhood-studies-center-for-t-20260707-a2624927 | linked-existing | event-registration-now-open-for-children-at-the-childhood-studies-center-for-t | already linked to catalog event |
 | candidate-jouf-university-programs-البرنامج-الصيفي-بجامعة-الجوف-2026-20260708-fa67cacd | linked-existing | event-البرنامج-الصيفي-بجامعة-الجوف-2026 | already linked to catalog event |
-| candidate-ithra-events-echoes-of-the-familiar-20260711-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
-| candidate-ithra-events-ithra-childrens-festival-2026-20260711-d6d5cc99 | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
-| candidate-ithra-events-a-home-i-imagine-20260711-7778a5c1 | linked-existing | event-a-home-i-imagine | already linked to catalog event |
-| candidate-ithra-events-childrens-caf-20260711-f5069d9a | linked-existing | event-childrens-caf | already linked to catalog event |
-| candidate-ithra-events-my-family-bouquet-20260711-9570ab84 | linked-existing | event-my-family-bouquet | already linked to catalog event |
 | candidate-future-skills-catalog-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي-20260712-ed2ad6f2 | linked-existing | event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي | already linked to catalog event |
 | candidate-monshaat-events-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م-20260712-1d4a3074 | linked-existing | event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م | already linked to catalog event |
 | candidate-future-skills-catalog-دورة-comptia-a-20260712-dd4c25aa | linked-existing | event-دورة-comptia-a | already linked to catalog event |
@@ -127,6 +120,7 @@
 | candidate-saudi-university-events-join-us-at-kaust-health-for-respiratory-health-day-20260712-27bf6068 | linked-existing | event-join-us-at-kaust-health-for-respiratory-health-day | already linked to catalog event |
 | candidate-qassim-university-events-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم-20260712-dc748566 | linked-existing | event-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم | already linked to catalog event |
 | candidate-riyadh-city-events-saif-summer-program-20260712-c90d634d | linked-existing | event-saif-summer-program | already linked to catalog event |
+| candidate-ithra-events-little-dot-20260712-6f97a4be | linked-existing | event-little-dot | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الدرونز-التطبيقي-20260712-96b1c352 | linked-existing | event-معسكر-هندسة-الدرونز-التطبيقي | already linked to catalog event |
 | candidate-ithra-events-night-at-ithra-20260712-b0205ab5 | linked-existing | event-night-at-ithra | already linked to catalog event |
 | candidate-future-skills-catalog-أساسيات-الحوسبة-السحابية-cloud-computing-essentials-20260713-a4d60bbe | linked-existing | event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials | already linked to catalog event |
@@ -137,11 +131,14 @@
 | candidate-ithra-events-draw-your-story-20260713-6b28e480 | linked-existing | event-draw-your-story | already linked to catalog event |
 | candidate-ithra-events-lets-decorate-20260713-4cb342a7 | linked-existing | event-lets-decorate | already linked to catalog event |
 | candidate-ithra-events-tafasahu-make-room-20260713-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
+| candidate-ithra-events-echoes-of-the-familiar-20260713-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-ithra-events-summer-youth-program-20260713-a20f7a11 | linked-existing | event-ithra-summer-camp-2026-a-world-of-homes | already linked to catalog event |
 | candidate-ithra-events-1-2-3-a-little-space-for-me-20260713-a3bc99ba | linked-existing | event-1-2-3-a-little-space-for-me | already linked to catalog event |
+| candidate-ithra-events-ithra-childrens-festival-2026-20260713-d6d5cc99 | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
 | candidate-ithra-events-kindergarten-under-the-palm-tree-english-20260713-c72ee6a9 | linked-existing | event-kindergarten-under-the-palm-tree-english | already linked to catalog event |
 | candidate-ithra-events-sense-the-home-20260713-3a3ca5ae | linked-existing | event-sense-the-home | already linked to catalog event |
 | candidate-ithra-events-my-little-fort-20260713-09d01da3 | linked-existing | event-my-little-fort | already linked to catalog event |
+| candidate-ithra-events-play-with-shadows-20260713-9984f169 | linked-existing | event-play-with-shadows | already linked to catalog event |
 | candidate-ithra-events-natures-architects-20260713-9b0461b0 | linked-existing | event-natures-architects | already linked to catalog event |
 | candidate-ithra-events-nim-adventures-20260713-c504dfe0 | linked-existing | event-nim-adventures | already linked to catalog event |
 | candidate-ithra-events-virtual-to-reality-20260713-b8053f5f | linked-existing | event-virtual-to-reality | already linked to catalog event |
@@ -160,6 +157,9 @@
 | candidate-ithra-events-where-we-belong-20260713-44a2729b | linked-existing | event-where-we-belong | already linked to catalog event |
 | candidate-ithra-events-who-lived-here-20260713-11c491ce | linked-existing | event-who-lived-here | already linked to catalog event |
 | candidate-ithra-events-zoom-in-20260713-d8d7bd6d | linked-existing | event-zoom-in | already linked to catalog event |
+| candidate-ithra-events-a-home-i-imagine-20260713-7778a5c1 | linked-existing | event-a-home-i-imagine | already linked to catalog event |
+| candidate-ithra-events-childrens-caf-20260713-f5069d9a | linked-existing | event-childrens-caf | already linked to catalog event |
+| candidate-ithra-events-my-family-bouquet-20260713-9570ab84 | linked-existing | event-my-family-bouquet | already linked to catalog event |
 | candidate-ithra-events-in-the-home-of-20260713-0dcdc683 | linked-existing | event-in-the-home-of | already linked to catalog event |
 | candidate-ithra-events-finding-nemo-20260713-ee95c1c5 | linked-existing | event-finding-nemo | already linked to catalog event |
 | candidate-ithra-events-open-art-space-20260713-40aac166 | linked-existing | event-open-art-space | already linked to catalog event |

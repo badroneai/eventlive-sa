@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-07-11T19:41:49.346Z
+- generated_at: 2026-07-12T04:02:16.719Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -12,14 +12,14 @@
 
 - Sources in registry: 85
 - Runnable collector lanes: 45
-- Sources due now: 21
-- Sources attempted in latest collection: 21
-- Sources deferred by cadence: 24
+- Sources due now: 20
+- Sources attempted in latest collection: 20
+- Sources deferred by cadence: 25
 - Due-source coverage: 100%
 - Scheduled runnable coverage: 100%
-- Whole-registry attempted this run: 25%
-- Healthy sources: 20
-- Zero-yield sources: 1
+- Whole-registry attempted this run: 24%
+- Healthy sources: 19
+- Zero-yield sources: 0
 - High-priority unattempted sources: 3
 - Candidates: 450
 - Actionable candidates: 0
@@ -124,7 +124,10 @@
 | 56 | SCEGA ePortal Events | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |
 | 57 | Ministry of Commerce Upcoming Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 58 | Evento | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 59 | Asharqia Chamber Events | healthy | 2 | 2 | استمر بالمراجعة والتكرار قبل النشر. |
+| 59 | Asharqia Chamber Events | collection-error | 0 | 2 | fetch failed; page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentloaded"
+ |
 | 60 | Qassim Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-07-12T09:22:14.505Z وفق الجدولة التكيفية. |
 | 61 | Abha Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-07-18T09:22:14.505Z وفق الجدولة التكيفية. |
 | 62 | Baha Municipality Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
@@ -132,7 +135,7 @@
 | 64 | Jouf Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 65 | Northern Borders Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-07-14T09:22:14.505Z وفق الجدولة التكيفية. |
 | 66 | Tabuk Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-07-14T09:22:14.505Z وفق الجدولة التكيفية. |
-| 67 | Jazan Chamber Events | zero-yield | 0 | 1 | No future date-complete candidates found by the conservative extractor. |
+| 67 | Jazan Chamber Events | deferred | 0 | 1 | مؤجل حتى 2026-07-12T19:31:52.661Z وفق الجدولة التكيفية. |
 | 68 | Hail Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 69 | Najran Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 70 | Platinumlist Riyadh Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
