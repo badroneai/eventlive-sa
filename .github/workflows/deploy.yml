@@ -32,6 +32,14 @@ jobs:
       - name: Install deps
         run: npm ci || npm install
 
+      - name: Restore event image cache
+        uses: actions/cache@v4
+        with:
+          path: dist/assets/event-images
+          key: eventlive-event-images-${{ runner.os }}-${{ hashFiles('data/event_image_cache_manifest.json') }}
+          restore-keys: |
+            eventlive-event-images-${{ runner.os }}-
+
       - name: Install browser engines
         run: npx playwright install --with-deps chromium webkit
 
