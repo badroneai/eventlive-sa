@@ -13,7 +13,7 @@ import {
   eventPerformerJsonLd
 } from './event-structured-data-utils.mjs';
 import { isLikelyImageAssetUrl, isRejectedImageAssetUrl, isSourcePageLikeImageUrl } from './image-asset-utils.mjs';
-import { buildIndexNowDelta, reconcileSeoPageState } from './seo-discovery-utils.mjs';
+import { buildIndexNowDelta, mergeIndexNowBatchUrls, reconcileSeoPageState } from './seo-discovery-utils.mjs';
 import { coordinatesQuery, resolveVenueLocation } from './venue-location-utils.mjs';
 
 const root = process.cwd();
@@ -229,18 +229,29 @@ function prepareSeoDiscovery(events) {
   const reconciled = reconcileSeoPageState(events, previousState, buildAt);
   fs.writeFileSync(statePath, `${JSON.stringify(reconciled.state, null, 2)}\n`, 'utf8');
 
-  const urls = buildIndexNowDelta({
+  const currentUrls = buildIndexNowDelta({
     changedEvents: reconciled.changedEvents,
     removedSlugs: reconciled.removedSlugs,
     siteUrl
   });
   const cacheDir = path.join(root, '.eventlive-cache');
   fs.mkdirSync(cacheDir, { recursive: true });
-  fs.writeFileSync(path.join(cacheDir, 'indexnow-delta.json'), `${JSON.stringify({
+  const deltaPath = path.join(cacheDir, 'indexnow-delta.json');
+  const batchId = String(process.env.EVENTLIVE_INDEXNOW_BATCH_ID || process.env.GITHUB_RUN_ID || '').trim();
+  let previousDelta = {};
+  try {
+    if (fs.existsSync(deltaPath)) previousDelta = JSON.parse(fs.readFileSync(deltaPath, 'utf8'));
+  } catch {
+    previousDelta = {};
+  }
+  const urls = mergeIndexNowBatchUrls({ currentUrls, previousDelta, batchId });
+  fs.writeFileSync(deltaPath, `${JSON.stringify({
     generated_at: buildAt,
+    batch_id: batchId || null,
     changed_events: reconciled.changedEvents.length,
     unchanged_events: reconciled.unchangedEvents.length,
     removed_events: reconciled.removedSlugs.length,
+    current_urls: currentUrls.length,
     urls
   }, null, 2)}\n`, 'utf8');
 

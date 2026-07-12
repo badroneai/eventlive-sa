@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { buildIndexNowPayload } from './submit-indexnow.mjs';
-import { buildIndexNowDelta, sitemapUrls } from './seo-discovery-utils.mjs';
+import { buildIndexNowDelta, mergeIndexNowBatchUrls, sitemapUrls } from './seo-discovery-utils.mjs';
 
 const event = {
   file_slug: 'event-regression-example',
@@ -15,6 +15,27 @@ assert.ok(urls.includes('https://eventme.live/en/events/event-regression-example
 assert.ok(urls.includes('https://eventme.live/cities/riyadh.html'));
 assert.ok(urls.includes('https://eventme.live/en/categories/technology-training.html'));
 assert.equal(urls.length, new Set(urls).size, 'IndexNow delta URLs must be unique');
+
+const firstBuildUrl = 'https://eventme.live/events/event-first-build.html';
+const secondBuildUrl = 'https://eventme.live/events/event-second-build.html';
+assert.deepEqual(
+  mergeIndexNowBatchUrls({
+    currentUrls: [secondBuildUrl, secondBuildUrl],
+    previousDelta: { batch_id: 'run-1', urls: [firstBuildUrl] },
+    batchId: 'run-1'
+  }),
+  [firstBuildUrl, secondBuildUrl],
+  'multiple builds in one workflow run must preserve the complete notification batch'
+);
+assert.deepEqual(
+  mergeIndexNowBatchUrls({
+    currentUrls: [secondBuildUrl],
+    previousDelta: { batch_id: 'run-1', urls: [firstBuildUrl] },
+    batchId: 'run-2'
+  }),
+  [secondBuildUrl],
+  'a new workflow run must not resubmit the previous run batch'
+);
 
 const key = '71eb239829c202c38e7cadf9512c76bb';
 const payload = buildIndexNowPayload([...urls, 'https://example.com/not-owned'], key);

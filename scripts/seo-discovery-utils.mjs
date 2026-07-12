@@ -186,6 +186,14 @@ export function buildIndexNowDelta({ changedEvents = [], removedSlugs = [], site
   return [...urls].sort();
 }
 
+export function mergeIndexNowBatchUrls({ currentUrls = [], previousDelta = {}, batchId = '' } = {}) {
+  const normalizedBatchId = String(batchId || '').trim();
+  const previousUrls = normalizedBatchId && previousDelta?.batch_id === normalizedBatchId && Array.isArray(previousDelta.urls)
+    ? previousDelta.urls
+    : [];
+  return [...new Set([...previousUrls, ...currentUrls].filter(Boolean).map(String))].sort();
+}
+
 export function sitemapUrls(xml = '') {
   return [...String(xml).matchAll(/<loc>(https:\/\/eventme\.live\/[^<]*)<\/loc>/g)]
     .map((match) => match[1])
