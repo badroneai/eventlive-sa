@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T12:55:03.281Z",
+  "generated_at": "2026-07-12T13:57:56.849Z",
   "max_duration_hours": 8,
   "totals": {
     "activated": 15,
@@ -52,15 +52,6 @@
       "session_type": "official-community-session"
     },
     {
-      "id": "event-beast-house",
-      "title": "Beast House",
-      "source_label": "MDLBEAST Events",
-      "starts_at": "2026-07-17T21:00:00+03:00",
-      "ends_at": "2026-07-18T03:00:00+03:00",
-      "duration_hours": 6,
-      "session_type": "official-entertainment-session"
-    },
-    {
       "id": "event-join-us-at-kaust-health-for-respiratory-health-day",
       "title": "Join us at KAUST Health for Respiratory Health Day",
       "source_label": "Saudi Universities and Technical Colleges",
@@ -95,6 +86,15 @@
       "ends_at": "2026-07-15T11:00:00+03:00",
       "duration_hours": 1,
       "session_type": "official-online-workshop"
+    },
+    {
+      "id": "event-beast-house",
+      "title": "Beast House",
+      "source_label": "MDLBEAST Events",
+      "starts_at": "2026-07-17T21:00:00+03:00",
+      "ends_at": "2026-07-18T03:00:00+03:00",
+      "duration_hours": 6,
+      "session_type": "official-entertainment-session"
     },
     {
       "id": "event-fifa-world-cup-2026-final-celebrate-footballs-biggest-night-at-the-kaust",

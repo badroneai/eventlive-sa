@@ -1,16 +1,16 @@
 {
-  "published_at": "2026-07-12T12:54:00.645Z",
+  "published_at": "2026-07-12T13:56:58.412Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 465,
+  "candidates_seen": 466,
   "totals": {
-    "candidates_seen": 465,
-    "published": 12,
-    "linked_existing": 433,
+    "candidates_seen": 466,
+    "published": 2,
+    "linked_existing": 444,
     "blocked": 20,
-    "reconciled": 445
+    "reconciled": 446
   },
   "duplicate_catalog_rows_removed": 1,
   "duplicate_catalog_rows": [
@@ -24,64 +24,14 @@
   "canonical_event_id_remaps": [],
   "published": [
     {
-      "candidate_id": "candidate-visit-saudi-calendar-al-farabi-comeback-night-20260716-b9d95a79",
-      "event_id": "event-al-farabi-comeback-night",
-      "title": "Al-Farabi: Comeback Night"
-    },
-    {
-      "candidate_id": "candidate-future-skills-catalog-advanced-excel-for-data-analysis-دورة-اكسيل-لتحليل-البيانات-20260719-8e9da906",
-      "event_id": "event-advanced-excel-for-data-analysis-دورة-اكسيل-لتحليل-البيانات",
-      "title": "⁠Advanced Excel for Data Analysis - دورة اكسيل لتحليل البيانات"
-    },
-    {
-      "candidate_id": "candidate-future-skills-catalog-comptia-a-20260719-96cdffbe",
-      "event_id": "event-comptia-a",
-      "title": "CompTIA A+"
-    },
-    {
-      "candidate_id": "candidate-future-skills-catalog-cloud-computing-essentials-أساسيات-الحوسبة-السحابية-20260719-0bfdacf1",
-      "event_id": "event-cloud-computing-essentials-أساسيات-الحوسبة-السحابية",
-      "title": "Cloud Computing Essentials - أساسيات الحوسبة السحابية"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-games-hub-20260730-fb83124c",
-      "event_id": "event-games-hub",
-      "title": "Games Hub"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-story-land-20260801-bb5dc01b",
-      "event_id": "event-story-land",
-      "title": "Story Land"
-    },
-    {
-      "candidate_id": "candidate-informa-connect-saudi-events-saudi-event-show-20260909-9bbda4e2",
-      "event_id": "event-saudi-event-show",
-      "title": "Saudi Event Show"
-    },
-    {
-      "candidate_id": "candidate-informa-connect-saudi-events-saudi-ai-week-20261108-ddaedbfa",
-      "event_id": "event-saudi-ai-week",
-      "title": "Saudi AI Week"
-    },
-    {
-      "candidate_id": "candidate-informa-connect-saudi-events-saudi-intermobility-expo-20261130-00e0f2d5",
-      "event_id": "event-saudi-intermobility-expo",
-      "title": "Saudi Intermobility Expo"
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-أساسيات-هندسة-الميكاترونكس-20260816-54c2e27f",
+      "event_id": "event-معسكر-أساسيات-هندسة-الميكاترونكس",
+      "title": "معسكر أساسيات هندسة الميكاترونكس"
     },
     {
       "candidate_id": "candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702",
       "event_id": "event-music-festival-mdlbeast-soundstorm",
       "title": "Music Festival: MDLBEAST SoundStorm"
-    },
-    {
-      "candidate_id": "candidate-informa-connect-saudi-events-education-investment-saudi-20261208-b8fe90d9",
-      "event_id": "event-education-investment-saudi",
-      "title": "Education Investment Saudi"
-    },
-    {
-      "candidate_id": "candidate-informa-connect-saudi-events-superreturn-saudi-arabia-20270125-441e92f6",
-      "event_id": "event-superreturn-saudi-arabia",
-      "title": "SuperReturn Saudi Arabia"
     }
   ],
   "linked_existing": [
@@ -1052,16 +1002,22 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-al-farabi-comeback-night-20260716-b9d95a79",
+      "event_id": "event-al-farabi-comeback-night",
+      "title": "Al-Farabi: Comeback Night",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-mdlbeast-events-unstable-20260717-5647df2e",
       "event_id": "event-unstable",
       "title": "Unstable",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-mdlbeast-events-beast-house-20260717-83049a2a",
       "event_id": "event-beast-house",
       "title": "Beast House",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-tales-of-the-night-sky-english-20260718-eb5d626a",
@@ -1073,6 +1029,24 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-اليوم-العالمي-لآيس-كريم-بالتعاون-مع-كلمشي-20260719-4a38d19e",
       "event_id": "event-اليوم-العالمي-لآيس-كريم-بالتعاون-مع-كلمشي",
       "title": "اليوم العالمي لآيس كريم بالتعاون مع كلمشي",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-advanced-excel-for-data-analysis-دورة-اكسيل-لتحليل-البيانات-20260719-8e9da906",
+      "event_id": "event-advanced-excel-for-data-analysis-دورة-اكسيل-لتحليل-البيانات",
+      "title": "⁠Advanced Excel for Data Analysis - دورة اكسيل لتحليل البيانات",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-comptia-a-20260719-96cdffbe",
+      "event_id": "event-comptia-a",
+      "title": "CompTIA A+",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-cloud-computing-essentials-أساسيات-الحوسبة-السحابية-20260719-0bfdacf1",
+      "event_id": "event-cloud-computing-essentials-أساسيات-الحوسبة-السحابية",
+      "title": "Cloud Computing Essentials - أساسيات الحوسبة السحابية",
       "reason": "already linked to catalog event"
     },
     {
@@ -1271,7 +1245,7 @@
       "candidate_id": "candidate-visit-saudi-calendar-the-comeback-20260725-e518a4aa",
       "event_id": "event-the-comeback",
       "title": "The Comeback",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-unbox-your-story-20260725-5085a6f0",
@@ -1412,6 +1386,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-games-hub-20260730-fb83124c",
+      "event_id": "event-games-hub",
+      "title": "Games Hub",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-nu-power-20260730-653464ac",
       "event_id": "event-nu-power",
       "title": "Nu-Power",
@@ -1451,6 +1431,12 @@
       "candidate_id": "candidate-ithra-events-toddler-saturday-20260801-739e1f00",
       "event_id": "event-toddler-saturday",
       "title": "Toddler Saturday",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-story-land-20260801-bb5dc01b",
+      "event_id": "event-story-land",
+      "title": "Story Land",
       "reason": "already linked to catalog event"
     },
     {
@@ -1661,7 +1647,7 @@
       "candidate_id": "candidate-informa-connect-saudi-events-hrse-ksa-hr-summit-expo-20260830-b925c298",
       "event_id": "event-hrse-ksa",
       "title": "HRSE KSA (HR Summit & Expo)",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-rfecc-whats-on-saudi-logistic-warehousing-expo-20260830-ff3565ba",
@@ -1877,6 +1863,12 @@
       "candidate_id": "candidate-riyadh-city-events-saudi-industrial-series-20260908-5562eb43",
       "event_id": "event-saudi-industrial-series",
       "title": "Saudi Industrial Series",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-informa-connect-saudi-events-saudi-event-show-20260909-9bbda4e2",
+      "event_id": "event-saudi-event-show",
+      "title": "Saudi Event Show",
       "reason": "already linked to catalog event"
     },
     {
@@ -2306,6 +2298,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-informa-connect-saudi-events-saudi-ai-week-20261108-ddaedbfa",
+      "event_id": "event-saudi-ai-week",
+      "title": "Saudi AI Week",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-invest-saudi-events-web-summit-lisbon-2026-20261109-f87ccdc1",
       "event_id": "event-web-summit-lisbon-2026",
       "title": "Web Summit Lisbon 2026",
@@ -2438,6 +2436,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-informa-connect-saudi-events-saudi-intermobility-expo-20261130-00e0f2d5",
+      "event_id": "event-saudi-intermobility-expo",
+      "title": "Saudi Intermobility Expo",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-industrial-transformation-saudi-arabia-20261130-12e8d203",
       "event_id": "event-industrial-transformation-saudi-arabia",
       "title": "Industrial Transformation Saudi Arabia",
@@ -2513,6 +2517,12 @@
       "candidate_id": "candidate-riyadh-city-events-future-projects-forum-20261207-2d7c668a",
       "event_id": "event-future-projects-forum",
       "title": "Future Projects Forum",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-informa-connect-saudi-events-education-investment-saudi-20261208-b8fe90d9",
+      "event_id": "event-education-investment-saudi",
+      "title": "Education Investment Saudi",
       "reason": "already linked to catalog event"
     },
     {
@@ -2627,6 +2637,12 @@
       "candidate_id": "candidate-experience-alula-events-alula-trail-race-20270122-acfe31aa",
       "event_id": "event-alula-trail-race",
       "title": "AlUla Trail Race",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-informa-connect-saudi-events-superreturn-saudi-arabia-20270125-441e92f6",
+      "event_id": "event-superreturn-saudi-arabia",
+      "title": "SuperReturn Saudi Arabia",
       "reason": "already linked to catalog event"
     },
     {

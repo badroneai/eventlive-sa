@@ -1,33 +1,13 @@
 {
-  "generated_at": "2026-07-12T12:55:02.398Z",
+  "generated_at": "2026-07-12T13:57:55.481Z",
   "totals": {
-    "targets": 8,
-    "enriched": 8,
-    "fetched": 7,
-    "images": 8,
+    "targets": 1,
+    "enriched": 1,
+    "fetched": 0,
+    "images": 1,
     "fetch_failures": 1
   },
   "enriched": [
-    {
-      "id": "event-education-investment-saudi",
-      "title": "Education Investment Saudi",
-      "source_label": "Informa Connect Saudi Event Portfolio",
-      "source_method": "official-page-meta",
-      "source_url": "https://informaconnect.com/education-investment-saudi.com/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-games-hub",
-      "title": "Games Hub",
-      "source_label": "Ithra Events",
-      "source_method": "official-public-algolia-index",
-      "source_url": "https://www.ithra.com/en/programme/2026/childrens-museum/games-hub",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
     {
       "id": "event-music-festival-mdlbeast-soundstorm",
       "title": "Music Festival: MDLBEAST SoundStorm",
@@ -37,56 +17,6 @@
       "fetched": false,
       "image": true,
       "fetch_reason": "fetch failed"
-    },
-    {
-      "id": "event-saudi-ai-week",
-      "title": "Saudi AI Week",
-      "source_label": "Informa Connect Saudi Event Portfolio",
-      "source_method": "official-page-meta",
-      "source_url": "https://informaconnect.com/saudi-ai-week/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-saudi-event-show",
-      "title": "Saudi Event Show",
-      "source_label": "Informa Connect Saudi Event Portfolio",
-      "source_method": "official-page-meta",
-      "source_url": "https://informaconnect.com/saudi-event-show/ar/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-saudi-intermobility-expo",
-      "title": "Saudi Intermobility Expo",
-      "source_label": "Informa Connect Saudi Event Portfolio",
-      "source_method": "official-page-meta",
-      "source_url": "https://informaconnect.com/saudi-intermobility-expo/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-story-land",
-      "title": "Story Land",
-      "source_label": "Ithra Events",
-      "source_method": "official-public-algolia-index",
-      "source_url": "https://www.ithra.com/en/programme/2026/childrens-museum/story-land",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-superreturn-saudi-arabia",
-      "title": "SuperReturn Saudi Arabia",
-      "source_label": "Informa Connect Saudi Event Portfolio",
-      "source_method": "official-page-meta",
-      "source_url": "https://informaconnect.com/superreturn-saudi-arabia/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
     }
   ],
   "failed": [

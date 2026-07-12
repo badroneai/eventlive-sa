@@ -1,59 +1,23 @@
 {
-  "generated_at": "2026-07-12T12:57:37.763Z",
+  "generated_at": "2026-07-12T14:01:34.864Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 603,
-    "fetched": 7,
-    "reused": 487,
+    "cached_total": 604,
+    "fetched": 1,
+    "reused": 493,
     "failed": 6,
     "skipped_recent_failures": 6,
     "remembered_failures": 9
   },
   "fetched": [
     {
-      "source_url": "https://knect365.imgix.net/uploads/Untitled-design-4959cea6f020e6408be9b845f8ce4d74.png?auto=format&fit=max&h=80",
-      "file": "dist/assets/event-images/saudi-ai-week-27be567f24.avif",
-      "bytes": 9126,
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/1tllcxdg.n5m.jpg",
+      "file": "dist/assets/event-images/معسكر-أساسيات-هندسة-الميكاترونكس-83d2c7f296.jpg",
+      "bytes": 142680,
       "events": 1
-    },
-    {
-      "source_url": "https://knect365.imgix.net/uploads/Saudi-InterMobility-Expo-2022-cover-image-4249d0e8028198933d409e9dcb7a8730.png?auto=format&fit=max&w=400",
-      "file": "dist/assets/event-images/saudi-intermobility-expo-d481132133.avif",
-      "bytes": 14116,
-      "events": 1
-    },
-    {
-      "source_url": "https://knect365.imgix.net/uploads/DSC0127-1-optimized-5000-f982280defab14d48ce018d28d6bd871.jpg?auto=format&fit=max&w=400",
-      "file": "dist/assets/event-images/education-investment-saudi-d75b7a2a22.avif",
-      "bytes": 23755,
-      "events": 1
-    },
-    {
-      "source_url": "https://knect365.imgix.net/uploads/SR-Saudi-Arabia-RGB-4x-b3c05bfab2453079f2080e291e4b8c56.png?auto=format&fit=max&w=1920",
-      "file": "dist/assets/event-images/superreturn-saudi-arabia-e4f1efd160.avif",
-      "bytes": 32021,
-      "events": 1
-    },
-    {
-      "source_url": "https://knect365.imgix.net/uploads/Untitled-design-compressed-548d8a4f04384e96c1739ac20319e973.jpg?auto=format&fit=max&w=400",
-      "file": "dist/assets/event-images/saudi-event-show-c493de28d2.avif",
-      "bytes": 23524,
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/al-farab-comeback-night?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/al-farabi-comeback-night-3de4e741f2.webp",
-      "bytes": 45326,
-      "events": 1
-    },
-    {
-      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/media-icons/generic/no-thumbnail.png?itok=rGJOKohj",
-      "file": "dist/assets/event-images/introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي-3f19de15ba.png",
-      "bytes": 6064,
-      "events": 5
     }
   ],
   "reused": [
@@ -483,6 +447,11 @@
       "events": 1
     },
     {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/media-icons/generic/no-thumbnail.png?itok=rGJOKohj",
+      "file": "dist/assets/event-images/introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي-3f19de15ba.png",
+      "events": 5
+    },
+    {
       "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-07/7.jpg?itok=HnrYjVdd",
       "file": "dist/assets/event-images/دورة-comptia-a-2358801bb0.jpg",
       "events": 2
@@ -610,6 +579,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/HMtcsYHWcAAgwSv.jpeg?itok=HTQn5DOt",
       "file": "dist/assets/event-images/wrth-summer-art-craft-program-313d642987.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/al-farab-comeback-night?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/al-farabi-comeback-night-3de4e741f2.webp",
       "events": 1
     },
     {
@@ -1078,6 +1052,11 @@
       "events": 1
     },
     {
+      "source_url": "https://knect365.imgix.net/uploads/Untitled-design-compressed-548d8a4f04384e96c1739ac20319e973.jpg?auto=format&fit=max&w=400",
+      "file": "dist/assets/event-images/saudi-event-show-c493de28d2.avif",
+      "events": 1
+    },
+    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/uxkkl54r.3ng.webp",
       "file": "dist/assets/event-images/معسكر-طويق-السيبراني-00da1b33f9.webp",
       "events": 1
@@ -1353,6 +1332,11 @@
       "events": 1
     },
     {
+      "source_url": "https://knect365.imgix.net/uploads/Untitled-design-4959cea6f020e6408be9b845f8ce4d74.png?auto=format&fit=max&h=80",
+      "file": "dist/assets/event-images/saudi-ai-week-27be567f24.avif",
+      "events": 1
+    },
+    {
       "source_url": "https://investsaudi.sa//Hero/Hero.webp",
       "file": "dist/assets/event-images/web-summit-lisbon-2026-b9e840051d.webp",
       "events": 1
@@ -1453,6 +1437,11 @@
       "events": 1
     },
     {
+      "source_url": "https://knect365.imgix.net/uploads/Saudi-InterMobility-Expo-2022-cover-image-4249d0e8028198933d409e9dcb7a8730.png?auto=format&fit=max&w=400",
+      "file": "dist/assets/event-images/saudi-intermobility-expo-d481132133.avif",
+      "events": 1
+    },
+    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/1500x500%20-%202026-01-26T070800.449.jpeg?itok=VxeoJYHQ",
       "file": "dist/assets/event-images/industrial-transformation-saudi-arabia-1146140554.jpg",
       "events": 1
@@ -1490,6 +1479,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/1%201%20FwuJnp_WYAAJgoc.jpeg?itok=9bnAcKRu",
       "file": "dist/assets/event-images/future-projects-forum-4006859c28.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://knect365.imgix.net/uploads/DSC0127-1-optimized-5000-f982280defab14d48ce018d28d6bd871.jpg?auto=format&fit=max&w=400",
+      "file": "dist/assets/event-images/education-investment-saudi-d75b7a2a22.avif",
       "events": 1
     },
     {
@@ -1560,6 +1554,11 @@
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/dsc3483t-dekstop-hero-2880x1620?wid=1600&hei=900&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/alula-trail-race-d7eef6fe8b.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://knect365.imgix.net/uploads/SR-Saudi-Arabia-RGB-4x-b3c05bfab2453079f2080e291e4b8c56.png?auto=format&fit=max&w=1920",
+      "file": "dist/assets/event-images/superreturn-saudi-arabia-e4f1efd160.avif",
       "events": 1
     },
     {
@@ -2486,11 +2485,6 @@
       "source_url": "https://abhacci.org.sa/Files/Images/news226m.jpg",
       "file": "dist/assets/event-images/الدورة-التدريبية-الجماهيرية-انطلاقة-العظماء-66b508b881.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://services.mi.org.sa/upload/events/main/638825346799178604.png",
-      "file": "dist/assets/event-images/مؤتمر-ومعرض-الحج-459ef746f1.png",
-      "events": 1
     }
   ],
   "rejected_removed": [],
@@ -2596,6 +2590,6 @@
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:7"
+    "fetched:1"
   ]
 }
