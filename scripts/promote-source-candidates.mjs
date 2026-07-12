@@ -60,6 +60,10 @@ function richFieldsFromCandidate(candidate = {}) {
     'image_source_url',
     'registration_url',
     'ticket_url',
+    'organizer_url',
+    'registration_status',
+    'ticket_status',
+    'offer_valid_from',
     'attendance_mode',
     'price_label',
     'language',
@@ -70,6 +74,7 @@ function richFieldsFromCandidate(candidate = {}) {
     if (candidate[key] !== undefined && candidate[key] !== null && candidate[key] !== '') fields[key] = candidate[key];
   });
   if (Array.isArray(candidate.highlights) && candidate.highlights.length) fields.highlights = candidate.highlights.slice(0, 8);
+  if (Array.isArray(candidate.performers) && candidate.performers.length) fields.performers = candidate.performers.slice(0, 20);
   return fields;
 }
 

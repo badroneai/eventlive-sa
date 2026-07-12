@@ -131,6 +131,7 @@ const eventSamples = events
   .slice(0, 12);
 
 assert.ok(eventSamples.length >= 8, 'SEO event detail sample must include enough sourced events');
+let organizerUrlCoverage = 0;
 
 for (const event of eventSamples) {
   const htmlFile = `events/${event.file_slug}.html`;
@@ -162,6 +163,7 @@ for (const event of eventSamples) {
     assert.ok(eventJsonLd.location.address?.addressLocality, `${htmlFile} physical location must expose addressLocality`);
   }
   assert.ok(eventJsonLd?.organizer?.name, `${htmlFile} Event JSON-LD must include organizer name`);
+  if (eventJsonLd?.organizer?.url) organizerUrlCoverage += 1;
   assert.ok(String(eventJsonLd?.keywords || '').length > 20, `${htmlFile} Event JSON-LD must include useful keywords`);
   assert.ok(Array.isArray(eventJsonLd?.audience) && eventJsonLd.audience.length > 0, `${htmlFile} Event JSON-LD must include audience`);
   assert.ok(Array.isArray(eventJsonLd?.sameAs) && eventJsonLd.sameAs.length > 0, `${htmlFile} Event JSON-LD must include source sameAs links`);
@@ -181,6 +183,27 @@ for (const event of eventSamples) {
   assert.ok(Array.isArray(json.sessions), `${jsonFile} must expose sessions array`);
   assert.ok(Array.isArray(json.keywords) && json.keywords.length >= 4, `${jsonFile} must expose useful keywords`);
   assert.ok(json.source_url || json.evidence_url, `${jsonFile} must preserve source evidence`);
+}
+
+assert.ok(
+  organizerUrlCoverage >= Math.ceil(eventSamples.length * 0.75),
+  `official organizer URL coverage must reach at least 75% of the sourced sample (got ${organizerUrlCoverage}/${eventSamples.length})`
+);
+
+const eventsWithSpeakers = events
+  .filter((event) => (event.sessions || []).some((session) => session.speaker && !session.inferred))
+  .slice(0, 10);
+for (const event of eventsWithSpeakers) {
+  const html = fs.readFileSync(path.join(distDir, 'events', `${event.file_slug}.html`), 'utf8');
+  const eventJsonLd = extractJsonLd(html).find((entry) => typeOf(entry) === 'Event');
+  assert.ok(eventJsonLd?.performer, `${event.file_slug} must expose evidence-backed performers from official speakers`);
+}
+
+const visitSaudiEvent = events.find((event) => /visit saudi/i.test(event.source_label || '') && event.organizer === 'Saudi Tourism Authority');
+if (visitSaudiEvent) {
+  const html = fs.readFileSync(path.join(distDir, 'events', `${visitSaudiEvent.file_slug}.html`), 'utf8');
+  const eventJsonLd = extractJsonLd(html).find((entry) => typeOf(entry) === 'Event');
+  assert.match(eventJsonLd?.organizer?.url || '', /^https:\/\/(?:www\.)?visitsaudi\.com\//, 'Visit Saudi organizer must not be replaced by a lower-priority contextual source');
 }
 
 const unknownAvailabilityOffers = events

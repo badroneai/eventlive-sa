@@ -6,6 +6,22 @@
   - Validate a program document.
 - `generate-site.mjs`
   - Build the client-facing static page.
+- `run-smart-build.mjs` (`npm run build`)
+  - Selects a verified incremental build when the prior output, template
+    fingerprint, SEO state, Arabic event pages, and English event pages all
+    match. It verifies the finished sitemap/output contract and retries once as
+    a full build if incremental generation fails.
+  - A safety full build is forced at least every 24 hours. Set
+    `EVENTLIVE_FULL_BUILD_INTERVAL_HOURS` to change that interval, or run
+    `npm run build:full` for an immediate complete rebuild.
+  - Writes `reports/incremental-build-report.{json,md}` for CI evidence and the
+    GitHub Actions run summary.
+- `incremental-build-utils.mjs`
+  - Shared build-state fingerprints and the full-versus-incremental decision
+    contract.
+- `incremental-build-regression-test.mjs` (`npm run test:incremental-build`)
+  - Protects cold-cache, stale-state, template-change, incomplete-cache,
+    scheduled-full-build, and valid incremental-build decisions.
 - `normalize-program.mjs`
   - Convert intake CSV into `data/intake/current-program.json`.
 - `preview-program.mjs`

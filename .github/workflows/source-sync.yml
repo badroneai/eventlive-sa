@@ -57,6 +57,22 @@ jobs:
           restore-keys: |
             eventlive-event-images-${{ runner.os }}-
 
+      - name: Restore incremental site cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            dist/events
+            dist/en
+            dist/cities
+            dist/categories
+            dist/for
+            dist/feeds
+            dist/assets/event-covers
+            dist/.eventlive-build-state.json
+          key: eventlive-static-site-${{ runner.os }}-${{ github.sha }}
+          restore-keys: |
+            eventlive-static-site-${{ runner.os }}-
+
       - name: Install Playwright browser
         run: npx playwright install chromium
 
@@ -70,6 +86,7 @@ jobs:
           npm run test:source-future-only
           npm run test:source-cadence
           npm run test:source-sync-workflow
+          npm run test:incremental-build
 
       - name: Collect trusted sources and publish catalog
         run: npm run sources:sync
@@ -91,7 +108,9 @@ jobs:
           npm run test:source-future-only
           npm run test:source-cadence
           npm run test:source-selection-contract
+          npm run test:incremental-build
           npm run test:scega-events-extractor
+          npm run test:informa-saudi-portfolio
           npm run test:scega-canonical-alias
           npm run test:poster-ocr
           npm run test:regional-chamber-extractors
@@ -178,6 +197,8 @@ jobs:
             reports/mygov-*.json
             reports/platinumlist-*.md
             reports/platinumlist-*.json
+            reports/incremental-build-report.md
+            reports/incremental-build-report.json
             data/raw/mygov-wayback-radar/**
             data/raw/platinumlist-platform-radar/**
             data/raw/platinumlist-detail-radar/**
@@ -214,3 +235,7 @@ jobs:
           echo "- Source ops: reports/source-ops-report.md" >> "$GITHUB_STEP_SUMMARY"
           echo "- Source growth: reports/source-growth-report.md" >> "$GITHUB_STEP_SUMMARY"
           echo "- Deployment: ${{ steps.deployment.outputs.page_url }}" >> "$GITHUB_STEP_SUMMARY"
+          if [ -f reports/incremental-build-report.md ]; then
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            cat reports/incremental-build-report.md >> "$GITHUB_STEP_SUMMARY"
+          fi

@@ -476,6 +476,10 @@ function richFieldsFromCandidate(candidate = {}) {
     'image_source_url',
     'registration_url',
     'ticket_url',
+    'organizer_url',
+    'registration_status',
+    'ticket_status',
+    'offer_valid_from',
     'maps_url',
     'attendance_mode',
     'price_label',
@@ -491,6 +495,7 @@ function richFieldsFromCandidate(candidate = {}) {
     if (candidate[key] !== undefined && candidate[key] !== null && candidate[key] !== '') fields[key] = candidate[key];
   });
   if (Array.isArray(candidate.highlights) && candidate.highlights.length) fields.highlights = candidate.highlights.slice(0, 8);
+  if (Array.isArray(candidate.performers) && candidate.performers.length) fields.performers = candidate.performers.slice(0, 20);
   return fields;
 }
 
@@ -508,11 +513,14 @@ function mergeMissingCandidateEnrichment(existing = {}, candidate = {}) {
     existing.image_alt = richFields.image_alt || existing.image_alt || candidate.title;
     existing.image_source_url = richFields.image_source_url || existing.image_source_url || candidate.source_url || '';
   }
-  for (const field of ['registration_url', 'ticket_url', 'maps_url', 'attendance_mode', 'price_label', 'language', 'rich_summary', 'registration_deadline', 'parking_info', 'accessibility_info', 'age_policy', 'duration_label']) {
+  for (const field of ['registration_url', 'ticket_url', 'organizer_url', 'registration_status', 'ticket_status', 'offer_valid_from', 'maps_url', 'attendance_mode', 'price_label', 'language', 'rich_summary', 'registration_deadline', 'parking_info', 'accessibility_info', 'age_policy', 'duration_label']) {
     if (!existing[field] && richFields[field]) existing[field] = richFields[field];
   }
   if ((!Array.isArray(existing.highlights) || !existing.highlights.length) && richFields.highlights) {
     existing.highlights = richFields.highlights;
+  }
+  if ((!Array.isArray(existing.performers) || !existing.performers.length) && richFields.performers) {
+    existing.performers = richFields.performers;
   }
   existing.richness_score = Math.max(Number(existing.richness_score || 0), Number(richFields.richness_score || 0));
   const candidateSessions = Array.isArray(candidate.sessions) ? candidate.sessions : [];

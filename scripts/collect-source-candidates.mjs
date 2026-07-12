@@ -7,6 +7,7 @@ import { classifyAudiences } from './audience-utils.mjs';
 import { extractEmbeddedJsonObjects, walkEmbeddedObjects } from './embedded-json-utils.mjs';
 import { parseFlexibleDateRange } from './date-parse-utils.mjs';
 import { normalizeSaudiCity as normalizeCanonicalSaudiCity } from './city-utils.mjs';
+import { eventEvidenceFromJsonLd } from './event-structured-data-utils.mjs';
 import { ocrRemotePoster } from './poster-ocr-utils.mjs';
 import { ensureDir, exists, readJson, rel, root, writeJson } from './program-lifecycle-utils.mjs';
 import { selectSourcesByCadence } from './source-cadence-utils.mjs';
@@ -222,7 +223,8 @@ const sourceExtractors = {
   'tabuk-chamber-events': extractTabukChamberEvents,
   'scega-exhibitions-conferences': extractScegaEvents,
   'najran-municipality-summer-events': extractNajranMunicipalityEvents,
-  'riyadh-city-events': extractRiyadhCityEvents
+  'riyadh-city-events': extractRiyadhCityEvents,
+  'informa-connect-saudi-events': extractInformaSaudiPortfolio
 };
 
 const sourceApiFallbackExtractors = new Map([
@@ -557,6 +559,17 @@ function detailEnrichmentFromHtml(html = '', url = '', fallbackTitle = '') {
   const text = stripTags(html).slice(0, 5000);
   const imageUrl = firstUsefulImageFromHtml(html, url);
   const registrationUrl = registrationUrlFromHtml(html, url);
+  let structuredEvidence = {};
+  for (const payload of extractEmbeddedJsonObjects(html)) {
+    walkEmbeddedObjects(payload, (entry) => {
+      if (structuredEvidence.__found) return;
+      const types = Array.isArray(entry?.['@type']) ? entry['@type'] : [entry?.['@type']];
+      if (!types.includes('Event')) return;
+      structuredEvidence = { ...eventEvidenceFromJsonLd(entry), __found: true };
+    });
+    if (structuredEvidence.__found) break;
+  }
+  delete structuredEvidence.__found;
   return {
     ...(imageUrl ? {
       image_url: imageUrl,
@@ -564,6 +577,7 @@ function detailEnrichmentFromHtml(html = '', url = '', fallbackTitle = '') {
       image_source_url: url
     } : {}),
     ...(description ? { rich_summary: stripTags(description).slice(0, 700) } : {}),
+    ...structuredEvidence,
     ...(registrationUrl ? { registration_url: registrationUrl } : {}),
     ...(attendanceModeFromText(text) ? { attendance_mode: attendanceModeFromText(text) } : {}),
     ...(priceLabelFromText(text) ? { price_label: priceLabelFromText(text) } : {}),
@@ -579,6 +593,10 @@ function richFieldsFromItem(item = {}) {
     'image_source_url',
     'registration_url',
     'ticket_url',
+    'organizer_url',
+    'registration_status',
+    'ticket_status',
+    'offer_valid_from',
     'maps_url',
     'attendance_mode',
     'price_label',
@@ -594,6 +612,7 @@ function richFieldsFromItem(item = {}) {
     if (item[key] !== undefined && item[key] !== null && item[key] !== '') fields[key] = item[key];
   });
   if (Array.isArray(item.highlights) && item.highlights.length) fields.highlights = item.highlights.slice(0, 8);
+  if (Array.isArray(item.performers) && item.performers.length) fields.performers = item.performers.slice(0, 20);
   return fields;
 }
 
@@ -1638,10 +1657,215 @@ function structuredEventFromHtml(html) {
   });
 }
 
+function schemaText(value = '') {
+  if (typeof value === 'string' || typeof value === 'number') return stripTags(value);
+  if (!value || typeof value !== 'object') return '';
+  return stripTags(value.name || value.value || value.url || '');
+}
+
+function informaSaudiSitemapUrls(xml = '') {
+  return [...new Set([...String(xml).matchAll(/<loc>([^<]+)<\/loc>/gi)]
+    .map((match) => decodeHtml(match[1]).trim())
+    .filter(Boolean)
+    .filter((value) => {
+      try {
+        const url = new URL(value);
+        return /(^|\.)informaconnect\.com$/i.test(url.hostname)
+          && /\/sitemap\.xml$/i.test(url.pathname)
+          && /(?:saudi|riyadh|jeddah)/i.test(url.pathname)
+          && !/(?:visa|invitation|form)/i.test(url.pathname);
+      } catch {
+        return false;
+      }
+    }))].slice(0, 40);
+}
+
+function informaRootUrl(sitemapUrl = '') {
+  try {
+    const url = new URL(sitemapUrl);
+    url.pathname = url.pathname.replace(/sitemap\.xml$/i, '');
+    url.search = '';
+    url.hash = '';
+    return url.toString();
+  } catch {
+    return '';
+  }
+}
+
+function informaScheduleDateTime(dateValue = '', timeValue = '', fallbackTime = '09:00:00') {
+  const date = String(dateValue || '').trim();
+  const time = String(timeValue || '').match(/^(\d{1,2}):(\d{2})(?::(\d{2}))?/);
+  if (/^\d{4}-\d{2}-\d{2}$/.test(date) && time) {
+    return `${date}T${time[1].padStart(2, '0')}:${time[2]}:${time[3] || '00'}+03:00`;
+  }
+  return schemaDateToSaudiDateTime(date, fallbackTime);
+}
+
+function informaBodyText(html = '') {
+  return stripTags(String(html)
+    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style[\s\S]*?<\/style>/gi, ' '));
+}
+
+function informaCity(locality = '', html = '') {
+  const normalized = normalizeSaudiCity(locality, 'Saudi Arabia');
+  if (normalized !== 'Saudi Arabia') return normalized;
+  const text = informaBodyText(html);
+  const matches = [
+    ['Riyadh', /\bRiyadh\b|الرياض/i],
+    ['Jeddah', /\bJeddah\b|جدة/i],
+    ['Dammam', /\bDammam\b|الدمام/i],
+    ['Al Khobar', /\b(?:Al )?Khobar\b|الخبر/i],
+    ['Dhahran', /\bDhahran\b|الظهران/i],
+    ['Madinah', /\b(?:Madinah|Medina)\b|المدينة/i],
+    ['Makkah', /\b(?:Makkah|Mecca)\b|مكة/i],
+    ['AlUla', /\b(?:AlUla|Al-Ula)\b|العلا/i],
+    ['Abha', /\bAbha\b|أبها/i]
+  ].filter(([, pattern]) => pattern.test(text));
+  return matches.length === 1 ? matches[0][0] : normalized;
+}
+
+function informaCategory(title = '', description = '') {
+  const text = `${title} ${description}`.toLowerCase();
+  if (/expo|exhibition|show|معرض/.test(text)) return 'exhibition';
+  if (/summit|congress|conference|forum|investment|week|قمة|مؤتمر|منتدى/.test(text)) return 'conference';
+  if (/course|training|workshop|دورة|تدريب|ورشة/.test(text)) return 'training';
+  return 'business event';
+}
+
+function informaSchemaImage(image = '') {
+  const first = Array.isArray(image) ? image[0] : image;
+  return schemaText(first?.url || first?.contentUrl || first);
+}
+
+function extractInformaEventFromHtml(html = '', source = {}, pageUrl = source.url) {
+  if (!pageUrl || /(?:visa|invitation|form)/i.test(new URL(pageUrl).pathname)) return null;
+  const event = extractJsonLdObjects(html).find((item) => {
+    const type = Array.isArray(item?.['@type']) ? item['@type'].join(' ') : String(item?.['@type'] || '');
+    return /(^|\s)Event($|\s)/i.test(type) && item.startDate && item.endDate;
+  });
+  if (!event || /EventCancelled/i.test(String(event.eventStatus || ''))) return null;
+
+  const schedule = Array.isArray(event.eventSchedule) ? event.eventSchedule[0] : event.eventSchedule || {};
+  const startsAt = informaScheduleDateTime(event.startDate, schedule.startTime, '09:00:00');
+  const endsAt = informaScheduleDateTime(event.endDate, schedule.endTime, '18:00:00');
+  if (!startsAt || !endsAt || Date.parse(endsAt) < Date.parse(startsAt)) return null;
+
+  const location = Array.isArray(event.location) ? event.location[0] : event.location || {};
+  const address = typeof location.address === 'object' ? location.address : {};
+  const locality = schemaText(address.addressLocality || location.addressLocality || '');
+  const country = schemaText(address.addressCountry || location.addressCountry || '');
+  const bodyText = informaBodyText(html);
+  const structuredLocation = `${schemaText(location.name)} ${schemaText(address.streetAddress)} ${locality} ${country}`.trim();
+  if (structuredLocation ? !hasSaudiRelevance(structuredLocation) : !/saudi|السعود/i.test(bodyText)) return null;
+
+  const title = schemaText(event.name);
+  if (!title) return null;
+  const description = schemaText(event.description) || `Official event from ${source.name}.`;
+  const city = informaCity(locality, html);
+  const venue = schemaText(location.name || address.streetAddress) || city;
+  const url = resolveUrl(schemaText(event.url) || pageUrl, pageUrl);
+  const imageUrl = informaSchemaImage(event.image);
+  const organizer = schemaText(event.organizer) || source.owner;
+  const details = detailEnrichmentFromHtml(html, pageUrl, title);
+  const attendanceMode = /OnlineEventAttendanceMode/i.test(String(event.eventAttendanceMode || ''))
+    ? 'online'
+    : /MixedEventAttendanceMode/i.test(String(event.eventAttendanceMode || ''))
+      ? 'hybrid'
+      : 'in-person';
+  const item = {
+    title,
+    preserve_full_title: true,
+    url,
+    organizer,
+    summary: description,
+    rich_summary: description,
+    city,
+    venue,
+    category: informaCategory(title, description),
+    raw_date_text: `${event.startDate} - ${event.endDate}`,
+    starts_at: startsAt,
+    ends_at: endsAt,
+    attendance_mode: attendanceMode,
+    language: schemaText(event.inLanguage) || details.language || 'en',
+    confidence: 'official',
+    review_status: 'ready-for-review',
+    publication_gate: 'duplicate-review',
+    verification_method: 'official-informa-portfolio-json-ld',
+    date_precision: 'explicit-range',
+    time_precision: schedule.startTime && schedule.endTime ? 'exact' : 'day-range',
+    tags: ['Informa Connect', 'Saudi Arabia', informaCategory(title, description)],
+    ...details,
+    ...(imageUrl ? {
+      image_url: imageUrl,
+      image_alt: title,
+      image_source_url: pageUrl
+    } : {})
+  };
+  return {
+    ...item,
+    richness_score: calculateRichnessScore(item)
+  };
+}
+
+function informaItemQuality(item = {}) {
+  return [
+    item.city && item.city !== 'Saudi Arabia' ? 3 : 0,
+    /\/ar\/?$/i.test(item.url || '') ? 2 : 0,
+    item.registration_url ? 1 : 0,
+    item.image_url ? 1 : 0,
+    item.time_precision === 'exact' ? 1 : 0
+  ].reduce((sum, value) => sum + value, 0);
+}
+
+function dedupeInformaItems(items = []) {
+  const rows = new Map();
+  for (const item of items.filter(Boolean)) {
+    const key = [
+      normalizeCandidateKeyValue(item.title),
+      String(item.starts_at || '').slice(0, 10),
+      String(item.ends_at || '').slice(0, 10)
+    ].join('|');
+    const previous = rows.get(key);
+    if (!previous || informaItemQuality(item) > informaItemQuality(previous)) rows.set(key, item);
+  }
+  return [...rows.values()].sort((a, b) => a.starts_at.localeCompare(b.starts_at) || a.title.localeCompare(b.title));
+}
+
+async function extractInformaSaudiPortfolio(indexXml, source, options = {}) {
+  const fetchPage = options.fetchPage || ((url) => fetchText(url));
+  const snapshotWriter = options.writeSnapshot === false
+    ? null
+    : options.writeSnapshot || ((label, content) => writeAuxiliarySnapshot(source, label, content));
+  const sitemapUrls = informaSaudiSitemapUrls(indexXml);
+  const pages = [];
+  let cursor = 0;
+  const workers = Array.from({ length: Math.min(5, sitemapUrls.length) }, async () => {
+    while (cursor < sitemapUrls.length) {
+      const sitemapUrl = sitemapUrls[cursor];
+      cursor += 1;
+      const pageUrl = informaRootUrl(sitemapUrl);
+      if (!pageUrl) continue;
+      try {
+        const html = await fetchPage(pageUrl);
+        const item = extractInformaEventFromHtml(html, source, pageUrl);
+        if (!item) continue;
+        if (snapshotWriter) item.raw_snapshot_path = snapshotWriter(item.title, html);
+        pages.push(item);
+      } catch {
+        // A single retired portfolio site must not fail the entire official source.
+      }
+    }
+  });
+  await Promise.all(workers);
+  return dedupeInformaItems(pages);
+}
+
 function sourceTypeFor(source) {
   if (source.source_type === 'government-calendar') return 'government-calendar';
   if (source.source_type === 'ticketing-marketplace') return 'ticketing-page';
   if (source.source_type === 'organizer-calendar') return 'official-site';
+  if (source.source_type === 'conference-organizer') return 'official-site';
   if (source.source_type === 'destination-calendar') return 'official-site';
   if (source.source_type === 'venue-calendar') return 'official-site';
   if (source.source_type === 'national-calendar') return 'government-calendar';
@@ -5952,6 +6176,10 @@ export {
   extractExperienceAlulaDetailHtml,
   extractExperienceAlulaFestivalCards,
   extractInvestSaudiEvents,
+  extractInformaEventFromHtml,
+  extractInformaSaudiPortfolio,
+  informaSaudiSitemapUrls,
+  dedupeInformaItems,
   extractIthraEvents,
   extractSaudiSpaceAgencyEvents,
   extractSfdaEvents,

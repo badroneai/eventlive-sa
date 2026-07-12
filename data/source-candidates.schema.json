@@ -31,6 +31,25 @@
           "id": { "type": "string", "minLength": 1 },
           "title": { "type": "string", "minLength": 1 },
           "organizer": { "type": "string" },
+          "organizer_url": { "type": "string" },
+          "performers": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                { "type": "string", "minLength": 1 },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["name"],
+                  "properties": {
+                    "name": { "type": "string", "minLength": 1 },
+                    "type": { "type": "string", "enum": ["person", "group", "organization"] },
+                    "url": { "type": "string" }
+                  }
+                }
+              ]
+            }
+          },
           "city": { "type": "string", "minLength": 1 },
           "venue": { "type": "string" },
           "category": { "type": "string" },
@@ -41,6 +60,9 @@
           "image_source_url": { "type": "string" },
           "registration_url": { "type": "string" },
           "ticket_url": { "type": "string" },
+          "registration_status": { "type": "string" },
+          "ticket_status": { "type": "string" },
+          "offer_valid_from": { "type": "string", "format": "date-time" },
           "maps_url": { "type": "string" },
           "attendance_mode": {
             "type": "string",

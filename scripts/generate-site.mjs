@@ -1,3 +1,4 @@
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import QRCode from 'qrcode';
@@ -5,6 +6,12 @@ import { normalizeArabicSearch } from './arabic-normalize.mjs';
 import { AUDIENCE_TAXONOMY, audienceObjects, classifyAudiences } from './audience-utils.mjs';
 import { normalizeSaudiCity } from './city-utils.mjs';
 import { classifyEventKind, eventKindLabel, getEventStatus } from './event-kind-utils.mjs';
+import {
+  eventAccessIsFree,
+  eventOfferJsonLd,
+  eventOrganizerJsonLd,
+  eventPerformerJsonLd
+} from './event-structured-data-utils.mjs';
 import { isLikelyImageAssetUrl, isRejectedImageAssetUrl, isSourcePageLikeImageUrl } from './image-asset-utils.mjs';
 import { buildIndexNowDelta, reconcileSeoPageState } from './seo-discovery-utils.mjs';
 import { coordinatesQuery, resolveVenueLocation } from './venue-location-utils.mjs';
@@ -22,6 +29,8 @@ const platformName = 'EventLive';
 const platformDomain = 'eventme.live';
 const siteUrl = `https://${platformDomain}`;
 const buildAt = new Date().toISOString();
+const incrementalBuild = String(process.env.EVENTLIVE_INCREMENTAL_BUILD || '').toLowerCase() === 'true';
+const forceSeoRefresh = String(process.env.EVENTLIVE_FORCE_SEO_REFRESH || '').toLowerCase() === 'true';
 const includeDemoEvent = process.env.EVENTLIVE_INCLUDE_DEMO === '1';
 const googleSiteVerificationPath = path.join(root, 'data', 'google-site-verification.txt');
 const googleSiteVerification = fs.existsSync(googleSiteVerificationPath)
@@ -34,14 +43,37 @@ const registeredSources = readJson('data/source_registry.json', { sources: [] })
 const venueRegistry = readJson('data/venue_registry.json', { venues: [] }).venues || [];
 const registeredSourcesByName = new Map();
 for (const source of registeredSources) {
-  for (const value of [source.name, source.owner].filter(Boolean)) {
-    registeredSourcesByName.set(normalizeArabicSearch(value), source);
+  const aliases = [
+    source.name,
+    source.owner,
+    source.id,
+    ...String(source.owner || '').split(/\s*\/\s*/)
+  ];
+  for (const value of aliases.filter(Boolean)) {
+    const key = normalizeArabicSearch(value);
+    if (!registeredSourcesByName.has(key)) registeredSourcesByName.set(key, source);
   }
+}
+
+function registeredOrganizerSource(event = {}) {
+  for (const value of [event.organizer, event.source_owner, event.source_label].filter(Boolean)) {
+    const source = registeredSourcesByName.get(normalizeArabicSearch(value));
+    if (source) return source;
+  }
+  return null;
+}
+
+function organizerJsonLdForEvent(event = {}) {
+  return eventOrganizerJsonLd(event, registeredOrganizerSource(event));
 }
 
 fs.mkdirSync(distDir, { recursive: true });
 fs.mkdirSync(reportsDir, { recursive: true });
-for (const generatedDir of [eventsDir, citiesDir, categoriesDir, audiencesDir, feedsDir, coversDir]) {
+const initialArabicHtmlHashes = snapshotArabicHtmlHashes();
+const resetGeneratedDirs = incrementalBuild
+  ? [citiesDir, categoriesDir, audiencesDir, feedsDir]
+  : [eventsDir, citiesDir, categoriesDir, audiencesDir, feedsDir, coversDir];
+for (const generatedDir of resetGeneratedDirs) {
   if (fs.existsSync(generatedDir)) fs.rmSync(generatedDir, { recursive: true, force: true });
 }
 fs.mkdirSync(eventsDir, { recursive: true });
@@ -186,13 +218,12 @@ function readJson(relativePath, fallback = {}) {
 }
 
 function writeJson(relativePath, value) {
-  fs.mkdirSync(path.dirname(path.join(distDir, relativePath)), { recursive: true });
-  fs.writeFileSync(path.join(distDir, relativePath), `${JSON.stringify(value, null, 2)}\n`, 'utf8');
+  writeText(path.join(distDir, relativePath), `${JSON.stringify(value, null, 2)}\n`);
 }
 
 function prepareSeoDiscovery(events) {
   const statePath = path.join(root, 'data', 'seo_page_state.json');
-  const previousState = fs.existsSync(statePath)
+  const previousState = !forceSeoRefresh && fs.existsSync(statePath)
     ? JSON.parse(fs.readFileSync(statePath, 'utf8'))
     : { version: 1, pages: {} };
   const reconciled = reconcileSeoPageState(events, previousState, buildAt);
@@ -218,13 +249,50 @@ function prepareSeoDiscovery(events) {
     unchanged_events: reconciled.unchangedEvents.length,
     removed_events: reconciled.removedSlugs.length,
     indexnow_urls: urls.length,
-    indexnow_key: fs.readFileSync(path.join(root, 'data', 'indexnow-key.txt'), 'utf8').trim()
+    indexnow_key: fs.readFileSync(path.join(root, 'data', 'indexnow-key.txt'), 'utf8').trim(),
+    changed_event_slugs: reconciled.changedEvents.map((event) => event.file_slug),
+    removed_event_slugs: reconciled.removedSlugs
   };
 }
 
 function writeText(fullPath, value) {
   fs.mkdirSync(path.dirname(fullPath), { recursive: true });
+  if (fs.existsSync(fullPath) && fs.readFileSync(fullPath, 'utf8') === value) return false;
   fs.writeFileSync(fullPath, value, 'utf8');
+  return true;
+}
+
+function snapshotArabicHtmlHashes() {
+  if (!fs.existsSync(distDir)) return new Map();
+  const rows = new Map();
+  for (const filePath of walkFiles(distDir)) {
+    if (path.extname(filePath).toLowerCase() !== '.html') continue;
+    const relativePath = path.relative(distDir, filePath).replaceAll(path.sep, '/').normalize('NFC');
+    if (relativePath.startsWith('en/')) continue;
+    rows.set(relativePath, crypto.createHash('sha256').update(fs.readFileSync(filePath)).digest('hex'));
+  }
+  return rows;
+}
+
+function writeHtmlChangeManifest(before, metadata = {}) {
+  const after = snapshotArabicHtmlHashes();
+  const changed = [...after]
+    .filter(([relativePath, hash]) => before.get(relativePath) !== hash)
+    .map(([relativePath]) => relativePath)
+    .sort();
+  const removed = [...before.keys()].filter((relativePath) => !after.has(relativePath)).sort();
+  const cacheDir = path.join(root, '.eventlive-cache');
+  fs.mkdirSync(cacheDir, { recursive: true });
+  const manifest = {
+    schema: 'eventlive.site-change-manifest.v1',
+    generated_at: buildAt,
+    mode: incrementalBuild ? 'incremental' : 'full',
+    changed_html: changed,
+    removed_html: removed,
+    ...metadata
+  };
+  fs.writeFileSync(path.join(cacheDir, 'site-change-manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`, 'utf8');
+  return manifest;
 }
 
 function stripTrailingWhitespace(value = '') {
@@ -1525,35 +1593,6 @@ function eventAudienceJsonLd(event = {}) {
   return labels.filter(Boolean).map((label) => ({ '@type': 'Audience', audienceType: label }));
 }
 
-function eventAccessIsFree(event = {}) {
-  const label = String(event.price_label || '').trim();
-  if (/مجاني|free|بدون رسوم/i.test(label)) return true;
-  if (/مدفوع|paid|ريال|sar|ر\.س/i.test(label)) return false;
-  return undefined;
-}
-
-function eventOfferJsonLd(event = {}, canonical = '') {
-  if (event.status === 'ended') return undefined;
-  const url = event.ticket_url || event.registration_url;
-  if (!url) return undefined;
-  const priceText = String(event.price_label || '').trim();
-  const free = eventAccessIsFree(event) === true;
-  const registrationState = String(event.registration_status || event.ticket_status || '').trim();
-  const availability = /closed|sold.?out|full|مغلق|نفدت|مكتمل/i.test(registrationState)
-    ? 'https://schema.org/SoldOut'
-    : /open|available|on.?sale|متاح|مفتوح/i.test(registrationState)
-      ? 'https://schema.org/InStock'
-      : undefined;
-  return {
-    '@type': 'Offer',
-    url,
-    availability,
-    price: free ? '0' : undefined,
-    priceCurrency: free ? 'SAR' : undefined,
-    category: priceText || (event.ticket_url ? 'Ticket' : 'Registration')
-  };
-}
-
 function structuredPlainText(value = '') {
   return String(value || '')
     .replace(/<[^>]+>/g, ' ')
@@ -1630,7 +1669,8 @@ function eventPublicJson(event = {}, canonical = '', schemaImage = '') {
       eventStatus: event.status === 'ended' ? 'https://schema.org/EventCompleted' : 'https://schema.org/EventScheduled',
       eventAttendanceMode: online ? 'https://schema.org/OnlineEventAttendanceMode' : 'https://schema.org/OfflineEventAttendanceMode',
       location: eventLocationJsonLd(event, canonical),
-      organizer: { '@type': 'Organization', name: event.organizer },
+      organizer: organizerJsonLdForEvent(event),
+      performer: eventPerformerJsonLd(event),
       image: schemaImage ? [schemaImage] : undefined,
       description: eventSchemaDescription(event),
       url: canonical,
@@ -1639,7 +1679,7 @@ function eventPublicJson(event = {}, canonical = '', schemaImage = '') {
       keywords: eventKeywords(event).join(', '),
       audience: eventAudienceJsonLd(event),
       sameAs: unique([event.source_url, event.evidence_url]).filter(Boolean),
-      offers: eventOfferJsonLd(event, canonical)
+      offers: eventOfferJsonLd(event)
     }
   };
 }
@@ -1762,7 +1802,8 @@ function sessionJsonLd(session = {}, event = {}, index = 0, canonical = '') {
     location: online
       ? eventLocationJsonLd(event, canonical)
       : { ...physicalLocation, name: room || event.venue },
-    organizer: { '@type': 'Organization', name: event.organizer },
+    organizer: organizerJsonLdForEvent(event),
+    performer: eventPerformerJsonLd({ sessions: [session] }),
     url: `${canonical}#${sessionAnchor(session, index)}`
   };
 }
@@ -1934,7 +1975,8 @@ function renderEventDetail(event) {
     eventStatus: event.status === 'ended' ? 'https://schema.org/EventCompleted' : 'https://schema.org/EventScheduled',
     eventAttendanceMode: online ? 'https://schema.org/OnlineEventAttendanceMode' : 'https://schema.org/OfflineEventAttendanceMode',
     location: eventLocationJsonLd(event, canonical),
-    organizer: { '@type': 'Organization', name: event.organizer },
+    organizer: organizerJsonLdForEvent(event),
+    performer: eventPerformerJsonLd(event),
     image: schemaImage ? [schemaImage] : undefined,
     description: eventSchemaDescription(event),
     url: canonical,
@@ -1943,7 +1985,7 @@ function renderEventDetail(event) {
     keywords: eventKeywords(event).join(', '),
     audience: eventAudienceJsonLd(event),
     sameAs: unique([event.source_url, event.evidence_url]).filter(Boolean),
-    offers: eventOfferJsonLd(event, canonical),
+    offers: eventOfferJsonLd(event),
     subEvent: officialSessions.length ? officialSessions.slice(0, 20).map((session, index) => sessionJsonLd(session, event, index, canonical)) : undefined
   })}
   ${jsonLd(eventBreadcrumbJsonLd(event, canonical))}
@@ -2100,10 +2142,10 @@ function writeFeedBundle(slug, name, description, events, manifestRows) {
   });
 }
 
-function writeIcs(events) {
+function writeIcs(events, eventDetails = events) {
   const upcoming = events.filter((event) => event.status !== 'ended').slice(0, 200);
   writeCalendar(path.join(distDir, 'events.ics'), `فعاليات السعودية | ${platformName}`, upcoming);
-  for (const event of events) {
+  for (const event of eventDetails) {
     writeCalendar(path.join(eventsDir, `${event.file_slug}.ics`), `${event.title} | ${platformName}`, [event]);
   }
 }
@@ -6966,6 +7008,25 @@ function removeForbiddenArtifacts() {
   if (fs.existsSync(oldHero)) fs.rmSync(oldHero, { force: true });
 }
 
+function eventDetailArtifactsExist(event = {}) {
+  return ['html', 'json', 'ics'].every((extension) => fs.existsSync(path.join(eventsDir, `${event.file_slug}.${extension}`)));
+}
+
+function removeDeletedEventArtifacts(slugs = []) {
+  let removed = 0;
+  for (const slug of slugs) {
+    for (const filePath of [
+      ...['html', 'json', 'ics'].map((extension) => path.join(eventsDir, `${slug}.${extension}`)),
+      path.join(coversDir, `${slug}.svg`)
+    ]) {
+      if (!fs.existsSync(filePath)) continue;
+      fs.rmSync(filePath, { force: true });
+      removed += 1;
+    }
+  }
+  return removed;
+}
+
 function writeBrandIcon() {
   const icon = `<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="EventLive"><rect width="512" height="512" rx="104" fill="#07231c"/><text x="74" y="342" fill="#fff" font-family="Arial,sans-serif" font-size="230" font-weight="700">EL</text><circle cx="407" cy="111" r="42" fill="#e5484d"/></svg>`;
   writeText(path.join(distDir, 'favicon.svg'), icon);
@@ -6976,11 +7037,16 @@ function writeBrandIcon() {
 
 const events = buildEvents();
 const seoDiscovery = prepareSeoDiscovery(events);
+const deletedEventArtifacts = removeDeletedEventArtifacts(seoDiscovery.removed_event_slugs);
+const changedEventSlugs = new Set(seoDiscovery.changed_event_slugs);
+const eventDetailsToRender = incrementalBuild
+  ? events.filter((event) => changedEventSlugs.has(event.file_slug) || !eventDetailArtifactsExist(event))
+  : events;
 writeCatalogFiles(events);
 writeMethodologyPage(events);
 writeOrganizerIntakePage();
-for (const event of events) renderEventDetail(event);
-writeIcs(events);
+for (const event of eventDetailsToRender) renderEventDetail(event);
+writeIcs(events, eventDetailsToRender);
 writeSubscriptionFeeds(events);
 writeFacetPages(events);
 writeCitiesIndexPage(events);
@@ -7007,10 +7073,10 @@ writePublicSourcesPage(events);
 writeLiveUpdatesPage(events);
 writeAboutPage(events);
 const screenPatched = patchScreenPage();
-reconcileStaleEventRefs(events);
-const imageRefsPatched = reconcileStaleEventImages(events);
-const missingImageRefsPatched = reconcileMissingLocalEventImages(events);
-const excludedReferencePatched = pruneExcludedPublicArtifacts(events);
+if (!incrementalBuild) reconcileStaleEventRefs(events);
+const imageRefsPatched = incrementalBuild ? 0 : reconcileStaleEventImages(events);
+const missingImageRefsPatched = incrementalBuild ? 0 : reconcileMissingLocalEventImages(events);
+const excludedReferencePatched = incrementalBuild ? 0 : pruneExcludedPublicArtifacts(events);
 const searchIntentPages = writeSearchIntentPages(events);
 const guidesIntentPatched = patchGuidesHubWithSearchIntentPages(searchIntentPages);
 writeBrandIcon();
@@ -7019,8 +7085,22 @@ removeForbiddenArtifacts();
 writeSitemap(events);
 writeAiSearchFiles(events);
 
-const patched = walkFiles(distDir).filter(patchFile);
+const patched = walkFiles(distDir)
+  .filter((filePath) => {
+    const relativePath = path.relative(distDir, filePath).replaceAll(path.sep, '/');
+    if (relativePath.startsWith('en/')) return false;
+    if (!incrementalBuild) return true;
+    if (relativePath.startsWith('events/')) return changedEventSlugs.has(path.basename(relativePath, path.extname(relativePath)));
+    if (relativePath.startsWith('assets/event-covers/')) return changedEventSlugs.has(path.basename(relativePath, path.extname(relativePath)));
+    return true;
+  })
+  .filter(patchFile);
 hideOwnerOnlyManifestShortcuts();
+const changeManifest = writeHtmlChangeManifest(initialArabicHtmlHashes, {
+  event_details_rendered: eventDetailsToRender.length,
+  event_details_reused: events.length - eventDetailsToRender.length,
+  deleted_event_artifacts: deletedEventArtifacts
+});
 const report = [
   `# ${platformName} Build Report`,
   `- Built at: ${buildAt}`,
@@ -7029,6 +7109,11 @@ const report = [
   `- Events generated: ${events.length}`,
   `- Draft/sample records excluded: ${events.excludedDraftLikeRecords || 0}`,
   `- Event detail pages: ${events.length}`,
+  `- Build strategy: ${incrementalBuild ? 'incremental' : 'full'}`,
+  `- Event details rendered: ${eventDetailsToRender.length}`,
+  `- Event details reused: ${events.length - eventDetailsToRender.length}`,
+  `- Arabic HTML routes changed: ${changeManifest.changed_html.length}`,
+  `- Removed event artifacts: ${deletedEventArtifacts}`,
   `- Cities generated: ${new Set(events.map((event) => citySlug(event.city))).size}`,
   `- Stale event image references patched: ${imageRefsPatched}`,
   `- Missing local event image references patched: ${missingImageRefsPatched}`,

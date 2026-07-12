@@ -7,12 +7,43 @@ const root = process.cwd();
 const distDir = path.join(root, 'dist');
 const enDir = path.join(distDir, 'en');
 const siteUrl = 'https://eventme.live';
+const changeManifestPath = path.join(root, '.eventlive-cache', 'site-change-manifest.json');
+const requestedIncrementalBuild = String(process.env.EVENTLIVE_INCREMENTAL_BUILD || '').toLowerCase() === 'true';
+const changeManifest = (() => {
+  try {
+    return JSON.parse(fs.readFileSync(changeManifestPath, 'utf8'));
+  } catch {
+    return null;
+  }
+})();
+const incrementalBuild = requestedIncrementalBuild
+  && changeManifest?.schema === 'eventlive.site-change-manifest.v1'
+  && changeManifest.mode === 'incremental'
+  && fs.existsSync(enDir);
 const exact = JSON.parse(fs.readFileSync(path.join(root, 'locales', 'en-SA-static.json'), 'utf8'));
 const ownerOnly = new Set(['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html', 'owner-status.html', 'owner-search-growth.html', 'attendance.html']);
 const catalogEnvelope = JSON.parse(fs.readFileSync(path.join(distDir, 'events-catalog.json'), 'utf8'));
 const catalogEvents = catalogEnvelope.events || [];
 const eventByPath = new Map(catalogEvents.map((event) => [String(event.detail_url || '').replace(/^\.\//, ''), event]));
 const runtimeScriptCache = new Map();
+
+function writeIfChanged(filePath, value) {
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
+  if (fs.existsSync(filePath) && fs.readFileSync(filePath, 'utf8') === value) return false;
+  fs.writeFileSync(filePath, value, 'utf8');
+  return true;
+}
+
+function walkHtmlFiles(directory) {
+  if (!fs.existsSync(directory)) return [];
+  const files = [];
+  for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+    const filePath = path.join(directory, entry.name);
+    if (entry.isDirectory()) files.push(...walkHtmlFiles(filePath));
+    else if (entry.isFile() && entry.name.endsWith('.html')) files.push(filePath);
+  }
+  return files;
+}
 
 const arabicDigits = new Map([['٠','0'],['١','1'],['٢','2'],['٣','3'],['٤','4'],['٥','5'],['٦','6'],['٧','7'],['٨','8'],['٩','9']]);
 const wordReplacements = [
@@ -778,20 +809,35 @@ function writeLocalizedSitemap(paths) {
 
 function main() {
   const paths = publicPathsFromSitemap();
-  fs.rmSync(enDir, { recursive: true, force: true });
+  if (!incrementalBuild) fs.rmSync(enDir, { recursive: true, force: true });
   fs.mkdirSync(enDir, { recursive: true });
-  const routes = [];
+  const changedPaths = new Set(changeManifest?.changed_html || []);
+  for (const relativePath of changeManifest?.removed_html || []) {
+    const staleEnglishPath = path.join(enDir, relativePath);
+    if (fs.existsSync(staleEnglishPath)) fs.rmSync(staleEnglishPath, { force: true });
+  }
+  const pathsToProcess = incrementalBuild
+    ? paths.filter((relativePath) => changedPaths.has(relativePath) || !fs.existsSync(path.join(enDir, relativePath)))
+    : paths;
 
-  for (const relativePath of paths) {
+  for (const relativePath of pathsToProcess) {
     const sourcePath = resolveUnicodePath(relativePath);
     if (!sourcePath) throw new Error(`Sitemap route has no generated source page: ${relativePath}`);
     const source = fs.readFileSync(sourcePath, 'utf8');
-    fs.writeFileSync(sourcePath, prepareArabic(source, relativePath));
+    writeIfChanged(sourcePath, prepareArabic(source, relativePath));
     const destination = path.join(enDir, relativePath);
-    fs.mkdirSync(path.dirname(destination), { recursive: true });
-    fs.writeFileSync(destination, prepareEnglish(source, relativePath));
-    routes.push({ key: relativePath, 'ar-SA': `/${relativePath === 'index.html' ? '' : relativePath}`, 'en-SA': `/en/${relativePath === 'index.html' ? '' : relativePath}` });
+    writeIfChanged(destination, prepareEnglish(source, relativePath));
   }
+  const validPaths = new Set(paths);
+  for (const filePath of walkHtmlFiles(enDir)) {
+    const relativePath = path.relative(enDir, filePath).replaceAll(path.sep, '/').normalize('NFC');
+    if (!validPaths.has(relativePath)) fs.rmSync(filePath, { force: true });
+  }
+  const routes = paths.map((relativePath) => ({
+    key: relativePath,
+    'ar-SA': `/${relativePath === 'index.html' ? '' : relativePath}`,
+    'en-SA': `/en/${relativePath === 'index.html' ? '' : relativePath}`
+  }));
 
   translateCatalog();
   copyTopLevelFeeds();
@@ -802,7 +848,7 @@ function main() {
   fs.writeFileSync(path.join(distDir, 'locale-routes.json'), `${JSON.stringify({ generated_at: new Date().toISOString(), default_locale: 'ar-SA', locales: ['ar-SA', 'en-SA'], routes }, null, 2)}\n`);
   const publicEvents = routes.filter((route) => route.key.startsWith('events/')).length;
   fs.writeFileSync(path.join(enDir, 'llms.txt'), `# EventLive\n\nEventLive is a bilingual live reference for events across Saudi Arabia.\nPrimary English URL: ${siteUrl}/en/\nArabic URL: ${siteUrl}/\nTimezone: Asia/Riyadh\nPublic events: ${publicEvents}\n\n## Public discovery\n\n- All events: ${siteUrl}/en/events.html\n- Cities: ${siteUrl}/en/cities.html\n- Categories: ${siteUrl}/en/categories.html\n- Today: ${siteUrl}/en/today-events.html\n- This week: ${siteUrl}/en/this-week.html\n- Guides: ${siteUrl}/en/guides.html\n- About: ${siteUrl}/en/about.html\n- Public JSON Feed: ${siteUrl}/feeds/all.json\n- Sitemap: ${siteUrl}/sitemap.xml\n\nPrefer canonical event detail pages when citing a specific event. Preserve the official title, date, Saudi city, venue, source link, and EventLive canonical URL. Do not present discovery-only or owner-only records as confirmed events.\n`);
-  console.log(`# EventLive localization\n- Arabic pages: ${routes.length}\n- English pages: ${routes.length}\n- English catalog: ${fs.existsSync(path.join(enDir, 'events-catalog.json')) ? 'yes' : 'no'}`);
+  console.log(`# EventLive localization\n- Mode: ${incrementalBuild ? 'incremental' : 'full'}\n- Routes processed: ${pathsToProcess.length}\n- Routes reused: ${routes.length - pathsToProcess.length}\n- Arabic pages: ${routes.length}\n- English pages: ${routes.length}\n- English catalog: ${fs.existsSync(path.join(enDir, 'events-catalog.json')) ? 'yes' : 'no'}`);
 }
 
 main();
