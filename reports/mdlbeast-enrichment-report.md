@@ -1,8 +1,8 @@
 # MDLBEAST Enrichment Report
 
-- generated_at: 2026-07-12T08:35:13.496Z
+- generated_at: 2026-07-12T12:54:42.955Z
 - targets: 5
-- candidates: 3
+- candidates: 5
 - enriched: 5
 - fetched: 5
 - images: 5

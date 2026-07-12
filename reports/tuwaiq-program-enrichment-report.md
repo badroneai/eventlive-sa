@@ -1,6 +1,6 @@
 # Tuwaiq Program Enrichment Report
 
-- generated_at: 2026-07-12T08:34:40.014Z
+- generated_at: 2026-07-12T12:54:01.786Z
 - targets: 20
 - enriched: 20
 - failed: 0
@@ -20,7 +20,7 @@
 - معسكر الأنظمة الذاتية للدرونز (bx7Vb7Xw) - goals=8, features=6, requirements=6
 - معسكر تطوير الألعاب والعوالم الافتراضية باستخدام Unreal Engine (KMVERlNP) - goals=15, features=9, requirements=6
 - معسكر تصميم تجربة المستخدم UX\UI (ZnwlyY5G) - goals=8, features=7, requirements=9
-- معسكر طويق السيبراني (oA2ryDzB) - goals=8, features=6, requirements=6
+- معسكر طويق السيبراني (oA2ryDzB) - goals=3, features=4, requirements=12
 - معسكر هندسة الحوسبة السحابية باستخدام Google Cloud (v9JwMlMo) - goals=10, features=6, requirements=7
 - معسكر اختبار البرمجيات والأتمتة (ORGldGgx) - goals=6, features=6, requirements=7
 - معسكر أساسيات الأمن السيبراني (6VRQ2LNZ) - goals=5, features=6, requirements=10

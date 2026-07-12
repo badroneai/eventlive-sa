@@ -1,23 +1,59 @@
 {
-  "generated_at": "2026-07-12T08:37:36.567Z",
+  "generated_at": "2026-07-12T12:57:37.763Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 596,
-    "fetched": 1,
-    "reused": 493,
+    "cached_total": 603,
+    "fetched": 7,
+    "reused": 487,
     "failed": 6,
     "skipped_recent_failures": 6,
     "remembered_failures": 9
   },
   "fetched": [
     {
-      "source_url": "https://scth.scene7.com/is/image/scth/saleh-al-nawawi?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/saleh-el-nawawy-stand-up-comedy-show-d9202e330e.webp",
-      "bytes": 39894,
+      "source_url": "https://knect365.imgix.net/uploads/Untitled-design-4959cea6f020e6408be9b845f8ce4d74.png?auto=format&fit=max&h=80",
+      "file": "dist/assets/event-images/saudi-ai-week-27be567f24.avif",
+      "bytes": 9126,
       "events": 1
+    },
+    {
+      "source_url": "https://knect365.imgix.net/uploads/Saudi-InterMobility-Expo-2022-cover-image-4249d0e8028198933d409e9dcb7a8730.png?auto=format&fit=max&w=400",
+      "file": "dist/assets/event-images/saudi-intermobility-expo-d481132133.avif",
+      "bytes": 14116,
+      "events": 1
+    },
+    {
+      "source_url": "https://knect365.imgix.net/uploads/DSC0127-1-optimized-5000-f982280defab14d48ce018d28d6bd871.jpg?auto=format&fit=max&w=400",
+      "file": "dist/assets/event-images/education-investment-saudi-d75b7a2a22.avif",
+      "bytes": 23755,
+      "events": 1
+    },
+    {
+      "source_url": "https://knect365.imgix.net/uploads/SR-Saudi-Arabia-RGB-4x-b3c05bfab2453079f2080e291e4b8c56.png?auto=format&fit=max&w=1920",
+      "file": "dist/assets/event-images/superreturn-saudi-arabia-e4f1efd160.avif",
+      "bytes": 32021,
+      "events": 1
+    },
+    {
+      "source_url": "https://knect365.imgix.net/uploads/Untitled-design-compressed-548d8a4f04384e96c1739ac20319e973.jpg?auto=format&fit=max&w=400",
+      "file": "dist/assets/event-images/saudi-event-show-c493de28d2.avif",
+      "bytes": 23524,
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/al-farab-comeback-night?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/al-farabi-comeback-night-3de4e741f2.webp",
+      "bytes": 45326,
+      "events": 1
+    },
+    {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/media-icons/generic/no-thumbnail.png?itok=rGJOKohj",
+      "file": "dist/assets/event-images/introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي-3f19de15ba.png",
+      "bytes": 6064,
+      "events": 5
     }
   ],
   "reused": [
@@ -447,11 +483,6 @@
       "events": 1
     },
     {
-      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-07/4ccd79f559dca331acf56758ce175f5d.jpeg?itok=TQBocw19",
-      "file": "dist/assets/event-images/artificial-intelligence-الذكاء-الاصطناعي-6a65108527.jpg",
-      "events": 3
-    },
-    {
       "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-07/7.jpg?itok=HnrYjVdd",
       "file": "dist/assets/event-images/دورة-comptia-a-2358801bb0.jpg",
       "events": 2
@@ -582,6 +613,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
+      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
+      "events": 5
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ab9d6fe97ce2e131a314c39ed6772096.jpg",
       "file": "dist/assets/event-images/tales-of-the-night-sky-english-f55a234a58.jpg",
       "events": 2
@@ -650,6 +686,11 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a7d7f2716b488d5a78bf643c97c24ebe.jpg",
       "file": "dist/assets/event-images/from-a-paper-to-a-book-in-the-libraries-of-the-world-3adcae3693.jpg",
       "events": 2
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/saleh-al-nawawi?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/saleh-el-nawawy-stand-up-comedy-show-d9202e330e.webp",
+      "events": 1
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/%282%29%20%281%29.png?itok=BEC7XaXW",
@@ -747,6 +788,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d8565b5e78b2d0761347e3169962c3c5.jpg",
+      "file": "dist/assets/event-images/games-hub-9ae2a7e0d7.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/65968408a9d3f0c694f39a86ea6e3a9c.jpg",
       "file": "dist/assets/event-images/nu-power-30a035f1b7.jpg",
       "events": 1
@@ -780,6 +826,11 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/01b5d57ab150c4fcccb439292ba92ac3.jpg",
       "file": "dist/assets/event-images/toddler-saturday-f5e0116f13.jpg",
       "events": 2
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fc8166cf5cfe3b9fc68c32ee5f97245a.jpg",
+      "file": "dist/assets/event-images/story-land-836edf7fa9.jpg",
+      "events": 1
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/dd5ff655b67bc2f07a32214394e9129d.jpg",
@@ -879,11 +930,6 @@
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/2ejwj522.h15.webp",
       "file": "dist/assets/event-images/معسكر-تصميم-تجربة-المستخدم-ux-ui-6d00714e43.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/uxkkl54r.3ng.webp",
-      "file": "dist/assets/event-images/معسكر-طويق-السيبراني-00da1b33f9.webp",
       "events": 1
     },
     {
@@ -1029,6 +1075,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/1%20Gz8L7L6WEAAvJTa.jpeg?itok=9GKGn5Tc",
       "file": "dist/assets/event-images/saudi-industrial-series-78216d6a2f.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/uxkkl54r.3ng.webp",
+      "file": "dist/assets/event-images/معسكر-طويق-السيبراني-00da1b33f9.webp",
       "events": 1
     },
     {
@@ -1270,11 +1321,6 @@
       "source_url": "https://static.wixstatic.com/media/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png/v1/fit/w_2500,h_1330,al_c/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png",
       "file": "dist/assets/event-images/cips-mena-procurement-and-supply-chain-futures-conference-and-awards-42e0ccbf3d.png",
       "events": 1
-    },
-    {
-      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
-      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
-      "events": 5
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/esports.jpg?itok=m-JCBfZQ",
@@ -2217,6 +2263,11 @@
       "events": 1
     },
     {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-07/4ccd79f559dca331acf56758ce175f5d.jpeg?itok=TQBocw19",
+      "file": "dist/assets/event-images/artificial-intelligence-الذكاء-الاصطناعي-6a65108527.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2022-08/Ethical-Problem-of-Artificial-Intelligence-4_0.jpg?itok=kn4NacNT",
       "file": "dist/assets/event-images/duplicate-of-artificial-intelligence-الذكاء-الاصطناعي-a12d985b4d.jpg",
       "events": 1
@@ -2229,11 +2280,6 @@
     {
       "source_url": "https://ncci.org.sa/wp-content/uploads/2025/11/%D8%B1%D8%AD%D9%84%D8%A9-%D8%A5%D9%84%D9%89-%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B6%D9%8A%D8%A7%D9%81%D8%A9-%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A9.jpg",
       "file": "dist/assets/event-images/دورة-رحلة-إلى-عالم-الضيافة-والخدمة-59a58dae0b.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d8565b5e78b2d0761347e3169962c3c5.jpg",
-      "file": "dist/assets/event-images/games-hub-9ae2a7e0d7.jpg",
       "events": 1
     },
     {
@@ -2269,11 +2315,6 @@
     {
       "source_url": "https://services.mi.org.sa/upload/events/main/638886686189400216.jpg",
       "file": "dist/assets/event-images/لقــاء-الامتياز-التجاري-كأداة-للتوسع-المستدام-99c09e2195.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fc8166cf5cfe3b9fc68c32ee5f97245a.jpg",
-      "file": "dist/assets/event-images/story-land-836edf7fa9.jpg",
       "events": 1
     },
     {
@@ -2450,41 +2491,6 @@
       "source_url": "https://services.mi.org.sa/upload/events/main/638825346799178604.png",
       "file": "dist/assets/event-images/مؤتمر-ومعرض-الحج-459ef746f1.png",
       "events": 1
-    },
-    {
-      "source_url": "https://ssa.gov.sa/media/rfknif0i/ghfos_uxiaagjzn.webp?width=1400&height=788&rnd=134268706261130000",
-      "file": "dist/assets/event-images/astronomy-night-52218fb748.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://services.mi.org.sa/upload/events/main/638825353228424478.png",
-      "file": "dist/assets/event-images/منتدى-المدينة-المنورة-لاستثمار-98cf83809a.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://abhacci.org.sa/Files/Images/fa3.JPG",
-      "file": "dist/assets/event-images/ورشة-عمل-الرقابة-على-منتجات-التجميل-987f205186.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://services.mi.org.sa/upload/events/main/638825375681575816.png",
-      "file": "dist/assets/event-images/منتدى-المدينة-للصناعة-والمحتوى-المحلي-d82f4c44c5.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://services.mi.org.sa/upload/events/main/aec8e491-01b2-479c-a080-d6ba5f33de7d_123.jpg",
-      "file": "dist/assets/event-images/لقاء-معالي-نائب-وزير-الصناعة-والثروة-المعدنية-لشؤون-الصناعة-c1f1bdca27.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://services.mi.org.sa/upload/events/main/06edddb7-f035-4ef4-bc3d-b40d56e137be_.....jpg",
-      "file": "dist/assets/event-images/لقاء-افتراضي-بعنوان-الخدمات-المقدمة-من-مؤسسة-البريد-السعودي-سبل-إلى-ال-7f6466e87f.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://services.mi.org.sa/upload/events/main/7bbaf3c4-8991-49e2-81ed-49b0f859782c_ab8e4922-4194-4fb1-9006-5fe185bd22a6.jpg",
-      "file": "dist/assets/event-images/ورشة-عمل-بعنوان-برنامج-الدعم-الفني-لرواد-وقاء-من-القطاع-الخاص-بمرحلته--1da51fd146.jpg",
-      "events": 1
     }
   ],
   "rejected_removed": [],
@@ -2590,6 +2596,6 @@
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:1"
+    "fetched:7"
   ]
 }

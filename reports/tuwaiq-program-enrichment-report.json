@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T08:34:40.014Z",
+  "generated_at": "2026-07-12T12:54:01.786Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 20,
@@ -115,9 +115,9 @@
       "id": "event-معسكر-طويق-السيبراني",
       "title": "معسكر طويق السيبراني",
       "slug": "oA2ryDzB",
-      "goals": 8,
-      "features": 6,
-      "requirements": 6
+      "goals": 3,
+      "features": 4,
+      "requirements": 12
     },
     {
       "id": "event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud",

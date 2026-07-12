@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-12T08:34:39.163Z
+- published_at: 2026-07-12T12:54:00.645Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 451
-- published_new: 2
-- linked_existing: 429
+- candidates_seen: 465
+- published_new: 12
+- linked_existing: 433
 - blocked_remaining: 20
 
 ## Blocked summary
@@ -17,8 +17,18 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-visit-saudi-calendar-saleh-el-nawawy-stand-up-comedy-show-20260724-88bdeb76 | published | event-saleh-el-nawawy-stand-up-comedy-show | Saleh El Nawawy: Stand Up Comedy Show |
+| candidate-visit-saudi-calendar-al-farabi-comeback-night-20260716-b9d95a79 | published | event-al-farabi-comeback-night | Al-Farabi: Comeback Night |
+| candidate-future-skills-catalog-advanced-excel-for-data-analysis-دورة-اكسيل-لتحليل-البيانات-20260719-8e9da906 | published | event-advanced-excel-for-data-analysis-دورة-اكسيل-لتحليل-البيانات | ⁠Advanced Excel for Data Analysis - دورة اكسيل لتحليل البيانات |
+| candidate-future-skills-catalog-comptia-a-20260719-96cdffbe | published | event-comptia-a | CompTIA A+ |
+| candidate-future-skills-catalog-cloud-computing-essentials-أساسيات-الحوسبة-السحابية-20260719-0bfdacf1 | published | event-cloud-computing-essentials-أساسيات-الحوسبة-السحابية | Cloud Computing Essentials - أساسيات الحوسبة السحابية |
+| candidate-ithra-events-games-hub-20260730-fb83124c | published | event-games-hub | Games Hub |
+| candidate-ithra-events-story-land-20260801-bb5dc01b | published | event-story-land | Story Land |
+| candidate-informa-connect-saudi-events-saudi-event-show-20260909-9bbda4e2 | published | event-saudi-event-show | Saudi Event Show |
+| candidate-informa-connect-saudi-events-saudi-ai-week-20261108-ddaedbfa | published | event-saudi-ai-week | Saudi AI Week |
+| candidate-informa-connect-saudi-events-saudi-intermobility-expo-20261130-00e0f2d5 | published | event-saudi-intermobility-expo | Saudi Intermobility Expo |
 | candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702 | published | event-music-festival-mdlbeast-soundstorm | Music Festival: MDLBEAST SoundStorm |
+| candidate-informa-connect-saudi-events-education-investment-saudi-20261208-b8fe90d9 | published | event-education-investment-saudi | Education Investment Saudi |
+| candidate-informa-connect-saudi-events-superreturn-saudi-arabia-20270125-441e92f6 | published | event-superreturn-saudi-arabia | SuperReturn Saudi Arabia |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -117,7 +127,6 @@
 | candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي-20260712-fd68b684 | linked-existing | event-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي | already linked to catalog event |
 | candidate-umm-al-qura-events-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية-20260712-cacbed34 | linked-existing | event-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية | already linked to catalog event |
 | candidate-umm-al-qura-events-دورة-الفحوصات-المكروبيولوجية-لمياه-الشرب-الأسس-العلمية-والتطبيقات-البحثي-20260712-056dae07 | linked-existing | event-دورة-الفحوصات-المكروبيولوجية-لمياه-الشرب-الأسس-العلمية-والتطبيقات-البحثي | already linked to catalog event |
-| candidate-saudi-university-events-join-us-at-kaust-health-for-respiratory-health-day-20260712-27bf6068 | linked-existing | event-join-us-at-kaust-health-for-respiratory-health-day | already linked to catalog event |
 | candidate-qassim-university-events-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم-20260712-dc748566 | linked-existing | event-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم | already linked to catalog event |
 | candidate-riyadh-city-events-saif-summer-program-20260712-c90d634d | linked-existing | event-saif-summer-program | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الدرونز-التطبيقي-20260712-96b1c352 | linked-existing | event-معسكر-هندسة-الدرونز-التطبيقي | already linked to catalog event |
@@ -181,6 +190,8 @@
 | candidate-riyadh-city-events-wrth-summer-art-craft-program-20260716-77021a48 | linked-existing | event-wrth-summer-art-craft-program | already linked to catalog event |
 | candidate-ithra-events-ajeeb-in-wonder-house-20260716-caa7ff83 | linked-existing | event-ajeeb-in-wonder-house | already linked to catalog event |
 | candidate-ithra-events-museum-story-time-20260716-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
+| candidate-mdlbeast-events-unstable-20260717-5647df2e | linked-existing | event-unstable | trusted duplicate linked to existing catalog event |
+| candidate-mdlbeast-events-beast-house-20260717-83049a2a | linked-existing | event-beast-house | trusted duplicate linked to existing catalog event |
 | candidate-ithra-events-tales-of-the-night-sky-english-20260718-eb5d626a | linked-existing | event-tales-of-the-night-sky-english | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-اليوم-العالمي-لآيس-كريم-بالتعاون-مع-كلمشي-20260719-4a38d19e | linked-existing | event-اليوم-العالمي-لآيس-كريم-بالتعاون-مع-كلمشي | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-وتصنيع-الحلول-الهندسية-20260719-944bbe1b | linked-existing | event-معسكر-تصميم-وتصنيع-الحلول-الهندسية | already linked to catalog event |
@@ -210,10 +221,12 @@
 | candidate-ithra-events-bringing-the-text-into-reading-environments-20260723-7b2f0f58 | linked-existing | event-bringing-the-text-into-reading-environments | already linked to catalog event |
 | candidate-ithra-events-meet-with-an-expert-dr-sabah-aisawi-20260723-b96b8354 | linked-existing | event-meet-with-an-expert-dr-sabah-aisawi | already linked to catalog event |
 | candidate-ithra-events-from-a-paper-to-a-book-in-the-libraries-of-the-world-20260724-189aadbc | linked-existing | event-from-a-paper-to-a-book-in-the-libraries-of-the-world | already linked to catalog event |
+| candidate-visit-saudi-calendar-saleh-el-nawawy-stand-up-comedy-show-20260724-88bdeb76 | linked-existing | event-saleh-el-nawawy-stand-up-comedy-show | already linked to catalog event |
 | candidate-ithra-events-reading-between-the-image-and-the-story-20260724-e1b0df1e | linked-existing | event-reading-between-the-image-and-the-story | already linked to catalog event |
 | candidate-ithra-events-a-house-reads-a-story-that-begins-with-the-family-20260724-65c22584 | linked-existing | event-a-house-reads-a-story-that-begins-with-the-family | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-the-comeback-20260725-4a38d19e | linked-existing | event-the-comeback | already linked to catalog event |
 | candidate-riyadh-city-events-summer-splash-running-event-20260725-0b63acb2 | linked-existing | event-summer-splash-running-event | already linked to catalog event |
+| candidate-visit-saudi-calendar-the-comeback-20260725-e518a4aa | linked-existing | event-the-comeback | trusted duplicate linked to existing catalog event |
 | candidate-ithra-events-unbox-your-story-20260725-5085a6f0 | linked-existing | event-unbox-your-story | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي-20260726-12263779 | linked-existing | event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي | already linked to catalog event |
 | candidate-umm-al-qura-events-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية-20260726-3aa6cb44 | linked-existing | event-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية | already linked to catalog event |
@@ -273,12 +286,12 @@
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine-20260816-58d47757 | linked-existing | event-معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine | already linked to catalog event |
 | candidate-sfda-events-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة-20260818-a459d8bf | linked-existing | event-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-تجربة-المستخدم-ux-ui-20260823-c81fc88f | linked-existing | event-معسكر-تصميم-تجربة-المستخدم-ux-ui | already linked to catalog event |
-| candidate-tuwaiq-academy-bootcamps-معسكر-طويق-السيبراني-20260823-d741a736 | linked-existing | event-معسكر-طويق-السيبراني | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud-20260823-8790e021 | linked-existing | event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-اختبار-البرمجيات-والأتمتة-20260823-ec76981c | linked-existing | event-معسكر-اختبار-البرمجيات-والأتمتة | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-أساسيات-الأمن-السيبراني-20260823-da0b3686 | linked-existing | event-معسكر-أساسيات-الأمن-السيبراني | already linked to catalog event |
 | candidate-dhahran-expo-calendar-offshore-technology-innovation-technical-conference-expo-offshore-arabia-20260824-18d15b29 | linked-existing | event-offshore-technology-innovation-technical-conference-expo-offshore-arabia | already linked to catalog event |
 | candidate-eye-of-riyadh-events-smart-data-ai-summit-20260826-f9946ea8 | linked-existing | event-smart-data-ai-summit | already linked to catalog event |
+| candidate-informa-connect-saudi-events-hrse-ksa-hr-summit-expo-20260830-b925c298 | linked-existing | event-hrse-ksa | trusted duplicate linked to existing catalog event |
 | candidate-rfecc-whats-on-saudi-logistic-warehousing-expo-20260830-ff3565ba | linked-existing | event-saudi-logistic-038-warehousing-expo | already linked to catalog event |
 | candidate-eye-of-riyadh-events-hrse-ksa-20260830-6945a87a | linked-existing | event-hrse-ksa | already linked to catalog event |
 | candidate-eye-of-riyadh-events-big-5-construct-saudi-20260830-2238e3a0 | linked-existing | event-big-5-construct-saudi | already linked to catalog event |
@@ -316,6 +329,7 @@
 | candidate-riyadh-city-events-saudi-wood-expo-20260908-d1fa2ea0 | linked-existing | event-saudi-wood-expo | already linked to catalog event |
 | candidate-riyadh-city-events-saudi-industrial-series-20260908-5562eb43 | linked-existing | event-saudi-industrial-series | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-in-act-act-ix-20260911-4a38d19e | linked-existing | event-in-act-act-ix | already linked to catalog event |
+| candidate-tuwaiq-academy-bootcamps-معسكر-طويق-السيبراني-20260913-d741a736 | linked-existing | event-معسكر-طويق-السيبراني | already linked to catalog event |
 | candidate-riyadh-city-events-hotel-hospitality-expo-20260913-d9cf02f3 | linked-existing | event-hotel-hospitality-expo | already linked to catalog event |
 | candidate-riyadh-city-events-global-forum-on-the-ethics-of-ai-gfeai-20260914-a5785294 | linked-existing | event-global-forum-on-the-ethics-of-ai-gfeai | already linked to catalog event |
 | candidate-sdaia-calendar-events-global-forum-on-the-ethics-of-ai-20260914-350732da | linked-existing | event-global-forum-on-the-ethics-of-ai | already linked to catalog event |

@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-12T08:34:57.075Z",
+  "generated_at": "2026-07-12T12:54:25.854Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
-    "targets": 12,
-    "candidates": 13,
-    "enriched": 12,
-    "fetched": 12,
-    "images": 10,
+    "targets": 13,
+    "candidates": 15,
+    "enriched": 13,
+    "fetched": 13,
+    "images": 11,
     "fetch_failures": 0
   },
   "enriched": [
@@ -40,6 +40,14 @@
       "title": "Kashtah",
       "source_method": "official-page-html",
       "image_url": "https://scth.scene7.com/is/image/scth/kashtah?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-al-farabi-comeback-night",
+      "title": "Al-Farabi: Comeback Night",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/al-farab-comeback-night?wid=1920&hei=1080&fit=constrain&fmt=webp",
       "fetched": true,
       "features": 7
     },

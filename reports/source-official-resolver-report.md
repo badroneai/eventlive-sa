@@ -1,6 +1,6 @@
 # EventLive Official Resolver Report
 
-- generated_at: 2026-07-12T08:35:36.823Z
+- generated_at: 2026-07-12T12:55:04.267Z
 - source_ops_report: reports/source-ops-report.json
 - leads_seen: 10
 - resolver_tasks: 8
@@ -10,12 +10,12 @@
 
 | Priority | Lead | Source | City | Quality | Target sources | Next action |
 |---:|---|---|---|---|---|---|
-| 107 | Cat Show 3rd season in Saudi Pet & Vet Expo | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, saudi-water-authority-events, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 107 | Family Office Investment Summit | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | ricec-events, asharqia-chamber-events, dhahran-expo-calendar, jcci-events-center, madinah-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 107 | Riyadh 2026 Venture Capital World Summit | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, saudi-water-authority-events, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 107 | Saudi Pet & Vet Expo 5th Edition 2026 | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, saudi-water-authority-events, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 97 | 25TH WPC Energy Congress | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, saudi-water-authority-events, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 97 | Family Office Investment Meeting | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | saudi-contractors-authority-events, asharqia-chamber-events, invest-saudi-events, jcci-events-center, jouf-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 107 | Cat Show 3rd season in Saudi Pet & Vet Expo | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, informa-connect-saudi-events, saudi-water-authority-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 107 | Family Office Investment Summit | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | informa-connect-saudi-events, ricec-events, asharqia-chamber-events, dhahran-expo-calendar, jcci-events-center | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 107 | Riyadh 2026 Venture Capital World Summit | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, informa-connect-saudi-events, saudi-water-authority-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 107 | Saudi Pet & Vet Expo 5th Edition 2026 | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, informa-connect-saudi-events, saudi-water-authority-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 97 | 25TH WPC Energy Congress | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, informa-connect-saudi-events, saudi-water-authority-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 97 | Family Office Investment Meeting | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | informa-connect-saudi-events, saudi-contractors-authority-events, asharqia-chamber-events, invest-saudi-events, jcci-events-center | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 87 | Riyadh Social and Language Exchange (Make New Friends) ✨ | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | enjoy-saudi-events, misk-hub-events, riyadh-city-events, riyadh-season, aseer-season-asda | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 87 | Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨ | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | misk-hub-events, enjoy-saudi-events, riyadh-city-events, riyadh-season, platinumlist-saudi-city-network | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 
@@ -26,19 +26,19 @@
 - [site:rfecc.sa "Cat Show 3rd season in Saudi Pet & Vet Expo" "Riyadh"](https://www.google.com/search?q=site%3Arfecc.sa%20%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22)
 - [site:ricec.com "Cat Show 3rd season in Saudi Pet & Vet Expo" "Riyadh"](https://www.google.com/search?q=site%3Aricec.com%20%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22)
 - [site:dhahranexpo.com.sa "Cat Show 3rd season in Saudi Pet & Vet Expo" "Riyadh"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22)
+- [site:informaconnect.com "Cat Show 3rd season in Saudi Pet & Vet Expo" "Riyadh"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22)
 - [site:swa.gov.sa "Cat Show 3rd season in Saudi Pet & Vet Expo" "Riyadh"](https://www.google.com/search?q=site%3Aswa.gov.sa%20%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22)
-- [site:sdaia.gov.sa "Cat Show 3rd season in Saudi Pet & Vet Expo" "Riyadh"](https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22)
 - ["Cat Show 3rd season in Saudi Pet & Vet Expo" "Riyadh" official](https://www.google.com/search?q=%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22%20official)
 - ["Cat Show 3rd season in Saudi Pet & Vet Expo" "Riyadh" organizer](https://www.google.com/search?q=%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22%20organizer)
 - ["Cat Show 3rd season in Saudi Pet & Vet Expo" "Riyadh" tickets](https://www.google.com/search?q=%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22%20tickets)
 
 ### Family Office Investment Summit
 
+- [site:informaconnect.com "Family Office Investment Summit" "Riyadh"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22)
 - [site:ricec.com "Family Office Investment Summit" "Riyadh"](https://www.google.com/search?q=site%3Aricec.com%20%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22)
 - [site:chamber.org.sa "Family Office Investment Summit" "Riyadh"](https://www.google.com/search?q=site%3Achamber.org.sa%20%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22)
 - [site:dhahranexpo.com.sa "Family Office Investment Summit" "Riyadh"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22)
 - [site:jcci.org.sa "Family Office Investment Summit" "Riyadh"](https://www.google.com/search?q=site%3Ajcci.org.sa%20%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22)
-- [site:mcci.org.sa "Family Office Investment Summit" "Riyadh"](https://www.google.com/search?q=site%3Amcci.org.sa%20%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22)
 - ["Family Office Investment Summit" "Riyadh" official](https://www.google.com/search?q=%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22%20official)
 - ["Family Office Investment Summit" "Riyadh" organizer](https://www.google.com/search?q=%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22%20organizer)
 - ["Family Office Investment Summit" "Riyadh" tickets](https://www.google.com/search?q=%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22%20tickets)
@@ -48,8 +48,8 @@
 - [site:rfecc.sa "Riyadh 2026 Venture Capital World Summit" "Riyadh"](https://www.google.com/search?q=site%3Arfecc.sa%20%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22)
 - [site:ricec.com "Riyadh 2026 Venture Capital World Summit" "Riyadh"](https://www.google.com/search?q=site%3Aricec.com%20%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22)
 - [site:dhahranexpo.com.sa "Riyadh 2026 Venture Capital World Summit" "Riyadh"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22)
+- [site:informaconnect.com "Riyadh 2026 Venture Capital World Summit" "Riyadh"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22)
 - [site:swa.gov.sa "Riyadh 2026 Venture Capital World Summit" "Riyadh"](https://www.google.com/search?q=site%3Aswa.gov.sa%20%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22)
-- [site:sdaia.gov.sa "Riyadh 2026 Venture Capital World Summit" "Riyadh"](https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22)
 - ["Riyadh 2026 Venture Capital World Summit" "Riyadh" official](https://www.google.com/search?q=%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22%20official)
 - ["Riyadh 2026 Venture Capital World Summit" "Riyadh" organizer](https://www.google.com/search?q=%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22%20organizer)
 - ["Riyadh 2026 Venture Capital World Summit" "Riyadh" tickets](https://www.google.com/search?q=%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22%20tickets)
@@ -59,8 +59,8 @@
 - [site:rfecc.sa "Saudi Pet & Vet Expo 5th Edition 2026" "Riyadh"](https://www.google.com/search?q=site%3Arfecc.sa%20%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22)
 - [site:ricec.com "Saudi Pet & Vet Expo 5th Edition 2026" "Riyadh"](https://www.google.com/search?q=site%3Aricec.com%20%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22)
 - [site:dhahranexpo.com.sa "Saudi Pet & Vet Expo 5th Edition 2026" "Riyadh"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22)
+- [site:informaconnect.com "Saudi Pet & Vet Expo 5th Edition 2026" "Riyadh"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22)
 - [site:swa.gov.sa "Saudi Pet & Vet Expo 5th Edition 2026" "Riyadh"](https://www.google.com/search?q=site%3Aswa.gov.sa%20%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22)
-- [site:sdaia.gov.sa "Saudi Pet & Vet Expo 5th Edition 2026" "Riyadh"](https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22)
 - ["Saudi Pet & Vet Expo 5th Edition 2026" "Riyadh" official](https://www.google.com/search?q=%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22%20official)
 - ["Saudi Pet & Vet Expo 5th Edition 2026" "Riyadh" organizer](https://www.google.com/search?q=%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22%20organizer)
 - ["Saudi Pet & Vet Expo 5th Edition 2026" "Riyadh" tickets](https://www.google.com/search?q=%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22%20tickets)
@@ -70,19 +70,19 @@
 - [site:rfecc.sa "25TH WPC Energy Congress" "Riyadh"](https://www.google.com/search?q=site%3Arfecc.sa%20%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22)
 - [site:ricec.com "25TH WPC Energy Congress" "Riyadh"](https://www.google.com/search?q=site%3Aricec.com%20%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22)
 - [site:dhahranexpo.com.sa "25TH WPC Energy Congress" "Riyadh"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22)
+- [site:informaconnect.com "25TH WPC Energy Congress" "Riyadh"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22)
 - [site:swa.gov.sa "25TH WPC Energy Congress" "Riyadh"](https://www.google.com/search?q=site%3Aswa.gov.sa%20%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22)
-- [site:sdaia.gov.sa "25TH WPC Energy Congress" "Riyadh"](https://www.google.com/search?q=site%3Asdaia.gov.sa%20%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22)
 - ["25TH WPC Energy Congress" "Riyadh" official](https://www.google.com/search?q=%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22%20official)
 - ["25TH WPC Energy Congress" "Riyadh" organizer](https://www.google.com/search?q=%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22%20organizer)
 - ["25TH WPC Energy Congress" "Riyadh" tickets](https://www.google.com/search?q=%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22%20tickets)
 
 ### Family Office Investment Meeting
 
+- [site:informaconnect.com "Family Office Investment Meeting" "Riyadh"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22)
 - [site:sca.gov.sa "Family Office Investment Meeting" "Riyadh"](https://www.google.com/search?q=site%3Asca.gov.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22)
 - [site:chamber.org.sa "Family Office Investment Meeting" "Riyadh"](https://www.google.com/search?q=site%3Achamber.org.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22)
 - [site:investsaudi.sa "Family Office Investment Meeting" "Riyadh"](https://www.google.com/search?q=site%3Ainvestsaudi.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22)
 - [site:jcci.org.sa "Family Office Investment Meeting" "Riyadh"](https://www.google.com/search?q=site%3Ajcci.org.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22)
-- [site:ajcci.org.sa "Family Office Investment Meeting" "Riyadh"](https://www.google.com/search?q=site%3Aajcci.org.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22)
 - ["Family Office Investment Meeting" "Riyadh" official](https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20official)
 - ["Family Office Investment Meeting" "Riyadh" organizer](https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20organizer)
 - ["Family Office Investment Meeting" "Riyadh" tickets](https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20tickets)
