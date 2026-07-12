@@ -6,15 +6,31 @@ function cleanList(values = []) {
   return values.filter(Boolean).map((value) => String(value).trim()).filter(Boolean);
 }
 
+function stablePublicValue(value) {
+  if (Array.isArray(value)) return value.map(stablePublicValue);
+  if (!value || typeof value !== 'object') return value;
+  return Object.fromEntries(
+    Object.entries(value)
+      .filter(([, nested]) => nested !== undefined)
+      .sort(([left], [right]) => left.localeCompare(right))
+      .map(([key, nested]) => [key, stablePublicValue(nested)])
+  );
+}
+
 function normalizedSessions(event = {}) {
   return (event.sessions || []).map((session) => ({
+    id: session.id || '',
     title: session.title || session.session_title || '',
     starts_at: session.starts_at || session.start_at || '',
     ends_at: session.ends_at || session.end_at || '',
+    session_type: session.session_type || '',
     speaker: session.speaker || '',
+    moderator: session.moderator || '',
     room: session.room || '',
     track: session.track || '',
-    source_url: session.source_url || ''
+    source: session.source || '',
+    source_url: session.source_url || '',
+    inferred: Boolean(session.inferred)
   }));
 }
 
@@ -25,6 +41,7 @@ export function eventSearchSnapshot(event = {}) {
     file_slug: event.file_slug || '',
     title: event.title || '',
     summary: event.summary || '',
+    rich_summary: event.rich_summary || '',
     description: event.description || '',
     starts_at: event.starts_at || '',
     ends_at: event.ends_at || '',
@@ -33,36 +50,61 @@ export function eventSearchSnapshot(event = {}) {
     city: event.city || '',
     venue: event.venue || '',
     venue_address: event.venue_address || '',
+    maps_url: event.maps_url || '',
+    directions_url: event.directions_url || '',
     latitude: event.latitude ?? event.lat ?? null,
     longitude: event.longitude ?? event.lng ?? event.lon ?? null,
     organizer: event.organizer || '',
+    organizer_url: event.organizer_url || '',
+    performers: stablePublicValue(event.performers || []),
+    language: event.language || '',
     category: event.category || '',
+    category_label: event.category_label || '',
     category_slug: event.category_slug || '',
     price_label: event.price_label || '',
     registration_status: event.registration_status || event.ticket_status || '',
+    offer_valid_from: event.offer_valid_from || '',
+    registration_deadline: event.registration_deadline || '',
     ticket_url: event.ticket_url || '',
     registration_url: event.registration_url || '',
+    live_url: event.live_url || '',
+    attendance_mode: event.attendance_mode || '',
+    attendance_window: event.attendance_window || '',
+    attendance_window_ready: Boolean(event.attendance_window_ready),
+    parking_info: event.parking_info || '',
+    accessibility_info: event.accessibility_info || '',
+    age_policy: event.age_policy || '',
     source_label: event.source_label || '',
+    source_owner: event.source_owner || '',
+    source_type: event.source_type || '',
+    source_confidence: event.source_confidence || event.confidence || '',
     source_url: event.source_url || '',
     evidence_url: event.evidence_url || '',
+    location_evidence_url: event.location_evidence_url || '',
+    approval_status: event.approval_status || '',
+    approval_status_label: event.approval_status_label || '',
+    publication_gate: event.publication_gate || '',
+    verification_method: event.verification_method || '',
     image_url: event.image_url || '',
     image_alt: event.image_alt || '',
     trust_tier: event.trust_tier || '',
     trust_label: event.trust_label || '',
     live_schedule_ready: Boolean(event.live_schedule_ready),
     agenda_ready: Boolean(event.agenda_ready),
-    audiences: cleanList((event.audience_labels || []).map((item) => item.slug || item.label || item.label_ar)),
+    schedule_depth: event.schedule_depth || '',
+    schedule_quality: event.schedule_quality || '',
+    official_sessions_count: Number(event.official_sessions_count || 0),
+    sessions_count: Number(event.sessions_count || event.sessions?.length || 0),
+    tracks_count: Number(event.tracks_count || 0),
+    rooms_count: Number(event.rooms_count || 0),
+    live_updates_count: Number(event.live_updates_count || 0),
+    linked_live_updates_count: Number(event.linked_live_updates_count || 0),
+    audiences: stablePublicValue(event.audience_labels || []),
     tags: cleanList(event.tags || []),
+    highlights: stablePublicValue(event.highlights || []),
+    live_updates: stablePublicValue(event.live_updates || []),
     sessions: normalizedSessions(event),
-    program_outline: {
-      provider: outline.provider || '',
-      official_description: outline.official_description || '',
-      duration_text: outline.duration_text || '',
-      registration_deadline: outline.registration_deadline || '',
-      goals: cleanList(outline.goals || []),
-      features: cleanList(outline.features || []),
-      requirements: cleanList(outline.requirements || [])
-    }
+    program_outline: stablePublicValue(outline)
   };
 }
 

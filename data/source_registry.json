@@ -2445,6 +2445,37 @@
       "max_candidates_per_run": 40,
       "max_ended_per_run": 100,
       "notes": "Activated 2026-07-10 from the public first-party What's On calendar. Every six-hour run reads current/upcoming cards, opens their detail pages for precise sessions, registration, fees, room and high-resolution imagery, and rejects past-labelled or date-incomplete cards."
+    },
+    {
+      "id": "informa-connect-saudi-events",
+      "name": "Informa Connect Saudi Event Portfolio",
+      "url": "https://informaconnect.com/",
+      "collector_url": "https://informaconnect.com/sitemap-sites.xml",
+      "owner": "Informa Connect / Informa Group",
+      "source_type": "conference-organizer",
+      "trust_level": "official",
+      "priority": 86,
+      "coverage": "First-party Saudi conferences, exhibitions, summits, professional events, schedules, registration routes, and event imagery across Informa Connect event sites.",
+      "cities": [
+        "Riyadh",
+        "Jeddah",
+        "Dammam",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "conferences",
+        "exhibitions",
+        "business",
+        "technology",
+        "investment",
+        "professional events"
+      ],
+      "fetch_method": "sitemap-pages",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "First-party Informa event page with Event structured data, an explicit start and end date, Saudi location evidence, organizer identity, and a canonical event URL.",
+      "candidate_gate": "duplicate-review",
+      "max_candidates_per_run": 40,
+      "notes": "Activated 2026-07-12 from Informa's public portfolio sitemap. The recurring collector inspects Saudi, Riyadh, and Jeddah event sites, preserves official high-resolution imagery and schedules, deduplicates Arabic and English editions, and rejects ended, cancelled, date-incomplete, non-Saudi, visa, invitation, and form pages."
     }
   ]
 }

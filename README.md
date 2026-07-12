@@ -16,6 +16,11 @@ npm run sources:ops
 npm run seo:indexnow
 ```
 
+`npm run build` uses the verified smart builder: it reuses unchanged Arabic and
+English event pages when a valid prior build cache exists, and automatically
+falls back to a full build when templates, state, or required output are not
+safe to reuse. Use `npm run build:full` to force a complete rebuild.
+
 ## Lifecycle commands
 
 ```bash

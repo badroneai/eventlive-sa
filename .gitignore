@@ -2,6 +2,9 @@ node_modules/
 .playwright-cli/
 .codebase-memory/
 .eventlive-cache/
+dist/.eventlive-build-state.json
+reports/incremental-build-report.json
+reports/incremental-build-report.md
 output/
 workspaces/
 tmp-*.js
