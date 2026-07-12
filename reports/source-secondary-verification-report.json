@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-secondary-verification.v1",
-  "generated_at": "2026-07-12T13:56:58.219Z",
+  "generated_at": "2026-07-12T19:33:23.737Z",
   "source_candidates": "data/source_candidates.json",
   "source_ops_report": "reports/source-ops-report.json",
   "totals": {
@@ -15,7 +15,7 @@
   "promoted": [],
   "still_blocked_by_reason": {
     "public-listing-needs-official-match": 1,
-    "needs-secondary-official-proof": 17,
-    "not-secondary-verifiable": 3
+    "not-secondary-verifiable": 3,
+    "needs-secondary-official-proof": 17
   }
 }

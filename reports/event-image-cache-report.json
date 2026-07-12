@@ -1,22 +1,64 @@
 {
-  "generated_at": "2026-07-12T14:01:34.864Z",
+  "generated_at": "2026-07-12T19:38:40.014Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 604,
-    "fetched": 1,
-    "reused": 493,
-    "failed": 6,
-    "skipped_recent_failures": 6,
-    "remembered_failures": 9
+    "cached_total": 611,
+    "fetched": 8,
+    "reused": 492,
+    "failed": 0,
+    "skipped_recent_failures": 0,
+    "remembered_failures": 3
   },
   "fetched": [
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122220/images-5.jpg",
+      "file": "dist/assets/event-images/saudi-logistic-warehousing-expo-9027df173b.jpg",
+      "bytes": 4385,
+      "events": 1
+    },
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/1tllcxdg.n5m.jpg",
       "file": "dist/assets/event-images/معسكر-أساسيات-هندسة-الميكاترونكس-83d2c7f296.jpg",
       "bytes": 142680,
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122706/fibo_arabia_logo_10431.webp",
+      "file": "dist/assets/event-images/fibo-2026-a3720e3b76.webp",
+      "bytes": 3872,
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2025/02/26113050/images-4.png",
+      "file": "dist/assets/event-images/china-homelife-saudi-arabia-2026-7de58a4dbb.png",
+      "bytes": 2472,
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/03/12031444/inter-aviation-Arabia-HP-PR-logo.png",
+      "file": "dist/assets/event-images/inter-aviation-arabia-ad9ea7f3b0.png",
+      "bytes": 13823,
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122431/WMT-Spotlight-Riyadh-Dates-1200x675-1-1024x576-1.jpg",
+      "file": "dist/assets/event-images/wtm-spotlight-riyadh-28228646b1.jpg",
+      "bytes": 34795,
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06123740/GqbqdoDWMAAm16R.jpg",
+      "file": "dist/assets/event-images/natrual-expo-af262c6fe0.jpg",
+      "bytes": 177148,
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/68a12e07a6da5cc989dd7fbd73d03107.jpg",
+      "file": "dist/assets/event-images/bedayat-beginnings-of-saudi-art-movement-5815006859.jpg",
+      "bytes": 29283,
       "events": 1
     }
   ],
@@ -472,11 +514,6 @@
       "events": 4
     },
     {
-      "source_url": "https://www.qu.edu.sa/wp-content/uploads/2025/07/qu_img_v3-768x432-1.webp",
-      "file": "dist/assets/event-images/انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم-69e05e13ee.webp",
-      "events": 2
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-06/Event.jpg?itok=piscDT1i",
       "file": "dist/assets/event-images/saif-summer-program-f3f95cd64f.jpg",
       "events": 1
@@ -597,11 +634,6 @@
       "events": 2
     },
     {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/psvxh1jc.vwh.png",
-      "file": "dist/assets/event-images/معسكر-تصميم-وتصنيع-الحلول-الهندسية-a59ff44dd2.png",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fdb75fd81cbee99ea30222efe695233a.png",
       "file": "dist/assets/event-images/the-magical-suitcase-d1e9724d19.png",
       "events": 1
@@ -669,11 +701,6 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/%282%29%20%281%29.png?itok=BEC7XaXW",
       "file": "dist/assets/event-images/summer-splash-running-event-b09009b157.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/hym412o4.xrm.webp",
-      "file": "dist/assets/event-images/معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي-1a7ddcd5eb.webp",
       "events": 1
     },
     {
@@ -829,6 +856,16 @@
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/p5imxiwx.1ub.webp",
       "file": "dist/assets/event-images/معسكر-طويق-للقطاع-الأمني-البنية-التحتية-19aa89653a.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/hym412o4.xrm.webp",
+      "file": "dist/assets/event-images/معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي-1a7ddcd5eb.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/psvxh1jc.vwh.png",
+      "file": "dist/assets/event-images/معسكر-تصميم-وتصنيع-الحلول-الهندسية-a59ff44dd2.png",
       "events": 1
     },
     {
@@ -1595,6 +1632,11 @@
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/Screen%20Shot%202026-02-12%20at%205.37.39%20AM.png?itok=_tkBxXOE",
       "file": "dist/assets/event-images/human-capability-initiative-conference-15d668bd41.png",
       "events": 1
+    },
+    {
+      "source_url": "https://www.qu.edu.sa/wp-content/uploads/2025/07/qu_img_v3-768x432-1.webp",
+      "file": "dist/assets/event-images/انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم-69e05e13ee.webp",
+      "events": 2
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/766.png?itok=fW0JAe0G",
@@ -2480,116 +2522,13 @@
       "source_url": "https://services.mi.org.sa/upload/events/main/638825356566925613.png",
       "file": "dist/assets/event-images/الابتكار-وريادة-الأعمال-في-منظومة-الحج-0b52b5adbf.png",
       "events": 1
-    },
-    {
-      "source_url": "https://abhacci.org.sa/Files/Images/news226m.jpg",
-      "file": "dist/assets/event-images/الدورة-التدريبية-الجماهيرية-انطلاقة-العظماء-66b508b881.jpg",
-      "events": 1
     }
   ],
   "rejected_removed": [],
-  "skipped_recent_failures": [
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122220/images-5.jpg",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-12T19:38:35.125Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/03/12031444/inter-aviation-Arabia-HP-PR-logo.png",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-12T19:38:35.125Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122706/fibo_arabia_logo_10431.webp",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-12T19:38:35.125Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122431/WMT-Spotlight-Riyadh-Dates-1200x675-1-1024x576-1.jpg",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-12T19:38:35.125Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06123740/GqbqdoDWMAAm16R.jpg",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-12T19:38:35.125Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2025/02/26113050/images-4.png",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-12T19:38:35.125Z",
-      "skipped": true
-    }
-  ],
-  "failed": [
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122220/images-5.jpg",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-12T19:38:35.125Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/03/12031444/inter-aviation-Arabia-HP-PR-logo.png",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-12T19:38:35.125Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122706/fibo_arabia_logo_10431.webp",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-12T19:38:35.125Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122431/WMT-Spotlight-Riyadh-Dates-1200x675-1-1024x576-1.jpg",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-12T19:38:35.125Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06123740/GqbqdoDWMAAm16R.jpg",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-12T19:38:35.125Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2025/02/26113050/images-4.png",
-      "events": 1,
-      "reason": "certificate has expired",
-      "failure_kind": "tls-certificate",
-      "retry_after": "2026-07-12T19:38:35.125Z",
-      "skipped": true
-    }
-  ],
+  "skipped_recent_failures": [],
+  "failed": [],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:1"
+    "fetched:8"
   ]
 }

@@ -1,6 +1,6 @@
 # Tuwaiq Program Enrichment Report
 
-- generated_at: 2026-07-12T13:56:59.589Z
+- generated_at: 2026-07-12T19:33:25.014Z
 - targets: 21
 - enriched: 21
 - failed: 0
@@ -27,7 +27,7 @@
 - معسكر هندسة تطبيقات الذكاء الاصطناعي التوليدي باستخدام النماذج اللغوية الضخمة (ab7DP73J) - goals=8, features=5, requirements=8
 - معسكر بناء وتطوير نماذج الذكاء الاصطناعي (o4bVMP8V) - goals=7, features=6, requirements=12
 - معسكر إدارة الحوكمة والمخاطر والامتثال GRC (aXzlnR2d) - goals=7, features=8, requirements=4
-- معسكر طويق السيبراني (oA2ryDzB) - goals=3, features=4, requirements=12
+- معسكر طويق السيبراني (oA2ryDzB) - goals=3, features=3, requirements=5
 
 ## Failed
 

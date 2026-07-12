@@ -1,13 +1,23 @@
 {
-  "generated_at": "2026-07-12T13:57:55.481Z",
+  "generated_at": "2026-07-12T19:34:18.025Z",
   "totals": {
-    "targets": 1,
-    "enriched": 1,
-    "fetched": 0,
-    "images": 1,
+    "targets": 2,
+    "enriched": 2,
+    "fetched": 1,
+    "images": 2,
     "fetch_failures": 1
   },
   "enriched": [
+    {
+      "id": "event-bedayat-beginnings-of-saudi-art-movement",
+      "title": "Bedayat: Beginnings of Saudi Art Movement",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-museum/bedayat-exhibition-beginnings-saudi-art-movement",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
     {
       "id": "event-music-festival-mdlbeast-soundstorm",
       "title": "Music Festival: MDLBEAST SoundStorm",

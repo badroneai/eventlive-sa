@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-07-12T13:56:58.412Z",
+  "published_at": "2026-07-12T19:33:23.907Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -24,9 +24,9 @@
   "canonical_event_id_remaps": [],
   "published": [
     {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-أساسيات-هندسة-الميكاترونكس-20260816-54c2e27f",
-      "event_id": "event-معسكر-أساسيات-هندسة-الميكاترونكس",
-      "title": "معسكر أساسيات هندسة الميكاترونكس"
+      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260713-e0a239ef",
+      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
+      "title": "Bedayat: Beginnings of Saudi Art Movement"
     },
     {
       "candidate_id": "candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702",
@@ -594,12 +594,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-misk-hub-programs-application-deadline-2030-leaders-20260712-68dd4c4c",
-      "event_id": "event-application-deadline-2030-leaders",
-      "title": "Application deadline: 2030 Leaders",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-riyadh-city-events-mishkat-summer-camp-20260712-704761b4",
       "event_id": "event-mishkat-summer-camp",
       "title": "Mishkat Summer Camp",
@@ -621,12 +615,6 @@
       "candidate_id": "candidate-umm-al-qura-events-دورة-الفحوصات-المكروبيولوجية-لمياه-الشرب-الأسس-العلمية-والتطبيقات-البحثي-20260712-056dae07",
       "event_id": "event-دورة-الفحوصات-المكروبيولوجية-لمياه-الشرب-الأسس-العلمية-والتطبيقات-البحثي",
       "title": "دورة الفحوصات المكروبيولوجية لمياه الشرب: الأسس العلمية والتطبيقات البحثية",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-qassim-university-events-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم-20260712-dc748566",
-      "event_id": "event-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم",
-      "title": "انطلاق النادي الصيفي التاسع لجامعة القصيم",
       "reason": "already linked to catalog event"
     },
     {
@@ -954,6 +942,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-misk-hub-programs-application-deadline-2030-leaders-20260715-68dd4c4c",
+      "event_id": "event-application-deadline-2030-leaders",
+      "title": "Application deadline: 2030 Leaders",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-kinusaiga-art-20260715-98b157b0",
       "event_id": "event-kinusaiga-art",
       "title": "Kinusaiga Art",
@@ -1254,12 +1248,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي-20260726-12263779",
-      "event_id": "event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي",
-      "title": "معسكر تطوير مواقع الويب باستخدام Java ودمج تقنيات الذكاء الاصطناعي",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية-20260726-3aa6cb44",
       "event_id": "event-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية",
       "title": "دورة تقنية PCR بالمعامل الحيوية الجزيئية",
@@ -1476,6 +1464,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي-20260802-12263779",
+      "event_id": "event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي",
+      "title": "معسكر تطوير مواقع الويب باستخدام Java ودمج تقنيات الذكاء الاصطناعي",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-misk-hub-programs-nonprofit-sector-skills-program-20260803-075740c9",
       "event_id": "event-nonprofit-sector-skills-program",
       "title": "Nonprofit Sector Skills Program",
@@ -1593,6 +1587,12 @@
       "candidate_id": "candidate-umm-al-qura-events-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem-20260816-84787696",
       "event_id": "event-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem",
       "title": "دورة اساسيات المجهر الالكتروني الماسح SEM",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-أساسيات-هندسة-الميكاترونكس-20260816-54c2e27f",
+      "event_id": "event-معسكر-أساسيات-هندسة-الميكاترونكس",
+      "title": "معسكر أساسيات هندسة الميكاترونكس",
       "reason": "already linked to catalog event"
     },
     {

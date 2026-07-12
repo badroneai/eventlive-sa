@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T13:56:59.589Z",
+  "generated_at": "2026-07-12T19:33:25.014Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 21,
@@ -172,8 +172,8 @@
       "title": "معسكر طويق السيبراني",
       "slug": "oA2ryDzB",
       "goals": 3,
-      "features": 4,
-      "requirements": 12
+      "features": 3,
+      "requirements": 5
     }
   ],
   "failed": []
