@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-07-12T04:02:16.569Z
+Generated at: 2026-07-12T08:40:27.546Z
 
 ## Operating Rule
 
@@ -9,13 +9,13 @@ Raw collection is not publication. Every source run preserves evidence, separate
 ## Totals
 
 - Sources: 85
-- Attempted this run: 20
-- Deferred by adaptive cadence: 25
+- Attempted this run: 18
+- Deferred by adaptive cadence: 27
 - Productive: 18
 - Zero-yield: 0
-- Collector errors: 1
+- Collector errors: 0
 - Persistent collector errors: 8
-- Probe blocked: 1
+- Probe blocked: 0
 - Auto-publish eligible source lanes: 12
 
 ## Stalled / Blocked Focus
@@ -60,7 +60,7 @@ Call log:
 | Priority | Source | Ring | Status | Extracted | Auto-publish lane | Next action |
 |---:|---|---|---|---:|---|---|
 | 1 | nec-saudi-events | partnership | partnership | 0 | no | Partnership/API lane; do not scrape protected or app-only data. |
-| 2 | visit-saudi-calendar | active-collector | productive | 11 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 2 | visit-saudi-calendar | active-collector | productive | 12 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 3 | moc-cultural-calendar | active-collector | collector-error | 0 | yes | Fix collector error: fetch failed; fetch failed |
 | 4 | mos-events | active-collector | collector-error | 0 | yes | Fix collector error: fetch failed; page.goto: Timeout 60000ms exceeded.
 Call log:

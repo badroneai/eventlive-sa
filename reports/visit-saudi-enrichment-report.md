@@ -1,11 +1,11 @@
 # Visit Saudi Calendar Enrichment Report
 
-- generated_at: 2026-07-12T03:59:12.427Z
-- targets: 11
-- candidates: 12
-- enriched: 11
-- fetched: 11
-- images: 9
+- generated_at: 2026-07-12T08:34:57.075Z
+- targets: 12
+- candidates: 13
+- enriched: 12
+- fetched: 12
+- images: 10
 - fetch_failures: 0
 
 ## Enriched
@@ -14,6 +14,7 @@
 - Arabic Language Exhibition for kids - official-page-html - image=yes - features=7
 - Aseer Season - official-page-html - image=yes - features=7
 - Kashtah - official-page-html - image=yes - features=7
+- Saleh El Nawawy: Stand Up Comedy Show - official-page-html - image=yes - features=7
 - International Falcon Breeders Auction - official-page-html - image=yes - features=7
 - FIBO Arabia 2026 - official-page-html - image=yes - features=7
 - Saudi National Day - official-page-html - image=yes - features=7

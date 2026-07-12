@@ -1,6 +1,6 @@
 # EventLive Source Ingestion Plan
 
-Generated at: 2026-07-12T04:02:16.406Z
+Generated at: 2026-07-12T08:40:27.417Z
 
 ## Executive Model
 
@@ -51,7 +51,7 @@ EventLive should not treat all registered sources equally. The operating model i
 
 | Source | Last status | Extracted | Probe | Next action |
 |---|---|---:|---|---|
-| visit-saudi-calendar | ok | 11 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
+| visit-saudi-calendar | ok | 12 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | moc-cultural-calendar | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | mos-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | experience-alula-events | ok | 9 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
@@ -78,7 +78,7 @@ EventLive should not treat all registered sources equally. The operating model i
 | sdaia-calendar-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | makkah-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | scega-exhibitions-conferences | ok | 4 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| asharqia-chamber-events | error | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| asharqia-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | qassim-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | abha-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | jazan-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |

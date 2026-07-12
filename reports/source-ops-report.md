@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-07-12T04:02:16.719Z
+- generated_at: 2026-07-12T08:40:27.657Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -12,30 +12,30 @@
 
 - Sources in registry: 85
 - Runnable collector lanes: 45
-- Sources due now: 20
-- Sources attempted in latest collection: 20
-- Sources deferred by cadence: 25
+- Sources due now: 18
+- Sources attempted in latest collection: 18
+- Sources deferred by cadence: 27
 - Due-source coverage: 100%
 - Scheduled runnable coverage: 100%
-- Whole-registry attempted this run: 24%
-- Healthy sources: 19
+- Whole-registry attempted this run: 21%
+- Healthy sources: 18
 - Zero-yield sources: 0
 - High-priority unattempted sources: 3
-- Candidates: 450
+- Candidates: 451
 - Actionable candidates: 0
 - Ready for review: 0
 - Ready for catalog promotion: 0
-- Linked to catalog from candidates: 432
+- Linked to catalog from candidates: 433
 - Stale unpublished candidates: 0
 - Duplicate risk: 0
 - Recommendation: استخدم أقوى مرشحي الاكتشاف لبناء مطابقة آلية مع مصادر رسمية؛ لا تنشر مصدر اكتشاف منفرداً.
 
 ## Candidate Funnel
 
-- review_status.approved-for-catalog: 432
+- review_status.approved-for-catalog: 433
 - review_status.evidence-captured: 4
 - review_status.new: 14
-- publication_gate.catalog-review: 432
+- publication_gate.catalog-review: 433
 - publication_gate.duplicate-review: 1
 - publication_gate.source-evidence: 17
 - discovery_quality.strong-lead: 26
@@ -67,7 +67,7 @@
 | Priority | Source | Status | Extracted | Candidates | Next action |
 |---:|---|---|---:|---:|---|
 | 1 | National Events Center / Saudi Events | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
-| 2 | Visit Saudi Calendar | healthy | 11 | 12 | استمر بالمراجعة والتكرار قبل النشر. |
+| 2 | Visit Saudi Calendar | healthy | 12 | 13 | استمر بالمراجعة والتكرار قبل النشر. |
 | 3 | Ministry of Culture Cultural Calendar | deferred | 0 | 0 | مؤجل حتى 2026-07-12T09:22:14.505Z وفق الجدولة التكيفية. |
 | 4 | Ministry of Sport Events | deferred | 0 | 0 | مؤجل حتى 2026-07-12T09:22:14.505Z وفق الجدولة التكيفية. |
 | 5 | webook Explore | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
@@ -116,7 +116,7 @@
 | 48 | Saudi Food and Drug Authority Events | healthy | 7 | 7 | استمر بالمراجعة والتكرار قبل النشر. |
 | 49 | Saudi Contractors Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 50 | Saudi Winter Events Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 51 | Riyadh City Events | healthy | 94 | 94 | استمر بالمراجعة والتكرار قبل النشر. |
+| 51 | Riyadh City Events | deferred | 0 | 94 | مؤجل حتى 2026-07-12T09:55:51.402Z وفق الجدولة التكيفية. |
 | 52 | Monsha'at Academy Programs | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 53 | General Entertainment Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 54 | SDAIA Calendar and Events | deferred | 0 | 2 | مؤجل حتى 2026-07-12T09:22:14.505Z وفق الجدولة التكيفية. |
@@ -124,10 +124,7 @@
 | 56 | SCEGA ePortal Events | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |
 | 57 | Ministry of Commerce Upcoming Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 58 | Evento | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 59 | Asharqia Chamber Events | collection-error | 0 | 2 | fetch failed; page.goto: Timeout 30000ms exceeded.
-Call log:
-  - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentloaded"
- |
+| 59 | Asharqia Chamber Events | deferred | 0 | 2 | مؤجل حتى 2026-07-12T09:55:51.402Z وفق الجدولة التكيفية. |
 | 60 | Qassim Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-07-12T09:22:14.505Z وفق الجدولة التكيفية. |
 | 61 | Abha Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-07-18T09:22:14.505Z وفق الجدولة التكيفية. |
 | 62 | Baha Municipality Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |

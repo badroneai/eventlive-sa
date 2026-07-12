@@ -1,18 +1,25 @@
 {
-  "generated_at": "2026-07-12T04:02:15.825Z",
+  "generated_at": "2026-07-12T08:37:36.567Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 595,
-    "fetched": 0,
-    "reused": 494,
+    "cached_total": 596,
+    "fetched": 1,
+    "reused": 493,
     "failed": 6,
     "skipped_recent_failures": 6,
     "remembered_failures": 9
   },
-  "fetched": [],
+  "fetched": [
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/saleh-al-nawawi?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/saleh-el-nawawy-stand-up-comedy-show-d9202e330e.webp",
+      "bytes": 39894,
+      "events": 1
+    }
+  ],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -2478,11 +2485,6 @@
       "source_url": "https://services.mi.org.sa/upload/events/main/7bbaf3c4-8991-49e2-81ed-49b0f859782c_ab8e4922-4194-4fb1-9006-5fe185bd22a6.jpg",
       "file": "dist/assets/event-images/ورشة-عمل-بعنوان-برنامج-الدعم-الفني-لرواد-وقاء-من-القطاع-الخاص-بمرحلته--1da51fd146.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://services.mi.org.sa/upload/events/main/37219f32-323f-44fb-8f79-c9f8a9518852_%D8%B2%D8%B2.jpg",
-      "file": "dist/assets/event-images/ورشة-عمل-بعنوان-الاستثمار-والتخصيص-بالأندية-الرياضية-السعودية-d2499f418f.jpg",
-      "events": 1
     }
   ],
   "rejected_removed": [],
@@ -2586,6 +2588,8 @@
       "skipped": true
     }
   ],
-  "requires_rebuild": false,
-  "rebuild_reasons": []
+  "requires_rebuild": true,
+  "rebuild_reasons": [
+    "fetched:1"
+  ]
 }

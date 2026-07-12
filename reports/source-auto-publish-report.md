@@ -1,10 +1,10 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-12T03:58:51.675Z
+- published_at: 2026-07-12T08:34:39.163Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 450
-- published_new: 1
+- candidates_seen: 451
+- published_new: 2
 - linked_existing: 429
 - blocked_remaining: 20
 
@@ -17,6 +17,7 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
+| candidate-visit-saudi-calendar-saleh-el-nawawy-stand-up-comedy-show-20260724-88bdeb76 | published | event-saleh-el-nawawy-stand-up-comedy-show | Saleh El Nawawy: Stand Up Comedy Show |
 | candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702 | published | event-music-festival-mdlbeast-soundstorm | Music Festival: MDLBEAST SoundStorm |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
@@ -116,13 +117,10 @@
 | candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي-20260712-fd68b684 | linked-existing | event-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي | already linked to catalog event |
 | candidate-umm-al-qura-events-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية-20260712-cacbed34 | linked-existing | event-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية | already linked to catalog event |
 | candidate-umm-al-qura-events-دورة-الفحوصات-المكروبيولوجية-لمياه-الشرب-الأسس-العلمية-والتطبيقات-البحثي-20260712-056dae07 | linked-existing | event-دورة-الفحوصات-المكروبيولوجية-لمياه-الشرب-الأسس-العلمية-والتطبيقات-البحثي | already linked to catalog event |
-| candidate-ithra-events-leap-then-look-20260712-99d88224 | linked-existing | event-leap-then-look | already linked to catalog event |
 | candidate-saudi-university-events-join-us-at-kaust-health-for-respiratory-health-day-20260712-27bf6068 | linked-existing | event-join-us-at-kaust-health-for-respiratory-health-day | already linked to catalog event |
 | candidate-qassim-university-events-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم-20260712-dc748566 | linked-existing | event-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم | already linked to catalog event |
 | candidate-riyadh-city-events-saif-summer-program-20260712-c90d634d | linked-existing | event-saif-summer-program | already linked to catalog event |
-| candidate-ithra-events-little-dot-20260712-6f97a4be | linked-existing | event-little-dot | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الدرونز-التطبيقي-20260712-96b1c352 | linked-existing | event-معسكر-هندسة-الدرونز-التطبيقي | already linked to catalog event |
-| candidate-ithra-events-night-at-ithra-20260712-b0205ab5 | linked-existing | event-night-at-ithra | already linked to catalog event |
 | candidate-future-skills-catalog-أساسيات-الحوسبة-السحابية-cloud-computing-essentials-20260713-a4d60bbe | linked-existing | event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials | already linked to catalog event |
 | candidate-misk-hub-programs-samsung-innovation-campus-ai-program-20260713-81bc0e25 | linked-existing | event-samsung-innovation-campus-ai-program | already linked to catalog event |
 | candidate-sfda-events-نقل-مبيدات-آفات-الصحة-العامة-20260713-8bb9663d | linked-existing | event-نقل-مبيدات-آفات-الصحة-العامة-2 | already linked to catalog event |
@@ -135,6 +133,7 @@
 | candidate-ithra-events-summer-youth-program-20260713-a20f7a11 | linked-existing | event-ithra-summer-camp-2026-a-world-of-homes | already linked to catalog event |
 | candidate-ithra-events-1-2-3-a-little-space-for-me-20260713-a3bc99ba | linked-existing | event-1-2-3-a-little-space-for-me | already linked to catalog event |
 | candidate-ithra-events-ithra-childrens-festival-2026-20260713-d6d5cc99 | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
+| candidate-ithra-events-leap-then-look-20260713-99d88224 | linked-existing | event-leap-then-look | already linked to catalog event |
 | candidate-ithra-events-kindergarten-under-the-palm-tree-english-20260713-c72ee6a9 | linked-existing | event-kindergarten-under-the-palm-tree-english | already linked to catalog event |
 | candidate-ithra-events-sense-the-home-20260713-3a3ca5ae | linked-existing | event-sense-the-home | already linked to catalog event |
 | candidate-ithra-events-my-little-fort-20260713-09d01da3 | linked-existing | event-my-little-fort | already linked to catalog event |
@@ -165,6 +164,7 @@
 | candidate-ithra-events-open-art-space-20260713-40aac166 | linked-existing | event-open-art-space | already linked to catalog event |
 | candidate-ithra-events-water-challenges-20260713-eea51834 | linked-existing | event-water-challenges | already linked to catalog event |
 | candidate-ithra-events-house-of-wonder-20260713-9a8dfa3b | linked-existing | event-house-of-wonder | already linked to catalog event |
+| candidate-ithra-events-little-dot-20260713-6f97a4be | linked-existing | event-little-dot | already linked to catalog event |
 | candidate-ithra-events-the-house-of-ideas-20260713-26aaa6b2 | linked-existing | event-the-house-of-ideas | already linked to catalog event |
 | candidate-ithra-events-around-the-table-20260714-87d7ec65 | linked-existing | event-around-the-table | already linked to catalog event |
 | candidate-ithra-events-storyteller-of-the-day-20260714-94528a46 | linked-existing | event-storyteller-of-the-day | already linked to catalog event |
@@ -219,6 +219,7 @@
 | candidate-umm-al-qura-events-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية-20260726-3aa6cb44 | linked-existing | event-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل-20260726-aa1669c2 | linked-existing | event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-20260726-89cff8c5 | linked-existing | event-hayy-makers-2 | already linked to catalog event |
+| candidate-ithra-events-night-at-ithra-20260726-b0205ab5 | linked-existing | event-night-at-ithra | already linked to catalog event |
 | candidate-misk-hub-programs-entrepreneur-leadership-excellence-program-20260727-dd903886 | linked-existing | event-entrepreneur-leadership-excellence-program | already linked to catalog event |
 | candidate-ithra-events-tinkering-stations-20260727-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
 | candidate-ithra-events-spot-of-inspiration-20260727-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |

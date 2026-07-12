@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-12T03:59:12.427Z",
+  "generated_at": "2026-07-12T08:34:57.075Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
-    "targets": 11,
-    "candidates": 12,
-    "enriched": 11,
-    "fetched": 11,
-    "images": 9,
+    "targets": 12,
+    "candidates": 13,
+    "enriched": 12,
+    "fetched": 12,
+    "images": 10,
     "fetch_failures": 0
   },
   "enriched": [
@@ -40,6 +40,14 @@
       "title": "Kashtah",
       "source_method": "official-page-html",
       "image_url": "https://scth.scene7.com/is/image/scth/kashtah?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-saleh-el-nawawy-stand-up-comedy-show",
+      "title": "Saleh El Nawawy: Stand Up Comedy Show",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/saleh-al-nawawi?wid=1920&hei=1080&fit=constrain&fmt=webp",
       "fetched": true,
       "features": 7
     },

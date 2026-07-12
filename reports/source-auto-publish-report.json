@@ -1,16 +1,16 @@
 {
-  "published_at": "2026-07-12T03:58:51.675Z",
+  "published_at": "2026-07-12T08:34:39.163Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 450,
+  "candidates_seen": 451,
   "totals": {
-    "candidates_seen": 450,
-    "published": 1,
+    "candidates_seen": 451,
+    "published": 2,
     "linked_existing": 429,
     "blocked": 20,
-    "reconciled": 430
+    "reconciled": 431
   },
   "duplicate_catalog_rows_removed": 1,
   "duplicate_catalog_rows": [
@@ -23,6 +23,11 @@
   "canonical_event_ids_remapped": 0,
   "canonical_event_id_remaps": [],
   "published": [
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-saleh-el-nawawy-stand-up-comedy-show-20260724-88bdeb76",
+      "event_id": "event-saleh-el-nawawy-stand-up-comedy-show",
+      "title": "Saleh El Nawawy: Stand Up Comedy Show"
+    },
     {
       "candidate_id": "candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702",
       "event_id": "event-music-festival-mdlbeast-soundstorm",
@@ -619,12 +624,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-leap-then-look-20260712-99d88224",
-      "event_id": "event-leap-then-look",
-      "title": "Leap Then Look!",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-saudi-university-events-join-us-at-kaust-health-for-respiratory-health-day-20260712-27bf6068",
       "event_id": "event-join-us-at-kaust-health-for-respiratory-health-day",
       "title": "Join us at KAUST Health for Respiratory Health Day",
@@ -643,21 +642,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-little-dot-20260712-6f97a4be",
-      "event_id": "event-little-dot",
-      "title": "Little Dot",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الدرونز-التطبيقي-20260712-96b1c352",
       "event_id": "event-معسكر-هندسة-الدرونز-التطبيقي",
       "title": "معسكر هندسة الدرونز التطبيقي",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-night-at-ithra-20260712-b0205ab5",
-      "event_id": "event-night-at-ithra",
-      "title": "Night at Ithra",
       "reason": "already linked to catalog event"
     },
     {
@@ -730,6 +717,12 @@
       "candidate_id": "candidate-ithra-events-ithra-childrens-festival-2026-20260713-d6d5cc99",
       "event_id": "event-ithra-childrens-festival-2026",
       "title": "Ithra Children's Festival 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-leap-then-look-20260713-99d88224",
+      "event_id": "event-leap-then-look",
+      "title": "Leap Then Look!",
       "reason": "already linked to catalog event"
     },
     {
@@ -910,6 +903,12 @@
       "candidate_id": "candidate-ithra-events-house-of-wonder-20260713-9a8dfa3b",
       "event_id": "event-house-of-wonder",
       "title": "House of Wonder",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-little-dot-20260713-6f97a4be",
+      "event_id": "event-little-dot",
+      "title": "Little Dot",
       "reason": "already linked to catalog event"
     },
     {
@@ -1234,6 +1233,12 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-20260726-89cff8c5",
       "event_id": "event-hayy-makers-2",
       "title": "Hayy Makers | Introduction to Pottery Course with Pharah Al-Ghalib",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-night-at-ithra-20260726-b0205ab5",
+      "event_id": "event-night-at-ithra",
+      "title": "Night at Ithra",
       "reason": "already linked to catalog event"
     },
     {
