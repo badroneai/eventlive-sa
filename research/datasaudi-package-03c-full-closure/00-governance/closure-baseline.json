@@ -1,0 +1,344 @@
+{
+  "schema_version": "1.0",
+  "package_id": "datasaudi-package-03c-full-closure",
+  "baseline_id": "P03C-BASELINE-20260713T101312Z",
+  "generated_at_utc": "2026-07-13T10:13:12Z",
+  "purpose": "Freeze the honest 267-question starting point and keep knowledge-answer closure separate from live INSAIGHTS test coverage.",
+  "corpus": {
+    "path": "research/datasaudi-insaights/04-question-corpus/questions.jsonl",
+    "sha256": "d56e215c901580389b1b3a14a5904aa9ecad3b949bfe29746bc6ee38994a33f2",
+    "questions": 267,
+    "unique_question_ids": 267
+  },
+  "knowledge_answer_baseline": {
+    "definition": "A question is CLOSED only when a complete answer satisfies the evidence, semantic and atomic-verification contract. A quota frame is not an answer.",
+    "counts": {
+      "CLOSED": 11,
+      "PARTIAL": 38,
+      "UNSENT": 218,
+      "TOTAL": 267
+    },
+    "percentages": {
+      "closed": 4.12,
+      "closed_or_partial": 18.35,
+      "unsent": 81.65
+    },
+    "by_priority": {
+      "P0": {
+        "CLOSED": 11,
+        "PARTIAL": 38,
+        "UNSENT": 49,
+        "TOTAL": 98
+      },
+      "P1": {
+        "CLOSED": 0,
+        "PARTIAL": 0,
+        "UNSENT": 154,
+        "TOTAL": 154
+      },
+      "P2": {
+        "CLOSED": 0,
+        "PARTIAL": 0,
+        "UNSENT": 15,
+        "TOTAL": 15
+      }
+    },
+    "by_family": {
+      "availability": {
+        "CLOSED": 2,
+        "PARTIAL": 14,
+        "UNSENT": 18,
+        "TOTAL": 34
+      },
+      "limit": {
+        "CLOSED": 0,
+        "PARTIAL": 15,
+        "UNSENT": 19,
+        "TOTAL": 34
+      },
+      "hallucination": {
+        "CLOSED": 9,
+        "PARTIAL": 9,
+        "UNSENT": 12,
+        "TOTAL": 30
+      },
+      "direct": {
+        "CLOSED": 0,
+        "PARTIAL": 0,
+        "UNSENT": 24,
+        "TOTAL": 24
+      },
+      "series": {
+        "CLOSED": 0,
+        "PARTIAL": 0,
+        "UNSENT": 24,
+        "TOTAL": 24
+      },
+      "rank": {
+        "CLOSED": 0,
+        "PARTIAL": 0,
+        "UNSENT": 24,
+        "TOTAL": 24
+      },
+      "derive": {
+        "CLOSED": 0,
+        "PARTIAL": 0,
+        "UNSENT": 24,
+        "TOTAL": 24
+      },
+      "explain": {
+        "CLOSED": 0,
+        "PARTIAL": 0,
+        "UNSENT": 24,
+        "TOTAL": 24
+      },
+      "cross": {
+        "CLOSED": 0,
+        "PARTIAL": 0,
+        "UNSENT": 34,
+        "TOTAL": 34
+      },
+      "opportunity": {
+        "CLOSED": 0,
+        "PARTIAL": 0,
+        "UNSENT": 15,
+        "TOTAL": 15
+      }
+    },
+    "closed_question_ids": [
+      "CPI-AVAIL-01-AR",
+      "POP-AVAIL-01-AR",
+      "H-01-AR",
+      "H-02-AR",
+      "H-09-AR",
+      "H-10-AR",
+      "H-11-AR",
+      "H-12-AR",
+      "H-13-AR",
+      "H-14-AR",
+      "H-15-AR"
+    ],
+    "partial_question_ids": [
+      "GDP-AVAIL-01-AR",
+      "GDP-LIMIT-01-AR",
+      "CPI-LIMIT-01-AR",
+      "FIS-AVAIL-01-AR",
+      "FIS-LIMIT-01-AR",
+      "BNK-AVAIL-01-AR",
+      "BNK-LIMIT-01-AR",
+      "PAY-AVAIL-01-AR",
+      "PAY-LIMIT-01-AR",
+      "TRD-AVAIL-01-AR",
+      "TRD-LIMIT-01-AR",
+      "EXT-AVAIL-01-AR",
+      "EXT-LIMIT-01-AR",
+      "ENR-AVAIL-01-AR",
+      "ENR-LIMIT-01-AR",
+      "BUS-AVAIL-01-AR",
+      "BUS-LIMIT-01-AR",
+      "MKT-AVAIL-01-AR",
+      "MKT-LIMIT-01-AR",
+      "DIG-AVAIL-01-AR",
+      "DIG-LIMIT-01-AR",
+      "RND-AVAIL-01-AR",
+      "RND-LIMIT-01-AR",
+      "POP-LIMIT-01-AR",
+      "LAB-AVAIL-01-AR",
+      "LAB-LIMIT-01-AR",
+      "RE-AVAIL-01-AR",
+      "RE-LIMIT-01-AR",
+      "HLT-AVAIL-01-AR",
+      "H-03-AR",
+      "H-04-AR",
+      "H-05-AR",
+      "H-06-AR",
+      "H-07-AR",
+      "H-08-AR",
+      "H-16-AR",
+      "H-17-AR",
+      "H-18-AR"
+    ],
+    "unsent_assignment": {
+      "definition": "Every corpus question_id not present in closed_question_ids or partial_question_ids is UNSENT at this baseline. H-19-AR is included because its quota frame is non-substantive.",
+      "count": 218,
+      "p0_count": 49,
+      "p1_count": 154,
+      "p2_count": 15,
+      "p0_question_ids": [
+        "EDU-AVAIL-01-AR",
+        "DIS-AVAIL-01-AR",
+        "TOU-AVAIL-01-AR",
+        "HUM-AVAIL-01-AR",
+        "LOG-AVAIL-01-AR",
+        "AGR-AVAIL-01-AR",
+        "IND-AVAIL-01-AR",
+        "SRV-AVAIL-01-AR",
+        "GDP-AVAIL-01-EN",
+        "CPI-AVAIL-01-EN",
+        "FIS-AVAIL-01-EN",
+        "BNK-AVAIL-01-EN",
+        "PAY-AVAIL-01-EN",
+        "TRD-AVAIL-01-EN",
+        "EXT-AVAIL-01-EN",
+        "ENR-AVAIL-01-EN",
+        "BUS-AVAIL-01-EN",
+        "MKT-AVAIL-01-EN",
+        "HLT-LIMIT-01-AR",
+        "EDU-LIMIT-01-AR",
+        "DIS-LIMIT-01-AR",
+        "TOU-LIMIT-01-AR",
+        "HUM-LIMIT-01-AR",
+        "LOG-LIMIT-01-AR",
+        "AGR-LIMIT-01-AR",
+        "IND-LIMIT-01-AR",
+        "SRV-LIMIT-01-AR",
+        "GDP-LIMIT-01-EN",
+        "CPI-LIMIT-01-EN",
+        "FIS-LIMIT-01-EN",
+        "BNK-LIMIT-01-EN",
+        "PAY-LIMIT-01-EN",
+        "TRD-LIMIT-01-EN",
+        "EXT-LIMIT-01-EN",
+        "ENR-LIMIT-01-EN",
+        "BUS-LIMIT-01-EN",
+        "MKT-LIMIT-01-EN",
+        "H-19-AR",
+        "H-20-AR",
+        "H-21-AR",
+        "H-22-AR",
+        "H-23-AR",
+        "H-24-AR",
+        "H-25-AR",
+        "H-26-AR",
+        "H-27-AR",
+        "H-28-AR",
+        "H-29-AR",
+        "H-30-AR"
+      ],
+      "p1_p2_reference": "research/datasaudi-package-03b-closure-router/later-wave-oracle-specs.jsonl"
+    }
+  },
+  "live_insaights_test_baseline": {
+    "definition": "Only a substantive response captured from the official live INSAIGHTS interface counts as a live test answer. Independently generated answers never increase this denominator.",
+    "substantive_answers_observed": 49,
+    "fully_closed_live_answers": 11,
+    "partial_live_answers": 38,
+    "without_substantive_live_answer": 218,
+    "quota_frame_question_ids": [
+      "H-19-AR"
+    ],
+    "latest_quota_recheck": {
+      "path": "research/datasaudi-package-03c-full-closure/01-live-window/quota-recheck.json",
+      "sha256": "ea5dd640e7c111fa1065561bb8a929c8a99df2bf26fe74183698a2a089d4872e",
+      "result": "QUOTA_BLOCKED",
+      "substantive_answer": false,
+      "bypass_attempted": false
+    },
+    "invariant": "Knowledge Answer closure and Live INSAIGHTS Test closure are reported separately and may never be substituted for each other."
+  },
+  "closure_route_baseline": {
+    "counts": {
+      "existing_verified": 11,
+      "direct_DataSaudi_cube": 181,
+      "official_source": 63,
+      "unavailable_contract": 7,
+      "live_INSAIGHTS_only": 5,
+      "TOTAL": 267
+    },
+    "interpretation": "These are the currently preferred routes to a complete knowledge answer. They are not closure claims.",
+    "special_assignments": {
+      "unavailable_contract": [
+        "H-16-AR",
+        "H-17-AR",
+        "H-18-AR",
+        "H-19-AR",
+        "H-20-AR",
+        "H-22-AR",
+        "H-23-AR"
+      ],
+      "live_INSAIGHTS_only": [
+        "H-26-AR",
+        "H-27-AR",
+        "H-28-AR",
+        "H-29-AR",
+        "H-30-AR"
+      ]
+    }
+  },
+  "catalog_discovery": {
+    "complete_snapshot": {
+      "path": "research/datasaudi-insaights/03-raw-evidence-snapshots/snapshots/run-20260713T004840Z/cubes-show-all-true.json",
+      "sha256": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4",
+      "cube_count": 277
+    },
+    "domain_expansion": {
+      "path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/domain-cube-expansion.json",
+      "sha256": "aa44462f6c51fb4a8b3c5061e744b44717fe6e8e3991b4d0f6b7a503077193ea",
+      "domains": 4,
+      "resolved_candidate_cubes": 12
+    },
+    "empty_candidate_cubes_policy": "ROUTING_GAP_NOT_PROOF_OF_ABSENCE",
+    "negative_claim_rule": "A negative availability claim requires complete-catalog search evidence, alias resolution and relevant metadata/schema inspection."
+  },
+  "known_truth_gaps": {
+    "unresolved_atomic_propositions": 324,
+    "unresolved_by_type": {
+      "numeric_observation": 224,
+      "temporal_coverage": 90,
+      "dataset_availability": 10
+    },
+    "pending_independent_review_claims": 39,
+    "pending_independent_review_questions": 13,
+    "confirmed_errors_to_prevent": [
+      {
+        "question_id": "LAB-LIMIT-01-AR",
+        "incorrect": "2018-Q1",
+        "verified": "2023-Q3"
+      },
+      {
+        "question_id": "RE-AVAIL-01-AR",
+        "incorrect": "2026-03",
+        "verified": "2026-04"
+      }
+    ]
+  },
+  "input_evidence": [
+    {
+      "path": "research/datasaudi-package-03/02-source-oracle-and-evidence-vault/gold-case-specs.jsonl",
+      "sha256": "9f1e32add47ddb750b18972acf40666a0a293fd46c273ddc488c0df4826b67f8"
+    },
+    {
+      "path": "research/datasaudi-package-03/02-source-oracle-and-evidence-vault/oracle-evidence.jsonl",
+      "sha256": "cd3114bd544a6facd2c7913230f4c9ce72d8cc21e54cbf400b582281c80a112e"
+    },
+    {
+      "path": "research/datasaudi-package-03/04-proposition-verifier-and-adjudication/truth-closure-summary.json",
+      "sha256": "bf52aa89cd61735e869de95346f97570850e04b580a5b2eb3ce8b88888ba9677"
+    },
+    {
+      "path": "research/datasaudi-package-03a-question-closure/03-adjudication/adjudication.json",
+      "sha256": "5b6a11d2ee58aeb7b69d201d1304f170634522fcd92661fc94e73142788cf636"
+    },
+    {
+      "path": "research/datasaudi-package-03a-question-closure/04-closeout/round-closeout.json",
+      "sha256": "fa69f8b214c5f1578660c1a10a71c3409284e84f713d74d6f7354436eeb7ed24"
+    },
+    {
+      "path": "research/datasaudi-package-03b-closure-router/later-wave-oracle-specs.jsonl",
+      "sha256": "518e29ef32c027f8530ee359a2254c8949ad460b2ea93152c1e60acc7454e8e1"
+    },
+    {
+      "path": "research/datasaudi-package-03b-closure-router/closure-router.json",
+      "sha256": "93f19b3b2bab399e5c2b2b0c285e3160b1cb0d878fe8feabf8488a9faca4fccc"
+    }
+  ],
+  "invariants": [
+    "CLOSED + PARTIAL + UNSENT = 267",
+    "Every question_id appears exactly once in the knowledge-answer denominator",
+    "A quota frame is never a substantive answer",
+    "Source-ready and candidate-cube labels are never closure states",
+    "Empty candidate_cubes is a routing gap, not evidence of catalog absence",
+    "Documented not-computable is accepted only when missing inputs and searched official routes are evidenced",
+    "Knowledge answers and live INSAIGHTS tests remain separate denominators"
+  ]
+}

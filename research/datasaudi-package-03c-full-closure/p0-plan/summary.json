@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-07-13T10:18:29.409Z",
+  "scope": "87 P0 questions: 38 partial plus 49 without a substantive live answer",
+  "counts": {
+    "targets": 87,
+    "partial_replaced": 38,
+    "no_live_answer_reference_closed": 49,
+    "independent_reference_answers_closed": 87,
+    "insaights_substantive_answers_created": 0,
+    "closure_modes": {
+      "EVIDENCE_BACKED_REJECTION_OR_DETERMINISTIC_CONTRACT": 21,
+      "FROZEN_GOLD_ORACLE_PLUS_FULL_CATALOG_SCHEMA": 52,
+      "FULL_CATALOG_TAXONOMY_PLUS_OFFICIAL_API": 14
+    },
+    "cached_official_api_evidence_refs": 172,
+    "live_official_api_evidence_refs": 92,
+    "official_api_query_contracts_not_replayed": 0,
+    "unique_selected_cubes": 70,
+    "taxonomy_fallback_unique_cubes": 38,
+    "taxonomy_live_replays": 38,
+    "taxonomy_live_replays_complete": 38,
+    "supplemental_live_replays": 1
+  },
+  "catalog": {
+    "path": "research/datasaudi-insaights/03-raw-evidence-snapshots/snapshots/run-20260713T004840Z/cubes-show-all-true.json",
+    "sha256": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4",
+    "cubes": 277,
+    "subtopics_non_null": [
+      "Arrivals",
+      "Capacity of the Grand Mosque",
+      "Communications and Information Technology Sector",
+      "Digital Economy",
+      "Disabilities",
+      "Education",
+      "Energy, Electricity & Water",
+      "External Sector & International Trade",
+      "External Umrah Performers",
+      "External and Internal Pilgrims",
+      "Financial Markets",
+      "Fiscal Indicators",
+      "Health",
+      "Household Energy",
+      "Household Environment",
+      "Housing",
+      "Humanitarian Donations",
+      "Internationally Reported Indicators",
+      "Labor",
+      "Labor Force in Pilgrims Service Sector",
+      "Labor Market",
+      "Licensed Hotels",
+      "Makkah Route Initiative",
+      "Medical Facilities and Teams",
+      "Medical Services",
+      "Monetary",
+      "Population",
+      "Real Sector Indicators",
+      "Research and Development",
+      "Slaughtered Animals",
+      "Slaughterhouses and Butchers",
+      "Structural Business",
+      "Total Umrah Performers",
+      "Tourism",
+      "Umrah Performers by Administrative Region",
+      "Umrah Performers by Age Group"
+    ],
+    "cubes_without_subtopic": 26
+  },
+  "truth_statement": "All 87 targets now have independent evidence-bounded reference answers. This does not claim that INSAIGHTS itself produced or passed those answers; H-19 returned only a quota frame and no further live sends were made.",
+  "limitations": [
+    "Reference-answer closure is not live assistant-behavior closure.",
+    "Full-catalog literal absence is bounded to the frozen public schema and cannot prove absence from all Saudi administrative systems.",
+    "Publisher links and official API replays support internal evidence work; publication rights remain governed separately."
+  ],
+  "artifacts": {
+    "closure_records": "research/datasaudi-package-03c-full-closure/p0-plan/reference-answers.jsonl",
+    "source_contract_map": "research/datasaudi-package-03c-full-closure/p0-plan/question-source-contract-map.jsonl",
+    "catalog_boundary_audit": "research/datasaudi-package-03c-full-closure/p0-plan/catalog-boundary-audit.json",
+    "live_replay_manifest": "research/datasaudi-package-03c-full-closure/p0-plan/live-replay-manifest.jsonl"
+  }
+}

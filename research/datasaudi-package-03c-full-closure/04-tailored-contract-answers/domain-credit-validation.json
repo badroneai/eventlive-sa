@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-07-13T10:50:41.434Z",
+  "status": "PASS",
+  "count": 12,
+  "unique_question_ids": 12,
+  "unique_answer_hashes": 12,
+  "no_rank_single_category": [
+    "LOG-RANK-01-AR",
+    "AGR-RANK-01-AR"
+  ],
+  "output_path": "research/datasaudi-package-03c-full-closure/04-tailored-contract-answers/domain-credit-overrides.jsonl",
+  "output_sha256": "bac16129a62f55b3b579bf034ba86f0af2bb24e807012d632d8496ea4d181193",
+  "errors": []
+}

@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-07-13T10:34:15.432Z",
+  "verdict": "PASS",
+  "checks_total": 28,
+  "checks_passed": 28,
+  "failures": [],
+  "checks": [
+    {
+      "id": "denominator.answers",
+      "pass": true,
+      "detail": 87
+    },
+    {
+      "id": "denominator.source-map",
+      "pass": true,
+      "detail": 87
+    },
+    {
+      "id": "denominator.unique-answer-ids",
+      "pass": true,
+      "detail": 87
+    },
+    {
+      "id": "denominator.unique-map-ids",
+      "pass": true,
+      "detail": 87
+    },
+    {
+      "id": "denominator.same-ids",
+      "pass": true,
+      "detail": "answer and map IDs reconcile"
+    },
+    {
+      "id": "buckets.38-partial",
+      "pass": true,
+      "detail": 38
+    },
+    {
+      "id": "buckets.49-no-live",
+      "pass": true,
+      "detail": 49
+    },
+    {
+      "id": "answers.all-reference-closed",
+      "pass": true,
+      "detail": 87
+    },
+    {
+      "id": "answers.nonempty",
+      "pass": true,
+      "detail": 139
+    },
+    {
+      "id": "answers.hashes",
+      "pass": true,
+      "detail": "all answer hashes reproduce"
+    },
+    {
+      "id": "answers.assertion-contracts",
+      "pass": true,
+      "detail": "all records retain preregistered must/must-not rules"
+    },
+    {
+      "id": "answers.live-independent-separated",
+      "pass": true,
+      "detail": "all 87 separate live observation from independent closure"
+    },
+    {
+      "id": "quota.h19-not-counted",
+      "pass": true,
+      "detail": "QUOTA_FRAME_ONLY_NO_SUBSTANTIVE_ANSWER"
+    },
+    {
+      "id": "quota.no-live-answer-created",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "id": "catalog.denominator",
+      "pass": true,
+      "detail": 277
+    },
+    {
+      "id": "catalog.boundary-method",
+      "pass": true,
+      "detail": "Literal normalized search over cube IDs, Arabic/English names, topics, subtopics, dimensions and measures. Zero matches proves absence only from this frozen public catalog schema, not from all Saudi administrative data."
+    },
+    {
+      "id": "sources.catalog-present",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "id": "sources.hash-or-query",
+      "pass": true,
+      "detail": "every selected cube has a replay hash or an explicit official query contract"
+    },
+    {
+      "id": "replays.taxonomy-38",
+      "pass": true,
+      "detail": 38
+    },
+    {
+      "id": "replays.taxonomy-all-200-complete",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "id": "replays.taxonomy-hashes",
+      "pass": true,
+      "detail": "all 38 taxonomy fallback replays have SHA-256 evidence"
+    },
+    {
+      "id": "replays.files-reproduce-hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "id": "replays.cached-oracle-files-reproduce-hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "id": "h-contracts.covered",
+      "pass": true,
+      "detail": "21 repair/no-live red-team reference answers present"
+    },
+    {
+      "id": "h03.false-premise-rejected-with-full-rank",
+      "pass": true,
+      "detail": [
+        {
+          "status": "REPLAYED",
+          "key": "H-03-AR",
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_detailed_population&drilldowns=Geography%20Province%2CYear&measures=Population&locale=en&limit=50000%2C0",
+          "http_status": 200,
+          "rows": 13,
+          "total": 13,
+          "complete": true,
+          "response_path": "research/datasaudi-package-03c-full-closure/p0-plan/evidence/responses/1f5d4a04d7814c52dba47e7f9173b74479226a6f97c473e12471bdd90c34c286.json",
+          "response_sha256": "1f5d4a04d7814c52dba47e7f9173b74479226a6f97c473e12471bdd90c34c286",
+          "retrieved_at_utc": "2026-07-13T10:18:29.324Z"
+        }
+      ]
+    },
+    {
+      "id": "h21.period-not-today",
+      "pass": true,
+      "detail": "latest observation is distinct from retrieval date"
+    },
+    {
+      "id": "h22.conversion",
+      "pass": true,
+      "detail": "1.3 trillion = 1300 billion"
+    },
+    {
+      "id": "h23.percentage-points",
+      "pass": true,
+      "detail": "percentage points and relative growth are separated"
+    }
+  ]
+}

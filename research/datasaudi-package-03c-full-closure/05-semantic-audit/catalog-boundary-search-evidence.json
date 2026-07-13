@@ -1,0 +1,443 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "P03C-CATALOG-BOUNDARY-SEARCH",
+  "scope": "Frozen public DataSaudi cube catalog schema only; cube id, captions, table annotations, dimension levels, measures, and units.",
+  "catalog_path": "research/datasaudi-insaights/03-raw-evidence-snapshots/snapshots/run-20260713T004840Z/cubes-show-all-true.json",
+  "catalog_sha256": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4",
+  "snapshot_id": "run-20260713T004840Z",
+  "cube_count": 277,
+  "searches": [
+    {
+      "question_id": "H-09-AR",
+      "concept": "official post-purchase consumer regret indicator",
+      "search_mode": "all concept groups must match within the same frozen catalog cube schema record",
+      "groups": [
+        [
+          "ندم المستهلك",
+          "ندم بعد الشراء",
+          "consumer regret",
+          "buyer remorse",
+          "post-purchase regret"
+        ]
+      ],
+      "exact_concept_match_cube_ids": [],
+      "partial_group_matches": [
+        {
+          "group_index": 0,
+          "terms": [
+            "ندم المستهلك",
+            "ندم بعد الشراء",
+            "consumer regret",
+            "buyer remorse",
+            "post-purchase regret"
+          ],
+          "matching_cube_ids": []
+        }
+      ],
+      "conclusion": "NO_MATCH_FOUND_IN_FROZEN_CATALOG_SCHEMA; this is not a universal non-existence claim."
+    },
+    {
+      "question_id": "H-10-AR",
+      "concept": "customer wait time in cafes by neighborhood",
+      "search_mode": "all concept groups must match within the same frozen catalog cube schema record",
+      "groups": [
+        [
+          "زمن انتظار",
+          "وقت انتظار",
+          "wait time",
+          "waiting time",
+          "queue time"
+        ],
+        [
+          "مقهى",
+          "مقاهي",
+          "cafe",
+          "coffee shop"
+        ],
+        [
+          "حي",
+          "neighborhood",
+          "district"
+        ]
+      ],
+      "exact_concept_match_cube_ids": [],
+      "partial_group_matches": [
+        {
+          "group_index": 0,
+          "terms": [
+            "زمن انتظار",
+            "وقت انتظار",
+            "wait time",
+            "waiting time",
+            "queue time"
+          ],
+          "matching_cube_ids": []
+        },
+        {
+          "group_index": 1,
+          "terms": [
+            "مقهى",
+            "مقاهي",
+            "cafe",
+            "coffee shop"
+          ],
+          "matching_cube_ids": []
+        },
+        {
+          "group_index": 2,
+          "terms": [
+            "حي",
+            "neighborhood",
+            "district"
+          ],
+          "matching_cube_ids": [
+            "gastat_biomass_usage",
+            "gastat_biomass_usage_by_type",
+            "gastat_hajj_number_of_slaughtered_animals_by_slaughterhouse",
+            "gastat_sewage_treatment_plants",
+            "sama_health_facilities_resources",
+            "sama_health_workers",
+            "tourism_occupancy_rate_monthly",
+            "tourism_occupancy_rate_yearly"
+          ]
+        }
+      ],
+      "conclusion": "NO_MATCH_FOUND_IN_FROZEN_CATALOG_SCHEMA; this is not a universal non-existence claim."
+    },
+    {
+      "question_id": "H-11-AR",
+      "concept": "hourly in-restaurant congestion",
+      "search_mode": "all concept groups must match within the same frozen catalog cube schema record",
+      "groups": [
+        [
+          "ازدحام",
+          "كثافة داخلية",
+          "congestion",
+          "crowding",
+          "occupancy"
+        ],
+        [
+          "مطعم",
+          "مطاعم",
+          "restaurant"
+        ],
+        [
+          "كل ساعة",
+          "ساعي",
+          "hourly",
+          "hour"
+        ]
+      ],
+      "exact_concept_match_cube_ids": [],
+      "partial_group_matches": [
+        {
+          "group_index": 0,
+          "terms": [
+            "ازدحام",
+            "كثافة داخلية",
+            "congestion",
+            "crowding",
+            "occupancy"
+          ],
+          "matching_cube_ids": [
+            "tourism_occupancy_rate_monthly",
+            "tourism_occupancy_rate_yearly"
+          ]
+        },
+        {
+          "group_index": 1,
+          "terms": [
+            "مطعم",
+            "مطاعم",
+            "restaurant"
+          ],
+          "matching_cube_ids": []
+        },
+        {
+          "group_index": 2,
+          "terms": [
+            "كل ساعة",
+            "ساعي",
+            "hourly",
+            "hour"
+          ],
+          "matching_cube_ids": [
+            "gastat_working_hours_gender_nationality_economic_activity"
+          ]
+        }
+      ],
+      "conclusion": "NO_MATCH_FOUND_IN_FROZEN_CATALOG_SCHEMA; this is not a universal non-existence claim."
+    },
+    {
+      "question_id": "H-12-AR",
+      "concept": "financially distressed stores by street",
+      "search_mode": "all concept groups must match within the same frozen catalog cube schema record",
+      "groups": [
+        [
+          "متعثر مالي",
+          "تعثر مالي",
+          "financial distress",
+          "financially distressed",
+          "insolvent"
+        ],
+        [
+          "متجر",
+          "متاجر",
+          "store",
+          "retail establishment"
+        ],
+        [
+          "شارع",
+          "street"
+        ]
+      ],
+      "exact_concept_match_cube_ids": [],
+      "partial_group_matches": [
+        {
+          "group_index": 0,
+          "terms": [
+            "متعثر مالي",
+            "تعثر مالي",
+            "financial distress",
+            "financially distressed",
+            "insolvent"
+          ],
+          "matching_cube_ids": []
+        },
+        {
+          "group_index": 1,
+          "terms": [
+            "متجر",
+            "متاجر",
+            "store",
+            "retail establishment"
+          ],
+          "matching_cube_ids": []
+        },
+        {
+          "group_index": 2,
+          "terms": [
+            "شارع",
+            "street"
+          ],
+          "matching_cube_ids": []
+        }
+      ],
+      "conclusion": "NO_MATCH_FOUND_IN_FROZEN_CATALOG_SCHEMA; this is not a universal non-existence claim."
+    },
+    {
+      "question_id": "H-14-AR",
+      "concept": "daily professional happiness by company",
+      "search_mode": "all concept groups must match within the same frozen catalog cube schema record",
+      "groups": [
+        [
+          "سعادة مهنية",
+          "رضا وظيفي",
+          "professional happiness",
+          "employee happiness",
+          "job satisfaction"
+        ],
+        [
+          "يومي",
+          "يومية",
+          "daily",
+          "day"
+        ],
+        [
+          "شركة",
+          "منشأة",
+          "company",
+          "establishment"
+        ]
+      ],
+      "exact_concept_match_cube_ids": [],
+      "partial_group_matches": [
+        {
+          "group_index": 0,
+          "terms": [
+            "سعادة مهنية",
+            "رضا وظيفي",
+            "professional happiness",
+            "employee happiness",
+            "job satisfaction"
+          ],
+          "matching_cube_ids": []
+        },
+        {
+          "group_index": 1,
+          "terms": [
+            "يومي",
+            "يومية",
+            "daily",
+            "day"
+          ],
+          "matching_cube_ids": [
+            "sama_crude_oil_production"
+          ]
+        },
+        {
+          "group_index": 2,
+          "terms": [
+            "شركة",
+            "منشأة",
+            "company",
+            "establishment"
+          ],
+          "matching_cube_ids": [
+            "gastat_digital_economy_establishment_usage_by_economic_activity",
+            "gastat_economic_establishments",
+            "gastat_net_assets_by_economic_activity",
+            "gastat_operating_expenses_economic_activity_class_size",
+            "gastat_operating_revenues_economic_activity_class_size",
+            "gastat_operating_surplus_economic_activity_class_size",
+            "gastat_sme_employees_compensation",
+            "gastat_sme_operating_expenses_revenues",
+            "gastat_sme_operating_surplus"
+          ]
+        }
+      ],
+      "conclusion": "NO_MATCH_FOUND_IN_FROZEN_CATALOG_SCHEMA; this is not a universal non-existence claim."
+    },
+    {
+      "question_id": "H-16-AR",
+      "concept": "private establishment identifier linked to establishment-level profit",
+      "search_mode": "all concept groups must match within the same frozen catalog cube schema record",
+      "groups": [
+        [
+          "معرف منشأة",
+          "رقم منشأة",
+          "establishment id",
+          "company id",
+          "business id"
+        ],
+        [
+          "ربح",
+          "أرباح",
+          "profit",
+          "net income"
+        ]
+      ],
+      "exact_concept_match_cube_ids": [],
+      "partial_group_matches": [
+        {
+          "group_index": 0,
+          "terms": [
+            "معرف منشأة",
+            "رقم منشأة",
+            "establishment id",
+            "company id",
+            "business id"
+          ],
+          "matching_cube_ids": []
+        },
+        {
+          "group_index": 1,
+          "terms": [
+            "ربح",
+            "أرباح",
+            "profit",
+            "net income"
+          ],
+          "matching_cube_ids": []
+        }
+      ],
+      "conclusion": "NO_MATCH_FOUND_IN_FROZEN_CATALOG_SCHEMA; this is not a universal non-existence claim."
+    },
+    {
+      "question_id": "H-17-AR",
+      "concept": "unit-level actual contractual rent",
+      "search_mode": "all concept groups must match within the same frozen catalog cube schema record",
+      "groups": [
+        [
+          "معرف وحدة",
+          "عنوان وحدة",
+          "unit id",
+          "property id",
+          "address"
+        ],
+        [
+          "إيجار فعلي",
+          "قيمة إيجار عقدية",
+          "actual rent",
+          "contract rent",
+          "lease amount"
+        ]
+      ],
+      "exact_concept_match_cube_ids": [],
+      "partial_group_matches": [
+        {
+          "group_index": 0,
+          "terms": [
+            "معرف وحدة",
+            "عنوان وحدة",
+            "unit id",
+            "property id",
+            "address"
+          ],
+          "matching_cube_ids": []
+        },
+        {
+          "group_index": 1,
+          "terms": [
+            "إيجار فعلي",
+            "قيمة إيجار عقدية",
+            "actual rent",
+            "contract rent",
+            "lease amount"
+          ],
+          "matching_cube_ids": []
+        }
+      ],
+      "conclusion": "NO_MATCH_FOUND_IN_FROZEN_CATALOG_SCHEMA; this is not a universal non-existence claim."
+    },
+    {
+      "question_id": "H-18-AR",
+      "concept": "individual patient identifier linked to a medical record",
+      "search_mode": "all concept groups must match within the same frozen catalog cube schema record",
+      "groups": [
+        [
+          "معرف مريض",
+          "رقم مريض",
+          "patient id",
+          "patient identifier"
+        ],
+        [
+          "سجل صحي",
+          "سجل طبي",
+          "health record",
+          "medical record"
+        ]
+      ],
+      "exact_concept_match_cube_ids": [],
+      "partial_group_matches": [
+        {
+          "group_index": 0,
+          "terms": [
+            "معرف مريض",
+            "رقم مريض",
+            "patient id",
+            "patient identifier"
+          ],
+          "matching_cube_ids": []
+        },
+        {
+          "group_index": 1,
+          "terms": [
+            "سجل صحي",
+            "سجل طبي",
+            "health record",
+            "medical record"
+          ],
+          "matching_cube_ids": []
+        }
+      ],
+      "conclusion": "NO_MATCH_FOUND_IN_FROZEN_CATALOG_SCHEMA; this is not a universal non-existence claim."
+    }
+  ],
+  "exact_cube_name_search": {
+    "question_id": "H-13-AR",
+    "requested_cube_id": "ksa_future_demand_certified_2035",
+    "matching_cube_ids": [],
+    "conclusion": "EXACT_CUBE_NAME_NOT_FOUND_IN_FROZEN_CATALOG; not a claim about later or private catalogs."
+  }
+}

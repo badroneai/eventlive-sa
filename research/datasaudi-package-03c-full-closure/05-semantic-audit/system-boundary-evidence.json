@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "P03C-SYSTEM-BOUNDARY-EVIDENCE",
+  "scope": "Counts and claim classes reproducible from the frozen catalog, frozen oracle ledger, and Package03C answer contract.",
+  "catalog": {
+    "path": "research/datasaudi-insaights/03-raw-evidence-snapshots/snapshots/run-20260713T004840Z/cubes-show-all-true.json",
+    "sha256": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4",
+    "cube_count": 277,
+    "nonempty_subtopic_ar_count": 36,
+    "cubes_without_subtopic_ar": 26
+  },
+  "oracle": {
+    "path": "research/datasaudi-package-03/02-source-oracle-and-evidence-vault/oracle-evidence.jsonl",
+    "sha256": "cd3114bd544a6facd2c7913230f4c9ce72d8cc21e54cbf400b582281c80a112e",
+    "evidence_record_count": 65,
+    "unique_cube_count": 65
+  },
+  "boundaries": {
+    "insaights_internal_catalog_scope": "NOT_OBSERVABLE_FROM_PUBLIC_INTERFACE_OR_FROZEN_INPUTS",
+    "claim_level_evidence_contract": "Numeric and dataset claims receive structured evidence refs; conceptual rejections and limits receive prompt/catalog/contract refs.",
+    "unsupported_claim_classes": [
+      "INSAIGHTS internal catalog scope",
+      "causality from observational co-movement",
+      "private establishment profit or unit-level rent or individual health records",
+      "universal completeness of sector coverage",
+      "future values described as actual observations"
+    ],
+    "retraction_policy": "Retract unsupported causal, individual-level, universal-absence, and internal-system claims. Retain only reported facts and calculations with explicit operands and formulas."
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-07-13T10:48:51.196Z",
+  "purpose": "Question-specific overrides for the ten cross-sector and fifteen product-opportunity contract-only questions.",
+  "output_path": "research/datasaudi-package-03c-full-closure/04-tailored-contract-answers/tailored-answer-overrides.jsonl",
+  "output_file_sha256": "7f94439e84919348242b0739c204b6bfb2ac8c6e75bf5010c2864422c0696beb",
+  "canonical_records_sha256": "a2839d3e391d428e7458ff79afbd98997e58fb55d844fd61aca2c177523aa333",
+  "count": 25,
+  "unique_question_ids": 25,
+  "unique_answer_hashes": 25,
+  "closure_states": {
+    "CLOSED_DOCUMENTED_NOT_COMPUTABLE": 13,
+    "CLOSED_EVIDENCE_BOUND_INFERENCE": 12
+  },
+  "family_counts": {
+    "cross": 10,
+    "opportunity": 15
+  },
+  "target_ids": [
+    "X-01-AR",
+    "X-02-AR",
+    "X-03-AR",
+    "X-04-AR",
+    "X-05-AR",
+    "X-06-AR",
+    "X-07-AR",
+    "X-08-AR",
+    "X-09-AR",
+    "X-10-AR",
+    "OPP-01-AR",
+    "OPP-02-AR",
+    "OPP-03-AR",
+    "OPP-04-AR",
+    "OPP-05-AR",
+    "OPP-06-AR",
+    "OPP-07-AR",
+    "OPP-08-AR",
+    "OPP-09-AR",
+    "OPP-10-AR",
+    "OPP-11-AR",
+    "OPP-12-AR",
+    "OPP-13-AR",
+    "OPP-14-AR",
+    "OPP-15-AR"
+  ],
+  "input_hashes": {
+    "corpus": "d56e215c901580389b1b3a14a5904aa9ecad3b949bfe29746bc6ee38994a33f2",
+    "catalog": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4",
+    "oracle": "cd3114bd544a6facd2c7913230f4c9ce72d8cc21e54cbf400b582281c80a112e",
+    "detail_manifest": "8db394dbe27f6b64eb76fe1d33e6a6f8c6ee02759405f63c0442d8bb5f0f378e",
+    "rights_summary": "f35d11394720ec3b74f1b4787bf0e3ee2d35c03e8ae4856804795f8287e35992",
+    "product_decision_jobs": "f79cc67d6fab7ddcaea0f16f55f804d35bb2795add60d1c3f4c00ecb98537da1"
+  }
+}

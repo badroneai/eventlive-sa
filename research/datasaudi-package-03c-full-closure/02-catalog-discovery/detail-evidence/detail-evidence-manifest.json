@@ -1,0 +1,3356 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Full-detail public DataSaudi evidence for every candidate cube used by the direct, rank, and series question families.",
+  "generated_at_utc": "2026-07-13T10:27:44.226Z",
+  "source_files": {
+    "catalog": {
+      "path": "research/datasaudi-insaights/03-raw-evidence-snapshots/snapshots/run-20260713T004840Z/cubes-show-all-true.json",
+      "sha256": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4",
+      "cubes": 277
+    },
+    "corpus": {
+      "path": "research/datasaudi-insaights/04-question-corpus/questions.jsonl",
+      "sha256": "d56e215c901580389b1b3a14a5904aa9ecad3b949bfe29746bc6ee38994a33f2",
+      "questions": 267
+    },
+    "oracle": {
+      "path": "research/datasaudi-package-03/02-source-oracle-and-evidence-vault/oracle-evidence.jsonl",
+      "sha256": "cd3114bd544a6facd2c7913230f4c9ce72d8cc21e54cbf400b582281c80a112e",
+      "rows": 65
+    }
+  },
+  "scope": {
+    "families": [
+      "direct",
+      "rank",
+      "series"
+    ],
+    "questions": 72,
+    "candidate_backed_questions": 60,
+    "contract_only_questions": 12,
+    "contract_only_question_ids": [
+      "EXT-DIRECT-01-AR",
+      "EXT-RANK-01-AR",
+      "EXT-SERIES-01-AR",
+      "FIS-DIRECT-01-AR",
+      "FIS-RANK-01-AR",
+      "FIS-SERIES-01-AR",
+      "MKT-DIRECT-01-AR",
+      "MKT-RANK-01-AR",
+      "MKT-SERIES-01-AR",
+      "RND-DIRECT-01-AR",
+      "RND-RANK-01-AR",
+      "RND-SERIES-01-AR"
+    ],
+    "covered_questions": 60,
+    "candidate_cubes": 34,
+    "cube_names": [
+      "building_permits",
+      "business_demography_enterprises",
+      "dependency_ratio",
+      "gastat_contribution_of_digital_economy_to_gdp",
+      "gastat_detailed_population",
+      "gastat_digital_economy_establishment_usage_by_economic_activity",
+      "gastat_economic_establishments",
+      "gastat_education_training_survey",
+      "gastat_employment_population_ratio",
+      "gastat_gdp",
+      "gastat_housing_tenure",
+      "gastat_inflation",
+      "gastat_inflation_province_yoy",
+      "gastat_participation_rate",
+      "gastat_population_growth",
+      "gastat_rate_gender_nationality_region",
+      "gastat_real_estate",
+      "gastat_trade_balance",
+      "gstat_disabilities_distribution_age_15_by_work_status_gender",
+      "phc_encounters_and_outpatients_by_regions",
+      "sama_bank_credit_month",
+      "sama_electricity_consumption_subregion",
+      "sama_health_facilities_resources",
+      "sama_higher_education",
+      "sama_internet_penetration_region",
+      "sama_pos_cities",
+      "sama_pos_sectors",
+      "sama_pos_transactions_mada",
+      "sama_water_consumption_region",
+      "service_trade_balance",
+      "tourism_occupancy_rate_monthly",
+      "tourism_satisfaction_index",
+      "trade_balance_by_country",
+      "umrah_distribution_external_umrah_performers_by_sex_month"
+    ]
+  },
+  "counts": {
+    "entries": 34,
+    "complete": 34,
+    "evidence_modes": {
+      "reused-complete-prior-replay": 16,
+      "public-api-live-replay": 18
+    },
+    "total_rows": 43260,
+    "pages": 34
+  },
+  "integrity": {
+    "entries_sha256": "8add40ca4433c8117c1f388b4c4d8ca0de3e70d77ee3c9686dbe85a8a70862a0",
+    "response_set_sha256": "19311d8031616e781e019773eba0adcad559a5dbef4c0b7356d5589e21176fab"
+  },
+  "complete": true,
+  "entries": [
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-0690ee6509dde967a91faaf7",
+      "cube": "building_permits",
+      "catalog_table_en": "Short Term Business Indicators - Number of Building Permits",
+      "catalog_table_ar": "مؤشر الأعمال قصير الأجل - عدد تراخيص البناء",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://stats.gov.sa/en/statistics-tabs/-/categories/123342?tab=436312&category=123342&delta=60",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "BUS-DIRECT-01-AR",
+        "BUS-RANK-01-AR",
+        "BUS-SERIES-01-AR",
+        "IND-DIRECT-01-AR",
+        "IND-RANK-01-AR",
+        "IND-SERIES-01-AR",
+        "RE-DIRECT-01-AR",
+        "RE-RANK-01-AR",
+        "RE-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Year Month",
+        "dimension_type": "time",
+        "hierarchy": "Date",
+        "name": "Month",
+        "caption": "Month",
+        "depth": 2,
+        "time_scale": "month"
+      },
+      "selected_detail_level": null,
+      "selected_measures": [
+        {
+          "name": "Number of Building Permits",
+          "caption": "Number of Building Permits",
+          "unit": "Unit Int"
+        }
+      ],
+      "requested_drilldowns": [
+        "Month"
+      ],
+      "requested_measures": [
+        "Number of Building Permits"
+      ],
+      "evidence_mode": "reused-complete-prior-replay",
+      "reused_from": {
+        "response_path": "research/datasaudi-decision-intelligence/03-claim-verification-and-reliability/source-replays/source-replay-20260713T013438Z-91d42fa7/responses/4c14653f4910440c2c3ceae6ce0f840e744d9ed4c552b1a898831874c6ebf9f7.body",
+        "response_sha256": "4c14653f4910440c2c3ceae6ce0f840e744d9ed4c552b1a898831874c6ebf9f7",
+        "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=building_permits&locale=ar&drilldowns=Month&measures=Number+of+Building+Permits&limit=500%2C0",
+        "evidence_id": null
+      },
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=building_permits&locale=ar&drilldowns=Month&measures=Number+of+Building+Permits&limit=500%2C0",
+      "actual_request_drilldowns": [
+        "Month"
+      ],
+      "actual_request_measures": [
+        "Number of Building Permits"
+      ],
+      "rows": 40,
+      "total": 40,
+      "complete": true,
+      "columns": [
+        "Month ID",
+        "Month",
+        "Number of Building Permits"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=building_permits&locale=ar&drilldowns=Month&measures=Number+of+Building+Permits&limit=500%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 500,
+          "rows": 40,
+          "total": 40,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/4c14653f4910440c2c3ceae6ce0f840e744d9ed4c552b1a898831874c6ebf9f7.json",
+          "response_sha256": "4c14653f4910440c2c3ceae6ce0f840e744d9ed4c552b1a898831874c6ebf9f7",
+          "response_size_bytes": 3714
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/4c14653f4910440c2c3ceae6ce0f840e744d9ed4c552b1a898831874c6ebf9f7.json",
+      "response_sha256": "4c14653f4910440c2c3ceae6ce0f840e744d9ed4c552b1a898831874c6ebf9f7",
+      "response_size_bytes": 3714,
+      "retrieved_at_utc": "2026-07-13T01:34:58.749Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-46c36c683bc9a5bba4d73d06",
+      "cube": "business_demography_enterprises",
+      "catalog_table_en": "Business Demography Statistics",
+      "catalog_table_ar": "إحصاءات التركيبة السكانية للأعمال",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://www.stats.gov.sa/en/statistics-tabs?tab=436312&category=3631799",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "BUS-DIRECT-01-AR",
+        "BUS-RANK-01-AR",
+        "BUS-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Year",
+        "dimension_type": "time",
+        "hierarchy": "Year",
+        "name": "Year",
+        "caption": "Year",
+        "depth": 1,
+        "time_scale": "year"
+      },
+      "selected_detail_level": {
+        "dimension": "Economic Sectors",
+        "dimension_type": "standard",
+        "hierarchy": "Economic Sectors",
+        "name": "Economic Sectors",
+        "caption": "Economic Sectors",
+        "depth": 1,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Total New Enterprises",
+          "caption": "Total New Enterprises",
+          "unit": "Unit Int"
+        },
+        {
+          "name": "Total Closed Enterprises",
+          "caption": "Total Closed Enterprises",
+          "unit": "Unit Int"
+        },
+        {
+          "name": "Total Active Enterprises",
+          "caption": "Total Active Enterprises",
+          "unit": "Unit Int"
+        }
+      ],
+      "requested_drilldowns": [
+        "Year",
+        "Economic Sectors"
+      ],
+      "requested_measures": [
+        "Total New Enterprises",
+        "Total Closed Enterprises",
+        "Total Active Enterprises"
+      ],
+      "evidence_mode": "public-api-live-replay",
+      "reused_from": null,
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=business_demography_enterprises&drilldowns=Year%2CEconomic+Sectors&measures=Total+New+Enterprises%2CTotal+Closed+Enterprises%2CTotal+Active+Enterprises&locale=en&limit=50000%2C0",
+      "actual_request_drilldowns": [
+        "Year",
+        "Economic Sectors"
+      ],
+      "actual_request_measures": [
+        "Total New Enterprises",
+        "Total Closed Enterprises",
+        "Total Active Enterprises"
+      ],
+      "rows": 36,
+      "total": 36,
+      "complete": true,
+      "columns": [
+        "Economic Sectors ID",
+        "Economic Sectors",
+        "Year",
+        "Total Active Enterprises",
+        "Total Closed Enterprises",
+        "Total New Enterprises"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=business_demography_enterprises&drilldowns=Year%2CEconomic+Sectors&measures=Total+New+Enterprises%2CTotal+Closed+Enterprises%2CTotal+Active+Enterprises&locale=en&limit=50000%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 50000,
+          "rows": 36,
+          "total": 36,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/pages/5a9243b296decf7a2f49840ed9099c1764e7d740043d51f9dfc9c23624eeca28.json",
+          "response_sha256": "5a9243b296decf7a2f49840ed9099c1764e7d740043d51f9dfc9c23624eeca28",
+          "response_size_bytes": 7763
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/5a9243b296decf7a2f49840ed9099c1764e7d740043d51f9dfc9c23624eeca28.json",
+      "response_sha256": "5a9243b296decf7a2f49840ed9099c1764e7d740043d51f9dfc9c23624eeca28",
+      "response_size_bytes": 7763,
+      "retrieved_at_utc": "2026-07-13T10:27:40.863Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-50a9ca8917d9d6e0e6edfbb2",
+      "cube": "dependency_ratio",
+      "catalog_table_en": "Dependency Ratio by Type of Dependency, Nationality, and Administrative Region - Annual",
+      "catalog_table_ar": "نسبة الإعالة حسب نوع الإعالة والجنسية والمنطقة الإدارية - سنوي",
+      "source_name": "Saudi Census 2022",
+      "source_name_ar": "تعداد السعودية 2022",
+      "source_link": "https://www.stats.gov.sa/en/statistics-tabs?tab=436327&category=127392",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "POP-DIRECT-01-AR",
+        "POP-RANK-01-AR",
+        "POP-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Year",
+        "dimension_type": "time",
+        "hierarchy": "Year",
+        "name": "Year",
+        "caption": "Year",
+        "depth": 1,
+        "time_scale": "year"
+      },
+      "selected_detail_level": {
+        "dimension": "Geography Province",
+        "dimension_type": "geo",
+        "hierarchy": "Geography",
+        "name": "Province",
+        "caption": "Province",
+        "depth": 2,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Dependency Ratio",
+          "caption": "Dependency Ratio",
+          "unit": "Percentage Base 100"
+        }
+      ],
+      "requested_drilldowns": [
+        "Year",
+        "Province"
+      ],
+      "requested_measures": [
+        "Dependency Ratio"
+      ],
+      "evidence_mode": "reused-complete-prior-replay",
+      "reused_from": {
+        "response_path": "research/datasaudi-decision-intelligence/03-claim-verification-and-reliability/source-replays/source-replay-20260713T013438Z-91d42fa7/responses/c6077361c3db6b333fee85de0c8f30aed29cb3a03fce982460b74bb29ed340dd.body",
+        "response_sha256": "c6077361c3db6b333fee85de0c8f30aed29cb3a03fce982460b74bb29ed340dd",
+        "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=dependency_ratio&locale=ar&drilldowns=Nationality%2CNation%2CProvince%2CDependency+Ratio+Type%2CYear&measures=Dependency+Ratio&limit=500%2C0",
+        "evidence_id": null
+      },
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=dependency_ratio&locale=ar&drilldowns=Nationality%2CNation%2CProvince%2CDependency+Ratio+Type%2CYear&measures=Dependency+Ratio&limit=500%2C0",
+      "actual_request_drilldowns": [
+        "Nationality",
+        "Nation",
+        "Province",
+        "Dependency Ratio Type",
+        "Year"
+      ],
+      "actual_request_measures": [
+        "Dependency Ratio"
+      ],
+      "rows": 126,
+      "total": 126,
+      "complete": true,
+      "columns": [
+        "Dependency Ratio Type ID",
+        "Dependency Ratio Type",
+        "Nation ID",
+        "Nation",
+        "Province ID",
+        "Province",
+        "Nationality ID",
+        "Nationality",
+        "Year",
+        "Dependency Ratio"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=dependency_ratio&locale=ar&drilldowns=Nationality%2CNation%2CProvince%2CDependency+Ratio+Type%2CYear&measures=Dependency+Ratio&limit=500%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 500,
+          "rows": 126,
+          "total": 126,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/c6077361c3db6b333fee85de0c8f30aed29cb3a03fce982460b74bb29ed340dd.json",
+          "response_sha256": "c6077361c3db6b333fee85de0c8f30aed29cb3a03fce982460b74bb29ed340dd",
+          "response_size_bytes": 40669
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/c6077361c3db6b333fee85de0c8f30aed29cb3a03fce982460b74bb29ed340dd.json",
+      "response_sha256": "c6077361c3db6b333fee85de0c8f30aed29cb3a03fce982460b74bb29ed340dd",
+      "response_size_bytes": 40669,
+      "retrieved_at_utc": "2026-07-13T01:35:07.311Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-3661217cb9b09d644af41f2f",
+      "cube": "gastat_contribution_of_digital_economy_to_gdp",
+      "catalog_table_en": "Digital Economy Share of GDP - Annual",
+      "catalog_table_ar": "حصة الاقتصاد الرقمي من الناتج المحلي الإجمالي - سنوي",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://www.stats.gov.sa/en/statistics-tabs/-/categories/122941?tab=436312&category=122941",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "DIG-DIRECT-01-AR",
+        "DIG-RANK-01-AR",
+        "DIG-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Year",
+        "dimension_type": "time",
+        "hierarchy": "Year",
+        "name": "Year",
+        "caption": "Year",
+        "depth": 1,
+        "time_scale": "year"
+      },
+      "selected_detail_level": {
+        "dimension": "Economic Sectors",
+        "dimension_type": "standard",
+        "hierarchy": "Economic Sectors",
+        "name": "Economic Sectors",
+        "caption": "Economic Sectors",
+        "depth": 1,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Percentage",
+          "caption": "Percentage",
+          "unit": "Percentage"
+        }
+      ],
+      "requested_drilldowns": [
+        "Year",
+        "Economic Sectors"
+      ],
+      "requested_measures": [
+        "Percentage"
+      ],
+      "evidence_mode": "reused-complete-prior-replay",
+      "reused_from": {
+        "response_path": "research/datasaudi-decision-intelligence/03-claim-verification-and-reliability/source-replays/source-replay-20260713T013438Z-91d42fa7/responses/96f718907a7bc6dab4cf0e6af8a264bfe8261c040523152903ca30eea13c5d3e.body",
+        "response_sha256": "96f718907a7bc6dab4cf0e6af8a264bfe8261c040523152903ca30eea13c5d3e",
+        "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_contribution_of_digital_economy_to_gdp&locale=ar&drilldowns=Economic+Sectors%2CYear&measures=Percentage&limit=500%2C0",
+        "evidence_id": null
+      },
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_contribution_of_digital_economy_to_gdp&locale=ar&drilldowns=Economic+Sectors%2CYear&measures=Percentage&limit=500%2C0",
+      "actual_request_drilldowns": [
+        "Economic Sectors",
+        "Year"
+      ],
+      "actual_request_measures": [
+        "Percentage"
+      ],
+      "rows": 3,
+      "total": 3,
+      "complete": true,
+      "columns": [
+        "Economic Sectors ID",
+        "Economic Sectors",
+        "Year",
+        "Percentage"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_contribution_of_digital_economy_to_gdp&locale=ar&drilldowns=Economic+Sectors%2CYear&measures=Percentage&limit=500%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 500,
+          "rows": 3,
+          "total": 3,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/96f718907a7bc6dab4cf0e6af8a264bfe8261c040523152903ca30eea13c5d3e.json",
+          "response_sha256": "96f718907a7bc6dab4cf0e6af8a264bfe8261c040523152903ca30eea13c5d3e",
+          "response_size_bytes": 1032
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/96f718907a7bc6dab4cf0e6af8a264bfe8261c040523152903ca30eea13c5d3e.json",
+      "response_sha256": "96f718907a7bc6dab4cf0e6af8a264bfe8261c040523152903ca30eea13c5d3e",
+      "response_size_bytes": 1032,
+      "retrieved_at_utc": "2026-07-13T01:35:03.319Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-e8a5a0bd2e7bacc08b40bc60",
+      "cube": "gastat_detailed_population",
+      "catalog_table_en": "Population by Age Group, Region, Governorate, Nationality, and Gender - Annual",
+      "catalog_table_ar": "تعداد السكان حسب الفئة العمرية والمنطقة والمحافظة والجنسية والجنس - سنوي",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://portal.saudicensus.sa/portal/public/1/15/100647?type=TABLE",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "POP-DIRECT-01-AR",
+        "POP-RANK-01-AR",
+        "POP-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Year",
+        "dimension_type": "time",
+        "hierarchy": "Year",
+        "name": "Year",
+        "caption": "Year",
+        "depth": 1,
+        "time_scale": "year"
+      },
+      "selected_detail_level": {
+        "dimension": "Governatorate",
+        "dimension_type": "standard",
+        "hierarchy": "Governatorate",
+        "name": "Governatorate",
+        "caption": "Governatorate",
+        "depth": 2,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Population",
+          "caption": "Population",
+          "unit": "Unit Int"
+        }
+      ],
+      "requested_drilldowns": [
+        "Year",
+        "Governatorate"
+      ],
+      "requested_measures": [
+        "Population"
+      ],
+      "evidence_mode": "public-api-live-replay",
+      "reused_from": null,
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_detailed_population&drilldowns=Year%2CGovernatorate&measures=Population&locale=en&limit=50000%2C0",
+      "actual_request_drilldowns": [
+        "Year",
+        "Governatorate"
+      ],
+      "actual_request_measures": [
+        "Population"
+      ],
+      "rows": 150,
+      "total": 150,
+      "complete": true,
+      "columns": [
+        "Governatorate ID",
+        "Governatorate",
+        "Year",
+        "Population"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_detailed_population&drilldowns=Year%2CGovernatorate&measures=Population&locale=en&limit=50000%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 50000,
+          "rows": 150,
+          "total": 150,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/pages/e6da385143a216508a3c697c4ad9fb31f9dbc753a70f5cd0e0fe005da73d8090.json",
+          "response_sha256": "e6da385143a216508a3c697c4ad9fb31f9dbc753a70f5cd0e0fe005da73d8090",
+          "response_size_bytes": 13638
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/e6da385143a216508a3c697c4ad9fb31f9dbc753a70f5cd0e0fe005da73d8090.json",
+      "response_sha256": "e6da385143a216508a3c697c4ad9fb31f9dbc753a70f5cd0e0fe005da73d8090",
+      "response_size_bytes": 13638,
+      "retrieved_at_utc": "2026-07-13T10:27:41.002Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-71195844c71760e473c9220a",
+      "cube": "gastat_digital_economy_establishment_usage_by_economic_activity",
+      "catalog_table_en": "Percentage of Establishments Using Digital Technology by Economic Sectors - Annual",
+      "catalog_table_ar": "نسبة استخدام المنشآت للتكنولوجيا الرقمية حسب القطاع الاقتصادي - سنوي",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://www.stats.gov.sa/en/statistics-tabs/-/categories/122941?tab=436312&category=122941",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "DIG-DIRECT-01-AR",
+        "DIG-RANK-01-AR",
+        "DIG-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Year",
+        "dimension_type": "time",
+        "hierarchy": "Year",
+        "name": "Year",
+        "caption": "Year",
+        "depth": 1,
+        "time_scale": "year"
+      },
+      "selected_detail_level": {
+        "dimension": "Economic Sectors",
+        "dimension_type": "standard",
+        "hierarchy": "Economic Sectors",
+        "name": "Economic Sectors",
+        "caption": "Economic Sectors",
+        "depth": 1,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Percentage",
+          "caption": "Percentage",
+          "unit": "Percentage"
+        }
+      ],
+      "requested_drilldowns": [
+        "Year",
+        "Economic Sectors"
+      ],
+      "requested_measures": [
+        "Percentage"
+      ],
+      "evidence_mode": "reused-complete-prior-replay",
+      "reused_from": {
+        "response_path": "research/datasaudi-decision-intelligence/03-claim-verification-and-reliability/source-replays/source-replay-20260713T013438Z-91d42fa7/responses/7d11afd63cf90351f93b3030e712758c88b84cd74aba01a60ab75394c33f07b0.body",
+        "response_sha256": "7d11afd63cf90351f93b3030e712758c88b84cd74aba01a60ab75394c33f07b0",
+        "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_digital_economy_establishment_usage_by_economic_activity&locale=ar&drilldowns=Establishment+Usage+Name%2CEconomic+Sectors%2CYear&measures=Percentage&limit=500%2C0",
+        "evidence_id": null
+      },
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_digital_economy_establishment_usage_by_economic_activity&locale=ar&drilldowns=Establishment+Usage+Name%2CEconomic+Sectors%2CYear&measures=Percentage&limit=500%2C0",
+      "actual_request_drilldowns": [
+        "Establishment Usage Name",
+        "Economic Sectors",
+        "Year"
+      ],
+      "actual_request_measures": [
+        "Percentage"
+      ],
+      "rows": 171,
+      "total": 171,
+      "complete": true,
+      "columns": [
+        "Economic Sectors ID",
+        "Economic Sectors",
+        "Establishment Usage Name ID",
+        "Establishment Usage Name",
+        "Year",
+        "Percentage"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_digital_economy_establishment_usage_by_economic_activity&locale=ar&drilldowns=Establishment+Usage+Name%2CEconomic+Sectors%2CYear&measures=Percentage&limit=500%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 500,
+          "rows": 171,
+          "total": 171,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/7d11afd63cf90351f93b3030e712758c88b84cd74aba01a60ab75394c33f07b0.json",
+          "response_sha256": "7d11afd63cf90351f93b3030e712758c88b84cd74aba01a60ab75394c33f07b0",
+          "response_size_bytes": 52774
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/7d11afd63cf90351f93b3030e712758c88b84cd74aba01a60ab75394c33f07b0.json",
+      "response_sha256": "7d11afd63cf90351f93b3030e712758c88b84cd74aba01a60ab75394c33f07b0",
+      "response_size_bytes": 52774,
+      "retrieved_at_utc": "2026-07-13T01:35:03.901Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-b07756ef4fbb58aa8a6842c2",
+      "cube": "gastat_economic_establishments",
+      "catalog_table_en": "Economic Establishments by Size and Economic Activity - Annual",
+      "catalog_table_ar": "المنشآت الاقتصادية حسب الحجم والنشاط الاقتصادي - سنوي\n",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://database.stats.gov.sa/home/indicator/99981",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "BUS-DIRECT-01-AR",
+        "BUS-RANK-01-AR",
+        "BUS-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Year",
+        "dimension_type": "time",
+        "hierarchy": "Year",
+        "name": "Year",
+        "caption": "Year",
+        "depth": 1,
+        "time_scale": "year"
+      },
+      "selected_detail_level": {
+        "dimension": "Economic Activity Division",
+        "dimension_type": "standard",
+        "hierarchy": "Economic Activity",
+        "name": "Economic Activity Division",
+        "caption": "Economic Activity Division",
+        "depth": 2,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Economic Establishments",
+          "caption": "Economic Establishments",
+          "unit": "Unit Int"
+        }
+      ],
+      "requested_drilldowns": [
+        "Year",
+        "Economic Activity Division"
+      ],
+      "requested_measures": [
+        "Economic Establishments"
+      ],
+      "evidence_mode": "reused-complete-prior-replay",
+      "reused_from": {
+        "response_path": "research/datasaudi-decision-intelligence/03-claim-verification-and-reliability/source-replays/source-replay-20260713T013438Z-91d42fa7/responses/16fd8d59f368b40a8ee1e0155f4492efb1134a13882a346fd285989e12dfa37d.body",
+        "response_sha256": "16fd8d59f368b40a8ee1e0155f4492efb1134a13882a346fd285989e12dfa37d",
+        "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_economic_establishments&locale=ar&drilldowns=Economic+Activity+Section%2CEconomic+Activity+Division%2CSize+Class%2CYear&measures=Economic+Establishments&limit=2223%2C0",
+        "evidence_id": null
+      },
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_economic_establishments&locale=ar&drilldowns=Economic+Activity+Section%2CEconomic+Activity+Division%2CSize+Class%2CYear&measures=Economic+Establishments&limit=2223%2C0",
+      "actual_request_drilldowns": [
+        "Economic Activity Section",
+        "Economic Activity Division",
+        "Size Class",
+        "Year"
+      ],
+      "actual_request_measures": [
+        "Economic Establishments"
+      ],
+      "rows": 2223,
+      "total": 2223,
+      "complete": true,
+      "columns": [
+        "Economic Activity Section ID",
+        "Economic Activity Section",
+        "Economic Activity Division ID",
+        "Economic Activity Division",
+        "Size Class ID",
+        "Size Class",
+        "Year",
+        "Economic Establishments"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_economic_establishments&locale=ar&drilldowns=Economic+Activity+Section%2CEconomic+Activity+Division%2CSize+Class%2CYear&measures=Economic+Establishments&limit=2223%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 2223,
+          "rows": 2223,
+          "total": 2223,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/16fd8d59f368b40a8ee1e0155f4492efb1134a13882a346fd285989e12dfa37d.json",
+          "response_sha256": "16fd8d59f368b40a8ee1e0155f4492efb1134a13882a346fd285989e12dfa37d",
+          "response_size_bytes": 769298
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/16fd8d59f368b40a8ee1e0155f4492efb1134a13882a346fd285989e12dfa37d.json",
+      "response_sha256": "16fd8d59f368b40a8ee1e0155f4492efb1134a13882a346fd285989e12dfa37d",
+      "response_size_bytes": 769298,
+      "retrieved_at_utc": "2026-07-13T01:34:57.905Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-6a1d4ecffd23c0374c24032e",
+      "cube": "gastat_education_training_survey",
+      "catalog_table_en": "Expenditure on Education by Administrative Region and Expenditure Items - Annual",
+      "catalog_table_ar": "الإنفاق على التعليم حسب المنطقة الإدارية وبنود الإنفاق - سنوي\n",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://www.stats.gov.sa/en/statistics-tabs?tab=436318&category=514986",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "EDU-DIRECT-01-AR",
+        "EDU-RANK-01-AR",
+        "EDU-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Year",
+        "dimension_type": "time",
+        "hierarchy": "Year",
+        "name": "Year",
+        "caption": "Year",
+        "depth": 1,
+        "time_scale": "year"
+      },
+      "selected_detail_level": {
+        "dimension": "Geography Province",
+        "dimension_type": "geo",
+        "hierarchy": "Geography",
+        "name": "Province",
+        "caption": "Province",
+        "depth": 2,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Expenditure",
+          "caption": "Total Expenditure (Billion ⃁)",
+          "unit": "Unit"
+        }
+      ],
+      "requested_drilldowns": [
+        "Year",
+        "Province"
+      ],
+      "requested_measures": [
+        "Expenditure"
+      ],
+      "evidence_mode": "public-api-live-replay",
+      "reused_from": null,
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_education_training_survey&drilldowns=Year%2CProvince&measures=Expenditure&locale=en&limit=50000%2C0",
+      "actual_request_drilldowns": [
+        "Year",
+        "Province"
+      ],
+      "actual_request_measures": [
+        "Expenditure"
+      ],
+      "rows": 13,
+      "total": 13,
+      "complete": true,
+      "columns": [
+        "Province ID",
+        "Province",
+        "Year",
+        "Expenditure"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_education_training_survey&drilldowns=Year%2CProvince&measures=Expenditure&locale=en&limit=50000%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 50000,
+          "rows": 13,
+          "total": 13,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/pages/468ee1b867cca0226a2d7153874118fe8ae83e9b9eff11a9dd622e5d1202d781.json",
+          "response_sha256": "468ee1b867cca0226a2d7153874118fe8ae83e9b9eff11a9dd622e5d1202d781",
+          "response_size_bytes": 1691
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/468ee1b867cca0226a2d7153874118fe8ae83e9b9eff11a9dd622e5d1202d781.json",
+      "response_sha256": "468ee1b867cca0226a2d7153874118fe8ae83e9b9eff11a9dd622e5d1202d781",
+      "response_size_bytes": 1691,
+      "retrieved_at_utc": "2026-07-13T10:27:41.242Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-05dab430865590444ef89795",
+      "cube": "gastat_employment_population_ratio",
+      "catalog_table_en": "Employment to Population Ratio - Annual and Quarterly",
+      "catalog_table_ar": "نسبة العمالة مقارنة بعدد السكان - سنوي وربع سنوي",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://www.stats.gov.sa/en/statistics-tabs/-/categories/417515?tab=436312&category=417515",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "LAB-DIRECT-01-AR",
+        "LAB-RANK-01-AR",
+        "LAB-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Date Quarter",
+        "dimension_type": "time",
+        "hierarchy": "Date",
+        "name": "Quarter",
+        "caption": "Quarter",
+        "depth": 2,
+        "time_scale": "quarter"
+      },
+      "selected_detail_level": {
+        "dimension": "Geography Province",
+        "dimension_type": "geo",
+        "hierarchy": "Geography",
+        "name": "Province",
+        "caption": "Province",
+        "depth": 2,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Ratio",
+          "caption": "Ratio",
+          "unit": "Percentage Base 100"
+        }
+      ],
+      "requested_drilldowns": [
+        "Quarter",
+        "Province"
+      ],
+      "requested_measures": [
+        "Ratio"
+      ],
+      "evidence_mode": "public-api-live-replay",
+      "reused_from": null,
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_employment_population_ratio&drilldowns=Quarter%2CProvince&measures=Ratio&locale=en&limit=50000%2C0",
+      "actual_request_drilldowns": [
+        "Quarter",
+        "Province"
+      ],
+      "actual_request_measures": [
+        "Ratio"
+      ],
+      "rows": 182,
+      "total": 182,
+      "complete": true,
+      "columns": [
+        "Quarter ID",
+        "Quarter",
+        "Province ID",
+        "Province",
+        "Ratio"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_employment_population_ratio&drilldowns=Quarter%2CProvince&measures=Ratio&locale=en&limit=50000%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 50000,
+          "rows": 182,
+          "total": 182,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/pages/2970a1681ef28b450885f82630853312eec6d8d750e414487e449017bd0009a5.json",
+          "response_sha256": "2970a1681ef28b450885f82630853312eec6d8d750e414487e449017bd0009a5",
+          "response_size_bytes": 20232
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/2970a1681ef28b450885f82630853312eec6d8d750e414487e449017bd0009a5.json",
+      "response_sha256": "2970a1681ef28b450885f82630853312eec6d8d750e414487e449017bd0009a5",
+      "response_size_bytes": 20232,
+      "retrieved_at_utc": "2026-07-13T10:27:41.421Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-ecb639aab323b4cfc9b6b869",
+      "cube": "gastat_gdp",
+      "catalog_table_en": "Real Gross Domestic Product by Economic Activity - Quarterly",
+      "catalog_table_ar": "الناتج المحلي الإجمالي الحقيقي حسب النشاط الاقتصادي - ربع سنوي",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://www.stats.gov.sa/en/statistics-tabs/-/categories/120038?tab=436312&category=120038",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "GDP-DIRECT-01-AR",
+        "GDP-RANK-01-AR",
+        "GDP-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Date Only Quarter",
+        "dimension_type": "time",
+        "hierarchy": "Date",
+        "name": "Quarter",
+        "caption": "Quarter",
+        "depth": 2,
+        "time_scale": "quarter"
+      },
+      "selected_detail_level": {
+        "dimension": "Economic Activity Section",
+        "dimension_type": "standard",
+        "hierarchy": "Economic Activity Section",
+        "name": "Economic Activity Section",
+        "caption": "Economic Activity Section",
+        "depth": 1,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "GDP",
+          "caption": "Total GDP (Million ⃁)",
+          "unit": "Unit"
+        }
+      ],
+      "requested_drilldowns": [
+        "Quarter",
+        "Economic Activity Section"
+      ],
+      "requested_measures": [
+        "GDP"
+      ],
+      "evidence_mode": "public-api-live-replay",
+      "reused_from": null,
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_gdp&drilldowns=Quarter%2CEconomic+Activity+Section&measures=GDP&locale=en&limit=50000%2C0",
+      "actual_request_drilldowns": [
+        "Quarter",
+        "Economic Activity Section"
+      ],
+      "actual_request_measures": [
+        "GDP"
+      ],
+      "rows": 768,
+      "total": 768,
+      "complete": true,
+      "columns": [
+        "Quarter ID",
+        "Quarter",
+        "Economic Activity Section ID",
+        "Economic Activity Section",
+        "GDP"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_gdp&drilldowns=Quarter%2CEconomic+Activity+Section&measures=GDP&locale=en&limit=50000%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 50000,
+          "rows": 768,
+          "total": 768,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/pages/4b5f569b3ccd6d7cb6665aadb0df053558d7f54363168bfa7eaf8ec6daacc3c2.json",
+          "response_sha256": "4b5f569b3ccd6d7cb6665aadb0df053558d7f54363168bfa7eaf8ec6daacc3c2",
+          "response_size_bytes": 113809
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/4b5f569b3ccd6d7cb6665aadb0df053558d7f54363168bfa7eaf8ec6daacc3c2.json",
+      "response_sha256": "4b5f569b3ccd6d7cb6665aadb0df053558d7f54363168bfa7eaf8ec6daacc3c2",
+      "response_size_bytes": 113809,
+      "retrieved_at_utc": "2026-07-13T10:27:41.673Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-042d3e26ca52e215f5174ef7",
+      "cube": "gastat_housing_tenure",
+      "catalog_table_en": "Housing Units Occupied by Saudi Households by Ownership Category, and Administrative Region - Annual",
+      "catalog_table_ar": "الوحدات السكنية التي تسكنها أسر سعودية حسب فئة الملكية والمنطقة الإدارية - سنوي",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://portal.saudicensus.sa/portal/public/8/31?type=TABLE",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "RE-DIRECT-01-AR",
+        "RE-RANK-01-AR",
+        "RE-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Year",
+        "dimension_type": "time",
+        "hierarchy": "Year",
+        "name": "Year",
+        "caption": "Year",
+        "depth": 1,
+        "time_scale": "year"
+      },
+      "selected_detail_level": {
+        "dimension": "Geography Province",
+        "dimension_type": "geo",
+        "hierarchy": "Geography",
+        "name": "Province",
+        "caption": "Province",
+        "depth": 2,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Housing Units",
+          "caption": "Housing Units",
+          "unit": "Unit Int"
+        }
+      ],
+      "requested_drilldowns": [
+        "Year",
+        "Province"
+      ],
+      "requested_measures": [
+        "Housing Units"
+      ],
+      "evidence_mode": "reused-complete-prior-replay",
+      "reused_from": {
+        "response_path": "research/datasaudi-decision-intelligence/03-claim-verification-and-reliability/source-replays/source-replay-20260713T013438Z-91d42fa7/responses/c086fcbd2329a1c954930d633811351bf0370e13d202368bd62581c49eac457f.body",
+        "response_sha256": "c086fcbd2329a1c954930d633811351bf0370e13d202368bd62581c49eac457f",
+        "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_housing_tenure&locale=ar&drilldowns=Nation%2CProvince%2CTenure+Type%2CYear&measures=Housing+Units&limit=500%2C0",
+        "evidence_id": null
+      },
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_housing_tenure&locale=ar&drilldowns=Nation%2CProvince%2CTenure+Type%2CYear&measures=Housing+Units&limit=500%2C0",
+      "actual_request_drilldowns": [
+        "Nation",
+        "Province",
+        "Tenure Type",
+        "Year"
+      ],
+      "actual_request_measures": [
+        "Housing Units"
+      ],
+      "rows": 368,
+      "total": 368,
+      "complete": true,
+      "columns": [
+        "Nation ID",
+        "Nation",
+        "Province ID",
+        "Province",
+        "Tenure Type ID",
+        "Tenure Type",
+        "Year",
+        "Housing Units"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_housing_tenure&locale=ar&drilldowns=Nation%2CProvince%2CTenure+Type%2CYear&measures=Housing+Units&limit=500%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 500,
+          "rows": 368,
+          "total": 368,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/c086fcbd2329a1c954930d633811351bf0370e13d202368bd62581c49eac457f.json",
+          "response_sha256": "c086fcbd2329a1c954930d633811351bf0370e13d202368bd62581c49eac457f",
+          "response_size_bytes": 84205
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/c086fcbd2329a1c954930d633811351bf0370e13d202368bd62581c49eac457f.json",
+      "response_sha256": "c086fcbd2329a1c954930d633811351bf0370e13d202368bd62581c49eac457f",
+      "response_size_bytes": 84205,
+      "retrieved_at_utc": "2026-07-13T01:35:13.121Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-0d080acd14b82d4c24182d12",
+      "cube": "gastat_inflation",
+      "catalog_table_en": "CPI Inflation Rate by Main Section - Monthly",
+      "catalog_table_ar": "معدل تضخم الرقم القياسي لأسعار المستهلك حسب الباب الرئيس - شهري",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://www.stats.gov.sa/en/statistics-tabs/-/categories/121421?tab=436312&category=121421",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "AGR-DIRECT-01-AR",
+        "AGR-RANK-01-AR",
+        "AGR-SERIES-01-AR",
+        "CPI-DIRECT-01-AR",
+        "CPI-RANK-01-AR",
+        "CPI-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Date Only Month",
+        "dimension_type": "time",
+        "hierarchy": "Date",
+        "name": "Month",
+        "caption": "Month",
+        "depth": 3,
+        "time_scale": "month"
+      },
+      "selected_detail_level": {
+        "dimension": "Main Division",
+        "dimension_type": "standard",
+        "hierarchy": "Main Division",
+        "name": "Main Division",
+        "caption": "Main Section",
+        "depth": 1,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Inflation",
+          "caption": "Consumer Price Index",
+          "unit": "Unit"
+        },
+        {
+          "name": "Inflation rate",
+          "caption": "Inflation Rate",
+          "unit": "Percentage Base 100"
+        }
+      ],
+      "requested_drilldowns": [
+        "Month",
+        "Main Division"
+      ],
+      "requested_measures": [
+        "Inflation",
+        "Inflation rate"
+      ],
+      "evidence_mode": "reused-complete-prior-replay",
+      "reused_from": {
+        "response_path": "research/datasaudi-decision-intelligence/03-claim-verification-and-reliability/source-replays/source-replay-20260713T013438Z-91d42fa7/responses/4933c3354ccd96f61c88e5618c15951b41e7b7c467f424f771a6b2d946976a60.body",
+        "response_sha256": "4933c3354ccd96f61c88e5618c15951b41e7b7c467f424f771a6b2d946976a60",
+        "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_inflation&locale=ar&drilldowns=Main+Division%2CMonth&measures=Inflation%2CInflation+rate&limit=2254%2C0",
+        "evidence_id": null
+      },
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_inflation&locale=ar&drilldowns=Main+Division%2CMonth&measures=Inflation%2CInflation+rate&limit=2254%2C0",
+      "actual_request_drilldowns": [
+        "Main Division",
+        "Month"
+      ],
+      "actual_request_measures": [
+        "Inflation",
+        "Inflation rate"
+      ],
+      "rows": 2254,
+      "total": 2254,
+      "complete": true,
+      "columns": [
+        "Month ID",
+        "Month",
+        "Main Division ID",
+        "Main Division",
+        "Inflation",
+        "Inflation rate"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_inflation&locale=ar&drilldowns=Main+Division%2CMonth&measures=Inflation%2CInflation+rate&limit=2254%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 2254,
+          "rows": 2254,
+          "total": 2254,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/4933c3354ccd96f61c88e5618c15951b41e7b7c467f424f771a6b2d946976a60.json",
+          "response_sha256": "4933c3354ccd96f61c88e5618c15951b41e7b7c467f424f771a6b2d946976a60",
+          "response_size_bytes": 425979
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/4933c3354ccd96f61c88e5618c15951b41e7b7c467f424f771a6b2d946976a60.json",
+      "response_sha256": "4933c3354ccd96f61c88e5618c15951b41e7b7c467f424f771a6b2d946976a60",
+      "response_size_bytes": 425979,
+      "retrieved_at_utc": "2026-07-13T01:34:40.628Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-fb64a63198ea2db5ea583b2e",
+      "cube": "gastat_inflation_province_yoy",
+      "catalog_table_en": "CPI Inflation Rate by Region - Monthly",
+      "catalog_table_ar": "معدل تضخم الرقم القياسي لأسعار المستهلك حسب المنطقة - شهري",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://www.stats.gov.sa/en/statistics-tabs/-/categories/121421?tab=436312&category=121421",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "CPI-DIRECT-01-AR",
+        "CPI-RANK-01-AR",
+        "CPI-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Date Only Month",
+        "dimension_type": "time",
+        "hierarchy": "Date",
+        "name": "Month",
+        "caption": "Month",
+        "depth": 3,
+        "time_scale": "month"
+      },
+      "selected_detail_level": {
+        "dimension": "Geography Province",
+        "dimension_type": "geo",
+        "hierarchy": "Geography",
+        "name": "Province",
+        "caption": "Province",
+        "depth": 2,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Inflation",
+          "caption": "Inflation Rate",
+          "unit": "Percentage Base 100"
+        },
+        {
+          "name": "Consumer Price Index",
+          "caption": "Consumer Price Index",
+          "unit": "Unit"
+        }
+      ],
+      "requested_drilldowns": [
+        "Month",
+        "Province"
+      ],
+      "requested_measures": [
+        "Inflation",
+        "Consumer Price Index"
+      ],
+      "evidence_mode": "reused-complete-prior-replay",
+      "reused_from": {
+        "response_path": "research/datasaudi-decision-intelligence/03-claim-verification-and-reliability/source-replays/source-replay-20260713T013438Z-91d42fa7/responses/a126a0fffdaca9d68ce657cf26e688348a62cc51669635decd8b249fd905e397.body",
+        "response_sha256": "a126a0fffdaca9d68ce657cf26e688348a62cc51669635decd8b249fd905e397",
+        "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_inflation_province_yoy&locale=ar&drilldowns=Nation%2CProvince%2CMonth&measures=Inflation%2CConsumer+Price+Index&limit=2226%2C0",
+        "evidence_id": null
+      },
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_inflation_province_yoy&locale=ar&drilldowns=Nation%2CProvince%2CMonth&measures=Inflation%2CConsumer+Price+Index&limit=2226%2C0",
+      "actual_request_drilldowns": [
+        "Nation",
+        "Province",
+        "Month"
+      ],
+      "actual_request_measures": [
+        "Inflation",
+        "Consumer Price Index"
+      ],
+      "rows": 2226,
+      "total": 2226,
+      "complete": true,
+      "columns": [
+        "Month ID",
+        "Month",
+        "Nation ID",
+        "Nation",
+        "Province ID",
+        "Province",
+        "Consumer Price Index",
+        "Inflation"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_inflation_province_yoy&locale=ar&drilldowns=Nation%2CProvince%2CMonth&measures=Inflation%2CConsumer+Price+Index&limit=2226%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 2226,
+          "rows": 2226,
+          "total": 2226,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/a126a0fffdaca9d68ce657cf26e688348a62cc51669635decd8b249fd905e397.json",
+          "response_sha256": "a126a0fffdaca9d68ce657cf26e688348a62cc51669635decd8b249fd905e397",
+          "response_size_bytes": 517320
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/a126a0fffdaca9d68ce657cf26e688348a62cc51669635decd8b249fd905e397.json",
+      "response_sha256": "a126a0fffdaca9d68ce657cf26e688348a62cc51669635decd8b249fd905e397",
+      "response_size_bytes": 517320,
+      "retrieved_at_utc": "2026-07-13T01:34:41.586Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-28c02f6fe6d5f5e71d54d246",
+      "cube": "gastat_participation_rate",
+      "catalog_table_en": "Labor Force Participation Rate by Administrative Region and Nationality - Annual and Quarterly",
+      "catalog_table_ar": "معدل المشاركة في القوى العاملة حسب المنطقة الإدارية والجنسية - سنوي وربع سنوي",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://www.stats.gov.sa/en/statistics-tabs/-/categories/417515?tab=436312&category=417515",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "LAB-DIRECT-01-AR",
+        "LAB-RANK-01-AR",
+        "LAB-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Date Quarter",
+        "dimension_type": "time",
+        "hierarchy": "Date",
+        "name": "Quarter",
+        "caption": "Quarter",
+        "depth": 2,
+        "time_scale": "quarter"
+      },
+      "selected_detail_level": {
+        "dimension": "Geography Province",
+        "dimension_type": "geo",
+        "hierarchy": "Geography",
+        "name": "Province",
+        "caption": "Province",
+        "depth": 2,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Participation Rate",
+          "caption": "Participation Rate",
+          "unit": "Percentage Base 100"
+        }
+      ],
+      "requested_drilldowns": [
+        "Quarter",
+        "Province"
+      ],
+      "requested_measures": [
+        "Participation Rate"
+      ],
+      "evidence_mode": "public-api-live-replay",
+      "reused_from": null,
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_participation_rate&drilldowns=Quarter%2CProvince&measures=Participation+Rate&locale=en&limit=50000%2C0",
+      "actual_request_drilldowns": [
+        "Quarter",
+        "Province"
+      ],
+      "actual_request_measures": [
+        "Participation Rate"
+      ],
+      "rows": 420,
+      "total": 420,
+      "complete": true,
+      "columns": [
+        "Quarter ID",
+        "Quarter",
+        "Province ID",
+        "Province",
+        "Participation Rate"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_participation_rate&drilldowns=Quarter%2CProvince&measures=Participation+Rate&locale=en&limit=50000%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 50000,
+          "rows": 420,
+          "total": 420,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/pages/3f34796f1266f6714f6138715e22a7e20d06f2add92b8a78a5e032df8173c3c2.json",
+          "response_sha256": "3f34796f1266f6714f6138715e22a7e20d06f2add92b8a78a5e032df8173c3c2",
+          "response_size_bytes": 51354
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/3f34796f1266f6714f6138715e22a7e20d06f2add92b8a78a5e032df8173c3c2.json",
+      "response_sha256": "3f34796f1266f6714f6138715e22a7e20d06f2add92b8a78a5e032df8173c3c2",
+      "response_size_bytes": 51354,
+      "retrieved_at_utc": "2026-07-13T10:27:41.939Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-afd979315aeaf8909442f891",
+      "cube": "gastat_population_growth",
+      "catalog_table_en": "Population Growth - Annual",
+      "catalog_table_ar": "النمو السكاني - سنوي\n",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://database.stats.gov.sa/home/indicator/535",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "POP-DIRECT-01-AR",
+        "POP-RANK-01-AR",
+        "POP-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Year",
+        "dimension_type": "time",
+        "hierarchy": "Year",
+        "name": "Year",
+        "caption": "Year",
+        "depth": 1,
+        "time_scale": "year"
+      },
+      "selected_detail_level": {
+        "dimension": "Geography Province",
+        "dimension_type": "geo",
+        "hierarchy": "Geography",
+        "name": "Province",
+        "caption": "Province",
+        "depth": 2,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Growth",
+          "caption": "Growth",
+          "unit": "Percentage Base 100"
+        }
+      ],
+      "requested_drilldowns": [
+        "Year",
+        "Province"
+      ],
+      "requested_measures": [
+        "Growth"
+      ],
+      "evidence_mode": "reused-complete-prior-replay",
+      "reused_from": {
+        "response_path": "research/datasaudi-decision-intelligence/03-claim-verification-and-reliability/source-replays/source-replay-20260713T013438Z-91d42fa7/responses/98d54d063653f1a0e11aa630e63cd68aac2be6b1f725165c24f66453ced5484e.body",
+        "response_sha256": "98d54d063653f1a0e11aa630e63cd68aac2be6b1f725165c24f66453ced5484e",
+        "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_population_growth&locale=ar&drilldowns=Nation%2CProvince%2CYear&measures=Growth&limit=500%2C0",
+        "evidence_id": null
+      },
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_population_growth&locale=ar&drilldowns=Nation%2CProvince%2CYear&measures=Growth&limit=500%2C0",
+      "actual_request_drilldowns": [
+        "Nation",
+        "Province",
+        "Year"
+      ],
+      "actual_request_measures": [
+        "Growth"
+      ],
+      "rows": 168,
+      "total": 168,
+      "complete": true,
+      "columns": [
+        "Nation ID",
+        "Nation",
+        "Province ID",
+        "Province",
+        "Year",
+        "Growth"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_population_growth&locale=ar&drilldowns=Nation%2CProvince%2CYear&measures=Growth&limit=500%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 500,
+          "rows": 168,
+          "total": 168,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/98d54d063653f1a0e11aa630e63cd68aac2be6b1f725165c24f66453ced5484e.json",
+          "response_sha256": "98d54d063653f1a0e11aa630e63cd68aac2be6b1f725165c24f66453ced5484e",
+          "response_size_bytes": 25683
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/98d54d063653f1a0e11aa630e63cd68aac2be6b1f725165c24f66453ced5484e.json",
+      "response_sha256": "98d54d063653f1a0e11aa630e63cd68aac2be6b1f725165c24f66453ced5484e",
+      "response_size_bytes": 25683,
+      "retrieved_at_utc": "2026-07-13T01:35:06.768Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-9df28de8c3f6206ab6fdb652",
+      "cube": "gastat_rate_gender_nationality_region",
+      "catalog_table_en": "Unemployment Rate by Gender, Nationality, and Administrative Region - Annual and Quarterly",
+      "catalog_table_ar": "معدل البطالة حسب الجنس والجنسية والمنطقة الإدرية -  سنوي وربع سنوي",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://www.stats.gov.sa/en/statistics-tabs/-/categories/417515?tab=436312&category=417515",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "LAB-DIRECT-01-AR",
+        "LAB-RANK-01-AR",
+        "LAB-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Date Quarter",
+        "dimension_type": "time",
+        "hierarchy": "Date",
+        "name": "Quarter",
+        "caption": "Quarter",
+        "depth": 2,
+        "time_scale": "quarter"
+      },
+      "selected_detail_level": {
+        "dimension": "Geography Province",
+        "dimension_type": "geo",
+        "hierarchy": "Geography",
+        "name": "Province",
+        "caption": "Province",
+        "depth": 2,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Unemployment Rate",
+          "caption": "Unemployment Rate",
+          "unit": "Percentage Base 100"
+        }
+      ],
+      "requested_drilldowns": [
+        "Quarter",
+        "Province"
+      ],
+      "requested_measures": [
+        "Unemployment Rate"
+      ],
+      "evidence_mode": "public-api-live-replay",
+      "reused_from": null,
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_rate_gender_nationality_region&drilldowns=Quarter%2CProvince&measures=Unemployment+Rate&locale=en&limit=50000%2C0",
+      "actual_request_drilldowns": [
+        "Quarter",
+        "Province"
+      ],
+      "actual_request_measures": [
+        "Unemployment Rate"
+      ],
+      "rows": 560,
+      "total": 560,
+      "complete": true,
+      "columns": [
+        "Quarter ID",
+        "Quarter",
+        "Province ID",
+        "Province",
+        "Unemployment Rate"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_rate_gender_nationality_region&drilldowns=Quarter%2CProvince&measures=Unemployment+Rate&locale=en&limit=50000%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 50000,
+          "rows": 560,
+          "total": 560,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/pages/5fc5ace73de05c53219e507f875cf22fe718b2c0b311161a21be0960c6e52e42.json",
+          "response_sha256": "5fc5ace73de05c53219e507f875cf22fe718b2c0b311161a21be0960c6e52e42",
+          "response_size_bytes": 62649
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/5fc5ace73de05c53219e507f875cf22fe718b2c0b311161a21be0960c6e52e42.json",
+      "response_sha256": "5fc5ace73de05c53219e507f875cf22fe718b2c0b311161a21be0960c6e52e42",
+      "response_size_bytes": 62649,
+      "retrieved_at_utc": "2026-07-13T10:27:42.160Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-b403981d737802e706dbaaa0",
+      "cube": "gastat_real_estate",
+      "catalog_table_en": "Real Estate Price Index Rate and Growth by Administrative Region - Annual and Quarterly",
+      "catalog_table_ar": "معدل الرقم القياسي لأسعار العقارات ونموه حسب المنطقة الإدارية - سنوي وربع سنوي",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://www.stats.gov.sa/en/statistics-tabs/-/categories/121920?tab=436312&category=121920",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "RE-DIRECT-01-AR",
+        "RE-RANK-01-AR",
+        "RE-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Date Quarter",
+        "dimension_type": "time",
+        "hierarchy": "Date",
+        "name": "Quarter",
+        "caption": "Quarter",
+        "depth": 2,
+        "time_scale": "quarter"
+      },
+      "selected_detail_level": {
+        "dimension": "Geography Province",
+        "dimension_type": "geo",
+        "hierarchy": "Geography",
+        "name": "Province",
+        "caption": "Province",
+        "depth": 2,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Price Index",
+          "caption": "Real Estate Price Index (Index Points)",
+          "unit": "Unit"
+        },
+        {
+          "name": "Growth",
+          "caption": "Growth",
+          "unit": "Percentage Base 100"
+        }
+      ],
+      "requested_drilldowns": [
+        "Quarter",
+        "Province"
+      ],
+      "requested_measures": [
+        "Price Index",
+        "Growth"
+      ],
+      "evidence_mode": "public-api-live-replay",
+      "reused_from": null,
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_real_estate&drilldowns=Quarter%2CProvince&measures=Price+Index%2CGrowth&locale=en&limit=50000%2C0",
+      "actual_request_drilldowns": [
+        "Quarter",
+        "Province"
+      ],
+      "actual_request_measures": [
+        "Price Index",
+        "Growth"
+      ],
+      "rows": 294,
+      "total": 294,
+      "complete": true,
+      "columns": [
+        "Quarter ID",
+        "Quarter",
+        "Province ID",
+        "Province",
+        "Growth",
+        "Price Index"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_real_estate&drilldowns=Quarter%2CProvince&measures=Price+Index%2CGrowth&locale=en&limit=50000%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 50000,
+          "rows": 294,
+          "total": 294,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/pages/c38a1e9cf093955642c2460290eef58db9a3380af20d0e00dc2f87717b07f83b.json",
+          "response_sha256": "c38a1e9cf093955642c2460290eef58db9a3380af20d0e00dc2f87717b07f83b",
+          "response_size_bytes": 34696
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/c38a1e9cf093955642c2460290eef58db9a3380af20d0e00dc2f87717b07f83b.json",
+      "response_sha256": "c38a1e9cf093955642c2460290eef58db9a3380af20d0e00dc2f87717b07f83b",
+      "response_size_bytes": 34696,
+      "retrieved_at_utc": "2026-07-13T10:27:42.315Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-75a4c8bcc39b0c385e39a02d",
+      "cube": "gastat_trade_balance",
+      "catalog_table_en": "Trade Balance - Annual, Quarter, and Month",
+      "catalog_table_ar": "الميزان التجاري - سنوي، وربع سنوي، وشهري",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://www.stats.gov.sa/en/statistics-tabs/-/categories/123481?tab=436312&category=123481",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "TRD-DIRECT-01-AR",
+        "TRD-RANK-01-AR",
+        "TRD-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Date Month",
+        "dimension_type": "time",
+        "hierarchy": "Date",
+        "name": "Month",
+        "caption": "Month",
+        "depth": 3,
+        "time_scale": "month"
+      },
+      "selected_detail_level": null,
+      "selected_measures": [
+        {
+          "name": "Exports",
+          "caption": "Exports (Million ⃁)",
+          "unit": "Unit"
+        },
+        {
+          "name": "Imports",
+          "caption": "Imports (Million ⃁)",
+          "unit": "Unit"
+        },
+        {
+          "name": "Trade Volume",
+          "caption": "Trade Volume",
+          "unit": "Unit"
+        }
+      ],
+      "requested_drilldowns": [
+        "Month"
+      ],
+      "requested_measures": [
+        "Exports",
+        "Imports",
+        "Trade Volume"
+      ],
+      "evidence_mode": "public-api-live-replay",
+      "reused_from": null,
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_trade_balance&drilldowns=Month&measures=Exports%2CImports%2CTrade+Volume&locale=en&limit=50000%2C0",
+      "actual_request_drilldowns": [
+        "Month"
+      ],
+      "actual_request_measures": [
+        "Exports",
+        "Imports",
+        "Trade Volume"
+      ],
+      "rows": 112,
+      "total": 112,
+      "complete": true,
+      "columns": [
+        "Month ID",
+        "Month",
+        "Exports",
+        "Imports",
+        "Trade Volume"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_trade_balance&drilldowns=Month&measures=Exports%2CImports%2CTrade+Volume&locale=en&limit=50000%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 50000,
+          "rows": 112,
+          "total": 112,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/pages/73a05f623bc91fc960d85d0b47460ff37890f7d834af213de9927fdbc2978825.json",
+          "response_sha256": "73a05f623bc91fc960d85d0b47460ff37890f7d834af213de9927fdbc2978825",
+          "response_size_bytes": 13457
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/73a05f623bc91fc960d85d0b47460ff37890f7d834af213de9927fdbc2978825.json",
+      "response_sha256": "73a05f623bc91fc960d85d0b47460ff37890f7d834af213de9927fdbc2978825",
+      "response_size_bytes": 13457,
+      "retrieved_at_utc": "2026-07-13T10:27:42.438Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-d4d603bece363c1b4785ec73",
+      "cube": "gstat_disabilities_distribution_age_15_by_work_status_gender",
+      "catalog_table_en": "Percentage Distribution of Individuals with Disabilities Aged 15 Years and Above by Employment Status and Gender - Annual",
+      "catalog_table_ar": "التوزيع النسبي للأشخاص ذوي الإعاقة للفئة العمرية 15 سنة فأكثر حسب الحالة العملية والجنس - سنوي",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://www.stats.gov.sa/en/statistics-tabs/-/categories/123728?tab=436312&category=123728",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "DIS-DIRECT-01-AR",
+        "DIS-RANK-01-AR",
+        "DIS-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Year",
+        "dimension_type": "time",
+        "hierarchy": "Year",
+        "name": "Year",
+        "caption": "Year",
+        "depth": 1,
+        "time_scale": "year"
+      },
+      "selected_detail_level": {
+        "dimension": "Work Status",
+        "dimension_type": "standard",
+        "hierarchy": "Work Status Name",
+        "name": "Work Status Name",
+        "caption": "Work Status",
+        "depth": 1,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Percentage",
+          "caption": "Percentage of people with disabilities",
+          "unit": "Percentage Base 100"
+        }
+      ],
+      "requested_drilldowns": [
+        "Year",
+        "Work Status Name"
+      ],
+      "requested_measures": [
+        "Percentage"
+      ],
+      "evidence_mode": "public-api-live-replay",
+      "reused_from": null,
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gstat_disabilities_distribution_age_15_by_work_status_gender&drilldowns=Year%2CWork+Status+Name&measures=Percentage&locale=en&limit=50000%2C0",
+      "actual_request_drilldowns": [
+        "Year",
+        "Work Status Name"
+      ],
+      "actual_request_measures": [
+        "Percentage"
+      ],
+      "rows": 11,
+      "total": 11,
+      "complete": true,
+      "columns": [
+        "Work Status Name ID",
+        "Work Status Name",
+        "Year",
+        "Percentage"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gstat_disabilities_distribution_age_15_by_work_status_gender&drilldowns=Year%2CWork+Status+Name&measures=Percentage&locale=en&limit=50000%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 50000,
+          "rows": 11,
+          "total": 11,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/pages/e9643afbdd698d34dd7fe7035f283427ded0fe0d9f76ab5befd0574ca4098bc8.json",
+          "response_sha256": "e9643afbdd698d34dd7fe7035f283427ded0fe0d9f76ab5befd0574ca4098bc8",
+          "response_size_bytes": 2071
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/e9643afbdd698d34dd7fe7035f283427ded0fe0d9f76ab5befd0574ca4098bc8.json",
+      "response_sha256": "e9643afbdd698d34dd7fe7035f283427ded0fe0d9f76ab5befd0574ca4098bc8",
+      "response_size_bytes": 2071,
+      "retrieved_at_utc": "2026-07-13T10:27:42.568Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-4d1b8d46177bef9b66c5d357",
+      "cube": "phc_encounters_and_outpatients_by_regions",
+      "catalog_table_en": "PHCs' Encounters  and Outpatients in MOH Hospitals by Adminstrative Region",
+      "catalog_table_ar": "عدد الزيارات ومرضى العيادات الخارجية في المستشفيات العامة حسب المنطقة الإدارية",
+      "source_name": "Ministry of Health",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://www.moh.gov.sa/en/ministry/statistics/book/pages/default.aspx",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "HLT-DIRECT-01-AR",
+        "HLT-RANK-01-AR",
+        "HLT-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Year",
+        "dimension_type": "time",
+        "hierarchy": "Year",
+        "name": "Year",
+        "caption": "Year",
+        "depth": 1,
+        "time_scale": "year"
+      },
+      "selected_detail_level": {
+        "dimension": "Geography Province",
+        "dimension_type": "geo",
+        "hierarchy": "Geography Province",
+        "name": "Province",
+        "caption": "Province",
+        "depth": 2,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "PHC",
+          "caption": "PHCs' Encounters",
+          "unit": "Unit Int"
+        },
+        {
+          "name": "OPD",
+          "caption": "Outpatients in MOH Hospitals",
+          "unit": "Unit Int"
+        }
+      ],
+      "requested_drilldowns": [
+        "Year",
+        "Province"
+      ],
+      "requested_measures": [
+        "PHC",
+        "OPD"
+      ],
+      "evidence_mode": "reused-complete-prior-replay",
+      "reused_from": {
+        "response_path": "research/datasaudi-decision-intelligence/03-claim-verification-and-reliability/source-replays/source-replay-20260713T013438Z-91d42fa7/responses/2edaee97318025b79d1f134537634083e2dde83bfa04db8561c7798434fe3707.body",
+        "response_sha256": "2edaee97318025b79d1f134537634083e2dde83bfa04db8561c7798434fe3707",
+        "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=phc_encounters_and_outpatients_by_regions&locale=en&drilldowns=Province%2CYear&measures=PHC%2COPD&limit=500%2C0",
+        "evidence_id": null
+      },
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=phc_encounters_and_outpatients_by_regions&locale=en&drilldowns=Province%2CYear&measures=PHC%2COPD&limit=500%2C0",
+      "actual_request_drilldowns": [
+        "Province",
+        "Year"
+      ],
+      "actual_request_measures": [
+        "PHC",
+        "OPD"
+      ],
+      "rows": 75,
+      "total": 75,
+      "complete": true,
+      "columns": [
+        "Province ID",
+        "Province",
+        "Year",
+        "OPD",
+        "PHC"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=phc_encounters_and_outpatients_by_regions&locale=en&drilldowns=Province%2CYear&measures=PHC%2COPD&limit=500%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 500,
+          "rows": 75,
+          "total": 75,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/2edaee97318025b79d1f134537634083e2dde83bfa04db8561c7798434fe3707.json",
+          "response_sha256": "2edaee97318025b79d1f134537634083e2dde83bfa04db8561c7798434fe3707",
+          "response_size_bytes": 7139
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/2edaee97318025b79d1f134537634083e2dde83bfa04db8561c7798434fe3707.json",
+      "response_sha256": "2edaee97318025b79d1f134537634083e2dde83bfa04db8561c7798434fe3707",
+      "response_size_bytes": 7139,
+      "retrieved_at_utc": "2026-07-13T01:35:14.456Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-f363f1b6fa2426c3aa42400b",
+      "cube": "sama_bank_credit_month",
+      "catalog_table_en": "Bank Credit by Economic Activity (ISIC4) - Monthly",
+      "catalog_table_ar": "الائتمان المصرفي حسب النشاط الاقتصادي ISIC4 - شهري",
+      "source_name": "Saudi Central Bank (SAMA)",
+      "source_name_ar": "البنك المركزي السعودي",
+      "source_link": "https://www.sama.gov.sa/en-US/Statistics/Pages/MonthlyStatistics.aspx",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "AGR-DIRECT-01-AR",
+        "AGR-RANK-01-AR",
+        "AGR-SERIES-01-AR",
+        "BNK-DIRECT-01-AR",
+        "BNK-RANK-01-AR",
+        "BNK-SERIES-01-AR",
+        "IND-DIRECT-01-AR",
+        "IND-RANK-01-AR",
+        "IND-SERIES-01-AR",
+        "LOG-DIRECT-01-AR",
+        "LOG-RANK-01-AR",
+        "LOG-SERIES-01-AR",
+        "SRV-DIRECT-01-AR",
+        "SRV-RANK-01-AR",
+        "SRV-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Month",
+        "dimension_type": "time",
+        "hierarchy": "Date",
+        "name": "Month",
+        "caption": "Month",
+        "depth": 1,
+        "time_scale": "month"
+      },
+      "selected_detail_level": {
+        "dimension": "ISIC4",
+        "dimension_type": "standard",
+        "hierarchy": "ISIC4",
+        "name": "ISIC4",
+        "caption": "ISIC4",
+        "depth": 1,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Million SAR",
+          "caption": "Bank Credit (Million ⃁)",
+          "unit": "Unit"
+        }
+      ],
+      "requested_drilldowns": [
+        "Month",
+        "ISIC4"
+      ],
+      "requested_measures": [
+        "Million SAR"
+      ],
+      "evidence_mode": "reused-complete-prior-replay",
+      "reused_from": {
+        "response_path": "research/datasaudi-decision-intelligence/03-claim-verification-and-reliability/source-replays/source-replay-20260713T013438Z-91d42fa7/responses/6da7f09f4b5cbef84a25ed0c7c21cf8e9a5e154a11bbda033e3a5a75f2ceea19.body",
+        "response_sha256": "6da7f09f4b5cbef84a25ed0c7c21cf8e9a5e154a11bbda033e3a5a75f2ceea19",
+        "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_bank_credit_month&locale=ar&drilldowns=ISIC4%2CMonth&measures=Million+SAR&limit=1044%2C0",
+        "evidence_id": null
+      },
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_bank_credit_month&locale=ar&drilldowns=ISIC4%2CMonth&measures=Million+SAR&limit=1044%2C0",
+      "actual_request_drilldowns": [
+        "ISIC4",
+        "Month"
+      ],
+      "actual_request_measures": [
+        "Million SAR"
+      ],
+      "rows": 1044,
+      "total": 1044,
+      "complete": true,
+      "columns": [
+        "ISIC4 ID",
+        "ISIC4",
+        "Month ID",
+        "Month",
+        "Million SAR"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_bank_credit_month&locale=ar&drilldowns=ISIC4%2CMonth&measures=Million+SAR&limit=1044%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 1044,
+          "rows": 1044,
+          "total": 1044,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/6da7f09f4b5cbef84a25ed0c7c21cf8e9a5e154a11bbda033e3a5a75f2ceea19.json",
+          "response_sha256": "6da7f09f4b5cbef84a25ed0c7c21cf8e9a5e154a11bbda033e3a5a75f2ceea19",
+          "response_size_bytes": 136751
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/6da7f09f4b5cbef84a25ed0c7c21cf8e9a5e154a11bbda033e3a5a75f2ceea19.json",
+      "response_sha256": "6da7f09f4b5cbef84a25ed0c7c21cf8e9a5e154a11bbda033e3a5a75f2ceea19",
+      "response_size_bytes": 136751,
+      "retrieved_at_utc": "2026-07-13T01:34:45.277Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-deba75a88ef892823125449a",
+      "cube": "sama_electricity_consumption_subregion",
+      "catalog_table_en": "Electricity Consumption in the Kingdom by Consumption Category - Annual",
+      "catalog_table_ar": "استهلاك الكهرباء في المملكة حسب فئة الاستهلاك - سنوي",
+      "source_name": "Saudi Central Bank (SAMA)",
+      "source_name_ar": "البنك المركزي السعودي",
+      "source_link": "https://www.sama.gov.sa/en-US/Publications/EconomicReports/Pages/report.aspx?cid=126",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "ENR-DIRECT-01-AR",
+        "ENR-RANK-01-AR",
+        "ENR-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Year",
+        "dimension_type": "time",
+        "hierarchy": "Year",
+        "name": "Year",
+        "caption": "Year",
+        "depth": 1,
+        "time_scale": "year"
+      },
+      "selected_detail_level": {
+        "dimension": "Subregion",
+        "dimension_type": "standard",
+        "hierarchy": "Subregion",
+        "name": "Subregion",
+        "caption": "Subregion",
+        "depth": 1,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Megawatts",
+          "caption": "Consumption (Megawatts)",
+          "unit": "Unit"
+        }
+      ],
+      "requested_drilldowns": [
+        "Year",
+        "Subregion"
+      ],
+      "requested_measures": [
+        "Megawatts"
+      ],
+      "evidence_mode": "reused-complete-prior-replay",
+      "reused_from": {
+        "response_path": "research/datasaudi-decision-intelligence/03-claim-verification-and-reliability/source-replays/source-replay-20260713T013438Z-91d42fa7/responses/b1d134a45540fa208df9d8da9fc42fa787c383a91d505ef3782b363d237953ca.body",
+        "response_sha256": "b1d134a45540fa208df9d8da9fc42fa787c383a91d505ef3782b363d237953ca",
+        "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_electricity_consumption_subregion&locale=ar&drilldowns=Consumption+Type%2CSubregion%2CYear&measures=Megawatts&limit=500%2C0",
+        "evidence_id": null
+      },
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_electricity_consumption_subregion&locale=ar&drilldowns=Consumption+Type%2CSubregion%2CYear&measures=Megawatts&limit=500%2C0",
+      "actual_request_drilldowns": [
+        "Consumption Type",
+        "Subregion",
+        "Year"
+      ],
+      "actual_request_measures": [
+        "Megawatts"
+      ],
+      "rows": 432,
+      "total": 432,
+      "complete": true,
+      "columns": [
+        "Consumption Type ID",
+        "Consumption Type",
+        "Subregion ID",
+        "Subregion",
+        "Year",
+        "Megawatts"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_electricity_consumption_subregion&locale=ar&drilldowns=Consumption+Type%2CSubregion%2CYear&measures=Megawatts&limit=500%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 500,
+          "rows": 432,
+          "total": 432,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/b1d134a45540fa208df9d8da9fc42fa787c383a91d505ef3782b363d237953ca.json",
+          "response_sha256": "b1d134a45540fa208df9d8da9fc42fa787c383a91d505ef3782b363d237953ca",
+          "response_size_bytes": 61261
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/b1d134a45540fa208df9d8da9fc42fa787c383a91d505ef3782b363d237953ca.json",
+      "response_sha256": "b1d134a45540fa208df9d8da9fc42fa787c383a91d505ef3782b363d237953ca",
+      "response_size_bytes": 61261,
+      "retrieved_at_utc": "2026-07-13T01:34:54.475Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-6bbbef2ff52b451a1fd24b69",
+      "cube": "sama_health_facilities_resources",
+      "catalog_table_en": "Regional Distribution of Health Facilities and Healthcare Staff in the Kingdom - Annual",
+      "catalog_table_ar": "التوزيع الإقليمي للمرافق الصحية وموظفي القطاع الصحي في المملكة - سنوي",
+      "source_name": "Saudi Central Bank (SAMA)",
+      "source_name_ar": "البنك المركزي السعودي",
+      "source_link": "https://www.sama.gov.sa/en-US/Publications/EconomicReports/Pages/report.aspx?cid=127",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "HLT-DIRECT-01-AR",
+        "HLT-RANK-01-AR",
+        "HLT-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Year",
+        "dimension_type": "time",
+        "hierarchy": "Year",
+        "name": "Year",
+        "caption": "Year",
+        "depth": 1,
+        "time_scale": "year"
+      },
+      "selected_detail_level": {
+        "dimension": "Geography Province",
+        "dimension_type": "geo",
+        "hierarchy": "Geography",
+        "name": "Province",
+        "caption": "Province",
+        "depth": 2,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Resources",
+          "caption": "Resources",
+          "unit": "Unit Int"
+        }
+      ],
+      "requested_drilldowns": [
+        "Year",
+        "Province"
+      ],
+      "requested_measures": [
+        "Resources"
+      ],
+      "evidence_mode": "reused-complete-prior-replay",
+      "reused_from": {
+        "response_path": "research/datasaudi-decision-intelligence/03-claim-verification-and-reliability/source-replays/source-replay-20260713T013438Z-91d42fa7/responses/15405c1a7a830e01ae03e536435b9ebc0d7ff498e94217d9549cf8f9d7c1c198.body",
+        "response_sha256": "15405c1a7a830e01ae03e536435b9ebc0d7ff498e94217d9549cf8f9d7c1c198",
+        "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_health_facilities_resources&locale=en&drilldowns=Nation%2CProvince%2CResource+Category%2CYear&measures=Resources&limit=1352%2C0",
+        "evidence_id": null
+      },
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_health_facilities_resources&locale=en&drilldowns=Nation%2CProvince%2CResource+Category%2CYear&measures=Resources&limit=1352%2C0",
+      "actual_request_drilldowns": [
+        "Nation",
+        "Province",
+        "Resource Category",
+        "Year"
+      ],
+      "actual_request_measures": [
+        "Resources"
+      ],
+      "rows": 1352,
+      "total": 1352,
+      "complete": true,
+      "columns": [
+        "Nation ID",
+        "Nation",
+        "Province ID",
+        "Province",
+        "Resource Category ID",
+        "Resource Category",
+        "Year",
+        "Resources"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_health_facilities_resources&locale=en&drilldowns=Nation%2CProvince%2CResource+Category%2CYear&measures=Resources&limit=1352%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 1352,
+          "rows": 1352,
+          "total": 1352,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/15405c1a7a830e01ae03e536435b9ebc0d7ff498e94217d9549cf8f9d7c1c198.json",
+          "response_sha256": "15405c1a7a830e01ae03e536435b9ebc0d7ff498e94217d9549cf8f9d7c1c198",
+          "response_size_bytes": 239815
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/15405c1a7a830e01ae03e536435b9ebc0d7ff498e94217d9549cf8f9d7c1c198.json",
+      "response_sha256": "15405c1a7a830e01ae03e536435b9ebc0d7ff498e94217d9549cf8f9d7c1c198",
+      "response_size_bytes": 239815,
+      "retrieved_at_utc": "2026-07-13T01:35:13.994Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-407b9798b415bff062f56c3a",
+      "cube": "sama_higher_education",
+      "catalog_table_en": "Number of New and Registered Students and Graduates in Higher Education - Annual",
+      "catalog_table_ar": "عدد الطلاب الجدد والمسجلين والخريجين في التعليم العالي - سنوي",
+      "source_name": "Saudi Central Bank (SAMA)",
+      "source_name_ar": "البنك المركزي السعودي",
+      "source_link": "https://www.sama.gov.sa/en-US/Publications/EconomicReports/Pages/report.aspx?cid=127",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "EDU-DIRECT-01-AR",
+        "EDU-RANK-01-AR",
+        "EDU-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Year",
+        "dimension_type": "time",
+        "hierarchy": "Year",
+        "name": "Year",
+        "caption": "Year",
+        "depth": 1,
+        "time_scale": "year"
+      },
+      "selected_detail_level": {
+        "dimension": "Academic Status",
+        "dimension_type": "standard",
+        "hierarchy": "Academic Status",
+        "name": "Academic Status",
+        "caption": "Academic Status",
+        "depth": 1,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Students",
+          "caption": "Students",
+          "unit": "Unit Int"
+        }
+      ],
+      "requested_drilldowns": [
+        "Year",
+        "Academic Status"
+      ],
+      "requested_measures": [
+        "Students"
+      ],
+      "evidence_mode": "public-api-live-replay",
+      "reused_from": null,
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_higher_education&drilldowns=Year%2CAcademic+Status&measures=Students&locale=en&limit=50000%2C0",
+      "actual_request_drilldowns": [
+        "Year",
+        "Academic Status"
+      ],
+      "actual_request_measures": [
+        "Students"
+      ],
+      "rows": 153,
+      "total": 153,
+      "complete": true,
+      "columns": [
+        "Academic Status ID",
+        "Academic Status",
+        "Year",
+        "Students"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_higher_education&drilldowns=Year%2CAcademic+Status&measures=Students&locale=en&limit=50000%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 50000,
+          "rows": 153,
+          "total": 153,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/pages/b820f37156ac25bd6c4a3cfdaa81909752cb2b61f6b465b004a1f207c6c02087.json",
+          "response_sha256": "b820f37156ac25bd6c4a3cfdaa81909752cb2b61f6b465b004a1f207c6c02087",
+          "response_size_bytes": 14284
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/b820f37156ac25bd6c4a3cfdaa81909752cb2b61f6b465b004a1f207c6c02087.json",
+      "response_sha256": "b820f37156ac25bd6c4a3cfdaa81909752cb2b61f6b465b004a1f207c6c02087",
+      "response_size_bytes": 14284,
+      "retrieved_at_utc": "2026-07-13T10:27:42.686Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-fb7036ec6382cd05e86967ab",
+      "cube": "sama_internet_penetration_region",
+      "catalog_table_en": "Internet Penetration Rate by Regions - Annual",
+      "catalog_table_ar": "معدل انتشار الإنترنت حسب المناطق الإدارية - سنوي",
+      "source_name": "Saudi Central Bank (SAMA)",
+      "source_name_ar": "البنك المركزي السعودي",
+      "source_link": "https://www.sama.gov.sa/en-US/Publications/EconomicReports/Pages/report.aspx?cid=127",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "DIG-DIRECT-01-AR",
+        "DIG-RANK-01-AR",
+        "DIG-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Year",
+        "dimension_type": "time",
+        "hierarchy": "Year",
+        "name": "Year",
+        "caption": "Year",
+        "depth": 1,
+        "time_scale": "year"
+      },
+      "selected_detail_level": {
+        "dimension": "Geography Province",
+        "dimension_type": "geo",
+        "hierarchy": "Geography",
+        "name": "Province",
+        "caption": "Province",
+        "depth": 2,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Ratio",
+          "caption": "Ratio",
+          "unit": "Percentage Base 100"
+        }
+      ],
+      "requested_drilldowns": [
+        "Year",
+        "Province"
+      ],
+      "requested_measures": [
+        "Ratio"
+      ],
+      "evidence_mode": "reused-complete-prior-replay",
+      "reused_from": {
+        "response_path": "research/datasaudi-decision-intelligence/03-claim-verification-and-reliability/source-replays/source-replay-20260713T013438Z-91d42fa7/responses/b4f0f007d2bbbd790d2bb672474463824b75576e0bdd7a568a2bfc2e0c1dc8ff.body",
+        "response_sha256": "b4f0f007d2bbbd790d2bb672474463824b75576e0bdd7a568a2bfc2e0c1dc8ff",
+        "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_internet_penetration_region&locale=ar&drilldowns=Nation%2CProvince%2CYear&measures=Ratio&limit=500%2C0",
+        "evidence_id": null
+      },
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_internet_penetration_region&locale=ar&drilldowns=Nation%2CProvince%2CYear&measures=Ratio&limit=500%2C0",
+      "actual_request_drilldowns": [
+        "Nation",
+        "Province",
+        "Year"
+      ],
+      "actual_request_measures": [
+        "Ratio"
+      ],
+      "rows": 140,
+      "total": 140,
+      "complete": true,
+      "columns": [
+        "Nation ID",
+        "Nation",
+        "Province ID",
+        "Province",
+        "Year",
+        "Ratio"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_internet_penetration_region&locale=ar&drilldowns=Nation%2CProvince%2CYear&measures=Ratio&limit=500%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 500,
+          "rows": 140,
+          "total": 140,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/b4f0f007d2bbbd790d2bb672474463824b75576e0bdd7a568a2bfc2e0c1dc8ff.json",
+          "response_sha256": "b4f0f007d2bbbd790d2bb672474463824b75576e0bdd7a568a2bfc2e0c1dc8ff",
+          "response_size_bytes": 21569
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/b4f0f007d2bbbd790d2bb672474463824b75576e0bdd7a568a2bfc2e0c1dc8ff.json",
+      "response_sha256": "b4f0f007d2bbbd790d2bb672474463824b75576e0bdd7a568a2bfc2e0c1dc8ff",
+      "response_size_bytes": 21569,
+      "retrieved_at_utc": "2026-07-13T01:35:04.336Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-3c87e9df415daee20ca37841",
+      "cube": "sama_pos_cities",
+      "catalog_table_en": "Point of Sale Transactions by Major Cities - Annual and Monthly",
+      "catalog_table_ar": "معاملات نقاط البيع حسب المدن الرئيسة - سنوي، وربع سنوي، وشهري",
+      "source_name": "Saudi Central Bank (SAMA)",
+      "source_name_ar": "البنك المركزي السعودي",
+      "source_link": "https://www.sama.gov.sa/en-US/Statistics/Pages/MonthlyStatistics.aspx",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "PAY-DIRECT-01-AR",
+        "PAY-RANK-01-AR",
+        "PAY-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Date Month",
+        "dimension_type": "time",
+        "hierarchy": "Date",
+        "name": "Month",
+        "caption": "Month",
+        "depth": 2,
+        "time_scale": "month"
+      },
+      "selected_detail_level": {
+        "dimension": "City",
+        "dimension_type": "standard",
+        "hierarchy": "City",
+        "name": "City",
+        "caption": "City",
+        "depth": 1,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Number of Terminals",
+          "caption": "Number of Terminals",
+          "unit": "Unit Int"
+        },
+        {
+          "name": "Number of Transactions",
+          "caption": "Number of Transactions (Thousand)",
+          "unit": "Unit Int"
+        },
+        {
+          "name": "Sales",
+          "caption": "Sales (Thousand ⃁)",
+          "unit": "Unit Int"
+        }
+      ],
+      "requested_drilldowns": [
+        "Month",
+        "City"
+      ],
+      "requested_measures": [
+        "Number of Terminals",
+        "Number of Transactions",
+        "Sales"
+      ],
+      "evidence_mode": "public-api-live-replay",
+      "reused_from": null,
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_pos_cities&drilldowns=Month%2CCity&measures=Number+of+Terminals%2CNumber+of+Transactions%2CSales&locale=en&limit=50000%2C0",
+      "actual_request_drilldowns": [
+        "Month",
+        "City"
+      ],
+      "actual_request_measures": [
+        "Number of Terminals",
+        "Number of Transactions",
+        "Sales"
+      ],
+      "rows": 1596,
+      "total": 1596,
+      "complete": true,
+      "columns": [
+        "City ID",
+        "City",
+        "Month ID",
+        "Month",
+        "Number of Terminals",
+        "Number of Transactions",
+        "Sales"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_pos_cities&drilldowns=Month%2CCity&measures=Number+of+Terminals%2CNumber+of+Transactions%2CSales&locale=en&limit=50000%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 50000,
+          "rows": 1596,
+          "total": 1596,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/pages/b2d64fc25b6466950b179c41db6fc6bfd93808f4a3e3ce10ab9926cea572f9b5.json",
+          "response_sha256": "b2d64fc25b6466950b179c41db6fc6bfd93808f4a3e3ce10ab9926cea572f9b5",
+          "response_size_bytes": 232890
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/b2d64fc25b6466950b179c41db6fc6bfd93808f4a3e3ce10ab9926cea572f9b5.json",
+      "response_sha256": "b2d64fc25b6466950b179c41db6fc6bfd93808f4a3e3ce10ab9926cea572f9b5",
+      "response_size_bytes": 232890,
+      "retrieved_at_utc": "2026-07-13T10:27:42.900Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-d64d6e913868fee1a377a248",
+      "cube": "sama_pos_sectors",
+      "catalog_table_en": "Point of Sale Transactions by Economic Sector - Annual, Quarter, and Month",
+      "catalog_table_ar": "معاملات نقاط البيع حسب القطاع الاقتصادي - سنوي، وربع سنوي، وشهري",
+      "source_name": "Saudi Central Bank (SAMA)",
+      "source_name_ar": "البنك المركزي السعودي",
+      "source_link": "https://www.sama.gov.sa/en-US/Statistics/Pages/MonthlyStatistics.aspx",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "PAY-DIRECT-01-AR",
+        "PAY-RANK-01-AR",
+        "PAY-SERIES-01-AR",
+        "SRV-DIRECT-01-AR",
+        "SRV-RANK-01-AR",
+        "SRV-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Date Month",
+        "dimension_type": "time",
+        "hierarchy": "Date",
+        "name": "Month",
+        "caption": "Month",
+        "depth": 3,
+        "time_scale": "month"
+      },
+      "selected_detail_level": {
+        "dimension": "Economic Sectors",
+        "dimension_type": "standard",
+        "hierarchy": "Economic Sectors",
+        "name": "Economic Sectors",
+        "caption": "Economic Sectors",
+        "depth": 1,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Number of Transactions",
+          "caption": "Number of Transactions (Thousand)",
+          "unit": "Unit"
+        },
+        {
+          "name": "Sales",
+          "caption": "Sales (Thousand ⃁)",
+          "unit": "Unit"
+        }
+      ],
+      "requested_drilldowns": [
+        "Month",
+        "Economic Sectors"
+      ],
+      "requested_measures": [
+        "Number of Transactions",
+        "Sales"
+      ],
+      "evidence_mode": "reused-complete-prior-replay",
+      "reused_from": {
+        "response_path": "research/datasaudi-decision-intelligence/03-claim-verification-and-reliability/source-replays/source-replay-20260713T013438Z-91d42fa7/responses/10a079424cf4502afe7ed3b174c085f1b32458abe244e5680aeabaa768bd61d8.body",
+        "response_sha256": "10a079424cf4502afe7ed3b174c085f1b32458abe244e5680aeabaa768bd61d8",
+        "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_pos_sectors&locale=ar&drilldowns=Economic+Sectors%2CMonth&measures=Number+of+Transactions%2CSales&limit=1346%2C0",
+        "evidence_id": null
+      },
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_pos_sectors&locale=ar&drilldowns=Economic+Sectors%2CMonth&measures=Number+of+Transactions%2CSales&limit=1346%2C0",
+      "actual_request_drilldowns": [
+        "Economic Sectors",
+        "Month"
+      ],
+      "actual_request_measures": [
+        "Number of Transactions",
+        "Sales"
+      ],
+      "rows": 1346,
+      "total": 1346,
+      "complete": true,
+      "columns": [
+        "Month ID",
+        "Month",
+        "Economic Sectors ID",
+        "Economic Sectors",
+        "Number of Transactions",
+        "Sales"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_pos_sectors&locale=ar&drilldowns=Economic+Sectors%2CMonth&measures=Number+of+Transactions%2CSales&limit=1346%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 1346,
+          "rows": 1346,
+          "total": 1346,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/10a079424cf4502afe7ed3b174c085f1b32458abe244e5680aeabaa768bd61d8.json",
+          "response_sha256": "10a079424cf4502afe7ed3b174c085f1b32458abe244e5680aeabaa768bd61d8",
+          "response_size_bytes": 258040
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/10a079424cf4502afe7ed3b174c085f1b32458abe244e5680aeabaa768bd61d8.json",
+      "response_sha256": "10a079424cf4502afe7ed3b174c085f1b32458abe244e5680aeabaa768bd61d8",
+      "response_size_bytes": 258040,
+      "retrieved_at_utc": "2026-07-13T01:34:48.529Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-bf183b40aba3c15f5fe7de31",
+      "cube": "sama_pos_transactions_mada",
+      "catalog_table_en": "Point of Sale and E-commerce Transactions (Mada Cards) - Annual and Monthly",
+      "catalog_table_ar": "معاملات نقاط البيع والتجارة الإلكترونية (بطاقات مدى) - سنوي، وربع سنوي، وشهري\n",
+      "source_name": "Saudi Central Bank (SAMA)",
+      "source_name_ar": "البنك المركزي السعودي",
+      "source_link": "https://www.sama.gov.sa/en-US/Statistics/Pages/MonthlyStatistics.aspx",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "PAY-DIRECT-01-AR",
+        "PAY-RANK-01-AR",
+        "PAY-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Date Month",
+        "dimension_type": "time",
+        "hierarchy": "Date",
+        "name": "Month",
+        "caption": "Month",
+        "depth": 2,
+        "time_scale": "month"
+      },
+      "selected_detail_level": {
+        "dimension": "Classification",
+        "dimension_type": "standard",
+        "hierarchy": "Classification",
+        "name": "Classification",
+        "caption": "Classification",
+        "depth": 1,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Number of Points of Sale Terminals",
+          "caption": "Number of Points of Sale Terminals",
+          "unit": "Unit Int"
+        },
+        {
+          "name": "Number of Transactions",
+          "caption": "Number of Transactions",
+          "unit": "Unit Int"
+        },
+        {
+          "name": "Sales",
+          "caption": "Sales (Thousand ⃁)",
+          "unit": "Unit"
+        }
+      ],
+      "requested_drilldowns": [
+        "Month",
+        "Classification"
+      ],
+      "requested_measures": [
+        "Number of Points of Sale Terminals",
+        "Number of Transactions",
+        "Sales"
+      ],
+      "evidence_mode": "public-api-live-replay",
+      "reused_from": null,
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_pos_transactions_mada&drilldowns=Month%2CClassification&measures=Number+of+Points+of+Sale+Terminals%2CNumber+of+Transactions%2CSales&locale=en&limit=50000%2C0",
+      "actual_request_drilldowns": [
+        "Month",
+        "Classification"
+      ],
+      "actual_request_measures": [
+        "Number of Points of Sale Terminals",
+        "Number of Transactions",
+        "Sales"
+      ],
+      "rows": 555,
+      "total": 555,
+      "complete": true,
+      "columns": [
+        "Classification ID",
+        "Classification",
+        "Month ID",
+        "Month",
+        "Number of Points of Sale Terminals",
+        "Number of Transactions",
+        "Sales"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_pos_transactions_mada&drilldowns=Month%2CClassification&measures=Number+of+Points+of+Sale+Terminals%2CNumber+of+Transactions%2CSales&locale=en&limit=50000%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 50000,
+          "rows": 555,
+          "total": 555,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/pages/e19cef5f9e15f6fb6a7da24610419a1c5b1202486b6678e65177c57123091131.json",
+          "response_sha256": "e19cef5f9e15f6fb6a7da24610419a1c5b1202486b6678e65177c57123091131",
+          "response_size_bytes": 118794
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/e19cef5f9e15f6fb6a7da24610419a1c5b1202486b6678e65177c57123091131.json",
+      "response_sha256": "e19cef5f9e15f6fb6a7da24610419a1c5b1202486b6678e65177c57123091131",
+      "response_size_bytes": 118794,
+      "retrieved_at_utc": "2026-07-13T10:27:43.066Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-5fb0a15eb5fb2351c1165159",
+      "cube": "sama_water_consumption_region",
+      "catalog_table_en": "Water Consumption by Administrative Region - Annual",
+      "catalog_table_ar": "استهلاك المياه حسب المنطقة الإدارية - سنوي",
+      "source_name": "Saudi Central Bank (SAMA)",
+      "source_name_ar": "البنك المركزي السعودي",
+      "source_link": "https://www.sama.gov.sa/en-US/Publications/EconomicReports/Pages/report.aspx?cid=127",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "ENR-DIRECT-01-AR",
+        "ENR-RANK-01-AR",
+        "ENR-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Year",
+        "dimension_type": "time",
+        "hierarchy": "Year",
+        "name": "Year",
+        "caption": "Year",
+        "depth": 1,
+        "time_scale": "year"
+      },
+      "selected_detail_level": {
+        "dimension": "Geography Province",
+        "dimension_type": "geo",
+        "hierarchy": "Geography",
+        "name": "Province",
+        "caption": "Province",
+        "depth": 2,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Thousand cubic meters",
+          "caption": "Consumption (Thousand M³)",
+          "unit": "Unit Int"
+        }
+      ],
+      "requested_drilldowns": [
+        "Year",
+        "Province"
+      ],
+      "requested_measures": [
+        "Thousand cubic meters"
+      ],
+      "evidence_mode": "reused-complete-prior-replay",
+      "reused_from": {
+        "response_path": "research/datasaudi-decision-intelligence/03-claim-verification-and-reliability/source-replays/source-replay-20260713T013438Z-91d42fa7/responses/91133f5647da60ab9c65f1eb875d3af5568958e5e91fafe6cb24e46d54a7c001.body",
+        "response_sha256": "91133f5647da60ab9c65f1eb875d3af5568958e5e91fafe6cb24e46d54a7c001",
+        "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_water_consumption_region&locale=en&drilldowns=Nation%2CProvince%2CYear&measures=Thousand+cubic+meters&limit=500%2C0",
+        "evidence_id": null
+      },
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_water_consumption_region&locale=en&drilldowns=Nation%2CProvince%2CYear&measures=Thousand+cubic+meters&limit=500%2C0",
+      "actual_request_drilldowns": [
+        "Nation",
+        "Province",
+        "Year"
+      ],
+      "actual_request_measures": [
+        "Thousand cubic meters"
+      ],
+      "rows": 177,
+      "total": 177,
+      "complete": true,
+      "columns": [
+        "Nation ID",
+        "Nation",
+        "Province ID",
+        "Province",
+        "Year",
+        "Thousand cubic meters"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_water_consumption_region&locale=en&drilldowns=Nation%2CProvince%2CYear&measures=Thousand+cubic+meters&limit=500%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 500,
+          "rows": 177,
+          "total": 177,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/91133f5647da60ab9c65f1eb875d3af5568958e5e91fafe6cb24e46d54a7c001.json",
+          "response_sha256": "91133f5647da60ab9c65f1eb875d3af5568958e5e91fafe6cb24e46d54a7c001",
+          "response_size_bytes": 23559
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/91133f5647da60ab9c65f1eb875d3af5568958e5e91fafe6cb24e46d54a7c001.json",
+      "response_sha256": "91133f5647da60ab9c65f1eb875d3af5568958e5e91fafe6cb24e46d54a7c001",
+      "response_size_bytes": 23559,
+      "retrieved_at_utc": "2026-07-13T01:34:54.937Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-e28ab198dc12875472fe5499",
+      "cube": "service_trade_balance",
+      "catalog_table_en": "Services Imports, Exports and Trade Balance by Type",
+      "catalog_table_ar": "استيراد وتصدير الخدمات والرصيد التجاري حسب النوع (ربع سنوي)",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://www.stats.gov.sa/en/statistics-tabs?tab=436312&category=1340149",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "TRD-DIRECT-01-AR",
+        "TRD-RANK-01-AR",
+        "TRD-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Date Quarter",
+        "dimension_type": "time",
+        "hierarchy": "Date",
+        "name": "Quarter",
+        "caption": "Quarter",
+        "depth": 2,
+        "time_scale": "quarter"
+      },
+      "selected_detail_level": {
+        "dimension": "Type of Service",
+        "dimension_type": "standard",
+        "hierarchy": "Type of Service",
+        "name": "Type of Service",
+        "caption": "Type of Service",
+        "depth": 1,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Exports",
+          "caption": "Exports (Million ⃁)",
+          "unit": "Unit"
+        },
+        {
+          "name": "Imports",
+          "caption": "Imports (Million ⃁)",
+          "unit": "Unit"
+        },
+        {
+          "name": "Trade Balance",
+          "caption": "Trade Balance (Million ⃁)",
+          "unit": "Unit"
+        }
+      ],
+      "requested_drilldowns": [
+        "Quarter",
+        "Type of Service"
+      ],
+      "requested_measures": [
+        "Exports",
+        "Imports",
+        "Trade Balance"
+      ],
+      "evidence_mode": "public-api-live-replay",
+      "reused_from": null,
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=service_trade_balance&drilldowns=Quarter%2CType+of+Service&measures=Exports%2CImports%2CTrade+Balance&locale=en&limit=50000%2C0",
+      "actual_request_drilldowns": [
+        "Quarter",
+        "Type of Service"
+      ],
+      "actual_request_measures": [
+        "Exports",
+        "Imports",
+        "Trade Balance"
+      ],
+      "rows": 156,
+      "total": 156,
+      "complete": true,
+      "columns": [
+        "Quarter ID",
+        "Quarter",
+        "Type of Service ID",
+        "Type of Service",
+        "Exports",
+        "Imports",
+        "Trade Balance"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=service_trade_balance&drilldowns=Quarter%2CType+of+Service&measures=Exports%2CImports%2CTrade+Balance&locale=en&limit=50000%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 50000,
+          "rows": 156,
+          "total": 156,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/pages/71fa13dba9fbcaab0ba6870dcd3b9d28f64b9349bba6a2d5c0443db422d4ae42.json",
+          "response_sha256": "71fa13dba9fbcaab0ba6870dcd3b9d28f64b9349bba6a2d5c0443db422d4ae42",
+          "response_size_bytes": 31386
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/71fa13dba9fbcaab0ba6870dcd3b9d28f64b9349bba6a2d5c0443db422d4ae42.json",
+      "response_sha256": "71fa13dba9fbcaab0ba6870dcd3b9d28f64b9349bba6a2d5c0443db422d4ae42",
+      "response_size_bytes": 31386,
+      "retrieved_at_utc": "2026-07-13T10:27:43.192Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-fcbb0bdba9c667a2e24b0950",
+      "cube": "tourism_occupancy_rate_monthly",
+      "catalog_table_en": "Tourism Occupancy Rate - Monthly",
+      "catalog_table_ar": "معدل الإشغال السياحي الشهري",
+      "source_name": "Ministry of Tourism",
+      "source_name_ar": "وزارة السياحة",
+      "source_link": "https://mt.gov.sa/tic/open-data",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "TOU-DIRECT-01-AR",
+        "TOU-RANK-01-AR",
+        "TOU-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Year Month",
+        "dimension_type": "time",
+        "hierarchy": "Date",
+        "name": "Month",
+        "caption": "Month",
+        "depth": 2,
+        "time_scale": "month"
+      },
+      "selected_detail_level": {
+        "dimension": "Geography Province",
+        "dimension_type": "geo",
+        "hierarchy": "Geography",
+        "name": "Province",
+        "caption": "Province",
+        "depth": 2,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Occupancy Rate",
+          "caption": "Occupancy Rate",
+          "unit": "Rate"
+        }
+      ],
+      "requested_drilldowns": [
+        "Month",
+        "Province"
+      ],
+      "requested_measures": [
+        "Occupancy Rate"
+      ],
+      "evidence_mode": "public-api-live-replay",
+      "reused_from": null,
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=tourism_occupancy_rate_monthly&drilldowns=Month%2CProvince&measures=Occupancy+Rate&locale=en&limit=50000%2C0",
+      "actual_request_drilldowns": [
+        "Month",
+        "Province"
+      ],
+      "actual_request_measures": [
+        "Occupancy Rate"
+      ],
+      "rows": 672,
+      "total": 672,
+      "complete": true,
+      "columns": [
+        "Province ID",
+        "Province",
+        "Month ID",
+        "Month",
+        "Occupancy Rate"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=tourism_occupancy_rate_monthly&drilldowns=Month%2CProvince&measures=Occupancy+Rate&locale=en&limit=50000%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 50000,
+          "rows": 672,
+          "total": 672,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/pages/bee1d977bd0160d3eebdfbb1a816e426fb9131e762462e27be69cac580947af0.json",
+          "response_sha256": "bee1d977bd0160d3eebdfbb1a816e426fb9131e762462e27be69cac580947af0",
+          "response_size_bytes": 77715
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/bee1d977bd0160d3eebdfbb1a816e426fb9131e762462e27be69cac580947af0.json",
+      "response_sha256": "bee1d977bd0160d3eebdfbb1a816e426fb9131e762462e27be69cac580947af0",
+      "response_size_bytes": 77715,
+      "retrieved_at_utc": "2026-07-13T10:27:43.320Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-b41e253adea2dc234ff40b19",
+      "cube": "tourism_satisfaction_index",
+      "catalog_table_en": "Tourism Satisfaction Index - Quarterly",
+      "catalog_table_ar": "مؤشر رضا السياح - ربع سنوي",
+      "source_name": "Saudi Tourism Authority",
+      "source_name_ar": "هيئة السياحة السعودية",
+      "source_link": "https://www.sta.gov.sa/en/home",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "TOU-DIRECT-01-AR",
+        "TOU-RANK-01-AR",
+        "TOU-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Quarter",
+        "dimension_type": "time",
+        "hierarchy": "Date",
+        "name": "Quarter",
+        "caption": "Quarter",
+        "depth": 1,
+        "time_scale": "quarter"
+      },
+      "selected_detail_level": {
+        "dimension": "Economic Sectors",
+        "dimension_type": "standard",
+        "hierarchy": "Economic Sectors",
+        "name": "Economic Sectors",
+        "caption": "Economic Sectors",
+        "depth": 1,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Tourism Satisfaction Index",
+          "caption": "Tourism Satisfaction Index",
+          "unit": "Percentage"
+        }
+      ],
+      "requested_drilldowns": [
+        "Quarter",
+        "Economic Sectors"
+      ],
+      "requested_measures": [
+        "Tourism Satisfaction Index"
+      ],
+      "evidence_mode": "public-api-live-replay",
+      "reused_from": null,
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=tourism_satisfaction_index&drilldowns=Quarter%2CEconomic+Sectors&measures=Tourism+Satisfaction+Index&locale=en&limit=50000%2C0",
+      "actual_request_drilldowns": [
+        "Quarter",
+        "Economic Sectors"
+      ],
+      "actual_request_measures": [
+        "Tourism Satisfaction Index"
+      ],
+      "rows": 6,
+      "total": 6,
+      "complete": true,
+      "columns": [
+        "Economic Sectors ID",
+        "Economic Sectors",
+        "Quarter ID",
+        "Quarter",
+        "Tourism Satisfaction Index"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=tourism_satisfaction_index&drilldowns=Quarter%2CEconomic+Sectors&measures=Tourism+Satisfaction+Index&locale=en&limit=50000%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 50000,
+          "rows": 6,
+          "total": 6,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/pages/51d03baa192aeb21e170b123d0ceb2d2cdddd56b74fba118bc69964802608544.json",
+          "response_sha256": "51d03baa192aeb21e170b123d0ceb2d2cdddd56b74fba118bc69964802608544",
+          "response_size_bytes": 1467
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/51d03baa192aeb21e170b123d0ceb2d2cdddd56b74fba118bc69964802608544.json",
+      "response_sha256": "51d03baa192aeb21e170b123d0ceb2d2cdddd56b74fba118bc69964802608544",
+      "response_size_bytes": 1467,
+      "retrieved_at_utc": "2026-07-13T10:27:43.465Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-e41f99b5faf25b7c017e3763",
+      "cube": "trade_balance_by_country",
+      "catalog_table_en": "Trade Balance by Country - Annual, Quarter, and Month",
+      "catalog_table_ar": "الميزان التجاري حسب الدولة - سنوي، وربع سنوي، وشهري\n",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://database.stats.gov.sa/",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "TRD-DIRECT-01-AR",
+        "TRD-RANK-01-AR",
+        "TRD-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Date Month",
+        "dimension_type": "time",
+        "hierarchy": "Date",
+        "name": "Month",
+        "caption": "Month",
+        "depth": 3,
+        "time_scale": "month"
+      },
+      "selected_detail_level": {
+        "dimension": "Country",
+        "dimension_type": "geo",
+        "hierarchy": "Country",
+        "name": "Country",
+        "caption": "Country",
+        "depth": 2,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Trade Balance",
+          "caption": "Trade Balance (⃁)",
+          "unit": "Unit"
+        }
+      ],
+      "requested_drilldowns": [
+        "Month",
+        "Country"
+      ],
+      "requested_measures": [
+        "Trade Balance"
+      ],
+      "evidence_mode": "public-api-live-replay",
+      "reused_from": null,
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=trade_balance_by_country&drilldowns=Month%2CCountry&measures=Trade+Balance&locale=en&limit=50000%2C0",
+      "actual_request_drilldowns": [
+        "Month",
+        "Country"
+      ],
+      "actual_request_measures": [
+        "Trade Balance"
+      ],
+      "rows": 25359,
+      "total": 25359,
+      "complete": true,
+      "columns": [
+        "Country ID",
+        "Country",
+        "Month ID",
+        "Month",
+        "Trade Balance"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=trade_balance_by_country&drilldowns=Month%2CCountry&measures=Trade+Balance&locale=en&limit=50000%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 50000,
+          "rows": 25359,
+          "total": 25359,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/pages/bc0b786be40530657c68928df63bfa4ba9352064cca994e07e3b487707e8b020.json",
+          "response_sha256": "bc0b786be40530657c68928df63bfa4ba9352064cca994e07e3b487707e8b020",
+          "response_size_bytes": 3053858
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/bc0b786be40530657c68928df63bfa4ba9352064cca994e07e3b487707e8b020.json",
+      "response_sha256": "bc0b786be40530657c68928df63bfa4ba9352064cca994e07e3b487707e8b020",
+      "response_size_bytes": 3053858,
+      "retrieved_at_utc": "2026-07-13T10:27:44.103Z"
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "DETAIL-c102d2c4bd67f87571b82aa3",
+      "cube": "umrah_distribution_external_umrah_performers_by_sex_month",
+      "catalog_table_en": "Distribution of International Umrah Performers by Gender - Monthly",
+      "catalog_table_ar": "توزيع المعتمرين من الخارج حسب الجنس - شهري",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_link": "https://www.stats.gov.sa/en/statistics-tabs/-/categories/124334?tab=436312&category=124334",
+      "covered_families": [
+        "direct",
+        "rank",
+        "series"
+      ],
+      "covered_question_ids": [
+        "HUM-DIRECT-01-AR",
+        "HUM-RANK-01-AR",
+        "HUM-SERIES-01-AR"
+      ],
+      "finest_time_level": {
+        "dimension": "Date Month",
+        "dimension_type": "time",
+        "hierarchy": "Date",
+        "name": "Month",
+        "caption": "Month",
+        "depth": 3,
+        "time_scale": "month"
+      },
+      "selected_detail_level": {
+        "dimension": "Sex",
+        "dimension_type": "standard",
+        "hierarchy": "Sex",
+        "name": "Sex",
+        "caption": "Sex",
+        "depth": 1,
+        "time_scale": null
+      },
+      "selected_measures": [
+        {
+          "name": "Distribution of (external) Umrah performers",
+          "caption": "Distribution of (external) Umrah performers",
+          "unit": "Unit Int"
+        }
+      ],
+      "requested_drilldowns": [
+        "Month",
+        "Sex"
+      ],
+      "requested_measures": [
+        "Distribution of (external) Umrah performers"
+      ],
+      "evidence_mode": "public-api-live-replay",
+      "reused_from": null,
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=umrah_distribution_external_umrah_performers_by_sex_month&drilldowns=Month%2CSex&measures=Distribution+of+%28external%29+Umrah+performers&locale=en&limit=50000%2C0",
+      "actual_request_drilldowns": [
+        "Month",
+        "Sex"
+      ],
+      "actual_request_measures": [
+        "Distribution of (external) Umrah performers"
+      ],
+      "rows": 72,
+      "total": 72,
+      "complete": true,
+      "columns": [
+        "Month ID",
+        "Month",
+        "Sex ID",
+        "Sex",
+        "Distribution of (external) Umrah performers"
+      ],
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=umrah_distribution_external_umrah_performers_by_sex_month&drilldowns=Month%2CSex&measures=Distribution+of+%28external%29+Umrah+performers&locale=en&limit=50000%2C0",
+          "http_status": 200,
+          "offset": 0,
+          "requested_limit": 50000,
+          "rows": 72,
+          "total": 72,
+          "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/pages/15a7ef4554f44a8dc3b1bdbf0bb9e4435b56096bab4b4843f2e07a9bcd697fc7.json",
+          "response_sha256": "15a7ef4554f44a8dc3b1bdbf0bb9e4435b56096bab4b4843f2e07a9bcd697fc7",
+          "response_size_bytes": 9213
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/15a7ef4554f44a8dc3b1bdbf0bb9e4435b56096bab4b4843f2e07a9bcd697fc7.json",
+      "response_sha256": "15a7ef4554f44a8dc3b1bdbf0bb9e4435b56096bab4b4843f2e07a9bcd697fc7",
+      "response_size_bytes": 9213,
+      "retrieved_at_utc": "2026-07-13T10:27:44.225Z"
+    }
+  ]
+}

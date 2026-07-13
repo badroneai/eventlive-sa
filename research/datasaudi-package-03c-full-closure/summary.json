@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0",
+  "package_id": "datasaudi-package-03c-full-closure",
+  "generated_at_utc": "2026-07-13T10:50:41.434Z",
+  "status": "INDEPENDENT_ANSWER_LAYER_COMPLETE_267_OF_267",
+  "denominator": 267,
+  "answers_present": 267,
+  "answer_languages": {
+    "ar": 247,
+    "en": 20
+  },
+  "insaights_required": false,
+  "catalog_cubes": 277,
+  "oracle_replays": 65,
+  "by_independent_status": {
+    "ANSWERED_AS_GATED_PRODUCT_HYPOTHESIS": 11,
+    "ANSWERED_BY_SAFETY_CONTRACT_WITH_EVIDENCE": 2,
+    "ANSWERED_BY_SAFETY_OR_MATH_CONTRACT": 7,
+    "ANSWERED_FROM_AUTHORITATIVE_P0_REFERENCE": 87,
+    "ANSWERED_FROM_SEALED_EVIDENCE": 113,
+    "ANSWERED_FROM_TAILORED_EVIDENCE": 11,
+    "ANSWERED_WITH_VERIFIED_LIMITATION": 36
+  },
+  "by_closure_state": {
+    "CLOSED_DOCUMENTED_NOT_COMPUTABLE": 36,
+    "CLOSED_EVIDENCE_BOUND_INFERENCE": 16,
+    "CLOSED_VALID_NEGATIVE": 64,
+    "CLOSED_VERIFIED_CALCULATED": 46,
+    "CLOSED_VERIFIED_REPORTED": 105
+  },
+  "by_answer_mode": {
+    "COMPARABLE_TIME_SERIES": 24,
+    "COMPATIBILITY_MATRIX_WITH_COMPATIBLE_PAIR": 11,
+    "DATASET_METADATA": 34,
+    "DERIVED_GROWTH": 20,
+    "DESCRIPTIVE_CHANGE": 20,
+    "LATEST_COMMON_PERIOD_RANKING": 19,
+    "LATEST_REPORTED_VALUES": 24,
+    "NO_COMPARISON_VERIFIED_LIMITATION": 13,
+    "NO_RANK_VERIFIED_LIMITATION": 1,
+    "P0_REFERENCE_EVIDENCE_BACKED_REJECTION_OR_DETERMINISTIC_CONTRACT": 21,
+    "RETRIEVAL_BOUNDARY": 34,
+    "SAFETY_CONTRACT": 9,
+    "TAILORED_COMPATIBILITY_CONTRACT": 10,
+    "TAILORED_DOMAIN_CREDIT_DERIVE": 4,
+    "TAILORED_DOMAIN_CREDIT_EXPLAIN": 4,
+    "TAILORED_DOMAIN_CREDIT_RANK": 4,
+    "TAILORED_OPPORTUNITY_CONTRACT": 14,
+    "TAILORED_OPPORTUNITY_NO_RANK": 1
+  },
+  "by_numeric_result": {
+    "CLOSED_VERIFIED_LIMITATION_FEWER_THAN_THREE_VALUES": 2,
+    "CLOSED_VERIFIED_LIMITATION_FEWER_THAN_TWELVE_PERIODS": 3,
+    "COMPATIBILITY_MATRIX_PROVIDED": 11,
+    "NOT_REQUESTED": 107,
+    "PROVIDED_AS_REQUESTED": 113,
+    "UNAVAILABLE_FROM_SEALED_INPUTS": 31
+  },
+  "by_family": {
+    "availability": 34,
+    "cross": 34,
+    "derive": 24,
+    "direct": 24,
+    "explain": 24,
+    "hallucination": 30,
+    "limit": 34,
+    "opportunity": 15,
+    "rank": 24,
+    "series": 24
+  },
+  "by_candidate_origin": {
+    "CATALOG_DISCOVERED_DOMAIN_REPAIR": 38,
+    "FROZEN_CORPUS_CANDIDATES": 173,
+    "NO_MAPPED_CUBE": 19,
+    "TAILORED_FROZEN_EVIDENCE_CONTRACT": 37
+  },
+  "by_insaights_observed_status": {
+    "ANSWER_TEXT_OBSERVED": 48,
+    "NOT_OBSERVED": 213,
+    "PLATFORM_BLOCKED": 4,
+    "QUOTA_BLOCKED": 1,
+    "UNAVAILABLE_ANSWER_OBSERVED": 1
+  },
+  "baseline_to_final": {
+    "baseline": {
+      "CLOSED": 11,
+      "PARTIAL": 38,
+      "UNSENT": 218
+    },
+    "final_closed": 267
+  },
+  "atomic_claims": {
+    "total": 4465,
+    "by_verification_status": {
+      "BOUNDED": 60,
+      "VERIFIED": 4405
+    },
+    "unresolved": 0,
+    "incorrect": 0
+  },
+  "routing_gaps": 0,
+  "tailored_contracts": {
+    "expected": 37,
+    "integrated": 37,
+    "primary_x_opp": 25,
+    "domain_credit": 12,
+    "cross": 10,
+    "opportunity": 15,
+    "unique_answer_hashes": 37
+  },
+  "catalog_repairs": [
+    {
+      "domain": "fis",
+      "cubes": [
+        "mof_government_revenues_expenditures",
+        "mof_government_revenues_expenditures_quarter"
+      ]
+    },
+    {
+      "domain": "ext",
+      "cubes": [
+        "gastat_fdi_inflow_by_country",
+        "gastat_fdi_stock",
+        "sama_fdi"
+      ]
+    },
+    {
+      "domain": "mkt",
+      "cubes": [
+        "tadawul_indicators",
+        "tadawul_indicators_quarterly",
+        "tadawul_indicators_yearly"
+      ]
+    },
+    {
+      "domain": "rnd",
+      "cubes": [
+        "research_development_by_sector",
+        "rd_expenditure_by_size"
+      ]
+    }
+  ],
+  "interpretation": {
+    "independent_answer_layer": "Every frozen question has a deterministic answer in its original language. A refusal, NO_RANK, or evidence-gap statement is an answer when the requested value is not supportable.",
+    "insaights_observation_layer": "Whether INSAIGHTS produced text is recorded separately and never controls the independent answer status.",
+    "commercial_claims": "Opportunity answers are gated hypotheses; willingness to pay is not claimed as observed."
+  }
+}

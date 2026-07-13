@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-07-13T10:13:48.453Z",
+  "catalog_path": "research/datasaudi-insaights/03-raw-evidence-snapshots/snapshots/run-20260713T004840Z/cubes-show-all-true.json",
+  "catalog_sha256": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4",
+  "catalog_cube_count": 277,
+  "query_count": 4,
+  "complete_query_count": 4,
+  "total_rows": 3613,
+  "evidence": [
+    {
+      "schema_version": "1.0",
+      "domain": "ext",
+      "cube": "sama_fdi",
+      "catalog_present": true,
+      "catalog_sha256": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4",
+      "table_ar": "تدفقات الاستثمار الأجنبي المباشر - سنوي وربع سنوي",
+      "source_name_ar": "البنك المركزي السعودي",
+      "source_name": "Saudi Central Bank (SAMA)",
+      "source_link": "https://www.sama.gov.sa/en-US/Statistics/Pages/MonthlyStatistics.aspx",
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_fdi&drilldowns=Quarter%2CFlow&measures=Million+SAR&locale=en&limit=50000%2C0",
+      "drilldowns": [
+        "Quarter",
+        "Flow"
+      ],
+      "measures": [
+        "Million SAR"
+      ],
+      "http_status": 200,
+      "rows": 162,
+      "total": 162,
+      "complete": true,
+      "columns": [
+        "Quarter ID",
+        "Quarter",
+        "Flow ID",
+        "Flow",
+        "Million SAR"
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/evidence/responses/d36af201957d2973d43a93a5b6ba7d4ae2f3ed1701760c7aa608089f84f9fbc4.json",
+      "response_sha256": "d36af201957d2973d43a93a5b6ba7d4ae2f3ed1701760c7aa608089f84f9fbc4",
+      "response_size_bytes": 16842
+    },
+    {
+      "schema_version": "1.0",
+      "domain": "fis",
+      "cube": "mof_government_revenues_expenditures",
+      "catalog_present": true,
+      "catalog_sha256": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4",
+      "table_ar": "الإيرادات والنفقات الحكومية - سنوي",
+      "source_name_ar": "وزارة المالية",
+      "source_name": "Ministry of Finance",
+      "source_link": "https://www.mof.gov.sa/en/financialreport/Pages/default.aspx",
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=mof_government_revenues_expenditures&drilldowns=Year%2CType&measures=Value&locale=en&limit=50000%2C0",
+      "drilldowns": [
+        "Year",
+        "Type"
+      ],
+      "measures": [
+        "Value"
+      ],
+      "http_status": 200,
+      "rows": 285,
+      "total": 285,
+      "complete": true,
+      "columns": [
+        "Type ID",
+        "Type",
+        "Year",
+        "Value"
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/evidence/responses/f679c099114aa3f6e72eff5c61a1180665605504db30b11bc9e42cdde0f8fa39.json",
+      "response_sha256": "f679c099114aa3f6e72eff5c61a1180665605504db30b11bc9e42cdde0f8fa39",
+      "response_size_bytes": 20894
+    },
+    {
+      "schema_version": "1.0",
+      "domain": "mkt",
+      "cube": "tadawul_indicators",
+      "catalog_present": true,
+      "catalog_sha256": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4",
+      "table_ar": "مؤشرات تداول - سنوي، وربع سنوي، وشهري",
+      "source_name_ar": "البورصة السعودية",
+      "source_name": "Saudi Exchange",
+      "source_link": "https://www.saudiexchange.sa/wps/portal/saudiexchange/newsandreports/reports-publications/annual-reports?locale=en",
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=tadawul_indicators&drilldowns=Month%2CIndicator&measures=Value%2CGrowth&locale=en&limit=50000%2C0",
+      "drilldowns": [
+        "Month",
+        "Indicator"
+      ],
+      "measures": [
+        "Value",
+        "Growth"
+      ],
+      "http_status": 200,
+      "rows": 3150,
+      "total": 3150,
+      "complete": true,
+      "columns": [
+        "Month ID",
+        "Month",
+        "Indicator ID",
+        "Indicator",
+        "Growth",
+        "Value"
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/evidence/responses/73f509619f32f5d8037c08fec30c03546fab256b0956d9b447f642efe4f8ee65.json",
+      "response_sha256": "73f509619f32f5d8037c08fec30c03546fab256b0956d9b447f642efe4f8ee65",
+      "response_size_bytes": 407102
+    },
+    {
+      "schema_version": "1.0",
+      "domain": "rnd",
+      "cube": "research_development_by_sector",
+      "catalog_present": true,
+      "catalog_sha256": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4",
+      "table_ar": "مؤشرات البحث والتطوير حسب القطاع",
+      "source_name_ar": "الهيئة العامة للإحصاء",
+      "source_name": "General Authority for Statistics (GASTAT)",
+      "source_link": "https://www.stats.gov.sa/en/statistics-tabs?tab=436312&category=123265",
+      "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=research_development_by_sector&drilldowns=Year%2CResearch+Sector&measures=Funding%2CPercentage+distribution+of+Funding%2CExpenditure%2CPercentage+distribution+of+Expenditure%2CTotal+Number+of+Employees%2CPercentage+distribution+of+Employees%2CTotal+Number+of+Researchers%2CPercentage+distribution+of+Researchers&locale=en&limit=50000%2C0",
+      "drilldowns": [
+        "Year",
+        "Research Sector"
+      ],
+      "measures": [
+        "Funding",
+        "Percentage distribution of Funding",
+        "Expenditure",
+        "Percentage distribution of Expenditure",
+        "Total Number of Employees",
+        "Percentage distribution of Employees",
+        "Total Number of Researchers",
+        "Percentage distribution of Researchers"
+      ],
+      "http_status": 200,
+      "rows": 16,
+      "total": 16,
+      "complete": true,
+      "columns": [
+        "Research Sector ID",
+        "Research Sector",
+        "Year",
+        "Expenditure",
+        "Funding",
+        "Percentage distribution of Employees",
+        "Percentage distribution of Expenditure",
+        "Percentage distribution of Funding",
+        "Percentage distribution of Researchers",
+        "Total Number of Employees",
+        "Total Number of Researchers"
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/evidence/responses/8120579fabbf0910ea4999ce457f8c025f39669972af05e10edce9f911408c8f.json",
+      "response_sha256": "8120579fabbf0910ea4999ce457f8c025f39669972af05e10edce9f911408c8f",
+      "response_size_bytes": 7474
+    }
+  ]
+}

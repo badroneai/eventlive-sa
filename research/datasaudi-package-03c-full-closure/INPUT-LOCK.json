@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "package_id": "datasaudi-package-03c-full-closure",
+  "generated_at_utc": "2026-07-13T10:50:41.434Z",
+  "immutable_inputs": {
+    "corpus": {
+      "path": "research/datasaudi-insaights/04-question-corpus/questions.jsonl",
+      "sha256": "d56e215c901580389b1b3a14a5904aa9ecad3b949bfe29746bc6ee38994a33f2",
+      "size_bytes": 245823
+    },
+    "catalog": {
+      "path": "research/datasaudi-insaights/03-raw-evidence-snapshots/snapshots/run-20260713T004840Z/cubes-show-all-true.json",
+      "sha256": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4",
+      "size_bytes": 551358
+    },
+    "goldSpecs": {
+      "path": "research/datasaudi-package-03/02-source-oracle-and-evidence-vault/gold-case-specs.jsonl",
+      "sha256": "9f1e32add47ddb750b18972acf40666a0a293fd46c273ddc488c0df4826b67f8",
+      "size_bytes": 193579
+    },
+    "oracleEvidence": {
+      "path": "research/datasaudi-package-03/02-source-oracle-and-evidence-vault/oracle-evidence.jsonl",
+      "sha256": "cd3114bd544a6facd2c7913230f4c9ce72d8cc21e54cbf400b582281c80a112e",
+      "size_bytes": 119344
+    },
+    "oracleManifest": {
+      "path": "research/datasaudi-package-03/02-source-oracle-and-evidence-vault/oracle-manifest.json",
+      "sha256": "0ca2240db66762cf24ce989813a7fc0169bd84058b24b5ac4827d975b20bd0d6",
+      "size_bytes": 1599
+    },
+    "laterSpecs": {
+      "path": "research/datasaudi-package-03b-closure-router/later-wave-oracle-specs.jsonl",
+      "sha256": "518e29ef32c027f8530ee359a2254c8949ad460b2ea93152c1e60acc7454e8e1",
+      "size_bytes": 371815
+    },
+    "closureRouter": {
+      "path": "research/datasaudi-package-03b-closure-router/closure-router.json",
+      "sha256": "93f19b3b2bab399e5c2b2b0c285e3160b1cb0d878fe8feabf8488a9faca4fccc",
+      "size_bytes": 3085
+    },
+    "transcripts": {
+      "path": "research/datasaudi-decision-intelligence/02-transcript-and-source-vault/transcripts.jsonl",
+      "sha256": "5a24ac8f5d5b60b0e84dd598f7968fa42597a212586842a851fccf5868ff3e88",
+      "size_bytes": 287241
+    },
+    "liveAttempts": {
+      "path": "research/datasaudi-package-03a-question-closure/03-adjudication/attempt-ledger.jsonl",
+      "sha256": "a6f77c9cb8b25c942caa894f5fe59097c8fbdcc1aa41ce950f26ebcb6914308d",
+      "size_bytes": 14250
+    },
+    "productDecisionJobs": {
+      "path": "research/datasaudi-package-03/01-portfolio-prefilter-and-decision-jobs/product-decision-jobs.json",
+      "sha256": "f79cc67d6fab7ddcaea0f16f55f804d35bb2795add60d1c3f4c00ecb98537da1",
+      "size_bytes": 2373
+    },
+    "rightsMatrix": {
+      "path": "research/datasaudi-package-03/09-rights-publication-clearance/rights-source-output-mode-matrix.json",
+      "sha256": "2094b1f190a9dcee58f0eb483e81be7cdc90f82b9967438dbc563a1a8b111a11",
+      "size_bytes": 11951
+    },
+    "catalogExpansionEvidence": {
+      "path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/catalog-expansion-evidence.json",
+      "sha256": "52abc177a6ad6d4df8947960e923719b4cdb890dbe4993347d28fa1c8119d0c4",
+      "size_bytes": 6647
+    },
+    "p0ReferenceAnswers": {
+      "path": "research/datasaudi-package-03c-full-closure/p0-plan/reference-answers.jsonl",
+      "sha256": "90022510a76a4b81f3a42130dba82855874def3d3d98382bdcb96cace4de1a4c",
+      "size_bytes": 868968
+    },
+    "p0Verification": {
+      "path": "research/datasaudi-package-03c-full-closure/p0-plan/verification.json",
+      "sha256": "52a11d59bb43ffee074bb4f476fd2d8a0e23709677901131c7f36d119eacc3d0",
+      "size_bytes": 4200
+    },
+    "detailEvidenceManifest": {
+      "path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/detail-evidence-manifest.json",
+      "sha256": "8db394dbe27f6b64eb76fe1d33e6a6f8c6ee02759405f63c0442d8bb5f0f378e",
+      "size_bytes": 130359
+    },
+    "detailEvidenceValidation": {
+      "path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/validation.json",
+      "sha256": "f224fae1b35fc82ed9494edc8d9cd63e65450d7fc8ff349682be8eac2304b564",
+      "size_bytes": 836
+    },
+    "closureBaseline": {
+      "path": "research/datasaudi-package-03c-full-closure/00-governance/closure-baseline.json",
+      "sha256": "53f50aa1e1b72d725d627991ec157e09e2734c3cc1d2c2bf04883183792c9c6c",
+      "size_bytes": 10263
+    },
+    "tailoredOverrides": {
+      "path": "research/datasaudi-package-03c-full-closure/04-tailored-contract-answers/tailored-answer-overrides.jsonl",
+      "sha256": "7f94439e84919348242b0739c204b6bfb2ac8c6e75bf5010c2864422c0696beb",
+      "size_bytes": 324464
+    },
+    "tailoredValidation": {
+      "path": "research/datasaudi-package-03c-full-closure/04-tailored-contract-answers/validation.json",
+      "sha256": "d6ba3cfecd0a1e341c55534dab89c093f723d32ba6be16f61443ba59a15cd8b8",
+      "size_bytes": 118050
+    },
+    "tailoredManifest": {
+      "path": "research/datasaudi-package-03c-full-closure/04-tailored-contract-answers/manifest.json",
+      "sha256": "67f2626fddb5fa6f92bd0ba9a96776647eb7334e885fc6d6980c0c1283abbffb",
+      "size_bytes": 1749
+    },
+    "tailoredEvidenceRouteLock": {
+      "path": "research/datasaudi-package-03c-full-closure/04-tailored-contract-answers/evidence-route-lock.json",
+      "sha256": "2b9ea52adfc6ebafa543dff2555abf6ef4c9d2c68978a7c746e2c51dccccb6e6",
+      "size_bytes": 24110
+    },
+    "domainCreditOverrides": {
+      "path": "research/datasaudi-package-03c-full-closure/04-tailored-contract-answers/domain-credit-overrides.jsonl",
+      "sha256": "bac16129a62f55b3b579bf034ba86f0af2bb24e807012d632d8496ea4d181193",
+      "size_bytes": 84415
+    },
+    "domainCreditValidation": {
+      "path": "research/datasaudi-package-03c-full-closure/04-tailored-contract-answers/domain-credit-validation.json",
+      "sha256": "5bbd55be901ea05bd914b527eb0bfb6a0595672692ce2c9ec85a306e3487a209",
+      "size_bytes": 479
+    },
+    "domainCreditManifest": {
+      "path": "research/datasaudi-package-03c-full-closure/04-tailored-contract-answers/domain-credit-manifest.json",
+      "sha256": "db080e595c4cf8bb4f455776169b57e371d474a0f89d3219466293b6fdcbe63c",
+      "size_bytes": 2294
+    },
+    "semanticEvidenceManifest": {
+      "path": "research/datasaudi-package-03c-full-closure/05-semantic-audit/semantic-evidence-manifest.json",
+      "sha256": "e95f8de3d909c1c216790b543f3b9e78eb08d39a1c005f41715c83bdb36a195e",
+      "size_bytes": 9743
+    },
+    "catalogBoundarySearchEvidence": {
+      "path": "research/datasaudi-package-03c-full-closure/05-semantic-audit/catalog-boundary-search-evidence.json",
+      "sha256": "a7ea9ebfeb375f1f41f3251a361045821e2c2d64c0f57266a3f00c0b61bc5b75",
+      "size_bytes": 12407
+    },
+    "systemBoundaryEvidence": {
+      "path": "research/datasaudi-package-03c-full-closure/05-semantic-audit/system-boundary-evidence.json",
+      "sha256": "3d221fa31fb63d07b6a6fe600e9478c3c24a84e6dc141f6c1fa0b5da25f66bec",
+      "size_bytes": 1620
+    }
+  },
+  "counts": {
+    "corpus_questions": 267,
+    "frozen_specs": 267,
+    "catalog_cubes": 277,
+    "oracle_evidence": 65,
+    "insaights_transcripts": 35,
+    "insaights_attempts": 19,
+    "tailored_overrides": 25,
+    "domain_credit_overrides": 12
+  },
+  "rules": [
+    "No INSAIGHTS call is made by this package.",
+    "No sealed Package03, Package03A, or Package03B artifact is modified.",
+    "Every numeric fact points to a locally stored response hash and source-row hash.",
+    "Absence from retrieved evidence is never rewritten as universal non-existence.",
+    "INSAIGHTS observation status is independent from the answer produced by this factory."
+  ]
+}

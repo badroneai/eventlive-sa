@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-07-13T10:18:29.324Z",
+  "catalog": {
+    "path": "research/datasaudi-insaights/03-raw-evidence-snapshots/snapshots/run-20260713T004840Z/cubes-show-all-true.json",
+    "sha256": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4",
+    "cubes": 277,
+    "subtopics_non_null": [
+      "Arrivals",
+      "Capacity of the Grand Mosque",
+      "Communications and Information Technology Sector",
+      "Digital Economy",
+      "Disabilities",
+      "Education",
+      "Energy, Electricity & Water",
+      "External Sector & International Trade",
+      "External Umrah Performers",
+      "External and Internal Pilgrims",
+      "Financial Markets",
+      "Fiscal Indicators",
+      "Health",
+      "Household Energy",
+      "Household Environment",
+      "Housing",
+      "Humanitarian Donations",
+      "Internationally Reported Indicators",
+      "Labor",
+      "Labor Force in Pilgrims Service Sector",
+      "Labor Market",
+      "Licensed Hotels",
+      "Makkah Route Initiative",
+      "Medical Facilities and Teams",
+      "Medical Services",
+      "Monetary",
+      "Population",
+      "Real Sector Indicators",
+      "Research and Development",
+      "Slaughtered Animals",
+      "Slaughterhouses and Butchers",
+      "Structural Business",
+      "Total Umrah Performers",
+      "Tourism",
+      "Umrah Performers by Administrative Region",
+      "Umrah Performers by Age Group"
+    ],
+    "cubes_without_subtopic": 26
+  },
+  "method": "Literal normalized search over cube IDs, Arabic/English names, topics, subtopics, dimensions and measures. Zero matches proves absence only from this frozen public catalog schema, not from all Saudi administrative data.",
+  "searches": [
+    {
+      "audit_id": "PRIVATE_ENTITY_PROFIT_AND_IDENTIFIER",
+      "terms": [
+        "private company profit",
+        "company id",
+        "establishment id",
+        "أرباح كل منشأة",
+        "معرف المنشأة"
+      ],
+      "terms_results": [
+        {
+          "term": "private company profit",
+          "match_count": 0,
+          "cube_ids": []
+        },
+        {
+          "term": "company id",
+          "match_count": 0,
+          "cube_ids": []
+        },
+        {
+          "term": "establishment id",
+          "match_count": 0,
+          "cube_ids": []
+        },
+        {
+          "term": "أرباح كل منشأة",
+          "match_count": 0,
+          "cube_ids": []
+        },
+        {
+          "term": "معرف المنشأة",
+          "match_count": 0,
+          "cube_ids": []
+        }
+      ]
+    },
+    {
+      "audit_id": "DWELLING_LEVEL_ACTUAL_RENT",
+      "terms": [
+        "dwelling id",
+        "unit address",
+        "actual rent per unit",
+        "معرف الوحدة السكنية",
+        "الإيجار الفعلي لكل وحدة"
+      ],
+      "terms_results": [
+        {
+          "term": "dwelling id",
+          "match_count": 0,
+          "cube_ids": []
+        },
+        {
+          "term": "unit address",
+          "match_count": 0,
+          "cube_ids": []
+        },
+        {
+          "term": "actual rent per unit",
+          "match_count": 0,
+          "cube_ids": []
+        },
+        {
+          "term": "معرف الوحدة السكنية",
+          "match_count": 0,
+          "cube_ids": []
+        },
+        {
+          "term": "الإيجار الفعلي لكل وحدة",
+          "match_count": 0,
+          "cube_ids": []
+        }
+      ]
+    },
+    {
+      "audit_id": "INDIVIDUAL_HEALTH_RECORD",
+      "terms": [
+        "patient id",
+        "medical record",
+        "national id",
+        "السجل الصحي الفردي",
+        "رقم المريض"
+      ],
+      "terms_results": [
+        {
+          "term": "patient id",
+          "match_count": 0,
+          "cube_ids": []
+        },
+        {
+          "term": "medical record",
+          "match_count": 0,
+          "cube_ids": []
+        },
+        {
+          "term": "national id",
+          "match_count": 0,
+          "cube_ids": []
+        },
+        {
+          "term": "السجل الصحي الفردي",
+          "match_count": 0,
+          "cube_ids": []
+        },
+        {
+          "term": "رقم المريض",
+          "match_count": 0,
+          "cube_ids": []
+        }
+      ]
+    },
+    {
+      "audit_id": "PHONE_LEVEL_IDENTIFIER",
+      "terms": [
+        "phone number",
+        "mobile number",
+        "رقم الهاتف",
+        "رقم الجوال"
+      ],
+      "terms_results": [
+        {
+          "term": "phone number",
+          "match_count": 0,
+          "cube_ids": []
+        },
+        {
+          "term": "mobile number",
+          "match_count": 0,
+          "cube_ids": []
+        },
+        {
+          "term": "رقم الهاتف",
+          "match_count": 0,
+          "cube_ids": []
+        },
+        {
+          "term": "رقم الجوال",
+          "match_count": 0,
+          "cube_ids": []
+        }
+      ]
+    }
+  ]
+}

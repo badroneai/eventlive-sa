@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "validated_at_utc": "2026-07-13T10:34:15.974Z",
+  "manifest_path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/detail-evidence-manifest.json",
+  "manifest_sha256": "8db394dbe27f6b64eb76fe1d33e6a6f8c6ee02759405f63c0442d8bb5f0f378e",
+  "checks": [
+    "frozen source boundary",
+    "scope coverage",
+    "34 response hashes, schemas, and page ranges",
+    "manifest integrity",
+    "all candidate-backed direct, rank, and series questions mapped"
+  ],
+  "counts": {
+    "catalog_cubes": 277,
+    "scoped_questions": 72,
+    "candidate_backed_questions": 60,
+    "contract_only_questions": 12,
+    "covered_questions": 60,
+    "candidate_cubes": 34,
+    "complete_entries": 34,
+    "pages": 34,
+    "rows": 43260,
+    "response_bytes": 6529775
+  }
+}

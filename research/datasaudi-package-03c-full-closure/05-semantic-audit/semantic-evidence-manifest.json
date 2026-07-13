@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "P03C-SEMANTIC-DIMENSION-EVIDENCE",
+  "scope": "Time-bounded public DataSaudi API capture for semantic-dimension validation.",
+  "retrieval_policy": "Paginated to the response-reported total; no omitted non-time dimensions for the four targeted cubes.",
+  "entries": [
+    {
+      "schema_version": "1.0",
+      "evidence_id": "SEMANTIC-d0f85d8193e6c412c94b2a7e",
+      "cube": "sama_higher_education",
+      "purpose": "Prevent aggregation across omitted Student Status and Sex dimensions.",
+      "drilldowns": [
+        "Year",
+        "Academic Status",
+        "Student Status",
+        "Sex"
+      ],
+      "measures": [
+        "Students"
+      ],
+      "rows": 874,
+      "total": 874,
+      "complete": true,
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_higher_education&drilldowns=Year%2CAcademic+Status%2CStudent+Status%2CSex&measures=Students&locale=en&limit=500%2C0",
+          "offset": 0,
+          "rows": 500,
+          "total": 874
+        },
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_higher_education&drilldowns=Year%2CAcademic+Status%2CStudent+Status%2CSex&measures=Students&locale=en&limit=500%2C500",
+          "offset": 500,
+          "rows": 374,
+          "total": 874
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/05-semantic-audit/responses/d0f85d8193e6c412c94b2a7e32e5112df940eb9c647bf907fede605d46232c6e.json",
+      "response_sha256": "d0f85d8193e6c412c94b2a7e32e5112df940eb9c647bf907fede605d46232c6e",
+      "columns": [
+        "Academic Status ID",
+        "Academic Status",
+        "Sex ID",
+        "Sex",
+        "Student Status ID",
+        "Student Status",
+        "Year",
+        "Students"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "SEMANTIC-ffb10a6cee83fdf2e948c22e",
+      "cube": "gstat_disabilities_distribution_age_15_by_work_status_gender",
+      "purpose": "Prevent aggregation of percentages across the omitted Sex dimension.",
+      "drilldowns": [
+        "Year",
+        "Work Status Name",
+        "Sex"
+      ],
+      "measures": [
+        "Percentage"
+      ],
+      "rows": 33,
+      "total": 33,
+      "complete": true,
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gstat_disabilities_distribution_age_15_by_work_status_gender&drilldowns=Year%2CWork+Status+Name%2CSex&measures=Percentage&locale=en&limit=500%2C0",
+          "offset": 0,
+          "rows": 33,
+          "total": 33
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/05-semantic-audit/responses/ffb10a6cee83fdf2e948c22e259cb2ca521d00594676ea83b1a0b46d1642760d.json",
+      "response_sha256": "ffb10a6cee83fdf2e948c22e259cb2ca521d00594676ea83b1a0b46d1642760d",
+      "columns": [
+        "Sex ID",
+        "Sex",
+        "Work Status Name ID",
+        "Work Status Name",
+        "Year",
+        "Percentage"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "SEMANTIC-923673d274e3f65658b347a8",
+      "cube": "tourism_occupancy_rate_monthly",
+      "purpose": "Prevent unweighted averaging across Accommodation Type and preserve the published aggregate member.",
+      "drilldowns": [
+        "Month",
+        "Nation",
+        "Province",
+        "Accommodation Type"
+      ],
+      "measures": [
+        "Occupancy Rate"
+      ],
+      "rows": 1392,
+      "total": 1392,
+      "complete": true,
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=tourism_occupancy_rate_monthly&drilldowns=Month%2CNation%2CProvince%2CAccommodation+Type&measures=Occupancy+Rate&locale=en&limit=500%2C0",
+          "offset": 0,
+          "rows": 500,
+          "total": 1392
+        },
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=tourism_occupancy_rate_monthly&drilldowns=Month%2CNation%2CProvince%2CAccommodation+Type&measures=Occupancy+Rate&locale=en&limit=500%2C500",
+          "offset": 500,
+          "rows": 500,
+          "total": 1392
+        },
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=tourism_occupancy_rate_monthly&drilldowns=Month%2CNation%2CProvince%2CAccommodation+Type&measures=Occupancy+Rate&locale=en&limit=500%2C1000",
+          "offset": 1000,
+          "rows": 392,
+          "total": 1392
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/05-semantic-audit/responses/923673d274e3f65658b347a887e3372b384e4830b2b90a76533832281a82d295.json",
+      "response_sha256": "923673d274e3f65658b347a887e3372b384e4830b2b90a76533832281a82d295",
+      "columns": [
+        "Accommodation Type ID",
+        "Accommodation Type",
+        "Nation ID",
+        "Nation",
+        "Province ID",
+        "Province",
+        "Month ID",
+        "Month",
+        "Occupancy Rate"
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "evidence_id": "SEMANTIC-df20366605d4de4a3a817dde",
+      "cube": "gastat_rate_gender_nationality_region",
+      "purpose": "Prevent averaging unemployment rates across omitted Sex and Nationality dimensions.",
+      "drilldowns": [
+        "Quarter",
+        "Nation",
+        "Province",
+        "Sex",
+        "Nationality"
+      ],
+      "measures": [
+        "Unemployment Rate"
+      ],
+      "rows": 5040,
+      "total": 5040,
+      "complete": true,
+      "pages": [
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_rate_gender_nationality_region&drilldowns=Quarter%2CNation%2CProvince%2CSex%2CNationality&measures=Unemployment+Rate&locale=en&limit=500%2C0",
+          "offset": 0,
+          "rows": 500,
+          "total": 5040
+        },
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_rate_gender_nationality_region&drilldowns=Quarter%2CNation%2CProvince%2CSex%2CNationality&measures=Unemployment+Rate&locale=en&limit=500%2C500",
+          "offset": 500,
+          "rows": 500,
+          "total": 5040
+        },
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_rate_gender_nationality_region&drilldowns=Quarter%2CNation%2CProvince%2CSex%2CNationality&measures=Unemployment+Rate&locale=en&limit=500%2C1000",
+          "offset": 1000,
+          "rows": 500,
+          "total": 5040
+        },
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_rate_gender_nationality_region&drilldowns=Quarter%2CNation%2CProvince%2CSex%2CNationality&measures=Unemployment+Rate&locale=en&limit=500%2C1500",
+          "offset": 1500,
+          "rows": 500,
+          "total": 5040
+        },
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_rate_gender_nationality_region&drilldowns=Quarter%2CNation%2CProvince%2CSex%2CNationality&measures=Unemployment+Rate&locale=en&limit=500%2C2000",
+          "offset": 2000,
+          "rows": 500,
+          "total": 5040
+        },
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_rate_gender_nationality_region&drilldowns=Quarter%2CNation%2CProvince%2CSex%2CNationality&measures=Unemployment+Rate&locale=en&limit=500%2C2500",
+          "offset": 2500,
+          "rows": 500,
+          "total": 5040
+        },
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_rate_gender_nationality_region&drilldowns=Quarter%2CNation%2CProvince%2CSex%2CNationality&measures=Unemployment+Rate&locale=en&limit=500%2C3000",
+          "offset": 3000,
+          "rows": 500,
+          "total": 5040
+        },
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_rate_gender_nationality_region&drilldowns=Quarter%2CNation%2CProvince%2CSex%2CNationality&measures=Unemployment+Rate&locale=en&limit=500%2C3500",
+          "offset": 3500,
+          "rows": 500,
+          "total": 5040
+        },
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_rate_gender_nationality_region&drilldowns=Quarter%2CNation%2CProvince%2CSex%2CNationality&measures=Unemployment+Rate&locale=en&limit=500%2C4000",
+          "offset": 4000,
+          "rows": 500,
+          "total": 5040
+        },
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_rate_gender_nationality_region&drilldowns=Quarter%2CNation%2CProvince%2CSex%2CNationality&measures=Unemployment+Rate&locale=en&limit=500%2C4500",
+          "offset": 4500,
+          "rows": 500,
+          "total": 5040
+        },
+        {
+          "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_rate_gender_nationality_region&drilldowns=Quarter%2CNation%2CProvince%2CSex%2CNationality&measures=Unemployment+Rate&locale=en&limit=500%2C5000",
+          "offset": 5000,
+          "rows": 40,
+          "total": 5040
+        }
+      ],
+      "response_path": "research/datasaudi-package-03c-full-closure/05-semantic-audit/responses/df20366605d4de4a3a817dde358c2ba381db102294fd17ec38fa1003658a9a2c.json",
+      "response_sha256": "df20366605d4de4a3a817dde358c2ba381db102294fd17ec38fa1003658a9a2c",
+      "columns": [
+        "Quarter ID",
+        "Quarter",
+        "Nation ID",
+        "Nation",
+        "Province ID",
+        "Province",
+        "Nationality ID",
+        "Nationality",
+        "Sex ID",
+        "Sex",
+        "Unemployment Rate"
+      ]
+    }
+  ]
+}

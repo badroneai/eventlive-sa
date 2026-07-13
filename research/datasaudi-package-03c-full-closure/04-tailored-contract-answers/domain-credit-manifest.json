@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-07-13T10:50:40.878Z",
+  "output_path": "research/datasaudi-package-03c-full-closure/04-tailored-contract-answers/domain-credit-overrides.jsonl",
+  "output_sha256": "bac16129a62f55b3b579bf034ba86f0af2bb24e807012d632d8496ea4d181193",
+  "count": 12,
+  "question_ids": [
+    "LOG-RANK-01-AR",
+    "LOG-DERIVE-01-AR",
+    "LOG-EXPLAIN-01-AR",
+    "AGR-RANK-01-AR",
+    "AGR-DERIVE-01-AR",
+    "AGR-EXPLAIN-01-AR",
+    "IND-RANK-01-AR",
+    "IND-DERIVE-01-AR",
+    "IND-EXPLAIN-01-AR",
+    "SRV-RANK-01-AR",
+    "SRV-DERIVE-01-AR",
+    "SRV-EXPLAIN-01-AR"
+  ],
+  "domain_mappings": {
+    "LOG": [
+      "النقل والتخزين"
+    ],
+    "AGR": [
+      "الزراعة والغابات وصيد الأسماك"
+    ],
+    "IND": [
+      "التعدين واستغلال المحاجر",
+      "التصنيع",
+      "إمدادات الكهرباء والغاز والمياه",
+      "البناء"
+    ],
+    "SRV": [
+      "تجارة الجملة والتجزئة",
+      "النقل والتخزين",
+      "أنشطة خدمات الإقامة والطعام",
+      "المعلومات والاتصالات",
+      "الأنشطة المالية والتأمينية",
+      "أنشطة السوق العقاري",
+      "الأنشطة المهنية والعلمية والتقنية",
+      "أنشطة الخدمات الإدارية والدعم",
+      "التعليم",
+      "أنشطة صحة الإنسان والعمل الاجتماعي"
+    ]
+  },
+  "source": {
+    "evidence_id": "EVID-SAMA-BANK-CREDIT-MONTH",
+    "path": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/responses/6da7f09f4b5cbef84a25ed0c7c21cf8e9a5e154a11bbda033e3a5a75f2ceea19.json",
+    "sha256": "6da7f09f4b5cbef84a25ed0c7c21cf8e9a5e154a11bbda033e3a5a75f2ceea19",
+    "publisher": "Saudi Central Bank (SAMA)",
+    "dataset": "Bank Credit by Economic Activity (ISIC4) - Monthly",
+    "cube_id": "sama_bank_credit_month",
+    "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_bank_credit_month&locale=ar&drilldowns=ISIC4%2CMonth&measures=Million+SAR&limit=1044%2C0",
+    "retrieved_at_utc": "2026-07-13T10:27:41.000Z",
+    "rows": 1044,
+    "total": 1044,
+    "complete": true
+  }
+}

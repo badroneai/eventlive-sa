@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "catalog_snapshot": "research/datasaudi-insaights/03-raw-evidence-snapshots/snapshots/run-20260713T004840Z/cubes-show-all-true.json",
+  "catalog_cube_count": 277,
+  "purpose": "Expand the four corpus domains whose candidate_cubes arrays were empty without claiming that the catalog lacks relevant data.",
+  "domains": {
+    "fis": {
+      "label_ar": "المالية العامة",
+      "cubes": [
+        "mof_government_revenues_expenditures",
+        "mof_government_revenues_expenditures_quarter"
+      ]
+    },
+    "ext": {
+      "label_ar": "الاستثمار والقطاع الخارجي",
+      "cubes": [
+        "gastat_fdi_inflow",
+        "gastat_fdi_stock",
+        "sama_fdi"
+      ]
+    },
+    "mkt": {
+      "label_ar": "أسواق المال",
+      "cubes": [
+        "tadawul_indicators",
+        "tadawul_indicators_quarterly",
+        "tadawul_indicators_yearly"
+      ]
+    },
+    "rnd": {
+      "label_ar": "البحث والتطوير",
+      "cubes": [
+        "research_development_by_sector",
+        "rd_expenditure_by_activity",
+        "rd_expenditure_by_size",
+        "pct_dist_researchers"
+      ]
+    }
+  },
+  "interpretation": "An empty candidate_cubes field in the question corpus is a corpus-routing gap, not evidence of catalog absence. Every listed cube is present in the frozen complete catalog snapshot."
+}

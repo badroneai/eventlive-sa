@@ -1,0 +1,4469 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-07-13T10:48:51.736Z",
+  "status": "PASS",
+  "target": "25 tailored contract-only overrides",
+  "counts": {
+    "records": 25,
+    "unique_question_ids": 25,
+    "unique_answer_hashes": 25,
+    "cross": 10,
+    "opportunity": 15,
+    "accepted_terminal": 25,
+    "atomic_claims": 65,
+    "unresolved_atomic_claims": 0
+  },
+  "output_path": "research/datasaudi-package-03c-full-closure/04-tailored-contract-answers/tailored-answer-overrides.jsonl",
+  "output_sha256": "7f94439e84919348242b0739c204b6bfb2ac8c6e75bf5010c2864422c0696beb",
+  "checks": [
+    {
+      "name": "denominator-25",
+      "status": "PASS",
+      "evidence": 25
+    },
+    {
+      "name": "unique-question-ids",
+      "status": "PASS",
+      "evidence": 25
+    },
+    {
+      "name": "exact-target-set",
+      "status": "PASS",
+      "evidence": [
+        "X-01-AR",
+        "X-02-AR",
+        "X-03-AR",
+        "X-04-AR",
+        "X-05-AR",
+        "X-06-AR",
+        "X-07-AR",
+        "X-08-AR",
+        "X-09-AR",
+        "X-10-AR",
+        "OPP-01-AR",
+        "OPP-02-AR",
+        "OPP-03-AR",
+        "OPP-04-AR",
+        "OPP-05-AR",
+        "OPP-06-AR",
+        "OPP-07-AR",
+        "OPP-08-AR",
+        "OPP-09-AR",
+        "OPP-10-AR",
+        "OPP-11-AR",
+        "OPP-12-AR",
+        "OPP-13-AR",
+        "OPP-14-AR",
+        "OPP-15-AR"
+      ]
+    },
+    {
+      "name": "unique-answer-texts-25",
+      "status": "PASS",
+      "evidence": 25
+    },
+    {
+      "name": "X-01-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "X-01-AR"
+    },
+    {
+      "name": "X-01-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "X-01-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "17720e55d46d98a6da86441f26bf8ab7570c122ef420235a2add8dd4f5a39221"
+    },
+    {
+      "name": "X-01-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "X-01-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_DOCUMENTED_NOT_COMPUTABLE"
+    },
+    {
+      "name": "X-01-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 1005
+    },
+    {
+      "name": "X-01-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "861b5c6c4adf02d486c08020d2d54d723bac7be8b0e5cb7395c4eb961f9c01ef"
+    },
+    {
+      "name": "X-01-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 4
+    },
+    {
+      "name": "X-01-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-01-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-01-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "X-01-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-01-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "X-01-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "X-01-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "X-01-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "compatibility_matrix",
+        "no_unsupported_causality",
+        "cite_all_datasets"
+      ]
+    },
+    {
+      "name": "X-01-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 6
+    },
+    {
+      "name": "X-01-AR:evidence-hash:EVID-CATALOG",
+      "status": "PASS",
+      "evidence": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4"
+    },
+    {
+      "name": "X-01-AR:evidence-hash:EVID-ORACLE",
+      "status": "PASS",
+      "evidence": "cd3114bd544a6facd2c7913230f4c9ce72d8cc21e54cbf400b582281c80a112e"
+    },
+    {
+      "name": "X-01-AR:evidence-hash:EVID-DETAIL-GASTAT-GDP",
+      "status": "PASS",
+      "evidence": "4b5f569b3ccd6d7cb6665aadb0df053558d7f54363168bfa7eaf8ec6daacc3c2"
+    },
+    {
+      "name": "X-01-AR:evidence-hash:EVID-DETAIL-GASTAT-EMPLOYMENT-POPULATION-RATIO",
+      "status": "PASS",
+      "evidence": "2970a1681ef28b450885f82630853312eec6d8d750e414487e449017bd0009a5"
+    },
+    {
+      "name": "X-01-AR:evidence-hash:EVID-DETAIL-SAMA-BANK-CREDIT-MONTH",
+      "status": "PASS",
+      "evidence": "6da7f09f4b5cbef84a25ed0c7c21cf8e9a5e154a11bbda033e3a5a75f2ceea19"
+    },
+    {
+      "name": "X-01-AR:evidence-hash:EVID-DETAIL-BUSINESS-DEMOGRAPHY-ENTERPRISES",
+      "status": "PASS",
+      "evidence": "5a9243b296decf7a2f49840ed9099c1764e7d740043d51f9dfc9c23624eeca28"
+    },
+    {
+      "name": "X-01-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 14
+    },
+    {
+      "name": "X-01-AR:cross-matrix",
+      "status": "PASS",
+      "evidence": 4
+    },
+    {
+      "name": "X-01-AR:cross-matrix-fields",
+      "status": "PASS",
+      "evidence": 4
+    },
+    {
+      "name": "X-01-AR:cross-missing-input-contract",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "X-01-AR:cross-no-opportunity-contract",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-01-AR:cross-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "X-02-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "X-02-AR"
+    },
+    {
+      "name": "X-02-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "X-02-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "8a25361b825b33b58fb8ae4edcaffcbdc50ccd7ba8e369e35bc2f1072e39e818"
+    },
+    {
+      "name": "X-02-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "X-02-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_DOCUMENTED_NOT_COMPUTABLE"
+    },
+    {
+      "name": "X-02-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 841
+    },
+    {
+      "name": "X-02-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "5d791b09f9dc95eaa007b4c73a41f8c89cc39e3826ce4c66da448ab12ff1e6ab"
+    },
+    {
+      "name": "X-02-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-02-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-02-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-02-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "X-02-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-02-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "X-02-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "X-02-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "X-02-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "compatibility_matrix",
+        "no_unsupported_causality",
+        "cite_all_datasets"
+      ]
+    },
+    {
+      "name": "X-02-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 4
+    },
+    {
+      "name": "X-02-AR:evidence-hash:EVID-CATALOG",
+      "status": "PASS",
+      "evidence": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4"
+    },
+    {
+      "name": "X-02-AR:evidence-hash:EVID-ORACLE",
+      "status": "PASS",
+      "evidence": "cd3114bd544a6facd2c7913230f4c9ce72d8cc21e54cbf400b582281c80a112e"
+    },
+    {
+      "name": "X-02-AR:evidence-hash:EVID-DETAIL-GASTAT-GDP",
+      "status": "PASS",
+      "evidence": "4b5f569b3ccd6d7cb6665aadb0df053558d7f54363168bfa7eaf8ec6daacc3c2"
+    },
+    {
+      "name": "X-02-AR:evidence-hash:EVID-DETAIL-SAMA-BANK-CREDIT-MONTH",
+      "status": "PASS",
+      "evidence": "6da7f09f4b5cbef84a25ed0c7c21cf8e9a5e154a11bbda033e3a5a75f2ceea19"
+    },
+    {
+      "name": "X-02-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 9
+    },
+    {
+      "name": "X-02-AR:cross-matrix",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-02-AR:cross-matrix-fields",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-02-AR:cross-missing-input-contract",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "X-02-AR:cross-no-opportunity-contract",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-02-AR:cross-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "X-03-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "X-03-AR"
+    },
+    {
+      "name": "X-03-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "X-03-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "c36ce26189317cd2a6ed387880757eb39eb4b9fa1b884f0d7194c07ae736ae4c"
+    },
+    {
+      "name": "X-03-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "X-03-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_DOCUMENTED_NOT_COMPUTABLE"
+    },
+    {
+      "name": "X-03-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 828
+    },
+    {
+      "name": "X-03-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "4a8d2f7b8ec88ec75f5e8a2f7b6727511287e32bb8f17907fba048b6b534900c"
+    },
+    {
+      "name": "X-03-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-03-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-03-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-03-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "X-03-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-03-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "X-03-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "X-03-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "X-03-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "compatibility_matrix",
+        "no_unsupported_causality",
+        "cite_all_datasets"
+      ]
+    },
+    {
+      "name": "X-03-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 4
+    },
+    {
+      "name": "X-03-AR:evidence-hash:EVID-CATALOG",
+      "status": "PASS",
+      "evidence": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4"
+    },
+    {
+      "name": "X-03-AR:evidence-hash:EVID-ORACLE",
+      "status": "PASS",
+      "evidence": "cd3114bd544a6facd2c7913230f4c9ce72d8cc21e54cbf400b582281c80a112e"
+    },
+    {
+      "name": "X-03-AR:evidence-hash:EVID-DETAIL-GASTAT-POPULATION-GROWTH",
+      "status": "PASS",
+      "evidence": "98d54d063653f1a0e11aa630e63cd68aac2be6b1f725165c24f66453ced5484e"
+    },
+    {
+      "name": "X-03-AR:evidence-hash:EVID-DETAIL-GASTAT-HOUSING-TENURE",
+      "status": "PASS",
+      "evidence": "c086fcbd2329a1c954930d633811351bf0370e13d202368bd62581c49eac457f"
+    },
+    {
+      "name": "X-03-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 7
+    },
+    {
+      "name": "X-03-AR:cross-matrix",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-03-AR:cross-matrix-fields",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-03-AR:cross-missing-input-contract",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "X-03-AR:cross-no-opportunity-contract",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-03-AR:cross-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "X-04-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "X-04-AR"
+    },
+    {
+      "name": "X-04-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "X-04-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "2637901f6ad459a610b50ff64e7d339e2869f5b7796422af1813f5c4e7eebb82"
+    },
+    {
+      "name": "X-04-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "X-04-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_DOCUMENTED_NOT_COMPUTABLE"
+    },
+    {
+      "name": "X-04-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 802
+    },
+    {
+      "name": "X-04-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "bc6e7e5d4e68bd4d8bf96aad8196e619e7b3280128d73b3fcefccea7459daeba"
+    },
+    {
+      "name": "X-04-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-04-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-04-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-04-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "X-04-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-04-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "X-04-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "X-04-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "X-04-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "compatibility_matrix",
+        "no_unsupported_causality",
+        "cite_all_datasets"
+      ]
+    },
+    {
+      "name": "X-04-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 4
+    },
+    {
+      "name": "X-04-AR:evidence-hash:EVID-CATALOG",
+      "status": "PASS",
+      "evidence": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4"
+    },
+    {
+      "name": "X-04-AR:evidence-hash:EVID-ORACLE",
+      "status": "PASS",
+      "evidence": "cd3114bd544a6facd2c7913230f4c9ce72d8cc21e54cbf400b582281c80a112e"
+    },
+    {
+      "name": "X-04-AR:evidence-hash:EVID-DETAIL-SAMA-HEALTH-FACILITIES-RESOURCES",
+      "status": "PASS",
+      "evidence": "15405c1a7a830e01ae03e536435b9ebc0d7ff498e94217d9549cf8f9d7c1c198"
+    },
+    {
+      "name": "X-04-AR:evidence-hash:EVID-DETAIL-GASTAT-DETAILED-POPULATION",
+      "status": "PASS",
+      "evidence": "e6da385143a216508a3c697c4ad9fb31f9dbc753a70f5cd0e0fe005da73d8090"
+    },
+    {
+      "name": "X-04-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 7
+    },
+    {
+      "name": "X-04-AR:cross-matrix",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-04-AR:cross-matrix-fields",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-04-AR:cross-missing-input-contract",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "X-04-AR:cross-no-opportunity-contract",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-04-AR:cross-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "X-05-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "X-05-AR"
+    },
+    {
+      "name": "X-05-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "X-05-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "80d15443264b13a1e6665577d72a6dd38fe765561c5eb975ceec0f0b2838ffd7"
+    },
+    {
+      "name": "X-05-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "X-05-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_EVIDENCE_BOUND_INFERENCE"
+    },
+    {
+      "name": "X-05-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 1063
+    },
+    {
+      "name": "X-05-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "cc1750036f2b3315750574190559a136c905273778eb2c5f951e26c1488367a0"
+    },
+    {
+      "name": "X-05-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "X-05-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "X-05-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "X-05-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "X-05-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 4
+    },
+    {
+      "name": "X-05-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "VERIFIED",
+        "VERIFIED",
+        "BOUNDED"
+      ]
+    },
+    {
+      "name": "X-05-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "X-05-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "X-05-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "compatibility_matrix",
+        "no_unsupported_causality",
+        "cite_all_datasets"
+      ]
+    },
+    {
+      "name": "X-05-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 4
+    },
+    {
+      "name": "X-05-AR:evidence-hash:EVID-CATALOG",
+      "status": "PASS",
+      "evidence": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4"
+    },
+    {
+      "name": "X-05-AR:evidence-hash:EVID-ORACLE",
+      "status": "PASS",
+      "evidence": "cd3114bd544a6facd2c7913230f4c9ce72d8cc21e54cbf400b582281c80a112e"
+    },
+    {
+      "name": "X-05-AR:evidence-hash:EVID-DETAIL-GASTAT-INFLATION",
+      "status": "PASS",
+      "evidence": "4933c3354ccd96f61c88e5618c15951b41e7b7c467f424f771a6b2d946976a60"
+    },
+    {
+      "name": "X-05-AR:evidence-hash:EVID-DETAIL-SAMA-POS-SECTORS",
+      "status": "PASS",
+      "evidence": "10a079424cf4502afe7ed3b174c085f1b32458abe244e5680aeabaa768bd61d8"
+    },
+    {
+      "name": "X-05-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 15
+    },
+    {
+      "name": "X-05-AR:cross-matrix",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-05-AR:cross-matrix-fields",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-05-AR:cross-missing-input-contract",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-05-AR:cross-no-opportunity-contract",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-05-AR:cross-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "X-06-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "X-06-AR"
+    },
+    {
+      "name": "X-06-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "X-06-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "2474b44c7abf819bd94a331056b4fef27f44595a41be0ec33d192616e15f3179"
+    },
+    {
+      "name": "X-06-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "X-06-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_DOCUMENTED_NOT_COMPUTABLE"
+    },
+    {
+      "name": "X-06-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 807
+    },
+    {
+      "name": "X-06-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "5b51affea88b68793c6c7eeb75d696888d22b7eb55cbfd394e1946bd8ceac766"
+    },
+    {
+      "name": "X-06-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-06-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-06-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-06-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "X-06-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-06-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "X-06-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "X-06-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "X-06-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "compatibility_matrix",
+        "no_unsupported_causality",
+        "cite_all_datasets"
+      ]
+    },
+    {
+      "name": "X-06-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 4
+    },
+    {
+      "name": "X-06-AR:evidence-hash:EVID-CATALOG",
+      "status": "PASS",
+      "evidence": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4"
+    },
+    {
+      "name": "X-06-AR:evidence-hash:EVID-ORACLE",
+      "status": "PASS",
+      "evidence": "cd3114bd544a6facd2c7913230f4c9ce72d8cc21e54cbf400b582281c80a112e"
+    },
+    {
+      "name": "X-06-AR:evidence-hash:EVID-DETAIL-TOURISM-OCCUPANCY-RATE-MONTHLY",
+      "status": "PASS",
+      "evidence": "bee1d977bd0160d3eebdfbb1a816e426fb9131e762462e27be69cac580947af0"
+    },
+    {
+      "name": "X-06-AR:evidence-hash:EVID-DETAIL-GASTAT-GDP",
+      "status": "PASS",
+      "evidence": "4b5f569b3ccd6d7cb6665aadb0df053558d7f54363168bfa7eaf8ec6daacc3c2"
+    },
+    {
+      "name": "X-06-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 9
+    },
+    {
+      "name": "X-06-AR:cross-matrix",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-06-AR:cross-matrix-fields",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-06-AR:cross-missing-input-contract",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "X-06-AR:cross-no-opportunity-contract",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-06-AR:cross-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "X-07-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "X-07-AR"
+    },
+    {
+      "name": "X-07-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "X-07-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "16b7d044137590546427e560bdb2ff703a179e2115194a2f27a8bd42679fcc10"
+    },
+    {
+      "name": "X-07-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "X-07-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_DOCUMENTED_NOT_COMPUTABLE"
+    },
+    {
+      "name": "X-07-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 768
+    },
+    {
+      "name": "X-07-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "8edb12a20263dc2be8b30e0c420a6e28f04e370f266efe4790029919f100592c"
+    },
+    {
+      "name": "X-07-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-07-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-07-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-07-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "X-07-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-07-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "X-07-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "X-07-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "X-07-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "compatibility_matrix",
+        "no_unsupported_causality",
+        "cite_all_datasets"
+      ]
+    },
+    {
+      "name": "X-07-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 4
+    },
+    {
+      "name": "X-07-AR:evidence-hash:EVID-CATALOG",
+      "status": "PASS",
+      "evidence": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4"
+    },
+    {
+      "name": "X-07-AR:evidence-hash:EVID-ORACLE",
+      "status": "PASS",
+      "evidence": "cd3114bd544a6facd2c7913230f4c9ce72d8cc21e54cbf400b582281c80a112e"
+    },
+    {
+      "name": "X-07-AR:evidence-hash:EVID-DETAIL-GASTAT-CONTRIBUTION-OF-DIGITAL-ECONOMY-TO-GDP",
+      "status": "PASS",
+      "evidence": "96f718907a7bc6dab4cf0e6af8a264bfe8261c040523152903ca30eea13c5d3e"
+    },
+    {
+      "name": "X-07-AR:evidence-hash:EVID-DETAIL-GASTAT-EMPLOYMENT-POPULATION-RATIO",
+      "status": "PASS",
+      "evidence": "2970a1681ef28b450885f82630853312eec6d8d750e414487e449017bd0009a5"
+    },
+    {
+      "name": "X-07-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 7
+    },
+    {
+      "name": "X-07-AR:cross-matrix",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-07-AR:cross-matrix-fields",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-07-AR:cross-missing-input-contract",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-07-AR:cross-no-opportunity-contract",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-07-AR:cross-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "X-08-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "X-08-AR"
+    },
+    {
+      "name": "X-08-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "X-08-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "8c8c1fd78809417777079c0e25686075645a5a4d6bea0cbb0ea0d2e8e6f16d65"
+    },
+    {
+      "name": "X-08-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "X-08-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_DOCUMENTED_NOT_COMPUTABLE"
+    },
+    {
+      "name": "X-08-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 877
+    },
+    {
+      "name": "X-08-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "bfbe300b774a15b8dbfb3f7ce48ae6db651bc0ff3eadb09bc81e29a46344ddc3"
+    },
+    {
+      "name": "X-08-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-08-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-08-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-08-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "X-08-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-08-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "X-08-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "X-08-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "X-08-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "compatibility_matrix",
+        "no_unsupported_causality",
+        "cite_all_datasets"
+      ]
+    },
+    {
+      "name": "X-08-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 5
+    },
+    {
+      "name": "X-08-AR:evidence-hash:EVID-CATALOG",
+      "status": "PASS",
+      "evidence": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4"
+    },
+    {
+      "name": "X-08-AR:evidence-hash:EVID-ORACLE",
+      "status": "PASS",
+      "evidence": "cd3114bd544a6facd2c7913230f4c9ce72d8cc21e54cbf400b582281c80a112e"
+    },
+    {
+      "name": "X-08-AR:evidence-hash:EVID-DETAIL-GASTAT-POPULATION-GROWTH",
+      "status": "PASS",
+      "evidence": "98d54d063653f1a0e11aa630e63cd68aac2be6b1f725165c24f66453ced5484e"
+    },
+    {
+      "name": "X-08-AR:evidence-hash:EVID-DETAIL-SAMA-ELECTRICITY-CONSUMPTION-SUBREGION",
+      "status": "PASS",
+      "evidence": "b1d134a45540fa208df9d8da9fc42fa787c383a91d505ef3782b363d237953ca"
+    },
+    {
+      "name": "X-08-AR:evidence-hash:EVID-DETAIL-SAMA-WATER-CONSUMPTION-REGION",
+      "status": "PASS",
+      "evidence": "91133f5647da60ab9c65f1eb875d3af5568958e5e91fafe6cb24e46d54a7c001"
+    },
+    {
+      "name": "X-08-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 9
+    },
+    {
+      "name": "X-08-AR:cross-matrix",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "X-08-AR:cross-matrix-fields",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "X-08-AR:cross-missing-input-contract",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "X-08-AR:cross-no-opportunity-contract",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-08-AR:cross-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "X-09-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "X-09-AR"
+    },
+    {
+      "name": "X-09-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "X-09-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "0674ccee79474d0d656401d3912e7585c23dbaba820a7a4148fc9a0527ef35d9"
+    },
+    {
+      "name": "X-09-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "X-09-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_DOCUMENTED_NOT_COMPUTABLE"
+    },
+    {
+      "name": "X-09-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 784
+    },
+    {
+      "name": "X-09-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "b80884ef273b79ffc866a81dc093c2f911e2ab539fbab3f7be2f9c6e102d252a"
+    },
+    {
+      "name": "X-09-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-09-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-09-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-09-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "X-09-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-09-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "X-09-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "X-09-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "X-09-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "compatibility_matrix",
+        "no_unsupported_causality",
+        "cite_all_datasets"
+      ]
+    },
+    {
+      "name": "X-09-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 6
+    },
+    {
+      "name": "X-09-AR:evidence-hash:EVID-CATALOG",
+      "status": "PASS",
+      "evidence": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4"
+    },
+    {
+      "name": "X-09-AR:evidence-hash:EVID-ORACLE",
+      "status": "PASS",
+      "evidence": "cd3114bd544a6facd2c7913230f4c9ce72d8cc21e54cbf400b582281c80a112e"
+    },
+    {
+      "name": "X-09-AR:evidence-hash:EVID-DETAIL-GASTAT-GDP",
+      "status": "PASS",
+      "evidence": "4b5f569b3ccd6d7cb6665aadb0df053558d7f54363168bfa7eaf8ec6daacc3c2"
+    },
+    {
+      "name": "X-09-AR:evidence-hash:EVID-DETAIL-SAMA-POS-SECTORS",
+      "status": "PASS",
+      "evidence": "10a079424cf4502afe7ed3b174c085f1b32458abe244e5680aeabaa768bd61d8"
+    },
+    {
+      "name": "X-09-AR:evidence-hash:EVID-DETAIL-GASTAT-INFLATION",
+      "status": "PASS",
+      "evidence": "4933c3354ccd96f61c88e5618c15951b41e7b7c467f424f771a6b2d946976a60"
+    },
+    {
+      "name": "X-09-AR:evidence-hash:EVID-DETAIL-BUILDING-PERMITS",
+      "status": "PASS",
+      "evidence": "4c14653f4910440c2c3ceae6ce0f840e744d9ed4c552b1a898831874c6ebf9f7"
+    },
+    {
+      "name": "X-09-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 17
+    },
+    {
+      "name": "X-09-AR:cross-matrix",
+      "status": "PASS",
+      "evidence": 4
+    },
+    {
+      "name": "X-09-AR:cross-matrix-fields",
+      "status": "PASS",
+      "evidence": 4
+    },
+    {
+      "name": "X-09-AR:cross-missing-input-contract",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "X-09-AR:cross-no-opportunity-contract",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-09-AR:cross-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "X-10-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "X-10-AR"
+    },
+    {
+      "name": "X-10-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "X-10-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "51d75e2ff39c08c48990c6bcfccba65be3225363754b6946389505e11dc71f69"
+    },
+    {
+      "name": "X-10-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "X-10-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_DOCUMENTED_NOT_COMPUTABLE"
+    },
+    {
+      "name": "X-10-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 793
+    },
+    {
+      "name": "X-10-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "4ad8cbacdce17b3016df876e9b08ac30e6749b57136e5b237ab09a83a23f3395"
+    },
+    {
+      "name": "X-10-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "X-10-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-10-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-10-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "X-10-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "X-10-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "X-10-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "X-10-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "X-10-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "compatibility_matrix",
+        "no_unsupported_causality",
+        "cite_all_datasets"
+      ]
+    },
+    {
+      "name": "X-10-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 5
+    },
+    {
+      "name": "X-10-AR:evidence-hash:EVID-CATALOG",
+      "status": "PASS",
+      "evidence": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4"
+    },
+    {
+      "name": "X-10-AR:evidence-hash:EVID-ORACLE",
+      "status": "PASS",
+      "evidence": "cd3114bd544a6facd2c7913230f4c9ce72d8cc21e54cbf400b582281c80a112e"
+    },
+    {
+      "name": "X-10-AR:evidence-hash:EVID-DETAIL-MANIFEST",
+      "status": "PASS",
+      "evidence": "8db394dbe27f6b64eb76fe1d33e6a6f8c6ee02759405f63c0442d8bb5f0f378e"
+    },
+    {
+      "name": "X-10-AR:evidence-hash:EVID-PRODUCT-DECISION-JOBS",
+      "status": "PASS",
+      "evidence": "f79cc67d6fab7ddcaea0f16f55f804d35bb2795add60d1c3f4c00ecb98537da1"
+    },
+    {
+      "name": "X-10-AR:evidence-hash:EVID-PRODUCT-PREFILTER",
+      "status": "PASS",
+      "evidence": "c75534afa69383c6d616b99b236d89cbec7f6f6eb419bdc1965f796dc85ecda0"
+    },
+    {
+      "name": "X-10-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 14
+    },
+    {
+      "name": "X-10-AR:cross-matrix",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "X-10-AR:cross-matrix-fields",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "X-10-AR:cross-missing-input-contract",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "X-10-AR:cross-no-opportunity-contract",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "X-10-AR:cross-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-01-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "OPP-01-AR"
+    },
+    {
+      "name": "OPP-01-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "OPP-01-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "ba7d420f2647a1a9d93dccb6ec46a4134789d2ffbff9ee990b6722ea07761218"
+    },
+    {
+      "name": "OPP-01-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "OPP-01-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_EVIDENCE_BOUND_INFERENCE"
+    },
+    {
+      "name": "OPP-01-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 1077
+    },
+    {
+      "name": "OPP-01-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "4baf34052b58b924dafe6cfd89d31dcba5a356caec149e243380775f410a733b"
+    },
+    {
+      "name": "OPP-01-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-01-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-01-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-01-AR:limitations",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "OPP-01-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-01-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "BOUNDED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "OPP-01-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "OPP-01-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-01-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "name_buyer",
+        "name_decision",
+        "cite_dataset",
+        "state_data_gap",
+        "rights_gate"
+      ]
+    },
+    {
+      "name": "OPP-01-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 10
+    },
+    {
+      "name": "OPP-01-AR:evidence-hash:EVID-CATALOG",
+      "status": "PASS",
+      "evidence": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4"
+    },
+    {
+      "name": "OPP-01-AR:evidence-hash:EVID-PRODUCT-DECISION-JOBS",
+      "status": "PASS",
+      "evidence": "f79cc67d6fab7ddcaea0f16f55f804d35bb2795add60d1c3f4c00ecb98537da1"
+    },
+    {
+      "name": "OPP-01-AR:evidence-hash:EVID-TRUST-SUMMARY",
+      "status": "PASS",
+      "evidence": "c9aa33524db674163819bf5f4d1ffbd1c8e6f43b31c7b1ba07b7546a2a704395"
+    },
+    {
+      "name": "OPP-01-AR:evidence-hash:EVID-REGIONAL-SUMMARY",
+      "status": "PASS",
+      "evidence": "76e5ac89a0d8e7b0a14bc86549c38efc9702ee13092aeb5ebe2e1cbca7c772ef"
+    },
+    {
+      "name": "OPP-01-AR:evidence-hash:EVID-RADAR-SUMMARY",
+      "status": "PASS",
+      "evidence": "5206aeab038c2ba0683271fcb953ac529ec879e737dc992e86070f730bbc1476"
+    },
+    {
+      "name": "OPP-01-AR:evidence-hash:EVID-RIGHTS-SUMMARY",
+      "status": "PASS",
+      "evidence": "f35d11394720ec3b74f1b4787bf0e3ee2d35c03e8ae4856804795f8287e35992"
+    },
+    {
+      "name": "OPP-01-AR:evidence-hash:EVID-RIGHTS-MATRIX",
+      "status": "PASS",
+      "evidence": "2094b1f190a9dcee58f0eb483e81be7cdc90f82b9967438dbc563a1a8b111a11"
+    },
+    {
+      "name": "OPP-01-AR:evidence-hash:EVID-MARKET-EVIDENCE",
+      "status": "PASS",
+      "evidence": "87d86ffcc5b3d5c916c74ec4c818b8e46f483d1978d42522859a31833ccad940"
+    },
+    {
+      "name": "OPP-01-AR:evidence-hash:EVID-PRICING-READINESS",
+      "status": "PASS",
+      "evidence": "4dafd9d6c8d0216f9016432fbdd498307973226ee24a4ca60d942649521402df"
+    },
+    {
+      "name": "OPP-01-AR:evidence-hash:EVID-DETAIL-SAMA-POS-SECTORS",
+      "status": "PASS",
+      "evidence": "10a079424cf4502afe7ed3b174c085f1b32458abe244e5680aeabaa768bd61d8"
+    },
+    {
+      "name": "OPP-01-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 25
+    },
+    {
+      "name": "OPP-01-AR:opp-no-cross-matrix",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-01-AR:opportunity-contracts",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-01-AR:opportunity-fields:OPP01-C-RADAR",
+      "status": "PASS",
+      "evidence": "OPP01-C-RADAR"
+    },
+    {
+      "name": "OPP-01-AR:payment-status:OPP01-C-RADAR",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-01-AR:opportunity-fields:OPP01-C-TRUST",
+      "status": "PASS",
+      "evidence": "OPP01-C-TRUST"
+    },
+    {
+      "name": "OPP-01-AR:payment-status:OPP01-C-TRUST",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-01-AR:opportunity-fields:OPP01-C-REGION",
+      "status": "PASS",
+      "evidence": "OPP01-C-REGION"
+    },
+    {
+      "name": "OPP-01-AR:payment-status:OPP01-C-REGION",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-01-AR:opp-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-02-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "OPP-02-AR"
+    },
+    {
+      "name": "OPP-02-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "OPP-02-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "5c0bbc93f8b1720084c28999498447494f191607d68ae0a97d46aedea6c38c9b"
+    },
+    {
+      "name": "OPP-02-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "OPP-02-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_DOCUMENTED_NOT_COMPUTABLE"
+    },
+    {
+      "name": "OPP-02-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 1007
+    },
+    {
+      "name": "OPP-02-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "58eb6a96dc70c952aad60ed311408546bf1fae1abad8938a648dfd623543c917"
+    },
+    {
+      "name": "OPP-02-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-02-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-02-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-02-AR:limitations",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "OPP-02-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-02-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "VERIFIED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "OPP-02-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "OPP-02-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-02-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "name_buyer",
+        "name_decision",
+        "cite_dataset",
+        "state_data_gap",
+        "rights_gate"
+      ]
+    },
+    {
+      "name": "OPP-02-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 9
+    },
+    {
+      "name": "OPP-02-AR:evidence-hash:EVID-PRODUCT-DECISION-JOBS",
+      "status": "PASS",
+      "evidence": "f79cc67d6fab7ddcaea0f16f55f804d35bb2795add60d1c3f4c00ecb98537da1"
+    },
+    {
+      "name": "OPP-02-AR:evidence-hash:EVID-PRICING-READINESS",
+      "status": "PASS",
+      "evidence": "4dafd9d6c8d0216f9016432fbdd498307973226ee24a4ca60d942649521402df"
+    },
+    {
+      "name": "OPP-02-AR:evidence-hash:EVID-UNIT-ECONOMICS",
+      "status": "PASS",
+      "evidence": "ae3213224ad35183e7a84d7e89c605d0e039227113c671c8aee8bf2f74e17985"
+    },
+    {
+      "name": "OPP-02-AR:evidence-hash:EVID-MARKET-EVIDENCE",
+      "status": "PASS",
+      "evidence": "87d86ffcc5b3d5c916c74ec4c818b8e46f483d1978d42522859a31833ccad940"
+    },
+    {
+      "name": "OPP-02-AR:evidence-hash:EVID-RIGHTS-SUMMARY",
+      "status": "PASS",
+      "evidence": "f35d11394720ec3b74f1b4787bf0e3ee2d35c03e8ae4856804795f8287e35992"
+    },
+    {
+      "name": "OPP-02-AR:evidence-hash:EVID-RIGHTS-MATRIX",
+      "status": "PASS",
+      "evidence": "2094b1f190a9dcee58f0eb483e81be7cdc90f82b9967438dbc563a1a8b111a11"
+    },
+    {
+      "name": "OPP-02-AR:evidence-hash:EVID-TRUST-SUMMARY",
+      "status": "PASS",
+      "evidence": "c9aa33524db674163819bf5f4d1ffbd1c8e6f43b31c7b1ba07b7546a2a704395"
+    },
+    {
+      "name": "OPP-02-AR:evidence-hash:EVID-REGIONAL-SUMMARY",
+      "status": "PASS",
+      "evidence": "76e5ac89a0d8e7b0a14bc86549c38efc9702ee13092aeb5ebe2e1cbca7c772ef"
+    },
+    {
+      "name": "OPP-02-AR:evidence-hash:EVID-RADAR-SUMMARY",
+      "status": "PASS",
+      "evidence": "5206aeab038c2ba0683271fcb953ac529ec879e737dc992e86070f730bbc1476"
+    },
+    {
+      "name": "OPP-02-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 18
+    },
+    {
+      "name": "OPP-02-AR:opp-no-cross-matrix",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-02-AR:opportunity-contracts",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-02-AR:opportunity-fields:OPP02-HYP-AUDIT",
+      "status": "PASS",
+      "evidence": "OPP02-HYP-AUDIT"
+    },
+    {
+      "name": "OPP-02-AR:payment-status:OPP02-HYP-AUDIT",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-02-AR:opportunity-fields:OPP02-HYP-REGION",
+      "status": "PASS",
+      "evidence": "OPP02-HYP-REGION"
+    },
+    {
+      "name": "OPP-02-AR:payment-status:OPP02-HYP-REGION",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-02-AR:opportunity-fields:OPP02-HYP-RADAR",
+      "status": "PASS",
+      "evidence": "OPP02-HYP-RADAR"
+    },
+    {
+      "name": "OPP-02-AR:payment-status:OPP02-HYP-RADAR",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-02-AR:opp-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-03-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "OPP-03-AR"
+    },
+    {
+      "name": "OPP-03-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "OPP-03-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "ad59639ae2332159ae5d80b1b92769d934f35f5aaf5788ab6b5a5c401e2cf509"
+    },
+    {
+      "name": "OPP-03-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "OPP-03-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_EVIDENCE_BOUND_INFERENCE"
+    },
+    {
+      "name": "OPP-03-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 909
+    },
+    {
+      "name": "OPP-03-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "9298246e828d7e6ffd47a2de7931d9231cb9ffaee97fc43f6639448b76971e43"
+    },
+    {
+      "name": "OPP-03-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "OPP-03-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-03-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-03-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-03-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-03-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "BOUNDED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "OPP-03-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "OPP-03-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-03-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "name_buyer",
+        "name_decision",
+        "cite_dataset",
+        "state_data_gap",
+        "rights_gate"
+      ]
+    },
+    {
+      "name": "OPP-03-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 12
+    },
+    {
+      "name": "OPP-03-AR:evidence-hash:EVID-CATALOG",
+      "status": "PASS",
+      "evidence": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4"
+    },
+    {
+      "name": "OPP-03-AR:evidence-hash:EVID-DETAIL-MANIFEST",
+      "status": "PASS",
+      "evidence": "8db394dbe27f6b64eb76fe1d33e6a6f8c6ee02759405f63c0442d8bb5f0f378e"
+    },
+    {
+      "name": "OPP-03-AR:evidence-hash:EVID-REGIONAL-SUMMARY",
+      "status": "PASS",
+      "evidence": "76e5ac89a0d8e7b0a14bc86549c38efc9702ee13092aeb5ebe2e1cbca7c772ef"
+    },
+    {
+      "name": "OPP-03-AR:evidence-hash:EVID-PRODUCT-DECISION-JOBS",
+      "status": "PASS",
+      "evidence": "f79cc67d6fab7ddcaea0f16f55f804d35bb2795add60d1c3f4c00ecb98537da1"
+    },
+    {
+      "name": "OPP-03-AR:evidence-hash:EVID-RIGHTS-SUMMARY",
+      "status": "PASS",
+      "evidence": "f35d11394720ec3b74f1b4787bf0e3ee2d35c03e8ae4856804795f8287e35992"
+    },
+    {
+      "name": "OPP-03-AR:evidence-hash:EVID-RIGHTS-MATRIX",
+      "status": "PASS",
+      "evidence": "2094b1f190a9dcee58f0eb483e81be7cdc90f82b9967438dbc563a1a8b111a11"
+    },
+    {
+      "name": "OPP-03-AR:evidence-hash:EVID-MARKET-EVIDENCE",
+      "status": "PASS",
+      "evidence": "87d86ffcc5b3d5c916c74ec4c818b8e46f483d1978d42522859a31833ccad940"
+    },
+    {
+      "name": "OPP-03-AR:evidence-hash:EVID-PRICING-READINESS",
+      "status": "PASS",
+      "evidence": "4dafd9d6c8d0216f9016432fbdd498307973226ee24a4ca60d942649521402df"
+    },
+    {
+      "name": "OPP-03-AR:evidence-hash:EVID-DETAIL-GASTAT-POPULATION-GROWTH",
+      "status": "PASS",
+      "evidence": "98d54d063653f1a0e11aa630e63cd68aac2be6b1f725165c24f66453ced5484e"
+    },
+    {
+      "name": "OPP-03-AR:evidence-hash:EVID-DETAIL-SAMA-POS-SECTORS",
+      "status": "PASS",
+      "evidence": "10a079424cf4502afe7ed3b174c085f1b32458abe244e5680aeabaa768bd61d8"
+    },
+    {
+      "name": "OPP-03-AR:evidence-hash:EVID-DETAIL-SAMA-HEALTH-FACILITIES-RESOURCES",
+      "status": "PASS",
+      "evidence": "15405c1a7a830e01ae03e536435b9ebc0d7ff498e94217d9549cf8f9d7c1c198"
+    },
+    {
+      "name": "OPP-03-AR:evidence-hash:EVID-DETAIL-TOURISM-OCCUPANCY-RATE-MONTHLY",
+      "status": "PASS",
+      "evidence": "bee1d977bd0160d3eebdfbb1a816e426fb9131e762462e27be69cac580947af0"
+    },
+    {
+      "name": "OPP-03-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 15
+    },
+    {
+      "name": "OPP-03-AR:opp-no-cross-matrix",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-03-AR:opportunity-contracts",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-03-AR:opportunity-fields:OPP03-COMPAT-LAYER",
+      "status": "PASS",
+      "evidence": "OPP03-COMPAT-LAYER"
+    },
+    {
+      "name": "OPP-03-AR:payment-status:OPP03-COMPAT-LAYER",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-03-AR:opp-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-04-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "OPP-04-AR"
+    },
+    {
+      "name": "OPP-04-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "OPP-04-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "a1d1740a0ac96e146d5d612528f291cb5b3db875a92110bc4defa87b5bc511da"
+    },
+    {
+      "name": "OPP-04-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "OPP-04-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_DOCUMENTED_NOT_COMPUTABLE"
+    },
+    {
+      "name": "OPP-04-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 797
+    },
+    {
+      "name": "OPP-04-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "1f41a087de643273713dd7a89f2e568849717caa28eb16f91c68a201cd397cba"
+    },
+    {
+      "name": "OPP-04-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-04-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-04-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-04-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-04-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "OPP-04-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "OPP-04-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "OPP-04-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-04-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "name_buyer",
+        "name_decision",
+        "cite_dataset",
+        "state_data_gap",
+        "rights_gate"
+      ]
+    },
+    {
+      "name": "OPP-04-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 9
+    },
+    {
+      "name": "OPP-04-AR:evidence-hash:EVID-REGIONAL-SUMMARY",
+      "status": "PASS",
+      "evidence": "76e5ac89a0d8e7b0a14bc86549c38efc9702ee13092aeb5ebe2e1cbca7c772ef"
+    },
+    {
+      "name": "OPP-04-AR:evidence-hash:EVID-PRODUCT-DECISION-JOBS",
+      "status": "PASS",
+      "evidence": "f79cc67d6fab7ddcaea0f16f55f804d35bb2795add60d1c3f4c00ecb98537da1"
+    },
+    {
+      "name": "OPP-04-AR:evidence-hash:EVID-RIGHTS-SUMMARY",
+      "status": "PASS",
+      "evidence": "f35d11394720ec3b74f1b4787bf0e3ee2d35c03e8ae4856804795f8287e35992"
+    },
+    {
+      "name": "OPP-04-AR:evidence-hash:EVID-RIGHTS-MATRIX",
+      "status": "PASS",
+      "evidence": "2094b1f190a9dcee58f0eb483e81be7cdc90f82b9967438dbc563a1a8b111a11"
+    },
+    {
+      "name": "OPP-04-AR:evidence-hash:EVID-MARKET-EVIDENCE",
+      "status": "PASS",
+      "evidence": "87d86ffcc5b3d5c916c74ec4c818b8e46f483d1978d42522859a31833ccad940"
+    },
+    {
+      "name": "OPP-04-AR:evidence-hash:EVID-PRICING-READINESS",
+      "status": "PASS",
+      "evidence": "4dafd9d6c8d0216f9016432fbdd498307973226ee24a4ca60d942649521402df"
+    },
+    {
+      "name": "OPP-04-AR:evidence-hash:EVID-DETAIL-GASTAT-POPULATION-GROWTH",
+      "status": "PASS",
+      "evidence": "98d54d063653f1a0e11aa630e63cd68aac2be6b1f725165c24f66453ced5484e"
+    },
+    {
+      "name": "OPP-04-AR:evidence-hash:EVID-DETAIL-SAMA-POS-SECTORS",
+      "status": "PASS",
+      "evidence": "10a079424cf4502afe7ed3b174c085f1b32458abe244e5680aeabaa768bd61d8"
+    },
+    {
+      "name": "OPP-04-AR:evidence-hash:EVID-DETAIL-TOURISM-OCCUPANCY-RATE-MONTHLY",
+      "status": "PASS",
+      "evidence": "bee1d977bd0160d3eebdfbb1a816e426fb9131e762462e27be69cac580947af0"
+    },
+    {
+      "name": "OPP-04-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 11
+    },
+    {
+      "name": "OPP-04-AR:opp-no-cross-matrix",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-04-AR:opportunity-contracts",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-04-AR:opportunity-fields:OPP04-GAP-SCREEN",
+      "status": "PASS",
+      "evidence": "OPP04-GAP-SCREEN"
+    },
+    {
+      "name": "OPP-04-AR:payment-status:OPP04-GAP-SCREEN",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-04-AR:opp-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-05-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "OPP-05-AR"
+    },
+    {
+      "name": "OPP-05-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "OPP-05-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "ce1df6951f319735a70817f896eb7de4d8e389386fcc19ec05a44df732579a2b"
+    },
+    {
+      "name": "OPP-05-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "OPP-05-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_EVIDENCE_BOUND_INFERENCE"
+    },
+    {
+      "name": "OPP-05-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 781
+    },
+    {
+      "name": "OPP-05-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "7e2763ac5d22d3a0d39baacc0072655195627eed7605e213f298e34178135245"
+    },
+    {
+      "name": "OPP-05-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-05-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-05-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-05-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-05-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-05-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "BOUNDED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "OPP-05-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "OPP-05-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-05-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "name_buyer",
+        "name_decision",
+        "cite_dataset",
+        "state_data_gap",
+        "rights_gate"
+      ]
+    },
+    {
+      "name": "OPP-05-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 10
+    },
+    {
+      "name": "OPP-05-AR:evidence-hash:EVID-RADAR-SUMMARY",
+      "status": "PASS",
+      "evidence": "5206aeab038c2ba0683271fcb953ac529ec879e737dc992e86070f730bbc1476"
+    },
+    {
+      "name": "OPP-05-AR:evidence-hash:EVID-TRUST-SUMMARY",
+      "status": "PASS",
+      "evidence": "c9aa33524db674163819bf5f4d1ffbd1c8e6f43b31c7b1ba07b7546a2a704395"
+    },
+    {
+      "name": "OPP-05-AR:evidence-hash:EVID-UNIT-ECONOMICS",
+      "status": "PASS",
+      "evidence": "ae3213224ad35183e7a84d7e89c605d0e039227113c671c8aee8bf2f74e17985"
+    },
+    {
+      "name": "OPP-05-AR:evidence-hash:EVID-RIGHTS-SUMMARY",
+      "status": "PASS",
+      "evidence": "f35d11394720ec3b74f1b4787bf0e3ee2d35c03e8ae4856804795f8287e35992"
+    },
+    {
+      "name": "OPP-05-AR:evidence-hash:EVID-RIGHTS-MATRIX",
+      "status": "PASS",
+      "evidence": "2094b1f190a9dcee58f0eb483e81be7cdc90f82b9967438dbc563a1a8b111a11"
+    },
+    {
+      "name": "OPP-05-AR:evidence-hash:EVID-MARKET-EVIDENCE",
+      "status": "PASS",
+      "evidence": "87d86ffcc5b3d5c916c74ec4c818b8e46f483d1978d42522859a31833ccad940"
+    },
+    {
+      "name": "OPP-05-AR:evidence-hash:EVID-PRICING-READINESS",
+      "status": "PASS",
+      "evidence": "4dafd9d6c8d0216f9016432fbdd498307973226ee24a4ca60d942649521402df"
+    },
+    {
+      "name": "OPP-05-AR:evidence-hash:EVID-DETAIL-SAMA-POS-SECTORS",
+      "status": "PASS",
+      "evidence": "10a079424cf4502afe7ed3b174c085f1b32458abe244e5680aeabaa768bd61d8"
+    },
+    {
+      "name": "OPP-05-AR:evidence-hash:EVID-DETAIL-GASTAT-INFLATION",
+      "status": "PASS",
+      "evidence": "4933c3354ccd96f61c88e5618c15951b41e7b7c467f424f771a6b2d946976a60"
+    },
+    {
+      "name": "OPP-05-AR:evidence-hash:EVID-DETAIL-BUILDING-PERMITS",
+      "status": "PASS",
+      "evidence": "4c14653f4910440c2c3ceae6ce0f840e744d9ed4c552b1a898831874c6ebf9f7"
+    },
+    {
+      "name": "OPP-05-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 24
+    },
+    {
+      "name": "OPP-05-AR:opp-no-cross-matrix",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-05-AR:opportunity-contracts",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-05-AR:opportunity-fields:OPP05-ALERT-RELEASE",
+      "status": "PASS",
+      "evidence": "OPP05-ALERT-RELEASE"
+    },
+    {
+      "name": "OPP-05-AR:payment-status:OPP05-ALERT-RELEASE",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-05-AR:opportunity-fields:OPP05-ALERT-TRUST",
+      "status": "PASS",
+      "evidence": "OPP05-ALERT-TRUST"
+    },
+    {
+      "name": "OPP-05-AR:payment-status:OPP05-ALERT-TRUST",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-05-AR:opportunity-fields:OPP05-ALERT-THRESHOLD",
+      "status": "PASS",
+      "evidence": "OPP05-ALERT-THRESHOLD"
+    },
+    {
+      "name": "OPP-05-AR:payment-status:OPP05-ALERT-THRESHOLD",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-05-AR:opp-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-06-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "OPP-06-AR"
+    },
+    {
+      "name": "OPP-06-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "OPP-06-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "6b0563c24cc87ca1114aae227de00974a7be4eccc99f4fc84fef06bd5a256221"
+    },
+    {
+      "name": "OPP-06-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "OPP-06-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_EVIDENCE_BOUND_INFERENCE"
+    },
+    {
+      "name": "OPP-06-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 890
+    },
+    {
+      "name": "OPP-06-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "6dcbff389c781a047648310935777b7fee5d4e6aa85c36496ffddd2d9efe7ef0"
+    },
+    {
+      "name": "OPP-06-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-06-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-06-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-06-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-06-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-06-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "BOUNDED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "OPP-06-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "OPP-06-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-06-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "name_buyer",
+        "name_decision",
+        "cite_dataset",
+        "state_data_gap",
+        "rights_gate"
+      ]
+    },
+    {
+      "name": "OPP-06-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 10
+    },
+    {
+      "name": "OPP-06-AR:evidence-hash:EVID-PRODUCT-PREFILTER",
+      "status": "PASS",
+      "evidence": "c75534afa69383c6d616b99b236d89cbec7f6f6eb419bdc1965f796dc85ecda0"
+    },
+    {
+      "name": "OPP-06-AR:evidence-hash:EVID-RIGHTS-SUMMARY",
+      "status": "PASS",
+      "evidence": "f35d11394720ec3b74f1b4787bf0e3ee2d35c03e8ae4856804795f8287e35992"
+    },
+    {
+      "name": "OPP-06-AR:evidence-hash:EVID-RIGHTS-MATRIX",
+      "status": "PASS",
+      "evidence": "2094b1f190a9dcee58f0eb483e81be7cdc90f82b9967438dbc563a1a8b111a11"
+    },
+    {
+      "name": "OPP-06-AR:evidence-hash:EVID-MARKET-EVIDENCE",
+      "status": "PASS",
+      "evidence": "87d86ffcc5b3d5c916c74ec4c818b8e46f483d1978d42522859a31833ccad940"
+    },
+    {
+      "name": "OPP-06-AR:evidence-hash:EVID-PRICING-READINESS",
+      "status": "PASS",
+      "evidence": "4dafd9d6c8d0216f9016432fbdd498307973226ee24a4ca60d942649521402df"
+    },
+    {
+      "name": "OPP-06-AR:evidence-hash:EVID-DETAIL-GASTAT-POPULATION-GROWTH",
+      "status": "PASS",
+      "evidence": "98d54d063653f1a0e11aa630e63cd68aac2be6b1f725165c24f66453ced5484e"
+    },
+    {
+      "name": "OPP-06-AR:evidence-hash:EVID-DETAIL-SAMA-HEALTH-FACILITIES-RESOURCES",
+      "status": "PASS",
+      "evidence": "15405c1a7a830e01ae03e536435b9ebc0d7ff498e94217d9549cf8f9d7c1c198"
+    },
+    {
+      "name": "OPP-06-AR:evidence-hash:EVID-DETAIL-SAMA-POS-SECTORS",
+      "status": "PASS",
+      "evidence": "10a079424cf4502afe7ed3b174c085f1b32458abe244e5680aeabaa768bd61d8"
+    },
+    {
+      "name": "OPP-06-AR:evidence-hash:EVID-DETAIL-GASTAT-INFLATION",
+      "status": "PASS",
+      "evidence": "4933c3354ccd96f61c88e5618c15951b41e7b7c467f424f771a6b2d946976a60"
+    },
+    {
+      "name": "OPP-06-AR:evidence-hash:EVID-DETAIL-TOURISM-OCCUPANCY-RATE-MONTHLY",
+      "status": "PASS",
+      "evidence": "bee1d977bd0160d3eebdfbb1a816e426fb9131e762462e27be69cac580947af0"
+    },
+    {
+      "name": "OPP-06-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 21
+    },
+    {
+      "name": "OPP-06-AR:opp-no-cross-matrix",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-06-AR:opportunity-contracts",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-06-AR:opportunity-fields:OPP06-LOCAL-PAGES",
+      "status": "PASS",
+      "evidence": "OPP06-LOCAL-PAGES"
+    },
+    {
+      "name": "OPP-06-AR:payment-status:OPP06-LOCAL-PAGES",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-06-AR:opp-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-07-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "OPP-07-AR"
+    },
+    {
+      "name": "OPP-07-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "OPP-07-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "ae8e630ac2dd76b2723c9a864a3c6d29887ccf518c411ee5d5a2e1470a32a6bf"
+    },
+    {
+      "name": "OPP-07-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "OPP-07-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_EVIDENCE_BOUND_INFERENCE"
+    },
+    {
+      "name": "OPP-07-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 944
+    },
+    {
+      "name": "OPP-07-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "cc97b9f9791310b1b5904ab25b7a9561473e3ebcf83eb25747f43bbe7832f943"
+    },
+    {
+      "name": "OPP-07-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "OPP-07-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-07-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-07-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-07-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-07-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "BOUNDED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "OPP-07-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "OPP-07-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-07-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "name_buyer",
+        "name_decision",
+        "cite_dataset",
+        "state_data_gap",
+        "rights_gate"
+      ]
+    },
+    {
+      "name": "OPP-07-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 10
+    },
+    {
+      "name": "OPP-07-AR:evidence-hash:EVID-REGIONAL-SUMMARY",
+      "status": "PASS",
+      "evidence": "76e5ac89a0d8e7b0a14bc86549c38efc9702ee13092aeb5ebe2e1cbca7c772ef"
+    },
+    {
+      "name": "OPP-07-AR:evidence-hash:EVID-PRODUCT-DECISION-JOBS",
+      "status": "PASS",
+      "evidence": "f79cc67d6fab7ddcaea0f16f55f804d35bb2795add60d1c3f4c00ecb98537da1"
+    },
+    {
+      "name": "OPP-07-AR:evidence-hash:EVID-PRODUCT-PREFILTER",
+      "status": "PASS",
+      "evidence": "c75534afa69383c6d616b99b236d89cbec7f6f6eb419bdc1965f796dc85ecda0"
+    },
+    {
+      "name": "OPP-07-AR:evidence-hash:EVID-RIGHTS-SUMMARY",
+      "status": "PASS",
+      "evidence": "f35d11394720ec3b74f1b4787bf0e3ee2d35c03e8ae4856804795f8287e35992"
+    },
+    {
+      "name": "OPP-07-AR:evidence-hash:EVID-RIGHTS-MATRIX",
+      "status": "PASS",
+      "evidence": "2094b1f190a9dcee58f0eb483e81be7cdc90f82b9967438dbc563a1a8b111a11"
+    },
+    {
+      "name": "OPP-07-AR:evidence-hash:EVID-MARKET-EVIDENCE",
+      "status": "PASS",
+      "evidence": "87d86ffcc5b3d5c916c74ec4c818b8e46f483d1978d42522859a31833ccad940"
+    },
+    {
+      "name": "OPP-07-AR:evidence-hash:EVID-PRICING-READINESS",
+      "status": "PASS",
+      "evidence": "4dafd9d6c8d0216f9016432fbdd498307973226ee24a4ca60d942649521402df"
+    },
+    {
+      "name": "OPP-07-AR:evidence-hash:EVID-DETAIL-SAMA-POS-SECTORS",
+      "status": "PASS",
+      "evidence": "10a079424cf4502afe7ed3b174c085f1b32458abe244e5680aeabaa768bd61d8"
+    },
+    {
+      "name": "OPP-07-AR:evidence-hash:EVID-DETAIL-TOURISM-OCCUPANCY-RATE-MONTHLY",
+      "status": "PASS",
+      "evidence": "bee1d977bd0160d3eebdfbb1a816e426fb9131e762462e27be69cac580947af0"
+    },
+    {
+      "name": "OPP-07-AR:evidence-hash:EVID-DETAIL-SAMA-HEALTH-FACILITIES-RESOURCES",
+      "status": "PASS",
+      "evidence": "15405c1a7a830e01ae03e536435b9ebc0d7ff498e94217d9549cf8f9d7c1c198"
+    },
+    {
+      "name": "OPP-07-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 14
+    },
+    {
+      "name": "OPP-07-AR:opp-no-cross-matrix",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-07-AR:opportunity-contracts",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-07-AR:opportunity-fields:OPP07-PRIVATE-SITE",
+      "status": "PASS",
+      "evidence": "OPP07-PRIVATE-SITE"
+    },
+    {
+      "name": "OPP-07-AR:payment-status:OPP07-PRIVATE-SITE",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-07-AR:opp-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-08-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "OPP-08-AR"
+    },
+    {
+      "name": "OPP-08-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "OPP-08-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "29c798670a60b787ed8f3fc4a0ad20df21930433785724c7ffb3a844598fc15e"
+    },
+    {
+      "name": "OPP-08-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "OPP-08-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_EVIDENCE_BOUND_INFERENCE"
+    },
+    {
+      "name": "OPP-08-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 877
+    },
+    {
+      "name": "OPP-08-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "1100814085c4d96c78f6a4183f52a21582eadd882a72d0e7881e08823f36eea3"
+    },
+    {
+      "name": "OPP-08-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "OPP-08-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-08-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-08-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-08-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-08-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "BOUNDED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "OPP-08-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "OPP-08-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-08-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "name_buyer",
+        "name_decision",
+        "cite_dataset",
+        "state_data_gap",
+        "rights_gate"
+      ]
+    },
+    {
+      "name": "OPP-08-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 8
+    },
+    {
+      "name": "OPP-08-AR:evidence-hash:EVID-CATALOG",
+      "status": "PASS",
+      "evidence": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4"
+    },
+    {
+      "name": "OPP-08-AR:evidence-hash:EVID-DETAIL-MANIFEST",
+      "status": "PASS",
+      "evidence": "8db394dbe27f6b64eb76fe1d33e6a6f8c6ee02759405f63c0442d8bb5f0f378e"
+    },
+    {
+      "name": "OPP-08-AR:evidence-hash:EVID-TRUST-SUMMARY",
+      "status": "PASS",
+      "evidence": "c9aa33524db674163819bf5f4d1ffbd1c8e6f43b31c7b1ba07b7546a2a704395"
+    },
+    {
+      "name": "OPP-08-AR:evidence-hash:EVID-RADAR-SUMMARY",
+      "status": "PASS",
+      "evidence": "5206aeab038c2ba0683271fcb953ac529ec879e737dc992e86070f730bbc1476"
+    },
+    {
+      "name": "OPP-08-AR:evidence-hash:EVID-RIGHTS-SUMMARY",
+      "status": "PASS",
+      "evidence": "f35d11394720ec3b74f1b4787bf0e3ee2d35c03e8ae4856804795f8287e35992"
+    },
+    {
+      "name": "OPP-08-AR:evidence-hash:EVID-RIGHTS-MATRIX",
+      "status": "PASS",
+      "evidence": "2094b1f190a9dcee58f0eb483e81be7cdc90f82b9967438dbc563a1a8b111a11"
+    },
+    {
+      "name": "OPP-08-AR:evidence-hash:EVID-MARKET-EVIDENCE",
+      "status": "PASS",
+      "evidence": "87d86ffcc5b3d5c916c74ec4c818b8e46f483d1978d42522859a31833ccad940"
+    },
+    {
+      "name": "OPP-08-AR:evidence-hash:EVID-PRICING-READINESS",
+      "status": "PASS",
+      "evidence": "4dafd9d6c8d0216f9016432fbdd498307973226ee24a4ca60d942649521402df"
+    },
+    {
+      "name": "OPP-08-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 17
+    },
+    {
+      "name": "OPP-08-AR:opp-no-cross-matrix",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-08-AR:opportunity-contracts",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-08-AR:opportunity-fields:OPP08-TRUST-ASSET",
+      "status": "PASS",
+      "evidence": "OPP08-TRUST-ASSET"
+    },
+    {
+      "name": "OPP-08-AR:payment-status:OPP08-TRUST-ASSET",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-08-AR:opp-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-09-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "OPP-09-AR"
+    },
+    {
+      "name": "OPP-09-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "OPP-09-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "72afa8746a99145c7bae4385398c489f7cd438ffdb7e63233ea0f9506f6e0662"
+    },
+    {
+      "name": "OPP-09-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "OPP-09-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_EVIDENCE_BOUND_INFERENCE"
+    },
+    {
+      "name": "OPP-09-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 719
+    },
+    {
+      "name": "OPP-09-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "37dd03112d62efdd911eaf7ecec5da40c4ae0b4acae85063924b4600dd031f4d"
+    },
+    {
+      "name": "OPP-09-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "OPP-09-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-09-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-09-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-09-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-09-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "BOUNDED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "OPP-09-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "OPP-09-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-09-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "name_buyer",
+        "name_decision",
+        "cite_dataset",
+        "state_data_gap",
+        "rights_gate"
+      ]
+    },
+    {
+      "name": "OPP-09-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 9
+    },
+    {
+      "name": "OPP-09-AR:evidence-hash:EVID-CATALOG",
+      "status": "PASS",
+      "evidence": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4"
+    },
+    {
+      "name": "OPP-09-AR:evidence-hash:EVID-DETAIL-MANIFEST",
+      "status": "PASS",
+      "evidence": "8db394dbe27f6b64eb76fe1d33e6a6f8c6ee02759405f63c0442d8bb5f0f378e"
+    },
+    {
+      "name": "OPP-09-AR:evidence-hash:EVID-TRUST-SUMMARY",
+      "status": "PASS",
+      "evidence": "c9aa33524db674163819bf5f4d1ffbd1c8e6f43b31c7b1ba07b7546a2a704395"
+    },
+    {
+      "name": "OPP-09-AR:evidence-hash:EVID-RADAR-SUMMARY",
+      "status": "PASS",
+      "evidence": "5206aeab038c2ba0683271fcb953ac529ec879e737dc992e86070f730bbc1476"
+    },
+    {
+      "name": "OPP-09-AR:evidence-hash:EVID-PRODUCT-DECISION-JOBS",
+      "status": "PASS",
+      "evidence": "f79cc67d6fab7ddcaea0f16f55f804d35bb2795add60d1c3f4c00ecb98537da1"
+    },
+    {
+      "name": "OPP-09-AR:evidence-hash:EVID-RIGHTS-SUMMARY",
+      "status": "PASS",
+      "evidence": "f35d11394720ec3b74f1b4787bf0e3ee2d35c03e8ae4856804795f8287e35992"
+    },
+    {
+      "name": "OPP-09-AR:evidence-hash:EVID-RIGHTS-MATRIX",
+      "status": "PASS",
+      "evidence": "2094b1f190a9dcee58f0eb483e81be7cdc90f82b9967438dbc563a1a8b111a11"
+    },
+    {
+      "name": "OPP-09-AR:evidence-hash:EVID-MARKET-EVIDENCE",
+      "status": "PASS",
+      "evidence": "87d86ffcc5b3d5c916c74ec4c818b8e46f483d1978d42522859a31833ccad940"
+    },
+    {
+      "name": "OPP-09-AR:evidence-hash:EVID-PRICING-READINESS",
+      "status": "PASS",
+      "evidence": "4dafd9d6c8d0216f9016432fbdd498307973226ee24a4ca60d942649521402df"
+    },
+    {
+      "name": "OPP-09-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 16
+    },
+    {
+      "name": "OPP-09-AR:opp-no-cross-matrix",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-09-AR:opportunity-contracts",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-09-AR:opportunity-fields:OPP09-SOURCE-FIRST-AUDIT",
+      "status": "PASS",
+      "evidence": "OPP09-SOURCE-FIRST-AUDIT"
+    },
+    {
+      "name": "OPP-09-AR:payment-status:OPP09-SOURCE-FIRST-AUDIT",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-09-AR:opp-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-10-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "OPP-10-AR"
+    },
+    {
+      "name": "OPP-10-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "OPP-10-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "fe80874d6199d915ca77321148731faf68c2ffa9413fedbc37328d54eb56dddd"
+    },
+    {
+      "name": "OPP-10-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "OPP-10-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_EVIDENCE_BOUND_INFERENCE"
+    },
+    {
+      "name": "OPP-10-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 811
+    },
+    {
+      "name": "OPP-10-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "91a02e6361c2e0319d22da3a51bb89545cffa529647efe6a546e47ce26ae2d0b"
+    },
+    {
+      "name": "OPP-10-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-10-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-10-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-10-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-10-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-10-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "BOUNDED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "OPP-10-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "OPP-10-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-10-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "name_buyer",
+        "name_decision",
+        "cite_dataset",
+        "state_data_gap",
+        "rights_gate"
+      ]
+    },
+    {
+      "name": "OPP-10-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 9
+    },
+    {
+      "name": "OPP-10-AR:evidence-hash:EVID-CATALOG",
+      "status": "PASS",
+      "evidence": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4"
+    },
+    {
+      "name": "OPP-10-AR:evidence-hash:EVID-ORACLE",
+      "status": "PASS",
+      "evidence": "cd3114bd544a6facd2c7913230f4c9ce72d8cc21e54cbf400b582281c80a112e"
+    },
+    {
+      "name": "OPP-10-AR:evidence-hash:EVID-DETAIL-MANIFEST",
+      "status": "PASS",
+      "evidence": "8db394dbe27f6b64eb76fe1d33e6a6f8c6ee02759405f63c0442d8bb5f0f378e"
+    },
+    {
+      "name": "OPP-10-AR:evidence-hash:EVID-RADAR-SUMMARY",
+      "status": "PASS",
+      "evidence": "5206aeab038c2ba0683271fcb953ac529ec879e737dc992e86070f730bbc1476"
+    },
+    {
+      "name": "OPP-10-AR:evidence-hash:EVID-TRUST-SUMMARY",
+      "status": "PASS",
+      "evidence": "c9aa33524db674163819bf5f4d1ffbd1c8e6f43b31c7b1ba07b7546a2a704395"
+    },
+    {
+      "name": "OPP-10-AR:evidence-hash:EVID-RIGHTS-SUMMARY",
+      "status": "PASS",
+      "evidence": "f35d11394720ec3b74f1b4787bf0e3ee2d35c03e8ae4856804795f8287e35992"
+    },
+    {
+      "name": "OPP-10-AR:evidence-hash:EVID-RIGHTS-MATRIX",
+      "status": "PASS",
+      "evidence": "2094b1f190a9dcee58f0eb483e81be7cdc90f82b9967438dbc563a1a8b111a11"
+    },
+    {
+      "name": "OPP-10-AR:evidence-hash:EVID-MARKET-EVIDENCE",
+      "status": "PASS",
+      "evidence": "87d86ffcc5b3d5c916c74ec4c818b8e46f483d1978d42522859a31833ccad940"
+    },
+    {
+      "name": "OPP-10-AR:evidence-hash:EVID-PRICING-READINESS",
+      "status": "PASS",
+      "evidence": "4dafd9d6c8d0216f9016432fbdd498307973226ee24a4ca60d942649521402df"
+    },
+    {
+      "name": "OPP-10-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 21
+    },
+    {
+      "name": "OPP-10-AR:opp-no-cross-matrix",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-10-AR:opportunity-contracts",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-10-AR:opportunity-fields:OPP10-EVIDENCE-API",
+      "status": "PASS",
+      "evidence": "OPP10-EVIDENCE-API"
+    },
+    {
+      "name": "OPP-10-AR:payment-status:OPP10-EVIDENCE-API",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-10-AR:opp-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-11-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "OPP-11-AR"
+    },
+    {
+      "name": "OPP-11-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "OPP-11-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "ac320eadc6b99fe29e7941cc6fe1a670721b595b23d842cc176b7b88012503f3"
+    },
+    {
+      "name": "OPP-11-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "OPP-11-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_EVIDENCE_BOUND_INFERENCE"
+    },
+    {
+      "name": "OPP-11-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 724
+    },
+    {
+      "name": "OPP-11-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "731789c9a43dcb3098985e69412a3aeeceb50c45d860c4754fc7bb9b6ff7ed6e"
+    },
+    {
+      "name": "OPP-11-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-11-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-11-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-11-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-11-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-11-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "BOUNDED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "OPP-11-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "OPP-11-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-11-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "name_buyer",
+        "name_decision",
+        "cite_dataset",
+        "state_data_gap",
+        "rights_gate"
+      ]
+    },
+    {
+      "name": "OPP-11-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 8
+    },
+    {
+      "name": "OPP-11-AR:evidence-hash:EVID-TRUST-SUMMARY",
+      "status": "PASS",
+      "evidence": "c9aa33524db674163819bf5f4d1ffbd1c8e6f43b31c7b1ba07b7546a2a704395"
+    },
+    {
+      "name": "OPP-11-AR:evidence-hash:EVID-REGIONAL-SUMMARY",
+      "status": "PASS",
+      "evidence": "76e5ac89a0d8e7b0a14bc86549c38efc9702ee13092aeb5ebe2e1cbca7c772ef"
+    },
+    {
+      "name": "OPP-11-AR:evidence-hash:EVID-RADAR-SUMMARY",
+      "status": "PASS",
+      "evidence": "5206aeab038c2ba0683271fcb953ac529ec879e737dc992e86070f730bbc1476"
+    },
+    {
+      "name": "OPP-11-AR:evidence-hash:EVID-UNIT-ECONOMICS",
+      "status": "PASS",
+      "evidence": "ae3213224ad35183e7a84d7e89c605d0e039227113c671c8aee8bf2f74e17985"
+    },
+    {
+      "name": "OPP-11-AR:evidence-hash:EVID-PRICING-READINESS",
+      "status": "PASS",
+      "evidence": "4dafd9d6c8d0216f9016432fbdd498307973226ee24a4ca60d942649521402df"
+    },
+    {
+      "name": "OPP-11-AR:evidence-hash:EVID-MARKET-EVIDENCE",
+      "status": "PASS",
+      "evidence": "87d86ffcc5b3d5c916c74ec4c818b8e46f483d1978d42522859a31833ccad940"
+    },
+    {
+      "name": "OPP-11-AR:evidence-hash:EVID-RIGHTS-SUMMARY",
+      "status": "PASS",
+      "evidence": "f35d11394720ec3b74f1b4787bf0e3ee2d35c03e8ae4856804795f8287e35992"
+    },
+    {
+      "name": "OPP-11-AR:evidence-hash:EVID-RIGHTS-MATRIX",
+      "status": "PASS",
+      "evidence": "2094b1f190a9dcee58f0eb483e81be7cdc90f82b9967438dbc563a1a8b111a11"
+    },
+    {
+      "name": "OPP-11-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 17
+    },
+    {
+      "name": "OPP-11-AR:opp-no-cross-matrix",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-11-AR:opportunity-contracts",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-11-AR:opportunity-fields:OPP11-FIN-AUDIT",
+      "status": "PASS",
+      "evidence": "OPP11-FIN-AUDIT"
+    },
+    {
+      "name": "OPP-11-AR:payment-status:OPP11-FIN-AUDIT",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-11-AR:opp-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-12-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "OPP-12-AR"
+    },
+    {
+      "name": "OPP-12-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "OPP-12-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "e2111e974dd48ce1676e7b7586dcc598fc75873be9590ba62ec3d9a2b5dbbec6"
+    },
+    {
+      "name": "OPP-12-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "OPP-12-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_EVIDENCE_BOUND_INFERENCE"
+    },
+    {
+      "name": "OPP-12-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 787
+    },
+    {
+      "name": "OPP-12-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "4c4c7eb639d8d563b768d3fa6a8ae61fae210eb7c0f259389bcdb3b4f55d7c1b"
+    },
+    {
+      "name": "OPP-12-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "OPP-12-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-12-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-12-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-12-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-12-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "BOUNDED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "OPP-12-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "OPP-12-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-12-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "name_buyer",
+        "name_decision",
+        "cite_dataset",
+        "state_data_gap",
+        "rights_gate"
+      ]
+    },
+    {
+      "name": "OPP-12-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 9
+    },
+    {
+      "name": "OPP-12-AR:evidence-hash:EVID-RADAR-SUMMARY",
+      "status": "PASS",
+      "evidence": "5206aeab038c2ba0683271fcb953ac529ec879e737dc992e86070f730bbc1476"
+    },
+    {
+      "name": "OPP-12-AR:evidence-hash:EVID-TRUST-SUMMARY",
+      "status": "PASS",
+      "evidence": "c9aa33524db674163819bf5f4d1ffbd1c8e6f43b31c7b1ba07b7546a2a704395"
+    },
+    {
+      "name": "OPP-12-AR:evidence-hash:EVID-PRODUCT-PREFILTER",
+      "status": "PASS",
+      "evidence": "c75534afa69383c6d616b99b236d89cbec7f6f6eb419bdc1965f796dc85ecda0"
+    },
+    {
+      "name": "OPP-12-AR:evidence-hash:EVID-RIGHTS-SUMMARY",
+      "status": "PASS",
+      "evidence": "f35d11394720ec3b74f1b4787bf0e3ee2d35c03e8ae4856804795f8287e35992"
+    },
+    {
+      "name": "OPP-12-AR:evidence-hash:EVID-RIGHTS-MATRIX",
+      "status": "PASS",
+      "evidence": "2094b1f190a9dcee58f0eb483e81be7cdc90f82b9967438dbc563a1a8b111a11"
+    },
+    {
+      "name": "OPP-12-AR:evidence-hash:EVID-MARKET-EVIDENCE",
+      "status": "PASS",
+      "evidence": "87d86ffcc5b3d5c916c74ec4c818b8e46f483d1978d42522859a31833ccad940"
+    },
+    {
+      "name": "OPP-12-AR:evidence-hash:EVID-PRICING-READINESS",
+      "status": "PASS",
+      "evidence": "4dafd9d6c8d0216f9016432fbdd498307973226ee24a4ca60d942649521402df"
+    },
+    {
+      "name": "OPP-12-AR:evidence-hash:EVID-DETAIL-GASTAT-POPULATION-GROWTH",
+      "status": "PASS",
+      "evidence": "98d54d063653f1a0e11aa630e63cd68aac2be6b1f725165c24f66453ced5484e"
+    },
+    {
+      "name": "OPP-12-AR:evidence-hash:EVID-DETAIL-SAMA-POS-SECTORS",
+      "status": "PASS",
+      "evidence": "10a079424cf4502afe7ed3b174c085f1b32458abe244e5680aeabaa768bd61d8"
+    },
+    {
+      "name": "OPP-12-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 23
+    },
+    {
+      "name": "OPP-12-AR:opp-no-cross-matrix",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-12-AR:opportunity-contracts",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-12-AR:opportunity-fields:OPP12-DIRECT-AUDIT",
+      "status": "PASS",
+      "evidence": "OPP12-DIRECT-AUDIT"
+    },
+    {
+      "name": "OPP-12-AR:payment-status:OPP12-DIRECT-AUDIT",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-12-AR:opportunity-fields:OPP12-PUSH-RADAR",
+      "status": "PASS",
+      "evidence": "OPP12-PUSH-RADAR"
+    },
+    {
+      "name": "OPP-12-AR:payment-status:OPP12-PUSH-RADAR",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-12-AR:opportunity-fields:OPP12-SEARCH-PAGES",
+      "status": "PASS",
+      "evidence": "OPP12-SEARCH-PAGES"
+    },
+    {
+      "name": "OPP-12-AR:payment-status:OPP12-SEARCH-PAGES",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-12-AR:opp-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-13-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "OPP-13-AR"
+    },
+    {
+      "name": "OPP-13-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "OPP-13-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "d015692552b39fc2949d8cbe4fb3929478545f3097cafd10f087d5eb82da85ec"
+    },
+    {
+      "name": "OPP-13-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "OPP-13-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_EVIDENCE_BOUND_INFERENCE"
+    },
+    {
+      "name": "OPP-13-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 843
+    },
+    {
+      "name": "OPP-13-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "0dd9d6c9623b17cb88d93ccc9db62f668e8352544e0fd006f63d4acc5aa07945"
+    },
+    {
+      "name": "OPP-13-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-13-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-13-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-13-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-13-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-13-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "VERIFIED",
+        "BOUNDED"
+      ]
+    },
+    {
+      "name": "OPP-13-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "OPP-13-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-13-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "name_buyer",
+        "name_decision",
+        "cite_dataset",
+        "state_data_gap",
+        "rights_gate"
+      ]
+    },
+    {
+      "name": "OPP-13-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 6
+    },
+    {
+      "name": "OPP-13-AR:evidence-hash:EVID-RIGHTS-SUMMARY",
+      "status": "PASS",
+      "evidence": "f35d11394720ec3b74f1b4787bf0e3ee2d35c03e8ae4856804795f8287e35992"
+    },
+    {
+      "name": "OPP-13-AR:evidence-hash:EVID-RIGHTS-MATRIX",
+      "status": "PASS",
+      "evidence": "2094b1f190a9dcee58f0eb483e81be7cdc90f82b9967438dbc563a1a8b111a11"
+    },
+    {
+      "name": "OPP-13-AR:evidence-hash:EVID-PRODUCT-PREFILTER",
+      "status": "PASS",
+      "evidence": "c75534afa69383c6d616b99b236d89cbec7f6f6eb419bdc1965f796dc85ecda0"
+    },
+    {
+      "name": "OPP-13-AR:evidence-hash:EVID-MARKET-EVIDENCE",
+      "status": "PASS",
+      "evidence": "87d86ffcc5b3d5c916c74ec4c818b8e46f483d1978d42522859a31833ccad940"
+    },
+    {
+      "name": "OPP-13-AR:evidence-hash:EVID-PRICING-READINESS",
+      "status": "PASS",
+      "evidence": "4dafd9d6c8d0216f9016432fbdd498307973226ee24a4ca60d942649521402df"
+    },
+    {
+      "name": "OPP-13-AR:evidence-hash:EVID-CATALOG",
+      "status": "PASS",
+      "evidence": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4"
+    },
+    {
+      "name": "OPP-13-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 15
+    },
+    {
+      "name": "OPP-13-AR:opp-no-cross-matrix",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-13-AR:opportunity-contracts",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-13-AR:opportunity-fields:OPP13-DROP-RAW-PUBLIC",
+      "status": "PASS",
+      "evidence": "OPP13-DROP-RAW-PUBLIC"
+    },
+    {
+      "name": "OPP-13-AR:payment-status:OPP13-DROP-RAW-PUBLIC",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-13-AR:opp-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-14-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "OPP-14-AR"
+    },
+    {
+      "name": "OPP-14-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "OPP-14-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "bcde5e3ddae0f11d258076283b46cac299819e6ac3aacb052bc9f213c86e4651"
+    },
+    {
+      "name": "OPP-14-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "OPP-14-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_DOCUMENTED_NOT_COMPUTABLE"
+    },
+    {
+      "name": "OPP-14-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 815
+    },
+    {
+      "name": "OPP-14-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "be77e233249cc94744932623adad3c7e27250db509017b9a8a44c5ca26a5c41e"
+    },
+    {
+      "name": "OPP-14-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-14-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-14-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-14-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-14-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 2
+    },
+    {
+      "name": "OPP-14-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "OPP-14-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "OPP-14-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-14-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "name_buyer",
+        "name_decision",
+        "cite_dataset",
+        "state_data_gap",
+        "rights_gate"
+      ]
+    },
+    {
+      "name": "OPP-14-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 10
+    },
+    {
+      "name": "OPP-14-AR:evidence-hash:EVID-CATALOG",
+      "status": "PASS",
+      "evidence": "d1994c69479b757ea0d15af19c472e4336ec873474cb5f6ff311ff37675d27f4"
+    },
+    {
+      "name": "OPP-14-AR:evidence-hash:EVID-DETAIL-MANIFEST",
+      "status": "PASS",
+      "evidence": "8db394dbe27f6b64eb76fe1d33e6a6f8c6ee02759405f63c0442d8bb5f0f378e"
+    },
+    {
+      "name": "OPP-14-AR:evidence-hash:EVID-PRICING-READINESS",
+      "status": "PASS",
+      "evidence": "4dafd9d6c8d0216f9016432fbdd498307973226ee24a4ca60d942649521402df"
+    },
+    {
+      "name": "OPP-14-AR:evidence-hash:EVID-MARKET-EVIDENCE",
+      "status": "PASS",
+      "evidence": "87d86ffcc5b3d5c916c74ec4c818b8e46f483d1978d42522859a31833ccad940"
+    },
+    {
+      "name": "OPP-14-AR:evidence-hash:EVID-RIGHTS-SUMMARY",
+      "status": "PASS",
+      "evidence": "f35d11394720ec3b74f1b4787bf0e3ee2d35c03e8ae4856804795f8287e35992"
+    },
+    {
+      "name": "OPP-14-AR:evidence-hash:EVID-RIGHTS-MATRIX",
+      "status": "PASS",
+      "evidence": "2094b1f190a9dcee58f0eb483e81be7cdc90f82b9967438dbc563a1a8b111a11"
+    },
+    {
+      "name": "OPP-14-AR:evidence-hash:EVID-DETAIL-SAMA-POS-SECTORS",
+      "status": "PASS",
+      "evidence": "10a079424cf4502afe7ed3b174c085f1b32458abe244e5680aeabaa768bd61d8"
+    },
+    {
+      "name": "OPP-14-AR:evidence-hash:EVID-DETAIL-GASTAT-INFLATION",
+      "status": "PASS",
+      "evidence": "4933c3354ccd96f61c88e5618c15951b41e7b7c467f424f771a6b2d946976a60"
+    },
+    {
+      "name": "OPP-14-AR:evidence-hash:EVID-DETAIL-BUILDING-PERMITS",
+      "status": "PASS",
+      "evidence": "4c14653f4910440c2c3ceae6ce0f840e744d9ed4c552b1a898831874c6ebf9f7"
+    },
+    {
+      "name": "OPP-14-AR:evidence-hash:EVID-DETAIL-TOURISM-OCCUPANCY-RATE-MONTHLY",
+      "status": "PASS",
+      "evidence": "bee1d977bd0160d3eebdfbb1a816e426fb9131e762462e27be69cac580947af0"
+    },
+    {
+      "name": "OPP-14-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 19
+    },
+    {
+      "name": "OPP-14-AR:opp-no-cross-matrix",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-14-AR:opportunity-contracts",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-14-AR:opportunity-fields:OPP14-MONTHLY-WATCH",
+      "status": "PASS",
+      "evidence": "OPP14-MONTHLY-WATCH"
+    },
+    {
+      "name": "OPP-14-AR:payment-status:OPP14-MONTHLY-WATCH",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-14-AR:opp-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-15-AR:corpus-row",
+      "status": "PASS",
+      "evidence": "OPP-15-AR"
+    },
+    {
+      "name": "OPP-15-AR:exact-prompt",
+      "status": "PASS",
+      "evidence": "byte-equal prompt"
+    },
+    {
+      "name": "OPP-15-AR:prompt-hash",
+      "status": "PASS",
+      "evidence": "8bfc4bb8c840b6bb500b77dd3f9901fedbd74082c9dd7cf65489896d9177a072"
+    },
+    {
+      "name": "OPP-15-AR:answer-language",
+      "status": "PASS",
+      "evidence": "ar"
+    },
+    {
+      "name": "OPP-15-AR:terminal-state",
+      "status": "PASS",
+      "evidence": "CLOSED_DOCUMENTED_NOT_COMPUTABLE"
+    },
+    {
+      "name": "OPP-15-AR:tailored-arabic-answer",
+      "status": "PASS",
+      "evidence": 1171
+    },
+    {
+      "name": "OPP-15-AR:answer-hash",
+      "status": "PASS",
+      "evidence": "5be86cf3ef802083a6a5f2244caa0580bbc1ea98be1b1b1bc4dac0fc43663580"
+    },
+    {
+      "name": "OPP-15-AR:reported-facts-array",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-15-AR:calculations-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-15-AR:inferences-array",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-15-AR:limitations",
+      "status": "PASS",
+      "evidence": 1
+    },
+    {
+      "name": "OPP-15-AR:atomic-claims",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-15-AR:atomic-resolution",
+      "status": "PASS",
+      "evidence": [
+        "VERIFIED",
+        "VERIFIED",
+        "VERIFIED"
+      ]
+    },
+    {
+      "name": "OPP-15-AR:zero-unresolved-and-incorrect",
+      "status": "PASS",
+      "evidence": {
+        "accepted_terminal_state": true,
+        "all_expected_behaviors_pass": true,
+        "central_unresolved_claims": 0,
+        "confirmed_incorrect_claims": 0,
+        "fact_calculation_inference_separated": true,
+        "no_proxy_silently_substituted": true,
+        "no_unsupported_causality": true,
+        "evidence_paths_and_hashes_present": true
+      }
+    },
+    {
+      "name": "OPP-15-AR:contract-check",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "OPP-15-AR:expected-behaviors",
+      "status": "PASS",
+      "evidence": [
+        "name_buyer",
+        "name_decision",
+        "cite_dataset",
+        "state_data_gap",
+        "rights_gate"
+      ]
+    },
+    {
+      "name": "OPP-15-AR:evidence-refs",
+      "status": "PASS",
+      "evidence": 9
+    },
+    {
+      "name": "OPP-15-AR:evidence-hash:EVID-PRODUCT-PREFILTER",
+      "status": "PASS",
+      "evidence": "c75534afa69383c6d616b99b236d89cbec7f6f6eb419bdc1965f796dc85ecda0"
+    },
+    {
+      "name": "OPP-15-AR:evidence-hash:EVID-TRUST-SUMMARY",
+      "status": "PASS",
+      "evidence": "c9aa33524db674163819bf5f4d1ffbd1c8e6f43b31c7b1ba07b7546a2a704395"
+    },
+    {
+      "name": "OPP-15-AR:evidence-hash:EVID-REGIONAL-SUMMARY",
+      "status": "PASS",
+      "evidence": "76e5ac89a0d8e7b0a14bc86549c38efc9702ee13092aeb5ebe2e1cbca7c772ef"
+    },
+    {
+      "name": "OPP-15-AR:evidence-hash:EVID-RADAR-SUMMARY",
+      "status": "PASS",
+      "evidence": "5206aeab038c2ba0683271fcb953ac529ec879e737dc992e86070f730bbc1476"
+    },
+    {
+      "name": "OPP-15-AR:evidence-hash:EVID-UNIT-ECONOMICS",
+      "status": "PASS",
+      "evidence": "ae3213224ad35183e7a84d7e89c605d0e039227113c671c8aee8bf2f74e17985"
+    },
+    {
+      "name": "OPP-15-AR:evidence-hash:EVID-PRICING-READINESS",
+      "status": "PASS",
+      "evidence": "4dafd9d6c8d0216f9016432fbdd498307973226ee24a4ca60d942649521402df"
+    },
+    {
+      "name": "OPP-15-AR:evidence-hash:EVID-MARKET-EVIDENCE",
+      "status": "PASS",
+      "evidence": "87d86ffcc5b3d5c916c74ec4c818b8e46f483d1978d42522859a31833ccad940"
+    },
+    {
+      "name": "OPP-15-AR:evidence-hash:EVID-RIGHTS-SUMMARY",
+      "status": "PASS",
+      "evidence": "f35d11394720ec3b74f1b4787bf0e3ee2d35c03e8ae4856804795f8287e35992"
+    },
+    {
+      "name": "OPP-15-AR:evidence-hash:EVID-RIGHTS-MATRIX",
+      "status": "PASS",
+      "evidence": "2094b1f190a9dcee58f0eb483e81be7cdc90f82b9967438dbc563a1a8b111a11"
+    },
+    {
+      "name": "OPP-15-AR:all-citations-resolve",
+      "status": "PASS",
+      "evidence": 24
+    },
+    {
+      "name": "OPP-15-AR:opp-no-cross-matrix",
+      "status": "PASS",
+      "evidence": 0
+    },
+    {
+      "name": "OPP-15-AR:opportunity-contracts",
+      "status": "PASS",
+      "evidence": 3
+    },
+    {
+      "name": "OPP-15-AR:opportunity-fields:OPP15-CAND-AUDIT",
+      "status": "PASS",
+      "evidence": "OPP15-CAND-AUDIT"
+    },
+    {
+      "name": "OPP-15-AR:payment-status:OPP15-CAND-AUDIT",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-15-AR:opportunity-fields:OPP15-CAND-RADAR",
+      "status": "PASS",
+      "evidence": "OPP15-CAND-RADAR"
+    },
+    {
+      "name": "OPP-15-AR:payment-status:OPP15-CAND-RADAR",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-15-AR:opportunity-fields:OPP15-CAND-REGION",
+      "status": "PASS",
+      "evidence": "OPP15-CAND-REGION"
+    },
+    {
+      "name": "OPP-15-AR:payment-status:OPP15-CAND-REGION",
+      "status": "PASS",
+      "evidence": "NOT_TESTED"
+    },
+    {
+      "name": "OPP-15-AR:opp-required-behaviors",
+      "status": "PASS",
+      "evidence": true
+    },
+    {
+      "name": "X-03:no-building-permit-substitution",
+      "status": "PASS",
+      "evidence": "housing_tenure only"
+    },
+    {
+      "name": "X-07:no-establishment-usage-substitution",
+      "status": "PASS",
+      "evidence": "employment gap preserved"
+    },
+    {
+      "name": "X-05:recompute-sales",
+      "status": "PASS",
+      "evidence": 13.636095633488821
+    },
+    {
+      "name": "X-05:recompute-transactions",
+      "status": "PASS",
+      "evidence": 11.410684900941304
+    },
+    {
+      "name": "X-05:recompute-inflation",
+      "status": "PASS",
+      "evidence": 0.7259818335093593
+    },
+    {
+      "name": "OPP-15:no-rank-contract",
+      "status": "PASS",
+      "evidence": {
+        "status": "NO_RANK",
+        "requested_count": 10,
+        "eligible_comparable_count": 0,
+        "reasons_ar": [
+          "ثلاث فرص فقط اختبرت داخليًا، لا عشر.",
+          "لا دليل ألم أو دفع أو أداء توزيع من مشترين.",
+          "لا clearance تجاري دقيق لأي dataset.",
+          "لا rubric أو أوزان مسجلة مسبقًا للأبعاد الستة."
+        ],
+        "evidence_bounded_dispositions": [
+          {
+            "opportunity": "Data Trust Audit",
+            "disposition": "SURVIVES_INTERNAL_TRUTH_GATE_NOT_MARKET_RANK"
+          },
+          {
+            "opportunity": "Saudi Release Radar",
+            "disposition": "HOLD_OR_KILL_PENDING_REAL_HUMAN_EFFORT"
+          },
+          {
+            "opportunity": "One-Decision Regional Brief",
+            "disposition": "KILL_CURRENT_CAPTURE_FOR_RANKING"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OPP-01-vs-OPP-15:distinct",
+      "status": "PASS",
+      "evidence": [
+        "4baf34052b58b924dafe6cfd89d31dcba5a356caec149e243380775f410a733b",
+        "5be86cf3ef802083a6a5f2244caa0580bbc1ea98be1b1b1bc4dac0fc43663580"
+      ]
+    }
+  ],
+  "errors": []
+}

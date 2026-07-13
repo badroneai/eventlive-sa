@@ -1,0 +1,292 @@
+{
+  "annotations": {
+    "subtopic_ar": "الإعاقة",
+    "table_en": "Percentage Distribution of Individuals with Disabilities Aged 15 Years and Above by Employment Status and Gender - Annual",
+    "source_link": "https://www.stats.gov.sa/en/statistics-tabs/-/categories/123728?tab=436312&category=123728",
+    "topic_ar": "المؤشرات الاجتماعية",
+    "topic_en": "Social Indicators",
+    "subtopic_en": "Disabilities",
+    "source_name_ar": "الهيئة العامة للإحصاء",
+    "source_name": "General Authority for Statistics (GASTAT)",
+    "table_ar": "التوزيع النسبي للأشخاص ذوي الإعاقة للفئة العمرية 15 سنة فأكثر حسب الحالة العملية والجنس - سنوي"
+  },
+  "page": {
+    "limit": 33,
+    "offset": 0,
+    "total": 33
+  },
+  "columns": [
+    "Sex ID",
+    "Sex",
+    "Work Status Name ID",
+    "Work Status Name",
+    "Year",
+    "Percentage"
+  ],
+  "data": [
+    {
+      "Sex ID": 1,
+      "Sex": "Male",
+      "Work Status Name ID": 1,
+      "Work Status Name": "Other",
+      "Year": 2023,
+      "Percentage": 9.634439468383789
+    },
+    {
+      "Sex ID": 1,
+      "Sex": "Male",
+      "Work Status Name ID": 2,
+      "Work Status Name": "Paid Employee",
+      "Year": 2023,
+      "Percentage": 21.266582489013672
+    },
+    {
+      "Sex ID": 1,
+      "Sex": "Male",
+      "Work Status Name ID": 3,
+      "Work Status Name": "Helper (without pay) in a family business",
+      "Year": 2023,
+      "Percentage": 0.38719820976257324
+    },
+    {
+      "Sex ID": 1,
+      "Sex": "Male",
+      "Work Status Name ID": 4,
+      "Work Status Name": "Employer (with hired employees)",
+      "Year": 2023,
+      "Percentage": 0.9049244523048401
+    },
+    {
+      "Sex ID": 1,
+      "Sex": "Male",
+      "Work Status Name ID": 5,
+      "Work Status Name": "Self-employed (without hired employees)",
+      "Year": 2023,
+      "Percentage": 0.6040419340133667
+    },
+    {
+      "Sex ID": 1,
+      "Sex": "Male",
+      "Work Status Name ID": 6,
+      "Work Status Name": "Unemployed already worked",
+      "Year": 2023,
+      "Percentage": 4.451838970184326
+    },
+    {
+      "Sex ID": 1,
+      "Sex": "Male",
+      "Work Status Name ID": 7,
+      "Work Status Name": "Unemployed has Never Worked",
+      "Year": 2023,
+      "Percentage": 8.392363548278809
+    },
+    {
+      "Sex ID": 1,
+      "Sex": "Male",
+      "Work Status Name ID": 8,
+      "Work Status Name": "Free for Housework",
+      "Year": 2023,
+      "Percentage": 0.47513332962989807
+    },
+    {
+      "Sex ID": 1,
+      "Sex": "Male",
+      "Work Status Name ID": 9,
+      "Work Status Name": "Retired",
+      "Year": 2023,
+      "Percentage": 33.26664352416992
+    },
+    {
+      "Sex ID": 1,
+      "Sex": "Male",
+      "Work Status Name ID": 10,
+      "Work Status Name": "Unable to Work",
+      "Year": 2023,
+      "Percentage": 20.468278884887695
+    },
+    {
+      "Sex ID": 1,
+      "Sex": "Male",
+      "Work Status Name ID": 11,
+      "Work Status Name": "Volunteer",
+      "Year": 2023,
+      "Percentage": 0.14855404198169708
+    },
+    {
+      "Sex ID": 2,
+      "Sex": "Female",
+      "Work Status Name ID": 1,
+      "Work Status Name": "Other",
+      "Year": 2023,
+      "Percentage": 9.66661548614502
+    },
+    {
+      "Sex ID": 2,
+      "Sex": "Female",
+      "Work Status Name ID": 2,
+      "Work Status Name": "Paid Employee",
+      "Year": 2023,
+      "Percentage": 4.662676811218262
+    },
+    {
+      "Sex ID": 2,
+      "Sex": "Female",
+      "Work Status Name ID": 3,
+      "Work Status Name": "Helper (without pay) in a family business",
+      "Year": 2023,
+      "Percentage": 0.09620560705661774
+    },
+    {
+      "Sex ID": 2,
+      "Sex": "Female",
+      "Work Status Name ID": 4,
+      "Work Status Name": "Employer (with hired employees)",
+      "Year": 2023,
+      "Percentage": 0.16351591050624847
+    },
+    {
+      "Sex ID": 2,
+      "Sex": "Female",
+      "Work Status Name ID": 5,
+      "Work Status Name": "Self-employed (without hired employees)",
+      "Year": 2023,
+      "Percentage": 0.1480625569820404
+    },
+    {
+      "Sex ID": 2,
+      "Sex": "Female",
+      "Work Status Name ID": 6,
+      "Work Status Name": "Unemployed already worked",
+      "Year": 2023,
+      "Percentage": 1.1540900468826294
+    },
+    {
+      "Sex ID": 2,
+      "Sex": "Female",
+      "Work Status Name ID": 7,
+      "Work Status Name": "Unemployed has Never Worked",
+      "Year": 2023,
+      "Percentage": 10.300196647644043
+    },
+    {
+      "Sex ID": 2,
+      "Sex": "Female",
+      "Work Status Name ID": 8,
+      "Work Status Name": "Free for Housework",
+      "Year": 2023,
+      "Percentage": 34.42658233642578
+    },
+    {
+      "Sex ID": 2,
+      "Sex": "Female",
+      "Work Status Name ID": 9,
+      "Work Status Name": "Retired",
+      "Year": 2023,
+      "Percentage": 2.946387529373169
+    },
+    {
+      "Sex ID": 2,
+      "Sex": "Female",
+      "Work Status Name ID": 10,
+      "Work Status Name": "Unable to Work",
+      "Year": 2023,
+      "Percentage": 36.17799377441406
+    },
+    {
+      "Sex ID": 2,
+      "Sex": "Female",
+      "Work Status Name ID": 11,
+      "Work Status Name": "Volunteer",
+      "Year": 2023,
+      "Percentage": 0.2576741576194763
+    },
+    {
+      "Sex ID": 3,
+      "Sex": "Total",
+      "Work Status Name ID": 1,
+      "Work Status Name": "Other",
+      "Year": 2023,
+      "Percentage": 9.648956298828125
+    },
+    {
+      "Sex ID": 3,
+      "Sex": "Total",
+      "Work Status Name ID": 2,
+      "Work Status Name": "Paid Employee",
+      "Year": 2023,
+      "Percentage": 13.775311470031738
+    },
+    {
+      "Sex ID": 3,
+      "Sex": "Total",
+      "Work Status Name ID": 3,
+      "Work Status Name": "Helper (without pay) in a family business",
+      "Year": 2023,
+      "Percentage": 0.2559095621109009
+    },
+    {
+      "Sex ID": 3,
+      "Sex": "Total",
+      "Work Status Name ID": 4,
+      "Work Status Name": "Employer (with hired employees)",
+      "Year": 2023,
+      "Percentage": 0.5704193115234375
+    },
+    {
+      "Sex ID": 3,
+      "Sex": "Total",
+      "Work Status Name ID": 5,
+      "Work Status Name": "Self-employed (without hired employees)",
+      "Year": 2023,
+      "Percentage": 0.39831531047821045
+    },
+    {
+      "Sex ID": 3,
+      "Sex": "Total",
+      "Work Status Name ID": 6,
+      "Work Status Name": "Unemployed already worked",
+      "Year": 2023,
+      "Percentage": 2.9639763832092285
+    },
+    {
+      "Sex ID": 3,
+      "Sex": "Total",
+      "Work Status Name ID": 7,
+      "Work Status Name": "Unemployed has Never Worked",
+      "Year": 2023,
+      "Percentage": 9.253130912780762
+    },
+    {
+      "Sex ID": 3,
+      "Sex": "Total",
+      "Work Status Name ID": 8,
+      "Work Status Name": "Free for Housework",
+      "Year": 2023,
+      "Percentage": 15.79318618774414
+    },
+    {
+      "Sex ID": 3,
+      "Sex": "Total",
+      "Work Status Name ID": 9,
+      "Work Status Name": "Retired",
+      "Year": 2023,
+      "Percentage": 19.586894989013672
+    },
+    {
+      "Sex ID": 3,
+      "Sex": "Total",
+      "Work Status Name ID": 10,
+      "Work Status Name": "Unable to Work",
+      "Year": 2023,
+      "Percentage": 27.556114196777344
+    },
+    {
+      "Sex ID": 3,
+      "Sex": "Total",
+      "Work Status Name ID": 11,
+      "Work Status Name": "Volunteer",
+      "Year": 2023,
+      "Percentage": 0.1977863311767578
+    }
+  ]
+}
