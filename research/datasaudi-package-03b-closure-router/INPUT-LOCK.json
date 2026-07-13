@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "package_id": "datasaudi-package-03b-closure-router",
+  "locked_at_utc": "2026-07-13T08:54:08.247Z",
+  "policy": "Read-only derivation from sealed Package 03/03A evidence. No live request and no adjudication mutation.",
+  "package_03": {
+    "root": "research/datasaudi-package-03",
+    "tree_sha256": "e8cf1fe8c7aeea306a081effc78b398c8d5621557cc51e5720f83a1629593862",
+    "artifact_count": 197,
+    "manifest_sha256": "4751b7a72bb4cff1cd8d86cabb28c5bf1ac85343688faf8758284821b50adbb5"
+  },
+  "package_03a": {
+    "root": "research/datasaudi-package-03a-question-closure",
+    "tree_sha256": "2a048ed1f7424d66ed849647c32fc7dfe9c05fc168fa226c02c7457a114b2bd4",
+    "artifact_count": 34,
+    "manifest_sha256": "8d5dce3a8dc90971f6f209738714b74a4455119b181a7e56c401424433ee8c49"
+  },
+  "inputs": [
+    {
+      "path": "research/datasaudi-insaights/04-question-corpus/questions.jsonl",
+      "sha256": "d56e215c901580389b1b3a14a5904aa9ecad3b949bfe29746bc6ee38994a33f2",
+      "size_bytes": 245823
+    },
+    {
+      "path": "research/datasaudi-package-03/02-source-oracle-and-evidence-vault/gold-case-specs.jsonl",
+      "sha256": "9f1e32add47ddb750b18972acf40666a0a293fd46c273ddc488c0df4826b67f8",
+      "size_bytes": 193579
+    },
+    {
+      "path": "research/datasaudi-package-03/02-source-oracle-and-evidence-vault/oracle-evidence.jsonl",
+      "sha256": "cd3114bd544a6facd2c7913230f4c9ce72d8cc21e54cbf400b582281c80a112e",
+      "size_bytes": 119344
+    },
+    {
+      "path": "research/datasaudi-package-03/02-source-oracle-and-evidence-vault/oracle-manifest.json",
+      "sha256": "0ca2240db66762cf24ce989813a7fc0169bd84058b24b5ac4827d975b20bd0d6",
+      "size_bytes": 1599
+    },
+    {
+      "path": "research/datasaudi-package-03/04-proposition-verifier-and-adjudication/runs/truth-run-20260713T021707685Z-752501f6/adjudication.jsonl",
+      "sha256": "6fb44629700619d3b48b5a21525ddcc24766aca9388c4d5562c8666de41a211b",
+      "size_bytes": 27020
+    },
+    {
+      "path": "research/datasaudi-package-03/04-proposition-verifier-and-adjudication/runs/truth-run-20260713T021707685Z-752501f6/answer-accounting.jsonl",
+      "sha256": "b9bc503c72337979d6167eb0d03e82091a41b2513b2816a62f1c7d58f6aa2700",
+      "size_bytes": 11405
+    },
+    {
+      "path": "research/datasaudi-package-03/04-proposition-verifier-and-adjudication/runs/truth-run-20260713T021707685Z-752501f6/propositions.jsonl",
+      "sha256": "0af6cfeab1915957c3b649f0b81aa4858831c077ffa5062e49fa6ef8f507bc96",
+      "size_bytes": 335987
+    },
+    {
+      "path": "research/datasaudi-package-03/04-proposition-verifier-and-adjudication/runs/truth-run-20260713T021707685Z-752501f6/verification-results.jsonl",
+      "sha256": "3403603f91a86f82ff6be5936f0ce0731954d589c7e677809f36497f94e7ff58",
+      "size_bytes": 195195
+    },
+    {
+      "path": "research/datasaudi-package-03/04-proposition-verifier-and-adjudication/truth-closure-summary.json",
+      "sha256": "bf52aa89cd61735e869de95346f97570850e04b580a5b2eb3ce8b88888ba9677",
+      "size_bytes": 5884
+    },
+    {
+      "path": "research/datasaudi-package-03/05-quota-safe-live-retry/retry-queue.jsonl",
+      "sha256": "b3a9da1599c65a1f3cef936b9deda2aea8c3bc935724d2cf43b2bf30613de9ba",
+      "size_bytes": 65824
+    },
+    {
+      "path": "research/datasaudi-package-03/12-stage-gate-manifest-and-closeout/package-03-closeout.json",
+      "sha256": "43bcba580d51f45afac1e03cf033dbcc72157561f49fad6ab77cbbf83d16a35c",
+      "size_bytes": 5949
+    },
+    {
+      "path": "research/datasaudi-package-03/PACKAGE_MANIFEST.json",
+      "sha256": "4751b7a72bb4cff1cd8d86cabb28c5bf1ac85343688faf8758284821b50adbb5",
+      "size_bytes": 64410
+    },
+    {
+      "path": "research/datasaudi-package-03a-question-closure/03-adjudication/execution-summary.json",
+      "sha256": "fc00e01f15e90fc7cca6158d7dc25693b76b182276b37701e6b1955bf9706ae3",
+      "size_bytes": 989
+    },
+    {
+      "path": "research/datasaudi-package-03a-question-closure/03-adjudication/next-variant-queue.jsonl",
+      "sha256": "852477feed47f7da0292516ac5c73b5c6f46eccf7ff2ab6078d0ac5e7bcf6ca4",
+      "size_bytes": 4994
+    },
+    {
+      "path": "research/datasaudi-package-03a-question-closure/03-adjudication/remaining-unsent-queue.jsonl",
+      "sha256": "97fff1ac88284926508dc5c6667e4e6ee37a67bfd1124c3ef1eb73842e8e27d1",
+      "size_bytes": 51096
+    },
+    {
+      "path": "research/datasaudi-package-03a-question-closure/04-closeout/round-closeout.json",
+      "sha256": "fa69f8b214c5f1578660c1a10a71c3409284e84f713d74d6f7354436eeb7ed24",
+      "size_bytes": 1819
+    },
+    {
+      "path": "research/datasaudi-package-03a-question-closure/PACKAGE_MANIFEST.json",
+      "sha256": "8d5dce3a8dc90971f6f209738714b74a4455119b181a7e56c401424433ee8c49",
+      "size_bytes": 7728
+    }
+  ],
+  "input_fingerprint": "c653acf0108e636510e8e8a55859816a1dee24ef6426c465a1888814cb7d7624"
+}

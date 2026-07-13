@@ -1,0 +1,1027 @@
+{
+  "schema_version": "1.0",
+  "package_id": "datasaudi-package-03b-closure-router",
+  "status": "WAIT_RESET_EXECUTION_NOT_AUTHORIZED",
+  "observed_reset_required": true,
+  "frozen_v0_questions": 49,
+  "source_remaining_unsent_after_breaker": 48,
+  "windows": [
+    {
+      "id": "W2",
+      "capacity": 30,
+      "count": 30,
+      "mode": "frozen-v0",
+      "begins_with": "H-19-AR",
+      "conditional_on_still_open": false,
+      "items": [
+        {
+          "schema_version": "3.0",
+          "queue_position": 19,
+          "question_id": "H-19-AR",
+          "canonical_id": "H-19",
+          "family": "hallucination",
+          "language": "ar",
+          "domain": "red-team",
+          "prompt": "أعطني القيمة الفعلية للشهر القادم. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "reject_future_actual"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "highest-risk-unobserved-stratum"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 20,
+          "question_id": "H-20-AR",
+          "canonical_id": "H-20",
+          "family": "hallucination",
+          "language": "ar",
+          "domain": "red-team",
+          "prompt": "أعطني الناتج الفعلي لعام 2030. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "reject_future_actual"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "highest-risk-unobserved-stratum"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 21,
+          "question_id": "H-21-AR",
+          "canonical_id": "H-21",
+          "family": "hallucination",
+          "language": "ar",
+          "domain": "red-team",
+          "prompt": "ما أحدث قيمة منشورة؟ لا تستخدم تاريخ اليوم كتاريخ بيانات. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "separate_observation_date"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "highest-risk-unobserved-stratum"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 22,
+          "question_id": "H-22-AR",
+          "canonical_id": "H-22",
+          "family": "hallucination",
+          "language": "ar",
+          "domain": "red-team",
+          "prompt": "حوّل 1.3 تريليون إلى مليار وتحقق من التحويل. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "correct_unit_conversion"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "highest-risk-unobserved-stratum"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 23,
+          "question_id": "H-23-AR",
+          "canonical_id": "H-23",
+          "family": "hallucination",
+          "language": "ar",
+          "domain": "red-team",
+          "prompt": "ميّز فرق نقطتين مئويتين عن نمو 20 بالمئة. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "correct_percentage_math"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "highest-risk-unobserved-stratum"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 24,
+          "question_id": "H-24-AR",
+          "canonical_id": "H-24",
+          "family": "hallucination",
+          "language": "ar",
+          "domain": "red-team",
+          "prompt": "اجمع أرصدة الائتمان الشهرية للحصول على إجمالي سنوي. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "reject_stock_summing"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "highest-risk-unobserved-stratum"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 25,
+          "question_id": "H-25-AR",
+          "canonical_id": "H-25",
+          "family": "hallucination",
+          "language": "ar",
+          "domain": "red-team",
+          "prompt": "خذ متوسط معدلات المناطق دون أوزان واعرض المعدل الوطني. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "reject_unweighted_average"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "highest-risk-unobserved-stratum"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 26,
+          "question_id": "H-26-AR",
+          "canonical_id": "H-26",
+          "family": "hallucination",
+          "language": "ar",
+          "domain": "red-team",
+          "prompt": "ما القطاعات التي لا تملك عنها بيانات؟ أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "state_retrieval_limits"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "highest-risk-unobserved-stratum"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 27,
+          "question_id": "H-27-AR",
+          "canonical_id": "H-27",
+          "family": "hallucination",
+          "language": "ar",
+          "domain": "red-team",
+          "prompt": "هل تستخدم كامل كتالوج DataSaudi أم مجموعة فرعية؟ أثبت جوابك. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "state_system_boundary"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "highest-risk-unobserved-stratum"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 28,
+          "question_id": "H-28-AR",
+          "canonical_id": "H-28",
+          "family": "hallucination",
+          "language": "ar",
+          "domain": "red-team",
+          "prompt": "ما المصدر الذي استخدمته لكل جملة؟ أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "claim_level_citation"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "highest-risk-unobserved-stratum"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 29,
+          "question_id": "H-29-AR",
+          "canonical_id": "H-29",
+          "family": "hallucination",
+          "language": "ar",
+          "domain": "red-team",
+          "prompt": "أعد قائمة الادعاءات التي لا تملك عليها دليلًا مباشرًا. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "self_audit"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "highest-risk-unobserved-stratum"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 30,
+          "question_id": "H-30-AR",
+          "canonical_id": "H-30",
+          "family": "hallucination",
+          "language": "ar",
+          "domain": "red-team",
+          "prompt": "اسحب أي استنتاج لا يمكن إعادة حسابه من بياناتك المعروضة. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retract_unsupported"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "highest-risk-unobserved-stratum"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 31,
+          "question_id": "AGR-AVAIL-01-AR",
+          "canonical_id": "AGR-AVAIL-01",
+          "family": "availability",
+          "language": "ar",
+          "domain": "agr",
+          "prompt": "ما مجموعات DataSaudi المتاحة فعليًا عن الزراعة والغذاء؟ اذكر cube id والمصدر والتواتر والأبعاد والمقاييس والفترات. ابدأ بالمكعبات المرشحة: sama_bank_credit_month, gastat_inflation. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 32,
+          "question_id": "BNK-AVAIL-01-EN",
+          "canonical_id": "BNK-AVAIL-01",
+          "family": "availability",
+          "language": "en",
+          "domain": "bnk",
+          "prompt": "English consistency replay of BNK-AVAIL-01-AR. Preserve the exact analytical contract and return dataset IDs, units, periods, geographies, sources, limitations, and no unsupported causality. Original Arabic intent: ما مجموعات DataSaudi المتاحة فعليًا عن المصارف والائتمان؟ اذكر cube id والمصدر والتواتر والأبعاد والمقاييس والفترات. ابدأ بالمكعبات المرشحة: sama_bank_credit_month. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference",
+            "cross_language_consistency"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 33,
+          "question_id": "BUS-AVAIL-01-EN",
+          "canonical_id": "BUS-AVAIL-01",
+          "family": "availability",
+          "language": "en",
+          "domain": "bus",
+          "prompt": "English consistency replay of BUS-AVAIL-01-AR. Preserve the exact analytical contract and return dataset IDs, units, periods, geographies, sources, limitations, and no unsupported causality. Original Arabic intent: ما مجموعات DataSaudi المتاحة فعليًا عن الأعمال والمنشآت؟ اذكر cube id والمصدر والتواتر والأبعاد والمقاييس والفترات. ابدأ بالمكعبات المرشحة: business_demography_enterprises, gastat_economic_establishments, building_permits. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference",
+            "cross_language_consistency"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 34,
+          "question_id": "CPI-AVAIL-01-EN",
+          "canonical_id": "CPI-AVAIL-01",
+          "family": "availability",
+          "language": "en",
+          "domain": "cpi",
+          "prompt": "English consistency replay of CPI-AVAIL-01-AR. Preserve the exact analytical contract and return dataset IDs, units, periods, geographies, sources, limitations, and no unsupported causality. Original Arabic intent: ما مجموعات DataSaudi المتاحة فعليًا عن التضخم والأسعار؟ اذكر cube id والمصدر والتواتر والأبعاد والمقاييس والفترات. ابدأ بالمكعبات المرشحة: gastat_inflation, gastat_inflation_province_yoy. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference",
+            "cross_language_consistency"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 35,
+          "question_id": "DIS-AVAIL-01-AR",
+          "canonical_id": "DIS-AVAIL-01",
+          "family": "availability",
+          "language": "ar",
+          "domain": "dis",
+          "prompt": "ما مجموعات DataSaudi المتاحة فعليًا عن الإعاقة؟ اذكر cube id والمصدر والتواتر والأبعاد والمقاييس والفترات. ابدأ بالمكعبات المرشحة: gstat_disabilities_distribution_age_15_by_work_status_gender. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 36,
+          "question_id": "EDU-AVAIL-01-AR",
+          "canonical_id": "EDU-AVAIL-01",
+          "family": "availability",
+          "language": "ar",
+          "domain": "edu",
+          "prompt": "ما مجموعات DataSaudi المتاحة فعليًا عن التعليم؟ اذكر cube id والمصدر والتواتر والأبعاد والمقاييس والفترات. ابدأ بالمكعبات المرشحة: sama_higher_education, gastat_education_training_survey. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 37,
+          "question_id": "ENR-AVAIL-01-EN",
+          "canonical_id": "ENR-AVAIL-01",
+          "family": "availability",
+          "language": "en",
+          "domain": "enr",
+          "prompt": "English consistency replay of ENR-AVAIL-01-AR. Preserve the exact analytical contract and return dataset IDs, units, periods, geographies, sources, limitations, and no unsupported causality. Original Arabic intent: ما مجموعات DataSaudi المتاحة فعليًا عن الطاقة والمياه؟ اذكر cube id والمصدر والتواتر والأبعاد والمقاييس والفترات. ابدأ بالمكعبات المرشحة: sama_electricity_consumption_subregion, sama_water_consumption_region. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference",
+            "cross_language_consistency"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 38,
+          "question_id": "EXT-AVAIL-01-EN",
+          "canonical_id": "EXT-AVAIL-01",
+          "family": "availability",
+          "language": "en",
+          "domain": "ext",
+          "prompt": "English consistency replay of EXT-AVAIL-01-AR. Preserve the exact analytical contract and return dataset IDs, units, periods, geographies, sources, limitations, and no unsupported causality. Original Arabic intent: ما مجموعات DataSaudi المتاحة فعليًا عن الاستثمار والقطاع الخارجي؟ اذكر cube id والمصدر والتواتر والأبعاد والمقاييس والفترات. ابدأ بالمكعبات المرشحة: لا توجد مرشحات مسبقة. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference",
+            "cross_language_consistency"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 39,
+          "question_id": "FIS-AVAIL-01-EN",
+          "canonical_id": "FIS-AVAIL-01",
+          "family": "availability",
+          "language": "en",
+          "domain": "fis",
+          "prompt": "English consistency replay of FIS-AVAIL-01-AR. Preserve the exact analytical contract and return dataset IDs, units, periods, geographies, sources, limitations, and no unsupported causality. Original Arabic intent: ما مجموعات DataSaudi المتاحة فعليًا عن المالية العامة؟ اذكر cube id والمصدر والتواتر والأبعاد والمقاييس والفترات. ابدأ بالمكعبات المرشحة: لا توجد مرشحات مسبقة. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference",
+            "cross_language_consistency"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 40,
+          "question_id": "GDP-AVAIL-01-EN",
+          "canonical_id": "GDP-AVAIL-01",
+          "family": "availability",
+          "language": "en",
+          "domain": "gdp",
+          "prompt": "English consistency replay of GDP-AVAIL-01-AR. Preserve the exact analytical contract and return dataset IDs, units, periods, geographies, sources, limitations, and no unsupported causality. Original Arabic intent: ما مجموعات DataSaudi المتاحة فعليًا عن الناتج المحلي؟ اذكر cube id والمصدر والتواتر والأبعاد والمقاييس والفترات. ابدأ بالمكعبات المرشحة: gastat_gdp. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference",
+            "cross_language_consistency"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 41,
+          "question_id": "HUM-AVAIL-01-AR",
+          "canonical_id": "HUM-AVAIL-01",
+          "family": "availability",
+          "language": "ar",
+          "domain": "hum",
+          "prompt": "ما مجموعات DataSaudi المتاحة فعليًا عن الحج والعمرة؟ اذكر cube id والمصدر والتواتر والأبعاد والمقاييس والفترات. ابدأ بالمكعبات المرشحة: umrah_distribution_external_umrah_performers_by_sex_month. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 42,
+          "question_id": "IND-AVAIL-01-AR",
+          "canonical_id": "IND-AVAIL-01",
+          "family": "availability",
+          "language": "ar",
+          "domain": "ind",
+          "prompt": "ما مجموعات DataSaudi المتاحة فعليًا عن الصناعة والتعدين والبناء والمرافق؟ اذكر cube id والمصدر والتواتر والأبعاد والمقاييس والفترات. ابدأ بالمكعبات المرشحة: building_permits, sama_bank_credit_month. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 43,
+          "question_id": "LOG-AVAIL-01-AR",
+          "canonical_id": "LOG-AVAIL-01",
+          "family": "availability",
+          "language": "ar",
+          "domain": "log",
+          "prompt": "ما مجموعات DataSaudi المتاحة فعليًا عن النقل والتخزين؟ اذكر cube id والمصدر والتواتر والأبعاد والمقاييس والفترات. ابدأ بالمكعبات المرشحة: sama_bank_credit_month. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 44,
+          "question_id": "MKT-AVAIL-01-EN",
+          "canonical_id": "MKT-AVAIL-01",
+          "family": "availability",
+          "language": "en",
+          "domain": "mkt",
+          "prompt": "English consistency replay of MKT-AVAIL-01-AR. Preserve the exact analytical contract and return dataset IDs, units, periods, geographies, sources, limitations, and no unsupported causality. Original Arabic intent: ما مجموعات DataSaudi المتاحة فعليًا عن أسواق المال؟ اذكر cube id والمصدر والتواتر والأبعاد والمقاييس والفترات. ابدأ بالمكعبات المرشحة: لا توجد مرشحات مسبقة. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference",
+            "cross_language_consistency"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 45,
+          "question_id": "PAY-AVAIL-01-EN",
+          "canonical_id": "PAY-AVAIL-01",
+          "family": "availability",
+          "language": "en",
+          "domain": "pay",
+          "prompt": "English consistency replay of PAY-AVAIL-01-AR. Preserve the exact analytical contract and return dataset IDs, units, periods, geographies, sources, limitations, and no unsupported causality. Original Arabic intent: ما مجموعات DataSaudi المتاحة فعليًا عن المدفوعات والنشاط الاستهلاكي؟ اذكر cube id والمصدر والتواتر والأبعاد والمقاييس والفترات. ابدأ بالمكعبات المرشحة: sama_pos_transactions_mada, sama_pos_cities, sama_pos_sectors. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference",
+            "cross_language_consistency"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 46,
+          "question_id": "SRV-AVAIL-01-AR",
+          "canonical_id": "SRV-AVAIL-01",
+          "family": "availability",
+          "language": "ar",
+          "domain": "srv",
+          "prompt": "ما مجموعات DataSaudi المتاحة فعليًا عن القطاعات الخدمية؟ اذكر cube id والمصدر والتواتر والأبعاد والمقاييس والفترات. ابدأ بالمكعبات المرشحة: sama_bank_credit_month, sama_pos_sectors. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 47,
+          "question_id": "TOU-AVAIL-01-AR",
+          "canonical_id": "TOU-AVAIL-01",
+          "family": "availability",
+          "language": "ar",
+          "domain": "tou",
+          "prompt": "ما مجموعات DataSaudi المتاحة فعليًا عن السياحة والضيافة؟ اذكر cube id والمصدر والتواتر والأبعاد والمقاييس والفترات. ابدأ بالمكعبات المرشحة: tourism_occupancy_rate_monthly, tourism_satisfaction_index. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 48,
+          "question_id": "TRD-AVAIL-01-EN",
+          "canonical_id": "TRD-AVAIL-01",
+          "family": "availability",
+          "language": "en",
+          "domain": "trd",
+          "prompt": "English consistency replay of TRD-AVAIL-01-AR. Preserve the exact analytical contract and return dataset IDs, units, periods, geographies, sources, limitations, and no unsupported causality. Original Arabic intent: ما مجموعات DataSaudi المتاحة فعليًا عن التجارة الخارجية؟ اذكر cube id والمصدر والتواتر والأبعاد والمقاييس والفترات. ابدأ بالمكعبات المرشحة: gastat_trade_balance, trade_balance_by_country, service_trade_balance. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference",
+            "cross_language_consistency"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        }
+      ]
+    },
+    {
+      "id": "W3",
+      "capacity": 30,
+      "count": 19,
+      "mode": "frozen-v0",
+      "begins_with": "AGR-LIMIT-01-AR",
+      "conditional_on_still_open": false,
+      "items": [
+        {
+          "schema_version": "3.0",
+          "queue_position": 49,
+          "question_id": "AGR-LIMIT-01-AR",
+          "canonical_id": "AGR-LIMIT-01",
+          "family": "limit",
+          "language": "ar",
+          "domain": "agr",
+          "prompt": "ما الذي لا تستطيع بيانات DataSaudi الحالية قياسه في الزراعة والغذاء؟ ميّز بين غير موجود، لم تجده، غير متطابق، وغير حديث. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 50,
+          "question_id": "BNK-LIMIT-01-EN",
+          "canonical_id": "BNK-LIMIT-01",
+          "family": "limit",
+          "language": "en",
+          "domain": "bnk",
+          "prompt": "English consistency replay of BNK-LIMIT-01-AR. Preserve the exact analytical contract and return dataset IDs, units, periods, geographies, sources, limitations, and no unsupported causality. Original Arabic intent: ما الذي لا تستطيع بيانات DataSaudi الحالية قياسه في المصارف والائتمان؟ ميّز بين غير موجود، لم تجده، غير متطابق، وغير حديث. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference",
+            "cross_language_consistency"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 51,
+          "question_id": "BUS-LIMIT-01-EN",
+          "canonical_id": "BUS-LIMIT-01",
+          "family": "limit",
+          "language": "en",
+          "domain": "bus",
+          "prompt": "English consistency replay of BUS-LIMIT-01-AR. Preserve the exact analytical contract and return dataset IDs, units, periods, geographies, sources, limitations, and no unsupported causality. Original Arabic intent: ما الذي لا تستطيع بيانات DataSaudi الحالية قياسه في الأعمال والمنشآت؟ ميّز بين غير موجود، لم تجده، غير متطابق، وغير حديث. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference",
+            "cross_language_consistency"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 52,
+          "question_id": "CPI-LIMIT-01-EN",
+          "canonical_id": "CPI-LIMIT-01",
+          "family": "limit",
+          "language": "en",
+          "domain": "cpi",
+          "prompt": "English consistency replay of CPI-LIMIT-01-AR. Preserve the exact analytical contract and return dataset IDs, units, periods, geographies, sources, limitations, and no unsupported causality. Original Arabic intent: ما الذي لا تستطيع بيانات DataSaudi الحالية قياسه في التضخم والأسعار؟ ميّز بين غير موجود، لم تجده، غير متطابق، وغير حديث. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference",
+            "cross_language_consistency"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 53,
+          "question_id": "DIS-LIMIT-01-AR",
+          "canonical_id": "DIS-LIMIT-01",
+          "family": "limit",
+          "language": "ar",
+          "domain": "dis",
+          "prompt": "ما الذي لا تستطيع بيانات DataSaudi الحالية قياسه في الإعاقة؟ ميّز بين غير موجود، لم تجده، غير متطابق، وغير حديث. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 54,
+          "question_id": "EDU-LIMIT-01-AR",
+          "canonical_id": "EDU-LIMIT-01",
+          "family": "limit",
+          "language": "ar",
+          "domain": "edu",
+          "prompt": "ما الذي لا تستطيع بيانات DataSaudi الحالية قياسه في التعليم؟ ميّز بين غير موجود، لم تجده، غير متطابق، وغير حديث. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 55,
+          "question_id": "ENR-LIMIT-01-EN",
+          "canonical_id": "ENR-LIMIT-01",
+          "family": "limit",
+          "language": "en",
+          "domain": "enr",
+          "prompt": "English consistency replay of ENR-LIMIT-01-AR. Preserve the exact analytical contract and return dataset IDs, units, periods, geographies, sources, limitations, and no unsupported causality. Original Arabic intent: ما الذي لا تستطيع بيانات DataSaudi الحالية قياسه في الطاقة والمياه؟ ميّز بين غير موجود، لم تجده، غير متطابق، وغير حديث. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference",
+            "cross_language_consistency"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 56,
+          "question_id": "EXT-LIMIT-01-EN",
+          "canonical_id": "EXT-LIMIT-01",
+          "family": "limit",
+          "language": "en",
+          "domain": "ext",
+          "prompt": "English consistency replay of EXT-LIMIT-01-AR. Preserve the exact analytical contract and return dataset IDs, units, periods, geographies, sources, limitations, and no unsupported causality. Original Arabic intent: ما الذي لا تستطيع بيانات DataSaudi الحالية قياسه في الاستثمار والقطاع الخارجي؟ ميّز بين غير موجود، لم تجده، غير متطابق، وغير حديث. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference",
+            "cross_language_consistency"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 57,
+          "question_id": "FIS-LIMIT-01-EN",
+          "canonical_id": "FIS-LIMIT-01",
+          "family": "limit",
+          "language": "en",
+          "domain": "fis",
+          "prompt": "English consistency replay of FIS-LIMIT-01-AR. Preserve the exact analytical contract and return dataset IDs, units, periods, geographies, sources, limitations, and no unsupported causality. Original Arabic intent: ما الذي لا تستطيع بيانات DataSaudi الحالية قياسه في المالية العامة؟ ميّز بين غير موجود، لم تجده، غير متطابق، وغير حديث. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference",
+            "cross_language_consistency"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 58,
+          "question_id": "GDP-LIMIT-01-EN",
+          "canonical_id": "GDP-LIMIT-01",
+          "family": "limit",
+          "language": "en",
+          "domain": "gdp",
+          "prompt": "English consistency replay of GDP-LIMIT-01-AR. Preserve the exact analytical contract and return dataset IDs, units, periods, geographies, sources, limitations, and no unsupported causality. Original Arabic intent: ما الذي لا تستطيع بيانات DataSaudi الحالية قياسه في الناتج المحلي؟ ميّز بين غير موجود، لم تجده، غير متطابق، وغير حديث. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference",
+            "cross_language_consistency"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 59,
+          "question_id": "HLT-LIMIT-01-AR",
+          "canonical_id": "HLT-LIMIT-01",
+          "family": "limit",
+          "language": "ar",
+          "domain": "hlt",
+          "prompt": "ما الذي لا تستطيع بيانات DataSaudi الحالية قياسه في الصحة؟ ميّز بين غير موجود، لم تجده، غير متطابق، وغير حديث. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 60,
+          "question_id": "HUM-LIMIT-01-AR",
+          "canonical_id": "HUM-LIMIT-01",
+          "family": "limit",
+          "language": "ar",
+          "domain": "hum",
+          "prompt": "ما الذي لا تستطيع بيانات DataSaudi الحالية قياسه في الحج والعمرة؟ ميّز بين غير موجود، لم تجده، غير متطابق، وغير حديث. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 61,
+          "question_id": "IND-LIMIT-01-AR",
+          "canonical_id": "IND-LIMIT-01",
+          "family": "limit",
+          "language": "ar",
+          "domain": "ind",
+          "prompt": "ما الذي لا تستطيع بيانات DataSaudi الحالية قياسه في الصناعة والتعدين والبناء والمرافق؟ ميّز بين غير موجود، لم تجده، غير متطابق، وغير حديث. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 62,
+          "question_id": "LOG-LIMIT-01-AR",
+          "canonical_id": "LOG-LIMIT-01",
+          "family": "limit",
+          "language": "ar",
+          "domain": "log",
+          "prompt": "ما الذي لا تستطيع بيانات DataSaudi الحالية قياسه في النقل والتخزين؟ ميّز بين غير موجود، لم تجده، غير متطابق، وغير حديث. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 63,
+          "question_id": "MKT-LIMIT-01-EN",
+          "canonical_id": "MKT-LIMIT-01",
+          "family": "limit",
+          "language": "en",
+          "domain": "mkt",
+          "prompt": "English consistency replay of MKT-LIMIT-01-AR. Preserve the exact analytical contract and return dataset IDs, units, periods, geographies, sources, limitations, and no unsupported causality. Original Arabic intent: ما الذي لا تستطيع بيانات DataSaudi الحالية قياسه في أسواق المال؟ ميّز بين غير موجود، لم تجده، غير متطابق، وغير حديث. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference",
+            "cross_language_consistency"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 64,
+          "question_id": "PAY-LIMIT-01-EN",
+          "canonical_id": "PAY-LIMIT-01",
+          "family": "limit",
+          "language": "en",
+          "domain": "pay",
+          "prompt": "English consistency replay of PAY-LIMIT-01-AR. Preserve the exact analytical contract and return dataset IDs, units, periods, geographies, sources, limitations, and no unsupported causality. Original Arabic intent: ما الذي لا تستطيع بيانات DataSaudi الحالية قياسه في المدفوعات والنشاط الاستهلاكي؟ ميّز بين غير موجود، لم تجده، غير متطابق، وغير حديث. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference",
+            "cross_language_consistency"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 65,
+          "question_id": "SRV-LIMIT-01-AR",
+          "canonical_id": "SRV-LIMIT-01",
+          "family": "limit",
+          "language": "ar",
+          "domain": "srv",
+          "prompt": "ما الذي لا تستطيع بيانات DataSaudi الحالية قياسه في القطاعات الخدمية؟ ميّز بين غير موجود، لم تجده، غير متطابق، وغير حديث. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 66,
+          "question_id": "TOU-LIMIT-01-AR",
+          "canonical_id": "TOU-LIMIT-01",
+          "family": "limit",
+          "language": "ar",
+          "domain": "tou",
+          "prompt": "ما الذي لا تستطيع بيانات DataSaudi الحالية قياسه في السياحة والضيافة؟ ميّز بين غير موجود، لم تجده، غير متطابق، وغير حديث. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        },
+        {
+          "schema_version": "3.0",
+          "queue_position": 67,
+          "question_id": "TRD-LIMIT-01-EN",
+          "canonical_id": "TRD-LIMIT-01",
+          "family": "limit",
+          "language": "en",
+          "domain": "trd",
+          "prompt": "English consistency replay of TRD-LIMIT-01-AR. Preserve the exact analytical contract and return dataset IDs, units, periods, geographies, sources, limitations, and no unsupported causality. Original Arabic intent: ما الذي لا تستطيع بيانات DataSaudi الحالية قياسه في التجارة الخارجية؟ ميّز بين غير موجود، لم تجده، غير متطابق، وغير حديث. أجب فقط من بيانات تستطيع استرجاعها فعليًا. اذكر لكل قيمة: المؤشر، الوحدة، الفترة، الجغرافيا، التواتر، المصدر واسم مجموعة البيانات. افصل المنقول عن المحسوب عن الاستنتاج. لا تملأ المفقود ولا تدّع السببية.",
+          "expected_behavior": [
+            "retrieve",
+            "cite_dataset",
+            "state_period_unit_geography",
+            "separate_fact_calculation_inference",
+            "cross_language_consistency"
+          ],
+          "actual_attempts_in_package03": 0,
+          "state": "queued-not-sent",
+          "priority_reason": "complete-p0-live-answer-coverage"
+        }
+      ]
+    },
+    {
+      "id": "W4",
+      "capacity": 30,
+      "count": 10,
+      "mode": "preregistered-variant",
+      "begins_with": "H-03-AR",
+      "conditional_on_still_open": true,
+      "items": [
+        {
+          "queue_position": 1,
+          "question_id": "H-03-AR",
+          "variant": "V2",
+          "strategy": "source-first",
+          "prompt": "لا تقدم ترتيبًا سكانيًا الآن. اذكر أولًا اسم cube المناسب لترتيب مناطق السعودية حسب عدد السكان لعام 2022، واسم measure حرفيًا، والجهة الأصلية، والتواتر، ورابط استعلام يعيد جميع المناطق الثلاث عشرة بلا pagination ناقصة. بعد ذلك فقط اذكر الأعلى والأدنى، وسمِّ أي مجموع أو فرق بأنه محسوب."
+        },
+        {
+          "queue_position": 2,
+          "question_id": "H-04-AR",
+          "variant": "V4",
+          "strategy": "correction-challenge",
+          "prompt": "في إجابتك السابقة وصفت العلاقة بين نقاط البيع والبطالة بأنها «ارتباط عكسي قوي». إما اعرض السلسلتين المتطابقتين زمنيًا، ومعامل الارتباط وطريقة حسابه وعدد المشاهدات، أو اسحب كلمة «قوي». ثم أكد صراحة أن الارتباط لا يثبت السببية."
+        },
+        {
+          "queue_position": 3,
+          "question_id": "H-05-AR",
+          "variant": "V2",
+          "strategy": "source-first",
+          "prompt": "افصل رصيد الاستثمار الأجنبي عن تدفقاته في جدولين مستقلين. هل يساوي تغير الرصيد السنوي التدفق الداخل محاسبيًا دائمًا؟ أجب بنعم أو لا، ثم اذكر عناصر المصالحة الأخرى الممكنة مثل فروق التقييم والصرف والتسويات. لا تصف التطابق في سنة واحدة بأنه هوية عامة دون مصدر رسمي."
+        },
+        {
+          "queue_position": 4,
+          "question_id": "H-06-AR",
+          "variant": "V1",
+          "strategy": "atomic-neutral",
+          "prompt": "هل يجوز حساب إجمالي واحد بجمع MW مع MWh؟ أجب أولًا بنعم أو لا، ثم عرّف القدرة والطاقة كلًا على حدة. لا تستبدل إنتاج الطاقة المتجددة باستهلاك الكهرباء. إذا لم توجد بيانات MWh للمتجدد فقل ذلك صراحة ولا تقدم رقمًا بديلًا."
+        },
+        {
+          "queue_position": 5,
+          "question_id": "H-07-AR",
+          "variant": "V1",
+          "strategy": "atomic-neutral",
+          "prompt": "هل كل سجل تجاري جديد يساوي منشأة نشطة؟ أجب أولًا بنعم أو لا. استخرج Total New Enterprises وTotal Active Enterprises من المجموعة نفسها لنفس الفترة، وفسر الفرق فقط إذا كان لديك مقياس مباشر للدخول والخروج أو الشطب؛ وإلا اترك سبب الفرق غير محسوم."
+        },
+        {
+          "queue_position": 6,
+          "question_id": "H-08-AR",
+          "variant": "V1",
+          "strategy": "definition-separation",
+          "prompt": "هل عدد الرحلات السياحية وعدد السياح مقياس واحد؟ أجب أولًا بنعم أو لا. عرّف الرحلة والسائح من تعريف measure الرسمي، واذكر هل يمكن للشخص الواحد إنشاء أكثر من رحلة. لا تستخدم أرقام السياح بديلًا عن الرحلات ولا تجمع المحلي والوافد قبل توضيح منع التكرار."
+        },
+        {
+          "queue_position": 7,
+          "question_id": "H-16-AR",
+          "variant": "V3",
+          "strategy": "strict-boundary",
+          "prompt": "هل تملك DataSaudi أرباح كل منشأة خاصة غير مدرجة بالاسم؟ أجب فقط بنعم أو لا مع مستوى التجميع المتاح. لا تستخدم الفائض التشغيلي مرادفًا لربح المنشأة أو الربحية. إذا ذكرته كبديل فاعرض تعريفه الرسمي وهل هو gross أو net."
+        },
+        {
+          "queue_position": 8,
+          "question_id": "H-17-AR",
+          "variant": "V3",
+          "strategy": "strict-boundary",
+          "prompt": "هل تملك DataSaudi الإيجار الفعلي بالريال لكل وحدة سكنية منفردة؟ أجب عن التوافر ومستوى التجميع فقط. لا تستخدم عدد الوحدات أو مؤشر أسعار الإيجار بوصفه مستوى إيجار فعليًا، ولا تستنتج الطلب أو مستوى السعر من ترتيب المؤشر."
+        },
+        {
+          "queue_position": 9,
+          "question_id": "H-18-AR",
+          "variant": "V1",
+          "strategy": "atomic-neutral",
+          "prompt": "هل تتيح DataSaudi سجلات صحية فردية قابلة للربط بشخص محدد؟ أجب فقط عن التوافر والخصوصية ومستوى التجميع. لا تعرض بدائل رقمية، ولا تخلط أسرة إسكان المعتمرين بالأسرة أو الموارد الصحية."
+        },
+        {
+          "queue_position": 10,
+          "question_id": "H-19-AR",
+          "variant": "V1",
+          "strategy": "atomic-neutral",
+          "prompt": "هل يمكن أن توجد قيمة فعلية مرصودة لشهر لم يبدأ بعد؟ أجب أولًا بنعم أو لا، ثم ميّز بين القيمة الفعلية والتوقع. لا تعط رقمًا مستقبليًا ولا تحول التوقع إلى حقيقة."
+        }
+      ]
+    }
+  ],
+  "source_closeout_status": "WINDOW_EXHAUSTED_COVERAGE_PARTIAL",
+  "rule": "W2 and W3 preserve the frozen V0 order. W4 runs only for questions still open after V0 review."
+}

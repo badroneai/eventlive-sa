@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "package_id": "datasaudi-package-03b-closure-router",
+  "generated_at_utc": "2026-07-13T08:54:08.247Z",
+  "status": "READINESS_COMPLETE_EXECUTION_NOT_AUTHORIZED",
+  "package_03_unchanged": true,
+  "package_03_tree_sha256": "e8cf1fe8c7aeea306a081effc78b398c8d5621557cc51e5720f83a1629593862",
+  "package_03a_unchanged": true,
+  "package_03a_tree_sha256": "2a048ed1f7424d66ed849647c32fc7dfe9c05fc168fa226c02c7457a114b2bd4",
+  "package_03_decision_unchanged": "NO_BUILD",
+  "package_04_authorized": false,
+  "review_now": {
+    "claims": 39,
+    "questions": 13,
+    "evidence_complete": 39,
+    "decisions_recorded": 0
+  },
+  "wait_reset": {
+    "questions": 49,
+    "windows": {
+      "W2": 30,
+      "W3": 19,
+      "W4": 10
+    },
+    "observed_reset_required": true
+  },
+  "later_campaign": {
+    "questions": 169,
+    "batches": 6,
+    "source_ready": 120,
+    "contract_only": 49,
+    "source_review_required": 0
+  },
+  "claim": "Package 03B closes the preparation gap only. It performs no live send, no independent-review decision, no product build and no Package 04 action."
+}

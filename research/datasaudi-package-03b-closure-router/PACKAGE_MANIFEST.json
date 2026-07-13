@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "package_id": "datasaudi-package-03b-closure-router",
+  "generated_at_utc": "2026-07-13T08:54:08.247Z",
+  "artifact_count": 12,
+  "size_bytes": 577161,
+  "tree_sha256": "125e06f0f0de81a691da93de72f7468ad2f850736d6d75d156d88ecf31c709f6",
+  "source_input_fingerprint": "c653acf0108e636510e8e8a55859816a1dee24ef6426c465a1888814cb7d7624",
+  "sealed_dependencies": {
+    "package_03_tree_sha256": "e8cf1fe8c7aeea306a081effc78b398c8d5621557cc51e5720f83a1629593862",
+    "package_03a_tree_sha256": "2a048ed1f7424d66ed849647c32fc7dfe9c05fc168fa226c02c7457a114b2bd4"
+  },
+  "artifacts": [
+    {
+      "path": "research/datasaudi-package-03b-closure-router/CLOSEOUT.json",
+      "sha256": "2c7f796f4d6b29aaa6095982457f7acc32ffc1be4154b25595faea013076b5ac",
+      "size_bytes": 1113
+    },
+    {
+      "path": "research/datasaudi-package-03b-closure-router/CLOSEOUT.md",
+      "sha256": "b6c5b03c6c1e662cb3e6d97eaee6c62b8a9c48b7d93e93ac6919f33185fec6a0",
+      "size_bytes": 774
+    },
+    {
+      "path": "research/datasaudi-package-03b-closure-router/INPUT-LOCK.json",
+      "sha256": "02b432093f63e748f30fc035b6901ab979b6b9430b53b29309452704110d0dbf",
+      "size_bytes": 4909
+    },
+    {
+      "path": "research/datasaudi-package-03b-closure-router/README.md",
+      "sha256": "75e4e40d7fa00e4c1f20383aee811cdde6a6bc2776c92e6c92ed83e6c65cc5ff",
+      "size_bytes": 1432
+    },
+    {
+      "path": "research/datasaudi-package-03b-closure-router/VALIDATION.md",
+      "sha256": "fbae8419744c78ea1006e9cb0556604689e92ca1cf0e9be3f8b26cedf370ee53",
+      "size_bytes": 469
+    },
+    {
+      "path": "research/datasaudi-package-03b-closure-router/campaign-batches.json",
+      "sha256": "80271a10e294552e6107f3ce1542986bd6a72c73cf080ba80f7c97e5c4c1d1c8",
+      "size_bytes": 16654
+    },
+    {
+      "path": "research/datasaudi-package-03b-closure-router/closure-router.json",
+      "sha256": "93f19b3b2bab399e5c2b2b0c285e3160b1cb0d878fe8feabf8488a9faca4fccc",
+      "size_bytes": 3085
+    },
+    {
+      "path": "research/datasaudi-package-03b-closure-router/execution-guard.json",
+      "sha256": "a921987f241e8743f2ad6f1c91296d54063a48afaaba3c8d45743f4bf3bf2ff6",
+      "size_bytes": 939
+    },
+    {
+      "path": "research/datasaudi-package-03b-closure-router/independent-review-packet.jsonl",
+      "sha256": "9897d9de4e581bc3889761e0d63d4fb0f8d562d407974dadc9f208f40f3418d5",
+      "size_bytes": 104799
+    },
+    {
+      "path": "research/datasaudi-package-03b-closure-router/later-wave-oracle-specs.jsonl",
+      "sha256": "518e29ef32c027f8530ee359a2254c8949ad460b2ea93152c1e60acc7454e8e1",
+      "size_bytes": 371815
+    },
+    {
+      "path": "research/datasaudi-package-03b-closure-router/p0-resume-contract.json",
+      "sha256": "29db4fd5459b72261d2912f6667e0e3f05ab76a24075ded93021a879a7c132f4",
+      "size_bytes": 69489
+    },
+    {
+      "path": "research/datasaudi-package-03b-closure-router/validation.json",
+      "sha256": "b123f0c0b12205d1dbc6b3d1ebfea7f2974f48caabdfa41b88964652965d218f",
+      "size_bytes": 1683
+    }
+  ]
+}

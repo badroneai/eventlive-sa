@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "package_id": "datasaudi-package-03b-closure-router",
+  "generated_at_utc": "2026-07-13T08:54:08.247Z",
+  "status": "READINESS_COMPLETE_EXECUTION_NOT_AUTHORIZED",
+  "review": {
+    "claims": 39,
+    "questions": 13,
+    "evidenceComplete": 39,
+    "byType": {
+      "temporalCoverage": 29,
+      "datasetAvailability": 10
+    },
+    "itemsReference": "research/datasaudi-package-03b-closure-router/independent-review-packet.jsonl",
+    "action": "INDEPENDENT_REVIEW_ONLY"
+  },
+  "waitReset": {
+    "questions": 49,
+    "observedResetRequired": true,
+    "windows": [
+      {
+        "id": "W2",
+        "capacity": 30,
+        "count": 30
+      },
+      {
+        "id": "W3",
+        "capacity": 30,
+        "count": 19
+      },
+      {
+        "id": "W4",
+        "capacity": 30,
+        "count": 10
+      }
+    ],
+    "contractReference": "research/datasaudi-package-03b-closure-router/p0-resume-contract.json"
+  },
+  "campaign": {
+    "questions": 169,
+    "batchesCount": 6,
+    "sourceReady": 120,
+    "contractOnly": 49,
+    "sourceReviewRequired": 0,
+    "batches": [
+      {
+        "id": "P03B-B01",
+        "sequence": 1,
+        "capacity": 30,
+        "count": 30,
+        "familyCounts": {
+          "direct": 24,
+          "series": 6
+        },
+        "sourceReady": 25,
+        "contractOnly": 5,
+        "sourceReviewRequired": 0
+      },
+      {
+        "id": "P03B-B02",
+        "sequence": 2,
+        "capacity": 30,
+        "count": 30,
+        "familyCounts": {
+          "rank": 12,
+          "series": 18
+        },
+        "sourceReady": 23,
+        "contractOnly": 7,
+        "sourceReviewRequired": 0
+      },
+      {
+        "id": "P03B-B03",
+        "sequence": 3,
+        "capacity": 30,
+        "count": 30,
+        "familyCounts": {
+          "derive": 18,
+          "rank": 12
+        },
+        "sourceReady": 26,
+        "contractOnly": 4,
+        "sourceReviewRequired": 0
+      },
+      {
+        "id": "P03B-B04",
+        "sequence": 4,
+        "capacity": 30,
+        "count": 30,
+        "familyCounts": {
+          "derive": 6,
+          "explain": 24
+        },
+        "sourceReady": 26,
+        "contractOnly": 4,
+        "sourceReviewRequired": 0
+      },
+      {
+        "id": "P03B-B05",
+        "sequence": 5,
+        "capacity": 30,
+        "count": 30,
+        "familyCounts": {
+          "cross": 30
+        },
+        "sourceReady": 20,
+        "contractOnly": 10,
+        "sourceReviewRequired": 0
+      },
+      {
+        "id": "P03B-B06",
+        "sequence": 6,
+        "capacity": 30,
+        "count": 19,
+        "familyCounts": {
+          "cross": 4,
+          "opportunity": 15
+        },
+        "sourceReady": 0,
+        "contractOnly": 19,
+        "sourceReviewRequired": 0
+      }
+    ],
+    "specsReference": "research/datasaudi-package-03b-closure-router/later-wave-oracle-specs.jsonl"
+  },
+  "authority": {
+    "package03Decision": "NO_BUILD",
+    "package04Authorized": false,
+    "executionAuthorized": false,
+    "networkAllowed": false,
+    "changesSealedAdjudication": false
+  }
+}

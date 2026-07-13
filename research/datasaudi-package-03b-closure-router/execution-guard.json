@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "package_id": "datasaudi-package-03b-closure-router",
+  "status": "EXECUTION_NOT_AUTHORIZED",
+  "execution_authorized": false,
+  "network_allowed": false,
+  "send_allowed": false,
+  "live_executor_in_package": false,
+  "prerequisites": {
+    "observed_reset_receipt_required": true,
+    "separate_owner_authorization_required": true,
+    "fixed_identity_required": true,
+    "single_connection_required": true
+  },
+  "limits": {
+    "max_messages_per_window": 30,
+    "parallel_connections": 1,
+    "identity_changes": 0
+  },
+  "circuit_breaker": {
+    "stop_on_first_explicit_quota_frame": true,
+    "stop_on_auth_or_identity_change": true,
+    "no_quota_evasion": true,
+    "no_automatic_retry_after_open": true
+  },
+  "authority_boundary": {
+    "package_03_decision": "NO_BUILD",
+    "package_04_authorized": false,
+    "may_change_confirmed_adjudications": false,
+    "may_publish_or_send": false
+  }
+}

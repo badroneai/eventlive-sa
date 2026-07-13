@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "package_id": "datasaudi-package-03b-closure-router",
+  "generated_at_utc": "2026-07-13T08:54:08.247Z",
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "sealed-package-03-tree",
+      "status": "PASS",
+      "observed": "e8cf1fe8c7aeea306a081effc78b398c8d5621557cc51e5720f83a1629593862"
+    },
+    {
+      "id": "sealed-package-03a-tree",
+      "status": "PASS",
+      "observed": "2a048ed1f7424d66ed849647c32fc7dfe9c05fc168fa226c02c7457a114b2bd4"
+    },
+    {
+      "id": "review-denominator",
+      "status": "PASS",
+      "observed": {
+        "claims": 39,
+        "questions": 13,
+        "temporal": 29,
+        "availability": 10,
+        "evidence": 39
+      }
+    },
+    {
+      "id": "later-wave-denominator",
+      "status": "PASS",
+      "observed": {
+        "questions": 169,
+        "source_ready": 120,
+        "contract_only": 49,
+        "source_review_required": 0
+      }
+    },
+    {
+      "id": "campaign-batches",
+      "status": "PASS",
+      "observed": [
+        30,
+        30,
+        30,
+        30,
+        30,
+        19
+      ]
+    },
+    {
+      "id": "p0-resume",
+      "status": "PASS",
+      "observed": {
+        "W2": 30,
+        "W3": 19,
+        "W4": 10,
+        "begins": "H-19-AR"
+      }
+    },
+    {
+      "id": "execution-guard",
+      "status": "PASS",
+      "observed": {
+        "execution_authorized": false,
+        "network_allowed": false,
+        "package_04_authorized": false
+      }
+    }
+  ],
+  "invariant": "39 review claims + 49 reset-gated P0 questions + 169 preregistered later-wave questions remain explicitly distinct; no item is represented as sent or adjudicated by Package 03B."
+}
