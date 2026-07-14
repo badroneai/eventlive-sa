@@ -124,6 +124,7 @@
     "test:prelaunch-data-quality": "node scripts/prelaunch-data-quality-regression-test.mjs",
     "test:csv": "node scripts/csv-parser-regression-test.mjs",
     "test:source-auto-publish": "node scripts/source-auto-publish-regression-test.mjs",
+    "test:source-auto-publish-semantic": "node scripts/source-auto-publish-semantic-dedupe-regression-test.mjs",
     "test:source-auto-publish-identity": "node scripts/source-auto-publish-source-identity-regression-test.mjs",
     "test:source-action-identity": "node scripts/source-action-identity-regression-test.mjs",
     "test:eye-official-links": "node scripts/eye-official-link-regression-test.mjs",

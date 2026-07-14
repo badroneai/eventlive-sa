@@ -58,7 +58,13 @@ function decodeHtml(value = '') {
 }
 
 function normalizeMatchValue(value) {
-  return decodeHtml(value).trim().toLowerCase().replace(/\s+/g, ' ');
+  return decodeHtml(value)
+    .normalize('NFKC')
+    .trim()
+    .toLowerCase()
+    .replace(/[\p{P}\p{S}]+/gu, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 function candidateMatchKey(row) {
@@ -294,7 +300,11 @@ function preferredDuplicateEvent(first, second) {
   const score = (event) => [
     event.image_url || event.original_image_url,
     event.registration_url,
+    event.ticket_url,
+    event.description || event.rich_summary,
     event.summary,
+    event.program_outline?.official_description,
+    event.price !== undefined || event.low_price !== undefined,
     Array.isArray(event.sessions) && event.sessions.length,
     event.live_schedule_ready
   ].filter(Boolean).length;
@@ -302,8 +312,27 @@ function preferredDuplicateEvent(first, second) {
 }
 
 function mergeActionFields(preferred, discarded) {
-  for (const field of ['registration_url', 'ticket_url']) {
-    if (!preferred[field] && discarded[field]) preferred[field] = discarded[field];
+  const isMissing = (value) => value === undefined || value === null || value === '';
+  for (const field of [
+    'registration_url',
+    'ticket_url',
+    'organizer_url',
+    'description',
+    'rich_summary',
+    'summary',
+    'program_outline',
+    'price',
+    'low_price',
+    'high_price',
+    'price_currency',
+    'offer_valid_from'
+  ]) {
+    if (isMissing(preferred[field]) && !isMissing(discarded[field])) preferred[field] = discarded[field];
+  }
+  if ((!Array.isArray(preferred.sessions) || !preferred.sessions.length) && Array.isArray(discarded.sessions) && discarded.sessions.length) {
+    preferred.sessions = discarded.sessions;
+    preferred.sessions_count = discarded.sessions_count || discarded.sessions.length;
+    preferred.live_schedule_ready = Boolean(discarded.live_schedule_ready);
   }
   return preferred;
 }
@@ -375,6 +404,32 @@ function dedupeAutoPublishedCatalog(events) {
     const discarded = preferred === existing ? event : existing;
     result[index] = preferred;
     removed.push({ removed_event_id: discarded.id, kept_event_id: preferred.id, source_identity: identity });
+  }
+  return { events: result, removed };
+}
+
+function dedupeAutoPublishedSemanticCatalog(events) {
+  const result = [];
+  const indexByIdentity = new Map();
+  const removed = [];
+  for (const event of events) {
+    const identity = event.published_by === 'EventLive Auto Publisher' ? candidateMatchKey(event) : '';
+    if (!identity || !indexByIdentity.has(identity)) {
+      if (identity) indexByIdentity.set(identity, result.length);
+      result.push(event);
+      continue;
+    }
+    const index = indexByIdentity.get(identity);
+    const existing = result[index];
+    const preferredRecord = preferredDuplicateEvent(existing, event);
+    const preferred = mergeActionFields(preferredRecord, preferredRecord === existing ? event : existing);
+    const discarded = preferred === existing ? event : existing;
+    result[index] = preferred;
+    removed.push({
+      removed_event_id: discarded.id,
+      kept_event_id: preferred.id,
+      reason: 'title-city-date-semantic-match'
+    });
   }
   return { events: result, removed };
 }
@@ -675,7 +730,8 @@ function main() {
   const validCatalogEvents = reconciledDocuments.catalogEvents
     .filter((event) => hasValidPublicDateTimes(event) || !isAutoPublishedEventLiveRow(event));
   const dedupedCatalog = dedupeAutoPublishedCatalog(validCatalogEvents);
-  const actionDedupedCatalog = dedupeActionSemanticCatalog(dedupedCatalog.events);
+  const semanticDedupedCatalog = dedupeAutoPublishedSemanticCatalog(dedupedCatalog.events);
+  const actionDedupedCatalog = dedupeActionSemanticCatalog(semanticDedupedCatalog.events);
   const aliasDedupedCatalog = dedupeBilingualAliasCatalog(actionDedupedCatalog.events);
   const catalogEvents = aliasDedupedCatalog.events;
   const existingIds = new Set(catalogEvents.map((event) => event.id));
@@ -857,10 +913,12 @@ function main() {
       reconciled: published.length + linkedExisting.length
     },
     duplicate_catalog_rows_removed: dedupedCatalog.removed.length
+      + semanticDedupedCatalog.removed.length
       + actionDedupedCatalog.removed.length
       + aliasDedupedCatalog.removed.length,
     duplicate_catalog_rows: [
       ...dedupedCatalog.removed,
+      ...semanticDedupedCatalog.removed,
       ...actionDedupedCatalog.removed,
       ...aliasDedupedCatalog.removed
     ],
