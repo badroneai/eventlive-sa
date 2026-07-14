@@ -139,6 +139,8 @@ for (const event of samples) {
     assert.equal(eventLd.subEvent.length, Math.min(20, officialSessions.length), `${event.detail_url} subEvent count must include official sessions only`);
     for (const subEvent of eventLd.subEvent) {
       assert.equal(subEvent['@type'], 'Event', `${event.detail_url} each subEvent must be an Event`);
+      assert.ok(subEvent.description?.length >= 10, `${event.detail_url} each Google-visible subEvent must include a useful description`);
+      assert.deepEqual(subEvent.image, [expectedImage], `${event.detail_url} each Google-visible subEvent must inherit the event image`);
       assert.ok(subEvent.url?.startsWith(`https://eventme.live/${event.detail_url.replace(/^\.\//, '')}#session-`), `${event.detail_url} subEvent URLs must point to visible session anchors`);
       const anchor = subEvent.url.split('#')[1];
       assert.match(html, new RegExp(`id="${anchor.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}"`), `${event.detail_url} must render a matching session anchor for ${anchor}`);
