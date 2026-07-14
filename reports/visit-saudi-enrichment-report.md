@@ -1,22 +1,32 @@
 # Visit Saudi Calendar Enrichment Report
 
-- generated_at: 2026-07-12T19:33:42.689Z
-- targets: 13
-- candidates: 15
-- enriched: 13
-- fetched: 13
-- images: 11
+- generated_at: 2026-07-14T11:07:49.978Z
+- targets: 23
+- candidates: 26
+- enriched: 23
+- fetched: 23
+- images: 21
 - fetch_failures: 0
 
 ## Enriched
 
 - Arabic Language Exhibition 28 - official-page-html - image=yes - features=7
 - Arabic Language Exhibition for kids - official-page-html - image=yes - features=7
+- Sunken Treasures - official-page-html - image=yes - features=7
 - Aseer Season - official-page-html - image=yes - features=7
 - Kashtah - official-page-html - image=yes - features=7
+- Okhtabotiya - official-page-html - image=yes - features=7
 - Al-Farabi: Comeback Night - official-page-html - image=yes - features=7
+- Made in Egypt: Stand Up Comedy Show by Ahmed Khairy - official-page-html - image=yes - features=7
+- Mohamed Hamaki Concert - official-page-html - image=yes - features=7
+- Saleh El Nawawy - Stand Up Comedy Show - official-page-html - image=yes - features=7
+- Reggae With Rsoa - official-page-html - image=yes - features=7
+- Very Sary Night from Exit Thmanyah - official-page-html - image=yes - features=7
 - Saleh El Nawawy: Stand Up Comedy Show - official-page-html - image=yes - features=7
+- Rahma Riad at Vocally - official-page-html - image=yes - features=7
+- Fill in the Blank in Jeddah - official-page-html - image=yes - features=7
 - International Falcon Breeders Auction - official-page-html - image=yes - features=7
+- Hussain Moheb Live in Riyadh - official-page-html - image=yes - features=7
 - FIBO Arabia 2026 - official-page-html - image=yes - features=7
 - Saudi National Day - official-page-html - image=yes - features=7
 - Al Milwah Falcon Race - official-page-html - image=yes - features=7

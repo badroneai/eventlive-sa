@@ -1,9 +1,9 @@
 # Dhahran Expo Calendar Enrichment Report
 
-- generated_at: 2026-07-12T19:33:42.452Z
-- targets: 15
-- candidates: 15
-- enriched: 15
+- generated_at: 2026-07-14T11:07:49.732Z
+- targets: 16
+- candidates: 16
+- enriched: 16
 - skipped: 0
 
 ## Enriched
@@ -13,6 +13,7 @@
 - Arabian and International Industries Exhibition - 2026-09-02T09:00:00+03:00 to 2026-09-11T18:00:00+03:00 - Ibrahim Mohammed Saad Al-Awad Establishment for Organizing Exhibitions and Conferences - features=6
 - Static Equipment Engineering & Maintenance Technical Conference & Expo - STATEC Arabia - 2026-09-08T09:00:00+03:00 to 2026-09-10T18:00:00+03:00 - Aldrich Int’l LLC - features=6
 - Gulf Steel, Storage Tank & Refinery Expo - 2026-09-20T09:00:00+03:00 to 2026-09-22T18:00:00+03:00 - Spartans and Knights Events Management - features=6
+- Music Concerts National Day - 2026-09-23T09:00:00+03:00 to 2026-09-24T18:00:00+03:00 - Creative XP - features=6
 - The Egyptian Products Exhibition - 2026-09-24T09:00:00+03:00 to 2026-09-29T18:00:00+03:00 - Al-Baraa Muhammed Bin Abdullah Al-Duaij Establishment for Organizing Exhibitions & Conferences - features=6
 - Wadaef Exhibition - 2026-09-27T09:00:00+03:00 to 2026-09-29T18:00:00+03:00 - Sharqia Chamber - features=6
 - World Firefighters Challenge - 2026-11-05T09:00:00+03:00 to 2026-11-13T18:00:00+03:00 - Saudi Aramco - features=6

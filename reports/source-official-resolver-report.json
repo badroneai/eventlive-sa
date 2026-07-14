@@ -1,42 +1,24 @@
 {
-  "generated_at": "2026-07-12T19:34:19.864Z",
+  "generated_at": "2026-07-14T11:08:22.191Z",
   "source_ops_report": "reports/source-ops-report.json",
   "source_registry": "data/source_registry.json",
   "totals": {
     "leads_seen": 10,
     "tasks": 8,
-    "high_priority": 0
+    "high_priority": 1
   },
   "tasks": [
     {
-      "lead_id": "candidate-eventbrite-saudi-cat-show-3rd-season-in-saudi-pet-vet-expo-20261109-a33c98fd",
-      "title": "Cat Show 3rd season in Saudi Pet & Vet Expo",
-      "city": "Riyadh",
-      "starts_at": "2026-11-09T14:00:00+03:00",
+      "lead_id": "candidate-eventbrite-saudi-dubai-property-expo-in-al-khobar-17th-18th-july-2026-danube-20260718-3fa94488",
+      "title": "Dubai Property Expo in Al Khobar",
+      "city": "Khobar",
+      "starts_at": "2026-07-18T10:00:00+03:00",
       "source_label": "Eventbrite Saudi Arabia",
       "discovery_quality": "strong-lead",
       "discovery_score": 70,
       "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 107,
+      "resolver_priority": 132,
       "target_sources": [
-        {
-          "id": "rfecc-whats-on",
-          "name": "RFECC What's On",
-          "url": "https://rfecc.sa/whats-on/",
-          "domain": "rfecc.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 76
-        },
-        {
-          "id": "ricec-events",
-          "name": "Riyadh International Convention and Exhibition Center",
-          "url": "https://www.ricec.com/",
-          "domain": "ricec.com",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 76
-        },
         {
           "id": "dhahran-expo-calendar",
           "name": "Dhahran Expo Calendar",
@@ -44,7 +26,7 @@
           "domain": "dhahranexpo.com.sa",
           "trust_level": "venue-official",
           "source_type": "venue-calendar",
-          "score": 68
+          "score": 86
         },
         {
           "id": "informa-connect-saudi-events",
@@ -53,50 +35,68 @@
           "domain": "informaconnect.com",
           "trust_level": "official",
           "source_type": "conference-organizer",
-          "score": 66
+          "score": 78
         },
         {
-          "id": "saudi-water-authority-events",
-          "name": "Saudi Water Authority Events",
-          "url": "https://www.swa.gov.sa/en/events",
-          "domain": "swa.gov.sa",
+          "id": "madinah-chamber-events",
+          "name": "Madinah Chamber Events",
+          "url": "https://www.mcci.org.sa/Event/events",
+          "domain": "mcci.org.sa",
+          "trust_level": "official",
+          "source_type": "venue-calendar",
+          "score": 78
+        },
+        {
+          "id": "ricec-events",
+          "name": "Riyadh International Convention and Exhibition Center",
+          "url": "https://www.ricec.com/",
+          "domain": "ricec.com",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 78
+        },
+        {
+          "id": "sdaia-calendar-events",
+          "name": "SDAIA Calendar and Events",
+          "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
+          "domain": "sdaia.gov.sa",
           "trust_level": "official",
           "source_type": "government-calendar",
-          "score": 66
+          "score": 78
         }
       ],
       "searches": [
         {
-          "query": "site:rfecc.sa \"Cat Show 3rd season in Saudi Pet & Vet Expo\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Arfecc.sa%20%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22"
+          "query": "site:dhahranexpo.com.sa \"Dubai Property Expo in Al Khobar\" \"Khobar\"",
+          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22"
         },
         {
-          "query": "site:ricec.com \"Cat Show 3rd season in Saudi Pet & Vet Expo\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aricec.com%20%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22"
+          "query": "site:informaconnect.com \"Dubai Property Expo in Al Khobar\" \"Khobar\"",
+          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22"
         },
         {
-          "query": "site:dhahranexpo.com.sa \"Cat Show 3rd season in Saudi Pet & Vet Expo\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22"
+          "query": "site:mcci.org.sa \"Dubai Property Expo in Al Khobar\" \"Khobar\"",
+          "url": "https://www.google.com/search?q=site%3Amcci.org.sa%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22"
         },
         {
-          "query": "site:informaconnect.com \"Cat Show 3rd season in Saudi Pet & Vet Expo\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22"
+          "query": "site:ricec.com \"Dubai Property Expo in Al Khobar\" \"Khobar\"",
+          "url": "https://www.google.com/search?q=site%3Aricec.com%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22"
         },
         {
-          "query": "site:swa.gov.sa \"Cat Show 3rd season in Saudi Pet & Vet Expo\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aswa.gov.sa%20%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22"
+          "query": "site:sdaia.gov.sa \"Dubai Property Expo in Al Khobar\" \"Khobar\"",
+          "url": "https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22"
         },
         {
-          "query": "\"Cat Show 3rd season in Saudi Pet & Vet Expo\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22%20official"
+          "query": "\"Dubai Property Expo in Al Khobar\" \"Khobar\" official",
+          "url": "https://www.google.com/search?q=%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22%20official"
         },
         {
-          "query": "\"Cat Show 3rd season in Saudi Pet & Vet Expo\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22%20organizer"
+          "query": "\"Dubai Property Expo in Al Khobar\" \"Khobar\" organizer",
+          "url": "https://www.google.com/search?q=%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22%20organizer"
         },
         {
-          "query": "\"Cat Show 3rd season in Saudi Pet & Vet Expo\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22%20tickets"
+          "query": "\"Dubai Property Expo in Al Khobar\" \"Khobar\" tickets",
+          "url": "https://www.google.com/search?q=%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
@@ -288,99 +288,6 @@
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
     },
     {
-      "lead_id": "candidate-eventbrite-saudi-saudi-pet-vet-expo-5th-edition-2026-20261109-1aafd065",
-      "title": "Saudi Pet & Vet Expo 5th Edition 2026",
-      "city": "Riyadh",
-      "starts_at": "2026-11-09T15:00:00+03:00",
-      "source_label": "Eventbrite Saudi Arabia",
-      "discovery_quality": "strong-lead",
-      "discovery_score": 70,
-      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 107,
-      "target_sources": [
-        {
-          "id": "rfecc-whats-on",
-          "name": "RFECC What's On",
-          "url": "https://rfecc.sa/whats-on/",
-          "domain": "rfecc.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 76
-        },
-        {
-          "id": "ricec-events",
-          "name": "Riyadh International Convention and Exhibition Center",
-          "url": "https://www.ricec.com/",
-          "domain": "ricec.com",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 76
-        },
-        {
-          "id": "dhahran-expo-calendar",
-          "name": "Dhahran Expo Calendar",
-          "url": "https://dhahranexpo.com.sa",
-          "domain": "dhahranexpo.com.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 68
-        },
-        {
-          "id": "informa-connect-saudi-events",
-          "name": "Informa Connect Saudi Event Portfolio",
-          "url": "https://informaconnect.com/",
-          "domain": "informaconnect.com",
-          "trust_level": "official",
-          "source_type": "conference-organizer",
-          "score": 66
-        },
-        {
-          "id": "saudi-water-authority-events",
-          "name": "Saudi Water Authority Events",
-          "url": "https://www.swa.gov.sa/en/events",
-          "domain": "swa.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 66
-        }
-      ],
-      "searches": [
-        {
-          "query": "site:rfecc.sa \"Saudi Pet & Vet Expo 5th Edition 2026\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Arfecc.sa%20%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:ricec.com \"Saudi Pet & Vet Expo 5th Edition 2026\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aricec.com%20%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:dhahranexpo.com.sa \"Saudi Pet & Vet Expo 5th Edition 2026\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:informaconnect.com \"Saudi Pet & Vet Expo 5th Edition 2026\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:swa.gov.sa \"Saudi Pet & Vet Expo 5th Edition 2026\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aswa.gov.sa%20%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22"
-        },
-        {
-          "query": "\"Saudi Pet & Vet Expo 5th Edition 2026\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22%20official"
-        },
-        {
-          "query": "\"Saudi Pet & Vet Expo 5th Edition 2026\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22%20organizer"
-        },
-        {
-          "query": "\"Saudi Pet & Vet Expo 5th Edition 2026\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22%20tickets"
-        }
-      ],
-      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
-    },
-    {
       "lead_id": "candidate-eventbrite-saudi-25th-wpc-energy-congress-20261011-5909609b",
       "title": "25TH WPC Energy Congress",
       "city": "Riyadh",
@@ -562,6 +469,99 @@
         {
           "query": "\"Family Office Investment Meeting\" \"Riyadh\" tickets",
           "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20tickets"
+        }
+      ],
+      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
+    },
+    {
+      "lead_id": "candidate-eventbrite-saudi-sucession-planning-program-20260903-d2b52d25",
+      "title": "Sucession Planning Program",
+      "city": "Riyadh",
+      "starts_at": "2026-09-03T10:00:00+03:00",
+      "source_label": "Eventbrite Saudi Arabia",
+      "discovery_quality": "strong-lead",
+      "discovery_score": 70,
+      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
+      "resolver_priority": 97,
+      "target_sources": [
+        {
+          "id": "code-mcit-programs",
+          "name": "CODE MCIT Programs",
+          "url": "https://code.mcit.gov.sa/en/our-programs",
+          "domain": "code.mcit.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 28
+        },
+        {
+          "id": "cst-events-news",
+          "name": "CST Events and News",
+          "url": "https://www.cst.gov.sa/en",
+          "domain": "cst.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 28
+        },
+        {
+          "id": "diriyah-season",
+          "name": "Diriyah Season",
+          "url": "https://diriyahseason.sa/en",
+          "domain": "diriyahseason.sa",
+          "trust_level": "official",
+          "source_type": "organizer-calendar",
+          "score": 28
+        },
+        {
+          "id": "enjoy-saudi-events",
+          "name": "Enjoy Saudi Events",
+          "url": "https://enjoy.sa/ar/",
+          "domain": "enjoy.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 28
+        },
+        {
+          "id": "fii10-official-program",
+          "name": "FII 10th Edition Official Program",
+          "url": "https://fii-institute.org/conference/fii-10th-edition/",
+          "domain": "fii-institute.org",
+          "trust_level": "official",
+          "source_type": "conference-organizer",
+          "score": 28
+        }
+      ],
+      "searches": [
+        {
+          "query": "site:code.mcit.gov.sa \"Sucession Planning Program\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Acode.mcit.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:cst.gov.sa \"Sucession Planning Program\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Acst.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:diriyahseason.sa \"Sucession Planning Program\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Adiriyahseason.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:enjoy.sa \"Sucession Planning Program\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aenjoy.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:fii-institute.org \"Sucession Planning Program\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Afii-institute.org%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
+        },
+        {
+          "query": "\"Sucession Planning Program\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20official"
+        },
+        {
+          "query": "\"Sucession Planning Program\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20organizer"
+        },
+        {
+          "query": "\"Sucession Planning Program\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."

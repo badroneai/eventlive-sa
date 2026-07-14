@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-12T19:34:18.996Z",
+  "generated_at": "2026-07-14T11:08:17.740Z",
   "max_duration_hours": 8,
   "totals": {
-    "activated": 15,
+    "activated": 17,
     "skipped_long": 8
   },
   "activated": [
@@ -112,6 +112,24 @@
       "starts_at": "2026-07-21T10:00:00+03:00",
       "ends_at": "2026-07-21T11:00:00+03:00",
       "duration_hours": 1,
+      "session_type": "official-online-workshop"
+    },
+    {
+      "id": "event-الاستخدام-الآمن-لأجهزة-الأشعة-والتصوير-الطبي-داخل-مرافق-الرعاية-الصحية-و",
+      "title": "الاستخدام الآمن لأجهزة الأشعة والتصوير الطبي داخل مرافق الرعاية الصحية و المرجع الوطني لتحديد الجرعة الإشعاعية للمرضى",
+      "source_label": "Saudi Food and Drug Authority Events",
+      "starts_at": "2026-07-27T10:00:00+03:00",
+      "ends_at": "2026-07-27T12:00:00+03:00",
+      "duration_hours": 2,
+      "session_type": "official-online-workshop"
+    },
+    {
+      "id": "event-آلية-مطابقة-المخزون-الفعلي-مع-نظام-رصد-للصيدليات-والمستشفيات",
+      "title": "آلية مطابقة المخزون الفعلي مع نظام رصد للصيدليات والمستشفيات",
+      "source_label": "Saudi Food and Drug Authority Events",
+      "starts_at": "2026-08-05T10:00:00+03:00",
+      "ends_at": "2026-08-05T14:00:00+03:00",
+      "duration_hours": 4,
       "session_type": "official-online-workshop"
     },
     {

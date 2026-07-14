@@ -1,6 +1,6 @@
 # EventLive Official Agenda Radar
 
-Generated at: 2026-07-12T12:43:17.572Z
+Generated at: 2026-07-14T10:49:36.181Z
 
 Time scope: current-and-upcoming-only
 
@@ -8,8 +8,8 @@ This radar detects when first-party event pages expose a complete timed programm
 
 - Targets: 16
 - Published timed agendas: 3
-- Announced without timed agenda: 7
-- Placeholder agendas rejected: 1
+- Announced without timed agenda: 8
+- Placeholder agendas rejected: 0
 - Not published: 1
 - Protected or partnership: 1
 
@@ -18,8 +18,8 @@ This radar detects when first-party event pages expose a complete timed programm
 | LEAP 2026 | published-browser-extractor-active | 403 | 0 | 0 | public-browser-production-extractor |
 | Money20/20 Middle East 2026 | not-published | 404 | 1 | 0 | watch-until-published |
 | Future Investment Initiative 10th Edition | announced-no-timed-agenda | 200 | 0 | 0 | watch-until-timed-program |
-| Global AI Summit 2026 | unavailable | - | 0 | 0 | watch-official-event-page |
-| Global Forum on the Ethics of AI 2026 | unavailable | - | 0 | 0 | watch-official-event-page |
+| Global AI Summit 2026 | watch | 200 | 0 | 0 | watch-official-event-page |
+| Global Forum on the Ethics of AI 2026 | watch | 200 | 0 | 0 | watch-official-event-page |
 | Cityscape Global 2026 | protected-or-partnership | 403 | 0 | 0 | public-browser-or-partnership-only |
 | XP Music Futures 2026 | announced-no-timed-agenda | 200 | 1 | 0 | watch-official-event-page |
 | The Global Water Sustainability Conference 2026 | announced-no-timed-agenda | 200 | 1 | 0 | watch-official-event-page |
@@ -30,4 +30,4 @@ This radar detects when first-party event pages expose a complete timed programm
 | Saudi FM & Clean 2026 | announced-no-timed-agenda | 200 | 0 | 0 | watch-shared-event-agenda |
 | Global Proptech Summit 2026 | watch | 200 | 0 | 64 | watch-homepage-until-2026-agenda-replaces-historical-pdf |
 | Real Estate Supply Chain Forum 2026 | announced-no-timed-agenda | 200 | 0 | 6 | watch-until-timed-program |
-| CIPS MENA Conference and Awards 2026 | placeholder-not-publishable | 200 | 3 | 30 | reject-placeholder-until-official-program |
+| CIPS MENA Conference and Awards 2026 | announced-no-timed-agenda | 200 | 0 | 40 | reject-placeholder-until-official-program |

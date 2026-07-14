@@ -1,36 +1,36 @@
 # EventLive Official Resolver Report
 
-- generated_at: 2026-07-12T19:34:19.864Z
+- generated_at: 2026-07-14T11:08:22.191Z
 - source_ops_report: reports/source-ops-report.json
 - leads_seen: 10
 - resolver_tasks: 8
-- high_priority: 0
+- high_priority: 1
 
 ## Resolver Tasks
 
 | Priority | Lead | Source | City | Quality | Target sources | Next action |
 |---:|---|---|---|---|---|---|
-| 107 | Cat Show 3rd season in Saudi Pet & Vet Expo | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, informa-connect-saudi-events, saudi-water-authority-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 132 | Dubai Property Expo in Al Khobar | Eventbrite Saudi Arabia | Khobar | strong-lead/70 | dhahran-expo-calendar, informa-connect-saudi-events, madinah-chamber-events, ricec-events, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 107 | Family Office Investment Summit | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | informa-connect-saudi-events, ricec-events, asharqia-chamber-events, dhahran-expo-calendar, jcci-events-center | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 107 | Riyadh 2026 Venture Capital World Summit | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, informa-connect-saudi-events, saudi-water-authority-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 107 | Saudi Pet & Vet Expo 5th Edition 2026 | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, informa-connect-saudi-events, saudi-water-authority-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 97 | 25TH WPC Energy Congress | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, informa-connect-saudi-events, saudi-water-authority-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 97 | Family Office Investment Meeting | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | informa-connect-saudi-events, saudi-contractors-authority-events, asharqia-chamber-events, invest-saudi-events, jcci-events-center | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 97 | Sucession Planning Program | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | code-mcit-programs, cst-events-news, diriyah-season, enjoy-saudi-events, fii10-official-program | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 87 | Riyadh Social and Language Exchange (Make New Friends) ✨ | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | enjoy-saudi-events, misk-hub-events, riyadh-city-events, riyadh-season, aseer-season-asda | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 87 | Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨ | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | misk-hub-events, enjoy-saudi-events, riyadh-city-events, riyadh-season, platinumlist-saudi-city-network | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 
 ## Search Pack
 
-### Cat Show 3rd season in Saudi Pet & Vet Expo
+### Dubai Property Expo in Al Khobar
 
-- [site:rfecc.sa "Cat Show 3rd season in Saudi Pet & Vet Expo" "Riyadh"](https://www.google.com/search?q=site%3Arfecc.sa%20%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22)
-- [site:ricec.com "Cat Show 3rd season in Saudi Pet & Vet Expo" "Riyadh"](https://www.google.com/search?q=site%3Aricec.com%20%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22)
-- [site:dhahranexpo.com.sa "Cat Show 3rd season in Saudi Pet & Vet Expo" "Riyadh"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22)
-- [site:informaconnect.com "Cat Show 3rd season in Saudi Pet & Vet Expo" "Riyadh"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22)
-- [site:swa.gov.sa "Cat Show 3rd season in Saudi Pet & Vet Expo" "Riyadh"](https://www.google.com/search?q=site%3Aswa.gov.sa%20%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22)
-- ["Cat Show 3rd season in Saudi Pet & Vet Expo" "Riyadh" official](https://www.google.com/search?q=%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22%20official)
-- ["Cat Show 3rd season in Saudi Pet & Vet Expo" "Riyadh" organizer](https://www.google.com/search?q=%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22%20organizer)
-- ["Cat Show 3rd season in Saudi Pet & Vet Expo" "Riyadh" tickets](https://www.google.com/search?q=%22Cat%20Show%203rd%20season%20in%20Saudi%20Pet%20%26%20Vet%20Expo%22%20%22Riyadh%22%20tickets)
+- [site:dhahranexpo.com.sa "Dubai Property Expo in Al Khobar" "Khobar"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22)
+- [site:informaconnect.com "Dubai Property Expo in Al Khobar" "Khobar"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22)
+- [site:mcci.org.sa "Dubai Property Expo in Al Khobar" "Khobar"](https://www.google.com/search?q=site%3Amcci.org.sa%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22)
+- [site:ricec.com "Dubai Property Expo in Al Khobar" "Khobar"](https://www.google.com/search?q=site%3Aricec.com%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22)
+- [site:sdaia.gov.sa "Dubai Property Expo in Al Khobar" "Khobar"](https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22)
+- ["Dubai Property Expo in Al Khobar" "Khobar" official](https://www.google.com/search?q=%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22%20official)
+- ["Dubai Property Expo in Al Khobar" "Khobar" organizer](https://www.google.com/search?q=%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22%20organizer)
+- ["Dubai Property Expo in Al Khobar" "Khobar" tickets](https://www.google.com/search?q=%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22%20tickets)
 
 ### Family Office Investment Summit
 
@@ -54,17 +54,6 @@
 - ["Riyadh 2026 Venture Capital World Summit" "Riyadh" organizer](https://www.google.com/search?q=%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22%20organizer)
 - ["Riyadh 2026 Venture Capital World Summit" "Riyadh" tickets](https://www.google.com/search?q=%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22%20tickets)
 
-### Saudi Pet & Vet Expo 5th Edition 2026
-
-- [site:rfecc.sa "Saudi Pet & Vet Expo 5th Edition 2026" "Riyadh"](https://www.google.com/search?q=site%3Arfecc.sa%20%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22)
-- [site:ricec.com "Saudi Pet & Vet Expo 5th Edition 2026" "Riyadh"](https://www.google.com/search?q=site%3Aricec.com%20%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22)
-- [site:dhahranexpo.com.sa "Saudi Pet & Vet Expo 5th Edition 2026" "Riyadh"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22)
-- [site:informaconnect.com "Saudi Pet & Vet Expo 5th Edition 2026" "Riyadh"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22)
-- [site:swa.gov.sa "Saudi Pet & Vet Expo 5th Edition 2026" "Riyadh"](https://www.google.com/search?q=site%3Aswa.gov.sa%20%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22)
-- ["Saudi Pet & Vet Expo 5th Edition 2026" "Riyadh" official](https://www.google.com/search?q=%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22%20official)
-- ["Saudi Pet & Vet Expo 5th Edition 2026" "Riyadh" organizer](https://www.google.com/search?q=%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22%20organizer)
-- ["Saudi Pet & Vet Expo 5th Edition 2026" "Riyadh" tickets](https://www.google.com/search?q=%22Saudi%20Pet%20%26%20Vet%20Expo%205th%20Edition%202026%22%20%22Riyadh%22%20tickets)
-
 ### 25TH WPC Energy Congress
 
 - [site:rfecc.sa "25TH WPC Energy Congress" "Riyadh"](https://www.google.com/search?q=site%3Arfecc.sa%20%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22)
@@ -86,6 +75,17 @@
 - ["Family Office Investment Meeting" "Riyadh" official](https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20official)
 - ["Family Office Investment Meeting" "Riyadh" organizer](https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20organizer)
 - ["Family Office Investment Meeting" "Riyadh" tickets](https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20tickets)
+
+### Sucession Planning Program
+
+- [site:code.mcit.gov.sa "Sucession Planning Program" "Riyadh"](https://www.google.com/search?q=site%3Acode.mcit.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22)
+- [site:cst.gov.sa "Sucession Planning Program" "Riyadh"](https://www.google.com/search?q=site%3Acst.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22)
+- [site:diriyahseason.sa "Sucession Planning Program" "Riyadh"](https://www.google.com/search?q=site%3Adiriyahseason.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22)
+- [site:enjoy.sa "Sucession Planning Program" "Riyadh"](https://www.google.com/search?q=site%3Aenjoy.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22)
+- [site:fii-institute.org "Sucession Planning Program" "Riyadh"](https://www.google.com/search?q=site%3Afii-institute.org%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22)
+- ["Sucession Planning Program" "Riyadh" official](https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20official)
+- ["Sucession Planning Program" "Riyadh" organizer](https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20organizer)
+- ["Sucession Planning Program" "Riyadh" tickets](https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20tickets)
 
 ### Riyadh Social and Language Exchange (Make New Friends) ✨
 

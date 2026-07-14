@@ -1,7 +1,7 @@
 # EventLive Official Single-Session Activation
-- Generated at: 2026-07-12T19:34:18.996Z
+- Generated at: 2026-07-14T11:08:17.740Z
 - Max duration hours: 8
-- Activated: 15
+- Activated: 17
 - Skipped long events: 8
 
 | Source | Event | Duration | Type |
@@ -18,6 +18,8 @@
 | MDLBEAST Events | Beast House | 6h | official-entertainment-session |
 | Saudi Universities and Technical Colleges | FIFA World Cup 2026 Final: Celebrate Football's Biggest Night at the KAUST Fan Zone | 5.98h | official-community-session |
 | Saudi Food and Drug Authority Events | دور مقدمي الرعاية الصحية وضباط الاتصال في التعامل مع انذارات السلامة الصادرة من المركز الوطني لبلاغات الأجهزة والمستلزمات الطبية | 1h | official-online-workshop |
+| Saudi Food and Drug Authority Events | الاستخدام الآمن لأجهزة الأشعة والتصوير الطبي داخل مرافق الرعاية الصحية و المرجع الوطني لتحديد الجرعة الإشعاعية للمرضى | 2h | official-online-workshop |
+| Saudi Food and Drug Authority Events | آلية مطابقة المخزون الفعلي مع نظام رصد للصيدليات والمستشفيات | 4h | official-online-workshop |
 | Saudi Food and Drug Authority Events | الإدراج في خطوات | 2h | official-online-workshop |
 | Saudi Food and Drug Authority Events | احتياطات الأمان عند استخدام مبيدات آفات الصحة العامة | 1h | official-online-workshop |
 | Saudi Food and Drug Authority Events | دور الهيئة العامة للغذاء و الدواء في ضمان سلامة الاستخدام الامن لجهاز الماموجرام | 1h | official-online-workshop |

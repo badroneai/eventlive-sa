@@ -1,0 +1,94 @@
+{
+  "checked_at": "2026-07-14T11:08:18.073Z",
+  "targets": 9,
+  "evidence_found": 7,
+  "changed": 7,
+  "no_evidence": 2,
+  "failed": 0,
+  "results": [
+    {
+      "id": "event-unstable",
+      "host": "nofomo.com",
+      "url": "https://nofomo.com/collections/unstable",
+      "status": "no-evidence",
+      "reason": "no-explicit-public-price"
+    },
+    {
+      "id": "event-beast-house",
+      "host": "nofomo.com",
+      "url": "https://nofomo.com/collections/beast-house",
+      "status": "no-evidence",
+      "reason": "no-explicit-public-price"
+    },
+    {
+      "id": "event-a-thousand-and-one",
+      "host": "nofomo.com",
+      "url": "https://nofomo.com/events/a-thousand-and-one-2026/cart",
+      "status": "evidence",
+      "price_label": "499 SAR",
+      "price": 499,
+      "price_currency": "SAR",
+      "method": "nofomo-visible-ticket-price"
+    },
+    {
+      "id": "event-soundstorm-26",
+      "host": "nofomo.com",
+      "url": "https://nofomo.com/events/soundstorm-26/cart",
+      "status": "evidence",
+      "price_label": "269 SAR",
+      "price": 269,
+      "price_currency": "SAR",
+      "method": "nofomo-visible-ticket-price"
+    },
+    {
+      "id": "event-12th-middle-east-banking-ai-analytics-summit-2026",
+      "host": "eventbrite.com",
+      "url": "https://www.eventbrite.com/e/12th-middle-east-banking-ai-analytics-summit-2026-tickets-1992107636567",
+      "status": "evidence",
+      "price_label": "free · 0 USD",
+      "price": 0,
+      "price_currency": "USD",
+      "method": "eventbrite-json-ld"
+    },
+    {
+      "id": "event-15th-middle-east-enterprise-ai-analytics-summit",
+      "host": "eventbrite.com",
+      "url": "https://www.eventbrite.com/e/15th-middle-east-enterprise-ai-analytics-summit-tickets-1991914835895",
+      "status": "evidence",
+      "price_label": "free · 0 USD",
+      "price": 0,
+      "price_currency": "USD",
+      "method": "eventbrite-json-ld"
+    },
+    {
+      "id": "event-saudi-ai-week",
+      "host": "informaconnect.com",
+      "url": "https://informaconnect.com/saudi-ai-week/purchase/select-package/",
+      "status": "evidence",
+      "price_label": "525 USD",
+      "price": 525,
+      "price_currency": "USD",
+      "method": "informa-visible-package-price"
+    },
+    {
+      "id": "event-education-investment-saudi",
+      "host": "informaconnect.com",
+      "url": "https://informaconnect.com/education-investment-saudi.com/purchase/select-package/",
+      "status": "evidence",
+      "price_label": "499 USD",
+      "price": 499,
+      "price_currency": "USD",
+      "method": "informa-visible-package-price"
+    },
+    {
+      "id": "event-superreturn-saudi-arabia",
+      "host": "informaconnect.com",
+      "url": "https://informaconnect.com/superreturn-saudi-arabia/purchase/select-package/",
+      "status": "evidence",
+      "price_label": "1199 USD",
+      "price": 1199,
+      "price_currency": "USD",
+      "method": "informa-visible-package-price"
+    }
+  ]
+}

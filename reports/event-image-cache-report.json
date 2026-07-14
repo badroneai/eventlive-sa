@@ -1,64 +1,112 @@
 {
-  "generated_at": "2026-07-12T19:38:40.014Z",
+  "generated_at": "2026-07-14T11:11:54.990Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 611,
-    "fetched": 8,
-    "reused": 492,
+    "cached_total": 627,
+    "fetched": 16,
+    "reused": 484,
     "failed": 0,
     "skipped_recent_failures": 0,
     "remembered_failures": 3
   },
   "fetched": [
     {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122220/images-5.jpg",
-      "file": "dist/assets/event-images/saudi-logistic-warehousing-expo-9027df173b.jpg",
-      "bytes": 4385,
+      "source_url": "https://scth.scene7.com/is/image/scth/mohamed-hamaki-concert?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/mohamed-hamaki-concert-cd834f4ecd.webp",
+      "bytes": 26680,
       "events": 1
     },
     {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/1tllcxdg.n5m.jpg",
-      "file": "dist/assets/event-images/معسكر-أساسيات-هندسة-الميكاترونكس-83d2c7f296.jpg",
-      "bytes": 142680,
+      "source_url": "https://scth.scene7.com/is/image/scth/sunken-treasuers?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/sunken-treasures-ac2d0de6e5.webp",
+      "bytes": 89142,
       "events": 1
     },
     {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122706/fibo_arabia_logo_10431.webp",
-      "file": "dist/assets/event-images/fibo-2026-a3720e3b76.webp",
-      "bytes": 3872,
+      "source_url": "https://scth.scene7.com/is/image/scth/okhtabotiya?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/okhtabotiya-0013765084.webp",
+      "bytes": 61090,
       "events": 1
     },
     {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2025/02/26113050/images-4.png",
-      "file": "dist/assets/event-images/china-homelife-saudi-arabia-2026-7de58a4dbb.png",
-      "bytes": 2472,
+      "source_url": "https://scth.scene7.com/is/image/scth/curious-summer?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/curious-summers-a466fcddad.webp",
+      "bytes": 84982,
       "events": 1
     },
     {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/03/12031444/inter-aviation-Arabia-HP-PR-logo.png",
-      "file": "dist/assets/event-images/inter-aviation-arabia-ad9ea7f3b0.png",
-      "bytes": 13823,
+      "source_url": "https://scth.scene7.com/is/image/scth/qaadet-saad-eloud?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/qaadet-saad-eloud-c5b8a35494.webp",
+      "bytes": 123656,
       "events": 1
     },
     {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122431/WMT-Spotlight-Riyadh-Dates-1200x675-1-1024x576-1.jpg",
-      "file": "dist/assets/event-images/wtm-spotlight-riyadh-28228646b1.jpg",
-      "bytes": 34795,
+      "source_url": "https://scth.scene7.com/is/image/scth/made-in-egypt-comedy-show-ahmed-khairy?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/made-in-egypt-stand-up-comedy-show-by-ahmed-khairy-072a99ee54.webp",
+      "bytes": 129584,
       "events": 1
     },
     {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06123740/GqbqdoDWMAAm16R.jpg",
-      "file": "dist/assets/event-images/natrual-expo-af262c6fe0.jpg",
-      "bytes": 177148,
+      "source_url": "https://scth.scene7.com/is/image/scth/saif-2026?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/saif-2026-751a318bdf.webp",
+      "bytes": 267348,
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/68a12e07a6da5cc989dd7fbd73d03107.jpg",
-      "file": "dist/assets/event-images/bedayat-beginnings-of-saudi-art-movement-5815006859.jpg",
-      "bytes": 29283,
+      "source_url": "https://scth.scene7.com/is/image/scth/saleh-al-nawawi-comedy-riyadh?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/saleh-el-nawawy-stand-up-comedy-show-2259c6faa9.webp",
+      "bytes": 25810,
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/reggae-with-rosa?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/reggae-with-rsoa-3f95190c43.webp",
+      "bytes": 71774,
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/very-sary-night-from-exit-thmanyah?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/very-sary-night-from-exit-thmanyah-3843e11ef7.webp",
+      "bytes": 74272,
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/rahma-riad-at-vocally?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/rahma-riad-at-vocally-43ea8151b3.webp",
+      "bytes": 37554,
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/fill-in-the-blank-in-jeddah?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/fill-in-the-blank-in-jeddah-ae96c0cdd0.webp",
+      "bytes": 74198,
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/ahlam-concert-jeddah?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/ahlam-concert-ccdfe9ff8a.webp",
+      "bytes": 61348,
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/hussain-moheb?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/hussain-moheb-live-in-riyadh-66decad2f9.webp",
+      "bytes": 173254,
+      "events": 1
+    },
+    {
+      "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-07/wr345.jpg",
+      "file": "dist/assets/event-images/الاستخدام-الآمن-لأجهزة-الأشعة-والتصوير-الطبي-داخل-مرافق-الرعاية-الصحية-af021c2ccb.jpg",
+      "bytes": 142762,
+      "events": 2
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6b9f69436575717ae21e3e7a4a5b2db1.png",
+      "file": "dist/assets/event-images/summer-youth-program-dfe566c75a.png",
+      "bytes": 77224,
       "events": 1
     }
   ],
@@ -549,9 +597,9 @@
       "events": 1
     },
     {
-      "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-07/wrr12.jpg",
-      "file": "dist/assets/event-images/نقل-مبيدات-آفات-الصحة-العامة-dfaa164635.jpg",
-      "events": 7
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/68a12e07a6da5cc989dd7fbd73d03107.jpg",
+      "file": "dist/assets/event-images/bedayat-beginnings-of-saudi-art-movement-5815006859.jpg",
+      "events": 1
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/85f2d0c53ebf2dfa133f5674b5e960aa.jpg",
@@ -597,6 +645,11 @@
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/IGYDN_Still_2_72_DPI_Tawfeek_Barhom_Kidam_Foss_production-cc5bea-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-cinema-in-short-film-programme-summer-edition-ca91ef0332.jpg",
       "events": 1
+    },
+    {
+      "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-07/wrr12.jpg",
+      "file": "dist/assets/event-images/نقل-مبيدات-آفات-الصحة-العامة-dfaa164635.jpg",
+      "events": 7
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d9bf7aded9306f8c7266477951ef3d49.jpg",
@@ -864,8 +917,18 @@
       "events": 1
     },
     {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/1ihbc14l.iun.webp",
+      "file": "dist/assets/event-images/معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine-73a0badd44.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/psvxh1jc.vwh.png",
       "file": "dist/assets/event-images/معسكر-تصميم-وتصنيع-الحلول-الهندسية-a59ff44dd2.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/4imooj3a.lm4.webp",
+      "file": "dist/assets/event-images/معسكر-الأنظمة-الذاتية-للدرونز-7b0d0348ca.webp",
       "events": 1
     },
     {
@@ -919,11 +982,6 @@
       "events": 1
     },
     {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/4imooj3a.lm4.webp",
-      "file": "dist/assets/event-images/معسكر-الأنظمة-الذاتية-للدرونز-7b0d0348ca.webp",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/e5b8be6fa3a209657ca287b675a308b4.jpg",
       "file": "dist/assets/event-images/platforms-manager-skills-4ccfdc9203.jpg",
       "events": 1
@@ -934,8 +992,8 @@
       "events": 1
     },
     {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/1ihbc14l.iun.webp",
-      "file": "dist/assets/event-images/معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine-73a0badd44.webp",
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/1tllcxdg.n5m.jpg",
+      "file": "dist/assets/event-images/معسكر-أساسيات-هندسة-الميكاترونكس-83d2c7f296.jpg",
       "events": 1
     },
     {
@@ -954,11 +1012,6 @@
       "events": 1
     },
     {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/4jaiuua2.tw3.webp",
-      "file": "dist/assets/event-images/معسكر-أساسيات-الأمن-السيبراني-bff0c3d784.webp",
-      "events": 1
-    },
-    {
       "source_url": "https://dhahranexpo.com.sa/userfiles/clients/G3_24052026142116.jpg",
       "file": "dist/assets/event-images/offshore-technology-innovation-technical-conference-expo-offshore-arab-46911ebc89.jpg",
       "events": 15
@@ -966,6 +1019,11 @@
     {
       "source_url": "https://saudi.smartdataseries.com/wp-content/uploads/2025/11/sdais-saudi.jpg",
       "file": "dist/assets/event-images/smart-data-ai-summit-1e2bce2056.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122220/images-5.jpg",
+      "file": "dist/assets/event-images/saudi-logistic-warehousing-expo-9027df173b.jpg",
       "events": 1
     },
     {
@@ -1016,6 +1074,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/GsCAI5HW8AAJ4iz.jpeg?itok=_Q-EZrLo",
       "file": "dist/assets/event-images/saudi-warehousing-logistics-expo-a6feb9468b.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/4jaiuua2.tw3.webp",
+      "file": "dist/assets/event-images/معسكر-أساسيات-الأمن-السيبراني-bff0c3d784.webp",
       "events": 1
     },
     {
@@ -1071,6 +1134,21 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/19d1952725ab7da71f45c678173b1866.jpg",
       "file": "dist/assets/event-images/islamic-wood-mastery-inlay-hexagonal-jewelry-box-joinery-for-mangour-s-b34d018214.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/03/12031444/inter-aviation-Arabia-HP-PR-logo.png",
+      "file": "dist/assets/event-images/inter-aviation-arabia-ad9ea7f3b0.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122706/fibo_arabia_logo_10431.webp",
+      "file": "dist/assets/event-images/fibo-2026-a3720e3b76.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122431/WMT-Spotlight-Riyadh-Dates-1200x675-1-1024x576-1.jpg",
+      "file": "dist/assets/event-images/wtm-spotlight-riyadh-28228646b1.jpg",
       "events": 1
     },
     {
@@ -1306,6 +1384,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/bg-new.png?itok=bQIB0PjC",
       "file": "dist/assets/event-images/global-proptech-summit-d9f33cd4c5.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06123740/GqbqdoDWMAAm16R.jpg",
+      "file": "dist/assets/event-images/natrual-expo-af262c6fe0.jpg",
       "events": 1
     },
     {
@@ -1566,6 +1649,11 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/96d2a1e8dcdaf86940cde863416e9f3b.jpg",
       "file": "dist/assets/event-images/the-art-of-writing-a-novel-6ea7798bd4.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2025/02/26113050/images-4.png",
+      "file": "dist/assets/event-images/china-homelife-saudi-arabia-2026-7de58a4dbb.png",
       "events": 1
     },
     {
@@ -2442,86 +2530,6 @@
       "source_url": "https://services.mi.org.sa/upload/events/main/638808965318356958.jpeg",
       "file": "dist/assets/event-images/معرض-فرنشايز-ماركت-df5b393453.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://services.mi.org.sa/upload/events/main/638808968780713267.jpg",
-      "file": "dist/assets/event-images/لقاء-قطاع-السياحة-والترفيه-مع-الجهات-الداعمة-2bb149acac.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://services.mi.org.sa/upload/events/main/638826240043796752.jpg",
-      "file": "dist/assets/event-images/الجمعية-العمومية-العادية-91060f5754.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://services.mi.org.sa/upload/events/main/638826936113991547.jpg",
-      "file": "dist/assets/event-images/منتدى-العمرة-والزيارة-e471020b77.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://services.mi.org.sa/upload/events/main/638826939917943912.jpg",
-      "file": "dist/assets/event-images/ورشة-عمل-خدمات-الإيواء-والسكن-بمنطقة-المدينة-المنورة-4c5c3ce217.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://services.mi.org.sa/upload/events/main/638826942067284259.jpg",
-      "file": "dist/assets/event-images/ورشة-عمل-الذكاء-الاصطناعي-والابتكار-في-خدمات-العمرة-معايير-الضيافة-وال-17bbbfd879.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://abhacci.org.sa/Files/Images/workshop12.jpeg",
-      "file": "dist/assets/event-images/غرفة-أبها-تدعو-شباب-عسير-للتطوع-السياحي-لتطوير-القطاع-وتعزيز-العمل-الم-0a95e69d24.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://storage.googleapis.com/download/storage/v1/b/jcci/o/events%2F1753721732576-4fba7b71-0f6d-4ed0-b9ce-145f4626eb9b.jpeg?generation=1753721733625638&alt=media",
-      "file": "dist/assets/event-images/تطوير-الخطة-الاستراتيجية-لجامعة-جازان-وفقا-لاحتياجات-سوق-العمل-a1d5d07e4f.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://ssa.gov.sa/media/sw3oacbp/gjnxh7ow0aauzcw.webp?width=1400&height=788&rnd=134268818555530000",
-      "file": "dist/assets/event-images/leap25-3492dc970d.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://storage.googleapis.com/download/storage/v1/b/jcci/o/events%2F1753721233159-8d180dca-1df7-40da-9e3e-a2c11971904e.jpg?generation=1753721235043820&alt=media",
-      "file": "dist/assets/event-images/معايير-وآلية-التقييم-والسياسات-المنظمة-للاعتماد-الوطني-07ca1c9f5a.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://abhacci.org.sa/Files/Images/IMG_2448.JPG",
-      "file": "dist/assets/event-images/ورشة-عمل-تراخيص-مرافق-الضيافة-والأنشطة-السياحية-والرقابة-في-القطاع-الس-91823408e2.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://storage.googleapis.com/download/storage/v1/b/jcci/o/events%2F1753720797015-7e00cc11-34c6-4b8f-97f9-612237f5964f.jpg?generation=1753720799140125&alt=media",
-      "file": "dist/assets/event-images/ورشة-عمل-الفرص-والتحديات-في-الخدمات-الصناعية-c96b1c9304.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://services.mi.org.sa/upload/events/main/638826173269573512.jpg",
-      "file": "dist/assets/event-images/لقاء-قطاع-خدمات-الحج-والعمرة-بمنطقة-المدينة-المنورة-241c1663ed.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://services.mi.org.sa/upload/events/main/638826141475937730.jpg",
-      "file": "dist/assets/event-images/لقاء-القطاع-العقاري-بمنطقة-المدينة-المنورة-bd919ad06e.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://services.mi.org.sa/upload/events/main/638826135367062791.png",
-      "file": "dist/assets/event-images/ورشة-المحتوى-المحلي-وفائدته-للمنشآت-a8b8c21188.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://storage.googleapis.com/download/storage/v1/b/jcci/o/events%2F1753719950219-ce9f1624-0b2d-4eff-9c3c-fe032067bd7f.png?generation=1753719952076458&alt=media",
-      "file": "dist/assets/event-images/ورشة-تعريفية-عن-نظام-الشركات-de87d5fb80.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://services.mi.org.sa/upload/events/main/638825356566925613.png",
-      "file": "dist/assets/event-images/الابتكار-وريادة-الأعمال-في-منظومة-الحج-0b52b5adbf.png",
-      "events": 1
     }
   ],
   "rejected_removed": [],
@@ -2529,6 +2537,6 @@
   "failed": [],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:8"
+    "fetched:16"
   ]
 }

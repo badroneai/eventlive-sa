@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-12T19:33:42.452Z",
+  "generated_at": "2026-07-14T11:07:49.732Z",
   "catalog": "data/events_catalog.json",
   "source": "Dhahran Expo Calendar",
   "totals": {
-    "targets": 15,
-    "candidates": 15,
-    "enriched": 15,
+    "targets": 16,
+    "candidates": 16,
+    "enriched": 16,
     "skipped": 0
   },
   "enriched": [
@@ -52,6 +52,15 @@
       "ends_at": "2026-09-22T18:00:00+03:00",
       "organizer": "Spartans and Knights Events Management",
       "category": "exhibition",
+      "features": 6
+    },
+    {
+      "id": "event-music-concerts-national-day",
+      "title": "Music Concerts National Day",
+      "starts_at": "2026-09-23T09:00:00+03:00",
+      "ends_at": "2026-09-24T18:00:00+03:00",
+      "organizer": "Creative XP",
+      "category": "music",
       "features": 6
     },
     {

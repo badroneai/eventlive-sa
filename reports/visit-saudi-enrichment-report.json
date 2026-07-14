@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-12T19:33:42.689Z",
+  "generated_at": "2026-07-14T11:07:49.978Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
-    "targets": 13,
-    "candidates": 15,
-    "enriched": 13,
-    "fetched": 13,
-    "images": 11,
+    "targets": 23,
+    "candidates": 26,
+    "enriched": 23,
+    "fetched": 23,
+    "images": 21,
     "fetch_failures": 0
   },
   "enriched": [
@@ -28,6 +28,14 @@
       "features": 7
     },
     {
+      "id": "event-sunken-treasures",
+      "title": "Sunken Treasures",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/sunken-treasuers?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
       "id": "event-aseer-season",
       "title": "Aseer Season",
       "source_method": "official-page-html",
@@ -44,10 +52,58 @@
       "features": 7
     },
     {
+      "id": "event-okhtabotiya",
+      "title": "Okhtabotiya",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/okhtabotiya?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
       "id": "event-al-farabi-comeback-night",
       "title": "Al-Farabi: Comeback Night",
       "source_method": "official-page-html",
       "image_url": "https://scth.scene7.com/is/image/scth/al-farab-comeback-night?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-made-in-egypt-stand-up-comedy-show-by-ahmed-khairy",
+      "title": "Made in Egypt: Stand Up Comedy Show by Ahmed Khairy",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/made-in-egypt-comedy-show-ahmed-khairy?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-mohamed-hamaki-concert",
+      "title": "Mohamed Hamaki Concert",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/mohamed-hamaki-concert?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-saleh-el-nawawy-stand-up-comedy-show-2",
+      "title": "Saleh El Nawawy - Stand Up Comedy Show",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/saleh-al-nawawi-comedy-riyadh?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-reggae-with-rsoa",
+      "title": "Reggae With Rsoa",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/reggae-with-rosa?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-very-sary-night-from-exit-thmanyah",
+      "title": "Very Sary Night from Exit Thmanyah",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/very-sary-night-from-exit-thmanyah?wid=1920&hei=1080&fit=constrain&fmt=webp",
       "fetched": true,
       "features": 7
     },
@@ -60,10 +116,34 @@
       "features": 7
     },
     {
+      "id": "event-rahma-riad-at-vocally",
+      "title": "Rahma Riad at Vocally",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/rahma-riad-at-vocally?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-fill-in-the-blank-in-jeddah",
+      "title": "Fill in the Blank in Jeddah",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/fill-in-the-blank-in-jeddah?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
       "id": "event-international-falcon-breeders-auction",
       "title": "International Falcon Breeders Auction",
       "source_method": "official-page-html",
       "image_url": "https://scth.scene7.com/is/image/scth/international-falcon-breeders-auction-in-riyadh?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-hussain-moheb-live-in-riyadh",
+      "title": "Hussain Moheb Live in Riyadh",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/hussain-moheb?wid=1920&hei=1080&fit=constrain&fmt=webp",
       "fetched": true,
       "features": 7
     },

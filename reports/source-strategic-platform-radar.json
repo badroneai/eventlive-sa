@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-07-12T12:43:25.663Z",
+  "generated_at": "2026-07-14T10:49:38.082Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -213,17 +213,17 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 50494,
+          "bytes": 100405,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 14,
+            "item_count": 29,
             "sample_titles": [
               "ذا جروفز",
               "معرض اللغة العربية للطفل",
               "معرض اللغة العربية 28",
-              "منطقة مشجعي كوكاكولا في جاكس",
-              "كشتة "
+              "كنوز غارقة",
+              "منطقة مشجعي كوكاكولا في جاكس"
             ]
           },
           "sample": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"فعالية\",\"title\":\"ذا جروفز\",\"subtitle\":\"عالم يتطور مع كل فصل جديد\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/groves-riyadh-25.jpg\",\"mobileImageReference\":\"/content/dam/wvs…"
@@ -231,17 +231,17 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 52577,
+          "bytes": 102894,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 14,
+            "item_count": 29,
             "sample_titles": [
               "The Groves",
               "Arabic Language Exhibition for kids",
               "Arabic Language Exhibition 28",
-              "Coca-Cola Fan Zone at JAX District",
-              "Kashtah"
+              "Sunken Treasures",
+              "Coca-Cola Fan Zone at JAX District"
             ]
           },
           "sample": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"EVENT\",\"title\":\"The Groves\",\"subtitle\":\"A World That Evolves With Every Chapter\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/groves-riyadh-25.jpg\",\"mobileImageReference\":\"/…"
@@ -260,7 +260,7 @@
       "final_url": "https://webook.com/ar/explore",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 6097,
+      "bytes": 6098,
       "title": "",
       "classification": "protected",
       "error": "",
@@ -293,7 +293,7 @@
         "https://wbk-assets.webook.com/0.6.71/assets/react-helmet-Ba2OUe2H.js",
         "https://wbk-assets.webook.com/0.6.71/assets/@wbk/cruises-6kvjg8QN.js",
         "https://wbk-assets.webook.com/0.6.71/assets/@wbk/auction-DMfL0ho8.js",
-        "https://webook.com/cdn-cgi/content?id=ZpMYQVs5VYom0GwACBdy4gayHbyqPTkd6mkv73.Mq10-1783860247.182341-1.2.1.1-wUCe6sE.BJxfeDkeNNR7W.u3hEsGcPiKiljfuGxyxZo",
+        "https://webook.com/cdn-cgi/content?id=Dqkql3OFuuXjpcZDeMnQXcxEp.rM_NeDq7zeH_oAJw0-1784026220.3603888-1.2.1.1-NxuqSBft0dNgyjqkJjGKsxuSs3W.ZfK4OJV3cRkvBmc",
         "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496"
       ],
       "page_hint_words": [

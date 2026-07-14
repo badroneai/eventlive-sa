@@ -1,19 +1,29 @@
 {
-  "generated_at": "2026-07-12T19:34:18.025Z",
+  "generated_at": "2026-07-14T11:08:16.860Z",
   "totals": {
-    "targets": 2,
-    "enriched": 2,
-    "fetched": 1,
-    "images": 2,
+    "targets": 6,
+    "enriched": 6,
+    "fetched": 5,
+    "images": 6,
     "fetch_failures": 1
   },
   "enriched": [
     {
-      "id": "event-bedayat-beginnings-of-saudi-art-movement",
-      "title": "Bedayat: Beginnings of Saudi Art Movement",
-      "source_label": "Ithra Events",
-      "source_method": "official-public-algolia-index",
-      "source_url": "https://www.ithra.com/en/programme/2026/ithra-museum/bedayat-exhibition-beginnings-saudi-art-movement",
+      "id": "event-ahlam-concert",
+      "title": "Ahlam Concert",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/jeddah/events/ahlam-concert",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-curious-summers",
+      "title": "Curious Summers",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/riyadh/events/curious-summer",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
@@ -27,6 +37,36 @@
       "fetched": false,
       "image": true,
       "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-qaadet-saad-eloud",
+      "title": "Qaadet Saad Eloud",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/riyadh/events/qaadet-saad-eloud",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-saif-2026",
+      "title": "SAIF 2026",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/riyadh/events/saif-2026",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-summer-youth-program",
+      "title": "Summer Youth Program",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/summer-youth-program-1",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
     }
   ],
   "failed": [
