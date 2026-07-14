@@ -103,17 +103,27 @@ const visitSaudiEvents = extractVisitSaudiApiEvents(JSON.stringify({
       season: { title: 'Experience Riyadh Season' },
       categories: [{ title: 'Entertainment' }],
       targetGroupTags: ['sauditourism:audience/adults']
+    }, {
+      title: 'Saudi Overnight Test Event',
+      subtitle: 'Late-night event whose source keeps the same calendar date',
+      startDate: '2026-08-09T00:00:00.000+00:00',
+      endDate: '2026-08-09T00:00:00.000+00:00',
+      cityId: 'riyadh',
+      pageLink: { url: 'https://www.visitsaudi.com/en/events/saudi-overnight-test-event' },
+      timings: [{ startTimeLabel: '21:00', endTimeLabel: '00:30' }]
     }]
   }
 }), visitSaudiSource);
 
-assert.equal(visitSaudiEvents.length, 1);
+assert.equal(visitSaudiEvents.length, 2);
 assert.equal(visitSaudiEvents[0].title, 'Saudi Live Test Event');
 assert.equal(visitSaudiEvents[0].city, 'Riyadh');
 assert.equal(visitSaudiEvents[0].starts_at, '2026-08-05T16:00:00+03:00');
 assert.equal(visitSaudiEvents[0].ends_at, '2026-08-07T22:30:00+03:00');
 assert.ok(visitSaudiEvents[0].tags.includes('Experience Riyadh Season'));
 assert.equal(visitSaudiEvents[0].image_url, 'https://scth.scene7.com/is/image/scth/saudi-live-test-event?wid=1400&hei=788&fit=constrain&fmt=webp');
+assert.equal(visitSaudiEvents[1].starts_at, '2026-08-09T21:00:00+03:00');
+assert.equal(visitSaudiEvents[1].ends_at, '2026-08-10T00:30:00+03:00', 'same-date Visit Saudi closing times before the start must roll into the next day');
 
 const investSaudiEvents = extractInvestSaudiEvents(JSON.stringify({
   data: [{

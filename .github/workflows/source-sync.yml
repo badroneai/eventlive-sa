@@ -85,6 +85,8 @@ jobs:
           npm run test:source-run-state
           npm run test:source-future-only
           npm run test:source-cadence
+          npm run test:source-extractors
+          npm run test:source-collection-delta
           npm run test:source-sync-workflow
           npm run test:incremental-build
 
