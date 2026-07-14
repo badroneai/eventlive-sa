@@ -98,6 +98,7 @@ jobs:
           npm run validate:gate
           npm run test:csv
           npm run test:source-auto-publish
+          npm run test:source-auto-publish-semantic
           npm run test:source-growth
           npm run test:source-health-gate
           npm run test:source-action-identity

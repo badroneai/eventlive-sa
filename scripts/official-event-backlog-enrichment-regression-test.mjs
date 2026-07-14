@@ -3,9 +3,15 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const root = process.cwd();
-const catalogPath = path.join(root, 'data', 'events_catalog.json');
-const distEventsPath = path.join(root, 'dist', 'events.json');
-const reportPath = path.join(root, 'reports', 'official-event-backlog-enrichment-report.json');
+const catalogPath = process.env.EVENTLIVE_EVENTS_CATALOG_FILE
+  ? path.join(root, process.env.EVENTLIVE_EVENTS_CATALOG_FILE)
+  : path.join(root, 'data', 'events_catalog.json');
+const distEventsPath = process.env.EVENTLIVE_PUBLIC_EVENTS_FILE
+  ? path.join(root, process.env.EVENTLIVE_PUBLIC_EVENTS_FILE)
+  : path.join(root, 'dist', 'events.json');
+const reportPath = process.env.EVENTLIVE_BACKLOG_ENRICHMENT_REPORT
+  ? path.join(root, process.env.EVENTLIVE_BACKLOG_ENRICHMENT_REPORT)
+  : path.join(root, 'reports', 'official-event-backlog-enrichment-report.json');
 
 assert.equal(fs.existsSync(catalogPath), true, 'data/events_catalog.json must exist');
 assert.equal(fs.existsSync(distEventsPath), true, 'dist/events.json must exist; run npm run build first');
@@ -88,8 +94,27 @@ assert.equal(
   'Ithra outlines must describe the extracted official session schedule'
 );
 
-const distPublishedWithOutline = distEvents.filter((event) => event.program_outline);
-assert.ok(distPublishedWithOutline.length >= published.length, 'build must carry enriched outlines into dist/events.json');
+const normalizeIdentityPart = (value = '') => String(value)
+  .normalize('NFKC')
+  .toLowerCase()
+  .replace(/[\p{P}\p{S}]+/gu, ' ')
+  .replace(/\s+/g, ' ')
+  .trim();
+const publicIdentity = (event) => [
+  normalizeIdentityPart(event.title),
+  normalizeIdentityPart(event.city),
+  event.starts_at || '',
+  event.ends_at || '',
+  normalizeIdentityPart(event.source_label || event.organizer)
+].join('|');
+const distById = new Map(distEvents.map((event) => [event.id, event]));
+const distByIdentity = new Map(distEvents.map((event) => [publicIdentity(event), event]));
+
+for (const event of published) {
+  const publicEvent = distById.get(event.id) || distByIdentity.get(publicIdentity(event));
+  assert.ok(publicEvent, `${event.id} must have a public representative in dist/events.json`);
+  assert.ok(publicEvent.program_outline, `${event.id} public representative must retain program_outline`);
+}
 
 if (fs.existsSync(reportPath)) {
   const report = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
