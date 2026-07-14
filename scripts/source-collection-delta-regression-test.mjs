@@ -106,6 +106,33 @@ assert.equal(refreshedRecurring[0].id, 'candidate-recurring-new');
 assert.equal(refreshedRecurring[0].matched_catalog_event_id, 'event-recurring-program');
 assert.equal(refreshedRecurring[0].review_status, 'approved-for-catalog');
 
+const punctuationDuplicates = mergeCandidates([], [{
+  id: 'candidate-dhahran-shared-id',
+  source_label: 'Dhahran Expo Calendar',
+  source_url: 'https://dhahranexpo.com.sa',
+  title: 'Business Sector Annual Reception.',
+  starts_at: '2026-12-01T09:00:00+03:00',
+  ends_at: '2026-12-01T18:00:00+03:00'
+}, {
+  id: 'candidate-dhahran-shared-id',
+  source_label: 'Dhahran Expo Calendar',
+  source_url: 'https://dhahranexpo.com.sa',
+  title: 'Business Sector Annual Reception',
+  starts_at: '2026-12-01T09:00:00+03:00',
+  ends_at: '2026-12-01T18:00:00+03:00'
+}]);
+assert.equal(punctuationDuplicates.length, 1, 'source title punctuation variants must not create duplicate candidate IDs');
+
+const invalidChronology = mergeCandidates([], [{
+  id: 'candidate-invalid-chronology',
+  source_label: 'Official Source',
+  source_url: 'https://example.gov.sa/event/invalid-chronology',
+  title: 'Invalid chronology',
+  starts_at: '2026-12-01T21:00:00+03:00',
+  ends_at: '2026-12-01T00:30:00+03:00'
+}]);
+assert.equal(invalidChronology.length, 0, 'invalid end-before-start candidates must be rejected before validation and publication');
+
 assert.equal(
   isPastCandidate({
     starts_at: '2026-07-01T09:00:00+03:00',

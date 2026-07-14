@@ -643,7 +643,8 @@ function isValidPublicDateTime(value = '') {
 }
 
 function hasValidCandidateDates(candidate = {}) {
-  return isValidPublicDateTime(candidate.starts_at) && isValidPublicDateTime(candidate.ends_at);
+  if (!isValidPublicDateTime(candidate.starts_at) || !isValidPublicDateTime(candidate.ends_at)) return false;
+  return Date.parse(candidate.ends_at) >= Date.parse(candidate.starts_at);
 }
 
 function isoDateToSaudiDateTime(value, time = '09:00:00') {
@@ -858,6 +859,14 @@ function addHoursToSaudiDateTime(value, hours = 2) {
     Number(match[6])
   );
   return saudiDateTimeFromMillis(utcMillis + hours * 60 * 60 * 1000);
+}
+
+function rollOvernightEnd(startsAt, endsAt) {
+  const starts = Date.parse(startsAt);
+  const ends = Date.parse(endsAt);
+  if (!Number.isFinite(starts) || !Number.isFinite(ends) || ends >= starts) return endsAt;
+  if (String(startsAt).slice(0, 10) !== String(endsAt).slice(0, 10)) return endsAt;
+  return addHoursToSaudiDateTime(endsAt, 24) || endsAt;
 }
 
 function cityFromSlugOrTitle(value = '', fallback = 'Saudi Arabia') {
@@ -2095,6 +2104,8 @@ function extractVisitSaudiApiEvents(payloadText, source) {
       const startTime = event.dailyStartTime || event.timings?.[0]?.startTimeLabel || '09:00';
       const endTime = event.dailyEndTime || event.timings?.[0]?.endTimeLabel || '18:00';
       const imageUrl = visitSaudiImageFromEvent(event);
+      const startsAt = dateTimeFromParts(event.startDate, startTime);
+      const endsAt = rollOvernightEnd(startsAt, dateTimeFromParts(event.endDate, endTime));
       return {
         title: event.title,
         url: event.pageLink?.url || event.ticketCTALink || source.url,
@@ -2108,8 +2119,8 @@ function extractVisitSaudiApiEvents(payloadText, source) {
           image_alt: event.bannerImages?.[0]?.alt || event.title,
           image_source_url: event.pageLink?.url || source.url
         } : {}),
-        starts_at: dateTimeFromParts(event.startDate, startTime),
-        ends_at: dateTimeFromParts(event.endDate, endTime),
+        starts_at: startsAt,
+        ends_at: endsAt,
         confidence: 'official',
         review_status: 'ready-for-review',
         publication_gate: 'human-review',
@@ -2754,7 +2765,7 @@ function extractDhahranExpoCalendar(html, source) {
     if (!title || /^private\s+(event|wedding)$/i.test(title) || /^music concert$/i.test(title)) continue;
     const dates = parseDhahranDateRange(dateText, 2026);
     if (!dates) continue;
-    const key = `${title}|${dates.starts_at}`;
+    const key = `${normalizeCandidateTitleKey(title)}|${dates.starts_at}`;
     if (seen.has(key)) continue;
     seen.add(key);
     items.push({
@@ -5462,6 +5473,13 @@ function normalizeCandidateKeyValue(value) {
   return decodeHtml(value).trim().toLowerCase().replace(/\s+/g, ' ');
 }
 
+function normalizeCandidateTitleKey(value) {
+  return normalizeCandidateKeyValue(value)
+    .replace(/[\p{P}\p{S}]+/gu, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 function extractScegaEvents(payload, source) {
   let parsed;
   try { parsed = JSON.parse(payload); } catch { return []; }
@@ -5529,7 +5547,7 @@ function extractScegaEvents(payload, source) {
 function candidateMergeKey(candidate) {
   return [
     normalizeCandidateKeyValue(candidate.source_url),
-    normalizeCandidateKeyValue(candidate.title),
+    normalizeCandidateTitleKey(candidate.title),
     String(candidate.starts_at || '').slice(0, 10)
   ].join('|');
 }
