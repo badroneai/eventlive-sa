@@ -1,18 +1,19 @@
 # EventLive Source Growth
 
-- generated_at: 2026-07-14T14:21:26.685Z
-- status: degraded
+- generated_at: 2026-07-14T19:52:03.898Z
+- status: healthy
 - public_events: 1204
 - public_delta: 86
-- new_active_candidates: 10
+- new_active_candidates: 45
 - new_ended_events: 0
-- published_new: 2
-- collector_errors: 1
+- published_new: 1
+- collector_errors: 0
 - no_growth_streak: 0
 
 | Run | Public | Delta | New candidates | New ended | Published | Errors | Status |
 |---|---:|---:|---:|---:|---:|---:|---|
-| 2026-07-14T14:13:22.464Z | 1204 | 86 | 10 | 0 | 2 | 1 | degraded |
+| 2026-07-14T19:43:03.742Z | 1204 | 86 | 45 | 0 | 1 | 0 | healthy |
+| 2026-07-14T14:13:22.464Z | 1118 | 0 | 10 | 0 | 2 | 1 | critical-persistence-gap |
 | 2026-07-14T10:57:51.066Z | 1118 | 0 | 74 | 0 | 19 | 5 | critical-persistence-gap |
 | 2026-07-12T19:30:21.570Z | 1118 | 0 | 7 | 0 | 2 | 1 | critical-persistence-gap |
 | 2026-07-12T13:55:28.945Z | 1118 | 0 | 5 | 0 | 2 | 0 | critical-persistence-gap |
@@ -23,4 +24,3 @@
 | 2026-07-11T13:53:17.217Z | 1118 | 0 | 4 | 0 | 1 | 0 | critical-persistence-gap |
 | 2026-07-11T11:12:43.732Z | 1118 | 0 | 4 | 0 | 1 | 1 | critical-persistence-gap |
 | 2026-07-11T11:01:12.504Z | 1118 | 0 | 5 | 0 | 1 | 0 | critical-persistence-gap |
-| 2026-07-11T09:22:14.505Z | 1118 | 0 | 12 | 0 | 2 | 7 | critical-persistence-gap |

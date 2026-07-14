@@ -1,115 +1,18 @@
 {
-  "generated_at": "2026-07-14T14:21:26.982Z",
+  "generated_at": "2026-07-14T19:52:04.156Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
     "cached_total": 627,
-    "fetched": 16,
-    "reused": 484,
+    "fetched": 0,
+    "reused": 500,
     "failed": 0,
     "skipped_recent_failures": 0,
     "remembered_failures": 3
   },
-  "fetched": [
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/okhtabotiya?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/okhtabotiya-0013765084.webp",
-      "bytes": 61090,
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/curious-summer?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/curious-summers-a466fcddad.webp",
-      "bytes": 84982,
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/mohamed-hamaki-concert?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/mohamed-hamaki-concert-cd834f4ecd.webp",
-      "bytes": 26680,
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/made-in-egypt-comedy-show-ahmed-khairy?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/made-in-egypt-stand-up-comedy-show-by-ahmed-khairy-072a99ee54.webp",
-      "bytes": 129584,
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/qaadet-saad-eloud?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/qaadet-saad-eloud-c5b8a35494.webp",
-      "bytes": 123656,
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/sunken-treasuers?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/sunken-treasures-ac2d0de6e5.webp",
-      "bytes": 89142,
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/saif-2026?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/saif-2026-751a318bdf.webp",
-      "bytes": 267348,
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/saleh-al-nawawi-comedy-riyadh?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/saleh-el-nawawy-stand-up-comedy-show-2259c6faa9.webp",
-      "bytes": 25810,
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/reggae-with-rosa?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/reggae-with-rsoa-3f95190c43.webp",
-      "bytes": 71774,
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/rahma-riad-at-vocally?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/rahma-riad-at-vocally-43ea8151b3.webp",
-      "bytes": 37554,
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/fill-in-the-blank-in-jeddah?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/fill-in-the-blank-in-jeddah-ae96c0cdd0.webp",
-      "bytes": 74198,
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/very-sary-night-from-exit-thmanyah?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/very-sary-night-from-exit-thmanyah-3843e11ef7.webp",
-      "bytes": 74272,
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/ahlam-concert-jeddah?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/ahlam-concert-ccdfe9ff8a.webp",
-      "bytes": 61348,
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/hussain-moheb?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/hussain-moheb-live-in-riyadh-66decad2f9.webp",
-      "bytes": 173254,
-      "events": 1
-    },
-    {
-      "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-07/wr345.jpg",
-      "file": "dist/assets/event-images/الاستخدام-الآمن-لأجهزة-الأشعة-والتصوير-الطبي-داخل-مرافق-الرعاية-الصحية-af021c2ccb.jpg",
-      "bytes": 142762,
-      "events": 2
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6b9f69436575717ae21e3e7a4a5b2db1.png",
-      "file": "dist/assets/event-images/summer-youth-program-dfe566c75a.png",
-      "bytes": 77224,
-      "events": 1
-    }
-  ],
+  "fetched": [],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -204,6 +107,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/Screenshot%202026-02-26%20133648.png?itok=xy0_45S_",
       "file": "dist/assets/event-images/horses-and-equestrian-heritage-exhibition-7b885e70c4.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/sunken-treasuers?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/sunken-treasures-ac2d0de6e5.webp",
       "events": 1
     },
     {
@@ -322,8 +230,18 @@
       "events": 1
     },
     {
+      "source_url": "https://scth.scene7.com/is/image/scth/okhtabotiya?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/okhtabotiya-0013765084.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/awj5ovgr.utk.webp",
       "file": "dist/assets/event-images/معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية-b03efbb17c.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/curious-summer?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/curious-summers-a466fcddad.webp",
       "events": 1
     },
     {
@@ -537,11 +455,6 @@
       "events": 1
     },
     {
-      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/media-icons/generic/no-thumbnail.png?itok=rGJOKohj",
-      "file": "dist/assets/event-images/introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي-3f19de15ba.png",
-      "events": 5
-    },
-    {
       "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-07/7.jpg?itok=HnrYjVdd",
       "file": "dist/assets/event-images/دورة-comptia-a-2358801bb0.jpg",
       "events": 2
@@ -549,6 +462,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/3.png?itok=7Upsv5tQ",
       "file": "dist/assets/event-images/mishkat-summer-camp-4f41ae0160.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/saif-2026?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/saif-2026-751a318bdf.webp",
       "events": 1
     },
     {
@@ -632,6 +550,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6b9f69436575717ae21e3e7a4a5b2db1.png",
+      "file": "dist/assets/event-images/summer-youth-program-dfe566c75a.png",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/85d5578f24bf5b2a9e720c84eec26adc.jpg",
       "file": "dist/assets/event-images/english-children-book-club-7-9-5174b0b666.jpg",
       "events": 4
@@ -672,6 +595,11 @@
       "events": 1
     },
     {
+      "source_url": "https://scth.scene7.com/is/image/scth/qaadet-saad-eloud?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/qaadet-saad-eloud-c5b8a35494.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://scth.scene7.com/is/image/scth/al-farab-comeback-night?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/al-farabi-comeback-night-3de4e741f2.webp",
       "events": 1
@@ -682,9 +610,39 @@
       "events": 5
     },
     {
+      "source_url": "https://scth.scene7.com/is/image/scth/made-in-egypt-comedy-show-ahmed-khairy?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/made-in-egypt-stand-up-comedy-show-by-ahmed-khairy-072a99ee54.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/mohamed-hamaki-concert?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/mohamed-hamaki-concert-cd834f4ecd.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/saleh-al-nawawi-comedy-riyadh?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/saleh-el-nawawy-stand-up-comedy-show-2259c6faa9.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/reggae-with-rosa?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/reggae-with-rsoa-3f95190c43.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ab9d6fe97ce2e131a314c39ed6772096.jpg",
       "file": "dist/assets/event-images/tales-of-the-night-sky-english-f55a234a58.jpg",
       "events": 2
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/very-sary-night-from-exit-thmanyah?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/very-sary-night-from-exit-thmanyah-3843e11ef7.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/media-icons/generic/no-thumbnail.png?itok=rGJOKohj",
+      "file": "dist/assets/event-images/introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي-3f19de15ba.png",
+      "events": 5
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fdb75fd81cbee99ea30222efe695233a.png",
@@ -752,6 +710,16 @@
       "events": 1
     },
     {
+      "source_url": "https://scth.scene7.com/is/image/scth/rahma-riad-at-vocally?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/rahma-riad-at-vocally-43ea8151b3.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/fill-in-the-blank-in-jeddah?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/fill-in-the-blank-in-jeddah-ae96c0cdd0.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/%282%29%20%281%29.png?itok=BEC7XaXW",
       "file": "dist/assets/event-images/summer-splash-running-event-b09009b157.png",
       "events": 1
@@ -780,6 +748,11 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/34a91e4e84d3e4a79a05114daaabbfcb.jpg",
       "file": "dist/assets/event-images/tinkering-stations-1fefe4f4f1.jpg",
       "events": 1
+    },
+    {
+      "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-07/wr345.jpg",
+      "file": "dist/assets/event-images/الاستخدام-الآمن-لأجهزة-الأشعة-والتصوير-الطبي-داخل-مرافق-الرعاية-الصحية-af021c2ccb.jpg",
+      "events": 2
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4dc402fa30dd57d68581aa05f1ce5c0f.jpg",
@@ -859,6 +832,11 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3028e58e79c097efe11df08b7a04a1b6.png",
       "file": "dist/assets/event-images/grand-art-space-9d738f462b.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/ahlam-concert-jeddah?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/ahlam-concert-ccdfe9ff8a.webp",
       "events": 1
     },
     {
@@ -974,6 +952,11 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2fcd7911e5e79f6eeaedb4d9031f71b0.jpg",
       "file": "dist/assets/event-images/dots-on-letters-28119e3242.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/hussain-moheb?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/hussain-moheb-live-in-riyadh-66decad2f9.webp",
       "events": 1
     },
     {
@@ -2535,8 +2518,6 @@
   "rejected_removed": [],
   "skipped_recent_failures": [],
   "failed": [],
-  "requires_rebuild": true,
-  "rebuild_reasons": [
-    "fetched:16"
-  ]
+  "requires_rebuild": false,
+  "rebuild_reasons": []
 }

@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-07-14T14:23:02.233Z
+Generated at: 2026-07-14T19:52:04.763Z
 
 ## Operating Rule
 
@@ -9,13 +9,13 @@ Raw collection is not publication. Every source run preserves evidence, separate
 ## Totals
 
 - Sources: 86
-- Attempted this run: 20
-- Deferred by adaptive cadence: 26
+- Attempted this run: 21
+- Deferred by adaptive cadence: 25
 - Productive: 19
-- Zero-yield: 0
-- Collector errors: 1
+- Zero-yield: 1
+- Collector errors: 0
 - Persistent collector errors: 6
-- Probe blocked: 0
+- Probe blocked: 1
 - Auto-publish eligible source lanes: 12
 
 ## Stalled / Blocked Focus
@@ -72,7 +72,7 @@ Call log:
 | 14 | eventbrite-saudi | discovery-only | productive | 12 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 15 | platinumlist-jeddah | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
 | 16 | tuwaiq-academy-bootcamps | active-collector | productive | 12 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
-| 17 | future-skills-catalog | active-collector | productive | 7 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 17 | future-skills-catalog | active-collector | productive | 5 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 18 | riyadh-season | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: bot-protection |
 | 19 | visit-saudi-seasons | active-collector | productive | 8 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 20 | code-mcit-programs | active-collector | zero-yield | 0 | yes | Zero-yield for 71 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |

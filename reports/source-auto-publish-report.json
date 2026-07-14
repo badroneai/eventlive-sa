@@ -1,16 +1,16 @@
 {
-  "published_at": "2026-07-14T14:16:27.596Z",
+  "published_at": "2026-07-14T19:47:01.218Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 481,
+  "candidates_seen": 479,
   "totals": {
-    "candidates_seen": 481,
-    "published": 2,
-    "linked_existing": 462,
+    "candidates_seen": 479,
+    "published": 1,
+    "linked_existing": 461,
     "blocked": 17,
-    "reconciled": 464
+    "reconciled": 462
   },
   "duplicate_catalog_rows_removed": 1,
   "duplicate_catalog_rows": [
@@ -23,11 +23,6 @@
   "canonical_event_ids_remapped": 0,
   "canonical_event_id_remaps": [],
   "published": [
-    {
-      "candidate_id": "candidate-misk-hub-programs-misk-tuwaiq-immersive-program-20260802-99c8eec9",
-      "event_id": "event-misk-tuwaiq-immersive-program",
-      "title": "Misk × Tuwaiq Immersive Program"
-    },
     {
       "candidate_id": "candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702",
       "event_id": "event-music-festival-mdlbeast-soundstorm",
@@ -588,12 +583,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-future-skills-catalog-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي-20260712-ed2ad6f2",
-      "event_id": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي",
-      "title": "⁠Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-monshaat-events-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م-20260712-1d4a3074",
       "event_id": "event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م",
       "title": "أسبوع العقار والمقاولات 12- 16 يوليو 2026م",
@@ -603,12 +592,6 @@
       "candidate_id": "candidate-future-skills-catalog-دورة-comptia-a-20260712-dd4c25aa",
       "event_id": "event-دورة-comptia-a",
       "title": "دورة +CompTIA A",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-future-skills-catalog-security-operations-threat-detection-incident-response-عمليات-الأمن-السي-20260712-c94b7135",
-      "event_id": "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي",
-      "title": "⁠Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث",
       "reason": "already linked to catalog event"
     },
     {
@@ -672,39 +655,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-build-play-together-20260714-c73728ad",
-      "event_id": "event-build-play-together",
-      "title": "Build & Play Together",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-draw-your-story-20260714-6b28e480",
-      "event_id": "event-draw-your-story",
-      "title": "Draw Your Story",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260714-cc43c2bd",
       "event_id": "event-echoes-of-the-familiar",
       "title": "Echoes of the Familiar",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260714-f563a36e",
-      "event_id": "event-ithra-summer-camp-2026-a-world-of-homes",
-      "title": "Ithra Summer Camp 2026: A world of homes",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-lets-decorate-20260714-4cb342a7",
-      "event_id": "event-lets-decorate",
-      "title": "Let’s Decorate!",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260714-562bc61d",
-      "event_id": "event-tafasahu-make-room",
-      "title": "Tafasahu: Make Room",
       "reason": "already linked to catalog event"
     },
     {
@@ -714,27 +667,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-leap-then-look-20260714-99d88224",
-      "event_id": "event-leap-then-look",
-      "title": "Leap Then Look!",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-a-home-i-imagine-20260714-7778a5c1",
       "event_id": "event-a-home-i-imagine",
       "title": "A Home I Imagine",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-balloon-shapes-lab-20260714-7c264d45",
-      "event_id": "event-balloon-shapes-lab",
-      "title": "Balloon Shapes Lab",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-built-by-nature-20260714-950b3be0",
-      "event_id": "event-built-by-nature",
-      "title": "Built by Nature",
       "reason": "already linked to catalog event"
     },
     {
@@ -744,183 +679,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-hidden-home-bingo-20260714-0150ad97",
-      "event_id": "event-hidden-home-bingo",
-      "title": "Hidden Home Bingo",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-insightful-spaces-20260714-83f85411",
-      "event_id": "event-insightful-spaces",
-      "title": "Insightful Spaces",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-interactive-exhibit-20260714-bcda7332",
-      "event_id": "event-interactive-exhibit",
-      "title": "Interactive Exhibit",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-mic-moments-20260714-6b55b3ff",
-      "event_id": "event-mic-moments",
-      "title": "Mic Moments",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-mirror-or-window-20260714-660f44a0",
-      "event_id": "event-mirror-or-window",
-      "title": "Mirror Or Window",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-my-family-bouquet-20260714-9570ab84",
       "event_id": "event-my-family-bouquet",
       "title": "My Family Bouquet",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-natures-architects-20260714-9b0461b0",
-      "event_id": "event-natures-architects",
-      "title": "Nature's Architects",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-nim-adventures-20260714-c504dfe0",
-      "event_id": "event-nim-adventures",
-      "title": "niMú Adventures",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-our-place-on-earth-20260714-d06c9f86",
-      "event_id": "event-our-place-on-earth",
-      "title": "Our Place on Earth",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-painted-faces-20260714-d70db13a",
-      "event_id": "event-painted-faces",
-      "title": "Painted Faces",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-treasures-in-every-home-20260714-6f6454c1",
-      "event_id": "event-treasures-in-every-home",
-      "title": "Treasures in Every Home",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-virtual-to-reality-20260714-b8053f5f",
-      "event_id": "event-virtual-to-reality",
-      "title": "Virtual to Reality",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-where-we-belong-20260714-44a2729b",
-      "event_id": "event-where-we-belong",
-      "title": "Where We Belong",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-who-lived-here-20260714-11c491ce",
-      "event_id": "event-who-lived-here",
-      "title": "Who Lived Here?",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-zoom-in-20260714-d8d7bd6d",
-      "event_id": "event-zoom-in",
-      "title": "Zoom In",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-in-the-home-of-20260714-0dcdc683",
-      "event_id": "event-in-the-home-of",
-      "title": "In the Home of…",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-sense-the-home-20260714-3a3ca5ae",
-      "event_id": "event-sense-the-home",
-      "title": "Sense the Home",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20260714-a3bc99ba",
-      "event_id": "event-1-2-3-a-little-space-for-me",
-      "title": "1, 2, 3, A Little Space for Me",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-1-2-3-lets-rhyme-20260714-4d37515a",
-      "event_id": "event-1-2-3-lets-rhyme",
-      "title": "1, 2, 3, Let's Rhyme!",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-on-this-carpet-20260714-2972e041",
-      "event_id": "event-on-this-carpet",
-      "title": "On This Carpet",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-storyteller-of-the-day-20260714-94528a46",
-      "event_id": "event-storyteller-of-the-day",
-      "title": "Storyteller of the Day",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-finding-nemo-20260714-ee95c1c5",
-      "event_id": "event-finding-nemo",
-      "title": "Finding Nemo",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-house-of-wonder-20260714-9a8dfa3b",
-      "event_id": "event-house-of-wonder",
-      "title": "House of Wonder",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-little-dot-20260714-6f97a4be",
-      "event_id": "event-little-dot",
-      "title": "Little Dot",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-open-art-space-20260714-40aac166",
-      "event_id": "event-open-art-space",
-      "title": "Open Art Space",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-play-with-shadows-20260714-9984f169",
-      "event_id": "event-play-with-shadows",
-      "title": "Play with Shadows",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-the-house-of-ideas-20260714-26aaa6b2",
-      "event_id": "event-the-house-of-ideas",
-      "title": "The House of Ideas",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-my-little-fort-20260714-09d01da3",
-      "event_id": "event-my-little-fort",
-      "title": "My Little Fort",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-around-the-table-20260714-87d7ec65",
-      "event_id": "event-around-the-table",
-      "title": "Around the Table",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-english-children-book-club-7-9-20260714-fceb6af6",
-      "event_id": "event-english-children-book-club-7-9",
-      "title": "English Children Book Club (7-9)",
       "reason": "already linked to catalog event"
     },
     {
@@ -954,6 +715,36 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-build-play-together-20260715-c73728ad",
+      "event_id": "event-build-play-together",
+      "title": "Build & Play Together",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-draw-your-story-20260715-6b28e480",
+      "event_id": "event-draw-your-story",
+      "title": "Draw Your Story",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260715-f563a36e",
+      "event_id": "event-ithra-summer-camp-2026-a-world-of-homes",
+      "title": "Ithra Summer Camp 2026: A world of homes",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-lets-decorate-20260715-4cb342a7",
+      "event_id": "event-lets-decorate",
+      "title": "Let’s Decorate!",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260715-562bc61d",
+      "event_id": "event-tafasahu-make-room",
+      "title": "Tafasahu: Make Room",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-summer-youth-program-20260715-a20f7a11",
       "event_id": "event-summer-youth-program",
       "title": "Summer Youth Program",
@@ -966,9 +757,177 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20260715-a3bc99ba",
+      "event_id": "event-1-2-3-a-little-space-for-me",
+      "title": "1, 2, 3, A Little Space for Me",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-leap-then-look-20260715-99d88224",
+      "event_id": "event-leap-then-look",
+      "title": "Leap Then Look!",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-kindergarten-under-the-palm-tree-english-20260715-c72ee6a9",
       "event_id": "event-kindergarten-under-the-palm-tree-english",
       "title": "Kindergarten Under the Palm Tree (English)",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-sense-the-home-20260715-3a3ca5ae",
+      "event_id": "event-sense-the-home",
+      "title": "Sense the Home",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-my-little-fort-20260715-09d01da3",
+      "event_id": "event-my-little-fort",
+      "title": "My Little Fort",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-play-with-shadows-20260715-9984f169",
+      "event_id": "event-play-with-shadows",
+      "title": "Play with Shadows",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-1-2-3-lets-rhyme-20260715-4d37515a",
+      "event_id": "event-1-2-3-lets-rhyme",
+      "title": "1, 2, 3, Let's Rhyme!",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-balloon-shapes-lab-20260715-7c264d45",
+      "event_id": "event-balloon-shapes-lab",
+      "title": "Balloon Shapes Lab",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-built-by-nature-20260715-950b3be0",
+      "event_id": "event-built-by-nature",
+      "title": "Built by Nature",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-hidden-home-bingo-20260715-0150ad97",
+      "event_id": "event-hidden-home-bingo",
+      "title": "Hidden Home Bingo",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-insightful-spaces-20260715-83f85411",
+      "event_id": "event-insightful-spaces",
+      "title": "Insightful Spaces",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-interactive-exhibit-20260715-bcda7332",
+      "event_id": "event-interactive-exhibit",
+      "title": "Interactive Exhibit",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-mic-moments-20260715-6b55b3ff",
+      "event_id": "event-mic-moments",
+      "title": "Mic Moments",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-mirror-or-window-20260715-660f44a0",
+      "event_id": "event-mirror-or-window",
+      "title": "Mirror Or Window",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-natures-architects-20260715-9b0461b0",
+      "event_id": "event-natures-architects",
+      "title": "Nature's Architects",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-nim-adventures-20260715-c504dfe0",
+      "event_id": "event-nim-adventures",
+      "title": "niMú Adventures",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-on-this-carpet-20260715-2972e041",
+      "event_id": "event-on-this-carpet",
+      "title": "On This Carpet",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-our-place-on-earth-20260715-d06c9f86",
+      "event_id": "event-our-place-on-earth",
+      "title": "Our Place on Earth",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-painted-faces-20260715-d70db13a",
+      "event_id": "event-painted-faces",
+      "title": "Painted Faces",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-treasures-in-every-home-20260715-6f6454c1",
+      "event_id": "event-treasures-in-every-home",
+      "title": "Treasures in Every Home",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-virtual-to-reality-20260715-b8053f5f",
+      "event_id": "event-virtual-to-reality",
+      "title": "Virtual to Reality",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-where-we-belong-20260715-44a2729b",
+      "event_id": "event-where-we-belong",
+      "title": "Where We Belong",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-who-lived-here-20260715-11c491ce",
+      "event_id": "event-who-lived-here",
+      "title": "Who Lived Here?",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-zoom-in-20260715-d8d7bd6d",
+      "event_id": "event-zoom-in",
+      "title": "Zoom In",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-in-the-home-of-20260715-0dcdc683",
+      "event_id": "event-in-the-home-of",
+      "title": "In the Home of…",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-finding-nemo-20260715-ee95c1c5",
+      "event_id": "event-finding-nemo",
+      "title": "Finding Nemo",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-house-of-wonder-20260715-9a8dfa3b",
+      "event_id": "event-house-of-wonder",
+      "title": "House of Wonder",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-little-dot-20260715-6f97a4be",
+      "event_id": "event-little-dot",
+      "title": "Little Dot",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-house-of-ideas-20260715-26aaa6b2",
+      "event_id": "event-the-house-of-ideas",
+      "title": "The House of Ideas",
       "reason": "already linked to catalog event"
     },
     {
@@ -1014,6 +973,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-around-the-table-20260716-87d7ec65",
+      "event_id": "event-around-the-table",
+      "title": "Around the Table",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-storyteller-of-the-day-20260716-94528a46",
+      "event_id": "event-storyteller-of-the-day",
+      "title": "Storyteller of the Day",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-museum-story-time-20260716-1104734c",
       "event_id": "event-museum-story-time",
       "title": "Museum Story Time",
@@ -1035,6 +1006,12 @@
       "candidate_id": "candidate-mdlbeast-events-unstable-20260717-5647df2e",
       "event_id": "event-unstable",
       "title": "Unstable",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-open-art-space-20260717-40aac166",
+      "event_id": "event-open-art-space",
+      "title": "Open Art Space",
       "reason": "already linked to catalog event"
     },
     {
@@ -1548,6 +1525,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-misk-hub-programs-misk-tuwaiq-immersive-program-20260802-99c8eec9",
+      "event_id": "event-misk-tuwaiq-immersive-program",
+      "title": "Misk × Tuwaiq Immersive Program",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي-20260802-12263779",
       "event_id": "event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي",
       "title": "معسكر تطوير مواقع الويب باستخدام Java ودمج تقنيات الذكاء الاصطناعي",
@@ -1671,6 +1654,12 @@
       "candidate_id": "candidate-ithra-events-creative-character-design-20260811-afddf835",
       "event_id": "event-creative-character-design",
       "title": "Creative Character Design",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-english-children-book-club-7-9-20260811-fceb6af6",
+      "event_id": "event-english-children-book-club-7-9",
+      "title": "English Children Book Club (7-9)",
       "reason": "already linked to catalog event"
     },
     {
