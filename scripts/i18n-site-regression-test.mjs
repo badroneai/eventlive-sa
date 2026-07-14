@@ -13,6 +13,27 @@ const registry = JSON.parse(fs.readFileSync(routeFile, 'utf8'));
 assert.deepEqual(registry.locales, ['ar-SA', 'en-SA']);
 assert.ok(registry.routes.length > 1000, 'all public routes must be localized');
 let eventDetailScriptChecked = false;
+let eventJsonLdNodesChecked = 0;
+
+function collectEventJsonLd(value, events = []) {
+  if (Array.isArray(value)) {
+    for (const item of value) collectEventJsonLd(item, events);
+    return events;
+  }
+  if (!value || typeof value !== 'object') return events;
+  const types = Array.isArray(value['@type']) ? value['@type'] : [value['@type']];
+  if (types.includes('Event')) events.push(value);
+  for (const child of Object.values(value)) collectEventJsonLd(child, events);
+  return events;
+}
+
+function eventJsonLdFromPage($) {
+  const events = [];
+  $('script[type="application/ld+json"]').each((_, element) => {
+    collectEventJsonLd(JSON.parse($(element).html() || '{}'), events);
+  });
+  return events;
+}
 
 function resolveUnicodePath(base, relative) {
   let current = base;
@@ -89,6 +110,18 @@ for (const route of registry.routes) {
   assert.equal(ar.$('link[hreflang="en-SA"]').attr('href'), enCanonical);
   assert.equal(en.$('link[hreflang="ar-SA"]').attr('href'), arCanonical);
 
+  if (/^events\/.+\.html$/u.test(relative)) {
+    for (const [locale, page] of [['ar-SA', ar], ['en-SA', en]]) {
+      const eventNodes = eventJsonLdFromPage(page.$);
+      assert.ok(eventNodes.length >= 1, `${relative} ${locale} must expose at least one Event node`);
+      for (const eventNode of eventNodes) {
+        eventJsonLdNodesChecked += 1;
+        assert.ok(eventNode.description?.trim(), `${relative} ${locale} Event nodes must include description`);
+        assert.ok(Array.isArray(eventNode.image) && eventNode.image.length > 0, `${relative} ${locale} Event nodes must include image`);
+      }
+    }
+  }
+
   en.$('script[type="application/ld+json"]').each((_, element) => {
     const value = JSON.parse(en.$(element).html() || '{}');
     const serialized = JSON.stringify(value);
@@ -133,4 +166,4 @@ assert.ok(serviceWorker.includes("pathname.startsWith('/en/')"), 'service worker
 assert.ok(fs.readFileSync(path.join(dist, 'en', 'index.html'), 'utf8').includes("serviceWorker.register('/sw.js', { scope: '/' })"), 'English pages must register the root service worker');
 assert.ok(fs.readFileSync(path.join(dist, 'llms.txt'), 'utf8').includes('https://eventme.live/en/'), 'root llms.txt must advertise the English site');
 
-console.log(`I18N_SITE_OK routes=${registry.routes.length} pages=${registry.routes.length * 2} events=${enCatalog.events.length}`);
+console.log(`I18N_SITE_OK routes=${registry.routes.length} pages=${registry.routes.length * 2} events=${enCatalog.events.length} event_nodes=${eventJsonLdNodesChecked}`);

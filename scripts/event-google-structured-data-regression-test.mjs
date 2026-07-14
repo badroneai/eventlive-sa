@@ -36,12 +36,22 @@ assert.equal(verifiedOffer.validFrom, '2026-07-01T09:00:00+03:00');
 assert.equal(verifiedOffer.price, '0');
 assert.equal(verifiedOffer.priceCurrency, 'SAR');
 
+const usdOffer = eventOfferJsonLd({
+  status: 'upcoming',
+  ticket_url: 'https://tickets.example.com/event/2',
+  price_label: '525 USD'
+});
+assert.equal(usdOffer.price, '525');
+assert.equal(usdOffer.priceCurrency, 'USD', 'verified non-SAR prices must preserve their source currency');
+
 const unknownOffer = eventOfferJsonLd({
   status: 'upcoming',
   registration_url: 'https://register.example.sa/event/1'
 });
 assert.equal(unknownOffer.availability, undefined, 'availability must remain absent without source evidence');
 assert.equal(unknownOffer.validFrom, undefined, 'validFrom must remain absent without a documented sale start');
+assert.equal(unknownOffer.price, undefined, 'price must remain absent without source evidence');
+assert.equal(unknownOffer.priceCurrency, undefined, 'priceCurrency must remain absent until a verified price exists');
 assert.equal(eventOfferJsonLd({ status: 'ended', ticket_url: 'https://tickets.example.sa/event/1' }), undefined);
 assert.equal(eventOfferJsonLd({ status: 'upcoming' }), undefined, 'offers must not be fabricated without an action URL');
 
@@ -63,5 +73,16 @@ assert.equal(extracted.performers[0].type, 'group');
 assert.equal(extracted.registration_status, 'sold-out');
 assert.equal(extracted.offer_valid_from, '2026-06-01T12:00:00+03:00');
 assert.equal(extracted.price_label, '120 SAR');
+
+const aggregateOffer = eventEvidenceFromJsonLd({
+  '@type': 'Event',
+  offers: {
+    '@type': 'AggregateOffer',
+    url: 'https://tickets.example.com/event/free',
+    lowPrice: '0.0',
+    priceCurrency: 'USD'
+  }
+});
+assert.equal(aggregateOffer.price_label, 'مجاني · 0 USD', 'AggregateOffer lowPrice must retain explicit currency evidence');
 
 console.log('EVENT_GOOGLE_STRUCTURED_DATA_OK organizer=official performers=evidence-only offers=evidence-only extraction=json-ld');

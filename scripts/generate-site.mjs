@@ -1798,7 +1798,17 @@ function sessionAnchor(session = {}, index = 0) {
   return `session-${slugify(session.id || session.title || session.session_title || `item-${index + 1}`)}`;
 }
 
-function sessionJsonLd(session = {}, event = {}, index = 0, canonical = '') {
+function sessionSchemaDescription(session = {}, event = {}) {
+  const sessionTitle = session.title || session.session_title || 'جلسة';
+  const value = session.description
+    || session.summary
+    || session.abstract
+    || session.topic
+    || `${sessionTitle}، فقرة ضمن ${event.title || 'الفعالية'}.`;
+  return structuredPlainText(value).slice(0, 1_500);
+}
+
+function sessionJsonLd(session = {}, event = {}, index = 0, canonical = '', schemaImage = '') {
   const sessionTitle = session.title || session.session_title || 'جلسة';
   const room = session.room || session.track || event.venue || '';
   const online = isOnlineEvent(event);
@@ -1815,6 +1825,8 @@ function sessionJsonLd(session = {}, event = {}, index = 0, canonical = '') {
       : { ...physicalLocation, name: room || event.venue },
     organizer: organizerJsonLdForEvent(event),
     performer: eventPerformerJsonLd({ sessions: [session] }),
+    image: schemaImage ? [schemaImage] : undefined,
+    description: sessionSchemaDescription(session, event),
     url: `${canonical}#${sessionAnchor(session, index)}`
   };
 }
@@ -1997,7 +2009,7 @@ function renderEventDetail(event) {
     audience: eventAudienceJsonLd(event),
     sameAs: unique([event.source_url, event.evidence_url]).filter(Boolean),
     offers: eventOfferJsonLd(event),
-    subEvent: officialSessions.length ? officialSessions.slice(0, 20).map((session, index) => sessionJsonLd(session, event, index, canonical)) : undefined
+    subEvent: officialSessions.length ? officialSessions.slice(0, 20).map((session, index) => sessionJsonLd(session, event, index, canonical, schemaImage)) : undefined
   })}
   ${jsonLd(eventBreadcrumbJsonLd(event, canonical))}
   ${jsonLd(faqJsonLd(eventFaq))}

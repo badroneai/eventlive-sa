@@ -56,8 +56,16 @@ function offerValidFrom(event = {}) {
 function numericOfferPrice(event = {}) {
   if (eventAccessIsFree(event) === true) return '0';
   const label = cleanText(event.price_label).replaceAll(',', '');
-  const match = label.match(/(?:sar|ر\.?\s?س|ريال)?\s*(\d+(?:\.\d{1,2})?)\s*(?:sar|ر\.?\s?س|ريال)/i);
-  return match?.[1];
+  const trailing = label.match(/(\d+(?:\.\d{1,2})?)\s*(?:sar|usd|ر\.?\s?س|ريال|\$)/i);
+  const leading = label.match(/(?:sar|usd|ر\.?\s?س|ريال|\$)\s*(\d+(?:\.\d{1,2})?)/i);
+  return trailing?.[1] || leading?.[1];
+}
+
+function offerPriceCurrency(event = {}) {
+  const label = cleanText(event.price_label);
+  if (/\busd\b|\$/i.test(label)) return 'USD';
+  if (/\bsar\b|ر\.?\s?س|ريال/i.test(label)) return 'SAR';
+  return eventAccessIsFree(event) === true ? 'SAR' : undefined;
 }
 
 function eventOfferJsonLd(event = {}) {
@@ -65,13 +73,14 @@ function eventOfferJsonLd(event = {}) {
   const url = cleanText(event.ticket_url || event.registration_url);
   if (!/^https?:\/\//i.test(url)) return undefined;
   const price = numericOfferPrice(event);
+  const priceCurrency = price !== undefined ? offerPriceCurrency(event) : undefined;
   return {
     '@type': 'Offer',
     url,
     availability: offerAvailability(event),
     validFrom: offerValidFrom(event),
     price,
-    priceCurrency: price !== undefined ? 'SAR' : undefined,
+    priceCurrency,
     category: cleanText(event.price_label) || (event.ticket_url ? 'Ticket' : 'Registration')
   };
 }
@@ -125,10 +134,12 @@ function eventEvidenceFromJsonLd(value = {}) {
     ? 'open'
     : availability === 'soldout' ? 'sold-out' : availability === 'preorder' ? 'preorder' : '';
   const validFrom = cleanText(offer.validFrom);
-  const price = offer.price === 0 || offer.price === '0'
-    ? 'مجاني'
-    : offer.price !== undefined && offer.price !== null && cleanText(offer.price)
-      ? `${cleanText(offer.price)} ${cleanText(offer.priceCurrency || 'SAR')}`
+  const rawPrice = offer.price ?? offer.lowPrice;
+  const currency = cleanText(offer.priceCurrency || 'SAR');
+  const price = rawPrice === 0 || rawPrice === '0' || rawPrice === '0.0' || rawPrice === '0.00'
+    ? `مجاني · 0 ${currency}`
+    : rawPrice !== undefined && rawPrice !== null && cleanText(rawPrice)
+      ? `${cleanText(rawPrice)} ${currency}`
       : '';
   const actionUrl = publicHttpUrl(offer.url);
   return {
