@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "request_id": "catalog-show-all-en",
+  "question_ids": [
+    "P04-013",
+    "P04-018",
+    "P04-019"
+  ],
+  "purpose": "Full public cube catalog used for exact crosswalk/mapping-name search",
+  "request_url": "https://api.datasaudi.sa/tesseract/cubes?show_all=true&locale=en",
+  "final_url": "https://api.datasaudi.sa/tesseract/cubes?show_all=true&locale=en",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:09:53.038Z",
+  "started_at_utc": "2026-07-14T23:09:52.708Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/catalog-show-all-en.body",
+  "body_sha256": "71c198f52c69d39e13e836963090ea84618fbfbaaccf9de9a0b652037955f1c8",
+  "body_bytes": 551378,
+  "error": null
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p018-city-en",
+  "question_ids": [
+    "P04-018"
+  ],
+  "purpose": "Live public members for sama_pos_cities/City (en)",
+  "request_url": "https://api.datasaudi.sa/tesseract/members.jsonrecords?cube=sama_pos_cities&level=City&locale=en&parents=true&limit=5000",
+  "final_url": "https://api.datasaudi.sa/tesseract/members?cube=sama_pos_cities&level=City&locale=en&parents=true&limit=5000",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:09:58.480Z",
+  "started_at_utc": "2026-07-14T23:09:58.295Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p018-city-en.body",
+  "body_sha256": "69f2170897319264fd9f4be7386d7bed17ad3730dcb2cc0e011861942204e0cd",
+  "body_bytes": 535,
+  "error": null
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-07-14T23:10:29.668Z",
+  "catalog_captured_at_utc": "2026-07-14T23:09:59.422Z",
+  "mode": "PUBLIC_API_UNIVERSE_CENSUS",
+  "counts": {
+    "cubes": 277,
+    "primary_cubes": 267,
+    "auxiliary_cubes": 10,
+    "hidden_in_ui_cubes": 26,
+    "dimensions": 722,
+    "hierarchies": 753,
+    "levels": 992,
+    "measures": 479,
+    "excluded_member_levels": 231,
+    "time_member_probes": 270,
+    "time_member_probe_ok": 270,
+    "data_probes": 277,
+    "data_statuses": {
+      "DATA_RETURNED": 277
+    },
+    "compatibility_candidates": 7851
+  },
+  "semantic_coverage": {
+    "prior_candidate_cubes": 34,
+    "prior_candidate_cube_percent": 12.27,
+    "p03c_selected_cubes": 71,
+    "p03c_selected_cube_percent": 25.63,
+    "p04_targeted_cubes": 39,
+    "p04_targeted_cube_percent": 14.08,
+    "api_dossiers": 277,
+    "api_dossier_percent": 100
+  },
+  "catalog_evidence": {
+    "en": {
+      "url": "https://api.datasaudi.sa/tesseract/cubes?show_all=true&locale=en",
+      "response_path": "research/datasaudi-package-04-universe-exploration/05-universe-dossier/evidence/catalog/catalog-en-71c198f52c69d39e13e836963090ea84618fbfbaaccf9de9a0b652037955f1c8.json",
+      "sha256": "71c198f52c69d39e13e836963090ea84618fbfbaaccf9de9a0b652037955f1c8",
+      "bytes": 551378
+    },
+    "ar": {
+      "url": "https://api.datasaudi.sa/tesseract/cubes?show_all=true&locale=ar",
+      "response_path": "research/datasaudi-package-04-universe-exploration/05-universe-dossier/evidence/catalog/catalog-ar-9b3bf614b37fd731db5c9a99197f44d0f5dacea3847eb9959f4e60ecd41561b6.json",
+      "sha256": "9b3bf614b37fd731db5c9a99197f44d0f5dacea3847eb9959f4e60ecd41561b6",
+      "bytes": 579213
+    }
+  },
+  "boundaries": [
+    "API dossier coverage is not live INSAIGHTS answer coverage.",
+    "Compatibility candidates are schema-level leads, not proven joins.",
+    "Public access does not establish an exact dataset license or commercial reuse right.",
+    "A returned sample row does not prove freshness beyond the recorded latest time member."
+  ]
+}

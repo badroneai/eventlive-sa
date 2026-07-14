@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p021-health-category",
+  "question_ids": [
+    "P04-021"
+  ],
+  "purpose": "Live public members for sama_health_facilities_resources/Resource Category (en)",
+  "request_url": "https://api.datasaudi.sa/tesseract/members.jsonrecords?cube=sama_health_facilities_resources&level=Resource+Category&locale=en&parents=true&limit=5000",
+  "final_url": "https://api.datasaudi.sa/tesseract/members?cube=sama_health_facilities_resources&level=Resource+Category&locale=en&parents=true&limit=5000",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:10:03.666Z",
+  "started_at_utc": "2026-07-14T23:10:03.454Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p021-health-category.body",
+  "body_sha256": "9b0717991e2b039b61acfa469137fefc99488180ff9a466c08aad4d90cb99342",
+  "body_bytes": 473,
+  "error": null
+}

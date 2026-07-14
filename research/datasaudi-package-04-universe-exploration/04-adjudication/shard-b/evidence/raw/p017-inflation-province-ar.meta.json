@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p017-inflation-province-ar",
+  "question_ids": [
+    "P04-017"
+  ],
+  "purpose": "Live public members for gastat_inflation_province_yoy/Province (ar)",
+  "request_url": "https://api.datasaudi.sa/tesseract/members.jsonrecords?cube=gastat_inflation_province_yoy&level=Province&locale=ar&parents=true&limit=5000",
+  "final_url": "https://api.datasaudi.sa/tesseract/members?cube=gastat_inflation_province_yoy&level=Province&locale=ar&parents=true&limit=5000",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:09:58.217Z",
+  "started_at_utc": "2026-07-14T23:09:58.029Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p017-inflation-province-ar.body",
+  "body_sha256": "ca657de72d3e796821df3210184ca4787dccf4286a815280b634a5afe298076f",
+  "body_bytes": 1970,
+  "error": null
+}

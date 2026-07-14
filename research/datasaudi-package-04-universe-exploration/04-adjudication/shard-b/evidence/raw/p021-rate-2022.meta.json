@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p021-rate-2022",
+  "question_ids": [
+    "P04-021"
+  ],
+  "purpose": "Live public data replay for gastat_rate_gender_nationality_region: Year,Province / Unemployment Rate",
+  "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_rate_gender_nationality_region&drilldowns=Year%2CProvince&measures=Unemployment+Rate&locale=en&limit=50000&include=Year%3A2022",
+  "final_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_rate_gender_nationality_region&drilldowns=Year%2CProvince&measures=Unemployment+Rate&locale=en&limit=50000&include=Year%3A2022",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:10:05.591Z",
+  "started_at_utc": "2026-07-14T23:10:05.471Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p021-rate-2022.body",
+  "body_sha256": "38e9a28e359d598394bc9df16d87d6f4ab0e933772a4f2efa5b79ea4307283fd",
+  "body_bytes": 2023,
+  "error": null
+}

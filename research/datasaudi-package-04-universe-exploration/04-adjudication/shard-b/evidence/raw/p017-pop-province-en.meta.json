@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p017-pop-province-en",
+  "question_ids": [
+    "P04-017"
+  ],
+  "purpose": "Live public members for gastat_detailed_population/Geography Province (en)",
+  "request_url": "https://api.datasaudi.sa/tesseract/members.jsonrecords?cube=gastat_detailed_population&level=Geography+Province&locale=en&parents=true&limit=5000",
+  "final_url": "https://api.datasaudi.sa/tesseract/members?cube=gastat_detailed_population&level=Geography+Province&locale=en&parents=true&limit=5000",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:09:56.937Z",
+  "started_at_utc": "2026-07-14T23:09:56.566Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p017-pop-province-en.body",
+  "body_sha256": "b0b6e24f55a6264400b1df40bcc0261c8e5ad1f79db2683a01b10391c011499f",
+  "body_bytes": 615,
+  "error": null
+}

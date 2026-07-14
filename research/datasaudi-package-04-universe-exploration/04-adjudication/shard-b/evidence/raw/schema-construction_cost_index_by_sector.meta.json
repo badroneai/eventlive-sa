@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "request_id": "schema-construction_cost_index_by_sector",
+  "question_ids": [
+    "P04-013",
+    "P04-015",
+    "P04-016",
+    "P04-017",
+    "P04-018",
+    "P04-019",
+    "P04-020",
+    "P04-021"
+  ],
+  "purpose": "Live public cube schema for construction_cost_index_by_sector",
+  "request_url": "https://api.datasaudi.sa/tesseract/cubes/construction_cost_index_by_sector?locale=en",
+  "final_url": "https://api.datasaudi.sa/tesseract/cubes/construction_cost_index_by_sector?locale=en",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:09:53.656Z",
+  "started_at_utc": "2026-07-14T23:09:53.582Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/schema-construction_cost_index_by_sector.body",
+  "body_sha256": "8ce4552301caa5aa5fcd43d67d8f77fe7a66fff92ba0268554ebe97f4a325bd8",
+  "body_bytes": 1629,
+  "error": null
+}

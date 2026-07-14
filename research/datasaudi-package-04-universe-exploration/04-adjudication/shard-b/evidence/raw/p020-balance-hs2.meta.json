@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p020-balance-hs2",
+  "question_ids": [
+    "P04-020"
+  ],
+  "purpose": "Live public members for trade_balance_by_country/HS2 (en)",
+  "request_url": "https://api.datasaudi.sa/tesseract/members.jsonrecords?cube=trade_balance_by_country&level=HS2&locale=en&parents=true&limit=5000",
+  "final_url": "https://api.datasaudi.sa/tesseract/members?cube=trade_balance_by_country&level=HS2&locale=en&parents=true&limit=5000",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:10:01.642Z",
+  "started_at_utc": "2026-07-14T23:10:01.372Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p020-balance-hs2.body",
+  "body_sha256": "61a372ff5859365183df87df501123cc59a82071fff8c511d7da2669d4b5d7dc",
+  "body_bytes": 13626,
+  "error": null
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p017-pop-province-ar",
+  "question_ids": [
+    "P04-017"
+  ],
+  "purpose": "Live public members for gastat_detailed_population/Geography Province (ar)",
+  "request_url": "https://api.datasaudi.sa/tesseract/members.jsonrecords?cube=gastat_detailed_population&level=Geography+Province&locale=ar&parents=true&limit=5000",
+  "final_url": "https://api.datasaudi.sa/tesseract/members?cube=gastat_detailed_population&level=Geography+Province&locale=ar&parents=true&limit=5000",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:09:57.181Z",
+  "started_at_utc": "2026-07-14T23:09:57.015Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p017-pop-province-ar.body",
+  "body_sha256": "19bd09c5a04e15d29d4f36e6634ef050394193f5c0e0d39f39bbb010d3801ecd",
+  "body_bytes": 682,
+  "error": null
+}

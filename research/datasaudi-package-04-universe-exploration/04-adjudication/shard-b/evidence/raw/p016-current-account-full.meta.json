@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p016-current-account-full",
+  "question_ids": [
+    "P04-016"
+  ],
+  "purpose": "Live public data replay for current_account_quarter: Current Account Category,Quarter / Million SAR",
+  "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=current_account_quarter&drilldowns=Current+Account+Category%2CQuarter&measures=Million+SAR&locale=en&limit=50000",
+  "final_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=current_account_quarter&drilldowns=Current+Account+Category%2CQuarter&measures=Million+SAR&locale=en&limit=50000",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:10:04.675Z",
+  "started_at_utc": "2026-07-14T23:10:04.540Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p016-current-account-full.body",
+  "body_sha256": "8028bd986bc4659fb4252e58447e94b97becd109347923167115b385fc10dadd",
+  "body_bytes": 49066,
+  "error": null
+}

@@ -1,0 +1,13 @@
+{"schema_version":"1.0","sequence":1,"at_utc":"2026-07-14T22:37:36.136Z","direction":"out","question_id":null,"payload":{"type":"auth","token":"[REDACTED]"}}
+{"schema_version":"1.0","sequence":2,"at_utc":"2026-07-14T22:37:36.144Z","direction":"in","question_id":null,"payload":{"type":"proxy_connected"}}
+{"schema_version":"1.0","sequence":3,"at_utc":"2026-07-14T22:37:36.230Z","direction":"in","question_id":null,"payload":{"type":"auth_success","user_fingerprint_sha256":"aff3153d2aef1684cae347348dc12ad051e3af0a30b67080741c605d4f11ea90"}}
+{"schema_version":"1.0","sequence":4,"at_utc":"2026-07-14T22:38:35.726Z","direction":"out","question_id":"P04-001","payload":{"query":"تصرف كمدقق كتالوج لا كمحلل اقتصادي. استرجع كتالوج DataSaudi الكامل مع show_all=true ثم أعطني الأعداد الدقيقة للمكعبات والأبعاد والهرميات والمستويات والمقاييس والموضوعات والجهات الناشرة، وعدد المكعبات الموسومة hide_in_ui=true. أعطني رابط/طلب الاسترجاع ووقت الاسترجاع، ولا تعرض عينة بوصفها إجماليًا. إذا لم تستطع العد الكامل فاذكر بوضوح الجزء المسترجع والمقام الذي لم تستطع إثباته.","session_id":"1488c348-ea86-4fb4-b632-b0ace43b7e96","user_fingerprint_sha256":"aff3153d2aef1684cae347348dc12ad051e3af0a30b67080741c605d4f11ea90"}}
+{"schema_version":"1.0","sequence":5,"at_utc":"2026-07-14T22:38:37.375Z","direction":"in","question_id":"P04-001","payload":{"type":"language","language":"ar"}}
+{"schema_version":"1.0","sequence":6,"at_utc":"2026-07-14T22:38:37.382Z","direction":"in","question_id":"P04-001","payload":{"type":"phase","message":"جارٍ فهم سؤالك..."}}
+{"schema_version":"1.0","sequence":7,"at_utc":"2026-07-14T22:38:41.029Z","direction":"in","question_id":"P04-001","payload":{"type":"phase","message":"جارٍ البحث عن أنسب البيانات..."}}
+{"schema_version":"1.0","sequence":8,"at_utc":"2026-07-14T22:38:48.313Z","direction":"in","question_id":"P04-001","payload":{"type":"answer_start"}}
+{"schema_version":"1.0","sequence":9,"at_utc":"2026-07-14T22:38:48.318Z","direction":"in","question_id":"P04-001","payload":{"type":"content","text":"لا أستطيع إع"}}
+{"schema_version":"1.0","sequence":10,"at_utc":"2026-07-14T22:38:48.318Z","direction":"in","question_id":"P04-001","payload":{"type":"content","text":"طاء إجابة على هذا السؤال."}}
+{"schema_version":"1.0","sequence":11,"at_utc":"2026-07-14T22:38:48.318Z","direction":"in","question_id":"P04-001","payload":{"type":"content","text":""}}
+{"schema_version":"1.0","sequence":12,"at_utc":"2026-07-14T22:38:48.318Z","direction":"in","question_id":"P04-001","payload":{"type":"content","text":""}}
+{"schema_version":"1.0","sequence":13,"at_utc":"2026-07-14T22:38:48.323Z","direction":"in","question_id":"P04-001","payload":{"type":"answer_end"}}

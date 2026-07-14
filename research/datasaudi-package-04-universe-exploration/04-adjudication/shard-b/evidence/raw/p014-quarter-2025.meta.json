@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p014-quarter-2025",
+  "question_ids": [
+    "P04-014"
+  ],
+  "purpose": "Live public data replay for gastat_trade_balance: Quarter / Exports,Imports,Trade Balance",
+  "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_trade_balance&drilldowns=Quarter&measures=Exports%2CImports%2CTrade+Balance&locale=en&limit=50000&include=Year%3A2025",
+  "final_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_trade_balance&drilldowns=Quarter&measures=Exports%2CImports%2CTrade+Balance&locale=en&limit=50000&include=Year%3A2025",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:10:04.084Z",
+  "started_at_utc": "2026-07-14T23:10:03.939Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p014-quarter-2025.body",
+  "body_sha256": "5bc5ed27cf62db32406dcd9429e4d6c7f4e081e24a13a87cc5775592cb9880df",
+  "body_bytes": 1210,
+  "error": null
+}

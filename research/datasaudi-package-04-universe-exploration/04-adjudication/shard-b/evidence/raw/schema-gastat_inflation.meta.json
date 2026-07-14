@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "request_id": "schema-gastat_inflation",
+  "question_ids": [
+    "P04-013",
+    "P04-015",
+    "P04-016",
+    "P04-017",
+    "P04-018",
+    "P04-019",
+    "P04-020",
+    "P04-021"
+  ],
+  "purpose": "Live public cube schema for gastat_inflation",
+  "request_url": "https://api.datasaudi.sa/tesseract/cubes/gastat_inflation?locale=en",
+  "final_url": "https://api.datasaudi.sa/tesseract/cubes/gastat_inflation?locale=en",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:09:53.335Z",
+  "started_at_utc": "2026-07-14T23:09:53.273Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/schema-gastat_inflation.body",
+  "body_sha256": "95e8abc0d679edface23bd727f690b2e58d82d36a0651a184f94215ec06fa804",
+  "body_bytes": 1660,
+  "error": null
+}

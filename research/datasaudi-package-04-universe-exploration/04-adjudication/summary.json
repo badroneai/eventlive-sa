@@ -1,0 +1,425 @@
+{
+  "schema_version": "1.0",
+  "package_id": "datasaudi-package-04-universe-exploration",
+  "artifact_id": "P04-ADJUDICATION-SUMMARY",
+  "status": "PACKAGE_CLOSED_PLATFORM_UNIVERSE_NOT_EXHAUSTED",
+  "deterministic_build": {
+    "generated_from_input_artifacts": true,
+    "wall_clock_timestamp_used": false,
+    "source_files": [
+      {
+        "shard": "manual",
+        "path": "research/datasaudi-package-04-universe-exploration/04-adjudication/manual/adjudication.jsonl",
+        "records": 4,
+        "bytes": 5115,
+        "sha256": "e91c29eb75820aca152ad37e73848b5cd7e4fc2d817e6da2713e2e0046363c9e"
+      },
+      {
+        "shard": "shard-a",
+        "path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-a/adjudication.jsonl",
+        "records": 9,
+        "bytes": 40096,
+        "sha256": "35a472e04e34028bef3d56205b1565bbceac4bb545cbd8f5c26726be80f15811"
+      },
+      {
+        "shard": "shard-b",
+        "path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/adjudication.jsonl",
+        "records": 9,
+        "bytes": 84415,
+        "sha256": "762bf0a8cf9a9888e9d7ef837123a6d66c2d3572a32525f4d751223334cb3329"
+      },
+      {
+        "shard": "shard-c",
+        "path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-c/adjudication.jsonl",
+        "records": 9,
+        "bytes": 35538,
+        "sha256": "0ce11e898cf49e88f78a6cfecfdea4497ec87f75d7f0b470c7738d842e8d0233"
+      }
+    ]
+  },
+  "adjudication": {
+    "records": 31,
+    "exact_campaign_records": 30,
+    "exact_prompts_observed_and_scored": 29,
+    "exact_prompt_not_sent": [
+      "P04-003"
+    ],
+    "manual_live_observations_scored": 1,
+    "verdict_counts": {
+      "VERIFIED_PASS": 1,
+      "USEFUL_PARTIAL": 8,
+      "UNSAFE_PARTIAL": 8,
+      "FAIL": 13,
+      "BLOCKED_PLATFORM": 1
+    },
+    "score_statistics": {
+      "scored_records": 30,
+      "unscored_records": 1,
+      "score_total": 1658,
+      "average_score": 55.27,
+      "minimum_score": 10,
+      "maximum_score": 95
+    },
+    "by_shard": {
+      "manual": {
+        "records": 4,
+        "scored_records": 3,
+        "verdict_counts": {
+          "VERIFIED_PASS": 0,
+          "USEFUL_PARTIAL": 0,
+          "UNSAFE_PARTIAL": 0,
+          "FAIL": 3,
+          "BLOCKED_PLATFORM": 1
+        },
+        "average_score": 16.33
+      },
+      "shard-a": {
+        "records": 9,
+        "scored_records": 9,
+        "verdict_counts": {
+          "VERIFIED_PASS": 0,
+          "USEFUL_PARTIAL": 1,
+          "UNSAFE_PARTIAL": 3,
+          "FAIL": 5,
+          "BLOCKED_PLATFORM": 0
+        },
+        "average_score": 44.22
+      },
+      "shard-b": {
+        "records": 9,
+        "scored_records": 9,
+        "verdict_counts": {
+          "VERIFIED_PASS": 1,
+          "USEFUL_PARTIAL": 4,
+          "UNSAFE_PARTIAL": 2,
+          "FAIL": 2,
+          "BLOCKED_PLATFORM": 0
+        },
+        "average_score": 67
+      },
+      "shard-c": {
+        "records": 9,
+        "scored_records": 9,
+        "verdict_counts": {
+          "VERIFIED_PASS": 0,
+          "USEFUL_PARTIAL": 3,
+          "UNSAFE_PARTIAL": 3,
+          "FAIL": 3,
+          "BLOCKED_PLATFORM": 0
+        },
+        "average_score": 67.56
+      }
+    },
+    "exact_observed_score_statistics": {
+      "scored_records": 29,
+      "score_total": 1629,
+      "average_score": 56.17
+    },
+    "critical_failure_register": [
+      {
+        "question_id": "P04-001",
+        "score": 10,
+        "target_capability": "full_catalog_census",
+        "forced_fail": false,
+        "forced_fail_reasons": [],
+        "failure_basis": "رفض عام بلا محاولة استرجاع أو سبب أو مقام أو دليل؛ لا يفي بأي بند جوهري من العقد.",
+        "errors": [],
+        "false_completeness_flags": []
+      },
+      {
+        "question_id": "P04-002",
+        "score": 10,
+        "target_capability": "show_all_schema_delta",
+        "forced_fail": false,
+        "forced_fail_reasons": [],
+        "failure_basis": "رفض عام بلا مقارنة show_all أو روابط أو تفسير طبقة التعذر.",
+        "errors": [],
+        "false_completeness_flags": []
+      },
+      {
+        "question_id": "P04-004",
+        "score": 28,
+        "target_capability": "no_time_dimension_semantics",
+        "forced_fail": false,
+        "forced_fail_reasons": [],
+        "failure_basis": "Score below 40 with two material false retrieval/state claims and one false ranking claim.",
+        "errors": [
+          "dim_countries was mislabeled empty/retrieval-error despite returned data",
+          "renewable Year semantics were reduced incorrectly to 2024 only",
+          "largest-project conclusion is false"
+        ],
+        "false_completeness_flags": [
+          "dimension and measure lists were presented as complete while omitting schema fields",
+          "only two of three cubes received citations"
+        ]
+      },
+      {
+        "question_id": "P04-005",
+        "score": 28,
+        "target_capability": "exists_empty_error_distinction",
+        "forced_fail": true,
+        "forced_fail_reasons": [
+          "rule_8_zero_rows_hidden_by_query_substitution"
+        ],
+        "failure_basis": "The exact zero-row result was replaced silently with a different 17-row sector query and then labeled as the requested result.",
+        "errors": [
+          "wrong result_total for the exact query",
+          "wrong state classification",
+          "latest-period assertion is not reproducible"
+        ],
+        "false_completeness_flags": [
+          "a valid 2025 slice was represented as the exact Year.latest.1 result",
+          "the UI citation omits the time filter used in the narrative"
+        ]
+      },
+      {
+        "question_id": "P04-006",
+        "score": 11,
+        "target_capability": "calendar_to_dataset_linkage",
+        "forced_fail": false,
+        "forced_fail_reasons": [],
+        "failure_basis": "The answer is a safe-sounding but false blanket refusal and completes none of the requested calendar contract.",
+        "errors": [
+          "false platform-availability claim",
+          "missed all five requested releases",
+          "missed all feasible cube linkages"
+        ],
+        "false_completeness_flags": [
+          "the answer generalized its limited context into non-availability of the calendar"
+        ]
+      },
+      {
+        "question_id": "P04-007",
+        "score": 36,
+        "target_capability": "required_dimensions_contract",
+        "forced_fail": false,
+        "forced_fail_reasons": [],
+        "failure_basis": "Score below 40 because the answer invents the R&D error outcome and misquotes both required-dimension contracts.",
+        "errors": [
+          "wrong required_dimensions for R&D",
+          "fabricated HTTP 400/zero-row result for a query that returns four rows",
+          "annual building row count omits a present 2026 aggregate"
+        ],
+        "false_completeness_flags": [
+          "valid links omit the explicit Month.latest.5 constraint",
+          "annual table is presented as complete despite an available 2026 row"
+        ]
+      },
+      {
+        "question_id": "P04-009",
+        "score": 39,
+        "target_capability": "member_endpoint_failure_honesty",
+        "forced_fail": false,
+        "forced_fail_reasons": [],
+        "failure_basis": "The refusal behavior is honest, but the technical evidence is unusable: wrong HTTP code, four rather than eight requests, and no member endpoints.",
+        "errors": [
+          "HTTP 404 was fabricated in place of observed HTTP 500",
+          "Data Explorer URLs were mislabeled as member endpoints"
+        ],
+        "false_completeness_flags": [
+          "four rows were presented as coverage of eight locale-level calls"
+        ]
+      },
+      {
+        "question_id": "P04-015",
+        "score": 24,
+        "target_capability": "price_basis_and_adjustment_metadata",
+        "forced_fail": true,
+        "forced_fail_reasons": [
+          "MEASURES_ATTRIBUTED_TO_WRONG_CUBE",
+          "EXISTING_CUBE_FALSELY_DECLARED_UNAVAILABLE"
+        ],
+        "failure_basis": "MEASURES_ATTRIBUTED_TO_WRONG_CUBE; EXISTING_CUBE_FALSELY_DECLARED_UNAVAILABLE",
+        "errors": [],
+        "false_completeness_flags": [
+          "TARGET_CUBE_SILENTLY_REPLACED",
+          "AVAILABLE_OIL_SCHEMA_REPORTED_UNAVAILABLE",
+          "EXPLICIT_BASE_YEAR_2005_MISSED"
+        ]
+      },
+      {
+        "question_id": "P04-019",
+        "score": 25,
+        "target_capability": "economic_classification_join",
+        "forced_fail": true,
+        "forced_fail_reasons": [
+          "FABRICATED_MEMBER_KEYS",
+          "UNSUPPORTED_COMPATIBILITY_MATRIX"
+        ],
+        "failure_basis": "FABRICATED_MEMBER_KEYS; UNSUPPORTED_COMPATIBILITY_MATRIX",
+        "errors": [],
+        "false_completeness_flags": [
+          "FABRICATED_GDP_CODES",
+          "WRONG_SAMA_KEYS",
+          "MATRIX_CELLS_LACK_MEMBER_LEVEL_PROVENANCE"
+        ]
+      },
+      {
+        "question_id": "P04-022",
+        "score": 53,
+        "target_capability": "weighted_rate_reconciliation",
+        "forced_fail": true,
+        "forced_fail_reasons": [
+          "حساب جوهري خاطئ في صلب اختبار reconciliation"
+        ],
+        "failure_basis": "حساب جوهري خاطئ في صلب اختبار reconciliation",
+        "errors": [],
+        "false_completeness_flags": []
+      },
+      {
+        "question_id": "P04-026",
+        "score": 67,
+        "target_capability": "per_capita_denominator_alignment",
+        "forced_fail": true,
+        "forced_fail_reasons": [
+          "اختلاق اسم حقل/measure غير موجود يفعّل قاعدة الإسقاط الإلزامية"
+        ],
+        "failure_basis": "اختلاق اسم حقل/measure غير موجود يفعّل قاعدة الإسقاط الإلزامية",
+        "errors": [],
+        "false_completeness_flags": []
+      },
+      {
+        "question_id": "P04-027",
+        "score": 39,
+        "target_capability": "claim_level_provenance",
+        "forced_fail": true,
+        "forced_fail_reasons": [
+          "حقول مختلقة ورابط exact غير قابل لإعادة الشريحة"
+        ],
+        "failure_basis": "حقول مختلقة ورابط exact غير قابل لإعادة الشريحة",
+        "errors": [],
+        "false_completeness_flags": []
+      },
+      {
+        "question_id": "P04-MANUAL-UI-001",
+        "score": 29,
+        "target_capability": "hidden_cube_access_partial_substitute",
+        "forced_fail": false,
+        "forced_fail_reasons": [],
+        "failure_basis": "الجواب امتنع عن التخمين وقيّد النتيجة بالسياق الحالي، لكنه لم يسترجع schema أو بيانات ولم يقدم سوى رابط عام؛ كما أنه لا يغطي إلا هدفين من أهداف P04-003 الخمسة.",
+        "errors": [],
+        "false_completeness_flags": [
+          "GENERIC_PORTAL_LINK_ONLY",
+          "NO_SCHEMA_OR_DATA_RETRIEVAL",
+          "PARTIAL_SUBSTITUTE_2_OF_5"
+        ]
+      }
+    ]
+  },
+  "coverage_truth": {
+    "methodological_campaign": {
+      "represented_corpus": 267,
+      "target_executions": 2304,
+      "percent": 11.59,
+      "exact_percent": 11.588542,
+      "interpretation": "Frozen knowledge corpus representation; not live platform coverage."
+    },
+    "cumulative_live_insaights": {
+      "prior_observations": 49,
+      "current_window_messages": 30,
+      "observed_responses": 79,
+      "target_executions": 2304,
+      "percent": 3.43,
+      "interpretation": "Live messages observed across prior evidence plus the current same-user window; correctness is adjudicated separately."
+    },
+    "current_window": {
+      "daily_limit_observed": 30,
+      "messages_used": 30,
+      "exact_campaign_prompts_sent": 29,
+      "manual_probe_messages_sent": 1,
+      "exact_campaign_prompt_not_sent": "P04-003",
+      "exact_prompt_gap_reason": "أُرسلت الملاحظة اليدوية قبل تجميد corpus واستهلكت رسالة واحدة من نافذة 30؛ لم يُعد إرسال P04-003 كي لا نتجاوز الحد أو ندّعي تطابقًا غير موجود.",
+      "same_user_fingerprint_sha256": "aff3153d2aef1684cae347348dc12ad051e3af0a30b67080741c605d4f11ea90",
+      "sessions": 6,
+      "assistant_messages": 30,
+      "citations": 64,
+      "visualizations": 0,
+      "interpretation": "The known 30-message window is fully used without identity rotation. It is not 30 verified answers and does not exhaust INSAIGHTS."
+    },
+    "public_api_universe": {
+      "cube_dossiers": 277,
+      "catalog_cubes": 277,
+      "data_probes": 277,
+      "data_returned": 277,
+      "percent": 100,
+      "time_member_probes": 270,
+      "time_member_probe_ok": 270,
+      "hidden_in_ui_cubes": 26,
+      "dimensions": 722,
+      "hierarchies": 753,
+      "levels": 992,
+      "measures": 479,
+      "compatibility_candidates": 7851,
+      "proven_safe_joins": 0,
+      "interpretation": "Complete dossier and one sample data probe per public catalog cube; not full-row, rights, join, or live-answer coverage."
+    }
+  },
+  "capability_surfaces": {
+    "session_history": {
+      "matched_sessions": 6,
+      "messages": 60,
+      "user_messages": 30,
+      "assistant_messages": 30,
+      "citations": 64,
+      "visualizations": 0,
+      "auth_token_persisted": false
+    },
+    "pdf": {
+      "status": 200,
+      "ok": true,
+      "content_type": "application/pdf",
+      "bytes": 63941,
+      "sha256": "762973242a29248c6e705f1cadf6826689e8c41742a108240d5aca68e8b35f72",
+      "path": "research/datasaudi-package-04-universe-exploration/06-capability-surfaces/pdf-direct-probe.pdf",
+      "source_session_id": "2fbe9edb-5739-4adc-ad96-e7648a359706",
+      "chat_messages_submitted": 2
+    },
+    "write_operations": {
+      "rename_test": "NOT_PERFORMED_READ_ONLY_BOUNDARY",
+      "delete_test": "NOT_PERFORMED_READ_ONLY_BOUNDARY"
+    }
+  },
+  "material_findings": [
+    {
+      "question_id": "P04-005",
+      "finding": "The exact zero-row request was silently replaced with a different 17-row slice and labeled as the requested result."
+    },
+    {
+      "question_id": "P04-007",
+      "finding": "The answer fabricated an HTTP 400/zero-row outcome for a query independently replayed with four rows."
+    },
+    {
+      "question_id": "P04-015",
+      "finding": "Measures were attributed to the wrong GDP cube and an existing oil-price cube with Base Year 2005 was declared unavailable."
+    },
+    {
+      "question_id": "P04-019",
+      "finding": "GDP and SAMA member keys were fabricated or wrong, invalidating the proposed compatibility matrix."
+    },
+    {
+      "question_id": "P04-022",
+      "finding": "The 13-region sum and unweighted mean were materially miscalculated in the weighted-rate reconciliation."
+    },
+    {
+      "question_id": "P04-026",
+      "finding": "The numerical calculation reproduced, but the answer invented a water measure/field name, triggering mandatory FAIL."
+    },
+    {
+      "question_id": "P04-027",
+      "finding": "Field names were invented and the link presented as exact did not contain the month filter."
+    },
+    {
+      "question_id": "P04-029/P04-030",
+      "finding": "Official Arabic/English API parity passed, while the INSAIGHTS answer contract failed because captions were treated as keys and links did not reproduce the slice."
+    }
+  ],
+  "hard_boundaries": [
+    "79/2304 live observations equals 3.43 percent; it is not at or above 10 percent.",
+    "267/2304 equals 11.59 percent corpus representation; it is not live-platform exhaustion.",
+    "277/277 equals 100 percent public API cube dossier coverage; it is not full-row or INSAIGHTS answer coverage.",
+    "P04-003 was not sent; the manual probe overlaps only two of its five targets.",
+    "An observed answer is not a verified answer; the adjudication verdict is the correctness control.",
+    "Schema compatibility candidates are not proven joins; no safe join was established by the dossier.",
+    "Public accessibility does not establish exact dataset licensing or commercial reuse rights."
+  ]
+}

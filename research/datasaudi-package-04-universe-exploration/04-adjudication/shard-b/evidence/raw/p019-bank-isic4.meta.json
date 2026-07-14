@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p019-bank-isic4",
+  "question_ids": [
+    "P04-019"
+  ],
+  "purpose": "Live public members for sama_bank_credit_month/ISIC4 (en)",
+  "request_url": "https://api.datasaudi.sa/tesseract/members.jsonrecords?cube=sama_bank_credit_month&level=ISIC4&locale=en&parents=true&limit=5000",
+  "final_url": "https://api.datasaudi.sa/tesseract/members?cube=sama_bank_credit_month&level=ISIC4&locale=en&parents=true&limit=5000",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:09:59.699Z",
+  "started_at_utc": "2026-07-14T23:09:59.543Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p019-bank-isic4.body",
+  "body_sha256": "f0d41f3bda6a941bf14a574bf338259d974eecc8bdcdc31088735338ebab98a3",
+  "body_bytes": 1045,
+  "error": null
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p021-water-year",
+  "question_ids": [
+    "P04-021"
+  ],
+  "purpose": "Live public members for sama_water_consumption_region/Year (en)",
+  "request_url": "https://api.datasaudi.sa/tesseract/members.jsonrecords?cube=sama_water_consumption_region&level=Year&locale=en&parents=true&limit=5000",
+  "final_url": "https://api.datasaudi.sa/tesseract/members?cube=sama_water_consumption_region&level=Year&locale=en&parents=true&limit=5000",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:10:03.133Z",
+  "started_at_utc": "2026-07-14T23:10:02.965Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p021-water-year.body",
+  "body_sha256": "530b027e0364eeba79660b298865ce89b556e274d84f73070112dff0f274e227",
+  "body_bytes": 380,
+  "error": null
+}

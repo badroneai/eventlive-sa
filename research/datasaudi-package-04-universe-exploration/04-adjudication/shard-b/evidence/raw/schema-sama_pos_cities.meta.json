@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "request_id": "schema-sama_pos_cities",
+  "question_ids": [
+    "P04-013",
+    "P04-015",
+    "P04-016",
+    "P04-017",
+    "P04-018",
+    "P04-019",
+    "P04-020",
+    "P04-021"
+  ],
+  "purpose": "Live public cube schema for sama_pos_cities",
+  "request_url": "https://api.datasaudi.sa/tesseract/cubes/sama_pos_cities?locale=en",
+  "final_url": "https://api.datasaudi.sa/tesseract/cubes/sama_pos_cities?locale=en",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:09:54.440Z",
+  "started_at_utc": "2026-07-14T23:09:54.374Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/schema-sama_pos_cities.body",
+  "body_sha256": "46722b8077f6a9ae3dbf765c99919cbc33ab52218270760aa8777a2cb994afa7",
+  "body_bytes": 1637,
+  "error": null
+}

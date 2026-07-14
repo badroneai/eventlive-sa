@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p021-rate-sex",
+  "question_ids": [
+    "P04-021"
+  ],
+  "purpose": "Live public members for gastat_rate_gender_nationality_region/Sex (en)",
+  "request_url": "https://api.datasaudi.sa/tesseract/members.jsonrecords?cube=gastat_rate_gender_nationality_region&level=Sex&locale=en&parents=true&limit=5000",
+  "final_url": "https://api.datasaudi.sa/tesseract/members?cube=gastat_rate_gender_nationality_region&level=Sex&locale=en&parents=true&limit=5000",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:10:02.659Z",
+  "started_at_utc": "2026-07-14T23:10:02.489Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p021-rate-sex.body",
+  "body_sha256": "fdc66710e06623d8953361fafb451de9cc1a789956a0996d6e9989682395c8da",
+  "body_bytes": 229,
+  "error": null
+}

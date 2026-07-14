@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p021-water-2022",
+  "question_ids": [
+    "P04-021"
+  ],
+  "purpose": "Live public data replay for sama_water_consumption_region: Year,Province / Thousand cubic meters",
+  "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_water_consumption_region&drilldowns=Year%2CProvince&measures=Thousand+cubic+meters&locale=en&limit=50000&include=Year%3A2022",
+  "final_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_water_consumption_region&drilldowns=Year%2CProvince&measures=Thousand+cubic+meters&locale=en&limit=50000&include=Year%3A2022",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:10:06.037Z",
+  "started_at_utc": "2026-07-14T23:10:05.900Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p021-water-2022.body",
+  "body_sha256": "24524369bafd943c57003b168d31f160a7d885028c6fc8e981ed6e76206a2583",
+  "body_bytes": 1822,
+  "error": null
+}

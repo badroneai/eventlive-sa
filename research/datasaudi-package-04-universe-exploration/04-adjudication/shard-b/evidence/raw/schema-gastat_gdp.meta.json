@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "request_id": "schema-gastat_gdp",
+  "question_ids": [
+    "P04-013",
+    "P04-015",
+    "P04-016",
+    "P04-017",
+    "P04-018",
+    "P04-019",
+    "P04-020",
+    "P04-021"
+  ],
+  "purpose": "Live public cube schema for gastat_gdp",
+  "request_url": "https://api.datasaudi.sa/tesseract/cubes/gastat_gdp?locale=en",
+  "final_url": "https://api.datasaudi.sa/tesseract/cubes/gastat_gdp?locale=en",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:09:53.195Z",
+  "started_at_utc": "2026-07-14T23:09:53.118Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/schema-gastat_gdp.body",
+  "body_sha256": "8c81d547259b04bc0013e64e7899736c83d7bbe8a2b1de57e38a1928fce0f4dd",
+  "body_bytes": 1817,
+  "error": null
+}

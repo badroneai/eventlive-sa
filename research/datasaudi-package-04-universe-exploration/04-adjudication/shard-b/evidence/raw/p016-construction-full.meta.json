@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p016-construction-full",
+  "question_ids": [
+    "P04-016"
+  ],
+  "purpose": "Live public data replay for construction_cost_index_by_sector: Sector,Month / Construction Cost Index,Construction Cost Index YoY Growth",
+  "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=construction_cost_index_by_sector&drilldowns=Sector%2CMonth&measures=Construction+Cost+Index%2CConstruction+Cost+Index+YoY+Growth&locale=en&limit=50000",
+  "final_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=construction_cost_index_by_sector&drilldowns=Sector%2CMonth&measures=Construction+Cost+Index%2CConstruction+Cost+Index+YoY+Growth&locale=en&limit=50000",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:10:04.270Z",
+  "started_at_utc": "2026-07-14T23:10:04.161Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p016-construction-full.body",
+  "body_sha256": "790f955834834b40cf73ff9051fe35cbee3e82d5713180bdb46e6432b9cefac7",
+  "body_bytes": 7376,
+  "error": null
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "request_id": "schema-trade_balance_by_country",
+  "question_ids": [
+    "P04-013",
+    "P04-015",
+    "P04-016",
+    "P04-017",
+    "P04-018",
+    "P04-019",
+    "P04-020",
+    "P04-021"
+  ],
+  "purpose": "Live public cube schema for trade_balance_by_country",
+  "request_url": "https://api.datasaudi.sa/tesseract/cubes/trade_balance_by_country?locale=en",
+  "final_url": "https://api.datasaudi.sa/tesseract/cubes/trade_balance_by_country?locale=en",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:09:55.155Z",
+  "started_at_utc": "2026-07-14T23:09:55.026Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/schema-trade_balance_by_country.body",
+  "body_sha256": "08d4aab609f6764deed982eb2440d00d829af4ba977c8b44c90b069c0baeb58f",
+  "body_bytes": 2125,
+  "error": null
+}

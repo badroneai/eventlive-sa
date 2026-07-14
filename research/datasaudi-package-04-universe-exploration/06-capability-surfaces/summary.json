@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "captured_at_utc": "2026-07-14T23:13:41.429Z",
+  "mode": "LEGITIMATE_SAME_USER_SESSION_SURFACE_CAPTURE",
+  "auth_token_persisted": false,
+  "user_fingerprint_sha256": "aff3153d2aef1684cae347348dc12ad051e3af0a30b67080741c605d4f11ea90",
+  "sessions_endpoint": {
+    "status": 200,
+    "total": 6,
+    "matched": 6
+  },
+  "histories": [
+    {
+      "session_id": "2fbe9edb-5739-4adc-ad96-e7648a359706",
+      "http_status": 200,
+      "ok": true,
+      "messages": 2,
+      "user_messages": 1,
+      "assistant_messages": 1,
+      "citations": 2,
+      "visualizations": 0,
+      "response_path": "research/datasaudi-package-04-universe-exploration/06-capability-surfaces/session-history/2fbe9edb-5739-4adc-ad96-e7648a359706.json",
+      "response_sha256": "150db9b31d5b0f5af1267e150fd1e7643f6d91417d52492f0f4116754c0434a7"
+    },
+    {
+      "session_id": "194003b2-5371-4ef2-8f0b-844e9f727722",
+      "http_status": 200,
+      "ok": true,
+      "messages": 2,
+      "user_messages": 1,
+      "assistant_messages": 1,
+      "citations": 1,
+      "visualizations": 0,
+      "response_path": "research/datasaudi-package-04-universe-exploration/06-capability-surfaces/session-history/194003b2-5371-4ef2-8f0b-844e9f727722.json",
+      "response_sha256": "2ab2a28c7360ddfc6d6c25dcd0e66bbe4f74f4752743f8de1973a7e19048e743"
+    },
+    {
+      "session_id": "99631cce-8802-46fe-9335-1e0e8fb8f926",
+      "http_status": 200,
+      "ok": true,
+      "messages": 50,
+      "user_messages": 25,
+      "assistant_messages": 25,
+      "citations": 60,
+      "visualizations": 0,
+      "response_path": "research/datasaudi-package-04-universe-exploration/06-capability-surfaces/session-history/99631cce-8802-46fe-9335-1e0e8fb8f926.json",
+      "response_sha256": "8725c2ea896f7d8d35c6bf32c1b61512e29b9407369e92cf8d46d13021441c39"
+    },
+    {
+      "session_id": "1416bba2-494d-44b9-8eb8-38139f12c09e",
+      "http_status": 200,
+      "ok": true,
+      "messages": 2,
+      "user_messages": 1,
+      "assistant_messages": 1,
+      "citations": 0,
+      "visualizations": 0,
+      "response_path": "research/datasaudi-package-04-universe-exploration/06-capability-surfaces/session-history/1416bba2-494d-44b9-8eb8-38139f12c09e.json",
+      "response_sha256": "2ef519936c3180272ff7ec6c1b0f61d145a3839b5cca14cef70abc583a0eda5b"
+    },
+    {
+      "session_id": "1488c348-ea86-4fb4-b632-b0ace43b7e96",
+      "http_status": 200,
+      "ok": true,
+      "messages": 2,
+      "user_messages": 1,
+      "assistant_messages": 1,
+      "citations": 0,
+      "visualizations": 0,
+      "response_path": "research/datasaudi-package-04-universe-exploration/06-capability-surfaces/session-history/1488c348-ea86-4fb4-b632-b0ace43b7e96.json",
+      "response_sha256": "0769854b2352aa503c51835f94df7cb15882eba81a79ac7cbf8b9635d9e91b78"
+    },
+    {
+      "session_id": "b9d1e68f-df33-4325-a429-5735141802fc",
+      "http_status": 200,
+      "ok": true,
+      "messages": 2,
+      "user_messages": 1,
+      "assistant_messages": 1,
+      "citations": 1,
+      "visualizations": 0,
+      "response_path": "research/datasaudi-package-04-universe-exploration/06-capability-surfaces/session-history/b9d1e68f-df33-4325-a429-5735141802fc.json",
+      "response_sha256": "da36285fc23a31ba563b41502322f46b75198e58e6c8be3d5e82ff26b8ba1d95"
+    }
+  ],
+  "totals": {
+    "matched_sessions": 6,
+    "messages": 60,
+    "user_messages": 30,
+    "assistant_messages": 30,
+    "citations": 64,
+    "visualizations": 0
+  },
+  "pdf_direct_probe": {
+    "status": 200,
+    "ok": true,
+    "content_type": "application/pdf",
+    "bytes": 63941,
+    "sha256": "762973242a29248c6e705f1cadf6826689e8c41742a108240d5aca68e8b35f72",
+    "path": "research/datasaudi-package-04-universe-exploration/06-capability-surfaces/pdf-direct-probe.pdf",
+    "source_session_id": "2fbe9edb-5739-4adc-ad96-e7648a359706",
+    "chat_messages_submitted": 2
+  },
+  "rename_test": "NOT_PERFORMED_READ_ONLY_BOUNDARY",
+  "delete_test": "NOT_PERFORMED_READ_ONLY_BOUNDARY"
+}

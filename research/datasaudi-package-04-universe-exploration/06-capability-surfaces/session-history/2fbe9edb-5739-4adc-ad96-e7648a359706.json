@@ -1,0 +1,28 @@
+{
+  "chat_management": [
+    {
+      "role": "human",
+      "content": "Using avg_monthly_wages_per_paid_employee with locale=en only, return Average Wage and Average Salary Growth Rate (YoY) for 2024-Q4 at Nationality=Saudi and Sex=Female. Use the actual member keys and include raw values, units, period, dataset name, publisher, and the exact query URL. Do not translate keys or calculate a missing measure. This is the English half of a parity test; preserve exactly the same slice as P04-029.",
+      "created_at": "23:02:18",
+      "language": "en"
+    },
+    {
+      "role": "ai",
+      "content": "Based on the statistical indicators from the dataset, the table below shows the labor market metrics for Saudi female employees in 2024-Q4:\n\n| Date | Nationality | Sex | Average Wage | Average Salary Growth Rate (YoY) | Dataset Name |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| 2024-Q4 | Saudi | Female | ⃁ 7,983.6 | 4.38% | Average Monthly Wages per Paid Employee in Main Work by Nationality, Sex, and Age Group - Quarterly |\n\n### Factual Overview of Raw Data Parameters\n* **Average Wage (Raw Value):** `7983.6` (Unit: ⃁ / Saudi Riyal)\n* **Average Salary Growth Rate (YoY) (Raw Value):** `0.043812512257305425` (Unit: % / 4.38%)\n* **Period:** 2024-Q4\n* **Nationality Key:** Saudi\n* **Sex Key:** Female\n* **Dataset Name:** Average Monthly Wages per Paid Employee in Main Work by Nationality, Sex, and Age Group - Quarterly\n* **Publisher:** General Authority for Statistics\n* **Query URL:** [Data Saudi Explorer](https://datasaudi.sa/en/data-explorer?cube=avg_monthly_wages_per_paid_employee&locale=en&drilldowns=Nationality,Sex,Quarter&measures=Average+Wage,Average+Salary+Growth+Rate+%28YoY%29&limit=100%2C0&panel=table)\n\n### Analysis\nAccording to the official data for the fourth quarter of 2024, the average monthly wage of Saudi female employees reached ⃁ 7,983.6. This income level is accompanied by a positive year-on-year salary growth rate of approximately 4.38%, indicating an upward shift in female compensation compared to the same period in the previous year. \n\n### Conclusion\nThe data demonstrates sustained wage growth for Saudi female professionals during 2024-Q4, with salaries increasing by over 4.3% year-on-year, reflecting active dynamics within the Saudi labor market.\n\n**A trend line chart showing the wage trajectory over preceding quarters would highlight the long-term earnings growth for this demographic clearly. Would you like to see it?**",
+      "created_at": "23:02:18",
+      "citation": [
+        {
+          "text": "Data Saudi Explorer",
+          "url": "https://datasaudi.sa/en/data-explorer?cube=avg_monthly_wages_per_paid_employee&locale=en&drilldowns=Nationality,Sex,Quarter&measures=Average+Wage,Average+Salary+Growth+Rate+%28YoY%29&limit=100%2C0&panel=table"
+        },
+        {
+          "text": "Average Monthly Wages Statistics and Query Tool",
+          "url": "https://datasaudi.sa/en/data-explorer?cube=avg_monthly_wages_per_paid_employee&locale=en&drilldowns=Nationality,Sex,Quarter&measures=Average+Wage,Average+Salary+Growth+Rate+%28YoY%29&limit=100%2C0&panel=table"
+        }
+      ],
+      "visualization": null,
+      "language": "en"
+    }
+  ],
+  "session_name": null
+}

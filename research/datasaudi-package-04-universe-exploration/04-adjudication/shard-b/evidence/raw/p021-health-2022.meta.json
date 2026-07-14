@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p021-health-2022",
+  "question_ids": [
+    "P04-021"
+  ],
+  "purpose": "Live public data replay for sama_health_facilities_resources: Year,Province,Resource Category / Resources",
+  "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_health_facilities_resources&drilldowns=Year%2CProvince%2CResource+Category&measures=Resources&locale=en&limit=50000&include=Year%3A2022",
+  "final_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=sama_health_facilities_resources&drilldowns=Year%2CProvince%2CResource+Category&measures=Resources&locale=en&limit=50000&include=Year%3A2022",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:10:06.249Z",
+  "started_at_utc": "2026-07-14T23:10:06.115Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p021-health-2022.body",
+  "body_sha256": "65fbb117131d1970601ed2746efed86236dd9d17d710294f46d00831ef3f78ed",
+  "body_bytes": 14772,
+  "error": null
+}

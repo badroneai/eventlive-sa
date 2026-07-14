@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p020-foreign-country",
+  "question_ids": [
+    "P04-020"
+  ],
+  "purpose": "Live public members for foreign_trade/Country (en)",
+  "request_url": "https://api.datasaudi.sa/tesseract/members.jsonrecords?cube=foreign_trade&level=Country&locale=en&parents=true&limit=5000",
+  "final_url": "https://api.datasaudi.sa/tesseract/members?cube=foreign_trade&level=Country&locale=en&parents=true&limit=5000",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:10:00.331Z",
+  "started_at_utc": "2026-07-14T23:10:00.063Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p020-foreign-country.body",
+  "body_sha256": "b589e9d59eafcaa40ca2f32b6113aa10039967a2b54d7f96b942d6fd594f24eb",
+  "body_bytes": 23163,
+  "error": null
+}

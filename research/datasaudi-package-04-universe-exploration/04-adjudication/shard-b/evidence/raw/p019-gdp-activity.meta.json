@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p019-gdp-activity",
+  "question_ids": [
+    "P04-019"
+  ],
+  "purpose": "Live public members for gastat_gdp/Economic Activity Section (en)",
+  "request_url": "https://api.datasaudi.sa/tesseract/members.jsonrecords?cube=gastat_gdp&level=Economic+Activity+Section&locale=en&parents=true&limit=5000",
+  "final_url": "https://api.datasaudi.sa/tesseract/members?cube=gastat_gdp&level=Economic+Activity+Section&locale=en&parents=true&limit=5000",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:09:59.464Z",
+  "started_at_utc": "2026-07-14T23:09:59.262Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p019-gdp-activity.body",
+  "body_sha256": "ae84632e5d8cad8e3cbcb703422c9901ebabe296a6948b0c1938b0e472160040",
+  "body_bytes": 845,
+  "error": null
+}

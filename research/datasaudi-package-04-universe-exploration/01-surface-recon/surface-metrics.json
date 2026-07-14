@@ -1,0 +1,229 @@
+{
+  "schema_version": "1.0",
+  "captured_at_utc": "2026-07-14T22:33:29Z",
+  "captured_at_riyadh": "2026-07-15T01:33:29+03:00",
+  "mode": "READ_ONLY_PUBLIC_SURFACE_RECON",
+  "live_questions_sent": 0,
+  "quota_bypass_attempted": false,
+  "next_build_id_observed": "jKr4M70ajVH4Grvx2K7_H",
+  "catalog": {
+    "endpoint_en": "https://api.datasaudi.sa/tesseract/cubes?locale=en",
+    "endpoint_ar": "https://api.datasaudi.sa/tesseract/cubes?locale=ar",
+    "raw_cubes": 277,
+    "primary_cubes": 267,
+    "auxiliary_or_non_primary_cubes": 10,
+    "raw_en_bytes": 542817,
+    "raw_ar_bytes": 570263,
+    "raw_en_sha256": "a0253d3592d2450a4fa7986caa04891ef8bdf24f8bec7ead678e6b5fbcdec286",
+    "raw_ar_sha256": "4e1a0fd734d476b5c65a2ce3f4648cd7db76b3c38d0c3ae1c637a4ea3133960f",
+    "primary_topics": {
+      "economic_indicators": 124,
+      "social_indicators": 114,
+      "internationally_reported_indicators": 14,
+      "hajj": 10,
+      "umrah": 5
+    },
+    "measures": 466,
+    "dimensions": 694,
+    "dimension_types": {
+      "standard": 341,
+      "time": 262,
+      "geo": 91
+    },
+    "measure_units": {
+      "Unit": 153,
+      "Unit Int": 105,
+      "Percentage Base 100": 74,
+      "Rate": 45,
+      "Percentage": 38,
+      "Growth": 20,
+      "Ratio": 19,
+      "Index": 7,
+      "Value": 2,
+      "missing": 3
+    },
+    "required_dimensions_cubes": 48,
+    "direct_source_link_cubes": 253,
+    "missing_direct_source_link_cubes": 14,
+    "missing_measure_unit_count": 3
+  },
+  "temporal_coverage": {
+    "temporal_cubes": 262,
+    "non_temporal_cubes": 5,
+    "member_requests": 262,
+    "member_request_errors": 0,
+    "empty_member_responses": 0,
+    "finest_granularity": {
+      "annual": 169,
+      "quarterly": 44,
+      "monthly": 49,
+      "daily": 0,
+      "real_time": 0
+    },
+    "last_available_year": {
+      "2026": 73,
+      "2025": 43,
+      "2024": 62,
+      "2023": 29,
+      "2022": 45,
+      "2021": 5,
+      "2018": 1,
+      "2017": 4
+    },
+    "ending_2022_or_earlier": 55,
+    "by_primary_topic": {
+      "economic_indicators": {
+        "cubes": 124,
+        "temporal": 120,
+        "annual": 61,
+        "quarterly": 20,
+        "monthly": 39,
+        "no_time": 4,
+        "last_2026": 54,
+        "last_2025": 27,
+        "last_2024": 24,
+        "last_2023": 2,
+        "last_2022_or_earlier": 13
+      },
+      "social_indicators": {
+        "cubes": 114,
+        "temporal": 114,
+        "annual": 82,
+        "quarterly": 24,
+        "monthly": 8,
+        "no_time": 0,
+        "last_2026": 19,
+        "last_2025": 9,
+        "last_2024": 29,
+        "last_2023": 23,
+        "last_2022_or_earlier": 34
+      },
+      "internationally_reported_indicators": {
+        "cubes": 14,
+        "temporal": 13,
+        "annual": 13,
+        "quarterly": 0,
+        "monthly": 0,
+        "no_time": 1,
+        "last_2026": 0,
+        "last_2025": 5,
+        "last_2024": 4,
+        "last_2023": 3,
+        "last_2022_or_earlier": 1
+      },
+      "hajj": {
+        "cubes": 10,
+        "temporal": 10,
+        "annual": 10,
+        "quarterly": 0,
+        "monthly": 0,
+        "no_time": 0,
+        "last_2026": 0,
+        "last_2025": 2,
+        "last_2024": 1,
+        "last_2023": 0,
+        "last_2022_or_earlier": 7
+      },
+      "umrah": {
+        "cubes": 5,
+        "temporal": 5,
+        "annual": 3,
+        "quarterly": 0,
+        "monthly": 2,
+        "no_time": 0,
+        "last_2026": 0,
+        "last_2025": 0,
+        "last_2024": 4,
+        "last_2023": 1,
+        "last_2022_or_earlier": 0
+      }
+    }
+  },
+  "public_profiles": {
+    "total": 220,
+    "bilateral": 183,
+    "sector": 21,
+    "region": 13,
+    "competitiveness": 3
+  },
+  "source_counts": {
+    "GASTAT": 157,
+    "SAMA": 52,
+    "missing_direct_name_and_link_in_international_cubes": 14,
+    "Ministry_of_Health": 10,
+    "Tourism_Data_and_Decision_Support": 5,
+    "Saudi_Census_2022": 5,
+    "Saudi_Census_2023": 4
+  },
+  "data_api": {
+    "base_url": "https://api.datasaudi.sa/tesseract",
+    "catalog_path": "/cubes",
+    "members_path": "/members",
+    "data_path": "/data.{format}",
+    "formats_verified_http_200": [
+      "csv",
+      "jsonrecords",
+      "parquet",
+      "tsv",
+      "xlsx"
+    ],
+    "cors_allow_origin": "*",
+    "rate_limit_headers_observed": false
+  },
+  "insaights": {
+    "page": "https://datasaudi.sa/ar/insaights",
+    "auth_endpoint": "https://datasaudi.sa/api/auth/token",
+    "websocket_endpoint": "wss://datasaudi.sa/api/ws/chat",
+    "session_endpoints": [
+      "/api/chat-management/sessions",
+      "/api/chat-management/history",
+      "/api/chat-management/name",
+      "/api/chat-management/delete"
+    ],
+    "pdf_endpoint": "/api/generate-pdf",
+    "client_token_cache_seconds": 840,
+    "embedded_suggested_prompts": 7,
+    "response_types": [
+      "auth_success",
+      "proxy_connected",
+      "language",
+      "phase",
+      "answer_start",
+      "content",
+      "link",
+      "generating_chart",
+      "interactive_visualization",
+      "answer_end",
+      "error"
+    ],
+    "daily_message_limit_observed": 30,
+    "quota_reset_time_known": false,
+    "quota_binding_rule_known": false,
+    "experimental_disclaimer_present": true
+  },
+  "economic_calendar": {
+    "base_url": "https://apipulse.mep.gov.sa/ds/calendar/v1",
+    "summary_count_path": "/summary/count",
+    "categories_path": "/categories",
+    "search_path": "/search",
+    "months": 26,
+    "first_month": "2024-11",
+    "last_month": "2026-12",
+    "events": 408,
+    "july_2026_events": 12,
+    "active_categories": 2
+  },
+  "official_guide": {
+    "url": "https://datasaudi.sa/pdfs/DataSaudi%20-%20Data%20Explorer%20User%20Guide.pdf",
+    "pages": 15,
+    "database_architecture": "ROLAP",
+    "bilingual_data": true,
+    "reusable_json_api_urls": true,
+    "custom_filters": true,
+    "on_demand_aggregation": true,
+    "visualization_exports": [
+      "png",
+      "svg"
+    ]
+  }
+}

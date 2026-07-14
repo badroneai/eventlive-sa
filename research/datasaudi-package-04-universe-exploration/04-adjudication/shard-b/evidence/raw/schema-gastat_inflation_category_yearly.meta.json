@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "request_id": "schema-gastat_inflation_category_yearly",
+  "question_ids": [
+    "P04-013",
+    "P04-015",
+    "P04-016",
+    "P04-017",
+    "P04-018",
+    "P04-019",
+    "P04-020",
+    "P04-021"
+  ],
+  "purpose": "Live public cube schema for gastat_inflation_category_yearly",
+  "request_url": "https://api.datasaudi.sa/tesseract/cubes/gastat_inflation_category_yearly?locale=en",
+  "final_url": "https://api.datasaudi.sa/tesseract/cubes/gastat_inflation_category_yearly?locale=en",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:09:56.320Z",
+  "started_at_utc": "2026-07-14T23:09:56.262Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/schema-gastat_inflation_category_yearly.body",
+  "body_sha256": "a45d5a12c6d945e45fb0306702454ec6c879b03a431150d491c09c316af3c7cb",
+  "body_bytes": 1726,
+  "error": null
+}

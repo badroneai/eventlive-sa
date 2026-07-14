@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p021-rate-nationality",
+  "question_ids": [
+    "P04-021"
+  ],
+  "purpose": "Live public members for gastat_rate_gender_nationality_region/Nationality (en)",
+  "request_url": "https://api.datasaudi.sa/tesseract/members.jsonrecords?cube=gastat_rate_gender_nationality_region&level=Nationality&locale=en&parents=true&limit=5000",
+  "final_url": "https://api.datasaudi.sa/tesseract/members?cube=gastat_rate_gender_nationality_region&level=Nationality&locale=en&parents=true&limit=5000",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:10:02.887Z",
+  "started_at_utc": "2026-07-14T23:10:02.737Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p021-rate-nationality.body",
+  "body_sha256": "5b486e6340d1200852d5dff6c56273f6f53c72fae512374970b1a1fc57200e7c",
+  "body_bytes": 265,
+  "error": null
+}

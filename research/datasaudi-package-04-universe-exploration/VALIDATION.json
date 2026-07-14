@@ -1,0 +1,277 @@
+{
+  "schema_version": "1.0",
+  "package_id": "datasaudi-package-04-universe-exploration",
+  "validation_mode": "CONTENT_AND_ACCOUNTING_INTEGRITY",
+  "verdict": "PASS",
+  "checks_total": 18,
+  "checks_passed": 18,
+  "failures": [],
+  "metrics": {
+    "prompts": 30,
+    "exact_live_prompts": 29,
+    "manual_window_messages": 1,
+    "same_user_fingerprint_sha256": "aff3153d2aef1684cae347348dc12ad051e3af0a30b67080741c605d4f11ea90",
+    "server_user_messages": 30,
+    "server_assistant_messages": 30,
+    "api_dossiers": 277,
+    "api_time_probes": 270,
+    "hidden_cubes": 26,
+    "compatibility_candidates": 7851,
+    "proven_safe_joins": 0,
+    "adjudication_records": 31,
+    "adjudicated_exact_observations": 29,
+    "blocked_exact_prompts": 1,
+    "manual_substitutes": 1,
+    "adjudication_verdict_counts": {
+      "VERIFIED_PASS": 1,
+      "USEFUL_PARTIAL": 8,
+      "UNSAFE_PARTIAL": 8,
+      "FAIL": 13,
+      "BLOCKED_PLATFORM": 1
+    },
+    "denominators": {
+      "knowledge_corpus": {
+        "numerator": 267,
+        "denominator": 2304,
+        "percent": 11.59
+      },
+      "live_observations": {
+        "numerator": 79,
+        "denominator": 2304,
+        "percent": 3.43
+      },
+      "public_api_cube_dossiers": {
+        "numerator": 277,
+        "denominator": 277,
+        "percent": 100
+      }
+    }
+  },
+  "checks": [
+    {
+      "id": "P04-V001.prompts-30-unique",
+      "pass": true,
+      "detail": {
+        "records": 30,
+        "unique_ids": 30,
+        "unique_prompts": 30
+      }
+    },
+    {
+      "id": "P04-V002.prompt-hashes",
+      "pass": true,
+      "detail": {
+        "prompts_with_declared_hash": 0
+      }
+    },
+    {
+      "id": "P04-V003.live-29-exact-plus-manual",
+      "pass": true,
+      "detail": {
+        "exact_prompts": 29,
+        "manual_messages": 1,
+        "missing_exact": [
+          "P04-003"
+        ]
+      }
+    },
+    {
+      "id": "P04-V004.live-prompts-byte-exact",
+      "pass": true,
+      "detail": {
+        "compared": 29
+      }
+    },
+    {
+      "id": "P04-V005.same-user-window",
+      "pass": true,
+      "detail": {
+        "fingerprints": [
+          "aff3153d2aef1684cae347348dc12ad051e3af0a30b67080741c605d4f11ea90"
+        ],
+        "messages": 30
+      }
+    },
+    {
+      "id": "P04-V006.manual-substitute-bounded",
+      "pass": true,
+      "detail": {
+        "campaign_id": "P04-003",
+        "exact_prompt_match": false,
+        "coverage_status": "PARTIAL_SUBSTITUTE_2_OF_5_API_BACKFILL_REQUIRED",
+        "reason": "The manual UI probe was sent before the governed P04 corpus was frozen and consumed one of the thirty legitimate messages. It overlaps two of the five P04-003 targets, so the exact P04-003 prompt was not resent. The three non-overlapping targets remain unobserved in INSAIGHTS and are covered only by the independent public-API dossier.",
+        "overlapping_campaign_targets": [
+          "unctad_fdi",
+          "knomad_migration"
+        ],
+        "campaign_targets_not_sent_to_insaights": [
+          "sama_pos_atm_bank",
+          "gastat_housing_type_tenure",
+          "internationally_reported_indicators"
+        ],
+        "additional_targets": [
+          "donor_data",
+          "net_oda",
+          "knomad_remittances",
+          "sama_payments_volume_value",
+          "sama_credit_institutions_assets",
+          "sama_salary_profession_nationality_sex"
+        ]
+      }
+    },
+    {
+      "id": "P04-V007.session-history-accounting",
+      "pass": true,
+      "detail": {
+        "sessions": 6,
+        "declared": {
+          "matched_sessions": 6,
+          "messages": 60,
+          "user_messages": 30,
+          "assistant_messages": 30,
+          "citations": 64,
+          "visualizations": 0
+        },
+        "actual": {
+          "messages": 60,
+          "user_messages": 30,
+          "assistant_messages": 30
+        },
+        "hash_mismatches": []
+      }
+    },
+    {
+      "id": "P04-V008.session-surface-boundary",
+      "pass": true,
+      "detail": {
+        "auth_token_persisted": false,
+        "citations": 64,
+        "visualizations": 0
+      }
+    },
+    {
+      "id": "P04-V009.api-dossier-277",
+      "pass": true,
+      "detail": {
+        "dossiers": 277,
+        "unique_cubes": 277,
+        "statuses": {
+          "DATA_RETURNED": 277
+        }
+      }
+    },
+    {
+      "id": "P04-V010.time-and-hidden-accounting",
+      "pass": true,
+      "detail": {
+        "time_probes": 270,
+        "time_probe_ok": 270,
+        "hidden": 26
+      }
+    },
+    {
+      "id": "P04-V011.compatibility-candidates-not-joins",
+      "pass": true,
+      "detail": {
+        "candidates": 7851,
+        "proven_safe_joins": 0
+      }
+    },
+    {
+      "id": "P04-V012.pdf-valid-and-reviewed",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "bytes": 63941,
+        "sha256": "762973242a29248c6e705f1cadf6826689e8c41742a108240d5aca68e8b35f72",
+        "reviewed": true
+      }
+    },
+    {
+      "id": "P04-V013.adjudication-accounting",
+      "pass": true,
+      "detail": {
+        "aggregate_records": 31,
+        "source_records": 31,
+        "campaign_records": 30,
+        "scored_campaign_records": 29,
+        "manual_substitutes": 1
+      }
+    },
+    {
+      "id": "P04-V014.adjudication-score-verdict-integrity",
+      "pass": true,
+      "detail": {
+        "source_mismatches": [],
+        "threshold_mismatches": []
+      }
+    },
+    {
+      "id": "P04-V015.adjudication-summary-reconciles",
+      "pass": true,
+      "detail": {
+        "computed": {
+          "verdict_counts": {
+            "VERIFIED_PASS": 1,
+            "USEFUL_PARTIAL": 8,
+            "UNSAFE_PARTIAL": 8,
+            "FAIL": 13,
+            "BLOCKED_PLATFORM": 1
+          },
+          "scored_records": 30,
+          "score_total": 1658,
+          "average_score": 55.27
+        },
+        "declared": {
+          "verdict_counts": {
+            "VERIFIED_PASS": 1,
+            "USEFUL_PARTIAL": 8,
+            "UNSAFE_PARTIAL": 8,
+            "FAIL": 13,
+            "BLOCKED_PLATFORM": 1
+          },
+          "score_statistics": {
+            "scored_records": 30,
+            "unscored_records": 1,
+            "score_total": 1658,
+            "average_score": 55.27,
+            "minimum_score": 10,
+            "maximum_score": 95
+          }
+        }
+      }
+    },
+    {
+      "id": "P04-V016.denominators-remain-separate",
+      "pass": true,
+      "detail": {
+        "knowledge_corpus": "267/2304",
+        "live": "79/2304",
+        "live_percent": 3.43,
+        "api_dossiers": "277/277"
+      }
+    },
+    {
+      "id": "P04-V017.boundary-language-explicit",
+      "pass": true,
+      "detail": [
+        "79/2304 live observations equals 3.43 percent; it is not at or above 10 percent.",
+        "267/2304 equals 11.59 percent corpus representation; it is not live-platform exhaustion.",
+        "277/277 equals 100 percent public API cube dossier coverage; it is not full-row or INSAIGHTS answer coverage.",
+        "P04-003 was not sent; the manual probe overlaps only two of its five targets.",
+        "An observed answer is not a verified answer; the adjudication verdict is the correctness control.",
+        "Schema compatibility candidates are not proven joins; no safe join was established by the dossier.",
+        "Public accessibility does not establish exact dataset licensing or commercial reuse rights."
+      ]
+    },
+    {
+      "id": "P04-V018.no-persisted-bearer-token",
+      "pass": true,
+      "detail": {
+        "scanned_text_files": 844,
+        "hits": [],
+        "declared_auth_token_persisted": false
+      }
+    }
+  ]
+}

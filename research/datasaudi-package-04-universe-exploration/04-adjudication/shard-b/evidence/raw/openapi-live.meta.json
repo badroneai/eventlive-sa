@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "openapi-live",
+  "question_ids": [
+    "P04-013"
+  ],
+  "purpose": "Live public OpenAPI contract for endpoint and parameter inventory",
+  "request_url": "https://api.datasaudi.sa/openapi.json",
+  "final_url": "https://api.datasaudi.sa/openapi.json",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:09:52.629Z",
+  "started_at_utc": "2026-07-14T23:09:52.285Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/openapi-live.body",
+  "body_sha256": "a8dd8f2acf89b41fc00f99b877b12ea7586ad2ebfe3d0bb967645fdccf5a0a72",
+  "body_bytes": 43157,
+  "error": null
+}

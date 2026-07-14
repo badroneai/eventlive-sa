@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p020-foreign-latest-three",
+  "question_ids": [
+    "P04-020"
+  ],
+  "purpose": "Live public data replay for foreign_trade: Month,Country,HS2,Trade Flow / Million SAR,Weight TONS",
+  "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=foreign_trade&drilldowns=Month%2CCountry%2CHS2%2CTrade+Flow&measures=Million+SAR%2CWeight+TONS&locale=en&limit=50000&include=Country%3Achn%3BHS2%3A27%3BTrade+Flow%3A1%2C2&time=Month.latest.3",
+  "final_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=foreign_trade&drilldowns=Month%2CCountry%2CHS2%2CTrade+Flow&measures=Million+SAR%2CWeight+TONS&locale=en&limit=50000&include=Country%3Achn%3BHS2%3A27%3BTrade+Flow%3A1%2C2&time=Month.latest.3",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:10:04.940Z",
+  "started_at_utc": "2026-07-14T23:10:04.753Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p020-foreign-latest-three.body",
+  "body_sha256": "be58a2b7889904962fd8dff57bd2a88201333763080a184336545819a5b8217e",
+  "body_bytes": 2292,
+  "error": null
+}

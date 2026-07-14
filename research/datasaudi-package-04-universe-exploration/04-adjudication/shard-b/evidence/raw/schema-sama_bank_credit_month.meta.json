@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "request_id": "schema-sama_bank_credit_month",
+  "question_ids": [
+    "P04-013",
+    "P04-015",
+    "P04-016",
+    "P04-017",
+    "P04-018",
+    "P04-019",
+    "P04-020",
+    "P04-021"
+  ],
+  "purpose": "Live public cube schema for sama_bank_credit_month",
+  "request_url": "https://api.datasaudi.sa/tesseract/cubes/sama_bank_credit_month?locale=en",
+  "final_url": "https://api.datasaudi.sa/tesseract/cubes/sama_bank_credit_month?locale=en",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:09:54.607Z",
+  "started_at_utc": "2026-07-14T23:09:54.518Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/schema-sama_bank_credit_month.body",
+  "body_sha256": "32655bd8a6eca24fb990588b9d8017c7f221cbb9af1ffb8fa6642bcc7aa9f7e1",
+  "body_bytes": 1379,
+  "error": null
+}

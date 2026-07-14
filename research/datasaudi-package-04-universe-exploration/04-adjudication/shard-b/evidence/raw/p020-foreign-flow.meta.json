@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p020-foreign-flow",
+  "question_ids": [
+    "P04-020"
+  ],
+  "purpose": "Live public members for foreign_trade/Trade Flow (en)",
+  "request_url": "https://api.datasaudi.sa/tesseract/members.jsonrecords?cube=foreign_trade&level=Trade+Flow&locale=en&parents=true&limit=5000",
+  "final_url": "https://api.datasaudi.sa/tesseract/members?cube=foreign_trade&level=Trade+Flow&locale=en&parents=true&limit=5000",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:10:00.936Z",
+  "started_at_utc": "2026-07-14T23:10:00.752Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p020-foreign-flow.body",
+  "body_sha256": "960c5f65b5e5082614bd5de22ed8566ba693ace36ee1158759c44fa5edd9851e",
+  "body_bytes": 209,
+  "error": null
+}

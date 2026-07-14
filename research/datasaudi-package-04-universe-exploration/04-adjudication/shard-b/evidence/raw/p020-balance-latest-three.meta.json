@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p020-balance-latest-three",
+  "question_ids": [
+    "P04-020"
+  ],
+  "purpose": "Live public data replay for trade_balance_by_country: Month,Country,HS2 / Trade Balance",
+  "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=trade_balance_by_country&drilldowns=Month%2CCountry%2CHS2&measures=Trade+Balance&locale=en&limit=50000&include=Country%3Achn%3BHS2%3A27&time=Month.latest.3",
+  "final_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=trade_balance_by_country&drilldowns=Month%2CCountry%2CHS2&measures=Trade+Balance&locale=en&limit=50000&include=Country%3Achn%3BHS2%3A27&time=Month.latest.3",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:10:05.188Z",
+  "started_at_utc": "2026-07-14T23:10:05.015Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p020-balance-latest-three.body",
+  "body_sha256": "3fb233e93636300c00df330eccb5879f9c19506ca98edcd31b4c6a599d8b3b1d",
+  "body_bytes": 1249,
+  "error": null
+}

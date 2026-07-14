@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "observation_id": "P04-MANUAL-UI-001",
+  "campaign_substitution": {
+    "campaign_id": "P04-003",
+    "exact_prompt_match": false,
+    "coverage_status": "PARTIAL_SUBSTITUTE_2_OF_5_API_BACKFILL_REQUIRED",
+    "reason": "The manual UI probe was sent before the governed P04 corpus was frozen and consumed one of the thirty legitimate messages. It overlaps two of the five P04-003 targets, so the exact P04-003 prompt was not resent. The three non-overlapping targets remain unobserved in INSAIGHTS and are covered only by the independent public-API dossier.",
+    "overlapping_campaign_targets": [
+      "unctad_fdi",
+      "knomad_migration"
+    ],
+    "campaign_targets_not_sent_to_insaights": [
+      "sama_pos_atm_bank",
+      "gastat_housing_type_tenure",
+      "internationally_reported_indicators"
+    ],
+    "additional_targets": [
+      "donor_data",
+      "net_oda",
+      "knomad_remittances",
+      "sama_payments_volume_value",
+      "sama_credit_institutions_assets",
+      "sama_salary_profession_nationality_sex"
+    ]
+  },
+  "surface": "https://datasaudi.sa/ar/insaights",
+  "language": "ar",
+  "prompt": "نفّذ تدقيق جرد تقني للمكعبات العامة التالية في DataSaudi واحدًا واحدًا دون تجاهل أي معرّف: donor_data، net_oda، knomad_migration، knomad_remittances، sama_payments_volume_value، sama_credit_institutions_assets، sama_salary_profession_nationality_sex، unctad_fdi. أعد جدولًا بصف لكل cube يتضمن: هل تستطيع استرجاعه فعليًا الآن، اسم الجدول، المصدر، أحدث فترة، التواتر، أهم المقاييس والأبعاد، وقيمة نموذجية واحدة مع وحدتها وجغرافيتها. إذا تعذر الاسترجاع فاذكر التعذر صراحة ولا تخمّن. افصل البيانات المسترجعة عن الاستنتاج.",
+  "captured_at_utc": "2026-07-14T22:34:21Z",
+  "status": "OBSERVED_LIMITATION",
+  "observed_answer_summary": "INSAIGHTS returned a row for each of the eight requested cubes and marked every one unavailable in its current context. It did not invent table names, periods, measures, dimensions, values, units, or geographies. It exposed only the DataSaudi portal as a source.",
+  "requested_cubes": [
+    "donor_data",
+    "net_oda",
+    "knomad_migration",
+    "knomad_remittances",
+    "sama_payments_volume_value",
+    "sama_credit_institutions_assets",
+    "sama_salary_profession_nationality_sex",
+    "unctad_fdi"
+  ],
+  "observed_per_cube_status": "UNAVAILABLE_IN_CURRENT_INSAIGHTS_CONTEXT",
+  "source_links_exposed": [
+    "https://datasaudi.sa/ar"
+  ],
+  "stable_user_fingerprint_sha256": "aff3153d2aef1684cae347348dc12ad051e3af0a30b67080741c605d4f11ea90",
+  "message_counted_in_window": 1,
+  "evidence": {
+    "raw_snapshot_path": "research/datasaudi-package-04-universe-exploration/03-live-observations/manual-ui-probe/raw-snapshot.yml",
+    "raw_snapshot_sha256": "7d82aff60e0d4b40a2688f6e66e6b475609f99292f0d772d82939a6e7f0c3809",
+    "screenshot_path": "research/datasaudi-package-04-universe-exploration/03-live-observations/manual-ui-probe/screenshot.png",
+    "screenshot_sha256": "0fa690f7acd3e5c2e864637ab55dc4e93ede235e6c0eb36b70c44ee7f46f596b",
+    "server_session_id": "b9d1e68f-df33-4325-a429-5735141802fc",
+    "server_history_path": "research/datasaudi-package-04-universe-exploration/06-capability-surfaces/session-history/b9d1e68f-df33-4325-a429-5735141802fc.json",
+    "server_history_sha256": "da36285fc23a31ba563b41502322f46b75198e58e6c8be3d5e82ff26b8ba1d95"
+  },
+  "boundary": "This is evidence of what INSAIGHTS answered, not evidence that the public DataSaudi API lacks these cubes. The API universe dossier proves that several requested cubes do exist and are queryable."
+}

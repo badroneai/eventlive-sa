@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p017-governorate-en",
+  "question_ids": [
+    "P04-017"
+  ],
+  "purpose": "Live public members for gastat_detailed_population/Governatorate (en)",
+  "request_url": "https://api.datasaudi.sa/tesseract/members.jsonrecords?cube=gastat_detailed_population&level=Governatorate&locale=en&parents=true&limit=5000",
+  "final_url": "https://api.datasaudi.sa/tesseract/members?cube=gastat_detailed_population&level=Governatorate&locale=en&parents=true&limit=5000",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:09:57.434Z",
+  "started_at_utc": "2026-07-14T23:09:57.258Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p017-governorate-en.body",
+  "body_sha256": "96aa09121e7602d7145fcc2bb455408f34ab96462b1135f8231dc5776d7461e5",
+  "body_bytes": 12223,
+  "error": null
+}

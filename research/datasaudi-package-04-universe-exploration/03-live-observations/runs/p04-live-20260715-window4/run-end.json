@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "event_type": "run_completed",
+  "run_id": "p04-live-20260715-window4",
+  "started_at_utc": "2026-07-14T22:46:20.710Z",
+  "completed_at_utc": "2026-07-14T23:02:20.171Z",
+  "selected_count": 27,
+  "attempted_count": 27,
+  "status_counts": {
+    "OBSERVED_LIMITATION": 7,
+    "OBSERVED_ANSWER": 20
+  },
+  "quota_blocked": false,
+  "stopped_on_quota": false,
+  "pdf_main": {
+    "status": 200,
+    "ok": true,
+    "content_type": "application/pdf",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "response_path": "research/datasaudi-package-04-universe-exploration/03-live-observations/runs/p04-live-20260715-window4/pdf/main-conversation.bin"
+  },
+  "transcript_path": "research/datasaudi-package-04-universe-exploration/03-live-observations/runs/p04-live-20260715-window4/transcripts.jsonl",
+  "frames_path": "research/datasaudi-package-04-universe-exploration/03-live-observations/runs/p04-live-20260715-window4/websocket-frames.jsonl",
+  "trace_path": null,
+  "trace_policy": "disabled because browser traces retain ephemeral authentication tokens; redacted websocket frames are the durable transport evidence"
+}

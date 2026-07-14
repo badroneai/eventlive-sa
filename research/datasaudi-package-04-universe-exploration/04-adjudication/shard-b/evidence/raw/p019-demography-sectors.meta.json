@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p019-demography-sectors",
+  "question_ids": [
+    "P04-019"
+  ],
+  "purpose": "Live public members for business_demography_enterprises/Economic Sectors (en)",
+  "request_url": "https://api.datasaudi.sa/tesseract/members.jsonrecords?cube=business_demography_enterprises&level=Economic+Sectors&locale=en&parents=true&limit=5000",
+  "final_url": "https://api.datasaudi.sa/tesseract/members?cube=business_demography_enterprises&level=Economic+Sectors&locale=en&parents=true&limit=5000",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:09:59.984Z",
+  "started_at_utc": "2026-07-14T23:09:59.777Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p019-demography-sectors.body",
+  "body_sha256": "00e73c5c715be67422ff0584cbfde692de2dd1eaa841d2f07912918d4443da09",
+  "body_bytes": 1227,
+  "error": null
+}

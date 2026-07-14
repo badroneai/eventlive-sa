@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "request_id": "schema-gastat_rate_gender_nationality_region",
+  "question_ids": [
+    "P04-013",
+    "P04-015",
+    "P04-016",
+    "P04-017",
+    "P04-018",
+    "P04-019",
+    "P04-020",
+    "P04-021"
+  ],
+  "purpose": "Live public cube schema for gastat_rate_gender_nationality_region",
+  "request_url": "https://api.datasaudi.sa/tesseract/cubes/gastat_rate_gender_nationality_region?locale=en",
+  "final_url": "https://api.datasaudi.sa/tesseract/cubes/gastat_rate_gender_nationality_region?locale=en",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:09:55.328Z",
+  "started_at_utc": "2026-07-14T23:09:55.232Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/schema-gastat_rate_gender_nationality_region.body",
+  "body_sha256": "39a88348009becbd3d4846c6d14dc484c99383271fb3d467721d35212d213dd3",
+  "body_bytes": 2407,
+  "error": null
+}

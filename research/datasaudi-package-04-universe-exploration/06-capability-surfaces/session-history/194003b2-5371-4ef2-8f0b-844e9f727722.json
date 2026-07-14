@@ -1,0 +1,24 @@
+{
+  "chat_management": [
+    {
+      "role": "human",
+      "content": "باستخدام avg_monthly_wages_per_paid_employee وlocale=ar فقط، أعطني Average Wage وAverage Salary Growth Rate (YoY) للفترة 2024-Q4 وللتقاطع Nationality=Saudi وSex=Female. استخدم member keys الفعلية، وأرفق القيم الخام والوحدات والفترة واسم المجموعة والمصدر وexact query URL. لا تترجم key ولا تحسب مقياسًا غائبًا. هذه نصف تجربة parity؛ التزم بهذه slice حرفيًا.",
+      "created_at": "23:01:54",
+      "language": "ar"
+    },
+    {
+      "role": "ai",
+      "content": "بناءً على البيانات المتاحة، إليك تفاصيل البيانات المطلوبة لهذه الشريحة بدقة وحسب المعايير المحددة:\n\n* **اسم المجموعة (Cube):** `avg_monthly_wages_per_paid_employee`\n* **المصدر (Source):** متوسط الأجور الشهرية للموظفين بأجر - المؤشرات الاجتماعية (Social Indicators)\n* **الفترة (Period):** `2024-Q4`\n* **المحددات (Member Keys):** \n  * `Nationality` = `Saudi`\n  * `Sex` = `Female`\n\n### البيانات والمقاييس المحددة (دون ترجمة المفاتيح):\n\n| المقياس (Key) | القيمة الخام (Raw Value) | الوحدة (Unit) | القيمة المنسقة |\n| :--- | :--- | :--- | :--- |\n| **Average Wage** | `7983.6` | ريال سعودي (SAR) | 7,983.6 ⃁ |\n| **Average Salary Growth Rate (YoY)** | `0.043812512257305425` | نسبة مئوية (Percentage) | 4.381% |\n\n---\n\n### التحليل الاقتصادي:\nتظهر البيانات التاريخية للربع الرابع من عام 2024 (2024-Q4) أن متوسط أجور الإناث من الجنسية السعودية بلغ 7,983.6 ⃁. كما سجل معدل نمو الرواتب السنوي (YoY) لهذه الشريحة القيمة الخام `0.043812512257305425` والتي تعادل 4.381%.\n\n### الخلاصة:\nتوضح المؤشرات المرصودة للربع الرابع من عام 2024 الخصائص الهيكلية للأجور والنمو السنوي لرواتب الإناث السعوديات، حيث بلغ المتوسط 7,983.6 ⃁ بمعدل نمو سنوي قدره 4.381%.\n\n**يوضح معدل نمو الأجور السنوي البالغ 4.381% وتيرة التغير في الأجور لهذه الشريحة. رسم بياني خطي للاتجاه (trend line chart) سيسلط الضوء على حركة هذا النمو عبر الفترات الزمنية المختلفة. هل تود رؤيته؟**",
+      "created_at": "23:01:54",
+      "citation": [
+        {
+          "text": "بيانات مستكشف متوسط الأجور الشهرية للموظفين بأجر",
+          "url": "https://datasaudi.sa/ar/data-explorer?cube=avg_monthly_wages_per_paid_employee&locale=ar&drilldowns=Nationality,Sex,Quarter&measures=Average+Wage,Average+Salary+Growth+Rate+%28YoY%29&limit=100%2C0&panel=table"
+        }
+      ],
+      "visualization": null,
+      "language": "ar"
+    }
+  ],
+  "session_name": null
+}

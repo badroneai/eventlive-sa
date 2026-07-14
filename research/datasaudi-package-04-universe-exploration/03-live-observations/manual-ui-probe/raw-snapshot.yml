@@ -1,0 +1,200 @@
+- generic [ref=e59]:
+  - generic [ref=e60]:
+    - main [ref=e61]:
+      - generic [ref=e1]: تجريبي
+      - navigation [ref=e2]:
+        - link [ref=e365] [cursor=pointer]:
+          - /url: /ar
+        - generic [ref=e5]:
+          - generic [ref=e6]:
+            - generic [ref=e8]:
+              - link [ref=e367] [cursor=pointer]:
+                - /url: /ar/insaights
+              - link [ref=e369] [cursor=pointer]:
+                - /url: /ar/data-explorer
+                - generic [ref=e20]: مستكشف البيانات
+              - link [ref=e370] [cursor=pointer]:
+                - /url: /ar/economic-calendar
+                - generic [ref=e25]: التقويم الاقتصادي
+            - link [ref=e371] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e30]: يبحث
+          - generic [ref=e31]:
+            - button [ref=e372] [cursor=pointer]: EN
+            - generic [ref=e33]: "|"
+            - button [disabled] [ref=e373] [cursor=pointer]: AR
+      - generic [ref=e72]:
+        - button [ref=e75] [cursor=pointer]
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - heading [level=1] [ref=e374]:
+              - generic [ref=e104]: INSAIGHTS
+            - button [ref=e377] [cursor=pointer]:
+              - generic [ref=e308]: PDF
+          - generic [ref=e180]:
+            - generic [ref=e181]: "نفّذ تدقيق جرد تقني للمكعبات العامة التالية في DataSaudi واحدًا واحدًا دون تجاهل أي معرّف: donor_data، net_oda، knomad_migration، knomad_remittances، sama_payments_volume_value، sama_credit_institutions_assets، sama_salary_profession_nationality_sex، unctad_fdi. أعد جدولًا بصف لكل cube يتضمن: هل تستطيع استرجاعه فعليًا الآن، اسم الجدول، المصدر، أحدث فترة، التواتر، أهم المقاييس والأبعاد، وقيمة نموذجية واحدة مع وحدتها وجغرافيتها. إذا تعذر الاسترجاع فاذكر التعذر صراحة ولا تخمّن. افصل البيانات المسترجعة عن الاستنتاج."
+            - generic [ref=e205]:
+              - generic [ref=e207]:
+                - paragraph [ref=e208]: "بناءً على تدقيق الجرد التقني للمكعبات العامة المطلوبة ومراجعة السياق وقاعدة البيانات المتاحة حالياً، نوضح حالة كل معرّف (Cube) في الجدول أدناه. ونظراً لعدم توفر هذه البيانات المحددة في السياق الحالي للنظام، فقد تم الإعلان عن تعذر استرجاعها بكل دقة وموضوعية دون أي تخمين:"
+                - heading [level=3] [ref=e378]: جدول تدقيق الجرد التقني للمكعبات العامة
+                - table [ref=e210]:
+                  - rowgroup [ref=e211]:
+                    - row [ref=e379]:
+                      - columnheader [ref=e380]: المعرف (Cube ID)
+                      - columnheader [ref=e381]: هل يمكن استرجاعه فعليًا الآن؟
+                      - columnheader [ref=e382]: اسم الجدول
+                      - columnheader [ref=e383]: المصدر
+                      - columnheader [ref=e384]: أحدث فترة
+                      - columnheader [ref=e385]: التواتر
+                      - columnheader [ref=e386]: أهم المقاييس والأبعاد
+                      - columnheader [ref=e387]: قيمة نموذجية (الوحدة والجغرافيا)
+                  - rowgroup [ref=e221]:
+                    - row [ref=e388]:
+                      - cell [ref=e389]:
+                        - strong [ref=e224]: donor_data
+                      - cell [ref=e390]: لا (تعذر الاسترجاع لعدم توفره في السياق)
+                      - cell [ref=e391]: غير متوفر
+                      - cell [ref=e392]: غير متوفر
+                      - cell [ref=e393]: غير متوفر
+                      - cell [ref=e394]: غير متوفر
+                      - cell [ref=e395]: غير متوفر
+                      - cell [ref=e396]: غير متوفر
+                    - row [ref=e397]:
+                      - cell [ref=e398]:
+                        - strong [ref=e234]: net_oda
+                      - cell [ref=e399]: لا (تعذر الاسترجاع لعدم توفره في السياق)
+                      - cell [ref=e400]: غير متوفر
+                      - cell [ref=e401]: غير متوفر
+                      - cell [ref=e402]: غير متوفر
+                      - cell [ref=e403]: غير متوفر
+                      - cell [ref=e404]: غير متوفر
+                      - cell [ref=e405]: غير متوفر
+                    - row [ref=e406]:
+                      - cell [ref=e407]:
+                        - strong [ref=e244]: knomad_migration
+                      - cell [ref=e408]: لا (تعذر الاسترجاع لعدم توفره في السياق)
+                      - cell [ref=e409]: غير متوفر
+                      - cell [ref=e410]: غير متوفر
+                      - cell [ref=e411]: غير متوفر
+                      - cell [ref=e412]: غير متوفر
+                      - cell [ref=e413]: غير متوفر
+                      - cell [ref=e414]: غير متوفر
+                    - row [ref=e415]:
+                      - cell [ref=e416]:
+                        - strong [ref=e254]: knomad_remittances
+                      - cell [ref=e417]: لا (تعذر الاسترجاع لعدم توفره في السياق)
+                      - cell [ref=e418]: غير متوفر
+                      - cell [ref=e419]: غير متوفر
+                      - cell [ref=e420]: غير متوفر
+                      - cell [ref=e421]: غير متوفر
+                      - cell [ref=e422]: غير متوفر
+                      - cell [ref=e423]: غير متوفر
+                    - row [ref=e424]:
+                      - cell [ref=e425]:
+                        - strong [ref=e264]: sama_payments_volume_value
+                      - cell [ref=e426]: لا (تعذر الاسترجاع لعدم توفره في السياق)
+                      - cell [ref=e427]: غير متوفر
+                      - cell [ref=e428]: غير متوفر
+                      - cell [ref=e429]: غير متوفر
+                      - cell [ref=e430]: غير متوفر
+                      - cell [ref=e431]: غير متوفر
+                      - cell [ref=e432]: غير متوفر
+                    - row [ref=e433]:
+                      - cell [ref=e434]:
+                        - strong [ref=e274]: sama_credit_institutions_assets
+                      - cell [ref=e435]: لا (تعذر الاسترجاع لعدم توفره في السياق)
+                      - cell [ref=e436]: غير متوفر
+                      - cell [ref=e437]: غير متوفر
+                      - cell [ref=e438]: غير متوفر
+                      - cell [ref=e439]: غير متوفر
+                      - cell [ref=e440]: غير متوفر
+                      - cell [ref=e441]: غير متوفر
+                    - row [ref=e442]:
+                      - cell [ref=e443]:
+                        - strong [ref=e284]: sama_salary_profession_nationality_sex
+                      - cell [ref=e444]: لا (تعذر الاسترجاع لعدم توفره في السياق)
+                      - cell [ref=e445]: غير متوفر
+                      - cell [ref=e446]: غير متوفر
+                      - cell [ref=e447]: غير متوفر
+                      - cell [ref=e448]: غير متوفر
+                      - cell [ref=e449]: غير متوفر
+                      - cell [ref=e450]: غير متوفر
+                    - row [ref=e451]:
+                      - cell [ref=e452]:
+                        - strong [ref=e294]: unctad_fdi
+                      - cell [ref=e453]: لا (تعذر الاسترجاع لعدم توفره في السياق)
+                      - cell [ref=e454]: غير متوفر
+                      - cell [ref=e455]: غير متوفر
+                      - cell [ref=e456]: غير متوفر
+                      - cell [ref=e457]: غير متوفر
+                      - cell [ref=e458]: غير متوفر
+                      - cell [ref=e459]: غير متوفر
+                - separator [ref=e302]
+                - heading [level=3] [ref=e460]: الاستنتاج والتحليل الفني
+                - paragraph [ref=e304]:
+                  - text: تظهر نتائج التدقيق التقني تعذراً كاملاً في استرجاع البيانات لأي من المكعبات الثمانية المطلوبة (
+                  - code [ref=e321]: donor_data
+                  - text: ","
+                  - code [ref=e322]: net_oda
+                  - text: ","
+                  - code [ref=e323]: knomad_migration
+                  - text: ","
+                  - code [ref=e324]: knomad_remittances
+                  - text: ","
+                  - code [ref=e325]: sama_payments_volume_value
+                  - text: ","
+                  - code [ref=e326]: sama_credit_institutions_assets
+                  - text: ","
+                  - code [ref=e327]: sama_salary_profession_nationality_sex
+                  - text: ","
+                  - code [ref=e328]: unctad_fdi
+                  - text: ).
+                - paragraph [ref=e329]: يعود هذا التعذر الفني بشكل مباشر إلى عدم إدراج أو ربط هذه المكعبات المحددة ضمن سياق البيانات الحالي المتوفر للاستعلام. وللحفاظ على دقة وموثوقية التقارير الاقتصادية وتجنب تقديم بيانات غير دقيقة أو مبنية على التخمين، تم توثيق حالة عدم المتوفر لجميع الحقول الخاصة بتلك المكعبات بشكل صريح.
+                - paragraph [ref=e330]:
+                  - strong [ref=e331]: "بناءً على تعذر استرجاع بيانات المكعبات المطلوبة حالياً:"
+                - list [ref=e332]:
+                  - listitem [ref=e333]: هل تود الاستفسار عن المؤشرات الاقتصادية العامة المتاحة للمملكة العربية السعودية مثل الناتج المحلي الإجمالي أو معدلات التضخم والبطالة المحدثة؟
+              - generic [ref=e334]:
+                - button [ref=e335] [cursor=pointer]
+                - button [ref=e338] [cursor=pointer]
+                - button [ref=e341] [cursor=pointer]
+                - button [ref=e461] [cursor=pointer]: شاركنا رأيك
+            - generic [ref=e346]:
+              - generic [ref=e347]: مصادر
+              - generic [ref=e348]:
+                - link [ref=e462] [cursor=pointer]:
+                  - /url: https://datasaudi.sa/ar
+                  - generic [ref=e353]: بوابة البيانات السعودية
+                - generic:
+                  - button [ref=e359] [cursor=pointer]
+                  - button [ref=e362] [cursor=pointer]
+          - generic [ref=e110]:
+            - textbox [ref=e463]:
+              - /placeholder: اكتب سؤالك هنا
+            - button [ref=e113] [cursor=pointer]
+          - generic [ref=e127]: قد يكون المحتوى المنشأ بواسطة الذكاء الاصطناعي غير دقيق، لذا يبقى استخدام هذه الأداة على مسؤولية المستخدم
+    - generic [ref=e35]:
+      - generic [ref=e464] [cursor=pointer]: شاركنا رأيك
+      - separator [ref=e37]
+      - generic [ref=e38]:
+        - link [ref=e465] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/data-saudi
+        - link [ref=e466] [cursor=pointer]:
+          - /url: https://x.com/DataSaudiSA
+        - link [ref=e467] [cursor=pointer]:
+          - /url: https://www.instagram.com/data.saudi/
+        - link [ref=e468] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@datasaudi
+        - link [ref=e469] [cursor=pointer]:
+          - /url: https://www.youtube.com/@DataSaudi
+  - alert [ref=e58]
+  - iframe [ref=e151]:
+    - main [ref=f2e2]:
+      - button "Launch OpenWidget widget" [ref=f2e6] [cursor=pointer]
+  - dialog [ref=e471]:
+    - button [active] [ref=e473] [cursor=pointer]
+    - generic [ref=e477]:
+      - iframe [ref=e479]:
+        
+      - link "‎PDF‎ تحميل ملف" [ref=e481] [cursor=pointer]:
+        - /url: blob:https://datasaudi.sa/1e2717fd-c951-46f1-9435-191d33cd487e

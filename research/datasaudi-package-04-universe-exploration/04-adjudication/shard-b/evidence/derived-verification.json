@@ -1,0 +1,991 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-07-14T23:14:44.298Z",
+  "official_api_base": "https://api.datasaudi.sa/tesseract",
+  "row_hashes_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/row-hashes.jsonl",
+  "row_hashes_sha256": "4a57c7753df591bd6f2a620be3975542b5f904f2098a9dfb16ca95a0f9cf23f9",
+  "P04_013": {
+    "schema_term_matches": {
+      "gastat_gdp": [],
+      "gastat_inflation": []
+    },
+    "matching_openapi_paths": [],
+    "bounded_conclusion": "No vintage, revision-number, historical-snapshot, or release-timestamp field/path is exposed in the inspected live schemas/OpenAPI contract. This does not prove how the upstream store mutates old values."
+  },
+  "P04_014": {
+    "q1_month_rows": [
+      {
+        "Month ID": 202501,
+        "Month": "2025-01",
+        "Exports": 98209.608295,
+        "Imports": 76379.087992,
+        "Trade Balance": 21830.520303
+      },
+      {
+        "Month ID": 202502,
+        "Month": "2025-02",
+        "Exports": 94615.242116,
+        "Imports": 71421.907296,
+        "Trade Balance": 23193.33482
+      },
+      {
+        "Month ID": 202503,
+        "Month": "2025-03",
+        "Exports": 94816.86276,
+        "Imports": 76806.84135,
+        "Trade Balance": 18010.02141
+      }
+    ],
+    "q1_quarter_api_row": {
+      "Quarter ID": 20251,
+      "Quarter": "2025-Q1",
+      "Exports": 287641.713171,
+      "Imports": 224607.836638,
+      "Trade Balance": 63033.876533
+    },
+    "measures": {
+      "Exports": {
+        "monthly_raw_million_sar": [
+          98209.608295,
+          94615.242116,
+          94816.86276
+        ],
+        "monthly_sum_million_sar": 287641.713171,
+        "quarterly_api_row_raw_million_sar": 287641.713171,
+        "delta_million_sar": 0,
+        "converted_sum_sar": 287641713171
+      },
+      "Imports": {
+        "monthly_raw_million_sar": [
+          76379.087992,
+          71421.907296,
+          76806.84135
+        ],
+        "monthly_sum_million_sar": 224607.836638,
+        "quarterly_api_row_raw_million_sar": 224607.836638,
+        "delta_million_sar": 0,
+        "converted_sum_sar": 224607836638
+      },
+      "Trade Balance": {
+        "monthly_raw_million_sar": [
+          21830.520303,
+          23193.33482,
+          18010.02141
+        ],
+        "monthly_sum_million_sar": 63033.876533,
+        "quarterly_api_row_raw_million_sar": 63033.876533,
+        "delta_million_sar": 0,
+        "converted_sum_sar": 63033876533
+      }
+    },
+    "schema_measure_captions": [
+      {
+        "name": "Exports",
+        "caption": "Exports (Million ⃁)"
+      },
+      {
+        "name": "Imports",
+        "caption": "Imports (Million ⃁)"
+      },
+      {
+        "name": "Trade Volume",
+        "caption": "Trade Volume"
+      },
+      {
+        "name": "Trade Balance",
+        "caption": "Trade Balance (Million ⃁)"
+      }
+    ],
+    "bounded_conclusion": "The Quarter-level API response exactly reconciles to the three Month-level values. The API proves retrieval at Quarter level, not physical storage lineage beneath Tesseract."
+  },
+  "P04_015": {
+    "target_gastat_gdp": {
+      "table_en": "Real Gross Domestic Product by Economic Activity - Quarterly",
+      "measures": [
+        {
+          "name": "GDP",
+          "caption": "Total GDP (Million ⃁)",
+          "aggregator": "Sum",
+          "annotations": {
+            "units_of_measurement": "Unit"
+          },
+          "attached": []
+        }
+      ],
+      "levels": [
+        {
+          "dimension": "Date Only Quarter",
+          "hierarchy": "Date",
+          "level": "Quarter",
+          "time_scale": "quarter",
+          "annotations": {}
+        },
+        {
+          "dimension": "Economic Activity Section",
+          "hierarchy": "Total",
+          "level": "Economic Activity Sections",
+          "time_scale": null,
+          "annotations": {}
+        },
+        {
+          "dimension": "Economic Activity Section",
+          "hierarchy": "Economic Activity Section",
+          "level": "Economic Activity Section",
+          "time_scale": null,
+          "annotations": {
+            "vb_exclude_members": "12"
+          }
+        }
+      ]
+    },
+    "target_gastat_inflation": {
+      "table_en": "CPI Inflation Rate by Main Section - Monthly",
+      "measures": [
+        {
+          "name": "Inflation",
+          "caption": "Consumer Price Index",
+          "aggregator": "Average",
+          "annotations": {
+            "units_of_measurement": "Unit"
+          },
+          "attached": []
+        },
+        {
+          "name": "Inflation rate",
+          "caption": "Inflation Rate",
+          "aggregator": "Average",
+          "annotations": {
+            "units_of_measurement": "Percentage Base 100"
+          },
+          "attached": []
+        }
+      ],
+      "levels": [
+        {
+          "dimension": "Date Only Month",
+          "hierarchy": "Date",
+          "level": "Month",
+          "time_scale": "month",
+          "annotations": {}
+        },
+        {
+          "dimension": "Main Division",
+          "hierarchy": "Main Division",
+          "level": "Main Division",
+          "time_scale": null,
+          "annotations": {}
+        }
+      ]
+    },
+    "target_sama_oil_prices": {
+      "table_en": "Nominal and Real Oil Prices (Base Year: 2005) - Annual",
+      "table_ar": "أسعار النفط الاسمية والحقيقية (سنة الأساس: 2005) - سنوي",
+      "measures": [
+        {
+          "name": "USD per Barrel",
+          "caption": "Barrel Price (USD)",
+          "aggregator": "Sum",
+          "annotations": {
+            "units_of_measurement": "Unit"
+          },
+          "attached": []
+        }
+      ],
+      "levels": [
+        {
+          "dimension": "Price Type",
+          "hierarchy": "Price Type",
+          "level": "Price Type",
+          "time_scale": null,
+          "annotations": {}
+        },
+        {
+          "dimension": "Oil",
+          "hierarchy": "Oil",
+          "level": "Oil",
+          "time_scale": null,
+          "annotations": {}
+        },
+        {
+          "dimension": "Year",
+          "hierarchy": "Year",
+          "level": "Year",
+          "time_scale": "year",
+          "annotations": {}
+        }
+      ]
+    },
+    "substituted_gdp_cubes": [
+      {
+        "cube": "gastat_gdp_by_main_activities_yearly",
+        "table_en": "Nominal, Real, and Seasonally Adjusted GDP, and Growth Rates by Main Economic Activity - Annual",
+        "measures": [
+          "Nominal GDP",
+          "Nominal GDP Growth Rate",
+          "Real GDP",
+          "Real GDP Growth Rate (YoY)",
+          "Seasonally Adjusted Real GDP",
+          "Seasonally Adjusted Real GDP Growth Rate"
+        ]
+      },
+      {
+        "cube": "gastat_gdp_by_main_activities_quarterly",
+        "table_en": "Nominal, Real, and Seasonally Adjusted GDP, and Growth Rates by Main Economic Activity - Quarterly",
+        "measures": [
+          "Nominal GDP",
+          "Nominal GDP Growth Rate",
+          "Real GDP",
+          "Real GDP Growth Rate (YoY)",
+          "Seasonally Adjusted Real GDP",
+          "Seasonally Adjusted Real GDP Growth Rate"
+        ]
+      }
+    ],
+    "bounded_conclusion": "The observed answer substituted two different GDP cubes and falsely marked the existing sama_oil_prices cube unavailable; its live table metadata explicitly states Base Year: 2005."
+  },
+  "P04_016": {
+    "construction_cost_index_by_sector": {
+      "expected_period_count": 36,
+      "observed_period_count": 7,
+      "observed_periods": [
+        "2025-06",
+        "2025-07",
+        "2025-08",
+        "2025-09",
+        "2025-10",
+        "2025-11",
+        "2025-12"
+      ],
+      "missing_periods": [
+        "2023-01",
+        "2023-02",
+        "2023-03",
+        "2023-04",
+        "2023-05",
+        "2023-06",
+        "2023-07",
+        "2023-08",
+        "2023-09",
+        "2023-10",
+        "2023-11",
+        "2023-12",
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12",
+        "2025-01",
+        "2025-02",
+        "2025-03",
+        "2025-04",
+        "2025-05"
+      ],
+      "bounded_row_count": 21,
+      "null_measure_cell_count": 0,
+      "zero_measure_cell_count": 0,
+      "oldest_observed": "2025-06",
+      "latest_observed": "2025-12"
+    },
+    "consumer_confidence_index": {
+      "expected_period_count": 36,
+      "observed_period_count": 36,
+      "observed_periods": [
+        "2023-01",
+        "2023-02",
+        "2023-03",
+        "2023-04",
+        "2023-05",
+        "2023-06",
+        "2023-07",
+        "2023-08",
+        "2023-09",
+        "2023-10",
+        "2023-11",
+        "2023-12",
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12",
+        "2025-01",
+        "2025-02",
+        "2025-03",
+        "2025-04",
+        "2025-05",
+        "2025-06",
+        "2025-07",
+        "2025-08",
+        "2025-09",
+        "2025-10",
+        "2025-11",
+        "2025-12"
+      ],
+      "missing_periods": [],
+      "bounded_row_count": 36,
+      "null_measure_cell_count": 0,
+      "zero_measure_cell_count": 0,
+      "oldest_observed": "2023-01",
+      "latest_observed": "2025-12"
+    },
+    "current_account_quarter": {
+      "expected_period_count": 12,
+      "observed_period_count": 12,
+      "observed_periods": [
+        "2023-Q1",
+        "2023-Q2",
+        "2023-Q3",
+        "2023-Q4",
+        "2024-Q1",
+        "2024-Q2",
+        "2024-Q3",
+        "2024-Q4",
+        "2025-Q1",
+        "2025-Q2",
+        "2025-Q3",
+        "2025-Q4"
+      ],
+      "missing_periods": [],
+      "bounded_row_count": 48,
+      "null_measure_cell_count": 0,
+      "zero_measure_cell_count": 0,
+      "oldest_observed": "2023-Q1",
+      "latest_observed": "2025-Q4"
+    }
+  },
+  "P04_017": {
+    "population_province_count": 13,
+    "inflation_province_count_including_general_index": 14,
+    "exact_key_and_caption_pairs": 13,
+    "unmatched_population_members": [],
+    "unmatched_inflation_members": [
+      {
+        "key": 18,
+        "caption": "General Index",
+        "ancestor": [
+          {
+            "key": "sau",
+            "caption": "Saudi Arabia"
+          }
+        ]
+      }
+    ],
+    "sample_governorates": [
+      {
+        "key": 101,
+        "en": {
+          "key": 101,
+          "caption": "Ad Dilam",
+          "ancestor": [
+            {
+              "key": 1,
+              "caption": "Al-Riyadh"
+            }
+          ]
+        },
+        "ar": {
+          "key": 101,
+          "caption": "الدلم",
+          "ancestor": [
+            {
+              "key": 1,
+              "caption": "الرياض"
+            }
+          ]
+        }
+      },
+      {
+        "key": 201,
+        "en": {
+          "key": 201,
+          "caption": "Adam",
+          "ancestor": [
+            {
+              "key": 2,
+              "caption": "Makkah Al-Mokarramah"
+            }
+          ]
+        },
+        "ar": {
+          "key": 201,
+          "caption": "أضم",
+          "ancestor": [
+            {
+              "key": 2,
+              "caption": "مكة المكرمة"
+            }
+          ]
+        }
+      },
+      {
+        "key": 301,
+        "en": {
+          "key": 301,
+          "caption": "Al Hinakiyah",
+          "ancestor": [
+            {
+              "key": 3,
+              "caption": "Al-Madinah Al-Monawarah"
+            }
+          ]
+        },
+        "ar": {
+          "key": 301,
+          "caption": "الحناكية",
+          "ancestor": [
+            {
+              "key": 3,
+              "caption": "المدينة المنورة"
+            }
+          ]
+        }
+      },
+      {
+        "key": 401,
+        "en": {
+          "key": 401,
+          "caption": "Al Asyah",
+          "ancestor": [
+            {
+              "key": 4,
+              "caption": "Al-Qaseem"
+            }
+          ]
+        },
+        "ar": {
+          "key": 401,
+          "caption": "الأسياح",
+          "ancestor": [
+            {
+              "key": 4,
+              "caption": "القصيم"
+            }
+          ]
+        }
+      },
+      {
+        "key": 501,
+        "en": {
+          "key": 501,
+          "caption": "Ad Dammam",
+          "ancestor": [
+            {
+              "key": 5,
+              "caption": "Eastern Region"
+            }
+          ]
+        },
+        "ar": {
+          "key": 501,
+          "caption": "الدمام",
+          "ancestor": [
+            {
+              "key": 5,
+              "caption": "المنطقة الشرقية"
+            }
+          ]
+        }
+      }
+    ],
+    "riyadh_governorate_count": 23,
+    "catalog_crosswalk_matches": [],
+    "bounded_conclusion": "All 13 administrative-region key/caption pairs match between the two inspected cubes; Province is the common grain. The catalog exposes no separately named crosswalk cube, so 'safe' should be scoped to this verified pair rather than generalized platform-wide."
+  },
+  "P04_018": {
+    "cases": [
+      {
+        "city_caption": "Riyadh",
+        "province_caption": "Al-Riyadh",
+        "city_key": 12,
+        "province_key": 1
+      },
+      {
+        "city_caption": "Makkah",
+        "province_caption": "Makkah Al-Mokarramah",
+        "city_key": 10,
+        "province_key": 2
+      },
+      {
+        "city_caption": "AL-Madinah",
+        "province_caption": "Al-Madinah Al-Monawarah",
+        "city_key": 2,
+        "province_key": 3
+      }
+    ],
+    "target_cube": "gastat_inflation_province_yoy",
+    "substituted_cube_in_answer": "gastat_inflation_province_yearly",
+    "target_and_substitute_member_sets_identical": true,
+    "catalog_crosswalk_matches": [],
+    "bounded_conclusion": "The three city and province IDs are accurately quoted and cannot be directly joined. The answer nevertheless changed the requested cube to the yearly variant and did not prove crosswalk absence beyond the public catalog surface."
+  },
+  "P04_019": {
+    "verified_taxonomy_cases": [
+      {
+        "gdp": {
+          "key": 2,
+          "caption": "Mining & Quarrying"
+        },
+        "bank": {
+          "key": 11,
+          "caption": "Mining and Quarrying"
+        },
+        "demography": {
+          "key": "B",
+          "caption": "Mining and quarrying"
+        }
+      },
+      {
+        "gdp": {
+          "key": 3,
+          "caption": "Manufacturing"
+        },
+        "bank": {
+          "key": 10,
+          "caption": "Manufacturing"
+        },
+        "demography": {
+          "key": "C",
+          "caption": "Manufacturing"
+        }
+      },
+      {
+        "gdp": {
+          "key": 5,
+          "caption": "Construction"
+        },
+        "bank": {
+          "key": 4,
+          "caption": "Construction"
+        },
+        "demography": {
+          "key": "F",
+          "caption": "Construction"
+        }
+      },
+      {
+        "gdp": {
+          "key": 6,
+          "caption": "Wholesale & Retail Trade, Restaurants & hotels"
+        },
+        "bank": {
+          "key": 17,
+          "caption": "Wholesale and Retail Trade"
+        },
+        "demography": {
+          "key": "G",
+          "caption": "Wholesale and retail trade; repair of motor vehicles and motorcycles"
+        }
+      },
+      {
+        "gdp": {
+          "key": 8,
+          "caption": "Finance, Insurance, Real Estate & Business Services"
+        },
+        "bank": {
+          "key": 7,
+          "caption": "Financial and Insurance Activities"
+        },
+        "demography": {
+          "key": "K",
+          "caption": "Financial and insurance activities"
+        }
+      }
+    ],
+    "observed_answer_claimed_keys": {
+      "gastat_gdp": [
+        "A02/A03",
+        "A04",
+        "A06",
+        "A07",
+        "A09"
+      ],
+      "sama_bank_credit_month": [
+        2,
+        3,
+        5,
+        6,
+        9
+      ],
+      "business_demography_enterprises": [
+        "B",
+        "C",
+        "F",
+        "G",
+        "K"
+      ]
+    },
+    "catalog_crosswalk_matches": [],
+    "bounded_conclusion": "The answer fabricated every shown gastat_gdp code and gave wrong SAMA keys for all five examples. Only the business-demography letter codes match the public member endpoint."
+  },
+  "P04_020": {
+    "latest_common_month": "2026-04",
+    "foreign_trade_exports_row": {
+      "Country ID": "chn",
+      "Country": "People's Republic of China",
+      "Month ID": 202604,
+      "Month": "2026-04",
+      "HS2 ID": 27,
+      "HS2": "Mineral Fuels, Oils and Waxes",
+      "Trade Flow ID": 2,
+      "Trade Flow": "Exports",
+      "Million SAR": 14054.61568628,
+      "Weight TONS": 4544410.896
+    },
+    "foreign_trade_imports_row": {
+      "Country ID": "chn",
+      "Country": "People's Republic of China",
+      "Month ID": 202604,
+      "Month": "2026-04",
+      "HS2 ID": 27,
+      "HS2": "Mineral Fuels, Oils and Waxes",
+      "Trade Flow ID": 1,
+      "Trade Flow": "Imports",
+      "Million SAR": 23.74307931,
+      "Weight TONS": 23643.72552
+    },
+    "trade_balance_row": {
+      "Country ID": "chn",
+      "Country": "People's Republic of China",
+      "Month ID": 202604,
+      "Month": "2026-04",
+      "HS2 ID": 27,
+      "HS2": "Mineral Fuels, Oils and Waxes",
+      "Trade Balance": 14030.87260697
+    },
+    "calculated_balance_million_sar": 14030.87260697,
+    "delta_million_sar": 0,
+    "foreign_trade_schema_caption": "Trade Value (Million ⃁)",
+    "trade_balance_schema_caption": "Trade Balance (⃁)",
+    "bounded_conclusion": "The numeric reconciliation is exact at 2026-04. The foreign_trade raw API values are in Million SAR; multiplying by 1,000,000 is a conversion, not the raw row. The answer omitted the actual member keys chn, 27, and flow 1/2."
+  },
+  "P04_021": {
+    "common_years": [
+      2022
+    ],
+    "latest_common_year": 2022,
+    "schemas": {
+      "gastat_detailed_population": [
+        {
+          "dimension": "Sex",
+          "hierarchy": "Sex",
+          "level": "Sex",
+          "time_scale": null,
+          "annotations": {
+            "vb_exclude_members": "3"
+          }
+        },
+        {
+          "dimension": "Nationality",
+          "hierarchy": "Nationality",
+          "level": "Nationality",
+          "time_scale": null,
+          "annotations": {
+            "vb_exclude_members": "3"
+          }
+        },
+        {
+          "dimension": "Age Range",
+          "hierarchy": "Age Range",
+          "level": "Age Range",
+          "time_scale": null,
+          "annotations": {}
+        },
+        {
+          "dimension": "Year",
+          "hierarchy": "Year",
+          "level": "Year",
+          "time_scale": "year",
+          "annotations": {}
+        },
+        {
+          "dimension": "Governatorate",
+          "hierarchy": "Governatorate",
+          "level": "Geography Province",
+          "time_scale": null,
+          "annotations": {}
+        },
+        {
+          "dimension": "Governatorate",
+          "hierarchy": "Governatorate",
+          "level": "Governatorate",
+          "time_scale": null,
+          "annotations": {}
+        }
+      ],
+      "gastat_rate_gender_nationality_region": [
+        {
+          "dimension": "Date Quarter",
+          "hierarchy": "Date",
+          "level": "Year",
+          "time_scale": "year",
+          "annotations": {}
+        },
+        {
+          "dimension": "Date Quarter",
+          "hierarchy": "Date",
+          "level": "Quarter",
+          "time_scale": "quarter",
+          "annotations": {}
+        },
+        {
+          "dimension": "Geography Province",
+          "hierarchy": "Geography",
+          "level": "Nation",
+          "time_scale": null,
+          "annotations": {}
+        },
+        {
+          "dimension": "Geography Province",
+          "hierarchy": "Geography",
+          "level": "Province",
+          "time_scale": null,
+          "annotations": {
+            "vb_exclude_members": "15"
+          }
+        },
+        {
+          "dimension": "Sex",
+          "hierarchy": "Sex",
+          "level": "Sex",
+          "time_scale": null,
+          "annotations": {
+            "vb_exclude_members": "3"
+          }
+        },
+        {
+          "dimension": "Nationality",
+          "hierarchy": "Nationality",
+          "level": "Nationality",
+          "time_scale": null,
+          "annotations": {
+            "vb_exclude_members": "3"
+          }
+        }
+      ],
+      "sama_water_consumption_region": [
+        {
+          "dimension": "Geography Province",
+          "hierarchy": "Geography",
+          "level": "Nation",
+          "time_scale": null,
+          "annotations": {}
+        },
+        {
+          "dimension": "Geography Province",
+          "hierarchy": "Geography",
+          "level": "Province",
+          "time_scale": null,
+          "annotations": {
+            "vb_exclude_members": "15"
+          }
+        },
+        {
+          "dimension": "Year",
+          "hierarchy": "Year",
+          "level": "Year",
+          "time_scale": "year",
+          "annotations": {}
+        }
+      ],
+      "sama_health_facilities_resources": [
+        {
+          "dimension": "Geography Province",
+          "hierarchy": "Geography",
+          "level": "Nation",
+          "time_scale": null,
+          "annotations": {}
+        },
+        {
+          "dimension": "Geography Province",
+          "hierarchy": "Geography",
+          "level": "Province",
+          "time_scale": null,
+          "annotations": {
+            "vb_exclude_members": "15"
+          }
+        },
+        {
+          "dimension": "Year",
+          "hierarchy": "Year",
+          "level": "Year",
+          "time_scale": "year",
+          "annotations": {}
+        },
+        {
+          "dimension": "Resource Category",
+          "hierarchy": "Resource Category",
+          "level": "Resource Category",
+          "time_scale": null,
+          "annotations": {}
+        }
+      ]
+    },
+    "rate_total_members": {
+      "sex": {
+        "key": 3,
+        "caption": "Total"
+      },
+      "nationality": {
+        "key": 3,
+        "caption": "Total"
+      }
+    },
+    "riyadh_rate_detailed_rows": [
+      {
+        "Year": 2022,
+        "Province ID": 1,
+        "Province": "Al-Riyadh",
+        "Nationality ID": 1,
+        "Nationality": "Saudi",
+        "Sex ID": 1,
+        "Sex": "Male",
+        "Unemployment Rate": 3.172416234236086
+      },
+      {
+        "Year": 2022,
+        "Province ID": 1,
+        "Province": "Al-Riyadh",
+        "Nationality ID": 1,
+        "Nationality": "Saudi",
+        "Sex ID": 2,
+        "Sex": "Female",
+        "Unemployment Rate": 15.103992642816735
+      },
+      {
+        "Year": 2022,
+        "Province ID": 1,
+        "Province": "Al-Riyadh",
+        "Nationality ID": 1,
+        "Nationality": "Saudi",
+        "Sex ID": 3,
+        "Sex": "Total",
+        "Unemployment Rate": 7.421425954729065
+      },
+      {
+        "Year": 2022,
+        "Province ID": 1,
+        "Province": "Al-Riyadh",
+        "Nationality ID": 2,
+        "Nationality": "Non Saudi",
+        "Sex ID": 1,
+        "Sex": "Male",
+        "Unemployment Rate": 1.060147978378314
+      },
+      {
+        "Year": 2022,
+        "Province ID": 1,
+        "Province": "Al-Riyadh",
+        "Nationality ID": 2,
+        "Nationality": "Non Saudi",
+        "Sex ID": 2,
+        "Sex": "Female",
+        "Unemployment Rate": 5.617706160638308
+      },
+      {
+        "Year": 2022,
+        "Province ID": 1,
+        "Province": "Al-Riyadh",
+        "Nationality ID": 2,
+        "Nationality": "Non Saudi",
+        "Sex ID": 3,
+        "Sex": "Total",
+        "Unemployment Rate": 1.726230294095986
+      },
+      {
+        "Year": 2022,
+        "Province ID": 1,
+        "Province": "Al-Riyadh",
+        "Nationality ID": 3,
+        "Nationality": "Total",
+        "Sex ID": 1,
+        "Sex": "Male",
+        "Unemployment Rate": 1.8947928912904348
+      },
+      {
+        "Year": 2022,
+        "Province ID": 1,
+        "Province": "Al-Riyadh",
+        "Nationality ID": 3,
+        "Nationality": "Total",
+        "Sex ID": 2,
+        "Sex": "Female",
+        "Unemployment Rate": 11.98643083320926
+      },
+      {
+        "Year": 2022,
+        "Province ID": 1,
+        "Province": "Al-Riyadh",
+        "Nationality ID": 3,
+        "Nationality": "Total",
+        "Sex ID": 3,
+        "Sex": "Total",
+        "Unemployment Rate": 4.314059796962198
+      }
+    ],
+    "health_categories": [
+      {
+        "key": 1,
+        "caption": "Assistant Health Personnel"
+      },
+      {
+        "key": 2,
+        "caption": "Beds"
+      },
+      {
+        "key": 3,
+        "caption": "Health Care Centers"
+      },
+      {
+        "key": 4,
+        "caption": "Hospitals"
+      },
+      {
+        "key": 5,
+        "caption": "Nursing Staff"
+      },
+      {
+        "key": 6,
+        "caption": "Pharmacists"
+      },
+      {
+        "key": 7,
+        "caption": "Physicians"
+      },
+      {
+        "key": 8,
+        "caption": "Private Dispensaries"
+      }
+    ],
+    "representative_2022_values": {
+      "riyadh": {
+        "population": 8591748,
+        "unemployment_rate": 4.314059796962198,
+        "water_thousand_m3": 1126030,
+        "hospitals": 110
+      },
+      "makkah": {
+        "population": 8021463,
+        "water_thousand_m3": 831766,
+        "hospitals": 97
+      },
+      "jazan": {
+        "population": 1404997,
+        "unemployment_rate": 9.60368293874548
+      }
+    },
+    "bounded_conclusion": "2022 is the latest common year and Year+Province is the common comparison key only after explicit total-member/category choices. The unemployment cube also has quarterly grain; heterogeneous health resource categories cannot be losslessly summed or dropped, and the original multi-dimensional rows are not preserved by the proposed collapse."
+  }
+}

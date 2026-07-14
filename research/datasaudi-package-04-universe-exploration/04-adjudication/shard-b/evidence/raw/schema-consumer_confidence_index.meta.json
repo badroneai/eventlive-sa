@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "request_id": "schema-consumer_confidence_index",
+  "question_ids": [
+    "P04-013",
+    "P04-015",
+    "P04-016",
+    "P04-017",
+    "P04-018",
+    "P04-019",
+    "P04-020",
+    "P04-021"
+  ],
+  "purpose": "Live public cube schema for consumer_confidence_index",
+  "request_url": "https://api.datasaudi.sa/tesseract/cubes/consumer_confidence_index?locale=en",
+  "final_url": "https://api.datasaudi.sa/tesseract/cubes/consumer_confidence_index?locale=en",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:09:53.795Z",
+  "started_at_utc": "2026-07-14T23:09:53.734Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/schema-consumer_confidence_index.body",
+  "body_sha256": "39390297107bfc365706e2a6c8668da332759ce4ff222bd206e6acc9370663c6",
+  "body_bytes": 1342,
+  "error": null
+}

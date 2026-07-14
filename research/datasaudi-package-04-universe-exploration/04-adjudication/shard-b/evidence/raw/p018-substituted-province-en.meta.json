@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p018-substituted-province-en",
+  "question_ids": [
+    "P04-018"
+  ],
+  "purpose": "Live public members for gastat_inflation_province_yearly/Province (en)",
+  "request_url": "https://api.datasaudi.sa/tesseract/members.jsonrecords?cube=gastat_inflation_province_yearly&level=Province&locale=en&parents=true&limit=5000",
+  "final_url": "https://api.datasaudi.sa/tesseract/members?cube=gastat_inflation_province_yearly&level=Province&locale=en&parents=true&limit=5000",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:09:59.184Z",
+  "started_at_utc": "2026-07-14T23:09:59.024Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p018-substituted-province-en.body",
+  "body_sha256": "59ce59aac0c14a8f2f40e9dfc37e6b579fc24e0242b705e4437fe20fe8ffca0e",
+  "body_bytes": 1398,
+  "error": null
+}

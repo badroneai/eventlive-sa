@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "validated_at_utc": "2026-07-14T23:20:22.375Z",
+  "status": "PASS",
+  "adjudication_records": 9,
+  "raw_api_responses": 61,
+  "raw_api_http_200": 61,
+  "row_hashes": 586,
+  "verdict_counts": {
+    "UNSAFE_PARTIAL": 2,
+    "USEFUL_PARTIAL": 4,
+    "FAIL": 2,
+    "VERIFIED_PASS": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "recovered_at_utc": "2026-07-14T22:42:12.547Z",
+  "source_trace_sha256": "ae5f3a3b27a106e4c048184afa283075cdfe08e0c592caa3149da1e066af8a4b",
+  "source_resource": "3a7bc438d7a64102f989214261c00881.jsonl",
+  "sanitized_frames_path": "research/datasaudi-package-04-universe-exploration/03-live-observations/runs/p04-live-20260715-window2/websocket-frames-recovered.jsonl",
+  "sanitized_frames_sha256": "9389154d689477fac3cde68c997ddba08ac2a2434059fb276c8968dffa38acc6",
+  "auth_token_retained": false,
+  "transcript_status": "OBSERVED_REFUSAL",
+  "answer_chars": 37
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "p021-pop-2022",
+  "question_ids": [
+    "P04-021"
+  ],
+  "purpose": "Live public data replay for gastat_detailed_population: Year,Geography Province / Population",
+  "request_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_detailed_population&drilldowns=Year%2CGeography+Province&measures=Population&locale=en&limit=50000&include=Year%3A2022",
+  "final_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_detailed_population&drilldowns=Year%2CGeography+Province&measures=Population&locale=en&limit=50000&include=Year%3A2022",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:10:05.393Z",
+  "started_at_utc": "2026-07-14T23:10:05.265Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/p021-pop-2022.body",
+  "body_sha256": "cbc64e9319c13758067715b375e942a815ffe1751ea7edb141825820948e10ba",
+  "body_bytes": 1997,
+  "error": null
+}

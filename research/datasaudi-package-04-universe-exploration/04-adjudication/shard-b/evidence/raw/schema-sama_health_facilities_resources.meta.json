@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "request_id": "schema-sama_health_facilities_resources",
+  "question_ids": [
+    "P04-013",
+    "P04-015",
+    "P04-016",
+    "P04-017",
+    "P04-018",
+    "P04-019",
+    "P04-020",
+    "P04-021"
+  ],
+  "purpose": "Live public cube schema for sama_health_facilities_resources",
+  "request_url": "https://api.datasaudi.sa/tesseract/cubes/sama_health_facilities_resources?locale=en",
+  "final_url": "https://api.datasaudi.sa/tesseract/cubes/sama_health_facilities_resources?locale=en",
+  "method": "GET",
+  "http_status": 200,
+  "content_type": "application/json",
+  "retrieved_at_utc": "2026-07-14T23:09:55.704Z",
+  "started_at_utc": "2026-07-14T23:09:55.598Z",
+  "body_path": "research/datasaudi-package-04-universe-exploration/04-adjudication/shard-b/evidence/raw/schema-sama_health_facilities_resources.body",
+  "body_sha256": "9cd64400f95dcea29b3a8a5d1e854cfa7f69aa32f7eaecde6898c83386100a44",
+  "body_bytes": 2017,
+  "error": null
+}

@@ -1,0 +1,265 @@
+{
+  "schema_version": "1.0",
+  "hash_method": "sha256(JSON.stringify(row)) preserving response property order",
+  "p04_022": {
+    "regional_count": 13,
+    "regional_inflation_sum": 22.4021264243695,
+    "unweighted_mean": 1.7232404941822692,
+    "national_inflation": 1.5893869701367302,
+    "diagnostic_delta_mean_minus_national": 0.13385352404553896,
+    "answer_claims": {
+      "sum": 24.402,
+      "mean": 1.87709,
+      "delta": 0.2877
+    },
+    "row_hashes": [
+      "160388c86311851c3dfa0a943507757307bedfae5b7667b39223680171211a88",
+      "96cf6072debf7c373e0cc6dc4d28141ebef32d07ab7c36eb74f20dfd800b285f",
+      "a60f4ed6b95eacc5368555adfe27424c4f108a92c69f33195a1cc6536c956387",
+      "8dcb8b68e5b37e0e2f0e23644c41b41584f179f32ebef45ac1bfd42bd9b62678",
+      "f5682643b7daa6d1329b223c99fbd910af73acec88e2ca2f22c6edd783c48fb4",
+      "d54f786c3108da6d2921170af1674247278db89e9518e826e47fb7de7c73af3b",
+      "10174ef29ea57596f3f640caca376535b5a6c6411dd8f01ea65a20af263d72c7",
+      "54ebc804d44191a0ca30d6507b163347804ff90249cdb25722e3eded73296406",
+      "0e4b163767f3c23ff159c6f199061f64e2dc0482b9d2131f47d8ecfdfb59f3fc",
+      "d04719d6135729fa19041624209f85a27029a32ca3872a0d40fbc19651fedc24",
+      "253ae99fffbd625691ccf078c07f0848d31764077ba48a85449926369f728630",
+      "f38b7a9b39ad051384c143c0d1bcaab0089ec10c41c3cbd72ae08156c0158658",
+      "f5c8578d02ba5107d3bca2ce478eadcf631fee33c7b4d6e194fd684e06169f85",
+      "11a991f4045f51735f91d92bc621cf22483d62e8a869ee2b3d9069817e1c50e6"
+    ]
+  },
+  "p04_023": {
+    "months_returned": 5,
+    "raw_thousand_transactions_sum": 1459371,
+    "transactions_converted_units": 1459371000,
+    "raw_thousand_sar_sum": 101506115,
+    "sales_converted_sar": 101506115000,
+    "end_period_terminals": 791376,
+    "row_hashes": {
+      "flow": [
+        "33c22ba3269d784ba1ed30252dc25506bb57933c0ac80a6a49b30d110b41b313",
+        "d09a39fdef94d7af9f2330537b6bddcbd25938ad7d528cc9d4089601872bdf8a",
+        "a9f16680cfb3a11c59d739e31d8f0a172dd5af23254ab3f83b84b01243897ee2",
+        "4c1bb521bc1275d0d70cf3555a6069442bfdc694078ed18dad0e27f8c34f8739",
+        "831cb49faa649ad3b5d40b92d6032a2815b0be12fd61b5346098d94d5ae5faeb"
+      ],
+      "stock": [
+        "c007930f441bc1a72ff8a91b2b5d8b8778249910537ef5f4b017f46c3b7122ad",
+        "ce71d0e9378df47cb26725ae800e775ad13f2b3a3a6634a29562a55c5c105b52",
+        "8e3f1aaa2be9de93693fbcdc3d14b0dbffd9dfaa2608272c592cc21f55eb67b4",
+        "2612b38a43470f969e849883b0424e3af3661625ba7277566b27f9dd540cc372",
+        "b94600fee9833a4ec2d9eb267e54dab445f93e60e03c0eeaa3353e61eaffd05e"
+      ]
+    }
+  },
+  "p04_024": {
+    "by_type_id": {
+      "1": {
+        "quarter_sum_billion_sar": 756.625,
+        "annual_billion_sar": 756.623945227635,
+        "annual_minus_quarters_sar": -1054772.365023382
+      },
+      "2": {
+        "quarter_sum_billion_sar": 502.471,
+        "annual_billion_sar": 502.471489871712,
+        "annual_minus_quarters_sar": 489871.71197723004
+      },
+      "3": {
+        "quarter_sum_billion_sar": 1184.055,
+        "annual_billion_sar": 1184.056024,
+        "annual_minus_quarters_sar": 1023999.999915759
+      },
+      "4": {
+        "quarter_sum_billion_sar": 190.664,
+        "annual_billion_sar": 190.6642243,
+        "annual_minus_quarters_sar": 224300.0000134998
+      },
+      "5": {
+        "quarter_sum_billion_sar": -115.625,
+        "annual_billion_sar": -115.625,
+        "annual_minus_quarters_sar": 0
+      }
+    },
+    "row_hashes": {
+      "quarter": [
+        "7efb6d5b310fb370f0887b7dcaff6a6de80243dd2475ddd993a3644ae23cbf2d",
+        "8eecd095c8b848f2e8940d8444953739cbc19d0d3b84054119ff027f67d1fef5",
+        "5e07e60186745536abefc9b3b992525f30aa9b04c2b9443aedc461bb24490f21",
+        "c4b8f0ae034d178753d6718b90d4ddf154bc484c6f2c25e779a93ae328b6b20e",
+        "155b5c95fd67069c65a0d8ff1032d3f1191241ea50597c083bd662bd4b2f08cd",
+        "6e5ee245e9874a2ea82279f8074d882fc9de55f324b15be34ec568cb39d0bd36",
+        "c34964378fe98dc07afb4f6ac6f1f41a6fc1fe847274c007a2dff6992be2451c",
+        "a0a7b0667967b97d163c8f0c1c2ab85f4968371dfcbbe78afb4b58c1c3e1cd5b",
+        "fa376f2a62624101dc4e1e14c228b5004db87918db0d028041c2989f68c595c7",
+        "110f4d142bae78911774c0dea5a140ded3ded531587f00b452d828bd68c8e1af",
+        "f77dc707c249adb8f25d46b7e7168a9f5ae20c4966122f19265a69f2d4d05372",
+        "bac776e23cb3c92988d94e20c12276920809458a7ae827cf0cbb29bb281137cd",
+        "6c823e31e589a842631acb52928203fa733e3afe7d41224c17e860ef7dee9b0f",
+        "af6a64daf871f0ce76681a3b685d193d7b6c0be7fb7e61b0e6a407a176191dbd",
+        "12c76e67aba541cd7772182d6dbd63d8a365d0f739827ce9a715162596a07c86",
+        "46a2bf40b3119e3fa1ee39e0ce3ee4bc6de6b742b7aca72c5323e8d865115397",
+        "d33dc855480925cc89125dde7a84731ff737a83a56b37b455037a7ecf1a78e8a",
+        "5ee48b62c5ee25943d2d4975215ca40fd353e57e7ff347f79342585624529428",
+        "06ba81eb72478b8e091ef2caae27a24938ee2225a36d0755a21a60c8c5b16825",
+        "5ce68a824824fa53ff4270d5313fb55deda19170b0fde85bcecdabea35000cc1"
+      ],
+      "annual": [
+        "555edb36442b7d63ba2d3ec693fa4a615f6b6da126ecddd8a5695c4b3d0ef2cf",
+        "6027342360cd7514dc4bc2f7a3697b39f577c105673410e3aa081cd3528b6d6e",
+        "62c0c2863db33cd14f01dee91051d1d92814fd98d5b05ec8d5b78f4dfc19e0ba",
+        "8ed63c5a5045fc6510c847d741ceb1522618bcfb717c0f123223b81099d64e25",
+        "946915dd110e601413bd664717d239c9a3e5e980bf03b4f9fe12524d66456803"
+      ]
+    }
+  },
+  "p04_025": {
+    "indicator_id": 1,
+    "first_month": "2025-06",
+    "first_value": 11163.96,
+    "last_month": "2026-06",
+    "last_value": 10799.92,
+    "calculated_yoy_percent": -3.2608500926194606,
+    "reported_yoy_percent": -3.2608500926194566,
+    "delta_percentage_points": -3.9968028886505635e-15,
+    "row_hashes": [
+      "c335e5b4ad491fb30ee015dd636ea3bc286777b2ab24eb657d1dd0b819b09176",
+      "e14be0bdf3b647addcff550867ad394093a7a460740b6804fe2e3aecd7b3da9c",
+      "5597b07ed319ff99fbf7525550089d7da558df88563da2391d4e225ca7305186",
+      "b40acef94164de9d7da1ef5f58ef1dc439187b62cccdcc0fc036965d90dce51c",
+      "a519a62263ca478841d2d00f200c05edcaf3ec9c794834f5f3146a307036986a",
+      "71e1994857c45e4785d9ada3254b0bb76fa196e3932930a715ee8942ac363684",
+      "20113e26eb77464c8d6a1f15c24ee9b157e7b9daa02f0bd1d0f8ab17c51c3aa7",
+      "47c3d7d261eebfc54cc465823588fb52206ff68d661200f6ea59ca858fffd529",
+      "96c0e010b99060606ee9754babc9ed2fd35656459fea6678eddfc904a423123b",
+      "6251009e272cb72c99a55344a9778e1e260699238df5c3724082f1ed678abd46",
+      "bc064b6c5900e9c0a54ed6e4468cff2cdac0c99976a2d9a015f6c42af723bbcf",
+      "e64f1533cb8035a7f0be9a9aadbca2301ddbd7ee84643db0b0016160db1273d7",
+      "c9825b4c0d85df41ea1b5c2ffdff48eca5e7662039a89d04a2ee2ea7502a70b9"
+    ]
+  },
+  "p04_026": {
+    "denominator_filters": {
+      "Sex": 3,
+      "Nationality": 3,
+      "meaning": "Total/Total"
+    },
+    "per_capita": [
+      {
+        "province_id": 1,
+        "province": "Al-Riyadh",
+        "water_thousand_m3": 1126030,
+        "population": 8591748,
+        "m3_per_person": 131.05947707032377
+      },
+      {
+        "province_id": 2,
+        "province": "Makkah Al-Mokarramah",
+        "water_thousand_m3": 831766,
+        "population": 8021463,
+        "m3_per_person": 103.69255583426614
+      },
+      {
+        "province_id": 4,
+        "province": "Al-Qaseem",
+        "water_thousand_m3": 172861,
+        "population": 1336179,
+        "m3_per_person": 129.36964283976923
+      },
+      {
+        "province_id": 5,
+        "province": "Eastern Region",
+        "water_thousand_m3": 657082,
+        "population": 5125254,
+        "m3_per_person": 128.20476799783972
+      },
+      {
+        "province_id": 6,
+        "province": "Aseer",
+        "water_thousand_m3": 109508,
+        "population": 2024285,
+        "m3_per_person": 54.09712565177334
+      }
+    ],
+    "row_hashes": {
+      "water": [
+        "04af3b1c640e1ebc465c3aadc05f1106c24a11cd6038b17f855ca2e286236359",
+        "78bf5e1b57b9ba2c47bb0fdcbfbc54252f0e3610a661fb28822e91db125ff06d",
+        "a13dc0f072392463458749a227b255817da28c1e11c9b4d34d8ddcf9245adda8",
+        "05fa9d92d2dd48921cdab5d324cd41fdd61fc7b3c869e7ad178e0ccad680addf",
+        "83efe367b3b49c6fab964bc3218b4f5e2e14f0fd7ade40d446295c0006cb756a"
+      ],
+      "population": [
+        "b1ba839c71f0c5af429b747d99e45f19ba72e41fcbade057f2d9883287d6b0c8",
+        "a857b246537a793c68a500f970b97575cff8371d77cace84a20a5f0fb83ca05a",
+        "1fb3210d31d1df68615589216a9bf0e0aaf3d2f12730d36be962fbba3e322f1b",
+        "ed1ab79341e331e1331121dddb7388816ec22d240f077309e808c53606f5c8df",
+        "35ec0b51b0b90aeb4f98478108cc0e750eda82d2527de71e5dcef2e66fccf90b"
+      ]
+    }
+  },
+  "p04_027": {
+    "row": {
+      "Month ID": 202412,
+      "Month": "2024-12",
+      "Number of Building Permits": 7992
+    },
+    "row_hash": "ed8ed3dd79f63be2afaf4cb367d2a272687465f2646b817cd5a5056f4f36038e"
+  },
+  "p04_028": {
+    "row": {
+      "Month ID": 202605,
+      "Month": "2026-05",
+      "Main Division ID": 1,
+      "Main Division": "General Index",
+      "Inflation": 105.27592142761459,
+      "Inflation rate": 1.7540765641219647
+    },
+    "row_hash": "5213d295bb66c2305e826fbc88a5f1dd6468e6648db4531e5fe3453b5b3cc2a5"
+  },
+  "p04_029_030_parity": {
+    "official_api_parity": "PASS",
+    "cube": "avg_monthly_wages_per_paid_employee",
+    "keys": {
+      "Quarter": 20244,
+      "Nationality": 1,
+      "Sex": 2
+    },
+    "values": {
+      "Average Wage": 7983.6,
+      "Average Salary Growth Rate (YoY)": 0.043812512257305425
+    },
+    "yoy_recalculation": {
+      "prior_period": "2023-Q4",
+      "prior_average_wage": 7648.5,
+      "current_period": "2024-Q4",
+      "current_average_wage": 7983.6,
+      "formula": "current / prior - 1",
+      "calculated_decimal": 0.043812512257305425,
+      "reported_decimal": 0.043812512257305425,
+      "delta": 0
+    },
+    "ar_captions": {
+      "Quarter": "2024-Q4",
+      "Nationality": "سعودي",
+      "Sex": "إناث"
+    },
+    "en_captions": {
+      "Quarter": "2024-Q4",
+      "Nationality": "Saudi",
+      "Sex": "Female"
+    },
+    "keys_equal": true,
+    "values_equal": true,
+    "answer_contract_parity": "FAIL",
+    "answer_failures": [
+      "both answers label captions Saudi/Female as member keys instead of numeric keys Nationality=1 and Sex=2",
+      "both cited explorer URLs omit Quarter=20244, Nationality=1, and Sex=2 filters, so neither URL reproduces the claimed slice",
+      "P04-030 omits the cube id while P04-029 states it; P04-029 does not state the publisher as requested"
+    ],
+    "row_hashes": {
+      "ar": "db44a8aa25019bcbeacbdd8d693224a538c1096ff40b989af9da3d7b5406e594",
+      "en": "f552bd1c7bdb2368d3454f2f6286cdd643ad44fcffea001298816e80f1e510fc"
+    }
+  }
+}

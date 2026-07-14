@@ -1,0 +1,19 @@
+{
+  "chat_management": [
+    {
+      "role": "human",
+      "content": "قارن استرجاع schema عند show_all=false وshow_all=true للمكعبات gastat_wpi وsama_pos_cities وsama_pos_transactions_mada وsama_pos_transactions_mada_terminal. اذكر فقط الأبعاد والمقاييس التي تظهر في true ولا تظهر في false، مع الاسم التقني والـcaption والـaggregator والوحدة ورابط كل طلب. لا تستنتج حقلًا مخفيًا من اسم الجدول.",
+      "created_at": "22:43:44",
+      "language": "ar"
+    },
+    {
+      "role": "ai",
+      "content": "لا أستطيع إعطاء إجابة على هذا السؤال.",
+      "created_at": "22:43:44",
+      "citation": [],
+      "visualization": null,
+      "language": "ar"
+    }
+  ],
+  "session_name": null
+}

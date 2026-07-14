@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "captured_at_utc": "2026-07-14T23:13:39.715Z",
+  "user_fingerprint_sha256": "aff3153d2aef1684cae347348dc12ad051e3af0a30b67080741c605d4f11ea90",
+  "sessions_total_for_user": 6,
+  "matched_research_sessions": 6,
+  "sessions": [
+    {
+      "session_id": "2fbe9edb-5739-4adc-ad96-e7648a359706",
+      "created_at": "2026-07-14T23:02:18.256875+00:00",
+      "updated_at": "2026-07-14T23:02:18.256875+00:00",
+      "message_count": 1,
+      "first_message": "Using avg_monthly_wages_per_paid_employee with locale=en only, return Average Wage and Average Salary Growth Rate (YoY) for 2024-Q4 at Nationality=Saudi and Sex=Female. Use the actual member keys and include raw values, units, period, dataset name, publisher, and the exact query URL. Do not translate keys or calculate a missing measure. This is the English half of a parity test; preserve exactly the same slice as P04-029.",
+      "name": null
+    },
+    {
+      "session_id": "194003b2-5371-4ef2-8f0b-844e9f727722",
+      "created_at": "2026-07-14T23:01:54.366174+00:00",
+      "updated_at": "2026-07-14T23:01:54.366174+00:00",
+      "message_count": 1,
+      "first_message": "باستخدام avg_monthly_wages_per_paid_employee وlocale=ar فقط، أعطني Average Wage وAverage Salary Growth Rate (YoY) للفترة 2024-Q4 وللتقاطع Nationality=Saudi وSex=Female. استخدم member keys الفعلية، وأرفق القيم الخام والوحدات والفترة واسم المجموعة والمصدر وexact query URL. لا تترجم key ولا تحسب مقياسًا غائبًا. هذه نصف تجربة parity؛ التزم بهذه slice حرفيًا.",
+      "name": null
+    },
+    {
+      "session_id": "99631cce-8802-46fe-9335-1e0e8fb8f926",
+      "created_at": "2026-07-14T22:47:58.470866+00:00",
+      "updated_at": "2026-07-14T22:47:58.470866+00:00",
+      "message_count": 25,
+      "first_message": "افحص renewable_energy_projects_all وsaudi_aid_country وdim_countries. أثبت وجود كل مكعب ثم اذكر أبعاده ومقاييسه وهل لديه بعد زمني فعلي. استرجع صفًا واحدًا إن أمكن. لا تصفه بأنه قديم أو غير متاح لمجرد غياب الزمن؛ صنّف النتيجة إلى no-time-dimension أو empty أو retrieval-error أو data-returned مع روابط الطلبات.",
+      "name": null
+    },
+    {
+      "session_id": "1416bba2-494d-44b9-8eb8-38139f12c09e",
+      "created_at": "2026-07-14T22:43:44.262234+00:00",
+      "updated_at": "2026-07-14T22:43:44.262234+00:00",
+      "message_count": 1,
+      "first_message": "قارن استرجاع schema عند show_all=false وshow_all=true للمكعبات gastat_wpi وsama_pos_cities وsama_pos_transactions_mada وsama_pos_transactions_mada_terminal. اذكر فقط الأبعاد والمقاييس التي تظهر في true ولا تظهر في false، مع الاسم التقني والـcaption والـaggregator والوحدة ورابط كل طلب. لا تستنتج حقلًا مخفيًا من اسم الجدول.",
+      "name": null
+    },
+    {
+      "session_id": "1488c348-ea86-4fb4-b632-b0ace43b7e96",
+      "created_at": "2026-07-14T22:38:48.766770+00:00",
+      "updated_at": "2026-07-14T22:38:48.766770+00:00",
+      "message_count": 1,
+      "first_message": "تصرف كمدقق كتالوج لا كمحلل اقتصادي. استرجع كتالوج DataSaudi الكامل مع show_all=true ثم أعطني الأعداد الدقيقة للمكعبات والأبعاد والهرميات والمستويات والمقاييس والموضوعات والجهات الناشرة، وعدد المكعبات الموسومة hide_in_ui=true. أعطني رابط/طلب الاسترجاع ووقت الاسترجاع، ولا تعرض عينة بوصفها إجماليًا. إذا لم تستطع العد الكامل فاذكر بوضوح الجزء المسترجع والمقام الذي لم تستطع إثباته.",
+      "name": null
+    },
+    {
+      "session_id": "b9d1e68f-df33-4325-a429-5735141802fc",
+      "created_at": "2026-07-14T22:30:19.549511+00:00",
+      "updated_at": "2026-07-14T22:30:19.549511+00:00",
+      "message_count": 1,
+      "first_message": "نفّذ تدقيق جرد تقني للمكعبات العامة التالية في DataSaudi واحدًا واحدًا دون تجاهل أي معرّف: donor_data، net_oda، knomad_migration، knomad_remittances، sama_payments_volume_value، sama_credit_institutions_assets، sama_salary_profession_nationality_sex، unctad_fdi. أعد جدولًا بصف لكل cube يتضمن: هل تستطيع استرجاعه فعليًا الآن، اسم الجدول، المصدر، أحدث فترة، التواتر، أهم المقاييس والأبعاد، وقيمة نموذجية واحدة مع وحدتها وجغرافيتها. إذا تعذر الاسترجاع فاذكر التعذر صراحة ولا تخمّن. افصل البيانات المسترجعة عن الاستنتاج.",
+      "name": null
+    }
+  ]
+}

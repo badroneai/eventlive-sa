@@ -1,0 +1,259 @@
+{
+  "schema_version": "1.0.0",
+  "package_id": "datasaudi-package-04-universe-exploration",
+  "artifact_id": "P04-COVERAGE-BASELINE",
+  "generated_at_utc": "2026-07-14T22:32:18Z",
+  "status": "BASELINE_LOCKED",
+  "purpose": "Keep frozen-question knowledge closure, methodological campaign coverage, live INSAIGHTS observation, and DataSaudi catalog metadata coverage on separate denominators.",
+  "denominators": {
+    "frozen_question_corpus": {
+      "total": 267,
+      "knowledge_answers_closed": 267,
+      "knowledge_closure_percent": 100.0,
+      "languages": {
+        "ar": 247,
+        "en": 20
+      },
+      "closure_states": {
+        "CLOSED_VERIFIED_REPORTED": 105,
+        "CLOSED_VERIFIED_CALCULATED": 46,
+        "CLOSED_VALID_NEGATIVE": 64,
+        "CLOSED_DOCUMENTED_NOT_COMPUTABLE": 36,
+        "CLOSED_EVIDENCE_BOUND_INFERENCE": 16
+      },
+      "interpretation": "Complete only for the frozen independent knowledge-answer ledger. It is not a live-platform exhaustion denominator."
+    },
+    "methodological_campaign_universe": {
+      "target_executions": 2304,
+      "frozen_corpus_executions": 267,
+      "not_in_frozen_corpus": 2037,
+      "frozen_corpus_representation_percent": 11.588542,
+      "interpretation": "The target documented by the interrogation methodology across sectors, patterns, languages, and paraphrases."
+    },
+    "live_insaights_observation": {
+      "frozen_corpus_total": 267,
+      "campaign_universe_total": 2304,
+      "observed_responses": 49,
+      "answer_text_observed": 48,
+      "unavailable_answer_observed": 1,
+      "not_observed": 213,
+      "platform_blocked": 4,
+      "quota_blocked": 1,
+      "without_live_answer_observed_in_frozen_corpus": 218,
+      "without_live_observation_in_campaign_universe": 2255,
+      "observed_response_percent_of_frozen_corpus": 18.35206,
+      "without_live_answer_percent_of_frozen_corpus": 81.64794,
+      "observed_response_percent_of_campaign_universe": 2.126736,
+      "observed_languages": {
+        "ar": 49,
+        "en": 0
+      },
+      "answer_text_by_family": {
+        "availability": 15,
+        "limit": 15,
+        "hallucination": 18,
+        "direct": 0,
+        "series": 0,
+        "rank": 0,
+        "cross": 0,
+        "derive": 0,
+        "explain": 0,
+        "opportunity": 0
+      },
+      "interpretation": "An observed response is not automatically a correct answer. The count includes one unavailable response and excludes blocked or quota-only frames from the observed-response numerator."
+    },
+    "catalog_metadata": {
+      "catalog_cubes": 277,
+      "metadata_captured_cubes": 277,
+      "metadata_capture_percent": 100.0,
+      "latest_period_scan": {
+        "scanned_cubes": 277,
+        "scan_percent": 100.0,
+        "status_counts": {
+          "OK": 269,
+          "NO_TIME_DIMENSION": 7,
+          "EMPTY": 1
+        }
+      },
+      "interpretation": "Catalog metadata and a shallow latest-period probe are complete for the frozen snapshot. This does not prove full row, member, analytical, or live INSAIGHTS coverage."
+    }
+  },
+  "knowledge_answer_composition": {
+    "data_bearing_reported_or_calculated": 151,
+    "data_bearing_percent_of_frozen_corpus": 56.554307,
+    "negative_or_not_computable": 100,
+    "negative_or_not_computable_percent": 37.453184,
+    "evidence_bound_inference": 16,
+    "evidence_bound_inference_percent": 5.992509,
+    "atomic_claims": {
+      "total": 4465,
+      "verified": 4405,
+      "bounded": 60,
+      "unresolved": 0,
+      "incorrect": 0
+    }
+  },
+  "catalog_depth_tiers": {
+    "T0_catalog_metadata": {
+      "covered_cubes": 277,
+      "total_cubes": 277,
+      "percent": 100.0
+    },
+    "T1_latest_period_probe": {
+      "covered_cubes": 277,
+      "total_cubes": 277,
+      "percent": 100.0,
+      "depth": "shallow"
+    },
+    "T2_referenced_by_frozen_answer_ledger": {
+      "covered_cubes": 71,
+      "total_cubes": 277,
+      "uncovered_cubes": 206,
+      "percent": 25.631769,
+      "coverage_is_upper_bound": true
+    },
+    "T3_detailed_direct_rank_series_evidence": {
+      "covered_cubes": 34,
+      "total_cubes": 277,
+      "uncovered_cubes": 243,
+      "percent": 12.274368,
+      "covered_questions": 60,
+      "contract_only_questions": 12,
+      "retrieved_rows": 43260,
+      "pages": 34
+    }
+  },
+  "schema_space": {
+    "dimension_instances": 722,
+    "hierarchies": 753,
+    "levels": 992,
+    "measure_definitions": 479,
+    "unique_dimension_names": {
+      "catalog": 131,
+      "represented_in_selected_cubes": 48,
+      "unrepresented": 83,
+      "representation_percent_upper_bound": 36.641221
+    },
+    "unique_measure_names": {
+      "catalog": 261,
+      "represented_in_selected_cubes": 54,
+      "unrepresented": 207,
+      "representation_percent_upper_bound": 20.689655
+    },
+    "levels_with_excluded_members": 231,
+    "interpretation": "Representation in a selected cube is an upper bound and does not mean that every member, level combination, or measure was retrieved or tested."
+  },
+  "topic_and_source_space": {
+    "catalog_topics": 11,
+    "topics_with_selected_cubes": 3,
+    "topics_with_selected_cubes_percent": 27.272727,
+    "selected_topics": [
+      "Economic Indicators",
+      "Social Indicators",
+      "Umrah"
+    ],
+    "topics_without_selected_cubes": [
+      {
+        "topic": "Internationally Reported Indicators",
+        "cubes": 14
+      },
+      {
+        "topic": "Hajj",
+        "cubes": 10
+      },
+      {
+        "topic": "People - Society",
+        "cubes": 3
+      },
+      {
+        "topic": "Economy",
+        "cubes": 3
+      },
+      {
+        "topic": "Hidden",
+        "cubes": 3
+      },
+      {
+        "topic": "Dimensions",
+        "cubes": 2
+      },
+      {
+        "topic": "Labour Market",
+        "cubes": 2
+      },
+      {
+        "topic": "Payment System",
+        "cubes": 1
+      }
+    ],
+    "hidden_in_ui": {
+      "catalog_cubes": 25,
+      "selected_cubes": 0,
+      "selected_percent": 0.0
+    },
+    "sources": {
+      "named_catalog_sources": 18,
+      "named_sources_with_selected_cubes": 9,
+      "cubes_missing_source_metadata": 16
+    }
+  },
+  "formal_platform_exhaustion": {
+    "gate_total": 6,
+    "gates_closed": 0,
+    "gates": {
+      "catalog": "OPEN",
+      "metadata": "OPEN",
+      "retrieval": "OPEN",
+      "analytical": "OPEN",
+      "boundary": "OPEN",
+      "capability": "OPEN"
+    },
+    "execution_subtree_present_at_baseline": false,
+    "required_execution_subtree": "research/datasaudi-package-03c-full-closure/06-live-platform-exhaustion",
+    "interpretation": "Independent API evidence cannot close a live INSAIGHTS behavior gate."
+  },
+  "rights_and_product_limits": {
+    "exact_dataset_licenses": 0,
+    "rights_default_gate": "review-required",
+    "commercial_release": "BLOCKED",
+    "console_mode": "READ_ONLY",
+    "console_external_effects": 0,
+    "package_04_preexisting_authorization": false
+  },
+  "calculation_formulas": {
+    "frozen_corpus_representation_percent": "267 / 2304 * 100",
+    "live_observed_percent_of_frozen_corpus": "49 / 267 * 100",
+    "live_observed_percent_of_campaign_universe": "49 / 2304 * 100",
+    "frozen_live_gap": "213 NOT_OBSERVED + 4 PLATFORM_BLOCKED + 1 QUOTA_BLOCKED = 218",
+    "campaign_universe_gap": "2304 - 49 = 2255",
+    "selected_cube_percent": "71 / 277 * 100",
+    "detailed_cube_percent": "34 / 277 * 100",
+    "unique_dimension_name_upper_bound_percent": "48 / 131 * 100",
+    "unique_measure_name_upper_bound_percent": "54 / 261 * 100"
+  },
+  "evidence": {
+    "campaign_methodology": "research/datasaudi-insaights/04-question-corpus/METHODOLOGY.md",
+    "frozen_corpus_summary": "research/datasaudi-insaights/04-question-corpus/SUMMARY.md",
+    "frozen_corpus_records": "research/datasaudi-insaights/04-question-corpus/questions.jsonl",
+    "knowledge_and_live_summary": "research/datasaudi-package-03c-full-closure/03-answer-ledger/summary.json",
+    "knowledge_answer_ledger": "research/datasaudi-package-03c-full-closure/03-answer-ledger/full-answer-ledger.jsonl",
+    "catalog_snapshot": "research/datasaudi-insaights/03-raw-evidence-snapshots/snapshots/run-20260713T004840Z/cubes-show-all-true.json",
+    "catalog_baseline": "research/datasaudi-insaights/12-change-monitor/baselines.json",
+    "latest_period_scan": "research/datasaudi-insaights/03-raw-evidence-snapshots/snapshots/run-20260713T004840Z/cube-latest-periods.json",
+    "detailed_evidence_validation": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/validation.json",
+    "detailed_evidence_manifest": "research/datasaudi-package-03c-full-closure/02-catalog-discovery/detail-evidence/detail-evidence-manifest.json",
+    "api_contract": "research/datasaudi-insaights/02-api-contract-archive/api-contract-index.json",
+    "rights_ledger": "research/datasaudi-insaights/11-license-rights-ledger/rights-ledger.json",
+    "platform_exhaustion_plan": "research/datasaudi-package-03c-full-closure/00-governance/PLATFORM-EXHAUSTION-PLAN.md",
+    "coverage_console_plan": "tools/datasaudi-coverage-console/PROJECT_PLAN.md"
+  },
+  "invariants": [
+    "KNOWLEDGE_267_OF_267_NEVER_IMPLIES_LIVE_267_OF_267",
+    "LIVE_49_IS_48_TEXT_PLUS_1_UNAVAILABLE_NOT_49_VERIFIED_ANSWERS",
+    "CATALOG_METADATA_277_OF_277_NEVER_IMPLIES_FULL_DATA_OR_PLATFORM_EXHAUSTION",
+    "SELECTED_CUBE_NEVER_IMPLIES_ALL_ITS_DIMENSIONS_MEASURES_OR_MEMBERS_WERE_TESTED",
+    "API_EVIDENCE_AND_LIVE_INSAIGHTS_EVIDENCE_REMAIN_SEPARATE",
+    "PLAN_OR_QUEUE_NEVER_COUNTS_AS_EXECUTION",
+    "NO_EXHAUSTION_CLAIM_WHILE_A_LIVE_CELL_IS_NOT_ATTEMPTED_WITHOUT_AN_EVIDENCE_BOUND_BLOCK"
+  ]
+}
