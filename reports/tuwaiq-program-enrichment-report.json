@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T11:07:09.294Z",
+  "generated_at": "2026-07-14T14:16:28.820Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 21,
@@ -72,11 +72,27 @@
       "requirements": 8
     },
     {
+      "id": "event-معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine",
+      "title": "معسكر تطوير الألعاب والعوالم الافتراضية باستخدام Unreal Engine",
+      "slug": "KMVERlNP",
+      "goals": 15,
+      "features": 9,
+      "requirements": 6
+    },
+    {
       "id": "event-معسكر-تصميم-وتصنيع-الحلول-الهندسية",
       "title": "معسكر تصميم وتصنيع الحلول الهندسية",
       "slug": "y4JqX0k6",
       "goals": 6,
       "features": 11,
+      "requirements": 6
+    },
+    {
+      "id": "event-معسكر-الأنظمة-الذاتية-للدرونز",
+      "title": "معسكر الأنظمة الذاتية للدرونز",
+      "slug": "bx7Vb7Xw",
+      "goals": 8,
+      "features": 6,
       "requirements": 6
     },
     {
@@ -88,28 +104,12 @@
       "requirements": 11
     },
     {
-      "id": "event-معسكر-الأنظمة-الذاتية-للدرونز",
-      "title": "معسكر الأنظمة الذاتية للدرونز",
-      "slug": "bx7Vb7Xw",
-      "goals": 8,
-      "features": 6,
-      "requirements": 6
-    },
-    {
       "id": "event-معسكر-أساسيات-هندسة-الميكاترونكس",
       "title": "معسكر أساسيات هندسة الميكاترونكس",
       "slug": "XmzqwoPy",
       "goals": 13,
       "features": 22,
       "requirements": 7
-    },
-    {
-      "id": "event-معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine",
-      "title": "معسكر تطوير الألعاب والعوالم الافتراضية باستخدام Unreal Engine",
-      "slug": "KMVERlNP",
-      "goals": 15,
-      "features": 9,
-      "requirements": 6
     },
     {
       "id": "event-معسكر-تصميم-تجربة-المستخدم-ux-ui",
@@ -136,20 +136,20 @@
       "requirements": 7
     },
     {
-      "id": "event-معسكر-أساسيات-الأمن-السيبراني",
-      "title": "معسكر أساسيات الأمن السيبراني",
-      "slug": "6VRQ2LNZ",
-      "goals": 5,
-      "features": 6,
-      "requirements": 10
-    },
-    {
       "id": "event-معسكر-هندسة-تطبيقات-الذكاء-الاصطناعي-التوليدي-باستخدام-النماذج-اللغوية-ا",
       "title": "معسكر هندسة تطبيقات الذكاء الاصطناعي التوليدي باستخدام النماذج اللغوية الضخمة",
       "slug": "ab7DP73J",
       "goals": 8,
       "features": 5,
       "requirements": 8
+    },
+    {
+      "id": "event-معسكر-أساسيات-الأمن-السيبراني",
+      "title": "معسكر أساسيات الأمن السيبراني",
+      "slug": "6VRQ2LNZ",
+      "goals": 5,
+      "features": 6,
+      "requirements": 10
     },
     {
       "id": "event-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي",

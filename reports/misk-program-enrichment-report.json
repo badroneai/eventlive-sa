@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-14T11:07:46.553Z",
+  "generated_at": "2026-07-14T14:17:02.703Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 8,
-    "enriched": 8,
+    "targets": 9,
+    "enriched": 9,
     "failed": 0
   },
   "enriched": [
@@ -38,6 +38,14 @@
       "features": 3,
       "requirements": 0,
       "registration_deadline": "2026-07-09T18:00:00+03:00"
+    },
+    {
+      "id": "event-misk-tuwaiq-immersive-program",
+      "title": "Misk × Tuwaiq Immersive Program",
+      "goals": 1,
+      "features": 1,
+      "requirements": 0,
+      "registration_deadline": "2026-07-28T18:00:00+03:00"
     },
     {
       "id": "event-nonprofit-sector-skills-program",

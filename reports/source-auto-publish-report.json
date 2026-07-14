@@ -1,16 +1,16 @@
 {
-  "published_at": "2026-07-14T11:07:08.132Z",
+  "published_at": "2026-07-14T14:16:27.596Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 480,
+  "candidates_seen": 481,
   "totals": {
-    "candidates_seen": 480,
-    "published": 19,
-    "linked_existing": 444,
+    "candidates_seen": 481,
+    "published": 2,
+    "linked_existing": 462,
     "blocked": 17,
-    "reconciled": 463
+    "reconciled": 464
   },
   "duplicate_catalog_rows_removed": 1,
   "duplicate_catalog_rows": [
@@ -24,94 +24,9 @@
   "canonical_event_id_remaps": [],
   "published": [
     {
-      "candidate_id": "candidate-visit-saudi-calendar-sunken-treasures-20260225-b86d7c66",
-      "event_id": "event-sunken-treasures",
-      "title": "Sunken Treasures"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-okhtabotiya-20260704-914f9dce",
-      "event_id": "event-okhtabotiya",
-      "title": "Okhtabotiya"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-curious-summers-20260706-a9a9be0b",
-      "event_id": "event-curious-summers",
-      "title": "Curious Summers"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-saif-2026-20260712-3cc21727",
-      "event_id": "event-saif-2026",
-      "title": "SAIF 2026"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-summer-youth-program-20260714-a20f7a11",
-      "event_id": "event-summer-youth-program",
-      "title": "Summer Youth Program"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-qaadet-saad-eloud-20260716-6e3644cd",
-      "event_id": "event-qaadet-saad-eloud",
-      "title": "Qaadet Saad Eloud"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-made-in-egypt-stand-up-comedy-show-by-ahmed-khairy-20260717-5abef07b",
-      "event_id": "event-made-in-egypt-stand-up-comedy-show-by-ahmed-khairy",
-      "title": "Made in Egypt: Stand Up Comedy Show by Ahmed Khairy"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-mohamed-hamaki-concert-20260717-791ae7fd",
-      "event_id": "event-mohamed-hamaki-concert",
-      "title": "Mohamed Hamaki Concert"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-saleh-el-nawawy-stand-up-comedy-show-20260717-afedb92f",
-      "event_id": "event-saleh-el-nawawy-stand-up-comedy-show-2",
-      "title": "Saleh El Nawawy - Stand Up Comedy Show"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-reggae-with-rsoa-20260717-70d3f305",
-      "event_id": "event-reggae-with-rsoa",
-      "title": "Reggae With Rsoa"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-very-sary-night-from-exit-thmanyah-20260718-ba34e063",
-      "event_id": "event-very-sary-night-from-exit-thmanyah",
-      "title": "Very Sary Night from Exit Thmanyah"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-rahma-riad-at-vocally-20260724-798d233c",
-      "event_id": "event-rahma-riad-at-vocally",
-      "title": "Rahma Riad at Vocally"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-fill-in-the-blank-in-jeddah-20260724-17c10389",
-      "event_id": "event-fill-in-the-blank-in-jeddah",
-      "title": "Fill in the Blank in Jeddah"
-    },
-    {
-      "candidate_id": "candidate-sfda-events-الاستخدام-الآمن-لأجهزة-الأشعة-والتصوير-الطبي-داخل-مرافق-الرعاية-الصحية-و-20260727-a1a072ae",
-      "event_id": "event-الاستخدام-الآمن-لأجهزة-الأشعة-والتصوير-الطبي-داخل-مرافق-الرعاية-الصحية-و",
-      "title": "الاستخدام الآمن لأجهزة الأشعة والتصوير الطبي داخل مرافق الرعاية الصحية و المرجع الوطني لتحديد الجرعة الإشعاعية للمرضى"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-ahlam-concert-20260730-e7ce43fa",
-      "event_id": "event-ahlam-concert",
-      "title": "Ahlam Concert"
-    },
-    {
-      "candidate_id": "candidate-sfda-events-آلية-مطابقة-المخزون-الفعلي-مع-نظام-رصد-للصيدليات-والمستشفيات-20260805-234ce019",
-      "event_id": "event-آلية-مطابقة-المخزون-الفعلي-مع-نظام-رصد-للصيدليات-والمستشفيات",
-      "title": "آلية مطابقة المخزون الفعلي مع نظام رصد للصيدليات والمستشفيات"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-hussain-moheb-live-in-riyadh-20260807-0f7ed5bd",
-      "event_id": "event-hussain-moheb-live-in-riyadh",
-      "title": "Hussain Moheb Live in Riyadh"
-    },
-    {
-      "candidate_id": "candidate-dhahran-expo-calendar-music-concerts-national-day-20260923-18d15b29",
-      "event_id": "event-music-concerts-national-day",
-      "title": "Music Concerts National Day"
+      "candidate_id": "candidate-misk-hub-programs-misk-tuwaiq-immersive-program-20260802-99c8eec9",
+      "event_id": "event-misk-tuwaiq-immersive-program",
+      "title": "Misk × Tuwaiq Immersive Program"
     },
     {
       "candidate_id": "candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702",
@@ -232,6 +147,12 @@
       "candidate_id": "candidate-riyadh-city-events-horses-and-equestrian-heritage-exhibition-20260224-95102e69",
       "event_id": "event-horses-and-equestrian-heritage-exhibition",
       "title": "Horses and Equestrian Heritage Exhibition",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-sunken-treasures-20260225-b86d7c66",
+      "event_id": "event-sunken-treasures",
+      "title": "Sunken Treasures",
       "reason": "already linked to catalog event"
     },
     {
@@ -595,6 +516,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-okhtabotiya-20260704-914f9dce",
+      "event_id": "event-okhtabotiya",
+      "title": "Okhtabotiya",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية-20260705-60b7f94b",
       "event_id": "event-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية",
       "title": "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
@@ -628,6 +555,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-curious-summers-20260706-a9a9be0b",
+      "event_id": "event-curious-summers",
+      "title": "Curious Summers",
       "reason": "already linked to catalog event"
     },
     {
@@ -682,6 +615,12 @@
       "candidate_id": "candidate-riyadh-city-events-mishkat-summer-camp-20260712-704761b4",
       "event_id": "event-mishkat-summer-camp",
       "title": "Mishkat Summer Camp",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-saif-2026-20260712-3cc21727",
+      "event_id": "event-saif-2026",
+      "title": "SAIF 2026",
       "reason": "already linked to catalog event"
     },
     {
@@ -781,42 +720,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-sense-the-home-20260714-3a3ca5ae",
-      "event_id": "event-sense-the-home",
-      "title": "Sense the Home",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20260714-a3bc99ba",
-      "event_id": "event-1-2-3-a-little-space-for-me",
-      "title": "1, 2, 3, A Little Space for Me",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-play-with-shadows-20260714-9984f169",
-      "event_id": "event-play-with-shadows",
-      "title": "Play with Shadows",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-my-little-fort-20260714-09d01da3",
-      "event_id": "event-my-little-fort",
-      "title": "My Little Fort",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-around-the-table-20260714-87d7ec65",
-      "event_id": "event-around-the-table",
-      "title": "Around the Table",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-1-2-3-lets-rhyme-20260714-4d37515a",
-      "event_id": "event-1-2-3-lets-rhyme",
-      "title": "1, 2, 3, Let's Rhyme!",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-a-home-i-imagine-20260714-7778a5c1",
       "event_id": "event-a-home-i-imagine",
       "title": "A Home I Imagine",
@@ -889,12 +792,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-on-this-carpet-20260714-2972e041",
-      "event_id": "event-on-this-carpet",
-      "title": "On This Carpet",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-our-place-on-earth-20260714-d06c9f86",
       "event_id": "event-our-place-on-earth",
       "title": "Our Place on Earth",
@@ -943,6 +840,30 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-sense-the-home-20260714-3a3ca5ae",
+      "event_id": "event-sense-the-home",
+      "title": "Sense the Home",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20260714-a3bc99ba",
+      "event_id": "event-1-2-3-a-little-space-for-me",
+      "title": "1, 2, 3, A Little Space for Me",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-1-2-3-lets-rhyme-20260714-4d37515a",
+      "event_id": "event-1-2-3-lets-rhyme",
+      "title": "1, 2, 3, Let's Rhyme!",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-on-this-carpet-20260714-2972e041",
+      "event_id": "event-on-this-carpet",
+      "title": "On This Carpet",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-storyteller-of-the-day-20260714-94528a46",
       "event_id": "event-storyteller-of-the-day",
       "title": "Storyteller of the Day",
@@ -973,9 +894,27 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-play-with-shadows-20260714-9984f169",
+      "event_id": "event-play-with-shadows",
+      "title": "Play with Shadows",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-the-house-of-ideas-20260714-26aaa6b2",
       "event_id": "event-the-house-of-ideas",
       "title": "The House of Ideas",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-my-little-fort-20260714-09d01da3",
+      "event_id": "event-my-little-fort",
+      "title": "My Little Fort",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-around-the-table-20260714-87d7ec65",
+      "event_id": "event-around-the-table",
+      "title": "Around the Table",
       "reason": "already linked to catalog event"
     },
     {
@@ -1012,6 +951,12 @@
       "candidate_id": "candidate-misk-hub-programs-application-deadline-2030-leaders-20260715-68dd4c4c",
       "event_id": "event-application-deadline-2030-leaders",
       "title": "Application deadline: 2030 Leaders",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-summer-youth-program-20260715-a20f7a11",
+      "event_id": "event-summer-youth-program",
+      "title": "Summer Youth Program",
       "reason": "already linked to catalog event"
     },
     {
@@ -1075,6 +1020,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-seasons-qaadet-saad-eloud-20260716-6e3644cd",
+      "event_id": "event-qaadet-saad-eloud",
+      "title": "Qaadet Saad Eloud",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-al-farabi-comeback-night-20260716-b9d95a79",
       "event_id": "event-al-farabi-comeback-night",
       "title": "Al-Farabi: Comeback Night",
@@ -1087,15 +1038,45 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-made-in-egypt-stand-up-comedy-show-by-ahmed-khairy-20260717-5abef07b",
+      "event_id": "event-made-in-egypt-stand-up-comedy-show-by-ahmed-khairy",
+      "title": "Made in Egypt: Stand Up Comedy Show by Ahmed Khairy",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-mohamed-hamaki-concert-20260717-791ae7fd",
+      "event_id": "event-mohamed-hamaki-concert",
+      "title": "Mohamed Hamaki Concert",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-mdlbeast-events-beast-house-20260717-83049a2a",
       "event_id": "event-beast-house",
       "title": "Beast House",
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-saleh-el-nawawy-stand-up-comedy-show-20260717-afedb92f",
+      "event_id": "event-saleh-el-nawawy-stand-up-comedy-show-2",
+      "title": "Saleh El Nawawy - Stand Up Comedy Show",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-reggae-with-rsoa-20260717-70d3f305",
+      "event_id": "event-reggae-with-rsoa",
+      "title": "Reggae With Rsoa",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-tales-of-the-night-sky-english-20260718-eb5d626a",
       "event_id": "event-tales-of-the-night-sky-english",
       "title": "Tales of the Night Sky (English)",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-very-sary-night-from-exit-thmanyah-20260718-ba34e063",
+      "event_id": "event-very-sary-night-from-exit-thmanyah",
+      "title": "Very Sary Night from Exit Thmanyah",
       "reason": "already linked to catalog event"
     },
     {
@@ -1297,9 +1278,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-rahma-riad-at-vocally-20260724-798d233c",
+      "event_id": "event-rahma-riad-at-vocally",
+      "title": "Rahma Riad at Vocally",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-a-house-reads-a-story-that-begins-with-the-family-20260724-65c22584",
       "event_id": "event-a-house-reads-a-story-that-begins-with-the-family",
       "title": "A House Reads: A Story that Begins with the Family",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-fill-in-the-blank-in-jeddah-20260724-17c10389",
+      "event_id": "event-fill-in-the-blank-in-jeddah",
+      "title": "Fill in the Blank in Jeddah",
       "reason": "already linked to catalog event"
     },
     {
@@ -1360,6 +1353,12 @@
       "candidate_id": "candidate-ithra-events-tinkering-stations-20260727-5a2c4c0e",
       "event_id": "event-tinkering-stations",
       "title": "Tinkering Stations",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-sfda-events-الاستخدام-الآمن-لأجهزة-الأشعة-والتصوير-الطبي-داخل-مرافق-الرعاية-الصحية-و-20260727-a1a072ae",
+      "event_id": "event-الاستخدام-الآمن-لأجهزة-الأشعة-والتصوير-الطبي-داخل-مرافق-الرعاية-الصحية-و",
+      "title": "الاستخدام الآمن لأجهزة الأشعة والتصوير الطبي داخل مرافق الرعاية الصحية و المرجع الوطني لتحديد الجرعة الإشعاعية للمرضى",
       "reason": "already linked to catalog event"
     },
     {
@@ -1474,6 +1473,12 @@
       "candidate_id": "candidate-ithra-events-grand-art-space-20260730-e3acefbb",
       "event_id": "event-grand-art-space",
       "title": "Grand Art Space",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-ahlam-concert-20260730-e7ce43fa",
+      "event_id": "event-ahlam-concert",
+      "title": "Ahlam Concert",
       "reason": "already linked to catalog event"
     },
     {
@@ -1603,6 +1608,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-sfda-events-آلية-مطابقة-المخزون-الفعلي-مع-نظام-رصد-للصيدليات-والمستشفيات-20260805-234ce019",
+      "event_id": "event-آلية-مطابقة-المخزون-الفعلي-مع-نظام-رصد-للصيدليات-والمستشفيات",
+      "title": "آلية مطابقة المخزون الفعلي مع نظام رصد للصيدليات والمستشفيات",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-international-falcon-breeders-auction-20260805-4b7cff1b",
       "event_id": "event-international-falcon-breeders-auction",
       "title": "International Falcon Breeders Auction",
@@ -1630,6 +1641,12 @@
       "candidate_id": "candidate-ithra-events-dots-on-letters-20260807-b8901d67",
       "event_id": "event-dots-on-letters",
       "title": "Dots on Letters",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-hussain-moheb-live-in-riyadh-20260807-0f7ed5bd",
+      "event_id": "event-hussain-moheb-live-in-riyadh",
+      "title": "Hussain Moheb Live in Riyadh",
       "reason": "already linked to catalog event"
     },
     {
@@ -2071,6 +2088,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-dhahran-expo-calendar-music-concerts-national-day-20260923-18d15b29",
+      "event_id": "event-music-concerts-national-day",
+      "title": "Music Concerts National Day",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-dhahran-expo-calendar-the-egyptian-products-exhibition-20260924-18d15b29",
       "event_id": "event-the-egyptian-products-exhibition",
       "title": "The Egyptian Products Exhibition",
@@ -2206,7 +2229,7 @@
       "candidate_id": "candidate-visit-saudi-calendar-in-act-act-x-20261009-1a60f46d",
       "event_id": "event-in-act-act-x",
       "title": "IN ACT - ACT X",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-riyadh-city-events-wpc-energy-congress-20261011-1602e535",
