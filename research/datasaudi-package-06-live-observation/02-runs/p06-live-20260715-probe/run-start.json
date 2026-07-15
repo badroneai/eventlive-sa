@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "event_type": "run_started",
+  "run_id": "p06-live-20260715-probe",
+  "started_at_utc": "2026-07-15T00:51:08.846Z",
+  "corpus_path": "research/datasaudi-package-06-live-observation/01-campaign/selected-executions.jsonl",
+  "corpus_sha256": "6f6dc6a708f87025c43f7d2644c9ce2d9e2fd1d29a9349dfe7dffe2be52fb526",
+  "offset": 0,
+  "selected_count": 1,
+  "selected_question_ids": [
+    "P06-001"
+  ],
+  "selected_execution_ids": [],
+  "stable_user_fingerprint_sha256": "aff3153d2aef1684cae347348dc12ad051e3af0a30b67080741c605d4f11ea90",
+  "identity_policy": "same pseudonymous DataSaudi user recovered from sealed P04 transport evidence; no rotation",
+  "transport": "wss://datasaudi.sa/api/ws/chat",
+  "quota_policy": "stop on the first explicit quota signal; never retry a question",
+  "token_persisted": false,
+  "raw_user_id_persisted": false
+}

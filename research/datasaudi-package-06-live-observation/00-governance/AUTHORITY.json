@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "package_id": "DataSaudi-Package06-Live-Observation",
+  "authority": "User explicitly instructed Codex to continue until the requested DataSaudi exploration task is complete.",
+  "authority_date": "2026-07-15",
+  "allowed_actions": [
+    "Use the same previously observed DataSaudi pseudonymous user identity",
+    "Send at most 30 high-information prompts in the legitimate window",
+    "Capture and independently adjudicate official responses",
+    "Stop immediately on a quota signal"
+  ],
+  "forbidden_actions": [
+    "Rotate or fabricate user identities",
+    "Bypass or evade a quota",
+    "Persist auth tokens",
+    "Count supplemental prompts as P05 execution coverage",
+    "Modify sealed Package04 or Package05 evidence"
+  ]
+}

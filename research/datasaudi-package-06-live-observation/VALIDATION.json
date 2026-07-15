@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "checks_total": 14,
+  "checks_passed": 14,
+  "checks": [
+    {
+      "name": "selected_count",
+      "status": "PASS"
+    },
+    {
+      "name": "main_attempted",
+      "status": "PASS"
+    },
+    {
+      "name": "probe_attempted",
+      "status": "PASS"
+    },
+    {
+      "name": "answers",
+      "status": "PASS"
+    },
+    {
+      "name": "quota_stop",
+      "status": "PASS"
+    },
+    {
+      "name": "unsent",
+      "status": "PASS"
+    },
+    {
+      "name": "unique_execs",
+      "status": "PASS"
+    },
+    {
+      "name": "prompt_hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "answer_hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "stable_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "no_raw_user_id",
+      "status": "PASS"
+    },
+    {
+      "name": "no_auth_token",
+      "status": "PASS"
+    },
+    {
+      "name": "adjudication_separate",
+      "status": "PASS"
+    },
+    {
+      "name": "baseline_preserved",
+      "status": "PASS"
+    }
+  ],
+  "metrics": {
+    "selected": 30,
+    "main_attempted": 27,
+    "probe_attempted": 1,
+    "observed_answer": 26,
+    "quota_blocked": 1,
+    "supplemental_refusal": 1,
+    "unsent": 2,
+    "cumulative_unique_live_cells": 57
+  }
+}

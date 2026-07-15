@@ -1,0 +1,19 @@
+{
+  "chat_management": [
+    {
+      "role": "human",
+      "content": "اختبر كلًا على حدة: unctad_fdi وknomad_migration وsama_pos_atm_bank وgastat_housing_type_tenure وinternationally_reported_indicators. لكل مكعب ميّز بين: موجود في الكتالوج، مخفي في الواجهة، قابل لاسترجاع schema، قابل لاسترجاع صف بيانات. إن أمكن أعرض صفًا خامًا واحدًا مع الأبعاد والمقياس والوحدة والفترة، وإن تعذر اذكر طبقة التعذر بدقة. لا تساوِ hide_in_ui مع عدم الإتاحة.",
+      "created_at": "00:51:31",
+      "language": "ar"
+    },
+    {
+      "role": "ai",
+      "content": "لا أستطيع إعطاء إجابة على هذا السؤال.",
+      "created_at": "00:51:31",
+      "citation": [],
+      "visualization": null,
+      "language": "ar"
+    }
+  ],
+  "session_name": null
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-07-15T01:09:41.349Z",
+  "expected_user_fingerprint_sha256": "aff3153d2aef1684cae347348dc12ad051e3af0a30b67080741c605d4f11ea90",
+  "inputs": [
+    {
+      "path": "research/datasaudi-package-05-execution-closure/02-execution-universe/execution-answer-ledger.jsonl",
+      "bytes": 11524740,
+      "sha256": "bf8ad2cf2ddc88f579290dcc6243f9cdc656b09c819c1ea55f3114307c30c57c"
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/PACKAGE_MANIFEST.json",
+      "bytes": 15826,
+      "sha256": "3dcf5e622bc3366050a0d36eb38db07d928e6f5e5ac3cd42d5a48f9ab6b4c711"
+    },
+    {
+      "path": "research/datasaudi-package-04-universe-exploration/PACKAGE_MANIFEST.json",
+      "bytes": 321085,
+      "sha256": "fefb7b681045586d84de58f44f5c5cea4d85a4a7e15daf33086ddf99133c42a3"
+    },
+    {
+      "path": "research/datasaudi-package-04-universe-exploration/02-live-campaign/prompts.jsonl",
+      "bytes": 29907,
+      "sha256": "828e1ad1056f8108bf5ad97744fab32b45efb60b2f7796138066be7841ca0868"
+    },
+    {
+      "path": "research/datasaudi-package-04-universe-exploration/VALIDATION.json",
+      "bytes": 7639,
+      "sha256": "1018fa420bdbcb5847452fb5842c4546d85f2aacc6be50880fb33fdf3de1d120"
+    }
+  ],
+  "selected_execution_ids_sha256": "f66db17158b54125cc380582bf0d2c95c2c24d5e8802b0dec0e190e1bf4b3830",
+  "selected_prompts_sha256": "6890c1d766e1d0874361f8ae61bf023bf9c0d078a104e3097e1cd4fbd34426d1"
+}

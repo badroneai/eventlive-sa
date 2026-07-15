@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "observed_answer": 26,
+  "quota_blocked": 1,
+  "supplemental_observed_refusal": 1,
+  "pending_adjudication": 26,
+  "unique_mapped_live_cells": 26,
+  "baseline_p05_unique_live_cells": 31,
+  "cumulative_unique_live_cells": 57,
+  "main_messages_attempted": 27,
+  "probe_messages_attempted": 1,
+  "main_unsent": 2,
+  "adjudication_policy": "Observation is not correctness; independent adjudication remains pending."
+}

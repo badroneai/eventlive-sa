@@ -1,0 +1,28 @@
+{
+  "chat_management": [
+    {
+      "role": "human",
+      "content": "Return the latest published raw value for the three most defensible indicators in health, with unit, period, geography, frequency, source, and dataset. Answer only from evidence actually retrieved. For every value state indicator, unit, period, geography, frequency, source, and dataset. Separate reported facts, calculations, and inference. Do not fill missing values or claim causality.",
+      "created_at": "00:56:48",
+      "language": "en"
+    },
+    {
+      "role": "ai",
+      "content": "Based on the health indicators retrieved from the structured database, here are the three most defensible and clearly populated health indicators for Saudi Arabia, presented exactly as they appear in the raw records.\n\n### Reported Facts (Raw Data)\n\n| Indicator Name | Raw Value | Unit | Period (Year) | Geography | Frequency | Source / Dataset |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Saudi Life Expectancy** | 77.9000015258789 | Unit | 2022 | Saudi Arabia | Annual | Life Expectancy by Gender - Annual |\n| **Maternal Mortality Ratio** | 15.9 | Ratio | 2023 | Saudi Arabia | Not explicitly specified | Health, Internationally Reported Indicators |\n| **Infant Mortality Rate** | 9.01 | Ratio | 2023 | Saudi Arabia | Not explicitly specified | Health, Internationally Reported Indicators |\n\n---\n\n### Separation of Fields & Analytical Classifications\n\n#### 1. Reported Facts (Directly from Context)\n* **Saudi Life Expectancy:** \n  * *Raw Value:* 77.9000015258789\n  * *Unit:* \"Unit\"\n  * *Period:* 2022\n  * *Geography:* \"Saudi Arabia\" (indicated in description \"national overall Saudi Life Expectancy\")\n  * *Frequency:* \"Annual\" (explicit in the table description)\n  * *Dataset:* Life Expectancy by Gender - Annual\n* **Maternal Mortality Ratio:** \n  * *Raw Value:* 15.9\n  * *Unit:* \"Ratio\" (extracted from the pipe-delimited list of units: `Unit | Ratio | Ratio...`)\n  * *Period:* 2023\n  * *Geography:* \"Saudi Arabia\" (indicated in description)\n  * *Frequency:* Not explicitly defined in the row\n  * *Dataset:* Health, Internationally Reported Indicators\n* **Infant Mortality Rate:** \n  * *Raw Value:* 9.01\n  * *Unit:* \"Ratio\" (extracted from the pipe-delimited list of units: `Unit | Ratio | Ratio...`)\n  * *Period:* 2023\n  * *Geography:* \"Saudi Arabia\" (indicated in description)\n  * *Frequency:* Not explicitly defined in the row\n  * *Dataset:* Health, Internationally Reported Indicators\n\n#### 2. Calculations\n* **Rounding:** The raw \"Saudi Life Expectancy\" value of `77.9000015258789` is rounded to `77.900` (or `77.9`) to improve readability and adhere to the standard three-decimal-place limit. No other calculations or adjustments have been performed on the data.\n\n#### 3. Inference\n* **Geography:** Stating the geography as \"Saudi Arabia\" for all three metrics is an inference. While the raw rows contain the values and years, the country identity is explicitly confirmed via the data frame descriptions (\"national overall Saudi Life Expectancy\" and \"indicators for Saudi Arabia\") and the platform host.\n* **Frequency:** For the *Health, Internationally Reported Indicators* dataset, a frequency is not explicitly defined in the raw data row. However, since the primary temporal dimension is labeled `year` and lists individual sequential years, it is inferred that the data is reported on an annual frequency.\n\n---\n\n**Comparing the 2023 indicators shows an Infant Mortality Rate of 9.01 alongside a Maternal Mortality Ratio of 15.9. A comparative bar chart would highlight these health metrics side-by-side. Would you like to see it?**",
+      "created_at": "00:56:48",
+      "citation": [
+        {
+          "text": "Saudi Life Expectancy by Gender",
+          "url": "https://datasaudi.sa/en/data-explorer?cube=saudi_life_expectancy&locale=en&drilldowns=Sex,Year&measures=Saudi+Life+Expectancy&limit=100%2C0&panel=table"
+        },
+        {
+          "text": "Saudi Internationally Reported Health Indicators",
+          "url": "https://datasaudi.sa/en/data-explorer?cube=int_indicators_health&locale=en&drilldowns=Year&measures=Life+Expectancy+at+Birth,Maternal+Mortality+Ratio,Infant+Mortality+Rate,Under+Mortality+Rate,Hospital+Beds+per+Population+%28per+10000+Population%29,Universal+Health+Coverage,Hospital+Beds+%28per+1000+Population%29,Health+Workers+%28per+10000+Population%29,Access+to+Safe+Drinking+Water,People+Using+at+Least+Basic+Sanitation+Services,Immunization+DPT,Incidence+of+Tuberculosis+%28per+100000+people%29,Births+Attended+by+Skilled+Health+Staff,Immunization+Measles&limit=100%2C0&panel=table"
+        }
+      ],
+      "visualization": null,
+      "language": "en"
+    }
+  ],
+  "session_name": null
+}

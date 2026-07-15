@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "event_type": "run_completed",
+  "run_id": "p06-live-20260715-probe",
+  "started_at_utc": "2026-07-15T00:51:08.846Z",
+  "completed_at_utc": "2026-07-15T00:51:31.828Z",
+  "selected_count": 1,
+  "attempted_count": 1,
+  "outbound_query_count": 1,
+  "status_counts": {
+    "OBSERVED_REFUSAL": 1
+  },
+  "mapped_observed_execution_ids": [],
+  "mapped_observed_unique_count": 0,
+  "supplemental_observed_count": 1,
+  "stopped_on_quota": false,
+  "stopped_on_platform": false,
+  "remaining_unsent_count": 0,
+  "quota_remaining": "UNKNOWN",
+  "reset_at": "UNKNOWN",
+  "raw_user_id_persisted": false,
+  "auth_token_persisted": false,
+  "transcript_path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-probe/transcripts.jsonl",
+  "frames_path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-probe/websocket-frames.jsonl"
+}

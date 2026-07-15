@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "package": "P06",
+  "status": "P06_LIVE_WINDOW_CLOSED_ON_QUOTA",
+  "completed_at_utc": "2026-07-15T01:08:51.359Z",
+  "baseline_p05": {
+    "reference_cells": 2304,
+    "unique_live_observed": 31
+  },
+  "p06": {
+    "selected": 30,
+    "main_selected": 29,
+    "main_attempted": 27,
+    "probe_attempted": 1,
+    "new_unique_observed": 26,
+    "quota_blocked": 1,
+    "supplemental_refusal": 1,
+    "main_unsent": 2
+  },
+  "cumulative": {
+    "unique_live_observed": 57
+  },
+  "stable_user_fingerprint_sha256": "aff3153d2aef1684cae347348dc12ad051e3af0a30b67080741c605d4f11ea90",
+  "raw_user_id_persisted": false,
+  "auth_token_persisted": false,
+  "narrative": "A lawful same-identity live window added 26 mapped observations, then stopped at the platform quota. Two main executions remain unsent; no claim is made for them."
+}

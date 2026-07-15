@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "preflight_state": "UNKNOWN_NO_FREE_PREFLIGHT",
+  "rationale": "The official client exposes no remaining-message or reset endpoint. A useful same-identity question is the only lawful probe.",
+  "first_probe": "P06-001",
+  "first_probe_source": "P04-003 exact frozen prompt",
+  "proceed_rule": "Proceed only if the first probe reaches answer_end without a quota error.",
+  "stop_rule": "Stop immediately on Daily message limit of 30 messages exceeded or any equivalent explicit quota signal.",
+  "quota_remaining": "UNKNOWN",
+  "reset_at": "UNKNOWN"
+}

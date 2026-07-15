@@ -1,0 +1,288 @@
+{
+  "schema_version": "1.0",
+  "package": "P06",
+  "artifact_count": 56,
+  "tree_sha256": "127af764202a3316fe47318b29c292ba19a959d6cd7cd570b4339c42eeed71db",
+  "artifacts": [
+    {
+      "path": "research/datasaudi-package-06-live-observation/00-governance/AUTHORITY.json",
+      "bytes": 768,
+      "sha256": "9ac985b25b60adda7a092f9bc3e3abaeae15088189a6c48f3252c8242ec02cd5"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/00-governance/CAMPAIGN-CONTRACT.json",
+      "bytes": 1105,
+      "sha256": "1e90fc8bcb9d1ed0fa918a7dfde41d0a7a8ca80419e8d7402001a6211ba318a0"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/00-governance/INPUT_LOCK.json",
+      "bytes": 1474,
+      "sha256": "4fef71ef24cfeaee38018ab33b580886341e1c7ce869803deb95b98d93ba66ed"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/00-governance/RESET-EVIDENCE.json",
+      "bytes": 582,
+      "sha256": "5d2ff591a0d4491c5420cd3df845e34e3805289776b7ad0b73b5195e7887ead7"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/01-campaign/selected-executions.jsonl",
+      "bytes": 59978,
+      "sha256": "6f6dc6a708f87025c43f7d2644c9ce2d9e2fd1d29a9349dfe7dffe2be52fb526"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/01-campaign/selection-summary.json",
+      "bytes": 1400,
+      "sha256": "063f8482ed4a12a3ee27ff103ca9d09e4c9f7283132a0e49c1b5867249bfc8e1"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/events.jsonl",
+      "bytes": 21099,
+      "sha256": "a25c54bd69899f7690a64ca6dfa9c54f19898662283d34aeb91c8405340374c3"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-002.json",
+      "bytes": 11498,
+      "sha256": "81cbc3c7b98a682a402a3822ed8fd947722d69ef7ec5e16fb7c8caacf1f8d0fa"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-003.json",
+      "bytes": 6182,
+      "sha256": "bc5509ba03c4695ae2a1d16cec60469acb57eb2e32509b0b1aec94104b0f34fe"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-004.json",
+      "bytes": 14861,
+      "sha256": "e638ccc3fd2fc4a5819d943a1eedba9fd089cf66ca13990996006c42a231d12b"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-005.json",
+      "bytes": 5826,
+      "sha256": "b52a4a8bee315e1310698d7220e4b39ec375d8a929246e1ed37192e9fc121f98"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-006.json",
+      "bytes": 8940,
+      "sha256": "9c40c2317c6cde942278702c09252c344826cd5fcdb6cdfcdc513635a87f6fc9"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-007.json",
+      "bytes": 4722,
+      "sha256": "455d4d1aa99a5effc45919e5d67020807057efbdfa0e76221621d9238ef54b12"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-008.json",
+      "bytes": 4790,
+      "sha256": "68b7607a2d52003182ee979b0cbcfb3980e08ebdd8b18214b4775c33a76ba247"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-009.json",
+      "bytes": 5624,
+      "sha256": "09b98c62acb34e0062e2613892cc9d36d63c233cdd01678221ea09b81e8768c5"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-010.json",
+      "bytes": 6609,
+      "sha256": "a144d90d232b382ed7d283017a7346896a0086bc58a87327253ea228c79a66d5"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-011.json",
+      "bytes": 4717,
+      "sha256": "74024479b700c0d74ba03fd1e616492a4b6bc51bffae7fe912197d2ac728718e"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-012.json",
+      "bytes": 7797,
+      "sha256": "e00e9b9e40ed7624252bd332f17f1d29a0675d4e8c28f42d9ac2148c116081b1"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-013.json",
+      "bytes": 9490,
+      "sha256": "7b8d26326ec8aa3c56968b0724e1f522800f09368cf8737ac2c459051f2c5207"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-014.json",
+      "bytes": 8442,
+      "sha256": "c6cfe0a448cd7d57f277492db5ab9db1dc7616a42031c9b094b8e061d206fdc7"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-015.json",
+      "bytes": 7819,
+      "sha256": "090ded7b75c60626ad8cd5cbc9a54c4a635d2273659dfb5f933eae5696b4f0fe"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-016.json",
+      "bytes": 4869,
+      "sha256": "35f4e80af6becdbf2c84cc278f8d8486db3c2fc93518ba586e8e62aee14886e0"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-017.json",
+      "bytes": 3790,
+      "sha256": "41f24af385e4a94d5ef2e690dc12cad70176fd5e7a079730c6e6a8cf2606e7f3"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-018.json",
+      "bytes": 8053,
+      "sha256": "0b1f5b7cffd98b138a79a1045400be0ea4b70af573b95ddef189c3b77bb8737c"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-019.json",
+      "bytes": 8451,
+      "sha256": "ee3d7ea0f3e1e3f065ec9ac63dd477f95abaf1cc458a96b3ba357bb81f5b3294"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-020.json",
+      "bytes": 7376,
+      "sha256": "39a049f9ccfb3fbdd53bc378f872dd141b946529ee10cbfdb667e575e14e1daa"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-021.json",
+      "bytes": 6568,
+      "sha256": "7112ef6ce8c4035c3f7865b34bbbadcd4ea83eab1b328cc7db0f4910bf5737d0"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-022.json",
+      "bytes": 6412,
+      "sha256": "ddd2ed49744f98ea29e4f32ae0dccc9bf6b9cafb1a36ebee08584df342396e9a"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-023.json",
+      "bytes": 3744,
+      "sha256": "fb4ba1310befccac3fe468e1395c804819edc98fd5e5d297bc4962f7a4a2ff7f"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-024.json",
+      "bytes": 10976,
+      "sha256": "0ae29472a945db090e8a0db40bd616eba723349af9da0ea1908d8ee8b4387091"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-025.json",
+      "bytes": 3915,
+      "sha256": "f0a7094881c0b6d8a87331113e5efbef49d0ee3e37cfdd4a045b6d8b5fa3078f"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-026.json",
+      "bytes": 8208,
+      "sha256": "ccd8175c008365ce1238f7657ec8ba331d13141b3be268e693704a6252fcc881"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-027.json",
+      "bytes": 3444,
+      "sha256": "5c3a16b63ddf68b33babd3956042d43a92e8556dd3794eb0c46f8a58655a062b"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/evidence/history/P06-028.json",
+      "bytes": 52,
+      "sha256": "cfb3e29f60caf4d38bfe2e2f1093cdafa60053a6355e4af9b073b2942bf12862"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/run-end.json",
+      "bytes": 1648,
+      "sha256": "22d73acca12dbadd1f61ce0f748a07bd34c19f0859dd8a88bd131fe20cafbdf5"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/run-start.json",
+      "bytes": 2102,
+      "sha256": "d0e15f8b50774a35c911779983df27aab05efd1fb7813473556e38239b5b8f06"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/transcripts.jsonl",
+      "bytes": 206639,
+      "sha256": "b507454bca3786ee1f94de553b9403272e5f6880c70d10446ae7c7429748e046"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-main/websocket-frames.jsonl",
+      "bytes": 494441,
+      "sha256": "d553784d48e96b5408e182c6c2b6bbf7ab3f3e8659c2e3af47286fa8d0879e94"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-probe/events.jsonl",
+      "bytes": 2237,
+      "sha256": "02429c326e5d85fcc854552f61ec6272a7dddc8bb1255660096c17fec93127ca"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-probe/evidence/history/P06-001.json",
+      "bytes": 961,
+      "sha256": "3b115ec083b84b687b7a551d913a87b4365df84fa99ae13b0f43e68fa9379b4d"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-probe/run-end.json",
+      "bytes": 899,
+      "sha256": "faf460bc9235a4ba30062c71b169e61fc38028d5b5310ee61378ad8f7fd39bba"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-probe/run-start.json",
+      "bytes": 873,
+      "sha256": "62f69f2b29a0e4b0ba959f0b1b7552a03577f0ff109e93fc9513601394aacb9c"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-probe/transcripts.jsonl",
+      "bytes": 1861,
+      "sha256": "b9f4b68296fa38c6b9b4102c127bceee6873522299f5975b0f86e37602516188"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715-probe/websocket-frames.jsonl",
+      "bytes": 3385,
+      "sha256": "e7e4b740b0aba731080057054d985b9474120f477be983af22266603b2a87f4c"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715T005631444Z/events.jsonl",
+      "bytes": 1728,
+      "sha256": "7efb5f6b16a70e149ca96d803192f551524219d1810f019ff4b30c5549f6f1c6"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715T005631444Z/evidence/P05-AGR-CROSS-AR-V1.json",
+      "bytes": 9797,
+      "sha256": "1069b48f7668d09cfa947ce0901e37618761de1133e1b19cbf4d76b2aa104a6f"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715T005631444Z/evidence/P06-SUP-P04-003-AR.json",
+      "bytes": 9680,
+      "sha256": "c8956a69450fa8df20b0c2f4bce9929897a7ff87830d4add2b4ca2ce75292869"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715T005631444Z/transcripts.jsonl",
+      "bytes": 19169,
+      "sha256": "f25cc73480949baa4fe9afa2ee041054177796772a70c077aded12d54a7da793"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/02-runs/p06-live-20260715T005631444Z/websocket-frames.jsonl",
+      "bytes": 54508,
+      "sha256": "fae751b2c3e6b1601ece8bcc05219c9dde79f4bb71d67bd539f871668b23493d"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/03-observation-ledger/live-observations.jsonl",
+      "bytes": 23060,
+      "sha256": "65d96fe6e8cc921a2bf9fce1d53ce5250c2753f80a69cd6266c3bec2134813fb"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/04-adjudication/adjudication.jsonl",
+      "bytes": 6180,
+      "sha256": "64fde8d551672f05ff58e765eaf7e86194d8b846bf9172fa32087c4f0873b2ae"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/04-adjudication/summary.json",
+      "bytes": 445,
+      "sha256": "ecab39cfec8d39f10384b5889e03b2b810f199b006fb729274532f729ed7bba9"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/CLOSEOUT.md",
+      "bytes": 406,
+      "sha256": "0517261bc38afa2845d60a8e172babf76dcd0aaa9d6f941ba0e7ccc005f4d1eb"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/README.md",
+      "bytes": 713,
+      "sha256": "6dee14fdc6f857294e47ab8876521bb3265a56d81708eacfd8d24115446b09e8"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/SUMMARY.json",
+      "bytes": 858,
+      "sha256": "b09ca6d259642b01ace0f84a31306dc7369d653d89ee67cf04e7eef994440249"
+    },
+    {
+      "path": "research/datasaudi-package-06-live-observation/VALIDATION.json",
+      "bytes": 1284,
+      "sha256": "3508730543cc7e4c7cf6e434746bd7b237cf38b6b06238eb35e4e9f9a5b3cc6e"
+    }
+  ]
+}

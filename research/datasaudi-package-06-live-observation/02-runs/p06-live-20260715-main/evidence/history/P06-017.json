@@ -1,0 +1,24 @@
+{
+  "chat_management": [
+    {
+      "role": "human",
+      "content": "Calculate one useful growth rate or share in disability. Show raw inputs, formula, and rounding difference; do not calculate without required denominators or weights. Answer only from evidence actually retrieved. For every value state indicator, unit, period, geography, frequency, source, and dataset. Separate reported facts, calculations, and inference. Do not fill missing values or claim causality.",
+      "created_at": "01:02:29",
+      "language": "en"
+    },
+    {
+      "role": "ai",
+      "content": "### Reported Facts\n\nThe following table presents the raw historical data retrieved from the database regarding individuals with disabilities in Saudi Arabia:\n\n| Metric (Indicator) | Sex | Nationality | Age Range | Unit | Period | Geography | Frequency | Source | Dataset | Value |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Number of People with Two or More Disabilities | Total | Total | Total | Headcount (Number of people) | 2023 | Saudi Arabia | Annual | General Authority for Statistics (GASTAT) | `gastat_disabled_people_by_nationality_and_sex` | 217,410.0 |\n| Total of People with Disabilities | Total | Total | Total | Headcount (Number of people) | 2023 | Saudi Arabia | Annual | General Authority for Statistics (GASTAT) | `gastat_disabled_people_by_nationality_and_sex` | 588,680.0 |\n\n---\n\n### Calculation: Share of Individuals with Multiple (Two or More) Disabilities\n\nThis calculation determines the proportion of the disabled population in Saudi Arabia that has two or more co-occurring disabilities.\n\n#### 1. Raw Inputs\n*   **Numerator ($N$):** $217,410.0$ (Number of People with Two or More Disabilities)\n*   **Denominator ($D$):** $588,680.0$ (Total of People with Disabilities)\n\n#### 2. Formula\n$$\\text{Share (\\%)} = \\left( \\frac{\\text{Number of People with Two or More Disabilities}}{\\text{Total of People with Disabilities}} \\right) \\times 100$$\n\n#### 3. Execution\n$$\\text{Share (\\%)} = \\left( \\frac{217,410.0}{588,680.0} \\right) \\times 100 \\approx 36.93245906162941\\%$$\n\n#### 4. Rounding and Precision\n*   **Unrounded Calculated Value:** $36.93245906162941\\%$\n*   **Rounded Value (to 3 decimal places):** $36.932\\%$\n*   **Rounding Difference:** $36.93245906162941\\% - 36.932\\% = 0.00045906162941\\%$ (or approximately $0.00046$ percentage points)\n\n---\n\n### Inference and Contextual Analysis\n\n*   **Objective Analysis:** Based strictly on the calculated share, approximately $36.932\\%$ of the registered disabled population in Saudi Arabia in 2023 experienced multiple (two or more) disabilities, while the remaining majority (approximately $63.068\\%$) experienced a single disability. \n*   **Causality Warning:** The data shows only the static headcount distribution for the year 2023. It does not provide medical, social, or environmental drivers behind why individuals develop single versus multiple disabilities, nor does it establish any causal relationships.\n\n**Approximately 36.932% of individuals with disabilities in Saudi Arabia have multiple co-occurring conditions. A composition chart would show how this share breaks down compared to single-disability cases. Would you like to see it?**",
+      "created_at": "01:02:29",
+      "citation": [
+        {
+          "text": "Saudi Arabia Disability Headcount Statistics",
+          "url": "https://datasaudi.sa/en/data-explorer?cube=gastat_disabled_people_by_nationality_and_sex&locale=en&drilldowns=Sex,Nationality,Age+Range,Number+of+Difficulties+and+Disabilities+Name,Year&measures=Population&limit=100%2C0&panel=table"
+        }
+      ],
+      "visualization": null,
+      "language": "en"
+    }
+  ],
+  "session_name": null
+}

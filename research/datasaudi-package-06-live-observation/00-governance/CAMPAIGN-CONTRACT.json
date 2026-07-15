@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "campaign_id": "P06-LIVE-WINDOW-01",
+  "selected_questions": 30,
+  "mapped_p05_executions": 29,
+  "supplemental_exact_prompts": 1,
+  "p05_baseline_live_cells": 31,
+  "p05_denominator": 2304,
+  "maximum_possible_new_mapped_cells": 29,
+  "maximum_possible_cumulative_live_cells": 60,
+  "identity_policy": "SAME_STABLE_PSEUDONYMOUS_USER_ONLY",
+  "expected_user_fingerprint_sha256": "aff3153d2aef1684cae347348dc12ad051e3af0a30b67080741c605d4f11ea90",
+  "session_policy": "A fresh session id may be used per self-contained prompt; the user identity never changes.",
+  "quota_policy": "Maximum 30 outbound queries; stop on first explicit quota signal; no retries.",
+  "counting_policy": {
+    "live_message": "Every outbound query accepted for transport",
+    "observed_answer": "A response reaching answer_end with non-empty content",
+    "mapped_live_cell": "A unique P05 execution_id with exact prompt_sha256 and observed terminal response",
+    "correct_answer": "Determined only by independent adjudication",
+    "supplemental": "Never included in the 2,304 numerator"
+  }
+}

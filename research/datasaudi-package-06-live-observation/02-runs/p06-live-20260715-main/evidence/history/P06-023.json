@@ -1,0 +1,24 @@
+{
+  "chat_management": [
+    {
+      "role": "human",
+      "content": "Return the latest 12 available periods for one defensible recurring indicator in research and development. Keep one frequency and do not mix months, quarters, and years. Answer only from evidence actually retrieved. For every value state indicator, unit, period, geography, frequency, source, and dataset. Separate reported facts, calculations, and inference. Do not fill missing values or claim causality.",
+      "created_at": "01:06:22",
+      "language": "en"
+    },
+    {
+      "role": "ai",
+      "content": "### Reported Facts (Data)\n\nThe table below presents the available annual data for patent applications in Saudi Arabia. Although 12 periods were requested, only the latest 6 annual periods are available in the retrieved evidence. \n\n| Date | Patent Applications | Indicator | Unit | Geography | Frequency | Source | Dataset |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| 2020 | 3,568 | Patent Applications | Applications (Count) | Saudi Arabia | Annual | Data Saudi Platform | International Indicators of Innovation and R&D |\n| 2021 | 3,979 | Patent Applications | Applications (Count) | Saudi Arabia | Annual | Data Saudi Platform | International Indicators of Innovation and R&D |\n| 2022 | 5,837 | Patent Applications | Applications (Count) | Saudi Arabia | Annual | Data Saudi Platform | International Indicators of Innovation and R&D |\n| 2023 | 7,084 | Patent Applications | Applications (Count) | Saudi Arabia | Annual | Data Saudi Platform | International Indicators of Innovation and R&D |\n| 2024 | 7,913 | Patent Applications | Applications (Count) | Saudi Arabia | Annual | Data Saudi Platform | International Indicators of Innovation and R&D |\n| 2025 | 10,207 | Patent Applications | Applications (Count) | Saudi Arabia | Annual | Data Saudi Platform | International Indicators of Innovation and R&D |\n\n---\n\n### Calculations\n\nThe year-on-year percentage changes for patent applications are calculated below:\n* **2020 to 2021:** An increase of 11.519% (from 3,568 to 3,979)\n* **2021 to 2022:** An increase of 46.695% (from 3,979 to 5,837)\n* **2022 to 2023:** An increase of 21.364% (from 5,837 to 7,084)\n* **2023 to 2024:** An increase of 11.702% (from 7,084 to 7,913)\n* **2024 to 2025:** An increase of 28.990% (from 7,913 to 10,207)\n\n---\n\n### Inference\n\nBased on the retrieved data, the annual number of patent applications in Saudi Arabia registered a continuous increase during each observed period from 2020 through 2025. The largest single-year absolute increase occurred between 2024 and 2025 (+2,294 applications), while the highest percentage growth rate occurred between 2021 and 2022 (+46.695%). No causal factors for this trend are identified in the provided structured dataset.\n\n**Patent applications in Saudi Arabia grew from 3,568 in 2020 to 10,207 in 2025, with a notable growth peak of 46.7% in 2022. A trend line chart would reveal this growth trajectory across the years. Would you like to see it?**",
+      "created_at": "01:06:22",
+      "citation": [
+        {
+          "text": "Saudi Arabia Innovation and R&D Indicators",
+          "url": "https://datasaudi.sa/en/data-explorer?cube=int_indicators_innovation_rd&locale=en&drilldowns=Year&measures=Trademarks+Applications,Patent+Applications,Expenditure+on+Research+and+Development,Business+Research+and+Development+Expenditure,Research+and+Development+Personnel+Nationwide,Research+and+Development+Personnel+Enterprise,Researchers+in+Research+and+Development,Research+and+Development+Expenditure&limit=100%2C0&panel=table"
+        }
+      ],
+      "visualization": null,
+      "language": "en"
+    }
+  ],
+  "session_name": null
+}
