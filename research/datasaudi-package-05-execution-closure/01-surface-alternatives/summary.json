@@ -1,0 +1,523 @@
+{
+  "schema_version": "1.0",
+  "package_id": "datasaudi-package-05-execution-closure",
+  "captured_at_utc": "2026-07-14T23:57:27.249Z",
+  "mode": "PUBLIC_OFFICIAL_SURFACE_PROBES_NO_CHAT_MESSAGES",
+  "chat_messages_consumed": 0,
+  "authentication_used": false,
+  "observations": [
+    {
+      "id": "api-root",
+      "request": {
+        "method": "GET",
+        "url": "https://api.datasaudi.sa/",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://api.datasaudi.sa/ui/",
+        "content_type": "text/html; charset=utf-8",
+        "content_length_header": null,
+        "bytes": 2670,
+        "sha256": "2dd1c7b149ec1a7b9c2765ff610a59d82a68291ea7049d9834a4c15b394da36b",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/api-root.json"
+      }
+    },
+    {
+      "id": "api-health",
+      "request": {
+        "method": "GET",
+        "url": "https://api.datasaudi.sa/_health",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 204,
+        "ok": true,
+        "final_url": "https://api.datasaudi.sa/_health",
+        "content_type": null,
+        "content_length_header": null,
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/api-health.json"
+      }
+    },
+    {
+      "id": "openapi",
+      "request": {
+        "method": "GET",
+        "url": "https://api.datasaudi.sa/openapi.json",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://api.datasaudi.sa/openapi.json",
+        "content_type": "application/json",
+        "content_length_header": "43157",
+        "bytes": 43157,
+        "sha256": "a8dd8f2acf89b41fc00f99b877b12ea7586ad2ebfe3d0bb967645fdccf5a0a72",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/openapi.json"
+      }
+    },
+    {
+      "id": "gdp-schema",
+      "request": {
+        "method": "GET",
+        "url": "https://api.datasaudi.sa/tesseract/cubes/gastat_gdp?locale=en",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://api.datasaudi.sa/tesseract/cubes/gastat_gdp?locale=en",
+        "content_type": "application/json",
+        "content_length_header": "1817",
+        "bytes": 1817,
+        "sha256": "8c81d547259b04bc0013e64e7899736c83d7bbe8a2b1de57e38a1928fce0f4dd",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/gdp-schema.json"
+      }
+    },
+    {
+      "id": "gdp-ranking",
+      "request": {
+        "method": "GET",
+        "url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_gdp&drilldowns=Quarter%2CEconomic+Activity+Section&measures=GDP&time=Quarter.latest.1&ranking=-GDP&sort=GDP.desc&limit=5%2C0",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_gdp&drilldowns=Quarter%2CEconomic+Activity+Section&measures=GDP&time=Quarter.latest.1&ranking=-GDP&sort=GDP.desc&limit=5%2C0",
+        "content_type": "application/json",
+        "content_length_header": null,
+        "bytes": 1618,
+        "sha256": "46777e654249ba43e5623d7141a8395257c61663595882ec12153c2f216de256",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/gdp-ranking.json"
+      }
+    },
+    {
+      "id": "gdp-growth",
+      "request": {
+        "method": "GET",
+        "url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_gdp&drilldowns=Quarter%2CEconomic+Activity+Section&measures=GDP&time=Quarter.latest.3&growth=Quarter.GDP.period.1&limit=36%2C0",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=gastat_gdp&drilldowns=Quarter%2CEconomic+Activity+Section&measures=GDP&time=Quarter.latest.3&growth=Quarter.GDP.period.1&limit=36%2C0",
+        "content_type": "application/json",
+        "content_length_header": null,
+        "bytes": 8090,
+        "sha256": "b1f86a3eda4a34e6594683f07ad3ab648c62082d6216579f8dd63773b7571cfd",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/gdp-growth.json"
+      }
+    },
+    {
+      "id": "building-filter-alias",
+      "request": {
+        "method": "GET",
+        "url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=building_permits&drilldowns=Month&measures=Number+of+Building+Permits&include=Month%3A202601%2C202602%2C202603%2C202604&filters=Number+of+Building+Permits.gt.7000&alias=Number+of+Building+Permits%3APermits&sort=Permits.desc&limit=10%2C0",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=building_permits&drilldowns=Month&measures=Number+of+Building+Permits&include=Month%3A202601%2C202602%2C202603%2C202604&filters=Number+of+Building+Permits.gt.7000&alias=Number+of+Building+Permits%3APermits&sort=Permits.desc&limit=10%2C0",
+        "content_type": "application/json",
+        "content_length_header": null,
+        "bytes": 788,
+        "sha256": "a69860a53500f0cef8ba25017f54359231b000b2edeac4d8e1a529872bf8d009",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/building-filter-alias.json"
+      }
+    },
+    {
+      "id": "multiquery-common-year",
+      "request": {
+        "method": "POST",
+        "url": "https://api.datasaudi.sa/tesseract/multiquery.jsonrecords",
+        "content_type": "application/json",
+        "body_sha256": "56da2b1b6da2e34c72c77a730bcd5469bf3b1568ba4bbb81822f6e670ecb9349"
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://api.datasaudi.sa/tesseract/multiquery.jsonrecords",
+        "content_type": "application/json",
+        "content_length_header": null,
+        "bytes": 1618,
+        "sha256": "345780e68dd1af0c3f276d6d86649e5b5425c8e84e1b078574be54b794d95a74",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/multiquery-common-year.json"
+      }
+    },
+    {
+      "id": "data-explorer-page",
+      "request": {
+        "method": "GET",
+        "url": "https://datasaudi.sa/ar/data-explorer",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://datasaudi.sa/ar/data-explorer",
+        "content_type": "text/html; charset=utf-8",
+        "content_length_header": null,
+        "bytes": 77894,
+        "sha256": "e0f266cba01934de736ea9992365f3ada74ff11e9169585d664480302c9b1f59",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/data-explorer-page.html"
+      }
+    },
+    {
+      "id": "economic-calendar-page",
+      "request": {
+        "method": "GET",
+        "url": "https://datasaudi.sa/ar/economic-calendar",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://datasaudi.sa/ar/economic-calendar",
+        "content_type": "text/html; charset=utf-8",
+        "content_length_header": null,
+        "bytes": 68916,
+        "sha256": "3ad04824bc572c837fbc41844123103acecaf014fb4ec06fbfc09af7d8fde66c",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/economic-calendar-page.html"
+      }
+    },
+    {
+      "id": "insaights-page",
+      "request": {
+        "method": "GET",
+        "url": "https://datasaudi.sa/ar/insaights",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://datasaudi.sa/ar/insaights",
+        "content_type": "text/html; charset=utf-8",
+        "content_length_header": null,
+        "bytes": 47403,
+        "sha256": "dcbb5958f468e67d6d904147769975c5bf1bfca128b18050fa07d7472371d005",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/insaights-page.html"
+      }
+    },
+    {
+      "id": "format-jsonrecords",
+      "request": {
+        "method": "GET",
+        "url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=building_permits&drilldowns=Month&measures=Number+of+Building+Permits&time=Month.latest.2&limit=2%2C0",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://api.datasaudi.sa/tesseract/data.jsonrecords?cube=building_permits&drilldowns=Month&measures=Number+of+Building+Permits&time=Month.latest.2&limit=2%2C0",
+        "content_type": "application/json",
+        "content_length_header": null,
+        "bytes": 899,
+        "sha256": "8cde7cf7d1581d1b0ad45e4094336edc21ba1f94b8c495d505be1f269554b4be",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/format-jsonrecords.json"
+      }
+    },
+    {
+      "id": "format-jsonarrays",
+      "request": {
+        "method": "GET",
+        "url": "https://api.datasaudi.sa/tesseract/data.jsonarrays?cube=building_permits&drilldowns=Month&measures=Number+of+Building+Permits&time=Month.latest.2&limit=2%2C0",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://api.datasaudi.sa/tesseract/data.jsonarrays?cube=building_permits&drilldowns=Month&measures=Number+of+Building+Permits&time=Month.latest.2&limit=2%2C0",
+        "content_type": "application/json",
+        "content_length_header": null,
+        "bytes": 803,
+        "sha256": "3b302779a9cfa44609b356fe1eefc4cca34fb70d7d62e17343169320cb69ca43",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/format-jsonarrays.json"
+      }
+    },
+    {
+      "id": "format-csv",
+      "request": {
+        "method": "GET",
+        "url": "https://api.datasaudi.sa/tesseract/data.csv?cube=building_permits&drilldowns=Month&measures=Number+of+Building+Permits&time=Month.latest.2&limit=2%2C0",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://api.datasaudi.sa/tesseract/data.csv?cube=building_permits&drilldowns=Month&measures=Number+of+Building+Permits&time=Month.latest.2&limit=2%2C0",
+        "content_type": "text/csv; charset=utf-8",
+        "content_length_header": "86",
+        "bytes": 86,
+        "sha256": "98a68a66a0eb3ab29ddeb1a7e90995a7bb333c83c3e1df1c774fa637328371c0",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/format-csv.csv"
+      }
+    },
+    {
+      "id": "format-csvbom",
+      "request": {
+        "method": "GET",
+        "url": "https://api.datasaudi.sa/tesseract/data.csvbom?cube=building_permits&drilldowns=Month&measures=Number+of+Building+Permits&time=Month.latest.2&limit=2%2C0",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://api.datasaudi.sa/tesseract/data.csvbom?cube=building_permits&drilldowns=Month&measures=Number+of+Building+Permits&time=Month.latest.2&limit=2%2C0",
+        "content_type": "text/csv; charset=utf-8",
+        "content_length_header": "89",
+        "bytes": 89,
+        "sha256": "20de114f3e6864c07a6dae9cbc0dd89ea6e796453b649fbbecc2728b71a88156",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/format-csvbom.csvbom"
+      }
+    },
+    {
+      "id": "format-tsv",
+      "request": {
+        "method": "GET",
+        "url": "https://api.datasaudi.sa/tesseract/data.tsv?cube=building_permits&drilldowns=Month&measures=Number+of+Building+Permits&time=Month.latest.2&limit=2%2C0",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://api.datasaudi.sa/tesseract/data.tsv?cube=building_permits&drilldowns=Month&measures=Number+of+Building+Permits&time=Month.latest.2&limit=2%2C0",
+        "content_type": "text/tab-separated-values; charset=utf-8",
+        "content_length_header": "86",
+        "bytes": 86,
+        "sha256": "d2cbea445f18d49094400f4fb3a57d9d9077e14c6565b8d830ce8f753f3f46d8",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/format-tsv.tsv"
+      }
+    },
+    {
+      "id": "format-tsvbom",
+      "request": {
+        "method": "GET",
+        "url": "https://api.datasaudi.sa/tesseract/data.tsvbom?cube=building_permits&drilldowns=Month&measures=Number+of+Building+Permits&time=Month.latest.2&limit=2%2C0",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://api.datasaudi.sa/tesseract/data.tsvbom?cube=building_permits&drilldowns=Month&measures=Number+of+Building+Permits&time=Month.latest.2&limit=2%2C0",
+        "content_type": "text/tab-separated-values; charset=utf-8",
+        "content_length_header": "89",
+        "bytes": 89,
+        "sha256": "0fda44e962f76c5954f2923095a84bbe94d15aca21f3e5b0b2899442d35a3af1",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/format-tsvbom.tsvbom"
+      }
+    },
+    {
+      "id": "format-xlsx",
+      "request": {
+        "method": "GET",
+        "url": "https://api.datasaudi.sa/tesseract/data.xlsx?cube=building_permits&drilldowns=Month&measures=Number+of+Building+Permits&time=Month.latest.2&limit=2%2C0",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://api.datasaudi.sa/tesseract/data.xlsx?cube=building_permits&drilldowns=Month&measures=Number+of+Building+Permits&time=Month.latest.2&limit=2%2C0",
+        "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "content_length_header": "0",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/format-xlsx.xlsx"
+      }
+    },
+    {
+      "id": "format-parquet",
+      "request": {
+        "method": "GET",
+        "url": "https://api.datasaudi.sa/tesseract/data.parquet?cube=building_permits&drilldowns=Month&measures=Number+of+Building+Permits&time=Month.latest.2&limit=2%2C0",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://api.datasaudi.sa/tesseract/data.parquet?cube=building_permits&drilldowns=Month&measures=Number+of+Building+Permits&time=Month.latest.2&limit=2%2C0",
+        "content_type": "application/vnd.apache.parquet",
+        "content_length_header": "0",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/format-parquet.parquet"
+      }
+    }
+  ],
+  "capabilities": {
+    "openapi": {
+      "status": 200,
+      "version": "3.1.0",
+      "declared_paths": 10,
+      "data_features": [
+        "extension",
+        "cube",
+        "drilldowns",
+        "measures",
+        "alias",
+        "aliases",
+        "locale",
+        "limit",
+        "parents",
+        "properties",
+        "ranking",
+        "sort",
+        "sparse",
+        "time",
+        "top",
+        "growth",
+        "exclude",
+        "include",
+        "filters",
+        "token",
+        "authorization",
+        "x-tesseract-jwt"
+      ],
+      "multiquery_method": "POST"
+    },
+    "server_ranking": {
+      "status": 200,
+      "columns": [
+        "Quarter ID",
+        "Quarter",
+        "Economic Activity Section ID",
+        "Economic Activity Section",
+        "GDP",
+        "GDP Ranking"
+      ],
+      "rows": 5,
+      "latest_period": "2026-Q1",
+      "first_rank": 1,
+      "verified_usable": true
+    },
+    "server_growth": {
+      "status": 200,
+      "columns": [
+        "Quarter ID",
+        "Quarter",
+        "Economic Activity Section ID",
+        "Economic Activity Section",
+        "GDP",
+        "GDP Growth Value",
+        "GDP Growth"
+      ],
+      "rows": 36,
+      "non_null_growth_rows": 24,
+      "verified_usable": true
+    },
+    "filters_include_alias_sort": {
+      "status": 200,
+      "columns": [
+        "Month ID",
+        "Month",
+        "Permits"
+      ],
+      "rows": 1,
+      "verified_usable": true
+    },
+    "multiquery_common_grain": {
+      "status": 200,
+      "columns": [
+        "Year",
+        "GDP",
+        "Number of Building Permits"
+      ],
+      "rows": 3,
+      "verified_usable": true,
+      "safety_boundary": "A common column enables a raw join, but member-key, grain, completeness, and partial-period checks remain mandatory."
+    },
+    "response_formats": {
+      "jsonrecords": {
+        "status": 200,
+        "content_type": "application/json",
+        "bytes": 899,
+        "usable_nonempty": true
+      },
+      "jsonarrays": {
+        "status": 200,
+        "content_type": "application/json",
+        "bytes": 803,
+        "usable_nonempty": true
+      },
+      "csv": {
+        "status": 200,
+        "content_type": "text/csv; charset=utf-8",
+        "bytes": 86,
+        "usable_nonempty": true
+      },
+      "csvbom": {
+        "status": 200,
+        "content_type": "text/csv; charset=utf-8",
+        "bytes": 89,
+        "usable_nonempty": true
+      },
+      "tsv": {
+        "status": 200,
+        "content_type": "text/tab-separated-values; charset=utf-8",
+        "bytes": 86,
+        "usable_nonempty": true
+      },
+      "tsvbom": {
+        "status": 200,
+        "content_type": "text/tab-separated-values; charset=utf-8",
+        "bytes": 89,
+        "usable_nonempty": true
+      },
+      "xlsx": {
+        "status": 200,
+        "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "bytes": 0,
+        "usable_nonempty": false
+      },
+      "parquet": {
+        "status": 200,
+        "content_type": "application/vnd.apache.parquet",
+        "bytes": 0,
+        "usable_nonempty": false
+      }
+    },
+    "web_surfaces": {
+      "data_explorer": 200,
+      "economic_calendar": 200,
+      "insaights": 200
+    }
+  },
+  "findings": [
+    "The public API supports ranking, growth, time restrictions, sorting, aliases, include/exclude, value filters, pagination, multiple text formats, and multiquery joins without consuming an INSAIGHTS message.",
+    "jsonrecords, jsonarrays, csv, csvbom, tsv, and tsvbom returned non-empty bodies in the captured format probe.",
+    "xlsx and parquet returned HTTP 200 with zero-byte bodies and must not be treated as working exports.",
+    "Multiquery can join two cubes on a common Year caption, but this does not prove semantic or temporal comparability and may include partial periods.",
+    "Server ranking and growth are useful accelerators, but independent arithmetic and query-contract checks remain required."
+  ],
+  "boundaries": [
+    "No alternative surface was used to evade the 30-message chat quota.",
+    "No identity rotation, account switching, token persistence, or private endpoint use occurred.",
+    "Public reachability is not a dataset-level commercial reuse license.",
+    "HTTP 200 with an empty body is not a usable export.",
+    "A server-side join is a candidate result until grain, member keys, definitions, units, and period completeness are verified."
+  ]
+}

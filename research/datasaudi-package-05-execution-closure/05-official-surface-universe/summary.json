@@ -1,0 +1,417 @@
+{
+  "schema_version": "1.0",
+  "package_id": "datasaudi-package-05-execution-closure",
+  "captured_at_utc": "2026-07-15T00:11:27.943Z",
+  "mode": "PUBLIC_OFFICIAL_SURFACE_UNIVERSE_NO_CHAT_NO_AUTH",
+  "chat_messages_consumed": 0,
+  "authentication_used": false,
+  "build_id_observed": "jKr4M70ajVH4Grvx2K7_H",
+  "build_id_boundary": "Next.js buildId is ephemeral and must be rediscovered from __NEXT_DATA__ on every new snapshot.",
+  "catalog": {
+    "cubes": 277,
+    "dimensions": 722,
+    "hierarchies": 753,
+    "levels": 992,
+    "unique_cube_level_pairs": 992,
+    "bilingual_member_base_requests": 1984
+  },
+  "datasets_registry": {
+    "groups": 5,
+    "subgroups": 36,
+    "records": 251,
+    "unique_cube_ids": 251,
+    "records_with_source_link": 240,
+    "records_without_source_link": 11,
+    "api_only_cube_count": 26,
+    "api_only_cubes": [
+      "dim_countries",
+      "dim_international_indicators_sources",
+      "dim_sectors",
+      "donor_data",
+      "gastat_employees_nationality_sex_region",
+      "gastat_housing_type_tenure",
+      "gastat_ipi_economic_activity",
+      "gastat_participants_nationality_sex_region",
+      "gastat_total_nationality_sex_region",
+      "gastat_trade",
+      "int_indicators_tech_comm",
+      "internationally_reported_indicators",
+      "knomad_migration",
+      "knomad_remittances",
+      "net_oda",
+      "sama_atm_transactions",
+      "sama_average_salaries_private",
+      "sama_credit_institutions_assets",
+      "sama_credit_institutions_liabilities",
+      "sama_on_the_job_subscribers_private",
+      "sama_payments_volume_value",
+      "sama_pos_atm_bank",
+      "sama_salary_private_sector_region_nationality_gender",
+      "sama_salary_profession_nationality_sex",
+      "sama_subscribers_private_sector",
+      "unctad_fdi"
+    ]
+  },
+  "sitemap_reports": {
+    "urls": 503,
+    "region_slugs": 13,
+    "sector_slugs": 21,
+    "bilateral_country_slugs": 100,
+    "report_targets": 136
+  },
+  "embedded_profile_lists": {
+    "regions": 13,
+    "sectors": 21,
+    "bilateral_countries": 183,
+    "report_targets": 219
+  },
+  "report_profile_samples": {
+    "profile-saudi": {
+      "sections": 125,
+      "visualizations": 105,
+      "descriptions": 252,
+      "variables": 2908,
+      "embedded_import_rows": 0,
+      "embedded_export_rows": 0
+    },
+    "profile-riyadh": {
+      "sections": 66,
+      "visualizations": 52,
+      "descriptions": 119,
+      "variables": 3162,
+      "embedded_import_rows": 0,
+      "embedded_export_rows": 0
+    },
+    "profile-financial-sector": {
+      "sections": 28,
+      "visualizations": 20,
+      "descriptions": 66,
+      "variables": 944,
+      "embedded_import_rows": 0,
+      "embedded_export_rows": 0
+    },
+    "profile-china": {
+      "sections": 12,
+      "visualizations": 8,
+      "descriptions": 27,
+      "variables": 239,
+      "embedded_import_rows": 1159,
+      "embedded_export_rows": 849
+    },
+    "profile-international-indicators": {
+      "sections": 55,
+      "visualizations": 41,
+      "descriptions": 89,
+      "variables": 206,
+      "embedded_import_rows": 0,
+      "embedded_export_rows": 0
+    }
+  },
+  "member_search": {
+    "cube": "foreign_trade",
+    "level": "Country",
+    "search": "China",
+    "members": [
+      {
+        "key": "chn",
+        "caption": "People's Republic of China",
+        "ancestor": [
+          {
+            "key": "chn",
+            "caption": "Asia"
+          }
+        ]
+      }
+    ],
+    "pagination_boundary": "The endpoint exposes no total; page until members.length is less than the requested limit."
+  },
+  "explicit_grain_join": {
+    "status": 200,
+    "verdict": "VERIFIED_SAFE_AT_EXPLICIT_OUTPUT_GRAIN",
+    "cubes": [
+      "sama_water_consumption_region",
+      "gastat_population_province_sex_nationality"
+    ],
+    "grain": [
+      "Province ID",
+      "Year"
+    ],
+    "validate_relation": "1:1",
+    "rows": 163,
+    "unique_keys": 163,
+    "year_min": 2010,
+    "year_max": 2022,
+    "boundary": "This is proof for the captured Province ID × Year output only; it is not a global cross-cube ontology."
+  },
+  "economic_calendar": {
+    "categories": 2,
+    "month_summaries": 26,
+    "july_2026_total": 12,
+    "returned_items": 12,
+    "boundary": "A scheduled release event does not prove that the corresponding dataset has been published or ingested."
+  },
+  "receipts": [
+    {
+      "id": "datasets-page",
+      "request": {
+        "method": "GET",
+        "url": "https://datasaudi.sa/ar/data-explorer/datasets",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://datasaudi.sa/ar/data-explorer/datasets",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 846122,
+        "sha256": "bd1a8211c250fa826abd48b665274b3404c0febaf8b2ab98131703c790014b3b",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/datasets-page.html"
+      }
+    },
+    {
+      "id": "sitemap",
+      "request": {
+        "method": "GET",
+        "url": "https://datasaudi.sa/sitemap-0.xml",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://datasaudi.sa/sitemap-0.xml",
+        "content_type": "application/xml",
+        "bytes": 178591,
+        "sha256": "89395ff069c69e57dd4db48f36144f44857622fda6848fd7080806e6f684fc60",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/sitemap.xml"
+      }
+    },
+    {
+      "id": "catalog-show-all-en",
+      "request": {
+        "method": "GET",
+        "url": "https://api.datasaudi.sa/tesseract/cubes?show_all=true&locale=en",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://api.datasaudi.sa/tesseract/cubes?show_all=true&locale=en",
+        "content_type": "application/json",
+        "bytes": 551378,
+        "sha256": "31d58166b007dfdf4a78e450f23bb826f188ddf4bb0d45bfabf9f90aa02cc841",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/catalog-show-all-en.json"
+      }
+    },
+    {
+      "id": "member-search-china",
+      "request": {
+        "method": "GET",
+        "url": "https://api.datasaudi.sa/tesseract/members?cube=foreign_trade&level=Country&locale=en&search=China&parents=true&limit=10%2C0",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://api.datasaudi.sa/tesseract/members?cube=foreign_trade&level=Country&locale=en&search=China&parents=true&limit=10%2C0",
+        "content_type": "application/json",
+        "bytes": 275,
+        "sha256": "35a1eeaf1c465be1028acf0945ea03ad958cb85970b502c2e8c5857638b1c3d6",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/member-search-china.json"
+      }
+    },
+    {
+      "id": "multiquery-water-population-province-year",
+      "request": {
+        "method": "POST",
+        "url": "https://api.datasaudi.sa/tesseract/multiquery.jsonrecords",
+        "content_type": "application/json",
+        "body_sha256": "8560287b666063fa7ec6e5c99a00fb41541416cfaa253c86568fc5c3bd336db0"
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://api.datasaudi.sa/tesseract/multiquery.jsonrecords",
+        "content_type": "application/json",
+        "bytes": 30204,
+        "sha256": "18a899ea30b8483df2068d668058b108ce2334b7bc114d7ac8db94a51f3bf224",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/multiquery-water-population-province-year.json"
+      }
+    },
+    {
+      "id": "calendar-categories",
+      "request": {
+        "method": "GET",
+        "url": "https://apipulse.mep.gov.sa/ds/calendar/v1/categories",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://apipulse.mep.gov.sa/ds/calendar/v1/categories",
+        "content_type": "application/json;charset=UTF-8",
+        "bytes": 198,
+        "sha256": "fc061b8a7d7c085f0de377b9260c475f50be5f9bd3092a74606eb1bf515a9237",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/calendar-categories.json"
+      }
+    },
+    {
+      "id": "calendar-summary",
+      "request": {
+        "method": "GET",
+        "url": "https://apipulse.mep.gov.sa/ds/calendar/v1/summary/count",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://apipulse.mep.gov.sa/ds/calendar/v1/summary/count",
+        "content_type": "application/json;charset=UTF-8",
+        "bytes": 1342,
+        "sha256": "8f4d9275046c95921504cb8b5d3b55d3f2710fb3a4c54c2c521dd2f5985fc2ce",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/calendar-summary.json"
+      }
+    },
+    {
+      "id": "calendar-search-july-2026",
+      "request": {
+        "method": "POST",
+        "url": "https://apipulse.mep.gov.sa/ds/calendar/v1/search",
+        "content_type": "application/json",
+        "body_sha256": "d2aebacfd9b43175f9d446af50f7ad6e621127ab0f2db23dbec8e03b8d092db2"
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://apipulse.mep.gov.sa/ds/calendar/v1/search",
+        "content_type": "application/json;charset=UTF-8",
+        "bytes": 9947,
+        "sha256": "6e2bd055884e518ca4e0643b06bcc3cb456a7f23e97d82e934078f2bc23f3d61",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/calendar-search-july-2026.json"
+      }
+    },
+    {
+      "id": "datasets-next-data",
+      "request": {
+        "method": "GET",
+        "url": "https://datasaudi.sa/_next/data/jKr4M70ajVH4Grvx2K7_H/ar/data-explorer/datasets.json",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://datasaudi.sa/_next/data/jKr4M70ajVH4Grvx2K7_H/ar/data-explorer/datasets.json",
+        "content_type": "application/json",
+        "bytes": 146084,
+        "sha256": "72c3ed23cedaac6445bf9dba44541690117c63f155077cd9b98d17f08f8e1d61",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/datasets-next-data.json"
+      }
+    },
+    {
+      "id": "profile-saudi",
+      "request": {
+        "method": "GET",
+        "url": "https://datasaudi.sa/_next/data/jKr4M70ajVH4Grvx2K7_H/ar.json",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://datasaudi.sa/_next/data/jKr4M70ajVH4Grvx2K7_H/ar.json",
+        "content_type": "application/json",
+        "bytes": 2326114,
+        "sha256": "53f8c7301ce544a572df7f8751e2f2113e4e6dd168b1c3d5ffbb76002d647f77",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/profile-saudi.json"
+      }
+    },
+    {
+      "id": "profile-riyadh",
+      "request": {
+        "method": "GET",
+        "url": "https://datasaudi.sa/_next/data/jKr4M70ajVH4Grvx2K7_H/ar/region/al-riyadh.json?slug=al-riyadh",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://datasaudi.sa/_next/data/jKr4M70ajVH4Grvx2K7_H/ar/region/al-riyadh.json?slug=al-riyadh",
+        "content_type": "application/json",
+        "bytes": 1796460,
+        "sha256": "4991d701e293e9d3ad29fdace5927a1d90787d829985f7cb595f37a4b2a4c07d",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/profile-riyadh.json"
+      }
+    },
+    {
+      "id": "profile-financial-sector",
+      "request": {
+        "method": "GET",
+        "url": "https://datasaudi.sa/_next/data/jKr4M70ajVH4Grvx2K7_H/ar/sector/financial-and-insurance-activities.json?slug=financial-and-insurance-activities",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://datasaudi.sa/_next/data/jKr4M70ajVH4Grvx2K7_H/ar/sector/financial-and-insurance-activities.json?slug=financial-and-insurance-activities",
+        "content_type": "application/json",
+        "bytes": 776245,
+        "sha256": "37d1c44b96e7fcfe2660ba3ba3d0e5ad7a84d41dd1b35c589bd5f0fe1ac8a4f1",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/profile-financial-sector.json"
+      }
+    },
+    {
+      "id": "profile-china",
+      "request": {
+        "method": "GET",
+        "url": "https://datasaudi.sa/_next/data/jKr4M70ajVH4Grvx2K7_H/ar/bilateral/china.json?slug=china",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://datasaudi.sa/_next/data/jKr4M70ajVH4Grvx2K7_H/ar/bilateral/china.json?slug=china",
+        "content_type": "application/json",
+        "bytes": 703070,
+        "sha256": "1fcb103046e3b321c0fe47e9a718e98ebfb809724013b7e2aecd4d6ca77f7a9c",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/profile-china.json"
+      }
+    },
+    {
+      "id": "profile-international-indicators",
+      "request": {
+        "method": "GET",
+        "url": "https://datasaudi.sa/_next/data/jKr4M70ajVH4Grvx2K7_H/ar/internationally-reported-indicators.json",
+        "content_type": null,
+        "body_sha256": null
+      },
+      "response": {
+        "status": 200,
+        "ok": true,
+        "final_url": "https://datasaudi.sa/_next/data/jKr4M70ajVH4Grvx2K7_H/ar/internationally-reported-indicators.json",
+        "content_type": "application/json",
+        "bytes": 553813,
+        "sha256": "564fbf7307264a0d47a0c5723ef7358cd7179702b896f48c70c0462b03318e30",
+        "evidence_path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/profile-international-indicators.json"
+      }
+    }
+  ],
+  "boundaries": [
+    "No INSAIGHTS chat message, account rotation, login, private token, or quota bypass was used.",
+    "API and report profiles close independently verifiable knowledge; they do not observe live INSAIGHTS behavior.",
+    "The datasets UI registry is not the complete API catalog.",
+    "Profile narrative and embedded values may be cached; replay material claims through the public API when possible.",
+    "Members pagination has no total and must stop on a short page.",
+    "A multiquery join is safe only at the explicitly validated grain and relation.",
+    "Calendar entries are release-discovery signals, not freshness proof.",
+    "Public reachability does not establish dataset-level commercial reuse rights."
+  ]
+}

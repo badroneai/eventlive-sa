@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "captured_at_utc": "2026-07-15T00:11:27.943Z",
+  "rows": [
+    {
+      "surface": "show-all catalog",
+      "scale": "277 cubes / 992 cube-level pairs",
+      "status": "VERIFIED",
+      "quota_cost": 0
+    },
+    {
+      "surface": "datasets registry",
+      "scale": "251 UI-listed cubes",
+      "status": "VERIFIED_INCOMPLETE_VS_API_BY_26",
+      "quota_cost": 0
+    },
+    {
+      "surface": "members",
+      "scale": "1,984 bilingual base streams before pagination",
+      "status": "HARVESTABLE_NO_TOTAL",
+      "quota_cost": 0
+    },
+    {
+      "surface": "report profiles",
+      "scale": "219 targets from embedded official lists",
+      "status": "VERIFIED_STRUCTURED_NEXT_DATA",
+      "quota_cost": 0
+    },
+    {
+      "surface": "profile query logic",
+      "scale": "sections, visualizations, descriptions, variables",
+      "status": "VERIFIED_REPLAY_REQUIRED",
+      "quota_cost": 0
+    },
+    {
+      "surface": "explicit-grain multiquery",
+      "scale": "163 Province ID × Year rows",
+      "status": "VERIFIED_SAFE_AT_EXPLICIT_OUTPUT_GRAIN",
+      "quota_cost": 0
+    },
+    {
+      "surface": "economic calendar API",
+      "scale": "12 July 2026 events",
+      "status": "VERIFIED_DISCOVERY_ONLY",
+      "quota_cost": 0
+    },
+    {
+      "surface": "INSAIGHTS live chat",
+      "scale": "behavioral observation",
+      "status": "QUOTA_BOUND_SEPARATE_LEDGER",
+      "quota_cost": 1
+    }
+  ]
+}

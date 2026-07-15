@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "captured_at_utc": "2026-07-14T23:57:27.249Z",
+  "rows": [
+    {
+      "surface": "public catalog",
+      "capability": "cube and schema discovery",
+      "quota_cost": 0,
+      "status": "VERIFIED",
+      "evidence_ids": [
+        "openapi",
+        "gdp-schema"
+      ]
+    },
+    {
+      "surface": "data endpoint",
+      "capability": "reported values, filters, latest periods, pagination",
+      "quota_cost": 0,
+      "status": "VERIFIED",
+      "evidence_ids": [
+        "building-filter-alias"
+      ]
+    },
+    {
+      "surface": "server ranking",
+      "capability": "ranked categories with explicit rank column",
+      "quota_cost": 0,
+      "status": "VERIFIED_WITH_INDEPENDENT_CHECK_REQUIRED",
+      "evidence_ids": [
+        "gdp-ranking"
+      ]
+    },
+    {
+      "surface": "server growth",
+      "capability": "period growth columns",
+      "quota_cost": 0,
+      "status": "VERIFIED_WITH_INDEPENDENT_CHECK_REQUIRED",
+      "evidence_ids": [
+        "gdp-growth"
+      ]
+    },
+    {
+      "surface": "multiquery",
+      "capability": "cross-cube common-column join",
+      "quota_cost": 0,
+      "status": "VERIFIED_UNSAFE_WITHOUT_GRAIN_REVIEW",
+      "evidence_ids": [
+        "multiquery-common-year"
+      ]
+    },
+    {
+      "surface": "text exports",
+      "capability": "JSON, CSV, TSV downloads",
+      "quota_cost": 0,
+      "status": "VERIFIED",
+      "evidence_ids": [
+        "format-jsonrecords",
+        "format-jsonarrays",
+        "format-csv",
+        "format-csvbom",
+        "format-tsv",
+        "format-tsvbom"
+      ]
+    },
+    {
+      "surface": "binary exports",
+      "capability": "XLSX and Parquet",
+      "quota_cost": 0,
+      "status": "BROKEN_ZERO_BYTE",
+      "evidence_ids": [
+        "format-xlsx",
+        "format-parquet"
+      ]
+    },
+    {
+      "surface": "Data Explorer",
+      "capability": "human interactive exploration",
+      "quota_cost": 0,
+      "status": "HTTP_REACHABLE",
+      "evidence_ids": [
+        "data-explorer-page"
+      ]
+    },
+    {
+      "surface": "economic calendar",
+      "capability": "release discovery and timing context",
+      "quota_cost": 0,
+      "status": "HTTP_REACHABLE",
+      "evidence_ids": [
+        "economic-calendar-page"
+      ]
+    },
+    {
+      "surface": "INSAIGHTS chat",
+      "capability": "natural-language behavior and failure-mode testing",
+      "quota_cost": 1,
+      "status": "QUOTA_EXHAUSTED_PRESERVED_FOR_FUTURE_BEHAVIOR_ONLY",
+      "evidence_ids": [
+        "insaights-page"
+      ]
+    }
+  ]
+}

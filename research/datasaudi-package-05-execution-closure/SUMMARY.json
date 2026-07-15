@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0",
+  "package_id": "datasaudi-package-05-execution-closure",
+  "status": "REFERENCE_EXECUTION_UNIVERSE_COMPLETE_2304_OF_2304",
+  "generated_at_utc": "2026-07-14T23:10:29.668Z",
+  "generated_at_source": "research/datasaudi-package-04-universe-exploration/05-universe-dossier/summary.json#generated_at_utc",
+  "denominator_reconstruction": {
+    "historical_target": 2304,
+    "historical_formula_explicitly_persisted": false,
+    "historical_statement_source": "research/datasaudi-insaights/04-question-corpus/METHODOLOGY.md#target",
+    "p05_frozen_formula": "24 domains × 8 families × 2 languages × 6 paraphrase variants",
+    "factors": {
+      "domains": 24,
+      "families": 8,
+      "languages": 2,
+      "paraphrase_variants": 6
+    },
+    "computed_executions": 2304,
+    "governance_status": "ASSUMPTION_FROZEN_OWNER_AUTHORIZED",
+    "rationale": "This is the only exact operational reconstruction consistent with the persisted methodology dimensions and the 24×8 Arabic core."
+  },
+  "coverage": {
+    "primary_semantic_questions": 192,
+    "canonical_localized_answers": 384,
+    "execution_answers": 2304,
+    "execution_denominator": 2304,
+    "reference_execution_percent": 100,
+    "live_insaights_main_universe_observed_cells": 31,
+    "live_insaights_main_universe_percent": 1.35,
+    "historical_live_messages_all_scopes": 79,
+    "historical_live_messages_breakdown": {
+      "main_universe_cells": 31,
+      "legacy_supplemental": 18,
+      "p04_capability_messages": 30
+    },
+    "public_api_cube_dossiers": 277,
+    "public_api_cube_percent": 100
+  },
+  "composition": {
+    "by_language": {
+      "ar": 1152,
+      "en": 1152
+    },
+    "by_family": {
+      "availability": 288,
+      "cross": 288,
+      "derive": 288,
+      "direct": 288,
+      "explain": 288,
+      "limit": 288,
+      "rank": 288,
+      "series": 288
+    },
+    "by_domain": {
+      "agr": 96,
+      "bnk": 96,
+      "bus": 96,
+      "cpi": 96,
+      "dig": 96,
+      "dis": 96,
+      "edu": 96,
+      "enr": 96,
+      "ext": 96,
+      "fis": 96,
+      "gdp": 96,
+      "hlt": 96,
+      "hum": 96,
+      "ind": 96,
+      "lab": 96,
+      "log": 96,
+      "mkt": 96,
+      "pay": 96,
+      "pop": 96,
+      "re": 96,
+      "rnd": 96,
+      "srv": 96,
+      "tou": 96,
+      "trd": 96
+    },
+    "canonical_answer_derivations": {
+      "DETERMINISTIC_EN_RENDER_FROM_VERIFIED_STRUCTURED_PROOF": 172,
+      "DIRECT_VERIFIED_AR_REFERENCE": 192,
+      "DIRECT_VERIFIED_EN_REFERENCE": 20
+    },
+    "localized_terminal_states": {
+      "CLOSED_DOCUMENTED_NOT_COMPUTABLE": 46,
+      "CLOSED_EVIDENCE_BOUND_INFERENCE": 8,
+      "CLOSED_VALID_NEGATIVE": 48,
+      "CLOSED_VERIFIED_CALCULATED": 92,
+      "CLOSED_VERIFIED_REPORTED": 190
+    },
+    "semantic_core_terminal_states": {
+      "CLOSED_DOCUMENTED_NOT_COMPUTABLE": 23,
+      "CLOSED_EVIDENCE_BOUND_INFERENCE": 4,
+      "CLOSED_VALID_NEGATIVE": 24,
+      "CLOSED_VERIFIED_CALCULATED": 46,
+      "CLOSED_VERIFIED_REPORTED": 95
+    }
+  },
+  "paraphrase_invariance": {
+    "cells": 384,
+    "pass": 384,
+    "fail": 0
+  },
+  "legacy_corpus_crosswalk": {
+    "total": 267,
+    "mapped_main": 212,
+    "supplemental_closed": 55
+  },
+  "proof_accounting": {
+    "p03c_atomic_claims_total": 4465,
+    "p03c_atomic_claims_verified": 4405,
+    "p03c_atomic_claims_bounded": 60,
+    "p03c_atomic_claims_unresolved": 0,
+    "semantic_core_claims_total": 4034,
+    "semantic_core_claims_verified": 4003,
+    "semantic_core_claims_bounded": 31,
+    "canonical_claim_references_total": 8069,
+    "unique_evidence_paths": 152,
+    "unique_source_urls": 28
+  },
+  "boundaries": [
+    "2304/2304 is reference execution coverage built from independently evidenced answers, not live INSAIGHTS coverage.",
+    "31/2304 is the mapped live observation coverage of the P05 primary universe; 79 is an all-scope historical message count, not the P05 numerator.",
+    "Six paraphrases share one semantic answer by design; invariance does not prove INSAIGHTS would answer all six correctly.",
+    "The 2304 formula is frozen by Package05 as an explicit operational reconstruction because the historical methodology did not persist its six-variant factor.",
+    "The 55 supplemental red-team, cross-sector, and opportunity questions remain closed separately and are not forced into the primary 2304 denominator.",
+    "Public API reachability and evidence do not by themselves establish commercial reuse rights."
+  ]
+}

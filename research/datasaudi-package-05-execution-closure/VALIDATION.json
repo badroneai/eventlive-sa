@@ -1,0 +1,651 @@
+{
+  "schema_version": "1.0",
+  "package_id": "datasaudi-package-05-execution-closure",
+  "validation_mode": "DETERMINISTIC_REBUILD_PROVENANCE_SURFACE_AND_BOUNDARY_INTEGRITY",
+  "verdict": "PASS",
+  "checks_total": 27,
+  "checks_passed": 27,
+  "failures": [],
+  "metrics": {
+    "semantic_cores": 192,
+    "localized_answers": 384,
+    "execution_answers": 2304,
+    "reference_execution_percent": 100,
+    "live_main_cells": 31,
+    "live_main_percent": 1.35,
+    "historical_live_all_scopes": 79,
+    "api_dossiers": 277,
+    "invariance_pass": 384,
+    "legacy_mapped": 212,
+    "supplemental_closed": 55,
+    "surface_probes": 19,
+    "surface_chat_messages": 0,
+    "evidence_paths": 152,
+    "surface_evidence_files": 19,
+    "official_surface_receipts": 14,
+    "official_report_targets": 219,
+    "explicit_grain_join_rows": 163
+  },
+  "checks": [
+    {
+      "id": "P05-V001.denominator-reconstruction",
+      "pass": true,
+      "detail": {
+        "historical_target": 2304,
+        "historical_formula_explicitly_persisted": false,
+        "historical_statement_source": "research/datasaudi-insaights/04-question-corpus/METHODOLOGY.md#target",
+        "p05_frozen_formula": "24 domains × 8 families × 2 languages × 6 paraphrase variants",
+        "factors": {
+          "domains": 24,
+          "families": 8,
+          "languages": 2,
+          "paraphrase_variants": 6
+        },
+        "computed_executions": 2304,
+        "governance_status": "ASSUMPTION_FROZEN_OWNER_AUTHORIZED",
+        "rationale": "This is the only exact operational reconstruction consistent with the persisted methodology dimensions and the 24×8 Arabic core."
+      }
+    },
+    {
+      "id": "P05-V002.core-localized-execution-counts",
+      "pass": true,
+      "detail": {
+        "primary_semantic_questions": 192,
+        "canonical_localized_answers": 384,
+        "execution_answers": 2304,
+        "execution_denominator": 2304,
+        "reference_execution_percent": 100,
+        "live_insaights_main_universe_observed_cells": 31,
+        "live_insaights_main_universe_percent": 1.35,
+        "historical_live_messages_all_scopes": 79,
+        "historical_live_messages_breakdown": {
+          "main_universe_cells": 31,
+          "legacy_supplemental": 18,
+          "p04_capability_messages": 30
+        },
+        "public_api_cube_dossiers": 277,
+        "public_api_cube_percent": 100
+      }
+    },
+    {
+      "id": "P05-V003.unique-identifiers",
+      "pass": true,
+      "detail": {
+        "canonical_ids": 384,
+        "execution_ids": 2304,
+        "prompt_hashes": 2304
+      }
+    },
+    {
+      "id": "P05-V004.axis-balance",
+      "pass": true,
+      "detail": {
+        "by_language": {
+          "ar": 1152,
+          "en": 1152
+        },
+        "by_family": {
+          "availability": 288,
+          "cross": 288,
+          "derive": 288,
+          "direct": 288,
+          "explain": 288,
+          "limit": 288,
+          "rank": 288,
+          "series": 288
+        },
+        "by_domain": {
+          "agr": 96,
+          "bnk": 96,
+          "bus": 96,
+          "cpi": 96,
+          "dig": 96,
+          "dis": 96,
+          "edu": 96,
+          "enr": 96,
+          "ext": 96,
+          "fis": 96,
+          "gdp": 96,
+          "hlt": 96,
+          "hum": 96,
+          "ind": 96,
+          "lab": 96,
+          "log": 96,
+          "mkt": 96,
+          "pay": 96,
+          "pop": 96,
+          "re": 96,
+          "rnd": 96,
+          "srv": 96,
+          "tou": 96,
+          "trd": 96
+        },
+        "canonical_answer_derivations": {
+          "DETERMINISTIC_EN_RENDER_FROM_VERIFIED_STRUCTURED_PROOF": 172,
+          "DIRECT_VERIFIED_AR_REFERENCE": 192,
+          "DIRECT_VERIFIED_EN_REFERENCE": 20
+        },
+        "localized_terminal_states": {
+          "CLOSED_DOCUMENTED_NOT_COMPUTABLE": 46,
+          "CLOSED_EVIDENCE_BOUND_INFERENCE": 8,
+          "CLOSED_VALID_NEGATIVE": 48,
+          "CLOSED_VERIFIED_CALCULATED": 92,
+          "CLOSED_VERIFIED_REPORTED": 190
+        },
+        "semantic_core_terminal_states": {
+          "CLOSED_DOCUMENTED_NOT_COMPUTABLE": 23,
+          "CLOSED_EVIDENCE_BOUND_INFERENCE": 4,
+          "CLOSED_VALID_NEGATIVE": 24,
+          "CLOSED_VERIFIED_CALCULATED": 46,
+          "CLOSED_VERIFIED_REPORTED": 95
+        }
+      }
+    },
+    {
+      "id": "P05-V005.six-paraphrases-per-localized-answer",
+      "pass": true,
+      "detail": {
+        "groups": 384,
+        "invalid_groups": []
+      }
+    },
+    {
+      "id": "P05-V006.invariance-ledger",
+      "pass": true,
+      "detail": {
+        "cells": 384,
+        "pass": 384,
+        "fail": 0
+      }
+    },
+    {
+      "id": "P05-V007.execution-integrity",
+      "pass": true,
+      "detail": {
+        "errors": [],
+        "total": 0
+      }
+    },
+    {
+      "id": "P05-V008.answer-contract",
+      "pass": true,
+      "detail": {
+        "invalid": []
+      }
+    },
+    {
+      "id": "P05-V009.deterministic-rebuild",
+      "pass": true,
+      "detail": {
+        "summary": [
+          "ed89d3c60884da2ee910d4efb94a73527af2f1e4e7dc331e6909b98073059949",
+          "ed89d3c60884da2ee910d4efb94a73527af2f1e4e7dc331e6909b98073059949"
+        ],
+        "canonical": [
+          "d7b4f93506e65636cb5b81a45f0ce3207800fdad6da68dea674051a8684734c2",
+          "d7b4f93506e65636cb5b81a45f0ce3207800fdad6da68dea674051a8684734c2"
+        ],
+        "executions": [
+          "30de63b7e23b2928a93e0927f4084b9655fdb9f3140523ef14d9a6a4244e025f",
+          "30de63b7e23b2928a93e0927f4084b9655fdb9f3140523ef14d9a6a4244e025f"
+        ]
+      }
+    },
+    {
+      "id": "P05-V010.evidence-content-integrity",
+      "pass": true,
+      "detail": {
+        "unique": 152,
+        "hash_named": 150,
+        "manifest_bound": 2,
+        "missing": [],
+        "mismatches": []
+      }
+    },
+    {
+      "id": "P05-V011.proof-accounting",
+      "pass": true,
+      "detail": {
+        "p03c_atomic_claims_total": 4465,
+        "p03c_atomic_claims_verified": 4405,
+        "p03c_atomic_claims_bounded": 60,
+        "p03c_atomic_claims_unresolved": 0,
+        "semantic_core_claims_total": 4034,
+        "semantic_core_claims_verified": 4003,
+        "semantic_core_claims_bounded": 31,
+        "canonical_claim_references_total": 8069,
+        "unique_evidence_paths": 152,
+        "unique_source_urls": 28
+      }
+    },
+    {
+      "id": "P05-V012.legacy-crosswalk",
+      "pass": true,
+      "detail": {
+        "total": 267,
+        "mapped_main": 212,
+        "supplemental_closed": 55
+      }
+    },
+    {
+      "id": "P05-V013.live-denominator-correction",
+      "pass": true,
+      "detail": {
+        "primary_semantic_questions": 192,
+        "canonical_localized_answers": 384,
+        "execution_answers": 2304,
+        "execution_denominator": 2304,
+        "reference_execution_percent": 100,
+        "live_insaights_main_universe_observed_cells": 31,
+        "live_insaights_main_universe_percent": 1.35,
+        "historical_live_messages_all_scopes": 79,
+        "historical_live_messages_breakdown": {
+          "main_universe_cells": 31,
+          "legacy_supplemental": 18,
+          "p04_capability_messages": 30
+        },
+        "public_api_cube_dossiers": 277,
+        "public_api_cube_percent": 100
+      }
+    },
+    {
+      "id": "P05-V014.language-prompts",
+      "pass": true,
+      "detail": {
+        "english_with_arabic": [],
+        "arabic_without_arabic": []
+      }
+    },
+    {
+      "id": "P05-V015.surface-probe-boundary",
+      "pass": true,
+      "detail": {
+        "mode": "PUBLIC_OFFICIAL_SURFACE_PROBES_NO_CHAT_MESSAGES",
+        "chat_messages_consumed": 0,
+        "authentication_used": false,
+        "observations": 19,
+        "matrix_rows": 10
+      }
+    },
+    {
+      "id": "P05-V016.surface-evidence-content-addressed",
+      "pass": true,
+      "detail": {
+        "mismatches": []
+      }
+    },
+    {
+      "id": "P05-V017.api-analytical-capabilities",
+      "pass": true,
+      "detail": {
+        "openapi": {
+          "status": 200,
+          "version": "3.1.0",
+          "declared_paths": 10,
+          "data_features": [
+            "extension",
+            "cube",
+            "drilldowns",
+            "measures",
+            "alias",
+            "aliases",
+            "locale",
+            "limit",
+            "parents",
+            "properties",
+            "ranking",
+            "sort",
+            "sparse",
+            "time",
+            "top",
+            "growth",
+            "exclude",
+            "include",
+            "filters",
+            "token",
+            "authorization",
+            "x-tesseract-jwt"
+          ],
+          "multiquery_method": "POST"
+        },
+        "server_ranking": {
+          "status": 200,
+          "columns": [
+            "Quarter ID",
+            "Quarter",
+            "Economic Activity Section ID",
+            "Economic Activity Section",
+            "GDP",
+            "GDP Ranking"
+          ],
+          "rows": 5,
+          "latest_period": "2026-Q1",
+          "first_rank": 1,
+          "verified_usable": true
+        },
+        "server_growth": {
+          "status": 200,
+          "columns": [
+            "Quarter ID",
+            "Quarter",
+            "Economic Activity Section ID",
+            "Economic Activity Section",
+            "GDP",
+            "GDP Growth Value",
+            "GDP Growth"
+          ],
+          "rows": 36,
+          "non_null_growth_rows": 24,
+          "verified_usable": true
+        },
+        "filters_include_alias_sort": {
+          "status": 200,
+          "columns": [
+            "Month ID",
+            "Month",
+            "Permits"
+          ],
+          "rows": 1,
+          "verified_usable": true
+        },
+        "multiquery_common_grain": {
+          "status": 200,
+          "columns": [
+            "Year",
+            "GDP",
+            "Number of Building Permits"
+          ],
+          "rows": 3,
+          "verified_usable": true,
+          "safety_boundary": "A common column enables a raw join, but member-key, grain, completeness, and partial-period checks remain mandatory."
+        },
+        "response_formats": {
+          "jsonrecords": {
+            "status": 200,
+            "content_type": "application/json",
+            "bytes": 899,
+            "usable_nonempty": true
+          },
+          "jsonarrays": {
+            "status": 200,
+            "content_type": "application/json",
+            "bytes": 803,
+            "usable_nonempty": true
+          },
+          "csv": {
+            "status": 200,
+            "content_type": "text/csv; charset=utf-8",
+            "bytes": 86,
+            "usable_nonempty": true
+          },
+          "csvbom": {
+            "status": 200,
+            "content_type": "text/csv; charset=utf-8",
+            "bytes": 89,
+            "usable_nonempty": true
+          },
+          "tsv": {
+            "status": 200,
+            "content_type": "text/tab-separated-values; charset=utf-8",
+            "bytes": 86,
+            "usable_nonempty": true
+          },
+          "tsvbom": {
+            "status": 200,
+            "content_type": "text/tab-separated-values; charset=utf-8",
+            "bytes": 89,
+            "usable_nonempty": true
+          },
+          "xlsx": {
+            "status": 200,
+            "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "bytes": 0,
+            "usable_nonempty": false
+          },
+          "parquet": {
+            "status": 200,
+            "content_type": "application/vnd.apache.parquet",
+            "bytes": 0,
+            "usable_nonempty": false
+          }
+        },
+        "web_surfaces": {
+          "data_explorer": 200,
+          "economic_calendar": 200,
+          "insaights": 200
+        }
+      }
+    },
+    {
+      "id": "P05-V018.multiquery-safety",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "columns": [
+          "Year",
+          "GDP",
+          "Number of Building Permits"
+        ],
+        "rows": 3,
+        "verified_usable": true,
+        "safety_boundary": "A common column enables a raw join, but member-key, grain, completeness, and partial-period checks remain mandatory."
+      }
+    },
+    {
+      "id": "P05-V019.export-format-truth",
+      "pass": true,
+      "detail": {
+        "jsonrecords": {
+          "status": 200,
+          "content_type": "application/json",
+          "bytes": 899,
+          "usable_nonempty": true
+        },
+        "jsonarrays": {
+          "status": 200,
+          "content_type": "application/json",
+          "bytes": 803,
+          "usable_nonempty": true
+        },
+        "csv": {
+          "status": 200,
+          "content_type": "text/csv; charset=utf-8",
+          "bytes": 86,
+          "usable_nonempty": true
+        },
+        "csvbom": {
+          "status": 200,
+          "content_type": "text/csv; charset=utf-8",
+          "bytes": 89,
+          "usable_nonempty": true
+        },
+        "tsv": {
+          "status": 200,
+          "content_type": "text/tab-separated-values; charset=utf-8",
+          "bytes": 86,
+          "usable_nonempty": true
+        },
+        "tsvbom": {
+          "status": 200,
+          "content_type": "text/tab-separated-values; charset=utf-8",
+          "bytes": 89,
+          "usable_nonempty": true
+        },
+        "xlsx": {
+          "status": 200,
+          "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "bytes": 0,
+          "usable_nonempty": false
+        },
+        "parquet": {
+          "status": 200,
+          "content_type": "application/vnd.apache.parquet",
+          "bytes": 0,
+          "usable_nonempty": false
+        }
+      }
+    },
+    {
+      "id": "P05-V020.web-surfaces-reachable",
+      "pass": true,
+      "detail": {
+        "data_explorer": 200,
+        "economic_calendar": 200,
+        "insaights": 200
+      }
+    },
+    {
+      "id": "P05-V021.no-persisted-secrets",
+      "pass": true,
+      "detail": {
+        "scanned_files": 51,
+        "hits": []
+      }
+    },
+    {
+      "id": "P05-V022.boundary-language",
+      "pass": true,
+      "detail": {
+        "summary": [
+          "2304/2304 is reference execution coverage built from independently evidenced answers, not live INSAIGHTS coverage.",
+          "31/2304 is the mapped live observation coverage of the P05 primary universe; 79 is an all-scope historical message count, not the P05 numerator.",
+          "Six paraphrases share one semantic answer by design; invariance does not prove INSAIGHTS would answer all six correctly.",
+          "The 2304 formula is frozen by Package05 as an explicit operational reconstruction because the historical methodology did not persist its six-variant factor.",
+          "The 55 supplemental red-team, cross-sector, and opportunity questions remain closed separately and are not forced into the primary 2304 denominator.",
+          "Public API reachability and evidence do not by themselves establish commercial reuse rights."
+        ],
+        "surfaces": [
+          "No alternative surface was used to evade the 30-message chat quota.",
+          "No identity rotation, account switching, token persistence, or private endpoint use occurred.",
+          "Public reachability is not a dataset-level commercial reuse license.",
+          "HTTP 200 with an empty body is not a usable export.",
+          "A server-side join is a candidate result until grain, member keys, definitions, units, and period completeness are verified."
+        ]
+      }
+    },
+    {
+      "id": "P05-V023.sealed-input-lock",
+      "pass": true,
+      "detail": {
+        "lock_mode": "SEALED_INPUT_SHA256",
+        "inputs": 7,
+        "mismatches": []
+      }
+    },
+    {
+      "id": "P05-V024.official-surface-universe",
+      "pass": true,
+      "detail": {
+        "mode": "PUBLIC_OFFICIAL_SURFACE_UNIVERSE_NO_CHAT_NO_AUTH",
+        "receipts": 14,
+        "catalog": {
+          "cubes": 277,
+          "dimensions": 722,
+          "hierarchies": 753,
+          "levels": 992,
+          "unique_cube_level_pairs": 992,
+          "bilingual_member_base_requests": 1984
+        },
+        "datasets_registry": {
+          "groups": 5,
+          "subgroups": 36,
+          "records": 251,
+          "unique_cube_ids": 251,
+          "records_with_source_link": 240,
+          "records_without_source_link": 11,
+          "api_only_cube_count": 26,
+          "api_only_cubes": [
+            "dim_countries",
+            "dim_international_indicators_sources",
+            "dim_sectors",
+            "donor_data",
+            "gastat_employees_nationality_sex_region",
+            "gastat_housing_type_tenure",
+            "gastat_ipi_economic_activity",
+            "gastat_participants_nationality_sex_region",
+            "gastat_total_nationality_sex_region",
+            "gastat_trade",
+            "int_indicators_tech_comm",
+            "internationally_reported_indicators",
+            "knomad_migration",
+            "knomad_remittances",
+            "net_oda",
+            "sama_atm_transactions",
+            "sama_average_salaries_private",
+            "sama_credit_institutions_assets",
+            "sama_credit_institutions_liabilities",
+            "sama_on_the_job_subscribers_private",
+            "sama_payments_volume_value",
+            "sama_pos_atm_bank",
+            "sama_salary_private_sector_region_nationality_gender",
+            "sama_salary_profession_nationality_sex",
+            "sama_subscribers_private_sector",
+            "unctad_fdi"
+          ]
+        },
+        "sitemap_reports": {
+          "urls": 503,
+          "region_slugs": 13,
+          "sector_slugs": 21,
+          "bilateral_country_slugs": 100,
+          "report_targets": 136
+        },
+        "embedded_profile_lists": {
+          "regions": 13,
+          "sectors": 21,
+          "bilateral_countries": 183,
+          "report_targets": 219
+        },
+        "explicit_grain_join": {
+          "status": 200,
+          "verdict": "VERIFIED_SAFE_AT_EXPLICIT_OUTPUT_GRAIN",
+          "cubes": [
+            "sama_water_consumption_region",
+            "gastat_population_province_sex_nationality"
+          ],
+          "grain": [
+            "Province ID",
+            "Year"
+          ],
+          "validate_relation": "1:1",
+          "rows": 163,
+          "unique_keys": 163,
+          "year_min": 2010,
+          "year_max": 2022,
+          "boundary": "This is proof for the captured Province ID × Year output only; it is not a global cross-cube ontology."
+        },
+        "economic_calendar": {
+          "categories": 2,
+          "month_summaries": 26,
+          "july_2026_total": 12,
+          "returned_items": 12,
+          "boundary": "A scheduled release event does not prove that the corresponding dataset has been published or ingested."
+        },
+        "matrix_rows": 8
+      }
+    },
+    {
+      "id": "P05-V025.official-surface-evidence-content-addressed",
+      "pass": true,
+      "detail": {
+        "mismatches": []
+      }
+    },
+    {
+      "id": "P05-V026.paraphrase-prompt-contract",
+      "pass": true,
+      "detail": {
+        "errors": [],
+        "total": 0
+      }
+    },
+    {
+      "id": "P05-V027.generated-english-proof-completeness",
+      "pass": true,
+      "detail": {
+        "errors": [],
+        "total": 0
+      }
+    }
+  ]
+}

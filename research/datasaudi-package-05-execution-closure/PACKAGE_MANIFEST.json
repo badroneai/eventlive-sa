@@ -1,0 +1,370 @@
+{
+  "schema_version": "1.0",
+  "package_id": "datasaudi-package-05-execution-closure",
+  "build_mode": "DETERMINISTIC_CONTENT_ADDRESSED",
+  "generated_at_utc": "2026-07-14T23:57:27.249Z",
+  "generated_at_source": "01-surface-alternatives/summary.json#captured_at_utc",
+  "status": "REFERENCE_EXECUTION_UNIVERSE_COMPLETE_2304_OF_2304",
+  "validation": {
+    "verdict": "PASS",
+    "checks_total": 27,
+    "checks_passed": 27,
+    "fingerprint_sha256": "6af9f4bf7714b2740ccc8d54ef6497770db1558a505fc7f9e36802dd508597c7"
+  },
+  "truth_accounting": {
+    "semantic_cores": 192,
+    "localized_answers": 384,
+    "reference_execution_cells": 2304,
+    "reference_execution_denominator": 2304,
+    "live_main_universe_cells": 31,
+    "live_main_universe_percent": 1.35,
+    "historical_live_messages_all_scopes": 79,
+    "api_cube_dossiers": 277,
+    "initial_surface_probes_without_chat": 19,
+    "expanded_surface_receipts_without_chat": 14,
+    "official_surface_receipts_total": 33,
+    "official_report_targets": 219,
+    "explicit_grain_join_rows": 163
+  },
+  "artifact_count": 49,
+  "size_bytes": 21829751,
+  "tree_sha256": "fe14af4683238c3c34d4ebb63e24351b64ac11b3056f2bb42301e5a992237e50",
+  "sections": {
+    "00-governance": {
+      "artifacts": 4,
+      "size_bytes": 12552
+    },
+    "01-surface-alternatives": {
+      "artifacts": 21,
+      "size_bytes": 279182
+    },
+    "02-execution-universe": {
+      "artifacts": 2,
+      "size_bytes": 13397045
+    },
+    "03-verification": {
+      "artifacts": 1,
+      "size_bytes": 75616
+    },
+    "04-legacy-crosswalk": {
+      "artifacts": 1,
+      "size_bytes": 100251
+    },
+    "05-official-surface-universe": {
+      "artifacts": 16,
+      "size_bytes": 7936653
+    },
+    "CLOSEOUT.md": {
+      "artifacts": 1,
+      "size_bytes": 2361
+    },
+    "README.md": {
+      "artifacts": 1,
+      "size_bytes": 2252
+    },
+    "SUMMARY.json": {
+      "artifacts": 1,
+      "size_bytes": 4464
+    },
+    "VALIDATION.json": {
+      "artifacts": 1,
+      "size_bytes": 19375
+    }
+  },
+  "artifacts": [
+    {
+      "path": "research/datasaudi-package-05-execution-closure/00-governance/COMPLETION-CONTRACT.md",
+      "section": "00-governance",
+      "sha256": "eefe1812d538c5b0d9298bcfedb8d884f83460c2bc76efbc89650ade02d76cf2",
+      "size_bytes": 4446
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/00-governance/COVERAGE-TRUTH.md",
+      "section": "00-governance",
+      "sha256": "7145dfe41f844a18d852a35a7174f457b6f4118b49d2c45c3ab5ee32c2243a33",
+      "size_bytes": 4053
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/00-governance/INPUT_LOCK.json",
+      "section": "00-governance",
+      "sha256": "d3f3813ca8f0ff0f2c75bfc854dd1d54717496e2e535c9c96732bcf09e301cc6",
+      "size_bytes": 2171
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/00-governance/universe-contract.json",
+      "section": "00-governance",
+      "sha256": "d282ed6dd635714172ab4f9181b6e43e650be4b62724cea5573545e5e1a58a5f",
+      "size_bytes": 1882
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/api-health.json",
+      "section": "01-surface-alternatives",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/api-root.json",
+      "section": "01-surface-alternatives",
+      "sha256": "2dd1c7b149ec1a7b9c2765ff610a59d82a68291ea7049d9834a4c15b394da36b",
+      "size_bytes": 2670
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/building-filter-alias.json",
+      "section": "01-surface-alternatives",
+      "sha256": "a69860a53500f0cef8ba25017f54359231b000b2edeac4d8e1a529872bf8d009",
+      "size_bytes": 788
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/data-explorer-page.html",
+      "section": "01-surface-alternatives",
+      "sha256": "e0f266cba01934de736ea9992365f3ada74ff11e9169585d664480302c9b1f59",
+      "size_bytes": 77894
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/economic-calendar-page.html",
+      "section": "01-surface-alternatives",
+      "sha256": "3ad04824bc572c837fbc41844123103acecaf014fb4ec06fbfc09af7d8fde66c",
+      "size_bytes": 68916
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/format-csv.csv",
+      "section": "01-surface-alternatives",
+      "sha256": "98a68a66a0eb3ab29ddeb1a7e90995a7bb333c83c3e1df1c774fa637328371c0",
+      "size_bytes": 86
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/format-csvbom.csvbom",
+      "section": "01-surface-alternatives",
+      "sha256": "20de114f3e6864c07a6dae9cbc0dd89ea6e796453b649fbbecc2728b71a88156",
+      "size_bytes": 89
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/format-jsonarrays.json",
+      "section": "01-surface-alternatives",
+      "sha256": "3b302779a9cfa44609b356fe1eefc4cca34fb70d7d62e17343169320cb69ca43",
+      "size_bytes": 803
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/format-jsonrecords.json",
+      "section": "01-surface-alternatives",
+      "sha256": "8cde7cf7d1581d1b0ad45e4094336edc21ba1f94b8c495d505be1f269554b4be",
+      "size_bytes": 899
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/format-parquet.parquet",
+      "section": "01-surface-alternatives",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/format-tsv.tsv",
+      "section": "01-surface-alternatives",
+      "sha256": "d2cbea445f18d49094400f4fb3a57d9d9077e14c6565b8d830ce8f753f3f46d8",
+      "size_bytes": 86
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/format-tsvbom.tsvbom",
+      "section": "01-surface-alternatives",
+      "sha256": "0fda44e962f76c5954f2923095a84bbe94d15aca21f3e5b0b2899442d35a3af1",
+      "size_bytes": 89
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/format-xlsx.xlsx",
+      "section": "01-surface-alternatives",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/gdp-growth.json",
+      "section": "01-surface-alternatives",
+      "sha256": "b1f86a3eda4a34e6594683f07ad3ab648c62082d6216579f8dd63773b7571cfd",
+      "size_bytes": 8090
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/gdp-ranking.json",
+      "section": "01-surface-alternatives",
+      "sha256": "46777e654249ba43e5623d7141a8395257c61663595882ec12153c2f216de256",
+      "size_bytes": 1618
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/gdp-schema.json",
+      "section": "01-surface-alternatives",
+      "sha256": "8c81d547259b04bc0013e64e7899736c83d7bbe8a2b1de57e38a1928fce0f4dd",
+      "size_bytes": 1817
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/insaights-page.html",
+      "section": "01-surface-alternatives",
+      "sha256": "dcbb5958f468e67d6d904147769975c5bf1bfca128b18050fa07d7472371d005",
+      "size_bytes": 47403
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/multiquery-common-year.json",
+      "section": "01-surface-alternatives",
+      "sha256": "345780e68dd1af0c3f276d6d86649e5b5425c8e84e1b078574be54b794d95a74",
+      "size_bytes": 1618
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/evidence/openapi.json",
+      "section": "01-surface-alternatives",
+      "sha256": "a8dd8f2acf89b41fc00f99b877b12ea7586ad2ebfe3d0bb967645fdccf5a0a72",
+      "size_bytes": 43157
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/summary.json",
+      "section": "01-surface-alternatives",
+      "sha256": "ef1b976fb188fa46694bb7151db3f91692d00c411ef26bf1df8e5f2422135c9b",
+      "size_bytes": 20606
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/01-surface-alternatives/surface-matrix.json",
+      "section": "01-surface-alternatives",
+      "sha256": "b58af6aa3d90cf502780ebf55aad26c69e253a45af3a46d0d8ea4020da2dd7c8",
+      "size_bytes": 2553
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/02-execution-universe/canonical-answers.jsonl",
+      "section": "02-execution-universe",
+      "sha256": "e64c85e4e14a54e98819202ac75bfed3a343f1577c950fcd57b34933f0c1cc32",
+      "size_bytes": 1872305
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/02-execution-universe/execution-answer-ledger.jsonl",
+      "section": "02-execution-universe",
+      "sha256": "bf8ad2cf2ddc88f579290dcc6243f9cdc656b09c819c1ea55f3114307c30c57c",
+      "size_bytes": 11524740
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/03-verification/paraphrase-invariance.jsonl",
+      "section": "03-verification",
+      "sha256": "32cf045d6705fe6f2b67f320efb03f0d45ef71c8598ff57e4efb596b9092849b",
+      "size_bytes": 75616
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/04-legacy-crosswalk/original-corpus-crosswalk.jsonl",
+      "section": "04-legacy-crosswalk",
+      "sha256": "0702a7a0973e471718823098f2346fab871c9e8b14f74896bc9e7b47009582f0",
+      "size_bytes": 100251
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/calendar-categories.json",
+      "section": "05-official-surface-universe",
+      "sha256": "fc061b8a7d7c085f0de377b9260c475f50be5f9bd3092a74606eb1bf515a9237",
+      "size_bytes": 198
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/calendar-search-july-2026.json",
+      "section": "05-official-surface-universe",
+      "sha256": "6e2bd055884e518ca4e0643b06bcc3cb456a7f23e97d82e934078f2bc23f3d61",
+      "size_bytes": 9947
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/calendar-summary.json",
+      "section": "05-official-surface-universe",
+      "sha256": "8f4d9275046c95921504cb8b5d3b55d3f2710fb3a4c54c2c521dd2f5985fc2ce",
+      "size_bytes": 1342
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/catalog-show-all-en.json",
+      "section": "05-official-surface-universe",
+      "sha256": "31d58166b007dfdf4a78e450f23bb826f188ddf4bb0d45bfabf9f90aa02cc841",
+      "size_bytes": 551378
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/datasets-next-data.json",
+      "section": "05-official-surface-universe",
+      "sha256": "72c3ed23cedaac6445bf9dba44541690117c63f155077cd9b98d17f08f8e1d61",
+      "size_bytes": 146084
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/datasets-page.html",
+      "section": "05-official-surface-universe",
+      "sha256": "bd1a8211c250fa826abd48b665274b3404c0febaf8b2ab98131703c790014b3b",
+      "size_bytes": 846122
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/member-search-china.json",
+      "section": "05-official-surface-universe",
+      "sha256": "35a1eeaf1c465be1028acf0945ea03ad958cb85970b502c2e8c5857638b1c3d6",
+      "size_bytes": 275
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/multiquery-water-population-province-year.json",
+      "section": "05-official-surface-universe",
+      "sha256": "18a899ea30b8483df2068d668058b108ce2334b7bc114d7ac8db94a51f3bf224",
+      "size_bytes": 30204
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/profile-china.json",
+      "section": "05-official-surface-universe",
+      "sha256": "1fcb103046e3b321c0fe47e9a718e98ebfb809724013b7e2aecd4d6ca77f7a9c",
+      "size_bytes": 703070
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/profile-financial-sector.json",
+      "section": "05-official-surface-universe",
+      "sha256": "37d1c44b96e7fcfe2660ba3ba3d0e5ad7a84d41dd1b35c589bd5f0fe1ac8a4f1",
+      "size_bytes": 776245
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/profile-international-indicators.json",
+      "section": "05-official-surface-universe",
+      "sha256": "564fbf7307264a0d47a0c5723ef7358cd7179702b896f48c70c0462b03318e30",
+      "size_bytes": 553813
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/profile-riyadh.json",
+      "section": "05-official-surface-universe",
+      "sha256": "4991d701e293e9d3ad29fdace5927a1d90787d829985f7cb595f37a4b2a4c07d",
+      "size_bytes": 1796460
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/profile-saudi.json",
+      "section": "05-official-surface-universe",
+      "sha256": "53f8c7301ce544a572df7f8751e2f2113e4e6dd168b1c3d5ffbb76002d647f77",
+      "size_bytes": 2326114
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/evidence/sitemap.xml",
+      "section": "05-official-surface-universe",
+      "sha256": "89395ff069c69e57dd4db48f36144f44857622fda6848fd7080806e6f684fc60",
+      "size_bytes": 178591
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/summary.json",
+      "section": "05-official-surface-universe",
+      "sha256": "58359d957782c69b71059962724624b42d805d961d63f6c6996727de47efe7a5",
+      "size_bytes": 15360
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/05-official-surface-universe/surface-universe-matrix.json",
+      "section": "05-official-surface-universe",
+      "sha256": "e99b794a9050766ca0708670da92ea14bbbc3c6d7ad66cacdfd7451ccb18d786",
+      "size_bytes": 1450
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/CLOSEOUT.md",
+      "section": "CLOSEOUT.md",
+      "sha256": "f89ba658b35e76b89184288209d26d29d6dd41a8a2b675395dd2ecb960d97416",
+      "size_bytes": 2361
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/README.md",
+      "section": "README.md",
+      "sha256": "d00fb9473a491a04a40f79d53d6b85c391b810adddf71a1769948a00ff20477f",
+      "size_bytes": 2252
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/SUMMARY.json",
+      "section": "SUMMARY.json",
+      "sha256": "a29659a637ccd85b546a3253024936c1529e03842acb89c7a2d90f1b34795851",
+      "size_bytes": 4464
+    },
+    {
+      "path": "research/datasaudi-package-05-execution-closure/VALIDATION.json",
+      "section": "VALIDATION.json",
+      "sha256": "6bad80f46500b6a3c2ecb481a065d446da3a3358f8b5c3858cb36c82d6295a6b",
+      "size_bytes": 19375
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "package_id": "datasaudi-package-05-execution-closure",
+  "lock_mode": "SEALED_INPUT_SHA256",
+  "inputs": [
+    {
+      "path": "research/datasaudi-insaights/04-question-corpus/METHODOLOGY.md",
+      "sha256": "76f8959afc1f94dde922c3622f5dec1cf0ce3a9a3f0a2d000fcf9cffe26f2272",
+      "size_bytes": 1548,
+      "purpose": "Historical statement of the 2,304-execution target and its named dimensions"
+    },
+    {
+      "path": "research/datasaudi-insaights/04-question-corpus/questions.jsonl",
+      "sha256": "d56e215c901580389b1b3a14a5904aa9ecad3b949bfe29746bc6ee38994a33f2",
+      "size_bytes": 245823,
+      "purpose": "Frozen 267-question corpus and the 192 Arabic semantic cores"
+    },
+    {
+      "path": "research/datasaudi-package-03c-full-closure/03-answer-ledger/full-answer-ledger.jsonl",
+      "sha256": "2ce5f2f74e44239c78d6d19274c810b38e9e41d3777d9d90f18c004c93f9e22e",
+      "size_bytes": 8418010,
+      "purpose": "Sealed evidence-bound answer and atomic-claim records"
+    },
+    {
+      "path": "research/datasaudi-package-03c-full-closure/03-answer-ledger/summary.json",
+      "sha256": "6500dfeebd5a50165d4183ec5370169993d2c6dd3e545197bb779cb394dacad2",
+      "size_bytes": 4236,
+      "purpose": "P03C snapshot time and closure accounting"
+    },
+    {
+      "path": "research/datasaudi-package-04-universe-exploration/04-adjudication/summary.json",
+      "sha256": "d1cfe86fddc68d1c24efbc4eec8040fc00747ca009691f7bb2c231038dbe36e4",
+      "size_bytes": 16314,
+      "purpose": "Live capability-message accounting and adjudication"
+    },
+    {
+      "path": "research/datasaudi-package-04-universe-exploration/05-universe-dossier/summary.json",
+      "sha256": "1adfce848481211ef34e9b5877d110f1dfd24b90a79b84cbb0d96353ab2d147b",
+      "size_bytes": 2084,
+      "purpose": "277-cube official public API census"
+    },
+    {
+      "path": "scripts/datasaudi-insaights/build-question-corpus.mjs",
+      "sha256": "b4ddcdfa7c7bca45a726b492386465d331ec72a832c73cebcb276be05652c42d",
+      "size_bytes": 15135,
+      "purpose": "Authoritative domain, family, language and supplemental-suite construction logic"
+    }
+  ]
+}

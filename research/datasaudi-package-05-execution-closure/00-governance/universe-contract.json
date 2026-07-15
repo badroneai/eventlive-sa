@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "package_id": "datasaudi-package-05-execution-closure",
+  "contract_status": "ASSUMPTION_FROZEN_OWNER_AUTHORIZED",
+  "historical_derivation_status": "NOT_EXPLICITLY_PERSISTED",
+  "formula": "24 domains × 8 families × 2 languages × 6 paraphrase variants",
+  "factors": {
+    "domains": 24,
+    "families": 8,
+    "languages": 2,
+    "paraphrase_variants": 6,
+    "semantic_cores": 192,
+    "localized_answers": 384,
+    "execution_cells": 2304
+  },
+  "families": [
+    "availability",
+    "direct",
+    "series",
+    "rank",
+    "cross",
+    "derive",
+    "explain",
+    "limit"
+  ],
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "paraphrase_variants": [
+    {
+      "id": 1,
+      "intent": "canonical direct request"
+    },
+    {
+      "id": 2,
+      "intent": "equivalent request after an independent check"
+    },
+    {
+      "id": 3,
+      "intent": "semantically equivalent restatement with unchanged requirements"
+    },
+    {
+      "id": 4,
+      "intent": "first-principles replay with unchanged scope"
+    },
+    {
+      "id": 5,
+      "intent": "independent-reviewer restatement with no added requirement"
+    },
+    {
+      "id": 6,
+      "intent": "equivalent re-execution with unchanged scope and evidence contract"
+    }
+  ],
+  "counting_rules": [
+    "Every execution cell contains a complete answer text and an immutable prompt and answer hash.",
+    "The six paraphrase variants of one localized question deliberately share one evidence-backed canonical answer.",
+    "A paraphrase projection is not a claim that INSAIGHTS was asked or answered that prompt.",
+    "Live INSAIGHTS observations, independent reference answers, API cube dossiers and supplemental tests use separate denominators.",
+    "The 55 red-team, cross-sector and opportunity records remain a closed supplemental suite outside the 2,304-cell main universe."
+  ]
+}
