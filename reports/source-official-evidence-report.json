@@ -1,13 +1,13 @@
 {
   "schema": "eventlive.source-official-evidence-report.v1",
-  "generated_at": "2026-07-15T14:24:29.718Z",
+  "generated_at": "2026-07-15T19:38:47.826Z",
   "source_candidates": "data/source_candidates.json",
   "source_evidence": "data/source_official_evidence.json",
   "totals": {
     "entries": 3,
     "verified_entries": 2,
-    "candidates_verified": 3,
-    "deduplicated": 1
+    "candidates_verified": 2,
+    "deduplicated": 0
   },
   "results": [
     {
@@ -19,7 +19,7 @@
     {
       "id": "middle-east-enterprise-ai-summit-2026",
       "status": "verified",
-      "matched": 2,
+      "matched": 1,
       "note": "Official evidence matched."
     },
     {
