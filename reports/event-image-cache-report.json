@@ -1,25 +1,18 @@
 {
-  "generated_at": "2026-07-15T08:43:41.809Z",
+  "generated_at": "2026-07-15T14:29:17.492Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
     "cached_total": 628,
-    "fetched": 1,
-    "reused": 499,
+    "fetched": 0,
+    "reused": 500,
     "failed": 0,
     "skipped_recent_failures": 0,
     "remembered_failures": 3
   },
-  "fetched": [
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/dates-season-madinah-1?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/madinah-dates-season-2026-494e4a7c73.webp",
-      "bytes": 125258,
-      "events": 1
-    }
-  ],
+  "fetched": [],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -184,6 +177,11 @@
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/Typeform-Banner-aspect-ratio-0-0-1100x500.png",
       "file": "dist/assets/event-images/hayy-cinema-kef-hayyak-3rd-edition-screenings-and-awards-ceremony-3919f3029b.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/dates-season-madinah-1?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/madinah-dates-season-2026-494e4a7c73.webp",
       "events": 1
     },
     {
@@ -2520,8 +2518,6 @@
   "rejected_removed": [],
   "skipped_recent_failures": [],
   "failed": [],
-  "requires_rebuild": true,
-  "rebuild_reasons": [
-    "fetched:1"
-  ]
+  "requires_rebuild": false,
+  "rebuild_reasons": []
 }

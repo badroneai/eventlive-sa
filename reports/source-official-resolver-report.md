@@ -1,6 +1,6 @@
 # EventLive Official Resolver Report
 
-- generated_at: 2026-07-15T08:40:08.577Z
+- generated_at: 2026-07-15T14:26:19.620Z
 - source_ops_report: reports/source-ops-report.json
 - leads_seen: 10
 - resolver_tasks: 8
@@ -12,7 +12,7 @@
 |---:|---|---|---|---|---|---|
 | 132 | Dubai Property Expo in Al Khobar | Eventbrite Saudi Arabia | Khobar | strong-lead/70 | dhahran-expo-calendar, informa-connect-saudi-events, madinah-chamber-events, ricec-events, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 107 | Family Office Investment Summit | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | informa-connect-saudi-events, ricec-events, asharqia-chamber-events, dhahran-expo-calendar, jcci-events-center | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 107 | Riyadh 2026 Venture Capital World Summit | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, informa-connect-saudi-events, saudi-water-authority-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 107 | Jeddah Fintech Week 2026 | Eventbrite Saudi Arabia | Jeddah | strong-lead/70 | informa-connect-saudi-events, abha-chamber-events, baha-chamber-events, future-skills-catalog, hail-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 97 | 25TH WPC Energy Congress | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, informa-connect-saudi-events, saudi-water-authority-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 97 | Family Office Investment Meeting | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | informa-connect-saudi-events, saudi-contractors-authority-events, asharqia-chamber-events, invest-saudi-events, jcci-events-center | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 97 | Sucession Planning Program | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | code-mcit-programs, cst-events-news, diriyah-season, enjoy-saudi-events, fii10-official-program | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
@@ -43,16 +43,16 @@
 - ["Family Office Investment Summit" "Riyadh" organizer](https://www.google.com/search?q=%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22%20organizer)
 - ["Family Office Investment Summit" "Riyadh" tickets](https://www.google.com/search?q=%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22%20tickets)
 
-### Riyadh 2026 Venture Capital World Summit
+### Jeddah Fintech Week 2026
 
-- [site:rfecc.sa "Riyadh 2026 Venture Capital World Summit" "Riyadh"](https://www.google.com/search?q=site%3Arfecc.sa%20%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22)
-- [site:ricec.com "Riyadh 2026 Venture Capital World Summit" "Riyadh"](https://www.google.com/search?q=site%3Aricec.com%20%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22)
-- [site:dhahranexpo.com.sa "Riyadh 2026 Venture Capital World Summit" "Riyadh"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22)
-- [site:informaconnect.com "Riyadh 2026 Venture Capital World Summit" "Riyadh"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22)
-- [site:swa.gov.sa "Riyadh 2026 Venture Capital World Summit" "Riyadh"](https://www.google.com/search?q=site%3Aswa.gov.sa%20%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22)
-- ["Riyadh 2026 Venture Capital World Summit" "Riyadh" official](https://www.google.com/search?q=%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22%20official)
-- ["Riyadh 2026 Venture Capital World Summit" "Riyadh" organizer](https://www.google.com/search?q=%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22%20organizer)
-- ["Riyadh 2026 Venture Capital World Summit" "Riyadh" tickets](https://www.google.com/search?q=%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22%20tickets)
+- [site:informaconnect.com "Jeddah Fintech Week 2026" "Jeddah"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22)
+- [site:abhacci.org.sa "Jeddah Fintech Week 2026" "Jeddah"](https://www.google.com/search?q=site%3Aabhacci.org.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22)
+- [site:bcci.org.sa "Jeddah Fintech Week 2026" "Jeddah"](https://www.google.com/search?q=site%3Abcci.org.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22)
+- [site:futureskills.mcit.gov.sa "Jeddah Fintech Week 2026" "Jeddah"](https://www.google.com/search?q=site%3Afutureskills.mcit.gov.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22)
+- [site:hc.org.sa "Jeddah Fintech Week 2026" "Jeddah"](https://www.google.com/search?q=site%3Ahc.org.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22)
+- ["Jeddah Fintech Week 2026" "Jeddah" official](https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20official)
+- ["Jeddah Fintech Week 2026" "Jeddah" organizer](https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20organizer)
+- ["Jeddah Fintech Week 2026" "Jeddah" tickets](https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20tickets)
 
 ### 25TH WPC Energy Congress
 

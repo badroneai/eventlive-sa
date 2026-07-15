@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-07-15T08:44:53.228Z
+Generated at: 2026-07-15T14:29:18.076Z
 
 ## Operating Rule
 
@@ -9,13 +9,13 @@ Raw collection is not publication. Every source run preserves evidence, separate
 ## Totals
 
 - Sources: 86
-- Attempted this run: 19
-- Deferred by adaptive cadence: 27
-- Productive: 19
-- Zero-yield: 0
-- Collector errors: 0
+- Attempted this run: 28
+- Deferred by adaptive cadence: 18
+- Productive: 20
+- Zero-yield: 1
+- Collector errors: 5
 - Persistent collector errors: 6
-- Probe blocked: 0
+- Probe blocked: 1
 - Auto-publish eligible source lanes: 12
 
 ## Stalled / Blocked Focus
@@ -125,7 +125,7 @@ Call log:
 | 64 | jouf-chamber-events | extractor-backlog | not-attempted | 0 | no | Latest deep probe recommends build-html-detail-extractor; build only if future date-complete rows are visible. |
 | 65 | northern-borders-chamber-events | extractor-backlog | zero-yield | 0 | no | Zero-yield for 27 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 66 | tabuk-chamber-events | extractor-backlog | zero-yield | 0 | no | Zero-yield for 27 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
-| 67 | jazan-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 4 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 67 | jazan-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 5 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 68 | hail-chamber-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 69 | najran-chamber-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 70 | platinumlist-riyadh | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |

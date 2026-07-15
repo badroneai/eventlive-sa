@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T08:40:08.577Z",
+  "generated_at": "2026-07-15T14:26:19.620Z",
   "source_ops_report": "reports/source-ops-report.json",
   "source_registry": "data/source_registry.json",
   "totals": {
@@ -195,10 +195,10 @@
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
     },
     {
-      "lead_id": "candidate-eventbrite-saudi-riyadh-2026-venture-capital-world-summit-20261020-a3f5a1b8",
-      "title": "Riyadh 2026 Venture Capital World Summit",
-      "city": "Riyadh",
-      "starts_at": "2026-10-20T13:00:00+03:00",
+      "lead_id": "candidate-eventbrite-saudi-jeddah-fintech-week-2026-20260905-8e9a03b6",
+      "title": "Jeddah Fintech Week 2026",
+      "city": "Jeddah",
+      "starts_at": "2026-09-05T14:00:00+03:00",
       "source_label": "Eventbrite Saudi Arabia",
       "discovery_quality": "strong-lead",
       "discovery_score": 70,
@@ -206,83 +206,83 @@
       "resolver_priority": 107,
       "target_sources": [
         {
-          "id": "rfecc-whats-on",
-          "name": "RFECC What's On",
-          "url": "https://rfecc.sa/whats-on/",
-          "domain": "rfecc.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 76
-        },
-        {
-          "id": "ricec-events",
-          "name": "Riyadh International Convention and Exhibition Center",
-          "url": "https://www.ricec.com/",
-          "domain": "ricec.com",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 76
-        },
-        {
-          "id": "dhahran-expo-calendar",
-          "name": "Dhahran Expo Calendar",
-          "url": "https://dhahranexpo.com.sa",
-          "domain": "dhahranexpo.com.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 68
-        },
-        {
           "id": "informa-connect-saudi-events",
           "name": "Informa Connect Saudi Event Portfolio",
           "url": "https://informaconnect.com/",
           "domain": "informaconnect.com",
           "trust_level": "official",
           "source_type": "conference-organizer",
-          "score": 66
+          "score": 48
         },
         {
-          "id": "saudi-water-authority-events",
-          "name": "Saudi Water Authority Events",
-          "url": "https://www.swa.gov.sa/en/events",
-          "domain": "swa.gov.sa",
+          "id": "abha-chamber-events",
+          "name": "Abha Chamber Events",
+          "url": "https://abhacci.org.sa/Events",
+          "domain": "abhacci.org.sa",
+          "trust_level": "official",
+          "source_type": "venue-calendar",
+          "score": 40
+        },
+        {
+          "id": "baha-chamber-events",
+          "name": "Baha Chamber Events",
+          "url": "https://bcci.org.sa/",
+          "domain": "bcci.org.sa",
+          "trust_level": "official",
+          "source_type": "venue-calendar",
+          "score": 40
+        },
+        {
+          "id": "future-skills-catalog",
+          "name": "Future Skills MCIT Catalogue",
+          "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
+          "domain": "futureskills.mcit.gov.sa",
           "trust_level": "official",
           "source_type": "government-calendar",
-          "score": 66
+          "score": 40
+        },
+        {
+          "id": "hail-chamber-events",
+          "name": "Hail Chamber Events",
+          "url": "https://www.hc.org.sa/",
+          "domain": "hc.org.sa",
+          "trust_level": "official",
+          "source_type": "venue-calendar",
+          "score": 40
         }
       ],
       "searches": [
         {
-          "query": "site:rfecc.sa \"Riyadh 2026 Venture Capital World Summit\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Arfecc.sa%20%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22"
+          "query": "site:informaconnect.com \"Jeddah Fintech Week 2026\" \"Jeddah\"",
+          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22"
         },
         {
-          "query": "site:ricec.com \"Riyadh 2026 Venture Capital World Summit\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aricec.com%20%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22"
+          "query": "site:abhacci.org.sa \"Jeddah Fintech Week 2026\" \"Jeddah\"",
+          "url": "https://www.google.com/search?q=site%3Aabhacci.org.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22"
         },
         {
-          "query": "site:dhahranexpo.com.sa \"Riyadh 2026 Venture Capital World Summit\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22"
+          "query": "site:bcci.org.sa \"Jeddah Fintech Week 2026\" \"Jeddah\"",
+          "url": "https://www.google.com/search?q=site%3Abcci.org.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22"
         },
         {
-          "query": "site:informaconnect.com \"Riyadh 2026 Venture Capital World Summit\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22"
+          "query": "site:futureskills.mcit.gov.sa \"Jeddah Fintech Week 2026\" \"Jeddah\"",
+          "url": "https://www.google.com/search?q=site%3Afutureskills.mcit.gov.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22"
         },
         {
-          "query": "site:swa.gov.sa \"Riyadh 2026 Venture Capital World Summit\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aswa.gov.sa%20%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22"
+          "query": "site:hc.org.sa \"Jeddah Fintech Week 2026\" \"Jeddah\"",
+          "url": "https://www.google.com/search?q=site%3Ahc.org.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22"
         },
         {
-          "query": "\"Riyadh 2026 Venture Capital World Summit\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22%20official"
+          "query": "\"Jeddah Fintech Week 2026\" \"Jeddah\" official",
+          "url": "https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20official"
         },
         {
-          "query": "\"Riyadh 2026 Venture Capital World Summit\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22%20organizer"
+          "query": "\"Jeddah Fintech Week 2026\" \"Jeddah\" organizer",
+          "url": "https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20organizer"
         },
         {
-          "query": "\"Riyadh 2026 Venture Capital World Summit\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Riyadh%202026%20Venture%20Capital%20World%20Summit%22%20%22Riyadh%22%20tickets"
+          "query": "\"Jeddah Fintech Week 2026\" \"Jeddah\" tickets",
+          "url": "https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."

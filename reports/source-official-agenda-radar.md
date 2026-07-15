@@ -1,6 +1,6 @@
 # EventLive Official Agenda Radar
 
-Generated at: 2026-07-14T10:49:36.181Z
+Generated at: 2026-07-15T14:09:14.230Z
 
 Time scope: current-and-upcoming-only
 
@@ -23,7 +23,7 @@ This radar detects when first-party event pages expose a complete timed programm
 | Cityscape Global 2026 | protected-or-partnership | 403 | 0 | 0 | public-browser-or-partnership-only |
 | XP Music Futures 2026 | announced-no-timed-agenda | 200 | 1 | 0 | watch-official-event-page |
 | The Global Water Sustainability Conference 2026 | announced-no-timed-agenda | 200 | 1 | 0 | watch-official-event-page |
-| HRSE KSA 2026 | published-browser-extractor-active | 200 | 61 | 59 | public-browser-production-extractor |
+| HRSE KSA 2026 | published-browser-extractor-active | 200 | 60 | 58 | public-browser-production-extractor |
 | Smart Data & AI Summit 2026 | published-extractor-active | 200 | 31 | 31 | public-static-production-extractor |
 | Big 5 Construct Saudi 2026 | announced-no-timed-agenda | 200 | 0 | 0 | watch-until-timed-program |
 | HVAC R Saudi Arabia 2026 | announced-no-timed-agenda | 200 | 0 | 0 | watch-shared-event-agenda |

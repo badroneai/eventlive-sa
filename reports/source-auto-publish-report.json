@@ -1,16 +1,16 @@
 {
-  "published_at": "2026-07-15T08:38:31.469Z",
+  "published_at": "2026-07-15T14:24:34.452Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 479,
+  "candidates_seen": 481,
   "totals": {
-    "candidates_seen": 479,
-    "published": 2,
-    "linked_existing": 460,
+    "candidates_seen": 481,
+    "published": 3,
+    "linked_existing": 461,
     "blocked": 17,
-    "reconciled": 462
+    "reconciled": 464
   },
   "duplicate_catalog_rows_removed": 1,
   "duplicate_catalog_rows": [
@@ -24,9 +24,14 @@
   "canonical_event_id_remaps": [],
   "published": [
     {
-      "candidate_id": "candidate-visit-saudi-seasons-madinah-dates-season-2026-20260620-65ed4355",
-      "event_id": "event-madinah-dates-season-2026",
-      "title": "Madinah Dates Season 2026"
+      "candidate_id": "candidate-misk-hub-programs-misk-x-tamara-associate-fraud-investigator-20260901-fd2718eb",
+      "event_id": "event-misk-x-tamara-associate-fraud-investigator",
+      "title": "Misk x Tamara: Associate Fraud investigator"
+    },
+    {
+      "candidate_id": "candidate-misk-hub-programs-misk-x-moyasar-traineeship-program-20260901-3bb265ea",
+      "event_id": "event-misk-x-moyasar-traineeship-program",
+      "title": "Misk x Moyasar Traineeship Program"
     },
     {
       "candidate_id": "candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702",
@@ -369,6 +374,12 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-kef-hayyak-3rd-edition-screenings-and-awards-ceremony-20260618-d5fae143",
       "event_id": "event-hayy-cinema",
       "title": "Hayy Cinema | “Kef Hayyak?” 3rd Edition Screenings and Awards Ceremony",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-madinah-dates-season-2026-20260620-65ed4355",
+      "event_id": "event-madinah-dates-season-2026",
+      "title": "Madinah Dates Season 2026",
       "reason": "already linked to catalog event"
     },
     {
@@ -720,18 +731,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-summer-youth-program-20260715-a20f7a11",
-      "event_id": "event-summer-youth-program",
-      "title": "Summer Youth Program",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-kinusaiga-art-20260715-98b157b0",
-      "event_id": "event-kinusaiga-art",
-      "title": "Kinusaiga Art",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-leap-then-look-20260715-99d88224",
       "event_id": "event-leap-then-look",
       "title": "Leap Then Look!",
@@ -741,36 +740,6 @@
       "candidate_id": "candidate-ithra-events-ithra-childrens-festival-2026-20260715-d6d5cc99",
       "event_id": "event-ithra-childrens-festival-2026",
       "title": "Ithra Children's Festival 2026",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20260715-a3bc99ba",
-      "event_id": "event-1-2-3-a-little-space-for-me",
-      "title": "1, 2, 3, A Little Space for Me",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-sense-the-home-20260715-3a3ca5ae",
-      "event_id": "event-sense-the-home",
-      "title": "Sense the Home",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-my-little-fort-20260715-09d01da3",
-      "event_id": "event-my-little-fort",
-      "title": "My Little Fort",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-play-with-shadows-20260715-9984f169",
-      "event_id": "event-play-with-shadows",
-      "title": "Play with Shadows",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-1-2-3-lets-rhyme-20260715-4d37515a",
-      "event_id": "event-1-2-3-lets-rhyme",
-      "title": "1, 2, 3, Let's Rhyme!",
       "reason": "already linked to catalog event"
     },
     {
@@ -825,12 +794,6 @@
       "candidate_id": "candidate-ithra-events-nim-adventures-20260715-c504dfe0",
       "event_id": "event-nim-adventures",
       "title": "niMú Adventures",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-on-this-carpet-20260715-2972e041",
-      "event_id": "event-on-this-carpet",
-      "title": "On This Carpet",
       "reason": "already linked to catalog event"
     },
     {
@@ -900,6 +863,30 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20260715-a3bc99ba",
+      "event_id": "event-1-2-3-a-little-space-for-me",
+      "title": "1, 2, 3, A Little Space for Me",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-sense-the-home-20260715-3a3ca5ae",
+      "event_id": "event-sense-the-home",
+      "title": "Sense the Home",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-1-2-3-lets-rhyme-20260715-4d37515a",
+      "event_id": "event-1-2-3-lets-rhyme",
+      "title": "1, 2, 3, Let's Rhyme!",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-on-this-carpet-20260715-2972e041",
+      "event_id": "event-on-this-carpet",
+      "title": "On This Carpet",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-finding-nemo-20260715-ee95c1c5",
       "event_id": "event-finding-nemo",
       "title": "Finding Nemo",
@@ -918,9 +905,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-play-with-shadows-20260715-9984f169",
+      "event_id": "event-play-with-shadows",
+      "title": "Play with Shadows",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-the-house-of-ideas-20260715-26aaa6b2",
       "event_id": "event-the-house-of-ideas",
       "title": "The House of Ideas",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-my-little-fort-20260715-09d01da3",
+      "event_id": "event-my-little-fort",
+      "title": "My Little Fort",
       "reason": "already linked to catalog event"
     },
     {
@@ -951,6 +950,18 @@
       "candidate_id": "candidate-experience-alula-events-summer-fruits-season-in-alula-20260716-de70ec3a",
       "event_id": "event-summer-fruits-season-in-alula",
       "title": "Summer Fruits Season in AlUla",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-summer-youth-program-20260716-a20f7a11",
+      "event_id": "event-summer-youth-program",
+      "title": "Summer Youth Program",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-kinusaiga-art-20260716-98b157b0",
+      "event_id": "event-kinusaiga-art",
+      "title": "Kinusaiga Art",
       "reason": "already linked to catalog event"
     },
     {
@@ -2838,6 +2849,11 @@
       "reason": "possible duplicate already exists: event-saudi-industrial-series-2"
     },
     {
+      "candidate_id": "candidate-eventbrite-saudi-smart-sustainable-building-intelligent-ecosystems-for-tomorrows-cities-20260901-e45c1490",
+      "title": "Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities",
+      "reason": "publication gate source-evidence is not auto-publishable"
+    },
+    {
       "candidate_id": "candidate-eventbrite-saudi-family-office-investment-meeting-riyadh-registration-fee-usd-580-20260902-82923462",
       "title": "Family Office Investment Meeting",
       "reason": "publication gate source-evidence is not auto-publishable"
@@ -2865,11 +2881,6 @@
     {
       "candidate_id": "candidate-eventbrite-saudi-25th-wpc-energy-congress-20261011-5909609b",
       "title": "25TH WPC Energy Congress",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-eventbrite-saudi-riyadh-2026-venture-capital-world-summit-20261020-a3f5a1b8",
-      "title": "Riyadh 2026 Venture Capital World Summit",
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
