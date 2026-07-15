@@ -1,14 +1,14 @@
 # EventLive Browser Source Probe
 
-Generated at: 2026-07-14T19:43:03.599Z
+Generated at: 2026-07-15T03:32:51.326Z
 
 ## Summary
 
-- Sources probed this run: 0
-- Fresh results available: 1
+- Sources probed this run: 2
+- Fresh results available: 2
 - Browser network API: 1
 - Hydration payload: 0
-- Rendered HTML candidates: 0
+- Rendered HTML candidates: 1
 - Blocked/protected: 0
 - Policy skipped: 0
 
@@ -16,16 +16,20 @@ Generated at: 2026-07-14T19:43:03.599Z
 
 | Priority | Source | Status | HTTP | Classification | Endpoints | Event links | Date snippets | Next action |
 |---:|---|---|---:|---|---:|---:|---:|---|
-| 59 | asharqia-chamber-events | ok | 200 | browser-network-api | 3 | 20 | 1 | ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار. |
+| 25 | sdaia-academy-programs | ok | 200 | browser-network-api | 5 | 19 | 0 | ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار. |
+| 51 | riyadh-city-events | ok | 200 | rendered-html-candidates | 0 | 3 | 0 | اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي. |
 
 ## Endpoint Candidates
 
-- asharqia-chamber-events: GET https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/_api/Microsoft.SharePoint.Portal.SuiteNavData.GetSuiteNavData?v=2&Locale=ar-SA (200, json-object:d)
-- asharqia-chamber-events: GET https://api-cdn.mypurecloud.ie/webdeployments/v1/deployments/bf04c4ac-89eb-4d7b-9061-14343d788e27/config.json (200, json-object:id,version,headlessMode,languages,defaultLanguage,apiEndpoint,messenger,position)
-- asharqia-chamber-events: GET https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/_api/SP.Web.GetContextWebThemeData?lcid=1025 (200, json-like-invalid)
+- sdaia-academy-programs: GET https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/sectors/academy/bootcamps/pages/default.aspx&_=1784086378570 (200, json-object:Message,Status,ErrorCode,ErrorMessage,Notifications)
+- sdaia-academy-programs: POST https://prod17-live-chat.sprinklr.com/api/livechat/handshake/appHandshake (200, json-like-invalid)
+- sdaia-academy-programs: POST https://prod17-live-chat.sprinklr.com/api/livechat/handshake/application/6858005e3884612a4b9d8765_app_17005144 (200, json-like-invalid)
+- sdaia-academy-programs: POST https://prod17-live-chat.sprinklr.com/api/livechat/prompt/browse/event (200, empty)
+- sdaia-academy-programs: POST https://prod17-live-chat.sprinklr.com/api/livechat/event/fetch-notifications?cursor=A_6a56ff730000000000000000 (200, json-object:results,hasMore,totalCount,beforeCursor,afterCursor,details)
 
 ## Actionable Samples
 
 | Source | Date snippets | Event-like links | Endpoint previews |
 |---|---|---|---|
-| asharqia-chamber-events | 4 06:30 PM - 06:30 PM التفاصيل ملتقى الممارسات الوقفية2024م 24/11/2024 - 24/11/2024 09:00 AM - 09:00 AM التفاصيل "منتدى المر | تسجيل الدخول -> https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/_layouts/15/Authenticate.aspx?Source=%2Fsites%2FArabic%2FE…<br>المناسبات -> https://www.chamber.org.sa/sites/Arabic/Events/Pages/Home.aspx<br>ارشيف المناسبات -> https://www.chamber.org.sa/sites/Arabic/Events/EventArchive/Pages/Home.aspx<br>المناسبات -> https://www.chamber.org.sa/sites/Arabic/Events/Pages/Home.aspx | GET https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/_api/Microsoft.SharePoint.Portal.SuiteNavData.Ge… (200, json-object:d): {"d":{"GetSuiteNavData":"{\"CssUrl\":\"\\/_layouts\\/15\\/1025\\/styles\\/SuiteNav.css?rev=xIL7dTuBXVfEY6%2FjttQ%2BNA%3…<br>GET https://api-cdn.mypurecloud.ie/webdeployments/v1/deployments/bf04c4ac-89eb-4d7b-9061-14343d788e27/config.json (200, json-object:id,version,headlessMode,languages,defaultLanguage,apiEndpoint,messenger,position): {"id":"35941ef8-d3b4-4cac-b011-f0e5bf3d7569","version":"4","headlessMode":{"enabled":false},"languages":["ar"],"default… |
+| sdaia-academy-programs | - | AI Scholarship Program -> https://sdaia.gov.sa/en/Sectors/academy/Pages/ScholarshipProgram.aspx<br>Cooperative Training Program -> https://sdaia.gov.sa/en/Sectors/BuildingCapacity/Pages/CooperativeTraining.aspx<br>Free Software and Services -> https://sdaia.gov.sa/en/Services/Pages/FreeServicesAndPrograms.aspx<br>Calendar and Events -> https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx | GET https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/sectors/academy/bootcamps/pages/default.a… (200, json-object:Message,Status,ErrorCode,ErrorMessage,Notifications): {"Message":{"Title":"/en/sectors/academy/bootcamps/pages/default.aspx","PageId":"/en/sectors/academy/bootcamps/pages/de…<br>POST https://prod17-live-chat.sprinklr.com/api/livechat/handshake/appHandshake (200, json-like-invalid): {"chatSessionToken":"eyJhbGciOiJSUzI1NiJ9.eyJ2aXNpdFNlc3Npb25JZCI6IjZhNTZmZjczMWM2MDMwODg1ZjRiNWM3NyIsInN1YiI6IkFjY2Vzc… |
+| riyadh-city-events | - | https://riyadh.sa/en/events/all -> https://riyadh.sa/en/events/all<br>All Events -> https://riyadh.sa/en/events/all<br>events.title -> https://riyadh.sa/en/events | - |

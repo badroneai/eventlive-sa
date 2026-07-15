@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-07-14T19:52:04.763Z
+Generated at: 2026-07-15T03:43:52.188Z
 
 ## Operating Rule
 
@@ -9,11 +9,11 @@ Raw collection is not publication. Every source run preserves evidence, separate
 ## Totals
 
 - Sources: 86
-- Attempted this run: 21
-- Deferred by adaptive cadence: 25
+- Attempted this run: 22
+- Deferred by adaptive cadence: 24
 - Productive: 19
 - Zero-yield: 1
-- Collector errors: 0
+- Collector errors: 1
 - Persistent collector errors: 6
 - Probe blocked: 1
 - Auto-publish eligible source lanes: 12
@@ -80,7 +80,7 @@ Call log:
 | 22 | dhahran-expo-calendar | active-collector | productive | 16 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 23 | ithra-events | active-collector | productive | 129 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 24 | saudi-digital-academy | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed |
-| 25 | sdaia-academy-programs | active-collector | zero-yield | 0 | no | date/content signals exist but extractor returned no complete future rows |
+| 25 | sdaia-academy-programs | active-collector | zero-yield | 0 | no | Zero-yield for 3 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 26 | saudi-events-app | partnership | partnership | 0 | no | Partnership/API lane; do not scrape protected or app-only data. |
 | 27 | enjoy-saudi-events | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: http-403 |
 | 28 | misk-hub-events | active-collector | zero-yield | 0 | no | Zero-yield for 71 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
