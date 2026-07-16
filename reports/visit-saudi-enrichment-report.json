@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-16T14:39:37.975Z",
+  "generated_at": "2026-07-16T19:37:18.504Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
-    "targets": 24,
-    "candidates": 27,
-    "enriched": 24,
-    "fetched": 24,
-    "images": 22,
+    "targets": 26,
+    "candidates": 29,
+    "enriched": 26,
+    "fetched": 26,
+    "images": 24,
     "fetch_failures": 0
   },
   "enriched": [
@@ -92,6 +92,14 @@
       "features": 7
     },
     {
+      "id": "event-viola-nights-presents-space-motion",
+      "title": "Viola Nights Presents Space Motion",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/viola?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
       "id": "event-saleh-el-nawawy-stand-up-comedy-show-2",
       "title": "Saleh El Nawawy - Stand Up Comedy Show",
       "source_method": "official-page-html",
@@ -104,6 +112,14 @@
       "title": "Reggae With Rsoa",
       "source_method": "official-page-html",
       "image_url": "https://scth.scene7.com/is/image/scth/reggae-with-rosa?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-stand-up-comedy-night",
+      "title": "Stand-Up Comedy Night",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/stand-up-comedy-night-2-jeddah?wid=1920&hei=1080&fit=constrain&fmt=webp",
       "fetched": true,
       "features": 7
     },

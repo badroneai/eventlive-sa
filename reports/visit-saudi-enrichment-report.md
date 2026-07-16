@@ -1,11 +1,11 @@
 # Visit Saudi Calendar Enrichment Report
 
-- generated_at: 2026-07-16T14:39:37.975Z
-- targets: 24
-- candidates: 27
-- enriched: 24
-- fetched: 24
-- images: 22
+- generated_at: 2026-07-16T19:37:18.504Z
+- targets: 26
+- candidates: 29
+- enriched: 26
+- fetched: 26
+- images: 24
 - fetch_failures: 0
 
 ## Enriched
@@ -20,8 +20,10 @@
 - Made in Egypt: Stand Up Comedy Show by Ahmed Khairy - official-page-html - image=yes - features=7
 - Made in Egypt: Stand Up Comedy Show by Ahmed Khairy - official-page-html - image=yes - features=7
 - Mohamed Hamaki Concert - official-page-html - image=yes - features=7
+- Viola Nights Presents Space Motion - official-page-html - image=yes - features=7
 - Saleh El Nawawy - Stand Up Comedy Show - official-page-html - image=yes - features=7
 - Reggae With Rsoa - official-page-html - image=yes - features=7
+- Stand-Up Comedy Night - official-page-html - image=yes - features=7
 - Very Sary Night from Exit Thmanyah - official-page-html - image=yes - features=7
 - Saleh El Nawawy: Stand Up Comedy Show - official-page-html - image=yes - features=7
 - Rahma Riad at Vocally - official-page-html - image=yes - features=7
