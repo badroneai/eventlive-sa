@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T19:44:38.252Z",
+  "generated_at": "2026-07-16T03:46:09.399Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-07-15T19:36:29.331Z",
+    "collected_at": "2026-07-16T03:36:29.017Z",
     "freshness": "fresh",
-    "discovered": 230,
-    "written": 477
+    "discovered": 264,
+    "written": 476
   },
   "sources": {
     "total": 86,
-    "attempted": 19,
-    "due": 19,
-    "deferred": 27,
+    "attempted": 22,
+    "due": 22,
+    "deferred": 24,
     "scheduled": 46,
     "runnable": 46,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 22,
+    "registry_collection_coverage_pct": 26,
     "scheduled_runnable_coverage_pct": 100,
-    "healthy": 18,
-    "zero_yield": 0,
+    "healthy": 19,
+    "zero_yield": 2,
     "errors": 1,
-    "cadence_deferred": 27,
+    "cadence_deferred": 24,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -53,7 +53,7 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 5,
+        "extracted": 30,
         "candidates": 26,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
@@ -268,13 +268,13 @@
         "id": "visit-saudi-seasons",
         "name": "Visit Saudi Seasons",
         "priority": 19,
-        "status": "collection-error",
+        "status": "healthy",
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 0,
+        "extracted": 9,
         "candidates": 9,
-        "next_action": "HTTP 404"
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "code-mcit-programs",
@@ -300,7 +300,7 @@
         "zero_yield_streak": 0,
         "last_attempted_at": null,
         "extracted": 5,
-        "candidates": 11,
+        "candidates": 10,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -343,16 +343,13 @@
         "id": "sdaia-academy-programs",
         "name": "SDAIA Academy Programs",
         "priority": 25,
-        "status": "deferred",
-        "historical_status": "zero-yield",
-        "cadence_reason": "zero-yield-cooldown",
-        "next_due_at": "2026-07-16T03:33:23.986Z",
+        "status": "zero-yield",
         "error_streak": 0,
-        "zero_yield_streak": 3,
-        "last_attempted_at": "2026-07-15T03:33:23.986Z",
+        "zero_yield_streak": 0,
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 0,
-        "next_action": "مؤجل حتى 2026-07-16T03:33:23.986Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "saudi-events-app",
@@ -679,16 +676,13 @@
         "id": "riyadh-city-events",
         "name": "Riyadh City Events",
         "priority": 51,
-        "status": "deferred",
-        "historical_status": "probe-blocked",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-07-15T20:17:03.043Z",
+        "status": "zero-yield",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-07-15T14:17:03.043Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 94,
-        "next_action": "مؤجل حتى 2026-07-15T20:17:03.043Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "monshaat-academy-programs",
@@ -781,16 +775,13 @@
         "id": "asharqia-chamber-events",
         "name": "Asharqia Chamber Events",
         "priority": 59,
-        "status": "deferred",
-        "historical_status": "collector-error",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-07-16T03:33:23.986Z",
-        "error_streak": 2,
+        "status": "collection-error",
+        "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-07-15T03:33:23.986Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 2,
-        "next_action": "مؤجل حتى 2026-07-16T03:33:23.986Z وفق الجدولة التكيفية."
+        "next_action": "fetch failed; page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentloaded\"\n"
       },
       {
         "id": "qassim-chamber-events",
@@ -1149,27 +1140,27 @@
     ]
   },
   "queue": {
-    "total": 477,
+    "total": 476,
     "ready_for_review": 0,
     "approved_for_catalog": 0,
-    "published_from_candidates": 462,
+    "published_from_candidates": 461,
     "actionable": 0,
     "stale_unpublished": 0,
     "duplicate_risk": 0,
     "needs_extraction": 0,
     "needs_evidence": 14,
     "by_review_status": {
-      "approved-for-catalog": 462,
+      "approved-for-catalog": 461,
       "evidence-captured": 4,
       "new": 11
     },
     "by_publication_gate": {
-      "catalog-review": 462,
+      "catalog-review": 461,
       "duplicate-review": 1,
       "source-evidence": 14
     },
     "by_confidence": {
-      "official": 449,
+      "official": 448,
       "public-listing": 6,
       "unverified": 11,
       "verified-secondary": 11
@@ -1185,7 +1176,7 @@
       "Visit Saudi Seasons": 9,
       "Visit Saudi Calendar": 26,
       "Visit Saudi Summer Calendar PDF": 49,
-      "Misk Hub Programs": 11,
+      "Misk Hub Programs": 10,
       "Hayy Jameel What's On": 9,
       "Discover Aseer Events": 1,
       "Monsha'at All Events": 3,
@@ -1196,8 +1187,8 @@
       "Jouf University Summer Programs": 1,
       "Future Skills MCIT Catalogue": 4,
       "Umm Al-Qura University Events Center": 4,
-      "Ithra Events": 130,
       "Experience AlUla Events": 9,
+      "Ithra Events": 130,
       "MDLBEAST Events": 5,
       "Eventbrite Saudi Arabia": 11,
       "Saudi Food and Drug Authority Events": 7,

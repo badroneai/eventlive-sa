@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T19:36:29.141Z",
+  "generated_at": "2026-07-16T03:36:12.611Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -7,20 +7,88 @@
     "selected_ids": [],
     "scope": "priority",
     "limit": 8,
-    "probed_this_run": 0,
-    "fresh_results_available": 0,
+    "probed_this_run": 1,
+    "fresh_results_available": 1,
     "wait_ms": 4500,
     "timeout_ms": 30000,
     "failure_cooldown_hours": 72
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 0,
-    "browser_network_api": 0,
+    "probed": 1,
+    "browser_network_api": 1,
     "browser_hydration_payload": 0,
     "rendered_html_candidates": 0,
     "blocked_or_protected": 0,
     "policy_skipped": 0
   },
-  "sources": []
+  "sources": [
+    {
+      "id": "visit-saudi-seasons",
+      "probed_at": "2026-07-16T03:36:28.808Z",
+      "name": "Visit Saudi Seasons",
+      "priority": 19,
+      "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
+      "final_url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 13849,
+      "classification": "browser-network-api",
+      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
+      "title": "",
+      "text_bytes": 106361,
+      "html_bytes": 106524,
+      "html_snapshot": "data/raw/browser-probes/visit-saudi-seasons-2026-07-16T03-36-12-611Z.html",
+      "screenshot": "data/raw/browser-probes/visit-saudi-seasons-2026-07-16T03-36-12-611Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": true,
+        "date_snippets": [
+          ".635549\",\"lng\":\"46.671958\",\"startDate\":\"2025-11-05T00:00:00.000+00:00\",\"endDate\":\"2026-07-19T00:00:00.000+00:00\",\"seasonId\":\"riyad",
+          "/zones/the-groves-rs25\",\"lastModified\":\"2026-03-10T09:26:55.854+00:00\",\"createdDate\":\"2024-11-05T09:53:22.991+00:00\",\"timings\":[{\"",
+          "\",\"lng\":\"46.6722134822565\",\"startDate\":\"2026-01-01T00:00:00.000+00:00\",\"endDate\":\"2026-12-31T00:00:00.000+00:00\",\"cityId\":\"riyadh\"",
+          "-01T16:00:00.000+00:00\",\"lastModified\":\"2026-05-18T07:07:07.732+00:00\",\"createdDate\":\"2025-10-13T13:49:07.390+00:00\",\"timings\":[],",
+          ",\"lng\":\"46.67178487976179\",\"startDate\":\"2026-01-01T00:00:00.000+00:00\",\"endDate\":\"2026-12-31T00:00:00.000+00:00\",\"cityId\":\"riyadh\"",
+          "-01T16:00:00.000+00:00\",\"lastModified\":\"2026-01-28T07:34:54.446+00:00\",\"createdDate\":\"2025-10-13T14:05:05.738+00:00\",\"timings\":[],",
+          "1.483271\",\"lng\":\"39.18276\",\"startDate\":\"2026-02-25T00:00:00.000+00:00\",\"endDate\":\"2026-08-15T00:00:00.000+00:00\",\"cityId\":\"jeddah\"",
+          "-01T22:00:00.000+00:00\",\"lastModified\":\"2026-07-13T11:53:41.067+00:00\",\"createdDate\":\"2026-07-13T12:01:35.195+00:00\",\"timings\":[],"
+        ],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 1,
+      "network_endpoints": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
+          "content_type": "application/json",
+          "resource_type": "document",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"EVENT\",\"title\":\"The Groves\",\"subtitle\":\"A World That Evolves With Every Chapter\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/groves-riyadh-25.jpg\",\"mobileImageReference\":\"/content/dam/wvs/calendar/groves-riyadh-25.jpg\",\"alt\":\"The Groves\",\"s7fileReference\":\"https://scth.scene7.com/is/image/scth/groves-riyadh-25-1\",\"s7mobileImageReference\":\"https://scth.scene7.com/is/image/scth/groves-riyadh-25-1\",\"desktopImage\":\"https://scth.scene7.com/is/image/scth/groves-riyadh-25-1:crop-600x600?defaultImage\\u003dgroves-riyadh-25-1\",\"mobileImage\":\"https://scth.scene7.com/is/image/scth/groves-riyadh-25-1:crop-600x600?defaultImage\\u003dgroves-riyadh-25-1\",\"deskTopBreakpoint\":\"1280\",\"mobileBreakpoint\":\"420\",\"breakpoints\":[{\"srcset\":\"https://scth.scene7.com/is/image/scth/groves-riyadh-25-1:crop-600x600?defaultImage\\u003dgroves-riyadh-25-1\\u0026wid\\u003d260\\u0026hei\\u003d260 260w\",\"media\":\"(max-width: 420px)\"},{\"srcset\":\"https://scth.scene7.com/is/image/scth/groves-riyadh-25-1:crop-600x600?defaultImage\\u003dgroves-riyadh-25-1\\u0026wid\\u003d390\\u0026hei\\u003d390 390w\"}],\"transparent\":false}],\"lat\":\"24.635549\",\"lng\":\"46.671958\",\"startDate\":\"2025-11-05T00:00:00.000+00:00\",\"endDate\":\"2026-07-19T00:00:00.000+00:00\",\"seasonId\":\"riyadh-season\",\"cityId\":\"riyadh\",\"eventDescription\":\"\\u003cp\\u003eThe Groves offers a multi-sensory experience that transforms with each season. Every chapter brighter, richer, and more captivating than the last. From immersive dining concepts to live entertainment, art, and nature-inspired design, The Groves Chapter IV unveils new moments of wonder designed to excite, delight, and inspire.\\u003c/p\\u003e\\n\",\"ticketCTALink\":\"https://webook.com/en/zones/the-groves-rs25\",\"lastModified\":\"2026-03-10T09"
+        }
+      ],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
+          "content_type": "application/json",
+          "resource_type": "document",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"EVENT\",\"title\":\"The Groves\",\"subtitle\":\"A World That Evolves With Every Chapter\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/groves-riyadh-25.jpg\",\"mobileImageReference\":\"/content/dam/wvs/calendar/groves-riyadh-25.jpg\",\"alt\":\"The Groves\",\"s7fileReference\":\"https://scth.scene7.com/is/image/scth/groves-riyadh-25-1\",\"s7mobileImageReference\":\"https://scth.scene7.com/is/image/scth/groves-riyadh-25-1\",\"desktopImage\":\"https://scth.scene7.com/is/image/scth/groves-riyadh-25-1:crop-600x600?defaultImage\\u003dgroves-riyadh-25-1\",\"mobileImage\":\"https://scth.scene7.com/is/image/scth/groves-riyadh-25-1:crop-600x600?defaultImage\\u003dgroves-riyadh-25-1\",\"deskTopBreakpoint\":\"1280\",\"mobileBreakpoint\":\"420\",\"breakpoints\":[{\"srcset\":\"https://scth.scene7.com/is/image/scth/groves-riyadh-25-1:crop-600x600?defaultImage\\u003dgroves-riyadh-25-1\\u0026wid\\u003d260\\u0026hei\\u003d260 260w\",\"media\":\"(max-width: 420px)\"},{\"srcset\":\"https://scth.scene7.com/is/image/scth/groves-riyadh-25-1:crop-600x600?defaultImage\\u003dgroves-riyadh-25-1\\u0026wid\\u003d390\\u0026hei\\u003d390 390w\"}],\"transparent\":false}],\"lat\":\"24.635549\",\"lng\":\"46.671958\",\"startDate\":\"2025-11-05T00:00:00.000+00:00\",\"endDate\":\"2026-07-19T00:00:00.000+00:00\",\"seasonId\":\"riyadh-season\",\"cityId\":\"riyadh\",\"eventDescription\":\"\\u003cp\\u003eThe Groves offers a multi-sensory experience that transforms with each season. Every chapter brighter, richer, and more captivating than the last. From immersive dining concepts to live entertainment, art, and nature-inspired design, The Groves Chapter IV unveils new moments of wonder designed to excite, delight, and inspire.\\u003c/p\\u003e\\n\",\"ticketCTALink\":\"https://webook.com/en/zones/the-groves-rs25\",\"lastModified\":\"2026-03-10T09"
+        }
+      ]
+    }
+  ]
 }

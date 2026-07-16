@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-15T19:38:52.798Z
+- published_at: 2026-07-16T03:40:57.988Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 477
+- candidates_seen: 476
 - published_new: 1
-- linked_existing: 459
+- linked_existing: 458
 - blocked_remaining: 17
 
 ## Blocked summary
@@ -121,13 +121,6 @@
 | candidate-misk-hub-programs-samsung-innovation-campus-ai-program-20260713-81bc0e25 | linked-existing | event-samsung-innovation-campus-ai-program | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-makers-woodworking-course-level-2-with-ahmad-sofi-20260714-86c9e757 | linked-existing | event-hayy-makers | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-in-short-film-programme-summer-edition-20260715-d0dace9c | linked-existing | event-hayy-cinema-3 | already linked to catalog event |
-| candidate-misk-hub-programs-application-deadline-2030-leaders-20260715-68dd4c4c | linked-existing | event-application-deadline-2030-leaders | already linked to catalog event |
-| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260715-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
-| candidate-ithra-events-echoes-of-the-familiar-20260715-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
-| candidate-ithra-events-ithra-childrens-festival-2026-20260715-d6d5cc99 | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
-| candidate-ithra-events-a-home-i-imagine-20260715-7778a5c1 | linked-existing | event-a-home-i-imagine | already linked to catalog event |
-| candidate-ithra-events-childrens-caf-20260715-f5069d9a | linked-existing | event-childrens-caf | already linked to catalog event |
-| candidate-ithra-events-my-family-bouquet-20260715-9570ab84 | linked-existing | event-my-family-bouquet | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-بطولة-المملكة-للبلوت-20260716-4a38d19e | linked-existing | event-بطولة-المملكة-للبلوت | already linked to catalog event |
 | candidate-experience-alula-events-summer-fruits-season-in-alula-20260716-de70ec3a | linked-existing | event-summer-fruits-season-in-alula | already linked to catalog event |
 | candidate-ithra-events-build-play-together-20260716-c73728ad | linked-existing | event-build-play-together | already linked to catalog event |
@@ -135,10 +128,13 @@
 | candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260716-f563a36e | linked-existing | event-ithra-summer-camp-2026-a-world-of-homes | already linked to catalog event |
 | candidate-ithra-events-lets-decorate-20260716-4cb342a7 | linked-existing | event-lets-decorate | already linked to catalog event |
 | candidate-ithra-events-tafasahu-make-room-20260716-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
+| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260716-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
+| candidate-ithra-events-echoes-of-the-familiar-20260716-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-ithra-events-summer-youth-program-20260716-a20f7a11 | linked-existing | event-summer-youth-program | already linked to catalog event |
 | candidate-ithra-events-kinusaiga-art-20260716-98b157b0 | linked-existing | event-kinusaiga-art | already linked to catalog event |
 | candidate-ithra-events-1-2-3-a-little-space-for-me-20260716-a3bc99ba | linked-existing | event-1-2-3-a-little-space-for-me | already linked to catalog event |
 | candidate-ithra-events-leap-then-look-20260716-99d88224 | linked-existing | event-leap-then-look | already linked to catalog event |
+| candidate-ithra-events-ithra-childrens-festival-2026-20260716-d6d5cc99 | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
 | candidate-ithra-events-kindergarten-under-the-palm-tree-english-20260716-c72ee6a9 | linked-existing | event-kindergarten-under-the-palm-tree-english | already linked to catalog event |
 | candidate-ithra-events-sense-the-home-20260716-3a3ca5ae | linked-existing | event-sense-the-home | already linked to catalog event |
 | candidate-ithra-events-my-little-fort-20260716-09d01da3 | linked-existing | event-my-little-fort | already linked to catalog event |
@@ -163,6 +159,9 @@
 | candidate-ithra-events-where-we-belong-20260716-44a2729b | linked-existing | event-where-we-belong | already linked to catalog event |
 | candidate-ithra-events-who-lived-here-20260716-11c491ce | linked-existing | event-who-lived-here | already linked to catalog event |
 | candidate-ithra-events-zoom-in-20260716-d8d7bd6d | linked-existing | event-zoom-in | already linked to catalog event |
+| candidate-ithra-events-a-home-i-imagine-20260716-7778a5c1 | linked-existing | event-a-home-i-imagine | already linked to catalog event |
+| candidate-ithra-events-childrens-caf-20260716-f5069d9a | linked-existing | event-childrens-caf | already linked to catalog event |
+| candidate-ithra-events-my-family-bouquet-20260716-9570ab84 | linked-existing | event-my-family-bouquet | already linked to catalog event |
 | candidate-ithra-events-in-the-home-of-20260716-0dcdc683 | linked-existing | event-in-the-home-of | already linked to catalog event |
 | candidate-ithra-events-storyteller-of-the-day-20260716-94528a46 | linked-existing | event-storyteller-of-the-day | already linked to catalog event |
 | candidate-ithra-events-finding-nemo-20260716-ee95c1c5 | linked-existing | event-finding-nemo | already linked to catalog event |

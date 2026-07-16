@@ -1,6 +1,6 @@
 # EventLive Source Ingestion Plan
 
-Generated at: 2026-07-15T19:44:37.929Z
+Generated at: 2026-07-16T03:46:09.082Z
 
 ## Executive Model
 
@@ -51,7 +51,7 @@ EventLive should not treat all registered sources equally. The operating model i
 
 | Source | Last status | Extracted | Probe | Next action |
 |---|---|---:|---|---|
-| visit-saudi-calendar | ok | 5 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
+| visit-saudi-calendar | ok | 30 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | moc-cultural-calendar | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | mos-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | experience-alula-events | ok | 9 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
@@ -61,12 +61,12 @@ EventLive should not treat all registered sources equally. The operating model i
 | rfecc-whats-on | ok | 6 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | tuwaiq-academy-bootcamps | ok | 12 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | future-skills-catalog | ok | 4 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| visit-saudi-seasons | error | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| visit-saudi-seasons | ok | 9 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | code-mcit-programs | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | misk-hub-programs | ok | 5 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | dhahran-expo-calendar | ok | 16 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | ithra-events | ok | 129 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| sdaia-academy-programs | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| sdaia-academy-programs | ok | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | misk-hub-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | jcci-events-center | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | saudi-pro-league-fixtures | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
@@ -78,7 +78,7 @@ EventLive should not treat all registered sources equally. The operating model i
 | sdaia-calendar-events | ok | 2 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | makkah-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | scega-exhibitions-conferences | ok | 4 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| asharqia-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| asharqia-chamber-events | error | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | qassim-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | abha-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | jazan-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
@@ -109,7 +109,7 @@ EventLive should not treat all registered sources equally. The operating model i
 | 16 | tuwaiq-academy-bootcamps | active-collector | daily | 126 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | 17 | future-skills-catalog | active-collector | daily | 125 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | 18 | riyadh-season | extractor-backlog | daily-extractor-probe | 79 | blocked-or-protected:bot-protection | Do not scrape now; latest probe is blocked-or-protected:bot-protection. Keep as partnership, browser/API investigation, or evidence lane. |
-| 19 | visit-saudi-seasons | active-collector | daily | 123 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| 19 | visit-saudi-seasons | active-collector | daily | 123 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | 20 | code-mcit-programs | active-collector | daily | 122 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | 21 | misk-hub-programs | active-collector | daily | 121 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | 22 | dhahran-expo-calendar | active-collector | daily | 108 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |

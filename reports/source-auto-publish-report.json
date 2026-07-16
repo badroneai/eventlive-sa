@@ -1,16 +1,16 @@
 {
-  "published_at": "2026-07-15T19:38:52.798Z",
+  "published_at": "2026-07-16T03:40:57.988Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 477,
+  "candidates_seen": 476,
   "totals": {
-    "candidates_seen": 477,
+    "candidates_seen": 476,
     "published": 1,
-    "linked_existing": 459,
+    "linked_existing": 458,
     "blocked": 17,
-    "reconciled": 460
+    "reconciled": 459
   },
   "duplicate_catalog_rows_removed": 1,
   "duplicate_catalog_rows": [
@@ -649,48 +649,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-misk-hub-programs-application-deadline-2030-leaders-20260715-68dd4c4c",
-      "event_id": "event-application-deadline-2030-leaders",
-      "title": "Application deadline: 2030 Leaders",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260715-e0a239ef",
-      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
-      "title": "Bedayat: Beginnings of Saudi Art Movement",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260715-cc43c2bd",
-      "event_id": "event-echoes-of-the-familiar",
-      "title": "Echoes of the Familiar",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-childrens-festival-2026-20260715-d6d5cc99",
-      "event_id": "event-ithra-childrens-festival-2026",
-      "title": "Ithra Children's Festival 2026",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-a-home-i-imagine-20260715-7778a5c1",
-      "event_id": "event-a-home-i-imagine",
-      "title": "A Home I Imagine",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-caf-20260715-f5069d9a",
-      "event_id": "event-childrens-caf",
-      "title": "Children's Café",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-my-family-bouquet-20260715-9570ab84",
-      "event_id": "event-my-family-bouquet",
-      "title": "My Family Bouquet",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-بطولة-المملكة-للبلوت-20260716-4a38d19e",
       "event_id": "event-بطولة-المملكة-للبلوت",
       "title": "بطولة المملكة للبلوت",
@@ -733,6 +691,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260716-e0a239ef",
+      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
+      "title": "Bedayat: Beginnings of Saudi Art Movement",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260716-cc43c2bd",
+      "event_id": "event-echoes-of-the-familiar",
+      "title": "Echoes of the Familiar",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-summer-youth-program-20260716-a20f7a11",
       "event_id": "event-summer-youth-program",
       "title": "Summer Youth Program",
@@ -754,6 +724,12 @@
       "candidate_id": "candidate-ithra-events-leap-then-look-20260716-99d88224",
       "event_id": "event-leap-then-look",
       "title": "Leap Then Look!",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-childrens-festival-2026-20260716-d6d5cc99",
+      "event_id": "event-ithra-childrens-festival-2026",
+      "title": "Ithra Children's Festival 2026",
       "reason": "already linked to catalog event"
     },
     {
@@ -898,6 +874,24 @@
       "candidate_id": "candidate-ithra-events-zoom-in-20260716-d8d7bd6d",
       "event_id": "event-zoom-in",
       "title": "Zoom In",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-a-home-i-imagine-20260716-7778a5c1",
+      "event_id": "event-a-home-i-imagine",
+      "title": "A Home I Imagine",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-caf-20260716-f5069d9a",
+      "event_id": "event-childrens-caf",
+      "title": "Children's Café",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-my-family-bouquet-20260716-9570ab84",
+      "event_id": "event-my-family-bouquet",
+      "title": "My Family Bouquet",
       "reason": "already linked to catalog event"
     },
     {

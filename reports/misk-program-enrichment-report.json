@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T19:39:23.288Z",
+  "generated_at": "2026-07-16T03:41:27.516Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 11,
@@ -27,7 +27,7 @@
       "id": "event-application-deadline-2030-leaders",
       "title": "2030 Leaders",
       "goals": 1,
-      "features": 4,
+      "features": 3,
       "requirements": 0,
       "registration_deadline": "2026-07-15T18:00:00+03:00"
     },
