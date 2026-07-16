@@ -1,11 +1,11 @@
 # Visit Saudi Calendar Enrichment Report
 
-- generated_at: 2026-07-16T08:36:20.420Z
-- targets: 23
-- candidates: 26
-- enriched: 23
-- fetched: 23
-- images: 21
+- generated_at: 2026-07-16T14:39:37.975Z
+- targets: 24
+- candidates: 27
+- enriched: 24
+- fetched: 24
+- images: 22
 - fetch_failures: 0
 
 ## Enriched
@@ -17,6 +17,7 @@
 - Kashtah - official-page-html - image=yes - features=7
 - Okhtabotiya - official-page-html - image=yes - features=7
 - Al-Farabi: Comeback Night - official-page-html - image=yes - features=7
+- Made in Egypt: Stand Up Comedy Show by Ahmed Khairy - official-page-html - image=yes - features=7
 - Made in Egypt: Stand Up Comedy Show by Ahmed Khairy - official-page-html - image=yes - features=7
 - Mohamed Hamaki Concert - official-page-html - image=yes - features=7
 - Saleh El Nawawy - Stand Up Comedy Show - official-page-html - image=yes - features=7

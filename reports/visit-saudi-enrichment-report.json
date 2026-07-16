@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-16T08:36:20.420Z",
+  "generated_at": "2026-07-16T14:39:37.975Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
-    "targets": 23,
-    "candidates": 26,
-    "enriched": 23,
-    "fetched": 23,
-    "images": 21,
+    "targets": 24,
+    "candidates": 27,
+    "enriched": 24,
+    "fetched": 24,
+    "images": 22,
     "fetch_failures": 0
   },
   "enriched": [
@@ -64,6 +64,14 @@
       "title": "Al-Farabi: Comeback Night",
       "source_method": "official-page-html",
       "image_url": "https://scth.scene7.com/is/image/scth/al-farab-comeback-night?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-made-in-egypt-stand-up-comedy-show-by-ahmed-khairy-2",
+      "title": "Made in Egypt: Stand Up Comedy Show by Ahmed Khairy",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/made-in-egypt-comedy-show-ahmed-khairy-jeddah?wid=1920&hei=1080&fit=constrain&fmt=webp",
       "fetched": true,
       "features": 7
     },

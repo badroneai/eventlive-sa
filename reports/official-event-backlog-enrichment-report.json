@@ -1,13 +1,43 @@
 {
-  "generated_at": "2026-07-16T08:37:08.292Z",
+  "generated_at": "2026-07-16T14:40:15.236Z",
   "totals": {
-    "targets": 2,
-    "enriched": 2,
-    "fetched": 1,
-    "images": 2,
+    "targets": 6,
+    "enriched": 6,
+    "fetched": 5,
+    "images": 6,
     "fetch_failures": 1
   },
   "enriched": [
+    {
+      "id": "event-dakah-in-abha",
+      "title": "Dakah in Abha",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/aseer/events/dakah-in-abha",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-europe-village-art-street",
+      "title": "Europe Village- Art Street",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/aseer/events/europe-village",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-mahabah",
+      "title": "Mahabah",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/aseer/events/mahabah",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
     {
       "id": "event-music-festival-mdlbeast-soundstorm",
       "title": "Music Festival: MDLBEAST SoundStorm",
@@ -19,11 +49,21 @@
       "fetch_reason": "fetch failed"
     },
     {
-      "id": "event-رابط-سداد-الزمالة-التطبيقية-في-الأنظمة-الوقفية",
-      "title": "رابط سداد الزمالة التطبيقية في الأنظمة الوقفية",
+      "id": "event-samajam-you-are-the-show",
+      "title": "SAMAJAM ✩ YOU are the Show",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/samajam-you-are-show",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-البرنامج-الرياضي-الصيفي-لأبناء-منسوبي-جامعة-أم-القرى",
+      "title": "البرنامج الرياضي الصيفي لأبناء منسوبي جامعة أم القرى",
       "source_label": "Umm Al-Qura University Events Center",
       "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41014",
+      "source_url": "https://uqu.edu.sa/App/Events/41015",
       "fetched": true,
       "image": true,
       "fetch_reason": ""

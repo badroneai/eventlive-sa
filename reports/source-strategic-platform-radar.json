@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-07-15T14:09:17.065Z",
+  "generated_at": "2026-07-16T14:22:47.758Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -212,24 +212,6 @@
       "api_results": [
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
-          "status": 200,
-          "bytes": 103741,
-          "classification": "reachable",
-          "summary": {
-            "parse_ok": true,
-            "item_count": 30,
-            "sample_titles": [
-              "ذا جروفز",
-              "معرض اللغة العربية للطفل",
-              "معرض اللغة العربية 28",
-              "كنوز غارقة",
-              "منطقة مشجعي كوكاكولا في جاكس"
-            ]
-          },
-          "sample": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"فعالية\",\"title\":\"ذا جروفز\",\"subtitle\":\"عالم يتطور مع كل فصل جديد\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/groves-riyadh-25.jpg\",\"mobileImageReference\":\"/content/dam/wvs…"
-        },
-        {
-          "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 502,
           "bytes": 232,
           "classification": "http-error",
@@ -239,6 +221,24 @@
             "sample_titles": []
           },
           "sample": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\"> <html><head> <title>502 Bad Gateway</title> </head><body> <h1>Bad Gateway</h1> <p>The proxy server received an invalid response from an upstream server.<br /> </p> </body></html>"
+        },
+        {
+          "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
+          "status": 200,
+          "bytes": 118992,
+          "classification": "reachable",
+          "summary": {
+            "parse_ok": true,
+            "item_count": 34,
+            "sample_titles": [
+              "The Groves",
+              "Arabic Language Exhibition for kids",
+              "Arabic Language Exhibition 28",
+              "Sunken Treasures",
+              "Coca-Cola Fan Zone at JAX District"
+            ]
+          },
+          "sample": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"EVENT\",\"title\":\"The Groves\",\"subtitle\":\"A World That Evolves With Every Chapter\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/groves-riyadh-25.jpg\",\"mobileImageReference\":\"/…"
         }
       ],
       "text_sample": "tag for each language version of the page --> tag --> --> تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية --> --> -->"
@@ -287,7 +287,7 @@
         "https://wbk-assets.webook.com/0.6.8/assets/react-helmet-BERorVID.js",
         "https://wbk-assets.webook.com/0.6.8/assets/@wbk/cruises-BDdjd884.js",
         "https://wbk-assets.webook.com/0.6.8/assets/@wbk/auction-CcY6NVDr.js",
-        "https://webook.com/cdn-cgi/content?id=tgRqdTUm2SOWJRqyXCuaj33P6JFux8wXYT55NKujzIw-1784124602.5555687-1.2.1.1-HnADIqAMxhZSpPAPzu2hCsoG3h60YHikYzxRt7VyVsw",
+        "https://webook.com/cdn-cgi/content?id=KVSd7kMrM_br.sNfnOhUt4Qcb_yb0BCX_Rpox3bO48k-1784211815.7182539-1.2.1.1-L5umgVaqJRdPhLWwJuaKwYBmzScp_XIfwOFbydGe.bg",
         "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496"
       ],
       "page_hint_words": [
@@ -462,9 +462,9 @@
       ],
       "asset_results": [
         {
-          "url": "https://www.evento.sa/main.f667c54ffb5feba2.js",
+          "url": "https://www.evento.sa/main.5ed70f1585c784c1.js",
           "status": 200,
-          "bytes": 1263716,
+          "bytes": 1264153,
           "classification": "reachable",
           "hint_urls": [
             "https://evento.sa",

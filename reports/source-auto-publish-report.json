@@ -1,16 +1,16 @@
 {
-  "published_at": "2026-07-16T08:35:36.973Z",
+  "published_at": "2026-07-16T14:38:53.825Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 477,
+  "candidates_seen": 483,
   "totals": {
-    "candidates_seen": 477,
-    "published": 2,
+    "candidates_seen": 483,
+    "published": 8,
     "linked_existing": 458,
     "blocked": 17,
-    "reconciled": 460
+    "reconciled": 466
   },
   "duplicate_catalog_rows_removed": 1,
   "duplicate_catalog_rows": [
@@ -24,9 +24,39 @@
   "canonical_event_id_remaps": [],
   "published": [
     {
-      "candidate_id": "candidate-umm-al-qura-events-رابط-سداد-الزمالة-التطبيقية-في-الأنظمة-الوقفية-20260901-7703e69c",
-      "event_id": "event-رابط-سداد-الزمالة-التطبيقية-في-الأنظمة-الوقفية",
-      "title": "رابط سداد الزمالة التطبيقية في الأنظمة الوقفية"
+      "candidate_id": "candidate-visit-saudi-seasons-europe-village-art-street-20260625-175f652b",
+      "event_id": "event-europe-village-art-street",
+      "title": "Europe Village- Art Street"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-dakah-in-abha-20260701-966a161a",
+      "event_id": "event-dakah-in-abha",
+      "title": "Dakah in Abha"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-mahabah-20260702-dd5fd13b",
+      "event_id": "event-mahabah",
+      "title": "Mahabah"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-البرنامج-الرياضي-الصيفي-لأبناء-منسوبي-جامعة-أم-القرى-20260716-ab972d5f",
+      "event_id": "event-البرنامج-الرياضي-الصيفي-لأبناء-منسوبي-جامعة-أم-القرى",
+      "title": "البرنامج الرياضي الصيفي لأبناء منسوبي جامعة أم القرى"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-made-in-egypt-stand-up-comedy-show-by-ahmed-khairy-20260716-3112eabd",
+      "event_id": "event-made-in-egypt-stand-up-comedy-show-by-ahmed-khairy-2",
+      "title": "Made in Egypt: Stand Up Comedy Show by Ahmed Khairy"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-samajam-you-are-the-show-20260722-cdcdd0a0",
+      "event_id": "event-samajam-you-are-the-show",
+      "title": "SAMAJAM ✩ YOU are the Show"
+    },
+    {
+      "candidate_id": "candidate-sfda-events-الأجهزة-الطبية-الرقمية-التوعية-بالمتطلبات-التنظيمية-وأفضل-الممارسات-20260810-2a6ec3b3",
+      "event_id": "event-الأجهزة-الطبية-الرقمية-التوعية-بالمتطلبات-التنظيمية-وأفضل-الممارسات",
+      "title": "الأجهزة الطبية الرقمية: التوعية بالمتطلبات التنظيمية وأفضل الممارسات"
     },
     {
       "candidate_id": "candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702",
@@ -426,12 +456,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-riyadh-city-events-art-futures-camp-2026-diriyah-art-futures-20260628-b1821d4c",
-      "event_id": "event-art-futures-camp-2026-diriyah-art-futures",
-      "title": "Art Futures Camp 2026 – Diriyah Art Futures",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-بيوني-الشرف-20260701-4a38d19e",
       "event_id": "event-بيوني-الشرف",
       "title": "بيوني الشرف",
@@ -708,18 +732,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-summer-youth-program-20260716-a20f7a11",
-      "event_id": "event-summer-youth-program",
-      "title": "Summer Youth Program",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-kinusaiga-art-20260716-98b157b0",
-      "event_id": "event-kinusaiga-art",
-      "title": "Kinusaiga Art",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-leap-then-look-20260716-99d88224",
       "event_id": "event-leap-then-look",
       "title": "Leap Then Look!",
@@ -732,30 +744,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20260716-a3bc99ba",
-      "event_id": "event-1-2-3-a-little-space-for-me",
-      "title": "1, 2, 3, A Little Space for Me",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-sense-the-home-20260716-3a3ca5ae",
-      "event_id": "event-sense-the-home",
-      "title": "Sense the Home",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-my-little-fort-20260716-09d01da3",
-      "event_id": "event-my-little-fort",
-      "title": "My Little Fort",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-play-with-shadows-20260716-9984f169",
-      "event_id": "event-play-with-shadows",
-      "title": "Play with Shadows",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-riyadh-city-events-wrth-summer-art-craft-program-20260716-77021a48",
       "event_id": "event-wrth-summer-art-craft-program",
       "title": "Wrth Summer Art & Craft Program",
@@ -765,18 +753,6 @@
       "candidate_id": "candidate-ithra-events-ajeeb-in-wonder-house-20260716-caa7ff83",
       "event_id": "event-ajeeb-in-wonder-house",
       "title": "Ajeeb in Wonder House",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-around-the-table-20260716-87d7ec65",
-      "event_id": "event-around-the-table",
-      "title": "Around the Table",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-1-2-3-lets-rhyme-20260716-4d37515a",
-      "event_id": "event-1-2-3-lets-rhyme",
-      "title": "1, 2, 3, Let's Rhyme!",
       "reason": "already linked to catalog event"
     },
     {
@@ -831,12 +807,6 @@
       "candidate_id": "candidate-ithra-events-nim-adventures-20260716-c504dfe0",
       "event_id": "event-nim-adventures",
       "title": "niMú Adventures",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-on-this-carpet-20260716-2972e041",
-      "event_id": "event-on-this-carpet",
-      "title": "On This Carpet",
       "reason": "already linked to catalog event"
     },
     {
@@ -900,9 +870,21 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-storyteller-of-the-day-20260716-94528a46",
-      "event_id": "event-storyteller-of-the-day",
-      "title": "Storyteller of the Day",
+      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20260716-a3bc99ba",
+      "event_id": "event-1-2-3-a-little-space-for-me",
+      "title": "1, 2, 3, A Little Space for Me",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-sense-the-home-20260716-3a3ca5ae",
+      "event_id": "event-sense-the-home",
+      "title": "Sense the Home",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-on-this-carpet-20260716-2972e041",
+      "event_id": "event-on-this-carpet",
+      "title": "On This Carpet",
       "reason": "already linked to catalog event"
     },
     {
@@ -912,15 +894,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-house-of-wonder-20260716-9a8dfa3b",
-      "event_id": "event-house-of-wonder",
-      "title": "House of Wonder",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-little-dot-20260716-6f97a4be",
       "event_id": "event-little-dot",
       "title": "Little Dot",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-play-with-shadows-20260716-9984f169",
+      "event_id": "event-play-with-shadows",
+      "title": "Play with Shadows",
       "reason": "already linked to catalog event"
     },
     {
@@ -930,9 +912,39 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-my-little-fort-20260716-09d01da3",
+      "event_id": "event-my-little-fort",
+      "title": "My Little Fort",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-around-the-table-20260716-87d7ec65",
+      "event_id": "event-around-the-table",
+      "title": "Around the Table",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-1-2-3-lets-rhyme-20260716-4d37515a",
+      "event_id": "event-1-2-3-lets-rhyme",
+      "title": "1, 2, 3, Let's Rhyme!",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-storyteller-of-the-day-20260716-94528a46",
+      "event_id": "event-storyteller-of-the-day",
+      "title": "Storyteller of the Day",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-museum-story-time-20260716-1104734c",
       "event_id": "event-museum-story-time",
       "title": "Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-house-of-wonder-20260716-9a8dfa3b",
+      "event_id": "event-house-of-wonder",
+      "title": "House of Wonder",
       "reason": "already linked to catalog event"
     },
     {
@@ -951,6 +963,18 @@
       "candidate_id": "candidate-mdlbeast-events-unstable-20260717-5647df2e",
       "event_id": "event-unstable",
       "title": "Unstable",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-summer-youth-program-20260717-a20f7a11",
+      "event_id": "event-summer-youth-program",
+      "title": "Summer Youth Program",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-kinusaiga-art-20260717-98b157b0",
+      "event_id": "event-kinusaiga-art",
+      "title": "Kinusaiga Art",
       "reason": "already linked to catalog event"
     },
     {
@@ -1803,6 +1827,12 @@
       "candidate_id": "candidate-misk-hub-programs-misk-x-moyasar-traineeship-program-20260901-3bb265ea",
       "event_id": "event-misk-x-moyasar-traineeship-program",
       "title": "Misk x Moyasar Traineeship Program",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-رابط-سداد-الزمالة-التطبيقية-في-الأنظمة-الوقفية-20260901-7703e69c",
+      "event_id": "event-رابط-سداد-الزمالة-التطبيقية-في-الأنظمة-الوقفية",
+      "title": "رابط سداد الزمالة التطبيقية في الأنظمة الوقفية",
       "reason": "already linked to catalog event"
     },
     {

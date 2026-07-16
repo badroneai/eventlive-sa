@@ -1,7 +1,7 @@
 # EventLive Official Single-Session Activation
-- Generated at: 2026-07-16T08:37:09.466Z
+- Generated at: 2026-07-16T14:40:18.412Z
 - Max duration hours: 8
-- Activated: 17
+- Activated: 18
 - Skipped long events: 8
 
 | Source | Event | Duration | Type |
@@ -20,6 +20,7 @@
 | Saudi Food and Drug Authority Events | دور مقدمي الرعاية الصحية وضباط الاتصال في التعامل مع انذارات السلامة الصادرة من المركز الوطني لبلاغات الأجهزة والمستلزمات الطبية | 1h | official-online-workshop |
 | Saudi Food and Drug Authority Events | الاستخدام الآمن لأجهزة الأشعة والتصوير الطبي داخل مرافق الرعاية الصحية و المرجع الوطني لتحديد الجرعة الإشعاعية للمرضى | 2h | official-online-workshop |
 | Saudi Food and Drug Authority Events | آلية مطابقة المخزون الفعلي مع نظام رصد للصيدليات والمستشفيات | 4h | official-online-workshop |
+| Saudi Food and Drug Authority Events | الأجهزة الطبية الرقمية: التوعية بالمتطلبات التنظيمية وأفضل الممارسات | 1h | official-online-workshop |
 | Saudi Food and Drug Authority Events | الإدراج في خطوات | 2h | official-online-workshop |
 | Saudi Food and Drug Authority Events | احتياطات الأمان عند استخدام مبيدات آفات الصحة العامة | 1h | official-online-workshop |
 | Saudi Food and Drug Authority Events | دور الهيئة العامة للغذاء و الدواء في ضمان سلامة الاستخدام الامن لجهاز الماموجرام | 1h | official-online-workshop |

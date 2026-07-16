@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-07-15T14:09:17.065Z
+Generated at: 2026-07-16T14:22:47.758Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -51,8 +51,8 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Project use: Keep in the 6-hour source ring; Arabic and English API payloads are reachable and useful for tourism-facing event discovery.
 - Title: تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية
 - Hint URLs: https://assets.adobedtm.com, https://connect.facebook.net/, https://tpc.googlesyndication.com, https://pagead2.googlesyndication.com, https://www.facebook.com, https://platform.twitter.com/, https://staticxx.facebook.com, https://scth.scene7.com
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 30 items; ذا جروفز, معرض اللغة العربية للطفل, معرض اللغة العربية 28, كنوز غارقة, منطقة مشجعي كوكاكولا في جاكس
-  - API 502 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 0 items; no titles
+  - API 502 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 0 items; no titles
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 34 items; The Groves, Arabic Language Exhibition for kids, Arabic Language Exhibition 28, Sunken Treasures, Coca-Cola Fan Zone at JAX District
 
 ### webook Explore
 
@@ -92,7 +92,7 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Project use: Use only as commercial marketplace intelligence until documented API permission exists; exposed app API hints are evidence, not a scraping license.
 - Title: Evento | إيفينتو
 - Hint URLs: https://api-dev.evento.sa, https://wsrv.nl/?, https://wsrv.nl, https://fonts.googleapis.com, https://fonts.gstatic.com, https://fonts.gstatic.com/s/tajawal/v12/Iura6YBj_oCad4k1nzSBC45I.woff2, https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700;800&display=optional, https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
-  - Asset 200 main.f667c54ffb5feba2.js: https://evento.sa, https://evento.sa/assets/images/og-image.webp, https://schema.org, https://schema.org/EventScheduled, https://schema.org/OfflineEventAttendanceMode, https://schema.org/InStock
+  - Asset 200 main.5ed70f1585c784c1.js: https://evento.sa, https://evento.sa/assets/images/og-image.webp, https://schema.org, https://schema.org/EventScheduled, https://schema.org/OfflineEventAttendanceMode, https://schema.org/InStock
 
 ### Ministry of Commerce Upcoming Events
 
