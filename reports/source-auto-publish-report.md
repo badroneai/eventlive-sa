@@ -1,10 +1,10 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-16T03:40:57.988Z
+- published_at: 2026-07-16T08:35:36.973Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 476
-- published_new: 1
+- candidates_seen: 477
+- published_new: 2
 - linked_existing: 458
 - blocked_remaining: 17
 
@@ -17,6 +17,7 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
+| candidate-umm-al-qura-events-رابط-سداد-الزمالة-التطبيقية-في-الأنظمة-الوقفية-20260901-7703e69c | published | event-رابط-سداد-الزمالة-التطبيقية-في-الأنظمة-الوقفية | رابط سداد الزمالة التطبيقية في الأنظمة الوقفية |
 | candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702 | published | event-music-festival-mdlbeast-soundstorm | Music Festival: MDLBEAST SoundStorm |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
@@ -132,10 +133,9 @@
 | candidate-ithra-events-echoes-of-the-familiar-20260716-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-ithra-events-summer-youth-program-20260716-a20f7a11 | linked-existing | event-summer-youth-program | already linked to catalog event |
 | candidate-ithra-events-kinusaiga-art-20260716-98b157b0 | linked-existing | event-kinusaiga-art | already linked to catalog event |
-| candidate-ithra-events-1-2-3-a-little-space-for-me-20260716-a3bc99ba | linked-existing | event-1-2-3-a-little-space-for-me | already linked to catalog event |
 | candidate-ithra-events-leap-then-look-20260716-99d88224 | linked-existing | event-leap-then-look | already linked to catalog event |
 | candidate-ithra-events-ithra-childrens-festival-2026-20260716-d6d5cc99 | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
-| candidate-ithra-events-kindergarten-under-the-palm-tree-english-20260716-c72ee6a9 | linked-existing | event-kindergarten-under-the-palm-tree-english | already linked to catalog event |
+| candidate-ithra-events-1-2-3-a-little-space-for-me-20260716-a3bc99ba | linked-existing | event-1-2-3-a-little-space-for-me | already linked to catalog event |
 | candidate-ithra-events-sense-the-home-20260716-3a3ca5ae | linked-existing | event-sense-the-home | already linked to catalog event |
 | candidate-ithra-events-my-little-fort-20260716-09d01da3 | linked-existing | event-my-little-fort | already linked to catalog event |
 | candidate-ithra-events-play-with-shadows-20260716-9984f169 | linked-existing | event-play-with-shadows | already linked to catalog event |
@@ -180,6 +180,7 @@
 | candidate-visit-saudi-calendar-saleh-el-nawawy-stand-up-comedy-show-20260717-afedb92f | linked-existing | event-saleh-el-nawawy-stand-up-comedy-show-2 | already linked to catalog event |
 | candidate-visit-saudi-calendar-reggae-with-rsoa-20260717-70d3f305 | linked-existing | event-reggae-with-rsoa | already linked to catalog event |
 | candidate-ithra-events-tales-of-the-night-sky-english-20260718-eb5d626a | linked-existing | event-tales-of-the-night-sky-english | already linked to catalog event |
+| candidate-ithra-events-kindergarten-under-the-palm-tree-english-20260718-c72ee6a9 | linked-existing | event-kindergarten-under-the-palm-tree-english | already linked to catalog event |
 | candidate-visit-saudi-calendar-very-sary-night-from-exit-thmanyah-20260718-ba34e063 | linked-existing | event-very-sary-night-from-exit-thmanyah | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-اليوم-العالمي-لآيس-كريم-بالتعاون-مع-كلمشي-20260719-4a38d19e | linked-existing | event-اليوم-العالمي-لآيس-كريم-بالتعاون-مع-كلمشي | already linked to catalog event |
 | candidate-future-skills-catalog-advanced-excel-for-data-analysis-دورة-اكسيل-لتحليل-البيانات-20260719-8e9da906 | linked-existing | event-advanced-excel-for-data-analysis-دورة-اكسيل-لتحليل-البيانات | already linked to catalog event |

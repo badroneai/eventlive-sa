@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-16T03:42:22.254Z",
+  "generated_at": "2026-07-16T08:37:08.292Z",
   "totals": {
-    "targets": 1,
-    "enriched": 1,
-    "fetched": 0,
-    "images": 1,
+    "targets": 2,
+    "enriched": 2,
+    "fetched": 1,
+    "images": 2,
     "fetch_failures": 1
   },
   "enriched": [
@@ -17,6 +17,16 @@
       "fetched": false,
       "image": true,
       "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-رابط-سداد-الزمالة-التطبيقية-في-الأنظمة-الوقفية",
+      "title": "رابط سداد الزمالة التطبيقية في الأنظمة الوقفية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41014",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
     }
   ],
   "failed": [

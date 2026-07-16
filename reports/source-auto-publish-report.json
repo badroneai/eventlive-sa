@@ -1,16 +1,16 @@
 {
-  "published_at": "2026-07-16T03:40:57.988Z",
+  "published_at": "2026-07-16T08:35:36.973Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 476,
+  "candidates_seen": 477,
   "totals": {
-    "candidates_seen": 476,
-    "published": 1,
+    "candidates_seen": 477,
+    "published": 2,
     "linked_existing": 458,
     "blocked": 17,
-    "reconciled": 459
+    "reconciled": 460
   },
   "duplicate_catalog_rows_removed": 1,
   "duplicate_catalog_rows": [
@@ -23,6 +23,11 @@
   "canonical_event_ids_remapped": 0,
   "canonical_event_id_remaps": [],
   "published": [
+    {
+      "candidate_id": "candidate-umm-al-qura-events-رابط-سداد-الزمالة-التطبيقية-في-الأنظمة-الوقفية-20260901-7703e69c",
+      "event_id": "event-رابط-سداد-الزمالة-التطبيقية-في-الأنظمة-الوقفية",
+      "title": "رابط سداد الزمالة التطبيقية في الأنظمة الوقفية"
+    },
     {
       "candidate_id": "candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702",
       "event_id": "event-music-festival-mdlbeast-soundstorm",
@@ -715,12 +720,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20260716-a3bc99ba",
-      "event_id": "event-1-2-3-a-little-space-for-me",
-      "title": "1, 2, 3, A Little Space for Me",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-leap-then-look-20260716-99d88224",
       "event_id": "event-leap-then-look",
       "title": "Leap Then Look!",
@@ -733,9 +732,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-kindergarten-under-the-palm-tree-english-20260716-c72ee6a9",
-      "event_id": "event-kindergarten-under-the-palm-tree-english",
-      "title": "Kindergarten Under the Palm Tree (English)",
+      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20260716-a3bc99ba",
+      "event_id": "event-1-2-3-a-little-space-for-me",
+      "title": "1, 2, 3, A Little Space for Me",
       "reason": "already linked to catalog event"
     },
     {
@@ -1000,6 +999,12 @@
       "candidate_id": "candidate-ithra-events-tales-of-the-night-sky-english-20260718-eb5d626a",
       "event_id": "event-tales-of-the-night-sky-english",
       "title": "Tales of the Night Sky (English)",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-kindergarten-under-the-palm-tree-english-20260718-c72ee6a9",
+      "event_id": "event-kindergarten-under-the-palm-tree-english",
+      "title": "Kindergarten Under the Palm Tree (English)",
       "reason": "already linked to catalog event"
     },
     {
