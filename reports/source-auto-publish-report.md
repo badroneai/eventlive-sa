@@ -1,17 +1,17 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-17T14:05:57.726Z
+- published_at: 2026-07-17T19:49:10.654Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 480
+- candidates_seen: 478
 - published_new: 1
 - linked_existing: 462
-- blocked_remaining: 17
+- blocked_remaining: 15
 
 ## Blocked summary
 
 - possible duplicate already exists: event-esports-world-cup: 1
-- publication gate source-evidence is not auto-publishable: 14
+- publication gate source-evidence is not auto-publishable: 12
 - possible duplicate already exists: event-saudi-wood-expo-2026: 1
 - possible duplicate already exists: event-saudi-industrial-series-2: 1
 
@@ -126,60 +126,58 @@
 | candidate-riyadh-city-events-wrth-summer-art-craft-program-20260716-77021a48 | linked-existing | event-wrth-summer-art-craft-program | already linked to catalog event |
 | candidate-visit-saudi-calendar-al-farabi-comeback-night-20260716-b9d95a79 | linked-existing | event-al-farabi-comeback-night | already linked to catalog event |
 | candidate-mdlbeast-events-unstable-20260717-5647df2e | linked-existing | event-unstable | already linked to catalog event |
-| candidate-ithra-events-build-play-together-20260717-c73728ad | linked-existing | event-build-play-together | already linked to catalog event |
-| candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260717-f563a36e | linked-existing | event-ithra-summer-camp-2026-a-world-of-homes | already linked to catalog event |
-| candidate-ithra-events-tafasahu-make-room-20260717-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
 | candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260717-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
 | candidate-ithra-events-echoes-of-the-familiar-20260717-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
-| candidate-ithra-events-leap-then-look-20260717-99d88224 | linked-existing | event-leap-then-look | already linked to catalog event |
-| candidate-ithra-events-summer-youth-program-20260717-a20f7a11 | linked-existing | event-summer-youth-program | already linked to catalog event |
-| candidate-ithra-events-ajeeb-in-wonder-house-20260717-caa7ff83 | linked-existing | event-ajeeb-in-wonder-house | already linked to catalog event |
-| candidate-ithra-events-balloon-shapes-lab-20260717-7c264d45 | linked-existing | event-balloon-shapes-lab | already linked to catalog event |
-| candidate-ithra-events-built-by-nature-20260717-950b3be0 | linked-existing | event-built-by-nature | already linked to catalog event |
-| candidate-ithra-events-draw-your-story-20260717-6b28e480 | linked-existing | event-draw-your-story | already linked to catalog event |
-| candidate-ithra-events-hidden-home-bingo-20260717-0150ad97 | linked-existing | event-hidden-home-bingo | already linked to catalog event |
-| candidate-ithra-events-insightful-spaces-20260717-83f85411 | linked-existing | event-insightful-spaces | already linked to catalog event |
-| candidate-ithra-events-interactive-exhibit-20260717-bcda7332 | linked-existing | event-interactive-exhibit | already linked to catalog event |
-| candidate-ithra-events-lets-decorate-20260717-4cb342a7 | linked-existing | event-lets-decorate | already linked to catalog event |
-| candidate-ithra-events-mic-moments-20260717-6b55b3ff | linked-existing | event-mic-moments | already linked to catalog event |
-| candidate-ithra-events-mirror-or-window-20260717-660f44a0 | linked-existing | event-mirror-or-window | already linked to catalog event |
-| candidate-ithra-events-natures-architects-20260717-9b0461b0 | linked-existing | event-natures-architects | already linked to catalog event |
-| candidate-ithra-events-nim-adventures-20260717-c504dfe0 | linked-existing | event-nim-adventures | already linked to catalog event |
-| candidate-ithra-events-our-place-on-earth-20260717-d06c9f86 | linked-existing | event-our-place-on-earth | already linked to catalog event |
-| candidate-ithra-events-painted-faces-20260717-d70db13a | linked-existing | event-painted-faces | already linked to catalog event |
-| candidate-ithra-events-treasures-in-every-home-20260717-6f6454c1 | linked-existing | event-treasures-in-every-home | already linked to catalog event |
-| candidate-ithra-events-where-we-belong-20260717-44a2729b | linked-existing | event-where-we-belong | already linked to catalog event |
-| candidate-ithra-events-who-lived-here-20260717-11c491ce | linked-existing | event-who-lived-here | already linked to catalog event |
-| candidate-ithra-events-zoom-in-20260717-d8d7bd6d | linked-existing | event-zoom-in | already linked to catalog event |
 | candidate-ithra-events-a-home-i-imagine-20260717-7778a5c1 | linked-existing | event-a-home-i-imagine | already linked to catalog event |
 | candidate-ithra-events-childrens-caf-20260717-f5069d9a | linked-existing | event-childrens-caf | already linked to catalog event |
 | candidate-ithra-events-ithra-childrens-festival-2026-20260717-d6d5cc99 | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
 | candidate-ithra-events-my-family-bouquet-20260717-9570ab84 | linked-existing | event-my-family-bouquet | already linked to catalog event |
-| candidate-ithra-events-kinusaiga-art-20260717-98b157b0 | linked-existing | event-kinusaiga-art | already linked to catalog event |
-| candidate-ithra-events-in-the-home-of-20260717-0dcdc683 | linked-existing | event-in-the-home-of | already linked to catalog event |
-| candidate-ithra-events-1-2-3-a-little-space-for-me-20260717-a3bc99ba | linked-existing | event-1-2-3-a-little-space-for-me | already linked to catalog event |
-| candidate-ithra-events-1-2-3-lets-rhyme-20260717-4d37515a | linked-existing | event-1-2-3-lets-rhyme | already linked to catalog event |
-| candidate-ithra-events-water-challenges-20260717-eea51834 | linked-existing | event-water-challenges | already linked to catalog event |
-| candidate-ithra-events-finding-nemo-20260717-ee95c1c5 | linked-existing | event-finding-nemo | already linked to catalog event |
-| candidate-ithra-events-house-of-wonder-20260717-9a8dfa3b | linked-existing | event-house-of-wonder | already linked to catalog event |
-| candidate-ithra-events-little-dot-20260717-6f97a4be | linked-existing | event-little-dot | already linked to catalog event |
-| candidate-ithra-events-my-little-fort-20260717-09d01da3 | linked-existing | event-my-little-fort | already linked to catalog event |
-| candidate-ithra-events-on-this-carpet-20260717-2972e041 | linked-existing | event-on-this-carpet | already linked to catalog event |
-| candidate-ithra-events-sense-the-home-20260717-3a3ca5ae | linked-existing | event-sense-the-home | already linked to catalog event |
-| candidate-ithra-events-play-with-shadows-20260717-9984f169 | linked-existing | event-play-with-shadows | already linked to catalog event |
-| candidate-ithra-events-the-house-of-ideas-20260717-26aaa6b2 | linked-existing | event-the-house-of-ideas | already linked to catalog event |
-| candidate-ithra-events-around-the-table-20260717-87d7ec65 | linked-existing | event-around-the-table | already linked to catalog event |
 | candidate-visit-saudi-calendar-made-in-egypt-stand-up-comedy-show-by-ahmed-khairy-20260717-5abef07b | linked-existing | event-made-in-egypt-stand-up-comedy-show-by-ahmed-khairy | already linked to catalog event |
-| candidate-ithra-events-museum-story-time-20260717-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
 | candidate-visit-saudi-calendar-mohamed-hamaki-concert-20260717-791ae7fd | linked-existing | event-mohamed-hamaki-concert | already linked to catalog event |
 | candidate-visit-saudi-calendar-viola-nights-presents-space-motion-20260717-dd4fd4dc | linked-existing | event-viola-nights-presents-space-motion | already linked to catalog event |
 | candidate-mdlbeast-events-beast-house-20260717-83049a2a | linked-existing | event-beast-house | already linked to catalog event |
 | candidate-visit-saudi-calendar-saleh-el-nawawy-stand-up-comedy-show-20260717-afedb92f | linked-existing | event-saleh-el-nawawy-stand-up-comedy-show-2 | already linked to catalog event |
 | candidate-visit-saudi-calendar-reggae-with-rsoa-20260717-70d3f305 | linked-existing | event-reggae-with-rsoa | already linked to catalog event |
 | candidate-visit-saudi-calendar-stand-up-comedy-night-20260717-9c0448ef | linked-existing | event-stand-up-comedy-night | already linked to catalog event |
+| candidate-ithra-events-build-play-together-20260718-c73728ad | linked-existing | event-build-play-together | already linked to catalog event |
+| candidate-ithra-events-draw-your-story-20260718-6b28e480 | linked-existing | event-draw-your-story | already linked to catalog event |
+| candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260718-f563a36e | linked-existing | event-ithra-summer-camp-2026-a-world-of-homes | already linked to catalog event |
+| candidate-ithra-events-lets-decorate-20260718-4cb342a7 | linked-existing | event-lets-decorate | already linked to catalog event |
+| candidate-ithra-events-tafasahu-make-room-20260718-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
 | candidate-ithra-events-tales-of-the-night-sky-english-20260718-eb5d626a | linked-existing | event-tales-of-the-night-sky-english | already linked to catalog event |
+| candidate-ithra-events-1-2-3-a-little-space-for-me-20260718-a3bc99ba | linked-existing | event-1-2-3-a-little-space-for-me | already linked to catalog event |
+| candidate-ithra-events-kinusaiga-art-20260718-98b157b0 | linked-existing | event-kinusaiga-art | already linked to catalog event |
+| candidate-ithra-events-leap-then-look-20260718-99d88224 | linked-existing | event-leap-then-look | already linked to catalog event |
 | candidate-ithra-events-kindergarten-under-the-palm-tree-english-20260718-c72ee6a9 | linked-existing | event-kindergarten-under-the-palm-tree-english | already linked to catalog event |
+| candidate-ithra-events-sense-the-home-20260718-3a3ca5ae | linked-existing | event-sense-the-home | already linked to catalog event |
+| candidate-ithra-events-my-little-fort-20260718-09d01da3 | linked-existing | event-my-little-fort | already linked to catalog event |
+| candidate-ithra-events-play-with-shadows-20260718-9984f169 | linked-existing | event-play-with-shadows | already linked to catalog event |
+| candidate-ithra-events-1-2-3-lets-rhyme-20260718-4d37515a | linked-existing | event-1-2-3-lets-rhyme | already linked to catalog event |
+| candidate-ithra-events-ajeeb-in-wonder-house-20260718-caa7ff83 | linked-existing | event-ajeeb-in-wonder-house | already linked to catalog event |
+| candidate-ithra-events-around-the-table-20260718-87d7ec65 | linked-existing | event-around-the-table | already linked to catalog event |
+| candidate-ithra-events-balloon-shapes-lab-20260718-7c264d45 | linked-existing | event-balloon-shapes-lab | already linked to catalog event |
+| candidate-ithra-events-built-by-nature-20260718-950b3be0 | linked-existing | event-built-by-nature | already linked to catalog event |
+| candidate-ithra-events-hidden-home-bingo-20260718-0150ad97 | linked-existing | event-hidden-home-bingo | already linked to catalog event |
+| candidate-ithra-events-insightful-spaces-20260718-83f85411 | linked-existing | event-insightful-spaces | already linked to catalog event |
+| candidate-ithra-events-interactive-exhibit-20260718-bcda7332 | linked-existing | event-interactive-exhibit | already linked to catalog event |
+| candidate-ithra-events-mic-moments-20260718-6b55b3ff | linked-existing | event-mic-moments | already linked to catalog event |
+| candidate-ithra-events-mirror-or-window-20260718-660f44a0 | linked-existing | event-mirror-or-window | already linked to catalog event |
+| candidate-ithra-events-natures-architects-20260718-9b0461b0 | linked-existing | event-natures-architects | already linked to catalog event |
+| candidate-ithra-events-nim-adventures-20260718-c504dfe0 | linked-existing | event-nim-adventures | already linked to catalog event |
+| candidate-ithra-events-our-place-on-earth-20260718-d06c9f86 | linked-existing | event-our-place-on-earth | already linked to catalog event |
+| candidate-ithra-events-painted-faces-20260718-d70db13a | linked-existing | event-painted-faces | already linked to catalog event |
+| candidate-ithra-events-treasures-in-every-home-20260718-6f6454c1 | linked-existing | event-treasures-in-every-home | already linked to catalog event |
+| candidate-ithra-events-where-we-belong-20260718-44a2729b | linked-existing | event-where-we-belong | already linked to catalog event |
+| candidate-ithra-events-who-lived-here-20260718-11c491ce | linked-existing | event-who-lived-here | already linked to catalog event |
+| candidate-ithra-events-zoom-in-20260718-d8d7bd6d | linked-existing | event-zoom-in | already linked to catalog event |
+| candidate-ithra-events-in-the-home-of-20260718-0dcdc683 | linked-existing | event-in-the-home-of | already linked to catalog event |
 | candidate-ithra-events-storyteller-of-the-day-20260718-94528a46 | linked-existing | event-storyteller-of-the-day | already linked to catalog event |
+| candidate-ithra-events-finding-nemo-20260718-ee95c1c5 | linked-existing | event-finding-nemo | already linked to catalog event |
+| candidate-ithra-events-house-of-wonder-20260718-9a8dfa3b | linked-existing | event-house-of-wonder | already linked to catalog event |
+| candidate-ithra-events-little-dot-20260718-6f97a4be | linked-existing | event-little-dot | already linked to catalog event |
+| candidate-ithra-events-on-this-carpet-20260718-2972e041 | linked-existing | event-on-this-carpet | already linked to catalog event |
+| candidate-ithra-events-the-house-of-ideas-20260718-26aaa6b2 | linked-existing | event-the-house-of-ideas | already linked to catalog event |
+| candidate-ithra-events-museum-story-time-20260718-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
 | candidate-visit-saudi-calendar-very-sary-night-from-exit-thmanyah-20260718-ba34e063 | linked-existing | event-very-sary-night-from-exit-thmanyah | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-اليوم-العالمي-لآيس-كريم-بالتعاون-مع-كلمشي-20260719-4a38d19e | linked-existing | event-اليوم-العالمي-لآيس-كريم-بالتعاون-مع-كلمشي | already linked to catalog event |
 | candidate-future-skills-catalog-advanced-excel-for-data-analysis-دورة-اكسيل-لتحليل-البيانات-20260719-8e9da906 | linked-existing | event-advanced-excel-for-data-analysis-دورة-اكسيل-لتحليل-البيانات | already linked to catalog event |
@@ -188,9 +186,11 @@
 | candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-وتصنيع-الحلول-الهندسية-20260719-944bbe1b | linked-existing | event-معسكر-تصميم-وتصنيع-الحلول-الهندسية | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45 | linked-existing | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python | already linked to catalog event |
 | candidate-saudi-university-events-fifa-world-cup-2026-final-celebrate-footballs-biggest-night-at-the-kaust-20260719-c9d0e20a | linked-existing | event-fifa-world-cup-2026-final-celebrate-footballs-biggest-night-at-the-kaust | already linked to catalog event |
+| candidate-ithra-events-summer-youth-program-20260720-a20f7a11 | linked-existing | event-summer-youth-program | already linked to catalog event |
 | candidate-ithra-events-the-magical-suitcase-20260720-431be2c3 | linked-existing | event-the-magical-suitcase | already linked to catalog event |
 | candidate-ithra-events-virtual-to-reality-20260720-b8053f5f | linked-existing | event-virtual-to-reality | already linked to catalog event |
 | candidate-ithra-events-the-lorax-20260720-657904eb | linked-existing | event-the-lorax | already linked to catalog event |
+| candidate-ithra-events-water-challenges-20260720-eea51834 | linked-existing | event-water-challenges | already linked to catalog event |
 | candidate-sfda-events-دور-مقدمي-الرعاية-الصحية-وضباط-الاتصال-في-التعامل-مع-انذارات-السلامة-الص-20260721-56cf21b4 | linked-existing | event-دور-مقدمي-الرعاية-الصحية-وضباط-الاتصال-في-التعامل-مع-انذارات-السلامة-الص | already linked to catalog event |
 | candidate-sfda-events-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج-20260721-9858e813 | linked-existing | event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج | already linked to catalog event |
 | candidate-jazan-chamber-events-متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة-20260721-8e0bf671 | linked-existing | event-متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة | already linked to catalog event |
@@ -481,8 +481,6 @@
 | candidate-riyadh-city-events-human-capability-initiative-conference-20270412-17af203d | linked-existing | event-human-capability-initiative-conference | already linked to catalog event |
 | candidate-visit-saudi-calendar-eid-al-adha-20270606-f67747fe | linked-existing | event-eid-al-adha | already linked to catalog event |
 | candidate-eye-of-riyadh-events-esports-world-cup-20260706-13ed17c1 | blocked | - | possible duplicate already exists: event-esports-world-cup |
-| candidate-eventbrite-saudi-riyadh-social-and-language-exchange-make-new-friends-20260717-1233a8a9 | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-eventbrite-saudi-riyadh-tech-mixer-and-social-tech-ai-data-it-20260717-d9a2c230 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-dubai-property-expo-in-al-khobar-17th-18th-july-2026-danube-20260718-3fa94488 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eye-of-riyadh-events-oxford-future-of-real-estate-programme-20260805-7c9ee195 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eye-of-riyadh-events-sunaa-2026-20260818-e3819fa8 | blocked | - | publication gate source-evidence is not auto-publishable |

@@ -1,21 +1,21 @@
 {
   "schema": "eventlive.source-secondary-verification.v1",
-  "generated_at": "2026-07-17T14:05:57.494Z",
+  "generated_at": "2026-07-17T19:49:10.526Z",
   "source_candidates": "data/source_candidates.json",
   "source_ops_report": "reports/source-ops-report.json",
   "totals": {
-    "candidates_seen": 480,
-    "candidates_considered": 17,
+    "candidates_seen": 478,
+    "candidates_considered": 15,
     "promoted": 0,
     "official_evidence_promoted": 0,
     "official_programs_promoted": 0,
     "official_catalog_matches_promoted": 0,
-    "still_blocked": 17
+    "still_blocked": 15
   },
   "promoted": [],
   "still_blocked_by_reason": {
     "public-listing-needs-official-match": 1,
-    "needs-secondary-official-proof": 14,
+    "needs-secondary-official-proof": 12,
     "not-secondary-verifiable": 2
   }
 }

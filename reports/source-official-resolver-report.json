@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T14:08:29.142Z",
+  "generated_at": "2026-07-17T19:50:55.177Z",
   "source_ops_report": "reports/source-ops-report.json",
   "source_registry": "data/source_registry.json",
   "totals": {
@@ -567,187 +567,183 @@
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
     },
     {
-      "lead_id": "candidate-eventbrite-saudi-riyadh-social-and-language-exchange-make-new-friends-20260717-1233a8a9",
-      "title": "Riyadh Social and Language Exchange (Make New Friends) ✨",
-      "city": "Riyadh",
-      "starts_at": "2026-07-17T18:00:00+03:00",
-      "source_label": "Eventbrite Saudi Arabia",
-      "discovery_quality": "strong-lead",
-      "discovery_score": 70,
-      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 87,
+      "lead_id": "candidate-eye-of-riyadh-events-sunaa-2026-20260818-e3819fa8",
+      "title": "SUNAA 2026",
+      "city": "Saudi Arabia",
+      "starts_at": "2026-08-18T09:00:00+03:00",
+      "source_label": "Eye of Riyadh Events",
+      "discovery_quality": "watch-lead",
+      "discovery_score": 60,
+      "discovery_notes": "directory-source, saudi-location-signal, large-event-topic, city-not-specific",
+      "resolver_priority": 92,
       "target_sources": [
         {
-          "id": "enjoy-saudi-events",
-          "name": "Enjoy Saudi Events",
-          "url": "https://enjoy.sa/ar/",
-          "domain": "enjoy.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 38
+          "id": "ricec-events",
+          "name": "Riyadh International Convention and Exhibition Center",
+          "url": "https://www.ricec.com/",
+          "domain": "ricec.com",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 58
         },
         {
-          "id": "misk-hub-events",
-          "name": "Misk Hub Events",
-          "url": "https://hub.misk.org.sa/en/events/",
-          "domain": "hub.misk.org.sa",
-          "trust_level": "official",
-          "source_type": "organizer-calendar",
-          "score": 38
+          "id": "dhahran-expo-calendar",
+          "name": "Dhahran Expo Calendar",
+          "url": "https://dhahranexpo.com.sa",
+          "domain": "dhahranexpo.com.sa",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 50
         },
         {
-          "id": "riyadh-city-events",
-          "name": "Riyadh City Events",
-          "url": "https://riyadh.sa/en/events/all",
-          "domain": "riyadh.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 38
+          "id": "rfecc-whats-on",
+          "name": "RFECC What's On",
+          "url": "https://rfecc.sa/whats-on/",
+          "domain": "rfecc.sa",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 50
         },
         {
-          "id": "riyadh-season",
-          "name": "Riyadh Season Official",
-          "url": "https://riyadhseason.com/en/explore",
-          "domain": "riyadhseason.com",
+          "id": "asharqia-chamber-events",
+          "name": "Asharqia Chamber Events",
+          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
+          "domain": "chamber.org.sa",
           "trust_level": "official",
-          "source_type": "organizer-calendar",
-          "score": 38
+          "source_type": "venue-calendar",
+          "score": 48
         },
         {
-          "id": "aseer-season-asda",
-          "name": "Aseer Season / Asir Development Authority",
-          "url": "https://www.asda.gov.sa/",
-          "domain": "asda.gov.sa",
+          "id": "informa-connect-saudi-events",
+          "name": "Informa Connect Saudi Event Portfolio",
+          "url": "https://informaconnect.com/",
+          "domain": "informaconnect.com",
           "trust_level": "official",
-          "source_type": "destination-calendar",
-          "score": 30
+          "source_type": "conference-organizer",
+          "score": 48
         }
       ],
       "searches": [
         {
-          "query": "site:enjoy.sa \"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aenjoy.sa%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22"
+          "query": "site:ricec.com \"SUNAA 2026\" Saudi Arabia",
+          "url": "https://www.google.com/search?q=site%3Aricec.com%20%22SUNAA%202026%22%20Saudi%20Arabia"
         },
         {
-          "query": "site:hub.misk.org.sa \"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ahub.misk.org.sa%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22"
+          "query": "site:dhahranexpo.com.sa \"SUNAA 2026\" Saudi Arabia",
+          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22SUNAA%202026%22%20Saudi%20Arabia"
         },
         {
-          "query": "site:riyadh.sa \"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ariyadh.sa%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22"
+          "query": "site:rfecc.sa \"SUNAA 2026\" Saudi Arabia",
+          "url": "https://www.google.com/search?q=site%3Arfecc.sa%20%22SUNAA%202026%22%20Saudi%20Arabia"
         },
         {
-          "query": "site:riyadhseason.com \"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ariyadhseason.com%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22"
+          "query": "site:chamber.org.sa \"SUNAA 2026\" Saudi Arabia",
+          "url": "https://www.google.com/search?q=site%3Achamber.org.sa%20%22SUNAA%202026%22%20Saudi%20Arabia"
         },
         {
-          "query": "site:asda.gov.sa \"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aasda.gov.sa%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22"
+          "query": "site:informaconnect.com \"SUNAA 2026\" Saudi Arabia",
+          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22SUNAA%202026%22%20Saudi%20Arabia"
         },
         {
-          "query": "\"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22%20official"
+          "query": "\"SUNAA 2026\" Saudi Arabia official",
+          "url": "https://www.google.com/search?q=%22SUNAA%202026%22%20Saudi%20Arabia%20official"
         },
         {
-          "query": "\"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22%20organizer"
+          "query": "\"SUNAA 2026\" Saudi Arabia organizer",
+          "url": "https://www.google.com/search?q=%22SUNAA%202026%22%20Saudi%20Arabia%20organizer"
         },
         {
-          "query": "\"Riyadh Social and Language Exchange (Make New Friends) ✨\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22%20tickets"
+          "query": "\"SUNAA 2026\" Saudi Arabia tickets",
+          "url": "https://www.google.com/search?q=%22SUNAA%202026%22%20Saudi%20Arabia%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
     },
     {
-      "lead_id": "candidate-eventbrite-saudi-riyadh-tech-mixer-and-social-tech-ai-data-it-20260717-d9a2c230",
-      "title": "Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨",
+      "lead_id": "candidate-eventbrite-saudi-smart-sustainable-building-intelligent-ecosystems-for-tomorrows-cities-20260901-e45c1490",
+      "title": "Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities",
       "city": "Riyadh",
-      "starts_at": "2026-07-17T18:00:00+03:00",
+      "starts_at": "2026-09-01T19:00:00+03:00",
       "source_label": "Eventbrite Saudi Arabia",
-      "discovery_quality": "strong-lead",
-      "discovery_score": 70,
-      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 87,
+      "discovery_quality": "watch-lead",
+      "discovery_score": 60,
+      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit, non-saudi-eventbrite-domain",
+      "resolver_priority": 72,
       "target_sources": [
         {
-          "id": "misk-hub-events",
-          "name": "Misk Hub Events",
-          "url": "https://hub.misk.org.sa/en/events/",
-          "domain": "hub.misk.org.sa",
+          "id": "future-skills-catalog",
+          "name": "Future Skills MCIT Catalogue",
+          "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
+          "domain": "futureskills.mcit.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 48
+        },
+        {
+          "id": "informa-connect-saudi-events",
+          "name": "Informa Connect Saudi Event Portfolio",
+          "url": "https://informaconnect.com/",
+          "domain": "informaconnect.com",
+          "trust_level": "official",
+          "source_type": "conference-organizer",
+          "score": 48
+        },
+        {
+          "id": "saudi-digital-academy",
+          "name": "Saudi Digital Academy",
+          "url": "https://sda.edu.sa/ar",
+          "domain": "sda.edu.sa",
           "trust_level": "official",
           "source_type": "organizer-calendar",
           "score": 48
         },
         {
-          "id": "enjoy-saudi-events",
-          "name": "Enjoy Saudi Events",
-          "url": "https://enjoy.sa/ar/",
-          "domain": "enjoy.sa",
+          "id": "sdaia-academy-programs",
+          "name": "SDAIA Academy Programs",
+          "url": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx",
+          "domain": "sdaia.gov.sa",
           "trust_level": "official",
           "source_type": "government-calendar",
-          "score": 38
+          "score": 48
         },
         {
-          "id": "riyadh-city-events",
-          "name": "Riyadh City Events",
-          "url": "https://riyadh.sa/en/events/all",
-          "domain": "riyadh.sa",
+          "id": "sdaia-calendar-events",
+          "name": "SDAIA Calendar and Events",
+          "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
+          "domain": "sdaia.gov.sa",
           "trust_level": "official",
           "source_type": "government-calendar",
-          "score": 38
-        },
-        {
-          "id": "riyadh-season",
-          "name": "Riyadh Season Official",
-          "url": "https://riyadhseason.com/en/explore",
-          "domain": "riyadhseason.com",
-          "trust_level": "official",
-          "source_type": "organizer-calendar",
-          "score": 38
-        },
-        {
-          "id": "platinumlist-saudi-city-network",
-          "name": "Platinumlist Saudi City Network",
-          "url": "https://platinumlist.net/sitemap",
-          "domain": "platinumlist.net",
-          "trust_level": "official-marketplace",
-          "source_type": "ticketing-marketplace",
-          "score": 32
+          "score": 48
         }
       ],
       "searches": [
         {
-          "query": "site:hub.misk.org.sa \"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ahub.misk.org.sa%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22"
+          "query": "site:futureskills.mcit.gov.sa \"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Afutureskills.mcit.gov.sa%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22"
         },
         {
-          "query": "site:enjoy.sa \"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aenjoy.sa%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22"
+          "query": "site:informaconnect.com \"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22"
         },
         {
-          "query": "site:riyadh.sa \"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ariyadh.sa%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22"
+          "query": "site:sda.edu.sa \"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Asda.edu.sa%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22"
         },
         {
-          "query": "site:riyadhseason.com \"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ariyadhseason.com%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22"
+          "query": "site:sdaia.gov.sa \"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22"
         },
         {
-          "query": "site:platinumlist.net \"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aplatinumlist.net%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22"
+          "query": "\"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20official"
         },
         {
-          "query": "\"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22%20official"
+          "query": "\"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20organizer"
         },
         {
-          "query": "\"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22%20organizer"
-        },
-        {
-          "query": "\"Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22%20tickets"
+          "query": "\"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."

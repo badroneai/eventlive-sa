@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-07-17T14:13:33.555Z
+Generated at: 2026-07-17T19:54:15.281Z
 
 ## Operating Rule
 
@@ -9,13 +9,13 @@ Raw collection is not publication. Every source run preserves evidence, separate
 ## Totals
 
 - Sources: 86
-- Attempted this run: 24
-- Deferred by adaptive cadence: 22
+- Attempted this run: 26
+- Deferred by adaptive cadence: 20
 - Productive: 17
-- Zero-yield: 4
-- Collector errors: 1
+- Zero-yield: 1
+- Collector errors: 6
 - Persistent collector errors: 7
-- Probe blocked: 2
+- Probe blocked: 0
 - Auto-publish eligible source lanes: 12
 
 ## Stalled / Blocked Focus
@@ -125,7 +125,7 @@ Call log:
 | 64 | jouf-chamber-events | extractor-backlog | not-attempted | 0 | no | Latest deep probe recommends build-html-detail-extractor; build only if future date-complete rows are visible. |
 | 65 | northern-borders-chamber-events | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: http-403 |
 | 66 | tabuk-chamber-events | extractor-backlog | zero-yield | 0 | no | Zero-yield for 28 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
-| 67 | jazan-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 6 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 67 | jazan-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 7 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 68 | hail-chamber-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 69 | najran-chamber-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 70 | platinumlist-riyadh | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |

@@ -1,6 +1,6 @@
 # EventLive Official Resolver Report
 
-- generated_at: 2026-07-17T14:08:29.142Z
+- generated_at: 2026-07-17T19:50:55.177Z
 - source_ops_report: reports/source-ops-report.json
 - leads_seen: 10
 - resolver_tasks: 8
@@ -16,8 +16,8 @@
 | 97 | 25TH WPC Energy Congress | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, informa-connect-saudi-events, saudi-water-authority-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 97 | Family Office Investment Meeting | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | informa-connect-saudi-events, saudi-contractors-authority-events, asharqia-chamber-events, invest-saudi-events, jcci-events-center | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 97 | Sucession Planning Program | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | code-mcit-programs, cst-events-news, diriyah-season, enjoy-saudi-events, fii10-official-program | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 87 | Riyadh Social and Language Exchange (Make New Friends) ✨ | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | enjoy-saudi-events, misk-hub-events, riyadh-city-events, riyadh-season, aseer-season-asda | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 87 | Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨ | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | misk-hub-events, enjoy-saudi-events, riyadh-city-events, riyadh-season, platinumlist-saudi-city-network | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 92 | SUNAA 2026 | Eye of Riyadh Events | Saudi Arabia | watch-lead/60 | ricec-events, dhahran-expo-calendar, rfecc-whats-on, asharqia-chamber-events, informa-connect-saudi-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 72 | Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities | Eventbrite Saudi Arabia | Riyadh | watch-lead/60 | future-skills-catalog, informa-connect-saudi-events, saudi-digital-academy, sdaia-academy-programs, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 
 ## Search Pack
 
@@ -87,25 +87,24 @@
 - ["Sucession Planning Program" "Riyadh" organizer](https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20organizer)
 - ["Sucession Planning Program" "Riyadh" tickets](https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20tickets)
 
-### Riyadh Social and Language Exchange (Make New Friends) ✨
+### SUNAA 2026
 
-- [site:enjoy.sa "Riyadh Social and Language Exchange (Make New Friends) ✨" "Riyadh"](https://www.google.com/search?q=site%3Aenjoy.sa%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22)
-- [site:hub.misk.org.sa "Riyadh Social and Language Exchange (Make New Friends) ✨" "Riyadh"](https://www.google.com/search?q=site%3Ahub.misk.org.sa%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22)
-- [site:riyadh.sa "Riyadh Social and Language Exchange (Make New Friends) ✨" "Riyadh"](https://www.google.com/search?q=site%3Ariyadh.sa%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22)
-- [site:riyadhseason.com "Riyadh Social and Language Exchange (Make New Friends) ✨" "Riyadh"](https://www.google.com/search?q=site%3Ariyadhseason.com%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22)
-- [site:asda.gov.sa "Riyadh Social and Language Exchange (Make New Friends) ✨" "Riyadh"](https://www.google.com/search?q=site%3Aasda.gov.sa%20%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22)
-- ["Riyadh Social and Language Exchange (Make New Friends) ✨" "Riyadh" official](https://www.google.com/search?q=%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22%20official)
-- ["Riyadh Social and Language Exchange (Make New Friends) ✨" "Riyadh" organizer](https://www.google.com/search?q=%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22%20organizer)
-- ["Riyadh Social and Language Exchange (Make New Friends) ✨" "Riyadh" tickets](https://www.google.com/search?q=%22Riyadh%20Social%20and%20Language%20Exchange%20(Make%20New%20Friends)%20%E2%9C%A8%22%20%22Riyadh%22%20tickets)
+- [site:ricec.com "SUNAA 2026" Saudi Arabia](https://www.google.com/search?q=site%3Aricec.com%20%22SUNAA%202026%22%20Saudi%20Arabia)
+- [site:dhahranexpo.com.sa "SUNAA 2026" Saudi Arabia](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22SUNAA%202026%22%20Saudi%20Arabia)
+- [site:rfecc.sa "SUNAA 2026" Saudi Arabia](https://www.google.com/search?q=site%3Arfecc.sa%20%22SUNAA%202026%22%20Saudi%20Arabia)
+- [site:chamber.org.sa "SUNAA 2026" Saudi Arabia](https://www.google.com/search?q=site%3Achamber.org.sa%20%22SUNAA%202026%22%20Saudi%20Arabia)
+- [site:informaconnect.com "SUNAA 2026" Saudi Arabia](https://www.google.com/search?q=site%3Ainformaconnect.com%20%22SUNAA%202026%22%20Saudi%20Arabia)
+- ["SUNAA 2026" Saudi Arabia official](https://www.google.com/search?q=%22SUNAA%202026%22%20Saudi%20Arabia%20official)
+- ["SUNAA 2026" Saudi Arabia organizer](https://www.google.com/search?q=%22SUNAA%202026%22%20Saudi%20Arabia%20organizer)
+- ["SUNAA 2026" Saudi Arabia tickets](https://www.google.com/search?q=%22SUNAA%202026%22%20Saudi%20Arabia%20tickets)
 
-### Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨
+### Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities
 
-- [site:hub.misk.org.sa "Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh"](https://www.google.com/search?q=site%3Ahub.misk.org.sa%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22)
-- [site:enjoy.sa "Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh"](https://www.google.com/search?q=site%3Aenjoy.sa%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22)
-- [site:riyadh.sa "Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh"](https://www.google.com/search?q=site%3Ariyadh.sa%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22)
-- [site:riyadhseason.com "Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh"](https://www.google.com/search?q=site%3Ariyadhseason.com%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22)
-- [site:platinumlist.net "Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh"](https://www.google.com/search?q=site%3Aplatinumlist.net%20%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22)
-- ["Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh" official](https://www.google.com/search?q=%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22%20official)
-- ["Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh" organizer](https://www.google.com/search?q=%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22%20organizer)
-- ["Riyadh Tech Mixer and Social (Tech / AI / Data / IT) ✨" "Riyadh" tickets](https://www.google.com/search?q=%22Riyadh%20Tech%20Mixer%20and%20Social%20(Tech%20%2F%20AI%20%2F%20Data%20%2F%20IT)%20%E2%9C%A8%22%20%22Riyadh%22%20tickets)
+- [site:futureskills.mcit.gov.sa "Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities" "Riyadh"](https://www.google.com/search?q=site%3Afutureskills.mcit.gov.sa%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22)
+- [site:informaconnect.com "Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities" "Riyadh"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22)
+- [site:sda.edu.sa "Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities" "Riyadh"](https://www.google.com/search?q=site%3Asda.edu.sa%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22)
+- [site:sdaia.gov.sa "Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities" "Riyadh"](https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22)
+- ["Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities" "Riyadh" official](https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20official)
+- ["Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities" "Riyadh" organizer](https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20organizer)
+- ["Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities" "Riyadh" tickets](https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20tickets)
 

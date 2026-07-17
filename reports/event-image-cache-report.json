@@ -1,25 +1,18 @@
 {
-  "generated_at": "2026-07-17T14:12:16.976Z",
+  "generated_at": "2026-07-17T19:54:14.783Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
     "cached_total": 636,
-    "fetched": 1,
-    "reused": 499,
+    "fetched": 0,
+    "reused": 500,
     "failed": 0,
     "skipped_recent_failures": 0,
     "remembered_failures": 3
   },
-  "fetched": [
-    {
-      "source_url": "https://static.wixstatic.com/media/708478_1854711612ca467293ee73543b1c06ff%7Emv2.png/v1/fit/w_2500,h_1330,al_c/708478_1854711612ca467293ee73543b1c06ff%7Emv2.png",
-      "file": "dist/assets/event-images/global-proptech-summit-2026-34eaf8d944.png",
-      "bytes": 99088,
-      "events": 1
-    }
-  ],
+  "fetched": [],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -1367,6 +1360,11 @@
       "events": 1
     },
     {
+      "source_url": "https://static.wixstatic.com/media/708478_1854711612ca467293ee73543b1c06ff%7Emv2.png/v1/fit/w_2500,h_1330,al_c/708478_1854711612ca467293ee73543b1c06ff%7Emv2.png",
+      "file": "dist/assets/event-images/global-proptech-summit-2026-34eaf8d944.png",
+      "events": 1
+    },
+    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/bg-new.png?itok=bQIB0PjC",
       "file": "dist/assets/event-images/global-proptech-summit-d9f33cd4c5.png",
       "events": 1
@@ -2520,8 +2518,6 @@
   "rejected_removed": [],
   "skipped_recent_failures": [],
   "failed": [],
-  "requires_rebuild": true,
-  "rebuild_reasons": [
-    "fetched:1"
-  ]
+  "requires_rebuild": false,
+  "rebuild_reasons": []
 }
