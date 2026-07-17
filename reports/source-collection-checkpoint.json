@@ -1,21 +1,21 @@
 {
   "schema": "eventlive.source-collection-checkpoint.v1",
-  "checkpointed_at": "2026-07-17T03:40:31.077Z",
-  "collected_at": "2026-07-17T03:36:29.315Z",
+  "checkpointed_at": "2026-07-17T08:31:31.612Z",
+  "collected_at": "2026-07-17T08:28:16.544Z",
   "source_registry": "data/source_registry.json",
   "source_candidates": "data/source_candidates.json",
   "source_ended_events": "data/source_ended_events.json",
   "sources_seen": 86,
   "sources_runnable": 46,
-  "sources_due": 22,
-  "sources_attempted": 22,
-  "sources_deferred": 24,
-  "sources_completed": 22,
-  "candidates_discovered_so_far": 273,
+  "sources_due": 19,
+  "sources_attempted": 19,
+  "sources_deferred": 27,
+  "sources_completed": 19,
+  "candidates_discovered_so_far": 271,
   "ended_events_discovered_so_far": 0,
   "ended_collection_enabled": false,
   "time_scope": "current-and-upcoming-only",
-  "past_rows_skipped_so_far": 185,
+  "past_rows_skipped_so_far": 172,
   "ended_min_year": 2022,
   "baseline_key": "source_url + title + start_date",
   "normalization_rule": "candidateMergeKey from the source collector; compare apples-to-apples across periodic runs",
@@ -24,7 +24,7 @@
       "id": "visit-saudi-calendar",
       "status": "ok",
       "extracted": 34,
-      "snapshot_path": "data/raw/source-snapshots/visit-saudi-calendar-2026-07-17T03-36-29-315Z.json",
+      "snapshot_path": "data/raw/source-snapshots/visit-saudi-calendar-2026-07-17T08-28-16-544Z.json",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 28,
@@ -35,13 +35,13 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 0,
-      "duration_ms": 1624
+      "duration_ms": 1824
     },
     {
       "id": "experience-alula-events",
       "status": "ok",
       "extracted": 9,
-      "snapshot_path": "data/raw/source-snapshots/experience-alula-events-2026-07-17T03-36-29-315Z.html",
+      "snapshot_path": "data/raw/source-snapshots/experience-alula-events-2026-07-17T08-28-16-544Z.html",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 9,
@@ -52,13 +52,13 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 2,
-      "duration_ms": 7214
+      "duration_ms": 7592
     },
     {
       "id": "mdlbeast-events",
       "status": "ok",
       "extracted": 5,
-      "snapshot_path": "data/raw/source-snapshots/mdlbeast-events-2026-07-17T03-36-29-315Z.html",
+      "snapshot_path": "data/raw/source-snapshots/mdlbeast-events-2026-07-17T08-28-16-544Z.html",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 5,
@@ -69,13 +69,13 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 36,
-      "duration_ms": 181
+      "duration_ms": 92
     },
     {
       "id": "invest-saudi-events",
       "status": "ok",
       "extracted": 3,
-      "snapshot_path": "data/raw/source-snapshots/invest-saudi-events-2026-07-17T03-36-29-315Z.html",
+      "snapshot_path": "data/raw/source-snapshots/invest-saudi-events-2026-07-17T08-28-16-544Z.html",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 3,
@@ -86,13 +86,13 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 5,
-      "duration_ms": 1645
+      "duration_ms": 1498
     },
     {
       "id": "rfecc-whats-on",
       "status": "ok",
       "extracted": 6,
-      "snapshot_path": "data/raw/source-snapshots/rfecc-whats-on-2026-07-17T03-36-29-315Z.html",
+      "snapshot_path": "data/raw/source-snapshots/rfecc-whats-on-2026-07-17T08-28-16-544Z.html",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 6,
@@ -103,13 +103,13 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 14,
-      "duration_ms": 9580
+      "duration_ms": 16327
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "status": "ok",
       "extracted": 12,
-      "snapshot_path": "data/raw/source-snapshots/tuwaiq-academy-bootcamps-2026-07-17T03-36-29-315Z.json",
+      "snapshot_path": "data/raw/source-snapshots/tuwaiq-academy-bootcamps-2026-07-17T08-28-16-544Z.json",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 21,
@@ -120,13 +120,13 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 0,
-      "duration_ms": 1273
+      "duration_ms": 1498
     },
     {
       "id": "future-skills-catalog",
       "status": "ok",
       "extracted": 3,
-      "snapshot_path": "data/raw/source-snapshots/future-skills-catalog-2026-07-17T03-36-29-315Z.html",
+      "snapshot_path": "data/raw/source-snapshots/future-skills-catalog-2026-07-17T08-28-16-544Z.html",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 3,
@@ -137,13 +137,13 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 9,
-      "duration_ms": 22856
+      "duration_ms": 17893
     },
     {
       "id": "visit-saudi-seasons",
       "status": "ok",
       "extracted": 11,
-      "snapshot_path": "data/raw/source-snapshots/visit-saudi-seasons-2026-07-17T03-36-29-315Z.json",
+      "snapshot_path": "data/raw/source-snapshots/visit-saudi-seasons-2026-07-17T08-28-16-544Z.json",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 11,
@@ -154,13 +154,13 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 0,
-      "duration_ms": 115
+      "duration_ms": 51
     },
     {
       "id": "misk-hub-programs",
       "status": "ok",
       "extracted": 5,
-      "snapshot_path": "data/raw/source-snapshots/misk-hub-programs-2026-07-17T03-36-29-315Z.html",
+      "snapshot_path": "data/raw/source-snapshots/misk-hub-programs-2026-07-17T08-28-16-544Z.html",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 10,
@@ -171,13 +171,13 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 0,
-      "duration_ms": 3243
+      "duration_ms": 3530
     },
     {
       "id": "dhahran-expo-calendar",
       "status": "ok",
       "extracted": 16,
-      "snapshot_path": "data/raw/source-snapshots/dhahran-expo-calendar-2026-07-17T03-36-29-315Z.html",
+      "snapshot_path": "data/raw/source-snapshots/dhahran-expo-calendar-2026-07-17T08-28-16-544Z.html",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 16,
@@ -188,64 +188,30 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 7,
-      "duration_ms": 563
+      "duration_ms": 830
     },
     {
       "id": "ithra-events",
       "status": "ok",
       "extracted": 130,
-      "snapshot_path": "data/raw/source-snapshots/ithra-events-2026-07-17T03-36-29-315Z.json",
+      "snapshot_path": "data/raw/source-snapshots/ithra-events-2026-07-17T08-28-16-544Z.json",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 131,
-      "new_candidates": 6,
-      "refreshed_candidates": 124,
+      "new_candidates": 0,
+      "refreshed_candidates": 130,
       "missing_from_latest_run": 0,
       "approved_linked_preserved": 131,
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 92,
-      "duration_ms": 1192
-    },
-    {
-      "id": "sdaia-academy-programs",
-      "status": "ok",
-      "extracted": 0,
-      "snapshot_path": "data/raw/source-snapshots/sdaia-academy-programs-2026-07-17T03-36-29-315Z.html",
-      "note": "No future date-complete candidates found by the conservative extractor.",
-      "fetch_mode": "direct",
-      "source_existing_active": 0,
-      "new_candidates": 0,
-      "refreshed_candidates": 0,
-      "missing_from_latest_run": 0,
-      "approved_linked_preserved": 0,
-      "ended_extracted": 0,
-      "ended_new": 0,
-      "past_rows_skipped": 0,
-      "duration_ms": 90228
-    },
-    {
-      "id": "discover-aseer-events",
-      "status": "ok",
-      "extracted": 0,
-      "snapshot_path": "data/raw/source-snapshots/discover-aseer-events-2026-07-17T03-36-29-315Z.html",
-      "note": "Recovered via live-browser-recovery official evidence. Primary page failed: HTTP 500. No future date-complete candidates found by the conservative extractor.",
-      "fetch_mode": "live-browser-recovery",
-      "source_existing_active": 1,
-      "new_candidates": 0,
-      "refreshed_candidates": 0,
-      "missing_from_latest_run": 0,
-      "approved_linked_preserved": 1,
-      "ended_extracted": 0,
-      "ended_new": 0,
-      "past_rows_skipped": 0,
-      "duration_ms": 7303
+      "duration_ms": 1216
     },
     {
       "id": "saudi-water-authority-events",
       "status": "ok",
       "extracted": 8,
-      "snapshot_path": "data/raw/source-snapshots/saudi-water-authority-events-2026-07-17T03-36-29-315Z.html",
+      "snapshot_path": "data/raw/source-snapshots/saudi-water-authority-events-2026-07-17T08-28-16-544Z.html",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 8,
@@ -256,13 +222,13 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 1,
-      "duration_ms": 1329
+      "duration_ms": 1020
     },
     {
       "id": "sfda-events",
       "status": "ok",
       "extracted": 8,
-      "snapshot_path": "data/raw/source-snapshots/sfda-events-2026-07-17T03-36-29-315Z.html",
+      "snapshot_path": "data/raw/source-snapshots/sfda-events-2026-07-17T08-28-16-544Z.html",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 8,
@@ -273,30 +239,13 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 1,
-      "duration_ms": 13786
-    },
-    {
-      "id": "riyadh-city-events",
-      "status": "ok",
-      "extracted": 0,
-      "snapshot_path": "data/raw/source-snapshots/riyadh-city-events-2026-07-17T03-36-29-315Z.html",
-      "note": "No future date-complete candidates found by the conservative extractor.",
-      "fetch_mode": "direct",
-      "source_existing_active": 93,
-      "new_candidates": 0,
-      "refreshed_candidates": 0,
-      "missing_from_latest_run": 0,
-      "approved_linked_preserved": 93,
-      "ended_extracted": 0,
-      "ended_new": 0,
-      "past_rows_skipped": 0,
-      "duration_ms": 17491
+      "duration_ms": 30343
     },
     {
       "id": "sdaia-calendar-events",
       "status": "ok",
       "extracted": 2,
-      "snapshot_path": "data/raw/source-snapshots/sdaia-calendar-events-2026-07-17T03-36-29-315Z.html",
+      "snapshot_path": "data/raw/source-snapshots/sdaia-calendar-events-2026-07-17T08-28-16-544Z.html",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 2,
@@ -307,13 +256,13 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 1,
-      "duration_ms": 19795
+      "duration_ms": 19931
     },
     {
       "id": "scega-exhibitions-conferences",
       "status": "ok",
       "extracted": 4,
-      "snapshot_path": "data/raw/source-snapshots/scega-exhibitions-conferences-2026-07-17T03-36-29-315Z.json",
+      "snapshot_path": "data/raw/source-snapshots/scega-exhibitions-conferences-2026-07-17T08-28-16-544Z.json",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 4,
@@ -324,30 +273,30 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 0,
-      "duration_ms": 2330
+      "duration_ms": 2654
     },
     {
       "id": "asharqia-chamber-events",
-      "status": "ok",
-      "extracted": 2,
-      "snapshot_path": "data/raw/source-snapshots/asharqia-chamber-events-2026-07-17T03-36-29-315Z.html",
-      "note": "",
-      "fetch_mode": "direct",
-      "source_existing_active": 2,
+      "status": "error",
+      "extracted": 0,
+      "snapshot_path": "",
+      "note": "fetch failed; page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentloaded\"\n",
+      "fetch_mode": "",
+      "source_existing_active": 0,
       "new_candidates": 0,
-      "refreshed_candidates": 2,
+      "refreshed_candidates": 0,
       "missing_from_latest_run": 0,
-      "approved_linked_preserved": 2,
+      "approved_linked_preserved": 0,
       "ended_extracted": 0,
       "ended_new": 0,
-      "past_rows_skipped": 13,
-      "duration_ms": 2152
+      "past_rows_skipped": 0,
+      "duration_ms": 51536
     },
     {
       "id": "umm-al-qura-events",
       "status": "ok",
       "extracted": 6,
-      "snapshot_path": "data/raw/source-snapshots/umm-al-qura-events-2026-07-17T03-36-29-315Z.html",
+      "snapshot_path": "data/raw/source-snapshots/umm-al-qura-events-2026-07-17T08-28-16-544Z.html",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 6,
@@ -358,13 +307,13 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 1,
-      "duration_ms": 10572
+      "duration_ms": 10172
     },
     {
       "id": "madinah-architecture-festival",
       "status": "ok",
       "extracted": 1,
-      "snapshot_path": "data/raw/source-snapshots/madinah-architecture-festival-2026-07-17T03-36-29-315Z.html",
+      "snapshot_path": "data/raw/source-snapshots/madinah-architecture-festival-2026-07-17T08-28-16-544Z.html",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 1,
@@ -375,13 +324,13 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 0,
-      "duration_ms": 1233
+      "duration_ms": 1435
     },
     {
       "id": "hayy-jameel-events",
       "status": "ok",
       "extracted": 8,
-      "snapshot_path": "data/raw/source-snapshots/hayy-jameel-events-2026-07-17T03-36-29-315Z.html",
+      "snapshot_path": "data/raw/source-snapshots/hayy-jameel-events-2026-07-17T08-28-16-544Z.html",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 8,
@@ -392,7 +341,7 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 3,
-      "duration_ms": 26010
+      "duration_ms": 25540
     }
   ],
   "deferred_sources": [
@@ -457,6 +406,16 @@
       "next_due_at": "2026-07-18T09:22:14.505Z"
     },
     {
+      "id": "sdaia-academy-programs",
+      "status": "zero-yield",
+      "last_attempted_at": "2026-07-17T03:36:29.315Z",
+      "error_streak": 0,
+      "zero_yield_streak": 5,
+      "reason": "zero-yield-cooldown",
+      "interval_hours": 24,
+      "next_due_at": "2026-07-18T03:36:29.315Z"
+    },
+    {
       "id": "misk-hub-events",
       "status": "zero-yield",
       "last_attempted_at": "2026-07-11T09:22:14.505Z",
@@ -517,6 +476,16 @@
       "next_due_at": "2026-07-17T14:31:10.875Z"
     },
     {
+      "id": "discover-aseer-events",
+      "status": "zero-yield",
+      "last_attempted_at": "2026-07-17T03:36:29.315Z",
+      "error_streak": 0,
+      "zero_yield_streak": 1,
+      "reason": "zero-yield-cooldown",
+      "interval_hours": 6,
+      "next_due_at": "2026-07-17T09:36:29.315Z"
+    },
+    {
       "id": "saudi-university-events",
       "status": "productive",
       "last_attempted_at": "2026-07-11T09:22:14.505Z",
@@ -525,6 +494,16 @@
       "reason": "declared-cadence",
       "interval_hours": 720,
       "next_due_at": "2026-08-10T09:22:14.505Z"
+    },
+    {
+      "id": "riyadh-city-events",
+      "status": "probe-blocked",
+      "last_attempted_at": "2026-07-17T03:36:29.315Z",
+      "error_streak": 0,
+      "zero_yield_streak": 0,
+      "reason": "error-cooldown",
+      "interval_hours": 6,
+      "next_due_at": "2026-07-17T09:36:29.315Z"
     },
     {
       "id": "makkah-chamber-events",
@@ -637,6 +616,6 @@
       "next_due_at": "2026-07-19T12:50:26.746Z"
     }
   ],
-  "existing_candidates_seen": 482,
+  "existing_candidates_seen": 480,
   "existing_ended_events_seen": 762
 }
