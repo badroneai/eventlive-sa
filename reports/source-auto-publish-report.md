@@ -1,10 +1,10 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-16T19:36:40.164Z
+- published_at: 2026-07-17T03:40:47.544Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 482
-- published_new: 3
+- candidates_seen: 480
+- published_new: 1
 - linked_existing: 462
 - blocked_remaining: 17
 
@@ -17,8 +17,6 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-visit-saudi-calendar-viola-nights-presents-space-motion-20260717-dd4fd4dc | published | event-viola-nights-presents-space-motion | Viola Nights Presents Space Motion |
-| candidate-visit-saudi-calendar-stand-up-comedy-night-20260717-9c0448ef | published | event-stand-up-comedy-night | Stand-Up Comedy Night |
 | candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702 | published | event-music-festival-mdlbeast-soundstorm | Music Festival: MDLBEAST SoundStorm |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
@@ -124,21 +122,15 @@
 | candidate-hayy-jameel-events-hayy-cinema-in-short-film-programme-summer-edition-20260715-d0dace9c | linked-existing | event-hayy-cinema-3 | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-بطولة-المملكة-للبلوت-20260716-4a38d19e | linked-existing | event-بطولة-المملكة-للبلوت | already linked to catalog event |
 | candidate-experience-alula-events-summer-fruits-season-in-alula-20260716-de70ec3a | linked-existing | event-summer-fruits-season-in-alula | already linked to catalog event |
-| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260716-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
-| candidate-ithra-events-echoes-of-the-familiar-20260716-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
-| candidate-ithra-events-ithra-childrens-festival-2026-20260716-d6d5cc99 | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
 | candidate-umm-al-qura-events-البرنامج-الرياضي-الصيفي-لأبناء-منسوبي-جامعة-أم-القرى-20260716-ab972d5f | linked-existing | event-البرنامج-الرياضي-الصيفي-لأبناء-منسوبي-جامعة-أم-القرى | already linked to catalog event |
 | candidate-riyadh-city-events-wrth-summer-art-craft-program-20260716-77021a48 | linked-existing | event-wrth-summer-art-craft-program | already linked to catalog event |
-| candidate-ithra-events-a-home-i-imagine-20260716-7778a5c1 | linked-existing | event-a-home-i-imagine | already linked to catalog event |
-| candidate-ithra-events-childrens-caf-20260716-f5069d9a | linked-existing | event-childrens-caf | already linked to catalog event |
-| candidate-ithra-events-my-family-bouquet-20260716-9570ab84 | linked-existing | event-my-family-bouquet | already linked to catalog event |
-| candidate-visit-saudi-seasons-qaadet-saad-eloud-20260716-6e3644cd | linked-existing | event-qaadet-saad-eloud | already linked to catalog event |
 | candidate-visit-saudi-calendar-al-farabi-comeback-night-20260716-b9d95a79 | linked-existing | event-al-farabi-comeback-night | already linked to catalog event |
-| candidate-visit-saudi-calendar-made-in-egypt-stand-up-comedy-show-by-ahmed-khairy-20260716-3112eabd | linked-existing | event-made-in-egypt-stand-up-comedy-show-by-ahmed-khairy-2 | already linked to catalog event |
 | candidate-mdlbeast-events-unstable-20260717-5647df2e | linked-existing | event-unstable | already linked to catalog event |
 | candidate-ithra-events-build-play-together-20260717-c73728ad | linked-existing | event-build-play-together | already linked to catalog event |
 | candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260717-f563a36e | linked-existing | event-ithra-summer-camp-2026-a-world-of-homes | already linked to catalog event |
 | candidate-ithra-events-tafasahu-make-room-20260717-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
+| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260717-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
+| candidate-ithra-events-echoes-of-the-familiar-20260717-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-ithra-events-leap-then-look-20260717-99d88224 | linked-existing | event-leap-then-look | already linked to catalog event |
 | candidate-ithra-events-summer-youth-program-20260717-a20f7a11 | linked-existing | event-summer-youth-program | already linked to catalog event |
 | candidate-ithra-events-1-2-3-a-little-space-for-me-20260717-a3bc99ba | linked-existing | event-1-2-3-a-little-space-for-me | already linked to catalog event |
@@ -162,6 +154,10 @@
 | candidate-ithra-events-where-we-belong-20260717-44a2729b | linked-existing | event-where-we-belong | already linked to catalog event |
 | candidate-ithra-events-who-lived-here-20260717-11c491ce | linked-existing | event-who-lived-here | already linked to catalog event |
 | candidate-ithra-events-zoom-in-20260717-d8d7bd6d | linked-existing | event-zoom-in | already linked to catalog event |
+| candidate-ithra-events-a-home-i-imagine-20260717-7778a5c1 | linked-existing | event-a-home-i-imagine | already linked to catalog event |
+| candidate-ithra-events-childrens-caf-20260717-f5069d9a | linked-existing | event-childrens-caf | already linked to catalog event |
+| candidate-ithra-events-ithra-childrens-festival-2026-20260717-d6d5cc99 | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
+| candidate-ithra-events-my-family-bouquet-20260717-9570ab84 | linked-existing | event-my-family-bouquet | already linked to catalog event |
 | candidate-ithra-events-kinusaiga-art-20260717-98b157b0 | linked-existing | event-kinusaiga-art | already linked to catalog event |
 | candidate-ithra-events-in-the-home-of-20260717-0dcdc683 | linked-existing | event-in-the-home-of | already linked to catalog event |
 | candidate-ithra-events-play-with-shadows-20260717-9984f169 | linked-existing | event-play-with-shadows | already linked to catalog event |
@@ -176,9 +172,11 @@
 | candidate-visit-saudi-calendar-made-in-egypt-stand-up-comedy-show-by-ahmed-khairy-20260717-5abef07b | linked-existing | event-made-in-egypt-stand-up-comedy-show-by-ahmed-khairy | already linked to catalog event |
 | candidate-ithra-events-museum-story-time-20260717-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
 | candidate-visit-saudi-calendar-mohamed-hamaki-concert-20260717-791ae7fd | linked-existing | event-mohamed-hamaki-concert | already linked to catalog event |
+| candidate-visit-saudi-calendar-viola-nights-presents-space-motion-20260717-dd4fd4dc | linked-existing | event-viola-nights-presents-space-motion | already linked to catalog event |
 | candidate-mdlbeast-events-beast-house-20260717-83049a2a | linked-existing | event-beast-house | already linked to catalog event |
 | candidate-visit-saudi-calendar-saleh-el-nawawy-stand-up-comedy-show-20260717-afedb92f | linked-existing | event-saleh-el-nawawy-stand-up-comedy-show-2 | already linked to catalog event |
 | candidate-visit-saudi-calendar-reggae-with-rsoa-20260717-70d3f305 | linked-existing | event-reggae-with-rsoa | already linked to catalog event |
+| candidate-visit-saudi-calendar-stand-up-comedy-night-20260717-9c0448ef | linked-existing | event-stand-up-comedy-night | already linked to catalog event |
 | candidate-ithra-events-tales-of-the-night-sky-english-20260718-eb5d626a | linked-existing | event-tales-of-the-night-sky-english | already linked to catalog event |
 | candidate-ithra-events-kindergarten-under-the-palm-tree-english-20260718-c72ee6a9 | linked-existing | event-kindergarten-under-the-palm-tree-english | already linked to catalog event |
 | candidate-ithra-events-storyteller-of-the-day-20260718-94528a46 | linked-existing | event-storyteller-of-the-day | already linked to catalog event |

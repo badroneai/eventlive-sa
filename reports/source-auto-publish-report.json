@@ -1,16 +1,16 @@
 {
-  "published_at": "2026-07-16T19:36:40.164Z",
+  "published_at": "2026-07-17T03:40:47.544Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 482,
+  "candidates_seen": 480,
   "totals": {
-    "candidates_seen": 482,
-    "published": 3,
+    "candidates_seen": 480,
+    "published": 1,
     "linked_existing": 462,
     "blocked": 17,
-    "reconciled": 465
+    "reconciled": 463
   },
   "duplicate_catalog_rows_removed": 1,
   "duplicate_catalog_rows": [
@@ -23,16 +23,6 @@
   "canonical_event_ids_remapped": 0,
   "canonical_event_id_remaps": [],
   "published": [
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-viola-nights-presents-space-motion-20260717-dd4fd4dc",
-      "event_id": "event-viola-nights-presents-space-motion",
-      "title": "Viola Nights Presents Space Motion"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-stand-up-comedy-night-20260717-9c0448ef",
-      "event_id": "event-stand-up-comedy-night",
-      "title": "Stand-Up Comedy Night"
-    },
     {
       "candidate_id": "candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702",
       "event_id": "event-music-festival-mdlbeast-soundstorm",
@@ -665,24 +655,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260716-e0a239ef",
-      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
-      "title": "Bedayat: Beginnings of Saudi Art Movement",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260716-cc43c2bd",
-      "event_id": "event-echoes-of-the-familiar",
-      "title": "Echoes of the Familiar",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-childrens-festival-2026-20260716-d6d5cc99",
-      "event_id": "event-ithra-childrens-festival-2026",
-      "title": "Ithra Children's Festival 2026",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-البرنامج-الرياضي-الصيفي-لأبناء-منسوبي-جامعة-أم-القرى-20260716-ab972d5f",
       "event_id": "event-البرنامج-الرياضي-الصيفي-لأبناء-منسوبي-جامعة-أم-القرى",
       "title": "البرنامج الرياضي الصيفي لأبناء منسوبي جامعة أم القرى",
@@ -695,39 +667,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-a-home-i-imagine-20260716-7778a5c1",
-      "event_id": "event-a-home-i-imagine",
-      "title": "A Home I Imagine",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-caf-20260716-f5069d9a",
-      "event_id": "event-childrens-caf",
-      "title": "Children's Café",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-my-family-bouquet-20260716-9570ab84",
-      "event_id": "event-my-family-bouquet",
-      "title": "My Family Bouquet",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-qaadet-saad-eloud-20260716-6e3644cd",
-      "event_id": "event-qaadet-saad-eloud",
-      "title": "Qaadet Saad Eloud",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-al-farabi-comeback-night-20260716-b9d95a79",
       "event_id": "event-al-farabi-comeback-night",
       "title": "Al-Farabi: Comeback Night",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-made-in-egypt-stand-up-comedy-show-by-ahmed-khairy-20260716-3112eabd",
-      "event_id": "event-made-in-egypt-stand-up-comedy-show-by-ahmed-khairy-2",
-      "title": "Made in Egypt: Stand Up Comedy Show by Ahmed Khairy",
       "reason": "already linked to catalog event"
     },
     {
@@ -752,6 +694,18 @@
       "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260717-562bc61d",
       "event_id": "event-tafasahu-make-room",
       "title": "Tafasahu: Make Room",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260717-e0a239ef",
+      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
+      "title": "Bedayat: Beginnings of Saudi Art Movement",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260717-cc43c2bd",
+      "event_id": "event-echoes-of-the-familiar",
+      "title": "Echoes of the Familiar",
       "reason": "already linked to catalog event"
     },
     {
@@ -893,6 +847,30 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-a-home-i-imagine-20260717-7778a5c1",
+      "event_id": "event-a-home-i-imagine",
+      "title": "A Home I Imagine",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-caf-20260717-f5069d9a",
+      "event_id": "event-childrens-caf",
+      "title": "Children's Café",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-childrens-festival-2026-20260717-d6d5cc99",
+      "event_id": "event-ithra-childrens-festival-2026",
+      "title": "Ithra Children's Festival 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-my-family-bouquet-20260717-9570ab84",
+      "event_id": "event-my-family-bouquet",
+      "title": "My Family Bouquet",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-kinusaiga-art-20260717-98b157b0",
       "event_id": "event-kinusaiga-art",
       "title": "Kinusaiga Art",
@@ -977,6 +955,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-viola-nights-presents-space-motion-20260717-dd4fd4dc",
+      "event_id": "event-viola-nights-presents-space-motion",
+      "title": "Viola Nights Presents Space Motion",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-mdlbeast-events-beast-house-20260717-83049a2a",
       "event_id": "event-beast-house",
       "title": "Beast House",
@@ -992,6 +976,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-reggae-with-rsoa-20260717-70d3f305",
       "event_id": "event-reggae-with-rsoa",
       "title": "Reggae With Rsoa",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-stand-up-comedy-night-20260717-9c0448ef",
+      "event_id": "event-stand-up-comedy-night",
+      "title": "Stand-Up Comedy Night",
       "reason": "already linked to catalog event"
     },
     {

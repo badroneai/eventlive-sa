@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T19:43:23.689Z",
+  "generated_at": "2026-07-17T03:45:44.394Z",
   "source_registry": "data/source_registry.json",
   "source_collection_report": "reports/source-collection-report.json",
   "totals": {
@@ -68,7 +68,7 @@
       "cadence": "twice-weekly-extractor-probe",
       "score": 91,
       "has_active_collector": false,
-      "last_collection_status": "",
+      "last_collection_status": "ok",
       "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": -23,
@@ -347,12 +347,12 @@
       "score": 140,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 36,
+      "last_extracted": 34,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 29,
+      "known_candidates": 28,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -738,12 +738,12 @@
       "score": 123,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 12,
+      "last_extracted": 11,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 12,
+      "known_candidates": 11,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -875,7 +875,7 @@
       "cadence": "daily",
       "score": 117,
       "has_active_collector": true,
-      "last_collection_status": "",
+      "last_collection_status": "ok",
       "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": 0,
@@ -1198,13 +1198,13 @@
       "score": 91,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 1,
+      "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
       "known_candidates": 1,
-      "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
+      "next_action": "Run in the 6-hour sync ring; improve zero-yield extractors before widening."
     },
     {
       "id": "diriyah-season",
@@ -1473,7 +1473,7 @@
       "cadence": "twice-weekly-extractor-probe",
       "score": 91,
       "has_active_collector": false,
-      "last_collection_status": "",
+      "last_collection_status": "ok",
       "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": -23,
@@ -1657,14 +1657,14 @@
       "cadence": "daily",
       "score": 71,
       "has_active_collector": true,
-      "last_collection_status": "",
-      "last_extracted": 0,
+      "last_collection_status": "ok",
+      "last_extracted": 2,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
       "known_candidates": 2,
-      "next_action": "Run in the 6-hour sync ring; improve zero-yield extractors before widening."
+      "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
       "id": "qassim-chamber-events",
