@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-07-17T08:31:43.870Z",
+  "published_at": "2026-07-17T14:05:57.726Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -721,27 +721,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20260717-a3bc99ba",
-      "event_id": "event-1-2-3-a-little-space-for-me",
-      "title": "1, 2, 3, A Little Space for Me",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-1-2-3-lets-rhyme-20260717-4d37515a",
-      "event_id": "event-1-2-3-lets-rhyme",
-      "title": "1, 2, 3, Let's Rhyme!",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-ajeeb-in-wonder-house-20260717-caa7ff83",
       "event_id": "event-ajeeb-in-wonder-house",
       "title": "Ajeeb in Wonder House",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-around-the-table-20260717-87d7ec65",
-      "event_id": "event-around-the-table",
-      "title": "Around the Table",
       "reason": "already linked to catalog event"
     },
     {
@@ -883,9 +865,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-play-with-shadows-20260717-9984f169",
-      "event_id": "event-play-with-shadows",
-      "title": "Play with Shadows",
+      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20260717-a3bc99ba",
+      "event_id": "event-1-2-3-a-little-space-for-me",
+      "title": "1, 2, 3, A Little Space for Me",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-1-2-3-lets-rhyme-20260717-4d37515a",
+      "event_id": "event-1-2-3-lets-rhyme",
+      "title": "1, 2, 3, Let's Rhyme!",
       "reason": "already linked to catalog event"
     },
     {
@@ -931,9 +919,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-play-with-shadows-20260717-9984f169",
+      "event_id": "event-play-with-shadows",
+      "title": "Play with Shadows",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-the-house-of-ideas-20260717-26aaa6b2",
       "event_id": "event-the-house-of-ideas",
       "title": "The House of Ideas",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-around-the-table-20260717-87d7ec65",
+      "event_id": "event-around-the-table",
+      "title": "Around the Table",
       "reason": "already linked to catalog event"
     },
     {

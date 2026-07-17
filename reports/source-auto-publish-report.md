@@ -1,6 +1,6 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-17T08:31:43.870Z
+- published_at: 2026-07-17T14:05:57.726Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 480
@@ -133,10 +133,7 @@
 | candidate-ithra-events-echoes-of-the-familiar-20260717-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-ithra-events-leap-then-look-20260717-99d88224 | linked-existing | event-leap-then-look | already linked to catalog event |
 | candidate-ithra-events-summer-youth-program-20260717-a20f7a11 | linked-existing | event-summer-youth-program | already linked to catalog event |
-| candidate-ithra-events-1-2-3-a-little-space-for-me-20260717-a3bc99ba | linked-existing | event-1-2-3-a-little-space-for-me | already linked to catalog event |
-| candidate-ithra-events-1-2-3-lets-rhyme-20260717-4d37515a | linked-existing | event-1-2-3-lets-rhyme | already linked to catalog event |
 | candidate-ithra-events-ajeeb-in-wonder-house-20260717-caa7ff83 | linked-existing | event-ajeeb-in-wonder-house | already linked to catalog event |
-| candidate-ithra-events-around-the-table-20260717-87d7ec65 | linked-existing | event-around-the-table | already linked to catalog event |
 | candidate-ithra-events-balloon-shapes-lab-20260717-7c264d45 | linked-existing | event-balloon-shapes-lab | already linked to catalog event |
 | candidate-ithra-events-built-by-nature-20260717-950b3be0 | linked-existing | event-built-by-nature | already linked to catalog event |
 | candidate-ithra-events-draw-your-story-20260717-6b28e480 | linked-existing | event-draw-your-story | already linked to catalog event |
@@ -160,7 +157,8 @@
 | candidate-ithra-events-my-family-bouquet-20260717-9570ab84 | linked-existing | event-my-family-bouquet | already linked to catalog event |
 | candidate-ithra-events-kinusaiga-art-20260717-98b157b0 | linked-existing | event-kinusaiga-art | already linked to catalog event |
 | candidate-ithra-events-in-the-home-of-20260717-0dcdc683 | linked-existing | event-in-the-home-of | already linked to catalog event |
-| candidate-ithra-events-play-with-shadows-20260717-9984f169 | linked-existing | event-play-with-shadows | already linked to catalog event |
+| candidate-ithra-events-1-2-3-a-little-space-for-me-20260717-a3bc99ba | linked-existing | event-1-2-3-a-little-space-for-me | already linked to catalog event |
+| candidate-ithra-events-1-2-3-lets-rhyme-20260717-4d37515a | linked-existing | event-1-2-3-lets-rhyme | already linked to catalog event |
 | candidate-ithra-events-water-challenges-20260717-eea51834 | linked-existing | event-water-challenges | already linked to catalog event |
 | candidate-ithra-events-finding-nemo-20260717-ee95c1c5 | linked-existing | event-finding-nemo | already linked to catalog event |
 | candidate-ithra-events-house-of-wonder-20260717-9a8dfa3b | linked-existing | event-house-of-wonder | already linked to catalog event |
@@ -168,7 +166,9 @@
 | candidate-ithra-events-my-little-fort-20260717-09d01da3 | linked-existing | event-my-little-fort | already linked to catalog event |
 | candidate-ithra-events-on-this-carpet-20260717-2972e041 | linked-existing | event-on-this-carpet | already linked to catalog event |
 | candidate-ithra-events-sense-the-home-20260717-3a3ca5ae | linked-existing | event-sense-the-home | already linked to catalog event |
+| candidate-ithra-events-play-with-shadows-20260717-9984f169 | linked-existing | event-play-with-shadows | already linked to catalog event |
 | candidate-ithra-events-the-house-of-ideas-20260717-26aaa6b2 | linked-existing | event-the-house-of-ideas | already linked to catalog event |
+| candidate-ithra-events-around-the-table-20260717-87d7ec65 | linked-existing | event-around-the-table | already linked to catalog event |
 | candidate-visit-saudi-calendar-made-in-egypt-stand-up-comedy-show-by-ahmed-khairy-20260717-5abef07b | linked-existing | event-made-in-egypt-stand-up-comedy-show-by-ahmed-khairy | already linked to catalog event |
 | candidate-ithra-events-museum-story-time-20260717-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
 | candidate-visit-saudi-calendar-mohamed-hamaki-concert-20260717-791ae7fd | linked-existing | event-mohamed-hamaki-concert | already linked to catalog event |

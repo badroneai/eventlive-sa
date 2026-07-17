@@ -1,110 +1,72 @@
 # EventLive Official Event Backlog Enrichment
-- Generated at: 2026-07-17T08:33:21.941Z
-- Targets: 100
-- Enriched: 100
-- Fetched: 42
-- Images: 84
-- Fetch failures: 58
+- Generated at: 2026-07-17T14:07:22.502Z
+- Targets: 62
+- Enriched: 62
+- Fetched: 52
+- Images: 56
+- Fetch failures: 10
 
 | Source | Event | Method | Image | Fetch |
 |---|---|---:|---:|---:|
 | Riyadh City Events | Music Festival: MDLBEAST SoundStorm | approved-source-row | yes | fetch failed |
-| Invest Saudi Events | Cityscape Global 2026 | approved-source-row | yes | HTTP 403 |
-| Riyadh City Events | Facility Management Conference & Exhibition | approved-source-row | yes | fetch failed |
-| Saudi Universities and Technical Colleges | Future Frontiers for Businesses: Catalysts for Growth in a Transformational Economy | official-page-meta | no | yes |
-| Invest Saudi Events | Future Investment Initiative (FII 10) | official-page-meta | yes | yes |
-| SDAIA Calendar and Events | Global AI Summit | official-page-meta | no | yes |
-| Riyadh City Events | Global AI Summit (GAIN) | approved-source-row | yes | fetch failed |
-| SDAIA Calendar and Events | Global Forum on the Ethics of AI | official-page-meta | no | yes |
-| Riyadh City Events | Hotel & Hospitality Expo | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Kingdom Business Luxury Travel Congress | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Lighting Design & Technology Expo | approved-source-row | yes | fetch failed |
-| Money20/20 Middle East Official | Money20/20 Middle East | official-page-meta | yes | yes |
-| Riyadh City Events | Riyadh Global Medical Biotechnology Summit | approved-source-row | yes | fetch failed |
-| Visit Saudi Seasons | Saudi Falcons Club Auction | official-page-meta | yes | yes |
-| Riyadh City Events | Saudi Industrial Series | approved-source-row | yes | fetch failed |
-| Visit Saudi Seasons | Saudi International Falcons & Hunting Exhibition | official-page-meta | yes | yes |
-| Riyadh City Events | Saudi Wood Expo | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Smart Cities Saudi Expo | approved-source-row | yes | fetch failed |
-| Saudi Universities and Technical Colleges | The KAUST Imaging and Characterization Core Lab presents: AI for Microscopy Workshop | official-page-meta | no | yes |
-| Riyadh City Events | The Saudi Food Show | approved-source-row | yes | fetch failed |
-| Invest Saudi Events | Web Summit Lisbon 2026 | official-page-meta | yes | yes |
-| Asharqia Chamber Events | معرض وظائف 2026 | approved-source-row | no | fetch failed |
-| Riyadh City Events | INDEX Saudi Arabia (Interior Design Trade Show) | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Saudi Food Manufacturing show | approved-source-row | yes | fetch failed |
-| Asharqia Chamber Events | معرض الحرف والأعمال اليدوية 2026 | approved-source-row | no | fetch failed |
-| Ministry of Culture Commission Calendars | Academic Excellence in Architecture and Design Education | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Art Futures Camp 2026 – Diriyah Art Futures | approved-source-row | yes | fetch failed |
-| Visit Saudi Seasons | Coca-Cola Fan Zone at JAX District | official-page-meta | yes | yes |
-| Riyadh City Events | Coca-Cola Fan Zone For FIFA World Cup 2026 | approved-source-row | no | fetch failed |
-| Ministry of Culture Commission Calendars | Culinary Manufacturing Hubs | approved-source-row | yes | fetch failed |
-| Ministry of Culture Commission Calendars | Design for Good Initiative | approved-source-row | yes | fetch failed |
-| Saudi Universities and Technical Colleges | Egypt Vs Argentina | official-page-meta | no | yes |
-| Riyadh City Events | Eishha (Live It) Fan Zone For FIFA World Cup 2026 | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Esports World Cup | approved-source-row | yes | fetch failed |
-| Saudi Universities and Technical Colleges | FIFA World Cup 2026 Final: Celebrate Football's Biggest Night at the KAUST Fan Zone | official-page-meta | no | yes |
-| Ministry of Culture Commission Calendars | Film Business Accelerator | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Horses and Equestrian Heritage Exhibition | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Immersive Experience: Flying Over Saudi | approved-source-row | yes | fetch failed |
-| Saudi Universities and Technical Colleges | Join us at KAUST Health for Respiratory Health Day | official-page-meta | no | yes |
-| Ministry of Culture Commission Calendars | Jusoor Program | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Laysen Fan Zone – FIFA World Cup 2026 | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Merath – Middle East Museums & Heritage Expo | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Mishkat Summer Camp | approved-source-row | yes | fetch failed |
-| Riyadh City Events | PFL MENA Fight Night | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Poppy Playtime | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Prince Faisal Bin Fahd Art Exhibition: Summer 2026 | approved-source-row | yes | fetch failed |
-| Saudi Universities and Technical Colleges | Quarter-Finals: Join the Celebration at the FIFA Fan Zone | official-page-meta | no | yes |
-| Riyadh City Events | Registration for International Research Competition on Non-Terrestrial Networks | approved-source-row | yes | fetch failed |
-| Saudi Universities and Technical Colleges | Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH | official-page-meta | no | yes |
-| Riyadh City Events | Riyadh Season: BLVD City | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Ruh Space | approved-source-row | yes | fetch failed |
-| Riyadh City Events | SAIF Summer Program | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Saudi Entertainment and Amusement Expo | approved-source-row | yes | fetch failed |
-| Eye of Riyadh Events | Saudi Industrial Series | approved-source-row | yes | HTTP 403 |
-| Riyadh City Events | Saudi Light and Sound (SLS) Expo | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Saudi Warehousing & Logistics Expo | approved-source-row | yes | fetch failed |
-| Eye of Riyadh Events | Saudi Wood Expo 2026 | approved-source-row | yes | HTTP 403 |
-| Riyadh City Events | Saudi WoodShow | approved-source-row | yes | fetch failed |
-| Saudi Universities and Technical Colleges | Semi-Finals: Join the Celebration at the FIFA Fan Zone | official-page-meta | no | yes |
-| Riyadh City Events | Sikkat Al-Atimah (Street Food) Fan Zone – FIFA World Cup 2026 | approved-source-row | yes | fetch failed |
-| Ministry of Culture Commission Calendars | SITAR | approved-source-row | yes | fetch failed |
-| Ministry of Culture Commission Calendars | Skill Development Initiative | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Solitaire Fan Zone – FIFA World Cup 2026 | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Solo Art Exhibition Series | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Summer Camp at the National Museum: Summer Wonders | approved-source-row | yes | fetch failed |
-| Experience AlUla Events | Summer Fruits Season in AlUla | official-page-meta | yes | yes |
-| Riyadh City Events | Summer Splash Running event | approved-source-row | yes | fetch failed |
-| Visit Saudi Summer Calendar PDF | Taste of the World | official-page-meta | yes | yes |
-| Ministry of Culture Commission Calendars | The Architecture and Design Café | approved-source-row | yes | fetch failed |
-| Visit Saudi Summer Calendar PDF | The Comeback | official-page-meta | yes | yes |
-| Ministry of Culture Commission Calendars | The Continuing Professional Development Initiative | approved-source-row | yes | fetch failed |
-| Visit Saudi Seasons | The Groves | official-page-meta | yes | yes |
-| Ministry of Culture Commission Calendars | The Guidelines for Culture and Arts in the Public Realm | approved-source-row | yes | fetch failed |
-| Ministry of Culture Commission Calendars | The Saudi Music Hub | approved-source-row | yes | fetch failed |
-| Ministry of Culture Commission Calendars | Urban transformation Initiative | approved-source-row | yes | fetch failed |
-| Riyadh City Events | World Cup 2026 Fan Zone at Kimpton KAFD | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Wrth Summer Art & Craft Program | approved-source-row | yes | fetch failed |
-| Visit Saudi Summer Calendar PDF | أسبوع العطور | official-page-meta | yes | yes |
-| Monsha'at All Events | أسبوع العقار والمقاولات 12- 16 يوليو 2026م | approved-source-row | no | fetch failed |
-| Visit Saudi Summer Calendar PDF | أوركسترا Game of Thrones | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | أوركسترا Harry Potter | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | الأسبوع الصيني | official-page-meta | yes | yes |
-| Jouf University Summer Programs | البرنامج الصيفي بجامعة الجوف 2026 | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | الحفلات الغنائية | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | اليوم العالمي لآيس كريم بالتعاون مع كلمشي | official-page-meta | yes | yes |
-| Qassim University Events | انطلاق النادي الصيفي التاسع لجامعة القصيم | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | برندة | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | بطولة أبطال المملكة للشطرنج | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | بطولة المملكة للبلوت | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | بوابة المونديال – كأس العالم في جدة | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | بيوني الشرف | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | جدة بروميناد Fan Zone | official-page-meta | no | yes |
-| Visit Saudi Summer Calendar PDF | سكاي فيلج | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | سكة الأطعمة | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | سوق الثلاثاء الشعبي | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | صندوق أسامة من مخرج ثمانية | official-page-meta | no | yes |
-| Visit Saudi Summer Calendar PDF | صيف غابة رغدان في الباحة 2026 | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | ضحكات الرياض | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | عروض الفنون الأدائية التقليدية | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | عمر الجمل - حفلة ستاند أب كوميدي | official-page-meta | yes | yes |
+| Qassim Chamber Events | عمليات إدارة الموارد البشرية | approved-source-row | yes | HTTP 403 |
+| Visit Saudi Summer Calendar PDF | عيشوا المونديال مع بنش مارك - عبادي الجوهر أرينا | approved-source-row | yes | The operation was aborted due to timeout |
+| Visit Saudi Summer Calendar PDF | فعالية رمي السهام | approved-source-row | yes | The operation was aborted due to timeout |
+| Visit Saudi Summer Calendar PDF | فعالية سيّر | approved-source-row | yes | The operation was aborted due to timeout |
+| Visit Saudi Summer Calendar PDF | قرية آل ينفع | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | قرية الأطاولة التراثية | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | قرية الموسى التراثية | approved-source-row | yes | The operation was aborted due to timeout |
+| Visit Saudi Summer Calendar PDF | قصور العسابلة | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | قصور وقاع ابو نقطة المتحمي | official-page-meta | yes | yes |
+| Monsha'at All Events | لقاءات مراكز دعم المنشآت | approved-source-row | no | fetch failed |
+| Monsha'at All Events | لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة) | approved-source-row | no | fetch failed |
+| Jazan Chamber Events | متطلبات نظام إدارة المرافق ISO 41001 للمنشآت الصغيرة والمتوسطة | approved-source-row | yes | fetch failed |
+| Visit Saudi Summer Calendar PDF | مزرعة أعناب | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | مزرعة الليوان | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | مزرعة ركايب | official-page-meta | no | yes |
+| Visit Saudi Summer Calendar PDF | معرض الصيف للفنون | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | معرض في تتبّع ذكريات غامرة | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | معرض قلب البحر | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | منطقة مشجعي كأس العالم 2026 | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | مهرجان أبها للتسوق | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | مهرجان المأكولات الشعبية | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | مهرجان صوت أبها SAF | official-page-meta | yes | yes |
+| Najran Municipality Summer Events | مهرجان صيف نجران 2026 «صيفنا هايل» | approved-source-row | yes | fetch failed |
+| Visit Saudi Summer Calendar PDF | مهرجان لحن المملكة | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | ورث الفن | official-page-meta | yes | yes |
+| Experience AlUla Events | AlUla Arts Festival | official-page-meta | yes | yes |
+| Experience AlUla Events | AlUla Skies Festival | official-page-meta | yes | yes |
+| Experience AlUla Events | AlUla Tour | official-page-meta | yes | yes |
+| Experience AlUla Events | AlUla Trail Race | official-page-meta | yes | yes |
+| Experience AlUla Events | AlUla Wellness Festival | official-page-meta | yes | yes |
+| Experience AlUla Events | Ancient Kingdoms Festival | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | IN ACT - ACT IX | official-page-meta | no | yes |
+| Visit Saudi Summer Calendar PDF | IN ACT - ACT X | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | IN ACT ANNIVERSARY - ACT XI | official-page-meta | yes | yes |
+| Experience AlUla Events | Ultra Gobi AlUla | official-page-meta | yes | yes |
+| Experience AlUla Events | Winter at Tantora | official-page-meta | yes | yes |
+| dmg events Official | Big 5 Construct Saudi | official-page-meta | yes | yes |
+| Eye of Riyadh Official | CIPS MENA Procurement and Supply Chain Futures conference and awards | official-page-meta | yes | yes |
+| Eye of Riyadh Official | Global Proptech Summit 2026 | official-page-meta | yes | yes |
+| dmg events Official | HVAC R Saudi Arabia | official-page-meta | yes | yes |
+| Eye of Riyadh Official | Real Estate Future Forum | official-page-meta | yes | yes |
+| Eye of Riyadh Official | Real Estate Supply Chain Forum | official-page-meta | yes | yes |
+| dmg events Official | Saudi FM & Clean | official-page-meta | yes | yes |
+| Middle East Banking AI & Analytics Summit Official | 12th Middle East Banking AI & Analytics Summit 2026 | official-page-meta | no | yes |
+| Middle East Enterprise AI & Analytics Summit Official | 15th Middle East Enterprise AI & Analytics Summit | official-page-meta | no | yes |
+| Umm Al-Qura University Events Center | دورة اساسيات المجهر الالكتروني الماسح SEM | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دورة الفحوصات المكروبيولوجية لمياه الشرب: الأسس العلمية والتطبيقات البحثية | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دورة تحضير البيئات وتعريف السلالات البكتيرية | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دورة تقنية PCR بالمعامل الحيوية الجزيئية | official-page-meta | yes | yes |
+| Madinah International Architecture Festival | مهرجان المدينة المنورة الدولي للعمارة 2026 | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Arts | Global Positioning System | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Arts | Red Wind, Coral Worlds | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | “Kef Hayyak?” 3rd Edition Screenings and Awards Ceremony | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | July 2026 | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | In Short: Film Programme — Summer Edition | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Explorers | As Told by The Land: Traces & Memory | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Learning | Recess: An After-School Programme for Teens | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Makers | Introduction to Pottery Course with Pharah Al-Ghalib | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Jameel Library | July Community Programmes | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Jameel Library | Summer Reading Challenge | official-page-meta | yes | yes |
