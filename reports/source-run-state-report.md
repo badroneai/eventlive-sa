@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-07-18T13:56:49.576Z
+Generated at: 2026-07-18T19:35:05.348Z
 
 ## Operating Rule
 
@@ -9,13 +9,13 @@ Raw collection is not publication. Every source run preserves evidence, separate
 ## Totals
 
 - Sources: 86
-- Attempted this run: 30
-- Deferred by adaptive cadence: 16
-- Productive: 20
-- Zero-yield: 8
+- Attempted this run: 19
+- Deferred by adaptive cadence: 27
+- Productive: 19
+- Zero-yield: 0
 - Collector errors: 0
 - Persistent collector errors: 6
-- Probe blocked: 2
+- Probe blocked: 0
 - Auto-publish eligible source lanes: 12
 
 ## Stalled / Blocked Focus
@@ -78,7 +78,7 @@ Call log:
 | 20 | code-mcit-programs | active-collector | zero-yield | 0 | yes | Zero-yield for 72 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 21 | misk-hub-programs | active-collector | productive | 5 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 22 | dhahran-expo-calendar | active-collector | productive | 16 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
-| 23 | ithra-events | active-collector | productive | 128 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 23 | ithra-events | active-collector | productive | 125 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 24 | saudi-digital-academy | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed |
 | 25 | sdaia-academy-programs | active-collector | zero-yield | 0 | no | Zero-yield for 6 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 26 | saudi-events-app | partnership | partnership | 0 | no | Partnership/API lane; do not scrape protected or app-only data. |
@@ -103,7 +103,7 @@ Call log:
 | 45 | saudi-university-events | evidence-monitor | productive | 6 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 46 | expofp-eventseye-saudi | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
 | 47 | meetup-facebook-saudi-events | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
-| 48 | sfda-events | active-collector | zero-yield | 0 | no | Recovered via live-browser-recovery official evidence. Primary page failed: fetch failed. No future date-complete candidates found by the conservative extractor. |
+| 48 | sfda-events | active-collector | productive | 8 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 49 | saudi-contractors-authority-events | extractor-backlog | not-attempted | 0 | no | Probe HTML/API shape, then decide whether an extractor is worth adding. |
 | 50 | saudi-winter-calendar-spa | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 51 | riyadh-city-events | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed |

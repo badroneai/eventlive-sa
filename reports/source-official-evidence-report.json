@@ -1,26 +1,26 @@
 {
   "schema": "eventlive.source-official-evidence-report.v1",
-  "generated_at": "2026-07-18T13:50:58.099Z",
+  "generated_at": "2026-07-18T19:33:03.011Z",
   "source_candidates": "data/source_candidates.json",
   "source_evidence": "data/source_official_evidence.json",
   "totals": {
     "entries": 3,
-    "verified_entries": 0,
-    "candidates_verified": 0,
+    "verified_entries": 2,
+    "candidates_verified": 2,
     "deduplicated": 0
   },
   "results": [
     {
       "id": "middle-east-banking-ai-summit-2026",
-      "status": "failed",
-      "matched": 0,
-      "note": "Required official title/date/venue tokens did not all match."
+      "status": "verified",
+      "matched": 1,
+      "note": "Official evidence matched."
     },
     {
       "id": "middle-east-enterprise-ai-summit-2026",
-      "status": "failed",
-      "matched": 0,
-      "note": "Required official title/date/venue tokens did not all match."
+      "status": "verified",
+      "matched": 1,
+      "note": "Official evidence matched."
     },
     {
       "id": "jeddah-fintech-week-2026",

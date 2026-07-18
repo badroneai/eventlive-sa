@@ -1,6 +1,6 @@
 # EventLive Official Resolver Report
 
-- generated_at: 2026-07-18T13:52:51.928Z
+- generated_at: 2026-07-18T19:34:25.419Z
 - source_ops_report: reports/source-ops-report.json
 - leads_seen: 10
 - resolver_tasks: 8
@@ -10,27 +10,16 @@
 
 | Priority | Lead | Source | City | Quality | Target sources | Next action |
 |---:|---|---|---|---|---|---|
-| 107 | Dubai Property Expo in Al Khobar | Eventbrite Saudi Arabia | Khobar | strong-lead/70 | dhahran-expo-calendar, informa-connect-saudi-events, madinah-chamber-events, ricec-events, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 107 | Family Office Investment Summit | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | informa-connect-saudi-events, ricec-events, asharqia-chamber-events, dhahran-expo-calendar, jcci-events-center | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 107 | Jeddah Fintech Week 2026 | Eventbrite Saudi Arabia | Jeddah | strong-lead/70 | informa-connect-saudi-events, abha-chamber-events, baha-chamber-events, future-skills-catalog, hail-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 97 | 25TH WPC Energy Congress | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, informa-connect-saudi-events, saudi-water-authority-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 97 | Family Office Investment Meeting | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | informa-connect-saudi-events, saudi-contractors-authority-events, asharqia-chamber-events, invest-saudi-events, jcci-events-center | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 97 | Sucession Planning Program | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | code-mcit-programs, cst-events-news, diriyah-season, enjoy-saudi-events, fii10-official-program | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 92 | SUNAA 2026 | Eye of Riyadh Events | Saudi Arabia | watch-lead/60 | ricec-events, dhahran-expo-calendar, rfecc-whats-on, asharqia-chamber-events, informa-connect-saudi-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 72 | Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities | Eventbrite Saudi Arabia | Riyadh | watch-lead/60 | future-skills-catalog, informa-connect-saudi-events, saudi-digital-academy, sdaia-academy-programs, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 84 | Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities | Eventbrite Saudi Arabia | Riyadh | watch-lead/60 | future-skills-catalog, informa-connect-saudi-events, saudi-digital-academy, sdaia-academy-programs, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 72 | Family Office Investment - Riyadh, Saudi Arabia | Eventbrite Saudi Arabia | Riyadh | watch-lead/60 | informa-connect-saudi-events, invest-saudi-events, jouf-chamber-events, madinah-chamber-events, monshaat-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 
 ## Search Pack
-
-### Dubai Property Expo in Al Khobar
-
-- [site:dhahranexpo.com.sa "Dubai Property Expo in Al Khobar" "Khobar"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22)
-- [site:informaconnect.com "Dubai Property Expo in Al Khobar" "Khobar"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22)
-- [site:mcci.org.sa "Dubai Property Expo in Al Khobar" "Khobar"](https://www.google.com/search?q=site%3Amcci.org.sa%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22)
-- [site:ricec.com "Dubai Property Expo in Al Khobar" "Khobar"](https://www.google.com/search?q=site%3Aricec.com%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22)
-- [site:sdaia.gov.sa "Dubai Property Expo in Al Khobar" "Khobar"](https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22)
-- ["Dubai Property Expo in Al Khobar" "Khobar" official](https://www.google.com/search?q=%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22%20official)
-- ["Dubai Property Expo in Al Khobar" "Khobar" organizer](https://www.google.com/search?q=%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22%20organizer)
-- ["Dubai Property Expo in Al Khobar" "Khobar" tickets](https://www.google.com/search?q=%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22%20tickets)
 
 ### Family Office Investment Summit
 
@@ -107,4 +96,15 @@
 - ["Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities" "Riyadh" official](https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20official)
 - ["Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities" "Riyadh" organizer](https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20organizer)
 - ["Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities" "Riyadh" tickets](https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20tickets)
+
+### Family Office Investment - Riyadh, Saudi Arabia
+
+- [site:informaconnect.com "Family Office Investment - Riyadh, Saudi Arabia" "Riyadh"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22)
+- [site:investsaudi.sa "Family Office Investment - Riyadh, Saudi Arabia" "Riyadh"](https://www.google.com/search?q=site%3Ainvestsaudi.sa%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22)
+- [site:ajcci.org.sa "Family Office Investment - Riyadh, Saudi Arabia" "Riyadh"](https://www.google.com/search?q=site%3Aajcci.org.sa%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22)
+- [site:mcci.org.sa "Family Office Investment - Riyadh, Saudi Arabia" "Riyadh"](https://www.google.com/search?q=site%3Amcci.org.sa%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22)
+- [site:monshaat.gov.sa "Family Office Investment - Riyadh, Saudi Arabia" "Riyadh"](https://www.google.com/search?q=site%3Amonshaat.gov.sa%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22)
+- ["Family Office Investment - Riyadh, Saudi Arabia" "Riyadh" official](https://www.google.com/search?q=%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22%20official)
+- ["Family Office Investment - Riyadh, Saudi Arabia" "Riyadh" organizer](https://www.google.com/search?q=%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22%20organizer)
+- ["Family Office Investment - Riyadh, Saudi Arabia" "Riyadh" tickets](https://www.google.com/search?q=%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22%20tickets)
 

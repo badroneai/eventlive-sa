@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T13:52:51.928Z",
+  "generated_at": "2026-07-18T19:34:25.419Z",
   "source_ops_report": "reports/source-ops-report.json",
   "source_registry": "data/source_registry.json",
   "totals": {
@@ -8,99 +8,6 @@
     "high_priority": 0
   },
   "tasks": [
-    {
-      "lead_id": "candidate-eventbrite-saudi-dubai-property-expo-in-al-khobar-17th-18th-july-2026-danube-20260718-3fa94488",
-      "title": "Dubai Property Expo in Al Khobar",
-      "city": "Khobar",
-      "starts_at": "2026-07-18T10:00:00+03:00",
-      "source_label": "Eventbrite Saudi Arabia",
-      "discovery_quality": "strong-lead",
-      "discovery_score": 70,
-      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 107,
-      "target_sources": [
-        {
-          "id": "dhahran-expo-calendar",
-          "name": "Dhahran Expo Calendar",
-          "url": "https://dhahranexpo.com.sa",
-          "domain": "dhahranexpo.com.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 86
-        },
-        {
-          "id": "informa-connect-saudi-events",
-          "name": "Informa Connect Saudi Event Portfolio",
-          "url": "https://informaconnect.com/",
-          "domain": "informaconnect.com",
-          "trust_level": "official",
-          "source_type": "conference-organizer",
-          "score": 78
-        },
-        {
-          "id": "madinah-chamber-events",
-          "name": "Madinah Chamber Events",
-          "url": "https://www.mcci.org.sa/Event/events",
-          "domain": "mcci.org.sa",
-          "trust_level": "official",
-          "source_type": "venue-calendar",
-          "score": 78
-        },
-        {
-          "id": "ricec-events",
-          "name": "Riyadh International Convention and Exhibition Center",
-          "url": "https://www.ricec.com/",
-          "domain": "ricec.com",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 78
-        },
-        {
-          "id": "sdaia-calendar-events",
-          "name": "SDAIA Calendar and Events",
-          "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
-          "domain": "sdaia.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 78
-        }
-      ],
-      "searches": [
-        {
-          "query": "site:dhahranexpo.com.sa \"Dubai Property Expo in Al Khobar\" \"Khobar\"",
-          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22"
-        },
-        {
-          "query": "site:informaconnect.com \"Dubai Property Expo in Al Khobar\" \"Khobar\"",
-          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22"
-        },
-        {
-          "query": "site:mcci.org.sa \"Dubai Property Expo in Al Khobar\" \"Khobar\"",
-          "url": "https://www.google.com/search?q=site%3Amcci.org.sa%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22"
-        },
-        {
-          "query": "site:ricec.com \"Dubai Property Expo in Al Khobar\" \"Khobar\"",
-          "url": "https://www.google.com/search?q=site%3Aricec.com%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22"
-        },
-        {
-          "query": "site:sdaia.gov.sa \"Dubai Property Expo in Al Khobar\" \"Khobar\"",
-          "url": "https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22"
-        },
-        {
-          "query": "\"Dubai Property Expo in Al Khobar\" \"Khobar\" official",
-          "url": "https://www.google.com/search?q=%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22%20official"
-        },
-        {
-          "query": "\"Dubai Property Expo in Al Khobar\" \"Khobar\" organizer",
-          "url": "https://www.google.com/search?q=%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22%20organizer"
-        },
-        {
-          "query": "\"Dubai Property Expo in Al Khobar\" \"Khobar\" tickets",
-          "url": "https://www.google.com/search?q=%22Dubai%20Property%20Expo%20in%20Al%20Khobar%22%20%22Khobar%22%20tickets"
-        }
-      ],
-      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
-    },
     {
       "lead_id": "candidate-eventbrite-saudi-family-office-investment-summit-b2b-networking-for-investors-founders-20260902-7b861a03",
       "title": "Family Office Investment Summit",
@@ -668,7 +575,7 @@
       "discovery_quality": "watch-lead",
       "discovery_score": 60,
       "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit, non-saudi-eventbrite-domain",
-      "resolver_priority": 72,
+      "resolver_priority": 84,
       "target_sources": [
         {
           "id": "future-skills-catalog",
@@ -744,6 +651,99 @@
         {
           "query": "\"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\" tickets",
           "url": "https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20tickets"
+        }
+      ],
+      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
+    },
+    {
+      "lead_id": "candidate-eventbrite-saudi-family-office-investment-riyadh-saudi-arabia-20260902-fc391e91",
+      "title": "Family Office Investment - Riyadh, Saudi Arabia",
+      "city": "Riyadh",
+      "starts_at": "2026-09-02T09:30:00+03:00",
+      "source_label": "Eventbrite Saudi Arabia",
+      "discovery_quality": "watch-lead",
+      "discovery_score": 60,
+      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit, non-saudi-eventbrite-domain",
+      "resolver_priority": 72,
+      "target_sources": [
+        {
+          "id": "informa-connect-saudi-events",
+          "name": "Informa Connect Saudi Event Portfolio",
+          "url": "https://informaconnect.com/",
+          "domain": "informaconnect.com",
+          "trust_level": "official",
+          "source_type": "conference-organizer",
+          "score": 74
+        },
+        {
+          "id": "invest-saudi-events",
+          "name": "Invest Saudi Events",
+          "url": "https://www.investsaudi.sa/events",
+          "domain": "investsaudi.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 66
+        },
+        {
+          "id": "jouf-chamber-events",
+          "name": "Jouf Chamber Events",
+          "url": "https://ajcci.org.sa/event/",
+          "domain": "ajcci.org.sa",
+          "trust_level": "official",
+          "source_type": "venue-calendar",
+          "score": 66
+        },
+        {
+          "id": "madinah-chamber-events",
+          "name": "Madinah Chamber Events",
+          "url": "https://www.mcci.org.sa/Event/events",
+          "domain": "mcci.org.sa",
+          "trust_level": "official",
+          "source_type": "venue-calendar",
+          "score": 66
+        },
+        {
+          "id": "monshaat-events",
+          "name": "Monsha'at All Events",
+          "url": "https://www.monshaat.gov.sa/en/events-list",
+          "domain": "monshaat.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 66
+        }
+      ],
+      "searches": [
+        {
+          "query": "site:informaconnect.com \"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:investsaudi.sa \"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ainvestsaudi.sa%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:ajcci.org.sa \"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aajcci.org.sa%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:mcci.org.sa \"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Amcci.org.sa%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:monshaat.gov.sa \"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Amonshaat.gov.sa%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22"
+        },
+        {
+          "query": "\"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22%20official"
+        },
+        {
+          "query": "\"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22%20organizer"
+        },
+        {
+          "query": "\"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
