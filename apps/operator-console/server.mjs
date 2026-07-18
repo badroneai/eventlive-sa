@@ -1,5 +1,8 @@
+import { createHash, timingSafeEqual } from 'node:crypto';
 import fs from 'node:fs';
 import http from 'node:http';
+import { isIP } from 'node:net';
+import { hostname as getHostname, networkInterfaces } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
@@ -36,8 +39,13 @@ const workspaceRoot = path.join(process.cwd(), 'workspaces');
 const distRoot = path.join(process.cwd(), 'dist');
 const reportsRoot = path.join(process.cwd(), 'reports');
 const port = Number(process.env.OPERATOR_CONSOLE_PORT || 4173);
-const host = process.env.OPERATOR_CONSOLE_HOST || '127.0.0.1';
+const host = String(process.env.OPERATOR_CONSOLE_HOST || '127.0.0.1').trim() || '127.0.0.1';
+const operatorConsoleToken = String(process.env.OPERATOR_CONSOLE_TOKEN || '').trim();
+const operatorConsoleTokenDigest = operatorConsoleToken ? digestToken(operatorConsoleToken) : null;
+const configuredConsoleOrigin = normalizeConsoleOrigin(process.env.OPERATOR_CONSOLE_ORIGIN || '');
+const allowedConsoleOrigins = buildAllowedConsoleOrigins();
 const MAX_BODY_BYTES = 15 * 1024 * 1024;
+const SAFE_API_METHODS = new Set(['GET', 'HEAD', 'OPTIONS']);
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=utf-8',
@@ -54,9 +62,122 @@ const MIME_TYPES = {
   '.xlsx': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
 };
 
-function sendJson(res, statusCode, payload) {
-  res.writeHead(statusCode, { 'content-type': 'application/json; charset=utf-8' });
+function sendJson(res, statusCode, payload, headers = {}) {
+  res.writeHead(statusCode, {
+    'content-type': 'application/json; charset=utf-8',
+    ...headers
+  });
   res.end(`${JSON.stringify(payload, null, 2)}\n`);
+}
+
+function normalizeConsoleOrigin(value) {
+  const rawValue = String(value || '').trim();
+  if (!rawValue) return null;
+
+  try {
+    const parsed = new URL(rawValue);
+    if (!['http:', 'https:'].includes(parsed.protocol) || parsed.origin === 'null') {
+      throw new Error('unsupported protocol');
+    }
+    return parsed.origin;
+  } catch {
+    throw new Error('OPERATOR_CONSOLE_ORIGIN must be a valid http(s) origin');
+  }
+}
+
+function isLoopbackHost(value) {
+  const normalized = String(value || '').trim().toLowerCase().replace(/^\[|\]$/g, '');
+  if (normalized === 'localhost' || normalized === '::1') return true;
+  return isIP(normalized) === 4 && normalized.split('.')[0] === '127';
+}
+
+function isWildcardHost(value) {
+  const normalized = String(value || '').trim().toLowerCase().replace(/^\[|\]$/g, '');
+  return normalized === '0.0.0.0' || normalized === '::';
+}
+
+function buildHttpOrigin(value) {
+  const normalized = String(value || '').trim().toLowerCase().replace(/^\[|\]$/g, '');
+  if (!normalized) return null;
+  const originHost = isIP(normalized) === 6 ? `[${normalized}]` : normalized;
+
+  try {
+    return new URL(`http://${originHost}:${port}`).origin;
+  } catch {
+    return null;
+  }
+}
+
+function buildAllowedConsoleOrigins() {
+  if (configuredConsoleOrigin) return new Set([configuredConsoleOrigin]);
+
+  const origins = new Set();
+  const addHost = (value) => {
+    const origin = buildHttpOrigin(value);
+    if (origin) origins.add(origin);
+  };
+
+  if (isLoopbackHost(host)) {
+    [host, 'localhost', '127.0.0.1', '::1'].forEach(addHost);
+    return origins;
+  }
+
+  if (!isWildcardHost(host)) {
+    addHost(host);
+    return origins;
+  }
+
+  ['localhost', '127.0.0.1', '::1', getHostname()].forEach(addHost);
+  Object.values(networkInterfaces()).flat().forEach((address) => {
+    if (address?.address && isIP(address.address)) addHost(address.address);
+  });
+  return origins;
+}
+
+function digestToken(value) {
+  return createHash('sha256').update(String(value), 'utf8').digest();
+}
+
+function isStateChangingApiRequest(req) {
+  return !SAFE_API_METHODS.has(String(req.method || 'GET').toUpperCase());
+}
+
+function hasValidBearerToken(req) {
+  if (!operatorConsoleTokenDigest) return false;
+  const authorization = String(req.headers.authorization || '');
+  const match = /^Bearer ([^\s]+)$/i.exec(authorization);
+  if (!match) return false;
+
+  return timingSafeEqual(operatorConsoleTokenDigest, digestToken(match[1]));
+}
+
+function hasValidConsoleOrigin(req) {
+  const suppliedHeaders = [req.headers.origin, req.headers.referer].filter(Boolean);
+  if (!suppliedHeaders.length) return false;
+
+  return suppliedHeaders.every((value) => {
+    try {
+      return allowedConsoleOrigins.has(new URL(String(value)).origin);
+    } catch {
+      return false;
+    }
+  });
+}
+
+function authorizeStateChange(req, res) {
+  if (!hasValidBearerToken(req)) {
+    sendJson(res, 401, { error: 'Valid bearer token required' }, {
+      'www-authenticate': 'Bearer realm="EventLive Operator Console"'
+    });
+    return false;
+  }
+
+  if (!hasValidConsoleOrigin(req)) {
+    sendJson(res, 403, { error: 'Origin or Referer must match the operator console origin' });
+    return false;
+  }
+
+  return true;
 }
 
 function sendFile(res, filePath) {
@@ -369,6 +490,7 @@ const server = http.createServer(async (req, res) => {
     const pathname = url.pathname;
 
     if (pathname.startsWith('/api/')) {
+      if (isStateChangingApiRequest(req) && !authorizeStateChange(req, res)) return;
       await handleApi(req, res, pathname);
       return;
     }
@@ -400,6 +522,11 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(port, host, () => {
-  console.log(`OPERATOR_CONSOLE_OK http://${host}:${port}`);
-});
+if (!isLoopbackHost(host) && !operatorConsoleToken) {
+  console.error(`OPERATOR_CONSOLE_REFUSED ${host}:${port} requires OPERATOR_CONSOLE_TOKEN for non-loopback binding`);
+  process.exitCode = 1;
+} else {
+  server.listen(port, host, () => {
+    console.log(`OPERATOR_CONSOLE_OK http://${host}:${port}`);
+  });
+}

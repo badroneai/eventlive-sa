@@ -318,6 +318,15 @@ function escapeHtml(value = '') {
     .replace(/"/g, '&quot;');
 }
 
+function safeHref(value = '') {
+  try {
+    const url = new URL(String(value || '').trim());
+    return url.protocol === 'http:' || url.protocol === 'https:' ? url.href : '#';
+  } catch {
+    return '#';
+  }
+}
+
 function slugify(value = 'event') {
   const slug = String(value || 'event')
     .normalize('NFKD')
@@ -1629,11 +1638,15 @@ function eventPublicJson(event = {}, canonical = '', schemaImage = '') {
   const online = isOnlineEvent(event);
   return {
     id: event.id,
+    file_slug: event.file_slug,
+    slug: event.slug,
     title: event.title,
     summary: event.summary,
     canonical_url: canonical,
     detail_url: event.detail_url,
     calendar_url: event.ics_url,
+    directions_url: event.directions_url,
+    maps_url: event.maps_url,
     source_label: event.source_label,
     source_url: event.source_url,
     evidence_url: event.evidence_url,
@@ -1700,10 +1713,10 @@ function eventDetailActions(event) {
   const icsHref = String(event.ics_url || '').replace(/^\.\/events\//, './');
   if (isOnlineEvent(event)) {
     if (event.source_url || event.evidence_url) {
-      actions.push(`<a class="cta" href="${escapeHtml(event.source_url || event.evidence_url)}">الدخول أو التسجيل</a>`);
+      actions.push(`<a class="cta" href="${escapeHtml(safeHref(event.source_url || event.evidence_url))}">الدخول أو التسجيل</a>`);
     }
   } else if (event.directions_url) {
-    actions.push(`<a class="cta" href="${escapeHtml(event.directions_url)}">الاتجاهات</a>`);
+    actions.push(`<a class="cta" href="${escapeHtml(safeHref(event.directions_url))}">الاتجاهات</a>`);
   }
   actions.push(`<a class="cta" href="${escapeHtml(icsHref)}">أضف للتقويم</a>`);
   if (event.status !== 'ended') {
@@ -1711,7 +1724,7 @@ function eventDetailActions(event) {
     actions.push('<p class="cta-status" data-attendance-status aria-live="polite">يحفظ الصفحة والجدول على هذا الجهاز عند ضعف الشبكة.</p>');
   }
   if (!isOnlineEvent(event) && event.source_url) {
-    actions.push(`<a class="cta" href="${escapeHtml(event.source_url)}">المصدر</a>`);
+    actions.push(`<a class="cta" href="${escapeHtml(safeHref(event.source_url))}">المصدر</a>`);
   }
   return actions.join('');
 }
@@ -1721,10 +1734,10 @@ function eventQuickActions(event) {
   const icsHref = String(event.ics_url || '').replace(/^\.\/events\//, './');
   if (isOnlineEvent(event)) {
     if (event.registration_url || event.ticket_url || event.source_url || event.evidence_url) {
-      actions.push(`<a href="${escapeHtml(event.registration_url || event.ticket_url || event.source_url || event.evidence_url)}">الدخول أو التسجيل</a>`);
+      actions.push(`<a href="${escapeHtml(safeHref(event.registration_url || event.ticket_url || event.source_url || event.evidence_url))}">الدخول أو التسجيل</a>`);
     }
   } else if (event.directions_url) {
-    actions.push(`<a href="${escapeHtml(event.directions_url)}">الاتجاهات</a>`);
+    actions.push(`<a href="${escapeHtml(safeHref(event.directions_url))}">الاتجاهات</a>`);
   }
   if (icsHref) actions.push(`<a href="${escapeHtml(icsHref)}">أضف للتقويم</a>`);
   return actions.length ? `<nav class="event-quick-actions" aria-label="إجراءات سريعة">${actions.join('')}</nav>` : '';
@@ -1935,7 +1948,7 @@ function renderEventSessions(event, sessionsTitle, sessionsNote) {
     const end = session.ends_at || session.end_at || start;
     const day = String(start).slice(0, 10);
     const search = normalizeArabicSearch([session.title, session.session_title, session.speaker, session.room, session.track].filter(Boolean).join(' '));
-    const sourceLink = session.source_url ? `<a class="session-source" href="${escapeHtml(session.source_url)}" rel="noopener noreferrer">المصدر الرسمي</a>` : '';
+    const sourceLink = session.source_url ? `<a class="session-source" href="${escapeHtml(safeHref(session.source_url))}" rel="noopener noreferrer">المصدر الرسمي</a>` : '';
     return `<article class="session" id="${escapeHtml(sessionAnchor(session, index))}" data-session-item data-day="${escapeHtml(day)}" data-room="${escapeHtml(session.room || '')}" data-search="${escapeHtml(search)}" data-start="${escapeHtml(start)}" data-end="${escapeHtml(end)}"><div class="session-top"><div><b>${escapeHtml(session.title || session.session_title || 'جلسة')}</b>${session.speaker ? `<p class="session-speaker">${escapeHtml(session.speaker)}</p>` : ''}</div><time class="session-time" datetime="${escapeHtml(start)}">من ${escapeHtml(formatSessionTime(start))} إلى ${escapeHtml(formatSessionTime(end))}</time></div><div class="meta">${session.room ? `<span class="chip">${escapeHtml(session.room)}</span>` : ''}${session.track ? `<span class="chip">${escapeHtml(session.track)}</span>` : ''}<span class="session-status" data-session-status>قادمة</span>${sourceLink}</div></article>`;
   }).join('');
   return `<section class="section" data-event-agenda><div class="wrap"><div class="agenda-head"><div><span class="eyebrow">برنامج موثق</span><h2>${sessionsTitle}</h2></div>${detailed ? `<p>${agendaSummary}</p>` : ''}</div>${sessionsNote}${toolbar}<div class="timeline">${timeline}</div></div></section>`;
@@ -2914,7 +2927,7 @@ function reconcileMissingLocalEventImages(events) {
       if (!event?.image_url || !localPublicAssetExists(event.image_url)) return article;
       return article.replace(/src=["']([^"']*assets\/event-(?:images|covers)\/[^"']+)["']/g, (match, src) => {
         if (localPublicAssetExists(src) && !isRejectedImageAssetUrl(src)) return match;
-        return `src="${event.image_url}"`;
+        return `src="${escapeHtml(event.image_url)}"`;
       });
     });
     if (next !== before) {
@@ -3536,7 +3549,7 @@ function writeOwnerSearchGrowthPage(events = []) {
   <section class="hero"><div class="wrap"><span class="eyebrow">للمالك فقط</span><h1>نمو الظهور والسلطة</h1><p class="lead">قائمة تتجدد مع كل بناء، بما فيه دورة الجلب كل ست ساعات، لترتيب أثر التحسين قبل العمل اليدوي أو التواصل مع المصادر.</p><div class="signal-strip"><div class="signal"><span>نشطة</span><b>${growth.active_events}</b></div><div class="signal"><span>تحتاج صورة مصدر</span><b>${growth.gaps.source_image}</b></div><div class="signal"><span>تحتاج وصفًا</span><b>${growth.gaps.long_description}</b></div><div class="signal"><span>تحتاج مكانًا</span><b>${growth.gaps.verified_place}</b></div></div></div></section>
   <section class="section"><div class="wrap"><h2>خط أساس ظهور Google</h2><p class="lead">قياس مضبوط للسعودية أُخذ في ${escapeHtml(growth.search_visibility_baseline?.captured_date_riyadh || 'غير محدد')}. Search Console: <strong>${escapeHtml(growth.search_visibility_baseline?.search_console?.status || 'غير محدد')}</strong>. القياس الأسبوعي الرسمي يعتمد على الانطباعات والنقرات ومتوسط الترتيب بعد اكتمال معالجة Google.</p>${operationalTable(['عبارة البحث', 'النية', 'النتيجة الحالية', 'العنوان الظاهر'], rankQueries, (row) => `<tr><td>${escapeHtml(row.query)}</td><td>${escapeHtml(row.intent)}</td><td>${escapeHtml(rankResult(row))}</td><td>${escapeHtml(row.eventlive?.title || 'لا توجد نتيجة EventLive ضمن النطاق')}</td></tr>`)}</div></section>
   <section class="section"><div class="wrap"><h2>أعلى فجوات المحتوى أولوية</h2>${operationalTable(['الأولوية', 'الفعالية', 'المدينة', 'البداية', 'الفجوات'], growth.priority_events.slice(0, 40), (row) => `<tr><td>${row.priority}</td><td><a href="${escapeHtml(row.detail_url)}">${escapeHtml(row.title)}</a></td><td>${escapeHtml(row.city)}</td><td>${escapeHtml(row.starts_at)}</td><td>${row.missing.map((item) => escapeHtml(gapLabels[item] || item)).join('، ')}</td></tr>`)}</div></section>
-  <section class="section"><div class="wrap"><h2>فرص البيانات والربط الرسمي</h2><p class="lead">هذه قائمة قرار، وليست حملة إرسال آلية. أي تواصل أو اتفاق روابط يحتاج اعتمادًا بشريًا ولا يتضمن تبادل روابط مصطنعًا.</p>${operationalTable(['المصدر', 'النشطة', 'الإجمالي', 'مدن', 'الخطوة التالية'], growth.authority_opportunities, (row) => `<tr><td><a href="${escapeHtml(row.source_url)}" target="_blank" rel="noopener">${escapeHtml(row.host)}</a></td><td>${row.active_events}</td><td>${row.events}</td><td>${row.cities.length}</td><td>${escapeHtml(row.next_action)}</td></tr>`)}</div></section>
+  <section class="section"><div class="wrap"><h2>فرص البيانات والربط الرسمي</h2><p class="lead">هذه قائمة قرار، وليست حملة إرسال آلية. أي تواصل أو اتفاق روابط يحتاج اعتمادًا بشريًا ولا يتضمن تبادل روابط مصطنعًا.</p>${operationalTable(['المصدر', 'النشطة', 'الإجمالي', 'مدن', 'الخطوة التالية'], growth.authority_opportunities, (row) => `<tr><td><a href="${escapeHtml(safeHref(row.source_url))}" target="_blank" rel="noopener">${escapeHtml(row.host)}</a></td><td>${row.active_events}</td><td>${row.events}</td><td>${row.cities.length}</td><td>${escapeHtml(row.next_action)}</td></tr>`)}</div></section>
   </main>${footer('./')}</body></html>`;
   writeText(path.join(distDir, 'owner-search-growth.html'), html);
   return growth;
@@ -4249,7 +4262,7 @@ function writeLiveUpdatesPage(events) {
   writeJson('updates.json', report);
   const canonical = absoluteUrl('updates.html');
   const empty = '<article class="activation-card"><h2>لا توجد تحديثات حية الآن</h2><p>عند وصول تحديث من منظم أو مصدر موثوق سيظهر هنا مع الفعالية والجلسة المرتبطة.</p></article>';
-  const cards = rows.length ? rows.map((row) => `<article class="activation-card"><span class="chip">${escapeHtml(row.level_label)}</span><h2>${escapeHtml(row.title)}</h2><p>${escapeHtml(row.message)}</p><p class="muted">${escapeHtml(row.event_title)} · ${escapeHtml(row.event_city)} · ${formatDate(row.updated_at)}</p><div class="activation-actions"><a class="cta" href="${escapeHtml(row.detail_url)}">فتح الفعالية</a>${row.directions_url ? `<a class="cta" href="${escapeHtml(row.directions_url)}">الاتجاهات</a>` : ''}</div></article>`).join('') : empty;
+  const cards = rows.length ? rows.map((row) => `<article class="activation-card"><span class="chip">${escapeHtml(row.level_label)}</span><h2>${escapeHtml(row.title)}</h2><p>${escapeHtml(row.message)}</p><p class="muted">${escapeHtml(row.event_title)} · ${escapeHtml(row.event_city)} · ${formatDate(row.updated_at)}</p><div class="activation-actions"><a class="cta" href="${escapeHtml(row.detail_url)}">فتح الفعالية</a>${row.directions_url ? `<a class="cta" href="${escapeHtml(safeHref(row.directions_url))}">الاتجاهات</a>` : ''}</div></article>`).join('') : empty;
   const html = `<!doctype html><html lang="ar" dir="rtl"><head>
   ${baseHead({
     title: `التحديثات الحية | ${platformName}`,
@@ -5449,7 +5462,7 @@ function writeActivationPage(report) {
         </div>
         <p class="muted">${escapeHtml(group.acquisition?.next_action || 'افحص صفحة المصدر واستخرج البرنامج التفصيلي.')}</p>
         <div class="activation-actions">
-          ${group.source_url ? `<a class="cta" href="${escapeHtml(group.source_url)}">فتح المصدر</a>` : ''}
+          ${group.source_url ? `<a class="cta" href="${escapeHtml(safeHref(group.source_url))}">فتح المصدر</a>` : ''}
           <a class="cta" href="./activation.json">JSON</a>
         </div>
       </article>`).join('')
@@ -5600,10 +5613,54 @@ function activationRuntimeScript() {
 (function () {
   var events = window.EVENTLIVE_EVENTS || [];
   function qs(name) { return new URLSearchParams(location.search).get(name) || ''; }
+  function wantedEventKey() { return (qs('event') || qs('id') || '').trim(); }
+  function eventFeedUrl(key) { return '/events/' + encodeURIComponent(key) + '.json'; }
+  function rootCalendarUrl(value, key) {
+    var text = String(value || '');
+    if (/^\\.\\/events\\//.test(text)) return text.slice(1);
+    if (/^\\/events\\//.test(text) || /^https?:\\/\\//i.test(text)) return text;
+    return key ? '/events/' + encodeURIComponent(key) + '.ics' : './events.ics';
+  }
+  function normalizeFetchedEvent(event, key) {
+    var fileSlug = event.file_slug || key || event.id || '';
+    return Object.assign({}, event, {
+      file_slug: fileSlug,
+      slug: event.slug || fileSlug,
+      city_label: event.city_label || event.city || '',
+      ics_url: rootCalendarUrl(event.ics_url || event.calendar_url, fileSlug)
+    });
+  }
+  async function fetchJson(url) {
+    var response = await fetch(url, { cache: 'no-store' });
+    if (!response.ok) throw new Error('HTTP ' + response.status);
+    return response.json();
+  }
+  async function loadEvents() {
+    var wanted = wantedEventKey();
+    if (wanted) {
+      try {
+        events = [normalizeFetchedEvent(await fetchJson(eventFeedUrl(wanted)), wanted)];
+        return;
+      } catch (error) {
+        events = [];
+      }
+    }
+    var today = await fetchJson('./today.json');
+    var rows = Array.isArray(today.queue) ? today.queue : (today.focus ? [today.focus] : []);
+    events = rows.map(function (event) { return normalizeFetchedEvent(event, event.file_slug || event.id || ''); });
+  }
   function localUrl(value) {
     if (!value) return './events.html';
     if (/^https?:\\/\\//i.test(value)) return value;
     return value.replace(/^\\.\\//, './');
+  }
+  function safeHref(value) {
+    try {
+      var url = new URL(String(value || '').trim());
+      return url.protocol === 'http:' || url.protocol === 'https:' ? url.href : '#';
+    } catch (error) {
+      return '#';
+    }
   }
   function abs(value) { return new URL(localUrl(value), location.href).href; }
   function fmt(value) {
@@ -5635,7 +5692,7 @@ function activationRuntimeScript() {
     return { label: 'منتهية', note: 'انتهت منذ ' + remaining(now - (Number.isFinite(end) ? end : start)) };
   }
   function pickEvent() {
-    var wanted = decodeURIComponent(qs('event') || qs('id') || '').trim();
+    var wanted = wantedEventKey();
     var selected = events.find(function (event) {
       return [event.file_slug, event.id, event.slug].filter(Boolean).includes(wanted);
     });
@@ -5652,12 +5709,28 @@ function activationRuntimeScript() {
     });
   }
   function renderSessions(event) {
-    var html = (event.sessions || []).length
-      ? event.sessions.map(function (session) {
-          return '<tr><td>' + fmt(session.starts_at) + '</td><td>' + (session.title || 'جلسة') + '</td><td>' + (session.room || '') + '</td></tr>';
-        }).join('')
-      : '<tr><td colspan="3">لا توجد جلسات تفصيلية منشورة لهذه الفعالية حتى الآن.</td></tr>';
-    document.querySelectorAll('[data-event-sessions]').forEach(function (el) { el.innerHTML = html; });
+    var sessions = Array.isArray(event.sessions) ? event.sessions : [];
+    document.querySelectorAll('[data-event-sessions]').forEach(function (el) {
+      el.replaceChildren();
+      if (!sessions.length) {
+        var emptyRow = document.createElement('tr');
+        var emptyCell = document.createElement('td');
+        emptyCell.colSpan = 3;
+        emptyCell.textContent = 'لا توجد جلسات تفصيلية منشورة لهذه الفعالية حتى الآن.';
+        emptyRow.appendChild(emptyCell);
+        el.appendChild(emptyRow);
+        return;
+      }
+      sessions.forEach(function (session) {
+        var row = document.createElement('tr');
+        [fmt(session.starts_at), session.title || 'جلسة', session.room || ''].forEach(function (value) {
+          var cell = document.createElement('td');
+          cell.textContent = value;
+          row.appendChild(cell);
+        });
+        el.appendChild(row);
+      });
+    });
   }
   function render() {
     var event = pickEvent();
@@ -5679,15 +5752,21 @@ function activationRuntimeScript() {
     attr('[data-event-link]', 'href', detail);
     attr('[data-event-share-link]', 'href', share);
     attr('[data-event-calendar]', 'href', localUrl(event.ics_url));
-    attr('[data-event-source-link]', 'href', event.source_url || event.evidence_url || detail);
-    attr('[data-event-directions]', 'href', event.directions_url || event.maps_url || detail);
+    var sourceHref = event.source_url || event.evidence_url;
+    var directionsHref = event.directions_url || event.maps_url;
+    attr('[data-event-source-link]', 'href', sourceHref ? safeHref(sourceHref) : detail);
+    attr('[data-event-directions]', 'href', directionsHref ? safeHref(directionsHref) : detail);
     attr('[data-event-image]', 'src', localUrl(event.image_url));
     attr('[data-event-image]', 'alt', event.image_alt || event.title);
     attr('[data-whatsapp]', 'href', 'https://wa.me/?text=' + encodeURIComponent(event.title + ' - ' + detail));
     renderSessions(event);
   }
-  render();
-  setInterval(render, 60000);
+  function start() {
+    render();
+    setInterval(render, 60000);
+  }
+  if (events.length) start();
+  else loadEvents().then(start).catch(function () { render(); });
 })();
 </script>`;
 }
@@ -5712,7 +5791,6 @@ function activationPageShell({ fileName, title, description, body, extraCss = ''
     @media print{.topbar,.footer,.activation-actions{display:none}.activation-hero{background:#fff;color:#10231d;padding:0 0 18px}.section{padding:14px 0}.activation-card{box-shadow:none}}
     ${extraCss}
   </style>
-  <script>window.EVENTLIVE_EVENTS = ${scriptValue(eventsForActivationPages)};</script>
 </head>
 <body>
 ${header('./')}
@@ -5723,10 +5801,7 @@ ${activationRuntimeScript()}
 </html>`;
 }
 
-let eventsForActivationPages = [];
-
-async function writeActivationUtilityPages(events) {
-  eventsForActivationPages = events.map(compactActivationEvent);
+async function writeActivationUtilityPages() {
   writeText(path.join(distDir, 'qr-event.svg'), await QRCode.toString(absoluteUrl('events.html'), { type: 'svg', color: { dark: '#10231d', light: '#ffffff' } }));
   writeText(path.join(distDir, 'qr-share.svg'), await QRCode.toString(absoluteUrl('share.html'), { type: 'svg', color: { dark: '#0d6b52', light: '#ffffff' } }));
   writeText(path.join(distDir, 'qr-today.svg'), await QRCode.toString(absoluteUrl('today-events.html'), { type: 'svg', color: { dark: '#e5484d', light: '#ffffff' } }));
@@ -5784,6 +5859,7 @@ ${footer('./')}
   function updateNetwork() { network.textContent = navigator.onLine ? 'متصل، الجداول تتحدث عند توفر جديد' : 'دون اتصال، نعرض آخر نسخة محفوظة'; }
   function eventJsonPath(saved) { return String(saved.path || '').replace(/\\.html(?:[?#].*)?$/, '.json'); }
   function el(name, className, text) { var node = document.createElement(name); if (className) node.className = className; if (text) node.textContent = text; return node; }
+  function safeHref(value) { try { var url = new URL(String(value || '').trim()); return url.protocol === 'http:' || url.protocol === 'https:' ? url.href : '#'; } catch (error) { return '#'; } }
   function removeEvent(eventId, card) {
     var saved = savedEvents(); delete saved[eventId]; localStorage.setItem(storageKey, JSON.stringify(saved)); card.remove();
     if (!list.children.length) empty.hidden = false;
@@ -5798,7 +5874,7 @@ ${footer('./')}
     var actions = el('div', 'attendance-actions');
     var open = el('a', 'cta', 'افتح الجدول'); open.href = saved.path || './events.html';
     actions.append(open);
-    if (event.directions_url) { var directions = el('a', 'cta', 'الاتجاهات'); directions.href = event.directions_url; actions.append(directions); }
+    if (event.directions_url) { var directions = el('a', 'cta', 'الاتجاهات'); directions.href = safeHref(event.directions_url); actions.append(directions); }
     var remove = el('button', 'cta attendance-remove', 'إزالة'); remove.type = 'button'; remove.addEventListener('click', function () { removeEvent(eventId, card); }); actions.append(remove);
     body.append(actions); card.append(image, body); list.append(card);
   }
@@ -6881,11 +6957,72 @@ function pruneExcludedJson(value, excludedSlugs) {
   return value;
 }
 
-function refreshInlineEventsPayload(html, events) {
-  return html.replace(
+function externalizeTodayEventsPayload(html) {
+  let next = html.replace(
     /const events = \[[\s\S]*?\];\s*const savedEventsKey/,
-    `const events = ${scriptValue(events)};\n    const savedEventsKey`
+    'let events = [];\n    const savedEventsKey'
   );
+  if (!next.includes('function safeRuntimeHref(value')) {
+    next = next.replace(
+      '    function readSavedEvents() {',
+      `    function safeRuntimeHref(value, fallback = '#') {
+      try {
+        const url = new URL(String(value || '').trim(), location.href);
+        return url.protocol === 'http:' || url.protocol === 'https:' ? url.href : fallback;
+      } catch (error) {
+        return fallback;
+      }
+    }
+
+    function readSavedEvents() {`
+    );
+  }
+  next = next
+    .replace(
+      "      merged.ics_url = merged.ics_url || merged.calendar_url || './events.ics';",
+      `      const calendarUrl = merged.ics_url || merged.calendar_url || './events.ics';
+      merged.ics_url = calendarUrl.startsWith('./events/') ? calendarUrl.slice(1) : calendarUrl;`
+    )
+    .replace(
+      "      return event.live_schedule_ready && event.url ? event.url : (event.detail_url || './events.html');",
+      "      return safeRuntimeHref(event.live_schedule_ready && event.url ? event.url : event.detail_url, './events.html');"
+    )
+    .replace(
+      'escapeHTML(event.ics_url)',
+      "escapeHTML(safeRuntimeHref(event.ics_url, './events.ics'))"
+    )
+    .replace(
+      'escapeHTML(event.directions_url)',
+      "escapeHTML(safeRuntimeHref(event.directions_url, '#'))"
+    )
+    .replace(
+      /    render\(\);\n    setInterval\(render, 30000\);/,
+      `    async function loadTodayEvents() {
+      try {
+        const response = await fetch('./today.json', { cache: 'no-store' });
+        if (!response.ok) throw new Error('HTTP ' + response.status);
+        const payload = await response.json();
+        events = Array.isArray(payload.queue) ? payload.queue : [];
+      } catch (error) {
+        controls.modeSummary.textContent = 'تعذر تحميل موجز الفعاليات الآن. حاول تحديث الصفحة.';
+      }
+      render();
+    }
+
+    loadTodayEvents();
+    setInterval(render, 30000);`
+    );
+  return next;
+}
+
+function externalizeTodayAttendancePage() {
+  const filePath = path.join(distDir, 'today.html');
+  if (!fs.existsSync(filePath)) return 0;
+  const before = fs.readFileSync(filePath, 'utf8');
+  const after = externalizeTodayEventsPayload(before);
+  if (after === before) return 0;
+  writeText(filePath, after);
+  return 1;
 }
 
 function pruneExcludedHtml(html, excludedSlugs) {
@@ -6917,7 +7054,7 @@ function pruneExcludedPublicArtifacts(events) {
     const before = fs.readFileSync(filePath, 'utf8');
     let after = before;
     if (ext === '.html') {
-      after = pruneExcludedHtml(refreshInlineEventsPayload(before, events), excludedSlugs);
+      after = pruneExcludedHtml(before, excludedSlugs);
     } else {
       try {
         after = `${JSON.stringify(pruneExcludedJson(JSON.parse(before), excludedSlugs), null, 2)}\n`;
@@ -7078,7 +7215,7 @@ writeAudiencePages(events);
 writeAudiencesIndexPage(events);
 writeTemporalPages(events);
 writeLiveOperationalFeeds(events);
-await writeActivationUtilityPages(events);
+await writeActivationUtilityPages();
 writeAttendancePage();
 const homePatched = patchHomePage(events);
 const browsePatched = patchEventsBrowsePage(events);
@@ -7100,6 +7237,7 @@ if (!incrementalBuild) reconcileStaleEventRefs(events);
 const imageRefsPatched = incrementalBuild ? 0 : reconcileStaleEventImages(events);
 const missingImageRefsPatched = incrementalBuild ? 0 : reconcileMissingLocalEventImages(events);
 const excludedReferencePatched = incrementalBuild ? 0 : pruneExcludedPublicArtifacts(events);
+externalizeTodayAttendancePage();
 const searchIntentPages = writeSearchIntentPages(events);
 const guidesIntentPatched = patchGuidesHubWithSearchIntentPages(searchIntentPages);
 writeBrandIcon();

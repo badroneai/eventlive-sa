@@ -11,6 +11,19 @@
       "ends_at": "2026-05-03T10:00:00+03:00",
       "updated_at": "2026-03-09T14:00:00+03:00",
       "sessions_count": -1,
+      "sessions": [
+        {
+          "title": "جلسة اختبار URL",
+          "starts_at": "2026-05-03T10:30:00+03:00",
+          "ends_at": "2026-05-03T11:00:00+03:00",
+          "source_url": "javascript:alert(1)"
+        }
+      ],
+      "program_outline": {
+        "source_url": "javascript:alert(1)"
+      },
+      "registration_url": "javascript:alert(1)",
+      "image_url": "x\" onerror=alert(1)",
       "source_label": "اختبار",
       "source_confidence": "sample-record",
       "approval_status": "reviewed",
