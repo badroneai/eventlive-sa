@@ -2,6 +2,8 @@ const SESSION_TYPE_OPTIONS = ['keynote', 'panel', 'workshop', 'talk', 'break', '
 const SESSION_STATUS_OPTIONS = ['draft', 'scheduled', 'live', 'completed', 'cancelled'];
 const LANGUAGE_OPTIONS = ['ar', 'en', 'bilingual'];
 const UI_LANGUAGES = ['en', 'ar'];
+const OPERATOR_TOKEN_SESSION_KEY = 'eventlive-operator-console-token';
+const SAFE_API_METHODS = new Set(['GET', 'HEAD', 'OPTIONS']);
 const INTAKE_EDITABLE_COLUMNS = [
   'program_title',
   'organizer_name',
@@ -85,6 +87,9 @@ const translations = {
     none: 'none',
     workspaceListRefreshed: 'Workspace list refreshed.',
     workspaceCreated: 'Workspace created.',
+    operatorTokenPrompt: 'Enter OPERATOR_CONSOLE_TOKEN for this browser tab:',
+    operatorTokenRejected: 'The token was rejected. Enter the current OPERATOR_CONSOLE_TOKEN:',
+    operatorTokenRequired: 'An operator console token is required for this action.',
     workspaceReloaded: 'Workspace reloaded.',
     draftSaved: 'Draft saved.',
     validationPassed: 'Validation passed.',
@@ -439,6 +444,9 @@ const translations = {
     none: 'لا يوجد',
     workspaceListRefreshed: 'تم تحديث قائمة مساحات العمل.',
     workspaceCreated: 'تم إنشاء مساحة العمل.',
+    operatorTokenPrompt: 'أدخل OPERATOR_CONSOLE_TOKEN لهذا التبويب:',
+    operatorTokenRejected: 'رُفض الرمز. أدخل قيمة OPERATOR_CONSOLE_TOKEN الحالية:',
+    operatorTokenRequired: 'يلزم رمز كونسول المشغّل لتنفيذ هذا الإجراء.',
     workspaceReloaded: 'تمت إعادة تحميل مساحة العمل.',
     draftSaved: 'تم حفظ المسودة.',
     validationPassed: 'نجح التحقق.',
@@ -923,11 +931,62 @@ function showToast(message, type = 'info') {
   }, 2800);
 }
 
+function readOperatorToken() {
+  try {
+    return String(window.sessionStorage.getItem(OPERATOR_TOKEN_SESSION_KEY) || '').trim();
+  } catch {
+    return '';
+  }
+}
+
+function rememberOperatorToken(token) {
+  try {
+    window.sessionStorage.setItem(OPERATOR_TOKEN_SESSION_KEY, token);
+  } catch {
+    // The token still applies to the current request when session storage is unavailable.
+  }
+}
+
+function forgetOperatorToken() {
+  try {
+    window.sessionStorage.removeItem(OPERATOR_TOKEN_SESSION_KEY);
+  } catch {
+    // Nothing else to clear.
+  }
+}
+
+function promptForOperatorToken(messageKey) {
+  const token = String(window.prompt(t(messageKey)) || '').trim();
+  if (token) rememberOperatorToken(token);
+  return token;
+}
+
 async function api(path, options = {}) {
-  const response = await fetch(path, {
-    headers: { 'content-type': 'application/json' },
-    ...options
-  });
+  const method = String(options.method || 'GET').toUpperCase();
+  const stateChanging = !SAFE_API_METHODS.has(method);
+  const headers = new Headers(options.headers || {});
+  if (!headers.has('content-type')) headers.set('content-type', 'application/json');
+
+  if (stateChanging) {
+    const token = readOperatorToken() || promptForOperatorToken('operatorTokenPrompt');
+    if (!token) throw new Error(t('operatorTokenRequired'));
+    headers.set('authorization', `Bearer ${token}`);
+  }
+
+  const requestOptions = {
+    ...options,
+    method,
+    headers
+  };
+  let response = await fetch(path, requestOptions);
+
+  if (stateChanging && response.status === 401) {
+    forgetOperatorToken();
+    const replacementToken = promptForOperatorToken('operatorTokenRejected');
+    if (!replacementToken) throw new Error(t('operatorTokenRequired'));
+    headers.set('authorization', `Bearer ${replacementToken}`);
+    response = await fetch(path, requestOptions);
+  }
 
   const payload = await response.json();
   if (!response.ok) {

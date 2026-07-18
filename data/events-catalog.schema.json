@@ -35,7 +35,7 @@
           "program_title": { "type": "string" },
           "organizer": { "type": "string", "minLength": 1 },
           "organizer_name": { "type": "string" },
-          "organizer_url": { "type": "string" },
+          "organizer_url": { "type": "string", "format": "uri", "pattern": "^https?://" },
           "performers": {
             "type": "array",
             "items": {
@@ -48,7 +48,7 @@
                   "properties": {
                     "name": { "type": "string", "minLength": 1 },
                     "type": { "type": "string", "enum": ["person", "group", "organization"] },
-                    "url": { "type": "string" }
+                    "url": { "type": "string", "format": "uri", "pattern": "^https?://" }
                   }
                 }
               ]
@@ -67,7 +67,7 @@
             "properties": {
               "provider": { "type": "string" },
               "source_method": { "type": "string" },
-              "source_url": { "type": "string" },
+              "source_url": { "type": "string", "format": "uri", "pattern": "^https?://" },
               "collected_at": { "type": "string", "format": "date-time" },
               "official_description": { "type": "string" },
               "duration_text": { "type": "string" },
@@ -90,17 +90,29 @@
               }
             }
           },
-          "image_url": { "type": "string" },
-          "original_image_url": { "type": "string" },
+          "image_url": {
+            "type": "string",
+            "anyOf": [
+              { "format": "uri", "pattern": "^https?://" },
+              { "pattern": "^/assets/event-(?:images|covers)/[^\"'<>\\s]+$" }
+            ]
+          },
+          "original_image_url": {
+            "type": "string",
+            "anyOf": [
+              { "format": "uri", "pattern": "^https?://" },
+              { "pattern": "^/assets/event-(?:images|covers)/[^\"'<>\\s]+$" }
+            ]
+          },
           "image_alt": { "type": "string" },
-          "image_source_url": { "type": "string" },
+          "image_source_url": { "type": "string", "format": "uri", "pattern": "^https?://" },
           "image_discovered_at": { "type": "string", "format": "date-time" },
           "image_discovery_method": {
             "type": "string",
             "enum": ["meta", "json-ld", "catalog-candidate", "img", "srcset"]
           },
-          "registration_url": { "type": "string" },
-          "ticket_url": { "type": "string" },
+          "registration_url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+          "ticket_url": { "type": "string", "format": "uri", "pattern": "^https?://" },
           "registration_status": { "type": "string" },
           "ticket_status": { "type": "string" },
           "offer_valid_from": { "type": "string", "format": "date-time" },
@@ -166,7 +178,7 @@
                 "room": { "type": "string" },
                 "speaker": { "type": "string" },
                 "track": { "type": "string" },
-                "source_url": { "type": "string" }
+                "source_url": { "type": "string", "format": "uri", "pattern": "^https?://" }
               }
             }
           },
@@ -175,8 +187,8 @@
           "live_updates_count": { "type": "integer", "minimum": 0 },
           "linked_live_updates_count": { "type": "integer", "minimum": 0 },
           "source_label": { "type": "string", "minLength": 1 },
-          "source_url": { "type": "string" },
-          "evidence_url": { "type": "string" },
+          "source_url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+          "evidence_url": { "type": "string", "format": "uri", "pattern": "^https?://" },
           "source_confidence": {
             "type": "string",
             "enum": [
@@ -195,12 +207,12 @@
           },
           "published_by": { "type": "string" },
           "live_schedule_ready": { "type": "boolean" },
-          "url": { "type": "string" },
-          "share_url": { "type": "string" },
-          "signage_url": { "type": "string" },
-          "print_url": { "type": "string" },
-          "maps_url": { "type": "string" },
-          "directions_url": { "type": "string" },
+          "url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+          "share_url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+          "signage_url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+          "print_url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+          "maps_url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+          "directions_url": { "type": "string", "format": "uri", "pattern": "^https?://" },
           "source_file": { "type": "string" }
         }
       }

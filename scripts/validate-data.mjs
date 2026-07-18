@@ -47,7 +47,42 @@ function validateFormat(value, format) {
   if (format === 'date-time') {
     return isStrictDateTime(value);
   }
+  if (format === 'uri') {
+    try {
+      new URL(value);
+      return true;
+    } catch {
+      return false;
+    }
+  }
   return true;
+}
+
+function matchesSchemaRules(value, fieldSchema = {}) {
+  if (fieldSchema.format && !validateFormat(value, fieldSchema.format)) return false;
+  if (fieldSchema.pattern) {
+    try {
+      if (!new RegExp(fieldSchema.pattern).test(value)) return false;
+    } catch {
+      return false;
+    }
+  }
+  return true;
+}
+
+function validateFieldRules(value, fieldSchema, prefix, key) {
+  const errors = [];
+  if (typeof value !== 'string') return errors;
+  if (fieldSchema.anyOf && !fieldSchema.anyOf.some((candidate) => matchesSchemaRules(value, candidate))) {
+    errors.push(`${prefix}: field '${key}' does not match any allowed schema`);
+  }
+  if (fieldSchema.format && !validateFormat(value, fieldSchema.format)) {
+    errors.push(`${prefix}: field '${key}' invalid format '${fieldSchema.format}'`);
+  }
+  if (fieldSchema.pattern && !matchesSchemaRules(value, { pattern: fieldSchema.pattern })) {
+    errors.push(`${prefix}: field '${key}' does not match pattern '${fieldSchema.pattern}'`);
+  }
+  return errors;
 }
 
 function validateObject(value, objectSchema, prefix) {
@@ -108,9 +143,35 @@ function validateObject(value, objectSchema, prefix) {
         }
       });
     }
-    if (prop.format && typeof fieldValue === 'string' && !validateFormat(fieldValue, prop.format)) {
-      errors.push(`${prefix}: field '${key}' invalid format '${prop.format}'`);
-    }
+    errors.push(...validateFieldRules(fieldValue, prop, prefix, key));
+  }
+
+  return errors;
+}
+
+function validateNestedCatalogUrls(event, eventSchema, prefix) {
+  const errors = [];
+  const properties = eventSchema.properties || {};
+  const outlineSourceSchema = properties.program_outline?.properties?.source_url;
+  if (outlineSourceSchema && event.program_outline?.source_url !== undefined) {
+    errors.push(...validateFieldRules(event.program_outline.source_url, outlineSourceSchema, prefix, 'program_outline.source_url'));
+  }
+
+  const sessionSourceSchema = properties.sessions?.items?.properties?.source_url;
+  if (sessionSourceSchema && Array.isArray(event.sessions)) {
+    event.sessions.forEach((session, index) => {
+      if (session?.source_url === undefined) return;
+      errors.push(...validateFieldRules(session.source_url, sessionSourceSchema, prefix, `sessions[${index}].source_url`));
+    });
+  }
+
+  const performerObjectSchema = properties.performers?.items?.oneOf?.find((candidate) => candidate.type === 'object');
+  const performerUrlSchema = performerObjectSchema?.properties?.url;
+  if (performerUrlSchema && Array.isArray(event.performers)) {
+    event.performers.forEach((performer, index) => {
+      if (!performer || typeof performer !== 'object' || performer.url === undefined) return;
+      errors.push(...validateFieldRules(performer.url, performerUrlSchema, prefix, `performers[${index}].url`));
+    });
   }
 
   return errors;
@@ -190,8 +251,10 @@ function validateCatalog(catalog, catalogSchema) {
   }
 
   const ids = new Set();
+  const eventSchema = catalogSchema.properties.events.items;
   events.forEach((event, index) => {
     const prefix = `catalog event ${index + 1}`;
+    errors.push(...validateNestedCatalogUrls(event, eventSchema, prefix));
     if (event.id) {
       if (ids.has(event.id)) {
         errors.push(`${prefix}: duplicate id '${event.id}'`);

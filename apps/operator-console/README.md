@@ -46,10 +46,17 @@ Current scope:
 - Unsaved-change guard when reloading or switching workspaces
 
 Run locally:
+- Set a non-empty `OPERATOR_CONSOLE_TOKEN` in the console process environment.
 - `npm run operator:console`
 
 Open:
 - `http://localhost:4173`
+
+Security behavior:
+- Every state-changing `/api/` request requires `Authorization: Bearer <OPERATOR_CONSOLE_TOKEN>` plus a matching browser `Origin` or `Referer`.
+- The browser asks for the token on the first state-changing action and keeps it in `sessionStorage` for that tab only.
+- Non-loopback binding requires `OPERATOR_CONSOLE_TOKEN`; the server refuses to listen without it.
+- Set `OPERATOR_CONSOLE_ORIGIN` to the exact `http(s)` origin when the console is accessed through a reverse proxy or custom hostname.
 
 Workspace intake storage:
 - `workspaces/<workspace-id>/intake/raw-intake.csv`
