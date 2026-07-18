@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-18T03:35:11.845Z",
+  "generated_at": "2026-07-18T08:14:33.596Z",
   "source_ops_report": "reports/source-ops-report.json",
   "source_registry": "data/source_registry.json",
   "totals": {
     "leads_seen": 10,
     "tasks": 8,
-    "high_priority": 1
+    "high_priority": 0
   },
   "tasks": [
     {
@@ -17,7 +17,7 @@
       "discovery_quality": "strong-lead",
       "discovery_score": 70,
       "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 132,
+      "resolver_priority": 107,
       "target_sources": [
         {
           "id": "dhahran-expo-calendar",

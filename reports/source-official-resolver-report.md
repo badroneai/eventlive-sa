@@ -1,16 +1,16 @@
 # EventLive Official Resolver Report
 
-- generated_at: 2026-07-18T03:35:11.845Z
+- generated_at: 2026-07-18T08:14:33.596Z
 - source_ops_report: reports/source-ops-report.json
 - leads_seen: 10
 - resolver_tasks: 8
-- high_priority: 1
+- high_priority: 0
 
 ## Resolver Tasks
 
 | Priority | Lead | Source | City | Quality | Target sources | Next action |
 |---:|---|---|---|---|---|---|
-| 132 | Dubai Property Expo in Al Khobar | Eventbrite Saudi Arabia | Khobar | strong-lead/70 | dhahran-expo-calendar, informa-connect-saudi-events, madinah-chamber-events, ricec-events, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 107 | Dubai Property Expo in Al Khobar | Eventbrite Saudi Arabia | Khobar | strong-lead/70 | dhahran-expo-calendar, informa-connect-saudi-events, madinah-chamber-events, ricec-events, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 107 | Family Office Investment Summit | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | informa-connect-saudi-events, ricec-events, asharqia-chamber-events, dhahran-expo-calendar, jcci-events-center | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 107 | Jeddah Fintech Week 2026 | Eventbrite Saudi Arabia | Jeddah | strong-lead/70 | informa-connect-saudi-events, abha-chamber-events, baha-chamber-events, future-skills-catalog, hail-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 97 | 25TH WPC Energy Congress | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, informa-connect-saudi-events, saudi-water-authority-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |

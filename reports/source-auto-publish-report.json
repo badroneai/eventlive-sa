@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-07-18T03:33:35.679Z",
+  "published_at": "2026-07-18T08:13:22.901Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -721,12 +721,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20260718-a3bc99ba",
-      "event_id": "event-1-2-3-a-little-space-for-me",
-      "title": "1, 2, 3, A Little Space for Me",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-kinusaiga-art-20260718-98b157b0",
       "event_id": "event-kinusaiga-art",
       "title": "Kinusaiga Art",
@@ -742,6 +736,12 @@
       "candidate_id": "candidate-ithra-events-ithra-childrens-festival-2026-20260718-d6d5cc99",
       "event_id": "event-ithra-childrens-festival-2026",
       "title": "Ithra Children's Festival 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20260718-a3bc99ba",
+      "event_id": "event-1-2-3-a-little-space-for-me",
+      "title": "1, 2, 3, A Little Space for Me",
       "reason": "already linked to catalog event"
     },
     {

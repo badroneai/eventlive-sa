@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-07-18T03:38:49.118Z
+- generated_at: 2026-07-18T08:18:25.307Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -12,13 +12,13 @@
 
 - Sources in registry: 86
 - Runnable collector lanes: 46
-- Sources due now: 21
-- Sources attempted in latest collection: 21
-- Sources deferred by cadence: 25
+- Sources due now: 20
+- Sources attempted in latest collection: 20
+- Sources deferred by cadence: 26
 - Due-source coverage: 100%
 - Scheduled runnable coverage: 100%
-- Whole-registry attempted this run: 24%
-- Healthy sources: 19
+- Whole-registry attempted this run: 23%
+- Healthy sources: 18
 - Zero-yield sources: 2
 - High-priority unattempted sources: 3
 - Candidates: 470
@@ -90,7 +90,7 @@
 | 22 | Dhahran Expo Calendar | healthy | 16 | 16 | استمر بالمراجعة والتكرار قبل النشر. |
 | 23 | Ithra Events | healthy | 130 | 131 | استمر بالمراجعة والتكرار قبل النشر. |
 | 24 | Saudi Digital Academy | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 25 | SDAIA Academy Programs | deferred | 0 | 0 | مؤجل حتى 2026-07-18T03:36:29.315Z وفق الجدولة التكيفية. |
+| 25 | SDAIA Academy Programs | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
 | 26 | Saudi Events App | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 27 | Enjoy Saudi Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 28 | Misk Hub Events | deferred | 0 | 0 | مؤجل حتى 2026-07-18T09:22:14.505Z وفق الجدولة التكيفية. |
@@ -113,10 +113,10 @@
 | 45 | Saudi Universities and Technical Colleges | deferred | 0 | 4 | مؤجل حتى 2026-08-10T09:22:14.505Z وفق الجدولة التكيفية. |
 | 46 | ExpoFP and Eventseye Saudi Trade Shows | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 47 | Meetup and Facebook Events Saudi Arabia | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 48 | Saudi Food and Drug Authority Events | healthy | 8 | 8 | استمر بالمراجعة والتكرار قبل النشر. |
+| 48 | Saudi Food and Drug Authority Events | zero-yield | 0 | 8 | Recovered via live-browser-recovery official evidence. Primary page failed: fetch failed. No future date-complete candidates found by the conservative extractor. |
 | 49 | Saudi Contractors Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 50 | Saudi Winter Events Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 51 | Riyadh City Events | zero-yield | 0 | 93 | No future date-complete candidates found by the conservative extractor. |
+| 51 | Riyadh City Events | deferred | 0 | 93 | مؤجل حتى 2026-07-18T09:30:37.417Z وفق الجدولة التكيفية. |
 | 52 | Monsha'at Academy Programs | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 53 | General Entertainment Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 54 | SDAIA Calendar and Events | healthy | 2 | 2 | استمر بالمراجعة والتكرار قبل النشر. |
@@ -130,7 +130,7 @@
 | 62 | Baha Municipality Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 63 | Baha Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 64 | Jouf Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 65 | Northern Borders Chamber Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
+| 65 | Northern Borders Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-07-18T09:30:37.417Z وفق الجدولة التكيفية. |
 | 66 | Tabuk Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-07-20T14:02:10.304Z وفق الجدولة التكيفية. |
 | 67 | Jazan Chamber Events | deferred | 0 | 1 | مؤجل حتى 2026-07-18T19:41:08.186Z وفق الجدولة التكيفية. |
 | 68 | Hail Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
