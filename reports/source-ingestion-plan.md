@@ -1,6 +1,6 @@
 # EventLive Source Ingestion Plan
 
-Generated at: 2026-07-17T19:54:15.174Z
+Generated at: 2026-07-18T03:38:48.818Z
 
 ## Executive Model
 
@@ -51,12 +51,12 @@ EventLive should not treat all registered sources equally. The operating model i
 
 | Source | Last status | Extracted | Probe | Next action |
 |---|---|---:|---|---|
-| visit-saudi-calendar | ok | 34 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| moc-cultural-calendar | error | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
-| mos-events | error | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| visit-saudi-calendar | ok | 28 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
+| moc-cultural-calendar | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| mos-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | experience-alula-events | ok | 9 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| mdlbeast-events | ok | 5 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| monshaat-events | error | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| mdlbeast-events | ok | 3 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
+| monshaat-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | invest-saudi-events | ok | 3 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | rfecc-whats-on | ok | 6 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | tuwaiq-academy-bootcamps | ok | 12 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
@@ -71,17 +71,17 @@ EventLive should not treat all registered sources equally. The operating model i
 | jcci-events-center | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | saudi-pro-league-fixtures | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | saudi-space-agency-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
-| moc-cultural-subportals | error | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
-| discover-aseer-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| moc-cultural-subportals | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| discover-aseer-events | ok | 1 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | saudi-water-authority-events | ok | 8 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | sfda-events | ok | 8 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | sdaia-calendar-events | ok | 2 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | makkah-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
-| scega-exhibitions-conferences | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
-| asharqia-chamber-events | error | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
-| qassim-chamber-events | error | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| scega-exhibitions-conferences | ok | 4 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
+| asharqia-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| qassim-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | abha-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
-| jazan-chamber-events | ok | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| jazan-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | umm-al-qura-events | ok | 6 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | madinah-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | madinah-architecture-festival | ok | 1 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
@@ -129,7 +129,7 @@ EventLive should not treat all registered sources equally. The operating model i
 | 36 | sela-sea-expo | evidence-monitor | monthly-evidence-check | 55 | probe-hidden-api-or-html-table | Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible. |
 | 37 | moc-cultural-subportals | active-collector | daily | 150 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | 38 | historic-jeddah-albalad | extractor-backlog | twice-weekly-extractor-probe | 47 | blocked-or-protected:http-403 | Do not scrape now; latest probe is blocked-or-protected:http-403. Keep as partnership, browser/API investigation, or evidence lane. |
-| 39 | discover-aseer-events | active-collector | daily | 91 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| 39 | discover-aseer-events | active-collector | daily | 91 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | 40 | diriyah-season | evidence-monitor | monthly-evidence-check | 59 | probe-hidden-api-or-html-table | Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible. |
 | 41 | ricec-events | venue-dedupe | weekly-dedupe-check | 31 | blocked-or-protected:fetch failed getaddrinfo EAI_AGAIN www.ricec.com TypeError: fetch failed | Do not scrape now; latest probe is blocked-or-protected:fetch failed getaddrinfo EAI_AGAIN www.ricec.com TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane. |
 | 42 | aseer-season-asda | evidence-monitor | monthly-evidence-check | 59 | probe-hidden-api-or-html-table | Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible. |
@@ -146,7 +146,7 @@ EventLive should not treat all registered sources equally. The operating model i
 | 53 | gea-entertainment-events | evidence-monitor | monthly-evidence-check | 86 | - | Monitor for live event/detail pages; do not create public rows from summary or coming-soon pages. |
 | 54 | sdaia-calendar-events | active-collector | daily | 133 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | 55 | makkah-chamber-events | active-collector | daily | 75 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
-| 56 | scega-exhibitions-conferences | active-collector | daily | 86 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| 56 | scega-exhibitions-conferences | active-collector | daily | 86 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | 57 | ministry-commerce-events | evidence-monitor | monthly-evidence-check | 25 | - | Monitor for live event/detail pages; do not create public rows from summary or coming-soon pages. |
 | 58 | evento-sa-events | discovery-only | monthly-discovery | 0 | - | Use only to discover leads; require official confirmation before promotion. |
 | 59 | asharqia-chamber-events | active-collector | daily | 71 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |

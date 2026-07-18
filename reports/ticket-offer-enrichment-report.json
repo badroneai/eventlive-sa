@@ -1,24 +1,30 @@
 {
-  "checked_at": "2026-07-17T19:50:51.538Z",
-  "targets": 9,
+  "checked_at": "2026-07-18T03:35:07.852Z",
+  "targets": 7,
   "evidence_found": 7,
   "changed": 0,
-  "no_evidence": 2,
+  "no_evidence": 0,
   "failed": 0,
   "results": [
     {
-      "id": "event-unstable",
-      "host": "nofomo.com",
-      "url": "https://nofomo.com/collections/unstable",
-      "status": "no-evidence",
-      "reason": "no-explicit-public-price"
+      "id": "event-12th-middle-east-banking-ai-analytics-summit-2026",
+      "host": "eventbrite.com",
+      "url": "https://www.eventbrite.com/e/12th-middle-east-banking-ai-analytics-summit-2026-tickets-1992107636567",
+      "status": "evidence",
+      "price_label": "free · 0 USD",
+      "price": 0,
+      "price_currency": "USD",
+      "method": "eventbrite-json-ld"
     },
     {
-      "id": "event-beast-house",
-      "host": "nofomo.com",
-      "url": "https://nofomo.com/collections/beast-house",
-      "status": "no-evidence",
-      "reason": "no-explicit-public-price"
+      "id": "event-15th-middle-east-enterprise-ai-analytics-summit",
+      "host": "eventbrite.com",
+      "url": "https://www.eventbrite.com/e/15th-middle-east-enterprise-ai-analytics-summit-tickets-1991914835895",
+      "status": "evidence",
+      "price_label": "free · 0 USD",
+      "price": 0,
+      "price_currency": "USD",
+      "method": "eventbrite-json-ld"
     },
     {
       "id": "event-a-thousand-and-one",
@@ -39,26 +45,6 @@
       "price": 269,
       "price_currency": "SAR",
       "method": "nofomo-visible-ticket-price"
-    },
-    {
-      "id": "event-12th-middle-east-banking-ai-analytics-summit-2026",
-      "host": "eventbrite.com",
-      "url": "https://www.eventbrite.com/e/12th-middle-east-banking-ai-analytics-summit-2026-tickets-1992107636567",
-      "status": "evidence",
-      "price_label": "free · 0 USD",
-      "price": 0,
-      "price_currency": "USD",
-      "method": "eventbrite-json-ld"
-    },
-    {
-      "id": "event-15th-middle-east-enterprise-ai-analytics-summit",
-      "host": "eventbrite.com",
-      "url": "https://www.eventbrite.com/e/15th-middle-east-enterprise-ai-analytics-summit-tickets-1991914835895",
-      "status": "evidence",
-      "price_label": "free · 0 USD",
-      "price": 0,
-      "price_currency": "USD",
-      "method": "eventbrite-json-ld"
     },
     {
       "id": "event-saudi-ai-week",

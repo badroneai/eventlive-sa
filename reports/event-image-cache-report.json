@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T19:54:14.783Z",
+  "generated_at": "2026-07-18T03:38:48.237Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -582,41 +582,6 @@
     {
       "source_url": "https://scth.scene7.com/is/image/scth/al-farab-comeback-night?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/al-farabi-comeback-night-3de4e741f2.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
-      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
-      "events": 5
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/made-in-egypt-comedy-show-ahmed-khairy?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/made-in-egypt-stand-up-comedy-show-by-ahmed-khairy-072a99ee54.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/mohamed-hamaki-concert?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/mohamed-hamaki-concert-cd834f4ecd.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/viola?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/viola-nights-presents-space-motion-bc7a710838.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/saleh-al-nawawi-comedy-riyadh?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/saleh-el-nawawy-stand-up-comedy-show-2259c6faa9.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/reggae-with-rosa?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/reggae-with-rsoa-3f95190c43.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/stand-up-comedy-night-2-jeddah?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/stand-up-comedy-night-bbf59ac238.webp",
       "events": 1
     },
     {
@@ -1405,6 +1370,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
+      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
+      "events": 5
+    },
+    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/esports.jpg?itok=m-JCBfZQ",
       "file": "dist/assets/event-images/new-global-sport-conference-118e7a7283.jpg",
       "events": 1
@@ -1702,6 +1672,36 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/Screen%20Shot%202026-02-12%20at%205.37.39%20AM.png?itok=_tkBxXOE",
       "file": "dist/assets/event-images/human-capability-initiative-conference-15d668bd41.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/stand-up-comedy-night-2-jeddah?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/stand-up-comedy-night-bbf59ac238.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/saleh-al-nawawi-comedy-riyadh?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/saleh-el-nawawy-stand-up-comedy-show-2259c6faa9.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/reggae-with-rosa?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/reggae-with-rsoa-3f95190c43.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/viola?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/viola-nights-presents-space-motion-bc7a710838.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/mohamed-hamaki-concert?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/mohamed-hamaki-concert-cd834f4ecd.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/made-in-egypt-comedy-show-ahmed-khairy?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/made-in-egypt-stand-up-comedy-show-by-ahmed-khairy-072a99ee54.webp",
       "events": 1
     },
     {
