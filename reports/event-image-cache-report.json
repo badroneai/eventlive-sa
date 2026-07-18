@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T08:18:24.389Z",
+  "generated_at": "2026-07-18T13:56:48.801Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -560,11 +560,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d9bf7aded9306f8c7266477951ef3d49.jpg",
-      "file": "dist/assets/event-images/kinusaiga-art-a47d48296f.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1bfbc17fa9fc0e794418752ac39ebb8d.jpg",
       "file": "dist/assets/event-images/your-book-in-a-minute-5cc468c06d.jpg",
       "events": 1
@@ -583,11 +578,6 @@
       "source_url": "https://scth.scene7.com/is/image/scth/al-farab-comeback-night?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/al-farabi-comeback-night-3de4e741f2.webp",
       "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ab9d6fe97ce2e131a314c39ed6772096.jpg",
-      "file": "dist/assets/event-images/tales-of-the-night-sky-english-f55a234a58.jpg",
-      "events": 2
     },
     {
       "source_url": "https://scth.scene7.com/is/image/scth/very-sary-night-from-exit-thmanyah?wid=1400&hei=788&fit=constrain&fmt=webp",
@@ -1675,6 +1665,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ab9d6fe97ce2e131a314c39ed6772096.jpg",
+      "file": "dist/assets/event-images/tales-of-the-night-sky-english-f55a234a58.jpg",
+      "events": 2
+    },
+    {
       "source_url": "https://scth.scene7.com/is/image/scth/stand-up-comedy-night-2-jeddah?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/stand-up-comedy-night-bbf59ac238.webp",
       "events": 1
@@ -1712,6 +1707,11 @@
     {
       "source_url": "https://scth.scene7.com/is/image/scth/qaadet-saad-eloud?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/qaadet-saad-eloud-c5b8a35494.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d9bf7aded9306f8c7266477951ef3d49.jpg",
+      "file": "dist/assets/event-images/kinusaiga-art-a47d48296f.jpg",
       "events": 1
     },
     {
