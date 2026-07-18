@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
+import { randomBytes } from 'node:crypto';
 import fs from 'node:fs';
 import net from 'node:net';
 import os from 'node:os';
@@ -8,7 +9,7 @@ import path from 'node:path';
 const repoRoot = process.cwd();
 const serverPath = path.join(repoRoot, 'apps', 'operator-console', 'server.mjs');
 const consoleAppPath = path.join(repoRoot, 'apps', 'operator-console', 'public', 'app.js');
-const token = 'operator-console-security-test-token';
+const token = randomBytes(24).toString('hex');
 const workspaceId = 'operator-security-test';
 const mutationRoutes = [
   { method: 'POST', pathname: `/api/workspaces/${workspaceId}/publish`, body: { releaseNote: 'unauthorized publish' } },
