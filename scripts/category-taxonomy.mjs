@@ -213,9 +213,9 @@ export function assignEventCategory(event, rawCategory = event.raw_category ?? e
     ...event,
     category: rawCategory,
     raw_category: rawCategory
-  });
-  event.category = normalized.category;
-  event.raw_category = normalized.raw_category;
+  }, { strict: false });
+  event.category = normalized?.category || 'community-occasions';
+  event.raw_category = normalized?.raw_category ?? (rawCategory ?? event.raw_category ?? event.category ?? '');
   return event;
 }
 

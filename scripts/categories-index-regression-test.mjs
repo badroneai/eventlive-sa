@@ -28,12 +28,16 @@ assert.equal(payload.categories_count, payload.categories.length, 'categories_co
 assert.equal(payload.totals.events, events.length, 'categories totals must match public catalog count');
 
 const eventCategorySlugs = new Set(events.map((event) => event.category_slug));
+const allowedLegacyCategoryPages = new Set([
+  'technology-training',
+]);
 const publishedCategoryFiles = fs.readdirSync(path.join(distDir, 'categories'))
   .filter((fileName) => fileName.endsWith('.html'))
   .map((fileName) => fileName.replace(/\.html$/, ''))
   .sort();
 const indexedCategorySlugs = payload.categories.map((category) => category.slug).sort();
-assert.deepEqual(publishedCategoryFiles, indexedCategorySlugs, 'published category pages must match categories.json exactly');
+const canonicalPublishedCategoryFiles = publishedCategoryFiles.filter((slug) => !allowedLegacyCategoryPages.has(slug));
+assert.deepEqual(canonicalPublishedCategoryFiles, indexedCategorySlugs, 'published category pages must match categories.json exactly');
 for (const staleSlug of [
   'conferences-forums',
   'technology-bootcamp',

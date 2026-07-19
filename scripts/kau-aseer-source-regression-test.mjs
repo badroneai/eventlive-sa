@@ -18,6 +18,17 @@ const registry = JSON.parse(fs.readFileSync(path.join(root, 'data', 'source_regi
 const catalog = JSON.parse(fs.readFileSync(path.join(root, 'data', 'events_catalog.json'), 'utf8'));
 const referenceDate = new Date('2026-07-19T00:00:00+03:00');
 
+const hayySourceRegistry = registry.sources.find((source) => source.id === 'hayy-jameel-events');
+assert.ok(hayySourceRegistry, 'Hayy Jameel source must remain registered');
+assert.equal(hayySourceRegistry.trust_level, 'venue-official');
+assert.equal(hayySourceRegistry.fetch_method, 'sitemap-pages');
+assert.equal(hayySourceRegistry.collector_url, 'https://hayyjameel.org/whats-on-sitemap.xml');
+
+const saudiconSource = registry.sources.find((source) => source.id === 'saudicon-events');
+assert.ok(saudiconSource, 'Saudicon source must be registered');
+assert.equal(saudiconSource.trust_level, 'aggregator');
+assert.equal(saudiconSource.intake_policy, 'candidate-only');
+
 const kauSource = registry.sources.find((source) => source.id === 'kau-events');
 assert.ok(kauSource, 'KAU must be registered as an independent source');
 assert.equal(kauSource.trust_level, 'official');

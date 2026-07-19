@@ -1,4 +1,7 @@
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import {
   extractAbhaChamberEvents,
   extractAsharqiaChamberEvents,
@@ -10,7 +13,9 @@ import {
   extractMadinahChamberPayload,
   extractHayyJameelCards,
   extractHayyJameelDetail,
+  extractHayyJameelEvents,
   baseCandidate,
+  extractSaudiconEvents,
   readableExcerpt,
   jazanApiEndpoint,
   jazanMonthsToFetch,
@@ -27,8 +32,13 @@ import {
   extractSdaiaAcademyPrograms,
   extractSdaiaCalendarEvents,
   extractVisitSaudiApiEvents,
-  loadSourceExtraction
+  loadSourceExtraction,
+  sourceExtractors
 } from './collect-source-candidates.mjs';
+
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const fixture = (name) => fs.readFileSync(path.join(root, 'scripts', 'fixtures', name), 'utf8');
+const referenceDate = new Date('2026-07-19T00:00:00+03:00');
 
 const ithraEvents = extractIthraEvents(JSON.stringify({
   hits: [{
@@ -635,6 +645,80 @@ assert.match(hayyDetail.registration_url, /typeform\.com/);
 assert.match(hayyDetail.image_url, /1100x500/);
 assert.equal(hayyDetail.live_schedule_ready, true);
 assert.equal(hayyDetail.rich_summary, hayyDetail.summary);
+
+const hayySitemapRows = [
+  ['pottery-workshop', 'hayy-jameel-workshop-detail.html'],
+  ['studio-residency', 'hayy-jameel-sitemap-workshop-detail.html'],
+  ['sidematrix-workshop', 'hayy-jameel-sidematrix-workshop-detail.html']
+];
+const hayySourceForExtract = {
+  id: 'hayy-jameel-events',
+  name: "Hayy Jameel What's On",
+  url: 'https://hayyjameel.org/whats-on/',
+  owner: 'Art Jameel / Hayy Jameel',
+  cities: ['Jeddah'],
+  source_type: 'venue-calendar',
+  collector_url: 'https://hayyjameel.org/whats-on-sitemap.xml',
+  max_candidates_per_run: 6,
+  sitemap_max_age_days: 90
+};
+const hayyEventsFromSitemap = await extractHayyJameelEvents(
+  fixture('hayy-jameel-listing.html'),
+  hayySourceForExtract,
+  {
+    referenceDate,
+    maxCandidates: 6,
+    sitemapMaxAgeDays: 90,
+    sitemapXml: fixture('hayy-jameel-sitemap.xml'),
+    fetchText: async (url) => {
+      const slug = (() => {
+        try {
+          return new URL(url).pathname.split('/').filter(Boolean).at(-1);
+        } catch {
+          return String(url).split('/').filter(Boolean).at(-1);
+        }
+      })();
+      const match = hayySitemapRows.find((row) => row[0] === slug);
+      if (!match) throw new Error(`missing hayy fixture for ${url}`);
+      return fixture(match[1]);
+    }
+  }
+);
+assert.equal(hayyEventsFromSitemap.length, 3, 'Hayy listing+sitemap extraction should include side-nav matrix workshop row');
+assert.ok(hayyEventsFromSitemap.some((event) => /Pottery/.test(event.title)));
+assert.ok(hayyEventsFromSitemap.some((event) => /Circular Fabric/.test(event.title)));
+assert.equal(hayyEventsFromSitemap.every((event) => event.city === 'Jeddah'), true);
+assert.equal(hayyEventsFromSitemap.every((event) => new Date(event.ends_at) >= referenceDate), true);
+
+assert.equal(sourceExtractors['saudicon-events'], extractSaudiconEvents);
+const saudiconEventsFromSitemap = await extractSaudiconEvents('', {
+  id: 'saudicon-events',
+  name: 'Saudicon Events',
+  url: 'https://saudicon.app/',
+  owner: 'Saudicon',
+  source_type: 'conference-organizer',
+  trust_level: 'aggregator',
+  cities: ['Saudi Arabia', 'Riyadh']
+}, {
+  sitemapXml: fixture('saudicon-events-sitemap.xml'),
+  maxCandidates: 6,
+  fetchText: async (url) => {
+    const slug = (() => {
+      try {
+        return new URL(url).pathname.split('/').filter(Boolean).at(-1);
+      } catch {
+        return String(url).split('/').filter(Boolean).at(-1);
+      }
+    })();
+    if (slug === 'saudi-ai-forum') return fixture('saudicon-ai-forum-detail.html');
+    if (slug === 'saudi-tech-summit') return fixture('saudicon-tech-summit-detail.html');
+    throw new Error(`missing saudicon fixture for ${url}`);
+  }
+});
+const saudiconCandidates = new Set(saudiconEventsFromSitemap.map((event) => event.url));
+assert.equal(saudiconEventsFromSitemap.length, 2, 'Saudicon sitemap should yield two valid JSON-LD candidates');
+assert.equal(saudiconCandidates.size, saudiconEventsFromSitemap.length, 'Saudicon candidates should stay deduplicated by URL');
+assert.equal(saudiconEventsFromSitemap.every((event) => event.verification_method === 'official-detail-jsonld'), true);
 
 const qassimEvents = extractQassimChamberEvents(`
   <div class="card h-100"><div class="carousel-item active" style="background-image: url('https://tc.qcc.org.sa/storage/260/hr.jpg')"></div>

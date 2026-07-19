@@ -415,33 +415,33 @@
       "candidate_gate": "duplicate-review",
       "notes": "Useful Jeddah-specific supplement and SERP benchmark. Direct public fetch can redirect through Queue-it/Cloudflare protection, so keep as discovery/partnership evidence only; do not bypass protection or auto-publish from this source."
     },
-  {
-    "id": "najran-municipality-summer-events",
-    "name": "Najran Municipality Summer Events",
-    "url": "https://www.najran.gov.sa/ar/News/AllNews",
-    "owner": "Najran Municipality",
-    "source_type": "government-calendar",
-    "trust_level": "official",
-    "priority": 71,
-    "coverage": "Najran municipal summer festivals, family entertainment, cultural programs, and official city event announcements.",
-    "cities": [
-      "Najran",
-      "Saudi Arabia"
-    ],
-    "categories": [
-      "entertainment",
-      "families",
-      "culture",
-      "summer festivals"
-    ],
-    "fetch_method": "html-listing",
-    "intake_policy": "official-feed-preferred",
-    "evidence_required": "Official Najran Municipality announcement with publication date, explicit launch wording, duration, and public event context.",
-    "candidate_gate": "duplicate-review",
-    "notes": "Added 2026-07-10 from the official Najran Municipality news feed after verifying the 30-day Najran Summer 2026 launch announcement. Relative dates are accepted only when anchored to an explicit official publication date."
-  },
-  {
-    "id": "platinumlist-riyadh",
+    {
+      "id": "najran-municipality-summer-events",
+      "name": "Najran Municipality Summer Events",
+      "url": "https://www.najran.gov.sa/ar/News/AllNews",
+      "owner": "Najran Municipality",
+      "source_type": "government-calendar",
+      "trust_level": "official",
+      "priority": 71,
+      "coverage": "Najran municipal summer festivals, family entertainment, cultural programs, and official city event announcements.",
+      "cities": [
+        "Najran",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "entertainment",
+        "families",
+        "culture",
+        "summer festivals"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "Official Najran Municipality announcement with publication date, explicit launch wording, duration, and public event context.",
+      "candidate_gate": "duplicate-review",
+      "notes": "Added 2026-07-10 from the official Najran Municipality news feed after verifying the 30-day Najran Summer 2026 launch announcement. Relative dates are accepted only when anchored to an explicit official publication date."
+    },
+    {
+      "id": "platinumlist-riyadh",
       "name": "Platinumlist Riyadh Calendar",
       "url": "https://riyadh.platinumlist.net/ar/calendar/today",
       "collector_pages": [
@@ -2014,11 +2014,11 @@
       "candidate_gate": "extraction",
       "notes": "Added 2026-07-05 after web verification of the official /event/ page showing chamber events and past/future forum-style records."
     },
-  {
-    "id": "northern-borders-chamber-events",
+    {
+      "id": "northern-borders-chamber-events",
       "name": "Northern Borders Chamber Events",
-    "url": "https://ncci.org.sa/category/events/",
-    "collector_url": "https://ncci.org.sa/wp-json/wp/v2/posts?categories=23&per_page=24&_embed=1",
+      "url": "https://ncci.org.sa/category/events/",
+      "collector_url": "https://ncci.org.sa/wp-json/wp/v2/posts?categories=23&per_page=24&_embed=1",
       "owner": "Northern Borders Chamber of Commerce",
       "source_type": "venue-calendar",
       "trust_level": "official",
@@ -2038,17 +2038,17 @@
         "community",
         "regional events"
       ],
-    "fetch_method": "json-api",
+      "fetch_method": "json-api",
       "intake_policy": "official-feed-preferred",
       "evidence_required": "Northern Borders Chamber event post with title, event/published date, location or city, and official chamber context.",
       "candidate_gate": "extraction",
       "notes": "Added 2026-07-05 after web verification of the official events category. It appears WordPress-like and suitable for conservative date extraction."
     },
-  {
-    "id": "tabuk-chamber-events",
+    {
+      "id": "tabuk-chamber-events",
       "name": "Tabuk Chamber Events",
-    "url": "https://www.tabukchamber.sa/",
-    "collector_url": "https://www.tabukchamber.sa/activities",
+      "url": "https://www.tabukchamber.sa/",
+      "collector_url": "https://www.tabukchamber.sa/activities",
       "owner": "Tabuk Chamber of Commerce",
       "source_type": "venue-calendar",
       "trust_level": "official",
@@ -2451,7 +2451,7 @@
       "url": "https://hayyjameel.org/whats-on/",
       "owner": "Art Jameel / Hayy Jameel",
       "source_type": "venue-calendar",
-      "trust_level": "official",
+      "trust_level": "venue-official",
       "priority": 85,
       "coverage": "Current and upcoming exhibitions, cinema programmes, workshops, learning activities, installations, and public cultural events at Hayy Jameel in Jeddah.",
       "cities": [
@@ -2465,13 +2465,46 @@
         "exhibitions",
         "families"
       ],
-      "fetch_method": "html-listing",
+      "collector_url": "https://hayyjameel.org/whats-on-sitemap.xml",
+      "fetch_method": "sitemap-pages",
       "intake_policy": "official-feed-preferred",
       "evidence_required": "First-party Hayy Jameel What's On card and detail page with an explicit date range, title, Jeddah venue context, and current or upcoming status.",
+      "sitemap_max_age_days": 90,
       "candidate_gate": "duplicate-review",
-      "max_candidates_per_run": 40,
+      "max_candidates_per_run": 120,
       "max_ended_per_run": 100,
       "notes": "Activated 2026-07-10 from the public first-party What's On calendar. Every six-hour run reads current/upcoming cards, opens their detail pages for precise sessions, registration, fees, room and high-resolution imagery, and rejects past-labelled or date-incomplete cards."
+    },
+    {
+      "id": "saudicon-events",
+      "name": "Saudicon Events",
+      "url": "https://saudicon.app/",
+      "collector_url": "https://saudicon.app/sitemap-events.xml",
+      "owner": "Saudicon",
+      "source_type": "conference-organizer",
+      "trust_level": "aggregator",
+      "priority": 88,
+      "coverage": "B2B and conference events published on Saudicon as a third-party event directory.",
+      "cities": [
+        "Saudi Arabia",
+        "Riyadh",
+        "Jeddah",
+        "Dammam"
+      ],
+      "categories": [
+        "conference",
+        "b2b",
+        "business",
+        "technology",
+        "networking"
+      ],
+      "fetch_method": "sitemap-pages",
+      "intake_policy": "candidate-only",
+      "evidence_required": "Saudicon event URL plus JSON-LD event payload with explicit dates and source URL validation. No auto-publish before human evidence review.",
+      "candidate_gate": "source-evidence",
+      "max_candidates_per_run": 40,
+      "max_ended_per_run": 100,
+      "notes": "Added 2026-07-19 for aggregated B2B conference discovery. Aggregator feed is discovery-only and requires candidate evidence review before promotion."
     },
     {
       "id": "informa-connect-saudi-events",
