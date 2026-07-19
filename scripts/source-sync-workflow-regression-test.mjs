@@ -14,6 +14,12 @@ function indexOfLine(pattern) {
   return index;
 }
 
+function indexOfDeployLine(pattern) {
+  const index = deployWorkflow.split('\n').findIndex((line) => pattern.test(line));
+  assert.notEqual(index, -1, `deploy workflow must include ${pattern}`);
+  return index;
+}
+
 assert.match(workflow, /cron:\s*["']17 \*\/6 \* \* \*["']/, 'source sync must run every 6 hours');
 assert.match(workflow, /EVENTLIVE_SOURCE_COLLECT_ENDED_EVENTS:\s*["']false["']/, 'scheduled sync must explicitly disable ended-event collection');
 assert.match(workflow, /EVENTLIVE_SOURCE_ADAPTIVE_CADENCE:\s*["']true["']/, 'scheduled sync must defer repeatedly unproductive sources without disabling them');
@@ -73,8 +79,12 @@ const liveOpsTestIndex = indexOfLine(/npm run test:live-operational-feeds/);
 const attendanceOfflineTestIndex = indexOfLine(/npm run test:attendance-mode-offline/);
 const persistIndex = indexOfLine(/Persist sync state back to the repository/);
 const deployIndex = indexOfLine(/Deploy to GitHub Pages/);
+const sourceIndexNowNotifyIndex = indexOfLine(/Notify search engines about changed URLs/);
+const sourceIndexNowReceiptUploadIndex = indexOfLine(/Upload IndexNow submission receipt/);
 const deployImageRestoreIndex = deployWorkflow.split('\n').findIndex((line) => /Restore event image cache/.test(line));
 const deployBuildIndex = deployWorkflow.split('\n').findIndex((line) => /Build EventLive public site/.test(line));
+const deployIndexNowNotifyIndex = indexOfDeployLine(/Notify IndexNow after the new site is live/);
+const deployReleaseEvidenceIndex = indexOfDeployLine(/Upload release verification evidence/);
 
 assert.ok(preflightIndex < sourceSyncIndex, 'source-state preflight must run before the long collection step');
 assert.ok(imageRestoreIndex < sourceSyncIndex, 'event images must be restored before the source sync builds the public catalog');
@@ -107,6 +117,10 @@ assert.ok(attendanceOfflineTestIndex < persistIndex, 'attendance offline test mu
 assert.ok(imageCacheTestIndex < persistIndex, 'image cache test must pass before persisting synced state');
 assert.ok(publicAssetsTestIndex < persistIndex, 'public asset test must pass before persisting synced state');
 assert.ok(persistIndex < deployIndex, 'state persistence must happen before deployment');
+assert.ok(sourceIndexNowNotifyIndex < sourceIndexNowReceiptUploadIndex, 'source sync must upload the IndexNow receipt after attempting submission');
+assert.match(workflow, /path:\s*reports\/indexnow-submission-receipt\.json/, 'source sync must retain the non-secret IndexNow receipt');
+assert.ok(deployIndexNowNotifyIndex < deployReleaseEvidenceIndex, 'release verification must upload evidence after attempting IndexNow submission');
+assert.match(deployWorkflow, /reports\/indexnow-submission-receipt\.json/, 'release verification artifact must retain the non-secret IndexNow receipt');
 assert.ok(deployImageRestoreIndex >= 0 && deployImageRestoreIndex < deployBuildIndex, 'code deployment must restore source images before the public build');
 
 console.log('source-sync-workflow-regression-test: ok');

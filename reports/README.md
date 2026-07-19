@@ -14,6 +14,10 @@
   - Latest controlled promotion run from approved source candidates into the discovery catalog.
 - `reports/source-ops-report.*`
   - Unified source operations board covering collection coverage, source health, candidate funnel, focus queue, and next executive action.
+- `reports/indexnow-submission-receipt.json`
+  - Latest non-secret IndexNow attempt receipt: outcome, HTTP response code, URL count, attempt number, mode, and timestamp. It never stores the key, URL list, endpoint, response body, or error text.
+- `reports/search-crawler-production-evidence.*`
+  - Re-runnable production evidence for Bingbot, OAI-SearchBot, and PerplexityBot access to the home/event surfaces, effective robots policy, WAF challenge detection, and the redacted IndexNow key-file checks.
 - `reports/diffs/`
   - Candidate vs baseline or latest-approved change reports.
   - `latest-diff.*` always points to the newest diff output.

@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { assignEventCategory, normalizeEventCategoryMetadata } from './category-taxonomy.mjs';
 import { parseSmartDataAgendaHtml } from './smart-data-agenda-utils.mjs';
 
 const root = process.cwd();
@@ -47,7 +48,8 @@ function applyAgenda(row, sessions, { candidate = false } = {}) {
   row.venue = 'JW Marriott Hotel Riyadh';
   if (candidate) delete row.venue_address;
   else row.venue_address = 'JW Marriott Hotel Riyadh, Riyadh, Saudi Arabia';
-  row.category = 'conference';
+  if (candidate) row.category = 'conference';
+  else assignEventCategory(row, row.raw_category || 'conference');
   row.organizer = 'Tradepass';
   row.audiences = ['professionals', 'tech', 'entrepreneurs', 'researchers'];
   row.tags = ['artificial intelligence', 'data', 'analytics', 'technology', 'leadership', 'conference'];
@@ -101,6 +103,7 @@ function applyAgenda(row, sessions, { candidate = false } = {}) {
       live_schedule_status: `${sessions.length} official timed items available.`
     }
   };
+  normalizeEventCategoryMetadata(row);
 }
 
 const catalog = readJson(catalogPath, { events: [] });

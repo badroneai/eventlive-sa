@@ -1,10 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
+import { categoryDefinition } from './category-taxonomy.mjs';
 
 const workdir = 'workspaces/_source-auto-publish-regression';
 const candidatesPath = path.join(workdir, 'source_candidates.json');
 const catalogPath = path.join(workdir, 'events_catalog.json');
+const reportJsonPath = path.join(workdir, 'source-auto-publish-report.json');
+const unknownRawCategory = 'Emerging Civic Experience';
+
+if (categoryDefinition(unknownRawCategory)) {
+  console.error('TEST_FAIL unknown-category fixture must not become a known taxonomy alias');
+  process.exit(1);
+}
 
 fs.rmSync(workdir, { recursive: true, force: true });
 fs.mkdirSync(workdir, { recursive: true });
@@ -365,6 +373,56 @@ fs.writeFileSync(candidatesPath, `${JSON.stringify({
       tags: ['workshop']
     },
     {
+      id: 'candidate-official-unknown-category',
+      title: 'Official Emerging Civic Experience',
+      organizer: 'Regression Authority',
+      city: 'Riyadh',
+      venue: 'Emerging Civic Hall',
+      category: unknownRawCategory,
+      summary: 'Official event with a useful but not-yet-mapped source category.',
+      starts_at: '2099-01-15T09:00:00+03:00',
+      ends_at: '2099-01-15T12:00:00+03:00',
+      source_type: 'official-site',
+      source_url: 'https://example.gov.sa/events/official-emerging-civic-experience',
+      source_label: 'Regression Authority Events',
+      source_owner: 'Regression Authority',
+      evidence_url: 'https://example.gov.sa/events/official-emerging-civic-experience',
+      raw_snapshot_path: 'data/raw/source-snapshots/official-unknown-category-regression.html',
+      discovered_at: '2026-07-19T00:00:00+03:00',
+      discovery_method: 'official-calendar',
+      confidence: 'official',
+      review_status: 'ready-for-review',
+      publication_gate: 'auto-publish',
+      extracted_sessions_count: 0,
+      reviewer_notes: 'Official unknown-category fallback regression fixture.',
+      tags: ['civic experience']
+    },
+    {
+      id: 'candidate-discovery-unknown-category',
+      title: 'Discovery Emerging Civic Experience',
+      organizer: 'Unverified Discovery Lead',
+      city: 'Jeddah',
+      venue: 'Discovery Civic Hall',
+      category: unknownRawCategory,
+      summary: 'Discovery-only lead that must remain queued for review.',
+      starts_at: '2099-02-15T09:00:00+03:00',
+      ends_at: '2099-02-15T12:00:00+03:00',
+      source_type: 'manual-lead',
+      source_url: 'https://example.com/discovery/emerging-civic-experience',
+      source_label: 'Discovery Regression Feed',
+      source_owner: 'Discovery Regression Feed',
+      evidence_url: 'https://example.com/discovery/emerging-civic-experience',
+      raw_snapshot_path: 'data/raw/source-snapshots/discovery-unknown-category-regression.html',
+      discovered_at: '2026-07-19T00:00:00+03:00',
+      discovery_method: 'discovery-lead',
+      confidence: 'discovery',
+      review_status: 'new',
+      publication_gate: 'auto-publish',
+      extracted_sessions_count: 0,
+      reviewer_notes: 'Discovery source isolation regression fixture.',
+      tags: ['civic experience']
+    },
+    {
       id: 'candidate-provider-enriched-generic-window',
       title: 'Provider Enriched Workshop',
       organizer: 'Regression Authority',
@@ -530,7 +588,7 @@ const run = spawnSync(process.execPath, ['scripts/auto-publish-source-candidates
     ...process.env,
     EVENTLIVE_SOURCE_CANDIDATES_FILE: candidatesPath,
     EVENTLIVE_EVENTS_CATALOG_FILE: catalogPath,
-    EVENTLIVE_AUTO_PUBLISH_REPORT_JSON: path.join(workdir, 'source-auto-publish-report.json'),
+    EVENTLIVE_AUTO_PUBLISH_REPORT_JSON: reportJsonPath,
     EVENTLIVE_AUTO_PUBLISH_REPORT_MD: path.join(workdir, 'source-auto-publish-report.md')
   }
 });
@@ -544,13 +602,14 @@ if (run.status !== 0) {
 
 const catalog = JSON.parse(fs.readFileSync(catalogPath, 'utf8'));
 const candidates = JSON.parse(fs.readFileSync(candidatesPath, 'utf8'));
+const report = JSON.parse(fs.readFileSync(reportJsonPath, 'utf8'));
 const candidate = candidates.candidates[0];
 
 if (
-  catalog.events.length !== 9
+  catalog.events.length !== 10
   || catalog.events.some((event) => event.id === 'event-invalid-auto-published')
   || candidate.matched_catalog_event_id !== 'event-saudi-national-day'
-  || !/Published:\s*3/i.test(out)
+  || !/Published:\s*4/i.test(out)
 ) {
   console.error('TEST_FAIL official title/date duplicate should link instead of publishing a second row');
   console.error(out);
@@ -566,6 +625,9 @@ const ithraEvent = catalog.events.find((event) => event.id === 'event-ithra-sess
 const ithraCandidate = candidates.candidates.find((row) => row.id === 'candidate-ithra-session-refresh');
 const providerEvent = catalog.events.find((event) => event.id === 'event-provider-enriched-workshop');
 const providerCandidate = candidates.candidates.find((row) => row.id === 'candidate-provider-enriched-generic-window');
+const officialUnknownCandidate = candidates.candidates.find((row) => row.id === 'candidate-official-unknown-category');
+const officialUnknownEvent = catalog.events.find((event) => event.id === officialUnknownCandidate?.matched_catalog_event_id);
+const discoveryUnknownCandidate = candidates.candidates.find((row) => row.id === 'candidate-discovery-unknown-category');
 if (
   imageEvent?.image_url !== 'https://example.gov.sa/assets/workshop-cover.jpg'
   || imageEvent?.original_image_url !== 'https://example.gov.sa/assets/workshop-cover.jpg'
@@ -577,11 +639,41 @@ if (
 }
 
 if (
-  catalog.events.length !== 9
+  catalog.events.length !== 10
   || sourceDateVariant?.matched_catalog_event_id !== imageEvent.id
 ) {
   console.error('TEST_FAIL official source/date duplicate should link to the first published event');
   console.error(JSON.stringify({ catalog_events: catalog.events.length, sourceDateVariant }, null, 2));
+  process.exit(1);
+}
+
+if (
+  officialUnknownEvent?.category !== 'community-occasions'
+  || officialUnknownEvent?.raw_category !== unknownRawCategory
+  || officialUnknownEvent?.approval_status !== 'published'
+  || officialUnknownEvent?.published_by !== 'EventLive Auto Publisher'
+  || officialUnknownEvent?.source_url !== 'https://example.gov.sa/events/official-emerging-civic-experience'
+  || officialUnknownCandidate?.review_status !== 'approved-for-catalog'
+  || officialUnknownCandidate?.publication_gate !== 'catalog-review'
+  || !report.published.some((row) => row.candidate_id === officialUnknownCandidate.id)
+) {
+  console.error('TEST_FAIL an official unknown category must publish in community-occasions with raw lineage');
+  console.error(JSON.stringify({ officialUnknownCandidate, officialUnknownEvent, published: report.published }, null, 2));
+  process.exit(1);
+}
+
+if (
+  discoveryUnknownCandidate?.matched_catalog_event_id
+  || discoveryUnknownCandidate?.review_status !== 'new'
+  || catalog.events.some((event) => event.title === 'Discovery Emerging Civic Experience')
+  || report.published.some((row) => row.candidate_id === discoveryUnknownCandidate.id)
+  || !report.blocked.some((row) => (
+    row.candidate_id === discoveryUnknownCandidate.id
+    && row.reason === 'unknown category requires review'
+  ))
+) {
+  console.error('TEST_FAIL an unknown category from a discovery source must remain blocked for review');
+  console.error(JSON.stringify({ discoveryUnknownCandidate, published: report.published, blocked: report.blocked }, null, 2));
   process.exit(1);
 }
 

@@ -147,6 +147,23 @@ const arCatalog = JSON.parse(fs.readFileSync(path.join(dist, 'events-catalog.jso
 const enCatalog = JSON.parse(fs.readFileSync(path.join(dist, 'en', 'events-catalog.json'), 'utf8'));
 assert.equal(enCatalog.locale, 'en-SA');
 assert.equal(enCatalog.events.length, arCatalog.events.length, 'localized catalog must preserve every event');
+const publicEvents = JSON.parse(fs.readFileSync(path.join(dist, 'events.json'), 'utf8')).events || [];
+const missingFileSlugIds = publicEvents
+  .filter((event) => typeof event.file_slug !== 'string' || !event.file_slug)
+  .map((event) => event.id);
+assert.deepEqual(missingFileSlugIds, [], `every built public event must include a file_slug: ${missingFileSlugIds.join(', ')}`);
+const fileSlugCounts = publicEvents.reduce(
+  (counts, event) => counts.set(event.file_slug, (counts.get(event.file_slug) || 0) + 1),
+  new Map()
+);
+const duplicateFileSlugs = [...fileSlugCounts.entries()]
+  .filter(([, count]) => count > 1)
+  .map(([fileSlug]) => fileSlug);
+assert.deepEqual(
+  duplicateFileSlugs,
+  [],
+  `built event catalog must not contain duplicate file_slug values: ${duplicateFileSlugs.join(', ')}`
+);
 const eventRouteValues = arCatalog.events
   .flatMap((event) => [event.file_slug, event.detail_url])
   .filter((value) => typeof value === 'string' && value);

@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { selectBacklogTargets } from './backlog-target-utils.mjs';
 import { highResImage, isStillImage, preferredEventImage } from './backlog-image-utils.mjs';
+import { assignEventCategory, categoryLabels, normalizeEventCategoryMetadata } from './category-taxonomy.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -144,6 +145,8 @@ async function fetchPageMeta(url) {
 }
 
 function applyBacklogOutline(event, page = {}) {
+  assignEventCategory(event);
+  const categoryLabel = categoryLabels(event.category, event)?.ar;
   const provider = providerName(event);
   const url = sourceUrl(event);
   const windowText = durationText(event);
@@ -173,7 +176,7 @@ function applyBacklogOutline(event, page = {}) {
     windowText ? `الموعد: ${windowText}` : '',
     event.city ? `المدينة: ${event.city}` : '',
     event.venue ? `الموقع: ${event.venue}` : '',
-    event.category ? `التصنيف: ${event.category}` : '',
+    categoryLabel ? `التصنيف: ${categoryLabel}` : '',
     provider ? `المصدر: ${provider}` : ''
   ], 8, 240);
   event.program_outline = {
@@ -194,7 +197,7 @@ function applyBacklogOutline(event, page = {}) {
       windowText ? `النافذة الزمنية: ${windowText}` : '',
       event.city ? `المدينة: ${event.city}` : '',
       event.venue ? `الموقع: ${event.venue}` : '',
-      event.category ? `التصنيف: ${event.category}` : '',
+      categoryLabel ? `التصنيف: ${categoryLabel}` : '',
       event.organizer ? `المنظم: ${event.organizer}` : '',
       imageUrl ? 'تتوفر صورة غلاف للبطاقة.' : '',
       url ? `رابط المصدر: ${url}` : ''
@@ -208,7 +211,7 @@ function applyBacklogOutline(event, page = {}) {
       provider,
       city: cleanText(event.city || ''),
       venue: cleanText(event.venue || ''),
-      category: cleanText(event.category || ''),
+      category: categoryLabel,
       live_schedule_status: Number(event.sessions_count || 0) > 0
         ? `${Number(event.sessions_count)} official timed sessions were extracted from the official source.`
         : 'Event-level source only; no timed session agenda was extracted.'
@@ -217,6 +220,7 @@ function applyBacklogOutline(event, page = {}) {
   event.live_schedule_ready = Boolean(event.live_schedule_ready && Number(event.sessions_count || 0) > 0);
   event.richness_score = Math.max(Number(event.richness_score || 0), imageUrl ? 8 : 6);
   event.updated_at = generatedAt;
+  normalizeEventCategoryMetadata(event);
 }
 
 const catalog = readJson(catalogPath, { events: [] });

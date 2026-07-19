@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import zlib from 'node:zlib';
 import { chromium } from 'playwright';
+import { assignEventCategory, normalizeEventCategoryMetadata } from './category-taxonomy.mjs';
 import { parseHrseAgendaHtml } from './hrse-agenda-utils.mjs';
 
 const root = process.cwd();
@@ -70,7 +71,8 @@ function applyAgenda(row, sessions, { candidate = false } = {}) {
   row.venue = 'The Arena Riyadh';
   if (candidate) delete row.venue_address;
   else row.venue_address = 'The Arena Riyadh, Riyadh, Saudi Arabia';
-  row.category = 'conference';
+  if (candidate) row.category = 'conference';
+  else assignEventCategory(row, row.raw_category || 'conference');
   row.organizer = 'Informa Connect';
   row.audiences = ['professionals', 'tech', 'entrepreneurs', 'students'];
   row.tags = ['human resources', 'leadership', 'workplace', 'technology', 'training', 'conference'];
@@ -126,6 +128,7 @@ function applyAgenda(row, sessions, { candidate = false } = {}) {
       live_schedule_status: `${sessions.length} official timed sessions available.`
     }
   };
+  normalizeEventCategoryMetadata(row);
 }
 
 const catalog = readJson(catalogPath, { events: [] });

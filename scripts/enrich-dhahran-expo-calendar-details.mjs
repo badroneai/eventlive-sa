@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { assignEventCategory, categoryLabels, normalizeEventCategoryMetadata } from './category-taxonomy.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -67,19 +68,18 @@ function findCandidate(event, candidatesByEventId, candidatesByKey) {
   return candidatesByKey.get(key) || {};
 }
 
-function officialDescription(event, candidate) {
+function officialDescription(event, candidate, categoryLabel) {
   const title = cleanText(candidate.title || event.title);
   const organizer = cleanText(candidate.organizer || event.organizer || 'Dhahran Expo');
   const city = cleanText(candidate.city || event.city || 'Dhahran');
   const venue = cleanText(candidate.venue || event.venue || 'Dhahran Expo');
-  const category = cleanText(candidate.category || event.category || 'event');
   const windowText = durationText(candidate.starts_at ? candidate : event);
   return compactItems([
     `${title} مدرجة في التقويم الرسمي لـ Dhahran Expo لعام 2026.`,
     windowText ? `النافذة الزمنية المعلنة: ${windowText}.` : '',
     `الموقع: ${venue}، ${city}.`,
     `الجهة المنظمة: ${organizer}.`,
-    `تصنيف الفعالية في EventLive: ${category}.`
+    `تصنيف الفعالية في EventLive: ${categoryLabel}.`
   ], 5, 420).join(' ');
 }
 
@@ -87,15 +87,16 @@ function applyDhahranCalendarDetails(event, candidate = {}) {
   const organizer = cleanText(candidate.organizer || event.organizer || 'Dhahran Expo');
   const venue = cleanText(candidate.venue || event.venue || 'Dhahran Expo');
   const city = cleanText(candidate.city || event.city || 'Dhahran');
-  const category = cleanText(candidate.category || event.category || 'venue event');
+  const category = cleanText(event.raw_category || candidate.category || event.category || 'venue event');
   const windowText = durationText(candidate.starts_at ? candidate : event);
   const sourceUrl = cleanText(event.source_url || event.evidence_url || candidate.source_url || candidate.evidence_url || 'https://dhahranexpo.com.sa');
-  const description = officialDescription(event, candidate);
 
   event.organizer = organizer;
   event.venue = venue;
   event.city = city;
-  event.category = category;
+  assignEventCategory(event, category);
+  const categoryLabel = categoryLabels(event.category, event)?.ar;
+  const description = officialDescription(event, candidate, categoryLabel);
   event.description = description;
   event.rich_summary = description;
   event.summary = `فعالية مدرجة في التقويم الرسمي لـ Dhahran Expo. ${windowText ? `الموعد: ${windowText}. ` : ''}المنظم: ${organizer}.`;
@@ -129,7 +130,7 @@ function applyDhahranCalendarDetails(event, candidate = {}) {
       `النافذة الزمنية: ${windowText}`,
       `الموقع: ${venue}، ${city}`,
       `المنظم: ${organizer}`,
-      `التصنيف: ${category}`,
+      `التصنيف: ${categoryLabel}`,
       'المصدر: تقويم Dhahran Expo الرسمي'
     ], 8, 220),
     requirements: compactItems([
@@ -141,12 +142,13 @@ function applyDhahranCalendarDetails(event, candidate = {}) {
       organizer,
       venue,
       city,
-      category,
+      category: categoryLabel,
       live_schedule_status: 'Calendar-level listing only; no timed sessions were published in the source row.'
     }).filter(([, value]) => value))
   };
   event.richness_score = Math.max(Number(event.richness_score || 0), 8);
   event.updated_at = generatedAt;
+  normalizeEventCategoryMetadata(event);
   return event;
 }
 

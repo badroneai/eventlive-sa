@@ -15,7 +15,7 @@ const distEvents = JSON.parse(fs.readFileSync(distEventsPath, 'utf8')).events ||
 const rfeccCatalog = catalogEvents.filter((event) => event.source_label === "RFECC What's On");
 const enrichedCatalog = rfeccCatalog.filter((event) => event.program_outline?.provider === 'RFECC What’s On');
 
-assert.ok(rfeccCatalog.length >= 6, 'catalog must include multiple RFECC rows');
+assert.ok(rfeccCatalog.length >= 4, 'catalog must retain the four deduplicated RFECC rows');
 assert.equal(enrichedCatalog.length, rfeccCatalog.length, 'RFECC enrichment must cover every catalog row');
 
 for (const event of enrichedCatalog) {

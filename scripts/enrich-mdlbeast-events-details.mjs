@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { assignEventCategory, categoryLabels, normalizeEventCategoryMetadata } from './category-taxonomy.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -221,7 +222,8 @@ function applyMdlbeastDetails(event, candidate = {}, page = {}) {
   event.city = cleanText(page.city || event.city || candidate.city || 'Riyadh');
   event.venue = cleanText(event.venue || candidate.venue || page.city || 'Riyadh');
   event.organizer = 'MDLBEAST';
-  event.category = 'music';
+  assignEventCategory(event, event.raw_category || 'music');
+  const categoryLabel = categoryLabels(event.category, event)?.ar;
   event.description = officialDescription;
   event.rich_summary = officialDescription;
   event.summary = `${firstSentence(officialDescription)} المصدر الرسمي: MDLBEAST.`;
@@ -275,7 +277,7 @@ function applyMdlbeastDetails(event, candidate = {}, page = {}) {
       source_scope: 'MDLBEAST official event page from Next.js data',
       organizer: 'MDLBEAST',
       city: event.city,
-      category: 'music',
+      category: categoryLabel,
       ticket_url: page.ticket_url || '',
       timezone: page.timezone || 'Asia/Riyadh',
       live_schedule_status: 'Event-level official page only; no timed session agenda was published in the extracted page.'
@@ -283,6 +285,7 @@ function applyMdlbeastDetails(event, candidate = {}, page = {}) {
   };
   event.richness_score = Math.max(Number(event.richness_score || 0), imageUrl ? 10 : 8);
   event.updated_at = generatedAt;
+  normalizeEventCategoryMetadata(event);
   return { imageUrl, fetched: Boolean(page.fetched), sourceMethod: event.program_outline.source_method };
 }
 

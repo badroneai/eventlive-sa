@@ -450,6 +450,7 @@ jobs:
             reports/schema-suite-regression-status.md
             reports/schema-suite-regression-status.json
             reports/schema-suite-timing.md
+            reports/indexnow-submission-receipt.json
             ops/schema-suite-runtime-history.json
 
       - name: Compute release safety verdict

@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { assignEventCategory, categoryLabels, normalizeEventCategoryMetadata } from './category-taxonomy.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -154,7 +155,7 @@ function applyRfeccDetails(event, candidate = {}, page = {}) {
   const officialTitle = cleanText(page.title || candidate.title || event.title);
   const venue = cleanText(event.venue || candidate.venue || 'Riyadh Front Exhibition & Conference Center');
   const city = cleanText(event.city || candidate.city || 'Riyadh');
-  const category = cleanText(event.category || candidate.category || 'exhibition');
+  const category = cleanText(event.raw_category || candidate.category || event.category || 'exhibition');
   const organizer = cleanText(event.organizer || candidate.organizer || 'Riyadh Front Exhibition & Conference Center');
   const sourceUrl = preferOfficialRfeccUrl(event, candidate);
   const windowText = durationText(candidate.starts_at ? candidate : event);
@@ -177,7 +178,8 @@ function applyRfeccDetails(event, candidate = {}, page = {}) {
   event.organizer = organizer;
   event.venue = venue;
   event.city = city;
-  event.category = category;
+  assignEventCategory(event, category);
+  const categoryLabel = categoryLabels(event.category, event)?.ar;
   event.description = officialDescription;
   event.rich_summary = officialDescription;
   event.summary = `${officialDescription} المصدر الرسمي: واجهة الرياض للمعارض والمؤتمرات.`;
@@ -215,7 +217,7 @@ function applyRfeccDetails(event, candidate = {}, page = {}) {
       page.date_line ? `تاريخ صفحة RFECC: ${page.date_line}` : '',
       `الموقع: ${venue}`,
       `المدينة: ${city}`,
-      `التصنيف: ${category}`,
+      `التصنيف: ${categoryLabel}`,
       imageUrl ? `الصورة الرسمية: ${imageUrl}` : '',
       page.schema_status ? `Schema status: ${page.schema_status}` : ''
     ], 8, 280),
@@ -228,13 +230,14 @@ function applyRfeccDetails(event, candidate = {}, page = {}) {
       organizer,
       venue,
       city,
-      category,
+      category: categoryLabel,
       attendance_mode: page.attendance_mode || '',
       live_schedule_status: 'Event-level official page only; no timed session agenda was published in the extracted page.'
     }).filter(([, value]) => value))
   };
   event.richness_score = Math.max(Number(event.richness_score || 0), imageUrl ? 9 : 7);
   event.updated_at = generatedAt;
+  normalizeEventCategoryMetadata(event);
   return { imageUrl, fetched: Boolean(page.title), sourceMethod: event.program_outline.source_method };
 }
 

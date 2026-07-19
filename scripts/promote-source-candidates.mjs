@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { categoryDefinition, normalizeEventCategory } from './category-taxonomy.mjs';
 import { ensureDir, exists, readJson, rel, root, writeJson } from './program-lifecycle-utils.mjs';
 
 const candidatesPath = process.env.EVENTLIVE_SOURCE_CANDIDATES_FILE
@@ -81,7 +82,7 @@ function richFieldsFromCandidate(candidate = {}) {
 function catalogEventFromCandidate(candidate, existingIds) {
   const slug = toSlug(candidate.title || candidate.id);
   const baseId = `event-${slug || candidate.id.replace(/^candidate-/, '')}`;
-  return {
+  const event = {
     id: uniqueId(baseId, existingIds),
     slug,
     title: candidate.title,
@@ -89,7 +90,7 @@ function catalogEventFromCandidate(candidate, existingIds) {
     city: candidate.city,
     venue: candidate.venue || candidate.city,
     venue_address: candidate.venue || candidate.city,
-    category: candidate.category || 'فعاليات',
+    category: candidate.category,
     summary: candidate.summary || `فعالية مرشحة من ${candidate.source_label}.`,
     ...richFieldsFromCandidate(candidate),
     ...(candidate.image_url || candidate.image || candidate.original_image_url ? {
@@ -114,6 +115,7 @@ function catalogEventFromCandidate(candidate, existingIds) {
     source_file: candidate.raw_snapshot_path || '',
     tags: Array.isArray(candidate.tags) ? candidate.tags.slice(0, 10) : []
   };
+  return normalizeEventCategory(event);
 }
 
 function isEligible(candidate) {
@@ -163,7 +165,9 @@ function main() {
   const candidatesEnvelope = readJson(candidatesPath);
   const catalogEnvelope = readJson(catalogPath);
   const candidates = Array.isArray(candidatesEnvelope.candidates) ? candidatesEnvelope.candidates : [];
-  const catalogEvents = Array.isArray(catalogEnvelope.events) ? catalogEnvelope.events : [];
+  const catalogEvents = Array.isArray(catalogEnvelope.events)
+    ? catalogEnvelope.events.map((event) => normalizeEventCategory(event))
+    : [];
   const existingIds = new Set(catalogEvents.map((event) => event.id));
   const catalogByMatch = new Map(catalogEvents.map((event) => [candidateMatchKey(event), event]));
   const candidateIds = new Set(candidates.map((candidate) => candidate.id));
@@ -183,6 +187,14 @@ function main() {
           reason: 'Candidate must be approved-for-catalog and catalog-review before promotion.'
         });
       }
+      return candidate;
+    }
+
+    if (!categoryDefinition(candidate.category, candidate)) {
+      skipped.push({
+        candidate_id: candidate.id,
+        reason: `Unknown category requires review: ${candidate.category || '(missing)'}`
+      });
       return candidate;
     }
 

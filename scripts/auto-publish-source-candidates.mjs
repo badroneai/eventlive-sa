@@ -1,6 +1,15 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { classifyAudiences } from './audience-utils.mjs';
+import { categoryDefinition, normalizeEventCategory } from './category-taxonomy.mjs';
+import {
+  addFuzzyDuplicateIndexEntry,
+  buildFuzzyDuplicateIndex,
+  canonicalDedupeVenue,
+  findExactSourceConflict,
+  findFuzzyVenueDateMatch,
+  sourceAuthority
+} from './event-dedupe-utils.mjs';
 import { isLiveScheduleReady, liveReadySessionCount } from './live-ready-utils.mjs';
 import { ensureDir, exists, readJson, rel, root, writeJson } from './program-lifecycle-utils.mjs';
 
@@ -19,6 +28,7 @@ const reportMdPath = process.env.EVENTLIVE_AUTO_PUBLISH_REPORT_MD
 const publishedAt = new Date().toISOString();
 const dryRun = ['1', 'true', 'yes'].includes(String(process.env.EVENTLIVE_AUTO_PUBLISH_DRY_RUN || '').toLowerCase());
 const includePartner = !['0', 'false', 'no'].includes(String(process.env.EVENTLIVE_AUTO_PUBLISH_PARTNER || 'true').toLowerCase());
+const officialUnknownCategoryFallback = 'community-occasions';
 
 function toSlug(value = '') {
   return String(value)
@@ -414,17 +424,30 @@ function dedupeAutoPublishedSemanticCatalog(events) {
   const removed = [];
   for (const event of events) {
     const identity = event.published_by === 'EventLive Auto Publisher' ? candidateMatchKey(event) : '';
-    if (!identity || !indexByIdentity.has(identity)) {
-      if (identity) indexByIdentity.set(identity, result.length);
+    const matchingIndex = (indexByIdentity.get(identity) || []).find((index) => {
+      const existing = result[index];
+      const existingVenue = canonicalDedupeVenue(existing);
+      const eventVenue = canonicalDedupeVenue(event);
+      if (existingVenue && eventVenue) return existingVenue === eventVenue;
+      if (existingVenue || eventVenue) return false;
+      const existingSource = sourceAuthority(existing);
+      const eventSource = sourceAuthority(event);
+      return Boolean(existingSource && eventSource && existingSource === eventSource);
+    });
+    if (!identity || matchingIndex === undefined) {
+      if (identity) {
+        const indexes = indexByIdentity.get(identity) || [];
+        indexes.push(result.length);
+        indexByIdentity.set(identity, indexes);
+      }
       result.push(event);
       continue;
     }
-    const index = indexByIdentity.get(identity);
-    const existing = result[index];
+    const existing = result[matchingIndex];
     const preferredRecord = preferredDuplicateEvent(existing, event);
     const preferred = mergeActionFields(preferredRecord, preferredRecord === existing ? event : existing);
     const discarded = preferred === existing ? event : existing;
-    result[index] = preferred;
+    result[matchingIndex] = preferred;
     removed.push({
       removed_event_id: discarded.id,
       kept_event_id: preferred.id,
@@ -432,6 +455,42 @@ function dedupeAutoPublishedSemanticCatalog(events) {
     });
   }
   return { events: result, removed };
+}
+
+function duplicateReviewResult(candidate, alert, duplicateReviewAlerts, blocked) {
+  const possibleEvent = alert.event;
+  const reportAlert = {
+    kind: alert.kind,
+    candidate_id: candidate.id,
+    possible_event_id: possibleEvent.id,
+    conflict_fields: alert.conflict_fields,
+    title_key: alert.title_key,
+    venue_key: alert.venue_key,
+    candidate_source: sourceAuthority(candidate),
+    existing_source: sourceAuthority(possibleEvent),
+    candidate_starts_at: candidate.starts_at || candidate.event_start || '',
+    existing_starts_at: possibleEvent.starts_at || possibleEvent.event_start || '',
+    date_gap_days: Number(alert.date_gap_days.toFixed(3)),
+    start_date_drift_days: Number(alert.start_date_drift_days.toFixed(3))
+  };
+  duplicateReviewAlerts.push(reportAlert);
+  blocked.push({
+    candidate_id: candidate.id,
+    title: candidate.title,
+    reason: `possible duplicate requires review: ${alert.kind}`,
+    kind: alert.kind,
+    possible_event_id: possibleEvent.id
+  });
+  const note = `تنبيه تكرار ${alert.kind}: راجع السجل المحتمل ${possibleEvent.id}.`;
+  const { matched_catalog_event_id: staleMatch, ...unmatchedCandidate } = candidate;
+  return {
+    ...unmatchedCandidate,
+    review_status: candidate.review_status === 'rejected' ? 'rejected' : 'ready-for-review',
+    publication_gate: 'duplicate-review',
+    reviewer_notes: String(candidate.reviewer_notes || '').includes(note)
+      ? candidate.reviewer_notes
+      : `${candidate.reviewer_notes || ''} ${note}`.trim()
+  };
 }
 
 function canonicalizeQueryIdentityEvents(events, candidates) {
@@ -603,10 +662,12 @@ function mergeMissingCandidateEnrichment(existing = {}, candidate = {}) {
 function catalogEventFromCandidate(candidate, existingIds) {
   const slug = toSlug(candidate.title || candidate.id);
   const baseId = `event-${slug || candidate.id.replace(/^candidate-/, '')}`;
+  const rawCategory = String(candidate.category || '').trim() || 'unspecified';
+  const category = categoryDefinition(rawCategory, candidate)?.key || officialUnknownCategoryFallback;
   const sessions = Array.isArray(candidate.sessions) ? candidate.sessions : [];
   const sessionsCount = Math.max(Number(candidate.extracted_sessions_count || 0), liveReadySessionCount({ sessions }));
   const liveScheduleReady = isLiveScheduleReady({ ...candidate, source_confidence: sourceConfidenceFor(candidate), sessions });
-  return {
+  const event = {
     id: uniqueId(baseId, existingIds),
     slug,
     title: decodeHtml(candidate.title),
@@ -614,7 +675,8 @@ function catalogEventFromCandidate(candidate, existingIds) {
     city: candidate.city,
     venue: candidate.venue || candidate.city,
     venue_address: candidate.venue || candidate.city,
-    category: candidate.category || 'فعاليات',
+    category,
+    raw_category: rawCategory,
     summary: candidate.summary || `فعالية منشورة آلياً من ${candidate.source_label}.`,
     ...richFieldsFromCandidate(candidate),
     ...(candidate.image_url || candidate.image || candidate.original_image_url ? {
@@ -643,10 +705,14 @@ function catalogEventFromCandidate(candidate, existingIds) {
     tags: Array.isArray(candidate.tags) ? candidate.tags.slice(0, 10) : [],
     audiences: classifyAudiences(candidate)
   };
+  return normalizeEventCategory(event);
 }
 
 function autoPublishBlocker(candidate, catalogByMatch, catalogByLooseMatch, catalogByDateWindow, catalogBySourceDate) {
   if (!candidate.title || !candidate.city || !candidate.starts_at || !candidate.ends_at) return 'missing required public fields';
+  if (candidate.confidence !== 'official' && !categoryDefinition(candidate.category, candidate)) {
+    return 'unknown category requires review';
+  }
   if (!isValidPublicDateTime(candidate.starts_at) || !isValidPublicDateTime(candidate.ends_at)) return 'invalid public datetime';
   if (!candidate.source_url || !candidate.source_label || !candidate.source_owner) return 'missing source identity';
   if (!candidate.evidence_url && !candidate.raw_snapshot_path) return 'missing evidence';
@@ -703,6 +769,7 @@ function writeReport(report) {
     `- published_new: ${totals.published}`,
     `- linked_existing: ${totals.linked_existing}`,
     `- blocked_remaining: ${totals.blocked}`,
+    `- duplicate_review_alerts: ${totals.duplicate_review_alerts || 0}`,
     '',
     '## Blocked summary',
     '',
@@ -712,7 +779,7 @@ function writeReport(report) {
     '|---|---|---|---|',
     ...report.published.map((item) => `| ${item.candidate_id} | published | ${item.event_id} | ${item.title} |`),
     ...(report.linked_existing || []).map((item) => `| ${item.candidate_id} | linked-existing | ${item.event_id} | ${item.reason} |`),
-    ...report.blocked.map((item) => `| ${item.candidate_id} | blocked | - | ${item.reason} |`)
+    ...report.blocked.map((item) => `| ${item.candidate_id} | blocked | ${item.possible_event_id || '-'} | ${item.reason} |`)
   ];
   fs.writeFileSync(reportMdPath, `${lines.join('\n')}\n`, 'utf8');
 }
@@ -728,7 +795,8 @@ function main() {
   const reconciledDocuments = reconcileCollapsedMultiEventDocuments(rawCandidates, rawCatalogEvents);
   const candidates = reconciledDocuments.candidates;
   const validCatalogEvents = reconciledDocuments.catalogEvents
-    .filter((event) => hasValidPublicDateTimes(event) || !isAutoPublishedEventLiveRow(event));
+    .filter((event) => hasValidPublicDateTimes(event) || !isAutoPublishedEventLiveRow(event))
+    .map((event) => normalizeEventCategory(event));
   const dedupedCatalog = dedupeAutoPublishedCatalog(validCatalogEvents);
   const semanticDedupedCatalog = dedupeAutoPublishedSemanticCatalog(dedupedCatalog.events);
   const actionDedupedCatalog = dedupeActionSemanticCatalog(semanticDedupedCatalog.events);
@@ -752,9 +820,11 @@ function main() {
   const catalogByBilingualAlias = new Map(catalogEvents
     .map((event) => [bilingualAliasKey(event), event])
     .filter(([key]) => key));
+  const fuzzyDuplicateIndex = buildFuzzyDuplicateIndex(catalogEvents);
   const published = [];
   const linkedExisting = [];
   const blocked = [];
+  const duplicateReviewAlerts = [];
 
   let updatedCandidates = candidates.map((candidate) => {
     const exactMatch = catalogByMatch.get(candidateMatchKey(candidate));
@@ -777,6 +847,19 @@ function main() {
     const sourceDateMatch = !exactMatch && !looseMatch && !bilingualAliasMatch && !actionIdentityMatch && !actionSemanticMatch && !sourceIdentityMatch && !windowMatch
       ? catalogBySourceDate.get(candidateSourceDateKey(candidate))
       : null;
+    const decisiveIdentityMatch = catalogByBilingualAlias.get(bilingualAliasKey(candidate))
+      || catalogByActionIdentity.get(candidateActionIdentityKey(candidate))
+      || catalogBySourceIdentity.get(candidateSourceIdentityKey(candidate));
+    const canReceiveDuplicateAlert = candidate.review_status !== 'rejected'
+      && candidate.publication_gate !== 'blocked';
+    const exactSourceConflict = canReceiveDuplicateAlert
+      ? findExactSourceConflict(candidate, fuzzyDuplicateIndex, {
+        ignoreEventIds: [decisiveIdentityMatch?.id]
+      })
+      : null;
+    if (exactSourceConflict) {
+      return duplicateReviewResult(candidate, exactSourceConflict, duplicateReviewAlerts, blocked);
+    }
     const existingMatch = exactMatch || looseMatch || bilingualAliasMatch || actionIdentityMatch || actionSemanticMatch || sourceIdentityMatch || windowMatch || sourceDateMatch;
     if (existingMatch) {
       if (trustedAlreadyPublished(candidate)) {
@@ -802,7 +885,15 @@ function main() {
           }
           if (sameSourcePage && (sameSourceDetailRefresh || !hasPreciseLiveSchedule(existingMatch))) {
             existingMatch.summary = candidate.summary || candidate.rich_summary || existingMatch.summary;
-            existingMatch.category = candidate.category || existingMatch.category;
+            const refreshedCategory = normalizeEventCategory({
+              ...existingMatch,
+              category: candidate.category || existingMatch.category,
+              raw_category: candidate.category || existingMatch.raw_category || existingMatch.category
+            }, { strict: false });
+            if (refreshedCategory) {
+              existingMatch.category = refreshedCategory.category;
+              existingMatch.raw_category = refreshedCategory.raw_category;
+            }
           }
           if (!hasPreciseLiveSchedule(existingMatch)) {
             existingMatch.starts_at = candidate.starts_at || existingMatch.starts_at;
@@ -846,6 +937,13 @@ function main() {
       };
     }
 
+    const fuzzyDuplicate = canReceiveDuplicateAlert
+      ? findFuzzyVenueDateMatch(candidate, fuzzyDuplicateIndex)
+      : null;
+    if (fuzzyDuplicate) {
+      return duplicateReviewResult(candidate, fuzzyDuplicate, duplicateReviewAlerts, blocked);
+    }
+
     const blocker = autoPublishBlocker(candidate, catalogByMatch, catalogByLooseMatch, catalogByDateWindow, catalogBySourceDate);
     if (blocker) {
       blocked.push({
@@ -875,6 +973,7 @@ function main() {
     const bilingualKey = bilingualAliasKey(event);
     if (bilingualKey) catalogByBilingualAlias.set(bilingualKey, event);
     if (isLongSeasonLike(event)) catalogByDateWindow.set(candidateDateWindowKey(event), event);
+    addFuzzyDuplicateIndexEntry(fuzzyDuplicateIndex, event);
     published.push({
       candidate_id: candidate.id,
       event_id: event.id,
@@ -910,6 +1009,7 @@ function main() {
       published: published.length,
       linked_existing: linkedExisting.length,
       blocked: blocked.length,
+      duplicate_review_alerts: duplicateReviewAlerts.length,
       reconciled: published.length + linkedExisting.length
     },
     duplicate_catalog_rows_removed: dedupedCatalog.removed.length
@@ -924,6 +1024,7 @@ function main() {
     ],
     canonical_event_ids_remapped: canonicalization.remapped.length,
     canonical_event_id_remaps: canonicalization.remapped,
+    duplicate_review_alerts: duplicateReviewAlerts,
     published,
     linked_existing: linkedExisting,
     blocked

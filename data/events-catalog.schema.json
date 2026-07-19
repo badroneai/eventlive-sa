@@ -19,6 +19,7 @@
           "city",
           "venue",
           "category",
+          "raw_category",
           "starts_at",
           "ends_at",
           "updated_at",
@@ -57,7 +58,22 @@
           "city": { "type": "string", "minLength": 1 },
           "venue": { "type": "string", "minLength": 1 },
           "venue_address": { "type": "string" },
-          "category": { "type": "string", "minLength": 1 },
+          "category": {
+            "type": "string",
+            "enum": [
+              "exhibitions-conferences",
+              "family-entertainment",
+              "culture-arts",
+              "education-training",
+              "technology-innovation",
+              "sports-outdoors",
+              "tourism-experiences",
+              "business-entrepreneurship",
+              "health-regulation",
+              "community-occasions"
+            ]
+          },
+          "raw_category": { "type": "string", "minLength": 1 },
           "summary": { "type": "string" },
           "rich_summary": { "type": "string" },
           "description": { "type": "string" },

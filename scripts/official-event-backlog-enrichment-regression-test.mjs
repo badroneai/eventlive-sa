@@ -27,7 +27,7 @@ const requiredSources = [
   'Visit Saudi Seasons',
   "Monsha'at All Events",
   'Saudi Universities and Technical Colleges',
-  'SDAIA Calendar and Events',
+  'Riyadh City Events',
   'Invest Saudi Events',
   'Asharqia Chamber Events',
   'Qassim Chamber Events'

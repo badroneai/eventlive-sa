@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { load } from 'cheerio';
 import { parse } from 'acorn';
+import { CATEGORY_TAXONOMY, categoryDefinitionByKey } from './category-taxonomy.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -21,6 +22,7 @@ const incrementalBuild = requestedIncrementalBuild
   && changeManifest.mode === 'incremental'
   && fs.existsSync(enDir);
 const exact = JSON.parse(fs.readFileSync(path.join(root, 'locales', 'en-SA-static.json'), 'utf8'));
+for (const category of CATEGORY_TAXONOMY) exact[category.label_ar] = category.label_en;
 const ownerOnly = new Set(['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html', 'owner-status.html', 'owner-search-growth.html', 'attendance.html']);
 const catalogEnvelope = JSON.parse(fs.readFileSync(path.join(distDir, 'events-catalog.json'), 'utf8'));
 const catalogEvents = catalogEnvelope.events || [];
@@ -706,7 +708,10 @@ function translateCatalog() {
     ...event,
     city: exact[event.city] || event.city,
     city_label: exact[event.city_label] || event.city || event.city_label,
-    category_label: exact[event.category_label] || exact[event.category] || event.category_label || event.category,
+    category_label: categoryDefinitionByKey(event.category_slug || event.category)?.label_en
+      || event.category_label_en
+      || exact[event.category_label]
+      || event.category_label,
     summary: `Official listing for ${event.title} in ${event.city || event.city_label || 'Saudi Arabia'}. Check the event page for verified timing, venue, directions, and source details.`,
     audience_labels: (event.audience_labels || []).map((audience) => ({ ...audience, label: exact[audience.label] || audience.label })),
     ics_url: event.ics_url ? String(event.ics_url).replace(/^\.\//, '/') : event.ics_url
@@ -717,7 +722,18 @@ function translateCatalog() {
 function copyTopLevelFeeds() {
   for (const name of ['today.json', 'today-events.json', 'this-week.json', 'this-month.json', 'updates.json', 'cities.json', 'categories.json', 'audiences.json', 'regions.json', 'live-status.json', 'saudi-events-insights.json']) {
     const source = path.join(distDir, name);
-    if (fs.existsSync(source)) fs.copyFileSync(source, path.join(enDir, name));
+    if (!fs.existsSync(source)) continue;
+    if (name === 'categories.json') {
+      const payload = JSON.parse(fs.readFileSync(source, 'utf8'));
+      payload.locale = 'en-SA';
+      payload.categories = (payload.categories || []).map((category) => ({
+        ...category,
+        label: categoryDefinitionByKey(category.slug)?.label_en || exact[category.label] || category.label
+      }));
+      fs.writeFileSync(path.join(enDir, name), `${JSON.stringify(payload, null, 2)}\n`);
+      continue;
+    }
+    fs.copyFileSync(source, path.join(enDir, name));
   }
 }
 
