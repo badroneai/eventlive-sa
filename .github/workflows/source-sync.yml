@@ -232,6 +232,16 @@ jobs:
         continue-on-error: true
         run: npm run seo:indexnow
 
+      - name: Upload IndexNow submission receipt
+        if: always()
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: eventme-indexnow-receipt-${{ github.run_id }}
+          retention-days: 14
+          if-no-files-found: warn
+          path: reports/indexnow-submission-receipt.json
+
       - name: Summary
         run: |
           echo "## EventLive Source Sync" >> "$GITHUB_STEP_SUMMARY"

@@ -3,6 +3,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { normalizeArabicSearch } from './arabic-normalize.mjs';
 import { normalizeSaudiCity } from './city-utils.mjs';
+import {
+  canonicalDedupeTitle,
+  findPublicNearDuplicatePairs
+} from './event-dedupe-utils.mjs';
 
 const eventsPath = path.join(process.cwd(), 'dist', 'events.json');
 assert.equal(fs.existsSync(eventsPath), true, 'dist/events.json must exist; run npm run build first');
@@ -20,6 +24,25 @@ for (const event of events) {
 }
 const duplicates = [...keys.entries()].filter(([, count]) => count > 1);
 assert.deepEqual(duplicates, [], `public event feed contains ${duplicates.length} exact duplicate groups`);
+
+const catalogPath = path.join(process.cwd(), 'data', 'events_catalog.json');
+const catalogEvents = JSON.parse(fs.readFileSync(catalogPath, 'utf8')).events || [];
+const publicCatalogEvents = catalogEvents.filter((event) => event.approval_status === 'published');
+const saudiIndustrialTitleKey = canonicalDedupeTitle('Saudi Industrial Series');
+const saudiIndustrialEvents = catalogEvents.filter((event) => canonicalDedupeTitle(event.title) === saudiIndustrialTitleKey);
+assert.equal(
+  saudiIndustrialEvents.length,
+  1,
+  `full catalog must contain one Saudi Industrial Series record, found ${saudiIndustrialEvents.length}`
+);
+assert.equal(saudiIndustrialEvents[0].approval_status, 'published', 'the sole Saudi Industrial Series record must be public');
+
+const nearDuplicates = findPublicNearDuplicatePairs(publicCatalogEvents);
+assert.equal(
+  nearDuplicates.length,
+  0,
+  `published catalog contains normalized title + venue duplicates within the ±3-day window: ${JSON.stringify(nearDuplicates.map((pair) => [pair.first_event_id, pair.second_event_id]))}`
+);
 
 const endedPath = path.join(process.cwd(), 'data', 'source_ended_events.json');
 const endedEvents = JSON.parse(fs.readFileSync(endedPath, 'utf8')).ended_events || [];
@@ -39,4 +62,4 @@ assert.deepEqual(
   'Madinah Chamber detail pages must remain distinct while exact duplicate circulars stay deduplicated'
 );
 
-console.log(`PUBLIC_DEDUPE_TEST_OK events=${events.length} duplicate_groups=0`);
+console.log(`PUBLIC_DEDUPE_TEST_OK events=${events.length} catalog_published=${publicCatalogEvents.length} duplicate_groups=0 near_duplicate_pairs=0 saudi_industrial_records=1`);

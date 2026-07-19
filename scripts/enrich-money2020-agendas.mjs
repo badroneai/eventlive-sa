@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { assignEventCategory, normalizeEventCategoryMetadata } from './category-taxonomy.mjs';
 import { parseMoney2020AgendaHtml } from './money2020-agenda-utils.mjs';
 
 const root = process.cwd();
@@ -49,7 +50,8 @@ function apply2026Identity(row, sessions, { candidate = false } = {}) {
   row.venue = 'Riyadh Exhibition & Convention Center, Malham';
   if (candidate) delete row.venue_address;
   else row.venue_address = 'Malham, Riyadh, Saudi Arabia';
-  row.category = 'conference';
+  if (candidate) row.category = 'conference';
+  else assignEventCategory(row, row.raw_category || 'conference');
   row.organizer = 'Tahaluf';
   row.audiences = ['professionals', 'tech', 'entrepreneurs'];
   row.tags = ['fintech', 'banking', 'payments', 'investment', 'technology', 'conference'];
@@ -83,6 +85,7 @@ function apply2026Identity(row, sessions, { candidate = false } = {}) {
       requirements: ['راجع الأجندة الرسمية قبل الحضور لاحتمال تحديث القاعة أو المتحدث أو التوقيت.']
     };
   }
+  normalizeEventCategoryMetadata(row);
 }
 
 function ended2025Record(sessions) {

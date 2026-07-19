@@ -37,7 +37,7 @@ assert.ok(soundstorm?.ticket_url?.includes('nofomo.com'), 'Soundstorm must carry
 
 const distEnriched = distEvents.filter((event) => event.program_outline?.provider === 'MDLBEAST');
 assert.ok(distEnriched.length >= enrichedCatalog.length, 'build must carry MDLBEAST program outlines into dist/events.json');
-assert.ok(distEnriched.some((event) => event.category_label === 'ترفيه وعائلات'), 'MDLBEAST music category must render as an Arabic entertainment label');
+assert.ok(distEnriched.some((event) => event.category_label === 'الترفيه والعائلات'), 'MDLBEAST music category must render as the canonical Arabic entertainment label');
 
 const sample = distEnriched.find((event) => event.id === 'event-soundstorm-26') || distEnriched[0];
 const detailPath = path.join(root, 'dist', String(sample.detail_url || '').replace(/^\.\//, ''));

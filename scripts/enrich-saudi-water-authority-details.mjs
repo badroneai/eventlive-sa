@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { assignEventCategory, categoryLabels, normalizeEventCategoryMetadata } from './category-taxonomy.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -159,7 +160,7 @@ function applySwaDetails(event, candidate = {}, page = {}) {
   const organizer = cleanText(event.organizer || candidate.organizer || 'Saudi Water Authority');
   const venue = cleanText(calendar.location || event.venue || candidate.venue || event.city || candidate.city);
   const city = cleanText(event.city || candidate.city || venue);
-  const category = cleanText(event.category || candidate.category || 'event');
+  const category = cleanText(event.raw_category || candidate.category || event.category || 'event');
   const sourceUrl = preferOfficialSwaUrl(event, candidate);
   const windowText = durationText(candidate.starts_at ? candidate : event);
   const pageImage = cleanText(page.image || '');
@@ -186,7 +187,8 @@ function applySwaDetails(event, candidate = {}, page = {}) {
   event.organizer = organizer;
   event.venue = venue;
   event.city = city;
-  event.category = category;
+  assignEventCategory(event, category);
+  const categoryLabel = categoryLabels(event.category, event)?.ar;
   event.description = officialDescription;
   event.rich_summary = officialDescription;
   event.summary = `${firstSentence(officialDescription)} المصدر الرسمي: الهيئة السعودية للمياه.`;
@@ -197,7 +199,7 @@ function applySwaDetails(event, candidate = {}, page = {}) {
     `الموعد الرسمي: ${windowText}`,
     `الموقع: ${venue}`,
     `المنظم: ${organizer}`,
-    `التصنيف: ${category}`,
+    `التصنيف: ${categoryLabel}`,
     imageUrl ? 'الصورة الرسمية محفوظة من CDN الهيئة السعودية للمياه.' : ''
   ], 8, 240);
   event.program_outline = {
@@ -219,7 +221,7 @@ function applySwaDetails(event, candidate = {}, page = {}) {
       `الموقع: ${venue}`,
       `المدينة: ${city}`,
       `المنظم: ${organizer}`,
-      `التصنيف: ${category}`,
+      `التصنيف: ${categoryLabel}`,
       imageUrl ? `الصورة الرسمية: ${imageUrl}` : '',
       calendar.dates ? `Google Calendar dates: ${calendar.dates}` : ''
     ], 8, 280),
@@ -232,13 +234,14 @@ function applySwaDetails(event, candidate = {}, page = {}) {
       organizer,
       venue,
       city,
-      category,
+      category: categoryLabel,
       calendar_location: calendar.location || '',
       live_schedule_status: 'Event-level official page only; no timed session agenda was published in the extracted page.'
     }).filter(([, value]) => value))
   };
   event.richness_score = Math.max(Number(event.richness_score || 0), imageUrl ? 10 : 8);
   event.updated_at = generatedAt;
+  normalizeEventCategoryMetadata(event);
   return { imageUrl, fetched: Boolean(page.title), sourceMethod: event.program_outline.source_method };
 }
 

@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { assignEventCategory, categoryLabels, normalizeEventCategoryMetadata } from './category-taxonomy.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -163,6 +164,8 @@ function findCandidate(event, candidatesByEventId, candidatesByKey) {
 }
 
 function applyVisitSaudiDetails(event, candidate = {}, page = {}) {
+  assignEventCategory(event);
+  const categoryLabel = categoryLabels(event.category, event)?.ar;
   const windowText = durationText(candidate.starts_at ? candidate : event);
   const officialDescription = cleanText(candidate.summary || event.summary || page.metaDescription || firstSentence(page.bodyText));
   const sourceUrl = cleanText(event.source_url || event.evidence_url || candidate.source_url || candidate.evidence_url || '');
@@ -184,7 +187,7 @@ function applyVisitSaudiDetails(event, candidate = {}, page = {}) {
     ...(Array.isArray(event.highlights) ? event.highlights : []),
     `الموعد الرسمي: ${windowText}`,
     `الموقع: ${cleanText(event.venue || candidate.venue || event.city || candidate.city)}`,
-    `التصنيف: ${cleanText(event.category || candidate.category)}`,
+    `التصنيف: ${categoryLabel}`,
     imageUrl ? 'الصورة الرسمية محفوظة بجودة عالية من مصدر Visit Saudi.' : '',
     'مصدر البيانات: Visit Saudi'
   ], 8, 220);
@@ -206,7 +209,7 @@ function applyVisitSaudiDetails(event, candidate = {}, page = {}) {
       `النافذة الزمنية: ${windowText}`,
       `المدينة أو النطاق: ${cleanText(event.city || candidate.city)}`,
       `الموقع: ${cleanText(event.venue || candidate.venue)}`,
-      `التصنيف: ${cleanText(event.category || candidate.category)}`,
+      `التصنيف: ${categoryLabel}`,
       imageUrl ? `الصورة الرسمية: ${imageUrl}` : '',
       page.title ? `عنوان الصفحة الرسمية: ${page.title}` : ''
     ], 8, 260),
@@ -218,13 +221,14 @@ function applyVisitSaudiDetails(event, candidate = {}, page = {}) {
       source_scope: 'Visit Saudi official event or calendar page',
       city: cleanText(event.city || candidate.city),
       venue: cleanText(event.venue || candidate.venue),
-      category: cleanText(event.category || candidate.category),
+      category: categoryLabel,
       image_status: imageUrl ? 'official_or_catalog_scene7_image' : 'not_available_in_current_source',
       live_schedule_status: 'Event-level page only; no timed session agenda was published in the extracted source.'
     }).filter(([, value]) => value))
   };
   event.richness_score = Math.max(Number(event.richness_score || 0), imageUrl ? 10 : 8);
   event.updated_at = generatedAt;
+  normalizeEventCategoryMetadata(event);
   return { imageUrl, sourceMethod: event.program_outline.source_method };
 }
 

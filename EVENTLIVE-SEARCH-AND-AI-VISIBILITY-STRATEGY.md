@@ -34,6 +34,13 @@ Make EventLive the most useful Saudi event result for intent-led searches such a
 2. Submit the full public sitemap after a code release because shared templates and metadata may have changed across the site.
 3. Keep Google discovery sitemap-led. Do not use Google's Indexing API for normal event pages; it is not the supported route for this content type.
 
+### Operational evidence
+
+- Every IndexNow attempt writes `reports/indexnow-submission-receipt.json` before returning. The receipt records only the timestamp, mode, outcome, HTTP response code, URL count, and attempt number; it excludes the key, submitted URLs, endpoint, response body, and error text.
+- Code-release and source-sync workflows retain that receipt as an artifact after the non-blocking IndexNow step. A failed notification therefore remains observable without blocking an otherwise healthy site release.
+- `npm run seo:crawler-evidence` uses `curl` to probe the production home page and one sitemap event page as Bingbot, OAI-SearchBot, and PerplexityBot, evaluates effective robots rules, detects common WAF challenges, and verifies the redacted IndexNow key-file contract. It writes `reports/search-crawler-production-evidence.json` and `.md` and exits non-zero when any evidence gate fails.
+- An accepted IndexNow HTTP response proves receipt of the notification, not indexing. Bing Webmaster Tools remains the owner-controlled source for final indexing evidence.
+
 ## Structured data policy
 
 - `WebSite` and the canonical `Organization` entity identify EventLive at the home surface.

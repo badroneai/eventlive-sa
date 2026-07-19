@@ -4,6 +4,14 @@ import path from 'node:path';
 import QRCode from 'qrcode';
 import { normalizeArabicSearch } from './arabic-normalize.mjs';
 import { AUDIENCE_TAXONOMY, audienceObjects, classifyAudiences } from './audience-utils.mjs';
+import {
+  CATEGORY_TAXONOMY,
+  canonicalCategorySlug,
+  categoryDefinition,
+  categoryDefinitionByKey,
+  normalizeEventCategory,
+  normalizeEventCategoryMetadata
+} from './category-taxonomy.mjs';
 import { normalizeSaudiCity } from './city-utils.mjs';
 import { classifyEventKind, eventKindLabel, getEventStatus } from './event-kind-utils.mjs';
 import {
@@ -511,67 +519,17 @@ function citySlug(city) {
 }
 
 function categorySlug(category = '', event = {}) {
-  const categoryText = normalizeArabicSearch(category);
-  const text = normalizeArabicSearch([
-    category,
-    event.title,
-    event.summary,
-    Array.isArray(event.tags) ? event.tags.join(' ') : ''
-  ].filter(Boolean).join(' '));
-  if (/غرف|غرفه|\bchamber\b|\bcommerce\b/.test(text)) return 'chamber-event';
-  if (/غذاء|دواء|صحه|صحي|طبي|تنظيم|لوائح|مبيدات|\bsfda\b|\bregulatory\b|\bhealthcare\b|\bpharma\b/.test(text)) return 'regulatory-workshop';
-  if (/العاب|الكترونيه|\bgaming\b|\besports?\b|\bgamers?\b/.test(text)) return 'gaming-esports';
-  if (/رياضه|رياضي|مباراه|بطوله|\bsports?\b|\bfootball\b|\bmatch\b|\bcup\b/.test(categoryText)) return 'sports';
-  if (/ثقاف|تراث|فنون|ادب|\bculture\b|\bhistory\b|\bheritage\b|\barts?\b/.test(categoryText)) return 'culture-arts';
-  if (/موسم|ترفيه|عائلات|اطفال|موسيقي|موسيقى|\bfamil(y|ies)\b|\bfestival\b|\bseason\b|\bentertainment\b|\bpublic holidays?\b|\bmusic\b|\bconcert\b|\bclub\b/.test(categoryText)) return 'entertainment-families';
-  if (/جائزه|جوائز|تكريم|\bawards?\b|\bprizes?\b|\bceremon(y|ies)\b/.test(text)) return 'awards-ceremonies';
-  if (/فضاء|فلك|\bastronomy\b|\bspace\b|\bartemis\b|\bcopuos\b|\bastronautical\b|\bmadar\b/.test(text)) return 'science-space';
-  if (/مؤتمر|ملتقي|منتدي|قمه|\bconference\b|\bforum\b|\bsummit\b/.test(text)) return 'conference-forum';
-  if (/معرض|اكسبو|مزاد|\bexhibition\b|\bexpo\b|\btrade show\b|\bauction\b|\bvenue event\b|\bcidex\b|\bjewels\b/.test(text)) return 'exhibition-trade';
-  if (/جامعه|اكاديمي|مجتمع|محاضره|ورشه|\bworkshop\b|\bcommunity\b|\buniversity event\b|\bpublic lecture\b|\bkaust\b/.test(text)) return 'education-community';
-  if (/تدريب|تقني|معسكر|مهارات|\bbootcamp\b|\bcourse\b|\btraining\b|\btuwaiq\b|\bfuture skills\b|\bmcit\b|\bcode\b|\bsdaia\b|\bai\b|\bcyber\b|\bdata\b|\bdigital\b|\bcloud\b|\bsoftware\b|\bprogramming\b|\bgenerative\b/.test(text)) return 'technology-training';
-  if (/رياضه|رياضي|مباراه|بطوله|\bsports?\b|\bfootball\b|\bmatch\b|\bcup\b/.test(text)) return 'sports';
-  if (/ثقاف|تراث|فنون|ادب|\bculture\b|\bhistory\b|\bheritage\b|\barts?\b|\bithra\b/.test(text)) return 'culture-arts';
-  if (/موسم|ترفيه|عائلات|اطفال|موسيقي|موسيقى|\bfamil(y|ies)\b|\bfestival\b|\bseason\b|\bentertainment\b|\bpublic holidays?\b|\bmusic\b|\bconcert\b|\bclub\b/.test(text)) return 'entertainment-families';
-  if (/رياده|منشات|منشآت|\bstartup\b|\bentrepreneur\b|\bbiban\b/.test(text)) return 'entrepreneurship';
-  return slugify(category || 'general-events');
+  const definition = categoryDefinition(category, event) || categoryDefinitionByKey(category);
+  if (!definition) {
+    throw new Error(`Unknown category "${category}" for event ${event.id || '(missing id)'}`);
+  }
+  return definition.key;
 }
 
 function categoryLabel(slug, original = '') {
-  const labels = new Map([
-    ['technology-training', 'تدريب تقني'],
-    ['chamber-event', 'فعاليات الغرف التجارية'],
-    ['entertainment-families', 'ترفيه وعائلات'],
-    ['culture-arts', 'ثقافة وفنون'],
-    ['gaming-esports', 'ألعاب ورياضات إلكترونية'],
-    ['national-day', 'مناسبات وطنية'],
-    ['sports', 'رياضة وفعاليات جماهيرية'],
-    ['entrepreneurship', 'ريادة أعمال'],
-    ['regulatory-workshop', 'ورش تنظيمية وصحية'],
-    ['science-space', 'علوم وفضاء'],
-    ['conference-forum', 'مؤتمرات ومنتديات'],
-    ['exhibition-trade', 'معارض وتجارية'],
-    ['education-community', 'جامعات ومجتمع'],
-    ['awards-ceremonies', 'جوائز وتكريم'],
-    ['general-events', 'فعاليات عامة']
-  ]);
-  return labels.get(slug) || original || 'فعاليات عامة';
-}
-
-const categorySlugAliases = new Map([
-  ['conferences-forums', 'conference-forum'],
-  ['technology-bootcamp', 'technology-training'],
-  ['sports-families', 'sports'],
-  ['sports-and-community', 'sports'],
-  ['culture-history-families', 'culture-arts'],
-  ['skills-program', 'technology-training'],
-  ['saudi-seasons', 'entertainment-families'],
-  ['معسكر-هندسة-الميكاترونكس', 'technology-training']
-]);
-
-function canonicalCategorySlug(slug = '') {
-  const decoded = decodeURIComponent(String(slug || '').trim());
-  return categorySlugAliases.get(decoded) || decoded;
+  const definition = categoryDefinitionByKey(canonicalCategorySlug(slug)) || categoryDefinition(original);
+  if (!definition) throw new Error(`Unknown category label for "${slug || original}"`);
+  return definition.label_ar;
 }
 
 const strategicCoverageCities = [
@@ -602,19 +560,7 @@ const strategicCoverageCities = [
   'Nationwide'
 ];
 
-const strategicCoverageCategories = [
-  ['technology training', 'تدريب تقني'],
-  ['chamber event', 'فعاليات الغرف التجارية'],
-  ['entertainment families', 'ترفيه وعائلات'],
-  ['sports', 'رياضة وفعاليات جماهيرية'],
-  ['entrepreneurship', 'ريادة أعمال'],
-  ['regulatory workshop', 'ورش تنظيمية وصحية'],
-  ['science space', 'علوم وفضاء'],
-  ['conference forum', 'مؤتمرات ومنتديات'],
-  ['exhibition trade', 'معارض وتجارية'],
-  ['education community', 'جامعات ومجتمع'],
-  ['general events', 'فعاليات عامة']
-];
+const strategicCoverageCategories = CATEGORY_TAXONOMY.map((category) => [category.key, category.label_ar]);
 
 const saudiRegions = [
   ['al-baha-region', 'منطقة الباحة', ['Al Baha']],
@@ -860,12 +806,26 @@ function sourceTrustProfile(raw = {}, previous = {}) {
 
 function normalizeEvent(raw, sourceGroup, previousLookup) {
   const previous = previousLookup.byId.get(raw.id) || previousLookup.byIdentity.get(eventIdentity(raw)) || {};
+  raw = normalizeEventCategoryMetadata({
+    ...raw,
+    id: raw.id || previous.id,
+    category: raw.category || previous.category,
+    raw_category: raw.raw_category ?? raw.category ?? previous.raw_category ?? previous.category
+  });
   const sourceCity = raw.city || previous.city || raw.venue || raw.venue_address || 'Saudi Arabia';
   const normalizedCity = normalizeSaudiCity(sourceCity, sourceCity || 'Saudi Arabia');
   const slug = String(raw.slug || previous.slug || slugify(raw.title || raw.id)).normalize('NFC');
   const fileSlug = String(raw.file_slug || raw.id || previous.file_slug || slug).normalize('NFC');
-  const category = raw.category || previous.category || 'general-events';
-  const catSlug = categorySlug(category, raw);
+  const normalizedCategory = normalizeEventCategory({
+    ...raw,
+    id: raw.id || previous.id || fileSlug,
+    category: raw.category || previous.category,
+    raw_category: raw.raw_category ?? raw.category ?? previous.raw_category ?? previous.category
+  });
+  const category = normalizedCategory.category;
+  const rawCategory = normalizedCategory.raw_category;
+  const categoryDefinitionRecord = categoryDefinitionByKey(category);
+  const catSlug = categorySlug(category, normalizedCategory);
   const kind = classifyEventKind({ ...raw, event_kind: raw.event_kind || previous.event_kind });
   const status = sourceGroup === 'ended'
     ? { key: 'ended', label: 'منتهية' }
@@ -899,8 +859,10 @@ function normalizeEvent(raw, sourceGroup, previousLookup) {
     venue: raw.venue || previous.venue || normalizedCity,
     venue_address: raw.venue_address || previous.venue_address || raw.venue || normalizedCity,
     category,
+    raw_category: rawCategory,
     category_slug: catSlug,
     category_label: categoryLabel(catSlug, category),
+    category_label_en: categoryDefinitionRecord.label_en,
     summary: raw.summary || previous.summary || 'تفاصيل الفعالية محفوظة من مصدرها المعتمد ليستخدمها الزائر قبل وأثناء وبعد وقت الفعالية.',
     starts_at: raw.starts_at || previous.starts_at,
     ends_at: raw.ends_at || previous.ends_at,
@@ -2425,12 +2387,9 @@ function writeFacetPages(events) {
     byCategory.get(catSlug).events.push(event);
   }
   const fallbackEvents = events.slice(0, 12);
-  const requiredCategories = [
-    ['technology-training', 'تدريب تقني'],
-    ['chamber-event', 'فعاليات الغرف التجارية']
-  ];
+  const requiredCategories = CATEGORY_TAXONOMY.map((category) => [category.key, category.label_ar]);
   for (const [slug, label] of requiredCategories) {
-    if (!byCategory.has(slug)) byCategory.set(slug, { label, events: fallbackEvents });
+    if (!byCategory.has(slug)) byCategory.set(slug, { label, events: [] });
   }
   if (!byCity.has('riyadh')) byCity.set('riyadh', { label: 'فعاليات الرياض', events: fallbackEvents });
   for (const [slug, group] of byCity) {
@@ -3020,6 +2979,10 @@ function writeCatalogFiles(events) {
     venue: event.venue,
     venue_address: event.venue_address,
     category: event.category,
+    raw_category: event.raw_category,
+    category_slug: event.category_slug,
+    category_label: event.category_label,
+    category_label_en: event.category_label_en,
     category_url: event.category_url,
     starts_at: event.starts_at,
     ends_at: event.ends_at,
@@ -3562,7 +3525,7 @@ function writeSourceCoverageGapsPage(events) {
     const city = event.city || normalizeSaudiCity(event.venue || event.city_label || '', 'Saudi Arabia');
     if (!byCity.has(city)) byCity.set(city, []);
     byCity.get(city).push(event);
-    const categoryKey = String(event.category_slug || categorySlug(event.category, event)).replace(/-/g, ' ');
+    const categoryKey = String(event.category_slug || categorySlug(event.category, event));
     if (!byCategory.has(categoryKey)) byCategory.set(categoryKey, []);
     byCategory.get(categoryKey).push(event);
   }
@@ -3587,7 +3550,7 @@ function writeSourceCoverageGapsPage(events) {
     const score = coverageScore(stats);
     return {
       key,
-      label: categoryLabelByKey.get(key) || categoryLabel(key.replace(/\s+/g, '-'), key),
+      label: categoryLabelByKey.get(key) || categoryLabel(key, key),
       ...stats,
       coverage_score: score,
       severity: coverageSeverity(score),
@@ -4923,7 +4886,7 @@ function searchIntentPageConfigs(events) {
         ['هل تشمل الصفحة المعارض والمؤتمرات؟', 'نعم، تظهر الفعاليات حسب ما يتوفر في الكتالوج من مصادر رسمية أو موثوقة.'],
         ['هل تعرض EventLive الاتجاهات؟', 'تعرض صفحة الفعالية رابط الاتجاهات عندما يتوفر موقع واضح أو رابط خرائط.']
       ],
-      related: [['كل فعاليات الرياض', './cities/riyadh.html'], ['ماذا هذا الأسبوع؟', './this-week.html'], ['المؤتمرات والمعارض', './categories/conference-forum.html']]
+      related: [['كل فعاليات الرياض', './cities/riyadh.html'], ['ماذا هذا الأسبوع؟', './this-week.html'], ['المؤتمرات والمعارض', './categories/exhibitions-conferences.html']]
     },
     {
       file: 'jeddah-events.html',
@@ -4951,7 +4914,7 @@ function searchIntentPageConfigs(events) {
         ['هل تشمل الدورات الحضورية؟', 'نعم، قد تظهر الدورات الحضورية وعن بعد إذا كانت ضمن مصادر موثوقة وببيانات تاريخ واضحة.'],
         ['كيف أميز الدورة القادمة؟', 'تعرض البطاقة حالة الوقت وموعد البداية، وتعرض صفحة التفاصيل رابط التقويم والمصدر.']
       ],
-      related: [['تصنيف التدريب التقني', './categories/technology-training.html'], ['للطلاب والخريجين', './for/students.html'], ['للتقنيين', './for/tech.html']]
+      related: [['تصنيف التقنية والابتكار', './categories/technology-innovation.html'], ['للطلاب والخريجين', './for/students.html'], ['للتقنيين', './for/tech.html']]
     },
     {
       file: 'saudi-ticketed-events.html',

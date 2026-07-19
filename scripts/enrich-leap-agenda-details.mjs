@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { chromium } from 'playwright';
+import { assignEventCategory, normalizeEventCategoryMetadata } from './category-taxonomy.mjs';
 import { parseLeapAgendaHtml } from './leap-agenda-utils.mjs';
 
 const root = process.cwd();
@@ -61,7 +62,8 @@ function applyAgenda(row, sessions, { candidate = false } = {}) {
   row.venue = 'Riyadh Exhibition & Convention Centre, Malham';
   if (candidate) delete row.venue_address;
   else row.venue_address = 'Malham, Riyadh, Saudi Arabia';
-  row.category = 'conference';
+  if (candidate) row.category = 'conference';
+  else assignEventCategory(row, row.raw_category || 'conference');
   row.audiences = ['professionals', 'tech', 'entrepreneurs', 'students'];
   row.tags = ['technology', 'conference', 'artificial intelligence', 'startups', 'investment', 'innovation'];
   row.organizer = 'Tahaluf';
@@ -136,6 +138,7 @@ function applyAgenda(row, sessions, { candidate = false } = {}) {
       live_schedule_status: `${sessions.length} official timed sessions available.`
     }
   };
+  normalizeEventCategoryMetadata(row);
 }
 
 const catalog = readJson(catalogPath, { events: [] });

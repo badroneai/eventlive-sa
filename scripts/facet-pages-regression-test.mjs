@@ -8,8 +8,8 @@ const sitemap = fs.readFileSync(path.join(distDir, 'sitemap.xml'), 'utf8');
 
 const pages = [
   { file: 'cities/riyadh.html', expectedTitle: 'فعاليات الرياض' },
-  { file: 'categories/technology-training.html', expectedTitle: 'تدريب تقني' },
-  { file: 'categories/chamber-event.html', expectedTitle: 'فعاليات الغرف التجارية' }
+  { file: 'categories/technology-innovation.html', expectedTitle: 'التقنية والابتكار' },
+  { file: 'categories/business-entrepreneurship.html', expectedTitle: 'الأعمال وريادة الأعمال' }
 ];
 
 function jsonLdScripts(html) {

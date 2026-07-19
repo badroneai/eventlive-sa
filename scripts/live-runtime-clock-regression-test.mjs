@@ -12,7 +12,7 @@ const requiredPages = [
   'index.html',
   'this-month.html',
   'cities/riyadh.html',
-  'categories/technology-training.html',
+  'categories/technology-innovation.html',
   representativeEventPath().replace(/^\//, '')
 ];
 
