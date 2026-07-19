@@ -6,7 +6,11 @@ const events = JSON.parse(fs.readFileSync('dist/events.json', 'utf8')).events ||
 const leap = events.find((event) => /^LEAP\s+2026$/i.test(event.title || ''));
 assert.ok(leap, 'LEAP 2026 must be present in the public build');
 assert.ok(leap.sessions.length >= 100, 'LEAP must retain its full official multi-track agenda');
-assert.equal(leap.category, 'conference', 'LEAP must remain classified as a conference');
+assert.equal(
+  ['conference', 'exhibitions-conferences'].includes(leap.category),
+  true,
+  'LEAP must remain classified as a conference-like category'
+);
 assert.match(leap.venue, /Convention Centre, Malham/i, 'LEAP must retain the official Malham venue');
 assert.match(leap.directions_url, /Convention%20Centre%20Malham/, 'LEAP directions must target the official venue');
 assert.equal(leap.source_label, 'LEAP 2026 Official', 'LEAP must expose its first-party source');

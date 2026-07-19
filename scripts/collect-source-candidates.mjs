@@ -225,7 +225,8 @@ const sourceExtractors = {
   'scega-exhibitions-conferences': extractScegaEvents,
   'najran-municipality-summer-events': extractNajranMunicipalityEvents,
   'riyadh-city-events': extractRiyadhCityEvents,
-  'informa-connect-saudi-events': extractInformaSaudiPortfolio
+  'informa-connect-saudi-events': extractInformaSaudiPortfolio,
+  'saudicon-events': extractSaudiconEvents
 };
 
 const sourceApiFallbackExtractors = new Map([
@@ -1423,7 +1424,7 @@ function schemaDateToSaudiDateTime(value, fallbackTime = '09:00:00') {
   const text = String(value || '').trim();
   const dateOnly = text.match(/^(\d{4})-(\d{2})-(\d{2})$/);
   if (dateOnly) return `${dateOnly[1]}-${dateOnly[2]}-${dateOnly[3]}T${fallbackTime}+03:00`;
-  const withTime = text.match(/^(\d{4}-\d{2}-\d{2})T(\d{2}:\d{2})(?::(\d{2}))?(?:\.\d{1,6})?([+-]\d{2}:\d{2}|Z)?/);
+  const withTime = text.match(/^(\d{4}-\d{2}-\d{2})T(\d{2}:\d{2})(?::(\d{2})(?::\d{2})?)?(?:\.\d{1,6})?([+-]\d{2}:\d{2}|Z)?/);
   if (!withTime) return '';
   const seconds = withTime[3] || '00';
   const zone = withTime[4] || '+03:00';
@@ -1665,6 +1666,56 @@ function structuredEventFromHtml(html) {
     const type = Array.isArray(item?.['@type']) ? item['@type'].join(' ') : String(item?.['@type'] || '');
     return /Event/i.test(type) && item.startDate;
   });
+}
+
+function parseSitemapEntries(xml = '') {
+  const chunks = [...String(xml).matchAll(/<url>[\s\S]*?<\/url>/gi)].map((match) => match[0]);
+  const entries = [];
+  if (chunks.length) {
+    for (const chunk of chunks) {
+      const loc = decodeHtml(chunk.match(/<loc>([^<]+)<\/loc>/i)?.[1] || '').trim();
+      const lastmod = decodeHtml(chunk.match(/<lastmod>([^<]+)<\/lastmod>/i)?.[1] || '').trim();
+      if (loc) entries.push({ loc, lastmod });
+    }
+  } else {
+    for (const match of String(xml).matchAll(/<loc>([^<]+)<\/loc>/gi)) {
+      const loc = decodeHtml(match[1] || '').trim();
+      if (loc) entries.push({ loc, lastmod: '' });
+    }
+  }
+  return entries;
+}
+
+function parseSitemapLastModified(value = '') {
+  const timestamp = Date.parse(String(value || ''));
+  return Number.isFinite(timestamp) ? timestamp : 0;
+}
+
+function parseSitemapRecentEntries(xml = '', referenceDate = now, options = {}) {
+  const maxAgeDays = Math.max(1, Number(options.maxAgeDays || 60));
+  const ageWindowMs = maxAgeDays * 24 * 60 * 60 * 1000;
+  const referenceMs = Number(referenceDate?.getTime?.() || Date.parse(referenceDate) || Date.now());
+  return parseSitemapEntries(xml).filter((entry) => {
+    const lastmod = parseSitemapLastModified(entry.lastmod);
+    if (!lastmod) return false;
+    return referenceMs - lastmod <= ageWindowMs;
+  });
+}
+
+function normalizeSitemapUrl(loc = '', baseUrl = '') {
+  const normalized = resolveUrl(String(loc || '').trim(), baseUrl);
+  try {
+    const target = new URL(normalized);
+    if (target.search) {
+      target.search = '';
+    }
+    if (target.hash) {
+      target.hash = '';
+    }
+    return target.toString();
+  } catch {
+    return normalized;
+  }
 }
 
 function schemaText(value = '') {
@@ -4479,18 +4530,53 @@ function extractMadinahArchitectureFestival(html, source) {
 function parseHayyJameelDateRange(value) {
   const text = stripTags(value).replace(/[–—]/g, '-').replace(/\s+/g, ' ').trim();
   const match = text.match(/([A-Za-z]{3,9})\s+(\d{1,2}),?\s+(20\d{2})\s*-\s*([A-Za-z]{3,9})\s+(\d{1,2}),?\s+(20\d{2})/i);
-  if (!match) return parseEnglishDateRange(text);
-  const startMonth = monthIndex(match[1]);
-  const startDay = Number(match[2]);
-  const startYear = Number(match[3]);
-  const endMonth = monthIndex(match[4]);
-  const endDay = Number(match[5]);
-  const endYear = Number(match[6]);
-  if (!Number.isInteger(startMonth) || !Number.isInteger(endMonth) || !startDay || !endDay) return null;
-  return {
-    starts_at: dateWithTime(startYear, startMonth, startDay),
-    ends_at: dateWithTime(endYear, endMonth, endDay, '18:00:00')
-  };
+  if (match) {
+    const startMonth = monthIndex(match[1]);
+    const startDay = Number(match[2]);
+    const startYear = Number(match[3]);
+    const endMonth = monthIndex(match[4]);
+    const endDay = Number(match[5]);
+    const endYear = Number(match[6]);
+    if (!Number.isInteger(startMonth) || !Number.isInteger(endMonth) || !startDay || !endDay) return null;
+    return {
+      starts_at: dateWithTime(startYear, startMonth, startDay),
+      ends_at: dateWithTime(endYear, endMonth, endDay, '18:00:00')
+    };
+  }
+  const singleMonthDayMatch = text.match(/([A-Za-z]{3,9})\s+(\d{1,2})(?:,\s*(20\d{2}))?(?!\s*-\s*[A-Za-z]{3,9}\s+\d{1,2})/i);
+  if (singleMonthDayMatch) {
+    const month = monthIndex(singleMonthDayMatch[1]);
+    const day = Number(singleMonthDayMatch[2]);
+    const year = Number(singleMonthDayMatch[3] || inferYear(month, day));
+    if (Number.isInteger(month) && day) {
+      return {
+        starts_at: dateWithTime(year, month, day),
+        ends_at: dateWithTime(year, month, day, '18:00:00')
+      };
+    }
+  }
+  return parseEnglishDateRange(text);
+}
+
+function formatHayyJameelMonthDayRange(start, end = start) {
+  const months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+  ];
+  const startText = `${months[start.month]} ${start.day}, ${start.year}`;
+  if (end.month === start.month && end.day === start.day && end.year === start.year) return startText;
+  const endText = `${months[end.month]} ${end.day}, ${end.year}`;
+  return `${startText} - ${endText}`;
 }
 
 function extractHayyJameelCards(html, source) {
@@ -4534,6 +4620,189 @@ function extractHayyJameelCards(html, source) {
     });
   }
   return items;
+}
+
+function hayySitemapCandidateRows(xml, source = {}, options = {}) {
+  const seen = new Set();
+  const nowReference = options.referenceDate || now;
+  const maxAgeDays = Math.max(1, Number(options.maxAgeDays || source.sitemap_max_age_days || 60));
+  return parseSitemapRecentEntries(xml, nowReference, { maxAgeDays })
+    .map((row) => normalizeSitemapUrl(row.loc, source.url || source.collector_url || 'https://hayyjameel.org'))
+    .filter(Boolean)
+    .filter((url) => {
+      try {
+        const target = new URL(url);
+        return target.hostname === 'hayyjameel.org'
+          && /^\/whats-on\//.test(target.pathname)
+          && !/^\/whats-on\/?$/i.test(target.pathname)
+          && !/\/page\//i.test(target.pathname);
+      } catch {
+        return false;
+      }
+    })
+    .filter((row) => {
+      if (seen.has(row)) return false;
+      seen.add(row);
+      return true;
+    });
+}
+
+function extractHayyJameelSideNav(html = '') {
+  return html.match(/<nav[^>]*\bside-nav\b[^>]*>[\s\S]*?<\/nav>/i)?.[0] || '';
+}
+
+function extractHayyJameelDateRangeFromMonthDayMatrix(text = '', fallbackYear = now.getUTCFullYear()) {
+  const parsedDates = [];
+  const parsedKeys = new Set();
+  const normalized = stripTags(String(text))
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  const dayMonthPattern = /([A-Za-z]{3,9}|[\u0600-\u06ff]+)\s+(\d{1,2})(?:\s*(20\d{2}))?(?:\s*-\s*([A-Za-z]{3,9}|[\u0600-\u06ff]+)\s+(\d{1,2})(?:\s*(20\d{2}))?)?/gi;
+  for (const match of [...normalized.matchAll(dayMonthPattern)]) {
+    const [, monthText, dayText, yearText] = match;
+    const month = monthIndex(monthText);
+    const day = Number(dayText);
+    if (!Number.isInteger(month) || !Number.isInteger(day)) continue;
+    const year = Number(yearText || inferYear(month, day) || fallbackYear);
+    const key = `${year}-${month + 1}-${day}`;
+    if (!parsedKeys.has(key)) {
+      parsedKeys.add(key);
+      parsedDates.push({ year, month, day });
+    }
+
+    const endMonthText = match[4];
+    const endDayText = match[5];
+    const endYearText = match[6];
+    if (endMonthText && endDayText) {
+      const endMonth = monthIndex(endMonthText);
+      const endDay = Number(endDayText);
+      const endYear = Number(endYearText || year);
+      if (Number.isInteger(endMonth) && Number.isInteger(endDay)) {
+        const endKey = `${endYear}-${endMonth + 1}-${endDay}`;
+        if (!parsedKeys.has(endKey)) {
+          parsedKeys.add(endKey);
+          parsedDates.push({ year: endYear, month: endMonth, day: endDay });
+        }
+      }
+    }
+  }
+
+  const monthDayPattern = /(\d{1,2})(?:\s+(?:-|to)\s*)?([A-Za-z]{3,9}|[\u0600-\u06ff]+)(?:\s*(20\d{2}))?/gi;
+  for (const match of [...normalized.matchAll(monthDayPattern)]) {
+    const [, dayText, monthText, yearText] = match;
+    const day = Number(dayText);
+    const month = monthIndex(monthText);
+    if (!Number.isInteger(month) || !Number.isInteger(day)) continue;
+    const year = Number(yearText || inferYear(month, day) || fallbackYear);
+    const key = `${year}-${month + 1}-${day}`;
+    if (parsedKeys.has(key)) continue;
+    parsedKeys.add(key);
+    parsedDates.push({ year, month, day });
+  }
+  if (!parsedDates.length) return '';
+
+  const ordered = parsedDates
+    .filter((item) => Number.isInteger(item.year) && Number.isInteger(item.month) && Number.isInteger(item.day))
+    .sort((a, b) => {
+      const first = new Date(Date.UTC(a.year, a.month, a.day)).getTime();
+      const second = new Date(Date.UTC(b.year, b.month, b.day)).getTime();
+      return first - second;
+    });
+  if (!ordered.length) return '';
+  const first = ordered[0];
+  const last = ordered[ordered.length - 1];
+  return formatHayyJameelMonthDayRange(first, last);
+}
+
+function extractHayyJameelDateTextFromDetail(detailHtml = '') {
+  const detailSection = extractHayyJameelSideNav(detailHtml);
+  const detailsSource = stripTags(detailSection || detailHtml)
+    .replace(/\s+/g, ' ')
+    .replace(/Date and time:/i, 'Date and time:')
+    .trim();
+  const directMatch = detailsSource.match(/Date and time:\s*([^|]+?)(?:\||\.|$)/i);
+  if (directMatch?.[1]) {
+    const parsed = String(directMatch[1])
+      .replace(/\s+/g, ' ')
+      .match(/([A-Za-z]{3,9}\s+\d{1,2},?\s+\d{4}(?:\s*(?:-|–|—|to)\s*[A-Za-z]{3,9}\s+\d{1,2},?\s+\d{4})?)/i);
+    if (parsed?.[1]) return parsed[1].trim();
+  }
+  const fallbackText = detailsSource.split(/\s{2,}/g).join(' ');
+  const fallbackMatch = fallbackText.match(/[A-Za-z]{3,9}\s+\d{1,2},?\s+\d{4}\s*(?:-|–|—|to)\s*[A-Za-z]{3,9}\s+\d{1,2},?\s+\d{4}/i);
+  if (fallbackMatch?.[0]) return fallbackMatch[0];
+  const sidematrixRows = (detailSection || detailHtml)
+    .matchAll(/<span[^>]*class=["']?st-day["']?[^>]*>(\d{1,2})[\s\S]*?<span[^>]*class=["']?st-m-y["']?[^>]*>([\s\S]*?)<\/span>/gi);
+  const sidematrixDates = [...sidematrixRows]
+    .map((match) => {
+      const dayText = String(match[1] || '').match(/\d{1,2}/)?.[0];
+      const monthYearText = stripTags(match[2] || '').replace(/\\s+/g, ' ').trim();
+      const yearMatch = monthYearText.match(/(20\d{2})/);
+      const monthMatch = monthYearText.match(/([A-Za-z]{3,9}|[\u0600-\u06ff]+)\s*(20\d{2})/);
+      const day = Number(dayText);
+      const month = monthIndex(monthMatch?.[1] || '');
+      const year = Number(yearMatch?.[1] || monthMatch?.[2]);
+      if (!Number.isInteger(day) || !Number.isInteger(month) || !Number.isInteger(year)) return null;
+      return { day, month, year };
+    })
+    .filter(Boolean);
+  if (sidematrixDates.length) {
+    const start = sidematrixDates[0];
+    const end = sidematrixDates[sidematrixDates.length - 1];
+    const matrixRange = formatHayyJameelMonthDayRange(start, end);
+    return matrixRange;
+  }
+  const matrixMatch = extractHayyJameelDateRangeFromMonthDayMatrix(fallbackText, now.getUTCFullYear());
+  if (matrixMatch) {
+    return matrixMatch;
+  }
+  const scheduleMatches = [...detailSection.matchAll(/(?:Day\s*\d+:\s*)?(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s*,?\s*([A-Za-z]{3,9}|[\u0600-\u06ff]+)\s+(\d{1,2})(?:\s*,?\s*(20\d{2}))?/gi)]
+    .map(([, monthText, dayText, yearText]) => {
+      const day = Number(dayText);
+      const year = Number(yearText || inferYear(monthIndex(monthText), day));
+      const month = monthIndex(monthText);
+      if (!Number.isInteger(day) || !Number.isInteger(month) || !Number.isInteger(year)) return null;
+      return { day, month, year };
+    }).filter(Boolean);
+  if (scheduleMatches.length) {
+    const start = scheduleMatches[0];
+    const end = scheduleMatches[scheduleMatches.length - 1];
+    return formatHayyJameelMonthDayRange(start, end);
+  }
+  const singleMatch = fallbackText.match(/[A-Za-z]{3,9}\s+\d{1,2},?\s+\d{4}/i);
+  if (singleMatch?.[0]) return singleMatch[0];
+  return fallbackMatch?.[0] ? fallbackMatch[0] : '';
+}
+
+function extractHayyJameelListingFromDetail(detailHtml, detailUrl, source) {
+  const detailSection = extractHayyJameelSideNav(detailHtml);
+  const titleSource = stripTags(
+    detailHtml.match(/<meta[^>]+property=['\"]og:title['\"][^>]+content=['\"]([^'\"]+)['\"]/i)?.[1]
+    || detailHtml.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1]
+    || detailSection.match(/<h3[^>]*>([\s\S]*?)<\/h3>/i)?.[1]
+    || detailHtml.match(/<title>([\s\S]*?)<\/title>/i)?.[1]
+    || ''
+  );
+  const title = titleSource.replace(/\s*\|\s*Hayy Jameel\s*$/i, '').trim();
+  if (!title) return null;
+  const dateText = extractHayyJameelDateTextFromDetail(detailHtml, detailUrl);
+  const dates = parseHayyJameelDateRange(dateText) || parseEnglishDateRange(dateText);
+  if (!dates) {
+    return null;
+  }
+  const summary = readableExcerpt(stripTags(detailHtml.match(/<div class="entry-content">([\s\S]*?)<\/div>\s*<\/div>/i)?.[1] || ''), 520);
+  return {
+    title,
+    preserve_full_title: true,
+    url: resolveUrl(detailUrl, source.url),
+    organizer: source.owner,
+    summary,
+    city: 'Jeddah',
+    venue: 'Hayy Jameel',
+    category: 'culture arts',
+    raw_date_text: dateText,
+    ...dates
+  };
 }
 
 function hayyJameelClock(hourValue, minuteValue = '0', meridiem = '') {
@@ -4587,13 +4856,16 @@ function extractHayyJameelSessions(detailSection, listing) {
 }
 
 function extractHayyJameelDetail(detailHtml, listing, source) {
-  const detailSection = detailHtml.match(/<nav class="side-nav uk-visible@m"[\s\S]*?<\/nav>/i)?.[0] || '';
+  const detailSection = extractHayyJameelSideNav(detailHtml);
   const contentSection = detailHtml.match(/<div class="entry-content">([\s\S]*?)<\/div>\s*<\/div>/i)?.[1] || '';
   const location = stripTags(detailSection.match(/Location:\s*<br\s*\/?>([\s\S]*?)<\/p>/i)?.[1] || '');
   const registrationHref = detailSection.match(/<a[^>]+href="([^"]+)"[^>]*>\s*(?:Register|Book|Tickets?)/i)?.[1] || '';
-  const highResolutionImage = [...detailHtml.matchAll(/<img[^>]+data-src="([^"]+)"/gi)]
+  const detailImageCandidates = [...detailHtml.matchAll(/<img[^>]+(?:data-src|src)="([^"]+)"/gi)]
     .map((match) => resolveUrl(match[1], listing.url))
-    .find((url) => /(?:1100x500|scaled|1400x650)/i.test(url));
+    .filter((url) => /hayyjameel\.org\/(?:wp-content\/)?uploads\//i.test(url)
+      && !/(?:\/themes\/|favicon|glyph|cropped-|apple-touch|mask-icon|-\d{2,3}x\d{2,3}\.png(?:\?|$))/i.test(url));
+  const highResolutionImage = detailImageCandidates.find((url) => /(?:1100x500|scaled|1400x650|70-?x-?100)/i.test(url))
+    || detailImageCandidates[0];
   const fullSummary = stripTags(contentSection) || listing.summary;
   const summary = readableExcerpt(fullSummary, 520);
   const venue = location ? `Hayy Jameel - ${location}` : listing.venue;
@@ -4618,18 +4890,182 @@ function extractHayyJameelDetail(detailHtml, listing, source) {
   };
 }
 
-async function extractHayyJameelEvents(html, source) {
-  const listings = extractHayyJameelCards(html, source);
+async function extractHayyJameelEvents(html, source, options = {}) {
+  const fetchPage = options.fetchText || ((url) => fetchText(url, { 'accept-language': 'en-US,en;q=0.9,ar;q=0.8' }));
+  const referenceDate = options.referenceDate || now;
+  const maxAgeDays = Math.max(1, Number(options.sitemapMaxAgeDays || source.sitemap_max_age_days || 60));
+  const listings = [...extractHayyJameelCards(html || '', source)];
+  const urlsFromListing = new Set(listings.map((item) => item.url).filter(Boolean));
+  const maxCandidates = Math.max(1, Number(options.maxCandidates || source.max_candidates_per_run || maxPerSource));
+  const candidateRows = source.collector_url
+    ? hayySitemapCandidateRows(options.sitemapXml || await fetchPage(source.collector_url), source, {
+      referenceDate,
+      maxAgeDays
+    })
+    : [];
+  const candidateUrls = [...new Set([...urlsFromListing, ...candidateRows])].slice(0, Math.max(maxCandidates * 4, 40));
   const items = [];
-  for (const listing of listings.slice(0, 30)) {
+
+  const seen = new Set();
+  const listByUrl = new Map();
+  for (const listing of listings) {
+    if (!listing?.url) continue;
+    listByUrl.set(listing.url, listing);
+  }
+
+  for (const listingUrl of candidateUrls) {
+    if (listByUrl.has(listingUrl)) continue;
     try {
-      const detailHtml = await fetchText(listing.url, { 'accept-language': 'en-US,en;q=0.9,ar;q=0.8' });
-      items.push(extractHayyJameelDetail(detailHtml, listing, source));
+      const detailHtml = await fetchPage(listingUrl);
+      const listing = extractHayyJameelListingFromDetail(detailHtml, listingUrl, source);
+      if (listing) listByUrl.set(listingUrl, listing);
     } catch {
-      items.push(listing);
+      // Skip stale / unreachable canonical event row and continue collecting from other sitemap entries.
+    }
+  }
+
+  const allListings = Array.from(listByUrl.values());
+  for (const listing of allListings) {
+    try {
+      const detailHtml = await fetchPage(listing.url, { 'accept-language': 'en-US,en;q=0.9,ar;q=0.8' });
+      const detail = extractHayyJameelDetail(detailHtml, listing, source);
+      if (!detail || !detail.starts_at || !detail.ends_at) {
+        throw new Error('invalid-hayy-event');
+      }
+      const key = `${detail.url}|${detail.starts_at}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      if (new Date(detail.ends_at).getTime() >= new Date(referenceDate).getTime()) {
+        items.push(detail);
+      }
+    } catch {
+      const key = `${listing.url}|${listing.starts_at}`;
+      if (!seen.has(key)) {
+        seen.add(key);
+        items.push(listing);
+      }
     }
   }
   return items;
+}
+
+function extractSaudiconSitemapUrls(xml = '') {
+  return parseSitemapEntries(xml)
+    .map((row) => decodeHtml(row.loc).trim())
+    .map((loc) => {
+      try {
+        const normalized = new URL(loc).toString();
+        return /^https?:\/\/saudicon\.app\//i.test(normalized) ? normalized : '';
+      } catch {
+        return '';
+      }
+    })
+    .filter((value) => value)
+    .filter((value) => /\/events?\//i.test(value))
+    .filter((value) => !/\/tag(s)?\//i.test(value));
+}
+
+function parseSaudiconStructuredImage(value = '') {
+  const candidate = value?.url || value?.contentUrl || value;
+  const imageUrl = schemaText(candidate);
+  return imageUrl && /\.(?:jpg|jpeg|png|webp)(?:\?|$)/i.test(imageUrl) ? imageUrl : '';
+}
+
+function parseSaudiconOffers(offers = '') {
+  const list = Array.isArray(offers) ? offers : [offers];
+  for (const offer of list) {
+    const url = schemaText(offer?.url || offer);
+    if (url) return url;
+  }
+  return '';
+}
+
+function extractSaudiconEventFromStructured(structuredEvent = {}, source, fallbackUrl = '') {
+  const eventType = String(structuredEvent?.['@type'] || '').toLowerCase();
+  if (!/\bevent\b/i.test(eventType) && !/event$/i.test(eventType)) return null;
+  const title = schemaText(structuredEvent.name);
+  if (!title) return null;
+  const url = resolveUrl(schemaText(structuredEvent.url) || fallbackUrl, source.url);
+  const dates = parseStructuredDateRange(structuredEvent.startDate, structuredEvent.endDate);
+  if (!dates) return null;
+  const location = structuredEvent.location || {};
+  const locationName = schemaText(location.name || '');
+  const locationAddress = schemaText(location.address || '');
+  const city = normalizeSaudiCity(locationAddress || locationName, source.cities?.[0] || 'Saudi Arabia');
+  const attendanceMode = /OnlineEventAttendanceMode/i.test(String(structuredEvent.eventAttendanceMode || ''))
+    ? 'online'
+    : /MixedEventAttendanceMode/i.test(String(structuredEvent.eventAttendanceMode || ''))
+      ? 'hybrid'
+      : 'in-person';
+  const summary = readableExcerpt(stripTags(schemaText(structuredEvent.description) || ''), 620);
+  const registrationHref = parseSaudiconOffers(structuredEvent.offers) || '';
+  const imageUrl = parseSaudiconStructuredImage(structuredEvent.image);
+  const organizer = schemaText(structuredEvent.organizer) || source.owner;
+  return {
+    title,
+    url,
+    organizer,
+    summary: summary || `فعالية B2B/مؤتمرات من ${source.name}.`,
+    city,
+    venue: locationName || city,
+    category: 'conference',
+    raw_date_text: `${structuredEvent.startDate} - ${structuredEvent.endDate || structuredEvent.startDate}`,
+    ...(imageUrl ? { image_url: imageUrl, image_alt: title, image_source_url: url } : {}),
+    ...(registrationHref ? { registration_url: resolveUrl(registrationHref, url), ticket_url: resolveUrl(registrationHref, url) } : {}),
+    attendance_mode: attendanceMode,
+    confidence: 'public-listing',
+    review_status: 'evidence-captured',
+    verification_method: 'official-detail-jsonld',
+    date_precision: 'explicit-range',
+    time_precision: 'date-only',
+    language: 'en',
+    tags: [source.name, source.id, city].filter(Boolean).slice(0, 10),
+    richness_score: calculateRichnessScore({
+      title,
+      summary,
+      city,
+      venue: locationName || city,
+      category: 'conference',
+      image_url: imageUrl,
+      registration_url: registrationHref,
+      attendance_mode: attendanceMode,
+      language: 'en'
+    }),
+    ...dates
+  };
+}
+
+async function extractSaudiconEvents(_html, source, options = {}) {
+  const fetchPage = options.fetchText || ((url) => fetchText(url));
+  const maxCandidates = Math.max(1, Number(options.maxCandidates || source.max_candidates_per_run || maxPerSource));
+  const urlList = extractSaudiconSitemapUrls(options.sitemapXml || await fetchPage(source.collector_url || source.url));
+  const uniqueUrls = [...new Set(urlList)].slice(0, Math.max(maxCandidates * 4, 40));
+  const items = [];
+  const seen = new Set();
+  let cursor = 0;
+  const workers = Array.from({ length: Math.min(6, uniqueUrls.length) }, async () => {
+    while (cursor < uniqueUrls.length) {
+      const pageUrl = uniqueUrls[cursor];
+      cursor += 1;
+      try {
+        const detailHtml = await fetchPage(pageUrl);
+        const structuredEvent = structuredEventFromHtml(detailHtml);
+        const item = extractSaudiconEventFromStructured(structuredEvent || {}, source, pageUrl);
+        if (!item) return;
+        const key = `${item.url}|${item.starts_at}`;
+        if (seen.has(key)) return;
+        seen.add(key);
+        items.push(item);
+      } catch {
+        // Keep collection resilient for partner feeds with occasional stale or blocked entries.
+      }
+    }
+  });
+  await Promise.all(workers);
+  return items
+    .slice()
+    .sort((a, b) => new Date(a.starts_at).getTime() - new Date(b.starts_at).getTime())
+    .slice(0, maxCandidates);
 }
 
 function extractQassimChamberEvents(html, source) {
@@ -6295,6 +6731,7 @@ export {
   extractHayyJameelCards,
   extractHayyJameelDetail,
   extractHayyJameelEvents,
+  extractSaudiconEvents,
   baseCandidate,
   readableExcerpt,
   extractNajranMunicipalityEvents,
