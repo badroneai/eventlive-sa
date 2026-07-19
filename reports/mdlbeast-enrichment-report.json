@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-19T04:11:53.700Z",
+  "generated_at": "2026-07-19T08:38:54.546Z",
   "catalog": "data/events_catalog.json",
   "source": "MDLBEAST Events",
   "totals": {
     "targets": 5,
-    "candidates": 3,
+    "candidates": 4,
     "enriched": 5,
     "fetched": 5,
     "images": 5,

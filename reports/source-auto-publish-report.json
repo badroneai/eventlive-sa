@@ -1,16 +1,16 @@
 {
-  "published_at": "2026-07-19T04:10:43.303Z",
+  "published_at": "2026-07-19T08:37:50.363Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 496,
+  "candidates_seen": 505,
   "totals": {
-    "candidates_seen": 496,
-    "published": 1,
-    "linked_existing": 481,
+    "candidates_seen": 505,
+    "published": 8,
+    "linked_existing": 483,
     "blocked": 14,
-    "reconciled": 482
+    "reconciled": 491
   },
   "duplicate_catalog_rows_removed": 1,
   "duplicate_catalog_rows": [
@@ -23,6 +23,41 @@
   "canonical_event_ids_remapped": 0,
   "canonical_event_id_remaps": [],
   "published": [
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-sammrah-20260601-fac46512",
+      "event_id": "event-sammrah",
+      "title": "Sammrah"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-sound-of-abha-fest-saf-20260615-6209ec1e",
+      "event_id": "event-sound-of-abha-fest-saf",
+      "title": "Sound of Abha Fest (SAF)"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-combat-arena-20260703-41ce2073",
+      "event_id": "event-combat-arena",
+      "title": "Combat Arena"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-nasma-in-taif-20260705-0d373057",
+      "event_id": "event-nasma-in-taif",
+      "title": "Nasma in Taif"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-stand-up-comedy-night-20260724-14b1247c",
+      "event_id": "event-stand-up-comedy-night-2",
+      "title": "Stand-Up Comedy Night"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-experts-meeting-with-the-young-author-20260725-f3a430a9",
+      "event_id": "event-the-experts-meeting-with-the-young-author",
+      "title": "The Expert's Meeting with the Young Author"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-stand-up-comedy-night-with-shakir-al-sharif-20260730-06a1ec00",
+      "event_id": "event-stand-up-comedy-night-with-shakir-al-sharif",
+      "title": "Stand up Comedy Night with Shakir Al Sharif"
+    },
     {
       "candidate_id": "candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702",
       "event_id": "event-music-festival-mdlbeast-soundstorm",
@@ -1297,6 +1332,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-mdlbeast-events-beast-house-20260724-83049a2a",
+      "event_id": "event-beast-house",
+      "title": "Beast House",
+      "reason": "trusted duplicate linked to existing catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-fill-in-the-blank-in-jeddah-20260724-17c10389",
       "event_id": "event-fill-in-the-blank-in-jeddah",
       "title": "Fill in the Blank in Jeddah",
@@ -1325,6 +1366,12 @@
       "event_id": "event-unbox-your-story",
       "title": "Unbox Your Story",
       "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-experts-meeting-with-the-young-author-20260725-9ca92d11",
+      "event_id": "event-the-experts-meeting-with-the-young-author",
+      "title": "The Expert's Meeting with the Young Author",
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-umm-al-qura-events-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية-20260726-3aa6cb44",

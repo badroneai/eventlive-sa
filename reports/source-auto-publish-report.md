@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-19T04:10:43.303Z
+- published_at: 2026-07-19T08:37:50.363Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 496
-- published_new: 1
-- linked_existing: 481
+- candidates_seen: 505
+- published_new: 8
+- linked_existing: 483
 - blocked_remaining: 14
 
 ## Blocked summary
@@ -17,6 +17,13 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
+| candidate-visit-saudi-seasons-sammrah-20260601-fac46512 | published | event-sammrah | Sammrah |
+| candidate-visit-saudi-seasons-sound-of-abha-fest-saf-20260615-6209ec1e | published | event-sound-of-abha-fest-saf | Sound of Abha Fest (SAF) |
+| candidate-visit-saudi-seasons-combat-arena-20260703-41ce2073 | published | event-combat-arena | Combat Arena |
+| candidate-visit-saudi-seasons-nasma-in-taif-20260705-0d373057 | published | event-nasma-in-taif | Nasma in Taif |
+| candidate-visit-saudi-calendar-stand-up-comedy-night-20260724-14b1247c | published | event-stand-up-comedy-night-2 | Stand-Up Comedy Night |
+| candidate-ithra-events-the-experts-meeting-with-the-young-author-20260725-f3a430a9 | published | event-the-experts-meeting-with-the-young-author | The Expert's Meeting with the Young Author |
+| candidate-visit-saudi-calendar-stand-up-comedy-night-with-shakir-al-sharif-20260730-06a1ec00 | published | event-stand-up-comedy-night-with-shakir-al-sharif | Stand up Comedy Night with Shakir Al Sharif |
 | candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702 | published | event-music-festival-mdlbeast-soundstorm | Music Festival: MDLBEAST SoundStorm |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
@@ -229,11 +236,13 @@
 | candidate-ithra-events-reading-between-the-image-and-the-story-20260724-e1b0df1e | linked-existing | event-reading-between-the-image-and-the-story | already linked to catalog event |
 | candidate-visit-saudi-calendar-rahma-riad-at-vocally-20260724-798d233c | linked-existing | event-rahma-riad-at-vocally | already linked to catalog event |
 | candidate-ithra-events-a-house-reads-a-story-that-begins-with-the-family-20260724-65c22584 | linked-existing | event-a-house-reads-a-story-that-begins-with-the-family | already linked to catalog event |
+| candidate-mdlbeast-events-beast-house-20260724-83049a2a | linked-existing | event-beast-house | trusted duplicate linked to existing catalog event |
 | candidate-visit-saudi-calendar-fill-in-the-blank-in-jeddah-20260724-17c10389 | linked-existing | event-fill-in-the-blank-in-jeddah | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-the-comeback-20260725-4a38d19e | linked-existing | event-the-comeback | already linked to catalog event |
 | candidate-riyadh-city-events-summer-splash-running-event-20260725-0b63acb2 | linked-existing | event-summer-splash-running-event | already linked to catalog event |
 | candidate-visit-saudi-calendar-the-comeback-20260725-e518a4aa | linked-existing | event-the-comeback | already linked to catalog event |
 | candidate-ithra-events-unbox-your-story-20260725-5085a6f0 | linked-existing | event-unbox-your-story | already linked to catalog event |
+| candidate-ithra-events-the-experts-meeting-with-the-young-author-20260725-9ca92d11 | linked-existing | event-the-experts-meeting-with-the-young-author | trusted duplicate linked to existing catalog event |
 | candidate-umm-al-qura-events-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية-20260726-3aa6cb44 | linked-existing | event-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل-20260726-aa1669c2 | linked-existing | event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-20260726-89cff8c5 | linked-existing | event-hayy-makers-2 | already linked to catalog event |

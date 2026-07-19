@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-19T04:11:26.747Z",
+  "generated_at": "2026-07-19T08:38:34.719Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
-    "targets": 26,
-    "candidates": 21,
-    "enriched": 26,
-    "fetched": 26,
-    "images": 24,
+    "targets": 28,
+    "candidates": 23,
+    "enriched": 28,
+    "fetched": 28,
+    "images": 26,
     "fetch_failures": 0
   },
   "enriched": [
@@ -148,10 +148,26 @@
       "features": 7
     },
     {
+      "id": "event-stand-up-comedy-night-2",
+      "title": "Stand-Up Comedy Night",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/stand-up-comedy-3-jeddah?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
       "id": "event-fill-in-the-blank-in-jeddah",
       "title": "Fill in the Blank in Jeddah",
       "source_method": "official-page-html",
       "image_url": "https://scth.scene7.com/is/image/scth/fill-in-the-blank-in-jeddah?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-stand-up-comedy-night-with-shakir-al-sharif",
+      "title": "Stand up Comedy Night with Shakir Al Sharif",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/stand-up-comedy-night-with-shakir-al-sharif?wid=1920&hei=1080&fit=constrain&fmt=webp",
       "fetched": true,
       "features": 7
     },

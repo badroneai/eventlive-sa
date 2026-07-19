@@ -1,13 +1,23 @@
 {
-  "generated_at": "2026-07-19T04:12:14.444Z",
+  "generated_at": "2026-07-19T08:39:12.441Z",
   "totals": {
-    "targets": 1,
-    "enriched": 1,
-    "fetched": 0,
-    "images": 1,
+    "targets": 6,
+    "enriched": 6,
+    "fetched": 5,
+    "images": 6,
     "fetch_failures": 1
   },
   "enriched": [
+    {
+      "id": "event-combat-arena",
+      "title": "Combat Arena",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/al-baha/events/combat-arena",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
     {
       "id": "event-music-festival-mdlbeast-soundstorm",
       "title": "Music Festival: MDLBEAST SoundStorm",
@@ -17,6 +27,46 @@
       "fetched": false,
       "image": true,
       "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-nasma-in-taif",
+      "title": "Nasma in Taif",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/taif/events/nasma-in-taif",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-sammrah",
+      "title": "Sammrah",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/aseer/events/sammrah-event",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-sound-of-abha-fest-saf",
+      "title": "Sound of Abha Fest (SAF)",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/aseer/events/sound-of-abha-fest",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-the-experts-meeting-with-the-young-author",
+      "title": "The Expert's Meeting with the Young Author",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-childrens-festival-2026/childrens-book-fair/experts-meeting-young-author",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
     }
   ],
   "failed": [
