@@ -1,28 +1,28 @@
 {
   "schema": "eventlive.source-growth-report.v1",
-  "generated_at": "2026-07-18T19:35:04.260Z",
+  "generated_at": "2026-07-19T04:12:51.715Z",
   "state": "data/source_growth_state.json",
   "current": {
-    "run_id": "2026-07-18T19:30:43.918Z",
-    "generated_at": "2026-07-18T19:35:04.260Z",
-    "collected_at": "2026-07-18T19:30:43.918Z",
+    "run_id": "2026-07-19T04:02:10.958Z",
+    "generated_at": "2026-07-19T04:12:51.715Z",
+    "collected_at": "2026-07-19T04:02:10.958Z",
     "catalog_active_rows": 510,
     "catalog_ended_rows": 762,
     "public_events": 1252,
-    "candidates_discovered": 259,
-    "new_active_candidates": 44,
+    "candidates_discovered": 256,
+    "new_active_candidates": 15,
     "new_ended_events": 0,
     "published_new": 1,
-    "linked_existing": 490,
+    "linked_existing": 481,
     "blocked_remaining": 14,
-    "sources_attempted": 19,
-    "productive_sources": 19,
-    "collector_errors": 0,
+    "sources_attempted": 32,
+    "productive_sources": 20,
+    "collector_errors": 5,
     "public_delta": 134,
     "catalog_delta": 0,
     "no_growth_streak": 0,
     "lost_published_output": false,
-    "status": "healthy"
+    "status": "degraded"
   },
   "runs": [
     {
@@ -687,11 +687,11 @@
     },
     {
       "run_id": "2026-07-18T19:30:43.918Z",
-      "generated_at": "2026-07-18T19:35:04.260Z",
+      "generated_at": "2026-07-19T03:53:15.931Z",
       "collected_at": "2026-07-18T19:30:43.918Z",
       "catalog_active_rows": 510,
       "catalog_ended_rows": 762,
-      "public_events": 1252,
+      "public_events": 1118,
       "candidates_discovered": 259,
       "new_active_candidates": 44,
       "new_ended_events": 0,
@@ -701,11 +701,33 @@
       "sources_attempted": 19,
       "productive_sources": 19,
       "collector_errors": 0,
+      "public_delta": 0,
+      "catalog_delta": 0,
+      "no_growth_streak": 30,
+      "lost_published_output": true,
+      "status": "critical-persistence-gap"
+    },
+    {
+      "run_id": "2026-07-19T04:02:10.958Z",
+      "generated_at": "2026-07-19T04:12:51.715Z",
+      "collected_at": "2026-07-19T04:02:10.958Z",
+      "catalog_active_rows": 510,
+      "catalog_ended_rows": 762,
+      "public_events": 1252,
+      "candidates_discovered": 256,
+      "new_active_candidates": 15,
+      "new_ended_events": 0,
+      "published_new": 1,
+      "linked_existing": 481,
+      "blocked_remaining": 14,
+      "sources_attempted": 32,
+      "productive_sources": 20,
+      "collector_errors": 5,
       "public_delta": 134,
       "catalog_delta": 0,
       "no_growth_streak": 0,
       "lost_published_output": false,
-      "status": "healthy"
+      "status": "degraded"
     }
   ]
 }

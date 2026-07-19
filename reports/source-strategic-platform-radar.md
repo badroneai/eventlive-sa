@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-07-17T19:33:01.983Z
+Generated at: 2026-07-19T03:53:56.384Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -51,8 +51,8 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Project use: Keep in the 6-hour source ring; Arabic and English API payloads are reachable and useful for tourism-facing event discovery.
 - Title: تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية
 - Hint URLs: https://assets.adobedtm.com, https://connect.facebook.net/, https://tpc.googlesyndication.com, https://pagead2.googlesyndication.com, https://www.facebook.com, https://platform.twitter.com/, https://staticxx.facebook.com, https://scth.scene7.com
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 34 items; ذا جروفز, معرض اللغة العربية للطفل, معرض اللغة العربية 28, كنوز غارقة, منطقة مشجعي كوكاكولا في جاكس
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 34 items; The Groves, Arabic Language Exhibition for kids, Arabic Language Exhibition 28, Sunken Treasures, Coca-Cola Fan Zone at JAX District
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 27 items; ذا جروفز, معرض اللغة العربية للطفل, معرض اللغة العربية 28, كنوز غارقة, منطقة مشجعي كوكاكولا في جاكس
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 27 items; The Groves, Arabic Language Exhibition for kids, Arabic Language Exhibition 28, Sunken Treasures, Coca-Cola Fan Zone at JAX District
 
 ### webook Explore
 

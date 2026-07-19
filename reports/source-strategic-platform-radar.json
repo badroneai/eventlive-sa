@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-07-17T19:33:01.983Z",
+  "generated_at": "2026-07-19T03:53:56.384Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -213,11 +213,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 115639,
+          "bytes": 91738,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 34,
+            "item_count": 27,
             "sample_titles": [
               "ذا جروفز",
               "معرض اللغة العربية للطفل",
@@ -231,11 +231,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 118276,
+          "bytes": 94190,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 34,
+            "item_count": 27,
             "sample_titles": [
               "The Groves",
               "Arabic Language Exhibition for kids",
@@ -293,7 +293,7 @@
         "https://wbk-assets.webook.com/0.6.8/assets/react-helmet-BERorVID.js",
         "https://wbk-assets.webook.com/0.6.8/assets/@wbk/cruises-BDdjd884.js",
         "https://wbk-assets.webook.com/0.6.8/assets/@wbk/auction-CcY6NVDr.js",
-        "https://webook.com/cdn-cgi/content?id=9LbWnonrmPv4zRUQY3p8pyXmqMVmB3hZugqZnQjuIwA-1784316824.8514383-1.2.1.1-lFNwyEpcpG4GRpOM5mpKNMoZ9ca3fqQHCv_ckHv9I8w",
+        "https://webook.com/cdn-cgi/content?id=tFltxHzic9a08hhPy6.QK55fHwxqk8jwbD71TbSr8ZM-1784433281.2856143-1.2.1.1-0EZysgQEUPdNoSl818aEws98Zm0kGNnfH_ic1ZyT1IU",
         "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496"
       ],
       "page_hint_words": [

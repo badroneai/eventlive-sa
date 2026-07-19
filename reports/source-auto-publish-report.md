@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-18T19:33:07.173Z
+- published_at: 2026-07-19T04:10:43.303Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 505
+- candidates_seen: 496
 - published_new: 1
-- linked_existing: 490
+- linked_existing: 481
 - blocked_remaining: 14
 
 ## Blocked summary
@@ -30,7 +30,6 @@
 | candidate-moc-cultural-subportals-culinary-manufacturing-hubs-20250811-d7214bd9 | linked-existing | event-culinary-manufacturing-hubs | already linked to catalog event |
 | candidate-riyadh-city-events-poppy-playtime-20251010-b96ed7bc | linked-existing | event-poppy-playtime | already linked to catalog event |
 | candidate-riyadh-city-events-riyadh-season-blvd-city-20251010-d23bcbe8 | linked-existing | event-riyadh-season-blvd-city | already linked to catalog event |
-| candidate-visit-saudi-seasons-the-groves-20251105-b7362f59 | linked-existing | event-the-groves | already linked to catalog event |
 | candidate-riyadh-city-events-immersive-experience-flying-over-saudi-20251224-5f459910 | linked-existing | event-immersive-experience-flying-over-saudi | already linked to catalog event |
 | candidate-visit-saudi-calendar-arabic-language-exhibition-28-20260101-d1f2da19 | linked-existing | event-arabic-language-exhibition-28 | already linked to catalog event |
 | candidate-visit-saudi-calendar-arabic-language-exhibition-for-kids-20260101-36979634 | linked-existing | event-arabic-language-exhibition-for-kids | already linked to catalog event |
@@ -68,17 +67,10 @@
 | candidate-visit-saudi-calendar-pdf-منطقة-مشجعي-كأس-العالم-2026-في-فندق-كيمبتون-كافد-20260611-4a38d19e | linked-existing | event-world-cup-2026-fan-zone-at-kimpton-kafd | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-منطقة-مشجعي-كوكاكوا-في-حي-جاكس-20260611-4a38d19e | linked-existing | event-منطقة-مشجعي-كوكاكوا-في-حي-جاكس | already linked to catalog event |
 | candidate-riyadh-city-events-eishha-live-it-fan-zone-for-fifa-world-cup-2026-20260611-e7886947 | linked-existing | event-eishha-live-it-fan-zone-for-fifa-world-cup-2026 | already linked to catalog event |
-| candidate-riyadh-city-events-coca-cola-fan-zone-for-fifa-world-cup-2026-20260611-7a1bf8a5 | linked-existing | event-coca-cola-fan-zone-for-fifa-world-cup-2026 | already linked to catalog event |
-| candidate-riyadh-city-events-sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026-20260611-3f758046 | linked-existing | event-sikkat-al-atimah-street-food-fan-zone-fifa-world-cup-2026 | already linked to catalog event |
 | candidate-riyadh-city-events-world-cup-2026-fan-zone-at-kimpton-kafd-20260611-5af6b715 | linked-existing | event-world-cup-2026-fan-zone-at-kimpton-kafd | already linked to catalog event |
-| candidate-riyadh-city-events-solitaire-fan-zone-fifa-world-cup-2026-20260611-ccdd5e23 | linked-existing | event-solitaire-fan-zone-fifa-world-cup-2026 | already linked to catalog event |
-| candidate-visit-saudi-seasons-coca-cola-fan-zone-at-jax-district-20260611-f9159842 | linked-existing | event-coca-cola-fan-zone-at-jax-district | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-مساحة-روح-وجهة-المونديال-20260613-4a38d19e | linked-existing | event-ruh-space | already linked to catalog event |
-| candidate-riyadh-city-events-ruh-space-20260613-66f6aa84 | linked-existing | event-ruh-space | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-منطقة-مشجعين-ليسن-20260614-4a38d19e | linked-existing | event-laysen-fan-zone-fifa-world-cup-2026 | already linked to catalog event |
-| candidate-riyadh-city-events-laysen-fan-zone-fifa-world-cup-2026-20260614-8c77f037 | linked-existing | event-laysen-fan-zone-fifa-world-cup-2026 | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-مهرجان-صوت-أبها-saf-20260615-4a38d19e | linked-existing | event-مهرجان-صوت-أبها-saf | already linked to catalog event |
-| candidate-visit-saudi-calendar-pdf-بوابة-المونديال-كأس-العالم-في-جدة-20260615-4a38d19e | linked-existing | event-بوابة-المونديال-كأس-العالم-في-جدة | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-تيفو-فان-زون-20260617-4a38d19e | linked-existing | event-تيفو-فان-زون | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-معرض-في-تتبّع-ذكريات-غامرة-20260618-4a38d19e | linked-existing | event-معرض-في-تتبّع-ذكريات-غامرة | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-ليالي-المونديال-20260618-4a38d19e | linked-existing | event-ليالي-المونديال | already linked to catalog event |
@@ -151,13 +143,6 @@
 | candidate-visit-saudi-calendar-pdf-بطولة-المملكة-للبلوت-20260716-4a38d19e | linked-existing | event-بطولة-المملكة-للبلوت | already linked to catalog event |
 | candidate-experience-alula-events-summer-fruits-season-in-alula-20260716-de70ec3a | linked-existing | event-summer-fruits-season-in-alula | already linked to catalog event |
 | candidate-umm-al-qura-events-البرنامج-الرياضي-الصيفي-لأبناء-منسوبي-جامعة-أم-القرى-20260716-ab972d5f | linked-existing | event-البرنامج-الرياضي-الصيفي-لأبناء-منسوبي-جامعة-أم-القرى | already linked to catalog event |
-| candidate-visit-saudi-calendar-al-farabi-comeback-night-20260716-b9d95a79 | linked-existing | event-al-farabi-comeback-night | already linked to catalog event |
-| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260718-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
-| candidate-ithra-events-echoes-of-the-familiar-20260718-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
-| candidate-ithra-events-ithra-childrens-festival-2026-20260718-d6d5cc99 | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
-| candidate-ithra-events-a-home-i-imagine-20260718-7778a5c1 | linked-existing | event-a-home-i-imagine | already linked to catalog event |
-| candidate-ithra-events-childrens-caf-20260718-f5069d9a | linked-existing | event-childrens-caf | already linked to catalog event |
-| candidate-ithra-events-my-family-bouquet-20260718-9570ab84 | linked-existing | event-my-family-bouquet | already linked to catalog event |
 | candidate-visit-saudi-calendar-very-sary-night-from-exit-thmanyah-20260718-ba34e063 | linked-existing | event-very-sary-night-from-exit-thmanyah | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-اليوم-العالمي-لآيس-كريم-بالتعاون-مع-كلمشي-20260719-4a38d19e | linked-existing | event-اليوم-العالمي-لآيس-كريم-بالتعاون-مع-كلمشي | already linked to catalog event |
 | candidate-future-skills-catalog-advanced-excel-for-data-analysis-دورة-اكسيل-لتحليل-البيانات-20260719-8e9da906 | linked-existing | event-advanced-excel-for-data-analysis-دورة-اكسيل-لتحليل-البيانات | already linked to catalog event |
@@ -171,9 +156,12 @@
 | candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260720-f563a36e | linked-existing | event-ithra-summer-camp-2026-a-world-of-homes | already linked to catalog event |
 | candidate-ithra-events-lets-decorate-20260720-4cb342a7 | linked-existing | event-lets-decorate | already linked to catalog event |
 | candidate-ithra-events-tafasahu-make-room-20260720-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
+| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260720-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
+| candidate-ithra-events-echoes-of-the-familiar-20260720-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-ithra-events-summer-youth-program-20260720-a20f7a11 | linked-existing | event-summer-youth-program | already linked to catalog event |
 | candidate-ithra-events-1-2-3-a-little-space-for-me-20260720-a3bc99ba | linked-existing | event-1-2-3-a-little-space-for-me | already linked to catalog event |
 | candidate-ithra-events-leap-then-look-20260720-99d88224 | linked-existing | event-leap-then-look | already linked to catalog event |
+| candidate-ithra-events-ithra-childrens-festival-2026-20260720-d6d5cc99 | linked-existing | event-ithra-childrens-festival-2026 | already linked to catalog event |
 | candidate-ithra-events-kindergarten-under-the-palm-tree-english-20260720-c72ee6a9 | linked-existing | event-kindergarten-under-the-palm-tree-english | already linked to catalog event |
 | candidate-ithra-events-sense-the-home-20260720-3a3ca5ae | linked-existing | event-sense-the-home | already linked to catalog event |
 | candidate-ithra-events-my-little-fort-20260720-09d01da3 | linked-existing | event-my-little-fort | already linked to catalog event |
@@ -195,6 +183,9 @@
 | candidate-ithra-events-where-we-belong-20260720-44a2729b | linked-existing | event-where-we-belong | already linked to catalog event |
 | candidate-ithra-events-who-lived-here-20260720-11c491ce | linked-existing | event-who-lived-here | already linked to catalog event |
 | candidate-ithra-events-zoom-in-20260720-d8d7bd6d | linked-existing | event-zoom-in | already linked to catalog event |
+| candidate-ithra-events-a-home-i-imagine-20260720-7778a5c1 | linked-existing | event-a-home-i-imagine | already linked to catalog event |
+| candidate-ithra-events-childrens-caf-20260720-f5069d9a | linked-existing | event-childrens-caf | already linked to catalog event |
+| candidate-ithra-events-my-family-bouquet-20260720-9570ab84 | linked-existing | event-my-family-bouquet | already linked to catalog event |
 | candidate-ithra-events-in-the-home-of-20260720-0dcdc683 | linked-existing | event-in-the-home-of | already linked to catalog event |
 | candidate-ithra-events-the-lorax-20260720-657904eb | linked-existing | event-the-lorax | already linked to catalog event |
 | candidate-ithra-events-water-challenges-20260720-eea51834 | linked-existing | event-water-challenges | already linked to catalog event |
