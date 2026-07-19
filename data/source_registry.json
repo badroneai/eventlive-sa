@@ -1409,7 +1409,34 @@
       "intake_policy": "monitor-public",
       "evidence_required": "Individual university or college event URL with complete schedule and public attendance path; no unified calendar should be assumed.",
       "candidate_gate": "source-evidence",
-      "notes": "Added from source-research batch 4. This is a discovery lane, not a single extractor; split into KAUST, KFUPM, KSU, PNU, and other institution-specific sources when each page pattern is verified."
+      "notes": "Added from source-research batch 4. The active collector is limited to KAUST; KAU was split into its own first-class source after live verification on 2026-07-19. Other institutions require independent verification and source identities."
+    },
+    {
+      "id": "kau-events",
+      "name": "King Abdulaziz University Events",
+      "url": "https://kau.edu.sa/en/events",
+      "collector_url": "https://kau.edu.sa/en/events",
+      "owner": "King Abdulaziz University",
+      "source_type": "organizer-calendar",
+      "trust_level": "official",
+      "priority": 87,
+      "coverage": "Official public conferences, lectures, research events, community programs, and university activities in Jeddah.",
+      "cities": [
+        "Jeddah",
+        "Saudi Arabia"
+      ],
+      "categories": [
+        "education",
+        "academic",
+        "research",
+        "conferences",
+        "community"
+      ],
+      "fetch_method": "html-listing",
+      "intake_policy": "official-feed-preferred",
+      "evidence_required": "King Abdulaziz University event detail URL with an explicit start and end date from the official events calendar.",
+      "candidate_gate": "duplicate-review",
+      "notes": "Verified live on 2026-07-19: the bilingual Next.js calendar is server-rendered, paginated, and exposes date-complete event cards. This source is independent from the KAUST collector and may auto-publish date-complete non-duplicate official events."
     },
     {
       "id": "expofp-eventseye-saudi",

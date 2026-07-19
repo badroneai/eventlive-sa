@@ -58,7 +58,7 @@ fs.writeFileSync(candidatesPath, `${JSON.stringify({ candidates: [{
   starts_at: '2026-07-19T17:30:00+03:00',
   ends_at: '2026-10-08T21:30:00+03:00',
   source_url: sourceUrl,
-  source_label: 'Official Academy Programs',
+  source_label: 'Official Academy First-Class Events',
   source_owner: 'Official Academy',
   evidence_url: sourceUrl,
   raw_snapshot_path: 'data/raw/source-snapshots/stable-program.json',
@@ -106,6 +106,7 @@ assert.equal(catalog.events.length, 3, 'duplicate auto-published rows with one d
 const stableProgram = catalog.events.find((event) => event.id === 'event-stable-program');
 assert.ok(stableProgram, 'canonical event id must be retained');
 assert.equal(stableProgram.starts_at, '2026-07-19T17:30:00+03:00', 'corrected official dates must update the retained event');
+assert.equal(stableProgram.source_label, 'Official Academy First-Class Events', 'an exact official source page must adopt its verified first-class source identity');
 assert.ok(catalog.events.some((event) => event.id === 'event-official-forum'), 'tracking parameters must not split one official detail event');
 assert.ok(catalog.events.some((event) => event.id === 'event-official-summit-corrected'), 'distinct EventID values must remain distinct official events');
 assert.equal(catalog.events.find((event) => event.id === 'event-official-summit-corrected')?.title, 'Official Summit Corrected', 'query-specific official identity must correct its retained title and canonical id');

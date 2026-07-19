@@ -872,6 +872,9 @@ function main() {
         const sameSourceDetailRefresh = exactSourcePage && /^official-detail-/i.test(candidate.verification_method || '');
         const preservePrimaryOfficialRecord = shouldPreservePrimaryOfficialRecord(existingMatch, candidate) && !sameSourceDetailRefresh;
         mergeMissingCandidateEnrichment(existingMatch, candidate);
+        if (sameSourcePage && candidate.confidence === 'official' && candidate.source_label) {
+          existingMatch.source_label = candidate.source_label;
+        }
         if (sameSourcePage && candidate.venue) {
           existingMatch.venue = candidate.venue;
           existingMatch.venue_address = candidate.venue;

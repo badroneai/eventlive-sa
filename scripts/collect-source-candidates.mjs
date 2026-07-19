@@ -200,6 +200,7 @@ const sourceExtractors = {
   'misk-hub-programs': extractMiskHubPrograms,
   'misk-hub-events': extractMiskHubEvents,
   'discover-aseer-events': extractDiscoverAseerEvents,
+  'kau-events': extractKauEvents,
   'sdaia-academy-programs': extractSdaiaAcademyPrograms,
   'saudi-pro-league-fixtures': extractSaudiProLeagueFixtures,
   'moc-cultural-calendar': extractMocCulturalCalendar,
@@ -3625,13 +3626,72 @@ function yearFromTitle(title, fallback = now.getFullYear()) {
   return Number(String(title || '').match(/\b(20\d{2})\b/)?.[1]) || fallback;
 }
 
-function extractDiscoverAseerEvents(html, source) {
+function extractDiscoverAseerExperienceCards(html, source, season) {
+  const items = [];
+  const seen = new Set();
+  const defaultYear = yearFromTitle(season.title) || now.getFullYear();
+  const blocks = html.split(/<div\s+class=["']card\s+/i).slice(1);
+
+  for (const block of blocks) {
+    const href = block.match(/<a\s+[^>]*href=["']([^"']*\/(?:en\/)?experiences\/[^"']+)["']/i)?.[1] || '';
+    const title = stripTags(block.match(/<h3[^>]*>([\s\S]*?)<\/h3>/i)?.[1] || '');
+    const dateText = stripTags(block.match(/<h6[^>]*>\s*(\d{1,2}\s+[A-Za-z]+\s*-\s*\d{1,2}\s+[A-Za-z]+)\s*<\/h6>/i)?.[1] || '');
+    const dates = parseOrdinalEnglishDateRange(dateText, defaultYear);
+    if (!href || !title || !dates) continue;
+
+    const url = resolveUrl(href, season.url || source.url);
+    const key = `${url}|${dates.starts_at}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+
+    const summary = stripTags(block.match(/<h6[^>]*class=["'][^"']*text-black[^"']*["'][^>]*>([\s\S]*?)<\/h6>/i)?.[1] || '');
+    const imageSrc = block.match(/<img[^>]+src=["']([^"']+)["']/i)?.[1] || '';
+    const mapsUrl = block.match(/href=["'](https?:\/\/[^"']*(?:maps\.app\.goo\.gl|google\.[^/]+\/maps)[^"']*)["']/i)?.[1] || '';
+    const registrationUrl = block.match(/href=["'](https?:\/\/[^"']*(?:platinumlist|webook|ticket|book)[^"']*)["']/i)?.[1] || '';
+    const priceLabel = /\bFree\b/i.test(block) ? 'Free' : /\bPaid\b/i.test(block) ? 'Paid' : '';
+    const kidFriendly = /Kid-Friendly/i.test(block);
+
+    items.push({
+      title,
+      url,
+      organizer: source.owner,
+      summary: summary || `تجربة رسمية ضمن ${season.title}. التاريخ المعلن: ${dateText}.`,
+      city: 'Aseer',
+      venue: 'Aseer Region',
+      category: 'tourism',
+      raw_date_text: dateText,
+      confidence: 'official',
+      review_status: 'ready-for-review',
+      publication_gate: 'human-review',
+      attendance_mode: 'in-person',
+      language: 'en',
+      verification_method: 'official-season-detail-listing',
+      date_precision: 'day',
+      time_precision: 'unknown',
+      tags: ['aseer-summer-2026', 'season-experience'],
+      ...(imageSrc ? {
+        image_url: resolveUrl(imageSrc, season.url || source.url),
+        image_alt: title,
+        image_source_url: url
+      } : {}),
+      ...(mapsUrl ? { maps_url: mapsUrl } : {}),
+      ...(registrationUrl ? { registration_url: registrationUrl } : {}),
+      ...(priceLabel ? { price_label: priceLabel } : {}),
+      ...(kidFriendly ? { age_policy: 'Kid-Friendly' } : {}),
+      ...dates
+    });
+  }
+
+  return items;
+}
+
+async function extractDiscoverAseerEvents(html, source, options = {}) {
   const upcomingSection = html
     .split(/Upcoming Seasons and Events/i)[1]
     ?.split(/Previous Seasons and Events/i)[0] || '';
   const blocks = [...upcomingSection.matchAll(/<a\s+href="([^"]+)"[^>]*class="[^"]*event-season[^"]*"[\s\S]*?<\/a>/gi)]
     .map((match) => ({ href: match[1], html: match[0] }));
-  const items = [];
+  const seasons = [];
   const seen = new Set();
   for (const block of blocks) {
     const title = stripTags(block.html.match(/text-zinc-800[\s\S]*?>([\s\S]*?)<\/p>/)?.[1] || '');
@@ -3642,7 +3702,7 @@ function extractDiscoverAseerEvents(html, source) {
     const key = `${title}|${dates.starts_at}`;
     if (seen.has(key)) continue;
     seen.add(key);
-    items.push({
+    seasons.push({
       title,
       url,
       organizer: source.owner,
@@ -3655,6 +3715,26 @@ function extractDiscoverAseerEvents(html, source) {
       publication_gate: 'human-review',
       ...dates
     });
+  }
+
+  const items = [];
+  const fetchSeasonHtml = options.fetchSeasonHtml || (async (url) => fetchHtml({
+    ...source,
+    collector_url: url
+  }));
+  for (const season of seasons) {
+    try {
+      const detailHtml = await fetchSeasonHtml(season.url, source);
+      if (!source.skip_snapshot) writeAuxiliarySnapshot(source, 'season-detail', detailHtml);
+      const experiences = extractDiscoverAseerExperienceCards(detailHtml, source, season);
+      if (experiences.length) {
+        items.push(...experiences);
+        continue;
+      }
+    } catch {
+      // Preserve the verified season umbrella when its detail page is temporarily unavailable.
+    }
+    items.push(season);
   }
   return items;
 }
@@ -5188,15 +5268,7 @@ async function extractSdaiaCalendarEvents(html, source) {
 }
 
 async function extractKaustEvents(_html, source) {
-  const items = await extractKaustCentralEvents(source);
-  try {
-    const kauHtml = await fetchHtml({ ...source, collector_url: 'https://kau.edu.sa/en/events' });
-    if (!source.skip_snapshot) writeAuxiliarySnapshot(source, 'kau-events', kauHtml);
-    items.push(...extractKauEvents(kauHtml, source));
-  } catch {
-    // KAUST remains the primary university feed; KAU is an opportunistic official supplement.
-  }
-  return items;
+  return extractKaustCentralEvents(source);
 }
 
 async function extractKaustCentralEvents(source) {
@@ -5272,19 +5344,21 @@ async function extractKaustCentralEvents(source) {
 
 function extractKauEvents(html, source) {
   const items = [];
+  const listingUrl = source.collector_url || source.url || 'https://kau.edu.sa/en/events';
+  const organizer = source.owner || 'King Abdulaziz University';
   const pattern = /"children":"([^"]+)"[\s\S]{0,900}?"children":"(\d{2}\s+[A-Za-z]{3}\s+20\d{2}\s*-\s*\d{2}\s+[A-Za-z]{3}\s+20\d{2})"[\s\S]{0,900}?"href":"([^"]*\/en\/event\/[^"]+)"/g;
   const seen = new Set();
   for (const match of html.matchAll(pattern)) {
     const title = decodeHtml(match[1]);
     const dateText = decodeHtml(match[2]);
     const dates = parseEnglishDateRange(dateText);
-    const url = resolveUrl(decodeHtml(match[3]), 'https://kau.edu.sa/en/events');
+    const url = resolveUrl(decodeHtml(match[3]), listingUrl);
     if (!title || !dates || seen.has(`${title}|${dates.starts_at}`)) continue;
     seen.add(`${title}|${dates.starts_at}`);
     items.push({
       title,
       url,
-      organizer: 'King Abdulaziz University',
+      organizer,
       summary: `فعالية رسمية من تقويم جامعة الملك عبدالعزيز. التاريخ المعلن: ${dateText}.`,
       city: 'Jeddah',
       venue: 'King Abdulaziz University',
@@ -5293,6 +5367,10 @@ function extractKauEvents(html, source) {
       confidence: 'official',
       review_status: 'ready-for-review',
       publication_gate: 'human-review',
+      verification_method: 'official-page-explicit-date',
+      date_precision: 'day',
+      time_precision: 'unknown',
+      language: 'en',
       ...dates
     });
   }
@@ -5310,14 +5388,14 @@ function extractKauEvents(html, source) {
       const dateText = decodeHtml(match[2]);
       const dates = parseEnglishDateRange(dateText);
       const fallbackHref = `/en/event/${toSlug(title)}`;
-      const url = resolveUrl(links[index] || fallbackHref, 'https://kau.edu.sa/en/events');
+      const url = resolveUrl(links[index] || fallbackHref, listingUrl);
       const key = `${title}|${dates?.starts_at || ''}`;
       if (!title || !dates || !url || seen.has(key)) return;
       seen.add(key);
       items.push({
         title,
         url,
-        organizer: 'King Abdulaziz University',
+        organizer,
         summary: `فعالية رسمية من تقويم جامعة الملك عبدالعزيز. التاريخ المعلن: ${dateText}.`,
         city: 'Jeddah',
         venue: 'King Abdulaziz University',
@@ -5326,6 +5404,10 @@ function extractKauEvents(html, source) {
         confidence: 'official',
         review_status: 'ready-for-review',
         publication_gate: 'human-review',
+        verification_method: 'official-page-explicit-date',
+        date_precision: 'day',
+        time_precision: 'unknown',
+        language: 'en',
         ...dates
       });
     });
@@ -6221,6 +6303,8 @@ export {
   extractQassimChamberEvents,
   extractTabukChamberEvents,
   extractScegaEvents,
+  extractDiscoverAseerEvents,
+  extractDiscoverAseerExperienceCards,
   extractKaustEvents,
   extractKauEvents,
   extractRiyadhCityEvents,
