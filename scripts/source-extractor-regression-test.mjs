@@ -463,15 +463,18 @@ const kauEvents = extractKauEvents(`
   "children":"01 Dec 2026 - 02 Dec 2026"
   "href":"/en/event/future-frontiers-for-businesses-catalysts-for-growth-in-a-transformational-economy"
 `, {
-  id: 'saudi-university-events',
-  name: 'Saudi Universities and Technical Colleges',
-  url: 'https://www.kaust.edu.sa/',
-  owner: 'Saudi universities and technical colleges'
+  id: 'kau-events',
+  name: 'King Abdulaziz University Events',
+  url: 'https://kau.edu.sa/en/events',
+  collector_url: 'https://kau.edu.sa/en/events',
+  owner: 'King Abdulaziz University'
 });
 
 assert.equal(kauEvents.length, 1);
 assert.equal(kauEvents[0].title, 'Future Frontiers for Businesses: Catalysts for Growth in a Transformational Economy');
 assert.equal(kauEvents[0].city, 'Jeddah');
+assert.equal(kauEvents[0].organizer, 'King Abdulaziz University');
+assert.match(kauEvents[0].url, /^https:\/\/kau\.edu\.sa\/en\/event\//);
 assert.equal(kauEvents[0].starts_at, '2026-12-01T09:00:00+03:00');
 assert.equal(kauEvents[0].ends_at, '2026-12-02T18:00:00+03:00');
 
