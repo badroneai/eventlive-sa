@@ -1,8 +1,8 @@
 # Future Skills Program Enrichment Report
 
-- generated_at: 2026-07-19T08:37:58.236Z
-- targets: 7
-- enriched: 7
+- generated_at: 2026-07-27T15:44:16.104Z
+- targets: 11
+- enriched: 11
 - failed: 0
 
 ## Enriched
@@ -14,6 +14,10 @@
 - Advanced Excel for Data Analysis - دورة اكسيل لتحليل البيانات (13041) - outcomes=1, topics=4, requirements=4, metadata=8
 - CompTIA A+ (13042) - outcomes=1, topics=7, requirements=4, metadata=8
 - Cloud Computing Essentials - أساسيات الحوسبة السحابية (13043) - outcomes=1, topics=4, requirements=4, metadata=8
+- Duplicate of Cloud Computing Essentials - أساسيات الحوسبة السحابية (13044) - outcomes=1, topics=4, requirements=4, metadata=8
+- Cloud Storage and Databases Fundamentals - أساسيات التخزين السحابي وقواعد البيانات (13045) - outcomes=1, topics=7, requirements=4, metadata=8
+- DevOps Fundamentals for Cloud Environments-أساسيات ديفوبس لبيئات السحابة (13046) - outcomes=1, topics=3, requirements=4, metadata=8
+- Cloud Security Operations and Identity Management - عمليات أمان السحابة وإدارة الهوية (13047) - outcomes=1, topics=3, requirements=4, metadata=8
 
 ## Failed
 

@@ -1,11 +1,11 @@
 # Visit Saudi Calendar Enrichment Report
 
-- generated_at: 2026-07-19T08:38:34.719Z
-- targets: 28
-- candidates: 23
-- enriched: 28
-- fetched: 28
-- images: 26
+- generated_at: 2026-07-27T15:44:43.228Z
+- targets: 29
+- candidates: 18
+- enriched: 29
+- fetched: 29
+- images: 27
 - fetch_failures: 0
 
 ## Enriched
@@ -35,6 +35,7 @@
 - FIBO Arabia 2026 - official-page-html - image=yes - features=7
 - Saudi National Day - official-page-html - image=yes - features=7
 - Al Milwah Falcon Race - official-page-html - image=yes - features=7
+- FEENA NEHKE? Stand Up Comedy by John Achkar - official-page-html - image=yes - features=7
 - Founding Day - official-page-html - image=yes - features=7
 - Eid Al-Fitr - official-page-html - image=no - features=6
 - Eid Al-Adha - official-page-html - image=no - features=6

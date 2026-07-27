@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T08:38:50.310Z",
+  "generated_at": "2026-07-27T15:45:05.124Z",
   "catalog": "data/events_catalog.json",
   "source": "RFECC What's On",
   "totals": {
@@ -12,7 +12,7 @@
   },
   "enriched": [
     {
-      "id": "event-saudi-logistic-038-warehousing-expo",
+      "id": "event-saudi-logistic-warehousing-expo",
       "title": "Saudi Logistic & Warehousing Expo",
       "source_method": "official-page-html-jsonld",
       "image_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122220/images-5.jpg",
@@ -28,18 +28,18 @@
       "features": 7
     },
     {
-      "id": "event-fibo-2026",
-      "title": "FIBO 2026",
-      "source_method": "official-page-html-jsonld",
-      "image_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122706/fibo_arabia_logo_10431.webp",
-      "fetched": true,
-      "features": 7
-    },
-    {
       "id": "event-wtm-spotlight-riyadh",
       "title": "WTM Spotlight Riyadh",
       "source_method": "official-page-html-jsonld",
       "image_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122431/WMT-Spotlight-Riyadh-Dates-1200x675-1-1024x576-1.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-fibo-2026",
+      "title": "FIBO 2026",
+      "source_method": "official-page-html-jsonld",
+      "image_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06122706/fibo_arabia_logo_10431.webp",
       "fetched": true,
       "features": 7
     },

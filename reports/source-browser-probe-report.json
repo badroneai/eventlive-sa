@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T08:32:54.427Z",
+  "generated_at": "2026-07-27T15:26:04.475Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -7,20 +7,212 @@
     "selected_ids": [],
     "scope": "priority",
     "limit": 8,
-    "probed_this_run": 0,
-    "fresh_results_available": 0,
+    "probed_this_run": 2,
+    "fresh_results_available": 2,
     "wait_ms": 4500,
     "timeout_ms": 30000,
     "failure_cooldown_hours": 72
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 0,
-    "browser_network_api": 0,
+    "probed": 2,
+    "browser_network_api": 1,
     "browser_hydration_payload": 0,
     "rendered_html_candidates": 0,
     "blocked_or_protected": 0,
     "policy_skipped": 0
   },
-  "sources": []
+  "sources": [
+    {
+      "id": "sdaia-academy-programs",
+      "probed_at": "2026-07-27T15:28:34.381Z",
+      "name": "SDAIA Academy Programs",
+      "priority": 25,
+      "url": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx",
+      "final_url": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 16782,
+      "classification": "browser-network-api",
+      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
+      "title": "SDAIA |",
+      "text_bytes": 8396,
+      "html_bytes": 133955,
+      "html_snapshot": "data/raw/browser-probes/sdaia-academy-programs-2026-07-27T15-26-04-475Z.html",
+      "screenshot": "data/raw/browser-probes/sdaia-academy-programs-2026-07-27T15-26-04-475Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": [
+          {
+            "text": "AI Scholarship Program",
+            "href": "https://sdaia.gov.sa/en/Sectors/academy/Pages/ScholarshipProgram.aspx"
+          },
+          {
+            "text": "Cooperative Training Program",
+            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/Pages/CooperativeTraining.aspx"
+          },
+          {
+            "text": "Free Software and Services",
+            "href": "https://sdaia.gov.sa/en/Services/Pages/FreeServicesAndPrograms.aspx"
+          },
+          {
+            "text": "Calendar and Events",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx"
+          },
+          {
+            "text": "Search",
+            "href": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx#"
+          },
+          {
+            "text": "",
+            "href": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx#ctl00_PlaceHolderBanner_ContentMap_SkipLink"
+          },
+          {
+            "text": "Programs ​Details​",
+            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/academy/bootcamps/Pages/ProfessionalTrainingLargeLanguageDetails.aspx"
+          },
+          {
+            "text": "Camp ​Details​",
+            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/academy/bootcamps/Pages/CloudSystemsManagementBootcampDetails.aspx"
+          },
+          {
+            "text": "Camp ​Details​",
+            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/academy/bootcamps/Pages/AIAgentsDevelopmentGroqProgram.aspx"
+          },
+          {
+            "text": "Camp ​Details​",
+            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/academy/bootcamps/Pages/PracticalAITrainingProgram.aspx"
+          },
+          {
+            "text": "Camp ​Details​",
+            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/academy/bootcamps/Pages/ServicenowPlatformDeveloperDetails.aspx"
+          },
+          {
+            "text": "Camp Details",
+            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/academy/bootcamps/Pages/DataEngineeringBootcampDetails.aspx"
+          },
+          {
+            "text": "Pr​o​gram Details",
+            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/academy/bootcamps/Pages/BuildingAIAppDetails.aspx"
+          },
+          {
+            "text": "Programs ​Details​",
+            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/academy/bootcamps/Pages/WorkflowAIDetails.aspx"
+          },
+          {
+            "text": "Yes",
+            "href": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx#pills-first"
+          },
+          {
+            "text": "No",
+            "href": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx#pills-second"
+          },
+          {
+            "text": "Privacy Policy",
+            "href": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx#"
+          },
+          {
+            "text": "Manage Preferences",
+            "href": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx#"
+          },
+          {
+            "text": "",
+            "href": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx#?"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 1
+      },
+      "network_total": 3,
+      "network_endpoints": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/sectors/academy/bootcamps/pages/default.aspx&_=1785166101299",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:Message,Status,ErrorCode,ErrorMessage,Notifications",
+          "preview": "{\"Message\":{\"Title\":\"/en/sectors/academy/bootcamps/pages/default.aspx\",\"PageId\":\"/en/sectors/academy/bootcamps/pages/default.aspx\",\"YesCount\":\"0\",\"NoCount\":\"0\",\"TotalCount\":\"0\"},\"Status\":true,\"ErrorCode\":0,\"ErrorMessage\":null,\"Notifications\":null}"
+        }
+      ],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://sdaia.gov.sa/sdaiaformapi/api/user/GetNafathInfo?_=1785166101297",
+          "content_type": "text/html",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "html",
+          "preview": "<html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your administrator.<br><br>Your support ID is: 14997052926135616755<br><br><a href='javascript:history.back();'>[Go Back]</a></body></html>"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://sdaia.gov.sa/sdaiaapi/api/home/geteninternalpagenavdata?_=1785166101296",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"Data\":{\"menu\":[{\"id\":1,\"title\":\"Home\",\"url\":\"/en/default.aspx\",\"hasChild\":\"false\",\"itemSort\":\"1\",\"layout\":null,\"show\":\"true\",\"level2\":[],\"error\":false},{\"id\":2,\"title\":\"SDAIA\",\"url\":\"/en/SDAIA/Pages/default.aspx\",\"hasChild\":\"true\",\"itemSort\":\"2\",\"layout\":\"Grid\",\"show\":\"true\",\"level2\":[{\"id\":1,\"title\":\"About SDAIA\",\"url\":\"/en/SDAIA/about/Pages/default.aspx\",\"menuLevel1\":\"SDAIA\",\"itemSort\":\"1\",\"icon\":\"fal fa-buildings\",\"level3\":[{\"title\":\"About SDAIA\",\"url\":\"/en/SDAIA/about/Pages/About.aspx\",\"itemSort\":\"1\",\"icon\":\"fal fa-buildings\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Board of Directors\",\"url\":\"/en/SDAIA/about/Pages/directorsBoard.aspx\",\"itemSort\":\"2\",\"icon\":\"fal fa-id-card\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Organizational Structure\",\"url\":\"/en/SDAIA/about/Pages/organizationalStructure.aspx\",\"itemSort\":\"3\",\"icon\":\"fal fa-diagram-project\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Budget and Spending\",\"url\":\"/en/SDAIA/about/Pages/Budget.aspx\",\"itemSort\":\"4\",\"icon\":\"fal fa-coins\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Competitions and Purchases\",\"url\":\"/en/SDAIA/about/Pages/CompetitionsAndPurchases.aspx\",\"itemSort\":\"5\",\"icon\":\"fal fa-flag-checkered\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Achievements\",\"url\":\"/en/SDAIA/about/Pages/Achievements.aspx\",\"itemSort\":\"6\",\"icon\":\"fal fa-ballot-check\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Laws and Regulations\",\"url\":\"/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx\",\"itemSort\":\"7\",\"icon\":\"fal fa-clipboard-check\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Artificial Intelligence\",\"url\":\"/en/SDAIA/about/Pages/AboutAI.aspx\",\"itemSort\":\"8\",\"i"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/sectors/academy/bootcamps/pages/default.aspx&_=1785166101299",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:Message,Status,ErrorCode,ErrorMessage,Notifications",
+          "preview": "{\"Message\":{\"Title\":\"/en/sectors/academy/bootcamps/pages/default.aspx\",\"PageId\":\"/en/sectors/academy/bootcamps/pages/default.aspx\",\"YesCount\":\"0\",\"NoCount\":\"0\",\"TotalCount\":\"0\"},\"Status\":true,\"ErrorCode\":0,\"ErrorMessage\":null,\"Notifications\":null}"
+        }
+      ]
+    },
+    {
+      "id": "asharqia-chamber-events",
+      "probed_at": "2026-07-27T15:28:17.565Z",
+      "name": "Asharqia Chamber Events",
+      "priority": 59,
+      "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 132637,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/asharqia-chamber-events-2026-07-27T15-26-04-475Z.html",
+      "screenshot": "",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    }
+  ]
 }

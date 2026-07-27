@@ -1,6 +1,6 @@
 # RFECC Enrichment Report
 
-- generated_at: 2026-07-19T08:38:50.310Z
+- generated_at: 2026-07-27T15:45:05.124Z
 - targets: 6
 - candidates: 6
 - enriched: 6
@@ -12,8 +12,8 @@
 
 - Saudi Logistic & Warehousing Expo - official-page-html-jsonld - image=yes - features=8
 - Inter Aviation Arabia - official-page-html-jsonld - image=yes - features=7
-- FIBO 2026 - official-page-html-jsonld - image=yes - features=7
 - WTM Spotlight Riyadh - official-page-html-jsonld - image=yes - features=7
+- FIBO 2026 - official-page-html-jsonld - image=yes - features=7
 - Natrual Expo - official-page-html-jsonld - image=yes - features=7
 - China Homelife Saudi Arabia 2026 - official-page-html-jsonld - image=yes - features=7
 

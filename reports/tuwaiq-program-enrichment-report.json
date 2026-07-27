@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-19T08:37:51.427Z",
+  "generated_at": "2026-07-27T15:44:06.526Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 21,
-    "enriched": 21,
-    "failed": 0
+    "targets": 27,
+    "enriched": 26,
+    "failed": 1
   },
   "enriched": [
     {
@@ -41,7 +41,7 @@
     },
     {
       "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
+      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python (الفترة المسائية)",
       "slug": "4yOEV7Qq",
       "goals": 12,
       "features": 6,
@@ -51,14 +51,6 @@
       "id": "event-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات",
       "title": "معسكر طويق للقطاع الأمني: تطوير البرمجيات",
       "slug": "ayjde5d8",
-      "goals": 3,
-      "features": 1,
-      "requirements": 31
-    },
-    {
-      "id": "event-معسكر-طويق-للقطاع-الأمني-البنية-التحتية",
-      "title": "معسكر طويق للقطاع الأمني: البنية التحتية",
-      "slug": "0RQJe3nb",
       "goals": 3,
       "features": 1,
       "requirements": 31
@@ -97,7 +89,7 @@
     },
     {
       "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-2",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
+      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python (الفترة الصباحية)",
       "slug": "8ROda7MD",
       "goals": 12,
       "features": 6,
@@ -144,6 +136,14 @@
       "requirements": 8
     },
     {
+      "id": "event-دبلوم-الأمن-السيبراني-المتقدم",
+      "title": "دبلوم الأمن السيبراني المتقدم",
+      "slug": "VPwN7D0G",
+      "goals": 8,
+      "features": 8,
+      "requirements": 7
+    },
+    {
       "id": "event-معسكر-أساسيات-الأمن-السيبراني",
       "title": "معسكر أساسيات الأمن السيبراني",
       "slug": "6VRQ2LNZ",
@@ -168,13 +168,60 @@
       "requirements": 4
     },
     {
+      "id": "event-معسكر-الذكاء-الاصطناعي-في-تطوير-تطبيقات-الويب-باستخدام-python-و-django",
+      "title": "معسكر الذكاء الاصطناعي في تطوير تطبيقات الويب باستخدام Python و Django",
+      "slug": "64xLPxNn",
+      "goals": 16,
+      "features": 7,
+      "requirements": 8
+    },
+    {
       "id": "event-معسكر-طويق-السيبراني",
       "title": "معسكر طويق السيبراني",
       "slug": "oA2ryDzB",
       "goals": 3,
       "features": 3,
       "requirements": 5
+    },
+    {
+      "id": "event-معسكر-حلول-الحوسبة-السحابية-aws-google-cloud",
+      "title": "معسكر حلول الحوسبة السحابية: AWS & Google Cloud",
+      "slug": "GJ1pvRq9",
+      "goals": 5,
+      "features": 7,
+      "requirements": 8
+    },
+    {
+      "id": "event-معسكر-الذكاء-الاصطناعي",
+      "title": "معسكر الذكاء الاصطناعي",
+      "slug": "bm82q1Pl",
+      "goals": 7,
+      "features": 9,
+      "requirements": 8
+    },
+    {
+      "id": "event-معسكر-علم-البيانات-والذكاء-الاصطناعي",
+      "title": "معسكر علم البيانات والذكاء الاصطناعي",
+      "slug": "eOnD1zRg",
+      "goals": 8,
+      "features": 11,
+      "requirements": 11
+    },
+    {
+      "id": "event-معسكر-الجرائم-السيبرانية-والتحقيق-الجنائي-الرقمي-المتقدم",
+      "title": "معسكر الجرائم السيبرانية والتحقيق الجنائي الرقمي المتقدم",
+      "slug": "qMyzrymE",
+      "goals": 20,
+      "features": 12,
+      "requirements": 9
     }
   ],
-  "failed": []
+  "failed": [
+    {
+      "id": "event-معسكر-طويق-للقطاع-الأمني-البنية-التحتية",
+      "title": "معسكر طويق للقطاع الأمني: البنية التحتية",
+      "slug": "0RQJe3nb",
+      "reason": "Unexpected end of JSON input"
+    }
+  ]
 }

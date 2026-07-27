@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-19T08:37:58.236Z",
+  "generated_at": "2026-07-27T15:44:16.104Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 7,
-    "enriched": 7,
+    "targets": 11,
+    "enriched": 11,
     "failed": 0
   },
   "enriched": [
@@ -67,6 +67,42 @@
       "group_id": "13043",
       "goals": 1,
       "features": 4,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-duplicate-of-cloud-computing-essentials-أساسيات-الحوسبة-السحابية",
+      "title": "Duplicate of Cloud Computing Essentials - أساسيات الحوسبة السحابية",
+      "group_id": "13044",
+      "goals": 1,
+      "features": 4,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-cloud-storage-and-databases-fundamentals-أساسيات-التخزين-السحابي-وقواعد-",
+      "title": "Cloud Storage and Databases Fundamentals - أساسيات التخزين السحابي وقواعد البيانات",
+      "group_id": "13045",
+      "goals": 1,
+      "features": 7,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-devops-fundamentals-for-cloud-environments-أساسيات-ديفوبس-لبيئات-السحابة",
+      "title": "DevOps Fundamentals for Cloud Environments-أساسيات ديفوبس لبيئات السحابة",
+      "group_id": "13046",
+      "goals": 1,
+      "features": 3,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-cloud-security-operations-and-identity-management-عمليات-أمان-السحابة-وإ",
+      "title": "Cloud Security Operations and Identity Management - عمليات أمان السحابة وإدارة الهوية",
+      "group_id": "13047",
+      "goals": 1,
+      "features": 3,
       "requirements": 4,
       "metadata": 8
     }

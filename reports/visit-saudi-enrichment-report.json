@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-19T08:38:34.719Z",
+  "generated_at": "2026-07-27T15:44:43.228Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
-    "targets": 28,
-    "candidates": 23,
-    "enriched": 28,
-    "fetched": 28,
-    "images": 26,
+    "targets": 29,
+    "candidates": 18,
+    "enriched": 29,
+    "fetched": 29,
+    "images": 27,
     "fetch_failures": 0
   },
   "enriched": [
@@ -208,6 +208,14 @@
       "title": "Al Milwah Falcon Race",
       "source_method": "official-page-html",
       "image_url": "https://scth.scene7.com/is/image/scth/almelwah-racing?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-feena-nehke-stand-up-comedy-by-john-achkar",
+      "title": "FEENA NEHKE? Stand Up Comedy by John Achkar",
+      "source_method": "official-page-html",
+      "image_url": "https://scth.scene7.com/is/image/scth/john-achkar?wid=1920&hei=1080&fit=constrain&fmt=webp",
       "fetched": true,
       "features": 7
     },

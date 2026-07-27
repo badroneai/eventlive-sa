@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-19T08:39:19.453Z",
+  "generated_at": "2026-07-27T15:45:48.974Z",
   "source_ops_report": "reports/source-ops-report.json",
   "source_registry": "data/source_registry.json",
   "totals": {
     "leads_seen": 10,
-    "tasks": 8,
-    "high_priority": 1
+    "tasks": 5,
+    "high_priority": 2
   },
   "tasks": [
     {
@@ -97,6 +97,99 @@
         {
           "query": "\"Family Office Investment Summit\" \"Riyadh\" tickets",
           "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22%20tickets"
+        }
+      ],
+      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
+    },
+    {
+      "lead_id": "candidate-eventbrite-saudi-jeddah-fintech-week-2026-20260905-8e9a03b6",
+      "title": "Jeddah Fintech Week 2026",
+      "city": "Jeddah",
+      "starts_at": "2026-09-05T14:00:00+03:00",
+      "source_label": "Eventbrite Saudi Arabia",
+      "discovery_quality": "strong-lead",
+      "discovery_score": 70,
+      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
+      "resolver_priority": 119,
+      "target_sources": [
+        {
+          "id": "informa-connect-saudi-events",
+          "name": "Informa Connect Saudi Event Portfolio",
+          "url": "https://informaconnect.com/",
+          "domain": "informaconnect.com",
+          "trust_level": "official",
+          "source_type": "conference-organizer",
+          "score": 48
+        },
+        {
+          "id": "abha-chamber-events",
+          "name": "Abha Chamber Events",
+          "url": "https://abhacci.org.sa/Events",
+          "domain": "abhacci.org.sa",
+          "trust_level": "official",
+          "source_type": "venue-calendar",
+          "score": 40
+        },
+        {
+          "id": "baha-chamber-events",
+          "name": "Baha Chamber Events",
+          "url": "https://bcci.org.sa/",
+          "domain": "bcci.org.sa",
+          "trust_level": "official",
+          "source_type": "venue-calendar",
+          "score": 40
+        },
+        {
+          "id": "future-skills-catalog",
+          "name": "Future Skills MCIT Catalogue",
+          "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
+          "domain": "futureskills.mcit.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 40
+        },
+        {
+          "id": "hail-chamber-events",
+          "name": "Hail Chamber Events",
+          "url": "https://www.hc.org.sa/",
+          "domain": "hc.org.sa",
+          "trust_level": "official",
+          "source_type": "venue-calendar",
+          "score": 40
+        }
+      ],
+      "searches": [
+        {
+          "query": "site:informaconnect.com \"Jeddah Fintech Week 2026\" \"Jeddah\"",
+          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22"
+        },
+        {
+          "query": "site:abhacci.org.sa \"Jeddah Fintech Week 2026\" \"Jeddah\"",
+          "url": "https://www.google.com/search?q=site%3Aabhacci.org.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22"
+        },
+        {
+          "query": "site:bcci.org.sa \"Jeddah Fintech Week 2026\" \"Jeddah\"",
+          "url": "https://www.google.com/search?q=site%3Abcci.org.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22"
+        },
+        {
+          "query": "site:futureskills.mcit.gov.sa \"Jeddah Fintech Week 2026\" \"Jeddah\"",
+          "url": "https://www.google.com/search?q=site%3Afutureskills.mcit.gov.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22"
+        },
+        {
+          "query": "site:hc.org.sa \"Jeddah Fintech Week 2026\" \"Jeddah\"",
+          "url": "https://www.google.com/search?q=site%3Ahc.org.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22"
+        },
+        {
+          "query": "\"Jeddah Fintech Week 2026\" \"Jeddah\" official",
+          "url": "https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20official"
+        },
+        {
+          "query": "\"Jeddah Fintech Week 2026\" \"Jeddah\" organizer",
+          "url": "https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20organizer"
+        },
+        {
+          "query": "\"Jeddah Fintech Week 2026\" \"Jeddah\" tickets",
+          "url": "https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
@@ -195,94 +288,94 @@
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
     },
     {
-      "lead_id": "candidate-eventbrite-saudi-jeddah-fintech-week-2026-20260905-8e9a03b6",
-      "title": "Jeddah Fintech Week 2026",
-      "city": "Jeddah",
-      "starts_at": "2026-09-05T14:00:00+03:00",
+      "lead_id": "candidate-eventbrite-saudi-sucession-planning-program-20260903-d2b52d25",
+      "title": "Sucession Planning Program",
+      "city": "Riyadh",
+      "starts_at": "2026-09-03T10:00:00+03:00",
       "source_label": "Eventbrite Saudi Arabia",
       "discovery_quality": "strong-lead",
       "discovery_score": 70,
       "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 107,
+      "resolver_priority": 109,
       "target_sources": [
         {
-          "id": "informa-connect-saudi-events",
-          "name": "Informa Connect Saudi Event Portfolio",
-          "url": "https://informaconnect.com/",
-          "domain": "informaconnect.com",
-          "trust_level": "official",
-          "source_type": "conference-organizer",
-          "score": 48
-        },
-        {
-          "id": "abha-chamber-events",
-          "name": "Abha Chamber Events",
-          "url": "https://abhacci.org.sa/Events",
-          "domain": "abhacci.org.sa",
-          "trust_level": "official",
-          "source_type": "venue-calendar",
-          "score": 40
-        },
-        {
-          "id": "baha-chamber-events",
-          "name": "Baha Chamber Events",
-          "url": "https://bcci.org.sa/",
-          "domain": "bcci.org.sa",
-          "trust_level": "official",
-          "source_type": "venue-calendar",
-          "score": 40
-        },
-        {
-          "id": "future-skills-catalog",
-          "name": "Future Skills MCIT Catalogue",
-          "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
-          "domain": "futureskills.mcit.gov.sa",
+          "id": "code-mcit-programs",
+          "name": "CODE MCIT Programs",
+          "url": "https://code.mcit.gov.sa/en/our-programs",
+          "domain": "code.mcit.gov.sa",
           "trust_level": "official",
           "source_type": "government-calendar",
-          "score": 40
+          "score": 28
         },
         {
-          "id": "hail-chamber-events",
-          "name": "Hail Chamber Events",
-          "url": "https://www.hc.org.sa/",
-          "domain": "hc.org.sa",
+          "id": "cst-events-news",
+          "name": "CST Events and News",
+          "url": "https://www.cst.gov.sa/en",
+          "domain": "cst.gov.sa",
           "trust_level": "official",
-          "source_type": "venue-calendar",
-          "score": 40
+          "source_type": "government-calendar",
+          "score": 28
+        },
+        {
+          "id": "diriyah-season",
+          "name": "Diriyah Season",
+          "url": "https://diriyahseason.sa/en",
+          "domain": "diriyahseason.sa",
+          "trust_level": "official",
+          "source_type": "organizer-calendar",
+          "score": 28
+        },
+        {
+          "id": "enjoy-saudi-events",
+          "name": "Enjoy Saudi Events",
+          "url": "https://enjoy.sa/ar/",
+          "domain": "enjoy.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 28
+        },
+        {
+          "id": "fii10-official-program",
+          "name": "FII 10th Edition Official Program",
+          "url": "https://fii-institute.org/conference/fii-10th-edition/",
+          "domain": "fii-institute.org",
+          "trust_level": "official",
+          "source_type": "conference-organizer",
+          "score": 28
         }
       ],
       "searches": [
         {
-          "query": "site:informaconnect.com \"Jeddah Fintech Week 2026\" \"Jeddah\"",
-          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22"
+          "query": "site:code.mcit.gov.sa \"Sucession Planning Program\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Acode.mcit.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
         },
         {
-          "query": "site:abhacci.org.sa \"Jeddah Fintech Week 2026\" \"Jeddah\"",
-          "url": "https://www.google.com/search?q=site%3Aabhacci.org.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22"
+          "query": "site:cst.gov.sa \"Sucession Planning Program\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Acst.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
         },
         {
-          "query": "site:bcci.org.sa \"Jeddah Fintech Week 2026\" \"Jeddah\"",
-          "url": "https://www.google.com/search?q=site%3Abcci.org.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22"
+          "query": "site:diriyahseason.sa \"Sucession Planning Program\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Adiriyahseason.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
         },
         {
-          "query": "site:futureskills.mcit.gov.sa \"Jeddah Fintech Week 2026\" \"Jeddah\"",
-          "url": "https://www.google.com/search?q=site%3Afutureskills.mcit.gov.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22"
+          "query": "site:enjoy.sa \"Sucession Planning Program\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aenjoy.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
         },
         {
-          "query": "site:hc.org.sa \"Jeddah Fintech Week 2026\" \"Jeddah\"",
-          "url": "https://www.google.com/search?q=site%3Ahc.org.sa%20%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22"
+          "query": "site:fii-institute.org \"Sucession Planning Program\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Afii-institute.org%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
         },
         {
-          "query": "\"Jeddah Fintech Week 2026\" \"Jeddah\" official",
-          "url": "https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20official"
+          "query": "\"Sucession Planning Program\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20official"
         },
         {
-          "query": "\"Jeddah Fintech Week 2026\" \"Jeddah\" organizer",
-          "url": "https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20organizer"
+          "query": "\"Sucession Planning Program\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20organizer"
         },
         {
-          "query": "\"Jeddah Fintech Week 2026\" \"Jeddah\" tickets",
-          "url": "https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20tickets"
+          "query": "\"Sucession Planning Program\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
@@ -376,374 +469,6 @@
         {
           "query": "\"25TH WPC Energy Congress\" \"Riyadh\" tickets",
           "url": "https://www.google.com/search?q=%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22%20tickets"
-        }
-      ],
-      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
-    },
-    {
-      "lead_id": "candidate-eventbrite-saudi-sucession-planning-program-20260903-d2b52d25",
-      "title": "Sucession Planning Program",
-      "city": "Riyadh",
-      "starts_at": "2026-09-03T10:00:00+03:00",
-      "source_label": "Eventbrite Saudi Arabia",
-      "discovery_quality": "strong-lead",
-      "discovery_score": 70,
-      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 97,
-      "target_sources": [
-        {
-          "id": "code-mcit-programs",
-          "name": "CODE MCIT Programs",
-          "url": "https://code.mcit.gov.sa/en/our-programs",
-          "domain": "code.mcit.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 28
-        },
-        {
-          "id": "cst-events-news",
-          "name": "CST Events and News",
-          "url": "https://www.cst.gov.sa/en",
-          "domain": "cst.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 28
-        },
-        {
-          "id": "diriyah-season",
-          "name": "Diriyah Season",
-          "url": "https://diriyahseason.sa/en",
-          "domain": "diriyahseason.sa",
-          "trust_level": "official",
-          "source_type": "organizer-calendar",
-          "score": 28
-        },
-        {
-          "id": "enjoy-saudi-events",
-          "name": "Enjoy Saudi Events",
-          "url": "https://enjoy.sa/ar/",
-          "domain": "enjoy.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 28
-        },
-        {
-          "id": "fii10-official-program",
-          "name": "FII 10th Edition Official Program",
-          "url": "https://fii-institute.org/conference/fii-10th-edition/",
-          "domain": "fii-institute.org",
-          "trust_level": "official",
-          "source_type": "conference-organizer",
-          "score": 28
-        }
-      ],
-      "searches": [
-        {
-          "query": "site:code.mcit.gov.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Acode.mcit.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:cst.gov.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Acst.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:diriyahseason.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Adiriyahseason.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:enjoy.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aenjoy.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:fii-institute.org \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Afii-institute.org%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
-        },
-        {
-          "query": "\"Sucession Planning Program\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20official"
-        },
-        {
-          "query": "\"Sucession Planning Program\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20organizer"
-        },
-        {
-          "query": "\"Sucession Planning Program\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20tickets"
-        }
-      ],
-      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
-    },
-    {
-      "lead_id": "candidate-eye-of-riyadh-events-sunaa-2026-20260818-e3819fa8",
-      "title": "SUNAA 2026",
-      "city": "Saudi Arabia",
-      "starts_at": "2026-08-18T09:00:00+03:00",
-      "source_label": "Eye of Riyadh Events",
-      "discovery_quality": "watch-lead",
-      "discovery_score": 60,
-      "discovery_notes": "directory-source, saudi-location-signal, large-event-topic, city-not-specific",
-      "resolver_priority": 92,
-      "target_sources": [
-        {
-          "id": "ricec-events",
-          "name": "Riyadh International Convention and Exhibition Center",
-          "url": "https://www.ricec.com/",
-          "domain": "ricec.com",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 58
-        },
-        {
-          "id": "dhahran-expo-calendar",
-          "name": "Dhahran Expo Calendar",
-          "url": "https://dhahranexpo.com.sa",
-          "domain": "dhahranexpo.com.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 50
-        },
-        {
-          "id": "rfecc-whats-on",
-          "name": "RFECC What's On",
-          "url": "https://rfecc.sa/whats-on/",
-          "domain": "rfecc.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 50
-        },
-        {
-          "id": "asharqia-chamber-events",
-          "name": "Asharqia Chamber Events",
-          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
-          "domain": "chamber.org.sa",
-          "trust_level": "official",
-          "source_type": "venue-calendar",
-          "score": 48
-        },
-        {
-          "id": "informa-connect-saudi-events",
-          "name": "Informa Connect Saudi Event Portfolio",
-          "url": "https://informaconnect.com/",
-          "domain": "informaconnect.com",
-          "trust_level": "official",
-          "source_type": "conference-organizer",
-          "score": 48
-        }
-      ],
-      "searches": [
-        {
-          "query": "site:ricec.com \"SUNAA 2026\" Saudi Arabia",
-          "url": "https://www.google.com/search?q=site%3Aricec.com%20%22SUNAA%202026%22%20Saudi%20Arabia"
-        },
-        {
-          "query": "site:dhahranexpo.com.sa \"SUNAA 2026\" Saudi Arabia",
-          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22SUNAA%202026%22%20Saudi%20Arabia"
-        },
-        {
-          "query": "site:rfecc.sa \"SUNAA 2026\" Saudi Arabia",
-          "url": "https://www.google.com/search?q=site%3Arfecc.sa%20%22SUNAA%202026%22%20Saudi%20Arabia"
-        },
-        {
-          "query": "site:chamber.org.sa \"SUNAA 2026\" Saudi Arabia",
-          "url": "https://www.google.com/search?q=site%3Achamber.org.sa%20%22SUNAA%202026%22%20Saudi%20Arabia"
-        },
-        {
-          "query": "site:informaconnect.com \"SUNAA 2026\" Saudi Arabia",
-          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22SUNAA%202026%22%20Saudi%20Arabia"
-        },
-        {
-          "query": "\"SUNAA 2026\" Saudi Arabia official",
-          "url": "https://www.google.com/search?q=%22SUNAA%202026%22%20Saudi%20Arabia%20official"
-        },
-        {
-          "query": "\"SUNAA 2026\" Saudi Arabia organizer",
-          "url": "https://www.google.com/search?q=%22SUNAA%202026%22%20Saudi%20Arabia%20organizer"
-        },
-        {
-          "query": "\"SUNAA 2026\" Saudi Arabia tickets",
-          "url": "https://www.google.com/search?q=%22SUNAA%202026%22%20Saudi%20Arabia%20tickets"
-        }
-      ],
-      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
-    },
-    {
-      "lead_id": "candidate-eventbrite-saudi-family-office-investment-riyadh-saudi-arabia-20260902-fc391e91",
-      "title": "Family Office Investment - Riyadh, Saudi Arabia",
-      "city": "Riyadh",
-      "starts_at": "2026-09-02T09:30:00+03:00",
-      "source_label": "Eventbrite Saudi Arabia",
-      "discovery_quality": "watch-lead",
-      "discovery_score": 60,
-      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit, non-saudi-eventbrite-domain",
-      "resolver_priority": 84,
-      "target_sources": [
-        {
-          "id": "informa-connect-saudi-events",
-          "name": "Informa Connect Saudi Event Portfolio",
-          "url": "https://informaconnect.com/",
-          "domain": "informaconnect.com",
-          "trust_level": "official",
-          "source_type": "conference-organizer",
-          "score": 74
-        },
-        {
-          "id": "invest-saudi-events",
-          "name": "Invest Saudi Events",
-          "url": "https://www.investsaudi.sa/events",
-          "domain": "investsaudi.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 66
-        },
-        {
-          "id": "jouf-chamber-events",
-          "name": "Jouf Chamber Events",
-          "url": "https://ajcci.org.sa/event/",
-          "domain": "ajcci.org.sa",
-          "trust_level": "official",
-          "source_type": "venue-calendar",
-          "score": 66
-        },
-        {
-          "id": "madinah-chamber-events",
-          "name": "Madinah Chamber Events",
-          "url": "https://www.mcci.org.sa/Event/events",
-          "domain": "mcci.org.sa",
-          "trust_level": "official",
-          "source_type": "venue-calendar",
-          "score": 66
-        },
-        {
-          "id": "monshaat-events",
-          "name": "Monsha'at All Events",
-          "url": "https://www.monshaat.gov.sa/en/events-list",
-          "domain": "monshaat.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 66
-        }
-      ],
-      "searches": [
-        {
-          "query": "site:informaconnect.com \"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:investsaudi.sa \"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ainvestsaudi.sa%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:ajcci.org.sa \"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aajcci.org.sa%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:mcci.org.sa \"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Amcci.org.sa%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:monshaat.gov.sa \"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Amonshaat.gov.sa%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22"
-        },
-        {
-          "query": "\"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22%20official"
-        },
-        {
-          "query": "\"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22%20organizer"
-        },
-        {
-          "query": "\"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22%20tickets"
-        }
-      ],
-      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
-    },
-    {
-      "lead_id": "candidate-eventbrite-saudi-smart-sustainable-building-intelligent-ecosystems-for-tomorrows-cities-20260901-e45c1490",
-      "title": "Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities",
-      "city": "Riyadh",
-      "starts_at": "2026-09-01T19:00:00+03:00",
-      "source_label": "Eventbrite Saudi Arabia",
-      "discovery_quality": "watch-lead",
-      "discovery_score": 60,
-      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit, non-saudi-eventbrite-domain",
-      "resolver_priority": 84,
-      "target_sources": [
-        {
-          "id": "future-skills-catalog",
-          "name": "Future Skills MCIT Catalogue",
-          "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
-          "domain": "futureskills.mcit.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 48
-        },
-        {
-          "id": "informa-connect-saudi-events",
-          "name": "Informa Connect Saudi Event Portfolio",
-          "url": "https://informaconnect.com/",
-          "domain": "informaconnect.com",
-          "trust_level": "official",
-          "source_type": "conference-organizer",
-          "score": 48
-        },
-        {
-          "id": "saudi-digital-academy",
-          "name": "Saudi Digital Academy",
-          "url": "https://sda.edu.sa/ar",
-          "domain": "sda.edu.sa",
-          "trust_level": "official",
-          "source_type": "organizer-calendar",
-          "score": 48
-        },
-        {
-          "id": "sdaia-academy-programs",
-          "name": "SDAIA Academy Programs",
-          "url": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx",
-          "domain": "sdaia.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 48
-        },
-        {
-          "id": "sdaia-calendar-events",
-          "name": "SDAIA Calendar and Events",
-          "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
-          "domain": "sdaia.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 48
-        }
-      ],
-      "searches": [
-        {
-          "query": "site:futureskills.mcit.gov.sa \"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Afutureskills.mcit.gov.sa%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:informaconnect.com \"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:sda.edu.sa \"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Asda.edu.sa%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:sdaia.gov.sa \"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22"
-        },
-        {
-          "query": "\"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20official"
-        },
-        {
-          "query": "\"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20organizer"
-        },
-        {
-          "query": "\"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
