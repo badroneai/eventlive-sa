@@ -2814,6 +2814,42 @@ function reconcileStaleEventRefs(events) {
   }
 }
 
+function removeDeadEventLinks() {
+  const legacyPages = ['index.html', 'weekend.html'];
+  const targetExists = (slug, ext) => fs.existsSync(path.join(distDir, 'events', `${slug}.${ext}`));
+  let removed = 0;
+  for (const page of legacyPages) {
+    const filePath = path.join(distDir, page);
+    if (!fs.existsSync(filePath)) continue;
+    let text = fs.readFileSync(filePath, 'utf8');
+    const before = text;
+    text = text.replace(/<a\b[^>]*href="[^"]*\/events\/([^"?#/]+)\.(html|ics)"[^>]*>(?:(?!<\/a>).)*<\/a>/gs, (match, slug, ext) => {
+      if (targetExists(slug, ext)) return match;
+      removed += 1;
+      return '';
+    });
+    text = text.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g, (match, body) => {
+      try {
+        const data = JSON.parse(body);
+        if (data['@type'] !== 'ItemList' || !Array.isArray(data.itemListElement)) return match;
+        const kept = data.itemListElement.filter((item) => {
+          const slug = String(item?.url || '').match(/\/events\/([^?#/]+)\.html$/)?.[1];
+          return !slug || targetExists(decodeURIComponent(slug), 'html');
+        });
+        if (kept.length === data.itemListElement.length) return match;
+        removed += data.itemListElement.length - kept.length;
+        if (data.numberOfItems === data.itemListElement.length) data.numberOfItems = kept.length;
+        data.itemListElement = kept.map((item, index) => ({ ...item, position: index + 1 }));
+        return `<script type="application/ld+json">${JSON.stringify(data)}</script>`;
+      } catch {
+        return match;
+      }
+    });
+    if (text !== before) fs.writeFileSync(filePath, text, 'utf8');
+  }
+  return removed;
+}
+
 function reconcileStaleEventImages(events) {
   const bySlug = new Map();
   for (const event of events) {
@@ -7200,6 +7236,7 @@ if (!incrementalBuild) reconcileStaleEventRefs(events);
 const imageRefsPatched = incrementalBuild ? 0 : reconcileStaleEventImages(events);
 const missingImageRefsPatched = incrementalBuild ? 0 : reconcileMissingLocalEventImages(events);
 const excludedReferencePatched = incrementalBuild ? 0 : pruneExcludedPublicArtifacts(events);
+const deadEventLinksRemoved = incrementalBuild ? 0 : removeDeadEventLinks();
 externalizeTodayAttendancePage();
 const searchIntentPages = writeSearchIntentPages(events);
 const guidesIntentPatched = patchGuidesHubWithSearchIntentPages(searchIntentPages);
@@ -7253,6 +7290,7 @@ const report = [
   `- Category links normalized: ${categoryFallback.categoryLinksPatched}`,
   `- Category fallback pages created: ${categoryFallback.fallbackPages}`,
 `- Excluded-record references patched: ${excludedReferencePatched}`,
+`- Dead event links removed: ${deadEventLinksRemoved}`,
   `- Search intent pages generated: ${searchIntentPages.length}`,
   `- SEO pages changed: ${seoDiscovery.changed_events}`,
   `- SEO pages unchanged: ${seoDiscovery.unchanged_events}`,
