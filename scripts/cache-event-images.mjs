@@ -115,6 +115,20 @@ function pruneRejectedManifestImages(manifest) {
   return removed;
 }
 
+function pruneMissingManifestFiles(manifest) {
+  const removed = [];
+  for (const [sourceUrl, record] of Object.entries(manifest.images || {})) {
+    if (!record?.file || fs.existsSync(path.join(root, record.file))) continue;
+    removed.push({
+      source_url: sourceUrl,
+      file: record.file,
+      reason: 'cached-file-missing'
+    });
+    delete manifest.images[sourceUrl];
+  }
+  return removed;
+}
+
 function sourceRefererForUrl(url) {
   let referer = 'https://eventme.live/';
   try {
@@ -334,6 +348,7 @@ async function main() {
 
   const manifest = existingManifest();
   const rejectedRemoved = pruneRejectedManifestImages(manifest);
+  const missingRemoved = pruneMissingManifestFiles(manifest);
   const targets = collectTargets(eventRows());
   const fetched = [];
   const reused = [];
@@ -439,14 +454,17 @@ async function main() {
     fetched,
     reused,
     rejected_removed: rejectedRemoved,
+    missing_removed: missingRemoved,
     skipped_recent_failures: skippedRecentFailures,
     failed,
     requires_rebuild: fetched.length > 0
       || rejectedRemoved.length > 0
+      || missingRemoved.length > 0
       || failed.some((item) => item.skipped !== true),
     rebuild_reasons: [
       ...(fetched.length ? [`fetched:${fetched.length}`] : []),
       ...(rejectedRemoved.length ? [`rejected-removed:${rejectedRemoved.length}`] : []),
+      ...(missingRemoved.length ? [`missing-removed:${missingRemoved.length}`] : []),
       ...(failed.some((item) => item.skipped !== true) ? [`new-failures:${failed.filter((item) => item.skipped !== true).length}`] : [])
     ]
   };
@@ -463,6 +481,7 @@ async function main() {
     `- fetched: ${manifest.totals.fetched}`,
     `- reused: ${manifest.totals.reused}`,
     `- rejected_removed: ${rejectedRemoved.length}`,
+    `- missing_removed: ${missingRemoved.length}`,
     `- failed: ${manifest.totals.failed}`,
     `- skipped_recent_failures: ${manifest.totals.skipped_recent_failures}`,
     `- remembered_failures: ${manifest.totals.remembered_failures}`,
@@ -481,6 +500,7 @@ async function main() {
   console.log(`- Fetched: ${manifest.totals.fetched}`);
   console.log(`- Reused: ${manifest.totals.reused}`);
   console.log(`- Rejected removed: ${rejectedRemoved.length}`);
+  console.log(`- Missing removed: ${missingRemoved.length}`);
   console.log(`- Failed: ${manifest.totals.failed}`);
   console.log(`- Skipped recent failures: ${manifest.totals.skipped_recent_failures}`);
   console.log(`- Remembered failures: ${manifest.totals.remembered_failures}`);
