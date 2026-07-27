@@ -16,6 +16,7 @@ import {
 
 const categoryFallbackAlerts = [];
 const contentTranslator = createContentTranslator();
+const contentProseStats = { events: 0, translated: 0, leaks: 0, eventsWithLeaks: 0 };
 import { normalizeSaudiCity } from './city-utils.mjs';
 import { createContentTranslator } from './content-translation-cache.mjs';
 import { classifyEventKind, eventKindLabel, getEventStatus } from './event-kind-utils.mjs';
@@ -1029,18 +1030,15 @@ function buildEvents() {
     seenSemantic.add(semanticKey);
     if (sourceIdentityKey) seenSourceIdentity.add(sourceIdentityKey);
     const translationOptions = { trackPending: event.status !== 'ended' && sourceGroup !== 'ended' };
-    const localizedTitle = contentTranslator.translate(event.title, 'ar', translationOptions);
-    if (localizedTitle.translated) {
-      event.title_original = event.title;
-      event.title = localizedTitle.text;
+    const proseSummary = contentTranslator.localizeEventProse(event, 'ar', translationOptions);
+    event.content_translated = proseSummary.translationApplied;
+    event.content_machine_translated = proseSummary.machineApplied;
+    if (event.status !== 'ended') {
+      contentProseStats.events += 1;
+      contentProseStats.translated += proseSummary.applied;
+      contentProseStats.leaks += proseSummary.leaks;
+      if (proseSummary.leaks) contentProseStats.eventsWithLeaks += 1;
     }
-    const localizedSummary = contentTranslator.translate(event.summary, 'ar', translationOptions);
-    if (localizedSummary.translated) {
-      event.summary_original = event.summary;
-      event.summary = localizedSummary.text;
-    }
-    contentTranslator.translate(event.title_original || event.title, 'en', translationOptions);
-    contentTranslator.translate(event.summary_original || event.summary, 'en', translationOptions);
     events.push(event);
   }
   const sortedEvents = events.sort((a, b) => {
@@ -2011,7 +2009,7 @@ function renderEventDetail(event) {
 ${header(relative)}
 <main>
   ${eventBreadcrumbHtml(event, relative)}
-  <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span><span data-runtime-status ${runtimeAttrs(event)}>${escapeHtml(event.status_label)}</span> · ${escapeHtml(event.event_kind_label)}</span><h1>${escapeHtml(event.title)}</h1><p class="lead">${escapeHtml(event.summary)}</p><div class="signal-strip"><div class="signal"><span>المدينة</span><b>${escapeHtml(cityLabel(event.city))}</b></div><div class="signal"><span>البداية</span><b>${escapeHtml(formatDate(event.starts_at))}</b></div><div class="signal"><span>النهاية</span><b>${escapeHtml(formatDate(event.ends_at))}</b></div><div class="signal"><span>الحالة الحية</span><b data-live-time ${runtimeAttrs(event)}>${escapeHtml(staticWhenText(event))}</b></div></div>${eventQuickActions(event)}</div></section>
+  <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span><span data-runtime-status ${runtimeAttrs(event)}>${escapeHtml(event.status_label)}</span> · ${escapeHtml(event.event_kind_label)}</span><h1>${escapeHtml(event.title)}</h1><p class="lead">${escapeHtml(event.summary)}</p>${event.content_translated ? '<p class="muted" data-mt-note>ترجمة آلية: عُرض محتوى هذه الصفحة مترجمًا تلقائيًا عن لغة المصدر وقد يتضمن أخطاء — النص الأصلي متاح عبر رابط المصدر الرسمي.</p>' : ''}<div class="signal-strip"><div class="signal"><span>المدينة</span><b>${escapeHtml(cityLabel(event.city))}</b></div><div class="signal"><span>البداية</span><b>${escapeHtml(formatDate(event.starts_at))}</b></div><div class="signal"><span>النهاية</span><b>${escapeHtml(formatDate(event.ends_at))}</b></div><div class="signal"><span>الحالة الحية</span><b data-live-time ${runtimeAttrs(event)}>${escapeHtml(staticWhenText(event))}</b></div></div>${eventQuickActions(event)}</div></section>
   <section class="section"><div class="wrap grid"><article class="card"><img class="cover" src="${escapeHtml(image)}" alt="${escapeHtml(event.image_alt || event.title)}" /></article><article class="readiness attendance-summary" aria-label="معلومات الحضور"><span class="attendance-kicker">ما تحتاجه قبل الذهاب</span><h2>معلومات الحضور</h2><p>معلومات عملية مرتبطة بالمصدر لمساعدتك قبل الوصول وأثناء الفعالية.</p>${endedNote}${attendanceFacts(event)}<div class="meta">${eventDetailActions(event)}</div></article></div></section>
   ${sessions}
   ${programOutline}
@@ -3029,6 +3027,8 @@ function writeCatalogFiles(events) {
     title_original: event.title_original,
     summary: event.summary,
     summary_original: event.summary_original,
+    content_translated: event.content_translated,
+    content_machine_translated: event.content_machine_translated,
     organizer: event.organizer,
     city: event.city,
     city_url: event.city_url,
@@ -7342,6 +7342,7 @@ const report = [
 `- Dead event links removed: ${deadEventLinksRemoved}`,
 `- Category fallback alerts: ${categoryFallbackAlerts.length}`,
 `- Content translations pending: ${contentTranslator.pending().length}`,
+`- Content prose coverage (current+upcoming): ${contentProseStats.events - contentProseStats.eventsWithLeaks}/${contentProseStats.events} events fully localized, ${contentProseStats.leaks} field leaks`,
   `- Search intent pages generated: ${searchIntentPages.length}`,
   `- SEO pages changed: ${seoDiscovery.changed_events}`,
   `- SEO pages unchanged: ${seoDiscovery.unchanged_events}`,

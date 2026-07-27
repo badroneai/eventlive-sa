@@ -373,6 +373,14 @@ function applyEnglishContentOverrides($, relativePath) {
 
   const event = eventByPath.get(relativePath);
   if (event) {
+    const translationNote = $('[data-mt-note]').first();
+    if (translationNote.length) {
+      if (event.title_original || !event.content_translated) {
+        translationNote.remove();
+      } else {
+        translationNote.text('Machine translation: this page’s content is translated automatically from the source language and may contain errors — the original text is available via the official source link.');
+      }
+    }
     const summary = englishEventSummary(event);
     $('.hero .lead').first().text(summary);
     $('.card-body p, .readiness > p').filter((_, element) => /[\u0600-\u06ff]/.test($(element).text()) && $(element).text().trim().length > 90).text(summary);
