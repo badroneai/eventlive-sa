@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-07-27T18:44:46.395Z",
+  "published_at": "2026-07-27T19:48:04.703Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -7,37 +7,16 @@
   "candidates_seen": 553,
   "totals": {
     "candidates_seen": 553,
-    "published": 2,
-    "linked_existing": 505,
+    "published": 0,
+    "linked_existing": 507,
     "blocked": 46,
     "duplicate_review_alerts": 14,
     "category_fallback_alerts": 0,
     "reconciled": 507
   },
   "category_fallback_alerts": [],
-  "duplicate_catalog_rows_removed": 4,
-  "duplicate_catalog_rows": [
-    {
-      "removed_event_id": "event-nasma-in-taif",
-      "kept_event_id": "event-نسمة-في-الطائف",
-      "reason": "action-url-semantic-match"
-    },
-    {
-      "removed_event_id": "event-stand-up-comedy-night-with-shakir-al-sharif",
-      "kept_event_id": "event-عرض-ستاند-أب-كوميدي-مع-شاكر-الشريف",
-      "reason": "action-url-semantic-match"
-    },
-    {
-      "removed_event_id": "event-feena-nehke-stand-up-comedy-by-john-achkar",
-      "kept_event_id": "event-فينا-نحكي؟-كوميديا-ستاند-أب-مع-جون-أشقر",
-      "reason": "action-url-semantic-match"
-    },
-    {
-      "removed_event_id": "event-music-festival-mdlbeast-soundstorm",
-      "kept_event_id": "event-soundstorm-26",
-      "reason": "action-url-semantic-match"
-    }
-  ],
+  "duplicate_catalog_rows_removed": 0,
+  "duplicate_catalog_rows": [],
   "canonical_event_ids_remapped": 0,
   "canonical_event_id_remaps": [],
   "duplicate_review_alerts": [
@@ -289,18 +268,7 @@
       "start_date_drift_days": 0.125
     }
   ],
-  "published": [
-    {
-      "candidate_id": "candidate-ithra-events-children-story-time-20260803-f545fa69",
-      "event_id": "event-children-story-time",
-      "title": "Children Story Time"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office-20260814-c4521792",
-      "event_id": "event-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office",
-      "title": "Hayy Cinema | A Godus Bros Retrospective: From YouTube to the Box Office"
-    }
-  ],
+  "published": [],
   "linked_existing": [
     {
       "candidate_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c",
@@ -1197,12 +1165,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260727-562bc61d",
-      "event_id": "event-tafasahu-make-room",
-      "title": "Tafasahu: Make Room",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-أوركسترا-harry-potter-20260728-4a38d19e",
       "event_id": "event-أوركسترا-harry-potter",
       "title": "أوركسترا Harry Potter",
@@ -1224,6 +1186,12 @@
       "candidate_id": "candidate-ithra-events-tinkering-stations-20260728-5a2c4c0e",
       "event_id": "event-tinkering-stations",
       "title": "Tinkering Stations",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260728-562bc61d",
+      "event_id": "event-tafasahu-make-room",
+      "title": "Tafasahu: Make Room",
       "reason": "already linked to catalog event"
     },
     {
@@ -1557,6 +1525,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-children-story-time-20260803-f545fa69",
+      "event_id": "event-children-story-time",
+      "title": "Children Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-toddler-tuesday-20260804-1afead7d",
       "event_id": "event-toddler-tuesday",
       "title": "Toddler Tuesday",
@@ -1734,6 +1708,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-بطولة-أبطال-المملكة-للشطرنج-20260813-4a38d19e",
       "event_id": "event-بطولة-أبطال-المملكة-للشطرنج",
       "title": "بطولة أبطال المملكة للشطرنج",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office-20260814-c4521792",
+      "event_id": "event-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office",
+      "title": "Hayy Cinema | A Godus Bros Retrospective: From YouTube to the Box Office",
       "reason": "already linked to catalog event"
     },
     {
@@ -1977,9 +1957,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-أساسيات-الذكاء-الاصطناعي-من-azure-20260906-65be4cf5",
+      "candidate_id": "candidate-umm-al-qura-events-شهادة-أساسيات-الذكاء-الاصطناعي-من-azure-20260906-65be4cf5",
       "event_id": "event-أساسيات-الذكاء-الاصطناعي-من-azure",
-      "title": "أساسيات الذكاء الاصطناعي من Azure",
+      "title": "شهادة أساسيات الذكاء الاصطناعي من Azure",
       "reason": "already linked to catalog event"
     },
     {
@@ -2331,9 +2311,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-دورة-محترف-الحوكمة-وإدارة-المخاطر-والامتثال-grcp-20261004-c75f1d3f",
+      "candidate_id": "candidate-umm-al-qura-events-برنامج-محترف-الحوكمة-وإدارة-المخاطر-والامتثال-grcp-20261004-c75f1d3f",
       "event_id": "event-دورة-محترف-الحوكمة-وإدارة-المخاطر-والامتثال-grcp",
-      "title": "دورة محترف الحوكمة وإدارة المخاطر والامتثال GRCP",
+      "title": "برنامج محترف الحوكمة وإدارة المخاطر والامتثال GRCP",
       "reason": "already linked to catalog event"
     },
     {

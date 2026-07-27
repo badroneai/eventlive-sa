@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T18:48:05.161Z",
+  "generated_at": "2026-07-27T19:51:21.325Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -15,32 +15,38 @@
   "fetched": [
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYXNoZ2FyLmpwZWc/ashgar.jpeg?w=1024&fm=webp&s=311321290751594df736714caeb6542c",
-      "file": "dist/assets/event-images/ashjar-farm-42418c6ecc.webp",
+      "file": "dist/assets/event-images/مزرعة-أشجار-42418c6ecc.webp",
       "bytes": 15948,
       "events": 1
     },
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHNjMDUyOTguanBn/dsc05298.jpg?w=1024&fm=webp&s=d3b43f42dc086da68575c4fde4e2a671",
-      "file": "dist/assets/event-images/cowboy-town-07bf752a39.webp",
+      "file": "dist/assets/event-images/بلدة-الكاوبوي-07bf752a39.webp",
       "bytes": 93836,
       "events": 1
     },
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvMS1zdWx0YW4xLmpwZWc/1-sultan1.jpeg?w=1024&fm=webp&s=fed361a1e0aa79ad2faba94eebc29331",
-      "file": "dist/assets/event-images/veranda-3381195a3b.webp",
+      "file": "dist/assets/event-images/فيراندا-3381195a3b.webp",
       "bytes": 102270,
       "events": 1
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZGppXzA3NjAuanBlZw/dji_0760.jpeg?w=1024&fm=webp&s=fe42e2e9fdce41ce0d0ebb725885ae7b",
-      "file": "dist/assets/event-images/alliwan-farm-2366487420.webp",
-      "bytes": 241142,
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHNjMDI4OTQuanBlZw/dsc02894.jpeg?w=1024&fm=webp&s=d3e5e202656fa42f8ae3af948310b55d",
+      "file": "dist/assets/event-images/بلاتو-063dbecd1b.webp",
+      "bytes": 135048,
       "events": 1
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZGppXzAwMTUuanBlZw/dji_0015.jpeg?w=1024&fm=webp&s=7f7f0eb5560bc3291502a7c2852f237e",
-      "file": "dist/assets/event-images/sky-village-47af371772.webp",
-      "bytes": 174030,
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHc4dzIzMTcuanBlZw/dw8w2317.jpeg?w=1024&fm=webp&s=c3b1cbecb2864ccfa06d8879c08dad6b",
+      "file": "dist/assets/event-images/مزرعة-رقيب-4f4a45a731.webp",
+      "bytes": 228190,
+      "events": 1
+    },
+    {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uvc2hhYWFyLW1iZF9wYWdlLTAwMDEuanBn/shaaar-mbd_page-0001.jpg?w=1024&fm=webp&s=f019b3379374325affea949d3e1c1bce",
+      "file": "dist/assets/event-images/مهرجان-مبدأ-02cc9c6e51.webp",
+      "bytes": 13402,
       "events": 1
     },
     {
@@ -56,111 +62,105 @@
       "events": 1
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uvc2hhYWFyLW1iZF9wYWdlLTAwMDEuanBn/shaaar-mbd_page-0001.jpg?w=1024&fm=webp&s=f019b3379374325affea949d3e1c1bce",
-      "file": "dist/assets/event-images/mabdaa-festival-02cc9c6e51.webp",
-      "bytes": 13402,
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZGppXzA3NjAuanBlZw/dji_0760.jpeg?w=1024&fm=webp&s=fe42e2e9fdce41ce0d0ebb725885ae7b",
+      "file": "dist/assets/event-images/مزرعة-الليوان-2366487420.webp",
+      "bytes": 241142,
       "events": 1
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHNjMDI4OTQuanBlZw/dsc02894.jpeg?w=1024&fm=webp&s=d3e5e202656fa42f8ae3af948310b55d",
-      "file": "dist/assets/event-images/plato-063dbecd1b.webp",
-      "bytes": 135048,
-      "events": 1
-    },
-    {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHc4dzIzMTcuanBlZw/dw8w2317.jpeg?w=1024&fm=webp&s=c3b1cbecb2864ccfa06d8879c08dad6b",
-      "file": "dist/assets/event-images/rekaib-farm-4f4a45a731.webp",
-      "bytes": 228190,
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZGppXzAwMTUuanBlZw/dji_0015.jpeg?w=1024&fm=webp&s=7f7f0eb5560bc3291502a7c2852f237e",
+      "file": "dist/assets/event-images/قرية-السماء-47af371772.webp",
+      "bytes": 174030,
       "events": 1
     },
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvcnVyYWx2aWxsYWJlLnBuZw/ruralvillabe.png?w=1024&fm=webp&s=eb854d809b8bc8d8a4cce804332fe365",
-      "file": "dist/assets/event-images/rural-village-art-street-7a9461078f.webp",
+      "file": "dist/assets/event-images/القرية-الريفية-شارع-الفن-7a9461078f.webp",
       "bytes": 26546,
       "events": 1
     },
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvMWx5YWwtbWR5eS5wbmc/1lyal-mdyy.png?w=1024&fm=webp&s=73ae41f13a6e862af65d31d7d85c3be2",
-      "file": "dist/assets/event-images/light-nights-880e517e19.webp",
+      "file": "dist/assets/event-images/ليالي-الأضواء-880e517e19.webp",
       "bytes": 110934,
       "events": 1
     },
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHc4dzIwMDQuanBlZw/dw8w2004.jpeg?w=1024&fm=webp&s=7c1551ebc6ce47f9f8c7f594c29520f1",
-      "file": "dist/assets/event-images/asib-oasis-fa1d05f67e.webp",
+      "file": "dist/assets/event-images/واحة-عسيب-fa1d05f67e.webp",
       "bytes": 129076,
       "events": 1
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uva2xhYWEtYWJvLW5rdC0zOC5qcGVn/klaaa-abo-nkt-38.jpeg?w=1024&fm=webp&s=afe9ebc719f2580f141347b2c7002009",
-      "file": "dist/assets/event-images/abo-noghta-historic-castles-historic-tabab-41c2fec6f2.webp",
-      "bytes": 142744,
-      "events": 1
-    },
-    {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYXNlZXJfMDUwMS5qcGVn/aseer_0501.jpeg?w=1024&fm=webp&s=3c81a91fb20511a031cf579e2850cd7e",
-      "file": "dist/assets/event-images/al-yanfa-village-fa06d3437c.webp",
+      "file": "dist/assets/event-images/قرية-الينفا-fa06d3437c.webp",
       "bytes": 84038,
       "events": 1
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZGppXzIwMjUwODA3MjMxMTEwXzAwMTRfZC5qcGVn/dji_20250807231110_0014_d.jpeg?w=1024&fm=webp&s=003a4abf278b899ff9bc9d2712c74c3e",
-      "file": "dist/assets/event-images/qusoor-al-asabila-a0ffdedbcb.webp",
-      "bytes": 254974,
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uva2xhYWEtYWJvLW5rdC0zOC5qcGVn/klaaa-abo-nkt-38.jpeg?w=1024&fm=webp&s=afe9ebc719f2580f141347b2c7002009",
+      "file": "dist/assets/event-images/قلاع-أبو-نقطة-التاريخية-الطباب-التاريخي-41c2fec6f2.webp",
+      "bytes": 142744,
       "events": 1
     },
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uvc3V0MDAzMjQuanBlZw/sut00324.jpeg?w=1024&fm=webp&s=ffb5a1689e550e34c3e36966f5557f04",
-      "file": "dist/assets/event-images/al-reef-park-abc22f4754.webp",
+      "file": "dist/assets/event-images/منتزه-الريف-abc22f4754.webp",
       "bytes": 174110,
       "events": 1
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvMTUuanBlZw/15.jpeg?w=1024&fm=webp&s=6434f206e446a241e9f2866f2423678b",
-      "file": "dist/assets/event-images/aryash-6c397fa7e8.webp",
-      "bytes": 82266,
-      "events": 1
-    },
-    {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHNjMDgzMzAtZW5oYW5jZWQtbnItKDEpLmpwZWc/dsc08330-enhanced-nr-%281%29.jpeg?w=1024&fm=webp&s=d7760ab10d29e016ce17fa7f5d102a67",
-      "file": "dist/assets/event-images/qusoor-abu-sarah-d3b4fdca6a.webp",
+      "file": "dist/assets/event-images/كوسور-أبو-سارة-d3b4fdca6a.webp",
       "bytes": 176462,
       "events": 1
     },
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvMW1kbWFrLmpwZw/1mdmak.jpg?w=1024&fm=webp&s=66441f59583fe6eb3608d2053f580cd3",
-      "file": "dist/assets/event-images/mdmak-cd7354717c.webp",
+      "file": "dist/assets/event-images/مدمك-cd7354717c.webp",
       "bytes": 188024,
       "events": 1
     },
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHNjMDg3MDAuanBlZw/dsc08700.jpeg?w=1024&fm=webp&s=2002b00f8cf76eeac7ae394f41741b56",
-      "file": "dist/assets/event-images/marnis-9b1049b01b.webp",
+      "file": "dist/assets/event-images/مارنس-9b1049b01b.webp",
       "bytes": 49872,
       "events": 1
     },
     {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvMTUuanBlZw/15.jpeg?w=1024&fm=webp&s=6434f206e446a241e9f2866f2423678b",
+      "file": "dist/assets/event-images/أرياس-6c397fa7e8.webp",
+      "bytes": 82266,
+      "events": 1
+    },
+    {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZGtoLnBuZw/dkh.png?w=1024&fm=webp&s=46022c19880cd717dffbd3820e44ac8b",
-      "file": "dist/assets/event-images/dakah-a1f17b9d24.webp",
+      "file": "dist/assets/event-images/دكة-a1f17b9d24.webp",
       "bytes": 6824,
       "events": 1
     },
     {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZGppXzIwMjUwODA3MjMxMTEwXzAwMTRfZC5qcGVn/dji_20250807231110_0014_d.jpeg?w=1024&fm=webp&s=003a4abf278b899ff9bc9d2712c74c3e",
+      "file": "dist/assets/event-images/قصور-الأصايل-a0ffdedbcb.webp",
+      "bytes": 254974,
+      "events": 1
+    },
+    {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZGppXzA4MTItZW5oYW5jZWQtbnItKDEpLmpwZWc/dji_0812-enhanced-nr-%281%29.jpeg?w=1024&fm=webp&s=b2e697eaa06bcd7fb5b0a48a99255bfa",
-      "file": "dist/assets/event-images/nafas-d4fdeb01d9.webp",
+      "file": "dist/assets/event-images/نفَس-d4fdeb01d9.webp",
       "bytes": 129654,
       "events": 1
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uvc2hhYWFyLXN5ci0ucG5n/shaaar-syr-.png?w=1024&fm=webp&s=242c2ab4507655c8b8aa0b7b8d2a4e2d",
-      "file": "dist/assets/event-images/sair2-d5e6cbfa58.webp",
-      "bytes": 9108,
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvbW50Z2FhLWFsb2FkeS05LmpwZWc/mntgaa-aloady-9.jpeg?w=1024&fm=webp&s=3eb9e2fa555285d003f6023ca81dac83",
+      "file": "dist/assets/event-images/منتجع-الوادي-9aab1000ed.webp",
+      "bytes": 156858,
       "events": 1
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvbW50Z2FhLWFsb2FkeS05LmpwZWc/mntgaa-aloady-9.jpeg?w=1024&fm=webp&s=3eb9e2fa555285d003f6023ca81dac83",
-      "file": "dist/assets/event-images/al-wadi-resort-9aab1000ed.webp",
-      "bytes": 156858,
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uvc2hhYWFyLXN5ci0ucG5n/shaaar-syr-.png?w=1024&fm=webp&s=242c2ab4507655c8b8aa0b7b8d2a4e2d",
+      "file": "dist/assets/event-images/السلم٢-d5e6cbfa58.webp",
+      "bytes": 9108,
       "events": 1
     },
     {
@@ -171,79 +171,79 @@
     },
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uva3NodGgucG5n/kshth.png?w=1024&fm=webp&s=a903e9e7554e7cf219359b245d62d50e",
-      "file": "dist/assets/event-images/kishtah-ab3a550ce8.webp",
+      "file": "dist/assets/event-images/كيشتا-ab3a550ce8.webp",
       "bytes": 8264,
       "events": 1
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvaW1nXzA3MjEucG5n/img_0721.png?w=1024&fm=webp&s=b83e480fbe715d02e0d440959e92c30c",
-      "file": "dist/assets/event-images/sha-af-event-048a62c90f.webp",
-      "bytes": 112994,
-      "events": 1
-    },
-    {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYWFhbmFiMi5wbmc/aaanab2.png?w=1024&fm=webp&s=b6db6587e3887e3b27e4b467711abff4",
-      "file": "dist/assets/event-images/aanab-farm-8fb35d796f.webp",
+      "file": "dist/assets/event-images/مزرعة-أعناب-8fb35d796f.webp",
       "bytes": 257908,
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/DSC00760-1-1100x500.jpg",
+      "file": "dist/assets/event-images/مكتبة-جميل-برامج-يوليو-المجتمعية-f1cbae3928.jpg",
+      "bytes": 95448,
+      "events": 1
+    },
+    {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvaW1nXzA3MjEucG5n/img_0721.png?w=1024&fm=webp&s=b83e480fbe715d02e0d440959e92c30c",
+      "file": "dist/assets/event-images/تظاهر-048a62c90f.webp",
+      "bytes": 112994,
+      "events": 1
+    },
+    {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uvc2F5Zi5qcGc/sayf.jpg?w=1024&fm=webp&s=5b9815aa9fcad62884cb22e83dcdff3b",
-      "file": "dist/assets/event-images/the-summer-gathering-11f2d4b28b.webp",
+      "file": "dist/assets/event-images/تجمع-الصيف-11f2d4b28b.webp",
       "bytes": 173832,
       "events": 1
     },
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHNjMDIyNjctKDEpLmpwZWc/dsc02267-%281%29.jpeg?w=1024&fm=webp&s=3f48fc1a92781dae61ff7a7e116510b1",
-      "file": "dist/assets/event-images/blackberry-farm-1aab341486.webp",
+      "file": "dist/assets/event-images/مزرعة-بلاكبيري-1aab341486.webp",
       "bytes": 349880,
       "events": 1
     },
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHc4dzEyNTAuanBlZw/dw8w1250.jpeg?w=1024&fm=webp&s=e845b36cd3e878a1a1d7cec306a2e3f8",
-      "file": "dist/assets/event-images/musical-concerts-53b2281d16.webp",
+      "file": "dist/assets/event-images/حفلات-موسيقية-53b2281d16.webp",
       "bytes": 211332,
       "events": 1
     },
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYXNib2FhLWFsYWF0b3ItLnBuZw/asboaa-alaator-.png?w=1024&fm=webp&s=e65fa09cd775812944fcae1cb1daf199",
-      "file": "dist/assets/event-images/perfumes-week-9393bb5468.webp",
+      "file": "dist/assets/event-images/أسبوع-العطور-9393bb5468.webp",
       "bytes": 97018,
       "events": 1
     },
     {
       "source_url": "https://dmmo-website-asda.oss-me-central-1.aliyuncs.com/assets/global/homeplaybtn.png",
-      "file": "dist/assets/event-images/adventure-camp-husaak-b107eccd49.png",
+      "file": "dist/assets/event-images/مخيم-مغامرات-حُساك-b107eccd49.png",
       "bytes": 1120,
       "events": 1
     },
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uvc3lmLW9ydGgtbWR5bi1hYmhhLnBuZw/syf-orth-mdyn-abha.png?w=1024&fm=webp&s=3bd491e2f2b3f07551678917d8dfa81d",
-      "file": "dist/assets/event-images/summer-legacy-0c54dcd636.webp",
+      "file": "dist/assets/event-images/إرث-الصيف-0c54dcd636.webp",
       "bytes": 23846,
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/DSC00760-1-1100x500.jpg",
-      "file": "dist/assets/event-images/jameel-library-july-community-programmes-f1cbae3928.jpg",
-      "bytes": 95448,
-      "events": 1
-    },
-    {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYWdobC1ibGRfcGFnZS0wMDAxLmpwZw/aghl-bld_page-0001.jpg?w=1024&fm=webp&s=efb01a4f9be9734e9f14ca3e4f27adc0",
-      "file": "dist/assets/event-images/the-dearest-country-a1dffa4a36.webp",
+      "file": "dist/assets/event-images/الدولة-الغالية-a1dffa4a36.webp",
       "bytes": 17072,
       "events": 1
     },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC02355-scaled-aspect-ratio-2560-1515-1100x500.jpg",
-      "file": "dist/assets/event-images/jameel-library-august-community-programmes-1d87dc70f6.jpg",
+      "file": "dist/assets/event-images/مكتبة-جاميل-august-آب-أغسطس-1d87dc70f6.jpg",
       "bytes": 83379,
       "events": 1
     },
     {
       "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-07/%D8%A4.jpg?itok=j2kecKQU",
-      "file": "dist/assets/event-images/cloud-storage-and-databases-fundamentals-أساسيات-التخزين-السحابي-وقواع-702db8c6a6.jpg",
+      "file": "dist/assets/event-images/أساسيات-التخزين-السحابي-وقواعد-البيانات-702db8c6a6.jpg",
       "bytes": 6291,
       "events": 4
     },
@@ -254,45 +254,57 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a1d6397472149e5f86f6e4d63682ca94.jpg",
-      "file": "dist/assets/event-images/art-in-everyday-life-d36fc1f92e.jpg",
-      "bytes": 226532,
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/27476bc77687c51a534d83a6f4c2fed2.jpg",
+      "file": "dist/assets/event-images/بتلات-ورفاق-بالعربية-5878a28e89.jpg",
+      "bytes": 205351,
       "events": 1
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d9066fa3a95acb81e626150dc55fbeb7.jpg",
-      "file": "dist/assets/event-images/children-story-time-450371399c.jpg",
+      "file": "dist/assets/event-images/وقت-قصص-الأطفال-450371399c.jpg",
       "bytes": 181494,
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a1d6397472149e5f86f6e4d63682ca94.jpg",
+      "file": "dist/assets/event-images/الفن-في-الحياة-اليومية-d36fc1f92e.jpg",
+      "bytes": 226532,
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/51465f52b41f834e2e54c5a1bec652c8.jpg",
-      "file": "dist/assets/event-images/printing-house-f048e29300.jpg",
+      "file": "dist/assets/event-images/مجلس-الطباعة-f048e29300.jpg",
       "bytes": 237414,
       "events": 1
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/0ea6501d38dd241243aaa62d5b93a922.jpg",
-      "file": "dist/assets/event-images/emboss-printing-experience-d3c8504289.jpg",
+      "file": "dist/assets/event-images/تجربة-الطباعة-البارزة-d3c8504289.jpg",
       "bytes": 292606,
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/27476bc77687c51a534d83a6f4c2fed2.jpg",
-      "file": "dist/assets/event-images/petals-and-pals-arabic-5878a28e89.jpg",
-      "bytes": 205351,
-      "events": 1
-    },
-    {
       "source_url": "https://www.big5constructsaudi.com/wp-content/uploads/sites/7/2026/07/Teef-Najd-2026-TOp-ad-banner.png",
-      "file": "dist/assets/event-images/big-5-construct-saudi-568bfc6e5e.png",
+      "file": "dist/assets/event-images/بيج-5-كونستركت-السعودية-568bfc6e5e.png",
       "bytes": 76529,
       "events": 1
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/259c5639d719477c4dcba9d4e68d239b.jpg",
-      "file": "dist/assets/event-images/ithra-short-play-contest-2026-0816f0aa41.jpg",
+      "file": "dist/assets/event-images/مسابقة-إثراء-للمسرحية-القصيرة-2026-0816f0aa41.jpg",
       "bytes": 129293,
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/23c2f82febdcbf4e7caf404feb7f3f5e.jpg",
+      "file": "dist/assets/event-images/بطولة-إثراء-للشطرنج-cc14291494.jpg",
+      "bytes": 77940,
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/05/DSC08187-scaled-aspect-ratio-2296-1446-1100x500.jpg",
+      "file": "dist/assets/event-images/مكتبة-جميل-دعوة-مفتوحة-مهمة-المترجم-مع-ساراسيجا-سوبرامانيان-318e5c589c.jpg",
+      "bytes": 70060,
       "events": 1
     },
     {
@@ -302,21 +314,9 @@
       "events": 9
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/05/DSC08187-scaled-aspect-ratio-2296-1446-1100x500.jpg",
-      "file": "dist/assets/event-images/jameel-library-open-call-the-task-of-the-translator-with-sarasija-subr-318e5c589c.jpg",
-      "bytes": 70060,
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/23c2f82febdcbf4e7caf404feb7f3f5e.jpg",
-      "file": "dist/assets/event-images/ithra-chess-tournament-cc14291494.jpg",
-      "bytes": 77940,
-      "events": 1
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/lvpclckb.li1.webp",
-      "file": "dist/assets/event-images/معسكر-الذكاء-الاصطناعي-ba607a38a6.webp",
-      "bytes": 4946,
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2025/08/Banner_GodusBros-2-1100x500.png",
+      "file": "dist/assets/event-images/سينما-حي-استعادة-أفلام-godus-bros-من-يوتيوب-إلى-شباك-التذاكر-fa978492cc.png",
+      "bytes": 752592,
       "events": 1
     },
     {
@@ -326,27 +326,15 @@
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2025/08/Banner_GodusBros-2-1100x500.png",
-      "file": "dist/assets/event-images/hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office-fa978492cc.png",
-      "bytes": 752592,
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/34zdbqh5.wk4.webp",
+      "file": "dist/assets/event-images/دبلوم-الأمن-السيبراني-المتقدم-90c2ad28d4.webp",
+      "bytes": 7696,
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/09/Screen-Shot-2023-09-14-at-7.05.36-PM-1100x500.png",
-      "file": "dist/assets/event-images/hayy-cinema-vhs-tape-replaced-2023-99ce95c8ab.png",
-      "bytes": 646767,
-      "events": 1
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/3tk4drdp.icm.webp",
-      "file": "dist/assets/event-images/معسكر-الذكاء-الاصطناعي-في-تطوير-تطبيقات-الويب-باستخدام-python-و-django-5416cb25e9.webp",
-      "bytes": 7704,
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/09/Othman-film.00_13_02_10.Still040-1100x500.png",
-      "file": "dist/assets/event-images/hayy-cinema-othman-2022-741cb15bb8.png",
-      "bytes": 727138,
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/lvpclckb.li1.webp",
+      "file": "dist/assets/event-images/معسكر-الذكاء-الاصطناعي-ba607a38a6.webp",
+      "bytes": 4946,
       "events": 1
     },
     {
@@ -356,21 +344,9 @@
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/09/Harka-Image.jpeg",
-      "file": "dist/assets/event-images/hayy-cinema-harka-2022-c9c085fb9f.jpg",
-      "bytes": 55728,
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/10/SOUAD-1-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-souad-2020-305845a640.jpg",
-      "bytes": 69853,
-      "events": 1
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/34zdbqh5.wk4.webp",
-      "file": "dist/assets/event-images/دبلوم-الأمن-السيبراني-المتقدم-90c2ad28d4.webp",
-      "bytes": 7696,
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/3tk4drdp.icm.webp",
+      "file": "dist/assets/event-images/معسكر-الذكاء-الاصطناعي-في-تطوير-تطبيقات-الويب-باستخدام-python-و-django-5416cb25e9.webp",
+      "bytes": 7704,
       "events": 1
     },
     {
@@ -380,27 +356,39 @@
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/10/Nour_shams_still_07_72dpi-scaled-aspect-ratio-2455-1066-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-nour-shams-2021-424eb0731f.jpg",
-      "bytes": 38252,
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/11/Tongue-Still-1100x500.png",
-      "file": "dist/assets/event-images/hayy-cinema-the-golden-palm-film-programme-the-best-of-the-saudi-film--c7b406c12a.png",
-      "bytes": 1069826,
-      "events": 1
-    },
-    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/cseb0buz.xu4.webp",
       "file": "dist/assets/event-images/معسكر-الجرائم-السيبرانية-والتحقيق-الجنائي-الرقمي-المتقدم-f27eabcac0.webp",
       "bytes": 7530,
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/10/MY-VIBE-Still-4-aspect-ratio-0-0-1100x500.png",
-      "file": "dist/assets/event-images/hayy-cinema-my-vibe-2023-19bc9f9a74.png",
-      "bytes": 983331,
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/09/Screen-Shot-2023-09-14-at-7.05.36-PM-1100x500.png",
+      "file": "dist/assets/event-images/سينما-حي-شريط-الفيديو-المستبدل-2023-99ce95c8ab.png",
+      "bytes": 646767,
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/09/Othman-film.00_13_02_10.Still040-1100x500.png",
+      "file": "dist/assets/event-images/هاي-سينما-عثمان-2022-741cb15bb8.png",
+      "bytes": 727138,
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/09/Harka-Image.jpeg",
+      "file": "dist/assets/event-images/سينما-حي-حرقة-2022-c9c085fb9f.jpg",
+      "bytes": 55728,
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/10/SOUAD-1-1100x500.jpg",
+      "file": "dist/assets/event-images/سينما-حي-سعاد-2020-305845a640.jpg",
+      "bytes": 69853,
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/10/Nour_shams_still_07_72dpi-scaled-aspect-ratio-2455-1066-1100x500.jpg",
+      "file": "dist/assets/event-images/سينما-حي-نور-الشمس-2021-424eb0731f.jpg",
+      "bytes": 38252,
       "events": 1
     },
     {
@@ -411,38 +399,44 @@
     },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/11/Nour_shams_still_05_72dpi-scaled-aspect-ratio-2560-1076-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-x-rsh-street-art-festival-meet-the-crew-of-nour-shams-my-v-3fd3d791d4.jpg",
+      "file": "dist/assets/event-images/حي-سينما-مهرجان-rsh-لفن-الشارع-لقاء-طاقم-عمل-نور-شمس-و-ماي-فايب-عروض-ج-3fd3d791d4.jpg",
       "bytes": 61890,
       "events": 1
     },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2024/11/HOD_Still_2_HiRes-Medium-aspect-ratio-0-0-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-aflam-sudan-x-hayy-cinema-62aea9d2c5.jpg",
+      "file": "dist/assets/event-images/حي-سينما-أفلام-السودان-حي-سينما-62aea9d2c5.jpg",
       "bytes": 83359,
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2022/11/LEH-PHT-05-849x600-1-849x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-youssef-chahine-retrospective-alexandria-why-1979-c7516fe9ec.jpg",
-      "bytes": 61379,
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/11/Tongue-Still-1100x500.png",
+      "file": "dist/assets/event-images/حي-سينما-برنامج-السعفة-الذهبية-أفضل-ما-قدّمه-مهرجان-الفيلم-السعودي-c7b406c12a.png",
+      "bytes": 1069826,
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/10/MY-VIBE-Still-4-aspect-ratio-0-0-1100x500.png",
+      "file": "dist/assets/event-images/سينما-حي-ماي-فايب-2023-19bc9f9a74.png",
+      "bytes": 983331,
       "events": 1
     },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2022/11/DAL-PHT-00012-588x600-1-aspect-ratio-588-309.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-youssef-chahine-retrospective-return-of-the-prodigal-son-1-673404b123.jpg",
+      "file": "dist/assets/event-images/سينما-حي-استعادة-أفلام-يوسف-شاهين-عودة-الابن-الضال-1976-673404b123.jpg",
       "bytes": 38981,
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2022/11/BNP-PHK-06-853x600-1-aspect-ratio-853-373.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-youssef-chahine-retrospective-adieu-bonaparte-1985-c7c04425ed.jpg",
-      "bytes": 60464,
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/11/IntisarAlShabab_Still-aspect-ratio-1418-780-1100x500.jpg",
+      "file": "dist/assets/event-images/سينما-حي-انتصار-الشباب-1941-0c2caab9a5.jpg",
+      "bytes": 82486,
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/11/IntisarAlShabab_Still-aspect-ratio-1418-780-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-victory-of-youth-intisar-al-shabab-1941-0c2caab9a5.jpg",
-      "bytes": 82486,
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2022/11/BNP-PHK-06-853x600-1-aspect-ratio-853-373.jpg",
+      "file": "dist/assets/event-images/سينما-حي-استعادة-يوسف-شاهين-وداعاً-بونابرت-1985-c7c04425ed.jpg",
+      "bytes": 60464,
       "events": 1
     },
     {
@@ -453,61 +447,73 @@
     },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/11/Howls-Moving-Castle-Still.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-howl-s-moving-castle-2004-388b4e344f.jpg",
+      "file": "dist/assets/event-images/سينما-حي-قلعة-هاول-المتحركة-2004-388b4e344f.jpg",
       "bytes": 65424,
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2022/11/LEH-PHT-05-849x600-1-849x500.jpg",
+      "file": "dist/assets/event-images/حي-سينما-استعادة-أفلام-يوسف-شاهين-إسكندرية-ليه؟-1979-c7516fe9ec.jpg",
+      "bytes": 61379,
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/11/c0292.0110-1100x500.jpg",
+      "file": "dist/assets/event-images/سينما-حي-رحلة-تشيهيرو-المسحورة-2001-d40a9d4c8e.jpg",
+      "bytes": 92940,
+      "events": 1
+    },
+    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/12/The-bot-and-the-heron-still-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-the-boy-and-the-heron-2023-8230387ea7.jpg",
+      "file": "dist/assets/event-images/هاي-سينما-الصبي-والهيرون-2023-8230387ea7.jpg",
       "bytes": 138684,
       "events": 1
     },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/12/IOICH-Still-2-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-if-only-i-could-hibernate-2023-a9fbbb5a60.jpg",
+      "file": "dist/assets/event-images/سينما-حي-لو-استطعت-السُبات-2023-a9fbbb5a60.jpg",
       "bytes": 43135,
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/12/Screenshot-2023-12-17-190218-aspect-ratio-1920-720-1100x500.png",
-      "file": "dist/assets/event-images/hayy-cinema-aflamna-e3985fb752.png",
-      "bytes": 367404,
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/11/c0292.0110-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-spirited-away-2001-d40a9d4c8e.jpg",
-      "bytes": 92940,
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2025/01/IMG_0502-aspect-ratio-0-0-1100x500.png",
-      "file": "dist/assets/event-images/hayy-cinema-hayy-classics-an-experience-from-jeddah-s-past-26bad44936.png",
-      "bytes": 732891,
-      "events": 1
-    },
-    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/12/04-BATIMENT-5-de-Ladj-Ly-%C2%A9-2023-Srab-Films-Lyly-Films-France-2-Cinema-Panache-Productions-La-Compagnie-Cinematographique-aspect-ratio-1920-797-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-batiment-5-2023-1aec859a17.jpg",
+      "file": "dist/assets/event-images/سينما-حي-باتيمنت-5-2023-1aec859a17.jpg",
       "bytes": 85122,
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/12/Screenshot-2023-12-17-190218-aspect-ratio-1920-720-1100x500.png",
+      "file": "dist/assets/event-images/سينما-حي-أفلامنا-e3985fb752.png",
+      "bytes": 367404,
+      "events": 1
+    },
+    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/12/ATEOL-Still-3-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-at-the-edge-of-land-screening-and-q-a-with-artist-hira-nab-fbb62642fc.jpg",
+      "file": "dist/assets/event-images/حي-سينما-عرض-فيلم-على-حافة-الأرض-وجلسة-نقاش-مع-الفنانة-هيرا-نبي-fbb62642fc.jpg",
       "bytes": 59058,
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2025/01/IMG_0502-aspect-ratio-0-0-1100x500.png",
+      "file": "dist/assets/event-images/هيي-سينما-هيي-كلاسيكية-تجربة-من-ماضي-جدة-26bad44936.png",
+      "bytes": 732891,
+      "events": 1
+    },
+    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2024/01/FISHY-Still-4-1100x500.png",
-      "file": "dist/assets/event-images/hayy-cinema-fishy-2023-f211d8f8cd.png",
+      "file": "dist/assets/event-images/هاي-سينما-فيشي-2023-f211d8f8cd.png",
       "bytes": 568402,
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/01/SALEEG-Still-2-aspect-ratio-1920-1034-1100x500.png",
+      "file": "dist/assets/event-images/سينما-حي-صليق-2023-43be881dcd.png",
+      "bytes": 899816,
+      "events": 1
+    },
+    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2024/01/COFFEE-Still-6-aspect-ratio-0-0-1100x500.png",
-      "file": "dist/assets/event-images/hayy-cinema-coffee-2023-bc20b324e8.png",
+      "file": "dist/assets/event-images/سينما-حي-قهوة-2023-bc20b324e8.png",
       "bytes": 533767,
       "events": 1
     },
@@ -518,87 +524,87 @@
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/02/CITY-OF-GOD-70-x-100_Feb22-scaled-aspect-ratio-0-0-scaled.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-city-of-god-2002-baebf95da5.jpg",
-      "bytes": 935261,
-      "events": 1
-    },
-    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2024/01/Shot_108-1100x500.png",
-      "file": "dist/assets/event-images/hayy-cinema-saleem-2024-f2ed4d2e6f.png",
+      "file": "dist/assets/event-images/سينما-حي-سليم-2024-f2ed4d2e6f.png",
       "bytes": 955266,
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/01/SALEEG-Still-2-aspect-ratio-1920-1034-1100x500.png",
-      "file": "dist/assets/event-images/hayy-cinema-saleeg-2023-43be881dcd.png",
-      "bytes": 899816,
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/02/CITY-OF-GOD-70-x-100_Feb22-scaled-aspect-ratio-0-0-scaled.jpg",
+      "file": "dist/assets/event-images/سينما-حي-مدينة-الرب-2002-baebf95da5.jpg",
+      "bytes": 935261,
       "events": 1
     },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/Landscape-6-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-the-journey-2021-8090117a0e.jpg",
+      "file": "dist/assets/event-images/سينما-حي-الرحلة-2021-8090117a0e.jpg",
       "bytes": 51396,
       "events": 1
     },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/Landscape-3-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-our-little-sister-2015-ed7c327879.jpg",
+      "file": "dist/assets/event-images/هاي-سينما-أختنا-الصغيرة-2015-ed7c327879.jpg",
       "bytes": 76723,
       "events": 1
     },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/Landscape-4-1080x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-the-third-murder-2017-dbe94ca148.jpg",
+      "file": "dist/assets/event-images/سينما-حي-الجريمة-الثالثة-2017-dbe94ca148.jpg",
       "bytes": 107364,
       "events": 1
     },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/Landscape-2-aspect-ratio-1264-690-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-after-the-storm-2016-48fb151638.jpg",
+      "file": "dist/assets/event-images/سينما-حي-بعد-العاصفة-2016-48fb151638.jpg",
       "bytes": 91176,
       "events": 1
     },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/landscape-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-like-father-like-son-2013-bb103d37c9.jpg",
+      "file": "dist/assets/event-images/حي-سينما-مثل-الأب-مثل-الابن-2013-bb103d37c9.jpg",
       "bytes": 95697,
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/03/MV5BNDdmNzYxNDEtNjU0Zi00MTk1LThjNTUtZGE5MjVhNGM0MDZmXkEyXkFqcGdeQXVyMTMxMTIwMTE0._V1_-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-ramadan-film-nights-6d6a5f7f1c.jpg",
-      "bytes": 97266,
-      "events": 1
-    },
-    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/03/Sirat-1-scaled-1-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-march-april-2026-5c61dbdcc1.jpg",
+      "file": "dist/assets/event-images/هاي-سينما-آذار-مارس-٢٠٢٦-5c61dbdcc1.jpg",
       "bytes": 65027,
       "events": 1
     },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/03/5-Sirat_@QuimVives-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-april-2026-20076331ab.jpg",
+      "file": "dist/assets/event-images/هاي-سينما-أبريل-2026-20076331ab.jpg",
       "bytes": 68818,
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/03/MV5BNDdmNzYxNDEtNjU0Zi00MTk1LThjNTUtZGE5MjVhNGM0MDZmXkEyXkFqcGdeQXVyMTMxMTIwMTE0._V1_-1100x500.jpg",
+      "file": "dist/assets/event-images/سينما-حي-ليالي-أفلام-رمضان-6d6a5f7f1c.jpg",
+      "bytes": 97266,
+      "events": 1
+    },
+    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2024/04/laila-poster.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-laila-and-matchstick-2022-06c12b0741.jpg",
+      "file": "dist/assets/event-images/سينما-حي-ليلى-وعود-الثقاب-2022-06c12b0741.jpg",
       "bytes": 221610,
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/04/YOS09511-1100x500.jpg",
+      "file": "dist/assets/event-images/سينما-حي-دعوة-مفتوحة-برنامج-in-short-السينمائي-670c039a88.jpg",
+      "bytes": 74371,
+      "events": 1
+    },
+    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2024/04/DDD-Final-Poster-2-copy-scaled.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-dirty-difficult-dangerous-2022-edb030eeb8.jpg",
+      "file": "dist/assets/event-images/حي-سينما-قذر،-صعب،-خطير-2022-edb030eeb8.jpg",
       "bytes": 540878,
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/04/YOS09511-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-open-call-in-short-film-programme-670c039a88.jpg",
-      "bytes": 74371,
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/03/ravensong-still-aspect-ratio-669-379.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-raven-song-2022-9c7c7ff8ed.jpg",
+      "bytes": 29716,
       "events": 1
     },
     {
@@ -609,91 +615,85 @@
     },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/03/DOUNIA_6-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-dounia-and-the-princess-of-aleppo-2022-1b7f76b1cd.jpg",
+      "file": "dist/assets/event-images/سينما-حي-دنيا-وأميرة-حلب-2022-1b7f76b1cd.jpg",
       "bytes": 67656,
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/04/Still-photo-1100x500.jpeg",
-      "file": "dist/assets/event-images/hayy-cinema-may-2026-goodfellas-sink-spring-came-on-laughing-and-more-5c04d3a454.jpg",
-      "bytes": 67951,
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/05/IMG_0110-2-scaled-aspect-ratio-1920-1993-1-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-a-first-step-in-f25f62838f.jpg",
-      "bytes": 70345,
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/03/ravensong-still-aspect-ratio-669-379.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-raven-song-2022-9c7c7ff8ed.jpg",
-      "bytes": 29716,
-      "events": 1
-    },
-    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/05/Memories-from-the-North-image.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-memories-from-the-north-00d69b8126.jpg",
+      "file": "dist/assets/event-images/هاي-سينما-ذكريات-من-الشمال-00d69b8126.jpg",
       "bytes": 11225,
       "events": 1
     },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/05/Becoming-Iphigenia-image.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-becoming-iphigenia-b3eda6aa48.jpg",
+      "file": "dist/assets/event-images/سينما-حي-أن-تصبحي-إفيجينيا-b3eda6aa48.jpg",
       "bytes": 33189,
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/04/Still-photo-1100x500.jpeg",
+      "file": "dist/assets/event-images/سينما-حي-مايو-2026-goodfellas،-وsink،-وspring-came-on-laughing،-والمزي-5c04d3a454.jpg",
+      "bytes": 67951,
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/05/IMG_0110-2-scaled-aspect-ratio-1920-1993-1-1100x500.jpg",
+      "file": "dist/assets/event-images/سينما-حي-خطوة-أولى-في-f25f62838f.jpg",
+      "bytes": 70345,
+      "events": 1
+    },
+    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/05/YYB-Poster-V1-10112022-scaled.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-yallah-yallah-beenah-b87030305a.jpg",
+      "file": "dist/assets/event-images/سينما-حي-يلا-يلا-بينا-b87030305a.jpg",
       "bytes": 310405,
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/05/The-kings-poem-image-1000x500.png",
-      "file": "dist/assets/event-images/hayy-cinema-the-king-s-poem-2023-6bb68d042d.png",
-      "bytes": 769305,
-      "events": 1
-    },
-    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/06/Hayy-Cinema-at-Hayy-Jameel-Jeddah.-Courtesy-of-Art-Jameel.-Photography-by-Mohamed-Alaskandrani-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-panel-discussion-the-way-we-see-us-8dfe654612.jpg",
+      "file": "dist/assets/event-images/سينما-حي-جلسة-نقاشية-الطريقة-التي-نرى-بها-أنفسنا-8dfe654612.jpg",
       "bytes": 43333,
       "events": 1
     },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/06/My-lost-country-image-1-aspect-ratio-0-0-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-my-lost-country-2022-cf34f4d46b.jpg",
+      "file": "dist/assets/event-images/سينما-حي-بلادي-الضائعة-2022-cf34f4d46b.jpg",
       "bytes": 45963,
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/05/40-1269-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-june-2026-a-matter-of-life-and-death-the-stories-you-will--7b09408c3e.jpg",
-      "bytes": 88529,
-      "events": 1
-    },
-    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/03/HONEYLAND_filmstill02-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-honeyland-2019-b17bc97928.jpg",
+      "file": "dist/assets/event-images/حي-سينما-أرض-العسل-2019-b17bc97928.jpg",
       "bytes": 50846,
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/05/The-kings-poem-image-1000x500.png",
+      "file": "dist/assets/event-images/هاي-سينما-قصيدة-الملك-2023-6bb68d042d.png",
+      "bytes": 769305,
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/05/40-1269-1100x500.jpg",
+      "file": "dist/assets/event-images/سينما-حي-يونيو-2026-a-matter-of-life-and-death،-وthe-stories،-وyou-wil-7b09408c3e.jpg",
+      "bytes": 88529,
+      "events": 1
+    },
+    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/07/When-red-blooms-aspect-ratio-669-367.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-aflamna-6a3d75ad62.jpg",
+      "file": "dist/assets/event-images/سينما-حي-أفلامنا-6a3d75ad62.jpg",
       "bytes": 15974,
       "events": 1
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/f2679c3d2bb7fcaa5db4cce650b92db8.jpg",
-      "file": "dist/assets/event-images/ithra-chess-tournament-ages-13-18-9eff72d3fb.jpg",
+      "file": "dist/assets/event-images/بطولة-إثراء-للشطرنج-13-18-عامًا-9eff72d3fb.jpg",
       "bytes": 177905,
       "events": 1
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5e64a990ff5620379ed549c9c43a0dec.jpg",
-      "file": "dist/assets/event-images/petals-and-pals-english-b5b9f5d67a.jpg",
+      "file": "dist/assets/event-images/الفلزات-والبقول-الإنكليزية-b5b9f5d67a.jpg",
       "bytes": 205351,
       "events": 1
     }
@@ -1307,6 +1307,11 @@
     {
       "source_url": "https://knect365.imgix.net/uploads/Drive-business-growth-9027b25db46f6666b1fa03da26592367.png?auto=format&fit=max&w=400",
       "file": "dist/assets/event-images/hrse-ksa-9881f9ac16.avif",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.eyeofriyadh.com/events/events_images/2024/10/1905c8366813b.jpg",
+      "file": "dist/assets/event-images/hvac-r-saudi-arabia-31d5f298e3.jpg",
       "events": 1
     },
     {
@@ -2608,20 +2613,9 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/79ad3bdcca4c8170bcad667f945cd048.jpg",
       "file": "dist/assets/event-images/the-fundamentals-of-voiceover-1159f7a2db.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://tc.qcc.org.sa/storage/258/6a2f8ea226a73_%D8%A7%D9%95%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%AA%D8%A7%D9%94%D9%85%D9%8A%D9%86_%D8%A7%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%86.jpg",
-      "file": "dist/assets/event-images/أساسيات-إدارة-التأمين-في-المنشآت-والشركات-a7f66cbfea.jpg",
-      "events": 1
     }
   ],
-  "rejected_removed": [
-    {
-      "source_url": "https://www.big5constructsaudi.com/wp-content/themes/big5-global-2023/assets/images/port-flio-close.png",
-      "file": "dist/assets/event-images/big-5-construct-saudi-5907e1e219.png",
-      "reason": "rejected-image-asset"
-    }
-  ],
+  "rejected_removed": [],
   "missing_removed": [
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYXNoZ2FyLmpwZWc/ashgar.jpeg?w=1024&fm=webp&s=311321290751594df736714caeb6542c",
@@ -2644,11 +2638,6 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHNjMDA1MC5qcGVn/dsc0050.jpeg?w=1024&fm=webp&s=0fa87cbac7d7dc4698d23673839dee9d",
-      "file": "dist/assets/event-images/muftaha-district-e3099f8e91.webp",
-      "reason": "cached-file-missing"
-    },
-    {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZGppXzAwMTUuanBlZw/dji_0015.jpeg?w=1024&fm=webp&s=7f7f0eb5560bc3291502a7c2852f237e",
       "file": "dist/assets/event-images/sky-village-47af371772.webp",
       "reason": "cached-file-missing"
@@ -2656,6 +2645,16 @@
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvaGR5ay1hbG10YXItLmpwZWc/hdyk-almtar-.jpeg?w=1024&fm=webp&s=827b7f12216724c13e20c99f405430da",
       "file": "dist/assets/event-images/abha-international-airport-park-b96c779ff1.webp",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHNjMDA1MC5qcGVn/dsc0050.jpeg?w=1024&fm=webp&s=0fa87cbac7d7dc4698d23673839dee9d",
+      "file": "dist/assets/event-images/muftaha-district-e3099f8e91.webp",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uvc2hhYWFyLW1iZF9wYWdlLTAwMDEuanBn/shaaar-mbd_page-0001.jpg?w=1024&fm=webp&s=f019b3379374325affea949d3e1c1bce",
+      "file": "dist/assets/event-images/mabdaa-festival-02cc9c6e51.webp",
       "reason": "cached-file-missing"
     },
     {
@@ -2669,18 +2668,13 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvMWx5YWwtbWR5eS5wbmc/1lyal-mdyy.png?w=1024&fm=webp&s=73ae41f13a6e862af65d31d7d85c3be2",
-      "file": "dist/assets/event-images/light-nights-880e517e19.webp",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uvc2hhYWFyLW1iZF9wYWdlLTAwMDEuanBn/shaaar-mbd_page-0001.jpg?w=1024&fm=webp&s=f019b3379374325affea949d3e1c1bce",
-      "file": "dist/assets/event-images/mabdaa-festival-02cc9c6e51.webp",
-      "reason": "cached-file-missing"
-    },
-    {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvcnVyYWx2aWxsYWJlLnBuZw/ruralvillabe.png?w=1024&fm=webp&s=eb854d809b8bc8d8a4cce804332fe365",
       "file": "dist/assets/event-images/rural-village-art-street-7a9461078f.webp",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvMWx5YWwtbWR5eS5wbmc/1lyal-mdyy.png?w=1024&fm=webp&s=73ae41f13a6e862af65d31d7d85c3be2",
+      "file": "dist/assets/event-images/light-nights-880e517e19.webp",
       "reason": "cached-file-missing"
     },
     {
@@ -2699,8 +2693,8 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvMTUuanBlZw/15.jpeg?w=1024&fm=webp&s=6434f206e446a241e9f2866f2423678b",
-      "file": "dist/assets/event-images/aryash-6c397fa7e8.webp",
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZGppXzIwMjUwODA3MjMxMTEwXzAwMTRfZC5qcGVn/dji_20250807231110_0014_d.jpeg?w=1024&fm=webp&s=003a4abf278b899ff9bc9d2712c74c3e",
+      "file": "dist/assets/event-images/qusoor-al-asabila-a0ffdedbcb.webp",
       "reason": "cached-file-missing"
     },
     {
@@ -2709,13 +2703,18 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZGppXzIwMjUwODA3MjMxMTEwXzAwMTRfZC5qcGVn/dji_20250807231110_0014_d.jpeg?w=1024&fm=webp&s=003a4abf278b899ff9bc9d2712c74c3e",
-      "file": "dist/assets/event-images/qusoor-al-asabila-a0ffdedbcb.webp",
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvMTUuanBlZw/15.jpeg?w=1024&fm=webp&s=6434f206e446a241e9f2866f2423678b",
+      "file": "dist/assets/event-images/aryash-6c397fa7e8.webp",
       "reason": "cached-file-missing"
     },
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHNjMDgzMzAtZW5oYW5jZWQtbnItKDEpLmpwZWc/dsc08330-enhanced-nr-%281%29.jpeg?w=1024&fm=webp&s=d7760ab10d29e016ce17fa7f5d102a67",
       "file": "dist/assets/event-images/qusoor-abu-sarah-d3b4fdca6a.webp",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvMW1kbWFrLmpwZw/1mdmak.jpg?w=1024&fm=webp&s=66441f59583fe6eb3608d2053f580cd3",
+      "file": "dist/assets/event-images/mdmak-cd7354717c.webp",
       "reason": "cached-file-missing"
     },
     {
@@ -2729,23 +2728,8 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvMW1kbWFrLmpwZw/1mdmak.jpg?w=1024&fm=webp&s=66441f59583fe6eb3608d2053f580cd3",
-      "file": "dist/assets/event-images/mdmak-cd7354717c.webp",
-      "reason": "cached-file-missing"
-    },
-    {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZGppXzA4MTItZW5oYW5jZWQtbnItKDEpLmpwZWc/dji_0812-enhanced-nr-%281%29.jpeg?w=1024&fm=webp&s=b2e697eaa06bcd7fb5b0a48a99255bfa",
       "file": "dist/assets/event-images/nafas-d4fdeb01d9.webp",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHNjMDc5MTEtZW5oYW5jZWQtbnIuanBlZw/dsc07911-enhanced-nr.jpeg?w=1024&fm=webp&s=8e80d1339a4cd8cacaa3f4b70ad29005",
-      "file": "dist/assets/event-images/bioni-al-sharaf-423206a13c.webp",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvbW50Z2FhLWFsb2FkeS05LmpwZWc/mntgaa-aloady-9.jpeg?w=1024&fm=webp&s=3eb9e2fa555285d003f6023ca81dac83",
-      "file": "dist/assets/event-images/al-wadi-resort-9aab1000ed.webp",
       "reason": "cached-file-missing"
     },
     {
@@ -2754,13 +2738,18 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uva3NodGgucG5n/kshth.png?w=1024&fm=webp&s=a903e9e7554e7cf219359b245d62d50e",
-      "file": "dist/assets/event-images/kishtah-ab3a550ce8.webp",
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvbW50Z2FhLWFsb2FkeS05LmpwZWc/mntgaa-aloady-9.jpeg?w=1024&fm=webp&s=3eb9e2fa555285d003f6023ca81dac83",
+      "file": "dist/assets/event-images/al-wadi-resort-9aab1000ed.webp",
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHc4dzEyNTAuanBlZw/dw8w1250.jpeg?w=1024&fm=webp&s=e845b36cd3e878a1a1d7cec306a2e3f8",
-      "file": "dist/assets/event-images/musical-concerts-53b2281d16.webp",
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHNjMDc5MTEtZW5oYW5jZWQtbnIuanBlZw/dsc07911-enhanced-nr.jpeg?w=1024&fm=webp&s=8e80d1339a4cd8cacaa3f4b70ad29005",
+      "file": "dist/assets/event-images/bioni-al-sharaf-423206a13c.webp",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uva3NodGgucG5n/kshth.png?w=1024&fm=webp&s=a903e9e7554e7cf219359b245d62d50e",
+      "file": "dist/assets/event-images/kishtah-ab3a550ce8.webp",
       "reason": "cached-file-missing"
     },
     {
@@ -2774,11 +2763,6 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYXNib2FhLWFsYWF0b3ItLnBuZw/asboaa-alaator-.png?w=1024&fm=webp&s=e65fa09cd775812944fcae1cb1daf199",
-      "file": "dist/assets/event-images/perfumes-week-9393bb5468.webp",
-      "reason": "cached-file-missing"
-    },
-    {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uvc2F5Zi5qcGc/sayf.jpg?w=1024&fm=webp&s=5b9815aa9fcad62884cb22e83dcdff3b",
       "file": "dist/assets/event-images/the-summer-gathering-11f2d4b28b.webp",
       "reason": "cached-file-missing"
@@ -2789,18 +2773,33 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uvc3lmLW9ydGgtbWR5bi1hYmhhLnBuZw/syf-orth-mdyn-abha.png?w=1024&fm=webp&s=3bd491e2f2b3f07551678917d8dfa81d",
-      "file": "dist/assets/event-images/summer-legacy-0c54dcd636.webp",
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHc4dzEyNTAuanBlZw/dw8w1250.jpeg?w=1024&fm=webp&s=e845b36cd3e878a1a1d7cec306a2e3f8",
+      "file": "dist/assets/event-images/musical-concerts-53b2281d16.webp",
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYWdobC1ibGRfcGFnZS0wMDAxLmpwZw/aghl-bld_page-0001.jpg?w=1024&fm=webp&s=efb01a4f9be9734e9f14ca3e4f27adc0",
-      "file": "dist/assets/event-images/the-dearest-country-a1dffa4a36.webp",
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYXNib2FhLWFsYWF0b3ItLnBuZw/asboaa-alaator-.png?w=1024&fm=webp&s=e65fa09cd775812944fcae1cb1daf199",
+      "file": "dist/assets/event-images/perfumes-week-9393bb5468.webp",
       "reason": "cached-file-missing"
     },
     {
       "source_url": "https://dmmo-website-asda.oss-me-central-1.aliyuncs.com/assets/global/homeplaybtn.png",
       "file": "dist/assets/event-images/adventure-camp-husaak-b107eccd49.png",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uvc3lmLW9ydGgtbWR5bi1hYmhhLnBuZw/syf-orth-mdyn-abha.png?w=1024&fm=webp&s=3bd491e2f2b3f07551678917d8dfa81d",
+      "file": "dist/assets/event-images/summer-legacy-0c54dcd636.webp",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/DSC00760-1-1100x500.jpg",
+      "file": "dist/assets/event-images/jameel-library-july-community-programmes-f1cbae3928.jpg",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYWdobC1ibGRfcGFnZS0wMDAxLmpwZw/aghl-bld_page-0001.jpg?w=1024&fm=webp&s=efb01a4f9be9734e9f14ca3e4f27adc0",
+      "file": "dist/assets/event-images/the-dearest-country-a1dffa4a36.webp",
       "reason": "cached-file-missing"
     },
     {
@@ -2819,13 +2818,13 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/0ea6501d38dd241243aaa62d5b93a922.jpg",
-      "file": "dist/assets/event-images/emboss-printing-experience-d3c8504289.jpg",
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a1d6397472149e5f86f6e4d63682ca94.jpg",
+      "file": "dist/assets/event-images/art-in-everyday-life-d36fc1f92e.jpg",
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/259c5639d719477c4dcba9d4e68d239b.jpg",
-      "file": "dist/assets/event-images/ithra-short-play-contest-2026-0816f0aa41.jpg",
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d9066fa3a95acb81e626150dc55fbeb7.jpg",
+      "file": "dist/assets/event-images/children-story-time-450371399c.jpg",
       "reason": "cached-file-missing"
     },
     {
@@ -2834,23 +2833,8 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/05/DSC08187-scaled-aspect-ratio-2296-1446-1100x500.jpg",
-      "file": "dist/assets/event-images/jameel-library-open-call-the-task-of-the-translator-with-sarasija-subr-318e5c589c.jpg",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
-      "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/34zdbqh5.wk4.webp",
-      "file": "dist/assets/event-images/دبلوم-الأمن-السيبراني-المتقدم-90c2ad28d4.webp",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a1d6397472149e5f86f6e4d63682ca94.jpg",
-      "file": "dist/assets/event-images/art-in-everyday-life-d36fc1f92e.jpg",
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/0ea6501d38dd241243aaa62d5b93a922.jpg",
+      "file": "dist/assets/event-images/emboss-printing-experience-d3c8504289.jpg",
       "reason": "cached-file-missing"
     },
     {
@@ -2859,13 +2843,28 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/23c2f82febdcbf4e7caf404feb7f3f5e.jpg",
-      "file": "dist/assets/event-images/ithra-chess-tournament-cc14291494.jpg",
+      "source_url": "https://www.big5constructsaudi.com/wp-content/uploads/sites/7/2026/07/Teef-Najd-2026-TOp-ad-banner.png",
+      "file": "dist/assets/event-images/big-5-construct-saudi-568bfc6e5e.png",
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/101hx4o2.kfq.webp",
-      "file": "dist/assets/event-images/معسكر-حلول-الحوسبة-السحابية-aws-google-cloud-2e49aa9c3a.webp",
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/259c5639d719477c4dcba9d4e68d239b.jpg",
+      "file": "dist/assets/event-images/ithra-short-play-contest-2026-0816f0aa41.jpg",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
+      "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/05/DSC08187-scaled-aspect-ratio-2296-1446-1100x500.jpg",
+      "file": "dist/assets/event-images/jameel-library-open-call-the-task-of-the-translator-with-sarasija-subr-318e5c589c.jpg",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/23c2f82febdcbf4e7caf404feb7f3f5e.jpg",
+      "file": "dist/assets/event-images/ithra-chess-tournament-cc14291494.jpg",
       "reason": "cached-file-missing"
     },
     {
@@ -2874,13 +2873,13 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/3tk4drdp.icm.webp",
-      "file": "dist/assets/event-images/معسكر-الذكاء-الاصطناعي-في-تطوير-تطبيقات-الويب-باستخدام-python-و-django-5416cb25e9.webp",
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5c8313b3714c56cee2cdb36d8c6247ab.jpg",
+      "file": "dist/assets/event-images/moksha-6a8b1cb067.jpg",
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/cseb0buz.xu4.webp",
-      "file": "dist/assets/event-images/معسكر-الجرائم-السيبرانية-والتحقيق-الجنائي-الرقمي-المتقدم-f27eabcac0.webp",
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2025/08/Banner_GodusBros-2-1100x500.png",
+      "file": "dist/assets/event-images/hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office-fa978492cc.png",
       "reason": "cached-file-missing"
     },
     {
@@ -2889,18 +2888,18 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5c8313b3714c56cee2cdb36d8c6247ab.jpg",
-      "file": "dist/assets/event-images/moksha-6a8b1cb067.jpg",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/qkxpz0gj.dwd.webp",
-      "file": "dist/assets/event-images/معسكر-علم-البيانات-والذكاء-الاصطناعي-24753b3f30.webp",
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/3tk4drdp.icm.webp",
+      "file": "dist/assets/event-images/معسكر-الذكاء-الاصطناعي-في-تطوير-تطبيقات-الويب-باستخدام-python-و-django-5416cb25e9.webp",
       "reason": "cached-file-missing"
     },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/09/Othman-film.00_13_02_10.Still040-1100x500.png",
       "file": "dist/assets/event-images/hayy-cinema-othman-2022-741cb15bb8.png",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/101hx4o2.kfq.webp",
+      "file": "dist/assets/event-images/معسكر-حلول-الحوسبة-السحابية-aws-google-cloud-2e49aa9c3a.webp",
       "reason": "cached-file-missing"
     },
     {
@@ -2914,8 +2913,13 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/f2679c3d2bb7fcaa5db4cce650b92db8.jpg",
-      "file": "dist/assets/event-images/ithra-chess-tournament-ages-13-18-9eff72d3fb.jpg",
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/34zdbqh5.wk4.webp",
+      "file": "dist/assets/event-images/دبلوم-الأمن-السيبراني-المتقدم-90c2ad28d4.webp",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/qkxpz0gj.dwd.webp",
+      "file": "dist/assets/event-images/معسكر-علم-البيانات-والذكاء-الاصطناعي-24753b3f30.webp",
       "reason": "cached-file-missing"
     },
     {
@@ -2929,18 +2933,13 @@
       "reason": "cached-file-missing"
     },
     {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/cseb0buz.xu4.webp",
+      "file": "dist/assets/event-images/معسكر-الجرائم-السيبرانية-والتحقيق-الجنائي-الرقمي-المتقدم-f27eabcac0.webp",
+      "reason": "cached-file-missing"
+    },
+    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/10/MY-VIBE-Still-4-aspect-ratio-0-0-1100x500.png",
       "file": "dist/assets/event-images/hayy-cinema-my-vibe-2023-19bc9f9a74.png",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/john-achkar?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/feena-nehke-stand-up-comedy-by-john-achkar-c6c144495f.webp",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/11/HOD_Still_2_HiRes-Medium-aspect-ratio-0-0-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-aflam-sudan-x-hayy-cinema-62aea9d2c5.jpg",
       "reason": "cached-file-missing"
     },
     {
@@ -2954,13 +2953,13 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/11/IntisarAlShabab_Still-aspect-ratio-1418-780-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-victory-of-youth-intisar-al-shabab-1941-0c2caab9a5.jpg",
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/11/HOD_Still_2_HiRes-Medium-aspect-ratio-0-0-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-aflam-sudan-x-hayy-cinema-62aea9d2c5.jpg",
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2022/11/KAM-PHT-01-840x600-1-aspect-ratio-840-415.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-youssef-chahine-retrospective-alexandria-again-and-forever-96d2b98aaf.jpg",
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2022/11/LEH-PHT-05-849x600-1-849x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-youssef-chahine-retrospective-alexandria-why-1979-c7516fe9ec.jpg",
       "reason": "cached-file-missing"
     },
     {
@@ -2974,8 +2973,13 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2022/11/LEH-PHT-05-849x600-1-849x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-youssef-chahine-retrospective-alexandria-why-1979-c7516fe9ec.jpg",
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/11/IntisarAlShabab_Still-aspect-ratio-1418-780-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-victory-of-youth-intisar-al-shabab-1941-0c2caab9a5.jpg",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2022/11/KAM-PHT-01-840x600-1-aspect-ratio-840-415.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-youssef-chahine-retrospective-alexandria-again-and-forever-96d2b98aaf.jpg",
       "reason": "cached-file-missing"
     },
     {
@@ -2989,8 +2993,8 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/11/c0292.0110-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-spirited-away-2001-d40a9d4c8e.jpg",
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/12/IOICH-Still-2-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-if-only-i-could-hibernate-2023-a9fbbb5a60.jpg",
       "reason": "cached-file-missing"
     },
     {
@@ -2999,18 +3003,13 @@
       "reason": "cached-file-missing"
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/11/c0292.0110-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-spirited-away-2001-d40a9d4c8e.jpg",
+      "reason": "cached-file-missing"
+    },
+    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2025/01/IMG_0502-aspect-ratio-0-0-1100x500.png",
       "file": "dist/assets/event-images/hayy-cinema-hayy-classics-an-experience-from-jeddah-s-past-26bad44936.png",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/12/IOICH-Still-2-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-if-only-i-could-hibernate-2023-a9fbbb5a60.jpg",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/12/ATEOL-Still-3-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-at-the-edge-of-land-screening-and-q-a-with-artist-hira-nab-fbb62642fc.jpg",
       "reason": "cached-file-missing"
     },
     {
@@ -3019,8 +3018,8 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/01/SALEEG-Still-2-aspect-ratio-1920-1034-1100x500.png",
-      "file": "dist/assets/event-images/hayy-cinema-saleeg-2023-43be881dcd.png",
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/12/ATEOL-Still-3-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-at-the-edge-of-land-screening-and-q-a-with-artist-hira-nab-fbb62642fc.jpg",
       "reason": "cached-file-missing"
     },
     {
@@ -3029,23 +3028,13 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/01/THE-MENACE-FROM-ABOVE-Still-3-1100x500.png",
-      "file": "dist/assets/event-images/hayy-cinema-the-menace-from-above-2023-2e1a6fc2d4.png",
-      "reason": "cached-file-missing"
-    },
-    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2024/01/COFFEE-Still-6-aspect-ratio-0-0-1100x500.png",
       "file": "dist/assets/event-images/hayy-cinema-coffee-2023-bc20b324e8.png",
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/Landscape-3-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-our-little-sister-2015-ed7c327879.jpg",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/Landscape-6-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-the-journey-2021-8090117a0e.jpg",
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/01/THE-MENACE-FROM-ABOVE-Still-3-1100x500.png",
+      "file": "dist/assets/event-images/hayy-cinema-the-menace-from-above-2023-2e1a6fc2d4.png",
       "reason": "cached-file-missing"
     },
     {
@@ -3059,8 +3048,28 @@
       "reason": "cached-file-missing"
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/01/SALEEG-Still-2-aspect-ratio-1920-1034-1100x500.png",
+      "file": "dist/assets/event-images/hayy-cinema-saleeg-2023-43be881dcd.png",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/Landscape-6-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-the-journey-2021-8090117a0e.jpg",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/Landscape-3-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-our-little-sister-2015-ed7c327879.jpg",
+      "reason": "cached-file-missing"
+    },
+    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/Landscape-4-1080x500.jpg",
       "file": "dist/assets/event-images/hayy-cinema-the-third-murder-2017-dbe94ca148.jpg",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/Landscape-2-aspect-ratio-1264-690-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-after-the-storm-2016-48fb151638.jpg",
       "reason": "cached-file-missing"
     },
     {
@@ -3071,11 +3080,6 @@
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2024/03/MV5BNDdmNzYxNDEtNjU0Zi00MTk1LThjNTUtZGE5MjVhNGM0MDZmXkEyXkFqcGdeQXVyMTMxMTIwMTE0._V1_-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-cinema-ramadan-film-nights-6d6a5f7f1c.jpg",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/Landscape-2-aspect-ratio-1264-690-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-after-the-storm-2016-48fb151638.jpg",
       "reason": "cached-file-missing"
     },
     {
@@ -3099,13 +3103,8 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/03/DOUNIA_6-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-dounia-and-the-princess-of-aleppo-2022-1b7f76b1cd.jpg",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/03/ravensong-still-aspect-ratio-669-379.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-raven-song-2022-9c7c7ff8ed.jpg",
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/04/YOS09511-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-open-call-in-short-film-programme-670c039a88.jpg",
       "reason": "cached-file-missing"
     },
     {
@@ -3114,8 +3113,13 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/04/YOS09511-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-open-call-in-short-film-programme-670c039a88.jpg",
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/03/DOUNIA_6-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-dounia-and-the-princess-of-aleppo-2022-1b7f76b1cd.jpg",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/04/Still-photo-1100x500.jpeg",
+      "file": "dist/assets/event-images/hayy-cinema-may-2026-goodfellas-sink-spring-came-on-laughing-and-more-5c04d3a454.jpg",
       "reason": "cached-file-missing"
     },
     {
@@ -3124,8 +3128,13 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/04/Still-photo-1100x500.jpeg",
-      "file": "dist/assets/event-images/hayy-cinema-may-2026-goodfellas-sink-spring-came-on-laughing-and-more-5c04d3a454.jpg",
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/03/ravensong-still-aspect-ratio-669-379.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-raven-song-2022-9c7c7ff8ed.jpg",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/05/Memories-from-the-North-image.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-memories-from-the-north-00d69b8126.jpg",
       "reason": "cached-file-missing"
     },
     {
@@ -3144,11 +3153,6 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/05/Memories-from-the-North-image.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-memories-from-the-north-00d69b8126.jpg",
-      "reason": "cached-file-missing"
-    },
-    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/06/Hayy-Cinema-at-Hayy-Jameel-Jeddah.-Courtesy-of-Art-Jameel.-Photography-by-Mohamed-Alaskandrani-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-cinema-panel-discussion-the-way-we-see-us-8dfe654612.jpg",
       "reason": "cached-file-missing"
@@ -3159,18 +3163,23 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/03/HONEYLAND_filmstill02-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-honeyland-2019-b17bc97928.jpg",
-      "reason": "cached-file-missing"
-    },
-    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/05/40-1269-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-cinema-june-2026-a-matter-of-life-and-death-the-stories-you-will--7b09408c3e.jpg",
       "reason": "cached-file-missing"
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/03/HONEYLAND_filmstill02-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-honeyland-2019-b17bc97928.jpg",
+      "reason": "cached-file-missing"
+    },
+    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/07/When-red-blooms-aspect-ratio-669-367.jpg",
       "file": "dist/assets/event-images/hayy-cinema-aflamna-6a3d75ad62.jpg",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/f2679c3d2bb7fcaa5db4cce650b92db8.jpg",
+      "file": "dist/assets/event-images/ithra-chess-tournament-ages-13-18-9eff72d3fb.jpg",
       "reason": "cached-file-missing"
     },
     {
@@ -3234,7 +3243,6 @@
   "requires_rebuild": true,
   "rebuild_reasons": [
     "fetched:114",
-    "rejected-removed:1",
-    "missing-removed:111"
+    "missing-removed:114"
   ]
 }
