@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-07-27T21:13:46.990Z
+- generated_at: 2026-07-27T21:47:50.008Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -12,32 +12,32 @@
 
 - Sources in registry: 88
 - Runnable collector lanes: 48
-- Sources due now: 19
-- Sources attempted in latest collection: 19
-- Sources deferred by cadence: 29
+- Sources due now: 22
+- Sources attempted in latest collection: 22
+- Sources deferred by cadence: 26
 - Due-source coverage: 100%
 - Scheduled runnable coverage: 100%
-- Whole-registry attempted this run: 22%
-- Healthy sources: 19
-- Zero-yield sources: 0
+- Whole-registry attempted this run: 25%
+- Healthy sources: 20
+- Zero-yield sources: 2
 - High-priority unattempted sources: 3
-- Candidates: 553
-- Actionable candidates: 14
-- Ready for review: 14
+- Candidates: 547
+- Actionable candidates: 8
+- Ready for review: 8
 - Ready for catalog promotion: 0
 - Linked to catalog from candidates: 513
 - Stale unpublished candidates: 0
-- Duplicate risk: 10
+- Duplicate risk: 6
 - Recommendation: ابدأ بمراجعة التكرارات المحتملة قبل اعتماد أي مرشح جديد.
 
 ## Candidate Funnel
 
 - review_status.approved-for-catalog: 513
-- review_status.ready-for-review: 14
+- review_status.ready-for-review: 8
 - review_status.evidence-captured: 18
 - review_status.new: 8
 - publication_gate.catalog-review: 513
-- publication_gate.duplicate-review: 14
+- publication_gate.duplicate-review: 8
 - publication_gate.source-evidence: 26
 - discovery_quality.strong-lead: 19
 - discovery_quality.weak-lead: 1
@@ -49,14 +49,12 @@
 |---|---|---|---|
 | Mahabah | Discover Aseer Events | ready-for-review/duplicate-review | راجع التكرار مع الكتالوج قبل أي اعتماد. |
 | Esports World Cup | Eye of Riyadh Events | ready-for-review/duplicate-review | راجع التكرار مع الكتالوج قبل أي اعتماد. |
-| International Falcon Breeders Auction | Riyadh City Events | ready-for-review/duplicate-review | راجع التكرار مع الكتالوج قبل أي اعتماد. |
 | Saudi Wood Expo 2026 | Eye of Riyadh Events | ready-for-review/duplicate-review | راجع التكرار مع الكتالوج قبل أي اعتماد. |
 | Saudi Industrial Series | Eye of Riyadh Events | ready-for-review/duplicate-review | راجع التكرار مع الكتالوج قبل أي اعتماد. |
-| WTM Spotlight Riyadh | Riyadh City Events | ready-for-review/duplicate-review | راجع التكرار مع الكتالوج قبل أي اعتماد. |
-| Global Infrastructure Expo | Riyadh City Events | ready-for-review/duplicate-review | راجع التكرار مع الكتالوج قبل أي اعتماد. |
-| Saudi Falcons Club Auction | Riyadh City Events | ready-for-review/duplicate-review | راجع التكرار مع الكتالوج قبل أي اعتماد. |
 | IN ACT - ACT X | Visit Saudi Calendar | ready-for-review/duplicate-review | راجع التكرار مع الكتالوج قبل أي اعتماد. |
 | Cityscape Global 2026 | Invest Saudi Events | ready-for-review/duplicate-review | راجع التكرار مع الكتالوج قبل أي اعتماد. |
+| sammrah | Discover Aseer Events | ready-for-review/duplicate-review | دليل تجميعي؛ ابن مطابقة مصدر رسمي قبل أي نشر آلي. |
+| Sound of Abha Fest (SAF) | Discover Aseer Events | ready-for-review/duplicate-review | دليل تجميعي؛ ابن مطابقة مصدر رسمي قبل أي نشر آلي. |
 
 ## Discovery Leads
 
@@ -110,7 +108,7 @@
 | 31 | NEOM Newsroom Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 32 | Saudi Space Agency Events | deferred | 0 | 0 | مؤجل حتى 2026-07-30T15:28:34.590Z وفق الجدولة التكيفية. |
 | 33 | CST Events and News | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 34 | Visit Saudi Summer Calendar PDF | deferred | 0 | 70 | مؤجل حتى 2026-07-27T21:28:34.590Z وفق الجدولة التكيفية. |
+| 34 | Visit Saudi Summer Calendar PDF | healthy | 67 | 70 | استمر بالمراجعة والتكرار قبل النشر. |
 | 35 | Qiddiya Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 36 | Sela and Saudi Entertainment Expo | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 37 | Ministry of Culture Commission Calendars | deferred | 0 | 12 | مؤجل حتى 2026-07-28T15:28:34.590Z وفق الجدولة التكيفية. |
@@ -127,7 +125,7 @@
 | 48 | Saudi Food and Drug Authority Events | healthy | 5 | 5 | استمر بالمراجعة والتكرار قبل النشر. |
 | 49 | Saudi Contractors Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 50 | Saudi Winter Events Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 51 | Riyadh City Events | deferred | 0 | 85 | مؤجل حتى 2026-07-27T21:28:34.590Z وفق الجدولة التكيفية. |
+| 51 | Riyadh City Events | zero-yield | 0 | 79 | No future date-complete candidates found by the conservative extractor. |
 | 52 | Monsha'at Academy Programs | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 53 | General Entertainment Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 54 | SDAIA Calendar and Events | healthy | 2 | 2 | استمر بالمراجعة والتكرار قبل النشر. |
@@ -147,7 +145,7 @@
 | 68 | Hail Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 69 | Najran Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 70 | Platinumlist Riyadh Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 71 | Najran Municipality Summer Events | deferred | 0 | 1 | مؤجل حتى 2026-07-27T21:28:34.590Z وفق الجدولة التكيفية. |
+| 71 | Najran Municipality Summer Events | zero-yield | 0 | 1 | No future date-complete candidates found by the conservative extractor. |
 | 72 | Platinumlist Saudi City Network | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 73 | GOV.SA National Platform Events | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 74 | Middle East Banking AI & Analytics Summit Official | not-collected | 0 | 1 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
@@ -161,7 +159,7 @@
 | 82 | Money20/20 Middle East Official Agendas | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 83 | Madinah Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-07-30T15:28:34.590Z وفق الجدولة التكيفية. |
 | 84 | Madinah International Architecture Festival | healthy | 1 | 1 | استمر بالمراجعة والتكرار قبل النشر. |
-| 85 | Hayy Jameel What's On | healthy | 63 | 67 | استمر بالمراجعة والتكرار قبل النشر. |
+| 85 | Hayy Jameel What's On | healthy | 62 | 67 | استمر بالمراجعة والتكرار قبل النشر. |
 | 86 | Informa Connect Saudi Event Portfolio | deferred | 0 | 6 | مؤجل حتى 2026-08-03T15:28:34.590Z وفق الجدولة التكيفية. |
 | 87 | King Abdulaziz University Events | deferred | 0 | 3 | مؤجل حتى 2026-08-03T15:28:34.590Z وفق الجدولة التكيفية. |
 | 88 | Saudicon Events | deferred | 0 | 15 | مؤجل حتى 2026-07-28T15:28:34.590Z وفق الجدولة التكيفية. |

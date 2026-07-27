@@ -1,17 +1,17 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-27T21:10:03.793Z
+- published_at: 2026-07-27T21:44:48.595Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 553
+- candidates_seen: 547
 - published_new: 0
 - linked_existing: 507
-- blocked_remaining: 46
-- duplicate_review_alerts: 14
+- blocked_remaining: 40
+- duplicate_review_alerts: 8
 
 ## Blocked summary
 
-- possible duplicate requires review: exact-title-city-source-conflict: 12
+- possible duplicate requires review: exact-title-city-source-conflict: 6
 - linked catalog row event-aseer-season was superseded by dedupe: 2
 - linked catalog row event-nasma-in-taif was superseded by dedupe: 1
 - publication gate source-evidence is not auto-publishable: 14
@@ -542,7 +542,6 @@
 | candidate-saudicon-events-بطولة-كأس-العالم-للرياضات-الإلكترونية-20260706-c111699c | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-visit-saudi-calendar-stand-up-comedy-night-with-shakir-al-sharif-20260730-06a1ec00 | blocked | - | linked catalog row event-stand-up-comedy-night-with-shakir-al-sharif was superseded by dedupe |
 | candidate-eye-of-riyadh-events-oxford-future-of-real-estate-programme-20260805-7c9ee195 | blocked | - | unknown category requires review |
-| candidate-riyadh-city-events-international-falcon-breeders-auction-20260805-ffef92ab | blocked | event-international-falcon-breeders-auction | possible duplicate requires review: exact-title-city-source-conflict |
 | candidate-eye-of-riyadh-events-sunaa-2026-20260818-e3819fa8 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-قمة-البيانات-الذكية-والذكاء-الاصطناعي-20260826-83f848e3 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eye-of-riyadh-events-saudi-wood-expo-2026-20260830-b4d44be4 | blocked | event-saudi-wood-expo-2026 | possible duplicate requires review: exact-title-city-source-conflict |
@@ -550,7 +549,6 @@
 | candidate-saudicon-events-إتش-ڤي-إيه-سي-آر-إكسبو-السعودية-2026-20260830-4d19da5e | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-سلسلة-الصناعات-السعودية-20260830-edb83dcb | blocked | - | possible duplicate already exists: event-saudi-industrial-series-2 |
 | candidate-saudicon-events-معرض-big-5-construct-saudi-2026-20260830-29f1e1d5 | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-riyadh-city-events-saudi-warehousing-logistics-expo-20260830-2c62f3d7 | blocked | event-saudi-warehousing-logistics-expo | possible duplicate requires review: exact-title-city-source-conflict |
 | candidate-saudicon-events-ديب-فيست-2026-20260831-5b699748 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-ليب-2026-20260831-8612d635 | blocked | - | possible duplicate already exists: event-leap-2026 |
 | candidate-saudicon-events-قمة-مراكز-البيانات-والبنية-التحتية-السحابية-السعودية-2026-20260901-f89f6689 | blocked | - | publication gate source-evidence is not auto-publishable |
@@ -567,10 +565,6 @@
 | candidate-saudicon-events-معرض-جدة-الدولي-للجمال-2026-20260906-51ca2adf | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-معرض-جدة-الدولي-للصناعات-والمنتجات-الجلدية-2026-20260906-aa327aa8 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-قمة-gdx-2026-قمة-التحول-الرقمي-الحكومي-20260907-85d197fa | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-riyadh-city-events-wtm-spotlight-riyadh-20260908-f4c9f864 | blocked | event-wtm-spotlight-riyadh | possible duplicate requires review: exact-title-city-source-conflict |
-| candidate-riyadh-city-events-saudi-industrial-series-20260908-5562eb43 | blocked | event-saudi-industrial-series-2 | possible duplicate requires review: exact-title-city-source-conflict |
-| candidate-riyadh-city-events-global-infrastructure-expo-20260915-e198cb08 | blocked | event-global-infrastructure-expo | possible duplicate requires review: exact-title-city-source-conflict |
-| candidate-riyadh-city-events-saudi-falcons-club-auction-20261001-077d26fd | blocked | event-saudi-falcons-club-auction | possible duplicate requires review: exact-title-city-source-conflict |
 | candidate-visit-saudi-calendar-in-act-act-x-20261009-1a60f46d | blocked | event-in-act-act-x | possible duplicate requires review: exact-title-city-venue-conflict |
 | candidate-eventbrite-saudi-25th-wpc-energy-congress-20261011-5909609b | blocked | - | unknown category requires review |
 | candidate-visit-saudi-calendar-feena-nehke-stand-up-comedy-by-john-achkar-20261023-221bd8f2 | blocked | - | linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe |

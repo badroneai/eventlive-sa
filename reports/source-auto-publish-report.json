@@ -1,16 +1,16 @@
 {
-  "published_at": "2026-07-27T21:10:03.793Z",
+  "published_at": "2026-07-27T21:44:48.595Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 553,
+  "candidates_seen": 547,
   "totals": {
-    "candidates_seen": 553,
+    "candidates_seen": 547,
     "published": 0,
     "linked_existing": 507,
-    "blocked": 46,
-    "duplicate_review_alerts": 14,
+    "blocked": 40,
+    "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
     "reconciled": 507
   },
@@ -94,23 +94,6 @@
     },
     {
       "kind": "exact-title-city-source-conflict",
-      "candidate_id": "candidate-riyadh-city-events-international-falcon-breeders-auction-20260805-ffef92ab",
-      "possible_event_id": "event-international-falcon-breeders-auction",
-      "conflict_fields": [
-        "source",
-        "venue"
-      ],
-      "title_key": "auction breeders falcon international",
-      "venue_key": "club falcons in malham riyadh saudi",
-      "candidate_source": "riyadh.sa",
-      "existing_source": "visitsaudi.com",
-      "candidate_starts_at": "2026-08-05T16:00:00+03:00",
-      "existing_starts_at": "2026-08-05T16:00:00+03:00",
-      "date_gap_days": 0,
-      "start_date_drift_days": 0
-    },
-    {
-      "kind": "exact-title-city-source-conflict",
       "candidate_id": "candidate-eye-of-riyadh-events-saudi-wood-expo-2026-20260830-b4d44be4",
       "possible_event_id": "event-saudi-wood-expo-2026",
       "conflict_fields": [
@@ -144,94 +127,6 @@
       "existing_starts_at": "2026-08-30T16:00:00+03:00",
       "date_gap_days": 0,
       "start_date_drift_days": 0.292
-    },
-    {
-      "kind": "exact-title-city-source-conflict",
-      "candidate_id": "candidate-riyadh-city-events-saudi-warehousing-logistics-expo-20260830-2c62f3d7",
-      "possible_event_id": "event-saudi-warehousing-logistics-expo",
-      "conflict_fields": [
-        "source",
-        "venue",
-        "date"
-      ],
-      "title_key": "expo logistics saudi warehousing",
-      "venue_key": "center conference exhibition front riyadh",
-      "candidate_source": "riyadh.sa",
-      "existing_source": "saudilogisticsexpo.com",
-      "candidate_starts_at": "2026-08-30T16:30:00+03:00",
-      "existing_starts_at": "2026-09-08T15:00:00+03:00",
-      "date_gap_days": 6.75,
-      "start_date_drift_days": 8.938
-    },
-    {
-      "kind": "exact-title-city-source-conflict",
-      "candidate_id": "candidate-riyadh-city-events-wtm-spotlight-riyadh-20260908-f4c9f864",
-      "possible_event_id": "event-wtm-spotlight-riyadh",
-      "conflict_fields": [
-        "source",
-        "date"
-      ],
-      "title_key": "riyadh spotlight wtm",
-      "venue_key": "center conference exhibition front riyadh",
-      "candidate_source": "riyadh.sa",
-      "existing_source": "rfecc.sa",
-      "candidate_starts_at": "2026-09-08T13:00:00+03:00",
-      "existing_starts_at": "2026-09-08T09:00:00+03:00",
-      "date_gap_days": 0,
-      "start_date_drift_days": 0.167
-    },
-    {
-      "kind": "exact-title-city-source-conflict",
-      "candidate_id": "candidate-riyadh-city-events-saudi-industrial-series-20260908-5562eb43",
-      "possible_event_id": "event-saudi-industrial-series-2",
-      "conflict_fields": [
-        "source",
-        "venue",
-        "date"
-      ],
-      "title_key": "industrial saudi series",
-      "venue_key": "center convention exhibition international riyadh",
-      "candidate_source": "riyadh.sa",
-      "existing_source": "saudiindustrialexpo.com",
-      "candidate_starts_at": "2026-09-08T15:00:00+03:00",
-      "existing_starts_at": "2026-08-30T16:00:00+03:00",
-      "date_gap_days": 6.708,
-      "start_date_drift_days": 8.958
-    },
-    {
-      "kind": "exact-title-city-source-conflict",
-      "candidate_id": "candidate-riyadh-city-events-global-infrastructure-expo-20260915-e198cb08",
-      "possible_event_id": "event-global-infrastructure-expo",
-      "conflict_fields": [
-        "source",
-        "venue",
-        "date"
-      ],
-      "title_key": "expo global infrastructure",
-      "venue_key": "center convention exhibition international riyadh",
-      "candidate_source": "riyadh.sa",
-      "existing_source": "swa.gov.sa",
-      "candidate_starts_at": "2026-09-15T16:00:00+03:00",
-      "existing_starts_at": "2026-09-15T04:00:00+03:00",
-      "date_gap_days": 0,
-      "start_date_drift_days": 0.5
-    },
-    {
-      "kind": "exact-title-city-source-conflict",
-      "candidate_id": "candidate-riyadh-city-events-saudi-falcons-club-auction-20261001-077d26fd",
-      "possible_event_id": "event-saudi-falcons-club-auction",
-      "conflict_fields": [
-        "source",
-        "venue"
-      ],
-      "title_key": "auction club falcons saudi",
-      "venue_key": "club falcons in malham riyadh saudi",
-      "candidate_source": "riyadh.sa",
-      "existing_source": "visitsaudi.com",
-      "candidate_starts_at": "2026-10-01T19:00:00+03:00",
-      "existing_starts_at": "2026-10-01T19:00:00+03:00",
-      "date_gap_days": 0,
-      "start_date_drift_days": 0
     },
     {
       "kind": "exact-title-city-venue-conflict",
@@ -3373,13 +3268,6 @@
       "reason": "unknown category requires review"
     },
     {
-      "candidate_id": "candidate-riyadh-city-events-international-falcon-breeders-auction-20260805-ffef92ab",
-      "title": "International Falcon Breeders Auction",
-      "reason": "possible duplicate requires review: exact-title-city-source-conflict",
-      "kind": "exact-title-city-source-conflict",
-      "possible_event_id": "event-international-falcon-breeders-auction"
-    },
-    {
       "candidate_id": "candidate-eye-of-riyadh-events-sunaa-2026-20260818-e3819fa8",
       "title": "SUNAA 2026",
       "reason": "publication gate source-evidence is not auto-publishable"
@@ -3417,13 +3305,6 @@
       "candidate_id": "candidate-saudicon-events-معرض-big-5-construct-saudi-2026-20260830-29f1e1d5",
       "title": "معرض Big 5 Construct Saudi 2026",
       "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-riyadh-city-events-saudi-warehousing-logistics-expo-20260830-2c62f3d7",
-      "title": "Saudi Warehousing & Logistics Expo",
-      "reason": "possible duplicate requires review: exact-title-city-source-conflict",
-      "kind": "exact-title-city-source-conflict",
-      "possible_event_id": "event-saudi-warehousing-logistics-expo"
     },
     {
       "candidate_id": "candidate-saudicon-events-ديب-فيست-2026-20260831-5b699748",
@@ -3504,34 +3385,6 @@
       "candidate_id": "candidate-saudicon-events-قمة-gdx-2026-قمة-التحول-الرقمي-الحكومي-20260907-85d197fa",
       "title": "قمة GDX 2026 — قمة التحول الرقمي الحكومي",
       "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-riyadh-city-events-wtm-spotlight-riyadh-20260908-f4c9f864",
-      "title": "WTM Spotlight Riyadh",
-      "reason": "possible duplicate requires review: exact-title-city-source-conflict",
-      "kind": "exact-title-city-source-conflict",
-      "possible_event_id": "event-wtm-spotlight-riyadh"
-    },
-    {
-      "candidate_id": "candidate-riyadh-city-events-saudi-industrial-series-20260908-5562eb43",
-      "title": "Saudi Industrial Series",
-      "reason": "possible duplicate requires review: exact-title-city-source-conflict",
-      "kind": "exact-title-city-source-conflict",
-      "possible_event_id": "event-saudi-industrial-series-2"
-    },
-    {
-      "candidate_id": "candidate-riyadh-city-events-global-infrastructure-expo-20260915-e198cb08",
-      "title": "Global Infrastructure Expo",
-      "reason": "possible duplicate requires review: exact-title-city-source-conflict",
-      "kind": "exact-title-city-source-conflict",
-      "possible_event_id": "event-global-infrastructure-expo"
-    },
-    {
-      "candidate_id": "candidate-riyadh-city-events-saudi-falcons-club-auction-20261001-077d26fd",
-      "title": "Saudi Falcons Club Auction",
-      "reason": "possible duplicate requires review: exact-title-city-source-conflict",
-      "kind": "exact-title-city-source-conflict",
-      "possible_event_id": "event-saudi-falcons-club-auction"
     },
     {
       "candidate_id": "candidate-visit-saudi-calendar-in-act-act-x-20261009-1a60f46d",
