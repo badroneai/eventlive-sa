@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T21:47:50.008Z",
+  "generated_at": "2026-07-27T22:22:54.122Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-07-27T21:37:16.267Z",
+    "collected_at": "2026-07-27T22:12:57.306Z",
     "freshness": "fresh",
-    "discovered": 373,
+    "discovered": 307,
     "written": 547
   },
   "sources": {
     "total": 88,
-    "attempted": 22,
-    "due": 22,
-    "deferred": 26,
+    "attempted": 19,
+    "due": 19,
+    "deferred": 29,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 25,
+    "registry_collection_coverage_pct": 22,
     "scheduled_runnable_coverage_pct": 100,
-    "healthy": 20,
-    "zero_yield": 2,
+    "healthy": 19,
+    "zero_yield": 0,
     "errors": 0,
-    "cadence_deferred": 26,
+    "cadence_deferred": 29,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -466,13 +466,16 @@
         "id": "visit-saudi-calendar-pdf",
         "name": "Visit Saudi Summer Calendar PDF",
         "priority": 34,
-        "status": "healthy",
+        "status": "deferred",
+        "historical_status": "probe-blocked",
+        "cadence_reason": "error-cooldown",
+        "next_due_at": "2026-07-28T03:37:16.267Z",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": null,
-        "extracted": 67,
+        "last_attempted_at": "2026-07-27T21:37:16.267Z",
+        "extracted": 0,
         "candidates": 70,
-        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
+        "next_action": "مؤجل حتى 2026-07-28T03:37:16.267Z وفق الجدولة التكيفية."
       },
       {
         "id": "qiddiya-events",
@@ -676,13 +679,16 @@
         "id": "riyadh-city-events",
         "name": "Riyadh City Events",
         "priority": 51,
-        "status": "zero-yield",
+        "status": "deferred",
+        "historical_status": "probe-blocked",
+        "cadence_reason": "error-cooldown",
+        "next_due_at": "2026-07-28T03:37:16.267Z",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "last_attempted_at": "2026-07-27T21:37:16.267Z",
         "extracted": 0,
         "candidates": 79,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "next_action": "مؤجل حتى 2026-07-28T03:37:16.267Z وفق الجدولة التكيفية."
       },
       {
         "id": "monshaat-academy-programs",
@@ -937,13 +943,16 @@
         "id": "najran-municipality-summer-events",
         "name": "Najran Municipality Summer Events",
         "priority": 71,
-        "status": "zero-yield",
+        "status": "deferred",
+        "historical_status": "zero-yield",
+        "cadence_reason": "zero-yield-cooldown",
+        "next_due_at": "2026-07-28T21:37:16.267Z",
         "error_streak": 0,
-        "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "zero_yield_streak": 3,
+        "last_attempted_at": "2026-07-27T21:37:16.267Z",
         "extracted": 0,
         "candidates": 1,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "next_action": "مؤجل حتى 2026-07-28T21:37:16.267Z وفق الجدولة التكيفية."
       },
       {
         "id": "platinumlist-saudi-city-network",
@@ -1118,7 +1127,7 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 62,
+        "extracted": 63,
         "candidates": 67,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
