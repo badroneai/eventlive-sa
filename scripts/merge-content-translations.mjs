@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {
+  isMixedTranslationText,
   loadContentTranslations,
   normalizeContentText,
   saveContentTranslations
@@ -44,6 +45,11 @@ for (const name of fs.readdirSync(dir).filter((file) => /^chunk-\d+\.json$/.test
     const hasTargetScript = item.target_lang === 'ar' ? /[ء-ي]/.test(translated) : /[A-Za-z]/.test(translated);
     if (!hasTargetScript) {
       problems.push(`${name}: ${item.key} output lacks ${item.target_lang} script (${translated.slice(0, 60)})`);
+      skipped += 1;
+      continue;
+    }
+    if (method !== 'llm-agent' && isMixedTranslationText(translated, item.target_lang)) {
+      problems.push(`${name}: ${item.key} output carries an untranslated source-language run (${translated.slice(0, 60)})`);
       skipped += 1;
       continue;
     }

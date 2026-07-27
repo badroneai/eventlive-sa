@@ -1,7 +1,7 @@
 import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
-import { loadContentTranslations } from './content-translation-cache.mjs';
+import { loadContentTranslations, pruneMixedTranslations } from './content-translation-cache.mjs';
 
 // Autonomous translation step (plan T7.1): translate pending catalog content
 // with offline open-source models, merge through the validated merge path,
@@ -16,6 +16,12 @@ function run(command, args, options = {}) {
   return spawnSync(command, args, { stdio: 'inherit', encoding: 'utf8', ...options });
 }
 
+const mixedPruned = pruneMixedTranslations();
+if (mixedPruned) {
+  console.log(`TRANSLATE_CATALOG pruned ${mixedPruned} mixed-language cache entries for re-translation`);
+  const rebuildForPending = run('npm', ['run', '-s', 'build']);
+  if (rebuildForPending.status !== 0) console.log('TRANSLATE_CATALOG pending-refresh build failed — continuing with existing report');
+}
 const before = Object.keys(loadContentTranslations().entries || {}).length;
 
 fs.rmSync(workDir, { recursive: true, force: true });
