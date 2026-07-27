@@ -155,6 +155,17 @@ function parseCandidateDeadline(candidate = {}) {
   return `${startYear}-${month}-${String(match[1]).padStart(2, '0')}T18:00:00+03:00`;
 }
 
+// Misk program pages prepend tab labels, a metadata grid, and UI chrome
+// ("Program Objectives Program Information ... Notify Me Loading...") to the
+// page text. Any description that still carries that prefix is page chrome,
+// not content — cut everything up to the last chrome token.
+function stripMiskPageChrome(text = '') {
+  let cleaned = String(text || '').replace(/\s+/g, ' ').trim();
+  cleaned = cleaned.replace(/^[\s\S]*?Notify Me\s*Loading\.{0,3}\s*/i, '');
+  cleaned = cleaned.replace(/^Program Details\s+/i, '');
+  return cleaned.trim();
+}
+
 function firstSentence(text = '') {
   const cleaned = String(text || '').replace(/\s+/g, ' ').trim();
   if (!cleaned) return '';
@@ -167,7 +178,8 @@ function extractMiskDetails(html) {
   const title = metaContent(html, 'og:title') || cleanText(html.match(/<title\b[\s\S]*?<\/title>/i)?.[0] || '').replace(/\s*\|\s*Misk.*$/i, '');
   const description = metaContent(html, 'description') || metaContent(html, 'og:description');
   const dateRange = parseDateRange(text);
-  const overview = textBetween(text, 'Program Overview', ['Who Should Apply?', 'Program Highlights', 'Program Outcomes', 'Application criteria', 'Application Process']);
+  const overview = textBetween(text, 'Program Overview', ['Who Should Apply?', 'Program Highlights', 'Program Outcomes', 'Application criteria', 'Application Process'])
+    || textBetween(text, 'Program Details', ['Program Objectives', 'Meet the Expert', 'Program Achievements', 'Who Should Apply?', 'Program Highlights', 'Program Outcomes', 'Application criteria', 'Application Process', 'Frequently asked questions']);
   const whoShouldApply = textBetween(text, 'Who Should Apply?', ['Program Highlights', 'Startup Journey', 'Program Outcomes', 'Application criteria', 'Application Process']);
   const highlightsBlock = textBetween(text, 'Program Highlights', ['Startup Journey', 'Program Outcomes', 'Application criteria', 'Application Process']);
   const outcomesBlock = textBetween(text, 'Program Outcomes', ['Program Achievements', 'Testimonials', 'Application criteria', 'Application Process']);
@@ -222,7 +234,9 @@ function applyProgram(event, details, fallback = {}) {
   const fallbackDeadline = parseCandidateDeadline(fallback);
   const registrationDeadline = details.registration_deadline || fallbackDeadline;
   if (registrationDeadline) event.registration_deadline = registrationDeadline;
-  const officialDescription = details.overview || details.description || event.summary || '';
+  const officialDescription = [details.overview, details.description, event.summary]
+    .map((value) => stripMiskPageChrome(value))
+    .find((value) => value && value.length > 40) || '';
   if (officialDescription) {
     event.description = officialDescription;
     event.rich_summary = officialDescription;
