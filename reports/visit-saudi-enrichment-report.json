@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-27T15:44:43.228Z",
+  "generated_at": "2026-07-27T18:45:25.180Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
-    "targets": 29,
+    "targets": 26,
     "candidates": 18,
-    "enriched": 29,
-    "fetched": 29,
-    "images": 27,
+    "enriched": 26,
+    "fetched": 26,
+    "images": 24,
     "fetch_failures": 0
   },
   "enriched": [
@@ -32,14 +32,6 @@
       "title": "Sunken Treasures",
       "source_method": "official-page-html",
       "image_url": "https://scth.scene7.com/is/image/scth/sunken-treasuers?wid=1920&hei=1080&fit=constrain&fmt=webp",
-      "fetched": true,
-      "features": 7
-    },
-    {
-      "id": "event-aseer-season",
-      "title": "Aseer Season",
-      "source_method": "official-page-html",
-      "image_url": "https://scth.scene7.com/is/image/scth/private-aseeri-home-visit?wid=1920&hei=1080&fit=constrain&fmt=webp",
       "fetched": true,
       "features": 7
     },
@@ -164,14 +156,6 @@
       "features": 7
     },
     {
-      "id": "event-stand-up-comedy-night-with-shakir-al-sharif",
-      "title": "Stand up Comedy Night with Shakir Al Sharif",
-      "source_method": "official-page-html",
-      "image_url": "https://scth.scene7.com/is/image/scth/stand-up-comedy-night-with-shakir-al-sharif?wid=1920&hei=1080&fit=constrain&fmt=webp",
-      "fetched": true,
-      "features": 7
-    },
-    {
       "id": "event-international-falcon-breeders-auction",
       "title": "International Falcon Breeders Auction",
       "source_method": "official-page-html",
@@ -208,14 +192,6 @@
       "title": "Al Milwah Falcon Race",
       "source_method": "official-page-html",
       "image_url": "https://scth.scene7.com/is/image/scth/almelwah-racing?wid=1920&hei=1080&fit=constrain&fmt=webp",
-      "fetched": true,
-      "features": 7
-    },
-    {
-      "id": "event-feena-nehke-stand-up-comedy-by-john-achkar",
-      "title": "FEENA NEHKE? Stand Up Comedy by John Achkar",
-      "source_method": "official-page-html",
-      "image_url": "https://scth.scene7.com/is/image/scth/john-achkar?wid=1920&hei=1080&fit=constrain&fmt=webp",
       "fetched": true,
       "features": 7
     },

@@ -1,5 +1,5 @@
 # EventLive Official Single-Session Activation
-- Generated at: 2026-07-27T15:45:44.955Z
+- Generated at: 2026-07-27T18:47:19.633Z
 - Max duration hours: 8
 - Activated: 18
 - Skipped long events: 6
@@ -17,8 +17,8 @@
 | Saudi Food and Drug Authority Events | متطلبات الاستخدام الآمن للأجهزة والمستلزمات الطبية لمراكز الأسنان | 1h | official-online-workshop |
 | Saudi Universities and Technical Colleges | FIFA World Cup 2026 Final: Celebrate Football's Biggest Night at the KAUST Fan Zone | 5.98h | official-community-session |
 | Saudi Food and Drug Authority Events | دور مقدمي الرعاية الصحية وضباط الاتصال في التعامل مع انذارات السلامة الصادرة من المركز الوطني لبلاغات الأجهزة والمستلزمات الطبية | 1h | official-online-workshop |
-| MDLBEAST Events | Beast House | 6h | official-entertainment-session |
 | Saudi Food and Drug Authority Events | الاستخدام الآمن لأجهزة الأشعة والتصوير الطبي داخل مرافق الرعاية الصحية و المرجع الوطني لتحديد الجرعة الإشعاعية للمرضى | 2h | official-online-workshop |
+| MDLBEAST Events | Beast House | 6h | official-entertainment-session |
 | Saudi Food and Drug Authority Events | آلية مطابقة المخزون الفعلي مع نظام رصد للصيدليات والمستشفيات | 4h | official-online-workshop |
 | Saudi Food and Drug Authority Events | الأجهزة الطبية الرقمية: التوعية بالمتطلبات التنظيمية وأفضل الممارسات | 1h | official-online-workshop |
 | Saudi Food and Drug Authority Events | الإدراج في خطوات | 2h | official-online-workshop |

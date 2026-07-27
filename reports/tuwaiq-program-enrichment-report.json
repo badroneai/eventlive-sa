@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T15:44:06.526Z",
+  "generated_at": "2026-07-27T18:44:48.263Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 27,
@@ -56,14 +56,6 @@
       "requirements": 31
     },
     {
-      "id": "event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي",
-      "title": "معسكر تطوير مواقع الويب باستخدام Java ودمج تقنيات الذكاء الاصطناعي",
-      "slug": "B5R0wKJk",
-      "goals": 10,
-      "features": 7,
-      "requirements": 8
-    },
-    {
       "id": "event-معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine",
       "title": "معسكر تطوير الألعاب والعوالم الافتراضية باستخدام Unreal Engine",
       "slug": "KMVERlNP",
@@ -96,6 +88,14 @@
       "requirements": 11
     },
     {
+      "id": "event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي",
+      "title": "معسكر تطوير مواقع الويب باستخدام Java ودمج تقنيات الذكاء الاصطناعي",
+      "slug": "B5R0wKJk",
+      "goals": 10,
+      "features": 7,
+      "requirements": 8
+    },
+    {
       "id": "event-معسكر-أساسيات-هندسة-الميكاترونكس",
       "title": "معسكر أساسيات هندسة الميكاترونكس",
       "slug": "XmzqwoPy",
@@ -110,14 +110,6 @@
       "goals": 8,
       "features": 7,
       "requirements": 9
-    },
-    {
-      "id": "event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud",
-      "title": "معسكر هندسة الحوسبة السحابية باستخدام Google Cloud",
-      "slug": "v9JwMlMo",
-      "goals": 10,
-      "features": 6,
-      "requirements": 7
     },
     {
       "id": "event-معسكر-اختبار-البرمجيات-والأتمتة",
@@ -214,6 +206,14 @@
       "goals": 20,
       "features": 12,
       "requirements": 9
+    },
+    {
+      "id": "event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud",
+      "title": "معسكر هندسة الحوسبة السحابية باستخدام Google Cloud",
+      "slug": "v9JwMlMo",
+      "goals": 10,
+      "features": 6,
+      "requirements": 7
     }
   ],
   "failed": [

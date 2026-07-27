@@ -1,11 +1,11 @@
 # Visit Saudi Calendar Enrichment Report
 
-- generated_at: 2026-07-27T15:44:43.228Z
-- targets: 29
+- generated_at: 2026-07-27T18:45:25.180Z
+- targets: 26
 - candidates: 18
-- enriched: 29
-- fetched: 29
-- images: 27
+- enriched: 26
+- fetched: 26
+- images: 24
 - fetch_failures: 0
 
 ## Enriched
@@ -13,7 +13,6 @@
 - Arabic Language Exhibition 28 - official-page-html - image=yes - features=7
 - Arabic Language Exhibition for kids - official-page-html - image=yes - features=7
 - Sunken Treasures - official-page-html - image=yes - features=7
-- Aseer Season - official-page-html - image=yes - features=7
 - Kashtah - official-page-html - image=yes - features=7
 - Okhtabotiya - official-page-html - image=yes - features=7
 - Al-Farabi: Comeback Night - official-page-html - image=yes - features=7
@@ -29,13 +28,11 @@
 - Rahma Riad at Vocally - official-page-html - image=yes - features=7
 - Stand-Up Comedy Night - official-page-html - image=yes - features=7
 - Fill in the Blank in Jeddah - official-page-html - image=yes - features=7
-- Stand up Comedy Night with Shakir Al Sharif - official-page-html - image=yes - features=7
 - International Falcon Breeders Auction - official-page-html - image=yes - features=7
 - Hussain Moheb Live in Riyadh - official-page-html - image=yes - features=7
 - FIBO Arabia 2026 - official-page-html - image=yes - features=7
 - Saudi National Day - official-page-html - image=yes - features=7
 - Al Milwah Falcon Race - official-page-html - image=yes - features=7
-- FEENA NEHKE? Stand Up Comedy by John Achkar - official-page-html - image=yes - features=7
 - Founding Day - official-page-html - image=yes - features=7
 - Eid Al-Fitr - official-page-html - image=no - features=6
 - Eid Al-Adha - official-page-html - image=no - features=6

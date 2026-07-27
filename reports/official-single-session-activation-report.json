@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T15:45:44.955Z",
+  "generated_at": "2026-07-27T18:47:19.633Z",
   "max_duration_hours": 8,
   "totals": {
     "activated": 18,
@@ -106,15 +106,6 @@
       "session_type": "official-online-workshop"
     },
     {
-      "id": "event-beast-house",
-      "title": "Beast House",
-      "source_label": "MDLBEAST Events",
-      "starts_at": "2026-07-31T21:00:00+03:00",
-      "ends_at": "2026-08-01T03:00:00+03:00",
-      "duration_hours": 6,
-      "session_type": "official-entertainment-session"
-    },
-    {
       "id": "event-الاستخدام-الآمن-لأجهزة-الأشعة-والتصوير-الطبي-داخل-مرافق-الرعاية-الصحية-و",
       "title": "الاستخدام الآمن لأجهزة الأشعة والتصوير الطبي داخل مرافق الرعاية الصحية و المرجع الوطني لتحديد الجرعة الإشعاعية للمرضى",
       "source_label": "Saudi Food and Drug Authority Events",
@@ -122,6 +113,15 @@
       "ends_at": "2026-07-27T12:00:00+03:00",
       "duration_hours": 2,
       "session_type": "official-online-workshop"
+    },
+    {
+      "id": "event-beast-house",
+      "title": "Beast House",
+      "source_label": "MDLBEAST Events",
+      "starts_at": "2026-07-31T21:00:00+03:00",
+      "ends_at": "2026-08-01T03:00:00+03:00",
+      "duration_hours": 6,
+      "session_type": "official-entertainment-session"
     },
     {
       "id": "event-آلية-مطابقة-المخزون-الفعلي-مع-نظام-رصد-للصيدليات-والمستشفيات",
@@ -171,16 +171,16 @@
   ],
   "skipped_long": [
     {
-      "id": "event-unstable",
-      "title": "Unstable",
-      "source_label": "MDLBEAST Events",
-      "duration_hours": 24
-    },
-    {
       "id": "event-تقييم-سلامة-المنتج-التجميلي-وملف-معلومات-المنتج",
       "title": "تقييم سلامة المنتج التجميلي وملف معلومات المنتج",
       "source_label": "Saudi Food and Drug Authority Events",
       "duration_hours": 28.5
+    },
+    {
+      "id": "event-unstable",
+      "title": "Unstable",
+      "source_label": "MDLBEAST Events",
+      "duration_hours": 24
     },
     {
       "id": "event-the-kaust-imaging-and-characterization-core-lab-presents-ai-for-microsco",
