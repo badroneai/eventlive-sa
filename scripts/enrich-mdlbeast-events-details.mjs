@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { assignEventCategory, categoryLabels, normalizeEventCategoryMetadata } from './category-taxonomy.mjs';
+import { isRejectedImageAssetUrl } from './image-asset-utils.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -89,6 +90,7 @@ function datoStillImages(html = '') {
   return [...decoded.matchAll(/https?:\/\/www\.datocms-assets\.com\/[^"'<>\\\s]+/gi)]
     .map((match) => match[0])
     .filter(isStillImage)
+    .filter((url) => !isRejectedImageAssetUrl(url))
     .filter((url, index, urls) => urls.indexOf(url) === index);
 }
 

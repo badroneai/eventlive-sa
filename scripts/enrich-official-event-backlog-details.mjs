@@ -3,6 +3,7 @@ import path from 'node:path';
 import { selectBacklogTargets } from './backlog-target-utils.mjs';
 import { highResImage, isStillImage, preferredEventImage } from './backlog-image-utils.mjs';
 import { assignEventCategory, categoryLabels, normalizeEventCategoryMetadata } from './category-taxonomy.mjs';
+import { isRejectedImageAssetUrl } from './image-asset-utils.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -71,7 +72,7 @@ function imageCandidates(html = '') {
     extractMeta(decoded, 'twitter:image'),
     ...[...decoded.matchAll(/https?:\/\/[^"'<>\\\s]+\.(?:png|jpe?g|webp|avif)(?:\?[^"'<>\\\s]*)?/gi)].map((match) => match[0]),
     ...[...decoded.matchAll(/https?:\/\/[^"'<>\\\s]*scene7\.com\/is\/image\/[^"'<>\\\s]+/gi)].map((match) => match[0])
-  ].filter(isStillImage);
+  ].filter(isStillImage).filter((url) => !isRejectedImageAssetUrl(url));
 }
 
 function shortDate(value = '') {
