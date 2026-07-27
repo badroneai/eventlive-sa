@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { classifyAudiences } from './audience-utils.mjs';
-import { categoryDefinition, normalizeEventCategory } from './category-taxonomy.mjs';
+import { categoryDefinition, normalizeEventCategory, normalizeEventCategoryWithFallback } from './category-taxonomy.mjs';
 import {
   addFuzzyDuplicateIndexEntry,
   buildFuzzyDuplicateIndex,
@@ -26,6 +26,7 @@ const reportMdPath = process.env.EVENTLIVE_AUTO_PUBLISH_REPORT_MD
   ? path.join(root, process.env.EVENTLIVE_AUTO_PUBLISH_REPORT_MD)
   : path.join(root, 'reports', 'source-auto-publish-report.md');
 const publishedAt = new Date().toISOString();
+const categoryFallbackAlerts = [];
 const dryRun = ['1', 'true', 'yes'].includes(String(process.env.EVENTLIVE_AUTO_PUBLISH_DRY_RUN || '').toLowerCase());
 const includePartner = !['0', 'false', 'no'].includes(String(process.env.EVENTLIVE_AUTO_PUBLISH_PARTNER || 'true').toLowerCase());
 const officialUnknownCategoryFallback = 'community-occasions';
@@ -705,7 +706,7 @@ function catalogEventFromCandidate(candidate, existingIds) {
     tags: Array.isArray(candidate.tags) ? candidate.tags.slice(0, 10) : [],
     audiences: classifyAudiences(candidate)
   };
-  return normalizeEventCategory(event);
+  return normalizeEventCategoryWithFallback(event, categoryFallbackAlerts);
 }
 
 function autoPublishBlocker(candidate, catalogByMatch, catalogByLooseMatch, catalogByDateWindow, catalogBySourceDate) {
@@ -796,7 +797,7 @@ function main() {
   const candidates = reconciledDocuments.candidates;
   const validCatalogEvents = reconciledDocuments.catalogEvents
     .filter((event) => hasValidPublicDateTimes(event) || !isAutoPublishedEventLiveRow(event))
-    .map((event) => normalizeEventCategory(event));
+    .map((event) => normalizeEventCategoryWithFallback(event, categoryFallbackAlerts));
   const dedupedCatalog = dedupeAutoPublishedCatalog(validCatalogEvents);
   const semanticDedupedCatalog = dedupeAutoPublishedSemanticCatalog(dedupedCatalog.events);
   const actionDedupedCatalog = dedupeActionSemanticCatalog(semanticDedupedCatalog.events);
@@ -827,6 +828,18 @@ function main() {
   const duplicateReviewAlerts = [];
 
   let updatedCandidates = candidates.map((candidate) => {
+    if (
+      candidate.review_status === 'approved-for-catalog'
+      && candidate.matched_catalog_event_id
+      && !existingIds.has(candidate.matched_catalog_event_id)
+    ) {
+      blocked.push({
+        candidate_id: candidate.id,
+        title: candidate.title,
+        reason: `linked catalog row ${candidate.matched_catalog_event_id} was superseded by dedupe`
+      });
+      return candidate;
+    }
     const exactMatch = catalogByMatch.get(candidateMatchKey(candidate));
     const looseMatch = !exactMatch ? catalogByLooseMatch.get(candidateLooseMatchKey(candidate)) : null;
     const bilingualAliasMatch = !exactMatch && !looseMatch
@@ -1013,8 +1026,10 @@ function main() {
       linked_existing: linkedExisting.length,
       blocked: blocked.length,
       duplicate_review_alerts: duplicateReviewAlerts.length,
+      category_fallback_alerts: categoryFallbackAlerts.length,
       reconciled: published.length + linkedExisting.length
     },
+    category_fallback_alerts: categoryFallbackAlerts,
     duplicate_catalog_rows_removed: dedupedCatalog.removed.length
       + semanticDedupedCatalog.removed.length
       + actionDedupedCatalog.removed.length

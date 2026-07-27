@@ -10,8 +10,11 @@ import {
   categoryDefinition,
   categoryDefinitionByKey,
   normalizeEventCategory,
-  normalizeEventCategoryMetadata
+  normalizeEventCategoryMetadata,
+  normalizeEventCategoryWithFallback
 } from './category-taxonomy.mjs';
+
+const categoryFallbackAlerts = [];
 import { normalizeSaudiCity } from './city-utils.mjs';
 import { classifyEventKind, eventKindLabel, getEventStatus } from './event-kind-utils.mjs';
 import {
@@ -806,12 +809,12 @@ function sourceTrustProfile(raw = {}, previous = {}) {
 
 function normalizeEvent(raw, sourceGroup, previousLookup) {
   const previous = previousLookup.byId.get(raw.id) || previousLookup.byIdentity.get(eventIdentity(raw)) || {};
-  raw = normalizeEventCategoryMetadata({
+  raw = normalizeEventCategoryMetadata(normalizeEventCategoryWithFallback({
     ...raw,
     id: raw.id || previous.id,
     category: raw.category || previous.category,
     raw_category: raw.raw_category ?? raw.category ?? previous.raw_category ?? previous.category
-  });
+  }, categoryFallbackAlerts));
   const sourceCity = raw.city || previous.city || raw.venue || raw.venue_address || 'Saudi Arabia';
   const normalizedCity = normalizeSaudiCity(sourceCity, sourceCity || 'Saudi Arabia');
   const slug = String(raw.slug || previous.slug || slugify(raw.title || raw.id)).normalize('NFC');
@@ -1494,7 +1497,7 @@ function eventCard(event, prefix = './') {
   const detail = `${prefix}${event.detail_url.replace(/^\.\//, '')}`;
   const image = event.image_url.startsWith('/') ? `${prefix}${event.image_url.slice(1)}` : event.image_url;
   const statusClass = event.status === 'live' ? ' chip-live' : '';
-  return `<article class="card" data-event-start="${escapeHtml(event.starts_at || '')}" data-event-end="${escapeHtml(event.ends_at || event.starts_at || '')}" data-event-status="${escapeHtml(event.status || '')}"><img class="cover" src="${escapeHtml(image)}" alt="${escapeHtml(event.image_alt || event.title)}" loading="lazy" /><div class="card-body"><h2 class="title"><a dir="auto" href="${escapeHtml(detail)}">${escapeHtml(event.title)}</a></h2><p>${escapeHtml(event.summary)}</p><div class="meta"><span class="chip${statusClass}" data-runtime-status ${runtimeAttrs(event)}>${escapeHtml(event.status_label)}</span><span class="chip">${escapeHtml(formatDate(event.starts_at))}</span><span class="chip" data-live-time ${runtimeAttrs(event)}>جاري حساب الوقت...</span><span class="chip">${escapeHtml(cityLabel(event.city))}</span><span class="chip">${escapeHtml(event.category_label)}</span></div><a class="cta" href="${escapeHtml(detail)}">تفاصيل الحضور</a></div></article>`;
+  return `<article class="card" data-event-start="${escapeHtml(event.starts_at || '')}" data-event-end="${escapeHtml(event.ends_at || event.starts_at || '')}" data-event-status="${escapeHtml(event.status || '')}"><img class="cover" src="${escapeHtml(image)}" alt="${escapeHtml(event.image_alt || event.title)}" loading="lazy" /><div class="card-body"><h2 class="title"><a dir="auto" href="${escapeHtml(detail)}">${escapeHtml(event.title)}</a></h2><p>${escapeHtml(event.summary)}</p><div class="meta"><span class="chip${statusClass}" data-runtime-status ${runtimeAttrs(event)}>${escapeHtml(event.status_label)}</span><span class="chip">${escapeHtml(formatDate(event.starts_at))}</span><span class="chip" data-live-time ${runtimeAttrs(event)}>${escapeHtml(staticWhenText(event))}</span><span class="chip">${escapeHtml(cityLabel(event.city))}</span><span class="chip">${escapeHtml(event.category_label)}</span></div><a class="cta" href="${escapeHtml(detail)}">تفاصيل الحضور</a></div></article>`;
 }
 
 function attendanceFacts(event) {
@@ -1993,7 +1996,7 @@ function renderEventDetail(event) {
 ${header(relative)}
 <main>
   ${eventBreadcrumbHtml(event, relative)}
-  <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span><span data-runtime-status ${runtimeAttrs(event)}>${escapeHtml(event.status_label)}</span> · ${escapeHtml(event.event_kind_label)}</span><h1>${escapeHtml(event.title)}</h1><p class="lead">${escapeHtml(event.summary)}</p><div class="signal-strip"><div class="signal"><span>المدينة</span><b>${escapeHtml(cityLabel(event.city))}</b></div><div class="signal"><span>البداية</span><b>${escapeHtml(formatDate(event.starts_at))}</b></div><div class="signal"><span>النهاية</span><b>${escapeHtml(formatDate(event.ends_at))}</b></div><div class="signal"><span>الحالة الحية</span><b data-live-time ${runtimeAttrs(event)}>جاري حساب الوقت...</b></div></div>${eventQuickActions(event)}</div></section>
+  <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span><span data-runtime-status ${runtimeAttrs(event)}>${escapeHtml(event.status_label)}</span> · ${escapeHtml(event.event_kind_label)}</span><h1>${escapeHtml(event.title)}</h1><p class="lead">${escapeHtml(event.summary)}</p><div class="signal-strip"><div class="signal"><span>المدينة</span><b>${escapeHtml(cityLabel(event.city))}</b></div><div class="signal"><span>البداية</span><b>${escapeHtml(formatDate(event.starts_at))}</b></div><div class="signal"><span>النهاية</span><b>${escapeHtml(formatDate(event.ends_at))}</b></div><div class="signal"><span>الحالة الحية</span><b data-live-time ${runtimeAttrs(event)}>${escapeHtml(staticWhenText(event))}</b></div></div>${eventQuickActions(event)}</div></section>
   <section class="section"><div class="wrap grid"><article class="card"><img class="cover" src="${escapeHtml(image)}" alt="${escapeHtml(event.image_alt || event.title)}" /></article><article class="readiness attendance-summary" aria-label="معلومات الحضور"><span class="attendance-kicker">ما تحتاجه قبل الذهاب</span><h2>معلومات الحضور</h2><p>معلومات عملية مرتبطة بالمصدر لمساعدتك قبل الوصول وأثناء الفعالية.</p>${endedNote}${attendanceFacts(event)}<div class="meta">${eventDetailActions(event)}</div></article></div></section>
   ${sessions}
   ${programOutline}
@@ -2461,7 +2464,7 @@ function cityDirectoryRows(events) {
 
 function cityDirectoryCard(row) {
   const nextLine = row.next_event
-    ? `<p><strong>الأقرب:</strong> <a href="${escapeHtml(row.next_event.url)}">${escapeHtml(row.next_event.title)}</a><br><span data-live-time data-start="${escapeHtml(row.next_event.starts_at)}" data-end="${escapeHtml(row.next_event.starts_at)}" data-kind="moment">جاري حساب الوقت...</span></p>`
+    ? `<p><strong>الأقرب:</strong> <a href="${escapeHtml(row.next_event.url)}">${escapeHtml(row.next_event.title)}</a><br><span data-live-time data-start="${escapeHtml(row.next_event.starts_at)}" data-end="${escapeHtml(row.next_event.starts_at)}" data-kind="moment">${escapeHtml(staticWhenText({ starts_at: row.next_event.starts_at }))}</span></p>`
     : '<p><strong>الأقرب:</strong> لا توجد فعالية قادمة مؤكدة حتى الآن.</p>';
   return `<article class="activation-card"><h2><a href="${escapeHtml(row.url)}">${escapeHtml(row.label)}</a></h2><div class="signals"><div class="signal-check good"><b>${row.upcoming_or_active}</b><span>قادمة/نشطة</span></div><div class="signal-check ${row.live_ready ? 'good' : 'warn'}"><b>${row.live_ready}</b><span>جداول حية</span></div><div class="signal-check good"><b>${row.ended}</b><span>منتهية محفوظة</span></div><div class="signal-check good"><b>${row.sources_count}</b><span>مصادر</span></div></div>${nextLine}<div class="activation-actions"><a class="cta" href="${escapeHtml(row.url)}">فتح المدينة</a><a class="cta" href="./feeds/city-${escapeHtml(row.slug)}.ics">تقويم المدينة</a></div></article>`;
 }
@@ -2564,7 +2567,7 @@ function categoryDirectoryRows(events) {
 
 function categoryDirectoryCard(row) {
   const nextLine = row.next_event
-    ? `<p><strong>الأقرب:</strong> <a href="${escapeHtml(row.next_event.url)}">${escapeHtml(row.next_event.title)}</a><br><span data-live-time data-start="${escapeHtml(row.next_event.starts_at)}" data-end="${escapeHtml(row.next_event.starts_at)}" data-kind="moment">جاري حساب الوقت...</span></p>`
+    ? `<p><strong>الأقرب:</strong> <a href="${escapeHtml(row.next_event.url)}">${escapeHtml(row.next_event.title)}</a><br><span data-live-time data-start="${escapeHtml(row.next_event.starts_at)}" data-end="${escapeHtml(row.next_event.starts_at)}" data-kind="moment">${escapeHtml(staticWhenText({ starts_at: row.next_event.starts_at }))}</span></p>`
     : '<p><strong>الأقرب:</strong> لا توجد فعالية قادمة مؤكدة حتى الآن.</p>';
   return `<article class="activation-card"><h2><a href="${escapeHtml(row.url)}">${escapeHtml(row.label)}</a></h2><div class="signals"><div class="signal-check good"><b>${row.upcoming_or_active}</b><span>قادمة/نشطة</span></div><div class="signal-check ${row.live_ready ? 'good' : 'warn'}"><b>${row.live_ready}</b><span>جداول حية</span></div><div class="signal-check good"><b>${row.cities_count}</b><span>مدن</span></div><div class="signal-check good"><b>${row.sources_count}</b><span>مصادر</span></div></div>${nextLine}<p><strong>الجمهور:</strong> ${escapeHtml(row.audiences.slice(0, 4).join('، ') || 'عموم الجمهور')}</p><div class="activation-actions"><a class="cta" href="${escapeHtml(row.url)}">فتح التصنيف</a><a class="cta" href="./feeds/category-${escapeHtml(row.slug)}.ics">تقويم التصنيف</a></div></article>`;
 }
@@ -2713,7 +2716,7 @@ function audienceDirectoryRows(events) {
 
 function audienceDirectoryCard(row) {
   const nextLine = row.next_event
-    ? `<p><strong>الأقرب:</strong> <a href="${escapeHtml(row.next_event.url)}">${escapeHtml(row.next_event.title)}</a><br><span data-live-time data-start="${escapeHtml(row.next_event.starts_at)}" data-end="${escapeHtml(row.next_event.starts_at)}" data-kind="moment">جاري حساب الوقت...</span></p>`
+    ? `<p><strong>الأقرب:</strong> <a href="${escapeHtml(row.next_event.url)}">${escapeHtml(row.next_event.title)}</a><br><span data-live-time data-start="${escapeHtml(row.next_event.starts_at)}" data-end="${escapeHtml(row.next_event.starts_at)}" data-kind="moment">${escapeHtml(staticWhenText({ starts_at: row.next_event.starts_at }))}</span></p>`
     : '<p><strong>الأقرب:</strong> لا توجد فعالية قادمة مؤكدة حتى الآن.</p>';
   const categoriesLine = row.categories.length
     ? row.categories.slice(0, 4).join('، ')
@@ -5143,6 +5146,17 @@ function homeSearchEvent(event) {
   };
 }
 
+function staticWhenText(event) {
+  const startTs = dateValue(event.starts_at)?.getTime();
+  const endTs = dateValue(event.ends_at || event.starts_at)?.getTime();
+  const nowTs = Date.now();
+  if (Number.isFinite(endTs) && endTs < nowTs) return 'انتهت';
+  if (Number.isFinite(startTs) && startTs <= nowTs && (!Number.isFinite(endTs) || endTs >= nowTs)) {
+    return `مستمرة حتى ${formatShortDate(event.ends_at || event.starts_at)}`;
+  }
+  return `تبدأ ${formatShortDate(event.starts_at)}`;
+}
+
 function homeEventCard(event) {
   const image = rootAsset(event.image_url || event.image || './assets/eventlive-hero.png');
   const detail = compactEventUrl(event);
@@ -5156,18 +5170,28 @@ function homeEventCard(event) {
   const cityText = event.city_label || cityLabel(event.city);
   const eventDay = start.day || '—';
   const eventMonth = start.month || '—';
+  const end = formatHomeCardDate(event.ends_at || event.starts_at);
+  const multiDay = Boolean(event.ends_at)
+    && riyadhDateKey(event.starts_at) !== riyadhDateKey(event.ends_at)
+    && end.day && end.month;
+  const dateTab = multiDay && end.month === eventMonth
+    ? `<b>${escapeHtml(`${eventDay}–${end.day}`)}</b><span>${escapeHtml(eventMonth)}</span>`
+    : `<b>${escapeHtml(eventDay)}</b><span>${escapeHtml(eventMonth)}</span>`;
+  const whenMeta = multiDay
+    ? `من ${formatShortDate(event.starts_at)} إلى ${formatShortDate(event.ends_at)}`
+    : formatWeekday(event.starts_at);
 
   return `<article class="card" data-event-start="${escapeHtml(event.starts_at || '')}" data-event-end="${escapeHtml(event.ends_at || event.starts_at || '')}" data-event-status="${escapeHtml(event.status || '')}">
         <a class="cover" href="${escapeHtml(detail)}" style="--c1:#4a1d4f;--c2:#7c3f84">
           <img src="${escapeHtml(image)}" alt="${escapeHtml(event.image_alt || event.title)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.cover').classList.add('noimg');this.remove();" />
           <span class="cover-cat">${escapeHtml(audienceName)}</span>
-          <span class="date-tab"><b>${escapeHtml(eventDay)}</b><span>${escapeHtml(eventMonth)}</span></span>
+          <span class="date-tab">${dateTab}</span>
           <span class="chips">${chips}</span>
         </a>
         <div class="card-body">
-          <div class="card-meta">${escapeHtml(cityText)} · ${escapeHtml(event.venue || cityText)} · ${escapeHtml(formatWeekday(event.starts_at))}</div>
+          <div class="card-meta">${escapeHtml(cityText)} · ${escapeHtml(event.venue || cityText)} · ${escapeHtml(whenMeta)}</div>
           <h3><a dir="auto" href="${escapeHtml(detail)}">${escapeHtml(event.title)}</a></h3>
-          <div class="card-when" data-live-time ${runtimeAttrs(event)}>جاري حساب الوقت...</div>
+          <div class="card-when" data-live-time ${runtimeAttrs(event)}>${escapeHtml(staticWhenText(event))}</div>
           <div class="card-foot">
             <a class="btn-sm primary" href="${escapeHtml(detail)}">التفاصيل</a>
             <a class="btn-sm" href="${escapeHtml(event.ics_url || (String(detail).endsWith('.html') ? `${detail.replace(/\\.html$/, '.ics')}` : `${detail}.ics`))}" aria-label="أضف للتقويم">التقويم</a>
@@ -5911,7 +5935,7 @@ function enhanceHomeRuntime(html, events) {
     const href = block.match(/href="([^"]+)"/)?.[1] || '';
     const event = byUrl.get(normalizePublicHref(href));
     if (!event) return block;
-    const liveTime = `<div class="card-when" data-live-time ${runtimeAttrs(event)}>جاري حساب الوقت...</div>`;
+    const liveTime = `<div class="card-when" data-live-time ${runtimeAttrs(event)}>${escapeHtml(staticWhenText(event))}</div>`;
     if (/<div class="card-when"[\s\S]*?<\/div>/.test(block)) {
       return block.replace(/<div class="card-when"[\s\S]*?<\/div>/, liveTime);
     }
@@ -6003,7 +6027,13 @@ function patchHomePage(events) {
       name: event.title
     }))
   };
-  const ticker = upcoming.slice(0, 120).map(homeTickerEvent);
+  const tickerLiveMoments = upcoming.filter((event) => {
+    const start = dateValue(event.starts_at)?.getTime();
+    const end = dateValue(event.ends_at || event.starts_at)?.getTime();
+    return event.event_kind !== 'program' && Number.isFinite(start) && start <= now && (!Number.isFinite(end) || end >= now);
+  });
+  const tickerFuture = upcoming.filter((event) => (dateValue(event.starts_at)?.getTime() || 0) > now);
+  const ticker = [...new Set([...tickerLiveMoments, ...tickerFuture, ...upcoming])].slice(0, 120).map(homeTickerEvent);
   const searchData = events.map(homeSearchEvent);
   let next = html
     .replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">${JSON.stringify(itemList)}</script>`)
@@ -7291,6 +7321,7 @@ const report = [
   `- Category fallback pages created: ${categoryFallback.fallbackPages}`,
 `- Excluded-record references patched: ${excludedReferencePatched}`,
 `- Dead event links removed: ${deadEventLinksRemoved}`,
+`- Category fallback alerts: ${categoryFallbackAlerts.length}`,
   `- Search intent pages generated: ${searchIntentPages.length}`,
   `- SEO pages changed: ${seoDiscovery.changed_events}`,
   `- SEO pages unchanged: ${seoDiscovery.unchanged_events}`,

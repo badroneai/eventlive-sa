@@ -370,7 +370,13 @@ function applyEnglishContentOverrides($, relativePath) {
 
   $('.card').each((_, card) => {
     const title = $(card).find('h2,h3,.title').first().text().trim();
-    const city = $(card).find('a[href*="cities/"], .meta').first().text().split(/[|·]/)[0].trim();
+    const href = String($(card).find('a[href*="events/"]').first().attr('href') || '')
+      .replace(/^(?:\.\.\/)+|^\.\//, '')
+      .split(/[?#]/)[0];
+    const cardEvent = eventByPath.get(href);
+    const city = cardEvent?.city_label
+      || (cardEvent?.city ? String(cardEvent.city) : '')
+      || $(card).find('a[href*="cities/"]').first().text().split(/[|·]/)[0].trim();
     $(card).find('p').filter((__, paragraph) => /[\u0600-\u06ff]/.test($(paragraph).text()) && $(paragraph).text().trim().length > 90).first().text(englishEventSummary({}, title, city));
   });
 }
