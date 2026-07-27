@@ -4590,7 +4590,9 @@ function extractHayyJameelCards(html, source) {
     const category = cleanTitle(card.match(/<h5>([\s\S]*?)<\/h5>/i)?.[1] || '') || 'culture arts';
     const dateText = stripTags(card.match(/<p class="uk-margin-medium-top">([\s\S]*?)<\/p>/i)?.[1] || '');
     const dates = parseHayyJameelDateRange(dateText);
-    const imageCandidate = card.match(/<img[^>]+data-src="([^"]+)"/i)?.[1] || card.match(/<img[^>]+src="([^"]+)"/i)?.[1] || '';
+    const imageCandidate = [...card.matchAll(/<img[^>]+(?:data-src|src)="([^"]+)"/gi)]
+      .map((imageMatch) => imageMatch[1])
+      .find((value) => /hayyjameel\.org\/(?:wp-content\/)?uploads\//i.test(resolveUrl(value, source.url))) || '';
     const url = resolveUrl(href, source.url);
     if (!title || !url || !dates) continue;
     const key = `${url}|${dates.starts_at}`;

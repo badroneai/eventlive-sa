@@ -52,6 +52,7 @@ function scoreImage(url = '', context = '') {
   if (/(?:^|[\s=&_-])(?:9\d{2}|1\d{3}|2\d{3})w(?:$|[\s,"])/.test(text)) score += 8;
   if (/fit=max|auto=format/.test(text)) score += 4;
   if (/\b(?:logo|icon|favicon|sprite|placeholder|unsupported)\b/.test(text)) score -= 30;
+  else if (/(?:^|[/_\-.\s])logo/i.test(text)) score -= 30;
   return score;
 }
 
@@ -60,6 +61,7 @@ function pushCandidate(items, value, baseUrl, source, context = '') {
   try {
     const url = new URL(decodeHtml(value), baseUrl).href;
     if (!isLikelyImageUrl(url)) return;
+    if (isRejectedImageAssetUrl(url)) return;
     const sourceBoost = source === 'meta' ? 35 : source === 'json-ld' ? 32 : source === 'srcset' ? 12 : 8;
     const score = scoreImage(url, context) + sourceBoost;
     if (score < 10) return;

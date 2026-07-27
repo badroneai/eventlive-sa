@@ -349,7 +349,27 @@ async function main() {
   const manifest = existingManifest();
   const rejectedRemoved = pruneRejectedManifestImages(manifest);
   const missingRemoved = pruneMissingManifestFiles(manifest);
-  const targets = collectTargets(eventRows());
+  const rows = eventRows();
+  const targets = collectTargets(rows);
+  const rejectedLedgered = [];
+  for (const row of rows) {
+    const url = String(row.original_image_url || row.image_url || '').trim();
+    if (!row.image_discovered_at || !/^https?:\/\//i.test(url)) continue;
+    if (sourceImageUrl(row) || manifest.images[url] || manifest.failures?.[url]) continue;
+    if (!manifest.failures) manifest.failures = {};
+    manifest.failures[url] = {
+      source_url: url,
+      failure_kind: 'rejected-image-asset',
+      reason: 'discovered image is a rejected or non-cacheable asset URL',
+      failed_at: generatedAt,
+      retry_after: nextFailureRetryAt(generatedAt, 'rejected-image-asset'),
+      attempts: 1,
+      event_ids: [row.id].filter(Boolean),
+      titles: [row.title].filter(Boolean).slice(0, 8),
+      source_hosts: []
+    };
+    rejectedLedgered.push(url);
+  }
   const fetched = [];
   const reused = [];
   const failed = [];
@@ -501,6 +521,7 @@ async function main() {
   console.log(`- Reused: ${manifest.totals.reused}`);
   console.log(`- Rejected removed: ${rejectedRemoved.length}`);
   console.log(`- Missing removed: ${missingRemoved.length}`);
+  console.log(`- Rejected ledgered: ${rejectedLedgered.length}`);
   console.log(`- Failed: ${manifest.totals.failed}`);
   console.log(`- Skipped recent failures: ${manifest.totals.skipped_recent_failures}`);
   console.log(`- Remembered failures: ${manifest.totals.remembered_failures}`);
