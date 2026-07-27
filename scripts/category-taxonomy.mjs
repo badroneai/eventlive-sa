@@ -234,6 +234,24 @@ function canonicalizeCategoryStatement(value, label) {
     .replace(/^(\s*category\s*:\s*).+$/iu, `$1${label}`);
 }
 
+export function normalizeEventCategoryWithFallback(event = {}, alerts = null) {
+  const normalized = normalizeEventCategory(event, { strict: false });
+  if (normalized) return normalized;
+  const rawCategory = event.raw_category !== undefined && event.raw_category !== null
+    ? String(event.raw_category)
+    : String(event.category || '');
+  if (Array.isArray(alerts)) {
+    alerts.push({
+      event_id: event.id || '(missing id)',
+      title: event.title || '',
+      raw_category: rawCategory,
+      fallback_category: 'community-occasions'
+    });
+  }
+  console.warn(`CATEGORY_ALERT unknown category "${rawCategory}" for ${event.id || '(missing id)'} — kept under community-occasions pending taxonomy review`);
+  return { ...event, raw_category: rawCategory, category: 'community-occasions' };
+}
+
 export function normalizeEventCategoryMetadata(event = {}) {
   const normalized = normalizeEventCategory(event);
   event.category = normalized.category;
