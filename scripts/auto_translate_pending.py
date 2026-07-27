@@ -13,6 +13,7 @@ simply stay in the visible pending backlog until the next run.
 """
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -20,6 +21,50 @@ ROOT = Path.cwd()
 PENDING = ROOT / "reports" / "content-translation-pending.json"
 OUT_DIR = ROOT / "workspaces" / "_auto-translate"
 DIRECTIONS = [("en", "ar"), ("ar", "en")]
+
+SENTENCE_SPLIT = re.compile(r"(?<=[.!?؟])\s+|\s*•\s*")
+ARABIC = re.compile(r"[ء-ي]")
+LATIN = re.compile(r"[A-Za-z]")
+
+
+MIXED_RUN_AR_TARGET = re.compile(r"[A-Za-z][A-Za-z0-9 ,;:'’&/()\-]{39,}")
+MIXED_RUN_EN_TARGET = re.compile(r"[ء-ي][ء-ي0-9 ،؛:'’&/()\-]{39,}")
+
+
+def has_source_language_run(text, target_lang):
+    """True when the text still carries a long copied-through run of the
+    source language (an untranslated sentence). Short Latin brand tokens in
+    Arabic output (or Arabic proper nouns in English output) are fine —
+    mirrors isMixedTranslationText in the node merge validator."""
+    pattern = MIXED_RUN_AR_TARGET if target_lang == "ar" else MIXED_RUN_EN_TARGET
+    return bool(pattern.search(text))
+
+
+def normalize_hard_tokens(text):
+    """Loosen tokens that make opus-mt copy a sentence verbatim instead of
+    translating it (slashed compounds, digit-hyphen words)."""
+    loosened = re.sub(r"(\w)/(\w)", r"\1 / \2", text)
+    loosened = re.sub(r"(\d)-(\w)", r"\1 \2", loosened)
+    return loosened
+
+
+def translate_segmented(translator, text, target_lang):
+    """Translate sentence by sentence so one hard sentence cannot poison the
+    whole entry with copied-through source text. Returns None when any
+    segment still comes back in the source language — a rejected row stays
+    visibly pending rather than shipping mixed-language output."""
+    segments = [seg for seg in SENTENCE_SPLIT.split(text) if seg and seg.strip()]
+    if not segments:
+        return None
+    translated_parts = []
+    for segment in segments:
+        result = translator.translate(segment).strip()
+        if has_source_language_run(result, target_lang):
+            result = translator.translate(normalize_hard_tokens(segment)).strip()
+        if has_source_language_run(result, target_lang):
+            return None
+        translated_parts.append(result)
+    return " ".join(translated_parts).strip()
 
 
 def log(message):
@@ -89,7 +134,7 @@ def main():
             skipped += 1
             continue
         try:
-            result = translator.translate(row["source"]).strip()
+            result = translate_segmented(translator, row["source"], row["target_lang"])
         except Exception:  # noqa: BLE001
             skipped += 1
             continue

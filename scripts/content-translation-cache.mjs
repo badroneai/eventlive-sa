@@ -62,6 +62,31 @@ export const CONTENT_PROSE_FIELDS = {
   session_scalars: ['title']
 };
 
+// A translation whose output still carries a long run of source-script text
+// (an untranslated sentence copied through by the MT engine) is worse than no
+// translation: it ships a mixed-language page. Detect and purge such entries
+// so they return to the visible pending backlog and get re-translated by the
+// sentence-level pipeline.
+export function isMixedTranslationText(text = '', targetLang = 'ar') {
+  const value = String(text || '');
+  if (targetLang === 'ar') return /[A-Za-z][A-Za-z0-9 ,;:'’&/()\-]{39,}/.test(value);
+  return /[ء-ي][ء-ي0-9 ،؛:'’&/()\-]{39,}/.test(value);
+}
+
+export function pruneMixedTranslations() {
+  const cache = loadContentTranslations();
+  const removed = [];
+  for (const [key, entry] of Object.entries(cache.entries || {})) {
+    if (!entry || entry.method === 'llm-agent') continue;
+    if (isMixedTranslationText(entry.text, entry.target_lang)) {
+      removed.push(key);
+      delete cache.entries[key];
+    }
+  }
+  if (removed.length) saveContentTranslations(cache);
+  return removed.length;
+}
+
 export function createContentTranslator() {
   const cache = loadContentTranslations();
   const pendingByKey = new Map();
@@ -69,6 +94,11 @@ export function createContentTranslator() {
   function translate(value, targetLang, { trackPending = true } = {}) {
     const text = normalizeContentText(value);
     if (!text) return { text: value, translated: false, needed: false, method: null };
+    // URLs, markup/subtitle junk, and numeric-dominant strings are not
+    // translatable content — never register them as pending work.
+    if (/^https?:\/\//i.test(text) || text.includes('{\\') || (text.match(/[A-Za-zء-ي]/g) || []).length < 4) {
+      return { text: value, translated: false, needed: false, method: null };
+    }
     const sourceLang = detectContentLang(text);
     if (!sourceLang || sourceLang === targetLang) return { text: value, translated: false, needed: false, method: null };
     const key = contentTranslationKey(sourceLang, targetLang, text);
