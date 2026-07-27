@@ -95,6 +95,9 @@ jobs:
           npm run test:indexnow
           npm run test:ai-search-readiness
 
+      - name: Verify public asset links (no broken event links ship to production)
+        run: npm run test:public-assets
+
       - name: Verify bilingual site contract
         run: |
           npm run test:i18n-contract
