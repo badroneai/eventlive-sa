@@ -93,6 +93,23 @@ jobs:
       - name: Collect trusted sources and publish catalog
         run: npm run sources:sync
 
+      - name: Setup Python for autonomous content translation
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Cache Argos translation models
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/share/argos-translate
+          key: argos-translate-models-en-ar-v1
+
+      - name: Install Argos Translate (open-source offline MT, no keys)
+        run: pip install --quiet argostranslate
+
+      - name: Translate new catalog content (autonomous, plan T7.1)
+        run: npm run translate:catalog
+
       - name: Regression checks
         run: |
           npm run validate:gate
@@ -132,6 +149,7 @@ jobs:
           npm run test:venue-location
           npm run test:image-cache
           npm run test:public-assets
+          npm run test:first-glance-trust
           npm run test:i18n-contract
           npm run test:i18n-site
           npm run test:seo-structured-data

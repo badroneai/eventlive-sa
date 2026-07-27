@@ -51,3 +51,33 @@ The browser language may trigger a dismissible suggestion. It never forces a red
 7. Run `npm run build`, `npm run launch:site-gates`, and the production deployment workflow.
 
 Do not activate a future locale in the public locale registry until all public routes, metadata, runtime strings, and release gates are complete.
+
+## Content translation memory (autonomous, plan T7.1 — implemented 2026-07-27)
+
+Event CONTENT (titles, summaries) arrives from sources in mixed languages.
+Locale purity is enforced by a cumulative translation memory, fully
+autonomous — no owner or operator action is ever required:
+
+- `data/content_translations.json`: persistent memory keyed by
+  `sha1(direction + normalized source text)`. A string is translated once,
+  forever. Committed with the daily sync state.
+- `scripts/content-translation-cache.mjs`: lookup/registration API used by the
+  build. Arabic pages swap in Arabic variants of foreign-language content;
+  English pages restore originals or English variants through the localizer's
+  exact-match dictionary.
+- Pending policy (owner decision 2026-07-27): only CURRENT and UPCOMING
+  events enter the pending backlog. Archival rows keep whatever the memory
+  already holds but never generate new translation work.
+- `npm run translate:catalog` (runs in `source-sync.yml` after every collect):
+  translates the pending backlog with offline open-source models
+  (Argos Translate / opus-mt family, $0, no API keys), merges through the
+  validated merge path (`scripts/merge-content-translations.mjs`, rejects
+  wrong-language or empty output), and rebuilds the site when new
+  translations land. The step NEVER fails the sync: with no models or no
+  network the backlog simply stays visible for the next run.
+- Observability: every build prints `Content translations pending: N` and
+  writes `reports/content-translation-pending.json`; `npm run i18n:pending`
+  shows the backlog. Steady state right after a sync is ~0-16 strings.
+- Quality tiers recorded per entry via `method`: `llm-agent` (editorial
+  batches) > `argos-mt` (autonomous). A later editorial batch may overwrite a
+  machine entry; the build always serves whatever the memory holds.

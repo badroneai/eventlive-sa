@@ -3,6 +3,7 @@ import path from 'node:path';
 import { load } from 'cheerio';
 import { parse } from 'acorn';
 import { CATEGORY_TAXONOMY, categoryDefinitionByKey } from './category-taxonomy.mjs';
+import { loadContentTranslations } from './content-translation-cache.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -23,10 +24,19 @@ const incrementalBuild = requestedIncrementalBuild
   && fs.existsSync(enDir);
 const exact = JSON.parse(fs.readFileSync(path.join(root, 'locales', 'en-SA-static.json'), 'utf8'));
 for (const category of CATEGORY_TAXONOMY) exact[category.label_ar] = category.label_en;
+const contentTranslations = loadContentTranslations();
+for (const entry of Object.values(contentTranslations.entries || {})) {
+  if (!entry?.source || !entry?.text) continue;
+  if (entry.source_lang === 'en' && entry.target_lang === 'ar' && !exact[entry.text]) exact[entry.text] = entry.source;
+  else if (entry.source_lang === 'ar' && entry.target_lang === 'en' && !exact[entry.source]) exact[entry.source] = entry.text;
+}
 const ownerOnly = new Set(['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html', 'owner-status.html', 'owner-search-growth.html', 'attendance.html']);
 const catalogEnvelope = JSON.parse(fs.readFileSync(path.join(distDir, 'events-catalog.json'), 'utf8'));
 const catalogEvents = catalogEnvelope.events || [];
 const eventByPath = new Map(catalogEvents.map((event) => [String(event.detail_url || '').replace(/^\.\//, ''), event]));
+for (const event of catalogEvents) {
+  event.title_en = event.title_original || exact[String(event.title || '').trim()] || event.title;
+}
 const runtimeScriptCache = new Map();
 
 function writeIfChanged(filePath, value) {
@@ -196,7 +206,7 @@ function escapeHtml(value = '') {
 }
 
 function englishEventSummary(event = {}, title = '', city = '') {
-  const eventTitle = title || event.title || 'this event';
+  const eventTitle = title || event.title_en || event.title || 'this event';
   const eventCity = exact[city] || event.city || city || 'Saudi Arabia';
   return `Official listing for ${eventTitle} in ${eventCity}. View verified timing, venue, directions, attendance details, and source information on EventLive.`;
 }

@@ -15,7 +15,9 @@ import {
 } from './category-taxonomy.mjs';
 
 const categoryFallbackAlerts = [];
+const contentTranslator = createContentTranslator();
 import { normalizeSaudiCity } from './city-utils.mjs';
+import { createContentTranslator } from './content-translation-cache.mjs';
 import { classifyEventKind, eventKindLabel, getEventStatus } from './event-kind-utils.mjs';
 import {
   eventAccessIsFree,
@@ -1026,6 +1028,19 @@ function buildEvents() {
     seenIds.add(idKey);
     seenSemantic.add(semanticKey);
     if (sourceIdentityKey) seenSourceIdentity.add(sourceIdentityKey);
+    const translationOptions = { trackPending: event.status !== 'ended' && sourceGroup !== 'ended' };
+    const localizedTitle = contentTranslator.translate(event.title, 'ar', translationOptions);
+    if (localizedTitle.translated) {
+      event.title_original = event.title;
+      event.title = localizedTitle.text;
+    }
+    const localizedSummary = contentTranslator.translate(event.summary, 'ar', translationOptions);
+    if (localizedSummary.translated) {
+      event.summary_original = event.summary;
+      event.summary = localizedSummary.text;
+    }
+    contentTranslator.translate(event.title_original || event.title, 'en', translationOptions);
+    contentTranslator.translate(event.summary_original || event.summary, 'en', translationOptions);
     events.push(event);
   }
   const sortedEvents = events.sort((a, b) => {
@@ -3011,7 +3026,9 @@ function writeCatalogFiles(events) {
   const catalogEvents = events.map((event) => ({
     id: event.id,
     title: event.title,
+    title_original: event.title_original,
     summary: event.summary,
+    summary_original: event.summary_original,
     organizer: event.organizer,
     city: event.city,
     city_url: event.city_url,
@@ -7275,6 +7292,8 @@ writeServiceWorker();
 removeForbiddenArtifacts();
 writeSitemap(events);
 writeAiSearchFiles(events);
+fs.mkdirSync(path.join(root, 'reports'), { recursive: true });
+fs.writeFileSync(path.join(root, 'reports', 'content-translation-pending.json'), `${JSON.stringify({ generated_at: new Date().toISOString(), pending: contentTranslator.pending() }, null, 2)}\n`, 'utf8');
 
 const patched = walkFiles(distDir)
   .filter((filePath) => {
@@ -7322,6 +7341,7 @@ const report = [
 `- Excluded-record references patched: ${excludedReferencePatched}`,
 `- Dead event links removed: ${deadEventLinksRemoved}`,
 `- Category fallback alerts: ${categoryFallbackAlerts.length}`,
+`- Content translations pending: ${contentTranslator.pending().length}`,
   `- Search intent pages generated: ${searchIntentPages.length}`,
   `- SEO pages changed: ${seoDiscovery.changed_events}`,
   `- SEO pages unchanged: ${seoDiscovery.unchanged_events}`,
