@@ -55,6 +55,7 @@ function isGenericSiteAssetPath(pathText = '') {
 export function isRejectedImageAssetUrl(value = '') {
   const { raw, pathText, filename, stem, segments } = assetParts(value);
   if (!raw) return false;
+  if (/\/(?:wp-content\/)?themes\/[^?#]*\.(?:png|jpe?g|webp|svg|gif|avif)(?:$|[?#])/i.test(pathText)) return true;
   if (segments.some((segment) => BAD_EXACT_SEGMENTS.has(segment))) return true;
   if (BAD_EXACT_SEGMENTS.has(stem)) return true;
   if (/(^|[-_.])(?:unsupported|placeholder|reject-shape|vision-w|spcommon|default[-_.]?meta[-_.]?image|arrow(?:[-_.](?:left|right|up|down))?|chevron(?:[-_.](?:left|right|up|down))?)([-_.]|$)/i.test(stem)) return true;
