@@ -98,6 +98,9 @@ jobs:
       - name: Verify public asset links (no broken event links ship to production)
         run: npm run test:public-assets
 
+      - name: Verify first-glance trust gate (no dead live elements ship)
+        run: npm run test:first-glance-trust
+
       - name: Verify bilingual site contract
         run: |
           npm run test:i18n-contract
