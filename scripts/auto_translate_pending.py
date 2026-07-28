@@ -67,6 +67,38 @@ def translate_segmented(translator, text, target_lang):
     return " ".join(translated_parts).strip()
 
 
+GLOSSARY_PATH = ROOT / "data" / "mt_glossary.json"
+
+
+def load_glossary():
+    """Curated ar->en entity glossary. Applied BEFORE machine translation so
+    the engine never gets to hallucinate Saudi entity names (argos rendered
+    'رقابة الهيئة' as 'control of UN-Women'). Longest terms first so compound
+    names win over their substrings. Missing/broken file degrades to empty —
+    translation must never break because of the glossary."""
+    try:
+        entries = json.loads(GLOSSARY_PATH.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001 — degrade gracefully by design
+        return []
+    compiled = []
+    for arabic, english in sorted(entries.items(), key=lambda item: -len(item[0])):
+        # Standalone occurrences only: an Arabic term must not match inside a
+        # longer word ('جدة' is a substring of 'المستجدة'). Attached-prefix
+        # forms (بجدة، لجدة) are deliberately missed rather than risk
+        # corrupting unrelated words.
+        compiled.append((re.compile(rf"(?<![ء-ي]){re.escape(arabic)}(?![ء-ي])"), english))
+    return compiled
+
+
+def apply_glossary(text, glossary):
+    """Replace known Arabic entity names with their canonical English before
+    ar->en MT; argos copies Latin tokens through untranslated, which is
+    exactly what we want for proper nouns."""
+    for pattern, english in glossary:
+        text = pattern.sub(english, text)
+    return text
+
+
 def log(message):
     print(f"AUTO_TRANSLATE {message}", flush=True)
 
@@ -134,6 +166,9 @@ def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     chunk_in = OUT_DIR / "chunk-01.json"
     chunk_out = OUT_DIR / "chunk-01.out.json"
+    glossary = load_glossary()
+    if glossary:
+        log(f"glossary loaded with {len(glossary)} entity terms")
     translated = {}
     skipped = 0
     for row in pending:
@@ -142,7 +177,10 @@ def main():
             skipped += 1
             continue
         try:
-            result = translate_segmented(translator, row["source"], row["target_lang"])
+            source_text = row["source"]
+            if row["target_lang"] == "en":
+                source_text = apply_glossary(source_text, glossary)
+            result = translate_segmented(translator, source_text, row["target_lang"])
         except Exception:  # noqa: BLE001
             skipped += 1
             continue

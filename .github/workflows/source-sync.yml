@@ -162,6 +162,7 @@ jobs:
           npm run test:i18n-contract
           npm run test:i18n-site
           npm run test:en-surface-sweep
+          npm run test:mt-glossary
           npm run test:seo-structured-data
           npm run test:ticket-offers
           npm run test:seo-freshness
