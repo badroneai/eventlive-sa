@@ -153,19 +153,29 @@ function latinDigits(value = '') {
   return String(value).replace(/[٠-٩]/g, (digit) => arabicDigits.get(digit));
 }
 
-function translateText(value = '') {
+function translateText(value = '', depth = 0) {
   const leading = String(value).match(/^\s*/)?.[0] || '';
   const trailing = String(value).match(/\s*$/)?.[0] || '';
   let text = String(value).trim();
   if (!text) return value;
-  if (exact[text]) return `${leading}${exact[text]}${trailing}`;
+  if (exact[text]) {
+    const mapped = exact[text];
+    // Content-cache "originals" can themselves be mixed-language (an Arabic
+    // label glued to an English value, e.g. "المنظم: King Abdulaziz…").
+    // Re-run such results through the pattern layer instead of shipping them.
+    if (depth < 3 && mapped !== text && /[ء-ي]/u.test(mapped)) {
+      return `${leading}${translateText(mapped, depth + 1).trim()}${trailing}`;
+    }
+    return `${leading}${mapped}${trailing}`;
+  }
+  if (depth < 3 && text.startsWith('· ')) return `${leading}· ${translateText(text.slice(2), depth + 1).trim()}${trailing}`;
   if (text.includes('،')) {
     const parts = text.split('،').map((part) => part.trim());
     if (parts.every((part) => exact[part])) return `${leading}${parts.map((part) => exact[part]).join(', ')}${trailing}`;
   }
   text = latinDigits(text).replace(/[\u200e\u200f]/gu, '');
-  if (text.includes(' · ')) text = text.split(' · ').map((part) => exact[part] || part).join(' · ');
-  if (text.includes(' | ')) text = text.split(' | ').map((part) => exact[part] || part).join(' | ');
+  if (depth < 3 && text.includes(' · ')) text = text.split(' · ').map((part) => translateText(part, depth + 1).trim() || part).join(' · ');
+  if (depth < 3 && text.includes(' | ')) text = text.split(' | ').map((part) => translateText(part, depth + 1).trim() || part).join(' | ');
   for (const [source, target] of wordReplacements) text = text.replaceAll(source, target);
   text = text
     .replaceAll(' بتوقيت الرياض', ' Riyadh time')
@@ -192,12 +202,37 @@ function translateText(value = '') {
     [/^آخر مزامنة:\s*(.+)$/u, 'Last synced: $1'],
     [/^يعرض\s+(\d+)\s+من\s+(\d+)\s+نتيجة مطابقة، من أصل\s+(\d+)\s+فعالية في الكتالوج$/u, 'Showing $1 of $2 matching results from $3 catalog events'],
     [/^عرض المزيد\s*\((\d+)\)$/u, 'Show more ($1)'],
-    [/^فتح\s+(.+)$/u, 'Open $1']
+    [/^مستمرة حتى\s+(.+)$/u, 'Ongoing until $1'],
+    [/^تبدأ\s+(\d{1,2}\s+\w+.*)$/u, 'Starts $1'],
+    [/^من\s+(\d[^ء-ي]*?)\s+إلى\s+(\d[^ء-ي]*)$/u, 'From $1 to $2'],
+    [/^الوقت:\s*(.+)$/u, (_, rest) => `Time: ${translateText(rest).trim()}`],
+    [/^الفعالية:\s*(.+)$/u, 'Event: $1'],
+    [/^([\d:T+.Z\-]+)\s+إلى\s+([\d:T+.Z\-]+)$/u, '$1 to $2'],
+    [/^تبدأ\s+(\d[^ء-ي]*?)\s+إلى\s+(\d[^ء-ي]*?)\s+لمدة\s+(\d+)\s+ساعات$/u, 'Starts $1 to $2, duration $3 hours'],
+    [/^المنظم:\s*(.+)$/u, 'Organizer: $1'],
+    [/^الموقع:\s*(.+)$/u, 'Venue: $1'],
+    [/^التاريخ:\s*(.+)$/u, (_, rest) => `Date: ${translateText(rest).trim()}`],
+    [/^النافذة الزمنية:\s*(.+)$/u, (_, rest) => `Time window: ${translateText(rest).trim()}`],
+    [/^(\d{1,2} \w+ \d{4}) في (\d{1,2}:\d{2} [AP]M) إلى (\d{1,2} \w+ \d{4}) في (\d{1,2}:\d{2} [AP]M)$/u, '$1 at $2 to $3 at $4'],
+    [/^(\d+)\s*جلسة$/u, '$1 sessions'],
+    [/^(\d+)\s*جلسات$/u, '$1 sessions'],
+    [/^(\d+)\s*قاعات$/u, '$1 rooms'],
+    [/^(\d+)\s*قاعة$/u, '$1 rooms'],
+    [/^(\d+)\s*مسارات$/u, '$1 tracks'],
+    [/^(\d+)\s*مسار$/u, '$1 tracks'],
+    [/^متى تبدأ\s+(.+)؟$/u, (_, title) => `When does ${exact[title] || title} start?`],
+    [/^أين تقام\s+(.+)؟$/u, (_, title) => `Where does ${exact[title] || title} take place?`],
+    [/^تقام الفعالية في\s+(.+)\.$/u, (_, place) => `The event takes place in ${place.split('، ').map((part) => exact[part] || part).join(', ')}.`],
+    [/^تعتمد EventLive على\s+(.+)\s+أو رابط دليل ظاهر في صفحة الفعالية، مع إبقاء رابط المصدر للمراجعة\.$/u, (_, source) => `EventLive relies on ${exact[source] || source} or a directory link visible on the event page, and keeps the source link for review.`],
+    [/^فتح\s+(.+)$/u, (_, target) => `Open ${exact[target] || target}`]
   ];
   for (const [pattern, replacement] of patterns) {
     if (pattern.test(text)) return `${leading}${text.replace(pattern, replacement)}${trailing}`;
   }
-  if (!/[\u0600-\u06ff]/u.test(text)) text = text.replaceAll('،', ',');
+  // Test for Arabic LETTERS, not the whole Arabic block: '،' itself lives in
+  // that block, so the old check left "Thursday، 23 July" carrying an Arabic
+  // comma forever on otherwise fully translated dates.
+  if (!/[\u0621-\u064a]/u.test(text)) text = text.replaceAll('،', ',').replaceAll('؟', '?').replaceAll('؛', ';');
   return `${leading}${text}${trailing}`;
 }
 
@@ -363,6 +398,72 @@ function insightsMarkup() {
   <section class="section"><div class="wrap"><div class="insight-note"><h2>How these numbers are calculated</h2><p>Counts come directly from EventLive public pages at build time. Active includes upcoming, ongoing, and live records. Completed events remain normal historical pages with their original dates. Internal candidates and blocked records are excluded.</p><p><a href="/saudi-events-insights.json">Open the JSON dataset</a> · <a href="./events.html">Browse all events</a></p></div></div></section>`;
 }
 
+function formatEnglishEventDate(value) {
+  if (!value) return '';
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return '';
+  return new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Riyadh', day: '2-digit', month: '2-digit', year: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true }).format(date);
+}
+
+// The event FAQ is template chrome with embedded content (title, dates,
+// venue, source). The generic text-node dictionary can never match these
+// composites, so rebuild them deterministically from catalog data — the
+// title itself stays whatever the autonomous content pipeline has produced.
+function englishEventFaq(event) {
+  const title = event.title_en || event.title || 'this event';
+  const city = exact[event.city] || event.city_label || event.city || 'Saudi Arabia';
+  const venue = event.venue ? (exact[event.venue] || event.venue) : '';
+  const sourceLabel = event.source_label || event.organizer || 'the official source';
+  const online = event.attendance_mode === 'online';
+  return [
+    {
+      question: `When does ${title} start?`,
+      answer: `${title} starts on ${formatEnglishEventDate(event.starts_at)} and ends on ${formatEnglishEventDate(event.ends_at)}, Saudi time.`
+    },
+    {
+      question: `Where does ${title} take place?`,
+      answer: online
+        ? 'This is an online event or one joined through an attendance/registration link; EventLive shows the source link when available.'
+        : `The event takes place in ${city}${venue && venue !== city ? `, ${venue}` : ''}.`
+    },
+    {
+      question: 'Is this information verified?',
+      answer: `EventLive relies on ${sourceLabel} or a directory link visible on the event page, and keeps the source link for review.`
+    },
+    {
+      question: 'Is a live schedule available?',
+      answer: event.live_schedule_ready
+        ? 'Yes. This page shows a live schedule or sessions you can follow in real time.'
+        : 'This page shows the main attendance window. A detailed agenda is added when the official source provides one.'
+    }
+  ];
+}
+
+function rebuildEnglishEventFaq($, event) {
+  const items = englishEventFaq(event);
+  $('.event-faq .program-check').each((index, block) => {
+    const item = items[index];
+    if (!item) return;
+    $(block).find('b').first().text(item.question);
+    $(block).find('p').first().text(item.answer);
+  });
+  $('script[type="application/ld+json"]').each((_, element) => {
+    try {
+      const value = JSON.parse($(element).html() || '{}');
+      if (value?.['@type'] !== 'FAQPage') return;
+      value.mainEntity = items.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: { '@type': 'Answer', text: item.answer }
+      }));
+      value.inLanguage = 'en-SA';
+      $(element).html(JSON.stringify(value));
+    } catch {
+      // translateJsonLd owns malformed JSON-LD handling.
+    }
+  });
+}
+
 function applyEnglishContentOverrides($, relativePath) {
   if (relativePath === 'organizers.html') $('main').html(organizersMarkup());
   else if (relativePath === 'about.html') $('main').html(aboutMarkup());
@@ -384,6 +485,7 @@ function applyEnglishContentOverrides($, relativePath) {
     const summary = englishEventSummary(event);
     $('.hero .lead').first().text(summary);
     $('.card-body p, .readiness > p').filter((_, element) => /[\u0600-\u06ff]/.test($(element).text()) && $(element).text().trim().length > 90).text(summary);
+    rebuildEnglishEventFaq($, event);
   }
 
   $('.card').each((_, card) => {
@@ -678,8 +780,17 @@ function translateJsonLd($) {
 
 function englishMeta($, relativePath) {
   const originalTitle = $('title').text().trim();
-  const translatedTitle = translateMetaText(originalTitle).replace(/\s+/g, ' ').trim();
-  $('title').text(/[\u0600-\u06ff]/.test(translatedTitle) ? `${originalTitle} | EventLive Saudi Arabia` : translatedTitle);
+  const event = eventByPath.get(relativePath);
+  if (event) {
+    // Event <title> tags are chrome+content composites ("{title} \u0641\u064a {city} |
+    // EventLive\u2026") that no dictionary entry can match. Rebuild the chrome in
+    // English; the title text follows the autonomous content pipeline.
+    const city = exact[event.city] || event.city_label || event.city || 'Saudi Arabia';
+    $('title').text(`${event.title_en || event.title} in ${city} | EventLive Saudi Arabia`);
+  } else {
+    const translatedTitle = translateMetaText(originalTitle).replace(/\s+/g, ' ').trim();
+    $('title').text(/[\u0600-\u06ff]/.test(translatedTitle) ? `${originalTitle} | EventLive Saudi Arabia` : translatedTitle);
+  }
   const generic = relativePath.startsWith('events/')
     ? 'Verified event timing, venue, directions, live status, and official source information on EventLive Saudi Arabia.'
     : 'Discover live events, exhibitions, conferences, workshops, and training programs across Saudi Arabia on EventLive.';
