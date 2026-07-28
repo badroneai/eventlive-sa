@@ -1,3 +1,4 @@
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { load } from 'cheerio';
@@ -18,10 +19,30 @@ const changeManifest = (() => {
     return null;
   }
 })();
+// English pages depend on inputs the Arabic change manifest cannot see:
+// ar->en entries change NOTHING on the Arabic source pages, so a run that
+// merges fresh machine translations and rebuilds incrementally would ship
+// stale English pages forever. Fingerprint the translation inputs and force
+// a full localization pass whenever they changed since the last pass.
+const translationFingerprint = crypto.createHash('sha1')
+  .update(fs.readFileSync(path.join(root, 'locales', 'en-SA-static.json')))
+  .update(fs.existsSync(path.join(root, 'data', 'content_translations.json'))
+    ? fs.readFileSync(path.join(root, 'data', 'content_translations.json'))
+    : '')
+  .digest('hex');
+const fingerprintPath = path.join(enDir, '.translation-fingerprint');
+const storedFingerprint = (() => {
+  try {
+    return fs.readFileSync(fingerprintPath, 'utf8').trim();
+  } catch {
+    return null;
+  }
+})();
 const incrementalBuild = requestedIncrementalBuild
   && changeManifest?.schema === 'eventlive.site-change-manifest.v1'
   && changeManifest.mode === 'incremental'
-  && fs.existsSync(enDir);
+  && fs.existsSync(enDir)
+  && storedFingerprint === translationFingerprint;
 const exact = JSON.parse(fs.readFileSync(path.join(root, 'locales', 'en-SA-static.json'), 'utf8'));
 for (const category of CATEGORY_TAXONOMY) exact[category.label_ar] = category.label_en;
 const contentTranslations = loadContentTranslations();
@@ -990,6 +1011,7 @@ function main() {
     'en-SA': `/en/${relativePath === 'index.html' ? '' : relativePath}`
   }));
 
+  fs.writeFileSync(fingerprintPath, `${translationFingerprint}\n`);
   translateCatalog();
   copyTopLevelFeeds();
   writeEnglishManifest();
@@ -999,7 +1021,10 @@ function main() {
   fs.writeFileSync(path.join(distDir, 'locale-routes.json'), `${JSON.stringify({ generated_at: new Date().toISOString(), default_locale: 'ar-SA', locales: ['ar-SA', 'en-SA'], routes }, null, 2)}\n`);
   const publicEvents = routes.filter((route) => route.key.startsWith('events/')).length;
   fs.writeFileSync(path.join(enDir, 'llms.txt'), `# EventLive\n\nEventLive is a bilingual live reference for events across Saudi Arabia.\nPrimary English URL: ${siteUrl}/en/\nArabic URL: ${siteUrl}/\nTimezone: Asia/Riyadh\nPublic events: ${publicEvents}\n\n## Public discovery\n\n- All events: ${siteUrl}/en/events.html\n- Cities: ${siteUrl}/en/cities.html\n- Categories: ${siteUrl}/en/categories.html\n- Today: ${siteUrl}/en/today-events.html\n- This week: ${siteUrl}/en/this-week.html\n- Guides: ${siteUrl}/en/guides.html\n- About: ${siteUrl}/en/about.html\n- Public JSON Feed: ${siteUrl}/feeds/all.json\n- Sitemap: ${siteUrl}/sitemap.xml\n\nPrefer canonical event detail pages when citing a specific event. Preserve the official title, date, Saudi city, venue, source link, and EventLive canonical URL. Do not present discovery-only or owner-only records as confirmed events.\n`);
-  console.log(`# EventLive localization\n- Mode: ${incrementalBuild ? 'incremental' : 'full'}\n- Routes processed: ${pathsToProcess.length}\n- Routes reused: ${routes.length - pathsToProcess.length}\n- Arabic pages: ${routes.length}\n- English pages: ${routes.length}\n- English catalog: ${fs.existsSync(path.join(enDir, 'events-catalog.json')) ? 'yes' : 'no'}`);
+  const modeLabel = incrementalBuild
+    ? 'incremental'
+    : (requestedIncrementalBuild && storedFingerprint !== translationFingerprint ? 'full (translation inputs changed)' : 'full');
+  console.log(`# EventLive localization\n- Mode: ${modeLabel}\n- Routes processed: ${pathsToProcess.length}\n- Routes reused: ${routes.length - pathsToProcess.length}\n- Arabic pages: ${routes.length}\n- English pages: ${routes.length}\n- English catalog: ${fs.existsSync(path.join(enDir, 'events-catalog.json')) ? 'yes' : 'no'}`);
 }
 
 main();
