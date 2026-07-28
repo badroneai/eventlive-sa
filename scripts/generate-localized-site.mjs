@@ -241,6 +241,7 @@ function translateText(value = '', depth = 0) {
     [/^(\d+)\s*قاعة$/u, '$1 rooms'],
     [/^(\d+)\s*مسارات$/u, '$1 tracks'],
     [/^(\d+)\s*مسار$/u, '$1 tracks'],
+    [/^(.+) - EventLive (JSON|ICS)$/u, (_, title, kind) => `${exact[title] || title} - EventLive ${kind}`],
     [/^متى تبدأ\s+(.+)؟$/u, (_, title) => `When does ${exact[title] || title} start?`],
     [/^أين تقام\s+(.+)؟$/u, (_, title) => `Where does ${exact[title] || title} take place?`],
     [/^تقام الفعالية في\s+(.+)\.$/u, (_, place) => `The event takes place in ${place.split('، ').map((part) => exact[part] || part).join(', ')}.`],
