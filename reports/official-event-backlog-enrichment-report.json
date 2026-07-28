@@ -1,12 +1,43 @@
 {
-  "generated_at": "2026-07-28T03:42:47.714Z",
+  "generated_at": "2026-07-28T08:59:24.373Z",
   "totals": {
-    "targets": 0,
-    "enriched": 0,
-    "fetched": 0,
-    "images": 0,
+    "targets": 3,
+    "enriched": 3,
+    "fetched": 3,
+    "images": 3,
     "fetch_failures": 0
   },
-  "enriched": [],
+  "enriched": [
+    {
+      "id": "event-gravity-carts-at-gamra",
+      "title": "Gravity Carts at Gamra",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/al-baha/events/gravity-carts-at-gamra",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-sprint-trail-buggy-ride-gamra",
+      "title": "Sprint Trail Buggy Ride Gamra",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/al-baha/events/sprint-trail-buggy-ride-gamra",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-وظائف-بحثية-تجربة",
+      "title": "وظائف بحثية - تجربة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41035",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    }
+  ],
   "failed": []
 }

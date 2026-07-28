@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-07-28T03:41:32.809Z",
+  "published_at": "2026-07-28T08:58:09.871Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 547,
+  "candidates_seen": 551,
   "totals": {
-    "candidates_seen": 547,
-    "published": 0,
+    "candidates_seen": 551,
+    "published": 4,
     "linked_existing": 507,
     "blocked": 40,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 507
+    "reconciled": 511
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -163,7 +163,28 @@
       "start_date_drift_days": 0.125
     }
   ],
-  "published": [],
+  "published": [
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-sprint-trail-buggy-ride-gamra-20260701-d5cb5231",
+      "event_id": "event-sprint-trail-buggy-ride-gamra",
+      "title": "Sprint Trail Buggy Ride Gamra"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-gravity-carts-at-gamra-20260701-8f6d9da9",
+      "event_id": "event-gravity-carts-at-gamra",
+      "title": "Gravity Carts at Gamra"
+    },
+    {
+      "candidate_id": "candidate-sfda-events-اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالجة--20260728-d3631f6f",
+      "event_id": "event-اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالجة-",
+      "title": "اشتراطات الفسح والتفتيش للمنشآت والمنتجات الخاضعة لرقابة الهيئة ومعالجة تحديات العملاء ومواكبة التحديثات"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-وظائف-بحثية-تجربة-20260728-602b04ea",
+      "event_id": "event-وظائف-بحثية-تجربة",
+      "title": "وظائف بحثية - تجربة"
+    }
+  ],
   "linked_existing": [
     {
       "candidate_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c",
@@ -790,6 +811,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-seasons-combat-arena-20260701-41ce2073",
+      "event_id": "event-combat-arena",
+      "title": "Combat Arena",
+      "reason": "trusted duplicate linked to existing catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-seasons-dakah-in-abha-20260701-966a161a",
       "event_id": "event-dakah-in-abha",
       "title": "Dakah in Abha",
@@ -811,12 +838,6 @@
       "candidate_id": "candidate-visit-saudi-seasons-mahabah-20260702-dd5fd13b",
       "event_id": "event-mahabah",
       "title": "Mahabah",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-combat-arena-20260703-41ce2073",
-      "event_id": "event-combat-arena",
-      "title": "Combat Arena",
       "reason": "already linked to catalog event"
     },
     {
@@ -1096,6 +1117,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260728-2bf92d17",
+      "event_id": "event-childrens-art-studio",
+      "title": "Children's Art Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260728-5bac584c",
       "event_id": "event-spot-of-inspiration",
       "title": "Spot of Inspiration",
@@ -1105,12 +1132,6 @@
       "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260728-ada8b9db",
       "event_id": "event-childrens-museum-story-time",
       "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260728-2bf92d17",
-      "event_id": "event-childrens-art-studio",
-      "title": "Children's Art Studio",
       "reason": "already linked to catalog event"
     },
     {
@@ -1576,12 +1597,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-moksha-20260811-0d457878",
-      "event_id": "event-moksha",
-      "title": "Moksha",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-sfda-events-الإدراج-في-خطوات-20260812-80dbadc1",
       "event_id": "event-الإدراج-في-خطوات",
       "title": "الإدراج في خطوات",
@@ -1597,6 +1612,12 @@
       "candidate_id": "candidate-ithra-events-english-children-book-club-10-12-20260812-efa3d7e3",
       "event_id": "event-english-children-book-club-10-12",
       "title": "English Children Book Club (10 - 12)",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-moksha-20260812-0d457878",
+      "event_id": "event-moksha",
+      "title": "Moksha",
       "reason": "already linked to catalog event"
     },
     {

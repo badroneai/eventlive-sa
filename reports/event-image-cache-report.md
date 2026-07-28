@@ -1,20 +1,20 @@
 # EventLive Event Image Cache Report
 
-- generated_at: 2026-07-28T03:43:36.381Z
+- generated_at: 2026-07-28T09:00:15.488Z
 - events_file: dist/events.json
 - manifest: data/event_image_cache_manifest.json
 - image_dir: dist/assets/event-images
 - targets: 500
-- cached_total: 756
-- fetched: 114
-- reused: 383
+- cached_total: 759
+- fetched: 3
+- reused: 494
 - rejected_removed: 0
-- missing_removed: 113
+- missing_removed: 0
 - failed: 3
 - skipped_recent_failures: 3
 - remembered_failures: 6
 - requires_rebuild: true
-- rebuild_reasons: fetched:114, missing-removed:113
+- rebuild_reasons: fetched:3
 - concurrency: 8
 
 ## Failed

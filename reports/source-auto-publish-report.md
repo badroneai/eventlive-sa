@@ -1,10 +1,10 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-28T03:41:32.809Z
+- published_at: 2026-07-28T08:58:09.871Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 547
-- published_new: 0
+- candidates_seen: 551
+- published_new: 4
 - linked_existing: 507
 - blocked_remaining: 40
 - duplicate_review_alerts: 8
@@ -25,6 +25,10 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
+| candidate-visit-saudi-seasons-sprint-trail-buggy-ride-gamra-20260701-d5cb5231 | published | event-sprint-trail-buggy-ride-gamra | Sprint Trail Buggy Ride Gamra |
+| candidate-visit-saudi-seasons-gravity-carts-at-gamra-20260701-8f6d9da9 | published | event-gravity-carts-at-gamra | Gravity Carts at Gamra |
+| candidate-sfda-events-اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالجة--20260728-d3631f6f | published | event-اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالجة- | اشتراطات الفسح والتفتيش للمنشآت والمنتجات الخاضعة لرقابة الهيئة ومعالجة تحديات العملاء ومواكبة التحديثات |
+| candidate-umm-al-qura-events-وظائف-بحثية-تجربة-20260728-602b04ea | published | event-وظائف-بحثية-تجربة | وظائف بحثية - تجربة |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -129,11 +133,11 @@
 | candidate-discover-aseer-events-dakah-20260701-812de878 | linked-existing | event-dakah | already linked to catalog event |
 | candidate-discover-aseer-events-marnis-20260701-3b641f5c | linked-existing | event-marnis | already linked to catalog event |
 | candidate-riyadh-city-events-prince-faisal-bin-fahd-art-exhibition-summer-2026-20260701-d143b98f | linked-existing | event-prince-faisal-bin-fahd-art-exhibition-summer-2026 | already linked to catalog event |
+| candidate-visit-saudi-seasons-combat-arena-20260701-41ce2073 | linked-existing | event-combat-arena | trusted duplicate linked to existing catalog event |
 | candidate-visit-saudi-seasons-dakah-in-abha-20260701-966a161a | linked-existing | event-dakah-in-abha | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-مهابة-20260702-4a38d19e | linked-existing | event-مهابة | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-explorers-as-told-by-the-land-traces-memory-20260702-09157ea4 | linked-existing | event-hayy-explorers | already linked to catalog event |
 | candidate-visit-saudi-seasons-mahabah-20260702-dd5fd13b | linked-existing | event-mahabah | already linked to catalog event |
-| candidate-visit-saudi-seasons-combat-arena-20260703-41ce2073 | linked-existing | event-combat-arena | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | linked-existing | event-الأخطبوطية | already linked to catalog event |
 | candidate-riyadh-city-events-registration-for-international-research-competition-on-non-terrestrial-n-20260704-61ba0723 | linked-existing | event-registration-for-international-research-competition-on-non-terrestrial-n | already linked to catalog event |
 | candidate-visit-saudi-calendar-okhtabotiya-20260704-914f9dce | linked-existing | event-okhtabotiya | already linked to catalog event |
@@ -180,9 +184,9 @@
 | candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260728-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
 | candidate-ithra-events-echoes-of-the-familiar-20260728-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-ithra-events-summer-youth-program-20260728-a20f7a11 | linked-existing | event-summer-youth-program | already linked to catalog event |
+| candidate-ithra-events-childrens-art-studio-20260728-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
 | candidate-ithra-events-spot-of-inspiration-20260728-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
 | candidate-ithra-events-childrens-museum-story-time-20260728-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
-| candidate-ithra-events-childrens-art-studio-20260728-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
 | candidate-ithra-events-emboss-printing-experience-20260728-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-ithra-events-chess-hub-20260728-4919439a | linked-existing | event-chess-hub | already linked to catalog event |
 | candidate-ithra-events-energy-lab-20260728-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
@@ -260,10 +264,10 @@
 | candidate-ithra-events-ithra-chess-tournament-20260811-49593879 | linked-existing | event-ithra-chess-tournament | already linked to catalog event |
 | candidate-ithra-events-ithra-chess-tournament-ages-18-20260811-a1231c37 | linked-existing | event-ithra-chess-tournament | already linked to catalog event |
 | candidate-ithra-events-english-children-book-club-7-9-20260811-fceb6af6 | linked-existing | event-english-children-book-club-7-9 | already linked to catalog event |
-| candidate-ithra-events-moksha-20260811-0d457878 | linked-existing | event-moksha | already linked to catalog event |
 | candidate-sfda-events-الإدراج-في-خطوات-20260812-80dbadc1 | linked-existing | event-الإدراج-في-خطوات | already linked to catalog event |
 | candidate-ithra-events-ithra-chess-tournament-ages-13-18-20260812-1baa0014 | linked-existing | event-ithra-chess-tournament-ages-13-18 | already linked to catalog event |
 | candidate-ithra-events-english-children-book-club-10-12-20260812-efa3d7e3 | linked-existing | event-english-children-book-club-10-12 | already linked to catalog event |
+| candidate-ithra-events-moksha-20260812-0d457878 | linked-existing | event-moksha | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-بطولة-أبطال-المملكة-للشطرنج-20260813-4a38d19e | linked-existing | event-بطولة-أبطال-المملكة-للشطرنج | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office-20260814-c4521792 | linked-existing | event-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office | already linked to catalog event |
 | candidate-ithra-events-petals-and-pals-english-20260815-2b82ff28 | linked-existing | event-petals-and-pals-english | already linked to catalog event |
