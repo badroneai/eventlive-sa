@@ -1,11 +1,10 @@
 # EventLive Official Event Backlog Enrichment
-- Generated at: 2026-07-28T15:59:43.237Z
-- Targets: 1
-- Enriched: 1
-- Fetched: 1
-- Images: 1
+- Generated at: 2026-07-28T20:02:59.748Z
+- Targets: 0
+- Enriched: 0
+- Fetched: 0
+- Images: 0
 - Fetch failures: 0
 
 | Source | Event | Method | Image | Fetch |
 |---|---|---:|---:|---:|
-| Hayy Jameel What's On | Hayy Cinema | Hayy Explorers At The Cinema | official-page-meta | yes | yes |

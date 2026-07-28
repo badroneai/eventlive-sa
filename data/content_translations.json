@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-28T16:06:53.820Z",
+  "generated_at": "2026-07-28T20:11:26.665Z",
   "entries": {
     "1f91543d6769d9abda47f221ba86f9f9ebf27443": {
       "source": "Skill Development Initiative",
@@ -47858,14 +47858,6 @@
       "method": "argos-mt",
       "translated_at": "2026-07-28T16:06:53.820Z"
     },
-    "0f156f2e12622bd48b939efe8b7b3a0e82560d40": {
-      "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of not less than 75%, and the equivalent of certificates is required from the Ministry of Higher Education for non-Saudi Arabian university graduates.",
-      "method": "argos-mt",
-      "translated_at": "2026-07-28T16:06:53.820Z"
-    },
     "ed8ec97d3bb3f8afc688868c5c9b4814e6a80b54": {
       "source": "شهادة حضور معتمدة من أكاديمية طويق.",
       "source_lang": "ar",
@@ -47890,14 +47882,6 @@
       "method": "argos-mt",
       "translated_at": "2026-07-28T16:06:53.820Z"
     },
-    "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
-      "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
-      "method": "argos-mt",
-      "translated_at": "2026-07-28T16:06:53.820Z"
-    },
     "b53cbc3490de9a323a45fe4fb6a529a945ba7c16": {
       "source": "تطبيق الحوكمة وإدارة المخاطر والامتثال وفق ضوابط NCA ومتطلبات ساما ذات الصلة.",
       "source_lang": "ar",
@@ -47911,14 +47895,6 @@
       "source_lang": "ar",
       "target_lang": "en",
       "text": "The situation of each session changes automatically between the coming and the end of the Riyadh time.",
-      "method": "argos-mt",
-      "translated_at": "2026-07-28T16:06:53.820Z"
-    },
-    "5c6a9ff87c6cdb115664bc8a097d521eadf27f9f": {
-      "source": "مركز الرياض للمعارض والمؤتمرات في ملهم",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "The Riyadh International Convention Exhibition Center in Inspiration",
       "method": "argos-mt",
       "translated_at": "2026-07-28T16:06:53.820Z"
     },
@@ -48057,6 +48033,46 @@
       "text": "Date: 10 February 2027:00 to 10 February 2027 at 60:00 m",
       "method": "argos-mt",
       "translated_at": "2026-07-28T16:06:53.820Z"
+    },
+    "0f156f2e12622bd48b939efe8b7b3a0e82560d40": {
+      "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of required disciplines declared at a rate not less than very good and at least 75%, and for graduates of non-Saudi Arabian universities, the equivalent of certificates is required from the Ministry of Higher Education.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-28T20:11:26.664Z"
+    },
+    "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
+      "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-28T20:11:26.665Z"
+    },
+    "5c6a9ff87c6cdb115664bc8a097d521eadf27f9f": {
+      "source": "مركز الرياض للمعارض والمؤتمرات في ملهم",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The Riyadh International Convention Exhibition Center in Inspiration",
+      "method": "argos-mt",
+      "translated_at": "2026-07-28T20:11:26.665Z"
+    },
+    "819f309e7c5697b5abf74a399060b30f81a4803e": {
+      "source": "Liquidity Is a Product: Designing Exit-Readiness (IPO, M&A, and Secondaries)",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "السيولة هي منتج: تسمية المخرج - الصلاحية (IPO, MA, and Secondaries)",
+      "method": "argos-mt",
+      "translated_at": "2026-07-28T20:11:26.665Z"
+    },
+    "01acd9ffd801c10fd89e1f056d5544f0bc2c8431": {
+      "source": "From Innovation to Infrastructure, The Government's Role in Structuring Scalable Tech Markets",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "من الابتكار إلى الهياكل الأساسية، دور الحكومة في هيكلة أسواق التكنولوجيا المتطورة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-28T20:11:26.665Z"
     }
   }
 }

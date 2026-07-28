@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T16:00:35.192Z",
+  "generated_at": "2026-07-28T20:03:49.592Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -9,20 +9,20 @@
     "fetched": 2,
     "reused": 495,
     "failed": 3,
-    "skipped_recent_failures": 0,
+    "skipped_recent_failures": 3,
     "remembered_failures": 6
   },
   "fetched": [
     {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/onuub3vn.3au.webp",
-      "file": "dist/assets/event-images/معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud-a619a81dc4.webp",
-      "bytes": 3902,
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/lasoupedefranzy_02.jpg",
+      "file": "dist/assets/event-images/هاي-سينما-هيي-اكسبلورر-في-السينما-3fa9c6623b.jpg",
+      "bytes": 48688,
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/lasoupedefranzy_02.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-hayy-explorers-at-the-cinema-3fa9c6623b.jpg",
-      "bytes": 48688,
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/onuub3vn.3au.webp",
+      "file": "dist/assets/event-images/معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud-a619a81dc4.webp",
+      "bytes": 3902,
       "events": 1
     }
   ],
@@ -563,11 +563,6 @@
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/Pharah-3-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-5579e02bd3.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/ygp2yueh.re2.webp",
       "file": "dist/assets/event-images/معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل-77da0c92d7.webp",
       "events": 1
@@ -640,11 +635,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/80f522efd4107e277b60a5b14d414771.jpg",
       "file": "dist/assets/event-images/swim-r-mission-3b2e3d2c10.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a1d6397472149e5f86f6e4d63682ca94.jpg",
-      "file": "dist/assets/event-images/الفن-في-الحياة-اليومية-d36fc1f92e.jpg",
       "events": 1
     },
     {
@@ -1958,6 +1948,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a1d6397472149e5f86f6e4d63682ca94.jpg",
+      "file": "dist/assets/event-images/الفن-في-الحياة-اليومية-d36fc1f92e.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-07/%D9%88%D8%B1%D8%B4%D8%A9%20%D8%B9%D9%85%D9%84%20-%20%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D8%B7%D8%A7%D8%AA%20%D8%A7%D9%84%D9%81%D8%B3%D8%AD%20v2.jpg",
       "file": "dist/assets/event-images/اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالج-74390d74b4.jpg",
       "events": 1
@@ -1965,6 +1960,11 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b5d9b257f76e8e22988d937aea95efaa.jpg",
       "file": "dist/assets/event-images/hobby-with-expert-health-and-sports-93b518d704.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/Pharah-3-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-5579e02bd3.jpg",
       "events": 1
     },
     {
@@ -2509,36 +2509,68 @@
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/onuub3vn.3au.webp",
       "file": "dist/assets/event-images/معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud-a619a81dc4.webp",
       "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/lasoupedefranzy_02.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-hayy-explorers-at-the-cinema-3fa9c6623b.jpg",
+      "reason": "cached-file-missing"
     }
   ],
-  "skipped_recent_failures": [],
-  "failed": [
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-07-29T16:00:35.192Z"
-    },
+  "skipped_recent_failures": [
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-07-29T16:00:35.192Z"
+      "retry_after": "2026-07-29T16:00:35.192Z",
+      "skipped": true
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-07-29T16:00:35.192Z"
+      "retry_after": "2026-07-29T16:00:35.192Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-07-29T16:00:35.192Z",
+      "skipped": true
+    }
+  ],
+  "failed": [
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-07-29T16:00:35.192Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-07-29T16:00:35.192Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-07-29T16:00:35.192Z",
+      "skipped": true
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
     "fetched:2",
-    "missing-removed:1",
-    "new-failures:3"
+    "missing-removed:2"
   ]
 }

@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-07-28T15:57:56.101Z",
+  "published_at": "2026-07-28T20:01:18.598Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 559,
+  "candidates_seen": 557,
   "totals": {
-    "candidates_seen": 559,
-    "published": 1,
-    "linked_existing": 518,
+    "candidates_seen": 557,
+    "published": 0,
+    "linked_existing": 517,
     "blocked": 40,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 519
+    "reconciled": 517
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -163,13 +163,7 @@
       "start_date_drift_days": 0.125
     }
   ],
-  "published": [
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-hayy-explorers-at-the-cinema-20270210-421ced3c",
-      "event_id": "event-hayy-cinema-hayy-explorers-at-the-cinema",
-      "title": "Hayy Cinema | Hayy Explorers At The Cinema"
-    }
-  ],
+  "published": [],
   "linked_existing": [
     {
       "candidate_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c",
@@ -1078,51 +1072,21 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-20260726-89cff8c5",
-      "event_id": "event-hayy-makers-2",
-      "title": "Hayy Makers | Introduction to Pottery Course with Pharah Al-Ghalib",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-misk-hub-programs-entrepreneur-leadership-excellence-program-20260727-dd903886",
       "event_id": "event-entrepreneur-leadership-excellence-program",
       "title": "Entrepreneur Leadership Excellence Program",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-وظائف-بحثية-تجربة-20260727-602b04ea",
+      "candidate_id": "candidate-umm-al-qura-events-عدد-من-الفرص-الوظيفية-المؤقتة-على-مشروع-بحثي-20260727-602b04ea",
       "event_id": "event-وظائف-بحثية-تجربة",
-      "title": "وظائف بحثية - تجربة",
+      "title": "عدد من الفرص الوظيفية المؤقتة على مشروع بحثي",
       "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-أوركسترا-harry-potter-20260728-4a38d19e",
       "event_id": "event-أوركسترا-harry-potter",
       "title": "أوركسترا Harry Potter",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260728-f563a36e",
-      "event_id": "event-ithra-summer-camp-2026-a-world-of-homes",
-      "title": "Ithra Summer Camp 2026: A world of homes",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-printing-house-20260728-e56f4f89",
-      "event_id": "event-printing-house",
-      "title": "Printing House",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tinkering-stations-20260728-5a2c4c0e",
-      "event_id": "event-tinkering-stations",
-      "title": "Tinkering Stations",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260728-562bc61d",
-      "event_id": "event-tafasahu-make-room",
-      "title": "Tafasahu: Make Room",
       "reason": "already linked to catalog event"
     },
     {
@@ -1138,57 +1102,27 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-chess-hub-20260728-4919439a",
-      "event_id": "event-chess-hub",
-      "title": "Chess Hub",
+      "candidate_id": "candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260729-f563a36e",
+      "event_id": "event-ithra-summer-camp-2026-a-world-of-homes",
+      "title": "Ithra Summer Camp 2026: A world of homes",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-energy-lab-20260728-60155d60",
-      "event_id": "event-energy-lab",
-      "title": "Energy Lab",
+      "candidate_id": "candidate-ithra-events-printing-house-20260729-e56f4f89",
+      "event_id": "event-printing-house",
+      "title": "Printing House",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-swim-r-mission-20260728-f8a6c05c",
-      "event_id": "event-swim-r-mission",
-      "title": "SWIM-R Mission",
+      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260729-562bc61d",
+      "event_id": "event-tafasahu-make-room",
+      "title": "Tafasahu: Make Room",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-open-art-space-20260728-40aac166",
-      "event_id": "event-open-art-space",
-      "title": "Open Art Space",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260728-2bf92d17",
-      "event_id": "event-childrens-art-studio",
-      "title": "Children's Art Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-water-challenges-20260728-eea51834",
-      "event_id": "event-water-challenges",
-      "title": "Water Challenges",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-art-in-everyday-life-20260728-b00d4ecc",
-      "event_id": "event-art-in-everyday-life",
-      "title": "Art in Everyday Life",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260728-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260728-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
+      "candidate_id": "candidate-ithra-events-tinkering-stations-20260729-5a2c4c0e",
+      "event_id": "event-tinkering-stations",
+      "title": "Tinkering Stations",
       "reason": "already linked to catalog event"
     },
     {
@@ -1198,9 +1132,33 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260729-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260729-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260729-2bf92d17",
+      "event_id": "event-childrens-art-studio",
+      "title": "Children's Art Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260729-2671d1ce",
       "event_id": "event-emboss-printing-experience",
       "title": "Emboss Printing Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-energy-lab-20260729-60155d60",
+      "event_id": "event-energy-lab",
+      "title": "Energy Lab",
       "reason": "already linked to catalog event"
     },
     {
@@ -1327,6 +1285,18 @@
       "candidate_id": "candidate-ithra-events-the-non-stop-spin-20260731-6cf89742",
       "event_id": "event-the-non-stop-spin",
       "title": "The Non-Stop Spin",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-open-art-space-20260731-40aac166",
+      "event_id": "event-open-art-space",
+      "title": "Open Art Space",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-water-challenges-20260731-eea51834",
+      "event_id": "event-water-challenges",
+      "title": "Water Challenges",
       "reason": "already linked to catalog event"
     },
     {
@@ -1492,6 +1462,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-chess-hub-20260804-4919439a",
+      "event_id": "event-chess-hub",
+      "title": "Chess Hub",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-ithra-readers-club-20260804-59a0cf0c",
       "event_id": "event-ithra-readers-club",
       "title": "Ithra Readers Club",
@@ -1537,6 +1513,12 @@
       "candidate_id": "candidate-ithra-events-little-explorers-20260806-1cc1993f",
       "event_id": "event-little-explorers",
       "title": "Little Explorers",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-swim-r-mission-20260806-f8a6c05c",
+      "event_id": "event-swim-r-mission",
+      "title": "SWIM-R Mission",
       "reason": "already linked to catalog event"
     },
     {
@@ -3037,6 +3019,12 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-at-the-edge-of-land-screening-and-q-a-with-artist-hira-nabi-20270208-24163839",
       "event_id": "event-hayy-cinema-at-the-edge-of-land-screening-and-q-a-with-artist-hira-nabi",
       "title": "Hayy Cinema | 'At the Edge of Land' Screening and Q&A with Artist Hira Nabi",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-hayy-explorers-at-the-cinema-20270210-421ced3c",
+      "event_id": "event-hayy-cinema-hayy-explorers-at-the-cinema",
+      "title": "Hayy Cinema | Hayy Explorers At The Cinema",
       "reason": "already linked to catalog event"
     },
     {
