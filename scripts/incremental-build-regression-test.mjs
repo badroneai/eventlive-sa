@@ -74,6 +74,7 @@ const localizer = fs.readFileSync('scripts/generate-localized-site.mjs', 'utf8')
 assert.match(localizer, /if \(!incrementalBuild\) fs\.rmSync\(enDir/, 'only full localization may delete the complete English tree');
 assert.match(localizer, /pathsToProcess = incrementalBuild/, 'incremental localization must select changed or missing routes');
 assert.match(localizer, /Routes reused:/, 'localization must report reuse explicitly');
+assert.match(localizer, /storedFingerprint === translationFingerprint/, 'incremental localization must be invalidated when translation inputs change: ar->en merges change nothing on Arabic source pages, so without this gate freshly translated English pages ship stale');
 
 const workflow = fs.readFileSync('.github/workflows/source-sync.yml', 'utf8');
 assert.match(workflow, /Restore incremental site cache/);
