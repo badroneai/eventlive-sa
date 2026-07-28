@@ -242,6 +242,7 @@ function translateText(value = '', depth = 0) {
     [/^(\d+)\s*مسارات$/u, '$1 tracks'],
     [/^(\d+)\s*مسار$/u, '$1 tracks'],
     [/^(.+) - EventLive (JSON|ICS)$/u, (_, title, kind) => `${exact[title] || title} - EventLive ${kind}`],
+    [/^غلاف EventLive لفعالية\s+(.+)$/u, (_, title) => `EventLive cover for ${exact[title] || title}`],
     [/^متى تبدأ\s+(.+)؟$/u, (_, title) => `When does ${exact[title] || title} start?`],
     [/^أين تقام\s+(.+)؟$/u, (_, title) => `Where does ${exact[title] || title} take place?`],
     [/^تقام الفعالية في\s+(.+)\.$/u, (_, place) => `The event takes place in ${place.split('، ').map((part) => exact[part] || part).join(', ')}.`],
@@ -648,8 +649,8 @@ function rewriteEnglishAssetUrls($, relativePath) {
 }
 
 function translateAttributes($) {
-  $('[placeholder],[aria-label],[title]').each((_, element) => {
-    for (const attr of ['placeholder', 'aria-label', 'title']) {
+  $('[placeholder],[aria-label],[title],[alt]').each((_, element) => {
+    for (const attr of ['placeholder', 'aria-label', 'title', 'alt']) {
       const value = $(element).attr(attr);
       if (value && /[\u0600-\u06ff]/.test(value)) $(element).attr(attr, translateText(value));
     }
@@ -774,7 +775,8 @@ function localizeJsonLdValue(value, key = '') {
       ? 'Verified event timing, venue, directions, live schedule, and official source information on EventLive Saudi Arabia.'
       : translated;
   }
-  if (['name', 'headline', 'keywords', 'alternateName'].includes(key)) return translateMetaText(value);
+  if (key === 'keywords') return value.split(', ').map((part) => translateMetaText(part)).join(', ');
+  if (['name', 'headline', 'alternateName'].includes(key)) return translateMetaText(value);
   return value;
 }
 
