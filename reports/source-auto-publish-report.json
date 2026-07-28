@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-07-28T13:19:15.072Z",
+  "published_at": "2026-07-28T13:45:35.729Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -7,8 +7,8 @@
   "candidates_seen": 558,
   "totals": {
     "candidates_seen": 558,
-    "published": 8,
-    "linked_existing": 510,
+    "published": 0,
+    "linked_existing": 518,
     "blocked": 40,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
@@ -163,48 +163,7 @@
       "start_date_drift_days": 0.125
     }
   ],
-  "published": [
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-scenic-buggy-ride-at-gamra-20260701-b271c921",
-      "event_id": "event-scenic-buggy-ride-at-gamra",
-      "title": "Scenic Buggy Ride at Gamra"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-scenic-buggy-ride-with-picnic-20260701-1e0427a2",
-      "event_id": "event-scenic-buggy-ride-with-picnic",
-      "title": "Scenic Buggy Ride with Picnic"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-al-balad-cinema-20260701-6c7f85e1",
-      "event_id": "event-al-balad-cinema",
-      "title": "Al Balad Cinema"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-honey-festival-2026-20260726-e22ae419",
-      "event_id": "event-honey-festival-2026",
-      "title": "Honey Festival 2026"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-tour-of-al-baha-20260730-7b170410",
-      "event_id": "event-tour-of-al-baha",
-      "title": "Tour of Al Baha"
-    },
-    {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-طويق-السيبراني-20260913-0881f1b9",
-      "event_id": "event-معسكر-طويق-السيبراني-2",
-      "title": "معسكر طويق السيبراني"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-panel-discussion-the-golden-palm-film-programme-20261113-93241e84",
-      "event_id": "event-hayy-cinema-panel-discussion-the-golden-palm-film-programme",
-      "title": "Hayy Cinema | Panel Discussion: The Golden Palm Film Programme"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-دبلوم-إدارة-المرافق-20270101-9b731ba4",
-      "event_id": "event-دبلوم-إدارة-المرافق",
-      "title": "دبلوم إدارة المرافق"
-    }
-  ],
+  "published": [],
   "linked_existing": [
     {
       "candidate_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c",
@@ -831,6 +790,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-seasons-scenic-buggy-ride-at-gamra-20260701-b271c921",
+      "event_id": "event-scenic-buggy-ride-at-gamra",
+      "title": "Scenic Buggy Ride at Gamra",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-scenic-buggy-ride-with-picnic-20260701-1e0427a2",
+      "event_id": "event-scenic-buggy-ride-with-picnic",
+      "title": "Scenic Buggy Ride with Picnic",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-seasons-gravity-carts-at-gamra-20260701-8f6d9da9",
       "event_id": "event-gravity-carts-at-gamra",
       "title": "Gravity Carts at Gamra",
@@ -846,6 +817,12 @@
       "candidate_id": "candidate-visit-saudi-seasons-combat-arena-20260701-41ce2073",
       "event_id": "event-combat-arena",
       "title": "Combat Arena",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-al-balad-cinema-20260701-6c7f85e1",
+      "event_id": "event-al-balad-cinema",
+      "title": "Al Balad Cinema",
       "reason": "already linked to catalog event"
     },
     {
@@ -1083,6 +1060,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-seasons-honey-festival-2026-20260726-e22ae419",
+      "event_id": "event-honey-festival-2026",
+      "title": "Honey Festival 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل-20260726-aa1669c2",
       "event_id": "event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل",
       "title": "معسكر تطوير البرمجيات السحابية الاحترافية لسحابة قوقل",
@@ -1155,12 +1138,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-summer-youth-program-20260728-a20f7a11",
-      "event_id": "event-summer-youth-program",
-      "title": "Summer Youth Program",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-childrens-art-studio-20260728-2bf92d17",
       "event_id": "event-childrens-art-studio",
       "title": "Children's Art Studio",
@@ -1176,12 +1153,6 @@
       "candidate_id": "candidate-ithra-events-energy-lab-20260728-60155d60",
       "event_id": "event-energy-lab",
       "title": "Energy Lab",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260728-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
       "reason": "already linked to catalog event"
     },
     {
@@ -1212,6 +1183,18 @@
       "candidate_id": "candidate-ithra-events-art-in-everyday-life-20260728-b00d4ecc",
       "event_id": "event-art-in-everyday-life",
       "title": "Art in Everyday Life",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260728-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-summer-youth-program-20260729-a20f7a11",
+      "event_id": "event-summer-youth-program",
+      "title": "Summer Youth Program",
       "reason": "already linked to catalog event"
     },
     {
@@ -1266,6 +1249,12 @@
       "candidate_id": "candidate-discover-aseer-events-summer-legacy-20260730-aaba4732",
       "event_id": "event-summer-legacy",
       "title": "Summer Legacy",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-tour-of-al-baha-20260730-7b170410",
+      "event_id": "event-tour-of-al-baha",
+      "title": "Tour of Al Baha",
       "reason": "already linked to catalog event"
     },
     {
@@ -2032,7 +2021,13 @@
     },
     {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-طويق-السيبراني-20260913-d741a736",
-      "event_id": "event-معسكر-طويق-السيبراني",
+      "event_id": "event-معسكر-طويق-السيبراني-2",
+      "title": "معسكر طويق السيبراني",
+      "reason": "trusted duplicate linked to existing catalog event"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-طويق-السيبراني-20260913-0881f1b9",
+      "event_id": "event-معسكر-طويق-السيبراني-2",
       "title": "معسكر طويق السيبراني",
       "reason": "already linked to catalog event"
     },
@@ -2613,6 +2608,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-panel-discussion-the-golden-palm-film-programme-20261113-93241e84",
+      "event_id": "event-hayy-cinema-panel-discussion-the-golden-palm-film-programme",
+      "title": "Hayy Cinema | Panel Discussion: The Golden Palm Film Programme",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-intersec-saudi-arabia-20261116-fb165cc3",
       "event_id": "event-intersec-saudi-arabia",
       "title": "Intersec Saudi Arabia",
@@ -2952,6 +2953,12 @@
       "candidate_id": "candidate-asharqia-chamber-events-معرض-وظائف-2026-20261227-6ec9f54f",
       "event_id": "event-معرض-وظائف-2026",
       "title": "معرض وظائف 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-دبلوم-إدارة-المرافق-20270101-9b731ba4",
+      "event_id": "event-دبلوم-إدارة-المرافق",
+      "title": "دبلوم إدارة المرافق",
       "reason": "already linked to catalog event"
     },
     {

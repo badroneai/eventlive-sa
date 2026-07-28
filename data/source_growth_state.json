@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-growth-state.v1",
-  "generated_at": "2026-07-28T13:21:50.127Z",
+  "generated_at": "2026-07-28T13:47:39.186Z",
   "runs": [
     {
       "run_id": "2026-07-11T01:11:39.757Z",
@@ -906,11 +906,11 @@
     },
     {
       "run_id": "2026-07-28T13:11:04.707Z",
-      "generated_at": "2026-07-28T13:21:50.127Z",
+      "generated_at": "2026-07-28T13:38:19.817Z",
       "collected_at": "2026-07-28T13:11:04.707Z",
       "catalog_active_rows": 654,
       "catalog_ended_rows": 762,
-      "public_events": 1396,
+      "public_events": 1118,
       "candidates_discovered": 323,
       "new_active_candidates": 29,
       "new_ended_events": 0,
@@ -920,8 +920,30 @@
       "sources_attempted": 19,
       "productive_sources": 19,
       "collector_errors": 0,
-      "public_delta": 278,
+      "public_delta": 0,
       "catalog_delta": 8,
+      "no_growth_streak": 41,
+      "lost_published_output": true,
+      "status": "critical-persistence-gap"
+    },
+    {
+      "run_id": "2026-07-28T13:38:20.556Z",
+      "generated_at": "2026-07-28T13:47:39.186Z",
+      "collected_at": "2026-07-28T13:38:20.556Z",
+      "catalog_active_rows": 654,
+      "catalog_ended_rows": 762,
+      "public_events": 1396,
+      "candidates_discovered": 323,
+      "new_active_candidates": 21,
+      "new_ended_events": 0,
+      "published_new": 0,
+      "linked_existing": 518,
+      "blocked_remaining": 40,
+      "sources_attempted": 19,
+      "productive_sources": 19,
+      "collector_errors": 0,
+      "public_delta": 278,
+      "catalog_delta": 0,
       "no_growth_streak": 0,
       "lost_published_output": false,
       "status": "healthy"
