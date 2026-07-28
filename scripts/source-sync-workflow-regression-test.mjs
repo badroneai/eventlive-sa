@@ -46,6 +46,10 @@ assert.match(workflow, /data\/source_run_state\.json/, 'source sync must persist
 assert.match(workflow, /data\/source_growth_state\.json/, 'source sync must persist growth history across scheduled runs');
 assert.match(workflow, /data\/event_image_cache_manifest\.json/, 'source sync must persist image cache manifest across scheduled runs');
 assert.match(workflow, /data\/content_translations\.json/, 'source sync must persist CI-merged machine translations, or every run re-translates the same backlog and the English side never converges');
+assert.match(workflow, /npm run test:en-surface-sweep/, 'the English-surface sweep gate must run on every sync — template chrome drift shipped silently for days without it');
+assert.match(workflow, /issues:\s*write/, 'the sync must be allowed to maintain its own surface-debt issue — alerting must not depend on humans polling reports');
+assert.match(workflow, /report-surface-debt-issue\.mjs/, 'recurring surface debt must feed the autonomous GitHub-issue alert');
+assert.match(workflow, /reports\/i18n-en-surface\.json/, 'the sweep report must persist for trend inspection');
 assert.match(workflow, /argos-translate-models-both-directions-v2/, 'the argos model cache key must cover both translation directions (the v1 cache held en->ar only and starved ar->en forever)');
 assert.match(workflow, /reports\/source-\*\.json/, 'source sync must persist machine-readable source operation reports');
 assert.match(workflow, /reports\/source-\*\.md/, 'source sync must persist readable source operation reports');
