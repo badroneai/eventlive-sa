@@ -1,34 +1,58 @@
 {
-  "generated_at": "2026-07-28T09:00:15.488Z",
+  "generated_at": "2026-07-28T13:21:50.417Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 759,
-    "fetched": 3,
-    "reused": 494,
+    "cached_total": 766,
+    "fetched": 7,
+    "reused": 490,
     "failed": 3,
     "skipped_recent_failures": 3,
     "remembered_failures": 6
   },
   "fetched": [
     {
-      "source_url": "https://scth.scene7.com/is/image/scth/sprint-trail-buggy-ride-gamra?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/sprint-trail-buggy-ride-gamra-ec55e7ccd9.webp",
-      "bytes": 207488,
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/11/DSC00003-scaled-aspect-ratio-2560-1269-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-panel-discussion-the-golden-palm-film-programme-18b71797c9.jpg",
+      "bytes": 56966,
       "events": 1
     },
     {
-      "source_url": "https://scth.scene7.com/is/image/scth/gravity-carts-at-gamra?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/gravity-carts-at-gamra-577197a38b.webp",
-      "bytes": 199946,
+      "source_url": "https://scth.scene7.com/is/image/scth/al-balad-cinema?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/al-balad-cinema-2f95f8f37c.webp",
+      "bytes": 64304,
       "events": 1
     },
     {
-      "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-07/%D9%88%D8%B1%D8%B4%D8%A9%20%D8%B9%D9%85%D9%84%20-%20%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D8%B7%D8%A7%D8%AA%20%D8%A7%D9%84%D9%81%D8%B3%D8%AD%20v2.jpg",
-      "file": "dist/assets/event-images/اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالج-74390d74b4.jpg",
-      "bytes": 606788,
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/ltndjkdp.s2k.webp",
+      "file": "dist/assets/event-images/معسكر-طويق-السيبراني-3c17200540.webp",
+      "bytes": 12398,
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/scenic-buggy-ride-with-picnic?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/scenic-buggy-ride-with-picnic-4949658c04.webp",
+      "bytes": 149656,
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/scenic-buggy-ride-at-gamra?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/scenic-buggy-ride-at-gamra-ebe0358607.webp",
+      "bytes": 207980,
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/tour-of-al-baha?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/tour-of-al-baha-b3427bf102.webp",
+      "bytes": 154842,
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/honey-festival-2026?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/honey-festival-2026-2dbd82b5e5.webp",
+      "bytes": 217470,
       "events": 1
     }
   ],
@@ -344,6 +368,16 @@
       "events": 1
     },
     {
+      "source_url": "https://scth.scene7.com/is/image/scth/sprint-trail-buggy-ride-gamra?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/sprint-trail-buggy-ride-gamra-ec55e7ccd9.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/gravity-carts-at-gamra?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/gravity-carts-at-gamra-577197a38b.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/GyN7i2hWYAEFU3X.jpeg?itok=of7aIuP0",
       "file": "dist/assets/event-images/prince-faisal-bin-fahd-art-exhibition-summer-2026-8216b3ee07.jpg",
       "events": 1
@@ -604,9 +638,14 @@
       "events": 1
     },
     {
+      "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-07/%D9%88%D8%B1%D8%B4%D8%A9%20%D8%B9%D9%85%D9%84%20-%20%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D8%B7%D8%A7%D8%AA%20%D8%A7%D9%84%D9%81%D8%B3%D8%AD%20v2.jpg",
+      "file": "dist/assets/event-images/اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالج-74390d74b4.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "events": 10
+      "events": 11
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5d9089ccc5309c4c20ca0c1099df3ab1.jpg",
@@ -2467,41 +2506,6 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/260e65f936a1f5c45da49eb41456cb4c.jpg",
       "file": "dist/assets/event-images/textured-painting-bb6433ce72.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4ee75026c1380525ab95646206e3901b.jpg",
-      "file": "dist/assets/event-images/film-screenings-af1ef83177.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6de73774b39094442034156cc5f7f4fe.jpg",
-      "file": "dist/assets/event-images/hijra-c10c3a2a68.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fe52134dbaddeb838f577a8c7d1f95b0.jpg",
-      "file": "dist/assets/event-images/spotlight-on-korean-cinema-group-1-8b11d9949f.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b8aa1df70855161b23e027b4424dbbee.jpg",
-      "file": "dist/assets/event-images/production-market-ec30f7727d.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/e122e64d061155cb3737d462408108f6.png",
-      "file": "dist/assets/event-images/the-world-as-your-canvas-introduction-to-ar-19c028814e.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4b6aa487820d2c6149ce488b8fe297a5.jpg",
-      "file": "dist/assets/event-images/red-carpet-f62ab36481.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/cac5cfb1902e9a2d74bbfb53a20dc22a.jpg",
-      "file": "dist/assets/event-images/designing-presence-057587ef40.jpg",
-      "events": 1
     }
   ],
   "rejected_removed": [],
@@ -2560,6 +2564,6 @@
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:3"
+    "fetched:7"
   ]
 }

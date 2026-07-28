@@ -1,39 +1,79 @@
 {
-  "generated_at": "2026-07-28T08:59:24.373Z",
+  "generated_at": "2026-07-28T13:21:05.637Z",
   "totals": {
-    "targets": 3,
-    "enriched": 3,
-    "fetched": 3,
-    "images": 3,
+    "targets": 7,
+    "enriched": 7,
+    "fetched": 7,
+    "images": 7,
     "fetch_failures": 0
   },
   "enriched": [
     {
-      "id": "event-gravity-carts-at-gamra",
-      "title": "Gravity Carts at Gamra",
+      "id": "event-al-balad-cinema",
+      "title": "Al Balad Cinema",
       "source_label": "Visit Saudi Seasons",
       "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/en/al-baha/events/gravity-carts-at-gamra",
+      "source_url": "https://www.visitsaudi.com/en/al-baha/events/al-balad-cinema",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-sprint-trail-buggy-ride-gamra",
-      "title": "Sprint Trail Buggy Ride Gamra",
-      "source_label": "Visit Saudi Seasons",
+      "id": "event-hayy-cinema-panel-discussion-the-golden-palm-film-programme",
+      "title": "Hayy Cinema | Panel Discussion: The Golden Palm Film Programme",
+      "source_label": "Hayy Jameel What's On",
       "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/en/al-baha/events/sprint-trail-buggy-ride-gamra",
+      "source_url": "https://hayyjameel.org/whats-on/the-golden-palm-film-programme-i-panel-discussions/",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-وظائف-بحثية-تجربة",
-      "title": "وظائف بحثية - تجربة",
+      "id": "event-honey-festival-2026",
+      "title": "Honey Festival 2026",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/al-baha/events/honey-festival-2026",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-scenic-buggy-ride-at-gamra",
+      "title": "Scenic Buggy Ride at Gamra",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/al-baha/events/scenic-buggy-ride-at-gamra",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-scenic-buggy-ride-with-picnic",
+      "title": "Scenic Buggy Ride with Picnic",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/al-baha/events/scenic-buggy-ride-with-picnic",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-tour-of-al-baha",
+      "title": "Tour of Al Baha",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/al-baha/events/tour-of-al-baha",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-دبلوم-إدارة-المرافق",
+      "title": "دبلوم إدارة المرافق",
       "source_label": "Umm Al-Qura University Events Center",
       "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41035",
+      "source_url": "https://uqu.edu.sa/App/Events/41036",
       "fetched": true,
       "image": true,
       "fetch_reason": ""

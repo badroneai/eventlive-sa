@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-07-28T08:58:09.871Z",
+  "published_at": "2026-07-28T13:19:15.072Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 551,
+  "candidates_seen": 558,
   "totals": {
-    "candidates_seen": 551,
-    "published": 4,
-    "linked_existing": 507,
+    "candidates_seen": 558,
+    "published": 8,
+    "linked_existing": 510,
     "blocked": 40,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 511
+    "reconciled": 518
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -165,24 +165,44 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-visit-saudi-seasons-sprint-trail-buggy-ride-gamra-20260701-d5cb5231",
-      "event_id": "event-sprint-trail-buggy-ride-gamra",
-      "title": "Sprint Trail Buggy Ride Gamra"
+      "candidate_id": "candidate-visit-saudi-seasons-scenic-buggy-ride-at-gamra-20260701-b271c921",
+      "event_id": "event-scenic-buggy-ride-at-gamra",
+      "title": "Scenic Buggy Ride at Gamra"
     },
     {
-      "candidate_id": "candidate-visit-saudi-seasons-gravity-carts-at-gamra-20260701-8f6d9da9",
-      "event_id": "event-gravity-carts-at-gamra",
-      "title": "Gravity Carts at Gamra"
+      "candidate_id": "candidate-visit-saudi-seasons-scenic-buggy-ride-with-picnic-20260701-1e0427a2",
+      "event_id": "event-scenic-buggy-ride-with-picnic",
+      "title": "Scenic Buggy Ride with Picnic"
     },
     {
-      "candidate_id": "candidate-sfda-events-اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالجة--20260728-d3631f6f",
-      "event_id": "event-اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالجة-",
-      "title": "اشتراطات الفسح والتفتيش للمنشآت والمنتجات الخاضعة لرقابة الهيئة ومعالجة تحديات العملاء ومواكبة التحديثات"
+      "candidate_id": "candidate-visit-saudi-seasons-al-balad-cinema-20260701-6c7f85e1",
+      "event_id": "event-al-balad-cinema",
+      "title": "Al Balad Cinema"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-وظائف-بحثية-تجربة-20260728-602b04ea",
-      "event_id": "event-وظائف-بحثية-تجربة",
-      "title": "وظائف بحثية - تجربة"
+      "candidate_id": "candidate-visit-saudi-seasons-honey-festival-2026-20260726-e22ae419",
+      "event_id": "event-honey-festival-2026",
+      "title": "Honey Festival 2026"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-tour-of-al-baha-20260730-7b170410",
+      "event_id": "event-tour-of-al-baha",
+      "title": "Tour of Al Baha"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-طويق-السيبراني-20260913-0881f1b9",
+      "event_id": "event-معسكر-طويق-السيبراني-2",
+      "title": "معسكر طويق السيبراني"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-panel-discussion-the-golden-palm-film-programme-20261113-93241e84",
+      "event_id": "event-hayy-cinema-panel-discussion-the-golden-palm-film-programme",
+      "title": "Hayy Cinema | Panel Discussion: The Golden Palm Film Programme"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-دبلوم-إدارة-المرافق-20270101-9b731ba4",
+      "event_id": "event-دبلوم-إدارة-المرافق",
+      "title": "دبلوم إدارة المرافق"
     }
   ],
   "linked_existing": [
@@ -805,6 +825,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-seasons-sprint-trail-buggy-ride-gamra-20260701-d5cb5231",
+      "event_id": "event-sprint-trail-buggy-ride-gamra",
+      "title": "Sprint Trail Buggy Ride Gamra",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-gravity-carts-at-gamra-20260701-8f6d9da9",
+      "event_id": "event-gravity-carts-at-gamra",
+      "title": "Gravity Carts at Gamra",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-prince-faisal-bin-fahd-art-exhibition-summer-2026-20260701-d143b98f",
       "event_id": "event-prince-faisal-bin-fahd-art-exhibition-summer-2026",
       "title": "Prince Faisal Bin Fahd Art Exhibition: Summer 2026",
@@ -814,7 +846,7 @@
       "candidate_id": "candidate-visit-saudi-seasons-combat-arena-20260701-41ce2073",
       "event_id": "event-combat-arena",
       "title": "Combat Arena",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-visit-saudi-seasons-dakah-in-abha-20260701-966a161a",
@@ -1069,6 +1101,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-umm-al-qura-events-وظائف-بحثية-تجربة-20260727-602b04ea",
+      "event_id": "event-وظائف-بحثية-تجربة",
+      "title": "وظائف بحثية - تجربة",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-أوركسترا-harry-potter-20260728-4a38d19e",
       "event_id": "event-أوركسترا-harry-potter",
       "title": "أوركسترا Harry Potter",
@@ -1111,6 +1149,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-sfda-events-اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالجة--20260728-d3631f6f",
+      "event_id": "event-اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالجة-",
+      "title": "اشتراطات الفسح والتفتيش للمنشآت والمنتجات الخاضعة لرقابة الهيئة ومعالجة تحديات العملاء ومواكبة التحديثات",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-summer-youth-program-20260728-a20f7a11",
       "event_id": "event-summer-youth-program",
       "title": "Summer Youth Program",
@@ -1123,24 +1167,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260728-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260728-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260728-2671d1ce",
-      "event_id": "event-emboss-printing-experience",
-      "title": "Emboss Printing Experience",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-chess-hub-20260728-4919439a",
       "event_id": "event-chess-hub",
       "title": "Chess Hub",
@@ -1150,6 +1176,18 @@
       "candidate_id": "candidate-ithra-events-energy-lab-20260728-60155d60",
       "event_id": "event-energy-lab",
       "title": "Energy Lab",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260728-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260728-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -1174,6 +1212,12 @@
       "candidate_id": "candidate-ithra-events-art-in-everyday-life-20260728-b00d4ecc",
       "event_id": "event-art-in-everyday-life",
       "title": "Art in Everyday Life",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260729-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
       "reason": "already linked to catalog event"
     },
     {
@@ -1988,12 +2032,6 @@
     },
     {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-طويق-السيبراني-20260913-d741a736",
-      "event_id": "event-معسكر-طويق-السيبراني",
-      "title": "معسكر طويق السيبراني",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-طويق-السيبراني-20260913-0881f1b9",
       "event_id": "event-معسكر-طويق-السيبراني",
       "title": "معسكر طويق السيبراني",
       "reason": "already linked to catalog event"

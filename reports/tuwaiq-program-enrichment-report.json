@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-28T08:58:11.668Z",
+  "generated_at": "2026-07-28T13:19:16.526Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 27,
-    "enriched": 26,
+    "targets": 28,
+    "enriched": 27,
     "failed": 1
   },
   "enriched": [
@@ -168,12 +168,12 @@
       "requirements": 8
     },
     {
-      "id": "event-معسكر-طويق-السيبراني",
+      "id": "event-معسكر-طويق-السيبراني-2",
       "title": "معسكر طويق السيبراني",
-      "slug": "oA2ryDzB",
+      "slug": "KEvAkjLJ",
       "goals": 3,
       "features": 3,
-      "requirements": 5
+      "requirements": 8
     },
     {
       "id": "event-معسكر-حلول-الحوسبة-السحابية-aws-google-cloud",
@@ -214,6 +214,14 @@
       "goals": 10,
       "features": 6,
       "requirements": 7
+    },
+    {
+      "id": "event-معسكر-طويق-السيبراني",
+      "title": "معسكر طويق السيبراني",
+      "slug": "oA2ryDzB",
+      "goals": 3,
+      "features": 3,
+      "requirements": 5
     }
   ],
   "failed": [
