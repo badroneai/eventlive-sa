@@ -215,6 +215,7 @@
     "test:content-localization": "node scripts/content-localization-regression-test.mjs",
     "test:i18n-contract": "node scripts/i18n-contract-regression-test.mjs",
     "test:i18n-site": "node scripts/i18n-site-regression-test.mjs",
+    "test:en-surface-sweep": "node scripts/en-surface-sweep-regression-test.mjs",
     "audit:secret-env": "node scripts/secret-env-audit.mjs",
     "test:secret-env": "node scripts/secret-env-regression-test.mjs",
     "audit:compliance-source-rights": "node scripts/compliance-source-rights-audit.mjs",

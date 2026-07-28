@@ -12,6 +12,9 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  # issues: write powers the autonomous surface-debt alert — the sync opens,
+  # updates, and closes its own GitHub issue instead of anyone polling reports.
+  issues: write
 
 concurrency:
   group: eventme-source-sync
@@ -158,6 +161,7 @@ jobs:
           npm run test:first-glance-trust
           npm run test:i18n-contract
           npm run test:i18n-site
+          npm run test:en-surface-sweep
           npm run test:seo-structured-data
           npm run test:ticket-offers
           npm run test:seo-freshness
@@ -165,6 +169,11 @@ jobs:
           npm run test:ai-search-readiness
           npm run test:event-kind
           npm run test:city-search
+
+      - name: Autonomous surface-debt alerting (self-maintained GitHub issue)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/report-surface-debt-issue.mjs
 
       - name: Persist sync state back to the repository
         run: |
@@ -193,7 +202,8 @@ jobs:
             reports/official-single-session-activation-report.json \
             reports/official-single-session-activation-report.md \
             reports/eye-official-link-verification-report.json \
-            reports/eye-official-link-verification-report.md
+            reports/eye-official-link-verification-report.md \
+            reports/i18n-en-surface.json
           if git diff --cached --quiet; then
             echo "No catalog state changes to persist."
           else

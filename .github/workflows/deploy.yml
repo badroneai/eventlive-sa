@@ -105,6 +105,7 @@ jobs:
         run: |
           npm run test:i18n-contract
           npm run test:i18n-site
+          npm run test:en-surface-sweep
 
       - name: Run verified venue location regression tests
         run: npm run test:venue-location
