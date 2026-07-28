@@ -88,6 +88,18 @@ function inspect(file, locale, direction, canonical) {
   if (isEnglishEventDetail) {
     assert.ok(!source.includes('درجة جاهزية الحضور'), `${file} exposes the retired internal readiness score`);
     assert.ok(!/<dd>\s*(?:حضوري|عن بعد)\s*<\/dd>/u.test(source), `${file} contains an untranslated attendance type`);
+    // Template chrome must never render in Arabic on English event pages.
+    // These are exact tag-delimited template literals from generate-site.mjs,
+    // so they cannot false-positive on event content prose.
+    for (const phrase of [
+      '>من المصدر الرسمي<', '>المزود<', '>الأهداف<', '>المميزات<', '>المتطلبات<', '>المدة<',
+      '>إغلاق التسجيل<', '>الدخول أو التسجيل<', '>انتهت<', '>يجري الآن<', '>التالي<',
+      '>كل القاعات<', '>لا توجد جلسة جارية الآن<', '>برنامج ممتد<',
+      '>مستمرة حتى ', '>متى تبدأ ', '>أين تقام ', 'تعتمد EventLive على ',
+      'يحفظ الصفحة والجدول على هذا الجهاز'
+    ]) {
+      assert.ok(!source.includes(phrase), `${file} contains untranslated event-page chrome: ${phrase}`);
+    }
   }
   const shouldCheckScripts = locale === 'en-SA' && (!isEnglishEventDetail || !eventDetailScriptChecked);
   if (shouldCheckScripts) {
