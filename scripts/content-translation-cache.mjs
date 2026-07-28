@@ -73,6 +73,53 @@ export function isMixedTranslationText(text = '', targetLang = 'ar') {
   return /[ء-ي][ء-ي0-9 ،؛:'’&/()\-]{39,}/.test(value);
 }
 
+// Machine entries that predate (or slipped past) the entity glossary carry
+// hallucinated Saudi entity names ('رقابة الهيئة' -> 'control of UN-Women').
+// Purge any machine ar->en entry whose source names a glossary entity but
+// whose output lacks that entity's canonical English core — the row returns
+// to pending and re-translates with the glossary injected. Editorial
+// (llm-agent) entries are never touched.
+function glossaryCore(english = '') {
+  return String(english)
+    .replace(/\s*\([^)]*\)\s*/g, ' ')
+    .replace(/^the\s+/i, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase();
+}
+
+export function pruneGlossaryViolations() {
+  let glossary;
+  try {
+    glossary = JSON.parse(fs.readFileSync(path.join(root, 'data', 'mt_glossary.json'), 'utf8'));
+  } catch {
+    return 0;
+  }
+  const terms = Object.entries(glossary)
+    .map(([arabic, english]) => [
+      // Standalone occurrences only — 'جدة' must not match inside 'المستجدة'.
+      new RegExp(`(?<![ء-ي])${arabic.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![ء-ي])`, 'u'),
+      glossaryCore(english)
+    ])
+    .filter(([, core]) => core.length >= 4);
+  const cache = loadContentTranslations();
+  const removed = [];
+  for (const [key, entry] of Object.entries(cache.entries || {})) {
+    if (!entry || entry.method === 'llm-agent') continue;
+    if (entry.source_lang !== 'ar' || entry.target_lang !== 'en') continue;
+    const text = String(entry.text || '').toLowerCase();
+    for (const [pattern, core] of terms) {
+      if (pattern.test(String(entry.source || '')) && !text.includes(core)) {
+        removed.push(key);
+        delete cache.entries[key];
+        break;
+      }
+    }
+  }
+  if (removed.length) saveContentTranslations(cache);
+  return removed.length;
+}
+
 export function pruneMixedTranslations() {
   const cache = loadContentTranslations();
   const removed = [];

@@ -1,7 +1,7 @@
 import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
-import { loadContentTranslations, pruneMixedTranslations } from './content-translation-cache.mjs';
+import { loadContentTranslations, pruneGlossaryViolations, pruneMixedTranslations } from './content-translation-cache.mjs';
 
 // Autonomous translation step (plan T7.1): translate pending catalog content
 // with offline open-source models, merge through the validated merge path,
@@ -16,8 +16,10 @@ function run(command, args, options = {}) {
   return spawnSync(command, args, { stdio: 'inherit', encoding: 'utf8', ...options });
 }
 
+const glossaryPruned = pruneGlossaryViolations();
+if (glossaryPruned) console.log(`TRANSLATE_CATALOG pruned ${glossaryPruned} glossary-violating machine entries for re-translation`);
 const mixedPruned = pruneMixedTranslations();
-if (mixedPruned) {
+if (mixedPruned + glossaryPruned) {
   console.log(`TRANSLATE_CATALOG pruned ${mixedPruned} mixed-language cache entries for re-translation`);
   const rebuildForPending = run('npm', ['run', '-s', 'build']);
   if (rebuildForPending.status !== 0) console.log('TRANSLATE_CATALOG pending-refresh build failed — continuing with existing report');
