@@ -1,12 +1,23 @@
 {
-  "generated_at": "2026-07-28T14:44:01.856Z",
+  "generated_at": "2026-07-28T15:59:43.237Z",
   "totals": {
-    "targets": 0,
-    "enriched": 0,
-    "fetched": 0,
-    "images": 0,
+    "targets": 1,
+    "enriched": 1,
+    "fetched": 1,
+    "images": 1,
     "fetch_failures": 0
   },
-  "enriched": [],
+  "enriched": [
+    {
+      "id": "event-hayy-cinema-hayy-explorers-at-the-cinema",
+      "title": "Hayy Cinema | Hayy Explorers At The Cinema",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-explorers-at-the-cinema/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    }
+  ],
   "failed": []
 }

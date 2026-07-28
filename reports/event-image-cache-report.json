@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-28T14:44:51.878Z",
+  "generated_at": "2026-07-28T16:00:35.192Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 767,
-    "fetched": 1,
-    "reused": 496,
+    "cached_total": 768,
+    "fetched": 2,
+    "reused": 495,
     "failed": 3,
-    "skipped_recent_failures": 3,
+    "skipped_recent_failures": 0,
     "remembered_failures": 6
   },
   "fetched": [
@@ -17,6 +17,12 @@
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/onuub3vn.3au.webp",
       "file": "dist/assets/event-images/معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud-a619a81dc4.webp",
       "bytes": 3902,
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/lasoupedefranzy_02.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-hayy-explorers-at-the-cinema-3fa9c6623b.jpg",
+      "bytes": 48688,
       "events": 1
     }
   ],
@@ -619,11 +625,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/0ea6501d38dd241243aaa62d5b93a922.jpg",
       "file": "dist/assets/event-images/تجربة-الطباعة-البارزة-d3c8504289.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-07/%D9%88%D8%B1%D8%B4%D8%A9%20%D8%B9%D9%85%D9%84%20-%20%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D8%B7%D8%A7%D8%AA%20%D8%A7%D9%84%D9%81%D8%B3%D8%AD%20v2.jpg",
-      "file": "dist/assets/event-images/اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالج-74390d74b4.jpg",
       "events": 1
     },
     {
@@ -1957,6 +1958,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-07/%D9%88%D8%B1%D8%B4%D8%A9%20%D8%B9%D9%85%D9%84%20-%20%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D8%B7%D8%A7%D8%AA%20%D8%A7%D9%84%D9%81%D8%B3%D8%AD%20v2.jpg",
+      "file": "dist/assets/event-images/اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالج-74390d74b4.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b5d9b257f76e8e22988d937aea95efaa.jpg",
       "file": "dist/assets/event-images/hobby-with-expert-health-and-sports-93b518d704.jpg",
       "events": 1
@@ -2495,69 +2501,44 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2f01fa3711992cfcb94a21aa94d75878.jpg",
       "file": "dist/assets/event-images/documentary-competition-group-1-cd02826ba8.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5148dc12ecf378891d40b79463be2122.jpg",
-      "file": "dist/assets/event-images/journey-film-group-1-abb6f58d49.jpg",
-      "events": 1
     }
   ],
   "rejected_removed": [],
-  "missing_removed": [],
-  "skipped_recent_failures": [
+  "missing_removed": [
     {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-07-28T15:46:29.984Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-07-28T15:46:29.984Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-07-28T15:46:29.984Z",
-      "skipped": true
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/onuub3vn.3au.webp",
+      "file": "dist/assets/event-images/معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud-a619a81dc4.webp",
+      "reason": "cached-file-missing"
     }
   ],
+  "skipped_recent_failures": [],
   "failed": [
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-07-29T16:00:35.192Z"
+    },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-07-28T15:46:29.984Z",
-      "skipped": true
+      "retry_after": "2026-07-29T16:00:35.192Z"
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-07-28T15:46:29.984Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-07-28T15:46:29.984Z",
-      "skipped": true
+      "retry_after": "2026-07-29T16:00:35.192Z"
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:1"
+    "fetched:2",
+    "missing-removed:1",
+    "new-failures:3"
   ]
 }

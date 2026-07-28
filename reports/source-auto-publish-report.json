@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-07-28T14:42:34.489Z",
+  "published_at": "2026-07-28T15:57:56.101Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -165,9 +165,9 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud-20260920-c1ed5d59",
-      "event_id": "event-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud",
-      "title": "معسكر هندسة الحوسبة السحابية المتقدمة باستخدام Google Cloud"
+      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-hayy-explorers-at-the-cinema-20270210-421ced3c",
+      "event_id": "event-hayy-cinema-hayy-explorers-at-the-cinema",
+      "title": "Hayy Cinema | Hayy Explorers At The Cinema"
     }
   ],
   "linked_existing": [
@@ -1138,12 +1138,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-sfda-events-اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالجة--20260728-d3631f6f",
-      "event_id": "event-اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالجة-",
-      "title": "اشتراطات الفسح والتفتيش للمنشآت والمنتجات الخاضعة لرقابة الهيئة ومعالجة تحديات العملاء ومواكبة التحديثات",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-chess-hub-20260728-4919439a",
       "event_id": "event-chess-hub",
       "title": "Chess Hub",
@@ -1162,12 +1156,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-water-challenges-20260728-eea51834",
-      "event_id": "event-water-challenges",
-      "title": "Water Challenges",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-open-art-space-20260728-40aac166",
       "event_id": "event-open-art-space",
       "title": "Open Art Space",
@@ -1177,6 +1165,12 @@
       "candidate_id": "candidate-ithra-events-childrens-art-studio-20260728-2bf92d17",
       "event_id": "event-childrens-art-studio",
       "title": "Children's Art Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-water-challenges-20260728-eea51834",
+      "event_id": "event-water-challenges",
+      "title": "Water Challenges",
       "reason": "already linked to catalog event"
     },
     {
@@ -2161,6 +2155,12 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-الجرائم-السيبرانية-والتحقيق-الجنائي-الرقمي-المتقدم-20260920-6e2c36f8",
       "event_id": "event-معسكر-الجرائم-السيبرانية-والتحقيق-الجنائي-الرقمي-المتقدم",
       "title": "معسكر الجرائم السيبرانية والتحقيق الجنائي الرقمي المتقدم",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud-20260920-c1ed5d59",
+      "event_id": "event-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud",
+      "title": "معسكر هندسة الحوسبة السحابية المتقدمة باستخدام Google Cloud",
       "reason": "already linked to catalog event"
     },
     {

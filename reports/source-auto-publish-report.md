@@ -1,6 +1,6 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-28T14:42:34.489Z
+- published_at: 2026-07-28T15:57:56.101Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 559
@@ -25,7 +25,7 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud-20260920-c1ed5d59 | published | event-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud | معسكر هندسة الحوسبة السحابية المتقدمة باستخدام Google Cloud |
+| candidate-hayy-jameel-events-hayy-cinema-hayy-explorers-at-the-cinema-20270210-421ced3c | published | event-hayy-cinema-hayy-explorers-at-the-cinema | Hayy Cinema | Hayy Explorers At The Cinema |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -187,13 +187,12 @@
 | candidate-ithra-events-tafasahu-make-room-20260728-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
 | candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260728-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
 | candidate-ithra-events-echoes-of-the-familiar-20260728-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
-| candidate-sfda-events-اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالجة--20260728-d3631f6f | linked-existing | event-اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالجة- | already linked to catalog event |
 | candidate-ithra-events-chess-hub-20260728-4919439a | linked-existing | event-chess-hub | already linked to catalog event |
 | candidate-ithra-events-energy-lab-20260728-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
 | candidate-ithra-events-swim-r-mission-20260728-f8a6c05c | linked-existing | event-swim-r-mission | already linked to catalog event |
-| candidate-ithra-events-water-challenges-20260728-eea51834 | linked-existing | event-water-challenges | already linked to catalog event |
 | candidate-ithra-events-open-art-space-20260728-40aac166 | linked-existing | event-open-art-space | already linked to catalog event |
 | candidate-ithra-events-childrens-art-studio-20260728-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
+| candidate-ithra-events-water-challenges-20260728-eea51834 | linked-existing | event-water-challenges | already linked to catalog event |
 | candidate-ithra-events-art-in-everyday-life-20260728-b00d4ecc | linked-existing | event-art-in-everyday-life | already linked to catalog event |
 | candidate-ithra-events-spot-of-inspiration-20260728-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
 | candidate-ithra-events-childrens-museum-story-time-20260728-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
@@ -358,6 +357,7 @@
 | candidate-hayy-jameel-events-hayy-cinema-othman-2022-20260920-ec608ec2 | linked-existing | event-hayy-cinema-othman-2022 | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-علم-البيانات-والذكاء-الاصطناعي-20260920-3a71a485 | linked-existing | event-معسكر-علم-البيانات-والذكاء-الاصطناعي | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-الجرائم-السيبرانية-والتحقيق-الجنائي-الرقمي-المتقدم-20260920-6e2c36f8 | linked-existing | event-معسكر-الجرائم-السيبرانية-والتحقيق-الجنائي-الرقمي-المتقدم | already linked to catalog event |
+| candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud-20260920-c1ed5d59 | linked-existing | event-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud | already linked to catalog event |
 | candidate-saudi-water-authority-events-saudi-national-day-20260923-df5b5c2a | linked-existing | event-saudi-national-day | already linked to catalog event |
 | candidate-visit-saudi-calendar-saudi-national-day-20260923-a8235fde | linked-existing | event-saudi-national-day | already linked to catalog event |
 | candidate-dhahran-expo-calendar-music-concerts-national-day-20260923-18d15b29 | linked-existing | event-music-concerts-national-day | already linked to catalog event |
