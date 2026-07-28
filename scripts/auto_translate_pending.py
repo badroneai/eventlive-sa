@@ -91,18 +91,31 @@ def main():
     except ImportError:
         fail_soft("argostranslate not installed (pip install argostranslate)")
 
-    installed = {
-        (lang.code)
-        for lang in argostranslate.translate.get_installed_languages()
-    }
     needed_pairs = {(row["source_lang"], row["target_lang"]) for row in pending}
-    missing = [pair for pair in needed_pairs if pair[0] not in installed or pair[1] not in installed]
+
+    # Model availability is PER DIRECTION PAIR, not per language code: the
+    # en->ar package alone registers both "en" and "ar" as installed languages
+    # while ar->en rows silently skip every run. Probe the actual translation
+    # object for each needed pair and install exactly the pairs that lack one.
+    def usable_translators():
+        languages = argostranslate.translate.get_installed_languages()
+        by_code = {lang.code: lang for lang in languages}
+        pairs = {}
+        for source, target in needed_pairs:
+            if source in by_code and target in by_code:
+                translation = by_code[source].get_translation(by_code[target])
+                if translation:
+                    pairs[(source, target)] = translation
+        return pairs
+
+    translators = usable_translators()
+    missing = sorted(pair for pair in needed_pairs if pair not in translators)
     if missing:
-        log(f"installing language packages for {sorted(missing)}")
+        log(f"installing language packages for {missing}")
         try:
             argostranslate.package.update_package_index()
             available = argostranslate.package.get_available_packages()
-            for source, target in needed_pairs:
+            for source, target in missing:
                 package = next(
                     (p for p in available if p.from_code == source and p.to_code == target),
                     None,
@@ -111,15 +124,10 @@ def main():
                     argostranslate.package.install_from_path(package.download())
         except Exception as error:  # noqa: BLE001 — degrade gracefully by design
             fail_soft(f"package install failed: {error}")
-
-    translators = {}
-    languages = argostranslate.translate.get_installed_languages()
-    by_code = {lang.code: lang for lang in languages}
-    for source, target in needed_pairs:
-        if source in by_code and target in by_code:
-            translation = by_code[source].get_translation(by_code[target])
-            if translation:
-                translators[(source, target)] = translation
+        translators = usable_translators()
+        still_missing = sorted(pair for pair in needed_pairs if pair not in translators)
+        if still_missing:
+            log(f"WARNING no model available for {still_missing} — their rows stay pending")
     if not translators:
         fail_soft("no usable translation models installed")
 

@@ -102,7 +102,13 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.local/share/argos-translate
-          key: argos-translate-models-en-ar-v1
+          # v2: the v1 cache was created from a run whose pending backlog was
+          # en->ar only, so it never contained the ar->en model and every
+          # English-side row skipped silently. The new key lets the fixed
+          # pair-aware installer download and persist BOTH directions.
+          key: argos-translate-models-both-directions-v2
+          restore-keys: |
+            argos-translate-models-
 
       - name: Install Argos Translate (open-source offline MT, no keys)
         run: pip install --quiet argostranslate
@@ -166,6 +172,7 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add \
             data/events_catalog.json \
+            data/content_translations.json \
             data/source_candidates.json \
             data/source_ended_events.json \
             data/source_registry.json \
