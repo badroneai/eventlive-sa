@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-28T13:45:37.570Z",
+  "generated_at": "2026-07-28T14:42:36.392Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 28,
-    "enriched": 27,
+    "targets": 29,
+    "enriched": 28,
     "failed": 1
   },
   "enriched": [
@@ -206,6 +206,14 @@
       "goals": 20,
       "features": 12,
       "requirements": 9
+    },
+    {
+      "id": "event-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud",
+      "title": "معسكر هندسة الحوسبة السحابية المتقدمة باستخدام Google Cloud",
+      "slug": "VwromX8Z",
+      "goals": 10,
+      "features": 6,
+      "requirements": 6
     },
     {
       "id": "event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud",

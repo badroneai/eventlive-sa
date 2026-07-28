@@ -1,8 +1,8 @@
 # Tuwaiq Program Enrichment Report
 
-- generated_at: 2026-07-28T13:45:37.570Z
-- targets: 28
-- enriched: 27
+- generated_at: 2026-07-28T14:42:36.392Z
+- targets: 29
+- enriched: 28
 - failed: 1
 
 ## Enriched
@@ -32,6 +32,7 @@
 - معسكر الذكاء الاصطناعي (bm82q1Pl) - goals=7, features=9, requirements=8
 - معسكر علم البيانات والذكاء الاصطناعي (eOnD1zRg) - goals=8, features=11, requirements=11
 - معسكر الجرائم السيبرانية والتحقيق الجنائي الرقمي المتقدم (qMyzrymE) - goals=20, features=12, requirements=9
+- معسكر هندسة الحوسبة السحابية المتقدمة باستخدام Google Cloud (VwromX8Z) - goals=10, features=6, requirements=6
 - معسكر هندسة الحوسبة السحابية باستخدام Google Cloud (v9JwMlMo) - goals=10, features=6, requirements=7
 - معسكر طويق السيبراني (oA2ryDzB) - goals=3, features=3, requirements=5
 

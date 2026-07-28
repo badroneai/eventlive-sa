@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T13:47:49.906Z",
+  "generated_at": "2026-07-28T14:45:02.563Z",
   "source_registry": "data/source_registry.json",
   "source_collection_report": "reports/source-collection-report.json",
   "totals": {
@@ -674,7 +674,7 @@
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 28,
+      "known_candidates": 29,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -2256,7 +2256,7 @@
       "score": 63,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 64,
+      "last_extracted": 62,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",

@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-07-28T13:45:35.729Z",
+  "published_at": "2026-07-28T14:42:34.489Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 558,
+  "candidates_seen": 559,
   "totals": {
-    "candidates_seen": 558,
-    "published": 0,
+    "candidates_seen": 559,
+    "published": 1,
     "linked_existing": 518,
     "blocked": 40,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 518
+    "reconciled": 519
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -163,7 +163,13 @@
       "start_date_drift_days": 0.125
     }
   ],
-  "published": [],
+  "published": [
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud-20260920-c1ed5d59",
+      "event_id": "event-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud",
+      "title": "معسكر هندسة الحوسبة السحابية المتقدمة باستخدام Google Cloud"
+    }
+  ],
   "linked_existing": [
     {
       "candidate_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c",
@@ -1138,12 +1144,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260728-2bf92d17",
-      "event_id": "event-childrens-art-studio",
-      "title": "Children's Art Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-chess-hub-20260728-4919439a",
       "event_id": "event-chess-hub",
       "title": "Chess Hub",
@@ -1153,12 +1153,6 @@
       "candidate_id": "candidate-ithra-events-energy-lab-20260728-60155d60",
       "event_id": "event-energy-lab",
       "title": "Energy Lab",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260728-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -1180,6 +1174,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260728-2bf92d17",
+      "event_id": "event-childrens-art-studio",
+      "title": "Children's Art Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-art-in-everyday-life-20260728-b00d4ecc",
       "event_id": "event-art-in-everyday-life",
       "title": "Art in Everyday Life",
@@ -1189,6 +1189,12 @@
       "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260728-5bac584c",
       "event_id": "event-spot-of-inspiration",
       "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260728-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -2023,7 +2029,7 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-طويق-السيبراني-20260913-d741a736",
       "event_id": "event-معسكر-طويق-السيبراني-2",
       "title": "معسكر طويق السيبراني",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-طويق-السيبراني-20260913-0881f1b9",

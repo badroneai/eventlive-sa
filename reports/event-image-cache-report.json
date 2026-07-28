@@ -1,58 +1,22 @@
 {
-  "generated_at": "2026-07-28T13:47:39.532Z",
+  "generated_at": "2026-07-28T14:44:51.878Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 766,
-    "fetched": 7,
-    "reused": 490,
+    "cached_total": 767,
+    "fetched": 1,
+    "reused": 496,
     "failed": 3,
     "skipped_recent_failures": 3,
     "remembered_failures": 6
   },
   "fetched": [
     {
-      "source_url": "https://scth.scene7.com/is/image/scth/al-balad-cinema?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/al-balad-cinema-2f95f8f37c.webp",
-      "bytes": 64304,
-      "events": 1
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/ltndjkdp.s2k.webp",
-      "file": "dist/assets/event-images/معسكر-طويق-السيبراني-3c17200540.webp",
-      "bytes": 12398,
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/tour-of-al-baha?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/tour-of-al-baha-b3427bf102.webp",
-      "bytes": 154842,
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/11/DSC00003-scaled-aspect-ratio-2560-1269-1100x500.jpg",
-      "file": "dist/assets/event-images/حلقة-نقاش-بعنوان-quot-هاي-سينيما-quot-برنامج-الأفلام-الذهبية-18b71797c9.jpg",
-      "bytes": 56966,
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/honey-festival-2026?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/مهرجان-العسل-2026-2dbd82b5e5.webp",
-      "bytes": 217470,
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/scenic-buggy-ride-with-picnic?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/سينيك-بيجي-مع-بيكني-4949658c04.webp",
-      "bytes": 149656,
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/scenic-buggy-ride-at-gamra?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/scenic-buggy-ride-at-gamra-ebe0358607.webp",
-      "bytes": 207980,
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/onuub3vn.3au.webp",
+      "file": "dist/assets/event-images/معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud-a619a81dc4.webp",
+      "bytes": 3902,
       "events": 1
     }
   ],
@@ -373,6 +337,16 @@
       "events": 1
     },
     {
+      "source_url": "https://scth.scene7.com/is/image/scth/scenic-buggy-ride-at-gamra?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/scenic-buggy-ride-at-gamra-ebe0358607.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/scenic-buggy-ride-with-picnic?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/سينيك-بيجي-مع-بيكني-4949658c04.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://scth.scene7.com/is/image/scth/gravity-carts-at-gamra?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/gravity-carts-at-gamra-577197a38b.webp",
       "events": 1
@@ -380,6 +354,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/GyN7i2hWYAEFU3X.jpeg?itok=of7aIuP0",
       "file": "dist/assets/event-images/prince-faisal-bin-fahd-art-exhibition-summer-2026-8216b3ee07.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/al-balad-cinema?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/al-balad-cinema-2f95f8f37c.webp",
       "events": 1
     },
     {
@@ -573,6 +552,11 @@
       "events": 1
     },
     {
+      "source_url": "https://scth.scene7.com/is/image/scth/honey-festival-2026?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/مهرجان-العسل-2026-2dbd82b5e5.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/Pharah-3-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-5579e02bd3.jpg",
       "events": 1
@@ -670,6 +654,11 @@
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uvc3lmLW9ydGgtbWR5bi1hYmhhLnBuZw/syf-orth-mdyn-abha.png?w=1024&fm=webp&s=3bd491e2f2b3f07551678917d8dfa81d",
       "file": "dist/assets/event-images/إرث-الصيف-0c54dcd636.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/tour-of-al-baha?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/tour-of-al-baha-b3427bf102.webp",
       "events": 1
     },
     {
@@ -1098,6 +1087,11 @@
       "events": 1
     },
     {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/ltndjkdp.s2k.webp",
+      "file": "dist/assets/event-images/معسكر-طويق-السيبراني-3c17200540.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/101hx4o2.kfq.webp",
       "file": "dist/assets/event-images/معسكر-حلول-الحوسبة-السحابية-aws-google-cloud-2e49aa9c3a.webp",
       "events": 1
@@ -1475,6 +1469,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/AEKwR6.jpg?itok=KoKbWOoK",
       "file": "dist/assets/event-images/misk-global-forum-de642bca53.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/11/DSC00003-scaled-aspect-ratio-2560-1269-1100x500.jpg",
+      "file": "dist/assets/event-images/حلقة-نقاش-بعنوان-quot-هاي-سينيما-quot-برنامج-الأفلام-الذهبية-18b71797c9.jpg",
       "events": 1
     },
     {
@@ -2501,51 +2500,10 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5148dc12ecf378891d40b79463be2122.jpg",
       "file": "dist/assets/event-images/journey-film-group-1-abb6f58d49.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/260e65f936a1f5c45da49eb41456cb4c.jpg",
-      "file": "dist/assets/event-images/textured-painting-bb6433ce72.jpg",
-      "events": 1
     }
   ],
   "rejected_removed": [],
-  "missing_removed": [
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/11/DSC00003-scaled-aspect-ratio-2560-1269-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-panel-discussion-the-golden-palm-film-programme-18b71797c9.jpg",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/al-balad-cinema?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/al-balad-cinema-2f95f8f37c.webp",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/ltndjkdp.s2k.webp",
-      "file": "dist/assets/event-images/معسكر-طويق-السيبراني-3c17200540.webp",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/scenic-buggy-ride-with-picnic?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/scenic-buggy-ride-with-picnic-4949658c04.webp",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/scenic-buggy-ride-at-gamra?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/scenic-buggy-ride-at-gamra-ebe0358607.webp",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/tour-of-al-baha?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/tour-of-al-baha-b3427bf102.webp",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/honey-festival-2026?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/honey-festival-2026-2dbd82b5e5.webp",
-      "reason": "cached-file-missing"
-    }
-  ],
+  "missing_removed": [],
   "skipped_recent_failures": [
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
@@ -2600,7 +2558,6 @@
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:7",
-    "missing-removed:7"
+    "fetched:1"
   ]
 }

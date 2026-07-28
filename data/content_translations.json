@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-28T13:53:06.454Z",
+  "generated_at": "2026-07-28T14:50:56.087Z",
   "entries": {
     "1f91543d6769d9abda47f221ba86f9f9ebf27443": {
       "source": "Skill Development Initiative",
@@ -47977,6 +47977,54 @@
       "text": "وليد الفطر",
       "method": "argos-mt",
       "translated_at": "2026-07-28T13:53:06.454Z"
+    },
+    "496d07d9c5b15027e3088241d74f34a1943a4c80": {
+      "source": "معسكر هندسة الحوسبة السحابية المتقدمة باستخدام Google Cloud",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Advanced cloud computing engineering camp using Google Cloud",
+      "method": "argos-mt",
+      "translated_at": "2026-07-28T14:50:56.086Z"
+    },
+    "e806c0d7a592b0f790bde698f3f762ff89efa96f": {
+      "source": "يهدف المعسكر إلى تمكين المهندسين من تصميم وتنفيذ بنى تحتية سحابية على Google Cloud بكفاءة. المصدر الرسمي: أكاديمية طويق.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The camp aims to enable engineers to design and implement cloud infrastructure on Google Cloud efficiently. Official source: Tawk Academy.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-28T14:50:56.087Z"
+    },
+    "0abe2e6786bf3901fbdd33bca4670ca092a5901f": {
+      "source": "يهدف المعسكر إلى تمكين المهندسين من تصميم وتنفيذ بنى تحتية سحابية على Google Cloud بكفاءة. يغطي الخدمات الأساسية مثل Compute Engine وCloud Storage وBigQuery وCloud SQL، إضافة إلى الشبكات الافتراضية VPC وتأمين البيئات عبر إدارة الهوية والصلاحيات (IAM)، وبناء الحاويات باستخدام GKE وأتمتة البنية التحتية عبر Terraform. كما يركز على تحسين الأداء وكفاءة التكلفة. بنهاية المعسكر يصبح المتدرب قادرًا على تصميم حلول سحابية مرنة والاستعداد للاختبارات المهنية والتميز في سوق العمل.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The camp aims to enable engineers to design and implement cloud infrastructure on Google Cloud efficiently. Covers basic services such as Compute Engine, Cloud Storage, BigQuery and Cloud SQL, as well as VPC virtual networks, secure environments through IAM, build containers using GKE and automate infrastructure across Terraform. It also focuses on improving performance and cost efficiency. At the end of the camp, the trainee is able to design flexible cloud solutions and prepare for professional tests and excellence in the labour market.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-28T14:50:56.087Z"
+    },
+    "31ea4eaf53c9f864c06bbeb54f72610be505fa7b": {
+      "source": "إدارة الحاويات والأوركسترا (GKE): احتراف بناء ونشر وإدارة التطبيقات المعتمدة على الحاويات داخل بيئة Kubernetes لضمان التوسع التلقائي والمرونة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Container and orchestra management (GKE): Container-dependent applications construction, deployment and management within the Kubern environment etes to ensure automatic expansion and flexibility.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-28T14:50:56.087Z"
+    },
+    "339e0e7142b94f937b733629d28c7cf16cbeef41": {
+      "source": "أتمتة البنية التحتية (Terraform): استخدام مبدأ \"البنية التحتية كبرمجيات\" لأتمتة إنشاء وإدارة موارد السحابة وتكرارها بدقة وسرعة عالية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Infrastructural automation: use of infrastructure as software to automate the establishment and management of cloud resources and their replication with high accuracy and speed",
+      "method": "argos-mt",
+      "translated_at": "2026-07-28T14:50:56.087Z"
+    },
+    "e49cb3d6ea643069a688465e1cb98ad53d4729c2": {
+      "source": "هندسة الحلول والتصميم (Design and Process): تطبيق أنماط التصميم المعتمدة لتحويل متطلبات الأعمال إلى حلول تقنية موثوقة، آمنة، وذات كفاءة عالية في التكلفة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Solution and design engineering (Design and Process): application of approved design patterns to transform business requirements into reliable, safe and cost-efficient technical solutions.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-28T14:50:56.087Z"
     }
   }
 }

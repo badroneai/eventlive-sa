@@ -1,10 +1,10 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-28T13:45:35.729Z
+- published_at: 2026-07-28T14:42:34.489Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 558
-- published_new: 0
+- candidates_seen: 559
+- published_new: 1
 - linked_existing: 518
 - blocked_remaining: 40
 - duplicate_review_alerts: 8
@@ -25,6 +25,7 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
+| candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud-20260920-c1ed5d59 | published | event-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud | معسكر هندسة الحوسبة السحابية المتقدمة باستخدام Google Cloud |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -187,15 +188,15 @@
 | candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260728-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
 | candidate-ithra-events-echoes-of-the-familiar-20260728-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-sfda-events-اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالجة--20260728-d3631f6f | linked-existing | event-اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالجة- | already linked to catalog event |
-| candidate-ithra-events-childrens-art-studio-20260728-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
 | candidate-ithra-events-chess-hub-20260728-4919439a | linked-existing | event-chess-hub | already linked to catalog event |
 | candidate-ithra-events-energy-lab-20260728-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
-| candidate-ithra-events-childrens-museum-story-time-20260728-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-swim-r-mission-20260728-f8a6c05c | linked-existing | event-swim-r-mission | already linked to catalog event |
 | candidate-ithra-events-water-challenges-20260728-eea51834 | linked-existing | event-water-challenges | already linked to catalog event |
 | candidate-ithra-events-open-art-space-20260728-40aac166 | linked-existing | event-open-art-space | already linked to catalog event |
+| candidate-ithra-events-childrens-art-studio-20260728-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
 | candidate-ithra-events-art-in-everyday-life-20260728-b00d4ecc | linked-existing | event-art-in-everyday-life | already linked to catalog event |
 | candidate-ithra-events-spot-of-inspiration-20260728-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
+| candidate-ithra-events-childrens-museum-story-time-20260728-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-summer-youth-program-20260729-a20f7a11 | linked-existing | event-summer-youth-program | already linked to catalog event |
 | candidate-ithra-events-emboss-printing-experience-20260729-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-ithra-events-energy-in-motion-20260729-e0404048 | linked-existing | event-energy-in-motion | already linked to catalog event |
@@ -334,7 +335,7 @@
 | candidate-informa-connect-saudi-events-saudi-event-show-20260909-9bbda4e2 | linked-existing | event-saudi-event-show | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-in-act-act-ix-20260911-4a38d19e | linked-existing | event-in-act-act-ix | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-الذكاء-الاصطناعي-في-تطوير-تطبيقات-الويب-باستخدام-python-و-django-20260913-fde7cd36 | linked-existing | event-معسكر-الذكاء-الاصطناعي-في-تطوير-تطبيقات-الويب-باستخدام-python-و-django | already linked to catalog event |
-| candidate-tuwaiq-academy-bootcamps-معسكر-طويق-السيبراني-20260913-d741a736 | linked-existing | event-معسكر-طويق-السيبراني-2 | trusted duplicate linked to existing catalog event |
+| candidate-tuwaiq-academy-bootcamps-معسكر-طويق-السيبراني-20260913-d741a736 | linked-existing | event-معسكر-طويق-السيبراني-2 | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-طويق-السيبراني-20260913-0881f1b9 | linked-existing | event-معسكر-طويق-السيبراني-2 | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-حلول-الحوسبة-السحابية-aws-google-cloud-20260913-090a04a7 | linked-existing | event-معسكر-حلول-الحوسبة-السحابية-aws-google-cloud | already linked to catalog event |
 | candidate-riyadh-city-events-hotel-hospitality-expo-20260913-d9cf02f3 | linked-existing | event-hotel-hospitality-expo | already linked to catalog event |
