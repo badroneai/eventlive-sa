@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-growth-state.v1",
-  "generated_at": "2026-07-27T22:21:53.142Z",
+  "generated_at": "2026-07-28T03:43:36.032Z",
   "runs": [
     {
       "run_id": "2026-07-11T01:11:39.757Z",
@@ -840,8 +840,30 @@
     },
     {
       "run_id": "2026-07-27T22:12:57.306Z",
-      "generated_at": "2026-07-27T22:21:53.142Z",
+      "generated_at": "2026-07-28T03:33:44.979Z",
       "collected_at": "2026-07-27T22:12:57.306Z",
+      "catalog_active_rows": 642,
+      "catalog_ended_rows": 762,
+      "public_events": 1118,
+      "candidates_discovered": 307,
+      "new_active_candidates": 13,
+      "new_ended_events": 0,
+      "published_new": 0,
+      "linked_existing": 507,
+      "blocked_remaining": 40,
+      "sources_attempted": 19,
+      "productive_sources": 19,
+      "collector_errors": 0,
+      "public_delta": 0,
+      "catalog_delta": 0,
+      "no_growth_streak": 38,
+      "lost_published_output": false,
+      "status": "degraded"
+    },
+    {
+      "run_id": "2026-07-28T03:33:45.747Z",
+      "generated_at": "2026-07-28T03:43:36.032Z",
+      "collected_at": "2026-07-28T03:33:45.747Z",
       "catalog_active_rows": 642,
       "catalog_ended_rows": 762,
       "public_events": 1384,
