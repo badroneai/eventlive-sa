@@ -154,6 +154,7 @@ jobs:
           npm run test:backlog-enrichment
           npm run test:single-session-activation
           npm run test:live-operational-feeds
+          npm run test:event-priority
           npm run test:attendance-mode-offline
           npm run test:venue-location
           npm run test:image-cache
