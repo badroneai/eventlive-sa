@@ -1,5 +1,10 @@
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
 import { attendancePriorityRank, compareAttendancePriority } from './event-priority.mjs';
+
+const root = process.cwd();
+const distDir = path.join(root, 'dist');
 
 // Fixed "now" so the fixtures below are deterministic regardless of when
 // this test runs. 2026-07-29 12:00 Riyadh time (UTC+3).
@@ -128,6 +133,53 @@ function sortByPriority(events, now = NOW) {
   const [first, second] = sortByPriority([undated, dated]);
   assert.equal(first.id, 'dated');
   assert.equal(second.id, 'undated');
+}
+
+// Built-output guard: dist/today.html has no generator function in
+// scripts/generate-site.mjs — its own client-side "priority" ranking
+// (sortedActionable) only gets replaced by a literal-string .replace()
+// inside externalizeTodayEventsPayload(). If the committed dist/today.html
+// shell ever drifts (reformat, upstream edit) that .replace silently
+// no-ops, the old savedBias/liveBias/raw-distance sort quietly comes back,
+// and nothing else in the battery would catch it. Assert the ported
+// markers are present and the old chain is gone.
+{
+  const todayHtmlPath = path.join(distDir, 'today.html');
+  assert.equal(
+    fs.existsSync(todayHtmlPath),
+    true,
+    'dist/today.html must exist; run npm run build first'
+  );
+  const todayHtml = fs.readFileSync(todayHtmlPath, 'utf8');
+
+  assert.match(
+    todayHtml,
+    /attendancePriorityRank/,
+    'dist/today.html no longer contains attendancePriorityRank — the literal-string ' +
+      '.replace() in externalizeTodayEventsPayload (scripts/generate-site.mjs) ' +
+      'no-oped, most likely because the committed dist/today.html shell for ' +
+      'sortedActionable() drifted out from under the exact string match. Re-sync ' +
+      'the .replace() target with the current dist/today.html content.'
+  );
+  assert.match(
+    todayHtml,
+    /riyadhDayKey/,
+    'dist/today.html no longer contains riyadhDayKey — the literal-string .replace() ' +
+      'in externalizeTodayEventsPayload (scripts/generate-site.mjs) no-oped, most ' +
+      'likely because the committed dist/today.html shell for sortedActionable() ' +
+      'drifted out from under the exact string match. Re-sync the .replace() target ' +
+      'with the current dist/today.html content.'
+  );
+  assert.doesNotMatch(
+    todayHtml,
+    /liveBias/,
+    'dist/today.html still contains the old liveBias chain — the literal-string ' +
+      '.replace() in externalizeTodayEventsPayload (scripts/generate-site.mjs) ' +
+      'no-oped (most likely because the committed dist/today.html shell for ' +
+      'sortedActionable() drifted out from under the exact string match), so the ' +
+      'pre-WO-3 saved/live-only/raw-distance sort has silently come back. Re-sync ' +
+      'the .replace() target with the current dist/today.html content.'
+  );
 }
 
 console.log('event-priority-regression-test: ok');
