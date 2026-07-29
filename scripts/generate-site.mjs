@@ -22,6 +22,7 @@ import { createContentTranslator } from './content-translation-cache.mjs';
 import { classifyEventKind, eventKindLabel, getEventStatus } from './event-kind-utils.mjs';
 import { compareAttendancePriority, isLiveMoment } from './event-priority.mjs';
 import { homeBoardLiveSection } from './home-board-live.mjs';
+import { homeCalendarStrip, remainingMonthDays, riyadhMonthEndExclusive } from './home-month-calendar.mjs';
 import {
   eventAccessIsFree,
   eventOfferJsonLd,
@@ -217,6 +218,7 @@ const pageCss = `<style>
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap');
 :root{--bg:#f7f5ef;--ink:#10231d;--muted:#66756f;--line:#dfe6df;--card:#fffdf8;--green:#0d6b52;--green-dark:#07231c;--live:#c4212b;--gold:#b88a2a}
 *{box-sizing:border-box}body{margin:0;font-family:"IBM Plex Sans Arabic",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.75}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(247,245,239,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:700}.brand-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:8px;background:var(--green-dark);color:#fff;font-weight:700}.nav-links{display:flex;gap:18px;color:var(--muted);font-weight:700;font-size:.94rem}.mobile-site-menu{display:none;position:relative}.mobile-site-menu>summary{list-style:none;display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);font-size:1.25rem;cursor:pointer}.mobile-site-menu>summary::-webkit-details-marker{display:none}.mobile-site-menu nav{position:fixed;top:64px;inset-inline:11px;z-index:40;display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:10px;border:1px solid var(--line);border-radius:10px;background:#fff;box-shadow:0 18px 40px rgba(16,35,29,.16)}.mobile-site-menu nav a{display:flex;align-items:center;min-height:44px;padding:8px 10px;border-radius:8px;background:#f7f5ef;font-weight:700}.cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;border:0;border-radius:8px;background:var(--green);color:#fff;padding:10px 14px;font:inherit;font-weight:700;cursor:pointer}.cta.is-saved{background:var(--green-dark)}.cta-status{flex-basis:100%;margin:0;color:var(--muted);font-size:.88rem}.hero{padding:54px 0 30px;background:linear-gradient(135deg,var(--green-dark),#0d6b52);color:#fff}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:#f7df9a;font-weight:700}.live-dot{width:9px;height:9px;border-radius:999px;background:var(--live);box-shadow:0 0 0 4px rgba(229,72,77,.18)}h1{font-size:clamp(2rem,5vw,4.4rem);line-height:1.12;margin:14px 0 12px;letter-spacing:0}.lead{font-size:1.08rem;max-width:760px;color:rgba(255,255,255,.82)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}.section{padding:32px 0}.card,.activation-card{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;box-shadow:0 18px 40px rgba(16,35,29,.06)}.activation-card{padding:18px}.activation-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.card-body{padding:18px}.cover{aspect-ratio:16/9;width:100%;object-fit:cover;background:#dfe6df}.meta{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;color:var(--muted);font-size:.9rem}.chip{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:4px 9px;background:#fff}.chip-live{background:var(--live);border-color:var(--live);color:#fff}.title{font-size:1.18rem;font-weight:700;margin:0 0 8px}.signal-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:18px}.signal{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:12px}.signal b{display:block;font-size:1.35rem}.facet-focus,.readiness{background:#fff;border:1px solid var(--line);border-radius:8px;padding:18px;margin:18px 0}.facet-primary{border-color:rgba(13,107,82,.35);box-shadow:0 16px 36px rgba(13,107,82,.09)}.signals{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}.signal-check,.program-check{border:1px solid var(--line);border-radius:8px;padding:12px;background:#fff}.signal-check.good,.program-check{border-color:rgba(13,107,82,.35)}.signal-check.warn{border-color:rgba(229,72,77,.25)}.decision-score{font-size:2rem;font-weight:700;color:var(--green)}.timeline{display:grid;gap:10px;margin-top:14px}.session{border:1px solid var(--line);border-radius:8px;padding:12px;background:#fff}.footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted)}.footer-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px;font-weight:700}.footer-links a{color:var(--green)}.event-quick-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.event-quick-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 14px;border:1px solid rgba(255,255,255,.28);border-radius:8px;background:rgba(255,255,255,.1);color:#fff;font-weight:700}@media(max-width:760px){html{scroll-padding-top:68px}.nav-links{display:none}.mobile-site-menu{display:block;margin-inline-start:auto}.nav{height:auto;min-height:64px;gap:8px}.brand{min-width:0}.brand b{font-size:.95rem}.brand-mark{flex:0 0 36px}.topbar .cta{padding-inline:10px;font-size:.82rem;white-space:nowrap}.hero{padding:26px 0 22px}.wrap{width:min(100% - 22px,1120px)}.facet-page .hero h1{font-size:1.8rem;margin-block:10px}.facet-page .hero .lead{font-size:.9rem;line-height:1.7;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.facet-page .hero .signal-strip{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:13px}.facet-page .hero .signal{padding:8px}.facet-page .hero .signal b{font-size:1.05rem}.facet-page .section{padding:18px 0}.facet-page .facet-focus{margin:0 0 14px;padding:14px}.facet-page .facet-focus h2{font-size:1.25rem;line-height:1.5;margin-block:6px}.facet-page .facet-focus p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.facet-page .card-body>p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.facet-page .card-body .meta{max-height:78px;overflow:hidden}.facet-page .card-body .meta .chip:nth-child(n+4){display:none}.facet-page .card-body .cta{min-height:44px}.event-detail .breadcrumbs{padding-top:10px;white-space:nowrap;overflow:hidden}.event-detail .breadcrumbs strong{display:none}.event-detail .hero h1{font-size:1.7rem;line-height:1.3;margin-block:10px}.event-detail .hero .lead{font-size:.92rem;line-height:1.75;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}.event-detail .hero .signal-strip{grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}.event-detail .hero .signal{padding:9px}.event-detail .hero .signal b{font-size:.92rem;line-height:1.5}.event-detail .section{padding:20px 0}.event-detail .readiness{margin:0;padding:14px}.event-detail .signals{grid-template-columns:1fr 1fr;gap:8px}.event-detail .signal-check{padding:9px;font-size:.82rem}.event-detail .readiness>.meta{display:grid;grid-template-columns:1fr 1fr;gap:8px}.event-detail .readiness>.meta .cta{width:100%;min-height:44px}.event-detail .cta-status{grid-column:1/-1}.event-detail .event-quick-actions a{flex:1 1 calc(50% - 4px);padding-inline:8px}.event-detail .program-check{padding:11px}.event-detail .session{padding:11px}.event-detail .session-top{gap:6px}.event-detail .footer-links a{min-height:44px;display:inline-flex;align-items:center}}
+.day-groups{padding-top:8px}.day-group{margin-top:26px;scroll-margin-top:80px}.day-group:first-of-type{margin-top:14px}.day-group h3{font-size:1.1rem;margin:0 0 12px}
 </style>`;
 
 const agendaCss = `<style>
@@ -2255,7 +2257,7 @@ function facetMetrics(events) {
   };
 }
 
-function renderFacetPage({ filePath, title, description, events, canonicalPath, relativePrefix = '../', temporalWindowHours = 0 }) {
+function renderFacetPage({ filePath, title, description, events, canonicalPath, relativePrefix = '../', temporalWindowHours = 0, extraSectionHtml = '' }) {
   const canonical = absoluteUrl(canonicalPath);
   const feedSlug = canonicalPath.startsWith('cities/')
     ? `city-${canonicalPath.replace(/^cities\//, '').replace(/\.html$/, '')}`
@@ -2287,6 +2289,7 @@ ${header(relativePrefix)}
 <main>
   <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span>اكتشاف حسب السياق</span><h1>${escapeHtml(title)}</h1><p class="lead">${escapeHtml(description)}</p><div class="signal-strip"><div class="signal"><span>قادمة</span><b>${metrics.upcoming}</b></div><div class="signal"><span>مباشرة/جارية</span><b>${metrics.live}</b></div><div class="signal"><span>مصادر</span><b>${metrics.sources}</b></div></div></div></section>
   <section class="section"${windowAttr}><div class="wrap">${selected ? `<article class="facet-focus facet-primary"><span>الأقرب الآن</span><h2>${escapeHtml(selected.title)}</h2><p>${escapeHtml(selected.summary)}</p><div class="activation-actions"><a class="cta" href="${relativePrefix}${selected.detail_url.replace(/^\.\//, '')}">افتح التفاصيل</a><a class="cta" href="${feedBase}.ics">أضف السياق للتقويم</a></div></article>` : ''}<div class="grid">${remainingEvents.slice(0, 18).map((event) => eventCard(event, relativePrefix)).join('')}</div><article class="facet-focus"><span>اشتراك مخصص</span><h2>تابع ${escapeHtml(title)}</h2><p>هذه الروابط تتحدث مع كل بناء وتعرض الفعاليات القادمة والجارية لهذا السياق فقط.</p>${subscriptionActions}</article></div></section>
+  ${extraSectionHtml}
 </main>
 ${footer(relativePrefix)}
 ${liveRuntimeScript()}
@@ -2309,6 +2312,24 @@ function overlapsWindow(event, start, end) {
   const startMs = starts?.getTime() || ends.getTime();
   const endMs = ends?.getTime() || startMs;
   return startMs < end.getTime() && endMs >= start.getTime();
+}
+
+// WO-2: the day-anchor groups on this-month.html that the homepage
+// calendar strip's #day-YYYY-MM-DD links resolve against. Must call
+// remainingMonthDays() with the exact same `events` array and `reference`
+// instant as patchHomePage's calendar strip (both use buildAt) — see
+// scripts/home-month-calendar.mjs's header comment.
+function monthDayGroupsHtml(days, relativePrefix) {
+  const withEvents = days.filter((day) => day.events.length);
+  if (!withEvents.length) return '';
+  const groups = withEvents.map((day) => {
+    const weekday = formatWeekday(day.date);
+    const { day: dayNumber, month: monthName } = formatHomeCardDate(day.date);
+    const heading = `${weekday} ${dayNumber} ${monthName}`;
+    const cards = day.events.map((event) => eventCard(event, relativePrefix)).join('');
+    return `<div class="day-group" id="day-${escapeHtml(day.key)}"><h3>${escapeHtml(heading)}</h3><div class="grid">${cards}</div></div>`;
+  }).join('');
+  return `<section class="section day-groups"><div class="wrap"><h2>تصفح حسب اليوم</h2>${groups}</div></section>`;
 }
 
 function writeTemporalPages(events) {
@@ -2334,13 +2355,15 @@ function writeTemporalPages(events) {
       live_schedule_ready: event.live_schedule_ready
     }))
   }, null, 2)}\n`);
+  const remainingDays = remainingMonthDays(events, Date.parse(buildAt));
   renderFacetPage({
     filePath: path.join(distDir, 'this-month.html'),
     title: 'فعاليات هذا الشهر',
     description: 'فعاليات هذا الشهر في السعودية من EventLive، مرتبة من الأقرب زمنيا مع روابط التفاصيل والتقويم والمصدر.',
     events: monthEvents,
     canonicalPath: 'this-month.html',
-    relativePrefix: './'
+    relativePrefix: './',
+    extraSectionHtml: monthDayGroupsHtml(remainingDays, './')
   });
 
   const now = Date.now();
@@ -5968,11 +5991,11 @@ function enhanceHomeRuntime(html, events) {
   return next.replace(/<\/body>/i, `<script id="eventlive-runtime-clock">${liveRuntimeScript().replace(/^<script>|<\/script>$/g, '')}</script>\n</body>`);
 }
 
-function homeTimelineSection({ id, windowName, title, description, events, href, linkLabel }) {
-  const cards = events.slice(0, 8).map((event) => homeEventCard(event)).join('\n');
+function homeTimelineSection({ id, windowName, title, description, events, href, linkLabel, limit = 8, extraHtml = '' }) {
+  const cards = events.slice(0, limit).map((event) => homeEventCard(event)).join('\n');
   const content = cards || `<p class="empty-state">لا توجد فعاليات مؤكدة في هذه النافذة حتى الآن. <a href="${href}">استعرض أقرب الفعاليات</a>.</p>`;
   return `<section class="h-section" id="${id}" data-home-window="${windowName}">
-      <div class="h-section-head">
+      ${extraHtml}<div class="h-section-head">
         <div>
           <h2>${title}</h2>
           <p><b>${events.length}</b> <span>${description}</span></p>
@@ -6023,11 +6046,33 @@ function patchHomePage(events) {
     const start = dateValue(event.starts_at)?.getTime();
     return Number.isFinite(start) && start > now && start <= weekLimit;
   }));
+  // WO-2: the "this month" section chains off the same usedIds exclusion
+  // ladder as today/tomorrow/week (see the comment above `usedIds`), so
+  // weekEvents must close the chain here before monthEvents reads it —
+  // the three earlier sections never needed this because week was the last
+  // one in the chain until now.
+  weekEvents.forEach((event) => usedIds.add(event.id));
+  // monthEnd/remainingDays both key off buildAt (not `now`) so this
+  // homepage computation and writeTemporalPages' this-month.html day
+  // anchors (scripts/generate-site.mjs) agree on the exact same reference
+  // instant — see scripts/home-month-calendar.mjs's header comment for why
+  // that agreement is what makes every #day-YYYY-MM-DD link resolve.
+  const monthReference = Date.parse(buildAt);
+  const monthEnd = riyadhMonthEndExclusive(monthReference);
+  const monthEvents = sortEventsByStart(upcoming.filter((event) => {
+    if (usedIds.has(event.id)) return false;
+    const start = dateValue(event.starts_at)?.getTime();
+    return Number.isFinite(start) && start > weekLimit && start < monthEnd;
+  }));
+  monthEvents.forEach((event) => usedIds.add(event.id));
+  const remainingDays = remainingMonthDays(events, monthReference);
+  const calendarStripHtml = homeCalendarStrip(remainingDays);
   const nextEvent = prioritized[0] || events[0];
   const timelineSections = [
     homeTimelineSection({ id: 'soon', windowName: 'today', title: 'اليوم في السعودية', description: 'فعالية تبدأ اليوم أو تجري الآن', events: todayEvents, href: './today-events.html', linkLabel: 'كل فعاليات اليوم' }),
     homeTimelineSection({ id: 'tomorrow', windowName: 'tomorrow', title: 'غدًا', description: 'فعالية تبدأ غدًا', events: tomorrowEvents, href: './saudi-events-tomorrow.html', linkLabel: 'كل فعاليات الغد' }),
-    homeTimelineSection({ id: 'week', windowName: 'week', title: 'هذا الأسبوع', description: 'فعالية أخرى خلال الأيام السبعة القادمة', events: weekEvents, href: './this-week.html', linkLabel: 'استعرض الأسبوع' })
+    homeTimelineSection({ id: 'week', windowName: 'week', title: 'هذا الأسبوع', description: 'فعالية أخرى خلال الأيام السبعة القادمة', events: weekEvents, href: './this-week.html', linkLabel: 'استعرض الأسبوع' }),
+    homeTimelineSection({ id: 'month', windowName: 'month', title: 'هذا الشهر', description: 'فعالية أخرى حتى نهاية الشهر', events: monthEvents, href: './this-month.html', linkLabel: 'استعرض الشهر كاملًا', limit: 12, extraHtml: calendarStripHtml })
   ].join('\n');
   const tenDaysFromNow = now + (10 * 24 * 60 * 60 * 1000);
   const withinTenDays = upcoming.filter((event) => {
@@ -6082,7 +6127,7 @@ function patchHomePage(events) {
     .replace(/var searchData = [\s\S]*?;\n\s*var input =/, `var searchData = ${scriptValue(searchData)};\n      var input =`)
     .replace(/<div class="board-single" id="boardSingle"[^>]*>/, boardSingleOpenTag)
     .replace(/<section class="board-live" id="boardLive"[^>]*>[\s\S]*?<\/section>/, homeBoardLiveSection(liveBoardCards))
-    .replace(/<section class=\"h-section\" id=\"(?:tomorrow|week)\"[^>]*>[\s\S]*?<\/section>\s*/g, '')
+    .replace(/<section class=\"h-section\" id=\"(?:tomorrow|week|month)\"[^>]*>[\s\S]*?<\/section>\s*/g, '')
     .replace(/<section class=\"h-section\" id=\"soon\"[^>]*>[\s\S]*?<\/section>/, timelineSections)
     .replace(/<h3><a href=/g, '<h3><a dir="auto" href=');
   if (nextEvent) {

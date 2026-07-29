@@ -117,6 +117,14 @@
     .more-link { color:var(--brand); font-weight:700; font-size:13.5px; white-space:nowrap; padding:6px 2px; }
     .card-row { display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:18px; }
 
+    /* WO-2: this-month mini calendar strip */
+    .cal-strip { display:grid; grid-template-columns:repeat(auto-fill, minmax(46px,1fr)); gap:8px; margin-bottom:20px; }
+    .cal-day { position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; min-height:52px; background:var(--card); border:1px solid var(--line); border-radius:10px; color:var(--ink); }
+    .cal-day b { font-size:14px; font-weight:700; font-variant-numeric:tabular-nums; }
+    .cal-day.has-events { border-color:var(--brand); color:var(--brand); }
+    .cal-day.has-events:hover, .cal-day.has-events:focus-visible { background:var(--brand-soft); }
+    .cal-dot { width:5px; height:5px; border-radius:50%; background:var(--brand); }
+
     /* ===== Card ===== */
     .card { background:var(--card); border:1px solid var(--line); border-radius:var(--r); overflow:hidden; display:flex; flex-direction:column; transition:box-shadow .2s, transform .2s; }
     .card:hover { box-shadow:var(--shadow); transform:translateY(-2px); }
@@ -184,6 +192,8 @@
       .cd-cell { min-width:0; flex:1; }
       .card-row { display:flex; overflow-x:auto; scroll-snap-type:x mandatory; gap:12px; padding-bottom:8px; margin-inline:-16px; padding-inline:16px; }
       .card-row .card { min-width:262px; scroll-snap-align:start; }
+      .cal-strip { display:flex; overflow-x:auto; scroll-snap-type:x mandatory; gap:8px; padding-bottom:6px; margin-inline:-16px; padding-inline:16px; }
+      .cal-strip .cal-day { min-width:48px; scroll-snap-align:start; }
       .h-section { margin:36px 0; }
       .foot-grid { grid-template-columns:1fr 1fr; }
       .trust-band { border-radius:14px; padding:18px; }

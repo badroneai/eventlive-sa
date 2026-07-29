@@ -155,6 +155,7 @@ jobs:
           npm run test:single-session-activation
           npm run test:live-operational-feeds
           npm run test:event-priority
+          npm run test:home-month-calendar
           npm run test:attendance-mode-offline
           npm run test:venue-location
           npm run test:image-cache
