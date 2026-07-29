@@ -1,0 +1,612 @@
+{
+  "generated_at": "2026-07-29T05:23:39.210Z",
+  "catalog": "data/events_catalog.json",
+  "candidates": "data/source_candidates.json",
+  "manifest": "data/event_image_cache_manifest.json",
+  "source_label": "Visit Saudi Summer Calendar PDF",
+  "thresholds": {
+    "min_ratio": 0.5,
+    "min_intersection": 2
+  },
+  "totals": {
+    "pdf_crop_assignments": 69,
+    "verified": 31,
+    "struck": 38,
+    "slots_seen_this_cycle": 60
+  },
+  "struck": [
+    {
+      "id": "event-سكة-الأطعمة",
+      "title": "سكة الأطعمة",
+      "file": "visit-saudi-summer-2026-p047-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 47 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-سمره",
+      "title": "سمره",
+      "file": "visit-saudi-summer-2026-p005-top-left.jpg",
+      "reason": "identity-mismatch",
+      "detail": "page 5 top-left is now \"برندة\"",
+      "matched_tokens": [],
+      "ratio": 0
+    },
+    {
+      "id": "event-سكاي-فيلج",
+      "title": "سكاي فيلج",
+      "file": "visit-saudi-summer-2026-p005-bottom-left.jpg",
+      "reason": "identity-mismatch",
+      "detail": "page 5 bottom-left is now \"حديقة مطار ابها الدولي\"",
+      "matched_tokens": [],
+      "ratio": 0
+    },
+    {
+      "id": "event-معرض-قلب-البحر",
+      "title": "معرض قلب البحر",
+      "file": "visit-saudi-summer-2026-p030-top-right.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 30 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-منطقة-مشجعي-كأس-العالم-2026",
+      "title": "منطقة مشجعي كأس العالم 2026",
+      "file": "visit-saudi-summer-2026-p065-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 65 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-عيشوا-المونديال-مع-بنش-مارك-عبادي-الجوهر-أرينا",
+      "title": "عيشوا المونديال مع بنش مارك - عبادي الجوهر أرينا",
+      "file": "visit-saudi-summer-2026-p030-top-left.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 30 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-منطقة-مشجعي-كوكاكوا-في-حي-جاكس",
+      "title": "منطقة مشجعي كوكاكوا في حي جاكس",
+      "file": "visit-saudi-summer-2026-p054-bottom-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 54 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-مهرجان-صوت-أبها-saf",
+      "title": "مهرجان صوت أبها SAF",
+      "file": "visit-saudi-summer-2026-p006-bottom-right.jpg",
+      "reason": "identity-mismatch",
+      "detail": "page 6 bottom-right is now \"سكاي فيلج\"",
+      "matched_tokens": [],
+      "ratio": 0
+    },
+    {
+      "id": "event-بوابة-المونديال-كأس-العالم-في-جدة",
+      "title": "بوابة المونديال – كأس العالم في جدة",
+      "file": "visit-saudi-summer-2026-p030-bottom-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 30 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-تيفو-فان-زون",
+      "title": "تيفو فان زون",
+      "file": "visit-saudi-summer-2026-p055-bottom-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 55 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-معرض-في-تتبّع-ذكريات-غامرة",
+      "title": "معرض في تتبّع ذكريات غامرة",
+      "file": "visit-saudi-summer-2026-p031-top-left.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 31 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-ليالي-المونديال",
+      "title": "ليالي المونديال",
+      "file": "visit-saudi-summer-2026-p055-bottom-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 55 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-ليالي-المباريات-في-أكت-1",
+      "title": "ليالي المباريات في أكت 1",
+      "file": "visit-saudi-summer-2026-p035-bottom-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 35 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-مهرجان-أبها-للتسوق",
+      "title": "مهرجان أبها للتسوق",
+      "file": "visit-saudi-summer-2026-p006-bottom-left.jpg",
+      "reason": "identity-mismatch",
+      "detail": "page 6 bottom-left is now \"ساوث ويست (الكاوبوي)\"",
+      "matched_tokens": [],
+      "ratio": 0
+    },
+    {
+      "id": "event-مزرعة-أعناب",
+      "title": "مزرعة أعناب",
+      "file": "visit-saudi-summer-2026-p007-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 7 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-الحفلات-الغنائية",
+      "title": "الحفلات الغنائية",
+      "file": "visit-saudi-summer-2026-p007-bottom-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 7 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-أسبوع-العطور",
+      "title": "أسبوع العطور",
+      "file": "visit-saudi-summer-2026-p007-top-left.jpg",
+      "reason": "identity-mismatch",
+      "detail": "page 7 top-left is now \"مهرجان صوت أبها SAF\"",
+      "matched_tokens": [],
+      "ratio": 0
+    },
+    {
+      "id": "event-بيوني-الشرف",
+      "title": "بيوني الشرف",
+      "file": "visit-saudi-summer-2026-p008-top-left.jpg",
+      "reason": "identity-mismatch",
+      "detail": "page 8 top-left is now \"واحة عسيب\"",
+      "matched_tokens": [],
+      "ratio": 0
+    },
+    {
+      "id": "event-فعالية-سيّر",
+      "title": "فعالية سيّر",
+      "file": "visit-saudi-summer-2026-p008-top-right.jpg",
+      "reason": "identity-mismatch",
+      "detail": "page 8 top-right is now \"مزرعة أعناب\"",
+      "matched_tokens": [],
+      "ratio": 0
+    },
+    {
+      "id": "event-معرض-الصيف-للفنون",
+      "title": "معرض الصيف للفنون",
+      "file": "visit-saudi-summer-2026-p052-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 52 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-ورث-الفن",
+      "title": "ورث الفن",
+      "file": "visit-saudi-summer-2026-p053-bottom-left.jpg",
+      "reason": "identity-mismatch",
+      "detail": "page 53 bottom-left is now \"كايف المزرعة\"",
+      "matched_tokens": [],
+      "ratio": 0
+    },
+    {
+      "id": "event-taste-of-the-world",
+      "title": "Taste of the World",
+      "file": "visit-saudi-summer-2026-p053-bottom-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 53 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-مهرجان-المأكولات-الشعبية",
+      "title": "مهرجان المأكولات الشعبية",
+      "file": "visit-saudi-summer-2026-p054-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 54 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-فعالية-رمي-السهام",
+      "title": "فعالية رمي السهام",
+      "file": "visit-saudi-summer-2026-p054-top-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 54 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-عروض-الفنون-الأدائية-التقليدية",
+      "title": "عروض الفنون الأدائية التقليدية",
+      "file": "visit-saudi-summer-2026-p053-top-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 53 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-مهرجان-لحن-المملكة",
+      "title": "مهرجان لحن المملكة",
+      "file": "visit-saudi-summer-2026-p033-top-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 33 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-عمر-الجمل-حفلة-ستاند-أب-كوميدي",
+      "title": "عمر الجمل - حفلة ستاند أب كوميدي",
+      "file": "visit-saudi-summer-2026-p054-bottom-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 54 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-بطولة-المملكة-للبلوت",
+      "title": "بطولة المملكة للبلوت",
+      "file": "visit-saudi-summer-2026-p054-bottom-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 54 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-اليوم-العالمي-لآيس-كريم-بالتعاون-مع-كلمشي",
+      "title": "اليوم العالمي لآيس كريم بالتعاون مع كلمشي",
+      "file": "visit-saudi-summer-2026-p055-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 55 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-الأسبوع-الصيني",
+      "title": "الأسبوع الصيني",
+      "file": "visit-saudi-summer-2026-p055-top-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 55 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-ليلة-ستاند-أب-كوميدي",
+      "title": "ليلة ستاند أب كوميدي",
+      "file": "visit-saudi-summer-2026-p037-bottom-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 37 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-the-comeback",
+      "title": "The Comeback",
+      "file": "visit-saudi-summer-2026-p033-bottom-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 33 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-أوركسترا-harry-potter",
+      "title": "أوركسترا Harry Potter",
+      "file": "visit-saudi-summer-2026-p055-bottom-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 55 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-ضحكات-الرياض",
+      "title": "ضحكات الرياض",
+      "file": "visit-saudi-summer-2026-p055-bottom-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 55 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-أوركسترا-game-of-thrones",
+      "title": "أوركسترا Game of Thrones",
+      "file": "visit-saudi-summer-2026-p056-top-right.jpg",
+      "reason": "identity-mismatch",
+      "detail": "page 56 top-right is now \"نادي ستورم في العماريه\"",
+      "matched_tokens": [],
+      "ratio": 0
+    },
+    {
+      "id": "event-بطولة-أبطال-المملكة-للشطرنج",
+      "title": "بطولة أبطال المملكة للشطرنج",
+      "file": "visit-saudi-summer-2026-p056-top-left.jpg",
+      "reason": "identity-mismatch",
+      "detail": "page 56 top-left is now \"معرض الصيف للفنون\"",
+      "matched_tokens": [],
+      "ratio": 0
+    },
+    {
+      "id": "event-in-act-act-x",
+      "title": "IN ACT - ACT X",
+      "file": "visit-saudi-summer-2026-p056-bottom-left.jpg",
+      "reason": "identity-mismatch",
+      "detail": "page 56 bottom-left is now \"الأخطبوطية\"",
+      "matched_tokens": [],
+      "ratio": 0
+    },
+    {
+      "id": "event-in-act-anniversary-act-xi",
+      "title": "IN ACT ANNIVERSARY - ACT XI",
+      "file": "visit-saudi-summer-2026-p034-top-left.jpg",
+      "reason": "identity-mismatch",
+      "detail": "page 34 top-left is now \"معرض قلب البحر\"",
+      "matched_tokens": [],
+      "ratio": 0
+    }
+  ],
+  "verified": [
+    {
+      "id": "event-كنوز-غارقة",
+      "title": "كنوز غارقة",
+      "file": "visit-saudi-summer-2026-p034-top-right.png",
+      "matched_tokens": [
+        "كنوز",
+        "غارقه"
+      ]
+    },
+    {
+      "id": "event-سوق-الثلاثاء-الشعبي",
+      "title": "سوق الثلاثاء الشعبي",
+      "file": "visit-saudi-summer-2026-p004-top-right.jpg",
+      "matched_tokens": [
+        "سوق",
+        "الثلاثاء",
+        "الشعبي"
+      ]
+    },
+    {
+      "id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
+      "title": "قصور وقاع ابو نقطة المتحمي",
+      "file": "visit-saudi-summer-2026-p004-top-left.jpg",
+      "matched_tokens": [
+        "قصور",
+        "وقاع",
+        "ابو",
+        "نقطه",
+        "المتحمي"
+      ]
+    },
+    {
+      "id": "event-قصور-العسابلة",
+      "title": "قصور العسابلة",
+      "file": "visit-saudi-summer-2026-p004-bottom-left.jpg",
+      "matched_tokens": [
+        "قصور",
+        "العسابله"
+      ]
+    },
+    {
+      "id": "event-قرية-آل-ينفع",
+      "title": "قرية آل ينفع",
+      "file": "visit-saudi-summer-2026-p004-bottom-right.jpg",
+      "matched_tokens": [
+        "قريه",
+        "ينفع"
+      ]
+    },
+    {
+      "id": "event-مزرعة-الليوان",
+      "title": "مزرعة الليوان",
+      "file": "visit-saudi-summer-2026-p005-top-right.jpg",
+      "matched_tokens": [
+        "مزرعه",
+        "الليوان"
+      ]
+    },
+    {
+      "id": "event-كايف-المزرعة",
+      "title": "كايف المزرعة",
+      "file": "visit-saudi-summer-2026-p053-bottom-left.jpg",
+      "matched_tokens": [
+        "كايف",
+        "المزرعه"
+      ]
+    },
+    {
+      "id": "event-برندة",
+      "title": "برندة",
+      "file": "visit-saudi-summer-2026-p005-top-left.jpg",
+      "matched_tokens": [
+        "برنده"
+      ]
+    },
+    {
+      "id": "event-حديقة-مطار-ابها-الدولي",
+      "title": "حديقة مطار ابها الدولي",
+      "file": "visit-saudi-summer-2026-p005-bottom-left.jpg",
+      "matched_tokens": [
+        "حديقه",
+        "مطار",
+        "ابها",
+        "الدولي"
+      ]
+    },
+    {
+      "id": "event-باتو",
+      "title": "باتو",
+      "file": "visit-saudi-summer-2026-p006-top-left.jpg",
+      "matched_tokens": [
+        "باتو"
+      ]
+    },
+    {
+      "id": "event-ساوث-ويست-الكاوبوي",
+      "title": "ساوث ويست (الكاوبوي)",
+      "file": "visit-saudi-summer-2026-p006-bottom-left.jpg",
+      "matched_tokens": [
+        "ساوث",
+        "ويست",
+        "الكاوبوي"
+      ]
+    },
+    {
+      "id": "event-نادي-ستورم-في-العماريه",
+      "title": "نادي ستورم في العماريه",
+      "file": "visit-saudi-summer-2026-p056-top-right.jpg",
+      "matched_tokens": [
+        "نادي",
+        "ستورم",
+        "العماريه"
+      ]
+    },
+    {
+      "id": "event-واحة-عسيب",
+      "title": "واحة عسيب",
+      "file": "visit-saudi-summer-2026-p008-top-left.jpg",
+      "matched_tokens": [
+        "واحه",
+        "عسيب"
+      ]
+    },
+    {
+      "id": "event-منتجع-الوادي",
+      "title": "منتجع الوادي",
+      "file": "visit-saudi-summer-2026-p009-top-right.jpg",
+      "matched_tokens": [
+        "منتجع",
+        "الوادي"
+      ]
+    },
+    {
+      "id": "event-شارع-الفن-القرية-الأوروبية",
+      "title": "شارع الفن - القرية الأوروبية",
+      "file": "visit-saudi-summer-2026-p009-top-left.jpg",
+      "matched_tokens": [
+        "شارع",
+        "الفن",
+        "القريه",
+        "الاوروبيه"
+      ]
+    },
+    {
+      "id": "event-قرية-الموسى-التراثية",
+      "title": "قرية الموسى التراثية",
+      "file": "visit-saudi-summer-2026-p065-bottom-right.jpg",
+      "matched_tokens": [
+        "قريه",
+        "الموسي",
+        "التراثيه"
+      ]
+    },
+    {
+      "id": "event-صيف-غابة-رغدان-في-الباحة-2026",
+      "title": "صيف غابة رغدان في الباحة 2026",
+      "file": "visit-saudi-summer-2026-p065-top-left.jpg",
+      "matched_tokens": [
+        "صيف",
+        "غابه",
+        "رغدان",
+        "الباحه",
+        "2026"
+      ]
+    },
+    {
+      "id": "event-قرية-الأطاولة-التراثية",
+      "title": "قرية الأطاولة التراثية",
+      "file": "visit-saudi-summer-2026-p065-bottom-left.jpg",
+      "matched_tokens": [
+        "قريه",
+        "الاطاوله",
+        "التراثيه"
+      ]
+    },
+    {
+      "id": "event-نفس",
+      "title": "نفس",
+      "file": "visit-saudi-summer-2026-p009-bottom-left.jpg",
+      "matched_tokens": [
+        "نفس"
+      ]
+    },
+    {
+      "id": "event-مدماك",
+      "title": "مدماك",
+      "file": "visit-saudi-summer-2026-p010-top-right.jpg",
+      "matched_tokens": [
+        "مدماك"
+      ]
+    },
+    {
+      "id": "event-مارنيز",
+      "title": "مارنيز",
+      "file": "visit-saudi-summer-2026-p010-top-left.jpg",
+      "matched_tokens": [
+        "مارنيز"
+      ]
+    },
+    {
+      "id": "event-مزرعة-التوت-الأسود",
+      "title": "مزرعة التوت الأسود",
+      "file": "visit-saudi-summer-2026-p010-bottom-right.jpg",
+      "matched_tokens": [
+        "مزرعه",
+        "التوت",
+        "الاسود"
+      ]
+    },
+    {
+      "id": "event-ارياش",
+      "title": "ارياش",
+      "file": "visit-saudi-summer-2026-p011-top-left.jpg",
+      "matched_tokens": [
+        "ارياش"
+      ]
+    },
+    {
+      "id": "event-مهابة",
+      "title": "مهابة",
+      "file": "visit-saudi-summer-2026-p011-bottom-left.png",
+      "matched_tokens": [
+        "مهابه"
+      ]
+    },
+    {
+      "id": "event-الأخطبوطية",
+      "title": "الأخطبوطية",
+      "file": "visit-saudi-summer-2026-p056-bottom-left.jpg",
+      "matched_tokens": [
+        "الاخطبوطيه"
+      ]
+    },
+    {
+      "id": "event-صيف-وسمرة",
+      "title": "صيف وسمرة",
+      "file": "visit-saudi-summer-2026-p012-top-left.jpg",
+      "matched_tokens": [
+        "صيف",
+        "وسمره"
+      ]
+    },
+    {
+      "id": "event-صيف-وِرث-2026",
+      "title": "صيف وِرث 2026",
+      "file": "visit-saudi-summer-2026-p012-top-right.jpg",
+      "matched_tokens": [
+        "صيف",
+        "ورث",
+        "2026"
+      ]
+    },
+    {
+      "id": "event-عرض-ستاند-أب-كوميدي-مع-شاكر-الشريف",
+      "title": "عرض ستاند أب كوميدي مع شاكر الشريف",
+      "file": "visit-saudi-summer-2026-p038-bottom-left.jpg",
+      "matched_tokens": [
+        "عرض",
+        "ستاند",
+        "كوميدي",
+        "شاكر",
+        "الشريف"
+      ]
+    },
+    {
+      "id": "event-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد",
+      "title": "منعً في لاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد",
+      "file": "visit-saudi-summer-2026-p039-top-right.jpg",
+      "matched_tokens": [
+        "منع",
+        "لاحراج",
+        "عرض",
+        "ستاند",
+        "كوميدي",
+        "عبدالرحمن",
+        "محمد"
+      ]
+    },
+    {
+      "id": "event-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-2",
+      "title": "منعً في لاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد",
+      "file": "visit-saudi-summer-2026-p061-top-right.jpg",
+      "matched_tokens": [
+        "منع",
+        "لاحراج",
+        "عرض",
+        "ستاند",
+        "كوميدي",
+        "عبدالرحمن",
+        "محمد"
+      ]
+    },
+    {
+      "id": "event-in-act-act-ix",
+      "title": "IN ACT - ACT IX",
+      "file": "visit-saudi-summer-2026-p039-top-left.jpg",
+      "matched_tokens": [
+        "act"
+      ]
+    }
+  ],
+  "skipped_no_crop": []
+}

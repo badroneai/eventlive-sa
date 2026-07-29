@@ -1,0 +1,82 @@
+# EventLive Visit Saudi Image Identity Report
+
+- generated_at: 2026-07-29T05:23:39.210Z
+- pdf_crop_assignments: 69
+- verified: 31
+- struck: 38
+- slots_seen_this_cycle: 60
+
+## Struck (fell back to generated cover)
+
+- سكة الأطعمة (visit-saudi-summer-2026-p047-top-right.jpg) - slot-vacated - no dated card currently occupies page 47 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- سمره (visit-saudi-summer-2026-p005-top-left.jpg) - identity-mismatch - page 5 top-left is now "برندة"
+- سكاي فيلج (visit-saudi-summer-2026-p005-bottom-left.jpg) - identity-mismatch - page 5 bottom-left is now "حديقة مطار ابها الدولي"
+- معرض قلب البحر (visit-saudi-summer-2026-p030-top-right.png) - slot-vacated - no dated card currently occupies page 30 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- منطقة مشجعي كأس العالم 2026 (visit-saudi-summer-2026-p065-top-right.jpg) - slot-vacated - no dated card currently occupies page 65 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- عيشوا المونديال مع بنش مارك - عبادي الجوهر أرينا (visit-saudi-summer-2026-p030-top-left.png) - slot-vacated - no dated card currently occupies page 30 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- منطقة مشجعي كوكاكوا في حي جاكس (visit-saudi-summer-2026-p054-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 54 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- مهرجان صوت أبها SAF (visit-saudi-summer-2026-p006-bottom-right.jpg) - identity-mismatch - page 6 bottom-right is now "سكاي فيلج"
+- بوابة المونديال – كأس العالم في جدة (visit-saudi-summer-2026-p030-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 30 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- تيفو فان زون (visit-saudi-summer-2026-p055-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 55 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- معرض في تتبّع ذكريات غامرة (visit-saudi-summer-2026-p031-top-left.png) - slot-vacated - no dated card currently occupies page 31 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- ليالي المونديال (visit-saudi-summer-2026-p055-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 55 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- ليالي المباريات في أكت 1 (visit-saudi-summer-2026-p035-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 35 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- مهرجان أبها للتسوق (visit-saudi-summer-2026-p006-bottom-left.jpg) - identity-mismatch - page 6 bottom-left is now "ساوث ويست (الكاوبوي)"
+- مزرعة أعناب (visit-saudi-summer-2026-p007-top-right.jpg) - slot-vacated - no dated card currently occupies page 7 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- الحفلات الغنائية (visit-saudi-summer-2026-p007-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 7 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- أسبوع العطور (visit-saudi-summer-2026-p007-top-left.jpg) - identity-mismatch - page 7 top-left is now "مهرجان صوت أبها SAF"
+- بيوني الشرف (visit-saudi-summer-2026-p008-top-left.jpg) - identity-mismatch - page 8 top-left is now "واحة عسيب"
+- فعالية سيّر (visit-saudi-summer-2026-p008-top-right.jpg) - identity-mismatch - page 8 top-right is now "مزرعة أعناب"
+- معرض الصيف للفنون (visit-saudi-summer-2026-p052-top-right.jpg) - slot-vacated - no dated card currently occupies page 52 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- ورث الفن (visit-saudi-summer-2026-p053-bottom-left.jpg) - identity-mismatch - page 53 bottom-left is now "كايف المزرعة"
+- Taste of the World (visit-saudi-summer-2026-p053-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 53 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- مهرجان المأكولات الشعبية (visit-saudi-summer-2026-p054-top-right.jpg) - slot-vacated - no dated card currently occupies page 54 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- فعالية رمي السهام (visit-saudi-summer-2026-p054-top-left.jpg) - slot-vacated - no dated card currently occupies page 54 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- عروض الفنون الأدائية التقليدية (visit-saudi-summer-2026-p053-top-left.jpg) - slot-vacated - no dated card currently occupies page 53 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- مهرجان لحن المملكة (visit-saudi-summer-2026-p033-top-left.jpg) - slot-vacated - no dated card currently occupies page 33 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- عمر الجمل - حفلة ستاند أب كوميدي (visit-saudi-summer-2026-p054-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 54 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- بطولة المملكة للبلوت (visit-saudi-summer-2026-p054-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 54 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- اليوم العالمي لآيس كريم بالتعاون مع كلمشي (visit-saudi-summer-2026-p055-top-right.jpg) - slot-vacated - no dated card currently occupies page 55 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- الأسبوع الصيني (visit-saudi-summer-2026-p055-top-left.jpg) - slot-vacated - no dated card currently occupies page 55 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- ليلة ستاند أب كوميدي (visit-saudi-summer-2026-p037-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 37 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- The Comeback (visit-saudi-summer-2026-p033-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 33 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- أوركسترا Harry Potter (visit-saudi-summer-2026-p055-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 55 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- ضحكات الرياض (visit-saudi-summer-2026-p055-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 55 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- أوركسترا Game of Thrones (visit-saudi-summer-2026-p056-top-right.jpg) - identity-mismatch - page 56 top-right is now "نادي ستورم في العماريه"
+- بطولة أبطال المملكة للشطرنج (visit-saudi-summer-2026-p056-top-left.jpg) - identity-mismatch - page 56 top-left is now "معرض الصيف للفنون"
+- IN ACT - ACT X (visit-saudi-summer-2026-p056-bottom-left.jpg) - identity-mismatch - page 56 bottom-left is now "الأخطبوطية"
+- IN ACT ANNIVERSARY - ACT XI (visit-saudi-summer-2026-p034-top-left.jpg) - identity-mismatch - page 34 top-left is now "معرض قلب البحر"
+
+## Verified
+
+- كنوز غارقة (visit-saudi-summer-2026-p034-top-right.png)
+- سوق الثلاثاء الشعبي (visit-saudi-summer-2026-p004-top-right.jpg)
+- قصور وقاع ابو نقطة المتحمي (visit-saudi-summer-2026-p004-top-left.jpg)
+- قصور العسابلة (visit-saudi-summer-2026-p004-bottom-left.jpg)
+- قرية آل ينفع (visit-saudi-summer-2026-p004-bottom-right.jpg)
+- مزرعة الليوان (visit-saudi-summer-2026-p005-top-right.jpg)
+- كايف المزرعة (visit-saudi-summer-2026-p053-bottom-left.jpg)
+- برندة (visit-saudi-summer-2026-p005-top-left.jpg)
+- حديقة مطار ابها الدولي (visit-saudi-summer-2026-p005-bottom-left.jpg)
+- باتو (visit-saudi-summer-2026-p006-top-left.jpg)
+- ساوث ويست (الكاوبوي) (visit-saudi-summer-2026-p006-bottom-left.jpg)
+- نادي ستورم في العماريه (visit-saudi-summer-2026-p056-top-right.jpg)
+- واحة عسيب (visit-saudi-summer-2026-p008-top-left.jpg)
+- منتجع الوادي (visit-saudi-summer-2026-p009-top-right.jpg)
+- شارع الفن - القرية الأوروبية (visit-saudi-summer-2026-p009-top-left.jpg)
+- قرية الموسى التراثية (visit-saudi-summer-2026-p065-bottom-right.jpg)
+- صيف غابة رغدان في الباحة 2026 (visit-saudi-summer-2026-p065-top-left.jpg)
+- قرية الأطاولة التراثية (visit-saudi-summer-2026-p065-bottom-left.jpg)
+- نفس (visit-saudi-summer-2026-p009-bottom-left.jpg)
+- مدماك (visit-saudi-summer-2026-p010-top-right.jpg)
+- مارنيز (visit-saudi-summer-2026-p010-top-left.jpg)
+- مزرعة التوت الأسود (visit-saudi-summer-2026-p010-bottom-right.jpg)
+- ارياش (visit-saudi-summer-2026-p011-top-left.jpg)
+- مهابة (visit-saudi-summer-2026-p011-bottom-left.png)
+- الأخطبوطية (visit-saudi-summer-2026-p056-bottom-left.jpg)
+- صيف وسمرة (visit-saudi-summer-2026-p012-top-left.jpg)
+- صيف وِرث 2026 (visit-saudi-summer-2026-p012-top-right.jpg)
+- عرض ستاند أب كوميدي مع شاكر الشريف (visit-saudi-summer-2026-p038-bottom-left.jpg)
+- منعً في لاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد (visit-saudi-summer-2026-p039-top-right.jpg)
+- منعً في لاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد (visit-saudi-summer-2026-p061-top-right.jpg)
+- IN ACT - ACT IX (visit-saudi-summer-2026-p039-top-left.jpg)
