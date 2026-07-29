@@ -222,14 +222,24 @@ function main() {
 //     clears the identity gate, instead of leaving it permanently orphaned.
 const STRUCK_IMAGE_SENTINEL = '/assets/event-covers/__wo5-identity-struck__.svg';
 
+// data/events-catalog.schema.json is strict (additionalProperties: false) and every
+// image_* field has a format/pattern/enum constraint - none of them accept ''. All of
+// them are optional (none appear in the event object's "required" list), so the
+// schema-valid way to say "this field no longer applies" is to remove the key, not set
+// it to an empty string. Object.entries() in validate-data.mjs's validateObject() would
+// still see (and reject) a key set to `undefined`, so these must be `delete`d, not
+// merely unset.
 function strikeAssignment(event, manifest, reason) {
   delete manifest.pdf_crop_provenance[event.id];
-  event.image_url = STRUCK_IMAGE_SENTINEL;
-  event.original_image_url = '';
-  event.image_alt = '';
-  event.image_source_url = '';
-  event.image_discovered_at = '';
-  event.image_discovery_method = '';
+  event.image_url = STRUCK_IMAGE_SENTINEL; // matches the schema's /assets/event-(images|covers)/ pattern
+  delete event.original_image_url;
+  delete event.image_alt;
+  delete event.image_source_url;
+  delete event.image_discovered_at;
+  delete event.image_discovery_method;
+  // image_identity_struck_at / image_identity_strike_reason are declared in
+  // data/events-catalog.schema.json (date-time / enum) specifically so this bookkeeping
+  // is schema-valid rather than rejected as an unexpected field.
   event.image_identity_struck_at = generatedAt;
   event.image_identity_strike_reason = reason;
   event.updated_at = generatedAt;
