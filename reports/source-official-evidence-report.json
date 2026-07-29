@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-official-evidence-report.v1",
-  "generated_at": "2026-07-29T03:24:26.711Z",
+  "generated_at": "2026-07-29T03:44:58.074Z",
   "source_candidates": "data/source_candidates.json",
   "source_evidence": "data/source_official_evidence.json",
   "totals": {
@@ -14,7 +14,7 @@
       "id": "middle-east-banking-ai-summit-2026",
       "status": "failed",
       "matched": 0,
-      "note": "Required official title/date/venue tokens did not all match. Fetch: fetch failed"
+      "note": "Required official title/date/venue tokens did not all match."
     },
     {
       "id": "middle-east-enterprise-ai-summit-2026",

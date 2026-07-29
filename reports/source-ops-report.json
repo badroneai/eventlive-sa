@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T03:26:30.004Z",
+  "generated_at": "2026-07-29T03:47:48.826Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,7 +11,7 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-07-29T03:17:45.727Z",
+    "collected_at": "2026-07-29T03:37:15.487Z",
     "freshness": "fresh",
     "discovered": 317,
     "written": 557

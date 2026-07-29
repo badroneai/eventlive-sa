@@ -1,6 +1,6 @@
 # EventLive Source Collection Report
 
-- collected_at: 2026-07-29T03:17:45.727Z
+- collected_at: 2026-07-29T03:37:15.487Z
 - dry_run: false
 - time_scope: current-and-upcoming-only
 - ended_collection_enabled: false
@@ -19,25 +19,25 @@
 
 | Source | Status | Duration | Active | Ended | Past skipped | New | Refreshed | Missing latest | Snapshot | Note |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---|---|
-| visit-saudi-calendar | ok | 2s | 33 | 0 | 0 | 20 | 13 | 0 | data/raw/source-snapshots/visit-saudi-calendar-2026-07-29T03-17-45-727Z.json |  |
-| experience-alula-events | ok | 4s | 9 | 0 | 3 | 0 | 9 | 0 | data/raw/source-snapshots/experience-alula-events-2026-07-29T03-17-45-727Z.html |  |
-| mdlbeast-events | ok | 0s | 5 | 0 | 36 | 0 | 5 | 0 | data/raw/source-snapshots/mdlbeast-events-2026-07-29T03-17-45-727Z.html |  |
-| invest-saudi-events | ok | 1s | 3 | 0 | 5 | 0 | 3 | 0 | data/raw/source-snapshots/invest-saudi-events-2026-07-29T03-17-45-727Z.html |  |
-| rfecc-whats-on | ok | 5s | 6 | 0 | 14 | 0 | 6 | 0 | data/raw/source-snapshots/rfecc-whats-on-2026-07-29T03-17-45-727Z.html |  |
-| tuwaiq-academy-bootcamps | ok | 1s | 12 | 0 | 0 | 0 | 12 | 0 | data/raw/source-snapshots/tuwaiq-academy-bootcamps-2026-07-29T03-17-45-727Z.json |  |
-| future-skills-catalog | ok | 18s | 3 | 0 | 9 | 0 | 3 | 0 | data/raw/source-snapshots/future-skills-catalog-2026-07-29T03-17-45-727Z.html |  |
-| visit-saudi-seasons | ok | 2s | 20 | 0 | 0 | 0 | 20 | 0 | data/raw/source-snapshots/visit-saudi-seasons-2026-07-29T03-17-45-727Z.json |  |
-| misk-hub-programs | ok | 2s | 5 | 0 | 0 | 0 | 5 | 0 | data/raw/source-snapshots/misk-hub-programs-2026-07-29T03-17-45-727Z.html |  |
-| dhahran-expo-calendar | ok | 1s | 16 | 0 | 7 | 0 | 16 | 0 | data/raw/source-snapshots/dhahran-expo-calendar-2026-07-29T03-17-45-727Z.html |  |
-| ithra-events | ok | 1s | 78 | 0 | 150 | 0 | 78 | 0 | data/raw/source-snapshots/ithra-events-2026-07-29T03-17-45-727Z.json |  |
-| discover-aseer-events | ok | 2s | 38 | 0 | 0 | 0 | 38 | 0 | data/raw/source-snapshots/discover-aseer-events-2026-07-29T03-17-45-727Z.html |  |
-| saudi-water-authority-events | ok | 1s | 8 | 0 | 1 | 0 | 8 | 0 | data/raw/source-snapshots/saudi-water-authority-events-2026-07-29T03-17-45-727Z.html |  |
-| sfda-events | ok | 7s | 5 | 0 | 4 | 0 | 5 | 0 | data/raw/source-snapshots/sfda-events-2026-07-29T03-17-45-727Z.html |  |
-| sdaia-calendar-events | ok | 17s | 2 | 0 | 1 | 0 | 2 | 0 | data/raw/source-snapshots/sdaia-calendar-events-2026-07-29T03-17-45-727Z.html |  |
-| scega-exhibitions-conferences | ok | 2s | 4 | 0 | 0 | 0 | 4 | 0 | data/raw/source-snapshots/scega-exhibitions-conferences-2026-07-29T03-17-45-727Z.json |  |
-| umm-al-qura-events | ok | 8s | 9 | 0 | 1 | 0 | 9 | 0 | data/raw/source-snapshots/umm-al-qura-events-2026-07-29T03-17-45-727Z.html |  |
-| madinah-architecture-festival | ok | 1s | 1 | 0 | 0 | 0 | 1 | 0 | data/raw/source-snapshots/madinah-architecture-festival-2026-07-29T03-17-45-727Z.html |  |
-| hayy-jameel-events | ok | 323s | 60 | 0 | 0 | 0 | 60 | 0 | data/raw/source-snapshots/hayy-jameel-events-2026-07-29T03-17-45-727Z.html |  |
+| visit-saudi-calendar | ok | 2s | 33 | 0 | 0 | 20 | 13 | 0 | data/raw/source-snapshots/visit-saudi-calendar-2026-07-29T03-37-15-487Z.json |  |
+| experience-alula-events | ok | 6s | 9 | 0 | 3 | 0 | 9 | 0 | data/raw/source-snapshots/experience-alula-events-2026-07-29T03-37-15-487Z.html |  |
+| mdlbeast-events | ok | 0s | 5 | 0 | 36 | 0 | 5 | 0 | data/raw/source-snapshots/mdlbeast-events-2026-07-29T03-37-15-487Z.html |  |
+| invest-saudi-events | ok | 1s | 3 | 0 | 5 | 0 | 3 | 0 | data/raw/source-snapshots/invest-saudi-events-2026-07-29T03-37-15-487Z.html |  |
+| rfecc-whats-on | ok | 6s | 6 | 0 | 14 | 0 | 6 | 0 | data/raw/source-snapshots/rfecc-whats-on-2026-07-29T03-37-15-487Z.html |  |
+| tuwaiq-academy-bootcamps | ok | 1s | 12 | 0 | 0 | 0 | 12 | 0 | data/raw/source-snapshots/tuwaiq-academy-bootcamps-2026-07-29T03-37-15-487Z.json |  |
+| future-skills-catalog | ok | 20s | 3 | 0 | 9 | 0 | 3 | 0 | data/raw/source-snapshots/future-skills-catalog-2026-07-29T03-37-15-487Z.html |  |
+| visit-saudi-seasons | ok | 0s | 20 | 0 | 0 | 0 | 20 | 0 | data/raw/source-snapshots/visit-saudi-seasons-2026-07-29T03-37-15-487Z.json |  |
+| misk-hub-programs | ok | 5s | 5 | 0 | 0 | 0 | 5 | 0 | data/raw/source-snapshots/misk-hub-programs-2026-07-29T03-37-15-487Z.html |  |
+| dhahran-expo-calendar | ok | 1s | 16 | 0 | 7 | 0 | 16 | 0 | data/raw/source-snapshots/dhahran-expo-calendar-2026-07-29T03-37-15-487Z.html |  |
+| ithra-events | ok | 1s | 78 | 0 | 150 | 0 | 78 | 0 | data/raw/source-snapshots/ithra-events-2026-07-29T03-37-15-487Z.json |  |
+| discover-aseer-events | ok | 2s | 38 | 0 | 0 | 0 | 38 | 0 | data/raw/source-snapshots/discover-aseer-events-2026-07-29T03-37-15-487Z.html |  |
+| saudi-water-authority-events | ok | 1s | 8 | 0 | 1 | 0 | 8 | 0 | data/raw/source-snapshots/saudi-water-authority-events-2026-07-29T03-37-15-487Z.html |  |
+| sfda-events | ok | 8s | 5 | 0 | 4 | 0 | 5 | 0 | data/raw/source-snapshots/sfda-events-2026-07-29T03-37-15-487Z.html |  |
+| sdaia-calendar-events | ok | 16s | 2 | 0 | 1 | 0 | 2 | 0 | data/raw/source-snapshots/sdaia-calendar-events-2026-07-29T03-37-15-487Z.html |  |
+| scega-exhibitions-conferences | ok | 2s | 4 | 0 | 0 | 0 | 4 | 0 | data/raw/source-snapshots/scega-exhibitions-conferences-2026-07-29T03-37-15-487Z.json |  |
+| umm-al-qura-events | ok | 9s | 9 | 0 | 1 | 0 | 9 | 0 | data/raw/source-snapshots/umm-al-qura-events-2026-07-29T03-37-15-487Z.html |  |
+| madinah-architecture-festival | ok | 1s | 1 | 0 | 0 | 0 | 1 | 0 | data/raw/source-snapshots/madinah-architecture-festival-2026-07-29T03-37-15-487Z.html |  |
+| hayy-jameel-events | ok | 376s | 60 | 0 | 0 | 0 | 60 | 0 | data/raw/source-snapshots/hayy-jameel-events-2026-07-29T03-37-15-487Z.html |  |
 
 ## Deferred By Adaptive Cadence
 
