@@ -27,6 +27,7 @@ import {
   eventPerformerJsonLd
 } from './event-structured-data-utils.mjs';
 import { isLikelyImageAssetUrl, isRejectedImageAssetUrl, isSourcePageLikeImageUrl } from './image-asset-utils.mjs';
+import { OWNER_ONLY_PAGES, ownerOnlyLinkRegex } from './owner-only-pages.mjs';
 import { buildIndexNowDelta, mergeIndexNowBatchUrls, reconcileSeoPageState } from './seo-discovery-utils.mjs';
 import { coordinatesQuery, resolveVenueLocation } from './venue-location-utils.mjs';
 
@@ -1170,9 +1171,10 @@ function analyticsHeadSnippet() {
 }
 
 function analyticsRuntimeScript() {
+  const ownerOnlyHtmlNames = [...OWNER_ONLY_PAGES].map((name) => name.replace(/\.html$/, '')).join('|');
   return `<script id="eventlive-analytics-runtime">
 (function () {
-  var ownerOnlyPattern = /\\/(sources|methodology|trust|source-health|candidates|resolver|owner-status|owner-search-growth)\\.html$|\\/(events|sources|trust|methodology|readiness|source-coverage-gaps|regions|owner-status|owner-search-growth)\\.json$/;
+  var ownerOnlyPattern = /\\/(${ownerOnlyHtmlNames})\\.html$|\\/(events|sources|trust|methodology|readiness|source-coverage-gaps|regions|owner-status|owner-search-growth)\\.json$/;
   var path = window.location.pathname || '';
   if (ownerOnlyPattern.test(path)) {
     window.eventLiveTrack = function () {};
@@ -1267,25 +1269,19 @@ function footer(relativePrefix = './') {
   return `<footer class="footer"><div class="wrap">EventLive يبقي الدومين الرسمي ${platformDomain} ويربط كل فعالية بمصدرها قدر الإمكان. آخر بناء: ${formatDate(buildAt)}<div class="footer-links"><a href="${relativePrefix}saudi-events-insights.html">نبض الفعاليات</a><a href="${relativePrefix}about.html">عن المنصة</a><a href="${relativePrefix}privacy.html">الخصوصية</a><a href="${relativePrefix}terms.html">الشروط</a><a href="${relativePrefix}source-rights.html">حقوق المصادر</a></div></div></footer>`;
 }
 
+// Strips any <a href> pointing at an OWNER_ONLY_PAGES page from public HTML,
+// regardless of link text or relative-path depth (ban the class, not the
+// hand-written instance — see scripts/owner-only-pages.mjs).
 function hideOwnerOnlyPublicLinks(html) {
   return String(html)
-    .replace(/<a\b[^>]*href=(["'])(?:\.\.\/|\.\/)?(?:sources|methodology|trust)\.html\1[^>]*>[\s\S]*?<\/a>/g, '')
-    .replace(/<a\b[^>]*href=(["'])(?:\.\.\/|\.\/)?events\.json\1[^>]*>[\s\S]*?<\/a>/g, '')
-    .replace(/<a href="\.\/sources\.html">المصادر<\/a>/g, '')
-    .replace(/<a href="\.\/methodology\.html">المنهجية<\/a>/g, '')
-    .replace(/<a href="\.\/methodology\.html">منهجية الجمع والنشر<\/a>\s*·\s*/g, '')
-    .replace(/\s*·\s*<a href="\.\/sources\.html">المصادر<\/a>/g, '')
-    .replace(/<a href="\.\.\/sources\.html">المصادر<\/a>/g, '')
-    .replace(/<a href="\.\.\/methodology\.html">المنهجية<\/a>/g, '')
-    .replace(/<a href="\.\.\/methodology\.html">منهجية الجمع والنشر<\/a>\s*·\s*/g, '')
-    .replace(/\s*·\s*<a href="\.\.\/sources\.html">المصادر<\/a>/g, '');
+    .replace(ownerOnlyLinkRegex(), '')
+    .replace(/<a\b[^>]*href=(["'])(?:\.\.\/|\.\/)?events\.json\1[^>]*>[\s\S]*?<\/a>/g, '');
 }
 
 function isOwnerOnlyPage(filePath) {
   const relativePath = path.relative(distDir, filePath).replace(/\\/g, '/');
   const pageName = path.basename(String(filePath));
-  const ownerOnlyPages = new Set(['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html', 'owner-status.html', 'owner-search-growth.html']);
-  return ownerOnlyPages.has(relativePath) || ownerOnlyPages.has(pageName);
+  return OWNER_ONLY_PAGES.has(relativePath) || OWNER_ONLY_PAGES.has(pageName);
 }
 
 function runtimeAttrs(event) {
@@ -6652,10 +6648,9 @@ function sitemapImageXml(event = {}) {
 
 function writeSitemap(events = []) {
   const eventByPage = new Map(events.map((event) => [`events/${event.file_slug}.html`.normalize('NFC'), event]));
-  const ownerOnlyPages = new Set(['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html', 'owner-status.html', 'owner-search-growth.html', 'attendance.html']);
   const sitemapPaths = [...new Set(htmlFiles(distDir)
     .map((file) => file.replace(/\\/g, '/').normalize('NFC'))
-    .filter((file) => !ownerOnlyPages.has(file))
+    .filter((file) => !OWNER_ONLY_PAGES.has(file))
     .map((file) => file === 'index.html' ? '' : file))];
   const urls = sitemapPaths
     .sort()
@@ -7171,16 +7166,7 @@ function hideOwnerOnlyManifestShortcuts() {
   } catch {
     return false;
   }
-  const ownerOnlyTargets = new Set([
-    './sources.html',
-    './methodology.html',
-    './trust.html',
-    './candidates.html',
-    './resolver.html',
-    './source-health.html',
-    './owner-status.html',
-    './owner-search-growth.html'
-  ]);
+  const ownerOnlyTargets = new Set([...OWNER_ONLY_PAGES].map((name) => `./${name}`));
   if (Array.isArray(manifest.shortcuts)) {
     manifest.shortcuts = manifest.shortcuts.filter((shortcut) => !ownerOnlyTargets.has(shortcut.url));
   }

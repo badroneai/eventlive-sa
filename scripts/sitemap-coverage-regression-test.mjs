@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import { OWNER_ONLY_PAGES } from './owner-only-pages.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -24,19 +25,9 @@ function walkHtml(directory) {
   return files;
 }
 
-const ownerOnlyPages = new Set([
-  'sources.html',
-  'methodology.html',
-  'trust.html',
-  'candidates.html',
-  'resolver.html',
-  'source-health.html',
-  'owner-status.html',
-  'owner-search-growth.html',
-  'attendance.html'
-]);
+// WO-4: single source of truth for owner-only pages — scripts/owner-only-pages.mjs.
 const htmlFiles = walkHtml(distDir)
-  .filter((file) => !ownerOnlyPages.has(file))
+  .filter((file) => !OWNER_ONLY_PAGES.has(file))
   .sort();
 const sitemap = fs.readFileSync(sitemapPath, 'utf8');
 const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1].normalize('NFC'));
@@ -70,8 +61,8 @@ assert.deepEqual(staleUrls, [], `sitemap contains URLs without generated files:\
 
 assert.doesNotMatch(sitemap, /Users\/baderalsalman|\/Users\//, 'sitemap must not leak local filesystem paths');
 assert.doesNotMatch(sitemap, /eventlive\.sa|eventlife/i, 'sitemap must not include legacy domains or spellings');
-assert.doesNotMatch(sitemap, /\/(?:sources|methodology|trust|candidates|resolver|source-health|owner-status|owner-search-growth)\.html</, 'sitemap must not include owner-only pages');
-assert.doesNotMatch(sitemap, /\/attendance\.html</, 'sitemap must not index the personal attendance dashboard');
+const ownerOnlyNames = [...OWNER_ONLY_PAGES].map((name) => name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
+assert.doesNotMatch(sitemap, new RegExp(`/(?:${ownerOnlyNames})<`), 'sitemap must not include owner-only pages');
 
 assert.match(sitemap, /xmlns:image="http:\/\/www\.google\.com\/schemas\/sitemap-image\/1\.1"/, 'sitemap must include the Google image sitemap namespace');
 

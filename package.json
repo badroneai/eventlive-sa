@@ -126,6 +126,7 @@
     "test:public-dedupe": "node scripts/public-event-dedupe-regression-test.mjs",
     "test:multi-event-document-build": "node scripts/multi-event-document-build-regression-test.mjs",
     "test:public-demo-isolation": "node scripts/public-demo-isolation-regression-test.mjs",
+    "test:owner-surface-isolation": "node scripts/owner-surface-isolation-regression-test.mjs",
     "test:session-xss": "node scripts/session-xss-regression-test.mjs",
     "test:url-attribute-xss": "node scripts/url-attribute-xss-regression-test.mjs",
     "test:lightweight-utility-pages": "node scripts/lightweight-utility-pages-regression-test.mjs",
