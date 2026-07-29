@@ -20,6 +20,13 @@
 // and is therefore never exercised by the ~53-check Regression checks battery or any
 // `npm run test:*` command - this fixture-scoped subprocess call is the only local
 // signal for it.
+// Part 4 is a second class-ban for the same "one script's rewrite silently erases
+// another script's write to a shared file" defect family: scripts/cache-event-images.mjs's
+// existingManifest() reconstructs data/event_image_cache_manifest.json from a fixed field
+// list and was dropping the heal step's pdf_crop_provenance key on every `images:cache`
+// run (confirmed live: sync 30424564386 landed with pdf_crop_provenance: {} in production).
+// Part 4 runs the real cache-event-images.mjs as a subprocess, with zero network targets,
+// against the manifest Part 2 just healed, and asserts provenance survives.
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
@@ -203,10 +210,49 @@ fs.writeFileSync(candidatesPath, `${JSON.stringify({
   ]
 }, null, 2)}\n`, 'utf8');
 
+// images/failures are pre-seeded here (as if a prior images:cache run had already
+// populated them) so Part 2 and Part 4 can both prove neither script clobbers the
+// other's section of the shared manifest file - this cycle's real order is
+// heal -> images:sync-catalog -> ... -> images:cache, and both scripts rewrite the same
+// data/event_image_cache_manifest.json. cache-event-images.mjs prunes any images record
+// whose referenced file no longer exists on disk (pruneMissingManifestFiles), so the
+// pre-seeded record must point at a real file - inside this test's own tmp sandbox, never
+// the real repo's dist/ - for it to legitimately survive a real images:cache run in Part 4.
+const preseededImageFilePath = path.join(tmp, 'preexisting-cache', 'some-remote-poster-aaaaaaaaaa.jpg');
+fs.mkdirSync(path.dirname(preseededImageFilePath), { recursive: true });
+fs.writeFileSync(preseededImageFilePath, Buffer.from('fixture-image-bytes'));
+const PRESEEDED_MANIFEST_IMAGE = {
+  source_url: 'https://example.com/some-remote-poster.jpg',
+  public_path: '/assets/event-images/some-remote-poster-aaaaaaaaaa.jpg',
+  file: path.relative(root, preseededImageFilePath),
+  content_type: 'image/jpeg',
+  bytes: 12345,
+  event_ids: ['event-unrelated-remote'],
+  titles: ['Unrelated remote-image event'],
+  cached_at: '2026-07-01T00:00:00.000Z',
+  checked_at: '2026-07-01T00:00:00.000Z'
+};
+const PRESEEDED_MANIFEST_FAILURE = {
+  source_url: 'https://example.com/broken-poster.jpg',
+  failure_kind: 'not-found',
+  reason: 'HTTP 404',
+  failed_at: '2026-07-01T00:00:00.000Z',
+  retry_after: '2026-07-02T00:00:00.000Z',
+  attempts: 1,
+  event_ids: ['event-unrelated-remote-2'],
+  titles: ['Another unrelated event'],
+  source_hosts: ['example.com']
+};
+
 fs.writeFileSync(manifestPath, `${JSON.stringify({
   generated_at: '2026-07-28T00:00:00.000Z',
   public_base_path: '/assets/event-images',
-  images: {},
+  images: {
+    'https://example.com/some-remote-poster.jpg': PRESEEDED_MANIFEST_IMAGE
+  },
+  failures: {
+    'https://example.com/broken-poster.jpg': PRESEEDED_MANIFEST_FAILURE
+  },
   pdf_crop_provenance: {
     'event-عرض-ستاند-أب-كوميدي-مع-شاكر-الشريف': {
       event_id: 'event-عرض-ستاند-أب-كوميدي-مع-شاكر-الشريف',
@@ -260,6 +306,11 @@ assert.ok(Array.isArray(provenance.ocr_tokens_matched) && provenance.ocr_tokens_
 // Non-PDF-crop event must be untouched.
 assert.equal(unrelated.image_url, '/assets/event-covers/event-unrelated.svg');
 
+// Symmetry check: the heal script must not clobber the OTHER sections of the shared
+// manifest file it doesn't own (images/failures, owned by cache-event-images.mjs).
+assert.deepEqual(manifest.images['https://example.com/some-remote-poster.jpg'], PRESEEDED_MANIFEST_IMAGE, 'heal must not disturb the pre-existing images cache section of the shared manifest');
+assert.deepEqual(manifest.failures['https://example.com/broken-poster.jpg'], PRESEEDED_MANIFEST_FAILURE, 'heal must not disturb the pre-existing failures ledger section of the shared manifest');
+
 assert.equal(report.totals.struck, 2, 'exactly the two stale assignments must be struck');
 assert.equal(report.totals.verified, 1, 'exactly the one still-correct assignment must be verified');
 assert.ok(report.struck.some((item) => item.id === 'event-عرض-ستاند-أب-كوميدي-مع-شاكر-الشريف' && item.reason === 'identity-mismatch'));
@@ -305,4 +356,74 @@ assert.equal(validateRun.status, 0, 'scripts/validate-data.mjs must accept the h
 assert.match(validateRun.stdout, /Total errors: 0/, 'the real validator must report zero errors against the struck fixture catalog');
 
 console.log('visit-saudi-image-identity-regression-test: struck rows pass the real catalog schema validator (class ban for sync 30423604962)');
+
+// --- Part 4: class ban - pdf_crop_provenance must survive a real images:cache rewrite ---
+//
+// Second live heal run (sync 30424564386) was green (69/31/38, matching Part 2's
+// predictions exactly), but post-merge verification found data/event_image_cache_manifest.json
+// on origin/main with pdf_crop_provenance: {} - 0 entries where 31 were expected.
+// Root cause: existingManifest() in scripts/cache-event-images.mjs (which runs via
+// `images:cache`, right after the heal step in `npm run sources:sync`) reconstructs the
+// manifest object from a fixed field list and was silently dropping any key it didn't
+// know about, including pdf_crop_provenance. Same silent-drop class as Part 3's schema
+// bug - a script's own rewrite of a file it doesn't fully own erasing another script's
+// write to that same file. This part runs the REAL scripts/cache-event-images.mjs (the
+// exact script `npm run images:cache` invokes) as a subprocess against the manifest Part 2
+// just healed, with zero network targets (an empty dist/events.json fixture, so
+// collectTargets() has nothing to fetch and no network call is made), and asserts
+// pdf_crop_provenance - and the pre-seeded images/failures sections - all survive.
+const cacheEventsDistPath = path.join(tmp, 'dist_events.json');
+fs.writeFileSync(cacheEventsDistPath, `${JSON.stringify({ events: [] }, null, 2)}\n`, 'utf8');
+const cacheImageOutputDir = path.join(tmp, 'cached-images');
+const cacheReportJsonPath = path.join(tmp, 'image-cache-report.json');
+const cacheReportMdPath = path.join(tmp, 'image-cache-report.md');
+
+const cacheEnv = {
+  ...process.env,
+  EVENTLIVE_EVENTS_DIST_FILE: path.relative(root, cacheEventsDistPath),
+  EVENTLIVE_EVENTS_CATALOG_FILE: path.relative(root, catalogPath),
+  EVENTLIVE_IMAGE_CACHE_MANIFEST_FILE: path.relative(root, manifestPath),
+  EVENTLIVE_IMAGE_CACHE_DIR: path.relative(root, cacheImageOutputDir),
+  EVENTLIVE_IMAGE_CACHE_REPORT_JSON_FILE: path.relative(root, cacheReportJsonPath),
+  EVENTLIVE_IMAGE_CACHE_REPORT_MD_FILE: path.relative(root, cacheReportMdPath),
+  EVENTLIVE_IMAGE_CACHE_TIMEOUT_MS: '3000',
+  EVENTLIVE_IMAGE_CACHE_CONCURRENCY: '1'
+};
+delete cacheEnv.EVENTLIVE_SOURCE_CANDIDATES_FILE;
+delete cacheEnv.EVENTLIVE_SOURCE_REGISTRY_FILE;
+
+const cacheRun = spawnSync(process.execPath, ['scripts/cache-event-images.mjs'], {
+  cwd: root,
+  encoding: 'utf8',
+  env: cacheEnv,
+  timeout: 30000
+});
+
+if (cacheRun.status !== 0) {
+  console.error(cacheRun.stdout);
+  console.error(cacheRun.stderr);
+}
+assert.equal(cacheRun.status, 0, 'scripts/cache-event-images.mjs must run cleanly against the healed manifest with zero network targets');
+
+const manifestAfterCache = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+assert.ok(manifestAfterCache.pdf_crop_provenance, 'pdf_crop_provenance key must still exist after a real images:cache rewrite (sync 30424564386 regression)');
+assert.deepEqual(
+  manifestAfterCache.pdf_crop_provenance['event-سكة-الأطعمة'],
+  manifest.pdf_crop_provenance['event-سكة-الأطعمة'],
+  'the WO-5 provenance entry the heal step wrote must survive images:cache byte-for-byte'
+);
+assert.equal(
+  Object.keys(manifestAfterCache.pdf_crop_provenance).length,
+  Object.keys(manifest.pdf_crop_provenance).length,
+  'images:cache must not add or drop any pdf_crop_provenance entries'
+);
+// Symmetry, the other direction: images/failures (owned by cache-event-images.mjs) must
+// also still be intact - proves this is a real rewrite, not a no-op subprocess call.
+// cache-event-images.mjs legitimately flags any cached image whose source_url isn't
+// among this run's targets as stale=true (our fixture has zero live event targets) -
+// that's correct, unrelated behavior; everything else about the record must survive.
+assert.deepEqual(manifestAfterCache.images['https://example.com/some-remote-poster.jpg'], { ...PRESEEDED_MANIFEST_IMAGE, stale: true }, 'images:cache must preserve its own pre-existing images section');
+assert.deepEqual(manifestAfterCache.failures['https://example.com/broken-poster.jpg'], PRESEEDED_MANIFEST_FAILURE, 'images:cache must preserve its own pre-existing failures section');
+
+console.log('visit-saudi-image-identity-regression-test: pdf_crop_provenance survives a real images:cache rewrite (class ban for sync 30424564386)');
 console.log('visit-saudi-image-identity-regression-test: ok');

@@ -88,7 +88,11 @@ function existingManifest() {
     generated_at: manifest.generated_at || generatedAt,
     public_base_path: manifest.public_base_path || '/assets/event-images',
     images: manifest.images && typeof manifest.images === 'object' ? manifest.images : {},
-    failures: manifest.failures && typeof manifest.failures === 'object' ? manifest.failures : {}
+    failures: manifest.failures && typeof manifest.failures === 'object' ? manifest.failures : {},
+    // Carries scripts/heal-visit-saudi-image-identity.mjs's WO-5 provenance map through -
+    // this function reconstructs the manifest object field-by-field, so any key not
+    // listed here is silently dropped every images:cache run (the exact bug fixed here).
+    pdf_crop_provenance: manifest.pdf_crop_provenance && typeof manifest.pdf_crop_provenance === 'object' ? manifest.pdf_crop_provenance : {}
   };
 }
 
