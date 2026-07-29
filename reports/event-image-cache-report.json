@@ -1,31 +1,18 @@
 {
-  "generated_at": "2026-07-28T20:03:49.592Z",
+  "generated_at": "2026-07-29T00:41:45.080Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
     "cached_total": 768,
-    "fetched": 2,
-    "reused": 495,
+    "fetched": 0,
+    "reused": 497,
     "failed": 3,
     "skipped_recent_failures": 3,
     "remembered_failures": 6
   },
-  "fetched": [
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/lasoupedefranzy_02.jpg",
-      "file": "dist/assets/event-images/هاي-سينما-هيي-اكسبلورر-في-السينما-3fa9c6623b.jpg",
-      "bytes": 48688,
-      "events": 1
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/onuub3vn.3au.webp",
-      "file": "dist/assets/event-images/معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud-a619a81dc4.webp",
-      "bytes": 3902,
-      "events": 1
-    }
-  ],
+  "fetched": [],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -1168,6 +1155,11 @@
       "events": 1
     },
     {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/onuub3vn.3au.webp",
+      "file": "dist/assets/event-images/معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud-a619a81dc4.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://scth.scene7.com/is/image/scth/saudi-national-day-new?wid=1920&hei=1080&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/saudi-national-day-3f78cd3279.webp",
       "events": 1
@@ -1760,6 +1752,11 @@
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/12/ATEOL-Still-3-1100x500.jpg",
       "file": "dist/assets/event-images/حي-سينما-عرض-فيلم-على-حافة-الأرض-وجلسة-نقاش-مع-الفنانة-هيرا-نبي-fbb62642fc.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/lasoupedefranzy_02.jpg",
+      "file": "dist/assets/event-images/هاي-سينما-هيي-اكسبلورر-في-السينما-3fa9c6623b.jpg",
       "events": 1
     },
     {
@@ -2504,18 +2501,7 @@
     }
   ],
   "rejected_removed": [],
-  "missing_removed": [
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/onuub3vn.3au.webp",
-      "file": "dist/assets/event-images/معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud-a619a81dc4.webp",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/lasoupedefranzy_02.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-hayy-explorers-at-the-cinema-3fa9c6623b.jpg",
-      "reason": "cached-file-missing"
-    }
-  ],
+  "missing_removed": [],
   "skipped_recent_failures": [
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
@@ -2568,9 +2554,6 @@
       "skipped": true
     }
   ],
-  "requires_rebuild": true,
-  "rebuild_reasons": [
-    "fetched:2",
-    "missing-removed:2"
-  ]
+  "requires_rebuild": false,
+  "rebuild_reasons": []
 }

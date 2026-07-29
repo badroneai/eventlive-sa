@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-07-28T20:01:18.598Z",
+  "published_at": "2026-07-29T00:39:24.758Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -1090,18 +1090,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260728-e0a239ef",
-      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
-      "title": "Bedayat: Beginnings of Saudi Art Movement",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260728-cc43c2bd",
-      "event_id": "event-echoes-of-the-familiar",
-      "title": "Echoes of the Familiar",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260729-f563a36e",
       "event_id": "event-ithra-summer-camp-2026-a-world-of-homes",
       "title": "Ithra Summer Camp 2026: A world of homes",
@@ -1123,6 +1111,18 @@
       "candidate_id": "candidate-ithra-events-tinkering-stations-20260729-5a2c4c0e",
       "event_id": "event-tinkering-stations",
       "title": "Tinkering Stations",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260729-e0a239ef",
+      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
+      "title": "Bedayat: Beginnings of Saudi Art Movement",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260729-cc43c2bd",
+      "event_id": "event-echoes-of-the-familiar",
+      "title": "Echoes of the Familiar",
       "reason": "already linked to catalog event"
     },
     {

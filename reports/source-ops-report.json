@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T20:04:01.049Z",
+  "generated_at": "2026-07-29T00:41:46.037Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-07-28T19:52:51.054Z",
+    "collected_at": "2026-07-29T00:31:46.283Z",
     "freshness": "fresh",
-    "discovered": 318,
+    "discovered": 319,
     "written": 557
   },
   "sources": {
     "total": 88,
-    "attempted": 18,
-    "due": 18,
-    "deferred": 30,
+    "attempted": 21,
+    "due": 21,
+    "deferred": 27,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 20,
+    "registry_collection_coverage_pct": 24,
     "scheduled_runnable_coverage_pct": 100,
-    "healthy": 18,
-    "zero_yield": 0,
+    "healthy": 19,
+    "zero_yield": 2,
     "errors": 0,
-    "cadence_deferred": 30,
+    "cadence_deferred": 27,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -679,16 +679,13 @@
         "id": "riyadh-city-events",
         "name": "Riyadh City Events",
         "priority": 51,
-        "status": "deferred",
-        "historical_status": "probe-blocked",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-07-28T21:43:30.242Z",
+        "status": "zero-yield",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-07-28T15:43:30.242Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 79,
-        "next_action": "مؤجل حتى 2026-07-28T21:43:30.242Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "monshaat-academy-programs",
@@ -718,16 +715,13 @@
         "id": "sdaia-calendar-events",
         "name": "SDAIA Calendar and Events",
         "priority": 54,
-        "status": "deferred",
-        "historical_status": "collector-error",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-07-28T21:43:30.242Z",
-        "error_streak": 1,
+        "status": "healthy",
+        "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-07-28T15:43:30.242Z",
-        "extracted": 0,
+        "last_attempted_at": null,
+        "extracted": 2,
         "candidates": 2,
-        "next_action": "مؤجل حتى 2026-07-28T21:43:30.242Z وفق الجدولة التكيفية."
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "makkah-chamber-events",
@@ -946,16 +940,13 @@
         "id": "najran-municipality-summer-events",
         "name": "Najran Municipality Summer Events",
         "priority": 71,
-        "status": "deferred",
-        "historical_status": "zero-yield",
-        "cadence_reason": "zero-yield-cooldown",
-        "next_due_at": "2026-07-28T21:37:16.267Z",
+        "status": "zero-yield",
         "error_streak": 0,
-        "zero_yield_streak": 3,
-        "last_attempted_at": "2026-07-27T21:37:16.267Z",
+        "zero_yield_streak": 0,
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 1,
-        "next_action": "مؤجل حتى 2026-07-28T21:37:16.267Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "platinumlist-saudi-city-network",
@@ -1130,7 +1121,7 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 63,
+        "extracted": 62,
         "candidates": 68,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },

@@ -1,6 +1,6 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-28T20:01:18.598Z
+- published_at: 2026-07-29T00:39:24.758Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 557
@@ -179,12 +179,12 @@
 | candidate-misk-hub-programs-entrepreneur-leadership-excellence-program-20260727-dd903886 | linked-existing | event-entrepreneur-leadership-excellence-program | already linked to catalog event |
 | candidate-umm-al-qura-events-عدد-من-الفرص-الوظيفية-المؤقتة-على-مشروع-بحثي-20260727-602b04ea | linked-existing | event-وظائف-بحثية-تجربة | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-أوركسترا-harry-potter-20260728-4a38d19e | linked-existing | event-أوركسترا-harry-potter | already linked to catalog event |
-| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260728-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
-| candidate-ithra-events-echoes-of-the-familiar-20260728-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260729-f563a36e | linked-existing | event-ithra-summer-camp-2026-a-world-of-homes | already linked to catalog event |
 | candidate-ithra-events-printing-house-20260729-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
 | candidate-ithra-events-tafasahu-make-room-20260729-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
 | candidate-ithra-events-tinkering-stations-20260729-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
+| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260729-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
+| candidate-ithra-events-echoes-of-the-familiar-20260729-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-ithra-events-summer-youth-program-20260729-a20f7a11 | linked-existing | event-summer-youth-program | already linked to catalog event |
 | candidate-ithra-events-spot-of-inspiration-20260729-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
 | candidate-ithra-events-childrens-museum-story-time-20260729-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
