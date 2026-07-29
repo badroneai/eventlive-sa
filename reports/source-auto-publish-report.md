@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-29T05:50:11.182Z
+- published_at: 2026-07-29T07:02:21.060Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 559
-- published_new: 2
-- linked_existing: 517
+- published_new: 0
+- linked_existing: 519
 - blocked_remaining: 40
 - duplicate_review_alerts: 8
 
@@ -25,8 +25,6 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-umm-al-qura-events-دبلوم-الإدارة-المكتبية-20270101-91502b5d | published | event-دبلوم-الإدارة-المكتبية | دبلوم الإدارة المكتبية |
-| candidate-umm-al-qura-events-دبلوم-التحول-الرقمي-20271201-5cace3ad | published | event-دبلوم-التحول-الرقمي | دبلوم التحول الرقمي |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -179,7 +177,7 @@
 | candidate-visit-saudi-seasons-honey-festival-2026-20260726-e22ae419 | linked-existing | event-honey-festival-2026 | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل-20260726-aa1669c2 | linked-existing | event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل | already linked to catalog event |
 | candidate-misk-hub-programs-entrepreneur-leadership-excellence-program-20260727-dd903886 | linked-existing | event-entrepreneur-leadership-excellence-program | already linked to catalog event |
-| candidate-umm-al-qura-events-عدد-من-الفرص-الوظيفية-المؤقتة-على-مشروع-بحثي-20260727-602b04ea | linked-existing | event-وظائف-بحثية-تجربة | already linked to catalog event |
+| candidate-umm-al-qura-events-التقديم-على-عدد-من-الفرص-الوظيفية-المؤقتة-20260727-602b04ea | linked-existing | event-وظائف-بحثية-تجربة | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-أوركسترا-harry-potter-20260728-4a38d19e | linked-existing | event-أوركسترا-harry-potter | already linked to catalog event |
 | candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260729-f563a36e | linked-existing | event-ithra-summer-camp-2026-a-world-of-homes | already linked to catalog event |
 | candidate-ithra-events-printing-house-20260729-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
@@ -490,6 +488,7 @@
 | candidate-hayy-jameel-events-hayy-cinema-aflamna-20261220-6a9439e4 | linked-existing | event-hayy-cinema-aflamna-2 | already linked to catalog event |
 | candidate-riyadh-city-events-next-gen-iot-expo-20261221-dfb4907e | linked-existing | event-next-gen-iot-expo | already linked to catalog event |
 | candidate-asharqia-chamber-events-معرض-وظائف-2026-20261227-6ec9f54f | linked-existing | event-معرض-وظائف-2026 | already linked to catalog event |
+| candidate-umm-al-qura-events-دبلوم-الإدارة-المكتبية-20270101-91502b5d | linked-existing | event-دبلوم-الإدارة-المكتبية | already linked to catalog event |
 | candidate-umm-al-qura-events-دبلوم-إدارة-المرافق-20270101-9b731ba4 | linked-existing | event-دبلوم-إدارة-المرافق | already linked to catalog event |
 | candidate-riyadh-city-events-afc-asian-cup-saudi-arabia-2027-tickets-20270107-7c0e1015 | linked-existing | event-afc-asian-cup-saudi-arabia-2027-tickets | already linked to catalog event |
 | candidate-experience-alula-events-ultra-gobi-alula-20270113-fe4957f7 | linked-existing | event-ultra-gobi-alula | already linked to catalog event |
@@ -544,6 +543,7 @@
 | candidate-hayy-jameel-events-hayy-cinema-aflamna-20270720-4db4173f | linked-existing | event-hayy-cinema-aflamna | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-july-2026-20270720-0b9a2284 | linked-existing | event-hayy-cinema-2 | already linked to catalog event |
 | candidate-qassim-university-events-استضافة-مؤتمر-ieee-mecom-2027-20271101-510cb4b1 | linked-existing | event-استضافة-مؤتمر-ieee-mecom-2027 | already linked to catalog event |
+| candidate-umm-al-qura-events-دبلوم-التحول-الرقمي-20271201-5cace3ad | linked-existing | event-دبلوم-التحول-الرقمي | already linked to catalog event |
 | candidate-discover-aseer-events-sammrah-20260528-0784ea5b | blocked | event-sammrah | possible duplicate requires review: exact-title-city-source-conflict |
 | candidate-discover-aseer-events-sound-of-abha-fest-saf-20260620-737104ee | blocked | event-sound-of-abha-fest-saf | possible duplicate requires review: exact-title-city-source-conflict |
 | candidate-visit-saudi-calendar-aseer-season-20260625-2fc92ef9 | blocked | - | linked catalog row event-aseer-season was superseded by dedupe |
