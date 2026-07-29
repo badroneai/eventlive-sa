@@ -98,6 +98,9 @@ jobs:
       - name: Verify public asset links (no broken event links ship to production)
         run: npm run test:public-assets
 
+      - name: Verify PDF poster crop identity gate (WO-5, no positional image mis-binding)
+        run: npm run test:visit-saudi-image-identity
+
       - name: Verify owner-only surface isolation (no operational pages leak to the public)
         run: npm run test:owner-surface-isolation
 
