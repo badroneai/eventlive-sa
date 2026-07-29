@@ -104,6 +104,9 @@ jobs:
       - name: Verify unified attendance-priority ordering (first day leads, ongoing yields)
         run: npm run test:event-priority
 
+      - name: Verify homepage this-month section + calendar strip (WO-2)
+        run: npm run test:home-month-calendar
+
       - name: Verify first-glance trust gate (no dead live elements ship)
         run: npm run test:first-glance-trust
 
