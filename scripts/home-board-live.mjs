@@ -22,6 +22,26 @@ function escapeHtml(value = '') {
 }
 
 /**
+ * Arabic count-noun agreement for "فعالية" (event), per standard MSA rules
+ * (PM ruling on PR #32 review — `${count} فعاليات` for every count is wrong
+ * Arabic grammar, most visibly at 1 and 2):
+ *   1        -> singular-with-"واحدة" ("فعالية واحدة")
+ *   2        -> dual ("فعاليتان")
+ *   3–10     -> plural with digit ("N فعاليات")
+ *   0, 11+   -> singular with digit ("N فعالية")
+ * Each branch is its own literal/pattern in locales/en-SA-static.json +
+ * scripts/generate-localized-site.mjs so the English homepage renders
+ * "1 event" / "2 events" / "N events" correctly instead of carrying the
+ * Arabic noun through untranslated.
+ */
+export function liveCountLabel(count = 0) {
+  if (count === 1) return 'فعالية واحدة';
+  if (count === 2) return 'فعاليتان';
+  if (count >= 3 && count <= 10) return `${count} فعاليات`;
+  return `${count} فعالية`;
+}
+
+/**
  * One static live-board card. `index === 0` renders visible; every other
  * index carries the `hidden` attribute — the runtime carousel script only
  * toggles this attribute, it never builds card markup from scratch.
@@ -62,7 +82,7 @@ export function homeBoardLiveSection(cards = []) {
   const count = cards.length;
   const cardsHtml = cards.map((card, index) => homeBoardLiveCard(card, index)).join('\n              ');
   return `<section class="board-live" id="boardLive"${count > 0 ? '' : ' hidden'}>
-          <div class="board-label" id="boardLiveBadge"><span class="live-dot"></span>مباشر الآن · ${count} فعاليات</div>
+          <div class="board-label" id="boardLiveBadge"><span class="live-dot"></span>مباشر الآن · ${liveCountLabel(count)}</div>
           <div class="board-live-track" id="boardLiveTrack" aria-live="polite" aria-atomic="true">
               ${cardsHtml}
           </div>
