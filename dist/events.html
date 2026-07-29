@@ -1381,6 +1381,35 @@
         : date.toLocaleString('ar-SA', { dateStyle:'medium', timeStyle:'short' });
     }
 
+    // WO-7: single-source multi-day predicate + range label for this
+    // page's client-rendered cards, ported by hand from
+    // scripts/event-date-range.mjs (no bundler on this page, so it can't
+    // be imported directly — see WO-3's riyadhDayKey precedent in
+    // dist/today.html). Keep this in sync with the module and with the
+    // matching copies in dist/today.html and dist/my-events.html.
+    function riyadhDateKeyClient(value) {
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return '';
+      return new Intl.DateTimeFormat('en-CA', { year:'numeric', month:'2-digit', day:'2-digit', timeZone:'Asia/Riyadh' }).format(date);
+    }
+    function isMultiDayEventClient(event) {
+      const startKey = riyadhDateKeyClient(event.starts_at);
+      const endKey = riyadhDateKeyClient(event.ends_at);
+      if (!startKey || !endKey) return false;
+      return startKey !== endKey;
+    }
+    function shortDateLabelClient(value) {
+      const date = new Date(value);
+      return Number.isNaN(date.getTime()) ? '' : date.toLocaleDateString('ar-SA', { day:'numeric', month:'long', timeZone:'Asia/Riyadh' });
+    }
+    function multiDayRangeLabel(event) {
+      if (!isMultiDayEventClient(event)) return '';
+      const startLabel = shortDateLabelClient(event.starts_at);
+      const endLabel = shortDateLabelClient(event.ends_at);
+      if (!startLabel || !endLabel) return '';
+      return 'من ' + startLabel + ' إلى ' + endLabel;
+    }
+
     function formatRemaining(ms) {
       const totalMinutes = Math.max(0, Math.ceil(ms / 60000));
       const days = Math.floor(totalMinutes / 1440);
@@ -1521,13 +1550,21 @@
         controls.savedList.innerHTML = '<div class="empty">لم تحفظ أي فعالية بعد. استخدم زر حفظ في بطاقات الفعاليات.</div>';
         return;
       }
-      controls.savedList.innerHTML = rows.map((event) =>
-        '<article class="saved-item">' +
+      controls.savedList.innerHTML = rows.map((event) => {
+        // WO-7: saved records only carry starts_at/ends_at, not a
+        // pre-computed status, so "ended" is derived the same way
+        // computeStatus() does elsewhere on this page.
+        const savedEndedMs = new Date(event.ends_at || event.starts_at).getTime();
+        const savedIsEnded = !Number.isNaN(savedEndedMs) && savedEndedMs < Date.now();
+        const savedDateText = !savedIsEnded && multiDayRangeLabel(event) ? multiDayRangeLabel(event) : fmtDate(event.starts_at);
+        return (
+        '<article class="saved-item" data-event-start="' + escapeHTML(event.starts_at || '') + '" data-event-end="' + escapeHTML(event.ends_at || event.starts_at || '') + '" data-event-status="' + (savedIsEnded ? 'ended' : 'upcoming') + '">' +
           '<strong>' + escapeHTML(event.title) + '</strong>' +
-          '<div class="meta">' + escapeHTML(cityAr(event.city)) + ' | ' + escapeHTML(fmtDate(event.starts_at)) + '<br />' + escapeHTML(event.venue || '') + '</div>' +
+          '<div class="meta">' + escapeHTML(cityAr(event.city)) + ' | ' + escapeHTML(savedDateText) + '<br />' + escapeHTML(event.venue || '') + '</div>' +
           '<div class="actions"><a class="primary" href="' + escapeHTML(event.live_url || event.detail_url || './events.html') + '">فتح</a><a href="' + escapeHTML(event.calendar_url || './events.ics') + '">تقويم</a><button type="button" data-save-event="' + escapeHTML(event.id) + '">إزالة</button></div>' +
         '</article>'
-      ).join('');
+        );
+      }).join('');
     }
 
     function setupFilters() {
@@ -1563,10 +1600,13 @@
       }
       const status = computeStatus(event);
       const actionLabel = event.live_schedule_ready ? 'فتح الجدول' : 'التفاصيل والتفعيل';
-      return '<article class="status-card' + (primary ? ' primary' : '') + '">' +
+      // WO-7: the status board's three highlight cards had the same
+      // single-start-date-only gap as the main catalog grid.
+      const statusDateText = status.key !== 'ended' && multiDayRangeLabel(event) ? multiDayRangeLabel(event) : fmtDate(event.starts_at);
+      return '<article class="status-card' + (primary ? ' primary' : '') + '" data-event-start="' + escapeHTML(event.starts_at || '') + '" data-event-end="' + escapeHTML(event.ends_at || event.starts_at || '') + '" data-event-status="' + escapeHTML(status.key) + '">' +
         '<div class="label">' + escapeHTML(kind) + ' | ' + escapeHTML(status.label) + '</div>' +
         '<strong>' + escapeHTML(event.title) + '</strong>' +
-        '<div class="meta">' + escapeHTML(cityAr(event.city)) + ' | ' + escapeHTML(fmtDate(event.starts_at)) + '<br />' + escapeHTML(status.note) + '</div>' +
+        '<div class="meta">' + escapeHTML(cityAr(event.city)) + ' | ' + escapeHTML(statusDateText) + '<br />' + escapeHTML(status.note) + '</div>' +
         '<a href="' + escapeHTML(eventLink(event)) + '">' + actionLabel + '</a>' +
       '</article>';
     }
@@ -1708,9 +1748,13 @@
           '<div class="event-date-pill"><b>' + escapeHTML(eventDayNumber(event)) + '</b><span>' + escapeHTML(eventMonthName(event)) + '</span></div>' +
           (event.image_url ? '<img class="event-thumb" src="' + escapeHTML(event.image_url) + '" alt="' + escapeHTML(event.image_alt || event.title) + '" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove();" />' : '') +
           '</div>';
-        return '<article class="event-card">' +
+        // WO-7: replace the bare start-date meta with the "من X إلى Y"
+        // range for any multi-day event that isn't ended — don't show
+        // both (see multiDayRangeLabel above).
+        const cardDateText = status.key !== 'ended' && multiDayRangeLabel(event) ? multiDayRangeLabel(event) : fmtDate(event.starts_at);
+        return '<article class="event-card" data-event-start="' + escapeHTML(event.starts_at || '') + '" data-event-end="' + escapeHTML(event.ends_at || event.starts_at || '') + '" data-event-status="' + escapeHTML(status.key) + '">' +
           imageHtml +
-          '<div class="event-card-body"><div class="event-top"><div><div class="meta">' + escapeHTML(cityAr(event.city)) + ' | ' + escapeHTML(fmtDate(event.starts_at)) + '</div><h3 dir="auto">' + escapeHTML(event.title) + '</h3></div><span class="status status-' + status.key + '">' + escapeHTML(status.label) + '</span></div>' +
+          '<div class="event-card-body"><div class="event-top"><div><div class="meta">' + escapeHTML(cityAr(event.city)) + ' | ' + escapeHTML(cardDateText) + '</div><h3 dir="auto">' + escapeHTML(event.title) + '</h3></div><span class="status status-' + status.key + '">' + escapeHTML(status.label) + '</span></div>' +
           '<div class="event-org">' + escapeHTML(event.organizer || event.source_label || '') + (event.venue ? '<br /><span class="meta">' + escapeHTML(event.venue) + '</span>' : '') + '</div>' +
           '<div class="stats"><a href="' + escapeHTML(event.city_url || './events.html') + '">' + escapeHTML(cityAr(event.city)) + '</a><a href="' + escapeHTML(event.category_url || './events.html') + '">' + escapeHTML(categoryAr(event.category)) + '</a>' + audienceBadges + richBadges + '<span>' + event.sessions_count + ' جلسة</span><span>' + event.tracks_count + ' مسارات</span><span>' + event.rooms_count + ' قاعات</span><span>' + event.live_updates_count + ' تحديثات</span><span>' + escapeHTML(event.approval_status_label || 'منشور') + '</span></div>' +
           '<div class="meta">' + escapeHTML(status.note) + (event.next_session_title ? '<br />القادمة: ' + escapeHTML(event.next_session_title) : '') + '</div>' +

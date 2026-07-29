@@ -19,6 +19,7 @@ const contentTranslator = createContentTranslator();
 const contentProseStats = { events: 0, translated: 0, leaks: 0, eventsWithLeaks: 0 };
 import { normalizeSaudiCity } from './city-utils.mjs';
 import { createContentTranslator } from './content-translation-cache.mjs';
+import { eventDateRangeLabel, isMultiDayEvent } from './event-date-range.mjs';
 import { classifyEventKind, eventKindLabel, getEventStatus } from './event-kind-utils.mjs';
 import { compareAttendancePriority, isLiveMoment } from './event-priority.mjs';
 import { homeBoardLiveSection } from './home-board-live.mjs';
@@ -1577,7 +1578,17 @@ function eventCard(event, prefix = './') {
   const detail = `${prefix}${event.detail_url.replace(/^\.\//, '')}`;
   const image = event.image_url.startsWith('/') ? `${prefix}${event.image_url.slice(1)}` : event.image_url;
   const statusClass = event.status === 'live' ? ' chip-live' : '';
-  return `<article class="card" data-event-start="${escapeHtml(event.starts_at || '')}" data-event-end="${escapeHtml(event.ends_at || event.starts_at || '')}" data-event-status="${escapeHtml(event.status || '')}"><img class="cover" src="${escapeHtml(image)}" alt="${escapeHtml(event.image_alt || event.title)}" loading="lazy" /><div class="card-body"><h2 class="title"><a dir="auto" href="${escapeHtml(detail)}">${escapeHtml(event.title)}</a></h2><p>${escapeHtml(event.summary)}</p><div class="meta"><span class="chip${statusClass}" data-runtime-status ${runtimeAttrs(event)}>${escapeHtml(event.status_label)}</span><span class="chip">${escapeHtml(formatDate(event.starts_at))}</span><span class="chip" data-live-time ${runtimeAttrs(event)}>${escapeHtml(staticWhenText(event))}</span><span class="chip">${escapeHtml(cityLabel(event.city))}</span><span class="chip">${escapeHtml(event.category_label)}</span></div><a class="cta" href="${escapeHtml(detail)}">تفاصيل الحضور</a></div></article>`;
+  // WO-7: eventCard is the shared renderer for every facet/temporal page
+  // (cities, categories, audiences, this-week, this-month, today-events,
+  // weekend, tomorrow) and the SEO/search-intent guide pages — unlike
+  // homeEventCard it never showed a multi-day event's end date at all, so
+  // an upcoming multi-day event looked identical to a single-day one here.
+  // Ended events are archival (out of scope per doctrine), so the range
+  // only replaces the bare start-date chip while the event is still
+  // current/ongoing or upcoming — never both shown at once.
+  const multiDay = event.status !== 'ended' && isMultiDayEvent(event);
+  const dateChip = multiDay ? eventDateRangeLabel(event, formatShortDate) : formatDate(event.starts_at);
+  return `<article class="card" data-event-start="${escapeHtml(event.starts_at || '')}" data-event-end="${escapeHtml(event.ends_at || event.starts_at || '')}" data-event-status="${escapeHtml(event.status || '')}"><img class="cover" src="${escapeHtml(image)}" alt="${escapeHtml(event.image_alt || event.title)}" loading="lazy" /><div class="card-body"><h2 class="title"><a dir="auto" href="${escapeHtml(detail)}">${escapeHtml(event.title)}</a></h2><p>${escapeHtml(event.summary)}</p><div class="meta"><span class="chip${statusClass}" data-runtime-status ${runtimeAttrs(event)}>${escapeHtml(event.status_label)}</span><span class="chip">${escapeHtml(dateChip)}</span><span class="chip" data-live-time ${runtimeAttrs(event)}>${escapeHtml(staticWhenText(event))}</span><span class="chip">${escapeHtml(cityLabel(event.city))}</span><span class="chip">${escapeHtml(event.category_label)}</span></div><a class="cta" href="${escapeHtml(detail)}">تفاصيل الحضور</a></div></article>`;
 }
 
 function attendanceFacts(event) {
@@ -5391,14 +5402,16 @@ function homeEventCard(event) {
   const eventDay = start.day || '—';
   const eventMonth = start.month || '—';
   const end = formatHomeCardDate(event.ends_at || event.starts_at);
-  const multiDay = Boolean(event.ends_at)
-    && riyadhDateKey(event.starts_at) !== riyadhDateKey(event.ends_at)
-    && end.day && end.month;
+  // WO-7: multiDay + the "من X إلى Y" range wording now come from the
+  // shared scripts/event-date-range.mjs module (also used by eventCard)
+  // instead of a second inline copy — this was the reference behavior
+  // every other card renderer needed to match.
+  const multiDay = isMultiDayEvent(event) && end.day && end.month;
   const dateTab = multiDay && end.month === eventMonth
     ? `<b>${escapeHtml(`${eventDay}–${end.day}`)}</b><span>${escapeHtml(eventMonth)}</span>`
     : `<b>${escapeHtml(eventDay)}</b><span>${escapeHtml(eventMonth)}</span>`;
   const whenMeta = multiDay
-    ? `من ${formatShortDate(event.starts_at)} إلى ${formatShortDate(event.ends_at)}`
+    ? eventDateRangeLabel(event, formatShortDate)
     : formatWeekday(event.starts_at);
 
   return `<article class="card" data-event-start="${escapeHtml(event.starts_at || '')}" data-event-end="${escapeHtml(event.ends_at || event.starts_at || '')}" data-event-status="${escapeHtml(event.status || '')}">

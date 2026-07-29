@@ -260,6 +260,7 @@
     "test:screen-fallback": "node scripts/screen-fallback-regression-test.mjs",
     "test:event-priority": "node scripts/event-priority-regression-test.mjs",
     "test:home-month-calendar": "node scripts/home-month-calendar-regression-test.mjs",
+    "test:multiday-card": "node scripts/multiday-card-regression-test.mjs",
     "test:mt-glossary": "node scripts/mt-glossary-regression-test.mjs"
   },
   "dependencies": {

@@ -110,6 +110,9 @@ jobs:
       - name: Verify homepage this-month section + calendar strip (WO-2)
         run: npm run test:home-month-calendar
 
+      - name: Verify multi-day visibility on every event card (WO-7)
+        run: npm run test:multiday-card
+
       - name: Verify event detail page reorganization (WO-6, section order/single-occurrence/sticky bar)
         run: npm run test:event-page-reorg
 
