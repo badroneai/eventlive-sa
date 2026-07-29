@@ -1,6 +1,6 @@
 # EventLive Source Ingestion Plan
 
-Generated at: 2026-07-29T00:41:45.735Z
+Generated at: 2026-07-29T01:38:12.046Z
 
 ## Executive Model
 

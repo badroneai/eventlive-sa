@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T00:41:46.037Z",
+  "generated_at": "2026-07-29T01:38:12.350Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-07-29T00:31:46.283Z",
+    "collected_at": "2026-07-29T01:29:23.218Z",
     "freshness": "fresh",
     "discovered": 319,
     "written": 557
   },
   "sources": {
     "total": 88,
-    "attempted": 21,
-    "due": 21,
-    "deferred": 27,
+    "attempted": 19,
+    "due": 19,
+    "deferred": 29,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 24,
+    "registry_collection_coverage_pct": 22,
     "scheduled_runnable_coverage_pct": 100,
     "healthy": 19,
-    "zero_yield": 2,
+    "zero_yield": 0,
     "errors": 0,
-    "cadence_deferred": 27,
+    "cadence_deferred": 29,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -679,13 +679,16 @@
         "id": "riyadh-city-events",
         "name": "Riyadh City Events",
         "priority": 51,
-        "status": "zero-yield",
+        "status": "deferred",
+        "historical_status": "probe-blocked",
+        "cadence_reason": "error-cooldown",
+        "next_due_at": "2026-07-29T06:31:46.283Z",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "last_attempted_at": "2026-07-29T00:31:46.283Z",
         "extracted": 0,
         "candidates": 79,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "next_action": "مؤجل حتى 2026-07-29T06:31:46.283Z وفق الجدولة التكيفية."
       },
       {
         "id": "monshaat-academy-programs",
@@ -940,13 +943,16 @@
         "id": "najran-municipality-summer-events",
         "name": "Najran Municipality Summer Events",
         "priority": 71,
-        "status": "zero-yield",
+        "status": "deferred",
+        "historical_status": "zero-yield",
+        "cadence_reason": "zero-yield-cooldown",
+        "next_due_at": "2026-07-30T00:31:46.283Z",
         "error_streak": 0,
-        "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "zero_yield_streak": 4,
+        "last_attempted_at": "2026-07-29T00:31:46.283Z",
         "extracted": 0,
         "candidates": 1,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "next_action": "مؤجل حتى 2026-07-30T00:31:46.283Z وفق الجدولة التكيفية."
       },
       {
         "id": "platinumlist-saudi-city-network",
