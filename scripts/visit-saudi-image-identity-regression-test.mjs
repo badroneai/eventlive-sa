@@ -7,10 +7,24 @@
 // narrative case the work order was opened for: the "شاكر الشريف" comedy show event whose
 // image_url is a stale PDF-crop filename (visit-saudi-summer-2026-p038-bottom-left.jpg)
 // that a later sync cycle has silently overwritten with a different event's poster.
+// Part 3 is the class-ban: the first live heal run (sync 30423604962) struck 38 events
+// exactly as this test's Part 2 predicted, but every struck row was then rejected by
+// scripts/validate-data.mjs's strict catalog schema (additionalProperties: false,
+// empty-string image_* fields don't satisfy their format/pattern/enum constraints). Part 2
+// alone never caught this because it only asserted strike *mechanics*, not schema
+// *validity* of the resulting rows - so Part 3 runs the real validator (the exact script
+// `npm run validate` invokes, as a subprocess, not a reimplementation) against the
+// struck fixture catalog and requires zero errors. This makes it impossible for a future
+// change to strikeAssignment()'s output shape to pass locally and die in CI, because the
+// validate gate that caught this bug lives inside `sources:sync` (after `sources:details`)
+// and is therefore never exercised by the ~53-check Regression checks battery or any
+// `npm run test:*` command - this fixture-scoped subprocess call is the only local
+// signal for it.
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
+import { spawnSync } from 'node:child_process';
 import {
   distinctiveTitleTokens,
   normalizeArabicIdentityText,
@@ -88,11 +102,30 @@ const reportMdPath = path.join(tmp, 'report.md');
 
 const PDF_URL = 'https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf';
 
+// Every event below carries the full set of fields data/events-catalog.schema.json
+// requires (organizer, venue, category, raw_category, ends_at, updated_at,
+// sessions_count, source_confidence, approval_status, live_schedule_ready) so that Part 3
+// exercises the real validator against realistic, otherwise-valid catalog rows - the only
+// thing under test is whether striking an image assignment keeps the row schema-valid.
+const REQUIRED_FIXTURE_FIELDS = {
+  organizer: 'Saudi Tourism Authority',
+  venue: 'Jeddah',
+  category: 'tourism-experiences',
+  raw_category: 'tourism',
+  ends_at: '2026-07-30T23:59:00+03:00',
+  updated_at: '2026-07-28T00:00:00.000Z',
+  sessions_count: 0,
+  source_confidence: 'approved-source',
+  approval_status: 'published',
+  live_schedule_ready: false
+};
+
 fs.writeFileSync(catalogPath, `${JSON.stringify({
   events: [
     // The narrative case: this event's title no longer matches whatever the source PDF
     // currently has at page 38 bottom-left (a later sync moved a different show there).
     {
+      ...REQUIRED_FIXTURE_FIELDS,
       id: 'event-عرض-ستاند-أب-كوميدي-مع-شاكر-الشريف',
       title: 'عرض ستاند أب كوميدي مع شاكر الشريف',
       starts_at: '2026-07-30T00:00:00+03:00',
@@ -105,9 +138,11 @@ fs.writeFileSync(catalogPath, `${JSON.stringify({
     },
     // Control case: still correctly bound this cycle - must survive untouched.
     {
+      ...REQUIRED_FIXTURE_FIELDS,
       id: 'event-سكة-الأطعمة',
       title: 'سكة الأطعمة',
       starts_at: '2026-06-01T00:00:00+03:00',
+      ends_at: '2026-06-01T23:59:00+03:00',
       city: 'Jeddah',
       source_label: 'Visit Saudi Summer Calendar PDF',
       source_url: PDF_URL,
@@ -118,10 +153,13 @@ fs.writeFileSync(catalogPath, `${JSON.stringify({
     // Vacated-slot case: the page/position this event captured no longer has any dated
     // card at all in the freshest extraction (calendar reshuffled it away entirely).
     {
+      ...REQUIRED_FIXTURE_FIELDS,
       id: 'event-فعالية-صيفية-قديمة',
       title: 'فعالية صيفية قديمة',
       starts_at: '2026-05-10T00:00:00+03:00',
+      ends_at: '2026-05-10T23:59:00+03:00',
       city: 'Riyadh',
+      venue: 'Riyadh',
       source_label: 'Visit Saudi Summer Calendar PDF',
       source_url: PDF_URL,
       image_url: '/assets/event-images/visit-saudi-summer-2026-p099-top-left.jpg',
@@ -130,10 +168,13 @@ fs.writeFileSync(catalogPath, `${JSON.stringify({
     },
     // Non-PDF-crop event: must be ignored entirely by the heal pass.
     {
+      ...REQUIRED_FIXTURE_FIELDS,
       id: 'event-unrelated',
       title: 'فعالية غير متعلقة',
       starts_at: '2026-08-01T00:00:00+03:00',
+      ends_at: '2026-08-01T23:59:00+03:00',
       city: 'Riyadh',
+      venue: 'Riyadh',
       source_label: 'Some Other Source',
       source_url: 'https://example.com/calendar',
       image_url: '/assets/event-covers/event-unrelated.svg'
@@ -224,5 +265,44 @@ assert.equal(report.totals.verified, 1, 'exactly the one still-correct assignmen
 assert.ok(report.struck.some((item) => item.id === 'event-عرض-ستاند-أب-كوميدي-مع-شاكر-الشريف' && item.reason === 'identity-mismatch'));
 assert.ok(report.struck.some((item) => item.id === 'event-فعالية-صيفية-قديمة' && item.reason === 'slot-vacated'));
 
+// A struck row must DELETE its now-inapplicable image fields, not set them to '' - an
+// empty string satisfies none of data/events-catalog.schema.json's format/pattern/enum
+// constraints for these optional fields (this is exactly what broke sync 30423604962).
+for (const struckEvent of [shaker, vacated]) {
+  for (const key of ['original_image_url', 'image_alt', 'image_source_url', 'image_discovered_at', 'image_discovery_method']) {
+    assert.equal(Object.prototype.hasOwnProperty.call(struckEvent, key), false, `${struckEvent.id} must not retain '${key}' as an empty string - the key must be absent`);
+  }
+}
+
 console.log('visit-saudi-image-identity-regression-test: self-heal fixtures ok');
+
+// --- Part 3: class ban - the struck output must pass the REAL catalog schema validator ---
+//
+// Runs the exact script `npm run validate` invokes (scripts/validate-data.mjs) as a
+// subprocess, scoped to the fixture catalog Part 2 just healed in place, so this proves
+// schema validity with the real validator rather than a reimplementation of its rules.
+// Source candidates / source registry are left pointed at the real repo files (already
+// proven valid by the Regression checks battery) so only the catalog fixture - the thing
+// this WO's fix touches - is under test here.
+const validateReportPath = path.join(tmp, 'validation-report.md');
+const validateEnv = { ...process.env, EVENTLIVE_EVENTS_CATALOG_FILE: path.relative(root, catalogPath), EVENTLIVE_VALIDATION_REPORT_FILE: path.relative(root, validateReportPath) };
+// Part 2 pointed EVENTLIVE_SOURCE_CANDIDATES_FILE at a minimal candidates fixture that
+// only satisfies the heal script's needs, not the (unrelated) source-candidates schema -
+// unset it so this run falls back to the real, already-valid data/source_candidates.json.
+delete validateEnv.EVENTLIVE_SOURCE_CANDIDATES_FILE;
+delete validateEnv.EVENTLIVE_SOURCE_REGISTRY_FILE;
+const validateRun = spawnSync(process.execPath, ['scripts/validate-data.mjs'], {
+  cwd: root,
+  encoding: 'utf8',
+  env: validateEnv
+});
+
+if (validateRun.status !== 0) {
+  console.error(validateRun.stdout);
+  console.error(validateRun.stderr);
+}
+assert.equal(validateRun.status, 0, 'scripts/validate-data.mjs must accept the healed fixture catalog (including all struck rows) with zero schema errors');
+assert.match(validateRun.stdout, /Total errors: 0/, 'the real validator must report zero errors against the struck fixture catalog');
+
+console.log('visit-saudi-image-identity-regression-test: struck rows pass the real catalog schema validator (class ban for sync 30423604962)');
 console.log('visit-saudi-image-identity-regression-test: ok');

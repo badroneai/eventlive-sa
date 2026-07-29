@@ -127,6 +127,11 @@
             "type": "string",
             "enum": ["meta", "json-ld", "catalog-candidate", "img", "srcset"]
           },
+          "image_identity_struck_at": { "type": "string", "format": "date-time" },
+          "image_identity_strike_reason": {
+            "type": "string",
+            "enum": ["slot-vacated", "identity-mismatch"]
+          },
           "registration_url": { "type": "string", "format": "uri", "pattern": "^https?://" },
           "ticket_url": { "type": "string", "format": "uri", "pattern": "^https?://" },
           "registration_status": { "type": "string" },
