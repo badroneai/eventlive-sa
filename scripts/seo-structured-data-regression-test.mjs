@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import { OWNER_ONLY_PAGES } from './owner-only-pages.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -45,7 +46,9 @@ function typeOf(entry) {
 }
 
 function assertDiscoverabilityHead(html, pageFile) {
-  const ownerOnly = /^(sources|methodology|trust|source-health|owner-status)\.html$/.test(pageFile);
+  // WO-4: single source of truth for which pages stay owner-only (noindex,
+  // excluded from public nav/sitemap) — see scripts/owner-only-pages.mjs.
+  const ownerOnly = OWNER_ONLY_PAGES.has(pageFile);
   if (ownerOnly) {
     assert.match(html, /<meta name="robots" content="noindex,nofollow"/, `${pageFile} must stay owner-only in robots meta`);
   } else {

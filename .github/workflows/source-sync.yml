@@ -158,6 +158,7 @@ jobs:
           npm run test:venue-location
           npm run test:image-cache
           npm run test:public-assets
+          npm run test:owner-surface-isolation
           npm run test:first-glance-trust
           npm run test:i18n-contract
           npm run test:i18n-site

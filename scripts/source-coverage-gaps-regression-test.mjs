@@ -43,14 +43,22 @@ assert.match(html, /أضعف المدن/, 'coverage page must render weak city t
 assert.match(html, /أضعف الفئات/, 'coverage page must render weak category table');
 assert.match(html, /source-coverage-gaps\.json/, 'coverage page must link its JSON feed');
 
+// source-coverage-gaps.html was flipped to owner-only by PM ruling on PR #30
+// (WO-4): it is an operational dashboard ("لوحة تشغيلية"), and the owner's
+// original complaint was exactly this class of page reaching visitors. Data-
+// integrity assertions above are unchanged; only the public-surface
+// assertions below flip. See scripts/owner-only-pages.mjs for the canonical
+// list.
+assert.match(html, /<meta name="robots" content="noindex/, 'coverage page is owner-only and must be noindex');
+
 const sitemap = fs.readFileSync(sitemapPath, 'utf8');
-assert.match(sitemap, /https:\/\/eventme\.live\/source-coverage-gaps\.html/, 'coverage page must be in sitemap');
+assert.doesNotMatch(sitemap, /https:\/\/eventme\.live\/source-coverage-gaps\.html/, 'coverage page is owner-only and must not be in sitemap');
 
 const manifest = fs.readFileSync(manifestPath, 'utf8');
-assert.match(manifest, /source-coverage-gaps\.html/, 'coverage page must be available from the PWA manifest');
+assert.doesNotMatch(manifest, /"\.\/source-coverage-gaps\.html"/, 'coverage page is owner-only and must not be a PWA manifest shortcut');
 
 const serviceWorker = fs.readFileSync(serviceWorkerPath, 'utf8');
-assert.match(serviceWorker, /"\.\/source-coverage-gaps\.html"/, 'coverage page must be precached');
-assert.match(serviceWorker, /"\.\/source-coverage-gaps\.json"/, 'coverage JSON must be precached');
+assert.doesNotMatch(serviceWorker, /"\.\/source-coverage-gaps\.html"/, 'coverage page is owner-only and must not be precached');
+assert.doesNotMatch(serviceWorker, /"\.\/source-coverage-gaps\.json"/, 'coverage JSON is owner-only and must not be precached');
 
 console.log('source-coverage-gaps-regression-test: ok');

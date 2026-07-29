@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { OWNER_ONLY_PAGES } from './owner-only-pages.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -47,14 +48,9 @@ const launchPages = [
   'updates.html',
   'weekend.html'
 ];
-const ownerOnlyPages = new Set([
-  'sources.html',
-  'methodology.html',
-  'trust.html',
-  'candidates.html',
-  'resolver.html',
-  'source-health.html'
-]);
+// WO-4: single source of truth — scripts/owner-only-pages.mjs. Pages in
+// this set are exempt from the sitemap-presence check below (they must NOT
+// be in the sitemap); the page-quality checks in checkPage() still apply.
 
 const forbiddenDistPaths = [
   'archive-browser.html',
@@ -155,11 +151,14 @@ const requiredFiles = ['sitemap.xml', 'robots.txt', 'manifest.webmanifest', 'sw.
 const missingRequiredFiles = requiredFiles.filter((relativePath) => !fs.existsSync(path.join(distDir, relativePath)));
 const sitemap = fs.existsSync(path.join(distDir, 'sitemap.xml')) ? readDist('sitemap.xml') : '';
 const sitemapMissing = launchPages
-  .filter((relativePath) => !ownerOnlyPages.has(relativePath))
+  .filter((relativePath) => !OWNER_ONLY_PAGES.has(relativePath))
   .filter((relativePath) => !sitemap.includes(`https://eventme.live/${relativePath === 'index.html' ? '' : relativePath}`));
+const sitemapLeaked = launchPages
+  .filter((relativePath) => OWNER_ONLY_PAGES.has(relativePath))
+  .filter((relativePath) => sitemap.includes(`https://eventme.live/${relativePath === 'index.html' ? '' : relativePath}`));
 
 const failedPages = pageChecks.filter((check) => !check.ok);
-const ok = failedPages.length === 0 && forbidden.length === 0 && forbiddenPublicContent.length === 0 && missingRequiredFiles.length === 0 && sitemapMissing.length === 0;
+const ok = failedPages.length === 0 && forbidden.length === 0 && forbiddenPublicContent.length === 0 && missingRequiredFiles.length === 0 && sitemapMissing.length === 0 && sitemapLeaked.length === 0;
 
 const report = {
   generated_at: new Date().toISOString(),
@@ -171,13 +170,15 @@ const report = {
     forbidden_artifacts: forbidden.length,
     forbidden_public_content: forbiddenPublicContent.length,
     missing_required_files: missingRequiredFiles.length,
-    sitemap_missing: sitemapMissing.length
+    sitemap_missing: sitemapMissing.length,
+    sitemap_leaked: sitemapLeaked.length
   },
   page_checks: pageChecks,
   forbidden,
   forbidden_public_content: forbiddenPublicContent,
   missing_required_files: missingRequiredFiles,
-  sitemap_missing: sitemapMissing
+  sitemap_missing: sitemapMissing,
+  sitemap_leaked: sitemapLeaked
 };
 
 fs.mkdirSync(reportsDir, { recursive: true });
@@ -193,6 +194,7 @@ fs.writeFileSync(reportMdPath, [
   `- Forbidden public content markers: ${report.totals.forbidden_public_content}`,
   `- Missing required files: ${report.totals.missing_required_files}`,
   `- Sitemap missing pages: ${report.totals.sitemap_missing}`,
+  `- Sitemap leaked owner-only pages: ${report.totals.sitemap_leaked}`,
   '',
   '| Page | Status | JSON-LD | Title |',
   '|---|---:|---:|---|',
@@ -206,11 +208,13 @@ fs.writeFileSync(reportMdPath, [
   ...missingRequiredFiles.map((item) => `- ${item}`),
   sitemapMissing.length ? '## Sitemap Missing' : '',
   ...sitemapMissing.map((item) => `- ${item}`),
+  sitemapLeaked.length ? '## Sitemap Leaked Owner-Only Pages' : '',
+  ...sitemapLeaked.map((item) => `- ${item}`),
   ''
 ].filter(Boolean).join('\n'), 'utf8');
 
 if (!ok) {
-  console.error(`SITE_LAUNCH_SWEEP_FAIL pages_failed=${failedPages.length} forbidden=${forbidden.length} forbidden_public_content=${forbiddenPublicContent.length} missing_required=${missingRequiredFiles.length} sitemap_missing=${sitemapMissing.length}`);
+  console.error(`SITE_LAUNCH_SWEEP_FAIL pages_failed=${failedPages.length} forbidden=${forbidden.length} forbidden_public_content=${forbiddenPublicContent.length} missing_required=${missingRequiredFiles.length} sitemap_missing=${sitemapMissing.length} sitemap_leaked=${sitemapLeaked.length}`);
   process.exit(1);
 }
 

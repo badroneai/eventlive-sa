@@ -5,6 +5,7 @@ import { load } from 'cheerio';
 import { parse } from 'acorn';
 import { CATEGORY_TAXONOMY, categoryDefinitionByKey } from './category-taxonomy.mjs';
 import { loadContentTranslations } from './content-translation-cache.mjs';
+import { OWNER_ONLY_PAGES } from './owner-only-pages.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -51,7 +52,9 @@ for (const entry of Object.values(contentTranslations.entries || {})) {
   if (entry.source_lang === 'en' && entry.target_lang === 'ar' && !exact[entry.text]) exact[entry.text] = entry.source;
   else if (entry.source_lang === 'ar' && entry.target_lang === 'en' && !exact[entry.source]) exact[entry.source] = entry.text;
 }
-const ownerOnly = new Set(['sources.html', 'methodology.html', 'trust.html', 'candidates.html', 'resolver.html', 'source-health.html', 'owner-status.html', 'owner-search-growth.html', 'attendance.html']);
+// Single source of truth: scripts/owner-only-pages.mjs (see OWNER_ONLY_PAGES doc
+// comment there — do not reintroduce a locally hand-rolled list here).
+const ownerOnly = OWNER_ONLY_PAGES;
 const catalogEnvelope = JSON.parse(fs.readFileSync(path.join(distDir, 'events-catalog.json'), 'utf8'));
 const catalogEvents = catalogEnvelope.events || [];
 const eventByPath = new Map(catalogEvents.map((event) => [String(event.detail_url || '').replace(/^\.\//, ''), event]));

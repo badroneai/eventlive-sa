@@ -43,14 +43,21 @@ assert.match(html, /طابور المناطق/, 'regions page must show the prio
 assert.match(html, /regions\.json/, 'regions page must link the JSON feed');
 assert.match(html, /application\/ld\+json/, 'regions page must include structured data');
 
+// regions.html was flipped to owner-only by PM ruling on PR #30 (WO-4): it
+// is a fetch-source coverage dashboard, and the owner's original complaint
+// was exactly this class of page reaching visitors. Data-integrity
+// assertions above are unchanged; only the public-surface assertions below
+// flip. See scripts/owner-only-pages.mjs for the canonical list.
+assert.match(html, /<meta name="robots" content="noindex/, 'regions page is owner-only and must be noindex');
+
 const sitemap = fs.readFileSync(sitemapPath, 'utf8');
-assert.match(sitemap, /https:\/\/eventme\.live\/regions\.html/, 'regions page must be in sitemap');
+assert.doesNotMatch(sitemap, /https:\/\/eventme\.live\/regions\.html/, 'regions page is owner-only and must not be in sitemap');
 
 const manifest = fs.readFileSync(manifestPath, 'utf8');
-assert.match(manifest, /regions\.html/, 'regions page must be available from the PWA manifest');
+assert.doesNotMatch(manifest, /"\.\/regions\.html"/, 'regions page is owner-only and must not be a PWA manifest shortcut');
 
 const serviceWorker = fs.readFileSync(serviceWorkerPath, 'utf8');
-assert.match(serviceWorker, /"\.\/regions\.html"/, 'regions page must be precached');
-assert.match(serviceWorker, /"\.\/regions\.json"/, 'regions JSON must be precached');
+assert.doesNotMatch(serviceWorker, /"\.\/regions\.html"/, 'regions page is owner-only and must not be precached');
+assert.doesNotMatch(serviceWorker, /"\.\/regions\.json"/, 'regions JSON is owner-only and must not be precached');
 
 console.log('regions-coverage-regression-test: ok');
