@@ -259,6 +259,32 @@ function sortByPriority(events, now = NOW) {
       'active — the single-pinned-event board could start fighting the carousel for the ' +
       'same DOM nodes. Re-check the committed dist/index.html runtime script.'
   );
+
+  // Post-closure defect (found in WO-6 review, npm run test:mobile-browsing):
+  // the carousel's pagination dots rendered at 9x9px — a real <button>
+  // undersized well below the 44x44 WCAG touch-target minimum WO-1's own
+  // spec required for nav controls. Fixed by keeping the *visible* dot at
+  // 9x9px (drawn via ::before) while the <button>.board-live-dot hit area
+  // itself is 44x44. Assert both halves of that fix stay in place.
+  const dotRuleMatch = indexHtml.match(/\.board-live-dot\s*\{([^}]*)\}/);
+  assert.ok(dotRuleMatch, 'dist/index.html must define a .board-live-dot rule');
+  assert.match(
+    dotRuleMatch[1],
+    /width:44px/,
+    '.board-live-dot must keep a 44px-wide hit area (regression: shrank to the 9px visible-dot size, ' +
+      'failing test:mobile-browsing at 360/390/430px — see WO-6 review)'
+  );
+  assert.match(
+    dotRuleMatch[1],
+    /height:44px/,
+    '.board-live-dot must keep a 44px-tall hit area (regression: shrank to the 9px visible-dot size, ' +
+      'failing test:mobile-browsing at 360/390/430px — see WO-6 review)'
+  );
+  assert.match(
+    indexHtml,
+    /\.board-live-dot::before\s*\{[^}]*width:9px/,
+    'the small 9px visible dot must be drawn via ::before, not by sizing the <button> itself down to 9px'
+  );
 }
 
 console.log('event-priority-regression-test: ok');
