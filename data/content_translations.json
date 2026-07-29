@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-29T09:23:06.460Z",
+  "generated_at": "2026-07-29T14:49:03.817Z",
   "entries": {
     "1f91543d6769d9abda47f221ba86f9f9ebf27443": {
       "source": "Skill Development Initiative",
@@ -48314,35 +48314,11 @@
       "method": "argos-mt",
       "translated_at": "2026-07-29T09:23:06.459Z"
     },
-    "0f156f2e12622bd48b939efe8b7b3a0e82560d40": {
-      "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of not less than 75%, and the equivalent of certificates is required from the Ministry of Higher Education for non-Saudi Arabian university graduates.",
-      "method": "argos-mt",
-      "translated_at": "2026-07-29T09:23:06.459Z"
-    },
     "f8e18f68ea9e37bbf671fc76d5862d8399b2e796": {
       "source": "The First Technology That Argues Back",
       "source_lang": "en",
       "target_lang": "ar",
       "text": "التكنولوجيا الأولى التي يعود بها (أرغي)",
-      "method": "argos-mt",
-      "translated_at": "2026-07-29T09:23:06.459Z"
-    },
-    "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
-      "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
-      "method": "argos-mt",
-      "translated_at": "2026-07-29T09:23:06.459Z"
-    },
-    "5c6a9ff87c6cdb115664bc8a097d521eadf27f9f": {
-      "source": "مركز الرياض للمعارض والمؤتمرات في ملهم",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "The Riyadh International Convention Exhibition Center in Inspiration",
       "method": "argos-mt",
       "translated_at": "2026-07-29T09:23:06.459Z"
     },
@@ -48505,6 +48481,358 @@
       "text": "Date: 1 January 2027 at 11:44 p. 30 December 2027 at 60:00 m",
       "method": "argos-mt",
       "translated_at": "2026-07-29T09:23:06.460Z"
+    },
+    "beaea5cb3b40435049b7f43b07adc2b4c3a8980c": {
+      "source": "Private Graduation",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "التخرج الخاص",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "a4b7bbd05b99c52cedfa3c2452d352f125c3c9ba": {
+      "source": "فعالية مدرجة في التقويم الرسمي لـ Dhahran Expo. الموعد: ١ أغسطس ٢٠٢٦ في ٠٩:٠٠ ص إلى ١ أغسطس ٢٠٢٦ في ٠٦:٠٠ م. المنظم: Technical Institute.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness included in the official Dhahran Expo calendar. Date: 1 August 2026:00 to 1 August 2026 at 60:00 M. Organization: Technical Institute.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "882c7bb079c8315885aa7b635c5ff16c1624d48d": {
+      "source": "Private Graduation مدرجة في التقويم الرسمي لـ Dhahran Expo لعام 2026. النافذة الزمنية المعلنة: ١ أغسطس ٢٠٢٦ في ٠٩:٠٠ ص إلى ١ أغسطس ٢٠٢٦ في ٠٦:٠٠ م. الموقع: Dhahran Expo، Dhahran. الجهة المنظمة: Technical Institute. تصنيف الفعالية في EventLive: المعارض والمؤتمرات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Private Graduation is included in the official calendar of Dhahran Expo of 2026. Declared time window: 1 August 2026 in 90:00 to 1 August 2026 at 60:00 m. site: Dhahran Expo, Dhahran. Organization: Technical Institute. Efficiency classification in EventLive: exhibits and conferences.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "bfb53c067ff71320c44f779774f19ee6ef183443": {
+      "source": "١ أغسطس ٢٠٢٦ في ٠٩:٠٠ ص إلى ١ أغسطس ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "1 August 2026: 0900 to 1 August 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "5b13ddfdefe78a722aaa0e97ce2183a59ed8f463": {
+      "source": "الفعالية: Private Graduation",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "التخرج الخاص",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "6dde9c516af56e0785322d841dd51d9197eb36bf": {
+      "source": "النافذة الزمنية: ١ أغسطس ٢٠٢٦ في ٠٩:٠٠ ص إلى ١ أغسطس ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 1 August 2026 in 90:00 to 1 August 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "22ca0134c6e9b608f110d2233ea326ef9959efe1": {
+      "source": "المنظم: Technical Institute",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المعهد التقني",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "b79571d621fd40382cb91e42c4fd18e623ac6397": {
+      "source": "الموعد الرسمي: ١ أغسطس ٢٠٢٦ في ٠٩:٠٠ ص إلى ١ أغسطس ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Official date: 1 August 2026: 0:00 to 1 August 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "0f156f2e12622bd48b939efe8b7b3a0e82560d40": {
+      "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of not less than 75%, and the equivalent of certificates is required from the Ministry of Higher Education for non-Saudi Arabian university graduates.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "08adff339ce699ff28ec71d7d02b7b0109b8fb34": {
+      "source": "Hayy Cinema | International Cat Day: Open Call",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "هاي سينما اليوم الدولي للكرة: نداء مفتوح",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "0ef1c6d954623c232350c9314fc4cffad7d56f94": {
+      "source": "Open Call International Cat Day Every rescued cat has a story. This International Cat Day, Hayy Cinema invites you to share yours. Submit a 30-second video telling the story of your rescued stray cat for a chance to be featured as part of our International Cat Day celebrations. Selected entries will receive complimentary tickets to attend the International Cat Day screening with their cat. Whether your story is heartwarming, unexpected, or simply celebrates the bond you’ve built, we’d love to hear it.",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "اليوم الدولي للكرة كل قطة منقذة لديها قصة هذا اليوم الدولي للكرة، (هاي سينما) يدعوك إلى مشاركتك قدم شريط فيديو لمدة 30 ثانية يروي قصة قطتك المُنقذة من أجل فرصة أن تُظهر كجزء من احتفالاتنا باليوم الدولي للكرة وستتلقى القيدات المنتقاة تذاكر مجاملة لحضور عرض اليوم الدولي للكرة مع قطتها. وسواء كانت قصتكم تهتز القلب، أو غير متوقعة، أو تحتفل ببساطة بالسند الذي بنيته، فإننا نحب أن نسمعه.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "d541b7a0359bb69b843c8560d7e02681cfd66e28": {
+      "source": "٤ أغسطس ٢٠٢٦ في ٠٩:٠٠ ص إلى ٤ أغسطس ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "4 August 2026:00 to 4 August 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "d00a5259c6dd0009ca227c74a6d465bc84049470": {
+      "source": "الفعالية: Hayy Cinema | International Cat Day: Open Call",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الحلقة الدراسية:",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "2440b29e4a171ac4533544583058fccefe291f40": {
+      "source": "النافذة الزمنية: ٤ أغسطس ٢٠٢٦ في ٠٩:٠٠ ص إلى ٤ أغسطس ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 4 August 2026: 0:00 to 4 August 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "97f063b841b0c0fd3152b00cc79f071ac68719ba": {
+      "source": "الموعد: ٤ أغسطس ٢٠٢٦ في ٠٩:٠٠ ص إلى ٤ أغسطس ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 4 August 2026: 0:00 to 4 August 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
+      "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "43007366a85abcd67d8d193ccc784bf2403d0e64": {
+      "source": "الأجندة الرسمية لـLEAP 2026: 405 جلسة مكتملة الوقت ضمن 31 أغسطس إلى 3 سبتمبر 2026.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "LLEAP 2026: 405 completed meetings within 31 August to 3 September 2026.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "adff42cd25566e4f7654a9e47efdddf4cbb12166": {
+      "source": "405 جلسة بوقت بداية ونهاية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "405 meetings at the beginning and end.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "f93311b58c9c304b99fb1375fceccf049c139ce4": {
+      "source": "405 جلسة رسمية منشورة في أجندة LEAP 2026",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "405 formal meetings published in LEAP 2026",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "5c6a9ff87c6cdb115664bc8a097d521eadf27f9f": {
+      "source": "مركز الرياض للمعارض والمؤتمرات في ملهم",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The Riyadh International Convention Exhibition Center in Inspiration",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "92de65390c269a28055ed685a398c4950a2b86fd": {
+      "source": "The Future of Entertainment & Media in the Middle East",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مستقبل وسائط الإعلام في الشرق الأوسط",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "a31adc9a5360ac1078444f404ec954ac54a93ae6": {
+      "source": "Live Drawing",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مباشرة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "69b5f054731f9e08a4b4a35c4a97366831ac0887": {
+      "source": "معسكر التقنيات الناشئة والعوالم الافتراضية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Emerging Tech Camp and Virtual Worlds",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "74b671fe411ecbab2a32d6bf5a2411be4492931d": {
+      "source": "يهدف المعسكر إلى تزويد المتدربين بالمهارات الأساسية في تطوير تجارب الواقع الافتراضي والمعزز باستخدام Unity، من خلال التعلم العملي وتطبيق المشاريع التفاعلية، واكساب المتدربين معرفة في مفاهيم XR، وتصميم التفاعل، وبرمجة C#، بالإضافة إلى دمج... المصدر الرسمي: أكاديمية طويق.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The camp aims to provide trainees with basic skills in the development of virtual and strengthened reality experiences using unity, through practical learning and the application of interactive projects, the replication of trainees in XR concepts, interaction design and C# programming, as well as integration ... Official source: Tuwaiq Academy.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "bbb1f9704e2ec979d6b4025a4b4ef07f2c2da39a": {
+      "source": "يهدف المعسكر إلى تزويد المتدربين بالمهارات الأساسية في تطوير تجارب الواقع الافتراضي والمعزز باستخدام Unity، من خلال التعلم العملي وتطبيق المشاريع التفاعلية، واكساب المتدربين معرفة في مفاهيم XR، وتصميم التفاعل، وبرمجة C#، بالإضافة إلى دمج تقنيات الواقع الممتد مع أدوات حديثة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The camp aims to provide trainees with basic skills in developing virtual and strengthened reality experiments using unity, through practical learning and the application of interactive projects, the replication of trainees in XR concepts, the design of interaction and C# programming, as well as the integration of extended reality techniques with modern tools.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "63d631683f4b814febed0712a94f9f1374acd91d": {
+      "source": "تمكين المتدربين من اكتساب المهارات الفنية والتقنية اللازمة لتطوير تطبيقات وتجارب واقع معززة وواقع افتراضي مبتكرة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Enable trainees to acquire the technical and technical skills necessary to develop enhanced applications and experiences of a reality and innovative virtual reality.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "99fffd848a45f435f9d98b7f8ede42cebd09ca6b": {
+      "source": "تطوير المهارات المهنية في تقنيات الواقع الممتد (XR) مع دمج أدوات وتقنيات Meta الحديثة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Development of professional skills in extended reality techniques (XR) with the integration of modern Meta tools and techniques.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "8c609b135a65107ffdfa9cef68a2d8a3130c30e5": {
+      "source": "تطوير مشاريع الواقع الممتد والتي تلبي احتياجات المستخدمين وتسهم في تطوير صناعة التطبيقات الحديثة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Development of extended reality projects that meet user needs and contribute to the development of the modern application industry.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "c77ced44b9a6d38e6825f36a538404b21e5ee99a": {
+      "source": "بيئة تعليمية محفزة تجمع بين التحدي والدعم لبناء مجتمع XR متكامل.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A catalytic learning environment that combines challenge and support for building an integrated XR society.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "2b84c2d0fbb38c482d3768c76ce24e7d47d38904": {
+      "source": "إشراف وتوجيه مباشر من خبراء تقنيين لضمان اكتساب المهارات بجودة عالية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Direct supervision and guidance from technical experts to ensure high quality skills.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "ee017145bbf5d10045404580ce900e208b9f2abb": {
+      "source": "ورش عمل تفاعلية وجلسات نقاش مع مختصين في XR، التصميم، والبرمجة لبناء فهم أعمق للتقنيات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Interactive workshops and discussion sessions with XR specialists, design and programming to build a deeper understanding of techniques.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "9d61126874d042986c6e535931c1305f15ebfd3a": {
+      "source": "دمج بعض التقنيات الناشئة ضمن تقنيات VR و AR",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Integration of some emerging techniques into VR and AR techniques",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "c2a95c411add6d8de4ed5819fb21898424d67ec5": {
+      "source": "ترشيح المشاركين المميزين لملتقى التوظيف الخاص بالأكاديمية لتعزيز فرص الحصول على عمل.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Candidacy of the distinguished participants to the Academy &apos; s Employment Forum to promote employment opportunities.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "01792d9903174282a722d30c0937837b209b0f72": {
+      "source": "تأهيل المتدربين للحصول على شهادات مهنية دولية (VR Developer from Unity ).",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Rehabilitation of trainees for international professional certificates (VR Developer from Unity)",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "3b8e8ce45e5fd4a364fd1f198c3b3257cedbcab3": {
+      "source": "التعرف على أحدث الأدوات والممارسات في [افي تطوير تجارب الواقع الافتراضي والمعزز باستخدام Unity وXR Interaction Toolkit].",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Identify the latest tools and practices in [development of virtual and enhanced reality experiences using Unity and XR Interaction Toolkit].",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "438ae3c8fd9e5787e25700ee824d29177b2ed4f5": {
+      "source": "إتقان المفاهيم الأساسية والمتقدمة في [في برمجة C#، تصميم التفاعل، تتبع الحركة، وتجربة المستخدم في بيئات XR.].",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Approval of basic and advanced concepts in [in C# programming, interaction design, movement tracking, and user experience in XR environments.]",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "1d8fababac8afa32d9a3244b0305e17ccfa1625e": {
+      "source": "تنفيذ مشاريع عملية تعزز الفهم في [مثل تطوير تجارب تعليمية، محاكاة صناعية، أو ألعاب تفاعلية تعتمد على تقنيات XR].",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Implement practical projects that promote understanding in [e.g. development of educational experiments, industrial simulation or interactive games based on XR techniques].",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "37b2cade79c1c0044f5e2628f608f2a495f94769": {
+      "source": "التدريب على استخدام أدوات احترافية مثل [GitHub، ، Vuforia، وUnity] لتعزيز الكفاءة العملية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Training in the use of professional tools such as [GitHub, Vuforia and Unity] to enhance practical efficiency.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "4d79a46c3ca313ed311f2d7324b43ee8ab5621bd": {
+      "source": "يؤهلك المعسكر للوظائف التالية: - مطور واقع ممتد (XR Developer) - مطور واقع افتراضي ومعزز (VR/AR Developer)",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The camp shall be eligible for the following functions: developer of an extended reality (XR Developer) - developer of a virtual and enhanced reality (VR/AR Developer)",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "37d3603303bfec66c6479df136c217147e06cfe2": {
+      "source": "طالب أو خريج دبلوم أو أعلى في تخصص تقني.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Student, diploma or higher in technical discipline.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "e3a47c1ccb7a861c25bbfd28112489a5b9e8c832": {
+      "source": "Rotating Equipment Event",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "تناوب المعدات",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "a4b530ab5a12992457284ceff13c0d323c5f15e9": {
+      "source": "فعالية مدرجة في التقويم الرسمي لـ Dhahran Expo. الموعد: ٢٧ سبتمبر ٢٠٢٦ في ٠٩:٠٠ ص إلى ٢٩ سبتمبر ٢٠٢٦ في ٠٦:٠٠ م. المنظم: Aldrich Int’l LLC.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness included in the official Dhahran Expo calendar. Date: 27 September 2026:00 to 29 September 2026 at 60:00 m. Organization: Aldrich Int’l LLC.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "bb1223231995efcf3566b3780fb44af551c35872": {
+      "source": "Rotating Equipment Event مدرجة في التقويم الرسمي لـ Dhahran Expo لعام 2026. النافذة الزمنية المعلنة: ٢٧ سبتمبر ٢٠٢٦ في ٠٩:٠٠ ص إلى ٢٩ سبتمبر ٢٠٢٦ في ٠٦:٠٠ م. الموقع: Dhahran Expo، Dhahran. الجهة المنظمة: Aldrich Int’l LLC. تصنيف الفعالية في EventLive: المعارض والمؤتمرات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Rotating Equipment Event is included in the official calendar of Dhahran Expo of 2026. Declared time window: 27 September 2026 in 90:00 to 29 September 2026 at 60:00 m. site: Dhahran Expo, Dhahran. Organization: Aldrich Int’l LLC. Efficiency classification in EventLive: exhibits and conferences.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
+    },
+    "fde8368c3946cdd8903c1d9cf32f28aaa51bcaad": {
+      "source": "الفعالية: Rotating Equipment Event",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "تناوب المعدات",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T14:49:03.817Z"
     }
   }
 }

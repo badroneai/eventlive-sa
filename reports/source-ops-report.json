@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T09:17:27.801Z",
+  "generated_at": "2026-07-29T14:42:01.379Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-07-29T09:07:55.651Z",
+    "collected_at": "2026-07-29T14:31:10.709Z",
     "freshness": "fresh",
     "discovered": 319,
-    "written": 563
+    "written": 567
   },
   "sources": {
     "total": 88,
-    "attempted": 19,
-    "due": 19,
-    "deferred": 29,
+    "attempted": 20,
+    "due": 20,
+    "deferred": 28,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 22,
+    "registry_collection_coverage_pct": 23,
     "scheduled_runnable_coverage_pct": 100,
     "healthy": 19,
-    "zero_yield": 0,
+    "zero_yield": 1,
     "errors": 0,
-    "cadence_deferred": 29,
+    "cadence_deferred": 28,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -237,7 +237,7 @@
         "zero_yield_streak": 0,
         "last_attempted_at": null,
         "extracted": 12,
-        "candidates": 29,
+        "candidates": 30,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -311,8 +311,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 16,
-        "candidates": 16,
+        "extracted": 17,
+        "candidates": 18,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -679,16 +679,13 @@
         "id": "riyadh-city-events",
         "name": "Riyadh City Events",
         "priority": 51,
-        "status": "deferred",
-        "historical_status": "probe-blocked",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-07-29T12:53:32.765Z",
+        "status": "zero-yield",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-07-29T06:53:32.765Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 79,
-        "next_action": "مؤجل حتى 2026-07-29T12:53:32.765Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "monshaat-academy-programs",
@@ -1010,7 +1007,7 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 10,
+        "extracted": 9,
         "candidates": 20,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
@@ -1128,7 +1125,7 @@
         "zero_yield_streak": 0,
         "last_attempted_at": null,
         "extracted": 61,
-        "candidates": 68,
+        "candidates": 69,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -1179,28 +1176,28 @@
     ]
   },
   "queue": {
-    "total": 563,
+    "total": 567,
     "ready_for_review": 8,
     "approved_for_catalog": 0,
-    "published_from_candidates": 529,
+    "published_from_candidates": 533,
     "actionable": 8,
     "stale_unpublished": 0,
     "duplicate_risk": 6,
     "needs_extraction": 0,
     "needs_evidence": 26,
     "by_review_status": {
-      "approved-for-catalog": 529,
+      "approved-for-catalog": 533,
       "ready-for-review": 8,
       "evidence-captured": 18,
       "new": 8
     },
     "by_publication_gate": {
-      "catalog-review": 529,
+      "catalog-review": 533,
       "duplicate-review": 8,
       "source-evidence": 26
     },
     "by_confidence": {
-      "official": 523,
+      "official": 527,
       "public-listing": 21,
       "verified-secondary": 11,
       "unverified": 8
@@ -1217,10 +1214,10 @@
       "Visit Saudi Summer Calendar PDF": 70,
       "Misk Hub Programs": 11,
       "Discover Aseer Events": 39,
-      "Hayy Jameel What's On": 68,
+      "Hayy Jameel What's On": 69,
       "Visit Saudi Seasons": 20,
       "Monsha'at All Events": 2,
-      "Tuwaiq Academy Bootcamps and Programs": 29,
+      "Tuwaiq Academy Bootcamps and Programs": 30,
       "Eye of Riyadh Events": 6,
       "Saudicon Events": 15,
       "Najran Municipality Summer Events": 1,
@@ -1229,9 +1226,9 @@
       "Umm Al-Qura University Events Center": 20,
       "Ithra Events": 78,
       "MDLBEAST Events": 5,
+      "Dhahran Expo Calendar": 18,
       "Future Skills MCIT Catalogue": 3,
       "Saudi Food and Drug Authority Events": 5,
-      "Dhahran Expo Calendar": 16,
       "Tradepass Official": 1,
       "Informa Connect Saudi Event Portfolio": 6,
       "RFECC What's On": 6,
@@ -1351,7 +1348,7 @@
         "discovery_notes": "",
         "duplicate_risk": true,
         "matched_catalog_event_id": "event-in-act-act-x",
-        "days_to_start": 73,
+        "days_to_start": 72,
         "is_past": false,
         "is_actionable": true,
         "action": "راجع التكرار مع الكتالوج قبل أي اعتماد.",
@@ -1465,7 +1462,7 @@
         "discovery_notes": "",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 33,
+        "days_to_start": 32,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",
@@ -1671,7 +1668,7 @@
         "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 39,
+        "days_to_start": 38,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",
@@ -1821,7 +1818,7 @@
         "discovery_notes": "",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 33,
+        "days_to_start": 32,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",

@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-07-29T09:15:13.459Z",
+  "published_at": "2026-07-29T14:39:19.336Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 563,
+  "candidates_seen": 567,
   "totals": {
-    "candidates_seen": 563,
+    "candidates_seen": 567,
     "published": 4,
-    "linked_existing": 519,
+    "linked_existing": 523,
     "blocked": 40,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 523
+    "reconciled": 527
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -165,24 +165,24 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-umm-al-qura-events-تجرييبية-20260729-4b181285",
-      "event_id": "event-تجرييبية",
-      "title": "تجرييبية"
+      "candidate_id": "candidate-dhahran-expo-calendar-private-graduation-20260801-18d15b29",
+      "event_id": "event-private-graduation",
+      "title": "Private Graduation"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-دبلوم-متوسط-في-أمن-المعلومات-20270101-feb1a3e5",
-      "event_id": "event-دبلوم-متوسط-في-أمن-المعلومات",
-      "title": "دبلوم متوسط في أمن المعلومات"
+      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-international-cat-day-open-call-20260804-5fb2cbe7",
+      "event_id": "event-hayy-cinema-international-cat-day-open-call",
+      "title": "Hayy Cinema | International Cat Day: Open Call"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-دبلوم-متوسط-في-إدارة-الموارد-البشرية-20270101-4dde5b0c",
-      "event_id": "event-دبلوم-متوسط-في-إدارة-الموارد-البشرية",
-      "title": "دبلوم متوسط في إدارة الموارد البشرية"
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية-20260920-0647b188",
+      "event_id": "event-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية",
+      "title": "معسكر التقنيات الناشئة والعوالم الافتراضية"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-دبلوم-المتوسط-في-التكنولوجيا-المالية-20270101-33bcbf77",
-      "event_id": "event-دبلوم-المتوسط-في-التكنولوجيا-المالية",
-      "title": "دبلوم المتوسط في التكنولوجيا المالية"
+      "candidate_id": "candidate-dhahran-expo-calendar-rotating-equipment-event-20260927-18d15b29",
+      "event_id": "event-rotating-equipment-event",
+      "title": "Rotating Equipment Event"
     }
   ],
   "linked_existing": [
@@ -1099,9 +1099,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-التقديم-على-عدد-من-الفرص-الوظيفية-المؤقتة-20260727-602b04ea",
+      "candidate_id": "candidate-umm-al-qura-events-فرص-تعاقد-على-مشروع-بحثي-ممول-20260727-602b04ea",
       "event_id": "event-وظائف-بحثية-تجربة",
-      "title": "التقديم على عدد من الفرص الوظيفية المؤقتة",
+      "title": "فرص تعاقد على مشروع بحثي ممول",
       "reason": "already linked to catalog event"
     },
     {
@@ -1147,33 +1147,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-summer-youth-program-20260729-a20f7a11",
-      "event_id": "event-summer-youth-program",
-      "title": "Summer Youth Program",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260729-2bf92d17",
-      "event_id": "event-childrens-art-studio",
-      "title": "Children's Art Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260729-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260729-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260729-2671d1ce",
-      "event_id": "event-emboss-printing-experience",
-      "title": "Emboss Printing Experience",
+      "candidate_id": "candidate-umm-al-qura-events-تجرييبية-20260729-4b181285",
+      "event_id": "event-تجرييبية",
+      "title": "تجرييبية",
       "reason": "already linked to catalog event"
     },
     {
@@ -1189,15 +1165,39 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260729-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-arabic-children-book-club-10-12-20260729-39c903cc",
       "event_id": "event-arabic-children-book-club-10-12",
       "title": "Arabic Children Book Club (10-12)",
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260729-2bf92d17",
+      "event_id": "event-childrens-art-studio",
+      "title": "Children's Art Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-your-book-in-a-minute-20260729-c8aab584",
       "event_id": "event-your-book-in-a-minute",
       "title": "Your Book in a Minute!",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260729-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260729-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -1234,6 +1234,12 @@
       "candidate_id": "candidate-visit-saudi-seasons-tour-of-al-baha-20260730-7b170410",
       "event_id": "event-tour-of-al-baha",
       "title": "Tour of Al Baha",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-summer-youth-program-20260730-a20f7a11",
+      "event_id": "event-summer-youth-program",
+      "title": "Summer Youth Program",
       "reason": "already linked to catalog event"
     },
     {
@@ -2968,6 +2974,24 @@
       "candidate_id": "candidate-umm-al-qura-events-دبلوم-الإدارة-المكتبية-20270101-91502b5d",
       "event_id": "event-دبلوم-الإدارة-المكتبية",
       "title": "دبلوم الإدارة المكتبية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-دبلوم-متوسط-في-أمن-المعلومات-20270101-feb1a3e5",
+      "event_id": "event-دبلوم-متوسط-في-أمن-المعلومات",
+      "title": "دبلوم متوسط في أمن المعلومات",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-دبلوم-متوسط-في-إدارة-الموارد-البشرية-20270101-4dde5b0c",
+      "event_id": "event-دبلوم-متوسط-في-إدارة-الموارد-البشرية",
+      "title": "دبلوم متوسط في إدارة الموارد البشرية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-دبلوم-المتوسط-في-التكنولوجيا-المالية-20270101-33bcbf77",
+      "event_id": "event-دبلوم-المتوسط-في-التكنولوجيا-المالية",
+      "title": "دبلوم المتوسط في التكنولوجيا المالية",
       "reason": "already linked to catalog event"
     },
     {

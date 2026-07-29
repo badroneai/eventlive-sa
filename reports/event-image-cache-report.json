@@ -1,18 +1,31 @@
 {
-  "generated_at": "2026-07-29T09:17:26.817Z",
+  "generated_at": "2026-07-29T14:41:49.017Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 769,
-    "fetched": 0,
-    "reused": 497,
+    "cached_total": 771,
+    "fetched": 2,
+    "reused": 495,
     "failed": 3,
     "skipped_recent_failures": 3,
     "remembered_failures": 6
   },
-  "fetched": [],
+  "fetched": [
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC01859-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-international-cat-day-open-call-1c5bd9fc74.jpg",
+      "bytes": 87293,
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/b2hfxfcc.ekk.webp",
+      "file": "dist/assets/event-images/معسكر-التقنيات-الناشئة-والعوالم-الافتراضية-8a64400615.webp",
+      "bytes": 22348,
+      "events": 1
+    }
+  ],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -2488,16 +2501,6 @@
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-06/%D9%85%D8%B1%D9%83%D8%B2%20%D8%A7%D9%84%D8%AF%D8%B1%D8%B9%D9%8A%D8%A9%20%D9%84%D9%81%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84%20%282%29.jpg?itok=MFDuPeWM",
       "file": "dist/assets/event-images/art-futures-camp-2026-diriyah-art-futures-c45bf701d0.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1fb536bac645fb83866cc982e2a309a2.jpg",
-      "file": "dist/assets/event-images/short-film-competition-group-1-39f3199c32.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2d31aad00d0d3e0df84bbd1e595de182.jpg",
-      "file": "dist/assets/event-images/spotlight-on-korean-cinema-group-3-164be6d12e.jpg",
-      "events": 1
     }
   ],
   "rejected_removed": [],
@@ -2554,6 +2557,8 @@
       "skipped": true
     }
   ],
-  "requires_rebuild": false,
-  "rebuild_reasons": []
+  "requires_rebuild": true,
+  "rebuild_reasons": [
+    "fetched:2"
+  ]
 }

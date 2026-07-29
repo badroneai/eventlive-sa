@@ -1,13 +1,14 @@
 # Dhahran Expo Calendar Enrichment Report
 
-- generated_at: 2026-07-29T09:15:47.735Z
-- targets: 16
-- candidates: 16
-- enriched: 16
+- generated_at: 2026-07-29T14:40:02.742Z
+- targets: 18
+- candidates: 18
+- enriched: 18
 - skipped: 0
 
 ## Enriched
 
+- Private Graduation - 2026-08-01T09:00:00+03:00 to 2026-08-01T18:00:00+03:00 - Technical Institute - features=6
 - Offshore Technology & Innovation Technical Conference & Expo - OFFSHORE ARABIA 2026” - 2026-08-24T09:00:00+03:00 to 2026-08-26T18:00:00+03:00 - Aldrich International L.L.C. - features=6
 - Crafts & Handicrafts Exhibition - 2026-09-01T09:00:00+03:00 to 2026-09-04T18:00:00+03:00 - Sharqia Chamber - features=6
 - Arabian and International Industries Exhibition - 2026-09-02T09:00:00+03:00 to 2026-09-11T18:00:00+03:00 - Ibrahim Mohammed Saad Al-Awad Establishment for Organizing Exhibitions and Conferences - features=6
@@ -16,6 +17,7 @@
 - Music Concerts National Day - 2026-09-23T09:00:00+03:00 to 2026-09-24T18:00:00+03:00 - Creative XP - features=6
 - The Egyptian Products Exhibition - 2026-09-24T09:00:00+03:00 to 2026-09-29T18:00:00+03:00 - Al-Baraa Muhammed Bin Abdullah Al-Duaij Establishment for Organizing Exhibitions & Conferences - features=6
 - Wadaef Exhibition - 2026-09-27T09:00:00+03:00 to 2026-09-29T18:00:00+03:00 - Sharqia Chamber - features=6
+- Rotating Equipment Event - 2026-09-27T09:00:00+03:00 to 2026-09-29T18:00:00+03:00 - Aldrich Int’l LLC - features=6
 - World Firefighters Challenge - 2026-11-05T09:00:00+03:00 to 2026-11-13T18:00:00+03:00 - Saudi Aramco - features=6
 - Business Sector Annual Reception. - 2026-12-01T09:00:00+03:00 to 2026-12-01T18:00:00+03:00 - Sharqia Chamber - features=6
 - Consumer Trade Fair - 2026-12-02T09:00:00+03:00 to 2026-12-09T18:00:00+03:00 - Al-Baraa Muhammed Bin Abdullah Al-Duaij Establishment for Organizing Exhibitions & Conferences - features=6

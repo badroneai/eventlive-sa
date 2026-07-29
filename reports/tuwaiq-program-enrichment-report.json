@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-29T09:15:15.615Z",
+  "generated_at": "2026-07-29T14:39:21.516Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 29,
-    "enriched": 28,
+    "targets": 30,
+    "enriched": 29,
     "failed": 1
   },
   "enriched": [
@@ -72,14 +72,6 @@
       "requirements": 6
     },
     {
-      "id": "event-معسكر-الأنظمة-الذاتية-للدرونز",
-      "title": "معسكر الأنظمة الذاتية للدرونز",
-      "slug": "bx7Vb7Xw",
-      "goals": 8,
-      "features": 6,
-      "requirements": 6
-    },
-    {
       "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-2",
       "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python (الفترة الصباحية)",
       "slug": "8ROda7MD",
@@ -102,6 +94,14 @@
       "goals": 13,
       "features": 22,
       "requirements": 7
+    },
+    {
+      "id": "event-معسكر-الأنظمة-الذاتية-للدرونز",
+      "title": "معسكر الأنظمة الذاتية للدرونز",
+      "slug": "bx7Vb7Xw",
+      "goals": 8,
+      "features": 6,
+      "requirements": 6
     },
     {
       "id": "event-معسكر-تصميم-تجربة-المستخدم-ux-ui",
@@ -163,7 +163,7 @@
       "id": "event-معسكر-الذكاء-الاصطناعي-في-تطوير-تطبيقات-الويب-باستخدام-python-و-django",
       "title": "معسكر الذكاء الاصطناعي في تطوير تطبيقات الويب باستخدام Python و Django",
       "slug": "64xLPxNn",
-      "goals": 16,
+      "goals": 15,
       "features": 7,
       "requirements": 8
     },
@@ -214,6 +214,14 @@
       "goals": 10,
       "features": 6,
       "requirements": 6
+    },
+    {
+      "id": "event-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية",
+      "title": "معسكر التقنيات الناشئة والعوالم الافتراضية",
+      "slug": "vxpqBnPg",
+      "goals": 3,
+      "features": 12,
+      "requirements": 5
     },
     {
       "id": "event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud",

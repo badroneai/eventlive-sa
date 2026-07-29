@@ -1,49 +1,19 @@
 {
-  "generated_at": "2026-07-29T09:16:34.693Z",
+  "generated_at": "2026-07-29T14:40:55.028Z",
   "totals": {
-    "targets": 4,
-    "enriched": 4,
-    "fetched": 4,
-    "images": 4,
+    "targets": 1,
+    "enriched": 1,
+    "fetched": 1,
+    "images": 1,
     "fetch_failures": 0
   },
   "enriched": [
     {
-      "id": "event-تجرييبية",
-      "title": "تجرييبية",
-      "source_label": "Umm Al-Qura University Events Center",
+      "id": "event-hayy-cinema-international-cat-day-open-call",
+      "title": "Hayy Cinema | International Cat Day: Open Call",
+      "source_label": "Hayy Jameel What's On",
       "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41041",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-دبلوم-المتوسط-في-التكنولوجيا-المالية",
-      "title": "دبلوم المتوسط في التكنولوجيا المالية",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41044",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-دبلوم-متوسط-في-أمن-المعلومات",
-      "title": "دبلوم متوسط في أمن المعلومات",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41042",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-دبلوم-متوسط-في-إدارة-الموارد-البشرية",
-      "title": "دبلوم متوسط في إدارة الموارد البشرية",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41043",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-cinema-international-cat-day-open-call/",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
