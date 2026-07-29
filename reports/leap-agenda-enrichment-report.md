@@ -1,6 +1,6 @@
 # LEAP 2026 Agenda Enrichment
 
-- generated_at: 2026-07-29T01:37:05.689Z
+- generated_at: 2026-07-29T03:25:22.285Z
 - catalog_targets: 1
 - candidate_targets: 1
 - official_sessions: 392
