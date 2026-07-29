@@ -116,6 +116,9 @@ jobs:
       - name: Verify first-glance trust gate (no dead live elements ship)
         run: npm run test:first-glance-trust
 
+      - name: Verify mobile touch targets and viewport budgets (WO-1 review gap, ~10s)
+        run: npm run test:mobile-browsing
+
       - name: Verify bilingual site contract
         run: |
           npm run test:i18n-contract

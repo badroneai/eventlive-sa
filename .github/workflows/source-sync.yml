@@ -164,6 +164,7 @@ jobs:
           npm run test:public-assets
           npm run test:owner-surface-isolation
           npm run test:first-glance-trust
+          npm run test:mobile-browsing
           npm run test:i18n-contract
           npm run test:i18n-site
           npm run test:en-surface-sweep
