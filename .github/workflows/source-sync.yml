@@ -142,6 +142,7 @@ jobs:
           npm run test:informa-saudi-portfolio
           npm run test:scega-canonical-alias
           npm run test:poster-ocr
+          npm run test:visit-saudi-image-identity
           npm run test:regional-chamber-extractors
           npm run test:leap-agenda-enrichment
           npm run test:money2020-agenda-enrichment
@@ -201,6 +202,8 @@ jobs:
             reports/platinumlist-*.md \
             reports/event-image-cache-report.json \
             reports/event-image-cache-report.md \
+            reports/visit-saudi-image-identity-report.json \
+            reports/visit-saudi-image-identity-report.md \
             reports/*-enrichment-report.json \
             reports/*-enrichment-report.md \
             reports/official-single-session-activation-report.json \
