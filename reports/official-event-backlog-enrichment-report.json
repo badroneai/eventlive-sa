@@ -1,23 +1,12 @@
 {
-  "generated_at": "2026-07-29T14:40:55.028Z",
+  "generated_at": "2026-07-29T17:19:10.846Z",
   "totals": {
-    "targets": 1,
-    "enriched": 1,
-    "fetched": 1,
-    "images": 1,
+    "targets": 0,
+    "enriched": 0,
+    "fetched": 0,
+    "images": 0,
     "fetch_failures": 0
   },
-  "enriched": [
-    {
-      "id": "event-hayy-cinema-international-cat-day-open-call",
-      "title": "Hayy Cinema | International Cat Day: Open Call",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayy-cinema-international-cat-day-open-call/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    }
-  ],
+  "enriched": [],
   "failed": []
 }

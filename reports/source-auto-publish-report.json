@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-07-29T14:39:19.336Z",
+  "published_at": "2026-07-29T17:17:52.924Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 567,
+  "candidates_seen": 565,
   "totals": {
-    "candidates_seen": 567,
-    "published": 4,
-    "linked_existing": 523,
+    "candidates_seen": 565,
+    "published": 0,
+    "linked_existing": 525,
     "blocked": 40,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 527
+    "reconciled": 525
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -163,28 +163,7 @@
       "start_date_drift_days": 0.125
     }
   ],
-  "published": [
-    {
-      "candidate_id": "candidate-dhahran-expo-calendar-private-graduation-20260801-18d15b29",
-      "event_id": "event-private-graduation",
-      "title": "Private Graduation"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-international-cat-day-open-call-20260804-5fb2cbe7",
-      "event_id": "event-hayy-cinema-international-cat-day-open-call",
-      "title": "Hayy Cinema | International Cat Day: Open Call"
-    },
-    {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية-20260920-0647b188",
-      "event_id": "event-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية",
-      "title": "معسكر التقنيات الناشئة والعوالم الافتراضية"
-    },
-    {
-      "candidate_id": "candidate-dhahran-expo-calendar-rotating-equipment-event-20260927-18d15b29",
-      "event_id": "event-rotating-equipment-event",
-      "title": "Rotating Equipment Event"
-    }
-  ],
+  "published": [],
   "linked_existing": [
     {
       "candidate_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c",
@@ -955,12 +934,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-kau-events-registration-now-open-for-children-at-the-childhood-studies-center-for-t-20260707-a2624927",
-      "event_id": "event-registration-now-open-for-children-at-the-childhood-studies-center-for-t",
-      "title": "Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-jouf-university-programs-البرنامج-الصيفي-بجامعة-الجوف-2026-20260708-fa67cacd",
       "event_id": "event-البرنامج-الصيفي-بجامعة-الجوف-2026",
       "title": "البرنامج الصيفي بجامعة الجوف 2026",
@@ -1093,12 +1066,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-misk-hub-programs-entrepreneur-leadership-excellence-program-20260727-dd903886",
-      "event_id": "event-entrepreneur-leadership-excellence-program",
-      "title": "Entrepreneur Leadership Excellence Program",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-فرص-تعاقد-على-مشروع-بحثي-ممول-20260727-602b04ea",
       "event_id": "event-وظائف-بحثية-تجربة",
       "title": "فرص تعاقد على مشروع بحثي ممول",
@@ -1108,12 +1075,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-أوركسترا-harry-potter-20260728-4a38d19e",
       "event_id": "event-أوركسترا-harry-potter",
       "title": "أوركسترا Harry Potter",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260729-f563a36e",
-      "event_id": "event-ithra-summer-camp-2026-a-world-of-homes",
-      "title": "Ithra Summer Camp 2026: A world of homes",
       "reason": "already linked to catalog event"
     },
     {
@@ -1159,48 +1120,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-energy-in-motion-20260729-e0404048",
-      "event_id": "event-energy-in-motion",
-      "title": "Energy in Motion",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260729-2671d1ce",
-      "event_id": "event-emboss-printing-experience",
-      "title": "Emboss Printing Experience",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-arabic-children-book-club-10-12-20260729-39c903cc",
-      "event_id": "event-arabic-children-book-club-10-12",
-      "title": "Arabic Children Book Club (10-12)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260729-2bf92d17",
-      "event_id": "event-childrens-art-studio",
-      "title": "Children's Art Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-your-book-in-a-minute-20260729-c8aab584",
-      "event_id": "event-your-book-in-a-minute",
-      "title": "Your Book in a Minute!",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260729-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260729-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-صيف-وِرث-2026-20260730-4a38d19e",
       "event_id": "event-صيف-وِرث-2026",
       "title": "صيف وِرث 2026",
@@ -1237,15 +1156,45 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260730-f563a36e",
+      "event_id": "event-ithra-summer-camp-2026-a-world-of-homes",
+      "title": "Ithra Summer Camp 2026: A world of homes",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-summer-youth-program-20260730-a20f7a11",
       "event_id": "event-summer-youth-program",
       "title": "Summer Youth Program",
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260730-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260730-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260730-2bf92d17",
+      "event_id": "event-childrens-art-studio",
+      "title": "Children's Art Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-family-challenges-20260730-3726c868",
       "event_id": "event-family-challenges",
       "title": "Family Challenges",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260730-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
       "reason": "already linked to catalog event"
     },
     {
@@ -1342,6 +1291,12 @@
       "candidate_id": "candidate-discover-aseer-events-musical-concerts-20260801-169733ac",
       "event_id": "event-musical-concerts",
       "title": "Musical concerts",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-dhahran-expo-calendar-private-graduation-20260801-18d15b29",
+      "event_id": "event-private-graduation",
+      "title": "Private Graduation",
       "reason": "already linked to catalog event"
     },
     {
@@ -1477,6 +1432,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-international-cat-day-open-call-20260804-5fb2cbe7",
+      "event_id": "event-hayy-cinema-international-cat-day-open-call",
+      "title": "Hayy Cinema | International Cat Day: Open Call",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-tangram-20260804-9a9db6cb",
       "event_id": "event-tangram",
       "title": "Tangram",
@@ -1531,6 +1492,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-your-book-in-a-minute-20260805-c8aab584",
+      "event_id": "event-your-book-in-a-minute",
+      "title": "Your Book in a Minute!",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-little-explorers-20260806-1cc1993f",
       "event_id": "event-little-explorers",
       "title": "Little Explorers",
@@ -1546,6 +1513,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-حسين-محب-ايف-في-الرياض-20260807-4a38d19e",
       "event_id": "event-hussain-moheb-live-in-riyadh",
       "title": "حسين محب ايف في الرياض",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-energy-in-motion-20260807-e0404048",
+      "event_id": "event-energy-in-motion",
+      "title": "Energy in Motion",
       "reason": "already linked to catalog event"
     },
     {
@@ -1738,6 +1711,12 @@
       "candidate_id": "candidate-eye-of-riyadh-events-smart-data-ai-summit-20260826-f9946ea8",
       "event_id": "event-smart-data-ai-summit",
       "title": "Smart Data & AI Summit",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-arabic-children-book-club-10-12-20260826-39c903cc",
+      "event_id": "event-arabic-children-book-club-10-12",
+      "title": "Arabic Children Book Club (10-12)",
       "reason": "already linked to catalog event"
     },
     {
@@ -2173,6 +2152,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية-20260920-0647b188",
+      "event_id": "event-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية",
+      "title": "معسكر التقنيات الناشئة والعوالم الافتراضية",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-saudi-water-authority-events-saudi-national-day-20260923-df5b5c2a",
       "event_id": "event-saudi-national-day",
       "title": "Saudi National Day",
@@ -2200,6 +2185,12 @@
       "candidate_id": "candidate-dhahran-expo-calendar-wadaef-exhibition-20260927-18d15b29",
       "event_id": "event-wadaef-exhibition",
       "title": "Wadaef Exhibition",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-dhahran-expo-calendar-rotating-equipment-event-20260927-18d15b29",
+      "event_id": "event-rotating-equipment-event",
+      "title": "Rotating Equipment Event",
       "reason": "already linked to catalog event"
     },
     {
