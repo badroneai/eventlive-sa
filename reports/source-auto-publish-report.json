@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-07-29T07:40:12.378Z",
+  "published_at": "2026-07-29T09:15:13.459Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 559,
+  "candidates_seen": 563,
   "totals": {
-    "candidates_seen": 559,
-    "published": 0,
+    "candidates_seen": 563,
+    "published": 4,
     "linked_existing": 519,
     "blocked": 40,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 519
+    "reconciled": 523
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -163,7 +163,28 @@
       "start_date_drift_days": 0.125
     }
   ],
-  "published": [],
+  "published": [
+    {
+      "candidate_id": "candidate-umm-al-qura-events-تجرييبية-20260729-4b181285",
+      "event_id": "event-تجرييبية",
+      "title": "تجرييبية"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-دبلوم-متوسط-في-أمن-المعلومات-20270101-feb1a3e5",
+      "event_id": "event-دبلوم-متوسط-في-أمن-المعلومات",
+      "title": "دبلوم متوسط في أمن المعلومات"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-دبلوم-متوسط-في-إدارة-الموارد-البشرية-20270101-4dde5b0c",
+      "event_id": "event-دبلوم-متوسط-في-إدارة-الموارد-البشرية",
+      "title": "دبلوم متوسط في إدارة الموارد البشرية"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-دبلوم-المتوسط-في-التكنولوجيا-المالية-20270101-33bcbf77",
+      "event_id": "event-دبلوم-المتوسط-في-التكنولوجيا-المالية",
+      "title": "دبلوم المتوسط في التكنولوجيا المالية"
+    }
+  ],
   "linked_existing": [
     {
       "candidate_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c",
@@ -1080,7 +1101,7 @@
     {
       "candidate_id": "candidate-umm-al-qura-events-التقديم-على-عدد-من-الفرص-الوظيفية-المؤقتة-20260727-602b04ea",
       "event_id": "event-وظائف-بحثية-تجربة",
-      "title": "التقديم على عدد من الفرص الوظيفية المؤقتة.",
+      "title": "التقديم على عدد من الفرص الوظيفية المؤقتة",
       "reason": "already linked to catalog event"
     },
     {
@@ -1132,12 +1153,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260729-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-childrens-art-studio-20260729-2bf92d17",
       "event_id": "event-childrens-art-studio",
       "title": "Children's Art Studio",
@@ -1147,6 +1162,12 @@
       "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260729-5bac584c",
       "event_id": "event-spot-of-inspiration",
       "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260729-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -1408,12 +1429,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-الأنظمة-الذاتية-للدرونز-20260802-5d8feea2",
-      "event_id": "event-معسكر-الأنظمة-الذاتية-للدرونز",
-      "title": "معسكر الأنظمة الذاتية للدرونز",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-misk-hub-programs-nonprofit-sector-skills-program-20260803-075740c9",
       "event_id": "event-nonprofit-sector-skills-program",
       "title": "Nonprofit Sector Skills Program",
@@ -1663,6 +1678,12 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-أساسيات-هندسة-الميكاترونكس-20260816-54c2e27f",
       "event_id": "event-معسكر-أساسيات-هندسة-الميكاترونكس",
       "title": "معسكر أساسيات هندسة الميكاترونكس",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-الأنظمة-الذاتية-للدرونز-20260816-5d8feea2",
+      "event_id": "event-معسكر-الأنظمة-الذاتية-للدرونز",
+      "title": "معسكر الأنظمة الذاتية للدرونز",
       "reason": "already linked to catalog event"
     },
     {
