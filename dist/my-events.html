@@ -816,6 +816,35 @@
       return Number.isNaN(date.getTime()) ? String(iso || '-') : date.toLocaleString('ar-SA', { dateStyle:'medium', timeStyle:'short' });
     }
 
+    // WO-7: single-source multi-day predicate + range label for this
+    // page's client-rendered cards, ported by hand from
+    // scripts/event-date-range.mjs (no bundler on this page, so it can't
+    // be imported directly — see WO-3's riyadhDayKey precedent in
+    // dist/today.html). Keep this in sync with the module and with the
+    // matching copies in dist/events.html and dist/today.html.
+    function riyadhDateKeyClient(value) {
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return '';
+      return new Intl.DateTimeFormat('en-CA', { year:'numeric', month:'2-digit', day:'2-digit', timeZone:'Asia/Riyadh' }).format(date);
+    }
+    function isMultiDayEventClient(event) {
+      const startKey = riyadhDateKeyClient(event.starts_at);
+      const endKey = riyadhDateKeyClient(event.ends_at);
+      if (!startKey || !endKey) return false;
+      return startKey !== endKey;
+    }
+    function shortDateLabelClient(value) {
+      const date = new Date(value);
+      return Number.isNaN(date.getTime()) ? '' : date.toLocaleDateString('ar-SA', { day:'numeric', month:'long', timeZone:'Asia/Riyadh' });
+    }
+    function multiDayRangeLabel(event) {
+      if (!isMultiDayEventClient(event)) return '';
+      const startLabel = shortDateLabelClient(event.starts_at);
+      const endLabel = shortDateLabelClient(event.ends_at);
+      if (!startLabel || !endLabel) return '';
+      return 'من ' + startLabel + ' إلى ' + endLabel;
+    }
+
     function eventState(event) {
       const now = Date.now();
       const start = new Date(event.starts_at).getTime();
@@ -888,14 +917,21 @@
         controls.grid.innerHTML = '<div class="empty">لا توجد فعاليات في هذا العرض.<br /><br /><a href="./index.html">استعراض الفعاليات</a></div>';
         return;
       }
-      controls.grid.innerHTML = visible.map((event) =>
-        '<article class="event-card">' +
-          '<div class="label">' + escapeHTML(event.city || '') + ' | ' + escapeHTML(fmtDate(event.starts_at)) + '</div>' +
+      controls.grid.innerHTML = visible.map((event) => {
+        const savedState = eventState(event);
+        // WO-7: this view can include ended events (the "ended"/"all"
+        // tabs), which stay archival and out of scope — the range only
+        // replaces the bare start-date meta while the record isn't ended.
+        const cardDateText = savedState !== 'ended' && multiDayRangeLabel(event) ? multiDayRangeLabel(event) : fmtDate(event.starts_at);
+        return (
+        '<article class="event-card" data-event-start="' + escapeHTML(event.starts_at || '') + '" data-event-end="' + escapeHTML(event.ends_at || event.starts_at || '') + '" data-event-status="' + escapeHTML(savedState) + '">' +
+          '<div class="label">' + escapeHTML(event.city || '') + ' | ' + escapeHTML(cardDateText) + '</div>' +
           '<h2>' + escapeHTML(event.title) + '</h2>' +
           '<p>' + escapeHTML([event.organizer, event.venue, event.category].filter(Boolean).join(' | ')) + '</p>' +
           '<div class="actions"><a class="primary" href="' + escapeHTML(event.live_url || event.detail_url || './index.html') + '">فتح</a><a href="' + escapeHTML(event.calendar_url || './events.ics') + '">تقويم</a><a href="' + escapeHTML(event.directions_url || '#') + '" target="_blank" rel="noopener noreferrer">الاتجاهات</a><button type="button" data-remove="' + escapeHTML(event.id) + '">إزالة</button></div>' +
         '</article>'
-      ).join('');
+        );
+      }).join('');
     }
 
     document.querySelectorAll('[data-view]').forEach((button) => {

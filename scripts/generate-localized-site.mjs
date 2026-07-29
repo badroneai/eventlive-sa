@@ -170,7 +170,16 @@ const runtimeLiteralMap = {
   'ينتهي بعد ': 'Ends in ',
   'انتهت منذ ': 'Ended ',
   'تصفية وترتيب': 'Filter and sort',
-  'التفاصيل والتفعيل': 'Details and activation'
+  'التفاصيل والتفعيل': 'Details and activation',
+  // WO-7: the multi-day range label built client-side in dist/events.html,
+  // dist/today.html, and dist/my-events.html composes "من X إلى Y" from
+  // separate literal fragments (the X/Y dates are only known at runtime,
+  // so they can't be one translatable text node the way homeEventCard's
+  // server-rendered range is). These two fragments are the literal AST
+  // nodes rewriteRuntimeLiterals() sees; keep the exact spacing in sync
+  // with multiDayRangeLabel() in all three shells.
+  'من ': 'From ',
+  ' إلى ': ' to '
 };
 
 function latinDigits(value = '') {

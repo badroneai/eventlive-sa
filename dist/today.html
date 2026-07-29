@@ -854,6 +854,35 @@
       return Number.isNaN(date.getTime()) ? String(iso || '-') : date.toLocaleString('ar-SA', { dateStyle:'medium', timeStyle:'short' });
     }
 
+    // WO-7: single-source multi-day predicate + range label for this
+    // page's client-rendered cards, ported by hand from
+    // scripts/event-date-range.mjs (no bundler on this page, so it can't
+    // be imported directly — see WO-3's riyadhDayKey precedent below).
+    // Keep this in sync with the module and with the matching copies in
+    // dist/events.html and dist/my-events.html.
+    function riyadhDateKeyClient(value) {
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return '';
+      return new Intl.DateTimeFormat('en-CA', { year:'numeric', month:'2-digit', day:'2-digit', timeZone:'Asia/Riyadh' }).format(date);
+    }
+    function isMultiDayEventClient(event) {
+      const startKey = riyadhDateKeyClient(event.starts_at);
+      const endKey = riyadhDateKeyClient(event.ends_at);
+      if (!startKey || !endKey) return false;
+      return startKey !== endKey;
+    }
+    function shortDateLabelClient(value) {
+      const date = new Date(value);
+      return Number.isNaN(date.getTime()) ? '' : date.toLocaleDateString('ar-SA', { day:'numeric', month:'long', timeZone:'Asia/Riyadh' });
+    }
+    function multiDayRangeLabel(event) {
+      if (!isMultiDayEventClient(event)) return '';
+      const startLabel = shortDateLabelClient(event.starts_at);
+      const endLabel = shortDateLabelClient(event.ends_at);
+      if (!startLabel || !endLabel) return '';
+      return 'من ' + startLabel + ' إلى ' + endLabel;
+    }
+
     function formatRemaining(ms) {
       const totalMinutes = Math.max(0, Math.ceil(ms / 60000));
       const days = Math.floor(totalMinutes / 1440);
@@ -908,11 +937,16 @@
     function renderCard(event, priority) {
       const status = event.runtime_status;
       const readyLabel = event.live_schedule_ready ? 'جدول حي جاهز' : 'يحتاج تفعيل';
-      return '<article class="event-card' + (priority ? ' priority' : '') + '">' +
+      // WO-7: renderCard only ever receives sortedActionable() rows, which
+      // already exclude status.key === 'ended', so the range can apply
+      // unconditionally here — it still replaces (never duplicates) the
+      // bare start-date meta.
+      const cardDateText = multiDayRangeLabel(event) || fmtDate(event.starts_at);
+      return '<article class="event-card' + (priority ? ' priority' : '') + '" data-event-start="' + escapeHTML(event.starts_at || '') + '" data-event-end="' + escapeHTML(event.ends_at || event.starts_at || '') + '" data-event-status="' + escapeHTML(status.key) + '">' +
         '<div class="chips"><span class="chip ' + escapeHTML(status.key) + '">' + escapeHTML(status.label) + '</span>' +
         (event.saved ? '<span class="chip saved">محفوظة</span>' : '') +
         '<span class="chip">' + escapeHTML(readyLabel) + '</span></div>' +
-        '<div class="label">' + escapeHTML(event.city || '') + ' | ' + escapeHTML(fmtDate(event.starts_at)) + '</div>' +
+        '<div class="label">' + escapeHTML(event.city || '') + ' | ' + escapeHTML(cardDateText) + '</div>' +
         '<h2>' + escapeHTML(event.title) + '</h2>' +
         '<p>' + escapeHTML([event.organizer, event.venue, event.category].filter(Boolean).join(' | ')) + '</p>' +
         '<div class="meta">' + escapeHTML(status.note) + (event.next_session_title ? '<br />القادمة: ' + escapeHTML(event.next_session_title) : '') + '</div>' +
