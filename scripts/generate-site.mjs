@@ -195,6 +195,11 @@ const brandCss = `<style id="eventlive-brand-pulse">
   .site-head + .hero .board-actions .plain { flex:1; display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:7px 8px; border-radius:9px; text-align:center; font-size:12.5px; }
   .site-head + .hero .board-actions .plain { border:1px solid rgba(255,255,255,.18); }
   .site-head + .hero .board-stats { display:none; }
+  .site-head + .hero .board-live-track { min-height:100px; }
+  .site-head + .hero .board-live-card h2 { font-size:16px; line-height:1.3; margin-bottom:2px; max-height:2.6em; }
+  .site-head + .hero .board-live-nav { gap:6px; margin-top:8px; padding-top:8px; }
+  .site-head + .hero .board-live-arrow { font-size:16px; }
+  .site-head + .hero .board-live-dots { gap:1px; }
   .card-row {
     scroll-padding-inline:16px;
     overscroll-behavior-inline:contain;
