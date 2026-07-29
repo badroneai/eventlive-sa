@@ -217,6 +217,8 @@ function translateText(value = '', depth = 0) {
     [/^(\d+)\s*ساعة$/u, '$1 hr'],
     [/^(\d+)\s*دقيقة$/u, '$1 min'],
     [/^(\d+)\s*فعالية$/u, '$1 events'],
+    [/^(\d+)\s*فعاليات$/u, '$1 events'],
+    [/^عرض الفعالية رقم\s*(\d+)$/u, 'Show event $1'],
     [/^(\d+)\s*جلسة في الجدول$/u, '$1 sessions in the schedule'],
     [/^(\d+)\s*جلسات في الجدول$/u, '$1 sessions in the schedule'],
     [/^·\s*فعالية$/u, '· event'],
