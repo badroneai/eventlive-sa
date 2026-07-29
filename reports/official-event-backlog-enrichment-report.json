@@ -1,12 +1,33 @@
 {
-  "generated_at": "2026-07-29T05:24:46.719Z",
+  "generated_at": "2026-07-29T05:51:15.013Z",
   "totals": {
-    "targets": 0,
-    "enriched": 0,
-    "fetched": 0,
-    "images": 0,
+    "targets": 2,
+    "enriched": 2,
+    "fetched": 2,
+    "images": 2,
     "fetch_failures": 0
   },
-  "enriched": [],
+  "enriched": [
+    {
+      "id": "event-دبلوم-الإدارة-المكتبية",
+      "title": "دبلوم الإدارة المكتبية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41037",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-دبلوم-التحول-الرقمي",
+      "title": "دبلوم التحول الرقمي",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41038",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    }
+  ],
   "failed": []
 }

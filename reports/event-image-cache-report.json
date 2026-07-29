@@ -1,18 +1,25 @@
 {
-  "generated_at": "2026-07-29T05:25:36.374Z",
+  "generated_at": "2026-07-29T05:52:05.212Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 768,
-    "fetched": 0,
-    "reused": 497,
+    "cached_total": 769,
+    "fetched": 1,
+    "reused": 496,
     "failed": 3,
     "skipped_recent_failures": 3,
     "remembered_failures": 6
   },
-  "fetched": [],
+  "fetched": [
+    {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvbW50ay1tc2hnYWF5bi1rYXMtYWxhYWFsbS5qcGc/mntk-mshgaayn-kas-alaaalm.jpg?w=1024&fm=webp&s=6ce8534121d7582071ed21e4ededdf49",
+      "file": "dist/assets/event-images/منطقة-مشجعي-كأس-العالم-2026-1a0ef74662.webp",
+      "bytes": 25362,
+      "events": 1
+    }
+  ],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -612,7 +619,7 @@
     {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "events": 11
+      "events": 13
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5d9089ccc5309c4c20ca0c1099df3ab1.jpg",
@@ -2493,11 +2500,6 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2d31aad00d0d3e0df84bbd1e595de182.jpg",
       "file": "dist/assets/event-images/spotlight-on-korean-cinema-group-3-164be6d12e.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2f01fa3711992cfcb94a21aa94d75878.jpg",
-      "file": "dist/assets/event-images/documentary-competition-group-1-cd02826ba8.jpg",
-      "events": 1
     }
   ],
   "rejected_removed": [],
@@ -2554,6 +2556,8 @@
       "skipped": true
     }
   ],
-  "requires_rebuild": false,
-  "rebuild_reasons": []
+  "requires_rebuild": true,
+  "rebuild_reasons": [
+    "fetched:1"
+  ]
 }

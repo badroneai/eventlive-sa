@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T05:25:37.356Z",
+  "generated_at": "2026-07-29T05:52:17.216Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,10 +11,10 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-07-29T05:16:55.334Z",
+    "collected_at": "2026-07-29T05:43:24.871Z",
     "freshness": "fresh",
     "discovered": 320,
-    "written": 557
+    "written": 559
   },
   "sources": {
     "total": 88,
@@ -1011,7 +1011,7 @@
         "zero_yield_streak": 0,
         "last_attempted_at": null,
         "extracted": 9,
-        "candidates": 14,
+        "candidates": 16,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -1179,28 +1179,28 @@
     ]
   },
   "queue": {
-    "total": 557,
+    "total": 559,
     "ready_for_review": 8,
     "approved_for_catalog": 0,
-    "published_from_candidates": 523,
+    "published_from_candidates": 525,
     "actionable": 8,
     "stale_unpublished": 0,
     "duplicate_risk": 6,
     "needs_extraction": 0,
     "needs_evidence": 26,
     "by_review_status": {
-      "approved-for-catalog": 523,
+      "approved-for-catalog": 525,
       "ready-for-review": 8,
       "evidence-captured": 18,
       "new": 8
     },
     "by_publication_gate": {
-      "catalog-review": 523,
+      "catalog-review": 525,
       "duplicate-review": 8,
       "source-evidence": 26
     },
     "by_confidence": {
-      "official": 517,
+      "official": 519,
       "public-listing": 21,
       "verified-secondary": 11,
       "unverified": 8
@@ -1226,7 +1226,7 @@
       "Najran Municipality Summer Events": 1,
       "King Abdulaziz University Events": 3,
       "Jouf University Summer Programs": 1,
-      "Umm Al-Qura University Events Center": 14,
+      "Umm Al-Qura University Events Center": 16,
       "Ithra Events": 78,
       "MDLBEAST Events": 5,
       "Future Skills MCIT Catalogue": 3,

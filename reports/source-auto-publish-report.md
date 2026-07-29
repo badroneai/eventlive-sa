@@ -1,10 +1,10 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-29T05:23:37.630Z
+- published_at: 2026-07-29T05:50:11.182Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 557
-- published_new: 0
+- candidates_seen: 559
+- published_new: 2
 - linked_existing: 517
 - blocked_remaining: 40
 - duplicate_review_alerts: 8
@@ -25,6 +25,8 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
+| candidate-umm-al-qura-events-دبلوم-الإدارة-المكتبية-20270101-91502b5d | published | event-دبلوم-الإدارة-المكتبية | دبلوم الإدارة المكتبية |
+| candidate-umm-al-qura-events-دبلوم-التحول-الرقمي-20271201-5cace3ad | published | event-دبلوم-التحول-الرقمي | دبلوم التحول الرقمي |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |

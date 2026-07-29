@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-29T05:32:03.738Z",
+  "generated_at": "2026-07-29T05:58:05.792Z",
   "entries": {
     "1f91543d6769d9abda47f221ba86f9f9ebf27443": {
       "source": "Skill Development Initiative",
@@ -48056,7 +48056,7 @@
       "target_lang": "en",
       "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of not less than 75%, and the equivalent of certificates is required from the Ministry of Higher Education for non-Saudi Arabian university graduates.",
       "method": "argos-mt",
-      "translated_at": "2026-07-29T05:32:03.738Z"
+      "translated_at": "2026-07-29T05:58:05.791Z"
     },
     "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
       "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
@@ -48064,7 +48064,7 @@
       "target_lang": "en",
       "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
       "method": "argos-mt",
-      "translated_at": "2026-07-29T05:32:03.738Z"
+      "translated_at": "2026-07-29T05:58:05.792Z"
     },
     "5c6a9ff87c6cdb115664bc8a097d521eadf27f9f": {
       "source": "مركز الرياض للمعارض والمؤتمرات في ملهم",
@@ -48072,7 +48072,119 @@
       "target_lang": "en",
       "text": "The Riyadh International Convention Exhibition Center in Inspiration",
       "method": "argos-mt",
-      "translated_at": "2026-07-29T05:32:03.738Z"
+      "translated_at": "2026-07-29T05:58:05.792Z"
+    },
+    "b5dff43d6414f6e14cebf21b8c89a73f29ff1d54": {
+      "source": "دبلوم الإدارة المكتبية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Office management diploma",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T05:58:05.792Z"
+    },
+    "0d90b92f6feff3c41f114578c521f16a0f8410e6": {
+      "source": "دبلوم مشارك لمدة (عامين) رسوم البرنامج قبل القيمة المضافة: 19,000.00 ريال قيمة الضريبة المضافة:2,850.00 ريال إجمالي رسوم البرنامج: 21,850.00 ريال شامل قيمة الضريبة المضافة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Co-diploma for two years of programme fees prior to value added: 19,000.00 RV value added: 2,850.00 RPG total fees: 21,850.00 RW value added tax.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T05:58:05.792Z"
+    },
+    "8d200a696d13e8b802193da0d3593daf56b7f5c8": {
+      "source": "١ يناير ٢٠٢٧ في ٠٨:٢٢ ص إلى ٣٠ ديسمبر ٢٠٢٧ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "1 January 2027 in 80:22 p. 30 December 2027 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T05:58:05.792Z"
+    },
+    "2b8c32ad8789bd04339908a629df36b632329ebc": {
+      "source": "الفعالية: دبلوم الإدارة المكتبية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Office management diploma",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T05:58:05.792Z"
+    },
+    "98b36138e59d545b34c27a5dbd8b77d016dadc1a": {
+      "source": "النافذة الزمنية: ١ يناير ٢٠٢٧ في ٠٨:٢٢ ص إلى ٣٠ ديسمبر ٢٠٢٧ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 1 January 2027 in 80:22 to 30 December 2027 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T05:58:05.792Z"
+    },
+    "91967df80d87a3bb9c59104735df612fe5ff7af8": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41037",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مطروحة: https://uqu.edu.sa/App/Events/41037",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T05:58:05.792Z"
+    },
+    "a7567e22628765946ce97e15f801e089c6e4a81f": {
+      "source": "الموعد: ١ يناير ٢٠٢٧ في ٠٨:٢٢ ص إلى ٣٠ ديسمبر ٢٠٢٧ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 1 January 2027 at 80:22 to 30 December 2027 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T05:58:05.792Z"
+    },
+    "16e848568b9b7212319abd016223e7a51de83146": {
+      "source": "دبلوم التحول الرقمي",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Digital transition diploma",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T05:58:05.792Z"
+    },
+    "b700ffdd0ad65a3e55388e8659b56fb6e1bcab32": {
+      "source": "دبلوم مشارك لمدة (عامين) رسوم البرنامج قبل القيمة المضافة: 22,800.00 ريال قيمة الضريبة المضافة:3,420.00 ريال إجمالي رسوم البرنامج: 26,220.00 ريال شامل قيمة الضريبة المضافة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Co-diploma (two years) of programme fees prior to value added: 22,800.00 RV value added: 3,420.00 LL total programme fees: 26,220.00 YR, total value added tax.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T05:58:05.792Z"
+    },
+    "bcd219cef623892b0f250a822a2f9e54b801d5e6": {
+      "source": "١ ديسمبر ٢٠٢٧ في ٠٨:٢٨ ص إلى ١ ديسمبر ٢٠٢٧ في ١٠:٢٨ ص",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "1 December 2027 at 80:28 p. 1 December 2027 at 10:28 p.m.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T05:58:05.792Z"
+    },
+    "db364313d81332002acf47e5ebceb12e0ce84c28": {
+      "source": "الفعالية: دبلوم التحول الرقمي",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Digital Change Diploma",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T05:58:05.792Z"
+    },
+    "2106a46dfd4e2753a820400bd51f99d07e3eea88": {
+      "source": "النافذة الزمنية: ١ ديسمبر ٢٠٢٧ في ٠٨:٢٨ ص إلى ١ ديسمبر ٢٠٢٧ في ١٠:٢٨ ص",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 1 December 2027 at 80:28 p. 1 December 2027 at 10:28 p.m.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T05:58:05.792Z"
+    },
+    "5009c9562a64ad9e34c81ce0772fc52af8de9776": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41038",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المطالعة: https://uqu.edu.sa/App/Events/41038",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T05:58:05.792Z"
+    },
+    "ff607d53740d7809205e21766a7a5642fcfe4098": {
+      "source": "الموعد: ١ ديسمبر ٢٠٢٧ في ٠٨:٢٨ ص إلى ١ ديسمبر ٢٠٢٧ في ١٠:٢٨ ص",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 1 December 2027 at 80:28 p. 1 December 2027 at 10:28 p.m.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-29T05:58:05.792Z"
     }
   }
 }
