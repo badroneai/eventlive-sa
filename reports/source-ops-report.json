@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T07:04:34.114Z",
+  "generated_at": "2026-07-29T07:42:54.713Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-07-29T06:53:32.765Z",
+    "collected_at": "2026-07-29T07:32:32.590Z",
     "freshness": "fresh",
-    "discovered": 317,
+    "discovered": 320,
     "written": 559
   },
   "sources": {
     "total": 88,
-    "attempted": 20,
-    "due": 20,
-    "deferred": 28,
+    "attempted": 19,
+    "due": 19,
+    "deferred": 29,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 23,
+    "registry_collection_coverage_pct": 22,
     "scheduled_runnable_coverage_pct": 100,
     "healthy": 19,
-    "zero_yield": 1,
+    "zero_yield": 0,
     "errors": 0,
-    "cadence_deferred": 28,
+    "cadence_deferred": 29,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -679,13 +679,16 @@
         "id": "riyadh-city-events",
         "name": "Riyadh City Events",
         "priority": 51,
-        "status": "zero-yield",
+        "status": "deferred",
+        "historical_status": "probe-blocked",
+        "cadence_reason": "error-cooldown",
+        "next_due_at": "2026-07-29T12:53:32.765Z",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "last_attempted_at": "2026-07-29T06:53:32.765Z",
         "extracted": 0,
         "candidates": 79,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "next_action": "مؤجل حتى 2026-07-29T12:53:32.765Z وفق الجدولة التكيفية."
       },
       {
         "id": "monshaat-academy-programs",
@@ -1124,7 +1127,7 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 60,
+        "extracted": 63,
         "candidates": 68,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },

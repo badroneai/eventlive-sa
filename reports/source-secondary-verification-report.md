@@ -1,6 +1,6 @@
 # EventLive Source Secondary Verification Report
 
-- generated_at: 2026-07-29T07:02:20.871Z
+- generated_at: 2026-07-29T07:40:12.188Z
 - candidates_seen: 559
 - candidates_considered: 34
 - promoted: 0

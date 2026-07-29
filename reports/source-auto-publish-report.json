@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-07-29T07:02:21.060Z",
+  "published_at": "2026-07-29T07:40:12.378Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -1132,12 +1132,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260729-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260729-ada8b9db",
       "event_id": "event-childrens-museum-story-time",
       "title": "Children's Museum Story Time",
@@ -1147,6 +1141,12 @@
       "candidate_id": "candidate-ithra-events-childrens-art-studio-20260729-2bf92d17",
       "event_id": "event-childrens-art-studio",
       "title": "Children's Art Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260729-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
       "reason": "already linked to catalog event"
     },
     {

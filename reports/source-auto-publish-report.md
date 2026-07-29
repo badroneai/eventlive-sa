@@ -1,6 +1,6 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-29T07:02:21.060Z
+- published_at: 2026-07-29T07:40:12.378Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 559
@@ -186,9 +186,9 @@
 | candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260729-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
 | candidate-ithra-events-echoes-of-the-familiar-20260729-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-ithra-events-summer-youth-program-20260729-a20f7a11 | linked-existing | event-summer-youth-program | already linked to catalog event |
-| candidate-ithra-events-spot-of-inspiration-20260729-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
 | candidate-ithra-events-childrens-museum-story-time-20260729-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-childrens-art-studio-20260729-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
+| candidate-ithra-events-spot-of-inspiration-20260729-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
 | candidate-ithra-events-emboss-printing-experience-20260729-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-ithra-events-energy-lab-20260729-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
 | candidate-ithra-events-energy-in-motion-20260729-e0404048 | linked-existing | event-energy-in-motion | already linked to catalog event |
