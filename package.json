@@ -255,6 +255,7 @@
     "test:live-operational-feeds": "node scripts/live-operational-feeds-regression-test.mjs",
     "test:public-transparency-feeds": "node scripts/public-transparency-feeds-regression-test.mjs",
     "test:screen-fallback": "node scripts/screen-fallback-regression-test.mjs",
+    "test:event-priority": "node scripts/event-priority-regression-test.mjs",
     "test:mt-glossary": "node scripts/mt-glossary-regression-test.mjs"
   },
   "dependencies": {

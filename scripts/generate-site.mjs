@@ -20,6 +20,7 @@ const contentProseStats = { events: 0, translated: 0, leaks: 0, eventsWithLeaks:
 import { normalizeSaudiCity } from './city-utils.mjs';
 import { createContentTranslator } from './content-translation-cache.mjs';
 import { classifyEventKind, eventKindLabel, getEventStatus } from './event-kind-utils.mjs';
+import { compareAttendancePriority } from './event-priority.mjs';
 import {
   eventAccessIsFree,
   eventOfferJsonLd,
@@ -28,6 +29,7 @@ import {
 } from './event-structured-data-utils.mjs';
 import { isLikelyImageAssetUrl, isRejectedImageAssetUrl, isSourcePageLikeImageUrl } from './image-asset-utils.mjs';
 import { OWNER_ONLY_PAGES, ownerOnlyLinkRegex } from './owner-only-pages.mjs';
+import { riyadhDateKey } from './riyadh-date-utils.mjs';
 import { buildIndexNowDelta, mergeIndexNowBatchUrls, reconcileSeoPageState } from './seo-discovery-utils.mjs';
 import { coordinatesQuery, resolveVenueLocation } from './venue-location-utils.mjs';
 
@@ -2342,7 +2344,12 @@ function writeTemporalPages(events) {
 
   const now = Date.now();
   const thisWeekEvents = eventsForWindow(events, now, 24 * 7);
-  const todayEvents = eventsForWindow(events, now, 72);
+  // Unified attendance-priority rule (WO-3): the 72h window is chronological
+  // by construction (eventsForWindow -> sortEventsByStart), then re-ordered
+  // with the shared comparator so a multi-day event only leads on its own
+  // first day. today-events.html's "الأقرب الآن" focus box picks
+  // todayEvents[0], so this ordering also fixes that surface.
+  const todayEvents = [...eventsForWindow(events, now, 72)].sort((a, b) => compareAttendancePriority(a, b, now));
   writeText(path.join(distDir, 'today-events.json'), `${JSON.stringify({
     generated_at: buildAt,
     platform: platformName,
@@ -5305,19 +5312,6 @@ function compactLiveEvent(event, referenceMs = Date.now()) {
   };
 }
 
-function attendancePriority(event, referenceMs = Date.now()) {
-  const start = dateValue(event.starts_at)?.getTime() || Number.POSITIVE_INFINITY;
-  const end = dateValue(event.ends_at || event.starts_at)?.getTime() || start;
-  const minutesToStart = Math.round((start - referenceMs) / 60000);
-  const minutesToEnd = Math.round((end - referenceMs) / 60000);
-  let score = 0;
-  if (event.status === 'live') score += 100000000;
-  if (event.status === 'ongoing') score += 70000000;
-  if (event.live_schedule_ready) score += 50000000;
-  if (event.status === 'upcoming' && minutesToStart >= 0) score += Math.max(0, 30000000 - minutesToStart);
-  if (event.status !== 'ended' && minutesToEnd >= 0) score += Math.max(0, 1000000 - Math.abs(minutesToStart));
-  return score;
-}
 
 function activationPriority(event, referenceMs = Date.now()) {
   const start = dateValue(event.starts_at)?.getTime();
@@ -5569,10 +5563,13 @@ function writeLiveOperationalFeeds(events) {
       ...compactLiveEvent(event, referenceMs),
       action_url: event.live_schedule_ready ? (event.detail_url || './event.html') : (event.detail_url || './events.html'),
       action_label: event.live_schedule_ready ? 'فتح الجدول الحي' : 'فتح بطاقة الفعالية',
-      priority_reason: event.live_schedule_ready ? 'أقرب جدول حي جاهز' : 'فعالية قادمة تحتاج متابعة',
-      priority_score: attendancePriority(event, referenceMs)
+      priority_reason: event.live_schedule_ready ? 'أقرب جدول حي جاهز' : 'فعالية قادمة تحتاج متابعة'
     }))
-    .sort((a, b) => b.priority_score - a.priority_score || (a.minutes_to_start ?? 999999) - (b.minutes_to_start ?? 999999));
+    // Unified attendance-priority rule (WO-3): a multi-day event only leads
+    // on its own first day; from day 2 onward it yields to anything
+    // starting today. See scripts/event-priority.mjs.
+    .sort((a, b) => compareAttendancePriority(a, b, referenceMs));
+  queue.forEach((event, index) => { event.priority_score = queue.length - index; });
   const focus = queue[0] || null;
   writeJson('live-status.json', {
     generated_at: buildAt,
@@ -5970,17 +5967,6 @@ function enhanceHomeRuntime(html, events) {
   return next.replace(/<\/body>/i, `<script id="eventlive-runtime-clock">${liveRuntimeScript().replace(/^<script>|<\/script>$/g, '')}</script>\n</body>`);
 }
 
-function riyadhDateKey(value) {
-  const date = value instanceof Date ? value : new Date(value);
-  if (Number.isNaN(date.getTime())) return '';
-  return new Intl.DateTimeFormat('en-CA', {
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit',
-    timeZone: 'Asia/Riyadh'
-  }).format(date);
-}
-
 function homeTimelineSection({ id, windowName, title, description, events, href, linkLabel }) {
   const cards = events.slice(0, 8).map((event) => homeEventCard(event)).join('\n');
   const content = cards || `<p class="empty-state">لا توجد فعاليات مؤكدة في هذه النافذة حتى الآن. <a href="${href}">استعرض أقرب الفعاليات</a>.</p>`;
@@ -6007,14 +5993,20 @@ function patchHomePage(events) {
   const todayKey = riyadhDateKey(now);
   const tomorrowKey = riyadhDateKey(now + (24 * 60 * 60 * 1000));
   const weekLimit = now + (7 * 24 * 60 * 60 * 1000);
-  const todayEvents = sortEventsByStart(upcoming.filter((event) => {
+  // Unified attendance-priority rule (WO-3): sort `upcoming` once with the
+  // shared comparator and reuse it everywhere on this page that needs to
+  // know "which event leads" — the today window, the hero board's top
+  // pick, and the ticker all derive from this single ordering instead of
+  // each rolling its own priority logic.
+  const prioritized = [...upcoming].sort((a, b) => compareAttendancePriority(a, b, now));
+  const todayEvents = prioritized.filter((event) => {
     const start = dateValue(event.starts_at)?.getTime();
     const end = dateValue(event.ends_at || event.starts_at)?.getTime();
     if (!Number.isFinite(start)) return false;
     const startsToday = riyadhDateKey(start) === todayKey;
     const liveMoment = event.event_kind !== 'program' && start <= now && (!Number.isFinite(end) || end >= now);
     return startsToday || liveMoment;
-  }));
+  });
   const usedIds = new Set(todayEvents.map((event) => event.id));
   const tomorrowEvents = sortEventsByStart(upcoming.filter((event) => {
     if (usedIds.has(event.id)) return false;
@@ -6026,7 +6018,7 @@ function patchHomePage(events) {
     const start = dateValue(event.starts_at)?.getTime();
     return Number.isFinite(start) && start > now && start <= weekLimit;
   }));
-  const nextEvent = upcoming.find((event) => dateValue(event.starts_at)?.getTime() > now) || upcoming[0] || events[0];
+  const nextEvent = prioritized[0] || events[0];
   const timelineSections = [
     homeTimelineSection({ id: 'soon', windowName: 'today', title: 'اليوم في السعودية', description: 'فعالية تبدأ اليوم أو تجري الآن', events: todayEvents, href: './today-events.html', linkLabel: 'كل فعاليات اليوم' }),
     homeTimelineSection({ id: 'tomorrow', windowName: 'tomorrow', title: 'غدًا', description: 'فعالية تبدأ غدًا', events: tomorrowEvents, href: './saudi-events-tomorrow.html', linkLabel: 'كل فعاليات الغد' }),
@@ -6052,13 +6044,10 @@ function patchHomePage(events) {
       name: event.title
     }))
   };
-  const tickerLiveMoments = upcoming.filter((event) => {
-    const start = dateValue(event.starts_at)?.getTime();
-    const end = dateValue(event.ends_at || event.starts_at)?.getTime();
-    return event.event_kind !== 'program' && Number.isFinite(start) && start <= now && (!Number.isFinite(end) || end >= now);
-  });
-  const tickerFuture = upcoming.filter((event) => (dateValue(event.starts_at)?.getTime() || 0) > now);
-  const ticker = [...new Set([...tickerLiveMoments, ...tickerFuture, ...upcoming])].slice(0, 120).map(homeTickerEvent);
+  // `prioritized` already orders every non-ended event by the unified
+  // attendance-priority rule (WO-3), so the ticker is just that ordering,
+  // capped to 120 rows — no separate live/future bucketing needed.
+  const ticker = prioritized.slice(0, 120).map(homeTickerEvent);
   const searchData = events.map(homeSearchEvent);
   let next = html
     .replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">${JSON.stringify(itemList)}</script>`)
@@ -7079,6 +7068,67 @@ function externalizeTodayEventsPayload(html) {
 
     loadTodayEvents();
     setInterval(render, 30000);`
+    )
+    // Unified attendance-priority rule (WO-3): today.html's own client-side
+    // ranking ("سطح الأولوية الآن") used to be a third, independent
+    // implementation (saved-bias, then live-only bias, then raw distance)
+    // that never implemented "first day leads, ongoing yields to new" and
+    // could re-order events out of the priority sequence today.json already
+    // ships. This is a static page with no client bundler, so the shared
+    // algorithm from scripts/event-priority.mjs is intentionally ported to
+    // vanilla JS here — keep the two in sync, do not diverge.
+    .replace(
+      `    function sortedActionable(rows) {
+      return rows
+        .filter((event) => event.runtime_status.key !== 'ended')
+        .sort((a, b) => {
+          const savedBias = Number(b.saved) - Number(a.saved);
+          if (savedBias) return savedBias;
+          const liveBias = Number(b.runtime_status.key === 'live') - Number(a.runtime_status.key === 'live');
+          if (liveBias) return liveBias;
+          return a.runtime_status.distance - b.runtime_status.distance;
+        });
+    }`,
+      `    function riyadhDayKey(ms) {
+      return new Intl.DateTimeFormat('en-CA', { year: 'numeric', month: '2-digit', day: '2-digit', timeZone: 'Asia/Riyadh' }).format(new Date(ms));
+    }
+
+    function attendancePriorityRank(event) {
+      const now = Date.now();
+      const start = new Date(event.starts_at).getTime();
+      const hasStart = !Number.isNaN(start);
+      const endRaw = new Date(event.ends_at || event.starts_at).getTime();
+      const end = Number.isNaN(endRaw) ? start : endRaw;
+      const startsToday = hasStart && riyadhDayKey(start) === riyadhDayKey(now);
+      const live = event.runtime_status.key !== 'ended' && hasStart && start <= now && (Number.isNaN(end) ? start : end) >= now;
+      const safeStart = hasStart ? start : Number.POSITIVE_INFINITY;
+      const safeEnd = Number.isNaN(end) ? Number.POSITIVE_INFINITY : end;
+      if (startsToday) return { group: 1, live: live, start: safeStart };
+      if (live) return { group: 2, end: safeEnd };
+      return { group: 3, start: safeStart };
+    }
+
+    function compareAttendancePriority(a, b) {
+      const rankA = attendancePriorityRank(a);
+      const rankB = attendancePriorityRank(b);
+      if (rankA.group !== rankB.group) return rankA.group - rankB.group;
+      if (rankA.group === 1) {
+        if (Boolean(rankA.live) !== Boolean(rankB.live)) return rankA.live ? -1 : 1;
+        return rankA.start - rankB.start;
+      }
+      if (rankA.group === 2) return rankA.end - rankB.end;
+      return rankA.start - rankB.start;
+    }
+
+    function sortedActionable(rows) {
+      return rows
+        .filter((event) => event.runtime_status.key !== 'ended')
+        .sort((a, b) => {
+          const savedBias = Number(b.saved) - Number(a.saved);
+          if (savedBias) return savedBias;
+          return compareAttendancePriority(a, b);
+        });
+    }`
     );
   return next;
 }
