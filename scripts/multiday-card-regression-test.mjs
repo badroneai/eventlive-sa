@@ -252,6 +252,10 @@ function fixtureEvent(overrides) {
   };
 }
 
+// Deliberately different start times (not just different end times) so the
+// fixture cards can be told apart by their data-event-start attribute alone
+// once rendered — two cards sharing an identical start would make the
+// find()-by-start lookups below ambiguous.
 const multiDayUpcoming = fixtureEvent({
   id: 'fixture-multiday-upcoming',
   title: 'Fixture Multi-Day Upcoming',
@@ -263,8 +267,8 @@ const multiDayUpcoming = fixtureEvent({
 const singleDayUpcoming = fixtureEvent({
   id: 'fixture-singleday-upcoming',
   title: 'Fixture Single-Day Upcoming',
-  starts_at: new Date(NOW + 5 * DAY_MS).toISOString(),
-  ends_at: new Date(NOW + 5 * DAY_MS + 3 * 60 * 60 * 1000).toISOString(),
+  starts_at: new Date(NOW + 12 * DAY_MS).toISOString(),
+  ends_at: new Date(NOW + 12 * DAY_MS + 3 * 60 * 60 * 1000).toISOString(),
   status: 'upcoming',
   status_label: 'قادمة'
 });
@@ -283,10 +287,11 @@ async function runBrowserFixtures() {
   const browser = await chromium.launch();
   const results = {};
   try {
-    // events.html: mock the events.json fetch with our fixture rows.
+    // events.html: mock the events-catalog.json fetch with our fixture
+    // rows (the page's own eventsFeedUrl constant — not events.json).
     {
       const page = await browser.newPage();
-      await page.route('**/events.json', (route) => route.fulfill({
+      await page.route('**/events-catalog.json', (route) => route.fulfill({
         status: 200,
         contentType: 'application/json',
         body: JSON.stringify({
