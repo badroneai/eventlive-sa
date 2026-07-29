@@ -6,20 +6,21 @@
 // Add a page here once and every owner-only surface picks it up
 // automatically. Do not hand-roll a second list anywhere else.
 //
-// WO-4 scope note: source-coverage-gaps.html, regions.html, readiness.html
-// and activation.html were NOT added here despite being named in WO-4,
+// WO-4 scope history: source-coverage-gaps.html, regions.html,
+// readiness.html and activation.html were initially left out of this list
 // because scripts/regions-coverage-regression-test.mjs,
-// scripts/readiness-trust-regression-test.mjs (which explicitly tags
-// `{ base: 'readiness', ownerOnly: false }`),
-// scripts/source-coverage-gaps-regression-test.mjs and
-// scripts/site-launch-sweep.mjs's launchPages list all deliberately assert
-// those four pages ARE public: present in sitemap.xml, the PWA manifest
-// shortcuts, and the service-worker precache list. That is pre-existing,
-// tested, intentional product behavior from a named feature ("national
-// coverage and trust foundations" / "launch readiness"), not an accidental
-// leak — see the WO-4 PR description for the full evidence trail. Only
-// source-health.html ("fetch health") had zero contradicting test coverage
-// anywhere in the codebase, so it is the only page this fix newly hides.
+// scripts/readiness-trust-regression-test.mjs (which tagged
+// `{ base: 'readiness', ownerOnly: false }`), scripts/source-coverage-gaps-
+// regression-test.mjs and scripts/site-launch-sweep.mjs's launchPages list
+// all asserted those four pages were public. PM ruling on PR #30 review
+// (2026-07-28) overruled that prior test-encoded decision: all four are
+// operational dashboards (their own titles/descriptions self-identify as
+// such — "لوحة تشغيلية" / "لوحة EventLive التشغيلية"), the owner's original
+// complaint was specifically about these pages reaching visitors, and owner
+// directive supersedes stale test assertions. The four conflicting test
+// files above were updated in the same PR to assert the new (owner-only)
+// policy instead. source-health.html ("fetch health") was already
+// uncontested owner-only before this change.
 export const OWNER_ONLY_PAGES = new Set([
   'sources.html',
   'methodology.html',
@@ -27,6 +28,10 @@ export const OWNER_ONLY_PAGES = new Set([
   'candidates.html',
   'resolver.html',
   'source-health.html',
+  'source-coverage-gaps.html',
+  'regions.html',
+  'readiness.html',
+  'activation.html',
   'live-ops.html',
   'owner-status.html',
   'owner-search-growth.html',

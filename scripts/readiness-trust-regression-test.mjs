@@ -19,7 +19,11 @@ const manifest = fs.readFileSync(manifestPath, 'utf8');
 const serviceWorker = fs.readFileSync(serviceWorkerPath, 'utf8');
 
 for (const page of [
-  { base: 'readiness', intent: 'eventlive-operational-readiness', title: /جاهزية التشغيل/, ownerOnly: false },
+  // readiness.html was flipped to owner-only by PM ruling on PR #30 (WO-4):
+  // it is an operational dashboard ("eventlive-operational-readiness"), and
+  // the owner's original complaint was exactly this class of page reaching
+  // visitors. See scripts/owner-only-pages.mjs for the canonical list.
+  { base: 'readiness', intent: 'eventlive-operational-readiness', title: /جاهزية التشغيل/, ownerOnly: true },
   { base: 'trust', intent: 'public-trust-and-source-evidence', title: /مركز الثقة/, ownerOnly: true }
 ]) {
   const jsonPath = path.join(distDir, `${page.base}.json`);
@@ -46,6 +50,7 @@ for (const page of [
   assert.match(html, new RegExp(`${page.base}\\.json`), `${page.base}.html must link its JSON feed`);
   assert.match(html, /application\/ld\+json/, `${page.base}.html must include structured data`);
   if (page.ownerOnly) {
+    assert.match(html, /<meta name="robots" content="noindex/, `${page.base}.html is owner-only and must be noindex`);
     assert.doesNotMatch(sitemap, new RegExp(`https://eventme\\.live/${page.base}\\.html`), `${page.base}.html is owner-only and must not be in sitemap`);
     assert.doesNotMatch(manifest, new RegExp(`${page.base}\\.html`), `${page.base}.html is owner-only and must not be in the PWA manifest`);
     assert.doesNotMatch(serviceWorker, new RegExp(`"\\./${page.base}\\.html"`), `${page.base}.html is owner-only and must not be precached`);

@@ -1273,9 +1273,20 @@ function footer(relativePrefix = './') {
 // regardless of link text or relative-path depth (ban the class, not the
 // hand-written instance — see scripts/owner-only-pages.mjs).
 function hideOwnerOnlyPublicLinks(html) {
-  return String(html)
+  let next = String(html)
     .replace(ownerOnlyLinkRegex(), '')
     .replace(/<a\b[^>]*href=(["'])(?:\.\.\/|\.\/)?events\.json\1[^>]*>[\s\S]*?<\/a>/g, '');
+  // A nav "group" heading (e.g. <span class="grp">المنصة</span> in the
+  // events.html "المزيد" menu) whose links were all owner-only now has no
+  // <a> left before the next group heading or the panel's closing </div>.
+  // Strip the now-empty heading too rather than leaving a dangling label —
+  // generalized so any group, current or future, self-cleans.
+  let before;
+  do {
+    before = next;
+    next = next.replace(/<span class="grp">[^<]*<\/span>\s*(?=<span class="grp">|<\/div>)/g, '');
+  } while (next !== before);
+  return next;
 }
 
 function isOwnerOnlyPage(filePath) {
@@ -3655,7 +3666,7 @@ function writeSourceCoverageGapsPage(events) {
   const html = `<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  ${baseHead({ title: `فجوات تغطية المصادر | ${platformName}`, description: 'لوحة تشغيلية تحدد أضعف المدن والفئات والمصادر في EventLive بناء على كتالوج الفعاليات المنشور حاليًا.', canonical })}
+  ${baseHead({ title: `فجوات تغطية المصادر | ${platformName}`, description: 'لوحة تشغيلية تحدد أضعف المدن والفئات والمصادر في EventLive بناء على كتالوج الفعاليات المنشور حاليًا.', canonical, noindex: true })}
   ${operationalPageCss()}
   ${jsonLd({ '@context': 'https://schema.org', '@type': 'WebPage', inLanguage: 'ar-SA', name: 'فجوات تغطية المصادر', url: canonical, isPartOf: { '@type': 'WebSite', name: platformName, url: siteUrl }, dateModified: buildAt })}
 </head>
@@ -3819,7 +3830,7 @@ ${header('./')}
   <section class="section"><div class="wrap grid">
     <article class="activation-card"><h2>الزيارات والتحليلات</h2><p>حالة الزر: <strong>${escapeHtml(status.analytics.dashboard_status)}</strong></p><p>المزود: <strong>${escapeHtml(status.analytics.provider)}</strong></p><p>الدومين: <strong>${escapeHtml(status.analytics.domain)}</strong></p><p>الخصوصية: بدون كوكيز وبدون بيانات شخصية حسب إعدادات التقرير.</p><p><strong>${escapeHtml(analyticsStatusCopy)}</strong></p><div class="activation-actions"><a class="cta" href="${escapeHtml(analyticsDashboardHref)}" target="_blank" rel="noopener">${escapeHtml(analyticsDashboardLabel)}</a><a class="cta" href="./owner-status.json">بيانات الصفحة JSON</a></div></article>
     <article class="activation-card"><h2>الظهور في البحث والذكاءات</h2><p>الجاهزية التقنية: <strong>${escapeHtml(status.search_visibility.technical_status)}</strong></p><p>صفحات Event منظمة بالعربية والإنجليزية: <strong>${status.search_visibility.event_schema_pages}</strong></p><p>روابط تغيرت وسترسل إلى IndexNow: <strong>${status.search_visibility.indexnow_urls_queued}</strong></p><p>Search Console: <strong>${escapeHtml(status.search_visibility.google_search_console_status)}</strong></p><p>Sitemap في Google: <strong>${escapeHtml(status.search_visibility.google_sitemap_status)}</strong></p><p>صفحات اكتشفتها Google من الخريطة: <strong>${status.search_visibility.google_sitemap_discovered_pages.toLocaleString('en-US')}</strong></p><p>طلبات إعادة الفهرسة المسجلة: <strong>${status.search_visibility.google_url_inspection_requests.length}</strong></p><div class="activation-actions"><a class="cta" href="${escapeHtml(status.search_visibility.links.google_search_console)}" target="_blank" rel="noopener">Google Search Console</a><a class="cta" href="./owner-search-growth.html">فجوات المحتوى والسلطة</a><a class="cta" href="${escapeHtml(status.search_visibility.links.bing_webmaster)}" target="_blank" rel="noopener">Bing Webmaster</a><a class="cta" href="${escapeHtml(status.search_visibility.links.rich_results_test)}" target="_blank" rel="noopener">اختبار النتائج المنسقة</a><a class="cta" href="${escapeHtml(status.search_visibility.links.pagespeed)}" target="_blank" rel="noopener">PageSpeed</a></div></article>
-    <article class="activation-card"><h2>آخر جلب دوري</h2><p>آخر تقرير: <strong>${escapeHtml(status.source_sync.last_run_at || 'غير متاح')}</strong></p><p>مستحقة الآن: <strong>${status.source_sync.due_sources}</strong> · نُفذت: <strong>${status.source_sync.attempted_sources}</strong> · مؤجلة بجدولة تكيفية: <strong>${status.source_sync.deferred_sources}</strong></p><p>مصادر منتجة: <strong>${status.source_sync.productive_sources}</strong> · أخطاء هذه الدورة: <strong>${status.source_sync.collector_errors}</strong> · أخطاء متراكمة تحت المراقبة: <strong>${status.source_sync.persistent_collector_errors}</strong></p><p>الفحص العميق: <strong>${escapeHtml(status.source_sync.diagnostics_status)}</strong> · موعده التالي: <strong>${escapeHtml(status.source_sync.diagnostics_next_due_at || 'غير متاح')}</strong></p><p>مرشحون: <strong>${status.source_sync.candidates_seen}</strong> · منشور جديد: <strong>${status.source_sync.published_new}</strong> · مربوط بموجود: <strong>${status.source_sync.linked_existing}</strong></p><div class="activation-actions"><a class="cta" href="./source-health.html">صحة المصادر</a><a class="cta" href="./source-coverage-gaps.html">فجوات التغطية</a></div></article>
+    <article class="activation-card"><h2>آخر جلب دوري</h2><p>آخر تقرير: <strong>${escapeHtml(status.source_sync.last_run_at || 'غير متاح')}</strong></p><p>مستحقة الآن: <strong>${status.source_sync.due_sources}</strong> · نُفذت: <strong>${status.source_sync.attempted_sources}</strong> · مؤجلة بجدولة تكيفية: <strong>${status.source_sync.deferred_sources}</strong></p><p>مصادر منتجة: <strong>${status.source_sync.productive_sources}</strong> · أخطاء هذه الدورة: <strong>${status.source_sync.collector_errors}</strong> · أخطاء متراكمة تحت المراقبة: <strong>${status.source_sync.persistent_collector_errors}</strong></p><p>الفحص العميق: <strong>${escapeHtml(status.source_sync.diagnostics_status)}</strong> · موعده التالي: <strong>${escapeHtml(status.source_sync.diagnostics_next_due_at || 'غير متاح')}</strong></p><p>مرشحون: <strong>${status.source_sync.candidates_seen}</strong> · منشور جديد: <strong>${status.source_sync.published_new}</strong> · مربوط بموجود: <strong>${status.source_sync.linked_existing}</strong></p><div class="activation-actions"><a class="cta" href="./source-health.html">صحة المصادر</a><a class="cta" href="./source-coverage-gaps.html">فجوات التغطية</a><a class="cta" href="./regions.html">تغطية المناطق</a><a class="cta" href="./readiness.html">جاهزية التشغيل</a><a class="cta" href="./activation.html">تفعيل الجداول الحية</a></div></article>
     <article class="activation-card"><h2>اتجاه نمو الكتالوج</h2><p>حالة الدورة: <strong>${escapeHtml(status.source_sync.growth_status)}</strong></p><p>التغير العام: <strong>${escapeHtml(publicDeltaLabel)}</strong> · مرشحون جدد: <strong>${status.source_sync.new_active_candidates}</strong> · منتهية جديدة: <strong>${status.source_sync.new_ended_events}</strong></p><p>دورات متتالية بلا نمو: <strong>${status.source_sync.no_growth_streak}</strong> · فقد ناتج منشور: <strong>${status.source_sync.lost_published_output ? 'نعم' : 'لا'}</strong></p></article>
   </div></section>
   <section class="section"><div class="wrap"><h2>ماذا أراقب؟</h2>${operationalTable(['المؤشر', 'القيمة', 'متى أقلق؟'], [
@@ -3912,7 +3923,7 @@ function writeRegionsCoveragePage(events) {
   const html = `<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  ${baseHead({ title: `تغطية مناطق المملكة | ${platformName}`, description: 'لوحة EventLive لتغطية مناطق المملكة الثلاث عشرة بالفعاليات القادمة والمنتهية ومصادر الجلب.', canonical })}
+  ${baseHead({ title: `تغطية مناطق المملكة | ${platformName}`, description: 'لوحة EventLive لتغطية مناطق المملكة الثلاث عشرة بالفعاليات القادمة والمنتهية ومصادر الجلب.', canonical, noindex: true })}
   ${operationalPageCss()}
   ${jsonLd({ '@context': 'https://schema.org', '@type': 'WebPage', inLanguage: 'ar-SA', name: 'تغطية مناطق المملكة', url: canonical, isPartOf: { '@type': 'WebSite', name: platformName, url: siteUrl }, dateModified: buildAt })}
   ${jsonLd({ '@context': 'https://schema.org', '@type': 'Dataset', name: 'EventLive Saudi regions coverage', url: absoluteUrl('regions.json'), creator: { '@type': 'Organization', name: platformName }, dateModified: buildAt, variableMeasured: ['regions', 'events', 'active_events', 'ended_events'] })}
@@ -4398,7 +4409,7 @@ function writeReadinessPage(events) {
   const html = `<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  ${baseHead({ title: `جاهزية التشغيل | ${platformName}`, description: 'لوحة EventLive لقياس جاهزية الفعاليات للنشر الحي: المصدر، الاعتماد، الجلسات، الصور، ودرجة الثقة.', canonical })}
+  ${baseHead({ title: `جاهزية التشغيل | ${platformName}`, description: 'لوحة EventLive لقياس جاهزية الفعاليات للنشر الحي: المصدر، الاعتماد، الجلسات، الصور، ودرجة الثقة.', canonical, noindex: true })}
   ${operationalPageCss()}
   ${jsonLd({ '@context': 'https://schema.org', '@type': 'WebPage', inLanguage: 'ar-SA', name: 'جاهزية التشغيل', url: canonical, isPartOf: { '@type': 'WebSite', name: platformName, url: siteUrl }, dateModified: buildAt })}
   ${jsonLd({ '@context': 'https://schema.org', '@type': 'Dataset', name: 'EventLive operational readiness', url: absoluteUrl('readiness.json'), creator: { '@type': 'Organization', name: platformName }, dateModified: buildAt, variableMeasured: Object.keys(report.totals) })}
@@ -5510,7 +5521,8 @@ function writeActivationPage(report) {
   ${baseHead({
     title: `تفعيل الجداول الحية | ${platformName}`,
     description: 'لوحة EventLive التشغيلية لتحويل الفعاليات ذات نافذة الحضور إلى جداول حية تفصيلية حسب المصدر والأولوية ومسار الاستخراج التالي.',
-    canonical
+    canonical,
+    noindex: true
   })}
   <link rel="alternate" type="application/json" href="./activation.json" />
   ${operationalPageCss()}
@@ -6617,9 +6629,24 @@ function writeServiceWorker() {
     './feeds/all.json',
     './feeds/index.json'
   ];
+  // Assets that must stay precached for offline runtime continuity even
+  // though their page is owner-only, because a public page's live/offline
+  // JS reads the data at runtime independently of the owner page's own
+  // navigability: attendance.html is the visitor's own "saved events"
+  // offline dashboard (scripts/attendance-mode-offline-regression-test.mjs),
+  // and activation.json feeds the public live/today operational feeds
+  // (scripts/live-operational-feeds-regression-test.mjs) even though
+  // activation.html itself is owner-only.
+  const precacheOwnerOnlyExceptions = new Set(['attendance.html', 'activation.json']);
   const precache = coreAssets.filter((asset) => {
     if (asset === './') return true;
-    return fs.existsSync(path.join(distDir, asset.replace(/^\.\//, '')));
+    const relative = asset.replace(/^\.\//, '');
+    // Never precache an owner-only page or its JSON sibling — the precache
+    // array in sw.js is itself a public, fetchable surface (WO-4) — except
+    // the explicit runtime-continuity exceptions above.
+    const ownerOnlyName = relative.replace(/\.json$/, '.html');
+    if (!precacheOwnerOnlyExceptions.has(relative) && OWNER_ONLY_PAGES.has(ownerOnlyName)) return false;
+    return fs.existsSync(path.join(distDir, relative));
   });
   writeText(swPath, `const CACHE_NAME = 'eventlive-static-${Date.now()}';\nconst PRECACHE = ${JSON.stringify(precache, null, 2)};\n\nself.addEventListener('install', (event) => {\n  event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(PRECACHE)).then(() => self.skipWaiting()));\n});\n\nself.addEventListener('activate', (event) => {\n  event.waitUntil((async () => {\n    const keys = await caches.keys();\n    await Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)));\n    await self.clients.claim();\n  })());\n});\n\nself.addEventListener('message', (event) => {\n  if (event.data?.type !== 'CACHE_EVENT_ASSETS') return;\n  const assets = Array.isArray(event.data.assets) ? event.data.assets : [];\n  event.waitUntil((async () => {\n    const cache = await caches.open(CACHE_NAME);\n    let cached = 0;\n    for (const asset of assets) {\n      try {\n        const url = new URL(asset, self.location.href);\n        if (url.origin !== self.location.origin) continue;\n        const response = await fetch(url.href, { credentials: 'same-origin' });\n        if (!response.ok) continue;\n        await cache.put(url.href, response.clone());\n        cached += 1;\n      } catch (error) {}\n    }\n    event.ports?.[0]?.postMessage({ type: 'CACHE_EVENT_ASSETS_RESULT', cached });\n  })());\n});\n\nself.addEventListener('fetch', (event) => {\n  if (event.request.method !== 'GET') return;\n  const isNavigationRequest = event.request.mode === 'navigate' || event.request.headers.get('Accept')?.includes('text/html');\n  if (isNavigationRequest) {\n    event.respondWith(\n      fetch(event.request).then((response) => {\n        return caches.open(CACHE_NAME).then((cache) => {\n          cache.put(event.request, response.clone()).catch(() => {});\n          return response;\n        });\n      }).catch(async () => (await caches.match(event.request)) || caches.match('./index.html'))\n    );\n    return;\n  }\n\n  const url = new URL(event.request.url);\n  const isEventAsset = url.origin === self.location.origin && (\n    /\\/events\\/.+\\.(?:json|ics)$/.test(url.pathname)\n    || ['image', 'style', 'script', 'font'].includes(event.request.destination)\n  );\n  if (!isEventAsset) {\n    event.respondWith(caches.match(event.request).then((cached) => cached || fetch(event.request)));\n    return;\n  }\n  event.respondWith(caches.match(event.request).then((cached) => cached || fetch(event.request).then((response) => {\n    if (response.ok) caches.open(CACHE_NAME).then((cache) => cache.put(event.request, response.clone())).catch(() => {});\n    return response;\n  })));\n});\n`);
 }
