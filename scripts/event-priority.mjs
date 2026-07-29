@@ -65,6 +65,28 @@ export function attendancePriorityRank(event = {}, now = Date.now()) {
 }
 
 /**
+ * "Live moment" predicate (WO-1): true when an event is a currently-running
+ * MOMENT — started, not yet ended, and NOT a long-running `program`. Programs
+ * (multi-week camps, standing exhibitions, etc.) are deliberately excluded
+ * here: they are "ongoing" in the attendance-priority sense but would
+ * otherwise flood any "live now" surface (homepage board carousel, etc.)
+ * with entries that are not a meaningful "happening right now" moment.
+ *
+ * This is the single source of truth for that exclusion — every surface
+ * that needs "which events are live right now" (excluding programs) must
+ * import this instead of re-deriving the `event_kind !== 'program' && start
+ * <= now && end >= now` condition inline.
+ */
+export function isLiveMoment(event = {}, now = Date.now()) {
+  if (event?.status === 'ended') return false;
+  if (event?.event_kind === 'program') return false;
+  const { start, end } = eventWindow(event);
+  if (start === null) return false;
+  const effectiveEnd = end === null ? start : end;
+  return start <= now && effectiveEnd >= now;
+}
+
+/**
  * Comparator for Array.prototype.sort implementing the unified
  * attendance-priority rule. `now` must be the same reference instant for
  * both events being compared (pass it explicitly; do not call Date.now()

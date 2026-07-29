@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
-import { attendancePriorityRank, compareAttendancePriority } from './event-priority.mjs';
+import { attendancePriorityRank, compareAttendancePriority, isLiveMoment } from './event-priority.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -179,6 +179,85 @@ function sortByPriority(events, now = NOW) {
       'sortedActionable() drifted out from under the exact string match), so the ' +
       'pre-WO-3 saved/live-only/raw-distance sort has silently come back. Re-sync ' +
       'the .replace() target with the current dist/today.html content.'
+  );
+}
+
+// WO-1: isLiveMoment() is the single shared predicate for "which events are
+// live right now" (excluding long-running programs) — consumed both by
+// patchHomePage's `todayEvents` filter and by the homepage live-board
+// carousel's `liveEvents` filter (scripts/generate-site.mjs). Unit-test it
+// directly so the exclusion rule can never silently drift between callers.
+{
+  const liveMoment = {
+    id: 'live-moment',
+    event_kind: 'moment',
+    starts_at: new Date(NOW - 60 * 60 * 1000).toISOString(),
+    ends_at: new Date(NOW + 60 * 60 * 1000).toISOString()
+  };
+  const liveProgram = {
+    id: 'live-program',
+    event_kind: 'program',
+    starts_at: new Date(NOW - 60 * 60 * 1000).toISOString(),
+    ends_at: new Date(NOW + 60 * 60 * 1000).toISOString()
+  };
+  const notYetStarted = {
+    id: 'future',
+    event_kind: 'moment',
+    starts_at: new Date(NOW + 60 * 60 * 1000).toISOString(),
+    ends_at: new Date(NOW + 2 * 60 * 60 * 1000).toISOString()
+  };
+  const alreadyEndedWindow = {
+    id: 'ended-window',
+    event_kind: 'moment',
+    starts_at: new Date(NOW - 2 * 60 * 60 * 1000).toISOString(),
+    ends_at: new Date(NOW - 60 * 60 * 1000).toISOString()
+  };
+  const markedEnded = {
+    id: 'marked-ended',
+    event_kind: 'moment',
+    status: 'ended',
+    starts_at: new Date(NOW - 60 * 60 * 1000).toISOString(),
+    ends_at: new Date(NOW + 60 * 60 * 1000).toISOString()
+  };
+  assert.equal(isLiveMoment(liveMoment, NOW), true, 'isLiveMoment: a running non-program event must be live');
+  assert.equal(isLiveMoment(liveProgram, NOW), false, 'isLiveMoment: a running program must be excluded (it would flood any "live now" surface)');
+  assert.equal(isLiveMoment(notYetStarted, NOW), false, 'isLiveMoment: an event that has not started yet must not be live');
+  assert.equal(isLiveMoment(alreadyEndedWindow, NOW), false, 'isLiveMoment: an event whose window has closed must not be live');
+  assert.equal(isLiveMoment(markedEnded, NOW), false, 'isLiveMoment: status "ended" must override an otherwise-open window');
+  assert.equal(isLiveMoment({}, NOW), false, 'isLiveMoment: an event with no parseable start must not crash and must not be live');
+}
+
+// WO-1 built-output guard: the homepage "live now" board carousel is spliced
+// into the committed dist/index.html shell by two literal-string .replace()
+// calls in patchHomePage (scripts/generate-site.mjs) — one toggling
+// #boardSingle's `hidden` attribute, one replacing the whole
+// <section id="boardLive"> block. If the committed shell ever drifts out
+// from under either literal match, the replace silently no-ops and the
+// carousel quietly stops rendering (the homepage would fall back to
+// whatever #boardSingle/#boardLive happened to contain from a prior build).
+// Assert the structural markers survive in the built output.
+{
+  const indexHtmlPath = path.join(distDir, 'index.html');
+  assert.equal(fs.existsSync(indexHtmlPath), true, 'dist/index.html must exist; run npm run build first');
+  const indexHtml = fs.readFileSync(indexHtmlPath, 'utf8');
+
+  for (const marker of ['id="boardSingle"', 'id="boardLive"', 'id="boardLiveTrack"', 'id="boardLiveBadge"', 'board-live-card']) {
+    assert.match(
+      indexHtml,
+      new RegExp(marker.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')),
+      `dist/index.html no longer contains ${marker} — the WO-1 board-live literal-string ` +
+        '.replace() in patchHomePage (scripts/generate-site.mjs) no-oped, most likely ' +
+        'because the committed dist/index.html shell drifted out from under the exact ' +
+        'string match. Re-sync the .replace() target with the current dist/index.html content.'
+    );
+  }
+
+  assert.match(
+    indexHtml,
+    /if \(boardSingle && boardSingle\.hidden\) return;/,
+    'dist/index.html no longer guards tick() against running while the live carousel is ' +
+      'active — the single-pinned-event board could start fighting the carousel for the ' +
+      'same DOM nodes. Re-check the committed dist/index.html runtime script.'
   );
 }
 

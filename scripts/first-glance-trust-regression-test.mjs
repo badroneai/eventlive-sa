@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import { homeBoardLiveSection } from './home-board-live.mjs';
 
 // First-glance trust gate (owner mandate 2026-07-27): a new visitor must never
 // see a dead live element. Every check here failed silently in production at
@@ -74,4 +75,53 @@ for (const [block, start, end] of cardBlocks) {
   assert.ok(showsRange, `multi-day card (${startDay} → ${endDay}) must show its start–end window on the card`);
 }
 
-console.log(`FIRST_GLANCE_TRUST_OK ticker=${ticker.length} live=${liveMoments.length} future=${futureStarts.length} pages_scanned=${scanPages.length} cards=${cardBlocks.length}`);
+// 6. WO-1: the "يحدث الآن" board must show ALL live events, not one pinned.
+//    If the live catalog has >=2 live moments at build time, dist/index.html
+//    must carry >=2 static .board-live-card elements (the old bug: the
+//    board's client script picked only the FIRST live entry via
+//    `if (... && !live) live = ev`, so a second simultaneous live event was
+//    silently dropped from view).
+const boardLiveCards = [...indexHtml.matchAll(/<article class="board-live-card" data-index="\d+"/g)];
+if (liveMoments.length >= 2) {
+  assert.ok(
+    boardLiveCards.length >= 2,
+    `catalog has ${liveMoments.length} live moments at build time but dist/index.html only ` +
+      `carries ${boardLiveCards.length} static .board-live-card element(s) — the homepage ` +
+      'board must render every live event, not one pinned entry'
+  );
+  const badgeMatch = indexHtml.match(/id="boardLiveBadge">[\s\S]*?مباشر الآن · (\d+) فعاليات/);
+  assert.ok(badgeMatch, 'homepage must carry a "مباشر الآن · N فعاليات" badge when >=1 event is live');
+  assert.equal(Number(badgeMatch[1]), liveMoments.length, 'the live-count badge must match the number of live moments in the catalog');
+} else {
+  console.log(`WO-1 note: the live catalog had ${liveMoments.length} live moment(s) at build ` +
+    'time (<2), so the multi-card rule cannot be exercised against the real build. Exercising ' +
+    'the static-injection mechanism directly against a synthetic fixture instead.');
+}
+
+// The mechanism itself (scripts/home-board-live.mjs, the only production
+// caller being patchHomePage in scripts/generate-site.mjs) is exercised
+// unconditionally against a synthetic 3-event fixture, regardless of what
+// the real catalog had at build time — this is the "don't skip the
+// assertion entirely" requirement from the WO.
+{
+  const synthetic = [
+    { title: 'Synthetic Live One', meta: 'الرياض · حتى ١٠:٠٠ م', url: './events/synthetic-one.html' },
+    { title: 'Synthetic Live Two', meta: 'جدة · حتى ١١:٠٠ م', url: './events/synthetic-two.html' },
+    { title: 'Synthetic Live Three', meta: 'الظهران · حتى ١٢:٠٠ ص', url: './events/synthetic-three.html' }
+  ];
+  const html = homeBoardLiveSection(synthetic);
+  const cards = [...html.matchAll(/<article class="board-live-card" data-index="(\d+)"( hidden)?>/g)];
+  assert.equal(cards.length, 3, 'homeBoardLiveSection must render one static card per live event');
+  assert.equal(cards[0][2], undefined, 'the first synthetic card must be visible (no hidden attribute)');
+  assert.equal(cards[1][2], ' hidden', 'the second synthetic card must carry the hidden attribute');
+  assert.equal(cards[2][2], ' hidden', 'the third synthetic card must carry the hidden attribute');
+  assert.match(html, /مباشر الآن · 3 فعاليات/, 'the badge must reflect the synthetic live count');
+  assert.match(html, /board-live-prev/, 'nav arrows must render when more than one live card is present');
+  assert.match(html, /board-live-dot/, 'dot indicators must render when more than one live card is present');
+  const single = homeBoardLiveSection([synthetic[0]]);
+  assert.doesNotMatch(single, /board-live-prev/, 'nav must be omitted entirely for a single live card — nothing to navigate between');
+  const empty = homeBoardLiveSection([]);
+  assert.match(empty, /<section class="board-live" id="boardLive" hidden>/, 'zero live events must render the section hidden');
+}
+
+console.log(`FIRST_GLANCE_TRUST_OK ticker=${ticker.length} live=${liveMoments.length} future=${futureStarts.length} pages_scanned=${scanPages.length} cards=${cardBlocks.length} board_live_cards=${boardLiveCards.length}`);

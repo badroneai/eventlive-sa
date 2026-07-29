@@ -20,7 +20,8 @@ const contentProseStats = { events: 0, translated: 0, leaks: 0, eventsWithLeaks:
 import { normalizeSaudiCity } from './city-utils.mjs';
 import { createContentTranslator } from './content-translation-cache.mjs';
 import { classifyEventKind, eventKindLabel, getEventStatus } from './event-kind-utils.mjs';
-import { compareAttendancePriority } from './event-priority.mjs';
+import { compareAttendancePriority, isLiveMoment } from './event-priority.mjs';
+import { homeBoardLiveSection } from './home-board-live.mjs';
 import {
   eventAccessIsFree,
   eventOfferJsonLd,
@@ -6001,12 +6002,16 @@ function patchHomePage(events) {
   const prioritized = [...upcoming].sort((a, b) => compareAttendancePriority(a, b, now));
   const todayEvents = prioritized.filter((event) => {
     const start = dateValue(event.starts_at)?.getTime();
-    const end = dateValue(event.ends_at || event.starts_at)?.getTime();
     if (!Number.isFinite(start)) return false;
     const startsToday = riyadhDateKey(start) === todayKey;
-    const liveMoment = event.event_kind !== 'program' && start <= now && (!Number.isFinite(end) || end >= now);
-    return startsToday || liveMoment;
+    return startsToday || isLiveMoment(event, now);
   });
+  // WO-1: the homepage "live now" board carousel. `prioritized` is already
+  // ordered by the unified attendance-priority rule, so filtering it with
+  // the same shared isLiveMoment() predicate used above (imported from
+  // scripts/event-priority.mjs — do not re-derive this inline) yields every
+  // currently-live moment, in priority order, ready for static injection.
+  const liveEvents = prioritized.filter((event) => isLiveMoment(event, now));
   const usedIds = new Set(todayEvents.map((event) => event.id));
   const tomorrowEvents = sortEventsByStart(upcoming.filter((event) => {
     if (usedIds.has(event.id)) return false;
@@ -6049,6 +6054,21 @@ function patchHomePage(events) {
   // capped to 120 rows — no separate live/future bucketing needed.
   const ticker = prioritized.slice(0, 120).map(homeTickerEvent);
   const searchData = events.map(homeSearchEvent);
+  // WO-1: board mode is decided once, at build time, from `liveEvents` —
+  // the client script only rotates the pre-baked cards below, it never
+  // re-decides live vs. non-live mode itself (see the runtime script's
+  // tick() guard in the dist/index.html shell).
+  const boardSingleOpenTag = liveEvents.length > 0
+    ? '<div class="board-single" id="boardSingle" hidden>'
+    : '<div class="board-single" id="boardSingle">';
+  // homeBoardLiveSection (scripts/home-board-live.mjs) is pure HTML
+  // templating — it does not know about cityLabelMap/formatDate/URL
+  // shaping, so resolve those display strings here first.
+  const liveBoardCards = liveEvents.map((event) => ({
+    title: event.title,
+    meta: `${event.city_label || cityLabel(event.city)} · حتى ${formatDate(event.ends_at || event.starts_at)}`,
+    url: compactEventUrl(event)
+  }));
   let next = html
     .replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">${JSON.stringify(itemList)}</script>`)
     .replace(/تصفح\s+\d+\s+فعالية/g, `تصفح ${events.length} فعالية`)
@@ -6060,6 +6080,8 @@ function patchHomePage(events) {
     .replace(/<p>[\d,]+\s+فعالية من\s+[\d,]+\s+مصدرًا مسجلًا · آخر مزامنة:[^<]*<\/p>/, `<p>${events.length} فعالية من ${sourceCount} مصدرًا مسجلًا · آخر مزامنة: ${formatDate(buildAt)} بتوقيت الرياض</p>`)
     .replace(/var ticker = [\s\S]*?;\n\s*var cdD =/, `var ticker = ${scriptValue(ticker)};\n      var cdD =`)
     .replace(/var searchData = [\s\S]*?;\n\s*var input =/, `var searchData = ${scriptValue(searchData)};\n      var input =`)
+    .replace(/<div class="board-single" id="boardSingle"[^>]*>/, boardSingleOpenTag)
+    .replace(/<section class="board-live" id="boardLive"[^>]*>[\s\S]*?<\/section>/, homeBoardLiveSection(liveBoardCards))
     .replace(/<section class=\"h-section\" id=\"(?:tomorrow|week)\"[^>]*>[\s\S]*?<\/section>\s*/g, '')
     .replace(/<section class=\"h-section\" id=\"soon\"[^>]*>[\s\S]*?<\/section>/, timelineSections)
     .replace(/<h3><a href=/g, '<h3><a dir="auto" href=');
