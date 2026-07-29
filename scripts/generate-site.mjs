@@ -231,6 +231,56 @@ const agendaCss = `<style>
 @media(max-width:760px){.agenda-toolbar,.agenda-live-summary{grid-template-columns:1fr}.agenda-head,.session-top{align-items:flex-start;flex-direction:column}.session-time{white-space:normal}}
 </style>`;
 
+// WO-6: event detail page reorganization — decisive hero (cover image as a
+// side column on wide screens, above the content on mobile), the "الآن"
+// strip, the merged practical-info facts, and the mobile-only sticky CTA
+// bar. Scoped to .event-detail so no other page is affected.
+const eventDetailCss = `<style>
+.event-detail .event-hero-in{display:flex;flex-wrap:wrap;gap:26px;align-items:center}
+.event-detail .event-hero-main{flex:1 1 320px;min-width:0}
+.event-detail .event-hero-line{margin:10px 0 0;color:rgba(255,255,255,.85);font-weight:700}
+.event-detail .event-hero-media{flex:1 1 280px;max-width:420px}
+.event-detail .event-hero-media .cover{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;box-shadow:0 18px 40px rgba(0,0,0,.22)}
+.event-detail .event-hero-ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.event-detail .event-hero-ctas .hero-cta-primary{background:#fff;color:var(--green-dark)}
+.event-detail .event-hero-ctas .hero-cta-secondary{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.32);color:#fff}
+.event-detail .event-hero-ctas .hero-cta-secondary.is-saved{background:rgba(255,255,255,.32)}
+.event-detail .event-hero-main .cta-status{flex-basis:100%;margin:8px 0 0;color:rgba(255,255,255,.78);font-size:.86rem}
+.event-detail .event-now-strip{padding-top:0}
+.event-detail .event-now{padding:14px 18px}
+.event-detail .event-now-value{margin:2px 0 0;font-size:1.15rem;font-weight:700}
+.event-detail .practical-facts{border-top:0;margin-top:4px}
+.event-detail .practical-fact{border-bottom:1px solid var(--line)}
+.event-detail .mobile-sticky-cta{display:none}
+@media(max-width:760px){
+  .event-detail .event-hero-in{flex-direction:column}
+  .event-detail .event-hero-media{order:-1;max-width:none;flex:none}
+  .event-detail .event-hero-media .cover{aspect-ratio:16/9;max-height:170px}
+  .event-detail .event-hero-ctas{margin-top:12px}
+  .event-detail main{padding-bottom:82px}
+  .event-detail .mobile-sticky-cta{
+    display:flex;
+    gap:8px;
+    position:fixed;
+    inset-inline:0;
+    bottom:0;
+    z-index:30;
+    padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+    background:rgba(255,253,248,.98);
+    backdrop-filter:blur(10px);
+    border-top:1px solid var(--line);
+    box-shadow:0 -12px 30px rgba(16,35,29,.14);
+    visibility:hidden;
+    opacity:0;
+    transform:translateY(8px);
+    transition:opacity .2s ease,transform .2s ease,visibility .2s;
+  }
+  .event-detail .mobile-sticky-cta.is-visible{visibility:visible;opacity:1;transform:translateY(0)}
+  .event-detail .mobile-sticky-cta .cta{flex:1;min-width:0;min-height:44px;padding-inline:8px;font-size:.86rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+}
+@media(prefers-reduced-motion:reduce){.event-detail .mobile-sticky-cta{transition:none}}
+</style>`;
+
 function readJson(relativePath, fallback = {}) {
   const fullPath = path.join(root, relativePath);
   if (!fs.existsSync(fullPath)) return fallback;
@@ -1698,39 +1748,78 @@ function eventPublicJson(event = {}, canonical = '', schemaImage = '') {
   };
 }
 
-function eventDetailActions(event) {
-  const actions = [];
+// WO-6: the event detail page's decisive hero needs one primary CTA (entry
+// link when a registration/ticket link exists, else "add to calendar"), and
+// that same CTA is repeated in the mobile sticky bar and, deliberately,
+// again inside the unified "معلومات عملية" practical-info card (section 5).
+// This single function renders that CTA with a caller-supplied class so
+// every call site stays visually consistent while keeping ONE literal
+// safeHref(...) sink for the registration/ticket/online-entry union (the
+// exact expression url-attribute-xss-regression-test.mjs scans for).
+function eventPrimaryActionHtml(event, extraClass = '') {
   const icsHref = String(event.ics_url || '').replace(/^\.\/events\//, './');
-  if (isOnlineEvent(event)) {
-    if (event.source_url || event.evidence_url) {
-      actions.push(`<a class="cta" href="${escapeHtml(safeHref(event.source_url || event.evidence_url))}">الدخول أو التسجيل</a>`);
-    }
-  } else if (event.directions_url) {
-    actions.push(`<a class="cta" href="${escapeHtml(safeHref(event.directions_url))}">الاتجاهات</a>`);
+  const classAttr = `cta${extraClass ? ` ${extraClass}` : ''}`;
+  if (isOnlineEvent(event) && (event.registration_url || event.ticket_url || event.source_url || event.evidence_url)) {
+    return `<a class="${classAttr}" href="${escapeHtml(safeHref(event.registration_url || event.ticket_url || event.source_url || event.evidence_url))}">الدخول أو التسجيل</a>`;
   }
-  actions.push(`<a class="cta" href="${escapeHtml(icsHref)}">أضف للتقويم</a>`);
-  if (event.status !== 'ended') {
-    actions.push(`<button class="cta" type="button" data-attendance-save data-event-id="${escapeHtml(event.id)}">احفظ للحضور</button>`);
-    actions.push('<p class="cta-status" data-attendance-status aria-live="polite">يحفظ الصفحة والجدول على هذا الجهاز عند ضعف الشبكة.</p>');
+  if (!isOnlineEvent(event) && (event.registration_url || event.ticket_url)) {
+    return `<a class="${classAttr}" href="${escapeHtml(safeHref(event.registration_url || event.ticket_url))}">الدخول أو التسجيل</a>`;
   }
-  if (!isOnlineEvent(event) && event.source_url) {
-    actions.push(`<a class="cta" href="${escapeHtml(safeHref(event.source_url))}">المصدر</a>`);
-  }
-  return actions.join('');
+  return `<a class="${classAttr}" href="${escapeHtml(icsHref)}">أضف للتقويم</a>`;
 }
 
-function eventQuickActions(event) {
-  const actions = [];
+// Deliberate CTA repeat for the practical-info card (section 5): the same
+// entry link as eventPrimaryActionHtml, but never falls back to the
+// calendar link (calendar already has its own row in that card).
+function eventEntryRepeatActionHtml(event) {
+  const href = isOnlineEvent(event)
+    ? (event.registration_url || event.ticket_url || event.source_url || event.evidence_url)
+    : (event.registration_url || event.ticket_url);
+  if (!href) return '';
+  return `<a class="cta" href="${escapeHtml(safeHref(href))}">الدخول أو التسجيل</a>`;
+}
+
+function eventDirectionsActionHtml(event) {
+  if (isOnlineEvent(event) || !event.directions_url) return '';
+  return `<a class="cta" href="${escapeHtml(safeHref(event.directions_url))}">الاتجاهات</a>`;
+}
+
+function eventCalendarActionHtml(event) {
   const icsHref = String(event.ics_url || '').replace(/^\.\/events\//, './');
-  if (isOnlineEvent(event)) {
-    if (event.registration_url || event.ticket_url || event.source_url || event.evidence_url) {
-      actions.push(`<a href="${escapeHtml(safeHref(event.registration_url || event.ticket_url || event.source_url || event.evidence_url))}">الدخول أو التسجيل</a>`);
-    }
-  } else if (event.directions_url) {
-    actions.push(`<a href="${escapeHtml(safeHref(event.directions_url))}">الاتجاهات</a>`);
-  }
-  if (icsHref) actions.push(`<a href="${escapeHtml(icsHref)}">أضف للتقويم</a>`);
-  return actions.length ? `<nav class="event-quick-actions" aria-label="إجراءات سريعة">${actions.join('')}</nav>` : '';
+  return `<a class="cta" href="${escapeHtml(icsHref)}">أضف للتقويم</a>`;
+}
+
+function eventSourceLinkActionHtml(event) {
+  if (isOnlineEvent(event) || !event.source_url) return '';
+  return `<a class="cta" href="${escapeHtml(safeHref(event.source_url))}">المصدر</a>`;
+}
+
+function eventSaveActionHtml(event, extraClass = '') {
+  if (event.status === 'ended') return '';
+  const classAttr = `cta${extraClass ? ` ${extraClass}` : ''}`;
+  return `<button class="${classAttr}" type="button" data-attendance-save data-event-id="${escapeHtml(event.id)}">احفظ للحضور</button>`;
+}
+
+function eventSaveStatusHtml(event) {
+  if (event.status === 'ended') return '';
+  return '<p class="cta-status" data-attendance-status aria-live="polite">يحفظ الصفحة والجدول على هذا الجهاز عند ضعف الشبكة.</p>';
+}
+
+// Section 5 ("معلومات عملية") action row: location/directions, the
+// deliberate CTA repeat, calendar, and the share/print/QR entry points that
+// already exist as standalone activation pages (share.html, print.html,
+// signage.html) but previously had no link from the event detail page.
+function eventPracticalActionsHtml(event, relative) {
+  const fileSlug = encodeURIComponent(event.file_slug || event.id || '');
+  const actions = [
+    eventDirectionsActionHtml(event),
+    eventEntryRepeatActionHtml(event),
+    eventCalendarActionHtml(event),
+    `<a class="cta" href="${escapeHtml(`${relative}share.html?event=${fileSlug}`)}">مشاركة</a>`,
+    `<a class="cta" href="${escapeHtml(`${relative}print.html?event=${fileSlug}`)}">طباعة</a>`,
+    `<a class="cta" href="${escapeHtml(`${relative}signage.html?event=${fileSlug}`)}">رمز QR</a>`
+  ].filter(Boolean);
+  return actions.length ? `<nav class="event-quick-actions" aria-label="إجراءات الفعالية">${actions.join('')}</nav>` : '';
 }
 
 function attendanceModeScript(event, image) {
@@ -1743,9 +1832,12 @@ function attendanceModeScript(event, image) {
   ]).filter(Boolean);
   return `<script id="eventlive-attendance-mode">
 (function () {
-  var button = document.querySelector('[data-attendance-save]');
+  // WO-6: the decisive hero and the mobile sticky bar each expose their own
+  // "احفظ للحضور" button, so every [data-attendance-save] element must stay
+  // in sync (not just the first one a plain querySelector would find).
+  var buttons = [].slice.call(document.querySelectorAll('[data-attendance-save]'));
+  if (!buttons.length) return;
   var status = document.querySelector('[data-attendance-status]');
-  if (!button || !status) return;
   var eventId = ${JSON.stringify(event.id)};
   var assets = ${JSON.stringify(assets)};
   var storageKey = 'eventlive-attendance-events';
@@ -1756,9 +1848,11 @@ function attendanceModeScript(event, image) {
   function renderSaved() {
     var saved = savedEvents();
     if (!saved[eventId]) return;
-    button.classList.add('is-saved');
-    button.textContent = 'محفوظ للحضور';
-    status.textContent = 'هذه الفعالية وجدولها محفوظان على هذا الجهاز.';
+    buttons.forEach(function (button) {
+      button.classList.add('is-saved');
+      button.textContent = 'محفوظ للحضور';
+    });
+    if (status) status.textContent = 'هذه الفعالية وجدولها محفوظان على هذا الجهاز.';
   }
   function askWorkerToCache() {
     if (!('serviceWorker' in navigator)) return Promise.resolve({ cached: 0 });
@@ -1778,18 +1872,20 @@ function attendanceModeScript(event, image) {
     }).catch(function () { return { cached: 0 }; });
   }
 
-  button.addEventListener('click', function () {
-    button.disabled = true;
-    status.textContent = 'جاري تجهيز وضع الحضور...';
-    askWorkerToCache().then(function (result) {
-      var saved = savedEvents();
-      saved[eventId] = { savedAt: new Date().toISOString(), path: window.location.pathname, cachedAssets: Number(result.cached || 0) };
-      localStorage.setItem(storageKey, JSON.stringify(saved));
-      button.disabled = false;
-      renderSaved();
-      if (typeof window.eventLiveTrack === 'function') {
-        window.eventLiveTrack('attendance_mode_saved', { event_id: eventId, cached_assets: Number(result.cached || 0) });
-      }
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      buttons.forEach(function (btn) { btn.disabled = true; });
+      if (status) status.textContent = 'جاري تجهيز وضع الحضور...';
+      askWorkerToCache().then(function (result) {
+        var saved = savedEvents();
+        saved[eventId] = { savedAt: new Date().toISOString(), path: window.location.pathname, cachedAssets: Number(result.cached || 0) };
+        localStorage.setItem(storageKey, JSON.stringify(saved));
+        buttons.forEach(function (btn) { btn.disabled = false; });
+        renderSaved();
+        if (typeof window.eventLiveTrack === 'function') {
+          window.eventLiveTrack('attendance_mode_saved', { event_id: eventId, cached_assets: Number(result.cached || 0) });
+        }
+      });
     });
   });
   renderSaved();
@@ -1898,7 +1994,7 @@ function faqJsonLd(items = []) {
 
 function renderFaqSection(items = [], title = 'أسئلة سريعة') {
   if (!items.length) return '';
-  return `<section class="section event-faq"><div class="wrap"><article class="readiness"><span>إجابات مختصرة</span><h2>${escapeHtml(title)}</h2><div class="grid">${items.map((item) => `<div class="program-check"><b>${escapeHtml(item.question)}</b><p>${escapeHtml(item.answer)}</p></div>`).join('')}</div></article></div></section>`;
+  return `<section class="section event-faq" data-section="faq"><div class="wrap"><article class="readiness"><span>إجابات مختصرة</span><h2>${escapeHtml(title)}</h2><div class="grid">${items.map((item) => `<div class="program-check"><b>${escapeHtml(item.question)}</b><p>${escapeHtml(item.answer)}</p></div>`).join('')}</div></article></div></section>`;
 }
 
 function formatSessionTime(value) {
@@ -1941,7 +2037,58 @@ function renderEventSessions(event, sessionsTitle, sessionsNote) {
     const sourceLink = session.source_url ? `<a class="session-source" href="${escapeHtml(safeHref(session.source_url))}" rel="noopener noreferrer">المصدر الرسمي</a>` : '';
     return `<article class="session" id="${escapeHtml(sessionAnchor(session, index))}" data-session-item data-day="${escapeHtml(day)}" data-room="${escapeHtml(session.room || '')}" data-search="${escapeHtml(search)}" data-start="${escapeHtml(start)}" data-end="${escapeHtml(end)}"><div class="session-top"><div><b>${escapeHtml(session.title || session.session_title || 'جلسة')}</b>${session.speaker ? `<p class="session-speaker">${escapeHtml(session.speaker)}</p>` : ''}</div><time class="session-time" datetime="${escapeHtml(start)}">من ${escapeHtml(formatSessionTime(start))} إلى ${escapeHtml(formatSessionTime(end))}</time></div><div class="meta">${session.room ? `<span class="chip">${escapeHtml(session.room)}</span>` : ''}${session.track ? `<span class="chip">${escapeHtml(session.track)}</span>` : ''}<span class="session-status" data-session-status>قادمة</span>${sourceLink}</div></article>`;
   }).join('');
-  return `<section class="section" data-event-agenda><div class="wrap"><div class="agenda-head"><div><span class="eyebrow">برنامج موثق</span><h2>${sessionsTitle}</h2></div>${detailed ? `<p>${agendaSummary}</p>` : ''}</div>${sessionsNote}${toolbar}<div class="timeline">${timeline}</div></div></section>`;
+  return `<section class="section" data-event-agenda data-section="schedule"><div class="wrap"><div class="agenda-head"><div><span class="eyebrow">برنامج موثق</span><h2>${sessionsTitle}</h2></div>${detailed ? `<p>${agendaSummary}</p>` : ''}</div>${sessionsNote}${toolbar}<div class="timeline">${timeline}</div></div></section>`;
+}
+
+// WO-6 section 2: "الآن" strip — the platform's live promise directly after
+// the decisive hero. Reuses the existing data-live-time/data-runtime-status
+// runtime elements (liveRuntimeScript already keeps them updated); omitted
+// entirely once an event has ended, since there is no "now" to report.
+function eventNowStripHtml(event) {
+  if (event.status === 'ended') return '';
+  return `<section class="section event-now-strip" data-section="now"><div class="wrap"><article class="readiness event-now" aria-label="الحالة الحية"><span class="attendance-kicker">الآن</span><p class="event-now-value" data-live-time ${runtimeAttrs(event)}>${escapeHtml(staticWhenText(event))}</p></article></div></section>`;
+}
+
+// WO-6 section 5 merge: duration / registration-close / provider used to
+// live inside the program-outline signal strip (duplicating the same facts
+// that also existed in the attendance card). They now render exactly once,
+// here, inside the unified "معلومات عملية" card — deliberately using a
+// distinct class (practical-fact, not attendance-fact) so the pre-existing
+// four-item attendance-fact count assertion stays meaningful.
+function eventPracticalOutlineFactsHtml(outline = {}, registrationDeadline = '') {
+  const facts = [
+    outline.duration_text ? ['المدة', outline.duration_text] : null,
+    registrationDeadline ? ['إغلاق التسجيل', formatDate(registrationDeadline)] : null,
+    outline.provider ? ['المزود', outline.provider] : null
+  ].filter(Boolean);
+  if (!facts.length) return '';
+  return `<dl class="attendance-facts practical-facts">${facts.map(([label, value]) => `<div class="attendance-fact practical-fact"><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join('')}</dl>`;
+}
+
+// WO-6 section 8: sticky mobile CTA bar. Repeats the same primary CTA and
+// save button so the decisive action stays reachable once the hero has
+// scrolled out of view; omitted for ended events (nothing to act on).
+function mobileStickyCtaHtml(event) {
+  if (event.status === 'ended') return '';
+  return `<div class="mobile-sticky-cta" data-sticky-cta>${eventPrimaryActionHtml(event)}${eventSaveActionHtml(event)}</div>`;
+}
+
+function stickyCtaVisibilityScript(event) {
+  if (event.status === 'ended') return '';
+  return `<script>
+(function () {
+  var bar = document.querySelector('[data-sticky-cta]');
+  var hero = document.querySelector('[data-section="hero"]');
+  if (!bar || !hero || !('IntersectionObserver' in window)) return;
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      var pastHero = !entry.isIntersecting && entry.boundingClientRect.top < 0;
+      bar.classList.toggle('is-visible', pastHero);
+    });
+  }, { threshold: 0 });
+  observer.observe(hero);
+})();
+</script>`;
 }
 
 function renderEventDetail(event) {
@@ -1971,8 +2118,16 @@ function renderEventDetail(event) {
     ['المتطلبات', outline.requirements]
   ].filter(([, items]) => Array.isArray(items) && items.length);
   const registrationDeadline = outline.registration_deadline || event.registration_deadline || '';
-  const programOutline = (sourceDescription || outline.duration_text || registrationDeadline || outlineLists.length)
-    ? `<section class="section"><div class="wrap"><article class="readiness" aria-label="محاور البرنامج الرسمية"><span>من المصدر الرسمي</span><h2>محاور البرنامج</h2>${sourceDescription ? `<p>${escapeHtml(sourceDescription)}</p>` : ''}<div class="signal-strip">${outline.duration_text ? `<div class="signal"><span>المدة</span><b>${escapeHtml(outline.duration_text)}</b></div>` : ''}${registrationDeadline ? `<div class="signal"><span>إغلاق التسجيل</span><b>${escapeHtml(formatDate(registrationDeadline))}</b></div>` : ''}${outline.provider ? `<div class="signal"><span>المزود</span><b>${escapeHtml(outline.provider)}</b></div>` : ''}</div><div class="grid">${outlineLists.map(([label, items]) => `<div class="program-check"><b>${escapeHtml(label)}</b><ul>${items.slice(0, 6).map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul></div>`).join('')}</div></article></div></section>`
+  // WO-6 section 4: program content only — duration/registration-close/
+  // provider moved out to the unified practical-info card (section 5) so
+  // each fact appears exactly once on the page.
+  const programOutline = (sourceDescription || outlineLists.length)
+    ? `<section class="section" data-section="program"><div class="wrap"><article class="readiness" aria-label="محاور البرنامج الرسمية"><span>من المصدر الرسمي</span><h2>محاور البرنامج</h2>${sourceDescription ? `<p>${escapeHtml(sourceDescription)}</p>` : ''}<div class="grid">${outlineLists.map(([label, items]) => `<div class="program-check"><b>${escapeHtml(label)}</b><ul>${items.slice(0, 6).map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul></div>`).join('')}</div></article></div></section>`
+    : '';
+  const practicalFacts = eventPracticalOutlineFactsHtml(outline, registrationDeadline);
+  const lastUpdated = event.seo_modified_at || event.verified_at || buildAt;
+  const mtNote = event.content_translated
+    ? '<p class="muted" data-mt-note>ترجمة آلية: عُرض محتوى هذه الصفحة مترجمًا تلقائيًا عن لغة المصدر وقد يتضمن أخطاء — النص الأصلي متاح عبر رابط المصدر الرسمي.</p>'
     : '';
   const eventFaq = eventFaqItems(event);
   const html = `<!doctype html>
@@ -1983,6 +2138,7 @@ function renderEventDetail(event) {
   <link rel="alternate" type="text/calendar" title="${escapeHtml(event.title)} - EventLive ICS" href="${escapeHtml(`${event.file_slug}.ics`)}" />
   ${pageCss}
   ${agendaCss}
+  ${eventDetailCss}
   ${jsonLd({
     '@context': 'https://schema.org',
     '@type': 'WebPage',
@@ -2021,16 +2177,20 @@ function renderEventDetail(event) {
 ${header(relative)}
 <main>
   ${eventBreadcrumbHtml(event, relative)}
-  <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span><span data-runtime-status ${runtimeAttrs(event)}>${escapeHtml(event.status_label)}</span> · ${escapeHtml(event.event_kind_label)}</span><h1>${escapeHtml(event.title)}</h1><p class="lead">${escapeHtml(event.summary)}</p>${event.content_translated ? '<p class="muted" data-mt-note>ترجمة آلية: عُرض محتوى هذه الصفحة مترجمًا تلقائيًا عن لغة المصدر وقد يتضمن أخطاء — النص الأصلي متاح عبر رابط المصدر الرسمي.</p>' : ''}<div class="signal-strip"><div class="signal"><span>المدينة</span><b>${escapeHtml(cityLabel(event.city))}</b></div><div class="signal"><span>البداية</span><b>${escapeHtml(formatDate(event.starts_at))}</b></div><div class="signal"><span>النهاية</span><b>${escapeHtml(formatDate(event.ends_at))}</b></div><div class="signal"><span>الحالة الحية</span><b data-live-time ${runtimeAttrs(event)}>${escapeHtml(staticWhenText(event))}</b></div></div>${eventQuickActions(event)}</div></section>
-  <section class="section"><div class="wrap grid"><article class="card"><img class="cover" src="${escapeHtml(image)}" alt="${escapeHtml(event.image_alt || event.title)}" /></article><article class="readiness attendance-summary" aria-label="معلومات الحضور"><span class="attendance-kicker">ما تحتاجه قبل الذهاب</span><h2>معلومات الحضور</h2><p>معلومات عملية مرتبطة بالمصدر لمساعدتك قبل الوصول وأثناء الفعالية.</p>${endedNote}${attendanceFacts(event)}<div class="meta">${eventDetailActions(event)}</div></article></div></section>
+  <section class="hero event-hero" data-section="hero"><div class="wrap event-hero-in"><div class="event-hero-main"><span class="eyebrow"><span class="live-dot"></span><span data-runtime-status ${runtimeAttrs(event)}>${escapeHtml(event.status_label)}</span> · ${escapeHtml(event.event_kind_label)}</span><h1>${escapeHtml(event.title)}</h1><p class="event-hero-line">${escapeHtml(cityLabel(event.city))} · ${escapeHtml(formatDate(event.starts_at))}</p>${endedNote}<div class="event-hero-ctas">${eventPrimaryActionHtml(event, 'hero-cta-primary')}${eventSaveActionHtml(event, 'hero-cta-secondary')}</div>${eventSaveStatusHtml(event)}</div><div class="event-hero-media"><img class="cover" src="${escapeHtml(image)}" alt="${escapeHtml(event.image_alt || event.title)}" /></div></div></section>
+  ${eventNowStripHtml(event)}
   ${sessions}
   ${programOutline}
+  <section class="section" data-section="practical"><div class="wrap"><article class="readiness attendance-summary event-practical" aria-label="معلومات عملية"><span class="attendance-kicker">ما تحتاجه قبل الذهاب</span><h2>معلومات عملية</h2><p>معلومات عملية مرتبطة بالمصدر لمساعدتك قبل الوصول وأثناء الفعالية.</p>${attendanceFacts(event)}${practicalFacts}${eventPracticalActionsHtml(event, relative)}</article></div></section>
+  <section class="section" data-section="source"><div class="wrap"><article class="readiness" aria-label="المصدر والتحديث"><span>من المصدر الرسمي</span><h2>المصدر والتحديث</h2><p>آخر تحديث: ${escapeHtml(formatDate(lastUpdated))}</p>${mtNote}<div class="meta">${eventSourceLinkActionHtml(event)}</div></article></div></section>
   ${renderFaqSection(eventFaq, 'ما يحتاجه الزائر بسرعة')}
 </main>
 ${footer(relative)}
+${mobileStickyCtaHtml(event)}
 ${liveRuntimeScript()}
 ${sessionAgendaScript()}
 ${attendanceModeScript(event, image)}
+${stickyCtaVisibilityScript(event)}
 </body>
 </html>`;
   writeText(path.join(eventsDir, `${event.file_slug}.html`), html);

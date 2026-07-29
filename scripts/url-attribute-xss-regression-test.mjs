@@ -179,10 +179,17 @@ try {
 
   const generatorSource = fs.readFileSync(generatorPath, 'utf8');
   const protectedSinkFragments = [
-    'escapeHtml(safeHref(event.source_url || event.evidence_url))',
+    // WO-6: the event detail page's online-entry CTA (formerly a standalone
+    // eventDetailActions() branch keyed on event.source_url||evidence_url)
+    // was consolidated into eventPrimaryActionHtml()'s single entry-link
+    // resolver, which also covers registration/ticket links. The sanitizer
+    // coverage is unchanged — every branch still runs through safeHref(),
+    // verified below by the live registrationHref/ticketHref/directionsHref/
+    // sourceHref assertions — only the literal source fragment moved.
     'escapeHtml(safeHref(event.directions_url))',
     'escapeHtml(safeHref(event.source_url))',
     'escapeHtml(safeHref(event.registration_url || event.ticket_url || event.source_url || event.evidence_url))',
+    'escapeHtml(safeHref(event.registration_url || event.ticket_url))',
     'escapeHtml(safeHref(session.source_url))',
     'escapeHtml(safeHref(row.source_url))',
     'escapeHtml(safeHref(row.directions_url))',

@@ -66,7 +66,10 @@ for (const event of samples) {
   const charsetCount = (html.match(/<meta charset="UTF-8"\s*\/?>/gi) || []).length;
   assert.equal(charsetCount, 1, `${event.detail_url} must include exactly one charset meta tag`);
 
-  assert.match(html, /aria-label="معلومات الحضور"/, `${event.detail_url} must include public attendance information`);
+  // WO-6: the attendance-facts card was renamed/merged into the unified
+  // "معلومات عملية" practical-info card (section 5) as part of the event
+  // detail page reorganization; the underlying facts are unchanged.
+  assert.match(html, /aria-label="معلومات عملية"/, `${event.detail_url} must include public attendance information`);
   assert.match(html, /ما تحتاجه قبل الذهاب/, `${event.detail_url} must explain the visitor value of the attendance panel`);
   assert.match(html, /نوع الحضور/, `${event.detail_url} must show the attendance type`);
   assert.match(html, /تفاصيل البرنامج/, `${event.detail_url} must show public schedule availability`);
@@ -86,7 +89,7 @@ for (const event of samples) {
   const attendanceFactCount = (html.match(/class="attendance-fact"/g) || []).length;
   assert.equal(attendanceFactCount, 4, `${event.detail_url} must render four visitor-facing attendance facts`);
   const faqPosition = html.indexOf('class="section event-faq"');
-  assert.ok(faqPosition > html.indexOf('aria-label="معلومات الحضور"'), `${event.detail_url} visitor FAQ must follow attendance essentials`);
+  assert.ok(faqPosition > html.indexOf('aria-label="معلومات عملية"'), `${event.detail_url} visitor FAQ must follow the practical-info card`);
   assert.ok(faqPosition < html.indexOf('</main>'), `${event.detail_url} visitor FAQ must remain the final section in the main content`);
   if (html.includes('data-event-agenda')) {
     assert.ok(faqPosition > html.indexOf('data-event-agenda'), `${event.detail_url} visitor FAQ must follow the live agenda`);

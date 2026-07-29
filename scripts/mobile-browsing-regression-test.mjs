@@ -69,7 +69,12 @@ async function inspect(page, route, width) {
       primaryFacet: rect('.facet-primary'),
       firstFacetCard: rect('.facet-page .card'),
       subscription: rect('.facet-page .facet-focus:last-of-type'),
-      quickActions: rect('.event-quick-actions'),
+      // WO-6: the decisive hero's primary CTA (not the practical-info card's
+      // .event-quick-actions, which now lives further down the page behind
+      // the schedule/program sections) is the element that must stay
+      // immediately reachable on mobile; the sticky bottom CTA bar exists
+      // precisely to cover reachability once the hero has scrolled away.
+      heroPrimaryCta: rect('.hero-cta-primary'),
       mobileMenu: rect('.mobile-site-menu > summary'),
       homeHeader: (() => {
         const header = document.querySelector('.site-head');
@@ -161,7 +166,7 @@ try {
     const detail = await inspect(page, detailRoute, width);
     assert.ok(detail.scrollWidth <= width + 1, `event detail must not overflow horizontally at ${width}px`);
     assert.ok(detail.hero?.height <= 650, `event detail hero must remain compact at ${width}px`);
-    assert.ok(detail.quickActions?.bottom <= 700, `event detail quick actions must be immediately reachable at ${width}px`);
+    assert.ok(detail.heroPrimaryCta?.bottom <= 700, `event detail primary CTA must be immediately reachable at ${width}px`);
     assert.ok(detail.mobileMenu?.height >= 44, `event detail must expose a usable mobile menu at ${width}px`);
     assert.equal(detail.smallTouchTargets.length, 0, `event detail has undersized touch targets at ${width}px: ${JSON.stringify(detail.smallTouchTargets)}`);
 
