@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-07-29T16:48:07.963Z",
+  "generated_at": "2026-07-30T18:21:26.363Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -134,14 +134,11 @@
       "final_url": "https://nec.gov.sa/ar",
       "via": "fetch",
       "content_type": "text/html; charset=utf-8",
-      "bytes": 86269,
+      "bytes": 87515,
       "title": "المركز الوطني للفعاليات | المركز الوطني للفعاليات",
       "classification": "protected",
       "error": "",
       "page_hint_urls": [
-        "https://nec.gov.sa/ar",
-        "https://nec.gov.sa/en",
-        "https://nec.gov.sa/api/assets/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b",
         "http://www.w3.org/2000/svg",
         "https://enjz.nec.gov.sa/",
         "https://nec.gov.sa/ar/join-us/event-pioneer",
@@ -151,9 +148,6 @@
         "https://www.linkedin.com/company/events-center-sa/",
         "https://www.vision2030.gov.sa/ar/",
         "https://sdaia.gov.sa/ar/MediaCenter/Pages/ai-year.aspx",
-        "https://nec.gov.sa/ar\\",
-        "https://nec.gov.sa/en\\",
-        "https://nec.gov.sa/api/assets/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b\\",
         "http://www.w3.org/2000/svg\\",
         "https://nec.gov.sa/ar/join-us/event-pioneer\\",
         "https://enjz.nec.gov.sa/\\",
@@ -165,6 +159,12 @@
         "https://www.gea.gov.sa/en/\\",
         "https://www.asda.gov.sa/\\",
         "https://www.dgda.gov.sa/home.aspx\\",
+        "https://nec.gov.sa/ar\\",
+        "https://nec.gov.sa/en\\",
+        "https://nec.gov.sa/api/assets/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b\\",
+        "https://nec.gov.sa/ar",
+        "https://nec.gov.sa/en",
+        "https://nec.gov.sa/api/assets/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b",
         "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496",
         "https://nec.gov.sa/ar/event-tech",
         "https://nec.gov.sa/ar/event-tech/"
@@ -176,7 +176,7 @@
       ],
       "asset_results": [],
       "api_results": [],
-      "text_sample": "المركز الوطني للفعاليات | المركز الوطني للفعاليات قطاع واعد لفعاليات المملكة لقطاع فعاليات واعد، ومواسم سعودية استثنائية، وتقويم وطني مزدهر وجاذب! من نحن أُسّس مركز الفعاليات بقرار من مجلس الوزراء بتاريخ 15 رجب 1441 هـ الموافق 10 مارس 2020م، ومقره الرياض، وهو يهدف إلى تعزيز الفعاليات في المملكة، والارتقاء بالخدمات المقدمة في المجال، ودعم مواسم السعودية والتقويم الوطني والفعاليات الكبرى، بناءً على ما يصدر من أوامر وقرارات، وفقًا للتوجهات والرؤى التي تضعها لجنة الفعاليات كما يتمتع المركز بالشخصية…"
+      "text_sample": "قطاع واعد لفعاليات المملكة لقطاع فعاليات واعد، ومواسم سعودية استثنائية، وتقويم وطني مزدهر وجاذب! من نحن أُسّس مركز الفعاليات بقرار من مجلس الوزراء بتاريخ 15 رجب 1441 هـ الموافق 10 مارس 2020م، ومقره الرياض، وهو يهدف إلى تعزيز الفعاليات في المملكة، والارتقاء بالخدمات المقدمة في المجال، ودعم مواسم السعودية والتقويم الوطني والفعاليات الكبرى، بناءً على ما يصدر من أوامر وقرارات، وفقًا للتوجهات والرؤى التي تضعها لجنة الفعاليات كما يتمتع المركز بالشخصية الاعتبارية وبالاستقلال المالي والإداري، ويرتبط تن…"
     },
     {
       "id": "visit-saudi-calendar",
@@ -247,11 +247,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 109203,
+          "bytes": 113000,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 33,
+            "item_count": 34,
             "sample_titles": [
               "معرض اللغة العربية للطفل",
               "معرض اللغة العربية 28",
@@ -265,11 +265,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 112584,
+          "bytes": 116838,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 33,
+            "item_count": 34,
             "sample_titles": [
               "Arabic Language Exhibition for kids",
               "Arabic Language Exhibition 28",
@@ -294,7 +294,7 @@
       "final_url": "https://webook.com/ar/explore",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 5946,
+      "bytes": 5945,
       "title": "",
       "classification": "protected",
       "error": "",
@@ -327,7 +327,7 @@
         "https://wbk-assets.webook.com/0.7.0/assets/react-helmet-Ba2OUe2H.js",
         "https://wbk-assets.webook.com/0.7.0/assets/@wbk/cruises-CFh44dRH.js",
         "https://wbk-assets.webook.com/0.7.0/assets/@wbk/auction-te7OXqy9.js",
-        "https://webook.com/cdn-cgi/content?id=jmEkTy.y7vH6EURvsbN.mXeROGiXpTMnaRUhLur.1pY-1785343698.6398275-1.2.1.1-ascsEKtUErPazhiP2nbPvHZQYe8Isuxy4rlgTWoSa5M",
+        "https://webook.com/cdn-cgi/content?id=u0BpuB9jE4v7xTpLPkPBWUhP5NNdKZW9iIGc8_ubaE0-1785435694.916347-1.2.1.1-oE8PvwmiSYwPBdik_zDo33.PkPMb.Zxd_BeMGJoINOA",
         "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496"
       ],
       "page_hint_words": [

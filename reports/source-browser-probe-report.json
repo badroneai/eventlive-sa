@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T14:30:41.457Z",
+  "generated_at": "2026-07-30T18:34:58.955Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -8,56 +8,19 @@
     "scope": "priority",
     "limit": 8,
     "probed_this_run": 0,
-    "fresh_results_available": 1,
+    "fresh_results_available": 0,
     "wait_ms": 4500,
     "timeout_ms": 30000,
     "failure_cooldown_hours": 72
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 1,
+    "probed": 0,
     "browser_network_api": 0,
     "browser_hydration_payload": 0,
     "rendered_html_candidates": 0,
     "blocked_or_protected": 0,
     "policy_skipped": 0
   },
-  "sources": [
-    {
-      "id": "asharqia-chamber-events",
-      "probed_at": "2026-07-27T15:28:17.565Z",
-      "name": "Asharqia Chamber Events",
-      "priority": 59,
-      "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
-      "final_url": "chrome-error://chromewebdata/",
-      "status": "error",
-      "http_status": 0,
-      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 132637,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 0,
-      "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/asharqia-chamber-events-2026-07-27T15-26-04-475Z.html",
-      "screenshot": "",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 0,
-      "network_endpoints": [],
-      "network_sample": []
-    }
-  ]
+  "sources": []
 }

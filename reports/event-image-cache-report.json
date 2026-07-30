@@ -1,34 +1,28 @@
 {
-  "generated_at": "2026-07-30T14:41:05.514Z",
+  "generated_at": "2026-07-30T18:53:17.969Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 774,
-    "fetched": 3,
-    "reused": 494,
+    "cached_total": 776,
+    "fetched": 2,
+    "reused": 495,
     "failed": 3,
-    "skipped_recent_failures": 3,
+    "skipped_recent_failures": 0,
     "remembered_failures": 6
   },
   "fetched": [
     {
-      "source_url": "https://scth.scene7.com/is/image/scth/buraydah-dates-carnival-qassim?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/buraydah-dates-carnival-cb98c8964c.webp",
-      "bytes": 72740,
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC02728-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-makers-introduction-to-photography-understanding-your-camera-4b6d52464c.jpg",
+      "bytes": 56257,
       "events": 1
     },
     {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/0isp5o54.m0i.webp",
-      "file": "dist/assets/event-images/معسكر-تصميم-وتصنيع-الدوائر-الإلكترونية-a5be9ae7fd.webp",
-      "bytes": 40284,
-      "events": 1
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/pt5zczhp.r5m.jpg",
-      "file": "dist/assets/event-images/معسكر-الذكاء-الاصطناعي-للقادة-5aa7c4fcbe.jpg",
-      "bytes": 505374,
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC02026-scaled-aspect-ratio-2296-1300-1-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-makers-woodworking-course-level-1-with-ahmad-sofi-cd2f60e754.jpg",
+      "bytes": 74015,
       "events": 1
     }
   ],
@@ -419,11 +413,6 @@
       "events": 1
     },
     {
-      "source_url": "https://scth.scene7.com/is/image/scth/curious-summer?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/curious-summers-a466fcddad.webp",
-      "events": 1
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/Screenshot%202025-05-02%20110732.png?itok=Dh5mqTSv",
       "file": "dist/assets/event-images/esports-world-cup-82c085857f.png",
       "events": 1
@@ -537,11 +526,6 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1bfbc17fa9fc0e794418752ac39ebb8d.jpg",
       "file": "dist/assets/event-images/your-book-in-a-minute-5cc468c06d.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://static.uqu.edu.sa/assets/images/uqu-gate.jpeg",
-      "file": "dist/assets/event-images/دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية-3157e8ad38.jpg",
-      "events": 8
     },
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvaW1nXzA3MjEucG5n/img_0721.png?w=1024&fm=webp&s=b83e480fbe715d02e0d440959e92c30c",
@@ -729,6 +713,11 @@
       "events": 1
     },
     {
+      "source_url": "https://scth.scene7.com/is/image/scth/buraydah-dates-carnival-qassim?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/buraydah-dates-carnival-cb98c8964c.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/dd5ff655b67bc2f07a32214394e9129d.jpg",
       "file": "dist/assets/event-images/connect-and-create-4fc4440494.jpg",
       "events": 1
@@ -897,6 +886,11 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5e64a990ff5620379ed549c9c43a0dec.jpg",
       "file": "dist/assets/event-images/بتلات-وأصدقاء-بالإنجليزية-b5b9f5d67a.jpg",
       "events": 1
+    },
+    {
+      "source_url": "https://static.uqu.edu.sa/assets/images/uqu-gate.jpeg",
+      "file": "dist/assets/event-images/دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية-3157e8ad38.jpg",
+      "events": 8
     },
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/1tllcxdg.n5m.jpg",
@@ -1196,6 +1190,16 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/F%20Gu_yE-xWIAAqBvu.jpeg?itok=tEBuPjK9",
       "file": "dist/assets/event-images/the-saudi-food-show-05498df4f1.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/0isp5o54.m0i.webp",
+      "file": "dist/assets/event-images/معسكر-تصميم-وتصنيع-الدوائر-الإلكترونية-a5be9ae7fd.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/pt5zczhp.r5m.jpg",
+      "file": "dist/assets/event-images/معسكر-الذكاء-الاصطناعي-للقادة-5aa7c4fcbe.jpg",
       "events": 1
     },
     {
@@ -2404,6 +2408,11 @@
       "events": 1
     },
     {
+      "source_url": "https://scth.scene7.com/is/image/scth/curious-summer?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/curious-summers-a466fcddad.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/57ced1047619d76eed02cbbfb34191f7.jpg",
       "file": "dist/assets/event-images/philosophy-for-everyone-a-journey-of-thought-from-young-to-old-1dc740ef9e.jpg",
       "events": 3
@@ -2492,74 +2501,37 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/8aa6866dc71f32e9ce349d1df998eff4.jpg",
       "file": "dist/assets/event-images/short-film-competition-group-2-06c8e147a8.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9ab504a7b58f639c569bad18edee9ee3.jpg",
-      "file": "dist/assets/event-images/spotlight-on-korean-cinema-group-2-9def9b01fe.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b968f1bee69678376ef9449738a80779.jpg",
-      "file": "dist/assets/event-images/designing-soundscapes-for-film-fe6207cc5a.jpg",
-      "events": 1
     }
   ],
   "rejected_removed": [],
   "missing_removed": [],
-  "skipped_recent_failures": [
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-07-30T17:20:04.642Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-07-30T17:20:04.642Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-07-30T17:20:04.642Z",
-      "skipped": true
-    }
-  ],
+  "skipped_recent_failures": [],
   "failed": [
     {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-07-31T18:53:17.969Z"
+    },
+    {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-07-30T17:20:04.642Z",
-      "skipped": true
+      "retry_after": "2026-07-31T18:53:17.969Z"
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-07-30T17:20:04.642Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-07-30T17:20:04.642Z",
-      "skipped": true
+      "retry_after": "2026-07-31T18:53:17.969Z"
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:3"
+    "fetched:2",
+    "new-failures:3"
   ]
 }

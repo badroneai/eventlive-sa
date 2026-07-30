@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-07-30T14:38:46.127Z",
+  "published_at": "2026-07-30T18:50:45.814Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -7,8 +7,8 @@
   "candidates_seen": 567,
   "totals": {
     "candidates_seen": 567,
-    "published": 3,
-    "linked_existing": 524,
+    "published": 2,
+    "linked_existing": 525,
     "blocked": 40,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
@@ -165,19 +165,14 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-visit-saudi-seasons-buraydah-dates-carnival-20260801-24906534",
-      "event_id": "event-buraydah-dates-carnival",
-      "title": "Buraydah Dates Carnival"
+      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-woodworking-course-level-1-with-ahmad-sofi-20260815-2ba216a5",
+      "event_id": "event-hayy-makers-woodworking-course-level-1-with-ahmad-sofi",
+      "title": "Hayy Makers | Woodworking Course (Level 1) with Ahmad Sofi"
     },
     {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-وتصنيع-الدوائر-الإلكترونية-20260927-2db6d0c7",
-      "event_id": "event-معسكر-تصميم-وتصنيع-الدوائر-الإلكترونية",
-      "title": "معسكر تصميم وتصنيع الدوائر الإلكترونية"
-    },
-    {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-الذكاء-الاصطناعي-للقادة-20260927-91a5daba",
-      "event_id": "event-معسكر-الذكاء-الاصطناعي-للقادة",
-      "title": "معسكر الذكاء الاصطناعي للقادة"
+      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-introduction-to-photography-understanding-your-camera-20260818-d51ed26b",
+      "event_id": "event-hayy-makers-introduction-to-photography-understanding-your-camera",
+      "title": "Hayy Makers | Introduction to Photography: Understanding your Camera"
     }
   ],
   "linked_existing": [
@@ -728,18 +723,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-monshaat-events-لقاءات-مراكز-دعم-المنشآت-شهر-يوليو-2026م-مغلقة-20260701-4c2327fd",
-      "event_id": "event-لقاءات-مراكز-دعم-المنشآت-شهر-يوليو-2026م-مغلقة",
-      "title": "لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-monshaat-events-لقاءات-مراكز-دعم-المنشآت-شهر-يوليو-2026م-20260701-fd7e8b73",
-      "event_id": "event-لقاءات-مراكز-دعم-المنشآت",
-      "title": "لقاءات مراكز دعم المنشآت",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-hayy-jameel-events-jameel-library-summer-reading-challenge-20260701-3a833686",
       "event_id": "event-jameel-library-summer-reading-challenge",
       "title": "Jameel Library | Summer Reading Challenge",
@@ -932,12 +915,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-seasons-curious-summers-20260706-a9a9be0b",
-      "event_id": "event-curious-summers",
-      "title": "Curious Summers",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-riyadh-city-events-esports-world-cup-20260706-b4b860e9",
       "event_id": "event-esports-world-cup",
       "title": "Esports World Cup",
@@ -1019,12 +996,6 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-in-short-film-programme-summer-edition-20260715-d0dace9c",
       "event_id": "event-hayy-cinema-3",
       "title": "Hayy Cinema | In Short: Film Programme — Summer Edition",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-البرنامج-الرياضي-الصيفي-لأبناء-منسوبي-جامعة-أم-القرى-20260716-ab972d5f",
-      "event_id": "event-البرنامج-الرياضي-الصيفي-لأبناء-منسوبي-جامعة-أم-القرى",
-      "title": "البرنامج الرياضي الصيفي لأبناء منسوبي جامعة أم القرى",
       "reason": "already linked to catalog event"
     },
     {
@@ -1130,12 +1101,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260730-f563a36e",
-      "event_id": "event-ithra-summer-camp-2026-a-world-of-homes",
-      "title": "Ithra Summer Camp 2026: A world of homes",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260730-e0a239ef",
       "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
       "title": "Bedayat: Beginnings of Saudi Art Movement",
@@ -1145,12 +1110,6 @@
       "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260730-cc43c2bd",
       "event_id": "event-echoes-of-the-familiar",
       "title": "Echoes of the Familiar",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-printing-house-20260730-e56f4f89",
-      "event_id": "event-printing-house",
-      "title": "Printing House",
       "reason": "already linked to catalog event"
     },
     {
@@ -1178,66 +1137,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260730-2bf92d17",
-      "event_id": "event-childrens-art-studio",
-      "title": "Children's Art Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-games-hub-20260730-fb83124c",
-      "event_id": "event-games-hub",
-      "title": "Games Hub",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-nu-power-20260730-653464ac",
-      "event_id": "event-nu-power",
-      "title": "Nu-Power",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260730-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-family-challenges-20260730-3726c868",
-      "event_id": "event-family-challenges",
-      "title": "Family Challenges",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260730-2671d1ce",
-      "event_id": "event-emboss-printing-experience",
-      "title": "Emboss Printing Experience",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-grand-art-space-20260730-e3acefbb",
-      "event_id": "event-grand-art-space",
-      "title": "Grand Art Space",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-the-moral-of-the-story-20260730-bfa3f2a8",
-      "event_id": "event-the-moral-of-the-story",
-      "title": "The Moral of the Story",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-museum-story-time-20260730-1104734c",
-      "event_id": "event-museum-story-time",
-      "title": "Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260730-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-seasons-ahlam-concert-20260730-e7ce43fa",
       "event_id": "event-ahlam-concert",
       "title": "Ahlam Concert",
@@ -1256,9 +1155,33 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260731-f563a36e",
+      "event_id": "event-ithra-summer-camp-2026-a-world-of-homes",
+      "title": "Ithra Summer Camp 2026: A world of homes",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-printing-house-20260731-e56f4f89",
+      "event_id": "event-printing-house",
+      "title": "Printing House",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-summer-youth-program-20260731-a20f7a11",
       "event_id": "event-summer-youth-program",
       "title": "Summer Youth Program",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260731-2bf92d17",
+      "event_id": "event-childrens-art-studio",
+      "title": "Children's Art Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-games-hub-20260731-fb83124c",
+      "event_id": "event-games-hub",
+      "title": "Games Hub",
       "reason": "already linked to catalog event"
     },
     {
@@ -1286,9 +1209,45 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260731-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260731-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-family-game-20260731-fff43c76",
       "event_id": "event-family-game",
       "title": "Family Game",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260731-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-family-challenges-20260731-3726c868",
+      "event_id": "event-family-challenges",
+      "title": "Family Challenges",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-grand-art-space-20260731-e3acefbb",
+      "event_id": "event-grand-art-space",
+      "title": "Grand Art Space",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-museum-story-time-20260731-1104734c",
+      "event_id": "event-museum-story-time",
+      "title": "Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -1325,6 +1284,12 @@
       "candidate_id": "candidate-ithra-events-story-land-20260801-bb5dc01b",
       "event_id": "event-story-land",
       "title": "Story Land",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-buraydah-dates-carnival-20260801-24906534",
+      "event_id": "event-buraydah-dates-carnival",
+      "title": "Buraydah Dates Carnival",
       "reason": "already linked to catalog event"
     },
     {
@@ -1520,6 +1485,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-the-moral-of-the-story-20260806-bfa3f2a8",
+      "event_id": "event-the-moral-of-the-story",
+      "title": "The Moral of the Story",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-حسين-محب-ايف-في-الرياض-20260807-4a38d19e",
       "event_id": "event-hussain-moheb-live-in-riyadh",
       "title": "حسين محب ايف في الرياض",
@@ -1556,6 +1527,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-nu-power-20260808-653464ac",
+      "event_id": "event-nu-power",
+      "title": "Nu-Power",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260809-91d14378",
       "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-2",
       "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
@@ -1572,6 +1549,12 @@
       "event_id": "event-platforms-manager-skills",
       "title": "Platforms Manager Skills",
       "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-august-20260810-f9fb1ca0",
+      "event_id": "event-hayy-makers-2",
+      "title": "Hayy Makers | Introduction to Pottery Course with Pharah Al-Ghalib, August",
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-ithra-short-play-contest-2026-20260810-11e2aa06",
@@ -1686,6 +1669,12 @@
       "event_id": "event-youth-book-club",
       "title": "Youth Book Club",
       "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-woodworking-course-level-2-with-ahmad-sofi-20260822-96b7ac24",
+      "event_id": "event-hayy-makers",
+      "title": "Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi",
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-تجربة-المستخدم-ux-ui-20260823-c81fc88f",
@@ -2213,6 +2202,18 @@
       "candidate_id": "candidate-umm-al-qura-events-شهادة-محترف-الأعمال-المعتمد-في-إدارة-الفعاليات-والحشود-cbp-ecm-20260927-c05f2fad",
       "event_id": "event-شهادة-محترف-الأعمال-المعتمد-في-إدارة-الفعاليات-والحشود-cbp-ecm",
       "title": "شهادة محترف الأعمال المعتمد في إدارة الفعاليات والحشود CBP-ECM",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-وتصنيع-الدوائر-الإلكترونية-20260927-2db6d0c7",
+      "event_id": "event-معسكر-تصميم-وتصنيع-الدوائر-الإلكترونية",
+      "title": "معسكر تصميم وتصنيع الدوائر الإلكترونية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-الذكاء-الاصطناعي-للقادة-20260927-91a5daba",
+      "event_id": "event-معسكر-الذكاء-الاصطناعي-للقادة",
+      "title": "معسكر الذكاء الاصطناعي للقادة",
       "reason": "already linked to catalog event"
     },
     {

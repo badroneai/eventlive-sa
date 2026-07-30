@@ -1,11 +1,11 @@
 # EventLive Browser Source Probe
 
-Generated at: 2026-07-30T14:30:41.457Z
+Generated at: 2026-07-30T18:34:58.955Z
 
 ## Summary
 
 - Sources probed this run: 0
-- Fresh results available: 1
+- Fresh results available: 0
 - Browser network API: 0
 - Hydration payload: 0
 - Rendered HTML candidates: 0
@@ -16,7 +16,6 @@ Generated at: 2026-07-30T14:30:41.457Z
 
 | Priority | Source | Status | HTTP | Classification | Endpoints | Event links | Date snippets | Next action |
 |---:|---|---|---:|---|---:|---:|---:|---|
-| 59 | asharqia-chamber-events | error | 0 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
 
 ## Endpoint Candidates
 

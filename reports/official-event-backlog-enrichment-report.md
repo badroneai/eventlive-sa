@@ -1,11 +1,12 @@
 # EventLive Official Event Backlog Enrichment
-- Generated at: 2026-07-30T14:40:13.297Z
-- Targets: 1
-- Enriched: 1
-- Fetched: 1
-- Images: 1
+- Generated at: 2026-07-30T18:52:23.883Z
+- Targets: 2
+- Enriched: 2
+- Fetched: 2
+- Images: 2
 - Fetch failures: 0
 
 | Source | Event | Method | Image | Fetch |
 |---|---|---:|---:|---:|
-| Visit Saudi Seasons | Buraydah Dates Carnival | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Makers | Introduction to Photography: Understanding your Camera | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Makers | Woodworking Course (Level 1) with Ahmad Sofi | official-page-meta | yes | yes |

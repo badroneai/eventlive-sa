@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-30T14:48:08.192Z",
+  "generated_at": "2026-07-30T18:59:29.276Z",
   "entries": {
     "1f91543d6769d9abda47f221ba86f9f9ebf27443": {
       "source": "Skill Development Initiative",
@@ -49042,14 +49042,6 @@
       "method": "argos-mt",
       "translated_at": "2026-07-30T14:48:08.192Z"
     },
-    "0f156f2e12622bd48b939efe8b7b3a0e82560d40": {
-      "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of required disciplines declared at a rate not less than very good and at least 75%, and for graduates of non-Saudi Arabian universities, the equivalent of certificates is required from the Ministry of Higher Education.",
-      "method": "argos-mt",
-      "translated_at": "2026-07-30T14:48:08.192Z"
-    },
     "814876fb82f2623f95632dd6827a5139fb9ba28d": {
       "source": "Open Call International Cat Day Every rescued cat has a story. This International Cat Day, Hayy Cinema invites you to share yours. Submit a 30-second video telling the story of your rescued stray cat for a chance to be featured as part of our International Cat Day celebrations. Selected entries will receive complimentary tickets to attend our International Cat Day screening with their cat, along with special gifts from Dr. Paws Clinic.",
       "source_lang": "en",
@@ -49063,22 +49055,6 @@
       "source_lang": "en",
       "target_lang": "ar",
       "text": "اليوم الدولي للكرة كل قطة منقذة لديها قصة هذا اليوم الدولي للكرة، (هاي سينما) يدعوك لتشاركك قدم شريط فيديو 30 ثانية يروي قصة قطتك المفترسة المنقذة سَتَحْصلُ على دخولِ مختارةِ التذاكرِ المجاملةِ لدَفْع عرضِ عيدِ القطةِ الدوليِ مَع قطّتِها، إلى جانب هدايا خاصة مِنْ الدّكتورِ. عيادة الفوس وسواء كانت قصتكم تهتز القلب، أو غير متوقعة، أو تحتفل ببساطة بالسند الذي بنيته، نود أن نسمعه. العودة إلى ما هو على...",
-      "method": "argos-mt",
-      "translated_at": "2026-07-30T14:48:08.192Z"
-    },
-    "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
-      "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
-      "method": "argos-mt",
-      "translated_at": "2026-07-30T14:48:08.192Z"
-    },
-    "5c6a9ff87c6cdb115664bc8a097d521eadf27f9f": {
-      "source": "مركز الرياض للمعارض والمؤتمرات في ملهم",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "The Riyadh International Convention Exhibition Center in Inspiration",
       "method": "argos-mt",
       "translated_at": "2026-07-30T14:48:08.192Z"
     },
@@ -49489,6 +49465,126 @@
       "text": "Operational programmes",
       "method": "argos-mt",
       "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "b2ac886b513c274f49bd0463c703b8d97d599d14": {
+      "source": "الفعالية: Buraydah Dates Carnival",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "تاريخ الكرنفال",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T18:59:29.275Z"
+    },
+    "0f156f2e12622bd48b939efe8b7b3a0e82560d40": {
+      "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of not less than 75%, and the equivalent of certificates is required from the Ministry of Higher Education for non-Saudi Arabian university graduates.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T18:59:29.275Z"
+    },
+    "f90f5cb068a8ed550e039768e0cde8bdc0cf6d40": {
+      "source": "Hayy Makers | Woodworking Course (Level 1) with Ahmad Sofi",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "هاي ماكرز: دورة عمل خشبية (المستوى 1) مع أحمد صوفي",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T18:59:29.275Z"
+    },
+    "ba7bc87786ded216abf2719d2efca6ead5e79ca8": {
+      "source": "A three-day beginner to intermediate woodworking workshop where participants will learn the basics of hand tools, power tools, and workshop machines — and walk away with a serving tray! Learning Outcomes: Learn workshop safety protocols and proper use of PPE. Identify wood types, grain patterns, and cuts for material selection. Safely operate essential hand tools, power tools, and machines. Plan and lay out a design before cutting. Apply joinery techniques and test joint quality.",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مبتدئ لمدة ثلاثة أيام إلى ورشة عمل خشبية وسيطة سيتعلم فيها المشاركون أساسيات الأدوات اليدوية، وأدوات الطاقة، وآلات الورش - ويرحلون بصينة خدمة! &apos; 1` نتائج التعلم: بروتوكولات سلامة ورش العمل، والاستخدام السليم للمبادرة. تحديد أنواع الخشب، وأنماط الحبوب، وتخفيضات لاختيار المواد. تعمل بشكل آمن أدوات يدوية أساسية وأدوات طاقة وآلات نخطط ونضع تصميم قبل القطع تطبيق تقنيات الانضمام واختبار الجودة المشتركة.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T18:59:29.275Z"
+    },
+    "324adea0883dc95700b4e35441336291bb4dea18": {
+      "source": "١٥ أغسطس ٢٠٢٦ في ٠٦:٠٠ م إلى ١٦ أغسطس ٢٠٢٦ في ٠٩:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "15 August 2026 at 60:00 M to 16 August 2026 at 90:00 M",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T18:59:29.275Z"
+    },
+    "98332344c4d5c262540d0635a56ea136df5903a5": {
+      "source": "الفعالية: Hayy Makers | Woodworking Course (Level 1) with Ahmad Sofi",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الحلقة الدراسية عن الأعمال الخشبية (المستوى 1) مع أحمد صوفي",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T18:59:29.275Z"
+    },
+    "09f9756774e8b0f361eb60de243615913bfe4e7e": {
+      "source": "النافذة الزمنية: ١٥ أغسطس ٢٠٢٦ في ٠٦:٠٠ م إلى ١٦ أغسطس ٢٠٢٦ في ٠٩:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 15 August 2026 at 60:00 m to 16 August 2026 in 90:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T18:59:29.275Z"
+    },
+    "3b32b29f703f6f7158ff7f6795d93242a78ed0e5": {
+      "source": "الموعد: ١٥ أغسطس ٢٠٢٦ في ٠٦:٠٠ م إلى ١٦ أغسطس ٢٠٢٦ في ٠٩:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 15 August 2026 at 60:00 m to 16 August 2026 at 90:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T18:59:29.275Z"
+    },
+    "28e86c47ff5885123a26172958016bc6da05d760": {
+      "source": "Hayy Makers | Introduction to Photography: Understanding your Camera",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "ترجمة:",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T18:59:29.275Z"
+    },
+    "679cce51b2a946a44ad2af0e6dab00d38085e40a": {
+      "source": "١٨ أغسطس ٢٠٢٦ في ٠٥:٠٠ م إلى ١٩ أغسطس ٢٠٢٦ في ٠٨:٣٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "18 August 2026 at 500 m to 19 August 2026 at 80:30 m",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T18:59:29.275Z"
+    },
+    "942437dbce453456a6e624b3ae97974d046c4dd6": {
+      "source": "الفعالية: Hayy Makers | Introduction to Photography: Understanding your Camera",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "ترجمة:",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T18:59:29.276Z"
+    },
+    "62270da65832dba5972a35d4004a32cd308fefff": {
+      "source": "النافذة الزمنية: ١٨ أغسطس ٢٠٢٦ في ٠٥:٠٠ م إلى ١٩ أغسطس ٢٠٢٦ في ٠٨:٣٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 18 August 2026 at 500 m to 19 August 2026 at 80:30 m",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T18:59:29.276Z"
+    },
+    "a8ee2ed095061052c0ad842bf56afa774c41caea": {
+      "source": "الموعد: ١٨ أغسطس ٢٠٢٦ في ٠٥:٠٠ م إلى ١٩ أغسطس ٢٠٢٦ في ٠٨:٣٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 18 August 2026 at 500 m to 19 August 2026 at 80:30 m",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T18:59:29.276Z"
+    },
+    "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
+      "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T18:59:29.276Z"
+    },
+    "5c6a9ff87c6cdb115664bc8a097d521eadf27f9f": {
+      "source": "مركز الرياض للمعارض والمؤتمرات في ملهم",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The Riyadh International Convention Exhibition Center in Inspiration",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T18:59:29.276Z"
     }
   }
 }

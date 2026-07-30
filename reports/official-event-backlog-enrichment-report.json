@@ -1,19 +1,29 @@
 {
-  "generated_at": "2026-07-30T14:40:13.297Z",
+  "generated_at": "2026-07-30T18:52:23.883Z",
   "totals": {
-    "targets": 1,
-    "enriched": 1,
-    "fetched": 1,
-    "images": 1,
+    "targets": 2,
+    "enriched": 2,
+    "fetched": 2,
+    "images": 2,
     "fetch_failures": 0
   },
   "enriched": [
     {
-      "id": "event-buraydah-dates-carnival",
-      "title": "Buraydah Dates Carnival",
-      "source_label": "Visit Saudi Seasons",
+      "id": "event-hayy-makers-introduction-to-photography-understanding-your-camera",
+      "title": "Hayy Makers | Introduction to Photography: Understanding your Camera",
+      "source_label": "Hayy Jameel What's On",
       "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/en/qassim/events/buraydah-dates-carnival",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-makers-introduction-to-photography-understanding-your-camera/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-makers-woodworking-course-level-1-with-ahmad-sofi",
+      "title": "Hayy Makers | Woodworking Course (Level 1) with Ahmad Sofi",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-makers-woodworking-course-level-1-with-ahmad-sofi-2/",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
