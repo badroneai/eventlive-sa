@@ -16,7 +16,16 @@ import { riyadhDateKey } from './riyadh-date-utils.mjs';
 // not, and neither did the three vanilla-JS client renderers baked into
 // dist/events.html, dist/today.html, dist/my-events.html.
 //
-// This test has three parts:
+// WO-7b corrective round: the WO-7 gate above only checked that the
+// range/continuation text was PRESENT in a card's markup somewhere. The
+// owner rejected that outcome on live review — the text was landing in
+// card-meta (or a meta/label line on the client renderers), never in the
+// prominent top date badge the owner actually looks at
+// (`.date-tab`/`.event-date-pill`/the date chip). "Present in the DOM,
+// invisible to the user" is now a class-ban: Part 4 below asserts actual
+// visibility (offsetParent + bounding box), not just text matching.
+//
+// This test has four parts:
 //   1. A static sweep of every public dist/**.html page (AR + dist/en/**)
 //      for server-rendered `<article class="card" data-event-start=...>`
 //      cards — both eventCard and homeEventCard emit that exact marker
@@ -33,6 +42,12 @@ import { riyadhDateKey } from './riyadh-date-utils.mjs';
 //      multi-day/single-day/ended events and read the rendered DOM — the
 //      static sweep can't see their cards because they don't exist until
 //      client JS runs.
+//   4. (WO-7b) A real-browser VISIBILITY audit — not text matching — at
+//      360px and 1280px, against both the real built pages and the three
+//      fixture surfaces, using the same algorithm the PM's own live-site
+//      audit uses: find `.date-tab` (falling back to a `.chip` carrying a
+//      digit + month name), require offsetParent !== null and a non-zero
+//      bounding box, and require at least two day numbers in its text.
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -220,6 +235,22 @@ function startServer() {
 const NOW = Date.now();
 const DAY_MS = 24 * 60 * 60 * 1000;
 
+// WO-7b bugfix: "NOW + N days" inherits whatever time-of-day the test
+// happens to run at. A single-day fixture built that way (start + a few
+// hours) can silently cross a Riyadh calendar-day boundary depending on
+// wall-clock time, making isMultiDayEvent() correctly — but flakily —
+// report it as multi-day. Anchor every fixture to a fixed, safe
+// mid-morning Riyadh time so day-count math is deterministic regardless
+// of when this test executes.
+function riyadhAnchor(daysFromNow) {
+  const base = new Date(NOW + daysFromNow * DAY_MS);
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    year: 'numeric', month: '2-digit', day: '2-digit', timeZone: 'Asia/Riyadh'
+  }).formatToParts(base).reduce((acc, part) => ({ ...acc, [part.type]: part.value }), {});
+  // 09:00 Riyadh (UTC+3) == 06:00 UTC — nowhere near a midnight boundary.
+  return new Date(`${parts.year}-${parts.month}-${parts.day}T06:00:00.000Z`).getTime();
+}
+
 function fixtureEvent(overrides) {
   return {
     id: 'fixture-multiday-upcoming',
@@ -259,172 +290,286 @@ function fixtureEvent(overrides) {
 const multiDayUpcoming = fixtureEvent({
   id: 'fixture-multiday-upcoming',
   title: 'Fixture Multi-Day Upcoming',
-  starts_at: new Date(NOW + 5 * DAY_MS).toISOString(),
-  ends_at: new Date(NOW + 8 * DAY_MS).toISOString(),
+  starts_at: new Date(riyadhAnchor(5)).toISOString(),
+  ends_at: new Date(riyadhAnchor(8)).toISOString(),
   status: 'upcoming',
   status_label: 'قادمة'
 });
 const singleDayUpcoming = fixtureEvent({
   id: 'fixture-singleday-upcoming',
   title: 'Fixture Single-Day Upcoming',
-  starts_at: new Date(NOW + 12 * DAY_MS).toISOString(),
-  ends_at: new Date(NOW + 12 * DAY_MS + 3 * 60 * 60 * 1000).toISOString(),
+  starts_at: new Date(riyadhAnchor(12)).toISOString(),
+  ends_at: new Date(riyadhAnchor(12) + 3 * 60 * 60 * 1000).toISOString(),
   status: 'upcoming',
   status_label: 'قادمة'
 });
 const multiDayEnded = fixtureEvent({
   id: 'fixture-multiday-ended',
   title: 'Fixture Multi-Day Ended',
-  starts_at: new Date(NOW - 10 * DAY_MS).toISOString(),
-  ends_at: new Date(NOW - 7 * DAY_MS).toISOString(),
+  starts_at: new Date(riyadhAnchor(-10)).toISOString(),
+  ends_at: new Date(riyadhAnchor(-7)).toISOString(),
   status: 'ended',
   status_label: 'منتهية'
 });
 
-async function runBrowserFixtures() {
-  const server = startServer();
-  await once(server, 'listening');
-  const browser = await chromium.launch();
+// WO-7b: read both the text AND the actual rendered visibility of a
+// card's date element, using the exact algorithm the PM's own live-site
+// audit uses — prefer `.date-tab`, fall back to a `.chip` carrying a
+// digit + month name, and only count it "visible" if it has a non-null
+// offsetParent and a non-zero-width bounding box. This is what catches
+// "present in the DOM, invisible to the user" (the owner's rejection).
+// Returns one row per data-event-start/-end card on the page, WITHOUT
+// pre-filtering to multi-day (that decision is made by the caller in
+// Node — a fixture surface needs the single-day card's row too, to prove
+// it does NOT get a false-positive dual-date element).
+function dualDateAuditFn() {
+  const cards = [...document.querySelectorAll('[data-event-start][data-event-end]')];
+  return cards.map((c) => {
+    const s = (c.dataset.eventStart || '').slice(0, 10);
+    const e = (c.dataset.eventEnd || '').slice(0, 10);
+    const st = c.dataset.eventStatus || '';
+    const dateEl = c.querySelector('.date-tab') || [...c.querySelectorAll('.chip')].find((x) => /\d/.test(x.textContent) && /(يناير|فبراير|مارس|أبريل|مايو|يونيو|يوليو|أغسطس|سبتمبر|أكتوبر|نوفمبر|ديسمبر|January|February|March|April|May|June|July|August|September|October|November|December)/.test(x.textContent));
+    const visible = Boolean(dateEl) && dateEl.offsetParent !== null && dateEl.getBoundingClientRect().width > 0;
+    const txt = dateEl ? dateEl.textContent.replace(/\s+/g, ' ').trim() : '(no date element)';
+    const nums = (txt.match(/[\d٠-٩]+/g) || []).length;
+    return {
+      start: c.dataset.eventStart,
+      end: c.dataset.eventEnd,
+      status: st,
+      isMultiDay: Boolean(s && e && s !== e),
+      dateText: txt,
+      visible,
+      dayNumbers: nums,
+      ok: visible && nums >= 2
+    };
+  });
+}
+
+const VIEWPORTS = [
+  { width: 360, height: 800, label: '360px' },
+  { width: 1280, height: 900, label: '1280px' }
+];
+
+async function runBrowserFixtures(browser, viewport) {
+  const context = await browser.newContext({ viewport: { width: viewport.width, height: viewport.height } });
   const results = {};
-  try {
-    // events.html: mock the events-catalog.json fetch with our fixture
-    // rows (the page's own eventsFeedUrl constant — not events.json).
-    {
-      const page = await browser.newPage();
-      await page.route('**/events-catalog.json', (route) => route.fulfill({
-        status: 200,
-        contentType: 'application/json',
-        body: JSON.stringify({
-          generated_at: new Date().toISOString(),
-          platform: 'EventLive',
-          canonical_domain: 'eventme.live',
-          catalog_source: 'fixture',
-          events: [multiDayUpcoming, singleDayUpcoming, multiDayEnded]
-        })
-      }));
-      await page.goto(`http://127.0.0.1:${port}/events.html`, { waitUntil: 'domcontentloaded' });
-      await page.waitForSelector('#eventGrid .event-card', { timeout: 8000 });
-      results.eventsHtml = await page.evaluate(() => {
-        const cards = [...document.querySelectorAll('#eventGrid .event-card')];
-        return cards.map((card) => ({
-          text: (card.textContent || '').replace(/\s+/g, ' ').trim(),
-          start: card.getAttribute('data-event-start'),
-          status: card.getAttribute('data-event-status')
-        }));
-      });
-      await page.close();
-    }
-
-    // today.html: mock the today.json fetch — renderCard only sees
-    // sortedActionable() rows, which already exclude ended events, so the
-    // ended fixture is intentionally left out of this payload's queue.
-    {
-      const page = await browser.newPage();
-      await page.route('**/today.json', (route) => route.fulfill({
-        status: 200,
-        contentType: 'application/json',
-        body: JSON.stringify({
-          generated_at: new Date().toISOString(),
-          platform: 'EventLive',
-          canonical_domain: 'eventme.live',
-          timezone: 'Asia/Riyadh',
-          intent: 'attendance',
-          storage_key: 'eventlive-saved-events',
-          queue: [multiDayUpcoming, singleDayUpcoming],
-          live_updates: [],
-          signals: {},
-          links: {}
-        })
-      }));
-      await page.goto(`http://127.0.0.1:${port}/today.html`, { waitUntil: 'domcontentloaded' });
-      await page.waitForSelector('.event-card', { timeout: 8000 });
-      results.todayHtml = await page.evaluate(() => {
-        const cards = [...document.querySelectorAll('.event-card')];
-        return cards.map((card) => ({
-          text: (card.textContent || '').replace(/\s+/g, ' ').trim(),
-          start: card.getAttribute('data-event-start'),
-          status: card.getAttribute('data-event-status')
-        }));
-      });
-      await page.close();
-    }
-
-    // my-events.html: seed localStorage with saved-event records (the
-    // shape eventSaveRecord() in dist/events.html actually writes) before
-    // the page's own render() runs on load.
-    {
-      const page = await browser.newPage();
-      const records = {};
-      for (const event of [multiDayUpcoming, singleDayUpcoming, multiDayEnded]) {
-        records[event.id] = {
-          id: event.id,
-          title: event.title,
-          organizer: event.organizer,
-          city: event.city,
-          venue: event.venue,
-          category: event.category,
-          starts_at: event.starts_at,
-          ends_at: event.ends_at,
-          detail_url: event.detail_url,
-          live_url: '',
-          calendar_url: event.calendar_url,
-          directions_url: '',
-          live_schedule_ready: false,
-          saved_at: new Date().toISOString()
-        };
-      }
-      await page.addInitScript((seed) => {
-        localStorage.setItem('eventlive-saved-events', JSON.stringify(seed));
-      }, records);
-      await page.goto(`http://127.0.0.1:${port}/my-events.html`, { waitUntil: 'domcontentloaded' });
-      await page.waitForSelector('.event-card', { timeout: 8000 });
-      // "all" view (default) surfaces every saved record including ended.
-      results.myEventsHtml = await page.evaluate(() => {
-        const cards = [...document.querySelectorAll('.event-card')];
-        return cards.map((card) => ({
-          text: (card.textContent || '').replace(/\s+/g, ' ').trim(),
-          start: card.getAttribute('data-event-start'),
-          status: card.getAttribute('data-event-status')
-        }));
-      });
-      await page.close();
-    }
-  } finally {
-    await browser.close();
-    server.close();
-    await once(server, 'close');
+  // events.html: mock the events-catalog.json fetch with our fixture
+  // rows (the page's own eventsFeedUrl constant — not events.json).
+  {
+    const page = await context.newPage();
+    await page.route('**/events-catalog.json', (route) => route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({
+        generated_at: new Date().toISOString(),
+        platform: 'EventLive',
+        canonical_domain: 'eventme.live',
+        catalog_source: 'fixture',
+        events: [multiDayUpcoming, singleDayUpcoming, multiDayEnded]
+      })
+    }));
+    await page.goto(`http://127.0.0.1:${port}/events.html`, { waitUntil: 'domcontentloaded' });
+    await page.waitForSelector('#eventGrid .event-card', { timeout: 8000 });
+    results.eventsHtml = await page.evaluate(dualDateAuditFn);
+    await page.close();
   }
+
+  // today.html: mock the today.json fetch — renderCard only sees
+  // sortedActionable() rows, which already exclude ended events, so the
+  // ended fixture is intentionally left out of this payload's queue.
+  {
+    const page = await context.newPage();
+    await page.route('**/today.json', (route) => route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({
+        generated_at: new Date().toISOString(),
+        platform: 'EventLive',
+        canonical_domain: 'eventme.live',
+        timezone: 'Asia/Riyadh',
+        intent: 'attendance',
+        storage_key: 'eventlive-saved-events',
+        queue: [multiDayUpcoming, singleDayUpcoming],
+        live_updates: [],
+        signals: {},
+        links: {}
+      })
+    }));
+    await page.goto(`http://127.0.0.1:${port}/today.html`, { waitUntil: 'domcontentloaded' });
+    await page.waitForSelector('.event-card', { timeout: 8000 });
+    results.todayHtml = await page.evaluate(dualDateAuditFn);
+    await page.close();
+  }
+
+  // my-events.html: seed localStorage with saved-event records (the
+  // shape eventSaveRecord() in dist/events.html actually writes) before
+  // the page's own render() runs on load.
+  {
+    const page = await context.newPage();
+    const records = {};
+    for (const event of [multiDayUpcoming, singleDayUpcoming, multiDayEnded]) {
+      records[event.id] = {
+        id: event.id,
+        title: event.title,
+        organizer: event.organizer,
+        city: event.city,
+        venue: event.venue,
+        category: event.category,
+        starts_at: event.starts_at,
+        ends_at: event.ends_at,
+        detail_url: event.detail_url,
+        live_url: '',
+        calendar_url: event.calendar_url,
+        directions_url: '',
+        live_schedule_ready: false,
+        saved_at: new Date().toISOString()
+      };
+    }
+    await page.addInitScript((seed) => {
+      localStorage.setItem('eventlive-saved-events', JSON.stringify(seed));
+    }, records);
+    await page.goto(`http://127.0.0.1:${port}/my-events.html`, { waitUntil: 'domcontentloaded' });
+    await page.waitForSelector('.event-card', { timeout: 8000 });
+    // "all" view (default) surfaces every saved record including ended.
+    results.myEventsHtml = await page.evaluate(dualDateAuditFn);
+    await page.close();
+  }
+
+  await context.close();
   return results;
 }
 
-const fixtures = await runBrowserFixtures();
+// WO-7b: weekend.html is a legacy/frozen page (see removeDeadEventLinks's
+// `legacyPages` list in scripts/generate-site.mjs) — its cards are static
+// HTML with no data-event-* attributes and no live JS renderer, so
+// neither the static sweep nor route-mocking can exercise it with real
+// multi-day data (as of this build it carries zero multi-day cards).
+// Inject a synthetic card using the exact markup/classes homeEventCard
+// would produce (.date-tab.date-tab-range, scoped via
+// ".event-cover .date-tab" in this file's own <style>) to prove the
+// mechanism renders visibly here too, per the coordinator's explicit
+// fallback instruction.
+async function runWeekendSyntheticCheck(browser, viewport) {
+  const context = await browser.newContext({ viewport: { width: viewport.width, height: viewport.height } });
+  const page = await context.newPage();
+  await page.goto(`http://127.0.0.1:${port}/weekend.html`, { waitUntil: 'domcontentloaded' });
+  const result = await page.evaluate(() => {
+    const article = document.createElement('article');
+    article.className = 'event-card';
+    article.setAttribute('data-event-start', '2026-08-31T09:00:00+03:00');
+    article.setAttribute('data-event-end', '2026-09-02T18:00:00+03:00');
+    article.setAttribute('data-event-status', 'upcoming');
+    article.innerHTML = '<a class="event-cover" href="#" style="display:block;position:relative;width:260px;height:140px;">' +
+      '<span class="date-tab date-tab-range">' +
+        '<span class="date-tab-part"><b>٣١</b><span>أغسطس</span></span>' +
+        '<span class="date-tab-sep" aria-hidden="true">–</span>' +
+        '<span class="date-tab-part"><b>٢</b><span>سبتمبر</span></span>' +
+      '</span>' +
+    '</a>';
+    document.body.appendChild(article);
+    const dateEl = article.querySelector('.date-tab');
+    const visible = Boolean(dateEl) && dateEl.offsetParent !== null && dateEl.getBoundingClientRect().width > 0;
+    const txt = dateEl ? dateEl.textContent.replace(/\s+/g, ' ').trim() : '';
+    const nums = (txt.match(/[\d٠-٩]+/g) || []).length;
+    article.remove();
+    return { visible, nums, txt };
+  });
+  await context.close();
+  assert.ok(result.visible, `weekend.html synthetic date-tab-range check @ ${viewport.label}: element not visible (the .event-cover .date-tab CSS scoping must still apply on this page)`);
+  assert.ok(result.nums >= 2, `weekend.html synthetic date-tab-range check @ ${viewport.label}: expected >=2 day numbers, got ${result.nums} (text: "${result.txt}")`);
+}
 
-function assertSurface(label, cards) {
-  assert.ok(cards.length >= 2, `${label}: expected at least the two non-ended fixture cards to render, got ${cards.length}`);
-  const multiDayCard = cards.find((card) => card.start === multiDayUpcoming.starts_at);
-  const singleDayCard = cards.find((card) => card.start === singleDayUpcoming.starts_at);
-  assert.ok(multiDayCard, `${label}: multi-day upcoming fixture card did not render`);
-  assert.ok(singleDayCard, `${label}: single-day upcoming fixture card did not render`);
+// WO-7b: real-page visibility sweep — navigate to actual built pages (not
+// fixtures) and run the same visibility audit against whatever multi-day
+// cards the current catalog happens to contain.
+const REAL_AUDIT_PAGES = [
+  'index.html',
+  'this-week.html',
+  'this-month.html',
+  'today-events.html',
+  'saudi-events-tomorrow.html',
+  'cities/riyadh.html',
+  'categories/culture-arts.html',
+  'en/index.html',
+  'en/this-week.html'
+];
+
+async function runRealPageVisibilityAudit(browser, viewport) {
+  const context = await browser.newContext({ viewport: { width: viewport.width, height: viewport.height } });
+  const page = await context.newPage();
+  const failures = [];
+  let cardsSeen = 0;
+  for (const relPage of REAL_AUDIT_PAGES) {
+    if (!fs.existsSync(path.join(distDir, relPage))) continue;
+    await page.goto(`http://127.0.0.1:${port}/${relPage}`, { waitUntil: 'domcontentloaded' });
+    await page.waitForTimeout(250);
+    const rows = (await page.evaluate(dualDateAuditFn)).filter((row) => row.isMultiDay && row.status !== 'ended');
+    cardsSeen += rows.length;
+    for (const row of rows) {
+      if (!row.ok) {
+        failures.push(`${relPage} @ ${viewport.label}: multi-day card (${row.start} → ${row.end}, status="${row.status}") dual-date element ${row.visible ? `visible but only ${row.dayNumbers} day number(s)` : 'not visible/found'} — text: "${row.dateText}"`);
+      }
+    }
+  }
+  await context.close();
+  return { failures, cardsSeen };
+}
+
+function assertFixtureSurface(label, viewportLabel, rows) {
+  assert.ok(rows.length >= 2, `${label} @ ${viewportLabel}: expected at least the two non-ended fixture cards to render, got ${rows.length}`);
+  const multiDayCard = rows.find((row) => row.start === multiDayUpcoming.starts_at);
+  const singleDayCard = rows.find((row) => row.start === singleDayUpcoming.starts_at);
+  assert.ok(multiDayCard, `${label} @ ${viewportLabel}: multi-day upcoming fixture card did not render`);
+  assert.ok(singleDayCard, `${label} @ ${viewportLabel}: single-day upcoming fixture card did not render`);
   assert.ok(
-    hasAcceptedMarker(multiDayCard.text),
-    `${label}: multi-day upcoming fixture card has no range/continuation marker — text: "${multiDayCard.text}"`
+    multiDayCard.ok,
+    `${label} @ ${viewportLabel}: multi-day upcoming fixture's date element is ${multiDayCard.visible ? `visible but only has ${multiDayCard.dayNumbers} day number(s)` : 'not visible'} — text: "${multiDayCard.dateText}"`
   );
   assert.ok(
-    !hasAcceptedMarker(singleDayCard.text),
-    `${label}: single-day upcoming fixture card unexpectedly shows a range marker (false positive) — text: "${singleDayCard.text}"`
+    !(singleDayCard.visible && singleDayCard.dayNumbers >= 2),
+    `${label} @ ${viewportLabel}: single-day upcoming fixture unexpectedly shows a dual-date element (false positive) — text: "${singleDayCard.dateText}"`
   );
-  const endedCard = cards.find((card) => card.status === 'ended');
+  const endedCard = rows.find((row) => row.status === 'ended');
   if (endedCard) {
     assert.ok(
-      !hasAcceptedMarker(endedCard.text),
-      `${label}: ended multi-day fixture card shows a range marker — ended events are archival and out of scope (doctrine: الإصلاح للقادم ليس لما فات) — text: "${endedCard.text}"`
+      !(endedCard.visible && endedCard.dayNumbers >= 2),
+      `${label} @ ${viewportLabel}: ended multi-day fixture shows a dual-date element — ended events are archival and out of scope (doctrine: الإصلاح للقادم ليس لما فات) — text: "${endedCard.dateText}"`
     );
   }
 }
 
-assertSurface('dist/events.html', fixtures.eventsHtml || []);
-assertSurface('dist/today.html', fixtures.todayHtml || []);
-assertSurface('dist/my-events.html', fixtures.myEventsHtml || []);
+const browser = await chromium.launch();
+const server = startServer();
+await once(server, 'listening');
 
-console.log('[multiday-card] synthetic-fixture coverage passed for events.html, today.html, my-events.html');
+let totalRealCardsSeen = 0;
+const realPageFailures = [];
+try {
+  for (const viewport of VIEWPORTS) {
+    const fixtures = await runBrowserFixtures(browser, viewport);
+    assertFixtureSurface('dist/events.html', viewport.label, fixtures.eventsHtml || []);
+    assertFixtureSurface('dist/today.html', viewport.label, fixtures.todayHtml || []);
+    assertFixtureSurface('dist/my-events.html', viewport.label, fixtures.myEventsHtml || []);
+
+    await runWeekendSyntheticCheck(browser, viewport);
+
+    const { failures, cardsSeen } = await runRealPageVisibilityAudit(browser, viewport);
+    totalRealCardsSeen += cardsSeen;
+    realPageFailures.push(...failures);
+  }
+} finally {
+  await browser.close();
+  server.close();
+  await once(server, 'close');
+}
+
+assert.equal(
+  realPageFailures.length,
+  0,
+  `${realPageFailures.length} real-page multi-day card(s) fail the visibility audit (present in DOM but not visibly showing both day numbers):\n${realPageFailures.slice(0, 25).join('\n')}${realPageFailures.length > 25 ? `\n...and ${realPageFailures.length - 25} more` : ''}`
+);
+assert.ok(totalRealCardsSeen > 0, 'the real-page visibility audit found zero multi-day cards across both viewports — the catalog snapshot must include at least one to exercise this gate');
+
+console.log(`[multiday-card] visibility audit (360px + 1280px): ${totalRealCardsSeen} real multi-day cards checked across ${REAL_AUDIT_PAGES.length} pages, 0 failures`);
+console.log('[multiday-card] synthetic-fixture + visibility coverage passed for events.html, today.html, my-events.html, and weekend.html (synthetic)');
 console.log(`[multiday-card] all checks passed: ${staticSummary.arCardsSeen + staticSummary.enCardsSeen} cards swept, ${staticSummary.arMultiDayCardsSeen + staticSummary.enMultiDayCardsSeen} multi-day, 0 failures`);
