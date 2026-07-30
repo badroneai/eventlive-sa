@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-30T09:06:03.705Z",
+  "generated_at": "2026-07-30T14:48:08.192Z",
   "entries": {
     "1f91543d6769d9abda47f221ba86f9f9ebf27443": {
       "source": "Skill Development Initiative",
@@ -48818,22 +48818,6 @@
       "method": "argos-mt",
       "translated_at": "2026-07-29T17:26:39.456Z"
     },
-    "0f156f2e12622bd48b939efe8b7b3a0e82560d40": {
-      "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of not less than 75%, and the equivalent of certificates is required from the Ministry of Higher Education for non-Saudi Arabian university graduates.",
-      "method": "argos-mt",
-      "translated_at": "2026-07-30T09:06:03.705Z"
-    },
-    "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
-      "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
-      "method": "argos-mt",
-      "translated_at": "2026-07-30T09:06:03.705Z"
-    },
     "bf3bd6bbefd0ea1187929b72850770fc8cf75ca4": {
       "source": "الأجندة الرسمية لـLEAP 2026: 408 جلسة مكتملة الوقت ضمن 31 أغسطس إلى 3 سبتمبر 2026.",
       "source_lang": "ar",
@@ -48871,14 +48855,6 @@
       "source_lang": "ar",
       "target_lang": "en",
       "text": "12 theatres and hall.",
-      "method": "argos-mt",
-      "translated_at": "2026-07-30T09:06:03.705Z"
-    },
-    "5c6a9ff87c6cdb115664bc8a097d521eadf27f9f": {
-      "source": "مركز الرياض للمعارض والمؤتمرات في ملهم",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "The Riyadh International Convention Exhibition Center in Inspiration",
       "method": "argos-mt",
       "translated_at": "2026-07-30T09:06:03.705Z"
     },
@@ -49025,6 +49001,494 @@
       "text": "صخرة وقود نهائي",
       "method": "argos-mt",
       "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "3278e159e98f34a50358807f9715c62846fcce6b": {
+      "source": "١ أغسطس ٢٠٢٦ في ٠٤:٣٠ م إلى ١٥ أكتوبر ٢٠٢٦ في ١٠:٣٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "1 August 2026 at 40.30 m to 15 October 2026 at 10.30 m",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "7fb4ccecf94a20fdb63549fc0f2a984894ddb4a5": {
+      "source": "النافذة الزمنية: ١ أغسطس ٢٠٢٦ في ٠٤:٣٠ م إلى ١٥ أكتوبر ٢٠٢٦ في ١٠:٣٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 1 August 2026 at 40.30 m to 15 October 2026 at 10.30 m",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "453eabca999cdb1e15d02caddd7d7c18671269e3": {
+      "source": "المدينة: Qassim",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "City: Qassim",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "9bd634e6db0892a5db6aa5899766726b2e55416b": {
+      "source": "الموقع: Qassim",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Location: Qassim",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "0307ffb7ca5e3aa6a2d9bed9f1c08d4a7d2edcba": {
+      "source": "الموعد: ١ أغسطس ٢٠٢٦ في ٠٤:٣٠ م إلى ١٥ أكتوبر ٢٠٢٦ في ١٠:٣٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 1 August 2026 at 40.30 m to 15 October 2026 at 10.30 m",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "0f156f2e12622bd48b939efe8b7b3a0e82560d40": {
+      "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of required disciplines declared at a rate not less than very good and at least 75%, and for graduates of non-Saudi Arabian universities, the equivalent of certificates is required from the Ministry of Higher Education.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "814876fb82f2623f95632dd6827a5139fb9ba28d": {
+      "source": "Open Call International Cat Day Every rescued cat has a story. This International Cat Day, Hayy Cinema invites you to share yours. Submit a 30-second video telling the story of your rescued stray cat for a chance to be featured as part of our International Cat Day celebrations. Selected entries will receive complimentary tickets to attend our International Cat Day screening with their cat, along with special gifts from Dr. Paws Clinic.",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "اليوم الدولي للكرة كل قطة منقذة لديها قصة هذا اليوم الدولي للكرة، (هاي سينما) يدعوك لتشاركك قدم شريط فيديو 30 ثانية يروي قصة قطتك المفترسة المنقذة سَتَحْصلُ على دخولِ مختارةِ التذاكرِ المجاملةِ لدَفْع عرضِ عيدِ القطةِ الدوليِ مَع قطّتِها، إلى جانب هدايا خاصة مِنْ الدّكتورِ. عيادة الفوس",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "ae026e6fd1c7610d87e12b1a915fba63402fe140": {
+      "source": "Open Call International Cat Day Every rescued cat has a story. This International Cat Day, Hayy Cinema invites you to share yours. Submit a 30-second video telling the story of your rescued stray cat for a chance to be featured as part of our International Cat Day celebrations. Selected entries will receive complimentary tickets to attend our International Cat Day screening with their cat, along with special gifts from Dr. Paws Clinic. Whether your story is heartwarming, unexpected, or simply celebrates the bond you’ve built, we’d love to hear it. Back to what's on -->",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "اليوم الدولي للكرة كل قطة منقذة لديها قصة هذا اليوم الدولي للكرة، (هاي سينما) يدعوك لتشاركك قدم شريط فيديو 30 ثانية يروي قصة قطتك المفترسة المنقذة سَتَحْصلُ على دخولِ مختارةِ التذاكرِ المجاملةِ لدَفْع عرضِ عيدِ القطةِ الدوليِ مَع قطّتِها، إلى جانب هدايا خاصة مِنْ الدّكتورِ. عيادة الفوس وسواء كانت قصتكم تهتز القلب، أو غير متوقعة، أو تحتفل ببساطة بالسند الذي بنيته، نود أن نسمعه. العودة إلى ما هو على...",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
+      "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "5c6a9ff87c6cdb115664bc8a097d521eadf27f9f": {
+      "source": "مركز الرياض للمعارض والمؤتمرات في ملهم",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The Riyadh International Convention Exhibition Center in Inspiration",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "cd188d99263af62950a0ed82100f1285d04f89ff": {
+      "source": "The Heart of Tunisia’s Ecosystem: People, Policies, and Perseverance",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "قلب النظام الإيكولوجي التونسي: الناس والسياسات والمثابرة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "d3ce86cd7832ec575ef521db7ffd103a273f8abd": {
+      "source": "معسكر تصميم وتصنيع الدوائر الإلكترونية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Electronic Chambers Design and Industrialization Camp",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "dcf4e8808cc9e0f03d64c6350c607342db59e9fc": {
+      "source": "يهدف معسكر تصميم الدوائر الإلكترونية (PCB) إلى تزويد المشاركين بالمعرفة الأساسية والمهارات العملية في تصميم اللوحات الإلكترونية المطبوعة، بدءًا من قراءة المخطط الكهربائي وحتى إعداد ملفات التصنيع الجاهزة للإنتاج. المصدر الرسمي: أكاديمية طويق.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The PB Design Camp aims to provide participants with basic knowledge and practical skills in the design of printed electronic boards, beginning with the reading of the electrical scheme and the preparation of ready-to-product manufacturing files. Official source: Tuwaiq Academy.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "b38d903d7f6b245c41a9487d46f0fbf6e6f8062f": {
+      "source": "يهدف معسكر تصميم الدوائر الإلكترونية (PCB) إلى تزويد المشاركين بالمعرفة الأساسية والمهارات العملية في تصميم اللوحات الإلكترونية المطبوعة، بدءًا من قراءة المخطط الكهربائي وحتى إعداد ملفات التصنيع الجاهزة للإنتاج. يعتمد المعسكر على التعلم التطبيقي القائم على المشاريع، حيث يتدرب المشاركون على تحليل المخططات، اختيار المكونات، تصميم اللوحات الإلكترونية، والتحقق من جاهزيتها للتصنيع. بنهاية المعسكر سيتمكن المشاركون من تصميم لوحة PCB كاملة وقابلة للتصنيع.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The PB Design Camp aims to provide participants with basic knowledge and practical skills in the design of printed electronic boards, beginning with the reading of the electrical scheme and the preparation of ready-to-product manufacturing files. The camp relies on applied project-based learning, where participants are trained to analyse the schemes, select components, design the electronic boards and verify their readiness for industrialization. By the end of the camp, the participants will be able to design a full and industrialization PCB.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "29fdae2271b6e592a9584e79feb8df47ba10674e": {
+      "source": "تقديم تجربة تعليمية متكاملة تبدأ من التصميم الرقمي وتنتهي بـ التجميع والاختبار.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Provide an integrated learning experience that starts with digital design and ends with compilation and testing.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "39d7451a8842ed9d3b4dfc89b8787bbcbd8da1cb": {
+      "source": "تدريب عملي مكثف على استخدام EDA Tools ومعايير إعداد ملفات التصنيع.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Intensive hands-on training on EDA Tools and processing standards.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "d39f10d8e0f1a8b02eb8d1fd547ad0c28cbf3792": {
+      "source": "تمكين المشاركين من تحويل تصاميمهم إلى نماذج أولية (Prototypes) قابلة للتشغيل.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Enable participants to convert their designs into prototypes (Pr) o Totypes is operational.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "7d8707bac52b05d283caa03680ba27f1d0e97272": {
+      "source": "فهم أساسيات تصميم الدوائر الإلكترونية المطبوعة (PCB Design Fundamentals).",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "They are the basics of the design of printed electronic services (PCB Design Fundamentals).",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "f5dcb7f89162b6dfdbd0ee3783aa8bc1df60e64b": {
+      "source": "التمييز بين Schematic Symbols وFootprints واستخدامها بالشكل الصحيح.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The distinction between Schematic Symbols and Footprints and their proper use.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "41b9d4c927d5da57e70b39c343676d9fda7c003c": {
+      "source": "التعرف على قواعد التصميم الكهربائي والميكانيكي للـ PCB.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Identification of PCB electrical and mechanical design rules.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "09088c775dfb6ce9c078c91baeae3f482bd169b1": {
+      "source": "فهم طبقات اللوحة الإلكترونية ووظيفة كل طبقة ودورها في الأداء والجودة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "They are the layers of the electronic board, the function of each layer, its role in performance and quality.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "0db2d0e6dc53d768270e009b309919cf3c988120": {
+      "source": "تعلم أسس اختيار المكونات الإلكترونية بما يتناسب مع متطلبات الأداء والاعتمادية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Learn the basis for selecting electronic components in line with performance and accreditation requirements.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "d5a3ac4d1ead637924d7e0a8cb2619f8a57a6a3a": {
+      "source": "رسم مخططات كهربائية صحيحة باستخدام أدوات التصميم المعتمدة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Painting correct electrical schemes using approved design tools.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "0dddf20938f841861032310df63086b41c78974d": {
+      "source": "تصميم PCB Layout وفق معايير السلامة والجودة الصناعية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "PCB Layout design according to safety and industrial quality standards.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "bdbc97a3f67c23b6f9662c90053ed693fc885bd3": {
+      "source": "تطبيق قواعد Design Rule Check (DRC) واكتشاف أخطاء التصميم ومعالجتها.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Application of Design Rule Check (DRC) rules and detection and processing of design errors.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "c622093aa746fa177be22b22050c0f34a1841d72": {
+      "source": "تجميع واختبار دوائر إلكترونية حقيقية من تصميم المشاركين أنفسهم.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Compilation and testing of real electronic services from the design of participants themselves.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "0a8a7049fa9b06907f47152aa195e235a83863c4": {
+      "source": "تنفيذ مشروع تصميم PCB متكامل من البداية وحتى الاختبار النهائي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Implementation of the PCB design project from the beginning to the final test.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "a4eb0b47689cb56058190d2e15430767f3576b9c": {
+      "source": "منهجية تعليمية قائمة على المشاريع والتطبيق العملي لضمان اكتساب المهارات بشكل فعّال.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Project-based learning methodology and practical application to ensure effective skills acquisition.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "053db396cc02426d67b20ddfabc548e9f2230148": {
+      "source": "محتوى متدرّج يربط بين تصميم PCB ومهارات اللحام والتجميع والاختبار.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "PCB design, welding skills, assembly and testing.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "56916bee62e33ddffa6ad90510d08ee2dcffb47f": {
+      "source": "تدريب على EDA Tools والأدوات المستخدمة في السوق الهندسي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Training on EDA Tools and tools used in the engineering market.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "95c184a2fb0c8b440a2aada7ad3acacf0cea27f3": {
+      "source": "بيئة تعليمية داعمة تحاكي الواقع الصناعي في تصميم وتصنيع اللوحات الالكترونية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A supportive educational environment that stimulates industrial realities in the design and manufacture of electronic boards.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "ec7f6b0f4324549b48d16dc4b711ecc7625a0a89": {
+      "source": "أنشطة ومشاريع تطبيقية لتعزيز الفهم العملي وترسيخ المفاهيم.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Applied activities and projects to promote practical understanding and entrench concepts.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "83985d9ce0cd2d51d20354bf983a124104443f86": {
+      "source": "إشراف مباشر من مدربين وخبراء متخصصين في تصميم الدوائر الإلكترونية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Direct supervision by trainers and experts specializing in the design of electronic services.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "7c53281f59c2f40df8807c4a7eda1dae41651df8": {
+      "source": "تقديم إرشاد مستمر وتغذية راجعة خلال جميع مراحل التصميم والتنفيذ.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Provide continuous guidance and feedback during all stages of design and implementation.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "a88081d3020c714c4efa1dcc0911475ed6faffa4": {
+      "source": "دعم تقني متواصل للإجابة على الاستفسارات ومعالجة التحديات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Ongoing technical support to respond to queries and address challenges.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "89c591e374308a2f4762b456364eb9c7ce599291": {
+      "source": "تنفيذ مشاريع PCB حقيقية قابلة للإضافة إلى السيرة الذاتية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Implementation of real PCB projects that can be added to the biographical.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "77a1a06632b61afbf722b3c9a10ba137081fc9de": {
+      "source": "بناء Portfolio تقني يعكس المهارات المكتسبة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Building Portfolio technically reflects acquired skills.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "b7e3e59b1fde918842c01c9893a853f227298c96": {
+      "source": "تعزيز الجاهزية للعمل في مجالات الإلكترونيات والتصنيع.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Enhance the readiness to work in the areas of electronics and manufacturing.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "54d913d81082f5b1ffd651fafbf5db194ea8b70d": {
+      "source": "شهادة حضور معتمدة من الأكاديمية عند إتمام المعسكر بنجاح.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Accredited attendance certificate from the Academy upon successful completion of the camp.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "008f9ad58cd3ab9ffd25725bf311a1220ec92321": {
+      "source": "التخصّص في إحدى المجالات التالية: الهندسة، التقنية، أو الفيزياء.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Specialization in one of the following areas: engineering, technology or physics.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "123f28d6e79ba9a3c0390665b4960afdd2d41134": {
+      "source": "امتلاك معرفة متوسطة في الدوائر الإلكترونية والعناصر الإلكترونية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Possession of medium knowledge in electronic circuits and electronic components.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "9216c507b076be42f9f3b9325333220d5d923ce5": {
+      "source": "معسكر الذكاء الاصطناعي للقادة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Commanders' artificial intelligence camp",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "1ce32297e5c09bd33500b640a5bfa29afac1f7eb": {
+      "source": "معسكر تنفيذي يقام افتراضيًا يهدف إلى تمكين القادة والمديرين من فهم كيفية عمل الذكاء الاصطناعي في تشكيل المؤسسات وكيفية قيادته بفعالية، يشمل البرنامج تعلّم المشاركين تطوير رؤية واستراتيجية للذكاء الاصطناعي، تقييم جاهزية منظمتهم، والتعامل ... المصدر الرسمي: أكاديمية طويق.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A virtual operational camp aimed at enabling leaders and managers to understand how artificial intelligence works in the formation and effective leadership of institutions, the programme includes learning participants to develop a vision and strategy for artificial intelligence, assessing their organization &apos; s readiness and dealing... Official source: Tuwaiq Academy.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "9cb82a3498128a069c1c3637f0aa3acc13ed848b": {
+      "source": "معسكر تنفيذي يقام افتراضيًا يهدف إلى تمكين القادة والمديرين من فهم كيفية عمل الذكاء الاصطناعي في تشكيل المؤسسات وكيفية قيادته بفعالية، يشمل البرنامج تعلّم المشاركين تطوير رؤية واستراتيجية للذكاء الاصطناعي، تقييم جاهزية منظمتهم، والتعامل مع التحديات الأخلاقية والتغيير التنظيمي لكي يتمكنوا من قيادة التحول الرقمي والذكاء الاصطناعي بنجاح.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A virtual operational camp aimed at enabling leaders and managers to understand how artificial intelligence works in the formation and effective leadership of institutions, including learning participants to develop a vision and strategy for artificial intelligence, assessing their organization &apos; s readiness and dealing with ethical challenges and organizational change so that they can successfully lead digital transformation and artificial intelligence.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "729c65f347d10319ec5db1e99b92888a2fcab988": {
+      "source": "فهم كيفية تغيير الذكاء الاصطناعي للمنظمات وعملياتها.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Understanding how to change the artificial intelligence of organizations and their processes.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "af8275cdd76a37039dfbbc033b7b9f5261435695": {
+      "source": "استكشاف مفهوم الشركات \"المولودة مع AI\" وكيف يمكن الاستفادة من ذلك.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Explore the concept of AI and how to use it.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "2000c6cffc349f8cf169a6ca45b80157e745d74d": {
+      "source": "اكتشاف فرص الذكاء الاصطناعي التوليدي (Generative AI) والتعلم الآلي عبر الوظائف التنظيمية المختلفة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Discovering opportunities for reproductive synthetic intelligence (Generative AI) and automatic learning across different organizational functions.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "ea7a16ec20ee1b9d50739181a23527a72d9927ae": {
+      "source": "تقييم جاهزية المنظمة للذكاء الاصطناعي وتحديد الفجوات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Assess the organization &apos; s readiness to artificial intelligence and identify gaps.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "d1e10be8a58452998da858d95c60e933d5b21656": {
+      "source": "تطوير استراتيجية ذكية للذكاء الاصطناعي تمنح ميزة تنافسية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Developing a smart strategy for artificial intelligence gives a competitive advantage.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "035f9ae27f3ff0658ff5250ab5125604c5f20d05": {
+      "source": "فهم التحديات الأخلاقية المرتبطة بتطبيق الذكاء الاصطناعي وكيفية التعامل معها بشكل مسؤول.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Understanding the ethical challenges associated with the application of artificial intelligence and how to deal with it responsibly.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "0faa17562351e4e76723a7948967583cad1fadc7": {
+      "source": "شهادة احترافية AI For Leaders من Harvard Business School",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مدرسة هارفارد للأعمال التجارية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "41bc59d55734a6b2818e0e2d55c7ee80ab37030a": {
+      "source": "فهم استراتيجي للذكاء الاصطناعي: تمكين القادة من استيعاب تأثيرات الذكاء الاصطناعي على نماذج الأعمال واتخاذ القرار.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Strategic understanding of artificial intelligence: enabling leaders to absorb the effects of artificial intelligence on business models and decision-making.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "138a3372ce63687d101edc5a1b3039b678d6dc63": {
+      "source": "ربط التقنية والأعمال: التركيز على كيفية توظيف الذكاء الاصطناعي لتحقيق قيمة تجارية حقيقية وليس فقط فهمه تقنياً.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Linking technology and work: focusing on how to employ artificial intelligence to achieve real business value, not just technical understanding.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "319f1357f6fb7f18e084fc9f788581d296bf7c7e": {
+      "source": "اتخاذ قرارات مبنية على البيانات: تعزيز القدرة على استخدام البيانات والتحليلات لدعم القرارات القيادية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Data-based decisions: enhancing data and analysis capacity to support leadership decisions.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "30aa2c43368422af679cb276c20772a62f8c35eb": {
+      "source": "حالات دراسية من الواقع: التعلم من تجارب شركات عالمية في تطبيقات الذكاء الاصطناعي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Study cases from reality: learning from the experiences of global companies in artificial intelligence applications.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "f1492750ac82aa93dee4063aabbc836c3f0e5af8": {
+      "source": "قيادة التحول الرقمي: تطوير مهارات قيادة التغيير داخل المؤسسات في عصر الذكاء الاصطناعي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Digital transformation leadership: development of enterprise change leadership skills in the age of artificial intelligence.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "8cdeb67bc6ae2860d196b5d6abebd6efbf88ea1c": {
+      "source": "فهم المخاطر والأخلاقيات: التطرق إلى حوكمة الذكاء الاصطناعي، الخصوصية، والتحيزات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Understanding risks and ethics: addressing artificial intelligence, privacy and prejudice.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "96e2b87fc2987df444c5c05bedaa19774b0936ce": {
+      "source": "خبرة سابقة في إدارة الأعمال أو قيادة الفرق لفترة من ٥ سنوات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Previous experience in business management or team leadership for a period of five years.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "7a55d0747d1c41e64129024ab185763016195dd2": {
+      "source": "الالتزام بإكمال جميع الوحدات والأنشطة التفاعلية للدورة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Commitment to complete all units and interactive activities of the session.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "6162f0814a00fb59b472f2ae90e247c69c0641f1": {
+      "source": "لا يشترط خبرة تقنية في الذكاء الاصطناعي أو خلفية أكاديمية محددة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Technical expertise in artificial intelligence or specific academic background is not required.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
+    },
+    "74b86b4eca40c4899da4c8f4cdb990574bab2434": {
+      "source": "البرامج التنفيذية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Operational programmes",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T14:48:08.192Z"
     }
   }
 }

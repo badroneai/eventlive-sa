@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-30T08:56:44.102Z",
+  "generated_at": "2026-07-30T14:38:48.081Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 30,
-    "enriched": 29,
+    "targets": 32,
+    "enriched": 31,
     "failed": 1
   },
   "enriched": [
@@ -222,6 +222,22 @@
       "goals": 3,
       "features": 12,
       "requirements": 5
+    },
+    {
+      "id": "event-معسكر-تصميم-وتصنيع-الدوائر-الإلكترونية",
+      "title": "معسكر تصميم وتصنيع الدوائر الإلكترونية",
+      "slug": "Qkx3OxvG",
+      "goals": 13,
+      "features": 13,
+      "requirements": 7
+    },
+    {
+      "id": "event-معسكر-الذكاء-الاصطناعي-للقادة",
+      "title": "معسكر الذكاء الاصطناعي للقادة",
+      "slug": "9L6Ey6VA",
+      "goals": 6,
+      "features": 7,
+      "requirements": 4
     },
     {
       "id": "event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud",

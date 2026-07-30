@@ -1,10 +1,10 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-30T08:56:41.939Z
+- published_at: 2026-07-30T14:38:46.127Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 564
-- published_new: 0
+- candidates_seen: 567
+- published_new: 3
 - linked_existing: 524
 - blocked_remaining: 40
 - duplicate_review_alerts: 8
@@ -25,6 +25,9 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
+| candidate-visit-saudi-seasons-buraydah-dates-carnival-20260801-24906534 | published | event-buraydah-dates-carnival | Buraydah Dates Carnival |
+| candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-وتصنيع-الدوائر-الإلكترونية-20260927-2db6d0c7 | published | event-معسكر-تصميم-وتصنيع-الدوائر-الإلكترونية | معسكر تصميم وتصنيع الدوائر الإلكترونية |
+| candidate-tuwaiq-academy-bootcamps-معسكر-الذكاء-الاصطناعي-للقادة-20260927-91a5daba | published | event-معسكر-الذكاء-الاصطناعي-للقادة | معسكر الذكاء الاصطناعي للقادة |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -188,23 +191,23 @@
 | candidate-ithra-events-echoes-of-the-familiar-20260730-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-ithra-events-printing-house-20260730-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
 | candidate-ithra-events-tafasahu-make-room-20260730-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
-| candidate-ithra-events-summer-youth-program-20260730-a20f7a11 | linked-existing | event-summer-youth-program | already linked to catalog event |
 | candidate-ithra-events-tinkering-stations-20260730-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
-| candidate-ithra-events-childrens-art-studio-20260730-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
-| candidate-ithra-events-family-challenges-20260730-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
-| candidate-ithra-events-emboss-printing-experience-20260730-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
-| candidate-ithra-events-spot-of-inspiration-20260730-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
-| candidate-ithra-events-childrens-museum-story-time-20260730-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260730-ef7080ff | linked-existing | event-trivia-night-earth-quest-tic-tac-know | already linked to catalog event |
 | candidate-ithra-events-energy-lab-20260730-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
+| candidate-ithra-events-childrens-art-studio-20260730-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
 | candidate-ithra-events-games-hub-20260730-fb83124c | linked-existing | event-games-hub | already linked to catalog event |
 | candidate-ithra-events-nu-power-20260730-653464ac | linked-existing | event-nu-power | already linked to catalog event |
-| candidate-ithra-events-the-moral-of-the-story-20260730-bfa3f2a8 | linked-existing | event-the-moral-of-the-story | already linked to catalog event |
+| candidate-ithra-events-childrens-museum-story-time-20260730-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
+| candidate-ithra-events-family-challenges-20260730-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
+| candidate-ithra-events-emboss-printing-experience-20260730-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-ithra-events-grand-art-space-20260730-e3acefbb | linked-existing | event-grand-art-space | already linked to catalog event |
+| candidate-ithra-events-the-moral-of-the-story-20260730-bfa3f2a8 | linked-existing | event-the-moral-of-the-story | already linked to catalog event |
 | candidate-ithra-events-museum-story-time-20260730-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
+| candidate-ithra-events-spot-of-inspiration-20260730-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
 | candidate-visit-saudi-seasons-ahlam-concert-20260730-e7ce43fa | linked-existing | event-ahlam-concert | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-20260731-4a38d19e | linked-existing | event-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-2 | already linked to catalog event |
 | candidate-mdlbeast-events-unstable-20260731-5647df2e | linked-existing | event-unstable | already linked to catalog event |
+| candidate-ithra-events-summer-youth-program-20260731-a20f7a11 | linked-existing | event-summer-youth-program | already linked to catalog event |
 | candidate-ithra-events-stories-from-ithras-library-20260731-4116de16 | linked-existing | event-stories-from-ithras-library | already linked to catalog event |
 | candidate-ithra-events-the-non-stop-spin-20260731-6cf89742 | linked-existing | event-the-non-stop-spin | already linked to catalog event |
 | candidate-ithra-events-open-art-space-20260731-40aac166 | linked-existing | event-open-art-space | already linked to catalog event |
@@ -491,9 +494,9 @@
 | candidate-riyadh-city-events-next-gen-iot-expo-20261221-dfb4907e | linked-existing | event-next-gen-iot-expo | already linked to catalog event |
 | candidate-asharqia-chamber-events-معرض-وظائف-2026-20261227-6ec9f54f | linked-existing | event-معرض-وظائف-2026 | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-الإدارة-المكتبية-في-جازان-بالتعاون-مع-أكاديمية-20270101-91502b5d | linked-existing | event-دبلوم-الإدارة-المكتبية | already linked to catalog event |
-| candidate-umm-al-qura-events-دبلوم-متوسط-في-أمن-المعلومات-20270101-feb1a3e5 | linked-existing | event-دبلوم-متوسط-في-أمن-المعلومات | already linked to catalog event |
-| candidate-umm-al-qura-events-دبلوم-متوسط-في-إدارة-الموارد-البشرية-20270101-4dde5b0c | linked-existing | event-دبلوم-متوسط-في-إدارة-الموارد-البشرية | already linked to catalog event |
-| candidate-umm-al-qura-events-دبلوم-متوسط-في-التكنولوجيا-المالية-20270101-33bcbf77 | linked-existing | event-دبلوم-المتوسط-في-التكنولوجيا-المالية | already linked to catalog event |
+| candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-امن-المعلومات-في-الرياض-الخبر-بالتعاون-مع-معهد-20270101-feb1a3e5 | linked-existing | event-دبلوم-متوسط-في-أمن-المعلومات | already linked to catalog event |
+| candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-ادارة-الموارد-البشرية-في-الخبر-بالتعاون-مع-معه-20270101-4dde5b0c | linked-existing | event-دبلوم-متوسط-في-إدارة-الموارد-البشرية | already linked to catalog event |
+| candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-التكنولوجيا-المالية-في-الرياض-الخير-بالتعاون-م-20270101-33bcbf77 | linked-existing | event-دبلوم-المتوسط-في-التكنولوجيا-المالية | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المشارك-في-إدارة-المرافق-في-جازان-بالتعاون-مع-أكاديمية-غر-20270101-9b731ba4 | linked-existing | event-دبلوم-إدارة-المرافق | already linked to catalog event |
 | candidate-riyadh-city-events-afc-asian-cup-saudi-arabia-2027-tickets-20270107-7c0e1015 | linked-existing | event-afc-asian-cup-saudi-arabia-2027-tickets | already linked to catalog event |
 | candidate-experience-alula-events-ultra-gobi-alula-20270113-fe4957f7 | linked-existing | event-ultra-gobi-alula | already linked to catalog event |

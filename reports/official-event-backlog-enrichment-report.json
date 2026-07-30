@@ -1,12 +1,23 @@
 {
-  "generated_at": "2026-07-30T08:58:38.905Z",
+  "generated_at": "2026-07-30T14:40:13.297Z",
   "totals": {
-    "targets": 0,
-    "enriched": 0,
-    "fetched": 0,
-    "images": 0,
+    "targets": 1,
+    "enriched": 1,
+    "fetched": 1,
+    "images": 1,
     "fetch_failures": 0
   },
-  "enriched": [],
+  "enriched": [
+    {
+      "id": "event-buraydah-dates-carnival",
+      "title": "Buraydah Dates Carnival",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/qassim/events/buraydah-dates-carnival",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    }
+  ],
   "failed": []
 }

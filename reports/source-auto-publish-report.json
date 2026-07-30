@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-07-30T08:56:41.939Z",
+  "published_at": "2026-07-30T14:38:46.127Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 564,
+  "candidates_seen": 567,
   "totals": {
-    "candidates_seen": 564,
-    "published": 0,
+    "candidates_seen": 567,
+    "published": 3,
     "linked_existing": 524,
     "blocked": 40,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 524
+    "reconciled": 527
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -163,7 +163,23 @@
       "start_date_drift_days": 0.125
     }
   ],
-  "published": [],
+  "published": [
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-buraydah-dates-carnival-20260801-24906534",
+      "event_id": "event-buraydah-dates-carnival",
+      "title": "Buraydah Dates Carnival"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-وتصنيع-الدوائر-الإلكترونية-20260927-2db6d0c7",
+      "event_id": "event-معسكر-تصميم-وتصنيع-الدوائر-الإلكترونية",
+      "title": "معسكر تصميم وتصنيع الدوائر الإلكترونية"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-الذكاء-الاصطناعي-للقادة-20260927-91a5daba",
+      "event_id": "event-معسكر-الذكاء-الاصطناعي-للقادة",
+      "title": "معسكر الذكاء الاصطناعي للقادة"
+    }
+  ],
   "linked_existing": [
     {
       "candidate_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c",
@@ -1144,45 +1160,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-summer-youth-program-20260730-a20f7a11",
-      "event_id": "event-summer-youth-program",
-      "title": "Summer Youth Program",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-tinkering-stations-20260730-5a2c4c0e",
       "event_id": "event-tinkering-stations",
       "title": "Tinkering Stations",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260730-2bf92d17",
-      "event_id": "event-childrens-art-studio",
-      "title": "Children's Art Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-family-challenges-20260730-3726c868",
-      "event_id": "event-family-challenges",
-      "title": "Family Challenges",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260730-2671d1ce",
-      "event_id": "event-emboss-printing-experience",
-      "title": "Emboss Printing Experience",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260730-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260730-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -1198,6 +1178,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260730-2bf92d17",
+      "event_id": "event-childrens-art-studio",
+      "title": "Children's Art Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-games-hub-20260730-fb83124c",
       "event_id": "event-games-hub",
       "title": "Games Hub",
@@ -1210,9 +1196,21 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-the-moral-of-the-story-20260730-bfa3f2a8",
-      "event_id": "event-the-moral-of-the-story",
-      "title": "The Moral of the Story",
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260730-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-family-challenges-20260730-3726c868",
+      "event_id": "event-family-challenges",
+      "title": "Family Challenges",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260730-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
       "reason": "already linked to catalog event"
     },
     {
@@ -1222,9 +1220,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-the-moral-of-the-story-20260730-bfa3f2a8",
+      "event_id": "event-the-moral-of-the-story",
+      "title": "The Moral of the Story",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-museum-story-time-20260730-1104734c",
       "event_id": "event-museum-story-time",
       "title": "Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260730-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
       "reason": "already linked to catalog event"
     },
     {
@@ -1243,6 +1253,12 @@
       "candidate_id": "candidate-mdlbeast-events-unstable-20260731-5647df2e",
       "event_id": "event-unstable",
       "title": "Unstable",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-summer-youth-program-20260731-a20f7a11",
+      "event_id": "event-summer-youth-program",
+      "title": "Summer Youth Program",
       "reason": "already linked to catalog event"
     },
     {
@@ -2962,21 +2978,21 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-دبلوم-متوسط-في-أمن-المعلومات-20270101-feb1a3e5",
+      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-امن-المعلومات-في-الرياض-الخبر-بالتعاون-مع-معهد-20270101-feb1a3e5",
       "event_id": "event-دبلوم-متوسط-في-أمن-المعلومات",
-      "title": "دبلوم متوسط في (أمن المعلومات)",
+      "title": "الترشح للدبلوم المتوسط في امن المعلومات في ( الرياض- الخبر ) بالتعاون مع معهد مهارات السعودية العالي للتدريب",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-دبلوم-متوسط-في-إدارة-الموارد-البشرية-20270101-4dde5b0c",
+      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-ادارة-الموارد-البشرية-في-الخبر-بالتعاون-مع-معه-20270101-4dde5b0c",
       "event_id": "event-دبلوم-متوسط-في-إدارة-الموارد-البشرية",
-      "title": "دبلوم متوسط في (إدارة الموارد البشرية)",
+      "title": "الترشح للدبلوم المتوسط في ادارة الموارد البشرية في ( الخبر ) بالتعاون مع معهد مهارات السعودية العالي للتدريب",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-دبلوم-متوسط-في-التكنولوجيا-المالية-20270101-33bcbf77",
+      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-التكنولوجيا-المالية-في-الرياض-الخير-بالتعاون-م-20270101-33bcbf77",
       "event_id": "event-دبلوم-المتوسط-في-التكنولوجيا-المالية",
-      "title": "دبلوم متوسط في (التكنولوجيا المالية)",
+      "title": "الترشح للدبلوم المتوسط في التكنولوجيا المالية في ( الرياض _ الخير ) بالتعاون مع معهد مهارات السعودية العالي للتدريب",
       "reason": "already linked to catalog event"
     },
     {
