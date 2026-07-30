@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-07-30T03:35:00.514Z",
+  "published_at": "2026-07-30T08:56:41.939Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -1156,18 +1156,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260730-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260730-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-childrens-art-studio-20260730-2bf92d17",
       "event_id": "event-childrens-art-studio",
       "title": "Children's Art Studio",
@@ -1183,6 +1171,18 @@
       "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260730-2671d1ce",
       "event_id": "event-emboss-printing-experience",
       "title": "Emboss Printing Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260730-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260730-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -2956,33 +2956,33 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-دبلوم-الإدارة-المكتبية-20270101-91502b5d",
+      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-الإدارة-المكتبية-في-جازان-بالتعاون-مع-أكاديمية-20270101-91502b5d",
       "event_id": "event-دبلوم-الإدارة-المكتبية",
-      "title": "دبلوم الإدارة المكتبية",
+      "title": "الترشح للدبلوم المتوسط في الإدارة المكتبية في جازان بالتعاون مع أكاديمية غرفة جازان.",
       "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-umm-al-qura-events-دبلوم-متوسط-في-أمن-المعلومات-20270101-feb1a3e5",
       "event_id": "event-دبلوم-متوسط-في-أمن-المعلومات",
-      "title": "دبلوم متوسط في أمن المعلومات",
+      "title": "دبلوم متوسط في (أمن المعلومات)",
       "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-umm-al-qura-events-دبلوم-متوسط-في-إدارة-الموارد-البشرية-20270101-4dde5b0c",
       "event_id": "event-دبلوم-متوسط-في-إدارة-الموارد-البشرية",
-      "title": "دبلوم متوسط في إدارة الموارد البشرية",
+      "title": "دبلوم متوسط في (إدارة الموارد البشرية)",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-دبلوم-المتوسط-في-التكنولوجيا-المالية-20270101-33bcbf77",
+      "candidate_id": "candidate-umm-al-qura-events-دبلوم-متوسط-في-التكنولوجيا-المالية-20270101-33bcbf77",
       "event_id": "event-دبلوم-المتوسط-في-التكنولوجيا-المالية",
-      "title": "دبلوم المتوسط في التكنولوجيا المالية",
+      "title": "دبلوم متوسط في (التكنولوجيا المالية)",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-دبلوم-إدارة-المرافق-20270101-9b731ba4",
+      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المشارك-في-إدارة-المرافق-في-جازان-بالتعاون-مع-أكاديمية-غر-20270101-9b731ba4",
       "event_id": "event-دبلوم-إدارة-المرافق",
-      "title": "دبلوم إدارة المرافق",
+      "title": "الترشح للدبلوم المشارك في إدارة المرافق في جازان بالتعاون مع أكاديمية غرفة جازان.",
       "reason": "already linked to catalog event"
     },
     {
@@ -3304,9 +3304,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-دبلوم-التحول-الرقمي-20271201-5cace3ad",
+      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-التحول-الرقمي-في-جازان-بالتعاون-مع-أكاديمية-غر-20271201-5cace3ad",
       "event_id": "event-دبلوم-التحول-الرقمي",
-      "title": "دبلوم التحول الرقمي",
+      "title": "الترشح للدبلوم المتوسط في التحول الرقمي في جازان بالتعاون مع أكاديمية غرفة جازان.",
       "reason": "already linked to catalog event"
     }
   ],

@@ -1,15 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-07-30T03:35:01.548Z
-- pdf_crop_assignments: 56
+- generated_at: 2026-07-30T08:56:43.543Z
+- pdf_crop_assignments: 55
 - verified: 54
-- struck: 2
+- struck: 1
 - slots_seen_this_cycle: 59
 
 ## Struck (fell back to generated cover)
 
 - سمره (visit-saudi-summer-2026-p005-top-left.jpg) - identity-mismatch - page 5 top-left is now "برندة"
-- الأسبوع الصيني (visit-saudi-summer-2026-p060-top-left.jpg) - slot-vacated - no dated card currently occupies page 60 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 

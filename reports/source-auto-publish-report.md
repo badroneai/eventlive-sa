@@ -1,6 +1,6 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-30T03:35:00.514Z
+- published_at: 2026-07-30T08:56:41.939Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 564
@@ -190,11 +190,11 @@
 | candidate-ithra-events-tafasahu-make-room-20260730-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
 | candidate-ithra-events-summer-youth-program-20260730-a20f7a11 | linked-existing | event-summer-youth-program | already linked to catalog event |
 | candidate-ithra-events-tinkering-stations-20260730-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
-| candidate-ithra-events-spot-of-inspiration-20260730-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
-| candidate-ithra-events-childrens-museum-story-time-20260730-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-childrens-art-studio-20260730-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
 | candidate-ithra-events-family-challenges-20260730-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
 | candidate-ithra-events-emboss-printing-experience-20260730-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
+| candidate-ithra-events-spot-of-inspiration-20260730-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
+| candidate-ithra-events-childrens-museum-story-time-20260730-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260730-ef7080ff | linked-existing | event-trivia-night-earth-quest-tic-tac-know | already linked to catalog event |
 | candidate-ithra-events-energy-lab-20260730-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
 | candidate-ithra-events-games-hub-20260730-fb83124c | linked-existing | event-games-hub | already linked to catalog event |
@@ -490,11 +490,11 @@
 | candidate-hayy-jameel-events-hayy-cinema-aflamna-20261220-6a9439e4 | linked-existing | event-hayy-cinema-aflamna-2 | already linked to catalog event |
 | candidate-riyadh-city-events-next-gen-iot-expo-20261221-dfb4907e | linked-existing | event-next-gen-iot-expo | already linked to catalog event |
 | candidate-asharqia-chamber-events-معرض-وظائف-2026-20261227-6ec9f54f | linked-existing | event-معرض-وظائف-2026 | already linked to catalog event |
-| candidate-umm-al-qura-events-دبلوم-الإدارة-المكتبية-20270101-91502b5d | linked-existing | event-دبلوم-الإدارة-المكتبية | already linked to catalog event |
+| candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-الإدارة-المكتبية-في-جازان-بالتعاون-مع-أكاديمية-20270101-91502b5d | linked-existing | event-دبلوم-الإدارة-المكتبية | already linked to catalog event |
 | candidate-umm-al-qura-events-دبلوم-متوسط-في-أمن-المعلومات-20270101-feb1a3e5 | linked-existing | event-دبلوم-متوسط-في-أمن-المعلومات | already linked to catalog event |
 | candidate-umm-al-qura-events-دبلوم-متوسط-في-إدارة-الموارد-البشرية-20270101-4dde5b0c | linked-existing | event-دبلوم-متوسط-في-إدارة-الموارد-البشرية | already linked to catalog event |
-| candidate-umm-al-qura-events-دبلوم-المتوسط-في-التكنولوجيا-المالية-20270101-33bcbf77 | linked-existing | event-دبلوم-المتوسط-في-التكنولوجيا-المالية | already linked to catalog event |
-| candidate-umm-al-qura-events-دبلوم-إدارة-المرافق-20270101-9b731ba4 | linked-existing | event-دبلوم-إدارة-المرافق | already linked to catalog event |
+| candidate-umm-al-qura-events-دبلوم-متوسط-في-التكنولوجيا-المالية-20270101-33bcbf77 | linked-existing | event-دبلوم-المتوسط-في-التكنولوجيا-المالية | already linked to catalog event |
+| candidate-umm-al-qura-events-الترشح-للدبلوم-المشارك-في-إدارة-المرافق-في-جازان-بالتعاون-مع-أكاديمية-غر-20270101-9b731ba4 | linked-existing | event-دبلوم-إدارة-المرافق | already linked to catalog event |
 | candidate-riyadh-city-events-afc-asian-cup-saudi-arabia-2027-tickets-20270107-7c0e1015 | linked-existing | event-afc-asian-cup-saudi-arabia-2027-tickets | already linked to catalog event |
 | candidate-experience-alula-events-ultra-gobi-alula-20270113-fe4957f7 | linked-existing | event-ultra-gobi-alula | already linked to catalog event |
 | candidate-experience-alula-events-alula-arts-festival-20270115-3e7c4732 | linked-existing | event-alula-arts-festival | already linked to catalog event |
@@ -548,7 +548,7 @@
 | candidate-hayy-jameel-events-hayy-cinema-aflamna-20270720-4db4173f | linked-existing | event-hayy-cinema-aflamna | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-july-2026-20270720-0b9a2284 | linked-existing | event-hayy-cinema-2 | already linked to catalog event |
 | candidate-qassim-university-events-استضافة-مؤتمر-ieee-mecom-2027-20271101-510cb4b1 | linked-existing | event-استضافة-مؤتمر-ieee-mecom-2027 | already linked to catalog event |
-| candidate-umm-al-qura-events-دبلوم-التحول-الرقمي-20271201-5cace3ad | linked-existing | event-دبلوم-التحول-الرقمي | already linked to catalog event |
+| candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-التحول-الرقمي-في-جازان-بالتعاون-مع-أكاديمية-غر-20271201-5cace3ad | linked-existing | event-دبلوم-التحول-الرقمي | already linked to catalog event |
 | candidate-discover-aseer-events-sammrah-20260528-0784ea5b | blocked | event-sammrah | possible duplicate requires review: exact-title-city-source-conflict |
 | candidate-discover-aseer-events-sound-of-abha-fest-saf-20260620-737104ee | blocked | event-sound-of-abha-fest-saf | possible duplicate requires review: exact-title-city-source-conflict |
 | candidate-visit-saudi-calendar-aseer-season-20260625-2fc92ef9 | blocked | - | linked catalog row event-aseer-season was superseded by dedupe |

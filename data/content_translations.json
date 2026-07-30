@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-30T03:43:14.588Z",
+  "generated_at": "2026-07-30T09:06:03.705Z",
   "entries": {
     "1f91543d6769d9abda47f221ba86f9f9ebf27443": {
       "source": "Skill Development Initiative",
@@ -48822,9 +48822,9 @@
       "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
       "source_lang": "ar",
       "target_lang": "en",
-      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of required disciplines declared at a rate not less than very good and at least 75%, and for graduates of non-Saudi Arabian universities, the equivalent of certificates is required from the Ministry of Higher Education.",
+      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of not less than 75%, and the equivalent of certificates is required from the Ministry of Higher Education for non-Saudi Arabian university graduates.",
       "method": "argos-mt",
-      "translated_at": "2026-07-30T03:43:14.587Z"
+      "translated_at": "2026-07-30T09:06:03.705Z"
     },
     "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
       "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
@@ -48832,7 +48832,47 @@
       "target_lang": "en",
       "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
       "method": "argos-mt",
-      "translated_at": "2026-07-30T03:43:14.587Z"
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "bf3bd6bbefd0ea1187929b72850770fc8cf75ca4": {
+      "source": "الأجندة الرسمية لـLEAP 2026: 408 جلسة مكتملة الوقت ضمن 31 أغسطس إلى 3 سبتمبر 2026.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "LLEAP 2026: 408 completed meetings within 31 August to 3 September 2026.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "341afd206d8e296f2131835bca986c6e8c66d379": {
+      "source": "408 جلسة بوقت بداية ونهاية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "408 meetings at the beginning and end",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "d584b0138546e13c355f328d329e93ff30beb29d": {
+      "source": "12 قاعة ومسرح",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "12 halls and theater.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "8760a08a8aa3499855a7d4e3d4424233c26f63b4": {
+      "source": "408 جلسة رسمية منشورة في أجندة LEAP 2026",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "408 formal meetings published in LEAP 2026",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "ff7c933a0a40cc35fb49b353a892ad9b7d4a7295": {
+      "source": "12 مسرحًا وقاعة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "12 theatres and hall.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
     },
     "5c6a9ff87c6cdb115664bc8a097d521eadf27f9f": {
       "source": "مركز الرياض للمعارض والمؤتمرات في ملهم",
@@ -48840,7 +48880,151 @@
       "target_lang": "en",
       "text": "The Riyadh International Convention Exhibition Center in Inspiration",
       "method": "argos-mt",
-      "translated_at": "2026-07-30T03:43:14.587Z"
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "c4a2b4119eb860856663fe6e85e076352eae3a78": {
+      "source": "Tourism’s AI Takeover: Reinventing Travel through Agentic Tourism",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "استرداد نفقات السياحة: إعادة اختراع السفر عبر السياحة العميلة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "f848d7323c3d09f4cc11bdee5f2b3b380d4ae705": {
+      "source": "Urban Whispers: Bringing Cities to Life, A Live Journey into Real-Time Digital Twin Intelligence",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "سكان الحضر: جلب المدن إلى الحياة، و A Live Journey في الوقت الحقيقي",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "3f5e00cf889f5945575ebb1c1ea18f7d7aa5e347": {
+      "source": "From Smart Tech to Wise Cities The Leadership Decisions That Shape the Future",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "من تقنية ذكية إلى مدن الحكيم قرارات القيادة التي تتقاسم المستقبل",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "42b2f4fc583eb782917b88173673221f62f4f450": {
+      "source": "Leading sectorial adoption race toward productivity and impact: AI/ ET Adoption Champions",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "سباق التبني القطاعي نحو الإنتاجية والتأثير: بطولات الاعتماد",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "c32a350021778fdf667b15521357f36629968b46": {
+      "source": "Welcome Address - Round 4",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "كلمة ترحيب - الجولة 4",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "27cfc9a841d97f68fbde42b1d84abd7723916ea2": {
+      "source": "Built for Millions, Trusted by Billions: Rethinking Digital Infrastructure That Works for Everyone",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "بناء لملايين الدولارات، يثق بها البلايين: إعادة التفكير في الهياكل الأساسية الرقمية هذا يصلح للجميع",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "60a96dba3f723c2477d511f22c1d33b90fc2e592": {
+      "source": "Qatar's: Inclusive by Design-Talent, AI, and the Future of Digital Societies",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "قطر: شاملة عن طريق التصميم والتصميم ومستقبل الجمعيات الرقمية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "492181654eaf24ef3fc609952eab063456276391": {
+      "source": "LEAP Nights - AstroLabs Saudi Connect 2026: Your Saudi Expansion & Growth Clinic",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "ليالي (ليب) - رائد الفضاء السعودية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "9eda128ce688f283a9bb388a525eb7bacace8df8": {
+      "source": "Japan's Blueprint for Saudi Arabia's AI Future",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مخطط اليابان لمستقبل المملكة العربية السعودية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "0309c2b588ff2619e754528b611c75c373229f44": {
+      "source": "Welcome Address - Round 6",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "كلمة ترحيب - الجولة 6",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "73dbdc71fcd3383f9bfc1a54ed9ea123fe6fed5e": {
+      "source": "Technology in the protection of audiovisual content",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "التكنولوجيا في حماية المحتوى السمعي البصري",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "cad74779f2977cab5540d057c5008d8168aac88e": {
+      "source": "Reserved for Dentsu",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "محجوزة لدينتسو",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "6ea335075300e7b7bdb48953665cf7457074db56": {
+      "source": "Playing, Training, and Competing in Virtual Environments",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "اللعب والتدريب والتنافس في البيئات الافتراضية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "b628bfcced3c682c9c99a6f3bca7ef88f8084856": {
+      "source": "Productivity Mastery",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الماجستير في الإنتاجية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "94f48f3176568a81b60a84d5c20c8f84185068fd": {
+      "source": "The Rise of the \"AI Factory\": From Megawatts to Gigawatts",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "من ميغاوات إلى غيغاوات",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "541a030981354c728562f5b8470511864da21512": {
+      "source": "Service Governance at Enterprise and National Scale",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "إدارة الخدمات في المشاريع والمسار الوطني",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "4e300baf9f3c1b184908328779570096a384436e": {
+      "source": "Beyond Heart Rate: Building the Next Generation of Sports Sensors",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "ما بعد معدل نبضات القلب: بناء الجيل القادم من أجهزة الاستشعار الرياضية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
+    },
+    "b46fd5cc9b25e02f062434f64afcf1adf712935d": {
+      "source": "Rocket Fuel Finale Pitches",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "صخرة وقود نهائي",
+      "method": "argos-mt",
+      "translated_at": "2026-07-30T09:06:03.705Z"
     }
   }
 }
