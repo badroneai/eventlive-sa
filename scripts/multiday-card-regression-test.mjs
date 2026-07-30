@@ -235,6 +235,22 @@ function startServer() {
 const NOW = Date.now();
 const DAY_MS = 24 * 60 * 60 * 1000;
 
+// WO-7b bugfix: "NOW + N days" inherits whatever time-of-day the test
+// happens to run at. A single-day fixture built that way (start + a few
+// hours) can silently cross a Riyadh calendar-day boundary depending on
+// wall-clock time, making isMultiDayEvent() correctly — but flakily —
+// report it as multi-day. Anchor every fixture to a fixed, safe
+// mid-morning Riyadh time so day-count math is deterministic regardless
+// of when this test executes.
+function riyadhAnchor(daysFromNow) {
+  const base = new Date(NOW + daysFromNow * DAY_MS);
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    year: 'numeric', month: '2-digit', day: '2-digit', timeZone: 'Asia/Riyadh'
+  }).formatToParts(base).reduce((acc, part) => ({ ...acc, [part.type]: part.value }), {});
+  // 09:00 Riyadh (UTC+3) == 06:00 UTC — nowhere near a midnight boundary.
+  return new Date(`${parts.year}-${parts.month}-${parts.day}T06:00:00.000Z`).getTime();
+}
+
 function fixtureEvent(overrides) {
   return {
     id: 'fixture-multiday-upcoming',
@@ -274,24 +290,24 @@ function fixtureEvent(overrides) {
 const multiDayUpcoming = fixtureEvent({
   id: 'fixture-multiday-upcoming',
   title: 'Fixture Multi-Day Upcoming',
-  starts_at: new Date(NOW + 5 * DAY_MS).toISOString(),
-  ends_at: new Date(NOW + 8 * DAY_MS).toISOString(),
+  starts_at: new Date(riyadhAnchor(5)).toISOString(),
+  ends_at: new Date(riyadhAnchor(8)).toISOString(),
   status: 'upcoming',
   status_label: 'قادمة'
 });
 const singleDayUpcoming = fixtureEvent({
   id: 'fixture-singleday-upcoming',
   title: 'Fixture Single-Day Upcoming',
-  starts_at: new Date(NOW + 12 * DAY_MS).toISOString(),
-  ends_at: new Date(NOW + 12 * DAY_MS + 3 * 60 * 60 * 1000).toISOString(),
+  starts_at: new Date(riyadhAnchor(12)).toISOString(),
+  ends_at: new Date(riyadhAnchor(12) + 3 * 60 * 60 * 1000).toISOString(),
   status: 'upcoming',
   status_label: 'قادمة'
 });
 const multiDayEnded = fixtureEvent({
   id: 'fixture-multiday-ended',
   title: 'Fixture Multi-Day Ended',
-  starts_at: new Date(NOW - 10 * DAY_MS).toISOString(),
-  ends_at: new Date(NOW - 7 * DAY_MS).toISOString(),
+  starts_at: new Date(riyadhAnchor(-10)).toISOString(),
+  ends_at: new Date(riyadhAnchor(-7)).toISOString(),
   status: 'ended',
   status_label: 'منتهية'
 });
