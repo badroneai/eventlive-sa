@@ -1,12 +1,10 @@
 # EventLive Official Event Backlog Enrichment
-- Generated at: 2026-07-30T18:52:23.883Z
-- Targets: 2
-- Enriched: 2
-- Fetched: 2
-- Images: 2
+- Generated at: 2026-07-30T20:00:53.054Z
+- Targets: 0
+- Enriched: 0
+- Fetched: 0
+- Images: 0
 - Fetch failures: 0
 
 | Source | Event | Method | Image | Fetch |
 |---|---|---:|---:|---:|
-| Hayy Jameel What's On | Hayy Makers | Introduction to Photography: Understanding your Camera | official-page-meta | yes | yes |
-| Hayy Jameel What's On | Hayy Makers | Woodworking Course (Level 1) with Ahmad Sofi | official-page-meta | yes | yes |

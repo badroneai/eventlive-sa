@@ -1,33 +1,12 @@
 {
-  "generated_at": "2026-07-30T18:52:23.883Z",
+  "generated_at": "2026-07-30T20:00:53.054Z",
   "totals": {
-    "targets": 2,
-    "enriched": 2,
-    "fetched": 2,
-    "images": 2,
+    "targets": 0,
+    "enriched": 0,
+    "fetched": 0,
+    "images": 0,
     "fetch_failures": 0
   },
-  "enriched": [
-    {
-      "id": "event-hayy-makers-introduction-to-photography-understanding-your-camera",
-      "title": "Hayy Makers | Introduction to Photography: Understanding your Camera",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayy-makers-introduction-to-photography-understanding-your-camera/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-makers-woodworking-course-level-1-with-ahmad-sofi",
-      "title": "Hayy Makers | Woodworking Course (Level 1) with Ahmad Sofi",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayy-makers-woodworking-course-level-1-with-ahmad-sofi-2/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    }
-  ],
+  "enriched": [],
   "failed": []
 }
