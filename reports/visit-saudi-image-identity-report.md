@@ -1,14 +1,15 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-07-29T17:17:54.561Z
+- generated_at: 2026-07-30T03:35:01.548Z
 - pdf_crop_assignments: 56
-- verified: 55
-- struck: 1
-- slots_seen_this_cycle: 60
+- verified: 54
+- struck: 2
+- slots_seen_this_cycle: 59
 
 ## Struck (fell back to generated cover)
 
 - سمره (visit-saudi-summer-2026-p005-top-left.jpg) - identity-mismatch - page 5 top-left is now "برندة"
+- الأسبوع الصيني (visit-saudi-summer-2026-p060-top-left.jpg) - slot-vacated - no dated card currently occupies page 60 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 
@@ -55,7 +56,6 @@
 - فعالية رمي السهام (visit-saudi-summer-2026-p057-top-left.jpg)
 - عروض الفنون الأدائية التقليدية (visit-saudi-summer-2026-p057-bottom-left.jpg)
 - صيف وسمرة (visit-saudi-summer-2026-p012-top-left.jpg)
-- الأسبوع الصيني (visit-saudi-summer-2026-p060-top-left.jpg)
 - أوركسترا Harry Potter (visit-saudi-summer-2026-p060-bottom-left.jpg)
 - صيف وِرث 2026 (visit-saudi-summer-2026-p012-top-right.jpg)
 - عرض ستاند أب كوميدي مع شاكر الشريف (visit-saudi-summer-2026-p038-bottom-left.jpg)

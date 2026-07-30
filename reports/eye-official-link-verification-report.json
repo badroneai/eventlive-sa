@@ -1,12 +1,12 @@
 {
   "schema": "eventlive.eye-official-link-verification.v1",
-  "generated_at": "2026-07-29T17:17:46.024Z",
+  "generated_at": "2026-07-30T03:34:54.286Z",
   "dry_run": false,
   "totals": {
     "targets": 12,
-    "confirmed": 3,
+    "confirmed": 0,
     "skipped": 0,
-    "failed": 9
+    "failed": 12
   },
   "rows": [
     {
@@ -30,58 +30,20 @@
     {
       "candidate_id": "candidate-eye-of-riyadh-events-hrse-ksa-20260830-6945a87a",
       "title": "HRSE KSA",
-      "status": "confirmed",
-      "official_url": "https://informaconnect.com/hrse-saudi/",
-      "official_image_url": "https://knect365.imgix.net/uploads/Drive-business-growth-9027b25db46f6666b1fa03da26592367.png?auto=format&fit=max&w=400",
-      "organizer": "Informa",
-      "confirmed": true,
-      "reason": "confirmed",
-      "title_tokens": [
-        "hrse"
-      ],
-      "matched_title_tokens": [
-        "hrse"
-      ],
-      "year_confirmed": true,
-      "month_confirmed": true
+      "status": "failed",
+      "reason": "HTTP 403"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-big-5-construct-saudi-20260830-2238e3a0",
       "title": "Big 5 Construct Saudi",
-      "status": "confirmed",
-      "official_url": "https://www.big5constructsaudi.com/",
-      "official_image_url": "",
-      "organizer": "dmg events",
-      "confirmed": true,
-      "reason": "confirmed",
-      "title_tokens": [
-        "big",
-        "construct"
-      ],
-      "matched_title_tokens": [
-        "big",
-        "construct"
-      ],
-      "year_confirmed": true,
-      "month_confirmed": true
+      "status": "failed",
+      "reason": "HTTP 403"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-hvac-r-saudi-arabia-20260830-857b2f5b",
       "title": "HVAC R Saudi Arabia",
-      "status": "confirmed",
-      "official_url": "https://www.big5constructsaudi.com/specialised-events/hvacr-ksa/",
-      "official_image_url": "",
-      "organizer": "dmg events",
-      "confirmed": true,
-      "reason": "confirmed",
-      "title_tokens": [
-        "hvac"
-      ],
-      "matched_title_tokens": [
-        "hvac"
-      ],
-      "year_confirmed": true,
-      "month_confirmed": true
+      "status": "failed",
+      "reason": "HTTP 403"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-saudi-fm-clean-20260830-cbe48152",
