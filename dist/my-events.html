@@ -1,28 +1,25 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23131f24'/%3E%3Ctext x='32' y='39' font-family='Arial' font-size='20' font-weight='800' text-anchor='middle' fill='%23ffffff'%3EEM%3C/text%3E%3C/svg%3E" />
-  <link rel="manifest" href="./manifest.webmanifest" />
-  <meta name="theme-color" content="#00877f" />
+<!DOCTYPE html><html lang="ar-SA" dir="rtl" data-locale="ar-SA"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <meta name="theme-color" content="#00877f">
 
-  <link rel="canonical" href="https://eventme.live/my-events.html" />
-  <link rel="alternate" hreflang="x-default" href="https://eventme.live/my-events.html" />
-  <link rel="alternate" hreflang="ar-SA" href="https://eventme.live/my-events.html" />
-  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
-  <meta name="description" content="سجل فعالياتك المحفوظة محلياً على EventLive مع تصدير تقويم وروابط مباشرة. EventLive يعرض الوقت الحي، المدينة، الموقع، المصدر، روابط التقويم والاتجاهات لتجربة حضور أوضح في فعاليات السعودية." />
-  <meta property="og:locale" content="ar_SA" />
-  <meta property="og:site_name" content="EventLive" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="EventLive | فعالياتي" />
-  <meta property="og:description" content="سجل فعالياتك المحفوظة محلياً على EventLive مع تصدير تقويم وروابط مباشرة. EventLive يعرض الوقت الحي، المدينة، الموقع، المصدر، روابط التقويم والاتجاهات لتجربة حضور أوضح في فعاليات السعودية." />
-  <meta property="og:url" content="https://eventme.live/my-events.html" />
-  <meta property="og:image" content="https://eventme.live/assets/eventlive-hero.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="EventLive | فعالياتي" />
-  <meta name="twitter:description" content="سجل فعالياتك المحفوظة محلياً على EventLive مع تصدير تقويم وروابط مباشرة." />
-  <meta name="twitter:image" content="https://eventme.live/assets/eventlive-hero.png" />
+  <link rel="canonical" href="https://eventme.live/my-events.html">
+
+
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="description" content="سجل فعالياتك المحفوظة محلياً على EventLive مع تصدير تقويم وروابط مباشرة. EventLive يعرض الوقت الحي، المدينة، الموقع، المصدر، روابط التقويم والاتجاهات لتجربة حضور أوضح في فعاليات السعودية.">
+
+  <meta property="og:site_name" content="EventLive">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="EventLive | فعالياتي">
+  <meta property="og:description" content="سجل فعالياتك المحفوظة محلياً على EventLive مع تصدير تقويم وروابط مباشرة. EventLive يعرض الوقت الحي، المدينة، الموقع، المصدر، روابط التقويم والاتجاهات لتجربة حضور أوضح في فعاليات السعودية.">
+  <meta property="og:url" content="https://eventme.live/my-events.html">
+  <meta property="og:image" content="https://eventme.live/assets/eventlive-hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EventLive | فعالياتي">
+  <meta name="twitter:description" content="سجل فعالياتك المحفوظة محلياً على EventLive مع تصدير تقويم وروابط مباشرة.">
+  <meta name="twitter:image" content="https://eventme.live/assets/eventlive-hero.png">
   <title>EventLive | فعالياتي</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700;800&display=swap');
@@ -126,9 +123,15 @@
     .event-cover img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
     .event-cover.noimg::after { content:''; position:absolute; inset:0; opacity:.14; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44'%3E%3Cpath d='M22 3l19 19-19 19L3 22z' fill='none' stroke='%23ffffff' stroke-width='1.2'/%3E%3C/svg%3E"); }
     .cover-cat { position:absolute; bottom:10px; inset-inline-start:12px; color:#fff; font-size:12px; font-weight:500; background:rgba(0,0,0,.35); padding:4px 10px; border-radius:999px; backdrop-filter:blur(4px); }
-    .date-tab { position:absolute; top:10px; inset-inline-start:12px; background:#fff; border-radius:10px; padding:6px 10px 5px; text-align:center; line-height:1.15; box-shadow:0 4px 12px rgba(0,0,0,.18); }
-    .date-tab b { display:block; font-size:17px; color:var(--ink); }
-    .date-tab span { font-size:10.5px; color:var(--muted); }
+    /* WO-7b: scoped to the cover-image wrapper (.cover on some shells,
+       .event-cover on others — both conventions exist across the dist
+       templates) so the plain ".date-tab" class token can safely be
+       reused elsewhere on this page (e.g. as a marker class on an inline
+       chip badge) without inheriting this absolute-positioned
+       cover-corner styling. */
+    .cover .date-tab, .event-cover .date-tab { position:absolute; top:10px; inset-inline-start:12px; background:#fff; border-radius:10px; padding:6px 10px 5px; text-align:center; line-height:1.15; box-shadow:0 4px 12px rgba(0,0,0,.18); }
+    .cover .date-tab b, .event-cover .date-tab b { display:block; font-size:17px; color:var(--ink); }
+    .cover .date-tab span, .event-cover .date-tab span { font-size:10.5px; color:var(--muted); }
     .chips { position:absolute; top:10px; inset-inline-end:12px; display:flex; gap:6px; }
     .chip { font-size:11px; font-weight:700; padding:4px 9px; border-radius:999px; backdrop-filter:blur(4px); }
     .chip-live { background:var(--live); color:#fff; display:inline-flex; align-items:center; gap:5px; }
@@ -403,11 +406,10 @@
 
 
 
-  <link rel="alternate" type="text/calendar" title="EventLive - تقويم الفعاليات" href="./events.ics" />
-  <link rel="alternate" type="application/rss+xml" title="EventLive - RSS" href="./feeds/all.xml" />
-  <link rel="alternate" type="application/feed+json" title="EventLive - JSON Feed" href="./feeds/all.json" />
+  <link rel="alternate" type="text/calendar" title="EventLive - تقويم الفعاليات" href="./events.ics">
+  <link rel="alternate" type="application/rss+xml" title="EventLive - RSS" href="./feeds/all.xml">
+  <link rel="alternate" type="application/feed+json" title="EventLive - JSON Feed" href="./feeds/all.json">
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"EventLive","alternateName":["EventLive Saudi Events","فعاليات السعودية الحية"],"url":"https://eventme.live","inLanguage":"ar-SA","publisher":{"@type":"Organization","name":"EventLive","url":"https://eventme.live"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://eventme.live/events.html?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
 
 
 
@@ -551,129 +553,17 @@
 
 
 
-  <meta property="og:updated_time" content="2026-07-09T13:23:17.895Z" />
-  <meta name="author" content="EventLive" />
 
+  <meta property="og:updated_time" content="2026-07-09T13:23:17.895Z">
+  <meta name="author" content="EventLive">
 
+  <script async="" src="https://plausible.io/js/pa-BwvEgusGCTTM9Ak8D0dKB.js"></script>
 
+  <script async="" src="https://plausible.io/js/pa-BwvEgusGCTTM9Ak8D0dKB.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <style id="eventlive-brand-pulse">
+  <script async="" src="https://plausible.io/js/pa-BwvEgusGCTTM9Ak8D0dKB.js"></script>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <style id="eventlive-brand-pulse">
 @keyframes eventliveLiveDotPulse {
   0%, 100% { opacity: .92; transform: translateX(-50%) scale(1); box-shadow: 0 0 0 0 rgba(229, 72, 77, .2); }
   58% { opacity: .7; transform: translateX(-50%) scale(.94); box-shadow: 0 0 0 5px rgba(229, 72, 77, 0); }
@@ -691,32 +581,139 @@
 .status-card.primary .label, .status-card.primary .meta { color: rgba(255,255,255,.92) !important; }
 .card h3 { text-align: center; -webkit-line-clamp: 3; min-height: auto; }
 .card h3 a { unicode-bidi: plaintext; }
+/* WO-7b: the cross-month multi-day date-tab badge (homeEventCard,
+   scripts/generate-site.mjs). Lives here — brandCss, injected into every
+   page by decorateBrandHtml() — rather than hand-edited into a dist
+   shell's own <style> block, so every current AND future page that ever
+   renders a .date-tab (today: index.html, weekend.html) gets it
+   automatically. This is the only place this rule needs to exist. */
+.date-tab.date-tab-range { display: flex; align-items: center; gap: 4px; padding: 5px 8px 4px; white-space: nowrap; }
+.date-tab.date-tab-range .date-tab-part { display: flex; flex-direction: column; align-items: center; line-height: 1.05; }
+.date-tab.date-tab-range .date-tab-part b { font-size: 13px; }
+.date-tab.date-tab-range .date-tab-part span { font-size: 8.5px; }
+.date-tab.date-tab-range .date-tab-sep { font-size: 11px; color: var(--muted); font-style: normal; padding: 0 1px; }
 .breadcrumbs { display: flex; align-items: center; gap: 8px; padding: 18px 0 0; color: #66756f; font-size: .92rem; font-weight: 700; }
 .breadcrumbs a { color: #0d6b52; }
 .breadcrumbs strong { color: #10231d; font-weight: 800; max-width: 46ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .session { scroll-margin-top: 88px; }
+.attendance-summary h2 { margin: 4px 0 2px; font-size: 1.45rem; }
+.attendance-summary > p { margin: 0; color: var(--muted); }
+.attendance-kicker { color: var(--green); font-size: .82rem; font-weight: 700; }
+.attendance-facts { display:grid; grid-template-columns:1fr 1fr; gap:0 20px; margin:16px 0 4px; border-top:1px solid var(--line); }
+.attendance-fact { min-width:0; padding:11px 0; border-bottom:1px solid var(--line); }
+.attendance-fact dt { color:var(--muted); font-size:.78rem; }
+.attendance-fact dd { margin:2px 0 0; color:var(--ink); font-weight:700; overflow-wrap:anywhere; }
 @media (prefers-reduced-motion: reduce) {
   .brand-word .live-i::after { animation: none; opacity: 1; box-shadow: 0 0 0 3px rgba(229, 72, 77, .18); }
 }
 @media (max-width: 760px) {
   .breadcrumbs strong { max-width: 24ch; }
+  .event-detail .attendance-summary h2 { font-size:1.25rem; }
+  .event-detail .attendance-facts { grid-template-columns:1fr; margin-top:12px; }
+  .event-detail .attendance-fact { padding:9px 0; }
   details.more > summary, .cta-now, .card-foot a, .card-foot button { min-height: 44px; }
   .more-panel a { min-height: 44px; display:flex; align-items:center; }
-  .card-row { scroll-padding-inline:16px; overscroll-behavior-inline:contain; }
+  .site-head { padding-top:env(safe-area-inset-top); }
+  .site-head .head-in { min-height:58px; gap:8px; }
+  .site-head .brand { gap:8px; margin-inline-end:auto; min-width:0; }
+  .site-head .brand .mark { width:34px; height:34px; border-radius:9px; flex:0 0 34px; }
+  .site-head .brand b { font-size:18px; line-height:1; }
+  .site-head .brand small { display:none; }
+  .site-head .cta-now {
+    display:none;
+  }
+  .site-head .cta-now .dot { background:var(--live); animation-duration:5.6s; }
+  .site-head .burger { order:2; margin-inline-start:0; }
+  .site-head .burger > summary {
+    display:grid;
+    place-items:center;
+    width:44px;
+    height:44px;
+    min-height:44px;
+    padding:0;
+    border:1px solid var(--line);
+    border-radius:8px;
+    background:#fff;
+    font-size:18px;
+  }
+  .site-head .more-panel { top:calc(58px + env(safe-area-inset-top)); }
+  .site-head + .hero::before { opacity:.035; }
+  .site-head + .hero .hero-in { gap:12px; padding:14px 0 18px; }
+  .site-head + .hero .eyebrow { display:none; }
+  .site-head + .hero h1 { margin-bottom:6px; font-size:24px; line-height:1.3; }
+  .site-head + .hero .lead {
+    margin-bottom:10px;
+    font-size:13px;
+    line-height:1.6;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+  }
+  .site-head + .hero .search-box input { min-height:46px; border-radius:10px; }
+  .site-head + .hero .hero-ctas { gap:8px; margin-top:8px; }
+  .site-head + .hero .hero-ctas .ghost { flex:1; min-height:44px; padding:7px 8px; text-align:center; font-size:12.5px; }
+  .site-head + .hero .board { padding:12px; border-radius:12px; }
+  .site-head + .hero .board-label { margin-bottom:4px; font-size:11.5px; }
+  .site-head + .hero .board h2 { margin-bottom:2px; font-size:17px; line-height:1.35; }
+  .site-head + .hero .board .b-meta { margin-bottom:8px; font-size:12px; }
+  .site-head + .hero .countdown { gap:5px; margin-bottom:8px; }
+  .site-head + .hero .cd-cell { padding:5px 3px 4px; border-radius:8px; }
+  .site-head + .hero .cd-cell b { font-size:18px; }
+  .site-head + .hero .cd-cell span { font-size:9.5px; }
+  .site-head + .hero .board-actions { gap:6px; }
+  .site-head + .hero .board-actions .primary,
+  .site-head + .hero .board-actions .plain { flex:1; display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:7px 8px; border-radius:9px; text-align:center; font-size:12.5px; }
+  .site-head + .hero .board-actions .plain { border:1px solid rgba(255,255,255,.18); }
+  .site-head + .hero .board-stats { display:none; }
+  .site-head + .hero .board-live-track { min-height:100px; }
+  .site-head + .hero .board-live-card h2 { font-size:16px; line-height:1.3; margin-bottom:2px; max-height:2.6em; }
+  .site-head + .hero .board-live-nav { gap:6px; margin-top:8px; padding-top:8px; }
+  .site-head + .hero .board-live-arrow { font-size:16px; }
+  .site-head + .hero .board-live-dots { gap:1px; }
+  .card-row {
+    scroll-padding-inline:16px;
+    overscroll-behavior-inline:contain;
+    -webkit-overflow-scrolling:touch;
+  }
+  .card-row .card {
+    flex:0 0 min(82vw,320px);
+    min-width:0;
+    scroll-snap-align:start;
+  }
+  .card-row:focus-visible {
+    outline:3px solid rgba(13,107,82,.35);
+    outline-offset:4px;
+  }
+  .h-section-head { align-items:flex-start; }
+  .h-section-head .more-link { display:inline-flex; align-items:center; min-height:44px; }
+  /* WO-7b: tighten the cross-month date-tab-range badge at narrow widths
+     (audited at 360-390px) so two day+month pairs plus the separator
+     never overflow the card's cover-image corner. */
+  .date-tab.date-tab-range { padding:4px 6px 3px; gap:2px; }
+  .date-tab.date-tab-range .date-tab-part b { font-size:11.5px; }
+  .date-tab.date-tab-range .date-tab-part span { font-size:7.5px; }
 }
 </style>
   <!-- Privacy-friendly analytics by Plausible -->
-<script async src="https://plausible.io/js/pa-BwvEgusGCTTM9Ak8D0dKB.js"></script>
+<script async="" src="https://plausible.io/js/pa-BwvEgusGCTTM9Ak8D0dKB.js"></script>
 <script>
   window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
   plausible.init()
 </script>
-</head>
+<style id="eventlive-i18n-css">
+.language-switch{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:7px 11px;border:1px solid var(--line,#dfe6df);border-radius:8px;background:#fff;color:var(--ink,#10231d);font-weight:700;font-size:.86rem;text-decoration:none;white-space:nowrap}
+.i18n-content-hero{margin-block-end:24px;padding:clamp(24px,5vw,52px)!important;border-radius:8px;background:#0b4738!important;color:#fff!important}
+.i18n-content-hero h1,.i18n-content-hero .lead{color:#fff!important}.i18n-content-hero .eyebrow{color:#bfe8da!important}
+html[lang^="en"] body{font-family:"IBM Plex Sans","IBM Plex Sans Arabic",Arial,sans-serif;letter-spacing:0}
+html[lang^="en"] [lang="ar"]{font-family:"IBM Plex Sans Arabic",Tahoma,Arial,sans-serif}
+@media(max-width:760px){.language-switch{min-width:44px;padding-inline:9px}.site-head .language-switch{order:1;width:44px;padding:0;font-size:0}.site-head .language-switch::after{content:attr(data-short-label);font-size:12px;font-weight:800;letter-spacing:0}}
+</style><link rel="alternate" hreflang="ar-SA" href="https://eventme.live/my-events.html"><link rel="alternate" hreflang="en-SA" href="https://eventme.live/en/my-events.html"><link rel="alternate" hreflang="x-default" href="https://eventme.live/my-events.html"><meta property="og:locale" content="ar_SA"><meta property="og:locale:alternate" content="en_SA"></head>
 <body>
 
   <header class="site-head">
     <div class="wrap head-in">
-      <a class="brand" href="./index.html">
+      <a class="brand" href="./">
         <span class="mark">EL</span>
         <span><b><span class="brand-word" aria-label="EventLive"><span class="brand-sr">EventLive</span><span aria-hidden="true">EventL<span class="live-i">ı</span>ve</span></span></b><small>فعاليات السعودية الحية</small></span>
       </a>
@@ -730,9 +727,9 @@
           <a href="./weekend.html">نهاية الأسبوع</a><a href="./updates.html">التحديثات الحية</a><a href="./guides.html">الأدلة والشروحات</a><a href="./organizers.html">للمنظمين</a><a href="./events.ics">اشتراك التقويم</a>
           <span class="grp">المنصة</span>
           <a href="./screen.html">شاشة القاعة</a>
-          <a href="./source-health.html">حالة الجلب</a>
-          <a href="./source-coverage-gaps.html">فجوات التغطية</a>
-          <a href="./regions.html">تغطية المناطق</a>
+
+
+
         </div>
       </details>
       <details class="more burger">
@@ -743,7 +740,7 @@
         </div>
       </details>
       <a class="cta-now" href="./today.html"><span class="dot"></span>وضع الحضور</a>
-    </div>
+    <a class="language-switch" href="/en/my-events.html" hreflang="en-SA" lang="en" data-short-label="EN" aria-label="عرض هذه الصفحة باللغة الإنجليزية">English</a></div>
   </header>
 <main>
     <section class="hero">
@@ -844,6 +841,17 @@
       if (!startLabel || !endLabel) return '';
       return 'من ' + startLabel + ' إلى ' + endLabel;
     }
+    // WO-7b point C: the range must be a prominent, findable badge — not
+    // plain text inside the .label line (the owner's exact complaint on
+    // the WO-7 build). ".date-tab" is rescoped to ".cover .date-tab" /
+    // ".event-cover .date-tab" in this file's <style> specifically so this
+    // bare token is safe to reuse here (this page has neither wrapper
+    // element, so the legacy absolute-position rule stays inert).
+    function dateBadgeHtml(isEnded, event, plainText) {
+      const rangeLabel = !isEnded ? multiDayRangeLabel(event) : '';
+      if (!rangeLabel) return escapeHTML(plainText);
+      return '<span class="chip date-tab">' + escapeHTML(rangeLabel) + '</span>';
+    }
 
     function eventState(event) {
       const now = Date.now();
@@ -914,7 +922,7 @@
       controls.download.disabled = rows.length === 0;
       controls.clear.disabled = rows.length === 0;
       if (!visible.length) {
-        controls.grid.innerHTML = '<div class="empty">لا توجد فعاليات في هذا العرض.<br /><br /><a href="./index.html">استعراض الفعاليات</a></div>';
+        controls.grid.innerHTML = '<div class="empty">لا توجد فعاليات في هذا العرض.<br /><br /><a href="./">استعراض الفعاليات</a></div>';
         return;
       }
       controls.grid.innerHTML = visible.map((event) => {
@@ -922,10 +930,10 @@
         // WO-7: this view can include ended events (the "ended"/"all"
         // tabs), which stay archival and out of scope — the range only
         // replaces the bare start-date meta while the record isn't ended.
-        const cardDateText = savedState !== 'ended' && multiDayRangeLabel(event) ? multiDayRangeLabel(event) : fmtDate(event.starts_at);
+        const cardDateHtml = dateBadgeHtml(savedState === 'ended', event, fmtDate(event.starts_at));
         return (
         '<article class="event-card" data-event-start="' + escapeHTML(event.starts_at || '') + '" data-event-end="' + escapeHTML(event.ends_at || event.starts_at || '') + '" data-event-status="' + escapeHTML(savedState) + '">' +
-          '<div class="label">' + escapeHTML(event.city || '') + ' | ' + escapeHTML(cardDateText) + '</div>' +
+          '<div class="label">' + escapeHTML(event.city || '') + ' | ' + cardDateHtml + '</div>' +
           '<h2>' + escapeHTML(event.title) + '</h2>' +
           '<p>' + escapeHTML([event.organizer, event.venue, event.category].filter(Boolean).join(' | ')) + '</p>' +
           '<div class="actions"><a class="primary" href="' + escapeHTML(event.live_url || event.detail_url || './index.html') + '">فتح</a><a href="' + escapeHTML(event.calendar_url || './events.ics') + '">تقويم</a><a href="' + escapeHTML(event.directions_url || '#') + '" target="_blank" rel="noopener noreferrer">الاتجاهات</a><button type="button" data-remove="' + escapeHTML(event.id) + '">إزالة</button></div>' +
@@ -1119,9 +1127,14 @@
 
 
 
+
+
+
+
+
 <script id="eventlive-analytics-runtime">
 (function () {
-  var ownerOnlyPattern = /\/(sources|methodology|trust|source-health|candidates|resolver|owner-status)\.html$|\/(events|sources|trust|methodology|readiness|source-coverage-gaps|regions|owner-status)\.json$/;
+  var ownerOnlyPattern = /\/(sources|methodology|trust|candidates|resolver|source-health|source-coverage-gaps|regions|readiness|activation|live-ops|owner-status|owner-search-growth|attendance)\.html$|\/(events|sources|trust|methodology|readiness|source-coverage-gaps|regions|owner-status|owner-search-growth)\.json$/;
   var path = window.location.pathname || '';
   if (ownerOnlyPattern.test(path)) {
     window.eventLiveTrack = function () {};
@@ -1205,5 +1218,17 @@
   });
 })();
 </script>
-</body>
-</html>
+<script id="eventlive-language-runtime">
+(() => {
+  const locale = "ar-SA";
+  const switcher = document.querySelector('.language-switch');
+  if (switcher) {
+    const target = new URL(switcher.getAttribute('href'), location.origin);
+    target.search = location.search;
+    target.hash = location.hash;
+    switcher.href = target.pathname + target.search + target.hash;
+    switcher.addEventListener('click', () => localStorage.setItem('eventlive-locale', switcher.hreflang || (locale === 'ar-SA' ? 'en-SA' : 'ar-SA')));
+  }
+  localStorage.setItem('eventlive-locale', locale);
+})();
+</script></body></html>

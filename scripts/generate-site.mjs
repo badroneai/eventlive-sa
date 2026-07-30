@@ -122,6 +122,17 @@ const brandCss = `<style id="eventlive-brand-pulse">
 .status-card.primary .label, .status-card.primary .meta { color: rgba(255,255,255,.92) !important; }
 .card h3 { text-align: center; -webkit-line-clamp: 3; min-height: auto; }
 .card h3 a { unicode-bidi: plaintext; }
+/* WO-7b: the cross-month multi-day date-tab badge (homeEventCard,
+   scripts/generate-site.mjs). Lives here — brandCss, injected into every
+   page by decorateBrandHtml() — rather than hand-edited into a dist
+   shell's own <style> block, so every current AND future page that ever
+   renders a .date-tab (today: index.html, weekend.html) gets it
+   automatically. This is the only place this rule needs to exist. */
+.date-tab.date-tab-range { display: flex; align-items: center; gap: 4px; padding: 5px 8px 4px; white-space: nowrap; }
+.date-tab.date-tab-range .date-tab-part { display: flex; flex-direction: column; align-items: center; line-height: 1.05; }
+.date-tab.date-tab-range .date-tab-part b { font-size: 13px; }
+.date-tab.date-tab-range .date-tab-part span { font-size: 8.5px; }
+.date-tab.date-tab-range .date-tab-sep { font-size: 11px; color: var(--muted); font-style: normal; padding: 0 1px; }
 .breadcrumbs { display: flex; align-items: center; gap: 8px; padding: 18px 0 0; color: #66756f; font-size: .92rem; font-weight: 700; }
 .breadcrumbs a { color: #0d6b52; }
 .breadcrumbs strong { color: #10231d; font-weight: 800; max-width: 46ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -217,6 +228,12 @@ const brandCss = `<style id="eventlive-brand-pulse">
   }
   .h-section-head { align-items:flex-start; }
   .h-section-head .more-link { display:inline-flex; align-items:center; min-height:44px; }
+  /* WO-7b: tighten the cross-month date-tab-range badge at narrow widths
+     (audited at 360-390px) so two day+month pairs plus the separator
+     never overflow the card's cover-image corner. */
+  .date-tab.date-tab-range { padding:4px 6px 3px; gap:2px; }
+  .date-tab.date-tab-range .date-tab-part b { font-size:11.5px; }
+  .date-tab.date-tab-range .date-tab-part span { font-size:7.5px; }
 }
 </style>`;
 
@@ -1447,7 +1464,15 @@ function liveRuntimeScript() {
   }
   function updateLiveRuntime() {
     document.querySelectorAll('[data-live-time]').forEach(function (el) {
-      el.textContent = runtime(el).note;
+      var state = runtime(el);
+      // WO-7b: homeEventCard pre-renders a static "من X إلى Y" range for a
+      // multi-day event that hasn't started yet (see cardWhenText in
+      // generate-site.mjs) instead of a countdown — the range doesn't need
+      // per-minute ticking. Leave it alone while still upcoming; the
+      // moment the event's own state flips to live/ended this stops
+      // applying and the normal countdown/continuation text takes over.
+      if (el.hasAttribute('data-static-until-live') && state.key === 'upcoming') return;
+      el.textContent = state.note;
     });
     document.querySelectorAll('[data-runtime-status]').forEach(function (el) {
       var state = runtime(el);
@@ -1588,7 +1613,18 @@ function eventCard(event, prefix = './') {
   // current/ongoing or upcoming — never both shown at once.
   const multiDay = event.status !== 'ended' && isMultiDayEvent(event);
   const dateChip = multiDay ? eventDateRangeLabel(event, formatShortDate) : formatDate(event.starts_at);
-  return `<article class="card" data-event-start="${escapeHtml(event.starts_at || '')}" data-event-end="${escapeHtml(event.ends_at || event.starts_at || '')}" data-event-status="${escapeHtml(event.status || '')}"><img class="cover" src="${escapeHtml(image)}" alt="${escapeHtml(event.image_alt || event.title)}" loading="lazy" /><div class="card-body"><h2 class="title"><a dir="auto" href="${escapeHtml(detail)}">${escapeHtml(event.title)}</a></h2><p>${escapeHtml(event.summary)}</p><div class="meta"><span class="chip${statusClass}" data-runtime-status ${runtimeAttrs(event)}>${escapeHtml(event.status_label)}</span><span class="chip">${escapeHtml(dateChip)}</span><span class="chip" data-live-time ${runtimeAttrs(event)}>${escapeHtml(staticWhenText(event))}</span><span class="chip">${escapeHtml(cityLabel(event.city))}</span><span class="chip">${escapeHtml(event.category_label)}</span></div><a class="cta" href="${escapeHtml(detail)}">تفاصيل الحضور</a></div></article>`;
+  // WO-7b point B: mark the multi-day date chip with the same "date-tab"
+  // token homeEventCard's cover badge uses — this page's stylesheet
+  // (pageCss) has no .date-tab rule at all, so the class carries zero
+  // visual effect here; it exists purely as a stable, cross-surface hook
+  // so anything auditing "does this card's visible date element carry the
+  // range" (the owner's own visual check, and test:multiday-card) can find
+  // it the same way on every card type without bespoke per-surface logic.
+  // It stays chip #2 (status is #1, staticWhenText is #3) — inside the
+  // first three positions `.facet-page .card-body .meta .chip:nth-child(n+4)`
+  // keeps visible on mobile; a 4th chip would silently disappear at 360px.
+  const dateChipClass = multiDay ? ' date-tab' : '';
+  return `<article class="card" data-event-start="${escapeHtml(event.starts_at || '')}" data-event-end="${escapeHtml(event.ends_at || event.starts_at || '')}" data-event-status="${escapeHtml(event.status || '')}"><img class="cover" src="${escapeHtml(image)}" alt="${escapeHtml(event.image_alt || event.title)}" loading="lazy" /><div class="card-body"><h2 class="title"><a dir="auto" href="${escapeHtml(detail)}">${escapeHtml(event.title)}</a></h2><p>${escapeHtml(event.summary)}</p><div class="meta"><span class="chip${statusClass}" data-runtime-status ${runtimeAttrs(event)}>${escapeHtml(event.status_label)}</span><span class="chip${dateChipClass}">${escapeHtml(dateChip)}</span><span class="chip" data-live-time ${runtimeAttrs(event)}>${escapeHtml(staticWhenText(event))}</span><span class="chip">${escapeHtml(cityLabel(event.city))}</span><span class="chip">${escapeHtml(event.category_label)}</span></div><a class="cta" href="${escapeHtml(detail)}">تفاصيل الحضور</a></div></article>`;
 }
 
 function attendanceFacts(event) {
@@ -5407,24 +5443,59 @@ function homeEventCard(event) {
   // instead of a second inline copy — this was the reference behavior
   // every other card renderer needed to match.
   const multiDay = isMultiDayEvent(event) && end.day && end.month;
-  const dateTab = multiDay && end.month === eventMonth
-    ? `<b>${escapeHtml(`${eventDay}–${end.day}`)}</b><span>${escapeHtml(eventMonth)}</span>`
-    : `<b>${escapeHtml(eventDay)}</b><span>${escapeHtml(eventMonth)}</span>`;
+  // WO-7b corrective round: the owner's requirement is explicit — the
+  // date-tab BADGE on the cover (not the card-meta line below it) must
+  // carry BOTH endpoints for any multi-day non-ended event. The
+  // same-month case already did this pre-#39 (compact "٢٥–٢٨"/"أغسطس");
+  // the gap was cross-month events, which silently fell back to a single
+  // start-day badge. .date-tab-range's CSS lives in brandCss (generator
+  // level, injected into every page) so this never needs a second,
+  // page-specific hand-edit.
+  const crossMonthRange = multiDay && end.month !== eventMonth;
+  const dateTabClass = crossMonthRange ? ' date-tab-range' : '';
+  const dateTab = !multiDay
+    ? `<b>${escapeHtml(eventDay)}</b><span>${escapeHtml(eventMonth)}</span>`
+    : end.month === eventMonth
+      ? `<b>${escapeHtml(`${eventDay}–${end.day}`)}</b><span>${escapeHtml(eventMonth)}</span>`
+      : `<span class="date-tab-part"><b>${escapeHtml(eventDay)}</b><span>${escapeHtml(eventMonth)}</span></span><span class="date-tab-sep" aria-hidden="true">–</span><span class="date-tab-part"><b>${escapeHtml(end.day)}</b><span>${escapeHtml(end.month)}</span></span>`;
   const whenMeta = multiDay
     ? eventDateRangeLabel(event, formatShortDate)
     : formatWeekday(event.starts_at);
+
+  // WO-7b point D: a multi-day event that hasn't started yet used to show
+  // "تبدأ X" ("starts X") in this prominent under-title line — a single
+  // date, same gap as the date-tab badge. Investigation (WO-7b PR) found
+  // this was NOT a regression introduced by PR #39 (homeEventCard's output
+  // is byte-identical pre-/post-#39 here), but the owner's ask stands on
+  // its own merits: make the range prominent, not just present in markup.
+  // Once the event goes live, defer to the existing staticWhenText/
+  // liveRuntimeScript continuation wording ("مستمرة حتى X", PM-approved) —
+  // this only changes the pre-start window, and only on this renderer
+  // (eventCard's data-live-time chip is untouched — it already shows its
+  // own range via dateChip, so giving it this too would duplicate the fact).
+  const startTsForWhen = dateValue(event.starts_at)?.getTime();
+  const endTsForWhen = dateValue(event.ends_at || event.starts_at)?.getTime();
+  const nowTsForWhen = Date.now();
+  const isLiveNowForWhen = Number.isFinite(startTsForWhen) && startTsForWhen <= nowTsForWhen && (!Number.isFinite(endTsForWhen) || endTsForWhen >= nowTsForWhen);
+  const showStaticRangeInWhen = multiDay && !isLiveNowForWhen;
+  const cardWhenText = showStaticRangeInWhen ? eventDateRangeLabel(event, formatShortDate) : staticWhenText(event);
+  // data-static-until-live tells liveRuntimeScript's 60s ticker to leave
+  // this text alone while the event is still upcoming (the range doesn't
+  // need a live countdown) — it starts ticking normally the moment the
+  // event's own state flips to live/ended, same as every other card.
+  const cardWhenAttrs = showStaticRangeInWhen ? ' data-static-until-live="1"' : '';
 
   return `<article class="card" data-event-start="${escapeHtml(event.starts_at || '')}" data-event-end="${escapeHtml(event.ends_at || event.starts_at || '')}" data-event-status="${escapeHtml(event.status || '')}">
         <a class="cover" href="${escapeHtml(detail)}" style="--c1:#4a1d4f;--c2:#7c3f84">
           <img src="${escapeHtml(image)}" alt="${escapeHtml(event.image_alt || event.title)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.cover').classList.add('noimg');this.remove();" />
           <span class="cover-cat">${escapeHtml(audienceName)}</span>
-          <span class="date-tab">${dateTab}</span>
+          <span class="date-tab${dateTabClass}">${dateTab}</span>
           <span class="chips">${chips}</span>
         </a>
         <div class="card-body">
           <div class="card-meta">${escapeHtml(cityText)} · ${escapeHtml(event.venue || cityText)} · ${escapeHtml(whenMeta)}</div>
           <h3><a dir="auto" href="${escapeHtml(detail)}">${escapeHtml(event.title)}</a></h3>
-          <div class="card-when" data-live-time ${runtimeAttrs(event)}>${escapeHtml(staticWhenText(event))}</div>
+          <div class="card-when" data-live-time${cardWhenAttrs} ${runtimeAttrs(event)}>${escapeHtml(cardWhenText)}</div>
           <div class="card-foot">
             <a class="btn-sm primary" href="${escapeHtml(detail)}">التفاصيل</a>
             <a class="btn-sm" href="${escapeHtml(event.ics_url || (String(detail).endsWith('.html') ? `${detail.replace(/\\.html$/, '.ics')}` : `${detail}.ics`))}" aria-label="أضف للتقويم">التقويم</a>
