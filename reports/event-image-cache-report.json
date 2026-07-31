@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T20:01:45.609Z",
+  "generated_at": "2026-07-31T04:00:33.849Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -657,11 +657,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3028e58e79c097efe11df08b7a04a1b6.png",
       "file": "dist/assets/event-images/grand-art-space-9d738f462b.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/ahlam-concert-jeddah?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/ahlam-concert-ccdfe9ff8a.webp",
       "events": 1
     },
     {
@@ -1972,6 +1967,11 @@
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2023/07/When-red-blooms-aspect-ratio-669-367.jpg",
       "file": "dist/assets/event-images/سينما-حي-أفلامنا-6a3d75ad62.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/ahlam-concert-jeddah?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/ahlam-concert-ccdfe9ff8a.webp",
       "events": 1
     },
     {

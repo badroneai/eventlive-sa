@@ -1,12 +1,12 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-30T19:59:03.131Z
+- published_at: 2026-07-31T03:58:15.812Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 567
+- candidates_seen: 561
 - published_new: 0
-- linked_existing: 527
-- blocked_remaining: 40
+- linked_existing: 522
+- blocked_remaining: 39
 - duplicate_review_alerts: 8
 
 ## Blocked summary
@@ -15,7 +15,6 @@
 - linked catalog row event-aseer-season was superseded by dedupe: 2
 - linked catalog row event-nasma-in-taif was superseded by dedupe: 1
 - publication gate source-evidence is not auto-publishable: 14
-- linked catalog row event-stand-up-comedy-night-with-shakir-al-sharif was superseded by dedupe: 1
 - unknown category requires review: 10
 - possible duplicate already exists: event-saudi-industrial-series-2: 1
 - possible duplicate already exists: event-leap-2026: 1
@@ -147,7 +146,6 @@
 | candidate-visit-saudi-calendar-pdf-مهرجان-المأكولات-الشعبية-20260706-4a38d19e | linked-existing | event-مهرجان-المأكولات-الشعبية | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-فعالية-رمي-السهام-20260706-4a38d19e | linked-existing | event-فعالية-رمي-السهام | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | linked-existing | event-عروض-الفنون-الأدائية-التقليدية | already linked to catalog event |
-| candidate-visit-saudi-calendar-pdf-صيف-الأكتشاف-20260706-4a38d19e | linked-existing | event-curious-summers | already linked to catalog event |
 | candidate-riyadh-city-events-esports-world-cup-20260706-b4b860e9 | linked-existing | event-esports-world-cup | already linked to catalog event |
 | candidate-najran-municipality-summer-events-مهرجان-صيف-نجران-2026-صيفنا-هايل-20260707-a130a84c | linked-existing | event-مهرجان-صيف-نجران-2026-صيفنا-هايل | already linked to catalog event |
 | candidate-jouf-university-programs-البرنامج-الصيفي-بجامعة-الجوف-2026-20260708-fa67cacd | linked-existing | event-البرنامج-الصيفي-بجامعة-الجوف-2026 | already linked to catalog event |
@@ -174,19 +172,15 @@
 | candidate-visit-saudi-calendar-pdf-أوركسترا-harry-potter-20260728-4a38d19e | linked-existing | event-أوركسترا-harry-potter | already linked to catalog event |
 | candidate-umm-al-qura-events-تجرييبية-20260729-4b181285 | linked-existing | event-تجرييبية | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-صيف-وِرث-2026-20260730-4a38d19e | linked-existing | event-صيف-وِرث-2026 | already linked to catalog event |
-| candidate-visit-saudi-calendar-pdf-حفلة-أحام-20260730-4a38d19e | linked-existing | event-حفلة-أحام | already linked to catalog event |
-| candidate-visit-saudi-calendar-pdf-عرض-ستاند-أب-كوميدي-مع-شاكر-الشريف-20260730-4a38d19e | linked-existing | event-عرض-ستاند-أب-كوميدي-مع-شاكر-الشريف | already linked to catalog event |
-| candidate-visit-saudi-calendar-pdf-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-20260730-4a38d19e | linked-existing | event-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد | already linked to catalog event |
 | candidate-discover-aseer-events-summer-legacy-20260730-aaba4732 | linked-existing | event-summer-legacy | already linked to catalog event |
 | candidate-visit-saudi-seasons-tour-of-al-baha-20260730-7b170410 | linked-existing | event-tour-of-al-baha | already linked to catalog event |
-| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260730-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
-| candidate-ithra-events-echoes-of-the-familiar-20260730-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
-| candidate-visit-saudi-seasons-ahlam-concert-20260730-e7ce43fa | linked-existing | event-ahlam-concert | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-20260731-4a38d19e | linked-existing | event-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-2 | already linked to catalog event |
 | candidate-mdlbeast-events-unstable-20260731-5647df2e | linked-existing | event-unstable | already linked to catalog event |
 | candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260731-f563a36e | linked-existing | event-ithra-summer-camp-2026-a-world-of-homes | already linked to catalog event |
 | candidate-ithra-events-printing-house-20260731-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
 | candidate-ithra-events-tafasahu-make-room-20260731-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
+| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260731-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
+| candidate-ithra-events-echoes-of-the-familiar-20260731-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-ithra-events-summer-youth-program-20260731-a20f7a11 | linked-existing | event-summer-youth-program | already linked to catalog event |
 | candidate-ithra-events-energy-lab-20260731-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
 | candidate-ithra-events-tinkering-stations-20260731-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
@@ -560,7 +554,6 @@
 | candidate-visit-saudi-seasons-nasma-in-taif-20260705-0d373057 | blocked | - | linked catalog row event-nasma-in-taif was superseded by dedupe |
 | candidate-eye-of-riyadh-events-esports-world-cup-20260706-13ed17c1 | blocked | event-esports-world-cup | possible duplicate requires review: exact-title-city-source-conflict |
 | candidate-saudicon-events-بطولة-كأس-العالم-للرياضات-الإلكترونية-20260706-c111699c | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-visit-saudi-calendar-stand-up-comedy-night-with-shakir-al-sharif-20260730-06a1ec00 | blocked | - | linked catalog row event-stand-up-comedy-night-with-shakir-al-sharif was superseded by dedupe |
 | candidate-eye-of-riyadh-events-oxford-future-of-real-estate-programme-20260805-7c9ee195 | blocked | - | unknown category requires review |
 | candidate-eye-of-riyadh-events-sunaa-2026-20260818-e3819fa8 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-قمة-البيانات-الذكية-والذكاء-الاصطناعي-20260826-83f848e3 | blocked | - | publication gate source-evidence is not auto-publishable |

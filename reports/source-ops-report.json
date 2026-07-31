@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T20:01:46.606Z",
+  "generated_at": "2026-07-31T04:00:34.825Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-07-30T19:50:57.563Z",
+    "collected_at": "2026-07-31T03:49:37.037Z",
     "freshness": "fresh",
-    "discovered": 306,
-    "written": 567
+    "discovered": 324,
+    "written": 561
   },
   "sources": {
     "total": 88,
-    "attempted": 19,
-    "due": 19,
-    "deferred": 29,
+    "attempted": 22,
+    "due": 22,
+    "deferred": 26,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 22,
+    "registry_collection_coverage_pct": 25,
     "scheduled_runnable_coverage_pct": 100,
-    "healthy": 18,
-    "zero_yield": 0,
-    "errors": 1,
-    "cadence_deferred": 29,
+    "healthy": 20,
+    "zero_yield": 2,
+    "errors": 0,
+    "cadence_deferred": 26,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -53,8 +53,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 33,
-        "candidates": 18,
+        "extracted": 31,
+        "candidates": 17,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -272,8 +272,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 20,
-        "candidates": 20,
+        "extracted": 19,
+        "candidates": 19,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -307,16 +307,13 @@
         "id": "dhahran-expo-calendar",
         "name": "Dhahran Expo Calendar",
         "priority": 22,
-        "status": "deferred",
-        "historical_status": "collector-error",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-07-31T00:34:59.132Z",
-        "error_streak": 1,
+        "status": "healthy",
+        "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-07-30T18:34:59.132Z",
-        "extracted": 0,
+        "last_attempted_at": null,
+        "extracted": 17,
         "candidates": 18,
-        "next_action": "مؤجل حتى 2026-07-31T00:34:59.132Z وفق الجدولة التكيفية."
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "ithra-events",
@@ -477,7 +474,7 @@
         "zero_yield_streak": 0,
         "last_attempted_at": "2026-07-28T15:43:30.242Z",
         "extracted": 0,
-        "candidates": 69,
+        "candidates": 65,
         "next_action": "مؤجل حتى 2026-08-04T15:43:30.242Z وفق الجدولة التكيفية."
       },
       {
@@ -682,16 +679,13 @@
         "id": "riyadh-city-events",
         "name": "Riyadh City Events",
         "priority": 51,
-        "status": "deferred",
-        "historical_status": "probe-blocked",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-07-30T20:30:41.610Z",
+        "status": "zero-yield",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-07-30T14:30:41.610Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 79,
-        "next_action": "مؤجل حتى 2026-07-30T20:30:41.610Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "monshaat-academy-programs",
@@ -784,13 +778,13 @@
         "id": "asharqia-chamber-events",
         "name": "Asharqia Chamber Events",
         "priority": 59,
-        "status": "collection-error",
+        "status": "healthy",
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 0,
+        "extracted": 2,
         "candidates": 2,
-        "next_action": "fetch failed; page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentloaded\"\n"
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "qassim-chamber-events",
@@ -943,16 +937,13 @@
         "id": "najran-municipality-summer-events",
         "name": "Najran Municipality Summer Events",
         "priority": 71,
-        "status": "deferred",
-        "historical_status": "zero-yield",
-        "cadence_reason": "zero-yield-cooldown",
-        "next_due_at": "2026-07-31T03:27:16.342Z",
+        "status": "zero-yield",
         "error_streak": 0,
-        "zero_yield_streak": 5,
-        "last_attempted_at": "2026-07-30T03:27:16.342Z",
+        "zero_yield_streak": 0,
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 1,
-        "next_action": "مؤجل حتى 2026-07-31T03:27:16.342Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "platinumlist-saudi-city-network",
@@ -1127,7 +1118,7 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 65,
+        "extracted": 67,
         "candidates": 73,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
@@ -1179,28 +1170,28 @@
     ]
   },
   "queue": {
-    "total": 567,
+    "total": 561,
     "ready_for_review": 8,
     "approved_for_catalog": 0,
-    "published_from_candidates": 533,
+    "published_from_candidates": 527,
     "actionable": 8,
     "stale_unpublished": 0,
     "duplicate_risk": 6,
     "needs_extraction": 0,
     "needs_evidence": 26,
     "by_review_status": {
-      "approved-for-catalog": 533,
+      "approved-for-catalog": 527,
       "ready-for-review": 8,
       "evidence-captured": 18,
       "new": 8
     },
     "by_publication_gate": {
-      "catalog-review": 533,
+      "catalog-review": 527,
       "duplicate-review": 8,
       "source-evidence": 26
     },
     "by_confidence": {
-      "official": 527,
+      "official": 521,
       "public-listing": 21,
       "verified-secondary": 11,
       "unverified": 8
@@ -1213,12 +1204,12 @@
     "by_source": {
       "Ministry of Culture Commission Calendars": 12,
       "Riyadh City Events": 79,
-      "Visit Saudi Calendar": 18,
-      "Visit Saudi Summer Calendar PDF": 69,
+      "Visit Saudi Calendar": 17,
+      "Visit Saudi Summer Calendar PDF": 65,
       "Misk Hub Programs": 10,
       "Discover Aseer Events": 39,
       "Hayy Jameel What's On": 73,
-      "Visit Saudi Seasons": 20,
+      "Visit Saudi Seasons": 19,
       "Tuwaiq Academy Bootcamps and Programs": 32,
       "Eye of Riyadh Events": 6,
       "Saudicon Events": 15,
@@ -1226,8 +1217,8 @@
       "Jouf University Summer Programs": 1,
       "King Abdulaziz University Events": 2,
       "Umm Al-Qura University Events Center": 19,
-      "Ithra Events": 78,
       "MDLBEAST Events": 5,
+      "Ithra Events": 78,
       "Dhahran Expo Calendar": 18,
       "Future Skills MCIT Catalogue": 3,
       "Saudi Food and Drug Authority Events": 5,

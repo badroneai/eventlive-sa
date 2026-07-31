@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T19:59:04.769Z",
+  "generated_at": "2026-07-31T03:58:17.472Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -10,9 +10,9 @@
   },
   "totals": {
     "pdf_crop_assignments": 55,
-    "verified": 54,
-    "struck": 1,
-    "slots_seen_this_cycle": 59
+    "verified": 52,
+    "struck": 3,
+    "slots_seen_this_cycle": 56
   },
   "struck": [
     {
@@ -23,6 +23,20 @@
       "detail": "page 5 top-left is now \"برندة\"",
       "matched_tokens": [],
       "ratio": 0
+    },
+    {
+      "id": "event-عرض-ستاند-أب-كوميدي-مع-شاكر-الشريف",
+      "title": "عرض ستاند أب كوميدي مع شاكر الشريف",
+      "file": "visit-saudi-summer-2026-p038-bottom-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 38 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد",
+      "title": "منعً في لاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد",
+      "file": "visit-saudi-summer-2026-p039-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 39 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     }
   ],
   "verified": [
@@ -451,32 +465,6 @@
         "صيف",
         "ورث",
         "2026"
-      ]
-    },
-    {
-      "id": "event-عرض-ستاند-أب-كوميدي-مع-شاكر-الشريف",
-      "title": "عرض ستاند أب كوميدي مع شاكر الشريف",
-      "file": "visit-saudi-summer-2026-p038-bottom-left.jpg",
-      "matched_tokens": [
-        "عرض",
-        "ستاند",
-        "كوميدي",
-        "شاكر",
-        "الشريف"
-      ]
-    },
-    {
-      "id": "event-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد",
-      "title": "منعً في لاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد",
-      "file": "visit-saudi-summer-2026-p039-top-right.jpg",
-      "matched_tokens": [
-        "منع",
-        "لاحراج",
-        "عرض",
-        "ستاند",
-        "كوميدي",
-        "عبدالرحمن",
-        "محمد"
       ]
     },
     {

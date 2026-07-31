@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-07-30T19:59:03.131Z",
+  "published_at": "2026-07-31T03:58:15.812Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 567,
+  "candidates_seen": 561,
   "totals": {
-    "candidates_seen": 567,
+    "candidates_seen": 561,
     "published": 0,
-    "linked_existing": 527,
-    "blocked": 40,
+    "linked_existing": 522,
+    "blocked": 39,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 527
+    "reconciled": 522
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -898,12 +898,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-صيف-الأكتشاف-20260706-4a38d19e",
-      "event_id": "event-curious-summers",
-      "title": "صيف الأكتشاف",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-riyadh-city-events-esports-world-cup-20260706-b4b860e9",
       "event_id": "event-esports-world-cup",
       "title": "Esports World Cup",
@@ -1060,24 +1054,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-حفلة-أحام-20260730-4a38d19e",
-      "event_id": "event-حفلة-أحام",
-      "title": "حفلة أحام",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-عرض-ستاند-أب-كوميدي-مع-شاكر-الشريف-20260730-4a38d19e",
-      "event_id": "event-عرض-ستاند-أب-كوميدي-مع-شاكر-الشريف",
-      "title": "عرض ستاند أب كوميدي مع شاكر الشريف",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-20260730-4a38d19e",
-      "event_id": "event-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد",
-      "title": "منعً في لاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-discover-aseer-events-summer-legacy-20260730-aaba4732",
       "event_id": "event-summer-legacy",
       "title": "Summer Legacy",
@@ -1087,24 +1063,6 @@
       "candidate_id": "candidate-visit-saudi-seasons-tour-of-al-baha-20260730-7b170410",
       "event_id": "event-tour-of-al-baha",
       "title": "Tour of Al Baha",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260730-e0a239ef",
-      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
-      "title": "Bedayat: Beginnings of Saudi Art Movement",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260730-cc43c2bd",
-      "event_id": "event-echoes-of-the-familiar",
-      "title": "Echoes of the Familiar",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-ahlam-concert-20260730-e7ce43fa",
-      "event_id": "event-ahlam-concert",
-      "title": "Ahlam Concert",
       "reason": "already linked to catalog event"
     },
     {
@@ -1135,6 +1093,18 @@
       "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260731-562bc61d",
       "event_id": "event-tafasahu-make-room",
       "title": "Tafasahu: Make Room",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260731-e0a239ef",
+      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
+      "title": "Bedayat: Beginnings of Saudi Art Movement",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260731-cc43c2bd",
+      "event_id": "event-echoes-of-the-familiar",
+      "title": "Echoes of the Familiar",
       "reason": "already linked to catalog event"
     },
     {
@@ -3376,11 +3346,6 @@
       "candidate_id": "candidate-saudicon-events-بطولة-كأس-العالم-للرياضات-الإلكترونية-20260706-c111699c",
       "title": "بطولة كأس العالم للرياضات الإلكترونية",
       "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-stand-up-comedy-night-with-shakir-al-sharif-20260730-06a1ec00",
-      "title": "Stand up Comedy Night with Shakir Al Sharif",
-      "reason": "linked catalog row event-stand-up-comedy-night-with-shakir-al-sharif was superseded by dedupe"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-oxford-future-of-real-estate-programme-20260805-7c9ee195",
