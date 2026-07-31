@@ -1,6 +1,6 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-31T16:16:06.568Z
+- published_at: 2026-07-31T16:40:26.613Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 560
@@ -183,12 +183,7 @@
 | candidate-ithra-events-energy-lab-20260731-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
 | candidate-ithra-events-tinkering-stations-20260731-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
 | candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260731-ef7080ff | linked-existing | event-trivia-night-earth-quest-tic-tac-know | already linked to catalog event |
-| candidate-ithra-events-the-non-stop-spin-20260731-6cf89742 | linked-existing | event-the-non-stop-spin | already linked to catalog event |
-| candidate-ithra-events-grand-art-space-20260731-e3acefbb | linked-existing | event-grand-art-space | already linked to catalog event |
 | candidate-ithra-events-water-challenges-20260731-eea51834 | linked-existing | event-water-challenges | already linked to catalog event |
-| candidate-ithra-events-emboss-printing-experience-20260731-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
-| candidate-ithra-events-stories-from-ithras-library-20260731-4116de16 | linked-existing | event-stories-from-ithras-library | already linked to catalog event |
-| candidate-ithra-events-museum-story-time-20260731-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-childrens-art-studio-20260731-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
 | candidate-ithra-events-games-hub-20260731-fb83124c | linked-existing | event-games-hub | already linked to catalog event |
 | candidate-ithra-events-spot-of-inspiration-20260731-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
@@ -201,10 +196,13 @@
 | candidate-ithra-events-toddler-saturday-20260801-739e1f00 | linked-existing | event-toddler-saturday | already linked to catalog event |
 | candidate-ithra-events-petals-and-pals-arabic-20260801-fd317dc1 | linked-existing | event-petals-and-pals-arabic | already linked to catalog event |
 | candidate-ithra-events-story-land-20260801-bb5dc01b | linked-existing | event-story-land | already linked to catalog event |
+| candidate-ithra-events-emboss-printing-experience-20260801-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-visit-saudi-seasons-buraydah-dates-carnival-20260801-24906534 | linked-existing | event-buraydah-dates-carnival | already linked to catalog event |
 | candidate-ithra-events-connect-and-create-20260801-d2514326 | linked-existing | event-connect-and-create | already linked to catalog event |
 | candidate-ithra-events-workshop-at-the-library-20260801-7db9eb13 | linked-existing | event-workshop-at-the-library | already linked to catalog event |
+| candidate-ithra-events-grand-art-space-20260801-e3acefbb | linked-existing | event-grand-art-space | already linked to catalog event |
 | candidate-ithra-events-all-things-hedgehogs-20260801-952dc936 | linked-existing | event-all-things-hedgehogs | already linked to catalog event |
+| candidate-ithra-events-museum-story-time-20260801-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-ضحكات-الرياض-20260802-4a38d19e | linked-existing | event-ضحكات-الرياض | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات-20260802-9bb9ff4b | linked-existing | event-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-طويق-للقطاع-الأمني-البنية-التحتية-20260802-2aaabcfd | linked-existing | event-معسكر-طويق-للقطاع-الأمني-البنية-التحتية | already linked to catalog event |
@@ -221,6 +219,7 @@
 | candidate-ithra-events-the-perfect-guide-to-event-management-20260803-9e165fb1 | linked-existing | event-the-almost-perfect-guide-to-event-management | already linked to catalog event |
 | candidate-ithra-events-children-story-time-20260803-f545fa69 | linked-existing | event-children-story-time | already linked to catalog event |
 | candidate-ithra-events-open-art-space-20260803-40aac166 | linked-existing | event-open-art-space | already linked to catalog event |
+| candidate-ithra-events-the-non-stop-spin-20260803-6cf89742 | linked-existing | event-the-non-stop-spin | already linked to catalog event |
 | candidate-ithra-events-toddler-tuesday-20260804-1afead7d | linked-existing | event-toddler-tuesday | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-international-cat-day-open-call-20260804-5fb2cbe7 | linked-existing | event-hayy-cinema-international-cat-day-open-call | already linked to catalog event |
 | candidate-ithra-events-tangram-20260804-9a9db6cb | linked-existing | event-tangram | already linked to catalog event |
@@ -238,6 +237,7 @@
 | candidate-ithra-events-the-moral-of-the-story-20260806-bfa3f2a8 | linked-existing | event-the-moral-of-the-story | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-حسين-محب-ايف-في-الرياض-20260807-4a38d19e | linked-existing | event-hussain-moheb-live-in-riyadh | already linked to catalog event |
 | candidate-ithra-events-energy-in-motion-20260807-e0404048 | linked-existing | event-energy-in-motion | already linked to catalog event |
+| candidate-ithra-events-stories-from-ithras-library-20260807-4116de16 | linked-existing | event-stories-from-ithras-library | already linked to catalog event |
 | candidate-ithra-events-dots-on-letters-20260807-b8901d67 | linked-existing | event-dots-on-letters | already linked to catalog event |
 | candidate-ithra-events-family-game-20260807-fff43c76 | linked-existing | event-family-game | already linked to catalog event |
 | candidate-visit-saudi-calendar-hussain-moheb-live-in-riyadh-20260807-0f7ed5bd | linked-existing | event-hussain-moheb-live-in-riyadh | already linked to catalog event |

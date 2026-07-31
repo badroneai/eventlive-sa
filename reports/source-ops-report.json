@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T16:18:16.821Z",
+  "generated_at": "2026-07-31T16:42:44.309Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,9 +11,9 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-07-31T16:08:57.421Z",
+    "collected_at": "2026-07-31T16:32:27.971Z",
     "freshness": "fresh",
-    "discovered": 321,
+    "discovered": 320,
     "written": 560
   },
   "sources": {
@@ -1127,7 +1127,7 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 66,
+        "extracted": 65,
         "candidates": 72,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },

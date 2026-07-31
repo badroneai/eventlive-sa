@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-07-31T16:16:06.568Z",
+  "published_at": "2026-07-31T16:40:26.613Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -1120,39 +1120,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-the-non-stop-spin-20260731-6cf89742",
-      "event_id": "event-the-non-stop-spin",
-      "title": "The Non-Stop Spin",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-grand-art-space-20260731-e3acefbb",
-      "event_id": "event-grand-art-space",
-      "title": "Grand Art Space",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-water-challenges-20260731-eea51834",
       "event_id": "event-water-challenges",
       "title": "Water Challenges",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260731-2671d1ce",
-      "event_id": "event-emboss-printing-experience",
-      "title": "Emboss Printing Experience",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-stories-from-ithras-library-20260731-4116de16",
-      "event_id": "event-stories-from-ithras-library",
-      "title": "Stories from Ithra's Library",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-museum-story-time-20260731-1104734c",
-      "event_id": "event-museum-story-time",
-      "title": "Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -1228,6 +1198,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260801-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-seasons-buraydah-dates-carnival-20260801-24906534",
       "event_id": "event-buraydah-dates-carnival",
       "title": "Buraydah Dates Carnival",
@@ -1246,9 +1222,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-grand-art-space-20260801-e3acefbb",
+      "event_id": "event-grand-art-space",
+      "title": "Grand Art Space",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-all-things-hedgehogs-20260801-952dc936",
       "event_id": "event-all-things-hedgehogs",
       "title": "All Things Hedgehogs",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-museum-story-time-20260801-1104734c",
+      "event_id": "event-museum-story-time",
+      "title": "Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -1345,6 +1333,12 @@
       "candidate_id": "candidate-ithra-events-open-art-space-20260803-40aac166",
       "event_id": "event-open-art-space",
       "title": "Open Art Space",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-non-stop-spin-20260803-6cf89742",
+      "event_id": "event-the-non-stop-spin",
+      "title": "The Non-Stop Spin",
       "reason": "already linked to catalog event"
     },
     {
@@ -1447,6 +1441,12 @@
       "candidate_id": "candidate-ithra-events-energy-in-motion-20260807-e0404048",
       "event_id": "event-energy-in-motion",
       "title": "Energy in Motion",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-stories-from-ithras-library-20260807-4116de16",
+      "event_id": "event-stories-from-ithras-library",
+      "title": "Stories from Ithra's Library",
       "reason": "already linked to catalog event"
     },
     {
