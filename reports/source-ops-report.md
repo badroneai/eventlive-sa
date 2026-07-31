@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-07-31T16:42:44.309Z
+- generated_at: 2026-07-31T17:07:12.750Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -12,31 +12,31 @@
 
 - Sources in registry: 88
 - Runnable collector lanes: 48
-- Sources due now: 19
-- Sources attempted in latest collection: 19
-- Sources deferred by cadence: 29
+- Sources due now: 20
+- Sources attempted in latest collection: 20
+- Sources deferred by cadence: 28
 - Due-source coverage: 100%
 - Scheduled runnable coverage: 100%
-- Whole-registry attempted this run: 22%
-- Healthy sources: 19
+- Whole-registry attempted this run: 23%
+- Healthy sources: 20
 - Zero-yield sources: 0
 - High-priority unattempted sources: 3
-- Candidates: 560
+- Candidates: 569
 - Actionable candidates: 8
 - Ready for review: 8
 - Ready for catalog promotion: 0
-- Linked to catalog from candidates: 526
+- Linked to catalog from candidates: 535
 - Stale unpublished candidates: 0
 - Duplicate risk: 6
 - Recommendation: ابدأ بمراجعة التكرارات المحتملة قبل اعتماد أي مرشح جديد.
 
 ## Candidate Funnel
 
-- review_status.approved-for-catalog: 526
+- review_status.approved-for-catalog: 535
 - review_status.ready-for-review: 8
 - review_status.evidence-captured: 18
 - review_status.new: 8
-- publication_gate.catalog-review: 526
+- publication_gate.catalog-review: 535
 - publication_gate.duplicate-review: 8
 - publication_gate.source-evidence: 26
 - discovery_quality.strong-lead: 19
@@ -108,7 +108,7 @@
 | 31 | NEOM Newsroom Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 32 | Saudi Space Agency Events | deferred | 0 | 0 | مؤجل حتى 2026-08-02T18:34:59.132Z وفق الجدولة التكيفية. |
 | 33 | CST Events and News | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 34 | Visit Saudi Summer Calendar PDF | deferred | 0 | 65 | مؤجل حتى 2026-08-04T15:43:30.242Z وفق الجدولة التكيفية. |
+| 34 | Visit Saudi Summer Calendar PDF | healthy | 62 | 74 | استمر بالمراجعة والتكرار قبل النشر. |
 | 35 | Qiddiya Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 36 | Sela and Saudi Entertainment Expo | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 37 | Ministry of Culture Commission Calendars | deferred | 0 | 12 | مؤجل حتى 2026-07-31T18:34:59.132Z وفق الجدولة التكيفية. |

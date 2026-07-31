@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T16:40:28.305Z",
+  "generated_at": "2026-07-31T17:05:12.620Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -9,18 +9,27 @@
     "min_intersection": 2
   },
   "totals": {
-    "pdf_crop_assignments": 53,
-    "verified": 52,
-    "struck": 1,
-    "slots_seen_this_cycle": 56
+    "pdf_crop_assignments": 61,
+    "verified": 59,
+    "struck": 2,
+    "slots_seen_this_cycle": 65
   },
   "struck": [
     {
-      "id": "event-سمره",
-      "title": "سمره",
+      "id": "event-برندة",
+      "title": "برندة",
       "file": "visit-saudi-summer-2026-p005-top-left.jpg",
       "reason": "identity-mismatch",
-      "detail": "page 5 top-left is now \"برندة\"",
+      "detail": "page 5 top-left is now \"سمره\"",
+      "matched_tokens": [],
+      "ratio": 0
+    },
+    {
+      "id": "event-باتو",
+      "title": "باتو",
+      "file": "visit-saudi-summer-2026-p006-top-left.jpg",
+      "reason": "identity-mismatch",
+      "detail": "page 6 top-left is now \"بلاتو\"",
       "matched_tokens": [],
       "ratio": 0
     }
@@ -60,10 +69,20 @@
       "file": "visit-saudi-summer-2026-p004-top-left.jpg",
       "matched_tokens": [
         "قصور",
-        "وقاع",
         "ابو",
         "نقطه",
         "المتحمي"
+      ]
+    },
+    {
+      "id": "event-صندوق-أسامة-من-مخرج-ثمانية",
+      "title": "صندوق أسامة من مخرج ثمانية",
+      "file": "visit-saudi-summer-2026-p053-bottom-right.jpg",
+      "matched_tokens": [
+        "صندوق",
+        "اسامه",
+        "مخرج",
+        "ثمانيه"
       ]
     },
     {
@@ -103,11 +122,20 @@
       ]
     },
     {
-      "id": "event-برندة",
-      "title": "برندة",
+      "id": "event-سمره",
+      "title": "سمره",
       "file": "visit-saudi-summer-2026-p005-top-left.jpg",
       "matched_tokens": [
-        "برنده"
+        "سمره"
+      ]
+    },
+    {
+      "id": "event-مزرعة-ركايب",
+      "title": "مزرعة ركايب",
+      "file": "visit-saudi-summer-2026-p005-bottom-right.jpg",
+      "matched_tokens": [
+        "مزرعه",
+        "ركايب"
       ]
     },
     {
@@ -122,11 +150,11 @@
       ]
     },
     {
-      "id": "event-باتو",
-      "title": "باتو",
+      "id": "event-بلاتو",
+      "title": "بلاتو",
       "file": "visit-saudi-summer-2026-p006-top-left.jpg",
       "matched_tokens": [
-        "باتو"
+        "بلاتو"
       ]
     },
     {
@@ -188,6 +216,15 @@
         "نادي",
         "ستورم",
         "العماريه"
+      ]
+    },
+    {
+      "id": "event-مهرجان-مبدى",
+      "title": "مهرجان مبدى",
+      "file": "visit-saudi-summer-2026-p007-bottom-right.jpg",
+      "matched_tokens": [
+        "مهرجان",
+        "مبدي"
       ]
     },
     {
@@ -375,6 +412,15 @@
       ]
     },
     {
+      "id": "event-نسمة-في-الطائف",
+      "title": "نسمة في الطائف",
+      "file": "visit-saudi-summer-2026-p078-top-right.jpg",
+      "matched_tokens": [
+        "نسمه",
+        "الطايف"
+      ]
+    },
+    {
       "id": "event-ورث-الفن",
       "title": "ورث الفن",
       "file": "visit-saudi-summer-2026-p058-top-left.jpg",
@@ -425,6 +471,15 @@
       ]
     },
     {
+      "id": "event-صيف-2026",
+      "title": "صيف 2026",
+      "file": "visit-saudi-summer-2026-p058-bottom-right.jpg",
+      "matched_tokens": [
+        "صيف",
+        "2026"
+      ]
+    },
+    {
       "id": "event-صيف-وسمرة",
       "title": "صيف وسمرة",
       "file": "visit-saudi-summer-2026-p012-top-left.jpg",
@@ -459,7 +514,6 @@
       "file": "visit-saudi-summer-2026-p061-top-right.jpg",
       "matched_tokens": [
         "منع",
-        "لاحراج",
         "عرض",
         "ستاند",
         "كوميدي",
@@ -511,6 +565,28 @@
       "file": "visit-saudi-summer-2026-p062-top-left.jpg",
       "matched_tokens": [
         "act"
+      ]
+    },
+    {
+      "id": "event-فينا-نحكي؟-كوميديا-ستاند-أب-مع-جون-أشقر",
+      "title": "”فينا نحكي؟“ كوميديا ستاند أب مع جون أشقر",
+      "file": "visit-saudi-summer-2026-p039-bottom-right.jpg",
+      "matched_tokens": [
+        "فينا",
+        "نحكي",
+        "كوميديا",
+        "ستاند",
+        "جون",
+        "اشقر"
+      ]
+    },
+    {
+      "id": "event-ألف-وواحد",
+      "title": "ألف وواحد",
+      "file": "visit-saudi-summer-2026-p062-bottom-right.jpg",
+      "matched_tokens": [
+        "الف",
+        "وواحد"
       ]
     },
     {

@@ -1,12 +1,23 @@
 {
-  "generated_at": "2026-07-31T16:41:48.835Z",
+  "generated_at": "2026-07-31T17:06:18.099Z",
   "totals": {
-    "targets": 0,
-    "enriched": 0,
-    "fetched": 0,
-    "images": 0,
+    "targets": 1,
+    "enriched": 1,
+    "fetched": 1,
+    "images": 1,
     "fetch_failures": 0
   },
-  "enriched": [],
+  "enriched": [
+    {
+      "id": "event-بلاتو",
+      "title": "بلاتو",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    }
+  ],
   "failed": []
 }

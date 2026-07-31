@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-07-31T16:40:26.613Z",
+  "published_at": "2026-07-31T17:05:10.913Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 560,
+  "candidates_seen": 569,
   "totals": {
-    "candidates_seen": 560,
-    "published": 0,
-    "linked_existing": 521,
+    "candidates_seen": 569,
+    "published": 1,
+    "linked_existing": 529,
     "blocked": 39,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 521
+    "reconciled": 530
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -163,7 +163,13 @@
       "start_date_drift_days": 0.125
     }
   ],
-  "published": [],
+  "published": [
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-بلاتو-20260601-4a38d19e",
+      "event_id": "event-بلاتو",
+      "title": "بلاتو"
+    }
+  ],
   "linked_existing": [
     {
       "candidate_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c",
@@ -292,6 +298,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-سكة-الاطعمة-20260304-4a38d19e",
+      "event_id": "event-سكة-الأطعمة",
+      "title": "سكة الاطعمة",
+      "reason": "trusted duplicate linked to existing catalog event"
+    },
+    {
       "candidate_id": "candidate-misk-hub-programs-misk-local-traineeship-program-20260401-200b6490",
       "event_id": "event-misk-local-traineeship-program",
       "title": "Misk Local Traineeship Program",
@@ -314,6 +326,12 @@
       "event_id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
       "title": "قصور وقاع ابو نقطة المتحمي",
       "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-قصور-وقلاع-ابو-نقطة-المتحمي-20260503-4a38d19e",
+      "event_id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
+      "title": "قصور وقلاع ابو نقطة المتحمي",
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-صندوق-أسامة-من-مخرج-ثمانية-20260505-4a38d19e",
@@ -580,6 +598,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-شارع-الفن-القرية-الاوروبية-20260625-4a38d19e",
+      "event_id": "event-شارع-الفن-القرية-الأوروبية",
+      "title": "شارع الفن - القرية الاوروبية",
+      "reason": "trusted duplicate linked to existing catalog event"
+    },
+    {
       "candidate_id": "candidate-discover-aseer-events-qusoor-al-asabila-20260625-98028029",
       "event_id": "event-qusoor-al-asabila",
       "title": "Qusoor Al Asabila",
@@ -712,6 +736,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الاسود-20260701-4a38d19e",
+      "event_id": "event-مزرعة-التوت-الأسود",
+      "title": "مزرعة التوت الاسود",
+      "reason": "trusted duplicate linked to existing catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-دكلاة-في-أبها-20260701-4a38d19e",
+      "event_id": "event-dakah-in-abha",
+      "title": "دكلاة في أبها",
+      "reason": "trusted duplicate linked to existing catalog event"
+    },
+    {
       "candidate_id": "candidate-hayy-jameel-events-jameel-library-summer-reading-challenge-20260701-3a833686",
       "event_id": "event-jameel-library-summer-reading-challenge",
       "title": "Jameel Library | Summer Reading Challenge",
@@ -838,6 +874,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-الاخطبوطية-20260704-4a38d19e",
+      "event_id": "event-الأخطبوطية",
+      "title": "الاخطبوطية",
+      "reason": "trusted duplicate linked to existing catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-registration-for-international-research-competition-on-non-terrestrial-n-20260704-61ba0723",
       "event_id": "event-registration-for-international-research-competition-on-non-terrestrial-n",
       "title": "Registration for International Research Competition on Non-Terrestrial Networks",
@@ -890,6 +932,12 @@
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية",
       "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الادائية-التقليدية-20260706-4a38d19e",
+      "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
+      "title": "عروض الفنون الادائية التقليدية",
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-riyadh-city-events-esports-world-cup-20260706-b4b860e9",
@@ -1070,6 +1118,12 @@
       "event_id": "event-unstable",
       "title": "Unstable",
       "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-منعً-في-للاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-20260731-4a38d19e",
+      "event_id": "event-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-2",
+      "title": "منعً في للاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد",
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-printing-house-20260731-e56f4f89",

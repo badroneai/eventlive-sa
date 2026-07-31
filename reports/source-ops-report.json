@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T16:42:44.309Z",
+  "generated_at": "2026-07-31T17:07:12.750Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-07-31T16:32:27.971Z",
+    "collected_at": "2026-07-31T16:57:56.450Z",
     "freshness": "fresh",
-    "discovered": 320,
-    "written": 560
+    "discovered": 382,
+    "written": 569
   },
   "sources": {
     "total": 88,
-    "attempted": 19,
-    "due": 19,
-    "deferred": 29,
+    "attempted": 20,
+    "due": 20,
+    "deferred": 28,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 22,
+    "registry_collection_coverage_pct": 23,
     "scheduled_runnable_coverage_pct": 100,
-    "healthy": 19,
+    "healthy": 20,
     "zero_yield": 0,
     "errors": 0,
-    "cadence_deferred": 29,
+    "cadence_deferred": 28,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -466,16 +466,13 @@
         "id": "visit-saudi-calendar-pdf",
         "name": "Visit Saudi Summer Calendar PDF",
         "priority": 34,
-        "status": "deferred",
-        "historical_status": "productive",
-        "cadence_reason": "declared-cadence",
-        "next_due_at": "2026-08-04T15:43:30.242Z",
+        "status": "healthy",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-07-28T15:43:30.242Z",
-        "extracted": 0,
-        "candidates": 65,
-        "next_action": "مؤجل حتى 2026-08-04T15:43:30.242Z وفق الجدولة التكيفية."
+        "last_attempted_at": null,
+        "extracted": 62,
+        "candidates": 74,
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "qiddiya-events",
@@ -1179,28 +1176,28 @@
     ]
   },
   "queue": {
-    "total": 560,
+    "total": 569,
     "ready_for_review": 8,
     "approved_for_catalog": 0,
-    "published_from_candidates": 526,
+    "published_from_candidates": 535,
     "actionable": 8,
     "stale_unpublished": 0,
     "duplicate_risk": 6,
     "needs_extraction": 0,
     "needs_evidence": 26,
     "by_review_status": {
-      "approved-for-catalog": 526,
+      "approved-for-catalog": 535,
       "ready-for-review": 8,
       "evidence-captured": 18,
       "new": 8
     },
     "by_publication_gate": {
-      "catalog-review": 526,
+      "catalog-review": 535,
       "duplicate-review": 8,
       "source-evidence": 26
     },
     "by_confidence": {
-      "official": 520,
+      "official": 529,
       "public-listing": 21,
       "verified-secondary": 11,
       "unverified": 8
@@ -1214,7 +1211,7 @@
       "Ministry of Culture Commission Calendars": 12,
       "Riyadh City Events": 79,
       "Visit Saudi Calendar": 17,
-      "Visit Saudi Summer Calendar PDF": 65,
+      "Visit Saudi Summer Calendar PDF": 74,
       "Misk Hub Programs": 10,
       "Discover Aseer Events": 39,
       "Hayy Jameel What's On": 72,

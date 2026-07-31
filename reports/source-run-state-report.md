@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-07-31T16:42:44.159Z
+Generated at: 2026-07-31T17:07:12.604Z
 
 ## Operating Rule
 
@@ -9,9 +9,9 @@ Raw collection is not publication. Every source run preserves evidence, separate
 ## Totals
 
 - Sources: 88
-- Attempted this run: 19
-- Deferred by adaptive cadence: 29
-- Productive: 19
+- Attempted this run: 20
+- Deferred by adaptive cadence: 28
+- Productive: 20
 - Zero-yield: 0
 - Collector errors: 0
 - Persistent collector errors: 6
@@ -89,7 +89,7 @@ Call log:
 | 31 | neom-newsroom-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 32 | saudi-space-agency-events | active-collector | zero-yield | 0 | no | Zero-yield for 37 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 33 | cst-events-news | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
-| 34 | visit-saudi-calendar-pdf | venue-dedupe | productive | 67 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 34 | visit-saudi-calendar-pdf | venue-dedupe | productive | 62 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 35 | qiddiya-events | evidence-monitor | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: http-403 |
 | 36 | sela-sea-expo | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 37 | moc-cultural-subportals | active-collector | collector-error | 0 | no | Fix collector error: fetch failed; fetch failed |

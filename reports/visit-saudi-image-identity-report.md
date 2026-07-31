@@ -1,14 +1,15 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-07-31T16:40:28.305Z
-- pdf_crop_assignments: 53
-- verified: 52
-- struck: 1
-- slots_seen_this_cycle: 56
+- generated_at: 2026-07-31T17:05:12.620Z
+- pdf_crop_assignments: 61
+- verified: 59
+- struck: 2
+- slots_seen_this_cycle: 65
 
 ## Struck (fell back to generated cover)
 
-- سمره (visit-saudi-summer-2026-p005-top-left.jpg) - identity-mismatch - page 5 top-left is now "برندة"
+- برندة (visit-saudi-summer-2026-p005-top-left.jpg) - identity-mismatch - page 5 top-left is now "سمره"
+- باتو (visit-saudi-summer-2026-p006-top-left.jpg) - identity-mismatch - page 6 top-left is now "بلاتو"
 
 ## Verified
 
@@ -16,19 +17,22 @@
 - سكة الأطعمة (visit-saudi-summer-2026-p053-top-right.jpg)
 - سوق الثلاثاء الشعبي (visit-saudi-summer-2026-p004-top-right.jpg)
 - قصور وقاع ابو نقطة المتحمي (visit-saudi-summer-2026-p004-top-left.jpg)
+- صندوق أسامة من مخرج ثمانية (visit-saudi-summer-2026-p053-bottom-right.jpg)
 - قصور العسابلة (visit-saudi-summer-2026-p004-bottom-left.jpg)
 - قرية آل ينفع (visit-saudi-summer-2026-p004-bottom-right.jpg)
 - مزرعة الليوان (visit-saudi-summer-2026-p005-top-right.jpg)
 - كايف المزرعة (visit-saudi-summer-2026-p053-bottom-left.jpg)
-- برندة (visit-saudi-summer-2026-p005-top-left.jpg)
+- سمره (visit-saudi-summer-2026-p005-top-left.jpg)
+- مزرعة ركايب (visit-saudi-summer-2026-p005-bottom-right.jpg)
 - حديقة مطار ابها الدولي (visit-saudi-summer-2026-p005-bottom-left.jpg)
-- باتو (visit-saudi-summer-2026-p006-top-left.jpg)
+- بلاتو (visit-saudi-summer-2026-p006-top-left.jpg)
 - سكاي فيلج (visit-saudi-summer-2026-p006-bottom-right.jpg)
 - معرض قلب البحر (visit-saudi-summer-2026-p034-top-left.png)
 - ساوث ويست (الكاوبوي) (visit-saudi-summer-2026-p006-bottom-left.jpg)
 - مهرجان صوت أبها SAF (visit-saudi-summer-2026-p007-top-left.jpg)
 - معرض في تتبّع ذكريات غامرة (visit-saudi-summer-2026-p035-top-left.png)
 - نادي ستورم في العماريه (visit-saudi-summer-2026-p056-top-right.jpg)
+- مهرجان مبدى (visit-saudi-summer-2026-p007-bottom-right.jpg)
 - مهرجان أبها للتسوق (visit-saudi-summer-2026-p007-bottom-left.jpg)
 - مزرعة أعناب (visit-saudi-summer-2026-p008-top-right.jpg)
 - الحفلات الغنائية (visit-saudi-summer-2026-p008-bottom-left.jpg)
@@ -49,11 +53,13 @@
 - ارياش (visit-saudi-summer-2026-p011-top-left.jpg)
 - مهابة (visit-saudi-summer-2026-p011-bottom-left.png)
 - الأخطبوطية (visit-saudi-summer-2026-p056-bottom-left.jpg)
+- نسمة في الطائف (visit-saudi-summer-2026-p078-top-right.jpg)
 - ورث الفن (visit-saudi-summer-2026-p058-top-left.jpg)
 - Taste of the World (visit-saudi-summer-2026-p058-top-right.jpg)
 - مهرجان المأكولات الشعبية (visit-saudi-summer-2026-p057-top-right.jpg)
 - فعالية رمي السهام (visit-saudi-summer-2026-p057-top-left.jpg)
 - عروض الفنون الأدائية التقليدية (visit-saudi-summer-2026-p057-bottom-left.jpg)
+- صيف 2026 (visit-saudi-summer-2026-p058-bottom-right.jpg)
 - صيف وسمرة (visit-saudi-summer-2026-p012-top-left.jpg)
 - أوركسترا Harry Potter (visit-saudi-summer-2026-p060-bottom-left.jpg)
 - صيف وِرث 2026 (visit-saudi-summer-2026-p012-top-right.jpg)
@@ -63,4 +69,6 @@
 - بطولة أبطال المملكة للشطرنج (visit-saudi-summer-2026-p062-top-right.jpg)
 - IN ACT - ACT IX (visit-saudi-summer-2026-p039-top-left.jpg)
 - IN ACT - ACT X (visit-saudi-summer-2026-p062-top-left.jpg)
+- ”فينا نحكي؟“ كوميديا ستاند أب مع جون أشقر (visit-saudi-summer-2026-p039-bottom-right.jpg)
+- ألف وواحد (visit-saudi-summer-2026-p062-bottom-right.jpg)
 - IN ACT ANNIVERSARY - ACT XI (visit-saudi-summer-2026-p039-bottom-left.jpg)
