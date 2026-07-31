@@ -1,16 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-07-31T03:58:17.472Z
-- pdf_crop_assignments: 55
+- generated_at: 2026-07-31T09:24:42.784Z
+- pdf_crop_assignments: 53
 - verified: 52
-- struck: 3
+- struck: 1
 - slots_seen_this_cycle: 56
 
 ## Struck (fell back to generated cover)
 
 - سمره (visit-saudi-summer-2026-p005-top-left.jpg) - identity-mismatch - page 5 top-left is now "برندة"
-- عرض ستاند أب كوميدي مع شاكر الشريف (visit-saudi-summer-2026-p038-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 38 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- منعً في لاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد (visit-saudi-summer-2026-p039-top-right.jpg) - slot-vacated - no dated card currently occupies page 39 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 
