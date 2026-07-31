@@ -29,7 +29,7 @@
     "sources:resolve": "node scripts/source-official-resolver.mjs",
     "sources:health-gate": "node scripts/source-health-gate.mjs",
     "sources:state": "node scripts/source-run-state.mjs",
-    "sources:growth:baseline": "node scripts/source-growth-ledger.mjs",
+    "sources:growth:baseline": "node scripts/source-growth-ledger.mjs --baseline",
     "sources:growth": "node scripts/source-growth-ledger.mjs",
     "sources:tuwaiq:details": "node scripts/enrich-tuwaiq-program-details.mjs",
     "sources:future-skills:details": "node scripts/enrich-future-skills-program-details.mjs",

@@ -13,6 +13,22 @@ const publishPath = path.join(root, process.env.EVENTLIVE_SOURCE_AUTO_PUBLISH_RE
 const runStatePath = path.join(root, process.env.EVENTLIVE_SOURCE_RUN_STATE_REPORT_JSON || 'reports/source-run-state-report.json');
 const maxHistory = Math.max(12, Number(process.env.EVENTLIVE_SOURCE_GROWTH_HISTORY_LIMIT || 120));
 
+// WO-9: `sources:growth:baseline` runs at the START of a sync cycle, before
+// `sources:collect` and `npm run build` have executed. At that point in the
+// cycle, dist/events.json is whatever was last committed to git (the sync
+// workflow's persist step never adds dist/ back to the repo) and
+// reports/source-collection-report.json is still THIS cycle's PREVIOUS-cycle
+// leftover (collect hasn't refreshed it yet), so its `collected_at` collides
+// with the run_id the previous cycle's post-build measurement already used.
+// A baseline write therefore overwrites yesterday's real, post-build
+// measurement with a stale pre-build snapshot every single cycle -- a
+// frozen-gauge class bug. The fix is structural: baseline mode never writes
+// state or reports. It only prints the last known (already-persisted, real)
+// measurement for CI visibility. Only the post-build invocation
+// (`sources:growth`, run after `npm run build`) is ever allowed to append or
+// overwrite a ledger row.
+const isBaselineInvocation = process.argv.includes('--baseline');
+
 function arrayLength(envelope = {}, keys = []) {
   if (Array.isArray(envelope)) return envelope.length;
   for (const key of keys) if (Array.isArray(envelope?.[key])) return envelope[key].length;
@@ -46,7 +62,12 @@ function buildGrowthRun({ generatedAt, catalog, ended, publicEvents, collection,
 
 function appendGrowthRun(previousRuns = [], run, limit = maxHistory) {
   const byId = new Map(previousRuns.map((item) => [item.run_id, item]));
-  byId.set(run.run_id, { ...byId.get(run.run_id), ...run });
+  // A freshly-built run always represents a real measurement, so it clears
+  // any 'poisoned-frozen-gauge-wo9' tag left on a prior row for this
+  // run_id (WO-9 requirement 2: self-heal once a real re-measurement lands).
+  // Untouched rows (any other run_id already in byId) keep whatever tag
+  // they had -- see the map() below.
+  byId.set(run.run_id, { ...byId.get(run.run_id), ...run, measurement_integrity: run.measurement_integrity || 'ok' });
   const ordered = [...byId.values()]
     .sort((a, b) => String(a.run_id).localeCompare(String(b.run_id)))
     .slice(-limit);
@@ -72,7 +93,13 @@ function appendGrowthRun(previousRuns = [], run, limit = maxHistory) {
       catalog_delta: catalogDelta,
       no_growth_streak: noGrowthStreak,
       lost_published_output: lostPublishedOutput,
-      status
+      status,
+      // WO-9: rows touched by byId.set() above are always tagged 'ok'
+      // (real measurement); rows left untouched carry forward whatever
+      // measurement_integrity they already had (e.g. a migrated
+      // 'poisoned-frozen-gauge-wo9' tag). Default to 'ok' only as a safety
+      // net for legacy rows that predate this field entirely.
+      measurement_integrity: item.measurement_integrity || 'ok'
     };
   });
 }
@@ -85,6 +112,24 @@ function renderMarkdown(report) {
 function main() {
   const generatedAt = new Date().toISOString();
   const previous = exists(statePath) ? readJson(statePath) : { runs: [] };
+
+  if (isBaselineInvocation) {
+    // Read-only: print the last already-persisted (real, post-build)
+    // measurement for CI visibility. Never write state/report files here --
+    // see the WO-9 comment above isBaselineInvocation for why.
+    const current = previous.runs?.at(-1) || null;
+    if (current) {
+      console.log(
+        `SOURCE_GROWTH_BASELINE (read-only, not persisted) last_status=${current.status} ` +
+        `last_public=${current.public_events} last_delta=${current.public_delta ?? 'baseline'} ` +
+        `last_no_growth_streak=${current.no_growth_streak}`
+      );
+    } else {
+      console.log('SOURCE_GROWTH_BASELINE (read-only, not persisted) no prior measurements in state');
+    }
+    return;
+  }
+
   const run = buildGrowthRun({
     generatedAt,
     catalog: readJson(catalogPath),
