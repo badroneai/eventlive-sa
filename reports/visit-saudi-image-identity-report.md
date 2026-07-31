@@ -1,22 +1,21 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-07-31T17:05:12.620Z
+- generated_at: 2026-07-31T19:41:39.207Z
 - pdf_crop_assignments: 61
-- verified: 59
-- struck: 2
+- verified: 60
+- struck: 1
 - slots_seen_this_cycle: 65
 
 ## Struck (fell back to generated cover)
 
-- برندة (visit-saudi-summer-2026-p005-top-left.jpg) - identity-mismatch - page 5 top-left is now "سمره"
 - باتو (visit-saudi-summer-2026-p006-top-left.jpg) - identity-mismatch - page 6 top-left is now "بلاتو"
 
 ## Verified
 
 - كنوز غارقة (visit-saudi-summer-2026-p034-top-right.png)
-- سكة الأطعمة (visit-saudi-summer-2026-p053-top-right.jpg)
+- سكة الاطعمة (visit-saudi-summer-2026-p053-top-right.jpg)
 - سوق الثلاثاء الشعبي (visit-saudi-summer-2026-p004-top-right.jpg)
-- قصور وقاع ابو نقطة المتحمي (visit-saudi-summer-2026-p004-top-left.jpg)
+- قصور وقلاع ابو نقطة المتحمي (visit-saudi-summer-2026-p004-top-left.jpg)
 - صندوق أسامة من مخرج ثمانية (visit-saudi-summer-2026-p053-bottom-right.jpg)
 - قصور العسابلة (visit-saudi-summer-2026-p004-bottom-left.jpg)
 - قرية آل ينفع (visit-saudi-summer-2026-p004-bottom-right.jpg)
@@ -24,6 +23,7 @@
 - كايف المزرعة (visit-saudi-summer-2026-p053-bottom-left.jpg)
 - سمره (visit-saudi-summer-2026-p005-top-left.jpg)
 - مزرعة ركايب (visit-saudi-summer-2026-p005-bottom-right.jpg)
+- برندة (visit-saudi-summer-2026-p006-top-right.jpg)
 - حديقة مطار ابها الدولي (visit-saudi-summer-2026-p005-bottom-left.jpg)
 - بلاتو (visit-saudi-summer-2026-p006-top-left.jpg)
 - سكاي فيلج (visit-saudi-summer-2026-p006-bottom-right.jpg)
@@ -39,7 +39,7 @@
 - أسبوع العطور (visit-saudi-summer-2026-p008-bottom-right.jpg)
 - واحة عسيب (visit-saudi-summer-2026-p008-top-left.jpg)
 - منتجع الوادي (visit-saudi-summer-2026-p009-top-right.jpg)
-- شارع الفن - القرية الأوروبية (visit-saudi-summer-2026-p009-top-left.jpg)
+- شارع الفن - القرية الاوروبية (visit-saudi-summer-2026-p009-top-left.jpg)
 - بيوني الشرف (visit-saudi-summer-2026-p011-top-right.jpg)
 - فعالية سيّر (visit-saudi-summer-2026-p011-bottom-right.jpg)
 - معرض الصيف للفنون (visit-saudi-summer-2026-p056-top-left.jpg)
@@ -49,21 +49,21 @@
 - نفس (visit-saudi-summer-2026-p009-bottom-left.jpg)
 - مدماك (visit-saudi-summer-2026-p010-top-right.jpg)
 - مارنيز (visit-saudi-summer-2026-p010-top-left.jpg)
-- مزرعة التوت الأسود (visit-saudi-summer-2026-p010-bottom-right.jpg)
 - ارياش (visit-saudi-summer-2026-p011-top-left.jpg)
+- مزرعة التوت الاسود (visit-saudi-summer-2026-p010-bottom-right.jpg)
 - مهابة (visit-saudi-summer-2026-p011-bottom-left.png)
-- الأخطبوطية (visit-saudi-summer-2026-p056-bottom-left.jpg)
+- الاخطبوطية (visit-saudi-summer-2026-p056-bottom-left.jpg)
 - نسمة في الطائف (visit-saudi-summer-2026-p078-top-right.jpg)
 - ورث الفن (visit-saudi-summer-2026-p058-top-left.jpg)
 - Taste of the World (visit-saudi-summer-2026-p058-top-right.jpg)
 - مهرجان المأكولات الشعبية (visit-saudi-summer-2026-p057-top-right.jpg)
 - فعالية رمي السهام (visit-saudi-summer-2026-p057-top-left.jpg)
-- عروض الفنون الأدائية التقليدية (visit-saudi-summer-2026-p057-bottom-left.jpg)
+- عروض الفنون الادائية التقليدية (visit-saudi-summer-2026-p057-bottom-left.jpg)
 - صيف 2026 (visit-saudi-summer-2026-p058-bottom-right.jpg)
 - صيف وسمرة (visit-saudi-summer-2026-p012-top-left.jpg)
 - أوركسترا Harry Potter (visit-saudi-summer-2026-p060-bottom-left.jpg)
 - صيف وِرث 2026 (visit-saudi-summer-2026-p012-top-right.jpg)
-- منعً في لاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد (visit-saudi-summer-2026-p061-top-right.jpg)
+- منعً في للاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد (visit-saudi-summer-2026-p061-top-right.jpg)
 - ضحكات الرياض (visit-saudi-summer-2026-p061-top-left.jpg)
 - أوركسترا Game of Thrones (visit-saudi-summer-2026-p061-bottom-left.jpg)
 - بطولة أبطال المملكة للشطرنج (visit-saudi-summer-2026-p062-top-right.jpg)

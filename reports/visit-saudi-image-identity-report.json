@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T17:05:12.620Z",
+  "generated_at": "2026-07-31T19:41:39.207Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -10,20 +10,11 @@
   },
   "totals": {
     "pdf_crop_assignments": 61,
-    "verified": 59,
-    "struck": 2,
+    "verified": 60,
+    "struck": 1,
     "slots_seen_this_cycle": 65
   },
   "struck": [
-    {
-      "id": "event-برندة",
-      "title": "برندة",
-      "file": "visit-saudi-summer-2026-p005-top-left.jpg",
-      "reason": "identity-mismatch",
-      "detail": "page 5 top-left is now \"سمره\"",
-      "matched_tokens": [],
-      "ratio": 0
-    },
     {
       "id": "event-باتو",
       "title": "باتو",
@@ -46,7 +37,7 @@
     },
     {
       "id": "event-سكة-الأطعمة",
-      "title": "سكة الأطعمة",
+      "title": "سكة الاطعمة",
       "file": "visit-saudi-summer-2026-p053-top-right.jpg",
       "matched_tokens": [
         "سكه",
@@ -65,10 +56,11 @@
     },
     {
       "id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
-      "title": "قصور وقاع ابو نقطة المتحمي",
+      "title": "قصور وقلاع ابو نقطة المتحمي",
       "file": "visit-saudi-summer-2026-p004-top-left.jpg",
       "matched_tokens": [
         "قصور",
+        "وقلاع",
         "ابو",
         "نقطه",
         "المتحمي"
@@ -136,6 +128,14 @@
       "matched_tokens": [
         "مزرعه",
         "ركايب"
+      ]
+    },
+    {
+      "id": "event-برندة",
+      "title": "برندة",
+      "file": "visit-saudi-summer-2026-p006-top-right.jpg",
+      "matched_tokens": [
+        "برنده"
       ]
     },
     {
@@ -284,7 +284,7 @@
     },
     {
       "id": "event-شارع-الفن-القرية-الأوروبية",
-      "title": "شارع الفن - القرية الأوروبية",
+      "title": "شارع الفن - القرية الاوروبية",
       "file": "visit-saudi-summer-2026-p009-top-left.jpg",
       "matched_tokens": [
         "شارع",
@@ -378,21 +378,21 @@
       ]
     },
     {
-      "id": "event-مزرعة-التوت-الأسود",
-      "title": "مزرعة التوت الأسود",
-      "file": "visit-saudi-summer-2026-p010-bottom-right.jpg",
-      "matched_tokens": [
-        "مزرعه",
-        "التوت",
-        "الاسود"
-      ]
-    },
-    {
       "id": "event-ارياش",
       "title": "ارياش",
       "file": "visit-saudi-summer-2026-p011-top-left.jpg",
       "matched_tokens": [
         "ارياش"
+      ]
+    },
+    {
+      "id": "event-مزرعة-التوت-الأسود",
+      "title": "مزرعة التوت الاسود",
+      "file": "visit-saudi-summer-2026-p010-bottom-right.jpg",
+      "matched_tokens": [
+        "مزرعه",
+        "التوت",
+        "الاسود"
       ]
     },
     {
@@ -405,7 +405,7 @@
     },
     {
       "id": "event-الأخطبوطية",
-      "title": "الأخطبوطية",
+      "title": "الاخطبوطية",
       "file": "visit-saudi-summer-2026-p056-bottom-left.jpg",
       "matched_tokens": [
         "الاخطبوطيه"
@@ -461,7 +461,7 @@
     },
     {
       "id": "event-عروض-الفنون-الأدائية-التقليدية",
-      "title": "عروض الفنون الأدائية التقليدية",
+      "title": "عروض الفنون الادائية التقليدية",
       "file": "visit-saudi-summer-2026-p057-bottom-left.jpg",
       "matched_tokens": [
         "عروض",
@@ -510,10 +510,11 @@
     },
     {
       "id": "event-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-2",
-      "title": "منعً في لاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد",
+      "title": "منعً في للاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد",
       "file": "visit-saudi-summer-2026-p061-top-right.jpg",
       "matched_tokens": [
         "منع",
+        "للاحراج",
         "عرض",
         "ستاند",
         "كوميدي",

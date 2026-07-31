@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-07-31T17:05:10.913Z",
+  "published_at": "2026-07-31T19:41:37.534Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 569,
+  "candidates_seen": 568,
   "totals": {
-    "candidates_seen": 569,
-    "published": 1,
-    "linked_existing": 529,
+    "candidates_seen": 568,
+    "published": 7,
+    "linked_existing": 522,
     "blocked": 39,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 530
+    "reconciled": 529
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -165,9 +165,39 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-بلاتو-20260601-4a38d19e",
-      "event_id": "event-بلاتو",
-      "title": "بلاتو"
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-سكة-الأطعمة-20260304-4a38d19e",
+      "event_id": "event-سكة-الأطعمة",
+      "title": "سكة الأطعمة"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-قصور-وقاع-ابو-نقطة-المتحمي-20260503-4a38d19e",
+      "event_id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
+      "title": "قصور وقاع ابو نقطة المتحمي"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-شارع-الفن-القرية-الأوروبية-20260625-4a38d19e",
+      "event_id": "event-شارع-الفن-القرية-الأوروبية",
+      "title": "شارع الفن - القرية الأوروبية"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e",
+      "event_id": "event-مزرعة-التوت-الأسود",
+      "title": "مزرعة التوت الأسود"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e",
+      "event_id": "event-الأخطبوطية",
+      "title": "الأخطبوطية"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
+      "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
+      "title": "عروض الفنون الأدائية التقليدية"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-20260731-4a38d19e",
+      "event_id": "event-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-2",
+      "title": "منعً في لاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد"
     }
   ],
   "linked_existing": [
@@ -292,12 +322,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-سكة-الأطعمة-20260304-4a38d19e",
-      "event_id": "event-سكة-الأطعمة",
-      "title": "سكة الأطعمة",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-سكة-الاطعمة-20260304-4a38d19e",
       "event_id": "event-سكة-الأطعمة",
       "title": "سكة الاطعمة",
@@ -319,12 +343,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-سوق-الثلاثاء-الشعبي-20260501-4a38d19e",
       "event_id": "event-سوق-الثلاثاء-الشعبي",
       "title": "سوق الثلاثاء الشعبي",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-قصور-وقاع-ابو-نقطة-المتحمي-20260503-4a38d19e",
-      "event_id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
-      "title": "قصور وقاع ابو نقطة المتحمي",
       "reason": "already linked to catalog event"
     },
     {
@@ -427,6 +445,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-باتو-20260601-4a38d19e",
       "event_id": "event-باتو",
       "title": "باتو",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-بلاتو-20260601-4a38d19e",
+      "event_id": "event-بلاتو",
+      "title": "بلاتو",
       "reason": "already linked to catalog event"
     },
     {
@@ -592,12 +616,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-شارع-الفن-القرية-الأوروبية-20260625-4a38d19e",
-      "event_id": "event-شارع-الفن-القرية-الأوروبية",
-      "title": "شارع الفن - القرية الأوروبية",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-شارع-الفن-القرية-الاوروبية-20260625-4a38d19e",
       "event_id": "event-شارع-الفن-القرية-الأوروبية",
       "title": "شارع الفن - القرية الاوروبية",
@@ -718,12 +736,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e",
-      "event_id": "event-مزرعة-التوت-الأسود",
-      "title": "مزرعة التوت الأسود",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-دكاة-في-أبها-20260701-4a38d19e",
       "event_id": "event-dakah-in-abha",
       "title": "دكاة في أبها",
@@ -745,7 +757,7 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-دكلاة-في-أبها-20260701-4a38d19e",
       "event_id": "event-dakah-in-abha",
       "title": "دكلاة في أبها",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-hayy-jameel-events-jameel-library-summer-reading-challenge-20260701-3a833686",
@@ -868,12 +880,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e",
-      "event_id": "event-الأخطبوطية",
-      "title": "الأخطبوطية",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-الاخطبوطية-20260704-4a38d19e",
       "event_id": "event-الأخطبوطية",
       "title": "الاخطبوطية",
@@ -925,12 +931,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-فعالية-رمي-السهام-20260706-4a38d19e",
       "event_id": "event-فعالية-رمي-السهام",
       "title": "فعالية رمي السهام",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
-      "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
-      "title": "عروض الفنون الأدائية التقليدية",
       "reason": "already linked to catalog event"
     },
     {
@@ -1108,12 +1108,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-20260731-4a38d19e",
-      "event_id": "event-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-2",
-      "title": "منعً في لاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-mdlbeast-events-unstable-20260731-5647df2e",
       "event_id": "event-unstable",
       "title": "Unstable",
@@ -1126,18 +1120,6 @@
       "reason": "trusted duplicate linked to existing catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-printing-house-20260731-e56f4f89",
-      "event_id": "event-printing-house",
-      "title": "Printing House",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260731-562bc61d",
-      "event_id": "event-tafasahu-make-room",
-      "title": "Tafasahu: Make Room",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260731-e0a239ef",
       "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
       "title": "Bedayat: Beginnings of Saudi Art Movement",
@@ -1147,66 +1129,6 @@
       "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260731-cc43c2bd",
       "event_id": "event-echoes-of-the-familiar",
       "title": "Echoes of the Familiar",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-summer-youth-program-20260731-a20f7a11",
-      "event_id": "event-summer-youth-program",
-      "title": "Summer Youth Program",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-energy-lab-20260731-60155d60",
-      "event_id": "event-energy-lab",
-      "title": "Energy Lab",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tinkering-stations-20260731-5a2c4c0e",
-      "event_id": "event-tinkering-stations",
-      "title": "Tinkering Stations",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260731-ef7080ff",
-      "event_id": "event-trivia-night-earth-quest-tic-tac-know",
-      "title": "Trivia Night - Earth Quest: Tic-Tac-Know",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-water-challenges-20260731-eea51834",
-      "event_id": "event-water-challenges",
-      "title": "Water Challenges",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260731-2bf92d17",
-      "event_id": "event-childrens-art-studio",
-      "title": "Children's Art Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-games-hub-20260731-fb83124c",
-      "event_id": "event-games-hub",
-      "title": "Games Hub",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260731-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260731-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-family-challenges-20260731-3726c868",
-      "event_id": "event-family-challenges",
-      "title": "Family Challenges",
       "reason": "already linked to catalog event"
     },
     {
@@ -1234,6 +1156,24 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-printing-house-20260801-e56f4f89",
+      "event_id": "event-printing-house",
+      "title": "Printing House",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260801-562bc61d",
+      "event_id": "event-tafasahu-make-room",
+      "title": "Tafasahu: Make Room",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tinkering-stations-20260801-5a2c4c0e",
+      "event_id": "event-tinkering-stations",
+      "title": "Tinkering Stations",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-toddler-saturday-20260801-739e1f00",
       "event_id": "event-toddler-saturday",
       "title": "Toddler Saturday",
@@ -1246,15 +1186,51 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260801-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260801-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-story-land-20260801-bb5dc01b",
       "event_id": "event-story-land",
       "title": "Story Land",
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260801-2bf92d17",
+      "event_id": "event-childrens-art-studio",
+      "title": "Children's Art Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260801-2671d1ce",
       "event_id": "event-emboss-printing-experience",
       "title": "Emboss Printing Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-family-challenges-20260801-3726c868",
+      "event_id": "event-family-challenges",
+      "title": "Family Challenges",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-games-hub-20260801-fb83124c",
+      "event_id": "event-games-hub",
+      "title": "Games Hub",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-energy-lab-20260801-60155d60",
+      "event_id": "event-energy-lab",
+      "title": "Energy Lab",
       "reason": "already linked to catalog event"
     },
     {
@@ -1366,6 +1342,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-summer-youth-program-20260803-a20f7a11",
+      "event_id": "event-summer-youth-program",
+      "title": "Summer Youth Program",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-paint-like-an-artist-20260803-a67d8ec3",
       "event_id": "event-paint-like-an-artist",
       "title": "Paint Like an Artist",
@@ -1471,6 +1453,12 @@
       "candidate_id": "candidate-ithra-events-little-explorers-20260806-1cc1993f",
       "event_id": "event-little-explorers",
       "title": "Little Explorers",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260806-ef7080ff",
+      "event_id": "event-trivia-night-earth-quest-tic-tac-know",
+      "title": "Trivia Night - Earth Quest: Tic-Tac-Know",
       "reason": "already linked to catalog event"
     },
     {

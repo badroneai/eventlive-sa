@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-07-31T17:07:12.604Z
+Generated at: 2026-07-31T19:44:25.017Z
 
 ## Operating Rule
 
@@ -9,11 +9,11 @@ Raw collection is not publication. Every source run preserves evidence, separate
 ## Totals
 
 - Sources: 88
-- Attempted this run: 20
-- Deferred by adaptive cadence: 28
+- Attempted this run: 29
+- Deferred by adaptive cadence: 19
 - Productive: 20
-- Zero-yield: 0
-- Collector errors: 0
+- Zero-yield: 2
+- Collector errors: 5
 - Persistent collector errors: 6
 - Probe blocked: 0
 - Auto-publish eligible source lanes: 12
@@ -78,9 +78,9 @@ Call log:
 | 20 | code-mcit-programs | active-collector | zero-yield | 0 | yes | Zero-yield for 73 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 21 | misk-hub-programs | active-collector | productive | 5 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 22 | dhahran-expo-calendar | active-collector | productive | 17 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
-| 23 | ithra-events | active-collector | productive | 78 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 23 | ithra-events | active-collector | productive | 77 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 24 | saudi-digital-academy | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed |
-| 25 | sdaia-academy-programs | active-collector | zero-yield | 0 | no | Zero-yield for 11 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 25 | sdaia-academy-programs | active-collector | zero-yield | 0 | no | Zero-yield for 12 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 26 | saudi-events-app | partnership | partnership | 0 | no | Partnership/API lane; do not scrape protected or app-only data. |
 | 27 | enjoy-saudi-events | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: http-403 |
 | 28 | misk-hub-events | active-collector | zero-yield | 0 | no | Zero-yield for 73 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
@@ -123,7 +123,7 @@ Call log:
 | 62 | baha-amanah-events | extractor-backlog | not-attempted | 0 | no | Probe HTML/API shape, then decide whether an extractor is worth adding. |
 | 63 | baha-chamber-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 64 | jouf-chamber-events | extractor-backlog | not-attempted | 0 | no | Latest deep probe recommends build-html-detail-extractor; build only if future date-complete rows are visible. |
-| 65 | northern-borders-chamber-events | extractor-backlog | zero-yield | 0 | no | Zero-yield for 7 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 65 | northern-borders-chamber-events | extractor-backlog | zero-yield | 0 | no | Zero-yield for 8 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 66 | tabuk-chamber-events | extractor-backlog | zero-yield | 0 | no | Zero-yield for 30 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 67 | jazan-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 12 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 68 | hail-chamber-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |

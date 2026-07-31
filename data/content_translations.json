@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-31T17:13:41.698Z",
+  "generated_at": "2026-07-31T19:51:20.907Z",
   "entries": {
     "1f91543d6769d9abda47f221ba86f9f9ebf27443": {
       "source": "Skill Development Initiative",
@@ -21746,14 +21746,6 @@
       "method": "argos-mt",
       "translated_at": "2026-07-27T20:32:15.041Z"
     },
-    "6f0d94f8527ee50b5d3dfbbfe4c7ee0db893d39e": {
-      "source": "إثراء بطاقة الفعالية لتكون مفيدة للمستخدم والذكاءات ومحركات البحث.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Enrich the effectiveness card to be useful to users, intelligence and search engines.",
-      "method": "argos-mt",
-      "translated_at": "2026-07-27T20:32:15.041Z"
-    },
     "6b59359f9f356a8019236516df210e030262e59d": {
       "source": "الفعالية: Skill Development Initiative",
       "source_lang": "en",
@@ -22978,35 +22970,11 @@
       "method": "argos-mt",
       "translated_at": "2026-07-27T20:32:15.042Z"
     },
-    "74f81f71297ebdb7505f0e9a1adfedc2bef27c9a": {
-      "source": "الموقع: منطقة عسير",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Location: difficult area",
-      "method": "argos-mt",
-      "translated_at": "2026-07-27T20:32:15.042Z"
-    },
-    "0be1902c0b62b937eefc77a2d5a9b630b9ecca8c": {
-      "source": "الوجهة: منطقة عسير",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Face: difficult area",
-      "method": "argos-mt",
-      "translated_at": "2026-07-27T20:32:15.042Z"
-    },
     "1f2b1873b2bc8c2e85f95a0686917b0869ff1d20": {
       "source": "الموعد: ١ مايو ٢٠٢٦ في ١٢:٠٠ ص إلى ٣١ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
       "source_lang": "ar",
       "target_lang": "en",
       "text": "Date: 1 May 2026 at 12:00 to 31 December 2026 at 11:59 m",
-      "method": "argos-mt",
-      "translated_at": "2026-07-27T20:32:15.042Z"
-    },
-    "6163949eace61eeaa284d4e630c12a5d37e43675": {
-      "source": "فعالية تراثية ثقافية تضم مطاعم، ومقاهي محلية وإقليمية ومأكولات تراثية، وحرفاً يدوية، وجلسات أدبية، وموسيقية في عسير.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Cultural heritage effectiveness involving restaurants, local and regional cafes, genetics, handicrafts, literary and musical sessions in Asira.",
       "method": "argos-mt",
       "translated_at": "2026-07-27T20:32:15.042Z"
     },
@@ -23183,14 +23151,6 @@
       "source_lang": "ar",
       "target_lang": "en",
       "text": "Date: 15 May 2026 at 12:00 to 23 August 2026 at 11:59 M",
-      "method": "argos-mt",
-      "translated_at": "2026-07-27T20:32:15.042Z"
-    },
-    "9adaf14af367dcbba92b1a30d765d1b1214fd8ac": {
-      "source": "قرية آل ينفع الأثرية في عسير، تضم منازل ومساجد ومدرجات، وتجمع بين التراث المعماري، والفنون المعاصرة، والهوية الثقافية.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "An archaeological village in Asir, comprising houses, mosques and gradients, a combination of architectural heritage, contemporary arts and cultural identity.",
       "method": "argos-mt",
       "translated_at": "2026-07-27T20:32:15.042Z"
     },
@@ -38866,14 +38826,6 @@
       "method": "argos-mt",
       "translated_at": "2026-07-27T20:32:15.046Z"
     },
-    "89e9d562bbdd59e974980bbd7a5c311d6ce3b477": {
-      "source": "إثراء فعاليات قطاع المياه والاستدامة ضمن كتالوج EventLive الوطني.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Enrichment of water sector and sustainability activities within national catalogues EventLive.",
-      "method": "argos-mt",
-      "translated_at": "2026-07-27T20:32:15.046Z"
-    },
     "71b96b0fb7d35a5f8d1151d61826a7be314aac8f": {
       "source": "الفعالية: Global Infrastructure Expo",
       "source_lang": "en",
@@ -49618,13 +49570,1013 @@
       "method": "argos-mt",
       "translated_at": "2026-07-31T17:13:41.697Z"
     },
+    "96967da48615a046d3b9bbb714b4d25c664fb43d": {
+      "source": "Riyadh",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الرياض",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.905Z"
+    },
+    "9c91f2a4be924feba3ba01388f64ad9b9329b077": {
+      "source": "Ministry of Culture commissions",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "لجان وزارة الثقافة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.905Z"
+    },
+    "6f0d94f8527ee50b5d3dfbbfe4c7ee0db893d39e": {
+      "source": "إثراء بطاقة الفعالية لتكون مفيدة للمستخدم والذكاءات ومحركات البحث.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Ithra effectiveness card to be useful for users, intelligence and search engines.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.905Z"
+    },
+    "11c7eafe84697f0b238b987a2a6100f58c422314": {
+      "source": "برنامج ممتد",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Extended programme",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "8c63527434c6981f784fd774d5fb3209f3b9ce69": {
+      "source": "Saudi Arabia",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "السعودية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "15867bb7018de81f662978ed211c3692a949544a": {
+      "source": "Boulevard City, Riyadh",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مدينة بوليفارد، الرياض",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "2c1630afb845ab2dbc7efbcf4b40b661c15f7d50": {
+      "source": "Saudi Tourism Authority",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الهيئة العربية للسياحة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "de72e09e179cc38ade43c9ca706233d21ba0fc49": {
+      "source": "King Abdulaziz Public Library",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مكتبة الملك عبد العزيز العامة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "a9c58fa60d584fae6317763960fc41a90e5647ed": {
+      "source": "Jeddah",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "جدة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "e209db61b966931f87bd2191c1faa7e0c36fecc8": {
+      "source": "غلاف EventLive لفعالية Sunken Treasures",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الغطاء النباتي",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "8f0c58c7d09f2b03ae3029e633695b5c1db022d6": {
+      "source": "سكة الاطعمة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Food knife.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "cd64658f4bec596ad2465b0dcadacb445b013a5f": {
+      "source": "سكة الاطعمة هي وجهة دائمة تجمع نخبة من المطاعم، لتقدّم للزوار تجربة طعام متكاملة في أجواء نابضة بالحياة. سكة الاطعمة ضمن السياحة والتجارب في الرياض. تبدأ الفعالية ٠٤‏/٠٣‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ١٥‏/٠٨‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The food chain is a permanent destination that gathers selected restaurants, to offer visitors an integrated food experiment in a vibrant environment. Food in tourism and experiments in Riyadh. Effectiveness begins 40/2026, 12:00 p.m. and ends 15/2026, 11:59 m according to available data. The page shall be presented at the time, location and source of effectiveness, calendar linkages and trends as they are available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "182bde7da310e610ab330f64fe66544e9cfae321": {
+      "source": "سكة الاطعمة هي وجهة دائمة تجمع نخبة من المطاعم، لتقدّم للزوار تجربة طعام متكاملة في أجواء نابضة بالحياة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The food chain is a permanent destination that gathers selected restaurants, to offer visitors an integrated food experiment in a vibrant environment.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "18dc5a003ae4fa63dd43099e02b8db36f6b87c55": {
+      "source": "الرياض",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Riyadh",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "c3eea6edf323154e2d5b08b0e441d340f709a28e": {
+      "source": "الفعالية: سكة الاطعمة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: food chain",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "63232e9c505a8b3d9783fc03652af1ea42f75296": {
+      "source": "In-Person",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "داخل الفرد",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "d19133dc6ac3c9a1ab00db6847137533f869ef0b": {
+      "source": "Mohammed Bin Salman Foundation / Misk Hub",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مؤسسة محمد بن سلمان/ميسك هوب",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "3e12b87e09ceeb68e8d86416ff7f2b44c3f0e4bc": {
+      "source": "Aseer Region",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "منطقة عسير",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "fa4405436516476dd57940f1c8a460cdd2aa3afc": {
+      "source": "Free",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مجانا",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "d96986b0db9d11e1cc99d18a4d2f94f1f4fe32cd": {
+      "source": "منطقة عسير",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Aseer Region",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "74f81f71297ebdb7505f0e9a1adfedc2bef27c9a": {
+      "source": "الموقع: منطقة عسير",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Location: Aseer Region",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "0be1902c0b62b937eefc77a2d5a9b630b9ecca8c": {
+      "source": "الوجهة: منطقة عسير",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Face: Aseer Region",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "de7cf05e003c804042f70d6a39732b97bf167f23": {
+      "source": "قصور وقلاع ابو نقطة المتحمي",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Failure and castles of Abu Muhim",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "af9ef1f3762133e55048a48b8e07a15b440d1277": {
+      "source": "فعالية تراثية ثقافية تضم مطاعم، ومقاهي محلية وإقليمية ومأكولات تراثية، وحرفاً يدوية، وجلسات أدبية، وموسيقية في عسير. قصور وقلاع ابو نقطة المتحمي ضمن الترفيه والعائلات في عسير. تبدأ الفعالية ٠٣‏/٠٥‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ٢٣‏/٠٨‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Cultural heritage effectiveness involving restaurants, local and regional cafes, genetics, handicrafts, literary and musical sessions in Aseer. Failure and castle of Abu Muhim in Aseer entertainment and family. Effectiveness begins at 30/50/2026, 12:00 p.m. and ends at 23/80/2026, 11:59 m by available data. The page shall be presented at the time, location and source of effectiveness, calendar linkages and trends as they are available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "6163949eace61eeaa284d4e630c12a5d37e43675": {
+      "source": "فعالية تراثية ثقافية تضم مطاعم، ومقاهي محلية وإقليمية ومأكولات تراثية، وحرفاً يدوية، وجلسات أدبية، وموسيقية في عسير.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Cultural heritage effectiveness involving restaurants, local and regional cafes, genetics, handicrafts, literary and musical sessions in Aseer.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "4bfa7253bfee8f3081237b74ad196d1946bb6cf3": {
+      "source": "الفعالية: قصور وقلاع ابو نقطة المتحمي",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: deficiency and take-off of Abu Muhim",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "9adaf14af367dcbba92b1a30d765d1b1214fd8ac": {
+      "source": "قرية آل ينفع الأثرية في عسير، تضم منازل ومساجد ومدرجات، وتجمع بين التراث المعماري، والفنون المعاصرة، والهوية الثقافية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Archaeological village in Aseer, comprising houses, mosques and gradients, a gathering between architectural heritage, contemporary arts and cultural identity.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "a2aa65645bb44506b767c803d072b16901bdceaf": {
+      "source": "Paid",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "دفع",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "6c59b96cd4f23e66c705fdf4195a3a24aa11a7ad": {
+      "source": "Hayy Jameel",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "حي جميل",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "f4fe66637719a99bda8a0bc2abec04a63fc2360a": {
+      "source": "غلاف EventLive لفعالية باتو",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "EventLive for Batu effectiveness",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "73b675eed73dbfac3e10ebff299c277e9463456c": {
+      "source": "Aseer",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "عسير",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "27d37b444bda1eeca43fe541bf9284c2a9d2a044": {
+      "source": "Madinah",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المدينة المنورة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "744301c73017854d5747a43ccd856e3e679c5d39": {
+      "source": "شارع الفن - القرية الاوروبية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Art Street - European Village",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "afa4b0bbb6d5e715c25f734c1403b8f0f9182183": {
+      "source": "القرية الاوروبية في شارع الفن هي وجهة ترفيهية عائلية بأجواء أوروبية حيوية، تضم مقاهٍ، ومطاعم، وألعاب أطفال، وحدائق ممتعة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The European village on Art Street is a family entertainment destination with a vital European atmosphere, including a café, restaurants, children's toys and fun gardens.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "0072fa665e499389f3ae400bf66d1c7d85ba8902": {
+      "source": "الفعالية: شارع الفن - القرية الاوروبية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Art Street - European Village",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "c4642119a75c66aa63135cabc6941c905112eaad": {
+      "source": "The National Museum, Riyadh",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المتحف الوطني، الرياض",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "1b4457e0111ffe420f3fb5aa8a6af7285b0b62d1": {
+      "source": "The National Museum",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المتحف الوطني",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "12833c88e48a6f5d2b189ec72a3a88bade2659ef": {
+      "source": "غلاف EventLive لفعالية Kashtah",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "طراز EventLive Kashtah",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "f9d8681c93e9a17a939715bfcd577f6842edc700": {
+      "source": "الباحة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Al Baha",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "af6e8e14d2c0d159951203c3e062d5e2064fd32a": {
+      "source": "مزرعة التوت الاسود",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Black Tutan farm.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "03572b487a0152165548ab22c0db6ac7b22bad42": {
+      "source": "الفعالية: مزرعة التوت الاسود",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Black Tutan farm",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "22ea9046fe9db45261cd4d36609d158de958b2cb": {
+      "source": "Al Baha",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الباحة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "b36f79cac1c0bcafa0436cb5fb5d7315eac5923b": {
+      "source": "الاخطبوطية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Octopus.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "e6a3d6f869e2544c21cc104bd13700b6f0a2134c": {
+      "source": "تجربة ترفيهية تفاعلية لفن الحيل الادائية، تجمع بين العروض الحية، وتفاعل الجمهور، والسوالف الفنية، في ليلة من الدهشة والغرابة في مركز سرد الثقاا.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "An interactive recreational experience of the art of performance tricks, combining live shows, public interaction and artistic fluids, on a surprising and strange night at the Focal Point.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "d05e1722b8a77ba075bde202c2884814db8ee43d": {
+      "source": "الفعالية: الاخطبوطية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: octopus",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "9111857e990671dca7622ebe9a112d6e9b6e9032": {
+      "source": "CST || IEEE",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "لجنة العلم والتكنولوجيا",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "45b7036a855eaabad29ae266b3b7373c56fbcdd2": {
+      "source": "غلاف EventLive لفعالية Okhtabotiya",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "طراز EventLive",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "778eb742fdec6cfc18132180b10c6ff458fa226f": {
+      "source": "الطائف",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Taif",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "f881207dc5cdffb49ae8bfc0a9e4f189529125b7": {
+      "source": "الرياض - المقر الرئيسي",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Riyadh - Headquarters",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "c095c553225a5e748efb1b433b56cce730cf4a56": {
+      "source": "Tuwaiq Academy",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "أكاديمية طويق",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "c8707cec1431675ccdb16f02779784f98ec60bc3": {
+      "source": "free",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مجانا",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "af11e19a79b22d2273b45a075379911221c52160": {
+      "source": "عروض الفنون الادائية التقليدية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Traditional performances",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "07b044dcb2c514ebfffa39f339f1c4b92abc6847": {
+      "source": "استمتع بعروض الفنون الادائية التقليدية، تُقدلام أمام الجمهور مباشرة في فقرات شعبية قصيرة تتكرر على مدار الفعالية. عروض الفنون الادائية التقليدية ضمن الثقافة والفنون في الرياض. تبدأ الفعالية ٠٦‏/٠٧‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ٢٢‏/٠٨‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Enjoy the traditional performances of arts, delivered directly to the public in short and recurring popular paragraphs throughout effectiveness. Traditional performances within culture and arts in Riyadh. Effectiveness begins 60/07/2026, 12:00 p.m. and ends 22/80/2026, 11:59 m by available data. The page shall be presented at the time, location and source of effectiveness, calendar linkages and trends as they are available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "141b6d880beecdf93be65d2722b6c7f23be65d72": {
+      "source": "استمتع بعروض الفنون الادائية التقليدية، تُقدلام أمام الجمهور مباشرة في فقرات شعبية قصيرة تتكرر على مدار الفعالية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Enjoy the traditional performances of arts, delivered directly to the public in short and recurring popular paragraphs throughout effectiveness.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "28973e7cc80c4c5cdc61fed7851bd3530129df72": {
+      "source": "الفعالية: عروض الفنون الادائية التقليدية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: traditional performances",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "20854a29d076af590a9cc2630d1901c7710328eb": {
+      "source": "11 موقعًا في مدينة نجران",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "11 locations in Najran City",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "f64efa3e4595c905156f2e199e1b39bbbf3b9962": {
+      "source": "Najran Municipality",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "بلدية نجران",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "0836470fd54f3763b06ebe6ecaf0e61098ed68df": {
+      "source": "برعاية أمير المنطقة.. أمانة نجران تطلق فعاليات مهرجان \"صيفنا هايل 2026\" غدًا",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Under the auspices of the Prince of the Zone... Najran's secretariat launches our summer's 2026 festival tomorrow.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "8bf75fa5acf5effd9bbd813aca192ec32568c1e4": {
+      "source": "Jouf University",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "جامعة الجوف",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "f08d813ec447194eda0fc0963b080a1d38ecde8a": {
+      "source": "Ithra - Museum - Gallery 2",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "إيهرا - متحف - معرض 2",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "b56657a38e62e5ea1dcc10be842c0025a9db3870": {
+      "source": "Museum - Gallery 2",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المتحف - المعرض 2",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "68a2cf08d50bb13f8ea00719275d09a98d2feb95": {
+      "source": "Ithra",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "إثراء",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "e6b1987116604d22012d81e37a87febd752c2b38": {
+      "source": "Ithra - Museum - Gallery 0",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "إيهرا - متحف - معرض صفر",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "91505217abf83e1098ea84f522d4c2f0b92b76e2": {
+      "source": "Museum - Gallery 0",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "متحف - معرض صفر",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "9216f076e84ea1bf7ae9edd4906b9002728fbc0d": {
+      "source": "Ithra - Library - Level 2",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المكتبة - المستوى 2",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "3b8f05644102d50c215d570767d7107da3bcbc66": {
+      "source": "Library - Level 2",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المكتبة - المستوى 2",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "15431110299c1e36f3781d84d6b634c51658f1ae": {
+      "source": "Ithra - Library - Level 2 - Exhibit Area",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "إيهرا - المكتبة - المستوى 2 - منطقة المعارض",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "95e28acd6244b200626b4855115dabf25311035b": {
+      "source": "Library - Level 2 - Exhibit Area",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المكتبة - المستوى 2 - منطقة المعارض",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "3c7651c1786faaa7348ac9051516084cd7377fa2": {
+      "source": "Mishkat Interactive Center, King Abdullah City for Atomic and Renewable Energy, Riyadh",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مركز ميشكات التفاعلي، الملك عبد الله سيتي للطاقة الذرية والمتجددة، الرياض",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "4c117b2b058031921e45ff6fbe6c648eb5091a7e": {
+      "source": "Mishkat Interactive Center for Atomic and Renewable Energy",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مركز ميشكات التفاعلي للطاقة الذرية والمتجددة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "342a8b882a4d082c8f037452b8b999b042403295": {
+      "source": "Children Museum",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "متحف الأطفال",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "d830adc70d705ee4458829c48deb172feec09b09": {
+      "source": "Ithra - Great Hall",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "(إيهرا) - قاعة رائعة -",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "aea095719da9ae14ec42d1960062a0203fad25d8": {
+      "source": "Great Hall",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "قاعة رائعة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "2c13e54165543622a89e580bc0019aa53c90ed3d": {
+      "source": "Ithra - Ithra Tower - Level 7, Art Studio",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "إيهرا - برج إيهرا - المستوى 7، استديو الفنون",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "24863b04361b3cf41fcc8c9f7b19849468ce730d": {
+      "source": "Ithra Tower - Level 7, Art Studio",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "برج إيهرا - المستوى 7، استديو الفنون",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "86edace5279f0de91714b2c94672db004a8da3bc": {
+      "source": "Ithra Tower - Level 3",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "برج إيهرا - المستوى 3",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "57772d95e8050b630f502504023261aeb8e52fe6": {
+      "source": "Ithra - Library - Level 3",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المكتبة - المستوى 3",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "8503ad09f842aafb84e12b45699395a5ba535b40": {
+      "source": "Library - Level 3",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المكتبة - المستوى 3",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "4f9549f7eff5dea44fe95f87e3a7d561396f1c36": {
+      "source": "الفعالية الرئيسية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Main effectiveness",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "1a4abce0b6849aa9a3b801ba67687f74951ffd03": {
+      "source": "King Abdulaziz University",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "جامعة الملك عبدالعزيز",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "3e7c9cfc3798ae268669e4043447ca4266367df4": {
+      "source": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Python Web applications development camp",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "91fdff867a0320c638a3bc146621e663d0157914": {
+      "source": "Ithra - Ithra Tower",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "إهرا - برج إيهرا",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "830238adc347cbe5fbd1170a76816c3bc47ab46f": {
+      "source": "Ithra Tower",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "برج إيطالا",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "447a247e3132e1c24371314793ba7c276de63cf0": {
+      "source": "Ithra - Children's Museum",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "متحف الأطفال",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "23bfce5454a78a447326d022e9a2cfc9fde6a0a7": {
+      "source": "Children's Museum",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "متحف الأطفال",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "e04592bc11379b0b1d7a7c4feeb9e5363e401c4f": {
+      "source": "Energy Exhibit",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "معرض الطاقة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "9497166014029616ebb4dc1ab74ab3c3d5a18972": {
+      "source": "Ithra Tower - Level 5",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "برج إيهرا - المستوى 5",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "341c5b0cc81b0a82a2fd5fe82596df07c20cc291": {
+      "source": "Ithra - Ithra Tower - Level 7",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "إبراه - برج إيهرا - المستوى 7",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "f74802e6000d0443f9f5d60b9c771f97dd0f7f45": {
+      "source": "Ithra Tower - Level 7",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "برج إيهرا - المستوى 7",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "4ef630bd7fda0c92436a10b7b31ac47b9839add3": {
+      "source": "Umm Al-Qura University",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "جامعة أم القرى",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "af8ef51f4a091d8080b25375508953f331442bb8": {
+      "source": "Energy Exhibit - Youth Camp",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "معرض الطاقة - معسكر الشباب",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "494db766dc597f20e6fd84e58b841f8c6ccd718c": {
+      "source": "غلاف EventLive لفعالية Unstable",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "غير مستقر",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "1a7e4df78c0df60be31df1c062639f73039fb814": {
+      "source": "منعً في للاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Discontinuation: Stand Abu Komidi of Abdulrahman Muhammad",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "d314be42dadcb97c70fbc2ae17d091539b811255": {
+      "source": "منعً في للاحراج، ساعة ستاند أب كوميدي خاصة من النجم المصري عبدالرحمن محمد في الرياض على مسرح كوميدي بود. منعً في للاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد ضمن الترفيه والعائلات في الرياض. تبدأ الفعالية ٣١‏/٠٧‏/٢٠٢٦، ١٢:٠٠ ص وتنتهي ٣١‏/٠٧‏/٢٠٢٦، ١١:٥٩ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "In Al-Haraj, Stand Abb Komidi &apos; s private watch from the Egyptian star Abdul Rahman Muhammad in Riyadh on the Komidi Bud Theatre. Warrant: Stand Abu Komidi of Abdul Rahman Muhammad as a entertainment and families in Riyadh. Effectiveness begins 31/07/2026, 12:00 p.m. and ends 31/07/2026, 11:59 m by available data. The page shall be presented at the time, location and source of effectiveness, calendar linkages and trends as they are available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "160b7edf8263f5b1392b6cc0c30194ce6f66e626": {
+      "source": "منعً في للاحراج، ساعة ستاند أب كوميدي خاصة من النجم المصري عبدالرحمن محمد في الرياض على مسرح كوميدي بود.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "In Al-Haraj, Stand Abb Komidi &apos; s private watch from the Egyptian star Abdul Rahman Muhammad in Riyadh on the Komidi Bud Theatre.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "5f332e901e961c1c57a00ebd315e44873cdbdcb7": {
+      "source": "الفعالية: منعً في للاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: prevention of embarrassment: presentation by Stand A. Komidi of Abdul Rahman Muhammad",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "ecc6ec84f943ea35f8824bdb554743013bca63bf": {
+      "source": "Energy Exhibit - Youth Club",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "معرض الطاقة - نادي الشباب",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "355c756d2598d1b3918c873705977e3fbf3b2606": {
+      "source": "غلاف EventLive لفعالية Beast House",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الحلقة الدراسية:",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "1009c001a930b6c508af4af4adda04c927b4a2ce": {
+      "source": "Technical Institute",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المعهد التقني",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "2353955be8c9d82b6156d4126a486e5c6f83855d": {
+      "source": "Qassim",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "القصيم",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
     "0f156f2e12622bd48b939efe8b7b3a0e82560d40": {
       "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
       "source_lang": "ar",
       "target_lang": "en",
       "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of not less than 75%, and the equivalent of certificates is required from the Ministry of Higher Education for non-Saudi Arabian university graduates.",
       "method": "argos-mt",
-      "translated_at": "2026-07-31T17:13:41.697Z"
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "84c130d43e46cbddf713215f5ca9ad363ad85ab9": {
+      "source": "غلاف EventLive لفعالية Misk × Tuwaiq Immersive Program",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "برنامج &quot; ميسك &quot;",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "1a829d4cc4121c3efc67374f826a26ce4f86ce80": {
+      "source": "تفاعلية مباشرة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Live interactive.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "0580c844a8c060904cc5286f1da9cbb4bad37835": {
+      "source": "Cloud Storage and Databases Fundamentals - أساسيات التخزين السحابي وقواعد البيانات | بوابة مهارات المستقبل",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Cloud Storage and Databases Fundam entals. Closing storage basics and databases.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "b6905ebcd1e288de9abe12ddb4c70fef85514035": {
+      "source": "⁠DevOps Fundamentals for Cloud Environments-أساسيات ديفوبس لبيئات السحابة | بوابة مهارات المستقبل",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "⁠DevOps Fundamentals for Cloud Environm ents-Daviops foundation for cloud environments.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "43815aceecfc91471a91bac555e09b2e52868f09": {
+      "source": "Cloud Security Operations and Identity Management - عمليات أمان السحابة وإدارة الهوية | بوابة مهارات المستقبل",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Cloud Security Operations and Identity Management - cloud safety and identity management processes | future skills portal",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "acbe99c7e8a6e59c79e78403acb74bdb645af7fa": {
+      "source": "Online",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "على الإنترنت",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "50f73fbff08752b9fc01c980cd016b8e369517d5": {
+      "source": "Ithra Tower - L9 - Classroom 2",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "برج إيهرا - L9 - الغرفة 2",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "3fd5e9a5a4ae307359477eaa7679eaef917b4030": {
+      "source": "عن بعد",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Remote.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "a21d795df044a7e85c5273a410536e01048733e6": {
+      "source": "Saudi Food and Drug Authority",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الهيئة العربية السعودية للأغذية والمخدرات",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "830ee98aa526dd73a3daacf5eb2f91a813c0d60f": {
+      "source": "Ithra - Library, Level 2",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "إيهرا - المكتبة، المستوى 2",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "f4995830bad15ec5ba9838b8ac0f51a39ba6f990": {
+      "source": "Ithra - Ithra Tower - Level 9, Classroom 2",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "إيهرا - برج إيهرا - المستوى 9، الصف 2",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "dcf0e06a4917cfb9be9010e03b742dcb73323ec4": {
+      "source": "Ithra Tower - Level 9, Classroom 2",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "برج إيهرا - المستوى 9، الصف 2",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "10625545830e909130c41b62c1837872c90bf114": {
+      "source": "Theater",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المسرح",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "e1ac9622b3c3093a9aaef97c31483357cc473e01": {
+      "source": "Ithra - Ithra Tower - Level 8, Classroom 2",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "إيهرا - إيهرا برج - المستوى 8، الصف 2",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "8bbd6167efc377e880c03e427258892eaa39efbd": {
+      "source": "Ithra Tower - Level 8, Classroom 2",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "برج إيهرا - المستوى الثامن، الصف 2",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "7229eb6f5b57abdf9494a16e8a8ce8dbce1e4516": {
+      "source": "Hayy Jameel - Hayy Makers, First Floor",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "(هاي جاميل) (هاي ماكرز)",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "cb20aec5fe26ad986e5d9b900236195445a8d760": {
+      "source": "Tradepass",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "جوازات التجارة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "c078a268a7c4ec5882dca9c9c5926185849774f1": {
+      "source": "The Arena Riyadh, Riyadh, Saudi Arabia",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "أرينا الرياض، الرياض، المملكة العربية السعودية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "b88df0ff418ae2383551cbc05751bbda710e1840": {
+      "source": "Harvard Masterclass",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "درجة الماجستير",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "47fb894a181611e1c91e87be327f7b234b89a07f": {
+      "source": "HR Leaders Conference",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مؤتمر قادة الموارد البشرية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "09e6a343b631702e2ff1fed394db536cb6cda4d0": {
+      "source": "L&D Stage",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المرحلة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "fa53bafa4336bcef579b9fbddb22de1e33c39b48": {
+      "source": "Talent Insights Stage",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مرحلة النظر في المواهب",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "67810558e47da28f7cd02546af2da12a930b0182": {
+      "source": "Technology and Innovation Stage",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مرحلة التكنولوجيا والابتكار",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "ee609cfe247fd11a30a24946ea7881b9e7535d5f": {
+      "source": "Riyadh Front , Riyadh",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "جبهة الرياض، الرياض",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "a6f6f0a72b88bf1677c4810406eb4a45335a5675": {
+      "source": "dmg events",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "أحداث دنيئة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
     },
     "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
       "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
@@ -49632,7 +50584,47 @@
       "target_lang": "en",
       "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
       "method": "argos-mt",
-      "translated_at": "2026-07-31T17:13:41.697Z"
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "1ba6fc84fce312ca6afebfc9b470f994289f2fc3": {
+      "source": "Riyadh Front Exhibition & Convention Center",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مركز الرياض للمؤتمرات",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "e81b776a5584c3a39cabc0308e54db68897b0b01": {
+      "source": "Saudi Wood Expo is a trade exhibition for the wood and woodworking industries, featuring products, machinery, materials, and business networking.",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "إن معرض الخشب السعودي معرض تجاري للصناعات الخشبية والصناعات الخشبية، يضم منتجات وآلات ومواد وشبكات تجارية.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "dd942ab8d8d55af2a0a718d2edf9e664ffd3be13": {
+      "source": "Saudi Industrial Series is a business exhibition for industrial technology, manufacturing solutions, suppliers, and partnerships supporting Saudi Arabia’s industrial growth.",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "والسلسلة الصناعية السعودية هي معرض تجاري للتكنولوجيا الصناعية، والحلول الصناعية، والموردين، والشراكات التي تدعم النمو الصناعي للمملكة العربية السعودية.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "28e749835eab7417d88f895c7f901374c0c58638": {
+      "source": "Riyadh Exhibition & Convention Centre, Malham",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مركز مؤتمرات الرياض، مالهام",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "1549430a1a906c07b656e6eb8a994c135c879ff3": {
+      "source": "Malham, Riyadh, Saudi Arabia",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مالهام، الرياض، المملكة العربية السعودية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
     },
     "5c6a9ff87c6cdb115664bc8a097d521eadf27f9f": {
       "source": "مركز الرياض للمعارض والمؤتمرات في ملهم",
@@ -49640,7 +50632,839 @@
       "target_lang": "en",
       "text": "The Riyadh International Convention Exhibition Center in Inspiration",
       "method": "argos-mt",
-      "translated_at": "2026-07-31T17:13:41.697Z"
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "57e8f07b5b6bf412bbb8f2865ae99c2a4495b261": {
+      "source": "Sponsored",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الرعاة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "d55cb07d826ba6edc25da7aa6639bd70d5e5c364": {
+      "source": "Orbital 1 - Hall 4",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المدار 1 - القاعة 4",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "cf66ac425e76043b05041e682320763d29a1c4df": {
+      "source": "Opening Remarks",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "ملاحظات افتتاحية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "750a8f439a31637998d9d52c63ec8ab3212435c1": {
+      "source": "Investor & Founder Stage - Hall 1A",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مرحلة المستثمر المؤسس - القاعة 1 ألف",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "00b096af4292a5d4f109ccd415bbaccf587b6a38": {
+      "source": "Professional Networking",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الشبكات المهنية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "17da851520f080b90df61f41d8342d56126086f5": {
+      "source": "Sports Tech Stage - Hall 6",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الرياضة التقنية - القاعة 6",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "e5404970d9c0b30425ceb6cc8627e7db2ea7d4ae": {
+      "source": "Opening Keynote",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مفتاح الافتتاح",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "1188d85b42c297952999428df94014f060213ed4": {
+      "source": "Live Tech Showcase",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "برنامج التكنولوجيا الحية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "3ba79f521ea5d45850afd47b3b47801ecb7f78e8": {
+      "source": "Rocket Fuel Stage - Hall 1A",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "طراز Rocket Fuel Stage - Hall 1A",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "3cfac4e3172604d53ae9a9e26976da7c28eb04bc": {
+      "source": "Startup Pitch",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "ابدأي",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "504a216c130cd654f52938a0f1ef135503809eb0": {
+      "source": "Panel",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الفريق",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "45222f93cb6d83899ac72526fde5666bac5b641c": {
+      "source": "DeepFest - Hall 5",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "أعماق البحار - القاعة 5",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "9f8b321c9fc4b5bb6b16ed1327af0fad0f98e26f": {
+      "source": "Announcements",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "إعلانات",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "2ee53ffed3b90c349d5fab69214f62c61f52a982": {
+      "source": "DEEP DIVE",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "التنفيذ",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "14051724fbd50734deaba16c1e41c2ef23456dda": {
+      "source": "Fireside with live Q&A",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "طفح الأذن",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "573c59dec103b40ac2f231bf1376f54251d59e87": {
+      "source": "Presentation",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "عرض",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "2e3afcd9765789ee22a64f780c00c4d5c7b4b552": {
+      "source": "spoke",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "متحدث",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "b05330de3877a7aff3e396ed0fd2d3442b112ab3": {
+      "source": "Case Study",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "دراسة حالة إفرادية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "894a18045bcd765db4e145fb3076dad113e7cda0": {
+      "source": "Executive Summit",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مؤتمر القمة التنفيذي",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "d71de32840cb92703c3ca5a62c675e9d00739de1": {
+      "source": "غلاف EventLive لفعالية Misk X UNYO Youth Engagement Fellowship",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "زمالة مشاركة شباب منظمة الأمم المتحدة للتربية والعلم والثقافة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "6cfab64470fde8b9ad887ed85e30001eec5e4969": {
+      "source": "غلاف EventLive لفعالية Associate Fraud investigator",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "محقق معاون للاحتيال",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "8483475f7be44718bde7dbf39de0de9ddf2988e3": {
+      "source": "غلاف EventLive لفعالية Misk x Moyasar Traineeship Program",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "برنامج تدريب مياسار",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "0c2352bebfcbdad673a1fc8a91a543fed305236e": {
+      "source": "Sharqia Chamber",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "دائرة الشارقة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "4d3d8ec0cfb115fa94f95274f2e1470f265bc7a2": {
+      "source": "Riyadh International Convention & Exhibition Center",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مركز معرض الاتفاقية الدولية الرياض",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "982d0c8714491f6a16e943bb29620e6dc81637ed": {
+      "source": "Strategic Marketing & Exhibitions",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "معارض التسويق الاستراتيجي",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "542964ceb4f9a97b4cf95894536bee585f6b5d01": {
+      "source": "شركة معارض الظهران الدولي",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "the Dhahran International Exhibitions Company",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "60e720b6c56c70f8a8d25e2febea5e1fe5636c93": {
+      "source": "Asharqia Chamber",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "غرفة الشرقية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "a6f340c49de736980fbc3f23ed55e861a9a6d7f6": {
+      "source": "غلاف EventLive لفعالية معرض الحرف والأعمال اليدوية 2026",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "EventLive Efficient Exhibition and Handicraft 2026",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "630638905cfb480d306c161c3ba75a456a41ddd3": {
+      "source": "غلاف EventLive لفعالية The KAUST Imaging and Characterization Core Lab presents: AI for Microscopy Workshop",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "طراز EventLive يعرض المختبر المركزي للتصوير والتصنيع التابع لمؤسسة KAUST: AI for Microscopy Workshop",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "4f3fd1b92c70bb79d61c736419c42a78eda88c9c": {
+      "source": "Saudi Warehousing & Logistics Expo is a business exhibition for warehousing, transport, supply-chain technology, equipment, and logistics services.",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "&quot; معرض المستودع السعودي &quot; للسوقيات هو معرض للأعمال التجارية للتخزين والنقل وتكنولوجيا سلسلة الإمداد والمعدات والخدمات اللوجستية.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "6dab8c3ce69e034fddaade0aa297e971747bd904": {
+      "source": "Riyadh International Convention and Exhibition Center",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مركز الرياض الدولي للمؤتمرات والمعارض",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "e1da793f189be998d6eac270fabd8e483be8e7b5": {
+      "source": "DMG Events",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "أحداث DMG",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "dd4bc2f07295733014e90e745ddf12c557348e21": {
+      "source": "غلاف EventLive لفعالية NALA Narrative Forum",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المنتدى الناشط",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "07ce9f435513f07ff9532bfff3fc93a7c90ff87b": {
+      "source": "Riyadh Exhibition & Convention Center, Malham",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مركز مؤتمرات الرياض، مالهام",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "22a01c79050023a5b9789de877dafccfd68bf07b": {
+      "source": "UNESCO",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "اليونسكو",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "eef0d959efd180340628bdd1cd5aac3e52a7fa97": {
+      "source": "غلاف EventLive لفعالية Global Forum on the Ethics of AI",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المنتدى العالمي لأخلاقيات AI",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "f9677b60cebb8b7608515a23211405a1f10b2493": {
+      "source": "Sofitel Riyadh Hotel & Convention Centre",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مركز صوفيتل الرياض للمؤتمرات",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "3249c64acdf44fcfdebe359c3866766b90b43205": {
+      "source": "Riyadh Intl. Convention & Exhibition Center",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الرياض إنتل. مركز المعارض التابع للاتفاقية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "02e8da098b33e0097c78ed114d3c897583cda40a": {
+      "source": "Saudi Water Authority",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الهيئة العربية للمياه",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "89e9d562bbdd59e974980bbd7a5c311d6ce3b477": {
+      "source": "إثراء فعاليات قطاع المياه والاستدامة ضمن كتالوج EventLive الوطني.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Ithra Water and Sustainability Sector Effectiveness within the National Catalogue EventLive.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "37228f261687cad2c0deaa41ee79066466b10cf7": {
+      "source": "King Abdulaziz International Conference Center (KAICC), Riyadh",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مركز الملك عبد العزيز الدولي للمؤتمرات، الرياض",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "ec10267616a24f95c5acef553727835a9654c1b3": {
+      "source": "غلاف EventLive لفعالية Global AI Summit",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مؤتمر القمة العالمي للمبادرة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "21647d7dca14dbf285f7d2a4f3dc4cb573a8fc7c": {
+      "source": "Sary Events & Exhibition",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "معرض الأحداث",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "4fea85df4446fa47b4261e172433c92ad9c7fd8b": {
+      "source": "Saudi National Day - Visit Saudi",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "اليوم الوطني السعودي - زيارة السعودية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "5570ba1e695f851344a77f6b843d89b86b58a867": {
+      "source": "Creative XP",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الإبداع XP",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "1ed494994eebbac9d3560a4b07d52044830aa50b": {
+      "source": "غلاف EventLive لفعالية Music Concerts National Day",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الحلقة الدراسية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "57d345410ffb32b4fce8bf5a0c4b604fefc9daa5": {
+      "source": "Digital Government Authority | United Nations University | Prince Sultan University",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الهيئة الحكومية الرقمية التابعة لجامعة الأمم المتحدة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "34d2c6fea8397dc6816281780609ed06e9d61ecb": {
+      "source": "Riyadh Exhibition & Convention Center - Malham",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مركز مؤتمرات الرياض - مالهام",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "5d67964131afd62fdc5c7d6a8c9f17b99cb33636": {
+      "source": "Saudi Falcons Club",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "نادي فالكونس السعودي",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "d11da79d46819f01dd7264efd3f134d5cdc0ec3c": {
+      "source": "Saudi Falcons Club in Malham - Riyadh",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "نادي فالكونس السعودي في مالهام - الرياض",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "b713f647d8d6f1ad7e4fd115e4661c21e3e473d0": {
+      "source": "غلاف EventLive لفعالية Al Milwah Falcon Race",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "طراز EventLive The Milwah Falcon Race",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "5bd52cacf555576460634eeee167e0f5f0fd8dfe": {
+      "source": "Human Resources Development Fund",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "صندوق تنمية الموارد البشرية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "6280b68a614c887ba0dbf696d3e28da7d37b5e2c": {
+      "source": "Riyadh Marriott Hotel",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الرياض ماريوت فندق",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "05617ea4dce73b2832daaa5255ded6a891d557cb": {
+      "source": "CST Headquarters, Riyadh",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مقر لجنة العلم والتكنولوجيا، الرياض",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "7f9c008e758680689be996890f33261236036667": {
+      "source": "Let's Talk B2B",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "دعونا نتحدث B2B",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "bb536570390427070a26c375d6e007ff2dce2d29": {
+      "source": "free · 0 USD",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "0 من دولارات الولايات المتحدة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "09731433e1a75d2eaa9eb5a1869b5a91069e71fc": {
+      "source": "Hilton Hotel & Residences, Riyadh",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "فندق هيلتون ريفنس، الرياض",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "2af07869f7134cf054b0a0fde0531c48c4c14e62": {
+      "source": "Creative Connect Exhibitions & Conferences",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المؤتمرات الإبداعية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "ab3e6bb982128d4d30f6acdb62477ff0bddd32c1": {
+      "source": "RX Global events",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "أحداث عالمية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "e67d7fdbf4d72598f38c250e5133de4902794a60": {
+      "source": "AlUla",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "العلا",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "c6c4b504d30c6e93fb57957e5fdc4fe14c20ce1b": {
+      "source": "Eye of Riyadh",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "عين الرياض",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "4b93021e10544c66a03ee81ce47aab5bfa53dece": {
+      "source": "Real Estate General Authority (REGA)",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الهيئة العامة العقارية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "452c6634b429e2b6aa15c8ca595c3dce94974cdb": {
+      "source": "Riyadh, Saudi Arabia.",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الرياض، المملكة العربية السعودية.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "2685a9e61ec5c5484c12e698d609dd092be088f3": {
+      "source": "King Abdulaziz International Convention Center, Riyadh",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مركز الملك عبد العزيز للمؤتمرات الدولية، الرياض",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "06b8240ebb2cb6700a72eb6d070d8745fab334cd": {
+      "source": "Future Investment Initiative Institute",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "معهد مبادرة الاستثمار في المستقبل",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "fdaaa4c09c752a280908de54b66d551b80fad652": {
+      "source": "Saudi Esports Federation || Esports World Cup Foundation",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المملكة العربية السعودية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "3ffb452dcde2467522a9b8e7db9bff6cb8c0f0d6": {
+      "source": "Ithra - Ithra Tower - L8 - Classroom 2",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "إيهرا - إيهرا باور - L8 - الصف 2",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "0acf71602fec14def5f4753511ff66c4e9acb32a": {
+      "source": "Ithra Tower - L8 - Classroom 2",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "برج إيهرا - L8 - الغرفة 2",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "3658c2db76db0c4624082e20f67732d6fe958af2": {
+      "source": "Saudi Aramco",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "أرامكو السعودية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "de1bff3b44b765dd68010c2e5c1935fd3f89c7ea": {
+      "source": "Lisbon, Portugal.",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "لشبونة، البرتغال.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "77c2c1cfea05fb0bb5d36dc4f878e35a21340f32": {
+      "source": "Terrapinn Middle East",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الشرق الأوسط",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "3b804bd6e3f3f2900ec8ec01157f92fb9ef20413": {
+      "source": "City Events Management Agency",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "وكالة إدارة الأحداث في المدن",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "b0d9d5d284aa022f128e54d855d302317543a046": {
+      "source": "City Events Management Agency | WCF",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "وكالة إدارة أحداث المدينة",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "99185a96e1b9022f6f264380ab59dfacf4b8689b": {
+      "source": "Digital Image for exhibitions and conferences",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "صور رقمية للمعارض والمؤتمرات",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "0a77ece6805fba873c2462303299a8032e02e527": {
+      "source": "Prince Mohammed Bin Salman Foundation \"Misk\"",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مؤسسة الأمير محمد بن سلمان، ميسك",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "3ea25452ac428d34b2f864e41b7204a6cfde125e": {
+      "source": "Riyadh Exhibition & Convention Centre (Malham), Saudi Arabia",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مركز الرياض للمؤتمرات (مالهام)، المملكة العربية السعودية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "31d67e643ab44e4d8839102ed1b03f63d852dc09": {
+      "source": "Sunaidi Expo & Conferences",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مؤتمر سونايدي فروس",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "267dbeb928b13d7960b2d2aeba10f9fa57853cb6": {
+      "source": "King Abdulaziz Falconry Festival, Malham - Riyadh",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مهرجان الملك عبد العزيز فالكونري، مالهام - الرياض",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.906Z"
+    },
+    "af4441cff2636c6f5091ea82c173e081488d2fc6": {
+      "source": "Saudi Falcon Club",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "نادي فالكون السعودي",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "7e863d8ffa222dae361dff25a53edb77f6f318a6": {
+      "source": "غلاف EventLive لفعالية Global Exposure Program",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "برنامج التعرض العالمي",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "ae94cd2785f7680e0727a9954981d3e4448464c2": {
+      "source": "Thumamah Airport, Riyadh",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مطار توماماه، الرياض",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "4cdc481e63c099ce338eceb27160d85ca2093df4": {
+      "source": "Saudi Aviation Club",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "نادي الطيران السعودي",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "86566498efa6fdfbdc57bf3fd1807c59f12c38e7": {
+      "source": "غلاف EventLive لفعالية FEI Endurance World Championship 2026",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "بطولة &quot; إيفي إندورانس &quot; العالمية 2026",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "8b53b05da27488e936fd3514de9e1a7195c376fe": {
+      "source": "King Abdulaziz International Conference Center, Riyadh",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مركز الملك عبد العزيز الدولي للمؤتمرات، الرياض",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "8893ed7a92aafc845c07bfe68f84b7af4743fdce": {
+      "source": "Riyadh Front",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "جبهة الرياض",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "98c93d6bf7a44a4eb2ae7dfe1cde413101ca3982": {
+      "source": "Fairmont - Riyadh",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "فيرمونت - الرياض",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "0654cebe58bd7d4248a0b14925b7658946a62ea2": {
+      "source": "غلاف EventLive لفعالية SOUNDSTORM 26",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الغلاف الجوي",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "99cd1d23991084f6bdc937c42538c68ccf3deb67": {
+      "source": "Princess Seetah Bint Abdulaziz Award Association",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابطة جائزة الأميرة سيتاه بنت عبد العزيز",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "4b4082f73b4ec0baec5ee16d3315615c20a7ae9f": {
+      "source": "AYM Events",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مناسبات AYM",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "dc883b3afbae7c0fc18aa4676f8511d48cc69087": {
+      "source": "Saudi Contractors Authority",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الهيئة السعودية للمتعاقدين",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "da6ec6c37301ea12cd29c0107d13ba77489179c6": {
+      "source": "Organising Committee of AIMAG || Olympic Council of Asia",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "لجنة تنظيم المجلس الأوليمبي لآسيا",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "8aa0d74e0da03d89a37387e8d871bdea613a660e": {
+      "source": "Riyadh International Exhibition & Convention Center",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مركز الرياض الدولي للمؤتمرات",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "199647c970751922d6c16f94160cf374a0eedb56": {
+      "source": "Knowledge Tower - Level 8, Classroom 2",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "برج المعرفة - المستوى 8، الصف 2",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "35150c7026ac71655aa3afd76fdc70641d9115c4": {
+      "source": "Lujain Events",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "أحداث لوجين",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "f45dcde394fcb1ca8da5d619d94e656ffee8d551": {
+      "source": "شركة معارض الظهران الدولية ( كسبو)",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "the Dhahran International Exhibitions Company (Kasso)",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "7a246491ec1a9efbaaf19fede4a79ee1458736e2": {
+      "source": "غلاف EventLive لفعالية معرض وظائف 2026",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "EventLive Activity Exposure 2026",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "9bff2e67bc3ae71304890f46b6744d397827e590": {
+      "source": "Local Organizing Committee (LOC) for the AFC Asian Cup Saudi Arabia 2027",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "اللجنة التنظيمية المحلية للكأس الآسيوي لرابطة أمم جنوب شرق آسيا",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "167ffcf061c8727fcd19465bc72e9900d0e21ede": {
+      "source": "Across AlUla",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "عبر العول",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "3b3eca84d1cba5a1edea20b5b5f32e3740100e47": {
+      "source": "The Fairmont Hotel",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "فندق فيرمونت",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "cf1a6f6f3bfb3c3a34a7c5908a64792994a303d2": {
+      "source": "Qassim University",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "جامعة القصيم",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "ac7f1c51fee775447a0f09aa7f7602b4b96eb178": {
+      "source": "استضافة مؤتمر IEEE MECOM 2027 - جامعة القصيم",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "IEEEE MECOM 2027 - Qassim University",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "ad28e22032f4b80ea811702a7f4768e6934dee3a": {
+      "source": "Saudi Electricity Regulatory Authority (SERA)",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الهيئة السعودية لتنظيم الكهرباء",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "7b4465d3d41a1418e28f011d209d7e8e45d8b51c": {
+      "source": "غلاف EventLive لفعالية Hayy Cinema | Hayy Explorers At The Cinema",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مستكشفو هاي سينيما في السينما",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
+    },
+    "3f188b04044bce0ce44f6fe78f09e580f50e1166": {
+      "source": "Founding Day - Visit Saudi",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "اليوم التأسيسي - زيارة السعودية",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T19:51:20.907Z"
     }
   }
 }
