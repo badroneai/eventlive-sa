@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T14:47:27.847Z",
+  "generated_at": "2026-07-31T16:18:16.821Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-07-31T14:35:03.467Z",
+    "collected_at": "2026-07-31T16:08:57.421Z",
     "freshness": "fresh",
-    "discovered": 322,
-    "written": 561
+    "discovered": 321,
+    "written": 560
   },
   "sources": {
     "total": 88,
-    "attempted": 21,
-    "due": 21,
-    "deferred": 27,
+    "attempted": 19,
+    "due": 19,
+    "deferred": 29,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 24,
+    "registry_collection_coverage_pct": 22,
     "scheduled_runnable_coverage_pct": 100,
     "healthy": 19,
-    "zero_yield": 1,
-    "errors": 1,
-    "cadence_deferred": 27,
+    "zero_yield": 0,
+    "errors": 0,
+    "cadence_deferred": 29,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -679,13 +679,16 @@
         "id": "riyadh-city-events",
         "name": "Riyadh City Events",
         "priority": 51,
-        "status": "zero-yield",
+        "status": "deferred",
+        "historical_status": "probe-blocked",
+        "cadence_reason": "error-cooldown",
+        "next_due_at": "2026-07-31T20:35:03.467Z",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "last_attempted_at": "2026-07-31T14:35:03.467Z",
         "extracted": 0,
         "candidates": 79,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "next_action": "مؤجل حتى 2026-07-31T20:35:03.467Z وفق الجدولة التكيفية."
       },
       {
         "id": "monshaat-academy-programs",
@@ -778,13 +781,16 @@
         "id": "asharqia-chamber-events",
         "name": "Asharqia Chamber Events",
         "priority": 59,
-        "status": "collection-error",
-        "error_streak": 0,
+        "status": "deferred",
+        "historical_status": "collector-error",
+        "cadence_reason": "error-cooldown",
+        "next_due_at": "2026-07-31T20:35:03.467Z",
+        "error_streak": 1,
         "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "last_attempted_at": "2026-07-31T14:35:03.467Z",
         "extracted": 0,
         "candidates": 2,
-        "next_action": "fetch failed; page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentloaded\"\n"
+        "next_action": "مؤجل حتى 2026-07-31T20:35:03.467Z وفق الجدولة التكيفية."
       },
       {
         "id": "qassim-chamber-events",
@@ -1121,8 +1127,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 67,
-        "candidates": 73,
+        "extracted": 66,
+        "candidates": 72,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -1173,28 +1179,28 @@
     ]
   },
   "queue": {
-    "total": 561,
+    "total": 560,
     "ready_for_review": 8,
     "approved_for_catalog": 0,
-    "published_from_candidates": 527,
+    "published_from_candidates": 526,
     "actionable": 8,
     "stale_unpublished": 0,
     "duplicate_risk": 6,
     "needs_extraction": 0,
     "needs_evidence": 26,
     "by_review_status": {
-      "approved-for-catalog": 527,
+      "approved-for-catalog": 526,
       "ready-for-review": 8,
       "evidence-captured": 18,
       "new": 8
     },
     "by_publication_gate": {
-      "catalog-review": 527,
+      "catalog-review": 526,
       "duplicate-review": 8,
       "source-evidence": 26
     },
     "by_confidence": {
-      "official": 521,
+      "official": 520,
       "public-listing": 21,
       "verified-secondary": 11,
       "unverified": 8
@@ -1211,7 +1217,7 @@
       "Visit Saudi Summer Calendar PDF": 65,
       "Misk Hub Programs": 10,
       "Discover Aseer Events": 39,
-      "Hayy Jameel What's On": 73,
+      "Hayy Jameel What's On": 72,
       "Visit Saudi Seasons": 19,
       "Tuwaiq Academy Bootcamps and Programs": 32,
       "Eye of Riyadh Events": 6,

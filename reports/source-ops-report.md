@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-07-31T14:47:27.847Z
+- generated_at: 2026-07-31T16:18:16.821Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -12,31 +12,31 @@
 
 - Sources in registry: 88
 - Runnable collector lanes: 48
-- Sources due now: 21
-- Sources attempted in latest collection: 21
-- Sources deferred by cadence: 27
+- Sources due now: 19
+- Sources attempted in latest collection: 19
+- Sources deferred by cadence: 29
 - Due-source coverage: 100%
 - Scheduled runnable coverage: 100%
-- Whole-registry attempted this run: 24%
+- Whole-registry attempted this run: 22%
 - Healthy sources: 19
-- Zero-yield sources: 1
+- Zero-yield sources: 0
 - High-priority unattempted sources: 3
-- Candidates: 561
+- Candidates: 560
 - Actionable candidates: 8
 - Ready for review: 8
 - Ready for catalog promotion: 0
-- Linked to catalog from candidates: 527
+- Linked to catalog from candidates: 526
 - Stale unpublished candidates: 0
 - Duplicate risk: 6
 - Recommendation: ابدأ بمراجعة التكرارات المحتملة قبل اعتماد أي مرشح جديد.
 
 ## Candidate Funnel
 
-- review_status.approved-for-catalog: 527
+- review_status.approved-for-catalog: 526
 - review_status.ready-for-review: 8
 - review_status.evidence-captured: 18
 - review_status.new: 8
-- publication_gate.catalog-review: 527
+- publication_gate.catalog-review: 526
 - publication_gate.duplicate-review: 8
 - publication_gate.source-evidence: 26
 - discovery_quality.strong-lead: 19
@@ -125,7 +125,7 @@
 | 48 | Saudi Food and Drug Authority Events | healthy | 5 | 5 | استمر بالمراجعة والتكرار قبل النشر. |
 | 49 | Saudi Contractors Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 50 | Saudi Winter Events Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 51 | Riyadh City Events | zero-yield | 0 | 79 | No future date-complete candidates found by the conservative extractor. |
+| 51 | Riyadh City Events | deferred | 0 | 79 | مؤجل حتى 2026-07-31T20:35:03.467Z وفق الجدولة التكيفية. |
 | 52 | Monsha'at Academy Programs | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 53 | General Entertainment Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 54 | SDAIA Calendar and Events | healthy | 2 | 2 | استمر بالمراجعة والتكرار قبل النشر. |
@@ -133,10 +133,7 @@
 | 56 | SCEGA ePortal Events | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |
 | 57 | Ministry of Commerce Upcoming Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 58 | Evento | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 59 | Asharqia Chamber Events | collection-error | 0 | 2 | fetch failed; page.goto: Timeout 30000ms exceeded.
-Call log:
-  - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentloaded"
- |
+| 59 | Asharqia Chamber Events | deferred | 0 | 2 | مؤجل حتى 2026-07-31T20:35:03.467Z وفق الجدولة التكيفية. |
 | 60 | Qassim Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-07-31T18:34:59.132Z وفق الجدولة التكيفية. |
 | 61 | Abha Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-08-03T15:28:34.590Z وفق الجدولة التكيفية. |
 | 62 | Baha Municipality Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
@@ -162,7 +159,7 @@ Call log:
 | 82 | Money20/20 Middle East Official Agendas | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 83 | Madinah Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-08-02T18:34:59.132Z وفق الجدولة التكيفية. |
 | 84 | Madinah International Architecture Festival | healthy | 1 | 1 | استمر بالمراجعة والتكرار قبل النشر. |
-| 85 | Hayy Jameel What's On | healthy | 67 | 73 | استمر بالمراجعة والتكرار قبل النشر. |
+| 85 | Hayy Jameel What's On | healthy | 66 | 72 | استمر بالمراجعة والتكرار قبل النشر. |
 | 86 | Informa Connect Saudi Event Portfolio | deferred | 0 | 6 | مؤجل حتى 2026-08-03T15:28:34.590Z وفق الجدولة التكيفية. |
 | 87 | King Abdulaziz University Events | deferred | 0 | 2 | مؤجل حتى 2026-08-03T15:28:34.590Z وفق الجدولة التكيفية. |
 | 88 | Saudicon Events | deferred | 0 | 15 | مؤجل حتى 2026-07-31T18:34:59.132Z وفق الجدولة التكيفية. |

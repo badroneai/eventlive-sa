@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T14:47:26.930Z",
+  "generated_at": "2026-07-31T16:18:15.834Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -262,11 +262,6 @@
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uvc3V0MDAzMjQuanBlZw/sut00324.jpeg?w=1024&fm=webp&s=ffb5a1689e550e34c3e36966f5557f04",
       "file": "dist/assets/event-images/منتزه-الريف-abc22f4754.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/DSC00760-1-1100x500.jpg",
-      "file": "dist/assets/event-images/مكتبة-جميل-برامج-يوليو-المجتمعية-f1cbae3928.jpg",
       "events": 1
     },
     {
@@ -2422,6 +2417,11 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/560bafb34a47c331b1dc9ad85fc108c9.jpg",
       "file": "dist/assets/event-images/baab-d957b34587.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/DSC00760-1-1100x500.jpg",
+      "file": "dist/assets/event-images/مكتبة-جميل-برامج-يوليو-المجتمعية-f1cbae3928.jpg",
       "events": 1
     },
     {

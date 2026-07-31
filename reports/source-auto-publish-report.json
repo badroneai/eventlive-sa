@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-07-31T14:44:22.702Z",
+  "published_at": "2026-07-31T16:16:06.568Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 561,
+  "candidates_seen": 560,
   "totals": {
-    "candidates_seen": 561,
+    "candidates_seen": 560,
     "published": 0,
-    "linked_existing": 522,
+    "linked_existing": 521,
     "blocked": 39,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 522
+    "reconciled": 521
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -718,12 +718,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-jameel-library-july-community-programmes-20260701-43758dea",
-      "event_id": "event-jameel-library",
-      "title": "Jameel Library | July Community Programmes",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-discover-aseer-events-blackberry-farm-20260701-0b7d74c6",
       "event_id": "event-blackberry-farm",
       "title": "\"Blackberry Farm \"",
@@ -1078,12 +1072,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260731-f563a36e",
-      "event_id": "event-ithra-summer-camp-2026-a-world-of-homes",
-      "title": "Ithra Summer Camp 2026: A world of homes",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-printing-house-20260731-e56f4f89",
       "event_id": "event-printing-house",
       "title": "Printing House",
@@ -1132,21 +1120,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260731-2bf92d17",
-      "event_id": "event-childrens-art-studio",
-      "title": "Children's Art Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-games-hub-20260731-fb83124c",
-      "event_id": "event-games-hub",
-      "title": "Games Hub",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-the-non-stop-spin-20260731-6cf89742",
       "event_id": "event-the-non-stop-spin",
       "title": "The Non-Stop Spin",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-grand-art-space-20260731-e3acefbb",
+      "event_id": "event-grand-art-space",
+      "title": "Grand Art Space",
       "reason": "already linked to catalog event"
     },
     {
@@ -1156,33 +1138,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260731-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-family-game-20260731-fff43c76",
-      "event_id": "event-family-game",
-      "title": "Family Game",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260731-2671d1ce",
       "event_id": "event-emboss-printing-experience",
       "title": "Emboss Printing Experience",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-family-challenges-20260731-3726c868",
-      "event_id": "event-family-challenges",
-      "title": "Family Challenges",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-grand-art-space-20260731-e3acefbb",
-      "event_id": "event-grand-art-space",
-      "title": "Grand Art Space",
       "reason": "already linked to catalog event"
     },
     {
@@ -1198,9 +1156,33 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260731-2bf92d17",
+      "event_id": "event-childrens-art-studio",
+      "title": "Children's Art Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-games-hub-20260731-fb83124c",
+      "event_id": "event-games-hub",
+      "title": "Games Hub",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260731-5bac584c",
       "event_id": "event-spot-of-inspiration",
       "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260731-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-family-challenges-20260731-3726c868",
+      "event_id": "event-family-challenges",
+      "title": "Family Challenges",
       "reason": "already linked to catalog event"
     },
     {
@@ -1219,6 +1201,12 @@
       "candidate_id": "candidate-dhahran-expo-calendar-private-graduation-20260801-18d15b29",
       "event_id": "event-private-graduation",
       "title": "Private Graduation",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260801-f563a36e",
+      "event_id": "event-ithra-summer-camp-2026-a-world-of-homes",
+      "title": "Ithra Summer Camp 2026: A world of homes",
       "reason": "already linked to catalog event"
     },
     {
@@ -1465,6 +1453,12 @@
       "candidate_id": "candidate-ithra-events-dots-on-letters-20260807-b8901d67",
       "event_id": "event-dots-on-letters",
       "title": "Dots on Letters",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-family-game-20260807-fff43c76",
+      "event_id": "event-family-game",
+      "title": "Family Game",
       "reason": "already linked to catalog event"
     },
     {

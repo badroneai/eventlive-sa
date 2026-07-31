@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-31T14:44:22.702Z
+- published_at: 2026-07-31T16:16:06.568Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 561
+- candidates_seen: 560
 - published_new: 0
-- linked_existing: 522
+- linked_existing: 521
 - blocked_remaining: 39
 - duplicate_review_alerts: 8
 
@@ -116,7 +116,6 @@
 | candidate-visit-saudi-calendar-pdf-دكاة-في-أبها-20260701-4a38d19e | linked-existing | event-dakah-in-abha | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-ارياش-20260701-4a38d19e | linked-existing | event-ارياش | already linked to catalog event |
 | candidate-hayy-jameel-events-jameel-library-summer-reading-challenge-20260701-3a833686 | linked-existing | event-jameel-library-summer-reading-challenge | already linked to catalog event |
-| candidate-hayy-jameel-events-jameel-library-july-community-programmes-20260701-43758dea | linked-existing | event-jameel-library | already linked to catalog event |
 | candidate-discover-aseer-events-blackberry-farm-20260701-0b7d74c6 | linked-existing | event-blackberry-farm | already linked to catalog event |
 | candidate-discover-aseer-events-aanab-farm-20260701-12941803 | linked-existing | event-aanab-farm | already linked to catalog event |
 | candidate-discover-aseer-events-mdmak-20260701-e4374434 | linked-existing | event-mdmak | already linked to catalog event |
@@ -176,7 +175,6 @@
 | candidate-visit-saudi-seasons-tour-of-al-baha-20260730-7b170410 | linked-existing | event-tour-of-al-baha | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-20260731-4a38d19e | linked-existing | event-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-2 | already linked to catalog event |
 | candidate-mdlbeast-events-unstable-20260731-5647df2e | linked-existing | event-unstable | already linked to catalog event |
-| candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260731-f563a36e | linked-existing | event-ithra-summer-camp-2026-a-world-of-homes | already linked to catalog event |
 | candidate-ithra-events-printing-house-20260731-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
 | candidate-ithra-events-tafasahu-make-room-20260731-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
 | candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260731-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
@@ -185,21 +183,21 @@
 | candidate-ithra-events-energy-lab-20260731-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
 | candidate-ithra-events-tinkering-stations-20260731-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
 | candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260731-ef7080ff | linked-existing | event-trivia-night-earth-quest-tic-tac-know | already linked to catalog event |
-| candidate-ithra-events-childrens-art-studio-20260731-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
-| candidate-ithra-events-games-hub-20260731-fb83124c | linked-existing | event-games-hub | already linked to catalog event |
 | candidate-ithra-events-the-non-stop-spin-20260731-6cf89742 | linked-existing | event-the-non-stop-spin | already linked to catalog event |
-| candidate-ithra-events-water-challenges-20260731-eea51834 | linked-existing | event-water-challenges | already linked to catalog event |
-| candidate-ithra-events-childrens-museum-story-time-20260731-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
-| candidate-ithra-events-family-game-20260731-fff43c76 | linked-existing | event-family-game | already linked to catalog event |
-| candidate-ithra-events-emboss-printing-experience-20260731-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
-| candidate-ithra-events-family-challenges-20260731-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
 | candidate-ithra-events-grand-art-space-20260731-e3acefbb | linked-existing | event-grand-art-space | already linked to catalog event |
+| candidate-ithra-events-water-challenges-20260731-eea51834 | linked-existing | event-water-challenges | already linked to catalog event |
+| candidate-ithra-events-emboss-printing-experience-20260731-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-ithra-events-stories-from-ithras-library-20260731-4116de16 | linked-existing | event-stories-from-ithras-library | already linked to catalog event |
 | candidate-ithra-events-museum-story-time-20260731-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
+| candidate-ithra-events-childrens-art-studio-20260731-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
+| candidate-ithra-events-games-hub-20260731-fb83124c | linked-existing | event-games-hub | already linked to catalog event |
 | candidate-ithra-events-spot-of-inspiration-20260731-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
+| candidate-ithra-events-childrens-museum-story-time-20260731-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
+| candidate-ithra-events-family-challenges-20260731-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
 | candidate-mdlbeast-events-beast-house-20260731-83049a2a | linked-existing | event-beast-house | already linked to catalog event |
 | candidate-discover-aseer-events-musical-concerts-20260801-169733ac | linked-existing | event-musical-concerts | already linked to catalog event |
 | candidate-dhahran-expo-calendar-private-graduation-20260801-18d15b29 | linked-existing | event-private-graduation | already linked to catalog event |
+| candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260801-f563a36e | linked-existing | event-ithra-summer-camp-2026-a-world-of-homes | already linked to catalog event |
 | candidate-ithra-events-toddler-saturday-20260801-739e1f00 | linked-existing | event-toddler-saturday | already linked to catalog event |
 | candidate-ithra-events-petals-and-pals-arabic-20260801-fd317dc1 | linked-existing | event-petals-and-pals-arabic | already linked to catalog event |
 | candidate-ithra-events-story-land-20260801-bb5dc01b | linked-existing | event-story-land | already linked to catalog event |
@@ -241,6 +239,7 @@
 | candidate-visit-saudi-calendar-pdf-حسين-محب-ايف-في-الرياض-20260807-4a38d19e | linked-existing | event-hussain-moheb-live-in-riyadh | already linked to catalog event |
 | candidate-ithra-events-energy-in-motion-20260807-e0404048 | linked-existing | event-energy-in-motion | already linked to catalog event |
 | candidate-ithra-events-dots-on-letters-20260807-b8901d67 | linked-existing | event-dots-on-letters | already linked to catalog event |
+| candidate-ithra-events-family-game-20260807-fff43c76 | linked-existing | event-family-game | already linked to catalog event |
 | candidate-visit-saudi-calendar-hussain-moheb-live-in-riyadh-20260807-0f7ed5bd | linked-existing | event-hussain-moheb-live-in-riyadh | already linked to catalog event |
 | candidate-ithra-events-1-2-3-lets-rhyme-20260808-4d37515a | linked-existing | event-1-2-3-lets-rhyme | already linked to catalog event |
 | candidate-ithra-events-unbox-your-story-20260808-5085a6f0 | linked-existing | event-unbox-your-story | already linked to catalog event |

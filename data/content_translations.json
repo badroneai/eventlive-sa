@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-31T14:54:46.501Z",
+  "generated_at": "2026-07-31T16:24:42.680Z",
   "entries": {
     "1f91543d6769d9abda47f221ba86f9f9ebf27443": {
       "source": "Skill Development Initiative",
@@ -49562,30 +49562,6 @@
       "method": "argos-mt",
       "translated_at": "2026-07-30T18:59:29.276Z"
     },
-    "0f156f2e12622bd48b939efe8b7b3a0e82560d40": {
-      "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of required disciplines declared at a rate not less than very good and at least 75%, and for graduates of non-Saudi Arabian universities, the equivalent of certificates is required from the Ministry of Higher Education.",
-      "method": "argos-mt",
-      "translated_at": "2026-07-31T14:54:46.501Z"
-    },
-    "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
-      "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
-      "method": "argos-mt",
-      "translated_at": "2026-07-31T14:54:46.501Z"
-    },
-    "5c6a9ff87c6cdb115664bc8a097d521eadf27f9f": {
-      "source": "مركز الرياض للمعارض والمؤتمرات في ملهم",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "The Riyadh International Convention Exhibition Center in Inspiration",
-      "method": "argos-mt",
-      "translated_at": "2026-07-31T14:54:46.501Z"
-    },
     "367381455e512f6b0831190326b30e6de8ff5543": {
       "source": "Round 1: Rocket Fuel Startup Pitches",
       "source_lang": "en",
@@ -49617,6 +49593,30 @@
       "text": "هندسة قانون الرياض الثاني",
       "method": "argos-mt",
       "translated_at": "2026-07-31T14:54:46.501Z"
+    },
+    "0f156f2e12622bd48b939efe8b7b3a0e82560d40": {
+      "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of not less than 75%, and the equivalent of certificates is required from the Ministry of Higher Education for non-Saudi Arabian university graduates.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T16:24:42.680Z"
+    },
+    "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
+      "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T16:24:42.680Z"
+    },
+    "5c6a9ff87c6cdb115664bc8a097d521eadf27f9f": {
+      "source": "مركز الرياض للمعارض والمؤتمرات في ملهم",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The Riyadh International Convention Exhibition Center in Inspiration",
+      "method": "argos-mt",
+      "translated_at": "2026-07-31T16:24:42.680Z"
     }
   }
 }
