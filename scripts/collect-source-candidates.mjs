@@ -593,6 +593,13 @@ function richFieldsFromItem(item = {}) {
     'image_url',
     'image_alt',
     'image_source_url',
+    // WO-8: geometric-binding evidence (image bbox, card text bbox, overlap ratio) from
+    // scripts/visit-saudi-summer-pdf-utils.mjs's attachDatedCardImages - carried through
+    // so scripts/heal-visit-saudi-image-identity.mjs can record it in
+    // manifest.pdf_crop_provenance every cycle (see buildSlotOccupants there).
+    'pdf_crop_overlap_ratio',
+    'pdf_crop_image_bbox',
+    'pdf_crop_card_bbox',
     'registration_url',
     'ticket_url',
     'organizer_url',

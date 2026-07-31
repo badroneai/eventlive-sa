@@ -10,6 +10,7 @@ import {
   findFuzzyVenueDateMatch,
   sourceAuthority
 } from './event-dedupe-utils.mjs';
+import { distinctiveTitleTokens, passesImageIdentityGate } from './image-identity-gate.mjs';
 import { isLiveScheduleReady, liveReadySessionCount } from './live-ready-utils.mjs';
 import { ensureDir, exists, readJson, rel, root, writeJson } from './program-lifecycle-utils.mjs';
 
@@ -127,6 +128,47 @@ function isMultiEventDocumentUrl(value = '') {
   } catch {
     return /\.pdf(?:$|[?#])/i.test(String(value || '').trim());
   }
+}
+
+// WO-8 identity-continuity guard: candidateSourceDateKey/candidateSourceIdentityKey both
+// deliberately return '' for multi-event PDF documents just above (a single PDF page holds
+// dozens of distinct dated cards, so a source-URL-only key would collide across ALL of
+// them) - which means, for THIS class of source, the entire match cascade in main() falls
+// back to title-text keys only (candidateMatchKey/candidateLooseMatchKey). That is exactly
+// right day-to-day, but it has one blind spot: when a PDF text-extraction bug (see WO-8's
+// lam-alef ligature fix in scripts/visit-saudi-summer-pdf-utils.mjs) is corrected, an
+// ALREADY-PUBLISHED event's title text changes on the very next sync (e.g. "حفلة أحام" ->
+// "حفلة أحلام") - every title-keyed matcher above would then miss it, and main() would
+// mint a brand-new event id instead of updating the existing one in place, leaving the old
+// row orphaned with its stale title forever (confirmed by tracing the cascade for this
+// exact WO-8 case: no other matcher - bilingual alias is a hardcoded whitelist, action
+// identity depends on a ticket URL that may not exist - reliably catches it).
+//
+// This is the SAME identity question the WO-5 image gate already answers for crops (does
+// this title still belong to that card?), so it reuses the identical
+// distinctiveTitleTokens/passesImageIdentityGate machinery and default thresholds (>=50%
+// of the shorter title's distinctive words, or >=2 words) rather than inventing new ones.
+// Scoped ONLY to multi-event document sources (the one class where source-anchored
+// matching is unavailable) and requires an exact same-day city+date match on top of the
+// token gate, to keep the false-positive surface for every OTHER source untouched.
+function ligatureTolerantDocumentTitleMatch(candidate, catalogEvents) {
+  if (!isMultiEventDocumentUrl(candidate.source_url)) return null;
+  const candidateSource = normalizeSourceUrl(candidate.source_url);
+  const candidateDate = String(candidate.starts_at || candidate.event_start || '').slice(0, 10);
+  const candidateCity = normalizeMatchValue(candidate.city || '');
+  if (!candidateSource || !candidateDate || !candidateCity) return null;
+  const candidateTokens = distinctiveTitleTokens(candidate.title);
+  if (!candidateTokens.length) return null;
+  let best = null;
+  for (const event of catalogEvents) {
+    if (normalizeSourceUrl(event.source_url) !== candidateSource) continue;
+    if (String(event.starts_at || '').slice(0, 10) !== candidateDate) continue;
+    if (normalizeMatchValue(event.city || '') !== candidateCity) continue;
+    const eventTokens = distinctiveTitleTokens(event.title);
+    const gate = passesImageIdentityGate(candidateTokens, eventTokens);
+    if (gate.passes && (!best || gate.ratio > best.ratio)) best = { event, ratio: gate.ratio };
+  }
+  return best ? best.event : null;
 }
 
 function candidateSourceDateKey(row) {
@@ -860,6 +902,11 @@ function main() {
     const sourceDateMatch = !exactMatch && !looseMatch && !bilingualAliasMatch && !actionIdentityMatch && !actionSemanticMatch && !sourceIdentityMatch && !windowMatch
       ? catalogBySourceDate.get(candidateSourceDateKey(candidate))
       : null;
+    // WO-8: lowest-priority fallback, only reached once every title-anchored matcher above
+    // has failed - see ligatureTolerantDocumentTitleMatch's comment for why this exists.
+    const documentTitleMatch = !exactMatch && !looseMatch && !bilingualAliasMatch && !actionIdentityMatch && !actionSemanticMatch && !sourceIdentityMatch && !windowMatch && !sourceDateMatch
+      ? ligatureTolerantDocumentTitleMatch(candidate, catalogEvents)
+      : null;
     const decisiveIdentityMatch = catalogByBilingualAlias.get(bilingualAliasKey(candidate))
       || catalogByActionIdentity.get(candidateActionIdentityKey(candidate))
       || catalogBySourceIdentity.get(candidateSourceIdentityKey(candidate));
@@ -873,7 +920,7 @@ function main() {
     if (exactSourceConflict) {
       return duplicateReviewResult(candidate, exactSourceConflict, duplicateReviewAlerts, blocked);
     }
-    const existingMatch = exactMatch || looseMatch || bilingualAliasMatch || actionIdentityMatch || actionSemanticMatch || sourceIdentityMatch || windowMatch || sourceDateMatch;
+    const existingMatch = exactMatch || looseMatch || bilingualAliasMatch || actionIdentityMatch || actionSemanticMatch || sourceIdentityMatch || windowMatch || sourceDateMatch || documentTitleMatch;
     if (existingMatch) {
       if (trustedAlreadyPublished(candidate)) {
         const alreadyLinked = candidate.review_status === 'approved-for-catalog'

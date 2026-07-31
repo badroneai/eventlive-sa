@@ -72,7 +72,15 @@ function buildSlotOccupants(candidates) {
       tokens: distinctiveTitleTokens(candidate.title),
       source_url: candidate.source_url || '',
       page: parsed.page,
-      position: parsed.position
+      position: parsed.position,
+      // WO-8: geometric-binding evidence produced this cycle by
+      // scripts/visit-saudi-summer-pdf-utils.mjs's attachDatedCardImages, threaded through
+      // data/source_candidates.json (see richFieldsFromItem in
+      // scripts/collect-source-candidates.mjs). Only present when the crop came from the
+      // geometry-bound path; older/other image sources simply omit it below.
+      overlap_ratio: typeof candidate.pdf_crop_overlap_ratio === 'number' ? candidate.pdf_crop_overlap_ratio : undefined,
+      image_bbox: candidate.pdf_crop_image_bbox || undefined,
+      card_bbox: candidate.pdf_crop_card_bbox || undefined
     });
   }
   return slots;
@@ -144,7 +152,14 @@ function main() {
       position: parsed.position,
       ocr_tokens_matched: gate.matchedTokens,
       verified_against_title: occupant.title,
-      verified_at: generatedAt
+      verified_at: generatedAt,
+      // WO-8: geometry evidence (image bbox, card text bbox, overlap ratio) for the
+      // current cycle's assignment - re-derived and overwritten every cycle alongside the
+      // token gate above, so it always reflects the PRESENT slot occupant, not the one
+      // that first won the assignment.
+      ...(occupant.overlap_ratio !== undefined ? { image_overlap_ratio: occupant.overlap_ratio } : {}),
+      ...(occupant.image_bbox ? { image_bbox: occupant.image_bbox } : {}),
+      ...(occupant.card_bbox ? { card_bbox: occupant.card_bbox } : {})
     };
     verified.push({ id: event.id, title: event.title, file: parsed.filename, matched_tokens: gate.matchedTokens });
   }

@@ -143,6 +143,7 @@ jobs:
           npm run test:scega-canonical-alias
           npm run test:poster-ocr
           npm run test:visit-saudi-image-identity
+          npm run test:pdf-image-geometry
           npm run test:regional-chamber-extractors
           npm run test:leap-agenda-enrichment
           npm run test:money2020-agenda-enrichment
