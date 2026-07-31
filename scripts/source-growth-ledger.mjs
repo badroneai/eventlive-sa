@@ -39,8 +39,77 @@ function sum(rows = [], key = '') {
   return rows.reduce((total, row) => total + Number(row?.[key] || 0), 0);
 }
 
+function normalizeId(value = '') {
+  // Arabic ids (e.g. "event-بلاتو") can arrive in different Unicode
+  // normalization forms depending on the text pipeline that produced them
+  // (extraction vs. build). Compare everything as NFC so an encoding
+  // difference is never mistaken for a genuinely missing event.
+  return String(value || '').normalize('NFC');
+}
+
+// WO-9b: the original lost_published_output heuristic assumed every publish
+// must increase the NET public count (`published_new > max(0, publicDelta)`).
+// That's false under ordinary churn -- publishing N new events while N (or
+// more) previously-public events age out in the SAME cycle nets to
+// public_delta=0 with nothing actually lost. The WO-9 fix to the frozen
+// baseline gauge exposed this: honest deltas (no longer permanently
+// inflated by the frozen-gauge bug) hit this flawed assumption on the very
+// first live cycle and false-alarmed the health gate.
+//
+// Replaced with an IDENTITY check: a publish is only "lost" when an id this
+// cycle's auto-publish report says it published is genuinely ABSENT from
+// the built dist/events.json. This is immune to churn because it doesn't
+// care about the net count at all -- it only asks "did the specific things
+// we just published make it into the output."
+//
+// Returns true (genuinely lost -- alarm), false (nothing lost or nothing
+// published), or null (the auto-publish report doesn't correlate with this
+// run -- e.g. a stale leftover from an earlier cycle because auto-publish
+// didn't rerun this cycle -- skip the check rather than false-alarm on
+// data that was never trying to describe this run).
+function checkPublishedOutputPersisted({ collection, publish, publicEvents }) {
+  const publishedIds = [...new Set(
+    (Array.isArray(publish?.published) ? publish.published : [])
+      .map((item) => item?.event_id)
+      .filter(Boolean)
+  )];
+  if (!publishedIds.length) {
+    return { lostPublishedOutput: false, missingPublishedIds: [], publishReportCorrelated: true, publishedIdsChecked: 0 };
+  }
+
+  const collectedAt = collection?.collected_at;
+  const publishedAt = publish?.published_at;
+  // Within a healthy cycle, sources:collect writes collected_at BEFORE
+  // sources:auto-publish writes published_at. If published_at predates this
+  // run's own collected_at, the publish report is a leftover from an
+  // earlier cycle (auto-publish didn't run/refresh this cycle) -- it has no
+  // business informing THIS run's persistence check.
+  const publishReportCorrelated = !publishedAt
+    ? false
+    : !collectedAt
+      ? true // nothing to correlate against (e.g. first run) -- trust it
+      : String(publishedAt) >= String(collectedAt);
+
+  if (!publishReportCorrelated) {
+    return { lostPublishedOutput: null, missingPublishedIds: [], publishReportCorrelated, publishedIdsChecked: publishedIds.length };
+  }
+
+  const distIds = new Set(
+    (Array.isArray(publicEvents?.events) ? publicEvents.events : [])
+      .map((event) => normalizeId(event?.id))
+  );
+  const missingPublishedIds = publishedIds.filter((id) => !distIds.has(normalizeId(id)));
+  return {
+    lostPublishedOutput: missingPublishedIds.length > 0,
+    missingPublishedIds,
+    publishReportCorrelated,
+    publishedIdsChecked: publishedIds.length
+  };
+}
+
 function buildGrowthRun({ generatedAt, catalog, ended, publicEvents, collection, publish, runState }) {
   const sourceRows = Array.isArray(collection?.sources) ? collection.sources : [];
+  const persistence = checkPublishedOutputPersisted({ collection, publish, publicEvents });
   return {
     run_id: collection?.collected_at || publish?.published_at || generatedAt,
     generated_at: generatedAt,
@@ -56,7 +125,16 @@ function buildGrowthRun({ generatedAt, catalog, ended, publicEvents, collection,
     blocked_remaining: Number(publish?.totals?.blocked || publish?.blocked?.length || 0),
     sources_attempted: Number(collection?.sources_attempted || runState?.totals?.attempted || 0),
     productive_sources: Number(runState?.totals?.productive || sourceRows.filter((row) => row.status === 'ok' && Number(row.extracted || 0) > 0).length),
-    collector_errors: Number(runState?.totals?.collector_errors || sourceRows.filter((row) => row.status === 'error').length)
+    collector_errors: Number(runState?.totals?.collector_errors || sourceRows.filter((row) => row.status === 'error').length),
+    // WO-9b: identity-based persistence check (tri-state true/false/null --
+    // see checkPublishedOutputPersisted). This is computed HERE, once, while
+    // the raw publish/dist data is available, and simply carried forward by
+    // appendGrowthRun afterward -- it can never be recomputed from delta
+    // math alone once this row is historical.
+    lost_published_output: persistence.lostPublishedOutput,
+    missing_published_ids: persistence.missingPublishedIds,
+    published_ids_checked: persistence.publishedIdsChecked,
+    publish_report_correlated: persistence.publishReportCorrelated
   };
 }
 
@@ -79,8 +157,16 @@ function appendGrowthRun(previousRuns = [], run, limit = maxHistory) {
       ? (item.catalog_active_rows + item.catalog_ended_rows) - (previous.catalog_active_rows + previous.catalog_ended_rows)
       : null;
     noGrowthStreak = publicDelta === null || publicDelta > 0 ? 0 : noGrowthStreak + 1;
-    const lostPublishedOutput = publicDelta !== null && item.published_new > Math.max(0, publicDelta);
-    const status = lostPublishedOutput
+    // WO-9b: lost_published_output is NOT recomputed here. It was set once,
+    // by buildGrowthRun, at the moment the raw publish report + built
+    // dist/events.json were both available for THIS row (identity check --
+    // see checkPublishedOutputPersisted). `item` already carries it forward
+    // via the `...item` spread below, whether that's a fresh tri-state
+    // value for the row just written, or an untouched historical row's
+    // already-persisted value. Strict `=== true` mirrors
+    // source-health-gate.mjs's own check, so `null` (report didn't
+    // correlate with this run) and `false` both correctly stay silent.
+    const status = item.lost_published_output === true
       ? 'critical-persistence-gap'
       : item.collector_errors > 0 || noGrowthStreak >= 4
         ? 'degraded'
@@ -92,7 +178,6 @@ function appendGrowthRun(previousRuns = [], run, limit = maxHistory) {
       public_delta: publicDelta,
       catalog_delta: catalogDelta,
       no_growth_streak: noGrowthStreak,
-      lost_published_output: lostPublishedOutput,
       status,
       // WO-9: rows touched by byId.set() above are always tagged 'ok'
       // (real measurement); rows left untouched carry forward whatever
@@ -143,7 +228,15 @@ function main() {
   const state = {
     schema: 'eventlive.source-growth-state.v1',
     generated_at: generatedAt,
-    runs
+    runs,
+    // WO-9b (self-caught follow-up to WO-9): main() used to rebuild `state`
+    // from scratch every run, silently dropping the WO-9 poisoned-history
+    // `discontinuities` annotation on the very next real sync cycle after
+    // the WO-9 fix landed (verified: present in commit fe948662, gone by
+    // the next sync commit 86947532 -- one cycle later). Carry it forward
+    // explicitly so an annotated discontinuity survives for good, the same
+    // way `runs[].measurement_integrity` already does.
+    ...(previous.discontinuities ? { discontinuities: previous.discontinuities } : {})
   };
   const report = {
     schema: 'eventlive.source-growth-report.v1',
