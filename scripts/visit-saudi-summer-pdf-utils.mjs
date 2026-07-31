@@ -41,6 +41,27 @@ function decodeXml(value = '') {
     .replace(/&gt;/g, '>')
     .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
     .replace(/[\u202a-\u202e\u2066-\u2069]/g, '')
+    // WO-8: the source PDF (Adobe Illustrator export) has at least one font whose
+    // "lam-alef" ligature glyph (لا - the presentation-form family covered by
+    // U+FEFB/FEFC/FEF7-FEFA) has no entry in the font's ToUnicode CMap, so
+    // pdftohtml/poppler cannot map it and emits U+FFFD (REPLACEMENT CHARACTER) in its
+    // place - e.g. "أحلام" (Ahlam) extracts as raw "م�حأ" (a single WORD-INTERNAL
+    // replacement standing in for the dropped لا, confirmed against the live PDF's raw
+    // XML). The blanket "� -> ا" fallback below only restores ONE of the two
+    // dropped letters, producing "أحام" instead of "أحلام" (the literal defect the owner
+    // reported). A lone � standing as ITS OWN token (flanked by whitespace/string
+    // edges, not by another Arabic letter within the same token) is a different,
+    // pre-existing corruption class (an entire short function word like في/إلى dropped
+    // to one glyph) - that case is intentionally left to the blanket single-"ا" fallback
+    // plus cleanVisitSaudiText's per-token في/إلى/على/خلال whitelist below, so this first
+    // replacement only touches WORD-INTERNAL occurrences.
+    //
+    // restoreVisitSaudiPdfText later reverses each Arabic token's *characters* in place
+    // (RTL storage -> logical reading order), so inserting the two recovered letters here
+    // must use the STORAGE-order pair "ال" (alef then lam) so that after the token-level
+    // character reversal they land in the correct logical order "لا" (lam then alef) -
+    // e.g. "م" + "ال" + "ح" + "أ" = "مالحأ" reverses to "أحلام".
+    .replace(/(?<=[\u0600-\u06ff])�(?=[\u0600-\u06ff])/g, 'ال')
     .replace(/�/g, 'ا')
     .replace(/\s+/g, ' ')
     .trim();
@@ -176,12 +197,57 @@ function parseAttributes(value = '') {
   return attributes;
 }
 
+// WO-8 root cause (see the PR description for measured coordinates on 5 real pages):
+// this quadrant split (row at 1050, column at 810, out of the page's 1620x2025 canvas)
+// is *correct* for classifying dated-card TEXT - every sampled page's real column gap
+// (max left-column text right-edge .. min right-column text left-edge) and row gap (max
+// top-row text bottom-edge .. min bottom-row text top-edge) safely straddles these two
+// lines. The bug was never the threshold values; it was using them to classify an
+// IMAGE by its single origin point (top,left) instead of by how much of the image's
+// actual rectangle overlaps each card's region - a poster that starts a few px left of
+// the 810 column line but is mostly drawn to its right (e.g. p060's Rahma Riad poster,
+// origin left=761, spanning to left=1614) got silently origin-classified into the
+// NEIGHBORING card's slot and then won that slot by raw pixel area, evicting the
+// neighbor's own correct (smaller) poster entirely.
+const ROW_SPLIT = 1050;
+const COL_SPLIT = 810;
+// AMBIGUITY RULE (shared-rejection philosophy - see PR description for the "changed" vs
+// "kept" impact table these were tuned against): an image only binds to a card region if
+// (a) at least MIN_OVERLAP_RATIO of the image's OWN area falls inside that region, and
+// (b) that region's overlap beats the runner-up region's overlap by at least the
+// AMBIGUITY_MARGIN factor. Either condition failing means "no clear winner" -> the image
+// is attached to NO card for this cycle, and the event falls back to a generated cover
+// rather than risk showing a neighbor's poster again.
+const MIN_OVERLAP_RATIO = 0.6;
+const AMBIGUITY_MARGIN = 1.3;
+
 function cardKeyForPosition(top, left) {
-  return `${top < 1050 ? 'top' : 'bottom'}-${left < 810 ? 'left' : 'right'}`;
+  return `${top < ROW_SPLIT ? 'top' : 'bottom'}-${left < COL_SPLIT ? 'left' : 'right'}`;
 }
 
-function explicitDatedCardKeys(xml = '', year) {
-  const keys = new Set();
+function regionRectForCardKey(cardKey, pageWidth, pageHeight) {
+  const isTop = cardKey.startsWith('top');
+  const isLeft = cardKey.endsWith('left');
+  return {
+    top: isTop ? 0 : ROW_SPLIT,
+    bottom: isTop ? ROW_SPLIT : pageHeight,
+    left: isLeft ? 0 : COL_SPLIT,
+    right: isLeft ? COL_SPLIT : pageWidth
+  };
+}
+
+function overlapArea(imageBox, region) {
+  const overlapWidth = Math.max(0, Math.min(imageBox.left + imageBox.width, region.right) - Math.max(imageBox.left, region.left));
+  const overlapHeight = Math.max(0, Math.min(imageBox.top + imageBox.height, region.bottom) - Math.max(imageBox.top, region.top));
+  return overlapWidth * overlapHeight;
+}
+
+// Dated card TEXT bounding boxes per page (used both as the WO-5 gate's dated-card
+// membership test, unchanged from before, and as evidence in image_geometry provenance -
+// the actual image-to-card REGION used for binding is regionRectForCardKey's quadrant,
+// not this tighter text box, since posters are drawn above/beside their card's own text).
+function explicitDatedCardRegions(xml = '', year) {
+  const pagesWithDatedCards = new Map();
   for (const pageMatch of xml.matchAll(/<page\s+([^>]*)>([\s\S]*?)<\/page>/g)) {
     const pageNumber = Number(parseAttributes(pageMatch[1]).number || 0);
     if (!destinationForPage(pageNumber, year)) continue;
@@ -190,34 +256,52 @@ function explicitDatedCardKeys(xml = '', year) {
       const attributes = parseAttributes(textMatch[1]);
       const top = Number(attributes.top || 0);
       if (top < 250) continue;
-      const cardKey = cardKeyForPosition(top, Number(attributes.left || 0));
+      const left = Number(attributes.left || 0);
+      const cardKey = cardKeyForPosition(top, left);
       const nodes = cards.get(cardKey) || [];
       nodes.push({
         raw: decodeXml(textMatch[2]),
         top,
-        left: Number(attributes.left || 0),
+        left,
+        width: Number(attributes.width || 0),
+        height: Number(attributes.height || 0),
         size: 0,
         bold: false
       });
       cards.set(cardKey, nodes);
     }
+    const datedCards = new Map();
     for (const [cardKey, nodes] of cards) {
-      if (linesForLink(nodes).some((line) => parseDateRange(line.text, year))) {
-        keys.add(`${pageNumber}|${cardKey}`);
-      }
+      if (!linesForLink(nodes).some((line) => parseDateRange(line.text, year))) continue;
+      const textBBox = nodes.reduce((box, node) => ({
+        top: Math.min(box.top, node.top),
+        left: Math.min(box.left, node.left),
+        right: Math.max(box.right, node.left + node.width),
+        bottom: Math.max(box.bottom, node.top + node.height)
+      }), { top: Infinity, left: Infinity, right: -Infinity, bottom: -Infinity });
+      datedCards.set(cardKey, textBBox);
     }
+    if (datedCards.size) pagesWithDatedCards.set(pageNumber, datedCards);
   }
-  return keys;
+  return pagesWithDatedCards;
 }
 
-function attachDatedCardImages(xml = '', year, options = {}) {
+// exported for scripts/pdf-image-geometry-regression-test.mjs (WO-8) - visitSaudiPdfBufferToXml
+// shells out to pdftohtml against a real PDF, which a fixture-based unit test cannot do,
+// so the geometric binding itself needs its own entry point independent of the PDF->XML step.
+export function attachDatedCardImages(xml = '', year, options = {}) {
   const outputDir = options.imageOutputDir;
   if (!outputDir) return xml.replace(/<image\s+[^>]*\/>/g, '');
   const publicBasePath = String(options.publicBasePath || '/assets/event-images').replace(/\/$/, '');
-  const datedKeys = explicitDatedCardKeys(xml, year);
+  const datedCardsByPage = explicitDatedCardRegions(xml, year);
   fs.mkdirSync(outputDir, { recursive: true });
   return xml.replace(/<page\s+([^>]*)>([\s\S]*?)<\/page>/g, (pageXml, pageAttrs, pageBody) => {
-    const pageNumber = Number(parseAttributes(pageAttrs).number || 0);
+    const pageAttributes = parseAttributes(pageAttrs);
+    const pageNumber = Number(pageAttributes.number || 0);
+    const pageWidth = Number(pageAttributes.width || 0);
+    const pageHeight = Number(pageAttributes.height || 0);
+    const datedCards = datedCardsByPage.get(pageNumber);
+    if (!datedCards) return `<page ${pageAttrs}>${pageBody.replace(/<image\s+[^>]*\/>/g, '')}</page>`;
     const bestByCard = new Map();
     for (const imageMatch of pageBody.matchAll(/<image\s+([^>]*)\/>/g)) {
       const attributes = parseAttributes(imageMatch[1]);
@@ -225,12 +309,31 @@ function attachDatedCardImages(xml = '', year, options = {}) {
       const left = Number(attributes.left || 0);
       const width = Number(attributes.width || 0);
       const height = Number(attributes.height || 0);
-      const cardKey = cardKeyForPosition(top, left);
-      const acceptedKey = `${pageNumber}|${cardKey}`;
-      if (!datedKeys.has(acceptedKey) || width < 300 || height < 150 || !attributes.src) continue;
+      if (width < 300 || height < 150 || !attributes.src) continue;
+      const imageBox = { top, left, width, height };
+      const imageArea = width * height;
+      // GEOMETRIC BINDING: assign by maximal overlap AREA between the image's actual
+      // rectangle and each dated card's region - not by classifying the image's origin
+      // point into a quadrant (the WO-8 root cause).
+      const scored = [...datedCards.keys()]
+        .map((cardKey) => ({ cardKey, overlap: overlapArea(imageBox, regionRectForCardKey(cardKey, pageWidth, pageHeight)) }))
+        .sort((a, b) => b.overlap - a.overlap);
+      const [best, runnerUp] = scored;
+      if (!best || best.overlap <= 0) continue;
+      const overlapRatio = best.overlap / imageArea;
+      const hasClearMargin = !runnerUp || runnerUp.overlap === 0 || best.overlap >= runnerUp.overlap * AMBIGUITY_MARGIN;
+      if (overlapRatio < MIN_OVERLAP_RATIO || !hasClearMargin) continue; // ambiguous or no card box match -> no image for this cycle (generated cover fallback)
       const area = width * height;
-      if (!bestByCard.has(cardKey) || bestByCard.get(cardKey).area < area) {
-        bestByCard.set(cardKey, { area, src: attributes.src });
+      const existing = bestByCard.get(best.cardKey);
+      if (!existing || existing.area < area) {
+        const cardBBox = datedCards.get(best.cardKey);
+        bestByCard.set(best.cardKey, {
+          area,
+          src: attributes.src,
+          overlapRatio,
+          imageBBox: `${Math.round(top)},${Math.round(left)},${Math.round(width)},${Math.round(height)}`,
+          cardBBox: `${Math.round(cardBBox.top)},${Math.round(cardBBox.left)},${Math.round(cardBBox.right)},${Math.round(cardBBox.bottom)}`
+        });
       }
     }
     const markers = [];
@@ -240,7 +343,7 @@ function attachDatedCardImages(xml = '', year, options = {}) {
       const filename = `visit-saudi-summer-${year}-p${String(pageNumber).padStart(3, '0')}-${cardKey}${extension}`;
       const outputPath = path.join(outputDir, filename);
       fs.copyFileSync(image.src, outputPath);
-      markers.push(`<eventlive-card-image card="${cardKey}" src="${publicBasePath}/${filename}"/>`);
+      markers.push(`<eventlive-card-image card="${cardKey}" src="${publicBasePath}/${filename}" overlap-ratio="${image.overlapRatio.toFixed(3)}" image-bbox="${image.imageBBox}" card-bbox="${image.cardBBox}"/>`);
     }
     const cleanBody = pageBody.replace(/<image\s+[^>]*\/>/g, '');
     return `<page ${pageAttrs}>${markers.join('\n')}${cleanBody}</page>`;
@@ -263,7 +366,7 @@ export function parseVisitSaudiSummerPdfXml(xml = '', source = {}) {
     const cards = new Map();
     const cardImages = new Map([...pageMatch[2].matchAll(/<eventlive-card-image\s+([^>]*)\/>/g)].map((match) => {
       const attributes = parseAttributes(match[1]);
-      return [attributes.card, attributes.src];
+      return [attributes.card, attributes];
     }));
     for (const textMatch of pageMatch[2].matchAll(/<text\s+([^>]*)>([\s\S]*?)<\/text>/g)) {
       const linkMatch = textMatch[2].match(/<a\s+href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/);
@@ -326,10 +429,20 @@ export function parseVisitSaudiSummerPdfXml(xml = '', source = {}) {
         time_precision: 'date-only-defaulted',
         highlights: [`مدرج في تقويم صيف السعودية ${year}`, `الوجهة: ${destination.venue}`],
         ...(cardImages.get(cardKey) ? {
-          image_url: cardImages.get(cardKey),
+          image_url: cardImages.get(cardKey).src,
           image_alt: title,
           image_source_url: source.url,
-          image_discovery_method: 'official-pdf-embedded-image'
+          image_discovery_method: 'official-pdf-embedded-image',
+          // WO-8 geometry evidence (image bbox, card text bbox, overlap ratio) - carried
+          // through to data/source_candidates.json (see richFieldsFromItem in
+          // scripts/collect-source-candidates.mjs) so
+          // scripts/heal-visit-saudi-image-identity.mjs can record it in
+          // manifest.pdf_crop_provenance every cycle, not just at first assignment.
+          ...(cardImages.get(cardKey)['overlap-ratio'] ? {
+            pdf_crop_overlap_ratio: Number(cardImages.get(cardKey)['overlap-ratio']),
+            pdf_crop_image_bbox: cardImages.get(cardKey)['image-bbox'],
+            pdf_crop_card_bbox: cardImages.get(cardKey)['card-bbox']
+          } : {})
         } : {}),
         ...dates
       });

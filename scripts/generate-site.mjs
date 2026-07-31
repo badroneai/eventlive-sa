@@ -5424,6 +5424,22 @@ function staticWhenText(event) {
   return `تبدأ ${formatShortDate(event.starts_at)}`;
 }
 
+// WO-8: the owner reported a card-meta line reading "الرياض · الرياض · من ٢٨ يوليو…" -
+// city and venue rendering as the SAME text twice. Many events (especially the visit-saudi
+// summer PDF pipeline - see PAGE_DESTINATIONS_2026 in scripts/visit-saudi-summer-pdf-
+// utils.mjs) set event.venue to the destination's own Arabic city name (e.g. venue:
+// 'الرياض' for city: 'Riyadh') because no distinct venue name is available from the
+// source, so `event.venue` is truthy and the old `event.venue || cityText` fallback never
+// even triggered - the duplicate came from the two TEXTS being equal, not from venue being
+// empty. Dedupe by normalized-text equality (arabic-normalize handles alef/hamza/tashkeel
+// variants) so a venue that only differs from the city by diacritics/spelling still dedupes,
+// while a genuinely distinct venue (e.g. "عسير · منطقة عسير") still shows both segments.
+function cardMetaLine(cityText, venue, whenMeta) {
+  const venueText = String(venue || '').trim();
+  const showVenue = venueText && normalizeArabicSearch(venueText) !== normalizeArabicSearch(String(cityText || ''));
+  return [cityText, showVenue ? venueText : null, whenMeta].filter(Boolean).join(' · ');
+}
+
 function homeEventCard(event) {
   const image = rootAsset(event.image_url || event.image || './assets/eventlive-hero.png');
   const detail = compactEventUrl(event);
@@ -5493,7 +5509,7 @@ function homeEventCard(event) {
           <span class="chips">${chips}</span>
         </a>
         <div class="card-body">
-          <div class="card-meta">${escapeHtml(cityText)} · ${escapeHtml(event.venue || cityText)} · ${escapeHtml(whenMeta)}</div>
+          <div class="card-meta">${escapeHtml(cardMetaLine(cityText, event.venue, whenMeta))}</div>
           <h3><a dir="auto" href="${escapeHtml(detail)}">${escapeHtml(event.title)}</a></h3>
           <div class="card-when" data-live-time${cardWhenAttrs} ${runtimeAttrs(event)}>${escapeHtml(cardWhenText)}</div>
           <div class="card-foot">

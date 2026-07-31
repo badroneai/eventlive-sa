@@ -125,6 +125,7 @@
     "test:image-discovery": "node scripts/event-image-discovery-regression-test.mjs",
     "test:catalog-image-sync": "node scripts/catalog-image-sync-regression-test.mjs",
     "test:visit-saudi-image-identity": "node scripts/visit-saudi-image-identity-regression-test.mjs",
+    "test:pdf-image-geometry": "node scripts/pdf-image-geometry-regression-test.mjs",
     "test:dedupe": "node scripts/dedupe-regression-test.mjs",
     "test:public-dedupe": "node scripts/public-event-dedupe-regression-test.mjs",
     "test:multi-event-document-build": "node scripts/multi-event-document-build-regression-test.mjs",
