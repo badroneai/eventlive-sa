@@ -70,16 +70,21 @@ def translate_segmented(translator, text, target_lang):
 GLOSSARY_PATH = ROOT / "data" / "mt_glossary.json"
 
 
-def load_glossary():
+def load_glossary_entries():
+    """Raw arabic->english dict from data/mt_glossary.json. Missing/broken
+    file degrades to empty — translation must never break because of the
+    glossary."""
+    try:
+        return json.loads(GLOSSARY_PATH.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001 — degrade gracefully by design
+        return {}
+
+
+def load_glossary(entries):
     """Curated ar->en entity glossary. Applied BEFORE machine translation so
     the engine never gets to hallucinate Saudi entity names (argos rendered
     'رقابة الهيئة' as 'control of UN-Women'). Longest terms first so compound
-    names win over their substrings. Missing/broken file degrades to empty —
-    translation must never break because of the glossary."""
-    try:
-        entries = json.loads(GLOSSARY_PATH.read_text(encoding="utf-8"))
-    except Exception:  # noqa: BLE001 — degrade gracefully by design
-        return []
+    names win over their substrings."""
     compiled = []
     for arabic, english in sorted(entries.items(), key=lambda item: -len(item[0])):
         # Standalone occurrences only: an Arabic term must not match inside a
@@ -97,6 +102,38 @@ def apply_glossary(text, glossary):
     for pattern, english in glossary:
         text = pattern.sub(english, text)
     return text
+
+
+def load_reverse_glossary(entries):
+    """WO-10: the ar->en substitution above relies on argos copying an
+    embedded Latin token through an Arabic sentence unchanged — a behavior
+    proven safe by the SFDA hallucination fix. The mirror image (embedding an
+    Arabic token mid-sentence into an EN->AR model's input) has no such
+    precedent and is a real risk: an en->ar model was never validated on
+    mixed-script input and could mangle the surrounding English instead of
+    passing the Arabic through. So the en->ar direction only gets a much
+    narrower, much safer protection: an EXACT, WHOLE-VALUE match (the entire
+    pending row, not a substring inside a longer sentence) bypasses MT
+    entirely and uses the glossary's Arabic form directly. This is exactly
+    the shape of the actual bug (event.venue = 'Qassim', event.organizer =
+    'Saudi Tourism Authority' — short standalone values, not sentences).
+    Generic institutional glosses ('the Authority', anything with a
+    parenthetical acronym) are excluded: they are deliberately not proper
+    nouns and would false-match too many unrelated short pending rows."""
+    reverse = {}
+    for arabic, english in entries.items():
+        core = english.strip()
+        if not core or core.lower().startswith("the ") or "(" in core:
+            continue
+        reverse[core.lower()] = arabic
+    return reverse
+
+
+def apply_reverse_glossary(text, reverse_glossary):
+    """Exact whole-value glossary bypass for en->ar rows (see
+    load_reverse_glossary). Returns the canonical Arabic form, or None when
+    the row is not an exact glossary hit — callers fall back to MT."""
+    return reverse_glossary.get(text.strip().lower())
 
 
 def log(message):
@@ -166,12 +203,24 @@ def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     chunk_in = OUT_DIR / "chunk-01.json"
     chunk_out = OUT_DIR / "chunk-01.out.json"
-    glossary = load_glossary()
+    glossary_entries = load_glossary_entries()
+    glossary = load_glossary(glossary_entries)
+    reverse_glossary = load_reverse_glossary(glossary_entries)
     if glossary:
-        log(f"glossary loaded with {len(glossary)} entity terms")
+        log(f"glossary loaded with {len(glossary)} entity terms ({len(reverse_glossary)} reverse-eligible)")
     translated = {}
+    glossary_hits = 0
     skipped = 0
     for row in pending:
+        # Exact-value glossary hits (WO-10: venue/organizer entity names like
+        # 'Qassim') bypass MT entirely — no installed model required, no risk
+        # of the en->ar model mangling an embedded Arabic token.
+        if row["target_lang"] == "ar":
+            exact = apply_reverse_glossary(row["source"], reverse_glossary)
+            if exact:
+                translated[row["key"]] = exact
+                glossary_hits += 1
+                continue
         translator = translators.get((row["source_lang"], row["target_lang"]))
         if not translator:
             skipped += 1
@@ -192,7 +241,7 @@ def main():
     handled = [row for row in pending if row["key"] in translated]
     chunk_in.write_text(json.dumps(handled, ensure_ascii=False, indent=1), encoding="utf-8")
     chunk_out.write_text(json.dumps(translated, ensure_ascii=False, indent=1), encoding="utf-8")
-    log(f"OK translated={len(translated)} skipped={skipped} out={OUT_DIR}")
+    log(f"OK translated={len(translated)} glossary_exact={glossary_hits} skipped={skipped} out={OUT_DIR}")
 
 
 if __name__ == "__main__":

@@ -54,12 +54,32 @@ export function saveContentTranslations(cache) {
 // field added to the catalog later must be listed here once — the Arabic
 // build, the English build, the autonomous CI translation, the disclosure
 // marker, and the coverage metrics all derive from this registry.
+//
+// WO-10 (2026-07-31, owner-caught): `venue` rendered raw English ("Qassim")
+// on the Arabic card-meta line (cardMetaLine() in generate-site.mjs) because
+// it was never listed here — identical failure class to the PR #19 outline
+// leak. Field audit (see PR body) found four more fields that render
+// human-readable prose on public pages without going through this registry:
+// venue_address (separate field, defaults from venue but diverges once venue
+// is translated in place — same leak, one hop later, e.g. the client-side
+// attendance-page fallback `event.venue_address || event.venue`), organizer
+// (renders inside the FAQ "تعتمد EventLive على {source}" sentence and the
+// JSON-LD organizer name), image_alt (renders as the <img alt> on cards/hero
+// whenever it differs from title — 11/516 current+upcoming events), and
+// price_label (renders as the "التسجيل والدخول" attendance fact — "Free" /
+// "Paid" today). Session room/track chips in the agenda timeline had the
+// same gap. Deliberately NOT registered here: program_outline.provider
+// (a data-feed/provenance brand label like "Ithra Events" or "Visit Saudi
+// Seasons" — the same category as source_label, which has never been
+// registered by design) and session.speaker (a personal name; MT
+// transliteration of names risks corrupting them, same reasoning that keeps
+// brand names and URLs out of the registration guard below).
 export const CONTENT_PROSE_FIELDS = {
-  scalars: ['title', 'summary', 'rich_summary'],
+  scalars: ['title', 'summary', 'rich_summary', 'description', 'venue', 'venue_address', 'organizer', 'image_alt', 'price_label'],
   outline_scalars: ['official_description', 'duration_text'],
   outline_lists: ['goals', 'features', 'requirements'],
   string_arrays: ['highlights'],
-  session_scalars: ['title']
+  session_scalars: ['title', 'room', 'track']
 };
 
 // A translation whose output still carries a long run of source-script text

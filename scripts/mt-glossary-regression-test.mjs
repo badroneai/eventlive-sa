@@ -21,9 +21,51 @@ for (const [arabic, english] of entries) {
 }
 assert.equal(glossary['الهيئة العامة للغذاء والدواء'], 'the Saudi Food and Drug Authority (SFDA)', 'the SFDA anchor entry must stay — it is the documented hallucination case');
 
+// WO-10 (2026-07-31, owner-caught): registering venue/organizer exposes the
+// OPPOSITE direction the glossary never protected — en->ar rows like
+// event.venue = 'Qassim'. These region/venue entries are the anchors for
+// that fix; if they regress, the exact-match short circuit below has
+// nothing to match and 'Qassim' goes back to unprotected MT guessing.
+assert.equal(glossary['القصيم'], 'Qassim', 'the Qassim anchor entry must stay — it is the WO-10 venue-registry reproduction case');
+assert.equal(glossary['حي جميل'], 'Hayy Jameel', 'the Hayy Jameel entry must stay — highest-frequency venue value in the catalog (68 occurrences)');
+
 const translator = fs.readFileSync(path.join(root, 'scripts', 'auto_translate_pending.py'), 'utf8');
 assert.match(translator, /apply_glossary\(source_text, glossary\)/, 'ar->en rows must pass through the glossary before MT');
 assert.match(translator, /\(\?<!\[ء-ي\]\)/, 'glossary matching must be word-bounded — raw substring replacement corrupts words (جدة inside المستجدة)');
+
+// WO-10: en->ar rows get a narrower, safer protection — an exact whole-value
+// glossary bypass (not mid-sentence substitution; see load_reverse_glossary
+// docstring for why the ar->en substitution trick is not safe to mirror).
+assert.match(translator, /def load_reverse_glossary/, 'en->ar rows must have a reverse-glossary lookup (WO-10 venue/organizer fix)');
+assert.match(translator, /def apply_reverse_glossary/, 'reverse-glossary application must be wired');
+assert.match(translator, /if row\["target_lang"\] == "ar":/, 'the main translation loop must check for an exact reverse-glossary hit before falling back to MT for en->ar rows');
+
+{
+  const { execFileSync } = await import('node:child_process');
+  const pythonProbe = `
+import sys
+sys.path.insert(0, 'scripts')
+import importlib.util
+spec = importlib.util.spec_from_file_location('auto_translate_pending', 'scripts/auto_translate_pending.py')
+mod = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(mod)
+entries = mod.load_glossary_entries()
+reverse = mod.load_reverse_glossary(entries)
+print(mod.apply_reverse_glossary('Qassim', reverse) or 'NONE')
+print(mod.apply_reverse_glossary('the Authority', reverse) or 'NONE')
+`;
+  let output;
+  try {
+    output = execFileSync('python3', ['-c', pythonProbe], { cwd: root, encoding: 'utf8' }).trim().split('\n');
+  } catch (error) {
+    output = null;
+    console.log(`MT_GLOSSARY_REVERSE_PROBE_SKIPPED python3 unavailable: ${error.message}`);
+  }
+  if (output) {
+    assert.equal(output[0], 'القصيم', "reverse glossary must resolve 'Qassim' to 'القصيم' — the exact Buraydah venue reproduction case");
+    assert.equal(output[1], 'NONE', "generic institutional glosses ('the Authority') must not exact-match — they are not proper nouns and would false-positive on unrelated short pending rows");
+  }
+}
 
 const cacheModule = fs.readFileSync(path.join(root, 'scripts', 'content-translation-cache.mjs'), 'utf8');
 assert.match(cacheModule, /export function pruneGlossaryViolations/, 'glossary-violating machine entries must be purgeable');
