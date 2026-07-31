@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-07-31T09:24:41.104Z",
+  "published_at": "2026-07-31T14:44:22.702Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -1144,33 +1144,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-stories-from-ithras-library-20260731-4116de16",
-      "event_id": "event-stories-from-ithras-library",
-      "title": "Stories from Ithra's Library",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-the-non-stop-spin-20260731-6cf89742",
       "event_id": "event-the-non-stop-spin",
       "title": "The Non-Stop Spin",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-open-art-space-20260731-40aac166",
-      "event_id": "event-open-art-space",
-      "title": "Open Art Space",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-water-challenges-20260731-eea51834",
       "event_id": "event-water-challenges",
       "title": "Water Challenges",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260731-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
       "reason": "already linked to catalog event"
     },
     {
@@ -1204,9 +1186,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-stories-from-ithras-library-20260731-4116de16",
+      "event_id": "event-stories-from-ithras-library",
+      "title": "Stories from Ithra's Library",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-museum-story-time-20260731-1104734c",
       "event_id": "event-museum-story-time",
       "title": "Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260731-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
       "reason": "already linked to catalog event"
     },
     {
@@ -1357,6 +1351,12 @@
       "candidate_id": "candidate-ithra-events-children-story-time-20260803-f545fa69",
       "event_id": "event-children-story-time",
       "title": "Children Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-open-art-space-20260803-40aac166",
+      "event_id": "event-open-art-space",
+      "title": "Open Art Space",
       "reason": "already linked to catalog event"
     },
     {

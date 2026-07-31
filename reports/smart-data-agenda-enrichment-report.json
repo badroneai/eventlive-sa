@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-31T09:26:23.024Z",
+  "generated_at": "2026-07-31T14:46:26.089Z",
   "agenda_url": "https://saudi.smartdataseries.com/agenda",
   "totals": {
     "catalog_targets": 1,
     "candidate_targets": 1,
-    "sessions": 31,
-    "days": 2
+    "sessions": 0,
+    "days": 0
   },
-  "fetch_error": ""
+  "fetch_error": "fetch failed"
 }

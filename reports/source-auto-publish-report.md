@@ -1,6 +1,6 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-31T09:24:41.104Z
+- published_at: 2026-07-31T14:44:22.702Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 561
@@ -187,17 +187,16 @@
 | candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260731-ef7080ff | linked-existing | event-trivia-night-earth-quest-tic-tac-know | already linked to catalog event |
 | candidate-ithra-events-childrens-art-studio-20260731-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
 | candidate-ithra-events-games-hub-20260731-fb83124c | linked-existing | event-games-hub | already linked to catalog event |
-| candidate-ithra-events-stories-from-ithras-library-20260731-4116de16 | linked-existing | event-stories-from-ithras-library | already linked to catalog event |
 | candidate-ithra-events-the-non-stop-spin-20260731-6cf89742 | linked-existing | event-the-non-stop-spin | already linked to catalog event |
-| candidate-ithra-events-open-art-space-20260731-40aac166 | linked-existing | event-open-art-space | already linked to catalog event |
 | candidate-ithra-events-water-challenges-20260731-eea51834 | linked-existing | event-water-challenges | already linked to catalog event |
-| candidate-ithra-events-spot-of-inspiration-20260731-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
 | candidate-ithra-events-childrens-museum-story-time-20260731-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-family-game-20260731-fff43c76 | linked-existing | event-family-game | already linked to catalog event |
 | candidate-ithra-events-emboss-printing-experience-20260731-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-ithra-events-family-challenges-20260731-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
 | candidate-ithra-events-grand-art-space-20260731-e3acefbb | linked-existing | event-grand-art-space | already linked to catalog event |
+| candidate-ithra-events-stories-from-ithras-library-20260731-4116de16 | linked-existing | event-stories-from-ithras-library | already linked to catalog event |
 | candidate-ithra-events-museum-story-time-20260731-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
+| candidate-ithra-events-spot-of-inspiration-20260731-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
 | candidate-mdlbeast-events-beast-house-20260731-83049a2a | linked-existing | event-beast-house | already linked to catalog event |
 | candidate-discover-aseer-events-musical-concerts-20260801-169733ac | linked-existing | event-musical-concerts | already linked to catalog event |
 | candidate-dhahran-expo-calendar-private-graduation-20260801-18d15b29 | linked-existing | event-private-graduation | already linked to catalog event |
@@ -223,6 +222,7 @@
 | candidate-ithra-events-paint-like-an-artist-20260803-a67d8ec3 | linked-existing | event-paint-like-an-artist | already linked to catalog event |
 | candidate-ithra-events-the-perfect-guide-to-event-management-20260803-9e165fb1 | linked-existing | event-the-almost-perfect-guide-to-event-management | already linked to catalog event |
 | candidate-ithra-events-children-story-time-20260803-f545fa69 | linked-existing | event-children-story-time | already linked to catalog event |
+| candidate-ithra-events-open-art-space-20260803-40aac166 | linked-existing | event-open-art-space | already linked to catalog event |
 | candidate-ithra-events-toddler-tuesday-20260804-1afead7d | linked-existing | event-toddler-tuesday | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-international-cat-day-open-call-20260804-5fb2cbe7 | linked-existing | event-hayy-cinema-international-cat-day-open-call | already linked to catalog event |
 | candidate-ithra-events-tangram-20260804-9a9db6cb | linked-existing | event-tangram | already linked to catalog event |
