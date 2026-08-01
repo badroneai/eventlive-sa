@@ -122,6 +122,22 @@
     .label, .meta { color:var(--muted); font-size:12.5px; line-height:1.75; }
     .hero .label, .hero-lite .label { color:#9fd8c3; }
     .value { font-weight:700; line-height:1.55; }
+    /* Bugfix (2026-08-01): .hero-card has a near-opaque white background
+       (rgba(255,255,255,.92), see the .hero-card rule above) even though
+       it sits inside the dark .hero section, which sets color:#eef6f2 and
+       (for .label specifically) the even more specific ".hero .label"
+       rule above sets #9fd8c3 — both tuned for the translucent DARK
+       .metric/.fact cards, not this opaque light card. Undeclared .value
+       inherited the near-white hero text color onto a near-white card
+       (unreadable); .label inherited the light mint tuned for dark
+       backgrounds (also unreadable here). Pin all three hero-card text
+       roles to the page's standard light-surface tokens so they read
+       against the card's actual (light) background. Verified via
+       Playwright computed-style contrast >= 4.5:1 (see
+       scripts/today-hero-regression-test.mjs). */
+    .hero-card .label { color:var(--muted); }
+    .hero-card .value { color:var(--ink); }
+    .hero-card .meta { color:var(--muted); }
     .main { padding:28px 0 58px; }
     .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:18px; }
     .actions, .stats, .related, .tags { display:flex; gap:8px; flex-wrap:wrap; }
@@ -993,8 +1009,12 @@ html[lang^="en"] [lang="ar"]{font-family:"IBM Plex Sans Arabic",Tahoma,Arial,san
         '<div class="chips"><span class="chip ' + escapeHTML(status.key) + '">' + escapeHTML(status.label) + '</span>' +
         (event.saved ? '<span class="chip saved">محفوظة</span>' : '') +
         '<span class="chip">' + escapeHTML(readyLabel) + '</span></div>' +
-        '<div class="label">' + escapeHTML(event.city || '') + ' | ' + cardDateHtml + '</div>' +
+        '<div class="label">' + escapeHTML(event.city_label || event.city || '') + ' | ' + cardDateHtml + '</div>' +
         '<h2>' + escapeHTML(event.title) + '</h2>' +
+        // NOTE: today.json (scripts/generate-site.mjs, compactActivationEvent)
+        // carries city_label (localized) but has no venue_label field — venue
+        // stays in its raw source form (often English/Latin) until the feed
+        // generator adds one. Tracked as a residual gap, not fixed here.
         '<p>' + escapeHTML([event.organizer, event.venue, event.category].filter(Boolean).join(' | ')) + '</p>' +
         '<div class="meta">' + escapeHTML(status.note) + (event.next_session_title ? '<br />القادمة: ' + escapeHTML(event.next_session_title) : '') + '</div>' +
         '<div class="actions"><a class="primary" href="' + escapeHTML(actionUrl(event)) + '">فتح الآن</a><a href="' + escapeHTML(safeRuntimeHref(event.ics_url, './events.ics')) + '">تقويم</a><a href="' + escapeHTML(safeRuntimeHref(event.directions_url, '#')) + '" target="_blank" rel="noopener noreferrer">الاتجاهات</a></div>' +
@@ -1025,7 +1045,15 @@ html[lang^="en"] [lang="ar"]{font-family:"IBM Plex Sans Arabic",Tahoma,Arial,san
             ? 'جارٍ'
             : formatRemaining(focus.runtime_status.distance);
         controls.focusTitle.textContent = focus.title;
-        controls.focusMeta.textContent = [focus.runtime_status.note, focus.venue, focus.city].filter(Boolean).join(' | ');
+        // Bugfix (2026-08-01): today.json carries a localized city_label
+        // (e.g. "الظهران") alongside the raw city (e.g. "Dhahran"). This used
+        // to join focus.city (raw/English) straight into an Arabic hero
+        // meta line — "تنتهي بعد 5 س 16 د | Dhahran Expo | Dhahran". Prefer
+        // the localized label. venue has no localized counterpart in the
+        // feed yet (checked scripts/generate-site.mjs's compactActivationEvent
+        // and every today.json row: only venue/venue_address exist, no
+        // venue_label), so it stays raw — residual gap, reported upstream.
+        controls.focusMeta.textContent = [focus.runtime_status.note, focus.venue, focus.city_label || focus.city].filter(Boolean).join(' | ');
         const focusRows = [focus, ...savedActionable.filter((event) => event.id !== focus.id).slice(0, 2)];
         controls.priorityGrid.innerHTML = focusRows.map((event, index) => renderCard(event, index === 0)).join('');
       }
