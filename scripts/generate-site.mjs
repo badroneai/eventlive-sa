@@ -2751,6 +2751,7 @@ function writeLegacyCategoryRedirectPages(events) {
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="refresh" content="0; url=${targetHref}" />
+<link rel="manifest" href="../manifest.webmanifest">
 <link rel="canonical" href="${escapeHtml(canonical)}" />
 <title>${escapeHtml(targetLabel)} — ${platformName}</title>
 </head>
