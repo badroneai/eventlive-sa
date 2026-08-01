@@ -59,6 +59,10 @@ const pages = [
   { id: 'readiness', path: '/readiness.html', required: ['جاهزية'] },
   { id: 'trust', path: '/trust.html', required: ['الثقة'] },
   { id: 'riyadh-city', path: '/cities/riyadh.html', required: ['الرياض'] },
+  // City-profiles destination layer (EVENTME-CITY-PROFILES-BRIEF.md) — Buraydah
+  // is one of the two fixture cities in data/city_places.json, so its city
+  // page exercises the new "أبرز المعالم في" places section every sweep run.
+  { id: 'buraydah-city', path: '/cities/buraydah.html', required: ['بريدة', 'أبرز المعالم في'] },
   { id: 'technology-category', path: '/categories/technology-innovation.html', required: ['التقنية والابتكار'] },
   { id: 'representative-event', path: representativePath, required: ['EventLive'] }
 ];

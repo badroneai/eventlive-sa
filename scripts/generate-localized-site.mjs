@@ -4,6 +4,9 @@ import path from 'node:path';
 import { load } from 'cheerio';
 import { parse } from 'acorn';
 import { CATEGORY_TAXONOMY, categoryDefinitionByKey } from './category-taxonomy.mjs';
+import { cityPlacesBySlug, loadCityPlacesFile } from './city-places-data.mjs';
+import { renderCityPlacesJsonLd, renderCityPlacesSection } from './city-places-render.mjs';
+import { PLACE_CATEGORIES } from './place-category-taxonomy.mjs';
 import { loadContentTranslations } from './content-translation-cache.mjs';
 import { OWNER_ONLY_PAGES } from './owner-only-pages.mjs';
 
@@ -46,6 +49,24 @@ const incrementalBuild = requestedIncrementalBuild
   && storedFingerprint === translationFingerprint;
 const exact = JSON.parse(fs.readFileSync(path.join(root, 'locales', 'en-SA-static.json'), 'utf8'));
 for (const category of CATEGORY_TAXONOMY) exact[category.label_ar] = category.label_en;
+// City-profiles place category chips (data/city_places.json) — same
+// registration idiom as CATEGORY_TAXONOMY above, feeding the generic
+// translateVisibleText() dictionary as defense-in-depth. The places
+// section itself is not translated through this path (see
+// applyCityPlacesEnglishOverride below, which fully rebuilds it from
+// data/city_places.json's own name_en/description_en fields), but these
+// entries keep en-surface-sweep's dictionary-coverage expectation honest
+// in case the chip label ever renders outside that override.
+for (const category of PLACE_CATEGORIES) exact[category.label_ar] = category.label_en;
+
+// City-profiles destination layer (EVENTME-CITY-PROFILES-BRIEF.md). Loaded
+// once; applyCityPlacesEnglishOverride() below looks up each city page's
+// slug here and, when an entry exists, fully replaces the AR-generated
+// #city-places section and its JSON-LD with the EN variant rendered
+// straight from this same data file — see that function's header comment
+// for why (not the generic MT/exact-map path other prose uses).
+const cityPlacesData = loadCityPlacesFile();
+const cityPlacesMap = cityPlacesBySlug(cityPlacesData);
 const contentTranslations = loadContentTranslations();
 for (const entry of Object.values(contentTranslations.entries || {})) {
   if (!entry?.source || !entry?.text) continue;
@@ -823,6 +844,60 @@ function applyEnglishContentOverrides($, relativePath) {
   });
 }
 
+// City-profiles EN lane (EVENTME-CITY-PROFILES-BRIEF.md). translateVisibleText()
+// already ran by the time this is called (see prepareEnglish below) and had
+// no way to tell that #city-places' Arabic text is real bilingual content
+// (data/city_places.json's own name_en/description_en/intro_en), not
+// template chrome — it will have left it Arabic (no dictionary entry) or,
+// worse, partially mistranslated it via pattern matching. Rather than patch
+// individual text nodes after the fact, this fully REPLACES the section
+// (and its JSON-LD) with the EN variant rendered straight from the same
+// data file — the same "regenerate wholesale from source data" idiom
+// applyEnglishContentOverrides() already uses for event hero/FAQ text
+// (rebuildEnglishEventFaq()). That guarantees zero leftover Arabic in the
+// section regardless of what translateVisibleText did to it, and ships
+// genuinely bilingual-authored copy instead of a machine translation —
+// per the task brief, this content is intentionally NOT routed through the
+// MT queue/CONTENT_PROSE_FIELDS registry that event prose uses.
+//
+// Identification is structural, not text-based (Gate Governance rule #2):
+// the city slug comes from the file path, and the JSON-LD blocks to replace
+// are found by their `@id` suffix (#tourist-destination / #places-itemlist-),
+// which survives translateJsonLd()'s pass untouched (it's a URL, not
+// translatable prose).
+function applyCityPlacesEnglishOverride($, relativePath) {
+  const match = relativePath.match(/^cities\/([a-z0-9-]+)\.html$/);
+  if (!match) return;
+  const cityEntry = cityPlacesMap.get(match[1]);
+  const section = $('#city-places');
+  if (!cityEntry) {
+    // Data file has no entry for this city — the AR build never emitted a
+    // section for it either (renderCityPlacesSection returns ''), so there
+    // is nothing here to replace. Guard anyway: a stale/incremental EN
+    // build must not carry forward a section that no longer has data.
+    section.remove();
+    return;
+  }
+  const enCanonical = `${siteUrl}/en/${relativePath}`;
+  const sectionHtml = renderCityPlacesSection(cityEntry, { lang: 'en' });
+  if (section.length) section.replaceWith(sectionHtml);
+
+  const jsonLdHtml = renderCityPlacesJsonLd(cityEntry, { lang: 'en', canonical: enCanonical });
+  const innerDoc = load(jsonLdHtml, { decodeEntities: false });
+  const newBlocks = innerDoc('script[type="application/ld+json"]').map((_, el) => innerDoc.html(el)).get();
+  $('script[type="application/ld+json"]').each((_, element) => {
+    let value;
+    try {
+      value = JSON.parse($(element).html() || '{}');
+    } catch {
+      return;
+    }
+    const id = String(value?.['@id'] || '');
+    if (id.includes('#tourist-destination') || id.includes('#places-itemlist-')) $(element).remove();
+  });
+  if (newBlocks.length) $('head').append(newBlocks.join(''));
+}
+
 function localizeEnglishFooter($) {
   const footer = $('.footer').first();
   if (!footer.length) return;
@@ -1186,6 +1261,7 @@ function prepareEnglish(html, relativePath) {
   translateStyleBlocks($);
   translateJsonLd($);
   applyEnglishContentOverrides($, relativePath);
+  applyCityPlacesEnglishOverride($, relativePath);
   localizeEnglishFooter($);
   rewriteEnglishAssetUrls($, relativePath);
   englishMeta($, relativePath);

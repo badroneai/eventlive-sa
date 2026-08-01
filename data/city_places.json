@@ -1,0 +1,146 @@
+{
+  "version": 1,
+  "updated_at": "2026-08-01T09:00:00Z",
+  "cities": [
+    {
+      "city_slug": "buraydah",
+      "intro_ar": "بريدة عاصمة القصيم تجمع بين أسواق التمور التاريخية والمتنزهات العائلية، وتستحق زيارة قائمة بذاتها ولو خلت من فعالية على الجدول.",
+      "intro_en": "Buraydah, the capital of Qassim, pairs a historic date market with family parks — worth a visit on its own even on a week with no event on the calendar.",
+      "places": [
+        {
+          "id": "buraydah-king-abdullah-park",
+          "name_ar": "منتزه الملك عبدالله",
+          "name_en": "King Abdullah Park",
+          "category": "nature",
+          "description_ar": "منتزه عام واسع وسط بريدة بمسطحات خضراء ومسارات مشي، ووجهة مسائية معتادة للعائلات في القصيم.",
+          "description_en": "A large public park in central Buraydah with green lawns and walking paths — a regular evening stop for Qassim families.",
+          "coordinates": { "lat": 26.3208, "lon": 43.9852 },
+          "source": {
+            "origin": "wikidata",
+            "source_id": "Q12485213",
+            "retrieved_at": "2026-07-30T09:00:00Z",
+            "license": "CC0"
+          },
+          "official_link": "",
+          "status": "draft",
+          "last_verified": "2026-07-30"
+        },
+        {
+          "id": "buraydah-central-dates-market",
+          "name_ar": "سوق بريدة المركزي للتمور",
+          "name_en": "Buraydah Central Dates Market",
+          "category": "food",
+          "description_ar": "أحد أكبر أسواق التمور في العالم، ينشط موسميًا مع الحصاد ويجمع تجار القصيم من مختلف الأصناف والأسعار.",
+          "description_en": "One of the largest date markets in the world, busiest during the seasonal harvest, bringing together Qassim traders across varieties and price tiers.",
+          "coordinates": { "lat": 26.3299, "lon": 43.9695 },
+          "source": {
+            "origin": "editorial",
+            "source_id": "qassim-chamber-dates-market",
+            "retrieved_at": "2026-07-30T09:00:00Z",
+            "license": "n/a"
+          },
+          "official_link": "https://www.qassimchamber.org.sa",
+          "status": "draft",
+          "last_verified": "2026-07-30"
+        },
+        {
+          "id": "buraydah-asafra-park",
+          "name_ar": "منتزه العصافرة",
+          "name_en": "Al Asafra Park",
+          "category": "entertainment",
+          "description_ar": "منتزه ترفيهي عائلي بألعاب أطفال ومساحات جلوس مفتوحة، من الوجهات المعتادة لعطلات نهاية الأسبوع في بريدة.",
+          "description_en": "A family entertainment park with kids' rides and open seating areas — a regular weekend spot in Buraydah.",
+          "coordinates": { "lat": 26.345, "lon": 43.98 },
+          "source": {
+            "origin": "osm",
+            "source_id": "way/842910337",
+            "retrieved_at": "2026-07-30T09:00:00Z",
+            "license": "ODbL"
+          },
+          "official_link": "",
+          "status": "draft",
+          "last_verified": "2026-07-30"
+        },
+        {
+          "id": "buraydah-heritage-museum",
+          "name_ar": "متحف بريدة التراثي",
+          "name_en": "Buraydah Heritage Museum",
+          "category": "culture",
+          "description_ar": "متحف صغير يعرض أدوات ونماذج من حياة القصيم القديمة، مدخل مناسب لفهم تاريخ المنطقة قبل زيارة أسواقها.",
+          "description_en": "A small museum displaying tools and models from old Qassim life — a good starting point before visiting the region's markets.",
+          "coordinates": { "lat": 26.3315, "lon": 43.975 },
+          "source": {
+            "origin": "moc",
+            "source_id": "moc-heritage-museums-qassim-buraydah-01",
+            "retrieved_at": "2026-07-30T09:00:00Z",
+            "license": "SDAIA-open"
+          },
+          "official_link": "",
+          "status": "draft",
+          "last_verified": "2026-07-30"
+        }
+      ]
+    },
+    {
+      "city_slug": "abha",
+      "intro_ar": "أبها عاصمة عسير، مدينة الجبال والمرتفعات الباردة، وتجمع قرية تراثية بحيرة وسط المدينة وأعلى قمة في السعودية على أطرافها.",
+      "intro_en": "Abha, the capital of Aseer, is a mountain city with a cool climate — a heritage village, a central lake, and Saudi Arabia's highest peak all within reach.",
+      "places": [
+        {
+          "id": "abha-al-muftaha-village",
+          "name_ar": "قرية المفتاحة الثقافية",
+          "name_en": "Al Muftaha Village",
+          "category": "culture",
+          "description_ar": "قرية فنية وثقافية في قلب أبها تضم استوديوهات ومعارض للفنانين المحليين، ومن أقدم الوجهات الثقافية المعروفة في عسير.",
+          "description_en": "An arts and culture village in central Abha with studios and galleries for local artists — one of Aseer's longest-established cultural destinations.",
+          "coordinates": { "lat": 18.228, "lon": 42.5015 },
+          "source": {
+            "origin": "wikidata",
+            "source_id": "Q5928572",
+            "retrieved_at": "2026-07-30T09:00:00Z",
+            "license": "CC0"
+          },
+          "official_link": "",
+          "status": "draft",
+          "last_verified": "2026-07-30"
+        },
+        {
+          "id": "abha-jabal-sawda",
+          "name_ar": "جبل السودة",
+          "name_en": "Jabal Sawda",
+          "category": "adventure",
+          "description_ar": "أعلى قمة في السعودية، وتلية بتلفريك يطل على غابات وسحب موسمية، ووجهة تسلق ومشي معروفة لهواة المرتفعات.",
+          "description_en": "Saudi Arabia's highest peak, reached by a cable car overlooking forests and seasonal cloud cover — a known hiking and climbing draw for altitude seekers.",
+          "coordinates": { "lat": 18.2639, "lon": 42.3614 },
+          "source": {
+            "origin": "wikidata",
+            "source_id": "Q2226835",
+            "retrieved_at": "2026-07-30T09:00:00Z",
+            "license": "CC0"
+          },
+          "official_link": "",
+          "status": "draft",
+          "last_verified": "2026-07-30"
+        },
+        {
+          "id": "abha-lake-park",
+          "name_ar": "منتزه بحيرة أبها",
+          "name_en": "Abha Lake Park",
+          "category": "nature",
+          "description_ar": "بحيرة اصطناعية وسط أبها بممرات مشي محيطة، ونقطة تجمع مسائية شائعة للعائلات خصوصًا في الصيف.",
+          "description_en": "An artificial lake in central Abha with surrounding walking paths — a popular evening gathering point for families, especially in summer.",
+          "coordinates": { "lat": 18.21, "lon": 42.51 },
+          "source": {
+            "origin": "editorial",
+            "source_id": "asir-development-authority-lake-park",
+            "retrieved_at": "2026-07-30T09:00:00Z",
+            "license": "n/a"
+          },
+          "official_link": "https://www.asir.gov.sa",
+          "status": "draft",
+          "last_verified": "2026-07-30"
+        }
+      ]
+    }
+  ]
+}
