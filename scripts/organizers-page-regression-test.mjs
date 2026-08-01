@@ -27,7 +27,13 @@ assert.match(html, /متى تكون EventLive مناسبة؟/, 'organizers page 
 assert.match(html, /معايير النشر والثقة/, 'organizers page must state publication trust rules');
 assert.match(html, /لا ننشر فعالية بلا مصدر اعتماد/, 'organizers page must preserve the trusted-source boundary');
 assert.match(html, /اتفاق البيانات قبل التفعيل/, 'organizers page must define the organizer data contract');
-assert.match(html, /حالة الجلب/, 'organizers page must link to source health for operational transparency');
+// WO-4 owner-isolation policy (scripts/owner-only-pages.mjs): source-health.html
+// is owner-only and must never be linked from a public page. The organizers
+// page is public, so it must NOT link source-health.html or surface its
+// "حالة الجلب" (source-health) label — the opposite of what this test used
+// to assert before the WO-4 ruling.
+assert.doesNotMatch(html, /source-health\.html/, 'organizers page must not link the owner-only source-health page (WO-4)');
+assert.doesNotMatch(html, /حالة الجلب/, 'organizers page must not surface the owner-only source-health label (WO-4)');
 assert.match(html, /guide-organizers-live-schedule\.html/, 'organizers page must link to the organizer guide');
 
 const jsonLd = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
