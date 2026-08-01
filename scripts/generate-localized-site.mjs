@@ -97,14 +97,48 @@ const runtimeLiteralMap = {
   'تصفية وترتيب (': 'Filter and sort (',
   'تعذر تحميل ملف الفعاليات. حاول تحديث الصفحة.': 'Could not load the events file. Refresh the page and try again.',
   '<div class="empty">لم نستطع تحميل كتالوج الفعاليات الآن.<br /><br /></div>': '<div class="empty">The event catalog could not be loaded right now.<br /><br /></div>',
+  '<div class="empty">لا توجد أولويات حالية.<br /><br /><a href="./">استعراض الفعاليات</a></div>': '<div class="empty">No current priorities.<br /><br /><a href="./">Browse events</a></div>',
+  '<div class="empty">لا توجد فعاليات قادمة في الكتالوج الآن.<br /><br /><a href="./">عودة للفعاليات</a></div>': '<div class="empty">No upcoming events in the catalog right now.<br /><br /><a href="./">Back to events</a></div>',
+  '<div class="empty">لا توجد فعاليات في هذا العرض.<br /><br /><a href="./">استعراض الفعاليات</a></div>': '<div class="empty">No events in this view.<br /><br /><a href="./">Browse events</a></div>',
   ' يوم ': ' days ',
   ' س': ' hr',
   ' س ': ' hr ',
   ' د': ' min',
+  // WO-EN-surface (PR #57 follow-up): scripts/duration-label.mjs's
+  // arabicHoursLabel/arabicDaysLabel/arabicMinutesLabel fix Arabic
+  // grammatical count-agreement (1 -> واحد(ة), 2 -> dual, 3-10 -> plural,
+  // 0/11+ -> singular-with-digit) and are embedded verbatim as browser JS
+  // via .toString() into liveRuntimeScript()/activationRuntimeScript()'s
+  // remaining() (every facet/activation/event page) and the screen-kiosk
+  // formatRemaining()'s day segment. The function BODY still runs
+  // client-side after translation — only the Arabic STRING LITERALS inside
+  // it need an English counterpart; the count comparisons (n===1, n===2,
+  // 3<=n<=10) are untouched by rewriteRuntimeLiterals() and keep selecting
+  // the right English form based on the same count. The 0/11+ branches
+  // return the SAME literals the old buggy code always used (' ساعة'/
+  // ' يوم '-adjacent), already covered above/below — only the new
+  // singular-with-واحد(ة) and dual literals, and the new plural suffixes,
+  // are net-new here.
+  'ساعة واحدة': 'one hour',
+  'ساعتان': 'two hours',
+  ' ساعات': ' hours',
+  'يوم واحد': 'one day',
+  'يومان': 'two days',
+  ' أيام': ' days',
+  ' يومًا': ' days',
+  'دقيقة واحدة': 'one minute',
+  'دقيقتان': 'two minutes',
+  ' دقائق': ' minutes',
+  ' دقيقة': ' minutes',
   'غير مكتملة': 'Incomplete',
   'بانتظار اعتماد الوقت': 'Awaiting time confirmation',
   'تبدأ بعد ': 'Starts in ',
   'نافذة البرنامج مفتوحة وتنتهي بعد ': 'Program window open · ends in ',
+  // WO: comma variant of the entry above — a different wording used by the
+  // shared liveRuntimeScript() countdown (script-literal fragment; the
+  // "،" version is also a translateText() PATTERN for complete DOM text
+  // nodes elsewhere, but that pattern layer never runs on <script> content).
+  'نافذة البرنامج مفتوحة، ينتهي بعد ': 'Program window open · ends in ',
   'تنتهي بعد ': 'Ends in ',
   'اكتملت الفعالية': 'Event completed',
   'X-WR-CALNAME:EventLive | سجل فعالياتي': 'X-WR-CALNAME:EventLive | My saved events',
@@ -120,6 +154,18 @@ const runtimeLiteralMap = {
   '">فتح</a><a href="': '">Open</a><a href="',
   '">تقويم</a><button type="button" data-save-event="': '">Calendar</a><button type="button" data-save-event="',
   '">إزالة</button></div>': '">Remove</button></div>',
+  // WO-EN-surface: today.html and my-events.html build their event-card
+  // action row via client-side string concatenation (see actionsHtml() /
+  // the analogous builder in each shell's own <script>, not the shared
+  // eventCard() used by server-rendered facet pages) — the fragment
+  // boundaries around each escapeHTML(...) call differ slightly per shell,
+  // so each concatenation seam is its own AST string Literal that must be
+  // mapped individually; the entries above cover events.html's own card
+  // builder, these cover the other two.
+  '">فتح الآن</a><a href="': '">Open now</a><a href="',
+  '">تقويم</a><a href="': '">Calendar</a><a href="',
+  '" target="_blank" rel="noopener noreferrer">الاتجاهات</a></div>': '" target="_blank" rel="noopener noreferrer">Directions</a></div>',
+  '" target="_blank" rel="noopener noreferrer">الاتجاهات</a><button type="button" data-remove="': '" target="_blank" rel="noopener noreferrer">Directions</a><button type="button" data-remove="',
   '<option value="">كل المدن</option>': '<option value="">All cities</option>',
   '<option value="">كل التصنيفات</option>': '<option value="">All categories</option>',
   '<option value="">كل الفئات</option>': '<option value="">All audiences</option>',
@@ -156,6 +202,22 @@ const runtimeLiteralMap = {
   'هجين': 'Hybrid',
   'حضوري': 'In person',
   'غنى ': 'Richness ',
+  'عن بعد': 'Remote',
+  'مجاني': 'Free',
+  'عام': 'General',
+  // WO: deliberately in runtimeLiteralMap, NOT the shared `exact` map — this
+  // is events.html's richness-badge branch describing an EVENT's recorded
+  // source LANGUAGE ("العربية"/"الإنجليزية" as data, e.g. "Language:
+  // Arabic"). 'العربية' is also the language-switch link's own hardcoded
+  // label (injectLanguageSwitcher(), appended to the DOM before
+  // translateVisibleText() runs) — that one must stay untranslated so
+  // visitors can identify the Arabic-language link, and it's the sweep
+  // test's one INTENTIONAL allowlist entry. rewriteRuntimeLiterals() checks
+  // runtimeLiteralMap before falling back to `exact`, so scoping the badge
+  // fix here (script-literal-only) translates the data badge without ever
+  // touching the switcher's DOM text node.
+  'العربية': 'Arabic',
+  'الإنجليزية': 'English',
   '" target="_blank" rel="noopener noreferrer">الاتجاهات</a>': '" target="_blank" rel="noopener noreferrer">Directions</a>',
   ' جلسة</span><span>': ' sessions</span><span>',
   ' مسارات</span><span>': ' tracks</span><span>',
@@ -240,11 +302,23 @@ function translateText(value = '', depth = 0) {
     .replaceAll(' بتوقيت الرياض', ' Riyadh time')
     .replace(/(\d{1,2}:\d{2})\s*ص(?![\u0600-\u06ff])/gu, '$1 AM')
     .replace(/(\d{1,2}:\d{2})\s*م(?![\u0600-\u06ff])/gu, '$1 PM');
+  // WO: EN-rendered DATE/TIME strings must never carry an Arabic comma «،».
+  // Patterns whose replacement composes a date/time value (durations,
+  // "through"/"until"/"from...to" ranges, "last updated/synced" timestamps)
+  // RETURN EARLY below and skip the final catch-all at the bottom of this
+  // function (which only strips «،» when the WHOLE string has no Arabic
+  // letters left — these composites still have Arabic letters in the
+  // untranslated chrome half, e.g. "حتى", so the catch-all never runs for
+  // them). Mark those entries with a trailing `true` (dateHandler) so the
+  // loop below normalizes «،»→"," on just their output — content strings
+  // that legitimately keep the Arabic comma (pending-MT prose) are untouched
+  // since they don't carry this flag. See b-meta "through 01/08/2026، 6:00
+  // PM" (PR #49 fixed the trust-tooltip case; this generalizes the class).
   const patterns = [
     [/^تصفح\s+(\d+)\s+فعالية$/u, 'Browse $1 events'],
     [/^خلال\s+(\d+)\s+أيام$/u, 'Within $1 days'],
-    [/^(\d+)\s+فعالية من\s+(\d+)\s+مصدرًا مسجلًا · آخر مزامنة:\s*(.+)$/u, '$1 events from $2 registered sources · Last synced: $3'],
-    [/^(.+)\s+·\s+حتى\s+(.+)$/u, '$1 · through $2'],
+    [/^(\d+)\s+فعالية من\s+(\d+)\s+مصدرًا مسجلًا · آخر مزامنة:\s*(.+)$/u, '$1 events from $2 registered sources · Last synced: $3', true],
+    [/^(.+)\s+·\s+حتى\s+(.+)$/u, '$1 · through $2', true],
     [/^يبدأ بعد\s+(.+)$/u, 'Starts in $1'],
     [/^ينتهي بعد\s+(.+)$/u, 'Ends in $1'],
     [/^نافذة البرنامج مفتوحة، ينتهي بعد\s+(.+)$/u, 'Program window is open · ends in $1'],
@@ -268,22 +342,29 @@ function translateText(value = '', depth = 0) {
     [/^المصدر:\s*(.+?)\s*·\s*آخر تحقق:\s*(.+)$/u, (_, source, ts) => `Source: ${exact[source] || source} · Last verified: ${ts.replaceAll('،', ',')}`],
     [/^المصدر:\s*(.+)$/u, 'Source: $1'],
     [/^المدينة:\s*(.+)$/u, 'City: $1'],
-    [/^آخر تحديث:\s*(.+)$/u, 'Last updated: $1'],
-    [/^آخر مزامنة:\s*(.+)$/u, 'Last synced: $1'],
+    [/^آخر تحديث:\s*(.+)$/u, 'Last updated: $1', true],
+    [/^آخر مزامنة:\s*(.+)$/u, 'Last synced: $1', true],
     [/^آخر تحقق:\s*(.+)$/u, (_, rest) => `Last verified: ${(exact[rest] || rest).replaceAll('،', ',')}`],
     [/^يعرض\s+(\d+)\s+من\s+(\d+)\s+نتيجة مطابقة، من أصل\s+(\d+)\s+فعالية في الكتالوج$/u, 'Showing $1 of $2 matching results from $3 catalog events'],
     [/^عرض المزيد\s*\((\d+)\)$/u, 'Show more ($1)'],
-    [/^مستمرة حتى\s+(.+)$/u, 'Ongoing until $1'],
-    [/^تبدأ\s+(\d{1,2}\s+\w+.*)$/u, 'Starts $1'],
-    [/^من\s+(\d[^ء-ي]*?)\s+إلى\s+(\d[^ء-ي]*)$/u, 'From $1 to $2'],
+    [/^مستمرة حتى\s+(.+)$/u, 'Ongoing until $1', true],
+    [/^تبدأ\s+(\d{1,2}\s+\w+.*)$/u, 'Starts $1', true],
+    [/^من\s+(\d[^ء-ي]*?)\s+إلى\s+(\d[^ء-ي]*)$/u, 'From $1 to $2', true],
     [/^الوقت:\s*(.+)$/u, (_, rest) => `Time: ${translateText(rest).trim()}`],
     [/^الفعالية:\s*(.+)$/u, 'Event: $1'],
     [/^([\d:T+.Z\-]+)\s+إلى\s+([\d:T+.Z\-]+)$/u, '$1 to $2'],
-    [/^تبدأ\s+(\d[^ء-ي]*?)\s+إلى\s+(\d[^ء-ي]*?)\s+لمدة\s+(\d+)\s+ساعات$/u, 'Starts $1 to $2, duration $3 hours'],
+    [/^تبدأ\s+(\d[^ء-ي]*?)\s+إلى\s+(\d[^ء-ي]*?)\s+لمدة\s+(\d+)\s+ساعات$/u, 'Starts $1 to $2, duration $3 hours', true],
     [/^المنظم:\s*(.+)$/u, 'Organizer: $1'],
     [/^الموقع:\s*(.+)$/u, 'Venue: $1'],
     [/^التاريخ:\s*(.+)$/u, (_, rest) => `Date: ${translateText(rest).trim()}`],
     [/^النافذة الزمنية:\s*(.+)$/u, (_, rest) => `Time window: ${translateText(rest).trim()}`],
+    // WO: distinct chrome label from "النافذة الزمنية:" above (event.html's
+    // progress strip) — "X - Y" hyphen range, not "من X إلى Y"; found via the
+    // Item A dist/en «،» sweep (b-meta-style leak: "Event window: 10/07/2026،
+    // 9:00 AM - 10/07/2026، 2:00 PM"). dateHandler: the captured range still
+    // carries Arabic letters at this point only via the prefix, which this
+    // pattern replaces, so the bottom-of-function catch-all never runs.
+    [/^نافذة الفعالية:\s*(.+)$/u, 'Event window: $1', true],
     [/^(\d{1,2} \w+ \d{4}) في (\d{1,2}:\d{2} [AP]M) إلى (\d{1,2} \w+ \d{4}) في (\d{1,2}:\d{2} [AP]M)$/u, '$1 at $2 to $3 at $4'],
     [/^(\d+)\s*جلسة$/u, '$1 sessions'],
     [/^(\d+)\s*جلسات$/u, '$1 sessions'],
@@ -311,10 +392,20 @@ function translateText(value = '', depth = 0) {
       return part;
     }).join(', ')}.`],
     [/^تعتمد EventLive على\s+(.+)\s+أو رابط دليل ظاهر في صفحة الفعالية، مع إبقاء رابط المصدر للمراجعة\.$/u, (_, source) => `EventLive relies on ${exact[source] || source} or a directory link visible on the event page, and keeps the source link for review.`],
-    [/^فتح\s+(.+)$/u, (_, target) => `Open ${exact[target] || target}`]
+    [/^فتح\s+(.+)$/u, (_, target) => `Open ${exact[target] || target}`],
+    // WO-EN-surface: the facet-page subscription heading is composed at
+    // build time as `تابع ${title}` (see renderFacetPage() in
+    // generate-site.mjs) — the combined string ("تابع فعاليات اليوم" /
+    // "... هذا الأسبوع" / "... هذا الشهر") never appears verbatim in any
+    // generator source, so a plain exact-map entry can never match it. A
+    // pattern that re-looks-up the already-translated title is required.
+    [/^تابع\s+(.+)$/u, (_, target) => `Follow ${exact[target] || target}`]
   ];
-  for (const [pattern, replacement] of patterns) {
-    if (pattern.test(text)) return `${leading}${text.replace(pattern, replacement)}${trailing}`;
+  for (const [pattern, replacement, dateHandler] of patterns) {
+    if (pattern.test(text)) {
+      const replaced = text.replace(pattern, replacement);
+      return `${leading}${dateHandler ? replaced.replaceAll('،', ',') : replaced}${trailing}`;
+    }
   }
   // Test for Arabic LETTERS, not the whole Arabic block: '،' itself lives in
   // that block, so the old check left "Thursday، 23 July" carrying an Arabic
@@ -956,7 +1047,67 @@ function translateCatalog() {
   fs.writeFileSync(path.join(enDir, 'events-catalog.json'), `${JSON.stringify({ ...envelope, locale: 'en-SA', events }, null, 2)}\n`);
 }
 
+// WO-EN-surface: today.html/my-events.html/screen.html render their event
+// grids client-side from these JSON feeds (fetch('./today.json') etc.) —
+// unlike the facet pages (this-week.html/this-month.html/today-events.html),
+// whose cards are server-rendered HTML already passed through
+// translateVisibleText(). A plain fs.copyFileSync ships the RAW Arabic feed
+// straight into dist/en/, so every card built from it (title, city_label,
+// venue, organizer, category, status_label, status note, event_kind_label)
+// leaked Arabic on the English page regardless of how complete the HTML-side
+// dictionary was — this is the root cause behind the "no Arabic chrome on
+// the EN today page" requirement failing on the client-rendered cards.
+//
+// Fields are split into two lookup strategies:
+//  - FEED_PATTERN_KEYS: short controlled-vocabulary/composed strings (a
+//    fixed status enum, or a prefix + duration like "يبدأ بعد 3 ساعات")
+//    that translateText()'s pattern layer already knows how to translate on
+//    the HTML side — safe to run through the same function here.
+//  - everything else: exact[] only (no pattern layer). This is
+//    deliberately conservative — free-form prose (title, summary, venue)
+//    must never be run through translateText()'s pattern-matching, which
+//    could misfire mid-sentence. An untranslated (pending-MT) value simply
+//    stays Arabic, same as the sitewide "content prose" allowance.
+// URLs, ids, slugs, and enum keys (status: 'live', event_kind: 'moment', …)
+// are ASCII already, so the "has Arabic letters" gate leaves them untouched
+// with no separate allowlist needed.
+const FEED_PATTERN_KEYS = new Set(['status_label', 'event_kind_label', 'note', 'priority_reason', 'approval_status_label', 'readiness_label', 'image_alt', 'action_label']);
+// venue/organizer feed values can carry an embedded "الموقع:"/"المنظم:"
+// label two different ways (see stripEmbeddedLabel()'s doc comment above):
+// (1) the raw Arabic value itself starts with the label, or (2) the raw
+// value has no label at all but the exact-map's *resolved* English
+// translation does (recorded that way by the content-translation cache
+// before MT ever ran — confirmed live: today.json's raw organizer is plain
+// "المعهد التقني", yet exact["المعهد التقني"] resolves to "المنظم:
+// Technical Institute"). Unlike stripEmbeddedLabel() (used for prose
+// sentences where an English "Venue:"/"Organizer:" prefix belongs in the
+// output), these feed fields are bare values with no label expected by the
+// client card template — strip whichever side carries it without
+// substituting an English one back in.
+const FEED_LABEL_STRIP_KEYS = new Set(['venue', 'venue_address', 'organizer', 'room', 'room_original']);
+const EMBEDDED_LABEL_PREFIX = /^(?:الموقع|المنظم):\s*/u;
+
+function translateFeedValue(value, key) {
+  if (typeof value !== 'string' || !/[ء-ي]/u.test(value)) return value;
+  if (FEED_PATTERN_KEYS.has(key)) return translateText(value);
+  if (FEED_LABEL_STRIP_KEYS.has(key)) {
+    const bareInput = value.replace(EMBEDDED_LABEL_PREFIX, '');
+    const mapped = exact[bareInput] || exact[value];
+    return (mapped || bareInput).replace(EMBEDDED_LABEL_PREFIX, '');
+  }
+  return exact[value] || value;
+}
+
+function translateFeedNode(node, key) {
+  if (Array.isArray(node)) return node.map((item) => translateFeedNode(item, key));
+  if (node && typeof node === 'object') {
+    return Object.fromEntries(Object.entries(node).map(([childKey, childValue]) => [childKey, translateFeedNode(childValue, childKey)]));
+  }
+  return translateFeedValue(node, key);
+}
+
 function copyTopLevelFeeds() {
+  const clientRenderedFeeds = new Set(['today.json', 'today-events.json', 'this-week.json', 'this-month.json', 'updates.json', 'live-status.json']);
   for (const name of ['today.json', 'today-events.json', 'this-week.json', 'this-month.json', 'updates.json', 'cities.json', 'categories.json', 'audiences.json', 'regions.json', 'live-status.json', 'saudi-events-insights.json']) {
     const source = path.join(distDir, name);
     if (!fs.existsSync(source)) continue;
@@ -968,6 +1119,11 @@ function copyTopLevelFeeds() {
         label: categoryDefinitionByKey(category.slug)?.label_en || exact[category.label] || category.label
       }));
       fs.writeFileSync(path.join(enDir, name), `${JSON.stringify(payload, null, 2)}\n`);
+      continue;
+    }
+    if (clientRenderedFeeds.has(name)) {
+      const payload = JSON.parse(fs.readFileSync(source, 'utf8'));
+      fs.writeFileSync(path.join(enDir, name), `${JSON.stringify(translateFeedNode(payload, null), null, 2)}\n`);
       continue;
     }
     fs.copyFileSync(source, path.join(enDir, name));
