@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import { LEGACY_REDIRECT_PAGES } from './legacy-redirect-pages.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -20,6 +21,10 @@ function extractJsonLd(html) {
 
 const htmlFiles = walkFiles(distDir)
   .filter((filePath) => filePath.endsWith('.html'))
+  // Legacy redirect stubs are transitional non-content pages (meta-refresh +
+  // canonical only) — full-page design invariants don't apply to them. Shared
+  // set: scripts/legacy-redirect-pages.mjs (owner-only-pages.mjs idiom).
+  .filter((filePath) => !LEGACY_REDIRECT_PAGES.has(path.relative(distDir, filePath).replace(/\\/g, '/')))
   .sort((a, b) => a.localeCompare(b));
 const ownerOnlyPages = new Set(['sources.html', 'methodology.html', 'trust.html']);
 

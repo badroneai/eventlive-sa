@@ -18,6 +18,7 @@ const categoryFallbackAlerts = [];
 const contentTranslator = createContentTranslator();
 const contentProseStats = { events: 0, translated: 0, leaks: 0, eventsWithLeaks: 0 };
 import { normalizeSaudiCity } from './city-utils.mjs';
+import { LEGACY_CATEGORY_REDIRECTS, LEGACY_REDIRECT_PAGES } from './legacy-redirect-pages.mjs';
 import { createContentTranslator } from './content-translation-cache.mjs';
 import { eventDateRangeLabel, isMultiDayEvent } from './event-date-range.mjs';
 import { classifyEventKind, eventKindLabel, getEventStatus } from './event-kind-utils.mjs';
@@ -2729,13 +2730,9 @@ function writeFacetPages(events) {
 // (plus scripts/sitemap-coverage-regression-test.mjs) keeps it out of the
 // sitemap and out of English localization (generate-localized-site.mjs only
 // ever processes sitemap URLs).
-const LEGACY_CATEGORY_REDIRECTS = new Map([
-  ['technology-training', 'technology-innovation']
-]);
-
-function legacyCategoryRedirectFiles() {
-  return new Set([...LEGACY_CATEGORY_REDIRECTS.keys()].map((slug) => `categories/${slug}.html`));
-}
+// LEGACY_CATEGORY_REDIRECTS + LEGACY_REDIRECT_PAGES now live in
+// scripts/legacy-redirect-pages.mjs so dist-walking quality gates share the
+// same single source of truth (owner-only-pages.mjs idiom).
 
 function writeLegacyCategoryRedirectPages(events) {
   const canonicalSlugs = new Set(events.map((event) => event.category_slug));
@@ -7117,7 +7114,7 @@ function sitemapImageXml(event = {}) {
 
 function writeSitemap(events = []) {
   const eventByPage = new Map(events.map((event) => [`events/${event.file_slug}.html`.normalize('NFC'), event]));
-  const legacyRedirectFiles = legacyCategoryRedirectFiles();
+  const legacyRedirectFiles = LEGACY_REDIRECT_PAGES;
   const sitemapPaths = [...new Set(htmlFiles(distDir)
     .map((file) => file.replace(/\\/g, '/').normalize('NFC'))
     .filter((file) => !OWNER_ONLY_PAGES.has(file))
