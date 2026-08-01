@@ -277,8 +277,92 @@ const runtimeLiteralMap = {
   // nodes rewriteRuntimeLiterals() sees; keep the exact spacing in sync
   // with multiDayRangeLabel() in all three shells.
   'من ': 'From ',
-  ' إلى ': ' to '
+  ' إلى ': ' to ',
+  // WO-EN-shell-completion: dist/event.html, dist/screen.html and the
+  // shared dist/print.html-dist/share.html-dist/signage.html activation
+  // shell (all committed, patched-in-place — never regenerated as HTML
+  // template literals) build their live status/progress strings via runtime
+  // string CONCATENATION, not one composite literal. Each concatenation
+  // seam below is its own AST string Literal, independent of the full-
+  // sentence translateText() patterns already covering these same phrases
+  // when they appear as a single DOM text node elsewhere.
+  'لم يحدد الوقت': 'Time not set',
+  // Distinct from the existing 'نافذة البرنامج مفتوحة، ينتهي بعد ' /
+  // 'نافذة البرنامج مفتوحة وتنتهي بعد ' entries above: this is the
+  // print/share/signage/screen kiosk shell's own wording variant (تنتهي,
+  // not ينتهي — a grammatical-gender inconsistency already present in the
+  // source, not introduced here).
+  'نافذة البرنامج مفتوحة، تنتهي بعد ': 'Program window open · ends in ',
+  'لا توجد جلسات تفصيلية منشورة لهذه الفعالية حتى الآن.': 'No detailed sessions have been published for this event yet.',
+  'جلسة': 'Session',
+  'تجري الآن: ': 'Happening now: ',
+  'تنتهي هذه الجلسة عند ': 'This session ends at ',
+  '، والقادمة: ': ', and next: ',
+  'تقدم الفعالية: ': 'Event progress: ',
+  'نافذة الفعالية: ': 'Event window: ',
+  'تحقق: ': 'Verified: ',
+  'الجاري الآن: ': 'Happening now: ',
+  ' | ينتهي عند ': ' | ends at ',
+  ' بعد ': ' in ',
+  'المتبقي ': 'Remaining ',
+  ' جلسة ظاهرة | ': ' sessions shown | ',
+  ' محفوظة': ' saved',
+  ' دقيقة</div>': ' min</div>',
+  '<span>إدارة: ': '<span>Managed by: ',
+  '<div class="label">المكان</div>': '<div class="label">Venue</div>',
+  '<div class="detail-status"><span>الحالة: ': '<div class="detail-status"><span>Status: ',
+  '</span><span>المدة: ': '</span><span>Duration: ',
+  ' دقيقة</span></div>': ' min</span></div>',
+  '<div class="detail-item"><strong>البداية</strong>': '<div class="detail-item"><strong>Start</strong>',
+  '<div class="detail-item"><strong>النهاية</strong>': '<div class="detail-item"><strong>End</strong>',
+  '<div class="detail-item"><strong>القاعة</strong>': '<div class="detail-item"><strong>Hall</strong>',
+  '<div class="detail-item"><strong>الجمهور</strong>': '<div class="detail-item"><strong>Audience</strong>',
+  '<div class="empty">لا توجد عناصر في هذا اليوم.</div>': '<div class="empty">No items on this day.</div>',
+  '<div class="empty">لا توجد جلسات مطابقة الآن.</div>': '<div class="empty">No matching sessions right now.</div>',
+  // dist/screen.html kiosk-only fragments (distinct runtime script from the
+  // print/share/signage activation shell above).
+  ' فقرات': ' segments',
+  ' فقرات | ': ' segments | ',
+  'المكان: ': 'Venue: ',
+  '<article class="queue-item"><strong>لا توجد فعاليات قادمة</strong><span>راجع الكتالوج أو أضف فعالية جديدة.</span></article>': '<article class="queue-item"><strong>No upcoming events</strong><span>Check the catalog or add a new event.</span></article>',
+  ' فعالية في المنصة | ': ' events on the platform | ',
+  ' برامج جارية | ': ' ongoing programs | ',
+  'آخر تحديث: ': 'Last updated: ',
+  'لم يتم العثور على الفعالية المطلوبة: ': 'Could not find the requested event: ',
+  // dist/index.html committed homepage shell (live-board carousel + inline
+  // search widget) — same "committed shell, patched not regenerated" class.
+  'حتى ': 'through ',
+  '">لا نتائج مباشرة — افتح البحث الكامل</a>': '">No instant results — open full search</a>',
+  // dist/organizer-intake.html mailto: body composition.
+  'طلب إضافة فعالية إلى EventLive: ': 'Request to add an event to EventLive: ',
+  'مرحباً EventLive،\n\nأرغب في إضافة/تفعيل فعالية وفق البيانات التالية:\n\n': 'Hello EventLive,\n\nI would like to add/activate an event with the following details:\n\n'
 };
+
+// WO-EN-shell-completion: a minimal literal-map translation pass for
+// <style> block CONTENT, mirroring runtimeLiteralMap/rewriteRuntimeLiterals'
+// structure but deliberately NOT parsing CSS (no tokenizer/AST) — the only
+// known offender is a handful of `content:"..."` pseudo-element loading
+// placeholders, so a plain string substitution over the raw CSS text is
+// sufficient and keeps this mechanism auditable. Every entry here must be
+// verified (via the sweep's <style> scan, see en-surface-sweep-regression-
+// -test.mjs) to be the FULL quoted string a `content:` declaration uses —
+// a partial-string substitution inside a CSS value is exactly the kind of
+// silent corruption this file's AST-based runtime-literal sibling avoids.
+const styleLiteralMap = {
+  'جاري تجهيز أقرب الفعاليات...': 'Preparing the nearest events...'
+};
+
+function translateStyleBlocks($) {
+  $('style').each((_, element) => {
+    const css = $(element).html() || '';
+    let translated = css;
+    for (const [source, target] of Object.entries(styleLiteralMap)) {
+      if (!translated.includes(source)) continue;
+      translated = translated.split(`"${source}"`).join(`"${target}"`).split(`'${source}'`).join(`'${target}'`);
+    }
+    if (translated !== css) $(element).html(translated);
+  });
+}
 
 function latinDigits(value = '') {
   return String(value).replace(/[٠-٩]/g, (digit) => arabicDigits.get(digit));
@@ -349,6 +433,14 @@ function translateText(value = '', depth = 0) {
     [/^تصفح\s+(\d+)\s+فعالية$/u, 'Browse $1 events'],
     [/^خلال\s+(\d+)\s+أيام$/u, 'Within $1 days'],
     [/^(\d+)\s+فعالية من\s+(\d+)\s+مصدرًا مسجلًا · آخر مزامنة:\s*(.+)$/u, '$1 events from $2 registered sources · Last synced: $3', true],
+    // WO-EN-shell-completion: the combined pattern above only ever sees the
+    // FULL string when the ' · ' split earlier in this function doesn't
+    // apply (depth >= 3) — the common case recurses into each half
+    // separately (dist/index.html's homepage counter: "$1 فعالية من $2
+    // مصدرًا مسجلًا" · "Last synced: ..."), and the first half alone never
+    // matched any standalone pattern, leaking on the homepage. Same fix
+    // shape as the "المصدر: ... · آخر تحقق: ..." / "آخر تحقق:" pair above.
+    [/^(\d+)\s+فعالية من\s+(\d+)\s+مصدرًا مسجلًا$/u, '$1 events from $2 registered sources'],
     [/^(.+)\s+·\s+حتى\s+(.+)$/u, '$1 · through $2', true],
     [/^يبدأ بعد\s+(.+)$/u, 'Starts in $1'],
     [/^ينتهي بعد\s+(.+)$/u, 'Ends in $1'],
@@ -387,6 +479,15 @@ function translateText(value = '', depth = 0) {
     [/^تبدأ\s+(\d[^ء-ي]*?)\s+إلى\s+(\d[^ء-ي]*?)\s+لمدة\s+(\d+)\s+ساعات$/u, 'Starts $1 to $2, duration $3 hours', true],
     [/^المنظم:\s*(.+)$/u, 'Organizer: $1'],
     [/^الموقع:\s*(.+)$/u, 'Venue: $1'],
+    // WO-EN-shell-completion: dist/event.html's operational-update log
+    // composes "{date} | {team} | تحقق: {source}" as ONE DOM text node (the
+    // ' | ' split above recurses into each half, so this third segment
+    // reaches translateText() on its own) — the runtimeLiteralMap 'تحقق: '
+    // entry only covers the <script>-literal path (rewriteRuntimeLiterals),
+    // never translateText()'s own pattern list, so DOM occurrences of this
+    // label needed their own pattern here.
+    [/^تحقق:\s*(.+)$/u, 'Verified: $1'],
+    [/^المكان:\s*(.+)$/u, 'Venue: $1'],
     [/^التاريخ:\s*(.+)$/u, (_, rest) => `Date: ${translateText(rest).trim()}`],
     [/^النافذة الزمنية:\s*(.+)$/u, (_, rest) => `Time window: ${translateText(rest).trim()}`],
     // WO: distinct chrome label from "النافذة الزمنية:" above (event.html's
@@ -430,7 +531,13 @@ function translateText(value = '', depth = 0) {
     // "... هذا الأسبوع" / "... هذا الشهر") never appears verbatim in any
     // generator source, so a plain exact-map entry can never match it. A
     // pattern that re-looks-up the already-translated title is required.
-    [/^تابع\s+(.+)$/u, (_, target) => `Follow ${exact[target] || target}`]
+    [/^تابع\s+(.+)$/u, (_, target) => `Follow ${exact[target] || target}`],
+    // WO-EN-shell-completion: bare "N من N" progress/pagination counters
+    // (e.g. dist/event.html's "2 من 4" session-alert index) — a general
+    // pattern instead of a one-off exact-map entry since this composition
+    // recurs wherever a build-time counter is rendered without its own
+    // translatable sentence.
+    [/^(\d+)\s+من\s+(\d+)$/u, '$1 of $2']
   ];
   for (const [pattern, replacement, dateHandler] of patterns) {
     if (pattern.test(text)) {
@@ -920,6 +1027,18 @@ function translateRuntimeScripts($, relativePath) {
       return localized;
     });
     replaceAssignedJson(/(const CATEGORY_AR\s*=\s*)(\{[\s\S]*?\})(;)/, (categories) => Object.fromEntries(Object.entries(categories).map(([key, value]) => [key, exact[value] || value])));
+    // WO-EN-shell-completion: dist/screen.html's committed kiosk shell bakes
+    // a build-time snapshot of today.json (see patchScreenPage() in
+    // generate-site.mjs) directly into `const fallbackToday = {...}` as an
+    // offline-first render fallback — the exact same "raw Arabic feed
+    // shipped verbatim into an English page" root cause PR #58 already
+    // fixed for the top-level today.json/today-events.json/etc. copies via
+    // translateFeedNode() (see copyTopLevelFeeds() below), just baked into
+    // an HTML shell instead of a standalone JSON file. Reuse the identical
+    // field-aware translator (still exact[]-only for free-form prose,
+    // pattern-layer only for the small controlled-vocabulary fields) so the
+    // "المنظم:"/"الموقع:" embedded-label leak class is repaired here too.
+    replaceAssignedJson(/(const fallbackToday\s*=\s*)(\{[\s\S]*?\})(;\s*\n\s*const controls\s*=)/, (data) => translateFeedNode(data, null));
     script = rewriteRuntimeLiterals(script, relativePath)
       .replaceAll("'ar-SA'", "'en-SA'")
       .replaceAll('"ar-SA"', '"en-SA"')
@@ -1064,6 +1183,7 @@ function prepareEnglish(html, relativePath) {
   translateVisibleText($);
   translateAttributes($);
   translateRuntimeScripts($, relativePath);
+  translateStyleBlocks($);
   translateJsonLd($);
   applyEnglishContentOverrides($, relativePath);
   localizeEnglishFooter($);

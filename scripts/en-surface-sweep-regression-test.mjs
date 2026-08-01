@@ -28,7 +28,20 @@ const root = process.cwd();
 const enDir = path.join(root, 'dist', 'en');
 const REPEAT_THRESHOLD = 15;
 const ARABIC_LETTERS = /[ء-ي]/u;
-const INTENTIONAL = new Set(['العربية']);
+// WO-EN-shell-completion: 'خبر'/'جده' are cityIntent() search-alias object
+// KEYS (dist/index.html's homepage search + dist/events.html's browse-page
+// search each embed their own short-form Khobar/Jeddah alias table) — they
+// must stay Arabic so a visitor typing the Arabic city name still matches,
+// exactly like 'العربية' must stay Arabic so the language-switcher link
+// still identifies itself. Confirmed via the AST script-literal sweep
+// (see the shell-literal hard-fail below): these are the only two alias
+// keys that currently surface as unmapped English-page literals — the
+// longer forms ('الخبر', 'الرياض', 'جدة', 'الدمام', 'الظهران') already
+// happen to collide with the sitewide city-name exact-map and get silently
+// (and separately, pre-existing, out of this task's scope) rewritten to
+// English by rewriteRuntimeLiterals(), which is a latent search-alias
+// correctness bug, not an EN-surface leak — nothing to allowlist there.
+const INTENTIONAL = new Set(['العربية', 'خبر', 'جده']);
 
 assert.ok(fs.existsSync(enDir), 'dist/en must exist — run the site build first');
 
@@ -59,7 +72,22 @@ assert.ok(fs.existsSync(enDir), 'dist/en must exist — run the site build first
 // for exactly the pages it's supposed to protect. Only add a dist/*.html
 // shell here after confirming (like these three) that it is PATCHED, not
 // fully rewritten, by the generator.
-const templateShellFiles = ['today.html', 'events.html', 'my-events.html'];
+//
+// WO-EN-shell-completion: event.html and screen.html verified the same
+// way — event.html has NO writer at all in generate-site.mjs (it is a
+// fixed, hand-authored live-schedule demo, never regenerated); screen.html
+// is read-modify-written by patchScreenPage() (fs.readFileSync + targeted
+// string/regex replacement + fs.writeFileSync — it only ever swaps in a
+// fresh `fallbackToday` data snapshot and a few controls bindings, never
+// rewrites its surrounding chrome markup). print.html, share.html,
+// signage.html, and organizer-intake.html were also checked here and
+// explicitly SKIPPED: all four are fully REGENERATED every build via
+// writeText() (organizer-intake.html has its own writer; print/share/
+// signage share activationPageShell()), so their chrome already appears
+// verbatim in scripts/generate-site.mjs's own template-literal source —
+// adding their dist output here would be exactly the circular case the
+// paragraph above warns against.
+const templateShellFiles = ['today.html', 'events.html', 'my-events.html', 'event.html', 'screen.html'];
 // PR #57 (Arabic duration count-agreement) embeds scripts/duration-label.mjs
 // verbatim into the client-side countdown via `.toString()` (see that
 // file's header) — its Arabic literals therefore never appear in
@@ -120,6 +148,26 @@ function extractScriptLiterals(html) {
   return literals;
 }
 
+// WO-EN-shell-completion: <style>-block CSS `content:"..."` pseudo-element
+// text is a THIRD blind spot alongside the DOM-text strip and the
+// <script>-content strip above — every text-based check in this file
+// deliberately excludes <style> too (html.replace(/<style.../, '')), so a
+// loading-placeholder string baked into a `::before { content: "..." }`
+// rule (dist/events.html's "جاري تجهيز أقرب الفعاليات...") was invisible to
+// every gate here until now. No CSS parsing — a plain regex over the raw
+// <style> text, matching generate-localized-site.mjs's own styleLiteralMap
+// mechanism (see translateStyleBlocks() there): literal, not tokenized.
+function extractStyleContentLiterals(html) {
+  const literals = new Set();
+  const styleBlocks = html.matchAll(/<style[^>]*>([\s\S]*?)<\/style>/g);
+  for (const [, css] of styleBlocks) {
+    for (const match of css.matchAll(/content\s*:\s*(["'])((?:\\.|(?!\1).)*)\1/g)) {
+      if (ARABIC_LETTERS.test(match[2])) literals.add(match[0]);
+    }
+  }
+  return literals;
+}
+
 function walkHtmlFiles(directory) {
   const files = [];
   for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
@@ -136,6 +184,7 @@ assert.ok(pages.length > 500, `suspiciously few English pages (${pages.length}) 
 const lineOccurrences = new Map();
 const attrOccurrences = new Map();
 const scriptLiteralOccurrences = new Map();
+const styleLiteralOccurrences = new Map();
 let pagesWithArabic = 0;
 
 for (const filePath of pages) {
@@ -163,6 +212,11 @@ for (const filePath of pages) {
     pageHasArabic = true;
     if (!scriptLiteralOccurrences.has(literal)) scriptLiteralOccurrences.set(literal, new Set());
     scriptLiteralOccurrences.get(literal).add(relative);
+  }
+  for (const literal of extractStyleContentLiterals(html)) {
+    pageHasArabic = true;
+    if (!styleLiteralOccurrences.has(literal)) styleLiteralOccurrences.set(literal, new Set());
+    styleLiteralOccurrences.get(literal).add(relative);
   }
   if (pageHasArabic) pagesWithArabic += 1;
 }
@@ -233,14 +287,44 @@ const durationModuleLiterals = (() => {
   visit(ast);
   return literals;
 })();
+// WO-EN-shell-completion: event.html and screen.html's own committed
+// <script> content is a second exact-literal source for this same
+// regression-guard idiom — their bulk chrome (unlike duration-label.mjs)
+// isn't a single reusable module, so extract Arabic string literals
+// directly from each shell's own file text (same extractScriptLiterals()
+// used for the live dist/en pages, applied here to the dist/*.html
+// SOURCE). Deliberately still NOT a broad templateSources.includes(text)
+// substring check for scripts (see the giant comment above this block) —
+// that already proved unsafe once (the "41 pre-existing gaps" episode) and
+// would ALSO now false-positive on the cityIntent() Arabic alias KEYS
+// ('خبر'/'جده', see the INTENTIONAL set) every time they legitimately
+// reappear verbatim in their own shell source.
+const shellScriptLiterals = new Set([...durationModuleLiterals]);
+for (const shellFile of templateShellFiles) {
+  const shellPath = path.join(root, 'dist', shellFile);
+  if (!fs.existsSync(shellPath)) continue;
+  for (const literal of extractScriptLiterals(fs.readFileSync(shellPath, 'utf8'))) {
+    if (INTENTIONAL.has(literal)) continue;
+    shellScriptLiterals.add(literal);
+  }
+}
 for (const [text, pageSet] of scriptLiteralOccurrences) {
-  if (durationModuleLiterals.has(text)) {
+  if (shellScriptLiterals.has(text)) {
     scriptTemplateHits.push({ text: text.slice(0, 120), pages: pageSet.size, example: [...pageSet][0] });
   } else if (pageSet.size >= REPEAT_THRESHOLD) {
     recurring.push({ text: text.slice(0, 120), pages: pageSet.size, example: [...pageSet][0], script: true });
   } else {
     contentLines += 1;
   }
+}
+// WO-EN-shell-completion: <style> content literals are ALWAYS chrome — a
+// `content:"..."` CSS declaration can never be per-event prose the way a
+// DOM text node or script literal sometimes is, so every occurrence
+// hard-fails unconditionally (no recurring-debt/content-line bucket, no
+// REPEAT_THRESHOLD carve-out — a single leaked page is already a defect).
+const styleTemplateHits = [];
+for (const [text, pageSet] of styleLiteralOccurrences) {
+  styleTemplateHits.push({ text: text.slice(0, 120), pages: pageSet.size, example: [...pageSet][0] });
 }
 recurring.sort((a, b) => b.pages - a.pages);
 
@@ -251,6 +335,7 @@ const report = {
   pages_with_arabic: pagesWithArabic,
   template_regressions: templateHits,
   script_template_regressions: scriptTemplateHits,
+  style_template_regressions: styleTemplateHits,
   recurring_surface_debt: recurring.slice(0, 50),
   recurring_total: recurring.length,
   content_prose_lines: contentLines
@@ -258,8 +343,8 @@ const report = {
 fs.mkdirSync(path.join(root, 'reports'), { recursive: true });
 fs.writeFileSync(path.join(root, 'reports', 'i18n-en-surface.json'), `${JSON.stringify(report, null, 2)}\n`);
 
-const allTemplateHits = [...templateHits, ...scriptTemplateHits];
-console.log(`EN_SURFACE_SWEEP pages=${pages.length} with_arabic=${pagesWithArabic} template_regressions=${allTemplateHits.length} (dom=${templateHits.length} script=${scriptTemplateHits.length}) recurring_debt=${recurring.length} content_lines=${contentLines}`);
+const allTemplateHits = [...templateHits, ...scriptTemplateHits, ...styleTemplateHits];
+console.log(`EN_SURFACE_SWEEP pages=${pages.length} with_arabic=${pagesWithArabic} template_regressions=${allTemplateHits.length} (dom=${templateHits.length} script=${scriptTemplateHits.length} style=${styleTemplateHits.length}) recurring_debt=${recurring.length} content_lines=${contentLines}`);
 for (const hit of recurring.slice(0, 5)) console.log(`- recurring (${hit.pages} pages${hit.script ? ', script' : ''}): ${hit.text}`);
 
 assert.equal(
