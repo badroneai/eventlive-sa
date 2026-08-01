@@ -101,6 +101,29 @@ async function inspect(page, route, width) {
         } : null;
       })(),
       homeFirstSection: rect('main .h-section'),
+      // WO-mobile-first-section-budget: nav chrome must be constant
+      // regardless of live-event count — see scripts/home-board-live.mjs
+      // and the matching @media (max-width:640px) block in brandCss
+      // (scripts/generate-site.mjs). Absent entirely when there are 0-1
+      // live cards (homeBoardLiveNav renders nothing to navigate between).
+      boardLiveNav: (() => {
+        const nav = document.querySelector('.board-live-nav');
+        if (!nav) return null;
+        const navRect = nav.getBoundingClientRect();
+        const countEl = document.querySelector('.board-live-count');
+        const countRect = countEl?.getBoundingClientRect();
+        return {
+          height: Math.round(navRect.height),
+          cardCount: document.querySelectorAll('.board-live-card').length,
+          countVisible: !!countEl && getComputedStyle(countEl).display !== 'none' && (countRect?.width || 0) > 0 && (countRect?.height || 0) > 0,
+          countCurrentText: document.querySelector('.board-live-count-current')?.textContent || '',
+          countTotalText: document.querySelector('.board-live-count-total')?.textContent || '',
+          dotsVisible: (() => {
+            const dots = document.querySelector('.board-live-dots');
+            return !!dots && getComputedStyle(dots).display !== 'none';
+          })()
+        };
+      })(),
       homeShelf: (() => {
         const shelf = document.querySelector('.card-row');
         const cards = [...document.querySelectorAll('.card-row .card')];
@@ -141,6 +164,19 @@ try {
     assert.equal(home.homeHeader?.taglineDisplay, 'none', `home header tagline must not crowd mobile navigation at ${width}px`);
     assert.ok(home.homeHeader?.menuWidth >= 44 && home.homeHeader?.menuHeight >= 44, `home menu must expose a clear touch target at ${width}px`);
     assert.ok(home.homeFirstSection?.top <= 700, `home must reveal event discovery within the first mobile viewport at ${width}px`);
+    // WO-mobile-first-section-budget class ban: board nav chrome must never
+    // grow with the live-event count. Only exercised when the catalog has
+    // >=2 live events at build time (homeBoardLiveNav renders nothing
+    // otherwise — there is nothing to navigate between).
+    if (home.boardLiveNav) {
+      assert.ok(home.boardLiveNav.height <= 64, `home live-board nav must stay compact (<=64px) regardless of live-event count (${home.boardLiveNav.cardCount} live) at ${width}px, got ${home.boardLiveNav.height}px`);
+      assert.equal(home.boardLiveNav.countVisible, true, `home live-board must show the compact "N/total" counter at ${width}px`);
+      assert.equal(home.boardLiveNav.dotsVisible, false, `home live-board must hide the per-event dot row at ${width}px (that is what made nav height catalog-state-sensitive)`);
+      assert.equal(home.boardLiveNav.countCurrentText, '1', `home live-board counter must start on the first card at ${width}px`);
+      assert.equal(home.boardLiveNav.countTotalText, String(home.boardLiveNav.cardCount), `home live-board counter total must match the live card count (${home.boardLiveNav.cardCount}) at ${width}px`);
+    } else {
+      console.log(`MOBILE_BOARD_NAV_NOTE width=${width} catalog had <2 live events at build time; board-live-nav is not rendered (nothing to navigate between).`);
+    }
     assert.ok(home.homeShelf?.cardCount > 1, `home must expose a useful event shelf at ${width}px`);
     assert.equal(home.homeShelf?.overflowX, 'auto', `home shelf must use native horizontal scrolling at ${width}px`);
     assert.ok(String(home.homeShelf?.scrollSnapType).includes('x'), `home shelf must snap horizontally at ${width}px`);
