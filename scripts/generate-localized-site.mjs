@@ -866,7 +866,10 @@ function applyEnglishContentOverrides($, relativePath) {
 // which survives translateJsonLd()'s pass untouched (it's a URL, not
 // translatable prose).
 function applyCityPlacesEnglishOverride($, relativePath) {
-  const match = relativePath.match(/^cities\/([a-z0-9-]+)\.html$/);
+  // City slugs mirror the event catalog's city slugs, which include Arabic
+  // filenames (the live site has cities/الافلاج.html) — the pattern must
+  // cover that space or those EN pages silently keep their Arabic section.
+  const match = relativePath.match(/^cities\/([a-z0-9؀-ۿ-]+)\.html$/u);
   if (!match) return;
   const cityEntry = cityPlacesMap.get(match[1]);
   const section = $('#city-places');

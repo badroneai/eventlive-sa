@@ -50,6 +50,10 @@ export const CITY_NAME_REGISTRY = Object.freeze([
   { en: 'Thuwal', ar: 'ثول', slug: 'thuwal' },
   { en: 'Qatif', ar: 'القطيف', slug: 'qatif' },
   { en: 'Diriyah', ar: 'الدرعية', slug: 'diriyah' },
+  // Al-Aflaj's live page slug is the Arabic filename (dist/cities/الافلاج.html)
+  // because its source events carry the Arabic city string — the registry
+  // mirrors site reality rather than inventing a latin slug with no page.
+  { en: 'Al-Aflaj', ar: 'الأفلاج', slug: 'الافلاج' },
   { en: 'Jubail', ar: 'الجبيل', slug: 'jubail' },
   { en: 'Nationwide', ar: 'على مستوى المملكة', slug: 'nationwide' },
   { en: 'Global', ar: 'دولي', slug: 'global' },
