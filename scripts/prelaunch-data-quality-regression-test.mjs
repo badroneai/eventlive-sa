@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { getEventStatus } from './event-kind-utils.mjs';
+import { containsInternalProse } from './internal-prose-utils.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -83,6 +84,16 @@ const checks = {
     Array.isArray(event.tags) ? event.tags.join(' ') : ''
   ].filter(Boolean).join(' '))),
   status_mismatches: events.filter((event) => event.status !== expectedStatus(event)),
+  // Internal publish-policy prose leak (see scripts/internal-prose-utils.mjs and
+  // scripts/heal-internal-prose-summaries.mjs): a collector once wrote its own reviewer
+  // rationale ("retained as source evidence, not auto-published") straight into a visitor
+  // summary. scripts/heal-internal-prose-summaries.mjs runs inside npm run sources:sync and
+  // heals ALL matching rows, ended ones included (this is a display-hygiene fix, not a
+  // rewrite of historical event data - see that script's header for the doctrine call), so
+  // this gate is scoped to non-ended events only, matching weak_upcoming_summaries and
+  // misleading_sports_audience above: it exists to catch a *new* leak reaching prelaunch,
+  // not to re-litigate the archival scope the heal step already covers.
+  internal_prose_summaries: events.filter((event) => event.status !== 'ended' && containsInternalProse(event.summary)),
   weak_meta_descriptions: walkFiles(distDir)
     .filter((filePath) => filePath.endsWith('.html'))
     .map(htmlMetaDescription)
@@ -146,7 +157,7 @@ fs.writeFileSync(reportMdPath, [
   '',
   '| Check | Failures |',
   '|---|---:|',
-  ...['bad_category_labels', 'bad_city_labels', 'external_images', 'missing_or_short_summaries', 'weak_upcoming_summaries', 'draft_like_public_records', 'draft_like_public_artifact_refs', 'missing_unexplained_sources', 'misleading_sports_audience', 'status_mismatches', 'weak_meta_descriptions']
+  ...['bad_category_labels', 'bad_city_labels', 'external_images', 'missing_or_short_summaries', 'weak_upcoming_summaries', 'draft_like_public_records', 'draft_like_public_artifact_refs', 'missing_unexplained_sources', 'misleading_sports_audience', 'status_mismatches', 'internal_prose_summaries', 'weak_meta_descriptions']
     .map((key) => `| ${key} | ${report.failure_counts[key] || 0} |`),
   ''
 ].join('\n'), 'utf8');

@@ -4171,8 +4171,11 @@ function extractMocCalendarPayload(payload = {}, source) {
       const imageUrl = event.image ? resolveUrl(event.image, source.url) : '';
       const category = mocCategory(event, durationDays);
       const publicationGate = mocPublicationGate(durationDays, source.candidate_gate);
+      // Visitor-facing copy only: durationDays > 45 is an internal signal (it drives
+      // review_status/publication_gate/tags below) and must never be explained to the
+      // visitor as prose. See scripts/internal-prose-utils.mjs for why.
       const summary = durationDays > 45
-        ? `برنامج أو مبادرة ثقافية رسمية من تقويم وزارة الثقافة. المدة طويلة لذلك تحفظ كدليل مصدر ولا تنشر تلقائياً كفعالية لحظية.`
+        ? `برنامج رسمي مستمر من تقويم وزارة الثقافة. التصنيف: ${event.categoryName || source.categories?.[0] || 'culture'}.`
         : `فعالية رسمية من تقويم وزارة الثقافة. التصنيف: ${event.categoryName || source.categories?.[0] || 'culture'}.`;
       return {
         title,
@@ -4189,6 +4192,12 @@ function extractMocCalendarPayload(payload = {}, source) {
         confidence: 'official',
         review_status: durationDays > 45 ? 'evidence-captured' : 'ready-for-review',
         publication_gate: publicationGate,
+        // The publish-policy rationale for long-duration records lives here, in the
+        // internal-only discovery_notes field (registered in
+        // data/source-candidates.schema.json, never copied onto the public catalog event
+        // by scripts/auto-publish-source-candidates.mjs's catalogEventFromCandidate), not
+        // in the visitor-facing summary above.
+        ...(durationDays > 45 ? { discovery_notes: 'moc-cultural-calendar, long-duration-program, evidence-only-not-auto-published' } : {}),
         tags: [event.categoryName, event.regionName, durationDays > 45 ? 'long-running cultural initiative' : 'cultural event'].filter(Boolean),
         richness_score: calculateRichnessScore({
           title,
