@@ -69,7 +69,13 @@ const checks = {
   weak_upcoming_summaries: events.filter((event) => event.status !== 'ended' && (!event.summary || event.summary.length < 100)),
   draft_like_public_records: events.filter(isDraftLikePublicRecord),
   missing_unexplained_sources: events.filter((event) => !(event.source_url || event.evidence_url) && !isAllowedMissingSource(event)),
-  misleading_sports_audience: events.filter((event) => (event.audiences || []).includes('sports') && !sportsSignal.test([
+  // Archival doctrine: ended events are left alone (never edited/re-tagged
+  // after the fact), so this check — like weak_upcoming_summaries above —
+  // is scoped to non-ended events only. Without this scope, stale audience
+  // tags from old ingestion on ENDED archive events (e.g. the Ithra
+  // archive's wrong 'sports' tag) would perpetually fail this gate even
+  // though the archival doctrine forbids touching that data.
+  misleading_sports_audience: events.filter((event) => event.status !== 'ended' && (event.audiences || []).includes('sports') && !sportsSignal.test([
     event.title,
     event.summary,
     event.category,
