@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T13:06:24.831Z",
+  "generated_at": "2026-08-01T14:37:14.131Z",
   "source_registry": "data/source_registry.json",
   "source_collection_report": "reports/source-collection-report.json",
   "totals": {
@@ -2256,7 +2256,7 @@
       "score": 63,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 66,
+      "last_extracted": 63,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",

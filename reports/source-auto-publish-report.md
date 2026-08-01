@@ -1,6 +1,6 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-01T13:03:48.547Z
+- published_at: 2026-08-01T14:34:41.166Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 566
@@ -187,11 +187,7 @@
 | candidate-ithra-events-tinkering-stations-20260801-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
 | candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260801-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
 | candidate-ithra-events-echoes-of-the-familiar-20260801-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
-| candidate-ithra-events-childrens-art-studio-20260801-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
-| candidate-ithra-events-games-hub-20260801-fb83124c | linked-existing | event-games-hub | already linked to catalog event |
 | candidate-ithra-events-energy-lab-20260801-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
-| candidate-ithra-events-spot-of-inspiration-20260801-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
-| candidate-ithra-events-childrens-museum-story-time-20260801-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-visit-saudi-seasons-buraydah-dates-carnival-20260801-24906534 | linked-existing | event-buraydah-dates-carnival | already linked to catalog event |
 | candidate-ithra-events-family-challenges-20260801-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
 | candidate-ithra-events-connect-and-create-20260801-d2514326 | linked-existing | event-connect-and-create | already linked to catalog event |
@@ -199,7 +195,11 @@
 | candidate-ithra-events-grand-art-space-20260801-e3acefbb | linked-existing | event-grand-art-space | already linked to catalog event |
 | candidate-ithra-events-emboss-printing-experience-20260801-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-ithra-events-all-things-hedgehogs-20260801-952dc936 | linked-existing | event-all-things-hedgehogs | already linked to catalog event |
+| candidate-ithra-events-childrens-art-studio-20260801-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
+| candidate-ithra-events-games-hub-20260801-fb83124c | linked-existing | event-games-hub | already linked to catalog event |
 | candidate-ithra-events-museum-story-time-20260801-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
+| candidate-ithra-events-spot-of-inspiration-20260801-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
+| candidate-ithra-events-childrens-museum-story-time-20260801-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-story-land-20260801-bb5dc01b | linked-existing | event-story-land | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-ضحكات-الرياض-20260802-4a38d19e | linked-existing | event-ضحكات-الرياض | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات-20260802-9bb9ff4b | linked-existing | event-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات | already linked to catalog event |

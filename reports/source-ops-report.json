@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T13:06:25.137Z",
+  "generated_at": "2026-08-01T14:37:14.450Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,9 +11,9 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-08-01T12:56:16.512Z",
+    "collected_at": "2026-08-01T14:27:10.011Z",
     "freshness": "fresh",
-    "discovered": 319,
+    "discovered": 316,
     "written": 566
   },
   "sources": {
@@ -1127,7 +1127,7 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 66,
+        "extracted": 63,
         "candidates": 72,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
@@ -1350,7 +1350,7 @@
         "discovery_notes": "",
         "duplicate_risk": true,
         "matched_catalog_event_id": "event-in-act-act-x",
-        "days_to_start": 70,
+        "days_to_start": 69,
         "is_past": false,
         "is_actionable": true,
         "action": "راجع التكرار مع الكتالوج قبل أي اعتماد.",

@@ -1,10 +1,11 @@
 {
   "schema": "eventlive.i18n-en-surface.v1",
-  "generated_at": "2026-08-01T13:10:00.522Z",
+  "generated_at": "2026-08-01T14:40:37.343Z",
   "pages_scanned": 1519,
-  "pages_with_arabic": 465,
+  "pages_with_arabic": 457,
   "template_regressions": [],
   "script_template_regressions": [],
+  "style_template_regressions": [],
   "recurring_surface_debt": [
     {
       "text": "../assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
@@ -14,5 +15,5 @@
     }
   ],
   "recurring_total": 1,
-  "content_prose_lines": 2258
+  "content_prose_lines": 2059
 }
