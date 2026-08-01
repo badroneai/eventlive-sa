@@ -30,6 +30,49 @@ LATIN = re.compile(r"[A-Za-z]")
 MIXED_RUN_AR_TARGET = re.compile(r"[A-Za-z][A-Za-z0-9 ,;:'’&/()\-]{39,}")
 MIXED_RUN_EN_TARGET = re.compile(r"[ء-ي][ء-ي0-9 ،؛:'’&/()\-]{39,}")
 
+# Identity-pass mirror (2026-08-01): cheap Python-side echo of
+# isIdentityTranslatable() in content-translation-cache.mjs. The authoritative
+# fix lives at queue-build time in that JS classifier — a genuinely
+# identity-translatable row should never reach reports/content-translation-
+# pending.json in the first place. This mirror is only a defensive net for a
+# stale/hand-edited pending report reaching this script directly: skip
+# spending an MT call on a row the classifier would resolve for free rather
+# than risk the exact corruption this fix targets (argos-mt turned
+# 'رابط المصدر: https://…' into 'محرر: https://…').
+URL_RUN = re.compile(r"https?://\S+", re.IGNORECASE)
+WWW_RUN = re.compile(r"\bwww\.\S+", re.IGNORECASE)
+EMAIL_RUN = re.compile(r"[\w.+-]+@[\w-]+\.[\w.-]+", re.IGNORECASE)
+PATH_TOKEN_RUN = re.compile(r"(^|\s)/\S+")
+DIGIT_RUN = re.compile(r"[0-9]+")
+PUNCT_SYMBOL_RUN = re.compile(r"[^\w\sء-ي]+", re.UNICODE)
+
+
+def detect_lang(text):
+    """Mirror of detectContentLang in content-translation-cache.mjs."""
+    arabic = len(ARABIC.findall(text))
+    latin = len(LATIN.findall(text))
+    if not arabic and not latin:
+        return None
+    return "ar" if arabic >= latin else "en"
+
+
+def is_identity_translatable(text, target_lang):
+    """Mirror of isIdentityTranslatable in content-translation-cache.mjs:
+    strip URLs/emails/paths/digits/punctuation and check whether nothing
+    translatable remains, or what remains is already the target language."""
+    if not text or not target_lang:
+        return False
+    stripped = URL_RUN.sub(" ", text)
+    stripped = WWW_RUN.sub(" ", stripped)
+    stripped = EMAIL_RUN.sub(" ", stripped)
+    stripped = PATH_TOKEN_RUN.sub(" ", stripped)
+    stripped = DIGIT_RUN.sub(" ", stripped)
+    stripped = PUNCT_SYMBOL_RUN.sub(" ", stripped)
+    stripped = " ".join(stripped.split())
+    if not stripped:
+        return True
+    return detect_lang(stripped) == target_lang
+
 
 def has_source_language_run(text, target_lang):
     """True when the text still carries a long copied-through run of the
@@ -211,7 +254,16 @@ def main():
     translated = {}
     glossary_hits = 0
     skipped = 0
+    identity_skipped = 0
     for row in pending:
+        # Defensive mirror of the JS identity-pass classifier (see module
+        # docstring above is_identity_translatable): a row that reaches here
+        # despite being identity-translatable should not spend an MT call —
+        # leave it pending so the next build's queue-time classifier resolves
+        # it for free instead of risking a corrupted machine translation.
+        if is_identity_translatable(row["source"], row["target_lang"]):
+            identity_skipped += 1
+            continue
         # Exact-value glossary hits (WO-10: venue/organizer entity names like
         # 'Qassim') bypass MT entirely — no installed model required, no risk
         # of the en->ar model mangling an embedded Arabic token.
@@ -241,7 +293,7 @@ def main():
     handled = [row for row in pending if row["key"] in translated]
     chunk_in.write_text(json.dumps(handled, ensure_ascii=False, indent=1), encoding="utf-8")
     chunk_out.write_text(json.dumps(translated, ensure_ascii=False, indent=1), encoding="utf-8")
-    log(f"OK translated={len(translated)} glossary_exact={glossary_hits} skipped={skipped} out={OUT_DIR}")
+    log(f"OK translated={len(translated)} glossary_exact={glossary_hits} identity_skipped={identity_skipped} skipped={skipped} out={OUT_DIR}")
 
 
 if __name__ == "__main__":

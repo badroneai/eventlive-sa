@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {
+  isBrandLikeSource,
   isMixedTranslationText,
   loadContentTranslations,
   normalizeContentText,
@@ -23,6 +24,7 @@ const method = methodFlag > -1 ? process.argv[methodFlag + 1] : 'llm-agent';
 const cache = loadContentTranslations();
 cache.entries = cache.entries || {};
 const problems = [];
+const brandPassThroughs = [];
 let merged = 0;
 let skipped = 0;
 
@@ -44,9 +46,26 @@ for (const name of fs.readdirSync(dir).filter((file) => /^chunk-\d+\.json$/.test
     }
     const hasTargetScript = item.target_lang === 'ar' ? /[ء-ي]/.test(translated) : /[A-Za-z]/.test(translated);
     if (!hasTargetScript) {
-      problems.push(`${name}: ${item.key} output lacks ${item.target_lang} script (${translated.slice(0, 60)})`);
-      skipped += 1;
-      continue;
+      // Latin-brand pass-through (2026-08-01): a translator/editor batch
+      // (method llm-agent) or an identity-pass row can legitimately answer
+      // "keep as-is" for a Latin-only brand/organizer mark ('MDLBEAST',
+      // 'DMG Events || KAOUN') — there is no target-script rendering because
+      // the Latin mark IS the correct rendering. Without this the merge guard
+      // (correctly, for machine argos-mt entries) rejects the row forever and
+      // it re-queues every sync. Restricted to output === source so a
+      // translator cannot smuggle a genuinely untranslated row through by
+      // accident, and to brand-like sources so ordinary English sentences
+      // still fail the guard as before. Machine (argos-mt) entries never get
+      // this bypass — the guard against copy-through MT output stays intact.
+      const isPassThroughMethod = method === 'llm-agent' || method === 'identity-pass';
+      const isUnchangedOutput = translated === normalizeContentText(item.source);
+      const isBrandLike = isBrandLikeSource(item.source);
+      if (!(isPassThroughMethod && isUnchangedOutput && isBrandLike)) {
+        problems.push(`${name}: ${item.key} output lacks ${item.target_lang} script (${translated.slice(0, 60)})`);
+        skipped += 1;
+        continue;
+      }
+      brandPassThroughs.push(`${name}: ${item.key} brand pass-through accepted — '${item.source}' kept as-is (method=${method}, no ${item.target_lang} script required)`);
     }
     if (method !== 'llm-agent' && isMixedTranslationText(translated, item.target_lang)) {
       problems.push(`${name}: ${item.key} output carries an untranslated source-language run (${translated.slice(0, 60)})`);
@@ -67,6 +86,10 @@ for (const name of fs.readdirSync(dir).filter((file) => /^chunk-\d+\.json$/.test
 
 saveContentTranslations(cache);
 console.log(`CONTENT_TRANSLATIONS_MERGED merged=${merged} skipped=${skipped} total_cache=${Object.keys(cache.entries).length}`);
+if (brandPassThroughs.length) {
+  console.log(`BRAND_PASS_THROUGH (${brandPassThroughs.length}):`);
+  for (const ruling of brandPassThroughs.slice(0, 25)) console.log(`- ${ruling}`);
+}
 if (problems.length) {
   console.log(`PROBLEMS (${problems.length}):`);
   for (const problem of problems.slice(0, 25)) console.log(`- ${problem}`);

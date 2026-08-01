@@ -31,6 +31,76 @@ export function contentTranslationKey(sourceLang, targetLang, text) {
     .digest('hex');
 }
 
+// Structural trap #1 (2026-08-01, PM audit): strings like
+// 'رابط المصدر: https://…' contain a long Latin-heavy URL, so
+// detectContentLang() (which counts letters) mislabels the WHOLE string's
+// source language from the URL's Latin noise rather than the actual Arabic
+// label — the string then queues for "translation" it does not need, and
+// every MT cycle either wastes effort or (observed in the cache: argos-mt
+// entries like 'رابط المصدر' -> 'محرر') actively corrupts the label. A
+// string is identity-translatable for a given target when, after stripping
+// URLs/emails/paths/digits/punctuation, what remains is empty (nothing left
+// to translate) or is already entirely in the target language (the label
+// matches the page it renders on and only the URL/identifier noise was
+// throwing off detection). This is a pure function of the string + target,
+// independent of catalog content, so it is safe to gate on structurally
+// (GATES-GOVERNANCE.md rule 2).
+const URL_PATTERN = /https?:\/\/[^\s]+/gi;
+const WWW_PATTERN = /\bwww\.[^\s]+/gi;
+const EMAIL_PATTERN = /[\w.+-]+@[\w-]+\.[\w.-]+/gi;
+const PATH_TOKEN_PATTERN = /(^|\s)\/[^\s]+/g;
+
+export function isIdentityTranslatable(value, targetLang) {
+  const text = normalizeContentText(value);
+  if (!text || !targetLang) return false;
+  const stripped = text
+    .replace(URL_PATTERN, ' ')
+    .replace(WWW_PATTERN, ' ')
+    .replace(EMAIL_PATTERN, ' ')
+    .replace(PATH_TOKEN_PATTERN, ' ')
+    .replace(/[0-9]+/g, ' ')
+    .replace(/[\p{P}\p{S}]+/gu, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  if (!stripped) return true;
+  return detectContentLang(stripped) === targetLang;
+}
+
+// Structural trap #2 (2026-08-01, PM audit): Latin-only brand/organizer
+// marks ('SAIF 2026', 'MDLBEAST', 'DMG Events || KAOUN') have no Arabic
+// rendering — the correct 'translation' IS the Latin mark, unchanged. The
+// merge guard in merge-content-translations.mjs rejects any output lacking
+// target script, so these re-queue every sync forever with no way to close
+// them. This heuristic identifies a source string as brand-like enough that
+// a translator/editor answering 'keep as-is' should be trusted: short, no
+// sentence-ending punctuation (an abbreviation dot like 'L.L.C.' is fine —
+// only a period-then-space, '!' or '?' disqualifies), no Arabic, and every
+// word either starts uppercase (Title Case / ALLCAPS marks) or the string
+// skews heavily uppercase overall. Deliberately conservative: normal
+// lowercase-led English sentences ('Please register now') fail both checks
+// and are correctly rejected — this must never become a way to silently drop
+// real translation work.
+const SENTENCE_BREAK_PATTERN = /[!?؟]|\.\s/;
+
+export function isBrandLikeSource(value) {
+  const text = normalizeContentText(value);
+  if (!text || text.length > 80) return false;
+  if (SENTENCE_BREAK_PATTERN.test(text)) return false;
+  if (/[ء-ي]/.test(text)) return false;
+  if (!/[A-Za-z]/.test(text)) return false;
+  const words = text
+    .split(/\s+/)
+    .map((token) => token.replace(/^[^A-Za-z0-9]+|[^A-Za-z0-9]+$/g, ''))
+    .filter((token) => /[A-Za-z0-9]/.test(token));
+  if (!words.length || words.length > 8) return false;
+  const letters = text.replace(/[^A-Za-z]/g, '');
+  if (!letters) return false;
+  const uppercase = (letters.match(/[A-Z]/g) || []).length;
+  const upperRatio = uppercase / letters.length;
+  const allCapitalized = words.every((word) => !/^[a-z]/.test(word));
+  return allCapitalized || upperRatio >= 0.3;
+}
+
 export function loadContentTranslations() {
   try {
     const parsed = JSON.parse(fs.readFileSync(cachePath, 'utf8'));
@@ -172,6 +242,28 @@ export function createContentTranslator() {
     const entry = cache.entries[key];
     if (entry && normalizeContentText(entry.text)) {
       return { text: entry.text, translated: true, needed: true, method: entry.method || 'unknown' };
+    }
+    // Identity-pass (2026-08-01): URL/identifier-dominant strings whose
+    // target rendering is the source text itself resolve instantly here and
+    // never touch the pending backlog. Only reached on a cache miss, so this
+    // never overwrites an existing (even a stale/wrong) cache entry — purely
+    // additive, matching every other prune/backfill path in this file. Gated
+    // by trackPending (same as the queueing it replaces, right below) so it
+    // stays exactly in scope with owner policy (2026-07-27): archival rows
+    // get no translation effort of any kind, identity-pass included — this
+    // fixes the class of string that WOULD have queued, not every row that
+    // happens to match the shape.
+    if (trackPending && isIdentityTranslatable(text, targetLang)) {
+      cache.entries[key] = {
+        source: text,
+        source_lang: sourceLang,
+        target_lang: targetLang,
+        text,
+        method: 'identity-pass',
+        translated_at: new Date().toISOString()
+      };
+      saveContentTranslations(cache);
+      return { text, translated: true, needed: true, method: 'identity-pass' };
     }
     // Owner policy (2026-07-27): translation effort targets current and
     // upcoming events only — archival rows never enter the pending backlog.
