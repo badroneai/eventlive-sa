@@ -1,16 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-08-01T10:13:31.293Z
-- pdf_crop_assignments: 61
+- generated_at: 2026-08-01T11:25:34.396Z
+- pdf_crop_assignments: 59
 - verified: 58
-- struck: 3
+- struck: 1
 - slots_seen_this_cycle: 63
 
 ## Struck (fell back to generated cover)
 
 - باتو (visit-saudi-summer-2026-p006-top-left.jpg) - identity-mismatch - page 6 top-left is now "بلاتو"
-- نسمة في الطائف (visit-saudi-summer-2026-p078-top-right.jpg) - slot-vacated - no dated card currently occupies page 78 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- منعً في للاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد (visit-saudi-summer-2026-p061-top-right.jpg) - slot-vacated - no dated card currently occupies page 61 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 

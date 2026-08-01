@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T10:13:31.293Z",
+  "generated_at": "2026-08-01T11:25:34.396Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -9,9 +9,9 @@
     "min_intersection": 2
   },
   "totals": {
-    "pdf_crop_assignments": 61,
+    "pdf_crop_assignments": 59,
     "verified": 58,
-    "struck": 3,
+    "struck": 1,
     "slots_seen_this_cycle": 63
   },
   "struck": [
@@ -23,20 +23,6 @@
       "detail": "page 6 top-left is now \"بلاتو\"",
       "matched_tokens": [],
       "ratio": 0
-    },
-    {
-      "id": "event-نسمة-في-الطائف",
-      "title": "نسمة في الطائف",
-      "file": "visit-saudi-summer-2026-p078-top-right.jpg",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 78 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    },
-    {
-      "id": "event-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-2",
-      "title": "منعً في للاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد",
-      "file": "visit-saudi-summer-2026-p061-top-right.jpg",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 61 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     }
   ],
   "verified": [

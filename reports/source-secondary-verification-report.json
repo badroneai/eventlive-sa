@@ -1,28 +1,20 @@
 {
   "schema": "eventlive.source-secondary-verification.v1",
-  "generated_at": "2026-08-01T10:13:29.443Z",
+  "generated_at": "2026-08-01T11:25:32.412Z",
   "source_candidates": "data/source_candidates.json",
   "source_ops_report": "reports/source-ops-report.json",
   "totals": {
     "candidates_seen": 566,
-    "candidates_considered": 38,
-    "promoted": 1,
-    "official_evidence_promoted": 1,
+    "candidates_considered": 34,
+    "promoted": 0,
+    "official_evidence_promoted": 0,
     "official_programs_promoted": 0,
     "official_catalog_matches_promoted": 0,
-    "still_blocked": 37
+    "still_blocked": 34
   },
-  "promoted": [
-    {
-      "candidate_id": "candidate-misk-hub-programs-application-deadline-virtual-work-experience-data-analysis-at-stc-20261215-cd0206e7",
-      "title": "Application deadline: Virtual Work Experience - Data analysis at STC",
-      "kind": "official-source-evidence",
-      "evidence": "https://hub.misk.org.sa/programs/skills/stc-virtual-work-experience-data-analysis-at-stc/",
-      "matched_catalog_event_id": ""
-    }
-  ],
+  "promoted": [],
   "still_blocked_by_reason": {
-    "not-secondary-verifiable": 8,
+    "not-secondary-verifiable": 5,
     "public-listing-needs-official-match": 3,
     "needs-secondary-official-proof": 26
   }

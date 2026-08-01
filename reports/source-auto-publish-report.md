@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-01T10:13:29.635Z
+- published_at: 2026-08-01T11:25:32.611Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 566
-- published_new: 10
-- linked_existing: 518
+- published_new: 6
+- linked_existing: 522
 - blocked_remaining: 38
 - duplicate_review_alerts: 8
 
@@ -29,10 +29,6 @@
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
-| candidate-future-skills-catalog-machine-learning-التعلم-الالي-20260809-13b057e2 | published | event-machine-learning-التعلم-الالي | ⁠Machine Learning - التعلم الالي |
-| candidate-future-skills-catalog-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل-20260809-ae5af682 | published | event-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل | GenAI for Data Analysis and Decision Support - الذكاء الاصطناعي التوليدي لتحليل البيانات ودعم اتخاذ القرار |
-| candidate-future-skills-catalog-comptia-cloud-20260809-8946f510 | published | event-comptia-cloud | ⁠CompTIA Cloud+ |
-| candidate-misk-hub-programs-application-deadline-virtual-work-experience-data-analysis-at-stc-20261215-cd0206e7 | published | event-application-deadline-virtual-work-experience-data-analysis-at-stc | Application deadline: Virtual Work Experience - Data analysis at STC |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -191,20 +187,20 @@
 | candidate-ithra-events-tinkering-stations-20260801-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
 | candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260801-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
 | candidate-ithra-events-echoes-of-the-familiar-20260801-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
-| candidate-ithra-events-story-land-20260801-bb5dc01b | linked-existing | event-story-land | already linked to catalog event |
-| candidate-ithra-events-childrens-art-studio-20260801-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
-| candidate-ithra-events-spot-of-inspiration-20260801-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
-| candidate-ithra-events-childrens-museum-story-time-20260801-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-emboss-printing-experience-20260801-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-ithra-events-family-challenges-20260801-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
+| candidate-ithra-events-childrens-art-studio-20260801-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
 | candidate-ithra-events-games-hub-20260801-fb83124c | linked-existing | event-games-hub | already linked to catalog event |
 | candidate-ithra-events-energy-lab-20260801-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
+| candidate-ithra-events-spot-of-inspiration-20260801-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
+| candidate-ithra-events-childrens-museum-story-time-20260801-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-visit-saudi-seasons-buraydah-dates-carnival-20260801-24906534 | linked-existing | event-buraydah-dates-carnival | already linked to catalog event |
 | candidate-ithra-events-connect-and-create-20260801-d2514326 | linked-existing | event-connect-and-create | already linked to catalog event |
 | candidate-ithra-events-workshop-at-the-library-20260801-7db9eb13 | linked-existing | event-workshop-at-the-library | already linked to catalog event |
 | candidate-ithra-events-grand-art-space-20260801-e3acefbb | linked-existing | event-grand-art-space | already linked to catalog event |
 | candidate-ithra-events-all-things-hedgehogs-20260801-952dc936 | linked-existing | event-all-things-hedgehogs | already linked to catalog event |
 | candidate-ithra-events-museum-story-time-20260801-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
+| candidate-ithra-events-story-land-20260801-bb5dc01b | linked-existing | event-story-land | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-ضحكات-الرياض-20260802-4a38d19e | linked-existing | event-ضحكات-الرياض | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات-20260802-9bb9ff4b | linked-existing | event-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-طويق-للقطاع-الأمني-البنية-التحتية-20260802-2aaabcfd | linked-existing | event-معسكر-طويق-للقطاع-الأمني-البنية-التحتية | already linked to catalog event |
@@ -251,6 +247,9 @@
 | candidate-ithra-events-unbox-your-story-20260808-5085a6f0 | linked-existing | event-unbox-your-story | already linked to catalog event |
 | candidate-ithra-events-nu-power-20260808-653464ac | linked-existing | event-nu-power | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260809-91d14378 | linked-existing | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-2 | already linked to catalog event |
+| candidate-future-skills-catalog-machine-learning-التعلم-الالي-20260809-13b057e2 | linked-existing | event-machine-learning-التعلم-الالي | already linked to catalog event |
+| candidate-future-skills-catalog-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل-20260809-ae5af682 | linked-existing | event-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل | already linked to catalog event |
+| candidate-future-skills-catalog-comptia-cloud-20260809-8946f510 | linked-existing | event-comptia-cloud | already linked to catalog event |
 | candidate-sfda-events-الأجهزة-الطبية-الرقمية-التوعية-بالمتطلبات-التنظيمية-وأفضل-الممارسات-20260810-2a6ec3b3 | linked-existing | event-الأجهزة-الطبية-الرقمية-التوعية-بالمتطلبات-التنظيمية-وأفضل-الممارسات | already linked to catalog event |
 | candidate-ithra-events-platforms-manager-skills-20260810-62ec512d | linked-existing | event-platforms-manager-skills | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-august-20260810-f9fb1ca0 | linked-existing | event-hayy-makers-2 | already linked to catalog event |
@@ -479,6 +478,7 @@
 | candidate-riyadh-city-events-cphi-middle-east-20261214-48db5517 | linked-existing | event-cphi-middle-east | already linked to catalog event |
 | candidate-riyadh-city-events-saudi-makes-future-ai-expo-20261214-72a6b408 | linked-existing | event-saudi-makes-future-ai-expo | already linked to catalog event |
 | candidate-ithra-events-content-creation-for-conversational-podcasts-20261214-80ecfed8 | linked-existing | event-content-creation-for-conversational-podcasts | already linked to catalog event |
+| candidate-misk-hub-programs-application-deadline-virtual-work-experience-data-analysis-at-stc-20261215-cd0206e7 | linked-existing | event-application-deadline-virtual-work-experience-data-analysis-at-stc | already linked to catalog event |
 | candidate-experience-alula-events-winter-at-tantora-20261217-fcb864a2 | linked-existing | event-winter-at-tantora | already linked to catalog event |
 | candidate-ithra-events-the-art-of-writing-a-novel-20261217-24b700fc | linked-existing | event-the-art-of-writing-a-novel | already linked to catalog event |
 | candidate-rfecc-whats-on-china-homelife-saudi-arabia-2026-20261220-f2ff78ec | linked-existing | event-china-homelife-saudi-arabia-2026 | already linked to catalog event |

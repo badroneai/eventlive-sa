@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-08-01T10:13:29.635Z",
+  "published_at": "2026-08-01T11:25:32.611Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -7,8 +7,8 @@
   "candidates_seen": 566,
   "totals": {
     "candidates_seen": 566,
-    "published": 10,
-    "linked_existing": 518,
+    "published": 6,
+    "linked_existing": 522,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
@@ -193,26 +193,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
-    },
-    {
-      "candidate_id": "candidate-future-skills-catalog-machine-learning-التعلم-الالي-20260809-13b057e2",
-      "event_id": "event-machine-learning-التعلم-الالي",
-      "title": "⁠Machine Learning - التعلم الالي"
-    },
-    {
-      "candidate_id": "candidate-future-skills-catalog-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل-20260809-ae5af682",
-      "event_id": "event-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل",
-      "title": "GenAI for Data Analysis and Decision Support - الذكاء الاصطناعي التوليدي لتحليل البيانات ودعم اتخاذ القرار"
-    },
-    {
-      "candidate_id": "candidate-future-skills-catalog-comptia-cloud-20260809-8946f510",
-      "event_id": "event-comptia-cloud",
-      "title": "⁠CompTIA Cloud+"
-    },
-    {
-      "candidate_id": "candidate-misk-hub-programs-application-deadline-virtual-work-experience-data-analysis-at-stc-20261215-cd0206e7",
-      "event_id": "event-application-deadline-virtual-work-experience-data-analysis-at-stc",
-      "title": "Application deadline: Virtual Work Experience - Data analysis at STC"
     }
   ],
   "linked_existing": [
@@ -1165,30 +1145,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-story-land-20260801-bb5dc01b",
-      "event_id": "event-story-land",
-      "title": "Story Land",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260801-2bf92d17",
-      "event_id": "event-childrens-art-studio",
-      "title": "Children's Art Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260801-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260801-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260801-2671d1ce",
       "event_id": "event-emboss-printing-experience",
       "title": "Emboss Printing Experience",
@@ -1201,6 +1157,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260801-2bf92d17",
+      "event_id": "event-childrens-art-studio",
+      "title": "Children's Art Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-games-hub-20260801-fb83124c",
       "event_id": "event-games-hub",
       "title": "Games Hub",
@@ -1210,6 +1172,18 @@
       "candidate_id": "candidate-ithra-events-energy-lab-20260801-60155d60",
       "event_id": "event-energy-lab",
       "title": "Energy Lab",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260801-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260801-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -1246,6 +1220,12 @@
       "candidate_id": "candidate-ithra-events-museum-story-time-20260801-1104734c",
       "event_id": "event-museum-story-time",
       "title": "Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-story-land-20260801-bb5dc01b",
+      "event_id": "event-story-land",
+      "title": "Story Land",
       "reason": "already linked to catalog event"
     },
     {
@@ -1522,6 +1502,24 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260809-91d14378",
       "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-2",
       "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-machine-learning-التعلم-الالي-20260809-13b057e2",
+      "event_id": "event-machine-learning-التعلم-الالي",
+      "title": "⁠Machine Learning - التعلم الالي",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل-20260809-ae5af682",
+      "event_id": "event-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل",
+      "title": "GenAI for Data Analysis and Decision Support - الذكاء الاصطناعي التوليدي لتحليل البيانات ودعم اتخاذ القرار",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-comptia-cloud-20260809-8946f510",
+      "event_id": "event-comptia-cloud",
+      "title": "⁠CompTIA Cloud+",
       "reason": "already linked to catalog event"
     },
     {
@@ -2890,6 +2888,12 @@
       "candidate_id": "candidate-ithra-events-content-creation-for-conversational-podcasts-20261214-80ecfed8",
       "event_id": "event-content-creation-for-conversational-podcasts",
       "title": "Content Creation for Conversational Podcasts",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-misk-hub-programs-application-deadline-virtual-work-experience-data-analysis-at-stc-20261215-cd0206e7",
+      "event_id": "event-application-deadline-virtual-work-experience-data-analysis-at-stc",
+      "title": "Application deadline: Virtual Work Experience - Data analysis at STC",
       "reason": "already linked to catalog event"
     },
     {

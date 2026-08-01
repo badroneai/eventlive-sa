@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T10:16:01.485Z",
+  "generated_at": "2026-08-01T11:27:49.138Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-08-01T10:05:46.187Z",
+    "collected_at": "2026-08-01T11:17:55.874Z",
     "freshness": "fresh",
-    "discovered": 322,
+    "discovered": 318,
     "written": 566
   },
   "sources": {
     "total": 88,
-    "attempted": 22,
-    "due": 22,
-    "deferred": 26,
+    "attempted": 20,
+    "due": 20,
+    "deferred": 28,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 25,
+    "registry_collection_coverage_pct": 23,
     "scheduled_runnable_coverage_pct": 100,
-    "healthy": 20,
-    "zero_yield": 2,
-    "errors": 0,
-    "cadence_deferred": 26,
+    "healthy": 19,
+    "zero_yield": 0,
+    "errors": 1,
+    "cadence_deferred": 28,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -679,13 +679,16 @@
         "id": "riyadh-city-events",
         "name": "Riyadh City Events",
         "priority": 51,
-        "status": "zero-yield",
+        "status": "deferred",
+        "historical_status": "probe-blocked",
+        "cadence_reason": "error-cooldown",
+        "next_due_at": "2026-08-01T16:05:46.187Z",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "last_attempted_at": "2026-08-01T10:05:46.187Z",
         "extracted": 0,
         "candidates": 79,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "next_action": "مؤجل حتى 2026-08-01T16:05:46.187Z وفق الجدولة التكيفية."
       },
       {
         "id": "monshaat-academy-programs",
@@ -778,13 +781,13 @@
         "id": "asharqia-chamber-events",
         "name": "Asharqia Chamber Events",
         "priority": 59,
-        "status": "healthy",
+        "status": "collection-error",
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 2,
+        "extracted": 0,
         "candidates": 2,
-        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
+        "next_action": "fetch failed; page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentloaded\"\n"
       },
       {
         "id": "qassim-chamber-events",
@@ -937,13 +940,16 @@
         "id": "najran-municipality-summer-events",
         "name": "Najran Municipality Summer Events",
         "priority": 71,
-        "status": "zero-yield",
+        "status": "deferred",
+        "historical_status": "zero-yield",
+        "cadence_reason": "zero-yield-cooldown",
+        "next_due_at": "2026-08-02T10:05:46.187Z",
         "error_streak": 0,
-        "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "zero_yield_streak": 7,
+        "last_attempted_at": "2026-08-01T10:05:46.187Z",
         "extracted": 0,
         "candidates": 1,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "next_action": "مؤجل حتى 2026-08-02T10:05:46.187Z وفق الجدولة التكيفية."
       },
       {
         "id": "platinumlist-saudi-city-network",
@@ -1118,7 +1124,7 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 67,
+        "extracted": 65,
         "candidates": 72,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
@@ -1661,7 +1667,7 @@
         "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 36,
+        "days_to_start": 35,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",
