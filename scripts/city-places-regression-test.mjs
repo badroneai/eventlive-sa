@@ -93,7 +93,12 @@ for (const [slug, cityEntry] of cityPlacesMap) {
     `dist/en/cities/${slug}.html places section must contain zero Arabic chrome/content — found Arabic in: ${sectionText.slice(0, 200)}`
   );
   for (const place of cityEntry.places) {
-    assert.ok(sectionHtml.includes(place.name_en), `dist/en/cities/${slug}.html places section must show "${place.name_en}"`);
+    // The renderer HTML-escapes names (e.g. "&" -> "&amp;"), so the expected
+    // string must be escaped the same way — same idiom as escapeHtmlForTest
+    // in event-agenda-ui-regression-test.mjs.
+    const escapedName = String(place.name_en)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    assert.ok(sectionHtml.includes(escapedName), `dist/en/cities/${slug}.html places section must show "${place.name_en}"`);
   }
 
   const enJsonLd = extractJsonLd(enHtml);
