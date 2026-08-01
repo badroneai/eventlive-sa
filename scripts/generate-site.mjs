@@ -19,6 +19,9 @@ const contentTranslator = createContentTranslator();
 const contentProseStats = { events: 0, translated: 0, leaks: 0, eventsWithLeaks: 0 };
 const coverEnStats = { generated: 0, written: 0, arFallback: 0 };
 import { normalizeSaudiCity } from './city-utils.mjs';
+import { CITY_NAME_REGISTRY } from './city-name-registry.mjs';
+import { cityPlacesBySlug, loadCityPlacesFile } from './city-places-data.mjs';
+import { renderCityPlacesJsonLd, renderCityPlacesSection } from './city-places-render.mjs';
 import { LEGACY_CATEGORY_REDIRECTS, LEGACY_REDIRECT_PAGES } from './legacy-redirect-pages.mjs';
 import { createContentTranslator } from './content-translation-cache.mjs';
 import { ARABIC_DAYS_LABEL_JS, DURATION_LABEL_RUNTIME_JS } from './duration-label.mjs';
@@ -114,6 +117,16 @@ fs.mkdirSync(categoriesDir, { recursive: true });
 fs.mkdirSync(audiencesDir, { recursive: true });
 fs.mkdirSync(feedsDir, { recursive: true });
 fs.mkdirSync(coversDir, { recursive: true });
+
+// City-profiles destination layer (EVENTME-CITY-PROFILES-BRIEF.md). Loaded
+// once here; writeFacetPages() looks up each city page's slug in this map
+// and only calls renderCityPlacesSection()/renderCityPlacesJsonLd() when an
+// entry exists — cities absent from the file render exactly as before (no
+// empty section, no extra JSON-LD). scripts/validate-city-places.mjs owns
+// schema conformance for this file; this build step trusts it (npm run
+// validate runs first in every chain that also builds).
+const cityPlacesData = loadCityPlacesFile();
+const cityPlacesMap = cityPlacesBySlug(cityPlacesData);
 
 const brandVisual = '<span class="brand-word" aria-label="EventLive"><span class="brand-sr">EventLive</span><span aria-hidden="true">EventL<span class="live-i">ı</span>ve</span></span>';
 const brandCss = `<style id="eventlive-brand-pulse">
@@ -291,6 +304,7 @@ const pageCss = `<style>
 :root{--bg:#f7f5ef;--ink:#10231d;--muted:#66756f;--line:#dfe6df;--card:#fffdf8;--green:#0d6b52;--green-dark:#07231c;--live:#c4212b;--gold:#b88a2a}
 *{box-sizing:border-box}body{margin:0;font-family:"IBM Plex Sans Arabic",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.75}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(247,245,239,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:700}.brand-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:8px;background:var(--green-dark);color:#fff;font-weight:700}.nav-links{display:flex;gap:18px;color:var(--muted);font-weight:700;font-size:.94rem}.mobile-site-menu{display:none;position:relative}.mobile-site-menu>summary{list-style:none;display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);font-size:1.25rem;cursor:pointer}.mobile-site-menu>summary::-webkit-details-marker{display:none}.mobile-site-menu nav{position:fixed;top:64px;inset-inline:11px;z-index:40;display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:10px;border:1px solid var(--line);border-radius:10px;background:#fff;box-shadow:0 18px 40px rgba(16,35,29,.16)}.mobile-site-menu nav a{display:flex;align-items:center;min-height:44px;padding:8px 10px;border-radius:8px;background:#f7f5ef;font-weight:700}.cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;border:0;border-radius:8px;background:var(--green);color:#fff;padding:10px 14px;font:inherit;font-weight:700;cursor:pointer}.cta.is-saved{background:var(--green-dark)}.cta-status{flex-basis:100%;margin:0;color:var(--muted);font-size:.88rem}.hero{padding:54px 0 30px;background:linear-gradient(135deg,var(--green-dark),#0d6b52);color:#fff}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:#f7df9a;font-weight:700}.live-dot{width:9px;height:9px;border-radius:999px;background:var(--live);box-shadow:0 0 0 4px rgba(229,72,77,.18)}h1{font-size:clamp(2rem,5vw,4.4rem);line-height:1.12;margin:14px 0 12px;letter-spacing:0}.lead{font-size:1.08rem;max-width:760px;color:rgba(255,255,255,.82)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}.section{padding:32px 0}.card,.activation-card{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;box-shadow:0 18px 40px rgba(16,35,29,.06)}.activation-card{padding:18px}.activation-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.card-body{padding:18px}.cover{aspect-ratio:16/9;width:100%;object-fit:cover;background:#dfe6df}.meta{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;color:var(--muted);font-size:.9rem}.chip{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:4px 9px;background:#fff}.chip-live{background:var(--live);border-color:var(--live);color:#fff}.title{font-size:1.18rem;font-weight:700;margin:0 0 8px}.signal-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:18px}.signal{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:12px}.signal b{display:block;font-size:1.35rem}.facet-focus,.readiness{background:#fff;border:1px solid var(--line);border-radius:8px;padding:18px;margin:18px 0}.facet-primary{border-color:rgba(13,107,82,.35);box-shadow:0 16px 36px rgba(13,107,82,.09)}.signals{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}.signal-check,.program-check{border:1px solid var(--line);border-radius:8px;padding:12px;background:#fff}.signal-check.good,.program-check{border-color:rgba(13,107,82,.35)}.signal-check.warn{border-color:rgba(229,72,77,.25)}.decision-score{font-size:2rem;font-weight:700;color:var(--green)}.timeline{display:grid;gap:10px;margin-top:14px}.session{border:1px solid var(--line);border-radius:8px;padding:12px;background:#fff}.footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted)}.footer-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px;font-weight:700}.footer-links a{color:var(--green)}.event-quick-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.event-quick-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 14px;border:1px solid rgba(255,255,255,.28);border-radius:8px;background:rgba(255,255,255,.1);color:#fff;font-weight:700}@media(max-width:760px){html{scroll-padding-top:68px}.nav-links{display:none}.mobile-site-menu{display:block;margin-inline-start:auto}.nav{height:auto;min-height:64px;gap:8px}.brand{min-width:0}.brand b{font-size:.95rem}.brand-mark{flex:0 0 36px}.topbar .cta{padding-inline:10px;font-size:.82rem;white-space:nowrap}.hero{padding:26px 0 22px}.wrap{width:min(100% - 22px,1120px)}.facet-page .hero h1{font-size:1.8rem;margin-block:10px}.facet-page .hero .lead{font-size:.9rem;line-height:1.7;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.facet-page .hero .signal-strip{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:13px}.facet-page .hero .signal{padding:8px}.facet-page .hero .signal b{font-size:1.05rem}.facet-page .section{padding:18px 0}.facet-page .facet-focus{margin:0 0 14px;padding:14px}.facet-page .facet-focus h2{font-size:1.25rem;line-height:1.5;margin-block:6px}.facet-page .facet-focus p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.facet-page .card-body>p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.facet-page .card-body .meta{max-height:78px;overflow:hidden}.facet-page .card-body .meta .chip:nth-child(n+4){display:none}.facet-page .card-body .cta{min-height:44px}.event-detail .breadcrumbs{padding-top:10px;white-space:nowrap;overflow:hidden}.event-detail .breadcrumbs strong{display:none}.event-detail .hero h1{font-size:1.7rem;line-height:1.3;margin-block:10px}.event-detail .hero .lead{font-size:.92rem;line-height:1.75;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}.event-detail .hero .signal-strip{grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}.event-detail .hero .signal{padding:9px}.event-detail .hero .signal b{font-size:.92rem;line-height:1.5}.event-detail .section{padding:20px 0}.event-detail .readiness{margin:0;padding:14px}.event-detail .signals{grid-template-columns:1fr 1fr;gap:8px}.event-detail .signal-check{padding:9px;font-size:.82rem}.event-detail .readiness>.meta{display:grid;grid-template-columns:1fr 1fr;gap:8px}.event-detail .readiness>.meta .cta{width:100%;min-height:44px}.event-detail .cta-status{grid-column:1/-1}.event-detail .event-quick-actions a{flex:1 1 calc(50% - 4px);padding-inline:8px}.event-detail .program-check{padding:11px}.event-detail .session{padding:11px}.event-detail .session-top{gap:6px}.event-detail .footer-links a{min-height:44px;display:inline-flex;align-items:center}}
 .day-groups{padding-top:8px}.day-group{margin-top:26px;scroll-margin-top:80px}.day-group:first-of-type{margin-top:14px}.day-group h3{font-size:1.1rem;margin:0 0 12px}
+.city-places .city-places-intro{max-width:760px;color:var(--muted)}.city-places .place-category-group{margin-top:26px}.city-places .place-category-group:first-of-type{margin-top:18px}.city-places .place-category-heading{font-size:1.1rem;margin:0 0 12px}.city-places .osm-attribution{margin-top:22px;color:var(--muted);font-size:.86rem}.city-places .osm-attribution a{color:var(--green);font-weight:700}
 </style>`;
 
 const agendaCss = `<style>
@@ -551,98 +565,12 @@ function isOnlineEvent(event = {}) {
   return /\bOnline\b|عن بعد|افتراضي|افتراضية|تفاعلية مباشرة|أونلاين|اونلاين/i.test(text);
 }
 
-const cityLabelMap = new Map([
-  ['Riyadh', 'الرياض'],
-  ['Jeddah', 'جدة'],
-  ['Makkah', 'مكة'],
-  ['Madinah', 'المدينة المنورة'],
-  ['Dammam', 'الدمام'],
-  ['Khobar', 'الخبر'],
-  ['Dhahran', 'الظهران'],
-  ['AlUla', 'العلا'],
-  ['Abha', 'أبها'],
-  ['Aseer', 'عسير'],
-  ['Khamis Mushait', 'خميس مشيط'],
-  ['Buraydah', 'بريدة'],
-  ['Taif', 'الطائف'],
-  ['Tabuk', 'تبوك'],
-  ['Hail', 'حائل'],
-  ['Al Muzahimiyah', 'المزاحمية'],
-  ['Al Namas', 'النماص'],
-  ['Jazan', 'جازان'],
-  ['Najran', 'نجران'],
-  ['Al Baha', 'الباحة'],
-  ['Sakaka', 'سكاكا'],
-  ['Dumat Al Jandal', 'دومة الجندل'],
-  ['Arar', 'عرعر'],
-  ['Rafha', 'رفحاء'],
-  ['Turaif', 'طريف'],
-  ['NEOM', 'نيوم'],
-  ['Unaizah', 'عنيزة'],
-  ['Rass', 'الرس'],
-  ['Al Kharj', 'الخرج'],
-  ['Dawadmi', 'الدوادمي'],
-  ['Majmaah', 'المجمعة'],
-  ['Shaqra', 'شقراء'],
-  ['Hafar Al Batin', 'حفر الباطن'],
-  ['Rabigh', 'رابغ'],
-  ['Yanbu', 'ينبع'],
-  ['Al Ahsa', 'الأحساء'],
-  ['Thuwal', 'ثول'],
-  ['Qatif', 'القطيف'],
-  ['Diriyah', 'الدرعية'],
-  ['Jubail', 'الجبيل'],
-  ['Nationwide', 'على مستوى المملكة'],
-  ['Global', 'دولي'],
-  ['Online', 'عن بعد'],
-  ['Saudi Arabia', 'السعودية']
-]);
+// Sourced from scripts/city-name-registry.mjs (single source of truth for
+// Saudi city display names) — see that file's header comment.
+const cityLabelMap = new Map(CITY_NAME_REGISTRY.map((city) => [city.en, city.ar]));
 
-const citySlugMap = new Map([
-  ['Riyadh', 'riyadh'],
-  ['Jeddah', 'jeddah'],
-  ['Makkah', 'makkah'],
-  ['Madinah', 'madinah'],
-  ['Dammam', 'dammam'],
-  ['Khobar', 'khobar'],
-  ['Dhahran', 'dhahran'],
-  ['AlUla', 'alula'],
-  ['Abha', 'abha'],
-  ['Aseer', 'aseer'],
-  ['Khamis Mushait', 'khamis-mushait'],
-  ['Buraydah', 'buraydah'],
-  ['Taif', 'taif'],
-  ['Tabuk', 'tabuk'],
-  ['Hail', 'hail'],
-  ['Al Muzahimiyah', 'al-muzahimiyah'],
-  ['Al Namas', 'al-namas'],
-  ['Jazan', 'jazan'],
-  ['Najran', 'najran'],
-  ['Al Baha', 'al-baha'],
-  ['Sakaka', 'sakaka'],
-  ['Dumat Al Jandal', 'dumat-al-jandal'],
-  ['Arar', 'arar'],
-  ['Rafha', 'rafha'],
-  ['Turaif', 'turaif'],
-  ['NEOM', 'neom'],
-  ['Unaizah', 'unaizah'],
-  ['Rass', 'rass'],
-  ['Al Kharj', 'al-kharj'],
-  ['Dawadmi', 'dawadmi'],
-  ['Majmaah', 'majmaah'],
-  ['Shaqra', 'shaqra'],
-  ['Hafar Al Batin', 'hafar-al-batin'],
-  ['Rabigh', 'rabigh'],
-  ['Yanbu', 'yanbu'],
-  ['Al Ahsa', 'al-ahsa'],
-  ['Thuwal', 'thuwal'],
-  ['Qatif', 'qatif'],
-  ['Diriyah', 'diriyah'],
-  ['Jubail', 'jubail'],
-  ['Nationwide', 'nationwide'],
-  ['Global', 'global'],
-  ['Online', 'online']
-]);
+// Sourced from scripts/city-name-registry.mjs — see cityLabelMap above.
+const citySlugMap = new Map(CITY_NAME_REGISTRY.filter((city) => city.slug).map((city) => [city.en, city.slug]));
 
 function cityLabel(city) {
   return cityLabelMap.get(city) || city;
@@ -2628,7 +2556,7 @@ function facetMetrics(events) {
   };
 }
 
-function renderFacetPage({ filePath, title, description, events, canonicalPath, relativePrefix = '../', temporalWindowHours = 0, extraSectionHtml = '' }) {
+function renderFacetPage({ filePath, title, description, events, canonicalPath, relativePrefix = '../', temporalWindowHours = 0, extraSectionHtml = '', extraHeadHtml = '' }) {
   const canonical = absoluteUrl(canonicalPath);
   const feedSlug = canonicalPath.startsWith('cities/')
     ? `city-${canonicalPath.replace(/^cities\//, '').replace(/\.html$/, '')}`
@@ -2654,6 +2582,7 @@ function renderFacetPage({ filePath, title, description, events, canonicalPath, 
   ${pageCss}
   ${jsonLd({ '@context': 'https://schema.org', '@type': 'CollectionPage', inLanguage: 'ar-SA', name: title, url: canonical, isPartOf: { '@type': 'WebSite', name: platformName, url: siteUrl } })}
   ${jsonLd({ '@context': 'https://schema.org', '@type': 'ItemList', numberOfItems: safeEvents.length, itemListElement: safeEvents.slice(0, 24).map((event, index) => ({ '@type': 'ListItem', position: index + 1, name: event.title, url: absoluteUrl(event.detail_url) })) })}
+  ${extraHeadHtml}
 </head>
 <body class="facet-page">
 ${header(relativePrefix)}
@@ -2818,12 +2747,16 @@ function writeFacetPages(events) {
   }
   if (!byCity.has('riyadh')) byCity.set('riyadh', { label: 'فعاليات الرياض', events: fallbackEvents });
   for (const [slug, group] of byCity) {
+    const cityPlacesEntry = cityPlacesMap.get(slug);
+    const canonicalPath = `cities/${slug}.html`;
     renderFacetPage({
       filePath: path.join(citiesDir, `${slug}.html`),
       title: group.label,
       description: `${group.label} القادمة والجارية والمنتهية كما تظهر في EventLive مع مصدر ووقت واضح.`,
       events: group.events,
-      canonicalPath: `cities/${slug}.html`
+      canonicalPath,
+      extraSectionHtml: renderCityPlacesSection(cityPlacesEntry, { lang: 'ar' }),
+      extraHeadHtml: renderCityPlacesJsonLd(cityPlacesEntry, { lang: 'ar', canonical: absoluteUrl(canonicalPath) })
     });
   }
   for (const [slug, group] of byCategory) {
