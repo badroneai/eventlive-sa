@@ -179,6 +179,25 @@ jobs:
           npm run test:event-kind
           npm run test:city-search
 
+      - name: Site gates CI battery (WO: gates that ran in no CI battery, ~35s)
+        # Root cause: these 30 launch:site-gates checks (test:home-data through
+        # test:site-launch-sweep, see package.json's ci:site-gates script) had
+        # never been wired into any CI workflow, so regressions in them (e.g.
+        # the stale organizers/home-data assertions healed in this PR) rotted
+        # silently until someone ran `npm run launch:preflight` by hand.
+        # Measured at ~35s total against the ~20-minute sync — negligible.
+        run: npm run ci:site-gates
+
+      - name: Prelaunch data quality gate (non-blocking; content-state debt)
+        # test:prelaunch-data-quality is excluded from ci:site-gates because it
+        # is content-state-dependent: a single weak summary or stale audience
+        # tag introduced by any source would redden every sync run, even
+        # though it is real (owner-reportable) content debt rather than a
+        # code regression. Ruling: surface offenders in the log without
+        # failing the sync, so the debt is visible without adding pipeline
+        # noise. See scripts/prelaunch-data-quality-regression-test.mjs.
+        run: npm run test:prelaunch-data-quality || echo "PRELAUNCH_DATA_QUALITY_DEBT (non-blocking)"
+
       - name: Autonomous surface-debt alerting (self-maintained GitHub issue)
         env:
           GH_TOKEN: ${{ github.token }}

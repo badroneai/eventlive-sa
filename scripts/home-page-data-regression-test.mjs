@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import { compareAttendancePriority } from './event-priority.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -81,7 +82,14 @@ assert.equal(searchData[0].k, events[0].city, 'home search rows must preserve th
 assert.match(html, /function cityIntent\(v\)/, 'home search must recognize exact city intent');
 assert.match(html, /events\.html\?q=' \+ encodeURIComponent\(input\.value\.trim\(\)\)/, 'home Enter search must preserve the query');
 if (ticker.length) {
-  assert.equal(ticker[0].id, upcoming[0].id, 'home ticker order must follow upcoming events');
+  // WO-3: display order derives from the unified attendance-priority rule
+  // in scripts/event-priority.mjs (generate-site.mjs's patchHomePage sorts
+  // `upcoming` with compareAttendancePriority(a, b, now) before slicing the
+  // ticker to its first 120 rows) — tests must never re-derive ordering
+  // with an ad-hoc sort (e.g. raw events.json order) or they silently rot
+  // the moment the site's ordering rule changes out from under them.
+  const prioritizedUpcoming = [...upcoming].sort((a, b) => compareAttendancePriority(a, b, now));
+  assert.equal(ticker[0].id, prioritizedUpcoming[0].id, 'home ticker order must follow the unified attendance-priority rule (event-priority.mjs)');
   assert.ok(String(ticker[0].u || '').startsWith('./events/') || ticker[0].u === './event.html', 'home ticker URLs must be public event URLs');
 }
 
