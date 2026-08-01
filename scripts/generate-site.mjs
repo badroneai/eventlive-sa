@@ -2678,6 +2678,54 @@ function writeFacetPages(events) {
   }
 }
 
+// Legacy category URL hygiene: technology-training was merged into
+// technology-innovation in the taxonomy (see category-taxonomy.mjs's
+// CATEGORY_ALIASES entry ['technology-training', 'technology-innovation']),
+// so writeFacetPages() above no longer emits categories/technology-training
+// .html — but that URL was public for a long time and now 404s. Rather than
+// let a real inbound/bookmarked URL die, emit a minimal redirect stub for
+// this one retired slug. Intentionally NOT generalized to every taxonomy
+// alias — only a slug that was once its own published category page earns a
+// stub here. scripts/categories-index-regression-test.mjs's
+// allowedLegacyCategoryPages grandfathers the file past the "published
+// pages must match categories.json exactly" check, and writeSitemap() below
+// (plus scripts/sitemap-coverage-regression-test.mjs) keeps it out of the
+// sitemap and out of English localization (generate-localized-site.mjs only
+// ever processes sitemap URLs).
+const LEGACY_CATEGORY_REDIRECTS = new Map([
+  ['technology-training', 'technology-innovation']
+]);
+
+function legacyCategoryRedirectFiles() {
+  return new Set([...LEGACY_CATEGORY_REDIRECTS.keys()].map((slug) => `categories/${slug}.html`));
+}
+
+function writeLegacyCategoryRedirectPages(events) {
+  const canonicalSlugs = new Set(events.map((event) => event.category_slug));
+  const categoryLabelByKey = new Map(CATEGORY_TAXONOMY.map((category) => [category.key, category.label_ar]));
+  for (const [staleSlug, currentSlug] of LEGACY_CATEGORY_REDIRECTS) {
+    // Never emit a stub pointing at a category that no longer exists.
+    if (!canonicalSlugs.has(currentSlug)) continue;
+    const targetHref = `./${currentSlug}.html`;
+    const targetLabel = categoryLabelByKey.get(currentSlug) || currentSlug;
+    const canonical = `${siteUrl}/categories/${currentSlug}.html`;
+    const html = `<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="refresh" content="0; url=${targetHref}" />
+<link rel="canonical" href="${escapeHtml(canonical)}" />
+<title>${escapeHtml(targetLabel)} — ${platformName}</title>
+</head>
+<body>
+<p>تم دمج هذا التصنيف ضمن <a href="${targetHref}">${escapeHtml(targetLabel)}</a>.</p>
+</body>
+</html>
+`;
+    writeText(path.join(categoriesDir, `${staleSlug}.html`), html);
+  }
+}
+
 function cityDirectoryRows(events) {
   const groups = new Map();
   for (const event of events) {
@@ -6996,9 +7044,14 @@ function sitemapImageXml(event = {}) {
 
 function writeSitemap(events = []) {
   const eventByPage = new Map(events.map((event) => [`events/${event.file_slug}.html`.normalize('NFC'), event]));
+  const legacyRedirectFiles = legacyCategoryRedirectFiles();
   const sitemapPaths = [...new Set(htmlFiles(distDir)
     .map((file) => file.replace(/\\/g, '/').normalize('NFC'))
     .filter((file) => !OWNER_ONLY_PAGES.has(file))
+    // Legacy category redirect stubs (see writeLegacyCategoryRedirectPages)
+    // must never be offered to crawlers as a first-class page — their own
+    // <link rel="canonical"> already points crawlers at the real page.
+    .filter((file) => !legacyRedirectFiles.has(file))
     .map((file) => file === 'index.html' ? '' : file))];
   const urls = sitemapPaths
     .sort()
@@ -7650,6 +7703,7 @@ for (const event of eventDetailsToRender) renderEventDetail(event);
 writeIcs(events, eventDetailsToRender);
 writeSubscriptionFeeds(events);
 writeFacetPages(events);
+writeLegacyCategoryRedirectPages(events);
 writeCitiesIndexPage(events);
 writeCategoriesIndexPage(events);
 writeAudiencePages(events);
