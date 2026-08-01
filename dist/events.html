@@ -1347,12 +1347,20 @@ html[lang^="en"] [lang="ar"]{font-family:"IBM Plex Sans Arabic",Tahoma,Arial,san
       return '<span class="chip date-tab">' + escapeHTML(rangeLabel) + '</span>';
     }
 
+    function arabicDaysLabel(count) {
+      var n = count > 0 ? count : 0;
+      if (n === 1) return 'يوم واحد';
+      if (n === 2) return 'يومان';
+      if (n >= 3 && n <= 10) return n + ' أيام';
+      return n + ' يومًا';
+    }
+
     function formatRemaining(ms) {
       const totalMinutes = Math.max(0, Math.ceil(ms / 60000));
       const days = Math.floor(totalMinutes / 1440);
       const hours = Math.floor((totalMinutes % 1440) / 60);
       const minutes = totalMinutes % 60;
-      if (days > 0) return days + ' يوم ' + hours + ' س';
+      if (days > 0) return arabicDaysLabel(days) + ' ' + hours + ' س';
       if (hours > 0) return hours + ' س ' + minutes + ' د';
       return minutes + ' دقيقة';
     }
@@ -2658,14 +2666,35 @@ html[lang^="en"] [lang="ar"]{font-family:"IBM Plex Sans Arabic",Tahoma,Arial,san
       if (grid) grid.innerHTML = '<p class="empty-state">لا توجد فعاليات ضمن النطاق المطلوب حاليا.</p>';
     }
   }
+  function arabicHoursLabel(count) {
+    var n = count > 0 ? count : 0;
+    if (n === 1) return 'ساعة واحدة';
+    if (n === 2) return 'ساعتان';
+    if (n >= 3 && n <= 10) return n + ' ساعات';
+    return n + ' ساعة';
+  }
+  function arabicDaysLabel(count) {
+    var n = count > 0 ? count : 0;
+    if (n === 1) return 'يوم واحد';
+    if (n === 2) return 'يومان';
+    if (n >= 3 && n <= 10) return n + ' أيام';
+    return n + ' يومًا';
+  }
+  function arabicMinutesLabel(count) {
+    var n = count > 0 ? count : 0;
+    if (n === 1) return 'دقيقة واحدة';
+    if (n === 2) return 'دقيقتان';
+    if (n >= 3 && n <= 10) return n + ' دقائق';
+    return n + ' دقيقة';
+  }
   function remaining(ms) {
     var value = Math.max(0, ms || 0);
     var day = Math.floor(value / 86400000);
     var hour = Math.floor((value % 86400000) / 3600000);
     var minute = Math.floor((value % 3600000) / 60000);
-    if (day > 0) return day + ' يوم ' + hour + ' ساعة';
-    if (hour > 0) return hour + ' ساعة';
-    if (minute > 0) return minute + ' دقيقة';
+    if (day > 0) return arabicDaysLabel(day) + ' ' + arabicHoursLabel(hour);
+    if (hour > 0) return arabicHoursLabel(hour);
+    if (minute > 0) return arabicMinutesLabel(minute);
     return 'أقل من دقيقة';
   }
   function runtime(el) {

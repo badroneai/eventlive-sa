@@ -20,6 +20,7 @@ const contentProseStats = { events: 0, translated: 0, leaks: 0, eventsWithLeaks:
 import { normalizeSaudiCity } from './city-utils.mjs';
 import { LEGACY_CATEGORY_REDIRECTS, LEGACY_REDIRECT_PAGES } from './legacy-redirect-pages.mjs';
 import { createContentTranslator } from './content-translation-cache.mjs';
+import { ARABIC_DAYS_LABEL_JS, DURATION_LABEL_RUNTIME_JS } from './duration-label.mjs';
 import { eventDateRangeLabel, isMultiDayEvent } from './event-date-range.mjs';
 import { classifyEventKind, eventKindLabel, getEventStatus } from './event-kind-utils.mjs';
 import { compareAttendancePriority, isLiveMoment } from './event-priority.mjs';
@@ -1490,14 +1491,15 @@ function liveRuntimeScript() {
       if (grid) grid.innerHTML = '<p class=\"empty-state\">لا توجد فعاليات ضمن النطاق المطلوب حاليا.</p>';
     }
   }
+  ${DURATION_LABEL_RUNTIME_JS}
   function remaining(ms) {
     var value = Math.max(0, ms || 0);
     var day = Math.floor(value / 86400000);
     var hour = Math.floor((value % 86400000) / 3600000);
     var minute = Math.floor((value % 3600000) / 60000);
-    if (day > 0) return day + ' يوم ' + hour + ' ساعة';
-    if (hour > 0) return hour + ' ساعة';
-    if (minute > 0) return minute + ' دقيقة';
+    if (day > 0) return arabicDaysLabel(day) + ' ' + arabicHoursLabel(hour);
+    if (hour > 0) return arabicHoursLabel(hour);
+    if (minute > 0) return arabicMinutesLabel(minute);
     return 'أقل من دقيقة';
   }
   function runtime(el) {
@@ -6105,14 +6107,15 @@ function activationRuntimeScript() {
     if (!Number.isFinite(date.getTime())) return 'لم يحدد الوقت';
     return new Intl.DateTimeFormat('ar-SA', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'Asia/Riyadh' }).format(date);
   }
+  ${DURATION_LABEL_RUNTIME_JS}
   function remaining(ms) {
     var value = Math.max(0, ms || 0);
     var day = Math.floor(value / 86400000);
     var hour = Math.floor((value % 86400000) / 3600000);
     var minute = Math.floor((value % 3600000) / 60000);
-    if (day > 0) return day + ' يوم ' + hour + ' ساعة';
-    if (hour > 0) return hour + ' ساعة';
-    if (minute > 0) return minute + ' دقيقة';
+    if (day > 0) return arabicDaysLabel(day) + ' ' + arabicHoursLabel(hour);
+    if (hour > 0) return arabicHoursLabel(hour);
+    if (minute > 0) return arabicMinutesLabel(minute);
     return 'أقل من دقيقة';
   }
   function state(event) {
@@ -6840,6 +6843,7 @@ body[data-screen-mode="event-screen"] .screen .qr-panel { display:none !importan
       return Number.isNaN(date.getTime()) ? String(iso || '-') : date.toLocaleString('ar-SA', { dateStyle:'medium', timeStyle:'short' });
     }
 
+    ${ARABIC_DAYS_LABEL_JS}
     function formatRemaining(event) {
       const now = Date.now();
       const start = new Date(event.starts_at).getTime();
@@ -6849,7 +6853,7 @@ body[data-screen-mode="event-screen"] .screen .qr-panel { display:none !importan
         const days = Math.floor(totalMinutes / 1440);
         const hours = Math.floor((totalMinutes % 1440) / 60);
         const minutes = totalMinutes % 60;
-        if (days > 0) return days + ' يوم ' + hours + ' س';
+        if (days > 0) return arabicDaysLabel(days) + ' ' + hours + ' س';
         if (hours > 0) return hours + ' س ' + minutes + ' د';
         return minutes + ' د';
       }
