@@ -17,6 +17,7 @@ import {
 const categoryFallbackAlerts = [];
 const contentTranslator = createContentTranslator();
 const contentProseStats = { events: 0, translated: 0, leaks: 0, eventsWithLeaks: 0 };
+const coverEnStats = { generated: 0, written: 0, arFallback: 0 };
 import { normalizeSaudiCity } from './city-utils.mjs';
 import { LEGACY_CATEGORY_REDIRECTS, LEGACY_REDIRECT_PAGES } from './legacy-redirect-pages.mjs';
 import { createContentTranslator } from './content-translation-cache.mjs';
@@ -47,6 +48,15 @@ const categoriesDir = path.join(distDir, 'categories');
 const audiencesDir = path.join(distDir, 'for');
 const feedsDir = path.join(distDir, 'feeds');
 const coversDir = path.join(distDir, 'assets', 'event-covers');
+// Subdirectory, not a filename suffix: event slugs are free-form
+// (source/title-derived) strings and could legitimately end in "-en"
+// (e.g. slugify("... Web En") -> "...-web-en"), which a suffix scheme like
+// "<slug>-en.svg" could collide with. Slugs never contain "/" (slugify
+// strips it), so "event-covers/en/<slug>.svg" can never collide with any
+// "event-covers/<slug>.svg" AR cover, and the existing incremental-build /
+// stale-ref-patch regexes below key off path.basename() or a "no slash"
+// capture group, so the subdirectory is naturally invisible to them.
+const coversEnDir = path.join(coversDir, 'en');
 const platformName = 'EventLive';
 const platformDomain = 'eventme.live';
 const siteUrl = `https://${platformDomain}`;
@@ -731,6 +741,69 @@ function coverContentSignature(event) {
   return crypto.createHash('sha1').update(`${event.title || ''}|${event.city || ''}`).digest('hex').slice(0, 16);
 }
 
+// EN cover title resolution mirrors generate-localized-site.mjs's
+// `event.title_en = event.title_original || exact[event.title] || event.title`
+// exactly (locales/en-SA-static.json literal map + category labels + the
+// ar<->en content-translation cache), so the baked EN cover text can never
+// drift from the title an EN page actually renders. Duplicated here (not
+// imported) because this file may only touch generate-localized-site.mjs's
+// image/cover-URL handling, not its title_en assignment; the freshness
+// regression test (cover-content-freshness-regression-test.mjs) guards the
+// two resolutions staying in sync.
+let cachedEnTitleExactMap = null;
+function enTitleExactMap() {
+  if (cachedEnTitleExactMap) return cachedEnTitleExactMap;
+  // Defensive: some test fixtures (e.g. url-attribute-xss-regression-test.mjs)
+  // run this script against a minimal temp copy of the repo that only
+  // includes data/, not locales/ — this file is otherwise unused by this
+  // module, so a missing/unreadable copy must degrade to "no static
+  // dictionary hits" rather than crash the build.
+  const staticLocalePath = path.join(root, 'locales', 'en-SA-static.json');
+  const map = fs.existsSync(staticLocalePath) ? { ...JSON.parse(fs.readFileSync(staticLocalePath, 'utf8')) } : {};
+  for (const category of CATEGORY_TAXONOMY) map[category.label_ar] = category.label_en;
+  for (const entry of Object.values(contentTranslator.cache.entries || {})) {
+    if (!entry?.source || !entry?.text) continue;
+    if (entry.source_lang === 'en' && entry.target_lang === 'ar' && !map[entry.text]) map[entry.text] = entry.source;
+    else if (entry.source_lang === 'ar' && entry.target_lang === 'en' && !map[entry.source]) map[entry.source] = entry.text;
+  }
+  cachedEnTitleExactMap = map;
+  return map;
+}
+
+// Must run AFTER contentTranslator.localizeEventProse(event, 'ar', ...) has
+// settled event.title/event.title_original for this build (same ordering
+// requirement as fallbackCover() above — see buildEvents()).
+function resolveEventTitleEn(event) {
+  const trimmedTitle = String(event.title || '').trim();
+  return event.title_original || enTitleExactMap()[trimmedTitle] || event.title;
+}
+
+function coverContentSignatureEn(titleEn, city) {
+  return crypto.createHash('sha1').update(`en|${titleEn || ''}|${city || ''}`).digest('hex').slice(0, 16);
+}
+
+// Writes the English-baked variant of a generated cover, reusing the exact
+// visual layout as fallbackCover() (see that function for why the SVG looks
+// the way it does) but baking titleEn instead of event.title, and the plain
+// English city key (event.city, e.g. "Riyadh") instead of the Arabic
+// cityLabel() display name. Only called when resolveEventTitleEn() resolved
+// to genuine, non-Arabic text — see buildEvents() for the AR-fallback branch
+// taken when no EN title is available.
+function fallbackCoverEn(event, titleEn) {
+  const file = `${event.file_slug || event.id}.svg`;
+  const fullPath = path.join(coversEnDir, file);
+  const cityEn = event.city || 'Saudi Arabia';
+  const titleLines = coverTitleLines(titleEn);
+  const fontSize = titleLines.length <= 2 ? 60 : titleLines.length === 3 ? 52 : 44;
+  const lineHeight = Math.round(fontSize * 1.24);
+  const firstY = 320 - Math.round(((titleLines.length - 1) * lineHeight) / 2);
+  const titleText = titleLines.map((line, index) => `<text x="700" y="${firstY + index * lineHeight}" text-anchor="middle" direction="ltr" unicode-bidi="plaintext" fill="#fff" font-family="Arial, sans-serif" font-size="${fontSize}" font-weight="800" paint-order="stroke" stroke="rgba(7,35,28,.34)" stroke-width="5" stroke-linejoin="round">${escapeHtml(line)}</text>`).join('');
+  const hue = Math.abs([...String(event.id || titleEn)].reduce((sum, char) => sum + char.charCodeAt(0), 0)) % 360;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788" role="img" aria-label="${escapeHtml(titleEn)}"><!-- eventlive-cover-signature: ${coverContentSignatureEn(titleEn, cityEn)} --><title>${escapeHtml(titleEn)}</title><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="hsl(${hue} 48% 22%)"/><stop offset="1" stop-color="hsl(${(hue + 48) % 360} 54% 38%)"/></linearGradient><pattern id="p" width="72" height="72" patternUnits="userSpaceOnUse"><path d="M0 36h72M36 0v72" stroke="rgba(255,255,255,.11)" stroke-width="2"/></pattern></defs><rect width="1400" height="788" fill="url(#g)"/><rect width="1400" height="788" fill="url(#p)"/><rect x="72" y="92" width="1256" height="604" rx="42" fill="rgba(7,35,28,.18)" stroke="rgba(255,255,255,.12)"/><circle cx="1160" cy="154" r="126" fill="rgba(229,72,77,.2)"/><text x="700" y="166" text-anchor="middle" fill="#f7df9a" font-family="Arial, sans-serif" font-size="38" font-weight="700">${platformName}</text>${titleText}<text x="700" y="650" text-anchor="middle" fill="rgba(255,255,255,.84)" font-family="Arial, sans-serif" font-size="32" font-weight="700">${escapeHtml(cityEn)}</text></svg>`;
+  writeText(fullPath, svg);
+  return `/assets/event-covers/en/${file}`;
+}
+
 function fallbackCover(event) {
   const file = `${event.file_slug || event.id}.svg`;
   const fullPath = path.join(coversDir, file);
@@ -1175,6 +1248,32 @@ function buildEvents() {
     if (event.needs_generated_cover) {
       event.image_url = fallbackCover(event);
       event.image_alt = `غلاف EventLive لفعالية ${event.title}`;
+      coverEnStats.generated += 1;
+      // EN variant: only written when resolveEventTitleEn() actually
+      // resolved to non-Arabic text (either the event's own original-language
+      // title, or a cached ar->en translation) — the same condition that
+      // decides whether generate-localized-site.mjs's title_en differs from
+      // the Arabic title on the EN page. When no EN title is available yet,
+      // no EN variant is written and the EN page keeps referencing the
+      // Arabic cover (see rewriteCoverUrlForEnglish() in
+      // generate-localized-site.mjs, which only swaps the URL when the EN
+      // file exists on disk) — counted here for build-report visibility.
+      const titleEn = resolveEventTitleEn(event);
+      if (titleEn && !/[؀-ۿ]/.test(titleEn)) {
+        fallbackCoverEn(event, titleEn);
+        coverEnStats.written += 1;
+      } else {
+        coverEnStats.arFallback += 1;
+        // Self-healing: if an EN variant was written on a previous build
+        // (e.g. the event's title later regressed to needing translation
+        // that isn't cached yet), remove it now so the on-disk existence
+        // check in generate-localized-site.mjs's rewriteCoverUrlForEnglish()
+        // — the sole signal it uses to decide whether an EN page should link
+        // to the EN cover — cannot keep serving a stale file for an event
+        // this build no longer considers EN-titled.
+        const staleEnPath = path.join(coversEnDir, `${event.file_slug || event.id}.svg`);
+        if (fs.existsSync(staleEnPath)) fs.rmSync(staleEnPath, { force: true });
+      }
     }
     delete event.needs_generated_cover;
     events.push(event);
@@ -7765,7 +7864,8 @@ function removeDeletedEventArtifacts(slugs = []) {
   for (const slug of slugs) {
     for (const filePath of [
       ...['html', 'json', 'ics'].map((extension) => path.join(eventsDir, `${slug}.${extension}`)),
-      path.join(coversDir, `${slug}.svg`)
+      path.join(coversDir, `${slug}.svg`),
+      path.join(coversEnDir, `${slug}.svg`)
     ]) {
       if (!fs.existsSync(filePath)) continue;
       fs.rmSync(filePath, { force: true });
@@ -7886,6 +7986,7 @@ const report = [
 `- Category fallback alerts: ${categoryFallbackAlerts.length}`,
 `- Content translations pending: ${contentTranslator.pending().length}`,
 `- Content prose coverage (current+upcoming): ${contentProseStats.events - contentProseStats.eventsWithLeaks}/${contentProseStats.events} events fully localized, ${contentProseStats.leaks} field leaks`,
+`- Generated covers with EN variant: ${coverEnStats.written}/${coverEnStats.generated} (${coverEnStats.arFallback} fell back to the Arabic cover on /en/)`,
   `- Search intent pages generated: ${searchIntentPages.length}`,
   `- SEO pages changed: ${seoDiscovery.changed_events}`,
   `- SEO pages unchanged: ${seoDiscovery.unchanged_events}`,
