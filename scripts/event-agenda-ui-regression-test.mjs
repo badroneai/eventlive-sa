@@ -2,6 +2,17 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Mirrors escapeHtml() in scripts/generate-site.mjs / scripts/home-board-
+// live.mjs, so a structural "does this session title render verbatim"
+// check still matches once the renderer HTML-escapes the title text.
+function escapeHtmlForTest(value = '') {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
 const events = JSON.parse(fs.readFileSync('dist/events.json', 'utf8')).events || [];
 // Class lesson: display titles are mutable by the autonomous MT queue (this
 // event's display title was rewritten to "ليب 2026" mid-flight, breaking a
@@ -15,7 +26,12 @@ assert.equal(
   true,
   'LEAP must remain classified as a conference-like category'
 );
-assert.match(leap.venue, /Convention Centre, Malham/i, 'LEAP must retain the official Malham venue');
+// venue is a translatable display field (WO-10 MT registry — see
+// CONTENT_PROSE_FIELDS.scalars in scripts/content-translation-cache.mjs);
+// a fresh build after a sync may Arabic-translate it, same class ban as
+// the LEAP title lesson above. The official-venue identity is already
+// pinned by the directions_url assertion below (URLs are never translated).
+assert.ok(leap.venue, 'LEAP must retain a venue');
 assert.match(leap.directions_url, /Convention%20Centre%20Malham/, 'LEAP directions must target the official venue');
 assert.equal(leap.source_label, 'LEAP 2026 Official', 'LEAP must expose its first-party source');
 
@@ -63,7 +79,12 @@ assert.equal(hrse.source_label, 'HRSE KSA Official', 'HRSE KSA must expose its f
 assert.equal(hrse.live_schedule_ready, true, 'HRSE KSA must activate the live agenda experience');
 const hrseHtml = fs.readFileSync(path.join('dist', hrse.detail_url.replace(/^\.\//, '')), 'utf8');
 assert.equal((hrseHtml.match(/<article class="session"[^>]+data-session-item/g) || []).length, hrse.sessions.length, 'HRSE detail page must render every official session');
-assert.match(hrseHtml, /HR Leaders Conference|Technology and Innovation Stage/, 'HRSE agenda must retain official stream labels');
+// session room/track are translatable display fields (WO-10 MT registry —
+// session_scalars in scripts/content-translation-cache.mjs), so pin the
+// multi-stream structure by distinct-value count instead of hardcoded
+// English stream label text (same class ban as the LEAP title lesson).
+const hrseStreams = new Set(hrse.sessions.map((session) => session.track || session.room).filter(Boolean));
+assert.ok(hrseStreams.size >= 2, `HRSE agenda must retain its official multi-stream structure (found ${hrseStreams.size} distinct streams)`);
 assert.match(hrseHtml, /https:\/\/informaconnect\.com\/hrse-saudi\/agenda\//, 'HRSE sessions must retain first-party evidence links');
 
 const smartData = events.find((event) => event.id === 'event-smart-data-ai-summit');
@@ -73,7 +94,13 @@ assert.equal(smartData.source_label, 'Smart Data & AI Summit Official');
 assert.equal(smartData.live_schedule_ready, true);
 const smartDataHtml = fs.readFileSync(path.join('dist', smartData.detail_url.replace(/^\.\//, '')), 'utf8');
 assert.equal((smartDataHtml.match(/<article class="session"[^>]+data-session-item/g) || []).length, smartData.sessions.length, 'Smart Data detail page must render every official agenda item');
-assert.match(smartDataHtml, /Agentic AI|Data Intelligence/, 'Smart Data agenda must retain official programme titles');
+// session.title is a translatable display field (WO-10 MT registry) — pin
+// structurally against the build's own session data instead of hardcoded
+// English title fragments (same class ban as the LEAP title lesson).
+assert.ok(
+  smartData.sessions.length > 0 && smartData.sessions.every((session) => smartDataHtml.includes(escapeHtmlForTest(session.title))),
+  'Smart Data agenda must render every official session title verbatim'
+);
 assert.match(smartDataHtml, /https:\/\/saudi\.smartdataseries\.com\/agenda/, 'Smart Data sessions must retain first-party evidence links');
 assert.doesNotMatch(smartDataHtml, /0 قاعات|٠ قاعات/, 'agendas without published room names must not display a misleading zero-room count');
 assert.doesNotMatch(smartDataHtml, /<select[^>]+data-agenda-room/, 'agendas without published room names must not display an empty room filter');
@@ -84,7 +111,13 @@ assert.ok(rff2026.sessions.length >= 20, 'RFF 2026 must retain its official thre
 assert.equal(rff2026.source_label, 'Real Estate Future Forum Official');
 const rffHtml = fs.readFileSync(path.join('dist', rff2026.detail_url.replace(/^\.\//, '')), 'utf8');
 assert.equal((rffHtml.match(/<article class="session"[^>]+data-session-item/g) || []).length, rff2026.sessions.length, 'RFF 2026 page must render every official session');
-assert.match(rffHtml, /Non-Saudi Ownership Law|Opening Ceremony/, 'RFF 2026 must retain official session titles');
+// session.title is a translatable display field (WO-10 MT registry) — pin
+// structurally against the build's own session data instead of hardcoded
+// English title fragments (same class ban as the LEAP title lesson).
+assert.ok(
+  rff2026.sessions.length > 0 && rff2026.sessions.every((session) => rffHtml.includes(escapeHtmlForTest(session.title))),
+  'RFF 2026 must render every official session title verbatim'
+);
 assert.doesNotMatch(rffHtml, /25.*27.*2027|٢٠٢٧/, 'RFF 2027 dates must not leak into the RFF 2026 agenda page');
 
 const proptech2025 = events.find((event) => event.id === 'ended-global-proptech-summit-2025');
@@ -93,7 +126,13 @@ assert.ok(proptech2025.sessions.length >= 25, 'Global PropTech Summit 2025 must 
 assert.equal(proptech2025.source_label, 'Global PropTech Summit Official');
 const proptechHtml = fs.readFileSync(path.join('dist', proptech2025.detail_url.replace(/^\.\//, '')), 'utf8');
 assert.equal((proptechHtml.match(/<article class="session"[^>]+data-session-item/g) || []).length, proptech2025.sessions.length, 'Global PropTech 2025 page must render every official session');
-assert.match(proptechHtml, /PROPTECH|PropTech/, 'Global PropTech 2025 must retain official programme titles');
+// session.title is a translatable display field (WO-10 MT registry) — pin
+// structurally against the build's own session data instead of hardcoded
+// English title fragments (same class ban as the LEAP title lesson).
+assert.ok(
+  proptech2025.sessions.length > 0 && proptech2025.sessions.every((session) => proptechHtml.includes(escapeHtmlForTest(session.title))),
+  'Global PropTech 2025 must render every official session title verbatim'
+);
 assert.doesNotMatch(proptechHtml, /25\s*(?:-|–)\s*26\s+(?:October|Oct)\s+2026|٢٥\s*(?:-|–)\s*٢٦[^\n]{0,30}٢٠٢٦/i, 'Global PropTech 2026 dates must not leak into the 2025 agenda page');
 
 console.log(`EVENT_AGENDA_UI_OK leap_sessions=${sessionItems.length} money2020_sessions=${money.sessions.length} hrse_sessions=${hrse.sessions.length} smart_data_sessions=${smartData.sessions.length} rff2026_sessions=${rff2026.sessions.length} proptech2025_sessions=${proptech2025.sessions.length} day_controls=${dayButtons.length}`);
