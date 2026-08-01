@@ -3,7 +3,11 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const events = JSON.parse(fs.readFileSync('dist/events.json', 'utf8')).events || [];
-const leap = events.find((event) => /^LEAP\s+2026$/i.test(event.title || ''));
+// Class lesson: display titles are mutable by the autonomous MT queue (this
+// event's display title was rewritten to "ليب 2026" mid-flight, breaking a
+// title-regex lookup here for days) — tests must select events by stable id
+// or title_original, never by display title.
+const leap = events.find((event) => event.id === 'event-leap-2026');
 assert.ok(leap, 'LEAP 2026 must be present in the public build');
 assert.ok(leap.sessions.length >= 100, 'LEAP must retain its full official multi-track agenda');
 assert.equal(
