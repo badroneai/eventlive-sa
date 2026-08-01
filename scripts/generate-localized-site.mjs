@@ -87,6 +87,11 @@ const wordReplacements = [
   ['يوليو', 'July'], ['أغسطس', 'August'], ['سبتمبر', 'September'], ['أكتوبر', 'October'], ['نوفمبر', 'November'], ['ديسمبر', 'December'],
   ['الأحد', 'Sunday'], ['الاثنين', 'Monday'], ['الثلاثاء', 'Tuesday'], ['الأربعاء', 'Wednesday'], ['الخميس', 'Thursday'], ['الجمعة', 'Friday'], ['السبت', 'Saturday']
 ];
+// WO: a blind text.replaceAll(source, target) corrupts Arabic words that merely
+// CONTAIN a month/day substring (e.g. "الممارسات" contains "مارس" -> "المMarchات").
+// Precompile word-boundary-guarded patterns so month/day tokens only translate
+// when they are not glued to surrounding Arabic letters on either side.
+const wordReplacementPatterns = wordReplacements.map(([ar, en]) => [new RegExp(`(?<![ء-ي])${ar}(?![ء-ي])`, 'gu'), en]);
 
 const runtimeLiteralMap = {
   'تصفية وترتيب (': 'Filter and sort (',
@@ -186,6 +191,27 @@ function latinDigits(value = '') {
   return String(value).replace(/[٠-٩]/g, (digit) => arabicDigits.get(digit));
 }
 
+// WO: strip an embedded "الموقع:"/"المنظم:" label off a venue/organizer
+// value that leaked it two different ways:
+//  1. the raw Arabic text itself starts with the label (venue scraped
+//     verbatim as "الموقع: X"); or
+//  2. the label is baked into the exact-map's *resolved* value — the
+//     reverse (en->ar) content-translation index records "الموقع: X" as the
+//     recorded original English source for an Arabic venue string (e.g.
+//     "متحف الأطفال" -> "الموقع: Children's Museum"), because the raw
+//     source data itself carried a mislabeled bilingual venue before MT
+//     ever ran. This is the dominant real-world case — the recurring-debt
+//     report's top offenders (event-detail FAQ pages) all hit this path.
+// Returns null when no label was found, so callers can fall back to their
+// own exact[]/raw value handling for the common (unleaked) case.
+function stripEmbeddedLabel(value) {
+  const venueMatch = value.match(/^الموقع:\s*(.+)$/u);
+  if (venueMatch) return `Venue: ${exact[venueMatch[1]] || venueMatch[1]}`;
+  const organizerMatch = value.match(/^المنظم:\s*(.+)$/u);
+  if (organizerMatch) return `Organizer: ${exact[organizerMatch[1]] || organizerMatch[1]}`;
+  return null;
+}
+
 function translateText(value = '', depth = 0) {
   const leading = String(value).match(/^\s*/)?.[0] || '';
   const trailing = String(value).match(/\s*$/)?.[0] || '';
@@ -209,7 +235,7 @@ function translateText(value = '', depth = 0) {
   text = latinDigits(text).replace(/[\u200e\u200f]/gu, '');
   if (depth < 3 && text.includes(' · ')) text = text.split(' · ').map((part) => translateText(part, depth + 1).trim() || part).join(' · ');
   if (depth < 3 && text.includes(' | ')) text = text.split(' | ').map((part) => translateText(part, depth + 1).trim() || part).join(' | ');
-  for (const [source, target] of wordReplacements) text = text.replaceAll(source, target);
+  for (const [pattern, target] of wordReplacementPatterns) text = text.replace(pattern, target);
   text = text
     .replaceAll(' بتوقيت الرياض', ' Riyadh time')
     .replace(/(\d{1,2}:\d{2})\s*ص(?![\u0600-\u06ff])/gu, '$1 AM')
@@ -231,10 +257,20 @@ function translateText(value = '', depth = 0) {
     [/^(\d+)\s*جلسة في الجدول$/u, '$1 sessions in the schedule'],
     [/^(\d+)\s*جلسات في الجدول$/u, '$1 sessions in the schedule'],
     [/^·\s*فعالية$/u, '· event'],
+    // WO: the trust span title is "المصدر: X · آخر تحقق: DATE". Because the
+    // ' · ' split above recurses into each half separately, this combined
+    // pattern only ever sees the full string when the split doesn't apply
+    // (e.g. depth >= 3); the standalone "آخر تحقق:" pattern right after it
+    // is what actually fires for the common case, matching the split-off
+    // second half the same way "آخر تحديث:"/"آخر مزامنة:" already do below.
+    // Keep both: the combined one is the more specific, correct-in-principle
+    // pin, and the standalone one is required for the fix to take effect.
+    [/^المصدر:\s*(.+?)\s*·\s*آخر تحقق:\s*(.+)$/u, (_, source, ts) => `Source: ${exact[source] || source} · Last verified: ${ts.replaceAll('،', ',')}`],
     [/^المصدر:\s*(.+)$/u, 'Source: $1'],
     [/^المدينة:\s*(.+)$/u, 'City: $1'],
     [/^آخر تحديث:\s*(.+)$/u, 'Last updated: $1'],
     [/^آخر مزامنة:\s*(.+)$/u, 'Last synced: $1'],
+    [/^آخر تحقق:\s*(.+)$/u, (_, rest) => `Last verified: ${(exact[rest] || rest).replaceAll('،', ',')}`],
     [/^يعرض\s+(\d+)\s+من\s+(\d+)\s+نتيجة مطابقة، من أصل\s+(\d+)\s+فعالية في الكتالوج$/u, 'Showing $1 of $2 matching results from $3 catalog events'],
     [/^عرض المزيد\s*\((\d+)\)$/u, 'Show more ($1)'],
     [/^مستمرة حتى\s+(.+)$/u, 'Ongoing until $1'],
@@ -259,7 +295,21 @@ function translateText(value = '', depth = 0) {
     [/^غلاف EventLive لفعالية\s+(.+)$/u, (_, title) => `EventLive cover for ${exact[title] || title}`],
     [/^متى تبدأ\s+(.+)؟$/u, (_, title) => `When does ${exact[title] || title} start?`],
     [/^أين تقام\s+(.+)؟$/u, (_, title) => `Where does ${exact[title] || title} take place?`],
-    [/^تقام الفعالية في\s+(.+)\.$/u, (_, place) => `The event takes place in ${place.split('، ').map((part) => exact[part] || part).join(', ')}.`],
+    // WO: place parts can themselves carry an embedded "الموقع:"/"المنظم:" label
+    // that a plain exact[part] || part lookup never catches, leaving Arabic
+    // chrome stuck to an otherwise-translated sentence — see
+    // stripEmbeddedLabel() above for the two distinct sources of the leak.
+    // Same prefix-strip idiom as the standalone "الموقع:"/"المنظم:" patterns
+    // above; deliberately not a recursive translateText() call per the WO
+    // note against unbounded recursion here — a targeted prefix check on
+    // both the raw part and its exact-map resolution is simpler and safe.
+    [/^تقام الفعالية في\s+(.+)\.$/u, (_, place) => `The event takes place in ${place.split('، ').map((part) => {
+      const fromRaw = stripEmbeddedLabel(part);
+      if (fromRaw) return fromRaw;
+      const mapped = exact[part];
+      if (mapped) return stripEmbeddedLabel(mapped) || mapped;
+      return part;
+    }).join(', ')}.`],
     [/^تعتمد EventLive على\s+(.+)\s+أو رابط دليل ظاهر في صفحة الفعالية، مع إبقاء رابط المصدر للمراجعة\.$/u, (_, source) => `EventLive relies on ${exact[source] || source} or a directory link visible on the event page, and keeps the source link for review.`],
     [/^فتح\s+(.+)$/u, (_, target) => `Open ${exact[target] || target}`]
   ];
@@ -449,7 +499,13 @@ function formatEnglishEventDate(value) {
 function englishEventFaq(event) {
   const title = event.title_en || event.title || 'this event';
   const city = exact[event.city] || event.city_label || event.city || 'Saudi Arabia';
-  const venue = event.venue ? (exact[event.venue] || event.venue) : '';
+  // WO: this is the actual site of the recurring "الموقع:"/"المنظم:" chrome
+  // leak (see stripEmbeddedLabel() doc comment) — this FAQ block is rebuilt
+  // deterministically from catalog data AFTER the generic translateText()
+  // pass runs, so a fix scoped only to the "تقام الفعالية في" pattern above
+  // never reaches these pages; the venue value must be repaired here too.
+  const rawVenue = event.venue ? (exact[event.venue] || event.venue) : '';
+  const venue = rawVenue ? (stripEmbeddedLabel(rawVenue) || rawVenue) : '';
   const sourceLabel = event.source_label || event.organizer || 'the official source';
   const online = event.attendance_mode === 'online';
   return [
@@ -752,9 +808,14 @@ function translateRuntimeScripts($, relativePath) {
 }
 
 function translateMetaText(value = '') {
-  if (exact[value]) return exact[value];
+  // WO: an exact-map hit can itself carry an embedded "الموقع:"/"المنظم:"
+  // label (see stripEmbeddedLabel() doc comment) — an unconditional early
+  // return here ships it raw into meta descriptions/keywords, bypassing the
+  // pattern layer entirely. This is the same class of leak as fix #3, just
+  // reached through the exact-map fast path instead of the pattern loop.
+  if (exact[value]) return stripEmbeddedLabel(exact[value]) || exact[value];
   let translated = translateText(latinDigits(value));
-  for (const [source, target] of wordReplacements) translated = translated.replaceAll(source, target);
+  for (const [pattern, target] of wordReplacementPatterns) translated = translated.replace(pattern, target);
   return translated;
 }
 
@@ -781,7 +842,10 @@ function localizeJsonLdValue(value, key = '') {
   if (key === 'inLanguage') return 'en-SA';
   if (key === '@id' && /\/#(?:website|organization)$/.test(value)) return value;
   if (value.startsWith(`${siteUrl}/`)) return englishUrl(value);
-  if (exact[value]) return exact[value];
+  // WO: same leak class as translateMetaText() above — an exact-map hit for
+  // a structured-data field (e.g. Event.location.name) can itself carry an
+  // embedded "الموقع:"/"المنظم:" label; repair it before shipping.
+  if (exact[value]) return stripEmbeddedLabel(exact[value]) || exact[value];
   if (key === 'url' || key === 'target' || key === '@id') return englishUrl(value);
   if (key === 'description') {
     const translated = translateMetaText(value);

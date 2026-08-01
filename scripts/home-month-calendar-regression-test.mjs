@@ -212,12 +212,26 @@ for (const anchor of enHomepageDayLinks) {
   assert.ok(enThisMonthAnchorIds.has(anchor), `dist/en/index.html links to #${anchor} but dist/en/this-month.html has no matching id="${anchor}"`);
 }
 
-// 4e. Bilingual chrome: the calendar strip and month section carry no
+// 4e. Bilingual chrome: the calendar strip and month section head carry no
 // leftover Arabic on the English homepage (the broader en-surface-sweep
 // gate covers every page; this pins the two specific new strings so a
 // regression here fails fast with a precise message).
+//
+// Scoped to CHROME only — the cal-strip block plus the h-section-head block,
+// which is what this test was written to pin — and deliberately excludes the
+// card-row that follows. Running doesNotMatch over the *entire* month section
+// also matched (a) legitimate Arabic URL slugs baked into card hrefs/srcs
+// (e.g. "event-معسكر-...") and (b) event titles still pending the autonomous
+// ar->en translation queue (e.g. "أوركسترا Game of Thrones"). Both are
+// tolerated by the site-wide policy in scripts/en-surface-sweep-regression-
+// test.mjs, which strips tags, checks visible text + alt/title/aria-label/
+// placeholder attributes, and only hard-fails on template chrome — card
+// content is that policy's job, not this test's.
 assert.match(enIndexHtml, /<h2>This month<\/h2>/, 'English homepage must render the translated month section heading');
 assert.match(enIndexHtml, /aria-label="Remaining days of the month"/, 'English homepage calendar strip must carry the translated aria-label');
-assert.doesNotMatch(enIndexHtml.match(/<section class="h-section" id="month"[^>]*>[\s\S]*?<\/section>/)?.[0] || '', /[ء-ي]/u, 'English month section must contain no leftover Arabic characters');
+const enMonthSectionHtml = enIndexHtml.match(/<section class="h-section" id="month"[^>]*>[\s\S]*?<\/section>/)?.[0] || '';
+const enMonthChromeMatch = enMonthSectionHtml.match(/<div class="cal-strip"[\s\S]*?(?=<div class="card-row")/);
+assert.ok(enMonthChromeMatch, 'English month section must expose the cal-strip + h-section-head chrome block ahead of the card row');
+assert.doesNotMatch(enMonthChromeMatch[0], /[ء-ي]/u, 'English month section chrome (calendar strip + section head) must contain no leftover Arabic characters');
 
 console.log(`home-month-calendar-regression-test: ok month_events=${expectedMonth.length} remaining_days=${expectedDays.length} linked_days=${expectedLinkedDays.length}`);

@@ -15,6 +15,33 @@ assert.ok(registry.routes.length > 1000, 'all public routes must be localized');
 let eventDetailScriptChecked = false;
 let eventJsonLdNodesChecked = 0;
 
+// WO Aug1 (2026-08 source-sync freeze recovery): regression coverage for
+// three localizer leaks fixed this cycle in scripts/generate-localized-
+// site.mjs — translateText()/wordReplacementPatterns/stripEmbeddedLabel
+// aren't exported (the file runs top-level build side effects at import
+// time, so it can't be safely required for unit testing), so — consistent
+// with this file's existing built-output idiom (see the corrupted-Arabic-
+// word PM/AM check in inspect() below) — these are pinned against the
+// actual dist/en build output rather than unit-tested in isolation.
+//
+// (a) trust-tooltip chrome leak: "المصدر: X · آخر تحقق: DATE" must translate
+//     in full, with no leftover Arabic and an explicit "Last verified:".
+// (b) month/day word-boundary corruption: a blind replaceAll('الأحد',
+//     'Sunday') turns "الأحداث" (events) into "Sundayاث" — reproduced by
+//     dist/en/this-week.html's hero description, which contains "الأحداث"
+//     and must never contain the corrupted "Sundayاث" fusion.
+// (c) embedded "الموقع:"/"المنظم:" chrome leak: the recurring-debt report's
+//     top offender ("The event takes place in Dhahran, الموقع: Children's
+//     Museum.") must be fully translated with no leftover Arabic.
+let trustTooltipChecked = false;
+let venueLeakChecked = false;
+// Same targeted idiom as the PM/AM corrupted-word check below (not a bare
+// Latin/Arabic-adjacency regex, which would false-positive on ordinary mixed
+// strings like "EventLive على" or a city name next to a source label): only
+// the 19 words the localizer's wordReplacements table can corrupt.
+const MONTH_DAY_WORDS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const WORD_FUSION_PATTERN = new RegExp(`[ء-ي](?:${MONTH_DAY_WORDS.join('|')})|(?:${MONTH_DAY_WORDS.join('|')})[ء-ي]`, 'u');
+
 function collectEventJsonLd(value, events = []) {
   if (Array.isArray(value)) {
     for (const item of value) collectEventJsonLd(item, events);
@@ -139,6 +166,14 @@ for (const route of registry.routes) {
     const serialized = JSON.stringify(value);
     assert.ok(!serialized.includes('https://eventme.live/events/'), `${relative} English JSON-LD points to an Arabic event route`);
     assert.ok(!/(?:Day|Cities|PM|AM)[\u0621-\u064a]|[\u0621-\u064a](?:Day|Cities|PM|AM)/u.test(serialized), `${relative} English JSON-LD contains a mixed-language word`);
+    // WO Aug1 (b): the same class of corruption, extended to every month/day
+    // name the localizer's wordReplacements table can fuse into an Arabic
+    // word (e.g. "\u0627\u0644\u0623\u062d\u062f\u0627\u062b" -> "Sunday\u0627\u062b" from a blind replaceAll('\u0627\u0644\u0623\u062d\u062f',
+    // 'Sunday')). JSON-LD FAQ/Event text goes through a separate code path
+    // (localizeJsonLdValue) from plain HTML text nodes, so this is checked
+    // here independently of the WORD_FUSION_PATTERN check on visible text
+    // below.
+    assert.ok(!WORD_FUSION_PATTERN.test(serialized), `${relative} English JSON-LD contains a month/day name fused into an Arabic word (word-boundary regression): ${serialized.match(WORD_FUSION_PATTERN)?.[0]}`);
     if (value && typeof value === 'object' && !Array.isArray(value)) {
       if (value['@type'] === 'WebSite') {
         assert.deepEqual(value.inLanguage, ['ar-SA', 'en-SA'], 'the global WebSite entity must declare both supported languages');
@@ -147,7 +182,40 @@ for (const route of registry.routes) {
       }
     }
   });
+
+  // WO Aug1 (b): same word-fusion check on the visible HTML surface (not
+  // just JSON-LD) \u2014 reproduced concretely by dist/en/this-week.html's hero
+  // description, which legitimately contains "\u0627\u0644\u0623\u062d\u062f\u0627\u062b" and must never
+  // render the corrupted "Sunday\u0627\u062b" fusion.
+  assert.ok(!WORD_FUSION_PATTERN.test(en.source), `${relative} contains a month/day name fused into an Arabic word (word-boundary regression): ${en.source.match(WORD_FUSION_PATTERN)?.[0]}`);
+
+  // WO Aug1 (a): trust-tooltip chrome leak \u2014 "\u0627\u0644\u0645\u0635\u062f\u0631: X \u00b7 \u0622\u062e\u0631 \u062a\u062d\u0642\u0642: DATE"
+  // must translate in full. Checked wherever it occurs (not every route has
+  // a trust span) so the test still fails loudly if the pattern regresses.
+  const trustTitles = [...en.source.matchAll(/class="trust" title="([^"]*)"/g)].map((match) => match[1]);
+  for (const title of trustTitles) {
+    assert.ok(!/[\u0621-\u064a]/u.test(title), `${relative} trust tooltip still contains Arabic: ${title}`);
+    assert.match(title, /Last verified:/, `${relative} trust tooltip must translate "\u0622\u062e\u0631 \u062a\u062d\u0642\u0642:" to "Last verified:"`);
+    trustTooltipChecked = true;
+  }
+
+  // WO Aug1 (c): embedded "\u0627\u0644\u0645\u0648\u0642\u0639:"/"\u0627\u0644\u0645\u0646\u0638\u0645:" chrome leak \u2014 the recurring-
+  // debt report's top three offenders were all variants of "The event takes
+  // place in <city>, \u0627\u0644\u0645\u0648\u0642\u0639: <venue>." (33/30/29 pages). Scoped to that
+  // exact comma-prefixed chrome signature, not a bare substring check \u2014 raw
+  // event.description prose (unrelated, still-pending MT content, tolerated
+  // by en-surface-sweep's own policy) can legitimately contain "\u0627\u0644\u0645\u0648\u0642\u0639:"/
+  // "\u0627\u0644\u0645\u0646\u0638\u0645:" as part of an ordinary Arabic sentence.
+  const embeddedLabelLeak = /,\s*(?:\u0627\u0644\u0645\u0648\u0642\u0639|\u0627\u0644\u0645\u0646\u0638\u0645):/u.test(en.source);
+  assert.ok(!embeddedLabelLeak, `${relative} exposes an untranslated "\u0627\u0644\u0645\u0648\u0642\u0639:"/"\u0627\u0644\u0645\u0646\u0638\u0645:" label embedded in the "takes place in" sentence chrome`);
+  // Anchored on content, not a specific event slug (which can shift as the
+  // catalog churns) \u2014 passes whichever currently-built page reproduces the
+  // exact reports/i18n-en-surface.json top offender.
+  if (en.source.includes("The event takes place in Dhahran, Venue: Children's Museum.")) venueLeakChecked = true;
 }
+
+assert.ok(trustTooltipChecked, 'expected at least one built EN page with a trust tooltip to validate the "\u0622\u062e\u0631 \u062a\u062d\u0642\u0642:" -> "Last verified:" translation fix');
+assert.ok(venueLeakChecked, "expected to find the Dhahran/Children's Museum venue-leak reproduction case (reports/i18n-en-surface.json's top recurring-debt example) among the built EN event pages");
 
 const sitemap = fs.readFileSync(path.join(dist, 'sitemap.xml'), 'utf8');
 const locCount = [...sitemap.matchAll(/<loc>/g)].length;
