@@ -86,6 +86,19 @@ jobs:
       - name: Build EventLive public site
         run: npm run build
 
+      - name: Site gates CI battery (WO: gates that ran in no CI battery, ~35s)
+        # Root cause: these 30 launch:site-gates checks (test:home-data through
+        # test:site-launch-sweep, see package.json's ci:site-gates script) had
+        # never been wired into any CI workflow, so regressions in them (e.g.
+        # the stale organizers/home-data assertions healed in this PR) rotted
+        # silently until someone ran `npm run launch:preflight` by hand.
+        # Measured at ~35s total — negligible against this pipeline's runtime.
+        # test:prelaunch-data-quality is deliberately excluded here (see its
+        # non-blocking step in source-sync.yml): it is content-state-dependent
+        # and belongs to the sync pipeline that actually changes catalog data,
+        # not this build/deploy pipeline.
+        run: npm run ci:site-gates
+
       - name: Verify search and AI discovery contracts
         run: |
           npm run test:sitemap
