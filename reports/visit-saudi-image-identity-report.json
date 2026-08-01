@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T19:41:39.207Z",
+  "generated_at": "2026-08-01T10:13:31.293Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -10,9 +10,9 @@
   },
   "totals": {
     "pdf_crop_assignments": 61,
-    "verified": 60,
-    "struck": 1,
-    "slots_seen_this_cycle": 65
+    "verified": 58,
+    "struck": 3,
+    "slots_seen_this_cycle": 63
   },
   "struck": [
     {
@@ -23,6 +23,20 @@
       "detail": "page 6 top-left is now \"بلاتو\"",
       "matched_tokens": [],
       "ratio": 0
+    },
+    {
+      "id": "event-نسمة-في-الطائف",
+      "title": "نسمة في الطائف",
+      "file": "visit-saudi-summer-2026-p078-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 78 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-2",
+      "title": "منعً في للاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد",
+      "file": "visit-saudi-summer-2026-p061-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 61 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     }
   ],
   "verified": [
@@ -412,15 +426,6 @@
       ]
     },
     {
-      "id": "event-نسمة-في-الطائف",
-      "title": "نسمة في الطائف",
-      "file": "visit-saudi-summer-2026-p078-top-right.jpg",
-      "matched_tokens": [
-        "نسمه",
-        "الطايف"
-      ]
-    },
-    {
       "id": "event-ورث-الفن",
       "title": "ورث الفن",
       "file": "visit-saudi-summer-2026-p058-top-left.jpg",
@@ -506,20 +511,6 @@
         "صيف",
         "ورث",
         "2026"
-      ]
-    },
-    {
-      "id": "event-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-2",
-      "title": "منعً في للاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد",
-      "file": "visit-saudi-summer-2026-p061-top-right.jpg",
-      "matched_tokens": [
-        "منع",
-        "للاحراج",
-        "عرض",
-        "ستاند",
-        "كوميدي",
-        "عبدالرحمن",
-        "محمد"
       ]
     },
     {

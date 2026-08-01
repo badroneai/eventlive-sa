@@ -1,18 +1,11 @@
 {
-  "checked_at": "2026-07-31T19:43:17.996Z",
-  "targets": 9,
+  "checked_at": "2026-08-01T10:14:55.954Z",
+  "targets": 8,
   "evidence_found": 7,
   "changed": 0,
-  "no_evidence": 2,
+  "no_evidence": 1,
   "failed": 0,
   "results": [
-    {
-      "id": "event-unstable",
-      "host": "nofomo.com",
-      "url": "https://nofomo.com/collections/unstable",
-      "status": "no-evidence",
-      "reason": "no-explicit-public-price"
-    },
     {
       "id": "event-beast-house",
       "host": "nofomo.com",

@@ -1,19 +1,18 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-07-31T19:41:37.534Z
+- published_at: 2026-08-01T10:13:29.635Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 568
-- published_new: 7
-- linked_existing: 522
-- blocked_remaining: 39
+- candidates_seen: 566
+- published_new: 10
+- linked_existing: 518
+- blocked_remaining: 38
 - duplicate_review_alerts: 8
 
 ## Blocked summary
 
 - possible duplicate requires review: exact-title-city-source-conflict: 6
 - linked catalog row event-aseer-season was superseded by dedupe: 2
-- linked catalog row event-nasma-in-taif was superseded by dedupe: 1
 - publication gate source-evidence is not auto-publishable: 14
 - unknown category requires review: 10
 - possible duplicate already exists: event-saudi-industrial-series-2: 1
@@ -30,7 +29,10 @@
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
-| candidate-visit-saudi-calendar-pdf-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-20260731-4a38d19e | published | event-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-2 | منعً في لاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد |
+| candidate-future-skills-catalog-machine-learning-التعلم-الالي-20260809-13b057e2 | published | event-machine-learning-التعلم-الالي | ⁠Machine Learning - التعلم الالي |
+| candidate-future-skills-catalog-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل-20260809-ae5af682 | published | event-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل | GenAI for Data Analysis and Decision Support - الذكاء الاصطناعي التوليدي لتحليل البيانات ودعم اتخاذ القرار |
+| candidate-future-skills-catalog-comptia-cloud-20260809-8946f510 | published | event-comptia-cloud | ⁠CompTIA Cloud+ |
+| candidate-misk-hub-programs-application-deadline-virtual-work-experience-data-analysis-at-stc-20261215-cd0206e7 | published | event-application-deadline-virtual-work-experience-data-analysis-at-stc | Application deadline: Virtual Work Experience - Data analysis at STC |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -147,7 +149,6 @@
 | candidate-visit-saudi-calendar-pdf-الاخطبوطية-20260704-4a38d19e | linked-existing | event-الأخطبوطية | trusted duplicate linked to existing catalog event |
 | candidate-riyadh-city-events-registration-for-international-research-competition-on-non-terrestrial-n-20260704-61ba0723 | linked-existing | event-registration-for-international-research-competition-on-non-terrestrial-n | already linked to catalog event |
 | candidate-visit-saudi-calendar-okhtabotiya-20260704-914f9dce | linked-existing | event-okhtabotiya | already linked to catalog event |
-| candidate-visit-saudi-calendar-pdf-نسمة-في-الطائف-20260705-4a38d19e | linked-existing | event-نسمة-في-الطائف | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية-20260705-60b7f94b | linked-existing | event-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-ورث-الفن-20260706-4a38d19e | linked-existing | event-ورث-الفن | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-taste-of-the-world-20260706-4a38d19e | linked-existing | event-taste-of-the-world | already linked to catalog event |
@@ -182,23 +183,18 @@
 | candidate-visit-saudi-calendar-pdf-صيف-وِرث-2026-20260730-4a38d19e | linked-existing | event-صيف-وِرث-2026 | already linked to catalog event |
 | candidate-discover-aseer-events-summer-legacy-20260730-aaba4732 | linked-existing | event-summer-legacy | already linked to catalog event |
 | candidate-visit-saudi-seasons-tour-of-al-baha-20260730-7b170410 | linked-existing | event-tour-of-al-baha | already linked to catalog event |
-| candidate-mdlbeast-events-unstable-20260731-5647df2e | linked-existing | event-unstable | already linked to catalog event |
-| candidate-visit-saudi-calendar-pdf-منعً-في-للاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-20260731-4a38d19e | linked-existing | event-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-2 | trusted duplicate linked to existing catalog event |
-| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260731-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
-| candidate-ithra-events-echoes-of-the-familiar-20260731-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
-| candidate-mdlbeast-events-beast-house-20260731-83049a2a | linked-existing | event-beast-house | already linked to catalog event |
 | candidate-discover-aseer-events-musical-concerts-20260801-169733ac | linked-existing | event-musical-concerts | already linked to catalog event |
 | candidate-dhahran-expo-calendar-private-graduation-20260801-18d15b29 | linked-existing | event-private-graduation | already linked to catalog event |
 | candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260801-f563a36e | linked-existing | event-ithra-summer-camp-2026-a-world-of-homes | already linked to catalog event |
 | candidate-ithra-events-printing-house-20260801-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
 | candidate-ithra-events-tafasahu-make-room-20260801-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
 | candidate-ithra-events-tinkering-stations-20260801-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
-| candidate-ithra-events-toddler-saturday-20260801-739e1f00 | linked-existing | event-toddler-saturday | already linked to catalog event |
-| candidate-ithra-events-petals-and-pals-arabic-20260801-fd317dc1 | linked-existing | event-petals-and-pals-arabic | already linked to catalog event |
-| candidate-ithra-events-spot-of-inspiration-20260801-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
-| candidate-ithra-events-childrens-museum-story-time-20260801-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
+| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260801-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
+| candidate-ithra-events-echoes-of-the-familiar-20260801-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-ithra-events-story-land-20260801-bb5dc01b | linked-existing | event-story-land | already linked to catalog event |
 | candidate-ithra-events-childrens-art-studio-20260801-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
+| candidate-ithra-events-spot-of-inspiration-20260801-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
+| candidate-ithra-events-childrens-museum-story-time-20260801-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-emboss-printing-experience-20260801-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-ithra-events-family-challenges-20260801-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
 | candidate-ithra-events-games-hub-20260801-fb83124c | linked-existing | event-games-hub | already linked to catalog event |
@@ -249,6 +245,8 @@
 | candidate-ithra-events-dots-on-letters-20260807-b8901d67 | linked-existing | event-dots-on-letters | already linked to catalog event |
 | candidate-ithra-events-family-game-20260807-fff43c76 | linked-existing | event-family-game | already linked to catalog event |
 | candidate-visit-saudi-calendar-hussain-moheb-live-in-riyadh-20260807-0f7ed5bd | linked-existing | event-hussain-moheb-live-in-riyadh | already linked to catalog event |
+| candidate-mdlbeast-events-beast-house-20260807-83049a2a | linked-existing | event-beast-house | already linked to catalog event |
+| candidate-ithra-events-toddler-saturday-20260808-739e1f00 | linked-existing | event-toddler-saturday | already linked to catalog event |
 | candidate-ithra-events-1-2-3-lets-rhyme-20260808-4d37515a | linked-existing | event-1-2-3-lets-rhyme | already linked to catalog event |
 | candidate-ithra-events-unbox-your-story-20260808-5085a6f0 | linked-existing | event-unbox-your-story | already linked to catalog event |
 | candidate-ithra-events-nu-power-20260808-653464ac | linked-existing | event-nu-power | already linked to catalog event |
@@ -558,7 +556,6 @@
 | candidate-visit-saudi-calendar-aseer-season-20260625-2fc92ef9 | blocked | - | linked catalog row event-aseer-season was superseded by dedupe |
 | candidate-discover-aseer-events-summer-season-2026-20260625-cf53fd7f | blocked | - | linked catalog row event-aseer-season was superseded by dedupe |
 | candidate-discover-aseer-events-mahabah-20260702-f59a5d12 | blocked | event-mahabah | possible duplicate requires review: exact-title-city-source-conflict |
-| candidate-visit-saudi-seasons-nasma-in-taif-20260705-0d373057 | blocked | - | linked catalog row event-nasma-in-taif was superseded by dedupe |
 | candidate-eye-of-riyadh-events-esports-world-cup-20260706-13ed17c1 | blocked | event-esports-world-cup | possible duplicate requires review: exact-title-city-source-conflict |
 | candidate-saudicon-events-بطولة-كأس-العالم-للرياضات-الإلكترونية-20260706-c111699c | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eye-of-riyadh-events-oxford-future-of-real-estate-programme-20260805-7c9ee195 | blocked | - | unknown category requires review |

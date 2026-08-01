@@ -1,8 +1,8 @@
 # Misk Program Enrichment Report
 
-- generated_at: 2026-07-31T19:42:22.349Z
-- targets: 12
-- enriched: 12
+- generated_at: 2026-08-01T10:14:07.975Z
+- targets: 13
+- enriched: 13
 - failed: 0
 
 ## Enriched
@@ -19,6 +19,7 @@
 - Misk Launchpad - goals=1, features=4, requirements=6, registration_deadline=2026-08-08T18:00:00+03:00
 - Samsung Innovation Campus AI Program - goals=1, features=1, requirements=0, registration_deadline=2026-09-23T18:00:00+03:00
 - Global Exposure Program - goals=1, features=4, requirements=0, registration_deadline=2026-09-30T18:00:00+03:00
+- Virtual Work Experience - Data analysis at stc - goals=1, features=4, requirements=0, registration_deadline=2026-12-15T18:00:00+03:00
 
 ## Failed
 

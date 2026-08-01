@@ -1,14 +1,16 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-07-31T19:41:39.207Z
+- generated_at: 2026-08-01T10:13:31.293Z
 - pdf_crop_assignments: 61
-- verified: 60
-- struck: 1
-- slots_seen_this_cycle: 65
+- verified: 58
+- struck: 3
+- slots_seen_this_cycle: 63
 
 ## Struck (fell back to generated cover)
 
 - باتو (visit-saudi-summer-2026-p006-top-left.jpg) - identity-mismatch - page 6 top-left is now "بلاتو"
+- نسمة في الطائف (visit-saudi-summer-2026-p078-top-right.jpg) - slot-vacated - no dated card currently occupies page 78 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- منعً في للاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد (visit-saudi-summer-2026-p061-top-right.jpg) - slot-vacated - no dated card currently occupies page 61 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 
@@ -53,7 +55,6 @@
 - مزرعة التوت الاسود (visit-saudi-summer-2026-p010-bottom-right.jpg)
 - مهابة (visit-saudi-summer-2026-p011-bottom-left.png)
 - الاخطبوطية (visit-saudi-summer-2026-p056-bottom-left.jpg)
-- نسمة في الطائف (visit-saudi-summer-2026-p078-top-right.jpg)
 - ورث الفن (visit-saudi-summer-2026-p058-top-left.jpg)
 - Taste of the World (visit-saudi-summer-2026-p058-top-right.jpg)
 - مهرجان المأكولات الشعبية (visit-saudi-summer-2026-p057-top-right.jpg)
@@ -63,7 +64,6 @@
 - صيف وسمرة (visit-saudi-summer-2026-p012-top-left.jpg)
 - أوركسترا Harry Potter (visit-saudi-summer-2026-p060-bottom-left.jpg)
 - صيف وِرث 2026 (visit-saudi-summer-2026-p012-top-right.jpg)
-- منعً في للاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد (visit-saudi-summer-2026-p061-top-right.jpg)
 - ضحكات الرياض (visit-saudi-summer-2026-p061-top-left.jpg)
 - أوركسترا Game of Thrones (visit-saudi-summer-2026-p061-bottom-left.jpg)
 - بطولة أبطال المملكة للشطرنج (visit-saudi-summer-2026-p062-top-right.jpg)

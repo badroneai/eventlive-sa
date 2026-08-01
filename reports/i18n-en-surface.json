@@ -1,26 +1,10 @@
 {
   "schema": "eventlive.i18n-en-surface.v1",
-  "generated_at": "2026-07-31T19:52:44.620Z",
-  "pages_scanned": 1515,
-  "pages_with_arabic": 364,
+  "generated_at": "2026-08-01T10:23:49.064Z",
+  "pages_scanned": 1519,
+  "pages_with_arabic": 245,
   "template_regressions": [],
-  "recurring_surface_debt": [
-    {
-      "text": "The event takes place in Riyadh, الموقع: Riyadh Front Exhibition &amp; Conference Center.",
-      "pages": 33,
-      "example": "events/ended-rfecc-whats-on-25th-wpc-petrolium-congress-20260426-3dbe9e43.html"
-    },
-    {
-      "text": "The event takes place in Dhahran, الموقع: Children's Museum.",
-      "pages": 30,
-      "example": "events/ended-ithra-events-at-elevation-20260528-01e15523.html"
-    },
-    {
-      "text": "The event takes place in Dhahran, الموقع: Library - Level 2.",
-      "pages": 29,
-      "example": "events/ended-ithra-events-audience-challenge-20260528-f3e17d99.html"
-    }
-  ],
-  "recurring_total": 3,
-  "content_prose_lines": 941
+  "recurring_surface_debt": [],
+  "recurring_total": 0,
+  "content_prose_lines": 904
 }

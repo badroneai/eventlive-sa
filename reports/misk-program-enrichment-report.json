@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-31T19:42:22.349Z",
+  "generated_at": "2026-08-01T10:14:07.975Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 12,
-    "enriched": 12,
+    "targets": 13,
+    "enriched": 13,
     "failed": 0
   },
   "enriched": [
@@ -102,6 +102,14 @@
       "features": 4,
       "requirements": 0,
       "registration_deadline": "2026-09-30T18:00:00+03:00"
+    },
+    {
+      "id": "event-application-deadline-virtual-work-experience-data-analysis-at-stc",
+      "title": "Virtual Work Experience - Data analysis at stc",
+      "goals": 1,
+      "features": 4,
+      "requirements": 0,
+      "registration_deadline": "2026-12-15T18:00:00+03:00"
     }
   ],
   "failed": []

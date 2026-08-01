@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-31T19:41:50.917Z",
+  "generated_at": "2026-08-01T10:13:42.608Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 11,
-    "enriched": 11,
+    "targets": 14,
+    "enriched": 14,
     "failed": 0
   },
   "enriched": [
@@ -103,6 +103,33 @@
       "group_id": "13047",
       "goals": 1,
       "features": 3,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-machine-learning-التعلم-الالي",
+      "title": "Machine Learning - التعلم الالي",
+      "group_id": "13048",
+      "goals": 1,
+      "features": 5,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل",
+      "title": "GenAI for Data Analysis and Decision Support - الذكاء الاصطناعي التوليدي لتحليل البيانات ودعم اتخاذ القرار",
+      "group_id": "13049",
+      "goals": 1,
+      "features": 2,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-comptia-cloud",
+      "title": "CompTIA Cloud+",
+      "group_id": "13050",
+      "goals": 1,
+      "features": 19,
       "requirements": 4,
       "metadata": 8
     }
