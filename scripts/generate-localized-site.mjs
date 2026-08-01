@@ -63,6 +63,37 @@ for (const event of catalogEvents) {
 }
 const runtimeScriptCache = new Map();
 
+// Generated covers (scripts/generate-site.mjs's fallbackCover()) bake the
+// event title as SVG text, so the same /assets/event-covers/<slug>.svg URL
+// showing on both / and /en/ ships Arabic-baked images to English visitors.
+// generate-site.mjs writes an English-baked sibling at
+// assets/event-covers/en/<slug>.svg for every generated cover whose EN
+// title resolved to genuine non-Arabic text (see fallbackCoverEn() there,
+// and resolveEventTitleEn() — the same title_en resolution as the `exact`
+// map above, duplicated there because that file may not touch this file's
+// title_en assignment). rewriteCoverUrlForEnglish() swaps any reference to
+// the AR cover URL — absolute, root-relative, or page-relative — to that EN
+// variant WHEN it exists on disk (build order: generate-site.mjs always
+// runs before this file, so every EN variant it decided to write already
+// exists by the time this scan runs). Real photos under
+// /assets/event-images/ are language-neutral and never match this pattern,
+// so they pass through untouched. Events with no cached EN translation keep
+// referencing the Arabic cover on /en/ (an intentional fallback, not a bug —
+// see the PM design note in the covers PR).
+const coversEnDir = path.join(distDir, 'assets', 'event-covers', 'en');
+const enCoverSlugs = new Set(
+  fs.existsSync(coversEnDir)
+    ? fs.readdirSync(coversEnDir).filter((name) => name.endsWith('.svg')).map((name) => name.slice(0, -4))
+    : []
+);
+
+function rewriteCoverUrlForEnglish(value) {
+  const text = String(value || '');
+  const match = text.match(/event-covers\/([^/?#]+)\.svg/);
+  if (!match || !enCoverSlugs.has(match[1])) return text;
+  return `${text.slice(0, match.index)}event-covers/en/${match[1]}.svg${text.slice(match.index + match[0].length)}`;
+}
+
 function writeIfChanged(filePath, value) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
   if (fs.existsSync(filePath) && fs.readFileSync(filePath, 'utf8') === value) return false;
@@ -804,7 +835,7 @@ function rewriteEnglishAssetUrls($, relativePath) {
       return;
     }
     if (/\.(?:css|js|png|jpe?g|webp|svg|ico|woff2?|webmanifest)$/i.test(clean) || clean.startsWith('assets/')) {
-      $(element).attr(attr, `/${clean}`);
+      $(element).attr(attr, rewriteCoverUrlForEnglish(`/${clean}`));
     }
   });
 }
@@ -932,6 +963,12 @@ function localizeJsonLdValue(value, key = '') {
   if (typeof value !== 'string') return value;
   if (key === 'inLanguage') return 'en-SA';
   if (key === '@id' && /\/#(?:website|organization)$/.test(value)) return value;
+  // Event.image (and any other JSON-LD field) can carry an absolute
+  // generated-cover URL (see schemaImage in generate-site.mjs); swap it to
+  // the EN variant before the generic englishUrl() pass below, which only
+  // rewrites .html/root paths and would otherwise leave the AR-baked cover
+  // URL untouched on English structured data.
+  if (value.includes('assets/event-covers/')) return rewriteCoverUrlForEnglish(value);
   if (value.startsWith(`${siteUrl}/`)) return englishUrl(value);
   // WO: same leak class as translateMetaText() above — an exact-map hit for
   // a structured-data field (e.g. Event.location.name) can itself carry an
@@ -992,6 +1029,16 @@ function englishMeta($, relativePath) {
   $('meta[property="og:title"]').attr('content', $('title').text());
   $('meta[name="twitter:title"]').attr('content', $('title').text());
   $('meta[name="twitter:description"]').attr('content', generic);
+  // Share-preview images: og:image/twitter:image content is an absolute
+  // https://eventme.live/... URL (see baseHead() in generate-site.mjs), so
+  // rewriteEnglishAssetUrls() never sees it (it skips absolute values).
+  // Swap it here the same way, for any page — not only event pages — since
+  // generated-cover URLs never appear elsewhere.
+  for (const selector of ['meta[property="og:image"]', 'meta[name="twitter:image"]']) {
+    const node = $(selector);
+    const content = node.attr('content');
+    if (content) node.attr('content', rewriteCoverUrlForEnglish(content));
+  }
 }
 
 function prepareArabic(html, relativePath) {
@@ -1042,7 +1089,8 @@ function translateCatalog() {
       || event.category_label,
     summary: `Official listing for ${event.title} in ${event.city || event.city_label || 'Saudi Arabia'}. Check the event page for verified timing, venue, directions, and source details.`,
     audience_labels: (event.audience_labels || []).map((audience) => ({ ...audience, label: exact[audience.label] || audience.label })),
-    ics_url: event.ics_url ? String(event.ics_url).replace(/^\.\//, '/') : event.ics_url
+    ics_url: event.ics_url ? String(event.ics_url).replace(/^\.\//, '/') : event.ics_url,
+    image_url: rewriteCoverUrlForEnglish(event.image_url)
   }));
   fs.writeFileSync(path.join(enDir, 'events-catalog.json'), `${JSON.stringify({ ...envelope, locale: 'en-SA', events }, null, 2)}\n`);
 }
@@ -1088,6 +1136,11 @@ const FEED_LABEL_STRIP_KEYS = new Set(['venue', 'venue_address', 'organizer', 'r
 const EMBEDDED_LABEL_PREFIX = /^(?:الموقع|المنظم):\s*/u;
 
 function translateFeedValue(value, key) {
+  // image_url carries no Arabic letters (it's a URL), so it would never
+  // reach the translation branches below — the live/today client-rendered
+  // feeds (today.json, this-week.json, …) need the same AR->EN cover swap
+  // applied explicitly, or their cards keep showing the Arabic-baked cover.
+  if (key === 'image_url') return typeof value === 'string' ? rewriteCoverUrlForEnglish(value) : value;
   if (typeof value !== 'string' || !/[ء-ي]/u.test(value)) return value;
   if (FEED_PATTERN_KEYS.has(key)) return translateText(value);
   if (FEED_LABEL_STRIP_KEYS.has(key)) {
