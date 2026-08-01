@@ -86,7 +86,7 @@ jobs:
       - name: Build EventLive public site
         run: npm run build
 
-      - name: Site gates CI battery (WO: gates that ran in no CI battery, ~35s)
+      - name: Site gates CI battery (gates previously wired into no CI battery, ~35s)
         # Root cause: these 30 launch:site-gates checks (test:home-data through
         # test:site-launch-sweep, see package.json's ci:site-gates script) had
         # never been wired into any CI workflow, so regressions in them (e.g.
