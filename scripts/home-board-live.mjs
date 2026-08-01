@@ -57,8 +57,21 @@ export function homeBoardLiveCard({ title, meta, url } = {}, index = 0) {
 }
 
 /**
- * Prev/next arrows + dot indicators. Omitted entirely when there is nothing
- * to navigate between (0 or 1 live card).
+ * Prev/next arrows + dot indicators, plus a compact "N/total" counter
+ * between the arrows. Omitted entirely when there is nothing to navigate
+ * between (0 or 1 live card).
+ *
+ * The dots row is what made board chrome catalog-state-sensitive: each dot
+ * is a real 44x44 touch target, so every extra live event pushed the row to
+ * wrap onto another line, growing the board and pushing the first section
+ * below the mobile fold (measured: 16 live events -> 3 dot rows -> the
+ * "home first-section <=700px @360px" mobile-browsing assertion goes red).
+ * The counter's width never changes with live count (it is always "N/M"),
+ * so brandCss (scripts/generate-site.mjs) hides .board-live-dots and shows
+ * .board-live-count at narrow widths — see the mobile-first-section-budget
+ * comment there. The counter is aria-hidden: the dot group still carries
+ * the accessible role="group" + per-dot aria-label, this is a visual-only
+ * substitute for it, not a second live region.
  */
 export function homeBoardLiveNav(count) {
   if (count <= 1) return '';
@@ -66,6 +79,7 @@ export function homeBoardLiveNav(count) {
   return `<div class="board-live-nav">
             <div class="board-live-arrows">
               <button type="button" class="board-live-arrow board-live-prev" aria-label="الفعالية السابقة">&rsaquo;</button>
+              <span class="board-live-count" aria-hidden="true"><b class="board-live-count-current">1</b><span class="board-live-count-sep">/</span><span class="board-live-count-total">${count}</span></span>
               <button type="button" class="board-live-arrow board-live-next" aria-label="الفعالية التالية">&lsaquo;</button>
             </div>
             <div class="board-live-dots" id="boardLiveDots" role="group" aria-label="التنقل بين الفعاليات المباشرة">${dots}</div>

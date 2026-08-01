@@ -144,6 +144,15 @@ const brandCss = `<style id="eventlive-brand-pulse">
 .attendance-fact { min-width:0; padding:11px 0; border-bottom:1px solid var(--line); }
 .attendance-fact dt { color:var(--muted); font-size:.78rem; }
 .attendance-fact dd { margin:2px 0 0; color:var(--ink); font-weight:700; overflow-wrap:anywhere; }
+/* WO-mobile-first-section-budget: the "home first-section <=700px @360px"
+   mobile-browsing assertion is catalog-state-sensitive when the live board
+   nav renders one 44x44 dot button per live event (measured: 16 live
+   events -> 3 wrapped dot rows -> board chrome grows -> assertion goes
+   red). The compact "N/total" counter (scripts/home-board-live.mjs) is a
+   fixed-width substitute for the dots row; the media query below swaps to
+   it under 640px so board chrome height stays constant regardless of live
+   count. Hidden by default (desktop keeps the dots). */
+.site-head + .hero .board-live-count { display:none; }
 @media (prefers-reduced-motion: reduce) {
   .brand-word .live-i::after { animation: none; opacity: 1; box-shadow: 0 0 0 3px rgba(229, 72, 77, .18); }
 }
@@ -234,6 +243,34 @@ const brandCss = `<style id="eventlive-brand-pulse">
   .date-tab.date-tab-range { padding:4px 6px 3px; gap:2px; }
   .date-tab.date-tab-range .date-tab-part b { font-size:11.5px; }
   .date-tab.date-tab-range .date-tab-part span { font-size:7.5px; }
+}
+/* WO-mobile-first-section-budget: state-proof mobile board nav. Below
+   640px, replace the per-event dot row with the fixed-width counter so
+   .board-live-nav height never grows with live-event count (class ban:
+   nav chrome must be constant regardless of catalog state). Desktop (and
+   640-760px) keeps the dots — only this narrower band swaps. */
+@media (max-width: 640px) {
+  .site-head + .hero .board-live-nav {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:nowrap;
+    gap:8px;
+  }
+  .site-head + .hero .board-live-dots { display:none; }
+  .site-head + .hero .board-live-count {
+    display:inline-flex;
+    align-items:center;
+    gap:3px;
+    min-height:44px;
+    padding:0 2px;
+    color:#fff;
+    font-size:13px;
+    font-weight:700;
+    white-space:nowrap;
+  }
+  .site-head + .hero .board-live-count-sep { opacity:.6; }
 }
 </style>`;
 
@@ -2675,6 +2712,54 @@ function writeFacetPages(events) {
       events: group.events,
       canonicalPath: `categories/${slug}.html`
     });
+  }
+}
+
+// Legacy category URL hygiene: technology-training was merged into
+// technology-innovation in the taxonomy (see category-taxonomy.mjs's
+// CATEGORY_ALIASES entry ['technology-training', 'technology-innovation']),
+// so writeFacetPages() above no longer emits categories/technology-training
+// .html — but that URL was public for a long time and now 404s. Rather than
+// let a real inbound/bookmarked URL die, emit a minimal redirect stub for
+// this one retired slug. Intentionally NOT generalized to every taxonomy
+// alias — only a slug that was once its own published category page earns a
+// stub here. scripts/categories-index-regression-test.mjs's
+// allowedLegacyCategoryPages grandfathers the file past the "published
+// pages must match categories.json exactly" check, and writeSitemap() below
+// (plus scripts/sitemap-coverage-regression-test.mjs) keeps it out of the
+// sitemap and out of English localization (generate-localized-site.mjs only
+// ever processes sitemap URLs).
+const LEGACY_CATEGORY_REDIRECTS = new Map([
+  ['technology-training', 'technology-innovation']
+]);
+
+function legacyCategoryRedirectFiles() {
+  return new Set([...LEGACY_CATEGORY_REDIRECTS.keys()].map((slug) => `categories/${slug}.html`));
+}
+
+function writeLegacyCategoryRedirectPages(events) {
+  const canonicalSlugs = new Set(events.map((event) => event.category_slug));
+  const categoryLabelByKey = new Map(CATEGORY_TAXONOMY.map((category) => [category.key, category.label_ar]));
+  for (const [staleSlug, currentSlug] of LEGACY_CATEGORY_REDIRECTS) {
+    // Never emit a stub pointing at a category that no longer exists.
+    if (!canonicalSlugs.has(currentSlug)) continue;
+    const targetHref = `./${currentSlug}.html`;
+    const targetLabel = categoryLabelByKey.get(currentSlug) || currentSlug;
+    const canonical = `${siteUrl}/categories/${currentSlug}.html`;
+    const html = `<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="refresh" content="0; url=${targetHref}" />
+<link rel="canonical" href="${escapeHtml(canonical)}" />
+<title>${escapeHtml(targetLabel)} — ${platformName}</title>
+</head>
+<body>
+<p>تم دمج هذا التصنيف ضمن <a href="${targetHref}">${escapeHtml(targetLabel)}</a>.</p>
+</body>
+</html>
+`;
+    writeText(path.join(categoriesDir, `${staleSlug}.html`), html);
   }
 }
 
@@ -6273,6 +6358,40 @@ ${content}
     </section>`;
 }
 
+// WO-1 mobile-nav follow-up: the live board carousel's rotation script
+// (showCard/manualStep/startAuto) lives directly in the committed
+// dist/index.html shell — it is hand-ported there, not re-templated on
+// every build (see the WO-1 comment on the `liveEvents` const above and the
+// dist/index.html shell's own "All markup is already in the DOM..." comment
+// above initBoardLiveCarousel()). The board markup itself (including the
+// new compact "N/total" counter from scripts/home-board-live.mjs) IS
+// re-templated every build via the literal .replace() below, but the JS
+// that keeps the counter's "N" in sync with the active card needs its own
+// literal-string patch here, following the same idiom as the two
+// .replace() calls in patchHomePage. Built-output guard: if the committed
+// shell's showCard() text ever drifts from the string matched below, this
+// becomes a silent no-op (html === unchanged) — scripts/mobile-browsing-
+// regression-test.mjs's `.board-live-count` assertions are what catch that
+// drift, the same way scripts/event-priority-regression-test.mjs already
+// guards the two older literal-string patches.
+function patchBoardLiveCounterRuntime(html) {
+  const oldShowCardTail = `        dots.forEach(function (dot, i) {
+            var isActive = i === activeIndex;
+            dot.classList.toggle('is-active', isActive);
+            dot.setAttribute('aria-current', isActive ? 'true' : 'false');
+          });
+        }`;
+  const newShowCardTail = `        dots.forEach(function (dot, i) {
+            var isActive = i === activeIndex;
+            dot.classList.toggle('is-active', isActive);
+            dot.setAttribute('aria-current', isActive ? 'true' : 'false');
+          });
+          var countCurrent = boardLive.querySelector('.board-live-count-current');
+          if (countCurrent) countCurrent.textContent = String(activeIndex + 1);
+        }`;
+  return html.includes(oldShowCardTail) ? html.replace(oldShowCardTail, newShowCardTail) : html;
+}
+
 function patchHomePage(events) {
   const indexPath = path.join(distDir, 'index.html');
   if (!fs.existsSync(indexPath)) return false;
@@ -6402,6 +6521,7 @@ function patchHomePage(events) {
       .replace(/(<a class="primary" id="boardCta" href=")[^"]*(")/, `$1${escapeHtml(compactEventUrl(nextEvent))}$2`);
   }
   next = hideOwnerOnlyPublicLinks(enhanceHomeRuntime(next, events));
+  next = patchBoardLiveCounterRuntime(next);
   if (next !== html) fs.writeFileSync(indexPath, next, 'utf8');
   return next !== html;
 }
@@ -6996,9 +7116,14 @@ function sitemapImageXml(event = {}) {
 
 function writeSitemap(events = []) {
   const eventByPage = new Map(events.map((event) => [`events/${event.file_slug}.html`.normalize('NFC'), event]));
+  const legacyRedirectFiles = legacyCategoryRedirectFiles();
   const sitemapPaths = [...new Set(htmlFiles(distDir)
     .map((file) => file.replace(/\\/g, '/').normalize('NFC'))
     .filter((file) => !OWNER_ONLY_PAGES.has(file))
+    // Legacy category redirect stubs (see writeLegacyCategoryRedirectPages)
+    // must never be offered to crawlers as a first-class page — their own
+    // <link rel="canonical"> already points crawlers at the real page.
+    .filter((file) => !legacyRedirectFiles.has(file))
     .map((file) => file === 'index.html' ? '' : file))];
   const urls = sitemapPaths
     .sort()
@@ -7650,6 +7775,7 @@ for (const event of eventDetailsToRender) renderEventDetail(event);
 writeIcs(events, eventDetailsToRender);
 writeSubscriptionFeeds(events);
 writeFacetPages(events);
+writeLegacyCategoryRedirectPages(events);
 writeCitiesIndexPage(events);
 writeCategoriesIndexPage(events);
 writeAudiencePages(events);

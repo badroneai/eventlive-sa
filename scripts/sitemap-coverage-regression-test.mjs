@@ -25,9 +25,20 @@ function walkHtml(directory) {
   return files;
 }
 
+// Legacy category redirect stubs (scripts/generate-site.mjs
+// LEGACY_CATEGORY_REDIRECTS, mirrored in scripts/categories-index-regression
+// -test.mjs's allowedLegacyCategoryPages) are deliberately kept out of the
+// sitemap — their own <link rel="canonical"> already points crawlers at the
+// real page — so they must not be counted as "generated HTML pages missing
+// from the sitemap" either.
+const legacyCategoryRedirectFiles = new Set([
+  'categories/technology-training.html'
+]);
+
 // WO-4: single source of truth for owner-only pages — scripts/owner-only-pages.mjs.
 const htmlFiles = walkHtml(distDir)
   .filter((file) => !OWNER_ONLY_PAGES.has(file))
+  .filter((file) => !legacyCategoryRedirectFiles.has(file))
   .sort();
 const sitemap = fs.readFileSync(sitemapPath, 'utf8');
 const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1].normalize('NFC'));

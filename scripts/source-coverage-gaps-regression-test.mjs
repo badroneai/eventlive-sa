@@ -33,7 +33,10 @@ assert.ok(Array.isArray(report.priority_queue) && report.priority_queue.length >
 assert.ok(report.priority_queue.every((item) => item.kind && item.label && item.next_action), 'priority queue rows must be actionable');
 assert.ok(report.cities.some((row) => row.key === 'Riyadh'), 'coverage report must include Riyadh');
 assert.ok(report.cities.some((row) => row.key === 'Madinah'), 'coverage report must include strategic gap cities even with no events');
-assert.ok(report.categories.some((row) => row.key === 'technology training'), 'coverage report must include technology training');
+// technology-training was merged into technology-innovation in the category
+// taxonomy (scripts/category-taxonomy.mjs CATEGORY_ALIASES); the coverage
+// report keys off the canonical slug, not the retired alias.
+assert.ok(report.categories.some((row) => row.key === 'technology-innovation'), 'coverage report must include technology innovation');
 
 const html = fs.readFileSync(htmlPath, 'utf8');
 assert.match(html, /فجوات تغطية المصادر/, 'coverage page must render its title');

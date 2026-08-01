@@ -59,7 +59,7 @@ const pages = [
   { id: 'readiness', path: '/readiness.html', required: ['جاهزية'] },
   { id: 'trust', path: '/trust.html', required: ['الثقة'] },
   { id: 'riyadh-city', path: '/cities/riyadh.html', required: ['الرياض'] },
-  { id: 'technology-category', path: '/categories/technology-training.html', required: ['تدريب تقني'] },
+  { id: 'technology-category', path: '/categories/technology-innovation.html', required: ['التقنية والابتكار'] },
   { id: 'representative-event', path: representativePath, required: ['EventLive'] }
 ];
 
