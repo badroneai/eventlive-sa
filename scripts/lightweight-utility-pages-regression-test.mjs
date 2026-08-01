@@ -107,6 +107,14 @@ for (const relativePath of utilityPages) {
 }
 
 const todayFeed = JSON.parse(readDist('today.json').toString('utf8'));
+// Since the EN feed translator landed (PR #58), dist/en/today.json carries
+// TRANSLATED titles — it is no longer a byte-copy of dist/today.json. Each
+// today page must be asserted against ITS OWN feed, or the check regresses
+// into demanding Arabic titles on the English page.
+const todayFeedByPage = {
+  'today.html': todayFeed,
+  'en/today.html': JSON.parse(readDist('en/today.json').toString('utf8'))
+};
 const target = todayFeed.queue.find((event) => {
   const start = Date.parse(event.starts_at);
   const end = Date.parse(event.ends_at || event.starts_at);
@@ -134,7 +142,8 @@ try {
     if (todayPages.has(relativePath)) {
       await page.locator('#catalogGrid .event-card').first().waitFor();
       const renderedTitle = (await page.locator('#focusTitle').textContent() || '').trim();
-      assert.ok(todayFeed.queue.some((event) => event.title === renderedTitle), `${relativePath} must render an event from today.json`);
+      const pageFeed = todayFeedByPage[relativePath] || todayFeed;
+      assert.ok(pageFeed.queue.some((event) => event.title === renderedTitle), `${relativePath} must render an event from its own locale's today.json`);
     } else {
       await page.locator('[data-event-title]').first().waitFor();
       await page.waitForFunction((title) => document.querySelector('[data-event-title]')?.textContent?.trim() === title, target.title);
