@@ -104,6 +104,7 @@
     "test:ai-search-readiness": "node scripts/ai-search-readiness-regression-test.mjs",
     "test:home-data": "node scripts/home-page-data-regression-test.mjs",
     "test:card-covers": "node scripts/card-cover-layout-regression-test.mjs",
+    "test:cover-content-freshness": "node scripts/cover-content-freshness-regression-test.mjs",
     "test:brand": "node scripts/brand-consistency-regression-test.mjs",
     "test:site-design-coverage": "node scripts/site-design-coverage-regression-test.mjs",
     "test:public-assets": "node scripts/public-asset-links-regression-test.mjs",

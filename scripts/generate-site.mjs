@@ -726,6 +726,10 @@ function coverTitleLines(title) {
   return lines.length > maxLines ? [...lines.slice(0, maxLines - 1), lines.slice(maxLines - 1).join(' ')] : lines;
 }
 
+function coverContentSignature(event) {
+  return crypto.createHash('sha1').update(`${event.title || ''}|${event.city || ''}`).digest('hex').slice(0, 16);
+}
+
 function fallbackCover(event) {
   const file = `${event.file_slug || event.id}.svg`;
   const fullPath = path.join(coversDir, file);
@@ -736,7 +740,12 @@ function fallbackCover(event) {
   const firstY = 320 - Math.round(((titleLines.length - 1) * lineHeight) / 2);
   const titleText = titleLines.map((line, index) => `<text x="700" y="${firstY + index * lineHeight}" text-anchor="middle" direction="${hasArabic ? 'rtl' : 'ltr'}" unicode-bidi="plaintext" fill="#fff" font-family="Arial, sans-serif" font-size="${fontSize}" font-weight="800" paint-order="stroke" stroke="rgba(7,35,28,.34)" stroke-width="5" stroke-linejoin="round">${escapeHtml(line)}</text>`).join('');
   const hue = Math.abs([...String(event.id || event.title)].reduce((sum, char) => sum + char.charCodeAt(0), 0)) % 360;
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788" role="img" aria-label="${escapeHtml(event.title)}"><title>${escapeHtml(event.title)}</title><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="hsl(${hue} 48% 22%)"/><stop offset="1" stop-color="hsl(${(hue + 48) % 360} 54% 38%)"/></linearGradient><pattern id="p" width="72" height="72" patternUnits="userSpaceOnUse"><path d="M0 36h72M36 0v72" stroke="rgba(255,255,255,.11)" stroke-width="2"/></pattern></defs><rect width="1400" height="788" fill="url(#g)"/><rect width="1400" height="788" fill="url(#p)"/><rect x="72" y="92" width="1256" height="604" rx="42" fill="rgba(7,35,28,.18)" stroke="rgba(255,255,255,.12)"/><circle cx="1160" cy="154" r="126" fill="rgba(229,72,77,.2)"/><text x="700" y="166" text-anchor="middle" fill="#f7df9a" font-family="Arial, sans-serif" font-size="38" font-weight="700">${platformName}</text>${titleText}<text x="700" y="650" text-anchor="middle" fill="rgba(255,255,255,.84)" font-family="Arial, sans-serif" font-size="32" font-weight="700">${escapeHtml(cityLabel(event.city || 'Saudi Arabia'))}</text></svg>`;
+  // The content-signature comment is not read back by the generator (the
+  // build always rewrites every generated-cover event from its current
+  // event.title/city \u2014 see buildEvents()), but it makes drift auditable: any
+  // cover whose baked signature no longer matches sha1(title|city) is stale
+  // by inspection, without decoding the title text out of the SVG glyphs.
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="788" viewBox="0 0 1400 788" role="img" aria-label="${escapeHtml(event.title)}"><!-- eventlive-cover-signature: ${coverContentSignature(event)} --><title>${escapeHtml(event.title)}</title><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="hsl(${hue} 48% 22%)"/><stop offset="1" stop-color="hsl(${(hue + 48) % 360} 54% 38%)"/></linearGradient><pattern id="p" width="72" height="72" patternUnits="userSpaceOnUse"><path d="M0 36h72M36 0v72" stroke="rgba(255,255,255,.11)" stroke-width="2"/></pattern></defs><rect width="1400" height="788" fill="url(#g)"/><rect width="1400" height="788" fill="url(#p)"/><rect x="72" y="92" width="1256" height="604" rx="42" fill="rgba(7,35,28,.18)" stroke="rgba(255,255,255,.12)"/><circle cx="1160" cy="154" r="126" fill="rgba(229,72,77,.2)"/><text x="700" y="166" text-anchor="middle" fill="#f7df9a" font-family="Arial, sans-serif" font-size="38" font-weight="700">${platformName}</text>${titleText}<text x="700" y="650" text-anchor="middle" fill="rgba(255,255,255,.84)" font-family="Arial, sans-serif" font-size="32" font-weight="700">${escapeHtml(cityLabel(event.city || 'Saudi Arabia'))}</text></svg>`;
   writeText(fullPath, svg);
   return `/assets/event-covers/${file}`;
 }
@@ -1073,13 +1082,15 @@ function normalizeEvent(raw, sourceGroup, previousLookup) {
         : 'missing';
   event.live_schedule_ready = event.official_sessions_count > 0;
   event.summary = enrichEventSummary(event.summary, event);
-  if (!event.image_url || String(event.image_url).startsWith('/assets/event-covers/')) {
-    event.image_url = fallbackCover(event);
-    event.image_alt = `غلاف EventLive لفعالية ${event.title}`;
-    event.generated_image = true;
-  } else {
-    event.generated_image = false;
-  }
+  // Cover generation must not run here: content translation (localizeEventProse,
+  // applied later in buildEvents() after normalizeEvent returns) can still
+  // rewrite event.title in place. Baking the cover now would freeze the
+  // pre-translation title into the SVG forever — every later build would keep
+  // reusing this same generated-cover path and regenerate from the same stale
+  // untranslated raw.title, so the drift never self-heals. Defer the actual
+  // fallbackCover() call to buildEvents(), after translation has settled.
+  event.needs_generated_cover = !event.image_url || String(event.image_url).startsWith('/assets/event-covers/');
+  event.generated_image = event.needs_generated_cover;
   return event;
 }
 
@@ -1156,6 +1167,15 @@ function buildEvents() {
       contentProseStats.leaks += proseSummary.leaks;
       if (proseSummary.leaks) contentProseStats.eventsWithLeaks += 1;
     }
+    // Generate the fallback cover here, after content translation has settled
+    // event.title (and event.image_alt) to their final values, so the SVG
+    // baked text can never drift behind a title that was corrected/translated
+    // during this same build. See normalizeEvent() for why this is deferred.
+    if (event.needs_generated_cover) {
+      event.image_url = fallbackCover(event);
+      event.image_alt = `غلاف EventLive لفعالية ${event.title}`;
+    }
+    delete event.needs_generated_cover;
     events.push(event);
   }
   const sortedEvents = events.sort((a, b) => {
