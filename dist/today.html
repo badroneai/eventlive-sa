@@ -916,12 +916,25 @@ html[lang^="en"] [lang="ar"]{font-family:"IBM Plex Sans Arabic",Tahoma,Arial,san
       return '<span class="chip date-tab">' + escapeHTML(rangeLabel) + '</span>';
     }
 
+    // Arabic count agreement for the day segment — hand-ported copy of
+    // scripts/duration-label.mjs's arabicDaysLabel (this shell's script is
+    // committed source, it cannot import the module; same port idiom as
+    // dist/event.html / dist/events.html, guarded by test:duration-label's
+    // built-output sweep). Hour/minute segments keep the bare س/د
+    // abbreviations, which need no agreement.
+    function arabicDaysLabel(count) {
+      var n = count > 0 ? count : 0;
+      if (n === 1) return 'يوم واحد';
+      if (n === 2) return 'يومان';
+      if (n >= 3 && n <= 10) return n + ' أيام';
+      return n + ' يومًا';
+    }
     function formatRemaining(ms) {
       const totalMinutes = Math.max(0, Math.ceil(ms / 60000));
       const days = Math.floor(totalMinutes / 1440);
       const hours = Math.floor((totalMinutes % 1440) / 60);
       const minutes = totalMinutes % 60;
-      if (days > 0) return days + ' يوم ' + hours + ' س';
+      if (days > 0) return arabicDaysLabel(days) + ' ' + hours + ' س';
       if (hours > 0) return hours + ' س ' + minutes + ' د';
       return minutes + ' د';
     }
