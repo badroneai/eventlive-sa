@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-01T17:10:20.168Z
+- published_at: 2026-08-01T20:03:49.051Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 564
+- candidates_seen: 562
 - published_new: 6
-- linked_existing: 520
+- linked_existing: 518
 - blocked_remaining: 38
 - duplicate_review_alerts: 8
 
@@ -55,7 +55,6 @@
 | candidate-visit-saudi-calendar-pdf-سوق-الثلاثاء-الشعبي-20260501-4a38d19e | linked-existing | event-سوق-الثلاثاء-الشعبي | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-قصور-وقلاع-ابو-نقطة-المتحمي-20260503-4a38d19e | linked-existing | event-قصور-وقاع-ابو-نقطة-المتحمي | trusted duplicate linked to existing catalog event |
 | candidate-visit-saudi-calendar-pdf-صندوق-أسامة-من-مخرج-ثمانية-20260505-4a38d19e | linked-existing | event-صندوق-أسامة-من-مخرج-ثمانية | already linked to catalog event |
-| candidate-riyadh-city-events-solo-art-exhibition-series-20260506-1e56ae74 | linked-existing | event-solo-art-exhibition-series | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-قصور-العسابلة-20260515-4a38d19e | linked-existing | event-قصور-العسابلة | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-قرية-آل-ينفع-20260515-4a38d19e | linked-existing | event-قرية-آل-ينفع | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-مزرعة-الليوان-20260518-4a38d19e | linked-existing | event-مزرعة-الليوان | already linked to catalog event |
@@ -135,7 +134,6 @@
 | candidate-visit-saudi-seasons-scenic-buggy-ride-at-gamra-20260701-b271c921 | linked-existing | event-scenic-buggy-ride-at-gamra | already linked to catalog event |
 | candidate-visit-saudi-seasons-scenic-buggy-ride-with-picnic-20260701-1e0427a2 | linked-existing | event-scenic-buggy-ride-with-picnic | already linked to catalog event |
 | candidate-visit-saudi-seasons-gravity-carts-at-gamra-20260701-8f6d9da9 | linked-existing | event-gravity-carts-at-gamra | already linked to catalog event |
-| candidate-riyadh-city-events-prince-faisal-bin-fahd-art-exhibition-summer-2026-20260701-d143b98f | linked-existing | event-prince-faisal-bin-fahd-art-exhibition-summer-2026 | already linked to catalog event |
 | candidate-visit-saudi-seasons-combat-arena-20260701-41ce2073 | linked-existing | event-combat-arena | already linked to catalog event |
 | candidate-visit-saudi-seasons-al-balad-cinema-20260701-6c7f85e1 | linked-existing | event-al-balad-cinema | already linked to catalog event |
 | candidate-visit-saudi-seasons-dakah-in-abha-20260701-966a161a | linked-existing | event-dakah-in-abha | already linked to catalog event |
@@ -179,14 +177,9 @@
 | candidate-visit-saudi-calendar-pdf-صيف-وِرث-2026-20260730-4a38d19e | linked-existing | event-صيف-وِرث-2026 | already linked to catalog event |
 | candidate-visit-saudi-seasons-tour-of-al-baha-20260730-7b170410 | linked-existing | event-tour-of-al-baha | already linked to catalog event |
 | candidate-discover-aseer-events-musical-concerts-20260801-169733ac | linked-existing | event-musical-concerts | already linked to catalog event |
-| candidate-ithra-events-printing-house-20260801-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
-| candidate-ithra-events-tafasahu-make-room-20260801-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
-| candidate-ithra-events-tinkering-stations-20260801-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
 | candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260801-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
 | candidate-ithra-events-echoes-of-the-familiar-20260801-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
-| candidate-ithra-events-energy-lab-20260801-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
 | candidate-visit-saudi-seasons-buraydah-dates-carnival-20260801-24906534 | linked-existing | event-buraydah-dates-carnival | already linked to catalog event |
-| candidate-ithra-events-story-land-20260801-bb5dc01b | linked-existing | event-story-land | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-ضحكات-الرياض-20260802-4a38d19e | linked-existing | event-ضحكات-الرياض | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات-20260802-9bb9ff4b | linked-existing | event-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-طويق-للقطاع-الأمني-البنية-التحتية-20260802-2aaabcfd | linked-existing | event-معسكر-طويق-للقطاع-الأمني-البنية-التحتية | already linked to catalog event |
@@ -200,12 +193,16 @@
 | candidate-ithra-events-childrens-museum-free-monday-20260803-15ad7731 | linked-existing | event-childrens-museum-free-monday | already linked to catalog event |
 | candidate-discover-aseer-events-the-dearest-country-20260803-b424a70f | linked-existing | event-the-dearest-country | already linked to catalog event |
 | candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260803-f563a36e | linked-existing | event-ithra-summer-camp-2026-a-world-of-homes | already linked to catalog event |
+| candidate-ithra-events-printing-house-20260803-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
+| candidate-ithra-events-tafasahu-make-room-20260803-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
+| candidate-ithra-events-tinkering-stations-20260803-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
 | candidate-ithra-events-summer-youth-program-20260803-a20f7a11 | linked-existing | event-summer-youth-program | already linked to catalog event |
 | candidate-ithra-events-childrens-art-studio-20260803-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
 | candidate-ithra-events-childrens-museum-story-time-20260803-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-spot-of-inspiration-20260803-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
 | candidate-ithra-events-paint-like-an-artist-20260803-a67d8ec3 | linked-existing | event-paint-like-an-artist | already linked to catalog event |
 | candidate-ithra-events-emboss-printing-experience-20260803-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
+| candidate-ithra-events-energy-lab-20260803-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
 | candidate-ithra-events-the-perfect-guide-to-event-management-20260803-9e165fb1 | linked-existing | event-the-almost-perfect-guide-to-event-management | already linked to catalog event |
 | candidate-ithra-events-family-challenges-20260803-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
 | candidate-ithra-events-children-story-time-20260803-f545fa69 | linked-existing | event-children-story-time | already linked to catalog event |
@@ -242,6 +239,7 @@
 | candidate-ithra-events-toddler-saturday-20260808-739e1f00 | linked-existing | event-toddler-saturday | already linked to catalog event |
 | candidate-ithra-events-1-2-3-lets-rhyme-20260808-4d37515a | linked-existing | event-1-2-3-lets-rhyme | already linked to catalog event |
 | candidate-ithra-events-unbox-your-story-20260808-5085a6f0 | linked-existing | event-unbox-your-story | already linked to catalog event |
+| candidate-ithra-events-story-land-20260808-bb5dc01b | linked-existing | event-story-land | already linked to catalog event |
 | candidate-ithra-events-nu-power-20260808-653464ac | linked-existing | event-nu-power | already linked to catalog event |
 | candidate-ithra-events-workshop-at-the-library-20260808-7db9eb13 | linked-existing | event-workshop-at-the-library | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260809-91d14378 | linked-existing | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-2 | already linked to catalog event |

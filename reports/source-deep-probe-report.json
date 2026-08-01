@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-31T19:15:43.795Z",
+  "generated_at": "2026-08-01T19:38:45.461Z",
   "registry": "data/source_registry.json",
   "source_ingestion_plan": "reports/source-ingestion-plan.json",
   "probe_limit": 28,
   "timeout_ms": 12000,
   "totals": {
     "probed": 21,
-    "extractor_ready": 12,
-    "blocked": 7,
+    "extractor_ready": 11,
+    "blocked": 10,
     "partnership": 0,
-    "watch": 2
+    "watch": 0
   },
   "sources": [
     {
@@ -94,7 +94,7 @@
         "status": 200,
         "final_url": "https://ncci.org.sa/category/events/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 118034,
+        "bytes": 118054,
         "title": "الفعاليات – الغرفة التجارية بعرعر | غرفة الحدود الشمالية",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -285,40 +285,6 @@
       "recommendation": "probe-hidden-api-or-html-table"
     },
     {
-      "id": "sela-sea-expo",
-      "name": "Sela and Saudi Entertainment Expo",
-      "priority": 36,
-      "url": "https://sela.sa/",
-      "trust_level": "partner",
-      "fetch_method": "html-listing",
-      "candidate_gate": "source-evidence",
-      "intake_policy": "monitor-public",
-      "signals": {
-        "http_ok": true,
-        "status": 200,
-        "final_url": "https://sela.sa/",
-        "content_type": "text/html; charset=utf-8",
-        "bytes": 72907,
-        "title": "Sela | Spectacular Everyday",
-        "blocked_reason": "",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 8,
-        "date_snippets": [
-          "Date()); gtag('config', 'G-8KJLDLJ0VC');",
-          "Date;function t(e){var t=\"\"+e;return 1===t.length&&(t=\"0\"+t),t}return e.getUTCFullYe",
-          "Date())+\"T\"+t(e.getUTCHours())+\":\"+t(e.getUTCMinutes())+\":\"+t(e.getUTCSeconds())+\".\"",
-          "DATE",
-          "date information about Sela?",
-          "dateEmail(_email)) { var form_data = $(\".Submit\").serialize();"
-        ]
-      },
-      "extraction_score": 46,
-      "recommendation": "probe-hidden-api-or-html-table"
-    },
-    {
       "id": "aseer-season-asda",
       "name": "Aseer Season / Asir Development Authority",
       "priority": 42,
@@ -400,7 +366,7 @@
         "status": 200,
         "final_url": "https://www.kaust.edu.sa/en/",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 84210,
+        "bytes": 84209,
         "title": "KAUST | A top research university in the Middle East",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -421,58 +387,38 @@
       "recommendation": "probe-hidden-api-or-html-table"
     },
     {
-      "id": "middle-east-banking-ai-summit",
-      "name": "Middle East Banking AI & Analytics Summit Official",
-      "priority": 74,
-      "url": "https://mebankingai.com/sa/",
+      "id": "baha-amanah-events",
+      "name": "Baha Municipality Events",
+      "priority": 62,
+      "url": "https://baha.gov.sa/ar/Events",
       "trust_level": "official",
       "fetch_method": "html-listing",
-      "candidate_gate": "human-review",
+      "candidate_gate": "extraction",
       "intake_policy": "official-feed-preferred",
       "signals": {
         "http_ok": true,
         "status": 200,
-        "final_url": "https://mebankingai.com/sa/",
-        "content_type": "text/html",
-        "bytes": 12035,
-        "title": "One moment, please...",
-        "blocked_reason": "",
+        "final_url": "https://baha.gov.sa/ar/Events",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 198571,
+        "title": "فعاليات الباحة",
+        "blocked_reason": "bot-protection",
         "structured_scripts": 0,
         "structured_events": 0,
         "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 0,
-        "date_snippets": []
+        "event_detail_links": 19,
+        "json_or_api_hints": 14,
+        "date_snippets": [
+          "datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" as=\"style\"",
+          "datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" rel=\"stylesheet\">",
+          "calendar-alt\">",
+          "date-span\">",
+          "01 Aug 2027",
+          "dated Row -->"
+        ]
       },
-      "extraction_score": 32,
-      "recommendation": "watch-or-evidence-only"
-    },
-    {
-      "id": "middle-east-enterprise-ai-summit",
-      "name": "Middle East Enterprise AI & Analytics Summit Official",
-      "priority": 75,
-      "url": "https://meenterpriseai.com/sa/",
-      "trust_level": "official",
-      "fetch_method": "html-listing",
-      "candidate_gate": "human-review",
-      "intake_policy": "official-feed-preferred",
-      "signals": {
-        "http_ok": true,
-        "status": 200,
-        "final_url": "https://meenterpriseai.com/sa/",
-        "content_type": "text/html",
-        "bytes": 11963,
-        "title": "One moment, please...",
-        "blocked_reason": "",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 0,
-        "date_snippets": []
-      },
-      "extraction_score": 32,
-      "recommendation": "watch-or-evidence-only"
+      "extraction_score": 23,
+      "recommendation": "blocked-or-protected:bot-protection"
     },
     {
       "id": "riyadh-season",
@@ -556,6 +502,33 @@
       "recommendation": "blocked-or-protected:fetch failed getaddrinfo EAI_AGAIN www.ricec.com TypeError: fetch failed"
     },
     {
+      "id": "saudi-contractors-authority-events",
+      "name": "Saudi Contractors Authority Events",
+      "priority": 49,
+      "url": "https://www.sca.gov.sa/",
+      "trust_level": "official",
+      "fetch_method": "html-listing",
+      "candidate_gate": "extraction",
+      "intake_policy": "monitor-public",
+      "signals": {
+        "http_ok": false,
+        "status": 0,
+        "final_url": "https://www.sca.gov.sa/",
+        "content_type": "",
+        "bytes": 0,
+        "title": "",
+        "blocked_reason": "fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 0,
+        "date_snippets": []
+      },
+      "extraction_score": -23,
+      "recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed"
+    },
+    {
       "id": "riyadh-city-events",
       "name": "Riyadh City Events",
       "priority": 51,
@@ -623,7 +596,7 @@
         "status": 403,
         "final_url": "https://qiddiya.com/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 5835,
+        "bytes": 5836,
         "title": "Attention Required! | Cloudflare",
         "blocked_reason": "http-403",
         "structured_scripts": 0,
@@ -635,6 +608,33 @@
       },
       "extraction_score": -35,
       "recommendation": "blocked-or-protected:http-403"
+    },
+    {
+      "id": "sela-sea-expo",
+      "name": "Sela and Saudi Entertainment Expo",
+      "priority": 36,
+      "url": "https://sela.sa/",
+      "trust_level": "partner",
+      "fetch_method": "html-listing",
+      "candidate_gate": "source-evidence",
+      "intake_policy": "monitor-public",
+      "signals": {
+        "http_ok": false,
+        "status": 0,
+        "final_url": "https://sela.sa/",
+        "content_type": "",
+        "bytes": 0,
+        "title": "",
+        "blocked_reason": "fetch failed redirect count exceeded TypeError: fetch failed",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 0,
+        "date_snippets": []
+      },
+      "extraction_score": -35,
+      "recommendation": "blocked-or-protected:fetch failed redirect count exceeded TypeError: fetch failed"
     },
     {
       "id": "jeddah-season",

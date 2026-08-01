@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T17:12:50.320Z",
+  "generated_at": "2026-08-01T20:06:15.815Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-08-01T17:02:17.257Z",
+    "collected_at": "2026-08-01T19:51:35.550Z",
     "freshness": "fresh",
-    "discovered": 315,
-    "written": 564
+    "discovered": 331,
+    "written": 562
   },
   "sources": {
     "total": 88,
-    "attempted": 20,
-    "due": 20,
-    "deferred": 28,
+    "attempted": 29,
+    "due": 29,
+    "deferred": 19,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 23,
+    "registry_collection_coverage_pct": 33,
     "scheduled_runnable_coverage_pct": 100,
-    "healthy": 19,
+    "healthy": 20,
     "zero_yield": 1,
-    "errors": 0,
-    "cadence_deferred": 28,
+    "errors": 8,
+    "cadence_deferred": 19,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -61,31 +61,25 @@
         "id": "moc-cultural-calendar",
         "name": "Ministry of Culture Cultural Calendar",
         "priority": 3,
-        "status": "deferred",
-        "historical_status": "collector-error",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-01T19:29:14.100Z",
-        "error_streak": 13,
+        "status": "collection-error",
+        "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-07-31T19:29:14.100Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 0,
-        "next_action": "مؤجل حتى 2026-08-01T19:29:14.100Z وفق الجدولة التكيفية."
+        "next_action": "fetch failed; fetch failed"
       },
       {
         "id": "mos-events",
         "name": "Ministry of Sport Events",
         "priority": 4,
-        "status": "deferred",
-        "historical_status": "collector-error",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-01T19:29:14.100Z",
-        "error_streak": 13,
+        "status": "collection-error",
+        "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-07-31T19:29:14.100Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 0,
-        "next_action": "مؤجل حتى 2026-08-01T19:29:14.100Z وفق الجدولة التكيفية."
+        "next_action": "fetch failed; page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.mos.gov.sa/en/media/events\", waiting until \"domcontentloaded\"\n"
       },
       {
         "id": "webook-explore",
@@ -139,16 +133,13 @@
         "id": "monshaat-events",
         "name": "Monsha'at All Events",
         "priority": 9,
-        "status": "deferred",
-        "historical_status": "collector-error",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-01T19:29:14.100Z",
-        "error_streak": 13,
+        "status": "collection-error",
+        "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-07-31T19:29:14.100Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 0,
-        "next_action": "مؤجل حتى 2026-08-01T19:29:14.100Z وفق الجدولة التكيفية."
+        "next_action": "fetch failed; fetch failed"
       },
       {
         "id": "invest-saudi-events",
@@ -178,16 +169,13 @@
         "id": "eye-of-riyadh-events",
         "name": "Eye of Riyadh Events",
         "priority": 12,
-        "status": "deferred",
-        "historical_status": "discovery-only",
-        "cadence_reason": "discovery-daily",
-        "next_due_at": "2026-08-01T19:29:14.100Z",
+        "status": "collection-error",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-07-31T19:29:14.100Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 6,
-        "next_action": "مؤجل حتى 2026-08-01T19:29:14.100Z وفق الجدولة التكيفية."
+        "next_action": "Discovery-only source unavailable in this run: HTTP 403"
       },
       {
         "id": "ten-times-saudi",
@@ -205,16 +193,13 @@
         "id": "eventbrite-saudi",
         "name": "Eventbrite Saudi Arabia",
         "priority": 14,
-        "status": "deferred",
-        "historical_status": "discovery-only",
-        "cadence_reason": "discovery-daily",
-        "next_due_at": "2026-08-01T19:29:14.100Z",
+        "status": "collection-error",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-07-31T19:29:14.100Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 8,
-        "next_action": "مؤجل حتى 2026-08-01T19:29:14.100Z وفق الجدولة التكيفية."
+        "next_action": "Discovery-only source unavailable in this run: HTTP 405"
       },
       {
         "id": "platinumlist-jeddah",
@@ -505,16 +490,13 @@
         "id": "moc-cultural-subportals",
         "name": "Ministry of Culture Commission Calendars",
         "priority": 37,
-        "status": "deferred",
-        "historical_status": "collector-error",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-01T19:29:14.100Z",
-        "error_streak": 13,
+        "status": "collection-error",
+        "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-07-31T19:29:14.100Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 12,
-        "next_action": "مؤجل حتى 2026-08-01T19:29:14.100Z وفق الجدولة التكيفية."
+        "next_action": "fetch failed; fetch failed"
       },
       {
         "id": "historic-jeddah-albalad",
@@ -679,13 +661,16 @@
         "id": "riyadh-city-events",
         "name": "Riyadh City Events",
         "priority": 51,
-        "status": "zero-yield",
+        "status": "deferred",
+        "historical_status": "probe-blocked",
+        "cadence_reason": "error-cooldown",
+        "next_due_at": "2026-08-01T23:02:17.257Z",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "last_attempted_at": "2026-08-01T17:02:17.257Z",
         "extracted": 0,
-        "candidates": 79,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "candidates": 77,
+        "next_action": "مؤجل حتى 2026-08-01T23:02:17.257Z وفق الجدولة التكيفية."
       },
       {
         "id": "monshaat-academy-programs",
@@ -778,31 +763,25 @@
         "id": "asharqia-chamber-events",
         "name": "Asharqia Chamber Events",
         "priority": 59,
-        "status": "deferred",
-        "historical_status": "collector-error",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-01T17:17:55.874Z",
-        "error_streak": 1,
+        "status": "collection-error",
+        "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-01T11:17:55.874Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 2,
-        "next_action": "مؤجل حتى 2026-08-01T17:17:55.874Z وفق الجدولة التكيفية."
+        "next_action": "fetch failed; page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentloaded\"\n"
       },
       {
         "id": "qassim-chamber-events",
         "name": "Qassim Chamber Events",
         "priority": 60,
-        "status": "deferred",
-        "historical_status": "collector-error",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-01T19:29:14.100Z",
-        "error_streak": 13,
+        "status": "collection-error",
+        "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-07-31T19:29:14.100Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 0,
-        "next_action": "مؤجل حتى 2026-08-01T19:29:14.100Z وفق الجدولة التكيفية."
+        "next_action": "HTTP 403; browser recovery encountered an access-protection page"
       },
       {
         "id": "abha-chamber-events",
@@ -859,16 +838,13 @@
         "id": "northern-borders-chamber-events",
         "name": "Northern Borders Chamber Events",
         "priority": 65,
-        "status": "deferred",
-        "historical_status": "zero-yield",
-        "cadence_reason": "zero-yield-cooldown",
-        "next_due_at": "2026-08-01T19:29:14.100Z",
+        "status": "zero-yield",
         "error_streak": 0,
-        "zero_yield_streak": 8,
-        "last_attempted_at": "2026-07-31T19:29:14.100Z",
+        "zero_yield_streak": 0,
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 0,
-        "next_action": "مؤجل حتى 2026-08-01T19:29:14.100Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "tabuk-chamber-events",
@@ -1124,7 +1100,7 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 64,
+        "extracted": 65,
         "candidates": 72,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
@@ -1162,42 +1138,39 @@
         "id": "saudicon-events",
         "name": "Saudicon Events",
         "priority": 88,
-        "status": "deferred",
-        "historical_status": "productive",
-        "cadence_reason": "discovery-daily",
-        "next_due_at": "2026-08-01T19:29:14.100Z",
+        "status": "healthy",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-07-31T19:29:14.100Z",
-        "extracted": 0,
+        "last_attempted_at": null,
+        "extracted": 15,
         "candidates": 15,
-        "next_action": "مؤجل حتى 2026-08-01T19:29:14.100Z وفق الجدولة التكيفية."
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       }
     ]
   },
   "queue": {
-    "total": 564,
+    "total": 562,
     "ready_for_review": 8,
     "approved_for_catalog": 0,
-    "published_from_candidates": 530,
+    "published_from_candidates": 528,
     "actionable": 8,
     "stale_unpublished": 0,
     "duplicate_risk": 6,
     "needs_extraction": 0,
     "needs_evidence": 26,
     "by_review_status": {
-      "approved-for-catalog": 530,
+      "approved-for-catalog": 528,
       "ready-for-review": 8,
       "evidence-captured": 18,
       "new": 8
     },
     "by_publication_gate": {
-      "catalog-review": 530,
+      "catalog-review": 528,
       "duplicate-review": 8,
       "source-evidence": 26
     },
     "by_confidence": {
-      "official": 524,
+      "official": 522,
       "public-listing": 21,
       "verified-secondary": 11,
       "unverified": 8
@@ -1209,7 +1182,7 @@
     },
     "by_source": {
       "Ministry of Culture Commission Calendars": 12,
-      "Riyadh City Events": 79,
+      "Riyadh City Events": 77,
       "Visit Saudi Calendar": 17,
       "Visit Saudi Summer Calendar PDF": 71,
       "Misk Hub Programs": 11,

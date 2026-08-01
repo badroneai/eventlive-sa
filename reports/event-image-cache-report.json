@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T17:12:49.332Z",
+  "generated_at": "2026-08-01T20:06:00.449Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -9,7 +9,7 @@
     "fetched": 0,
     "reused": 496,
     "failed": 4,
-    "skipped_recent_failures": 4,
+    "skipped_recent_failures": 1,
     "remembered_failures": 7
   },
   "fetched": [],
@@ -117,11 +117,6 @@
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYXNoZ2FyLmpwZWc/ashgar.jpeg?w=1024&fm=webp&s=311321290751594df736714caeb6542c",
       "file": "dist/assets/event-images/مزرعة-أشجار-42418c6ecc.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-05/WEAAGLms.jpg?itok=npqEN3WI",
-      "file": "dist/assets/event-images/solo-art-exhibition-series-f598b7387f.jpg",
       "events": 1
     },
     {
@@ -342,11 +337,6 @@
     {
       "source_url": "https://scth.scene7.com/is/image/scth/gravity-carts-at-gamra?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/gravity-carts-at-gamra-577197a38b.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/GyN7i2hWYAEFU3X.jpeg?itok=of7aIuP0",
-      "file": "dist/assets/event-images/prince-faisal-bin-fahd-art-exhibition-summer-2026-8216b3ee07.jpg",
       "events": 1
     },
     {
@@ -783,11 +773,6 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2fcd7911e5e79f6eeaedb4d9031f71b0.jpg",
       "file": "dist/assets/event-images/dots-on-letters-28119e3242.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
-      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
-      "events": 5
     },
     {
       "source_url": "https://scth.scene7.com/is/image/scth/hussain-moheb?wid=1400&hei=788&fit=constrain&fmt=webp",
@@ -1373,6 +1358,11 @@
       "source_url": "https://static.wixstatic.com/media/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png/v1/fit/w_2500,h_1330,al_c/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png",
       "file": "dist/assets/event-images/cips-mena-procurement-and-supply-chain-futures-conference-and-awards-42e0ccbf3d.png",
       "events": 1
+    },
+    {
+      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
+      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
+      "events": 5
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/esports.jpg?itok=m-JCBfZQ",
@@ -2415,6 +2405,11 @@
       "events": 1
     },
     {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/GyN7i2hWYAEFU3X.jpeg?itok=of7aIuP0",
+      "file": "dist/assets/event-images/prince-faisal-bin-fahd-art-exhibition-summer-2026-8216b3ee07.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/560bafb34a47c331b1dc9ad85fc108c9.jpg",
       "file": "dist/assets/event-images/baab-d957b34587.jpg",
       "events": 1
@@ -2493,6 +2488,11 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3352cc0b0f473d0f81e2f57703216b31.jpg",
       "file": "dist/assets/event-images/rabsha-5b8fb78b66.jpg",
       "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/8aa6866dc71f32e9ce349d1df998eff4.jpg",
+      "file": "dist/assets/event-images/short-film-competition-group-2-06c8e147a8.jpg",
+      "events": 1
     }
   ],
   "rejected_removed": [],
@@ -2504,30 +2504,6 @@
       "reason": "HTTP 404",
       "failure_kind": "not-found",
       "retry_after": "2026-08-02T10:15:46.874Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-01T19:44:10.407Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-01T19:44:10.407Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-01T19:44:10.407Z",
       "skipped": true
     }
   ],
@@ -2545,26 +2521,25 @@
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-08-01T19:44:10.407Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-01T19:44:10.407Z",
-      "skipped": true
+      "retry_after": "2026-08-02T20:06:00.449Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-08-01T19:44:10.407Z",
-      "skipped": true
+      "retry_after": "2026-08-02T20:06:00.449Z"
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-08-02T20:06:00.449Z"
     }
   ],
-  "requires_rebuild": false,
-  "rebuild_reasons": []
+  "requires_rebuild": true,
+  "rebuild_reasons": [
+    "new-failures:3"
+  ]
 }
