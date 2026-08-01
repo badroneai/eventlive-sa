@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-01T14:39:11.176Z",
+  "generated_at": "2026-08-01T17:14:43.935Z",
   "entries": {
     "1f91543d6769d9abda47f221ba86f9f9ebf27443": {
       "source": "Skill Development Initiative",
@@ -59346,14 +59346,6 @@
       "method": "llm-agent",
       "translated_at": "2026-08-01T14:06:52.300Z"
     },
-    "0f156f2e12622bd48b939efe8b7b3a0e82560d40": {
-      "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of not less than 75%, and the equivalent of certificates is required from the Ministry of Higher Education for non-Saudi Arabian university graduates.",
-      "method": "argos-mt",
-      "translated_at": "2026-08-01T14:39:11.176Z"
-    },
     "c22b1ce9a84f32eb4e0c985f6c30e84ed30659fe": {
       "source": "Open Call International Cat Day Every rescued cat has a story. This International Cat Day, Hayy Cinema invites you to share yours. Submit a 30-second video telling the story of your rescued stray cat for a chance to be featured as part of our International Cat Day celebrations. Selected entries will receive complimentary tickets to attend our International Cat Day screening with their cat, along with special gifts from Dr. Paws Clinic. Whether your story is heartwarming, unexpected, or simply celebrates the bond you’ve built, we’d love to hear it.",
       "source_lang": "en",
@@ -59362,13 +59354,21 @@
       "method": "argos-mt",
       "translated_at": "2026-08-01T14:39:11.176Z"
     },
+    "0f156f2e12622bd48b939efe8b7b3a0e82560d40": {
+      "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of not less than 75%, and the equivalent of certificates is required from the Ministry of Higher Education for non-Saudi Arabian university graduates.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-01T17:14:43.935Z"
+    },
     "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
       "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
       "source_lang": "ar",
       "target_lang": "en",
       "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
       "method": "argos-mt",
-      "translated_at": "2026-08-01T14:39:11.176Z"
+      "translated_at": "2026-08-01T17:14:43.935Z"
     },
     "5c6a9ff87c6cdb115664bc8a097d521eadf27f9f": {
       "source": "مركز الرياض للمعارض والمؤتمرات في ملهم",
@@ -59376,7 +59376,7 @@
       "target_lang": "en",
       "text": "The Riyadh International Convention Exhibition Center in Inspiration",
       "method": "argos-mt",
-      "translated_at": "2026-08-01T14:39:11.176Z"
+      "translated_at": "2026-08-01T17:14:43.935Z"
     }
   }
 }
