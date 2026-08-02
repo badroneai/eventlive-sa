@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-02T14:12:08.134Z",
+  "generated_at": "2026-08-02T15:37:14.715Z",
   "totals": {
-    "targets": 15,
-    "enriched": 15,
-    "fetched": 15,
-    "images": 15,
+    "targets": 6,
+    "enriched": 6,
+    "fetched": 6,
+    "images": 6,
     "fetch_failures": 0
   },
   "enriched": [
@@ -64,96 +64,6 @@
       "source_label": "Visit Saudi Summer Calendar PDF",
       "source_method": "official-page-meta",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-إدارة-الموارد-البشرية-لخارج-مكة",
-      "title": "نموذج التسجيل والسداد لدبلوم المتوسط في إدارة الموارد البشرية لخارج مكة",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41051",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-الأنظمة-لخارج-مكة",
-      "title": "نموذج التسجيل والسداد لدبلوم المتوسط في الأنظمة لخارج مكة",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41052",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-البرمجة-وعلوم-الحاسب-الآلي-لخارج",
-      "title": "نموذج التسجيل والسداد لدبلوم المتوسط في البرمجة وعلوم الحاسب الآلي لخارج مكة",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41049",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-التصميم-الجرافيكي-والوسائط-الرقم",
-      "title": "نموذج التسجيل والسداد لدبلوم المتوسط في التصميم الجرافيكي والوسائط الرقمية لخارج مكة",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41054",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-التكنولوجيا-المالية-لخارج-مكة",
-      "title": "نموذج التسجيل والسداد لدبلوم المتوسط في التكنولوجيا المالية لخارج مكة",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41053",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-الصحة-والسلامة-المهنية-لخارج-مكة",
-      "title": "نموذج التسجيل والسداد لدبلوم المتوسط في الصحة والسلامة المهنية لخارج مكة",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41055",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-المحاسبة-المالية-لخارج-مكة",
-      "title": "نموذج التسجيل والسداد لدبلوم المتوسط في المحاسبة المالية لخارج مكة",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41050",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-البصريات-لخارج-مكة",
-      "title": "نموذج التسجيل والسداد للدبلوم المتوسط في البصريات لخارج مكة",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41047",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-جودة-وسلامة-الغذاء-لخارج-مكة",
-      "title": "نموذج التسجيل والسداد للدبلوم المتوسط في جودة وسلامة الغذاء لخارج مكة",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41048",
       "fetched": true,
       "image": true,
       "fetch_reason": ""

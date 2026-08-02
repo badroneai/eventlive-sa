@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T14:13:15.585Z",
+  "generated_at": "2026-08-02T15:38:16.355Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -770,11 +770,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
-      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
-      "events": 5
-    },
-    {
       "source_url": "https://scth.scene7.com/is/image/scth/hussain-moheb?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/hussain-moheb-live-in-riyadh-66decad2f9.webp",
       "events": 1
@@ -1393,6 +1388,11 @@
       "source_url": "https://static.wixstatic.com/media/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png/v1/fit/w_2500,h_1330,al_c/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png",
       "file": "dist/assets/event-images/cips-mena-procurement-and-supply-chain-futures-conference-and-awards-42e0ccbf3d.png",
       "events": 1
+    },
+    {
+      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
+      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
+      "events": 5
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/esports.jpg?itok=m-JCBfZQ",

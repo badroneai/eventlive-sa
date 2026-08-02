@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T14:10:38.571Z",
+  "generated_at": "2026-08-02T15:35:23.328Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 35,
@@ -56,14 +56,6 @@
       "requirements": 31
     },
     {
-      "id": "event-معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine",
-      "title": "معسكر تطوير الألعاب والعوالم الافتراضية باستخدام Unreal Engine",
-      "slug": "KMVERlNP",
-      "goals": 15,
-      "features": 9,
-      "requirements": 6
-    },
-    {
       "id": "event-معسكر-تصميم-وتصنيع-الحلول-الهندسية",
       "title": "معسكر تصميم وتصنيع الحلول الهندسية",
       "slug": "y4JqX0k6",
@@ -94,6 +86,14 @@
       "goals": 13,
       "features": 22,
       "requirements": 7
+    },
+    {
+      "id": "event-معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine",
+      "title": "معسكر تطوير الألعاب والعوالم الافتراضية باستخدام Unreal Engine",
+      "slug": "KMVERlNP",
+      "goals": 15,
+      "features": 9,
+      "requirements": 6
     },
     {
       "id": "event-معسكر-الأنظمة-الذاتية-للدرونز",

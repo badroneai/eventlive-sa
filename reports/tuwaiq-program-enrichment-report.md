@@ -1,6 +1,6 @@
 # Tuwaiq Program Enrichment Report
 
-- generated_at: 2026-08-02T14:10:38.571Z
+- generated_at: 2026-08-02T15:35:23.328Z
 - targets: 35
 - enriched: 34
 - failed: 1
@@ -13,11 +13,11 @@
 - معسكر تطوير البرمجيات السحابية الاحترافية لسحابة قوقل (VY3lkzLD) - goals=8, features=6, requirements=10
 - معسكر تطوير تطبيقات الويب باستخدام لغة Python (الفترة المسائية) (4yOEV7Qq) - goals=12, features=6, requirements=11
 - معسكر طويق للقطاع الأمني: تطوير البرمجيات (ayjde5d8) - goals=3, features=1, requirements=31
-- معسكر تطوير الألعاب والعوالم الافتراضية باستخدام Unreal Engine (KMVERlNP) - goals=15, features=9, requirements=6
 - معسكر تصميم وتصنيع الحلول الهندسية (y4JqX0k6) - goals=6, features=11, requirements=6
 - معسكر تطوير تطبيقات الويب باستخدام لغة Python (الفترة الصباحية) (8ROda7MD) - goals=12, features=6, requirements=11
 - معسكر تطوير مواقع الويب باستخدام Java ودمج تقنيات الذكاء الاصطناعي (B5R0wKJk) - goals=10, features=7, requirements=8
 - معسكر أساسيات هندسة الميكاترونكس (XmzqwoPy) - goals=13, features=22, requirements=7
+- معسكر تطوير الألعاب والعوالم الافتراضية باستخدام Unreal Engine (KMVERlNP) - goals=15, features=9, requirements=6
 - معسكر الأنظمة الذاتية للدرونز (bx7Vb7Xw) - goals=8, features=6, requirements=6
 - معسكر تصميم تجربة المستخدم UX\UI (ZnwlyY5G) - goals=8, features=7, requirements=9
 - معسكر اختبار البرمجيات والأتمتة (ORGldGgx) - goals=6, features=6, requirements=7

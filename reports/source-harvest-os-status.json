@@ -1,48 +1,52 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-07-10T03:56:00.073Z",
+  "generated_at": "2026-08-02T15:44:29.185Z",
   "status": "PASS",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
-    "sources": 73,
-    "candidates": 194,
-    "matched_candidates": 166,
-    "auto_publish_sources": 14,
-    "candidate_only_sources": 11,
-    "partnership_required_sources": 4,
+    "sources": 88,
+    "candidates": 577,
+    "matched_candidates": 545,
+    "auto_publish_sources": 15,
+    "candidate_only_sources": 12,
+    "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
-    "manual_review_sources": 44,
-    "collection_attempted": 1,
-    "productive_sources": 1,
+    "manual_review_sources": 56,
+    "collection_attempted": 20,
+    "productive_sources": 19,
     "collector_errors": 0
   },
   "policies": {
-    "partnership_required": 4,
-    "auto_publish": 14,
-    "candidate_only": 11,
-    "manual_review": 44
+    "partnership_required": 5,
+    "auto_publish": 15,
+    "candidate_only": 12,
+    "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 165,
-    "duplicate-review": 13,
-    "source-evidence": 16
+    "catalog-review": 543,
+    "duplicate-review": 8,
+    "source-evidence": 26
   },
   "funnel": {
-    "discovered_this_run": 1,
-    "candidate_queue": 194,
-    "evaluated_for_publish": 194,
-    "linked_existing": 162,
-    "published_new": 1,
-    "blocked": 31,
+    "discovered_this_run": 319,
+    "candidate_queue": 577,
+    "evaluated_for_publish": 577,
+    "linked_existing": 533,
+    "published_new": 6,
+    "blocked": 38,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 30
+    "secondary_still_blocked": 34
   },
   "blocked_reasons": {
-    "possible duplicate already exists: event-esports-world-cup": 1,
-    "publication gate source-evidence is not auto-publishable": 16,
-    "confidence public-listing is not auto-publishable": 12,
-    "possible duplicate already exists: event-saudi-wood-expo-2026": 1,
-    "possible duplicate already exists: event-saudi-industrial-series-2": 1
+    "possible duplicate requires review: exact-title-city-source-conflict": 6,
+    "linked catalog row event-aseer-season was superseded by dedupe": 2,
+    "publication gate source-evidence is not auto-publishable": 14,
+    "unknown category requires review": 10,
+    "possible duplicate already exists: event-saudi-industrial-series-2": 1,
+    "possible duplicate already exists: event-leap-2026": 1,
+    "possible duplicate requires review: exact-title-city-venue-conflict": 2,
+    "linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe": 1,
+    "linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe": 1
   },
   "collector_error_sources": [],
   "sources": [
@@ -272,7 +276,7 @@
       "priority": 23,
       "trust_level": "venue-official",
       "intake_policy": "official-feed-preferred",
-      "fetch_method": "html-calendar",
+      "fetch_method": "json-api",
       "candidate_gate": "human-review",
       "publish_policy": "auto_publish"
     },
@@ -378,12 +382,12 @@
     },
     {
       "id": "visit-saudi-calendar-pdf",
-      "name": "Visit Saudi Calendar PDF",
+      "name": "Visit Saudi Summer Calendar PDF",
       "priority": 34,
       "trust_level": "official",
       "intake_policy": "official-feed-preferred",
-      "fetch_method": "manual-review",
-      "candidate_gate": "extraction",
+      "fetch_method": "pdf-calendar",
+      "candidate_gate": "duplicate-review",
       "publish_policy": "manual_review"
     },
     {
@@ -602,9 +606,9 @@
       "priority": 56,
       "trust_level": "official",
       "intake_policy": "official-feed-preferred",
-      "fetch_method": "html-calendar",
-      "candidate_gate": "human-review",
-      "publish_policy": "auto_publish"
+      "fetch_method": "json-api",
+      "candidate_gate": "extraction",
+      "publish_policy": "manual_review"
     },
     {
       "id": "ministry-commerce-events",
@@ -775,6 +779,156 @@
       "fetch_method": "partnership-api",
       "candidate_gate": "source-evidence",
       "publish_policy": "partnership_required"
+    },
+    {
+      "id": "middle-east-banking-ai-summit",
+      "name": "Middle East Banking AI & Analytics Summit Official",
+      "priority": 74,
+      "trust_level": "official",
+      "intake_policy": "official-feed-preferred",
+      "fetch_method": "html-listing",
+      "candidate_gate": "human-review",
+      "publish_policy": "auto_publish"
+    },
+    {
+      "id": "middle-east-enterprise-ai-summit",
+      "name": "Middle East Enterprise AI & Analytics Summit Official",
+      "priority": 75,
+      "trust_level": "official",
+      "intake_policy": "official-feed-preferred",
+      "fetch_method": "html-listing",
+      "candidate_gate": "human-review",
+      "publish_policy": "auto_publish"
+    },
+    {
+      "id": "umm-al-qura-events",
+      "name": "Umm Al-Qura University Events Center",
+      "priority": 76,
+      "trust_level": "official",
+      "intake_policy": "official-feed-preferred",
+      "fetch_method": "html-listing",
+      "candidate_gate": "duplicate-review",
+      "publish_policy": "manual_review"
+    },
+    {
+      "id": "leap-official-agendas",
+      "name": "LEAP Official Event and Agendas",
+      "priority": 77,
+      "trust_level": "official",
+      "intake_policy": "official-feed-preferred",
+      "fetch_method": "html-calendar",
+      "candidate_gate": "extraction",
+      "publish_policy": "manual_review"
+    },
+    {
+      "id": "fii10-official-program",
+      "name": "FII 10th Edition Official Program",
+      "priority": 78,
+      "trust_level": "official",
+      "intake_policy": "monitor-public",
+      "fetch_method": "html-calendar",
+      "candidate_gate": "extraction",
+      "publish_policy": "manual_review"
+    },
+    {
+      "id": "cityscape-global-official-program",
+      "name": "Cityscape Global Official Program",
+      "priority": 79,
+      "trust_level": "official",
+      "intake_policy": "partnership-needed",
+      "fetch_method": "partnership-api",
+      "candidate_gate": "source-evidence",
+      "publish_policy": "partnership_required"
+    },
+    {
+      "id": "qassim-university-events",
+      "name": "Qassim University Events",
+      "priority": 80,
+      "trust_level": "official",
+      "intake_policy": "official-feed-preferred",
+      "fetch_method": "html-calendar",
+      "candidate_gate": "duplicate-review",
+      "publish_policy": "manual_review"
+    },
+    {
+      "id": "jouf-university-programs",
+      "name": "Jouf University Summer Programs",
+      "priority": 81,
+      "trust_level": "official",
+      "intake_policy": "official-feed-preferred",
+      "fetch_method": "html-listing",
+      "candidate_gate": "duplicate-review",
+      "publish_policy": "manual_review"
+    },
+    {
+      "id": "money2020-middle-east-agendas",
+      "name": "Money20/20 Middle East Official Agendas",
+      "priority": 82,
+      "trust_level": "official",
+      "intake_policy": "official-feed-preferred",
+      "fetch_method": "html-calendar",
+      "candidate_gate": "extraction",
+      "publish_policy": "manual_review"
+    },
+    {
+      "id": "madinah-chamber-events",
+      "name": "Madinah Chamber Events",
+      "priority": 83,
+      "trust_level": "official",
+      "intake_policy": "official-feed-preferred",
+      "fetch_method": "json-api",
+      "candidate_gate": "duplicate-review",
+      "publish_policy": "manual_review"
+    },
+    {
+      "id": "madinah-architecture-festival",
+      "name": "Madinah International Architecture Festival",
+      "priority": 84,
+      "trust_level": "official",
+      "intake_policy": "official-feed-preferred",
+      "fetch_method": "html-listing",
+      "candidate_gate": "duplicate-review",
+      "publish_policy": "manual_review"
+    },
+    {
+      "id": "hayy-jameel-events",
+      "name": "Hayy Jameel What's On",
+      "priority": 85,
+      "trust_level": "venue-official",
+      "intake_policy": "official-feed-preferred",
+      "fetch_method": "sitemap-pages",
+      "candidate_gate": "duplicate-review",
+      "publish_policy": "manual_review"
+    },
+    {
+      "id": "informa-connect-saudi-events",
+      "name": "Informa Connect Saudi Event Portfolio",
+      "priority": 86,
+      "trust_level": "official",
+      "intake_policy": "official-feed-preferred",
+      "fetch_method": "sitemap-pages",
+      "candidate_gate": "duplicate-review",
+      "publish_policy": "manual_review"
+    },
+    {
+      "id": "kau-events",
+      "name": "King Abdulaziz University Events",
+      "priority": 87,
+      "trust_level": "official",
+      "intake_policy": "official-feed-preferred",
+      "fetch_method": "html-listing",
+      "candidate_gate": "duplicate-review",
+      "publish_policy": "manual_review"
+    },
+    {
+      "id": "saudicon-events",
+      "name": "Saudicon Events",
+      "priority": 88,
+      "trust_level": "aggregator",
+      "intake_policy": "candidate-only",
+      "fetch_method": "sitemap-pages",
+      "candidate_gate": "source-evidence",
+      "publish_policy": "candidate_only"
     }
   ]
 }

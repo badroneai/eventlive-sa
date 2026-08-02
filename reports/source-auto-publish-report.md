@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-02T14:10:31.696Z
+- published_at: 2026-08-02T15:35:19.621Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 577
-- published_new: 15
-- linked_existing: 524
+- published_new: 6
+- linked_existing: 533
 - blocked_remaining: 38
 - duplicate_review_alerts: 8
 
@@ -29,15 +29,6 @@
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
-| candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-البصريات-لخارج-مكة-20260801-70d68f2f | published | event-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-البصريات-لخارج-مكة | نموذج التسجيل والسداد للدبلوم المتوسط في البصريات لخارج مكة |
-| candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-جودة-وسلامة-الغذاء-لخارج-مكة-20260802-75445a94 | published | event-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-جودة-وسلامة-الغذاء-لخارج-مكة | نموذج التسجيل والسداد للدبلوم المتوسط في جودة وسلامة الغذاء لخارج مكة |
-| candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-البرمجة-وعلوم-الحاسب-الآلي-لخارج-20260802-fe10cf73 | published | event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-البرمجة-وعلوم-الحاسب-الآلي-لخارج | نموذج التسجيل والسداد لدبلوم المتوسط في البرمجة وعلوم الحاسب الآلي لخارج مكة |
-| candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-المحاسبة-المالية-لخارج-مكة-20260802-5e9247a5 | published | event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-المحاسبة-المالية-لخارج-مكة | نموذج التسجيل والسداد لدبلوم المتوسط في المحاسبة المالية لخارج مكة |
-| candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-إدارة-الموارد-البشرية-لخارج-مكة-20260802-1f2c5a59 | published | event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-إدارة-الموارد-البشرية-لخارج-مكة | نموذج التسجيل والسداد لدبلوم المتوسط في إدارة الموارد البشرية لخارج مكة |
-| candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-الأنظمة-لخارج-مكة-20260802-8ad724e4 | published | event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-الأنظمة-لخارج-مكة | نموذج التسجيل والسداد لدبلوم المتوسط في الأنظمة لخارج مكة |
-| candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-التكنولوجيا-المالية-لخارج-مكة-20260802-f765a86a | published | event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-التكنولوجيا-المالية-لخارج-مكة | نموذج التسجيل والسداد لدبلوم المتوسط في التكنولوجيا المالية لخارج مكة |
-| candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-التصميم-الجرافيكي-والوسائط-الرقم-20260802-79aa8071 | published | event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-التصميم-الجرافيكي-والوسائط-الرقم | نموذج التسجيل والسداد لدبلوم المتوسط في التصميم الجرافيكي والوسائط الرقمية لخارج مكة |
-| candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-الصحة-والسلامة-المهنية-لخارج-مكة-20260802-06e96187 | published | event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-الصحة-والسلامة-المهنية-لخارج-مكة | نموذج التسجيل والسداد لدبلوم المتوسط في الصحة والسلامة المهنية لخارج مكة |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -183,6 +174,7 @@
 | candidate-umm-al-qura-events-فرص-تعاقد-على-مشروع-بحثي-ممول-20260727-602b04ea | linked-existing | event-وظائف-بحثية-تجربة | already linked to catalog event |
 | candidate-umm-al-qura-events-تجرييبية-20260729-4b181285 | linked-existing | event-تجرييبية | already linked to catalog event |
 | candidate-visit-saudi-seasons-tour-of-al-baha-20260730-7b170410 | linked-existing | event-tour-of-al-baha | already linked to catalog event |
+| candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-البصريات-لخارج-مكة-20260801-70d68f2f | linked-existing | event-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-البصريات-لخارج-مكة | already linked to catalog event |
 | candidate-visit-saudi-seasons-buraydah-dates-carnival-20260801-24906534 | linked-existing | event-buraydah-dates-carnival | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-ضحكات-الرياض-20260802-4a38d19e | linked-existing | event-ضحكات-الرياض | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات-20260802-9bb9ff4b | linked-existing | event-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات | already linked to catalog event |
@@ -192,6 +184,14 @@
 | candidate-future-skills-catalog-devops-fundamentals-for-cloud-environments-أساسيات-ديفوبس-لبيئات-السحابة-20260802-aa8ebcbc | linked-existing | event-devops-fundamentals-for-cloud-environments-أساسيات-ديفوبس-لبيئات-السحابة | already linked to catalog event |
 | candidate-future-skills-catalog-cloud-security-operations-and-identity-management-عمليات-أمان-السحابة-وإ-20260802-f874057b | linked-existing | event-cloud-security-operations-and-identity-management-عمليات-أمان-السحابة-وإ | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي-20260802-12263779 | linked-existing | event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي | already linked to catalog event |
+| candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-جودة-وسلامة-الغذاء-لخارج-مكة-20260802-75445a94 | linked-existing | event-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-جودة-وسلامة-الغذاء-لخارج-مكة | already linked to catalog event |
+| candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-البرمجة-وعلوم-الحاسب-الآلي-لخارج-20260802-fe10cf73 | linked-existing | event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-البرمجة-وعلوم-الحاسب-الآلي-لخارج | already linked to catalog event |
+| candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-المحاسبة-المالية-لخارج-مكة-20260802-5e9247a5 | linked-existing | event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-المحاسبة-المالية-لخارج-مكة | already linked to catalog event |
+| candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-إدارة-الموارد-البشرية-لخارج-مكة-20260802-1f2c5a59 | linked-existing | event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-إدارة-الموارد-البشرية-لخارج-مكة | already linked to catalog event |
+| candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-الأنظمة-لخارج-مكة-20260802-8ad724e4 | linked-existing | event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-الأنظمة-لخارج-مكة | already linked to catalog event |
+| candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-التكنولوجيا-المالية-لخارج-مكة-20260802-f765a86a | linked-existing | event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-التكنولوجيا-المالية-لخارج-مكة | already linked to catalog event |
+| candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-التصميم-الجرافيكي-والوسائط-الرقم-20260802-79aa8071 | linked-existing | event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-التصميم-الجرافيكي-والوسائط-الرقم | already linked to catalog event |
+| candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-الصحة-والسلامة-المهنية-لخارج-مكة-20260802-06e96187 | linked-existing | event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-الصحة-والسلامة-المهنية-لخارج-مكة | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine-20260802-58d47757 | linked-existing | event-معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine | already linked to catalog event |
 | candidate-misk-hub-programs-nonprofit-sector-skills-program-20260803-075740c9 | linked-existing | event-nonprofit-sector-skills-program | already linked to catalog event |
 | candidate-ithra-events-childrens-museum-free-monday-20260803-15ad7731 | linked-existing | event-childrens-museum-free-monday | already linked to catalog event |

@@ -1,42 +1,46 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-07-10T03:56:00.073Z
+- Generated at: 2026-08-02T15:44:29.185Z
 - Status: PASS
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
-- Sources: 73
-- Candidates: 194
-- Matched candidates: 166
-- Auto-publish sources: 14
-- Candidate-only sources: 11
-- Partnership-required sources: 4
-- Productive sources / attempted: 1/1
+- Sources: 88
+- Candidates: 577
+- Matched candidates: 545
+- Auto-publish sources: 15
+- Candidate-only sources: 12
+- Partnership-required sources: 5
+- Productive sources / attempted: 19/20
 - Collector errors: 0
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 1 |
-| candidate_queue | 194 |
-| evaluated_for_publish | 194 |
-| linked_existing | 162 |
-| published_new | 1 |
-| blocked | 31 |
+| discovered_this_run | 319 |
+| candidate_queue | 577 |
+| evaluated_for_publish | 577 |
+| linked_existing | 533 |
+| published_new | 6 |
+| blocked | 38 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 30 |
+| secondary_still_blocked | 34 |
 
 ## Blocked Reasons
 
 | Reason | Count |
 | --- | --- |
-| publication gate source-evidence is not auto-publishable | 16 |
-| confidence public-listing is not auto-publishable | 12 |
-| possible duplicate already exists: event-esports-world-cup | 1 |
-| possible duplicate already exists: event-saudi-wood-expo-2026 | 1 |
+| publication gate source-evidence is not auto-publishable | 14 |
+| unknown category requires review | 10 |
+| possible duplicate requires review: exact-title-city-source-conflict | 6 |
+| linked catalog row event-aseer-season was superseded by dedupe | 2 |
+| possible duplicate requires review: exact-title-city-venue-conflict | 2 |
 | possible duplicate already exists: event-saudi-industrial-series-2 | 1 |
+| possible duplicate already exists: event-leap-2026 | 1 |
+| linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe | 1 |
+| linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe | 1 |
 
 ## Collector Errors
 
@@ -78,7 +82,7 @@
 | NEOM Newsroom Events | manual_review | official | source-evidence |
 | Saudi Space Agency Events | manual_review | official | extraction |
 | CST Events and News | manual_review | official | source-evidence |
-| Visit Saudi Calendar PDF | manual_review | official | extraction |
+| Visit Saudi Summer Calendar PDF | manual_review | official | duplicate-review |
 | Qiddiya Events | manual_review | official | source-evidence |
 | Sela and Saudi Entertainment Expo | manual_review | partner | source-evidence |
 | Ministry of Culture Commission Calendars | manual_review | official | extraction |
@@ -100,7 +104,7 @@
 | General Entertainment Authority Events | manual_review | official | source-evidence |
 | SDAIA Calendar and Events | manual_review | official | extraction |
 | Makkah Chamber Events | manual_review | official | duplicate-review |
-| SCEGA ePortal Events | auto_publish | official | human-review |
+| SCEGA ePortal Events | manual_review | official | extraction |
 | Ministry of Commerce Upcoming Events | manual_review | official | source-evidence |
 | Evento | candidate_only | official-marketplace | duplicate-review |
 | Asharqia Chamber Events | manual_review | official | duplicate-review |
@@ -118,3 +122,10 @@
 | Najran Municipality Summer Events | manual_review | official | duplicate-review |
 | Platinumlist Saudi City Network | candidate_only | official-marketplace | source-evidence |
 | GOV.SA National Platform Events | partnership_required | official | source-evidence |
+| Middle East Banking AI & Analytics Summit Official | auto_publish | official | human-review |
+| Middle East Enterprise AI & Analytics Summit Official | auto_publish | official | human-review |
+| Umm Al-Qura University Events Center | manual_review | official | duplicate-review |
+| LEAP Official Event and Agendas | manual_review | official | extraction |
+| FII 10th Edition Official Program | manual_review | official | extraction |
+| Cityscape Global Official Program | partnership_required | official | source-evidence |
+| Qassim University Events | manual_review | official | duplicate-review |
