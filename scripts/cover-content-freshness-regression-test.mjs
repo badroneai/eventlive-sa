@@ -19,6 +19,37 @@ import { contentTranslationKey, loadContentTranslations, saveContentTranslations
 // This test proves the fix end to end: inject a synthetic catalog event,
 // build, change its title, rebuild, and assert the cover SVG's baked text
 // tracks the new title rather than the old one.
+//
+// INTENTIONALLY NOT WIRED INTO CI (dead-gate triage, 2026-08-02). This is a
+// real, still-valid regression test, but it is unsafe to run inside any
+// battery shared with the source-sync pipeline, and too slow/heavy to add
+// to the ~35s ci:site-gates battery deploy.yml and source-sync.yml both
+// share:
+//   - It forces THREE full non-incremental rebuilds
+//     (EVENTLIVE_INCREMENTAL_BUILD=false, one with
+//     EVENTLIVE_FORCE_SEO_REFRESH=true) to get a deterministic result,
+//     which took ~73s measured locally on 2026-08-02 — more than double the
+//     entire ci:site-gates battery's own budget.
+//   - A non-incremental rebuild regenerates every date-dependent artifact
+//     (event covers whose "ended" status flips with "today"), not just the
+//     probe event this test injects: the measured local run touched ~5,000
+//     dist/ files even though the finally-block restores the real catalog
+//     and rebuilds again afterward.
+//   - Critically, one of those touched files is data/seo_page_state.json —
+//     a file source-sync.yml's "Persist sync state back to the repository"
+//     step commits straight from the working tree. If this test ran inside
+//     a step that precedes that commit (which is where its siblings like
+//     test:card-covers live), a rebuild forced by THIS test — not the
+//     actual sync's real content changes — could get swept into the daily
+//     sync commit as unrelated SEO-state churn.
+// A human should run `npm run test:cover-content-freshness` manually
+// whenever touching cover generation, the normalizeEvent()/
+// localizeEventProse() ordering it guards, or the EN cover-variant
+// selection logic in generate-site.mjs / generate-localized-site.mjs —
+// before opening a PR that touches those paths. See
+// scripts/run-publish-quality-gates.mjs and GATES-GOVERNANCE.md for how
+// the two CI-reachable batteries (ci:site-gates, ci:publish-quality-gates)
+// are kept honest; this script deliberately stays outside both.
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
