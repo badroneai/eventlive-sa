@@ -100,10 +100,14 @@ jobs:
         run: npm run ci:site-gates
 
       - name: Verify search and AI discovery contracts
+        # test:sitemap and test:seo-content moved into the shared
+        # ci:publish-quality-gates battery below (package.json,
+        # scripts/run-publish-quality-gates.mjs) — they were previously
+        # gated only here and never in source-sync.yml, so they now live
+        # with the rest of that drifted set instead of being duplicated in
+        # two places.
         run: |
-          npm run test:sitemap
           npm run test:seo-structured-data
-          npm run test:seo-content
           npm run test:seo-freshness
           npm run test:indexnow
           npm run test:ai-search-readiness
@@ -157,107 +161,49 @@ jobs:
           npm run test:official-agenda-radar
           npm run test:global-proptech-agenda
 
-      - name: Run static analysis audit
-        run: npm run audit:static
+      - name: Publish quality gates battery (shared with source-sync.yml — see package.json ci:publish-quality-gates / scripts/run-publish-quality-gates.mjs)
+        # Governance fix 2026-08-02: this used to be ~33 separate inline
+        # steps (audit:static through test:readiness-standard, plus
+        # test:sitemap/test:seo-content above). That hardcoded list existed
+        # only here — source-sync.yml, the workflow that actually publishes
+        # the live site every few hours, never ran it — so this pipeline
+        # went red for 5 days (2026-07-28 onward) at audit:lighthouse while
+        # source-sync.yml kept publishing through a narrower list that never
+        # touched audit:axe/test:axe or audit:lighthouse at all, and nothing
+        # anywhere said so. It is now one shared script both workflows call
+        # (deploy.yml blocking, source-sync.yml loud-but-non-blocking — see
+        # GATES-GOVERNANCE.md), enforced by scripts/publish-gate-drift-regression-test.mjs
+        # so the two paths cannot silently drift apart again.
+        run: npm run ci:publish-quality-gates
 
-      - name: Run product journey audit
-        run: npm run audit:product-journeys
-
-      - name: Run UI state audit
-        run: npm run audit:ui-states
-
-      - name: Run content localization audit
-        run: npm run audit:content-localization
-
-      - name: Run compliance and source-rights audit
-        run: npm run audit:compliance-source-rights
-
-      - name: Run documentation audit
-        run: npm run audit:documentation
-
-      - name: Run secret and environment audit
-        run: npm run audit:secret-env
-
-      - name: Run production dependency audit
-        run: npm run audit:dependencies
-
-      - name: Run web quality audit
-        run: npm run audit:web-quality
-
-      - name: Run Lighthouse performance audit
-        run: npm run audit:lighthouse
-
-      - name: Run browser matrix audit
-        run: npm run audit:browser-matrix
-
-      - name: Run axe accessibility audit
-        run: npm run audit:axe
-
-      - name: Run security review audit
-        run: npm run audit:security-review
-
-      - name: Run operations readiness audit
-        run: npm run audit:ops-readiness
-
-      - name: Run release deploy rollback audit
-        run: npm run audit:release-deploy-rollback
-
-      - name: Build applied delivery readiness standard
-        run: npm run readiness:standard
-
-      - name: Build owner command center evidence
-        run: npm run owner:command-center
-
-      - name: Run owner command center regression tests
-        run: npm run test:owner-command-center
-
-      - name: Run analytics instrumentation regression tests
-        run: npm run test:analytics
-
-      - name: Run static analysis regression tests
-        run: npm run test:static
-
-      - name: Run product journey regression tests
-        run: npm run test:product-journeys
-
-      - name: Run UI state regression tests
-        run: npm run test:ui-states
-
-      - name: Run content localization regression tests
-        run: npm run test:content-localization
-
-      - name: Run compliance and source-rights regression tests
-        run: npm run test:compliance-source-rights
-
-      - name: Run documentation regression tests
-        run: npm run test:documentation
-
-      - name: Run secret and environment regression tests
-        run: npm run test:secret-env
-
-      - name: Run web quality audit regression tests
-        run: npm run test:web-quality
-
-      - name: Run Lighthouse performance regression tests
-        run: npm run test:lighthouse
-
-      - name: Run browser matrix regression tests
-        run: npm run test:browser-matrix
-
-      - name: Run axe accessibility regression tests
-        run: npm run test:axe
-
-      - name: Run security review regression tests
-        run: npm run test:security-review
-
-      - name: Run operations readiness regression tests
-        run: npm run test:ops-readiness
-
-      - name: Run release deploy rollback regression tests
-        run: npm run test:release-deploy-rollback
-
-      - name: Run applied delivery readiness standard regression tests
-        run: npm run test:readiness-standard
+      - name: Advisory gates status (report-only — see GATES-GOVERNANCE.md #6)
+        # audit:release-deploy-rollback, readiness:standard, and
+        # owner:command-center (run above, inside ci:publish-quality-gates)
+        # never exit non-zero and their paired test:* only validates report
+        # shape, not the substantive verdict — so they cannot block a
+        # publish. The rule is that their output must still be visible
+        # somewhere instead of silently trusted: this step surfaces it.
+        if: always()
+        run: |
+          {
+            echo "## Advisory Gates Status (report-only, cannot block — see GATES-GOVERNANCE.md #6)"
+            if [ -f reports/release-deploy-rollback-status.json ]; then
+              echo "- release-deploy-rollback: $(node -e "const r=require('./reports/release-deploy-rollback-status.json'); console.log(r.status)")"
+            else
+              echo "- release-deploy-rollback: report missing"
+            fi
+            if [ -f reports/delivery-readiness-standard-status.json ]; then
+              echo "- readiness:standard: $(node -e "const r=require('./reports/delivery-readiness-standard-status.json'); console.log(r.release_verdict + ' (' + JSON.stringify(r.totals) + ')')")"
+            else
+              echo "- readiness:standard: report missing"
+            fi
+            if [ -f reports/eventlive-command-center.json ]; then
+              echo "- owner:command-center: $(node -e "const r=require('./reports/eventlive-command-center.json'); const bad=(r.gates||[]).filter(g=>g.status!=='PASS').map(g=>g.name); console.log(bad.length ? 'attention: ' + bad.join(', ') : 'all gates PASS')")"
+            else
+              echo "- owner:command-center: report missing"
+            fi
+            echo ""
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload CI evidence bundle
         uses: actions/upload-artifact@v4
