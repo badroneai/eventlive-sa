@@ -57,7 +57,26 @@
                 },
                 "official_link": { "type": "string" },
                 "status": { "type": "string", "enum": ["draft", "reviewed", "published"] },
-                "last_verified": { "type": "string", "format": "date" }
+                "last_verified": { "type": "string", "format": "date" },
+                "image": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["url", "credit"],
+                  "description": "Optional, hand-authored override per EVENTME-CITY-PROFILES-BRIEF.md's Place.image{url,credit} shape. The scripts/cache-place-images.mjs pilot does NOT write here — it writes data/place_image_manifest.json, and scripts/city-places-render.mjs joins that manifest to place_id at build time, so the automated pipeline never touches this human-authored data file. This field exists for a future/manual curator override of that join (e.g. swapping in a better photo by hand) and is validated the same way either path would need: url must be a local path (never hotlinked), and every credit field is required once an image is present at all.",
+                  "properties": {
+                    "url": { "type": "string", "minLength": 1, "pattern": "^/assets/place-images/" },
+                    "credit": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": ["artist", "license", "commons"],
+                      "properties": {
+                        "artist": { "type": "string", "minLength": 1 },
+                        "license": { "type": "string", "minLength": 1 },
+                        "commons": { "type": "string", "minLength": 1 }
+                      }
+                    }
+                  }
+                }
               }
             }
           }

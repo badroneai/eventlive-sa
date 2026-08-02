@@ -1,0 +1,487 @@
+{
+  "generated_at": "2026-08-02T09:48:41.530Z",
+  "city_places_file": "data/city_places.json",
+  "manifest": "data/place_image_manifest.json",
+  "image_dir": "dist/assets/place-images",
+  "totals": {
+    "wikidata_places": 93,
+    "with_p18": 43,
+    "without_p18": 50,
+    "no_imageinfo": 0,
+    "rejected_license": 0,
+    "unsupported_mime": 0,
+    "downloaded": 43,
+    "reused": 0,
+    "download_failed": 0,
+    "cached_total": 43,
+    "total_bytes": 7803790,
+    "hit_rate": 0.4624
+  },
+  "downloaded": [
+    {
+      "place_id": "al-ahsa-qarah-mountain",
+      "file": "dist/assets/place-images/al-ahsa-qarah-mountain.jpg",
+      "bytes": 115041,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "al-ahsa-oasis",
+      "file": "dist/assets/place-images/al-ahsa-oasis.jpg",
+      "bytes": 195817,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "abha-as-sawda",
+      "file": "dist/assets/place-images/abha-as-sawda.jpg",
+      "bytes": 215611,
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "place_id": "al-ahsa-jawatha-mosque",
+      "file": "dist/assets/place-images/al-ahsa-jawatha-mosque.jpg",
+      "bytes": 94060,
+      "license": "CC0"
+    },
+    {
+      "place_id": "al-ahsa-muhaires-castle",
+      "file": "dist/assets/place-images/al-ahsa-muhaires-castle.jpg",
+      "bytes": 75501,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "al-ahsa-sahood-fort",
+      "file": "dist/assets/place-images/al-ahsa-sahood-fort.jpg",
+      "bytes": 68930,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "al-ahsa-qasr-ibrahim",
+      "file": "dist/assets/place-images/al-ahsa-qasr-ibrahim.jpg",
+      "bytes": 151957,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "al-ahsa-qaisariya-market",
+      "file": "dist/assets/place-images/al-ahsa-qaisariya-market.jpg",
+      "bytes": 135211,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "al-ahsa-abdul-razzaq-museum",
+      "file": "dist/assets/place-images/al-ahsa-abdul-razzaq-museum.png",
+      "bytes": 460517,
+      "license": "CC BY 3.0"
+    },
+    {
+      "place_id": "alula-elephant-rock",
+      "file": "dist/assets/place-images/alula-elephant-rock.jpg",
+      "bytes": 136785,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "alula-old-town",
+      "file": "dist/assets/place-images/alula-old-town.jpg",
+      "bytes": 242346,
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "place_id": "alula-maraya",
+      "file": "dist/assets/place-images/alula-maraya.jpg",
+      "bytes": 82126,
+      "license": "CC BY 4.0"
+    },
+    {
+      "place_id": "aseer-shaar-castle",
+      "file": "dist/assets/place-images/aseer-shaar-castle.jpg",
+      "bytes": 183316,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "aseer-tanumah",
+      "file": "dist/assets/place-images/aseer-tanumah.jpg",
+      "bytes": 61731,
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "place_id": "aseer-bareq",
+      "file": "dist/assets/place-images/aseer-bareq.jpg",
+      "bytes": 89644,
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "place_id": "buraydah-king-abdullah-sport-city-stadium",
+      "file": "dist/assets/place-images/buraydah-king-abdullah-sport-city-stadium.jpg",
+      "bytes": 163711,
+      "license": "CC BY 2.0"
+    },
+    {
+      "place_id": "dammam-prince-mohammed-stadium",
+      "file": "dist/assets/place-images/dammam-prince-mohammed-stadium.jpg",
+      "bytes": 117232,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "dhahran-prosperity-well-7",
+      "file": "dist/assets/place-images/dhahran-prosperity-well-7.jpg",
+      "bytes": 117839,
+      "license": "Public domain"
+    },
+    {
+      "place_id": "diriyah-at-turaif",
+      "file": "dist/assets/place-images/diriyah-at-turaif.jpg",
+      "bytes": 185939,
+      "license": "CC BY 3.0 pl"
+    },
+    {
+      "place_id": "diriyah-salwa-palace",
+      "file": "dist/assets/place-images/diriyah-salwa-palace.jpg",
+      "bytes": 125010,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "diriyah-street-circuit",
+      "file": "dist/assets/place-images/diriyah-street-circuit.png",
+      "bytes": 39246,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "hail-qishlah-palace",
+      "file": "dist/assets/place-images/hail-qishlah-palace.jpg",
+      "bytes": 154666,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "hail-prince-abdulaziz-sports-city",
+      "file": "dist/assets/place-images/hail-prince-abdulaziz-sports-city.jpg",
+      "bytes": 134750,
+      "license": "CC BY 2.0"
+    },
+    {
+      "place_id": "hail-aja-salma-mountains",
+      "file": "dist/assets/place-images/hail-aja-salma-mountains.jpg",
+      "bytes": 206240,
+      "license": "CC BY 3.0"
+    },
+    {
+      "place_id": "jazan-farasan-islands",
+      "file": "dist/assets/place-images/jazan-farasan-islands.jpg",
+      "bytes": 103421,
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "place_id": "jazan-jabal-fayfa",
+      "file": "dist/assets/place-images/jazan-jabal-fayfa.jpg",
+      "bytes": 154762,
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "place_id": "jazan-jizan-dam",
+      "file": "dist/assets/place-images/jazan-jizan-dam.jpg",
+      "bytes": 68028,
+      "license": "Public domain"
+    },
+    {
+      "place_id": "jeddah-albalad-historic-jeddah",
+      "file": "dist/assets/place-images/jeddah-albalad-historic-jeddah.jpg",
+      "bytes": 219459,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "jeddah-al-rahma-mosque",
+      "file": "dist/assets/place-images/jeddah-al-rahma-mosque.jpg",
+      "bytes": 130072,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "khobar-king-fahd-causeway",
+      "file": "dist/assets/place-images/khobar-king-fahd-causeway.jpg",
+      "bytes": 99564,
+      "license": "CC BY 2.0"
+    },
+    {
+      "place_id": "riyadh-masmak-fort",
+      "file": "dist/assets/place-images/riyadh-masmak-fort.jpg",
+      "bytes": 162406,
+      "license": "Public domain"
+    },
+    {
+      "place_id": "riyadh-kingdom-centre",
+      "file": "dist/assets/place-images/riyadh-kingdom-centre.jpg",
+      "bytes": 113915,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "riyadh-al-faisaliah-centre",
+      "file": "dist/assets/place-images/riyadh-al-faisaliah-centre.jpg",
+      "bytes": 68398,
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "place_id": "sakaka-zabal-castle",
+      "file": "dist/assets/place-images/sakaka-zabal-castle.jpg",
+      "bytes": 182474,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "riyadh-boulevard-city",
+      "file": "dist/assets/place-images/riyadh-boulevard-city.jpg",
+      "bytes": 316469,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "sakaka-rajajil-columns",
+      "file": "dist/assets/place-images/sakaka-rajajil-columns.jpg",
+      "bytes": 147195,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "sakaka-marid-castle",
+      "file": "dist/assets/place-images/sakaka-marid-castle.jpg",
+      "bytes": 148445,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "sakaka-dumat-aljandal-site",
+      "file": "dist/assets/place-images/sakaka-dumat-aljandal-site.jpg",
+      "bytes": 127536,
+      "license": "Public domain"
+    },
+    {
+      "place_id": "tabuk-castle",
+      "file": "dist/assets/place-images/tabuk-castle.jpg",
+      "bytes": 159075,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "riyadh-new-murabba",
+      "file": "dist/assets/place-images/riyadh-new-murabba.png",
+      "bytes": 1158721,
+      "license": "CC0"
+    },
+    {
+      "place_id": "taif-al-shafa",
+      "file": "dist/assets/place-images/taif-al-shafa.jpg",
+      "bytes": 263074,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "tabuk-wadi-al-disah",
+      "file": "dist/assets/place-images/tabuk-wadi-al-disah.jpg",
+      "bytes": 446367,
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "place_id": "alaflaj-layla-town",
+      "file": "dist/assets/place-images/alaflaj-layla-town.jpg",
+      "bytes": 181183,
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "reused": [],
+  "rejected_license": [],
+  "no_imageinfo": [],
+  "unsupported_mime": [],
+  "without_p18": [
+    {
+      "place_id": "al-ahsa-asfar-lake",
+      "qid": "Q12196225"
+    },
+    {
+      "place_id": "al-ahsa-ain-qannas",
+      "qid": "Q22688967"
+    },
+    {
+      "place_id": "al-ahsa-house-of-allegiance",
+      "qid": "Q99677807"
+    },
+    {
+      "place_id": "al-namas-museum",
+      "qid": "Q20401486"
+    },
+    {
+      "place_id": "al-namas-al-juhwah",
+      "qid": "Q12185796"
+    },
+    {
+      "place_id": "al-namas-tharban-mosque",
+      "qid": "Q138067874"
+    },
+    {
+      "place_id": "al-namas-jabal-mareer",
+      "qid": "Q16122321"
+    },
+    {
+      "place_id": "al-namas-baniqayis-dam",
+      "qid": "Q80815265"
+    },
+    {
+      "place_id": "alula-hegra",
+      "qid": "Q27356"
+    },
+    {
+      "place_id": "alula-dadan",
+      "qid": "Q1021610"
+    },
+    {
+      "place_id": "alula-museum",
+      "qid": "Q20401243"
+    },
+    {
+      "place_id": "arar-rijm-albidwan",
+      "qid": "Q30347209"
+    },
+    {
+      "place_id": "aseer-al-habala",
+      "qid": "Q2717521"
+    },
+    {
+      "place_id": "aseer-dhahran-al-janub",
+      "qid": "Q97291607"
+    },
+    {
+      "place_id": "buraydah-dubaikhi-palace-museum",
+      "qid": "Q20402579"
+    },
+    {
+      "place_id": "buraydah-museum",
+      "qid": "Q20401626"
+    },
+    {
+      "place_id": "buraydah-aqeelat-museum",
+      "qid": "Q20401222"
+    },
+    {
+      "place_id": "buraydah-al-sumani-museum",
+      "qid": "Q20402660"
+    },
+    {
+      "place_id": "buraydah-dar-al-nafais",
+      "qid": "Q20408766"
+    },
+    {
+      "place_id": "dammam-marjan-island",
+      "qid": "Q28746316"
+    },
+    {
+      "place_id": "dammam-museum",
+      "qid": "Q12238600"
+    },
+    {
+      "place_id": "dhahran-ithra",
+      "qid": "Q28155053"
+    },
+    {
+      "place_id": "dhahran-jabal-umm-al-ruus",
+      "qid": "Q6109905"
+    },
+    {
+      "place_id": "dhahran-al-rashid-mall",
+      "qid": "Q4704690"
+    },
+    {
+      "place_id": "dhahran-al-ettifaq-stadium",
+      "qid": "Q126391645"
+    },
+    {
+      "place_id": "hail-jabal-umm-sinman-rock-art",
+      "qid": "Q66145738"
+    },
+    {
+      "place_id": "jazan-wadi-lajab",
+      "qid": "Q12250638"
+    },
+    {
+      "place_id": "jazan-jabal-alqahr",
+      "qid": "Q20414108"
+    },
+    {
+      "place_id": "jubail-al-fanateer-beach",
+      "qid": "Q12191023"
+    },
+    {
+      "place_id": "jubail-al-bahri",
+      "qid": "Q31873413"
+    },
+    {
+      "place_id": "jubail-al-huwaylat-island",
+      "qid": "Q22930595"
+    },
+    {
+      "place_id": "jubail-al-tawiya-tower",
+      "qid": "Q28715491"
+    },
+    {
+      "place_id": "khobar-bird-island",
+      "qid": "Q22930624"
+    },
+    {
+      "place_id": "madinah-dinar-dirham-museum",
+      "qid": "Q20400875"
+    },
+    {
+      "place_id": "madinah-salamah-aljahni-museum",
+      "qid": "Q20402163"
+    },
+    {
+      "place_id": "rass-aljadiyah-castle",
+      "qid": "Q20401860"
+    },
+    {
+      "place_id": "riyadh-al-malaz",
+      "qid": "Q109237999"
+    },
+    {
+      "place_id": "riyadh-souq-al-zal",
+      "qid": "Q120847781"
+    },
+    {
+      "place_id": "riyadh-edge-of-the-world",
+      "qid": "Q30340148"
+    },
+    {
+      "place_id": "riyadh-wadi-namar",
+      "qid": "Q32209673"
+    },
+    {
+      "place_id": "riyadh-king-khalid-royal-reserve",
+      "qid": "Q107489832"
+    },
+    {
+      "place_id": "riyadh-via-riyadh",
+      "qid": "Q114773297"
+    },
+    {
+      "place_id": "riyadh-king-abdullah-park",
+      "qid": "Q106855848"
+    },
+    {
+      "place_id": "sakaka-duma-jandal-lake",
+      "qid": "Q20383712"
+    },
+    {
+      "place_id": "tabuk-museum-hejaz-station",
+      "qid": "Q20401763"
+    },
+    {
+      "place_id": "tabuk-jabal-al-lawz",
+      "qid": "Q30341559"
+    },
+    {
+      "place_id": "tabuk-al-bad",
+      "qid": "Q22935639"
+    },
+    {
+      "place_id": "taif-al-hada-cablecar",
+      "qid": "Q4703935"
+    },
+    {
+      "place_id": "yanbu-radwa-heritage-museum",
+      "qid": "Q20402083"
+    },
+    {
+      "place_id": "alaflaj-jabal-tawbad",
+      "qid": "Q20413149"
+    }
+  ],
+  "download_failed": []
+}

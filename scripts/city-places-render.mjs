@@ -25,9 +25,17 @@
 // Gate Governance rule #2 requires, and it's what lets
 // scripts/city-places-regression-test.mjs and the EN override pass find the
 // right nodes without depending on translatable copy.
-import { hasOsmPlace } from './city-places-data.mjs';
+import { hasOsmPlace, loadPlaceImageManifest, placeImageRecord } from './city-places-data.mjs';
 import { cityNameBySlug } from './city-name-registry.mjs';
 import { PLACE_CATEGORIES, placeCategoryLabel } from './place-category-taxonomy.mjs';
+
+// Loaded once at module scope: scripts/cache-place-images.mjs (this pilot's
+// only writer) always runs and finishes before the site build starts (see
+// package.json's sources:sync ordering — images:cache-places precedes
+// npm run build), so the manifest on disk is already final for every call
+// this module makes during a single build. Re-reading per call would only
+// add redundant I/O across ~2,000+ page renders for no correctness benefit.
+const placeImageManifest = loadPlaceImageManifest();
 
 const OSM_ATTRIBUTION_URL = 'https://www.openstreetmap.org/copyright';
 const OSM_ATTRIBUTION_TEXT = Object.freeze({
@@ -40,13 +48,17 @@ const STRINGS = Object.freeze({
     heading: (city) => `أبرز المعالم في ${city}`,
     directions: 'الاتجاهات',
     officialSite: 'الموقع الرسمي',
-    countryName: 'السعودية'
+    countryName: 'السعودية',
+    photoCreditPrefix: 'الصورة:',
+    commonsLabel: 'ويكيميديا كومنز'
   },
   en: {
     heading: (city) => `Top attractions in ${city}`,
     directions: 'Directions',
     officialSite: 'Official site',
-    countryName: 'Saudi Arabia'
+    countryName: 'Saudi Arabia',
+    photoCreditPrefix: 'Photo:',
+    commonsLabel: 'Wikimedia Commons'
   }
 });
 
@@ -100,6 +112,25 @@ export function groupPlacesByCategory(cityEntry) {
     .map((category) => ({ category, places: byCategory.get(category.key) }));
 }
 
+// Photo credit line — visible on the card, never hidden in a title/tooltip
+// attribute, because CC BY-SA / CC BY require "reasonable" attribution and a
+// tooltip-only credit is exactly the pattern courts and Commons guidance
+// call out as insufficient. Links to the Commons FILE page (not the raw
+// image), per Commons' own reuse guidance and the brief's governance rule
+// (source must be auditable, not just cited by name).
+function placePhotoCreditHtml(record, lang) {
+  const strings = STRINGS[lang];
+  const commonsHref = escapeHtml(safeHref(record.commons_page_url));
+  return `<p class="place-photo-credit">${escapeHtml(strings.photoCreditPrefix)} ${escapeHtml(record.artist)} · ${escapeHtml(record.license)} · <a href="${commonsHref}">${escapeHtml(strings.commonsLabel)}</a></p>`;
+}
+
+function placeImageHtml(place, lang) {
+  const record = placeImageRecord(placeImageManifest, place.id);
+  if (!record) return '';
+  const name = placeName(place, lang);
+  return `<div class="card-media place-media"><img src="${escapeHtml(record.public_path)}" alt="${escapeHtml(name)}" loading="lazy" width="${Number(record.width) || 640}">${placePhotoCreditHtml(record, lang)}</div>`;
+}
+
 function placeCardHtml(place, lang) {
   const strings = STRINGS[lang];
   const name = placeName(place, lang);
@@ -109,7 +140,8 @@ function placeCardHtml(place, lang) {
   const officialLink = place.official_link
     ? `<a class="cta" href="${escapeHtml(safeHref(place.official_link))}">${strings.officialSite}</a>`
     : '';
-  return `<article class="card place-card" data-place-id="${escapeHtml(place.id)}"><div class="card-body"><h3 class="title">${escapeHtml(name)}</h3><p>${escapeHtml(description)}</p><div class="meta"><span class="chip" data-place-category="${escapeHtml(place.category)}">${escapeHtml(categoryLabel)}</span></div><div class="activation-actions">${directions}${officialLink}</div></div></article>`;
+  const media = placeImageHtml(place, lang);
+  return `<article class="card place-card" data-place-id="${escapeHtml(place.id)}">${media}<div class="card-body"><h3 class="title">${escapeHtml(name)}</h3><p>${escapeHtml(description)}</p><div class="meta"><span class="chip" data-place-category="${escapeHtml(place.category)}">${escapeHtml(categoryLabel)}</span></div><div class="activation-actions">${directions}${officialLink}</div></div></article>`;
 }
 
 /**
