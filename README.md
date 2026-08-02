@@ -173,6 +173,8 @@ npm run archive
 - Script map: `scripts/README.md`
 - Report map: `reports/README.md`
 - Search and AI visibility: `EVENTLIVE-SEARCH-AND-AI-VISIBILITY-STRATEGY.md`
+- City destination profiles (approved brief + implementation status): `EVENTME-CITY-PROFILES-BRIEF.md`
+- CI gate constitution: `GATES-GOVERNANCE.md`
 
 ## Product-facing output
 - The generated page uses lightweight program branding from the normalized document.
