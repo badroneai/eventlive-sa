@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-08-01T00:00:00Z",
+ "updated_at": "2026-08-02T00:00:00Z",
  "cities": [
   {
    "city_slug": "abha",
@@ -228,6 +228,48 @@
      },
      "status": "reviewed",
      "last_verified": "2026-08-01"
+    },
+    {
+     "id": "abha-souda-cable-car",
+     "name_ar": "تلفريك السودة (جبل سودة - رجال ألمع)",
+     "name_en": "Al-Soudah Cable Car (Jabal Sawda–Rijal Almaa line)",
+     "category": "adventure",
+     "description_ar": "امتداد جبلي من شبكة تلفريك أبها، ينزل من محطة جبل السودة (أعلى قمة في السعودية بارتفاع يفوق 3000م) إلى قرية رجال ألمع عبر سلسلة من الأعمدة الحاملة فوق أودية شديدة الانحدار. المسار موسمي ويعمل في أشهر الصيف فقط، وهو جزء من شبكة التلفريك الأوسع التي افتتحت عام 1997م وتربط أبها الجديدة بمنتزهات الجبل الأخضر والسودة والحبلة.",
+     "description_en": "A mountain segment of Abha's cable-car network, descending from the Jabal Sawda station — Saudi Arabia's highest peak at over 3,000m — to Rijal Almaa village across a line of pylons strung over steep gorges. The route is seasonal, running only in summer, and forms part of the wider cable-car system opened in 1997 that links New Abha with the Green Mountain, Sawda, and Al-Hubala stations.",
+     "coordinates": {
+      "lat": 18.2877632,
+      "lon": 42.3475935
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/1180198577",
+      "retrieved_at": "2026-08-02T08:00:00Z",
+      "license": "ODbL"
+     },
+     "official_link": "https://www.visitsaudi.com/ar/aseer/stories/the-cable-cars-of-abha",
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "abha-souq-al-thulatha",
+     "name_ar": "سوق الثلاثاء الشعبي",
+     "name_en": "Souq Al-Thulatha (Tuesday Market)",
+     "category": "culture",
+     "description_ar": "سوق شعبي مفتوح غرب حي مناظر بأبها، بلا أبواب أو رسوم دخول، يضم أكثر من 200 محل تبيع الحرف اليدوية والفخار والسجاد والأقمشة وأدوات منزلية تقليدية. يمتد نشاطه طوال الأسبوع وتبلغ ذروته يوم الثلاثاء الذي أخذ السوق اسمه منه.",
+     "description_en": "An open-air heritage market west of Abha's Manazir district with no gates or entry fee, home to more than 200 shops selling handicrafts, pottery, carpets, textiles, and traditional household goods. It trades all week but peaks on Tuesdays, the day it takes its name from.",
+     "coordinates": {
+      "lat": 18.2147407,
+      "lon": 42.4967046
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/358377281",
+      "retrieved_at": "2026-08-02T08:00:00Z",
+      "license": "ODbL"
+     },
+     "official_link": "https://www.visitsaudi.com/ar/aseer/attractions/souq-al-thulatha",
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
     }
    ]
   },
@@ -860,6 +902,26 @@
      },
      "status": "reviewed",
      "last_verified": "2026-08-01"
+    },
+    {
+     "id": "al-namas-park",
+     "name_ar": "منتزه النماص",
+     "name_en": "Al-Namas Park",
+     "category": "entertainment",
+     "description_ar": "منتزه عام في مركز محافظة النماص، يوفر مساحات خضراء وممرات للمشي وسط أجواء المرتفعات المعتدلة التي تشتهر بها المحافظة صيفًا، ويستخدمه الأهالي كمتنفس يومي قريب من وسط المدينة.",
+     "description_en": "A public park in the center of Al-Namas governorate, offering green space and walking paths amid the cool highland climate the area is known for in summer — an everyday local recreation spot close to downtown.",
+     "coordinates": {
+      "lat": 19.1361829,
+      "lon": 42.1171618
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/883373580",
+      "retrieved_at": "2026-08-01T21:00:00Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-01"
     }
    ]
   },
@@ -1047,6 +1109,26 @@
      },
      "status": "reviewed",
      "last_verified": "2026-08-01"
+    },
+    {
+     "id": "alula-museum",
+     "name_ar": "متحف العلا",
+     "name_en": "AlUla Museum",
+     "category": "culture",
+     "description_ar": "متحف تعريفي في وسط مدينة العلا يستعرض تاريخ المنطقة من الاستيطان القديم مرورًا بممالكها التاريخية وصولًا إلى العصر الإسلامي والحديث، عبر مقتنيات ونقوش ووسائل عرض تفاعلية. يُعد نقطة انطلاق مناسبة لفهم سياق المواقع الأثرية المحيطة مثل جبل الفيل قبل زيارتها.",
+     "description_en": "An orientation museum in central AlUla tracing the region's story from early settlement through its ancient kingdoms to the Islamic and modern eras, using artifacts, inscriptions, and interactive displays. It works well as a starting point for understanding nearby archaeological sites such as Elephant Rock before visiting them.",
+     "coordinates": {
+      "lat": 26.60868,
+      "lon": 37.92313
+     },
+     "source": {
+      "origin": "wikidata",
+      "source_id": "Q20401243",
+      "retrieved_at": "2026-08-02T08:00:00Z",
+      "license": "CC0"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
     }
    ]
   },
@@ -1661,6 +1743,46 @@
      },
      "status": "reviewed",
      "last_verified": "2026-08-01"
+    },
+    {
+     "id": "dammam-souq-al-hebb",
+     "name_ar": "سوق الحب",
+     "name_en": "Souq Al-Hebb",
+     "category": "food",
+     "description_ar": "سوق شعبي في قلب الدمام على شارع الملك عبدالعزيز، تتجاور فيه محال المجوهرات والتوابل والعطور والأقمشة مع أكشاك بيع صغيرة، ويحتفظ بطابع أقرب للأسواق التقليدية منه إلى مراكز التسوق الحديثة.",
+     "description_en": "A popular market in central Dammam on King Abdulaziz Street, with jewelry, spice, perfume, and fabric shops packed alongside small stalls — closer in character to a traditional souq than a modern mall.",
+     "coordinates": {
+      "lat": 26.4470616,
+      "lon": 50.1023687
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/6342898826",
+      "retrieved_at": "2026-08-02T08:23:17Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "dammam-al-amany-park",
+     "name_ar": "حديقة الأماني",
+     "name_en": "Al-Amany Park",
+     "category": "nature",
+     "description_ar": "من الحدائق الرئيسية في حي البديع بالدمام، بمسار للمشي والجري ومقاعد جلوس ومحال مأكولات، ويقصدها الأهالي للرياضة الخفيفة في المساء.",
+     "description_en": "One of the main parks in Dammam's Al-Badi' district, with a walking and running track, seating, and food outlets — a regular evening spot for light exercise.",
+     "coordinates": {
+      "lat": 26.4475644,
+      "lon": 50.1162963
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/12019999383",
+      "retrieved_at": "2026-08-02T08:23:17Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
     }
    ]
   },
@@ -1809,6 +1931,46 @@
      },
      "status": "reviewed",
      "last_verified": "2026-08-01"
+    },
+    {
+     "id": "dhahran-assafa-community-park",
+     "name_ar": "حديقة الصفا المجتمعية",
+     "name_en": "Assafa Community Park",
+     "category": "nature",
+     "description_ar": "حديقة حي صغيرة في منطقة الصفا بالظهران، بممرات مشي قصيرة ومساحات خضراء محدودة، تخدم السكان المجاورين كمتنفس يومي بسيط.",
+     "description_en": "A small community park in Dhahran's Assafa area, with short walking paths and modest green space — a simple daily-use spot for nearby residents.",
+     "coordinates": {
+      "lat": 26.3812785,
+      "lon": 50.1820822
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/5824227283",
+      "retrieved_at": "2026-08-02T08:23:17Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "dhahran-aramco-environmental-park-2",
+     "name_ar": "منتزه أرامكو البيئي 2",
+     "name_en": "Aramco Environmental Park 2",
+     "category": "nature",
+     "description_ar": "منتزه بيئي تشغّله أرامكو السعودية في حي المنتزه بالظهران، بمزروعات محلية ومناطق لعب للأطفال، ومفتوح للجمهور رغم ارتباطه بمرافق الشركة.",
+     "description_en": "An environmental park operated by Saudi Aramco in Dhahran's Al-Muntazah district, with native planting and children's play areas — open to the public despite its ties to company facilities.",
+     "coordinates": {
+      "lat": 26.3740635,
+      "lon": 50.1281252
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/8711234401",
+      "retrieved_at": "2026-08-02T08:23:17Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
     }
    ]
   },
@@ -2129,6 +2291,47 @@
      },
      "status": "reviewed",
      "last_verified": "2026-08-01"
+    },
+    {
+     "id": "hail-souq-barzan",
+     "name_ar": "سوق برزان الشعبي",
+     "name_en": "Souq Barzan",
+     "category": "food",
+     "description_ar": "سوق شعبي عمره أكثر من 100 عام قرب قصر برزان ومسجد برزان القديم بحائل، يجمع بين محال الملابس التراثية والعطور والمفروشات ومنتجات حائل المحلية المعروفة كجبنة الكليجا والفلفل الأحمر المطحون والنعناع. يُعد من أكثر أسواق المنطقة ازدحامًا بالزوار.",
+     "description_en": "A market over a century old near Barzan Palace and the old Barzan mosque in Hail, mixing traditional clothing, perfume, and furnishing shops with local specialty foods such as kaleija cheese, ground red pepper, and mint. It's among the busiest heritage markets in the region.",
+     "coordinates": {
+      "lat": 27.5249716,
+      "lon": 41.7022064
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/5861229898",
+      "retrieved_at": "2026-08-02T08:00:00Z",
+      "license": "ODbL"
+     },
+     "official_link": "https://spa.gov.sa/N2070491",
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "hail-nafud-qina",
+     "name_ar": "نفود قنا",
+     "name_en": "Nafud Qina",
+     "category": "adventure",
+     "description_ar": "امتداد رملي يقع عند قرية قناء على بعد نحو 30 كم شمال مدينة حائل، ويُعد الوجهة المفضلة لهواة قيادة سيارات الدفع الرباعي والتنقل بين الكثبان. الإحداثيات هنا تشير إلى قرية قناء المجاورة كأقرب نقطة مرجعية موثقة للنفود.",
+     "description_en": "A dune field near Qina' village roughly 30km north of Hail, popular with 4x4 drivers weaving through the sand. The coordinates here mark the adjacent Qina' village as the nearest documented reference point for the dune field.",
+     "coordinates": {
+      "lat": 27.777224,
+      "lon": 41.423634
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/1237938202",
+      "retrieved_at": "2026-08-02T08:00:00Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
     }
    ]
   },
@@ -2337,6 +2540,48 @@
      },
      "status": "reviewed",
      "last_verified": "2026-08-01"
+    },
+    {
+     "id": "jazan-jabal-alqahr",
+     "name_ar": "جبال القهر",
+     "name_en": "Jabal Al-Qahr",
+     "category": "adventure",
+     "description_ar": "سلسلة جبلية في محافظة الريث شرقي منطقة جازان، تبعد نحو 130 كم عن مدينة جازان ويبلغ ارتفاع أعلى قممها 2041 مترًا، وتضم داخلها وادي لجب. تتميز بقمم صخرية شاهقة ونقوش صخرية قديمة، وتجذب هواة المشي لمسافات طويلة والاستكشاف الجبلي.",
+     "description_en": "A mountain range in Al-Rayth governorate east of Jazan, about 130km from Jazan city, reaching 2,041m at its highest point and enclosing Wadi Lajab. It combines towering rock peaks with ancient rock carvings, drawing hikers and mountain explorers.",
+     "coordinates": {
+      "lat": 17.654666666666667,
+      "lon": 42.885222222222225
+     },
+     "source": {
+      "origin": "wikidata",
+      "source_id": "Q20414108",
+      "retrieved_at": "2026-08-02T08:00:00Z",
+      "license": "CC0"
+     },
+     "official_link": "https://www.spa.gov.sa/2258638",
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "jazan-coral-island",
+     "name_ar": "جزيرة المرجان",
+     "name_en": "Coral Island",
+     "category": "adventure",
+     "description_ar": "جزيرة صغيرة على الساحل الجنوبي لمدينة جازان، تُستخدم كنقطة انطلاق لرحلات الغوص والرياضات المائية والجولات البحرية إلى الجزر القريبة، ما يجعلها وجهة محببة لسكان المنطقة وزوارها من عشاق البحر.",
+     "description_en": "A small island off Jazan's southern shoreline, used as a launch point for diving, water sports, and boat trips to nearby islands — a favorite for local residents and visiting sea-sport enthusiasts.",
+     "coordinates": {
+      "lat": 16.834212,
+      "lon": 42.5760341
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/389273451",
+      "retrieved_at": "2026-08-02T08:00:00Z",
+      "license": "ODbL"
+     },
+     "official_link": "https://spa.gov.sa/N2308896",
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
     }
    ]
   },
@@ -2586,6 +2831,47 @@
      },
      "status": "reviewed",
      "last_verified": "2026-08-01"
+    },
+    {
+     "id": "jeddah-al-rahma-mosque",
+     "name_ar": "مسجد الرحمة (المسجد العائم)",
+     "name_en": "Al-Rahma Mosque (the Floating Mosque)",
+     "category": "culture",
+     "description_ar": "مسجد بُني عام 1406هـ (1985م) على امتداد كورنيش جدة القديم مقابل ميناء جدة الإسلامي، وتبلغ مساحته نحو 2400 متر مربع. يقوم على دعامات فوق مياه البحر الأحمر مباشرة بحيث تبدو قبته البيضاء عائمة عند ارتفاع المد، وهو من أوائل المساجد في العالم التي شُيّدت على سطح البحر.",
+     "description_en": "Built in 1985 along Jeddah's old Corniche opposite the Islamic Port, covering roughly 2,400 square metres. The mosque stands on supports directly over the Red Sea, so its white dome appears to float when the tide rises — one of the first mosques in the world built over open water.",
+     "coordinates": {
+      "lat": 21.6486111,
+      "lon": 39.1008333
+     },
+     "source": {
+      "origin": "wikidata",
+      "source_id": "Q12242734",
+      "retrieved_at": "2026-08-02T08:00:00Z",
+      "license": "CC0"
+     },
+     "official_link": "https://www.visitsaudi.com/ar/jeddah/attractions/al-rahma-mosque",
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "jeddah-prince-majed-park",
+     "name_ar": "حديقة الأمير ماجد",
+     "name_en": "Prince Majed Park",
+     "category": "nature",
+     "description_ar": "أكبر حديقة عامة في محافظة جدة بمساحة تتجاوز 130 ألف متر مربع، تضم مسارات مشي مظللة ومساحات خضراء واسعة وألعابًا ترفيهية للأطفال. تُعد من أبرز المتنفسات الخضراء لسكان المدينة التي تفتقر إلى محميات طبيعية داخل نطاقها العمراني.",
+     "description_en": "Jeddah's largest municipal park, spanning more than 130,000 square metres of shaded walking trails, open green space, and children's play areas — one of the main green-space escapes in a coastal city with little natural reserve land inside its urban footprint.",
+     "coordinates": {
+      "lat": 21.5914252,
+      "lon": 39.1837848
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/1074269189",
+      "retrieved_at": "2026-08-02T08:00:00Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
     }
    ]
   },
@@ -2674,6 +2960,46 @@
      },
      "status": "reviewed",
      "last_verified": "2026-08-01"
+    },
+    {
+     "id": "jubail-al-tawiya-tower",
+     "name_ar": "برج الطوية",
+     "name_en": "Al-Tawiya Tower",
+     "category": "culture",
+     "description_ar": "برج تحصيني حجري بُني عام 1929 بأمر من الملك عبدالعزيز لحماية بئر الطوية، الذي كان المصدر الرئيسي لمياه الشرب في الجبيل قبل عصر التحلية. من أقدم المعالم الباقية في وسط المحافظة.",
+     "description_en": "A stone fortress tower built in 1929 on the orders of King Abdulaziz to guard the Al-Tawiya well, once Jubail's main source of drinking water before the desalination era. One of the oldest surviving landmarks at the governorate's center.",
+     "coordinates": {
+      "lat": 27.012694444444445,
+      "lon": 49.63697777777778
+     },
+     "source": {
+      "origin": "wikidata",
+      "source_id": "Q28715491",
+      "retrieved_at": "2026-08-02T08:23:17Z",
+      "license": "CC0"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "jubail-khaldiya-park",
+     "name_ar": "حديقة الخالدية",
+     "name_en": "Khaldiya Park",
+     "category": "nature",
+     "description_ar": "حديقة حي في منطقة الخالدية بالجبيل، بمساحات خضراء ومقاعد ظليلة، تخدم العائلات المجاورة كخيار ترفيهي محلي بعيدًا عن مناطق الكورنيش المزدحمة.",
+     "description_en": "A neighbourhood park in Jubail's Khaldiya area, with green space and shaded seating — a local family option away from the busier corniche zones.",
+     "coordinates": {
+      "lat": 26.9594046,
+      "lon": 49.6676204
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/1539233422",
+      "retrieved_at": "2026-08-02T08:23:17Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
     }
    ]
   },
@@ -2821,6 +3147,26 @@
      },
      "status": "reviewed",
      "last_verified": "2026-08-01"
+    },
+    {
+     "id": "khamis-mushait-tandaha-dam",
+     "name_ar": "سد وادي تندحة",
+     "name_en": "Wadi Tandaha Dam",
+     "category": "nature",
+     "description_ar": "سد في محافظة خميس مشيط تحيط به بحيرة تجمّع مياه ومساحات خضراء كثيفة الأشجار، ويُعد من أكثر مواقع المحافظة جذبًا لهواة التنزه والتصوير، مع مطل مجاور يوفر إطلالة بانورامية على المدينة والقرى المحيطة.",
+     "description_en": "A dam in Khamis Mushait governorate surrounded by a reservoir lake and dense tree cover, one of the governorate's most popular spots for walks and photography, with an adjacent viewpoint overlooking the city and surrounding villages.",
+     "coordinates": {
+      "lat": 18.3127187,
+      "lon": 42.8765967
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/1091789503",
+      "retrieved_at": "2026-08-02T08:00:00Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
     }
    ]
   },
@@ -2952,6 +3298,26 @@
      "official_link": "https://sunset-beach.com.sa",
      "status": "reviewed",
      "last_verified": "2026-08-01"
+    },
+    {
+     "id": "khobar-khair-park",
+     "name_ar": "حديقة الخير",
+     "name_en": "Khair Park",
+     "category": "nature",
+     "description_ar": "حديقة حي هادئة في منطقة العليا بالخبر، بمساحات خضراء محدودة ومسارات مشي قصيرة، خيار عملي لنزهة قريبة من السكن بعيدًا عن زحمة الكورنيش.",
+     "description_en": "A quiet neighbourhood park in Khobar's Al-Ulya area, with modest green space and short walking paths — a practical nearby option away from the busier corniche.",
+     "coordinates": {
+      "lat": 26.2918625,
+      "lon": 50.1782604
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/4085371434",
+      "retrieved_at": "2026-08-02T08:23:17Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
     }
    ]
   },
@@ -3119,6 +3485,46 @@
      },
      "status": "reviewed",
      "last_verified": "2026-08-01"
+    },
+    {
+     "id": "madinah-dinar-dirham-museum",
+     "name_ar": "متحف الدينار والدرهم",
+     "name_en": "Dinar and Dirham Museum",
+     "category": "culture",
+     "description_ar": "متحف تراثي خاص في شارع قباء بالمدينة المنورة، يعرض أدوات القهوة والضيافة العربية التقليدية وأدوات الزراعة القديمة، إلى جانب مجموعة عملات تاريخية متعاقبة العصور.",
+     "description_en": "A private heritage museum on Quba Street in Madinah, displaying traditional Arabic coffee and hospitality tools and old farming implements alongside a collection of historical coins spanning several eras.",
+     "coordinates": {
+      "lat": 24.4183366,
+      "lon": 39.6206477
+     },
+     "source": {
+      "origin": "wikidata",
+      "source_id": "Q20400875",
+      "retrieved_at": "2026-08-02T08:23:17Z",
+      "license": "CC0"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "madinah-salamah-aljahni-museum",
+     "name_ar": "متحف سلامة الجهني",
+     "name_en": "Salamah Al-Jahni Museum",
+     "category": "culture",
+     "description_ar": "متحف تراثي خاص في حي العزيزية بالمدينة المنورة، افتتح عام 1422هـ ويضم عشرين جناحًا تعرض مقتنيات متنوعة من الأدوات المنزلية والمخطوطات والعملات والمنسوجات القديمة.",
+     "description_en": "A private heritage museum in Madinah's Al-Aziziyah district, opened in 1422 AH (2001), with twenty wings displaying household tools, manuscripts, coins, and old textiles.",
+     "coordinates": {
+      "lat": 24.4406476,
+      "lon": 39.5347887
+     },
+     "source": {
+      "origin": "wikidata",
+      "source_id": "Q20402163",
+      "retrieved_at": "2026-08-02T08:23:17Z",
+      "license": "CC0"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
     }
    ]
   },
@@ -3497,6 +3903,27 @@
      },
      "status": "reviewed",
      "last_verified": "2026-08-01"
+    },
+    {
+     "id": "najran-souq-al-janabi",
+     "name_ar": "سوق الجنابي",
+     "name_en": "Souq Al-Janabi",
+     "category": "culture",
+     "description_ar": "سوق تراثي في حي أبا السعود التاريخي قرب مدينة الأخدود، يضم نحو 70 محلًا متخصصًا في صناعة وبيع الجنابي (الخناجر) والمصنوعات الجلدية، إلى جانب دكاكين للبهارات والقهوة والهيل. يعود نشاطه إلى عهود استيطان قديمة سبقت الإسلام في نجران.",
+     "description_en": "A heritage market in Najran's historic Aba Al-Saud quarter near the Al-Ukhdud site, with roughly 70 shops specializing in jambiya daggers and leatherwork alongside stalls selling spices, coffee, and cardamom. Trading here traces back to pre-Islamic settlement in Najran.",
+     "coordinates": {
+      "lat": 17.4890396,
+      "lon": 44.1330241
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "relation/19276171",
+      "retrieved_at": "2026-08-02T08:00:00Z",
+      "license": "ODbL"
+     },
+     "official_link": "https://www.spa.gov.sa/N2075444",
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
     }
    ]
   },
@@ -3660,6 +4087,46 @@
       "origin": "osm",
       "source_id": "way/1024253889",
       "retrieved_at": "2026-08-01T16:36:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-01"
+    },
+    {
+     "id": "rafha-zubala-village",
+     "name_ar": "قرية زبالا الأثرية",
+     "name_en": "Zubala Archaeological Village",
+     "category": "culture",
+     "description_ar": "قرية أثرية تبعد نحو 25 كم جنوب رفحاء، وكانت من أهم محطات درب زبيدة التاريخي بما تضمه من عشرات الآبار وبِرَك مائية وبقايا حصن شرقي الموقع. تشهد على حجم الاستيطان الذي رافق طريق حجاج العراق إلى مكة.",
+     "description_en": "An archaeological village about 25km south of Rafha, once one of the most important stops on the historic Darb Zubaydah pilgrim route, with dozens of wells, water pools, and the remains of a fortress on its eastern side.",
+     "coordinates": {
+      "lat": 29.391385,
+      "lon": 43.558318
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/5889443415",
+      "retrieved_at": "2026-08-01T21:00:00Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-01"
+    },
+    {
+     "id": "rafha-souq-lina",
+     "name_ar": "سوق لينة التاريخي",
+     "name_en": "Souq Lina (historic)",
+     "category": "culture",
+     "description_ar": "بقايا سوق تجاري قديم في بلدة لينة جنوب رفحاء، تظهر فيه أسس محال طينية وأعمدة كانت تحمل مظلات من سعف النخيل، وكان يخدم القوافل التجارية والحجاج المارين على درب زبيدة.",
+     "description_en": "The ruins of an old trading market in Lina, south of Rafha, with the foundations of clay shops and columns that once held palm-frond awnings — a stop that served trade caravans and pilgrims on the Darb Zubaydah route.",
+     "coordinates": {
+      "lat": 28.7601,
+      "lon": 43.7392
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/7500909669",
+      "retrieved_at": "2026-08-01T21:00:00Z",
       "license": "ODbL"
      },
      "status": "reviewed",
@@ -4146,6 +4613,26 @@
      "official_link": "https://newmurabba.com/en/",
      "status": "reviewed",
      "last_verified": "2026-08-01"
+    },
+    {
+     "id": "riyadh-souq-taiba",
+     "name_ar": "سوق طيبة",
+     "name_en": "Souq Taiba",
+     "category": "food",
+     "description_ar": "سوق شعبي في حي الملك فهد بالرياض على طريق الملك فهد، يجمع بين محال الملابس والعبايات والعطور والذهب وأكشاك الطعام التي تقدم أطباقًا محلية وعالمية بأسعار أقرب لطابعه الشعبي منها إلى المجمعات التجارية الحديثة.",
+     "description_en": "A popular market in Riyadh's King Fahd district on King Fahd Road, mixing clothing, abaya, perfume, and gold shops with food stalls serving local and international dishes at prices closer to its old-market character than to modern malls.",
+     "coordinates": {
+      "lat": 24.7344788,
+      "lon": 46.6629182
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/380211104",
+      "retrieved_at": "2026-08-01T21:00:00Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-01"
     }
    ]
   },
@@ -4293,6 +4780,47 @@
      },
      "status": "reviewed",
      "last_verified": "2026-08-01"
+    },
+    {
+     "id": "sakaka-duma-jandal-lake",
+     "name_ar": "بحيرة دومة الجندل",
+     "name_en": "Lake Duma Jandal",
+     "category": "nature",
+     "description_ar": "بحيرة صناعية تبلغ مساحتها نحو مليون متر مربع في محافظة دومة الجندل قرب سكاكا، تتجمع فيها مياه الصرف الزراعي الفائضة وتمتد على ضفافها مسطحات خضراء تصل إلى 140 ألف متر مربع. تُمارس فيها رياضات القوارب وتستضيف سنويًا سباقًا للدراجات المائية.",
+     "description_en": "An artificial lake of roughly one million square metres in Dumat Al-Jandal governorate near Sakaka, formed from surplus agricultural drainage water, with about 140,000 square metres of green banks. It hosts boating activities and an annual jet-ski race.",
+     "coordinates": {
+      "lat": 29.814444,
+      "lon": 39.911944
+     },
+     "source": {
+      "origin": "wikidata",
+      "source_id": "Q20383712",
+      "retrieved_at": "2026-08-01T21:00:00Z",
+      "license": "CC0"
+     },
+     "official_link": "https://saudipedia.com/article/14650/%D8%AC%D8%BA%D8%B1%D8%A7%D9%81%D9%8A%D8%A7/%D8%A8%D9%8A%D8%A6%D8%A9/%D8%A7%D9%84%D8%A8%D8%AD%D9%8A%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9",
+     "status": "reviewed",
+     "last_verified": "2026-08-01"
+    },
+    {
+     "id": "sakaka-jouf-plaza",
+     "name_ar": "الجوف بلازا",
+     "name_en": "Jouf Plaza",
+     "category": "entertainment",
+     "description_ar": "مجمع تجاري وترفيهي في سكاكا يضم محلات تسوق ومقاهي ومطاعم ومنطقة ألعاب للأطفال، ويُعد من الوجهات الترفيهية المغلقة القليلة في مدينة يقوم عرضها السياحي أساسًا على مواقعها الأثرية.",
+     "description_en": "A shopping and entertainment complex in Sakaka with retail stores, cafes, restaurants, and a children's play area — one of the few indoor entertainment venues in a city whose tourism offer otherwise rests on its archaeological sites.",
+     "coordinates": {
+      "lat": 29.9541746,
+      "lon": 40.192153
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/795820835",
+      "retrieved_at": "2026-08-01T21:00:00Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-01"
     }
    ]
   },
@@ -4376,6 +4904,68 @@
       "origin": "wikidata",
       "source_id": "Q30341559",
       "retrieved_at": "2026-08-01T16:50:43Z",
+      "license": "CC0"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-01"
+    },
+    {
+     "id": "tabuk-prince-fahd-bin-sultan-park",
+     "name_ar": "حديقة الأمير فهد بن سلطان",
+     "name_en": "Prince Fahd bin Sultan Park",
+     "category": "entertainment",
+     "description_ar": "منتزه عائلي واسع في حي بترومين بتبوك تبلغ مساحته نحو 500 ألف متر مربع، ويضم مسارات مشي ومناطق جلوس مظللة وملعب أطفال ومصلى للزوار، ما يجعله المتنفس الرئيسي لسكان المدينة.",
+     "description_en": "A large family park in Tabuk's Batruman district covering roughly 500,000 square metres, with walking trails, shaded seating, a children's play area, and a visitor prayer room — the city's main green recreation space.",
+     "coordinates": {
+      "lat": 29.3007839,
+      "lon": 34.9408968
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/754941815",
+      "retrieved_at": "2026-08-01T21:00:00Z",
+      "license": "ODbL"
+     },
+     "official_link": "https://www.visitsaudi.com/ar/tabuk/attractions/prince-fahad-bin-sultan-park-tabuk",
+     "status": "reviewed",
+     "last_verified": "2026-08-01"
+    },
+    {
+     "id": "tabuk-old-town",
+     "name_ar": "البلدة القديمة بتبوك",
+     "name_en": "Tabuk Old Town",
+     "category": "culture",
+     "description_ar": "الحي التاريخي في قلب تبوك، تمتد منه أسواقها الشعبية القديمة مثل سوق الطواحين الذي تاجر لعقود بأدوات الخيام والقهوة والعسل قبل أن يتراجع نشاطه أمام المراكز الحديثة. يجاور قلعة تبوك ويحتفظ بجزء من طابع البناء المبكر للمدينة.",
+     "description_en": "Tabuk's historic core, extending into old popular markets such as Souq Al-Tawaheen, which traded tent supplies, coffee tools, and honey for decades before losing ground to modern retail. It sits next to Tabuk Castle and still carries some of the city's early built character.",
+     "coordinates": {
+      "lat": 28.3817351,
+      "lon": 36.5618133
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "relation/19293219",
+      "retrieved_at": "2026-08-01T21:00:00Z",
+      "license": "ODbL"
+     },
+     "official_link": "https://www.spa.gov.sa/w1885477",
+     "status": "reviewed",
+     "last_verified": "2026-08-01"
+    },
+    {
+     "id": "tabuk-al-bad",
+     "name_ar": "البدع",
+     "name_en": "Al-Bad'",
+     "category": "culture",
+     "description_ar": "بلدة قديمة في هضبة مدين شمال غرب تبوك، ترتبط في الموروث الشعبي بقصة النبي شعيب وتقع على درب تجاري قديم بين الجزيرة العربية وبلاد الشام. لا تزال ملامح البناء الحجري القديم ظاهرة في مركزها التاريخي.",
+     "description_en": "An old town on the Midian plateau northwest of Tabuk, tied in local tradition to the story of Prophet Shu'ayb and positioned on an ancient trade route between Arabia and the Levant. Old stone construction is still visible in its historic center.",
+     "coordinates": {
+      "lat": 28.4947,
+      "lon": 35.0122
+     },
+     "source": {
+      "origin": "wikidata",
+      "source_id": "Q22935639",
+      "retrieved_at": "2026-08-01T21:00:00Z",
       "license": "CC0"
      },
      "status": "reviewed",
@@ -4923,6 +5513,47 @@
      },
      "status": "reviewed",
      "last_verified": "2026-08-01"
+    },
+    {
+     "id": "yanbu-ash-shib-al-akhdar-reef",
+     "name_ar": "الشعب الأخضر",
+     "name_en": "Ash Shi'b al Akhdar (Green Reef)",
+     "category": "adventure",
+     "description_ar": "موقع غطس مرجاني قبالة سواحل ينبع، مسجّل باسم \"الشعب الأخضر\" في سجلات التسمية البحرية، ويقصده الغواصون الباحثون عن موقع أهدأ من الشعاب المزدحمة قرب شرم ينبع.",
+     "description_en": "A coral dive site off the Yanbu coast, charted under the name \"Ash Shi'b al Akhdar\" (Green Reef) in maritime naming records — sought out by divers looking for a quieter alternative to the more crowded reefs near Sharm Yanbu.",
+     "coordinates": {
+      "lat": 23.877481,
+      "lon": 38.069899
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/11870738153",
+      "retrieved_at": "2026-08-02T08:23:17Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "yanbu-radwa-heritage-museum",
+     "name_ar": "متحف رضوى للتراث",
+     "name_en": "Radwa Heritage Museum",
+     "category": "culture",
+     "description_ar": "متحف تراثي خاص في ينبع يضم عشرات آلاف القطع من الأدوات والمقتنيات القديمة موزعة على أجنحة متخصصة، من بينها جناح للعملات يوثق تطور النقد السعودي عبر العصور.",
+     "description_en": "A private heritage museum in Yanbu housing tens of thousands of antique tools and artifacts across specialized wings, including a coin wing tracing the evolution of Saudi currency through the eras.",
+     "coordinates": {
+      "lat": 24.0952475,
+      "lon": 38.0694637
+     },
+     "source": {
+      "origin": "wikidata",
+      "source_id": "Q20402083",
+      "retrieved_at": "2026-08-02T08:23:17Z",
+      "license": "CC0"
+     },
+     "official_link": "https://saudipedia.com/متحف-رضوى",
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
     }
    ]
   },
