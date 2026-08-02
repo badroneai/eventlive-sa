@@ -185,4 +185,56 @@ for (const [slug, cityEntry] of cityPlacesMap) {
   assert.ok(String(enDestination['@id'] || '').startsWith('https://eventme.live/en/'), `dist/en/cities/${slug}.html TouristDestination @id must point at the EN URL`);
 }
 
+// --- Places-only city contract (national-rollout unlock, board decision Q1)
+// A city can carry destination places with ZERO events in the catalog (see
+// placesOnlyCitySlugs() in scripts/generate-site.mjs) — its page must still
+// render: chrome + places section + an honest empty-events state + a link
+// back to all events, and the city must appear in dist/cities.json and
+// sitemap.xml like any other city.
+//
+// No such city exists in the checked-in data/city_places.json today (every
+// entry currently overlaps a city that already has events) — GATES-
+// GOVERNANCE.md rule 1 keeps blocking-structural gates in ci:site-gates
+// CHEAP (~3 minutes total), so this block does not spin up a second full
+// site rebuild with injected fixture data (that mutate+rebuild+restore
+// idiom, see cover-content-freshness-regression-test.mjs, belongs in
+// launch:preflight if ever needed). Instead it asserts the real dist/
+// output produced by the ONE build this gate already runs against, and
+// SKIPS with a loud note when no places-only city exists yet — which keeps
+// this a genuine, live-firing check the moment the parallel Qassim-cities
+// data PR (unaizah, al-bukayriyah, ...) lands a places-only slug, with zero
+// added cost today. The feature was proven end-to-end locally for this PR
+// via a temporary unaizah fixture — see reports/pm-review/unaizah-*-360.png
+// and the PR description.
+const citiesJsonPath = path.join(distDir, 'cities.json');
+assert.ok(fs.existsSync(citiesJsonPath), 'dist/cities.json must exist; run npm run build first');
+const citiesPayload = JSON.parse(fs.readFileSync(citiesJsonPath, 'utf8'));
+const placesOnlyRow = (citiesPayload.cities || []).find((city) => cityPlacesMap.has(city.slug) && city.total_events === 0);
+
+if (!placesOnlyRow) {
+  console.log('city-places-regression-test: SKIP placesOnlyCityContract — no places-only city (a data/city_places.json entry with zero catalog events) exists in this build. Expected until a data PR adds one (e.g. a Qassim city); see scripts/generate-site.mjs placesOnlyCitySlugs().');
+} else {
+  const slug = placesOnlyRow.slug;
+  const cityEntry = cityPlacesMap.get(slug);
+  const html = readDistFile(`cities/${slug}.html`);
+
+  assert.match(html, /id="city-places"/, `places-only city cities/${slug}.html must still render its places section`);
+  assert.match(html, /class="empty-state"/, `places-only city cities/${slug}.html must render an honest empty-events state, not a silent blank grid`);
+  assert.match(html, /href="\.\.\/events\.html"/, `places-only city cities/${slug}.html empty-events state must link back to all events`);
+
+  const sitemap = fs.readFileSync(path.join(distDir, 'sitemap.xml'), 'utf8');
+  assert.match(sitemap, new RegExp(`https://eventme\\.live/cities/${slug}\\.html`), `places-only city cities/${slug}.html must be a first-class sitemap entry, not omitted like a redirect stub`);
+
+  const enHtml = readDistFile(`en/cities/${slug}.html`);
+  assert.match(enHtml, /class="empty-state"/, `places-only city dist/en/cities/${slug}.html must render the empty-events state too`);
+  assert.match(enHtml, /No confirmed events are available in this window yet\./, `places-only city dist/en/cities/${slug}.html empty-events state must be in English`);
+  assert.doesNotMatch(enHtml.match(/<p class="empty-state">[\s\S]*?<\/p>/)?.[0] || '', ARABIC_LETTERS, `places-only city dist/en/cities/${slug}.html empty-events state must contain zero Arabic`);
+  for (const place of cityEntry.places) {
+    const escapedName = String(place.name_en).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    assert.ok(enHtml.includes(escapedName), `places-only city dist/en/cities/${slug}.html must show "${place.name_en}"`);
+  }
+
+  console.log(`city-places-regression-test: placesOnlyCityContract OK slug=${slug} places=${cityEntry.places.length}`);
+}
+
 console.log(`city-places-regression-test: ok cities=${cityPlacesMap.size}`);

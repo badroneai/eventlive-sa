@@ -33,7 +33,16 @@ for (const city of payload.cities) {
   assert.ok(city.url?.startsWith('./cities/'), `${city.label} must link to a city page`);
   assert.equal(fs.existsSync(path.join(distDir, city.url.replace(/^\.\//, ''))), true, `${city.label} city page must exist`);
   assert.equal(city.total_events, city.upcoming_or_active + city.ended, `${city.label} totals must balance`);
-  assert.ok(city.sources_count >= 1, `${city.label} must include at least one source`);
+  // National-rollout unlock: a places-only city (destination places, zero
+  // events — see scripts/generate-site.mjs's placesOnlyCitySlugs()) is a
+  // legitimate all-zero row, not a data bug. Every city WITH events must
+  // still report a real source; a city with none must honestly report zero,
+  // never a fabricated source to satisfy this check.
+  if (city.total_events > 0) {
+    assert.ok(city.sources_count >= 1, `${city.label} must include at least one source`);
+  } else {
+    assert.equal(city.sources_count, 0, `${city.label} has zero events and must report zero sources honestly, not omit or fabricate one`);
+  }
 }
 
 const jsonLd = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]

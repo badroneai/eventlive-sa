@@ -155,8 +155,16 @@ function assertFacetFeedLinks(kind, slug, pagePath, feedSlug) {
   assert.match(html, /اشترك/, `${kind} page ${slug} must include a visible subscribe action`);
 }
 
+// National-rollout unlock: a places-only city (zero events — see
+// scripts/generate-site.mjs's placesOnlyCitySlugs()) never gets its own
+// feeds/city-<slug>.* bundle (writeSubscriptionFeeds() only ever derives
+// city feeds from the events array), so its page's alternate/subscribe
+// links fall back to the sitewide "all" feed (renderFacetPage()'s own
+// fs.existsSync fallback, mirrored in cityDirectoryCard()). Compute the
+// SAME expected slug here rather than assuming every city has its own feed.
 for (const city of citiesEnvelope.cities || []) {
-  assertFacetFeedLinks('city', city.slug, path.join(distDir, 'cities', `${city.slug}.html`), `city-${city.slug}`);
+  const expectedFeedSlug = cityFeedFiles.includes(`city-${city.slug}.ics`) ? `city-${city.slug}` : 'all';
+  assertFacetFeedLinks('city', city.slug, path.join(distDir, 'cities', `${city.slug}.html`), expectedFeedSlug);
 }
 
 for (const category of categoriesEnvelope.categories || []) {
