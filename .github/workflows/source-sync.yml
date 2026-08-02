@@ -76,8 +76,15 @@ jobs:
           restore-keys: |
             eventlive-static-site-${{ runner.os }}-
 
-      - name: Install Playwright browser
-        run: npx playwright install chromium
+      - name: Install Playwright browsers
+        # webkit is not optional here: this workflow now runs the shared
+        # publish-quality battery (ci:publish-quality-gates), and
+        # audit:browser-matrix exercises webkit. With chromium alone it does
+        # not skip that engine — it fails on a missing binary, and
+        # audit:ops-readiness fails on top of it because it reads the
+        # browser-matrix report. Kept in lockstep with deploy.yml's install
+        # step and asserted by test:publish-gate-drift.
+        run: npx playwright install --with-deps chromium webkit
 
       - name: Install source document extractors
         run: sudo apt-get update && sudo apt-get install -y tesseract-ocr tesseract-ocr-ara poppler-utils
