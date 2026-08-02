@@ -19,7 +19,7 @@ const contentTranslator = createContentTranslator();
 const contentProseStats = { events: 0, translated: 0, leaks: 0, eventsWithLeaks: 0 };
 const coverEnStats = { generated: 0, written: 0, arFallback: 0 };
 import { normalizeSaudiCity } from './city-utils.mjs';
-import { CITY_NAME_REGISTRY } from './city-name-registry.mjs';
+import { CITY_NAME_REGISTRY, cityNameBySlug } from './city-name-registry.mjs';
 import { cityPlacesBySlug, loadCityPlacesFile } from './city-places-data.mjs';
 import { renderCityPlacesJsonLd, renderCityPlacesSection } from './city-places-render.mjs';
 import { LEGACY_CATEGORY_REDIRECTS, LEGACY_REDIRECT_PAGES } from './legacy-redirect-pages.mjs';
@@ -2574,6 +2574,19 @@ function renderFacetPage({ filePath, title, description, events, canonicalPath, 
   const safeEvents = events.length ? events : [];
   const remainingEvents = selected ? safeEvents.filter((event) => event.id !== selected.id) : safeEvents;
   const windowAttr = temporalWindowHours > 0 ? ` data-temporal-window-hours="${temporalWindowHours}"` : '';
+  // National-rollout unlock: a places-only city (see placesOnlyCitySlugs()
+  // in writeFacetPages()) reaches this facet page with events=[] — an empty
+  // <div class="grid"> would render as silent blank space where visitors
+  // expect content. Reuse the exact honest empty-state idiom already
+  // dictionary-covered for EN (homeTimelineSection() in this file) instead
+  // of inventing new UX copy, and link back to the full events catalog.
+  // Guarded on events.length (not remainingEvents.length): a facet page
+  // with exactly one event legitimately has an empty remainingEvents (the
+  // sole event already shown in the "الأقرب الآن" focus box above) and must
+  // keep rendering a blank grid there, same as before this change.
+  const eventsGridHtml = events.length
+    ? remainingEvents.slice(0, 18).map((event) => eventCard(event, relativePrefix)).join('')
+    : `<p class="empty-state">لا توجد فعاليات مؤكدة في هذه النافذة حتى الآن. <a href="${relativePrefix}events.html">استعرض أقرب الفعاليات</a>.</p>`;
   const html = `<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
@@ -2588,7 +2601,7 @@ function renderFacetPage({ filePath, title, description, events, canonicalPath, 
 ${header(relativePrefix)}
 <main>
   <section class="hero"><div class="wrap"><span class="eyebrow"><span class="live-dot"></span>اكتشاف حسب السياق</span><h1>${escapeHtml(title)}</h1><p class="lead">${escapeHtml(description)}</p><div class="signal-strip"><div class="signal"><span>قادمة</span><b>${metrics.upcoming}</b></div><div class="signal"><span>مباشرة/جارية</span><b>${metrics.live}</b></div><div class="signal"><span>مصادر</span><b>${metrics.sources}</b></div></div></div></section>
-  <section class="section"${windowAttr}><div class="wrap">${selected ? `<article class="facet-focus facet-primary"><span>الأقرب الآن</span><h2>${escapeHtml(selected.title)}</h2><p>${escapeHtml(selected.summary)}</p><div class="activation-actions"><a class="cta" href="${relativePrefix}${selected.detail_url.replace(/^\.\//, '')}">افتح التفاصيل</a><a class="cta" href="${feedBase}.ics">أضف السياق للتقويم</a></div></article>` : ''}<div class="grid">${remainingEvents.slice(0, 18).map((event) => eventCard(event, relativePrefix)).join('')}</div><article class="facet-focus"><span>اشتراك مخصص</span><h2>تابع ${escapeHtml(title)}</h2><p>هذه الروابط تتحدث مع كل بناء وتعرض الفعاليات القادمة والجارية لهذا السياق فقط.</p>${subscriptionActions}</article></div></section>
+  <section class="section"${windowAttr}><div class="wrap">${selected ? `<article class="facet-focus facet-primary"><span>الأقرب الآن</span><h2>${escapeHtml(selected.title)}</h2><p>${escapeHtml(selected.summary)}</p><div class="activation-actions"><a class="cta" href="${relativePrefix}${selected.detail_url.replace(/^\.\//, '')}">افتح التفاصيل</a><a class="cta" href="${feedBase}.ics">أضف السياق للتقويم</a></div></article>` : ''}<div class="grid">${eventsGridHtml}</div><article class="facet-focus"><span>اشتراك مخصص</span><h2>تابع ${escapeHtml(title)}</h2><p>هذه الروابط تتحدث مع كل بناء وتعرض الفعاليات القادمة والجارية لهذا السياق فقط.</p>${subscriptionActions}</article></div></section>
   ${extraSectionHtml}
 </main>
 ${footer(relativePrefix)}
@@ -2729,6 +2742,37 @@ function writeTemporalPages(events) {
   });
 }
 
+// National-rollout unlock (board decision Q1, PR #65 report): a city can
+// carry DESTINATION PLACES (data/city_places.json) with ZERO events in the
+// catalog — a places-rich city awaiting its first confirmed event must still
+// get a real page, not silence. This is the single place that resolves the
+// "places-only" city set for BOTH writeFacetPages() (renders the page) and
+// cityDirectoryRows() (lists it in cities.json/cities.html) — Gate
+// Governance rule #3, no duplicated source of truth.
+//
+// City display names for an events-derived city come from the event data
+// itself (cityLabel()); a places-only city has no event to derive a label
+// from, so it MUST resolve through scripts/city-name-registry.mjs instead.
+// A city_places.json slug with neither an event nor a registry entry has no
+// legitimate display name anywhere in the system — FAIL LOUDLY naming the
+// slug, so a data PR that adds a new places-only city (e.g. the Qassim
+// cities: unaizah, al-bukayriyah, ...) is forced to add its registry entry
+// in the same PR, not discover the gap on the live site.
+function placesOnlyCitySlugs(eventCitySlugs) {
+  const extra = [];
+  for (const slug of cityPlacesMap.keys()) {
+    if (eventCitySlugs.has(slug)) continue;
+    const registryEntry = cityNameBySlug(slug);
+    if (!registryEntry) {
+      throw new Error(
+        `data/city_places.json has a places-only city "${slug}" (zero events in the catalog) with no matching entry in scripts/city-name-registry.mjs and no event to derive a display label from. Add { en, ar, slug: '${slug}' } to CITY_NAME_REGISTRY before shipping this city's places data.`
+      );
+    }
+    extra.push({ slug, ar: registryEntry.ar, en: registryEntry.en });
+  }
+  return extra;
+}
+
 function writeFacetPages(events) {
   const byCity = new Map();
   const byCategory = new Map();
@@ -2746,6 +2790,12 @@ function writeFacetPages(events) {
     if (!byCategory.has(slug)) byCategory.set(slug, { label, events: [] });
   }
   if (!byCity.has('riyadh')) byCity.set('riyadh', { label: 'فعاليات الرياض', events: fallbackEvents });
+  // Places-only cities: real destination content, zero events yet. Added
+  // AFTER the riyadh fallback so an empty-catalog build never mistakes one
+  // of these for the fallback city.
+  for (const { slug, ar } of placesOnlyCitySlugs(new Set(byCity.keys()))) {
+    byCity.set(slug, { label: `فعاليات ${ar}`, events: [] });
+  }
   for (const [slug, group] of byCity) {
     const cityPlacesEntry = cityPlacesMap.get(slug);
     const canonicalPath = `cities/${slug}.html`;
@@ -2851,6 +2901,26 @@ function cityDirectoryRows(events) {
       };
     }
   }
+  // Places-only cities: same set/contract as writeFacetPages() above (Gate
+  // Governance rule #3 — resolved once in placesOnlyCitySlugs(), not
+  // recomputed with different logic here). Listed with an honest all-zero
+  // row rather than omitted, so the directory (and cities.json, which
+  // consumers may treat as the canonical city list) doesn't silently hide a
+  // city that has a real destination-content page.
+  for (const { slug, ar } of placesOnlyCitySlugs(new Set(groups.keys()))) {
+    groups.set(slug, {
+      slug,
+      label: ar,
+      url: `./cities/${slug}.html`,
+      total_events: 0,
+      upcoming_or_active: 0,
+      ended: 0,
+      live_ready: 0,
+      sources: new Set(),
+      categories: new Set(),
+      next_event: null
+    });
+  }
   return [...groups.values()]
     .map((row) => ({
       ...row,
@@ -2866,7 +2936,13 @@ function cityDirectoryCard(row) {
   const nextLine = row.next_event
     ? `<p><strong>الأقرب:</strong> <a href="${escapeHtml(row.next_event.url)}">${escapeHtml(row.next_event.title)}</a><br><span data-live-time data-start="${escapeHtml(row.next_event.starts_at)}" data-end="${escapeHtml(row.next_event.starts_at)}" data-kind="moment">${escapeHtml(staticWhenText({ starts_at: row.next_event.starts_at }))}</span></p>`
     : '<p><strong>الأقرب:</strong> لا توجد فعالية قادمة مؤكدة حتى الآن.</p>';
-  return `<article class="activation-card"><h2><a href="${escapeHtml(row.url)}">${escapeHtml(row.label)}</a></h2><div class="signals"><div class="signal-check good"><b>${row.upcoming_or_active}</b><span>قادمة/نشطة</span></div><div class="signal-check ${row.live_ready ? 'good' : 'warn'}"><b>${row.live_ready}</b><span>جداول حية</span></div><div class="signal-check good"><b>${row.ended}</b><span>منتهية محفوظة</span></div><div class="signal-check good"><b>${row.sources_count}</b><span>مصادر</span></div></div>${nextLine}<div class="activation-actions"><a class="cta" href="${escapeHtml(row.url)}">فتح المدينة</a><a class="cta" href="./feeds/city-${escapeHtml(row.slug)}.ics">تقويم المدينة</a></div></article>`;
+  // A places-only city (zero events) never gets its own feeds/city-<slug>.*
+  // bundle (writeSubscriptionFeeds() only ever writes city feeds from the
+  // events array) — fall back to the sitewide "all" feed rather than link a
+  // 404, the same fallback renderFacetPage() already applies for its own
+  // alternate/subscribe links on that city's page.
+  const feedSlug = fs.existsSync(path.join(feedsDir, `city-${row.slug}.ics`)) ? `city-${row.slug}` : 'all';
+  return `<article class="activation-card"><h2><a href="${escapeHtml(row.url)}">${escapeHtml(row.label)}</a></h2><div class="signals"><div class="signal-check good"><b>${row.upcoming_or_active}</b><span>قادمة/نشطة</span></div><div class="signal-check ${row.live_ready ? 'good' : 'warn'}"><b>${row.live_ready}</b><span>جداول حية</span></div><div class="signal-check good"><b>${row.ended}</b><span>منتهية محفوظة</span></div><div class="signal-check good"><b>${row.sources_count}</b><span>مصادر</span></div></div>${nextLine}<div class="activation-actions"><a class="cta" href="${escapeHtml(row.url)}">فتح المدينة</a><a class="cta" href="./feeds/${feedSlug}.ics">تقويم المدينة</a></div></article>`;
 }
 
 function writeCitiesIndexPage(events) {
