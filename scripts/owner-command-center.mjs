@@ -1,3 +1,4 @@
+import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { exists, readJson, root, writeJson } from './program-lifecycle-utils.mjs';
@@ -560,6 +561,33 @@ const design = buildDesignStatus(state);
 const harvest = buildHarvestStatus(state);
 const analytics = buildAnalyticsStatus();
 const commandCenter = buildCommandCenter(state, readiness, design, harvest, analytics);
+
+// This is a build step, not a verdict script: it must fail if it fails to
+// build, not silently succeed with partial or empty output
+// (GATES-GOVERNANCE.md #6). Every write above (writeJson/writeText -> fs.
+// writeFileSync) already throws on any real I/O or JSON-parse failure, and
+// an uncaught exception here already exits the process non-zero by default
+// — verified empirically (EACCES on an existing report file crashes with
+// exit code 1, no try/catch anywhere in this file swallows it). This block
+// adds the one thing that implicit behavior does NOT cover: confirming the
+// build actually produced real, non-empty output, so a future logic bug
+// that writes a technically-valid-but-empty/wrong report does not slip
+// through as a silent "success". Uses node:assert so a regression here is
+// both loud (throws) and grep-detectable as an enforcing script.
+const requiredOutputs = [
+  'reports/eventlive-command-center.json',
+  'reports/eventlive-command-center.md',
+  'reports/delivery-readiness-status.json',
+  'reports/design-os-status.json',
+  'reports/source-harvest-os-status.json',
+  'reports/analytics-status.json'
+];
+for (const relativePath of requiredOutputs) {
+  const fullPath = path.join(root, relativePath);
+  assert.ok(exists(fullPath), `owner:command-center did not write ${relativePath} — build failed`);
+  assert.ok(fs.statSync(fullPath).size > 0, `owner:command-center wrote an empty ${relativePath} — build failed`);
+}
+assert.ok(Array.isArray(commandCenter.gates) && commandCenter.gates.length > 0, 'owner:command-center produced a command center report with no gates — build failed');
 
 console.log('# EventLive Command Center');
 console.log(`- Generated at: ${generatedAt}`);

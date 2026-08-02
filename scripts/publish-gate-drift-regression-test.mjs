@@ -313,8 +313,29 @@ assert.ok(
 // advisory, which is exactly the trap this test avoids). This only catches
 // an enforcing script silently losing ALL failure paths; it says nothing
 // about whether a check enforces the substantive verdict vs. just report
-// shape (see GATES-GOVERNANCE.md #6 for that nuance on the three known
-// advisory pairs, which are deliberately excluded from this set). ---
+// shape.
+//
+// Correction 2026-08-02 (this fix): release-deploy-rollback-audit.mjs,
+// delivery-readiness-standard-audit.mjs, and owner-command-center.mjs used
+// to be a documented exception here — none of the three ever called
+// process.exit(1), so a reader of deploy.yml's step list could reasonably
+// but wrongly assume each listed step could block a bad release. All three
+// now have a real, grep-visible failure path (see each file's own header
+// comment for what specifically triggers it — a genuine FAIL status for the
+// first two, a build/write failure or empty required output for the
+// third), so they moved into ENFORCING_SCRIPT_FILES below like every other
+// audit/test pair. This is the assertion GATES-GOVERNANCE.md #6 asks for:
+// "gates the repo declares enforcing must be capable of exiting non-zero" —
+// if any of these six ever loses its process.exit(1)/node:assert path
+// again, this test goes red instead of the gate quietly turning toothless a
+// second time. What this grep-level check deliberately does NOT verify
+// (documented in GATES-GOVERNANCE.md #6 instead, because encoding it here
+// would be a flaky, semantics-aware guard rather than a cheap static one):
+// that these three specifically still treat PARTIAL / NOT_APPLICABLE /
+// OWNER_RESERVED / N/A as non-blocking and reserve process.exit(1) for a
+// genuinely-evaluated-bad result — freezing on those non-blocking statuses
+// would refreeze a pipeline this project already survived an 8-day outage
+// on. ---
 
 {
   const ENFORCING_SCRIPT_FILES = [
@@ -332,7 +353,10 @@ assert.ok(
     'scripts/security-review-audit.mjs', 'scripts/security-review-regression-test.mjs',
     'scripts/ops-readiness-audit.mjs', 'scripts/ops-readiness-regression-test.mjs',
     'scripts/analytics-regression-test.mjs',
-    'scripts/sitemap-coverage-regression-test.mjs', 'scripts/seo-content-regression-test.mjs'
+    'scripts/sitemap-coverage-regression-test.mjs', 'scripts/seo-content-regression-test.mjs',
+    'scripts/release-deploy-rollback-audit.mjs', 'scripts/release-deploy-rollback-regression-test.mjs',
+    'scripts/delivery-readiness-standard-audit.mjs', 'scripts/delivery-readiness-standard-regression-test.mjs',
+    'scripts/owner-command-center.mjs', 'scripts/owner-command-center-regression-test.mjs'
   ];
   const enforcementPattern = /process\.exit\(\s*1\s*\)|process\.exitCode\s*=\s*1|from\s+['"]node:assert/;
   for (const file of ENFORCING_SCRIPT_FILES) {
@@ -346,24 +370,10 @@ assert.ok(
     );
   }
 
-  // The three known advisory-only pairs (GATES-GOVERNANCE.md #6): the
-  // audit:* generator itself never exits non-zero. This is not asserted as
-  // an invariant to preserve (an audit script gaining real enforcement is
-  // an improvement, not a regression) — it is only recorded here as the
-  // documented baseline so the list above and the doc do not silently
-  // diverge from each other.
-  const KNOWN_ADVISORY_AUDIT_FILES = [
-    'scripts/release-deploy-rollback-audit.mjs',
-    'scripts/delivery-readiness-standard-audit.mjs',
-    'scripts/owner-command-center.mjs'
-  ];
-  for (const file of KNOWN_ADVISORY_AUDIT_FILES) {
-    assert.ok(fs.existsSync(path.join(root, file)), `${file} (documented advisory gate) must exist`);
-  }
   assert.match(
     deployWorkflow,
     /Advisory gates status/,
-    'deploy.yml must surface the advisory gates (release-deploy-rollback, readiness:standard, owner:command-center) in $GITHUB_STEP_SUMMARY — GATES-GOVERNANCE.md #6 requires their output stay visible even though they cannot block'
+    'deploy.yml must surface these three gates (release-deploy-rollback, readiness:standard, owner:command-center) in $GITHUB_STEP_SUMMARY — GATES-GOVERNANCE.md #6 requires their non-blocking statuses (PARTIAL/NOT_APPLICABLE/OWNER_RESERVED/N/A) stay visible even though a genuine FAIL among them already blocked the run earlier in this same job'
   );
 }
 

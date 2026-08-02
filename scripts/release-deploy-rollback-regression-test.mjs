@@ -19,7 +19,7 @@ if (report.schema !== 'eventlive.release-deploy-rollback.v1') {
   fail(`unexpected schema ${report.schema}`);
 }
 
-if (!['PASS', 'PARTIAL'].includes(report.status)) {
+if (!['PASS', 'PARTIAL', 'FAIL'].includes(report.status)) {
   fail(`unexpected status ${report.status}`);
 }
 
@@ -42,16 +42,35 @@ for (const id of required) {
   const check = checks.find((item) => item.id === id);
   if (!check) fail(`missing check ${id}`);
   if (typeof check.ok !== 'boolean') fail(`check ${id} missing boolean ok`);
+  if (typeof check.applicable !== 'boolean') fail(`check ${id} missing boolean applicable`);
+  if (!['PASS', 'FAIL', 'NOT_APPLICABLE'].includes(check.status)) fail(`check ${id} has invalid status ${check.status}`);
+  if (check.applicable === (check.status === 'NOT_APPLICABLE')) fail(`check ${id} applicable/status disagree`);
   if (!check.evidence || check.evidence.length < 4) fail(`check ${id} missing evidence`);
 }
 
-const failedChecks = checks.filter((check) => !check.ok);
-if (report.status === 'PASS' && failedChecks.length > 0) {
-  fail('PASS report cannot contain failed checks');
+// Shape-only test (GATES-GOVERNANCE.md #6): this verifies the report has the
+// right structure and that the enforcing/not-applicable distinction is
+// internally consistent. It deliberately does NOT re-derive or second-guess
+// the substantive verdict — that is release-deploy-rollback-audit.mjs's own
+// job now (it exits non-zero on FAIL itself), not this test's.
+const evaluatedChecks = checks.filter((check) => check.applicable);
+const failedEvaluatedChecks = evaluatedChecks.filter((check) => !check.ok);
+const notApplicableChecks = checks.filter((check) => !check.applicable);
+
+if (report.status === 'PASS' && (failedEvaluatedChecks.length > 0 || notApplicableChecks.length > 0)) {
+  fail('PASS report cannot contain failed or not-applicable checks');
 }
 
-if (report.status === 'PARTIAL' && (!Array.isArray(report.remaining) || report.remaining.length === 0)) {
-  fail('PARTIAL report must list remaining release work');
+if (report.status === 'FAIL' && failedEvaluatedChecks.length === 0) {
+  fail('FAIL report must list at least one evaluated-and-failed check');
 }
 
-console.log(`RELEASE_DEPLOY_ROLLBACK_TEST_OK status=${report.status} checks=${checks.length}`);
+if (report.status === 'PARTIAL' && (failedEvaluatedChecks.length > 0 || notApplicableChecks.length === 0)) {
+  fail('PARTIAL report must have zero evaluated failures and at least one not-applicable check');
+}
+
+if (!Array.isArray(report.failed) || !Array.isArray(report.not_applicable)) {
+  fail('report must separately list `failed` and `not_applicable` checks — a not-applicable check must never be indistinguishable from a genuinely failed one (GATES-GOVERNANCE.md #6)');
+}
+
+console.log(`RELEASE_DEPLOY_ROLLBACK_TEST_OK status=${report.status} checks=${checks.length} failed=${failedEvaluatedChecks.length} not_applicable=${notApplicableChecks.length}`);

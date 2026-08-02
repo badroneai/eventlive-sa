@@ -124,6 +124,7 @@ const documentationOk = reportOk('reports/documentation-audit.json');
 const releaseDeployRollback = readJson('reports/release-deploy-rollback-status.json', null);
 const releaseDeployRollbackOk = releaseDeployRollback?.status === 'PASS';
 const releaseDeployRollbackPartial = releaseDeployRollback?.status === 'PARTIAL';
+const releaseDeployRollbackFail = releaseDeployRollback?.status === 'FAIL';
 
 const gates = [
   gate(
@@ -311,15 +312,23 @@ const gates = [
     'Release',
     'Release / Deploy / Rollback / DR',
     'Release manager / DevOps',
-    releaseDeployRollbackOk ? 'PASS' : exists('.github/workflows/deploy.yml') && commandExists('release:verdict') ? 'PARTIAL' : 'NOT_STARTED',
+    releaseDeployRollbackOk
+      ? 'PASS'
+      : releaseDeployRollbackFail
+        ? 'FAIL'
+        : exists('.github/workflows/deploy.yml') && commandExists('release:verdict') ? 'PARTIAL' : 'NOT_STARTED',
     releaseDeployRollbackOk
       ? 'Release/deploy/rollback audit PASS: commit, GitHub Actions, public URL verification, and rollback drill evidence are recorded.'
-      : releaseDeployRollbackPartial
-        ? 'Release/deploy/rollback audit is PARTIAL and lists remaining external deployment evidence.'
-        : 'GitHub Pages deploy workflow and release verdict script exist.',
+      : releaseDeployRollbackFail
+        ? 'Release/deploy/rollback audit is FAIL: at least one check that could actually be evaluated came back bad (not merely inapplicable in this job).'
+        : releaseDeployRollbackPartial
+          ? 'Release/deploy/rollback audit is PARTIAL and lists remaining external deployment evidence not evaluable in this job.'
+          : 'GitHub Pages deploy workflow and release verdict script exist.',
     releaseDeployRollbackOk
       ? ''
-      : 'Perform owner-approved staging/commit/push, verify GitHub Actions, verify eventme.live publicly, and record rollback drill evidence.'
+      : releaseDeployRollbackFail
+        ? 'Fix the failing release/deploy/rollback check(s) in reports/release-deploy-rollback-status.json — this is a genuine defect, not a job-scope gap.'
+        : 'Perform owner-approved staging/commit/push, verify GitHub Actions, verify eventme.live publicly, and record rollback drill evidence.'
   ),
   gate(
     '22',
@@ -465,3 +474,17 @@ writeText('docs/DELIVERY_READINESS_PLAYBOOK.md', md);
 console.log(
   `DELIVERY_STANDARD_AUDIT ${releaseVerdict} PASS=${totals.PASS || 0} PARTIAL=${totals.PARTIAL || 0} NOT_STARTED=${totals.NOT_STARTED || 0} OWNER_RESERVED=${totals.OWNER_RESERVED || 0} NA=${totals['N/A'] || 0} FAIL=${totals.FAIL || 0}`
 );
+
+// Enforcing, but only on the genuinely-bad status. PARTIAL / NOT_STARTED /
+// OWNER_RESERVED / N/A are all "not evaluated as complete" by design (owner-
+// reserved sign-off, gates outside this static product's scope, or work not
+// yet started) and must never freeze publishing — this project already
+// survived one 8-day publishing outage, and turning "nobody has done this
+// yet" into a hard block would be a worse failure than a soft gate. FAIL is
+// different: it means a gate was actually graded and came back bad. Only
+// that can legitimately stop a publish (GATES-GOVERNANCE.md #6).
+if ((totals.FAIL || 0) > 0) {
+  const failedGates = gates.filter((item) => item.status === 'FAIL').map((item) => `${item.id} ${item.name}`);
+  console.error(`DELIVERY_STANDARD_AUDIT_FAIL gates=${failedGates.join(', ')}`);
+  process.exit(1);
+}
