@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import { PUBLISH_QUALITY_GATES } from './publish-quality-gates-list.mjs';
+import { workflowRunsScript } from './workflow-gate-resolver.mjs';
 
 // Publish-gate drift guard (governance fix 2026-08-02, see
 // GATES-GOVERNANCE.md).
@@ -41,15 +43,24 @@ const packageJson = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 
 
 // --- 1. Generic guard: any workflow that deploys to GitHub Pages must
 // invoke the shared battery, or be explicitly named in this list with a
-// reason. A new publish path that skips both goes red here. ---
+// reason. A new publish path that skips both goes red here.
+//
+// Uses scripts/workflow-gate-resolver.mjs — the same resolver
+// scripts/security-review-audit.mjs uses — rather than its own grep, so
+// "is gate X reachable from workflow Y" is answered in exactly one place.
+// ('ci:publish-quality-gates' resolves to itself here since it IS the
+// battery script, not a member of it — workflowRunsScript still checks for
+// its own literal invocation first.) ---
 
 const PRE_EXISTING_UNGATED_PUBLISH_PATHS = {
-  // Documented, deliberate manual break-glass fallback — its own header
-  // comment already says deploy.yml is the official gated pipeline. Not
-  // part of the 2026-08-02 governance fix scope (ground truth for that fix
-  // covers deploy.yml + source-sync.yml only); flagged to the PM as a
-  // pre-existing gap rather than silently widened or silently ignored.
-  'pages.yml': 'manual workflow_dispatch-only fallback, documented as non-official in its own header comment'
+  // pages.yml is deliberately left out of the shared battery, not merely
+  // undocumented: it is the dispatch-only manual break-glass path this
+  // project would need if the *gated* path itself were broken (e.g.
+  // deploy.yml's own workflow definition is broken, not just a check
+  // inside it). Gating it identically to deploy.yml would remove that
+  // escape hatch — see its own header comment and GATES-GOVERNANCE.md #5
+  // for the same reasoning stated for humans.
+  'pages.yml': 'dispatch-only manual break-glass fallback for when the gated path itself is broken — gating it would remove the one manual path this project would need in that scenario (see its own header comment and GATES-GOVERNANCE.md #5)'
 };
 
 const workflowFiles = fs.readdirSync(workflowsDir).filter((f) => f.endsWith('.yml'));
@@ -58,16 +69,20 @@ for (const file of workflowFiles) {
   const deploysToPages = /uses:\s*actions\/deploy-pages@/.test(content);
   if (!deploysToPages) continue;
   if (Object.prototype.hasOwnProperty.call(PRE_EXISTING_UNGATED_PUBLISH_PATHS, file)) continue;
-  assert.match(
-    content,
-    /npm run ci:publish-quality-gates/,
+  assert.ok(
+    workflowRunsScript(content, 'ci:publish-quality-gates'),
     `${file} deploys to GitHub Pages (actions/deploy-pages) and must invoke the shared publish-quality battery (npm run ci:publish-quality-gates), or be added to PRE_EXISTING_UNGATED_PUBLISH_PATHS in this test with a reason`
   );
 }
 
 // --- 2. The npm script must exist and must run the orchestrator script,
 // not a re-inlined `&&` list (which would reintroduce the exact
-// short-circuit-hides-later-failures bug this fix closes). ---
+// short-circuit-hides-later-failures bug this fix closes), and the
+// orchestrator must import the gate list from the single shared module
+// rather than keeping its own copy (which is what let
+// scripts/security-review-audit.mjs and this test drift into disagreement
+// with the real battery before the governance-fix-correction on
+// 2026-08-02). ---
 
 assert.equal(
   packageJson.scripts['ci:publish-quality-gates'],
@@ -75,8 +90,17 @@ assert.equal(
   'ci:publish-quality-gates must run the dedicated orchestrator script (scripts/run-publish-quality-gates.mjs), not an inline && chain — a chain stops at the first failure and silently skips every later check, which is how audit:axe/test:axe went unexercised for five days behind a red audit:lighthouse'
 );
 
+assert.match(
+  runnerScript,
+  /from ['"]\.\/publish-quality-gates-list\.mjs['"]/,
+  'run-publish-quality-gates.mjs must import PUBLISH_QUALITY_GATES from scripts/publish-quality-gates-list.mjs rather than declaring its own copy of the gate list — that is the single source of truth scripts/workflow-gate-resolver.mjs and this test also read'
+);
+
 // --- 3. Every check that must never be dropped from the battery, in the
-// right audit-before-test order. ---
+// right audit-before-test order. Read from the same
+// scripts/publish-quality-gates-list.mjs module the orchestrator and the
+// resolver use — not a fourth hand-copied list — so this test cannot
+// silently diverge from what actually runs. ---
 
 const REQUIRED_PAIRS = [
   ['audit:static', 'test:static'],
@@ -99,11 +123,25 @@ const REQUIRED_PAIRS = [
 
 const REQUIRED_UNPAIRED = ['test:sitemap', 'test:seo-content', 'audit:dependencies', 'test:analytics'];
 
+// Self-check: REQUIRED_PAIRS + REQUIRED_UNPAIRED above (which encode
+// pairing semantics the flat list alone doesn't) must describe exactly the
+// canonical PUBLISH_QUALITY_GATES set — no more, no less — or this test's
+// own bookkeeping has drifted from the real battery.
+{
+  const describedHere = new Set([...REQUIRED_PAIRS.flat(), ...REQUIRED_UNPAIRED]);
+  const canonical = new Set(PUBLISH_QUALITY_GATES);
+  for (const name of canonical) {
+    assert.ok(describedHere.has(name), `PUBLISH_QUALITY_GATES contains '${name}' but this test's REQUIRED_PAIRS/REQUIRED_UNPAIRED does not — update this test's bookkeeping to match scripts/publish-quality-gates-list.mjs`);
+  }
+  for (const name of describedHere) {
+    assert.ok(canonical.has(name), `this test's REQUIRED_PAIRS/REQUIRED_UNPAIRED lists '${name}' but PUBLISH_QUALITY_GATES does not — either the canonical list lost it or this test is stale`);
+  }
+}
+
 function gateIndex(name) {
-  const re = new RegExp(`'${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}'`);
-  const match = runnerScript.match(re);
-  assert.ok(match, `run-publish-quality-gates.mjs must still list '${name}' — a check appears to have been silently dropped from the shared publish-quality battery`);
-  return match.index;
+  const index = PUBLISH_QUALITY_GATES.indexOf(name);
+  assert.ok(index !== -1, `PUBLISH_QUALITY_GATES (scripts/publish-quality-gates-list.mjs) must still list '${name}' — a check appears to have been silently dropped from the shared publish-quality battery`);
+  return index;
 }
 
 for (const name of REQUIRED_UNPAIRED) {

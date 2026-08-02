@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
+import { PUBLISH_QUALITY_GATES } from './publish-quality-gates-list.mjs';
 
 // Shared publish-quality battery (governance fix 2026-08-02, see
 // GATES-GOVERNANCE.md). deploy.yml ("EventLive MVP Pipeline") and
@@ -41,28 +42,7 @@ import fs from 'node:fs';
 // theatre, not a gate — this ordering, plus the "no early exit" behavior
 // above, is what keeps every pair honest on every invocation.
 
-const GATES = [
-  'test:sitemap',
-  'test:seo-content',
-  'audit:static', 'test:static',
-  'audit:product-journeys', 'test:product-journeys',
-  'audit:ui-states', 'test:ui-states',
-  'audit:content-localization', 'test:content-localization',
-  'audit:compliance-source-rights', 'test:compliance-source-rights',
-  'audit:documentation', 'test:documentation',
-  'audit:secret-env', 'test:secret-env',
-  'audit:dependencies',
-  'audit:web-quality', 'test:web-quality',
-  'audit:lighthouse', 'test:lighthouse',
-  'audit:browser-matrix', 'test:browser-matrix',
-  'audit:axe', 'test:axe',
-  'audit:security-review', 'test:security-review',
-  'audit:ops-readiness', 'test:ops-readiness',
-  'audit:release-deploy-rollback', 'test:release-deploy-rollback',
-  'readiness:standard', 'test:readiness-standard',
-  'owner:command-center', 'test:owner-command-center',
-  'test:analytics'
-];
+const GATES = PUBLISH_QUALITY_GATES;
 
 const results = [];
 for (const name of GATES) {

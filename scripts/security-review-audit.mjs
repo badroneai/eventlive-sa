@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { workflowRunsScript } from './workflow-gate-resolver.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -50,7 +51,13 @@ if (compliance?.status !== 'PASS') findings.push({ area: 'compliance', issue: 'c
 if (staticAnalysis?.status !== 'PASS') findings.push({ area: 'static-analysis', issue: 'static analysis not passing' });
 
 for (const script of ['audit:dependencies', 'audit:secret-env', 'audit:static', 'audit:web-quality']) {
-  if (!workflow.includes(script)) findings.push({ area: 'ci', issue: `workflow missing ${script}` });
+  // Resolved through scripts/workflow-gate-resolver.mjs, not a direct
+  // substring check: these scripts now run inside the shared
+  // ci:publish-quality-gates battery (governance fix 2026-08-02, see
+  // GATES-GOVERNANCE.md #5) rather than as individually named steps, so a
+  // literal `workflow.includes(script)` would wrongly report them missing
+  // even though they still run in CI exactly as before.
+  if (!workflowRunsScript(workflow, script)) findings.push({ area: 'ci', issue: `workflow missing ${script}` });
 }
 
 for (const page of ownerOnlyMachine) {
@@ -115,7 +122,7 @@ const report = {
     secret_env_audit: secretEnv?.status || 'missing',
     static_analysis: staticAnalysis?.status || 'missing',
     compliance_source_rights: compliance?.status || 'missing',
-    ci_security_steps: ['audit:dependencies', 'audit:secret-env', 'audit:static', 'audit:web-quality'].filter((script) => workflow.includes(script))
+    ci_security_steps: ['audit:dependencies', 'audit:secret-env', 'audit:static', 'audit:web-quality'].filter((script) => workflowRunsScript(workflow, script))
   },
   findings
 };
