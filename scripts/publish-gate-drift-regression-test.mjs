@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
-import { PUBLISH_QUALITY_GATES } from './publish-quality-gates-list.mjs';
+import { PUBLISH_QUALITY_GATES, PUBLISH_QUALITY_GATE_BROWSER_ENGINES } from './publish-quality-gates-list.mjs';
 import { workflowRunsScript } from './workflow-gate-resolver.mjs';
 
 // Publish-gate drift guard (governance fix 2026-08-02, see
@@ -73,6 +73,31 @@ for (const file of workflowFiles) {
     workflowRunsScript(content, 'ci:publish-quality-gates'),
     `${file} deploys to GitHub Pages (actions/deploy-pages) and must invoke the shared publish-quality battery (npm run ci:publish-quality-gates), or be added to PRE_EXISTING_UNGATED_PUBLISH_PATHS in this test with a reason`
   );
+}
+
+// --- 1b. A workflow may only run the shared battery if it installs every
+// browser engine the battery needs. Discovered the hard way on the first
+// sync run after the governance fix landed (30754356956): source-sync.yml
+// installed chromium only, so audit:browser-matrix failed on a missing
+// webkit binary and dragged test:browser-matrix and audit:ops-readiness
+// (which reads the browser-matrix report) down with it — four red checks,
+// zero real defects. A battery that reports false failures gets ignored,
+// which is exactly how a real one goes unnoticed, so the engine list is
+// part of the battery's contract, not an environment detail. ---
+
+for (const file of workflowFiles) {
+  const content = readWorkflow(file);
+  if (!workflowRunsScript(content, 'ci:publish-quality-gates')) continue;
+  const installLines = content
+    .split('\n')
+    .filter((line) => line.includes('playwright install'))
+    .join('\n');
+  for (const engine of PUBLISH_QUALITY_GATE_BROWSER_ENGINES) {
+    assert.ok(
+      new RegExp(`playwright install[^\\n]*\\b${engine}\\b`).test(installLines),
+      `${file} runs the shared publish-quality battery but never installs the '${engine}' browser engine — the battery's browser checks (audit:browser-matrix, and audit:ops-readiness through it) fail on a missing binary rather than skipping, producing red runs that are not real defects. Install every engine in PUBLISH_QUALITY_GATE_BROWSER_ENGINES (scripts/publish-quality-gates-list.mjs) in this workflow, or remove the battery call from it`
+    );
+  }
 }
 
 // --- 2. The npm script must exist and must run the orchestrator script,

@@ -29,3 +29,16 @@ export const PUBLISH_QUALITY_GATES = [
   'owner:command-center', 'test:owner-command-center',
   'test:analytics'
 ];
+
+// Browser engines the battery above cannot run without. Running the shared
+// battery in a workflow that installs fewer engines than this does not skip
+// the affected checks — it FAILS them, and the failure cascades: the first
+// sync run after the governance fix (30754356956, 2026-08-02) had installed
+// only chromium, so audit:browser-matrix died on a missing webkit binary,
+// test:browser-matrix failed on its report, and audit:ops-readiness failed
+// on top of that because it reads the browser-matrix report as a reliability
+// input — one missing engine, four red checks, none of them a real defect.
+// scripts/publish-gate-drift-regression-test.mjs asserts every workflow that
+// runs the battery installs all of these, so a new publish path cannot
+// reintroduce that false alarm.
+export const PUBLISH_QUALITY_GATE_BROWSER_ENGINES = ['chromium', 'webkit'];
