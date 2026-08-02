@@ -123,9 +123,25 @@
     .more-link { color:var(--brand); font-weight:700; font-size:13.5px; white-space:nowrap; padding:6px 2px; }
     .card-row { display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:18px; }
 
-    /* WO-2: this-month mini calendar strip */
-    .cal-strip { display:grid; grid-template-columns:repeat(auto-fill, minmax(46px,1fr)); gap:8px; margin-bottom:20px; }
-    .cal-day { position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; min-height:52px; background:var(--card); border:1px solid var(--line); border-radius:10px; color:var(--ink); }
+    /* WO-2: this-month mini calendar strip. Lives directly in this
+       committed dist/index.html shell, NOT in the brandCss template
+       literal in scripts/generate-site.mjs — patchHomePage() reads this
+       file's own <style> block and only splices specific marked regions
+       (ld+json, board stats, ticker/searchData, board sections, timeline
+       sections incl. this strip's HTML) back into itself; nothing ever
+       regenerates this <style> block, so a hand-edit here persists across
+       every future `npm run build` (verified empirically: build run
+       twice, diff still clean). a11y-prod-pipeline-fix: .cal-strip is now
+       a real <ul> and each day cell is wrapped in a real <li
+       class="cal-cell"> so role="list"/role="listitem" pairs correctly
+       (see scripts/home-month-calendar.mjs's header comment on
+       homeCalendarStrip() for the full rationale) — .cal-cell carries the
+       grid/flex item sizing that .cal-day used to carry directly, and
+       .cal-day itself is styled to fill 100% of its .cal-cell wrapper so
+       the visible layout is unchanged. */
+    .cal-strip { display:grid; grid-template-columns:repeat(auto-fill, minmax(46px,1fr)); gap:8px; margin:0 0 20px; padding:0; list-style:none; }
+    .cal-cell { display:flex; min-width:0; }
+    .cal-day { position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; min-height:52px; width:100%; background:var(--card); border:1px solid var(--line); border-radius:10px; color:var(--ink); }
     .cal-day b { font-size:14px; font-weight:700; font-variant-numeric:tabular-nums; }
     .cal-day.has-events { border-color:var(--brand); color:var(--brand); }
     .cal-day.has-events:hover, .cal-day.has-events:focus-visible { background:var(--brand-soft); }
@@ -205,7 +221,7 @@
       .card-row { display:flex; overflow-x:auto; scroll-snap-type:x mandatory; gap:12px; padding-bottom:8px; margin-inline:-16px; padding-inline:16px; }
       .card-row .card { min-width:262px; scroll-snap-align:start; }
       .cal-strip { display:flex; overflow-x:auto; scroll-snap-type:x mandatory; gap:8px; padding-bottom:6px; margin-inline:-16px; padding-inline:16px; }
-      .cal-strip .cal-day { min-width:48px; scroll-snap-align:start; }
+      .cal-strip .cal-cell { min-width:48px; scroll-snap-align:start; }
       .h-section { margin:36px 0; }
       .foot-grid { grid-template-columns:1fr 1fr; }
       .trust-band { border-radius:14px; padding:18px; }

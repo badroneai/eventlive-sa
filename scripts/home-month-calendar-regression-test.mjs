@@ -188,13 +188,59 @@ if (expectedMonth.length === 0) {
 // 4c. Calendar strip day count = remaining Riyadh days of the current month,
 // and every linked day matches remainingMonthDays()'s own event membership.
 const expectedDays = remainingMonthDays(events, now);
-const stripMatch = indexHtml.match(/<div class="cal-strip"[^>]*>([\s\S]*?)<\/div>\s*<div class="h-section-head">/);
-assert.ok(stripMatch, 'dist/index.html must expose the calendar strip immediately before the month section head');
-const stripCellCount = (stripMatch[1].match(/class="cal-day/g) || []).length;
+// a11y-prod-pipeline-fix: the strip's container must be a real
+// <ul class="cal-strip" role="list"> — this regex literally requires both
+// the `<ul class="cal-strip"` tag AND the explicit `role="list"` in that
+// exact attribute order (matching the literal template in
+// home-month-calendar.mjs), not just the class attribute. Reverting the
+// container back to a bare `<div ... role="list">`, OR dropping the
+// explicit role="list" from the <ul> (WebKit strips list semantics from
+// a <ul style="list-style:none"> without it — see the comment on
+// assertStripAriaContract below), makes this match fail to find the
+// strip at all, which fails the very next assert.ok with a clear message
+// instead of silently matching stale markup.
+const stripMatch = indexHtml.match(/(<ul class="cal-strip" role="list"[^>]*>)([\s\S]*?)<\/ul>\s*<div class="h-section-head">/);
+assert.ok(stripMatch, 'dist/index.html must expose the calendar strip as a real <ul class="cal-strip" role="list"> immediately before the month section head');
+const stripCellCount = (stripMatch[2].match(/class="cal-day/g) || []).length;
 assert.equal(stripCellCount, expectedDays.length, 'calendar strip day count must equal the remaining days of the current Riyadh month');
 const expectedLinkedDays = expectedDays.filter((day) => day.events.length).map((day) => day.key);
-const actualLinkedDays = [...stripMatch[1].matchAll(/class="cal-day has-events" data-day="([^"]+)"/g)].map((match) => match[1]);
+const actualLinkedDays = [...stripMatch[2].matchAll(/class="cal-day has-events" data-day="([^"]+)"/g)].map((match) => match[1]);
 assert.deepEqual(actualLinkedDays.sort(), expectedLinkedDays.sort(), 'exactly the days with events must be linked/dotted, no more, no less');
+
+// 4c-bis. ARIA-contract guard (a11y-prod-pipeline-fix): axe's
+// aria-required-children rule fails ANY role="list" element (explicit or,
+// as here, the <ul>'s implicit role) whose direct children are not
+// listitems — that is exactly the bug that shipped with WO-2 (a bare
+// `<div role="list">` wrapping bare `<a>`/`<span>` cells) and turned the
+// production Lighthouse a11y gate red for 5 days (2026-07-29 to
+// 2026-08-02). This reads the REAL built Arabic AND English homepage
+// output, not a synthetic fixture, so reintroducing that shape — or the
+// equally-broken variant of bolting role="listitem" straight onto the <a>
+// (which would overwrite its link role) — fails this test immediately.
+//
+// The explicit-role="list" half of this guard exists for a second,
+// quieter failure mode axe cannot see at all: WebKit/Safari (all iOS
+// browsers) strips list semantics from the accessibility tree for any
+// <ul>/<ol> styled with `list-style: none` (which .cal-strip is) unless
+// role="list" is explicit — VoiceOver stops announcing "list, N items"
+// and the <li> children stop being exposed as listitems. axe/Lighthouse
+// run on Chromium and will never catch that regression; only this
+// literal-string check does.
+function assertStripAriaContract(openTag, stripHtml, label) {
+  assert.match(openTag, /\brole="list"/, `${label}: the <ul class="cal-strip"> must carry an explicit role="list" — list-style:none strips implicit list semantics from the accessibility tree in WebKit/Safari, so the implicit role from <ul> alone is not enough there`);
+  const liWrappers = [...stripHtml.matchAll(/<li class="cal-cell">([\s\S]*?)<\/li>/g)];
+  const cellCount = (stripHtml.match(/class="cal-day/g) || []).length;
+  assert.ok(cellCount > 0, `${label}: calendar strip must contain at least one .cal-day cell to assert the ARIA contract over`);
+  assert.equal(liWrappers.length, cellCount, `${label}: every .cal-day cell must be wrapped in exactly one <li class="cal-cell"> — a cal-day with no <li> listitem wrapper is the aria-required-children violation this test exists to catch`);
+  for (const [, inner] of liWrappers) {
+    assert.ok(
+      /^<a class="cal-day has-events"[\s\S]*<\/a>$/.test(inner) || /^<span class="cal-day"[\s\S]*<\/span>$/.test(inner),
+      `${label}: each <li class="cal-cell"> must wrap exactly one .cal-day cell (a linked has-events <a> or an unlinked <span>), found: ${inner.slice(0, 160)}`
+    );
+  }
+  assert.ok(!/role="listitem"/.test(stripHtml), `${label}: listitem semantics must come from real <li> elements, never role="listitem" bolted onto the <a> (that would overwrite the day's link role)`);
+}
+assertStripAriaContract(stripMatch[1], stripMatch[2], 'dist/index.html');
 
 // 4d. Anchor resolution: every homepage #day-YYYY-MM-DD link must resolve on
 // this-month.html, in both Arabic and English.
@@ -230,8 +276,15 @@ for (const anchor of enHomepageDayLinks) {
 assert.match(enIndexHtml, /<h2>This month<\/h2>/, 'English homepage must render the translated month section heading');
 assert.match(enIndexHtml, /aria-label="Remaining days of the month"/, 'English homepage calendar strip must carry the translated aria-label');
 const enMonthSectionHtml = enIndexHtml.match(/<section class="h-section" id="month"[^>]*>[\s\S]*?<\/section>/)?.[0] || '';
-const enMonthChromeMatch = enMonthSectionHtml.match(/<div class="cal-strip"[\s\S]*?(?=<div class="card-row")/);
-assert.ok(enMonthChromeMatch, 'English month section must expose the cal-strip + h-section-head chrome block ahead of the card row');
+const enMonthChromeMatch = enMonthSectionHtml.match(/<ul class="cal-strip"[\s\S]*?(?=<div class="card-row")/);
+assert.ok(enMonthChromeMatch, 'English month section must expose the cal-strip (as a real <ul>) + h-section-head chrome block ahead of the card row');
 assert.doesNotMatch(enMonthChromeMatch[0], /[ء-ي]/u, 'English month section chrome (calendar strip + section head) must contain no leftover Arabic characters');
+// Split the English chrome block back into the strip's own opening tag +
+// inner cells so assertStripAriaContract can check role="list" the same
+// way it does for the Arabic side (see stripMatch above for why both the
+// tag and the explicit role are asserted together).
+const enStripSplit = enMonthChromeMatch[0].match(/^(<ul class="cal-strip"[^>]*>)([\s\S]*?)<\/ul>/);
+assert.ok(enStripSplit, 'dist/en/index.html calendar strip must close its own </ul> inside the month section chrome block');
+assertStripAriaContract(enStripSplit[1], enStripSplit[2], 'dist/en/index.html');
 
 console.log(`home-month-calendar-regression-test: ok month_events=${expectedMonth.length} remaining_days=${expectedDays.length} linked_days=${expectedLinkedDays.length}`);

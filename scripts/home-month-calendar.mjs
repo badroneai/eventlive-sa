@@ -81,19 +81,49 @@ export function remainingMonthDays(events = [], reference = Date.now()) {
 // "render remaining days without event dots" degrade path (see WO-2 PR
 // notes for why we always render every remaining day rather than hiding
 // the strip: `days` is never empty, so there is nothing to hide it for).
+//
+// a11y-prod-pipeline-fix: the container is a real <ul> and every cell is
+// wrapped in a real <li> (class "cal-cell") — axe's aria-required-children
+// rule flags ANY role="list" element whose direct children aren't
+// listitems, and the original WO-2 markup put role="list" straight on a
+// <div> whose children were bare <a>/<span> cells, which is exactly that
+// violation (it shipped 2026-07-29 and turned the production Lighthouse
+// a11y gate red for 5 days). Do NOT put role="listitem" directly on the
+// <a> below — that overwrites its link role and makes the day
+// unreachable as a link; the <li> wrapper is what carries the listitem
+// semantics instead. Do NOT give .cal-cell `display:contents` to make it
+// "invisible" for grid/flex layout purposes either — that has a browser
+// history of pulling elements (including their implicit role) out of the
+// accessibility tree, which would silently reintroduce this same bug.
+// Grid/flex sizing for .cal-cell instead of .cal-day lives beside
+// .cal-strip in the dist shell <style> block (see that block's own
+// comment for why it lives there).
+//
+// The explicit role="list" below is NOT redundant, even though <ul>
+// already implies it: .cal-strip's CSS sets `list-style: none`, and
+// WebKit/Safari (all iOS browsers, a large share of Saudi traffic)
+// deliberately strips list semantics from the accessibility tree for any
+// <ul>/<ol> styled with list-style: none — VoiceOver stops announcing
+// "list, N items" and its children stop being exposed as listitems. An
+// explicit role="list" on the <ul> restores that semantics in WebKit; it
+// is a harmless no-op in Chrome/Firefox. axe does not flag its absence
+// (this is a WebKit-only accessibility-tree quirk, not a DOM-visible
+// violation), so do not "clean up" this attribute as redundant — removing
+// it silently reintroduces a quieter version of the exact bug this file
+// exists to fix, but only on Safari/iOS.
 export function homeCalendarStrip(days = []) {
   if (!days.length) return '';
   const cells = days.map((day) => {
     const count = day.events.length;
     const dayNumber = new Intl.DateTimeFormat('ar-SA', { day: 'numeric', timeZone: 'Asia/Riyadh' }).format(day.date);
     if (!count) {
-      return `<span class="cal-day" data-day="${escapeHtml(day.key)}"><b>${escapeHtml(dayNumber)}</b></span>`;
+      return `<li class="cal-cell"><span class="cal-day" data-day="${escapeHtml(day.key)}"><b>${escapeHtml(dayNumber)}</b></span></li>`;
     }
     const monthName = new Intl.DateTimeFormat('ar-SA', { month: 'long', timeZone: 'Asia/Riyadh' }).format(day.date);
     const label = `${dayNumber} ${monthName} · ${eventCountLabel(count)}`;
-    return `<a class="cal-day has-events" data-day="${escapeHtml(day.key)}" href="./this-month.html#day-${escapeHtml(day.key)}" aria-label="${escapeHtml(label)}"><b>${escapeHtml(dayNumber)}</b><span class="cal-dot" aria-hidden="true"></span></a>`;
+    return `<li class="cal-cell"><a class="cal-day has-events" data-day="${escapeHtml(day.key)}" href="./this-month.html#day-${escapeHtml(day.key)}" aria-label="${escapeHtml(label)}"><b>${escapeHtml(dayNumber)}</b><span class="cal-dot" aria-hidden="true"></span></a></li>`;
   }).join('\n        ');
-  return `<div class="cal-strip" role="list" aria-label="أيام الشهر المتبقية">
+  return `<ul class="cal-strip" role="list" aria-label="أيام الشهر المتبقية">
         ${cells}
-      </div>`;
+      </ul>`;
 }
