@@ -157,6 +157,24 @@ jobs:
           npm run test:platinumlist-leads
           npm run test:platinumlist-detail-radar
           npm run test:regional-chamber-extractors
+          # Program/workshop enrichment gates (2026-08-02): previously reachable only
+          # through launch:source-gates -> launch:preflight, neither of which any CI
+          # workflow invokes (launch:* batteries only ever appear in comments here).
+          # These ran nowhere, so test:sfda-workshop-enrichment sat red against the
+          # live catalog undetected. All 9 are fixture-based (read data/events_catalog.json
+          # + dist/events.json + rendered dist HTML; no network calls in the test scripts
+          # themselves) and run in ~2.6s combined, so they are wired here alongside the
+          # other enrichment-gate cluster below. See scripts/enrich-sfda-workshop-details.mjs
+          # for the root-cause fix that made test:sfda-workshop-enrichment green again.
+          npm run test:tuwaiq-program-enrichment
+          npm run test:future-skills-program-enrichment
+          npm run test:sfda-workshop-enrichment
+          npm run test:misk-program-enrichment
+          npm run test:dhahran-expo-enrichment
+          npm run test:visit-saudi-enrichment
+          npm run test:swa-enrichment
+          npm run test:rfecc-enrichment
+          npm run test:mdlbeast-enrichment
           npm run test:leap-agenda-enrichment
           npm run test:money2020-agenda-enrichment
           npm run test:hrse-agenda-enrichment
