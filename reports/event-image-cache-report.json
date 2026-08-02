@@ -1,35 +1,29 @@
 {
-  "generated_at": "2026-08-02T09:12:03.188Z",
+  "generated_at": "2026-08-02T10:30:01.394Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 779,
-    "fetched": 3,
-    "reused": 493,
-    "failed": 4,
-    "skipped_recent_failures": 4,
-    "remembered_failures": 7
+    "cached_total": 781,
+    "fetched": 2,
+    "reused": 495,
+    "failed": 3,
+    "skipped_recent_failures": 3,
+    "remembered_failures": 6
   },
   "fetched": [
     {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/srikgoed.ha2.webp",
-      "file": "dist/assets/event-images/معسكر-تطوير-حلول-الذكاء-الاصطناعي-c5e3253b6d.webp",
-      "bytes": 7704,
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/Mera_Still_10-scaled.png",
+      "file": "dist/assets/event-images/hayy-cinema-august-2026-4ed02b2a44.png",
+      "bytes": 2771624,
       "events": 1
     },
     {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/o514uvux.jwp.webp",
-      "file": "dist/assets/event-images/معسكر-الدرونز-عالية-الأداء-0d901f248d.webp",
-      "bytes": 3836,
-      "events": 1
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/jtji2553.kez.jpg",
-      "file": "dist/assets/event-images/معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي-70f251ef96.jpg",
-      "bytes": 561226,
-      "events": 1
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-07/CompTIA-Cloud.jpg?itok=QuxBdlzK",
+      "file": "dist/assets/event-images/machine-learning-ضمن-69ab0b64da.jpg",
+      "bytes": 8477,
+      "events": 3
     }
   ],
   "reused": [
@@ -1229,6 +1223,11 @@
       "events": 1
     },
     {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/srikgoed.ha2.webp",
+      "file": "dist/assets/event-images/معسكر-تطوير-حلول-الذكاء-الاصطناعي-c5e3253b6d.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/p33x3n31.rj4.webp",
       "file": "dist/assets/event-images/معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud-ac3f34923b.webp",
       "events": 1
@@ -1236,6 +1235,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/Melwah%20Falcon%20Racing%201.jpeg?itok=AUotuvgp",
       "file": "dist/assets/event-images/melwah-falcon-racing-42ac1994c8.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/o514uvux.jwp.webp",
+      "file": "dist/assets/event-images/معسكر-الدرونز-عالية-الأداء-0d901f248d.webp",
       "events": 1
     },
     {
@@ -1256,6 +1260,11 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/afc589ad447422ccf7b5f40960fd1425.jpg",
       "file": "dist/assets/event-images/advanced-wheel-throwing-23a0c7641e.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/jtji2553.kez.jpg",
+      "file": "dist/assets/event-images/معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي-70f251ef96.jpg",
       "events": 1
     },
     {
@@ -2492,24 +2501,11 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fecca42a5edde20fadea3cd4911749b2.jpg",
       "file": "dist/assets/event-images/book-signing-sessions-2-b580e79734.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-06/%D9%88%D8%B1%D8%B4%D8%A9%20%D8%B9%D9%85%D9%84%20-%20%D8%A7%D9%84%D8%AA%D8%B9%D8%B1%D9%8A%D9%81%20%D8%A8%D8%A7%D9%84%D8%AA%D8%AD%D8%AF%D9%8A%D8%AB%D8%A7%D8%AA%20%D8%B9%D9%84%D9%89%20%D9%86%D8%B8%D8%A7%D9%85%20%D8%A7%D9%84%D8%A7%D8%AC%D9%87%D8%B2%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%84%D8%B2%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%A9.jpg",
-      "file": "dist/assets/event-images/التعريف-بالتحديثات-على-نظام-الأجهزة-والمستلزمات-الطبية-cce891ebbd.jpg",
-      "events": 1
     }
   ],
   "rejected_removed": [],
   "missing_removed": [],
   "skipped_recent_failures": [
-    {
-      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-07/CompTIA-Cloud.jpg?itok=QuxBdlzK",
-      "events": 3,
-      "reason": "HTTP 404",
-      "failure_kind": "not-found",
-      "retry_after": "2026-08-02T10:15:46.874Z",
-      "skipped": true
-    },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
@@ -2537,14 +2533,6 @@
   ],
   "failed": [
     {
-      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-07/CompTIA-Cloud.jpg?itok=QuxBdlzK",
-      "events": 3,
-      "reason": "HTTP 404",
-      "failure_kind": "not-found",
-      "retry_after": "2026-08-02T10:15:46.874Z",
-      "skipped": true
-    },
-    {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
@@ -2571,6 +2559,6 @@
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:3"
+    "fetched:2"
   ]
 }

@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-08-02T09:12:17.657Z
+Generated at: 2026-08-02T10:30:15.059Z
 
 ## Operating Rule
 
@@ -12,10 +12,10 @@ Raw collection is not publication. Every source run preserves evidence, separate
 - Attempted this run: 20
 - Deferred by adaptive cadence: 28
 - Productive: 19
-- Zero-yield: 0
+- Zero-yield: 1
 - Collector errors: 0
 - Persistent collector errors: 6
-- Probe blocked: 1
+- Probe blocked: 0
 - Auto-publish eligible source lanes: 12
 
 ## Stalled / Blocked Focus
@@ -129,7 +129,7 @@ Call log:
 | 68 | hail-chamber-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 69 | najran-chamber-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 70 | platinumlist-riyadh | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
-| 71 | najran-municipality-summer-events | venue-dedupe | zero-yield | 0 | no | Zero-yield for 7 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 71 | najran-municipality-summer-events | venue-dedupe | zero-yield | 0 | no | Zero-yield for 8 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 72 | platinumlist-saudi-city-network | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
 | 73 | my-gov-sa-events | partnership | partnership | 0 | no | Partnership/API lane; do not scrape protected or app-only data. |
 | 74 | middle-east-banking-ai-summit | extractor-backlog | not-attempted | 0 | no | Probe HTML/API shape, then decide whether an extractor is worth adding. |

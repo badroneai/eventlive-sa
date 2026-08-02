@@ -1,13 +1,23 @@
 {
-  "generated_at": "2026-08-02T09:11:00.866Z",
+  "generated_at": "2026-08-02T10:29:00.987Z",
   "totals": {
-    "targets": 6,
-    "enriched": 6,
-    "fetched": 6,
-    "images": 6,
+    "targets": 7,
+    "enriched": 7,
+    "fetched": 7,
+    "images": 7,
     "fetch_failures": 0
   },
   "enriched": [
+    {
+      "id": "event-hayy-cinema-august-2026",
+      "title": "Hayy Cinema | August 2026",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-cinema-august-2026/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
     {
       "id": "event-الأخطبوطية",
       "title": "الاخطبوطية",

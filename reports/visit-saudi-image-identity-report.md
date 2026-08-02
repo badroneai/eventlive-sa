@@ -1,16 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-08-02T09:08:42.951Z
-- pdf_crop_assignments: 59
+- generated_at: 2026-08-02T10:27:11.421Z
+- pdf_crop_assignments: 57
 - verified: 56
-- struck: 3
+- struck: 1
 - slots_seen_this_cycle: 61
 
 ## Struck (fell back to generated cover)
 
 - باتو (visit-saudi-summer-2026-p006-top-left.jpg) - identity-mismatch - page 6 top-left is now "بلاتو"
-- أوركسترا Harry Potter (visit-saudi-summer-2026-p060-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 60 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- صيف وِرث 2026 (visit-saudi-summer-2026-p012-top-right.jpg) - slot-vacated - no dated card currently occupies page 12 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 

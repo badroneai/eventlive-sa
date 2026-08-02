@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-02T09:14:38.910Z",
+  "generated_at": "2026-08-02T10:32:08.513Z",
   "entries": {
     "1f91543d6769d9abda47f221ba86f9f9ebf27443": {
       "source": "Skill Development Initiative",
@@ -59354,14 +59354,6 @@
       "method": "argos-mt",
       "translated_at": "2026-08-01T14:39:11.176Z"
     },
-    "0f156f2e12622bd48b939efe8b7b3a0e82560d40": {
-      "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of not less than 75%, and the equivalent of certificates is required from the Ministry of Higher Education for non-Saudi Arabian university graduates.",
-      "method": "argos-mt",
-      "translated_at": "2026-08-02T09:14:38.909Z"
-    },
     "74b0edd2df56cc2442fd05fca29f6a8ceb34b4b4": {
       "source": "مسارات تصنيع الأجهزة والمستلزمات الطبية",
       "source_lang": "ar",
@@ -59479,22 +59471,6 @@
       "source_lang": "ar",
       "target_lang": "en",
       "text": "Time: 2026-08-19T10:00+03:00 to 2026-08-19T11:00+03:00",
-      "method": "argos-mt",
-      "translated_at": "2026-08-02T09:14:38.910Z"
-    },
-    "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
-      "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
-      "method": "argos-mt",
-      "translated_at": "2026-08-02T09:14:38.910Z"
-    },
-    "5c6a9ff87c6cdb115664bc8a097d521eadf27f9f": {
-      "source": "مركز الرياض للمعارض والمؤتمرات في ملهم",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "The Riyadh International Convention Exhibition Center in Inspiration",
       "method": "argos-mt",
       "translated_at": "2026-08-02T09:14:38.910Z"
     },
@@ -60057,6 +60033,94 @@
       "text": "Camp fee.",
       "method": "argos-mt",
       "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "a88df0f9e033d0de89f0a198af3938341113d0b2": {
+      "source": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-cinema-august-2026/",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-cinema-august-2026/",
+      "method": "identity-pass",
+      "translated_at": "2026-08-02T10:29:13.799Z"
+    },
+    "0f156f2e12622bd48b939efe8b7b3a0e82560d40": {
+      "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of not less than 75%, and the equivalent of certificates is required from the Ministry of Higher Education for non-Saudi Arabian university graduates.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T10:32:08.513Z"
+    },
+    "29ac535c84b03bc425ba8e1af92925d23212bc1b": {
+      "source": "Hayy Cinema | August 2026",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "هاي سينما",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T10:32:08.513Z"
+    },
+    "030a413db30bddb27cbf7ebdb358779959d8779c": {
+      "source": "August 2026 At Hayy Cinema This August, Hayy Cinema continues celebrating the art of short filmmaking with In Short: Film Programme , a curated selection of bold Gulf voices, acclaimed international shorts, family-friendly adventures, documentaries, animations, and award-winning festival favourites. Bringing together emerging and established filmmakers, the programme highlights the creativity, diversity, and innovation of short-form storytelling through a series of themed screening programmes.",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "August 2026 At Hayy Cinema وفي آب/أغسطس، لا تزال هاي سينما تحتفل بفن التصوير القصير مع برنامج &quot; In Short: Film Programme &quot; ، واختيار معالج لأصوات الخليج الجريئة، والقصص الدولي المعلن، والمغامرات الصديقة للأسرة، والموثقين، والأحداث، ومفضلات المهرجان الفائزة بالجائزة. ويبرز البرنامج، الذي يجمع بين صانعي الأفلام الآخذين في الظهور والمنشأة، إبداع وتنوع وابتكار التجارب القصيرة من خلال سلسلة من برامج الفرز الطبي.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T10:32:08.513Z"
+    },
+    "f075a30fd756016ff1f63f573c74157f7338bc21": {
+      "source": "August 2026 At Hayy Cinema This August, Hayy Cinema continues celebrating the art of short filmmaking with In Short: Film Programme , a curated selection of bold Gulf voices, acclaimed international shorts, family-friendly adventures, documentaries, animations, and award-winning festival favourites. Bringing together emerging and established filmmakers, the programme highlights the creativity, diversity, and innovation of short-form storytelling through a series of themed screening programmes. This month also marks International Cat Day with a weekend dedicated to our feline companions. Join us for special screenings of the Academy Award-winning animated feature Flow (2024 ) and the beloved documentary Kedi (2016) , alongside a series of cat-inspired activations celebrating the unique bond between people and cats. For these special screenings, audiences are invited to bring their cats to the cinema and enjoy the films together in a pet-friendly setting.",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "August 2026 At Hayy Cinema وفي آب/أغسطس، لا تزال هاي سينما تحتفل بفن التصوير القصير مع برنامج &quot; In Short: Film Programme &quot; ، واختيار معالج لأصوات الخليج الجريئة، والقصص الدولي المعلن، والمغامرات الصديقة للأسرة، والموثقين، والأحداث، ومفضلات المهرجان الفائزة بالجائزة. ويبرز البرنامج، الذي يجمع بين صانعي الأفلام الآخذين في الظهور والمنشأة، إبداع وتنوع وابتكار التجارب القصيرة من خلال سلسلة من برامج الفرز الطبي. ويحتفل هذا الشهر أيضا باليوم الدولي للقطط بعطلة نهاية أسبوع مخصصة لشركائنا من الجنين. انضموا إلينا من أجل فرز خاص لجائزة الأكاديمية المتحركة المميزة Flow (2024) والفيلق الوثائقي الحبيب كيدي (2016)، إلى جانب سلسلة من المنشطات الملهمة بالقطط التي تحتفل بالترابط الفريد بين الناس والقطط. ولهذه العروض الخاصة، يُدعى الجمهور إلى جلب قططهم إلى السينما والتمتع بالأفلام معاً في بيئة ملائمة للأحياء.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T10:32:08.513Z"
+    },
+    "ef0a4ed92ae76c63514530246c1330cc8305a18e": {
+      "source": "٢٠ أغسطس ٢٠٢٦ في ٠٩:٠٠ ص إلى ٢٠ أغسطس ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "20 August 2026:00 to 20 August 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T10:32:08.513Z"
+    },
+    "aaa1575f6ed4a3d3e848edbd3ec4cb118045b14e": {
+      "source": "الفعالية: Hayy Cinema | August 2026",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "هاي سينما",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T10:32:08.513Z"
+    },
+    "2739708d943a2ffd117bb08e97eee9360d506e76": {
+      "source": "النافذة الزمنية: ٢٠ أغسطس ٢٠٢٦ في ٠٩:٠٠ ص إلى ٢٠ أغسطس ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 20 August 2026 in 90:00 to 20 August 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T10:32:08.513Z"
+    },
+    "3279e663d3de95aa092dccc830350b3e87cf42b4": {
+      "source": "الموعد: ٢٠ أغسطس ٢٠٢٦ في ٠٩:٠٠ ص إلى ٢٠ أغسطس ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 20 August 2026: 0:00 to 20 August 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T10:32:08.513Z"
+    },
+    "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
+      "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T10:32:08.513Z"
+    },
+    "5c6a9ff87c6cdb115664bc8a097d521eadf27f9f": {
+      "source": "مركز الرياض للمعارض والمؤتمرات في ملهم",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The Riyadh International Convention Exhibition Center in Inspiration",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T10:32:08.513Z"
     }
   }
 }

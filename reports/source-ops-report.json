@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T09:12:17.800Z",
+  "generated_at": "2026-08-02T10:30:15.203Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,10 +11,10 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-08-02T09:00:30.624Z",
+    "collected_at": "2026-08-02T10:19:57.640Z",
     "freshness": "fresh",
     "discovered": 319,
-    "written": 566
+    "written": 568
   },
   "sources": {
     "total": 88,
@@ -237,7 +237,7 @@
         "zero_yield_streak": 0,
         "last_attempted_at": null,
         "extracted": 12,
-        "candidates": 35,
+        "candidates": 36,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -679,13 +679,16 @@
         "id": "riyadh-city-events",
         "name": "Riyadh City Events",
         "priority": 51,
-        "status": "zero-yield",
+        "status": "deferred",
+        "historical_status": "probe-blocked",
+        "cadence_reason": "error-cooldown",
+        "next_due_at": "2026-08-02T15:00:30.624Z",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "last_attempted_at": "2026-08-02T09:00:30.624Z",
         "extracted": 0,
         "candidates": 77,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "next_action": "مؤجل حتى 2026-08-02T15:00:30.624Z وفق الجدولة التكيفية."
       },
       {
         "id": "monshaat-academy-programs",
@@ -940,16 +943,13 @@
         "id": "najran-municipality-summer-events",
         "name": "Najran Municipality Summer Events",
         "priority": 71,
-        "status": "deferred",
-        "historical_status": "zero-yield",
-        "cadence_reason": "zero-yield-cooldown",
-        "next_due_at": "2026-08-02T10:05:46.187Z",
+        "status": "zero-yield",
         "error_streak": 0,
-        "zero_yield_streak": 7,
-        "last_attempted_at": "2026-08-01T10:05:46.187Z",
+        "zero_yield_streak": 0,
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 1,
-        "next_action": "مؤجل حتى 2026-08-02T10:05:46.187Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "platinumlist-saudi-city-network",
@@ -1125,7 +1125,7 @@
         "zero_yield_streak": 0,
         "last_attempted_at": null,
         "extracted": 66,
-        "candidates": 72,
+        "candidates": 73,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -1176,28 +1176,28 @@
     ]
   },
   "queue": {
-    "total": 566,
+    "total": 568,
     "ready_for_review": 8,
     "approved_for_catalog": 0,
-    "published_from_candidates": 532,
+    "published_from_candidates": 534,
     "actionable": 8,
     "stale_unpublished": 0,
     "duplicate_risk": 6,
     "needs_extraction": 0,
     "needs_evidence": 26,
     "by_review_status": {
-      "approved-for-catalog": 532,
+      "approved-for-catalog": 534,
       "ready-for-review": 8,
       "evidence-captured": 18,
       "new": 8
     },
     "by_publication_gate": {
-      "catalog-review": 532,
+      "catalog-review": 534,
       "duplicate-review": 8,
       "source-evidence": 26
     },
     "by_confidence": {
-      "official": 526,
+      "official": 528,
       "public-listing": 21,
       "verified-secondary": 11,
       "unverified": 8
@@ -1214,9 +1214,9 @@
       "Visit Saudi Summer Calendar PDF": 69,
       "Misk Hub Programs": 11,
       "Discover Aseer Events": 38,
-      "Hayy Jameel What's On": 72,
+      "Hayy Jameel What's On": 73,
       "Visit Saudi Seasons": 18,
-      "Tuwaiq Academy Bootcamps and Programs": 35,
+      "Tuwaiq Academy Bootcamps and Programs": 36,
       "Eye of Riyadh Events": 6,
       "Saudicon Events": 15,
       "Najran Municipality Summer Events": 1,

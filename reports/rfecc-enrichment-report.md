@@ -1,6 +1,6 @@
 # RFECC Enrichment Report
 
-- generated_at: 2026-08-02T09:10:37.743Z
+- generated_at: 2026-08-02T10:28:38.931Z
 - targets: 6
 - candidates: 6
 - enriched: 6

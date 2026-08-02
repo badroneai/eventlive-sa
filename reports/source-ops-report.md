@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-08-02T09:12:17.800Z
+- generated_at: 2026-08-02T10:30:15.203Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -21,22 +21,22 @@
 - Healthy sources: 19
 - Zero-yield sources: 1
 - High-priority unattempted sources: 3
-- Candidates: 566
+- Candidates: 568
 - Actionable candidates: 8
 - Ready for review: 8
 - Ready for catalog promotion: 0
-- Linked to catalog from candidates: 532
+- Linked to catalog from candidates: 534
 - Stale unpublished candidates: 0
 - Duplicate risk: 6
 - Recommendation: ابدأ بمراجعة التكرارات المحتملة قبل اعتماد أي مرشح جديد.
 
 ## Candidate Funnel
 
-- review_status.approved-for-catalog: 532
+- review_status.approved-for-catalog: 534
 - review_status.ready-for-review: 8
 - review_status.evidence-captured: 18
 - review_status.new: 8
-- publication_gate.catalog-review: 532
+- publication_gate.catalog-review: 534
 - publication_gate.duplicate-review: 8
 - publication_gate.source-evidence: 26
 - discovery_quality.strong-lead: 19
@@ -90,7 +90,7 @@
 | 13 | 10times Saudi Arabia | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 14 | Eventbrite Saudi Arabia | deferred | 0 | 8 | مؤجل حتى 2026-08-02T19:51:35.550Z وفق الجدولة التكيفية. |
 | 15 | Platinumlist Jeddah Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 16 | Tuwaiq Academy Bootcamps and Programs | healthy | 12 | 35 | استمر بالمراجعة والتكرار قبل النشر. |
+| 16 | Tuwaiq Academy Bootcamps and Programs | healthy | 12 | 36 | استمر بالمراجعة والتكرار قبل النشر. |
 | 17 | Future Skills MCIT Catalogue | healthy | 6 | 6 | استمر بالمراجعة والتكرار قبل النشر. |
 | 18 | Riyadh Season Official | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 19 | Visit Saudi Seasons | healthy | 18 | 18 | استمر بالمراجعة والتكرار قبل النشر. |
@@ -125,7 +125,7 @@
 | 48 | Saudi Food and Drug Authority Events | healthy | 8 | 8 | استمر بالمراجعة والتكرار قبل النشر. |
 | 49 | Saudi Contractors Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 50 | Saudi Winter Events Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 51 | Riyadh City Events | zero-yield | 0 | 77 | No future date-complete candidates found by the conservative extractor. |
+| 51 | Riyadh City Events | deferred | 0 | 77 | مؤجل حتى 2026-08-02T15:00:30.624Z وفق الجدولة التكيفية. |
 | 52 | Monsha'at Academy Programs | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 53 | General Entertainment Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 54 | SDAIA Calendar and Events | healthy | 2 | 2 | استمر بالمراجعة والتكرار قبل النشر. |
@@ -145,7 +145,7 @@
 | 68 | Hail Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 69 | Najran Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 70 | Platinumlist Riyadh Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 71 | Najran Municipality Summer Events | deferred | 0 | 1 | مؤجل حتى 2026-08-02T10:05:46.187Z وفق الجدولة التكيفية. |
+| 71 | Najran Municipality Summer Events | zero-yield | 0 | 1 | No future date-complete candidates found by the conservative extractor. |
 | 72 | Platinumlist Saudi City Network | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 73 | GOV.SA National Platform Events | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 74 | Middle East Banking AI & Analytics Summit Official | not-collected | 0 | 1 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
@@ -159,7 +159,7 @@
 | 82 | Money20/20 Middle East Official Agendas | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 83 | Madinah Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-08-02T18:34:59.132Z وفق الجدولة التكيفية. |
 | 84 | Madinah International Architecture Festival | healthy | 1 | 1 | استمر بالمراجعة والتكرار قبل النشر. |
-| 85 | Hayy Jameel What's On | healthy | 66 | 72 | استمر بالمراجعة والتكرار قبل النشر. |
+| 85 | Hayy Jameel What's On | healthy | 66 | 73 | استمر بالمراجعة والتكرار قبل النشر. |
 | 86 | Informa Connect Saudi Event Portfolio | deferred | 0 | 6 | مؤجل حتى 2026-08-03T15:28:34.590Z وفق الجدولة التكيفية. |
 | 87 | King Abdulaziz University Events | deferred | 0 | 2 | مؤجل حتى 2026-08-03T15:28:34.590Z وفق الجدولة التكيفية. |
 | 88 | Saudicon Events | deferred | 0 | 15 | مؤجل حتى 2026-08-02T19:51:35.550Z وفق الجدولة التكيفية. |

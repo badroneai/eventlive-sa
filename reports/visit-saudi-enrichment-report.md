@@ -1,6 +1,6 @@
 # Visit Saudi Calendar Enrichment Report
 
-- generated_at: 2026-08-02T09:09:53.551Z
+- generated_at: 2026-08-02T10:28:18.799Z
 - targets: 26
 - candidates: 17
 - enriched: 26

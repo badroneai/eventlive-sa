@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-02T09:08:41.250Z
+- published_at: 2026-08-02T10:27:09.698Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 566
-- published_new: 12
-- linked_existing: 516
+- candidates_seen: 568
+- published_new: 7
+- linked_existing: 523
 - blocked_remaining: 38
 - duplicate_review_alerts: 8
 
@@ -29,12 +29,7 @@
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
-| candidate-sfda-events-مسارات-تصنيع-الأجهزة-والمستلزمات-الطبية-20260812-97c09c47 | published | event-مسارات-تصنيع-الأجهزة-والمستلزمات-الطبية | مسارات تصنيع الأجهزة والمستلزمات الطبية |
-| candidate-sfda-events-آلية-تقديم-طلبات-الحصول-على-ترخيص-خدمات-توكيد-الجودة-والقياسات-الاشعاعية-20260817-47d2fd92 | published | event-آلية-تقديم-طلبات-الحصول-على-ترخيص-خدمات-توكيد-الجودة-والقياسات-الاشعاعية | آلية تقديم طلبات الحصول على ترخيص خدمات توكيد الجودة والقياسات الاشعاعية |
-| candidate-sfda-events-دور-المواصفات-القياسية-في-دعم-عمليات-التعقيم-والتغليف-ووضع-المعلومات-الت-20260819-dd16cb51 | published | event-دور-المواصفات-القياسية-في-دعم-عمليات-التعقيم-والتغليف-ووضع-المعلومات-الت | دور المواصفات القياسية في دعم عمليات التعقيم والتغليف ووضع المعلومات التعريفية للمصانع المحلية |
-| candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-حلول-الذكاء-الاصطناعي-20261004-dbd53610 | published | event-معسكر-تطوير-حلول-الذكاء-الاصطناعي | معسكر تطوير حلول الذكاء الاصطناعي |
-| candidate-tuwaiq-academy-bootcamps-معسكر-الدرونز-عالية-الأداء-20261004-c428ead9 | published | event-معسكر-الدرونز-عالية-الأداء | معسكر الدرونز عالية الأداء |
-| candidate-tuwaiq-academy-bootcamps-معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي-20261005-c1f05c69 | published | event-معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي | معسكر الاستراتيجية في عصر الذكاء الاصطناعي والتحول الرقمي |
+| candidate-hayy-jameel-events-hayy-cinema-august-2026-20260820-0636e29a | published | event-hayy-cinema-august-2026 | Hayy Cinema | August 2026 |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -261,6 +256,7 @@
 | candidate-ithra-events-ithra-chess-tournament-ages-18-20260811-a1231c37 | linked-existing | event-ithra-chess-tournament | already linked to catalog event |
 | candidate-ithra-events-english-children-book-club-7-9-20260811-fceb6af6 | linked-existing | event-english-children-book-club-7-9 | already linked to catalog event |
 | candidate-sfda-events-الإدراج-في-خطوات-20260812-80dbadc1 | linked-existing | event-الإدراج-في-خطوات | already linked to catalog event |
+| candidate-sfda-events-مسارات-تصنيع-الأجهزة-والمستلزمات-الطبية-20260812-97c09c47 | linked-existing | event-مسارات-تصنيع-الأجهزة-والمستلزمات-الطبية | already linked to catalog event |
 | candidate-ithra-events-ithra-chess-tournament-ages-13-18-20260812-1baa0014 | linked-existing | event-ithra-chess-tournament-ages-13-18 | already linked to catalog event |
 | candidate-ithra-events-english-children-book-club-10-12-20260812-efa3d7e3 | linked-existing | event-english-children-book-club-10-12 | already linked to catalog event |
 | candidate-ithra-events-moksha-20260812-0d457878 | linked-existing | event-moksha | already linked to catalog event |
@@ -271,12 +267,15 @@
 | candidate-umm-al-qura-events-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem-20260816-84787696 | linked-existing | event-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-أساسيات-هندسة-الميكاترونكس-20260816-54c2e27f | linked-existing | event-معسكر-أساسيات-هندسة-الميكاترونكس | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-الأنظمة-الذاتية-للدرونز-20260816-5d8feea2 | linked-existing | event-معسكر-الأنظمة-الذاتية-للدرونز | already linked to catalog event |
+| candidate-sfda-events-آلية-تقديم-طلبات-الحصول-على-ترخيص-خدمات-توكيد-الجودة-والقياسات-الاشعاعية-20260817-47d2fd92 | linked-existing | event-آلية-تقديم-طلبات-الحصول-على-ترخيص-خدمات-توكيد-الجودة-والقياسات-الاشعاعية | already linked to catalog event |
 | candidate-sfda-events-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة-20260818-a459d8bf | linked-existing | event-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-makers-introduction-to-photography-understanding-your-camera-20260818-d51ed26b | linked-existing | event-hayy-makers-introduction-to-photography-understanding-your-camera | already linked to catalog event |
+| candidate-sfda-events-دور-المواصفات-القياسية-في-دعم-عمليات-التعقيم-والتغليف-ووضع-المعلومات-الت-20260819-dd16cb51 | linked-existing | event-دور-المواصفات-القياسية-في-دعم-عمليات-التعقيم-والتغليف-ووضع-المعلومات-الت | already linked to catalog event |
 | candidate-ithra-events-youth-book-club-20260819-de163fbc | linked-existing | event-youth-book-club | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-makers-woodworking-course-level-2-with-ahmad-sofi-20260822-96b7ac24 | linked-existing | event-hayy-makers | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-تجربة-المستخدم-ux-ui-20260823-c81fc88f | linked-existing | event-معسكر-تصميم-تجربة-المستخدم-ux-ui | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-اختبار-البرمجيات-والأتمتة-20260823-ec76981c | linked-existing | event-معسكر-اختبار-البرمجيات-والأتمتة | already linked to catalog event |
+| candidate-tuwaiq-academy-bootcamps-معسكر-اختبار-البرمجيات-والأتمتة-20260823-7da18ae7 | linked-existing | event-معسكر-اختبار-البرمجيات-والأتمتة | trusted duplicate linked to existing catalog event |
 | candidate-dhahran-expo-calendar-offshore-technology-innovation-technical-conference-expo-offshore-arabia-20260824-18d15b29 | linked-existing | event-offshore-technology-innovation-technical-conference-expo-offshore-arabia | already linked to catalog event |
 | candidate-hayy-jameel-events-jameel-library-open-call-the-task-of-the-translator-with-sarasija-subram-20260824-b5cef88a | linked-existing | event-jameel-library-open-call-the-task-of-the-translator-with-sarasija-subram | already linked to catalog event |
 | candidate-eye-of-riyadh-events-smart-data-ai-summit-20260826-f9946ea8 | linked-existing | event-smart-data-ai-summit | already linked to catalog event |
@@ -373,15 +372,18 @@
 | candidate-visit-saudi-seasons-saudi-falcons-club-auction-20261001-4e016ab8 | linked-existing | event-saudi-falcons-club-auction | already linked to catalog event |
 | candidate-scega-exhibitions-conferences-سباق-الملواح-20261004-634d88ef | linked-existing | event-al-milwah-falcon-race | already linked to catalog event |
 | candidate-misk-hub-programs-samsung-innovation-campus-ai-program-20261004-81bc0e25 | linked-existing | event-samsung-innovation-campus-ai-program | already linked to catalog event |
+| candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-حلول-الذكاء-الاصطناعي-20261004-dbd53610 | linked-existing | event-معسكر-تطوير-حلول-الذكاء-الاصطناعي | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud-20261004-8790e021 | linked-existing | event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud | already linked to catalog event |
 | candidate-riyadh-city-events-melwah-falcon-racing-20261004-6f44452c | linked-existing | event-melwah-falcon-racing | already linked to catalog event |
 | candidate-umm-al-qura-events-برنامج-محترف-الحوكمة-وإدارة-المخاطر-والامتثال-grcp-20261004-c75f1d3f | linked-existing | event-دورة-محترف-الحوكمة-وإدارة-المخاطر-والامتثال-grcp | already linked to catalog event |
 | candidate-umm-al-qura-events-شهادة-محترف-الأعمال-المعتمد-في-تحفيز-الموظفين-cbp-em-20261004-f37b5615 | linked-existing | event-شهادة-محترف-الأعمال-المعتمد-في-تحفيز-الموظفين-cbp-em | already linked to catalog event |
+| candidate-tuwaiq-academy-bootcamps-معسكر-الدرونز-عالية-الأداء-20261004-c428ead9 | linked-existing | event-معسكر-الدرونز-عالية-الأداء | already linked to catalog event |
 | candidate-visit-saudi-calendar-al-milwah-falcon-race-20261004-1e16b7f0 | linked-existing | event-al-milwah-falcon-race | already linked to catalog event |
 | candidate-sfda-events-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال-20261005-34d08b48 | linked-existing | event-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال | already linked to catalog event |
 | candidate-riyadh-city-events-global-csr-forum-20261005-5378a12f | linked-existing | event-global-csr-forum | already linked to catalog event |
 | candidate-riyadh-city-events-saudi-lifestyle-week-20261005-2e2473b0 | linked-existing | event-saudi-lifestyle-week | already linked to catalog event |
 | candidate-ithra-events-advanced-wheel-throwing-20261005-bf5e1f8a | linked-existing | event-advanced-wheel-throwing | already linked to catalog event |
+| candidate-tuwaiq-academy-bootcamps-معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي-20261005-c1f05c69 | linked-existing | event-معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي | already linked to catalog event |
 | candidate-ithra-events-how-to-edit-fictional-texts-20261006-e0e3a230 | linked-existing | event-how-to-edit-fictional-texts | already linked to catalog event |
 | candidate-riyadh-city-events-cfo-leadership-summit-20261007-4bbdb5d3 | linked-existing | event-cfo-leadership-summit | already linked to catalog event |
 | candidate-riyadh-city-events-saudi-procurement-conference-20261007-03c6ffd0 | linked-existing | event-saudi-procurement-conference | already linked to catalog event |
