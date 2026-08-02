@@ -218,6 +218,32 @@ for (const city of data.cities || []) {
     for (const field of ['name_ar', 'name_en', 'description_ar', 'description_en']) {
       if (!String(place[field] || '').trim()) fail(`${placePointer}: ${field} must not be empty/whitespace-only`);
     }
+
+    // Image attribution (EVENTME-CITY-PROFILES-BRIEF.md place image pilot).
+    // The automated cache (scripts/cache-place-images.mjs) never writes into
+    // this data file — it writes data/place_image_manifest.json, joined at
+    // build time by scripts/city-places-render.mjs — so `place.image` is
+    // only ever a HAND-authored override today. Still enforced as a hard
+    // gate: schema already requires url+credit together when image exists;
+    // here we additionally re-check the free-license rule at the data layer
+    // (never hotlink, never a non-free license) so a future manual edit
+    // can't quietly reintroduce an NC/ND image or an external URL — the
+    // same "reject, don't trust" posture scripts/cache-place-images.mjs
+    // applies at fetch time, kept alive here for any path that bypasses it.
+    if (place.image) {
+      const { url = '', credit = {} } = place.image;
+      if (/^https?:\/\//i.test(url)) {
+        fail(`${placePointer}: image.url must be a local cached path, not an external URL (never hotlink) — got "${url}"`);
+      } else if (!url.startsWith('/assets/place-images/')) {
+        fail(`${placePointer}: image.url must live under /assets/place-images/ (the cache script's output path) — got "${url}"`);
+      }
+      for (const field of ['artist', 'license', 'commons']) {
+        if (!String(credit[field] || '').trim()) fail(`${placePointer}: image.credit.${field} must not be empty/whitespace-only`);
+      }
+      const license = String(credit.license || '');
+      if (/\bnc\b|non-?commercial/i.test(license)) fail(`${placePointer}: image.credit.license "${license}" is a non-commercial license — only CC0/CC BY/CC BY-SA/PD are allowed`);
+      if (/\bnd\b|no-?derivatives/i.test(license)) fail(`${placePointer}: image.credit.license "${license}" is a no-derivatives license — only CC0/CC BY/CC BY-SA/PD are allowed`);
+    }
   }
   for (const field of ['intro_ar', 'intro_en']) {
     if (!String(city[field] || '').trim()) fail(`${cityPointer}: ${field} must not be empty/whitespace-only`);
