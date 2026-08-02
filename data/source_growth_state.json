@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-growth-state.v1",
-  "generated_at": "2026-08-01T20:06:00.090Z",
+  "generated_at": "2026-08-02T09:12:02.824Z",
   "runs": [
     {
       "run_id": "2026-07-11T01:11:39.757Z",
@@ -1770,6 +1770,32 @@
       "catalog_delta": 0,
       "no_growth_streak": 5,
       "status": "degraded"
+    },
+    {
+      "run_id": "2026-08-02T09:00:30.624Z",
+      "generated_at": "2026-08-02T09:12:02.824Z",
+      "collected_at": "2026-08-02T09:00:30.624Z",
+      "catalog_active_rows": 682,
+      "catalog_ended_rows": 762,
+      "public_events": 1424,
+      "candidates_discovered": 319,
+      "new_active_candidates": 35,
+      "new_ended_events": 0,
+      "published_new": 12,
+      "linked_existing": 516,
+      "blocked_remaining": 38,
+      "sources_attempted": 20,
+      "productive_sources": 19,
+      "collector_errors": 0,
+      "lost_published_output": false,
+      "missing_published_ids": [],
+      "published_ids_checked": 12,
+      "publish_report_correlated": true,
+      "measurement_integrity": "ok",
+      "public_delta": 6,
+      "catalog_delta": 6,
+      "no_growth_streak": 0,
+      "status": "healthy"
     }
   ]
 }

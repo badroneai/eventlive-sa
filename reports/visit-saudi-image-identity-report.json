@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T20:03:50.723Z",
+  "generated_at": "2026-08-02T09:08:42.951Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -10,9 +10,9 @@
   },
   "totals": {
     "pdf_crop_assignments": 59,
-    "verified": 58,
-    "struck": 1,
-    "slots_seen_this_cycle": 63
+    "verified": 56,
+    "struck": 3,
+    "slots_seen_this_cycle": 61
   },
   "struck": [
     {
@@ -23,6 +23,20 @@
       "detail": "page 6 top-left is now \"بلاتو\"",
       "matched_tokens": [],
       "ratio": 0
+    },
+    {
+      "id": "event-أوركسترا-harry-potter",
+      "title": "أوركسترا Harry Potter",
+      "file": "visit-saudi-summer-2026-p060-bottom-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 60 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-صيف-وِرث-2026",
+      "title": "صيف وِرث 2026",
+      "file": "visit-saudi-summer-2026-p012-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 12 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     }
   ],
   "verified": [
@@ -477,26 +491,6 @@
       "matched_tokens": [
         "صيف",
         "وسمره"
-      ]
-    },
-    {
-      "id": "event-أوركسترا-harry-potter",
-      "title": "أوركسترا Harry Potter",
-      "file": "visit-saudi-summer-2026-p060-bottom-left.jpg",
-      "matched_tokens": [
-        "اوركسترا",
-        "harry",
-        "potter"
-      ]
-    },
-    {
-      "id": "event-صيف-وِرث-2026",
-      "title": "صيف وِرث 2026",
-      "file": "visit-saudi-summer-2026-p012-top-right.jpg",
-      "matched_tokens": [
-        "صيف",
-        "ورث",
-        "2026"
       ]
     },
     {

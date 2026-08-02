@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-01T20:08:09.695Z",
+  "generated_at": "2026-08-02T09:14:38.910Z",
   "entries": {
     "1f91543d6769d9abda47f221ba86f9f9ebf27443": {
       "source": "Skill Development Initiative",
@@ -59360,7 +59360,127 @@
       "target_lang": "en",
       "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of not less than 75%, and the equivalent of certificates is required from the Ministry of Higher Education for non-Saudi Arabian university graduates.",
       "method": "argos-mt",
-      "translated_at": "2026-08-01T20:08:09.694Z"
+      "translated_at": "2026-08-02T09:14:38.909Z"
+    },
+    "74b0edd2df56cc2442fd05fca29f6a8ceb34b4b4": {
+      "source": "مسارات تصنيع الأجهزة والمستلزمات الطبية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Medicine processors and medical requirements",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.909Z"
+    },
+    "2f106762b8f8585376eb8f6e737e105cb57c3215": {
+      "source": "مسارات تصنيع الأجهزة والمستلزمات الطبية. طريقة الحضور: عن بعد. نوع الورشة: عامة. لغة العرض: العربية. المصدر الرسمي: الهيئة العامة للغذاء والدواء.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Medicine processors and medical requirements. Method of attendance: remotely. Type of workshop: general. Arabic Official source: the Saudi Food and Drug Authority (SFDA).",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.909Z"
+    },
+    "bcad262d76afa02c654d245d574f8184f926dce5": {
+      "source": "مسارات تصنيع الأجهزة والمستلزمات الطبية. طريقة الحضور: عن بعد. نوع الورشة: عامة. لغة العرض: العربية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Medicine processors and medical requirements. Method of attendance: remotely. Type of workshop: general. Arabic",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.909Z"
+    },
+    "e995b99b1aac8a46986bc1d8983ab6538a3baba5": {
+      "source": "2026-08-12T10:00:00+03:00 إلى 2026-08-12T11:00:00+03:00",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2026-08-12T10:00+03:00 to 2026-08-12T11:00+03:00",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.909Z"
+    },
+    "b4feaa33be91e2a553cdf0135a0a3cdbc4c8a3b6": {
+      "source": "الوقت: 2026-08-12T10:00:00+03:00 إلى 2026-08-12T11:00:00+03:00",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time: 2026-08-12T10:00+03:00 to 2026-08-12T11:00+03:00",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.909Z"
+    },
+    "f64091bba6be2fdf8131b285eb99349b61356194": {
+      "source": "آلية تقديم طلبات الحصول على ترخيص خدمات توكيد الجودة والقياسات الاشعاعية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Application mechanism for quality assurance and radiation measurement services",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.909Z"
+    },
+    "c76a0dc18ffb6767783891fbfe71863467626de1": {
+      "source": "آلية تقديم طلبات الحصول على ترخيص خدمات توكيد الجودة والقياسات الاشعاعية. طريقة الحضور: عن بعد. نوع الورشة: عامة. لغة العرض: العربية. المصدر الرسمي: الهيئة العامة للغذاء والدواء.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Application mechanism for quality assurance services and radiation measurements. Method of attendance: remotely. Type of workshop: general. Arabic Official source: the Saudi Food and Drug Authority (SFDA).",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.909Z"
+    },
+    "3d72bec8d1c5064f54afbf60bd606e8b41249fed": {
+      "source": "آلية تقديم طلبات الحصول على ترخيص خدمات توكيد الجودة والقياسات الاشعاعية. طريقة الحضور: عن بعد. نوع الورشة: عامة. لغة العرض: العربية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Application mechanism for quality assurance services and radiation measurements. Method of attendance: remotely. Type of workshop: general. Arabic",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.909Z"
+    },
+    "59a06712a4dde70d5d9c568a5272611a9126b7fd": {
+      "source": "2026-08-17T10:00:00+03:00 إلى 2026-08-17T11:00:00+03:00",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2026-08-17T10:00+03:00 to 2026-08-17T11:00+03:00",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.909Z"
+    },
+    "beb24f75cd059334d15b0a17525c5e80d7340bf0": {
+      "source": "الوقت: 2026-08-17T10:00:00+03:00 إلى 2026-08-17T11:00:00+03:00",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time: 2026-08-17T10:00+03:00 to 2026-08-17T11:00+03:00",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.909Z"
+    },
+    "93ccdde14b2ae1eacd6516b4b7053805b0b2ba10": {
+      "source": "دور المواصفات القياسية في دعم عمليات التعقيم والتغليف ووضع المعلومات التعريفية للمصانع المحلية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The role of standard specifications in supporting sterilization, packaging and the development of tariff information for local factories",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.909Z"
+    },
+    "ff58527e917aa6f8db35192ca2ddff36d500665e": {
+      "source": "دور المواصفات القياسية في دعم عمليات التعقيم والتغليف ووضع المعلومات التعريفية للمصانع المحلية. طريقة الحضور: عن بعد. نوع الورشة: عامة. لغة العرض: العربية. المصدر الرسمي: الهيئة العامة للغذاء والدواء.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The role of standard specifications in supporting sterilization, packaging and the development of tariff information for local factories. Method of attendance: remotely. Type of workshop: general. Arabic Official source: the Saudi Food and Drug Authority (SFDA).",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "86e70d465e0c2ecc46a0b16068663b31d349182e": {
+      "source": "دور المواصفات القياسية في دعم عمليات التعقيم والتغليف ووضع المعلومات التعريفية للمصانع المحلية. طريقة الحضور: عن بعد. نوع الورشة: عامة. لغة العرض: العربية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The role of standard specifications in supporting sterilization, packaging and the development of tariff information for local factories. Method of attendance: remotely. Type of workshop: general. Arabic",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "115937c6b7f489762be1141ccad22624b9f0d4c7": {
+      "source": "2026-08-19T10:00:00+03:00 إلى 2026-08-19T11:00:00+03:00",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2026-08-19T10:00+03:00 to 2026-08-19T11:00+03:00",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "9d3c20d934776fffca63d9c5b827d94ff8b30a21": {
+      "source": "الوقت: 2026-08-19T10:00:00+03:00 إلى 2026-08-19T11:00:00+03:00",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time: 2026-08-19T10:00+03:00 to 2026-08-19T11:00+03:00",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
     },
     "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
       "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
@@ -59368,7 +59488,7 @@
       "target_lang": "en",
       "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
       "method": "argos-mt",
-      "translated_at": "2026-08-01T20:08:09.695Z"
+      "translated_at": "2026-08-02T09:14:38.910Z"
     },
     "5c6a9ff87c6cdb115664bc8a097d521eadf27f9f": {
       "source": "مركز الرياض للمعارض والمؤتمرات في ملهم",
@@ -59376,7 +59496,567 @@
       "target_lang": "en",
       "text": "The Riyadh International Convention Exhibition Center in Inspiration",
       "method": "argos-mt",
-      "translated_at": "2026-08-01T20:08:09.695Z"
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "8ca121a79af8eeee52dcc71284c25dbb0737cab8": {
+      "source": "معسكر تطوير حلول الذكاء الاصطناعي",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Camp for the development of artificial intelligence solutions",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "bbef08654db416fa6842e81f3c7e79fe1d6ecc14": {
+      "source": "يُعد هذا المعسكر برنامجًا تدريبيًا مكثفًا في الذكاء الاصطناعي التطبيقي (Applied AI) يهدف إلى تأهيل المشاركين لتطوير حلول ذكية تعالج تحديات واقعية في مختلف القطاعات. المصدر الرسمي: أكاديمية طويق.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The camp is an intensive training programme in applied artificial intelligence (Applied AI) aimed at equipping participants to develop smart solutions that address realistic challenges across sectors. Official source: Tuwaiq Academy.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "ed0bfbe195e4383cc014a5bf880a8ca33023f1f8": {
+      "source": "يُعد هذا المعسكر برنامجًا تدريبيًا مكثفًا في الذكاء الاصطناعي التطبيقي (Applied AI) يهدف إلى تأهيل المشاركين لتطوير حلول ذكية تعالج تحديات واقعية في مختلف القطاعات. يعتمد المعسكر على التعلم القائم على المشاريع، حيث يمر المتدربون بمراحل تطوير أنظمة الذكاء الاصطناعي بدءًا من معالجة البيانات وبناء النماذج وصولًا إلى نشرها. كما يغطي تقنيات حديثة مثل Machine Learning وDeep Learning وLLMs وGenerative AI مع تطبيقها على بيانات ومشاريع واقعية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The camp is an intensive training programme in applied artificial intelligence (Applied AI) aimed at equipping participants to develop smart solutions that address realistic challenges across sectors. The camp relies on project-based learning, with trainees passing through the development stages of artificial intelligence systems from data processing and modelling to dissemination. It also covers modern techniques such as Machine Learning, Deep Learning,LLMs and Generative AI, applying them to realistic data and projects.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "52bc37386337f3d6e36185fca2b2bb448e2c4e36": {
+      "source": "تمكين المتدربين من تصميم وتطوير حلول ذكاء اصطناعي تطبيقية لمعالجة مشكلات واقعية في مختلف القطاعات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Enable trainees to design and develop applied artificial intelligence solutions to address realistic problems in different sectors.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "a5c8c7d9dcf3074d8bd417c83a16f9783b4c0ac3": {
+      "source": "تنمية مهارات المشاركين في خوارزميات التعلم الآلي والتعلم العميق وتطبيقها على بيانات حقيقية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Develop the skills of participants in automated learning and deep learning algorithms and apply them to real data.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "35c8e591a2264e72ce61e2029af4fcecb6bba753": {
+      "source": "تأهيل المتدربين لبناء أنظمة ذكاء اصطناعي متكاملة تشمل النمذجة، تطوير واجهات APIs، ونشر النماذج.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Trainers are trained to build integrated industrial intelligence systems that include modelling, develop APIs and disseminate models.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "e9d4863223c0aa12540bcea7793a90447cd060fd": {
+      "source": "إكساب المتدربين القدرة على استخدام التقنيات الحديثة مثل LLMs وGenerative AI وAgentic AI لتطوير تطبيقات ذكية متقدمة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The ability of trainees to use modern techniques such as LLMs, Generative AI and Agentic AI to develop advanced smart applications.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "76efa7802d4805be49bc16de280a08c72641559d": {
+      "source": "تطوير مهارات تحليل البيانات المعقدة واستخراج المعرفة منها لدعم اتخاذ القرار.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Development of complex data analysis and learning skills to support decision-making.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "50bda6dacb7cd646a978f58a23ff6a9ffdb0ad60": {
+      "source": "إعداد كوادر متخصصة قادرة على تطوير تطبيقات الذكاء الاصطناعي في مجالات مثل المدن الذكية، الزراعة، الطاقة، الصناعة، والنقل الذكي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Develop specialized cadres capable of developing artificial intelligence applications in areas such as smart cities, agriculture, energy, industry and smart transport.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "674159bf00f2a54d4b99e7aa573cab9534a7b1d2": {
+      "source": "تعزيز مهارات العمل الجماعي ضمن فرق تقنية متعددة التخصصات لتنفيذ مشاريع ذكاء اصطناعي حقيقية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Strengthen teamwork skills within multidisciplinary technical teams to implement genuine industrial intelligence projects.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "3766868660803018e748639470b4f120a78913e7": {
+      "source": "بناء محفظة مشاريع تطبيقية تعكس قدرات المتدرب وتدعم فرصه المهنية في سوق العمل.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Construction of an application project portfolio that reflects the capacity of the trainee and supports his professional opportunities in the labour market.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "e446a35d90bf6a978e1db6712ab5326577475df5": {
+      "source": "تأهيل الخريجين للعمل كـ مهندسي ذكاء اصطناعي أو باحثين في الذكاء الاصطناعي في جهات حكومية وخاصة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Rehabilitation of graduates to work as artificial intelligence engineers or synthetic intelligence researchers in government and private entities.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "a3ed0af205d10a9fa0ebf5c36faccbb9d652c9b1": {
+      "source": "دعم الاستعداد لسوق العمل وتعزيز ثقافة الابتكار والتعاون التقني.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Support labour market readiness and foster a culture of innovation and technical cooperation.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "a70976bad05f6aa323c3eaf91e4853d7dfb9a838": {
+      "source": "معسكر متخصص في الذكاء الاصطناعي التطبيقي يركز على تطوير حلول ذكية لمعالجة احتياجات واقعية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "An operational artificial intelligence camp focuses on developing smart solutions to address realistic needs.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "9b97068c70cdc9618d0c3c0a28fe805e64c249d7": {
+      "source": "تغطية شاملة ومتقدمة لمجالات الذكاء الاصطناعي مثل: Machine Learning، Deep Learning، Computer Vision، NLP، Large Language Models، Generative AI، Agentic AI، AI Systems Engineering، MLOps، Embodied AI.",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "○ عدم وجود نماذج لغوية واسعة النطاق، وتقنية الحفظ، وهندسة النظم الإيكولوجية، وهندسة النظم، والتعلم العميق، ورؤية الحاسوب، وشبكة اللغات الوطنية، ونماذج اللغات الرفيعة، ونموذج العرف النزيه، ووكالة الاستخبارات الأمريكية، ووكالة النظم الهندية، وشركة MLOps، ومؤسسة AI.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "5d7aee98301ff6eb1a583cf833a57ce8624e5c21": {
+      "source": "تطبيق التقنيات على بيانات حقيقية ومشاريع عملية في مجالات متعددة مثل: الذكاء الاصطناعي المكاني (Spatial AI). الذكاء الاصطناعي المجسد (Embodied AI). الذكاء الاصطناعي الفضائي وتحليل الصور الجوية والفضائية. تطبيقات الذكاء الاصطناعي للمدن الذكية (Smart Cities AI). الطاقة والزراعة الدقيقة والصناعة والنقل الذكي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Application of techniques to real data and practical projects in multiple areas such as Spatial AI. Synthetic intelligence (Embodied AI). Satellite intelligence and aerial and space image analysis. Smart Cities AI. Energy, microculture, industry and smart transport.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "66eeac5c498e2047025e1a108ed49154693c469f": {
+      "source": "تنفيذ العديد من المشاريع التطبيقية الواقعية خلال المعسكر.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Implementation of many realistic demonstration projects during the camp.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "dee20527ac69c2f4c3f597793f88a9c798bd9108": {
+      "source": "العمل ضمن فرق تقنية لتنفيذ المشاريع والتحديات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Work within technical teams to implement projects and challenges.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "cc1cc200bc852e90e9ac2358f4fe589d04e8c957": {
+      "source": "ترشيح المتميزين للمشاركة في ملتقيات التوظيف لتعزيز فرصهم المهنية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Candidacy of privileged persons to participate in recruitment forums to enhance their professional opportunities.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "95dc8653d4031047250e4977b26b8a816ea003dc": {
+      "source": "إشراف وتوجيه مستمر من خبراء ومتخصصين في الذكاء الاصطناعي مع تقديم ملاحظات تفصيلية على المشاريع.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Ongoing supervision and guidance from experts and specialists in artificial intelligence, with detailed observations on projects.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "031673cc2c7446f20f3fec9ff56f737057e33e9a": {
+      "source": "ورش عمل تفاعلية وحلقات نقاش مع مختصين في مجال الذكاء الاصطناعي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Interactive workshops and panel discussions with artificial intelligence specialists.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "074f42600965f9ab855a9e9b5d3fc0566f024e74": {
+      "source": "تنفيذ مشروع نهائي متكامل يسهم في بناء محفظة أعمال احترافية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Implementation of an integrated final project that contributes to the construction of a professional portfolio.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "5f60c274fbb4e73ae05377a2b6dadbe6d6aba774": {
+      "source": "توفير موارد تعليمية مستمرة تشمل تسجيلات الجلسات، قوالب الكود، والأدلة المرجعية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Provision of continuing educational resources, including meeting records, codes and reference manuals.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "ae9053f2e1eba2221945db77c3fabdfc51b42f95": {
+      "source": "بناء شبكة علاقات مهنية مع مجتمع الخبراء والممارسين في مجال الذكاء الاصطناعي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Building a network of professional relationships with the community of experts and practitioners in the field of artificial intelligence.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "102a6f2374095578cad00e7ead8d6cf0f905f627": {
+      "source": "إحضار جهاز كمبيوتر محمول (لابتوب) شخصي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Get a laptop.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "2939d91b9b46e926cac1601c38c7ec7240572be6": {
+      "source": "إتقان لغة Python بمستوى جيد.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Prove Python at a good level.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "e746c249cdb18d5c8db789f78e412b8db37ab59d": {
+      "source": "معرفة جيدة بأساسيات الإحصاء والجبر الخطي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Good knowledge of the principles of statistics and written reparation.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "b0624cfbb099e872a6dbe2af6c37ee36f91a4490": {
+      "source": "الإلمام بأساسيات قواعد البيانات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Knowledge of databases.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "327080fecdae047ba40f25c93b8337cfe69d79cd": {
+      "source": "معرفة بأساسيات علوم البيانات وطرق التعامل مع البيانات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Knowledge of the basics of data science and methods of dealing with data.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "2da4c623e22321c7d5e9ee919f9277f47692f6d4": {
+      "source": "معرفة أساسية باستخدام Git / GitHub والعمل ضمن فرق برمجية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Basic knowledge using Gitt / GitHub and working in programming teams.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "73210cc63923f86f9f433d18d3c48e9e06437e61": {
+      "source": "مستوى جيد جدًا في اللغة الإنجليزية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Very good in English.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "cbac7b07bb4af05adef1db3d93cd2330494244bd": {
+      "source": "الالتزام الكامل بالحضور وتنفيذ المهام اليومية والأسبوعية طوال فترة المعسكر.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Full commitment to attend and carry out daily and weekly tasks throughout the camp.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "fb5a55cac41c1919470d882bab2f304e33b4f68c": {
+      "source": "الحصول على درجة البكالوريوس في أحد التخصصات التقنية أو ذات الصلة مثل: علوم الحاسب، علوم البيانات، الذكاء الاصطناعي، الإحصاء، أو نظم المعلومات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Access to bachelor &apos; s degree in a technical or related discipline such as: computer science, data science, artificial intelligence, statistics or information systems.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "e3f657926bb24c0a892d7a3a1940648eda0b378b": {
+      "source": "امتلاك الدافعية للتعلم والمشاركة الفعالة طوال مدة المعسكر.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Learning and active participation are motivated throughout the camp.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "896078e47db671732a0f5dd098b233072f0c2f22": {
+      "source": "معسكر الدرونز عالية الأداء",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Drones camp is high-performing.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "b769a0dd87ea60753d04310336f63b04987900bf": {
+      "source": "معسكر تدريبي يهدف إلى تأهيل المشاركين المبتدئين والهواة إلى مستوى متقدم ومتخصص في الدرونز من نوع ال FPV ، يجمع المعسكر بين التعليم النظري والتطبيق العملي عبر المحاكاة والتدريبات الواقعية وإداراة سباقات الدرونز الرياضية، مع التركيز على بن... المصدر الرسمي: أكاديمية طويق.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A training camp aimed at rehabilitating junior and hobby participants to an advanced and specialized level in the FPV Drones, combining theoretical education with practical application through simulation, realistic training and the management of the Drones sports, with a focus on Ben... Official source: Tuwaiq Academy.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "5d9d0e09ffe553b6170373a902d7f9d6e7543cb2": {
+      "source": "معسكر تدريبي يهدف إلى تأهيل المشاركين المبتدئين والهواة إلى مستوى متقدم ومتخصص في الدرونز من نوع ال FPV ، يجمع المعسكر بين التعليم النظري والتطبيق العملي عبر المحاكاة والتدريبات الواقعية وإداراة سباقات الدرونز الرياضية، مع التركيز على بناء الدرونز، إعدادها وضبطها، واكتساب مهارات الطيران الاحترافية، وإتقان تقنيات اللحام والأدوات الكهربائية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A training camp aimed at rehabilitating junior and hobby participants to an advanced and specialized level in the FPV Drones, combining theoretical education with practical application through simulation, realistic training and the management of the Drones Sports, with a focus on building the Drones, preparing and seizing them, acquiring professional aviation skills and mastering welding and electrical tools.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "d730bf198f78a48caab0aff5dbbc2e50f5ceb322": {
+      "source": "فهم مكونات درون FPV، وتجميعها، وصيانتها الأساسية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "They are the components of Drun FPV, their assembly and basic maintenance.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "95e17db5189080f03b0fe31769e8d7dbc7c658ed": {
+      "source": "إعداد وضبط الدرونز باستخدام برنامج Betaflight.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Prepare and control Drones using Betaflight.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "3fcb343552ab632e511d14d7a822b062b0a50986": {
+      "source": "اكتساب مهارات الطيران العملي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Acquisition of practical aviation skills.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "f0a0051484d50a6dd17d4421778962d7824e17d1": {
+      "source": "اكتساب مهارة إدارة السباقات الرياضية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Acquisition of sports management skills.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "75011c8689d324b6f15807ec85fdc1cd05805f1e": {
+      "source": "إتقان تقنيات اللحام والأدوات الكهربائية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Techniques and electrical appliances.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "f2dbe248c358a7a04b68719e3364fc288272db51": {
+      "source": "يتم تقديم المعسكر أو البرنامج باللغة العربية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The camp or programme is provided in Arabic.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "4239b22824f8e64e7e9599c78bc4bba62bd1522e": {
+      "source": "أنشطة ومشاريع تفاعلية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Interactive activities and projects.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "f5e65bbc711b46a4614794853a0bc34fa77846fa": {
+      "source": "شهادات حضور مقدمة من أكاديمية طويق.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Attendance certificates from Tuwaiq Academy.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "0b3bfe01a3d9269ee8b2872193338c887d2cccb4": {
+      "source": "تدريب عملي على بناء وتشغيل الدرونز.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Practical training on the construction and operation of drones.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "c38a2d65eb1cbec1e260f686b9adefcb21faf006": {
+      "source": "تدريب عملي على تلحيم الإلكترونيات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Practical training on electronic preservation.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "abb597180039e0b0edf7a0cde61956368c0b5396": {
+      "source": "تدريب عملية على إدارة سباقات الدرونز واستخدام التقنيات البرمجية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Practical training in the management of Drones races and the use of software techniques.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "346aa86ffbbc6b354e0ea251b9479672c5fd2928": {
+      "source": "معسكر الاستراتيجية في عصر الذكاء الاصطناعي والتحول الرقمي",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Strategic camp in the age of artificial intelligence and digital transformation",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "bc48723c4aaeef035eb44c8b2ae27875b1eb0455": {
+      "source": "يهدف هذا المعسكر إلى تمكين الرؤساء التنفيذيّين والمدراء، في تطوير استراتيجيات مبتكرة للمنظمات لمواجهة تحديات عصر الذكاء الاصطناعي والتحوُّل الرقمي، بالإضافة إلى فهم أبرز تأثيرات التقنيات الرقمية مثل الذكاء الاصطناعي؛ على سلاسل القيمة وال... المصدر الرسمي: أكاديمية طويق.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The objective of this camp is to enable executive heads and managers to develop innovative organizational strategies to meet the challenges of the age of artificial intelligence and digital transformation, as well as to understand the most significant impacts of digital techniques such as artificial intelligence on value chains and... Official source: Tuwaiq Academy.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "1689e60731de590e6cbb9480455137ffbe043ac9": {
+      "source": "يهدف هذا المعسكر إلى تمكين الرؤساء التنفيذيّين والمدراء، في تطوير استراتيجيات مبتكرة للمنظمات لمواجهة تحديات عصر الذكاء الاصطناعي والتحوُّل الرقمي، بالإضافة إلى فهم أبرز تأثيرات التقنيات الرقمية مثل الذكاء الاصطناعي؛ على سلاسل القيمة والسباق في خدمة العملاء سواءً في الجهات الحكومية أو الشركات أو حتى الجهات غير الربحية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The aim of this camp is to enable executive heads and managers to develop innovative organizational strategies to meet the challenges of the age of artificial intelligence and digital transformation, as well as to understand the most significant impacts of digital techniques such as artificial intelligence; on value chains and races in the service of clients, whether in government, corporate or non-profit.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "005e9158cc6e7a04b24fa2cb12b56ad5c5c61a38": {
+      "source": "تعزيز المهارات القيادية الرقمية لدى القيادات الإدارية سواءً في الجهات الحكومية أو الشركات أو الجهات غير الربحية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Strengthen the digital leadership skills of administrative leaders, both in government, corporate and non-profit.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "e30968ecc24c80f56400cbe375e3d41794294c03": {
+      "source": "تحويل التهديدات إلى فرص من خلال تعلم كيفية تحويل التحديات الرقمية إلى فرص لتحقيق النمو وتعزيز التنافسية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Conversion of threats to opportunities by learning how to transform digital challenges into growth opportunities and enhance competitiveness.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "71e174fb1387141f71eabb7a2ec84f173d3d240a": {
+      "source": "تطوير استراتيجيات قائمة على الذكاء الاصطناعي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Develop strategies based on artificial intelligence.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "76d89d8a4e65eb03721fdfd3e5c5ab4422365eb0": {
+      "source": "تحسين كفاءة المنظمة من خلال الكفاءة التشغيلية عبر استخدام الذكاء الاصطناعي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Improving the efficiency of the Organization through operational efficiency through the use of artificial intelligence.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "ed0c399f797fec0a47c21f4d35ad240928eed383": {
+      "source": "تعزيز مرونة المنظمة واستجابتها السريعة لأي تغيرات رقمية أو أعمال",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Enhancing the Organization &apos; s flexibility and rapid response to any digital or business changes",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "6b093032327c28c425c0abf401b875f1919a8ea5": {
+      "source": "يتم تقديم المعكسر بشكل حضوري خلال أول و أخر ثلاثة أيام، وبقية أيام المعسكر تقدم بشكل افتراضي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The fracture is present in the first and last three days, and the rest of the camp days are hypothetical.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "6e817109198bb1a6e2b66098cfe714e90ba23f2c": {
+      "source": "شهادة احترافية معتمدة في التحول الرقمي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Certificate of professionalism approved in digital transformation.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "6e2a3634395490e52e57ad7de35440706fc5cb20": {
+      "source": "فهم أعمق للتقنيات الرقمية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A deeper understanding of digital techniques.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "39113dc469251fa7e5bbb28acaea2d4a4e22de63": {
+      "source": "تطوير المهارات القيادية في المجالات الرقمية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Development of leadership skills in digital areas.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "a770505a06fa13c255af51613eb3496d99e1f348": {
+      "source": "التطبيق العملي المباشر.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Direct practical application.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "059961401d5b106301a33ced606e6860b57a35d9": {
+      "source": "شبكة تواصل مع المحترفين في مجال التحول الرقمي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Network with professionals in digital transformation.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "6461b5f70b05b7d47b5a271589a9ab572286d835": {
+      "source": "تحسين الكفاءة الاستراتيجية للمنظمات التي يعمل بها المتدرب.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Improve the strategic efficiency of the organizations in which the trainee works.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "e6461f42ef763d45801589ac51b1a8464ace2f62": {
+      "source": "خبرة سابقة في إدارة الأعمال أو قيادة الفرق لفترة من 3 وحتى 5 سنوات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Previous business management experience or team leadership for 3 to 5 years.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "9eb1021efe09ef8fea77f8bc5a77884c0da5228e": {
+      "source": "معرفة عامة بأساسيات التقنيات الرقمية أو اهتمام بتطبيقها بشكل عملي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "General knowledge of the fundamentals of digital techniques or interest in their practical application.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "bf44a31d8c05de8ddafa6ddc7b236b35c7d1e445": {
+      "source": "القدرة على العمل في بيئات سريعة التغير.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Capacity to operate in rapidly changing environments.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "fbb374c29b106a28b59a7b34557f51072f10438e": {
+      "source": "خلفية مهنية في أحد القطاعات المتأثرة بالتحول الرقمي ، يفضل أن يكون مشارك في ملف التحول الرقمي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Professional background in one of the sectors affected by digital transformation, preferably involved in the digital switching file.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "d2da3a9ce4abc012f0d53f53fec56611cd015ee5": {
+      "source": "مستوى متقدم في اللغة الانجليزية خصوصاً في مصطلحات التحول الرقمي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Advanced English language, especially in digital switching terms.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "6201579a8d31c42e110aef866f7d2c69e2cf54ed": {
+      "source": "التفرغ في الفترة المسائية للتدريب بشكل تام.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Full-time training.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
+    },
+    "d1377fa649645fed28597db9190525d3de824199": {
+      "source": "سداد رسوم المعسكر.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Camp fee.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T09:14:38.910Z"
     }
   }
 }

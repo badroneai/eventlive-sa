@@ -1,8 +1,8 @@
 # Tuwaiq Program Enrichment Report
 
-- generated_at: 2026-08-01T20:03:51.472Z
-- targets: 32
-- enriched: 31
+- generated_at: 2026-08-02T09:08:43.696Z
+- targets: 35
+- enriched: 34
 - failed: 1
 
 ## Enriched
@@ -36,7 +36,10 @@
 - معسكر التقنيات الناشئة والعوالم الافتراضية (vxpqBnPg) - goals=3, features=12, requirements=5
 - معسكر تصميم وتصنيع الدوائر الإلكترونية (Qkx3OxvG) - goals=13, features=13, requirements=7
 - معسكر الذكاء الاصطناعي للقادة (9L6Ey6VA) - goals=6, features=7, requirements=4
+- معسكر تطوير حلول الذكاء الاصطناعي (bwWpE2KO) - goals=10, features=11, requirements=12
 - معسكر هندسة الحوسبة السحابية باستخدام Google Cloud (v9JwMlMo) - goals=10, features=6, requirements=7
+- معسكر الدرونز عالية الأداء (YxpVjpZg) - goals=5, features=6, requirements=4
+- معسكر الاستراتيجية في عصر الذكاء الاصطناعي والتحول الرقمي (EBx8WPWD) - goals=5, features=7, requirements=8
 - معسكر طويق السيبراني (oA2ryDzB) - goals=3, features=3, requirements=5
 
 ## Failed

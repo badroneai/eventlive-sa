@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-01T20:03:49.051Z",
+  "published_at": "2026-08-02T09:08:41.250Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 562,
+  "candidates_seen": 566,
   "totals": {
-    "candidates_seen": 562,
-    "published": 6,
-    "linked_existing": 518,
+    "candidates_seen": 566,
+    "published": 12,
+    "linked_existing": 516,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 524
+    "reconciled": 528
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -193,6 +193,36 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
+    },
+    {
+      "candidate_id": "candidate-sfda-events-مسارات-تصنيع-الأجهزة-والمستلزمات-الطبية-20260812-97c09c47",
+      "event_id": "event-مسارات-تصنيع-الأجهزة-والمستلزمات-الطبية",
+      "title": "مسارات تصنيع الأجهزة والمستلزمات الطبية"
+    },
+    {
+      "candidate_id": "candidate-sfda-events-آلية-تقديم-طلبات-الحصول-على-ترخيص-خدمات-توكيد-الجودة-والقياسات-الاشعاعية-20260817-47d2fd92",
+      "event_id": "event-آلية-تقديم-طلبات-الحصول-على-ترخيص-خدمات-توكيد-الجودة-والقياسات-الاشعاعية",
+      "title": "آلية تقديم طلبات الحصول على ترخيص خدمات توكيد الجودة والقياسات الاشعاعية"
+    },
+    {
+      "candidate_id": "candidate-sfda-events-دور-المواصفات-القياسية-في-دعم-عمليات-التعقيم-والتغليف-ووضع-المعلومات-الت-20260819-dd16cb51",
+      "event_id": "event-دور-المواصفات-القياسية-في-دعم-عمليات-التعقيم-والتغليف-ووضع-المعلومات-الت",
+      "title": "دور المواصفات القياسية في دعم عمليات التعقيم والتغليف ووضع المعلومات التعريفية للمصانع المحلية"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-حلول-الذكاء-الاصطناعي-20261004-dbd53610",
+      "event_id": "event-معسكر-تطوير-حلول-الذكاء-الاصطناعي",
+      "title": "معسكر تطوير حلول الذكاء الاصطناعي"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-الدرونز-عالية-الأداء-20261004-c428ead9",
+      "event_id": "event-معسكر-الدرونز-عالية-الأداء",
+      "title": "معسكر الدرونز عالية الأداء"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي-20261005-c1f05c69",
+      "event_id": "event-معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي",
+      "title": "معسكر الاستراتيجية في عصر الذكاء الاصطناعي والتحول الرقمي"
     }
   ],
   "linked_existing": [
@@ -371,12 +401,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-discover-aseer-events-alliwan-farm-20260518-c1e28b0e",
-      "event_id": "event-alliwan-farm",
-      "title": "AlLiwan Farm",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-hayy-jameel-events-hayy-arts-red-wind-coral-worlds-20260520-aa24009e",
       "event_id": "event-hayy-arts-red-wind-coral-worlds",
       "title": "Hayy Arts | Red Wind, Coral Worlds",
@@ -395,15 +419,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-discover-aseer-events-muftaha-district-20260521-79f730f2",
-      "event_id": "event-muftaha-district",
-      "title": "Muftaha District",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-كايف-المزرعة-20260524-4a38d19e",
       "event_id": "event-كايف-المزرعة",
       "title": "كايف المزرعة",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-discover-aseer-events-muftaha-district-20260524-79f730f2",
+      "event_id": "event-muftaha-district",
+      "title": "Muftaha District",
       "reason": "already linked to catalog event"
     },
     {
@@ -575,12 +599,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-discover-aseer-events-the-rural-village-art-street-20260624-ecae7242",
-      "event_id": "event-rural-village-art-street",
-      "title": "The Rural Village- Art Street",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-الحفلات-الغنائية-20260625-4a38d19e",
       "event_id": "event-الحفلات-الغنائية",
       "title": "الحفلات الغنائية",
@@ -617,12 +635,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-discover-aseer-events-al-yanfa-village-20260625-5be0c4c3",
-      "event_id": "event-al-yanfa-village",
-      "title": "Al Yanfa Village",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-discover-aseer-events-asib-oasis-20260625-5ce3ff56",
       "event_id": "event-asib-oasis",
       "title": "Asib Oasis",
@@ -635,9 +647,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-discover-aseer-events-abo-noghta-historic-castles-historic-tabab-20260625-158faa74",
-      "event_id": "event-abo-noghta-historic-castles-historic-tabab",
-      "title": "\"Abo Noghta Historic Castles - Historic Tabab \"",
+      "candidate_id": "candidate-discover-aseer-events-the-rural-village-art-street-20260625-ecae7242",
+      "event_id": "event-rural-village-art-street",
+      "title": "The Rural Village- Art Street",
       "reason": "already linked to catalog event"
     },
     {
@@ -650,6 +662,12 @@
       "candidate_id": "candidate-visit-saudi-seasons-europe-village-art-street-20260625-175f652b",
       "event_id": "event-europe-village-art-street",
       "title": "Europe Village- Art Street",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-discover-aseer-events-world-cup-fan-zone-2026-20260626-2a3cab19",
+      "event_id": "event-منطقة-مشجعي-كأس-العالم-2026",
+      "title": "World Cup Fan Zone 2026",
       "reason": "already linked to catalog event"
     },
     {
@@ -935,9 +953,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-discover-aseer-events-nafas-20260709-e5d0fb05",
-      "event_id": "event-nafas",
-      "title": "Nafas",
+      "candidate_id": "candidate-discover-aseer-events-abo-noghta-historic-castles-historic-tabab-20260709-158faa74",
+      "event_id": "event-abo-noghta-historic-castles-historic-tabab",
+      "title": "\"Abo Noghta Historic Castles - Historic Tabab \"",
       "reason": "already linked to catalog event"
     },
     {
@@ -950,12 +968,6 @@
       "candidate_id": "candidate-discover-aseer-events-bioni-al-sharaf-20260711-62339a98",
       "event_id": "event-bioni-al-sharaf",
       "title": "Bioni Al sharaf",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-discover-aseer-events-world-cup-fan-zone-2026-20260711-2a3cab19",
-      "event_id": "event-منطقة-مشجعي-كأس-العالم-2026",
-      "title": "World Cup Fan Zone 2026",
       "reason": "already linked to catalog event"
     },
     {
@@ -974,6 +986,12 @@
       "candidate_id": "candidate-visit-saudi-seasons-saif-2026-20260712-3cc21727",
       "event_id": "event-saif-2026",
       "title": "SAIF 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-discover-aseer-events-alliwan-farm-20260712-c1e28b0e",
+      "event_id": "event-alliwan-farm",
+      "title": "AlLiwan Farm",
       "reason": "already linked to catalog event"
     },
     {
@@ -1025,6 +1043,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-discover-aseer-events-nafas-20260724-e5d0fb05",
+      "event_id": "event-nafas",
+      "title": "Nafas",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-discover-aseer-events-al-yanfa-village-20260724-5be0c4c3",
+      "event_id": "event-al-yanfa-village",
+      "title": "Al Yanfa Village",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-discover-aseer-events-perfumes-week-20260725-1af13759",
       "event_id": "event-perfumes-week",
       "title": "Perfumes week",
@@ -1055,45 +1085,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-أوركسترا-harry-potter-20260728-4a38d19e",
-      "event_id": "event-أوركسترا-harry-potter",
-      "title": "أوركسترا Harry Potter",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-تجرييبية-20260729-4b181285",
       "event_id": "event-تجرييبية",
       "title": "تجرييبية",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-صيف-وِرث-2026-20260730-4a38d19e",
-      "event_id": "event-صيف-وِرث-2026",
-      "title": "صيف وِرث 2026",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-seasons-tour-of-al-baha-20260730-7b170410",
       "event_id": "event-tour-of-al-baha",
       "title": "Tour of Al Baha",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-discover-aseer-events-musical-concerts-20260801-169733ac",
-      "event_id": "event-musical-concerts",
-      "title": "Musical concerts",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260801-e0a239ef",
-      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
-      "title": "Bedayat: Beginnings of Saudi Art Movement",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260801-cc43c2bd",
-      "event_id": "event-echoes-of-the-familiar",
-      "title": "Echoes of the Familiar",
       "reason": "already linked to catalog event"
     },
     {
@@ -1196,6 +1196,18 @@
       "candidate_id": "candidate-ithra-events-tinkering-stations-20260803-5a2c4c0e",
       "event_id": "event-tinkering-stations",
       "title": "Tinkering Stations",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260803-e0a239ef",
+      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
+      "title": "Bedayat: Beginnings of Saudi Art Movement",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260803-cc43c2bd",
+      "event_id": "event-echoes-of-the-familiar",
+      "title": "Echoes of the Familiar",
       "reason": "already linked to catalog event"
     },
     {
@@ -1400,6 +1412,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-حسين-محب-ايف-في-الرياض-20260807-4a38d19e",
       "event_id": "event-hussain-moheb-live-in-riyadh",
       "title": "حسين محب ايف في الرياض",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-discover-aseer-events-musical-concerts-20260807-169733ac",
+      "event_id": "event-musical-concerts",
+      "title": "Musical concerts",
       "reason": "already linked to catalog event"
     },
     {
@@ -1652,12 +1670,6 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-تجربة-المستخدم-ux-ui-20260823-c81fc88f",
       "event_id": "event-معسكر-تصميم-تجربة-المستخدم-ux-ui",
       "title": "معسكر تصميم تجربة المستخدم UX\\UI",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud-20260823-8790e021",
-      "event_id": "event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud",
-      "title": "معسكر هندسة الحوسبة السحابية باستخدام Google Cloud",
       "reason": "already linked to catalog event"
     },
     {
@@ -2240,6 +2252,12 @@
       "candidate_id": "candidate-misk-hub-programs-samsung-innovation-campus-ai-program-20261004-81bc0e25",
       "event_id": "event-samsung-innovation-campus-ai-program",
       "title": "Samsung Innovation Campus AI Program",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud-20261004-8790e021",
+      "event_id": "event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud",
+      "title": "معسكر هندسة الحوسبة السحابية باستخدام Google Cloud",
       "reason": "already linked to catalog event"
     },
     {

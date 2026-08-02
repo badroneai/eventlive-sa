@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-01T20:03:51.472Z",
+  "generated_at": "2026-08-02T09:08:43.696Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 32,
-    "enriched": 31,
+    "targets": 35,
+    "enriched": 34,
     "failed": 1
   },
   "enriched": [
@@ -240,12 +240,36 @@
       "requirements": 4
     },
     {
+      "id": "event-معسكر-تطوير-حلول-الذكاء-الاصطناعي",
+      "title": "معسكر تطوير حلول الذكاء الاصطناعي",
+      "slug": "bwWpE2KO",
+      "goals": 10,
+      "features": 11,
+      "requirements": 12
+    },
+    {
       "id": "event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud",
       "title": "معسكر هندسة الحوسبة السحابية باستخدام Google Cloud",
       "slug": "v9JwMlMo",
       "goals": 10,
       "features": 6,
       "requirements": 7
+    },
+    {
+      "id": "event-معسكر-الدرونز-عالية-الأداء",
+      "title": "معسكر الدرونز عالية الأداء",
+      "slug": "YxpVjpZg",
+      "goals": 5,
+      "features": 6,
+      "requirements": 4
+    },
+    {
+      "id": "event-معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي",
+      "title": "معسكر الاستراتيجية في عصر الذكاء الاصطناعي والتحول الرقمي",
+      "slug": "EBx8WPWD",
+      "goals": 5,
+      "features": 7,
+      "requirements": 8
     },
     {
       "id": "event-معسكر-طويق-السيبراني",
