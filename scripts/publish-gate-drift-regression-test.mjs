@@ -199,9 +199,54 @@ for (const [auditName, testName] of REQUIRED_PAIRS) {
   );
 }
 
-// --- 6. Production-pipeline health visibility (Invariant A): source-sync.yml
+// --- 6. A non-blocking battery must still end the RUN red, not just annotate
+// it. PM correction 2026-08-02: continue-on-error plus an ::error:: (section
+// 5 above) still lets GitHub record the job as SUCCESS — a green run with a
+// buried annotation is exactly the silent-failure mode this whole fix
+// exists to close ("nobody opens a run that looks green"). Generic across
+// any current or future workflow, not hardcoded to source-sync.yml by name:
+// any workflow that (a) deploys to Pages, (b) runs the shared battery, and
+// (c) runs it non-blocking (continue-on-error: true on that step) MUST have
+// a later step that exits 1 when that step's outcome was not success. A
+// workflow that runs the battery BLOCKING (no continue-on-error, e.g.
+// deploy.yml) already satisfies this by construction — the failing step
+// itself fails the job — so it is exempt from this specific check. ---
+
+for (const file of workflowFiles) {
+  const content = readWorkflow(file);
+  const deploysToPages = /uses:\s*actions\/deploy-pages@/.test(content);
+  if (!deploysToPages) continue;
+  if (!workflowRunsScript(content, 'ci:publish-quality-gates')) continue; // caught by section 1 already
+
+  const idx = content.indexOf('npm run ci:publish-quality-gates');
+  if (idx === -1) continue; // reached only via a battery-of-batteries not modeled today; nothing does this yet
+  const stepStart = content.lastIndexOf('- name:', idx);
+  const nextStepStart = content.indexOf('\n      - name:', idx);
+  const stepText = content.slice(stepStart, nextStepStart === -1 ? content.length : nextStepStart);
+  const isNonBlocking = /continue-on-error:\s*true/.test(stepText);
+  if (!isNonBlocking) continue; // blocking battery step already fails the job/run by construction
+
+  const idMatch = stepText.match(/id:\s*(\S+)/);
+  assert.ok(idMatch, `${file}: the non-blocking publish-quality-gates battery step must have an 'id:' so a later step can check its outcome`);
+  const stepId = idMatch[1];
+
+  const afterBattery = content.slice(idx);
+  const finalFailPattern = new RegExp(`steps\\.${stepId}\\.outcome[^\\n]*!=[^\\n]*success[\\s\\S]{0,400}?exit 1`);
+  assert.match(
+    afterBattery,
+    finalFailPattern,
+    `${file}: runs the publish-quality battery non-blocking but has no later step that fails the RUN (exit 1) when steps.${stepId}.outcome != 'success' — an ::error:: annotation on a green run is not enough (PM correction 2026-08-02): the run itself must land red in the Actions list, publish already having happened by then so Invariant C still holds`
+  );
+}
+
+// --- 7. Production-pipeline health visibility (Invariant A): source-sync.yml
 // must check whether the official deploy.yml pipeline is red on main, and
-// that check must never block the job. ---
+// that check must NEVER fail the run — deploy.yml being red is already
+// visible in its own run; turning source-sync.yml red for a third-party
+// pipeline's failure would create a permanent red loop and the alarm
+// fatigue that killed visibility in the first place (GATES-GOVERNANCE.md
+// #5: "what makes this run red is a quality regression in the site just
+// published, not some other workflow being unhappy"). ---
 
 assert.match(
   syncWorkflow,
@@ -212,8 +257,16 @@ assert.ok(
   fs.existsSync(path.join(root, 'scripts', 'production-pipeline-health-check.mjs')),
   'scripts/production-pipeline-health-check.mjs must exist'
 );
+{
+  const healthCheckScript = fs.readFileSync(path.join(root, 'scripts', 'production-pipeline-health-check.mjs'), 'utf8');
+  assert.doesNotMatch(
+    healthCheckScript,
+    /process\.exit\(\s*1\s*\)/,
+    'scripts/production-pipeline-health-check.mjs must never exit non-zero — it is deliberately loud-but-green (::error:: + summary + JSON evidence only), or a red deploy.yml would permanently redden every source-sync.yml run too'
+  );
+}
 
-// --- 7. Pre-merge verification: some workflow must run the shared battery
+// --- 8. Pre-merge verification: some workflow must run the shared battery
 // on pull_request, read-only, with no Pages/deploy steps. ---
 
 {
@@ -226,7 +279,7 @@ assert.ok(
   assert.match(prVerify, /npm run ci:publish-quality-gates/, 'pr-verify.yml must run the same shared publish-quality battery as deploy.yml/source-sync.yml');
 }
 
-// --- 8. Enforcing vs advisory gate classification (GATES-GOVERNANCE.md #6).
+// --- 9. Enforcing vs advisory gate classification (GATES-GOVERNANCE.md #6).
 // Grep-level and deliberately narrow: a script "can fail" if it either
 // calls process.exit(1)/sets process.exitCode = 1, or imports node:assert
 // (the dominant *-regression-test.mjs idiom, where an assertion failure
