@@ -122,6 +122,7 @@ jobs:
       - name: Regression checks
         run: |
           npm run validate:gate
+          npm run test:validation
           npm run test:csv
           npm run test:source-auto-publish
           npm run test:source-auto-publish-semantic
@@ -197,6 +198,41 @@ jobs:
         # failing the sync, so the debt is visible without adding pipeline
         # noise. See scripts/prelaunch-data-quality-regression-test.mjs.
         run: npm run test:prelaunch-data-quality || echo "PRELAUNCH_DATA_QUALITY_DEBT (non-blocking)"
+
+      - name: Publish quality gates battery (loud, non-blocking — shared with deploy.yml, see package.json ci:publish-quality-gates)
+        # Governance fix 2026-08-02: deploy.yml ("EventLive MVP Pipeline") is
+        # the official gated pipeline and runs this exact battery blocking.
+        # This workflow used to skip all ~40 of these checks entirely
+        # (including audit:axe/test:axe and audit:lighthouse), so deploy.yml
+        # sat red for 5 days (2026-07-28 onward) while this workflow kept
+        # publishing every few hours through a narrower, drifted gate list —
+        # a critical accessibility violation shipped and stayed live because
+        # nothing that actually published ever looked at it (Invariant A/B,
+        # see GATES-GOVERNANCE.md). It now runs the identical battery here
+        # too, but non-blocking: this project already survived an 8-day sync
+        # outage once, and freezing publishing over a quality regression is
+        # a worse failure than shipping a known one loudly (Invariant C). A
+        # failure here does NOT stop the sync — the next step turns it into
+        # a loud ::error:: and $GITHUB_STEP_SUMMARY section instead of
+        # failing silent.
+        id: publish_quality_gates
+        continue-on-error: true
+        run: npm run ci:publish-quality-gates
+
+      - name: Report publish quality gates result (loud on failure, never blocking)
+        if: always()
+        run: |
+          if [ "${{ steps.publish_quality_gates.outcome }}" != "success" ]; then
+            echo "::error::PUBLISH_QUALITY_GATES_RED the shared publish-quality battery (npm run ci:publish-quality-gates) failed in this sync run. The site still deployed (loud-but-non-blocking by design, see GATES-GOVERNANCE.md) but this needs attention — check the 'Publish quality gates battery' step log above for which check(s) failed."
+            {
+              echo "## ⚠️ PUBLISH QUALITY GATES FAILED (non-blocking)"
+              echo "- \`npm run ci:publish-quality-gates\` failed in this run."
+              echo "- The sync still published anyway (Invariant C: never freeze the content pipeline)."
+              echo "- See the 'Publish quality gates battery' step log above for the failing check(s)."
+            } >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "PUBLISH_QUALITY_GATES_OK"
+          fi
 
       - name: Autonomous surface-debt alerting (self-maintained GitHub issue)
         env:
@@ -279,6 +315,7 @@ jobs:
             data/events_catalog.json
             data/event_image_cache_manifest.json
             .eventlive-cache/indexnow-delta.json
+            reports/production-pipeline-health.json
             dist/**
 
       - name: Setup Pages
@@ -306,6 +343,12 @@ jobs:
           retention-days: 14
           if-no-files-found: warn
           path: reports/indexnow-submission-receipt.json
+
+      - name: Production pipeline health check (Invariant A — official deploy.yml red must never be silent)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/production-pipeline-health-check.mjs
 
       - name: Summary
         run: |

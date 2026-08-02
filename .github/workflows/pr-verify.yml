@@ -1,0 +1,72 @@
+# Pre-merge verification (governance fix 2026-08-02, see
+# GATES-GOVERNANCE.md #5). Before this workflow, nothing in this repo ran on
+# `pull_request` — deploy.yml runs on push-to-main + dispatch,
+# source-sync.yml runs on a cron, pages.yml is dispatch-only. That was one
+# of three independent gaps that together let a critical accessibility
+# violation reach production and stay live for five days with every visible
+# signal green: (1) no pre-merge check, (2) deploy.yml — the only workflow
+# that ran the quality gates — could not stop anything because it is not
+# the workflow that publishes, (3) the workflow that does publish
+# (source-sync.yml) did not run those gates at all.
+#
+# This workflow is verify-only: it builds the site and runs the exact same
+# shared publish-quality battery deploy.yml and source-sync.yml run
+# (npm run ci:publish-quality-gates — see package.json and
+# scripts/run-publish-quality-gates.mjs), so it cannot drift from the
+# publish path by construction. It has no Pages steps, no deploy, and only
+# read permissions.
+#
+# This is NOT wired up as a required status check — branch protection is
+# the repository owner's setting, not something a workflow file should
+# impose. The check exists and is visible on every PR; the owner may want
+# to mark it required in the repo's branch protection settings.
+
+name: EventLive Pull Request Verification
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-verify-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      EVENTLIVE_PUBLIC_BASE_URL: https://eventme.live/
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install deps
+        run: npm ci || npm install
+
+      - name: Restore event image cache
+        uses: actions/cache@v4
+        with:
+          path: dist/assets/event-images
+          key: eventlive-event-images-${{ runner.os }}-${{ hashFiles('data/event_image_cache_manifest.json') }}
+          restore-keys: |
+            eventlive-event-images-${{ runner.os }}-
+
+      - name: Install browser engines
+        run: npx playwright install --with-deps chromium webkit
+
+      - name: Validate data (with gate)
+        run: npm run validate:gate
+
+      - name: Build EventLive public site
+        run: npm run build
+
+      - name: Publish quality gates battery (shared with deploy.yml/source-sync.yml — see package.json ci:publish-quality-gates)
+        run: npm run ci:publish-quality-gates
