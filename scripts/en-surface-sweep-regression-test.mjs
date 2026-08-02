@@ -221,12 +221,47 @@ for (const filePath of pages) {
   if (pageHasArabic) pagesWithArabic += 1;
 }
 
+// Rotating catalog data baked into the committed shells must never count as
+// template chrome: patchHomePage/patchScreenPage splice the CURRENT top
+// events (slugs, titles, image paths) into the shells every sync, so
+// yesterday's live event becomes "template text" the moment the shell is
+// committed — and then every EN page legitimately carrying that slug or
+// pending-MT title gets flagged as a template regression (first live hit:
+// sync 30739850995, 15 false regressions from ضحكات-الرياض + two bilingual
+// course titles). A string is CONTENT, not chrome, when it contains a
+// catalog event id/file_slug/image filename or matches a catalog title.
+const catalogEventsForSweep = JSON.parse(fs.readFileSync(path.join(root, 'dist', 'events.json'), 'utf8')).events || [];
+const catalogSlugParts = [];
+const catalogTitleSet = new Set();
+for (const ev of catalogEventsForSweep) {
+  if (ev.file_slug) catalogSlugParts.push(String(ev.file_slug));
+  if (ev.id) catalogSlugParts.push(String(ev.id));
+  if (ev.image_url) catalogSlugParts.push(String(ev.image_url).split('/').pop());
+  if (ev.title) catalogTitleSet.add(String(ev.title).trim());
+  if (ev.title_original) catalogTitleSet.add(String(ev.title_original).trim());
+}
+function isCatalogContent(text) {
+  const t = String(text).trim();
+  if (catalogTitleSet.has(t)) return true;
+  for (const part of catalogSlugParts) {
+    if (!part || part.length < 8) continue;
+    // Either direction: the flagged text may carry a slug inside a URL, or
+    // be a TRUNCATED/prefix-stripped fragment of a slug (screen.html bakes
+    // slug fragments like "ضحكات-الرياض" without the "event-" prefix).
+    if (t.includes(part) || (t.length >= 8 && part.includes(t))) return true;
+  }
+  for (const title of catalogTitleSet) {
+    if (title && title.length >= 12 && t.includes(title)) return true;
+  }
+  return false;
+}
+
 const templateHits = [];
 const scriptTemplateHits = [];
 const recurring = [];
 let contentLines = 0;
 for (const [text, pageSet] of [...lineOccurrences, ...attrOccurrences]) {
-  if (templateSources.includes(text)) {
+  if (templateSources.includes(text) && !isCatalogContent(text)) {
     templateHits.push({ text: text.slice(0, 120), pages: pageSet.size, example: [...pageSet][0] });
   } else if (pageSet.size >= REPEAT_THRESHOLD) {
     recurring.push({ text: text.slice(0, 120), pages: pageSet.size, example: [...pageSet][0] });
@@ -309,7 +344,7 @@ for (const shellFile of templateShellFiles) {
   }
 }
 for (const [text, pageSet] of scriptLiteralOccurrences) {
-  if (shellScriptLiterals.has(text)) {
+  if (shellScriptLiterals.has(text) && !isCatalogContent(text)) {
     scriptTemplateHits.push({ text: text.slice(0, 120), pages: pageSet.size, example: [...pageSet][0] });
   } else if (pageSet.size >= REPEAT_THRESHOLD) {
     recurring.push({ text: text.slice(0, 120), pages: pageSet.size, example: [...pageSet][0], script: true });
