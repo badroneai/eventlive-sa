@@ -1,6 +1,6 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-02T16:07:48.766Z
+- Generated at: 2026-08-02T17:40:37.616Z
 - Status: PASS
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
@@ -19,7 +19,7 @@
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 321 |
+| discovered_this_run | 320 |
 | candidate_queue | 577 |
 | evaluated_for_publish | 577 |
 | linked_existing | 533 |

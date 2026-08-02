@@ -1,6 +1,6 @@
 # SFDA Workshop Enrichment Report
 
-- generated_at: 2026-08-02T15:59:13.662Z
+- generated_at: 2026-08-02T17:32:11.642Z
 - targets: 16
 - enriched: 15
 - failed: 1
