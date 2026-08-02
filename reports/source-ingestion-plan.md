@@ -1,6 +1,6 @@
 # EventLive Source Ingestion Plan
 
-Generated at: 2026-08-02T15:38:17.075Z
+Generated at: 2026-08-02T16:01:14.139Z
 
 ## Executive Model
 
@@ -85,7 +85,7 @@ EventLive should not treat all registered sources equally. The operating model i
 | umm-al-qura-events | ok | 9 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | madinah-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | madinah-architecture-festival | ok | 1 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| hayy-jameel-events | ok | 65 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
+| hayy-jameel-events | ok | 67 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 
 ## Full Source Plan
 

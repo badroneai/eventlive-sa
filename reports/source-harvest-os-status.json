@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-02T15:44:29.185Z",
+  "generated_at": "2026-08-02T16:07:48.766Z",
   "status": "PASS",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
@@ -12,7 +12,7 @@
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 20,
+    "collection_attempted": 19,
     "productive_sources": 19,
     "collector_errors": 0
   },
@@ -28,7 +28,7 @@
     "source-evidence": 26
   },
   "funnel": {
-    "discovered_this_run": 319,
+    "discovered_this_run": 321,
     "candidate_queue": 577,
     "evaluated_for_publish": 577,
     "linked_existing": 533,
