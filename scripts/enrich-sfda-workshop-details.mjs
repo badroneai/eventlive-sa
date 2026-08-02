@@ -114,6 +114,15 @@ async function fetchSfdaWorkshop(url) {
   return response.text();
 }
 
+// Note: `event.language` (top-level, set at collection time in
+// collect-source-candidates.mjs's extractSfdaEvents from a title-script heuristic —
+// Latin-titled workshops get 'en', everything else defaults to 'ar') is a
+// platform-wide content-language routing tag, NOT the workshop's own SFDA-published
+// "لغة العرض" (presentation language) field. Do not read `event.language` here or use
+// it to populate `program_outline.features` — that would fabricate a "لغة العرض: ..."
+// claim SFDA never actually published for that workshop. `details.language` below is
+// the only legitimate source: it comes from freshly parsing the live workshop page's
+// own "لغة العرض" row, and is left empty when that row genuinely isn't there.
 function applyWorkshop(event, details) {
   if (details.title) event.title = details.title;
   if (details.starts_at) event.starts_at = details.starts_at;
