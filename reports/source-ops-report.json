@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T10:30:15.203Z",
+  "generated_at": "2026-08-02T14:13:16.636Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-08-02T10:19:57.640Z",
+    "collected_at": "2026-08-02T14:02:28.691Z",
     "freshness": "fresh",
-    "discovered": 319,
-    "written": 568
+    "discovered": 321,
+    "written": 577
   },
   "sources": {
     "total": 88,
-    "attempted": 20,
-    "due": 20,
-    "deferred": 28,
+    "attempted": 19,
+    "due": 19,
+    "deferred": 29,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 23,
+    "registry_collection_coverage_pct": 22,
     "scheduled_runnable_coverage_pct": 100,
     "healthy": 19,
-    "zero_yield": 1,
+    "zero_yield": 0,
     "errors": 0,
-    "cadence_deferred": 28,
+    "cadence_deferred": 29,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -943,13 +943,16 @@
         "id": "najran-municipality-summer-events",
         "name": "Najran Municipality Summer Events",
         "priority": 71,
-        "status": "zero-yield",
+        "status": "deferred",
+        "historical_status": "zero-yield",
+        "cadence_reason": "zero-yield-cooldown",
+        "next_due_at": "2026-08-03T10:19:57.640Z",
         "error_streak": 0,
-        "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "zero_yield_streak": 8,
+        "last_attempted_at": "2026-08-02T10:19:57.640Z",
         "extracted": 0,
         "candidates": 1,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "next_action": "مؤجل حتى 2026-08-03T10:19:57.640Z وفق الجدولة التكيفية."
       },
       {
         "id": "platinumlist-saudi-city-network",
@@ -1007,8 +1010,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 8,
-        "candidates": 19,
+        "extracted": 9,
+        "candidates": 28,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -1124,7 +1127,7 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 66,
+        "extracted": 67,
         "candidates": 73,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
@@ -1176,28 +1179,28 @@
     ]
   },
   "queue": {
-    "total": 568,
+    "total": 577,
     "ready_for_review": 8,
     "approved_for_catalog": 0,
-    "published_from_candidates": 534,
+    "published_from_candidates": 543,
     "actionable": 8,
     "stale_unpublished": 0,
     "duplicate_risk": 6,
     "needs_extraction": 0,
     "needs_evidence": 26,
     "by_review_status": {
-      "approved-for-catalog": 534,
+      "approved-for-catalog": 543,
       "ready-for-review": 8,
       "evidence-captured": 18,
       "new": 8
     },
     "by_publication_gate": {
-      "catalog-review": 534,
+      "catalog-review": 543,
       "duplicate-review": 8,
       "source-evidence": 26
     },
     "by_confidence": {
-      "official": 528,
+      "official": 537,
       "public-listing": 21,
       "verified-secondary": 11,
       "unverified": 8
@@ -1222,7 +1225,7 @@
       "Najran Municipality Summer Events": 1,
       "Jouf University Summer Programs": 1,
       "King Abdulaziz University Events": 2,
-      "Umm Al-Qura University Events Center": 19,
+      "Umm Al-Qura University Events Center": 28,
       "Future Skills MCIT Catalogue": 6,
       "Ithra Events": 76,
       "Saudi Food and Drug Authority Events": 8,
@@ -1347,7 +1350,7 @@
         "discovery_notes": "",
         "duplicate_risk": true,
         "matched_catalog_event_id": "event-in-act-act-x",
-        "days_to_start": 69,
+        "days_to_start": 68,
         "is_past": false,
         "is_actionable": true,
         "action": "راجع التكرار مع الكتالوج قبل أي اعتماد.",
@@ -1461,7 +1464,7 @@
         "discovery_notes": "",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 29,
+        "days_to_start": 28,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",
@@ -1667,7 +1670,7 @@
         "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 35,
+        "days_to_start": 34,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",
@@ -1817,7 +1820,7 @@
         "discovery_notes": "",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 29,
+        "days_to_start": 28,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",

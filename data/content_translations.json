@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-02T10:32:08.513Z",
+  "generated_at": "2026-08-02T14:15:29.358Z",
   "entries": {
     "1f91543d6769d9abda47f221ba86f9f9ebf27443": {
       "source": "Skill Development Initiative",
@@ -60042,14 +60042,6 @@
       "method": "identity-pass",
       "translated_at": "2026-08-02T10:29:13.799Z"
     },
-    "0f156f2e12622bd48b939efe8b7b3a0e82560d40": {
-      "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of not less than 75%, and the equivalent of certificates is required from the Ministry of Higher Education for non-Saudi Arabian university graduates.",
-      "method": "argos-mt",
-      "translated_at": "2026-08-02T10:32:08.513Z"
-    },
     "29ac535c84b03bc425ba8e1af92925d23212bc1b": {
       "source": "Hayy Cinema | August 2026",
       "source_lang": "en",
@@ -60106,13 +60098,461 @@
       "method": "argos-mt",
       "translated_at": "2026-08-02T10:32:08.513Z"
     },
+    "6ddcef739dd5adcb00c768200bffe8cf8b3ccb90": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41047",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://uqu.edu.sa/App/Events/41047",
+      "method": "identity-pass",
+      "translated_at": "2026-08-02T14:12:23.472Z"
+    },
+    "8f0b3ef8cd02f5bfa89aa3e1f1e11390a359b79f": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41048",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://uqu.edu.sa/App/Events/41048",
+      "method": "identity-pass",
+      "translated_at": "2026-08-02T14:12:23.507Z"
+    },
+    "8d239f68610c4e6086b8f26324c7e26ddcd0d1e9": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41049",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://uqu.edu.sa/App/Events/41049",
+      "method": "identity-pass",
+      "translated_at": "2026-08-02T14:12:23.529Z"
+    },
+    "4f0c47e7fb95c3d5f946c202a3ff2ea6c605fc3d": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41050",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://uqu.edu.sa/App/Events/41050",
+      "method": "identity-pass",
+      "translated_at": "2026-08-02T14:12:23.554Z"
+    },
+    "6f882306e6a9102e7502a520b6606e1c2d1e820b": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41051",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://uqu.edu.sa/App/Events/41051",
+      "method": "identity-pass",
+      "translated_at": "2026-08-02T14:12:23.576Z"
+    },
+    "866734df510bb39e5b21fc525a2f659777828dee": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41052",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://uqu.edu.sa/App/Events/41052",
+      "method": "identity-pass",
+      "translated_at": "2026-08-02T14:12:23.599Z"
+    },
+    "381f573a27d8eb13bfedbcf2677d285584b0219a": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41053",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://uqu.edu.sa/App/Events/41053",
+      "method": "identity-pass",
+      "translated_at": "2026-08-02T14:12:23.621Z"
+    },
+    "b9874e6616c80d00e951a16ade1e74af8d71624e": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41054",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://uqu.edu.sa/App/Events/41054",
+      "method": "identity-pass",
+      "translated_at": "2026-08-02T14:12:23.644Z"
+    },
+    "7c8edf8ad1683711391b169dcb0c6ff8c3d0f2ee": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41055",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://uqu.edu.sa/App/Events/41055",
+      "method": "identity-pass",
+      "translated_at": "2026-08-02T14:12:23.666Z"
+    },
+    "ae42dde01b8d0e3800b1b3973857218c88a014ed": {
+      "source": "نموذج التسجيل والسداد للدبلوم المتوسط في البصريات لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Module of registration and repayment of average diploma in optics beyond Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "89e92794f9d7b8901b9b07da7a72a15b736c3cc2": {
+      "source": "شروط القبول للدبلومات المدفوعة بالكلية التطبيقية يشترط للقبول ببرامج الدبلومات المدفوعة ما يأتي: 1- أن يكون المتقدم سعودي الجنسية، أو يحمل إقامة نظامية لغير السعوديين. 2- أن يكون المتقدم حاصلاً على شهادة الثانوية أو ما يعادلها للدبلومات التي تلي المرحلة الثانوية. 3- أن يكون المتقدم لائق طبياً. 4- ألا يكون المتقدم قد سبق فصله تأديبياً من أي جامعة. 5- أن يسدد المتقدم المقابل المالي للالتحاق بالدبلوم قبل بدء الفصل الدراسي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The conditions for accepting diplomas paid to the Applied College require acceptance of paid diploma programmes: 1. The applicant shall be Saudi nationals or shall have regular residence for non-Sudanese. 2. The applicant shall have a secondary certificate or equivalent for post-secondary diplomas. 3. The applicant shall be medically fit. 4. The applicant has not previously been disciplined from any university. 5. The applicant pays the financial interview for diploma before the beginning of the semester.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "915b0faf2ff98457ae1bdb6a7ab21e0d850cdc6b": {
+      "source": "١ أغسطس ٢٠٢٦ في ٠٢:٤٩ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "1 August 2026 at 20:49 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "735a294745065aaf2b15bae5c98192c3daed7340": {
+      "source": "الفعالية: نموذج التسجيل والسداد للدبلوم المتوسط في البصريات لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Module of registration and repayment of average diploma in optics beyond Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "f5ae63060d88b9bd44615576b3fc4968b3ffb574": {
+      "source": "النافذة الزمنية: ١ أغسطس ٢٠٢٦ في ٠٢:٤٩ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 1 August 2026 at 20:49 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "6a7bf030c3960cd000eb1a63ab9982bb3f1555c2": {
+      "source": "الموعد: ١ أغسطس ٢٠٢٦ في ٠٢:٤٩ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 1 August 2026 at 20:49 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "0f156f2e12622bd48b939efe8b7b3a0e82560d40": {
+      "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of not less than 75%, and the equivalent of certificates is required from the Ministry of Higher Education for non-Saudi Arabian university graduates.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "13d31716679bd2d9cda970ed67d930854d5ccd54": {
+      "source": "نموذج التسجيل والسداد للدبلوم المتوسط في جودة وسلامة الغذاء لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Module of registration and reimbursement for average diploma in food quality and safety beyond Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "8f3d63d90b9555b3888199244bbe1b910fa25973": {
+      "source": "٢ أغسطس ٢٠٢٦ في ٠٢:٥٢ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2 August 2026 at 20:52 M to 30 December 2026 at 60:00 M",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "131c8323602ad13e685a4ff93fe4bfe14ad87d54": {
+      "source": "الفعالية: نموذج التسجيل والسداد للدبلوم المتوسط في جودة وسلامة الغذاء لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Module of registration and reimbursement for average diploma in food quality and safety beyond Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "04010220d173a40a90d3d49fd338640890d273eb": {
+      "source": "النافذة الزمنية: ٢ أغسطس ٢٠٢٦ في ٠٢:٥٢ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 2 August 2026 at 20:52 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "df904c66c5e16903798d27fb506ba9efd4f12b03": {
+      "source": "الموعد: ٢ أغسطس ٢٠٢٦ في ٠٢:٥٢ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 2 August 2026 at 20:52 M to 30 December 2026 at 60:00 M",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "0e3ad33ea39cdf39cc81b83c3e7344a687a49bf5": {
+      "source": "نموذج التسجيل والسداد لدبلوم المتوسط في البرمجة وعلوم الحاسب الآلي لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Module of registration and repayment for medium-term programming and computer sciences out of Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "cb2713ab4566cf22213a37216d75d65b9cb055bd": {
+      "source": "٢ أغسطس ٢٠٢٦ في ٠٢:٥٤ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2 August 2026 at 20:54 M to 30 December 2026 at 60:00 M",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "b5478caabe6d10757de7feba3bd27cf75301b9fd": {
+      "source": "الفعالية: نموذج التسجيل والسداد لدبلوم المتوسط في البرمجة وعلوم الحاسب الآلي لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Module of registration and repayment for programming and computer sciences out of Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "b06d847bdd98aa9974ee3071fd2dd15857d077bb": {
+      "source": "النافذة الزمنية: ٢ أغسطس ٢٠٢٦ في ٠٢:٥٤ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 2 August 2026 at 20:54 M to 30 December 2026 at 60:00 M",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "49b293cd989003792fa631681bbabefeee3e7b06": {
+      "source": "الموعد: ٢ أغسطس ٢٠٢٦ في ٠٢:٥٤ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 2 August 2026 at 20:54 M to 30 December 2026 at 60:00 M",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "257ccde4ed47e009b79867b7e9ed4494d8df9957": {
+      "source": "نموذج التسجيل والسداد لدبلوم المتوسط في المحاسبة المالية لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Module of registration and reimbursement for an average diploma in financial accounting beyond Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "ee1ffd15a599703d3cfc7f259b2d3c83552fd2bb": {
+      "source": "٢ أغسطس ٢٠٢٦ في ٠٢:٥٦ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2 August 2026 at 20:56 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "b98981f991a57e4ee952a994330dacf36a33595d": {
+      "source": "الفعالية: نموذج التسجيل والسداد لدبلوم المتوسط في المحاسبة المالية لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Module of Registration and Reimbursement for Average Diploma in Financial Accounting Outside Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "1394f3c48f228e1a5ed52084e1dc6d740bfaed42": {
+      "source": "النافذة الزمنية: ٢ أغسطس ٢٠٢٦ في ٠٢:٥٦ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 2 August 2026 at 20:56 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "3a7df6aa6ef2992bca586dba0e020a65509da959": {
+      "source": "الموعد: ٢ أغسطس ٢٠٢٦ في ٠٢:٥٦ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 2 August 2026 at 20:56 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "90fdf528390687b328f52979f007610c25bcec1c": {
+      "source": "نموذج التسجيل والسداد لدبلوم المتوسط في إدارة الموارد البشرية لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Module of registration and reimbursement for average diploma in human resources management beyond Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "7acf9d9decf0dfacb946213e113923784f741d19": {
+      "source": "٢ أغسطس ٢٠٢٦ في ٠٢:٥٨ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2 August 2026 at 20:58 M to 30 December 2026 at 60:00 M",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "4e2eb50dd816656a37697efeaaa16a0cc4126ffb": {
+      "source": "الفعالية: نموذج التسجيل والسداد لدبلوم المتوسط في إدارة الموارد البشرية لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: registration and reimbursement model for average human resources management diploma beyond Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "94bc0342bf38efe55603270cdf238874b3f926bc": {
+      "source": "النافذة الزمنية: ٢ أغسطس ٢٠٢٦ في ٠٢:٥٨ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 2 August 2026 at 20:58 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "be014aaf73f0ff7cae7d3a851c5f4e855b1f8f68": {
+      "source": "الموعد: ٢ أغسطس ٢٠٢٦ في ٠٢:٥٨ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 2 August 2026 at 20:58 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "02dba55f8ddc92900a1c0394af9b57d9196b2dff": {
+      "source": "نموذج التسجيل والسداد لدبلوم المتوسط في الأنظمة لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Module of registration and reimbursement for medium-distance diploma in systems outside of Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "d99edbea71722e1cd150117e92c41b680c40ddd5": {
+      "source": "٢ أغسطس ٢٠٢٦ في ٠٣:٠٠ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2 August 2026 at 300 m to 30 December 2026 at 60 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "4f25876e83117296fde45d2fac5e8c0796368b25": {
+      "source": "الفعالية: نموذج التسجيل والسداد لدبلوم المتوسط في الأنظمة لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Module of registration and reimbursement for system-wide average diplomas outside Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "e15cc9c3e0a6f92756e9f75eac7f548ae2eaab2e": {
+      "source": "النافذة الزمنية: ٢ أغسطس ٢٠٢٦ في ٠٣:٠٠ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 2 August 2026 at 3000 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "95d6211361628236a8868e664a6b35b941d59b97": {
+      "source": "الموعد: ٢ أغسطس ٢٠٢٦ في ٠٣:٠٠ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 2 August 2026 at 300 m to 30 December 2026 at 60 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "cb95dd7aba4cd25cb501548f6f92076f8d9ca346": {
+      "source": "نموذج التسجيل والسداد لدبلوم المتوسط في التكنولوجيا المالية لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Module of registration and reimbursement for average diploma in financial technology beyond Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "141cbd7a31010295a462be47f864d24d59f11a0d": {
+      "source": "٢ أغسطس ٢٠٢٦ في ٠٣:٠١ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2 August 2026 at 30.10 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "479555032bff4e9eaf5903533bb24d7fc343ecce": {
+      "source": "الفعالية: نموذج التسجيل والسداد لدبلوم المتوسط في التكنولوجيا المالية لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Module of registration and reimbursement for average diploma in financial technology beyond Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "d7fd57fbd60006f0df87624e6b618c0b2d35ddb6": {
+      "source": "النافذة الزمنية: ٢ أغسطس ٢٠٢٦ في ٠٣:٠١ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 2 August 2026 at 30.10 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "0ffeec6d54ed0344a0ae59cc93c6f9e60cca6ae6": {
+      "source": "الموعد: ٢ أغسطس ٢٠٢٦ في ٠٣:٠١ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 2 August 2026 at 10.30 a.m. to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "461425e0a9908adfda7b50d1db62d048e4fbafae": {
+      "source": "نموذج التسجيل والسداد لدبلوم المتوسط في التصميم الجرافيكي والوسائط الرقمية لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Module of registration and reimbursement for average diploma in Graphic design and digital media out of Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "6ac5d852afc9d294952c6a4f2285066f9405de2c": {
+      "source": "٢ أغسطس ٢٠٢٦ في ٠٣:٠٣ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2 August 2026 at 30.30 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "086106e16c737063bed9855395d8bade4ca71f46": {
+      "source": "الفعالية: نموذج التسجيل والسداد لدبلوم المتوسط في التصميم الجرافيكي والوسائط الرقمية لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Module of registration and reimbursement for intermediate design and digital media out of Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "d083ea3408d8c13461b3948aac726d7bd9760d64": {
+      "source": "النافذة الزمنية: ٢ أغسطس ٢٠٢٦ في ٠٣:٠٣ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 2 August 2026 at 30.30 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "35b006220633cf5f12651263f78626ef81b5f3e9": {
+      "source": "الموعد: ٢ أغسطس ٢٠٢٦ في ٠٣:٠٣ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 2 August 2026 at 30.30 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "19ca706e253e5cef278eb93e8d9739694c4a1866": {
+      "source": "نموذج التسجيل والسداد لدبلوم المتوسط في الصحة والسلامة المهنية لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Module of registration and reimbursement for an average diploma in occupational health and safety outside of Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "f4e00eb9dcaf9133dff45ff76f20e750ee1a8e0c": {
+      "source": "٢ أغسطس ٢٠٢٦ في ٠٣:٠٤ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2 August 2026 at 30:40 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "3be8cfb0340c210dafd947ef5bba73069da476a4": {
+      "source": "الفعالية: نموذج التسجيل والسداد لدبلوم المتوسط في الصحة والسلامة المهنية لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: registration and repayment model for average health and occupational safety diploma beyond Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "76b572534cb50506668d44f5106d96278222433c": {
+      "source": "النافذة الزمنية: ٢ أغسطس ٢٠٢٦ في ٠٣:٠٤ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 2 August 2026 at 30:40 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
+    "eefcd84477e9df8f1b67f7da3aee6bbe74be0094": {
+      "source": "الموعد: ٢ أغسطس ٢٠٢٦ في ٠٣:٠٤ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 2 August 2026 at 4030 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T14:15:29.358Z"
+    },
     "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
       "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
       "source_lang": "ar",
       "target_lang": "en",
       "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
       "method": "argos-mt",
-      "translated_at": "2026-08-02T10:32:08.513Z"
+      "translated_at": "2026-08-02T14:15:29.358Z"
     },
     "5c6a9ff87c6cdb115664bc8a097d521eadf27f9f": {
       "source": "مركز الرياض للمعارض والمؤتمرات في ملهم",
@@ -60120,7 +60560,7 @@
       "target_lang": "en",
       "text": "The Riyadh International Convention Exhibition Center in Inspiration",
       "method": "argos-mt",
-      "translated_at": "2026-08-02T10:32:08.513Z"
+      "translated_at": "2026-08-02T14:15:29.358Z"
     }
   }
 }

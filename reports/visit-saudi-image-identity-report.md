@@ -1,6 +1,6 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-08-02T10:27:11.421Z
+- generated_at: 2026-08-02T14:10:33.537Z
 - pdf_crop_assignments: 57
 - verified: 56
 - struck: 1
