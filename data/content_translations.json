@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-02T17:55:37.615Z",
+  "generated_at": "2026-08-02T20:11:16.733Z",
   "entries": {
     "1f91543d6769d9abda47f221ba86f9f9ebf27443": {
       "source": "Skill Development Initiative",
@@ -60586,14 +60586,6 @@
       "method": "identity-pass",
       "translated_at": "2026-08-02T17:53:00.320Z"
     },
-    "0f156f2e12622bd48b939efe8b7b3a0e82560d40": {
-      "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of at least 75%, and the equivalent of certificates from the Ministry of Higher Education is required for graduates of non-Saudi Arabian universities.",
-      "method": "argos-mt",
-      "translated_at": "2026-08-02T17:55:37.615Z"
-    },
     "7e6a204066051160f17f5eaa9209dd45c93f1e86": {
       "source": "التسجيل والسداد لدبلوم المشارك (حضوري) في الخدمة الاجتماعية في رعاية الأيتام لخارج مكة",
       "source_lang": "ar",
@@ -60762,22 +60754,6 @@
       "method": "argos-mt",
       "translated_at": "2026-08-02T17:55:37.615Z"
     },
-    "a51b885b46f09a80c33a80d4142845f8ba9d2abe": {
-      "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة. التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة الحشود لخارج مكة ضمن التعليم والتدريب في عن بعد. تبدأ الفعالية ٠٢‏/٠٨‏/٢٠٢٦، ٨:٣٨ م وتنتهي ٣٠‏/١٢‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Umm Al-Qura University Events Center.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah. Recording and reimbursement of the participant &apos; s (remotely) diploma in crowd management outside a distance education and training facility. Effectiveness begins 20/2026, 8:38 and ends 30/12/2026, 6:00 by available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Umm Al-Qura University Events Center.",
-      "method": "argos-mt",
-      "translated_at": "2026-08-02T17:55:37.615Z"
-    },
-    "d001ffbe3e9d97091a77a20af586f61fb6ccacee": {
-      "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah.",
-      "method": "argos-mt",
-      "translated_at": "2026-08-02T17:55:37.615Z"
-    },
     "a906e28b56bd8abd40b41c845cef2900b1a8c6e4": {
       "source": "٢ أغسطس ٢٠٢٦ في ٠٨:٣٨ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
       "source_lang": "ar",
@@ -60850,13 +60826,285 @@
       "method": "argos-mt",
       "translated_at": "2026-08-02T17:55:37.615Z"
     },
+    "4925665c56b34d33e297602d01cb5a0aff36aba1": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41062",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://uqu.edu.sa/App/Events/41062",
+      "method": "identity-pass",
+      "translated_at": "2026-08-02T20:08:13.077Z"
+    },
+    "427a252eb7f311a416ec73d29dd8b458561f34b4": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41063",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://uqu.edu.sa/App/Events/41063",
+      "method": "identity-pass",
+      "translated_at": "2026-08-02T20:08:13.099Z"
+    },
+    "2ea779907d947acc038cf5dc43c1f34903f32af6": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41064",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://uqu.edu.sa/App/Events/41064",
+      "method": "identity-pass",
+      "translated_at": "2026-08-02T20:08:13.121Z"
+    },
+    "875977f16be772a41c94c9326e6d52952fcc3af2": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41065",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://uqu.edu.sa/App/Events/41065",
+      "method": "identity-pass",
+      "translated_at": "2026-08-02T20:08:13.144Z"
+    },
+    "72df490cf49e0d7bee3236a43d6cb348d4b18a92": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41066",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://uqu.edu.sa/App/Events/41066",
+      "method": "identity-pass",
+      "translated_at": "2026-08-02T20:08:13.165Z"
+    },
+    "0f156f2e12622bd48b939efe8b7b3a0e82560d40": {
+      "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of not less than 75%, and the equivalent of certificates is required from the Ministry of Higher Education for non-Saudi Arabian university graduates.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.732Z"
+    },
+    "a51b885b46f09a80c33a80d4142845f8ba9d2abe": {
+      "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة. التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة الحشود لخارج مكة ضمن التعليم والتدريب في عن بعد. تبدأ الفعالية ٠٢‏/٠٨‏/٢٠٢٦، ٨:٣٨ م وتنتهي ٣٠‏/١٢‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Umm Al-Qura University Events Center.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah. Recording and reimbursement of the participant &apos; s (remotely) diploma in crowd management outside of a distance education and training facility. Effectiveness begins 20/2026, 8:38 and ends 30/12/2026, 6:00 by available data. The page shall be presented at the time, location and source of effectiveness, calendar linkages and trends as they are available. Source: Umm Al-Qura University Events Center.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "d001ffbe3e9d97091a77a20af586f61fb6ccacee": {
+      "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "7a7773a76042683b78c321029c3fdedf6b99fe01": {
+      "source": "التسجيل والسداد لدبلوم المشارك (عن بعد) في الابتكار في ريادة الأعمال مع الشركاء",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Recording and repayment of a participant &apos; s (remotely) diploma in business leadership innovation with partners",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "8492a121c22a8aaba4fee2878178adb8290ce78d": {
+      "source": "٢ أغسطس ٢٠٢٦ في ٠٨:٤٤ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2 August 2026 at 80:44 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "2ce5c04b42777ea75985b12f60df9c06f99f97b3": {
+      "source": "الفعالية: التسجيل والسداد لدبلوم المشارك (عن بعد) في الابتكار في ريادة الأعمال مع الشركاء",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Recording and repayment of a participant &apos; s (remotely) diploma in business leadership innovation with partners",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "c1c1e6ee9dbae1d3199afa7adde9e946f2a744ee": {
+      "source": "النافذة الزمنية: ٢ أغسطس ٢٠٢٦ في ٠٨:٤٤ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 2 August 2026 at 80:44 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "9b18d4e7690cf54b6abaff11440fdc00c0663a0d": {
+      "source": "الموعد: ٢ أغسطس ٢٠٢٦ في ٠٨:٤٤ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 2 August 2026 at 80:44 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "592dd79079633f72d2677650319eb4363fd72361": {
+      "source": "التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة المشاريع مع الشركاء",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Registration and reimbursement of participant (remotely) project management diploma with partners",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "0c1c302efe417e3365fc86d9438f45df4b127614": {
+      "source": "٢ أغسطس ٢٠٢٦ في ٠٨:٤٧ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2 August 2026 at 80:47 M to 30 December 2026 at 60:00 M",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "4bc16835a53e0379199ee355467ddd5a06f5324c": {
+      "source": "الفعالية: التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة المشاريع مع الشركاء",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: registration and reimbursement of participant(s) in project management with partners",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "a81d1db0f2e124436a70584821348ca531b522e0": {
+      "source": "النافذة الزمنية: ٢ أغسطس ٢٠٢٦ في ٠٨:٤٧ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 2 August 2026 at 80:47 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "a381c9226b35903c076d2694c44783b3b18b1421": {
+      "source": "الموعد: ٢ أغسطس ٢٠٢٦ في ٠٨:٤٧ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 2 August 2026: 80:47 to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "da564dcb19ff3aebae57ad39452f975b4df22021": {
+      "source": "التسجيل والسداد لدبلوم المتوسط (عن بعد) في التسويق التطبيقي مع الشركاء",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Registration and reimbursement of medium (remote) diploma in applied marketing with partners",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "876ca279c8fa2c473c1d8da0f666328dbab47205": {
+      "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة. التسجيل والسداد لدبلوم المتوسط (عن بعد) في التسويق التطبيقي مع الشركاء ضمن التعليم والتدريب في عن بعد. تبدأ الفعالية ٠٢‏/٠٨‏/٢٠٢٦، ٩:٠٠ م وتنتهي ٣٠‏/١٢‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Umm Al-Qura University Events Center.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah. Recording and reimbursing of an average ( remote) diploma in applied marketing with partners in distance education and training. Effectiveness begins 20/2026, 9:00 and ends 30/12/2026, 6:00 by available data. The page shall be presented at the time, location and source of effectiveness, calendar linkages and trends as they are available. Source: Umm Al-Qura University Events Center.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "717cc1d6ae7f69159efeb101f68ccd0c916cd3c1": {
+      "source": "٢ أغسطس ٢٠٢٦ في ٠٩:٠٠ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2 August 2026 at 0900 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "60e8da85b8097849390a22edff799cd3855a7be3": {
+      "source": "الفعالية: التسجيل والسداد لدبلوم المتوسط (عن بعد) في التسويق التطبيقي مع الشركاء",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: registration and reimbursement of medium (remote) diploma in applied marketing with partners",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "f9f8d9a0dc6239e1c4e77fc5568ef5dd03ad81bd": {
+      "source": "النافذة الزمنية: ٢ أغسطس ٢٠٢٦ في ٠٩:٠٠ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 2 August 2026 in 90:00 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "c7a5048ea7288236960beecb48d7e71e04f3ef0d": {
+      "source": "الموعد: ٢ أغسطس ٢٠٢٦ في ٠٩:٠٠ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 2 August 2026: 0900 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "3918b9ed5fb4c9f2025cb43664e16c10a2ba7c63": {
+      "source": "التسجيل والسداد لدبلوم المتوسط (عن بعد) في أمن المعلومات مع الشركاء",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Registration and reimbursement of medium (remote) diploma in information security with partners",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "78802351f4713525f324a7ea1f04d96380f8997b": {
+      "source": "٢ أغسطس ٢٠٢٦ في ٠٩:٠٣ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2 August 2026 at 90:03 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "d04dcbbbea3a1796b97e14b79fe5fea6711b970f": {
+      "source": "الفعالية: التسجيل والسداد لدبلوم المتوسط (عن بعد) في أمن المعلومات مع الشركاء",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: recording and reimbursing of medium (remote) diploma in information security with partners",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "c8a3c5a41bfcce2327e2a385aeb4b122a2fcaf65": {
+      "source": "النافذة الزمنية: ٢ أغسطس ٢٠٢٦ في ٠٩:٠٣ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 2 August 2026 at 90:03 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "88aca4384622b41015f06bbb14aa6b9349e3f8a3": {
+      "source": "الموعد: ٢ أغسطس ٢٠٢٦ في ٠٩:٠٣ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 2 August 2026 at 90:03 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "9d2c9ba0089a80a95c4065cbe3f37155cd10eb1b": {
+      "source": "التسجيل والسداد لدبلوم المتوسط (عن بعد) في اللغة الإنجليزية المهنية مع الشركاء",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Registration and reimbursement of medium (remote) diploma in English professional with partners",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "580f2105b4604b745b44f543ec7d42fea9e0ad19": {
+      "source": "٢ أغسطس ٢٠٢٦ في ٠٩:٠٥ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2 August 2026 at 90:05 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "058c640fdd0f8a9294c40b0831e64e22dd06e740": {
+      "source": "الفعالية: التسجيل والسداد لدبلوم المتوسط (عن بعد) في اللغة الإنجليزية المهنية مع الشركاء",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: registration and reimbursement of medium (remote) diploma in English professional with partners",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "15ecffb770f1ef6d98be62ae04717a5f2429406e": {
+      "source": "النافذة الزمنية: ٢ أغسطس ٢٠٢٦ في ٠٩:٠٥ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 2 August 2026 at 90:05 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
+    "ac1e9d1246dfe75b8516b3ad8fea78ca9a3124e4": {
+      "source": "الموعد: ٢ أغسطس ٢٠٢٦ في ٠٩:٠٥ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 2 August 2026 at 90:05 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T20:11:16.733Z"
+    },
     "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
       "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
       "source_lang": "ar",
       "target_lang": "en",
       "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
       "method": "argos-mt",
-      "translated_at": "2026-08-02T17:55:37.615Z"
+      "translated_at": "2026-08-02T20:11:16.733Z"
     },
     "5c6a9ff87c6cdb115664bc8a097d521eadf27f9f": {
       "source": "مركز الرياض للمعارض والمؤتمرات في ملهم",
@@ -60864,7 +61112,7 @@
       "target_lang": "en",
       "text": "The Riyadh International Convention Exhibition Center in Inspiration",
       "method": "argos-mt",
-      "translated_at": "2026-08-02T17:55:37.615Z"
+      "translated_at": "2026-08-02T20:11:16.733Z"
     }
   }
 }

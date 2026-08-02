@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T19:38:45.461Z",
+  "generated_at": "2026-08-02T19:40:10.346Z",
   "registry": "data/source_registry.json",
   "source_ingestion_plan": "reports/source-ingestion-plan.json",
   "probe_limit": 28,
@@ -7,9 +7,9 @@
   "totals": {
     "probed": 21,
     "extractor_ready": 11,
-    "blocked": 10,
+    "blocked": 8,
     "partnership": 0,
-    "watch": 0
+    "watch": 2
   },
   "sources": [
     {
@@ -94,7 +94,7 @@
         "status": 200,
         "final_url": "https://ncci.org.sa/category/events/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 118054,
+        "bytes": 118004,
         "title": "الفعاليات – الغرفة التجارية بعرعر | غرفة الحدود الشمالية",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -162,7 +162,7 @@
         "status": 200,
         "final_url": "https://www.cst.gov.sa/en",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 251768,
+        "bytes": 251723,
         "title": "Communications, Space & Technology Commission (CST)",
         "blocked_reason": "",
         "structured_scripts": 2,
@@ -366,7 +366,7 @@
         "status": 200,
         "final_url": "https://www.kaust.edu.sa/en/",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 84209,
+        "bytes": 84210,
         "title": "KAUST | A top research university in the Middle East",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -387,38 +387,58 @@
       "recommendation": "probe-hidden-api-or-html-table"
     },
     {
-      "id": "baha-amanah-events",
-      "name": "Baha Municipality Events",
-      "priority": 62,
-      "url": "https://baha.gov.sa/ar/Events",
+      "id": "middle-east-banking-ai-summit",
+      "name": "Middle East Banking AI & Analytics Summit Official",
+      "priority": 74,
+      "url": "https://mebankingai.com/sa/",
       "trust_level": "official",
       "fetch_method": "html-listing",
-      "candidate_gate": "extraction",
+      "candidate_gate": "human-review",
       "intake_policy": "official-feed-preferred",
       "signals": {
         "http_ok": true,
         "status": 200,
-        "final_url": "https://baha.gov.sa/ar/Events",
-        "content_type": "text/html; charset=utf-8",
-        "bytes": 198571,
-        "title": "فعاليات الباحة",
-        "blocked_reason": "bot-protection",
+        "final_url": "https://mebankingai.com/sa/",
+        "content_type": "text/html",
+        "bytes": 12045,
+        "title": "One moment, please...",
+        "blocked_reason": "",
         "structured_scripts": 0,
         "structured_events": 0,
         "google_calendar_links": 0,
-        "event_detail_links": 19,
-        "json_or_api_hints": 14,
-        "date_snippets": [
-          "datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" as=\"style\"",
-          "datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" rel=\"stylesheet\">",
-          "calendar-alt\">",
-          "date-span\">",
-          "01 Aug 2027",
-          "dated Row -->"
-        ]
+        "event_detail_links": 0,
+        "json_or_api_hints": 0,
+        "date_snippets": []
       },
-      "extraction_score": 23,
-      "recommendation": "blocked-or-protected:bot-protection"
+      "extraction_score": 32,
+      "recommendation": "watch-or-evidence-only"
+    },
+    {
+      "id": "middle-east-enterprise-ai-summit",
+      "name": "Middle East Enterprise AI & Analytics Summit Official",
+      "priority": 75,
+      "url": "https://meenterpriseai.com/sa/",
+      "trust_level": "official",
+      "fetch_method": "html-listing",
+      "candidate_gate": "human-review",
+      "intake_policy": "official-feed-preferred",
+      "signals": {
+        "http_ok": true,
+        "status": 200,
+        "final_url": "https://meenterpriseai.com/sa/",
+        "content_type": "text/html",
+        "bytes": 11953,
+        "title": "One moment, please...",
+        "blocked_reason": "",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 0,
+        "date_snippets": []
+      },
+      "extraction_score": 32,
+      "recommendation": "watch-or-evidence-only"
     },
     {
       "id": "riyadh-season",
@@ -502,33 +522,6 @@
       "recommendation": "blocked-or-protected:fetch failed getaddrinfo EAI_AGAIN www.ricec.com TypeError: fetch failed"
     },
     {
-      "id": "saudi-contractors-authority-events",
-      "name": "Saudi Contractors Authority Events",
-      "priority": 49,
-      "url": "https://www.sca.gov.sa/",
-      "trust_level": "official",
-      "fetch_method": "html-listing",
-      "candidate_gate": "extraction",
-      "intake_policy": "monitor-public",
-      "signals": {
-        "http_ok": false,
-        "status": 0,
-        "final_url": "https://www.sca.gov.sa/",
-        "content_type": "",
-        "bytes": 0,
-        "title": "",
-        "blocked_reason": "fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 0,
-        "date_snippets": []
-      },
-      "extraction_score": -23,
-      "recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed"
-    },
-    {
       "id": "riyadh-city-events",
       "name": "Riyadh City Events",
       "priority": 51,
@@ -596,7 +589,7 @@
         "status": 403,
         "final_url": "https://qiddiya.com/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 5836,
+        "bytes": 5837,
         "title": "Attention Required! | Cloudflare",
         "blocked_reason": "http-403",
         "structured_scripts": 0,

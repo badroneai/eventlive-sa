@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-02T17:51:17.503Z",
+  "published_at": "2026-08-02T20:06:40.641Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 583,
+  "candidates_seen": 588,
   "totals": {
-    "candidates_seen": 583,
-    "published": 12,
-    "linked_existing": 533,
-    "blocked": 38,
+    "candidates_seen": 588,
+    "published": 11,
+    "linked_existing": 538,
+    "blocked": 39,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 545
+    "reconciled": 549
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -195,34 +195,29 @@
       "title": "عروض الفنون الأدائية التقليدية"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-الخدمة-الاجتماعية-في-رعاية-الأيت-20260802-6d335d51",
-      "event_id": "event-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-الخدمة-الاجتماعية-في-رعاية-الأيت",
-      "title": "التسجيل والسداد لدبلوم المشارك (حضوري) في الخدمة الاجتماعية في رعاية الأيتام لخارج مكة"
+      "candidate_id": "candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-الابتكار-في-ريادة-الأعمال-مع-ال-20260802-6e46a52a",
+      "event_id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-الابتكار-في-ريادة-الأعمال-مع-ال",
+      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في الابتكار في ريادة الأعمال مع الشركاء"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-الإدارة-الفندقية-لخارج-مكة-20260802-8fcabfa2",
-      "event_id": "event-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-الإدارة-الفندقية-لخارج-مكة",
-      "title": "التسجيل والسداد لدبلوم المشارك (حضوري) في الإدارة الفندقية لخارج مكة"
+      "candidate_id": "candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-المشاريع-مع-الشركاء-20260802-28e810a6",
+      "event_id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-المشاريع-مع-الشركاء",
+      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة المشاريع مع الشركاء"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-مساعد-في-التربية-الخاصة-وإدارة-ا-20260802-c78c9317",
-      "event_id": "event-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-مساعد-في-التربية-الخاصة-وإدارة-ا",
-      "title": "التسجيل والسداد لدبلوم المشارك (حضوري) في مساعد في التربية الخاصة وإدارة السلوك لخارج مكة"
+      "candidate_id": "candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-التسويق-التطبيقي-مع-الشركاء-20260802-c19f7ac5",
+      "event_id": "event-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-التسويق-التطبيقي-مع-الشركاء",
+      "title": "التسجيل والسداد لدبلوم المتوسط (عن بعد) في التسويق التطبيقي مع الشركاء"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-الإرشاد-السياحي-لخارج-مكة-20260802-c06e19e4",
-      "event_id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-الإرشاد-السياحي-لخارج-مكة",
-      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في الإرشاد السياحي لخارج مكة"
+      "candidate_id": "candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-أمن-المعلومات-مع-الشركاء-20260802-1a84c3bc",
+      "event_id": "event-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-أمن-المعلومات-مع-الشركاء",
+      "title": "التسجيل والسداد لدبلوم المتوسط (عن بعد) في أمن المعلومات مع الشركاء"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-الحشود-لخارج-مكة-20260802-224c1c76",
-      "event_id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-الحشود-لخارج-مكة",
-      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة الحشود لخارج مكة"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-اللوجستيات-وسلاسل-الإمداد-20260802-84ca967e",
-      "event_id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-اللوجستيات-وسلاسل-الإمداد",
-      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة اللوجستيات وسلاسل الإمداد لخارج مكة"
+      "candidate_id": "candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-اللغة-الإنجليزية-المهنية-مع-الش-20260802-7ea2fdc6",
+      "event_id": "event-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-اللغة-الإنجليزية-المهنية-مع-الش",
+      "title": "التسجيل والسداد لدبلوم المتوسط (عن بعد) في اللغة الإنجليزية المهنية مع الشركاء"
     }
   ],
   "linked_existing": [
@@ -566,12 +561,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-نادي-ستورم-في-العماريه-20260619-4a38d19e",
       "event_id": "event-نادي-ستورم-في-العماريه",
       "title": "نادي ستورم في العماريه",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-madinah-dates-season-2026-20260620-65ed4355",
-      "event_id": "event-madinah-dates-season-2026",
-      "title": "Madinah Dates Season 2026",
       "reason": "already linked to catalog event"
     },
     {
@@ -1208,6 +1197,42 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine-20260802-58d47757",
       "event_id": "event-معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine",
       "title": "معسكر تطوير الألعاب والعوالم الافتراضية باستخدام Unreal Engine",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-الخدمة-الاجتماعية-في-رعاية-الأيت-20260802-6d335d51",
+      "event_id": "event-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-الخدمة-الاجتماعية-في-رعاية-الأيت",
+      "title": "التسجيل والسداد لدبلوم المشارك (حضوري) في الخدمة الاجتماعية في رعاية الأيتام لخارج مكة",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-الإدارة-الفندقية-مع-الشركاء-20260802-8fcabfa2",
+      "event_id": "event-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-الإدارة-الفندقية-لخارج-مكة",
+      "title": "التسجيل والسداد لدبلوم المشارك (حضوري) في الإدارة الفندقية مع الشركاء",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-مساعد-في-التربية-الخاصة-وإدارة-ا-20260802-c78c9317",
+      "event_id": "event-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-مساعد-في-التربية-الخاصة-وإدارة-ا",
+      "title": "التسجيل والسداد لدبلوم المشارك (حضوري) في مساعد في التربية الخاصة وإدارة السلوك مع الشركاء",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-الإرشاد-السياحي-مع-الشركاء-20260802-c06e19e4",
+      "event_id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-الإرشاد-السياحي-لخارج-مكة",
+      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في الإرشاد السياحي مع الشركاء",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-الحشود-مع-الشركاء-20260802-224c1c76",
+      "event_id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-الحشود-لخارج-مكة",
+      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة الحشود مع الشركاء",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-اللوجستيات-وسلاسل-الإمداد-20260802-84ca967e",
+      "event_id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-اللوجستيات-وسلاسل-الإمداد",
+      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة اللوجستيات وسلاسل الإمداد مع الشركاء",
       "reason": "already linked to catalog event"
     },
     {
@@ -3439,6 +3464,11 @@
       "reason": "possible duplicate requires review: exact-title-city-source-conflict",
       "kind": "exact-title-city-source-conflict",
       "possible_event_id": "event-sound-of-abha-fest-saf"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-madinah-dates-season-2026-20260620-65ed4355",
+      "title": "Madinah Dates Season 2026",
+      "reason": "possible duplicate already exists: event-madinah-dates-season-2026"
     },
     {
       "candidate_id": "candidate-visit-saudi-calendar-aseer-season-20260625-2fc92ef9",

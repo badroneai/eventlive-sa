@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-02T17:59:41.245Z
-- Status: PASS
+- Generated at: 2026-08-02T20:15:43.986Z
+- Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 583
-- Matched candidates: 551
+- Candidates: 588
+- Matched candidates: 556
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 19/19
-- Collector errors: 0
+- Productive sources / attempted: 20/33
+- Collector errors: 6
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 321 |
-| candidate_queue | 583 |
-| evaluated_for_publish | 583 |
-| linked_existing | 533 |
-| published_new | 12 |
-| blocked | 38 |
+| discovered_this_run | 336 |
+| candidate_queue | 588 |
+| evaluated_for_publish | 588 |
+| linked_existing | 538 |
+| published_new | 11 |
+| blocked | 39 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 40 |
+| secondary_still_blocked | 39 |
 
 ## Blocked Reasons
 
@@ -37,6 +37,7 @@
 | possible duplicate requires review: exact-title-city-source-conflict | 6 |
 | linked catalog row event-aseer-season was superseded by dedupe | 2 |
 | possible duplicate requires review: exact-title-city-venue-conflict | 2 |
+| possible duplicate already exists: event-madinah-dates-season-2026 | 1 |
 | possible duplicate already exists: event-saudi-industrial-series-2 | 1 |
 | possible duplicate already exists: event-leap-2026 | 1 |
 | linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe | 1 |
@@ -46,6 +47,15 @@
 
 | Source | Reason |
 | --- | --- |
+| moc-cultural-calendar | fetch failed; fetch failed |
+| mos-events | fetch failed; page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.mos.gov.sa/en/media/events", waiting until "domcontentloaded"
+ |
+| monshaat-events | fetch failed; fetch failed |
+| moc-cultural-subportals | fetch failed; fetch failed |
+| scega-exhibitions-conferences | fetch failed |
+| qassim-chamber-events | HTTP 403; browser recovery encountered an access-protection page |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

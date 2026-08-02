@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-08-01T19:39:16.921Z",
+  "generated_at": "2026-08-02T19:40:44.983Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -134,11 +134,14 @@
       "final_url": "https://nec.gov.sa/ar",
       "via": "fetch",
       "content_type": "text/html; charset=utf-8",
-      "bytes": 87515,
+      "bytes": 86240,
       "title": "المركز الوطني للفعاليات | المركز الوطني للفعاليات",
       "classification": "protected",
       "error": "",
       "page_hint_urls": [
+        "https://nec.gov.sa/ar",
+        "https://nec.gov.sa/en",
+        "https://nec.gov.sa/api/assets/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b",
         "http://www.w3.org/2000/svg",
         "https://enjz.nec.gov.sa/",
         "https://nec.gov.sa/ar/join-us/event-pioneer",
@@ -162,9 +165,6 @@
         "https://nec.gov.sa/ar\\",
         "https://nec.gov.sa/en\\",
         "https://nec.gov.sa/api/assets/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b\\",
-        "https://nec.gov.sa/ar",
-        "https://nec.gov.sa/en",
-        "https://nec.gov.sa/api/assets/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b",
         "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496",
         "https://nec.gov.sa/ar/event-tech",
         "https://nec.gov.sa/ar/event-tech/"
@@ -176,7 +176,7 @@
       ],
       "asset_results": [],
       "api_results": [],
-      "text_sample": "قطاع واعد لفعاليات المملكة لقطاع فعاليات واعد، ومواسم سعودية استثنائية، وتقويم وطني مزدهر وجاذب! من نحن أُسّس مركز الفعاليات بقرار من مجلس الوزراء بتاريخ 15 رجب 1441 هـ الموافق 10 مارس 2020م، ومقره الرياض، وهو يهدف إلى تعزيز الفعاليات في المملكة، والارتقاء بالخدمات المقدمة في المجال، ودعم مواسم السعودية والتقويم الوطني والفعاليات الكبرى، بناءً على ما يصدر من أوامر وقرارات، وفقًا للتوجهات والرؤى التي تضعها لجنة الفعاليات كما يتمتع المركز بالشخصية الاعتبارية وبالاستقلال المالي والإداري، ويرتبط تن…"
+      "text_sample": "المركز الوطني للفعاليات | المركز الوطني للفعاليات قطاع واعد لفعاليات المملكة لقطاع فعاليات واعد، ومواسم سعودية استثنائية، وتقويم وطني مزدهر وجاذب! من نحن أُسّس مركز الفعاليات بقرار من مجلس الوزراء بتاريخ 15 رجب 1441 هـ الموافق 10 مارس 2020م، ومقره الرياض، وهو يهدف إلى تعزيز الفعاليات في المملكة، والارتقاء بالخدمات المقدمة في المجال، ودعم مواسم السعودية والتقويم الوطني والفعاليات الكبرى، بناءً على ما يصدر من أوامر وقرارات، وفقًا للتوجهات والرؤى التي تضعها لجنة الفعاليات كما يتمتع المركز بالشخصية…"
     },
     {
       "id": "visit-saudi-calendar",
@@ -327,7 +327,7 @@
         "https://wbk-assets.webook.com/0.7.0/assets/react-helmet-Ba2OUe2H.js",
         "https://wbk-assets.webook.com/0.7.0/assets/@wbk/cruises-CFh44dRH.js",
         "https://wbk-assets.webook.com/0.7.0/assets/@wbk/auction-te7OXqy9.js",
-        "https://webook.com/cdn-cgi/content?id=h5eMhMMjhStQ8E3XJxRMeLGA1bUiSy6iYCRvLnWiJfU-1785613164.0284855-1.2.1.1-qMaF77ob8nHV5J401sTM5f.Z2yb5_wkOvsoAoT5bX7w",
+        "https://webook.com/cdn-cgi/content?id=7CWe3zlXqqu0lmpUbo8OP70qKpPgNb1jQa0pXZqVe1Y-1785699653.2458186-1.2.1.1-XqUIuQvrmmpymyIXmlaS8pqQ8oQzQifJE8572gP3QyU",
         "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496"
       ],
       "page_hint_words": [

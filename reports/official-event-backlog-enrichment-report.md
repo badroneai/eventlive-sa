@@ -1,20 +1,19 @@
 # EventLive Official Event Backlog Enrichment
-- Generated at: 2026-08-02T17:52:47.995Z
-- Targets: 12
-- Enriched: 12
-- Fetched: 12
-- Images: 12
+- Generated at: 2026-08-02T20:08:00.099Z
+- Targets: 11
+- Enriched: 11
+- Fetched: 11
+- Images: 11
 - Fetch failures: 0
 
 | Source | Event | Method | Image | Fetch |
 |---|---|---:|---:|---:|
 | Visit Saudi Summer Calendar PDF | الاخطبوطية | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (حضوري) في الإدارة الفندقية لخارج مكة | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (حضوري) في الخدمة الاجتماعية في رعاية الأيتام لخارج مكة | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (حضوري) في مساعد في التربية الخاصة وإدارة السلوك لخارج مكة | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة الحشود لخارج مكة | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة اللوجستيات وسلاسل الإمداد لخارج مكة | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (عن بعد) في الإرشاد السياحي لخارج مكة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المتوسط (عن بعد) في أمن المعلومات مع الشركاء | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المتوسط (عن بعد) في التسويق التطبيقي مع الشركاء | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المتوسط (عن بعد) في اللغة الإنجليزية المهنية مع الشركاء | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة المشاريع مع الشركاء | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (عن بعد) في الابتكار في ريادة الأعمال مع الشركاء | official-page-meta | yes | yes |
 | Visit Saudi Summer Calendar PDF | سكة الاطعمة | official-page-meta | yes | yes |
 | Visit Saudi Summer Calendar PDF | شارع الفن - القرية الاوروبية | official-page-meta | yes | yes |
 | Visit Saudi Summer Calendar PDF | عروض الفنون الادائية التقليدية | official-page-meta | yes | yes |
