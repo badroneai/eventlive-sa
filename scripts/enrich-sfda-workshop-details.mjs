@@ -66,18 +66,38 @@ function parseSfdaDate(dateText, timeText, marker) {
   return `${year}-${month}-${day}T${String(hour).padStart(2, '0')}:${minute}:${second}+03:00`;
 }
 
+// Root cause (2026-08-02, sfda-workshop-enrichment regression): this used to be one
+// monolithic regex requiring "من ... حتى ... نوع الورشة ... لغة العرض ..." to match as a
+// single unit. SFDA does not always publish a "نوع الورشة" / "لغة العرض" row for a given
+// workshop (confirmed live: workshop/5522068's table only has the two date rows, no
+// type/language rows in the DOM at all — a source-side content gap, not a scraping miss).
+// When that block was absent, the WHOLE regex failed, so even the always-present من/حتى
+// date-time — which sits earlier in the match and is independently available — was
+// discarded too, leaving the event stuck on its pre-enrichment all-day placeholder time.
+// Extracting date-time, workshop type, and language as three independent, optional
+// matches fixes that: the precise time is captured whenever SFDA publishes it (which is
+// always), and type/language are captured whenever SFDA publishes them (which is not
+// universal). This also fixes a second bug: the trailing "انتهى وقت ورشة العمل" ("workshop
+// time ended") banner that SFDA renders right after a past workshop's language row was
+// being swallowed into the captured language value (e.g. "العربية انتهى وقت ورشة العمل")
+// because the old stop-boundary didn't include it.
+const FIELD_STOP_BOUNDARY = '(?:\\s+انتهى وقت ورشة العمل|\\s+ورش عمل أخرى|\\s+×|\\s+خريطة الموقع|$)';
+const TYPE_STOP_BOUNDARY = `(?:\\s+لغة العرض|${FIELD_STOP_BOUNDARY.slice('(?:'.length)}`;
+
 function extractWorkshopDetails(html) {
   const text = cleanText(html);
-  const dateMatch = text.match(/من\s+(\d{2}-\d{2}-\d{4})\s+(\d{1,2}:\d{2}:\d{2})\s+([صم])\s+حتى\s+(\d{2}-\d{2}-\d{4})\s+(\d{1,2}:\d{2}:\d{2})\s+([صم])\s+نوع الورشة\s+(.+?)\s+لغة العرض\s+(.+?)(?:\s+ورش عمل أخرى|\s+×|\s+خريطة الموقع|$)/);
+  const dateTimeMatch = text.match(/من\s+(\d{2}-\d{2}-\d{4})\s+(\d{1,2}:\d{2}:\d{2})\s+([صم])\s+حتى\s+(\d{2}-\d{2}-\d{4})\s+(\d{1,2}:\d{2}:\d{2})\s+([صم])/);
+  const typeMatch = text.match(new RegExp(`نوع الورشة\\s+(.+?)${TYPE_STOP_BOUNDARY}`));
+  const languageMatch = text.match(new RegExp(`لغة العرض\\s+(.+?)${FIELD_STOP_BOUNDARY}`));
   const delivery = text.match(/(?:ورش العمل\s+)?[^ ]+\s+(عن بعد|حضوري|افتراضي)\s+رابط الدخول لورشة العمل/)?.[1] || (text.includes('عن بعد') ? 'عن بعد' : '');
   return {
     title: metaContent(html, 'og:title') || cleanText(html.match(/<h1\b[\s\S]*?<\/h1>/i)?.[0] || ''),
     description: metaContent(html, 'description') || metaContent(html, 'og:description'),
     delivery,
-    starts_at: dateMatch ? parseSfdaDate(dateMatch[1], dateMatch[2], dateMatch[3]) : '',
-    ends_at: dateMatch ? parseSfdaDate(dateMatch[4], dateMatch[5], dateMatch[6]) : '',
-    workshop_type: dateMatch ? dateMatch[7].trim() : '',
-    language: dateMatch ? dateMatch[8].trim() : ''
+    starts_at: dateTimeMatch ? parseSfdaDate(dateTimeMatch[1], dateTimeMatch[2], dateTimeMatch[3]) : '',
+    ends_at: dateTimeMatch ? parseSfdaDate(dateTimeMatch[4], dateTimeMatch[5], dateTimeMatch[6]) : '',
+    workshop_type: typeMatch ? typeMatch[1].trim() : '',
+    language: languageMatch ? languageMatch[1].trim() : ''
   };
 }
 
