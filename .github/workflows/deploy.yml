@@ -176,17 +176,30 @@ jobs:
         # so the two paths cannot silently drift apart again.
         run: npm run ci:publish-quality-gates
 
-      - name: Advisory gates status (report-only — see GATES-GOVERNANCE.md #6)
-        # audit:release-deploy-rollback, readiness:standard, and
-        # owner:command-center (run above, inside ci:publish-quality-gates)
-        # never exit non-zero and their paired test:* only validates report
-        # shape, not the substantive verdict — so they cannot block a
-        # publish. The rule is that their output must still be visible
-        # somewhere instead of silently trusted: this step surfaces it.
+      - name: Advisory gates status (see GATES-GOVERNANCE.md #6)
+        # Corrected 2026-08-02 (this fix): these three used to never exit
+        # non-zero at all, in any job. That is no longer true for two of
+        # them — readiness:standard now exits 1 if any of its 23 gates is
+        # genuinely FAIL (not merely PARTIAL/NOT_STARTED/OWNER_RESERVED/N/A),
+        # and audit:release-deploy-rollback now exits 1 if a check it could
+        # actually evaluate came back bad (not merely NOT_APPLICABLE in this
+        # job — see its own header comment). Both already ran, above, inside
+        # ci:publish-quality-gates, so a genuine FAIL from either already
+        # failed that step and this build job before this step even runs.
+        # owner:command-center was always capable of failing hard on a real
+        # build error (an uncaught fs/JSON exception exits Node non-zero by
+        # default) and now also asserts it produced non-empty output. What
+        # remains genuinely non-blocking by design, on all three, is
+        # PARTIAL / NOT_APPLICABLE / OWNER_RESERVED / N/A — statuses that
+        # mean "not evaluated here" or "intentionally owner-reserved", not
+        # "evaluated and bad" (GATES-GOVERNANCE.md #6). This step's job is
+        # now purely to keep that non-blocking detail visible instead of
+        # silently trusted — nobody may cite a PARTIAL/N/A/OWNER_RESERVED
+        # result here as evidence something was actually verified.
         if: always()
         run: |
           {
-            echo "## Advisory Gates Status (report-only, cannot block — see GATES-GOVERNANCE.md #6)"
+            echo "## Advisory Gates Status (PARTIAL/N/A/OWNER_RESERVED here never blocks; FAIL already did, above — see GATES-GOVERNANCE.md #6)"
             if [ -f reports/release-deploy-rollback-status.json ]; then
               echo "- release-deploy-rollback: $(node -e "const r=require('./reports/release-deploy-rollback-status.json'); console.log(r.status)")"
             else
@@ -376,6 +389,38 @@ jobs:
           echo "[stability] failed after ${attempts} attempts"
           exit 1
 
+      - name: Run release/deploy/rollback audit (post-deploy — real signals exist here, enforcing)
+        # GATES-GOVERNANCE.md #6 correction (2026-08-02, this fix): two of
+        # this audit's three post-deploy checks (workflow_success,
+        # public_verify) read RELEASE_WORKFLOW_STATUS /
+        # RELEASE_PUBLIC_VERIFY_STATUS, which nothing populated anywhere in
+        # this repo before this change — inside the `build` job (where
+        # ci:publish-quality-gates also runs this same audit) those two
+        # checks are structurally unable to be anything but NOT_APPLICABLE,
+        # since the values do not exist until after deploy. Here, in
+        # verify-release, they do: `needs.deploy.result` is the real
+        # GitHub Actions outcome of the job that just ran actions/deploy-
+        # pages, and `steps.uptime.outcome` is the real post-deploy check
+        # that the just-published eventme.live actually responds. Both are
+        # genuine evaluated signals, not placeholders, so this invocation is
+        # enforcing: continue-on-error lets the rest of this job's steps
+        # still run (the site is already published by this point —
+        # Invariant C / GATES-GOVERNANCE.md #4 applies, freezing after
+        # publish would be worse than a red verification run), and its
+        # outcome is folded into "Fail if release verification checks
+        # failed" below so a genuine FAIL still lands the run red.
+        id: release_deploy_rollback_audit
+        continue-on-error: true
+        env:
+          RELEASE_DEPLOY_SHA: ${{ github.sha }}
+          RELEASE_DEPLOY_BRANCH: ${{ github.ref_name }}
+          RELEASE_WORKFLOW_STATUS: ${{ needs.deploy.result }}
+          RELEASE_WORKFLOW_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          RELEASE_PUBLIC_VERIFY_STATUS: ${{ steps.uptime.outcome }}
+        run: |
+          npm run audit:release-deploy-rollback
+          npm run test:release-deploy-rollback
+
       - name: Generate reliability rollup report
         if: always()
         env:
@@ -479,9 +524,10 @@ jobs:
           echo "- SLO policy hint: ${{ steps.slo_gate.outputs.enforcement_state == 'ACTIVE' && 'blocking gate active' || 'warm-up mode (non-blocking until sample minimum)' }}" >> $GITHUB_STEP_SUMMARY
           echo "- SLO sample progress: ${{ steps.slo_gate.outputs.samples_progress || 'n/a' }} (min required: ${{ steps.slo_gate.outputs.samples_min || '8' }})" >> $GITHUB_STEP_SUMMARY
           echo "- Evidence artifact: release-verification-${{ github.run_id }} (14 days)" >> $GITHUB_STEP_SUMMARY
+          echo "- Release/deploy/rollback audit outcome: ${{ steps.release_deploy_rollback_audit.outcome }}" >> $GITHUB_STEP_SUMMARY
 
       - name: Fail if release verification checks failed
-        if: ${{ steps.uptime.outcome != 'success' || steps.stability.outcome != 'success' || steps.slo_gate.outcome != 'success' || steps.schema_regression_gate.outcome != 'success' }}
+        if: ${{ steps.uptime.outcome != 'success' || steps.stability.outcome != 'success' || steps.slo_gate.outcome != 'success' || steps.schema_regression_gate.outcome != 'success' || steps.release_deploy_rollback_audit.outcome != 'success' }}
         run: |
-          echo "Release verification failed (uptime=${{ steps.uptime.outcome }}, stability=${{ steps.stability.outcome }}, slo_gate=${{ steps.slo_gate.outcome }}, schema_regression_gate=${{ steps.schema_regression_gate.outcome }})"
+          echo "Release verification failed (uptime=${{ steps.uptime.outcome }}, stability=${{ steps.stability.outcome }}, slo_gate=${{ steps.slo_gate.outcome }}, schema_regression_gate=${{ steps.schema_regression_gate.outcome }}, release_deploy_rollback_audit=${{ steps.release_deploy_rollback_audit.outcome }})"
           exit 1
