@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-02T17:33:09.324Z",
+  "generated_at": "2026-08-02T17:52:47.995Z",
   "totals": {
-    "targets": 6,
-    "enriched": 6,
-    "fetched": 6,
-    "images": 6,
+    "targets": 12,
+    "enriched": 12,
+    "fetched": 12,
+    "images": 12,
     "fetch_failures": 0
   },
   "enriched": [
@@ -14,6 +14,66 @@
       "source_label": "Visit Saudi Summer Calendar PDF",
       "source_method": "official-page-meta",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-الإدارة-الفندقية-لخارج-مكة",
+      "title": "التسجيل والسداد لدبلوم المشارك (حضوري) في الإدارة الفندقية لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41057",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-الخدمة-الاجتماعية-في-رعاية-الأيت",
+      "title": "التسجيل والسداد لدبلوم المشارك (حضوري) في الخدمة الاجتماعية في رعاية الأيتام لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41056",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-مساعد-في-التربية-الخاصة-وإدارة-ا",
+      "title": "التسجيل والسداد لدبلوم المشارك (حضوري) في مساعد في التربية الخاصة وإدارة السلوك لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41058",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-الحشود-لخارج-مكة",
+      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة الحشود لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41060",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-اللوجستيات-وسلاسل-الإمداد",
+      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة اللوجستيات وسلاسل الإمداد لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41061",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-الإرشاد-السياحي-لخارج-مكة",
+      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في الإرشاد السياحي لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41059",
       "fetched": true,
       "image": true,
       "fetch_reason": ""

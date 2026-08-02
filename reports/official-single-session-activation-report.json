@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-02T17:33:16.631Z",
+  "generated_at": "2026-08-02T17:52:54.911Z",
   "max_duration_hours": 8,
   "totals": {
-    "activated": 21,
-    "skipped_long": 7
+    "activated": 22,
+    "skipped_long": 6
   },
   "activated": [
     {
@@ -115,6 +115,15 @@
       "session_type": "official-online-workshop"
     },
     {
+      "id": "event-اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالجة-",
+      "title": "اشتراطات الفسح والتفتيش للمنشآت والمنتجات الخاضعة لرقابة الهيئة ومعالجة تحديات العملاء ومواكبة التحديثات",
+      "source_label": "Saudi Food and Drug Authority Events",
+      "starts_at": "2026-07-28T10:00:00+03:00",
+      "ends_at": "2026-07-28T12:00:00+03:00",
+      "duration_hours": 2,
+      "session_type": "official-online-workshop"
+    },
+    {
       "id": "event-آلية-مطابقة-المخزون-الفعلي-مع-نظام-رصد-للصيدليات-والمستشفيات",
       "title": "آلية مطابقة المخزون الفعلي مع نظام رصد للصيدليات والمستشفيات",
       "source_label": "Saudi Food and Drug Authority Events",
@@ -202,12 +211,6 @@
       "title": "تقييم سلامة المنتج التجميلي وملف معلومات المنتج",
       "source_label": "Saudi Food and Drug Authority Events",
       "duration_hours": 28.5
-    },
-    {
-      "id": "event-اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالجة-",
-      "title": "اشتراطات الفسح والتفتيش للمنشآت والمنتجات الخاضعة لرقابة الهيئة ومعالجة تحديات العملاء ومواكبة التحديثات",
-      "source_label": "Saudi Food and Drug Authority Events",
-      "duration_hours": 9
     },
     {
       "id": "event-unstable",

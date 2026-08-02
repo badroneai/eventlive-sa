@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T17:34:11.367Z",
+  "generated_at": "2026-08-02T17:53:38.322Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,10 +11,10 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-08-02T17:23:05.252Z",
+    "collected_at": "2026-08-02T17:44:25.323Z",
     "freshness": "fresh",
-    "discovered": 320,
-    "written": 577
+    "discovered": 321,
+    "written": 583
   },
   "sources": {
     "total": 88,
@@ -1010,8 +1010,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 9,
-        "candidates": 28,
+        "extracted": 10,
+        "candidates": 34,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -1179,28 +1179,28 @@
     ]
   },
   "queue": {
-    "total": 577,
+    "total": 583,
     "ready_for_review": 8,
     "approved_for_catalog": 0,
-    "published_from_candidates": 543,
+    "published_from_candidates": 549,
     "actionable": 8,
     "stale_unpublished": 0,
     "duplicate_risk": 6,
     "needs_extraction": 0,
     "needs_evidence": 26,
     "by_review_status": {
-      "approved-for-catalog": 543,
+      "approved-for-catalog": 549,
       "ready-for-review": 8,
       "evidence-captured": 18,
       "new": 8
     },
     "by_publication_gate": {
-      "catalog-review": 543,
+      "catalog-review": 549,
       "duplicate-review": 8,
       "source-evidence": 26
     },
     "by_confidence": {
-      "official": 537,
+      "official": 543,
       "public-listing": 21,
       "verified-secondary": 11,
       "unverified": 8
@@ -1225,7 +1225,7 @@
       "Najran Municipality Summer Events": 1,
       "Jouf University Summer Programs": 1,
       "King Abdulaziz University Events": 2,
-      "Umm Al-Qura University Events Center": 28,
+      "Umm Al-Qura University Events Center": 34,
       "Future Skills MCIT Catalogue": 6,
       "Ithra Events": 76,
       "Saudi Food and Drug Authority Events": 8,

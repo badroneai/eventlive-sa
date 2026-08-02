@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-02T17:36:09.700Z",
+  "generated_at": "2026-08-02T17:55:37.615Z",
   "entries": {
     "1f91543d6769d9abda47f221ba86f9f9ebf27443": {
       "source": "Skill Development Initiative",
@@ -60538,13 +60538,317 @@
       "method": "argos-mt",
       "translated_at": "2026-08-02T14:15:29.358Z"
     },
+    "374977214820b5a62e9609fc0441809533bf4502": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41056",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://uqu.edu.sa/App/Events/41056",
+      "method": "identity-pass",
+      "translated_at": "2026-08-02T17:53:00.223Z"
+    },
+    "71b0b8ee160c10daa78494afd4db8dd1e336d1ca": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41057",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://uqu.edu.sa/App/Events/41057",
+      "method": "identity-pass",
+      "translated_at": "2026-08-02T17:53:00.242Z"
+    },
+    "92e88cb218cb6b9bb17e7ff80b76c91fbd82d9bb": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41058",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://uqu.edu.sa/App/Events/41058",
+      "method": "identity-pass",
+      "translated_at": "2026-08-02T17:53:00.261Z"
+    },
+    "9429f3afa22ea0311e0bef6043897f9f2d932a6c": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41059",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://uqu.edu.sa/App/Events/41059",
+      "method": "identity-pass",
+      "translated_at": "2026-08-02T17:53:00.280Z"
+    },
+    "11c60fd2a6b96a2937401cf6b09e1305c2c48cb4": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41060",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://uqu.edu.sa/App/Events/41060",
+      "method": "identity-pass",
+      "translated_at": "2026-08-02T17:53:00.301Z"
+    },
+    "f346bd8f08490ad88b17d89ae6cf34cd27561986": {
+      "source": "رابط المصدر: https://uqu.edu.sa/App/Events/41061",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://uqu.edu.sa/App/Events/41061",
+      "method": "identity-pass",
+      "translated_at": "2026-08-02T17:53:00.320Z"
+    },
     "0f156f2e12622bd48b939efe8b7b3a0e82560d40": {
       "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
       "source_lang": "ar",
       "target_lang": "en",
-      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of not less than 75%, and the equivalent of certificates is required from the Ministry of Higher Education for non-Saudi Arabian university graduates.",
+      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of at least 75%, and the equivalent of certificates from the Ministry of Higher Education is required for graduates of non-Saudi Arabian universities.",
       "method": "argos-mt",
-      "translated_at": "2026-08-02T17:36:09.700Z"
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "7e6a204066051160f17f5eaa9209dd45c93f1e86": {
+      "source": "التسجيل والسداد لدبلوم المشارك (حضوري) في الخدمة الاجتماعية في رعاية الأيتام لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Registration and repayment of the participant &apos; s diploma in the social service in the care of orphans outside Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "98ae35ad568882a61205f6bd5d6f0a907afbf2c9": {
+      "source": "٢ أغسطس ٢٠٢٦ في ٠٨:٢٥ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2 August 2026 at 80:25 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "f8f2b019eda0b331eb76efe6b6f02bc9fb448560": {
+      "source": "الفعالية: التسجيل والسداد لدبلوم المشارك (حضوري) في الخدمة الاجتماعية في رعاية الأيتام لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: registration and payment of a participant &apos; s diploma in social service care for orphans outside of Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "bf54031dfb9cd1b7dce7b1eb3399c52ece0046e7": {
+      "source": "النافذة الزمنية: ٢ أغسطس ٢٠٢٦ في ٠٨:٢٥ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 2 August 2026 at 80:25 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "be17c2e10737ef4e1e746ef91d63139dcb6ab99a": {
+      "source": "الموعد: ٢ أغسطس ٢٠٢٦ في ٠٨:٢٥ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 2 August 2026 at 80:25 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "88565d77368e9297260c8e7578f6552b13730b31": {
+      "source": "التسجيل والسداد لدبلوم المشارك (حضوري) في الإدارة الفندقية لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Registration and repayment of the participant &apos; s diploma (home) at the hotel administration outside of Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "132815e1702bd911ff28dc91590d37e41065679d": {
+      "source": "٢ أغسطس ٢٠٢٦ في ٠٨:٢٨ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2 August 2026 at 80:28 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "453266d052cc72165e4ed6407ee53e18286e2595": {
+      "source": "الفعالية: التسجيل والسداد لدبلوم المشارك (حضوري) في الإدارة الفندقية لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: registration and payment of the participant &apos; s diploma (jouri) in the hotel administration outside of Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "5403f414d7cf8be65a9b7bb29028f2bc86a90f3a": {
+      "source": "النافذة الزمنية: ٢ أغسطس ٢٠٢٦ في ٠٨:٢٨ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 2 August 2026 at 80:28 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "3870150a966b012554e0e05a5b9bf14373b7d797": {
+      "source": "الموعد: ٢ أغسطس ٢٠٢٦ في ٠٨:٢٨ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 2 August 2026 at 80:28 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "aee299070f291636ef7c77716ebed48a0530ebe8": {
+      "source": "التسجيل والسداد لدبلوم المشارك (حضوري) في مساعد في التربية الخاصة وإدارة السلوك لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Registration and reimbursement of a participant &apos; s diploma (attendance) in an assistant in private education and conduct management outside of Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "29693faee720618e6c263c2368bfd5921208ff91": {
+      "source": "٢ أغسطس ٢٠٢٦ في ٠٨:٣٣ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2 August 2026 at 80:33 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "ca579da9443d22164e8d8f07bdc1dd202d0ad994": {
+      "source": "الفعالية: التسجيل والسداد لدبلوم المشارك (حضوري) في مساعد في التربية الخاصة وإدارة السلوك لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: registration and payment of a participant &apos; s diploma (jority) in an assistant in private education and conduct management outside of Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "faffad1d8c7601e034dc743579a35dcb4587148f": {
+      "source": "النافذة الزمنية: ٢ أغسطس ٢٠٢٦ في ٠٨:٣٣ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 2 August 2026 at 80:33 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "e35526cf2f6f1d426589383d19e7ed83f24b9140": {
+      "source": "الموعد: ٢ أغسطس ٢٠٢٦ في ٠٨:٣٣ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 2 August 2026 at 80:33 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "13610abb7c1fef42e7b407a958cbd1692a7e2d67": {
+      "source": "التسجيل والسداد لدبلوم المشارك (عن بعد) في الإرشاد السياحي لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Registration and reimbursement of participant &apos; s (remotely) diploma in tourism guidance beyond Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "e4367c1844e1510c583b929a2453f582ce19cf60": {
+      "source": "٢ أغسطس ٢٠٢٦ في ٠٨:٣٥ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2 August 2026 at 80:35 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "52196048e0ea9384f7b9b6f81c306ff58dcd7adb": {
+      "source": "الفعالية: التسجيل والسداد لدبلوم المشارك (عن بعد) في الإرشاد السياحي لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: registration and reimbursement of participant &apos; s (remotely) diploma in tourism outreach beyond Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "8432e1af78782804426ce94353d17181410c7d5b": {
+      "source": "النافذة الزمنية: ٢ أغسطس ٢٠٢٦ في ٠٨:٣٥ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 2 August 2026 at 80:35 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "3e26eca6181f31ceed33683d2f620f5bcef90520": {
+      "source": "الموعد: ٢ أغسطس ٢٠٢٦ في ٠٨:٣٥ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 2 August 2026 at 80:35 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "6600961a15a3073495b9fec0db90445723a803a1": {
+      "source": "التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة الحشود لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Recording and repayment of the participant &apos; s (remotely) diploma in crowd management out of Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "a51b885b46f09a80c33a80d4142845f8ba9d2abe": {
+      "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة. التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة الحشود لخارج مكة ضمن التعليم والتدريب في عن بعد. تبدأ الفعالية ٠٢‏/٠٨‏/٢٠٢٦، ٨:٣٨ م وتنتهي ٣٠‏/١٢‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Umm Al-Qura University Events Center.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah. Recording and reimbursement of the participant &apos; s (remotely) diploma in crowd management outside a distance education and training facility. Effectiveness begins 20/2026, 8:38 and ends 30/12/2026, 6:00 by available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Umm Al-Qura University Events Center.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "d001ffbe3e9d97091a77a20af586f61fb6ccacee": {
+      "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "a906e28b56bd8abd40b41c845cef2900b1a8c6e4": {
+      "source": "٢ أغسطس ٢٠٢٦ في ٠٨:٣٨ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2 August 2026 at 80:38 M to 30 December 2026 at 60:00 M",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "6cf88031111ff54ff778c7854ff05e8f1808bf70": {
+      "source": "الفعالية: التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة الحشود لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Recording and repayment of participant &apos; s (remotely) diploma in crowd management out of Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "248bf77ecb201814e3b375fa7ed77e77433de941": {
+      "source": "النافذة الزمنية: ٢ أغسطس ٢٠٢٦ في ٠٨:٣٨ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 2 August 2026 at 80:38 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "86986a77347b9bb4b3ef959799018df7c6fc196b": {
+      "source": "الموعد: ٢ أغسطس ٢٠٢٦ في ٠٨:٣٨ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 2 August 2026 at 80:38 m to 30 December 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "ab81362d57b66745b120a8304deb1746c3058ea2": {
+      "source": "التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة اللوجستيات وسلاسل الإمداد لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Registration and reimbursement of participant (remotely) diploma in logistics management and supply chains outside Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "f15eeafa2468194597142c8b8f55614a60632f94": {
+      "source": "٢ أغسطس ٢٠٢٦ في ٠٨:٤٢ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2 August 2026 at 80:42 M to 30 December 2026 at 60:00 M",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "5f7b472428a3c61af0a13d1a712beb7f177e7307": {
+      "source": "الفعالية: التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة اللوجستيات وسلاسل الإمداد لخارج مكة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: registration and reimbursement of participant (tele) diploma in logistics management and supply chains outside Mecca",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "6bf40ded653da4548eac440844aa092896a43c13": {
+      "source": "النافذة الزمنية: ٢ أغسطس ٢٠٢٦ في ٠٨:٤٢ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 2 August 2026 at 80:42 M to 30 December 2026 at 60:00 M",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
+    },
+    "91e7383dac65d933629b0c598574b2aa940bd069": {
+      "source": "الموعد: ٢ أغسطس ٢٠٢٦ في ٠٨:٤٢ م إلى ٣٠ ديسمبر ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 2 August 2026 at 80:42 M to 30 December 2026 at 60:00 M",
+      "method": "argos-mt",
+      "translated_at": "2026-08-02T17:55:37.615Z"
     },
     "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
       "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
@@ -60552,7 +60856,7 @@
       "target_lang": "en",
       "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
       "method": "argos-mt",
-      "translated_at": "2026-08-02T17:36:09.700Z"
+      "translated_at": "2026-08-02T17:55:37.615Z"
     },
     "5c6a9ff87c6cdb115664bc8a097d521eadf27f9f": {
       "source": "مركز الرياض للمعارض والمؤتمرات في ملهم",
@@ -60560,7 +60864,7 @@
       "target_lang": "en",
       "text": "The Riyadh International Convention Exhibition Center in Inspiration",
       "method": "argos-mt",
-      "translated_at": "2026-08-02T17:36:09.700Z"
+      "translated_at": "2026-08-02T17:55:37.615Z"
     }
   }
 }

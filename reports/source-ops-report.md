@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-08-02T17:34:11.367Z
+- generated_at: 2026-08-02T17:53:38.322Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -21,22 +21,22 @@
 - Healthy sources: 19
 - Zero-yield sources: 0
 - High-priority unattempted sources: 3
-- Candidates: 577
+- Candidates: 583
 - Actionable candidates: 8
 - Ready for review: 8
 - Ready for catalog promotion: 0
-- Linked to catalog from candidates: 543
+- Linked to catalog from candidates: 549
 - Stale unpublished candidates: 0
 - Duplicate risk: 6
 - Recommendation: ابدأ بمراجعة التكرارات المحتملة قبل اعتماد أي مرشح جديد.
 
 ## Candidate Funnel
 
-- review_status.approved-for-catalog: 543
+- review_status.approved-for-catalog: 549
 - review_status.ready-for-review: 8
 - review_status.evidence-captured: 18
 - review_status.new: 8
-- publication_gate.catalog-review: 543
+- publication_gate.catalog-review: 549
 - publication_gate.duplicate-review: 8
 - publication_gate.source-evidence: 26
 - discovery_quality.strong-lead: 19
@@ -150,7 +150,7 @@
 | 73 | GOV.SA National Platform Events | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 74 | Middle East Banking AI & Analytics Summit Official | not-collected | 0 | 1 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 75 | Middle East Enterprise AI & Analytics Summit Official | not-collected | 0 | 1 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 76 | Umm Al-Qura University Events Center | healthy | 9 | 28 | استمر بالمراجعة والتكرار قبل النشر. |
+| 76 | Umm Al-Qura University Events Center | healthy | 10 | 34 | استمر بالمراجعة والتكرار قبل النشر. |
 | 77 | LEAP Official Event and Agendas | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 78 | FII 10th Edition Official Program | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 79 | Cityscape Global Official Program | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |

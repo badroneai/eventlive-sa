@@ -1,10 +1,10 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-02T17:31:38.111Z
+- published_at: 2026-08-02T17:51:17.503Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 577
-- published_new: 6
+- candidates_seen: 583
+- published_new: 12
 - linked_existing: 533
 - blocked_remaining: 38
 - duplicate_review_alerts: 8
@@ -29,6 +29,12 @@
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
+| candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-الخدمة-الاجتماعية-في-رعاية-الأيت-20260802-6d335d51 | published | event-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-الخدمة-الاجتماعية-في-رعاية-الأيت | التسجيل والسداد لدبلوم المشارك (حضوري) في الخدمة الاجتماعية في رعاية الأيتام لخارج مكة |
+| candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-الإدارة-الفندقية-لخارج-مكة-20260802-8fcabfa2 | published | event-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-الإدارة-الفندقية-لخارج-مكة | التسجيل والسداد لدبلوم المشارك (حضوري) في الإدارة الفندقية لخارج مكة |
+| candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-مساعد-في-التربية-الخاصة-وإدارة-ا-20260802-c78c9317 | published | event-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-مساعد-في-التربية-الخاصة-وإدارة-ا | التسجيل والسداد لدبلوم المشارك (حضوري) في مساعد في التربية الخاصة وإدارة السلوك لخارج مكة |
+| candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-الإرشاد-السياحي-لخارج-مكة-20260802-c06e19e4 | published | event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-الإرشاد-السياحي-لخارج-مكة | التسجيل والسداد لدبلوم المشارك (عن بعد) في الإرشاد السياحي لخارج مكة |
+| candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-الحشود-لخارج-مكة-20260802-224c1c76 | published | event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-الحشود-لخارج-مكة | التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة الحشود لخارج مكة |
+| candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-اللوجستيات-وسلاسل-الإمداد-20260802-84ca967e | published | event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-اللوجستيات-وسلاسل-الإمداد | التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة اللوجستيات وسلاسل الإمداد لخارج مكة |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
