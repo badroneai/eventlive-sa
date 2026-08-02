@@ -54,6 +54,13 @@ export const CITY_NAME_REGISTRY = Object.freeze([
   // because its source events carry the Arabic city string — the registry
   // mirrors site reality rather than inventing a latin slug with no page.
   { en: 'Al-Aflaj', ar: 'الأفلاج', slug: 'الافلاج' },
+  // Qassim governorates added with the 2026-08-02 Qassim-region destination
+  // data (owner-approved places-only city pages — Emirate tourism reference).
+  { en: 'Al Bukayriyah', ar: 'البكيرية', slug: 'al-bukayriyah' },
+  { en: 'Al Mithnab', ar: 'المذنب', slug: 'al-mithnab' },
+  { en: 'Uyun Al Jawa', ar: 'عيون الجواء', slug: 'uyun-al-jawa' },
+  { en: 'Riyadh Al Khabra', ar: 'رياض الخبراء', slug: 'riyadh-al-khabra' },
+  { en: 'Al Badai', ar: 'البدائع', slug: 'al-badai' },
   { en: 'Jubail', ar: 'الجبيل', slug: 'jubail' },
   { en: 'Nationwide', ar: 'على مستوى المملكة', slug: 'nationwide' },
   { en: 'Global', ar: 'دولي', slug: 'global' },

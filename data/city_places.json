@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated_at": "2026-08-02T00:00:00Z",
+ "updated_at": "2026-08-02T12:00:00Z",
  "cities": [
   {
    "city_slug": "abha",
@@ -544,6 +544,73 @@
    ]
   },
   {
+   "city_slug": "al-badai",
+   "intro_ar": "البدائع محافظة زراعية جنوب غرب القصيم، تحيط بها مرتفعات صخرية متناثرة ومنتزهات عامة داخل نطاق البلدة.",
+   "intro_en": "Al-Badai is an agricultural governorate southwest of Qassim, ringed by scattered rocky hills and public parks within the town's limits.",
+   "places": [
+    {
+     "id": "al-badai-al-mamlaka-park",
+     "name_ar": "منتزه المملكة",
+     "name_en": "Al-Mamlaka (Kingdom) Park",
+     "category": "nature",
+     "description_ar": "منتزه عام داخل البدائع يوفر مساحة خضراء للأهالي، ويُعد من نقاط التنزه المعتادة داخل حدود المحافظة.",
+     "description_en": "A public park within Al-Badai offering green space for residents, one of the governorate's regular recreation spots.",
+     "coordinates": {
+      "lat": 25.9463845,
+      "lon": 43.7399116
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/988076102",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "al-badai-madabi-peak",
+     "name_ar": "المضابيع",
+     "name_en": "Al-Madabi'",
+     "category": "nature",
+     "description_ar": "مرتفع صخري جنوب البدائع مسجل ضمن قوائم المعالم الجغرافية للمنطقة، ويُستخدم كنقطة مرجعية للرحلات البرية المحيطة بالمحافظة.",
+     "description_en": "A rocky hill south of Al-Badai listed among the region's geographic features, used as a reference point for desert trips around the governorate.",
+     "coordinates": {
+      "lat": 25.893453,
+      "lon": 43.735146
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/1236367180",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "al-badai-sumr-badrah",
+     "name_ar": "سمر بدرة",
+     "name_en": "Sumr Badrah",
+     "category": "nature",
+     "description_ar": "مجموعة تلال صخرية شمال شرق البدائع، من المعالم الطبيعية المتناثرة حول المحافظة والتي يقصدها هواة استكشاف الصحراء.",
+     "description_en": "A cluster of rocky hills northeast of Al-Badai, among the scattered natural landmarks around the governorate visited by desert-exploration enthusiasts.",
+     "coordinates": {
+      "lat": 25.9461763,
+      "lon": 43.6022725
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/1237556830",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    }
+   ]
+  },
+  {
    "city_slug": "al-baha",
    "intro_ar": "عاصمة منطقة الباحة على حافة جبال السروات، تجمع بين غابات رغدان الباردة صيفاً وقرية ذي عين الرخامية التي تتشبث بصخرة بيضاء فوق واد أخضر.",
    "intro_en": "Al-Baha city sits on the edge of the Sarawat range, pairing the cool summer forests of Raghadan with the white-marble cliffside village of Thee Ain.",
@@ -688,6 +755,263 @@
      },
      "status": "reviewed",
      "last_verified": "2026-08-01"
+    }
+   ]
+  },
+  {
+   "city_slug": "al-bukayriyah",
+   "intro_ar": "البكيرية محافظة زراعية في غرب القصيم، تشتهر بمقصوراتها التراثية الطينية التي استقبلت أئمة الدولة السعودية الأولى وملوكها، إلى جانب محمياتها البرية الخاصة ومزارعها المفتوحة للزوار.",
+   "intro_en": "Al-Bukayriyah is an agricultural governorate in western Qassim, known for its heritage clay 'maqsourat' that once hosted early Saudi imams and kings, alongside private nature reserves and farms open to visitors.",
+   "places": [
+    {
+     "id": "al-bukayriyah-rajhi-maqsoura",
+     "name_ar": "مقصورة الراجحي",
+     "name_en": "Al-Rajhi Maqsoura",
+     "category": "culture",
+     "description_ar": "مبنى طيني ضخم من طابقين شُيّد عام 1190هـ شمال البكيرية، بجدران يبلغ سمكها نحو مترين، ويضم بيوتًا طينية ومسجدًا وبئرًا تقليدية ضمن موقع تاريخي يعود لأكثر من 250 عامًا.",
+     "description_en": "A massive two-storey clay building erected in 1190 AH (c. 1776 CE) north of Al-Bukayriyah, with walls roughly two metres thick, comprising mud houses, a mosque and a traditional well within a site over 250 years old.",
+     "coordinates": {
+      "lat": 26.1489258,
+      "lon": 43.6703606
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/11055662513",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02",
+     "official_link": "https://www.visitsaudi.com/ar/qassim/attractions/maqsourat-al-rajhi"
+    },
+    {
+     "id": "al-bukayriyah-suwailem-maqsoura",
+     "name_ar": "مقصورة السويلم التاريخية",
+     "name_en": "Al-Suwailem Historic Maqsoura",
+     "category": "culture",
+     "description_ar": "مبنى أثري كان مقرًا للإمارة وسكنًا لأسرة آل سويلم، زاره الإمام فيصل بن تركي والملك عبدالعزيز عام 1325هـ، ويُعد من أبرز معالم البكيرية التراثية.",
+     "description_en": "A historic building that once served as a seat of local governance and home to the Al-Suwailem family, visited by Imam Faisal bin Turki and King Abdulaziz in 1325 AH (1907 CE) — one of Al-Bukayriyah's most significant heritage landmarks.",
+     "coordinates": {
+      "lat": 26.152334,
+      "lon": 43.665318
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/11055676341",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02",
+     "official_link": "https://saudipedia.com/article/15949"
+    },
+    {
+     "id": "al-bukayriyah-qarat-rashid",
+     "name_ar": "قارة راشد",
+     "name_en": "Qarat Rashid",
+     "category": "nature",
+     "description_ar": "مرتفع صخري بارز عند مشارف البكيرية، يُستخدم كنقطة مراقبة طبيعية ووجهة قصيرة لعشاق التصوير والتنزه البري.",
+     "description_en": "A prominent rocky outcrop on the edge of Al-Bukayriyah, used as a natural viewpoint and a short stop for photography and desert outings.",
+     "coordinates": {
+      "lat": 26.0848667,
+      "lon": 43.5488339
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/11870950975",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "al-bukayriyah-al-marqab-museum",
+     "name_ar": "المرقب",
+     "name_en": "Al-Marqab Museum",
+     "category": "culture",
+     "description_ar": "متحف أهلي صغير داخل البكيرية يعرض مقتنيات تراثية محلية، ويأتي ضمن سلسلة المتاحف الأهلية المنتشرة في محافظات القصيم.",
+     "description_en": "A small private museum in Al-Bukayriyah displaying local heritage items, part of the network of family-run museums spread across Qassim's governorates.",
+     "coordinates": {
+      "lat": 26.1213808,
+      "lon": 43.6776503
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/13142007090",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "al-bukayriyah-barrak-reserve",
+     "name_ar": "محمية البراك",
+     "name_en": "Al-Barrak Reserve",
+     "category": "nature",
+     "description_ar": "محمية خاصة أنشأها مهتم بالنباتات البرية وتربية الطيور في محيط البكيرية، وتضم مساحات خضراء ومرافق لمشاهدة الحياة البرية.",
+     "description_en": "A private reserve created by an enthusiast of wild plants and bird-keeping on the outskirts of Al-Bukayriyah, featuring green areas and facilities for viewing wildlife.",
+     "coordinates": {
+      "lat": 26.2520046,
+      "lon": 43.6617986
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/8361532484",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "al-bukayriyah-khunayfisah-ruins",
+     "name_ar": "قليب خُنَيفِسَة",
+     "name_en": "Qalib Khunayfisah Ruins",
+     "category": "culture",
+     "description_ar": "موقع أثري متبقٍ من بئر ومنشآت قديمة على أطراف البكيرية، يوثق نمط الاستيطان الزراعي المبكر في المحافظة.",
+     "description_en": "An archaeological site with the remains of an old well and structures on the outskirts of Al-Bukayriyah, documenting the governorate's early agricultural settlement pattern.",
+     "coordinates": {
+      "lat": 26.2635773,
+      "lon": 43.6035094
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/11871306548",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "al-bukayriyah-al-midmar-park",
+     "name_ar": "حديقة المضمار",
+     "name_en": "Al-Midmar Park",
+     "category": "nature",
+     "description_ar": "حديقة عامة داخل البكيرية قريبة من مضمار محلي، توفر مساحة خضراء للمشي والجلوس لسكان المحافظة.",
+     "description_en": "A public garden in Al-Bukayriyah near a local track, offering green space for walking and sitting for residents of the governorate.",
+     "coordinates": {
+      "lat": 26.159732,
+      "lon": 43.6114319
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/230199384",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    }
+   ]
+  },
+  {
+   "city_slug": "al-mithnab",
+   "intro_ar": "المذنب محافظة زراعية شرق القصيم تشتهر بواحات النخيل الكثيفة وسوقها الشعبي القديم الذي حافظ على طابعه التراثي لأكثر من 250 عامًا.",
+   "intro_en": "Al-Mithnab is an agricultural governorate east of Qassim known for its dense palm oases and an old popular souq that has kept its heritage character for more than 250 years.",
+   "places": [
+    {
+     "id": "al-mithnab-heritage-town",
+     "name_ar": "بلدة المذنب التراثية",
+     "name_en": "Al-Mithnab Heritage Town",
+     "category": "culture",
+     "description_ar": "بلدة تراثية يعود تاريخها إلى نحو 700 عام في قلب محافظة المذنب، تتوسطها ساحة يحيط بها نحو 33 محلًا كانت أسواقًا قديمة وتحوّلت إلى معرض للقطع الأثرية والمشغولات اليدوية، ونالت جوائز وطنية للحفاظ على التراث العمراني.",
+     "description_en": "A heritage town roughly 700 years old at the heart of Al-Mithnab, centred on a square ringed by some 33 shops that were once an old market and now display antiques and local handicrafts; it has won national urban-heritage preservation awards.",
+     "coordinates": {
+      "lat": 25.8681518,
+      "lon": 44.227195
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/315139966",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02",
+     "official_link": "https://saudipedia.com/article/11002"
+    },
+    {
+     "id": "al-mithnab-majlis-old-souq",
+     "name_ar": "سوق المجلس التراثي",
+     "name_en": "Al-Majlis Heritage Souq",
+     "category": "culture",
+     "description_ar": "سوق شعبي قديم داخل بلدة المذنب التراثية، يعود بشكله الحالي لأكثر من 250 عامًا، ويقيم مزادات يومية على القطع الأثرية إلى جانب عروض المشغولات اليدوية المحلية.",
+     "description_en": "An old popular souq within Al-Mithnab's heritage town, dating in its current form to over 250 years, holding daily auctions of antiques alongside displays of local handicrafts.",
+     "coordinates": {
+      "lat": 25.868356,
+      "lon": 44.22761
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/2982081534",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "al-mithnab-khashm-khartam",
+     "name_ar": "خشم خرطم",
+     "name_en": "Khashm Khartam",
+     "category": "nature",
+     "description_ar": "مرتفع صخري عند أطراف المذنب يُستخدم كمعلم طبيعي للتوجه ونقطة مشاهدة للمساحات الزراعية المحيطة بالمدينة.",
+     "description_en": "A rocky outcrop on the edge of Al-Mithnab, used as a natural landmark and a viewpoint over the farmland surrounding the town.",
+     "coordinates": {
+      "lat": 25.894927,
+      "lon": 44.225739
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/1236366961",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "al-mithnab-lake-park",
+     "name_ar": "منتزه البحيرة",
+     "name_en": "Al-Buhaira (Lake) Park",
+     "category": "nature",
+     "description_ar": "منتزه عام في المذنب يحيط ببركة مائية، ويوفر مساحة هادئة للمشي والجلوس داخل المدينة.",
+     "description_en": "A public park in Al-Mithnab built around a small water pool, offering a quiet space for walking and sitting within the town.",
+     "coordinates": {
+      "lat": 25.879798,
+      "lon": 44.2064323
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/979776881",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "al-mithnab-barq-al-haya-camp",
+     "name_ar": "مخيم برق الحيا",
+     "name_en": "Barq Al-Haya Camp",
+     "category": "adventure",
+     "description_ar": "موقع تخييم صحراوي في محيط المذنب يقصده هواة المبيت البري وسط واحات النخيل المحيطة بالمحافظة.",
+     "description_en": "A desert camping spot on the outskirts of Al-Mithnab, favored by overnight desert campers amid the palm oases surrounding the governorate.",
+     "coordinates": {
+      "lat": 25.8865114,
+      "lon": 44.2676497
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/10688416607",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
     }
    ]
   },
@@ -1614,6 +1938,87 @@
      },
      "status": "reviewed",
      "last_verified": "2026-08-01"
+    },
+    {
+     "id": "buraydah-qassim-national-park",
+     "name_ar": "منتزه القصيم الوطني",
+     "name_en": "Qassim National Park",
+     "category": "nature",
+     "description_ar": "منتزه واسع شرق بريدة تديره أمانة القصيم ضمن برامج التشجير والتنزه العائلي، ويضم مسارات مشي ومساحات خضراء ممتدة تستقطب الأهالي خصوصًا في الفصل الربيعي. شهد المنتزه أيضًا برامج لإكثار حيوانات برية مثل المها العربي.",
+     "description_en": "A large park east of Buraydah run under the municipality's tree-planting and family-recreation program, popular for its walking trails and open green space especially in spring; it has also hosted wildlife-breeding efforts including Arabian oryx.",
+     "coordinates": {
+      "lat": 26.529646,
+      "lon": 44.142272
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/1022755965",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "buraydah-king-khalid-park",
+     "name_ar": "حديقة الملك خالد",
+     "name_en": "King Khalid Park",
+     "category": "nature",
+     "description_ar": "حديقة عامة في حي الصفراء ببريدة، مجهزة بمسارات للمشي والجري ومساحات خضراء ومقاعد للجلوس، والدخول إليها مجاني مع مواقف سيارات متاحة. تُعد من الوجهات الترفيهية المعتادة للعائلات داخل المدينة.",
+     "description_en": "A public park in Buraydah's Al-Safra district with walking and jogging paths, green lawns and seating; entry and parking are free, making it a regular family destination inside the city.",
+     "coordinates": {
+      "lat": 26.352854,
+      "lon": 43.957733
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/666903099",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02",
+     "official_link": "https://www.visitsaudi.com/ar/qassim/attractions/king-khalid-park-in-buraidah"
+    },
+    {
+     "id": "buraydah-al-uqailat-park",
+     "name_ar": "حديقة العقيلات",
+     "name_en": "Al-Uqailat Park",
+     "category": "nature",
+     "description_ar": "حديقة منظمة داخل بريدة توفر مصلى ومناطق مخصصة للشواء وألعابًا للأطفال، وتُستخدم بكثافة للمشي وممارسة الرياضة الخفيفة مساءً.",
+     "description_en": "A well-kept city park offering a prayer area, barbecue spots and a children's play zone, popular in the evenings for walking and light exercise.",
+     "coordinates": {
+      "lat": 26.3503472,
+      "lon": 43.9610165
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/666903101",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "buraydah-al-wakalah-family-park",
+     "name_ar": "حديقة الوكالة للعائلات",
+     "name_en": "Al-Wakalah Family Park",
+     "category": "entertainment",
+     "description_ar": "حديقة عائلية صغيرة في حي الصناعة ببريدة، قريبة من عدد من الحدائق المجاورة، وتوفر مساحة ترفيهية هادئة للعائلات داخل الأحياء السكنية.",
+     "description_en": "A small family park in Buraydah's Al-Sina'ah district, close to several neighboring gardens, offering a quiet recreational space within the residential area.",
+     "coordinates": {
+      "lat": 26.3378498,
+      "lon": 43.9616998
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/121603415",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
     }
    ]
   },
@@ -4298,6 +4703,87 @@
      },
      "status": "reviewed",
      "last_verified": "2026-08-01"
+    },
+    {
+     "id": "rass-jabal-khazaz",
+     "name_ar": "جبل خزاز",
+     "name_en": "Jabal Khazaz",
+     "category": "nature",
+     "description_ar": "جبل جرانيتي أحمر يرتفع نحو 1059 مترًا جنوب محافظة الرس بالقرب من بلدة دخنة، ارتبط اسمه بمعركة عربية قديمة قبل الإسلام تُعرف بـ«يوم خزاز». تحوّل محيط الجبل إلى منتزه طبيعي يجذب هواة الرحلات البرية.",
+     "description_en": "A red granite mountain rising about 1,059 metres south of Al-Rass near the town of Dukhna, historically linked to the pre-Islamic battle known as 'Yawm Khazaz.' Its surroundings have been developed into a nature park popular with desert-trip visitors.",
+     "coordinates": {
+      "lat": 25.4067533,
+      "lon": 43.5631292
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/11871768362",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02",
+     "official_link": "https://ar.wikipedia.org/wiki/%D8%AC%D8%A8%D9%84_%D8%AE%D8%B2%D8%A7%D8%B2"
+    },
+    {
+     "id": "rass-reef-julas",
+     "name_ar": "ريف جُلاس",
+     "name_en": "Reef Julas",
+     "category": "food",
+     "description_ar": "وجهة ريفية متكاملة في محافظة الرس تجمع عددًا من المقاهي والمطاعم داخل أجواء مزرعية طبيعية، وتفتح على مدار اليوم لاستقبال الزوار من مختلف مناطق القصيم.",
+     "description_en": "An integrated rural destination in Al-Rass combining several cafés and restaurants within a farm-style natural setting, open around the clock to visitors from across Qassim.",
+     "coordinates": {
+      "lat": 25.8491252,
+      "lon": 43.5202802
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/12580989454",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "rass-jabal-al-qashey",
+     "name_ar": "جبل القشيع الشرقي",
+     "name_en": "Jabal Al-Qashey (East)",
+     "category": "nature",
+     "description_ar": "سلسلة جبال القشيع الشرقية جنوب مدينة الرس، من المعالم الطبيعية التي يقصدها هواة التصوير والرحلات البرية في محيط المحافظة.",
+     "description_en": "The eastern Jabal Al-Qashey range south of Al-Rass city, a natural landmark favored by photographers and desert-trip enthusiasts around the governorate.",
+     "coordinates": {
+      "lat": 25.760252,
+      "lon": 43.522264
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/1236395785",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "rass-wanasa-park",
+     "name_ar": "ملاهي وناسة",
+     "name_en": "Wanasa Amusement Park",
+     "category": "entertainment",
+     "description_ar": "مدينة ألعاب ترفيهية داخل محافظة الرس تضم مرافق للأطفال والعائلات، وتُعد من الخيارات الترفيهية المتاحة داخل المدينة لغير عشاق الأنشطة البرية.",
+     "description_en": "An amusement park within Al-Rass city offering rides and facilities for children and families — an indoor-adjacent alternative to the governorate's outdoor attractions.",
+     "coordinates": {
+      "lat": 25.8670667,
+      "lon": 43.506529
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/12664731822",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
     }
    ]
   },
@@ -4633,6 +5119,74 @@
      },
      "status": "reviewed",
      "last_verified": "2026-08-01"
+    }
+   ]
+  },
+  {
+   "city_slug": "riyadh-al-khabra",
+   "intro_ar": "رياض الخبراء محافظة على ضفاف وادي الرمة غرب القصيم، تجمع بين قرية طينية تراثية مسجلة ضمن التراث العمراني الوطني وأسواقها المحلية للتمور.",
+   "intro_en": "Riyadh Al-Khabra is a governorate on the banks of Wadi Al-Rummah west of Qassim, combining a heritage clay village listed in the national urban-heritage register with its local date markets.",
+   "places": [
+    {
+     "id": "riyadh-al-khabra-nufayed-village",
+     "name_ar": "بلدة النفيد التراثية",
+     "name_en": "Al-Nufayed Heritage Village",
+     "category": "culture",
+     "description_ar": "قرية طينية تاريخية على ضفاف وادي الرمة تضم نحو ستين مبنى بعمارة نجدية تقليدية تحيط بها مزارع النخيل، وأُدرجت ضمن سجل التراث العمراني لدى هيئة التراث السعودية.",
+     "description_en": "A historic mud-brick village on the banks of Wadi Al-Rummah comprising around sixty buildings of traditional Najdi architecture surrounded by palm farms, listed in the Saudi Heritage Commission's urban heritage register.",
+     "coordinates": {
+      "lat": 26.0363417,
+      "lon": 43.5640074
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/12356223716",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02",
+     "official_link": "https://ar.wikipedia.org/wiki/%D8%A8%D9%84%D8%AF%D8%A9_%D8%A7%D9%84%D9%86%D9%81%D9%8A%D8%AF_%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB%D9%8A%D8%A9"
+    },
+    {
+     "id": "riyadh-al-khabra-dates-market",
+     "name_ar": "سوق رياض الخبراء للتمور المحلية",
+     "name_en": "Riyadh Al-Khabra Local Dates Market",
+     "category": "food",
+     "description_ar": "سوق محلي لبيع التمور في رياض الخبراء، يعرض إنتاج المزارع المحيطة ويُعد نقطة تسوق معتادة لأهالي المحافظة خلال موسم الحصاد.",
+     "description_en": "A local dates market in Riyadh Al-Khabra selling produce from surrounding farms, a regular shopping stop for residents during the harvest season.",
+     "coordinates": {
+      "lat": 26.0562843,
+      "lon": 43.5622458
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/6893297724",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "riyadh-al-khabra-boulevard",
+     "name_ar": "جادة الخبراء",
+     "name_en": "Al-Khabra Boulevard",
+     "category": "entertainment",
+     "description_ar": "جادة مشاة داخل رياض الخبراء تُستخدم للتنزه المسائي، وتربط بين عدد من نقاط الاهتمام في وسط المحافظة.",
+     "description_en": "A pedestrian boulevard in Riyadh Al-Khabra used for evening walks, linking several points of interest in the governorate's centre.",
+     "coordinates": {
+      "lat": 26.0888896,
+      "lon": 43.5855707
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/1540671394",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
     }
    ]
   },
@@ -5366,6 +5920,300 @@
      },
      "status": "reviewed",
      "last_verified": "2026-08-01"
+    }
+   ]
+  },
+  {
+   "city_slug": "unaizah",
+   "intro_ar": "عنيزة مدينة تراثية عريقة في قلب القصيم، تُعرف ببيوتها الطينية القديمة وساحاتها التاريخية وارتباطها الطويل بالحركة الأدبية، وتحافظ على واجهة معمارية نجدية أصيلة وسط تمددها العمراني الحديث.",
+   "intro_en": "Unaizah is a historic Qassim city known for its old mud-brick houses, heritage squares and long literary tradition, preserving a distinctly Najdi architectural face amid its modern growth.",
+   "places": [
+    {
+     "id": "unaizah-al-bassam-heritage-house",
+     "name_ar": "بيت البسام",
+     "name_en": "Al Bassam Heritage House",
+     "category": "culture",
+     "description_ar": "بيت تراثي مبني بالطين في قلب عنيزة القديمة، يمثل نموذجًا للعمارة النجدية التقليدية بطوابقه وأفنيته الداخلية، ويُعرّف الزوار بأسلوب الحياة قبل التمدن.",
+     "description_en": "A traditional mud-brick house in old Unaizah, an example of classic Najdi architecture with its multiple floors and inner courtyards, introducing visitors to pre-modern daily life.",
+     "coordinates": {
+      "lat": 26.0893,
+      "lon": 43.9672
+     },
+     "source": {
+      "origin": "wikidata",
+      "source_id": "Q20393446",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "CC0"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "unaizah-al-junaini-palace",
+     "name_ar": "قصر الجنيني الأثري",
+     "name_en": "Al-Junaini Archaeological Palace",
+     "category": "culture",
+     "description_ar": "موقع أثري داخل عنيزة يضم بقايا قصر طيني قديم، ويُصنَّف ضمن مواقع التراث العمراني التي توثق تاريخ المدينة قبل قرن من الزمن.",
+     "description_en": "An archaeological site in Unaizah containing the remains of an old clay-built palace, classified among the urban heritage sites documenting the city's history a century back.",
+     "coordinates": {
+      "lat": 26.082812,
+      "lon": 43.985374
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/4268802190",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "unaizah-al-salihi-house",
+     "name_ar": "بيت الصالحي التراثي",
+     "name_en": "Al-Salihi Heritage House",
+     "category": "culture",
+     "description_ar": "بيت طيني تراثي في عنيزة القديمة يعكس نمط السكن التقليدي بالمدينة، ويقع ضمن الأحياء التاريخية التي تحتفظ بنسيجها العمراني الأصلي.",
+     "description_en": "A heritage mud-brick house in old Unaizah reflecting the city's traditional residential style, located within the historic quarters that retain their original urban fabric.",
+     "coordinates": {
+      "lat": 26.097426,
+      "lon": 43.974323
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/4269479795",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "unaizah-clock-square",
+     "name_ar": "ساعة عنيزة",
+     "name_en": "Unaizah Clock Square",
+     "category": "culture",
+     "description_ar": "ساحة وسط مدينة عنيزة تتوسطها ساعة تُعد من معالمها المعروفة محليًا، وتُستخدم كنقطة التقاء ومرجع مكاني للزوار داخل المدينة القديمة.",
+     "description_en": "A central Unaizah square marked by a landmark clock, used locally as a meeting point and spatial reference within the old city.",
+     "coordinates": {
+      "lat": 26.0911744,
+      "lon": 43.9873739
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/12736119535",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "unaizah-al-kitab-square",
+     "name_ar": "ميدان الكتاب",
+     "name_en": "Al-Kitab (Book) Square",
+     "category": "culture",
+     "description_ar": "ميدان عام في عنيزة يحمل اسم «ميدان الكتاب»، ويعكس ارتباط المدينة التاريخي بالحركة الأدبية والمكتبات التي اشتهرت بها منذ عقود.",
+     "description_en": "A public square in Unaizah named 'Al-Kitab (The Book) Square,' reflecting the city's long-standing association with literature and the bookshops it has been known for over the decades.",
+     "coordinates": {
+      "lat": 26.0867612,
+      "lon": 43.9635388
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/765938073",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "unaizah-doha-park",
+     "name_ar": "حديقة الدوحة",
+     "name_en": "Doha Park",
+     "category": "nature",
+     "description_ar": "حديقة عامة في حي الدوحة بعنيزة، توفر مساحات خضراء ومسارات مشي للأهالي داخل الأحياء السكنية الجنوبية للمدينة.",
+     "description_en": "A public park in Unaizah's Al-Doha district, offering green space and walking paths for residents in the city's southern neighborhoods.",
+     "coordinates": {
+      "lat": 26.0378684,
+      "lon": 43.9791185
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/524827461",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "unaizah-al-hajeb-parks",
+     "name_ar": "منتزهات الحاجب",
+     "name_en": "Al-Hajeb Parks",
+     "category": "nature",
+     "description_ar": "مجموعة منتزهات في محيط عنيزة الغربي، من الوجهات المعتادة للنزهات العائلية القصيرة داخل حدود المدينة.",
+     "description_en": "A cluster of parks on Unaizah's western edge, a familiar spot for short family outings within the city limits.",
+     "coordinates": {
+      "lat": 26.0389539,
+      "lon": 43.9564493
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/524841795",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "unaizah-national-park",
+     "name_ar": "منتزه عنيزة الوطني",
+     "name_en": "Unaizah National Park",
+     "category": "nature",
+     "description_ar": "منتزه وطني جنوب عنيزة يوفر مساحة طبيعية واسعة للتنزه، ويُعد من أكبر المساحات الخضراء المخصصة للزوار في محيط المدينة.",
+     "description_en": "A national park south of Unaizah offering a large open natural space for outings, among the biggest dedicated green areas around the city.",
+     "coordinates": {
+      "lat": 25.9611515,
+      "lon": 43.9556501
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/736940859",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "unaizah-jabal-takrouni",
+     "name_ar": "جبل تكروني",
+     "name_en": "Jabal Takrouni",
+     "category": "adventure",
+     "description_ar": "أكمة صخرية داكنة جنوب غرب عنيزة بطول نحو كيلومتر، تكشف الرياح أحيانًا عن نقوش ثمودية قديمة على صخورها، وتقع ضمن منطقة منتزهات الغضا التي تجذب هواة الاستكشاف البري.",
+     "description_en": "A dark rocky ridge southwest of Unaizah about a kilometre long, where winds occasionally expose ancient Thamudic inscriptions on the rock; it lies within the Al-Ghada parks area favored by desert explorers.",
+     "coordinates": {
+      "lat": 25.9631691,
+      "lon": 43.9433928
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/7211999652",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    }
+   ]
+  },
+  {
+   "city_slug": "uyun-al-jawa",
+   "intro_ar": "عيون الجواء محافظة شمالية في القصيم، معروفة بصخرتها المرتبطة بالشاعر عنترة بن شداد وبمرتفعاتها الصحراوية المتناثرة حول بلدتها.",
+   "intro_en": "Uyun Al-Jawa is a northern Qassim governorate known for the rock associated with the poet Antarah ibn Shaddad and the scattered desert hills surrounding its town.",
+   "places": [
+    {
+     "id": "uyun-al-jawa-antarah-rock",
+     "name_ar": "صخرة عنترة بن شداد",
+     "name_en": "Antarah ibn Shaddad's Rock",
+     "category": "culture",
+     "description_ar": "صخرة طبيعية شمال عيون الجواء ترتبط بأساطير محلية عن الشاعر الجاهلي عنترة بن شداد، وتُعد من أشهر المعالم الطبيعية التي يقصدها زوار المحافظة.",
+     "description_en": "A natural rock formation north of Uyun Al-Jawa linked in local lore to the pre-Islamic poet Antarah ibn Shaddad, one of the governorate's best-known natural landmarks for visitors.",
+     "coordinates": {
+      "lat": 26.5509102,
+      "lon": 43.5952833
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/8944273117",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "uyun-al-jawa-mashqouq-well",
+     "name_ar": "بئر المشقوق",
+     "name_en": "Al-Mashqouq Well",
+     "category": "culture",
+     "description_ar": "بئر قديمة ضمن موقع أثري شمال عيون الجواء، توثق مصادر المياه التقليدية التي اعتمد عليها سكان المنطقة قبل شبكات المياه الحديثة.",
+     "description_en": "An old well within an archaeological site north of Uyun Al-Jawa, documenting the traditional water sources local residents relied on before modern water networks.",
+     "coordinates": {
+      "lat": 26.506561,
+      "lon": 43.6281352
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/9698839005",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "uyun-al-jawa-al-watan-park",
+     "name_ar": "حديقة الوطن",
+     "name_en": "Al-Watan Park",
+     "category": "nature",
+     "description_ar": "حديقة عامة قريبة من مركز بلدة عيون الجواء، توفر مساحة خضراء ومرافق ترفيهية بسيطة لسكان المحافظة.",
+     "description_en": "A public park close to the centre of Uyun Al-Jawa town, offering green space and simple recreational facilities for governorate residents.",
+     "coordinates": {
+      "lat": 26.4859007,
+      "lon": 43.6377657
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/6612252685",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "uyun-al-jawa-king-salman-park",
+     "name_ar": "منتزه الملك سلمان",
+     "name_en": "King Salman Park",
+     "category": "nature",
+     "description_ar": "منتزه عام في عيون الجواء يحمل اسم الملك سلمان، ويُعد من نقاط التنزه الرئيسية داخل المحافظة.",
+     "description_en": "A public park in Uyun Al-Jawa named after King Salman, one of the governorate's main recreational spots.",
+     "coordinates": {
+      "lat": 26.5006949,
+      "lon": 43.6180264
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "way/1053590048",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
+    },
+    {
+     "id": "uyun-al-jawa-jabal-al-hallah",
+     "name_ar": "جبل الحَلَّة",
+     "name_en": "Jabal Al-Hallah",
+     "category": "adventure",
+     "description_ar": "مرتفع صحراوي شمال شرق عيون الجواء ضمن سلسلة تلال وأضلاع صخرية متناثرة حول المحافظة، يقصده هواة الرحلات البرية.",
+     "description_en": "A desert hill northeast of Uyun Al-Jawa, part of a scattered range of ridges around the governorate favored by desert-trip enthusiasts.",
+     "coordinates": {
+      "lat": 26.5038319,
+      "lon": 43.5823414
+     },
+     "source": {
+      "origin": "osm",
+      "source_id": "node/11870047908",
+      "retrieved_at": "2026-08-02T09:50:32Z",
+      "license": "ODbL"
+     },
+     "status": "reviewed",
+     "last_verified": "2026-08-02"
     }
    ]
   },
