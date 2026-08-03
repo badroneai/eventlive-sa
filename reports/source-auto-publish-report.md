@@ -1,18 +1,17 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-02T20:06:40.641Z
+- published_at: 2026-08-03T04:10:33.730Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 588
-- published_new: 11
-- linked_existing: 538
-- blocked_remaining: 39
+- published_new: 7
+- linked_existing: 543
+- blocked_remaining: 38
 - duplicate_review_alerts: 8
 
 ## Blocked summary
 
 - possible duplicate requires review: exact-title-city-source-conflict: 6
-- possible duplicate already exists: event-madinah-dates-season-2026: 1
 - linked catalog row event-aseer-season was superseded by dedupe: 2
 - publication gate source-evidence is not auto-publishable: 14
 - unknown category requires review: 10
@@ -30,11 +29,7 @@
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
-| candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-الابتكار-في-ريادة-الأعمال-مع-ال-20260802-6e46a52a | published | event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-الابتكار-في-ريادة-الأعمال-مع-ال | التسجيل والسداد لدبلوم المشارك (عن بعد) في الابتكار في ريادة الأعمال مع الشركاء |
-| candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-المشاريع-مع-الشركاء-20260802-28e810a6 | published | event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-المشاريع-مع-الشركاء | التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة المشاريع مع الشركاء |
-| candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-التسويق-التطبيقي-مع-الشركاء-20260802-c19f7ac5 | published | event-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-التسويق-التطبيقي-مع-الشركاء | التسجيل والسداد لدبلوم المتوسط (عن بعد) في التسويق التطبيقي مع الشركاء |
-| candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-أمن-المعلومات-مع-الشركاء-20260802-1a84c3bc | published | event-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-أمن-المعلومات-مع-الشركاء | التسجيل والسداد لدبلوم المتوسط (عن بعد) في أمن المعلومات مع الشركاء |
-| candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-اللغة-الإنجليزية-المهنية-مع-الش-20260802-7ea2fdc6 | published | event-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-اللغة-الإنجليزية-المهنية-مع-الش | التسجيل والسداد لدبلوم المتوسط (عن بعد) في اللغة الإنجليزية المهنية مع الشركاء |
+| candidate-ithra-events-ithra-art-prize-exhibition-20260803-83c2ab55 | published | event-ithra-art-prize-exhibition | Ithra Art Prize Exhibition |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -204,6 +199,11 @@
 | candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-الإرشاد-السياحي-مع-الشركاء-20260802-c06e19e4 | linked-existing | event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-الإرشاد-السياحي-لخارج-مكة | already linked to catalog event |
 | candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-الحشود-مع-الشركاء-20260802-224c1c76 | linked-existing | event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-الحشود-لخارج-مكة | already linked to catalog event |
 | candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-اللوجستيات-وسلاسل-الإمداد-20260802-84ca967e | linked-existing | event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-اللوجستيات-وسلاسل-الإمداد | already linked to catalog event |
+| candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-الابتكار-في-ريادة-الأعمال-مع-ال-20260802-6e46a52a | linked-existing | event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-الابتكار-في-ريادة-الأعمال-مع-ال | already linked to catalog event |
+| candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-المشاريع-مع-الشركاء-20260802-28e810a6 | linked-existing | event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-المشاريع-مع-الشركاء | already linked to catalog event |
+| candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-التسويق-التطبيقي-مع-الشركاء-20260802-c19f7ac5 | linked-existing | event-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-التسويق-التطبيقي-مع-الشركاء | already linked to catalog event |
+| candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-أمن-المعلومات-مع-الشركاء-20260802-1a84c3bc | linked-existing | event-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-أمن-المعلومات-مع-الشركاء | already linked to catalog event |
+| candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-اللغة-الإنجليزية-المهنية-مع-الش-20260802-7ea2fdc6 | linked-existing | event-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-اللغة-الإنجليزية-المهنية-مع-الش | already linked to catalog event |
 | candidate-misk-hub-programs-nonprofit-sector-skills-program-20260803-075740c9 | linked-existing | event-nonprofit-sector-skills-program | already linked to catalog event |
 | candidate-ithra-events-childrens-museum-free-monday-20260803-15ad7731 | linked-existing | event-childrens-museum-free-monday | already linked to catalog event |
 | candidate-discover-aseer-events-the-dearest-country-20260803-b424a70f | linked-existing | event-the-dearest-country | already linked to catalog event |
@@ -575,7 +575,6 @@
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-التحول-الرقمي-في-جازان-بالتعاون-مع-أكاديمية-غر-20271201-5cace3ad | linked-existing | event-دبلوم-التحول-الرقمي | already linked to catalog event |
 | candidate-discover-aseer-events-sammrah-20260528-0784ea5b | blocked | event-sammrah | possible duplicate requires review: exact-title-city-source-conflict |
 | candidate-discover-aseer-events-sound-of-abha-fest-saf-20260620-737104ee | blocked | event-sound-of-abha-fest-saf | possible duplicate requires review: exact-title-city-source-conflict |
-| candidate-visit-saudi-seasons-madinah-dates-season-2026-20260620-65ed4355 | blocked | - | possible duplicate already exists: event-madinah-dates-season-2026 |
 | candidate-visit-saudi-calendar-aseer-season-20260625-2fc92ef9 | blocked | - | linked catalog row event-aseer-season was superseded by dedupe |
 | candidate-discover-aseer-events-summer-season-2026-20260625-cf53fd7f | blocked | - | linked catalog row event-aseer-season was superseded by dedupe |
 | candidate-discover-aseer-events-mahabah-20260702-f59a5d12 | blocked | event-mahabah | possible duplicate requires review: exact-title-city-source-conflict |

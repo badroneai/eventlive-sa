@@ -1,7 +1,7 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-02T20:15:43.986Z",
-  "status": "NEEDS_WORK",
+  "generated_at": "2026-08-03T04:20:25.356Z",
+  "status": "PASS",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
@@ -12,9 +12,9 @@
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 33,
+    "collection_attempted": 21,
     "productive_sources": 20,
-    "collector_errors": 6
+    "collector_errors": 0
   },
   "policies": {
     "partnership_required": 5,
@@ -28,18 +28,17 @@
     "source-evidence": 26
   },
   "funnel": {
-    "discovered_this_run": 336,
+    "discovered_this_run": 322,
     "candidate_queue": 588,
     "evaluated_for_publish": 588,
-    "linked_existing": 538,
-    "published_new": 11,
-    "blocked": 39,
+    "linked_existing": 543,
+    "published_new": 7,
+    "blocked": 38,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 39
+    "secondary_still_blocked": 35
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 6,
-    "possible duplicate already exists: event-madinah-dates-season-2026": 1,
     "linked catalog row event-aseer-season was superseded by dedupe": 2,
     "publication gate source-evidence is not auto-publishable": 14,
     "unknown category requires review": 10,
@@ -49,32 +48,7 @@
     "linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe": 1,
     "linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe": 1
   },
-  "collector_error_sources": [
-    {
-      "id": "moc-cultural-calendar",
-      "note": "fetch failed; fetch failed"
-    },
-    {
-      "id": "mos-events",
-      "note": "fetch failed; page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.mos.gov.sa/en/media/events\", waiting until \"domcontentloaded\"\n"
-    },
-    {
-      "id": "monshaat-events",
-      "note": "fetch failed; fetch failed"
-    },
-    {
-      "id": "moc-cultural-subportals",
-      "note": "fetch failed; fetch failed"
-    },
-    {
-      "id": "scega-exhibitions-conferences",
-      "note": "fetch failed"
-    },
-    {
-      "id": "qassim-chamber-events",
-      "note": "HTTP 403; browser recovery encountered an access-protection page"
-    }
-  ],
+  "collector_error_sources": [],
   "sources": [
     {
       "id": "nec-saudi-events",

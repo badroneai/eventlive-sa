@@ -1,11 +1,11 @@
 # EventLive Browser Source Probe
 
-Generated at: 2026-08-02T19:53:09.429Z
+Generated at: 2026-08-03T04:01:57.132Z
 
 ## Summary
 
-- Sources probed this run: 0
-- Fresh results available: 0
+- Sources probed this run: 1
+- Fresh results available: 1
 - Browser network API: 0
 - Hydration payload: 0
 - Rendered HTML candidates: 0
@@ -16,6 +16,7 @@ Generated at: 2026-08-02T19:53:09.429Z
 
 | Priority | Source | Status | HTTP | Classification | Endpoints | Event links | Date snippets | Next action |
 |---:|---|---|---:|---|---:|---:|---:|---|
+| 56 | scega-exhibitions-conferences | ok | 400 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
 
 ## Endpoint Candidates
 

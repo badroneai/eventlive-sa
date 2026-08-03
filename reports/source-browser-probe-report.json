@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T19:53:09.429Z",
+  "generated_at": "2026-08-03T04:01:57.132Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -7,20 +7,68 @@
     "selected_ids": [],
     "scope": "priority",
     "limit": 8,
-    "probed_this_run": 0,
-    "fresh_results_available": 0,
+    "probed_this_run": 1,
+    "fresh_results_available": 1,
     "wait_ms": 4500,
     "timeout_ms": 30000,
     "failure_cooldown_hours": 72
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 0,
+    "probed": 1,
     "browser_network_api": 0,
     "browser_hydration_payload": 0,
     "rendered_html_candidates": 0,
     "blocked_or_protected": 0,
     "policy_skipped": 0
   },
-  "sources": []
+  "sources": [
+    {
+      "id": "scega-exhibitions-conferences",
+      "probed_at": "2026-08-03T04:02:05.096Z",
+      "name": "SCEGA ePortal Events",
+      "priority": 56,
+      "url": "https://eportal.scega.gov.sa/api/events/GetWithPaging?pageNumber=1&pageSize=500",
+      "final_url": "https://eportal.scega.gov.sa/api/events/GetWithPaging?pageNumber=1&pageSize=500",
+      "status": "ok",
+      "http_status": 400,
+      "navigation_error": "",
+      "duration_ms": 7378,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 56,
+      "html_bytes": 219,
+      "html_snapshot": "data/raw/browser-probes/scega-exhibitions-conferences-2026-08-03T04-01-57-132Z.html",
+      "screenshot": "data/raw/browser-probes/scega-exhibitions-conferences-2026-08-03T04-01-57-132Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 1,
+      "network_endpoints": [],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 400,
+          "url": "https://eportal.scega.gov.sa/api/events/GetWithPaging?pageNumber=1&pageSize=500",
+          "content_type": "application/json",
+          "resource_type": "document",
+          "request_post_data": "",
+          "response_shape": "json-object:status,message,data",
+          "preview": "{\"status\":400,\"message\":\"Invalid ID format\",\"data\":null}"
+        }
+      ]
+    }
+  ]
 }
