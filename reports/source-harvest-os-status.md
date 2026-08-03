@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-03T15:39:02.295Z
-- Status: PASS
+- Generated at: 2026-08-03T20:39:55.090Z
+- Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 593
-- Matched candidates: 561
+- Candidates: 594
+- Matched candidates: 562
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 20/21
-- Collector errors: 0
+- Productive sources / attempted: 24/41
+- Collector errors: 6
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 320 |
-| candidate_queue | 593 |
-| evaluated_for_publish | 593 |
-| linked_existing | 549 |
-| published_new | 6 |
+| discovered_this_run | 279 |
+| candidate_queue | 594 |
+| evaluated_for_publish | 594 |
+| linked_existing | 548 |
+| published_new | 8 |
 | blocked | 38 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 34 |
+| secondary_still_blocked | 36 |
 
 ## Blocked Reasons
 
@@ -46,6 +46,18 @@
 
 | Source | Reason |
 | --- | --- |
+| moc-cultural-calendar | fetch failed; fetch failed |
+| mos-events | fetch failed; page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.mos.gov.sa/en/media/events", waiting until "domcontentloaded"
+ |
+| monshaat-events | fetch failed; fetch failed |
+| moc-cultural-subportals | fetch failed; fetch failed |
+| qassim-chamber-events | HTTP 403; browser recovery encountered an access-protection page |
+| hayy-jameel-events | The operation was aborted due to timeout; page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://hayyjameel.org/whats-on-sitemap.xml", waiting until "domcontentloaded"
+ |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

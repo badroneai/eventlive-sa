@@ -1,7 +1,7 @@
 # EventLive Conditional Final Build
 
-- generated_at: 2026-08-03T15:32:49.376Z
-- decision: skipped-no-image-change
-- duration_ms: 0
+- generated_at: 2026-08-03T20:32:51.673Z
+- decision: rebuilt
+- duration_ms: 12400
 - exit_code: 0
-- reasons: none
+- reasons: fetched:2, new-failures:3

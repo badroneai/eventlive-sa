@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T15:22:04.899Z",
+  "generated_at": "2026-08-03T20:19:02.166Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -8,14 +8,14 @@
     "scope": "priority",
     "limit": 8,
     "probed_this_run": 0,
-    "fresh_results_available": 2,
+    "fresh_results_available": 1,
     "wait_ms": 4500,
     "timeout_ms": 30000,
     "failure_cooldown_hours": 72
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 2,
+    "probed": 1,
     "browser_network_api": 0,
     "browser_hydration_payload": 0,
     "rendered_html_candidates": 1,
@@ -90,53 +90,6 @@
           "request_post_data": "",
           "response_shape": "json-like-invalid",
           "preview": "{ \"lang\": \"en\", \"main\": { \"title\": \"Riyadh City\" }, \"lastUpdated\": { \"label\": \"Last Modified Date\", \"timezone\": \"Saudi Arabia Time\" }, \"cookies\": { \"title\": \"Cookies\", \"consentIntro\": \"This site uses its own cookies to ensure ease of use and to improve your experience while browsing. By continuing to browse this site, you acknowledge and accept the use of cookies.\", \"privacyPolicy\": \"Privacy Policy\", \"accept\": \"Accept\", \"reject\": \"Reject\", \"manageLink\": \"Manage Cookies\", \"manageTitle\": \"Manage Cookies\", \"thanksTitle\": \"Cookies\", \"intro\": \"Whenever you visit a website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences, or your device, and is mostly used to make the site work as you expect it to. The information does not usually identify you directly, but it can give you a more personalized web experience. You can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, you should know that blocking some types of cookies may impact your experience of the site and the services we are able to offer.\", \"necessary\": \"These cookies are strictly necessary (always active)\", \"performance\": \"Performance cookies\", \"functional\": \"Functional cookies\", \"targeting\": \"Targeting cookies\", \"confirm\": \"Confirm my choices\", \"rejectAll\": \"Reject all\", \"thanksMessage\": \"Thank you! Your response has been recorded successfully. If you would like to edit or change your answer, you can go back by clicking the undo button.\", \"undo\": \"Undo\", \"close\": \"Close\" }, \"fileUploader\": { \"hint\": \"Maximum file size allowed is {{size}}"
-        }
-      ]
-    },
-    {
-      "id": "scega-exhibitions-conferences",
-      "probed_at": "2026-08-03T04:02:05.096Z",
-      "name": "SCEGA ePortal Events",
-      "priority": 56,
-      "url": "https://eportal.scega.gov.sa/api/events/GetWithPaging?pageNumber=1&pageSize=500",
-      "final_url": "https://eportal.scega.gov.sa/api/events/GetWithPaging?pageNumber=1&pageSize=500",
-      "status": "ok",
-      "http_status": 400,
-      "navigation_error": "",
-      "duration_ms": 7378,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 56,
-      "html_bytes": 219,
-      "html_snapshot": "data/raw/browser-probes/scega-exhibitions-conferences-2026-08-03T04-01-57-132Z.html",
-      "screenshot": "data/raw/browser-probes/scega-exhibitions-conferences-2026-08-03T04-01-57-132Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 1,
-      "network_endpoints": [],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 400,
-          "url": "https://eportal.scega.gov.sa/api/events/GetWithPaging?pageNumber=1&pageSize=500",
-          "content_type": "application/json",
-          "resource_type": "document",
-          "request_post_data": "",
-          "response_shape": "json-object:status,message,data",
-          "preview": "{\"status\":400,\"message\":\"Invalid ID format\",\"data\":null}"
         }
       ]
     }

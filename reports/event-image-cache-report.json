@@ -1,18 +1,31 @@
 {
-  "generated_at": "2026-08-03T15:32:48.969Z",
+  "generated_at": "2026-08-03T20:32:35.530Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 782,
-    "fetched": 0,
-    "reused": 497,
+    "cached_total": 784,
+    "fetched": 2,
+    "reused": 495,
     "failed": 3,
-    "skipped_recent_failures": 3,
+    "skipped_recent_failures": 0,
     "remembered_failures": 6
   },
-  "fetched": [],
+  "fetched": [
+    {
+      "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Aug/events/gPzKT3f6yvYn5VNb.jpeg",
+      "file": "dist/assets/event-images/summer-career-guidance-courses-f0a55ac926.jpg",
+      "bytes": 448516,
+      "events": 1
+    },
+    {
+      "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Aug/events/o9adrOEghr6nY91R.jpeg",
+      "file": "dist/assets/event-images/the-2nd-international-conference-of-sustainability-and-quality-of-life-1e585e10d6.jpg",
+      "bytes": 366628,
+      "events": 1
+    }
+  ],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -687,11 +700,6 @@
     {
       "source_url": "https://hub.misk.org.sa/media/e3pjton2/web.png",
       "file": "dist/assets/event-images/nonprofit-sector-skills-program-09aadbec00.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2a93a513735da824f0d28d0a8d24b99d.jpg",
-      "file": "dist/assets/event-images/children-s-museum-free-monday-197cdfde54.jpg",
       "events": 1
     },
     {
@@ -1960,6 +1968,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2a93a513735da824f0d28d0a8d24b99d.jpg",
+      "file": "dist/assets/event-images/children-s-museum-free-monday-197cdfde54.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/27476bc77687c51a534d83a6f4c2fed2.jpg",
       "file": "dist/assets/event-images/بتلات-ورفاق-بالعربية-5878a28e89.jpg",
       "events": 1
@@ -2488,72 +2501,37 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3b420c2ffc5f9acedea7b23126516b95.jpg",
       "file": "dist/assets/event-images/a-matter-of-life-and-death-1b10618502.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c8f42f6d093fc583e1a522ae5b065cb9.jpg",
-      "file": "dist/assets/event-images/parallel-films-group-2-1ce5c62339.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fecca42a5edde20fadea3cd4911749b2.jpg",
-      "file": "dist/assets/event-images/book-signing-sessions-2-b580e79734.jpg",
-      "events": 1
     }
   ],
   "rejected_removed": [],
   "missing_removed": [],
-  "skipped_recent_failures": [
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-03T20:09:02.072Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-03T20:09:02.072Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-03T20:09:02.072Z",
-      "skipped": true
-    }
-  ],
+  "skipped_recent_failures": [],
   "failed": [
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-08-03T20:09:02.072Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-03T20:09:02.072Z",
-      "skipped": true
+      "retry_after": "2026-08-04T20:32:35.530Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-08-03T20:09:02.072Z",
-      "skipped": true
+      "retry_after": "2026-08-04T20:32:35.530Z"
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-08-04T20:32:35.530Z"
     }
   ],
-  "requires_rebuild": false,
-  "rebuild_reasons": []
+  "requires_rebuild": true,
+  "rebuild_reasons": [
+    "fetched:2",
+    "new-failures:3"
+  ]
 }
