@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T04:13:06.775Z",
+  "generated_at": "2026-08-03T10:24:35.426Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -584,7 +584,7 @@
     {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "events": 37
+      "events": 44
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5d9089ccc5309c4c20ca0c1099df3ab1.jpg",
@@ -2503,7 +2503,13 @@
     }
   ],
   "rejected_removed": [],
-  "missing_removed": [],
+  "missing_removed": [
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/72323733814ab2d738b5416789d15bd1.jpg",
+      "file": "dist/assets/event-images/ithra-art-prize-exhibition-05524875fd.jpg",
+      "reason": "cached-file-missing"
+    }
+  ],
   "skipped_recent_failures": [
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
@@ -2558,6 +2564,7 @@
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:1"
+    "fetched:1",
+    "missing-removed:1"
   ]
 }

@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-03T04:10:33.730Z
+- published_at: 2026-08-03T10:19:34.305Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 588
-- published_new: 7
-- linked_existing: 543
+- candidates_seen: 595
+- published_new: 13
+- linked_existing: 544
 - blocked_remaining: 38
 - duplicate_review_alerts: 8
 
@@ -29,7 +29,13 @@
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
-| candidate-ithra-events-ithra-art-prize-exhibition-20260803-83c2ab55 | published | event-ithra-art-prize-exhibition | Ithra Art Prize Exhibition |
+| candidate-umm-al-qura-events-فرص-تعاقد-على-مشروع-بحثي-ممول-٢-20260803-d12e1d10 | published | event-فرص-تعاقد-على-مشروع-بحثي-ممول-٢ | فرص تعاقد على مشروع بحثي ممول ٢ |
+| candidate-umm-al-qura-events-ورود-الشانيل-20260804-6cdb40b0 | published | event-ورود-الشانيل | ورود الشانيل |
+| candidate-umm-al-qura-events-الميداليات-المطرزة-20260805-aea21634 | published | event-الميداليات-المطرزة | الميداليات المطرزة |
+| candidate-umm-al-qura-events-الكروشيه-20260805-c5ebb31e | published | event-الكروشيه | الكروشيه |
+| candidate-umm-al-qura-events-التشكيل-الحر-20260806-8ec06f59 | published | event-التشكيل-الحر | التشكيل الحر |
+| candidate-umm-al-qura-events-رابط-التسجيل-والسداد-للدبلوم-المتوسط-في-المحاسبة-المالية-في-عنيزة-بالتعا-20270101-50a5e932 | published | event-رابط-التسجيل-والسداد-للدبلوم-المتوسط-في-المحاسبة-المالية-في-عنيزة-بالتعا | رابط التسجيل والسداد للدبلوم المتوسط في المحاسبة المالية في عنيزة بالتعاون مع أكاديمية حمد عبدالرحمن الحنطي للتدريب العالي. |
+| candidate-umm-al-qura-events-رابط-التسجيل-والسداد-للدبلوم-المشارك-في-الإدارة-الفندقية-في-عنيزة-بالتعا-20270101-745e03a2 | published | event-رابط-التسجيل-والسداد-للدبلوم-المشارك-في-الإدارة-الفندقية-في-عنيزة-بالتعا | رابط التسجيل والسداد للدبلوم المشارك في الإدارة الفندقية في عنيزة بالتعاون مع أكاديمية حمد عبدالرحمن الحنطي للتدريب العالي |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -205,7 +211,6 @@
 | candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-أمن-المعلومات-مع-الشركاء-20260802-1a84c3bc | linked-existing | event-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-أمن-المعلومات-مع-الشركاء | already linked to catalog event |
 | candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-اللغة-الإنجليزية-المهنية-مع-الش-20260802-7ea2fdc6 | linked-existing | event-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-اللغة-الإنجليزية-المهنية-مع-الش | already linked to catalog event |
 | candidate-misk-hub-programs-nonprofit-sector-skills-program-20260803-075740c9 | linked-existing | event-nonprofit-sector-skills-program | already linked to catalog event |
-| candidate-ithra-events-childrens-museum-free-monday-20260803-15ad7731 | linked-existing | event-childrens-museum-free-monday | already linked to catalog event |
 | candidate-discover-aseer-events-the-dearest-country-20260803-b424a70f | linked-existing | event-the-dearest-country | already linked to catalog event |
 | candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260803-f563a36e | linked-existing | event-ithra-summer-camp-2026-a-world-of-homes | already linked to catalog event |
 | candidate-ithra-events-printing-house-20260803-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
@@ -213,12 +218,14 @@
 | candidate-ithra-events-tinkering-stations-20260803-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
 | candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260803-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
 | candidate-ithra-events-echoes-of-the-familiar-20260803-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
+| candidate-ithra-events-ithra-art-prize-exhibition-20260803-83c2ab55 | linked-existing | event-ithra-art-prize-exhibition | already linked to catalog event |
 | candidate-ithra-events-summer-youth-program-20260803-a20f7a11 | linked-existing | event-summer-youth-program | already linked to catalog event |
+| candidate-ithra-events-childrens-museum-free-monday-20260803-15ad7731 | linked-existing | event-childrens-museum-free-monday | already linked to catalog event |
 | candidate-ithra-events-childrens-art-studio-20260803-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
 | candidate-ithra-events-childrens-museum-story-time-20260803-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-spot-of-inspiration-20260803-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
-| candidate-ithra-events-paint-like-an-artist-20260803-a67d8ec3 | linked-existing | event-paint-like-an-artist | already linked to catalog event |
 | candidate-ithra-events-emboss-printing-experience-20260803-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
+| candidate-ithra-events-paint-like-an-artist-20260803-a67d8ec3 | linked-existing | event-paint-like-an-artist | already linked to catalog event |
 | candidate-ithra-events-energy-lab-20260803-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
 | candidate-ithra-events-the-perfect-guide-to-event-management-20260803-9e165fb1 | linked-existing | event-the-almost-perfect-guide-to-event-management | already linked to catalog event |
 | candidate-ithra-events-family-challenges-20260803-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |

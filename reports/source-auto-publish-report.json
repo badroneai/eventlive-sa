@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-03T04:10:33.730Z",
+  "published_at": "2026-08-03T10:19:34.305Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 588,
+  "candidates_seen": 595,
   "totals": {
-    "candidates_seen": 588,
-    "published": 7,
-    "linked_existing": 543,
+    "candidates_seen": 595,
+    "published": 13,
+    "linked_existing": 544,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 550
+    "reconciled": 557
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -195,9 +195,39 @@
       "title": "عروض الفنون الأدائية التقليدية"
     },
     {
-      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260803-83c2ab55",
-      "event_id": "event-ithra-art-prize-exhibition",
-      "title": "Ithra Art Prize Exhibition"
+      "candidate_id": "candidate-umm-al-qura-events-فرص-تعاقد-على-مشروع-بحثي-ممول-٢-20260803-d12e1d10",
+      "event_id": "event-فرص-تعاقد-على-مشروع-بحثي-ممول-٢",
+      "title": "فرص تعاقد على مشروع بحثي ممول ٢"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-ورود-الشانيل-20260804-6cdb40b0",
+      "event_id": "event-ورود-الشانيل",
+      "title": "ورود الشانيل"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-الميداليات-المطرزة-20260805-aea21634",
+      "event_id": "event-الميداليات-المطرزة",
+      "title": "الميداليات المطرزة"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-الكروشيه-20260805-c5ebb31e",
+      "event_id": "event-الكروشيه",
+      "title": "الكروشيه"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-التشكيل-الحر-20260806-8ec06f59",
+      "event_id": "event-التشكيل-الحر",
+      "title": "التشكيل الحر"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-رابط-التسجيل-والسداد-للدبلوم-المتوسط-في-المحاسبة-المالية-في-عنيزة-بالتعا-20270101-50a5e932",
+      "event_id": "event-رابط-التسجيل-والسداد-للدبلوم-المتوسط-في-المحاسبة-المالية-في-عنيزة-بالتعا",
+      "title": "رابط التسجيل والسداد للدبلوم المتوسط في المحاسبة المالية في عنيزة بالتعاون مع أكاديمية حمد عبدالرحمن الحنطي للتدريب العالي."
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-رابط-التسجيل-والسداد-للدبلوم-المشارك-في-الإدارة-الفندقية-في-عنيزة-بالتعا-20270101-745e03a2",
+      "event_id": "event-رابط-التسجيل-والسداد-للدبلوم-المشارك-في-الإدارة-الفندقية-في-عنيزة-بالتعا",
+      "title": "رابط التسجيل والسداد للدبلوم المشارك في الإدارة الفندقية في عنيزة بالتعاون مع أكاديمية حمد عبدالرحمن الحنطي للتدريب العالي"
     }
   ],
   "linked_existing": [
@@ -1252,12 +1282,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-childrens-museum-free-monday-20260803-15ad7731",
-      "event_id": "event-childrens-museum-free-monday",
-      "title": "Children's Museum - Free Monday",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-discover-aseer-events-the-dearest-country-20260803-b424a70f",
       "event_id": "event-the-dearest-country",
       "title": "The Dearest Country",
@@ -1300,9 +1324,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260803-83c2ab55",
+      "event_id": "event-ithra-art-prize-exhibition",
+      "title": "Ithra Art Prize Exhibition",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-summer-youth-program-20260803-a20f7a11",
       "event_id": "event-summer-youth-program",
       "title": "Summer Youth Program",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-free-monday-20260803-15ad7731",
+      "event_id": "event-childrens-museum-free-monday",
+      "title": "Children's Museum - Free Monday",
       "reason": "already linked to catalog event"
     },
     {
@@ -1324,15 +1360,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-paint-like-an-artist-20260803-a67d8ec3",
-      "event_id": "event-paint-like-an-artist",
-      "title": "Paint Like an Artist",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260803-2671d1ce",
       "event_id": "event-emboss-printing-experience",
       "title": "Emboss Printing Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-paint-like-an-artist-20260803-a67d8ec3",
+      "event_id": "event-paint-like-an-artist",
+      "title": "Paint Like an Artist",
       "reason": "already linked to catalog event"
     },
     {
