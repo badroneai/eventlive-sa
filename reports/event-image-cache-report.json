@@ -1,25 +1,18 @@
 {
-  "generated_at": "2026-08-03T10:24:35.426Z",
+  "generated_at": "2026-08-03T15:32:48.969Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
     "cached_total": 782,
-    "fetched": 1,
-    "reused": 496,
+    "fetched": 0,
+    "reused": 497,
     "failed": 3,
     "skipped_recent_failures": 3,
     "remembered_failures": 6
   },
-  "fetched": [
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/72323733814ab2d738b5416789d15bd1.jpg",
-      "file": "dist/assets/event-images/ithra-art-prize-exhibition-05524875fd.jpg",
-      "bytes": 39838,
-      "events": 1
-    }
-  ],
+  "fetched": [],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -512,11 +505,6 @@
       "events": 1
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYXNib2FhLWFsYWF0b3ItLnBuZw/asboaa-alaator-.png?w=1024&fm=webp&s=e65fa09cd775812944fcae1cb1daf199",
-      "file": "dist/assets/event-images/أسبوع-العطور-9393bb5468.webp",
-      "events": 1
-    },
-    {
       "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Jul/events/I82IbFdyRJlL1jqR.jpeg",
       "file": "dist/assets/event-images/برنامج-عجلة-الحياة-للتطوير-2026-1ab3178909.jpg",
       "events": 1
@@ -599,11 +587,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/388c96722ea7802636485fc7640da5a1.jpg",
       "file": "dist/assets/event-images/energy-in-motion-bba2390362.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/tour-of-al-baha?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/tour-of-al-baha-b3427bf102.webp",
       "events": 1
     },
     {
@@ -714,6 +697,11 @@
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYWdobC1ibGRfcGFnZS0wMDAxLmpwZw/aghl-bld_page-0001.jpg?w=1024&fm=webp&s=efb01a4f9be9734e9f14ca3e4f27adc0",
       "file": "dist/assets/event-images/أغلى-وطن-a1dffa4a36.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/72323733814ab2d738b5416789d15bd1.jpg",
+      "file": "dist/assets/event-images/ithra-art-prize-exhibition-05524875fd.jpg",
       "events": 1
     },
     {
@@ -1987,6 +1975,11 @@
       "events": 1
     },
     {
+      "source_url": "https://scth.scene7.com/is/image/scth/tour-of-al-baha?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/tour-of-al-baha-b3427bf102.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a1d6397472149e5f86f6e4d63682ca94.jpg",
       "file": "dist/assets/event-images/الفن-في-الحياة-اليومية-d36fc1f92e.jpg",
       "events": 1
@@ -2009,6 +2002,11 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3b9413389ac57ce8eba7e110d8d72de9.jpg",
       "file": "dist/assets/event-images/the-expert-s-meeting-with-the-young-author-4c3ea72208.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYXNib2FhLWFsYWF0b3ItLnBuZw/asboaa-alaator-.png?w=1024&fm=webp&s=e65fa09cd775812944fcae1cb1daf199",
+      "file": "dist/assets/event-images/أسبوع-العطور-9393bb5468.webp",
       "events": 1
     },
     {
@@ -2503,13 +2501,7 @@
     }
   ],
   "rejected_removed": [],
-  "missing_removed": [
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/72323733814ab2d738b5416789d15bd1.jpg",
-      "file": "dist/assets/event-images/ithra-art-prize-exhibition-05524875fd.jpg",
-      "reason": "cached-file-missing"
-    }
-  ],
+  "missing_removed": [],
   "skipped_recent_failures": [
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
@@ -2562,9 +2554,6 @@
       "skipped": true
     }
   ],
-  "requires_rebuild": true,
-  "rebuild_reasons": [
-    "fetched:1",
-    "missing-removed:1"
-  ]
+  "requires_rebuild": false,
+  "rebuild_reasons": []
 }
