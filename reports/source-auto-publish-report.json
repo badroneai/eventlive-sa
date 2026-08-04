@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-04T03:52:51.458Z",
+  "published_at": "2026-08-04T09:22:55.200Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 593,
+  "candidates_seen": 596,
   "totals": {
-    "candidates_seen": 593,
-    "published": 6,
-    "linked_existing": 549,
+    "candidates_seen": 596,
+    "published": 8,
+    "linked_existing": 550,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 555
+    "reconciled": 558
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -193,6 +193,16 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-1-الترشح-للدبلوم-المتوسط-في-تكنولوجيا-التعدين-والمناجم-حضوري-بالتعاون-مع-20260804-c85a267f",
+      "event_id": "event-1-الترشح-للدبلوم-المتوسط-في-تكنولوجيا-التعدين-والمناجم-حضوري-بالتعاون-مع",
+      "title": "1. الترشح للدبلوم المتوسط في تكنولوجيا التعدين والمناجم (حضوري) بالتعاون مع معهد الدراسات والخدمات الاستشارية بجامعة الإمام عبد الرحمن بن فيصل"
+    },
+    {
+      "candidate_id": "candidate-asharqia-chamber-events-حفل-الاستقبال-السنوي-لقطاع-الاعمال-2026م-20261202-afe11e68",
+      "event_id": "event-حفل-الاستقبال-السنوي-لقطاع-الاعمال-2026م",
+      "title": "حفل الاستقبال السنوي لقطاع الاعمال 2026م"
     }
   ],
   "linked_existing": [
@@ -1247,12 +1257,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-toddler-tuesday-20260804-1afead7d",
-      "event_id": "event-toddler-tuesday",
-      "title": "Toddler Tuesday",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-international-cat-day-open-call-20260804-5fb2cbe7",
       "event_id": "event-hayy-cinema-international-cat-day-open-call",
       "title": "Hayy Cinema | International Cat Day: Open Call",
@@ -1307,6 +1311,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260804-2bf92d17",
+      "event_id": "event-childrens-art-studio",
+      "title": "Children's Art Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260804-5bac584c",
       "event_id": "event-spot-of-inspiration",
       "title": "Spot of Inspiration",
@@ -1319,12 +1329,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260804-2bf92d17",
-      "event_id": "event-childrens-art-studio",
-      "title": "Children's Art Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-tangram-20260804-9a9db6cb",
       "event_id": "event-tangram",
       "title": "Tangram",
@@ -1334,6 +1338,12 @@
       "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260804-2671d1ce",
       "event_id": "event-emboss-printing-experience",
       "title": "Emboss Printing Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-toddler-tuesday-20260804-1afead7d",
+      "event_id": "event-toddler-tuesday",
+      "title": "Toddler Tuesday",
       "reason": "already linked to catalog event"
     },
     {
@@ -1683,6 +1693,12 @@
       "event_id": "event-مسارات-تصنيع-الأجهزة-والمستلزمات-الطبية",
       "title": "مسارات تصنيع الأجهزة والمستلزمات الطبية",
       "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-sfda-events-الإدراج-في-خطوات-20260812-5cd6efee",
+      "event_id": "event-الإدراج-في-خطوات",
+      "title": "الإدراج في خطوات",
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-ithra-chess-tournament-ages-13-18-20260812-1baa0014",
