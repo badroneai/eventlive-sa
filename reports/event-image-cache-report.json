@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-04T09:25:42.447Z",
+  "generated_at": "2026-08-04T20:15:11.914Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 785,
-    "fetched": 3,
-    "reused": 494,
+    "cached_total": 788,
+    "fetched": 6,
+    "reused": 491,
     "failed": 3,
     "skipped_recent_failures": 3,
     "remembered_failures": 6
@@ -20,15 +20,33 @@
       "events": 1
     },
     {
+      "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Aug/events/o9adrOEghr6nY91R.jpeg",
+      "file": "dist/assets/event-images/المؤتمر-الدولي-الثاني-لاستدامة-الحياة-ونوعيتها-1e585e10d6.jpg",
+      "bytes": 366628,
+      "events": 1
+    },
+    {
       "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Aug/events/gPzKT3f6yvYn5VNb.jpeg",
       "file": "dist/assets/event-images/دورات-توجيهية-في-مجال-التدريب-المهني-الصيفي-f0a55ac926.jpg",
       "bytes": 448516,
       "events": 1
     },
     {
-      "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Aug/events/o9adrOEghr6nY91R.jpeg",
-      "file": "dist/assets/event-images/المؤتمر-الدولي-الثاني-لاستدامة-الحياة-ونوعيتها-1e585e10d6.jpg",
-      "bytes": 366628,
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/k4uoshpk.wue.jpg",
+      "file": "dist/assets/event-images/معسكر-قيادة-التحول-بالذكاء-الاصطناعي-4c18a97a44.jpg",
+      "bytes": 249277,
+      "events": 1
+    },
+    {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uvc2hhYWFyLXNoZnQtYWJoYS5qcGc/shaaar-shft-abha.jpg?w=1024&fm=webp&s=214e015b8adfb062d4f93011a5ea858b",
+      "file": "dist/assets/event-images/shift-abha-2026-5b25d626a3.webp",
+      "bytes": 10288,
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c4dead970ab3d5a09db3eb2c1e888b8a.jpg",
+      "file": "dist/assets/event-images/ithra-members-tour-e68ad1c393.jpg",
+      "bytes": 322568,
       "events": 1
     }
   ],
@@ -524,11 +542,6 @@
       "events": 1
     },
     {
-      "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Jul/events/I82IbFdyRJlL1jqR.jpeg",
-      "file": "dist/assets/event-images/برنامج-عجلة-الحياة-للتطوير-2026-1ab3178909.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://scth.scene7.com/is/image/scth/honey-festival-2026?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/مهرجان-العسل-2026-2dbd82b5e5.webp",
       "events": 1
@@ -591,7 +604,7 @@
     {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "events": 45
+      "events": 52
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5d9089ccc5309c4c20ca0c1099df3ab1.jpg",
@@ -731,11 +744,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d9066fa3a95acb81e626150dc55fbeb7.jpg",
       "file": "dist/assets/event-images/وقت-قصص-الأطفال-450371399c.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC01859-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-international-cat-day-open-call-1c5bd9fc74.jpg",
       "events": 1
     },
     {
@@ -1969,6 +1977,11 @@
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC01859-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-international-cat-day-open-call-1c5bd9fc74.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2a93a513735da824f0d28d0a8d24b99d.jpg",
       "file": "dist/assets/event-images/children-s-museum-free-monday-197cdfde54.jpg",
       "events": 1
@@ -2011,6 +2024,11 @@
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/Pharah-3-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-5579e02bd3.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Jul/events/I82IbFdyRJlL1jqR.jpeg",
+      "file": "dist/assets/event-images/برنامج-عجلة-الحياة-للتطوير-2026-1ab3178909.jpg",
       "events": 1
     },
     {
@@ -2487,21 +2505,6 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/729cf79cc190dce7b56c51d33b502b3a.jpg",
       "file": "dist/assets/event-images/low-budget-films-opportunity-artistic-choice-or-a-phase-f80b6e67ef.jpg",
       "events": 7
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/28f9d5ca7d51b069418295a0e37823e0.jpg",
-      "file": "dist/assets/event-images/journey-film-group-2-a7a5c63cc3.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/153fc3da163e569f742a34dbff93b1d4.jpg",
-      "file": "dist/assets/event-images/short-film-competition-group-3-30dc123771.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3b420c2ffc5f9acedea7b23126516b95.jpg",
-      "file": "dist/assets/event-images/a-matter-of-life-and-death-1b10618502.jpg",
-      "events": 1
     }
   ],
   "rejected_removed": [],
@@ -2512,13 +2515,13 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Aug/events/o9adrOEghr6nY91R.jpeg",
-      "file": "dist/assets/event-images/المؤتمر-الدولي-الثاني-لاستدامة-الحياة-ونوعيتها-1e585e10d6.jpg",
+      "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Aug/events/gPzKT3f6yvYn5VNb.jpeg",
+      "file": "dist/assets/event-images/دورات-توجيهية-في-مجال-التدريب-المهني-الصيفي-f0a55ac926.jpg",
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Aug/events/gPzKT3f6yvYn5VNb.jpeg",
-      "file": "dist/assets/event-images/دورات-توجيهية-في-مجال-التدريب-المهني-الصيفي-f0a55ac926.jpg",
+      "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Aug/events/o9adrOEghr6nY91R.jpeg",
+      "file": "dist/assets/event-images/المؤتمر-الدولي-الثاني-لاستدامة-الحياة-ونوعيتها-1e585e10d6.jpg",
       "reason": "cached-file-missing"
     }
   ],
@@ -2576,7 +2579,7 @@
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:3",
+    "fetched:6",
     "missing-removed:3"
   ]
 }

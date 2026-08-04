@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T09:25:52.794Z",
+  "generated_at": "2026-08-04T20:15:48.042Z",
   "source_registry": "data/source_registry.json",
   "source_collection_report": "reports/source-collection-report.json",
   "totals": {
@@ -137,7 +137,7 @@
       "cadence": "twice-weekly-extractor-probe",
       "score": 91,
       "has_active_collector": false,
-      "last_collection_status": "",
+      "last_collection_status": "ok",
       "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": -23,
@@ -485,12 +485,12 @@
       "score": 122,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 4,
+      "last_extracted": 5,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 4,
+      "known_candidates": 5,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -674,7 +674,7 @@
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 36,
+      "known_candidates": 37,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -692,12 +692,12 @@
       "score": 125,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 6,
+      "last_extracted": 4,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 6,
+      "known_candidates": 4,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -830,12 +830,12 @@
       "score": 119,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 76,
+      "last_extracted": 77,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 76,
+      "known_candidates": 77,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -1203,7 +1203,7 @@
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 37,
+      "known_candidates": 39,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -1473,7 +1473,7 @@
       "cadence": "twice-weekly-extractor-probe",
       "score": 91,
       "has_active_collector": false,
-      "last_collection_status": "",
+      "last_collection_status": "ok",
       "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": -23,
@@ -1933,7 +1933,7 @@
       "cadence": "weekly-dedupe-check",
       "score": 43,
       "has_active_collector": false,
-      "last_collection_status": "",
+      "last_collection_status": "ok",
       "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": 0,
@@ -2054,7 +2054,7 @@
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 47,
+      "known_candidates": 52,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -2256,12 +2256,12 @@
       "score": 63,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 66,
+      "last_extracted": 65,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 73,
+      "known_candidates": 72,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -2307,7 +2307,7 @@
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 4,
+      "known_candidates": 2,
       "next_action": "Use as a discovery anchor, then reconcile against organizer, ticketing, and catalog duplicates."
     },
     {

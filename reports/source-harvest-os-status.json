@@ -1,18 +1,18 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-04T09:31:57.447Z",
+  "generated_at": "2026-08-04T20:22:50.898Z",
   "status": "PASS",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 596,
-    "matched_candidates": 564,
+    "candidates": 601,
+    "matched_candidates": 569,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 20,
+    "collection_attempted": 22,
     "productive_sources": 20,
     "collector_errors": 0
   },
@@ -23,19 +23,19 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 562,
+    "catalog-review": 567,
     "duplicate-review": 8,
     "source-evidence": 26
   },
   "funnel": {
-    "discovered_this_run": 320,
-    "candidate_queue": 596,
-    "evaluated_for_publish": 596,
-    "linked_existing": 550,
-    "published_new": 8,
+    "discovered_this_run": 319,
+    "candidate_queue": 601,
+    "evaluated_for_publish": 601,
+    "linked_existing": 547,
+    "published_new": 16,
     "blocked": 38,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 37
+    "secondary_still_blocked": 46
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 6,

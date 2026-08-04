@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-04T09:22:59.272Z",
+  "generated_at": "2026-08-04T20:11:54.685Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 35,
+    "targets": 36,
     "enriched": 34,
-    "failed": 1
+    "failed": 2
   },
   "enriched": [
     {
@@ -46,14 +46,6 @@
       "goals": 12,
       "features": 6,
       "requirements": 11
-    },
-    {
-      "id": "event-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات",
-      "title": "معسكر طويق للقطاع الأمني: تطوير البرمجيات",
-      "slug": "ayjde5d8",
-      "goals": 3,
-      "features": 1,
-      "requirements": 31
     },
     {
       "id": "event-معسكر-تصميم-وتصنيع-الحلول-الهندسية",
@@ -224,6 +216,14 @@
       "requirements": 5
     },
     {
+      "id": "event-معسكر-قيادة-التحول-بالذكاء-الاصطناعي",
+      "title": "معسكر قيادة التحول بالذكاء الاصطناعي",
+      "slug": "Y4B07n6q",
+      "goals": 6,
+      "features": 5,
+      "requirements": 6
+    },
+    {
       "id": "event-معسكر-تصميم-وتصنيع-الدوائر-الإلكترونية",
       "title": "معسكر تصميم وتصنيع الدوائر الإلكترونية",
       "slug": "Qkx3OxvG",
@@ -238,14 +238,6 @@
       "goals": 6,
       "features": 7,
       "requirements": 4
-    },
-    {
-      "id": "event-معسكر-تطوير-حلول-الذكاء-الاصطناعي",
-      "title": "معسكر تطوير حلول الذكاء الاصطناعي",
-      "slug": "bwWpE2KO",
-      "goals": 10,
-      "features": 11,
-      "requirements": 12
     },
     {
       "id": "event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud",
@@ -272,6 +264,14 @@
       "requirements": 7
     },
     {
+      "id": "event-معسكر-تطوير-حلول-الذكاء-الاصطناعي",
+      "title": "معسكر تطوير حلول الذكاء الاصطناعي",
+      "slug": "bwWpE2KO",
+      "goals": 10,
+      "features": 11,
+      "requirements": 12
+    },
+    {
       "id": "event-معسكر-طويق-السيبراني",
       "title": "معسكر طويق السيبراني",
       "slug": "oA2ryDzB",
@@ -281,6 +281,12 @@
     }
   ],
   "failed": [
+    {
+      "id": "event-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات",
+      "title": "معسكر طويق للقطاع الأمني: تطوير البرمجيات",
+      "slug": "ayjde5d8",
+      "reason": "Unexpected end of JSON input"
+    },
     {
       "id": "event-معسكر-طويق-للقطاع-الأمني-البنية-التحتية",
       "title": "معسكر طويق للقطاع الأمني: البنية التحتية",

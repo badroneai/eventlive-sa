@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T09:25:53.036Z",
+  "generated_at": "2026-08-04T20:15:48.360Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-08-04T09:15:23.706Z",
+    "collected_at": "2026-08-04T20:03:26.045Z",
     "freshness": "fresh",
-    "discovered": 320,
-    "written": 596
+    "discovered": 319,
+    "written": 601
   },
   "sources": {
     "total": 88,
-    "attempted": 20,
-    "due": 20,
-    "deferred": 28,
+    "attempted": 22,
+    "due": 22,
+    "deferred": 26,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 23,
+    "registry_collection_coverage_pct": 25,
     "scheduled_runnable_coverage_pct": 100,
     "healthy": 20,
-    "zero_yield": 0,
+    "zero_yield": 2,
     "errors": 0,
-    "cadence_deferred": 28,
+    "cadence_deferred": 26,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -131,8 +131,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 4,
-        "candidates": 4,
+        "extracted": 5,
+        "candidates": 5,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -237,7 +237,7 @@
         "zero_yield_streak": 0,
         "last_attempted_at": null,
         "extracted": 12,
-        "candidates": 36,
+        "candidates": 37,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -248,8 +248,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 6,
-        "candidates": 6,
+        "extracted": 4,
+        "candidates": 4,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -323,8 +323,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 76,
-        "candidates": 76,
+        "extracted": 77,
+        "candidates": 77,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -537,7 +537,7 @@
         "zero_yield_streak": 0,
         "last_attempted_at": null,
         "extracted": 36,
-        "candidates": 37,
+        "candidates": 39,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -679,16 +679,13 @@
         "id": "riyadh-city-events",
         "name": "Riyadh City Events",
         "priority": 51,
-        "status": "deferred",
-        "historical_status": "probe-blocked",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-04T09:45:09.893Z",
+        "status": "zero-yield",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-04T03:45:09.893Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 77,
-        "next_action": "مؤجل حتى 2026-08-04T09:45:09.893Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "monshaat-academy-programs",
@@ -940,16 +937,13 @@
         "id": "najran-municipality-summer-events",
         "name": "Najran Municipality Summer Events",
         "priority": 71,
-        "status": "deferred",
-        "historical_status": "zero-yield",
-        "cadence_reason": "zero-yield-cooldown",
-        "next_due_at": "2026-08-04T15:22:05.064Z",
+        "status": "zero-yield",
         "error_streak": 0,
-        "zero_yield_streak": 9,
-        "last_attempted_at": "2026-08-03T15:22:05.064Z",
+        "zero_yield_streak": 0,
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 1,
-        "next_action": "مؤجل حتى 2026-08-04T15:22:05.064Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "platinumlist-saudi-city-network",
@@ -1008,7 +1002,7 @@
         "zero_yield_streak": 0,
         "last_attempted_at": null,
         "extracted": 10,
-        "candidates": 47,
+        "candidates": 52,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -1124,8 +1118,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 66,
-        "candidates": 73,
+        "extracted": 65,
+        "candidates": 72,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -1155,7 +1149,7 @@
         "zero_yield_streak": 0,
         "last_attempted_at": "2026-08-03T20:19:02.344Z",
         "extracted": 0,
-        "candidates": 4,
+        "candidates": 2,
         "next_action": "مؤجل حتى 2026-08-10T20:19:02.344Z وفق الجدولة التكيفية."
       },
       {
@@ -1176,28 +1170,28 @@
     ]
   },
   "queue": {
-    "total": 596,
+    "total": 601,
     "ready_for_review": 8,
     "approved_for_catalog": 0,
-    "published_from_candidates": 562,
+    "published_from_candidates": 567,
     "actionable": 8,
     "stale_unpublished": 0,
     "duplicate_risk": 6,
     "needs_extraction": 0,
     "needs_evidence": 26,
     "by_review_status": {
-      "approved-for-catalog": 562,
+      "approved-for-catalog": 567,
       "ready-for-review": 8,
       "evidence-captured": 18,
       "new": 8
     },
     "by_publication_gate": {
-      "catalog-review": 562,
+      "catalog-review": 567,
       "duplicate-review": 8,
       "source-evidence": 26
     },
     "by_confidence": {
-      "official": 556,
+      "official": 561,
       "public-listing": 21,
       "verified-secondary": 11,
       "unverified": 8
@@ -1213,20 +1207,19 @@
       "Visit Saudi Calendar": 17,
       "Visit Saudi Summer Calendar PDF": 68,
       "Misk Hub Programs": 11,
-      "Discover Aseer Events": 37,
-      "Hayy Jameel What's On": 73,
+      "Discover Aseer Events": 39,
+      "Hayy Jameel What's On": 72,
       "Visit Saudi Seasons": 16,
-      "Tuwaiq Academy Bootcamps and Programs": 36,
+      "Tuwaiq Academy Bootcamps and Programs": 37,
       "Eye of Riyadh Events": 6,
       "Saudicon Events": 15,
       "Najran Municipality Summer Events": 1,
       "Jouf University Summer Programs": 1,
-      "King Abdulaziz University Events": 4,
-      "Umm Al-Qura University Events Center": 47,
-      "Future Skills MCIT Catalogue": 6,
-      "Ithra Events": 76,
+      "Umm Al-Qura University Events Center": 52,
+      "Future Skills MCIT Catalogue": 4,
       "Saudi Food and Drug Authority Events": 9,
-      "MDLBEAST Events": 4,
+      "Ithra Events": 77,
+      "MDLBEAST Events": 5,
       "Dhahran Expo Calendar": 17,
       "Tradepass Official": 1,
       "Informa Connect Saudi Event Portfolio": 6,
@@ -1244,6 +1237,7 @@
       "Experience AlUla Events": 9,
       "Eye of Riyadh Official": 4,
       "Invest Saudi Events": 3,
+      "King Abdulaziz University Events": 2,
       "Madinah International Architecture Festival": 1,
       "Qassim University Events": 1
     },
@@ -1347,7 +1341,7 @@
         "discovery_notes": "",
         "duplicate_risk": true,
         "matched_catalog_event_id": "event-in-act-act-x",
-        "days_to_start": 67,
+        "days_to_start": 66,
         "is_past": false,
         "is_actionable": true,
         "action": "راجع التكرار مع الكتالوج قبل أي اعتماد.",
@@ -1461,7 +1455,7 @@
         "discovery_notes": "",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 27,
+        "days_to_start": 26,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",
@@ -1667,7 +1661,7 @@
         "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 33,
+        "days_to_start": 32,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",
@@ -1817,7 +1811,7 @@
         "discovery_notes": "",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 27,
+        "days_to_start": 26,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",

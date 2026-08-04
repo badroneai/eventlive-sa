@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-04T09:31:57.447Z
+- Generated at: 2026-08-04T20:22:50.898Z
 - Status: PASS
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 596
-- Matched candidates: 564
+- Candidates: 601
+- Matched candidates: 569
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 20/20
+- Productive sources / attempted: 20/22
 - Collector errors: 0
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 320 |
-| candidate_queue | 596 |
-| evaluated_for_publish | 596 |
-| linked_existing | 550 |
-| published_new | 8 |
+| discovered_this_run | 319 |
+| candidate_queue | 601 |
+| evaluated_for_publish | 601 |
+| linked_existing | 547 |
+| published_new | 16 |
 | blocked | 38 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 37 |
+| secondary_still_blocked | 46 |
 
 ## Blocked Reasons
 
