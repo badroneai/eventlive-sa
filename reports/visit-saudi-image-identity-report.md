@@ -1,14 +1,15 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-08-03T20:28:58.937Z
+- generated_at: 2026-08-04T03:52:53.431Z
 - pdf_crop_assignments: 57
-- verified: 56
-- struck: 1
-- slots_seen_this_cycle: 61
+- verified: 55
+- struck: 2
+- slots_seen_this_cycle: 60
 
 ## Struck (fell back to generated cover)
 
 - باتو (visit-saudi-summer-2026-p006-top-left.jpg) - identity-mismatch - page 6 top-left is now "بلاتو"
+- أسبوع العطور (visit-saudi-summer-2026-p008-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 8 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 
@@ -36,7 +37,6 @@
 - مهرجان أبها للتسوق (visit-saudi-summer-2026-p007-bottom-left.jpg)
 - مزرعة أعناب (visit-saudi-summer-2026-p008-top-right.jpg)
 - الحفلات الغنائية (visit-saudi-summer-2026-p008-bottom-left.jpg)
-- أسبوع العطور (visit-saudi-summer-2026-p008-bottom-right.jpg)
 - واحة عسيب (visit-saudi-summer-2026-p008-top-left.jpg)
 - منتجع الوادي (visit-saudi-summer-2026-p009-top-right.jpg)
 - شارع الفن - القرية الاوروبية (visit-saudi-summer-2026-p009-top-left.jpg)

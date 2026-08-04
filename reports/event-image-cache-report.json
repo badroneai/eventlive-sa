@@ -1,28 +1,34 @@
 {
-  "generated_at": "2026-08-03T20:32:35.530Z",
+  "generated_at": "2026-08-04T03:56:58.587Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 784,
-    "fetched": 2,
-    "reused": 495,
+    "cached_total": 785,
+    "fetched": 3,
+    "reused": 494,
     "failed": 3,
-    "skipped_recent_failures": 0,
+    "skipped_recent_failures": 3,
     "remembered_failures": 6
   },
   "fetched": [
     {
-      "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Aug/events/gPzKT3f6yvYn5VNb.jpeg",
-      "file": "dist/assets/event-images/summer-career-guidance-courses-f0a55ac926.jpg",
-      "bytes": 448516,
+      "source_url": "https://www.big5constructsaudi.com/wp-content/uploads/sites/7/2026/07/Big5_Banner_728x90px.jpg",
+      "file": "dist/assets/event-images/معرض-hvac-r-السعودية-0c5d991442.jpg",
+      "bytes": 20202,
       "events": 1
     },
     {
       "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Aug/events/o9adrOEghr6nY91R.jpeg",
-      "file": "dist/assets/event-images/the-2nd-international-conference-of-sustainability-and-quality-of-life-1e585e10d6.jpg",
+      "file": "dist/assets/event-images/المؤتمر-الدولي-الثاني-لاستدامة-الحياة-ونوعيتها-1e585e10d6.jpg",
       "bytes": 366628,
+      "events": 1
+    },
+    {
+      "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Aug/events/gPzKT3f6yvYn5VNb.jpeg",
+      "file": "dist/assets/event-images/دورات-توجيهية-في-مجال-التدريب-المهني-الصيفي-f0a55ac926.jpg",
+      "bytes": 448516,
       "events": 1
     }
   ],
@@ -910,11 +916,6 @@
     {
       "source_url": "https://www.big5constructsaudi.com/wp-content/uploads/sites/7/2026/07/Teef-Najd-2026-TOp-ad-banner.png",
       "file": "dist/assets/event-images/بيج-5-كونستركت-السعودية-568bfc6e5e.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.eyeofriyadh.com/events/events_images/2024/10/1905c8366813b.jpg",
-      "file": "dist/assets/event-images/hvac-r-saudi-arabia-31d5f298e3.jpg",
       "events": 1
     },
     {
@@ -2504,34 +2505,73 @@
     }
   ],
   "rejected_removed": [],
-  "missing_removed": [],
-  "skipped_recent_failures": [],
-  "failed": [
+  "missing_removed": [
+    {
+      "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Aug/events/gPzKT3f6yvYn5VNb.jpeg",
+      "file": "dist/assets/event-images/summer-career-guidance-courses-f0a55ac926.jpg",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Aug/events/o9adrOEghr6nY91R.jpeg",
+      "file": "dist/assets/event-images/the-2nd-international-conference-of-sustainability-and-quality-of-life-1e585e10d6.jpg",
+      "reason": "cached-file-missing"
+    }
+  ],
+  "skipped_recent_failures": [
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-08-04T20:32:35.530Z"
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-04T20:32:35.530Z"
+      "retry_after": "2026-08-04T20:32:35.530Z",
+      "skipped": true
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-04T20:32:35.530Z"
+      "retry_after": "2026-08-04T20:32:35.530Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-08-04T20:32:35.530Z",
+      "skipped": true
+    }
+  ],
+  "failed": [
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-08-04T20:32:35.530Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-08-04T20:32:35.530Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-08-04T20:32:35.530Z",
+      "skipped": true
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:2",
-    "new-failures:3"
+    "fetched:3",
+    "missing-removed:2"
   ]
 }

@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-03T20:28:56.921Z",
+  "published_at": "2026-08-04T03:52:51.458Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 594,
+  "candidates_seen": 593,
   "totals": {
-    "candidates_seen": 594,
-    "published": 8,
-    "linked_existing": 548,
+    "candidates_seen": 593,
+    "published": 6,
+    "linked_existing": 549,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 556
+    "reconciled": 555
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -193,16 +193,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
-    },
-    {
-      "candidate_id": "candidate-kau-events-summer-career-guidance-courses-20260802-f467f788",
-      "event_id": "event-summer-career-guidance-courses",
-      "title": "Summer Career Guidance Courses"
-    },
-    {
-      "candidate_id": "candidate-kau-events-the-2nd-international-conference-of-sustainability-and-quality-of-life-20261115-1d73f330",
-      "event_id": "event-the-2nd-international-conference-of-sustainability-and-quality-of-life",
-      "title": "The 2nd International Conference of Sustainability and Quality of Life"
     }
   ],
   "linked_existing": [
@@ -576,12 +566,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-الحفلات-الغنائية-20260625-4a38d19e",
       "event_id": "event-الحفلات-الغنائية",
       "title": "الحفلات الغنائية",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-أسبوع-العطور-20260625-4a38d19e",
-      "event_id": "event-أسبوع-العطور",
-      "title": "أسبوع العطور",
       "reason": "already linked to catalog event"
     },
     {
@@ -1110,6 +1094,12 @@
       "candidate_id": "candidate-future-skills-catalog-cloud-security-operations-and-identity-management-عمليات-أمان-السحابة-وإ-20260802-f874057b",
       "event_id": "event-cloud-security-operations-and-identity-management-عمليات-أمان-السحابة-وإ",
       "title": "Cloud Security Operations and Identity Management - عمليات أمان السحابة وإدارة الهوية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-kau-events-summer-career-guidance-courses-20260802-f467f788",
+      "event_id": "event-summer-career-guidance-courses",
+      "title": "Summer Career Guidance Courses",
       "reason": "already linked to catalog event"
     },
     {
@@ -2778,6 +2768,12 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-panel-discussion-the-golden-palm-film-programme-20261113-93241e84",
       "event_id": "event-hayy-cinema-panel-discussion-the-golden-palm-film-programme",
       "title": "Hayy Cinema | Panel Discussion: The Golden Palm Film Programme",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-kau-events-the-2nd-international-conference-of-sustainability-and-quality-of-life-20261115-1d73f330",
+      "event_id": "event-the-2nd-international-conference-of-sustainability-and-quality-of-life",
+      "title": "The 2nd International Conference of Sustainability and Quality of Life",
       "reason": "already linked to catalog event"
     },
     {
