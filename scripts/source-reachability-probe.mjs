@@ -130,6 +130,67 @@ for (const url of TARGETS) {
   }
 }
 
+// Optional second stage: reachability alone does not prove we can still HARVEST
+// a source. If the runner can load a page only through Chromium, the question
+// becomes whether our existing extractor still finds events in that HTML — the
+// difference between "wire the browser fallback" and "the page changed shape
+// and needs a new extractor". Set EVENTLIVE_PROBE_SOURCE_ID to answer it.
+// Read-only: it runs the extractor in memory and reports counts. Nothing is
+// written to data/, no candidate is published, no run state is touched.
+const probeSourceId = process.env.EVENTLIVE_PROBE_SOURCE_ID || '';
+let extractorDryRun = null;
+if (probeSourceId) {
+  const registry = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', 'source_registry.json'), 'utf8'));
+  const source = (registry.sources || registry).find((entry) => entry.id === probeSourceId);
+  if (!source) {
+    console.log(`\nEXTRACTOR_DRY_RUN skipped: no source '${probeSourceId}' in the registry`);
+  } else {
+    const collectors = await import('./collect-source-candidates.mjs');
+    const extractor = collectors[`extract${probeSourceId.split('-').map((part) => part[0].toUpperCase() + part.slice(1)).join('')}`]
+      || collectors.extractQassimChamberEvents;
+    const target = source.collector_url || source.url;
+    console.log(`\n=== extractor dry-run: ${probeSourceId} (${target}) ===`);
+
+    const httpAttempt = await fetch(target, { headers: BROWSER_HEADERS, redirect: 'follow', signal: AbortSignal.timeout(TIMEOUT_MS) })
+      .then(async (response) => ({ status: response.status, html: await response.text() }))
+      .catch((error) => ({ status: 0, html: '', error: shortError(error) }));
+    let httpItems = [];
+    try { httpItems = extractor(httpAttempt.html, source) || []; } catch (error) { httpAttempt.error = shortError(error); }
+    console.log(`    http     HTTP ${httpAttempt.status} · ${httpAttempt.html.length}b · extracted ${httpItems.length} item(s)${httpAttempt.error ? ` · ${httpAttempt.error}` : ''}`);
+
+    let browserHtml = '';
+    let browserItems = [];
+    let browserError = '';
+    try {
+      const { chromium } = await import('playwright');
+      const browser = await chromium.launch();
+      try {
+        const page = await browser.newPage({ userAgent: BROWSER_HEADERS['user-agent'], viewport: { width: 1280, height: 900 } });
+        await page.goto(target, { waitUntil: 'domcontentloaded', timeout: TIMEOUT_MS });
+        await page.waitForLoadState('networkidle', { timeout: 10000 }).catch(() => {});
+        await page.waitForTimeout(3000);
+        browserHtml = await page.content();
+      } finally {
+        await browser.close();
+      }
+      browserItems = extractor(browserHtml, source) || [];
+    } catch (error) {
+      browserError = shortError(error);
+    }
+    const challenged = /just a moment|cf-browser-verification|cdn-cgi\/challenge|request rejected|access denied/i.test(browserHtml);
+    console.log(`    browser  ${browserHtml.length}b · extracted ${browserItems.length} item(s)${challenged ? ' · CHALLENGE PAGE' : ''}${browserError ? ` · ${browserError}` : ''}`);
+    if (browserItems.length) {
+      console.log(`    sample   ${JSON.stringify(browserItems[0]).slice(0, 220)}`);
+    }
+    extractorDryRun = {
+      source_id: probeSourceId,
+      target,
+      http: { status: httpAttempt.status, bytes: httpAttempt.html.length, items: httpItems.length, error: httpAttempt.error || null },
+      browser: { bytes: browserHtml.length, items: browserItems.length, challenge_page: challenged, error: browserError || null }
+    };
+  }
+}
+
 const reportPath = path.join(process.cwd(), 'reports', 'source-reachability-probe.json');
 fs.mkdirSync(path.dirname(reportPath), { recursive: true });
 fs.writeFileSync(reportPath, `${JSON.stringify({
@@ -137,6 +198,7 @@ fs.writeFileSync(reportPath, `${JSON.stringify({
   generated_at: new Date().toISOString(),
   environment: process.env.GITHUB_ACTIONS ? 'github-actions-runner' : 'local',
   timeout_ms: TIMEOUT_MS,
+  extractor_dry_run: extractorDryRun,
   results
 }, null, 2)}\n`, 'utf8');
 
