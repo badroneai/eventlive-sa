@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-08-03T20:05:09.687Z",
+  "generated_at": "2026-08-05T03:41:16.627Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -189,7 +189,7 @@
       "final_url": "https://www.visitsaudi.com/ar/saudi-calendar",
       "via": "fetch",
       "content_type": "text/html;charset=utf-8",
-      "bytes": 387186,
+      "bytes": 387094,
       "title": "تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية",
       "classification": "reachable",
       "error": "",
@@ -247,11 +247,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 96761,
+          "bytes": 93964,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 29,
+            "item_count": 28,
             "sample_titles": [
               "معرض اللغة العربية للطفل",
               "معرض اللغة العربية 28",
@@ -265,11 +265,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 100241,
+          "bytes": 97330,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 29,
+            "item_count": 28,
             "sample_titles": [
               "Arabic Language Exhibition for kids",
               "Arabic Language Exhibition 28",
@@ -294,7 +294,7 @@
       "final_url": "https://webook.com/ar/explore",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 5946,
+      "bytes": 5945,
       "title": "",
       "classification": "protected",
       "error": "",
@@ -327,7 +327,7 @@
         "https://wbk-assets.webook.com/0.7.0/assets/react-helmet-Ba2OUe2H.js",
         "https://wbk-assets.webook.com/0.7.0/assets/@wbk/cruises-CFh44dRH.js",
         "https://wbk-assets.webook.com/0.7.0/assets/@wbk/auction-te7OXqy9.js",
-        "https://webook.com/cdn-cgi/content?id=F8YohSLgUYFunyulnTaxoO.k.h7FovTRsbhHlK3ZE0c-1785787519.0114787-1.2.1.1-BHuEMYhWPtZfI38pL_H7jQ5Ib4S.Zw8_u.8cn708A0Y",
+        "https://webook.com/cdn-cgi/content?id=jblehM1CjZZPg8Q2rmkqC5NJtIzIGN0iTVetNYEj1Fg-1785901286.446476-1.2.1.1-lmbt2CuT_fPcqM2GLGeZqjVtcCqEhq0ViPqUuab5zdo",
         "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496"
       ],
       "page_hint_words": [

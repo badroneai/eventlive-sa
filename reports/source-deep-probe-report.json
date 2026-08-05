@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T20:04:33.118Z",
+  "generated_at": "2026-08-05T03:40:38.877Z",
   "registry": "data/source_registry.json",
   "source_ingestion_plan": "reports/source-ingestion-plan.json",
   "probe_limit": 28,
@@ -26,7 +26,7 @@
         "status": 200,
         "final_url": "https://money2020middleeast.com/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 65713,
+        "bytes": 65596,
         "title": "The Global Fintech Conference | Money 20/20 Middle East",
         "blocked_reason": "",
         "structured_scripts": 1,
@@ -94,7 +94,7 @@
         "status": 200,
         "final_url": "https://ncci.org.sa/category/events/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 118064,
+        "bytes": 118054,
         "title": "الفعاليات – الغرفة التجارية بعرعر | غرفة الحدود الشمالية",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -264,7 +264,7 @@
         "status": 200,
         "final_url": "https://www.tabukchamber.sa/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 111994,
+        "bytes": 111996,
         "title": "الغرفة التجارية بتبوك | TABUK CHAMBER",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -332,7 +332,7 @@
         "status": 200,
         "final_url": "https://www.asda.gov.sa/en",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 208578,
+        "bytes": 208118,
         "title": "Aseer Development Authority | Qimam wa Shiyam Strategy",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -421,40 +421,6 @@
       "recommendation": "probe-hidden-api-or-html-table"
     },
     {
-      "id": "baha-amanah-events",
-      "name": "Baha Municipality Events",
-      "priority": 62,
-      "url": "https://baha.gov.sa/ar/Events",
-      "trust_level": "official",
-      "fetch_method": "html-listing",
-      "candidate_gate": "extraction",
-      "intake_policy": "official-feed-preferred",
-      "signals": {
-        "http_ok": true,
-        "status": 200,
-        "final_url": "https://baha.gov.sa/ar/Events",
-        "content_type": "text/html; charset=utf-8",
-        "bytes": 199036,
-        "title": "فعاليات الباحة",
-        "blocked_reason": "bot-protection",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 19,
-        "json_or_api_hints": 14,
-        "date_snippets": [
-          "datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" as=\"style\"",
-          "datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" rel=\"stylesheet\">",
-          "calendar-alt\">",
-          "date-span\">",
-          "03 Aug 2027",
-          "dated Row -->"
-        ]
-      },
-      "extraction_score": 23,
-      "recommendation": "blocked-or-protected:bot-protection"
-    },
-    {
       "id": "riyadh-season",
       "name": "Riyadh Season Official",
       "priority": 18,
@@ -524,7 +490,7 @@
         "content_type": "",
         "bytes": 0,
         "title": "",
-        "blocked_reason": "fetch failed getaddrinfo EAI_AGAIN www.ricec.com TypeError: fetch failed",
+        "blocked_reason": "fetch failed Connect Timeout Error (attempted address: www.ricec.com:443, timeout: 10000ms) TypeError: fetch failed",
         "structured_scripts": 0,
         "structured_events": 0,
         "google_calendar_links": 0,
@@ -533,34 +499,7 @@
         "date_snippets": []
       },
       "extraction_score": -23,
-      "recommendation": "blocked-or-protected:fetch failed getaddrinfo EAI_AGAIN www.ricec.com TypeError: fetch failed"
-    },
-    {
-      "id": "saudi-contractors-authority-events",
-      "name": "Saudi Contractors Authority Events",
-      "priority": 49,
-      "url": "https://www.sca.gov.sa/",
-      "trust_level": "official",
-      "fetch_method": "html-listing",
-      "candidate_gate": "extraction",
-      "intake_policy": "monitor-public",
-      "signals": {
-        "http_ok": false,
-        "status": 0,
-        "final_url": "https://www.sca.gov.sa/",
-        "content_type": "",
-        "bytes": 0,
-        "title": "",
-        "blocked_reason": "fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 0,
-        "date_snippets": []
-      },
-      "extraction_score": -23,
-      "recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed"
+      "recommendation": "blocked-or-protected:fetch failed Connect Timeout Error (attempted address: www.ricec.com:443, timeout: 10000ms) TypeError: fetch failed"
     },
     {
       "id": "riyadh-city-events",
@@ -588,6 +527,64 @@
       },
       "extraction_score": -23,
       "recommendation": "blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed"
+    },
+    {
+      "id": "middle-east-banking-ai-summit",
+      "name": "Middle East Banking AI & Analytics Summit Official",
+      "priority": 74,
+      "url": "https://mebankingai.com/sa/",
+      "trust_level": "official",
+      "fetch_method": "html-listing",
+      "candidate_gate": "human-review",
+      "intake_policy": "official-feed-preferred",
+      "signals": {
+        "http_ok": true,
+        "status": 200,
+        "final_url": "https://mebankingai.com/sa/",
+        "content_type": "text/html",
+        "bytes": 2305,
+        "title": "Middle East Banking",
+        "blocked_reason": "bot-protection",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 1,
+        "date_snippets": [
+          "Date(); (function(){ var s1=document.createElement(\"script\"),s0=document.getElements"
+        ]
+      },
+      "extraction_score": -23,
+      "recommendation": "blocked-or-protected:bot-protection"
+    },
+    {
+      "id": "middle-east-enterprise-ai-summit",
+      "name": "Middle East Enterprise AI & Analytics Summit Official",
+      "priority": 75,
+      "url": "https://meenterpriseai.com/sa/",
+      "trust_level": "official",
+      "fetch_method": "html-listing",
+      "candidate_gate": "human-review",
+      "intake_policy": "official-feed-preferred",
+      "signals": {
+        "http_ok": true,
+        "status": 200,
+        "final_url": "https://meenterpriseai.com/sa/",
+        "content_type": "text/html",
+        "bytes": 1996,
+        "title": "Middle East Enterprise",
+        "blocked_reason": "bot-protection",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 1,
+        "date_snippets": [
+          "Date(); (function(){ var s1=document.createElement(\"script\"),s0=document.getElements"
+        ]
+      },
+      "extraction_score": -23,
+      "recommendation": "blocked-or-protected:bot-protection"
     },
     {
       "id": "saudi-digital-academy",

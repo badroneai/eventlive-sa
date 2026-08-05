@@ -1,153 +1,26 @@
 {
   "schema": "eventlive.source-browser-probe-checkpoint.v1",
-  "checkpointed_at": "2026-08-04T03:45:09.672Z",
-  "generated_at": "2026-08-04T03:44:38.577Z",
+  "checkpointed_at": "2026-08-05T03:54:27.113Z",
+  "generated_at": "2026-08-05T03:54:14.206Z",
   "source_registry": "data/source_registry.json",
   "output_dir": "data/raw/browser-probes",
-  "sources_planned": 2,
-  "sources_completed": 2,
+  "sources_planned": 1,
+  "sources_completed": 1,
   "totals": {
-    "probed": 2,
+    "probed": 1,
     "browser_network_api": 0,
     "browser_hydration_payload": 0,
-    "rendered_html_candidates": 2,
+    "rendered_html_candidates": 1,
     "blocked_or_protected": 0,
     "policy_skipped": 0
   },
   "completed_ids": [
-    "hayy-jameel-events",
     "riyadh-city-events"
   ],
   "sources": [
     {
-      "id": "hayy-jameel-events",
-      "probed_at": "2026-08-04T03:44:57.280Z",
-      "name": "Hayy Jameel What's On",
-      "priority": 85,
-      "url": "https://hayyjameel.org/whats-on-sitemap.xml",
-      "final_url": "https://hayyjameel.org/whats-on-sitemap.xml",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 16367,
-      "classification": "rendered-html-candidates",
-      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
-      "title": "XML Sitemap",
-      "text_bytes": 81254,
-      "html_bytes": 180997,
-      "html_snapshot": "data/raw/browser-probes/hayy-jameel-events-2026-08-04T03-44-38-577Z.html",
-      "screenshot": "data/raw/browser-probes/hayy-jameel-events-2026-08-04T03-44-38-577Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [
-          "Mod. https://hayyjameel.org/whats-on/ 0 2026-08-02 11:14 +00:00 https://hayyjameel.org/whats-on/illuminate-a-noor-riyadh-capsule/",
-          "0 2022-04-05 10:50 +00:00 https://hayyjameel.org/whats-on/how-to-speak-a-place-art-writing-f",
-          "rom-the-gulf/ 0 2022-05-22 14:35 +00:00 https://hayyjameel.org/whats-on/through-natures-eyes-with-biomimic",
-          "ry-arabia/ 0 2022-05-22 14:37 +00:00 https://hayyjameel.org/whats-on/mamoul-workshop-with-aysh-academy-",
-          "x-art-jameel/ 0 2022-06-07 09:23 +00:00 https://hayyjameel.org/whats-on/open-call-in-practice-residency-wi",
-          "eel-and-goethe-institut-saudi-arabia/ 0 2022-06-07 09:25 +00:00 https://hayyjameel.org/whats-on/artists-film-programme/ 0 2022-06-",
-          "ng-a-sound-community-under-the-stars/ 0 2022-06-07 09:26 +00:00 https://hayyjameel.org/whats-on/deserts-dont-bloom-salmon-dont-fly",
-          "/ 0 2022-06-07 09:26 +00:00 https://hayyjameel.org/whats-on/farmers-market-at-hayy-jameel-in-c"
-        ],
-        "event_like_links": [
-          {
-            "text": "https://hayyjameel.org/whats-on/",
-            "href": "https://hayyjameel.org/whats-on/"
-          },
-          {
-            "text": "https://hayyjameel.org/whats-on/illuminate-a-noor-riyadh-capsule/",
-            "href": "https://hayyjameel.org/whats-on/illuminate-a-noor-riyadh-capsule/"
-          },
-          {
-            "text": "https://hayyjameel.org/whats-on/how-to-speak-a-place-art-writing-from-the-gulf/",
-            "href": "https://hayyjameel.org/whats-on/how-to-speak-a-place-art-writing-from-the-gulf/"
-          },
-          {
-            "text": "https://hayyjameel.org/whats-on/through-natures-eyes-with-biomimicry-arabia/",
-            "href": "https://hayyjameel.org/whats-on/through-natures-eyes-with-biomimicry-arabia/"
-          },
-          {
-            "text": "https://hayyjameel.org/whats-on/mamoul-workshop-with-aysh-academy-x-art-jameel/",
-            "href": "https://hayyjameel.org/whats-on/mamoul-workshop-with-aysh-academy-x-art-jameel/"
-          },
-          {
-            "text": "https://hayyjameel.org/whats-on/open-call-in-practice-residency-with-slavs-and-tatars-in-collaboration-with-art-jameel-a",
-            "href": "https://hayyjameel.org/whats-on/open-call-in-practice-residency-with-slavs-and-tatars-in-collaboration-with-art-jameel-and-goethe-institut-saudi-arabia/"
-          },
-          {
-            "text": "https://hayyjameel.org/whats-on/artists-film-programme/",
-            "href": "https://hayyjameel.org/whats-on/artists-film-programme/"
-          },
-          {
-            "text": "https://hayyjameel.org/whats-on/building-a-sound-community-under-the-stars/",
-            "href": "https://hayyjameel.org/whats-on/building-a-sound-community-under-the-stars/"
-          },
-          {
-            "text": "https://hayyjameel.org/whats-on/deserts-dont-bloom-salmon-dont-fly/",
-            "href": "https://hayyjameel.org/whats-on/deserts-dont-bloom-salmon-dont-fly/"
-          },
-          {
-            "text": "https://hayyjameel.org/whats-on/farmers-market-at-hayy-jameel-in-collaboration-with-azka-farms-2/",
-            "href": "https://hayyjameel.org/whats-on/farmers-market-at-hayy-jameel-in-collaboration-with-azka-farms-2/"
-          },
-          {
-            "text": "https://hayyjameel.org/whats-on/plant-your-plate-childrens-workshop/",
-            "href": "https://hayyjameel.org/whats-on/plant-your-plate-childrens-workshop/"
-          },
-          {
-            "text": "https://hayyjameel.org/whats-on/how-is-food-affected-by-our-senses-by-food-innovator-mawadah-bajrai/",
-            "href": "https://hayyjameel.org/whats-on/how-is-food-affected-by-our-senses-by-food-innovator-mawadah-bajrai/"
-          },
-          {
-            "text": "https://hayyjameel.org/whats-on/jam-session-with-alexandra-ivanova-trio-and-lynn-adib/",
-            "href": "https://hayyjameel.org/whats-on/jam-session-with-alexandra-ivanova-trio-and-lynn-adib/"
-          },
-          {
-            "text": "https://hayyjameel.org/whats-on/hayy-jameels-english-tour/",
-            "href": "https://hayyjameel.org/whats-on/hayy-jameels-english-tour/"
-          },
-          {
-            "text": "https://hayyjameel.org/whats-on/exhibitions-tour/",
-            "href": "https://hayyjameel.org/whats-on/exhibitions-tour/"
-          },
-          {
-            "text": "https://hayyjameel.org/whats-on/recital-by-french-soprano-clara-barbier-serrano/",
-            "href": "https://hayyjameel.org/whats-on/recital-by-french-soprano-clara-barbier-serrano/"
-          },
-          {
-            "text": "https://hayyjameel.org/whats-on/fundamentals-of-milk-kefir-with-health-in-a-jar/",
-            "href": "https://hayyjameel.org/whats-on/fundamentals-of-milk-kefir-with-health-in-a-jar/"
-          },
-          {
-            "text": "https://hayyjameel.org/whats-on/hayy-jameel-a-creative-community-in-the-making-by-waiwai/",
-            "href": "https://hayyjameel.org/whats-on/hayy-jameel-a-creative-community-in-the-making-by-waiwai/"
-          },
-          {
-            "text": "https://hayyjameel.org/whats-on/an-introduction-to-paper-negatives-by-osama-esid/",
-            "href": "https://hayyjameel.org/whats-on/an-introduction-to-paper-negatives-by-osama-esid/"
-          },
-          {
-            "text": "https://hayyjameel.org/whats-on/in-conversation-with-laurie-anderson/",
-            "href": "https://hayyjameel.org/whats-on/in-conversation-with-laurie-anderson/"
-          }
-        ]
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 0,
-      "network_endpoints": [],
-      "network_sample": []
-    },
-    {
       "id": "riyadh-city-events",
-      "probed_at": "2026-08-04T03:45:09.672Z",
+      "probed_at": "2026-08-05T03:54:27.112Z",
       "name": "Riyadh City Events",
       "priority": 51,
       "url": "https://riyadh.sa/en/events/all",
@@ -155,14 +28,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 12343,
+      "duration_ms": 12437,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "الموقع الرسمي لمدينة الرياض",
-      "text_bytes": 823,
-      "html_bytes": 155260,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-08-04T03-44-38-577Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-08-04T03-44-38-577Z.png",
+      "text_bytes": 825,
+      "html_bytes": 155262,
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-08-05T03-54-14-206Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-08-05T03-54-14-206Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,

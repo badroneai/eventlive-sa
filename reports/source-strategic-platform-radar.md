@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-08-03T20:05:09.687Z
+Generated at: 2026-08-05T03:41:16.627Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -51,8 +51,8 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Project use: Keep in the 6-hour source ring; Arabic and English API payloads are reachable and useful for tourism-facing event discovery.
 - Title: تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية
 - Hint URLs: https://assets.adobedtm.com, https://connect.facebook.net/, https://tpc.googlesyndication.com, https://pagead2.googlesyndication.com, https://www.facebook.com, https://platform.twitter.com/, https://staticxx.facebook.com, https://scth.scene7.com
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 29 items; معرض اللغة العربية للطفل, معرض اللغة العربية 28, كنوز غارقة, سمره, مهرجان صوت أبها SAF
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 29 items; Arabic Language Exhibition for kids, Arabic Language Exhibition 28, Sunken Treasures, Sammrah, Sound of Abha Fest (SAF)
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 28 items; معرض اللغة العربية للطفل, معرض اللغة العربية 28, كنوز غارقة, سمره, مهرجان صوت أبها SAF
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 28 items; Arabic Language Exhibition for kids, Arabic Language Exhibition 28, Sunken Treasures, Sammrah, Sound of Abha Fest (SAF)
 
 ### webook Explore
 

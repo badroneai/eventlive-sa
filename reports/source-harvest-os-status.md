@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-04T20:22:50.898Z
-- Status: PASS
+- Generated at: 2026-08-05T04:17:27.136Z
+- Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 601
-- Matched candidates: 569
+- Candidates: 604
+- Matched candidates: 572
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 20/22
-- Collector errors: 0
+- Productive sources / attempted: 22/30
+- Collector errors: 4
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 319 |
-| candidate_queue | 601 |
-| evaluated_for_publish | 601 |
-| linked_existing | 547 |
-| published_new | 16 |
+| discovered_this_run | 337 |
+| candidate_queue | 604 |
+| evaluated_for_publish | 604 |
+| linked_existing | 558 |
+| published_new | 8 |
 | blocked | 38 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 46 |
+| secondary_still_blocked | 37 |
 
 ## Blocked Reasons
 
@@ -46,6 +46,13 @@
 
 | Source | Reason |
 | --- | --- |
+| moc-cultural-calendar | fetch failed; fetch failed |
+| mos-events | fetch failed; page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.mos.gov.sa/en/media/events", waiting until "domcontentloaded"
+ |
+| moc-cultural-subportals | fetch failed; fetch failed |
+| qassim-chamber-events | HTTP 403; browser recovery encountered an access-protection page |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

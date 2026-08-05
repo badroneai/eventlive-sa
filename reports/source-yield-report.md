@@ -1,58 +1,58 @@
 # EventLive Source Yield Report
 
-Generated at: 2026-08-03T20:05:24.835Z
+Generated at: 2026-08-05T03:41:31.662Z
 Sources attempted: 48
 
 | Source | Status | Signals | Extracted raw | Future complete | Written last run | Drop reasons | Note |
 |---|---|---:|---:|---:|---:|---|---|
-| visit-saudi-calendar | ok | bytes 100303, rows 29, dates 0 | 29 | 28 | 28 | future-complete:28, past-date:1 |  |
+| visit-saudi-calendar | ok | bytes 97392, rows 28, dates 0 | 28 | 28 | 28 | future-complete:28 |  |
 | moc-cultural-calendar | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | fetch failed; fetch failed |
 | mos-events | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | fetch failed |
 | experience-alula-events | ok | bytes 568586, rows 0, dates 1 | 12 | 9 | 9 | future-complete:9, past-date:3 |  |
-| mdlbeast-events | ok | bytes 395678, rows 0, dates 85 | 41 | 4 | 4 | future-complete:4, past-date:37 |  |
-| monshaat-events | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | fetch failed; fetch failed |
+| mdlbeast-events | ok | bytes 395668, rows 0, dates 83 | 41 | 5 | 5 | future-complete:5, past-date:36 |  |
+| monshaat-events | ok | bytes 188735, rows 0, dates 2 | 14 | 2 | 0 | past-date:12, future-complete:2 |  |
 | invest-saudi-events | ok | bytes 7022, rows 9, dates 0 | 8 | 3 | 3 | past-date:5, future-complete:3 |  |
-| rfecc-whats-on | ok | bytes 149701, rows 0, dates 5 | 20 | 6 | 6 | past-date:14, future-complete:6 |  |
+| rfecc-whats-on | ok | bytes 149674, rows 0, dates 5 | 20 | 6 | 6 | past-date:14, future-complete:6 |  |
 | eye-of-riyadh-events | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | HTTP 403 |
 | eventbrite-saudi | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | HTTP 405 |
-| tuwaiq-academy-bootcamps | ok | bytes 10679, rows 12, dates 0 | 12 | 12 | 12 | future-complete:12 |  |
-| future-skills-catalog | ok | bytes 171138, rows 0, dates 0 | 12 | 6 | 6 | future-complete:6, past-date:6 |  |
-| visit-saudi-seasons | ok | bytes 100303, rows 29, dates 0 | 17 | 16 | 16 | future-complete:16, past-date:1 |  |
+| tuwaiq-academy-bootcamps | ok | bytes 10654, rows 12, dates 0 | 12 | 12 | 12 | future-complete:12 |  |
+| future-skills-catalog | ok | bytes 171066, rows 0, dates 0 | 12 | 4 | 4 | future-complete:4, past-date:8 |  |
+| visit-saudi-seasons | ok | bytes 97392, rows 28, dates 0 | 16 | 16 | 16 | future-complete:16 |  |
 | code-mcit-programs | ok | bytes 42936, rows 0, dates 0 | 0 | 0 | 0 | - |  |
 | misk-hub-programs | ok | bytes 214425, rows 0, dates 0 | 5 | 5 | 5 | future-complete:5 |  |
 | dhahran-expo-calendar | ok | bytes 479989, rows 0, dates 0 | 24 | 16 | 16 | past-date:8, future-complete:16 |  |
-| ithra-events | ok | bytes 3939651, rows 0, dates 2812 | 229 | 76 | 77 | past-date:153, future-complete:76 |  |
+| ithra-events | ok | bytes 3976057, rows 0, dates 2826 | 232 | 77 | 77 | past-date:155, future-complete:77 |  |
 | sdaia-academy-programs | ok | bytes 42986, rows 0, dates 1 | 0 | 0 | 0 | - |  |
 | misk-hub-events | ok | bytes 229491, rows 0, dates 22 | 5 | 0 | 0 | past-date:5 |  |
-| jcci-events-center | ok | bytes 1378996, rows 0, dates 0 | 13 | 0 | 0 | past-date:13 |  |
+| jcci-events-center | ok | bytes 1378956, rows 0, dates 0 | 13 | 0 | 0 | past-date:13 |  |
 | saudi-pro-league-fixtures | ok | bytes 162336, rows 100, dates 200 | 100 | 0 | 0 | past-date:100 |  |
-| saudi-space-agency-events | ok | bytes 146085, rows 0, dates 1 | 14 | 0 | 0 | past-date:14 |  |
-| visit-saudi-calendar-pdf | ok | bytes 448194, rows 0, dates 0 | 99 | 58 | 0 | future-complete:58, past-date:41 |  |
+| saudi-space-agency-events | ok | bytes 148916, rows 0, dates 1 | 15 | 1 | 0 | future-complete:1, past-date:14 |  |
+| visit-saudi-calendar-pdf | ok | bytes 448194, rows 0, dates 0 | 99 | 57 | 0 | future-complete:57, past-date:42 |  |
 | moc-cultural-subportals | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | fetch failed; fetch failed |
-| discover-aseer-events | ok | bytes 137938, rows 0, dates 2 | 37 | 36 | 36 | future-complete:36, past-date:1 |  |
+| discover-aseer-events | ok | bytes 138056, rows 0, dates 2 | 36 | 36 | 36 | future-complete:36 |  |
 | saudi-water-authority-events | ok | bytes 184299, rows 0, dates 21 | 9 | 8 | 8 | future-complete:8, past-date:1 |  |
-| saudi-university-events | ok | bytes 84344, rows 0, dates 0 | 3 | 3 | 0 | future-complete:3 |  |
-| sfda-events | ok | bytes 127414, rows 0, dates 19 | 9 | 8 | 8 | future-complete:8, past-date:1 |  |
+| saudi-university-events | ok | bytes 84344, rows 0, dates 0 | 5 | 5 | 0 | future-complete:5 |  |
+| sfda-events | ok | bytes 186258, rows 0, dates 22 | 9 | 9 | 9 | future-complete:9 |  |
 | riyadh-city-events | ok | bytes 3129, rows 0, dates 0 | 0 | 0 | 0 | - |  |
 | sdaia-calendar-events | ok | bytes 48915, rows 0, dates 1 | 3 | 2 | 2 | past-date:1, future-complete:2 |  |
 | makkah-chamber-events | ok | bytes 67427, rows 0, dates 14 | 10 | 0 | 0 | past-date:10 |  |
 | scega-exhibitions-conferences | ok | bytes 4890, rows 0, dates 0 | 4 | 4 | 4 | future-complete:4 |  |
-| asharqia-chamber-events | ok | bytes 103267, rows 0, dates 3 | 15 | 2 | 2 | future-complete:2, past-date:13 |  |
+| asharqia-chamber-events | ok | bytes 103359, rows 0, dates 3 | 15 | 3 | 3 | future-complete:3, past-date:12 |  |
 | qassim-chamber-events | error | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | HTTP 403 |
 | abha-chamber-events | ok | bytes 38483, rows 0, dates 0 | 5 | 0 | 0 | past-date:5 |  |
 | northern-borders-chamber-events | ok | bytes 308810, rows 24, dates 0 | 4 | 0 | 0 | past-date:4 |  |
 | tabuk-chamber-events | ok | bytes 35173, rows 0, dates 18 | 2 | 0 | 0 | past-date:2 |  |
 | jazan-chamber-events | ok | bytes 0, rows 0, dates 0 | 0 | 0 | 0 | - | Recovered through official API after primary page failure: fetch failed |
-| najran-municipality-summer-events | ok | bytes 170534, rows 0, dates 6 | 0 | 0 | 0 | - |  |
-| umm-al-qura-events | ok | bytes 498513, rows 0, dates 14 | 10 | 10 | 10 | future-complete:10 |  |
+| najran-municipality-summer-events | ok | bytes 180616, rows 0, dates 6 | 0 | 0 | 0 | - |  |
+| umm-al-qura-events | ok | bytes 499274, rows 0, dates 14 | 10 | 10 | 10 | future-complete:10 |  |
 | qassim-university-events | ok | bytes 741294, rows 0, dates 12 | 3 | 1 | 0 | future-complete:1, past-date:2 |  |
-| jouf-university-programs | ok | bytes 686430, rows 0, dates 260 | 1 | 1 | 0 | future-complete:1 |  |
+| jouf-university-programs | ok | bytes 686490, rows 0, dates 260 | 1 | 1 | 0 | future-complete:1 |  |
 | madinah-chamber-events | ok | bytes 36538, rows 12, dates 2 | 12 | 0 | 0 | past-date:12 |  |
-| madinah-architecture-festival | ok | bytes 66268, rows 0, dates 9 | 1 | 1 | 1 | future-complete:1 |  |
-| hayy-jameel-events | ok | bytes 120908, rows 0, dates 0 | 67 | 67 | 67 | future-complete:67 |  |
-| informa-connect-saudi-events | ok | bytes 287984, rows 0, dates 0 | 8 | 6 | 0 | past-date:2, future-complete:6 |  |
-| kau-events | ok | bytes 159838, rows 0, dates 40 | 10 | 4 | 0 | future-complete:4, past-date:6 |  |
-| saudicon-events | ok | bytes 25132, rows 0, dates 0 | 40 | 15 | 0 | past-date:25, future-complete:15 |  |
+| madinah-architecture-festival | ok | bytes 66269, rows 0, dates 9 | 1 | 1 | 1 | future-complete:1 |  |
+| hayy-jameel-events | ok | bytes 120908, rows 0, dates 0 | 65 | 65 | 65 | future-complete:65 |  |
+| informa-connect-saudi-events | ok | bytes 288048, rows 0, dates 0 | 8 | 6 | 0 | past-date:2, future-complete:6 |  |
+| kau-events | ok | bytes 160158, rows 0, dates 0 | 0 | 0 | 0 | - |  |
+| saudicon-events | ok | bytes 25536, rows 0, dates 0 | 40 | 15 | 0 | past-date:25, future-complete:15 |  |
 
 ## Zero Yield Sources
 
@@ -60,7 +60,6 @@ Sources attempted: 48
 |---|---|---|
 | moc-cultural-calendar | collector-error: fetch failed; fetch failed | 0 |
 | mos-events | collector-error: fetch failed | 0 |
-| monshaat-events | collector-error: fetch failed; fetch failed | 0 |
 | eye-of-riyadh-events | collector-error: HTTP 403 | 0 |
 | eventbrite-saudi | collector-error: HTTP 405 | 0 |
 | code-mcit-programs | no rows detected by extractor | 0 |
@@ -68,7 +67,6 @@ Sources attempted: 48
 | misk-hub-events | past-date:5 | 0 |
 | jcci-events-center | past-date:13 | 0 |
 | saudi-pro-league-fixtures | past-date:100 | 2 |
-| saudi-space-agency-events | past-date:14 | 0 |
 | moc-cultural-subportals | collector-error: fetch failed; fetch failed | 0 |
 | riyadh-city-events | no rows detected by extractor | 0 |
 | makkah-chamber-events | past-date:10 | 0 |
@@ -79,20 +77,25 @@ Sources attempted: 48
 | jazan-chamber-events | no rows detected by extractor | 0 |
 | najran-municipality-summer-events | date/content signals exist but extractor returned no complete future rows | 0 |
 | madinah-chamber-events | past-date:12 | 0 |
+| kau-events | no rows detected by extractor | 0 |
 
 ## Dropped Row Samples
 
 | Source | Title | Reason | Raw date text | Converted date | City |
 |---|---|---|---|---|---|
-| visit-saudi-calendar | Tour of Al Baha | past-date | - | 2026-07-30T09:00:00+03:00 - 2026-08-03T18:00:00+03:00 | Al Baha |
 | experience-alula-events | AlFursan Endurance AlUla | past-date | Available on 7 and 8 Feb 2026 | 2026-02-07T09:00:00+03:00 - 2026-02-08T18:00:00+03:00 | AlUla |
-| experience-alula-events | Summer Fruits Season in AlUla | past-date | Available from 16 July to 22 July 2026 | 2026-07-16T09:00:00+03:00 - 2026-07-22T18:00:00+03:00 | AlUla |
 | experience-alula-events | Desert X AlUla 2026 | past-date | 16 Jan - 28 Feb / 10:30 - 18:00 | 2026-01-16T09:00:00+03:00 - 2026-02-28T18:00:00+03:00 | AlUla |
-| mdlbeast-events | Unstable | past-date | 2026-07-30T21:00:00+00:00 - 2026-07-31T21:00:00+00:00 | 2026-07-31T00:00:00+03:00 - 2026-08-01T00:00:00+03:00 | Riyadh |
+| experience-alula-events | Summer Fruits Season in AlUla | past-date | Available from 16 July to 22 July 2026 | 2026-07-16T09:00:00+03:00 - 2026-07-22T18:00:00+03:00 | AlUla |
 | mdlbeast-events | MDLBEAST Radio MixTape | past-date | 2026-06-18T21:00:00+00:00 - 2026-06-18T21:00:00+00:00 | 2026-06-19T00:00:00+03:00 - 2026-06-19T00:00:00+03:00 | Riyadh |
 | mdlbeast-events | Balad Beast 2026 | past-date | 2026-02-04T21:00:00+00:00 - 2026-02-05T21:00:00+00:00 | 2026-02-05T00:00:00+03:00 - 2026-02-06T00:00:00+03:00 | Jeddah |
 | mdlbeast-events | SOUNDSTORM 25 | past-date | 2025-12-10T21:00:00+00:00 - 2025-12-12T21:00:00+00:00 | 2025-12-11T00:00:00+03:00 - 2025-12-13T00:00:00+03:00 | Riyadh |
 | mdlbeast-events | XP Music Futures 2025 | past-date | 2025-12-03T21:00:00+00:00 - 2025-12-05T21:00:00+00:00 | 2025-12-04T00:00:00+03:00 - 2025-12-06T00:00:00+03:00 | Riyadh |
+| mdlbeast-events | Azimuth 2025 | past-date | 2025-09-24T21:00:00+00:00 - 2025-09-25T21:00:00+00:00 | 2025-09-25T00:00:00+03:00 - 2025-09-26T00:00:00+03:00 | AlUla |
+| monshaat-events | E- Commerce Event | past-date | 05 - 12 2018 March | 2018-03-05T09:00:00+03:00 - 2018-03-12T17:00:00+03:00 | Jeddah |
+| monshaat-events | Hackathon - The Saudi Digital Machines | past-date | 21 - 24 2018 March | 2018-03-21T09:00:00+03:00 - 2018-03-24T17:00:00+03:00 | Riyadh |
+| monshaat-events | Cisco Connect | past-date | 27 - 28 2018 March | 2018-03-27T09:00:00+03:00 - 2018-03-28T17:00:00+03:00 | Riyadh |
+| monshaat-events | The 2nd Entrepreneurship Forum | past-date | 01 - 03 2018 April | 2018-04-01T09:00:00+03:00 - 2018-04-03T17:00:00+03:00 | Riyadh |
+| monshaat-events | Biban - Al Qassim | past-date | 19 - 21 2018 April | 2018-04-19T09:00:00+03:00 - 2018-04-21T17:00:00+03:00 | Buraydah |
 | invest-saudi-events | INNOPROM. Saudi Arabia 2026 | past-date | 08/02/2026 - 10/02/2026 | 2026-02-08T09:00:00+03:00 - 2026-02-10T18:00:00+03:00 | Riyadh |
 | invest-saudi-events | Viva Technology | past-date | 17/06/2026 - 20/06/2026 | 2026-06-17T09:00:00+03:00 - 2026-06-20T18:00:00+03:00 | Global |
 | invest-saudi-events | Real Estate Future Forum | past-date | 26/01/2026 - 28/01/2026 | 2026-01-26T09:00:00+03:00 - 2026-01-28T18:00:00+03:00 | Riyadh |
@@ -103,12 +106,11 @@ Sources attempted: 48
 | rfecc-whats-on | Saudi Food Show | past-date | - | 2026-06-15T09:00:00+03:00 - 2026-06-17T18:00:00+03:00 | Riyadh |
 | rfecc-whats-on | Saudi Food Manufacturing | past-date | - | 2026-06-08T09:00:00+03:00 - 2026-06-10T18:00:00+03:00 | Riyadh |
 | rfecc-whats-on | SLS EXPO | past-date | - | 2026-05-19T09:00:00+03:00 - 2026-05-21T18:00:00+03:00 | Riyadh |
+| future-skills-catalog | ⁠DevOps Fundamentals for Cloud Environments-أساسيات ديفوبس لبيئات السحابة | past-date | تبدأ 02-08-2026 إلى 04-08-2026 لمدة 12 ساعات | 2026-08-02T09:00:00+03:00 - 2026-08-04T18:00:00+03:00 | Online |
+| future-skills-catalog | Cloud Security Operations and Identity Management - عمليات أمان السحابة وإدارة الهوية | past-date | تبدأ 02-08-2026 إلى 04-08-2026 لمدة 12 ساعات | 2026-08-02T09:00:00+03:00 - 2026-08-04T18:00:00+03:00 | Online |
 | future-skills-catalog | ⁠Advanced Excel for Data Analysis - دورة اكسيل لتحليل البيانات | past-date | تبدأ 19-07-2026 إلى 23-07-2026 لمدة 20 ساعات | 2026-07-19T09:00:00+03:00 - 2026-07-23T18:00:00+03:00 | Online |
 | future-skills-catalog | CompTIA A+ | past-date | تبدأ 19-07-2026 إلى 23-07-2026 لمدة 30 ساعات | 2026-07-19T09:00:00+03:00 - 2026-07-23T18:00:00+03:00 | Online |
 | future-skills-catalog | Cloud Computing Essentials - أساسيات الحوسبة السحابية | past-date | تبدأ 19-07-2026 إلى 21-07-2026 لمدة 15 ساعات | 2026-07-19T09:00:00+03:00 - 2026-07-21T18:00:00+03:00 | Online |
-| future-skills-catalog | Duplicate of Cloud Computing Essentials - أساسيات الحوسبة السحابية | past-date | تبدأ 19-07-2026 إلى 21-07-2026 لمدة 15 ساعات | 2026-07-19T09:00:00+03:00 - 2026-07-21T18:00:00+03:00 | Online |
-| future-skills-catalog | أساسيات الحوسبة السحابية - Cloud Computing Essentials | past-date | تبدأ 13-07-2026 إلى 15-07-2026 لمدة 12 ساعات | 2026-07-13T09:00:00+03:00 - 2026-07-15T18:00:00+03:00 | Online |
-| visit-saudi-seasons | Tour of Al Baha | past-date | - | 2026-07-30T09:00:00+03:00 - 2026-08-03T18:00:00+03:00 | Al Baha |
 | dhahran-expo-calendar | Offer Home Expo | past-date | - | 2026-01-08T09:00:00+03:00 - 2026-01-11T18:00:00+03:00 | Dhahran |
 | dhahran-expo-calendar | Heavy Equipment Connect | past-date | - | 2026-02-02T09:00:00+03:00 - 2026-02-04T18:00:00+03:00 | Dhahran |
 | dhahran-expo-calendar | Real Estate Auction | past-date | - | 2026-02-02T09:00:00+03:00 - 2026-02-02T18:00:00+03:00 | Dhahran |
@@ -140,13 +142,11 @@ Sources attempted: 48
 | saudi-space-agency-events | Space Debris Conference 2026 | past-date | 2026-01-26T07:00:00Z - 2026-01-27T15:00:00Z - Riyadh, Saudi Arabia | 2026-01-26T10:00:00+03:00 - 2026-01-27T18:00:00+03:00 | Riyadh |
 | saudi-space-agency-events | The Saudi Arabia participated in the 64th session of the Legal Subcommittee of the United Nations Committee on the Peaceful Uses of Outer Space (COPUOS) | past-date | 2025-06-15T09:00:00Z - 2025-06-15T14:00:00Z - Vienna International Centre | 2025-06-15T12:00:00+03:00 - 2025-06-15T17:00:00+03:00 | Global |
 | visit-saudi-calendar-pdf | منطقة مشجعي كأس العالم 2026 | past-date | 10 يونيو - 19 يوليو | 2026-06-10T00:00:00+03:00 - 2026-07-19T23:59:00+03:00 | Aseer |
+| visit-saudi-calendar-pdf | أسبوع العطور | past-date | 25 يونيو - 3 أغسطس | 2026-06-25T00:00:00+03:00 - 2026-08-03T23:59:00+03:00 | Aseer |
 | visit-saudi-calendar-pdf | صيف وِرث 2026 | past-date | 30 يوليو - 1 أغسطس | 2026-07-30T00:00:00+03:00 - 2026-08-01T23:59:00+03:00 | Aseer |
 | visit-saudi-calendar-pdf | جدة بروميناد Fan Zone | past-date | 11 يونيو - 19 يوليو | 2026-06-11T00:00:00+03:00 - 2026-07-19T23:59:00+03:00 | Jeddah |
 | visit-saudi-calendar-pdf | عيشوا المونديال مع بنش مارك - عبادي الجوهر أرينا | past-date | 11 يونيو - 19 يوليو | 2026-06-11T00:00:00+03:00 - 2026-07-19T23:59:00+03:00 | Jeddah |
-| visit-saudi-calendar-pdf | ليالي المباريات في أكت 1 | past-date | 22 يونيو - 19 يوليو | 2026-06-22T00:00:00+03:00 - 2026-07-19T23:59:00+03:00 | Jeddah |
-| discover-aseer-events | Perfumes week | past-date | 25 July - 3 August | 2026-07-25T09:00:00+03:00 - 2026-08-03T18:00:00+03:00 | Aseer |
 | saudi-water-authority-events | Saudi Water Week | past-date | - | 2026-06-28T09:00:00+03:00 - 2026-07-02T04:00:00+03:00 | Jeddah |
-| sfda-events | اشتراطات الفسح والتفتيش للمنشآت والمنتجات الخاضعة لرقابة الهيئة ومعالجة تحديات العملاء ومواكبة التحديثات | past-date | 2026-07-28 - 2026-07-28 اشتراطات الفسح والتفتيش للمنشآت والمنتجات الخاضعة لرقابة الهيئة ومعالجة تحديات العملاء ومواكبة التحديثات | 2026-07-28T09:00:00+03:00 - 2026-07-28T18:00:00+03:00 | Online |
 | sdaia-calendar-events | International Conference on Data and AI Capacity Building (ICAN) | past-date | 1/28/2026 - 1/29/2026 | 2026-01-28T09:00:00+03:00 - 2026-01-29T18:00:00+03:00 | Riyadh |
 | makkah-chamber-events | التوسع الذكي: متى وكيف تكبر مشروعك؟ | past-date | 01/03/2026 إلى 02/03/2026 23:3 0:3 | 2026-03-01T23:03:00+03:00 - 2026-03-02T00:03:00+03:00 | Makkah |
 | makkah-chamber-events | الذكاء العاطفي وبناء علاقات قوية في عالم الأعمال | past-date | 01/03/2026 إلى 01/03/2026 22:3 23:3 | 2026-03-01T22:03:00+03:00 - 2026-03-01T23:03:00+03:00 | Makkah |
@@ -178,11 +178,6 @@ Sources attempted: 48
 | madinah-chamber-events | ورشة عمل : التعريف بمركز تنظيم المعدات الثقيلة وخدماته، ومراحل الإلزام للامتثال له | past-date | 2026-05-13T21:00:00 | 2026-05-13T21:00:00+03:00 - 2026-05-13T23:00:00+03:00 | Madinah |
 | informa-connect-saudi-events | Saudi Maritime & Logistics Congress 2025 | past-date | 2025-10-01 - 2025-10-02 | 2025-10-01T09:00:00+03:00 - 2025-10-02T17:20:00+03:00 | Dammam |
 | informa-connect-saudi-events | Saudi HR Week | past-date | 2025-12-14 - 2025-12-17 | 2025-12-14T09:00:00+03:00 - 2025-12-17T15:40:00+03:00 | Riyadh |
-| kau-events | Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH | past-date | 07 Jul 2026 - 29 Jul 2026 | 2026-07-07T09:00:00+03:00 - 2026-07-29T18:00:00+03:00 | Jeddah |
-| kau-events | Research Beacons Program, Season 3, 2026 | past-date | 17 May 2026 - 20 May 2026 | 2026-05-17T09:00:00+03:00 - 2026-05-20T18:00:00+03:00 | Jeddah |
-| kau-events | Panel Discussions for the International Day of Families | past-date | 14 May 2026 - 14 May 2026 | 2026-05-14T09:00:00+03:00 - 2026-05-14T18:00:00+03:00 | Jeddah |
-| kau-events | International Day of Families | past-date | 14 May 2026 - 14 May 2026 | 2026-05-14T09:00:00+03:00 - 2026-05-14T18:00:00+03:00 | Jeddah |
-| kau-events | Family Hackathon | past-date | 13 May 2026 - 13 May 2026 | 2026-05-13T09:00:00+03:00 - 2026-05-13T18:00:00+03:00 | Jeddah |
 | saudicon-events | بينالي الدرعية للفن المعاصر 2026 | past-date | 2026-01-30T10:00:00:00+03:00 - 2026-05-02T20:00:00:00+03:00 | 2026-01-30T10:00:00+03:00 - 2026-05-02T20:00:00+03:00 | Saudi Arabia |
 | saudicon-events | سوق السفر السعودي 2026 | past-date | 2026-03-29T14:00:00:00+03:00 - 2026-03-31T22:00:00:00+03:00 | 2026-03-29T14:00:00+03:00 - 2026-03-31T22:00:00+03:00 | Riyadh |
 | saudicon-events | مؤتمر الذكاء الاصطناعي والتقنية في خدمة القرآن الكريم | past-date | 2026-04-29T09:00:00:00+03:00 - 2026-04-30T17:00:00:00+03:00 | 2026-04-29T09:00:00+03:00 - 2026-04-30T17:00:00+03:00 | Riyadh |

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T20:15:11.914Z",
+  "generated_at": "2026-08-05T04:09:41.890Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -9,7 +9,7 @@
     "fetched": 6,
     "reused": 491,
     "failed": 3,
-    "skipped_recent_failures": 3,
+    "skipped_recent_failures": 0,
     "remembered_failures": 6
   },
   "fetched": [
@@ -17,18 +17,6 @@
       "source_url": "https://www.big5constructsaudi.com/wp-content/uploads/sites/7/2026/07/Big5_Banner_728x90px.jpg",
       "file": "dist/assets/event-images/معرض-hvac-r-السعودية-0c5d991442.jpg",
       "bytes": 20202,
-      "events": 1
-    },
-    {
-      "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Aug/events/o9adrOEghr6nY91R.jpeg",
-      "file": "dist/assets/event-images/المؤتمر-الدولي-الثاني-لاستدامة-الحياة-ونوعيتها-1e585e10d6.jpg",
-      "bytes": 366628,
-      "events": 1
-    },
-    {
-      "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Aug/events/gPzKT3f6yvYn5VNb.jpeg",
-      "file": "dist/assets/event-images/دورات-توجيهية-في-مجال-التدريب-المهني-الصيفي-f0a55ac926.jpg",
-      "bytes": 448516,
       "events": 1
     },
     {
@@ -44,8 +32,20 @@
       "events": 1
     },
     {
+      "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Aug/events/o9adrOEghr6nY91R.jpeg",
+      "file": "dist/assets/event-images/المؤتمر-الدولي-الثاني-لاستدامة-الحياة-ونوعيتها-1e585e10d6.jpg",
+      "bytes": 366628,
+      "events": 1
+    },
+    {
+      "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Aug/events/gPzKT3f6yvYn5VNb.jpeg",
+      "file": "dist/assets/event-images/دورات-توجيهية-في-مجال-التدريب-المهني-الصيفي-f0a55ac926.jpg",
+      "bytes": 448516,
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c4dead970ab3d5a09db3eb2c1e888b8a.jpg",
-      "file": "dist/assets/event-images/ithra-members-tour-e68ad1c393.jpg",
+      "file": "dist/assets/event-images/أعضاء-الجولة-e68ad1c393.jpg",
       "bytes": 322568,
       "events": 1
     }
@@ -777,14 +777,14 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2fcd7911e5e79f6eeaedb4d9031f71b0.jpg",
-      "file": "dist/assets/event-images/dots-on-letters-28119e3242.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
       "file": "dist/assets/event-images/unstable-ba5c599823.avif",
       "events": 5
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2fcd7911e5e79f6eeaedb4d9031f71b0.jpg",
+      "file": "dist/assets/event-images/dots-on-letters-28119e3242.jpg",
+      "events": 1
     },
     {
       "source_url": "https://scth.scene7.com/is/image/scth/hussain-moheb?wid=1400&hei=788&fit=constrain&fmt=webp",
@@ -2515,71 +2515,59 @@
       "reason": "cached-file-missing"
     },
     {
+      "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Aug/events/o9adrOEghr6nY91R.jpeg",
+      "file": "dist/assets/event-images/المؤتمر-الدولي-الثاني-لاستدامة-الحياة-ونوعيتها-1e585e10d6.jpg",
+      "reason": "cached-file-missing"
+    },
+    {
       "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Aug/events/gPzKT3f6yvYn5VNb.jpeg",
       "file": "dist/assets/event-images/دورات-توجيهية-في-مجال-التدريب-المهني-الصيفي-f0a55ac926.jpg",
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://kau.edu.sa/web/static?path=uploads/2026/Aug/events/o9adrOEghr6nY91R.jpeg",
-      "file": "dist/assets/event-images/المؤتمر-الدولي-الثاني-لاستدامة-الحياة-ونوعيتها-1e585e10d6.jpg",
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/k4uoshpk.wue.jpg",
+      "file": "dist/assets/event-images/معسكر-قيادة-التحول-بالذكاء-الاصطناعي-4c18a97a44.jpg",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uvc2hhYWFyLXNoZnQtYWJoYS5qcGc/shaaar-shft-abha.jpg?w=1024&fm=webp&s=214e015b8adfb062d4f93011a5ea858b",
+      "file": "dist/assets/event-images/shift-abha-2026-5b25d626a3.webp",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c4dead970ab3d5a09db3eb2c1e888b8a.jpg",
+      "file": "dist/assets/event-images/ithra-members-tour-e68ad1c393.jpg",
       "reason": "cached-file-missing"
     }
   ],
-  "skipped_recent_failures": [
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-04T20:32:35.530Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-04T20:32:35.530Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-04T20:32:35.530Z",
-      "skipped": true
-    }
-  ],
+  "skipped_recent_failures": [],
   "failed": [
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-08-04T20:32:35.530Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-04T20:32:35.530Z",
-      "skipped": true
+      "retry_after": "2026-08-06T04:09:41.890Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-08-04T20:32:35.530Z",
-      "skipped": true
+      "retry_after": "2026-08-06T04:09:41.890Z"
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-08-06T04:09:41.890Z"
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
     "fetched:6",
-    "missing-removed:3"
+    "missing-removed:6",
+    "new-failures:3"
   ]
 }

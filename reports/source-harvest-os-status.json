@@ -1,20 +1,20 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-04T20:22:50.898Z",
-  "status": "PASS",
+  "generated_at": "2026-08-05T04:17:27.136Z",
+  "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 601,
-    "matched_candidates": 569,
+    "candidates": 604,
+    "matched_candidates": 572,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 22,
-    "productive_sources": 20,
-    "collector_errors": 0
+    "collection_attempted": 30,
+    "productive_sources": 22,
+    "collector_errors": 4
   },
   "policies": {
     "partnership_required": 5,
@@ -23,19 +23,19 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 567,
+    "catalog-review": 570,
     "duplicate-review": 8,
     "source-evidence": 26
   },
   "funnel": {
-    "discovered_this_run": 319,
-    "candidate_queue": 601,
-    "evaluated_for_publish": 601,
-    "linked_existing": 547,
-    "published_new": 16,
+    "discovered_this_run": 337,
+    "candidate_queue": 604,
+    "evaluated_for_publish": 604,
+    "linked_existing": 558,
+    "published_new": 8,
     "blocked": 38,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 46
+    "secondary_still_blocked": 37
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 6,
@@ -48,7 +48,24 @@
     "linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe": 1,
     "linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe": 1
   },
-  "collector_error_sources": [],
+  "collector_error_sources": [
+    {
+      "id": "moc-cultural-calendar",
+      "note": "fetch failed; fetch failed"
+    },
+    {
+      "id": "mos-events",
+      "note": "fetch failed; page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.mos.gov.sa/en/media/events\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "moc-cultural-subportals",
+      "note": "fetch failed; fetch failed"
+    },
+    {
+      "id": "qassim-chamber-events",
+      "note": "HTTP 403; browser recovery encountered an access-protection page"
+    }
+  ],
   "sources": [
     {
       "id": "nec-saudi-events",
