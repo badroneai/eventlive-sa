@@ -274,7 +274,8 @@
     "test:multiday-card": "node scripts/multiday-card-regression-test.mjs",
     "test:mt-glossary": "node scripts/mt-glossary-regression-test.mjs",
     "test:translation-queue-hygiene": "node scripts/translation-queue-hygiene-regression-test.mjs",
-    "test:ksa-egress": "node scripts/ksa-egress-regression-test.mjs"
+    "test:ksa-egress": "node scripts/ksa-egress-regression-test.mjs",
+    "test:bot-challenge-detection": "node scripts/bot-challenge-detection-regression-test.mjs"
   },
   "dependencies": {
     "acorn": "^8.17.0",

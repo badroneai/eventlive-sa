@@ -13,6 +13,7 @@ import { ensureDir, exists, readJson, rel, root, writeJson } from './program-lif
 import { selectSourcesByCadence } from './source-cadence-utils.mjs';
 import { parseVisitSaudiSummerPdfXml, visitSaudiPdfBufferToXml } from './visit-saudi-summer-pdf-utils.mjs';
 import { ksaEgressDispatcher } from './ksa-egress.mjs';
+import { looksLikeBotChallenge } from './bot-challenge-detection.mjs';
 
 const sourceRegistryPath = process.env.EVENTLIVE_SOURCE_REGISTRY_FILE
   ? path.join(root, process.env.EVENTLIVE_SOURCE_REGISTRY_FILE)
@@ -6424,10 +6425,14 @@ async function loadSourceExtraction(source, extractor, options = {}) {
   if (liveBrowserEnabled && canUseBrowserHtmlFallback(source)) {
     try {
       const payload = await fetchBrowserRenderedHtml(source);
-      if (/just a moment|cf-browser-verification|cdn-cgi\/challenge|request rejected|access denied/i.test(payload)) {
+      // Extract FIRST, then judge. A page that yielded events is not a block
+      // page, whatever its markup contains — and the old string test threw away
+      // real pages because every Cloudflare-served response carries the passive
+      // /cdn-cgi/challenge-platform script (see scripts/bot-challenge-detection.mjs).
+      const items = await extractor(payload, source);
+      if (looksLikeBotChallenge(payload, { extractedItems: items.length })) {
         throw new Error('browser recovery encountered an access-protection page');
       }
-      const items = await extractor(payload, source);
       if (items.length || !primaryResult) {
         sourceFetchModes.set(source.id, 'live-browser-recovery');
         return { payload, items, primary_error: primaryError };
