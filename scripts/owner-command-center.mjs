@@ -245,7 +245,29 @@ function buildHarvestStatus(state) {
   const candidatesByGate = countBy(state.candidates, (candidate) => candidate.publication_gate || candidate.review_status);
   const matchedCandidates = state.candidates.filter((candidate) => candidate.matched_catalog_event_id).length;
   const collectionRows = state.sourceCollection?.sources || [];
-  const collectorErrors = collectionRows.filter((source) => source.status === 'error');
+  // A collector error is not automatically a problem with the platform: 30
+  // collections are attempted per run against 88 third-party sites, several of
+  // them government portals, and any of them can be briefly unreachable. What
+  // matters is whether a source is UNLUCKY or DEAD. data/source_run_state.json
+  // already tracks error_streak per source, so we can tell the difference
+  // instead of guessing.
+  //
+  // Why this exists (2026-08-05): the verdict used to be PASS only when
+  // collector_errors was exactly zero. That is both too strict and too blind —
+  // too strict because one transient timeout flipped the whole Harvest OS to
+  // NEEDS_WORK, and too blind because it said the identical thing whether a
+  // source had failed once or, as was actually the case, four sources had
+  // failed 17 runs in a row (moc-cultural-calendar, mos-events,
+  // moc-cultural-subportals, qassim-chamber-events). A verdict that reads the
+  // same for "unlucky minute" and "dead for four days" tells the owner nothing.
+  const CHRONIC_ERROR_STREAK = 3;
+  const runStateById = new Map((state.runStateSources || []).map((source) => [source.id, source]));
+  const collectorErrors = collectionRows.filter((source) => source.status === 'error').map((source) => {
+    const streak = Number(runStateById.get(source.id)?.error_streak || 0);
+    return { ...source, error_streak: streak, chronic: streak >= CHRONIC_ERROR_STREAK };
+  });
+  const chronicErrors = collectorErrors.filter((source) => source.chronic);
+  const transientErrors = collectorErrors.filter((source) => !source.chronic);
   const productiveSources = collectionRows.filter((source) => Number(source.extracted || 0) > 0);
   const publishTotals = state.sourceAutoPublish?.totals || {};
   const verificationTotals = state.sourceSecondaryVerification?.totals || {};
@@ -263,7 +285,16 @@ function buildHarvestStatus(state) {
   const report = {
     schema: 'eventlive.harvest-os-status.v1',
     generated_at: generatedAt,
-    status: sources.length > 0 && state.sourceOps && collectorErrors.length === 0 ? 'PASS' : 'NEEDS_WORK',
+    // PASS tolerates bad luck and never tolerates rot: any source that has
+    // failed CHRONIC_ERROR_STREAK runs in a row is a real defect the owner must
+    // see, while isolated transient errors below a fifth of this run's attempts
+    // are the normal weather of scraping other people's websites.
+    status: sources.length > 0
+      && state.sourceOps
+      && chronicErrors.length === 0
+      && transientErrors.length <= Math.max(1, Math.floor(collectionRows.length * 0.2))
+      ? 'PASS'
+      : 'NEEDS_WORK',
     operating_rule: 'Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.',
     totals: {
       sources: sources.length,
@@ -276,16 +307,23 @@ function buildHarvestStatus(state) {
       manual_review_sources: policies.manual_review || 0,
       collection_attempted: collectionRows.length,
       productive_sources: productiveSources.length,
-      collector_errors: collectorErrors.length
+      collector_errors: collectorErrors.length,
+      chronic_collector_errors: chronicErrors.length,
+      transient_collector_errors: transientErrors.length
     },
     policies,
     candidates_by_gate: candidatesByGate,
     funnel,
     blocked_reasons: blockedReasons,
-    collector_error_sources: collectorErrors.map((source) => ({
-      id: source.id,
-      note: source.note || 'collector error'
-    })),
+    collector_error_sources: collectorErrors
+      .slice()
+      .sort((a, b) => b.error_streak - a.error_streak)
+      .map((source) => ({
+        id: source.id,
+        note: source.note || 'collector error',
+        error_streak: source.error_streak,
+        kind: source.chronic ? 'chronic' : 'transient'
+      })),
     sources
   };
   writeJson(path.join(reportsDir, 'source-harvest-os-status.json'), report);
@@ -305,7 +343,7 @@ function buildHarvestStatus(state) {
     `- Candidate-only sources: ${report.totals.candidate_only_sources}`,
     `- Partnership-required sources: ${report.totals.partnership_required_sources}`,
     `- Productive sources / attempted: ${report.totals.productive_sources}/${report.totals.collection_attempted}`,
-    `- Collector errors: ${report.totals.collector_errors}`,
+    `- Collector errors: ${report.totals.collector_errors} (chronic ${report.totals.chronic_collector_errors}, transient ${report.totals.transient_collector_errors})`,
     '',
     '## Publication Funnel',
     '',
@@ -317,7 +355,7 @@ function buildHarvestStatus(state) {
     '',
     '## Collector Errors',
     '',
-    mdTable(['Source', 'Reason'], report.collector_error_sources.map((source) => [source.id, source.note])),
+    mdTable(['Source', 'Kind', 'Failed runs in a row', 'Reason'], report.collector_error_sources.map((source) => [source.id, source.kind, String(source.error_streak), source.note])),
     '',
     mdTable(['Source', 'Policy', 'Trust', 'Gate'], sources.slice(0, 80).map((source) => [source.name || source.id, source.publish_policy, source.trust_level, source.candidate_gate])),
     ''
