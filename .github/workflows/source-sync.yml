@@ -101,6 +101,13 @@ jobs:
           npm run test:incremental-build
 
       - name: Collect trusted sources and publish catalog
+        env:
+          # Optional Saudi egress for geo-restricted government origins
+          # (scripts/ksa-egress.mjs). Absent by default: the flagged sources
+          # then fail honestly and are reported as chronically dead rather than
+          # silently skipped. Set the repository secret to switch them back on
+          # without any code change.
+          EVENTLIVE_KSA_EGRESS_PROXY: ${{ secrets.EVENTLIVE_KSA_EGRESS_PROXY }}
         run: npm run sources:sync
 
       - name: Setup Python for autonomous content translation
@@ -141,6 +148,7 @@ jobs:
           npm run test:source-sync-pipeline
           npm run test:source-sync-workflow
           npm run test:source-browser-probe
+          npm run test:ksa-egress
           npm run test:source-browser-fallback
           npm run test:source-limit-policy
           npm run test:source-future-only

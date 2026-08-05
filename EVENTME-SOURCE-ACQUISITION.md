@@ -267,3 +267,24 @@ The report writes:
 - `reports/source-ops-report.html`
 
 Use it to decide the next executive action: add an extractor, improve a zero-yield source, review duplicates, promote approved candidates, or pause publication until evidence improves.
+
+## Geo-restricted origins and the Saudi egress
+
+Some Saudi government origins accept traffic from inside the Kingdom and refuse it from foreign networks. Measured from a GitHub-hosted runner on 2026-08-05, `www.moc.gov.sa`, `www.mos.gov.sa` and `music.moc.gov.sa` fail at **TCP connect** — before HTTP, before TLS, before any header — while the same URLs answer `200` from a client inside Saudi Arabia. A save request to archive.org's US crawler fails on them too, and `data.gov.sa` / `open.data.gov.sa` behave the same way.
+
+That rules out every client-side remedy: no user-agent, TLS relaxation, IPv4 pinning or headless browser crosses a network that never accepts the connection, and none should be invented to try. It also rules out a US-hosted relay, since the restriction is geographic rather than a bot filter.
+
+Two supported ways to give the collector a Saudi egress:
+
+1. **A proxy on a Saudi network.** Set the repository secret `EVENTLIVE_KSA_EGRESS_PROXY` to an `http(s)://` proxy URL. `scripts/ksa-egress.mjs` then routes **only** origins flagged `requires_ksa_egress` in `data/source_registry.json` through it; every other source keeps its direct path, so a proxy outage can never take down the rest of the harvest.
+2. **A self-hosted runner inside the Kingdom.** This needs no code and no secret — the direct fetch simply succeeds there.
+
+Until one exists, the flagged sources fail honestly: they are reported as chronically dead in the Harvest OS status and tracked by the self-maintained collectors issue, rather than silently skipped. Verify any egress before trusting it with:
+
+```bash
+gh workflow run source-reachability-probe.yml -f urls="https://www.moc.gov.sa/en/Modules/Pages/Cultural-Calendar"
+```
+
+The probe reports, from wherever it runs, which strategies reach a host — DNS, raw TCP over IPv4 and IPv6, bare fetch, browser headers, IPv4-pinned, relaxed TLS, curl, and a real Chromium navigation.
+
+**Not the same problem:** an origin that answers `403` to HTTP clients but `200` to a real browser is bot filtering, not geo-restriction. That is handled by the existing browser-recovery path plus `scripts/bot-challenge-detection.mjs`, and needs no egress.
