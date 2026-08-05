@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-05T09:21:32.924Z",
+  "generated_at": "2026-08-05T11:11:23.691Z",
   "totals": {
-    "targets": 10,
-    "enriched": 10,
-    "fetched": 9,
-    "images": 10,
-    "fetch_failures": 1
+    "targets": 6,
+    "enriched": 6,
+    "fetched": 6,
+    "images": 6,
+    "fetch_failures": 0
   },
   "enriched": [
     {
@@ -67,54 +67,7 @@
       "fetched": true,
       "image": true,
       "fetch_reason": ""
-    },
-    {
-      "id": "event-تجرييبية",
-      "title": "تجرييبية",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "approved-source-row",
-      "source_url": "https://uqu.edu.sa/App/Events/41041",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "HTTP 404"
-    },
-    {
-      "id": "event-دبلوم-المتوسط-في-التكنولوجيا-المالية",
-      "title": "دبلوم المتوسط في التكنولوجيا المالية",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41044",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-دبلوم-متوسط-في-أمن-المعلومات",
-      "title": "دبلوم متوسط في أمن المعلومات",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41042",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-دبلوم-متوسط-في-إدارة-الموارد-البشرية",
-      "title": "دبلوم متوسط في إدارة الموارد البشرية",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41043",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
     }
   ],
-  "failed": [
-    {
-      "id": "event-تجرييبية",
-      "title": "تجرييبية",
-      "source_url": "https://uqu.edu.sa/App/Events/41041",
-      "reason": "HTTP 404"
-    }
-  ]
+  "failed": []
 }

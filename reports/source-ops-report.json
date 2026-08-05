@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T09:23:22.867Z",
+  "generated_at": "2026-08-05T11:12:26.091Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-08-05T09:11:53.029Z",
+    "collected_at": "2026-08-05T11:02:15.530Z",
     "freshness": "fresh",
-    "discovered": 321,
+    "discovered": 320,
     "written": 606
   },
   "sources": {
     "total": 88,
-    "attempted": 20,
-    "due": 20,
-    "deferred": 28,
+    "attempted": 21,
+    "due": 21,
+    "deferred": 27,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 23,
+    "registry_collection_coverage_pct": 24,
     "scheduled_runnable_coverage_pct": 100,
     "healthy": 20,
-    "zero_yield": 0,
+    "zero_yield": 1,
     "errors": 0,
-    "cadence_deferred": 28,
+    "cadence_deferred": 27,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -676,16 +676,13 @@
         "id": "riyadh-city-events",
         "name": "Riyadh City Events",
         "priority": 51,
-        "status": "deferred",
-        "historical_status": "probe-blocked",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-05T09:54:27.327Z",
+        "status": "zero-yield",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-05T03:54:27.327Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 77,
-        "next_action": "مؤجل حتى 2026-08-05T09:54:27.327Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "monshaat-academy-programs",
@@ -1124,7 +1121,7 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 66,
+        "extracted": 65,
         "candidates": 73,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
@@ -1668,7 +1665,7 @@
         "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 32,
+        "days_to_start": 31,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",

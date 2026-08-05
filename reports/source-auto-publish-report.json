@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-08-05T09:19:54.859Z",
+  "published_at": "2026-08-05T11:10:06.172Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -1313,27 +1313,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260805-2bf92d17",
-      "event_id": "event-childrens-art-studio",
-      "title": "Children's Art Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260805-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260805-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260805-2671d1ce",
       "event_id": "event-emboss-printing-experience",
       "title": "Emboss Printing Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260805-2bf92d17",
+      "event_id": "event-childrens-art-studio",
+      "title": "Children's Art Studio",
       "reason": "already linked to catalog event"
     },
     {
@@ -1352,6 +1340,18 @@
       "candidate_id": "candidate-ithra-events-energy-lab-20260805-60155d60",
       "event_id": "event-energy-lab",
       "title": "Energy Lab",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260805-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260805-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -1646,13 +1646,13 @@
       "candidate_id": "candidate-ithra-events-ithra-members-tour-arabic-20260811-c4eda15f",
       "event_id": "event-ithra-members-tour",
       "title": "Ithra Members Tour (Arabic)",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-ithra-members-tour-english-20260811-67fc89c0",
       "event_id": "event-ithra-members-tour",
       "title": "Ithra Members Tour (English)",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-chess-hub-20260811-4919439a",
@@ -1919,12 +1919,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-دبلوم-الأمن-السيبراني-المتقدم-20260830-23af5636",
-      "event_id": "event-دبلوم-الأمن-السيبراني-المتقدم",
-      "title": "دبلوم الأمن السيبراني المتقدم",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-أساسيات-الأمن-السيبراني-20260830-da0b3686",
       "event_id": "event-معسكر-أساسيات-الأمن-السيبراني",
       "title": "معسكر أساسيات الأمن السيبراني",
@@ -2084,6 +2078,12 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc-20260906-cb343b82",
       "event_id": "event-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc",
       "title": "معسكر إدارة الحوكمة والمخاطر والامتثال GRC",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-دبلوم-الأمن-السيبراني-المتقدم-20260906-23af5636",
+      "event_id": "event-دبلوم-الأمن-السيبراني-المتقدم",
+      "title": "دبلوم الأمن السيبراني المتقدم",
       "reason": "already linked to catalog event"
     },
     {
