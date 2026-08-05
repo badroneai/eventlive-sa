@@ -141,6 +141,7 @@ jobs:
           npm run test:source-sync-pipeline
           npm run test:source-sync-workflow
           npm run test:source-browser-probe
+          npm run test:bot-challenge-detection
           npm run test:source-browser-fallback
           npm run test:source-limit-policy
           npm run test:source-future-only

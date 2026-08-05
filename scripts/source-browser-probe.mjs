@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { ensureDir, exists, readJson, rel, root, writeJson } from './program-lifecycle-utils.mjs';
 import { selectSourcesByCadence } from './source-cadence-utils.mjs';
+import { looksLikeBotChallenge } from './bot-challenge-detection.mjs';
 
 const registryPath = path.join(root, 'data', 'source_registry.json');
 const collectionReportPath = path.join(root, 'reports', 'source-collection-report.json');
@@ -219,7 +220,11 @@ function hasProtectionQueueSignal(value = '') {
 function classifyProbe({ status = 0, html = '', pageText = '', links = [], network = [], policy_skipped = false }) {
   if (policy_skipped) return 'policy-skipped-partnership';
   const body = `${html}\n${pageText}`.slice(0, 12000);
-  if (status === 403 || hasProtectionQueueSignal(body) || /just a moment|cf-browser-verification|cdn-cgi\/challenge|request rejected|access denied/i.test(body)) {
+  // A 403 to the probe still means protected. What must NOT count is the mere
+  // presence of a bot-protection vendor's passive script on an otherwise normal
+  // page — that misread is what kept qassim-chamber-events dead for 17 syncs
+  // (see scripts/bot-challenge-detection.mjs).
+  if (status === 403 || hasProtectionQueueSignal(body) || looksLikeBotChallenge(body)) {
     return 'blocked-or-protected';
   }
   const endpoints = extractEndpointCandidates(network);
