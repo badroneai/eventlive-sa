@@ -1,6 +1,6 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-05T07:47:36.501Z
+- Generated at: 2026-08-05T08:20:55.327Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
@@ -12,8 +12,8 @@
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 20/21
-- Collector errors: 1
+- Productive sources / attempted: 20/20
+- Collector errors: 4 (chronic 4, transient 0)
 
 ## Publication Funnel
 
@@ -44,12 +44,12 @@
 
 ## Collector Errors
 
-| Source | Reason |
-| --- | --- |
-| asharqia-chamber-events | fetch failed; page.goto: Timeout 30000ms exceeded.
-Call log:
-  - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentloaded"
- |
+| Source | Kind | Failed runs in a row | Attempted this run | Reason |
+| --- | --- | --- | --- | --- |
+| moc-cultural-calendar | chronic | 17 | no | collector-error: fetch failed; fetch failed |
+| mos-events | chronic | 17 | no | collector-error: fetch failed |
+| moc-cultural-subportals | chronic | 17 | no | collector-error: fetch failed; fetch failed |
+| qassim-chamber-events | chronic | 17 | no | collector-error: HTTP 403 |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T07:41:09.666Z",
+  "generated_at": "2026-08-05T08:14:27.111Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-08-05T07:28:39.778Z",
+    "collected_at": "2026-08-05T08:02:52.666Z",
     "freshness": "fresh",
     "discovered": 318,
     "written": 604
   },
   "sources": {
     "total": 88,
-    "attempted": 21,
-    "due": 21,
-    "deferred": 27,
+    "attempted": 20,
+    "due": 20,
+    "deferred": 28,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 24,
+    "registry_collection_coverage_pct": 23,
     "scheduled_runnable_coverage_pct": 100,
     "healthy": 20,
     "zero_yield": 0,
-    "errors": 1,
-    "cadence_deferred": 27,
+    "errors": 0,
+    "cadence_deferred": 28,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -131,7 +131,7 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 4,
+        "extracted": 5,
         "candidates": 5,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
@@ -778,13 +778,16 @@
         "id": "asharqia-chamber-events",
         "name": "Asharqia Chamber Events",
         "priority": 59,
-        "status": "collection-error",
-        "error_streak": 0,
+        "status": "deferred",
+        "historical_status": "collector-error",
+        "cadence_reason": "error-cooldown",
+        "next_due_at": "2026-08-05T13:28:39.778Z",
+        "error_streak": 1,
         "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "last_attempted_at": "2026-08-05T07:28:39.778Z",
         "extracted": 0,
         "candidates": 3,
-        "next_action": "fetch failed; page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentloaded\"\n"
+        "next_action": "مؤجل حتى 2026-08-05T13:28:39.778Z وفق الجدولة التكيفية."
       },
       {
         "id": "qassim-chamber-events",
@@ -1121,7 +1124,7 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 66,
+        "extracted": 65,
         "candidates": 73,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },

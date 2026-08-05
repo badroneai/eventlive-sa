@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-05T07:47:36.501Z",
+  "generated_at": "2026-08-05T08:20:55.327Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
@@ -12,9 +12,11 @@
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 21,
+    "collection_attempted": 20,
     "productive_sources": 20,
-    "collector_errors": 1
+    "collector_errors": 4,
+    "chronic_collector_errors": 4,
+    "transient_collector_errors": 0
   },
   "policies": {
     "partnership_required": 5,
@@ -50,8 +52,32 @@
   },
   "collector_error_sources": [
     {
-      "id": "asharqia-chamber-events",
-      "note": "fetch failed; page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentloaded\"\n"
+      "id": "moc-cultural-calendar",
+      "note": "collector-error: fetch failed; fetch failed",
+      "error_streak": 17,
+      "kind": "chronic",
+      "attempted_this_run": false
+    },
+    {
+      "id": "mos-events",
+      "note": "collector-error: fetch failed",
+      "error_streak": 17,
+      "kind": "chronic",
+      "attempted_this_run": false
+    },
+    {
+      "id": "moc-cultural-subportals",
+      "note": "collector-error: fetch failed; fetch failed",
+      "error_streak": 17,
+      "kind": "chronic",
+      "attempted_this_run": false
+    },
+    {
+      "id": "qassim-chamber-events",
+      "note": "collector-error: HTTP 403",
+      "error_streak": 17,
+      "kind": "chronic",
+      "attempted_this_run": false
     }
   ],
   "sources": [

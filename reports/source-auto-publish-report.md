@@ -1,6 +1,6 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-05T07:37:36.616Z
+- published_at: 2026-08-05T08:11:18.293Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 604
@@ -214,10 +214,10 @@
 | candidate-ithra-events-tafasahu-make-room-20260805-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
 | candidate-ithra-events-tinkering-stations-20260805-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
 | candidate-ithra-events-summer-youth-program-20260805-a20f7a11 | linked-existing | event-summer-youth-program | already linked to catalog event |
-| candidate-ithra-events-spot-of-inspiration-20260805-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
-| candidate-ithra-events-childrens-museum-story-time-20260805-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-التصميم-الجرافيكي-والوسائط-الرقمية-حضوري-بالتع-20260805-0f40ac79 | linked-existing | event-الترشح-للدبلوم-المتوسط-في-التصميم-الجرافيكي-والوسائط-الرقمية-حضوري-بالتع | already linked to catalog event |
 | candidate-ithra-events-childrens-art-studio-20260805-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
+| candidate-ithra-events-spot-of-inspiration-20260805-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
+| candidate-ithra-events-childrens-museum-story-time-20260805-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-emboss-printing-experience-20260805-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-visit-saudi-calendar-international-falcon-breeders-auction-20260805-4b7cff1b | linked-existing | event-international-falcon-breeders-auction | already linked to catalog event |
 | candidate-ithra-events-all-things-hedgehogs-20260805-952dc936 | linked-existing | event-all-things-hedgehogs | already linked to catalog event |

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-05T07:39:30.687Z",
+  "generated_at": "2026-08-05T08:12:47.028Z",
   "totals": {
-    "targets": 8,
-    "enriched": 8,
-    "fetched": 8,
-    "images": 8,
+    "targets": 6,
+    "enriched": 6,
+    "fetched": 6,
+    "images": 6,
     "fetch_failures": 0
   },
   "enriched": [
@@ -64,26 +64,6 @@
       "source_label": "Visit Saudi Summer Calendar PDF",
       "source_method": "official-page-meta",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-دبلوم-الإدارة-المكتبية",
-      "title": "دبلوم الإدارة المكتبية",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41037",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-دبلوم-التحول-الرقمي",
-      "title": "دبلوم التحول الرقمي",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41038",
       "fetched": true,
       "image": true,
       "fetch_reason": ""

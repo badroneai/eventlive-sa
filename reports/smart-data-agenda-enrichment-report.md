@@ -1,6 +1,6 @@
 # Smart Data & AI Summit 2026 Agenda Enrichment
 
-- generated_at: 2026-08-05T07:39:28.875Z
+- generated_at: 2026-08-05T08:12:45.223Z
 - catalog_targets: 1
 - candidate_targets: 1
 - official_sessions: 31
