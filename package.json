@@ -240,7 +240,7 @@
     "test:ops-readiness": "node scripts/ops-readiness-regression-test.mjs",
     "audit:release-deploy-rollback": "node scripts/release-deploy-rollback-audit.mjs",
     "test:release-deploy-rollback": "node scripts/release-deploy-rollback-regression-test.mjs",
-    "audit:dependencies": "npm audit --omit=dev --json > reports/npm-audit-production.json",
+    "audit:dependencies": "node scripts/npm-audit-production.mjs",
     "audit:web-quality": "node scripts/web-quality-audit.mjs",
     "test:web-quality": "node scripts/web-quality-audit-regression-test.mjs",
     "audit:browser-matrix": "node scripts/browser-matrix-audit.mjs",
