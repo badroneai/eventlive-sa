@@ -288,3 +288,30 @@ gh workflow run source-reachability-probe.yml -f urls="https://www.moc.gov.sa/en
 The probe reports, from wherever it runs, which strategies reach a host — DNS, raw TCP over IPv4 and IPv6, bare fetch, browser headers, IPv4-pinned, relaxed TLS, curl, and a real Chromium navigation.
 
 **Not the same problem:** an origin that answers `403` to HTTP clients but `200` to a real browser is bot filtering, not geo-restriction. That is handled by the existing browser-recovery path plus `scripts/bot-challenge-detection.mjs`, and needs no egress.
+
+### Provisioning the Saudi egress (runbook)
+
+Every alternative was measured from a GitHub runner and failed: direct fetch, browser headers, IPv4 pinning, relaxed TLS, curl, a real Chromium navigation, US public relays (`corsproxy.io`, `api.codetabs.com`), the Wayback lane (the origins' backends are POST APIs, and archive.org's US crawler cannot reach them either), and the open Saudi proxy lists — `scripts/ksa-proxy-discovery.mjs` found exactly one public Saudi exit and it did not reach the origin.
+
+What remains is an owned egress inside the Kingdom or the Gulf. Any small VM works; it carries a few page fetches per sync, not a workload.
+
+```bash
+# on a VM in a Saudi/Gulf region (Oracle's me-jeddah-1 free tier, or any local VPS)
+sudo apt-get update && sudo apt-get install -y tinyproxy
+sudo tee /etc/tinyproxy/tinyproxy.conf >/dev/null <<'CONF'
+Port 8888
+Listen 0.0.0.0
+Timeout 600
+Allow <the-ip-allowed-to-use-it>
+CONF
+sudo systemctl enable --now tinyproxy
+```
+
+Then set the repository secret and the flagged origins resume on the next sync, with no code change:
+
+```bash
+gh secret set EVENTLIVE_KSA_EGRESS_PROXY --body "http://user:pass@<vm-ip>:8888"
+gh workflow run source-reachability-probe.yml -f urls="https://www.moc.gov.sa/en/Modules/Pages/Cultural-Calendar"
+```
+
+The probe is the acceptance test: it must report the origin reachable before the egress is trusted. A self-hosted runner on the same VM is the alternative and needs no secret at all — the direct fetch simply succeeds there.
