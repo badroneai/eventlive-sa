@@ -84,7 +84,8 @@
       "intake_policy": "official-feed-preferred",
       "evidence_required": "Ministry or commission cultural-calendar URL plus event detail page when available.",
       "candidate_gate": "human-review",
-      "notes": "Use ministry and commission calendars as official evidence for cultural events."
+      "notes": "Use ministry and commission calendars as official evidence for cultural events. Geo-restricted 2026-08-05: unreachable from GitHub-hosted runners at TCP level (probe: connect timeout for every strategy including Chromium), while the same URLs answer 200 from inside Saudi Arabia. archive.org's US crawler also fails, so this is a geographic restriction rather than bot filtering. Collection resumes automatically once a Saudi egress is configured (EVENTLIVE_KSA_EGRESS_PROXY secret, or a self-hosted runner inside the Kingdom) — see EVENTME-SOURCE-ACQUISITION.md.",
+      "requires_ksa_egress": true
     },
     {
       "id": "mos-events",
@@ -107,7 +108,8 @@
       "intake_policy": "official-feed-preferred",
       "evidence_required": "Ministry event page or linked official organizer page.",
       "candidate_gate": "human-review",
-      "notes": "Sport details may appear on separate federation, venue, or ticketing pages; use those as secondary evidence."
+      "notes": "Sport details may appear on separate federation, venue, or ticketing pages; use those as secondary evidence. Geo-restricted 2026-08-05: unreachable from GitHub-hosted runners at TCP level (probe: connect timeout for every strategy including Chromium), while the same URLs answer 200 from inside Saudi Arabia. archive.org's US crawler also fails, so this is a geographic restriction rather than bot filtering. Collection resumes automatically once a Saudi egress is configured (EVENTLIVE_KSA_EGRESS_PROXY secret, or a self-hosted runner inside the Kingdom) — see EVENTME-SOURCE-ACQUISITION.md.",
+      "requires_ksa_egress": true
     },
     {
       "id": "webook-explore",
@@ -1158,7 +1160,8 @@
       "intake_policy": "official-feed-preferred",
       "evidence_required": "Commission calendar or event URL with complete schedule and venue; reconcile with the main MoC Cultural Calendar.",
       "candidate_gate": "extraction",
-      "notes": "Added from source-research batch 3. Initial URLs include music.moc.gov.sa, heritage.moc.gov.sa, and archdesign.moc.gov.sa; build commission-specific extractors after current structures are checked."
+      "notes": "Added from source-research batch 3. Initial URLs include music.moc.gov.sa, heritage.moc.gov.sa, and archdesign.moc.gov.sa; build commission-specific extractors after current structures are checked. Geo-restricted 2026-08-05: unreachable from GitHub-hosted runners at TCP level (probe: connect timeout for every strategy including Chromium), while the same URLs answer 200 from inside Saudi Arabia. archive.org's US crawler also fails, so this is a geographic restriction rather than bot filtering. Collection resumes automatically once a Saudi egress is configured (EVENTLIVE_KSA_EGRESS_PROXY secret, or a self-hosted runner inside the Kingdom) — see EVENTME-SOURCE-ACQUISITION.md.",
+      "requires_ksa_egress": true
     },
     {
       "id": "historic-jeddah-albalad",

@@ -12,6 +12,7 @@ import { ocrRemotePoster } from './poster-ocr-utils.mjs';
 import { ensureDir, exists, readJson, rel, root, writeJson } from './program-lifecycle-utils.mjs';
 import { selectSourcesByCadence } from './source-cadence-utils.mjs';
 import { parseVisitSaudiSummerPdfXml, visitSaudiPdfBufferToXml } from './visit-saudi-summer-pdf-utils.mjs';
+import { ksaEgressDispatcher } from './ksa-egress.mjs';
 import { looksLikeBotChallenge } from './bot-challenge-detection.mjs';
 
 const sourceRegistryPath = process.env.EVENTLIVE_SOURCE_REGISTRY_FILE
@@ -247,11 +248,16 @@ function isDiscoveryOnlySource(source) {
 
 async function collectorFetch(url, options = {}) {
   const attempts = Math.max(1, Number(options.attempts || process.env.EVENTLIVE_SOURCE_FETCH_ATTEMPTS || 3));
+  // Geo-restricted origins (see scripts/ksa-egress.mjs) go through the Saudi
+  // egress when one is configured. Every other request keeps its direct path,
+  // so a proxy outage can never take down the other 85 sources.
+  const dispatcher = options.dispatcher || await ksaEgressDispatcher(url);
   let lastError;
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
     try {
       return await fetch(url, {
         ...options,
+        ...(dispatcher ? { dispatcher } : {}),
         signal: options.signal || AbortSignal.timeout(fetchTimeoutMs)
       });
     } catch (error) {

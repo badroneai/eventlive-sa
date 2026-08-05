@@ -274,13 +274,15 @@
     "test:multiday-card": "node scripts/multiday-card-regression-test.mjs",
     "test:mt-glossary": "node scripts/mt-glossary-regression-test.mjs",
     "test:translation-queue-hygiene": "node scripts/translation-queue-hygiene-regression-test.mjs",
+    "test:ksa-egress": "node scripts/ksa-egress-regression-test.mjs",
     "test:bot-challenge-detection": "node scripts/bot-challenge-detection-regression-test.mjs"
   },
   "dependencies": {
     "acorn": "^8.17.0",
     "cheerio": "^1.1.2",
     "intl-messageformat": "^10.7.18",
-    "qrcode": "^1.5.4"
+    "qrcode": "^1.5.4",
+    "undici": "^7.29.0"
   },
   "devDependencies": {
     "axe-core": "^4.12.1",

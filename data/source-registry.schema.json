@@ -4,9 +4,16 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "generated_for": { "type": "string" },
-    "researched_at": { "type": "string", "format": "date-time" },
-    "notes": { "type": "string" },
+    "generated_for": {
+      "type": "string"
+    },
+    "researched_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "notes": {
+      "type": "string"
+    },
     "sources": {
       "type": "array",
       "minItems": 1,
@@ -27,58 +34,153 @@
           "evidence_required"
         ],
         "properties": {
-          "id": { "type": "string", "minLength": 1 },
-          "name": { "type": "string", "minLength": 1 },
-          "url": { "type": "string", "minLength": 1 },
-          "collector_url": { "type": "string", "minLength": 1 },
-          "sitemap_max_age_days": { "type": "number", "minimum": 1 },
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "collector_url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sitemap_max_age_days": {
+            "type": "number",
+            "minimum": 1
+          },
           "collector_pages": {
             "type": "array",
-            "items": { "type": "string", "minLength": 1 }
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
           },
           "collector_method": {
             "type": "string",
-            "enum": ["GET", "POST"]
+            "enum": [
+              "GET",
+              "POST"
+            ]
           },
-          "collector_body": { "type": "object" },
-          "owner": { "type": "string", "minLength": 1 },
+          "collector_body": {
+            "type": "object"
+          },
+          "owner": {
+            "type": "string",
+            "minLength": 1
+          },
           "source_type": {
             "type": "string",
-            "enum": ["national-calendar", "government-calendar", "destination-calendar", "ticketing-marketplace", "venue-calendar", "organizer-calendar", "industry-directory", "conference-organizer", "community-platform"]
+            "enum": [
+              "national-calendar",
+              "government-calendar",
+              "destination-calendar",
+              "ticketing-marketplace",
+              "venue-calendar",
+              "organizer-calendar",
+              "industry-directory",
+              "conference-organizer",
+              "community-platform"
+            ]
           },
           "trust_level": {
             "type": "string",
-            "enum": ["official", "official-marketplace", "venue-official", "partner", "aggregator", "community"]
+            "enum": [
+              "official",
+              "official-marketplace",
+              "venue-official",
+              "partner",
+              "aggregator",
+              "community"
+            ]
           },
-          "priority": { "type": "integer", "minimum": 1 },
-          "max_candidates_per_run": { "type": "integer", "minimum": 1, "maximum": 500 },
-          "max_ended_per_run": { "type": "integer", "minimum": 1, "maximum": 500 },
-          "coverage": { "type": "string", "minLength": 1 },
+          "priority": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "max_candidates_per_run": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 500
+          },
+          "max_ended_per_run": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 500
+          },
+          "coverage": {
+            "type": "string",
+            "minLength": 1
+          },
           "cities": {
             "type": "array",
-            "items": { "type": "string" }
+            "items": {
+              "type": "string"
+            }
           },
           "categories": {
             "type": "array",
-            "items": { "type": "string" }
+            "items": {
+              "type": "string"
+            }
           },
           "fetch_method": {
             "type": "string",
-            "enum": ["html-calendar", "html-listing", "json-api", "pdf-calendar", "search-page", "manual-review", "partnership-api", "newsletter-monitor", "sitemap-pages"]
+            "enum": [
+              "html-calendar",
+              "html-listing",
+              "json-api",
+              "pdf-calendar",
+              "search-page",
+              "manual-review",
+              "partnership-api",
+              "newsletter-monitor",
+              "sitemap-pages"
+            ]
           },
           "intake_policy": {
             "type": "string",
-            "enum": ["official-feed-preferred", "candidate-only", "partnership-needed", "manual-review-required", "monitor-public"]
+            "enum": [
+              "official-feed-preferred",
+              "candidate-only",
+              "partnership-needed",
+              "manual-review-required",
+              "monitor-public"
+            ]
           },
-          "evidence_required": { "type": "string", "minLength": 1 },
+          "evidence_required": {
+            "type": "string",
+            "minLength": 1
+          },
           "candidate_gate": {
             "type": "string",
-            "enum": ["source-evidence", "duplicate-review", "extraction", "human-review", "catalog-review", "blocked"]
+            "enum": [
+              "source-evidence",
+              "duplicate-review",
+              "extraction",
+              "human-review",
+              "catalog-review",
+              "blocked"
+            ]
           },
-          "notes": { "type": "string" }
+          "notes": {
+            "type": "string"
+          },
+          "requires_ksa_egress": {
+            "type": "boolean",
+            "description": "Origin refuses connections from outside Saudi Arabia (measured, see EVENTME-SOURCE-ACQUISITION.md). Collection routes through EVENTLIVE_KSA_EGRESS_PROXY when configured, or succeeds directly on a self-hosted runner inside the Kingdom."
+          }
         }
       }
     }
   },
-  "required": ["sources"]
+  "required": [
+    "sources"
+  ]
 }
