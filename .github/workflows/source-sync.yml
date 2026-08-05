@@ -268,6 +268,17 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: node scripts/report-surface-debt-issue.mjs
 
+      - name: Autonomous chronic-collector alerting (self-maintained GitHub issue)
+        # Placed after the publish-quality battery, which is where
+        # owner:command-center regenerates reports/source-harvest-os-status.json —
+        # so this reads THIS run's collector outcomes, not a carried-over verdict.
+        # Same contract as the sibling step above: it never fails the sync (these
+        # are third-party websites; freezing publishing over them would violate
+        # Invariant C) and it never lets the rot go unseen either.
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/report-chronic-source-issue.mjs
+
       - name: Persist sync state back to the repository
         run: |
           git config user.name "eventme-sync-bot"

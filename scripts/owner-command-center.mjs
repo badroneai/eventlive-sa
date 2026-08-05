@@ -261,13 +261,33 @@ function buildHarvestStatus(state) {
   // moc-cultural-subportals, qassim-chamber-events). A verdict that reads the
   // same for "unlucky minute" and "dead for four days" tells the owner nothing.
   const CHRONIC_ERROR_STREAK = 3;
-  const runStateById = new Map((state.runStateSources || []).map((source) => [source.id, source]));
-  const collectorErrors = collectionRows.filter((source) => source.status === 'error').map((source) => {
-    const streak = Number(runStateById.get(source.id)?.error_streak || 0);
-    return { ...source, error_streak: streak, chronic: streak >= CHRONIC_ERROR_STREAK };
-  });
-  const chronicErrors = collectorErrors.filter((source) => source.chronic);
-  const transientErrors = collectorErrors.filter((source) => !source.chronic);
+  const runStateSources = state.runStateSources || [];
+  const runStateById = new Map(runStateSources.map((source) => [source.id, source]));
+
+  // Chronic rot is read from the RUN STATE, not from this run's attempts.
+  // Collections rotate — roughly 21-30 of 88 sources are attempted per run — so
+  // a source that is dead is simply absent from most runs' error rows. Deriving
+  // the verdict from attempts alone (as the first version of this fix did, on
+  // 2026-08-05) meant the status flipped to PASS on every run that happened not
+  // to knock on the dead source's door: four collectors sat at a 17-run failure
+  // streak while the verdict read PASS. That is the very failure this work
+  // exists to end — a gate reporting green because it did not look.
+  // error_streak persists across runs, so it still knows.
+  const transientErrors = collectionRows
+    .filter((source) => source.status === 'error')
+    .map((source) => ({ ...source, error_streak: Number(runStateById.get(source.id)?.error_streak || 0) }))
+    .filter((source) => source.error_streak < CHRONIC_ERROR_STREAK);
+  const chronicErrors = runStateSources
+    .filter((source) => Number(source.error_streak || 0) >= CHRONIC_ERROR_STREAK)
+    // Sources we have deliberately stopped harvesting are not rot to chase.
+    .filter((source) => !['blocked_or_closed', 'partnership_required'].includes(source.intake_policy))
+    .map((source) => ({
+      id: source.id,
+      note: source.last_zero_yield_reason || 'collector error',
+      error_streak: Number(source.error_streak || 0),
+      attempted_this_run: Boolean(source.attempted_this_run)
+    }));
+  const collectorErrors = [...chronicErrors, ...transientErrors];
   const productiveSources = collectionRows.filter((source) => Number(source.extracted || 0) > 0);
   const publishTotals = state.sourceAutoPublish?.totals || {};
   const verificationTotals = state.sourceSecondaryVerification?.totals || {};
@@ -320,9 +340,10 @@ function buildHarvestStatus(state) {
       .sort((a, b) => b.error_streak - a.error_streak)
       .map((source) => ({
         id: source.id,
-        note: source.note || 'collector error',
+        note: String(source.note || 'collector error').replaceAll('\n', ' ').slice(0, 200),
         error_streak: source.error_streak,
-        kind: source.chronic ? 'chronic' : 'transient'
+        kind: source.error_streak >= CHRONIC_ERROR_STREAK ? 'chronic' : 'transient',
+        attempted_this_run: source.attempted_this_run !== undefined ? Boolean(source.attempted_this_run) : true
       })),
     sources
   };
@@ -355,7 +376,7 @@ function buildHarvestStatus(state) {
     '',
     '## Collector Errors',
     '',
-    mdTable(['Source', 'Kind', 'Failed runs in a row', 'Reason'], report.collector_error_sources.map((source) => [source.id, source.kind, String(source.error_streak), source.note])),
+    mdTable(['Source', 'Kind', 'Failed runs in a row', 'Attempted this run', 'Reason'], report.collector_error_sources.map((source) => [source.id, source.kind, String(source.error_streak), source.attempted_this_run ? 'yes' : 'no', source.note])),
     '',
     mdTable(['Source', 'Policy', 'Trust', 'Gate'], sources.slice(0, 80).map((source) => [source.name || source.id, source.publish_policy, source.trust_level, source.candidate_gate])),
     ''
