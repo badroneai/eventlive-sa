@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-08-05T08:14:26.968Z
+Generated at: 2026-08-05T09:23:22.715Z
 
 ## Operating Rule
 
@@ -78,7 +78,7 @@ Call log:
 | 20 | code-mcit-programs | active-collector | zero-yield | 0 | yes | Zero-yield for 74 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 21 | misk-hub-programs | active-collector | productive | 5 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 22 | dhahran-expo-calendar | active-collector | productive | 16 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
-| 23 | ithra-events | active-collector | productive | 77 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 23 | ithra-events | active-collector | productive | 79 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 24 | saudi-digital-academy | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed |
 | 25 | sdaia-academy-programs | active-collector | zero-yield | 0 | no | Zero-yield for 13 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 26 | saudi-events-app | partnership | partnership | 0 | no | Partnership/API lane; do not scrape protected or app-only data. |
@@ -143,7 +143,7 @@ Call log:
 | 82 | money2020-middle-east-agendas | extractor-backlog | not-attempted | 0 | no | Latest deep probe recommends build-jsonld-event-extractor; build only if future date-complete rows are visible. |
 | 83 | madinah-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 19 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 84 | madinah-architecture-festival | active-collector | productive | 1 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
-| 85 | hayy-jameel-events | active-collector | productive | 65 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 85 | hayy-jameel-events | active-collector | productive | 66 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 86 | informa-connect-saudi-events | venue-dedupe | productive | 6 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 87 | kau-events | venue-dedupe | productive | 4 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 88 | saudicon-events | discovery-only | productive | 15 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |

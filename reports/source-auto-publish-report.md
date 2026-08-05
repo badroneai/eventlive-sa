@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-05T08:11:18.293Z
+- published_at: 2026-08-05T09:19:54.859Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 604
+- candidates_seen: 606
 - published_new: 6
-- linked_existing: 560
+- linked_existing: 562
 - blocked_remaining: 38
 - duplicate_review_alerts: 8
 
@@ -270,6 +270,8 @@
 | candidate-visit-saudi-calendar-pdf-أوركسترا-game-of-thrones-20260811-4a38d19e | linked-existing | event-أوركسترا-game-of-thrones | already linked to catalog event |
 | candidate-ithra-events-toddler-tuesday-20260811-1afead7d | linked-existing | event-toddler-tuesday | already linked to catalog event |
 | candidate-ithra-events-ithra-members-tour-20260811-5011b841 | linked-existing | event-ithra-members-tour | already linked to catalog event |
+| candidate-ithra-events-ithra-members-tour-arabic-20260811-c4eda15f | linked-existing | event-ithra-members-tour | trusted duplicate linked to existing catalog event |
+| candidate-ithra-events-ithra-members-tour-english-20260811-67fc89c0 | linked-existing | event-ithra-members-tour | trusted duplicate linked to existing catalog event |
 | candidate-ithra-events-chess-hub-20260811-4919439a | linked-existing | event-chess-hub | already linked to catalog event |
 | candidate-ithra-events-creative-character-design-20260811-afddf835 | linked-existing | event-creative-character-design | already linked to catalog event |
 | candidate-ithra-events-ithra-chess-tournament-20260811-49593879 | linked-existing | event-ithra-chess-tournament | already linked to catalog event |

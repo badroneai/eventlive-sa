@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T08:14:27.111Z",
+  "generated_at": "2026-08-05T09:23:22.867Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,10 +11,10 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-08-05T08:02:52.666Z",
+    "collected_at": "2026-08-05T09:11:53.029Z",
     "freshness": "fresh",
-    "discovered": 318,
-    "written": 604
+    "discovered": 321,
+    "written": 606
   },
   "sources": {
     "total": 88,
@@ -320,8 +320,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 77,
-        "candidates": 77,
+        "extracted": 79,
+        "candidates": 79,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -1124,7 +1124,7 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 65,
+        "extracted": 66,
         "candidates": 73,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
@@ -1176,28 +1176,28 @@
     ]
   },
   "queue": {
-    "total": 604,
+    "total": 606,
     "ready_for_review": 8,
     "approved_for_catalog": 0,
-    "published_from_candidates": 570,
+    "published_from_candidates": 572,
     "actionable": 8,
     "stale_unpublished": 0,
     "duplicate_risk": 6,
     "needs_extraction": 0,
     "needs_evidence": 26,
     "by_review_status": {
-      "approved-for-catalog": 570,
+      "approved-for-catalog": 572,
       "ready-for-review": 8,
       "evidence-captured": 18,
       "new": 8
     },
     "by_publication_gate": {
-      "catalog-review": 570,
+      "catalog-review": 572,
       "duplicate-review": 8,
       "source-evidence": 26
     },
     "by_confidence": {
-      "official": 564,
+      "official": 566,
       "public-listing": 21,
       "verified-secondary": 11,
       "unverified": 8
@@ -1225,7 +1225,7 @@
       "Monsha'at All Events": 2,
       "Future Skills MCIT Catalogue": 4,
       "Saudi Food and Drug Authority Events": 9,
-      "Ithra Events": 77,
+      "Ithra Events": 79,
       "MDLBEAST Events": 5,
       "Dhahran Expo Calendar": 17,
       "Tradepass Official": 1,
@@ -1860,7 +1860,7 @@
         "discovery_notes": "",
         "duplicate_risk": false,
         "matched_catalog_event_id": "event-leap-2026",
-        "days_to_start": 27,
+        "days_to_start": 26,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",

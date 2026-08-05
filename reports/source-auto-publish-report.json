@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-05T08:11:18.293Z",
+  "published_at": "2026-08-05T09:19:54.859Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 604,
+  "candidates_seen": 606,
   "totals": {
-    "candidates_seen": 604,
+    "candidates_seen": 606,
     "published": 6,
-    "linked_existing": 560,
+    "linked_existing": 562,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 566
+    "reconciled": 568
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -1641,6 +1641,18 @@
       "event_id": "event-ithra-members-tour",
       "title": "Ithra Members Tour",
       "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-members-tour-arabic-20260811-c4eda15f",
+      "event_id": "event-ithra-members-tour",
+      "title": "Ithra Members Tour (Arabic)",
+      "reason": "trusted duplicate linked to existing catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-members-tour-english-20260811-67fc89c0",
+      "event_id": "event-ithra-members-tour",
+      "title": "Ithra Members Tour (English)",
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-chess-hub-20260811-4919439a",

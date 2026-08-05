@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-08-05T08:14:27.111Z
+- generated_at: 2026-08-05T09:23:22.867Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -21,22 +21,22 @@
 - Healthy sources: 20
 - Zero-yield sources: 0
 - High-priority unattempted sources: 3
-- Candidates: 604
+- Candidates: 606
 - Actionable candidates: 8
 - Ready for review: 8
 - Ready for catalog promotion: 0
-- Linked to catalog from candidates: 570
+- Linked to catalog from candidates: 572
 - Stale unpublished candidates: 0
 - Duplicate risk: 6
 - Recommendation: ابدأ بمراجعة التكرارات المحتملة قبل اعتماد أي مرشح جديد.
 
 ## Candidate Funnel
 
-- review_status.approved-for-catalog: 570
+- review_status.approved-for-catalog: 572
 - review_status.ready-for-review: 8
 - review_status.evidence-captured: 18
 - review_status.new: 8
-- publication_gate.catalog-review: 570
+- publication_gate.catalog-review: 572
 - publication_gate.duplicate-review: 8
 - publication_gate.source-evidence: 26
 - discovery_quality.strong-lead: 19
@@ -97,7 +97,7 @@
 | 20 | CODE MCIT Programs | deferred | 0 | 0 | مؤجل حتى 2026-08-10T20:19:02.344Z وفق الجدولة التكيفية. |
 | 21 | Misk Hub Programs | healthy | 5 | 11 | استمر بالمراجعة والتكرار قبل النشر. |
 | 22 | Dhahran Expo Calendar | healthy | 16 | 17 | استمر بالمراجعة والتكرار قبل النشر. |
-| 23 | Ithra Events | healthy | 77 | 77 | استمر بالمراجعة والتكرار قبل النشر. |
+| 23 | Ithra Events | healthy | 79 | 79 | استمر بالمراجعة والتكرار قبل النشر. |
 | 24 | Saudi Digital Academy | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 25 | SDAIA Academy Programs | deferred | 0 | 0 | مؤجل حتى 2026-08-06T20:19:02.344Z وفق الجدولة التكيفية. |
 | 26 | Saudi Events App | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
@@ -159,7 +159,7 @@
 | 82 | Money20/20 Middle East Official Agendas | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 83 | Madinah Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-08-05T19:53:09.604Z وفق الجدولة التكيفية. |
 | 84 | Madinah International Architecture Festival | healthy | 1 | 1 | استمر بالمراجعة والتكرار قبل النشر. |
-| 85 | Hayy Jameel What's On | healthy | 65 | 73 | استمر بالمراجعة والتكرار قبل النشر. |
+| 85 | Hayy Jameel What's On | healthy | 66 | 73 | استمر بالمراجعة والتكرار قبل النشر. |
 | 86 | Informa Connect Saudi Event Portfolio | deferred | 0 | 6 | مؤجل حتى 2026-08-10T20:19:02.344Z وفق الجدولة التكيفية. |
 | 87 | King Abdulaziz University Events | deferred | 0 | 2 | مؤجل حتى 2026-08-10T20:19:02.344Z وفق الجدولة التكيفية. |
 | 88 | Saudicon Events | deferred | 0 | 15 | مؤجل حتى 2026-08-06T03:54:27.327Z وفق الجدولة التكيفية. |
