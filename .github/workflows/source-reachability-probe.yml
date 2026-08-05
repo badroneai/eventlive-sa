@@ -1,0 +1,53 @@
+# Diagnostic only. Dispatch by hand; never scheduled, never triggered by a push.
+#
+# Why it exists: several collectors fail from CI while their URLs answer 200
+# from a laptop. Any conclusion drawn from the laptop is a guess — the runner is
+# the only vantage point whose answer decides anything. This runs the probe
+# there and prints which strategy (if any) reaches each host.
+#
+# Read-only by construction: `permissions: contents: read`, no Pages steps, no
+# commits, no writes to data/ — it fetches public pages and uploads a report.
+name: EventLive Source Reachability Probe
+
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: 'Comma-separated URLs to probe (default: the four chronically failing collectors)'
+        required: false
+        default: ''
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install deps
+        run: npm ci || npm install
+
+      - name: Install browser engine
+        run: npx playwright install --with-deps chromium
+
+      - name: Probe
+        env:
+          EVENTLIVE_PROBE_URLS: ${{ inputs.urls }}
+        run: node scripts/source-reachability-probe.mjs
+
+      - name: Upload probe report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-reachability-probe
+          path: reports/source-reachability-probe.json
+          retention-days: 7
