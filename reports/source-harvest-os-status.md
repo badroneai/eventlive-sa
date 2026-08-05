@@ -1,6 +1,6 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-05T04:17:27.136Z
+- Generated at: 2026-08-05T07:47:36.501Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
@@ -12,21 +12,21 @@
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 22/30
-- Collector errors: 4
+- Productive sources / attempted: 20/21
+- Collector errors: 1
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 337 |
+| discovered_this_run | 318 |
 | candidate_queue | 604 |
 | evaluated_for_publish | 604 |
-| linked_existing | 558 |
-| published_new | 8 |
+| linked_existing | 560 |
+| published_new | 6 |
 | blocked | 38 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 37 |
+| secondary_still_blocked | 34 |
 
 ## Blocked Reasons
 
@@ -46,13 +46,10 @@
 
 | Source | Reason |
 | --- | --- |
-| moc-cultural-calendar | fetch failed; fetch failed |
-| mos-events | fetch failed; page.goto: Timeout 30000ms exceeded.
+| asharqia-chamber-events | fetch failed; page.goto: Timeout 30000ms exceeded.
 Call log:
-  - navigating to "https://www.mos.gov.sa/en/media/events", waiting until "domcontentloaded"
+  - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentloaded"
  |
-| moc-cultural-subportals | fetch failed; fetch failed |
-| qassim-chamber-events | HTTP 403; browser recovery encountered an access-protection page |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

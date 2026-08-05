@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-05T04:17:27.136Z",
+  "generated_at": "2026-08-05T07:47:36.501Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
@@ -12,9 +12,9 @@
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 30,
-    "productive_sources": 22,
-    "collector_errors": 4
+    "collection_attempted": 21,
+    "productive_sources": 20,
+    "collector_errors": 1
   },
   "policies": {
     "partnership_required": 5,
@@ -28,14 +28,14 @@
     "source-evidence": 26
   },
   "funnel": {
-    "discovered_this_run": 337,
+    "discovered_this_run": 318,
     "candidate_queue": 604,
     "evaluated_for_publish": 604,
-    "linked_existing": 558,
-    "published_new": 8,
+    "linked_existing": 560,
+    "published_new": 6,
     "blocked": 38,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 37
+    "secondary_still_blocked": 34
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 6,
@@ -50,20 +50,8 @@
   },
   "collector_error_sources": [
     {
-      "id": "moc-cultural-calendar",
-      "note": "fetch failed; fetch failed"
-    },
-    {
-      "id": "mos-events",
-      "note": "fetch failed; page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.mos.gov.sa/en/media/events\", waiting until \"domcontentloaded\"\n"
-    },
-    {
-      "id": "moc-cultural-subportals",
-      "note": "fetch failed; fetch failed"
-    },
-    {
-      "id": "qassim-chamber-events",
-      "note": "HTTP 403; browser recovery encountered an access-protection page"
+      "id": "asharqia-chamber-events",
+      "note": "fetch failed; page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentloaded\"\n"
     }
   ],
   "sources": [

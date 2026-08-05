@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-05T04:08:27.575Z",
+  "generated_at": "2026-08-05T07:39:30.687Z",
   "totals": {
-    "targets": 15,
-    "enriched": 15,
-    "fetched": 15,
-    "images": 13,
+    "targets": 8,
+    "enriched": 8,
+    "fetched": 8,
+    "images": 8,
     "fetch_failures": 0
   },
   "enriched": [
@@ -59,26 +59,6 @@
       "fetch_reason": ""
     },
     {
-      "id": "event-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026",
-      "title": "لقاءات أسبوع الذكاء الاصطناعي 9 – 13 أغسطس 2026",
-      "source_label": "Monsha'at All Events",
-      "source_method": "official-page-meta",
-      "source_url": "http://www.monshaat.gov.sa/ar/node/499159",
-      "fetched": true,
-      "image": false,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-لقاءات-شهر-أغسطس-2026م",
-      "title": "لقاءات شهر أغسطس 2026م",
-      "source_label": "Monsha'at All Events",
-      "source_method": "official-page-meta",
-      "source_url": "http://www.monshaat.gov.sa/ar/node/497399",
-      "fetched": true,
-      "image": false,
-      "fetch_reason": ""
-    },
-    {
       "id": "event-مزرعة-التوت-الأسود",
       "title": "مزرعة التوت الاسود",
       "source_label": "Visit Saudi Summer Calendar PDF",
@@ -89,71 +69,21 @@
       "fetch_reason": ""
     },
     {
-      "id": "event-hayy-cinema-panel-discussion-the-golden-palm-film-programme",
-      "title": "Hayy Cinema | Panel Discussion: The Golden Palm Film Programme",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/the-golden-palm-film-programme-i-panel-discussions/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-honey-festival-2026",
-      "title": "Honey Festival 2026",
-      "source_label": "Visit Saudi Seasons",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/en/al-baha/events/honey-festival-2026",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-scenic-buggy-ride-at-gamra",
-      "title": "Scenic Buggy Ride at Gamra",
-      "source_label": "Visit Saudi Seasons",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/en/al-baha/events/scenic-buggy-ride-at-gamra",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-scenic-buggy-ride-with-picnic",
-      "title": "Scenic Buggy Ride with Picnic",
-      "source_label": "Visit Saudi Seasons",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/en/al-baha/events/scenic-buggy-ride-with-picnic",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-tour-of-al-baha",
-      "title": "Tour of Al Baha",
-      "source_label": "Visit Saudi Seasons",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/en/al-baha/events/tour-of-al-baha",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-دبلوم-إدارة-المرافق",
-      "title": "دبلوم إدارة المرافق",
+      "id": "event-دبلوم-الإدارة-المكتبية",
+      "title": "دبلوم الإدارة المكتبية",
       "source_label": "Umm Al-Qura University Events Center",
       "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41036",
+      "source_url": "https://uqu.edu.sa/App/Events/41037",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-hayy-cinema-hayy-explorers-at-the-cinema",
-      "title": "Hayy Cinema | Hayy Explorers At The Cinema",
-      "source_label": "Hayy Jameel What's On",
+      "id": "event-دبلوم-التحول-الرقمي",
+      "title": "دبلوم التحول الرقمي",
+      "source_label": "Umm Al-Qura University Events Center",
       "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayy-explorers-at-the-cinema/",
+      "source_url": "https://uqu.edu.sa/App/Events/41038",
       "fetched": true,
       "image": true,
       "fetch_reason": ""

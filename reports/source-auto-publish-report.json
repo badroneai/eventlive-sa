@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-08-05T04:06:33.233Z",
+  "published_at": "2026-08-05T07:37:36.616Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -7,8 +7,8 @@
   "candidates_seen": 604,
   "totals": {
     "candidates_seen": 604,
-    "published": 8,
-    "linked_existing": 558,
+    "published": 6,
+    "linked_existing": 560,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
@@ -193,16 +193,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
-    },
-    {
-      "candidate_id": "candidate-monshaat-events-لقاءات-شهر-أغسطس-2026م-20260801-7c7747a6",
-      "event_id": "event-لقاءات-شهر-أغسطس-2026م",
-      "title": "لقاءات شهر أغسطس 2026م"
-    },
-    {
-      "candidate_id": "candidate-monshaat-events-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026-20260809-08845aeb",
-      "event_id": "event-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026",
-      "title": "لقاءات أسبوع الذكاء الاصطناعي 9 – 13 أغسطس 2026"
     }
   ],
   "linked_existing": [
@@ -1047,6 +1037,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-monshaat-events-لقاءات-شهر-أغسطس-2026م-20260801-7c7747a6",
+      "event_id": "event-لقاءات-شهر-أغسطس-2026م",
+      "title": "لقاءات شهر أغسطس 2026م",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-البصريات-لخارج-مكة-20260801-70d68f2f",
       "event_id": "event-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-البصريات-لخارج-مكة",
       "title": "نموذج التسجيل والسداد للدبلوم المتوسط في البصريات لخارج مكة",
@@ -1584,6 +1580,12 @@
       "candidate_id": "candidate-future-skills-catalog-comptia-cloud-20260809-8946f510",
       "event_id": "event-comptia-cloud",
       "title": "⁠CompTIA Cloud+",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-monshaat-events-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026-20260809-08845aeb",
+      "event_id": "event-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026",
+      "title": "لقاءات أسبوع الذكاء الاصطناعي 9 – 13 أغسطس 2026",
       "reason": "already linked to catalog event"
     },
     {
@@ -3540,7 +3542,7 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-international-cat-day-open-call-20270804-5fb2cbe7",
       "event_id": "event-hayy-cinema-international-cat-day-open-call",
       "title": "Hayy Cinema | International Cat Day: Open Call",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-qassim-university-events-استضافة-مؤتمر-ieee-mecom-2027-20271101-510cb4b1",

@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-08-05T04:10:18.631Z
+- generated_at: 2026-08-05T07:41:09.666Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -12,14 +12,14 @@
 
 - Sources in registry: 88
 - Runnable collector lanes: 48
-- Sources due now: 30
-- Sources attempted in latest collection: 30
-- Sources deferred by cadence: 18
+- Sources due now: 21
+- Sources attempted in latest collection: 21
+- Sources deferred by cadence: 27
 - Due-source coverage: 100%
 - Scheduled runnable coverage: 100%
-- Whole-registry attempted this run: 34%
-- Healthy sources: 22
-- Zero-yield sources: 2
+- Whole-registry attempted this run: 24%
+- Healthy sources: 20
+- Zero-yield sources: 0
 - High-priority unattempted sources: 3
 - Candidates: 604
 - Actionable candidates: 8
@@ -77,21 +77,18 @@
 |---:|---|---|---:|---:|---|
 | 1 | National Events Center / Saudi Events | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 2 | Visit Saudi Calendar | healthy | 28 | 17 | استمر بالمراجعة والتكرار قبل النشر. |
-| 3 | Ministry of Culture Cultural Calendar | collection-error | 0 | 0 | fetch failed; fetch failed |
-| 4 | Ministry of Sport Events | collection-error | 0 | 0 | fetch failed; page.goto: Timeout 30000ms exceeded.
-Call log:
-  - navigating to "https://www.mos.gov.sa/en/media/events", waiting until "domcontentloaded"
- |
+| 3 | Ministry of Culture Cultural Calendar | deferred | 0 | 0 | مؤجل حتى 2026-08-06T03:54:27.327Z وفق الجدولة التكيفية. |
+| 4 | Ministry of Sport Events | deferred | 0 | 0 | مؤجل حتى 2026-08-06T03:54:27.327Z وفق الجدولة التكيفية. |
 | 5 | webook Explore | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 6 | Hala Yalla | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 7 | Experience AlUla Events | healthy | 9 | 9 | استمر بالمراجعة والتكرار قبل النشر. |
-| 8 | MDLBEAST Events | healthy | 5 | 5 | استمر بالمراجعة والتكرار قبل النشر. |
+| 8 | MDLBEAST Events | healthy | 4 | 5 | استمر بالمراجعة والتكرار قبل النشر. |
 | 9 | Monsha'at All Events | healthy | 2 | 2 | استمر بالمراجعة والتكرار قبل النشر. |
 | 10 | Invest Saudi Events | healthy | 3 | 3 | استمر بالمراجعة والتكرار قبل النشر. |
 | 11 | RFECC What's On | healthy | 6 | 6 | استمر بالمراجعة والتكرار قبل النشر. |
-| 12 | Eye of Riyadh Events | collection-error | 0 | 6 | Discovery-only source unavailable in this run: HTTP 403 |
+| 12 | Eye of Riyadh Events | deferred | 0 | 6 | مؤجل حتى 2026-08-06T03:54:27.327Z وفق الجدولة التكيفية. |
 | 13 | 10times Saudi Arabia | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 14 | Eventbrite Saudi Arabia | collection-error | 0 | 8 | Discovery-only source unavailable in this run: HTTP 405 |
+| 14 | Eventbrite Saudi Arabia | deferred | 0 | 8 | مؤجل حتى 2026-08-06T03:54:27.327Z وفق الجدولة التكيفية. |
 | 15 | Platinumlist Jeddah Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 16 | Tuwaiq Academy Bootcamps and Programs | healthy | 12 | 37 | استمر بالمراجعة والتكرار قبل النشر. |
 | 17 | Future Skills MCIT Catalogue | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |
@@ -114,7 +111,7 @@ Call log:
 | 34 | Visit Saudi Summer Calendar PDF | deferred | 0 | 68 | مؤجل حتى 2026-08-07T16:57:56.450Z وفق الجدولة التكيفية. |
 | 35 | Qiddiya Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 36 | Sela and Saudi Entertainment Expo | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 37 | Ministry of Culture Commission Calendars | collection-error | 0 | 12 | fetch failed; fetch failed |
+| 37 | Ministry of Culture Commission Calendars | deferred | 0 | 12 | مؤجل حتى 2026-08-06T03:54:27.327Z وفق الجدولة التكيفية. |
 | 38 | Visit AlBalad / Historic Jeddah | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 39 | Discover Aseer Events | healthy | 36 | 39 | استمر بالمراجعة والتكرار قبل النشر. |
 | 40 | Diriyah Season | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
@@ -128,7 +125,7 @@ Call log:
 | 48 | Saudi Food and Drug Authority Events | healthy | 9 | 9 | استمر بالمراجعة والتكرار قبل النشر. |
 | 49 | Saudi Contractors Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 50 | Saudi Winter Events Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 51 | Riyadh City Events | zero-yield | 0 | 77 | No future date-complete candidates found by the conservative extractor. |
+| 51 | Riyadh City Events | deferred | 0 | 77 | مؤجل حتى 2026-08-05T09:54:27.327Z وفق الجدولة التكيفية. |
 | 52 | Monsha'at Academy Programs | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 53 | General Entertainment Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 54 | SDAIA Calendar and Events | healthy | 2 | 2 | استمر بالمراجعة والتكرار قبل النشر. |
@@ -136,13 +133,16 @@ Call log:
 | 56 | SCEGA ePortal Events | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |
 | 57 | Ministry of Commerce Upcoming Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 58 | Evento | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 59 | Asharqia Chamber Events | healthy | 3 | 3 | استمر بالمراجعة والتكرار قبل النشر. |
-| 60 | Qassim Chamber Events | collection-error | 0 | 0 | HTTP 403; browser recovery encountered an access-protection page |
+| 59 | Asharqia Chamber Events | collection-error | 0 | 3 | fetch failed; page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentloaded"
+ |
+| 60 | Qassim Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-08-06T03:54:27.327Z وفق الجدولة التكيفية. |
 | 61 | Abha Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-08-10T20:19:02.344Z وفق الجدولة التكيفية. |
 | 62 | Baha Municipality Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 63 | Baha Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 64 | Jouf Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 65 | Northern Borders Chamber Events | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
+| 65 | Northern Borders Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-08-08T03:54:27.327Z وفق الجدولة التكيفية. |
 | 66 | Tabuk Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-08-05T19:53:09.604Z وفق الجدولة التكيفية. |
 | 67 | Jazan Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-08-05T19:53:09.604Z وفق الجدولة التكيفية. |
 | 68 | Hail Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
@@ -165,4 +165,4 @@ Call log:
 | 85 | Hayy Jameel What's On | healthy | 66 | 73 | استمر بالمراجعة والتكرار قبل النشر. |
 | 86 | Informa Connect Saudi Event Portfolio | deferred | 0 | 6 | مؤجل حتى 2026-08-10T20:19:02.344Z وفق الجدولة التكيفية. |
 | 87 | King Abdulaziz University Events | deferred | 0 | 2 | مؤجل حتى 2026-08-10T20:19:02.344Z وفق الجدولة التكيفية. |
-| 88 | Saudicon Events | healthy | 15 | 15 | استمر بالمراجعة والتكرار قبل النشر. |
+| 88 | Saudicon Events | deferred | 0 | 15 | مؤجل حتى 2026-08-06T03:54:27.327Z وفق الجدولة التكيفية. |

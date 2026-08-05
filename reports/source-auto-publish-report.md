@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-05T04:06:33.233Z
+- published_at: 2026-08-05T07:37:36.616Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 604
-- published_new: 8
-- linked_existing: 558
+- published_new: 6
+- linked_existing: 560
 - blocked_remaining: 38
 - duplicate_review_alerts: 8
 
@@ -29,8 +29,6 @@
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
-| candidate-monshaat-events-لقاءات-شهر-أغسطس-2026م-20260801-7c7747a6 | published | event-لقاءات-شهر-أغسطس-2026م | لقاءات شهر أغسطس 2026م |
-| candidate-monshaat-events-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026-20260809-08845aeb | published | event-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026 | لقاءات أسبوع الذكاء الاصطناعي 9 – 13 أغسطس 2026 |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -171,6 +169,7 @@
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل-20260726-aa1669c2 | linked-existing | event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل | already linked to catalog event |
 | candidate-umm-al-qura-events-فرص-تعاقد-على-مشروع-بحثي-ممول-20260727-602b04ea | linked-existing | event-وظائف-بحثية-تجربة | already linked to catalog event |
 | candidate-discover-aseer-events-summer-legacy-20260801-aaba4732 | linked-existing | event-summer-legacy | already linked to catalog event |
+| candidate-monshaat-events-لقاءات-شهر-أغسطس-2026م-20260801-7c7747a6 | linked-existing | event-لقاءات-شهر-أغسطس-2026م | already linked to catalog event |
 | candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-البصريات-لخارج-مكة-20260801-70d68f2f | linked-existing | event-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-البصريات-لخارج-مكة | already linked to catalog event |
 | candidate-visit-saudi-seasons-buraydah-dates-carnival-20260801-24906534 | linked-existing | event-buraydah-dates-carnival | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-ضحكات-الرياض-20260802-4a38d19e | linked-existing | event-ضحكات-الرياض | already linked to catalog event |
@@ -261,6 +260,7 @@
 | candidate-future-skills-catalog-machine-learning-التعلم-الالي-20260809-13b057e2 | linked-existing | event-machine-learning-التعلم-الالي | already linked to catalog event |
 | candidate-future-skills-catalog-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل-20260809-ae5af682 | linked-existing | event-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل | already linked to catalog event |
 | candidate-future-skills-catalog-comptia-cloud-20260809-8946f510 | linked-existing | event-comptia-cloud | already linked to catalog event |
+| candidate-monshaat-events-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026-20260809-08845aeb | linked-existing | event-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026 | already linked to catalog event |
 | candidate-sfda-events-الأجهزة-الطبية-الرقمية-التوعية-بالمتطلبات-التنظيمية-وأفضل-الممارسات-20260810-2a6ec3b3 | linked-existing | event-الأجهزة-الطبية-الرقمية-التوعية-بالمتطلبات-التنظيمية-وأفضل-الممارسات | already linked to catalog event |
 | candidate-ithra-events-platforms-manager-skills-20260810-62ec512d | linked-existing | event-platforms-manager-skills | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-august-20260810-f9fb1ca0 | linked-existing | event-hayy-makers-2 | already linked to catalog event |
@@ -586,7 +586,7 @@
 | candidate-hayy-jameel-events-hayy-cinema-kef-hayyak-3rd-edition-screenings-and-awards-ceremony-20270621-d5fae143 | linked-existing | event-hayy-cinema | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-aflamna-20270720-4db4173f | linked-existing | event-hayy-cinema-aflamna | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-july-2026-20270720-0b9a2284 | linked-existing | event-hayy-cinema-2 | already linked to catalog event |
-| candidate-hayy-jameel-events-hayy-cinema-international-cat-day-open-call-20270804-5fb2cbe7 | linked-existing | event-hayy-cinema-international-cat-day-open-call | trusted duplicate linked to existing catalog event |
+| candidate-hayy-jameel-events-hayy-cinema-international-cat-day-open-call-20270804-5fb2cbe7 | linked-existing | event-hayy-cinema-international-cat-day-open-call | already linked to catalog event |
 | candidate-qassim-university-events-استضافة-مؤتمر-ieee-mecom-2027-20271101-510cb4b1 | linked-existing | event-استضافة-مؤتمر-ieee-mecom-2027 | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-التحول-الرقمي-في-جازان-بالتعاون-مع-أكاديمية-غر-20271201-5cace3ad | linked-existing | event-دبلوم-التحول-الرقمي | already linked to catalog event |
 | candidate-discover-aseer-events-sammrah-20260528-0784ea5b | blocked | event-sammrah | possible duplicate requires review: exact-title-city-source-conflict |
