@@ -16,6 +16,10 @@ on:
         description: 'Comma-separated URLs to probe (default: the four chronically failing collectors)'
         required: false
         default: ''
+      discover_proxy:
+        description: 'Also hunt for a working public Saudi egress and validate it against the real origin'
+        required: false
+        default: 'false'
 
 permissions:
   contents: read
@@ -43,6 +47,10 @@ jobs:
         env:
           EVENTLIVE_PROBE_URLS: ${{ inputs.urls }}
         run: node scripts/source-reachability-probe.mjs
+
+      - name: Hunt for a working Saudi egress
+        if: ${{ inputs.discover_proxy == 'true' }}
+        run: node scripts/ksa-proxy-discovery.mjs
 
       - name: Upload probe report
         if: always()
