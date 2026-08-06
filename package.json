@@ -193,6 +193,7 @@
     "test:rfecc-enrichment": "node scripts/rfecc-enrichment-regression-test.mjs",
     "test:mdlbeast-enrichment": "node scripts/mdlbeast-enrichment-regression-test.mjs",
     "test:backlog-enrichment": "node scripts/official-event-backlog-enrichment-regression-test.mjs",
+    "test:content-volume-advisory": "node scripts/official-content-volume-advisory-test.mjs",
     "test:backlog-image": "node scripts/backlog-image-regression-test.mjs",
     "test:single-session-activation": "node scripts/official-single-session-activation-regression-test.mjs",
     "test:site-launch-sweep": "node scripts/site-launch-sweep.mjs",

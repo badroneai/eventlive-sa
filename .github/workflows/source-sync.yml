@@ -193,6 +193,8 @@ jobs:
           npm run test:global-proptech-agenda
           npm run test:backlog-target-selection
           npm run test:backlog-enrichment
+          # Third-party publication volume/content can legitimately change; keep it visible without freezing sync.
+          npm run test:content-volume-advisory || echo "CONTENT_VOLUME_DEBT (non-blocking)"
           npm run test:single-session-activation
           npm run test:live-operational-feeds
           npm run test:event-priority
