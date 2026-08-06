@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-06T09:29:24.383Z",
+  "generated_at": "2026-08-06T09:50:02.373Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
@@ -30,7 +30,7 @@
     "source-evidence": 26
   },
   "funnel": {
-    "discovered_this_run": 314,
+    "discovered_this_run": 315,
     "candidate_queue": 604,
     "evaluated_for_publish": 604,
     "linked_existing": 560,

@@ -1,37 +1,18 @@
 {
-  "generated_at": "2026-08-06T09:21:56.746Z",
+  "generated_at": "2026-08-06T09:43:00.684Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
     "cached_total": 791,
-    "fetched": 3,
-    "reused": 494,
+    "fetched": 0,
+    "reused": 497,
     "failed": 3,
     "skipped_recent_failures": 3,
     "remembered_failures": 6
   },
-  "fetched": [
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/202608_TOTT_Banner-01-1100x500.png",
-      "file": "dist/assets/event-images/مكتبة-جاميل-مهمة-مختبر-أبحاث-المترجم-a1b759fb11.png",
-      "bytes": 53353,
-      "events": 1
-    },
-    {
-      "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
-      "file": "dist/assets/event-images/مؤتمر-الحطام-الفضائي-2028-ed926e1bba.webp",
-      "bytes": 17480,
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/73981ad8c56588325a6fae85d27ab60b.png",
-      "file": "dist/assets/event-images/manal-mohei-eldin-and-oriental-strokes-d762e2f490.png",
-      "bytes": 477626,
-      "events": 1
-    }
-  ],
+  "fetched": [],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -899,8 +880,18 @@
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/202608_TOTT_Banner-01-1100x500.png",
+      "file": "dist/assets/event-images/مكتبة-جاميل-مهمة-مختبر-أبحاث-المترجم-a1b759fb11.png",
+      "events": 1
+    },
+    {
       "source_url": "https://saudi.smartdataseries.com/wp-content/uploads/2025/11/sdais-saudi.jpg",
       "file": "dist/assets/event-images/smart-data-ai-summit-1e2bce2056.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/73981ad8c56588325a6fae85d27ab60b.png",
+      "file": "dist/assets/event-images/manal-mohei-eldin-and-oriental-strokes-d762e2f490.png",
       "events": 1
     },
     {
@@ -1984,6 +1975,11 @@
       "events": 1
     },
     {
+      "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
+      "file": "dist/assets/event-images/مؤتمر-الحطام-الفضائي-2028-ed926e1bba.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2a93a513735da824f0d28d0a8d24b99d.jpg",
       "file": "dist/assets/event-images/children-s-museum-free-monday-197cdfde54.jpg",
       "events": 1
@@ -2505,23 +2501,7 @@
     }
   ],
   "rejected_removed": [],
-  "missing_removed": [
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/202608_TOTT_Banner-01-1100x500.png",
-      "file": "dist/assets/event-images/jameel-library-the-task-of-the-translator-research-lab-a1b759fb11.png",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
-      "file": "dist/assets/event-images/space-debris-conference-2028-ed926e1bba.webp",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/73981ad8c56588325a6fae85d27ab60b.png",
-      "file": "dist/assets/event-images/manal-mohei-eldin-and-oriental-strokes-d762e2f490.png",
-      "reason": "cached-file-missing"
-    }
-  ],
+  "missing_removed": [],
   "skipped_recent_failures": [
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
@@ -2574,9 +2554,6 @@
       "skipped": true
     }
   ],
-  "requires_rebuild": true,
-  "rebuild_reasons": [
-    "fetched:3",
-    "missing-removed:3"
-  ]
+  "requires_rebuild": false,
+  "rebuild_reasons": []
 }

@@ -1,6 +1,6 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-06T09:29:24.383Z
+- Generated at: 2026-08-06T09:50:02.373Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
@@ -19,7 +19,7 @@
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 314 |
+| discovered_this_run | 315 |
 | candidate_queue | 604 |
 | evaluated_for_publish | 604 |
 | linked_existing | 560 |
