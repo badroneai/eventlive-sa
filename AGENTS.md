@@ -1,0 +1,88 @@
+# AGENTS.md — Operating laws for AI agents working in this repository
+
+This file is loaded by AI coding agents (Codex, Prime Agent, Claude, and others) at
+session start. It encodes lessons this project paid for in production outages.
+Deeper background: `GATES-GOVERNANCE.md`. Do not violate these laws to make a task
+easier; if a law seems to block a legitimate change, say so explicitly instead of
+working around it.
+
+## 1. Publish topology — know which pipeline you are talking about
+
+- **`source-sync.yml` is what actually ships.** It runs on a cron (`17 */6 * * *`),
+  collects sources, builds, and deploys eventme.live. Its commits carry `[skip ci]`.
+- `deploy.yml` is the gated "official" pipeline; it does NOT publish the routine
+  updates. `pages.yml` is dispatch-only.
+- `pr-verify.yml` is pre-merge CI. It must keep running the SAME blocking gates the
+  publish path runs (see law 2). Always name the workflow you mean; "CI is green"
+  is meaningless without it.
+
+## 2. Gate laws (each one is a class ban bought by a real incident)
+
+1. **Every blocking gate must be PR-reachable.** A gate that only executes inside
+   `source-sync.yml` fires for the first time after merge and freezes production
+   (three confirmed incidents, latest 2026-08-06: ~22h publishing outage).
+   `pr-verify.yml` runs the sync-blocking regression list *extracted verbatim from
+   source-sync.yml* (`scripts/run-sync-blocking-regression-gates.mjs`) plus
+   `ci:site-gates` — never break that parity, and never add a blocking step to the
+   publish path without confirming pr-verify exercises it.
+2. **Third-party content is advisory, never blocking.** External organizations may
+   legitimately change what they publish (volume, agendas, image hosts, wording).
+   Blocking gates assert OUR writer/extractor output shape only. Content-volume
+   expectations live in `test:content-volume-advisory`
+   (`|| echo "..._DEBT (non-blocking)"` pattern). When classifying, be
+   conservative: unsure → blocking only if no third-party change could trip it.
+3. **Matchers assert invariants, not wording.** Any static matcher over workflow
+   YAML or source text must accept semantically equivalent rewrites (e.g. inline
+   `${{ steps.x.outcome }}` comparison vs env-var indirection) and must be
+   negative-checked: prove it still fails when the invariant is actually broken.
+4. **A report-reading test is a lying gauge unless the same job regenerates the
+   report.** Judge freshness by file mtime vs process start, never by a
+   `generated_at` field. Committed `reports/*.json` are snapshots, not truth.
+5. **Rebuild `dist/` before believing any dist-reading test.** Build output is
+   time-dependent (past events are pruned). An hour-old local build fails live
+   counters that CI passes. `skipped` ≠ `success`; count both as "did not pass".
+6. **cannot-evaluate ≠ evaluated-and-bad.** Fail only on the latter; report the
+   former loudly. A gate that fails because it could not look teaches people to
+   ignore it — same end state as a gate that lies green.
+7. **Fabrication bar:** never make a gate green by inventing metadata a source does
+   not publish. Correct shape: per-item floor (always derivable) + corpus ratio
+   (e.g. ≥80% carry rich fields).
+8. **Transient-tolerant, chronic-intolerant.** Source failures are judged on
+   persisted `error_streak` across runs (≥3 = chronic), never on the current run's
+   rows — only ~25% of sources are attempted per run, so absence proves nothing.
+9. **The run verdict reads DEPLOY outcome first.** A red quality gate after a
+   successful publish is a quality regression; a skipped deploy is a publishing
+   outage. Never let an early abort route into the "site published fine" branch.
+   An `::error::` annotation on a green run is invisible; the RUN itself must land
+   red (`exit 1`).
+
+## 3. Working rules
+
+- **Branch + PR only. Never push to `main`.** PRs are merged by the repository
+  owner or the supervising PM session, never by the executing agent.
+- Before committing a change that touches any workflow file, run locally:
+  `node scripts/publish-gate-drift-regression-test.mjs` and
+  `npm run test:source-sync-workflow`.
+- Before committing a change that touches gates or extractors, run the specific
+  gates you touched **in both directions** (green on correct state, red when you
+  deliberately break the invariant — then restore).
+- **Verify by inspection, not inference.** Read the live run / file / API response
+  before asserting a cause. If your evidence is an email, a summary, or a report
+  file, treat it as a claim to verify, not a fact.
+- Long-running checks: read your own log files; never end your work "waiting for a
+  notification".
+- Do not claim completion on partial work. A truncated round is reported truncated.
+
+## 4. Quick reference
+
+```
+npm run validate            # data validation
+npm run build               # full site build into dist/ (required before dist-reading tests)
+npm run ci:site-gates       # site/meta battery (includes workflow-shape guards)
+npm run ci:publish-quality-gates   # shared publish battery (36 checks, orchestrated)
+node scripts/run-sync-blocking-regression-gates.mjs  # the sync-blocking list, verbatim
+```
+
+Key files: `GATES-GOVERNANCE.md` (governance history and rationale),
+`scripts/publish-quality-gates-list.mjs` (single source of truth for the publish
+battery), `.github/workflows/source-sync.yml` (the pipeline that ships).

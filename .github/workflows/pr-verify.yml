@@ -70,3 +70,16 @@ jobs:
 
       - name: Publish quality gates battery (shared with deploy.yml/source-sync.yml — see package.json ci:publish-quality-gates)
         run: npm run ci:publish-quality-gates
+
+      # Orphan-gate class ban (2026-08-06, third incident: ~22h publishing
+      # outage from a blocking gate no PR check could reach). The two blocking
+      # batteries below previously executed ONLY inside source-sync.yml, so a
+      # PR could merge green and still freeze the publish path. Parity is by
+      # construction, not by bookkeeping: the regression list is extracted
+      # verbatim from source-sync.yml at run time, so gates added there are
+      # exercised here automatically.
+      - name: Site gates CI battery (same blocking battery source-sync.yml runs)
+        run: npm run ci:site-gates
+
+      - name: Sync-blocking regression gates (extracted verbatim from source-sync.yml)
+        run: node scripts/run-sync-blocking-regression-gates.mjs
