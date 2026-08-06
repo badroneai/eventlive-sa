@@ -1326,12 +1326,12 @@ function baseHead({ title, description, canonical, image, manifestHref = './mani
 }
 
 function analyticsHeadSnippet() {
-  return `<!-- Privacy-friendly analytics by Plausible -->
-<script async src="https://plausible.io/js/pa-BwvEgusGCTTM9Ak8D0dKB.js"></script>
-<script>
-  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-  plausible.init()
-</script>`;
+  // Self-hosted Umami (MIT) on the owner's Vercel + Neon free tiers — replaced
+  // Plausible 2026-08-06 when its trial ended. Cookie-less, ~2KB, and the
+  // eventlive-analytics-runtime below is provider-agnostic (it already probes
+  // window.umami), so custom events flow unchanged.
+  return `<!-- Privacy-friendly analytics by self-hosted Umami -->
+<script defer src="https://umami-ten-orpin.vercel.app/script.js" data-website-id="f68b920a-155f-4134-a7b1-88bbede979df"></script>`;
 }
 
 function analyticsRuntimeScript() {
@@ -4175,15 +4175,15 @@ function writeOwnerStatusPage(events, seoDiscovery = {}) {
     domain: platformDomain,
     intent: 'eventlive-owner-status',
     analytics: {
-      provider: analytics.provider || 'plausible',
+      provider: analytics.provider || 'umami',
       domain: analytics.domain || platformDomain,
       status: analytics.status || 'INSTRUMENTED',
       instrumentation_status: analytics.instrumentation_status || analytics.status || 'INSTRUMENTED',
-      dashboard_url: analytics.dashboard_url || `https://plausible.io/${analytics.domain || platformDomain}`,
-      dashboard_login_url: analytics.dashboard_login_url || `https://plausible.io/login?return_to=%2F${encodeURIComponent(analytics.domain || platformDomain)}`,
+      dashboard_url: analytics.dashboard_url || 'https://umami-ten-orpin.vercel.app',
+      dashboard_login_url: analytics.dashboard_login_url || 'https://umami-ten-orpin.vercel.app/login',
       dashboard_status: analytics.dashboard_status || 'NEEDS_PROVIDER_SETUP',
       dashboard_setup_required: analytics.dashboard_setup_required !== false,
-      dashboard_note: analytics.dashboard_note || 'إذا ظهرت صفحة 404 في Plausible فهذا يعني أن لوحة الدومين تحتاج إنشاء أو تسجيل دخول بحساب المالك.',
+      dashboard_note: analytics.dashboard_note || 'لوحة Umami ذاتية الاستضافة على Vercel المالك — سجّل الدخول بحساب المالك لعرضها.',
       tracked_events: analytics.tracked_events || [],
       privacy: analytics.privacy || { cookies: false, pii: false },
       note: 'هذه الصفحة تثبت أن التتبع مزروع في الصفحات العامة. أرقام الزوار الحقيقية تظهر بعد تفعيل لوحة مزود التحليلات للدومين.'
@@ -4254,7 +4254,7 @@ function writeOwnerStatusPage(events, seoDiscovery = {}) {
       upcoming_or_ongoing: events.filter((event) => event.status !== 'ended').length
     },
     links: {
-      analytics_dashboard: analytics.dashboard_url || `https://plausible.io/${analytics.domain || platformDomain}`,
+      analytics_dashboard: analytics.dashboard_url || 'https://umami-ten-orpin.vercel.app',
       source_health: './source-health.html',
       source_coverage: './source-coverage-gaps.html',
       search_growth: './owner-search-growth.html',
@@ -7787,10 +7787,14 @@ function decorateBrandHtml(html, filePath) {
   next = normalizePublicHeadIcons(next, filePath);
   next = normalizeInternalHomeLinks(next);
   next = next.replace(/<style id="eventlive-brand-pulse">[\s\S]*?<\/style>/g, '');
-  next = next.replace(/<script defer data-domain="eventme\.live" src="https:\/\/plausible\.io\/js\/script\.tagged-events\.js"><\/script>/g, '');
-  next = next.replace(/<!-- Privacy-friendly analytics by Plausible -->\s*/g, '');
-  next = next.replace(/<script async src="https:\/\/plausible\.io\/js\/pa-[^"]+\.js"><\/script>\s*/g, '');
+  next = next.replace(/<script defer(?:="")? data-domain="eventme\.live" src="https:\/\/plausible\.io\/js\/script\.tagged-events\.js"><\/script>/g, '');
+  next = next.replace(/<!-- Privacy-friendly analytics by (?:Plausible|self-hosted Umami) -->\s*/g, '');
+  // Match BOTH the authored attribute form (async) and the DOM-serialized form
+  // (async="") — matching only the authored form let one duplicate Plausible
+  // tag survive every incremental rebuild until index.html carried 13 copies.
+  next = next.replace(/<script async(?:="")? src="https:\/\/plausible\.io\/js\/pa-[^"]+\.js"><\/script>\s*/g, '');
   next = next.replace(/<script>\s*window\.plausible=window\.plausible\|\|function\(\)\{[\s\S]*?plausible\.init\(\)\s*<\/script>\s*/g, '');
+  next = next.replace(/<script defer(?:="")? src="https:\/\/umami-ten-orpin\.vercel\.app\/script\.js"[^>]*><\/script>\s*/g, '');
   next = next.replace(/<script id="eventlive-analytics-runtime">[\s\S]*?<\/script>/g, '');
   next = next.replace(/<\/head>/i, `  ${brandCss}\n</head>`);
   if (!isOwnerOnlyPage(filePath)) {
