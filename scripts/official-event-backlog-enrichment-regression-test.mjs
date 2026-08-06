@@ -88,10 +88,38 @@ assert.equal(
   true,
   'Ithra outlines must retain their official public index provenance'
 );
+// Class ban for sync 31016172861/31041912300/31069254407: this used to demand the
+// literal "official timed sessions" wording on EVERY Ithra row, which silently
+// asserted that every Ithra listing must carry a timed agenda. Ithra publishes
+// genuine event-level-only entries (e.g. the open-run exhibition
+// "Manal Mohei Eldin and Oriental Strokes", sessions_count=0), so one ordinary
+// third-party listing turned a code-regression gate red and froze publishing for
+// three consecutive scheduled runs. The gate now checks what it actually owns:
+// that the status is one of the two sentences scripts/enrich-official-event-backlog-details.mjs
+// is allowed to write, so a writer regression (missing field, drifted wording) is
+// still caught while third-party programming choices are not treated as defects.
+//
+// It matches the writer's output SHAPE, not the live sessions_count: the outline
+// is a snapshot stamped at collected_at (many Ithra rows still carry their
+// 2026-07-10 stamp) while sessions_count keeps moving as past sessions are pruned,
+// so `event-water-challenges` legitimately reads 19 live against a "33 official
+// timed sessions" snapshot. Asserting equality there would only install a second
+// lying gate that reddens on ordinary calendar drift.
+const SESSION_STATUS_SHAPES = [
+  /^\d+ official timed sessions were extracted from the official source\.$/,
+  /^Event-level source only; no timed session agenda was extracted\.$/
+];
+const describesSessionSchedule = (event) => SESSION_STATUS_SHAPES
+  .some((shape) => shape.test(event.program_outline?.faqs?.live_schedule_status || ''));
 assert.equal(
-  ithraEvents.every((event) => /official timed sessions/.test(event.program_outline?.faqs?.live_schedule_status || '')),
+  ithraEvents.every(describesSessionSchedule),
   true,
-  'Ithra outlines must describe the extracted official session schedule'
+  `Ithra outlines must describe the extracted official session schedule (offenders: ${
+    ithraEvents.filter((event) => !describesSessionSchedule(event))
+      .slice(0, 5)
+      .map((event) => `${event.id} sessions_count=${Number(event.sessions_count || 0)} status="${event.program_outline?.faqs?.live_schedule_status || ''}"`)
+      .join('; ')
+  })`
 );
 
 const normalizeIdentityPart = (value = '') => String(value)

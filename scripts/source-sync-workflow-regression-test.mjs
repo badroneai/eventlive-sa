@@ -129,4 +129,40 @@ assert.ok(deployIndexNowNotifyIndex < deployReleaseEvidenceIndex, 'release verif
 assert.match(deployWorkflow, /reports\/indexnow-submission-receipt\.json/, 'release verification artifact must retain the non-secret IndexNow receipt');
 assert.ok(deployImageRestoreIndex >= 0 && deployImageRestoreIndex < deployBuildIndex, 'code deployment must restore source images before the public build');
 
+// Class ban for syncs 30920399222 / 31016172861 / 31041912300 / 31069254407.
+// The run-verdict step used to branch on publish_quality_gates alone and then
+// state as fact that "the site DID publish this run ... NOT a publishing
+// outage". When an earlier blocking step aborts the job, that battery is
+// SKIPPED and the deploy never happens — so the outage branch fired the
+// site-published message. Four consecutive runs emailed a reassuring
+// "quality regression" while eventme.live sat frozen for ~20 hours and no
+// catalog state was persisted. The verdict must read the DEPLOY outcome, and
+// it must read it FIRST, or the pipeline can lie about being alive again.
+assert.match(
+  workflow,
+  /DEPLOY_OUTCOME:\s*\$\{\{\s*steps\.deployment\.outcome\s*\}\}/,
+  'the run verdict must read the actual Deploy to GitHub Pages outcome — a verdict derived only from quality gates cannot tell an outage from a regression'
+);
+assert.match(
+  workflow,
+  /SYNC_RUN_RED_PUBLISHING_OUTAGE/,
+  'the run verdict must have a distinct publishing-outage verdict; an outage reported as a quality regression is a silent outage'
+);
+const outageBranchIndex = indexOfLine(/SYNC_RUN_RED_PUBLISHING_OUTAGE/);
+const alreadyPublishedBranchIndex = indexOfLine(/SYNC_RUN_RED_SITE_ALREADY_PUBLISHED/);
+assert.ok(
+  outageBranchIndex < alreadyPublishedBranchIndex,
+  'the publishing-outage check must run BEFORE the site-already-published branch, or a skipped deploy is announced as a successful publish'
+);
+assert.doesNotMatch(
+  workflow.split('\n')[alreadyPublishedBranchIndex],
+  /steps\.publish_quality_gates\.outcome/,
+  'the site-already-published message must not be reachable straight from the quality-gate outcome — it must sit behind a confirmed successful deploy'
+);
+assert.match(
+  workflow,
+  /PUBLISH_QUALITY_GATES_NEVER_RAN/,
+  'a skipped publish-quality battery must be reported as never-ran, not as failed — "skipped" is not "failed"'
+);
+
 console.log('source-sync-workflow-regression-test: ok');
