@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-08-06T12:00:24.361Z
+- generated_at: 2026-08-06T14:59:53.838Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -12,31 +12,31 @@
 
 - Sources in registry: 88
 - Runnable collector lanes: 48
-- Sources due now: 21
-- Sources attempted in latest collection: 21
-- Sources deferred by cadence: 27
+- Sources due now: 24
+- Sources attempted in latest collection: 24
+- Sources deferred by cadence: 24
 - Due-source coverage: 100%
 - Scheduled runnable coverage: 100%
-- Whole-registry attempted this run: 24%
+- Whole-registry attempted this run: 27%
 - Healthy sources: 21
-- Zero-yield sources: 0
+- Zero-yield sources: 2
 - High-priority unattempted sources: 3
-- Candidates: 606
+- Candidates: 605
 - Actionable candidates: 8
 - Ready for review: 8
 - Ready for catalog promotion: 0
-- Linked to catalog from candidates: 572
+- Linked to catalog from candidates: 571
 - Stale unpublished candidates: 0
 - Duplicate risk: 6
 - Recommendation: ابدأ بمراجعة التكرارات المحتملة قبل اعتماد أي مرشح جديد.
 
 ## Candidate Funnel
 
-- review_status.approved-for-catalog: 572
+- review_status.approved-for-catalog: 571
 - review_status.ready-for-review: 8
 - review_status.evidence-captured: 18
 - review_status.new: 8
-- publication_gate.catalog-review: 572
+- publication_gate.catalog-review: 571
 - publication_gate.duplicate-review: 8
 - publication_gate.source-evidence: 26
 - discovery_quality.strong-lead: 19
@@ -97,7 +97,7 @@
 | 20 | CODE MCIT Programs | deferred | 0 | 0 | مؤجل حتى 2026-08-10T20:19:02.344Z وفق الجدولة التكيفية. |
 | 21 | Misk Hub Programs | healthy | 5 | 11 | استمر بالمراجعة والتكرار قبل النشر. |
 | 22 | Dhahran Expo Calendar | healthy | 16 | 17 | استمر بالمراجعة والتكرار قبل النشر. |
-| 23 | Ithra Events | healthy | 79 | 79 | استمر بالمراجعة والتكرار قبل النشر. |
+| 23 | Ithra Events | healthy | 78 | 78 | استمر بالمراجعة والتكرار قبل النشر. |
 | 24 | Saudi Digital Academy | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 25 | SDAIA Academy Programs | deferred | 0 | 0 | مؤجل حتى 2026-08-06T20:19:02.344Z وفق الجدولة التكيفية. |
 | 26 | Saudi Events App | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
@@ -106,7 +106,7 @@
 | 29 | Jeddah Chamber Exhibitions and Events Center | deferred | 0 | 0 | مؤجل حتى 2026-08-10T20:19:02.344Z وفق الجدولة التكيفية. |
 | 30 | Saudi Pro League Fixtures | deferred | 0 | 0 | مؤجل حتى 2026-08-10T20:19:02.344Z وفق الجدولة التكيفية. |
 | 31 | NEOM Newsroom Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 32 | Saudi Space Agency Events | healthy | 1 | 1 | استمر بالمراجعة والتكرار قبل النشر. |
+| 32 | Saudi Space Agency Events | collection-error | 0 | 1 | fetch failed |
 | 33 | CST Events and News | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 34 | Visit Saudi Summer Calendar PDF | deferred | 0 | 68 | مؤجل حتى 2026-08-07T16:57:56.450Z وفق الجدولة التكيفية. |
 | 35 | Qiddiya Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
@@ -122,10 +122,10 @@
 | 45 | Saudi Universities and Technical Colleges | deferred | 0 | 1 | مؤجل حتى 2026-08-10T09:22:14.505Z وفق الجدولة التكيفية. |
 | 46 | ExpoFP and Eventseye Saudi Trade Shows | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 47 | Meetup and Facebook Events Saudi Arabia | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 48 | Saudi Food and Drug Authority Events | deferred | 0 | 8 | مؤجل حتى 2026-08-06T14:45:39.495Z وفق الجدولة التكيفية. |
+| 48 | Saudi Food and Drug Authority Events | healthy | 8 | 8 | استمر بالمراجعة والتكرار قبل النشر. |
 | 49 | Saudi Contractors Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 50 | Saudi Winter Events Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 51 | Riyadh City Events | deferred | 0 | 76 | مؤجل حتى 2026-08-06T14:45:39.495Z وفق الجدولة التكيفية. |
+| 51 | Riyadh City Events | zero-yield | 0 | 76 | No future date-complete candidates found by the conservative extractor. |
 | 52 | Monsha'at Academy Programs | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 53 | General Entertainment Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 54 | SDAIA Calendar and Events | healthy | 2 | 2 | استمر بالمراجعة والتكرار قبل النشر. |
@@ -134,7 +134,7 @@
 | 57 | Ministry of Commerce Upcoming Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 58 | Evento | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 59 | Asharqia Chamber Events | healthy | 3 | 3 | استمر بالمراجعة والتكرار قبل النشر. |
-| 60 | Qassim Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-08-06T14:45:39.495Z وفق الجدولة التكيفية. |
+| 60 | Qassim Chamber Events | zero-yield | 0 | 0 | Recovered via live-browser-recovery official evidence. Primary page failed: HTTP 403. No future date-complete candidates found by the conservative extractor. |
 | 61 | Abha Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-08-10T20:19:02.344Z وفق الجدولة التكيفية. |
 | 62 | Baha Municipality Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 63 | Baha Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |

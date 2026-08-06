@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-06T12:07:27.217Z
+- Generated at: 2026-08-06T15:06:59.481Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 606
-- Matched candidates: 574
+- Candidates: 605
+- Matched candidates: 573
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 21/21
-- Collector errors: 3 (chronic 3, transient 0)
+- Productive sources / attempted: 21/24
+- Collector errors: 4 (chronic 3, transient 1)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 317 |
-| candidate_queue | 606 |
-| evaluated_for_publish | 606 |
-| linked_existing | 559 |
-| published_new | 9 |
+| discovered_this_run | 323 |
+| candidate_queue | 605 |
+| evaluated_for_publish | 605 |
+| linked_existing | 561 |
+| published_new | 6 |
 | blocked | 38 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 37 |
+| secondary_still_blocked | 34 |
 
 ## Blocked Reasons
 
@@ -49,6 +49,7 @@
 | moc-cultural-calendar | chronic | 18 | no | collector-error: fetch failed; fetch failed |
 | mos-events | chronic | 18 | no | collector-error: fetch failed |
 | moc-cultural-subportals | chronic | 18 | no | collector-error: fetch failed; fetch failed |
+| saudi-space-agency-events | transient | 1 | yes | fetch failed |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

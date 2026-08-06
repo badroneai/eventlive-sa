@@ -1,6 +1,6 @@
 # EventLive Source Ingestion Plan
 
-Generated at: 2026-08-06T12:00:24.047Z
+Generated at: 2026-08-06T14:59:53.517Z
 
 ## Executive Model
 
@@ -65,21 +65,21 @@ EventLive should not treat all registered sources equally. The operating model i
 | code-mcit-programs | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | misk-hub-programs | ok | 5 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | dhahran-expo-calendar | ok | 16 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| ithra-events | ok | 79 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
+| ithra-events | ok | 78 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | sdaia-academy-programs | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | misk-hub-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | jcci-events-center | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | saudi-pro-league-fixtures | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
-| saudi-space-agency-events | ok | 1 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
+| saudi-space-agency-events | error | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | moc-cultural-subportals | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | discover-aseer-events | ok | 36 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | saudi-water-authority-events | ok | 8 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| sfda-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| sfda-events | ok | 8 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | sdaia-calendar-events | ok | 2 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | makkah-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | scega-exhibitions-conferences | ok | 4 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | asharqia-chamber-events | ok | 3 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| qassim-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| qassim-chamber-events | ok | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | abha-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | jazan-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | umm-al-qura-events | ok | 7 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
@@ -122,7 +122,7 @@ EventLive should not treat all registered sources equally. The operating model i
 | 29 | jcci-events-center | active-collector | daily | 146 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | 30 | saudi-pro-league-fixtures | active-collector | daily | 112 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | 31 | neom-newsroom-events | evidence-monitor | weekly-evidence-check | 85 | build-html-detail-extractor | Latest deep probe recommends build-html-detail-extractor; build only if future date-complete rows are visible. |
-| 32 | saudi-space-agency-events | active-collector | daily | 98 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
+| 32 | saudi-space-agency-events | active-collector | daily | 98 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | 33 | cst-events-news | evidence-monitor | weekly-evidence-check | 71 | probe-hidden-api-or-html-table | Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible. |
 | 34 | visit-saudi-calendar-pdf | venue-dedupe | weekly-dedupe-check | 50 | blocked-or-protected:timeout | Do not scrape now; latest probe is blocked-or-protected:timeout. Keep as partnership, browser/API investigation, or evidence lane. |
 | 35 | qiddiya-events | evidence-monitor | weekly-evidence-check | 17 | blocked-or-protected:http-403 | Do not scrape now; latest probe is blocked-or-protected:http-403. Keep as partnership, browser/API investigation, or evidence lane. |
@@ -138,7 +138,7 @@ EventLive should not treat all registered sources equally. The operating model i
 | 45 | saudi-university-events | evidence-monitor | monthly-evidence-check | 54 | probe-hidden-api-or-html-table | Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible. |
 | 46 | expofp-eventseye-saudi | discovery-only | monthly-discovery | 12 | - | Use only to discover leads; require official confirmation before promotion. |
 | 47 | meetup-facebook-saudi-events | discovery-only | monthly-discovery | 11 | - | Use only to discover leads; require official confirmation before promotion. |
-| 48 | sfda-events | active-collector | daily | 82 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| 48 | sfda-events | active-collector | daily | 82 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | 49 | saudi-contractors-authority-events | extractor-backlog | twice-weekly-extractor-probe | 36 | blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed | Do not scrape now; latest probe is blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane. |
 | 50 | saudi-winter-calendar-spa | evidence-monitor | monthly-evidence-check | 32 | - | Monitor for live event/detail pages; do not create public rows from summary or coming-soon pages. |
 | 51 | riyadh-city-events | extractor-backlog | twice-weekly-extractor-probe | 91 | blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed | Do not scrape now; latest probe is blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane. |

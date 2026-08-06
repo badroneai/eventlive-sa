@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-08-06T11:59:47.375Z",
+  "generated_at": "2026-08-06T14:59:16.188Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 792,
-    "fetched": 4,
+    "cached_total": 791,
+    "fetched": 3,
     "reused": 493,
-    "failed": 3,
+    "failed": 4,
     "skipped_recent_failures": 3,
-    "remembered_failures": 6
+    "remembered_failures": 7
   },
   "fetched": [
     {
@@ -20,15 +20,9 @@
       "events": 1
     },
     {
-      "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
-      "file": "dist/assets/event-images/مؤتمر-الحطام-الفضائي-2028-ed926e1bba.webp",
-      "bytes": 17480,
-      "events": 1
-    },
-    {
-      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%202026-08-06%20134537.png?itok=GtPbmcLG",
-      "file": "dist/assets/event-images/أساسيات-التخزين-السحابي-وقواعد-البيانات-3e2d305608.png",
-      "bytes": 61068,
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%202026-08-06%20144218.png?itok=mkC1-0ZB",
+      "file": "dist/assets/event-images/أساسيات-التخزين-السحابي-وقواعد-البيانات-102e8ba919.png",
+      "bytes": 44292,
       "events": 15
     },
     {
@@ -482,11 +476,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6157f51c92a2893ce920bbd5ca35f797.jpg",
       "file": "dist/assets/event-images/open-art-space-4910232c8c.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6b9f69436575717ae21e3e7a4a5b2db1.png",
-      "file": "dist/assets/event-images/summer-youth-program-dfe566c75a.png",
       "events": 1
     },
     {
@@ -2200,6 +2189,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6b9f69436575717ae21e3e7a4a5b2db1.png",
+      "file": "dist/assets/event-images/summer-youth-program-dfe566c75a.png",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/22bae4b046bb7b233edc1e50d7dfdcce.jpg",
       "file": "dist/assets/event-images/finding-nemo-4d5a57dee0.jpg",
       "events": 1
@@ -2518,6 +2512,11 @@
       "reason": "cached-file-missing"
     },
     {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%202026-08-06%20134537.png?itok=GtPbmcLG",
+      "file": "dist/assets/event-images/أساسيات-التخزين-السحابي-وقواعد-البيانات-3e2d305608.png",
+      "reason": "cached-file-missing"
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/73981ad8c56588325a6fae85d27ab60b.png",
       "file": "dist/assets/event-images/manal-mohei-eldin-and-oriental-strokes-d762e2f490.png",
       "reason": "cached-file-missing"
@@ -2573,11 +2572,19 @@
       "failure_kind": "access-denied",
       "retry_after": "2026-08-07T09:01:42.492Z",
       "skipped": true
+    },
+    {
+      "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
+      "events": 1,
+      "reason": "AggregateError",
+      "failure_kind": "fetch-failed",
+      "retry_after": "2026-08-07T14:59:16.188Z"
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:4",
-    "missing-removed:3"
+    "fetched:3",
+    "missing-removed:4",
+    "new-failures:1"
   ]
 }

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-06T11:58:44.950Z",
+  "generated_at": "2026-08-06T14:58:06.269Z",
   "totals": {
-    "targets": 6,
-    "enriched": 6,
-    "fetched": 6,
-    "images": 6,
+    "targets": 7,
+    "enriched": 7,
+    "fetched": 7,
+    "images": 7,
     "fetch_failures": 0
   },
   "enriched": [
@@ -64,6 +64,16 @@
       "source_label": "Visit Saudi Summer Calendar PDF",
       "source_method": "official-page-meta",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-buraydah-dates-carnival",
+      "title": "Buraydah Dates Carnival",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/qassim/events/buraydah-dates-carnival",
       "fetched": true,
       "image": true,
       "fetch_reason": ""

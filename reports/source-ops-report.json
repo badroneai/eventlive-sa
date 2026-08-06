@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T12:00:24.361Z",
+  "generated_at": "2026-08-06T14:59:53.838Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-08-06T11:50:06.393Z",
+    "collected_at": "2026-08-06T14:47:40.351Z",
     "freshness": "fresh",
-    "discovered": 317,
-    "written": 606
+    "discovered": 323,
+    "written": 605
   },
   "sources": {
     "total": 88,
-    "attempted": 21,
-    "due": 21,
-    "deferred": 27,
+    "attempted": 24,
+    "due": 24,
+    "deferred": 24,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 24,
+    "registry_collection_coverage_pct": 27,
     "scheduled_runnable_coverage_pct": 100,
     "healthy": 21,
-    "zero_yield": 0,
-    "errors": 0,
-    "cadence_deferred": 27,
+    "zero_yield": 2,
+    "errors": 1,
+    "cadence_deferred": 24,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -320,8 +320,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 79,
-        "candidates": 79,
+        "extracted": 78,
+        "candidates": 78,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -436,13 +436,13 @@
         "id": "saudi-space-agency-events",
         "name": "Saudi Space Agency Events",
         "priority": 32,
-        "status": "healthy",
+        "status": "collection-error",
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 1,
+        "extracted": 0,
         "candidates": 1,
-        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
+        "next_action": "fetch failed"
       },
       {
         "id": "cst-events-news",
@@ -637,16 +637,13 @@
         "id": "sfda-events",
         "name": "Saudi Food and Drug Authority Events",
         "priority": 48,
-        "status": "deferred",
-        "historical_status": "collector-error",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-06T14:45:39.495Z",
-        "error_streak": 1,
+        "status": "healthy",
+        "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-06T08:45:39.495Z",
-        "extracted": 0,
+        "last_attempted_at": null,
+        "extracted": 8,
         "candidates": 8,
-        "next_action": "مؤجل حتى 2026-08-06T14:45:39.495Z وفق الجدولة التكيفية."
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "saudi-contractors-authority-events",
@@ -676,16 +673,13 @@
         "id": "riyadh-city-events",
         "name": "Riyadh City Events",
         "priority": 51,
-        "status": "deferred",
-        "historical_status": "probe-blocked",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-06T14:45:39.495Z",
+        "status": "zero-yield",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-06T08:45:39.495Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 76,
-        "next_action": "مؤجل حتى 2026-08-06T14:45:39.495Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "monshaat-academy-programs",
@@ -790,16 +784,13 @@
         "id": "qassim-chamber-events",
         "name": "Qassim Chamber Events",
         "priority": 60,
-        "status": "deferred",
-        "historical_status": "zero-yield",
-        "cadence_reason": "zero-yield-cooldown",
-        "next_due_at": "2026-08-06T14:45:39.495Z",
+        "status": "zero-yield",
         "error_streak": 0,
-        "zero_yield_streak": 1,
-        "last_attempted_at": "2026-08-06T08:45:39.495Z",
+        "zero_yield_streak": 0,
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 0,
-        "next_action": "مؤجل حتى 2026-08-06T14:45:39.495Z وفق الجدولة التكيفية."
+        "next_action": "Recovered via live-browser-recovery official evidence. Primary page failed: HTTP 403. No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "abha-chamber-events",
@@ -1173,28 +1164,28 @@
     ]
   },
   "queue": {
-    "total": 606,
+    "total": 605,
     "ready_for_review": 8,
     "approved_for_catalog": 0,
-    "published_from_candidates": 572,
+    "published_from_candidates": 571,
     "actionable": 8,
     "stale_unpublished": 0,
     "duplicate_risk": 6,
     "needs_extraction": 0,
     "needs_evidence": 26,
     "by_review_status": {
-      "approved-for-catalog": 572,
+      "approved-for-catalog": 571,
       "ready-for-review": 8,
       "evidence-captured": 18,
       "new": 8
     },
     "by_publication_gate": {
-      "catalog-review": 572,
+      "catalog-review": 571,
       "duplicate-review": 8,
       "source-evidence": 26
     },
     "by_confidence": {
-      "official": 566,
+      "official": 565,
       "public-listing": 21,
       "verified-secondary": 11,
       "unverified": 8
@@ -1220,7 +1211,7 @@
       "Umm Al-Qura University Events Center": 50,
       "Monsha'at All Events": 2,
       "Future Skills MCIT Catalogue": 7,
-      "Ithra Events": 79,
+      "Ithra Events": 78,
       "MDLBEAST Events": 5,
       "Saudi Food and Drug Authority Events": 8,
       "Dhahran Expo Calendar": 17,
@@ -1345,7 +1336,7 @@
         "discovery_notes": "",
         "duplicate_risk": true,
         "matched_catalog_event_id": "event-in-act-act-x",
-        "days_to_start": 65,
+        "days_to_start": 64,
         "is_past": false,
         "is_actionable": true,
         "action": "راجع التكرار مع الكتالوج قبل أي اعتماد.",
@@ -1459,7 +1450,7 @@
         "discovery_notes": "",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 25,
+        "days_to_start": 24,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",
@@ -1836,7 +1827,7 @@
         "discovery_notes": "",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 25,
+        "days_to_start": 24,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",

@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-06T11:57:13.499Z
+- published_at: 2026-08-06T14:56:32.231Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 606
-- published_new: 9
-- linked_existing: 559
+- candidates_seen: 605
+- published_new: 6
+- linked_existing: 561
 - blocked_remaining: 38
 - duplicate_review_alerts: 8
 
@@ -29,9 +29,6 @@
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
-| candidate-future-skills-catalog-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال-20260816-6070e1ef | published | event-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال | ⁠Virtualization & Cloud Infrastructure Basics - الافتراضية والبنية التحتية السحابية |
-| candidate-future-skills-catalog-sql-fundamentals-20260816-971d8196 | published | event-sql-fundamentals | ⁠SQL Fundamentals |
-| candidate-future-skills-catalog-comptia-it-fundamentals-20260816-ffccc14e | published | event-comptia-it-fundamentals | CompTIA IT Fundamentals |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -100,7 +97,7 @@
 | candidate-discover-aseer-events-qusoor-al-asabila-20260625-98028029 | linked-existing | event-qusoor-al-asabila | already linked to catalog event |
 | candidate-discover-aseer-events-asib-oasis-20260625-5ce3ff56 | linked-existing | event-asib-oasis | already linked to catalog event |
 | candidate-discover-aseer-events-qusoor-abu-sarah-20260625-2064be4b | linked-existing | event-qusoor-abu-sarah | already linked to catalog event |
-| candidate-discover-aseer-events-the-rural-village-art-street-20260625-ecae7242 | linked-existing | event-rural-village-art-street | already linked to catalog event |
+| candidate-discover-aseer-events-the-rural-village-art-street-20260625-ecae7242 | linked-existing | event-europe-village-art-street | trusted duplicate linked to existing catalog event |
 | candidate-riyadh-city-events-summer-camp-at-the-national-museum-summer-wonders-20260625-c48f8f0f | linked-existing | event-summer-camp-at-the-national-museum-summer-wonders | already linked to catalog event |
 | candidate-visit-saudi-seasons-europe-village-art-street-20260625-175f652b | linked-existing | event-europe-village-art-street | already linked to catalog event |
 | candidate-discover-aseer-events-world-cup-fan-zone-2026-20260626-2a3cab19 | linked-existing | event-منطقة-مشجعي-كأس-العالم-2026 | already linked to catalog event |
@@ -214,24 +211,23 @@
 | candidate-ithra-events-ithra-summer-camp-2026-a-world-of-homes-20260806-f563a36e | linked-existing | event-ithra-summer-camp-2026-a-world-of-homes | already linked to catalog event |
 | candidate-ithra-events-printing-house-20260806-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
 | candidate-ithra-events-tafasahu-make-room-20260806-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
-| candidate-ithra-events-summer-youth-program-20260806-a20f7a11 | linked-existing | event-summer-youth-program | already linked to catalog event |
 | candidate-ithra-events-tinkering-stations-20260806-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
-| candidate-ithra-events-childrens-art-studio-20260806-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
 | candidate-ithra-events-little-explorers-20260806-1cc1993f | linked-existing | event-little-explorers | already linked to catalog event |
 | candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260806-ef7080ff | linked-existing | event-trivia-night-earth-quest-tic-tac-know | already linked to catalog event |
 | candidate-ithra-events-energy-lab-20260806-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
+| candidate-ithra-events-childrens-art-studio-20260806-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
 | candidate-ithra-events-games-hub-20260806-fb83124c | linked-existing | event-games-hub | already linked to catalog event |
 | candidate-ithra-events-the-perfect-guide-to-event-management-20260806-9e165fb1 | linked-existing | event-the-almost-perfect-guide-to-event-management | already linked to catalog event |
 | candidate-ithra-events-swim-r-mission-20260806-f8a6c05c | linked-existing | event-swim-r-mission | already linked to catalog event |
-| candidate-ithra-events-the-moral-of-the-story-20260806-bfa3f2a8 | linked-existing | event-the-moral-of-the-story | already linked to catalog event |
 | candidate-umm-al-qura-events-التشكيل-الحر-20260806-8ec06f59 | linked-existing | event-التشكيل-الحر | already linked to catalog event |
-| candidate-ithra-events-spot-of-inspiration-20260806-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
-| candidate-ithra-events-childrens-museum-story-time-20260806-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-family-challenges-20260806-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
 | candidate-ithra-events-emboss-printing-experience-20260806-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-ithra-events-grand-art-space-20260806-e3acefbb | linked-existing | event-grand-art-space | already linked to catalog event |
+| candidate-ithra-events-the-moral-of-the-story-20260806-bfa3f2a8 | linked-existing | event-the-moral-of-the-story | already linked to catalog event |
 | candidate-ithra-events-museum-story-time-20260806-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-tangram-20260806-9a9db6cb | linked-existing | event-tangram | already linked to catalog event |
+| candidate-ithra-events-spot-of-inspiration-20260806-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
+| candidate-ithra-events-childrens-museum-story-time-20260806-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-حسين-محب-ايف-في-الرياض-20260807-4a38d19e | linked-existing | event-hussain-moheb-live-in-riyadh | already linked to catalog event |
 | candidate-mdlbeast-events-unstable-20260807-5647df2e | linked-existing | event-unstable | already linked to catalog event |
 | candidate-discover-aseer-events-musical-concerts-20260807-169733ac | linked-existing | event-musical-concerts | already linked to catalog event |
@@ -286,6 +282,9 @@
 | candidate-hayy-jameel-events-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office-20260814-c4521792 | linked-existing | event-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office | already linked to catalog event |
 | candidate-ithra-events-petals-and-pals-english-20260815-2b82ff28 | linked-existing | event-petals-and-pals-english | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-makers-woodworking-course-level-1-with-ahmad-sofi-20260815-2ba216a5 | linked-existing | event-hayy-makers-woodworking-course-level-1-with-ahmad-sofi | already linked to catalog event |
+| candidate-future-skills-catalog-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال-20260816-6070e1ef | linked-existing | event-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال | already linked to catalog event |
+| candidate-future-skills-catalog-sql-fundamentals-20260816-971d8196 | linked-existing | event-sql-fundamentals | already linked to catalog event |
+| candidate-future-skills-catalog-comptia-it-fundamentals-20260816-ffccc14e | linked-existing | event-comptia-it-fundamentals | already linked to catalog event |
 | candidate-umm-al-qura-events-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem-20260816-84787696 | linked-existing | event-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-أساسيات-هندسة-الميكاترونكس-20260816-54c2e27f | linked-existing | event-معسكر-أساسيات-هندسة-الميكاترونكس | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-الأنظمة-الذاتية-للدرونز-20260816-5d8feea2 | linked-existing | event-معسكر-الأنظمة-الذاتية-للدرونز | already linked to catalog event |

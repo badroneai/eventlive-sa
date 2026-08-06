@@ -1,12 +1,12 @@
 {
   "schema": "eventlive.eye-official-link-verification.v1",
-  "generated_at": "2026-08-06T11:57:06.514Z",
+  "generated_at": "2026-08-06T14:56:17.724Z",
   "dry_run": false,
   "totals": {
     "targets": 12,
-    "confirmed": 5,
+    "confirmed": 4,
     "skipped": 1,
-    "failed": 6
+    "failed": 7
   },
   "rows": [
     {
@@ -104,29 +104,8 @@
     {
       "candidate_id": "candidate-eye-of-riyadh-events-cips-mena-procurement-and-supply-chain-futures-conference-and-awards-20261028-18fb7207",
       "title": "CIPS MENA Procurement and Supply Chain Futures conference and awards",
-      "status": "confirmed",
-      "official_url": "https://www.cipsmenaconferenceandawards.com/",
-      "official_image_url": "https://static.wixstatic.com/media/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png/v1/fit/w_2500,h_1330,al_c/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png",
-      "organizer": "Eye of Riyadh",
-      "confirmed": true,
-      "reason": "confirmed",
-      "title_tokens": [
-        "cips",
-        "mena",
-        "procurement",
-        "supply",
-        "chain",
-        "futures"
-      ],
-      "matched_title_tokens": [
-        "cips",
-        "mena",
-        "procurement",
-        "supply",
-        "chain"
-      ],
-      "year_confirmed": true,
-      "month_confirmed": true
+      "status": "failed",
+      "reason": "terminated"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-future-forum-20270125-d058344d",

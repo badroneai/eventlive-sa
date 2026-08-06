@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-06T11:57:13.499Z",
+  "published_at": "2026-08-06T14:56:32.231Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 606,
+  "candidates_seen": 605,
   "totals": {
-    "candidates_seen": 606,
-    "published": 9,
-    "linked_existing": 559,
+    "candidates_seen": 605,
+    "published": 6,
+    "linked_existing": 561,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 568
+    "reconciled": 567
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -193,21 +193,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
-    },
-    {
-      "candidate_id": "candidate-future-skills-catalog-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال-20260816-6070e1ef",
-      "event_id": "event-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال",
-      "title": "⁠Virtualization & Cloud Infrastructure Basics - الافتراضية والبنية التحتية السحابية"
-    },
-    {
-      "candidate_id": "candidate-future-skills-catalog-sql-fundamentals-20260816-971d8196",
-      "event_id": "event-sql-fundamentals",
-      "title": "⁠SQL Fundamentals"
-    },
-    {
-      "candidate_id": "candidate-future-skills-catalog-comptia-it-fundamentals-20260816-ffccc14e",
-      "event_id": "event-comptia-it-fundamentals",
-      "title": "CompTIA IT Fundamentals"
     }
   ],
   "linked_existing": [
@@ -621,9 +606,9 @@
     },
     {
       "candidate_id": "candidate-discover-aseer-events-the-rural-village-art-street-20260625-ecae7242",
-      "event_id": "event-rural-village-art-street",
+      "event_id": "event-europe-village-art-street",
       "title": "The Rural Village- Art Street",
-      "reason": "already linked to catalog event"
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-riyadh-city-events-summer-camp-at-the-national-museum-summer-wonders-20260625-c48f8f0f",
@@ -1304,21 +1289,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-summer-youth-program-20260806-a20f7a11",
-      "event_id": "event-summer-youth-program",
-      "title": "Summer Youth Program",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-tinkering-stations-20260806-5a2c4c0e",
       "event_id": "event-tinkering-stations",
       "title": "Tinkering Stations",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260806-2bf92d17",
-      "event_id": "event-childrens-art-studio",
-      "title": "Children's Art Studio",
       "reason": "already linked to catalog event"
     },
     {
@@ -1340,6 +1313,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260806-2bf92d17",
+      "event_id": "event-childrens-art-studio",
+      "title": "Children's Art Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-games-hub-20260806-fb83124c",
       "event_id": "event-games-hub",
       "title": "Games Hub",
@@ -1358,27 +1337,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-the-moral-of-the-story-20260806-bfa3f2a8",
-      "event_id": "event-the-moral-of-the-story",
-      "title": "The Moral of the Story",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-التشكيل-الحر-20260806-8ec06f59",
       "event_id": "event-التشكيل-الحر",
       "title": "التشكيل الحر",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260806-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260806-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -1400,6 +1361,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-the-moral-of-the-story-20260806-bfa3f2a8",
+      "event_id": "event-the-moral-of-the-story",
+      "title": "The Moral of the Story",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-museum-story-time-20260806-1104734c",
       "event_id": "event-museum-story-time",
       "title": "Museum Story Time",
@@ -1409,6 +1376,18 @@
       "candidate_id": "candidate-ithra-events-tangram-20260806-9a9db6cb",
       "event_id": "event-tangram",
       "title": "Tangram",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260806-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260806-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -1733,6 +1712,24 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-makers-woodworking-course-level-1-with-ahmad-sofi-20260815-2ba216a5",
       "event_id": "event-hayy-makers-woodworking-course-level-1-with-ahmad-sofi",
       "title": "Hayy Makers | Woodworking Course (Level 1) with Ahmad Sofi",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال-20260816-6070e1ef",
+      "event_id": "event-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال",
+      "title": "⁠Virtualization & Cloud Infrastructure Basics - الافتراضية والبنية التحتية السحابية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-sql-fundamentals-20260816-971d8196",
+      "event_id": "event-sql-fundamentals",
+      "title": "⁠SQL Fundamentals",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-comptia-it-fundamentals-20260816-ffccc14e",
+      "event_id": "event-comptia-it-fundamentals",
+      "title": "CompTIA IT Fundamentals",
       "reason": "already linked to catalog event"
     },
     {
