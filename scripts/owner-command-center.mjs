@@ -385,12 +385,12 @@ function buildHarvestStatus(state) {
 }
 
 function buildAnalyticsStatus() {
-  const provider = process.env.EVENTLIVE_ANALYTICS_PROVIDER || 'plausible';
+  const provider = process.env.EVENTLIVE_ANALYTICS_PROVIDER || 'umami';
   const domain = process.env.EVENTLIVE_ANALYTICS_DOMAIN || 'eventme.live';
-  const dashboardUrl = process.env.EVENTLIVE_ANALYTICS_DASHBOARD_URL || `https://plausible.io/${domain}`;
+  const dashboardUrl = process.env.EVENTLIVE_ANALYTICS_DASHBOARD_URL || 'https://umami-ten-orpin.vercel.app';
   const dashboardConfirmed = process.env.EVENTLIVE_ANALYTICS_CONFIRMED === 'true';
   const dashboardStatus = dashboardConfirmed ? 'CONFIRMED' : 'NEEDS_PROVIDER_SETUP';
-  const dashboardLoginUrl = `https://plausible.io/login?return_to=%2F${encodeURIComponent(domain)}`;
+  const dashboardLoginUrl = 'https://umami-ten-orpin.vercel.app/login';
   const trackedEvents = [
     'page_view',
     'search_used',
@@ -479,7 +479,7 @@ function buildCommandCenter(state, readiness, design, harvest, analytics) {
   const standardStatus = state.deliveryStandard?.release_verdict === 'READY_WITH_RESERVED_ITEMS' ? 'PASS' : state.deliveryStandard ? 'PARTIAL' : 'NOT_STARTED';
   const nationalCoverage = state.regionsCoverage?.national_coverage || {};
   const decisions = [
-    ['analytics_provider', 'اختيار/تفعيل حساب Analytics فعلي', analytics.provider === 'plausible' ? 'Plausible مبدئيا' : analytics.provider],
+    ['analytics_provider', 'اختيار/تفعيل حساب Analytics فعلي', analytics.provider === 'umami' ? 'Umami ذاتي الاستضافة (قرار 2026-08-06)' : analytics.provider],
     ['eventlive_domain', 'حسم شراء نطاق EventLive إضافي لاحقا', 'الدومين الحالي المعتمد eventme.live'],
     ['owner_pages_policy', 'اعتماد سياسة صفحات المالك المخفية', 'مخفية من التنقل العام وتبقى noindex عند تحويلها HTML'],
     ['organizers_product', 'متى تفتح صفحة المنظمين كمنتج تجاري', 'تحتاج قرار منتجي لاحق']
