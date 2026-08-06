@@ -1,0 +1,76 @@
+{
+  "schema": "eventlive.source-reachability-probe.v1",
+  "generated_at": "2026-08-05T09:56:56.738Z",
+  "environment": "local",
+  "timeout_ms": 20000,
+  "extractor_dry_run": {
+    "source_id": "qassim-chamber-events",
+    "target": "https://tc.qcc.org.sa/",
+    "http": {
+      "status": 200,
+      "bytes": 12057,
+      "items": 3,
+      "error": null
+    },
+    "browser": {
+      "bytes": 12297,
+      "items": 3,
+      "challenge_page": true,
+      "error": null
+    }
+  },
+  "results": [
+    {
+      "url": "https://tc.qcc.org.sa/",
+      "host": "tc.qcc.org.sa",
+      "dns": {
+        "a": [
+          "172.67.172.186",
+          "104.21.30.99"
+        ],
+        "aaaa": [
+          "2606:4700:3033::ac43:acba",
+          "2606:4700:3037::6815:1e63"
+        ]
+      },
+      "strategies": {
+        "tcp:443 (ipv4)": {
+          "ok": true,
+          "detail": "12ms"
+        },
+        "tcp:443 (ipv6)": {
+          "ok": false,
+          "detail": "EHOSTUNREACH"
+        },
+        "fetch: bare": {
+          "ok": true,
+          "detail": "HTTP 200 · 11698b · 1659ms"
+        },
+        "fetch: browser headers": {
+          "ok": true,
+          "detail": "HTTP 200 · 12057b · 565ms"
+        },
+        "fetch: ipv4-only + headers": {
+          "ok": true,
+          "detail": "HTTP 200 · 12057b · 1243ms"
+        },
+        "fetch: relaxed TLS + headers": {
+          "ok": true,
+          "detail": "HTTP 200 · 12057b · 1252ms"
+        },
+        "curl: default": {
+          "ok": true,
+          "detail": "HTTP 200 · 745ms"
+        },
+        "curl: ipv4 + UA": {
+          "ok": true,
+          "detail": "HTTP 200 · 737ms"
+        },
+        "browser: chromium": {
+          "ok": true,
+          "detail": "HTTP 200 · 12297b · 2030ms"
+        }
+      }
+    }
+  ]
+}

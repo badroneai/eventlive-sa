@@ -1,14 +1,14 @@
 # EventLive Validation Report
-- Source: workspaces/_csv-parser-regression/current-program.json
+- Source: data/demo_program.json
 - Catalog source: data/events_catalog.json
 - Source candidates: data/source_candidates.json
 - Source registry: data/source_registry.json
-- Program title: ملتقى اختبار CSV
-- Organizer: EventLive QA
-- Total sessions: 3
-- Catalog events: 374
-- Source candidates total: 406
-- Source registry total: 85
+- Program title: ملتقى التحول الرقمي في القطاع الحكومي 2026
+- Organizer: مؤسسة سميرة محمد السلمان للاتصالات وتقنية المعلومات
+- Total sessions: 5
+- Catalog events: 727
+- Source candidates total: 606
+- Source registry total: 88
 - Total errors: 0
 - Total warnings: 0
 

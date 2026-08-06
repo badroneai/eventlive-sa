@@ -68,5 +68,28 @@ jobs:
       - name: Build EventLive public site
         run: npm run build
 
+      # Runs AFTER the build: in source-sync.yml this block executes
+      # mid-pipeline (post-collect), against a dist consistent with the live
+      # catalog — a fresh PR build reproduces that consistency for every
+      # CODE gate. The few gates that validate collector-produced STATE
+      # (fetched image sets) cannot exist in PR context at all and are
+      # excluded via the explicit, reason-documented list inside the
+      # extractor script. Both wrong placements were proven by CI runs on
+      # PR #90: pre-build fails catalog-vs-committed-dist drift
+      # (31097…, tuwaiq), post-build without exclusions fails on
+      # collector-fetched images (31095104363, event-image existence).
+      - name: Sync-blocking regression gates (extracted verbatim from source-sync.yml)
+        run: node scripts/run-sync-blocking-regression-gates.mjs
+
       - name: Publish quality gates battery (shared with deploy.yml/source-sync.yml — see package.json ci:publish-quality-gates)
         run: npm run ci:publish-quality-gates
+
+      # Orphan-gate class ban (2026-08-06, third incident: ~22h publishing
+      # outage from a blocking gate no PR check could reach). This battery and
+      # the pre-build regression step above previously executed ONLY inside
+      # source-sync.yml, so a PR could merge green and still freeze the
+      # publish path. The regression list is extracted verbatim from
+      # source-sync.yml at run time — parity by construction, not bookkeeping.
+      # Site gates run here, post-build, matching their position in sync.
+      - name: Site gates CI battery (same blocking battery source-sync.yml runs)
+        run: npm run ci:site-gates
