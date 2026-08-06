@@ -21,6 +21,7 @@ for (const page of publicPages) {
   const umamiTagCount = (html.match(/umami-ten-orpin\.vercel\.app\/script\.js/g) || []).length;
   assert(umamiTagCount === 1, `${page} must carry exactly ONE Umami script tag, found ${umamiTagCount} — incremental rebuilds must replace the tag, not stack copies (13 stacked Plausible tags shipped this way)`);
   assert(/data-website-id="f68b920a-155f-4134-a7b1-88bbede979df"/.test(html), `${page} missing Umami website id`);
+  assert(/data-domains="eventme\.live"/.test(html), `${page} missing data-domains guard — without it CI browser gates register as phantom visitors`);
   assert(!/plausible\.io\/js/.test(html), `${page} still carries a legacy Plausible script tag`);
   assert(/id="eventlive-analytics-runtime"/.test(html), `${page} missing EventLive analytics runtime`);
   assert(/window\.eventLiveTrack/.test(html), `${page} missing tracker function`);
