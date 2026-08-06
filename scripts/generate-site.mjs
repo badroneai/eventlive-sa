@@ -1330,8 +1330,13 @@ function analyticsHeadSnippet() {
   // Plausible 2026-08-06 when its trial ended. Cookie-less, ~2KB, and the
   // eventlive-analytics-runtime below is provider-agnostic (it already probes
   // window.umami), so custom events flow unchanged.
+  // data-domains pins tracking to the real production hostname: without it,
+  // every CI browser gate (Playwright loading built pages) registered as a
+  // "visitor" — phantom Chicago/San Jose sessions appeared in the dashboard
+  // within minutes of the first PR build. Local previews are excluded the
+  // same way.
   return `<!-- Privacy-friendly analytics by self-hosted Umami -->
-<script defer src="https://umami-ten-orpin.vercel.app/script.js" data-website-id="f68b920a-155f-4134-a7b1-88bbede979df"></script>`;
+<script defer src="https://umami-ten-orpin.vercel.app/script.js" data-website-id="f68b920a-155f-4134-a7b1-88bbede979df" data-domains="eventme.live"></script>`;
 }
 
 function analyticsRuntimeScript() {
