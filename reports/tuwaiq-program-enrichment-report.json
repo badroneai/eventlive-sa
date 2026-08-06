@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T11:10:10.425Z",
+  "generated_at": "2026-08-06T08:59:12.951Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 36,
@@ -120,14 +120,6 @@
       "requirements": 8
     },
     {
-      "id": "event-دبلوم-الأمن-السيبراني-المتقدم",
-      "title": "دبلوم الأمن السيبراني المتقدم",
-      "slug": "VPwN7D0G",
-      "goals": 8,
-      "features": 8,
-      "requirements": 7
-    },
-    {
       "id": "event-معسكر-أساسيات-الأمن-السيبراني",
       "title": "معسكر أساسيات الأمن السيبراني",
       "slug": "6VRQ2LNZ",
@@ -142,6 +134,14 @@
       "goals": 7,
       "features": 6,
       "requirements": 12
+    },
+    {
+      "id": "event-دبلوم-الأمن-السيبراني-المتقدم",
+      "title": "دبلوم الأمن السيبراني المتقدم",
+      "slug": "VPwN7D0G",
+      "goals": 8,
+      "features": 8,
+      "requirements": 7
     },
     {
       "id": "event-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc",

@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-08-05T11:12:25.944Z
+Generated at: 2026-08-06T09:02:18.663Z
 
 ## Operating Rule
 
@@ -9,12 +9,12 @@ Raw collection is not publication. Every source run preserves evidence, separate
 ## Totals
 
 - Sources: 88
-- Attempted this run: 21
-- Deferred by adaptive cadence: 27
-- Productive: 20
-- Zero-yield: 0
-- Collector errors: 0
-- Persistent collector errors: 5
+- Attempted this run: 34
+- Deferred by adaptive cadence: 14
+- Productive: 22
+- Zero-yield: 5
+- Collector errors: 4
+- Persistent collector errors: 4
 - Probe blocked: 1
 - Auto-publish eligible source lanes: 12
 
@@ -28,11 +28,10 @@ Call log:
   - navigating to "https://www.mos.gov.sa/en/media/events", waiting until "domcontentloaded"
  |
 | moc-cultural-subportals | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: fetch failed; fetch failed |
-| asharqia-chamber-events | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: fetch failed; page.goto: Timeout 30000ms exceeded.
+| sfda-events | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: fetch failed; page.goto: Timeout 30000ms exceeded.
 Call log:
-  - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentloaded"
+  - navigating to "https://www.sfda.gov.sa/", waiting until "domcontentloaded"
  |
-| qassim-chamber-events | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: HTTP 403; browser recovery encountered an access-protection page |
 | riyadh-season | probe-blocked | 0 | probe_before_collector | Do not bypass protection; keep as blocked/partnership candidate: bot-protection |
 | saudi-digital-academy | probe-blocked | 0 | probe_before_collector | Do not bypass protection; keep as blocked/partnership candidate: fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed |
 | enjoy-saudi-events | probe-blocked | 0 | probe_before_collector | Do not bypass protection; keep as blocked/partnership candidate: http-403 |
@@ -48,6 +47,7 @@ Call log:
 | jcci-events-center | zero-yield | 74 | raw_harvest_to_candidate_queue | Zero-yield for 74 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | saudi-pro-league-fixtures | zero-yield | 74 | raw_harvest_to_candidate_queue | Zero-yield for 74 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | makkah-chamber-events | zero-yield | 68 | raw_harvest_to_candidate_queue | Zero-yield for 68 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| abha-chamber-events | zero-yield | 68 | raw_harvest_to_candidate_queue | Zero-yield for 68 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 
 ## Full Source State
 
@@ -87,7 +87,7 @@ Call log:
 | 29 | jcci-events-center | active-collector | zero-yield | 0 | no | Zero-yield for 74 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 30 | saudi-pro-league-fixtures | active-collector | zero-yield | 0 | no | Zero-yield for 74 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 31 | neom-newsroom-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
-| 32 | saudi-space-agency-events | active-collector | zero-yield | 0 | no | Zero-yield for 38 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 32 | saudi-space-agency-events | active-collector | productive | 1 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 33 | cst-events-news | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 34 | visit-saudi-calendar-pdf | venue-dedupe | productive | 62 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 35 | qiddiya-events | evidence-monitor | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: http-403 |
@@ -103,7 +103,10 @@ Call log:
 | 45 | saudi-university-events | evidence-monitor | productive | 6 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 46 | expofp-eventseye-saudi | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
 | 47 | meetup-facebook-saudi-events | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
-| 48 | sfda-events | active-collector | productive | 9 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 48 | sfda-events | active-collector | collector-error | 0 | no | Fix collector error: fetch failed; page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.sfda.gov.sa/", waiting until "domcontentloaded"
+ |
 | 49 | saudi-contractors-authority-events | extractor-backlog | not-attempted | 0 | no | Probe HTML/API shape, then decide whether an extractor is worth adding. |
 | 50 | saudi-winter-calendar-spa | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 51 | riyadh-city-events | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed |
@@ -114,36 +117,33 @@ Call log:
 | 56 | scega-exhibitions-conferences | active-collector | productive | 4 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 57 | ministry-commerce-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 58 | evento-sa-events | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
-| 59 | asharqia-chamber-events | active-collector | collector-error | 0 | no | Fix collector error: fetch failed; page.goto: Timeout 30000ms exceeded.
-Call log:
-  - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentloaded"
- |
-| 60 | qassim-chamber-events | active-collector | collector-error | 0 | no | Fix collector error: HTTP 403; browser recovery encountered an access-protection page |
+| 59 | asharqia-chamber-events | active-collector | productive | 3 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 60 | qassim-chamber-events | active-collector | zero-yield | 0 | no | collector-error: HTTP 403 |
 | 61 | abha-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 68 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 62 | baha-amanah-events | extractor-backlog | not-attempted | 0 | no | Probe HTML/API shape, then decide whether an extractor is worth adding. |
 | 63 | baha-chamber-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 64 | jouf-chamber-events | extractor-backlog | not-attempted | 0 | no | Latest deep probe recommends build-html-detail-extractor; build only if future date-complete rows are visible. |
 | 65 | northern-borders-chamber-events | extractor-backlog | zero-yield | 0 | no | Zero-yield for 12 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
-| 66 | tabuk-chamber-events | extractor-backlog | zero-yield | 0 | no | Zero-yield for 31 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
-| 67 | jazan-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 13 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 66 | tabuk-chamber-events | extractor-backlog | zero-yield | 0 | no | Zero-yield for 32 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 67 | jazan-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 14 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 68 | hail-chamber-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 69 | najran-chamber-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 70 | platinumlist-riyadh | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
-| 71 | najran-municipality-summer-events | venue-dedupe | zero-yield | 0 | no | Zero-yield for 10 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 71 | najran-municipality-summer-events | venue-dedupe | zero-yield | 0 | no | Zero-yield for 11 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 72 | platinumlist-saudi-city-network | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
 | 73 | my-gov-sa-events | partnership | partnership | 0 | no | Partnership/API lane; do not scrape protected or app-only data. |
 | 74 | middle-east-banking-ai-summit | extractor-backlog | not-attempted | 0 | no | Probe HTML/API shape, then decide whether an extractor is worth adding. |
 | 75 | middle-east-enterprise-ai-summit | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: bot-protection |
-| 76 | umm-al-qura-events | active-collector | productive | 10 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 76 | umm-al-qura-events | active-collector | productive | 9 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 77 | leap-official-agendas | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: http-403 |
 | 78 | fii10-official-program | extractor-backlog | not-attempted | 0 | no | Probe HTML/API shape, then decide whether an extractor is worth adding. |
 | 79 | cityscape-global-official-program | partnership | partnership | 0 | no | Partnership/API lane; do not scrape protected or app-only data. |
 | 80 | qassim-university-events | venue-dedupe | productive | 1 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 81 | jouf-university-programs | venue-dedupe | productive | 1 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 82 | money2020-middle-east-agendas | extractor-backlog | not-attempted | 0 | no | Latest deep probe recommends build-jsonld-event-extractor; build only if future date-complete rows are visible. |
-| 83 | madinah-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 19 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 83 | madinah-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 20 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 84 | madinah-architecture-festival | active-collector | productive | 1 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
-| 85 | hayy-jameel-events | active-collector | productive | 65 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 85 | hayy-jameel-events | active-collector | productive | 66 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 86 | informa-connect-saudi-events | venue-dedupe | productive | 6 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 87 | kau-events | venue-dedupe | productive | 4 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 88 | saudicon-events | discovery-only | productive | 15 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |

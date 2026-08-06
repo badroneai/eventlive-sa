@@ -1,18 +1,37 @@
 {
-  "generated_at": "2026-08-05T11:12:25.096Z",
+  "generated_at": "2026-08-06T09:01:42.492Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 788,
-    "fetched": 0,
-    "reused": 497,
+    "cached_total": 791,
+    "fetched": 3,
+    "reused": 494,
     "failed": 3,
-    "skipped_recent_failures": 3,
+    "skipped_recent_failures": 0,
     "remembered_failures": 6
   },
-  "fetched": [],
+  "fetched": [
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/202608_TOTT_Banner-01-1100x500.png",
+      "file": "dist/assets/event-images/jameel-library-the-task-of-the-translator-research-lab-a1b759fb11.png",
+      "bytes": 53353,
+      "events": 1
+    },
+    {
+      "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
+      "file": "dist/assets/event-images/space-debris-conference-2028-ed926e1bba.webp",
+      "bytes": 17480,
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/73981ad8c56588325a6fae85d27ab60b.png",
+      "file": "dist/assets/event-images/manal-mohei-eldin-and-oriental-strokes-d762e2f490.png",
+      "bytes": 477626,
+      "events": 1
+    }
+  ],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -382,11 +401,6 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/Screenshot%202025-05-02%20110732.png?itok=Dh5mqTSv",
       "file": "dist/assets/event-images/esports-world-cup-82c085857f.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.najran.gov.sa/FTPImages/32104c6d-c4d3-4403-8f0b-c4193be13817-1448012122252680.png",
-      "file": "dist/assets/event-images/مهرجان-صيف-نجران-2026-صيفنا-هايل-81fad8f140.png",
       "events": 1
     },
     {
@@ -2430,6 +2444,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.najran.gov.sa/FTPImages/32104c6d-c4d3-4403-8f0b-c4193be13817-1448012122252680.png",
+      "file": "dist/assets/event-images/مهرجان-صيف-نجران-2026-صيفنا-هايل-81fad8f140.png",
+      "events": 1
+    },
+    {
       "source_url": "https://tc.qcc.org.sa/storage/260/6a4649f72c2c4_%D8%A7%D9%95%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B1%D8%AF-%D8%A7%D9%84%D8%A8%D8%B4%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%86.jpg",
       "file": "dist/assets/event-images/عمليات-إدارة-الموارد-البشرية-44fab3c9d8.jpg",
       "events": 1
@@ -2483,77 +2502,37 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b51e0cf777e8932c6a96587bf272ac38.jpg",
       "file": "dist/assets/event-images/journey-film-group-3-9febeadde4.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ebd009e4f4dbefb1de3e9ee4546f625a.jpg",
-      "file": "dist/assets/event-images/sa3oud-wainah-96aaddef99.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c8dbd06910da7730a9a477501de4df71.jpg",
-      "file": "dist/assets/event-images/book-signing-sessions-1-f02020009b.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/729cf79cc190dce7b56c51d33b502b3a.jpg",
-      "file": "dist/assets/event-images/low-budget-films-opportunity-artistic-choice-or-a-phase-f80b6e67ef.jpg",
-      "events": 7
     }
   ],
   "rejected_removed": [],
   "missing_removed": [],
-  "skipped_recent_failures": [
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-06T04:09:41.890Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-06T04:09:41.890Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-06T04:09:41.890Z",
-      "skipped": true
-    }
-  ],
+  "skipped_recent_failures": [],
   "failed": [
     {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-08-07T09:01:42.492Z"
+    },
+    {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-08-06T04:09:41.890Z",
-      "skipped": true
+      "retry_after": "2026-08-07T09:01:42.492Z"
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-06T04:09:41.890Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-06T04:09:41.890Z",
-      "skipped": true
+      "retry_after": "2026-08-07T09:01:42.492Z"
     }
   ],
-  "requires_rebuild": false,
-  "rebuild_reasons": []
+  "requires_rebuild": true,
+  "rebuild_reasons": [
+    "fetched:3",
+    "new-failures:3"
+  ]
 }

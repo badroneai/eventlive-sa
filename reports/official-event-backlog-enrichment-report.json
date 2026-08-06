@@ -1,13 +1,43 @@
 {
-  "generated_at": "2026-08-05T11:11:23.691Z",
+  "generated_at": "2026-08-06T09:00:36.468Z",
   "totals": {
-    "targets": 6,
-    "enriched": 6,
-    "fetched": 6,
-    "images": 6,
+    "targets": 10,
+    "enriched": 10,
+    "fetched": 10,
+    "images": 10,
     "fetch_failures": 0
   },
   "enriched": [
+    {
+      "id": "event-jameel-library-the-task-of-the-translator-research-lab",
+      "title": "Jameel Library | The Task of the Translator Research Lab",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/jameel-library-the-task-of-the-translator-research-lab/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-manal-mohei-eldin-and-oriental-strokes",
+      "title": "Manal Mohei Eldin and Oriental Strokes",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/manal-mohei-eldin-and-oriental-strokes",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-space-debris-conference-2028",
+      "title": "Space Debris Conference 2028",
+      "source_label": "Saudi Space Agency Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://ssa.gov.sa/en/events/spacedebris2028/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
     {
       "id": "event-الأخطبوطية",
       "title": "الاخطبوطية",
@@ -64,6 +94,16 @@
       "source_label": "Visit Saudi Summer Calendar PDF",
       "source_method": "official-page-meta",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-international-cat-day-open-call",
+      "title": "Hayy Cinema | International Cat Day: Open Call",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-cinema-international-cat-day-open-call/",
       "fetched": true,
       "image": true,
       "fetch_reason": ""

@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-05T11:19:04.079Z",
+  "generated_at": "2026-08-06T09:09:13.121Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 606,
-    "matched_candidates": 574,
+    "candidates": 604,
+    "matched_candidates": 572,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 21,
-    "productive_sources": 20,
+    "collection_attempted": 34,
+    "productive_sources": 22,
     "collector_errors": 4,
-    "chronic_collector_errors": 4,
-    "transient_collector_errors": 0
+    "chronic_collector_errors": 3,
+    "transient_collector_errors": 1
   },
   "policies": {
     "partnership_required": 5,
@@ -25,19 +25,19 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 572,
+    "catalog-review": 570,
     "duplicate-review": 8,
     "source-evidence": 26
   },
   "funnel": {
-    "discovered_this_run": 320,
-    "candidate_queue": 606,
-    "evaluated_for_publish": 606,
-    "linked_existing": 562,
-    "published_new": 6,
+    "discovered_this_run": 330,
+    "candidate_queue": 604,
+    "evaluated_for_publish": 604,
+    "linked_existing": 557,
+    "published_new": 9,
     "blocked": 38,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 34
+    "secondary_still_blocked": 37
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 6,
@@ -54,30 +54,30 @@
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 17,
+      "error_streak": 18,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed",
-      "error_streak": 17,
+      "error_streak": 18,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 17,
+      "error_streak": 18,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
-      "id": "qassim-chamber-events",
-      "note": "collector-error: HTTP 403",
-      "error_streak": 17,
-      "kind": "chronic",
-      "attempted_this_run": false
+      "id": "sfda-events",
+      "note": "fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to \"https://www.sfda.gov.sa/\", waiting until \"domcontentloaded\" ",
+      "error_streak": 1,
+      "kind": "transient",
+      "attempted_this_run": true
     }
   ],
   "sources": [

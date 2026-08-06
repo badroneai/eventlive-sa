@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-05T11:19:04.079Z
+- Generated at: 2026-08-06T09:09:13.121Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 606
-- Matched candidates: 574
+- Candidates: 604
+- Matched candidates: 572
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 20/21
-- Collector errors: 4 (chronic 4, transient 0)
+- Productive sources / attempted: 22/34
+- Collector errors: 4 (chronic 3, transient 1)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 320 |
-| candidate_queue | 606 |
-| evaluated_for_publish | 606 |
-| linked_existing | 562 |
-| published_new | 6 |
+| discovered_this_run | 330 |
+| candidate_queue | 604 |
+| evaluated_for_publish | 604 |
+| linked_existing | 557 |
+| published_new | 9 |
 | blocked | 38 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 34 |
+| secondary_still_blocked | 37 |
 
 ## Blocked Reasons
 
@@ -46,10 +46,10 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 17 | no | collector-error: fetch failed; fetch failed |
-| mos-events | chronic | 17 | no | collector-error: fetch failed |
-| moc-cultural-subportals | chronic | 17 | no | collector-error: fetch failed; fetch failed |
-| qassim-chamber-events | chronic | 17 | no | collector-error: HTTP 403 |
+| moc-cultural-calendar | chronic | 18 | yes | collector-error: fetch failed; fetch failed |
+| mos-events | chronic | 18 | yes | collector-error: fetch failed |
+| moc-cultural-subportals | chronic | 18 | yes | collector-error: fetch failed; fetch failed |
+| sfda-events | transient | 1 | yes | fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to "https://www.sfda.gov.sa/", waiting until "domcontentloaded"  |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

@@ -1,6 +1,6 @@
 # Tuwaiq Program Enrichment Report
 
-- generated_at: 2026-08-05T11:10:10.425Z
+- generated_at: 2026-08-06T08:59:12.951Z
 - targets: 36
 - enriched: 34
 - failed: 2
@@ -21,9 +21,9 @@
 - معسكر تصميم تجربة المستخدم UX\UI (ZnwlyY5G) - goals=8, features=7, requirements=9
 - معسكر اختبار البرمجيات والأتمتة (ORGldGgx) - goals=6, features=6, requirements=7
 - معسكر هندسة تطبيقات الذكاء الاصطناعي التوليدي باستخدام النماذج اللغوية الضخمة (ab7DP73J) - goals=8, features=5, requirements=8
-- دبلوم الأمن السيبراني المتقدم (VPwN7D0G) - goals=8, features=8, requirements=7
 - معسكر أساسيات الأمن السيبراني (6VRQ2LNZ) - goals=5, features=6, requirements=10
 - معسكر بناء وتطوير نماذج الذكاء الاصطناعي (o4bVMP8V) - goals=7, features=6, requirements=12
+- دبلوم الأمن السيبراني المتقدم (VPwN7D0G) - goals=8, features=8, requirements=7
 - معسكر إدارة الحوكمة والمخاطر والامتثال GRC (aXzlnR2d) - goals=7, features=8, requirements=4
 - معسكر الذكاء الاصطناعي في تطوير تطبيقات الويب باستخدام Python و Django (64xLPxNn) - goals=15, features=7, requirements=8
 - معسكر طويق السيبراني (KEvAkjLJ) - goals=3, features=3, requirements=8
