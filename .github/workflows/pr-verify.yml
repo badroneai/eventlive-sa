@@ -65,6 +65,16 @@ jobs:
       - name: Validate data (with gate)
         run: npm run validate:gate
 
+      # Runs BEFORE the build on purpose: source-sync.yml runs this block
+      # against the COMMITTED dist/ from checkout (persisted by the previous
+      # sync together with its data), and several gates assert on artifacts
+      # (e.g. cached event images) that a from-scratch PR build does not
+      # reproduce. Position is part of the parity, not just the command list —
+      # the first CI run of this step, placed after the build, failed on
+      # exactly that (image-existence assertions against a rebuilt dist).
+      - name: Sync-blocking regression gates (extracted verbatim from source-sync.yml)
+        run: node scripts/run-sync-blocking-regression-gates.mjs
+
       - name: Build EventLive public site
         run: npm run build
 
@@ -72,14 +82,11 @@ jobs:
         run: npm run ci:publish-quality-gates
 
       # Orphan-gate class ban (2026-08-06, third incident: ~22h publishing
-      # outage from a blocking gate no PR check could reach). The two blocking
-      # batteries below previously executed ONLY inside source-sync.yml, so a
-      # PR could merge green and still freeze the publish path. Parity is by
-      # construction, not by bookkeeping: the regression list is extracted
-      # verbatim from source-sync.yml at run time, so gates added there are
-      # exercised here automatically.
+      # outage from a blocking gate no PR check could reach). This battery and
+      # the pre-build regression step above previously executed ONLY inside
+      # source-sync.yml, so a PR could merge green and still freeze the
+      # publish path. The regression list is extracted verbatim from
+      # source-sync.yml at run time — parity by construction, not bookkeeping.
+      # Site gates run here, post-build, matching their position in sync.
       - name: Site gates CI battery (same blocking battery source-sync.yml runs)
         run: npm run ci:site-gates
-
-      - name: Sync-blocking regression gates (extracted verbatim from source-sync.yml)
-        run: node scripts/run-sync-blocking-regression-gates.mjs
