@@ -256,11 +256,22 @@ for (const file of workflowFiles) {
   const stepId = idMatch[1];
 
   const afterBattery = content.slice(idx);
-  const finalFailPattern = new RegExp(`steps\\.${stepId}\\.outcome[^\\n]*!=[^\\n]*success[\\s\\S]{0,400}?exit 1`);
-  assert.match(
-    afterBattery,
-    finalFailPattern,
-    `${file}: runs the publish-quality battery non-blocking but has no later step that fails the RUN (exit 1) when steps.${stepId}.outcome != 'success' — an ::error:: annotation on a green run is not enough (PM correction 2026-08-02): the run itself must land red in the Actions list, publish already having happened by then so Invariant C still holds`
+  // Two accepted shapes for the same invariant. Direct: the step compares
+  // ${{ steps.<id>.outcome }} inline. Env-indirect (the shape #87 introduced,
+  // which this matcher rejected in run 31082343130 and re-froze publishing):
+  // the step assigns steps.<id>.outcome to an env var and the shell compares
+  // that variable. Matching only the direct shape made this gate a matcher of
+  // wording, not of the invariant — the exact gauge class this file exists to ban.
+  const directFailPattern = new RegExp(`steps\\.${stepId}\\.outcome[^\\n]*!=[^\\n]*success[\\s\\S]{0,400}?exit 1`);
+  const envAssignMatch = afterBattery.match(new RegExp(`(\\w+):\\s*\\$\\{\\{\\s*steps\\.${stepId}\\.outcome\\s*\\}\\}`));
+  const envFailPattern = envAssignMatch
+    ? new RegExp(`\\$\\{?${envAssignMatch[1]}\\}?"?[^\\n]*!=[^\\n]*success[\\s\\S]{0,600}?exit 1`)
+    : null;
+  const failsRunOnGateFailure =
+    directFailPattern.test(afterBattery) || (envFailPattern !== null && envFailPattern.test(afterBattery));
+  assert.ok(
+    failsRunOnGateFailure,
+    `${file}: runs the publish-quality battery non-blocking but has no later step that fails the RUN (exit 1) when steps.${stepId}.outcome != 'success' (checked both the inline \${{ }} comparison shape and the env-var indirection shape) — an ::error:: annotation on a green run is not enough (PM correction 2026-08-02): the run itself must land red in the Actions list, publish already having happened by then so Invariant C still holds`
   );
 }
 
