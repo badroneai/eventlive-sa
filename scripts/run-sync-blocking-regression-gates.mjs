@@ -21,6 +21,22 @@ import path from 'node:path';
 
 const WORKFLOW = path.join(process.cwd(), '.github', 'workflows', 'source-sync.yml');
 const STEP_NAME = 'Regression checks';
+
+// STATE-DEPENDENT GATES — excluded from PR execution, each with the reason.
+// These validate the sync pipeline's OWN mid-run state (artifacts produced by
+// the collection steps that run immediately before the Regression checks in
+// source-sync.yml). A PR checkout + fresh build cannot reproduce that state,
+// so running them here fails on missing state, not on code defects — proven
+// by pr-verify runs 31095104363 (image set incomplete without the collector's
+// fetch pass) on PR #90. Everything NOT listed here runs in PR by default, so
+// a new gate added to the sync block is PR-covered unless someone explicitly
+// classifies it state-dependent in this reviewed list.
+const SYNC_STATE_DEPENDENT_GATES = new Map([
+  [
+    'test:image-cache',
+    'asserts every catalog image exists on disk; only the sync collector fetch pass materializes the full set — PR image cache restores are best-effort fallbacks',
+  ],
+]);
 // Sanity floor: the block held 40+ npm commands when this was written. If the
 // extractor ever sees fewer than this, the YAML shape changed under it and a
 // human must look — running a silently truncated list would fake coverage.
@@ -68,7 +84,20 @@ const blockIndent = Math.min(
 );
 const script = blockLines.map((line) => (line.trim() === '' ? '' : line.slice(blockIndent))).join('\n');
 
-const npmCommandCount = script.split('\n').filter((line) => line.trim().startsWith('npm run ')).length;
+const scriptLines = script.split('\n').map((line) => {
+  const npmMatch = line.trim().match(/^npm run ([^\s|&]+)/);
+  if (npmMatch && SYNC_STATE_DEPENDENT_GATES.has(npmMatch[1])) {
+    console.log(
+      `run-sync-blocking-regression-gates: SKIPPING state-dependent gate '${npmMatch[1]}' — ` +
+        SYNC_STATE_DEPENDENT_GATES.get(npmMatch[1])
+    );
+    return `echo "SKIPPED (state-dependent, sync-only): npm run ${npmMatch[1]}"`;
+  }
+  return line;
+});
+const finalScript = scriptLines.join('\n');
+
+const npmCommandCount = finalScript.split('\n').filter((line) => line.trim().startsWith('npm run ')).length;
 if (npmCommandCount < MIN_NPM_COMMANDS) {
   console.error(
     `run-sync-blocking-regression-gates: extracted only ${npmCommandCount} 'npm run' commands ` +
@@ -84,7 +113,7 @@ console.log(
 );
 
 const tmpFile = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'sync-regression-')), 'block.sh');
-fs.writeFileSync(tmpFile, script);
+fs.writeFileSync(tmpFile, finalScript);
 // bash -e mirrors GitHub Actions' default shell semantics for run blocks:
 // first failing command fails the step, advisory `|| echo` lines stay advisory.
 const result = spawnSync('bash', ['-e', tmpFile], { stdio: 'inherit' });
