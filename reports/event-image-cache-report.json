@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T09:01:42.492Z",
+  "generated_at": "2026-08-06T09:21:56.746Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -9,19 +9,19 @@
     "fetched": 3,
     "reused": 494,
     "failed": 3,
-    "skipped_recent_failures": 0,
+    "skipped_recent_failures": 3,
     "remembered_failures": 6
   },
   "fetched": [
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/202608_TOTT_Banner-01-1100x500.png",
-      "file": "dist/assets/event-images/jameel-library-the-task-of-the-translator-research-lab-a1b759fb11.png",
+      "file": "dist/assets/event-images/مكتبة-جاميل-مهمة-مختبر-أبحاث-المترجم-a1b759fb11.png",
       "bytes": 53353,
       "events": 1
     },
     {
       "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
-      "file": "dist/assets/event-images/space-debris-conference-2028-ed926e1bba.webp",
+      "file": "dist/assets/event-images/مؤتمر-الحطام-الفضائي-2028-ed926e1bba.webp",
       "bytes": 17480,
       "events": 1
     },
@@ -2505,34 +2505,78 @@
     }
   ],
   "rejected_removed": [],
-  "missing_removed": [],
-  "skipped_recent_failures": [],
-  "failed": [
+  "missing_removed": [
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-07T09:01:42.492Z"
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/202608_TOTT_Banner-01-1100x500.png",
+      "file": "dist/assets/event-images/jameel-library-the-task-of-the-translator-research-lab-a1b759fb11.png",
+      "reason": "cached-file-missing"
     },
+    {
+      "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
+      "file": "dist/assets/event-images/space-debris-conference-2028-ed926e1bba.webp",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/73981ad8c56588325a6fae85d27ab60b.png",
+      "file": "dist/assets/event-images/manal-mohei-eldin-and-oriental-strokes-d762e2f490.png",
+      "reason": "cached-file-missing"
+    }
+  ],
+  "skipped_recent_failures": [
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-08-07T09:01:42.492Z"
+      "retry_after": "2026-08-07T09:01:42.492Z",
+      "skipped": true
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-07T09:01:42.492Z"
+      "retry_after": "2026-08-07T09:01:42.492Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-08-07T09:01:42.492Z",
+      "skipped": true
+    }
+  ],
+  "failed": [
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-08-07T09:01:42.492Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-08-07T09:01:42.492Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-08-07T09:01:42.492Z",
+      "skipped": true
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
     "fetched:3",
-    "new-failures:3"
+    "missing-removed:3"
   ]
 }

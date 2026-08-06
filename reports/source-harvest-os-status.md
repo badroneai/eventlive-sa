@@ -1,6 +1,6 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-06T09:09:13.121Z
+- Generated at: 2026-08-06T09:29:24.383Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
@@ -12,21 +12,21 @@
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 22/34
-- Collector errors: 4 (chronic 3, transient 1)
+- Productive sources / attempted: 21/21
+- Collector errors: 3 (chronic 3, transient 0)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 330 |
+| discovered_this_run | 314 |
 | candidate_queue | 604 |
 | evaluated_for_publish | 604 |
-| linked_existing | 557 |
-| published_new | 9 |
+| linked_existing | 560 |
+| published_new | 6 |
 | blocked | 38 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 37 |
+| secondary_still_blocked | 34 |
 
 ## Blocked Reasons
 
@@ -46,10 +46,9 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 18 | yes | collector-error: fetch failed; fetch failed |
-| mos-events | chronic | 18 | yes | collector-error: fetch failed |
-| moc-cultural-subportals | chronic | 18 | yes | collector-error: fetch failed; fetch failed |
-| sfda-events | transient | 1 | yes | fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to "https://www.sfda.gov.sa/", waiting until "domcontentloaded"  |
+| moc-cultural-calendar | chronic | 18 | no | collector-error: fetch failed; fetch failed |
+| mos-events | chronic | 18 | no | collector-error: fetch failed |
+| moc-cultural-subportals | chronic | 18 | no | collector-error: fetch failed; fetch failed |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

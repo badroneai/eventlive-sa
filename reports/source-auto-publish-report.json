@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-08-06T08:59:09.009Z",
+  "published_at": "2026-08-06T09:19:15.759Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -7,8 +7,8 @@
   "candidates_seen": 604,
   "totals": {
     "candidates_seen": 604,
-    "published": 9,
-    "linked_existing": 557,
+    "published": 6,
+    "linked_existing": 560,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
@@ -193,21 +193,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-jameel-library-the-task-of-the-translator-research-lab-20260824-b6d73c1e",
-      "event_id": "event-jameel-library-the-task-of-the-translator-research-lab",
-      "title": "Jameel Library | The Task of the Translator Research Lab"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-manal-mohei-eldin-and-oriental-strokes-20260826-fafd7f05",
-      "event_id": "event-manal-mohei-eldin-and-oriental-strokes",
-      "title": "Manal Mohei Eldin and Oriental Strokes"
-    },
-    {
-      "candidate_id": "candidate-saudi-space-agency-events-space-debris-conference-2028-20280215-03719f44",
-      "event_id": "event-space-debris-conference-2028",
-      "title": "Space Debris Conference 2028"
     }
   ],
   "linked_existing": [
@@ -1832,6 +1817,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-hayy-jameel-events-jameel-library-the-task-of-the-translator-research-lab-20260824-b6d73c1e",
+      "event_id": "event-jameel-library-the-task-of-the-translator-research-lab",
+      "title": "Jameel Library | The Task of the Translator Research Lab",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-eye-of-riyadh-events-smart-data-ai-summit-20260826-f9946ea8",
       "event_id": "event-smart-data-ai-summit",
       "title": "Smart Data & AI Summit",
@@ -1841,6 +1832,12 @@
       "candidate_id": "candidate-ithra-events-arabic-children-book-club-10-12-20260826-39c903cc",
       "event_id": "event-arabic-children-book-club-10-12",
       "title": "Arabic Children Book Club (10-12)",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-manal-mohei-eldin-and-oriental-strokes-20260826-fafd7f05",
+      "event_id": "event-manal-mohei-eldin-and-oriental-strokes",
+      "title": "Manal Mohei Eldin and Oriental Strokes",
       "reason": "already linked to catalog event"
     },
     {
@@ -3551,6 +3548,12 @@
       "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-التحول-الرقمي-في-جازان-بالتعاون-مع-أكاديمية-غر-20271201-5cace3ad",
       "event_id": "event-دبلوم-التحول-الرقمي",
       "title": "الترشح للدبلوم المتوسط في التحول الرقمي في جازان بالتعاون مع أكاديمية غرفة جازان.",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-saudi-space-agency-events-space-debris-conference-2028-20280215-03719f44",
+      "event_id": "event-space-debris-conference-2028",
+      "title": "Space Debris Conference 2028",
       "reason": "already linked to catalog event"
     }
   ],
