@@ -1,14 +1,14 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-06T09:50:02.373Z
+- Generated at: 2026-08-06T12:07:27.217Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 604
-- Matched candidates: 572
+- Candidates: 606
+- Matched candidates: 574
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
@@ -19,14 +19,14 @@
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 315 |
-| candidate_queue | 604 |
-| evaluated_for_publish | 604 |
-| linked_existing | 560 |
-| published_new | 6 |
+| discovered_this_run | 317 |
+| candidate_queue | 606 |
+| evaluated_for_publish | 606 |
+| linked_existing | 559 |
+| published_new | 9 |
 | blocked | 38 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 34 |
+| secondary_still_blocked | 37 |
 
 ## Blocked Reasons
 

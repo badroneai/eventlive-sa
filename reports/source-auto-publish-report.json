@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-06T09:40:18.950Z",
+  "published_at": "2026-08-06T11:57:13.499Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 604,
+  "candidates_seen": 606,
   "totals": {
-    "candidates_seen": 604,
-    "published": 6,
-    "linked_existing": 560,
+    "candidates_seen": 606,
+    "published": 9,
+    "linked_existing": 559,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 566
+    "reconciled": 568
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -193,6 +193,21 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال-20260816-6070e1ef",
+      "event_id": "event-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال",
+      "title": "⁠Virtualization & Cloud Infrastructure Basics - الافتراضية والبنية التحتية السحابية"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-sql-fundamentals-20260816-971d8196",
+      "event_id": "event-sql-fundamentals",
+      "title": "⁠SQL Fundamentals"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-comptia-it-fundamentals-20260816-ffccc14e",
+      "event_id": "event-comptia-it-fundamentals",
+      "title": "CompTIA IT Fundamentals"
     }
   ],
   "linked_existing": [
@@ -929,12 +944,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-riyadh-city-events-mishkat-summer-camp-20260712-704761b4",
-      "event_id": "event-mishkat-summer-camp",
-      "title": "Mishkat Summer Camp",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-seasons-saif-2026-20260712-3cc21727",
       "event_id": "event-saif-2026",
       "title": "SAIF 2026",
@@ -1313,36 +1322,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-family-challenges-20260806-3726c868",
-      "event_id": "event-family-challenges",
-      "title": "Family Challenges",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tangram-20260806-9a9db6cb",
-      "event_id": "event-tangram",
-      "title": "Tangram",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260806-2671d1ce",
-      "event_id": "event-emboss-printing-experience",
-      "title": "Emboss Printing Experience",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260806-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260806-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-little-explorers-20260806-1cc1993f",
       "event_id": "event-little-explorers",
       "title": "Little Explorers",
@@ -1391,6 +1370,30 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260806-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260806-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-family-challenges-20260806-3726c868",
+      "event_id": "event-family-challenges",
+      "title": "Family Challenges",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260806-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-grand-art-space-20260806-e3acefbb",
       "event_id": "event-grand-art-space",
       "title": "Grand Art Space",
@@ -1400,6 +1403,12 @@
       "candidate_id": "candidate-ithra-events-museum-story-time-20260806-1104734c",
       "event_id": "event-museum-story-time",
       "title": "Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tangram-20260806-9a9db6cb",
+      "event_id": "event-tangram",
+      "title": "Tangram",
       "reason": "already linked to catalog event"
     },
     {

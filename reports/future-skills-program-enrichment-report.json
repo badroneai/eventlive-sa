@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-06T09:40:34.132Z",
+  "generated_at": "2026-08-06T11:57:30.005Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 14,
-    "enriched": 14,
+    "targets": 17,
+    "enriched": 17,
     "failed": 0
   },
   "enriched": [
@@ -130,6 +130,33 @@
       "group_id": "13050",
       "goals": 1,
       "features": 19,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال",
+      "title": "Virtualization & Cloud Infrastructure Basics - الافتراضية والبنية التحتية السحابية",
+      "group_id": "13051",
+      "goals": 1,
+      "features": 3,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-sql-fundamentals",
+      "title": "SQL Fundamentals",
+      "group_id": "13052",
+      "goals": 1,
+      "features": 15,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-comptia-it-fundamentals",
+      "title": "CompTIA IT Fundamentals",
+      "group_id": "13053",
+      "goals": 1,
+      "features": 1,
       "requirements": 4,
       "metadata": 8
     }

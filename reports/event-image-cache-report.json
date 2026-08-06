@@ -1,18 +1,43 @@
 {
-  "generated_at": "2026-08-06T09:43:00.684Z",
+  "generated_at": "2026-08-06T11:59:47.375Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 791,
-    "fetched": 0,
-    "reused": 497,
+    "cached_total": 792,
+    "fetched": 4,
+    "reused": 493,
     "failed": 3,
     "skipped_recent_failures": 3,
     "remembered_failures": 6
   },
-  "fetched": [],
+  "fetched": [
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/202608_TOTT_Banner-01-1100x500.png",
+      "file": "dist/assets/event-images/مكتبة-جاميل-مهمة-مختبر-أبحاث-المترجم-a1b759fb11.png",
+      "bytes": 53353,
+      "events": 1
+    },
+    {
+      "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
+      "file": "dist/assets/event-images/مؤتمر-الحطام-الفضائي-2028-ed926e1bba.webp",
+      "bytes": 17480,
+      "events": 1
+    },
+    {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%202026-08-06%20134537.png?itok=GtPbmcLG",
+      "file": "dist/assets/event-images/أساسيات-التخزين-السحابي-وقواعد-البيانات-3e2d305608.png",
+      "bytes": 61068,
+      "events": 15
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/73981ad8c56588325a6fae85d27ab60b.png",
+      "file": "dist/assets/event-images/manal-mohei-eldin-and-oriental-strokes-d762e2f490.png",
+      "bytes": 477626,
+      "events": 1
+    }
+  ],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -425,11 +450,6 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/3.png?itok=7Upsv5tQ",
-      "file": "dist/assets/event-images/mishkat-summer-camp-4f41ae0160.png",
-      "events": 1
-    },
-    {
       "source_url": "https://scth.scene7.com/is/image/scth/saif-2026?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/saif-2026-751a318bdf.webp",
       "events": 1
@@ -665,11 +685,6 @@
       "events": 1
     },
     {
-      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-07/%D8%A4.jpg?itok=j2kecKQU",
-      "file": "dist/assets/event-images/أساسيات-التخزين-السحابي-وقواعد-البيانات-702db8c6a6.jpg",
-      "events": 4
-    },
-    {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uvc2hhYWFyLXNoZnQtYWJoYS5qcGc/shaaar-shft-abha.jpg?w=1024&fm=webp&s=214e015b8adfb062d4f93011a5ea858b",
       "file": "dist/assets/event-images/shift-abha-2026-5b25d626a3.webp",
       "events": 1
@@ -753,11 +768,6 @@
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/pvg2c15v.k3e.webp",
       "file": "dist/assets/event-images/معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-8e8c650509.webp",
       "events": 1
-    },
-    {
-      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-07/CompTIA-Cloud.jpg?itok=QuxBdlzK",
-      "file": "dist/assets/event-images/machine-learning-ضمن-69ab0b64da.jpg",
-      "events": 3
     },
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/hym412o4.xrm.webp",
@@ -880,18 +890,8 @@
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/202608_TOTT_Banner-01-1100x500.png",
-      "file": "dist/assets/event-images/مكتبة-جاميل-مهمة-مختبر-أبحاث-المترجم-a1b759fb11.png",
-      "events": 1
-    },
-    {
       "source_url": "https://saudi.smartdataseries.com/wp-content/uploads/2025/11/sdais-saudi.jpg",
       "file": "dist/assets/event-images/smart-data-ai-summit-1e2bce2056.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/73981ad8c56588325a6fae85d27ab60b.png",
-      "file": "dist/assets/event-images/manal-mohei-eldin-and-oriental-strokes-d762e2f490.png",
       "events": 1
     },
     {
@@ -1975,11 +1975,6 @@
       "events": 1
     },
     {
-      "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
-      "file": "dist/assets/event-images/مؤتمر-الحطام-الفضائي-2028-ed926e1bba.webp",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2a93a513735da824f0d28d0a8d24b99d.jpg",
       "file": "dist/assets/event-images/children-s-museum-free-monday-197cdfde54.jpg",
       "events": 1
@@ -2130,11 +2125,6 @@
       "events": 1
     },
     {
-      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/media-icons/generic/no-thumbnail.png?itok=rGJOKohj",
-      "file": "dist/assets/event-images/introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي-3f19de15ba.png",
-      "events": 5
-    },
-    {
       "source_url": "https://scth.scene7.com/is/image/scth/very-sary-night-from-exit-thmanyah?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/very-sary-night-from-exit-thmanyah-3843e11ef7.webp",
       "events": 1
@@ -2253,6 +2243,11 @@
       "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-07/7.jpg?itok=HnrYjVdd",
       "file": "dist/assets/event-images/دورة-comptia-a-2358801bb0.jpg",
       "events": 2
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/3.png?itok=7Upsv5tQ",
+      "file": "dist/assets/event-images/mishkat-summer-camp-4f41ae0160.png",
+      "events": 1
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9cb3e48739ad64294e279bd3a23dadf7.jpg",
@@ -2498,10 +2493,36 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b51e0cf777e8932c6a96587bf272ac38.jpg",
       "file": "dist/assets/event-images/journey-film-group-3-9febeadde4.jpg",
       "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ebd009e4f4dbefb1de3e9ee4546f625a.jpg",
+      "file": "dist/assets/event-images/sa3oud-wainah-96aaddef99.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c8dbd06910da7730a9a477501de4df71.jpg",
+      "file": "dist/assets/event-images/book-signing-sessions-1-f02020009b.jpg",
+      "events": 1
     }
   ],
   "rejected_removed": [],
-  "missing_removed": [],
+  "missing_removed": [
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/202608_TOTT_Banner-01-1100x500.png",
+      "file": "dist/assets/event-images/مكتبة-جاميل-مهمة-مختبر-أبحاث-المترجم-a1b759fb11.png",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
+      "file": "dist/assets/event-images/مؤتمر-الحطام-الفضائي-2028-ed926e1bba.webp",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/73981ad8c56588325a6fae85d27ab60b.png",
+      "file": "dist/assets/event-images/manal-mohei-eldin-and-oriental-strokes-d762e2f490.png",
+      "reason": "cached-file-missing"
+    }
+  ],
   "skipped_recent_failures": [
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
@@ -2554,6 +2575,9 @@
       "skipped": true
     }
   ],
-  "requires_rebuild": false,
-  "rebuild_reasons": []
+  "requires_rebuild": true,
+  "rebuild_reasons": [
+    "fetched:4",
+    "missing-removed:3"
+  ]
 }

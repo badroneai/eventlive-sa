@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T09:43:01.803Z",
+  "generated_at": "2026-08-06T12:00:24.361Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,10 +11,10 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-08-06T09:33:22.555Z",
+    "collected_at": "2026-08-06T11:50:06.393Z",
     "freshness": "fresh",
-    "discovered": 315,
-    "written": 604
+    "discovered": 317,
+    "written": 606
   },
   "sources": {
     "total": 88,
@@ -245,8 +245,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 4,
-        "candidates": 4,
+        "extracted": 7,
+        "candidates": 7,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -684,7 +684,7 @@
         "zero_yield_streak": 0,
         "last_attempted_at": "2026-08-06T08:45:39.495Z",
         "extracted": 0,
-        "candidates": 77,
+        "candidates": 76,
         "next_action": "مؤجل حتى 2026-08-06T14:45:39.495Z وفق الجدولة التكيفية."
       },
       {
@@ -1004,7 +1004,7 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 9,
+        "extracted": 7,
         "candidates": 50,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
@@ -1121,7 +1121,7 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 66,
+        "extracted": 67,
         "candidates": 74,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
@@ -1173,28 +1173,28 @@
     ]
   },
   "queue": {
-    "total": 604,
+    "total": 606,
     "ready_for_review": 8,
     "approved_for_catalog": 0,
-    "published_from_candidates": 570,
+    "published_from_candidates": 572,
     "actionable": 8,
     "stale_unpublished": 0,
     "duplicate_risk": 6,
     "needs_extraction": 0,
     "needs_evidence": 26,
     "by_review_status": {
-      "approved-for-catalog": 570,
+      "approved-for-catalog": 572,
       "ready-for-review": 8,
       "evidence-captured": 18,
       "new": 8
     },
     "by_publication_gate": {
-      "catalog-review": 570,
+      "catalog-review": 572,
       "duplicate-review": 8,
       "source-evidence": 26
     },
     "by_confidence": {
-      "official": 564,
+      "official": 566,
       "public-listing": 21,
       "verified-secondary": 11,
       "unverified": 8
@@ -1206,7 +1206,7 @@
     },
     "by_source": {
       "Ministry of Culture Commission Calendars": 12,
-      "Riyadh City Events": 77,
+      "Riyadh City Events": 76,
       "Visit Saudi Calendar": 17,
       "Visit Saudi Summer Calendar PDF": 68,
       "Misk Hub Programs": 11,
@@ -1219,7 +1219,7 @@
       "Jouf University Summer Programs": 1,
       "Umm Al-Qura University Events Center": 50,
       "Monsha'at All Events": 2,
-      "Future Skills MCIT Catalogue": 4,
+      "Future Skills MCIT Catalogue": 7,
       "Ithra Events": 79,
       "MDLBEAST Events": 5,
       "Saudi Food and Drug Authority Events": 8,
@@ -1665,7 +1665,7 @@
         "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 31,
+        "days_to_start": 30,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",

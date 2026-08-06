@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T09:43:01.451Z",
+  "generated_at": "2026-08-06T12:00:24.047Z",
   "source_registry": "data/source_registry.json",
   "source_collection_report": "reports/source-collection-report.json",
   "totals": {
@@ -120,7 +120,7 @@
       "last_probe_score": -23,
       "last_probe_recommendation": "blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed",
       "last_probe_blocked_reason": "fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed",
-      "known_candidates": 77,
+      "known_candidates": 76,
       "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
     },
     {
@@ -692,12 +692,12 @@
       "score": 125,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 4,
+      "last_extracted": 7,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 4,
+      "known_candidates": 7,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -1479,7 +1479,7 @@
       "last_probe_score": -23,
       "last_probe_recommendation": "blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed",
       "last_probe_blocked_reason": "fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed",
-      "known_candidates": 77,
+      "known_candidates": 76,
       "next_action": "Do not scrape now; latest probe is blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed. Keep as partnership, browser/API investigation, or evidence lane."
     },
     {
@@ -2049,7 +2049,7 @@
       "score": 66,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 9,
+      "last_extracted": 7,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
@@ -2256,7 +2256,7 @@
       "score": 63,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 66,
+      "last_extracted": 67,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",

@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-06T09:40:18.950Z
+- published_at: 2026-08-06T11:57:13.499Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 604
-- published_new: 6
-- linked_existing: 560
+- candidates_seen: 606
+- published_new: 9
+- linked_existing: 559
 - blocked_remaining: 38
 - duplicate_review_alerts: 8
 
@@ -29,6 +29,9 @@
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
+| candidate-future-skills-catalog-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال-20260816-6070e1ef | published | event-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال | ⁠Virtualization & Cloud Infrastructure Basics - الافتراضية والبنية التحتية السحابية |
+| candidate-future-skills-catalog-sql-fundamentals-20260816-971d8196 | published | event-sql-fundamentals | ⁠SQL Fundamentals |
+| candidate-future-skills-catalog-comptia-it-fundamentals-20260816-ffccc14e | published | event-comptia-it-fundamentals | CompTIA IT Fundamentals |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -151,7 +154,6 @@
 | candidate-discover-aseer-events-kishtah-20260710-26597591 | linked-existing | event-kishtah | already linked to catalog event |
 | candidate-discover-aseer-events-bioni-al-sharaf-20260711-62339a98 | linked-existing | event-bioni-al-sharaf | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-صيف-2026-20260712-4a38d19e | linked-existing | event-صيف-2026 | already linked to catalog event |
-| candidate-riyadh-city-events-mishkat-summer-camp-20260712-704761b4 | linked-existing | event-mishkat-summer-camp | already linked to catalog event |
 | candidate-visit-saudi-seasons-saif-2026-20260712-3cc21727 | linked-existing | event-saif-2026 | already linked to catalog event |
 | candidate-discover-aseer-events-alliwan-farm-20260712-c1e28b0e | linked-existing | event-alliwan-farm | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي-20260712-fd68b684 | linked-existing | event-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي | already linked to catalog event |
@@ -215,11 +217,6 @@
 | candidate-ithra-events-summer-youth-program-20260806-a20f7a11 | linked-existing | event-summer-youth-program | already linked to catalog event |
 | candidate-ithra-events-tinkering-stations-20260806-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
 | candidate-ithra-events-childrens-art-studio-20260806-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
-| candidate-ithra-events-family-challenges-20260806-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
-| candidate-ithra-events-tangram-20260806-9a9db6cb | linked-existing | event-tangram | already linked to catalog event |
-| candidate-ithra-events-emboss-printing-experience-20260806-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
-| candidate-ithra-events-spot-of-inspiration-20260806-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
-| candidate-ithra-events-childrens-museum-story-time-20260806-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-little-explorers-20260806-1cc1993f | linked-existing | event-little-explorers | already linked to catalog event |
 | candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260806-ef7080ff | linked-existing | event-trivia-night-earth-quest-tic-tac-know | already linked to catalog event |
 | candidate-ithra-events-energy-lab-20260806-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
@@ -228,8 +225,13 @@
 | candidate-ithra-events-swim-r-mission-20260806-f8a6c05c | linked-existing | event-swim-r-mission | already linked to catalog event |
 | candidate-ithra-events-the-moral-of-the-story-20260806-bfa3f2a8 | linked-existing | event-the-moral-of-the-story | already linked to catalog event |
 | candidate-umm-al-qura-events-التشكيل-الحر-20260806-8ec06f59 | linked-existing | event-التشكيل-الحر | already linked to catalog event |
+| candidate-ithra-events-spot-of-inspiration-20260806-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
+| candidate-ithra-events-childrens-museum-story-time-20260806-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
+| candidate-ithra-events-family-challenges-20260806-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
+| candidate-ithra-events-emboss-printing-experience-20260806-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-ithra-events-grand-art-space-20260806-e3acefbb | linked-existing | event-grand-art-space | already linked to catalog event |
 | candidate-ithra-events-museum-story-time-20260806-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
+| candidate-ithra-events-tangram-20260806-9a9db6cb | linked-existing | event-tangram | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-حسين-محب-ايف-في-الرياض-20260807-4a38d19e | linked-existing | event-hussain-moheb-live-in-riyadh | already linked to catalog event |
 | candidate-mdlbeast-events-unstable-20260807-5647df2e | linked-existing | event-unstable | already linked to catalog event |
 | candidate-discover-aseer-events-musical-concerts-20260807-169733ac | linked-existing | event-musical-concerts | already linked to catalog event |
