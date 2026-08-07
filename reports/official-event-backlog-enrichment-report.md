@@ -1,9 +1,9 @@
 # EventLive Official Event Backlog Enrichment
-- Generated at: 2026-08-07T00:33:22.436Z
-- Targets: 8
-- Enriched: 8
-- Fetched: 8
-- Images: 8
+- Generated at: 2026-08-07T07:59:17.541Z
+- Targets: 6
+- Enriched: 6
+- Fetched: 6
+- Images: 6
 - Fetch failures: 0
 
 | Source | Event | Method | Image | Fetch |
@@ -14,5 +14,3 @@
 | Visit Saudi Summer Calendar PDF | عروض الفنون الادائية التقليدية | official-page-meta | yes | yes |
 | Visit Saudi Summer Calendar PDF | قصور وقلاع ابو نقطة المتحمي | official-page-meta | yes | yes |
 | Visit Saudi Summer Calendar PDF | مزرعة التوت الاسود | official-page-meta | yes | yes |
-| Hayy Jameel What's On | Hayy Makers | Introduction to Photography: Understanding your Camera | official-page-meta | yes | yes |
-| Hayy Jameel What's On | Hayy Makers | Woodworking Course (Level 1) with Ahmad Sofi | official-page-meta | yes | yes |

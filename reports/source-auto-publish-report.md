@@ -1,6 +1,6 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-07T00:31:29.278Z
+- published_at: 2026-08-07T07:57:51.565Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 600

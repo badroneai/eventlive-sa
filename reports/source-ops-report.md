@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-08-07T00:34:49.386Z
+- generated_at: 2026-08-07T08:00:39.344Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -12,14 +12,14 @@
 
 - Sources in registry: 88
 - Runnable collector lanes: 48
-- Sources due now: 25
-- Sources attempted in latest collection: 25
-- Sources deferred by cadence: 23
+- Sources due now: 23
+- Sources attempted in latest collection: 23
+- Sources deferred by cadence: 25
 - Due-source coverage: 100%
 - Scheduled runnable coverage: 100%
-- Whole-registry attempted this run: 28%
+- Whole-registry attempted this run: 26%
 - Healthy sources: 21
-- Zero-yield sources: 3
+- Zero-yield sources: 1
 - High-priority unattempted sources: 3
 - Candidates: 600
 - Actionable candidates: 8
@@ -99,7 +99,7 @@
 | 22 | Dhahran Expo Calendar | healthy | 16 | 17 | استمر بالمراجعة والتكرار قبل النشر. |
 | 23 | Ithra Events | healthy | 76 | 76 | استمر بالمراجعة والتكرار قبل النشر. |
 | 24 | Saudi Digital Academy | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 25 | SDAIA Academy Programs | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
+| 25 | SDAIA Academy Programs | deferred | 0 | 0 | مؤجل حتى 2026-08-10T00:20:56.067Z وفق الجدولة التكيفية. |
 | 26 | Saudi Events App | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 27 | Enjoy Saudi Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 28 | Misk Hub Events | deferred | 0 | 0 | مؤجل حتى 2026-08-10T20:19:02.344Z وفق الجدولة التكيفية. |
@@ -134,7 +134,7 @@
 | 57 | Ministry of Commerce Upcoming Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 58 | Evento | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 59 | Asharqia Chamber Events | healthy | 3 | 3 | استمر بالمراجعة والتكرار قبل النشر. |
-| 60 | Qassim Chamber Events | zero-yield | 0 | 0 | Recovered via browser-probe official evidence. No future date-complete candidates found by the conservative extractor. |
+| 60 | Qassim Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-08-08T00:20:56.067Z وفق الجدولة التكيفية. |
 | 61 | Abha Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-08-10T20:19:02.344Z وفق الجدولة التكيفية. |
 | 62 | Baha Municipality Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 63 | Baha Chamber Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
@@ -159,7 +159,7 @@
 | 82 | Money20/20 Middle East Official Agendas | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 83 | Madinah Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-08-09T08:45:39.495Z وفق الجدولة التكيفية. |
 | 84 | Madinah International Architecture Festival | healthy | 1 | 1 | استمر بالمراجعة والتكرار قبل النشر. |
-| 85 | Hayy Jameel What's On | healthy | 66 | 73 | استمر بالمراجعة والتكرار قبل النشر. |
+| 85 | Hayy Jameel What's On | healthy | 68 | 73 | استمر بالمراجعة والتكرار قبل النشر. |
 | 86 | Informa Connect Saudi Event Portfolio | deferred | 0 | 6 | مؤجل حتى 2026-08-10T20:19:02.344Z وفق الجدولة التكيفية. |
 | 87 | King Abdulaziz University Events | deferred | 0 | 2 | مؤجل حتى 2026-08-10T20:19:02.344Z وفق الجدولة التكيفية. |
 | 88 | Saudicon Events | deferred | 0 | 15 | مؤجل حتى 2026-08-07T08:45:39.495Z وفق الجدولة التكيفية. |

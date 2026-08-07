@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T00:31:34.029Z",
+  "generated_at": "2026-08-07T07:57:55.746Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 36,
@@ -54,14 +54,6 @@
       "goals": 6,
       "features": 11,
       "requirements": 6
-    },
-    {
-      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-2",
-      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python (الفترة الصباحية)",
-      "slug": "8ROda7MD",
-      "goals": 12,
-      "features": 6,
-      "requirements": 11
     },
     {
       "id": "event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي",
@@ -270,6 +262,14 @@
       "goals": 10,
       "features": 11,
       "requirements": 12
+    },
+    {
+      "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-2",
+      "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python (الفترة الصباحية)",
+      "slug": "8ROda7MD",
+      "goals": 12,
+      "features": 6,
+      "requirements": 11
     },
     {
       "id": "event-معسكر-طويق-السيبراني",

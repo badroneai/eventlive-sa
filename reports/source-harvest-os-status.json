@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-07T00:40:43.890Z",
+  "generated_at": "2026-08-07T08:07:23.199Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
@@ -12,7 +12,7 @@
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 25,
+    "collection_attempted": 23,
     "productive_sources": 21,
     "collector_errors": 4,
     "chronic_collector_errors": 3,
@@ -30,7 +30,7 @@
     "source-evidence": 26
   },
   "funnel": {
-    "discovered_this_run": 317,
+    "discovered_this_run": 319,
     "candidate_queue": 600,
     "evaluated_for_publish": 600,
     "linked_existing": 555,
@@ -76,7 +76,7 @@
     {
       "id": "monshaat-events",
       "note": "fetch failed; fetch failed",
-      "error_streak": 1,
+      "error_streak": 2,
       "kind": "transient",
       "attempted_this_run": true
     }
