@@ -1,6 +1,6 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-07T14:07:40.780Z
+- published_at: 2026-08-07T19:30:58.792Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 600
@@ -207,44 +207,39 @@
 | candidate-discover-aseer-events-musical-concerts-20260807-169733ac | linked-existing | event-musical-concerts | already linked to catalog event |
 | candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260807-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
 | candidate-ithra-events-echoes-of-the-familiar-20260807-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
-| candidate-ithra-events-printing-house-20260807-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
-| candidate-ithra-events-tafasahu-make-room-20260807-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
-| candidate-ithra-events-energy-lab-20260807-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
-| candidate-ithra-events-ithra-art-prize-exhibition-20260807-83c2ab55 | linked-existing | event-ithra-art-prize-exhibition | already linked to catalog event |
-| candidate-ithra-events-tinkering-stations-20260807-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
-| candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260807-ef7080ff | linked-existing | event-trivia-night-earth-quest-tic-tac-know | already linked to catalog event |
-| candidate-ithra-events-childrens-art-studio-20260807-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
-| candidate-ithra-events-energy-in-motion-20260807-e0404048 | linked-existing | event-energy-in-motion | already linked to catalog event |
-| candidate-ithra-events-stories-from-ithras-library-20260807-4116de16 | linked-existing | event-stories-from-ithras-library | already linked to catalog event |
-| candidate-ithra-events-open-art-space-20260807-40aac166 | linked-existing | event-open-art-space | already linked to catalog event |
-| candidate-ithra-events-spot-of-inspiration-20260807-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
-| candidate-ithra-events-childrens-museum-story-time-20260807-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
-| candidate-ithra-events-dots-on-letters-20260807-b8901d67 | linked-existing | event-dots-on-letters | already linked to catalog event |
-| candidate-ithra-events-family-game-20260807-fff43c76 | linked-existing | event-family-game | already linked to catalog event |
-| candidate-ithra-events-emboss-printing-experience-20260807-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
-| candidate-ithra-events-family-challenges-20260807-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
-| candidate-ithra-events-grand-art-space-20260807-e3acefbb | linked-existing | event-grand-art-space | already linked to catalog event |
-| candidate-ithra-events-museum-story-time-20260807-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
-| candidate-ithra-events-games-hub-20260807-fb83124c | linked-existing | event-games-hub | already linked to catalog event |
-| candidate-ithra-events-paint-like-an-artist-20260807-a67d8ec3 | linked-existing | event-paint-like-an-artist | already linked to catalog event |
 | candidate-visit-saudi-calendar-hussain-moheb-live-in-riyadh-20260807-0f7ed5bd | linked-existing | event-hussain-moheb-live-in-riyadh | already linked to catalog event |
 | candidate-mdlbeast-events-beast-house-20260807-83049a2a | linked-existing | event-beast-house | already linked to catalog event |
+| candidate-ithra-events-ithra-art-prize-exhibition-20260808-83c2ab55 | linked-existing | event-ithra-art-prize-exhibition | already linked to catalog event |
+| candidate-ithra-events-printing-house-20260808-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
+| candidate-ithra-events-tafasahu-make-room-20260808-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
+| candidate-ithra-events-tinkering-stations-20260808-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
 | candidate-ithra-events-toddler-saturday-20260808-739e1f00 | linked-existing | event-toddler-saturday | already linked to catalog event |
 | candidate-ithra-events-1-2-3-lets-rhyme-20260808-4d37515a | linked-existing | event-1-2-3-lets-rhyme | already linked to catalog event |
+| candidate-ithra-events-spot-of-inspiration-20260808-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
+| candidate-ithra-events-childrens-museum-story-time-20260808-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-unbox-your-story-20260808-5085a6f0 | linked-existing | event-unbox-your-story | already linked to catalog event |
 | candidate-ithra-events-story-land-20260808-bb5dc01b | linked-existing | event-story-land | already linked to catalog event |
+| candidate-ithra-events-childrens-art-studio-20260808-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
+| candidate-ithra-events-emboss-printing-experience-20260808-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
+| candidate-ithra-events-family-challenges-20260808-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
+| candidate-ithra-events-games-hub-20260808-fb83124c | linked-existing | event-games-hub | already linked to catalog event |
+| candidate-ithra-events-energy-lab-20260808-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
 | candidate-ithra-events-nu-power-20260808-653464ac | linked-existing | event-nu-power | already linked to catalog event |
 | candidate-ithra-events-workshop-at-the-library-20260808-7db9eb13 | linked-existing | event-workshop-at-the-library | already linked to catalog event |
+| candidate-ithra-events-grand-art-space-20260808-e3acefbb | linked-existing | event-grand-art-space | already linked to catalog event |
 | candidate-ithra-events-all-things-hedgehogs-20260808-952dc936 | linked-existing | event-all-things-hedgehogs | already linked to catalog event |
+| candidate-ithra-events-museum-story-time-20260808-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260809-91d14378 | linked-existing | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-2 | already linked to catalog event |
 | candidate-future-skills-catalog-machine-learning-التعلم-الالي-20260809-13b057e2 | linked-existing | event-machine-learning-التعلم-الالي | already linked to catalog event |
 | candidate-future-skills-catalog-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل-20260809-ae5af682 | linked-existing | event-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل | already linked to catalog event |
 | candidate-future-skills-catalog-comptia-cloud-20260809-8946f510 | linked-existing | event-comptia-cloud | already linked to catalog event |
 | candidate-monshaat-events-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026-20260809-08845aeb | linked-existing | event-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026 | already linked to catalog event |
 | candidate-sfda-events-الأجهزة-الطبية-الرقمية-التوعية-بالمتطلبات-التنظيمية-وأفضل-الممارسات-20260810-2a6ec3b3 | linked-existing | event-الأجهزة-الطبية-الرقمية-التوعية-بالمتطلبات-التنظيمية-وأفضل-الممارسات | already linked to catalog event |
+| candidate-ithra-events-paint-like-an-artist-20260810-a67d8ec3 | linked-existing | event-paint-like-an-artist | already linked to catalog event |
 | candidate-ithra-events-platforms-manager-skills-20260810-62ec512d | linked-existing | event-platforms-manager-skills | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-august-20260810-f9fb1ca0 | linked-existing | event-hayy-makers-2 | already linked to catalog event |
 | candidate-ithra-events-children-story-time-20260810-f545fa69 | linked-existing | event-children-story-time | already linked to catalog event |
+| candidate-ithra-events-energy-in-motion-20260810-e0404048 | linked-existing | event-energy-in-motion | already linked to catalog event |
 | candidate-ithra-events-ithra-short-play-contest-2026-20260810-11e2aa06 | linked-existing | event-ithra-short-play-contest-2026 | already linked to catalog event |
 | candidate-ithra-events-opening-ceremony-20260810-44eb199a | linked-existing | event-ithra-short-play-contest-2026 | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-أوركسترا-game-of-thrones-20260811-4a38d19e | linked-existing | event-أوركسترا-game-of-thrones | already linked to catalog event |
@@ -269,9 +264,14 @@
 | candidate-ithra-events-your-book-in-a-minute-20260812-c8aab584 | linked-existing | event-your-book-in-a-minute | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-بطولة-أبطال-المملكة-للشطرنج-20260813-4a38d19e | linked-existing | event-بطولة-أبطال-المملكة-للشطرنج | already linked to catalog event |
 | candidate-ithra-events-little-explorers-20260813-1cc1993f | linked-existing | event-little-explorers | already linked to catalog event |
+| candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260813-ef7080ff | linked-existing | event-trivia-night-earth-quest-tic-tac-know | already linked to catalog event |
 | candidate-ithra-events-connect-and-create-20260813-d2514326 | linked-existing | event-connect-and-create | already linked to catalog event |
 | candidate-ithra-events-the-moral-of-the-story-20260813-bfa3f2a8 | linked-existing | event-the-moral-of-the-story | already linked to catalog event |
 | candidate-ithra-events-survival-journey-20260814-4fd1e78d | linked-existing | event-survival-journey | already linked to catalog event |
+| candidate-ithra-events-open-art-space-20260814-40aac166 | linked-existing | event-open-art-space | already linked to catalog event |
+| candidate-ithra-events-stories-from-ithras-library-20260814-4116de16 | linked-existing | event-stories-from-ithras-library | already linked to catalog event |
+| candidate-ithra-events-dots-on-letters-20260814-b8901d67 | linked-existing | event-dots-on-letters | already linked to catalog event |
+| candidate-ithra-events-family-game-20260814-fff43c76 | linked-existing | event-family-game | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office-20260814-c4521792 | linked-existing | event-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office | already linked to catalog event |
 | candidate-ithra-events-petals-and-pals-english-20260815-2b82ff28 | linked-existing | event-petals-and-pals-english | already linked to catalog event |
 | candidate-ithra-events-swim-r-mission-20260815-f8a6c05c | linked-existing | event-swim-r-mission | already linked to catalog event |

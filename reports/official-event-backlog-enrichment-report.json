@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-07T14:09:17.498Z",
+  "generated_at": "2026-08-07T19:32:39.904Z",
   "totals": {
-    "targets": 6,
-    "enriched": 6,
-    "fetched": 6,
-    "images": 6,
+    "targets": 7,
+    "enriched": 7,
+    "fetched": 7,
+    "images": 7,
     "fetch_failures": 0
   },
   "enriched": [
@@ -61,6 +61,16 @@
     {
       "id": "event-مزرعة-التوت-الأسود",
       "title": "مزرعة التوت الاسود",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-بلاتو",
+      "title": "بلاتو",
       "source_label": "Visit Saudi Summer Calendar PDF",
       "source_method": "official-page-meta",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",

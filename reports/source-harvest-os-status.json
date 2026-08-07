@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-07T14:17:26.942Z",
+  "generated_at": "2026-08-07T19:40:33.545Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
@@ -12,7 +12,7 @@
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 29,
+    "collection_attempted": 22,
     "productive_sources": 22,
     "collector_errors": 3,
     "chronic_collector_errors": 3,
@@ -30,7 +30,7 @@
     "source-evidence": 26
   },
   "funnel": {
-    "discovered_this_run": 332,
+    "discovered_this_run": 375,
     "candidate_queue": 600,
     "evaluated_for_publish": 600,
     "linked_existing": 555,
@@ -57,21 +57,21 @@
       "note": "collector-error: fetch failed; fetch failed",
       "error_streak": 19,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed",
       "error_streak": 19,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed; fetch failed",
       "error_streak": 19,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     }
   ],
   "sources": [

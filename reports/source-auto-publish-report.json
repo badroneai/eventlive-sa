@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-08-07T14:07:40.780Z",
+  "published_at": "2026-08-07T19:30:58.792Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -1259,126 +1259,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-printing-house-20260807-e56f4f89",
-      "event_id": "event-printing-house",
-      "title": "Printing House",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260807-562bc61d",
-      "event_id": "event-tafasahu-make-room",
-      "title": "Tafasahu: Make Room",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-energy-lab-20260807-60155d60",
-      "event_id": "event-energy-lab",
-      "title": "Energy Lab",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260807-83c2ab55",
-      "event_id": "event-ithra-art-prize-exhibition",
-      "title": "Ithra Art Prize Exhibition",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tinkering-stations-20260807-5a2c4c0e",
-      "event_id": "event-tinkering-stations",
-      "title": "Tinkering Stations",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260807-ef7080ff",
-      "event_id": "event-trivia-night-earth-quest-tic-tac-know",
-      "title": "Trivia Night - Earth Quest: Tic-Tac-Know",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260807-2bf92d17",
-      "event_id": "event-childrens-art-studio",
-      "title": "Children's Art Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-energy-in-motion-20260807-e0404048",
-      "event_id": "event-energy-in-motion",
-      "title": "Energy in Motion",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-stories-from-ithras-library-20260807-4116de16",
-      "event_id": "event-stories-from-ithras-library",
-      "title": "Stories from Ithra's Library",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-open-art-space-20260807-40aac166",
-      "event_id": "event-open-art-space",
-      "title": "Open Art Space",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260807-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260807-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-dots-on-letters-20260807-b8901d67",
-      "event_id": "event-dots-on-letters",
-      "title": "Dots on Letters",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-family-game-20260807-fff43c76",
-      "event_id": "event-family-game",
-      "title": "Family Game",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260807-2671d1ce",
-      "event_id": "event-emboss-printing-experience",
-      "title": "Emboss Printing Experience",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-family-challenges-20260807-3726c868",
-      "event_id": "event-family-challenges",
-      "title": "Family Challenges",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-grand-art-space-20260807-e3acefbb",
-      "event_id": "event-grand-art-space",
-      "title": "Grand Art Space",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-museum-story-time-20260807-1104734c",
-      "event_id": "event-museum-story-time",
-      "title": "Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-games-hub-20260807-fb83124c",
-      "event_id": "event-games-hub",
-      "title": "Games Hub",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-paint-like-an-artist-20260807-a67d8ec3",
-      "event_id": "event-paint-like-an-artist",
-      "title": "Paint Like an Artist",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-hussain-moheb-live-in-riyadh-20260807-0f7ed5bd",
       "event_id": "event-hussain-moheb-live-in-riyadh",
       "title": "Hussain Moheb Live in Riyadh",
@@ -1388,6 +1268,30 @@
       "candidate_id": "candidate-mdlbeast-events-beast-house-20260807-83049a2a",
       "event_id": "event-beast-house",
       "title": "Beast House",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260808-83c2ab55",
+      "event_id": "event-ithra-art-prize-exhibition",
+      "title": "Ithra Art Prize Exhibition",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-printing-house-20260808-e56f4f89",
+      "event_id": "event-printing-house",
+      "title": "Printing House",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260808-562bc61d",
+      "event_id": "event-tafasahu-make-room",
+      "title": "Tafasahu: Make Room",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tinkering-stations-20260808-5a2c4c0e",
+      "event_id": "event-tinkering-stations",
+      "title": "Tinkering Stations",
       "reason": "already linked to catalog event"
     },
     {
@@ -1403,6 +1307,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260808-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260808-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-unbox-your-story-20260808-5085a6f0",
       "event_id": "event-unbox-your-story",
       "title": "Unbox Your Story",
@@ -1412,6 +1328,36 @@
       "candidate_id": "candidate-ithra-events-story-land-20260808-bb5dc01b",
       "event_id": "event-story-land",
       "title": "Story Land",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260808-2bf92d17",
+      "event_id": "event-childrens-art-studio",
+      "title": "Children's Art Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260808-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-family-challenges-20260808-3726c868",
+      "event_id": "event-family-challenges",
+      "title": "Family Challenges",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-games-hub-20260808-fb83124c",
+      "event_id": "event-games-hub",
+      "title": "Games Hub",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-energy-lab-20260808-60155d60",
+      "event_id": "event-energy-lab",
+      "title": "Energy Lab",
       "reason": "already linked to catalog event"
     },
     {
@@ -1427,9 +1373,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-grand-art-space-20260808-e3acefbb",
+      "event_id": "event-grand-art-space",
+      "title": "Grand Art Space",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-all-things-hedgehogs-20260808-952dc936",
       "event_id": "event-all-things-hedgehogs",
       "title": "All Things Hedgehogs",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-museum-story-time-20260808-1104734c",
+      "event_id": "event-museum-story-time",
+      "title": "Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -1469,6 +1427,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-paint-like-an-artist-20260810-a67d8ec3",
+      "event_id": "event-paint-like-an-artist",
+      "title": "Paint Like an Artist",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-platforms-manager-skills-20260810-62ec512d",
       "event_id": "event-platforms-manager-skills",
       "title": "Platforms Manager Skills",
@@ -1484,6 +1448,12 @@
       "candidate_id": "candidate-ithra-events-children-story-time-20260810-f545fa69",
       "event_id": "event-children-story-time",
       "title": "Children Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-energy-in-motion-20260810-e0404048",
+      "event_id": "event-energy-in-motion",
+      "title": "Energy in Motion",
       "reason": "already linked to catalog event"
     },
     {
@@ -1631,6 +1601,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260813-ef7080ff",
+      "event_id": "event-trivia-night-earth-quest-tic-tac-know",
+      "title": "Trivia Night - Earth Quest: Tic-Tac-Know",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-connect-and-create-20260813-d2514326",
       "event_id": "event-connect-and-create",
       "title": "Connect and Create!",
@@ -1646,6 +1622,30 @@
       "candidate_id": "candidate-ithra-events-survival-journey-20260814-4fd1e78d",
       "event_id": "event-survival-journey",
       "title": "Survival Journey",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-open-art-space-20260814-40aac166",
+      "event_id": "event-open-art-space",
+      "title": "Open Art Space",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-stories-from-ithras-library-20260814-4116de16",
+      "event_id": "event-stories-from-ithras-library",
+      "title": "Stories from Ithra's Library",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-dots-on-letters-20260814-b8901d67",
+      "event_id": "event-dots-on-letters",
+      "title": "Dots on Letters",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-family-game-20260814-fff43c76",
+      "event_id": "event-family-game",
+      "title": "Family Game",
       "reason": "already linked to catalog event"
     },
     {
