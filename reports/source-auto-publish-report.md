@@ -1,6 +1,6 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-07T07:57:51.565Z
+- published_at: 2026-08-07T14:07:40.780Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 600
@@ -165,6 +165,7 @@
 | candidate-visit-saudi-seasons-honey-festival-2026-20260726-e22ae419 | linked-existing | event-honey-festival-2026 | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل-20260726-aa1669c2 | linked-existing | event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل | already linked to catalog event |
 | candidate-umm-al-qura-events-فرص-تعاقد-على-مشروع-بحثي-ممول-20260727-602b04ea | linked-existing | event-وظائف-بحثية-تجربة | already linked to catalog event |
+| candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-تقنية-الطاقة-المتجددة-حضوري-بالتعاون-مع-معهد-الدر-20260801-919bab3f | linked-existing | event-الترشح-للدبلوم-المتوسط-تقنية-الطاقة-المتجددة-حضوري-بالتعاون-مع-معهد-الدر | already linked to catalog event |
 | candidate-discover-aseer-events-summer-legacy-20260801-aaba4732 | linked-existing | event-summer-legacy | already linked to catalog event |
 | candidate-monshaat-events-لقاءات-شهر-أغسطس-2026م-20260801-7c7747a6 | linked-existing | event-لقاءات-شهر-أغسطس-2026م | already linked to catalog event |
 | candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-البصريات-لخارج-مكة-20260801-70d68f2f | linked-existing | event-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-البصريات-لخارج-مكة | already linked to catalog event |
@@ -208,7 +209,6 @@
 | candidate-ithra-events-echoes-of-the-familiar-20260807-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-ithra-events-printing-house-20260807-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
 | candidate-ithra-events-tafasahu-make-room-20260807-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
-| candidate-ithra-events-paint-like-an-artist-20260807-a67d8ec3 | linked-existing | event-paint-like-an-artist | already linked to catalog event |
 | candidate-ithra-events-energy-lab-20260807-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
 | candidate-ithra-events-ithra-art-prize-exhibition-20260807-83c2ab55 | linked-existing | event-ithra-art-prize-exhibition | already linked to catalog event |
 | candidate-ithra-events-tinkering-stations-20260807-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
@@ -226,6 +226,7 @@
 | candidate-ithra-events-grand-art-space-20260807-e3acefbb | linked-existing | event-grand-art-space | already linked to catalog event |
 | candidate-ithra-events-museum-story-time-20260807-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-games-hub-20260807-fb83124c | linked-existing | event-games-hub | already linked to catalog event |
+| candidate-ithra-events-paint-like-an-artist-20260807-a67d8ec3 | linked-existing | event-paint-like-an-artist | already linked to catalog event |
 | candidate-visit-saudi-calendar-hussain-moheb-live-in-riyadh-20260807-0f7ed5bd | linked-existing | event-hussain-moheb-live-in-riyadh | already linked to catalog event |
 | candidate-mdlbeast-events-beast-house-20260807-83049a2a | linked-existing | event-beast-house | already linked to catalog event |
 | candidate-ithra-events-toddler-saturday-20260808-739e1f00 | linked-existing | event-toddler-saturday | already linked to catalog event |
@@ -288,7 +289,6 @@
 | candidate-ithra-events-youth-book-club-20260819-de163fbc | linked-existing | event-youth-book-club | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-august-2026-20260820-0636e29a | linked-existing | event-hayy-cinema-august-2026 | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-makers-woodworking-course-level-2-with-ahmad-sofi-20260822-96b7ac24 | linked-existing | event-hayy-makers | already linked to catalog event |
-| candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-تقنية-الطاقة-المتجددة-حضوري-بالتعاون-مع-معهد-الدر-20260823-919bab3f | linked-existing | event-الترشح-للدبلوم-المتوسط-تقنية-الطاقة-المتجددة-حضوري-بالتعاون-مع-معهد-الدر | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-التحول-الرقمي-حضوري-بالتعاون-مع-معهد-الدراسات--20260823-4b67a4d5 | linked-existing | event-الترشح-للدبلوم-المتوسط-في-التحول-الرقمي-حضوري-بالتعاون-مع-معهد-الدراسات- | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-الإدارة-المكتبية-حضوري-بالتعاون-مع-معهد-الدراس-20260823-b047d321 | linked-existing | event-الترشح-للدبلوم-المتوسط-في-الإدارة-المكتبية-حضوري-بالتعاون-مع-معهد-الدراس | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-التصميم-الجرافيكي-والوسائط-الرقمية-حضوري-بالتع-20260823-0f40ac79 | linked-existing | event-الترشح-للدبلوم-المتوسط-في-التصميم-الجرافيكي-والوسائط-الرقمية-حضوري-بالتع | already linked to catalog event |

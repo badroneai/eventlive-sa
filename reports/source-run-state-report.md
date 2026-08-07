@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-08-07T08:00:39.198Z
+Generated at: 2026-08-07T14:10:40.198Z
 
 ## Operating Rule
 
@@ -9,11 +9,11 @@ Raw collection is not publication. Every source run preserves evidence, separate
 ## Totals
 
 - Sources: 88
-- Attempted this run: 23
-- Deferred by adaptive cadence: 25
-- Productive: 21
-- Zero-yield: 0
-- Collector errors: 1
+- Attempted this run: 29
+- Deferred by adaptive cadence: 19
+- Productive: 22
+- Zero-yield: 1
+- Collector errors: 3
 - Persistent collector errors: 4
 - Probe blocked: 1
 - Auto-publish eligible source lanes: 12
@@ -123,7 +123,7 @@ Call log:
 | 68 | hail-chamber-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 69 | najran-chamber-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 70 | platinumlist-riyadh | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
-| 71 | najran-municipality-summer-events | venue-dedupe | zero-yield | 0 | no | Zero-yield for 11 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 71 | najran-municipality-summer-events | venue-dedupe | zero-yield | 0 | no | Zero-yield for 12 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 72 | platinumlist-saudi-city-network | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
 | 73 | my-gov-sa-events | partnership | partnership | 0 | no | Partnership/API lane; do not scrape protected or app-only data. |
 | 74 | middle-east-banking-ai-summit | extractor-backlog | not-attempted | 0 | no | Probe HTML/API shape, then decide whether an extractor is worth adding. |
@@ -137,7 +137,7 @@ Call log:
 | 82 | money2020-middle-east-agendas | extractor-backlog | not-attempted | 0 | no | Latest deep probe recommends build-jsonld-event-extractor; build only if future date-complete rows are visible. |
 | 83 | madinah-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 20 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 84 | madinah-architecture-festival | active-collector | productive | 1 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
-| 85 | hayy-jameel-events | active-collector | productive | 68 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 85 | hayy-jameel-events | active-collector | productive | 66 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 86 | informa-connect-saudi-events | venue-dedupe | productive | 6 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 87 | kau-events | venue-dedupe | productive | 4 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 88 | saudicon-events | discovery-only | productive | 15 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |

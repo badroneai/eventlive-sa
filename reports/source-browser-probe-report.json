@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T07:47:21.041Z",
+  "generated_at": "2026-08-07T13:56:54.300Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -8,17 +8,17 @@
     "scope": "priority",
     "limit": 8,
     "probed_this_run": 1,
-    "fresh_results_available": 4,
+    "fresh_results_available": 2,
     "wait_ms": 4500,
     "timeout_ms": 30000,
     "failure_cooldown_hours": 72
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 4,
+    "probed": 2,
     "browser_network_api": 0,
     "browser_hydration_payload": 0,
-    "rendered_html_candidates": 2,
+    "rendered_html_candidates": 1,
     "blocked_or_protected": 0,
     "policy_skipped": 0
   },
@@ -60,55 +60,8 @@
       "network_sample": []
     },
     {
-      "id": "saudi-space-agency-events",
-      "probed_at": "2026-08-07T00:20:37.222Z",
-      "name": "Saudi Space Agency Events",
-      "priority": 32,
-      "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
-      "final_url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
-      "status": "ok",
-      "http_status": 405,
-      "navigation_error": "",
-      "duration_ms": 6860,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 536,
-      "html_bytes": 687,
-      "html_snapshot": "data/raw/browser-probes/saudi-space-agency-events-2026-08-07T00-20-29-385Z.html",
-      "screenshot": "data/raw/browser-probes/saudi-space-agency-events-2026-08-07T00-20-29-385Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 1,
-      "network_endpoints": [],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 405,
-          "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
-          "content_type": "text/plain",
-          "resource_type": "document",
-          "request_post_data": "",
-          "response_shape": "text",
-          "preview": "Status Code: 405; Method Not Allowed"
-        }
-      ]
-    },
-    {
       "id": "riyadh-city-events",
-      "probed_at": "2026-08-07T00:20:49.218Z",
+      "probed_at": "2026-08-07T13:57:05.328Z",
       "name": "Riyadh City Events",
       "priority": 51,
       "url": "https://riyadh.sa/en/events/all",
@@ -116,14 +69,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 11971,
+      "duration_ms": 10575,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "الموقع الرسمي لمدينة الرياض",
       "text_bytes": 822,
       "html_bytes": 155259,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-08-07T00-20-29-385Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-08-07T00-20-29-385Z.png",
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-08-07T13-56-54-300Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-08-07T13-56-54-300Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -175,123 +128,6 @@
           "preview": "{ \"lang\": \"en\", \"main\": { \"title\": \"Riyadh City\" }, \"lastUpdated\": { \"label\": \"Last Modified Date\", \"timezone\": \"Saudi Arabia Time\" }, \"cookies\": { \"title\": \"Cookies\", \"consentIntro\": \"This site uses its own cookies to ensure ease of use and to improve your experience while browsing. By continuing to browse this site, you acknowledge and accept the use of cookies.\", \"privacyPolicy\": \"Privacy Policy\", \"accept\": \"Accept\", \"reject\": \"Reject\", \"manageLink\": \"Manage Cookies\", \"manageTitle\": \"Manage Cookies\", \"thanksTitle\": \"Cookies\", \"intro\": \"Whenever you visit a website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences, or your device, and is mostly used to make the site work as you expect it to. The information does not usually identify you directly, but it can give you a more personalized web experience. You can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, you should know that blocking some types of cookies may impact your experience of the site and the services we are able to offer.\", \"necessary\": \"These cookies are strictly necessary (always active)\", \"performance\": \"Performance cookies\", \"functional\": \"Functional cookies\", \"targeting\": \"Targeting cookies\", \"confirm\": \"Confirm my choices\", \"rejectAll\": \"Reject all\", \"thanksMessage\": \"Thank you! Your response has been recorded successfully. If you would like to edit or change your answer, you can go back by clicking the undo button.\", \"undo\": \"Undo\", \"close\": \"Close\" }, \"fileUploader\": { \"hint\": \"Maximum file size allowed is {{size}}"
         }
       ]
-    },
-    {
-      "id": "qassim-chamber-events",
-      "probed_at": "2026-08-07T00:20:55.909Z",
-      "name": "Qassim Chamber Events",
-      "priority": 60,
-      "url": "https://tc.qcc.org.sa/",
-      "final_url": "https://tc.qcc.org.sa/events",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 6664,
-      "classification": "rendered-html-candidates",
-      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
-      "title": "إدارة التدريب - غرفة القصيم",
-      "text_bytes": 855,
-      "html_bytes": 12733,
-      "html_snapshot": "data/raw/browser-probes/qassim-chamber-events-2026-08-07T00-20-29-385Z.html",
-      "screenshot": "data/raw/browser-probes/qassim-chamber-events-2026-08-07T00-20-29-385Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [
-          "الإدارة الرشيقة الفعالية انتهت الاثنين, يوليو 20 2026, 16:00 1448-02-06 أساسيات القيادة الرشيقة عرض التفاصيل عمليات إدارة الم",
-          "وارد البشرية الفعالية انتهت الاثنين, يوليو 6 2026, 16:30 1448-01-21 عمليات إدارة الموارد البشرية عرض التفاصيل أساسيات إدار",
-          "لمنشآت والشركات الفعالية انتهت الاثنين, يونيو 22 2026, 16:30 1448-01-07 أساسيات إدارة التأمين في المنشآت والشركات عرض التفاصي"
-        ],
-        "event_like_links": [
-          {
-            "text": "إستعراض الفعاليات",
-            "href": "https://tc.qcc.org.sa/events"
-          },
-          {
-            "text": "أساسيات الإدارة الرشيقة",
-            "href": "https://tc.qcc.org.sa/events/205"
-          },
-          {
-            "text": "عرض التفاصيل",
-            "href": "https://tc.qcc.org.sa/events/205"
-          },
-          {
-            "text": "عمليات إدارة الموارد البشرية",
-            "href": "https://tc.qcc.org.sa/events/204"
-          },
-          {
-            "text": "عرض التفاصيل",
-            "href": "https://tc.qcc.org.sa/events/204"
-          },
-          {
-            "text": "أساسيات إدارة التأمين في المنشآت والشركات",
-            "href": "https://tc.qcc.org.sa/events/203"
-          },
-          {
-            "text": "عرض التفاصيل",
-            "href": "https://tc.qcc.org.sa/events/203"
-          },
-          {
-            "text": "2",
-            "href": "https://tc.qcc.org.sa/events?page=2"
-          },
-          {
-            "text": "3",
-            "href": "https://tc.qcc.org.sa/events?page=3"
-          },
-          {
-            "text": "4",
-            "href": "https://tc.qcc.org.sa/events?page=4"
-          },
-          {
-            "text": "5",
-            "href": "https://tc.qcc.org.sa/events?page=5"
-          },
-          {
-            "text": "6",
-            "href": "https://tc.qcc.org.sa/events?page=6"
-          },
-          {
-            "text": "7",
-            "href": "https://tc.qcc.org.sa/events?page=7"
-          },
-          {
-            "text": "8",
-            "href": "https://tc.qcc.org.sa/events?page=8"
-          },
-          {
-            "text": "9",
-            "href": "https://tc.qcc.org.sa/events?page=9"
-          },
-          {
-            "text": "10",
-            "href": "https://tc.qcc.org.sa/events?page=10"
-          },
-          {
-            "text": "65",
-            "href": "https://tc.qcc.org.sa/events?page=65"
-          },
-          {
-            "text": "66",
-            "href": "https://tc.qcc.org.sa/events?page=66"
-          },
-          {
-            "text": "›",
-            "href": "https://tc.qcc.org.sa/events?page=2"
-          }
-        ]
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 0,
-      "network_endpoints": [],
-      "network_sample": []
     }
   ]
 }
