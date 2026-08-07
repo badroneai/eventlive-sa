@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T14:59:16.188Z",
+  "generated_at": "2026-08-07T00:34:16.217Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -9,7 +9,7 @@
     "fetched": 3,
     "reused": 493,
     "failed": 4,
-    "skipped_recent_failures": 3,
+    "skipped_recent_failures": 4,
     "remembered_failures": 7
   },
   "fetched": [
@@ -21,7 +21,7 @@
     },
     {
       "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%202026-08-06%20144218.png?itok=mkC1-0ZB",
-      "file": "dist/assets/event-images/أساسيات-التخزين-السحابي-وقواعد-البيانات-102e8ba919.png",
+      "file": "dist/assets/event-images/machine-learning-ضمن-102e8ba919.png",
       "bytes": 44292,
       "events": 15
     },
@@ -299,11 +299,6 @@
       "events": 1
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZGtoLnBuZw/dkh.png?w=1024&fm=webp&s=46022c19880cd717dffbd3820e44ac8b",
-      "file": "dist/assets/event-images/دكة-a1f17b9d24.webp",
-      "events": 1
-    },
-    {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvbW50Z2FhLWFsb2FkeS05LmpwZWc/mntgaa-aloady-9.jpeg?w=1024&fm=webp&s=3eb9e2fa555285d003f6023ca81dac83",
       "file": "dist/assets/event-images/منتجع-الوادي-9aab1000ed.webp",
       "events": 1
@@ -464,11 +459,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/947c8f3cf9955abb14f13c7d27d75131.jpg",
-      "file": "dist/assets/event-images/ithra-summer-camp-2026-a-world-of-homes-2fce7df61a.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/68a12e07a6da5cc989dd7fbd73d03107.jpg",
       "file": "dist/assets/event-images/bedayat-beginnings-of-saudi-art-movement-5815006859.jpg",
       "events": 1
@@ -482,11 +472,6 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/85d5578f24bf5b2a9e720c84eec26adc.jpg",
       "file": "dist/assets/event-images/english-children-book-club-7-9-5174b0b666.jpg",
       "events": 4
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/IGYDN_Still_2_72_DPI_Tawfeek_Barhom_Kidam_Foss_production-cc5bea-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-in-short-film-programme-summer-edition-ca91ef0332.jpg",
-      "events": 1
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1bfbc17fa9fc0e794418752ac39ebb8d.jpg",
@@ -704,11 +689,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/44c29a424fe8b0284cf1d63032466fa6.jpg",
-      "file": "dist/assets/event-images/the-almost-perfect-guide-to-event-management-4d1c29907d.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d9066fa3a95acb81e626150dc55fbeb7.jpg",
       "file": "dist/assets/event-images/وقت-قصص-الأطفال-450371399c.jpg",
       "events": 1
@@ -751,11 +731,6 @@
     {
       "source_url": "https://scth.scene7.com/is/image/scth/hussain-moheb?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/hussain-moheb-live-in-riyadh-66decad2f9.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/pvg2c15v.k3e.webp",
-      "file": "dist/assets/event-images/معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-8e8c650509.webp",
       "events": 1
     },
     {
@@ -1729,6 +1704,11 @@
       "events": 1
     },
     {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/pvg2c15v.k3e.webp",
+      "file": "dist/assets/event-images/معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-8e8c650509.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/uxkkl54r.3ng.webp",
       "file": "dist/assets/event-images/معسكر-طويق-السيبراني-00da1b33f9.webp",
       "events": 1
@@ -1964,6 +1944,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/44c29a424fe8b0284cf1d63032466fa6.jpg",
+      "file": "dist/assets/event-images/the-almost-perfect-guide-to-event-management-4d1c29907d.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2a93a513735da824f0d28d0a8d24b99d.jpg",
       "file": "dist/assets/event-images/children-s-museum-free-monday-197cdfde54.jpg",
       "events": 1
@@ -2184,6 +2169,11 @@
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/IGYDN_Still_2_72_DPI_Tawfeek_Barhom_Kidam_Foss_production-cc5bea-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-in-short-film-programme-summer-edition-ca91ef0332.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/Table-3-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-makers-woodworking-course-level-2-with-ahmad-sofi-395adc1ba2.jpg",
       "events": 1
@@ -2222,6 +2212,11 @@
       "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2022-08/types-of-cloud-computing.png?itok=OuG9_dIR",
       "file": "dist/assets/event-images/أساسيات-الحوسبة-السحابية-cloud-computing-essentials-d84b80a7c2.png",
       "events": 2
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/947c8f3cf9955abb14f13c7d27d75131.jpg",
+      "file": "dist/assets/event-images/ithra-summer-camp-2026-a-world-of-homes-2fce7df61a.jpg",
+      "events": 1
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9bc17ba5c2c11392124d984206f68f22.jpg",
@@ -2497,6 +2492,11 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c8dbd06910da7730a9a477501de4df71.jpg",
       "file": "dist/assets/event-images/book-signing-sessions-1-f02020009b.jpg",
       "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/729cf79cc190dce7b56c51d33b502b3a.jpg",
+      "file": "dist/assets/event-images/low-budget-films-opportunity-artistic-choice-or-a-phase-f80b6e67ef.jpg",
+      "events": 7
     }
   ],
   "rejected_removed": [],
@@ -2507,13 +2507,8 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
-      "file": "dist/assets/event-images/مؤتمر-الحطام-الفضائي-2028-ed926e1bba.webp",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%202026-08-06%20134537.png?itok=GtPbmcLG",
-      "file": "dist/assets/event-images/أساسيات-التخزين-السحابي-وقواعد-البيانات-3e2d305608.png",
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%202026-08-06%20144218.png?itok=mkC1-0ZB",
+      "file": "dist/assets/event-images/أساسيات-التخزين-السحابي-وقواعد-البيانات-102e8ba919.png",
       "reason": "cached-file-missing"
     },
     {
@@ -2545,6 +2540,14 @@
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
       "retry_after": "2026-08-07T09:01:42.492Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
+      "events": 1,
+      "reason": "AggregateError",
+      "failure_kind": "fetch-failed",
+      "retry_after": "2026-08-07T14:59:16.188Z",
       "skipped": true
     }
   ],
@@ -2578,13 +2581,13 @@
       "events": 1,
       "reason": "AggregateError",
       "failure_kind": "fetch-failed",
-      "retry_after": "2026-08-07T14:59:16.188Z"
+      "retry_after": "2026-08-07T14:59:16.188Z",
+      "skipped": true
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
     "fetched:3",
-    "missing-removed:4",
-    "new-failures:1"
+    "missing-removed:3"
   ]
 }

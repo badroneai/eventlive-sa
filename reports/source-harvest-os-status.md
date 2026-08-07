@@ -1,30 +1,30 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-06T15:06:59.481Z
+- Generated at: 2026-08-07T00:40:43.890Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 605
-- Matched candidates: 573
+- Candidates: 600
+- Matched candidates: 568
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 21/24
+- Productive sources / attempted: 21/25
 - Collector errors: 4 (chronic 3, transient 1)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 323 |
-| candidate_queue | 605 |
-| evaluated_for_publish | 605 |
-| linked_existing | 561 |
+| discovered_this_run | 317 |
+| candidate_queue | 600 |
+| evaluated_for_publish | 600 |
+| linked_existing | 555 |
 | published_new | 6 |
-| blocked | 38 |
+| blocked | 39 |
 | secondary_promoted | 0 |
 | secondary_still_blocked | 34 |
 
@@ -37,6 +37,7 @@
 | possible duplicate requires review: exact-title-city-source-conflict | 6 |
 | linked catalog row event-aseer-season was superseded by dedupe | 2 |
 | possible duplicate requires review: exact-title-city-venue-conflict | 2 |
+| linked catalog row event-dakah was superseded by dedupe | 1 |
 | possible duplicate already exists: event-saudi-industrial-series-2 | 1 |
 | possible duplicate already exists: event-leap-2026 | 1 |
 | linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe | 1 |
@@ -49,7 +50,7 @@
 | moc-cultural-calendar | chronic | 18 | no | collector-error: fetch failed; fetch failed |
 | mos-events | chronic | 18 | no | collector-error: fetch failed |
 | moc-cultural-subportals | chronic | 18 | no | collector-error: fetch failed; fetch failed |
-| saudi-space-agency-events | transient | 1 | yes | fetch failed |
+| monshaat-events | transient | 1 | yes | fetch failed; fetch failed |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

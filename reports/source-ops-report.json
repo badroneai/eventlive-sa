@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T14:59:53.838Z",
+  "generated_at": "2026-08-07T00:34:49.386Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-08-06T14:47:40.351Z",
+    "collected_at": "2026-08-07T00:20:56.067Z",
     "freshness": "fresh",
-    "discovered": 323,
-    "written": 605
+    "discovered": 317,
+    "written": 600
   },
   "sources": {
     "total": 88,
-    "attempted": 24,
-    "due": 24,
-    "deferred": 24,
+    "attempted": 25,
+    "due": 25,
+    "deferred": 23,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 27,
+    "registry_collection_coverage_pct": 28,
     "scheduled_runnable_coverage_pct": 100,
     "healthy": 21,
-    "zero_yield": 2,
+    "zero_yield": 3,
     "errors": 1,
-    "cadence_deferred": 24,
+    "cadence_deferred": 23,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -139,13 +139,13 @@
         "id": "monshaat-events",
         "name": "Monsha'at All Events",
         "priority": 9,
-        "status": "healthy",
+        "status": "collection-error",
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 2,
+        "extracted": 0,
         "candidates": 2,
-        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
+        "next_action": "fetch failed; fetch failed"
       },
       {
         "id": "invest-saudi-events",
@@ -245,8 +245,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 7,
-        "candidates": 7,
+        "extracted": 6,
+        "candidates": 6,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -320,8 +320,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 78,
-        "candidates": 78,
+        "extracted": 76,
+        "candidates": 76,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -340,16 +340,13 @@
         "id": "sdaia-academy-programs",
         "name": "SDAIA Academy Programs",
         "priority": 25,
-        "status": "deferred",
-        "historical_status": "zero-yield",
-        "cadence_reason": "zero-yield-cooldown",
-        "next_due_at": "2026-08-06T20:19:02.344Z",
+        "status": "zero-yield",
         "error_streak": 0,
-        "zero_yield_streak": 13,
-        "last_attempted_at": "2026-08-03T20:19:02.344Z",
+        "zero_yield_streak": 0,
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 0,
-        "next_action": "مؤجل حتى 2026-08-06T20:19:02.344Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "saudi-events-app",
@@ -436,13 +433,13 @@
         "id": "saudi-space-agency-events",
         "name": "Saudi Space Agency Events",
         "priority": 32,
-        "status": "collection-error",
+        "status": "healthy",
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 0,
+        "extracted": 1,
         "candidates": 1,
-        "next_action": "fetch failed"
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "cst-events-news",
@@ -790,7 +787,7 @@
         "last_attempted_at": null,
         "extracted": 0,
         "candidates": 0,
-        "next_action": "Recovered via live-browser-recovery official evidence. Primary page failed: HTTP 403. No future date-complete candidates found by the conservative extractor."
+        "next_action": "Recovered via browser-probe official evidence. No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "abha-chamber-events",
@@ -995,8 +992,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 7,
-        "candidates": 50,
+        "extracted": 6,
+        "candidates": 49,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -1112,8 +1109,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 67,
-        "candidates": 74,
+        "extracted": 66,
+        "candidates": 73,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -1164,28 +1161,28 @@
     ]
   },
   "queue": {
-    "total": 605,
+    "total": 600,
     "ready_for_review": 8,
     "approved_for_catalog": 0,
-    "published_from_candidates": 571,
+    "published_from_candidates": 566,
     "actionable": 8,
     "stale_unpublished": 0,
     "duplicate_risk": 6,
     "needs_extraction": 0,
     "needs_evidence": 26,
     "by_review_status": {
-      "approved-for-catalog": 571,
+      "approved-for-catalog": 566,
       "ready-for-review": 8,
       "evidence-captured": 18,
       "new": 8
     },
     "by_publication_gate": {
-      "catalog-review": 571,
+      "catalog-review": 566,
       "duplicate-review": 8,
       "source-evidence": 26
     },
     "by_confidence": {
-      "official": 565,
+      "official": 560,
       "public-listing": 21,
       "verified-secondary": 11,
       "unverified": 8
@@ -1202,17 +1199,17 @@
       "Visit Saudi Summer Calendar PDF": 68,
       "Misk Hub Programs": 11,
       "Discover Aseer Events": 39,
-      "Hayy Jameel What's On": 74,
+      "Hayy Jameel What's On": 73,
       "Visit Saudi Seasons": 16,
       "Tuwaiq Academy Bootcamps and Programs": 37,
       "Eye of Riyadh Events": 6,
       "Saudicon Events": 15,
       "Jouf University Summer Programs": 1,
-      "Umm Al-Qura University Events Center": 50,
+      "Umm Al-Qura University Events Center": 49,
       "Monsha'at All Events": 2,
-      "Future Skills MCIT Catalogue": 7,
-      "Ithra Events": 78,
       "MDLBEAST Events": 5,
+      "Ithra Events": 76,
+      "Future Skills MCIT Catalogue": 6,
       "Saudi Food and Drug Authority Events": 8,
       "Dhahran Expo Calendar": 17,
       "Tradepass Official": 1,

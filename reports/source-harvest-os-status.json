@@ -1,18 +1,18 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-06T15:06:59.481Z",
+  "generated_at": "2026-08-07T00:40:43.890Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 605,
-    "matched_candidates": 573,
+    "candidates": 600,
+    "matched_candidates": 568,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 24,
+    "collection_attempted": 25,
     "productive_sources": 21,
     "collector_errors": 4,
     "chronic_collector_errors": 3,
@@ -25,23 +25,24 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 571,
+    "catalog-review": 566,
     "duplicate-review": 8,
     "source-evidence": 26
   },
   "funnel": {
-    "discovered_this_run": 323,
-    "candidate_queue": 605,
-    "evaluated_for_publish": 605,
-    "linked_existing": 561,
+    "discovered_this_run": 317,
+    "candidate_queue": 600,
+    "evaluated_for_publish": 600,
+    "linked_existing": 555,
     "published_new": 6,
-    "blocked": 38,
+    "blocked": 39,
     "secondary_promoted": 0,
     "secondary_still_blocked": 34
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 6,
     "linked catalog row event-aseer-season was superseded by dedupe": 2,
+    "linked catalog row event-dakah was superseded by dedupe": 1,
     "publication gate source-evidence is not auto-publishable": 14,
     "unknown category requires review": 10,
     "possible duplicate already exists: event-saudi-industrial-series-2": 1,
@@ -73,8 +74,8 @@
       "attempted_this_run": false
     },
     {
-      "id": "saudi-space-agency-events",
-      "note": "fetch failed",
+      "id": "monshaat-events",
+      "note": "fetch failed; fetch failed",
       "error_streak": 1,
       "kind": "transient",
       "attempted_this_run": true

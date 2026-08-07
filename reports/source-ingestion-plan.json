@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T14:59:53.517Z",
+  "generated_at": "2026-08-07T00:34:49.174Z",
   "source_registry": "data/source_registry.json",
   "source_collection_report": "reports/source-collection-report.json",
   "totals": {
@@ -507,14 +507,14 @@
       "cadence": "daily",
       "score": 133,
       "has_active_collector": true,
-      "last_collection_status": "ok",
-      "last_extracted": 2,
+      "last_collection_status": "error",
+      "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
       "known_candidates": 2,
-      "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
+      "next_action": "Run in the 6-hour sync ring; improve zero-yield extractors before widening."
     },
     {
       "id": "invest-saudi-events",
@@ -692,12 +692,12 @@
       "score": 125,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 7,
+      "last_extracted": 6,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 7,
+      "known_candidates": 6,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -830,12 +830,12 @@
       "score": 119,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 78,
+      "last_extracted": 76,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 78,
+      "known_candidates": 76,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -875,7 +875,7 @@
       "cadence": "daily",
       "score": 117,
       "has_active_collector": true,
-      "last_collection_status": "",
+      "last_collection_status": "ok",
       "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": 0,
@@ -1036,14 +1036,14 @@
       "cadence": "daily",
       "score": 98,
       "has_active_collector": true,
-      "last_collection_status": "error",
-      "last_extracted": 0,
+      "last_collection_status": "ok",
+      "last_extracted": 1,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
       "known_candidates": 1,
-      "next_action": "Run in the 6-hour sync ring; improve zero-yield extractors before widening."
+      "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
       "id": "cst-events-news",
@@ -2049,12 +2049,12 @@
       "score": 66,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 7,
+      "last_extracted": 6,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 50,
+      "known_candidates": 49,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -2256,12 +2256,12 @@
       "score": 63,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 67,
+      "last_extracted": 66,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 74,
+      "known_candidates": 73,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
