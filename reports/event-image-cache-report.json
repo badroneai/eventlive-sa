@@ -1,18 +1,25 @@
 {
-  "generated_at": "2026-08-08T13:29:41.925Z",
+  "generated_at": "2026-08-08T19:29:36.314Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 793,
-    "fetched": 0,
-    "reused": 497,
+    "cached_total": 794,
+    "fetched": 1,
+    "reused": 496,
     "failed": 3,
-    "skipped_recent_failures": 3,
+    "skipped_recent_failures": 0,
     "remembered_failures": 6
   },
-  "fetched": [],
+  "fetched": [
+    {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvaGFtYWtpLnBuZw/hamaki.png?w=1024&fm=webp&s=d6b46ce0f3e022e5bcced45dd222ed9e",
+      "file": "dist/assets/event-images/concert-mohamed-hamaki-b5c7ae3ec4.webp",
+      "bytes": 43718,
+      "events": 1
+    }
+  ],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -705,8 +712,8 @@
       "events": 1
     },
     {
-      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%202026-08-06%20134537.png?itok=GtPbmcLG",
-      "file": "dist/assets/event-images/machine-learning-ضمن-3e2d305608.png",
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%202026-08-06%20144218.png?itok=mkC1-0ZB",
+      "file": "dist/assets/event-images/machine-learning-ضمن-102e8ba919.png",
       "events": 15
     },
     {
@@ -2493,67 +2500,37 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c8dbd06910da7730a9a477501de4df71.jpg",
       "file": "dist/assets/event-images/book-signing-sessions-1-f02020009b.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/729cf79cc190dce7b56c51d33b502b3a.jpg",
-      "file": "dist/assets/event-images/low-budget-films-opportunity-artistic-choice-or-a-phase-f80b6e67ef.jpg",
-      "events": 7
     }
   ],
   "rejected_removed": [],
   "missing_removed": [],
-  "skipped_recent_failures": [
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-08T14:10:24.327Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-08T14:10:24.327Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-08T14:10:24.327Z",
-      "skipped": true
-    }
-  ],
+  "skipped_recent_failures": [],
   "failed": [
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-08-08T14:10:24.327Z",
-      "skipped": true
+      "retry_after": "2026-08-09T19:29:36.314Z"
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-08T14:10:24.327Z",
-      "skipped": true
+      "retry_after": "2026-08-09T19:29:36.314Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-08-08T14:10:24.327Z",
-      "skipped": true
+      "retry_after": "2026-08-09T19:29:36.314Z"
     }
   ],
-  "requires_rebuild": false,
-  "rebuild_reasons": []
+  "requires_rebuild": true,
+  "rebuild_reasons": [
+    "fetched:1",
+    "new-failures:3"
+  ]
 }

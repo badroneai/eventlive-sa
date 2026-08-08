@@ -1,13 +1,23 @@
 {
-  "generated_at": "2026-08-08T13:28:37.855Z",
+  "generated_at": "2026-08-08T19:28:35.169Z",
   "totals": {
-    "targets": 6,
-    "enriched": 6,
-    "fetched": 6,
-    "images": 6,
+    "targets": 7,
+    "enriched": 7,
+    "fetched": 7,
+    "images": 7,
     "fetch_failures": 0
   },
   "enriched": [
+    {
+      "id": "event-concert-mohamed-hamaki",
+      "title": "Concert – Mohamed Hamaki",
+      "source_label": "Discover Aseer Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://discoveraseer.com/en/experiences/hfl-ghnayy-mhmd-hmaky",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
     {
       "id": "event-الأخطبوطية",
       "title": "الاخطبوطية",
