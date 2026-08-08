@@ -1,9 +1,9 @@
 {
   "schema": "eventlive.source-final-build.v1",
-  "generated_at": "2026-08-08T02:36:46.709Z",
+  "generated_at": "2026-08-08T07:29:50.967Z",
   "image_cache_report": "reports/event-image-cache-report.json",
   "decision": "skipped-no-image-change",
-  "duration_ms": 0,
+  "duration_ms": 1,
   "exit_code": 0,
   "cache_totals": {
     "targets": 500,
