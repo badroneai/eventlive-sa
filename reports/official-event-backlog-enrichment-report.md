@@ -1,5 +1,5 @@
 # EventLive Official Event Backlog Enrichment
-- Generated at: 2026-08-07T19:32:39.904Z
+- Generated at: 2026-08-08T02:35:42.954Z
 - Targets: 7
 - Enriched: 7
 - Fetched: 7
@@ -14,4 +14,4 @@
 | Visit Saudi Summer Calendar PDF | عروض الفنون الادائية التقليدية | official-page-meta | yes | yes |
 | Visit Saudi Summer Calendar PDF | قصور وقلاع ابو نقطة المتحمي | official-page-meta | yes | yes |
 | Visit Saudi Summer Calendar PDF | مزرعة التوت الاسود | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | بلاتو | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | منعً في للاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد | official-page-meta | yes | yes |

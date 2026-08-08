@@ -1,25 +1,18 @@
 {
-  "generated_at": "2026-08-07T19:33:43.503Z",
+  "generated_at": "2026-08-08T02:36:46.294Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
     "cached_total": 793,
-    "fetched": 1,
-    "reused": 496,
+    "fetched": 0,
+    "reused": 497,
     "failed": 3,
     "skipped_recent_failures": 3,
     "remembered_failures": 6
   },
-  "fetched": [
-    {
-      "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
-      "file": "dist/assets/event-images/مؤتمر-الحطام-الفضائي-2028-ed926e1bba.webp",
-      "bytes": 17480,
-      "events": 1
-    }
-  ],
+  "fetched": [],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -707,18 +700,8 @@
       "events": 1
     },
     {
-      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
-      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
-      "events": 5
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2fcd7911e5e79f6eeaedb4d9031f71b0.jpg",
       "file": "dist/assets/event-images/dots-on-letters-28119e3242.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/hussain-moheb?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/hussain-moheb-live-in-riyadh-66decad2f9.webp",
       "events": 1
     },
     {
@@ -1357,6 +1340,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
+      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
+      "events": 5
+    },
+    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/esports.jpg?itok=m-JCBfZQ",
       "file": "dist/assets/event-images/new-global-sport-conference-118e7a7283.jpg",
       "events": 1
@@ -1944,6 +1932,16 @@
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC01859-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-cinema-international-cat-day-open-call-1c5bd9fc74.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
+      "file": "dist/assets/event-images/مؤتمر-الحطام-الفضائي-2028-ed926e1bba.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/hussain-moheb?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/hussain-moheb-live-in-riyadh-66decad2f9.webp",
       "events": 1
     },
     {
@@ -2556,8 +2554,6 @@
       "skipped": true
     }
   ],
-  "requires_rebuild": true,
-  "rebuild_reasons": [
-    "fetched:1"
-  ]
+  "requires_rebuild": false,
+  "rebuild_reasons": []
 }

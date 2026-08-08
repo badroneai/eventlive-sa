@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-07T19:30:58.792Z",
+  "published_at": "2026-08-08T02:33:51.028Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 600,
+  "candidates_seen": 596,
   "totals": {
-    "candidates_seen": 600,
+    "candidates_seen": 596,
     "published": 6,
-    "linked_existing": 555,
+    "linked_existing": 551,
     "blocked": 39,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 561
+    "reconciled": 557
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -1229,45 +1229,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-حسين-محب-ايف-في-الرياض-20260807-4a38d19e",
-      "event_id": "event-hussain-moheb-live-in-riyadh",
-      "title": "حسين محب ايف في الرياض",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-mdlbeast-events-unstable-20260807-5647df2e",
-      "event_id": "event-unstable",
-      "title": "Unstable",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-discover-aseer-events-musical-concerts-20260807-169733ac",
       "event_id": "event-musical-concerts",
       "title": "Musical concerts",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260807-e0a239ef",
-      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
-      "title": "Bedayat: Beginnings of Saudi Art Movement",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260807-cc43c2bd",
-      "event_id": "event-echoes-of-the-familiar",
-      "title": "Echoes of the Familiar",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-hussain-moheb-live-in-riyadh-20260807-0f7ed5bd",
-      "event_id": "event-hussain-moheb-live-in-riyadh",
-      "title": "Hussain Moheb Live in Riyadh",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-mdlbeast-events-beast-house-20260807-83049a2a",
-      "event_id": "event-beast-house",
-      "title": "Beast House",
       "reason": "already linked to catalog event"
     },
     {
@@ -1292,6 +1256,18 @@
       "candidate_id": "candidate-ithra-events-tinkering-stations-20260808-5a2c4c0e",
       "event_id": "event-tinkering-stations",
       "title": "Tinkering Stations",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260808-e0a239ef",
+      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
+      "title": "Bedayat: Beginnings of Saudi Art Movement",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260808-cc43c2bd",
+      "event_id": "event-echoes-of-the-familiar",
+      "title": "Echoes of the Familiar",
       "reason": "already linked to catalog event"
     },
     {
