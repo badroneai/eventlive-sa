@@ -13,6 +13,29 @@ function escapeHtmlForTest(value = '') {
     .replace(/"/g, '&quot;');
 }
 
+// A session title renders as ELEMENT TEXT (<b>…</b>), where `"` needs no
+// escaping — and the localizer's cheerio pass re-serializes it as a bare
+// quote. Only &, < and > are mandatory there, so a title containing a quote
+// legitimately appears in two forms depending on which pass wrote it last.
+//
+// 2026-08-09: this check passed for the wrong reason until then. A session
+// title arrived from its source still HTML-escaped (`&quot; سادسا &quot;`),
+// the renderer escaped it a second time into `&amp;quot;`, and this test —
+// escaping the same broken value from the same feed — matched the same
+// corruption on both sides. Once the entity was decoded at ingestion the
+// title became a real quote and only this stricter form went red. Accept
+// either escaping, so the check tests rendering rather than a byte pattern.
+function escapeTextForTest(value = '') {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
+function rendersTitle(html, title) {
+  return html.includes(escapeHtmlForTest(title)) || html.includes(escapeTextForTest(title));
+}
+
 const events = JSON.parse(fs.readFileSync('dist/events.json', 'utf8')).events || [];
 // Class lesson: display titles are mutable by the autonomous MT queue (this
 // event's display title was rewritten to "ليب 2026" mid-flight, breaking a
@@ -98,7 +121,7 @@ assert.equal((smartDataHtml.match(/<article class="session"[^>]+data-session-ite
 // structurally against the build's own session data instead of hardcoded
 // English title fragments (same class ban as the LEAP title lesson).
 assert.ok(
-  smartData.sessions.length > 0 && smartData.sessions.every((session) => smartDataHtml.includes(escapeHtmlForTest(session.title))),
+  smartData.sessions.length > 0 && smartData.sessions.every((session) => rendersTitle(smartDataHtml, session.title)),
   'Smart Data agenda must render every official session title verbatim'
 );
 assert.match(smartDataHtml, /https:\/\/saudi\.smartdataseries\.com\/agenda/, 'Smart Data sessions must retain first-party evidence links');
@@ -115,7 +138,7 @@ assert.equal((rffHtml.match(/<article class="session"[^>]+data-session-item/g) |
 // structurally against the build's own session data instead of hardcoded
 // English title fragments (same class ban as the LEAP title lesson).
 assert.ok(
-  rff2026.sessions.length > 0 && rff2026.sessions.every((session) => rffHtml.includes(escapeHtmlForTest(session.title))),
+  rff2026.sessions.length > 0 && rff2026.sessions.every((session) => rendersTitle(rffHtml, session.title)),
   'RFF 2026 must render every official session title verbatim'
 );
 assert.doesNotMatch(rffHtml, /25.*27.*2027|٢٠٢٧/, 'RFF 2027 dates must not leak into the RFF 2026 agenda page');
@@ -130,7 +153,7 @@ assert.equal((proptechHtml.match(/<article class="session"[^>]+data-session-item
 // structurally against the build's own session data instead of hardcoded
 // English title fragments (same class ban as the LEAP title lesson).
 assert.ok(
-  proptech2025.sessions.length > 0 && proptech2025.sessions.every((session) => proptechHtml.includes(escapeHtmlForTest(session.title))),
+  proptech2025.sessions.length > 0 && proptech2025.sessions.every((session) => rendersTitle(proptechHtml, session.title)),
   'Global PropTech 2025 must render every official session title verbatim'
 );
 assert.doesNotMatch(proptechHtml, /25\s*(?:-|–)\s*26\s+(?:October|Oct)\s+2026|٢٥\s*(?:-|–)\s*٢٦[^\n]{0,30}٢٠٢٦/i, 'Global PropTech 2026 dates must not leak into the 2025 agenda page');
