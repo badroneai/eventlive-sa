@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T02:41:10.332Z",
+  "generated_at": "2026-08-09T07:34:54.223Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -9,9 +9,9 @@
     "min_intersection": 2
   },
   "totals": {
-    "pdf_crop_assignments": 56,
+    "pdf_crop_assignments": 55,
     "verified": 54,
-    "struck": 2,
+    "struck": 1,
     "slots_seen_this_cycle": 58
   },
   "struck": [
@@ -23,13 +23,6 @@
       "detail": "page 6 top-left is now \"بلاتو\"",
       "matched_tokens": [],
       "ratio": 0
-    },
-    {
-      "id": "event-ضحكات-الرياض",
-      "title": "ضحكات الرياض",
-      "file": "visit-saudi-summer-2026-p061-top-left.jpg",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 61 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     }
   ],
   "verified": [

@@ -1,15 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-08-09T02:41:10.332Z
-- pdf_crop_assignments: 56
+- generated_at: 2026-08-09T07:34:54.223Z
+- pdf_crop_assignments: 55
 - verified: 54
-- struck: 2
+- struck: 1
 - slots_seen_this_cycle: 58
 
 ## Struck (fell back to generated cover)
 
 - باتو (visit-saudi-summer-2026-p006-top-left.jpg) - identity-mismatch - page 6 top-left is now "بلاتو"
-- ضحكات الرياض (visit-saudi-summer-2026-p061-top-left.jpg) - slot-vacated - no dated card currently occupies page 61 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 
