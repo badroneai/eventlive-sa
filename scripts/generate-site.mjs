@@ -27,6 +27,7 @@ import { createContentTranslator } from './content-translation-cache.mjs';
 import { ARABIC_DAYS_LABEL_JS, DURATION_LABEL_RUNTIME_JS } from './duration-label.mjs';
 import { eventDateRangeLabel, isMultiDayEvent } from './event-date-range.mjs';
 import { canonicalEventSlug, EVENT_ALIAS_PAGES } from './event-canonical-aliases.mjs';
+import { loadUrlLedger, reconcileUrlLedger, saveUrlLedger } from './published-url-ledger.mjs';
 import { buildTitleQualifiers, eventQualifierKey, withTitleQualifier } from './event-title-qualifier.mjs';
 import { classifyEventKind, eventKindLabel, getEventStatus } from './event-kind-utils.mjs';
 import { decodeHtmlEntities } from './html-entities.mjs';
@@ -2923,6 +2924,46 @@ function writeLegacyCategoryRedirectPages(events) {
 `;
     writeText(path.join(categoriesDir, `${staleSlug}.html`), html);
   }
+}
+
+// An event page whose slug changed while the event itself stayed published (see
+// scripts/published-url-ledger.mjs). Same stub shape as the category redirects
+// above: meta-refresh for the visitor, canonical for the crawler, out of the
+// sitemap. Without this the old URL simply 404s and every link and ranking it
+// had earned is discarded — which is what Search Console was reporting.
+// Populated by writeEventRedirectStubs() and consulted by writeSitemap(): a
+// stub canonicalises elsewhere, so submitting it for indexing would contradict
+// its own canonical tag.
+const eventRedirectStubPages = new Set();
+
+function writeEventRedirectStubs(moved = new Map()) {
+  let written = 0;
+  for (const [staleSlug, currentSlug] of moved) {
+    const targetPath = path.join(eventsDir, `${currentSlug}.html`);
+    // Never point a stub at a page this build did not produce.
+    if (!fs.existsSync(targetPath)) continue;
+    const targetHref = `./${currentSlug}.html`;
+    const canonical = `${siteUrl}/events/${currentSlug}.html`;
+    const html = `<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="refresh" content="0; url=${escapeHtml(targetHref)}" />
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="canonical" href="${escapeHtml(canonical)}" />
+<title>انتقلت صفحة الفعالية — ${platformName}</title>
+<meta name="description" content="${escapeHtml(`تغيّر رابط هذه الفعالية في ${platformName}. الصفحة الحالية تحمل نفس الفعالية بوقتها ومكانها ومصدرها.`)}" />
+</head>
+<body>
+<p>انتقلت هذه الفعالية إلى <a href="${escapeHtml(targetHref)}">صفحتها الحالية</a>.</p>
+</body>
+</html>
+`;
+    writeText(path.join(eventsDir, `${staleSlug}.html`), html);
+    eventRedirectStubPages.add(`events/${staleSlug}.html`.normalize('NFC'));
+    written += 1;
+  }
+  return written;
 }
 
 function cityDirectoryRows(events) {
@@ -7317,6 +7358,7 @@ function writeSitemap(events = []) {
     // Duplicate event records canonicalise to their primary; submitting them
     // for indexing would contradict their own canonical tag.
     .filter((file) => !EVENT_ALIAS_PAGES.has(file))
+    .filter((file) => !eventRedirectStubPages.has(file))
     .map((file) => file === 'index.html' ? '' : file))];
   const urls = sitemapPaths
     .sort()
@@ -7620,7 +7662,8 @@ function enhanceSeoHead(html, filePath) {
   // pairing the target never reciprocates. Google discards non-reciprocal
   // hreflang anyway — emitting it only adds a page to the "not indexed"
   // report for no gain. The canonical alone is what a crawler needs.
-  const legacyRedirectStub = LEGACY_REDIRECT_PAGES.has(path.relative(distDir, filePath).replace(/\\/g, '/'));
+  const distRelative = path.relative(distDir, filePath).replace(/\\/g, '/').normalize('NFC');
+  const legacyRedirectStub = LEGACY_REDIRECT_PAGES.has(distRelative) || eventRedirectStubPages.has(distRelative);
   if (!legacyRedirectStub) {
     if (!/<link\b[^>]*hreflang=["']ar-SA["'][^>]*>/i.test(next)) {
       next = next.replace(/(<link\b[^>]*rel=["']canonical["'][^>]*>)/i, `$1\n  <link rel="alternate" hreflang="ar-SA" href="${escapeHtml(canonical)}" />`);
@@ -7988,6 +8031,10 @@ const events = buildEvents();
 // the next incremental build instead of keeping a now-colliding title.
 const titleQualifiers = buildTitleQualifiers(events, 'ar-SA');
 for (const event of events) event.seo_title_qualifier = titleQualifiers.get(eventQualifierKey(event)) || '';
+// Which published URLs died, and which merely moved (see published-url-ledger.mjs).
+// Reconciled BEFORE the artifact removal below so the removal can be told which
+// of the slugs it is about to delete still have a live event behind them.
+const urlLedger = reconcileUrlLedger(events, loadUrlLedger(), buildAt);
 const seoDiscovery = prepareSeoDiscovery(events);
 const deletedEventArtifacts = removeDeletedEventArtifacts(seoDiscovery.removed_event_slugs);
 const changedEventSlugs = new Set(seoDiscovery.changed_event_slugs);
@@ -8002,6 +8049,11 @@ writeIcs(events, eventDetailsToRender);
 writeSubscriptionFeeds(events);
 writeFacetPages(events);
 writeLegacyCategoryRedirectPages(events);
+// After removeDeletedEventArtifacts(): a moved slug's page is deleted with the
+// rest and then re-created here as a redirect stub, so the stub is rebuilt from
+// the ledger on every build rather than lingering as an orphan file.
+writeEventRedirectStubs(urlLedger.moved);
+saveUrlLedger(urlLedger.state, buildAt);
 writeCitiesIndexPage(events);
 writeCategoriesIndexPage(events);
 writeAudiencePages(events);

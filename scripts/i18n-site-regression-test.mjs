@@ -1,5 +1,13 @@
 import assert from 'node:assert/strict';
 import { canonicalEventPage } from './event-canonical-aliases.mjs';
+import { legacyRedirectTarget } from './legacy-redirect-pages.mjs';
+import { loadUrlLedger } from './published-url-ledger.mjs';
+
+// A redirect stub canonicalises to its replacement on BOTH surfaces.
+const movedEventTargets = new Map(Object.entries(loadUrlLedger().events || {})
+  .filter(([, entry]) => entry?.moved_to)
+  .map(([slug, entry]) => [`events/${slug}.html`, `events/${entry.moved_to}.html`]));
+const redirectTargetFor = (relativePath) => movedEventTargets.get(relativePath) || legacyRedirectTarget(relativePath);
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
@@ -79,7 +87,7 @@ function resolveUnicodePath(base, relative) {
   return current;
 }
 
-function inspect(file, locale, direction, canonical) {
+function inspect(file, locale, direction, canonical, isRedirectStub = false) {
   assert.ok(fs.existsSync(file), `missing localized page: ${file}`);
   const source = fs.readFileSync(file, 'utf8');
   assert.ok(!source.includes('/en/en/'), `${file} contains a duplicated locale segment`);
@@ -103,8 +111,16 @@ function inspect(file, locale, direction, canonical) {
   assert.equal($('html').attr('lang'), locale, `${file} has the wrong language`);
   assert.equal($('html').attr('dir'), direction, `${file} has the wrong direction`);
   assert.equal($('link[rel="canonical"]').attr('href'), canonical, `${file} has the wrong canonical URL`);
+  // A redirect stub canonicalises to another page, and Google ignores hreflang
+  // on a non-canonical page — alternates between two stubs are noise. The stub
+  // must still EXIST on both surfaces; that is rule 7 of
+  // scripts/search-indexability-regression-test.mjs.
   for (const alternate of ['ar-SA', 'en-SA', 'x-default']) {
-    assert.equal($(`link[rel="alternate"][hreflang="${alternate}"]`).length, 1, `${file} must have one ${alternate} alternate`);
+    assert.equal(
+      $(`link[rel="alternate"][hreflang="${alternate}"]`).length,
+      isRedirectStub ? 0 : 1,
+      `${file} must have ${isRedirectStub ? 'no' : 'one'} ${alternate} alternate`
+    );
   }
   assert.equal($('.language-switch').length, 1, `${file} must have one language switch`);
   assert.equal($('.language-suggestion').length, 0, `${file} must not interrupt visitors with a language suggestion`);
@@ -144,19 +160,24 @@ for (const route of registry.routes) {
   // hreflang stays self-referential (this page's twin is this page in the other
   // language), but a duplicate event record canonicalises to its primary on
   // BOTH surfaces — see scripts/event-canonical-aliases.mjs.
-  const canonicalRelative = canonicalEventPage(relative) || relative;
+  const canonicalRelative = canonicalEventPage(relative) || redirectTargetFor(relative) || relative;
   const arCanonical = `https://eventme.live/${canonicalRelative === 'index.html' ? '' : canonicalRelative}`;
   const enCanonical = `https://eventme.live/en/${canonicalRelative === 'index.html' ? '' : canonicalRelative}`;
   const arSelf = `https://eventme.live/${relative === 'index.html' ? '' : relative}`;
   const enSelf = `https://eventme.live/en/${relative === 'index.html' ? '' : relative}`;
-  const ar = inspect(resolveUnicodePath(dist, relative), 'ar-SA', 'rtl', arCanonical);
-  const en = inspect(resolveUnicodePath(path.join(dist, 'en'), relative), 'en-SA', 'ltr', enCanonical);
+  const isStub = Boolean(redirectTargetFor(relative));
+  const ar = inspect(resolveUnicodePath(dist, relative), 'ar-SA', 'rtl', arCanonical, isStub);
+  const en = inspect(resolveUnicodePath(path.join(dist, 'en'), relative), 'en-SA', 'ltr', enCanonical, isStub);
   assert.equal(ar.$('.language-switch').attr('href'), route['en-SA']);
   assert.equal(en.$('.language-switch').attr('href'), route['ar-SA']);
-  assert.equal(ar.$('link[hreflang="en-SA"]').attr('href'), enSelf);
-  assert.equal(en.$('link[hreflang="ar-SA"]').attr('href'), arSelf);
+  if (!isStub) {
+    assert.equal(ar.$('link[hreflang="en-SA"]').attr('href'), enSelf);
+    assert.equal(en.$('link[hreflang="ar-SA"]').attr('href'), arSelf);
+  }
 
-  if (/^events\/.+\.html$/u.test(relative)) {
+  // A renamed event's old URL is a redirect stub, not an event page — the Event
+  // structured data lives on the page it canonicalises to.
+  if (!isStub && /^events\/.+\.html$/u.test(relative)) {
     for (const [locale, page] of [['ar-SA', ar], ['en-SA', en]]) {
       const eventNodes = eventJsonLdFromPage(page.$);
       assert.ok(eventNodes.length >= 1, `${relative} ${locale} must expose at least one Event node`);
@@ -230,7 +251,7 @@ const locCount = [...sitemap.matchAll(/<loc>/g)].length;
 // real localized route (both surfaces exist and link to each other) that is
 // deliberately not submitted for indexing, because its canonical points at the
 // primary. Every OTHER route must still appear on both surfaces.
-const aliasRoutes = registry.routes.filter((route) => canonicalEventPage(route.key)).length;
+const aliasRoutes = registry.routes.filter((route) => canonicalEventPage(route.key) || redirectTargetFor(route.key)).length;
 assert.equal(locCount, (registry.routes.length - aliasRoutes) * 2, 'sitemap must contain one Arabic and one English URL per submitted route');
 assert.equal([...sitemap.matchAll(/hreflang="en-SA"/g)].length, locCount, 'every sitemap URL needs an English alternate');
 assert.equal([...sitemap.matchAll(/hreflang="ar-SA"/g)].length, locCount, 'every sitemap URL needs an Arabic alternate');

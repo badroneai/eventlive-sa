@@ -316,6 +316,7 @@ jobs:
             data/source_run_state.json \
             data/source_growth_state.json \
             data/seo_page_state.json \
+            data/published_url_ledger.json \
             data/event_image_cache_manifest.json \
             reports/source-*.json \
             reports/source-*.md \

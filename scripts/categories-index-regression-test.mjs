@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import { LEGACY_CATEGORY_REDIRECTS } from './legacy-redirect-pages.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -28,9 +29,11 @@ assert.equal(payload.categories_count, payload.categories.length, 'categories_co
 assert.equal(payload.totals.events, events.length, 'categories totals must match public catalog count');
 
 const eventCategorySlugs = new Set(events.map((event) => event.category_slug));
-const allowedLegacyCategoryPages = new Set([
-  'technology-training',
-]);
+// 2026-08-09: was a hand-written single entry. Retired category slugs now all
+// ship a redirect stub (scripts/legacy-redirect-pages.mjs) because Search
+// Console was reporting 404s on several of them, so this must derive from the
+// same source of truth instead of being updated by hand every taxonomy merge.
+const allowedLegacyCategoryPages = new Set(LEGACY_CATEGORY_REDIRECTS.keys());
 const publishedCategoryFiles = fs.readdirSync(path.join(distDir, 'categories'))
   .filter((fileName) => fileName.endsWith('.html'))
   .map((fileName) => fileName.replace(/\.html$/, ''))
@@ -38,6 +41,10 @@ const publishedCategoryFiles = fs.readdirSync(path.join(distDir, 'categories'))
 const indexedCategorySlugs = payload.categories.map((category) => category.slug).sort();
 const canonicalPublishedCategoryFiles = publishedCategoryFiles.filter((slug) => !allowedLegacyCategoryPages.has(slug));
 assert.deepEqual(canonicalPublishedCategoryFiles, indexedCategorySlugs, 'published category pages must match categories.json exactly');
+// A stale slug may exist ONLY as a redirect stub. The ban this encodes is "a
+// retired category must never masquerade as a real category page" — a stub that
+// canonicalises to its replacement and stays out of the sitemap does not, and
+// dropping the URL outright is what produced the Search Console 404s.
 for (const staleSlug of [
   'conferences-forums',
   'technology-bootcamp',
@@ -48,7 +55,13 @@ for (const staleSlug of [
   'saudi-seasons',
   'معسكر-هندسة-الميكاترونكس'
 ]) {
-  assert.equal(publishedCategoryFiles.includes(staleSlug), false, `stale category page must not be published: ${staleSlug}`);
+  if (!publishedCategoryFiles.includes(staleSlug)) continue;
+  assert.ok(
+    LEGACY_CATEGORY_REDIRECTS.has(staleSlug),
+    `stale category page must not be published as a content page: ${staleSlug}`
+  );
+  const stub = fs.readFileSync(path.join(distDir, 'categories', `${staleSlug}.html`), 'utf8');
+  assert.match(stub, /http-equiv="refresh"/i, `${staleSlug} must be a redirect stub, not a content page`);
 }
 
 for (const slug of eventCategorySlugs) {
