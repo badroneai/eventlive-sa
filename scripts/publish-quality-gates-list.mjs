@@ -10,6 +10,14 @@
 export const PUBLISH_QUALITY_GATES = [
   'test:sitemap',
   'test:seo-content',
+  // 2026-08-09: Search Console reported a new "Excluded by noindex tag" reason.
+  // The noindex was the intended owner-only policy, but auditing the built
+  // surface to prove it exposed four unmeasured defect classes shipping to
+  // Google (double-escaped entities in snippets, boilerplate English
+  // descriptions on 1,579 pages, delivery modes rendered as cities, colliding
+  // titles). Reads dist/ directly, so it belongs in the publish battery both
+  // publish paths run.
+  'test:search-indexability',
   'audit:static', 'test:static',
   'audit:product-journeys', 'test:product-journeys',
   'audit:ui-states', 'test:ui-states',

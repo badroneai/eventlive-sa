@@ -26,7 +26,10 @@ import { LEGACY_CATEGORY_REDIRECTS, LEGACY_REDIRECT_PAGES } from './legacy-redir
 import { createContentTranslator } from './content-translation-cache.mjs';
 import { ARABIC_DAYS_LABEL_JS, DURATION_LABEL_RUNTIME_JS } from './duration-label.mjs';
 import { eventDateRangeLabel, isMultiDayEvent } from './event-date-range.mjs';
+import { canonicalEventSlug, EVENT_ALIAS_PAGES } from './event-canonical-aliases.mjs';
+import { buildTitleQualifiers, eventQualifierKey, withTitleQualifier } from './event-title-qualifier.mjs';
 import { classifyEventKind, eventKindLabel, getEventStatus } from './event-kind-utils.mjs';
+import { decodeHtmlEntities } from './html-entities.mjs';
 import { compareAttendancePriority, isLiveMoment } from './event-priority.mjs';
 import { homeBoardLiveSection } from './home-board-live.mjs';
 import { homeCalendarStrip, remainingMonthDays, riyadhMonthEndExclusive } from './home-month-calendar.mjs';
@@ -474,6 +477,11 @@ function escapeHtml(value = '') {
     .replace(/"/g, '&quot;');
 }
 
+// Inverse of escapeHtml() — see scripts/html-entities.mjs for why any pass
+// that reads a value back out of rendered markup must decode before re-emitting
+// it. Aliased here so call sites read as the local pair escapeHtml/unescapeHtml.
+const unescapeHtml = decodeHtmlEntities;
+
 function safeHref(value = '') {
   try {
     const url = new URL(String(value || '').trim());
@@ -574,6 +582,26 @@ const citySlugMap = new Map(CITY_NAME_REGISTRY.filter((city) => city.slug).map((
 
 function cityLabel(city) {
   return cityLabelMap.get(city) || city;
+}
+
+// Some events carry a delivery mode where a city name belongs ("عن بعد",
+// "Online"). Those labels are fine on their own but break the moment a
+// template puts a preposition in front of them: "{title} في {city}" renders
+// "... في عن بعد" in Arabic and "... in Online" in English, and that reads
+// back to the visitor straight out of the SERP title. Callers that build such
+// a phrase must ask first.
+const NON_PLACE_CITY_LABELS = /^(?:عن بعد|عن بُعد|أونلاين|اونلاين|افتراضي|افتراضية|online|virtual|remote)$/i;
+
+function isNonPlaceCityLabel(city = '') {
+  return NON_PLACE_CITY_LABELS.test(String(city).trim());
+}
+
+// Arabic "where" fragment for SEO titles/descriptions: a real city takes "في",
+// a delivery mode stands alone.
+function arabicPlacePhrase(city = '') {
+  const label = String(city).trim();
+  if (!label) return '';
+  return isNonPlaceCityLabel(label) ? 'عن بعد' : `في ${label}`;
 }
 
 function citySlug(city) {
@@ -938,7 +966,29 @@ function sourceTrustProfile(raw = {}, previous = {}) {
   };
 }
 
+// Prose fields that reach a <title>, a meta description or visible copy. Source
+// feeds hand these over still HTML-escaped ("... &quot; هاي سينيما &quot; ...",
+// "the participant &apos;s diploma"), and an entity that survives ingestion is
+// escaped a second time on render and ships as "&amp;quot;" into the Google
+// snippet. URL-bearing fields are deliberately absent: their escaping is the
+// renderer's business, not the catalog's.
+const DECODED_EVENT_TEXT_FIELDS = [
+  'title', 'title_original', 'title_en',
+  'summary', 'summary_original', 'summary_en',
+  'description', 'description_original',
+  'venue', 'venue_address', 'organizer', 'source_label', 'image_alt'
+];
+
+function decodeEventText(raw = {}) {
+  const decoded = { ...raw };
+  for (const field of DECODED_EVENT_TEXT_FIELDS) {
+    if (typeof decoded[field] === 'string') decoded[field] = decodeHtmlEntities(decoded[field]);
+  }
+  return decoded;
+}
+
 function normalizeEvent(raw, sourceGroup, previousLookup) {
+  raw = decodeEventText(raw);
   const previous = previousLookup.byId.get(raw.id) || previousLookup.byIdentity.get(eventIdentity(raw)) || {};
   raw = normalizeEventCategoryMetadata(normalizeEventCategoryWithFallback({
     ...raw,
@@ -2238,9 +2288,13 @@ function stickyCtaVisibilityScript(event) {
 function renderEventDetail(event) {
   const relative = '../';
   const city = cityLabel(event.city);
-  const description = `${event.title} في ${city} من ${formatDate(event.starts_at)} إلى ${formatDate(event.ends_at)}. ${event.venue ? `الموقع: ${event.venue}. ` : ''}تحقق من المصدر والجدول الحي عبر EventLive.`;
-  const seoTitle = `${event.title} في ${city} | EventLive`;
-  const canonical = absoluteUrl(`events/${event.file_slug}.html`);
+  const placePhrase = arabicPlacePhrase(city);
+  const description = `${event.title} ${placePhrase} من ${formatDate(event.starts_at)} إلى ${formatDate(event.ends_at)}. ${event.venue ? `الموقع: ${event.venue}. ` : ''}تحقق من المصدر والجدول الحي عبر EventLive.`;
+  const seoTitle = `${withTitleQualifier(`${event.title} ${placePhrase}`, event.seo_title_qualifier)} | EventLive`;
+  // A duplicate record (see event-canonical-aliases.mjs) keeps its page but
+  // hands its indexing signal to the primary, so the two stop competing.
+  const canonicalSlug = canonicalEventSlug(event.file_slug) || event.file_slug;
+  const canonical = absoluteUrl(`events/${canonicalSlug}.html`);
   const image = event.image_url.startsWith('/') ? `${relative}${event.image_url.slice(1)}` : event.image_url;
   const schemaImage = publicAssetUrl(event.image_url);
   const jsonHref = `${event.file_slug}.json`;
@@ -2860,6 +2914,7 @@ function writeLegacyCategoryRedirectPages(events) {
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="canonical" href="${escapeHtml(canonical)}" />
 <title>${escapeHtml(targetLabel)} — ${platformName}</title>
+<meta name="description" content="${escapeHtml(`تم دمج تصنيف ${staleSlug} ضمن ${targetLabel} في ${platformName}. تابع الصفحة الحالية لفعاليات ${targetLabel} في السعودية.`)}" />
 </head>
 <body>
 <p>تم دمج هذا التصنيف ضمن <a href="${targetHref}">${escapeHtml(targetLabel)}</a>.</p>
@@ -7259,6 +7314,9 @@ function writeSitemap(events = []) {
     // must never be offered to crawlers as a first-class page — their own
     // <link rel="canonical"> already points crawlers at the real page.
     .filter((file) => !legacyRedirectFiles.has(file))
+    // Duplicate event records canonicalise to their primary; submitting them
+    // for indexing would contradict their own canonical tag.
+    .filter((file) => !EVENT_ALIAS_PAGES.has(file))
     .map((file) => file === 'index.html' ? '' : file))];
   const urls = sitemapPaths
     .sort()
@@ -7418,11 +7476,25 @@ function normalizeBrandText(value) {
 }
 
 function normalizeSeoMetaDescription(html) {
-  return html.replace(/<meta name="description" content="([^"]*)"\s*\/?>/i, (_match, description) => {
-    return `<meta name="description" content="${escapeHtml(seoDescription(description))}" />`;
-  }).replace(/<meta property="og:description" content="([^"]*)"\s*\/?>/i, (_match, description) => {
-    return `<meta property="og:description" content="${escapeHtml(seoDescription(description))}" />`;
-  });
+  // The captured group is an attribute value that baseHead() already ran
+  // through escapeHtml(). Decode it before re-escaping, otherwise every entity
+  // gains an `&amp;` on each pass ("&quot;" -> "&amp;quot;") and ships to
+  // Google as literal noise inside the snippet.
+  const rewrite = (description) => escapeHtml(seoDescription(unescapeHtml(description)));
+  // All three description variants are one value with three consumers (Google,
+  // Open Graph, X cards). Normalizing only two of them let twitter:description
+  // drift to the unpadded original, so a shared card showed a different
+  // description from the search snippet for the same page.
+  return html
+    .replace(/<meta name="description" content="([^"]*)"\s*\/?>/i, (_match, description) => {
+      return `<meta name="description" content="${rewrite(description)}" />`;
+    })
+    .replace(/<meta property="og:description" content="([^"]*)"\s*\/?>/i, (_match, description) => {
+      return `<meta property="og:description" content="${rewrite(description)}" />`;
+    })
+    .replace(/<meta name="twitter:description" content="([^"]*)"\s*\/?>/i, (_match, description) => {
+      return `<meta name="twitter:description" content="${rewrite(description)}" />`;
+    });
 }
 
 function htmlText(value = '') {
@@ -7543,11 +7615,19 @@ function enhanceSeoHead(html, filePath) {
     next = next.replace(/<meta\b[^>]*name=["']robots["'][^>]*>/i, robots);
   }
 
-  if (!/<link\b[^>]*hreflang=["']ar-SA["'][^>]*>/i.test(next)) {
-    next = next.replace(/(<link\b[^>]*rel=["']canonical["'][^>]*>)/i, `$1\n  <link rel="alternate" hreflang="ar-SA" href="${escapeHtml(canonical)}" />`);
-  }
-  if (!/<link\b[^>]*hreflang=["']x-default["'][^>]*>/i.test(next)) {
-    next = next.replace(/(<link\b[^>]*rel=["']canonical["'][^>]*>)/i, `$1\n  <link rel="alternate" hreflang="x-default" href="${escapeHtml(canonical)}" />`);
+  // A legacy redirect stub is not a language alternate of anything: its
+  // canonical is another page's URL, so injecting hreflang here declares a
+  // pairing the target never reciprocates. Google discards non-reciprocal
+  // hreflang anyway — emitting it only adds a page to the "not indexed"
+  // report for no gain. The canonical alone is what a crawler needs.
+  const legacyRedirectStub = LEGACY_REDIRECT_PAGES.has(path.relative(distDir, filePath).replace(/\\/g, '/'));
+  if (!legacyRedirectStub) {
+    if (!/<link\b[^>]*hreflang=["']ar-SA["'][^>]*>/i.test(next)) {
+      next = next.replace(/(<link\b[^>]*rel=["']canonical["'][^>]*>)/i, `$1\n  <link rel="alternate" hreflang="ar-SA" href="${escapeHtml(canonical)}" />`);
+    }
+    if (!/<link\b[^>]*hreflang=["']x-default["'][^>]*>/i.test(next)) {
+      next = next.replace(/(<link\b[^>]*rel=["']canonical["'][^>]*>)/i, `$1\n  <link rel="alternate" hreflang="x-default" href="${escapeHtml(canonical)}" />`);
+    }
   }
   if (!/<meta\b[^>]*property=["']og:updated_time["'][^>]*>/i.test(next)) {
     next = next.replace(/<\/head>/i, `  <meta property="og:updated_time" content="${escapeHtml(buildAt)}" />\n</head>`);
@@ -7902,6 +7982,12 @@ function writeBrandIcon() {
 }
 
 const events = buildEvents();
+// Stamp title qualifiers BEFORE prepareSeoDiscovery(): the qualifier is part of
+// eventSearchSnapshot(), so an event that only just became a duplicate (because
+// a second occurrence was ingested) changes fingerprint and gets re-rendered on
+// the next incremental build instead of keeping a now-colliding title.
+const titleQualifiers = buildTitleQualifiers(events, 'ar-SA');
+for (const event of events) event.seo_title_qualifier = titleQualifiers.get(eventQualifierKey(event)) || '';
 const seoDiscovery = prepareSeoDiscovery(events);
 const deletedEventArtifacts = removeDeletedEventArtifacts(seoDiscovery.removed_event_slugs);
 const changedEventSlugs = new Set(seoDiscovery.changed_event_slugs);

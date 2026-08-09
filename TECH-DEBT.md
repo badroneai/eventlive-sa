@@ -30,3 +30,11 @@
 - **Issue:** T0.5 authenticates and origin-checks all state-changing API requests, but GET workspace data and files under `workspaces/`, `reports/`, and `dist/` remain readable without a token.
 - **Risk:** عند تشغيل الكونسول على non-loopback host يمكن لعميل شبكي قراءة بيانات تشغيلية داخلية، مع بقاء مسارات التغيير محمية.
 - **Proposed Fix:** قبل اعتماد تشغيل شبكي دائم، أضف read-scope authentication أو session-based console login، مع إبقاء static public preview assets منفصلة عن internal workspace artifacts.
+
+## 6) Duplicate event records from multi-event PDF ingestion (Priority: Medium)
+- **Where:** `data/events_catalog.json` / `data/source_ended_events.json` ingestion, `buildEvents()` semantic dedupe in `scripts/generate-site.mjs`.
+- **Issue:** بوابة `test:search-indexability` (2026-08-09) كشفت 14 فعالية منشورة **مرتين** بسلَغين مختلفين: صف من `Visit Saudi Summer Calendar PDF` بنافذة يوم كامل، ونسخة أدق من مصدر أول‑طرفي (Discover Aseer / Visit Saudi Calendar / MDLBEAST). مفتاح الـ dedupe الدلالي يجزّئ **العنوان العربي**، والعنوانان يختلفان بالنقحرة («سكاي فيلج» مقابل «قرية السماء»)، أو بالصياغة («متنزه» مقابل «حديقة»)، أو بخطأ إملائي في الـ PDF («ليلة اابطال») — فينجو الصفّان معًا.
+- **Risk:** 36 صفحة مفهرسة تتنافس على 14 فعالية. Google يختار واحدة ويُسقط البقية اعتباطًا، فقد تخسر الفعالية صفحتها الأفضل.
+- **Current Mitigation (ليس إصلاحًا):** `scripts/event-canonical-aliases.mjs` — سجلّ مُنسَّق يوجّه كل نسخة مكررة إلى نسختها الأساسية عبر `<link rel="canonical">` ويُبقيها خارج `sitemap.xml`. **لا يُلغي نشر أي فعالية** (إلغاء النشر قرار مالك، انظر `APPROVAL-DECISION-GUIDE.md`). الصفحة تبقى حيّة لزوّارها، وإشارة الفهرسة وحدها تنتقل.
+- **Proposed Fix:** دمج السجلّات في طبقة البيانات — إمّا بتوسيع مفتاح الـ dedupe ليشمل (المدينة + تاريخ البداية + مصدر متعدد‑الفعاليات)، أو بربط صفوف الـ PDF بالسجلّ الأول‑طرفي وقت الاستيراد. عندها يُحذف السجلّ اليدوي بالكامل.
+- **Regression Gates:** `test:search-indexability` (عناوين متطابقة بين صفحتين كلٌّ منهما canonical لنفسها = فشل)، `test:sitemap`، `test:i18n-site`.

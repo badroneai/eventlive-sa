@@ -97,6 +97,7 @@
     "test:search": "node scripts/search-regression-test.mjs",
     "test:city-search": "node scripts/city-search-browser-regression-test.mjs",
     "test:seo-content": "node scripts/seo-content-regression-test.mjs",
+    "test:search-indexability": "node scripts/search-indexability-regression-test.mjs",
     "test:seo-freshness": "node scripts/seo-freshness-regression-test.mjs",
     "test:indexnow": "node scripts/indexnow-regression-test.mjs",
     "test:search-crawler-evidence": "node scripts/search-crawler-evidence-regression-test.mjs",

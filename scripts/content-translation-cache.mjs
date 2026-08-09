@@ -1,6 +1,7 @@
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
+import { decodeHtmlEntities } from './html-entities.mjs';
 
 // Persistent translation memory for EVENT CONTENT (titles, summaries).
 // UI chrome is handled by locales/en-SA-static.json; this cache covers the
@@ -13,7 +14,13 @@ const root = process.cwd();
 const cachePath = path.join(root, 'data', 'content_translations.json');
 
 export function normalizeContentText(value = '') {
-  return String(value || '').replace(/\s+/g, ' ').trim();
+  // Source feeds and machine-translation output both hand back text that is
+  // still HTML-escaped ("... بعنوان &quot; هاي سينيما &quot; ..."). Stored raw,
+  // that entity survives every downstream pass and is escaped once more on
+  // render, so the page ships "&amp;quot;" into the Google snippet. Decoding
+  // at the single normalization choke point keeps entities out of the cache
+  // keys AND out of the cached values.
+  return decodeHtmlEntities(String(value || '')).replace(/\s+/g, ' ').trim();
 }
 
 export function detectContentLang(value = '') {
@@ -241,7 +248,10 @@ export function createContentTranslator() {
     const key = contentTranslationKey(sourceLang, targetLang, text);
     const entry = cache.entries[key];
     if (entry && normalizeContentText(entry.text)) {
-      return { text: entry.text, translated: true, needed: true, method: entry.method || 'unknown' };
+      // Return the normalized form, not entry.text: entries written before the
+      // decode was added still hold escaped text, and re-translating them just
+      // to strip an entity would be pointless churn.
+      return { text: normalizeContentText(entry.text), translated: true, needed: true, method: entry.method || 'unknown' };
     }
     // Identity-pass (2026-08-01): URL/identifier-dominant strings whose
     // target rendering is the source text itself resolve instantly here and
