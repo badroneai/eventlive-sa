@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-09T07:43:51.420Z
+- Generated at: 2026-08-09T13:39:13.431Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 596
-- Matched candidates: 564
+- Candidates: 597
+- Matched candidates: 565
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 21/21
+- Productive sources / attempted: 22/27
 - Collector errors: 4 (chronic 4, transient 0)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 318 |
-| candidate_queue | 596 |
-| evaluated_for_publish | 596 |
+| discovered_this_run | 371 |
+| candidate_queue | 597 |
+| evaluated_for_publish | 597 |
 | linked_existing | 551 |
-| published_new | 6 |
+| published_new | 7 |
 | blocked | 39 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 34 |
+| secondary_still_blocked | 35 |
 
 ## Blocked Reasons
 
@@ -50,7 +50,7 @@
 | moc-cultural-calendar | chronic | 20 | no | collector-error: fetch failed; fetch failed |
 | mos-events | chronic | 20 | no | collector-error: fetch failed |
 | moc-cultural-subportals | chronic | 20 | no | collector-error: fetch failed; fetch failed |
-| monshaat-events | chronic | 3 | no | collector-error: fetch failed; fetch failed |
+| monshaat-events | chronic | 4 | yes | collector-error: fetch failed; fetch failed |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

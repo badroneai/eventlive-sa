@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-09T07:34:52.571Z",
+  "published_at": "2026-08-09T13:30:08.495Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 596,
+  "candidates_seen": 597,
   "totals": {
-    "candidates_seen": 596,
-    "published": 6,
+    "candidates_seen": 597,
+    "published": 7,
     "linked_existing": 551,
     "blocked": 39,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 557
+    "reconciled": 558
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -193,6 +193,11 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-explorers-in-august-as-told-by-the-land-routes-of-exchange-20260813-9a00888f",
+      "event_id": "event-hayy-explorers-in-august-as-told-by-the-land-routes-of-exchange",
+      "title": "Hayy Explorers in August | As Told by the Land: Routes of Exchange"
     }
   ],
   "linked_existing": [
@@ -821,9 +826,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-explorers-as-told-by-the-land-routes-of-exchange-20260702-09157ea4",
+      "candidate_id": "candidate-hayy-jameel-events-hayy-explorers-as-told-by-the-land-20260702-09157ea4",
       "event_id": "event-hayy-explorers",
-      "title": "Hayy Explorers | As Told by The Land: Routes of Exchange",
+      "title": "Hayy Explorers | As Told by The Land",
       "reason": "already linked to catalog event"
     },
     {
@@ -1196,12 +1201,6 @@
       "candidate_id": "candidate-discover-aseer-events-the-dearest-country-20260803-b424a70f",
       "event_id": "event-the-dearest-country",
       "title": "The Dearest Country",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-فرص-تعاقد-على-مشروع-بحثي-ممول-٢-20260803-d12e1d10",
-      "event_id": "event-فرص-تعاقد-على-مشروع-بحثي-ممول-٢",
-      "title": "فرص تعاقد على مشروع بحثي ممول ٢",
       "reason": "already linked to catalog event"
     },
     {
@@ -1664,6 +1663,12 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-أساسيات-هندسة-الميكاترونكس-20260816-54c2e27f",
       "event_id": "event-معسكر-أساسيات-هندسة-الميكاترونكس",
       "title": "معسكر أساسيات هندسة الميكاترونكس",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-فرص-تعاقد-على-مشروع-بحثي-ممول-٢-20260816-d12e1d10",
+      "event_id": "event-فرص-تعاقد-على-مشروع-بحثي-ممول-٢",
+      "title": "فرص تعاقد على مشروع بحثي ممول ٢",
       "reason": "already linked to catalog event"
     },
     {
@@ -2243,12 +2248,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية-20260920-0647b188",
-      "event_id": "event-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية",
-      "title": "معسكر التقنيات الناشئة والعوالم الافتراضية",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-قيادة-التحول-بالذكاء-الاصطناعي-20260921-d4b1787c",
       "event_id": "event-معسكر-قيادة-التحول-بالذكاء-الاصطناعي",
       "title": "معسكر قيادة التحول بالذكاء الاصطناعي",
@@ -2300,6 +2299,12 @@
       "candidate_id": "candidate-umm-al-qura-events-شهادة-محترف-الأعمال-المعتمد-في-إدارة-الفعاليات-والحشود-cbp-ecm-20260927-c05f2fad",
       "event_id": "event-شهادة-محترف-الأعمال-المعتمد-في-إدارة-الفعاليات-والحشود-cbp-ecm",
       "title": "شهادة محترف الأعمال المعتمد في إدارة الفعاليات والحشود CBP-ECM",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية-20260927-0647b188",
+      "event_id": "event-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية",
+      "title": "معسكر التقنيات الناشئة والعوالم الافتراضية",
       "reason": "already linked to catalog event"
     },
     {

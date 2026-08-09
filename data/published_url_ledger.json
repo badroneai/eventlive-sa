@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-09T10:51:49.172Z",
+  "generated_at": "2026-08-09T13:34:57.389Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -528,7 +528,7 @@
       "last_seen": "2026-08-09"
     },
     "event-hayy-explorers": {
-      "identity": "hayy explorers | as told by the land: routes of exchange|jeddah|2026-07-02",
+      "identity": "hayy explorers | as told by the land|jeddah|2026-07-02",
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-09"
     },
@@ -1162,6 +1162,11 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-09"
     },
+    "event-hayy-explorers-in-august-as-told-by-the-land-routes-of-exchange": {
+      "identity": "hayy explorers in august | as told by the land: routes of exchange|jeddah|2026-08-13",
+      "first_seen": "2026-08-09",
+      "last_seen": "2026-08-09"
+    },
     "event-concert-mohamed-hamaki": {
       "identity": "concert – mohamed hamaki|aseer|2026-08-14",
       "first_seen": "2026-08-08",
@@ -1332,11 +1337,6 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-09"
     },
-    "event-معسكر-هندسة-تطبيقات-الذكاء-الاصطناعي-التوليدي-باستخدام-النماذج-اللغوية-ا": {
-      "identity": "معسكر هندسة تطبيقات الذكاء الاصطناعي التوليدي باستخدام النماذج اللغوية الضخمة|riyadh|2026-08-30",
-      "first_seen": "2026-07-11",
-      "last_seen": "2026-08-09"
-    },
     "event-شهادة-أخصائي-تكنولوجيا-الحاسب-الآلي-cbp-ct": {
       "identity": "شهادة أخصائي تكنولوجيا الحاسب الآلي (cbp-ct)|makkah|2026-08-30",
       "first_seen": "2026-07-27",
@@ -1420,6 +1420,11 @@
     "event-أساسيات-الذكاء-الاصطناعي-من-azure": {
       "identity": "أساسيات الذكاء الاصطناعي من azure|makkah|2026-09-06",
       "first_seen": "2026-07-27",
+      "last_seen": "2026-08-09"
+    },
+    "event-معسكر-هندسة-تطبيقات-الذكاء-الاصطناعي-التوليدي-باستخدام-النماذج-اللغوية-ا": {
+      "identity": "معسكر هندسة تطبيقات الذكاء الاصطناعي التوليدي باستخدام النماذج اللغوية الضخمة|riyadh|2026-09-06",
+      "first_seen": "2026-07-11",
       "last_seen": "2026-08-09"
     },
     "event-index-saudi-arabia-interior-design-trade-show": {
@@ -1637,11 +1642,6 @@
       "first_seen": "2026-07-28",
       "last_seen": "2026-08-09"
     },
-    "event-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية": {
-      "identity": "معسكر التقنيات الناشئة والعوالم الافتراضية|riyadh|2026-09-20",
-      "first_seen": "2026-07-29",
-      "last_seen": "2026-08-09"
-    },
     "event-معسكر-قيادة-التحول-بالذكاء-الاصطناعي": {
       "identity": "معسكر قيادة التحول بالذكاء الاصطناعي|riyadh|2026-09-21",
       "first_seen": "2026-08-04",
@@ -1669,6 +1669,11 @@
     },
     "event-rotating-equipment-event": {
       "identity": "rotating equipment event|dhahran|2026-09-27",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-08-09"
+    },
+    "event-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية": {
+      "identity": "معسكر التقنيات الناشئة والعوالم الافتراضية|riyadh|2026-09-27",
       "first_seen": "2026-07-29",
       "last_seen": "2026-08-09"
     },

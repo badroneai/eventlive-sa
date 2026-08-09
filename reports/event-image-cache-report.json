@@ -1,18 +1,25 @@
 {
-  "generated_at": "2026-08-09T07:37:49.933Z",
+  "generated_at": "2026-08-09T13:32:30.826Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 794,
-    "fetched": 0,
-    "reused": 497,
+    "cached_total": 795,
+    "fetched": 1,
+    "reused": 496,
     "failed": 3,
     "skipped_recent_failures": 3,
     "remembered_failures": 6
   },
-  "fetched": [],
+  "fetched": [
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/Screen-Shot-1448-02-26-at-2.37.08-PM-aspect-ratio-1942-910-1100x500.png",
+      "file": "dist/assets/event-images/hayy-explorers-in-august-as-told-by-the-land-routes-of-exchange-d16770589f.png",
+      "bytes": 942180,
+      "events": 1
+    }
+  ],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -900,11 +907,6 @@
       "events": 1
     },
     {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/rpowwrnx.tnw.jpg",
-      "file": "dist/assets/event-images/معسكر-هندسة-تطبيقات-الذكاء-الاصطناعي-التوليدي-باستخدام-النماذج-اللغوية-8d170d1b9c.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/4jaiuua2.tw3.webp",
       "file": "dist/assets/event-images/معسكر-أساسيات-الأمن-السيبراني-bff0c3d784.webp",
       "events": 1
@@ -937,6 +939,11 @@
     {
       "source_url": "https://hub.misk.org.sa/media/awcbpjiq/lp-hub-image_en.jpg",
       "file": "dist/assets/event-images/misk-launchpad-2f5fb7ba18.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/rpowwrnx.tnw.jpg",
+      "file": "dist/assets/event-images/معسكر-هندسة-تطبيقات-الذكاء-الاصطناعي-التوليدي-باستخدام-النماذج-اللغوية-8d170d1b9c.jpg",
       "events": 1
     },
     {
@@ -1100,11 +1107,6 @@
       "events": 1
     },
     {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/b2hfxfcc.ekk.webp",
-      "file": "dist/assets/event-images/معسكر-التقنيات-الناشئة-والعوالم-الافتراضية-8a64400615.webp",
-      "events": 1
-    },
-    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/k4uoshpk.wue.jpg",
       "file": "dist/assets/event-images/معسكر-قيادة-التحول-بالذكاء-الاصطناعي-4c18a97a44.jpg",
       "events": 1
@@ -1112,6 +1114,11 @@
     {
       "source_url": "https://scth.scene7.com/is/image/scth/saudi-national-day-new?wid=1920&hei=1080&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/saudi-national-day-3f78cd3279.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/b2hfxfcc.ekk.webp",
+      "file": "dist/assets/event-images/معسكر-التقنيات-الناشئة-والعوالم-الافتراضية-8a64400615.webp",
       "events": 1
     },
     {
@@ -2493,11 +2500,6 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ebd009e4f4dbefb1de3e9ee4546f625a.jpg",
       "file": "dist/assets/event-images/sa3oud-wainah-96aaddef99.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c8dbd06910da7730a9a477501de4df71.jpg",
-      "file": "dist/assets/event-images/book-signing-sessions-1-f02020009b.jpg",
-      "events": 1
     }
   ],
   "rejected_removed": [],
@@ -2554,6 +2556,8 @@
       "skipped": true
     }
   ],
-  "requires_rebuild": false,
-  "rebuild_reasons": []
+  "requires_rebuild": true,
+  "rebuild_reasons": [
+    "fetched:1"
+  ]
 }
