@@ -1,6 +1,6 @@
 # Tuwaiq Program Enrichment Report
 
-- generated_at: 2026-08-09T13:30:12.040Z
+- generated_at: 2026-08-09T19:33:41.723Z
 - targets: 36
 - enriched: 34
 - failed: 2
@@ -19,8 +19,8 @@
 - معسكر الأنظمة الذاتية للدرونز (bx7Vb7Xw) - goals=8, features=6, requirements=6
 - معسكر تصميم تجربة المستخدم UX\UI (ZnwlyY5G) - goals=8, features=7, requirements=9
 - معسكر اختبار البرمجيات والأتمتة (ORGldGgx) - goals=6, features=6, requirements=7
-- معسكر هندسة تطبيقات الذكاء الاصطناعي التوليدي باستخدام النماذج اللغوية الضخمة (ab7DP73J) - goals=8, features=5, requirements=8
 - معسكر أساسيات الأمن السيبراني (6VRQ2LNZ) - goals=5, features=6, requirements=10
+- معسكر هندسة تطبيقات الذكاء الاصطناعي التوليدي باستخدام النماذج اللغوية الضخمة (ab7DP73J) - goals=8, features=5, requirements=8
 - معسكر بناء وتطوير نماذج الذكاء الاصطناعي (o4bVMP8V) - goals=7, features=6, requirements=12
 - دبلوم الأمن السيبراني المتقدم (VPwN7D0G) - goals=8, features=8, requirements=7
 - معسكر إدارة الحوكمة والمخاطر والامتثال GRC (aXzlnR2d) - goals=7, features=8, requirements=4
@@ -31,8 +31,8 @@
 - معسكر علم البيانات والذكاء الاصطناعي (eOnD1zRg) - goals=8, features=11, requirements=11
 - معسكر الجرائم السيبرانية والتحقيق الجنائي الرقمي المتقدم (qMyzrymE) - goals=20, features=12, requirements=9
 - معسكر هندسة الحوسبة السحابية المتقدمة باستخدام Google Cloud (VwromX8Z) - goals=10, features=6, requirements=6
-- معسكر التقنيات الناشئة والعوالم الافتراضية (vxpqBnPg) - goals=3, features=12, requirements=5
 - معسكر قيادة التحول بالذكاء الاصطناعي (Y4B07n6q) - goals=6, features=5, requirements=6
+- معسكر التقنيات الناشئة والعوالم الافتراضية (vxpqBnPg) - goals=3, features=12, requirements=5
 - معسكر تصميم وتصنيع الدوائر الإلكترونية (Qkx3OxvG) - goals=13, features=13, requirements=7
 - معسكر الذكاء الاصطناعي للقادة (9L6Ey6VA) - goals=6, features=7, requirements=4
 - معسكر هندسة الحوسبة السحابية باستخدام Google Cloud (v9JwMlMo) - goals=10, features=6, requirements=7

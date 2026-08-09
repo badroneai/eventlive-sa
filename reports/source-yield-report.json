@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-08T19:04:40.926Z",
+  "generated_at": "2026-08-09T19:07:43.047Z",
   "sources_attempted": 48,
-  "productive_sources": 27,
-  "zero_yield_sources": 21,
+  "productive_sources": 26,
+  "zero_yield_sources": 22,
   "sources": [
     {
       "id": "visit-saudi-calendar",
@@ -10,7 +10,7 @@
       "url": "https://www.visitsaudi.com/ar/saudi-calendar",
       "collector_url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/visit-saudi-calendar-2026-08-08T19-04-40-926Z.json",
+      "snapshot_path": "data/raw/source-yield-snapshots/visit-saudi-calendar-2026-08-09T19-07-43-047Z.json",
       "signals": {
         "bytes": 94119,
         "json_rows": 27,
@@ -20,15 +20,25 @@
         "date_like_tokens": 0
       },
       "extracted_raw": 27,
-      "future_complete": 27,
-      "capped_future_complete": 27,
+      "future_complete": 26,
+      "capped_future_complete": 26,
       "active_limit": 200,
       "truncated_future_complete": 0,
       "last_written": 27,
       "drop_reasons": {
-        "future-complete": 27
+        "future-complete": 26,
+        "past-date": 1
       },
-      "dropped_samples": [],
+      "dropped_samples": [
+        {
+          "title": " Honey Festival 2026",
+          "reason": "past-date",
+          "raw_date_text": "",
+          "converted_date": "2026-07-26T16:00:00+03:00 - 2026-08-09T22:00:00+03:00",
+          "city": "Al Baha",
+          "url": "https://www.visitsaudi.com/en/al-baha/events/honey-festival-2026"
+        }
+      ],
       "sample_titles": [
         "Arabic Language Exhibition for kids",
         "Arabic Language Exhibition 28",
@@ -105,7 +115,7 @@
       "url": "https://www.experiencealula.com/en/whats-on/events",
       "collector_url": "",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/experience-alula-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/experience-alula-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
         "bytes": 568586,
         "json_rows": 0,
@@ -168,14 +178,14 @@
       "url": "https://mdlbeast.com/events",
       "collector_url": "",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/mdlbeast-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/mdlbeast-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
-        "bytes": 395678,
+        "bytes": 395683,
         "json_rows": 0,
         "links": 71,
         "json_ld_blocks": 0,
         "next_data_blocks": 1,
-        "date_like_tokens": 85
+        "date_like_tokens": 86
       },
       "extracted_raw": 41,
       "future_complete": 3,
@@ -184,8 +194,8 @@
       "truncated_future_complete": 0,
       "last_written": 3,
       "drop_reasons": {
-        "past-date": 38,
-        "future-complete": 3
+        "future-complete": 3,
+        "past-date": 38
       },
       "dropped_samples": [
         {
@@ -274,7 +284,7 @@
       "url": "https://www.investsaudi.sa/events",
       "collector_url": "https://investsaudi.sa/backend/wp-json/v3/events?time_frame=all",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/invest-saudi-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/invest-saudi-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
         "bytes": 7022,
         "json_rows": 9,
@@ -351,9 +361,9 @@
       "url": "https://rfecc.sa/whats-on/",
       "collector_url": "",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/rfecc-whats-on-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/rfecc-whats-on-2026-08-09T19-07-43-047Z.html",
       "signals": {
-        "bytes": 147366,
+        "bytes": 147390,
         "json_rows": 0,
         "links": 81,
         "json_ld_blocks": 2,
@@ -488,7 +498,7 @@
       "url": "https://tuwaiq.edu.sa/bootcamps",
       "collector_url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/tuwaiq-academy-bootcamps-2026-08-08T19-04-40-926Z.json",
+      "snapshot_path": "data/raw/source-yield-snapshots/tuwaiq-academy-bootcamps-2026-08-09T19-07-43-047Z.json",
       "signals": {
         "bytes": 10654,
         "json_rows": 12,
@@ -525,9 +535,9 @@
       "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
       "collector_url": "",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/future-skills-catalog-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/future-skills-catalog-2026-08-09T19-07-43-047Z.html",
       "signals": {
-        "bytes": 169677,
+        "bytes": 169687,
         "json_rows": 0,
         "links": 66,
         "json_ld_blocks": 0,
@@ -604,7 +614,7 @@
       "url": "https://www.visitsaudi.com/en/seasons",
       "collector_url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/visit-saudi-seasons-2026-08-08T19-04-40-926Z.json",
+      "snapshot_path": "data/raw/source-yield-snapshots/visit-saudi-seasons-2026-08-09T19-07-43-047Z.json",
       "signals": {
         "bytes": 94119,
         "json_rows": 27,
@@ -614,15 +624,25 @@
         "date_like_tokens": 0
       },
       "extracted_raw": 16,
-      "future_complete": 16,
-      "capped_future_complete": 16,
+      "future_complete": 15,
+      "capped_future_complete": 15,
       "active_limit": 200,
       "truncated_future_complete": 0,
       "last_written": 16,
       "drop_reasons": {
-        "future-complete": 16
+        "future-complete": 15,
+        "past-date": 1
       },
-      "dropped_samples": [],
+      "dropped_samples": [
+        {
+          "title": " Honey Festival 2026",
+          "reason": "past-date",
+          "raw_date_text": "",
+          "converted_date": "2026-07-26T16:00:00+03:00 - 2026-08-09T22:00:00+03:00",
+          "city": "Al Baha",
+          "url": "https://www.visitsaudi.com/en/al-baha/events/honey-festival-2026"
+        }
+      ],
       "sample_titles": [
         "Sammrah",
         "Sound of Abha Fest (SAF)",
@@ -641,7 +661,7 @@
       "url": "https://code.mcit.gov.sa/en/our-programs",
       "collector_url": "",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/code-mcit-programs-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/code-mcit-programs-2026-08-09T19-07-43-047Z.html",
       "signals": {
         "bytes": 42936,
         "json_rows": 0,
@@ -670,9 +690,9 @@
       "url": "https://hub.misk.org.sa/programs/",
       "collector_url": "",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/misk-hub-programs-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/misk-hub-programs-2026-08-09T19-07-43-047Z.html",
       "signals": {
-        "bytes": 214424,
+        "bytes": 214895,
         "json_rows": 0,
         "links": 95,
         "json_ld_blocks": 0,
@@ -691,10 +711,10 @@
       "dropped_samples": [],
       "sample_titles": [
         "The Innovation Diwan",
-        "Misk Launchpad",
         "Global Exposure Program",
         "Samsung Innovation Campus AI Program",
-        "Misk Local Traineeship Program"
+        "Misk Local Traineeship Program",
+        "Application deadline: Virtual Work Experience - Data analysis at STC"
       ],
       "zero_yield_reason": "",
       "attempts_documented": 0,
@@ -707,7 +727,7 @@
       "url": "https://dhahranexpo.com.sa",
       "collector_url": "",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/dhahran-expo-calendar-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/dhahran-expo-calendar-2026-08-09T19-07-43-047Z.html",
       "signals": {
         "bytes": 479989,
         "json_rows": 0,
@@ -786,14 +806,14 @@
       "url": "https://www.ithra.com/en/programme/2026",
       "collector_url": "https://zjvutjo7vx-dsn.algolia.net/1/indexes/programs/query",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/ithra-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/ithra-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
-        "bytes": 3991581,
+        "bytes": 3992320,
         "json_rows": 0,
         "links": 4,
         "json_ld_blocks": 0,
         "next_data_blocks": 0,
-        "date_like_tokens": 2829
+        "date_like_tokens": 2831
       },
       "extracted_raw": 233,
       "future_complete": 76,
@@ -876,7 +896,7 @@
       "url": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx",
       "collector_url": "",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/sdaia-academy-programs-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/sdaia-academy-programs-2026-08-09T19-07-43-047Z.html",
       "signals": {
         "bytes": 42986,
         "json_rows": 0,
@@ -905,7 +925,7 @@
       "url": "https://hub.misk.org.sa/en/events/",
       "collector_url": "",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/misk-hub-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/misk-hub-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
         "bytes": 229491,
         "json_rows": 0,
@@ -977,7 +997,7 @@
       "url": "https://www.jcci.org.sa/en/المعارض-والفعاليات",
       "collector_url": "",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/jcci-events-center-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/jcci-events-center-2026-08-09T19-07-43-047Z.html",
       "signals": {
         "bytes": 1378956,
         "json_rows": 0,
@@ -1088,75 +1108,29 @@
       "name": "Saudi Space Agency Events",
       "url": "https://ssa.gov.sa/en/events/?path=/events/",
       "collector_url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
-      "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/saudi-space-agency-events-2026-08-08T19-04-40-926Z.json",
+      "status": "error",
+      "snapshot_path": "",
       "signals": {
-        "bytes": 148963,
+        "bytes": 0,
         "json_rows": 0,
         "links": 0,
         "json_ld_blocks": 0,
         "next_data_blocks": 0,
-        "date_like_tokens": 1
+        "date_like_tokens": 0
       },
-      "extracted_raw": 15,
-      "future_complete": 1,
-      "capped_future_complete": 1,
-      "active_limit": 200,
+      "extracted_raw": 0,
+      "future_complete": 0,
+      "capped_future_complete": 0,
+      "active_limit": 0,
       "truncated_future_complete": 0,
       "last_written": 1,
-      "drop_reasons": {
-        "future-complete": 1,
-        "past-date": 14
-      },
-      "dropped_samples": [
-        {
-          "title": "Participates in the 69th session of the United Nations Committee on the Peaceful Uses of Outer Space (COPUOS)",
-          "reason": "past-date",
-          "raw_date_text": "2026-06-10T06:00:00Z - 2026-06-18T13:00:00Z - Vienna",
-          "converted_date": "2026-06-10T09:00:00+03:00 - 2026-06-18T16:00:00+03:00",
-          "city": "Global",
-          "url": "https://ssa.gov.sa/en/events/69th-session-copuos/"
-        },
-        {
-          "title": "Artemis II Mission Launch Side Exhibitions",
-          "reason": "past-date",
-          "raw_date_text": "2026-03-28T06:00:00Z - 2026-03-31T14:00:00Z - USA",
-          "converted_date": "2026-03-28T09:00:00+03:00 - 2026-03-31T17:00:00+03:00",
-          "city": "Global",
-          "url": "https://ssa.gov.sa/en/events/artemis-ii-mission-launch-side-exhibitions/"
-        },
-        {
-          "title": "\"Abaad\" Competition Closing Ceremony",
-          "reason": "past-date",
-          "raw_date_text": "2026-02-05T08:00:00Z - 2026-02-05T12:00:00Z - Riyadh",
-          "converted_date": "2026-02-05T11:00:00+03:00 - 2026-02-05T15:00:00+03:00",
-          "city": "Riyadh",
-          "url": "https://ssa.gov.sa/en/events/abad-competition-closing-ceremony/"
-        },
-        {
-          "title": "Space Debris Conference 2026",
-          "reason": "past-date",
-          "raw_date_text": "2026-01-26T07:00:00Z - 2026-01-27T15:00:00Z - Riyadh, Saudi Arabia",
-          "converted_date": "2026-01-26T10:00:00+03:00 - 2026-01-27T18:00:00+03:00",
-          "city": "Riyadh",
-          "url": "https://ssa.gov.sa/en/events/spacedebris2026/"
-        },
-        {
-          "title": "The Saudi Arabia participated in the 64th session of the Legal Subcommittee of the United Nations Committee on the Peaceful Uses of Outer Space (COPUOS)",
-          "reason": "past-date",
-          "raw_date_text": "2025-06-15T09:00:00Z - 2025-06-15T14:00:00Z - Vienna International Centre",
-          "converted_date": "2025-06-15T12:00:00+03:00 - 2025-06-15T17:00:00+03:00",
-          "city": "Global",
-          "url": "https://ssa.gov.sa/en/events/64th-session-of-the-legal-subcommittee-of-the-united-nations-committee-on-the-peaceful-uses-of-outer-space-copuos/"
-        }
-      ],
-      "sample_titles": [
-        "Space Debris Conference 2028"
-      ],
-      "zero_yield_reason": "",
+      "drop_reasons": {},
+      "dropped_samples": [],
+      "sample_titles": [],
+      "zero_yield_reason": "collector-error: fetch failed",
       "attempts_documented": 0,
       "attempt_notes": [],
-      "note": ""
+      "note": "fetch failed"
     },
     {
       "id": "visit-saudi-calendar-pdf",
@@ -1164,7 +1138,7 @@
       "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
       "collector_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/visit-saudi-calendar-pdf-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/visit-saudi-calendar-pdf-2026-08-09T19-07-43-047Z.html",
       "signals": {
         "bytes": 448194,
         "json_rows": 0,
@@ -1174,14 +1148,14 @@
         "date_like_tokens": 0
       },
       "extracted_raw": 99,
-      "future_complete": 56,
-      "capped_future_complete": 56,
+      "future_complete": 55,
+      "capped_future_complete": 55,
       "active_limit": 120,
       "truncated_future_complete": 0,
-      "last_written": 56,
+      "last_written": 55,
       "drop_reasons": {
-        "future-complete": 56,
-        "past-date": 43
+        "future-complete": 55,
+        "past-date": 44
       },
       "dropped_samples": [
         {
@@ -1272,9 +1246,9 @@
       "url": "https://discoveraseer.com/en/events",
       "collector_url": "",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/discover-aseer-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/discover-aseer-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
-        "bytes": 138025,
+        "bytes": 138177,
         "json_rows": 0,
         "links": 168,
         "json_ld_blocks": 0,
@@ -1286,7 +1260,7 @@
       "capped_future_complete": 37,
       "active_limit": 200,
       "truncated_future_complete": 0,
-      "last_written": 36,
+      "last_written": 37,
       "drop_reasons": {
         "future-complete": 37
       },
@@ -1309,7 +1283,7 @@
       "url": "https://www.swa.gov.sa/en/events",
       "collector_url": "",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/saudi-water-authority-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/saudi-water-authority-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
         "bytes": 184299,
         "json_rows": 0,
@@ -1356,9 +1330,9 @@
       "url": "https://www.kaust.edu.sa/",
       "collector_url": "",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/saudi-university-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/saudi-university-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
-        "bytes": 84375,
+        "bytes": 84339,
         "json_rows": 0,
         "links": 180,
         "json_ld_blocks": 0,
@@ -1393,11 +1367,11 @@
       "url": "https://www.sfda.gov.sa/",
       "collector_url": "",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/sfda-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/sfda-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
-        "bytes": 186327,
+        "bytes": 185818,
         "json_rows": 0,
-        "links": 484,
+        "links": 483,
         "json_ld_blocks": 1,
         "next_data_blocks": 0,
         "date_like_tokens": 22
@@ -1440,7 +1414,7 @@
       "url": "https://riyadh.sa/en/events/all",
       "collector_url": "",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/riyadh-city-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/riyadh-city-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
         "bytes": 3129,
         "json_rows": 0,
@@ -1469,7 +1443,7 @@
       "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
       "collector_url": "",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/sdaia-calendar-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/sdaia-calendar-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
         "bytes": 48915,
         "json_rows": 0,
@@ -1513,7 +1487,7 @@
       "url": "https://makkahcci.org.sa/events",
       "collector_url": "https://makkahcci.org.sa/event/page/2?category=all&country=all&date=old&type=all",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/makkah-chamber-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/makkah-chamber-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
         "bytes": 68265,
         "json_rows": 0,
@@ -1585,7 +1559,7 @@
       "url": "https://eportal.scega.gov.sa/home",
       "collector_url": "https://eportal.scega.gov.sa/api/events/GetWithPaging?pageNumber=1&pageSize=500",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/scega-exhibitions-conferences-2026-08-08T19-04-40-926Z.json",
+      "snapshot_path": "data/raw/source-yield-snapshots/scega-exhibitions-conferences-2026-08-09T19-07-43-047Z.json",
       "signals": {
         "bytes": 4890,
         "json_rows": 0,
@@ -1621,7 +1595,7 @@
       "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
       "collector_url": "",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/asharqia-chamber-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/asharqia-chamber-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
         "bytes": 103359,
         "json_rows": 0,
@@ -1727,7 +1701,7 @@
       "url": "https://abhacci.org.sa/Events",
       "collector_url": "",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/abha-chamber-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/abha-chamber-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
         "bytes": 38483,
         "json_rows": 0,
@@ -1798,64 +1772,29 @@
       "name": "Northern Borders Chamber Events",
       "url": "https://ncci.org.sa/category/events/",
       "collector_url": "https://ncci.org.sa/wp-json/wp/v2/posts?categories=23&per_page=24&_embed=1",
-      "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/northern-borders-chamber-events-2026-08-08T19-04-40-926Z.html",
+      "status": "error",
+      "snapshot_path": "",
       "signals": {
-        "bytes": 310988,
-        "json_rows": 24,
-        "links": 34,
+        "bytes": 0,
+        "json_rows": 0,
+        "links": 0,
         "json_ld_blocks": 0,
         "next_data_blocks": 0,
         "date_like_tokens": 0
       },
-      "extracted_raw": 4,
+      "extracted_raw": 0,
       "future_complete": 0,
       "capped_future_complete": 0,
-      "active_limit": 200,
+      "active_limit": 0,
       "truncated_future_complete": 0,
       "last_written": 0,
-      "drop_reasons": {
-        "past-date": 4
-      },
-      "dropped_samples": [
-        {
-          "title": "ورشة الأبتكار في ريـادة الأعـمال",
-          "reason": "past-date",
-          "raw_date_text": "2026-04-26T18:00:00+03:00",
-          "converted_date": "2026-04-26T18:00:00+03:00 - 2026-04-26T20:00:00+03:00",
-          "city": "Arar",
-          "url": "https://ncci.org.sa/%d9%88%d8%b1%d8%b4%d8%a9-%d8%a7%d9%84%d8%a3%d8%a8%d8%aa%d9%83%d8%a7%d8%b1-%d9%81%d9%8a-%d8%b1%d9%8a%d9%80%d8%a7%d8%af%d8%a9-%d8%a7%d9%84%d8%a3%d8%b9%d9%80%d9%85%d8%a7%d9%84/"
-        },
-        {
-          "title": "ورشة عمل بعنوان الصحة و السلامة المهنية",
-          "reason": "past-date",
-          "raw_date_text": "2026-04-02T13:00:00+03:00",
-          "converted_date": "2026-04-02T13:00:00+03:00 - 2026-04-02T15:00:00+03:00",
-          "city": "Online",
-          "url": "https://ncci.org.sa/4302-2/"
-        },
-        {
-          "title": "دورة “رحلة إلى عالم الضيافة والخدمة”",
-          "reason": "past-date",
-          "raw_date_text": "27 أكتوبر 2025",
-          "converted_date": "2025-10-27T18:00:00+03:00 - 2025-10-27T20:00:00+03:00",
-          "city": "Arar",
-          "url": "https://ncci.org.sa/%d8%af%d9%88%d8%b1%d8%a9-%d8%b1%d8%ad%d9%84%d8%a9-%d8%a5%d9%84%d9%89-%d8%b9%d8%a7%d9%84%d9%85-%d8%a7%d9%84%d8%b6%d9%8a%d8%a7%d9%81%d8%a9-%d9%88%d8%a7%d9%84%d8%ae%d8%af%d9%85%d8%a9/"
-        },
-        {
-          "title": "ليالي سهيل – رفحاء",
-          "reason": "past-date",
-          "raw_date_text": "2025-10-06T18:00:00+03:00",
-          "converted_date": "2025-10-06T18:00:00+03:00 - 2025-10-06T20:00:00+03:00",
-          "city": "Rafha",
-          "url": "https://ncci.org.sa/%d9%84%d9%8a%d8%a7%d9%84%d9%8a-%d8%b3%d9%87%d9%8a%d9%84-%d8%b1%d9%81%d8%ad%d8%a7%d8%a1/"
-        }
-      ],
+      "drop_reasons": {},
+      "dropped_samples": [],
       "sample_titles": [],
-      "zero_yield_reason": "past-date:4",
+      "zero_yield_reason": "collector-error: HTTP 403",
       "attempts_documented": 0,
       "attempt_notes": [],
-      "note": ""
+      "note": "HTTP 403"
     },
     {
       "id": "tabuk-chamber-events",
@@ -1863,7 +1802,7 @@
       "url": "https://www.tabukchamber.sa/",
       "collector_url": "https://www.tabukchamber.sa/activities",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/tabuk-chamber-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/tabuk-chamber-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
         "bytes": 35173,
         "json_rows": 0,
@@ -1940,14 +1879,14 @@
       "url": "https://www.najran.gov.sa/ar/News/AllNews",
       "collector_url": "",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/najran-municipality-summer-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/najran-municipality-summer-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
-        "bytes": 180616,
+        "bytes": 180637,
         "json_rows": 0,
         "links": 45,
         "json_ld_blocks": 0,
         "next_data_blocks": 0,
-        "date_like_tokens": 6
+        "date_like_tokens": 9
       },
       "extracted_raw": 0,
       "future_complete": 0,
@@ -1969,9 +1908,9 @@
       "url": "https://uqu.edu.sa/App/Events",
       "collector_url": "",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/umm-al-qura-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/umm-al-qura-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
-        "bytes": 498908,
+        "bytes": 498913,
         "json_rows": 0,
         "links": 117,
         "json_ld_blocks": 0,
@@ -2040,9 +1979,9 @@
       "url": "https://www.qu.edu.sa/events/",
       "collector_url": "https://www.qu.edu.sa/events/",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/qassim-university-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/qassim-university-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
-        "bytes": 741488,
+        "bytes": 741524,
         "json_rows": 0,
         "links": 137,
         "json_ld_blocks": 1,
@@ -2091,14 +2030,14 @@
       "url": "https://ju.edu.sa/ar",
       "collector_url": "https://ju.edu.sa/ar",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/jouf-university-programs-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/jouf-university-programs-2026-08-09T19-07-43-047Z.html",
       "signals": {
-        "bytes": 686433,
+        "bytes": 688446,
         "json_rows": 0,
-        "links": 430,
+        "links": 431,
         "json_ld_blocks": 0,
         "next_data_blocks": 0,
-        "date_like_tokens": 260
+        "date_like_tokens": 261
       },
       "extracted_raw": 1,
       "future_complete": 1,
@@ -2124,7 +2063,7 @@
       "url": "https://www.mcci.org.sa/Event/events",
       "collector_url": "https://services.mi.org.sa/api/events?PageNumber=1&PageSize=100",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/madinah-chamber-events-2026-08-08T19-04-40-926Z.json",
+      "snapshot_path": "data/raw/source-yield-snapshots/madinah-chamber-events-2026-08-09T19-07-43-047Z.json",
       "signals": {
         "bytes": 36538,
         "json_rows": 12,
@@ -2196,7 +2135,7 @@
       "url": "https://mdc.almunawarah.sa/",
       "collector_url": "",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/madinah-architecture-festival-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/madinah-architecture-festival-2026-08-09T19-07-43-047Z.html",
       "signals": {
         "bytes": 66269,
         "json_rows": 0,
@@ -2229,23 +2168,23 @@
       "url": "https://hayyjameel.org/whats-on/",
       "collector_url": "https://hayyjameel.org/whats-on-sitemap.xml",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/hayy-jameel-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/hayy-jameel-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
-        "bytes": 121234,
+        "bytes": 122298,
         "json_rows": 0,
         "links": 0,
         "json_ld_blocks": 0,
         "next_data_blocks": 0,
         "date_like_tokens": 0
       },
-      "extracted_raw": 68,
-      "future_complete": 68,
-      "capped_future_complete": 68,
+      "extracted_raw": 67,
+      "future_complete": 67,
+      "capped_future_complete": 67,
       "active_limit": 120,
       "truncated_future_complete": 0,
-      "last_written": 66,
+      "last_written": 67,
       "drop_reasons": {
-        "future-complete": 68
+        "future-complete": 67
       },
       "dropped_samples": [],
       "sample_titles": [
@@ -2266,7 +2205,7 @@
       "url": "https://informaconnect.com/",
       "collector_url": "https://informaconnect.com/sitemap-sites.xml",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/informa-connect-saudi-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/informa-connect-saudi-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
         "bytes": 286642,
         "json_rows": 0,
@@ -2321,9 +2260,9 @@
       "url": "https://kau.edu.sa/en/events",
       "collector_url": "https://kau.edu.sa/en/events",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/kau-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/kau-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
-        "bytes": 160441,
+        "bytes": 160158,
         "json_rows": 0,
         "links": 52,
         "json_ld_blocks": 0,
@@ -2350,9 +2289,9 @@
       "url": "https://saudicon.app/",
       "collector_url": "https://saudicon.app/sitemap-events.xml",
       "status": "ok",
-      "snapshot_path": "data/raw/source-yield-snapshots/saudicon-events-2026-08-08T19-04-40-926Z.html",
+      "snapshot_path": "data/raw/source-yield-snapshots/saudicon-events-2026-08-09T19-07-43-047Z.html",
       "signals": {
-        "bytes": 26494,
+        "bytes": 26957,
         "json_rows": 0,
         "links": 0,
         "json_ld_blocks": 0,
@@ -2360,14 +2299,14 @@
         "date_like_tokens": 0
       },
       "extracted_raw": 40,
-      "future_complete": 15,
-      "capped_future_complete": 15,
+      "future_complete": 14,
+      "capped_future_complete": 14,
       "active_limit": 40,
       "truncated_future_complete": 0,
       "last_written": 0,
       "drop_reasons": {
-        "past-date": 25,
-        "future-complete": 15
+        "past-date": 26,
+        "future-complete": 14
       },
       "dropped_samples": [
         {
@@ -2413,7 +2352,7 @@
       ],
       "sample_titles": [
         "بطولة كأس العالم للرياضات الإلكترونية",
-        "ملتقى عرش الحرف",
+        "ملتقى شور دلني - الشرقية 2026",
         "قمة البيانات الذكية والذكاء الاصطناعي",
         "إتش ڤي إيه سي آر إكسبو السعودية 2026",
         "سلسلة الصناعات السعودية"

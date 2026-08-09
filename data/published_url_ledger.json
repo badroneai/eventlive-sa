@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-09T13:34:57.389Z",
+  "generated_at": "2026-08-09T19:39:29.297Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -707,11 +707,6 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-09"
     },
-    "event-honey-festival-2026": {
-      "identity": "honey festival 2026|al baha|2026-07-26",
-      "first_seen": "2026-07-28",
-      "last_seen": "2026-08-09"
-    },
     "event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل": {
       "identity": "معسكر تطوير البرمجيات السحابية الاحترافية لسحابة قوقل|riyadh|2026-07-26",
       "first_seen": "2026-07-11",
@@ -1140,6 +1135,11 @@
     "event-moksha": {
       "identity": "moksha|dhahran|2026-08-11",
       "first_seen": "2026-07-27",
+      "last_seen": "2026-08-09"
+    },
+    "event-hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-e": {
+      "identity": "hayy arts | from another angel, explore contemporary art with alternative exhibition tours|jeddah|2026-08-12",
+      "first_seen": "2026-08-09",
       "last_seen": "2026-08-09"
     },
     "event-مسارات-تصنيع-الأجهزة-والمستلزمات-الطبية": {
@@ -2875,6 +2875,11 @@
     "event-hayy-makers-2": {
       "identity": "hayy makers | introduction to pottery course with pharah al-ghalib|jeddah|2026-07-26",
       "first_seen": "2026-07-11",
+      "last_seen": "2026-08-09"
+    },
+    "event-honey-festival-2026": {
+      "identity": "honey festival 2026|al baha|2026-07-26",
+      "first_seen": "2026-07-28",
       "last_seen": "2026-08-09"
     },
     "event-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية": {

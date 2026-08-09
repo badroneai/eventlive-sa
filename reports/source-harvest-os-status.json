@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-09T13:39:13.431Z",
+  "generated_at": "2026-08-09T19:44:23.119Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
     "candidates": 597,
-    "matched_candidates": 565,
+    "matched_candidates": 566,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 27,
+    "collection_attempted": 29,
     "productive_sources": 22,
-    "collector_errors": 4,
+    "collector_errors": 5,
     "chronic_collector_errors": 4,
-    "transient_collector_errors": 0
+    "transient_collector_errors": 1
   },
   "policies": {
     "partnership_required": 5,
@@ -25,17 +25,17 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 563,
+    "catalog-review": 564,
     "duplicate-review": 8,
-    "source-evidence": 26
+    "source-evidence": 25
   },
   "funnel": {
-    "discovered_this_run": 371,
+    "discovered_this_run": 383,
     "candidate_queue": 597,
     "evaluated_for_publish": 597,
-    "linked_existing": 551,
+    "linked_existing": 552,
     "published_new": 7,
-    "blocked": 39,
+    "blocked": 38,
     "secondary_promoted": 0,
     "secondary_still_blocked": 35
   },
@@ -43,7 +43,7 @@
     "possible duplicate requires review: exact-title-city-source-conflict": 6,
     "linked catalog row event-aseer-season was superseded by dedupe": 2,
     "linked catalog row event-dakah was superseded by dedupe": 1,
-    "publication gate source-evidence is not auto-publishable": 14,
+    "publication gate source-evidence is not auto-publishable": 13,
     "unknown category requires review": 10,
     "possible duplicate already exists: event-saudi-industrial-series-2": 1,
     "possible duplicate already exists: event-leap-2026": 1,
@@ -55,29 +55,36 @@
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 20,
+      "error_streak": 21,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed",
-      "error_streak": 20,
+      "error_streak": 21,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 20,
+      "error_streak": 21,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed; fetch failed",
       "error_streak": 4,
       "kind": "chronic",
+      "attempted_this_run": false
+    },
+    {
+      "id": "saudi-space-agency-events",
+      "note": "fetch failed",
+      "error_streak": 1,
+      "kind": "transient",
       "attempted_this_run": true
     }
   ],

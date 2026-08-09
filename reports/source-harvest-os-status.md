@@ -1,6 +1,6 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-09T13:39:13.431Z
+- Generated at: 2026-08-09T19:44:23.119Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
@@ -8,23 +8,23 @@
 
 - Sources: 88
 - Candidates: 597
-- Matched candidates: 565
+- Matched candidates: 566
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 22/27
-- Collector errors: 4 (chronic 4, transient 0)
+- Productive sources / attempted: 22/29
+- Collector errors: 5 (chronic 4, transient 1)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 371 |
+| discovered_this_run | 383 |
 | candidate_queue | 597 |
 | evaluated_for_publish | 597 |
-| linked_existing | 551 |
+| linked_existing | 552 |
 | published_new | 7 |
-| blocked | 39 |
+| blocked | 38 |
 | secondary_promoted | 0 |
 | secondary_still_blocked | 35 |
 
@@ -32,7 +32,7 @@
 
 | Reason | Count |
 | --- | --- |
-| publication gate source-evidence is not auto-publishable | 14 |
+| publication gate source-evidence is not auto-publishable | 13 |
 | unknown category requires review | 10 |
 | possible duplicate requires review: exact-title-city-source-conflict | 6 |
 | linked catalog row event-aseer-season was superseded by dedupe | 2 |
@@ -47,10 +47,11 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 20 | no | collector-error: fetch failed; fetch failed |
-| mos-events | chronic | 20 | no | collector-error: fetch failed |
-| moc-cultural-subportals | chronic | 20 | no | collector-error: fetch failed; fetch failed |
-| monshaat-events | chronic | 4 | yes | collector-error: fetch failed; fetch failed |
+| moc-cultural-calendar | chronic | 21 | yes | collector-error: fetch failed; fetch failed |
+| mos-events | chronic | 21 | yes | collector-error: fetch failed |
+| moc-cultural-subportals | chronic | 21 | yes | collector-error: fetch failed; fetch failed |
+| monshaat-events | chronic | 4 | no | collector-error: fetch failed; fetch failed |
+| saudi-space-agency-events | transient | 1 | yes | fetch failed |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

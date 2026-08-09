@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-08-09T13:30:08.495Z",
+  "published_at": "2026-08-09T19:33:35.595Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -8,11 +8,11 @@
   "totals": {
     "candidates_seen": 597,
     "published": 7,
-    "linked_existing": 551,
-    "blocked": 39,
+    "linked_existing": 552,
+    "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 558
+    "reconciled": 559
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -195,9 +195,9 @@
       "title": "عروض الفنون الأدائية التقليدية"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-explorers-in-august-as-told-by-the-land-routes-of-exchange-20260813-9a00888f",
-      "event_id": "event-hayy-explorers-in-august-as-told-by-the-land-routes-of-exchange",
-      "title": "Hayy Explorers in August | As Told by the Land: Routes of Exchange"
+      "candidate_id": "candidate-hayy-jameel-events-hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-e-20260812-3abe9558",
+      "event_id": "event-hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-e",
+      "title": "Hayy Arts | From Another Angel, explore contemporary art with alternative exhibition tours"
     }
   ],
   "linked_existing": [
@@ -994,12 +994,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-seasons-honey-festival-2026-20260726-e22ae419",
-      "event_id": "event-honey-festival-2026",
-      "title": "Honey Festival 2026",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل-20260726-aa1669c2",
       "event_id": "event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل",
       "title": "معسكر تطوير البرمجيات السحابية الاحترافية لسحابة قوقل",
@@ -1009,12 +1003,6 @@
       "candidate_id": "candidate-umm-al-qura-events-فرص-تعاقد-على-مشروع-بحثي-ممول-20260727-602b04ea",
       "event_id": "event-وظائف-بحثية-تجربة",
       "title": "فرص تعاقد على مشروع بحثي ممول",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-تقنية-الطاقة-المتجددة-حضوري-بالتعاون-مع-معهد-الدر-20260801-919bab3f",
-      "event_id": "event-الترشح-للدبلوم-المتوسط-تقنية-الطاقة-المتجددة-حضوري-بالتعاون-مع-معهد-الدر",
-      "title": "الترشح للدبلوم المتوسط تقنية الطاقة المتجددة (حضوري) بالتعاون مع معهد الدراسات والخدمات الاستشارية بجامعة الإمام عبد الرحمن بن فيصل",
       "reason": "already linked to catalog event"
     },
     {
@@ -1039,6 +1027,12 @@
       "candidate_id": "candidate-visit-saudi-seasons-buraydah-dates-carnival-20260801-24906534",
       "event_id": "event-buraydah-dates-carnival",
       "title": "Buraydah Dates Carnival",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-تقنية-الطاقة-المتجددة-حضوري-بالتعاون-مع-معهد-الدر-20260801-919bab3f",
+      "event_id": "event-الترشح-للدبلوم-المتوسط-تقنية-الطاقة-المتجددة-حضوري-بالتعاون-مع-معهد-الدر",
+      "title": "الترشح للدبلوم المتوسط تقنية الطاقة المتجددة (حضوري) بالتعاون مع معهد الدراسات والخدمات الاستشارية بجامعة الإمام عبد الرحمن بن فيصل",
       "reason": "already linked to catalog event"
     },
     {
@@ -1516,6 +1510,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-explorers-in-august-as-told-by-the-land-routes-of-exchange-20260813-9a00888f",
+      "event_id": "event-hayy-explorers-in-august-as-told-by-the-land-routes-of-exchange",
+      "title": "Hayy Explorers in August | As Told by the Land: Routes of Exchange",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-little-explorers-20260813-1cc1993f",
       "event_id": "event-little-explorers",
       "title": "Little Explorers",
@@ -1556,6 +1556,12 @@
       "event_id": "event-museum-story-time",
       "title": "Museum Story Time",
       "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-mdlbeast-events-unstable-20260814-5647df2e",
+      "event_id": "event-unstable",
+      "title": "Unstable",
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-discover-aseer-events-concert-mohamed-hamaki-20260814-b2b9dfdb",
@@ -1732,6 +1738,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-تجربة-المستخدم-ux-ui-20260823-c81fc88f",
+      "event_id": "event-معسكر-تصميم-تجربة-المستخدم-ux-ui",
+      "title": "معسكر تصميم تجربة المستخدم UX\\UI",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-التحول-الرقمي-حضوري-بالتعاون-مع-معهد-الدراسات--20260823-4b67a4d5",
       "event_id": "event-الترشح-للدبلوم-المتوسط-في-التحول-الرقمي-حضوري-بالتعاون-مع-معهد-الدراسات-",
       "title": "الترشح للدبلوم المتوسط في التحول الرقمي (حضوري) بالتعاون مع معهد الدراسات والخدمات الاستشارية بجامعة الإمام عبد الرحمن بن فيصل",
@@ -1753,12 +1765,6 @@
       "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-تكنولوجيا-التعدين-والمناجم-حضوري-بالتعاون-مع-م-20260823-c85a267f",
       "event_id": "event-1-الترشح-للدبلوم-المتوسط-في-تكنولوجيا-التعدين-والمناجم-حضوري-بالتعاون-مع",
       "title": "الترشح للدبلوم المتوسط في تكنولوجيا التعدين والمناجم (حضوري) بالتعاون مع معهد الدراسات والخدمات الاستشارية بجامعة الإمام عبد الرحمن بن فيصل",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-تجربة-المستخدم-ux-ui-20260823-c81fc88f",
-      "event_id": "event-معسكر-تصميم-تجربة-المستخدم-ux-ui",
-      "title": "معسكر تصميم تجربة المستخدم UX\\UI",
       "reason": "already linked to catalog event"
     },
     {
@@ -3563,13 +3569,13 @@
       "reason": "unknown category requires review"
     },
     {
-      "candidate_id": "candidate-saudicon-events-ملتقى-عرش-الحرف-20260805-c8eac091",
-      "title": "ملتقى عرش الحرف",
+      "candidate_id": "candidate-eye-of-riyadh-events-sunaa-2026-20260818-e3819fa8",
+      "title": "SUNAA 2026",
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
-      "candidate_id": "candidate-eye-of-riyadh-events-sunaa-2026-20260818-e3819fa8",
-      "title": "SUNAA 2026",
+      "candidate_id": "candidate-saudicon-events-ملتقى-شور-دلني-الشرقية-2026-20260825-b110f1b8",
+      "title": "ملتقى شور دلني - الشرقية 2026",
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
@@ -3664,11 +3670,6 @@
     {
       "candidate_id": "candidate-saudicon-events-لايت-سبيس-السعودية-2026-20260906-a638544d",
       "title": "لايت سبيس السعودية 2026",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-معرض-إندكس-السعودية-2026-20260906-8a848283",
-      "title": "معرض إندكس السعودية 2026",
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {

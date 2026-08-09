@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-08-09T13:31:38.762Z",
+  "generated_at": "2026-08-09T19:35:38.267Z",
   "totals": {
-    "targets": 8,
-    "enriched": 8,
-    "fetched": 8,
-    "images": 8,
+    "targets": 22,
+    "enriched": 22,
+    "fetched": 22,
+    "images": 22,
     "fetch_failures": 0
   },
   "enriched": [
     {
-      "id": "event-hayy-explorers-in-august-as-told-by-the-land-routes-of-exchange",
-      "title": "Hayy Explorers in August | As Told by the Land: Routes of Exchange",
+      "id": "event-hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-e",
+      "title": "Hayy Arts | From Another Angel, explore contemporary art with alternative exhibition tours",
       "source_label": "Hayy Jameel What's On",
       "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayy-explorers-thematic-as-told-by-the-land-routes-of-exchange/",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-exhibition-tours/",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
@@ -79,11 +79,151 @@
       "fetch_reason": ""
     },
     {
-      "id": "event-hayy-cinema-august-2026",
-      "title": "Hayy Cinema | August 2026",
-      "source_label": "Hayy Jameel What's On",
+      "id": "event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-إدارة-الموارد-البشرية-لخارج-مكة",
+      "title": "نموذج التسجيل والسداد لدبلوم المتوسط في إدارة الموارد البشرية لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
       "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayy-cinema-august-2026/",
+      "source_url": "https://uqu.edu.sa/App/Events/41051",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-الأنظمة-لخارج-مكة",
+      "title": "نموذج التسجيل والسداد لدبلوم المتوسط في الأنظمة لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41052",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-البرمجة-وعلوم-الحاسب-الآلي-لخارج",
+      "title": "نموذج التسجيل والسداد لدبلوم المتوسط في البرمجة وعلوم الحاسب الآلي لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41049",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-التصميم-الجرافيكي-والوسائط-الرقم",
+      "title": "نموذج التسجيل والسداد لدبلوم المتوسط في التصميم الجرافيكي والوسائط الرقمية لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41054",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-التكنولوجيا-المالية-لخارج-مكة",
+      "title": "نموذج التسجيل والسداد لدبلوم المتوسط في التكنولوجيا المالية لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41053",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-الصحة-والسلامة-المهنية-لخارج-مكة",
+      "title": "نموذج التسجيل والسداد لدبلوم المتوسط في الصحة والسلامة المهنية لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41055",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-المحاسبة-المالية-لخارج-مكة",
+      "title": "نموذج التسجيل والسداد لدبلوم المتوسط في المحاسبة المالية لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41050",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-البصريات-لخارج-مكة",
+      "title": "نموذج التسجيل والسداد للدبلوم المتوسط في البصريات لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41047",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-جودة-وسلامة-الغذاء-لخارج-مكة",
+      "title": "نموذج التسجيل والسداد للدبلوم المتوسط في جودة وسلامة الغذاء لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41048",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-الإدارة-الفندقية-لخارج-مكة",
+      "title": "التسجيل والسداد لدبلوم المشارك (حضوري) في الإدارة الفندقية لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41057",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-الخدمة-الاجتماعية-في-رعاية-الأيت",
+      "title": "التسجيل والسداد لدبلوم المشارك (حضوري) في الخدمة الاجتماعية في رعاية الأيتام لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41056",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-مساعد-في-التربية-الخاصة-وإدارة-ا",
+      "title": "التسجيل والسداد لدبلوم المشارك (حضوري) في مساعد في التربية الخاصة وإدارة السلوك لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41058",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-الحشود-لخارج-مكة",
+      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة الحشود لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41060",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-اللوجستيات-وسلاسل-الإمداد",
+      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة اللوجستيات وسلاسل الإمداد لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41061",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-الإرشاد-السياحي-لخارج-مكة",
+      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في الإرشاد السياحي لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41059",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
