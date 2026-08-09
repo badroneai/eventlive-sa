@@ -1,10 +1,10 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-08T19:26:51.976Z
+- published_at: 2026-08-09T02:41:08.184Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 597
-- published_new: 7
+- candidates_seen: 596
+- published_new: 6
 - linked_existing: 551
 - blocked_remaining: 39
 - duplicate_review_alerts: 8
@@ -30,7 +30,6 @@
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
-| candidate-discover-aseer-events-concert-mohamed-hamaki-20260814-b2b9dfdb | published | event-concert-mohamed-hamaki | Concert – Mohamed Hamaki |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -171,7 +170,6 @@
 | candidate-monshaat-events-لقاءات-شهر-أغسطس-2026م-20260801-7c7747a6 | linked-existing | event-لقاءات-شهر-أغسطس-2026م | already linked to catalog event |
 | candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-البصريات-لخارج-مكة-20260801-70d68f2f | linked-existing | event-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-البصريات-لخارج-مكة | already linked to catalog event |
 | candidate-visit-saudi-seasons-buraydah-dates-carnival-20260801-24906534 | linked-existing | event-buraydah-dates-carnival | already linked to catalog event |
-| candidate-visit-saudi-calendar-pdf-ضحكات-الرياض-20260802-4a38d19e | linked-existing | event-ضحكات-الرياض | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات-20260802-9bb9ff4b | linked-existing | event-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-طويق-للقطاع-الأمني-البنية-التحتية-20260802-2aaabcfd | linked-existing | event-معسكر-طويق-للقطاع-الأمني-البنية-التحتية | already linked to catalog event |
 | candidate-misk-hub-programs-misk-tuwaiq-immersive-program-20260802-99c8eec9 | linked-existing | event-misk-tuwaiq-immersive-program | already linked to catalog event |
@@ -204,8 +202,6 @@
 | candidate-hayy-jameel-events-jameel-library-august-community-programmes-20260805-ff812f8c | linked-existing | event-jameel-library-august-community-programmes | already linked to catalog event |
 | candidate-visit-saudi-calendar-international-falcon-breeders-auction-20260805-4b7cff1b | linked-existing | event-international-falcon-breeders-auction | already linked to catalog event |
 | candidate-discover-aseer-events-musical-concerts-20260807-169733ac | linked-existing | event-musical-concerts | already linked to catalog event |
-| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260808-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
-| candidate-ithra-events-echoes-of-the-familiar-20260808-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260809-91d14378 | linked-existing | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-2 | already linked to catalog event |
 | candidate-future-skills-catalog-machine-learning-التعلم-الالي-20260809-13b057e2 | linked-existing | event-machine-learning-التعلم-الالي | already linked to catalog event |
 | candidate-future-skills-catalog-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل-20260809-ae5af682 | linked-existing | event-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل | already linked to catalog event |
@@ -216,6 +212,8 @@
 | candidate-ithra-events-printing-house-20260810-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
 | candidate-ithra-events-tafasahu-make-room-20260810-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
 | candidate-ithra-events-tinkering-stations-20260810-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
+| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260810-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
+| candidate-ithra-events-echoes-of-the-familiar-20260810-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-ithra-events-spot-of-inspiration-20260810-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
 | candidate-ithra-events-childrens-museum-story-time-20260810-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-paint-like-an-artist-20260810-a67d8ec3 | linked-existing | event-paint-like-an-artist | already linked to catalog event |
@@ -259,6 +257,7 @@
 | candidate-ithra-events-the-moral-of-the-story-20260813-bfa3f2a8 | linked-existing | event-the-moral-of-the-story | already linked to catalog event |
 | candidate-ithra-events-grand-art-space-20260813-e3acefbb | linked-existing | event-grand-art-space | already linked to catalog event |
 | candidate-ithra-events-museum-story-time-20260813-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
+| candidate-discover-aseer-events-concert-mohamed-hamaki-20260814-b2b9dfdb | linked-existing | event-concert-mohamed-hamaki | already linked to catalog event |
 | candidate-ithra-events-survival-journey-20260814-4fd1e78d | linked-existing | event-survival-journey | already linked to catalog event |
 | candidate-ithra-events-open-art-space-20260814-40aac166 | linked-existing | event-open-art-space | already linked to catalog event |
 | candidate-ithra-events-stories-from-ithras-library-20260814-4116de16 | linked-existing | event-stories-from-ithras-library | already linked to catalog event |

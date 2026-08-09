@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-08T19:26:51.976Z",
+  "published_at": "2026-08-09T02:41:08.184Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 597,
+  "candidates_seen": 596,
   "totals": {
-    "candidates_seen": 597,
-    "published": 7,
+    "candidates_seen": 596,
+    "published": 6,
     "linked_existing": 551,
     "blocked": 39,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 558
+    "reconciled": 557
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -193,11 +193,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
-    },
-    {
-      "candidate_id": "candidate-discover-aseer-events-concert-mohamed-hamaki-20260814-b2b9dfdb",
-      "event_id": "event-concert-mohamed-hamaki",
-      "title": "Concert – Mohamed Hamaki"
     }
   ],
   "linked_existing": [
@@ -1042,12 +1037,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-ضحكات-الرياض-20260802-4a38d19e",
-      "event_id": "event-ضحكات-الرياض",
-      "title": "ضحكات الرياض",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات-20260802-9bb9ff4b",
       "event_id": "event-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات",
       "title": "معسكر طويق للقطاع الأمني: تطوير البرمجيات",
@@ -1240,18 +1229,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260808-e0a239ef",
-      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
-      "title": "Bedayat: Beginnings of Saudi Art Movement",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260808-cc43c2bd",
-      "event_id": "event-echoes-of-the-familiar",
-      "title": "Echoes of the Familiar",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260809-91d14378",
       "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-2",
       "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
@@ -1309,6 +1286,18 @@
       "candidate_id": "candidate-ithra-events-tinkering-stations-20260810-5a2c4c0e",
       "event_id": "event-tinkering-stations",
       "title": "Tinkering Stations",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260810-e0a239ef",
+      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
+      "title": "Bedayat: Beginnings of Saudi Art Movement",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260810-cc43c2bd",
+      "event_id": "event-echoes-of-the-familiar",
+      "title": "Echoes of the Familiar",
       "reason": "already linked to catalog event"
     },
     {
@@ -1567,6 +1556,12 @@
       "candidate_id": "candidate-ithra-events-museum-story-time-20260813-1104734c",
       "event_id": "event-museum-story-time",
       "title": "Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-discover-aseer-events-concert-mohamed-hamaki-20260814-b2b9dfdb",
+      "event_id": "event-concert-mohamed-hamaki",
+      "title": "Concert – Mohamed Hamaki",
       "reason": "already linked to catalog event"
     },
     {

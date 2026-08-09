@@ -1,14 +1,13 @@
 # EventLive Official Event Backlog Enrichment
-- Generated at: 2026-08-08T19:28:35.169Z
-- Targets: 7
-- Enriched: 7
-- Fetched: 7
-- Images: 7
+- Generated at: 2026-08-09T02:42:46.301Z
+- Targets: 6
+- Enriched: 6
+- Fetched: 6
+- Images: 6
 - Fetch failures: 0
 
 | Source | Event | Method | Image | Fetch |
 |---|---|---:|---:|---:|
-| Discover Aseer Events | Concert – Mohamed Hamaki | official-page-meta | yes | yes |
 | Visit Saudi Summer Calendar PDF | الاخطبوطية | official-page-meta | yes | yes |
 | Visit Saudi Summer Calendar PDF | سكة الاطعمة | official-page-meta | yes | yes |
 | Visit Saudi Summer Calendar PDF | شارع الفن - القرية الاوروبية | official-page-meta | yes | yes |

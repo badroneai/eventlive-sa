@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-08-08T19:29:51.633Z
+Generated at: 2026-08-09T02:43:49.728Z
 
 ## Operating Rule
 
@@ -9,13 +9,13 @@ Raw collection is not publication. Every source run preserves evidence, separate
 ## Totals
 
 - Sources: 88
-- Attempted this run: 27
-- Deferred by adaptive cadence: 21
-- Productive: 22
-- Zero-yield: 0
-- Collector errors: 3
+- Attempted this run: 24
+- Deferred by adaptive cadence: 24
+- Productive: 21
+- Zero-yield: 1
+- Collector errors: 0
 - Persistent collector errors: 4
-- Probe blocked: 0
+- Probe blocked: 2
 - Auto-publish eligible source lanes: 12
 
 ## Stalled / Blocked Focus
@@ -86,7 +86,7 @@ Call log:
 | 31 | neom-newsroom-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 32 | saudi-space-agency-events | active-collector | productive | 1 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 33 | cst-events-news | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
-| 34 | visit-saudi-calendar-pdf | venue-dedupe | probe-blocked | 56 | no | Do not bypass protection; keep as blocked/partnership candidate: timeout |
+| 34 | visit-saudi-calendar-pdf | venue-dedupe | probe-blocked | 55 | no | Do not bypass protection; keep as blocked/partnership candidate: timeout |
 | 35 | qiddiya-events | evidence-monitor | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: http-403 |
 | 36 | sela-sea-expo | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 37 | moc-cultural-subportals | active-collector | collector-error | 0 | no | Fix collector error: fetch failed; fetch failed |
@@ -112,7 +112,7 @@ Call log:
 | 57 | ministry-commerce-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 58 | evento-sa-events | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
 | 59 | asharqia-chamber-events | active-collector | productive | 3 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
-| 60 | qassim-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 4 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 60 | qassim-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 5 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 61 | abha-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 68 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 62 | baha-amanah-events | extractor-backlog | not-attempted | 0 | no | Probe HTML/API shape, then decide whether an extractor is worth adding. |
 | 63 | baha-chamber-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
@@ -137,7 +137,7 @@ Call log:
 | 82 | money2020-middle-east-agendas | extractor-backlog | not-attempted | 0 | no | Latest deep probe recommends build-jsonld-event-extractor; build only if future date-complete rows are visible. |
 | 83 | madinah-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 20 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 84 | madinah-architecture-festival | active-collector | productive | 1 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
-| 85 | hayy-jameel-events | active-collector | productive | 67 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 85 | hayy-jameel-events | active-collector | productive | 65 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 86 | informa-connect-saudi-events | venue-dedupe | productive | 6 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 87 | kau-events | venue-dedupe | productive | 4 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 88 | saudicon-events | discovery-only | productive | 15 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
