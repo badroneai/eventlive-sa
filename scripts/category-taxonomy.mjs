@@ -146,7 +146,11 @@ export const CATEGORY_EVENT_OVERRIDES = Object.freeze({
   'event-business-sector-annual-reception': 'business-entrepreneurship'
 });
 
-const LEGACY_CATEGORY_SLUGS = new Map([
+// Exported because it is also the authoritative record of "this category URL
+// was replaced by that one" — scripts/legacy-redirect-pages.mjs derives its
+// redirect stubs from it rather than keeping a second, hand-maintained list
+// that drifts (Gate Governance rule #3).
+export const LEGACY_CATEGORY_SLUGS = new Map([
   ['awards-ceremonies', 'community-occasions'],
   ['chamber-event', 'business-entrepreneurship'],
   ['conference-forum', 'exhibitions-conferences'],

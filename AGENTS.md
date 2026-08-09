@@ -61,7 +61,19 @@ working around it.
    on separate indexable pages. `test:search-indexability` reads `dist/` and bans
    all four. Never assert SEO metadata is fine from generator source alone —
    the built page is the only evidence.
-10. **The run verdict reads DEPLOY outcome first.** A red quality gate after a
+10. **A URL this site published may not die by accident.** Search Console
+    (2026-08-09) showed 90 indexed URLs returning 404: retired category slugs
+    with a declared replacement that nobody redirected, and event pages deleted
+    without asking whether the event had MOVED or actually ended. Retirement is
+    now a recorded decision — `data/published_url_ledger.json` matches a
+    departing slug against surviving events on an EXACT identity (title + city +
+    start day) and emits a redirect stub, or records it retired. Never match
+    fuzzily: a 60%-title match sends a visitor looking for a 2025 programme to
+    its 2026 edition. Every stub ships on BOTH surfaces — an Arabic-only stub
+    leaves `/en/<path>` returning 404, which is half of what was reported.
+    Build-written state (`seo_page_state.json`, `published_url_ledger.json`)
+    must appear in source-sync.yml's persist step or it resets every run.
+11. **The run verdict reads DEPLOY outcome first.** A red quality gate after a
    successful publish is a quality regression; a skipped deploy is a publishing
    outage. Never let an early abort route into the "site published fine" branch.
    An `::error::` annotation on a green run is invisible; the RUN itself must land

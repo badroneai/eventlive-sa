@@ -2,7 +2,9 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { OWNER_ONLY_PAGES } from './owner-only-pages.mjs';
-import { LEGACY_REDIRECT_PAGES } from './legacy-redirect-pages.mjs';
+import { LEGACY_CATEGORY_REDIRECTS, LEGACY_REDIRECT_PAGES } from './legacy-redirect-pages.mjs';
+import { EVENT_ALIAS_PAGES } from './event-canonical-aliases.mjs';
+import { isRedirectStubPath, movedEventStubPaths } from './published-url-ledger.mjs';
 
 // Indexability gate.
 //
@@ -52,13 +54,24 @@ function attr(html, pattern) {
   return html.match(pattern)?.[1] ?? '';
 }
 
+// Redirect stubs exist on both surfaces, so the check must be language-blind.
+// They are not content pages: no snippet of theirs is ever shown, because they
+// canonicalise elsewhere and are kept out of the sitemap. The description and
+// title rules below therefore skip them — but rule 7 holds them to a stricter
+// contract of their own.
+const movedStubPaths = movedEventStubPaths();
+
+function isRedirectStub(relativePath) {
+  return isRedirectStubPath(relativePath, movedStubPaths);
+}
+
 const pages = walk(distDir).map((filePath) => {
   const relativePath = path.relative(distDir, filePath).replace(/\\/g, '/');
   const html = fs.readFileSync(filePath, 'utf8');
   return {
     relativePath,
     english: relativePath === 'en/index.html' || relativePath.startsWith('en/'),
-    redirectStub: LEGACY_REDIRECT_PAGES.has(relativePath),
+    redirectStub: isRedirectStub(relativePath),
     ownerOnly: OWNER_ONLY_PAGES.has(relativePath) || OWNER_ONLY_PAGES.has(path.basename(relativePath)),
     title: attr(html, /<title>([^<]*)<\/title>/i),
     description: attr(html, /<meta\s+name="description"\s+content="([^"]*)"/i),
@@ -196,14 +209,71 @@ assert.deepEqual(noindexInSitemap, [], 'noindex pages must never be submitted in
 // 7. A legacy redirect stub carries a canonical to its target and nothing that
 //    claims to be a language alternate of it.
 // ---------------------------------------------------------------------------
-for (const relativePath of LEGACY_REDIRECT_PAGES) {
+// A redirect stub must exist on BOTH surfaces. 2026-08-09: the Arabic stub for
+// a retired category redirected correctly while /en/categories/<slug>.html
+// 404'd, because localization only ever processed sitemap URLs and a stub is
+// deliberately not in the sitemap.
+function assertRedirectStub(relativePath, expectedTargetPath) {
   const filePath = path.join(distDir, relativePath);
-  if (!fs.existsSync(filePath)) continue;
+  assert.ok(fs.existsSync(filePath), `${relativePath} must exist as a redirect stub, not 404`);
   const html = fs.readFileSync(filePath, 'utf8');
   const canonical = attr(html, /<link\s+rel="canonical"\s+href="([^"]*)"/i);
   assert.ok(canonical.startsWith(SITE), `${relativePath} must keep an absolute canonical`);
-  assert.notEqual(canonical, publicUrl(relativePath), `${relativePath} must canonicalise to its replacement, not itself`);
-  assert.ok(!/hreflang=/i.test(html), `${relativePath} is a redirect stub and must not declare hreflang alternates`);
+  assert.notEqual(canonical, publicUrlOf(relativePath), `${relativePath} must canonicalise to its replacement, not itself`);
+  if (expectedTargetPath) {
+    assert.equal(canonical, publicUrlOf(expectedTargetPath), `${relativePath} must canonicalise to ${expectedTargetPath}`);
+    assert.ok(fs.existsSync(path.join(distDir, expectedTargetPath)), `${relativePath} redirects to ${expectedTargetPath}, which this build did not produce`);
+  }
+  assert.ok(/http-equiv="refresh"/i.test(html), `${relativePath} must actually move the visitor, not only the crawler`);
+  // Only <link rel="alternate" hreflang> counts. The localizer also injects a
+  // language-switch <a hreflang="…">, which is visitor navigation on a page the
+  // visitor passes through — not an indexing signal.
+  assert.ok(
+    !/<link\b[^>]*hreflang=/i.test(html),
+    `${relativePath} is a redirect stub and must not declare hreflang alternates`
+  );
+  assert.ok(!sitemapUrls.has(publicUrlOf(relativePath)), `${relativePath} canonicalises elsewhere and must stay out of sitemap.xml`);
+}
+
+for (const [staleSlug, currentSlug] of LEGACY_CATEGORY_REDIRECTS) {
+  // Only aliases whose replacement this build actually published.
+  if (!fs.existsSync(path.join(distDir, `categories/${currentSlug}.html`))) continue;
+  assertRedirectStub(`categories/${staleSlug}.html`, `categories/${currentSlug}.html`);
+  assertRedirectStub(`en/categories/${staleSlug}.html`, `en/categories/${currentSlug}.html`);
+}
+
+// ---------------------------------------------------------------------------
+// 7b. Published-URL ledger: a URL this site published may not die by accident.
+//
+// Every event page ever published is recorded (scripts/published-url-ledger.mjs).
+// When a slug leaves the catalog the ledger decides, on an EXACT identity match
+// (title + city + start day), whether the event MOVED — in which case the old
+// URL must redirect — or was RETIRED, in which case 404 is the honest answer.
+// Before this existed, both cases deleted the page and Search Console reported
+// the result as 90 not-found URLs with no way to tell the two apart.
+// ---------------------------------------------------------------------------
+const ledgerPath = path.join(root, 'data', 'published_url_ledger.json');
+assert.ok(fs.existsSync(ledgerPath), 'the build must maintain data/published_url_ledger.json');
+const ledger = JSON.parse(fs.readFileSync(ledgerPath, 'utf8'));
+const ledgerEvents = ledger.events || {};
+
+// Every event page this build published must be in the ledger, or a future
+// rename of it would be invisible and its URL would die silently.
+const publishedEventSlugs = pages
+  .filter((page) => /^events\/.+\.html$/u.test(page.relativePath))
+  .map((page) => page.relativePath.replace(/^events\//, '').replace(/\.html$/, '').normalize('NFC'));
+const unledgered = publishedEventSlugs
+  .filter((slug) => !ledgerEvents[slug] && !ledgerEvents[slug.normalize('NFD')])
+  .filter((slug) => !EVENT_ALIAS_PAGES.has(`events/${slug}.html`.normalize('NFC')));
+assert.deepEqual(unledgered.slice(0, 10), [], 'published event pages missing from the URL ledger');
+
+for (const [slug, entry] of Object.entries(ledgerEvents)) {
+  if (!entry?.moved_to) continue;
+  // A stub is only required while its target is still published; when the
+  // target itself retires, reconcileUrlLedger() drops the moved_to.
+  if (!fs.existsSync(path.join(distDir, `events/${entry.moved_to}.html`))) continue;
+  assertRedirectStub(`events/${slug}.html`, `events/${entry.moved_to}.html`);
+  assertRedirectStub(`en/events/${slug}.html`, `en/events/${entry.moved_to}.html`);
 }
 
 // ---------------------------------------------------------------------------

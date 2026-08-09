@@ -166,3 +166,19 @@ assert.match(
 );
 
 console.log('source-sync-workflow-regression-test: ok');
+
+// Build-written state must be committed back, or the mechanism it drives is a
+// lying gauge: it recomputes from an empty slate every run and never detects
+// the change it exists to detect.
+//
+// 2026-08-09: data/published_url_ledger.json is the record of which published
+// event URLs moved vs died (scripts/published-url-ledger.mjs). Left out of the
+// persist step it would reset on every sync, every rename would look like a
+// first sighting, and the redirect stubs that keep an indexed URL alive would
+// never be emitted — silently, exactly like the 404s that prompted it.
+for (const stateFile of ['data/seo_page_state.json', 'data/published_url_ledger.json']) {
+  assert.ok(
+    new RegExp(`^\\s*${stateFile.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&')}\\s*\\\\?\\s*$`, 'm').test(workflow),
+    `source-sync.yml must commit ${stateFile} back to the repository, or the state it holds resets every run`
+  );
+}

@@ -10,6 +10,7 @@ import { PLACE_CATEGORIES } from './place-category-taxonomy.mjs';
 import { CITY_NAME_REGISTRY } from './city-name-registry.mjs';
 import { loadContentTranslations, normalizeContentText } from './content-translation-cache.mjs';
 import { OWNER_ONLY_PAGES } from './owner-only-pages.mjs';
+import { LEGACY_REDIRECT_PAGES, legacyRedirectTarget } from './legacy-redirect-pages.mjs';
 import { buildTitleQualifiers, eventQualifierKey, withTitleQualifier } from './event-title-qualifier.mjs';
 import { englishSeoDescription, englishSeoTitle, withEnglishBrand } from './en-seo-descriptions.mjs';
 import { canonicalEventPage, EVENT_ALIAS_PAGES } from './event-canonical-aliases.mjs';
@@ -953,11 +954,15 @@ function publicPathsFromSitemap() {
     const relative = (decodeURIComponent(match[1] || 'index.html').replace(/^\/+/, '') || 'index.html').normalize('NFC');
     if (relative.endsWith('.html') && !relative.startsWith('en/') && !ownerOnly.has(relative)) paths.push(relative);
   }
-  // Duplicate event records are kept out of sitemap.xml (they canonicalise to
-  // their primary) but they are still live pages a visitor can reach, and the
-  // Arabic page declares an English alternate. Localize them anyway — the
-  // sitemap decides what is SUBMITTED for indexing, not what exists.
-  for (const relative of EVENT_ALIAS_PAGES) {
+  // Pages that exist but are deliberately not submitted for indexing still need
+  // an English surface — the sitemap decides what is SUBMITTED, not what exists.
+  // Without this, /en/categories/gaming-esports.html 404s while its Arabic twin
+  // redirects fine, which is exactly what Search Console reported.
+  //
+  //  - duplicate event records (they canonicalise to their primary)
+  //  - retired category slugs (redirect stubs)
+  //  - renamed event slugs (redirect stubs, from the published-URL ledger)
+  for (const relative of [...EVENT_ALIAS_PAGES, ...LEGACY_REDIRECT_PAGES, ...movedEventPages.keys()]) {
     if (resolveUnicodePath(relative)) paths.push(relative);
   }
   return [...new Set(paths)];
@@ -1007,13 +1012,43 @@ function alternateLinks(relativePath) {
   return { arUrl, enUrl };
 }
 
+// Every page whose slug was renamed while the event stayed published. Read from
+// the ledger the Arabic build just wrote, so the two surfaces redirect to the
+// same target without a second source of truth.
+function movedEventStubPages() {
+  const moved = new Map();
+  try {
+    const ledger = JSON.parse(fs.readFileSync(path.join(root, 'data', 'published_url_ledger.json'), 'utf8'));
+    for (const [slug, entry] of Object.entries(ledger.events || {})) {
+      if (entry?.moved_to) moved.set(`events/${slug}.html`.normalize('NFC'), `events/${entry.moved_to}.html`.normalize('NFC'));
+    }
+  } catch {
+    // No ledger yet (fresh clone, first build): nothing has been renamed, so
+    // there is nothing to mirror. Never fail localization over it.
+  }
+  return moved;
+}
+
+const movedEventPages = movedEventStubPages();
+
+// A redirect stub canonicalises to another page, and Google ignores hreflang on
+// a page that is not its own canonical. Declaring alternates between two stubs
+// is noise at best; keep them as bare as enhanceSeoHead() writes them.
+function isRedirectStubPath(relativePath) {
+  const normalized = String(relativePath).normalize('NFC');
+  return LEGACY_REDIRECT_PAGES.has(normalized) || movedEventPages.has(normalized);
+}
+
 // hreflang stays self-referential (this Arabic page's English twin is still
 // THIS page under /en/), but the canonical must survive updateSeo(): a
-// duplicate event record points at its primary on both surfaces, and rewriting
-// it to self here would undo the consolidation renderEventDetail() applied.
+// redirect stub or a duplicate event record points somewhere else on BOTH
+// surfaces, and rewriting it to self here would undo that.
 function canonicalUrls(relativePath) {
-  const primary = canonicalEventPage(relativePath);
-  return alternateLinks(primary || relativePath);
+  const normalized = String(relativePath).normalize('NFC');
+  const target = canonicalEventPage(normalized)
+    || movedEventPages.get(normalized)
+    || legacyRedirectTarget(normalized);
+  return alternateLinks(target || relativePath);
 }
 
 function injectLanguageSwitcher($, href, label, ariaLabel) {
@@ -1031,9 +1066,11 @@ function updateSeo($, relativePath, locale) {
   const canonical = locale === 'en-SA' ? canonicalPair.enUrl : canonicalPair.arUrl;
   $('link[rel="canonical"]').attr('href', canonical);
   $('link[rel="alternate"][hreflang]').remove();
-  $('head').append(`<link rel="alternate" hreflang="ar-SA" href="${arUrl}" />`);
-  $('head').append(`<link rel="alternate" hreflang="en-SA" href="${enUrl}" />`);
-  $('head').append(`<link rel="alternate" hreflang="x-default" href="${arUrl}" />`);
+  if (!isRedirectStubPath(relativePath)) {
+    $('head').append(`<link rel="alternate" hreflang="ar-SA" href="${arUrl}" />`);
+    $('head').append(`<link rel="alternate" hreflang="en-SA" href="${enUrl}" />`);
+    $('head').append(`<link rel="alternate" hreflang="x-default" href="${arUrl}" />`);
+  }
   $('meta[property="og:url"]').attr('content', canonical);
   $('meta[property="og:locale"]').remove();
   $('head').append(`<meta property="og:locale" content="${locale === 'en-SA' ? 'en_SA' : 'ar_SA'}" />`);
@@ -1280,9 +1317,43 @@ function englishEventDescription(event) {
     .trim();
 }
 
+// A category redirect stub's Arabic title is "{label_ar} — EventLive", built by
+// writeLegacyCategoryRedirectPages() from the taxonomy. No dictionary entry can
+// match that composite, so rebuild it from the same taxonomy in English rather
+// than shipping an Arabic <title> on an English URL.
+function englishRedirectStubMeta(relativePath) {
+  const normalized = String(relativePath).normalize('NFC');
+  // A renamed event page: its Arabic stub says "انتقلت صفحة الفعالية".
+  if (movedEventPages.has(normalized)) {
+    return {
+      title: 'This event page has moved — EventLive Saudi Arabia',
+      description: 'The link for this event changed on EventLive. Its current page carries the same event with the same time, venue, and source.'
+    };
+  }
+  const target = legacyRedirectTarget(normalized);
+  const match = target.match(/^categories\/(.+)\.html$/u);
+  if (!match) return null;
+  const category = categoryDefinitionByKey(match[1]);
+  if (!category?.label_en) return null;
+  return {
+    title: `${category.label_en} — EventLive Saudi Arabia`,
+    description: `This category was merged into ${category.label_en} on EventLive. Follow the current page for ${category.label_en} events across Saudi Arabia.`
+  };
+}
+
 function englishMeta($, relativePath) {
   const originalTitle = $('title').text().trim();
   const originalDescription = $('meta[name="description"]').attr('content') || '';
+  const stubMeta = englishRedirectStubMeta(relativePath);
+  if (stubMeta) {
+    $('title').text(stubMeta.title);
+    for (const selector of ['meta[name="description"]', 'meta[property="og:description"]', 'meta[name="twitter:description"]']) {
+      $(selector).attr('content', stubMeta.description);
+    }
+    $('meta[property="og:title"]').attr('content', stubMeta.title);
+    $('meta[name="twitter:title"]').attr('content', stubMeta.title);
+    return;
+  }
   const event = eventByPath.get(relativePath);
   if (event) {
     // Event <title> tags are chrome+content composites ("{title} \u0641\u064a {city} |
